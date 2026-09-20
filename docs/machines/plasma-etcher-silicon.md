@@ -448,7 +448,7 @@ Status and expiry are estimates from public records and are not legal advice.
   topography-dependent charging.[^noguchi-1997]
 * [Oehrlein, *Mater. Sci. Eng. B* 1989](<https://doi.org/10.1016/0921-5107(89)90284-5>) — dry-etching damage of
   silicon.[^oehrlein-1989]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — 0.13 µm STI on 0.18 µm-generation tools,
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — 0.13 µm STI on 0.18 µm-generation tools,
   including the post-etch wet clean.[^thung-2016]
 
 ## Open questions

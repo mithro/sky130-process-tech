@@ -213,7 +213,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Deep dive
 
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the fill-aspect-ratio definition that
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — the fill-aspect-ratio definition that
   ties the nitride thickness to the HDP fill window.[^thung-2016]
 * [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the STI review, including the
   stack and its role in corner rounding and CMP.[^rev-01]

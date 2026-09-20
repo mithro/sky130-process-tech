@@ -207,7 +207,7 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   the STI review.[^rev-01]
 * [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — STI corner rounding by thermal
   versus etch processes.[^itrs-01]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the liner oxidation's role in a 0.13 µm
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — the liner oxidation's role in a 0.13 µm
   STI module.[^thung-2016]
 * [Kao et al., *IEEE TED* 1987](<https://doi.org/10.1109/T-ED.1987.23037>) — experiments on two-dimensional
   oxidation of curved silicon, showing retardation at corners.[^kao-1987]

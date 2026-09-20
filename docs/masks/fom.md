@@ -425,7 +425,7 @@ space.
   synthesis.[^kahng-2008]
 * [Chiou and Jang (TSMC), US 6,849,549](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6849549>) — dummy structures for CMP
   planarity with reduced added capacitance.[^pat-dummy-tsmc]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — 0.13 µm STI on 0.18 µm tools, including
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — 0.13 µm STI on 0.18 µm tools, including
   OPC on the STI layout.[^thung-2016]
 * [Otto et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175422>) — rules-based optical proximity
   correction.[^otto-1994]

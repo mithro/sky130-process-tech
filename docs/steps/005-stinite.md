@@ -177,7 +177,7 @@ Which of the three carries the isolation nitride etch is not public.
 
 ### Deep dive
 
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — fill aspect ratio defined by trench
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — fill aspect ratio defined by trench
   depth plus nitride thickness.[^thung-2016]
 * [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the STI review, including trench
   definition through the nitride/oxide stack.[^rev-01]

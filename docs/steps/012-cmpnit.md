@@ -210,7 +210,7 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   oxide/STI.[^rev-02]
 * [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — STI planarisation in the STI
   review.[^rev-01]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — CMP in a 0.13 µm STI module on
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — CMP in a 0.13 µm STI module on
   0.18 µm-generation tools.[^thung-2016]
 * [Cook, *J. Non-Cryst. Solids* 1990](<https://doi.org/10.1016/0022-3093(90)90200-6>) — the chemical mechanism of glass
   (oxide) polishing that oxide CMP inherits.[^cook-1990]

@@ -247,7 +247,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 * [Nishimura et al., *Jpn. J. Appl. Phys.* 2002](<https://doi.org/10.1143/JJAP.41.2886>) — HDP-CVD gap-fill
   modelling (sputter-yield angular dependence and ionic deposition)
   demonstrated on 0.13 µm STI.[^nishimura-2002]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — HDP voids, poly stringers and the fill
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — HDP voids, poly stringers and the fill
   aspect ratio on a 0.18 µm-generation tool set.[^thung-2016]
 * [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — trench fill and planarisation in the
   STI review.[^rev-01]

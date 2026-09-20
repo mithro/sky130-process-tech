@@ -240,7 +240,7 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   corner rounding, stress and defects.[^rev-01]
 * [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — the etch section on STI corner
   rounding and the thin-film section on trench fill.[^itrs-01]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the HDP void at the trench wall, the
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — the HDP void at the trench wall, the
   post-etch wet clean and the fill-aspect-ratio
   definition.[^thung-2016]
 * [Kim et al. (Spansion), US 7,439,141](<https://patents.google.com/patent/US7439141B2/en>) — a corner-rounding scheme from

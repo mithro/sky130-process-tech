@@ -182,7 +182,7 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the {term}`STI` flow and its defectivity
   drivers.[^rev-01]
-* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the post-trench-etch wet clean in a
+* [Thung et al., *JTEC* 2016](<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>) — the post-trench-etch wet clean in a
   0.13 µm STI module.[^thung-2016]
 * [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — the carbonised layer that forms on
   ion-implanted photoresist, the reason implant strips are

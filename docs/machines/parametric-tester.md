@@ -308,7 +308,7 @@ not public beyond the PDK's e-test parameter tables, which the
 * Electroglas, *Horizon 4090*, [*Horizon 4085X*](<https://web.archive.org/web/19980211212526/http://www.electroglas.com:80/products/4085x.htm>) and [*Horizon 4090µ*](<https://web.archive.org/web/20010713004941/http://www.electroglas.com:80/products/4090micro.html>) pages
   and 1999 annual report — probers and what they
   do.[^electroglas-4090][^electroglas-4085x][^electroglas-4090u][^electroglas-1999]
-* [Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*](<https://www.telcertifiedused.com/cue/buy/product-test.jsp>) — the TEL prober
+* [Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*](<https://web.archive.org/web/20160603063003/http://telcertifiedused.com/cue/buy/product-test.jsp>) — the TEL prober
   line.[^tel-prober]
 * FormFactor, [*Cascade SUMMIT200*](<https://www.formfactor.com/product/probe-systems/200-mm-systems/summit200/>) and [*Cascade PMC200*](<https://www.formfactor.com/product/probe-systems/wafer-multi-chip-cryogenic-systems/pmc200/>) product
   pages.[^formfactor-summit200][^formfactor-pmc200]
