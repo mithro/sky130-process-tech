@@ -139,3 +139,66 @@ All four numbered items of the W0f task are complete:
    `docs/plans/link-check-2026-09b.md`.
 3. Wording normalisation audited — nothing unsafe found; documented.
 4. `docs/plans/link-check-2026-09b.md` written.
+
+## Coordinator follow-up (same branch, after the above landed)
+
+The owner's requirement was that dead links get converted, and that the
+checker's "1733 ok" be reconciled with 404s the owner had personally
+seen. Done, in three commit groups (see `git log`):
+
+1. **Converted.** THUNG-2016 (11 footnotes + inventory) and TEL-PROBER
+   (footnote + inventory) rewritten to the exact C5 step-3 form.
+   AMAT-RTP: tried the remaining fallbacks by hand (other scheme, `www.`
+   toggle, CDX, one `archive.ph` request — 429, inconclusive), found
+   nothing, applied rule 11 as written (one verbatim quotation removed,
+   replaced with a weak-evidence dated mention; the same dated note
+   added to both citing footnotes and the inventory).
+   `check_preserved.py` run with explicit paths (the default
+   whole-repo auto-discovery picks up unrelated drift from other
+   branches merged into `main` since this worktree was created, and
+   trips a pre-existing crash in that tool on one of those files'
+   `number_order` tuples — not a bug introduced here, not touched).
+2. **Soft-404 detection added** (`soft_dead_reasons()`,
+   `apply_soft_dead_check()`, a `soft-dead?` classification, never
+   auto-decided). Found and fixed two real bugs building it:
+   `extract_cited_title()` was per-block instead of per-URL (a
+   25-bullet reading list under one inventory key gave every bullet
+   after the first the first bullet's title), and it didn't handle a
+   title wrapped across a hard-wrapped source line (flattened now, same
+   fix `check_preserved.py` already uses for quotes). 19 suspects found
+   on hand-written pages, all reviewed by hand — see the b-report's
+   table; all false positives of the heuristic or an
+   already-established intermittent-host precedent, one new
+   `BLOCKED_HOSTS` entry (`semimarket.com`).
+3. **Cross-domain redirect review** found a real gap:
+   `iopscience.iop.org` redirects to a `validate.perfdrive.com`
+   (Radware) bot-challenge page with HTTP 200 — `classify()` only ever
+   checked for a challenge by *path* on the *same* host
+   (openlibrary.org's `/verify_human`). Fixed (`CHALLENGE_HOST_MARKERS`,
+   host-based, any status). `--reclassify` against the existing cache
+   (no new network calls): **136 DOI citations to IOP journals,
+   previously "ok", are now correctly `blocked-to-scripts`** — this is
+   very likely a real, large part of what the owner was seeing: never
+   actually verified by any script, reachable by a person, not "ok" in
+   the sense the count implied.
+4. **`--include-generated` run to completion** (749 new tokens;
+   Espacenet/Google Patents sampled 1-in-50 as designed, everything
+   else in full). 10 more `BLOCKED_HOSTS` entries (hosts that 403'd
+   every record tried, all live platforms). 4 tokens dead on this,
+   their *first-ever* check — correctly left untouched (C5 needs two
+   checks ≥ 24 h apart; these have had one), with the exact re-check
+   command and the data-file remediation path (an `archive_url` field
+   in `data/*.yaml`, regenerate — never a hand edit to a generated page)
+   recorded in the b-report for whoever picks this up after 2026-09-21.
+
+Full details, evidence and the per-suspect table are in
+`docs/plans/link-check-2026-09b.md` (rewritten, not appended — read it
+fresh rather than diffing against an earlier version of this progress
+note). Full checker suite and the `-W` sphinx build pass throughout.
+
+### Status: done
+
+All four items from the coordinator's message are addressed. Nothing is
+left half-finished; the only unfinished-by-design items (the 4
+first-check-only dead generated-page tokens) have their next step
+spelled out above and in the report, deliberately not acted on early.
