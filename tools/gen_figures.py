@@ -75,6 +75,10 @@ DRAW_W = SP["drawing-width"]
 GUT = SP["gutter"]
 LABEL_X = M + DRAW_W + GUT
 LABEL_W = W - M - LABEL_X
+LANE0 = M + DRAW_W + SP["lane-inset"]              # x of the first (leftmost) leader lane
+LANE_PITCH = SP["lane-pitch"]
+LANE_MAX = LABEL_X - SP["lane-end-gap"]            # no lane may sit right of this
+LANE_CAPACITY = max(1, int((LANE_MAX - LANE0) // LANE_PITCH) + 1)
 
 BASIS_TAG = {
     "public": None,
@@ -114,7 +118,11 @@ def _table(src: str) -> dict[str, int]:
 
 
 _W = {"sans": _table(_WIDTH_SANS), "bold": _table(_WIDTH_BOLD)}
-_W_FALLBACK = {"sans": max(_W["sans"].values()), "bold": max(_W["bold"].values())}
+# The widest advance anywhere in the font, not merely in the table above: a glyph the table
+# does not carry is measured at that width, so an unknown character can never be measured
+# too narrow and slip past the margin check.  UNKNOWN_GLYPHS records them for the lint.
+_W_FALLBACK = {"sans": 1735, "bold": 2016}
+UNKNOWN_GLYPHS: set[str] = set()
 
 
 def text_w(s: str, size: float, bold: bool = False, mono: bool = False) -> float:
@@ -123,7 +131,14 @@ def text_w(s: str, size: float, bold: bool = False, mono: bool = False) -> float
         return len(s) * _MONO_ADVANCE * size / 1000.0
     key = "bold" if bold else "sans"
     tab, fb = _W[key], _W_FALLBACK[key]
-    return sum(tab.get(ch, fb) for ch in s) * size / 1000.0
+    total = 0
+    for ch in s:
+        w = tab.get(ch)
+        if w is None:
+            UNKNOWN_GLYPHS.add(ch)
+            w = fb
+        total += w
+    return total * size / 1000.0 + 0.05 * len(s)
 
 
 def _greedy(s: str, size: float, maxw: float, bold: bool, mono: bool) -> list[str]:
@@ -312,9 +327,19 @@ class XSection:
                 return seg[2]
         return None
 
+    def open_ranges(self, lid: str) -> list[list[float]]:
+        """The x ranges in which layer ``lid`` is absent: the opening a patterned film makes.
+        Deriving an implant's extent from this keeps the mask the single source of truth."""
+        missing = [i for i in range(self.n) if not any(sg[0] == lid for sg in self.cols[i])]
+        return [[self.x(a), self.x(b)] for a, b in self.runs(missing)]
+
     def apply(self, op: dict):
         if op["op"] != "ions":
             self.ions = []            # arrows belong to the state of their own step only
+        if op.get("where_open"):
+            src = op["where_open"]
+            op = {k: v for k, v in op.items() if k != "where_open"}
+            op["where"] = self.open_ranges(src)
         getattr(self, "op_" + op["op"])(op)
 
     # ---- operations
@@ -571,17 +596,21 @@ class Label:
         self.route = "right"
         self.hang = "right"           # top-routed labels: text hangs left or right of the riser
         self.ax = self.ay = 0.0       # anchor, SVG coords
+        self.ax_min = self.ax_max = 0.0   # the x range the anchor dot may be staggered inside
         self.lo = self.hi = 0.0       # range the anchor may slide in (SVG y), right route only
         self.stub = 0.0
+        self.lane = LANE_MAX          # x of this leader's own vertical lane in the gutter
         self.y = 0.0                  # SVG y of the centre of the first line
         self.is_dim = False
+        self.note_lines = 0
         self.wrap(LABEL_W)
 
     def wrap(self, maxw):
         self.lines = [("t-label-title", ln)
                       for ln in wrap(self.spec["title"], TY["label-title"]["size"], maxw, bold=True)]
-        self.lines += [("t-label-note muted", ln)
-                       for ln in wrap(self.spec.get("note", ""), TY["label-note"]["size"], maxw)]
+        notes = wrap(self.spec.get("note", ""), TY["label-note"]["size"], maxw)
+        self.note_lines = len(notes)
+        self.lines += [("t-label-note muted", ln) for ln in notes]
         tag = BASIS_TAG[self.basis]
         if tag:
             self.lines += [("t-label-note tag", ln) for ln in wrap(tag, TY["label-note"]["size"], maxw)]
@@ -589,10 +618,13 @@ class Label:
 
 
 def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | None = None):
-    """Return (route, x, y_lo, y_hi, crossings) in drawing coordinates (y up)."""
+    """Return (route, x, y_lo, y_hi, crossings, x_min) in drawing coordinates (y up).
+
+    ``x_min`` is how far left the anchor dot may be staggered inside its own layer, which is
+    what keeps the dots of two thin films that sit a few units apart distinguishable."""
     pres = xs.present(lid)
     i0, i1 = xs.runs(pres)[-1]
-    inset = min(8.0, (i1 - i0) * xs.dx / 2)
+    inset = min(4.0, (i1 - i0) * xs.dx / 2)
     ir = xs.idx(xs.x(i1) - inset)
     s = xs.seg(ir, lid)
     mid = (s[1] + s[2]) / 2
@@ -600,14 +632,15 @@ def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | N
     pad = 3.5 if s[2] - s[1] > 9 else (s[2] - s[1]) / 2
     if floor_y is None:
         floor_y = -float(xs.layers["sub"]["depth"]) + 8
-    right = ("right", xs.x(ir), max(s[1] + pad, floor_y), s[2] - pad, len(crossed))
+    x_min = xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2)
+    right = ("right", xs.x(ir), max(s[1] + pad, floor_y), s[2] - pad, len(crossed), x_min)
     tops = [i for i in pres if xs.cols[i] and xs.cols[i][-1][0] == lid]
     top = None
     if tops:
         a, b = max(xs.runs(tops), key=lambda r: (r[1] - r[0], r[1]))
         s = xs.seg((a + b) // 2, lid)
         yv = s[2] - min((s[2] - s[1]) / 2, 8.0)
-        top = ("top", xs.x((a + b) // 2), yv, yv, 0)
+        top = ("top", xs.x((a + b) // 2), yv, yv, 0, xs.x((a + b) // 2))
     if prefer == "top" and top:
         return top
     if prefer == "right" or right[4] == 0 or top is None:
@@ -618,7 +651,7 @@ def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | N
 def overlay_anchor(xs: XSection, ov: dict, floor_y: float | None = None):
     cols = xs.overlay_columns(ov)
     i0, i1 = xs.runs(cols)[-1]
-    inset = min(8.0, (i1 - i0) * xs.dx / 2)
+    inset = min(4.0, (i1 - i0) * xs.dx / 2)
     ir = xs.idx(xs.x(i1) - inset)
     if ov.get("anchor_x") is not None:
         ir = max(i0, min(i1, xs.idx(float(ov["anchor_x"]))))
@@ -626,7 +659,8 @@ def overlay_anchor(xs: XSection, ov: dict, floor_y: float | None = None):
     pad = 3.5 if hi - lo > 9 else (hi - lo) / 2
     if floor_y is not None:
         lo = max(lo, floor_y - pad)
-    return ("right", xs.x(ir), min(lo + pad, hi - pad), hi - pad, 0)
+    return ("right", xs.x(ir), min(lo + pad, hi - pad), hi - pad, 0,
+            xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2))
 
 
 def _isotonic(z):
@@ -664,10 +698,12 @@ def layout_right_labels(labels: list[Label], floor: float) -> float:
     each label as little as possible from a height at which its leader is horizontal.  The
     anchor then slides inside its layer to meet the label.
 
-    An anchor that has slid can end up out of order with its neighbour, and two leaders
-    would then cross in the gutter, so the placement is repeated with the labels re-ordered
-    by where their anchors actually landed until that order is stable.  Returns the y below
-    the last label."""
+    An anchor that has slid can end up out of order with its neighbour, so the placement is
+    repeated with the labels re-ordered by where their anchors actually landed until that
+    order is stable.  Each leader is then given its own vertical lane in the gutter and, when
+    two anchors end up within a few units of each other, its dot is staggered left inside its
+    own layer, so that no two leaders ever run side by side.  Returns the y below the last
+    label."""
     rights = sorted([l for l in labels if l.route == "right"], key=lambda l: ((l.lo + l.hi) / 2, l.key))
     if not rights:
         return floor
@@ -678,10 +714,41 @@ def layout_right_labels(labels: list[Label], floor: float) -> float:
             break
         rights = order
         bottom = _place_right(rights, floor)
+    # Lanes right to left: the topmost label takes the lane nearest its text, so a leader's
+    # last horizontal run never meets the lane of a label below it.  (Proof by the ordering:
+    # a lane further left belongs to a label further down, whose vertical span lies below.)
+    n = len(rights)
+    for i, l in enumerate(rights):
+        k = min(n - 1 - i, LANE_CAPACITY - 1)
+        l.lane = LANE0 + k * LANE_PITCH
+    # Push the anchors apart in y as far as each layer allows, so that two leaders never
+    # leave the drawing on the same line...
+    clear = SP["leader-lane-clearance"] + 1
+    for i in range(1, len(rights)):
+        prev, l = rights[i - 1], rights[i]
+        if l.ay - prev.ay < clear:
+            l.ay = min(l.hi, prev.ay + clear)
+    for i in range(len(rights) - 2, -1, -1):
+        nxt, l = rights[i + 1], rights[i]
+        if nxt.ay - l.ay < clear:
+            l.ay = max(l.lo, nxt.ay - clear)
+    # ... and, where a layer is too thin for that, stagger the dots sideways instead, so the
+    # two dots are visibly on different films.
+    step = SP["anchor-stagger"]
+    cluster = 0
+    for i, l in enumerate(rights):
+        if i and abs(rights[i - 1].ay - l.ay) < SP["anchor-separation-y"]:
+            cluster += 1
+        else:
+            cluster = 0
+        if cluster:
+            l.ax = max(l.ax_min, l.ax - cluster * step)
     return bottom
 
 
 def draw_label(svg: Svg, l: Label, x_draw_right: float, halo: bool):
+    """A right-routed leader is orthogonal: out of the dot, along its own lane, into the
+    label.  A top-routed one rises out of the drawing into the header band."""
     first = TY["label-title"]["size"]
     y = l.y + first * 0.35
     top = l.route == "top"
@@ -690,22 +757,26 @@ def draw_label(svg: Svg, l: Label, x_draw_right: float, halo: bool):
         svg.text(tx, y, s, cls, anchor="end" if top and l.hang == "left" else "start", owner=l.key)
         y += TY["label-note"]["line"]
     if not top:
-        xg0, xg1 = x_draw_right + 3, LABEL_X - 4
         if halo:
             svg.add(f'<path class="halo" d="M{f1(l.ax + 3)} {f1(l.ay)}H{f1(x_draw_right)}"/>')
-        d = (f"M{f1(l.ax)} {f1(l.ay)}H{f1(xg0)}"
-             + (f"L{f1(xg1)} {f1(l.y)}" if abs(l.y - l.ay) > 0.05 else f"H{f1(xg1)}"))
+        d = f"M{f1(l.ax)} {f1(l.ay)}H{f1(l.lane)}"
+        if abs(l.y - l.ay) > 0.05:
+            d += f"V{f1(l.y)}"
+        d += f"H{f1(LABEL_X - 4)}"
     else:
         rx = l.ax + l.stub
         d = (f"M{f1(l.ax)} {f1(l.ay)}" + (f"H{f1(rx)}" if l.stub else "")
              + f"V{f1(l.y)}H{f1(rx + (5 if l.hang == 'right' else -5))}")
     svg.add(f'<path class="leader" data-owner="{l.key}" d="{d}"/>')
     if not l.is_dim:
-        svg.add(f'<circle class="dot" cx="{f1(l.ax)}" cy="{f1(l.ay)}" r="{ST["anchor-dot-radius"]}"/>')
+        svg.add(f'<circle class="dot" data-owner="{l.key}" cx="{f1(l.ax)}" '
+                f'cy="{f1(l.ay)}" r="{ST["anchor-dot-radius"]}"/>')
 
 
 # --------------------------------------------------------------------------- cross-section
-def eval_y(xs: XSection, expr):
+def eval_y(xs: XSection, expr, errs: list[str] | None = None):
+    """A y position: a number, ``top@<x>`` (the top surface at x) or ``si@<x>`` (the silicon
+    surface at x).  An expression that does not parse is a lint error, never a traceback."""
     if isinstance(expr, (int, float)):
         return float(expr)
     m = re.fullmatch(r"top@([\d.]+)", str(expr))
@@ -713,57 +784,95 @@ def eval_y(xs: XSection, expr):
         return xs.top(xs.idx(float(m.group(1))))
     m = re.fullmatch(r"si@([\d.]+)", str(expr))
     if m:
-        return xs.silicon_top(xs.idx(float(m.group(1))))
-    raise ValueError(f"bad y expression {expr!r}")
+        v = xs.silicon_top(xs.idx(float(m.group(1))))
+        return 0.0 if v is None else v
+    msg = f"bad y expression {expr!r}; use a number, top@<x> or si@<x>"
+    if errs is None:
+        raise ValueError(msg)
+    errs.append(msg)
+    return 0.0
 
 
-def series_states(series: dict) -> dict[str, XSection]:
+def series_states(series: dict) -> tuple[dict[str, XSection], dict[str, str]]:
+    """The state after every step of a series, plus the step at which each layer appeared."""
     states = {}
+    born: dict[str, str] = {"sub": "000"}
     xs = XSection(series["substrate"])
     states["000"] = xs.clone()
     for op in series["ops"]:
         xs.apply(op)
+        if op.get("id") and op["id"] not in born:
+            born[op["id"]] = str(op["step"])
         states[str(op["step"])] = xs.clone()          # state after the LAST op of that step
-    return states
+    return states, born
 
 
-def build_xsection(spec: dict, series: dict) -> Svg:
+def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     svg = Svg("xsection", spec["alt"], spec["alt"])
-    states = series_states(series)
+    states, born = series_states(series)
+    last_step = max(states)
 
     def state(step):
-        keys = [k for k in sorted(states) if k <= str(step)]
-        return states[keys[-1]]
+        key = str(step)
+        if not re.fullmatch(r"\d{3}", key):
+            errs.append(f"state_after {step!r} is not a three-digit step number")
+            return states["000"], "000"
+        if key > last_step:
+            errs.append(f"state_after {key!r} is beyond the last step of the series ({last_step})")
+            return states[last_step], last_step
+        keys = [k for k in sorted(states) if k <= key]
+        return states[keys[-1]], keys[-1]
 
     panels = spec["panels"]
     sub_depth = float(series["substrate"]["depth"])
+    depth = float(spec.get("crop_depth", sub_depth))
+    floor_y = -depth + 8
     X0 = M
     x_right = X0 + DRAW_W
     y = M
     seen: set[str] = set()
+    # A layer keeps one route for the whole figure, and may be labelled from above only when
+    # it is the top-most layer in every panel that labels it: a reader should not meet the
+    # same layer labelled two different ways in one picture.
+    routes: dict[str, str] = {}
+    for p in panels:
+        st_pre, _ = state(p["state_after"])
+        hid = set(p.get("hide_layers", [])) | set(p.get("hide_labels", []))
+        for lid, layer in st_pre.layers.items():
+            if lid in hid or "label" not in layer or layer.get("op") in ("dope", "ions"):
+                continue
+            if not st_pre.present(lid):
+                continue
+            nat = choose_anchor(st_pre, lid, layer.get("route"), -float(spec.get("crop_depth", sub_depth)) + 8)[0]
+            routes[lid] = "top" if nat == "top" and routes.get(lid, "top") == "top" else "right"
     for pi, p in enumerate(panels):
-        st = state(p["state_after"])
+        if "crop_depth" in p:
+            errs.append("crop_depth belongs to the figure, not to a panel; move it up one level")
+        st, st_step = state(p["state_after"])
         ions = st.ions if p.get("show_ions", True) and st.ions else []
+        # ---- ion beam: evenly spaced arrows sharing one tail height, so it reads as a beam
         ion_xs: list[float] = []
+        ion_windows = []
         ion_tilt = 0.0
+        ion_tail_y = None
         if ions:
             ion_tilt = math.radians(float(ions[0].get("tilt_deg", 0)))
             pitch = float(ions[0].get("pitch", SP["ion-arrow-pitch"]))
-            for a, b in ions[0].get("where") or [[0, DRAW_W]]:
-                xv = a + pitch / 2
-                while xv <= b and len(ion_xs) < 40:
-                    ion_xs.append(xv)
-                    xv += pitch
-        ion_len = SP["ion-arrow-length"] + SP["ion-arrow-gap"] * 0
-        tails = [st.top(st.idx(xv)) + SP["ion-arrow-gap"] + SP["ion-arrow-length"] * math.cos(ion_tilt)
-                 for xv in ion_xs]
-        ymax = max([st.ymax()] + tails) + 4
-        depth = float(p.get("crop_depth", sub_depth))
-        floor_y = -depth + 8
+            ion_windows = ions[0].get("where") or [[0, DRAW_W]]
+            for a, b in ion_windows:
+                n = max(1, int(round((b - a) / pitch)))
+                gapx = (b - a) / n
+                for k in range(n):
+                    ion_xs.append(a + gapx * (k + 0.5))
+            if ion_xs:
+                ion_tail_y = (max(st.top(st.idx(xv)) for xv in ion_xs)
+                              + SP["ion-arrow-gap"] + SP["ion-arrow-length"] * math.cos(ion_tilt))
+        ymax = max([st.ymax()] + ([ion_tail_y] if ion_tail_y is not None else [])) + 4
         draw_h = ymax + depth
         dims, notes = p.get("dims", []), p.get("callouts", [])
         labels: list[Label] = []
         hidden = set(p.get("hide_layers", []))
+        material_labels: list[Label] = []
         for lid, layer in st.layers.items():
             if lid in hidden or lid in p.get("hide_labels", []) or "label" not in layer:
                 continue
@@ -778,14 +887,29 @@ def build_xsection(spec: dict, series: dict) -> Svg:
             if pi > 0 and lid in seen and lid not in p.get("labels", {}):
                 lspec = {k: v for k, v in lspec.items() if k != "note"}   # a note is given once per figure
             seen.add(lid)
-            labels.append(Label(lid, lspec))
+            lab = Label(lid, lspec)
+            labels.append(lab)
+            material_labels.append(lab)
+        # ---- the noted-label budget: at most N labels in a panel carry a note, the layer
+        # this step made first.  Everything else prints its title only, which is what keeps
+        # the label column from growing taller than the drawing beside it.
+        cap = int(SP["max-noted-labels"])
+        noted = [l for l in material_labels if l.spec.get("note")]
+        if len(noted) > cap:
+            noted.sort(key=lambda l: (born.get(l.key) != st_step, list(st.layers).index(l.key)))
+            for l in noted[cap:]:
+                l.spec = {k: v for k, v in l.spec.items() if k != "note"}
+                l.wrap(LABEL_W)
+        if len(material_labels) > int(SP["max-labelled-layers"]):
+            errs.append(f"panel {pi + 1} labels {len(material_labels)} layers; "
+                        f"at most {int(SP['max-labelled-layers'])}")
         for k, dm in enumerate(dims):
             labels.append(Label(f"dim{k}", dm["label"]))
             labels[-1].is_dim = True
         for k, c in enumerate(notes):
             labels.append(Label(f"callout{k}", c["label"]))
         ion_label = None
-        if ions and ions[0].get("label"):
+        if ions and ions[0].get("label") and ion_xs:
             ion_label = Label("ions", ions[0]["label"])
             labels.append(ion_label)
         # ---- anchors in drawing coordinates; routes
@@ -793,28 +917,62 @@ def build_xsection(spec: dict, series: dict) -> Svg:
         for lab in labels:
             if lab.is_dim:
                 dm = dims[int(lab.key[3:])]
-                ya, yb = eval_y(st, dm["y0"]), eval_y(st, dm["y1"])
-                geo[lab.key] = ("top", dm["x"], (ya + yb) / 2, (ya + yb) / 2, 0)
+                ya, yb = eval_y(st, dm["y0"], errs), eval_y(st, dm["y1"], errs)
+                geo[lab.key] = ("top", dm["x"], (ya + yb) / 2, (ya + yb) / 2, 0, dm["x"])
                 lab.stub = float(dm.get("stub", 12))
             elif lab.key.startswith("callout"):
                 c = notes[int(lab.key[7:])]
-                yv = eval_y(st, c["y"])
-                geo[lab.key] = ("top", c["x"], yv, yv, 0)
+                if "y" not in c:
+                    errs.append(f"callout {c.get('label', {}).get('title', '?')!r} has no y:")
+                yv = eval_y(st, c.get("y", 0), errs)
+                geo[lab.key] = ("top", c.get("x", DRAW_W / 2), yv, yv, 0, c.get("x", DRAW_W / 2))
             elif lab is ion_label:
-                geo[lab.key] = ("right", 0.0, 0.0, 0.0, 0)      # filled in once the arrows are laid out
+                mid = max(ion_windows, key=lambda w: w[1] - w[0])
+                cx = (mid[0] + mid[1]) / 2
+                geo[lab.key] = ("top", cx, ion_tail_y, ion_tail_y, 0, cx)
             elif st.layers[lab.key].get("op") == "dope":
                 geo[lab.key] = overlay_anchor(st, st.layers[lab.key], floor_y)
             else:
                 geo[lab.key] = choose_anchor(st, lab.key, st.layers[lab.key].get("route"), floor_y)
+            want = routes.get(lab.key, geo[lab.key][0])
+            if want != geo[lab.key][0] and not lab.is_dim and not lab.key.startswith("callout") \
+                    and lab is not ion_label:
+                geo[lab.key] = choose_anchor(st, lab.key, want, floor_y)
             lab.route = geo[lab.key][0]
-        # ---- header band for the top-routed labels (at most two: one hangs left, one right)
+            routes.setdefault(lab.key, lab.route)
+        # ---- header band for the top-routed labels
+        max_top = int(SP["max-header-callouts"])
         tops = sorted([l for l in labels if l.route == "top"], key=lambda l: (geo[l.key][1] + l.stub, l.key))
-        if len(tops) > 2:
-            raise SystemExit(f"{spec['id']}: more than two top-routed labels in panel {pi + 1}")
+        if len(tops) > max_top:
+            errs.append(f"panel {pi + 1} has {len(tops)} labels routed above the drawing; "
+                        f"at most {max_top}")
+            for l in tops[max_top:]:
+                l.route = "right"
+                routes[l.key] = "right"
+            tops = tops[:max_top]
         for k, lab in enumerate(tops):
             rx = X0 + geo[lab.key][1] + lab.stub
             lab.hang = "left" if (len(tops) == 2 and k == 0) or (len(tops) == 1 and rx > X0 + DRAW_W * 0.6) else "right"
             lab.wrap(min(200.0, rx - 9 - M) if lab.hang == "left" else min(230.0, W - M - rx - 9))
+            if lab.note_lines > int(SP["max-callout-note-lines"]):
+                errs.append(f"the label above the drawing, {lab.spec['title']!r}, wraps to "
+                            f"{lab.note_lines} note lines; at most "
+                            f"{int(SP['max-callout-note-lines'])} — shorten the note")
+        band_h = max([l.height for l in tops], default=0)
+        # A header band taller than the drawing it labels reads as a caption with a picture
+        # attached; route those labels to the right-hand column instead.
+        if tops and band_h > draw_h:
+            for l in tops:
+                if l.is_dim:
+                    continue
+                l.route = "right"
+                routes[l.key] = "right"
+                l.wrap(LABEL_W)
+                gx = geo[l.key][1]
+                yv = geo[l.key][2]
+                geo[l.key] = ("right", gx, yv - 3.5, yv + 3.5, 0, gx)
+            tops = [l for l in tops if l.route == "top"]
+            band_h = max([l.height for l in tops], default=0)
         tlines = wrap(p["title"], TY["panel-title"]["size"], W - 2 * M, bold=True)
         title_y = y + TY["panel-title"]["size"]
         for ln in tlines:
@@ -822,7 +980,6 @@ def build_xsection(spec: dict, series: dict) -> Svg:
             title_y += TY["panel-title"]["line"]
         title_y -= TY["panel-title"]["line"]
         band_top = title_y + 12
-        band_h = max([l.height for l in tops], default=0)
         y_draw_top = band_top + band_h + (SP["header-band-gap"] if tops else 0)
         y0 = y_draw_top + ymax                              # SVG y of the datum
 
@@ -846,32 +1003,30 @@ def build_xsection(spec: dict, series: dict) -> Svg:
                 continue
             for poly in st.overlay_polygons(ov):
                 fill_material(svg, ov["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly), ov["id"])
+        # The accent traces the surface this step made, drawn just clear of it, so that it
+        # marks a 5 u film instead of covering it.
+        off = SP["highlight-offset"]
         for a, b in (p.get("highlight") or {}).get("where", []):
-            pts = _simplify([(sx(st.x(i)), sy(st.top(i))) for i in range(st.idx(a), st.idx(b) + 1)])
+            pts = _simplify([(sx(st.x(i)), sy(st.top(i) + off)) for i in range(st.idx(a), st.idx(b) + 1)])
             svg.add('<polyline class="hl" points="' + " ".join(f"{f2(px)},{f2(py)}" for px, py in pts) + '"/>')
         # ---- ion arrows
-        ion_tail = None
-        if ions:
-            L, gap, tilt = SP["ion-arrow-length"], SP["ion-arrow-gap"], ion_tilt
-            best = None
+        if ions and ion_xs:
+            gap, tilt = SP["ion-arrow-gap"], ion_tilt
             for xv in ion_xs:
                 tipy = st.top(st.idx(xv)) + gap
-                tx0, ty0 = xv + L * math.sin(tilt), tipy + L * math.cos(tilt)
+                run = (ion_tail_y - tipy) / max(math.cos(tilt), 1e-6)
+                tx0, ty0 = xv + run * math.sin(tilt), ion_tail_y
                 svg.add(f'<path class="ion" d="M{f1(sx(tx0))} {f1(sy(ty0))}'
-                        f'L{f1(sx(xv + 3.2 * math.sin(tilt)))} {f1(sy(tipy + 3.2 * math.cos(tilt)))}"/>')
+                        f'L{f1(sx(xv + 4.5 * math.sin(tilt)))} {f1(sy(tipy + 4.5 * math.cos(tilt)))}"/>')
                 hx, hy = sx(xv), sy(tipy)
                 dx, dy = math.sin(tilt), -math.cos(tilt)
                 px, py = -dy, dx
                 svg.add(f'<path class="ionhead" d="M{f1(hx)} {f1(hy)}'
-                        f'L{f1(hx - 4.4 * dx + 2.4 * px)} {f1(hy - 4.4 * dy + 2.4 * py)}'
-                        f'L{f1(hx - 4.4 * dx - 2.4 * px)} {f1(hy - 4.4 * dy - 2.4 * py)}Z"/>')
-                if best is None or (ty0, tx0) >= (best[1], best[0]):
-                    best = (tx0, ty0)
-            if best is not None:
-                ion_tail = (sx(best[0]), sy(best[1]))
+                        f'L{f1(hx - 6.0 * dx + 3.0 * px)} {f1(hy - 6.0 * dy + 3.0 * py)}'
+                        f'L{f1(hx - 6.0 * dx - 3.0 * px)} {f1(hy - 6.0 * dy - 3.0 * py)}Z"/>')
         svg.add("</g>")
         for k, dm in enumerate(dims):
-            ya, yb, xd = eval_y(st, dm["y0"]), eval_y(st, dm["y1"]), sx(dm["x"])
+            ya, yb, xd = eval_y(st, dm["y0"], errs), eval_y(st, dm["y1"], errs), sx(dm["x"])
             for a, b in dm.get("witness", []):
                 svg.add(f'<path class="witness" d="M{f1(sx(a))} {f1(sy(yb))}H{f1(sx(b))}"/>')
             ah, aw = ST["arrowhead"]["length"], ST["arrowhead"]["width"] / 2
@@ -880,18 +1035,9 @@ def build_xsection(spec: dict, series: dict) -> Svg:
             svg.add(f'<path class="dimhead" d="M{f1(xd)} {f1(sy(yb))}l{-aw} {ah}h{2 * aw}z"/>')
         # ---- label positions
         for lab in labels:
-            if lab is ion_label:
-                if ion_tail is None:
-                    lab.route = "right"
-                    lab.ax, lab.lo = x_right - 6, y_draw_top + 4
-                    lab.hi = lab.lo
-                else:
-                    lab.ax = ion_tail[0]
-                    lab.lo = lab.hi = ion_tail[1]
-                lab.ay = lab.lo
-                continue
-            r, gx, glo, ghi, ncross = geo[lab.key]
+            r, gx, glo, ghi, ncross, gxmin = geo[lab.key]
             lab.ax = sx(gx)
+            lab.ax_min = sx(gxmin)
             lab.lo, lab.hi = sy(ghi), sy(glo)                # SVG y grows downwards
             lab.ay = (lab.lo + lab.hi) / 2
             if lab.route == "top":
@@ -921,8 +1067,14 @@ def build_xsection(spec: dict, series: dict) -> Svg:
             y = ya1 + 14
         else:
             y += SP["panel-gap"] - 6
-    svg.text(M, y + 10, NOT_TO_SCALE, "t-label-note muted")
+    films = any(lid != "sub" for pnl in panels for lid in state(pnl["state_after"])[0].layers
+                if state(pnl["state_after"])[0].present(lid) and lid != "sub")
+    svg.text(M, y + 10, NOT_TO_SCALE if films else NOT_TO_SCALE.split(".")[0] + ".",
+             "t-label-note muted")
     svg.h = y + 10 + M
+    if svg.h > SP["max-figure-height"]:
+        errs.append(f"the figure is {math.ceil(svg.h)} u tall; at most {SP['max-figure-height']} u "
+                    "— drop a note or split it into two figures")
     return svg
 
 
@@ -1048,6 +1200,7 @@ def build_stack(spec: dict) -> Svg:
         span = (hi - lo) * scale
         pad = min(3.5, span / 2)
         lab.ax = x_bar1
+        lab.ax_min = x_bar0 + 4
         lab.lo, lab.hi = sy(hi) + pad, sy(lo) - pad
         lab.ay = (lab.lo + lab.hi) / 2
         labels.append(lab)
@@ -1281,10 +1434,13 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
             if any(_cross(a, b) for a in leaders[i][1] for b in leaders[j][1]):
                 errs.append(f"leaders cross: {leaders[i][0]!r} x {leaders[j][0]!r}")
     edges = []                                                            # 12
+    draw_right = max([rx + rw for rx, ry, rw, rh in rects], default=W)
     for pg in root.iter("{http://www.w3.org/2000/svg}polygon"):
         if "mat" in (pg.get("class") or "").split():
             pts = [tuple(float(v) for v in q.split(",")) for q in pg.get("points").split()]
             for a, b in zip(pts, pts[1:] + pts[:1]):
+                if max(a[0], b[0]) > draw_right - 0.5:
+                    continue                      # the bleed off the edge of the drawing
                 if abs(a[1] - b[1]) > 6 and abs(a[0] - b[0]) < 0.35 * abs(a[1] - b[1]):
                     edges.append((a, b))
     for owner, segs in leaders:
@@ -1303,21 +1459,117 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 else:
                     continue
                 break
-    if root.get("data-kind") == "xsection" and NOT_TO_SCALE not in raw:    # 13
+    if root.get("data-kind") == "xsection" and "Not to scale" not in raw:  # 13
         errs.append("cross-section without the 'Not to scale' line")
     heads = [t for t in texts if "t-panel-title" in (t[0].get("class") or "")]
     if root.get("data-kind") == "xsection" and not heads:
         errs.append("cross-section without a panel title")
+    # 14: two leaders may never run side by side.  With orthogonal lane routing every leader
+    # owns a distinct vertical x, so a pair that comes within the lane clearance and overlaps
+    # in extent is a layout regression, not a drawing an author can trace.
+    clear = SP["leader-lane-clearance"]
+    flat_segs = [(owner, seg) for owner, segs in leaders for seg in segs]
+    for i in range(len(flat_segs)):
+        for j in range(i + 1, len(flat_segs)):
+            (oa, (a0, a1)), (ob, (b0, b1)) = flat_segs[i], flat_segs[j]
+            if oa == ob:
+                continue
+            va, vb = abs(a0[0] - a1[0]) < 0.01, abs(b0[0] - b1[0]) < 0.01
+            ha, hb = abs(a0[1] - a1[1]) < 0.01, abs(b0[1] - b1[1]) < 0.01
+            if va and vb and abs(a0[0] - b0[0]) < clear:
+                if min(a0[1], a1[1]) < max(b0[1], b1[1]) - 1 and min(b0[1], b1[1]) < max(a0[1], a1[1]) - 1:
+                    errs.append(f"leaders of {oa!r} and {ob!r} run side by side "
+                                f"{abs(a0[0] - b0[0]):.1f} u apart; give each its own lane")
+            elif ha and hb and abs(a0[1] - b0[1]) < clear:
+                if min(a0[0], a1[0]) < max(b0[0], b1[0]) - 1 and min(b0[0], b1[0]) < max(a0[0], a1[0]) - 1:
+                    errs.append(f"leaders of {oa!r} and {ob!r} run side by side "
+                                f"{abs(a0[1] - b0[1]):.1f} u apart; stagger their anchors")
+    # 15: two anchor dots that sit almost on top of each other cannot be told apart.
+    dots = [(c.get("data-owner", ""), float(c.get("cx")), float(c.get("cy")))
+            for c in root.iter("{http://www.w3.org/2000/svg}circle") if c.get("class") == "dot"]
+    for i in range(len(dots)):
+        for j in range(i + 1, len(dots)):
+            (oa, ax, ay), (ob, bx, by) = dots[i], dots[j]
+            if abs(ax - bx) < SP["anchor-separation-x"] and abs(ay - by) < SP["anchor-separation-y"]:
+                errs.append(f"the anchors of {oa!r} and {ob!r} are "
+                            f"{math.hypot(ax - bx, ay - by):.1f} u apart; "
+                            "stagger one of them inside its own layer")
+    # 16: an implant label may never be drawn over the material that blocks the implant.
+    polys = []
+    for pg in root.iter("{http://www.w3.org/2000/svg}polygon"):
+        cls = (pg.get("class") or "").split()
+        if "mat" not in cls:
+            continue
+        mat = next((c[2:] for c in cls if c.startswith("m-")), "")
+        pts = [tuple(float(v) for v in q.split(",")) for q in pg.get("points").split()]
+        polys.append((mat, pts))
+    for owner, segs in leaders:
+        if owner != "ions":
+            continue
+        for (p0, p1) in segs:
+            for k in range(21):
+                q = (p0[0] + (p1[0] - p0[0]) * k / 20, p0[1] + (p1[1] - p0[1]) * k / 20)
+                hit = next((mt for mt, pts in polys if _point_in(q, pts)), None)
+                if hit:
+                    errs.append(f"the ion-beam label's leader runs through {hit}; "
+                                "route it above the surface, clear of every mask")
+                    break
+            else:
+                continue
+            break
+    # 17: two materials that are hard to tell apart may only touch when their patterns
+    # differ and both are thick enough for that pattern to show.
+    boxes = [(mt, min(x for x, _ in pts), min(y for _, y in pts),
+              max(x for x, _ in pts), max(y for _, y in pts)) for mt, pts in polys]
+    seen_pairs = set()
+    for i in range(len(boxes)):
+        for j in range(i + 1, len(boxes)):
+            ma, ax0, ay0, ax1, ay1 = boxes[i]
+            mb, bx0, by0, bx1, by1 = boxes[j]
+            if ma == mb or ma not in TOK["materials"] or mb not in TOK["materials"]:
+                continue
+            touch = (min(ax1, bx1) - max(ax0, bx0) > 1
+                     and (abs(ay1 - by0) < 1.5 or abs(by1 - ay0) < 1.5))
+            if not touch or (ma, mb) in seen_pairs:
+                continue
+            seen_pairs.add((ma, mb))
+            va, vb = TOK["materials"][ma], TOK["materials"][mb]
+            de = min(min(math.dist(_lab(va[mode], sim), _lab(vb[mode], sim))
+                         for sim in (None, "deutan", "protan")) for mode in ("light", "dark"))
+            if de >= 14:
+                continue
+            if va["pattern"] == vb["pattern"]:
+                errs.append(f"{ma} and {mb} touch, are {de:.1f} apart in colour and share "
+                            f"a pattern; one of them needs its own pattern")
+            else:
+                thin = [m for m, b in ((ma, boxes[i]), (mb, boxes[j])) if b[4] - b[2] < 10]
+                if thin:
+                    errs.append(f"{ma} and {mb} touch and are {de:.1f} apart in colour, so the "
+                                f"pattern is the only thing between them, but {', '.join(thin)} "
+                                "is drawn thinner than 10 u, where a pattern may not show")
     return [f"{name}: {e}" if name else e for e in errs]
 
 
+def _point_in(q, pts) -> bool:
+    x, y = q
+    inside = False
+    n = len(pts)
+    for i in range(n):
+        x0, y0 = pts[i]
+        x1, y1 = pts[(i + 1) % n]
+        if (y0 > y) != (y1 > y) and x < (x1 - x0) * (y - y0) / (y1 - y0 + 1e-12) + x0:
+            inside = not inside
+    return inside
+
+
 # --------------------------------------------------------------------------- spec lint
-_INFORCE = None
+_INFORCE: tuple[set[str], object] | None = None
 
 
-def restricted_labels() -> set[str]:
-    """Every footnote label that ``tools/check_inforce.py`` ties to a patent family it does not
-    treat as certainly expired.  The data loading is that checker's own, not a copy of it."""
+def _inforce():
+    """The footnote labels and the text matcher of ``tools/check_inforce.py``, for families it
+    does not treat as certainly expired.  Both the data loading and the matching are that
+    checker's own code, imported, not a copy of it."""
     global _INFORCE
     if _INFORCE is None:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -1326,8 +1578,72 @@ def restricted_labels() -> set[str]:
         texts = {p: p.read_text(encoding="utf-8") for p in check_inforce.pages()}
         texts[check_inforce.INVENTORY] = check_inforce.INVENTORY.read_text(encoding="utf-8")
         check_inforce.map_keys_and_labels(fams, texts)
-        _INFORCE = {lab for f in fams for lab in f.labels}
+        _INFORCE = ({lab for f in fams for lab in f.labels}, check_inforce.Matcher(fams))
     return _INFORCE
+
+
+def restricted_labels() -> set[str]:
+    return _inforce()[0]
+
+
+def inforce_hits(text: str, where: str) -> list[str]:
+    """Every publication number, patent title or restricted phrase of a family that is not
+    certainly expired, found anywhere in a string that will end up in a figure.  A figure
+    cannot sit inside a collapsed note, so there is nowhere for any of it to go."""
+    if not text:
+        return []
+    matcher = _inforce()[1]
+    flat = " ".join(str(text).split())
+    out = []
+    for _m, owners, kind, value in matcher.finditer(flat):
+        out.append(f"{where}: {kind} {value!r} belongs to patent family "
+                   f"{owners[0].id}, which is not shown as certainly expired; "
+                   "a figure may never carry it")
+    return sorted(set(out))
+
+
+def spec_strings(spec: dict, series: dict | None):
+    """Every free-text string of a spec that ends up in the SVG, the caption or the alt."""
+    out: list[tuple[str, str]] = []
+
+    def lab(prefix, d):
+        if not d:
+            return
+        for field in ("title", "note"):
+            if d.get(field):
+                out.append((f"{prefix} {field}", d[field]))
+
+    out.append(("caption", spec.get("caption", "")))
+    out.append(("alt text", spec.get("alt", "")))
+    for field in ("title", "footer"):
+        if spec.get(field):
+            out.append((field, spec[field]))
+    if spec.get("axis", {}).get("label"):
+        out.append(("axis label", spec["axis"]["label"]))
+    for field in ("strip_header", "rows_header"):
+        if spec.get(field):
+            out.append((field, spec[field]))
+    for m in spec.get("modules", []) or []:
+        out.append((f"module {m.get('name', '')[:20]}", m.get("name", "")))
+    lab("arrow", spec.get("arrow"))
+    for p in spec.get("panels", []) or []:
+        out.append((f"panel title {p.get('title', '')[:20]}", p.get("title", "")))
+        for d in p.get("dims", []) or []:
+            lab("dimension label", d.get("label"))
+        for c in p.get("callouts", []) or []:
+            lab("callout label", c.get("label"))
+        for over in (p.get("labels") or {}).values():
+            lab("panel label override", over)
+    for l in spec.get("layers", []) or []:
+        lab(f"layer {l.get('id', '')}", l.get("label"))
+    for n in spec.get("nodes", []) or []:
+        lab(f"node {n.get('title', '')[:20]}", n)
+        lab("branch", n.get("branch"))
+    if series:
+        lab("series substrate", series["substrate"].get("label"))
+        for op in series.get("ops", []):
+            lab(f"series layer {op.get('id', op['op'])}", op.get("label"))
+    return out
 
 
 STEP_REF_RE = re.compile(r"steps? \d{3}((, | and |–)\d{3})*")
@@ -1354,6 +1670,16 @@ def _label_errs(key: str, lab: dict, defined: set[str], restricted: set[str],
                         f"{NOT_PUBLIC!r} first and the reading second")
         if to_scale:
             errs.append(f"{key}: a value that is not public may not be drawn to scale")
+    title = lab.get("title", "")
+    if len(title) > SP["max-title-chars"]:
+        errs.append(f"{key}: the title is {len(title)} characters; "
+                    f"at most {SP['max-title-chars']}")
+    # The arrow note runs the full width between the panels, so it has a budget of its own;
+    # every other note shares the 140 u label column and has to stay short.
+    budget = SP["max-arrow-note-chars"] if key == "arrow" else SP["max-note-chars"]
+    if len(note) > budget:
+        errs.append(f"{key}: the note is {len(note)} characters; "
+                    f"at most {int(budget)} — the rest belongs in the caption")
     return errs
 
 
@@ -1382,21 +1708,55 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
     labs: list[tuple[str, dict]] = []
     if kind == "xsection":
         labs.append(("substrate", series["substrate"].get("label")))
+        if series["substrate"]["material"] not in TOK["materials"]:
+            errs.append(f"unknown material {series['substrate']['material']}")
+        steps = {"000"}
         for op in series["ops"]:
+            if op["op"] not in OPS:
+                errs.append(f"unknown operation {op['op']!r}; one of {', '.join(sorted(OPS))}")
+                continue
+            for field in op:
+                if field not in OPS[op["op"]] | COMMON_OP_FIELDS:
+                    errs.append(f"operation {op['op']} at step {op.get('step')}: "
+                                f"unknown field {field!r}")
+            if not re.fullmatch(r"\d{3}", str(op.get("step", ""))):
+                errs.append(f"operation {op['op']}: step {op.get('step')!r} is not three digits")
+            steps.add(str(op.get("step")))
             if op["op"] == "deposit" and op.get("t") is not None and float(op["t"]) < SP["min-layer-thickness"]:
                 errs.append(f"layer {op['id']} drawn thinner than {SP['min-layer-thickness']} u")
             if op.get("material") and op["material"] not in TOK["materials"]:
                 errs.append(f"unknown material {op['material']}")
+            for mat in (op.get("materials") or []) + (op.get("only_on") or []) + (op.get("consumes") or []):
+                if mat not in TOK["materials"] and mat not in GROUPS:
+                    errs.append(f"operation {op['op']} at step {op.get('step')}: "
+                                f"unknown material or group {mat!r}")
+            if op.get("where_open") and op["where_open"] not in {o.get("id") for o in series["ops"]}:
+                errs.append(f"operation {op['op']} at step {op.get('step')}: "
+                            f"where_open names no layer of this series ({op['where_open']!r})")
             labs.append((op.get("id", op["op"]), op.get("label")))
+        for pn in spec.get("panels", []):
+            sa = str(pn.get("state_after", ""))
+            if not re.fullmatch(r"\d{3}", sa):
+                errs.append(f"state_after {pn.get('state_after')!r} is not a three-digit step number")
+            elif sa > max(steps):
+                errs.append(f"state_after {sa!r} is beyond the last step of the series "
+                            f"({max(steps)})")
         if len(spec["panels"]) > (3 if spec.get("three_panels_allowed") else 2):
             errs.append(f"{len(spec['panels'])} panels; at most two (three only for a "
                         "deposit/pattern/etch summary on a category page)")
+        if spec.get("arrow"):
+            labs.append(("arrow", spec["arrow"]))
         for p in spec["panels"]:
             labs += [(f"dim in {p['title'][:24]}", d["label"]) for d in p.get("dims", [])]
             labs += [(f"callout in {p['title'][:24]}", c["label"]) for c in p.get("callouts", [])]
+            labs += [(f"override in {p['title'][:24]}", o) for o in (p.get("labels") or {}).values()]
             n_top = len(p.get("dims", [])) + len(p.get("callouts", []))
-            if n_top > 2:
-                errs.append(f"panel {p['title'][:24]!r} has {n_top} header callouts; at most two")
+            if n_top > SP["max-header-callouts"]:
+                errs.append(f"panel {p['title'][:24]!r} has {n_top} header callouts; "
+                            f"at most {int(SP['max-header-callouts'])}")
+            if len(p.get("title", "")) > SP["max-panel-title-chars"]:
+                errs.append(f"the panel title {p['title'][:30]!r} is {len(p['title'])} "
+                            f"characters; at most {int(SP['max-panel-title-chars'])}")
     elif kind == "stack":
         if not to_scale:
             errs.append("a stack chart must declare to_scale: true")
@@ -1424,7 +1784,62 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
         errs.append("the caption of a cross-section must end with 'Not to scale.'")
     if kind == "stack" and "To scale" not in cap:
         errs.append("the caption of a to-scale chart must say 'To scale'")
+    # Nothing from a patent that is not certainly expired may reach the SVG, the caption or
+    # the alt text — in any form, not only as a footnote key.
+    for where, text in spec_strings(spec, series):
+        errs += inforce_hits(text, where)
+    # A caption should say what the picture shows, not re-run the paragraph above it.
+    if page:
+        errs += caption_echo(spec, ROOT / page)
+    if UNKNOWN_GLYPHS:
+        errs.append("characters with no entry in the embedded width table, measured at the "
+                    "font's widest advance: " + " ".join(sorted(UNKNOWN_GLYPHS)))
     return errs
+
+
+OPS = {
+    "deposit": {"id", "material", "t", "where", "flat", "fill_to", "only_on", "label", "route"},
+    "etch": {"materials", "where", "depth", "taper_deg", "corner_r", "iso"},
+    "strip": {"materials"},
+    "planarise": {"to", "stop_on"},
+    "react": {"id", "material", "consumes", "under", "t", "where", "label", "route"},
+    "dope": {"id", "material", "where", "from_surface", "thickness", "follow", "y_top",
+             "y_bot", "anchor_x", "label", "route"},
+    "ions": {"where", "tilt_deg", "pitch", "label"},
+}
+COMMON_OP_FIELDS = {"op", "step", "where_open"}
+
+
+def _sentences(text: str) -> list[str]:
+    return [t.strip() for t in re.split(r"(?<=[.;])\s+", " ".join(str(text).split())) if t.strip()]
+
+
+def _plain(text: str) -> str:
+    return re.sub(r"[^a-z0-9 ]+", " ", str(text).lower())
+
+
+def caption_echo(spec: dict, page: Path) -> list[str]:
+    """A caption that repeats a run of eight words from the paragraph it sits under makes the
+    reader read the same sentence twice; say what the picture shows instead."""
+    if not page.exists():
+        return []
+    text = page.read_text(encoding="utf-8")
+    m = re.search(rf"^:name: fig-{re.escape(spec['id'])}$", text, re.M)
+    if not m:
+        return []
+    before = text[:text.rfind(":::{figure}", 0, m.start())]
+    para = " ".join(before.rstrip().split("\n\n")[-1].split())
+    words = _plain(para).split()
+    windows = {" ".join(words[i:i + 8]) for i in range(max(0, len(words) - 7))}
+    out = []
+    for sent in _sentences(spec.get("caption", "")):
+        sw = _plain(sent).split()
+        for i in range(max(0, len(sw) - 7)):
+            if " ".join(sw[i:i + 8]) in windows:
+                out.append("the caption repeats the paragraph it sits under "
+                           f"({' '.join(sw[i:i + 8])!r}); say what the picture shows instead")
+                break
+    return sorted(set(out))
 
 
 # --------------------------------------------------------------------------- colour vision
@@ -1488,7 +1903,7 @@ def render_spec(spec: dict, series_cache: dict[str, dict]) -> tuple[Svg, list[st
         series = series_cache[sp]
     errs = lint_spec(spec, series)
     if kind == "xsection":
-        svg = build_xsection(spec, series)
+        svg = build_xsection(spec, series, errs)
     elif kind == "flowmap":
         svg = build_flowmap(spec)
     elif kind == "stack":
@@ -1708,6 +2123,24 @@ def harness(names: list[str]):
 FIG_BLOCK_RE = re.compile(r"^:::\{figure\}[^\n]*\n(?:[^\n]*\n)*?:::\n", re.M)
 
 
+def page_block_problems(spec: dict, text: str) -> list[str]:
+    """The block must be present in the page and must be the generated one, character for
+    character: a deleted block, or one whose :name:, :alt: or caption was edited by hand, is
+    a page that no longer says what the figure says."""
+    blocks = page_blocks(text)
+    want = myst_block(spec)
+    got = blocks.get(f"fig-{spec['id']}")
+    if got is None:
+        return [f"{spec['page']}: no {{figure}} block named fig-{spec['id']} is pasted into "
+                f"this page; paste data/figures/myst/{spec['id']}.myst.txt into it"]
+    if got == want:
+        return []
+    out = [f"{spec['page']}: the figure block for fig-{spec['id']} is not the generated one"]
+    out += ["    " + line for line in list(difflib.unified_diff(
+        got.splitlines(), want.splitlines(), "in the page", "generated", lineterm="", n=0))[:12]]
+    return out
+
+
 def page_blocks(text: str) -> dict[str, str]:
     """Every ``{figure}`` block on a page, keyed by its ``:name:``."""
     out = {}
@@ -1756,23 +2189,40 @@ def cmd_check() -> int:
                     "committed", "generated", lineterm="", n=0))[:12]:
                 print("   ", line)
             bad += 1
-    stale = {p for p in OUT_DIR.glob("*.svg")} - set(files)
-    for p in sorted(stale):
-        print(f"{p.relative_to(ROOT)}: no spec generates this file")
+    # Anything under the generated directories that no spec accounts for, whatever its
+    # extension: a stray file there is either a leftover or something hand-made.
+    stale = {q for q in OUT_DIR.iterdir() if q.is_file()} - set(files)
+    stale |= {q for q in MYST_DIR.iterdir() if q.is_file()} - set(files)
+    for q in sorted(stale):
+        print(f"{q.relative_to(ROOT)}: no spec generates this file")
         bad += 1
-    # the block pasted into a page must be the generated one, character for character
+    # The block pasted into a page must be present, and must be the generated one, character
+    # for character: a deleted block, or one whose :name:, :alt: or caption was edited, is a
+    # page that no longer says what the figure says.
     for spec_path in sorted(SPEC_DIR.glob("*.yaml")):
         spec = load_spec(spec_path)
         if "kind" not in spec or not spec.get("page"):
             continue
         page = ROOT / spec["page"]
         if not page.exists():
+            print(f"{spec['page']}: the target page of fig-{spec['id']} does not exist")
+            bad += 1
             continue
-        blocks = page_blocks(page.read_text(encoding="utf-8"))
-        want = myst_block(spec)
-        got = blocks.get(f"fig-{spec['id']}")
-        if got is not None and got != want:
-            print(f"{spec['page']}: the figure block for fig-{spec['id']} is not the generated one")
+        for line in page_block_problems(spec, page.read_text(encoding="utf-8")):
+            print(line)
+            bad += 1
+    # Nothing from a patent that is not certainly expired may sit in a committed SVG either:
+    # the label and panel text lives only there, where no page checker would ever read it.
+    for q in sorted(OUT_DIR.glob("*.svg")):
+        try:
+            root = ET.fromstring(q.read_text(encoding="utf-8"))
+        except ET.ParseError as exc:
+            print(f"{q.relative_to(ROOT)}: not well-formed XML ({exc})")
+            bad += 1
+            continue
+        strings = [el.text or "" for el in root.iter() if el.text]
+        for hit in inforce_hits(" ".join(strings), str(q.relative_to(ROOT))):
+            print(hit)
             bad += 1
     print(f"{len(files)} generated files checked, {bad} problem(s)")
     return 1 if bad else 0
@@ -1833,7 +2283,7 @@ def selftest() -> int:
          lambda s, r: s["panels"][0].update(callouts=[
              {"x": 30 + 60 * i, "y": 0, "label": {"title": f"Callout {i}", "basis": "public"}}
              for i in range(3)]),
-         "header callouts; at most two")
+         "header callouts; at most 2")
     case("a reading not marked 'not public'",
          lambda s, r: r["ops"][0]["label"].update(basis="reading", note="about 0.12 µm", cite="pdk-04"),
          "must say 'not public' first")
@@ -1882,6 +2332,101 @@ def selftest() -> int:
             bad += 1
     else:
         print("SELFTEST NOTE: no restricted patent labels in the dataset; the in-force rule was not exercised")
+    # H2: text baked into the SVG, the caption or the alt is screened with check_inforce's
+    # own matcher, not only the cite key.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import check_inforce as _ci                                        # noqa: PLC0415
+    fams = _ci.restricted_families(_ci.load_families())
+    if fams:
+        num = fams[0].numbers[0]
+        phrase = (_ci.PHRASES.get(fams[0].representative) or [None])[0]
+        probes = {"panel title": num, "arrow note": num}
+        if phrase:
+            probes["label note"] = phrase
+        for where, text in probes.items():
+            if not inforce_hits(text, where):
+                print(f"SELFTEST FAIL: an in-force {where} ({text!r}) was accepted")
+                bad += 1
+        spec_bad = _spec_ok()
+        spec_bad["panels"] = [{"state_after": "002", "title": f"Only panel, {num}"}]
+        if not any("may never carry it" in e for e in lint_spec(spec_bad, _SERIES_OK)):
+            print("SELFTEST FAIL: an in-force number in a panel title was accepted")
+            bad += 1
+        ser_arrow = json.loads(json.dumps(_SERIES_OK))
+        spec_arrow = _spec_ok()
+        spec_arrow["arrow"] = {"title": "T", "note": f"see {num}"}
+        if not any("may never carry it" in e for e in lint_spec(spec_arrow, ser_arrow)):
+            print("SELFTEST FAIL: an in-force number in the arrow note was accepted")
+            bad += 1
+    else:
+        print("SELFTEST NOTE: no restricted patent families in the dataset; H2 was not exercised")
+    # H3: a missing or hand-edited page block is a failure, not a silent pass.
+    blk_spec = {"id": "selftest", "page": "docs/steps/006-stie.md", "caption": "A caption.",
+                "alt": "An alt text long enough to pass the length rule that the lint applies "
+                       "to every figure on this site."}
+    if not any("no {figure} block named" in e for e in page_block_problems(blk_spec, "# a page\n")):
+        print("SELFTEST FAIL: a missing figure block was accepted")
+        bad += 1
+    renamed = myst_block(blk_spec).replace(":name: fig-selftest", ":name: fig-something-else")
+    if not any("no {figure} block named" in e for e in page_block_problems(blk_spec, renamed)):
+        print("SELFTEST FAIL: a renamed figure block was accepted")
+        bad += 1
+    edited = myst_block(blk_spec).replace("A caption.", "A different caption.")
+    if not any("is not the generated one" in e for e in page_block_problems(blk_spec, edited)):
+        print("SELFTEST FAIL: a hand-edited figure block was accepted")
+        bad += 1
+    # H5: a state_after that is not a three-digit step, or is past the end of the series.
+    for bad_state, needle in (("5", "not a three-digit"), ("999", "beyond the last step")):
+        sp = _spec_ok()
+        sp["panels"] = [{"state_after": bad_state, "title": "Only panel"}]
+        if not any(needle in e for e in lint_spec(sp, _SERIES_OK)):
+            print(f"SELFTEST FAIL: state_after {bad_state!r} was accepted")
+            bad += 1
+    # H6: three header callouts report a lint line and never abort the build.
+    sp = _spec_ok()
+    sp["panels"] = [{"state_after": "002", "title": "Only panel", "callouts": [
+        {"x": 30 + 60 * i, "y": 0, "label": {"title": f"Callout {i}", "basis": "public"}}
+        for i in range(3)]}]
+    e3 = lint_spec(sp, _SERIES_OK)
+    build_errs: list[str] = []
+    build_xsection(sp, _SERIES_OK, build_errs)          # must not raise
+    if not any("at most 2" in e for e in e3 + build_errs):
+        print("SELFTEST FAIL: three header callouts did not report a lint line")
+        bad += 1
+    # An unknown operation, field, material and where_open are all errors.
+    for mutate, needle in (
+            (lambda r: r["ops"].append({"step": "003", "op": "sputter"}), "unknown operation"),
+            (lambda r: r["ops"][0].update(colour="blue"), "unknown field"),
+            (lambda r: r["ops"][0].update(only_on=["unobtainium"]), "unknown material or group"),
+            (lambda r: r["ops"][0].update(where_open="nosuchlayer"), "where_open names no layer"),
+            (lambda r: r["ops"][0].update(step="3"), "is not three digits")):
+        ser = json.loads(json.dumps(_SERIES_OK))
+        mutate(ser)
+        if not any(needle in e for e in lint_spec(_spec_ok(), ser)):
+            print(f"SELFTEST FAIL: {needle!r} was not reported")
+            bad += 1
+    # A bad y expression is a lint line, not a traceback.
+    sp = _spec_ok()
+    sp["panels"] = [{"state_after": "002", "title": "Only panel", "callouts": [
+        {"x": 100, "y": "surface@100", "label": {"title": "C", "basis": "public"}}]}]
+    ye: list[str] = []
+    build_xsection(sp, _SERIES_OK, ye)
+    if not any("bad y expression" in e for e in ye):
+        print("SELFTEST FAIL: a bad y expression did not report a lint line")
+        bad += 1
+    # The text-overlap rule is reachable from a real figure, not only from hand-written SVG.
+    _real = _place_right
+    try:
+        globals()["_place_right"] = lambda rights, floor: (
+            [setattr(l, "y", floor + 2) or setattr(l, "ay", floor + 2) for l in rights],
+            floor + 2)[1]
+        ovl: list[str] = []
+        svg = build_xsection(_spec_ok(), _SERIES_OK, ovl)
+        if not any("text overlap" in e for e in lint_svg_text(svg.render("auto"))):
+            print("SELFTEST FAIL: the text-overlap rule did not fire with a broken placer")
+            bad += 1
+    finally:
+        globals()["_place_right"] = _real
     # the SVG lint fires on a broken SVG
     svg_cases = [
         ("canvas width", f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" data-kind="xsection">'

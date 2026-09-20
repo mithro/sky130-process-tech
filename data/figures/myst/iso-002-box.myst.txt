@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-iso-002-box
 
-The wafer before and after `BOX`. The pad oxide is the bottom layer of the two-layer pad-oxide/nitride stack that every shallow-trench-isolation module starts with.[^wiki-sti] No SkyWater document states the SKY130 pad-oxide thickness, and the film is drawn far thicker than any of the ranges the page quotes. Not to scale.
+Before, bare silicon; after, an even thermal oxide over the whole wafer. Wikipedia's outline lists this stack deposition as the first step of shallow trench isolation.[^wiki-sti] No SkyWater document states the SKY130 pad-oxide thickness, and the film is drawn far thicker than any range this page quotes. Not to scale.
 :::

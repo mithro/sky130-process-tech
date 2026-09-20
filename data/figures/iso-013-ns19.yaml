@@ -2,26 +2,27 @@ id: iso-013-ns19
 kind: xsection
 page: docs/steps/013-ns19.md
 series: series-isolation.yaml
+crop_depth: 84
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the strip the polished surface is a
   mosaic of nitride islands and oxide-filled trenches. After it the nitride is gone, the active areas
   are covered only by the thin pad oxide, and the oxide-filled trench stands proud of them.
 caption: >-
-  The wafer before and after `NS19`, the last step of the isolation module. The nitride is dissolved
-  in hot phosphoric acid, leaving the active areas covered only by the thin pad oxide from `BOX` and
-  the field oxide standing slightly proud of them. The PDK's final field-oxide step of 0.07 µm above
-  the silicon under poly is the net result of the nitride thickness, the polish and all the oxide
-  recess that follows this step;[^pdk-03] the step drawn here is far larger than that. Not to scale.
+  Before, the polished mosaic of nitride islands and filled trenches; after, the nitride gone and
+  the oxide-filled trench standing proud of the pad oxide. The pad oxide is drawn as left in place,
+  which the page gives as the usual case rather than a certainty. The PDK's final field-oxide step
+  of 0.07 µm above the silicon under poly is the net result of the nitride thickness, the polish and
+  all the oxide recess that follows this step;[^pdk-03] the step drawn here is far larger than that.
+  This cross-section is drawn outside a deep N-well region, so the buried layer of `DNI` (step 008)
+  does not appear. Not to scale.
 arrow:
   title: "NS19, step 013"
   note: "The nitride is dissolved in hot phosphoric acid, which the pad oxide stops at the silicon surface."
 panels:
   - state_after: "012"
-    crop_depth: 84
     title: "Before: the polished surface left by CMPNIT (step 012)"
     hide_layers: [dnw]
   - state_after: "013"
-    crop_depth: 84
     title: "After: nitride gone, pad oxide left, field oxide standing proud"
     hide_layers: [dnw]
     highlight: {where: [[0, 268]]}

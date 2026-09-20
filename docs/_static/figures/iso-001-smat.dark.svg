@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 142" width="480" height="142" role="img" data-kind="xsection" data-theme="dark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 153" width="480" height="153" role="img" data-kind="xsection" data-theme="dark">
 <title>A cross-section of the bare starting wafer: one block of p-type silicon with a flat, featureless top surface and no film of any kind on it. The block runs off the left, right and bottom edges of the drawing, because the wafer continues beyond the slice that is shown.</title>
 <desc>A cross-section of the bare starting wafer: one block of p-type silicon with a flat, featureless top surface and no film of any kind on it. The block runs off the left, right and bottom edges of the drawing, because the wafer continues beyond the slice that is shown.</desc>
 <style>
-:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-sd-p:#e57db4;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#9a8c52;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#ecd05a;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}
+:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-sd-p:#e57db4;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#bdb391;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#d4ae5c;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -15,21 +15,22 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}
 .dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
 .rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
-.ion{stroke:var(--accent);stroke-width:1.4;fill:none}.ionhead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
 .cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs></defs>
-<rect class="ground" x="0" y="0" width="480" height="142"/>
+<rect class="ground" x="0" y="0" width="480" height="153"/>
 <text x="12.0" y="26.0" class="t-panel-title">The wafer as SMAT (step 001) delivers it</text>
 <clipPath id="clip1"><rect x="12" y="38.0" width="268" height="68.0"/></clipPath>
 <g class="drawing" data-rect="12,38.0,268,68.0" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,42.00 283.00,42.00 283.00,206.00 9.00,206.00"/>
 </g>
-<text x="304.0" y="56.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<text x="304.0" y="72.4" class="t-label-note muted" data-owner="sub">p-type bulk substrate</text>
-<text x="304.0" y="88.4" class="t-label-note muted" data-owner="sub">(SMAT, step 001)</text>
-<path class="leader" data-owner="sub" d="M272.0 51.5H283.0H300.0"/>
-<circle class="dot" cx="272.0" cy="51.5" r="1.9"/>
-<text x="12.0" y="130.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="328.0" y="56.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<text x="328.0" y="72.4" class="t-label-note muted" data-owner="sub">p-type bulk</text>
+<text x="328.0" y="88.4" class="t-label-note muted" data-owner="sub">substrate (SMAT,</text>
+<text x="328.0" y="104.4" class="t-label-note muted" data-owner="sub">step 001)</text>
+<path class="leader" data-owner="sub" d="M276.0 51.5H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="51.5" r="1.9"/>
+<text x="12.0" y="140.5" class="t-label-note muted">Not to scale.</text>
 </svg>

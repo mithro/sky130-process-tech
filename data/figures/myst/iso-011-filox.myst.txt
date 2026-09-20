@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-iso-011-filox
 
-The wafer before and after `FILOX`. The deposited oxide fills the lined trench and buries the nitride-covered active areas; this oxide *is* the field oxide of the finished device, and the PDK's stack drawing labels it "FOX K=3.9".[^pdk-04] The PDK gives no fill thickness. The fill is drawn with a flat top; a real high-density-plasma fill is not flat over a patterned wafer. Not to scale.
+Before, the lined trench still open; after, a thick blanket of deposited oxide filling it and burying the nitride-covered active areas. The PDK's stack drawing labels this oxide "FOX K=3.9".[^pdk-04] The PDK gives no fill thickness or topography; the fill is drawn with a flat top. This cross-section is drawn outside a deep N-well region, so the buried layer of `DNI` (step 008) does not appear. Not to scale.
 :::

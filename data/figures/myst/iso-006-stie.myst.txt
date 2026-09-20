@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-iso-006-stie
 
-The wafer before and after `STIE`. The resist is drawn as left on for the trench etch and stripped at the end of the step, one of the two sequences described under *How it is typically performed*. No SkyWater document gives the SKY130 trench depth; about 0.33 µm is this page's reading of the PDK stack drawing, on the assumption that the drawing's zero is the trench floor.[^pdk-04] Not to scale.
+Before, the bare field between two masked active areas; after, a trench with slightly tapered walls and rounded bottom corners, and the resist gone. The resist is drawn as left on for the trench etch and stripped at the end of the step, one of the two sequences described under *How it is typically performed*; the page leaves open whether that strip belongs to this step or to the next lithography. No SkyWater document gives the SKY130 trench depth; about 0.33 µm is this page's reading of the PDK stack drawing, on the assumption that the drawing's zero is the trench floor.[^pdk-04] Not to scale.
 :::

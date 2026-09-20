@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 674" width="480" height="674" role="img" data-kind="xsection" data-theme="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 642" width="480" height="642" role="img" data-kind="xsection" data-theme="auto">
 <title>Two cross-sections of the wafer, one above the other. Before the step the nitride and pad oxide run unbroken under the two blocks of resist and across the gap between them. After it the nitride and pad oxide have been cut away in that gap, so the silicon in the middle of the drawing is bare while the sides are still covered by resist, nitride and pad oxide.</title>
 <desc>Two cross-sections of the wafer, one above the other. Before the step the nitride and pad oxide run unbroken under the two blocks of resist and across the gap between them. After it the nitride and pad oxide have been cut away in that gap, so the silicon in the middle of the drawing is bare while the sides are still covered by resist, nitride and pad oxide.</desc>
 <style>
-:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#f7e9a8;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#e3b92e;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
-@media (prefers-color-scheme: dark){:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-sd-p:#e57db4;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#9a8c52;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#ecd05a;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}}
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+@media (prefers-color-scheme: dark){:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-sd-p:#e57db4;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#bdb391;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#d4ae5c;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -16,12 +16,12 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}
 .dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
 .rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
-.ion{stroke:var(--accent);stroke-width:1.4;fill:none}.ionhead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
 .cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="674"/>
+<rect class="ground" x="0" y="0" width="480" height="642"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the resist pattern from FOM (step 004)</text>
 <clipPath id="clip1"><rect x="12" y="38.0" width="268" height="155.0"/></clipPath>
 <g class="drawing" data-rect="12,38.0,268,155.0" clip-path="url(#clip1)">
@@ -34,67 +34,66 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-resist" data-layer="resist" points="200.25,42.00 283.00,42.00 283.00,80.00 200.25,80.00"/>
 <polygon fill="url(#p-dots)" points="200.25,42.00 283.00,42.00 283.00,80.00 200.25,80.00"/>
 </g>
-<text x="304.0" y="281.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<text x="304.0" y="297.9" class="t-label-note muted" data-owner="sub">p-type bulk substrate</text>
-<text x="304.0" y="313.9" class="t-label-note muted" data-owner="sub">(SMAT, step 001)</text>
-<path class="leader" data-owner="sub" d="M272.0 185.0H283.0L300.0 277.0"/>
-<circle class="dot" cx="272.0" cy="185.0" r="1.9"/>
-<text x="304.0" y="209.9" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="304.0" y="225.9" class="t-label-note muted" data-owner="padox">thermal silicon dioxide</text>
-<text x="304.0" y="241.9" class="t-label-note muted" data-owner="padox">grown over the whole</text>
-<text x="304.0" y="257.9" class="t-label-note muted" data-owner="padox">surface at BOX, step 002</text>
-<path class="leader" data-owner="padox" d="M272.0 106.5H283.0L300.0 205.0"/>
-<circle class="dot" cx="272.0" cy="106.5" r="1.9"/>
-<text x="304.0" y="137.9" class="t-label-title" data-owner="isonit">Nitride hard mask</text>
-<text x="304.0" y="153.9" class="t-label-note muted" data-owner="isonit">blanket LPCVD silicon</text>
-<text x="304.0" y="169.9" class="t-label-note muted" data-owner="isonit">nitride deposited at</text>
-<text x="304.0" y="185.9" class="t-label-note muted" data-owner="isonit">ISONIT, step 003</text>
-<path class="leader" data-owner="isonit" d="M272.0 100.5H283.0L300.0 133.0"/>
-<circle class="dot" cx="272.0" cy="100.5" r="1.9"/>
-<text x="304.0" y="49.9" class="t-label-title" data-owner="resist">Photoresist</text>
-<text x="304.0" y="65.9" class="t-label-note muted" data-owner="resist">developed through the</text>
-<text x="304.0" y="81.9" class="t-label-note muted" data-owner="resist">field oxide mask at FOM,</text>
-<text x="304.0" y="97.9" class="t-label-note muted" data-owner="resist">step 004; it stays over</text>
-<text x="304.0" y="113.9" class="t-label-note muted" data-owner="resist">the future active areas</text>
-<path class="leader" data-owner="resist" d="M272.0 45.5H283.0L300.0 45.0"/>
-<circle class="dot" cx="272.0" cy="45.5" r="1.9"/>
-<path class="parrow" d="M34 338.0V376.0"/>
-<path class="pahead" d="M34 384.0l-5.5 -9h11.0z"/>
-<text x="50.0" y="349.0" class="t-label-title acc">STINITE, step 005</text>
-<text x="50.0" y="364.0" class="t-label-note muted">A plasma etch cuts through the nitride and the</text>
-<text x="50.0" y="379.0" class="t-label-note muted">pad oxide in the open field, stopping on silicon.</text>
-<text x="12.0" y="412.0" class="t-panel-title">After: bare silicon in the field,</text>
-<text x="12.0" y="430.0" class="t-panel-title">the active areas still covered</text>
-<clipPath id="clip2"><rect x="12" y="483.0" width="268" height="155.0"/></clipPath>
-<g class="drawing" data-rect="12,483.0,268,155.0" clip-path="url(#clip2)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,554.00 283.00,554.00 283.00,718.00 9.00,718.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,549.00 91.75,549.00 91.75,554.00 9.00,554.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,549.00 283.00,549.00 283.00,554.00 200.25,554.00"/>
-<polygon class="mat m-nitride" data-layer="isonit" points="9.00,525.00 91.75,525.00 91.75,549.00 9.00,549.00"/>
-<polygon fill="url(#p-hatch)" points="9.00,525.00 91.75,525.00 91.75,549.00 9.00,549.00"/>
-<polygon class="mat m-nitride" data-layer="isonit" points="200.25,525.00 283.00,525.00 283.00,549.00 200.25,549.00"/>
-<polygon fill="url(#p-hatch)" points="200.25,525.00 283.00,525.00 283.00,549.00 200.25,549.00"/>
-<polygon class="mat m-resist" data-layer="resist" points="9.00,487.00 91.75,487.00 91.75,525.00 9.00,525.00"/>
-<polygon fill="url(#p-dots)" points="9.00,487.00 91.75,487.00 91.75,525.00 9.00,525.00"/>
-<polygon class="mat m-resist" data-layer="resist" points="200.25,487.00 283.00,487.00 283.00,525.00 200.25,525.00"/>
-<polygon fill="url(#p-dots)" points="200.25,487.00 283.00,487.00 283.00,525.00 200.25,525.00"/>
-<polyline class="hl" points="92.00,554.00 200.00,554.00"/>
+<text x="328.0" y="249.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<text x="328.0" y="265.9" class="t-label-note muted" data-owner="sub">the starting wafer</text>
+<text x="328.0" y="281.9" class="t-label-note muted" data-owner="sub">(SMAT, step 001)</text>
+<path class="leader" data-owner="sub" d="M276.0 185.0H285.0V245.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="185.0" r="1.9"/>
+<text x="328.0" y="161.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="177.9" class="t-label-note muted" data-owner="padox">thermal silicon</text>
+<text x="328.0" y="193.9" class="t-label-note muted" data-owner="padox">dioxide grown over</text>
+<text x="328.0" y="209.9" class="t-label-note muted" data-owner="padox">the whole surface</text>
+<text x="328.0" y="225.9" class="t-label-note muted" data-owner="padox">at BOX, step 002</text>
+<path class="leader" data-owner="padox" d="M267.0 106.5H291.0V157.0H324.0"/>
+<circle class="dot" data-owner="padox" cx="267.0" cy="106.5" r="1.9"/>
+<text x="328.0" y="121.9" class="t-label-title" data-owner="isonit">Nitride</text>
+<text x="328.0" y="137.9" class="t-label-title" data-owner="isonit">hard mask</text>
+<path class="leader" data-owner="isonit" d="M276.0 100.5H297.0V117.0H324.0"/>
+<circle class="dot" data-owner="isonit" cx="276.0" cy="100.5" r="1.9"/>
+<text x="328.0" y="49.9" class="t-label-title" data-owner="resist">Photoresist</text>
+<text x="328.0" y="65.9" class="t-label-note muted" data-owner="resist">developed through</text>
+<text x="328.0" y="81.9" class="t-label-note muted" data-owner="resist">the field oxide mask</text>
+<text x="328.0" y="97.9" class="t-label-note muted" data-owner="resist">at FOM, step 004</text>
+<path class="leader" data-owner="resist" d="M276.0 45.5H303.0V45.0H324.0"/>
+<circle class="dot" data-owner="resist" cx="276.0" cy="45.5" r="1.9"/>
+<path class="parrow" d="M34 306.0V344.0"/>
+<path class="pahead" d="M34 352.0l-5.5 -9h11.0z"/>
+<text x="50.0" y="317.0" class="t-label-title acc">STINITE, step 005</text>
+<text x="50.0" y="332.0" class="t-label-note muted">A plasma etch cuts through the nitride and the</text>
+<text x="50.0" y="347.0" class="t-label-note muted">pad oxide in the open field, stopping on silicon.</text>
+<text x="12.0" y="380.0" class="t-panel-title">After: bare silicon in the field,</text>
+<text x="12.0" y="398.0" class="t-panel-title">the active areas still covered</text>
+<clipPath id="clip2"><rect x="12" y="451.0" width="268" height="155.0"/></clipPath>
+<g class="drawing" data-rect="12,451.0,268,155.0" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,522.00 283.00,522.00 283.00,686.00 9.00,686.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,517.00 91.75,517.00 91.75,522.00 9.00,522.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,517.00 283.00,517.00 283.00,522.00 200.25,522.00"/>
+<polygon class="mat m-nitride" data-layer="isonit" points="9.00,493.00 91.75,493.00 91.75,517.00 9.00,517.00"/>
+<polygon fill="url(#p-hatch)" points="9.00,493.00 91.75,493.00 91.75,517.00 9.00,517.00"/>
+<polygon class="mat m-nitride" data-layer="isonit" points="200.25,493.00 283.00,493.00 283.00,517.00 200.25,517.00"/>
+<polygon fill="url(#p-hatch)" points="200.25,493.00 283.00,493.00 283.00,517.00 200.25,517.00"/>
+<polygon class="mat m-resist" data-layer="resist" points="9.00,455.00 91.75,455.00 91.75,493.00 9.00,493.00"/>
+<polygon fill="url(#p-dots)" points="9.00,455.00 91.75,455.00 91.75,493.00 9.00,493.00"/>
+<polygon class="mat m-resist" data-layer="resist" points="200.25,455.00 283.00,455.00 283.00,493.00 200.25,493.00"/>
+<polygon fill="url(#p-dots)" points="200.25,455.00 283.00,455.00 283.00,493.00 200.25,493.00"/>
+<polyline class="hl" points="92.00,519.00 200.00,519.00"/>
 </g>
-<text x="304.0" y="580.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M272.0 576.0H283.0H300.0"/>
-<circle class="dot" cx="272.0" cy="576.0" r="1.9"/>
-<text x="304.0" y="556.9" class="t-label-title" data-owner="padox">Pad oxide</text>
-<path class="leader" data-owner="padox" d="M272.0 551.5H283.0L300.0 552.0"/>
-<circle class="dot" cx="272.0" cy="551.5" r="1.9"/>
-<text x="304.0" y="532.9" class="t-label-title" data-owner="isonit">Nitride hard mask</text>
-<path class="leader" data-owner="isonit" d="M272.0 528.5H283.0L300.0 528.0"/>
-<circle class="dot" cx="272.0" cy="528.5" r="1.9"/>
-<text x="304.0" y="501.4" class="t-label-title" data-owner="resist">Photoresist</text>
-<path class="leader" data-owner="resist" d="M272.0 496.5H283.0H300.0"/>
-<circle class="dot" cx="272.0" cy="496.5" r="1.9"/>
-<text x="155.0" y="453.9" class="t-label-title" data-owner="callout0">Bare silicon</text>
-<text x="155.0" y="469.9" class="t-label-note muted" data-owner="callout0">the future field region</text>
-<path class="leader" data-owner="callout0" d="M146.0 554.0V449.0H151.0"/>
-<circle class="dot" cx="146.0" cy="554.0" r="1.9"/>
-<text x="12.0" y="662.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="328.0" y="556.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 552.0H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="552.0" r="1.9"/>
+<text x="328.0" y="532.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<path class="leader" data-owner="padox" d="M276.0 519.5H291.0V528.0H324.0"/>
+<circle class="dot" data-owner="padox" cx="276.0" cy="519.5" r="1.9"/>
+<text x="328.0" y="492.9" class="t-label-title" data-owner="isonit">Nitride</text>
+<text x="328.0" y="508.9" class="t-label-title" data-owner="isonit">hard mask</text>
+<path class="leader" data-owner="isonit" d="M276.0 496.5H297.0V488.0H324.0"/>
+<circle class="dot" data-owner="isonit" cx="276.0" cy="496.5" r="1.9"/>
+<text x="328.0" y="465.4" class="t-label-title" data-owner="resist">Photoresist</text>
+<path class="leader" data-owner="resist" d="M276.0 460.5H303.0H324.0"/>
+<circle class="dot" data-owner="resist" cx="276.0" cy="460.5" r="1.9"/>
+<text x="155.0" y="421.9" class="t-label-title" data-owner="callout0">Bare silicon</text>
+<text x="155.0" y="437.9" class="t-label-note muted" data-owner="callout0">the future field region</text>
+<path class="leader" data-owner="callout0" d="M146.0 522.0V417.0H151.0"/>
+<circle class="dot" data-owner="callout0" cx="146.0" cy="522.0" r="1.9"/>
+<text x="12.0" y="630.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

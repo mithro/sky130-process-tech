@@ -20,7 +20,7 @@ substrate:
   depth: 160
   label:
     title: "Silicon wafer"
-    note: "p-type bulk substrate (SMAT, step 001)"
+    note: "the starting wafer (SMAT, step 001)"
     basis: public
 ops:
   - step: "002"
@@ -51,18 +51,18 @@ ops:
     where: [[0, 79.5], [188.5, 268]]
     label:
       title: "Photoresist"
-      note: "developed through the field oxide mask at FOM, step 004; it stays over the future active areas"
+      note: "developed through the field oxide mask at FOM, step 004"
       basis: public
 
   - step: "005"
     op: etch
     materials: [nitride, oxide-thermal]
-    where: [[80, 188]]
+    where_open: resist
 
   - step: "006"
     op: etch
     materials: [si-sub]
-    where: [[80, 188]]
+    where_open: resist
     depth: 56
     taper_deg: 9
     corner_r: 9
@@ -78,27 +78,27 @@ ops:
     where: [[214, 268]]
     label:
       title: "Thick photoresist"
-      note: "developed through the deep N-well mask at DNM, step 007; the window on the left is open to the implant"
+      note: "developed through the deep N-well mask at DNM, step 007"
       basis: public
 
   - step: "008"
     op: dope
     id: dnw
     material: well-dn
-    where: [[0, 214]]
-    from_surface: 64
-    thickness: 22
+    where_open: dnmresist
+    from_surface: 60
+    thickness: 18
     label:
       title: "Deep N-well"
       note: "buried N-type layer placed by the implant at DNI, step 008"
       basis: public
   - step: "008"
     op: ions
-    where: [[0, 208]]
+    where_open: dnmresist
     tilt_deg: 0
     label:
       title: "Phosphorus ions"
-      note: "the implant enters bare silicon at the trench floors and passes through the stack over the active areas"
+      note: "they enter bare silicon at the trench floors"
       basis: public
 
   - step: "009"
@@ -113,7 +113,7 @@ ops:
     only_on: [si-sub]
     label:
       title: "Liner oxide"
-      note: "thermal oxide grown on the trench floor and sidewalls at LINOX, step 010"
+      note: "grown on the trench floor and walls (LINOX, step 010)"
       basis: public
 
   - step: "011"

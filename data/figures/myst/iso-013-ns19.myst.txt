@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-iso-013-ns19
 
-The wafer before and after `NS19`, the last step of the isolation module. The nitride is dissolved in hot phosphoric acid, leaving the active areas covered only by the thin pad oxide from `BOX` and the field oxide standing slightly proud of them. The PDK's final field-oxide step of 0.07 µm above the silicon under poly is the net result of the nitride thickness, the polish and all the oxide recess that follows this step;[^pdk-03] the step drawn here is far larger than that. Not to scale.
+Before, the polished mosaic of nitride islands and filled trenches; after, the nitride gone and the oxide-filled trench standing proud of the pad oxide. The pad oxide is drawn as left in place, which the page gives as the usual case rather than a certainty. The PDK's final field-oxide step of 0.07 µm above the silicon under poly is the net result of the nitride thickness, the polish and all the oxide recess that follows this step;[^pdk-03] the step drawn here is far larger than that. This cross-section is drawn outside a deep N-well region, so the buried layer of `DNI` (step 008) does not appear. Not to scale.
 :::

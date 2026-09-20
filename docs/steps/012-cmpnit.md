@@ -26,7 +26,7 @@ oxide-filled trenches (future field oxide), level with one another.
 :width: 560px
 :name: fig-iso-012-cmpnit
 
-The wafer before and after `CMPNIT`, on the same cross-section as the earlier isolation steps. The polish lands on the nitride from `ISONIT`, which polishes far more slowly than the oxide, and what is left is a planar surface of nitride islands over the future active areas and oxide-filled trenches over the future field.[^wiki-sti] Not to scale.
+Before, the fill oxide burying everything; after, oxide only inside the trench, its top level with the nitride on the active areas. Wikipedia's outline lists this polish, and the nitride removal that follows it, as the last two steps of shallow trench isolation.[^wiki-sti] This cross-section is drawn outside a deep N-well region, so the buried layer of `DNI` (step 008) does not appear. Not to scale.
 :::
 
 This is the step that gives {term}`STI` its defining advantage over {term}`LOCOS` —

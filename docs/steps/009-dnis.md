@@ -26,7 +26,7 @@ PDK's isolated 20 V NMOS and a Cypress SONOS patent (see
 :width: 560px
 :name: fig-iso-009-dnis
 
-The wafer before and after `DNIS`, the first of the many implant strip steps in this reference. The resist has been bombarded by MeV phosphorus ions, which carbonise its top surface into a hard crust that ordinary oxygen ashing removes slowly and that can pop or flake during heating;[^orvek-1985] the wafer beneath it has open trenches with bare, plasma-damaged sidewalls, so the clean must be gentle with them. Not to scale.
+Before, the implanted resist; after, the resist gone, the trench open again and the buried band untouched. The resist had been bombarded by MeV phosphorus ions, which carbonise its top surface into a hard crust;[^orvek-1985] the trench sidewalls beneath it are bare and plasma-damaged, so the clean has to be gentle with them. Not to scale.
 :::
 
 What makes this strip different from an ordinary post-etch strip is

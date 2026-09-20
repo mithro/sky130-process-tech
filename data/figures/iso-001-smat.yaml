@@ -2,6 +2,7 @@ id: iso-001-smat
 kind: xsection
 page: docs/steps/001-smat.md
 series: series-isolation.yaml
+crop_depth: 64
 alt: >-
   A cross-section of the bare starting wafer: one block of p-type silicon with a flat, featureless top
   surface and no film of any kind on it. The block runs off the left, right and bottom edges of the
@@ -13,5 +14,6 @@ caption: >-
   wafer — resistivity, orientation, oxygen content — is public. Not to scale.
 panels:
   - state_after: "001"
-    crop_depth: 64
     title: "The wafer as SMAT (step 001) delivers it"
+    labels:
+      sub: {title: "Silicon wafer", note: "p-type bulk substrate (SMAT, step 001)", basis: public}

@@ -2,18 +2,17 @@ id: iso-008-dni
 kind: xsection
 page: docs/steps/008-dni.md
 series: series-isolation.yaml
+crop_depth: 140
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the step the thick resist masks the
   right-hand part of the drawing. After it arrows come down on the open window and a buried, hatched
   N-type band lies well below the surface under the window only; the band steps down under the trench,
   because there the ions entered at the trench floor.
 caption: >-
-  The wafer before and after `DNI`, a high-energy phosphorus implant through the windows opened at
-  `DNM`. It places a buried layer of N-type doping a micrometre or more below the surface, forming the
-  deep N-well (`dnwell`).[^pdk-06] The implant enters bare silicon at the trench floors and passes
-  through the nitride/pad-oxide stack over the active areas, so the buried layer sits deeper under the
-  field than under the active regions by roughly the trench depth; the layer is not flat, and no
-  public source gives the SKY130 profile. Not to scale.
+  Before, the masked wafer; after, a beam of phosphorus and, under the open window only, a buried
+  N-type band: the `dnwell` layer of the PDK.[^pdk-06] The band steps down under the trench, because
+  the ions entered at the trench floor there; the buried layer is not flat, and no public source
+  gives the SKY130 profile. Not to scale.
 arrow:
   title: "DNI, step 008"
   note: "Phosphorus is implanted at high energy through the open window; the masked area is untouched."

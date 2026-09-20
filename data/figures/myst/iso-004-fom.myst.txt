@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-iso-004-fom
 
-The wafer before and after `FOM`, the first photolithography step of the flow. The resist is left over the future active (transistor and tap) areas and opened over the future field (isolation) areas; the PDK's mask table lists "Field Oxide, FOM" as a mask used in SKY130.[^pdk-05] Where the resist edges fall in this drawing is illustrative: no layout is being shown. Not to scale.
+Before, the blanket nitride-on-oxide stack; after, two blocks of resist with the field open between them. The PDK's mask table lists "Field Oxide, FOM" as a mask used in SKY130.[^pdk-05] Where the resist edges fall here is illustrative: no layout is being shown, and the anti-reflective coating the page describes under the resist is not drawn. Not to scale.
 :::
