@@ -43,7 +43,15 @@ LINKDEF_RE = re.compile(r"^\[(?!\^)[^\]]+\]:\s*\S", re.MULTILINE)
 BULLET_RE = re.compile(r"^\* ", re.MULTILINE)
 FIRST_DEF_RE = re.compile(r"^\[\^[A-Za-z0-9][A-Za-z0-9_-]*\]:", re.MULTILINE)
 DEF_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
-BODY_LINK_RE = re.compile(r"\]\(([^)\n]*)\)")
+# The angle-bracket form is tried whole first (it may itself contain a
+# literal ")", e.g. a Wikipedia title "Etching_(microfabrication)" or a
+# pre-2000 Elsevier DOI "0927-796X(94)90006-X"); only when a link is not in
+# that form does the bare, paren-stopping form apply. Getting this wrong
+# makes such a link's target start with "<" and never reach the http(s)
+# check below, so the invariant silently never looks at it (the same class
+# of bug check_preserved.extract_urls_masked and check_links.py's own
+# BRACKETED_URL_RE-first handling already exist to avoid).
+BODY_LINK_RE = re.compile(r"\]\((<[^>\n]*>|[^)\n]*)\)")
 
 TARGETS = [
     (DOCS / "steps", re.compile(r"^\d{3}-[a-z0-9-]+\.md$"), 8),
@@ -205,6 +213,46 @@ def selftest() -> int:
     if inline_link_problems(page_multi_def):
         fail(f"a URL defined in a later footnote was wrongly reported: "
              f"{inline_link_problems(page_multi_def)}")
+
+    # 5. M1 (review): a matching link whose URL itself contains a literal
+    #    "(...)" -- a Wikipedia title with a parenthesised disambiguator --
+    #    must not be misread as a bare (unbracketed) or mismatched link.
+    page_wiki_parens = (
+        "## References\n\n"
+        "* [Wikipedia, *Etching*](<https://en.wikipedia.org/wiki/Etching_"
+        "(microfabrication)>) — wet and dry etch.[^wiki-etch]\n\n"
+        "[^wiki-etch]: Wikipedia, *Etching (microfabrication)*. "
+        "<https://en.wikipedia.org/wiki/Etching_(microfabrication)>\n"
+    )
+    ps = inline_link_problems(page_wiki_parens)
+    if ps:
+        fail(f"a matching link with a parenthesised URL was reported: {ps}")
+
+    # A mismatched parenthesised URL must still be caught, not silently
+    # skipped because it starts with "<" but the paren truncated the match
+    # before the http(s) scheme could ever be seen.
+    page_wiki_parens_mismatch = (
+        "## References\n\n"
+        "* [Wikipedia, *Etching*](<https://en.wikipedia.org/wiki/Wrong_"
+        "(microfabrication)>) — wet and dry etch.[^wiki-etch]\n\n"
+        "[^wiki-etch]: Wikipedia, *Etching (microfabrication)*. "
+        "<https://en.wikipedia.org/wiki/Etching_(microfabrication)>\n"
+    )
+    ps = inline_link_problems(page_wiki_parens_mismatch)
+    if not any("not in this page's own footnote" in p for p in ps):
+        fail(f"a mismatched parenthesised URL was not reported: {ps}")
+
+    # 6. M1 (review): a pre-2000 Elsevier DOI, also parenthesised.
+    page_doi_parens = (
+        "## References\n\n"
+        "* [Turban et al., *Thin Solid Films*](<https://doi.org/10.1016/"
+        "0927-796X(94)90006-X>) 1994 — tungsten etching.[^turban-1994]\n\n"
+        "[^turban-1994]: Turban et al., *Thin Solid Films*. "
+        "<https://doi.org/10.1016/0927-796X(94)90006-X>\n"
+    )
+    ps = inline_link_problems(page_doi_parens)
+    if ps:
+        fail(f"a matching link with a parenthesised DOI was reported: {ps}")
 
     if problems:
         for p in problems:
