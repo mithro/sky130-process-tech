@@ -233,6 +233,13 @@ def process_text(text: str) -> tuple[str, dict[str, int]]:
                 abs_start = block_start + s_start + tm.start()
                 abs_end = block_start + s_start + tm.end()
                 if already_linked(body, abs_start, abs_end):
+                    # This occurrence already carries a link (an earlier run,
+                    # or another rule entirely) -- it still counts as *the*
+                    # first occurrence of this title in this H2, so a later,
+                    # unlinked occurrence further down the same H2 must not
+                    # be linked on a subsequent run. Record it as seen, but
+                    # make no edit.
+                    h2_seen.add(title)
                     continue
                 edits.append((abs_start, abs_end, f"[{tm.group(0)}](<{url}>)"))
                 h2_seen.add(title)
@@ -326,6 +333,15 @@ def selftest() -> int:
         fail(f"first-occurrence-per-H2 fired more than once: {counts}")
     if new.count("[*Periphery rules*]") != 1:
         fail(f"the second occurrence was linked too: {new!r}")
+    # And running it again must not link the second occurrence either: an
+    # already-linked occurrence still has to count as "seen" for its H2, or
+    # a second run links the next occurrence down and ends up with two
+    # links for one title in one H2 (found on docs/masks/pwdem.md, where
+    # the site-wide run left the *second* Deep-dive-shaped mention in
+    # "Drawn layers and derivation" for a later pass to wrongly pick up).
+    new2, counts2 = process_text(new)
+    if new2 != new or counts2.get("linked", 0):
+        fail(f"a second run linked the later occurrence: {counts2} {new2!r}")
 
     # A new H2 gets its own first occurrence.
     p = page(
