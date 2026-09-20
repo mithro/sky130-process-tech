@@ -1047,11 +1047,16 @@ promoted to `tools/fix_reading_list_links.py`). Do not start it by hand before t
 link, **or** prose names a source by its italic title in the same sentence as that source's marker.
 
 **Do.**
-1. **Reading-list bullets.** The *head* is the text before the first ` — `.
+1. **Reading-list bullets.** The *head* is the text before the first ` — `, or — a bullet with no
+   annotation at all — everything before the trailing marker run, minus its final `.`:
    * head contains no `{role}`, no `[`, no backtick → wrap the whole head: `[head](<URL>)`;
    * head contains a role or a backtick but exactly one `*italic title*` → link only that span;
    * N markers and exactly N italic titles in the same order → link title *i* to marker *i*'s URL;
+   * multi-marker, that exact count fails, but exactly one marker's own definition names a given
+     italic title (any italic span in its body, whitespace-normalised) → link that title only, and
+     only when no two titles would claim the same marker; a title or marker left over stays plain;
    * anything else → leave the bullet alone.
+   Every one of these applies the same way whether or not the bullet has a dash.
 2. The URL is **the first `<URL>` in that page's own `[^k]: …` definition**, copied character for
    character. Where the definition gives an archive URL first (R-WAYBACK), that is the URL you copy.
 3. Angle brackets around the URL are mandatory: `[head](<https://…>)`. They keep URLs containing
@@ -1063,6 +1068,11 @@ link, **or** prose names a source by its italic title in the same sentence as th
    footnote is the evidence); short "name + marker" bullets outside the reading lists (22 site-wide);
    the generated index pages (already inline).
 7. Bullets inside a `{dropdown}` may be converted, **in place** (§2.5).
+8. Rules 1/1b wrap the *whole* head, including the publisher ("**Wikipedia, Shallow trench
+   isolation**"); rules 3/3b/3c wrap only the title, leaving the publisher plain ("Wikipedia,
+   **Silane**, **Tetraethyl orthosilicate** …"). This is deliberate, not an inconsistency to fix: a
+   single-source head has nothing else to point the link at, and a multi-source head must not point
+   two different sources' worth of text at one URL.
 
 **Example** — `docs/steps/006-stie.md:215`.
 
