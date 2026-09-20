@@ -10,10 +10,23 @@
 | **Previous step** | {ref}`DNI <step-008>` |
 | **Next step** | {ref}`LINOX <step-010>` |
 
+:::{admonition} At a glance
+* **Does:** strips the implanted resist from `DNI` and cleans the
+  wafer for the liner-oxidation furnace.
+* **Why:** photoresist and its implant crust cannot survive a furnace,
+  and any residue left here is sealed under the liner oxide and HDP
+  fill.
+* **Public numbers:** none published for SKY130 (see Open questions).
+* **Likely SkyWater tool:** Akrion Gamma batch wet bench — strong
+  (existence); inference (assignment).[^skw-01]
+* **Not public:** the actual ash recipe and wet sequence (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `DNIS` removes the thick photoresist that masked the deep N-well
-implant at {ref}`DNI <step-008>`, and cleans the wafer so that it can
+implant at {ref}`DNI <step-008>`. It cleans the wafer so that it can
 go into the liner-oxidation furnace at {ref}`LINOX <step-010>`. It is
 the first of the many *implant strip* steps in this reference, which
 pairs almost every implant mask with a strip step. The deep N-well is
@@ -44,12 +57,15 @@ the state of the resist and of the wafer:
 ## Step category
 
 `DNIS` is a {ref}`Resist strip / clean <category-strip>` step — an
-implant-resist strip followed by a pre-furnace clean. The same
-combination recurs after every masked implant
-({ref}`LVTNIS <step-016>`, {ref}`PWIS <step-029>`,
-{ref}`PDIS <step-084>`, …), but this instance is followed directly by
-a high-temperature oxidation, which raises the cleanliness
-requirement.
+implant-resist strip followed by a pre-furnace clean.
+
+**Specific to this step:**
+
+* The same combination recurs after every masked implant
+  ({ref}`LVTNIS <step-016>`, {ref}`PWIS <step-029>`,
+  {ref}`PDIS <step-084>`, …), but this instance is followed directly by
+  a high-temperature oxidation, which raises the cleanliness
+  requirement.
 
 ## Why this step exists
 
@@ -72,7 +88,9 @@ An industry-generic implant-strip sequence for a 200 mm, 130 nm-era
 fab:
 
 1. **Plasma ash.** Downstream (remote) microwave or RF O₂ plasma at
-   150–270 °C. Fabs commonly use a two-stage recipe for high-dose or
+   150–270 °C.
+
+   Fabs commonly use a two-stage recipe for high-dose or
    high-energy implant resist: a low-temperature first stage, often
    with a forming-gas (H₂/N₂) or N₂/O₂ addition, that breaks up the
    carbonised crust without popping, then a hotter O₂ stage to remove
@@ -82,10 +100,11 @@ fab:
    250C"[^skw-01] — the N₂, O₂ and forming-gas set this kind of
    recipe needs.
 2. **Wet strip / clean.** Sulphuric-peroxide mixture (H₂SO₄ : H₂O₂,
-   "piranha" or {term}`SPM`) at roughly 100–130 °C[^txt-02] to remove the last
-   organics, then
-   {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75 or 80 °C) for particles and {term}`SC-2`
-   (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] Because the nitride and the
+   "piranha" or {term}`SPM`) at roughly 100–130 °C[^txt-02] to remove the
+   last organics, then {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75 or 80 °C) for
+   particles and {term}`SC-2` (HCl/H₂O₂/H₂O) for metals.[^wiki-rca]
+
+   Because the nitride and the
    trench silicon are both exposed, the sequence avoids any long HF
    step that would undercut the pad oxide beneath the nitride (some
    flows do use a controlled short HF dip for exactly that
@@ -108,22 +127,33 @@ fab:
 
 ## Machines likely used at SkyWater
 
-* **"Gasonic PEP", Iridia RF microwave and "Mattson Aspen2" ashers** —
-  named on SkyWater's facilities page with their gases and
-  temperatures.[^skw-01] Strength: **strong** for existence; the
-  assignment of this strip to any one of them is an inference.
-* **Akrion Gamma batch wet bench** — SkyWater lists it with sulphuric,
-  SC1, phosphoric and {term}`BOE` chemistries and spin and IPA
-  drying.[^skw-01] Strength: strong for existence. A sulphuric (SPM) +
-  SC-1 sequence on this bench is the natural post-implant clean
-  (inference).
-* **DNS / FSI Mercury** HF/SC1/SC2 benches[^skw-01] as the pre-furnace
-  clean. Strength: strong for existence; the assignment is an inference
-  from their HF/SC1/SC2 chemistry, SC-2 being listed only for these two
-  benches.
-* **Patterned-wafer inspection — KLA-Tencor AIT**, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+| Tool | Evidence |
+|---|---|
+| "Gasonic PEP", Iridia RF microwave, "Mattson Aspen2" ashers | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence); inference (assignment) |
+| DNS / FSI Mercury benches | strong (existence); inference (assignment) |
+| Patterned-wafer inspection — KLA-Tencor AIT | medium |
+
+* **"Gasonic PEP", Iridia RF microwave and "Mattson Aspen2" ashers**
+  - *SkyWater says:* named on SkyWater's facilities page with their
+    gases and temperatures.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to any one of them
+    is an inference.
+* **Akrion Gamma batch wet bench**
+  - *SkyWater says:* it lists it with sulphuric, SC1, phosphoric and
+    {term}`BOE` chemistries and spin and IPA drying.[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* a sulphuric (SPM) + SC-1 sequence on this bench
+    is the natural post-implant clean (inference).
+* **DNS / FSI Mercury** HF/SC1/SC2 benches[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* the assignment is an inference from their
+    HF/SC1/SC2 chemistry, SC-2 being listed only for these two
+    benches.
+* **Patterned-wafer inspection — KLA-Tencor AIT**, our reading of
+  "AIT" in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -140,11 +170,13 @@ fab:
 ## Related steps and cross-references
 
 * Previous: {ref}`DNI <step-008>` (the implant whose resist is
-  stripped); mask: {ref}`DNM <step-007>`.
+  stripped).
 * Next: {ref}`LINOX <step-010>` (liner oxidation — the reason the
   clean must be furnace-grade).
-* The next implant strips in the flow: {ref}`LVTNIS <step-016>`,
-  {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`.
+* Depends on: mask {ref}`DNM <step-007>`.
+* Same module: the next implant strips in the flow —
+  {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`,
+  {ref}`PCHIS <step-025>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -214,13 +246,14 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ## Open questions
 
-* The actual SKY130 ash recipe (single or two-stage, temperatures) and
-  wet sequence are not public.
-* Whether the post-trench-etch polymer clean (see
-  {ref}`STIE <step-006>`) is performed here, at `STIE`, or before
-  {ref}`DNM <step-007>` is not stated publicly.
-* Whether `DNIS` includes the pre-liner-oxidation HF treatment or
-  whether that belongs to {ref}`LINOX <step-010>` is unknown.
+* **Ash and wet recipe.** The actual SKY130 ash recipe (single or
+  two-stage, temperatures) and wet sequence are not public.
+* **Polymer-clean placement.** Whether the post-trench-etch polymer
+  clean (see {ref}`STIE <step-006>`) is performed here, at `STIE`, or
+  before {ref}`DNM <step-007>` is not stated publicly.
+* **HF-treatment placement.** Whether `DNIS` includes the
+  pre-liner-oxidation HF treatment or whether that belongs to
+  {ref}`LINOX <step-010>` is unknown.
 
 <!-- footnotes -->
 

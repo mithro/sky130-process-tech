@@ -364,6 +364,39 @@ read cleanly at both widths.
    more columns than the budget allows, just triggered by column *count* interacting with content
    width rather than by a strict column-count overshoot.
 
+### 009-dnis.md — done
+
+Rules applied: R-SENTENCE (first sentence of "What this step is" split at its comma for the
+≤25-word cap), R-PARA (the "Plasma ash" and "Wet strip / clean" numbered items, 95 and 88 words,
+→ lead + indented continuation), R-CATEGORY (classification + one-bullet "Specific to this
+step:"), R-TOOLS (four bullets → the Tool|Evidence recap table, each split into sub-bullets),
+R-RELATED ("Depends on:" for the mask cross-reference pulled out of the Previous bullet; "Same
+module:" for the sibling-strips bullet), R-OPENQ (three bullets labelled), R-GLANCE (box last).
+R-H3/R-TABLE/R-DERIVATION: no candidate.
+
+**Operational note: local `main` moved during this session.** `check_preserved.py`'s default
+`--base main` started reporting an unrelated `LOST`/`ADDED footnotes` pair for `[^thung-2016]` on
+this page — a Wayback-link rewrite from the parallel `topic/rd-links` branch that reached local
+`main` partway through this session (confirmed: `git diff ee3a94ee main -- docs/steps/003-isonit.md`
+and three other already-committed pages in this batch show the same 18-line footnote-URL change,
+present in current `main` but not in the commit this branch actually started from). None of this
+batch's own edits touch a `## References` footnote definition, so from this page on I pin
+`check_preserved.py --base ee3a94ee` (this branch's actual start point, confirmed as the
+merge-base with `main`) instead of relying on the default, to stop unrelated upstream churn on
+`main` from appearing as a false preservation failure. Checked that pages 001–008 were not
+affected: their `check_preserved.py` runs happened before local `main` picked up the rd-links
+commits (0-line `ee3a94ee`↔`main` diff for 001, 002, 007, 008 confirms this directly; 003–006's
+18-line diff is exactly the same footnote-URL rewrite, and their recorded check runs show no
+footnote-category finding, so `main` was still at this branch's start point when those checks
+ran).
+
+`check_preserved.py --base ee3a94ee --allow-added markers,numbers,hedges,quotes
+docs/steps/009-dnis.md`: exit 0, no `number_order` involvement (no dense multi-number passage was
+split on this page). `quotes` newly appears in the allow-list here: the R-TOOLS recap table's
+first row repeats the bullet head's own `"Gasonic PEP"`/`"Mattson Aspen2"` quotations verbatim,
+the same kind of expected repetition as R-GLANCE's markers/numbers, just in a table this time.
+All other checkers and the `-W` build pass; screenshots at both widths read cleanly.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
