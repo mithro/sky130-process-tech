@@ -79,8 +79,8 @@ naming the process or the fabrication where the paper gives one; the
 related pages of this reference; and the date and record it was checked
 against.
 
-:::{dropdown} Scope, method and counts
-:name: papers-scope
+(papers-scope)=
+## Scope
 
 A paper is included when its subject is the open PDK and its models, a
 device, test structure or reliability study on SKY130, a circuit
@@ -102,7 +102,6 @@ Process and fabrication statements are quoted from the paper itself.
 Free copies are limited to legitimate sources: arXiv, OSTI, institutional
 repositories, preprint servers, open proceedings pages and open-access
 publisher versions.
-:::
 
 ## All papers
 

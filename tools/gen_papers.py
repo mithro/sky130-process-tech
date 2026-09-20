@@ -335,13 +335,18 @@ def gen_index(rs: list[dict]) -> str:
         "related pages of this reference; and the date and record it was checked",
         "against.",
         "",
-        # report-C C11: the present "Scope" text moves into a collapsed
-        # dropdown, verbatim, with its (papers-scope)= label following it
-        # so the ~40 bare {ref}`Scope <papers-scope>` mentions elsewhere
-        # in this file keep resolving (their link text is explicit, so
-        # the dropdown's own title does not change what they render).
-        ":::{dropdown} Scope, method and counts",
-        ":name: papers-scope",
+        # review M5: a collapsed dropdown must not be the only home of
+        # (papers-scope)=, since ~40 bare {ref}`Scope <papers-scope>`
+        # mentions below (and designed-on-sky130.md) point readers at
+        # it as the definition of the basis vocabulary they use — a
+        # `<details>` element is not auto-opened by browsers on fragment
+        # navigation, so those links would land on hidden text. Unlike
+        # the patents/filings landing pages, there is no separate
+        # "method and counts" remainder to collapse here (the counts
+        # are already their own visible section above), so this stays a
+        # plain, visible section rather than a dropdown.
+        "(papers-scope)=",
+        "## Scope",
         "",
         "A paper is included when its subject is the open PDK and its models, a",
         "device, test structure or reliability study on SKY130, a circuit",
@@ -363,7 +368,6 @@ def gen_index(rs: list[dict]) -> str:
         "Free copies are limited to legitimate sources: arXiv, OSTI, institutional",
         "repositories, preprint servers, open proceedings pages and open-access",
         "publisher versions.",
-        ":::",
         "",
         "## All papers",
         "",
