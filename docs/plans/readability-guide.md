@@ -139,6 +139,40 @@ These are absolute. A reviewer who finds one of them rejects the whole page.
 
 ## 3. The rules
 
+| Id | What it fixes | Page types | Kind | Blocked |
+|---|---|---|---|---|
+| **R-PARA** | paragraphs > 100 words, list items > 60 | all | hand | — |
+| **R-SENTENCE** | sentences > 45 words, em-dash chains, long parentheticals | all | hand | — |
+| **R-LIST** | enumerations written as one sentence | all | hand | — |
+| **R-H3** | > 120 words under an H2 with no structure; bold run-ins that are headings | step, machine, material, overview; **mask** blocked | hand | W0e (masks) |
+| **R-INTRO** | intros > 70 words; pointer sentences; the template sentence | machine, material, mask, category | hand | — |
+| **R-CATEGORY** | `## Step category` as one dense paragraph | step | hand | — |
+| **R-HEDGE** | the scope sentence; mid-sentence hedges | step | part scripted | — |
+| **R-REPEAT** | the same sentence in two sections | step, class | hand | — |
+| **R-GLANCE** | no summary at the top | step | hand, last | — |
+| **R-TOOLS** | "Strength:" run-on bullets | step | scripted split, hand assignment | — |
+| **R-OPENQ** | Open-questions bullets with no label | step | hand | — |
+| **R-RELATED** | unordered related-links sections | step, class | hand | — |
+| **R-CODE** | identifiers not code-formatted | all | hand, opportunistic | — |
+| **R-TABLE** | parallel numeric data written as prose or bullets | all | hand | — |
+| **R-DERIVATION** | arithmetic buried in prose | step | hand | — |
+| **R-MODELS** | "Representative …" as vendor paragraphs | machine, material | hand | — |
+| **R-ENTRIES** | "read term by term" paragraphs | machine, material, mask | hand | — |
+| **R-QUICKFACTS** | quick-facts cells > 20 words | machine, material (mask: leave) | hand | — |
+| **R-PARAMS** | number-dense paragraph beside a table | mask | hand | — |
+| **R-COMPARE** | category comparisons; consumables that link nowhere | category | part scripted | — |
+| **R-CAPTION** | tables with no caption | all | hand | — |
+| **R-LINKS** | reading-list bullets and named titles are not links | all | scripted + hand | **W0c** |
+| **R-WAYBACK** | dead cited URLs | all | hand | W0f (tooling) |
+| **R-STEPRUN** | runs of step links; bare-number link text | machine, material, index | scripted / generated | W0d (generated tables) |
+| **R-INDEX** | methodology before navigation on index pages | the five indexes | hand (moves) | W0d, W0e (parts) |
+| **R-TERM** | missing `{term}` links; the glossary page | all, glossary | scripted proposal | W0d (Phase cell) |
+| **R-CARDS** | landing page is a bare table of contents | landing, section fronts | hand | — |
+| **R-ANCHOR** | inventory entries have no anchors | inventory | scripted | — |
+| **R-DROPDOWN** | in-force notes and their pointer prose | any page with a note | hand | owner (titles) |
+| **R-GENBLOCK** | the generated index-links block | 206 pages | **generator only** | W0d |
+| **R-FIGURE** | no figures anywhere | step, machine, mask, category, overview | **generator only** | **W1a** |
+
 Every rule has the same six fields.
 
 * **Applies when** — a trigger you can decide mechanically, without judgement about content.
