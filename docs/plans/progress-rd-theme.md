@@ -26,7 +26,35 @@
 * All required checkers, generator `--check`s pass (see below).
 * Verified with `tools/shoot.py` screenshots (desktop + 400px phone) of:
   overview/index, steps/006-stie, machines/index, materials/index,
-  glossary; a static dark-mode test page; a static popover-open test page.
+  glossary. Confirmed the overview at 400 px is no longer wider than the
+  screen (all tiles exactly 400 px; the 29-backref `pdk-04` footnote wraps
+  cleanly) and that the "Sources cited on this page" label, zebra/
+  top-aligned/sticky-header tables and no-wrap quick-facts labels render
+  as intended.
+* Interaction states forced with static copies under `tmp/_build/html/`
+  (not committed; `tmp/` is git-ignored):
+  * dark mode: a copy of steps/006-stie.html with the inline theme script
+    hardcoded to `"dark"` (the normal `localStorage`-reading script would
+    otherwise reset any `data-theme` attribute set on `<body>`) — zebra
+    rows, links, code spans and borders all follow furo's dark palette
+    correctly, confirming the CSS uses only furo variables.
+  * popover, table cell: a copy of steps/006-stie.html with a script that
+    focuses the `[^steps-sheet]` marker in the quick-facts table — card
+    appears beside the marker with live link, clamped to the viewport at
+    400 px.
+  * popover, open dropdown: a copy of machines/starting-material.html
+    with its first in-force `{dropdown}` forced `open` and a script that
+    focuses the footnote marker inside it (a footnote cited 5 times on
+    that page, to also check the "cited many times" case) — card renders
+    correctly beside the marker, not clipped by the dropdown's own box,
+    at both widths.
+  * Debugging note: a naive `element.focus()` fired directly on the
+    `load` event raced headless Chrome's own viewport-settling after
+    `--window-size`, once producing an unclamped card width — confirmed
+    by instrumentation to be a test-harness artifact (real interactions
+    happen long after the viewport is stable), fixed in the test by
+    waiting for `window.innerWidth` to stabilise across animation frames
+    before focusing. No change was needed to `footnote-popover.js`.
 
 ## Checker/build results (this branch, working tree)
 
