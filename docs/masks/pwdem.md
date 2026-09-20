@@ -87,7 +87,7 @@ transistors to a 0.18 µm logic process.[^mitros-2001]
 layer is `pwde` at 124:20.[^pdk-06] `masks.csv` lists "P-Well Drain
 Extended, PWDEM" with the `Used in SKY130` field blank,[^pdk-05] which the
 {ref}`PWDEM <step-030>` page treats as a documentation inconsistency,
-since the layer and its rules exist. Table 2 of *Criteria & Assumptions*
+since the layer and its rules exist. Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives `PWDEMCD` 0.84 and `PWDEMCDSP` 1.27, the same values as the
 N-well and P-well block rows,[^pdk-03] while the `pwdem` rules
 themselves give "N/A" for every value;[^pdk-periph] the PDK does not say

@@ -232,7 +232,7 @@ page.
   "is used in the semiconductor industry in plasma etching of silicon
   oxide and silicon nitride".[^wiki-chf3] Perfluorocarbons are potent
   greenhouse gases: C₂F₆ has "a global warming potential (GWP) of 9200",
-  a figure Wikipedia's *Hexafluoroethane* article gives without naming an
+  a figure Wikipedia's [*Hexafluoroethane*](<https://en.wikipedia.org/wiki/Hexafluoroethane>) article gives without naming an
   IPCC assessment;[^wiki-c2f6] the table of fifth-assessment values in
   its *Fluorocarbon* article gives 11,100.[^wiki-pfc]
 * **Backside cooling.** Helium between wafer and chuck; the Rainbow

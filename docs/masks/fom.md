@@ -101,8 +101,8 @@ the core, and names `cfom` among its exemptions: "cfom md/mp inside
 "advSeal_6um\* OR cuPillarAdvSeal_6um\*" pcell".[^pdk-periph] The `cfom`
 add and drop purposes are therefore used, at least in those seal-ring
 cells (our reading of "md/mp" as mask drop and mask add); the PDK does
-not say what they add or remove elsewhere. Table 7 of *Criteria &
-Assumptions* has two sizing rows for an emitter, "pnp_emitter sizing
+not say what they add or remove elsewhere. Table 7 of [*Criteria &
+Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) has two sizing rows for an emitter, "pnp_emitter sizing
 (S8P GSMC flow)" 0.05 (`PnpEmitterSzGSMC`) and "pnp_emitter sizing
 (other flows)" 0.03 (`PnpEmitterSz`), without saying on which layer the
 sizing acts.[^pdk-03]
@@ -328,7 +328,7 @@ source of Drain Extended device".[^pdk-periph]
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 
 The unit column of difftap.4 and difftap.5 is blank in the published
-table.[^pdk-periph] Table 2 of *Criteria & Assumptions* gives the
+table.[^pdk-periph] Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the
 minimum feature and space as `FOMCD` 0.14 and `FOMCDSP` 0.27, and Table
 7 gives a "MOSFET width" of 0.135 (`FOMSE`) and a "MOSFET width in
 standard cells" of 0.075 (`FOMSESC`);[^pdk-03] the PDK does not

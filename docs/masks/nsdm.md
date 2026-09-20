@@ -93,8 +93,8 @@ x.9 allows "Shapes on maskAdd or maskDrop layers ("serifs")" in the core
 only, and x.15a confines "Drawn compatible, mask, and waffle-drop layers"
 to test modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P);[^pdk-periph] a design inside the die
-therefore draws `nsdm` (our reading of x.15a). Table C3 of the *Layers
-Reference* defines `nsdmHoles` as "Hole( nsdm )" for the hole-area rule
+therefore draws `nsdm` (our reading of x.15a). Table C3 of the [*Layers
+Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines `nsdmHoles` as "Hole( nsdm )" for the hole-area rule
 and defines `N+_diff` as "Diff NOT Nwell", not by `nsdm`.[^pdk-06]
 
 The PDK's *Error Messages* page, which describes "many of the automated

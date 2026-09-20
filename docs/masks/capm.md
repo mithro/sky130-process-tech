@@ -115,7 +115,7 @@ x.15a have no `CAPM` layer to govern, and a design draws `capm` (our
 reading). One row of rule x.2 limits `capm`, among other layers, to "n x
 90" degree angles; rule x.22 flags floating "capm" as it does floating
 interconnect; and `capm` falls under the 0.005 grid of rule x.1b, not
-the 0.001 grid of x.1a.[^pdk-periph] Table 7 of *Criteria & Assumptions*
+the 0.001 grid of x.1a.[^pdk-periph] Table 7 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives a "MiM Capacitor aspect ration" of 20 (`MiM_AR`) in the column
 headed "CD", the only criterion named for the capacitor besides Table
 2's `CAPMCD` and `CAPMCDSP`; rule capm.6, "Maximum Aspect Ratio

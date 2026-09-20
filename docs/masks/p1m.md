@@ -37,7 +37,7 @@ FET gates, interconnects and resistors".[^pdk-periph] The mask therefore
 carries three kinds of feature with different demands: gate lines,
 whose width is the channel length and whose minimum is 0.150 µm
 (poly.1a); poly wiring on the field oxide; and poly resistor bodies, at
-least 0.330 µm wide (poly.3).[^pdk-periph] *Criteria & Assumptions*
+least 0.330 µm wide (poly.3).[^pdk-periph] [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives 0.33 and 0.48 as the "Poly resistor width and spacing to reduce CD
 variation (um)" (`POLYRCD`, `POLYRSPC`), the same numbers as rules poly.3
 and poly.9, so the PDK ties the resistor rules to the CD variation of
@@ -95,7 +95,7 @@ value 0.001 (unit printed as "mm"), against 0.005 for "all layers except
 those mentioned in 1a" (x.1b).[^pdk-periph] We read "(OPC)" and the
 finer grid as a sign that the poly mask data are proximity-corrected
 (inference); the PDK does not expand "md" or say what the correction
-is. *Criteria & Assumptions* sets a
+is. [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) sets a
 "Min process bias 3s tolerance for poly" of 0.02 (`PHP1TOL`), against a
 general "Min process bias 3s tolerance" of 0.032 (`PHTOL`),[^pdk-03] so
 the PDK assumes tighter bias control for poly than for other layers; it

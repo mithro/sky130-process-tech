@@ -97,7 +97,7 @@ plate. Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines mask layers to test
 modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] Table C3 of the
-*Layers Reference* defines `LVnwell` as "nwell NOT hvi" and
+[*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines `LVnwell` as "nwell NOT hvi" and
 `Var_channel` as "poly AND tap AND (nwell NOT hvi) NOT
 areaid.ce";[^pdk-06] it uses neither to define the plate.
 
@@ -321,7 +321,7 @@ not exist.".[^pdk-periph]
 | varac.8 | "Min enclosure of Var_channel by hvtp" | 0.255 µm |
 | hvtr.2 | "Min spacing between hvtp to hvtr" | 0.380 µm |
 
-Table 2 of *Criteria & Assumptions* repeats the width and space as
+Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) repeats the width and space as
 `HVTPMCD` 0.38 and `HVTPMCDSP` 0.38;[^pdk-03] no other criterion of
 *Criteria & Assumptions* names `hvtp` or the mask. For a plate opened
 over `hvtp`, hvtp.1, hvtp.2 and the area rules set the smallest

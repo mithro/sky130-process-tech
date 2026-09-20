@@ -103,7 +103,7 @@ three checks also sit, in the page's numbering, immediately before the
 rpm.3 message, where the rpm.1a and rpm.2 messages the page lacks would
 be, so they may equally be the `rpm` checks filed under `urpm` names (our
 reading).
-Table C3 of the *Layers Reference* defines the `prec_resistor` of the
+Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines the `prec_resistor` of the
 rules as "rpm AND (poly overlapping poly.rs) AND psdm", naming `rpm`
 and not `urpm`;[^pdk-06] the PDK does not say whether a 2000 Ω/sq
 resistor is drawn inside `rpm` as well as `urpm`. It publishes no

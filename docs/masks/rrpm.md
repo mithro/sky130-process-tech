@@ -87,7 +87,7 @@ The drawn layers the step page derives the mask from are `rpm` at 86:20
 and `urpm` at 79:20; there is no mask-level (`c…`) layer and no drawn
 layer carrying the mask's name.[^pdk-06] The periphery rules define the
 `rpm` rule set as "Defines p+ poly resistors" and publish no `urpm` rule
-set,[^pdk-periph] and Table C3 of the *Layers Reference* defines
+set,[^pdk-periph] and Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines
 `prec_resistor` as "rpm AND (poly overlapping poly.rs) AND
 psdm";[^pdk-06] none of these mentions a second mask. The Error Messages
 page lists checks under the rule names urpm.1a, urpm.2 and urpm.3 — "1.27

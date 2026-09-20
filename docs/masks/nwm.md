@@ -96,7 +96,7 @@ cnwm.3f applies only to GSMC flows", and its `nwellDnwellHoles` and
 `photoArray` definitions say that the "Die+frame utility will use the
 mask data of nwell and dnwell".[^pdk-06] So the PDK names a rule
 `cnwm.3f` and speaks of "mask data of nwell", but the periphery rules
-contain no `cnwm` rule set;[^pdk-periph] the *Error Messages* page,
+contain no `cnwm` rule set;[^pdk-periph] the [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page,
 which describes "many of the automated DRC rules that are checked by
 SkyWater as part of the acceptance criteria for GDS data", names only
 two `cnwm.nikon` checks, "NWMmk in the nikon cross has the wrong

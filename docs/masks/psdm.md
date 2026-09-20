@@ -51,7 +51,7 @@ PNP emitters and collectors and NPN bases, the P+ diffusion resistor,
 p-type diodes and the precision poly resistors — and the PDK's
 resistance table gives "P-diffusion" 197000 in a column headed
 "Resistivity (mohms/sq)".[^pdk-07][^pdk-08] Three of the PDK's layout
-definitions use the layer: Table C3 of the *Layers Reference* defines
+definitions use the layer: Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines
 `prec_resistor` as "rpm AND (poly overlapping poly.rs) AND psdm",
 `pnp_emitter` as "diff AND pnp.dg AND psdm", and `psdmHoles` as "Hole(
 psdm )" for the hole-area rule.[^pdk-06]
@@ -92,7 +92,7 @@ such operation. Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 and waffle-drop layers" to test modules, seal ring and frame, with an
 exception that names only "FOM/P1M/Metal waffle drop" (flag
 P);[^pdk-periph] a design inside the die therefore draws `psdm` (our
-reading of x.15a). Table 7 of *Criteria & Assumptions* gives a
+reading of x.15a). Table 7 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives a
 "pnp_emitter sizing (S8P GSMC flow)" of 0.05 (`PnpEmitterSzGSMC`) and a
 "pnp_emitter sizing (other flows)" of 0.03 (`PnpEmitterSz`), in its
 column headed "space", without saying which layer is sized.[^pdk-03]

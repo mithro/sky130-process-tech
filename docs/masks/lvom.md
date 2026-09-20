@@ -119,10 +119,10 @@ under the "diff" and "tap" spacing and enclosure columns, 0.700 under
 has no column headed `hvi`.[^pdk-summary] The 0.700 under "lvom" matches
 hvi.2a, "Min spacing of Hvi to Hvi", and the 0.700 under "nwell" matches
 hvi.5,[^pdk-periph] so we read the table's "lvom" column as the `hvi`
-layer itself (inference). Table 2 of *Criteria & Assumptions* names the
+layer itself (inference). Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) names the
 space variable `LVOMCDSPCSMC`, a suffix it does not explain.[^pdk-03]
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page, which describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
 criteria for GDS data", has the generic grid, octagonal-edge and x.15a
 checks for both `clvom` and a mask-data layer `LVOMmk`, and a

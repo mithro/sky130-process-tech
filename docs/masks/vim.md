@@ -89,7 +89,7 @@ unit as µm, a 1 nm wafer grid is a 4 nm grid on a 4× plate (our
 arithmetic); Samuels, Maurer and Farrell examined "how fine a grid size
 is needed in the manufacture of the mask" once OPC is
 applied.[^samuels-1995] The PDK does not say why the via data need the
-finer grid. Table 4 of *Criteria & Assumptions* adds a "min. etch and
+finer grid. Table 4 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) adds a "min. etch and
 fill capability for via" of 0.18 (`VEFC`) and a "Via1 slope" of 0.02 (`Via1Slope`), both in a
 column headed "Value (um)" and neither explained; a slope given in µm
 is itself unexplained.[^pdk-03]

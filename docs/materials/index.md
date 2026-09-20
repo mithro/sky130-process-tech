@@ -77,8 +77,8 @@ describe them; the main table assigns every material to one of them.
 Four kinds of public source say something about the materials at
 SkyWater's Bloomington fab. None of them ties a material to a step.
 
-**SkyWater's capability list.** SkyWater's *Facilities &
-Capabilities* page lists, tool by tool, some of the gases, chemistries
+**SkyWater's capability list.** SkyWater's [*Facilities &
+Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) page lists, tool by tool, some of the gases, chemistries
 and films each tool is set up for;[^skw-01] the
 {ref}`machines index <machines-index>` lists the steps to which the
 step pages assign those tools. It is the only source that names
@@ -333,7 +333,7 @@ HfCl₄ and water.[^pat-rram-oxide-tsmc]
 The table lists every film that a deposition or oxidation step of the
 flow leaves on the wafer, in order of first appearance, with the number the PDK
 gives for it where there is one. The PDK numbers come from two
-sources, which do not always agree: the *Criteria & Assumptions* page
+sources, which do not always agree: the [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) page
 (nominal thicknesses for antenna-ratio calculations and other design
 assumptions)[^pdk-03] and the process stack diagram `metal_stack.svg`
 (thicknesses, heights and relative permittivities, "Diagram not to

@@ -98,7 +98,7 @@ only),[^pdk-periph] so a design inside the die draws `via3` (our reading
 of x.15a, which does not say what applies in the core). One row of rule
 x.2 limits via3 and via4 to "n x 90" degrees: "Angles permitted on: via3
 and via4. Anchors are exempted."; the via-3 data fall under x.1b's 0.005
-grid.[^pdk-periph] The *Error Messages* page lists two checks named
+grid.[^pdk-periph] The [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page lists two checks named
 `cviam3.nikon`, "VIM3mk in the nikon cross has the wrong polarity" and
 "VIM3mk is missing from the nikon cross in the layout";[^pdk-errors] it
 does not say what the "nikon cross" is, and we read the checks as

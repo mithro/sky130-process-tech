@@ -47,7 +47,7 @@ hvntm.6a).[^pdk-periph][^pdk-06] It is kept out of the SRAM core ("Hvntm
 must not overlap areaid.ce", hvntm.9) and must enclose an
 `ESD_nwell_tap` inside `hvi` (hvntm.7).[^pdk-periph] The
 {ref}`HVNTM <step-068>` page reads the devices as the 5 V NMOS family on
-the 110 Å oxide, which the PDK's *High Voltage Methodology* page says all
+the 110 Å oxide, which the PDK's [*High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) page says all
 VHV devices share with the "standard 5.0V Vcc devices".[^pdk-hv]
 
 The PDK's mask generation table, Table F2b, marks the `HVNTM` column `C`
@@ -224,8 +224,8 @@ for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
 at 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
 about half the `HVNTM` minimum, so a CD error on the plate would be
-expected to print at its own size (inference). Table 8 of *Criteria &
-Assumptions* nevertheless gives an "Extra CD tol for HVNTM to match Ram7
+expected to print at its own size (inference). Table 8 of [*Criteria &
+Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) nevertheless gives an "Extra CD tol for HVNTM to match Ram7
 process" of 0.015 (`HVNTMExtraCdTol`) in its column headed "CD"; the PDK
 does not say what "Ram7" is or whether the tolerance applies to the plate
 or the wafer.[^pdk-03]

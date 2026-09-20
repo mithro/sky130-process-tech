@@ -67,7 +67,7 @@ describes the 0.2 µm PLM via, reads "S8TM" as a thick-metal-3 option
 (inference from the assumptions table's thickness entries), reads PLM
 as the label of the five-metal P flow (inference from the rule tables'
 "SP8P\*/SKY130P\* (PLM) CADflow"), and leaves "TNV" unexplained. Two
-tables of the PDK's *Summary of Key Periphery Rules* bear on the
+tables of the PDK's [*Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) bear on the
 variants: Table F3c, "Back end layers for S8D\* flow", gives via2 a
 width and spacing of 0.280 with a metal-2 enclosure of 0.040, and Table
 F3d, "Back end layers for S8T\* flow", a width of 0.280, a spacing of
@@ -111,7 +111,7 @@ data for p1m, met1, via, met2" that rule x.1a puts on a 0.001 grid, so
 its data fall under x.1b's 0.005 for "all layers except those mentioned
 in 1a", both printed with the unit "mm".[^pdk-periph] One row of rule
 x.2 permits only "n x 90" degree angles on, among other layers, "capm,
-mcon, via, via2".[^pdk-periph] The *Error Messages* page lists two checks
+mcon, via, via2".[^pdk-periph] The [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page lists two checks
 named `cviam2.nikon`, "VIM2mk in the nikon cross has the wrong polarity"
 and "VIM2mk is missing from the nikon cross in the layout";[^pdk-errors]
 it does not say what the "nikon cross" is, and we read the checks as

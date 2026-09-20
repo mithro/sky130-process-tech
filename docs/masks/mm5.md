@@ -85,7 +85,7 @@ marks).[^pdk-periph] Chu et al. used thick top metal for high-quality
 spiral inductors.[^chu-2001]
 
 **Variants and flows.** `masks.csv` lists "Metal 5" once and marks
-it.[^pdk-05] Table 4 of *Criteria & Assumptions* gives metal-5
+it.[^pdk-05] Table 4 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives metal-5
 thicknesses "for antenna ratio calculation" of 2 for "(S8P\*/SP8P\* with
 2um thick metal)" (`Met5Thick_p`) and 1.2 for "(S8P\*/SP8P\* with 1.2um
 thick metal)" (`Met5Thickp_12`), in a block headed "Material Thicknesses"

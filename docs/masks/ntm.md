@@ -207,7 +207,7 @@ on an i-line lens, quotes ASML's statement that older exposure tools
 "migrate to the lithography of choice for less critical
 layers",[^asml-30] and infers an i-line level; the
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
-Table 2 of *Criteria & Assumptions* gives the mask's own figures, 0.84
+Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the mask's own figures, 0.84
 and 0.7 (`NTMCD`, `NTMCDSP`),[^pdk-03] and at the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the 0.7 µm space has
 {math}`k_1 = 0.7 \times 0.48 / 0.365 \approx 0.92` (our arithmetic).
@@ -328,7 +328,7 @@ guideline only."[^pdk-periph]
 | hvi.2a | "Min spacing of Hvi to Hvi" (P) | 0.700 µm |
 | hvi.5 | "Min space between hvi and nwell (exclude coincident edges)" | 0.700 µm |
 
-Table 2 of *Criteria & Assumptions* gives `NTMCD` 0.84 and `NTMCDSP`
+Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives `NTMCD` 0.84 and `NTMCDSP`
 0.7,[^pdk-03] and the Error Messages page checks the created layer at
 the same pair (`cntm.1`, `cntm.2`).[^pdk-errors] The pair equals the
 N-well width of nwell.1 and the `hvi` spacings of hvi.2a and

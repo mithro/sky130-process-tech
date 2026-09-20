@@ -56,8 +56,8 @@ cross-section of the stacked capacitor labels "CAP2M", "M4 (plate 2)",
 `metal5`.[^pdk-07][^pdk-04]
 
 What the PDK does not publish for this mask is as telling. `masks.csv`
-has no entry for a second capacitor mask;[^pdk-05] Table 2 of *Criteria &
-Assumptions* has no `cap2m` row;[^pdk-03] the periphery rules have a
+has no entry for a second capacitor mask;[^pdk-05] Table 2 of [*Criteria &
+Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) has no `cap2m` row;[^pdk-03] the periphery rules have a
 `capm` rule set, every value "N/A", and no `cap2m` rule set;[^pdk-periph]
 and neither Table F2b, the mask generation table, nor the CAD definitions
 of Table C3, which define "top_plate" as "capm:dg", mention

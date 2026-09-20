@@ -232,8 +232,8 @@ likely used at SkyWater"), as collected on the machines index:
 * **"ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD"** — *not evidence for the 130 nm gate (a later addition):* {ref}`P1M <step-061>`
 
 The inferences rest on the design rules and on one mask-type record, not
-on any SkyWater statement. In Table 2 of the PDK's *Criteria &
-Assumptions* the minimum features of these masks are 0.14–0.2 µm for
+on any SkyWater statement. In Table 2 of the PDK's [*Criteria &
+Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) the minimum features of these masks are 0.14–0.2 µm for
 active, gate spacing, local interconnect, contact, metals 1–2 and vias
 1–3 ({ref}`masks-index`),[^pdk-03] which the step pages find too small
 for production i-line imaging. Via 4, at 0.8 µm, is assigned here only

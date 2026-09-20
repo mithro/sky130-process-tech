@@ -67,7 +67,7 @@ process, built with implants of up to 1 MeV, already included "an n-type
 isolation well in a p-p+substrate and retrograde wells"; the abstract
 does not describe the well's geometry.[^stolmeijer-1986]
 Hong et al. describe a 0.22 µm triple-well CMOS process formed by
-high-energy implantation,[^hong-1999] and Voldman's *Latchup* gives a
+high-energy implantation,[^hong-1999] and Voldman's [*Latchup*](<https://doi.org/10.1002/9780470516171.ch5>) gives a
 chapter to dual-well and triple-well CMOS as latch-up
 solutions.[^voldman-2007]
 
@@ -92,8 +92,8 @@ is for test modules, seal ring and frame (our reading of x.15a, which
 does not say what applies in the core).
 
 Three criteria in two tables hint that the plate is not the drawn layer
-copied unchanged, without saying how it differs. Table 4 of *Criteria &
-Assumptions* gives a "Min spacing for created dnwell to pnp.dg (more
+copied unchanged, without saying how it differs. Table 4 of [*Criteria &
+Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives a "Min spacing for created dnwell to pnp.dg (more
 restrictive than dnwell.4 rule)" of 5 (`cdnwPnpSpc`), and Table 7 a
 "spacing of p-well outside deep n-well to deep n-well mask edge" of
 0.12 (`NWDNWENCL`) and a "p-well in deep n-well to p-sub" of 1.2

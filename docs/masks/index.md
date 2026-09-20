@@ -173,7 +173,7 @@ In the table:
   a separate one. Where no strip step is listed, the step pages read
   the strip as part of the etch.
 * **Minimum CD** gives the feature and space values and their variable
-  names from Table 2 of *Criteria & Assumptions*.[^pdk-03]
+  names from Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>).[^pdk-03]
 
 | Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |
 |------|------------------------|--------------------------------------|---------------------------------|----------|-----------------------------|
@@ -309,8 +309,8 @@ MPW-6 ({ref}`masks-mpw-runs`).[^steps-sheet]
 
 The sources for both tables are `masks.csv`,[^pdk-05] `gds_layers.csv`
 and Table F2b,[^pdk-06] the minimum-CD table,[^pdk-03] the periphery
-rules,[^pdk-periph] the WLCSP rules,[^pdk-wlcsp] the *Device
-Details* page[^pdk-07] and the test tile's pad
+rules,[^pdk-periph] the WLCSP rules,[^pdk-wlcsp] the [*Device
+Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) page[^pdk-07] and the test tile's pad
 documentation.[^raw-data-testtile-pads]
 
 ### Unmarked `masks.csv` entries with no mask step
@@ -661,8 +661,8 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   the note says the mask is "created over (LV nwell = nwell NOT hvi) NOT
   lvtn, plus hvtp only where nwell overlaps a varactor; the fab
   algorithm says do NOT OR hvtp in", naming no source, and the
-  expression omits the varactor term.[^mask-renders] The PDK's *Error
-  Messages* page lists checks on a layer it calls `CLHVTPM` but does not
+  expression omits the varactor term.[^mask-renders] The PDK's [*Error
+  Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page lists checks on a layer it calls `CLHVTPM` but does not
   define, including "0 min. enclosure of ((LVnwell not overlapping
   Var_channel) NOT lvtn) by CLHVTPM" (`chvtpm.3`) and "0 min. enclosure
   of ((LVnwell overlapping Var_channel) AND hvtp) by CLHVTPM"

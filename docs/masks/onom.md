@@ -56,7 +56,7 @@ the other 31.[^pdk-06] We read the identical columns as consistent with
 the step page's derivation of the island from the tunnel window, since
 the table gives no device a created `ONOM` shape without a created
 `TUNM` shape (our reading of the table, which does not say how either
-is made). Table 2 of *Criteria & Assumptions* gives the two masks the
+is made). Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the two masks the
 same minimum feature and space, 0.41 and 0.5.[^pdk-03]
 
 The island has two jobs on the step pages' readings. It must enclose the
@@ -107,7 +107,7 @@ criteria for GDS data", names the layer only in generic checks: "off
 inside areaid.ft" with the same message for `ONOMmk`.[^pdk-errors] It
 lists no width, spacing or enclosure check for `conom` or `ONOMmk`, and
 no "nikon cross" check for it.[^pdk-errors] Apart from `ONOMCD` and
-`ONOMCDSP` in Table 2, no row of *Criteria & Assumptions* names the
+`ONOMCDSP` in Table 2, no row of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) names the
 mask.[^pdk-03]
 
 ### In the public renders

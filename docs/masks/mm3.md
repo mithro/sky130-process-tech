@@ -54,7 +54,7 @@ The same pattern makes the capacitors' bottom plates. On the step pages'
 readings the metal-3 stack stays blanket through the capacitor module
 and every `capm` plate must end up inside a metal-3 shape; the PDK's
 cross-section of the stacked capacitor labels the metal under "CAPM" "M3
-(plate 1)".[^pdk-07] Table C3 of the *Layers Reference* defines
+(plate 1)".[^pdk-07] Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines
 "bottom_plate" as "(capm:dg AND met2:dg) sized by capm.3; Exclude all
 capm sharing same metal2 plate", and rule capm.3 is a "Minimum enclosure
 of capm (top_plate) by met2" with the value "N/A";[^pdk-06][^pdk-periph]
@@ -82,8 +82,8 @@ same variable names.[^pdk-05][^pdk-03] The {ref}`MM3 <step-139>` page
 reads "S8TM" as a 2 µm thick-metal-3 option (inference from the
 assumptions table's 2 µm "S8TM\* flow" thickness and the 0.8 µm
 `MM3CD`) and PLM as the label of the five-metal P flow (inference), and
-gives no reading of "TLM". Table F3c of the *Summary of Key Periphery
-Rules*, "Back end layers for S8D\* flow", gives metal 3 a width and
+gives no reading of "TLM". Table F3c of the [*Summary of Key Periphery
+Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>), "Back end layers for S8D\* flow", gives metal 3 a width and
 spacing of 0.360 and a via-2 enclosure of "0.045 / 0.07", and Table F3d,
 "Back end layers for S8T\* flow", a width and spacing of 2.500 and a via-2
 enclosure of 0.310;[^pdk-summary] the F3c values equal the "Metal 3-TLM"
@@ -131,7 +131,7 @@ met4.dg OR mm4.mk (for SP8Q/S8Q\*); met5.dg OR mm5.mk (for SP8P\*/S8P\*)",
 a notation (`mm3.mk`) that `gds_layers.csv` does not use for the
 mask.[^pdk-06] Rule nsm.3 lists "metX.dg (X=1 to 5) and cmmX.mk (X=1 to
 5)" among the layers kept 1.000 µm from the nitride-seal keep-out (flag
-AL).[^pdk-periph] The PDK's *Error Messages* page, which describes "many
+AL).[^pdk-periph] The PDK's [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page, which describes "many
 of the automated DRC rules that are checked by SkyWater as part of the
 acceptance criteria for GDS data", lists two checks named `cmm3.nikon`,
 "MM3mk in the nikon cross has the wrong polarity" and "MM3mk is missing

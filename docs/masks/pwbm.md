@@ -87,7 +87,7 @@ layer is `pwbm` at 19:44, and `nwell` is at 64:20.[^pdk-06] `masks.csv`
 lists "P-Well Block Mask, PWBM" with the `Used in SKY130` field
 blank,[^pdk-05] which the {ref}`PWBM <step-026>` page treats as a
 documentation inconsistency, since the layer, its rules and the 20 V
-devices that depend on it exist. Table 2 of *Criteria & Assumptions*
+devices that depend on it exist. Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives `PWBMCD` 0.84 and `PWBMCDSP` 1.27, the same values as `NWMCD` and
 `NWMCDSP`;[^pdk-03] we read the match as consistent with a plate whose
 smallest features are N-well outlines (inference; the table does not

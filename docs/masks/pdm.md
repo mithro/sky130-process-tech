@@ -275,7 +275,7 @@ factor "is unity for large features, but increases rapidly when the
 critical dimension (CD) is less than 0.5 (lambda) /NA for line-space
 patterns";[^wong-1998] at 365 nm and NA 0.6 that is about 0.30 µm (our
 arithmetic), far below the 1.27 µm space, so plate CD errors would print
-at their own size (inference). Table 4 of *Criteria & Assumptions* gives
+at their own size (inference). Table 4 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives
 a "CD tolerance for PDM (3s)" of 1 (`PdmCD_tol`), in its "Material
 Thicknesses" block with a column headed "Value (um)", against a 2 µm
 minimum opening;[^pdk-03] the PDK does not say what the tolerance

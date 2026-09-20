@@ -14,7 +14,8 @@ Task: `docs/plans/readability-plan.md` W0c. Spec: `docs/plans/readability/report
 4. [x] Run site-wide, one commit per directory; checkers + `-W` build after each.
 5. [x] Hand-finish leftovers: analysed exhaustively; found none that unambiguously fit rules 2–3
    (see below) — nothing left to hand-edit.
-6. [ ] C4 row 2 script: named italic titles in prose linked, first occurrence per H2.
+6. [x] C4 row 2 script (`tools/link_named_titles.py`): named italic titles in prose linked, first
+   occurrence per H2; run site-wide.
 7. [ ] `docs/references/index.md` "How citations work" wording.
 
 ## Decisions / notes
@@ -122,6 +123,60 @@ remains is either a different bullet shape entirely (no-dash), a pattern rule 3 
 its own "exactly N" wording (multi-marker with a count mismatch), a rule-2 case with nothing to link
 (role-in-head, zero italics), a source with no citable URL (no-url), or dropdown content deferred by
 policy (in-dropdown).
+
+## Step 6: `tools/link_named_titles.py` (C4 row 2)
+
+Scripted C4's second row: where prose names a source by its own italic title and cites its marker in
+the same sentence, link the title to the definition's first URL, first occurrence per H2, marker
+unchanged. Scope: the page's own prose body only (before `## References`; that section is C1's
+territory). Safety rules, each applied per block before any sentence is examined: never inside a
+quotation; never in a heading; never in any table line (header *or* data row — stricter than C4's own
+wording, which only names header rows, since a table cell rarely holds a full sentence and mixing this
+rule's sentence logic with cell/column boundaries was not worth the risk); never inside a `{dropdown}`;
+never inside the generated index-links block; and (found while verifying against `check_preserved.py`,
+see below) never in a paragraph adjacent to a block quote.
+
+Bugs found and fixed while building and cross-testing it against real content (all covered by
+selftest cases in both scripts now):
+
+* **`ITALIC_RE` matched across a `**bold**` run.** `\*[^*]+\*` happily opens on the second `*` of a
+  `**bold**` pair and closes on its own second `*`, so a nearby unrelated bold run-in label could be
+  misread as an italic title (`docs/steps/004-fom.md`: `**The FOM reticle**` beside an unrelated
+  `*Some paper*` citation produced a garbled link before this was fixed). Fixed with lookarounds
+  refusing an opening or closing `*` adjacent to another `*`, in **both** `link_named_titles.py` and
+  `fix_reading_list_links.py` (the latter had the same latent bug, though a site-wide scan found zero
+  reading-list bullet heads containing `**` today, so nothing there needed re-converting).
+* **`ITALIC_RE` matched a list bullet's own leading `"* "`.** Applied to a whole prose bullet (not just
+  a head with `"* "` already stripped, unlike `fix_reading_list_links.py`), the regex would "open" on
+  the bullet marker itself and "close" on the real title's own opening `*`, eating everything between
+  (`"* The PDK's *Periphery rules* page ..."` matched `" The PDK's "` as if it were the title). Fixed
+  by requiring CommonMark's own rule — no whitespace directly inside an emphasis delimiter — which
+  rules out `"* "` on general correctness grounds; applied to both scripts' `ITALIC_RE`.
+* **C4 must stop at `## References`, not just at the first footnote definition.** My first cut of
+  `split_body` only excluded text from the first `[^label]: ` line onward, which left every
+  already-linked (or not-yet-linked) reading-list bullet inside scope too — C1's own bullets recite a
+  source's title right next to its marker by design, so the script would try to re-link them. Fixed by
+  stopping at `## References` as well.
+* **A block quote can make `check_preserved.py` see a false quotation change.** One real case
+  (`docs/machines/single-wafer-spin-processor.md:161-166`): a paragraph ending "...page
+  lists:[^skw-01]" sits right before a block quote ("> \"Single Wafer\" ..."). `check_preserved.py`
+  flattens whitespace (including paragraph breaks) before matching quotes (a deliberate fix for
+  wrapped quotations, W0b's own H1 finding), so it paired the closing `"` of an unrelated
+  `"Batch Rotational"` phrase earlier in the paragraph with the block quote's own opening `"`, reading
+  everything in between — including the paragraph I edited — as one bogus "quotation" that changed.
+  Rather than change `check_preserved.py` a third time (two of its bugs were already fixed for C1, see
+  above in this file), the conservative fix lives in `link_named_titles.py` itself: a paragraph
+  immediately adjacent to a block quote (before or after) is now treated the same as one inside an
+  actual quotation — never linked. This is a real reduction in what gets converted (down from 73 to 46
+  site-wide) but the safer choice given "never inside quotations" and "if in doubt, leave it".
+
+**Site-wide result:** 46 titles linked on 30 pages. `check_preserved.py --allow-added urls` shows only
+declared URL additions on all 264 pages (0 undeclared differences); all checkers and the `-W` build
+pass. report-C.md's own estimate ("about 172 cases on 92 pages") used a cruder detection method than
+this script's exact, sentence-scoped, quotation/table/dropdown/blockquote-safe matching; the lower,
+more conservative count here is the intended trade-off, not a shortfall to chase — every rule above
+exists because a looser version produced a wrong or merely-plausible-looking edit somewhere on this
+site.
 
 ## Open points for the coordinator
 

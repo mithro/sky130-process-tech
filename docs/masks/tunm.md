@@ -110,7 +110,7 @@ cross" check for it.[^pdk-errors] Table C4b of the *Layers Reference*
 carries, in its row for `natfet.dg` {124:21}, the comment "Add TUNM for
 SONOS channel implants. See SPR 117559, SGL-529", which the PDK does not
 explain.[^pdk-06] Apart from `TUNMCD` and `TUNMCDSP` in Table 2, no row
-of *Criteria & Assumptions* names the mask or `tunm`.[^pdk-03]
+of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) names the mask or `tunm`.[^pdk-03]
 
 ### In the public renders
 

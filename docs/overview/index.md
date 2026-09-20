@@ -138,7 +138,7 @@ sheet rho poly resistor", "Optional MiM capacitors", "Includes SONOS
 shrunken cell", "Supports 10V regulated supply" and "HV extended-drain
 NMOS and PMOS", and adds that SKY130 includes "many normally optional
 features as standard (features like the local interconnect, SONOS
-functionality, MiM capacitors, and more)".[^pdk-10] The *Background*
+functionality, MiM capacitors, and more)".[^pdk-10] The [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
 page lists the stack as "5 levels of metal (p - penta)", "Inductor or
 Inductor-Capable (i)", "Poly resistor (r)", "SONOS shrunken cell
 (s)" and "Supports 10V regulated supply (10R)".[^pdk-02]
@@ -604,7 +604,7 @@ Three things follow from the reports themselves.
   issued.[^cyp-qtp-113005][^cyp-qtp-123907] It is a description of the
   fab's metallisation as it stood before the change, not of SKY130's.
 * The only line in the public record that speaks about **S8P** — the
-  family this reference reads SKY130 as, since the PDK's *Background*
+  family this reference reads SKY130 as, since the PDK's [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
   page lists "5 levels of metal (p - penta)" and its via-3 rules are
   headed "Via3 connects met3 to met4 in the
   SKY130Q\*/SKY130P\*/SP8Q/SP8P\* flow"[^pdk-02][^pdk-periph] — says

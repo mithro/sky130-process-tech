@@ -149,7 +149,7 @@ two.[^steps-sheet] The tab does not define its codes or say to which
 runs they apply. The masks index reads `BIM` as a binary
 (chrome-on-quartz) mask and `248` as the exposure wavelength, because
 mask makers and the patent literature use those abbreviations — a TSMC
-patent is titled *Method for forming binary intensity masks* and
+patent is titled [*Method for forming binary intensity masks*](<https://patents.google.com/patent/US6379849B1/en>) and
 abbreviates them "BIM" — and reads the digit 4, less certainly, as the
 4× reduction ratio.[^photronics-abr][^pat-bim-tsmc]
 
