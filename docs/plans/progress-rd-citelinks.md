@@ -16,7 +16,7 @@ Task: `docs/plans/readability-plan.md` W0c. Spec: `docs/plans/readability/report
    (see below) — nothing left to hand-edit.
 6. [x] C4 row 2 script (`tools/link_named_titles.py`): named italic titles in prose linked, first
    occurrence per H2; run site-wide.
-7. [ ] `docs/references/index.md` "How citations work" wording.
+7. [x] `docs/references/index.md` "How citations work" wording.
 
 ## Decisions / notes
 

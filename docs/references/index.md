@@ -24,6 +24,15 @@ list, a job listing, a dealer listing), the footnote gives the date it
 was retrieved. Search-engine snippets and pages that could not be
 retrieved are not cited.
 
+A source is never more than one click away. In each reading list below,
+the head of the bullet links to the first URL in its own footnote
+definition; the footnote itself is unchanged and still holds the full
+citation. In running prose, where a source is named by its own italic
+title in the same sentence as its footnote marker, that title is linked
+the same way, on its first mention under each heading. Hovering or
+tapping a marker also shows the footnote's text in place, with its own
+links live.
+
 ## Reading tiers
 
 Every step, category and index page ends with three annotated reading
