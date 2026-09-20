@@ -21,6 +21,14 @@ a small encroachment at the nitride edge). The result is a *trench
 liner* of the order of 10–30 nm of high-quality thermal SiO₂ lining
 every trench.
 
+:::{figure} /_static/figures/iso-010-linox.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the trench floor and walls are bare silicon. After it a thin, even thermal oxide lines the floor and both walls of the trench, while the active areas, still covered by nitride, are unchanged.
+:width: 560px
+:name: fig-iso-010-linox
+
+The wafer before and after `LINOX`. A thin thermal oxide grows on the exposed silicon inside the trench; the active areas, still covered by the nitride from `ISONIT`, do not oxidise, apart from a small encroachment at the nitride edge that is too small to draw here. A Spansion STI patent that later passed to Cypress, contemporaneous with the 130 nm node but not evidence for S8, grows a first liner "to a thickness of approximately 100-300 Å";[^pat-sti-cr] no SkyWater source gives the SKY130 liner thickness or temperature. Not to scale.
+:::
+
 Public numbers for comparable flows: a Spansion STI patent that later
 passed to Cypress, contemporaneous with the 130 nm node but not
 evidence for S8 (see *Open questions*), grows a first liner "to a

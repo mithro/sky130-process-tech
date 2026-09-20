@@ -22,6 +22,14 @@ polish at {ref}`CMPNIT <step-012>` and the nitride strip at
 transistor from its neighbours and on which the field poly and the
 first interconnect run.
 
+:::{figure} /_static/figures/iso-011-filox.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the lined trench is still open. After it a thick blanket of deposited oxide covers everything: it fills the trench and buries the nitride-covered active areas under a flat top surface.
+:width: 560px
+:name: fig-iso-011-filox
+
+The wafer before and after `FILOX`. The deposited oxide fills the lined trench and buries the nitride-covered active areas; this oxide *is* the field oxide of the finished device, and the PDK's stack drawing labels it "FOX K=3.9".[^pdk-04] The PDK gives no fill thickness. The fill is drawn with a flat top; a real high-density-plasma fill is not flat over a patterned wafer. Not to scale.
+:::
+
 The film must be thick enough to fill the deepest trench and still
 stand well above the nitride everywhere — typically 1.5–2 × the
 (trench + nitride) height, which for the ~0.33 µm trench and ~0.15 µm

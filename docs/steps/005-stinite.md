@@ -20,6 +20,14 @@ wherever the resist is open, stopping on silicon. When it is finished
 the future field regions are bare silicon and the future active
 regions are still covered by resist / nitride / pad oxide.
 
+:::{figure} /_static/figures/iso-005-stinite.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the nitride and pad oxide run unbroken under the two blocks of resist and across the gap between them. After it the nitride and pad oxide have been cut away in that gap, so the silicon in the middle of the drawing is bare while the sides are still covered by resist, nitride and pad oxide.
+:width: 560px
+:name: fig-iso-005-stinite
+
+The wafer before and after `STINITE`. The etch transfers the resist pattern into the hard mask, removing the isolation nitride and the pad oxide wherever the resist is open and stopping on silicon. In many fabs this etch and the silicon trench etch that follows are run back-to-back in the same chamber as one multi-step recipe; this reference keeps them as two steps, and the hand-off is not public. Not to scale.
+:::
+
 In many fabs this etch and the silicon trench etch that follows
 ({ref}`STIE <step-006>`) are run back-to-back in the same chamber as
 one multi-step recipe; this reference keeps them as two steps because

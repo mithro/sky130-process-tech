@@ -22,7 +22,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-hatch-back" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line class="pat" x1="0" y1="0" x2="0" y2="7"/></pattern><pattern id="p-hlines" width="6" height="5" patternUnits="userSpaceOnUse"><line class="pat" x1="0" y1="2.5" x2="6" y2="2.5"/></pattern><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern><pattern id="p-vlines" width="4" height="6" patternUnits="userSpaceOnUse"><line class="pat" x1="2" y1="0" x2="2" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
 <rect class="ground" x="0" y="0" width="480" height="855"/>
-<text x="12.0" y="26.0" class="t-panel-title">Materials</text>
+<text x="12.0" y="26.0" class="t-panel-title">The palette</text>
 <polygon class="mat m-si-sub" data-layer="si-sub" points="12.0,45.0 58.0,45.0 58.0,64.0 12.0,64.0"/>
 <text x="68.0" y="49.9" class="t-label-title">Silicon substrate (p-type)</text>
 <text x="68.0" y="66.9" class="t-label-note muted">no pattern</text>

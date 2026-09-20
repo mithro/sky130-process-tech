@@ -41,7 +41,6 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <g class="drawing" data-rect="12,198.5,268,65.0" clip-path="url(#clip2)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,207.50 283.00,207.50 283.00,371.50 9.00,371.50"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,202.50 283.00,202.50 283.00,207.50 9.00,207.50"/>
-<polyline class="hl" points="12.00,202.50 280.00,202.50"/>
 </g>
 <text x="304.0" y="282.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M272.0 255.5H283.0L300.0 277.5"/>

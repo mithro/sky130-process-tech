@@ -22,6 +22,14 @@ tapered and the corners are kept free of sharp features so that the
 later liner oxidation ({ref}`LINOX <step-010>`) and HDP fill
 ({ref}`FILOX <step-011>`) can complete the isolation.
 
+:::{figure} /_static/figures/iso-006-stie.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step, photoresist, the nitride hard mask and the pad oxide cover two active areas and the silicon between them is bare. After the step a trench with slightly tapered walls and rounded bottom corners has been etched into that bare silicon, and the resist is gone.
+:width: 560px
+:name: fig-iso-006-stie
+
+The wafer before and after `STIE`. The resist is drawn as left on for the trench etch and stripped at the end of the step, one of the two sequences described under *How it is typically performed*. No SkyWater document gives the SKY130 trench depth; about 0.33 µm is this page's reading of the PDK stack drawing, on the assumption that the drawing's zero is the trench floor.[^pdk-04] Not to scale.
+:::
+
 Wikipedia summarises {term}`STI` as "etching a pattern of trenches in the
 silicon, depositing one or more dielectric materials (such as silicon
 dioxide) to fill the trenches, and removing the excess

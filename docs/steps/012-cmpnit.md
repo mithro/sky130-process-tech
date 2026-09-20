@@ -21,6 +21,14 @@ areas is gone and the polish lands on the nitride from
 is a planar surface of nitride islands (future active areas) and
 oxide-filled trenches (future field oxide), level with one another.
 
+:::{figure} /_static/figures/iso-012-cmpnit.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the polish a thick fill oxide buries the lined trench and the nitride-covered active areas. After the polish the oxide is left only in the trench, its top level with the nitride on the active areas, so the whole surface is flat.
+:width: 560px
+:name: fig-iso-012-cmpnit
+
+The wafer before and after `CMPNIT`, on the same cross-section as the earlier isolation steps. The polish lands on the nitride from `ISONIT`, which polishes far more slowly than the oxide, and what is left is a planar surface of nitride islands over the future active areas and oxide-filled trenches over the future field.[^wiki-sti] Not to scale.
+:::
+
 This is the step that gives {term}`STI` its defining advantage over {term}`LOCOS` —
 a flat surface — and Wikipedia's STI outline lists it as "Chemical-
 mechanical polishing of the oxide" followed by "Removal of the

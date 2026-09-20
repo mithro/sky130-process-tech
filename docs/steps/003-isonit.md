@@ -22,6 +22,14 @@ and the liner oxidation ({ref}`LINOX <step-010>`), and acts as the
 polish stop for the oxide {term}`CMP` ({ref}`CMPNIT <step-012>`). It is removed
 at {ref}`NS19 <step-013>`.
 
+:::{figure} /_static/figures/iso-003-isonit.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thin pad oxide covers the silicon. After it a thicker, hatched nitride layer lies on top of that oxide, covering the whole wafer from edge to edge of the drawing.
+:width: 560px
+:name: fig-iso-003-isonit
+
+The wafer before and after `ISONIT`. The nitride is the hard mask of the STI module: it is patterned next, protects the future active areas during the trench etch and the liner oxidation, and is the polish stop for the oxide CMP. An AmberWave Systems STI patent gives the mask nitride as "500-2000 Å" (50–200 nm);[^pat-sti-amberwave] no public SkyWater source gives the SKY130 value. Not to scale.
+:::
+
 Precisely: a stoichiometric LPCVD nitride of the order of 150 nm — the
 working figure used throughout this module, not a SkyWater number — is
 deposited in a furnace from dichlorosilane and ammonia. An AmberWave

@@ -325,6 +325,14 @@ The mask counts are the lithography steps of the step list in each
 module, as listed on the {ref}`masks-index`; all thirteen add up to 171
 steps and 36 masks.
 
+:::{figure} /_static/figures/flow-modules.svg
+:alt: A vertical strip divided into the thirteen process modules in proportion to their number of steps, bracketed into front end (88 steps), middle of line (18) and back end (65). Each segment fans out to a row giving the module's name, its step range and its masks.
+:width: 560px
+:name: fig-flow-modules
+
+The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table above.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
+:::
+
 | Module | Steps | Number of steps | Mask steps | Key public facts |
 |--------|-------|-----------------|------------|------------------|
 | Starting material, isolation and deep N-well | {ref}`SMAT <step-001>` – {ref}`NS19 <step-013>` | 13 | 2 (`FOM`, `DNM`) | "Bulk" substrate;[^skw-02] "FOX K=3.9" field oxide, top at 0.3262 µm on the stack diagram,[^pdk-04] 0.07 µm above the silicon under poly[^pdk-03] |
@@ -796,6 +804,14 @@ materials to the process stack diagram. None of these is public.
 
 (overview-cross-section)=
 ## A simplified cross-section
+
+:::{figure} /_static/figures/chart-beol-stack.svg
+:alt: A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and finally a thin oxide under a thicker nitride.
+:width: 560px
+:name: fig-chart-beol-stack
+
+The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale, and adds nothing to them. The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
+:::
 
 The most complete public drawing of the SKY130 stack is the PDK's
 process stack diagram.[^pdk-04] It is marked "(Diagram not to scale!)" and labels

@@ -21,4 +21,3 @@ panels:
   - state_after: "002"
     crop_depth: 56
     title: "After: a thermal pad oxide over the whole wafer"
-    highlight: {where: [[0, 268]]}

@@ -1142,7 +1142,7 @@ def build_legend() -> Svg:
     tx = M + sw_w + 10
     tw = W - M - tx
     y = M + TY["panel-title"]["size"]
-    svg.text(M, y, "Materials", "t-panel-title")
+    svg.text(M, y, "The palette", "t-panel-title")
     y += 12
     for key, v in mats.items():
         title = wrap(v["label"], TY["label-title"]["size"], tw, bold=True)

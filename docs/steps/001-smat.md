@@ -19,6 +19,14 @@ contacts and five levels of aluminium — is built into and on top of the
 material chosen here, so the wafer specification is the first process
 decision of the technology.
 
+:::{figure} /_static/figures/iso-001-smat.svg
+:alt: A cross-section of the bare starting wafer: one block of p-type silicon with a flat, featureless top surface and no film of any kind on it. The block runs off the left, right and bottom edges of the drawing, because the wafer continues beyond the slice that is shown.
+:width: 560px
+:name: fig-iso-001-smat
+
+The wafer as it enters the flow. SkyWater's platform table gives the S130 substrate as "Bulk"[^skw-02] and the PDK's process-stack drawing labels the bottom of the stack "p-substrate",[^pdk-04] so the slice is drawn as bare p-type bulk silicon. Nothing else about the wafer — resistivity, orientation, oxygen content — is public. Not to scale.
+:::
+
 What can be said publicly about the SKY130 starting wafer:
 
 * **Diameter.** SkyWater's Minnesota fab runs "200 mm

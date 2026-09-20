@@ -21,6 +21,14 @@ associated with the high-voltage device family on the evidence of the
 PDK's isolated 20 V NMOS and a Cypress SONOS patent (see
 {ref}`DNM <step-007>`).
 
+:::{figure} /_static/figures/iso-009-dnis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the thick implant resist still covers the right-hand part of the drawing. After it the resist is gone, the nitride and pad oxide are back in view over both active areas, the trench is open again and the buried N-type band is unchanged.
+:width: 560px
+:name: fig-iso-009-dnis
+
+The wafer before and after `DNIS`, the first of the many implant strip steps in this reference. The resist has been bombarded by MeV phosphorus ions, which carbonise its top surface into a hard crust that ordinary oxygen ashing removes slowly and that can pop or flake during heating;[^orvek-1985] the wafer beneath it has open trenches with bare, plasma-damaged sidewalls, so the clean must be gentle with them. Not to scale.
+:::
+
 What makes this strip different from an ordinary post-etch strip is
 the state of the resist and of the wafer:
 
