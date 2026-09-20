@@ -87,7 +87,9 @@ insulator. The fill has to be:
 
 * **Void-free.** A seam or void in the trench is opened by later
   etches and cleans and then fills with polysilicon at
-  {ref}`SAGD <step-048>`, causing "poly stringer" shorts — precisely
+  {ref}`SAGD <step-048>`, causing "poly stringer" shorts.
+
+  This is precisely
   the 0.13 µm yield-loss mechanism the paper cited below reports, from
   a review it cites: "edge fallout due to High Density Plasma (HDP)
   deposition void at the special Shallow Trench Isolation (STI) wall

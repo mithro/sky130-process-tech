@@ -114,12 +114,14 @@ An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
 
 1. **Pre-oxidation clean.** After the resist strip
    ({ref}`DNIS <step-009>`), an {term}`SC-1`/{term}`SC-2` clean and a *short* dilute-HF
-   dip. The HF dip serves two purposes: it removes the chemical oxide
-   so that the liner grows on clean silicon, and it deliberately
-   undercuts the pad oxide at the nitride edge — "approximately
-   100-300 Å of the pad oxide 26 is removed in the
-   undercut"[^pat-sti-cr] — so that the liner oxidation can lift the
-   nitride corner and round the top of the trench.
+   dip. The HF dip serves two purposes:
+
+   * **Removes the chemical oxide** — so that the liner grows on
+     clean silicon.
+   * **Undercuts the pad oxide** at the nitride edge — "approximately
+     100-300 Å of the pad oxide 26 is removed in the
+     undercut"[^pat-sti-cr] — so that the liner oxidation can lift the
+     nitride corner and round the top of the trench.
 2. **Furnace oxidation.** Vertical furnace, dry O₂ at
    900–1100 °C,[^pat-sti-cr][^pat-sti-lattice] or a dilute-steam or
    in-situ-steam ambient at somewhat lower

@@ -90,6 +90,7 @@ or Cypress document and is discussed below as industry-typical.
 
 1. The 20 V zero-Vt NMOS, whose p-well and all Vt implants are blocked
    to reach a zero VT,[^pdk-07] is measured on SkyWater's test tile.
+
    The raw-data repository files the measurement under the folder name
    `nfet_20v0_nvt`, but the {ref}`PWBM <step-026>` page reads the pad's
    own geometry (a "2× 30/5.5" structure with its body tied to `Psub`)
@@ -134,10 +135,11 @@ depends on:
   historically made epi the choice for logic (the 2001 ITRS:
   "high-performance logic ICs are generally manufactured on more costly
   epitaxial wafers … (e.g., latch-up suppression capability)"[^itrs-01]).
+
   The same roadmap notes that this "may no longer be as critical due to
   the implementation of shallow trench isolation (STI) and the
   development of alternate doping means for achieving latch-up
-  suppression"[^itrs-01] — which is exactly the combination SKY130
+  suppression".[^itrs-01] This is exactly the combination SKY130
   uses: {term}`STI` plus {term}`retrograde wells <retrograde well>` plus an optional deep N-well.
 * **Defect density and {term}`gate-oxide integrity <gate oxide integrity>`.** Crystal-originated
   particles, metallic contamination and surface micro-roughness of the

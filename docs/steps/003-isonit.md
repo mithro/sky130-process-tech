@@ -116,7 +116,9 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
 * **Deposition chemistry.** Dichlorosilane (SiH₂Cl₂, "DCS") and ammonia:
   3 SiCl₂H₂ + 4 NH₃ → Si₃N₄ + 6 HCl + 6 H₂.[^wiki-sin][^wiki-cvd] LPCVD
   nitride is deposited at roughly 700–800 °C and a few hundred mTorr in
-  a hot-wall furnace; an NH₃ : DCS ratio well above the stoichiometric
+  a hot-wall furnace.
+
+  An NH₃ : DCS ratio well above the stoichiometric
   4 : 3 is used to keep the film silicon-poor and
   stoichiometric.[^txt-02] The same DCS/NH₃ LPCVD chemistry is used for
   the {term}`SONOS` nitride: one embodiment of US 6,969,689 forms the

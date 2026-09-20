@@ -124,14 +124,18 @@ isolation module:
   during the liner oxidation.[^rev-01]
 
 The published SKY130 {term}`test tile` shows structures with which the
-result can be checked electrically: field-oxide FETs, mostly 1000 µm wide, whose poly-1 or metal-1
-gates cross the isolation between two diffusions ("poly1 gate w/l =
-1000/0.17, diff spacing = 0.27"; "(diff spacing =0.48)" for the
-high-voltage version), 0.29 µm n⁺ and p⁺ diffusion lines at 0.3 µm
-space for "line integrity", and gate-oxide capacitors that are "field-edge intensive"
-at "FOM w/s = 0.14/0.27"[^raw-data-testtile-pads] — the minimum width
-and space the PDK's CD table gives for the field-oxide mask
-(`FOMCD` 0.14 µm, `FOMCDSP` 0.27 µm).[^pdk-03]
+result can be checked electrically:
+
+* **Field-oxide FETs** — mostly 1000 µm wide, whose poly-1 or
+  metal-1 gates cross the isolation between two diffusions ("poly1
+  gate w/l = 1000/0.17, diff spacing = 0.27"; "(diff spacing =0.48)"
+  for the high-voltage version).
+* **Diffusion lines** — 0.29 µm n⁺ and p⁺ diffusion lines at 0.3 µm
+  space for "line integrity".
+* **Gate-oxide capacitors** — "field-edge intensive" at "FOM
+  w/s = 0.14/0.27",[^raw-data-testtile-pads] the minimum width and
+  space the PDK's CD table gives for the field-oxide mask
+  (`FOMCD` 0.14 µm, `FOMCDSP` 0.27 µm).[^pdk-03]
 
 ## How it is typically performed
 
