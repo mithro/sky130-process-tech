@@ -1804,3 +1804,150 @@ The before/after preservation check every hand-edit branch must run. Per
 multisets of **footnote markers, numbers and quoted strings** to be identical, apart from declared
 additions (such as step names and step numbers added by a new table). Use it as §7 step 4 describes.
 Until it exists, do the same comparison by hand with the snippet in §7.
+
+## 6. MyST crib — forms verified to build in this project
+
+Every form below was built with `uv run sphinx-build -W -q -b html` in a scratch project carrying this
+project's `conf.py` settings (`myst_parser`, `sphinx_copybutton`, `sphinx_design`, furo,
+`colon_fence`, `deflist`, `fieldlist`, `substitution`, `tasklist`, `attrs_inline`,
+`myst_heading_anchors = 3`, `nitpicky = True`). Copy them; do not invent variants.
+
+**Table with a caption and widths.** The blank line after the options is optional — both build, both
+produce a `<caption>`. `:widths:` numbers are relative; `:class:` is optional.
+
+```
+:::{table} Published retrograde N-well implants, as each source gives them
+:widths: 24 20 20 36
+
+| Source | Energy (keV) | Dose (cm⁻²) | Basis |
+|---|---:|---:|---|
+| Harris twin-well[^a] | 500, 275, 130 | — | as published |
+:::
+```
+
+A caption may carry a footnote marker (`… blank in the PDK[^pdk-periph]`) — verified.
+
+**Table inside a list item.** Blank line before and after; the table indented two spaces with the item.
+
+```
+* **Energy.** Set by the wanted peak depth.
+
+  | Source | Energy (keV) |
+  |---|---:|
+  | Harris[^a] | 500 |
+
+  For a 1.1 µm well depth the deepest energy is plausibly 500 keV–1 MeV (our reading).
+```
+
+**Admonition with a title** (use for "At a glance"):
+
+```
+:::{admonition} At a glance
+* **Does:** etches the isolation trench.[^a]
+:::
+```
+
+**Note** (use for the "How" scope sentence) and **see-also** (use for pointer sentences moved out of an
+intro):
+
+```
+:::{note}
+An industry-generic recipe for a 200 mm, 130 nm-era fab.
+:::
+
+:::{seealso}
+The mechanism is on the category page.
+:::
+```
+
+Both also build **inside a list item**, indented with it and surrounded by blank lines — verified.
+
+**Dropdown**, colon fence or backtick fence; both are recognised by `check_inforce.py`:
+
+```
+:::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
+A sentence inside the collapsed note.[^b]
+
+* A reading-list bullet inside the note.[^a]
+:::
+```
+
+```
+```{dropdown} Title
+Text inside.
+```
+```
+
+A dropdown also builds inside a list item, and around a `Steps:` line plus its link run — verified.
+
+**Grid of cards** (landing page, R-CARDS). Four fences: `::::` outside, `:::` per card.
+
+```
+::::{grid} 1 2 3 3
+:gutter: 2
+
+:::{grid-item-card} Process steps
+:link: steps-index
+:link-type: ref
+
+171 pages, one per step.
+:::
+
+:::{grid-item-card} Machines
+:link: machines-index
+:link-type: ref
+
+30 machine classes.
+:::
+::::
+```
+
+**Tab set** (two views of one dataset):
+
+```
+::::{tab-set}
+:::{tab-item} By class
+…
+:::
+:::{tab-item} By SkyWater tool
+…
+:::
+::::
+```
+
+**Definition list** (term → explanation, two columns only):
+
+```
+Entry as listed
+: What it names — "phosphoric" is the acid.[^a]
+
+Another entry
+: Our reading, not a documented fact.
+```
+
+**Figure** with alt text, width, name and a caption carrying footnotes:
+
+```
+:::{figure} /_static/figures/sti-006-stie.svg
+:alt: Two cross-sections of the wafer, one above the other, showing a trench etched through
+    nitride and pad oxide into silicon.
+:width: 560px
+:name: fig-sti-006-stie
+
+The wafer before and after `STIE`; about 0.33 µm is this page's reading of the PDK stack
+drawing.[^pdk-04] Not to scale.
+:::
+```
+
+**Footnotes in table cells** build — that is how the quick-facts tables already work.
+
+**`{numref}` does not build.** `numfig` is off; `See {numref}`fig-…`` produces
+`WARNING: numfig is disabled. :numref: is ignored.` and `-W` turns it into a failure (verified, exit 1).
+Refer to a figure by its caption words, not by a number.
+
+**Roles.** `{ref}`CODE <step-NNN>``, `{ref}`category-etch``, `{term}`vias <via>``. `nitpicky = True`
+means a broken target fails the build.
+
+**What not to use.** `{numref}`; `list-table` inside any checked table (§5); reference-style links
+(`[text]: url`, refused by `check_refs.py`); MyST `linkify` (not enabled — a bare URL does not become a
+link, which is why generated pages wrap URLs in `<…>`).
