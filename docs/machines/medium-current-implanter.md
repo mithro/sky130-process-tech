@@ -367,86 +367,86 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Axcelis 8250
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Axcelis 8250
   Mid current" entry quoted on this page.[^skw-01]
-* SkyWater PDK Authors, *Criteria & Assumptions* — the HV tip tilt and
+* [SkyWater PDK Authors, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the HV tip tilt and
   twist angles.[^pdk-03]
-* Eaton, *8250HT Medium Current Ion Implanter* — energy, beam-current,
+* [Eaton, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — energy, beam-current,
   throughput and energy-filter figures for the 8250 family.[^axcelis-8250]
-* Axcelis Technologies, *Our History* — dates and features of the
+* [Axcelis Technologies, *Our History*](<https://www.axcelis.com/about/our-history/>) — dates and features of the
   Eaton medium-current tools and of the SEF charge control.[^axcelis-history]
-* Varian Semiconductor, *Productivity Plus* for the E220/E500 series
-  (2003) — the E-series as Varian's 150/200 mm medium-current
+* [Varian Semiconductor, *Productivity Plus* for the E220/E500 series
+  (2003)](<https://nccavs-usergroups.avs.org/wp-content/uploads/JTG2003/WCJTG_07_2003_Varian.pdf>) — the E-series as Varian's 150/200 mm medium-current
   line.[^varian-eseries-2003]
-* Fabsurplus, Varian E500 HP listing — the gas box, source and pumps of
+* [Fabsurplus, Varian E500 HP listing](<https://www.fabsurplus.com/sdicatalog/download?id=44950>) — the gas box, source and pumps of
   a medium-current tool of the period.[^fabsurplus-e500]
-* Tom and McManus (ATMI), US 5,518,528 — sub-atmospheric hydride
+* [Tom and McManus (ATMI), US 5,518,528](<https://patents.google.com/patent/US5518528A/en>) — sub-atmospheric hydride
   storage for implanters, with the cylinder practice it
   replaced.[^pat-sds-atmi]
-* Bisson et al. (Varian), US 6,723,998 — Faraday cups for implanters and
+* [Bisson et al. (Varian), US 6,723,998](<https://patents.google.com/patent/US6723998B2/en>) — Faraday cups for implanters and
   the suppression of secondary electrons.[^pat-faraday-varian]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — implanter classes, ion sources, beam
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — implanter classes, ion sources, beam
   scanning and hazards.[^wiki-implant]
-* Wikipedia, *Axcelis Technologies* and *Varian Semiconductor* — the
+* Wikipedia, [*Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>) and [*Varian Semiconductor*](<https://en.wikipedia.org/wiki/Varian_Semiconductor>) — the
   two main US medium-current vendors.[^wiki-axcelis][^wiki-varian]
-* Wikipedia, *Boron trifluoride*, *Phosphine* and *Arsine* — the source
+* Wikipedia, [*Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>), [*Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>) and [*Arsine*](<https://en.wikipedia.org/wiki/Arsine>) — the source
   gases.[^wiki-bf3][^wiki-ph3][^wiki-ash3]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — implantation
   and implanter basics in ch. 8.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — the
   implanter as a fab tool, ch. 17.[^txt-07]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapter-per-process equipment detail.[^txt-09]
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapter-per-process equipment detail.[^txt-09]
 
 ### Deep dive
 
-* Harlan and Petry, IIT 1998 — the Eaton 8250: hybrid scanning,
+* [Harlan and Petry, IIT 1998](<https://doi.org/10.1109/IIT.1999.812103>) — the Eaton 8250: hybrid scanning,
   parallelising lens, IHC source, electrostatic clamp and
   dosimetry.[^harlan-1998]
-* Rathmell et al., IIT 1998 — measuring beam parallelism on the 8250
+* [Rathmell et al., IIT 1998](<https://doi.org/10.1109/IIT.1999.812136>) — measuring beam parallelism on the 8250
   and its effect on channelled profiles.[^rathmell-1998]
-* Curello and McWilliams, IIT 1998 — charge exchange and dose error
+* [Curello and McWilliams, IIT 1998](<https://doi.org/10.1109/IIT.1999.812173>) — charge exchange and dose error
   versus chamber pressure on an 8250.[^curello-1998]
-* Olson, Renau and Buff, IIT 1998 — electrostatic scanning, angle
+* [Olson, Renau and Buff, IIT 1998](<https://doi.org/10.1109/IIT.1999.812079>) — electrostatic scanning, angle
   correction and uniformity control on the VIISta 810.[^olson-1998]
-* Swenson et al., IIT 1996 — graphite and silicon shields to cut metals
+* [Swenson et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586154>) — graphite and silicon shields to cut metals
   contamination on the EHP-220/500.[^swenson-1996]
-* Swenson et al., IIT 1996 — the enhanced Bernas source of the EHP-500
+* [Swenson et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586263>) — the enhanced Bernas source of the EHP-500
   and multiply charged beam currents.[^swenson-1996-bernas]
-* Kubo et al., IIT 1996 — energy contamination from multiply charged
+* [Kubo et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586141>) — energy contamination from multiply charged
   implants and its device effect.[^kubo-1996]
-* Horsky, *Rev. Sci. Instrum.* 1998 — the indirectly heated cathode ion
+* [Horsky, *Rev. Sci. Instrum.* 1998](<https://doi.org/10.1063/1.1148866>) — the indirectly heated cathode ion
   source, lifetime and charge-state fractions.[^horsky-1998-ihc]
-* Tanjyo and Naito, *SEI Technical Review* 2011 — the Nissin EXCEED
+* [Tanjyo and Naito, *SEI Technical Review* 2011](<https://global-sei.com/technology/tr/bn73/pdf/73-03.pdf>) — the Nissin EXCEED
   line: energy filter, magnetic scan, Faraday arrays, plasma flood and
   angle control.[^tanjyo-2011]
-* Glavish and Farley, IIT 2018 — a review of beam-line innovations
+* [Glavish and Farley, IIT 2018](<https://doi.org/10.1109/IIT.2018.8807986>) — a review of beam-line innovations
   across implanter classes.[^glavish-2018]
-* Current, *JVST A* 1996 — sources, beam transport, dosimetry,
+* [Current, *JVST A* 1996](<https://doi.org/10.1116/1.580279>) — sources, beam transport, dosimetry,
   charging and cryopump safety from a vacuum
   perspective.[^current-1996]
-* Current, Vella and Lukaszek, IIT 1996 — a beam-plasma model of wafer
+* [Current, Vella and Lukaszek, IIT 1996](<https://doi.org/10.1109/IIT.1996.586119>) — a beam-plasma model of wafer
   charging covering electron showers and plasma
   flows.[^current-1996-iit]
-* Current, *Mater. Sci. Semicond. Process.* 2017 — implantation for
+* [Current, *Mater. Sci. Semicond. Process.* 2017](<https://doi.org/10.1016/j.mssp.2016.10.045>) — implantation for
   silicon devices, past to future.[^current-2017]
-* Horsky, IIT 1998 — how resist outgassing alters the measured dose
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — how resist outgassing alters the measured dose
   and the gas load in high-energy and high-current
   implanters.[^horsky-1998]
-* Smith, Rosencwaig and Willenborg, *APL* 1985 — the thermal-wave
+* [Smith, Rosencwaig and Willenborg, *APL* 1985](<https://doi.org/10.1063/1.96079>) — the thermal-wave
   implant monitor.[^smith-1985]
-* Morris and Rubin, IIT 2000 — batch high-energy versus serial
+* [Morris and Rubin, IIT 2000](<https://doi.org/10.1109/IIT.2000.924093>) — batch high-energy versus serial
   medium-current implanters for well implants.[^morris-2000]
-* Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted implants
+* [Lin, Yoo and Liang (TSMC), US 5,372,957](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5372957>) — multiple tilted implants
   with wafer rotation.[^pat-quad-tsmc]
-* Yang (UMC), US 5,393,679 — doubly charged phosphorus for a retrograde
+* [Yang (UMC), US 5,393,679](<https://patents.google.com/patent/US5393679A/en>) — doubly charged phosphorus for a retrograde
   well on a lower-energy tool.[^pat-umc-dc]
-* Chen et al., *Solid-State Electronics* 1995 — beam shadowing of large-tilt
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — beam shadowing of large-tilt
   implants.[^chen-1995]
-* Ryssel and Ruge, *Ion Implantation* — the classic monograph, including
+* [Ryssel and Ruge, *Ion Implantation*](<https://openlibrary.org/isbn/9780471103110>) — the classic monograph, including
   equipment.[^ryssel-1986]
 
 ## Open questions

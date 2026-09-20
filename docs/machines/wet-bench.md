@@ -336,22 +336,22 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the Akrion, Batch
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Akrion, Batch
   Rotational, DNS and FSI Mercury entries quoted on this page.[^skw-01]
-* Akrion Technologies, *GAMA Automated Wet Station* — the batch
+* [Akrion Technologies, *GAMA Automated Wet Station*](<https://www.akriontech.com/product-3>) — the batch
   immersion design and concentration control.[^akrion-gama-series]
-* C2MI, *Akrion GAMA acid bench* — an installed GAMA wet processor and
+* [C2MI, *Akrion GAMA acid bench*](<https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/>) — an installed GAMA wet processor and
   its automation.[^akrion-gama]
-* Solid State Technology, Akrion E200 sale (2007) — a 200 mm bench's
+* [Solid State Technology, Akrion E200 sale (2007)](<https://sst.semiconductor-digest.com/2007/06/akrion-sells-scp-automated-wet-station-for-wafer-cleaning/>) — a 200 mm bench's
   configurations, rinse and drying, and Akrion's purchase of
   SCP.[^sst-akrion-scp-2007]
-* SCREEN Semiconductor Solutions, *Wet Station WS-620C / WS-820L* — the
+* [SCREEN Semiconductor Solutions, *Wet Station WS-620C / WS-820L*](<https://www.screen.co.jp/spe/en/products/ws-620c820l>) — the
   DNS 200 mm wet stations.[^screen-ws820]
-* Tokyo Electron, MERCURY MP relaunch (2018) — the batch spray system's
+* [Tokyo Electron, MERCURY MP relaunch (2018)](<https://www.tel.com/news/product/2018/20180710_001.html>) — the batch spray system's
   wafer sizes, installed base and scope.[^tel-mercury-2018]
-* Meuchel, Bernt and Henke (Semitool), US 7,305,999 — the centrifugal
+* [Meuchel, Bernt and Henke (Semitool), US 7,305,999](<https://patents.google.com/patent/US7305999B2/en>) — the centrifugal
   spray processor.[^pat-spray-semitool]
-* Lee (EKC Technology), US 5,334,332 — hydroxylamine and alkanolamine
+* [Lee (EKC Technology), US 5,334,332](<https://patents.google.com/patent/US5334332A/en>) — hydroxylamine and alkanolamine
   residue removers.[^pat-ekc-hydroxylamine]
 
 :::{dropdown} From patents shown as in force (EP 2 104 648, estimated expiry 2028-05-14; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -364,46 +364,46 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *RCA clean* — the SC-1, HF and SC-2 sequence.[^wiki-rca]
-* Wikipedia, *Piranha solution* — SPM composition.[^wiki-piranha]
-* Wikipedia, *Buffered oxide etch* — BOE composition and
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — the SC-1, HF and SC-2 sequence.[^wiki-rca]
+* [Wikipedia, *Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) — SPM composition.[^wiki-piranha]
+* [Wikipedia, *Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>) — BOE composition and
   rate.[^wiki-boe]
-* Wikipedia, *Hydrofluoric acid* and *Phosphoric acid* — two bench
+* Wikipedia, [*Hydrofluoric acid*](<https://en.wikipedia.org/wiki/Hydrofluoric_acid>) and [*Phosphoric acid*](<https://en.wikipedia.org/wiki/Phosphoric_acid>) — two bench
   chemicals.[^wiki-hf][^wiki-h3po4]
-* Wikipedia, *N-Methyl-2-pyrrolidone* — a resist solvent.[^wiki-nmp]
-* Stanford Nanofabrication Facility, *Silicon Nitride Wet Etching* — a
+* [Wikipedia, *N-Methyl-2-pyrrolidone*](<https://en.wikipedia.org/wiki/N-Methyl-2-pyrrolidone>) — a resist solvent.[^wiki-nmp]
+* [Stanford Nanofabrication Facility, *Silicon Nitride Wet Etching*](<https://snfguide.stanford.edu/guide/equipment/purpose/etching/wet-etching/silicon-nitride-wet-etching>) — a
   university hot-phosphoric bench.[^snf-nitride-wet]
-* Kern, ch. 1 of *Handbook of Silicon Wafer Cleaning Technology* — an
+* [Kern, ch. 1 of *Handbook of Silicon Wafer Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — an
   overview of cleaning technology.[^kern-handbook]
 
 ### Deep dive
 
-* Kern, *JES* 1990 — the evolution of wafer cleaning and its
+* [Kern, *JES* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer cleaning and its
   equipment.[^kern-1990]
 * Kern and Puotinen, *RCA Review* 1970 — the original peroxide
   cleaning solutions.[^kern-1970]
-* Ohmi, *JES* 1996 — a room-temperature wet clean with less chemical and
+* [Ohmi, *JES* 1996](<https://doi.org/10.1149/1.1837133>) — a room-temperature wet clean with less chemical and
   water use.[^ohmi-1996]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology* — wet cleaning, resist removal and particle
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>) — wet cleaning, resist removal and particle
   control.[^reinhardt-2008]
-* van Gelder and Hauser, *JES* 1967 — etching nitride in refluxed hot
+* [van Gelder and Hauser, *JES* 1967](<https://doi.org/10.1149/1.2426757>) — etching nitride in refluxed hot
   phosphoric acid.[^vgh-1967]
-* Liu et al., *ECS Trans.* 2007 — keeping the nitride-to-oxide
+* [Liu et al., *ECS Trans.* 2007](<https://doi.org/10.1149/1.2779363>) — keeping the nitride-to-oxide
   selectivity of a production phosphoric bath stable.[^liu-2007]
-* Deckert, *JES* 1978 — the rate law for nitride in acidic fluoride
+* [Deckert, *JES* 1978](<https://doi.org/10.1149/1.2131436>) — the rate law for nitride in acidic fluoride
   solutions.[^deckert-1978]
-* Knotter and Denteneer, *JES* 2001 — the etching mechanism of nitride in
+* [Knotter and Denteneer, *JES* 2001](<https://doi.org/10.1149/1.1348262>) — the etching mechanism of nitride in
   HF solutions.[^knotter-2001]
-* Kikuyama et al., *JES* 1994 — dissociation and oxide etching in very
+* [Kikuyama et al., *JES* 1994](<https://doi.org/10.1149/1.2054733>) — dissociation and oxide etching in very
   dilute HF.[^kikuyama-1994]
-* Lee, *ESSL* 1999 — silicon and oxide etch rates in ammonia–peroxide
+* [Lee, *ESSL* 1999](<https://doi.org/10.1149/1.1390773>) — silicon and oxide etch rates in ammonia–peroxide
   solutions.[^lee-kt-1999]
-* Leenaars, Huethorst and van Oekel, *Langmuir* 1990 — Marangoni
+* [Leenaars, Huethorst and van Oekel, *Langmuir* 1990](<https://doi.org/10.1021/la00101a014>) — Marangoni
   drying.[^leenaars-1990]
-* Wai and Ling, ASMC 2017 — corrosion after wet polymer clean and the
+* [Wai and Ling, ASMC 2017](<https://doi.org/10.1109/ASMC.2017.7969200>) — corrosion after wet polymer clean and the
   Marangoni dry that prevents it.[^wai-2017]
-* Fujimura et al., *JJAP* 1989 — the residues left by ashing implanted
+* [Fujimura et al., *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the residues left by ashing implanted
   resist.[^fujimura-1989]
 
 ## Open questions

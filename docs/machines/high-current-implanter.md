@@ -320,77 +320,77 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the two GSD entries
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the two GSD entries
   quoted on this page.[^skw-01]
-* SkyWater PDK Authors, *Criteria & Assumptions* — the "High current"
+* [SkyWater PDK Authors, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the "High current"
   and tip implant angles.[^pdk-03]
-* Axcelis Technologies, *GSD Ovation* product page — the GSD as a batch
+* [Axcelis Technologies, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — the GSD as a batch
   platform and its source consumables.[^axcelis-gsd-page]
-* Axcelis Technologies, *GSD Ovation* press release (2021) — the GSD
+* [Axcelis Technologies, *GSD Ovation* press release (2021)](<https://www.prnewswire.com/news-releases/axcelis-announces-introduction-of-the-gsd-ovation-high-current-and-high-energy-batch-implanters-301412520.html>) — the GSD
   family for 200 mm fabs.[^axcelis-gsd]
-* Axcelis Technologies, *Our History* — the NV-10, NV-GSD and GSD/200E2
+* [Axcelis Technologies, *Our History*](<https://www.axcelis.com/about/our-history/>) — the NV-10, NV-GSD and GSD/200E2
   batch implanters and their dosimetry.[^axcelis-history]
-* Applied Materials, Quantum press release (1999) — energy ranges and
+* [Applied Materials, Quantum press release (1999)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-quantum-system-all-high-current/>) — energy ranges and
   wafer sizes of the xR and Quantum high-current tools.[^amat-quantum-1999]
-* Ryding (Nova Associates), US 4,234,797 — the spinning-disc end station
+* [Ryding (Nova Associates), US 4,234,797](<https://patents.google.com/patent/US4234797A/en>) — the spinning-disc end station
   with slot dosimetry.[^pat-disk-nova]
-* Chen and Sinclair (Eaton), US 5,760,409 — pressure-compensated dose
+* [Chen and Sinclair (Eaton), US 5,760,409](<https://patents.google.com/patent/US5760409A/en>) — pressure-compensated dose
   control.[^pat-dose-eaton]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — implanter classes, ion sources, beam
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — implanter classes, ion sources, beam
   scanning and hazards.[^wiki-implant]
-* Wikipedia, *Axcelis Technologies* and *Varian Semiconductor* — the
+* Wikipedia, [*Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>) and [*Varian Semiconductor*](<https://en.wikipedia.org/wiki/Varian_Semiconductor>) — the
   vendors behind the GSD and VIISta lines.[^wiki-axcelis][^wiki-varian]
-* Wikipedia, *Arsine* — the arsenic source gas and its sub-atmospheric
+* [Wikipedia, *Arsine*](<https://en.wikipedia.org/wiki/Arsine>) — the arsenic source gas and its sub-atmospheric
   delivery.[^wiki-ash3]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation and
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — implantation and
   implanter basics in ch. 8.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — the
   implanter as a fab tool, ch. 17.[^txt-07]
 
 ### Deep dive
 
-* Glavish and Farley, IIT 2018 — beam-line innovations and the move from
+* [Glavish and Farley, IIT 2018](<https://doi.org/10.1109/IIT.2018.8807986>) — beam-line innovations and the move from
   batch to serial implanters.[^glavish-2018]
-* Tanjyo and Naito, *SEI Technical Review* 2011 — implanter classes and
+* [Tanjyo and Naito, *SEI Technical Review* 2011](<https://global-sei.com/technology/tr/bn73/pdf/73-03.pdf>) — implanter classes and
   an example flow with the implanter type of each implant.[^tanjyo-2011]
-* Mezack et al., IIT 2000 — the VIISta 80 single-wafer high-current
+* [Mezack et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924180>) — the VIISta 80 single-wafer high-current
   implanter and large-angle tilt.[^mezack-2000]
-* Lundquist et al., IIT 1996 — the Varian VIISion 80 and VIISion 200
+* [Lundquist et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586401>) — the Varian VIISion 80 and VIISion 200
   high-current systems and their plasma flood gun.[^lundquist-1996]
-* Todorov et al., IIT 1998 — energy purity of low-energy boron on a
+* [Todorov et al., IIT 1998](<https://doi.org/10.1109/IIT.1999.812200>) — energy purity of low-energy boron on a
   VIISion 80 PLUS disc implanter.[^todorov-1998]
-* Kraupner et al., IIT 2002 — dosimetry and pressure compensation on the
+* [Kraupner et al., IIT 2002](<https://doi.org/10.1109/IIT.2002.1257988>) — dosimetry and pressure compensation on the
   Axcelis GSD.[^kraupner-2002]
-* Xu and Lee, IIT 1996 — boron cross-contamination in high-dose arsenic
+* [Xu and Lee, IIT 1996](<https://doi.org/10.1109/IIT.1996.586161>) — boron cross-contamination in high-dose arsenic
   implants and its beam-line origin.[^xu-1996]
-* Jones and Sinclair, IIT 1996 — across-wafer channelling variation on
+* [Jones and Sinclair, IIT 1996](<https://doi.org/10.1109/IIT.1996.586257>) — across-wafer channelling variation on
   spinning-disc batch implanters.[^jones-1996]
-* Romig, Bishop and Rio, IIT 1996 — resist burning in a high-current
+* [Romig, Bishop and Rio, IIT 1996](<https://doi.org/10.1109/IIT.1996.586181>) — resist burning in a high-current
   implanter and its prevention.[^romig-1996]
-* Mehta et al., IIT 1996 — negative charging with plasma flood guns
+* [Mehta et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586128>) — negative charging with plasma flood guns
   compared with electron flood guns.[^mehta-1996]
-* Dixon, Lukaszek and Heden, IIT 1996 — photoresist-enhanced wafer
+* [Dixon, Lukaszek and Heden, IIT 1996](<https://doi.org/10.1109/IIT.1996.586134>) — photoresist-enhanced wafer
   charging during high-current implants.[^dixon-1996]
-* Lukaszek, Reno and Bammi, IIT 1996 — charging potentials at a resist
+* [Lukaszek, Reno and Bammi, IIT 1996](<https://doi.org/10.1109/IIT.1996.586135>) — charging potentials at a resist
   edge during high-current arsenic implants.[^lukaszek-1996]
-* Current et al., IIT 1998 — charging current–voltage characteristics
+* [Current et al., IIT 1998](<https://doi.org/10.1109/IIT.1999.812159>) — charging current–voltage characteristics
   with resist during high-current As⁺ implants.[^current-1998]
-* Horsky, IIT 1998 — outgassing composition and dose shifts in
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — outgassing composition and dose shifts in
   high-current and high-energy implants.[^horsky-1998]
-* Smith, 1983 — wafer cooling and photoresist masking problems in
+* [Smith, 1983](<https://doi.org/10.1007/978-3-642-69156-0_25>) — wafer cooling and photoresist masking problems in
   implantation.[^smith-1983]
-* Current, *JVST A* 1996 — sources, beam transport, dosimetry, charging
+* [Current, *JVST A* 1996](<https://doi.org/10.1116/1.580279>) — sources, beam transport, dosimetry, charging
   and cryopump safety from a vacuum perspective.[^current-1996]
-* Swenson et al., IIT 1996 — graphite and silicon beam-line shields
+* [Swenson et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586154>) — graphite and silicon beam-line shields
   against metals contamination.[^swenson-1996]
-* Krieger et al., *IEEE TED* 1989 — spacer shadowing of a 7° source/drain
+* [Krieger et al., *IEEE TED* 1989](<https://doi.org/10.1109/16.43667>) — spacer shadowing of a 7° source/drain
   implant.[^krieger-1989]
-* Yoneda and Niwayama, IWJT 2002 — 130 nm drain-current asymmetry from
+* [Yoneda and Niwayama, IWJT 2002](<https://doi.org/10.1109/IWJT.2002.1225190>) — 130 nm drain-current asymmetry from
   implanter angle error.[^yoneda-2002]
-* Tom and McManus (ATMI), US 5,518,528 — sub-atmospheric hydride sources
+* [Tom and McManus (ATMI), US 5,518,528](<https://patents.google.com/patent/US5518528A/en>) — sub-atmospheric hydride sources
   for implanters.[^pat-sds-atmi]
 
 ## Open questions

@@ -310,62 +310,62 @@ ambients are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the anneal and alloy
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the anneal and alloy
   entries quoted on this page.[^skw-01]
-* Tetreon Technologies, press release on Aviza's site (2004) — the sale
+* [Tetreon Technologies, press release on Aviza's site (2004)](<https://web.archive.org/web/20050309110126/http://www.avizatechnology.com:80/news/pressrel/110804.htm>) — the sale
   of the Thermco horizontal furnace line and its installed
   base.[^tetreon-htr-2004]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing — the anneal range of
+* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the anneal range of
   the vendor's 200 mm furnace.[^aviza-avp]
-* ASM International, A400 DUO press release (2019) — anneal processes on
+* [ASM International, A400 DUO press release (2019)](<https://web.archive.org/web/20241014215529/https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>) — anneal processes on
   the A400.[^asm-a400]
-* Tokyo Electron, *TELINDY Series* page — the ALPHA-8SE i for oxidation
+* [Tokyo Electron, *TELINDY Series* page](<https://www.tel.com/product/telindy.html>) — the ALPHA-8SE i for oxidation
   and annealing.[^tel-telindy]
-* Lyding and Hess (University of Illinois), US 5,872,387 — hydrogen and
+* [Lyding and Hess (University of Illinois), US 5,872,387](<https://patents.google.com/patent/US5872387A/en>) — hydrogen and
   deuterium sinters at about 400 °C.[^pat-deuterium-uiuc]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — a 30-minute,
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — a 30-minute,
   900 °C well anneal.[^pat-vt-lsi]
-* Lee and Son (Hynix), US 6,455,402 — an RTA well anneal for
+* [Lee and Son (Hynix), US 6,455,402](<https://patents.google.com/patent/US6455402B2/en>) — an RTA well anneal for
   comparison.[^pat-well-hynix]
 
 ### High-level understanding
 
-* Wikipedia, *Furnace anneal* — what furnace anneals do and why RTA
+* [Wikipedia, *Furnace anneal*](<https://en.wikipedia.org/wiki/Diffusion_furnace>) — what furnace anneals do and why RTA
   replaced many of them.[^wiki-furnace]
-* Wikipedia, *Forming gas* — composition, flammability and interface
+* [Wikipedia, *Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>) — composition, flammability and interface
   passivation.[^wiki-fg]
-* Wikipedia, *Thermal oxidation* — horizontal and vertical
+* [Wikipedia, *Thermal oxidation*](<https://en.wikipedia.org/wiki/Thermal_oxidation>) — horizontal and vertical
   furnaces.[^wiki-thox]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
   alloy anneal and its temperature range.[^txt-02]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — annealing and
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — annealing and
   interface charges.[^txt-01]
 
 ### Deep dive
 
-* Reed and Plummer, *J. Appl. Phys.* 1988 — kinetics and chemistry of
+* [Reed and Plummer, *J. Appl. Phys.* 1988](<https://doi.org/10.1063/1.340317>) — kinetics and chemistry of
   interface-trap annealing.[^reed-1988]
-* Stesmans, *Appl. Phys. Lett.* 1996 — passivation of P_b0 and P_b1
+* [Stesmans, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116308>) — passivation of P_b0 and P_b1
   defects by molecular hydrogen.[^stesmans-1996]
-* Brower, *Phys. Rev. B* 1990 — dissociation of hydrogen-passivated
+* [Brower, *Phys. Rev. B* 1990](<https://doi.org/10.1103/PhysRevB.42.3444>) — dissociation of hydrogen-passivated
   interface defects and the deuterium isotope effect.[^brower-1990]
-* Cartier, Stathis and Buchanan, *Appl. Phys. Lett.* 1993 — passivation
+* [Cartier, Stathis and Buchanan, *Appl. Phys. Lett.* 1993](<https://doi.org/10.1063/1.110758>) — passivation
   and depassivation by atomic hydrogen.[^cartier-1993]
-* Razouk and Deal, *J. Electrochem. Soc.* 1979 — interface states versus
+* [Razouk and Deal, *J. Electrochem. Soc.* 1979](<https://doi.org/10.1149/1.2129333>) — interface states versus
   anneal and cooling ambient.[^razouk-1979]
-* Lyding, Hess and Kizilyalli, *Appl. Phys. Lett.* 1996 — deuterium
+* [Lyding, Hess and Kizilyalli, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116172>) — deuterium
   sintering and hot-electron degradation.[^lyding-1996]
-* Kizilyalli et al., *IEEE EDL* 1998 — deuterium post-metal anneals in
+* [Kizilyalli et al., *IEEE EDL* 1998](<https://doi.org/10.1109/55.728907>) — deuterium post-metal anneals in
   multilevel-metal CMOS.[^kizilyalli-1998]
-* Sah, Sun and Tzou, *Appl. Phys. Lett.* 1983 — boron deactivation by
+* [Sah, Sun and Tzou, *Appl. Phys. Lett.* 1983](<https://doi.org/10.1063/1.94287>) — boron deactivation by
   hydrogen.[^sah-1983]
-* Maes, Usmani and Heyns, *J. Appl. Phys.* 1981 — hydrogen anneals and
+* [Maes, Usmani and Heyns, *J. Appl. Phys.* 1981](<https://doi.org/10.1063/1.329266>) — hydrogen anneals and
   nitride-memory retention.[^maes-1981]
-* Ohashi, Kubota and Nakajima, *IEEE EDL* 2007 — argon versus nitrogen
+* [Ohashi, Kubota and Nakajima, *IEEE EDL* 2007](<https://doi.org/10.1109/LED.2007.899328>) — argon versus nitrogen
   anneals after trench fill.[^ohashi-2007]
-* Stolk et al., *J. Appl. Phys.* 1997 — mechanisms of transient enhanced
+* [Stolk et al., *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — mechanisms of transient enhanced
   diffusion.[^stolk-1997]
-* Deal, *IEEE TED* 1980 — the standard terminology for oxide
+* [Deal, *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.19908>) — the standard terminology for oxide
   charges.[^deal-1980]
 
 ## Open questions

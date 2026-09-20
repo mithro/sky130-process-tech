@@ -287,15 +287,15 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the implanter dose
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the implanter dose
   ranges and the parametric tester; no sheet-resistance gauge.[^skw-01]
-* ITRS 2001, *Metrology* — four-point probe for high dose, modulated
+* [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — four-point probe for high dose, modulated
   reflectance for low dose, and the need for better
   methods.[^itrs-2001-met]
 * Tencor, OmniMap RS75 press release (1995) and *Resistivity Measurement*
   page (1997) — Prometrix four-point probes and the
   NC110.[^tencor-rs75-1995][^tencor-resistivity-1997]
-* KLA-Tencor, *RS-100* product page (2002) — the four-point probe for
+* [KLA-Tencor, *RS-100* product page (2002)](<https://web.archive.org/web/20020816223302/http://www.kla-tencor.com:80/products/metrology/rs-100/rs-100.html>) — the four-point probe for
   metals, CMP and diffusion.[^kla-rs100]
 * Therma-Wave, *Ion Implantation Monitoring*, *Therma-Probe Family*,
   products (1997) and corporate history pages — the thermal-wave
@@ -304,41 +304,41 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
 
 ### High-level understanding
 
-* Wikipedia, *Sheet resistance* — ohms per square, implanted layers,
+* [Wikipedia, *Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>) — ohms per square, implanted layers,
   four-point and eddy-current measurement.[^wiki-rs]
 * Wikipedia, *Four-terminal sensing*.[^wiki-4t]
-* Schroder, *Semiconductor Material and Device Characterization* — the
+* [Schroder, *Semiconductor Material and Device Characterization*](<https://doi.org/10.1002/0471749095>) — the
   reference text on resistivity measurement.[^schroder-2006]
 
 ### Deep dive
 
-* Valdes, *Proc. IRE* 1954 — the four-point probe.[^valdes-1954]
-* Smits, *Bell Syst. Tech. J.* 1958 — four-point-probe correction
+* [Valdes, *Proc. IRE* 1954](<https://doi.org/10.1109/JRPROC.1954.274680>) — the four-point probe.[^valdes-1954]
+* [Smits, *Bell Syst. Tech. J.* 1958](<https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>) — four-point-probe correction
   factors.[^smits-1958]
-* van der Pauw, *Philips Res. Rep.* 1958 — sheet resistance of arbitrary
+* [van der Pauw, *Philips Res. Rep.* 1958](<https://doi.org/10.1142/9789814503464_0017>) — sheet resistance of arbitrary
   shapes.[^vdp-1958]
-* SEMI MF84 — the in-line four-point-probe test method.[^semi-mf84]
-* Perloff, Wahl and Conragan, *JES* 1977 — automated four-point and van der
+* [SEMI MF84](<https://store-us.semi.org/products/mf008400-semi-mf84-test-method-for-measuring-resistivity-of-silicon-wafers-with-an-in-line-four-point-probe>) — the in-line four-point-probe test method.[^semi-mf84]
+* [Perloff, Wahl and Conragan, *JES* 1977](<https://doi.org/10.1149/1.2133355>) — automated four-point and van der
   Pauw doping-uniformity maps.[^perloff-1977]
-* Perloff and Mallory (Prometrix), US 4,703,252 — the automatic sheet
+* [Perloff and Mallory (Prometrix), US 4,703,252](<https://patents.google.com/patent/US4703252A/en>) — the automatic sheet
   resistance mapping system.[^pat-rsmap-prometrix]
-* Smith, Johnson and Keenan, *Proc. SPIE* 1986 — low-dose sheet
+* [Smith, Johnson and Keenan, *Proc. SPIE* 1986](<https://doi.org/10.1117/12.961194>) — low-dose sheet
   resistance monitoring with a double implant.[^smith-1986]
-* Miller, Robinson and Wiley, *Rev. Sci. Instrum.* 1976 — contactless
+* [Miller, Robinson and Wiley, *Rev. Sci. Instrum.* 1976](<https://doi.org/10.1063/1.1134756>) — contactless
   conductivity measurement by RF power absorption.[^miller-1976]
-* Rosencwaig et al. (Therma-Wave), US 4,579,463 — thermal waves detected
+* [Rosencwaig et al. (Therma-Wave), US 4,579,463](<https://patents.google.com/patent/US4579463A/en>) — thermal waves detected
   through reflectivity.[^pat-thermalwave-thermawave]
-* Rosencwaig et al., *APL* 1985 — detection of thermal waves through
+* [Rosencwaig et al., *APL* 1985](<https://doi.org/10.1063/1.95794>) — detection of thermal waves through
   optical reflectance.[^rosencwaig-1985]
-* Opsal and Rosencwaig, *APL* 1985 — thermal and plasma wave depth
+* [Opsal and Rosencwaig, *APL* 1985](<https://doi.org/10.1063/1.96105>) — thermal and plasma wave depth
   profiling in silicon.[^opsal-1985]
-* Opsal, Rosencwaig and Smith (Therma-Wave), US 4,854,710 — plasma-wave
+* [Opsal, Rosencwaig and Smith (Therma-Wave), US 4,854,710](<https://patents.google.com/patent/US4854710A/en>) — plasma-wave
   evaluation of dopants and defects.[^pat-plasmawave-thermawave]
-* Smith, Rosencwaig and Willenborg, *APL* 1985 — ion implant monitoring
+* [Smith, Rosencwaig and Willenborg, *APL* 1985](<https://doi.org/10.1063/1.96079>) — ion implant monitoring
   with thermal waves.[^smith-1985]
-* Sing, Borden and Bechtler, IIT 2000 — the BX-10 as a low- and high-dose
+* [Sing, Borden and Bechtler, IIT 2000](<https://doi.org/10.1109/IIT.2000.924234>) — the BX-10 as a low- and high-dose
   monitor.[^sing-2000]
-* Hillard, Borland and Ye, IWJT 2004 — a non-penetrating four-point probe
+* [Hillard, Borland and Ye, IWJT 2004](<https://doi.org/10.1109/IWJT.2004.1306768>) — a non-penetrating four-point probe
   for ultra-shallow junctions.[^hillard-2004]
 
 ## Open questions

@@ -374,65 +374,65 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Scribe:
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Scribe:
   Lumonics Superclean" entry, the absence of incoming inspection and
   sorting tools, and the "Other Services" substrates.[^skw-01]
-* SkyWater Technology, Form S-1 (2021) — the silicon-wafer
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — the silicon-wafer
   suppliers.[^sec-01]
-* Cypress Semiconductor, PIN152804 (2015) — GlobalWafer wafers qualified
+* [Cypress Semiconductor, PIN152804 (2015)](<https://media.futureelectronics.com/PCN/45887_SPCN.PDF>) — GlobalWafer wafers qualified
   for the S8 family at Fab 4.[^cyp-06]
-* LinkedIn, SkyWater *Defect Technician 2* posting — the SP1 in the defect
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the SP1 in the defect
   tool list.[^job-06]
-* KLA, *Surfscan SP1TBI Pro / SP1DLS Pro* brochure (2021) — the scanner
+* [KLA, *Surfscan SP1TBI Pro / SP1DLS Pro* brochure (2021)](<https://www.kla.com/documents/products/brochures/Surfscan_SP1.pdf>) — the scanner
   class's illumination modes, haze maps, IQC role and sorting
   stations.[^kla-sp1-2021]
-* KLA-Tencor, *Surfscan SP1 DLS* product page (2002 capture) — the 200
+* [KLA-Tencor, *Surfscan SP1 DLS* product page (2002 capture)](<https://web.archive.org/web/20020208135136/http://www.kla-tencor.com:80/products/defect_control/surfscan-sp1/surfscan.html>) — the 200
   mm/300 mm scanner of the 0.13 µm generation.[^kla-sp1dls-2002]
-* Thinklaser USA, *SigmaClean* — a 100–200 mm soft-mark laser marker, its
+* [Thinklaser USA, *SigmaClean*](<https://www.thinklaserusa.com/sigmaclean>) — a 100–200 mm soft-mark laser marker, its
   SEMI compliance and facilities.[^thinklaser-sigmaclean]
-* CAE, *GSI Lumonics WaferMark SuperClean* listing — the model name,
+* [CAE, *GSI Lumonics WaferMark SuperClean* listing](<https://caeonline.com/buy/marking-machines/gsi-lumonics-wafermark-superclean/293743883>) — the model name,
   wafer size and vintage.[^cae-wafermark-superclean]
-* Wafer Handling Systems, *WHS-T4* — a 200 mm sorter with notch aligner
+* [Wafer Handling Systems, *WHS-T4*](<https://www.waferhandlingsystems.com/product/2-cassette-automation-sorter-with-ocr-whs-t4-200-mm-8/287/>) — a 200 mm sorter with notch aligner
   and ID reader.[^whs-t4]
 * SEMI M1, M12 and M13 — polished wafers and the alphanumeric wafer
   marks.[^semi-m1][^semi-m12][^semi-m13]
 
 ### High-level understanding
 
-* Wikipedia, *Wafer (electronics)* — wafer sizes, thickness and the
+* [Wikipedia, *Wafer (electronics)*](<https://en.wikipedia.org/wiki/Wafer_(electronics)>) — wafer sizes, thickness and the
   notch.[^wiki-wafer]
-* Wikipedia, *KLA Corporation* — the inspection vendor.[^wiki-kla]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — a
+* [Wikipedia, *KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the inspection vendor.[^wiki-kla]
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — a
   fab-floor view of wafer handling and inspection.[^txt-07]
-* SEMI M8 — the looser specification for test wafers.[^semi-m8]
-* Shimura, *Semiconductor Silicon Crystal Technology* — the crystal
+* [SEMI M8](<https://store-us.semi.org/products/m00800-semi-m8-specification-for-polished-monocrystalline-silicon-test-wafers>) — the looser specification for test wafers.[^semi-m8]
+* [Shimura, *Semiconductor Silicon Crystal Technology*](<https://openlibrary.org/isbn/9780126400458>) — the crystal
   defects behind incoming inspection.[^shimura-1989]
 
 ### Deep dive
 
-* Liu, Chae and Bae, *JES* 1993 — sizing and counting efficiency of a
+* [Liu, Chae and Bae, *JES* 1993](<https://doi.org/10.1149/1.2221569>) — sizing and counting efficiency of a
   Surfscan 4000 for PSL and real particles.[^liu-1993]
-* Huff et al., *JES* 1997 — a SEMATECH study of particle sizing, haze
+* [Huff et al., *JES* 1997](<https://doi.org/10.1149/1.1837392>) — a SEMATECH study of particle sizing, haze
   and angle-resolved scattering in laser surface scanners.[^huff-1997]
-* Scheer, *Proc. SPIE* 1996 — a physical haze and microroughness
+* [Scheer, *Proc. SPIE* 1996](<https://doi.org/10.1117/12.256193>) — a physical haze and microroughness
   standard.[^scheer-1996]
-* Ryuta et al., *JJAP* 1990 — SC-1 pits counted as particles.[^ryuta-1990]
-* Ishii et al., *JJAP* 1996 — single and pair COP pits and gate-oxide
+* [Ryuta et al., *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.L1947>) — SC-1 pits counted as particles.[^ryuta-1990]
+* [Ishii et al., *JJAP* 1996](<https://doi.org/10.1143/JJAP.35.L1385>) — single and pair COP pits and gate-oxide
   reliability.[^ishii-1996]
-* Miyazaki et al., *JJAP* 1997 — COP microstructure and gate-oxide
+* [Miyazaki et al., *JJAP* 1997](<https://doi.org/10.1143/JJAP.36.6187>) — COP microstructure and gate-oxide
   integrity.[^miyazaki-1997]
-* Christ and Maurantonio, ASTM *Silicon Processing* 1983 — slip, slag
+* [Christ and Maurantonio, ASTM *Silicon Processing* 1983](<https://doi.org/10.1520/STP36160S>) — slip, slag
   and particles from laser marks.[^christ-1983]
-* Kuhn-Kuhnenfeld, Kramler and Gerber (Wacker Siltronic), US 4,522,656
+* [Kuhn-Kuhnenfeld, Kramler and Gerber (Wacker Siltronic), US 4,522,656](<https://patents.google.com/patent/US4522656A/en>)
   — slag-free laser marking by melting only the centre of the irradiated
   spot.[^pat-lasermark-wacker]
-* Khoong et al., *JAP* 2010 — the surface change a laser soft mark
+* [Khoong et al., *JAP* 2010](<https://doi.org/10.1063/1.3319611>) — the surface change a laser soft mark
   leaves.[^khoong-2010]
-* Caspary and Kaulfuss (Infineon), US 6,747,230 — sorting wafers by
+* [Caspary and Kaulfuss (Infineon), US 6,747,230](<https://patents.google.com/patent/US6747230B2/en>) — sorting wafers by
   reading their identifiers.[^pat-sorter-infineon]
-* Smits, *Bell Syst. Tech. J.* 1958 — four-point-probe resistivity and
+* [Smits, *Bell Syst. Tech. J.* 1958](<https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>) — four-point-probe resistivity and
   its correction factors.[^smits-1958]
-* Kern, *JES* 1990 — the cleaning that incoming wafers receive and the
+* [Kern, *JES* 1990](<https://doi.org/10.1149/1.2086825>) — the cleaning that incoming wafers receive and the
   equipment that performs it.[^kern-1990]
 
 :::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read

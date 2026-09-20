@@ -366,76 +366,76 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "AMAT Mirra CMP"
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "AMAT Mirra CMP"
   entry, its processes and the lines that follow it.[^skw-01]
-* SkyWater Technology, Form S-1 (2021) — the raw-material suppliers, none
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — the raw-material suppliers, none
   for slurry or pads.[^sec-01]
-* Applied Materials, *1997 Annual Report* — the Mirra's announcement,
+* [Applied Materials, *1997 Annual Report*](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the Mirra's announcement,
   architecture and Titan Head.[^amat-1997]
-* Applied Materials, 500th Mirra press release (2000) — the installed base
+* [Applied Materials, 500th Mirra press release (2000)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-ships-500th-mirra-cmp-system-success-mirra/>) — the installed base
   and the Mesa and metrology additions.[^amat-mirra-500-2000]
-* Applied Materials, Mirra Mesa press release (1999) — polishing and
+* [Applied Materials, Mirra Mesa press release (1999)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>) — polishing and
   cleaning on one dry-in/dry-out system.[^amat-mesa-1999]
-* IPEC-Planar, *AVANTI 472* (1997 capture) — a single-wafer, two-platen
+* [IPEC-Planar, *AVANTI 472* (1997 capture)](<https://web.archive.org/web/19970626104141/http://www.ipec.com:80/planar/472.html>) — a single-wafer, two-platen
   200 mm polisher and its conditioner and slurry system.[^ipec-472-1997]
-* IPEC-Planar, *AvantGaard 676 Highlights* (1997 capture) — a four-module
+* [IPEC-Planar, *AvantGaard 676 Highlights* (1997 capture)](<https://web.archive.org/web/19970626104827/http://www.ipec.com:80/planar/676-spec.html>) — a four-module
   polisher with integrated spray-box cleaning.[^ipec-676-1997]
-* SpeedFam-IPEC, *CMP Products* (2001 capture) — the Momentum, Auriga and
+* [SpeedFam-IPEC, *CMP Products* (2001 capture)](<https://web.archive.org/web/20010412141846/http://www.ipec.com:80/cmp/products.htm>) — the Momentum, Auriga and
   AvantGaard 776, zonal carriers, endpoint and integrated
   cleaners.[^speedfam-ipec-2001]
-* Strasbaugh, *6DS-SP Series Planarizers* and *Model 6EC* (1999
+* Strasbaugh, [*6DS-SP Series Planarizers*](<https://web.archive.org/web/19990210100559/http://www.strasbaugh.com:80/cmp1.htm>) and [*Model 6EC*](<https://web.archive.org/web/19990210113246/http://www.strasbaugh.com:80/cmp2.htm>) (1999
   captures) — a dual-spindle production polisher and a laboratory
   one.[^strasbaugh-6ds-1999][^strasbaugh-6ec-1999]
-* Lam Research, 1,000th post-CMP clean system press release (2001) — a
+* [Lam Research, 1,000th post-CMP clean system press release (2001)](<https://investor.lamresearch.com/2001-02-14-Lam-Research-Ships-1,000th-Post-CMP-Clean-System-To-Philips>) — a
   Synergy Integra cleaner on a Teres polisher.[^lam-clean-1000-2001]
-* EBARA Precision Machinery Europe, *CMP Tools* — the
+* [EBARA Precision Machinery Europe, *CMP Tools*](<https://www.ebara-pm.eu/systems/cmp-tools/>) — the
   F-REX200M2.[^ebara-frex]
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing* — the tool, pad, carrier,
+* [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>) — the tool, pad, carrier,
   retaining ring and endpoint problem.[^wiki-cmp]
-* Chip History Center, *The Mirra CMP System* — the Mirra in the history
+* [Chip History Center, *The Mirra CMP System*](<https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>) — the Mirra in the history
   of CMP equipment.[^chiphistory-mirra]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization of
-  Microelectronic Materials* — the standard monograph.[^steigerwald-1997]
-* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
-  Materials* — chapters on oxide, tungsten and STI CMP, pads and
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization of
+  Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>) — the standard monograph.[^steigerwald-1997]
+* [Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials*](<https://doi.org/10.1007/978-3-662-06234-0>) — chapters on oxide, tungsten and STI CMP, pads and
   slurries.[^oliver-2004]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry chemistry and
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry chemistry and
   mechanisms.[^rev-02]
 
 ### Deep dive
 
-* Tolles et al. (Applied Materials), US 5,738,574 — a carousel
+* [Tolles et al. (Applied Materials), US 5,738,574](<https://patents.google.com/patent/US5738574A/en>) — a carousel
   multi-platen polisher whose layout matches the Mirra's.[^pat-cmp-mirra]
-* Zuniga et al. (Applied Materials), US 6,183,354 — a flexible-membrane
+* [Zuniga et al. (Applied Materials), US 6,183,354](<https://patents.google.com/patent/US6183354B1/en>) — a flexible-membrane
   carrier head for uniform load.[^pat-carrier-amat]
-* Pant et al. (Lam Research), US 6,425,812 — a polishing head for a linear
+* [Pant et al. (Lam Research), US 6,425,812](<https://patents.google.com/patent/US6425812B1/en>) — a polishing head for a linear
   polisher, with the Teres as example.[^pat-linear-lam]
-* Lustig, Saenger and Tong (IBM), US 5,433,651 — in-situ reflectance
+* [Lustig, Saenger and Tong (IBM), US 5,433,651](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>) — in-situ reflectance
   endpoint through a window in the table.[^pat-cmp-endpoint-ibm]
-* Birang, Gleason and Guthrie (Applied Materials), US 5,893,796 — a
+* [Birang, Gleason and Guthrie (Applied Materials), US 5,893,796](<https://patents.google.com/patent/US5893796A/en>) — a
   transparent window in the polishing pad.[^pat-cmp-window]
 * Preston, *J. Soc. Glass Technol.* 1927 — the removal-rate law (no online
   copy is known).[^preston-1927]
-* Luo and Dornfeld, *IEEE TSM* 2001 — an abrasive-contact model of
+* [Luo and Dornfeld, *IEEE TSM* 2001](<https://doi.org/10.1109/66.920723>) — an abrasive-contact model of
   removal rate.[^luo-2001]
-* Runnels and Eyman, *JES* 1994 — hydroplaning of the wafer on the
+* [Runnels and Eyman, *JES* 1994](<https://doi.org/10.1149/1.2054985>) — hydroplaning of the wafer on the
   pad.[^runnels-1994]
-* Stein, Hetherington and Cecchi, *JES* 1999 — tungsten polish rate and
+* [Stein, Hetherington and Cecchi, *JES* 1999](<https://doi.org/10.1149/1.1391617>) — tungsten polish rate and
   temperature against slurry and machine settings.[^stein-1999]
-* Nanz and Camilletti, *IEEE TSM* 1995 — a review of CMP
+* [Nanz and Camilletti, *IEEE TSM* 1995](<https://doi.org/10.1109/66.475179>) — a review of CMP
   models.[^nanz-1995]
-* Stine et al., *IEEE TSM* 1998 — test masks and pattern-density models of
+* [Stine et al., *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — test masks and pattern-density models of
   oxide CMP.[^stine-1998]
-* Bibby and Holland, *J. Electron. Mater.* 1998 — endpoint detection for
+* [Bibby and Holland, *J. Electron. Mater.* 1998](<https://doi.org/10.1007/s11664-998-0140-1>) — endpoint detection for
   CMP.[^bibby-1998]
-* Kwon, Ramachandran and Park, *Friction* 2013 — scratch formation in CMP
+* [Kwon, Ramachandran and Park, *Friction* 2013](<https://doi.org/10.1007/s40544-013-0026-y>) — scratch formation in CMP
   and its reduction.[^kwon-2013]
-* Ollendorf, Cabral and Fuller, ASMC 2004 — tungsten-filled microscratches
+* [Ollendorf, Cabral and Fuller, ASMC 2004](<https://doi.org/10.1109/ASMC.2004.1309523>) — tungsten-filled microscratches
   and a post-CMP plasma clean.[^ollendorf-2004]
-* Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004 — a long review of
+* [Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004](<https://doi.org/10.1016/j.mser.2004.06.002>) — a long review of
   CMP for microelectronics.[^zantye-2004]
 
 ## Open questions

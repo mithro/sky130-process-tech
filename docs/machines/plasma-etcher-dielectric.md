@@ -318,79 +318,79 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the etch groups
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the etch groups
   (no dielectric etcher), the three poly/silicon entries and the
   physical-analysis RIE tool.[^skw-01]
-* SkyWater Technology, Form S-1 (2021) — the fab and sort tool count,
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — the fab and sort tool count,
   larger than the list of named tools.[^sec-01]
-* Applied Materials, 1997 annual report (Form 10-K) — dates of the
+* [Applied Materials, 1997 annual report (Form 10-K)](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — dates of the
   Precision 5000, HDP, MxP, eMxP+ and IPS dielectric etchers.[^amat-1997]
-* Applied Materials, 300 mm etch product line press release (2000) —
+* [Applied Materials, 300 mm etch product line press release (2000)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-300mm-etch-product-line>) —
   the eMax and IPS dielectric etchers and their
   applications.[^amat-300-etch-2000]
-* Lam Research, Exelan High Performance press release (2001) — the
+* [Lam Research, Exelan High Performance press release (2001)](<https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>) — the
   200 mm Exelan and its dual-frequency confined source.[^lam-exelan]
-* Lam Research, 2300 Etch Series press release (2000) — the 2300 Exelan
+* [Lam Research, 2300 Etch Series press release (2000)](<https://newsroom.lamresearch.com/2000-11-16-Lam-Research-Corporation-Launches-Industrys-First-200-And-300-Mm-Capable-Etch-Product-Line>) — the 2300 Exelan
   and its applications.[^lam-2300-2000]
-* Allwin21, *Lam Rainbow 45XX Plasma Etcher* — the parallel-plate oxide
+* [Allwin21, *Lam Rainbow 45XX Plasma Etcher*](<https://allwin21.com/lam-rainbow-45xx-plasma-etcher/>) — the parallel-plate oxide
   etcher and its contact, spacer and nitride
   recipes.[^allwin-rainbow-4500]
-* Cheng et al. (Applied Materials), US 4,842,683 — the
+* [Cheng et al. (Applied Materials), US 4,842,683](<https://patents.google.com/patent/US4842683A/en>) — the
   magnetic-field-enhanced single-wafer etch reactor.[^pat-merie-amat]
-* Tokyo Electron and National Semiconductor, US 6,376,262 — the 387 nm
+* [Tokyo Electron and National Semiconductor, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — the 387 nm
   CN emission line as the nitride endpoint.[^pat-endpoint-tel]
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching* — the capacitive reactor and its
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — the capacitive reactor and its
   self-bias.[^wiki-rie]
-* Wikipedia, *Fluoroform* and *Hexafluoroethane* — two fluorocarbon
+* Wikipedia, [*Fluoroform*](<https://en.wikipedia.org/wiki/Fluoroform>) and [*Hexafluoroethane*](<https://en.wikipedia.org/wiki/Hexafluoroethane>) — two fluorocarbon
   etch gases and their greenhouse impact.[^wiki-chf3][^wiki-c2f6]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 10 on
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 10 on
   etching.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — dry
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — dry
   etching of oxide and nitride.[^txt-02]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — capacitive, magnetically enhanced and
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — capacitive, magnetically enhanced and
   inductive sources.[^lieberman-2005]
 
 ### Deep dive
 
-* Donnelly and Kornblit, *JVST A* 2013 — a review of plasma etching,
+* [Donnelly and Kornblit, *JVST A* 2013](<https://doi.org/10.1116/1.4819316>) — a review of plasma etching,
   including silicon dioxide.[^donnelly-2013]
-* Oehrlein et al., *JVST A* 1994 (I) — fluorocarbon film deposition in
+* [Oehrlein et al., *JVST A* 1994 (I)](<https://doi.org/10.1116/1.578876>) — fluorocarbon film deposition in
   CF₄ and CHF₃ high-density plasmas.[^oehrlein-1994]
-* Oehrlein et al., *JVST A* 1994 (II) — thresholds, film thickness and
+* [Oehrlein et al., *JVST A* 1994 (II)](<https://doi.org/10.1116/1.578877>) — thresholds, film thickness and
   SiO₂-to-Si selectivity in CF₄ and CHF₃.[^oehrlein-1994b]
-* Standaert et al., *JVST A* 1998 — etching through a steady-state
+* [Standaert et al., *JVST A* 1998](<https://doi.org/10.1116/1.580978>) — etching through a steady-state
   fluorocarbon layer.[^standaert-1998]
-* Schaepkens et al., *JVST A* 1999 — the SiO₂-to-Si₃N₄ selectivity
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — the SiO₂-to-Si₃N₄ selectivity
   mechanism.[^schaepkens-1999]
-* Perry et al., *JVST A* 2001 — oxide etch rates, resist selectivity and
+* [Perry et al., *JVST A* 2001](<https://doi.org/10.1116/1.1382874>) — oxide etch rates, resist selectivity and
   radical densities in an inductive C₂F₆ plasma.[^perry-2001]
-* Coburn and Winters, *APL* 1989 — conductance limits in
+* [Coburn and Winters, *APL* 1989](<https://doi.org/10.1063/1.101937>) — conductance limits in
   high-aspect-ratio features.[^coburn-1989]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — ARDE and
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — ARDE and
   microloading.[^gottscho-1992]
-* Doemling, Rueger and Oehrlein, *APL* 1996 — inverse RIE lag in oxide
+* [Doemling, Rueger and Oehrlein, *APL* 1996](<https://doi.org/10.1063/1.116772>) — inverse RIE lag in oxide
   etching.[^doemling-1996]
-* Regis et al., ASMC 1997 — a nitride spacer etch in an MxP+ MERIE
+* [Regis et al., ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — a nitride spacer etch in an MxP+ MERIE
   chamber.[^regis-1997]
-* Goss and Thornburg, ASMC 1997 — nitride spacer processing for
+* [Goss and Thornburg, ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630740>) — nitride spacer processing for
   0.35 µm CMOS.[^goss-1997]
-* Blanc et al., *JVST B* 2013 — silicon recess in CH₃F/O₂/He spacer
+* [Blanc et al., *JVST B* 2013](<https://doi.org/10.1116/1.4816466>) — silicon recess in CH₃F/O₂/He spacer
   etching.[^blanc-2013]
-* Kastenmeier et al., *JVST A* 1996 — downstream CF₄/O₂/N₂ etching of
+* [Kastenmeier et al., *JVST A* 1996](<https://doi.org/10.1116/1.580203>) — downstream CF₄/O₂/N₂ etching of
   nitride and oxide.[^kastenmeier-1996]
-* Kastenmeier et al., *JVST A* 1998 — remote NF₃/O₂ etching of nitride
+* [Kastenmeier et al., *JVST A* 1998](<https://doi.org/10.1116/1.581309>) — remote NF₃/O₂ etching of nitride
   and oxide.[^kastenmeier-1998]
-* Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999 — highly selective
+* [Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999](<https://doi.org/10.1116/1.582097>) — highly selective
   nitride removal over silicon and oxide.[^kastenmeier-1999]
-* Lee and Chen, *JAP* 1983 — chemical and ion-enhanced components of
+* [Lee and Chen, *JAP* 1983](<https://doi.org/10.1063/1.331774>) — chemical and ion-enhanced components of
   CF₄/O₂ reactive ion etching.[^lee-chen-1983]
-* Wodecki, *Proc. SPIE* 1999 — endpoint on low-open-area dielectric
+* [Wodecki, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.361313>) — endpoint on low-open-area dielectric
   etches in a Rainbow 4520.[^wodecki-1999]
-* Hashimoto, *JJAP* 1994 — electron-shading charge damage through
+* [Hashimoto, *JJAP* 1994](<https://doi.org/10.1143/JJAP.33.6013>) — electron-shading charge damage through
   high-aspect-ratio openings.[^hashimoto-1994]
 
 ## Open questions

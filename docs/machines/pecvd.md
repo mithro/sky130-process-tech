@@ -435,96 +435,96 @@ pressures, thicknesses and chemistries are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the three PECVD
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the three PECVD
   entries and their sub-entries quoted on this page.[^skw-01]
 * Novellus Systems, *Dielectric – PECVD Solutions* (1998 and 2002
   captures) — the Concept One, MAXUS, Sequel and VECTOR systems and
   multi-station deposition.[^novellus-pecvd-1998][^novellus-pecvd-2002]
-* Applied Materials, *PECVD* product page (2001) — the Producer's twin
+* [Applied Materials, *PECVD* product page (2001)](<https://web.archive.org/web/20010817124824/http://www.appliedmaterials.com:80/products/pecvd.html>) — the Producer's twin
   chambers.[^amat-producer-2001]
-* Applied Materials, *Producer SE* page (2001) — the Producer's 1998
+* [Applied Materials, *Producer SE* page (2001)](<https://web.archive.org/web/20010817134045/http://www.appliedmaterials.com:80/products/producer_se.html>) — the Producer's 1998
   introduction and the remote clean.[^amat-producer-se-2001]
 * Applied Materials, Producer film pages (2002) — PECVD TEOS oxide, TEOS
   PSG and nitride
   applications.[^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002]
-* Applied Materials, *SACVD* product page (2000) — TEOS–ozone
+* [Applied Materials, *SACVD* product page (2000)](<https://web.archive.org/web/20000709131617/http://www.appliedmaterials.com:80/products/sacvd.html>) — TEOS–ozone
   sub-atmospheric CVD and the Giga-Fill chamber.[^amat-sacvd-2000]
-* Applied Materials, *1997 Annual Report* — dates of the Precision 5000,
+* [Applied Materials, *1997 Annual Report*](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — dates of the Precision 5000,
   SACVD and DxZ products and the Novellus settlement.[^amat-1997]
-* Wang et al. (Applied Materials), US 5,000,113 — a single-wafer
+* [Wang et al. (Applied Materials), US 5,000,113](<https://patents.google.com/patent/US5000113A/en>) — a single-wafer
   thermal and plasma CVD reactor and its TEOS processes.[^pat-p5000-amat]
 * SkyWater PDK Authors, *Device Details* and `metal_stack.svg` — the MiM
   capacitor construction and the passivation layers.[^pdk-07][^pdk-04]
-* Cypress Semiconductor, QTP 014807 — a TEOS and PECVD nitride
+* [Cypress Semiconductor, QTP 014807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>) — a TEOS and PECVD nitride
   passivation from the Bloomington fab.[^cyp-qtp-014807]
-* Trikon Technologies, Form 10-K for 1996 — the Delta 201 CVD system
+* [Trikon Technologies, Form 10-K for 1996](<http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>) — the Delta 201 CVD system
   and its Electrotech origin.[^trikon-10k-1996]
 
 ### High-level understanding
 
-* Semiconductor Today, *Sumitomo Precision Products completes
-  acquisition of Aviza* (2009) — the Electrotech, Trikon, Aviza and SPTS
+* [Semiconductor Today, *Sumitomo Precision Products completes
+  acquisition of Aviza* (2009)](<https://www.semiconductor-today.com/news_items/2009/OCT/STS_191009.htm>) — the Electrotech, Trikon, Aviza and SPTS
   lineage.[^semitoday-spts-2009]
-* Wikipedia, *Plasma-enhanced chemical vapor deposition* — discharges,
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>) — discharges,
   excitation frequencies and the films.[^wiki-pecvd]
-* Wikipedia, *Silane*, *Tetraethyl orthosilicate* and *Nitrogen
-  trifluoride* — the precursors and the clean gas.[^wiki-silane][^wiki-teos][^wiki-nf3]
-* Wikipedia, *Novellus Systems* — the vendor and its acquisition by
+* Wikipedia, [*Silane*](<https://en.wikipedia.org/wiki/Silane>), [*Tetraethyl orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>) and [*Nitrogen
+  trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) — the precursors and the clean gas.[^wiki-silane][^wiki-teos][^wiki-nf3]
+* [Wikipedia, *Novellus Systems*](<https://en.wikipedia.org/wiki/Novellus_Systems>) — the vendor and its acquisition by
   Lam.[^wiki-novellus]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the Concept One and
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Concept One and
   Concept Two history.[^novellus-history]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — CVD and PECVD
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — CVD and PECVD
   films.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — CVD
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — CVD
   dielectrics and the back-end thermal limit.[^txt-02]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — capacitive discharges and plasma
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — capacitive discharges and plasma
   deposition.[^lieberman-2005]
 
 ### Deep dive
 
-* Adams et al., *J. Electrochem. Soc.* 1981 — silane–N₂O plasma oxide
+* [Adams et al., *J. Electrochem. Soc.* 1981](<https://doi.org/10.1149/1.2127680>) — silane–N₂O plasma oxide
   in a radial-flow reactor.[^adams-1981-pecvd]
-* Raupp, Cale and Hey, *JVST B* 1992 — ion-assisted and oxygen-atom
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — ion-assisted and oxygen-atom
   pathways in plasma TEOS oxide.[^raupp-1992]
-* Nguyen et al., *J. Electrochem. Soc.* 1990 — plasma and thermal TEOS
+* [Nguyen et al., *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086914>) — plasma and thermal TEOS
   oxide in a single-wafer reactor.[^nguyen-1990]
-* Smith et al., *J. Electrochem. Soc.* 1990 — the precursors of plasma
+* [Smith et al., *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086517>) — the precursors of plasma
   nitride in silane–ammonia discharges.[^smith-1990]
-* Lanford and Rand, *JAP* 1978 — the hydrogen content of plasma
+* [Lanford and Rand, *JAP* 1978](<https://doi.org/10.1063/1.325095>) — the hydrogen content of plasma
   nitride.[^lanford-1978]
-* Chow et al., *JAP* 1982 — hydrogen in nitrides from nine commercial
+* [Chow et al., *JAP* 1982](<https://doi.org/10.1063/1.331445>) — hydrogen in nitrides from nine commercial
   reactors.[^chow-1982]
-* Sinha et al., *J. Electrochem. Soc.* 1978 — plasma nitride for
+* [Sinha et al., *J. Electrochem. Soc.* 1978](<https://doi.org/10.1149/1.2131509>) — plasma nitride for
   passivation.[^sinha-1978]
-* Cotler and Chapple-Sokol, *J. Electrochem. Soc.* 1993 — PECVD nitride
+* [Cotler and Chapple-Sokol, *J. Electrochem. Soc.* 1993](<https://doi.org/10.1149/1.2220766>) — PECVD nitride
   against LPCVD nitride.[^cotler-1993]
-* Denisse et al., *JAP* 1986 — composition and stress of plasma
+* [Denisse et al., *JAP* 1986](<https://doi.org/10.1063/1.337117>) — composition and stress of plasma
   oxynitrides.[^denisse-1986]
-* Van de Ven, Connick and Harrus, VMIC 1990 — dual-frequency PECVD of
+* [Van de Ven, Connick and Harrus, VMIC 1990](<https://doi.org/10.1109/VMIC.1990.127865>) — dual-frequency PECVD of
   ILD and passivation films.[^van-de-ven-1990]
-* Pearce et al., *JAP* 1992 — nitride properties with 270 kHz and
+* [Pearce et al., *JAP* 1992](<https://doi.org/10.1063/1.351396>) — nitride properties with 270 kHz and
   13.56 MHz supplies.[^pearce-1992]
-* Fujino et al., *J. Electrochem. Soc.* 1990 — TEOS–ozone oxide and its
+* [Fujino et al., *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2087093>) — TEOS–ozone oxide and its
   flow-like step coverage.[^fujino-1990]
-* Kwok et al., *J. Electrochem. Soc.* 1994 — surface sensitivity of
+* [Kwok et al., *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2055081>) — surface sensitivity of
   SACVD oxide on PECVD underlayers.[^kwok-1994]
-* Sobolewski, Langan and Felker, *JVST B* 1998 — electrical behaviour of
+* [Sobolewski, Langan and Felker, *JVST B* 1998](<https://doi.org/10.1116/1.589774>) — electrical behaviour of
   PECVD chamber-clean plasmas.[^sobolewski-1998]
-* Allgood et al., *J. Electrochem. Soc.* 2003 — chamber-clean chemistry
+* [Allgood et al., *J. Electrochem. Soc.* 2003](<https://doi.org/10.1149/1.1535911>) — chamber-clean chemistry
   in a Novellus Concept One 200.[^allgood-2003]
-* Fong et al. (Applied Materials), US 5,812,403 — a remote microwave
+* [Fong et al. (Applied Materials), US 5,812,403](<https://patents.google.com/patent/US5812403A/en>) — a remote microwave
   plasma chamber clean.[^pat-rpc-amat]
-* Cheung, P2ID 2000 — the charging mechanism in plasma dielectric
+* [Cheung, P2ID 2000](<https://doi.org/10.1109/PPID.2000.870658>) — the charging mechanism in plasma dielectric
   deposition.[^cheung-2000]
-* Kar-Roy et al., IITC 1999 — PECVD nitride MiM capacitors in a
+* [Kar-Roy et al., IITC 1999](<https://doi.org/10.1109/IITC.1999.787134>) — PECVD nitride MiM capacitors in a
   0.25 µm back end.[^kar-roy-1999]
-* Babcock et al., *IEEE EDL* 2001 — dispersion in nitride MiM
+* [Babcock et al., *IEEE EDL* 2001](<https://doi.org/10.1109/55.919238>) — dispersion in nitride MiM
   capacitors.[^babcock-2001]
-* Van Huylenbroeck et al., *IEEE EDL* 2002 — PECVD dielectrics for
+* [Van Huylenbroeck et al., *IEEE EDL* 2002](<https://doi.org/10.1109/55.992835>) — PECVD dielectrics for
   non-dispersive MiM capacitors.[^van-huylenbroeck-2002]
-* D'Cruz, Bencher and Ngai (Applied Materials), PECVD nitride white
-  paper — thin nitrides for etch stops, barriers and MIM
+* [D'Cruz, Bencher and Ngai (Applied Materials), PECVD nitride white
+  paper](<https://web.archive.org/web/20030308041708/http://www.appliedmaterials.com:80/products/assets/dielectric/pecvd_sin_performance.pdf>) — thin nitrides for etch stops, barriers and MIM
   capacitors.[^amat-sin-wp]
 
 ## Open questions

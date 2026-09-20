@@ -429,95 +429,95 @@ Notes on the table:
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — every SkyWater tool
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — every SkyWater tool
   name, chemistry, dose range and capability quoted on this
   page.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician* — the captions naming a Novellus high density plasma tool
+* [SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
+  Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — the captions naming a Novellus high density plasma tool
   and a SEZ etcher tool.[^skw-07]
-* LinkedIn, SkyWater *Defect Technician 2* posting — the defect-metrology
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology
   tool list read as KLA-Tencor AIT and SP1.[^job-06]
-* SkyWater Technology, Form S-1 (2021) — tool count, capacity and
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — tool count, capacity and
   raw-material suppliers; no process-tool supplier named.[^sec-01]
-* SkyWater Technology, Form 10-K for 2023 — the 90–350 nm flows in the
+* [SkyWater Technology, Form 10-K for 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — the 90–350 nm flows in the
   Minnesota fab and the 2020 deep-trench etch addition.[^sec-02]
-* Lam Research, Form 10-K for fiscal 2003 — the {term}`TCP` 9400, 2300 and
+* [Lam Research, Form 10-K for fiscal 2003](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the {term}`TCP` 9400, 2300 and
   Exelan product lines named on the etch pages.[^lam-10k]
-* Axcelis Technologies, *GSD Ovation* product page — the GSD
+* [Axcelis Technologies, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — the GSD
   high-current and high-energy batch implanter family.[^axcelis-gsd-page]
-* Applied Materials, *Endura PVD* product page — the platform the PVD
+* [Applied Materials, *Endura PVD* product page](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>) — the platform the PVD
   pages read "AMAT PVD Metal" as.[^amat-endura]
 
 ### High-level understanding
 
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — a
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — a
   fab-floor view of each tool class, written around a 200 mm fab of the
   period.[^txt-07]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
   unit processes the tool classes perform.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — STI, CMP,
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — STI, CMP,
   tungsten plugs, DUV lithography and RTP for the 0.25–0.13 µm
   generations.[^txt-05]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapter-per-process reference with equipment
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapter-per-process reference with equipment
   detail.[^txt-09]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the history of the
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the history of the
   Concept One and Two, Sequel, SPEED and Altus product lines the
   deposition pages refer to.[^novellus-history]
-* Wikipedia, *Axcelis Technologies* and *KLA Corporation* — the
+* Wikipedia, [*Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>) and [*KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the
   implanter and inspection vendors behind several listed
   tools.[^wiki-axcelis][^wiki-kla]
 
 ### Deep dive
 
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — the
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — the
   lamp-heated rapid thermal processing chamber.[^pat-rtp-amat]
-* Nulman, Krusius and Gat, *IEEE EDL* 1985 — rapid thermal oxidation of
+* [Nulman, Krusius and Gat, *IEEE EDL* 1985](<https://doi.org/10.1109/EDL.1985.26099>) — rapid thermal oxidation of
   thin gate dielectrics, the single-wafer alternative to the
   furnace.[^nulman-1985]
-* SemiStar, *AG Associates Heatpulse 8800 / 8808* — reseller
+* [SemiStar, *AG Associates Heatpulse 8800 / 8808*](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) — reseller
   specification of the RTP family SkyWater lists.[^ag-8800]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing — the vendor's 200 mm
+* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the vendor's 200 mm
   vertical batch furnace.[^aviza-avp]
-* Tan, Li and Zygmunt (Applied Materials), US 6,914,016 — HDP-CVD gap
+* [Tan, Li and Zygmunt (Applied Materials), US 6,914,016](<https://patents.google.com/patent/US6914016B2/en>) — HDP-CVD gap
   fill of high-aspect-ratio gaps.[^pat-hdp-amat]
-* Lee and Collins (Novellus), US 6,635,965 — the pulsed nucleation
+* [Lee and Collins (Novellus), US 6,635,965](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6635965>) — the pulsed nucleation
   layer behind SkyWater's "PNL option".[^pat-pnl-novellus]
-* Gopalraja et al. (Applied Materials), US 6,350,353 — ionised-metal
+* [Gopalraja et al. (Applied Materials), US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — ionised-metal
   plasma (IMP) sputtering for liner step coverage.[^pat-imp-amat]
-* Lai et al. (Novellus), US 6,179,973 — the hollow-cathode-magnetron
+* [Lai et al. (Novellus), US 6,179,973](<https://patents.google.com/patent/US6179973B1/en>) — the hollow-cathode-magnetron
   ionised PVD source, the Novellus counterpart to IMP.[^pat-hcm-novellus]
-* ASML, PAS 5500/750E press release, 2000 — a KrF step-and-scan system
+* [ASML, PAS 5500/750E press release, 2000](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF step-and-scan system
   aimed at 130 nm.[^asml-750e]
-* Tokyo Electron, *Coater/Developer ACT Series* — the track class linked
+* [Tokyo Electron, *Coater/Developer ACT Series*](<https://www.tel.com/product/act.html>) — the track class linked
   to the exposure tools.[^tel-act]
-* GCE Market, *KLA-Tencor 8100XP CD-SEM* — specification of a CD-SEM of
+* [GCE Market, *KLA-Tencor 8100XP CD-SEM*](<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>) — specification of a CD-SEM of
   the period.[^gce-kla8100]
-* Ogle (Lam Research), US 4,948,458 — the transformer-coupled planar
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the transformer-coupled planar
   plasma source of the TCP etchers.[^pat-tcp-lam]
-* Yin et al. (Applied Materials), US 5,540,824 — the decoupled-source
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the decoupled-source
   plasma reactor of the DPS etchers.[^pat-dps-amat]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
-  Etcher* — a university guide to the etcher SkyWater lists.[^snf-9400]
-* Lam Research, Exelan High Performance press release, 2001 — the
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
+  Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — a university guide to the etcher SkyWater lists.[^snf-9400]
+* [Lam Research, Exelan High Performance press release, 2001](<https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>) — the
   dielectric etcher class the contact and via pages cite.[^lam-exelan]
-* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — the microwave
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — the microwave
   downstream asher.[^pat-asher-fusion]
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution of wafer cleaning
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer cleaning
   that the wet benches carry out.[^kern-1990]
-* SEZ, Spin-Processor 223 press release, 1999 — a dual-chamber spin
+* [SEZ, Spin-Processor 223 press release, 1999](<https://www.surfacefinishing.com/doc/sez-doubles-wafer-processing-capabilities-wit-0001>) — a dual-chamber spin
   processor for cleaning and film removal.[^sez-223-pr]
-* Current, *J. Vac. Sci. Technol. A* 1996 — production ion implanters
+* [Current, *J. Vac. Sci. Technol. A* 1996](<https://doi.org/10.1116/1.580279>) — production ion implanters
   from a vacuum perspective.[^current-1996]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   energy and beam-current range of the medium-current class.[^axcelis-8250]
-* Mezack et al., IIT 2000 — a single-wafer high-current implanter of the
+* [Mezack et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924180>) — a single-wafer high-current implanter of the
   period.[^mezack-2000]
-* Tolles et al. (Applied Materials), US 5,738,574 — the continuous
+* [Tolles et al. (Applied Materials), US 5,738,574](<https://patents.google.com/patent/US5738574A/en>) — the continuous
   multi-station CMP system of the Mirra.[^pat-cmp-mirra]
-* Keithley Instruments, *Series S600 Parametric Test Systems* — the
+* [Keithley Instruments, *Series S600 Parametric Test Systems*](<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>) — the
   parametric tester class used for electrical test.[^keithley-s600]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
 
 (machines-inconsistencies)=

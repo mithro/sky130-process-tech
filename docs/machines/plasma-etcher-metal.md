@@ -355,84 +355,84 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the two "Metal
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the two "Metal
   Etch" entries quoted on this page.[^skw-01]
-* SkyWater PDK, *Device Details* — the MiM top plate as "a thin
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the MiM top plate as "a thin
   conductor layer", its material unnamed.[^pdk-07]
-* Cypress, QTP 123907 — the 2014 qualified change of the fab's 130 nm
+* [Cypress, QTP 123907](<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>) — the 2014 qualified change of the fab's 130 nm
   metal stacks from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN "excluding top
   metal layers".[^cyp-qtp-123907]
-* Cypress, QTP 113005 — the Ti/Al–Cu/TiW composition of the S8 metal
+* [Cypress, QTP 113005](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — the Ti/Al–Cu/TiW composition of the S8 metal
   stacks.[^cyp-qtp-113005]
-* SkyWater PDK, *google/skywater-pdk* README — "1 level of local
+* [SkyWater PDK, *google/skywater-pdk* README](<https://github.com/google/skywater-pdk>) — "1 level of local
   interconnect" and "5 levels of metal".[^pdk-10]
-* Lam Research, TCP 9600SE microwave stripper announcement (1998) — the
+* [Lam Research, TCP 9600SE microwave stripper announcement (1998)](<https://www.semiconductoronline.com/doc/lam-research-introduces-microwave-stripper-fo-0001>) — the
   TCP metal etcher, its integrated downstream stripper and corrosion
   tests.[^lam-9600se-stripper-1998]
-* Lam Research, TCP 9600PTX press release (1999) — throughput and
+* [Lam Research, TCP 9600PTX press release (1999)](<https://newsroom.lamresearch.com/1999-02-16-Lam-Research-Corporation-Gaining-Momentum-In-Metal-Etch-With-Multiple-Wins>) — throughput and
   0.18 µm qualification.[^lam-9600ptx-1999]
-* Lam Research, TCP 9600DFM press release (2001) — consumables and time
+* [Lam Research, TCP 9600DFM press release (2001)](<https://investor.lamresearch.com/2001-06-18-Lam-Research-Corporation-Takes-Metal-Processing-To-New-Level-With-New-TCP-R-9600DFM>) — consumables and time
   between cleans.[^lam-9600dfm-2001]
-* Lam Research, 2300 Etch Series press release (2000) — the 2300 Versys
+* [Lam Research, 2300 Etch Series press release (2000)](<https://newsroom.lamresearch.com/2000-11-16-Lam-Research-Corporation-Launches-Industrys-First-200-And-300-Mm-Capable-Etch-Product-Line>) — the 2300 Versys
   Metal and its integrated resist removal.[^lam-2300-2000]
-* Applied Materials, 1997 annual report (Form 10-K) — dates of the
+* [Applied Materials, 1997 annual report (Form 10-K)](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — dates of the
   Metal Etch DPS systems.[^amat-1997]
-* Applied Materials, Metal Etch DPS Plus press release (1999) —
+* [Applied Materials, Metal Etch DPS Plus press release (1999)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-metal-etch-dps-plus-centura-sub-018/>) —
   throughput, installed base and source.[^amat-metal-dps-plus-1999]
-* Applied Materials, 300 mm etch product line press release (2000) —
+* [Applied Materials, 300 mm etch product line press release (2000)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-300mm-etch-product-line>) —
   chamber materials and the integrated ASP-based strip
   chamber.[^amat-300-etch-2000]
-* Ogle (Lam Research), US 4,948,458 — the TCP source.[^pat-tcp-lam]
-* Yin et al. (Applied Materials), US 5,540,824 — the DPS
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the TCP source.[^pat-tcp-lam]
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the DPS
   reactor.[^pat-dps-amat]
 
 ### High-level understanding
 
-* Edwards (Efabless), *Introduction to the SkyWater PDK* — the TiN
+* [Edwards (Efabless), *Introduction to the SkyWater PDK*](<https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>) — the TiN
   local interconnect and the five aluminium metal layers.[^ann-16]
 * Wikipedia, *Reactive-ion etching*.[^wiki-rie]
 * Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
-* Wikipedia, *Boron trichloride* — the oxide-scavenging etch
+* [Wikipedia, *Boron trichloride*](<https://en.wikipedia.org/wiki/Boron_trichloride>) — the oxide-scavenging etch
   gas.[^wiki-bcl3]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — dry
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — dry
   etching of aluminium.[^txt-02]
 
 ### Deep dive
 
-* Poulsen, *JVST* 1977 — early aluminium plasma etching and endpoint
+* [Poulsen, *JVST* 1977](<https://doi.org/10.1116/1.569137>) — early aluminium plasma etching and endpoint
   detection.[^poulsen-1977]
-* Schaible, Metzger and Anderson, *JVST* 1978 — reactive ion etching of
+* [Schaible, Metzger and Anderson, *JVST* 1978](<https://doi.org/10.1116/1.569540>) — reactive ion etching of
   aluminium in halogen plasmas.[^schaible-1978]
-* Hess, *Plasma Chem. Plasma Process.* 1982 — the plasma etch chemistry
+* [Hess, *Plasma Chem. Plasma Process.* 1982](<https://doi.org/10.1007/BF00633130>) — the plasma etch chemistry
   of aluminium and its alloys.[^hess-1982]
-* Bell, Anderson and Light, *JES* 1988 — selectivities of BCl₃/Cl₂ and
+* [Bell, Anderson and Light, *JES* 1988](<https://doi.org/10.1149/1.2095919>) — selectivities of BCl₃/Cl₂ and
   BBr₃/Cl₂ aluminium etching.[^bell-1988]
-* Chen, DeOrnellas and Burke, ASTM STP 990, 1989 — aluminium etch rate
+* [Chen, DeOrnellas and Burke, ASTM STP 990, 1989](<https://doi.org/10.1520/STP26039S>) — aluminium etch rate
   against Cl₂, power and additives.[^chen-1989]
-* Christie et al., ASMC 1994 — sub-0.5 µm aluminium etch and post-etch
+* [Christie et al., ASMC 1994](<https://doi.org/10.1109/ASMC.1994.588254>) — sub-0.5 µm aluminium etch and post-etch
   treatment in a 200 mm TCP 9600.[^christie-1994]
-* Allen and Rickard, *JVST A* 1994 — a tapered aluminium etch with N₂ in
+* [Allen and Rickard, *JVST A* 1994](<https://doi.org/10.1116/1.579306>) — a tapered aluminium etch with N₂ in
   a TCP etcher.[^allen-1994]
-* Bredbenner et al. (AT&T Bell Laboratories), US 4,919,748 — tapered
+* [Bredbenner et al. (AT&T Bell Laboratories), US 4,919,748](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4919748>) — tapered
   aluminium etching with CHF₃ and Cl₂.[^pat-taper-att]
-* Cooperberg, Vahedi and Gottscho, *JVST A* 2002 — profile simulation of
+* [Cooperberg, Vahedi and Gottscho, *JVST A* 2002](<https://doi.org/10.1116/1.1494818>) — profile simulation of
   Cl₂/BCl₃ aluminium etching.[^cooperberg-2002]
-* Fischl and Hess, *JES* 1987 — tungsten and tungsten silicide etching in
+* [Fischl and Hess, *JES* 1987](<https://doi.org/10.1149/1.2100868>) — tungsten and tungsten silicide etching in
   chlorine discharges.[^fischl-1987]
-* Liu and Kuo, *JES* 2007 — reactive ion etching of TiW.[^liu-2007-tiw]
-* Douglas (Texas Instruments), US 4,675,073 — a fluorine-deficient TiN
+* [Liu and Kuo, *JES* 2007](<https://doi.org/10.1149/1.2737631>) — reactive ion etching of TiW.[^liu-2007-tiw]
+* [Douglas (Texas Instruments), US 4,675,073](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4675073>) — a fluorine-deficient TiN
   etch selective to silicide.[^pat-tin-etch-ti]
-* Danzl and McLaurin, IEMT 1997 — hydrogen peroxide removal of a TiW
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — hydrogen peroxide removal of a TiW
   cap from aluminium pads.[^danzl-1997]
-* Wai and Ling, ASMC 2017 — Al–Cu corrosion after metal etch and wet
+* [Wai and Ling, ASMC 2017](<https://doi.org/10.1109/ASMC.2017.7969200>) — Al–Cu corrosion after metal etch and wet
   polymer clean.[^wai-2017]
-* Noguchi et al., IEDM 1997 — electron-shading charging during metal
+* [Noguchi et al., IEDM 1997](<https://doi.org/10.1109/IEDM.1997.650419>) — electron-shading charging during metal
   etching.[^noguchi-1997]
-* Hashimoto, *JJAP* 1994 — the electron-shading mechanism.[^hashimoto-1994]
-* Hwang and Giapis, *JVST B* 1997 — a simulation of notching from
+* [Hashimoto, *JJAP* 1994](<https://doi.org/10.1143/JJAP.33.6013>) — the electron-shading mechanism.[^hashimoto-1994]
+* [Hwang and Giapis, *JVST B* 1997](<https://doi.org/10.1116/1.589258>) — a simulation of notching from
   transient charging in the polysilicon over-etch in high-density
   plasmas.[^hwang-1997]
-* Donnelly and Kornblit, *JVST A* 2013 — a review of plasma
+* [Donnelly and Kornblit, *JVST A* 2013](<https://doi.org/10.1116/1.4819316>) — a review of plasma
   etching.[^donnelly-2013]
 
 :::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read

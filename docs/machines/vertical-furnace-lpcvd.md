@@ -363,21 +363,21 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the five LPCVD
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the five LPCVD
   entries quoted on this page.[^skw-01]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing — the LPCVD films of the
+* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the LPCVD films of the
   vendor's 200 mm furnace.[^aviza-avp]
-* Aviza Technology, Satin press release (2004) — the vendor's nitride
+* [Aviza Technology, Satin press release (2004)](<https://web.archive.org/web/20050309110319/http://www.avizatechnology.com/news/pressrel/113004.htm>) — the vendor's nitride
   temperatures for dichlorosilane, BTBAS and a new precursor.[^aviza-satin-2004]
-* Aviza Technology, *Vertical Processors* page (2005) — sequential oxide
+* [Aviza Technology, *Vertical Processors* page (2005)](<https://web.archive.org/web/20051108133056/http://www.avizatechnology.com/products/vert.htm>) — sequential oxide
   and nitride processing on its furnaces.[^aviza-vert]
-* Expertech, *VTR7000PLUS Thermal Reactor* — LPCVD loads and the
+* [Expertech, *VTR7000PLUS Thermal Reactor*](<https://www.exper-tech.com/products/vertical-thermal-reactor>) — LPCVD loads and the
   double-walled tube.[^expertech-vtr]
-* Tokyo Electron, *TELINDY Series* page — the ALPHA-8SE i CVD
+* [Tokyo Electron, *TELINDY Series* page](<https://www.tel.com/product/telindy.html>) — the ALPHA-8SE i CVD
   films.[^tel-telindy]
-* ASM International, A400 DUO press release (2019) — the A400 LPCVD
+* [ASM International, A400 DUO press release (2019)](<https://web.archive.org/web/20241014215529/https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>) — the A400 LPCVD
   processes.[^asm-a400]
-* Persyn (Sony), US 5,800,616 — the TEL VCF-615S LP-TEOS furnace and its
+* [Persyn (Sony), US 5,800,616](<https://patents.google.com/patent/US5800616A/en>) — the TEL VCF-615S LP-TEOS furnace and its
   exhaust.[^pat-lpcvd-sony]
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
@@ -387,50 +387,50 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Chemical vapor deposition* — LPCVD as the furnace-tube
+* [Wikipedia, *Chemical vapor deposition*](<https://en.wikipedia.org/wiki/Chemical_vapor_deposition>) — LPCVD as the furnace-tube
   form of CVD.[^wiki-cvd]
-* Wikipedia, *Silicon nitride* — LPCVD nitride chemistry, hydrogen content
+* [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — LPCVD nitride chemistry, hydrogen content
   and stress.[^wiki-sin]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — CVD and LPCVD
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — CVD and LPCVD
   films.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — CVD of
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — CVD of
   nitride, polysilicon and oxide.[^txt-02]
-* ASM International, *Vertical furnace* — a vendor overview of batch
+* [ASM International, *Vertical furnace*](<https://www.asm.com/our-technology-products/vertical-furnace>) — a vendor overview of batch
   LPCVD.[^asm-vf]
-* Semiconductor Online, *Alpha-8SE* — TEL's 200 mm diffusion and LPCVD
+* [Semiconductor Online, *Alpha-8SE*](<https://www.semiconductoronline.com/doc/thermal-processing-applications-alpha-8se-0001>) — TEL's 200 mm diffusion and LPCVD
   furnace generation.[^tel-alpha8se]
 
 ### Deep dive
 
-* Roenigk and Jensen, *J. Electrochem. Soc.* 1987 — a hot-wall reactor
+* [Roenigk and Jensen, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100756>) — a hot-wall reactor
   model for dichlorosilane nitride.[^roenigk-1987]
-* Temple-Boyer et al., *JVST A* 1998 — stress and composition of
+* [Temple-Boyer et al., *JVST A* 1998](<https://doi.org/10.1116/1.581302>) — stress and composition of
   silane–ammonia LPCVD nitride.[^temple-boyer-1998]
-* Gumpher et al., *J. Electrochem. Soc.* 2004 — BTBAS nitride in a 200 mm
+* [Gumpher et al., *J. Electrochem. Soc.* 2004](<https://doi.org/10.1149/1.1690294>) — BTBAS nitride in a 200 mm
   vertical batch furnace.[^gumpher-2004]
-* Smith, Seutter and Iyer, *J. Electrochem. Soc.* 2005 — single-wafer BTBAS
+* [Smith, Seutter and Iyer, *J. Electrochem. Soc.* 2005](<https://doi.org/10.1149/1.1870792>) — single-wafer BTBAS
   nitride.[^smith-2005]
-* Teasdale et al., *Electrochem. Solid-State Lett.* 2001 — single-wafer
+* [Teasdale et al., *Electrochem. Solid-State Lett.* 2001](<https://doi.org/10.1149/1.1359056>) — single-wafer
   rapid thermal LPCVD nitride.[^teasdale-2001]
-* Kamins, *J. Electrochem. Soc.* 1980 — amorphous and polycrystalline LPCVD
+* [Kamins, *J. Electrochem. Soc.* 1980](<https://doi.org/10.1149/1.2129733>) — amorphous and polycrystalline LPCVD
   silicon films.[^kamins-1980]
-* Kinsbron, Sternheim and Knoell, *Appl. Phys. Lett.* 1983 — crystallisation
+* [Kinsbron, Sternheim and Knoell, *Appl. Phys. Lett.* 1983](<https://doi.org/10.1063/1.94080>) — crystallisation
   of amorphous silicon during deposition.[^kinsbron-1983]
-* Harbeke et al., *J. Electrochem. Soc.* 1984 — amorphous deposition and
+* [Harbeke et al., *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115672>) — amorphous deposition and
   recrystallisation versus as-deposited poly.[^harbeke-1984]
-* Meyerson and Olbricht, *J. Electrochem. Soc.* 1984 — phosphine and
+* [Meyerson and Olbricht, *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115258>) — phosphine and
   growth-rate non-uniformity in doped poly.[^meyerson-1984]
-* Becker et al., *JVST B* 1987 — low-pressure TEOS oxide and wafer
+* [Becker et al., *JVST B* 1987](<https://doi.org/10.1116/1.583673>) — low-pressure TEOS oxide and wafer
   spacing.[^becker-1987]
-* Adams and Capio, *J. Electrochem. Soc.* 1979 — reduced-pressure TEOS
+* [Adams and Capio, *J. Electrochem. Soc.* 1979](<https://doi.org/10.1149/1.2129171>) — reduced-pressure TEOS
   oxide in a 100-wafer zone.[^adams-1979]
-* Maeda et al. (Kokusai Electric), US 5,902,103 — inner and outer tubes
+* [Maeda et al. (Kokusai Electric), US 5,902,103](<https://patents.google.com/patent/US5902103A/en>) — inner and outer tubes
   and a boat cover for uniformity.[^pat-lpcvd-kokusai]
-* Usami (NEC), US 5,503,678 — separate annular injectors for silane and
+* [Usami (NEC), US 5,503,678](<https://patents.google.com/patent/US5503678A/en>) — separate annular injectors for silane and
   oxidant.[^pat-lpcvd-nec]
-* Caton et al. (VLSI Technology), US 5,303,558 — a thermal trap for
+* [Caton et al. (VLSI Technology), US 5,303,558](<https://patents.google.com/patent/US5303558A/en>) — a thermal trap for
   ammonium chloride.[^pat-nh4cl-vlsi]
-* Lin et al. (TSMC), US 2004/0069224 — a cold trap for a vertical nitride
+* [Lin et al. (TSMC), US 2004/0069224](<https://patents.google.com/patent/US20040069224A1/en>) — a cold trap for a vertical nitride
   furnace.[^pat-nh4cl-tsmc]
 
 ## Open questions

@@ -304,67 +304,67 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the three
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the three
   "Resist removal/cleans" plasma entries quoted on this page.[^skw-01]
-* SemiStar, *Gasonics L3510 plasma asher* — microwave power, platen
+* [SemiStar, *Gasonics L3510 plasma asher*](<http://www.semistarcorp.com/product/gasonics-l3510-asher/>) — microwave power, platen
   temperature and wafer range of a GaSonics asher.[^gasonics-l3510]
-* Allwin21, *Gasonics Aura 1000 Plasma Asher* — the two-chamber
+* [Allwin21, *Gasonics Aura 1000 Plasma Asher*](<https://allwin21.com/gasonics-aura-1000-plasma-asher-2/>) — the two-chamber
   microwave design, lamps, temperature range and
   sequence.[^gasonics-aura]
-* SemiStar, *Novellus Gasonics PEP Iridia DL Plasma Asher* — the
+* [SemiStar, *Novellus Gasonics PEP Iridia DL Plasma Asher*](<http://www.semistarcorp.com/product/novellus-gasonics-pep-iridia-dl-plasma-asher/>) — the
   generators and gas lines of a PEP Iridia system.[^semistar-iridia]
-* Mattson Technology, *The Aspen Strip* (2001) — the Aspen II and III
+* [Mattson Technology, *The Aspen Strip* (2001)](<https://web.archive.org/web/20011219013713/http://www.mattson.com/products/aspen_strip.html>) — the Aspen II and III
   Strip platforms, ICP source and chemistries.[^mattson-2001]
-* GaSonics International, home page (2000) — the vendor's name and
+* [GaSonics International, home page (2000)](<https://web.archive.org/web/20000301102837/http://www.gasonics.com:80/>) — the vendor's name and
   applications.[^gasonics-2000]
-* Solid State Technology, *Novellus acquires Gasonics* (2000) — the
+* [Solid State Technology, *Novellus acquires Gasonics* (2000)](<https://sst.semiconductor-digest.com/2000/10/novellus-acquires-gasonics/>) — the
   acquisition and GaSonics's business.[^sst-gasonics-2000]
-* Solid State Technology, *Novellus licenses–not sells–legacy strip
-  tools to SPEC* (2006) — the GaSonics product lines, including PEP
+* [Solid State Technology, *Novellus licenses–not sells–legacy strip
+  tools to SPEC* (2006)](<https://sst.semiconductor-digest.com/2006/10/novellus-licenses-not-sells-legacy-strip-tools-to-spec/>) — the GaSonics product lines, including PEP
   Iridia.[^sst-novellus-spec-2006]
-* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — the microwave
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — the microwave
   trap of a downstream asher.[^pat-asher-fusion]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream configuration, recombination,
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream configuration, recombination,
   descum and implanted resist.[^wiki-ash]
-* Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
-  Removal* — the class in a university fab.[^snf-strip]
-* Stanford Nanofabrication Facility, *Gasonics Aura Asher* — the
+* [Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
+  Removal*](<https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal>) — the class in a university fab.[^snf-strip]
+* [Stanford Nanofabrication Facility, *Gasonics Aura Asher*](<https://snfguide.stanford.edu/guide/equipment/gasonics-aura-asher-gasonics>) — the
   afterglow description of a GaSonics tool.[^snf-aura]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — resist
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — resist
   strip as a fab operation.[^txt-07]
 
 ### Deep dive
 
-* Fujimura et al., *JJAP* 1989 — carbonised implanted resist, its
+* [Fujimura et al., *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — carbonised implanted resist, its
   residues and a two-step strip.[^fujimura-1989]
-* Fujimura et al., *JJAP* 1990 — why nitrogen raises the downstream
+* [Fujimura et al., *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — why nitrogen raises the downstream
   ashing rate.[^fujimura-1990]
-* Fujimura et al., *JVST B* 1994 — O₂ + H₂O downstream ashing against
+* [Fujimura et al., *JVST B* 1994](<https://doi.org/10.1116/1.587773>) — O₂ + H₂O downstream ashing against
   sodium contamination.[^fujimura-1994]
-* Horsky, IIT 1998 — resist outgassing and the critical dose for
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing and the critical dose for
   amorphisation in implantation.[^horsky-1998]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation.[^lee-1996]
-* Kastenmeier et al., *JVST A* 1996 — downstream CF₄/O₂/N₂ etching of
+* [Kastenmeier et al., *JVST A* 1996](<https://doi.org/10.1116/1.580203>) — downstream CF₄/O₂/N₂ etching of
   nitride and oxide.[^kastenmeier-1996]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — a two-temperature
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — a two-temperature
   dry strip after high-dose implantation.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — a CₓHᵧF_z/O₂ ash for the
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — a CₓHᵧF_z/O₂ ash for the
   carbonised crust.[^pat-strip-tsmc]
-* Nakayama et al. (ULVAC), US 5,795,831 — cold RIE and downstream
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — cold RIE and downstream
   microwave stripping.[^pat-strip-ulvac]
-* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — an oxygen- and
+* [Becknell, Hammar and Ferris (Axcelis), US 7,449,416](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>) — an oxygen- and
   nitrogen-free downstream ash through cooled baffle
   plates.[^pat-asher-axcelis]
-* Lam Research, TCP 9600SE microwave stripper announcement (1998) — an
+* [Lam Research, TCP 9600SE microwave stripper announcement (1998)](<https://www.semiconductoronline.com/doc/lam-research-introduces-microwave-stripper-fo-0001>) — an
   etch-integrated downstream stripper and its charging and corrosion
   tests.[^lam-9600se-stripper-1998]
-* Applied Materials, 300 mm etch product line press release (2000) — the
+* [Applied Materials, 300 mm etch product line press release (2000)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-300mm-etch-product-line>) — the
   ASP-based strip and passivation chamber.[^amat-300-etch-2000]
-* Kern, *JES* 1990 — the wet cleaning that follows the
+* [Kern, *JES* 1990](<https://doi.org/10.1149/1.2086825>) — the wet cleaning that follows the
   ash.[^kern-1990]
 
 ## Open questions

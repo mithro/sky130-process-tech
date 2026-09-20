@@ -351,64 +351,64 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the tungsten entry,
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the tungsten entry,
   its PNL option and the related special module, CMP, PVD and etch
   entries.[^skw-01]
 * Novellus Systems, *Tungsten Product Solutions* (1998 and 2002
   captures) — the Altus, Dual Altus and Concept Three Altus and their
   backside exclusion.[^novellus-wcvd-1998][^novellus-wcvd-2002]
-* Applied Materials, *Interconnect Systems & Modules* page (2000) — the
+* [Applied Materials, *Interconnect Systems & Modules* page (2000)](<https://web.archive.org/web/20000815075033/http://www.appliedmaterials.com:80/products/ism_liner.html>) — the
   WxZ Centura, its remote microwave clean and the Sprint.[^amat-ism-2000]
-* Applied Materials, *1997 Annual Report* — the Precision 5000 WCVD and
+* [Applied Materials, *1997 Annual Report*](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the Precision 5000 WCVD and
   the metal CVD platforms.[^amat-1997]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the Concept One-W and
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Concept One-W and
   Concept Two Altus history.[^novellus-history]
-* Lee and Collins (Novellus), US 6,635,965 — the pulsed nucleation layer
+* [Lee and Collins (Novellus), US 6,635,965](<https://patents.google.com/patent/US6635965B1/en>) — the pulsed nucleation layer
   and the Altus chambers.[^pat-pnl-novellus]
-* Van de Ven et al. (Novellus), US 5,374,594 — backside gas protection
+* [Van de Ven et al. (Novellus), US 5,374,594](<https://patents.google.com/patent/US5374594A/en>) — backside gas protection
   in a multi-station tungsten reactor.[^pat-backside-novellus]
-* McInerney, Pratt and Hancock (Novellus), US 6,319,553 — incompatible
+* [McInerney, Pratt and Hancock (Novellus), US 6,319,553](<https://patents.google.com/patent/US6319553B1/en>) — incompatible
   processes at separate stations of one chamber.[^pat-multistation-novellus]
-* Chang et al. (Applied Materials), US 5,028,565 — high-pressure tungsten
+* [Chang et al. (Applied Materials), US 5,028,565](<https://patents.google.com/patent/US5028565A/en>) — high-pressure tungsten
   CVD with nitrogen and a nucleation layer.[^pat-wcvd-amat]
 
 ### High-level understanding
 
-* Wikipedia, *Tungsten hexafluoride* — the precursor, its CVD reactions
+* [Wikipedia, *Tungsten hexafluoride*](<https://en.wikipedia.org/wiki/Tungsten_hexafluoride>) — the precursor, its CVD reactions
   and its hazards.[^wiki-wf6]
-* Wikipedia, *Nitrogen trifluoride* — the clean gas.[^wiki-nf3]
-* Wikipedia, *Novellus Systems* — the vendor and its acquisition by
+* [Wikipedia, *Nitrogen trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) — the clean gas.[^wiki-nf3]
+* [Wikipedia, *Novellus Systems*](<https://en.wikipedia.org/wiki/Novellus_Systems>) — the vendor and its acquisition by
   Lam.[^wiki-novellus]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — CVD tungsten in
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — CVD tungsten in
   the back end.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — tungsten plugs
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — tungsten plugs
   in deep-submicron processes.[^txt-05]
 
 ### Deep dive
 
-* Broadbent and Ramiller, *J. Electrochem. Soc.* 1984 — kinetics of WF₆
+* [Broadbent and Ramiller, *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115864>) — kinetics of WF₆
   reduction by hydrogen and silicon.[^rev-03]
-* McConica and Krishnamani, *J. Electrochem. Soc.* 1986 — the rate law
+* [McConica and Krishnamani, *J. Electrochem. Soc.* 1986](<https://doi.org/10.1149/1.2108468>) — the rate law
   and loss of selectivity in a single-wafer reactor.[^mcconica-1986]
-* McConica and Cooper, *J. Electrochem. Soc.* 1988 — autocatalytic
+* [McConica and Cooper, *J. Electrochem. Soc.* 1988](<https://doi.org/10.1149/1.2095756>) — autocatalytic
   nucleation on thermal oxide.[^mcconica-1988]
-* Kleijn et al., *J. Electrochem. Soc.* 1991 — transport limits in a
+* [Kleijn et al., *J. Electrochem. Soc.* 1991](<https://doi.org/10.1149/1.2085620>) — transport limits in a
   cold-wall single-wafer reactor.[^kleijn-1991]
-* Riley and Clark, *J. Electrochem. Soc.* 1991 — integrated deposition
+* [Riley and Clark, *J. Electrochem. Soc.* 1991](<https://doi.org/10.1149/1.2085356>) — integrated deposition
   and etchback on a P5000 WCVD system.[^riley-1991]
-* Kaanta et al., IEDM 1987 — the CVD tungsten stud and planarisation
+* [Kaanta et al., IEDM 1987](<https://doi.org/10.1109/IEDM.1987.191389>) — the CVD tungsten stud and planarisation
   wiring scheme.[^kaanta-1987]
-* Shioya et al., *JAP* 1987 — stress in CVD tungsten and tungsten
+* [Shioya et al., *JAP* 1987](<https://doi.org/10.1063/1.338259>) — stress in CVD tungsten and tungsten
   silicide at high temperature.[^shioya-1987]
-* Saito et al., IRPS 1993 — contact failure through a porous glue layer
+* [Saito et al., IRPS 1993](<https://doi.org/10.1109/RELPHY.1993.283279>) — contact failure through a porous glue layer
   and its cure.[^saito-1993]
-* Hegde et al., *J. Electrochem. Soc.* 1997 — properties of tungsten
+* [Hegde et al., *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1837536>) — properties of tungsten
   nucleation layers on TiN/Ti.[^hegde-1997]
-* Petri et al., IITC 1998 — nitrogen and the incubation of post-nucleation
+* [Petri et al., IITC 1998](<https://doi.org/10.1109/IITC.1998.704792>) — nitrogen and the incubation of post-nucleation
   growth.[^petri-1998]
-* Ireland, *Thin Solid Films* 1997 — a review of the tungsten plug
+* [Ireland, *Thin Solid Films* 1997](<https://doi.org/10.1016/S0040-6090(96)09557-0>) — a review of the tungsten plug
   process for high-aspect-ratio contacts.[^ireland-1997]
-* Kim et al., *Electrochem. Solid-State Lett.* 2004 — a pulsed CVD
+* [Kim et al., *Electrochem. Solid-State Lett.* 2004](<https://doi.org/10.1149/1.1784053>) — a pulsed CVD
   tungsten nucleation layer for plug fill.[^kim-2004]
 
 ## Open questions

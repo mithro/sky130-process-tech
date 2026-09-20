@@ -400,25 +400,25 @@ its film thicknesses are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "AMAT PVD Metal"
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "AMAT PVD Metal"
   entry and its sub-entries.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for 2023 — the
   sputter-target suppliers.[^sec-01][^sec-02]
-* Applied Materials, *1997 Annual Report* — the Endura's introduction,
+* [Applied Materials, *1997 Annual Report*](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the Endura's introduction,
   versions and liner/barrier options.[^amat-1997]
-* Applied Materials, *Endura PVD* product page — the platform's chamber
+* [Applied Materials, *Endura PVD* product page](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>) — the platform's chamber
   count and preclean chambers.[^amat-endura]
 * Applied Materials, *Interconnect Systems & Modules* pages (2000) — the
   integrated liner/barrier system, the Vectra IMP chamber and the Endura
   SL.[^amat-ism-2000][^amat-ism-cu-2000]
-* Applied Materials, *Aluminum Liner/Barrier* (2001) and *Aluminum Slab
-  and Fill* (2002) pages — SIP Ti/TiN, aluminium over tungsten plugs and
+* Applied Materials, [*Aluminum Liner/Barrier*](<https://web.archive.org/web/20010807161527/http://www.appliedmaterials.com:80/products/liner_barrier.html>) (2001) and [*Aluminum Slab
+  and Fill*](<https://web.archive.org/web/20020625163718/http://www.appliedmaterials.com:80/products/aluminum_slab_and_fill.html>) (2002) pages — SIP Ti/TiN, aluminium over tungsten plugs and
   ALPS+ fill.[^amat-liner-barrier-2001][^amat-al-slab-2002]
 * Novellus Systems, *Metal PVD Solutions* (1998 and 2001 captures) — the
   INOVA, its Varian origin and the HCM source.[^novellus-pvd-1998][^novellus-pvd-2001]
-* Tepman et al. (Applied Materials), US 5,186,718 — the staged-vacuum
+* [Tepman et al. (Applied Materials), US 5,186,718](<https://patents.google.com/patent/US5186718A/en>) — the staged-vacuum
   multi-chamber platform.[^pat-staged-vacuum-amat]
-* Demaray et al. (Varian), US 5,330,628 — collimated deposition.[^pat-collimator-varian]
+* [Demaray et al. (Varian), US 5,330,628](<https://patents.google.com/patent/US5330628A/en>) — collimated deposition.[^pat-collimator-varian]
 * Cypress Semiconductor, QTP 113005 and PIN145273 — the S8 metal stack
   and its change from TiW to TiN.[^cyp-qtp-113005][^cyp-pin145273]
 * SkyWater PDK Authors, `metal_stack.svg` and *Device Details*; Edwards,
@@ -427,56 +427,56 @@ its film thicknesses are not public.
 
 ### High-level understanding
 
-* Wikipedia, *Sputter deposition* — magnetrons, reactive sputtering and
+* [Wikipedia, *Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>) — magnetrons, reactive sputtering and
   film structure.[^wiki-sputter]
-* Wikipedia, *Physical vapor deposition* — the family of PVD
+* [Wikipedia, *Physical vapor deposition*](<https://en.wikipedia.org/wiki/Physical_vapor_deposition>) — the family of PVD
   methods.[^wiki-pvd]
-* Wikipedia, *Titanium nitride* — the liner and local-interconnect
+* [Wikipedia, *Titanium nitride*](<https://en.wikipedia.org/wiki/Titanium_nitride>) — the liner and local-interconnect
   film.[^wiki-tin]
-* Ohring, *Materials Science of Thin Films* — sputtering, film growth
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — sputtering, film growth
   and step coverage.[^ohring-2002]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   aluminium thin films and PVD.[^txt-02]
-* Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
-  Techniques* — sputtering equipment.[^seshan-2002]
+* [Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
+  Techniques*](<https://openlibrary.org/isbn/9780815514428>) — sputtering equipment.[^seshan-2002]
 
 ### Deep dive
 
-* Thornton, *JVST* 1974 — the structure-zone model for sputtered
+* [Thornton, *JVST* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone model for sputtered
   coatings.[^thornton-1974]
-* Skelly and Gruenke, *JVST A* 1986 — bias-sputtered aluminium step
+* [Skelly and Gruenke, *JVST A* 1986](<https://doi.org/10.1116/1.573905>) — bias-sputtered aluminium step
   coverage.[^skelly-1986]
-* Rossnagel et al., *JVST A* 1991 — collimated magnetron sputter
+* [Rossnagel et al., *JVST A* 1991](<https://doi.org/10.1116/1.577531>) — collimated magnetron sputter
   deposition.[^rossnagel-1991]
-* Ryan et al., *MRS Bulletin* 1995 — collimated sputtering of Ti and
+* [Ryan et al., *MRS Bulletin* 1995](<https://doi.org/10.1557/S0883769400045553>) — collimated sputtering of Ti and
   TiN.[^ryan-1995]
-* Rossnagel and Hopwood, *APL* 1993 — magnetron sputtering with high
+* [Rossnagel and Hopwood, *APL* 1993](<https://doi.org/10.1063/1.110176>) — magnetron sputtering with high
   metal ionisation.[^rossnagel-1993]
-* Rossnagel and Hopwood, *JVST B* 1994 — metal ion deposition scaled to
+* [Rossnagel and Hopwood, *JVST B* 1994](<https://doi.org/10.1116/1.587142>) — metal ion deposition scaled to
   200 mm wafers.[^rossnagel-1994]
-* Hamaguchi and Rossnagel, *JVST B* 1996 — liner conformality in ionised
+* [Hamaguchi and Rossnagel, *JVST B* 1996](<https://doi.org/10.1116/1.588993>) — liner conformality in ionised
   sputtering.[^hamaguchi-1996]
-* Hopwood, *Phys. Plasmas* 1998 — ionised PVD of interconnects.[^hopwood-1998]
-* Rossnagel, *JVST B* 1998 — a review of directional and ionised
+* [Hopwood, *Phys. Plasmas* 1998](<https://doi.org/10.1063/1.872829>) — ionised PVD of interconnects.[^hopwood-1998]
+* [Rossnagel, *JVST B* 1998](<https://doi.org/10.1116/1.590242>) — a review of directional and ionised
   PVD.[^rossnagel-1998]
-* Mao and Hopwood, *JAP* 2004 — a deposition model for ionised
+* [Mao and Hopwood, *JAP* 2004](<https://doi.org/10.1063/1.1753663>) — a deposition model for ionised
   TiN.[^mao-2004]
-* Berg and Nyberg, *Thin Solid Films* 2005 — reactive sputtering
+* [Berg and Nyberg, *Thin Solid Films* 2005](<https://doi.org/10.1016/j.tsf.2004.10.051>) — reactive sputtering
   processes.[^berg-2005]
-* Taylor, Jain and Cale, *JVST A* 1998 — rate and temperature in
+* [Taylor, Jain and Cale, *JVST A* 1998](<https://doi.org/10.1116/1.581476>) — rate and temperature in
   aluminium step coverage.[^taylor-1998]
-* Nishimura, Yamada and Ogawa, VMIC 1991 — high-temperature aluminium
+* [Nishimura, Yamada and Ogawa, VMIC 1991](<https://doi.org/10.1109/VMIC.1991.152982>) — high-temperature aluminium
   via fill.[^nishimura-1991]
-* Hariu et al., IRPS 1989 — electromigration of hot bias-sputtered
+* [Hariu et al., IRPS 1989](<https://doi.org/10.1109/IRPS.1989.363388>) — electromigration of hot bias-sputtered
   Al–Cu.[^hariu-1989]
-* Pramanik and Jain, VMIC 1990 — underlayers and aluminium step
+* [Pramanik and Jain, VMIC 1990](<https://doi.org/10.1109/VMIC.1990.127888>) — underlayers and aluminium step
   coverage.[^pramanik-1990]
-* Dirks et al., *JAP* 1999 — the mechanism of reflow and forcefill.[^dirks-1999]
-* Gopalraja et al. (Applied Materials), US 6,350,353 — alternating IMP
+* [Dirks et al., *JAP* 1999](<https://doi.org/10.1063/1.369491>) — the mechanism of reflow and forcefill.[^dirks-1999]
+* [Gopalraja et al. (Applied Materials), US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — alternating IMP
   deposition and resputtering.[^pat-imp-amat]
-* Ngan (Applied Materials), US 5,707,498 — pasting the IMP coil against
+* [Ngan (Applied Materials), US 5,707,498](<https://patents.google.com/patent/US5707498A/en>) — pasting the IMP coil against
   contamination.[^pat-imp-coil-amat]
-* Lai et al. (Novellus), US 6,179,973 — the hollow-cathode magnetron
+* [Lai et al. (Novellus), US 6,179,973](<https://patents.google.com/patent/US6179973B1/en>) — the hollow-cathode magnetron
   source.[^pat-hcm-novellus]
 
 ## Open questions

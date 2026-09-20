@@ -365,90 +365,90 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the three
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the three
   "Poly/Silicon Etch" entries quoted on this page.[^skw-01]
-* SkyWater PDK, *Device Details* — the n-type gate poly and the separate
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the n-type gate poly and the separate
   resistor implant.[^pdk-07]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
-  Etcher* — the two RF supplies, planar coil, gas set and gate-etch
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
+  Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — the two RF supplies, planar coil, gas set and gate-etch
   origin of the tool.[^snf-9400]
-* Applied Materials, 1997 annual report (Form 10-K) — dates of the
+* [Applied Materials, 1997 annual report (Form 10-K)](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — dates of the
   Precision 5000, MxP and DPS etch systems.[^amat-1997]
-* Applied Materials, DPS Plus Centura press release (1999) — Predictive
+* [Applied Materials, DPS Plus Centura press release (1999)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-launches-silicon-etch-system-sub-015-micron>) — Predictive
   Endpoint, installed base and chamber features of the silicon
   DPS.[^amat-dps-plus-1999]
-* Applied Materials, 300 mm etch product line press release (2000) — the
+* [Applied Materials, 300 mm etch product line press release (2000)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-300mm-etch-product-line>) — the
   DPS 300 on a platform derived from the Centura 200
   mm.[^amat-300-etch-2000]
-* Lam Research, 2300 Etch Series press release (2000) — the Versys
+* [Lam Research, 2300 Etch Series press release (2000)](<https://newsroom.lamresearch.com/2000-11-16-Lam-Research-Corporation-Launches-Industrys-First-200-And-300-Mm-Capable-Etch-Product-Line>) — the Versys
   Silicon chamber, its endpoint and cleaning.[^lam-2300-2000]
-* Allwin21, *Lam Rainbow 44XX Plasma Etcher* — the parallel-plate
+* [Allwin21, *Lam Rainbow 44XX Plasma Etcher*](<https://allwin21.com/lam-rainbow-44xx-plasma-etcher/>) — the parallel-plate
   Rainbow design and its poly and nitride
   applications.[^allwin-rainbow-4400]
-* Ogle (Lam Research), US 4,948,458 — the planar-coil TCP
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the planar-coil TCP
   source.[^pat-tcp-lam]
-* Yin et al. (Applied Materials), US 5,540,824 — the multi-section coil
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the multi-section coil
   and isolated lid of the DPS reactor.[^pat-dps-amat]
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching* — self-bias, anisotropy and the
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — self-bias, anisotropy and the
   ICP-with-bias hybrid.[^wiki-rie]
-* Wikipedia, *Inductively coupled plasma* — the source type behind TCP
+* [Wikipedia, *Inductively coupled plasma*](<https://en.wikipedia.org/wiki/Inductively_coupled_plasma>) — the source type behind TCP
   and DPS.[^wiki-icp]
 * Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
-* Wikipedia, *Hydrogen bromide* and *Nitrogen trifluoride* — two of the
+* Wikipedia, [*Hydrogen bromide*](<https://en.wikipedia.org/wiki/Hydrogen_bromide>) and [*Nitrogen trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) — two of the
   listed gases and their hazards.[^wiki-hbr][^wiki-nf3]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 10 on
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 10 on
   etching.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — dry
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — dry
   etching for VLSI.[^txt-02]
 
 ### Deep dive
 
-* Donnelly and Kornblit, *JVST A* 2013 — a review of plasma etching and
+* [Donnelly and Kornblit, *JVST A* 2013](<https://doi.org/10.1116/1.4819316>) — a review of plasma etching and
   reactor evolution.[^donnelly-2013]
-* Hopwood, *Plasma Sources Sci. Technol.* 1992 — inductively coupled
+* [Hopwood, *Plasma Sources Sci. Technol.* 1992](<https://doi.org/10.1088/0963-0252/1/2/006>) — inductively coupled
   plasmas for processing: geometries, frequencies and
   densities.[^hopwood-1992]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — high-density sources and etching.[^lieberman-2005]
-* Nojiri, *Dry Etching Technology for Semiconductors* — production
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — high-density sources and etching.[^lieberman-2005]
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — production
   gate and trench etch recipes and endpoint.[^nojiri-2015]
-* Mogab and Levinstein, *JVST* 1980 — the origin of anisotropic chlorine
+* [Mogab and Levinstein, *JVST* 1980](<https://doi.org/10.1116/1.570549>) — the origin of anisotropic chlorine
   polysilicon etching and its doping dependence.[^mogab-1980]
-* Bell and Joubert, *JVST B* 1996 — sidewall passivation of
+* [Bell and Joubert, *JVST B* 1996](<https://doi.org/10.1116/1.588758>) — sidewall passivation of
   oxide-masked silicon trenches in a helicon source.[^bell-1996]
-* Bell and Joubert, *JVST B* 1997 — the chlorine-rich oxide sidewall
+* [Bell and Joubert, *JVST B* 1997](<https://doi.org/10.1116/1.589259>) — the chlorine-rich oxide sidewall
   film of HBr/Cl₂/O₂ gate etching.[^bell-1997]
-* Joubert and Bell, *JES* 1997 — trenching, carbon and hard masks in
+* [Joubert and Bell, *JES* 1997](<https://doi.org/10.1149/1.1837690>) — trenching, carbon and hard masks in
   gate etch selectivity.[^joubert-1997]
-* Tuda, Shintani and Ootera, *JVST A* 2001 — linewidth shift against HBr
+* [Tuda, Shintani and Ootera, *JVST A* 2001](<https://doi.org/10.1116/1.1365135>) — linewidth shift against HBr
   fraction in Cl₂/HBr/O₂ gate etching.[^tuda-2001]
-* Desvoivres, Vallier and Joubert, *JVST B* 2000 — HBr/O₂ gate etching
+* [Desvoivres, Vallier and Joubert, *JVST B* 2000](<https://doi.org/10.1116/1.591168>) — HBr/O₂ gate etching
   below 0.1 µm on oxides under 2 nm.[^desvoivres-2000]
-* Vallier et al., *JVST B* 2003 — sidewall chemistry of gates etched in
+* [Vallier et al., *JVST B* 2003](<https://doi.org/10.1116/1.1563255>) — sidewall chemistry of gates etched in
   a commercial 200 mm etcher.[^vallier-2003]
-* Cunge et al., *JVST B* 2002 — the silicon-halide ion flux of an
+* [Cunge et al., *JVST B* 2002](<https://doi.org/10.1116/1.1511219>) — the silicon-halide ion flux of an
   industrial 200 mm ICP.[^cunge-2002]
-* Cunge et al., *Plasma Sources Sci. Technol.* 2005 — plasma–wall
+* [Cunge et al., *Plasma Sources Sci. Technol.* 2005](<https://doi.org/10.1088/0963-0252/14/2/S06>) — plasma–wall
   interactions and wall coatings in HBr/Cl₂/O₂.[^cunge-2005]
-* Xu, Lill and Podlesnik, *JVST A* 2001 — chamber-wall-dependent drift of
+* [Xu, Lill and Podlesnik, *JVST A* 2001](<https://doi.org/10.1116/1.1412655>) — chamber-wall-dependent drift of
   organic ARC etching.[^xu-2001]
-* Ogryzlo et al., *JAP* 1990 — doping effects in chlorine-atom etching of
+* [Ogryzlo et al., *JAP* 1990](<https://doi.org/10.1063/1.345388>) — doping effects in chlorine-atom etching of
   silicon.[^ogryzlo-1990]
-* Hsu, SMTW 2004 — an interferometric endpoint model for polysilicon
+* [Hsu, SMTW 2004](<https://doi.org/10.1109/SMTW.2004.1393740>) — an interferometric endpoint model for polysilicon
   gate etch.[^hsu-2004]
-* Mogab, *JES* 1977 — the loading effect.[^mogab-1977]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — aspect-ratio
+* [Mogab, *JES* 1977](<https://doi.org/10.1149/1.2133542>) — the loading effect.[^mogab-1977]
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — aspect-ratio
   dependent etching and microloading.[^gottscho-1992]
-* Hashimoto, *JJAP* 1994 — electron-shading charge damage to gate
+* [Hashimoto, *JJAP* 1994](<https://doi.org/10.1143/JJAP.33.6013>) — electron-shading charge damage to gate
   oxides.[^hashimoto-1994]
-* Noguchi et al., IEDM 1997 — thin-oxide reliability under
+* [Noguchi et al., IEDM 1997](<https://doi.org/10.1109/IEDM.1997.650419>) — thin-oxide reliability under
   topography-dependent charging.[^noguchi-1997]
-* Oehrlein, *Mater. Sci. Eng. B* 1989 — dry-etching damage of
+* [Oehrlein, *Mater. Sci. Eng. B* 1989](<https://doi.org/10.1016/0921-5107(89)90284-5>) — dry-etching damage of
   silicon.[^oehrlein-1989]
-* Thung et al., *JTEC* 2016 — 0.13 µm STI on 0.18 µm-generation tools,
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — 0.13 µm STI on 0.18 µm-generation tools,
   including the post-etch wet clean.[^thung-2016]
 
 ## Open questions

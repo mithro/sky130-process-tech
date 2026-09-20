@@ -300,58 +300,58 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Nitrided gate
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Nitrided gate
   oxide" special module and the absence of a nitridation tool.[^skw-01]
-* Applied Materials, DPN chamber announcement (Light Reading, 2001) — the
+* [Applied Materials, DPN chamber announcement (Light Reading, 2001)](<https://www.lightreading.com/business-management/applied-materials-nitridates>) — the
   purpose, node and installed base of the first production
   chamber.[^amat-dpn-2001]
-* Olsen (Applied Materials), US 7,429,538 — DPN described with its
+* [Olsen (Applied Materials), US 7,429,538](<https://patents.google.com/patent/US7429538B2/en>) — DPN described with its
   pressure, power, pulsing and the DPN Centura.[^pat-pna-amat]
-* Kraft, Hattangady and Grider (Texas Instruments), US 6,136,654 — plasma
+* [Kraft, Hattangady and Grider (Texas Instruments), US 6,136,654](<https://patents.google.com/patent/US6136654A/en>) — plasma
   sources and conditions for nitriding gate oxides.[^pat-rpn-ti]
-* Tokyo Electron, *Trias e+ Series* — the SPA plasma series and its
+* [Tokyo Electron, *Trias e+ Series*](<https://www.tel.com/product/triase.html>) — the SPA plasma series and its
   successor.[^tel-triase]
 
 ### High-level understanding
 
-* Green et al., *J. Appl. Phys.* 2001 — the review of SiO₂ and oxynitride
+* [Green et al., *J. Appl. Phys.* 2001](<https://doi.org/10.1063/1.1385803>) — the review of SiO₂ and oxynitride
   gate dielectrics that sets out why nitrogen is added.[^green-2001]
-* Buchanan, *IBM J. Res. Dev.* 1999 — oxynitrides against boron
+* [Buchanan, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.433.0245>) — oxynitrides against boron
   penetration and leakage in gate-dielectric scaling.[^buchanan-1999]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — gate oxides and
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — gate oxides and
   their processing.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — gate dielectrics
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — gate dielectrics
   in deep-submicron flows.[^txt-05]
 
 ### Deep dive
 
-* Hattangady, Niimi and Lucovsky, *Appl. Phys. Lett.* 1995 — remote
+* [Hattangady, Niimi and Lucovsky, *Appl. Phys. Lett.* 1995](<https://doi.org/10.1063/1.113775>) — remote
   plasma nitridation of the gate-oxide surface.[^hattangady-1995]
-* Kraft et al., *JVST B* 1997 — helicon high-density nitrogen plasma
+* [Kraft et al., *JVST B* 1997](<https://doi.org/10.1116/1.589516>) — helicon high-density nitrogen plasma
   nitridation of SiO₂.[^kraft-1997]
-* Hattangady et al., *Proc. SPIE* 1998 — remote-plasma nitrided oxides for
+* [Hattangady et al., *Proc. SPIE* 1998](<https://doi.org/10.1117/12.323956>) — remote-plasma nitrided oxides for
   ultrathin gate dielectrics.[^hattangady-1998]
-* Kapila et al., *J. Electrochem. Soc.* 1999 — modelling and optimising the
+* [Kapila et al., *J. Electrochem. Soc.* 1999](<https://doi.org/10.1149/1.1391730>) — modelling and optimising the
   nitrogen profile of remote plasma nitridation.[^kapila-1999]
-* Niimi et al., *J. Appl. Phys.* 2002 — the species behind surface and
+* [Niimi et al., *J. Appl. Phys.* 2002](<https://doi.org/10.1063/1.1419208>) — the species behind surface and
   sub-surface remote plasma nitridation.[^niimi-2002]
-* Chen et al. (TSMC), *IEEE TED* 2002 — the base-oxide limit of remote
+* [Chen et al. (TSMC), *IEEE TED* 2002](<https://doi.org/10.1109/16.998593>) — the base-oxide limit of remote
   plasma nitridation.[^chen-2002-rpn]
-* Lek et al., *Semicond. Sci. Technol.* 2002 — DPN against thermal
+* [Lek et al., *Semicond. Sci. Technol.* 2002](<https://doi.org/10.1088/0268-1242/17/6/101>) — DPN against thermal
   nitridation in p-channel MOSFETs.[^lek-2002]
-* Yeo et al., *JVST B* 2003 — boron penetration through DPN oxide by
+* [Yeo et al., *JVST B* 2003](<https://doi.org/10.1116/1.1535925>) — boron penetration through DPN oxide by
   backside SIMS.[^yeo-2003]
-* Ito, Nozaki and Ishikawa, *J. Electrochem. Soc.* 1980 — thermal
+* [Ito, Nozaki and Ishikawa, *J. Electrochem. Soc.* 1980](<https://doi.org/10.1149/1.2130065>) — thermal
   nitridation of oxide in ammonia.[^ito-1980]
-* Hori, Iwasaki and Tsuji, *IEEE TED* 1989 — reoxidised nitrided oxides and
+* [Hori, Iwasaki and Tsuji, *IEEE TED* 1989](<https://doi.org/10.1109/16.19935>) — reoxidised nitrided oxides and
   hydrogen.[^hori-1989]
-* Hwang et al., *Appl. Phys. Lett.* 1991 — RTP N₂O oxynitride and interface
+* [Hwang et al., *Appl. Phys. Lett.* 1991](<https://doi.org/10.1063/1.106290>) — RTP N₂O oxynitride and interface
   nitrogen pile-up.[^hwang-1991]
-* Zhong et al. (Chartered), US 2003/0170956 — an oxygen–nitrogen anneal
+* [Zhong et al. (Chartered), US 2003/0170956](<https://patents.google.com/patent/US20030170956A1/en>) — an oxygen–nitrogen anneal
   after DPN.[^pat-dpn-anneal-chartered]
-* Kraus and Chua (Applied Materials), US 7,514,373 — smooth-modulated RF to
+* [Kraus and Chua (Applied Materials), US 7,514,373](<https://patents.google.com/patent/US7514373B2/en>) — smooth-modulated RF to
   limit electron-temperature spikes in plasma nitridation.[^pat-dpn-rf-amat]
-* Igeta et al. (Tokyo Electron, IBM), US 7,501,352 — oxynitride formation
+* [Igeta et al. (Tokyo Electron, IBM), US 7,501,352](<https://patents.google.com/patent/US7501352B2/en>) — oxynitride formation
   with a slot-plane-antenna plasma.[^pat-spa-tel]
 
 ## Open questions

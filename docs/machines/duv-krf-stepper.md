@@ -363,76 +363,76 @@ settings and resists per layer are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the DUV and 193 nm
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV and 193 nm
   exposure-tool entries and the rest of the lithography group.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Engineer* — an
+* [SkyWater Technology, *A Day in the Life of a SkyWater Engineer*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-engineer/>) — an
   ASML TWINSCAN among newly arriving tools.[^skw-06]
-* SkyWater PDK, *Criteria & Assumptions* — the minimum CDs behind the step
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the minimum CDs behind the step
   pages' class assignments.[^pdk-03]
-* *S8 / SKY130 Process Steps* sheet — the via mask types read as 248 nm
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the via mask types read as 248 nm
   types.[^steps-sheet]
-* ASML, PAS 5500/750E press release (2000) — the first KrF scanner for
+* [ASML, PAS 5500/750E press release (2000)](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — the first KrF scanner for
   130 nm: NA, illumination, ATHENA alignment, laser, overlay and
   throughput.[^asml-750e]
-* ASML, PAS 5500/800 press release (2001) — NA 0.80, 120 nm resolution
+* [ASML, PAS 5500/800 press release (2001)](<https://www.asml.com/en/news/press-releases/2001/asml-introduces-new-krf-step-and-scan-system-that-extends>) — NA 0.80, 120 nm resolution
   and matched-machine overlay.[^asml-800]
-* ASML, *PAS 5500/350C*, */750F* and */850C* data sheets — a KrF stepper
+* ASML, [*PAS 5500/350C*](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-350c.pdf>), [*/750F*](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-750f.pdf>) and [*/850C*](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-850c.pdf>) data sheets — a KrF stepper
   and two KrF scanners with their lasers, fields, overlay and
   throughput.[^asml-pas5500-350c][^asml-pas5500-750f][^asml-pas5500-850c]
-* Nikon, *NSR-S204B* specification summary — lens, laser, alignment and
+* [Nikon, *NSR-S204B* specification summary](<https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>) — lens, laser, alignment and
   environment of a KrF scanner.[^nikon-s204b]
-* Nikon, NSR-S202A and NSR-S102B announcement — a KrF scanning stepper
+* [Nikon, NSR-S202A and NSR-S102B announcement](<https://www.semiconductoronline.com/doc/two-scanning-steppers-0001>) — a KrF scanning stepper
   paired with an i-line one.[^nikon-s202a-s102b]
-* Canon, *FPA-3030EX6* product page — a current 200 mm KrF
+* [Canon, *FPA-3030EX6* product page](<https://global.canon/en/product/indtech/semicon/fpa3030ex6.html>) — a current 200 mm KrF
   stepper.[^canon-fpa3030ex6]
-* Tolpygo et al., arXiv 2014 — a Canon FPA-3000EX4 used for all layers of
+* [Tolpygo et al., arXiv 2014](<https://arxiv.org/abs/1408.5829>) — a Canon FPA-3000EX4 used for all layers of
   a 200 mm process.[^tolpygo-2014]
-* SkyWater Technology, Form S-1 (2021) — photoresist suppliers; no
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers; no
   exposure-tool vendor.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography* — excimer laser lithography and its
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — excimer laser lithography and its
   lasers.[^wiki-litho]
-* Wikipedia, *Excimer laser* — gas mixtures and wavelengths.[^wiki-excimer]
-* Wikipedia, *Stepper* — subassemblies, stepping and
+* [Wikipedia, *Excimer laser*](<https://en.wikipedia.org/wiki/Excimer_laser>) — gas mixtures and wavelengths.[^wiki-excimer]
+* [Wikipedia, *Stepper*](<https://en.wikipedia.org/wiki/Stepper>) — subassemblies, stepping and
   scanning.[^wiki-stepper]
-* Kato, *Chronology of Lithography Milestones* (2007) — dates of the first
+* [Kato, *Chronology of Lithography Milestones* (2007)](<https://www.lithoguru.com/scientist/litho_history/Kato_Litho_History.pdf>) — dates of the first
   KrF steppers, scanners and lasers.[^kato-2007]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — DUV lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — DUV lithography
   for the 0.25–0.13 µm generations.[^txt-05]
-* Levinson, *Principles of Lithography*, 4th ed. — exposure tools,
+* [Levinson, *Principles of Lithography*, 4th ed.](<https://doi.org/10.1117/3.2525393>) — exposure tools,
   resists and overlay.[^levinson-2019]
 
 ### Deep dive
 
-* Jain, Willson and Lin, *IEEE EDL* 1982 — the first excimer laser
+* [Jain, Willson and Lin, *IEEE EDL* 1982](<https://doi.org/10.1109/EDL.1982.25476>) — the first excimer laser
   lithography.[^jain-1982]
-* Pol et al., *Proc. SPIE* 1986 — a KrF stepper built from a commercial
+* [Pol et al., *Proc. SPIE* 1986](<https://doi.org/10.1117/12.963697>) — a KrF stepper built from a commercial
   step-and-repeat tool.[^pol-1986]
-* Tanimoto et al., *Proc. SPIE* 1989 — an excimer laser stepper with a
+* [Tanimoto et al., *Proc. SPIE* 1989](<https://doi.org/10.1117/12.953172>) — an excimer laser stepper with a
   line-narrowed KrF laser and global alignment.[^tanimoto-1989]
-* Wittekoek et al., *Proc. SPIE* 1990 — a KrF stepper with through-the-lens
+* [Wittekoek et al., *Proc. SPIE* 1990](<https://doi.org/10.1117/12.20207>) — a KrF stepper with through-the-lens
   reticle-to-wafer alignment.[^wittekoek-1990]
-* Buckley, Galburt and Karatzas, *JVST B* 1989 — step-and-scan lithography
+* [Buckley, Galburt and Karatzas, *JVST B* 1989](<https://doi.org/10.1116/1.584499>) — step-and-scan lithography
   with reduction optics.[^buckley-1989]
-* De Zwart et al., *Proc. SPIE* 1997 — performance of a 248 nm
+* [De Zwart et al., *Proc. SPIE* 1997](<https://doi.org/10.1117/12.276002>) — performance of a 248 nm
   step-and-scan system.[^de-zwart-1997]
-* Das and Sandstrom, *Proc. IEEE* 2002 — excimer laser technology for
+* [Das and Sandstrom, *Proc. IEEE* 2002](<https://doi.org/10.1109/JPROC.2002.803665>) — excimer laser technology for
   lithography.[^das-2002]
-* Lalovic et al., *Proc. SPIE* 2001 — wavefront aberration against laser
+* [Lalovic et al., *Proc. SPIE* 2001](<https://doi.org/10.1117/12.435655>) — wavefront aberration against laser
   bandwidth on KrF tools.[^lalovic-2001]
-* Laidler et al., *Proc. SPIE* 2002 — ATHENA alignment on STI, tungsten
+* [Laidler et al., *Proc. SPIE* 2002](<https://doi.org/10.1117/12.473478>) — ATHENA alignment on STI, tungsten
   CMP and copper levels.[^laidler-2002]
-* Ito and Willson, *ACS Symp. Ser.* 1984 — chemically amplified
+* [Ito and Willson, *ACS Symp. Ser.* 1984](<https://doi.org/10.1021/bk-1984-0242.ch002>) — chemically amplified
   resists.[^ito-1984]
-* MacDonald et al., *Proc. SPIE* 1991 — airborne base contamination of a
+* [MacDonald et al., *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46354>) — airborne base contamination of a
   chemically amplified resist.[^macdonald-1991]
-* Lin, *J. Micro/Nanolith. MEMS MOEMS* 2002 — resolution and depth-of-focus
+* [Lin, *J. Micro/Nanolith. MEMS MOEMS* 2002](<https://doi.org/10.1117/1.1445798>) — resolution and depth-of-focus
   scaling with NA.[^lin-2002]
-* Lin, *IEEE Circuits and Devices* 1993 — phase-shifting masks at
+* [Lin, *IEEE Circuits and Devices* 1993](<https://doi.org/10.1109/101.200850>) — phase-shifting masks at
   248 nm.[^lin-1993]
-* Bruning, *Proc. SPIE* 2007 — forty years of optical lithography
+* [Bruning, *Proc. SPIE* 2007](<https://doi.org/10.1117/12.720631>) — forty years of optical lithography
   tools.[^bruning-2007]
 
 ## Open questions

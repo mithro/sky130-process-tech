@@ -321,71 +321,71 @@ sampling plans are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Photo
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Photo
   Metrology" entries and the overlay line of the lithography
   group.[^skw-01]
-* ITRS 2001, *Lithography* — overlay and CD control requirements and the
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — overlay and CD control requirements and the
   metrology precision metric.[^itrs-03]
-* Hitachi, *Hitachi Review* 2011 — the S-6000 to CG4000 CD-SEMs, their
+* [Hitachi, *Hitachi Review* 2011](<https://www.hitachihyoron.com/rev/pdf/2011/r2011_05_104.pdf>) — the S-6000 to CG4000 CD-SEMs, their
   design aims, resolution, repeatability and throughput.[^hitachi-2011]
-* Applied Materials, 1997 annual report — the acquisition of Opal and its
+* [Applied Materials, 1997 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the acquisition of Opal and its
   7830-series CD-SEMs.[^amat-1997]
-* Applied Materials, VeraSEM press release (1999) — a 200/300 mm CD-SEM
+* [Applied Materials, VeraSEM press release (1999)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-new-cd-sem-system-sub-015-micron/>) — a 200/300 mm CD-SEM
   with process-variation measurements.[^amat-verasem-1999]
-* Applied Materials, VeritySEM press release (2004) — resolution and
+* [Applied Materials, VeritySEM press release (2004)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-shatters-metrology-roadblocks-65-45nm>) — resolution and
   precision of the Verity line.[^amat-veritysem-2004]
-* KLA-Tencor, *5200XP Overlay Metrology System* (2001 capture) — the
+* [KLA-Tencor, *5200XP Overlay Metrology System* (2001 capture)](<https://web.archive.org/web/20010807104430/http://www.kla-tencor.com:80/products/semicon_process_para_ctrl/overlay/5200xp-overlay-met_sys.html>) — the
   overlay tool for 0.18 µm with coherence probe
   measurement.[^kla-5200xp]
-* KLA-Tencor, *Archer 10* (2003 capture) — automated optical overlay with
+* [KLA-Tencor, *Archer 10* (2003 capture)](<https://web.archive.org/web/20030219061753/http://www.kla-tencor.com:80/products/archer10/archer10.html>) — automated optical overlay with
   data transfer to the stepper.[^kla-archer10]
-* KLA-Tencor, Archer 300 LCM press release (2010) — the later Archer
+* [KLA-Tencor, Archer 300 LCM press release (2010)](<https://ir.kla.com/news-events/press-releases/detail/269/kla-tencor-launches-the-archertm-300-lcm-overlay>) — the later Archer
   line.[^kla-archer300-2010]
-* ClassOne Equipment, *KLA-Tencor 5200XP* listing — box-in-box CPM overlay
+* [ClassOne Equipment, *KLA-Tencor 5200XP* listing](<https://www.classoneequipment.com/KLA-Tencor-5200XP-Overlay-Registration-System>) — box-in-box CPM overlay
   and stepper set-up software.[^classone-kla5200xp]
-* GCE Market, *KLA-Tencor 8100XP CD-SEM* — voltage, resolution and
+* [GCE Market, *KLA-Tencor 8100XP CD-SEM*](<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>) — voltage, resolution and
   throughput of a CD-SEM of the period.[^gce-kla8100]
 
 ### High-level understanding
 
-* Wikipedia, *Scanning electron microscope* — secondary-electron imaging,
+* [Wikipedia, *Scanning electron microscope*](<https://en.wikipedia.org/wiki/Scanning_electron_microscope>) — secondary-electron imaging,
   electron sources and charging.[^wiki-sem]
 * Wikipedia, *Critical dimension*.[^wiki-cd]
-* Wikipedia, *KLA Corporation* — the overlay and CD-SEM
+* [Wikipedia, *KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the overlay and CD-SEM
   vendor.[^wiki-kla]
-* Levinson, *Principles of Lithography*, 4th ed. — overlay and metrology
+* [Levinson, *Principles of Lithography*, 4th ed.](<https://doi.org/10.1117/3.2525393>) — overlay and metrology
   in the lithography process.[^levinson-2019]
-* Postek, *Proc. SPIE* 1994 — a review of SEM metrology for integrated
+* [Postek, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.187461>) — a review of SEM metrology for integrated
   circuits.[^postek-1994]
 
 ### Deep dive
 
-* Rosenfield, EMSA 1986 — linewidth measurement with the low-voltage SEM
+* [Rosenfield, EMSA 1986](<https://doi.org/10.1017/S0424820100144681>) — linewidth measurement with the low-voltage SEM
   and the choice of edge algorithm.[^rosenfield-1986]
-* Singh and Arnold, *Proc. SPIE* 1988 — low-voltage SEM linewidths against
+* [Singh and Arnold, *Proc. SPIE* 1988](<https://doi.org/10.1117/12.968347>) — low-voltage SEM linewidths against
   physical and electrical widths.[^singh-1988]
-* Postek, Keery and Larrabee, *Scanning* 1988 — accelerating voltage,
+* [Postek, Keery and Larrabee, *Scanning* 1988](<https://doi.org/10.1002/sca.4950100104>) — accelerating voltage,
   detection mode and edge-location error.[^postek-1988]
-* Lowney, *Scanning* 1995 — Monte Carlo modelling for SEM linewidth
+* [Lowney, *Scanning* 1995](<https://doi.org/10.1002/sca.4950170503>) — Monte Carlo modelling for SEM linewidth
   measurement.[^lowney-1995]
-* Solecky, Mayer and Archie, *Proc. SPIE* 2002 — CD-SEM correlation to AFM
+* [Solecky, Mayer and Archie, *Proc. SPIE* 2002](<https://doi.org/10.1117/12.473486>) — CD-SEM correlation to AFM
   and electrical test at gate develop and etch.[^solecky-2002]
-* You, Bok and Shin, *Proc. SPIE* 2002 — electron-beam shrinkage of ArF
+* [You, Bok and Shin, *Proc. SPIE* 2002](<https://doi.org/10.1117/12.473516>) — electron-beam shrinkage of ArF
   resist during CD measurement.[^you-2002]
-* Marschner et al., ASMC 2006 — CD-SEM matching between fabs.[^marschner-2006]
-* Starikov, *Opt. Eng.* 1992 — accuracy of overlay measurement and
+* [Marschner et al., ASMC 2006](<https://doi.org/10.1109/ASMC.2006.1638758>) — CD-SEM matching between fabs.[^marschner-2006]
+* [Starikov, *Opt. Eng.* 1992](<https://doi.org/10.1117/12.56172>) — accuracy of overlay measurement and
   tool-induced shift.[^starikov-1992]
-* Hoshi et al., *Proc. SPIE* 2002 — tool- and wafer-induced shift on an
+* [Hoshi et al., *Proc. SPIE* 2002](<https://doi.org/10.1117/12.473514>) — tool- and wafer-induced shift on an
   overlay tool.[^hoshi-2002]
-* Dockrey and Hendricks, *Proc. SPIE* 1989 — coherence probe microscopy
+* [Dockrey and Hendricks, *Proc. SPIE* 1989](<https://doi.org/10.1117/12.953086>) — coherence probe microscopy
   for submicron linewidths.[^dockrey-1989]
-* Plambeck, Knoll and Lord, *Proc. SPIE* 1995 — coherence probe overlay
+* [Plambeck, Knoll and Lord, *Proc. SPIE* 1995](<https://doi.org/10.1117/12.209213>) — coherence probe overlay
   measurement on CMP-planarised targets.[^plambeck-1995]
-* Chu, Hsu and Hwang, *Proc. SPIE* 1999 — fine overlay targets and lens
+* [Chu, Hsu and Hwang, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350790>) — fine overlay targets and lens
   distortion.[^chu-1999]
-* DeMoor et al., *Yield Management Solutions* 2000 — off-line overlay
+* [DeMoor et al., *Yield Management Solutions* 2000](<https://web.archive.org/web/20040228101521/http://www.kla-tencor.com:80/company/magazine/summer00/enhancing_overlay.pdf>) — off-line overlay
   recipe management in a high-volume ASIC fab.[^demoor-2000]
-* Den Boef, *Surf. Topogr.* 2016 — optical alignment, level and
+* [Den Boef, *Surf. Topogr.* 2016](<https://doi.org/10.1088/2051-672X/4/2/023001>) — optical alignment, level and
   scatterometry sensors for CD and overlay control.[^den-boef-2016]
 
 ## Open questions

@@ -394,68 +394,68 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the furnace, oxidation
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the furnace, oxidation
   and pre-clean entries quoted on this page.[^skw-01]
-* Aviza Technology, *Company* page (2005) — the company's 2003 formation
+* [Aviza Technology, *Company* page (2005)](<https://web.archive.org/web/20051124224446/http://www.avizatechnology.com/company/index.htm>) — the company's 2003 formation
   and Thermco origin.[^aviza-company]
-* Aviza Technology, *Vertical Processors* page (2005) — the AVP/RVP
+* [Aviza Technology, *Vertical Processors* page (2005)](<https://web.archive.org/web/20051108133056/http://www.avizatechnology.com/products/vert.htm>) — the AVP/RVP
   150/200 mm furnaces.[^aviza-vert]
-* Tetreon Technologies, press release on Aviza's site (2004) — the sale
+* [Tetreon Technologies, press release on Aviza's site (2004)](<https://web.archive.org/web/20050309110126/http://www.avizatechnology.com:80/news/pressrel/110804.htm>) — the sale
   of the Thermco horizontal furnace line and its installed
   base.[^tetreon-htr-2004]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing — the vendor's 200 mm
+* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the vendor's 200 mm
   vertical furnace and its batch size.[^aviza-avp]
-* Expertech, *VTR7000PLUS Thermal Reactor* — the SVG-designed vertical
+* [Expertech, *VTR7000PLUS Thermal Reactor*](<https://www.exper-tech.com/products/vertical-thermal-reactor>) — the SVG-designed vertical
   reactor, its load and heater range.[^expertech-vtr]
-* Tokyo Electron, *TELINDY Series* page — the ALPHA-8SE i and its
+* [Tokyo Electron, *TELINDY Series* page](<https://www.tel.com/product/telindy.html>) — the ALPHA-8SE i and its
   predecessor.[^tel-telindy]
-* ASM International, A400 DUO press release (2019) — the A400 installed
+* [ASM International, A400 DUO press release (2019)](<https://web.archive.org/web/20241014215529/https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>) — the A400 installed
   base and processes.[^asm-a400]
-* Shimada (Kokusai Electric), US 5,735,961 — load-lock oxygen control
+* [Shimada (Kokusai Electric), US 5,735,961](<https://patents.google.com/patent/US5735961A/en>) — load-lock oxygen control
   and native oxide before loading.[^pat-loadlock-kokusai]
 
 ### High-level understanding
 
-* Wikipedia, *Thermal oxidation* — furnace oxidation, vertical versus
+* [Wikipedia, *Thermal oxidation*](<https://en.wikipedia.org/wiki/Thermal_oxidation>) — furnace oxidation, vertical versus
   horizontal tubes, dry-wet-dry cycles and chlorine.[^wiki-thox]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — oxidation and
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — oxidation and
   its equipment.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — the furnace
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — the furnace
   as a fab tool.[^txt-07]
-* ASM International, *Vertical furnace* — a vendor overview of batch
+* [ASM International, *Vertical furnace*](<https://www.asm.com/our-technology-products/vertical-furnace>) — a vendor overview of batch
   oxidation, diffusion and LPCVD.[^asm-vf]
-* Semiconductor Online, *Alpha-8SE* — TEL's description of its 200 mm
+* [Semiconductor Online, *Alpha-8SE*](<https://www.semiconductoronline.com/doc/thermal-processing-applications-alpha-8se-0001>) — TEL's description of its 200 mm
   furnace generation.[^tel-alpha8se]
 
 ### Deep dive
 
-* Deal and Grove, *J. Appl. Phys.* 1965 — the linear–parabolic
+* [Deal and Grove, *J. Appl. Phys.* 1965](<https://doi.org/10.1063/1.1713945>) — the linear–parabolic
   oxidation law for dry and wet oxidants.[^deal-1965]
-* Massoud, Plummer and Irene, *J. Electrochem. Soc.* 1985 — growth-rate
+* [Massoud, Plummer and Irene, *J. Electrochem. Soc.* 1985](<https://doi.org/10.1149/1.2113648>) — growth-rate
   enhancement of thin dry oxides.[^massoud-1985]
-* Razouk and Deal, *J. Electrochem. Soc.* 1979 — interface states
+* [Razouk and Deal, *J. Electrochem. Soc.* 1979](<https://doi.org/10.1149/1.2129333>) — interface states
   versus oxidation, anneal and cooling ambients.[^razouk-1979]
-* Morita et al., *J. Appl. Phys.* 1990 — what native oxide needs to
+* [Morita et al., *J. Appl. Phys.* 1990](<https://doi.org/10.1063/1.347181>) — what native oxide needs to
   grow.[^morita-1990]
-* Green et al., *J. Appl. Phys.* 2001 — review of sub-4 nm SiO₂ and
+* [Green et al., *J. Appl. Phys.* 2001](<https://doi.org/10.1063/1.1385803>) — review of sub-4 nm SiO₂ and
   oxynitride gate dielectrics.[^green-2001]
-* Rozé et al., *J. Appl. Phys.* 2017 — dry furnace oxidation compared
+* [Rozé et al., *J. Appl. Phys.* 2017](<https://doi.org/10.1063/1.4987040>) — dry furnace oxidation compared
   with dry RTO and ISSG.[^roze-2017]
-* Yu et al. (TSMC), *Proc. SPIE* 1999 — in-situ steam generation, the
+* [Yu et al. (TSMC), *Proc. SPIE* 1999](<https://doi.org/10.1117/12.360557>) — in-situ steam generation, the
   single-wafer counterpart of wet furnace oxidation.[^yu-1999]
-* Lai et al., *Jpn. J. Appl. Phys.* 1998 — N₂O-nitrided gate oxide and
+* [Lai et al., *Jpn. J. Appl. Phys.* 1998](<https://doi.org/10.1143/JJAP.37.5507>) — N₂O-nitrided gate oxide and
   N₂O poly reoxidation.[^lai-1998]
-* Drimer, Glaser and Rowell, US 5,257,926 — an external pyrogenic torch
+* [Drimer, Glaser and Rowell, US 5,257,926](<https://patents.google.com/patent/US5257926A/en>) — an external pyrogenic torch
   for furnace steam.[^pat-torch-drimer]
-* Drimer, Mendelovici and Borivker (Persys), US 6,179,609 — a compact
+* [Drimer, Mendelovici and Borivker (Persys), US 6,179,609](<https://patents.google.com/patent/US6179609B1/en>) — a compact
   torch for steam and DCE oxidation.[^pat-torch-persys]
-* Yuuki (Yamaha), US 5,633,212 — external-burner wet oxidation with
+* [Yuuki (Yamaha), US 5,633,212](<https://patents.google.com/patent/US5633212A/en>) — external-burner wet oxidation with
   suppression of initial oxidation.[^pat-torch-yamaha]
-* Shimazu (Tokyo Electron), US 5,709,543 — boat, cap and heat-insulation
+* [Shimazu (Tokyo Electron), US 5,709,543](<https://patents.google.com/patent/US5709543A/en>) — boat, cap and heat-insulation
   structure of a vertical furnace.[^pat-vf-insulation-tel]
-* Tanahashi (Tokyo Electron), US 5,551,984 — gas circulation and
+* [Tanahashi (Tokyo Electron), US 5,551,984](<https://patents.google.com/patent/US5551984A/en>) — gas circulation and
   filtration in the transfer chamber below the furnace.[^pat-vf-transfer-tel]
-* Osawa (Tokyo Electron), US 5,820,367 — ring boat supports against
+* [Osawa (Tokyo Electron), US 5,820,367](<https://patents.google.com/patent/US5820367A/en>) — ring boat supports against
   slip.[^pat-boat-tel]
 
 ## Open questions

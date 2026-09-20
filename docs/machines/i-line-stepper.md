@@ -382,81 +382,81 @@ implants.[^pdk-03]
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "ASML I-line
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "ASML I-line
   stepper" and "ASML I-line scanner" entries and the rest of the
   lithography group.[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — the minimum CDs behind the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the minimum CDs behind the
   step pages' class assignments.[^pdk-03]
-* *S8 / SKY130 Process Steps* sheet — the via mask types read as 248 nm
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the via mask types read as 248 nm
   types.[^steps-sheet]
-* ASML, *PAS 5500/100D* data sheet — NA, resolution, field, overlay,
+* [ASML, *PAS 5500/100D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-100d.pdf>) — NA, resolution, field, overlay,
   throughput, illuminator and alignment of an i-line
   stepper.[^asml-pas5500-100d]
-* ASML, *PAS 5500/275D* data sheet — the 0.28 µm i-line stepper, its
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — the 0.28 µm i-line stepper, its
   single- and matched-machine overlay.[^asml-pas5500-275d]
-* ASML, *PAS 5500/450F* data sheet — the i-line step-and-scan successor of
+* [ASML, *PAS 5500/450F* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-450f.pdf>) — the i-line step-and-scan successor of
   the /400.[^asml-pas5500-450f]
-* ASML, *Three decades of PAS 5500* — the /200 and /275 i-line models and
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — the /200 and /275 i-line models and
   the cascade of tools to less critical layers.[^asml-30]
-* ASML, PAS 5500/800 press release (2001) — KrF matching to the /400C
+* [ASML, PAS 5500/800 press release (2001)](<https://www.asml.com/en/news/press-releases/2001/asml-introduces-new-krf-step-and-scan-system-that-extends>) — KrF matching to the /400C
   i-line scanner.[^asml-800]
-* Canon, FPA-3000i5+ announcement (1998) — a 5:1 i-line stepper designed
+* [Canon, FPA-3000i5+ announcement (1998)](<https://www.semiconductoronline.com/doc/high-productivity-i-line-lithography-stepper-0001>) — a 5:1 i-line stepper designed
   as a mix-and-match companion to a KrF stepper.[^canon-fpa3000i5plus-1998]
-* Canon U.S.A., *FPA-3030i5+ Stepper* specifications — the current 200 mm
+* [Canon U.S.A., *FPA-3030i5+ Stepper* specifications](<http://downloads.canon.com/nw/pdfs/industrial/fpa-3030i5-plus-stepper-specs.pdf>) — the current 200 mm
   i-line stepper.[^canon-fpa3030i5plus]
-* Nikon, NSR-S202A and NSR-S102B announcement — an i-line scanning stepper
+* [Nikon, NSR-S202A and NSR-S102B announcement](<https://www.semiconductoronline.com/doc/two-scanning-steppers-0001>) — an i-line scanning stepper
   for less critical layers.[^nikon-s202a-s102b]
-* Nikon, *NSR-2205iL1* product page — a current 5× i-line
+* [Nikon, *NSR-2205iL1* product page](<https://www.nikon.com/business/semi/sp_nsr-2205il1/>) — a current 5× i-line
   stepper.[^nikon-2205il1]
-* Ushio, *Super high-pressure UV lamps* — the mercury lamps of g-, h- and
+* [Ushio, *Super high-pressure UV lamps*](<https://www.ushio.co.jp/en/products/1010.html>) — the mercury lamps of g-, h- and
   i-line tools.[^ushio-uv-lamps]
-* SkyWater Technology, Form S-1 (2021) — photoresist suppliers; no
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers; no
   exposure-tool vendor.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *Stepper* — subassemblies, stepping and scanning.[^wiki-stepper]
-* Wikipedia, *Photolithography* — mercury lines, projection exposure and
+* [Wikipedia, *Stepper*](<https://en.wikipedia.org/wiki/Stepper>) — subassemblies, stepping and scanning.[^wiki-stepper]
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — mercury lines, projection exposure and
   the track–scanner link.[^wiki-litho]
-* Kato, *Chronology of Lithography Milestones* (2007) — dates of the first
+* [Kato, *Chronology of Lithography Milestones* (2007)](<https://www.lithoguru.com/scientist/litho_history/Kato_Litho_History.pdf>) — dates of the first
   i-line and KrF tools of each vendor.[^kato-2007]
-* Wikipedia, *Diazonaphthoquinone* — the i-line resist
+* [Wikipedia, *Diazonaphthoquinone*](<https://en.wikipedia.org/wiki/Diazonaphthoquinone>) — the i-line resist
   chemistry.[^wiki-dnq]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging,
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging,
   resolution and focus.[^mack-2007]
-* Levinson, *Principles of Lithography*, 2nd ed. — chapters on wafer
+* [Levinson, *Principles of Lithography*, 2nd ed.](<https://doi.org/10.1117/3.601520>) — chapters on wafer
   steppers and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Bruning, *Proc. SPIE* 2007 — forty years of optical lithography
+* [Bruning, *Proc. SPIE* 2007](<https://doi.org/10.1117/12.720631>) — forty years of optical lithography
   tools.[^bruning-2007]
-* Suwa, Ushida and Lin, *Proc. SPIE* 1988 — a high-NA i-line lens and
+* [Suwa, Ushida and Lin, *Proc. SPIE* 1988](<https://doi.org/10.1117/12.968424>) — a high-NA i-line lens and
   field-by-field levelling.[^suwa-1988]
-* Katz et al., *Proc. SPIE* 1990 — a high-NA i-line stepper with phase
+* [Katz et al., *Proc. SPIE* 1990](<https://doi.org/10.1117/12.20183>) — a high-NA i-line stepper with phase
   grating alignment for 0.5 µm and below.[^katz-1990]
-* Wittekoek et al., *Proc. SPIE* 1986 — stepper alignment and metrology
+* [Wittekoek et al., *Proc. SPIE* 1986](<https://doi.org/10.1117/12.949728>) — stepper alignment and metrology
   with diffraction gratings and laser interferometry.[^wittekoek-1986]
-* Buckley, Galburt and Karatzas, *JVST B* 1989, and Buckley and Karatzas,
-  *Proc. SPIE* 1989 — step-and-scan lithography with reduction optics, the
+* Buckley, Galburt and Karatzas, [*JVST B*](<https://doi.org/10.1116/1.584499>) 1989, and Buckley and Karatzas,
+  [*Proc. SPIE*](<https://doi.org/10.1117/12.953171>) 1989 — step-and-scan lithography with reduction optics, the
   Micrascan concept.[^buckley-1989][^buckley-karatzas-1989]
-* Wise, Mahany and Wang, ASMC 1992 — a large-field i-line stepper for
+* [Wise, Mahany and Wang, ASMC 1992](<https://doi.org/10.1109/ASMC.1992.253841>) — a large-field i-line stepper for
   non-critical levels and its cost of ownership.[^wise-1992]
-* Levinson and Arnold, *JVST B* 1987 — focus as the critical parameter of
+* [Levinson and Arnold, *JVST B* 1987](<https://doi.org/10.1116/1.583886>) — focus as the critical parameter of
   submicron lithography.[^levinson-1987]
-* Prasad et al., *Proc. SPIE* 2001 — ATHENA alignment on i-line steppers
+* [Prasad et al., *Proc. SPIE* 2001](<https://doi.org/10.1117/12.436730>) — ATHENA alignment on i-line steppers
   over tungsten CMP.[^prasad-2001]
-* DeMoor et al., *Proc. SPIE* 2004 — generating overlay mix-and-match
+* [DeMoor et al., *Proc. SPIE* 2004](<https://doi.org/10.1117/12.534359>) — generating overlay mix-and-match
   matrices between exposure tools.[^demoor-2004]
-* Chu, Hsu and Hwang, *Proc. SPIE* 1999 — lens distortion as an overlay
+* [Chu, Hsu and Hwang, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350790>) — lens distortion as an overlay
   contributor.[^chu-1999]
-* Norton et al., IIT 2000 — i-line and DUV resists compared under
+* [Norton et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924278>) — i-line and DUV resists compared under
   high-current implantation.[^norton-2000]
-* Buffat and Adams (Zilog), US 6,576,405 — thick resist for high-energy
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — thick resist for high-energy
   implant masks.[^pat-resist-zilog]
-* Dammel, *Diazonaphthoquinone-based Resists* — the SPIE tutorial text on
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the SPIE tutorial text on
   i-line resist chemistry.[^dammel-1993]
-* Nakagawa, Taguchi and Ema, IEDM 1990 — i-line phase-shift lithography
+* [Nakagawa, Taguchi and Ema, IEDM 1990](<https://doi.org/10.1109/IEDM.1990.237037>) — i-line phase-shift lithography
   pushed to 0.3 µm patterns.[^nakagawa-1990]
 
 ## Open questions

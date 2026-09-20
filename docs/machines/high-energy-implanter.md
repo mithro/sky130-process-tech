@@ -317,76 +317,76 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Axcelis GSD
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Axcelis GSD
   High current/energy" entry quoted on this page.[^skw-01]
-* Axcelis Technologies, *GSD Ovation* product page — the GSD/HE and
+* [Axcelis Technologies, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — the GSD/HE and
   GSD/VHE linac stages and energies.[^axcelis-gsd-page]
-* Axcelis Technologies, *GSD Ovation* press release (2021) — the batch
+* [Axcelis Technologies, *GSD Ovation* press release (2021)](<https://www.prnewswire.com/news-releases/axcelis-announces-introduction-of-the-gsd-ovation-high-current-and-high-energy-batch-implanters-301412520.html>) — the batch
   GSD family for 200 mm fabs.[^axcelis-gsd]
-* Axcelis Technologies, *Our History* — the NV-1000, NV-GSD-HE and HE3
+* [Axcelis Technologies, *Our History*](<https://www.axcelis.com/about/our-history/>) — the NV-1000, NV-GSD-HE and HE3
   high-energy implanters.[^axcelis-history]
-* Varian Semiconductor, *High Energy Ion Implantation System* (VIISta
-  3000) — the single-wafer DC tandem alternative.[^varian-viista3000]
-* Glavish and Denholm (Eaton), US 4,667,111 — the RF ion accelerator for
+* [Varian Semiconductor, *High Energy Ion Implantation System* (VIISta
+  3000)](<https://www.semiconductoronline.com/doc/high-energy-ion-implantation-system-0001>) — the single-wafer DC tandem alternative.[^varian-viista3000]
+* [Glavish and Denholm (Eaton), US 4,667,111](<https://patents.google.com/patent/US4667111A/en>) — the RF ion accelerator for
   implantation.[^pat-linac-eaton]
-* Divergilio (Axcelis), US 6,653,803 — the GSD/HE linac beam line and its
+* [Divergilio (Axcelis), US 6,653,803](<https://patents.google.com/patent/US6653803B1/en>) — the GSD/HE linac beam line and its
   resonator modules.[^pat-linac-axcelis]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — implanter classes, linacs and the
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — implanter classes, linacs and the
   hazards of accelerators.[^wiki-implant]
-* Wikipedia, *Axcelis Technologies* and *Varian Semiconductor* — the
+* Wikipedia, [*Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>) and [*Varian Semiconductor*](<https://en.wikipedia.org/wiki/Varian_Semiconductor>) — the
   vendors behind the GSD and VIISta lines.[^wiki-axcelis][^wiki-varian]
-* Wikipedia, *Phosphine* — the source gas for n-type wells.[^wiki-ph3]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation and
+* [Wikipedia, *Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>) — the source gas for n-type wells.[^wiki-ph3]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — implantation and
   implanter basics in ch. 8.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ion implantation for VLSI, ch. 9.[^txt-02]
 
 ### Deep dive
 
-* Suetsugu et al., IIT 2000 — energy accuracy of the RF-linac NV-GSD-HE
+* [Suetsugu et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924184>) — energy accuracy of the RF-linac NV-GSD-HE
   and its final energy magnet.[^suetsugu-2000]
-* Wilson and McIntyre, IIT 1996 — the NV-GSD/VHE, its beam currents and
+* [Wilson and McIntyre, IIT 1996](<https://doi.org/10.1109/IIT.1996.586351>) — the NV-GSD/VHE, its beam currents and
   multiply charged energies.[^wilson-1996]
-* Namaroff and Merrill, IIT 2000 — high-dose MeV boron buried layers on
+* [Namaroff and Merrill, IIT 2000](<https://doi.org/10.1109/IIT.2000.924175>) — high-dose MeV boron buried layers on
   the GSD/VHE.[^namaroff-2000]
-* Tokoro, Holbrook and Hacker, IIT 2000 — the single-wafer VIISta 3000
+* [Tokoro, Holbrook and Hacker, IIT 2000](<https://doi.org/10.1109/IIT.2000.924164>) — the single-wafer VIISta 3000
   and its tandem beam line.[^tokoro-2000]
-* Tokoro et al., IIT 1996 — beam performance of the Genus Tandetron
+* [Tokoro et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586393>) — beam performance of the Genus Tandetron
   1520.[^tokoro-1996]
-* Chen and Sinclair (Eaton), US 5,760,409 — dose control compensating
+* [Chen and Sinclair (Eaton), US 5,760,409](<https://patents.google.com/patent/US5760409A/en>) — dose control compensating
   charge stripping and neutralisation at MeV energies.[^pat-dose-eaton]
-* O'Connor and Tokoro, IIT 1996 — end-station and beam-line design for
+* [O'Connor and Tokoro, IIT 1996](<https://doi.org/10.1109/IIT.1996.586285>) — end-station and beam-line design for
   MeV resist outgassing.[^oconnor-1996]
-* Lee et al., IIT 1996 — thick-resist outgassing and dose shift during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing and dose shift during MeV
   implants.[^lee-1996]
-* Horsky, IIT 1998 — outgassing composition in high-energy and
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — outgassing composition in high-energy and
   high-current implants.[^horsky-1998]
-* Horsky, *Rev. Sci. Instrum.* 1998 — an ion source with higher multiply
+* [Horsky, *Rev. Sci. Instrum.* 1998](<https://doi.org/10.1063/1.1148866>) — an ion source with higher multiply
   charged currents.[^horsky-1998-ihc]
-* Kubo et al., IIT 1996 — energy contamination from multiply charged
+* [Kubo et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586141>) — energy contamination from multiply charged
   implants.[^kubo-1996]
-* Spinelli et al., *NIM B* 1985 — multiply charged phosphorus for MeV
+* [Spinelli et al., *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90646-9>) — multiply charged phosphorus for MeV
   n-wells in production.[^spinelli-1985]
-* Tsukamoto et al., *NIM B* 1991 — review of high-energy implantation for
+* [Tsukamoto et al., *NIM B* 1991](<https://doi.org/10.1016/0168-583X(91)95283-J>) — review of high-energy implantation for
   ULSI.[^tsukamoto-1991]
-* Morris and Rubin, IIT 2000 — batch high-energy versus serial
+* [Morris and Rubin, IIT 2000](<https://doi.org/10.1109/IIT.2000.924093>) — batch high-energy versus serial
   medium-current implanters for wells.[^morris-2000]
-* Rubin, Morris and Jasper, IIT 2002 — 0° versus low-angle quad well
+* [Rubin, Morris and Jasper, IIT 2002](<https://doi.org/10.1109/IIT.2002.1257927>) — 0° versus low-angle quad well
   implants.[^rubin-2002]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle of well implants
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral straggle of well implants
   and the mask proximity effect.[^hook-2003]
-* Glavish and Farley, IIT 2018 — beam-line innovations across implanter
+* [Glavish and Farley, IIT 2018](<https://doi.org/10.1109/IIT.2018.8807986>) — beam-line innovations across implanter
   classes.[^glavish-2018]
-* Oh (Hynix), US 6,806,133 — a triple-well flow with MeV phosphorus and a
+* [Oh (Hynix), US 6,806,133](<https://patents.google.com/patent/US6806133B2/en>) — a triple-well flow with MeV phosphorus and a
   thick mask.[^pat-dnw-hynix]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde well
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — retrograde well
   energies and doses.[^pat-well-ibm]
-* Yang (UMC), US 5,393,679 — doubly charged phosphorus for a retrograde
+* [Yang (UMC), US 5,393,679](<https://patents.google.com/patent/US5393679A/en>) — doubly charged phosphorus for a retrograde
   well.[^pat-umc-dc]
-* Borland (Genus), US 5,821,589 — MeV buried layers for latch-up
+* [Borland (Genus), US 5,821,589](<https://patents.google.com/patent/US5821589A/en>) — MeV buried layers for latch-up
   suppression.[^pat-billi-genus]
 
 ## Open questions

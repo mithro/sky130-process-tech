@@ -303,67 +303,67 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "DNS 80B track",
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "DNS 80B track",
   "Sokudo RF3 track" and "TEL ProZ Lithius track" entries.[^skw-01]
-* SkyWater Technology, Form S-1 (2021) — photoresist and developer
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist and developer
   suppliers.[^sec-01]
-* SkyWater PDK, *Criteria & Assumptions* — the nominal and HV tip-implant
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the nominal and HV tip-implant
   photoresist thicknesses.[^pdk-03]
-* Tokyo Electron, *Coater/Developer ACT Series* — the ACT 8Z and ACT 12,
+* [Tokyo Electron, *Coater/Developer ACT Series*](<https://www.tel.com/product/act.html>) — the ACT 8Z and ACT 12,
   their throughput, processes and DUV features.[^tel-act]
-* Semiconductor Online, *CLEAN TRACK ACT 8* — the 200 mm track of 1997,
+* [Semiconductor Online, *CLEAN TRACK ACT 8*](<https://www.semiconductoronline.com/doc/clean-track-act-8-system-for-spin-on-dielectr-0001>) — the 200 mm track of 1997,
   its modules, stepper interface and throughput.[^tel-act8]
-* Tokyo Electron, *Coater/Developer LITHIUS Series* — the LITHIUS and
+* [Tokyo Electron, *Coater/Developer LITHIUS Series*](<https://www.tel.com/product/lithius.html>) — the LITHIUS and
   LITHIUS Pro Z.[^tel-lithius]
-* SCREEN Semiconductor Solutions, *SK-60EX/SK-80EX* — the 60/80 series of
+* [SCREEN Semiconductor Solutions, *SK-60EX/SK-80EX*](<https://www.screen.co.jp/spe/en/products/sk-60ex80ex>) — the 60/80 series of
   tracks for wafers up to 200 mm.[^screen-sk80ex]
-* SCREEN Semiconductor Solutions, *RF-200EX/RF-300EX* — a current 200 mm
+* [SCREEN Semiconductor Solutions, *RF-200EX/RF-300EX*](<https://www.screen.co.jp/spe/en/products/rf-200ex300ex>) — a current 200 mm
   DUV track.[^screen-rf200ex]
-* Sokudo, RF3 press release (2006) — the Sokudo joint venture and its
+* [Sokudo, RF3 press release (2006)](<https://www.screen.co.jp/eng/spe/mt-images/pr060920_e.pdf>) — the Sokudo joint venture and its
   modular RF3 track.[^sokudo-rf3-2006]
-* Nikon, *NSR-S204B* specification summary — the in-line track interface
+* [Nikon, *NSR-S204B* specification summary](<https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>) — the in-line track interface
   of an exposure tool.[^nikon-s204b]
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography* — the track and its sequence: prime,
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — the track and its sequence: prime,
   coat, EBR, bakes, develop and the link to the exposure
   tool.[^wiki-litho]
-* Wikipedia, *Spin coating* — spin speeds, film thickness and edge
+* [Wikipedia, *Spin coating*](<https://en.wikipedia.org/wiki/Spin_coating>) — spin speeds, film thickness and edge
   beads.[^wiki-spin-coating]
-* Wikipedia, *Tetramethylammonium hydroxide* — the developer.[^wiki-tmah]
-* MicroChemicals, *Development of photoresists* — developer types,
+* [Wikipedia, *Tetramethylammonium hydroxide*](<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>) — the developer.[^wiki-tmah]
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — developer types,
   strength and practice.[^microchemicals-dev]
-* Kato, *Chronology of Lithography Milestones* (2007) — the Cobilt origin
+* [Kato, *Chronology of Lithography Milestones* (2007)](<https://www.lithoguru.com/scientist/litho_history/Kato_Litho_History.pdf>) — the Cobilt origin
   of TEL's tracks.[^kato-2007]
-* Mack, *Fundamental Principles of Optical Lithography* — resist
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — resist
   processing from coat to develop.[^mack-2007]
 
 ### Deep dive
 
-* Emslie, Bonner and Peck, *J. Appl. Phys.* 1958 — the flow of a viscous
+* [Emslie, Bonner and Peck, *J. Appl. Phys.* 1958](<https://doi.org/10.1063/1.1723300>) — the flow of a viscous
   liquid on a rotating disk, the basis of spin coating.[^emslie-1958]
-* Meyerhofer, *J. Appl. Phys.* 1978 — resist film thickness against spin
+* [Meyerhofer, *J. Appl. Phys.* 1978](<https://doi.org/10.1063/1.325357>) — resist film thickness against spin
   speed, viscosity and evaporation.[^meyerhofer-1978]
-* Brunner, *Proc. SPIE* 1991 — swing curves and the case for
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — swing curves and the case for
   anti-reflective coatings.[^brunner-1991]
-* Ito and Willson, *ACS Symp. Ser.* 1984 — chemically amplified
+* [Ito and Willson, *ACS Symp. Ser.* 1984](<https://doi.org/10.1021/bk-1984-0242.ch002>) — chemically amplified
   resists.[^ito-1984]
-* MacDonald et al., *Proc. SPIE* 1991 — airborne amine contamination of
+* [MacDonald et al., *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46354>) — airborne amine contamination of
   chemically amplified resist and filtered air.[^macdonald-1991]
-* Smith and Mack, *Proc. SPIE* 2001 — reaction–diffusion models of the
+* [Smith and Mack, *Proc. SPIE* 2001](<https://doi.org/10.1117/12.436827>) — reaction–diffusion models of the
   post-exposure bake.[^smith-mack-2001]
-* Ramanan, Kozman and Sims, *Proc. SPIE* 2000 — wafer against bake-plate
+* [Ramanan, Kozman and Sims, *Proc. SPIE* 2000](<https://doi.org/10.1117/12.388375>) — wafer against bake-plate
   temperature uniformity in proximity bake.[^ramanan-2000]
-* Perera, *Proc. SPIE* 1989 — developer design for spray-puddle
+* [Perera, *Proc. SPIE* 1989](<https://doi.org/10.1117/12.953060>) — developer design for spray-puddle
   develop.[^perera-1989]
-* Eto, Ito and Homma, *JJAP* 2007 — wafer temperature and resist CD
+* [Eto, Ito and Homma, *JJAP* 2007](<https://doi.org/10.1143/JJAP.46.3354>) — wafer temperature and resist CD
   during puddle development.[^eto-2007]
-* Fujiwara et al., *Proc. SPIE* 2006 — wafer handling between a
+* [Fujiwara et al., *Proc. SPIE* 2006](<https://doi.org/10.1117/12.656303>) — wafer handling between a
   coat/developer and an in-line exposure tool.[^fujiwara-2006]
-* Dammel, *Diazonaphthoquinone-based Resists* — i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — i-line resist
   chemistry.[^dammel-1993]
-* Norton et al., IIT 2000 — i-line and DUV resists under high-current
+* [Norton et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924278>) — i-line and DUV resists under high-current
   implantation.[^norton-2000]
 
 ## Open questions

@@ -321,65 +321,65 @@ public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Single Wafer"
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Single Wafer"
   entry and its chemistries.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician* — the caption naming a SEZ etcher tool.[^skw-07]
-* SEZ Group, Spin-Processor 223 press release (1999) — the dual-chamber
+* [SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
+  Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — the caption naming a SEZ etcher tool.[^skw-07]
+* [SEZ Group, Spin-Processor 223 press release (1999)](<https://www.surfacefinishing.com/doc/sez-doubles-wafer-processing-capabilities-wit-0001>) — the dual-chamber
   tool, its throughput and applications.[^sez-223-pr]
-* Moov, *Lam Research / SEZ SP223* listing — the 200 mm tool's chambers,
+* [Moov, *Lam Research / SEZ SP223* listing](<https://moov.co/marketplace/wet-etch/sez-lam-research/lam-research-sez-sp223>) — the 200 mm tool's chambers,
   options and applications.[^sez-223-moov]
-* SEZ Group, Spin-Processor 8200 press release (2001) — the double-sided
+* [SEZ Group, Spin-Processor 8200 press release (2001)](<https://web.archive.org/web/20081120145130/http://www.sez.com/31_Jan_01__First_Double_Sided_Single_Wafer_Spin_Processor_Available_for_Cleaning_Applications.SEZ>) — the double-sided
   four-chamber cleaner.[^sez-8200-2001]
-* SEZ Group, Da Vinci order press release (2005) — the first Da Vinci
+* [SEZ Group, Da Vinci order press release (2005)](<https://web.archive.org/web/20090107032902/http://www.sez.com/02_Mar_05__World_Leading_Korean_Manufacturer_Places_Multi_System_Order_for_SEZ_Da_Vinci__Tools.SEZ>) — the first Da Vinci
   sales.[^sez-2005]
-* SEZ Group, *Da Vinci* product page (2008 capture) — the platform's
+* [SEZ Group, *Da Vinci* product page (2008 capture)](<https://web.archive.org/web/20080322001425/http://www.sez.com:80/Da_Vinci.SEZ>) — the platform's
   applications and wafer sizes.[^sez-davinci-2008]
-* SEZ Group, Lam Research acquisition announcement (2007) — SEZ's
+* [SEZ Group, Lam Research acquisition announcement (2007)](<https://web.archive.org/web/20071213223543/http://www.sez.com:80/11_Dec_07__SEZ_Holding_Welcomes_Planned_Acquisition_by_Lam_Research.SEZ>) — SEZ's
   installed base and its move into Lam.[^sez-lam-2007]
-* SCREEN Semiconductor Solutions, SP-2100 launch (2020) — a current
+* [SCREEN Semiconductor Solutions, SP-2100 launch (2020)](<https://www.screen.co.jp/spe/en/information/spe200625>) — a current
   200 mm spin processor.[^screen-sp2100]
-* Fraunhofer IMM, *DSP Cleaning Agent Online Monitoring System* — DSP and
+* [Fraunhofer IMM, *DSP Cleaning Agent Online Monitoring System*](<https://www.imm.fraunhofer.de/content/dam/imm/de/documents/PDFs-neu2018/A-und-S/IMM-DSP_Cleaning_Agent_Online_Monitoring_System%20.pdf>) — DSP and
   DSP+ compositions and their monitoring.[^fraunhofer-dsp]
 
 ### High-level understanding
 
-* Gaulhofer et al. (SEZ and EKC), *European Semiconductor* 1999 — how a
+* [Gaulhofer et al. (SEZ and EKC), *European Semiconductor* 1999](<https://web.archive.org/web/20060117001812/http://www.sez.com:80/NR/rdonlyres/e3nsv7jtmjelajokwc2pivxpcigbahrzmpkjqmcqjbeiv4nzvl7qlr3sxhl7otzjxbrsdw6tls4y3ubhoiijpiwz2qb/polymer_removal_0499.pdf>) — how a
   single-wafer spin processor dispenses, spins off and recirculates
   chemistry.[^sez-polymer-1999]
-* Kinoshita (SEZ), *Post-CMP Cleaning Technique by SEZ* — backside wet
+* [Kinoshita (SEZ), *Post-CMP Cleaning Technique by SEZ*](<https://web.archive.org/web/20060117013206/http://www.sez.com:80/NR/rdonlyres/e7enpr5qqh5rriqc5rsb2wuafgjsrvoycez2ufodmguu27gfnn2xqfmf4al2ukmo7cfqmdm5dwfkx3lfnkizldcy2nb/postcmp.pdf>) — backside wet
   etching after CMP on a chemical spin etcher.[^kinoshita-sez]
-* Kern, ch. 1 of *Handbook of Silicon Wafer Cleaning Technology* — an
+* [Kern, ch. 1 of *Handbook of Silicon Wafer Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — an
   overview of cleaning technology and equipment.[^kern-handbook]
-* Wikipedia, *Hydrofluoric acid* — the main etchant of the
+* [Wikipedia, *Hydrofluoric acid*](<https://en.wikipedia.org/wiki/Hydrofluoric_acid>) — the main etchant of the
   class.[^wiki-hf]
 
 ### Deep dive
 
-* Sumnitsch (SEZ), US 4,903,717 — the gas-cushion support and collecting
+* [Sumnitsch (SEZ), US 4,903,717](<https://patents.google.com/patent/US4903717A/en>) — the gas-cushion support and collecting
   tank of the spin etcher.[^pat-spin-sez]
-* Emslie, Bonner and Peck, *J. Appl. Phys.* 1958 — the flow of a liquid
+* [Emslie, Bonner and Peck, *J. Appl. Phys.* 1958](<https://doi.org/10.1063/1.1723300>) — the flow of a liquid
   film on a rotating disk.[^emslie-1958]
-* Hattori et al., *JES* 1998 — spin cleaning with alternating ozonised
+* [Hattori et al., *JES* 1998](<https://doi.org/10.1149/1.1838798>) — spin cleaning with alternating ozonised
   water and dilute HF.[^hattori-1998]
-* Hattori et al., *IEEE TSM* 2007 — single-wafer spin cleaning with
+* [Hattori et al., *IEEE TSM* 2007](<https://doi.org/10.1109/TSM.2007.901845>) — single-wafer spin cleaning with
   ultra-dilute HF and nitrogen spray.[^hattori-2007]
-* Oinoue et al., *Solid State Phenom.* 2018 — etch-rate distributions of
+* [Oinoue et al., *Solid State Phenom.* 2018](<https://doi.org/10.4028/www.scientific.net/SSP.282.83>) — etch-rate distributions of
   HF/HNO₃ silicon etching in a single-spin process.[^oinoue-2018]
-* Schwartz and Robbins, *JES* 1976 — the oxidation–dissolution mechanism
+* [Schwartz and Robbins, *JES* 1976](<https://doi.org/10.1149/1.2132721>) — the oxidation–dissolution mechanism
   of silicon etching in HF/HNO₃.[^schwartz-1976]
-* Kikuyama et al., *JES* 1994 — very dilute HF and conductivity
+* [Kikuyama et al., *JES* 1994](<https://doi.org/10.1149/1.2054733>) — very dilute HF and conductivity
   monitoring of its etch rate.[^kikuyama-1994]
-* Knotter and Denteneer, *JES* 2001 — the etching mechanism of nitride in
+* [Knotter and Denteneer, *JES* 2001](<https://doi.org/10.1149/1.1348262>) — the etching mechanism of nitride in
   HF solutions.[^knotter-2001]
-* Broussous et al., *Solid State Phenom.* 2005 — backside cleaning on
+* [Broussous et al., *Solid State Phenom.* 2005](<https://doi.org/10.4028/www.scientific.net/SSP.103-104.249>) — backside cleaning on
   silicon, nitride and oxide in an SEZ spin processor.[^broussous-2005]
-* Lee et al., *Solid State Phenom.* 2012 — DSP+ for post-etch residue
+* [Lee et al., *Solid State Phenom.* 2012](<https://doi.org/10.4028/www.scientific.net/SSP.195.128>) — DSP+ for post-etch residue
   removal.[^lee-2012-dsp]
-* Mui et al., *IEEE TSM* 2011 — a model of wafer surface charging in
+* [Mui et al., *IEEE TSM* 2011](<https://doi.org/10.1109/TSM.2011.2162346>) — a model of wafer surface charging in
   single-wafer wet spin processes.[^mui-2011]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology* — wet cleaning, residue removal and particle
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>) — wet cleaning, residue removal and particle
   control.[^reinhardt-2008]
 
 ## Open questions

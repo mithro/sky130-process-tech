@@ -386,75 +386,75 @@ thicknesses are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the HDP entry and
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the HDP entry and
   its fill capability.[^skw-01]
-* SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician* — the caption naming a Novellus high density plasma
+* [SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
+  Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — the caption naming a Novellus high density plasma
   tool.[^skw-07]
-* Novellus Systems, *Dielectric – HDP Solutions* (2001 capture) — SPEED,
+* [Novellus Systems, *Dielectric – HDP Solutions* (2001 capture)](<https://web.archive.org/web/20011202103556/http://www.novellus.com:80/products/hdp.asp>) — SPEED,
   SPEED/SEQUEL and the hemispherical source.[^novellus-hdp-2001]
-* Applied Materials, *HDP-CVD* product page (2001) — the Ultima on the
+* [Applied Materials, *HDP-CVD* product page (2001)](<https://web.archive.org/web/20010817112354/http://www.appliedmaterials.com:80/products/hdp_cvd.html>) — the Ultima on the
   Centura platform and its films.[^amat-hdp-2001]
 * Applied Materials, Ultima film pages (2002) — HDP PSG, IMD USG and STI
   USG.[^amat-hdp-psg-2002][^amat-hdp-imd-2002][^amat-hdp-sti-2002]
-* Applied Materials, *1997 Annual Report* — the first HDP system, the
+* [Applied Materials, *1997 Annual Report*](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the first HDP system, the
   Ultima and its remote plasma clean.[^amat-1997]
-* Novellus Systems, SPEED Max press release (2009) — the
+* [Novellus Systems, SPEED Max press release (2009)](<https://newsroom.lamresearch.com/2009-10-05-NOVELLUS-SPEED-R-MAX-HDP-CVD-DIELECTRIC-GAPFILL-SYSTEM-EXTENDS-STI-APPLICATION-TO-32nm>) — the
   sputter-to-deposition ratio and the remote plasma source.[^lam-speed]
-* Benzing, Broadbent and Rough (Novellus), US 5,346,578 — the
+* [Benzing, Broadbent and Rough (Novellus), US 5,346,578](<https://patents.google.com/patent/US5346578A/en>) — the
   hemispherical induction source.[^pat-icp-novellus]
-* Redeker et al. (Applied Materials), US 6,170,428 — an HDP-CVD reactor
+* [Redeker et al. (Applied Materials), US 6,170,428](<https://patents.google.com/patent/US6170428B1/en>) — an HDP-CVD reactor
   with dual coils, helium-cooled chuck and remote clean.[^pat-hdp-reactor-amat]
-* Papasouliotis et al. (Novellus and IBM), US 6,030,881 — HDP gap fill
+* [Papasouliotis et al. (Novellus and IBM), US 6,030,881](<https://patents.google.com/patent/US6030881A/en>) — HDP gap fill
   with varying etch-to-deposition ratios.[^pat-hdp-novellus]
 * SkyWater PDK Authors, `metal_stack.svg` — the FOX, PSG and NILD
   dielectrics.[^pdk-04]
-* Trikon Technologies, Form 10-K for 1996 — the Planar 200 Flowfill
+* [Trikon Technologies, Form 10-K for 1996](<http://web.archive.org/web/20081012193325/http://www.getfilings.com/o0000898430-97-001539.html>) — the Planar 200 Flowfill
   system, set against HDP gap fill.[^trikon-10k-1996]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma-enhanced chemical vapor deposition* — capacitive
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>) — capacitive
   and inductive discharges.[^wiki-pecvd]
-* Wikipedia, *Phosphine* and *Nitrogen trifluoride* — the dopant and
+* Wikipedia, [*Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>) and [*Nitrogen trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) — the dopant and
   clean gases.[^wiki-ph3][^wiki-nf3]
-* Wikipedia, *Novellus Systems* — the vendor and its acquisition by
+* [Wikipedia, *Novellus Systems*](<https://en.wikipedia.org/wiki/Novellus_Systems>) — the vendor and its acquisition by
   Lam.[^wiki-novellus]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the introduction of
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the introduction of
   SPEED.[^novellus-history]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — CVD and
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — CVD and
   back-end dielectrics.[^txt-01]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — HDP-CVD among the deposition chapters.[^txt-09]
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — HDP-CVD among the deposition chapters.[^txt-09]
 
 ### Deep dive
 
-* Nguyen, *IBM J. Res. Dev.* 1999 — a review of HDP-CVD dielectrics and
+* [Nguyen, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.431.0109>) — a review of HDP-CVD dielectrics and
   gap fill.[^nguyen-1999]
-* Hopwood, *Plasma Sources Sci. Technol.* 1992 — a review of inductively
+* [Hopwood, *Plasma Sources Sci. Technol.* 1992](<https://doi.org/10.1088/0963-0252/1/2/006>) — a review of inductively
   coupled plasma sources.[^hopwood-1992]
-* Schwartz and Johns, *J. Electrochem. Soc.* 1992 — gap fill by PECVD
+* [Schwartz and Johns, *J. Electrochem. Soc.* 1992](<https://doi.org/10.1149/1.2069327>) — gap fill by PECVD
   deposition and sputter-etch cycles.[^schwartz-1992]
-* Nishimura et al., *JJAP* 2002 — HDP-CVD gap fill for 0.13 µm STI and
+* [Nishimura et al., *JJAP* 2002](<https://doi.org/10.1143/JJAP.41.2886>) — HDP-CVD gap fill for 0.13 µm STI and
   its topography model.[^nishimura-2002]
-* Lee et al., *JJAP* 1998 — STI characteristics with HDP-CVD fill oxide
+* [Lee et al., *JJAP* 1998](<https://doi.org/10.1143/JJAP.37.1222>) — STI characteristics with HDP-CVD fill oxide
   and the D/S ratio.[^lee-1998-sti]
-* Vassiliev, *Electrochem. Solid-State Lett.* 1999 — properties and gap
+* [Vassiliev, *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390964>) — properties and gap
   fill of HDP PSG.[^vassiliev-1999]
-* Hsiao, Liu and Wang, *JVST B* 2005 — thermal budget and phosphorus
+* [Hsiao, Liu and Wang, *JVST B* 2005](<https://doi.org/10.1116/1.2050670>) — thermal budget and phosphorus
   bonding in HDP PSG.[^hsiao-2005]
-* Denison, Barbour and Burkhart, *JVST A* 1996 — fluorine-doped oxide
+* [Denison, Barbour and Burkhart, *JVST A* 1996](<https://doi.org/10.1116/1.580280>) — fluorine-doped oxide
   from a high-density plasma.[^denison-1996]
-* Hwang and Giapis, P2ID 1998 — charging during inter-level oxide
+* [Hwang and Giapis, P2ID 1998](<https://doi.org/10.1109/PPID.1998.725600>) — charging during inter-level oxide
   deposition in HDP tools.[^hwang-1998]
-* Roche and McVittie, P2ID 1996 — an in-situ charging probe on a
+* [Roche and McVittie, P2ID 1996](<https://doi.org/10.1109/PPID.1996.715205>) — an in-situ charging probe on a
   production HDP CVD tool.[^roche-1996]
-* Chen et al., P2ID 2002 — reducing plasma damage in HDP PSG.[^chen-2002-psg]
-* Tan, Li and Zygmunt (Applied Materials), US 6,914,016 — a heated HDP
+* [Chen et al., P2ID 2002](<https://doi.org/10.1109/PPID.2002.1042613>) — reducing plasma damage in HDP PSG.[^chen-2002-psg]
+* [Tan, Li and Zygmunt (Applied Materials), US 6,914,016](<https://patents.google.com/patent/US6914016B2/en>) — a heated HDP
   fluorinated-oxide process for high-aspect-ratio gaps.[^pat-hdp-amat]
-* Kilgore et al. (Novellus), US 6,200,412 — clean-gas injection and
+* [Kilgore et al. (Novellus), US 6,200,412](<https://patents.google.com/patent/US6200412B1/en>) — clean-gas injection and
   fluorine residue in an HDP chamber.[^pat-hdp-clean-novellus]
-* Rossman et al. (Applied Materials), US 6,121,161 — seasoning films
+* [Rossman et al. (Applied Materials), US 6,121,161](<https://patents.google.com/patent/US6121161A/en>) — seasoning films
   against sodium from the dome and nozzles.[^pat-seasoning-amat]
 
 ## Open questions

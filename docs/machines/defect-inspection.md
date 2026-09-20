@@ -393,72 +393,72 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* LinkedIn, SkyWater *Defect Technician 2* posting — the defect-metrology
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology
   tool list "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-* SkyWater Technology, *Facilities & Capabilities* — the reticle
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the reticle
   inspection, outgoing-QA and physical-analysis entries; no wafer
   inspection tool.[^skw-01]
-* ITRS 2001, *Yield Enhancement* — defect detection and review
+* [ITRS 2001, *Yield Enhancement*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>) — defect detection and review
   requirements, PSL calibration and sampling.[^itrs-2001-yield]
 * Tencor, *Surfscan SP1* introduction press release (1996), white paper
   and technical details (1997) — the launch date, laser scattering,
   stationary-beam design, haze and
   throughput.[^tencor-sp1-1996][^tencor-sp1-wp][^tencor-sp1-tech]
-* Tencor, *Unpatterned Wafer Inspection* and *Patterned Wafer Inspection*
+* Tencor, [*Unpatterned Wafer Inspection*](<https://web.archive.org/web/19970302033400/http://www.tencor.com:80/products/uwaferinpection.html>) and [*Patterned Wafer Inspection*](<https://web.archive.org/web/19970302033408/http://www.tencor.com:80/products/pwaferinpection.html>)
   pages (1997) — the Surfscan 6220, 6420, AIT and
   7700.[^tencor-unpatterned-1997][^tencor-patterned-1997]
-* Tencor, Surfscan AIT press release (1995) — the first high-speed
+* [Tencor, Surfscan AIT press release (1995)](<https://web.archive.org/web/19970302034359/http://www.tencor.com:80/press/surfscan.html>) — the first high-speed
   in-line patterned inspector, developed with SEMATECH.[^tencor-ait-1995]
 * Tencor, *Laser Confocal Review* page (1997) and ADC press release
   (1996) — optical review and automatic
   classification.[^tencor-crs-1997][^tencor-adc-1996]
-* Tencor, *Defect Data Analysis* page (1997) — the SwiftAccess defect
+* [Tencor, *Defect Data Analysis* page (1997)](<https://web.archive.org/web/19970302033417/http://www.tencor.com:80/products/defectdata.html>) — the SwiftAccess defect
   database.[^tencor-defectdata-1997]
-* KLA-Tencor, *Surfscan SP1 DLS*, *AIT XP*, *2351* and *eV300* product
-  pages and the *Defect Control* menu (2002) — the inspection and review
+* KLA-Tencor, [*Surfscan SP1 DLS*](<https://web.archive.org/web/20020208135136/http://www.kla-tencor.com:80/products/defect_control/surfscan-sp1/surfscan.html>), [*AIT XP*](<https://web.archive.org/web/20020604135033/http://www.kla-tencor.com:80/products/defect_control/aitxp/aitxp.html>), [*2351*](<https://web.archive.org/web/20020131004355/http://www.kla-tencor.com:80/products/defect_control/2351/2351.html>) and [*eV300*](<https://web.archive.org/web/20020208135357/http://www.kla-tencor.com:80/products/defect_control/ev300/ev300.html>) product
+  pages and the [*Defect Control*](<https://web.archive.org/web/20020603184120/http://www.kla-tencor.com:80/products/defect_control/index.html>) menu (2002) — the inspection and review
   line at the 130 nm
   node.[^kla-sp1dls-2002][^kla-aitxp][^kla-2351][^kla-ev300][^kla-defect-2002]
 
 ### High-level understanding
 
-* Wikipedia, *Dark-field microscopy* — imaging with the unscattered beam
+* [Wikipedia, *Dark-field microscopy*](<https://en.wikipedia.org/wiki/Dark-field_microscopy>) — imaging with the unscattered beam
   excluded.[^wiki-darkfield]
-* Wikipedia, *Scanning electron microscope* — the imaging behind e-beam
+* [Wikipedia, *Scanning electron microscope*](<https://en.wikipedia.org/wiki/Scanning_electron_microscope>) — the imaging behind e-beam
   review.[^wiki-sem]
-* Wikipedia, *KLA Corporation* — the inspection vendor.[^wiki-kla]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — process
+* [Wikipedia, *KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the inspection vendor.[^wiki-kla]
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — process
   monitoring in a 200 mm fab.[^txt-07]
 
 ### Deep dive
 
-* Galbraith (Tencor), US 4,378,159 — the scanning laser contaminant and
+* [Galbraith (Tencor), US 4,378,159](<https://patents.google.com/patent/US4378159A/en>) — the scanning laser contaminant and
   defect detector.[^pat-scan-tencor]
-* Galbraith (Tencor), US 4,601,576 — a two-stage collector for scattered
+* [Galbraith (Tencor), US 4,601,576](<https://patents.google.com/patent/US4601576A/en>) — a two-stage collector for scattered
   light.[^pat-collector-tencor]
-* Levy and Sandland (KLA), US 4,247,203 — die-to-die comparison in a photomask
+* [Levy and Sandland (KLA), US 4,247,203](<https://patents.google.com/patent/US4247203A/en>) — die-to-die comparison in a photomask
   inspector.[^pat-photomask-kla]
-* Jordan, Nikoonahad and Wells (KLA-Tencor), US 5,864,394 — patterned-wafer
+* [Jordan, Nikoonahad and Wells (KLA-Tencor), US 5,864,394](<https://patents.google.com/patent/US5864394A/en>) — patterned-wafer
   inspection by comparing adjacent repeating patterns.[^pat-inspect-kla]
-* Vaez-Iravani, Stokowski and Zhao (KLA-Tencor), US 6,201,601 — normal and
+* [Vaez-Iravani, Stokowski and Zhao (KLA-Tencor), US 6,201,601](<https://patents.google.com/patent/US6201601B1/en>) — normal and
   oblique illumination with curved-mirror collection and spatial filters
   for bare wafers and rough films.[^pat-oblique-kla]
-* Alumot et al. (Orbot Instruments), US 5,699,447 — two-phase optical
+* [Alumot et al. (Orbot Instruments), US 5,699,447](<https://patents.google.com/patent/US5699447A/en>) — two-phase optical
   inspection.[^pat-twophase-orbot]
-* Radin, *Proc. SPIE* 1988 — defect reduction with an automated KLA-2020
+* [Radin, *Proc. SPIE* 1988](<https://doi.org/10.1117/12.968369>) — defect reduction with an automated KLA-2020
   inspector against operator inspection.[^radin-1988]
-* Sherman, Tirosh and Smilansky, *Proc. SPIE* 1993 — automatic
+* [Sherman, Tirosh and Smilansky, *Proc. SPIE* 1993](<https://doi.org/10.1117/12.144824>) — automatic
   classification of patterned-wafer defects.[^sherman-1993]
-* Breaux and Singh, ISSM 1995 — an ADC system combining image processing
+* [Breaux and Singh, ISSM 1995](<https://doi.org/10.1109/ISSM.1995.524362>) — an ADC system combining image processing
   and fuzzy logic.[^breaux-1995]
-* Nurani, Akella and Strojwas, *IEEE TSM* 1996 — cost-based defect
+* [Nurani, Akella and Strojwas, *IEEE TSM* 1996](<https://doi.org/10.1109/66.542166>) — cost-based defect
   sampling for yield management.[^nurani-1996]
-* Tobin et al., *Proc. SPIE* 1997 — spatial signature analysis of wafer
+* [Tobin et al., *Proc. SPIE* 1997](<https://doi.org/10.1117/12.275936>) — spatial signature analysis of wafer
   maps.[^tobin-1997]
-* Scheer, *Proc. SPIE* 1996 — a physical haze and microroughness
+* [Scheer, *Proc. SPIE* 1996](<https://doi.org/10.1117/12.256193>) — a physical haze and microroughness
   standard.[^scheer-1996]
-* Ono, Iwata and Watanabe, ASMC 2002 — the accuracy of kill-ratio yield
+* [Ono, Iwata and Watanabe, ASMC 2002](<https://doi.org/10.1109/ASMC.2002.1001580>) — the accuracy of kill-ratio yield
   impact.[^ono-2002]
-* Stapper (IBM), *IBM J. Res. Dev.* 1983 — defect-sensitivity models and
+* [Stapper (IBM), *IBM J. Res. Dev.* 1983](<https://doi.org/10.1147/rd.276.0549>) — defect-sensitivity models and
   test sites.[^stapper-1983]
 
 ## Open questions

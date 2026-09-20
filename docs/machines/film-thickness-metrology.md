@@ -356,68 +356,68 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the Mirra's
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Mirra's
   "On board metrology", the APC line and the PECVD "R.I."
   options.[^skw-01]
-* ITRS 2001, *Metrology* — thickness precision, integrated metrology and
+* [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — thickness precision, integrated metrology and
   monitor-wafer use.[^itrs-2001-met]
 * Tencor, *Thin Film Measurement* and *Thin Film Stress Measurement* pages
   (1997) and UV-1270SE press release (1996) — the Prometrix optical gauges
   and the FLX stress
   gauges.[^tencor-thinfilm-1997][^tencor-stress-1997][^tencor-uv1270se-1996]
-* KLA-Tencor, *FLX-2320* product page (2002) — dual-wavelength stress
+* [KLA-Tencor, *FLX-2320* product page (2002)](<https://web.archive.org/web/20020820125852/http://www.kla-tencor.com:80/products/metrology/FLX-2320/FLX-2320.html>) — dual-wavelength stress
   measurement.[^kla-flx2320]
 * Therma-Wave, *Opti-Probe 3260*, *Opti-Probe 5000* and corporate history
   pages — beam profile methods, range and
   precision.[^tw-op3260][^tw-op5000][^tw-history]
-* Rudolph Technologies, 1999 annual report — ellipsometry, reflectometry
+* [Rudolph Technologies, 1999 annual report](<https://web.archive.org/web/20000830152419/http://www.rudolphtech.com:80/ir/6859Rudolph99AR.pdf>) — ellipsometry, reflectometry
   and optical acoustics.[^rudolph-1999]
-* Nanometrics, Form 10-K for 2000 — reflectometry products and integrated
+* [Nanometrics, Form 10-K for 2000](<https://web.archive.org/web/20030323070701/http://www.nanometrics.com:80/Downloads/10k_2000.pdf>) — reflectometry products and integrated
   metrology on Applied Materials tools.[^nanometrics-2000]
 
 ### High-level understanding
 
 * Wikipedia, *Ellipsometry*.[^wiki-ellipsometry]
-* Wikipedia, *Picosecond ultrasonics* — sound echoes from thin
+* [Wikipedia, *Picosecond ultrasonics*](<https://en.wikipedia.org/wiki/Picosecond_ultrasonics>) — sound echoes from thin
   films.[^wiki-picosecond]
 * Wikipedia, *Fourier-transform infrared spectroscopy*.[^wiki-ftir]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — process
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — process
   monitoring in a 200 mm fab.[^txt-07]
 
 ### Deep dive
 
-* Gold, Willenborg, Opsal and Rosencwaig (Therma-Wave), US 4,999,014 —
+* [Gold, Willenborg, Opsal and Rosencwaig (Therma-Wave), US 4,999,014](<https://patents.google.com/patent/US4999014A/en>) —
   thickness from reflected intensity against angle of
   incidence.[^pat-bpr-thermawave]
-* Spanier et al. (Rudolph), US 5,166,752 — simultaneous multiple-angle,
+* [Spanier et al. (Rudolph), US 5,166,752](<https://patents.google.com/patent/US5166752A/en>) — simultaneous multiple-angle,
   multiple-wavelength ellipsometry.[^pat-maiwl-rudolph]
-* Rosencwaig et al., *APL* 1992 — beam profile reflectometry for
+* [Rosencwaig et al., *APL* 1992](<https://doi.org/10.1063/1.107323>) — beam profile reflectometry for
   dielectric films.[^rosencwaig-1992]
-* Fanton et al., *JAP* 1993 — multiparameter measurements by beam profile
+* [Fanton et al., *JAP* 1993](<https://doi.org/10.1063/1.352421>) — multiparameter measurements by beam profile
   reflectometry.[^fanton-1993]
-* Chandler-Horowitz, AIP Conf. Proc. 2003 — the precision of ultra-thin
+* [Chandler-Horowitz, AIP Conf. Proc. 2003](<https://doi.org/10.1063/1.1622490>) — the precision of ultra-thin
   oxide thickness by ellipsometry.[^chandler-horowitz-2003]
-* Kaiser, *Proc. SPIE* 1991 — correlating thickness gauges through optical
+* [Kaiser, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.44451>) — correlating thickness gauges through optical
   constants.[^kaiser-1991]
-* SEMI MF576 — the ellipsometric test method for insulator thickness and
+* [SEMI MF576](<https://store-us.semi.org/products/mf057600-semi-mf576-test-method-for-measurement-of-insulator-thickness-and-refractive-index-on-silicon-substrates-by-ellipsometry>) — the ellipsometric test method for insulator thickness and
   index.[^semi-mf576]
-* Stout and Krishnan, *Proc. SPIE* 1989 — infrared determination of boron
+* [Stout and Krishnan, *Proc. SPIE* 1989](<https://doi.org/10.1117/12.969563>) — infrared determination of boron
   and phosphorus in doped glass.[^stout-1989]
-* Shiraiwa and Fujino, *Adv. X-ray Anal.* 1968 — theory of coating
+* [Shiraiwa and Fujino, *Adv. X-ray Anal.* 1968](<https://doi.org/10.1154/S0376030800005917>) — theory of coating
   thickness by X-ray fluorescence.[^shiraiwa-1968]
-* Windover, AIP Conf. Proc. 2001 — in-line X-ray reflectivity for thin
+* [Windover, AIP Conf. Proc. 2001](<https://doi.org/10.1063/1.1354405>) — in-line X-ray reflectivity for thin
   metal films.[^windover-2001]
-* Thomsen et al., *Phys. Rev. B* 1986 — generation and detection of
+* [Thomsen et al., *Phys. Rev. B* 1986](<https://doi.org/10.1103/PhysRevB.34.4129>) — generation and detection of
   picosecond stress pulses.[^thomsen-1986]
-* Tauc, Maris and Thomsen (Brown University), US 4,710,030 — the optical
+* [Tauc, Maris and Thomsen (Brown University), US 4,710,030](<https://patents.google.com/patent/US4710030A/en>) — the optical
   stress-pulse generator and detector.[^pat-picosecond-brown]
-* Stoner et al., 1998 — picosecond ultrasonics for thin metal process
+* [Stoner et al., 1998](<https://doi.org/10.1063/1.56821>) — picosecond ultrasonics for thin metal process
   control.[^stoner-1998]
-* Flinn, Gardner and Nix, *IEEE TED* 1987 — stress in aluminium
+* [Flinn, Gardner and Nix, *IEEE TED* 1987](<https://doi.org/10.1109/T-ED.1987.22981>) — stress in aluminium
   metallisation from wafer curvature.[^flinn-1987]
-* Stoney, *Proc. R. Soc. A* 1909 — the tension of deposited metal
+* [Stoney, *Proc. R. Soc. A* 1909](<https://doi.org/10.1098/rspa.1909.0021>) — the tension of deposited metal
   films.[^stoney-1909]
-* Hu, *J. Appl. Phys.* 1991 — stress-related problems in silicon
+* [Hu, *J. Appl. Phys.* 1991](<https://doi.org/10.1063/1.349282>) — stress-related problems in silicon
   technology.[^hu-1991]
 
 ## Open questions

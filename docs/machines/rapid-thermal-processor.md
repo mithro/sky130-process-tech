@@ -338,66 +338,66 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the Heatpulse entry
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Heatpulse entry
   and the special modules quoted on this page.[^skw-01]
-* SemiStar, *AG Associates Heatpulse 8800 / 8808* — the reseller's
+* [SemiStar, *AG Associates Heatpulse 8800 / 8808*](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) — the reseller's
   description and applications, with a specification that repeats the
   PDF's 8108 section.[^ag-8800]
-* SemiStar, *Heatpulse 4100 / 8108 / 8800 / 8800i Specifications* — the
+* [SemiStar, *Heatpulse 4100 / 8108 / 8800 / 8800i Specifications*](<https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>) — the
   reseller PDF's per-model specifications and facilities.[^ag-8108]
-* Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108 RTP* — the
+* [Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108 RTP*](<https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>) — the
   current supplier's description and options.[^plasmatherm-ag]
-* Mattson Technology and Metron Technology, press release (2002) — the
+* [Mattson Technology and Metron Technology, press release (2002)](<https://web.archive.org/web/20030713065644/http://mattson.com/news/pr020227.html>) — the
   ownership of the AG Associates product line.[^mattson-metron-2002]
-* Applied Materials, *1997 Annual Report* — the RTP Centura, RTP XE
+* [Applied Materials, *1997 Annual Report*](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the RTP Centura, RTP XE
   Centura and the nitric oxide process.[^amat-1997]
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — the light-pipe
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — the light-pipe
   lamphead, multi-pyrometer control and slip.[^pat-rtp-amat]
 
 ### High-level understanding
 
-* Wikipedia, *Rapid thermal processing* — the class, its uses and its
+* [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>) — the class, its uses and its
   compromises.[^wiki-rtp]
-* Fair (ed.), *Rapid Thermal Processing: Science and Technology* — the
+* [Fair (ed.), *Rapid Thermal Processing: Science and Technology*](<https://openlibrary.org/isbn/9780122476907>) — the
   standard book on the technique.[^txt-10]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — annealing,
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — annealing,
   diffusion and RTP in context.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — RTP in
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — RTP in
   deep-submicron flows.[^txt-05]
 
 ### Deep dive
 
-* Roozeboom and Parekh, *JVST B* 1990 — RTP systems and temperature
+* [Roozeboom and Parekh, *JVST B* 1990](<https://doi.org/10.1116/1.584902>) — RTP systems and temperature
   control, with fifteen equipment makers.[^roozeboom-1990]
-* Sedgwick, *J. Electrochem. Soc.* 1983 — short-time annealing regimes and
+* [Sedgwick, *J. Electrochem. Soc.* 1983](<https://doi.org/10.1149/1.2119736>) — short-time annealing regimes and
   energy sources.[^sedgwick-1983]
-* Nulman, Krusius and Gat, *IEEE EDL* 1985 — rapid thermal oxidation of
+* [Nulman, Krusius and Gat, *IEEE EDL* 1985](<https://doi.org/10.1109/EDL.1985.26099>) — rapid thermal oxidation of
   thin gate dielectrics.[^nulman-1985]
-* Hori, Iwasaki and Tsuji, *IEEE TED* 1989 — reoxidised nitrided oxides
+* [Hori, Iwasaki and Tsuji, *IEEE TED* 1989](<https://doi.org/10.1109/16.19935>) — reoxidised nitrided oxides
   made by RTP.[^hori-1989]
-* Hwang et al., *Appl. Phys. Lett.* 1991 — RTP N₂O oxynitride as a boron
+* [Hwang et al., *Appl. Phys. Lett.* 1991](<https://doi.org/10.1063/1.106290>) — RTP N₂O oxynitride as a boron
   barrier.[^hwang-1991]
-* Ito, Nozaki and Ishikawa, *J. Electrochem. Soc.* 1980 — thermal
+* [Ito, Nozaki and Ishikawa, *J. Electrochem. Soc.* 1980](<https://doi.org/10.1149/1.2130065>) — thermal
   nitridation of oxide in ammonia.[^ito-1980]
-* Sorrell and Gyurcsik, *IEEE TSM* 1993 — emissivity correction in
+* [Sorrell and Gyurcsik, *IEEE TSM* 1993](<https://doi.org/10.1109/66.238178>) — emissivity correction in
   pyrometer control.[^sorrell-1993]
-* Chen et al., RTP 2002 — emissivity effects on lightpipe thermometry at
+* [Chen et al., RTP 2002](<https://doi.org/10.1109/RTP.2002.1039440>) — emissivity effects on lightpipe thermometry at
   NIST.[^chen-2002-rtp]
-* Hebb and Jensen, *J. Electrochem. Soc.* 1996 — pattern effects on
+* [Hebb and Jensen, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1836598>) — pattern effects on
   temperature uniformity.[^hebb-1996]
-* Schaper et al., *J. Electrochem. Soc.* 1994 — modelling and multizone
+* [Schaper et al., *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2059302>) — modelling and multizone
   control of RTP systems.[^schaper-1994]
-* Deaton and Massoud, *J. Appl. Phys.* 1991 — thermal stress in rapid
+* [Deaton and Massoud, *J. Appl. Phys.* 1991](<https://doi.org/10.1063/1.349254>) — thermal stress in rapid
   thermal oxidation.[^deaton-1991]
-* Yoo et al., *Jpn. J. Appl. Phys.* 2002 — slip in 200 mm and 300 mm
+* [Yoo et al., *Jpn. J. Appl. Phys.* 2002](<https://doi.org/10.1143/JJAP.41.4442>) — slip in 200 mm and 300 mm
   wafers during high-temperature single-wafer processing.[^yoo-2002]
-* Stolk et al., *J. Appl. Phys.* 1997 — transient enhanced diffusion, the
+* [Stolk et al., *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — transient enhanced diffusion, the
   reason for short anneals.[^stolk-1997]
-* Yu et al. (TSMC), *Proc. SPIE* 1999 — in-situ steam generation for
+* [Yu et al. (TSMC), *Proc. SPIE* 1999](<https://doi.org/10.1117/12.360557>) — in-situ steam generation for
   ultrathin gate oxide.[^yu-1999]
-* Teasdale et al., *Electrochem. Solid-State Lett.* 2001 — single-wafer
+* [Teasdale et al., *Electrochem. Solid-State Lett.* 2001](<https://doi.org/10.1149/1.1359056>) — single-wafer
   rapid thermal LPCVD nitride.[^teasdale-2001]
-* Sheets (Tamarack Scientific), US 4,649,261 — an early integrating
+* [Sheets (Tamarack Scientific), US 4,649,261](<https://patents.google.com/patent/US4649261A/en>) — an early integrating
   light-pipe heater.[^pat-rtp-tamarack]
 
 ## Open questions

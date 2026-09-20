@@ -302,65 +302,65 @@ chemistries are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the CMP and
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the CMP and
   single-wafer entries and the absence of a brush scrubber.[^skw-01]
-* Lutz (OnTrak Systems), US 5,442,828 — the DSS double-sided scrubber, its
+* [Lutz (OnTrak Systems), US 5,442,828](<https://patents.google.com/patent/US5442828A/en>) — the DSS double-sided scrubber, its
   brush stations and wet indexer.[^pat-scrubber-ontrak]
-* Lam Research, Synergy Integra press release (1999) — an integrated
+* [Lam Research, Synergy Integra press release (1999)](<https://newsroom.lamresearch.com/1999-06-17-Lam-Research-Corporation-Ships-100th-Synergy-IntegraTM-Integrated-CMP-Cleaning-System>) — an integrated
   post-CMP cleaner and the installed base of OnTrak
   cleaners.[^lam-integra-1999]
-* Lam Research, 1,000th post-CMP clean system press release (2001) —
+* [Lam Research, 1,000th post-CMP clean system press release (2001)](<https://investor.lamresearch.com/2001-02-14-Lam-Research-Ships-1,000th-Post-CMP-Clean-System-To-Philips>) —
   double-sided scrubbing and chemical mechanical cleaning on the Synergy
   Integra.[^lam-clean-1000-2001]
-* Applied Materials, Mirra Mesa press release (1999) — the Mesa
+* [Applied Materials, Mirra Mesa press release (1999)](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>) — the Mesa
   cleaner's modules, chemistries and wafer handling.[^amat-mesa-1999]
-* IPEC-Planar, *AvantGaard 676 Highlights* (1997 capture) — integrated
+* [IPEC-Planar, *AvantGaard 676 Highlights* (1997 capture)](<https://web.archive.org/web/19970626104827/http://www.ipec.com:80/planar/676-spec.html>) — integrated
   spray-box cleaning.[^ipec-676-1997]
-* SpeedFam-IPEC, *CMP Products* (2001 capture) — the Auriga brush-box and
+* [SpeedFam-IPEC, *CMP Products* (2001 capture)](<https://web.archive.org/web/20010412141846/http://www.ipec.com:80/cmp/products.htm>) — the Auriga brush-box and
   megasonic cleaners.[^speedfam-ipec-2001]
-* Strasbaugh, *6DS-SP Series Planarizers* (1999 capture) — cleaning
+* [Strasbaugh, *6DS-SP Series Planarizers* (1999 capture)](<https://web.archive.org/web/19990210100559/http://www.strasbaugh.com:80/cmp1.htm>) — cleaning
   stations and scrubber integration on a polisher.[^strasbaugh-6ds-1999]
-* SCREEN Semiconductor Solutions, SS-3200 for 200 mm launch (2024) — a
+* [SCREEN Semiconductor Solutions, SS-3200 for 200 mm launch (2024)](<https://www.screen.co.jp/spe/en/information/spe241106>) — a
   current 200 mm spin scrubber.[^screen-ss3200]
-* Moov, *Lam Research / SEZ SP223* listing — post-CMP cleaning among the
+* [Moov, *Lam Research / SEZ SP223* listing](<https://moov.co/marketplace/wet-etch/sez-lam-research/lam-research-sez-sp223>) — post-CMP cleaning among the
   223's applications.[^sez-223-moov]
 
 ### High-level understanding
 
-* Sun, Han and Keswani, "Brush Scrubbing for Post-CMP Cleaning" (2017) —
+* [Sun, Han and Keswani, "Brush Scrubbing for Post-CMP Cleaning" (2017)](<https://doi.org/10.1016/B978-0-323-43157-6.00004-5>) —
   a review chapter.[^sun-2017]
-* Kinoshita (SEZ), *Post-CMP Cleaning Technique by SEZ* — backside
+* [Kinoshita (SEZ), *Post-CMP Cleaning Technique by SEZ*](<https://web.archive.org/web/20060117013206/http://www.sez.com:80/NR/rdonlyres/e7enpr5qqh5rriqc5rsb2wuafgjsrvoycez2ufodmguu27gfnn2xqfmf4al2ukmo7cfqmdm5dwfkx3lfnkizldcy2nb/postcmp.pdf>) — backside
   contamination after CMP and wet-etch cleaning.[^kinoshita-sez]
-* SEZ Group, *Da Vinci* product page (2008 capture) — the single-wafer
+* [SEZ Group, *Da Vinci* product page (2008 capture)](<https://web.archive.org/web/20080322001425/http://www.sez.com:80/Da_Vinci.SEZ>) — the single-wafer
   platform the step pages list among scrubbers.[^sez-davinci-2008]
-* Wikipedia, *RCA clean* — the SC-1 chemistry of megasonic
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — the SC-1 chemistry of megasonic
   baths.[^wiki-rca]
 
 ### Deep dive
 
-* Zhang, Raghavan and Weling, *JVST B* 1999 — CMP defects and approaches
+* [Zhang, Raghavan and Weling, *JVST B* 1999](<https://doi.org/10.1116/1.590901>) — CMP defects and approaches
   to post-CMP cleaning.[^zhang-raghavan-1999]
-* Zhang, Busnaina and Ahmadi, *JES* 1999 — particle adhesion in CMP and
+* [Zhang, Busnaina and Ahmadi, *JES* 1999](<https://doi.org/10.1149/1.1391989>) — particle adhesion in CMP and
   removal by rolling in brush cleaning.[^zhang-busnaina-1999]
-* Busnaina et al., *IEEE TSM* 2002 — chemical bonding of particles and
+* [Busnaina et al., *IEEE TSM* 2002](<https://doi.org/10.1109/TSM.2002.804872>) — chemical bonding of particles and
   the need for brush contact.[^busnaina-2002]
-* Xu et al., *JVST B* 2004 — removal of nanosized slurry particles by
+* [Xu et al., *JVST B* 2004](<https://doi.org/10.1116/1.1815319>) — removal of nanosized slurry particles by
   brush scrubbing.[^xu-2004]
-* Philipossian and Sun, *ESSL* 2009 — brush roller design and friction
+* [Philipossian and Sun, *ESSL* 2009](<https://doi.org/10.1149/1.3058994>) — brush roller design and friction
   in post-ILD-CMP scrubbing.[^philipossian-2009]
-* Busnaina, Kashkoush and Gale, *JES* 1995 — megasonic particle removal in
+* [Busnaina, Kashkoush and Gale, *JES* 1995](<https://doi.org/10.1149/1.2050096>) — megasonic particle removal in
   DI water and SC-1.[^busnaina-1995]
-* Gale and Busnaina, *Particul. Sci. Technol.* 1999 — cavitation and
+* [Gale and Busnaina, *Particul. Sci. Technol.* 1999](<https://doi.org/10.1080/02726359908906815>) — cavitation and
   acoustic streaming in megasonic cleaning.[^gale-1999]
-* Mayer and Shwartzman (RCA), US 3,893,869 — the megasonic cleaning
+* [Mayer and Shwartzman (RCA), US 3,893,869](<https://patents.google.com/patent/US3893869A/en>) — the megasonic cleaning
   system.[^pat-megasonic-rca]
-* Jolley, *Solid State Phenom.* 1998 — TMAH as a post-tungsten-CMP
+* [Jolley, *Solid State Phenom.* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.105>) — TMAH as a post-tungsten-CMP
   clean.[^jolley-1998]
-* Devriendt et al., *Solid State Phenom.* 1998 — oxide-CMP defects and
+* [Devriendt et al., *Solid State Phenom.* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.173>) — oxide-CMP defects and
   post-CMP cleaning strategies.[^devriendt-1998]
-* Ge et al., ICSICT 2006 — a post-tungsten-contact-CMP clean at 130 nm
+* [Ge et al., ICSICT 2006](<https://doi.org/10.1109/ICSICT.2006.306249>) — a post-tungsten-contact-CMP clean at 130 nm
   and the defects it caused.[^ge-2006]
-* Ollendorf, Cabral and Fuller, ASMC 2004 — tungsten-filled microscratches
+* [Ollendorf, Cabral and Fuller, ASMC 2004](<https://doi.org/10.1109/ASMC.2004.1309523>) — tungsten-filled microscratches
   after tungsten CMP and a dry plasma clean that removes the metal from
   them.[^ollendorf-2004]
 

@@ -328,17 +328,17 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Physical
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Physical
   Analysis" group.[^skw-01]
-* ITRS 2001, *Metrology* — SEM, FIB and scanning-probe microscopy,
+* [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — SEM, FIB and scanning-probe microscopy,
   profiler flatness data and destructive interconnect
   measurements.[^itrs-2001-met]
-* Hitachi High Technologies America, *S-4800 UHR FE-SEM* product page —
+* [Hitachi High Technologies America, *S-4800 UHR FE-SEM* product page](<https://web.archive.org/web/20091021203654/http://www.hitachi-hta.com:80/products/electron-microscopes-and-focused-ion-beam/field-emission-sem/s-4800-uhr-fe-sem>) —
   resolution, detectors and specimen size.[^hitachi-s4800]
-* FEI, *FIB 200xP* and *FIB 800xP* product pages (1999) and *DualBeam
-  Systems* page (2006) — ion-beam sectioning and dual-beam
+* FEI, [*FIB 200xP*](<https://web.archive.org/web/19990128142220/http://www.feic.com:80/products/fib200xp.htm>) and [*FIB 800xP*](<https://web.archive.org/web/19990417131418/http://www.feic.com:80/products/fib800xp.htm>) product pages (1999) and [*DualBeam
+  Systems*](<https://web.archive.org/web/20061101125513/http://www.fei.com:80/Products/ProdTypes/DualBeamFIB/tabid/69/Default.aspx>) page (2006) — ion-beam sectioning and dual-beam
   tools.[^fei-fib200xp-1999][^fei-fib800-1999][^fei-dualbeam-2006]
-* SELA, *Company Background* page (2001) — conventional and automated
+* [SELA, *Company Background* page (2001)](<https://web.archive.org/web/20011031233400/http://sela.com:80/about.htm>) — conventional and automated
   cleaving for SEM and TEM samples.[^sela-2001]
 * Tencor, *Surface Profiling* page (1997) and HRP-200 press release
   (1996) — stylus profilers and CMP
@@ -353,35 +353,35 @@ Status and expiry are estimates from public records and are not legal advice.
 * Wikipedia, *Focused ion beam*.[^wiki-fib]
 * Wikipedia, *Atomic force microscopy*.[^wiki-afm]
 * Wikipedia, *Profilometer*.[^wiki-profilometer]
-* Wikipedia, *Scanning electron microscope* — secondary-electron
+* [Wikipedia, *Scanning electron microscope*](<https://en.wikipedia.org/wiki/Scanning_electron_microscope>) — secondary-electron
   imaging.[^wiki-sem]
 
 ### Deep dive
 
-* Postek, *Proc. SPIE* 1994 — a review of SEM metrology for integrated
+* [Postek, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.187461>) — a review of SEM metrology for integrated
   circuits.[^postek-1994]
-* Reuss, *Nucl. Instrum. Methods B* 1985 — early prospects for FIB in the
+* [Reuss, *Nucl. Instrum. Methods B* 1985](<https://doi.org/10.1016/0168-583X(85)90299-X>) — early prospects for FIB in the
   semiconductor industry.[^reuss-1985]
-* Nikawa, *J. Vac. Sci. Technol. B* 1991 — FIB applications to VLSI failure
+* [Nikawa, *J. Vac. Sci. Technol. B* 1991](<https://doi.org/10.1116/1.585694>) — FIB applications to VLSI failure
   analysis, including cross-sectioning.[^nikawa-1991]
-* Giannuzzi and Stevie, *Micron* 1999 — FIB milling techniques for TEM
+* [Giannuzzi and Stevie, *Micron* 1999](<https://doi.org/10.1016/S0968-4328(99)00005-0>) — FIB milling techniques for TEM
   specimen preparation.[^giannuzzi-1999]
-* Bennett and Dancy, *Appl. Opt.* 1981 — a stylus profiling instrument and
+* [Bennett and Dancy, *Appl. Opt.* 1981](<https://doi.org/10.1364/AO.20.001785>) — a stylus profiling instrument and
   its resolution.[^bennett-1981]
-* Binnig, Quate and Gerber, *PRL* 1986 — the atomic force
+* [Binnig, Quate and Gerber, *PRL* 1986](<https://doi.org/10.1103/PhysRevLett.56.930>) — the atomic force
   microscope.[^binnig-1986]
-* Martin and Wickramasinghe, *APL* 1994 — sidewall imaging by
+* [Martin and Wickramasinghe, *APL* 1994](<https://doi.org/10.1063/1.111578>) — sidewall imaging by
   AFM.[^martin-1994]
-* Yu et al., *APL* 1992 — dishing in trench-isolation CMP against field
+* [Yu et al., *APL* 1992](<https://doi.org/10.1063/1.107586>) — dishing in trench-isolation CMP against field
   width.[^yu-1992]
-* Stine et al., *IEEE TSM* 1998 — test masks and measurements for
+* [Stine et al., *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — test masks and measurements for
   pattern-dependent CMP variation.[^stine-1998]
-* Spinella, Raineri, La Via and Campisano, *J. Vac. Sci. Technol. B*
-  1996 — junction delineation by selective chemical etching for
+* [Spinella, Raineri, La Via and Campisano, *J. Vac. Sci. Technol. B*
+  1996](<https://doi.org/10.1116/1.588485>) — junction delineation by selective chemical etching for
   electron microscopy.[^spinella-1996]
-* Dixson et al., *Proc. SPIE* 2002 — a CD-AFM reference measurement system
+* [Dixson et al., *Proc. SPIE* 2002](<https://doi.org/10.1117/12.473471>) — a CD-AFM reference measurement system
   for traceable CD metrology at International SEMATECH.[^dixson-2002]
-* Sakata, Takahashi and Sekine, IPFA 2002 — dual-beam FIB defect
+* [Sakata, Takahashi and Sekine, IPFA 2002](<https://doi.org/10.1109/IPFA.2002.1025643>) — dual-beam FIB defect
   sectioning in yield management and the gallium contamination of wafers
   returned to the line.[^sakata-2002]
 

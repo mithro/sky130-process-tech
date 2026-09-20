@@ -296,23 +296,23 @@ not public beyond the PDK's e-test parameter tables, which the
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "Wafer
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "Wafer
   Sort/Test" and "REL Lab" entries and the e-test and cryogenic probing
   services.[^skw-01]
-* BRL Test, *4062UX* listing — the HP 4062UX description and
+* [BRL Test, *4062UX* listing](<https://www.brltest.com/index.php?main_page=product_info&products_id=7874>) — the HP 4062UX description and
   configuration.[^brltest-4062]
-* Keithley Instruments, *Series S600 Parametric Test Systems* data sheet —
+* [Keithley Instruments, *Series S600 Parametric Test Systems* data sheet](<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>) —
   per-pin electronics, parallel test and test-plan software.[^keithley-s600]
-* EE Power, *Agilent Technologies Offers New 4070 Series Testers* (2002) —
+* [EE Power, *Agilent Technologies Offers New 4070 Series Testers* (2002)](<https://eepower.com/new-industry-products/agilent-technologies-offers-new-4070-series-testers/>) —
   the 4072B and 4073B.[^eepower-4070]
 * Electroglas, *Horizon 4090*, *Horizon 4085X* and *Horizon 4090µ* pages
   and 1999 annual report — probers and what they
   do.[^electroglas-4090][^electroglas-4085x][^electroglas-4090u][^electroglas-1999]
-* Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober* — the TEL prober
+* [Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*](<https://www.telcertifiedused.com/cue/buy/product-test.jsp>) — the TEL prober
   line.[^tel-prober]
 * FormFactor, *Cascade SUMMIT200* and *Cascade PMC200* product
   pages.[^formfactor-summit200][^formfactor-pmc200]
-* ITRS 2001, *Yield Enhancement* — parametric data in yield
+* [ITRS 2001, *Yield Enhancement*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>) — parametric data in yield
   learning.[^itrs-2001-yield]
 * Google's SKY130 raw-data repository — the README, the test-tile README
   and pad documentation, and the MDM file
@@ -320,39 +320,39 @@ not public beyond the PDK's e-test parameter tables, which the
 
 ### High-level understanding
 
-* Wikipedia, *Wafer testing* — parametric and functional wafer test and the
+* [Wikipedia, *Wafer testing*](<https://en.wikipedia.org/wiki/Wafer_testing>) — parametric and functional wafer test and the
   prober.[^wiki-test]
 * Wikipedia, *Probe card*.[^wiki-probecard]
 * Wikipedia, *Automatic test equipment*.[^wiki-ate]
-* Wikipedia, *Keithley Instruments* and *Agilent Technologies* — the
+* Wikipedia, [*Keithley Instruments*](<https://en.wikipedia.org/wiki/Keithley_Instruments>) and [*Agilent Technologies*](<https://en.wikipedia.org/wiki/Agilent_Technologies>) — the
   parametric tester vendors.[^wiki-keithley][^wiki-agilent]
 
 ### Deep dive
 
-* Buehler, *Microelectronic Test Patterns*, NBS 1974 — an early NBS
+* [Buehler, *Microelectronic Test Patterns*, NBS 1974](<https://doi.org/10.6028/NBS.SP.400-6>) — an early NBS
   publication on test patterns.[^buehler-1974]
-* Buehler, Grant and Thurber (NBS), *JES* 1978 — bridge and van der Pauw
+* [Buehler, Grant and Thurber (NBS), *JES* 1978](<https://doi.org/10.1149/1.2131517>) — bridge and van der Pauw
   structures for electrical line width.[^buehler-1978]
-* Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983 — four- and
+* [Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983](<https://doi.org/10.1109/T-ED.1983.21334>) — four- and
   six-terminal contact-resistance structures.[^proctor-1983]
-* Sayah and Buehler, ICMTS 1988 — a comb/serpentine/cross-bridge structure
+* [Sayah and Buehler, ICMTS 1988](<https://doi.org/10.1109/ICMTS.1988.672923>) — a comb/serpentine/cross-bridge structure
   tested on a parametric test system.[^sayah-1988]
-* Lukaszek, Grambow and Yarbrough, *IEEE TSM* 1990 — a test chip for
+* [Lukaszek, Grambow and Yarbrough, *IEEE TSM* 1990](<https://doi.org/10.1109/66.47972>) — a test chip for
   automated diagnosis of CMOS yield problems.[^lukaszek-1990]
-* Linholm, Allen and Cresswell, *Proc. SPIE* 1994 — a review of test
+* [Linholm, Allen and Cresswell, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.187462>) — a review of test
   structures for feature placement and electrical line
   width.[^linholm-1994]
-* Bhushan et al., ICMTS 2006 — ring-oscillator arrays read with a frequency
+* [Bhushan et al., ICMTS 2006](<https://doi.org/10.1109/ICMTS.2006.1614281>) — ring-oscillator arrays read with a frequency
   counter.[^bhushan-2006]
-* Ortiz-Conde et al., *Microelectron. Reliab.* 2002 — threshold-voltage
+* [Ortiz-Conde et al., *Microelectron. Reliab.* 2002](<https://doi.org/10.1016/S0026-2714(02)00027-6>) — threshold-voltage
   extraction methods.[^ortiz-conde-2002]
-* Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide* — from parametric
+* [Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide*](<https://doi.org/10.1007/b117400>) — from parametric
   data to model parameters.[^cheng-1999]
-* Spanos, *Proc. IEEE* 1992 — statistical process control in semiconductor
+* [Spanos, *Proc. IEEE* 1992](<https://doi.org/10.1109/5.149445>) — statistical process control in semiconductor
   manufacturing.[^spanos-1992]
-* Broz and Rincon, ITC 1999 — probe contact resistance at elevated
+* [Broz and Rincon, ITC 1999](<https://doi.org/10.1109/TEST.1999.805761>) — probe contact resistance at elevated
   temperature.[^broz-1999]
-* Hunter et al., IMAPS 2012 — bond-pad damage from wafer
+* [Hunter et al., IMAPS 2012](<https://doi.org/10.4071/isom-2012-TP41>) — bond-pad damage from wafer
   probing.[^hunter-2012]
 
 ## Open questions
