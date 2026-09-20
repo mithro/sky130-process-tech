@@ -46,16 +46,15 @@ once.[^pdk-04][^txt-02]
    ```markdown
    ### Deep dive
 
-   * [Oh (Hynix), US 6,806,133](<https://patents.google.com/patent/US6806133B2>) — a
-     contemporaneous triple-well recipe with explicit MeV phosphorus energies and
-     doses.[^pat-dnw-hynix]
+   * [Oh (Hynix), US 6,806,133](<URL>) — a contemporaneous triple-well
+     recipe with explicit MeV phosphorus energies and doses.[^pat-dnw-hynix]
    ```
 
    Where the head names its source by an italic title rather than being
    linkable whole (a role or a backtick precedes the title), link only
    that title. The URL always comes from the bullet's own definition,
    copied character for character, in the angle-bracket form
-   `[head](<https://…>)`; never write a URL in a bullet that the page's
+   `[head](<URL>)`; never write a URL in a bullet that the page's
    footnotes do not already carry (see `tools/check_refs.py`).
 6. **Deep dive must be substantial.** Minimum eight entries on a step
    page or per-mask page, and twelve on a category, machine, material or
@@ -78,7 +77,7 @@ minimum length. It also enforces rule 5's link: every external URL
 written inline in the body of a checked page must equal a URL inside
 one of that page's own footnote definitions, character for character,
 and every such inline link must use the angle-bracket form
-`[text](<https://…>)`.
+`[text](<URL>)`.
 
 ## Exception: generated index pages
 
