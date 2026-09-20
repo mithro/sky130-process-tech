@@ -140,8 +140,67 @@ No checker change was needed for this step either.
   `> THRESHOLD` page (`docs/categories/cmp.md`) by reading the
   generated Markdown and the rendered HTML.
 
+## Step 4 — `gen_patents.py` / `gen_papers.py` / `gen_filings.py` (done)
+
+* **Clickable URLs (patents).** Added `esc_urls()` (wraps a bare
+  `https?://…` in `<…>`, trailing sentence punctuation — comma, full
+  stop, `;`, `:` — put back outside the brackets, everything else
+  still backslash-escaped as `esc()` does) and used it for the family
+  `Verified:` line, each member's `Verified` cell, and each `Notes:`
+  bullet — the three places bare URLs came from (227 + 305 = 532,
+  matching the brief's 533 with the one hand-fixed Cornell CFR URL in
+  the legal-caveat text). Regenerating produced exactly 533
+  insertions/533 deletions in `docs/references/patents/{index,families}.md`
+  — matches the brief's count exactly. `gen_papers.py`/`gen_filings.py`
+  were checked (`grep`) for the same pattern in their datasets: 0 bare
+  URLs found in `notes`/free-text fields today, so no equivalent bug
+  exists there yet — no rendering change was needed for those two
+  beyond the reorder below.
+* **Index reorder**, all three generators, to purpose → browse the
+  views, with counts → how to read an entry → legal caveat (where one
+  exists) → `:::{dropdown} Scope, method and counts` holding the
+  present methodology text verbatim:
+  * `gen_patents.py`: purpose paragraph unchanged; "Other views"
+    (+toctree) then "Counts" moved up together right after it ("browse
+    ... with counts"); "Unexpired and unknown-status families are
+    collapsed" + "Relations" next (how to read an entry); "Legal
+    caveat" next; the retrieval/fetched-note paragraph and "Scope and
+    completeness" moved into the closing dropdown, their own standalone
+    `##` headings dropped (the dropdown's own title now serves that
+    role, matching the site's existing convention of no redundant
+    heading inside a `{dropdown}` — see `family_entry()`).
+  * `gen_papers.py`: same shape, no legal caveat section exists so that
+    step is skipped. The pre-existing `(papers-scope)=` label had to
+    move with its "Scope" content into the dropdown; ~40 bare
+    `{ref}`papers-scope`` mentions elsewhere in this same file
+    auto-resolve to the *target's* heading text, which would have
+    silently changed from "Scope" to "Scope, method and counts"
+    everywhere. Fixed by making that one call site explicit
+    (`{ref}`Scope <papers-scope>``) before moving the label, so the
+    rendered text is unchanged (verified in the rendered HTML — "Basis:
+    process named (see Scope)." reads exactly as before). The other
+    existing bare use, in `designed-on-sky130.md`, was already explicit
+    text ("the index proper") and needed nothing.
+  * `gen_filings.py`: purpose → Other views+toctree → "How to read an
+    entry" → "Lineage timeline" (kept visible and un-collapsed: it is
+    substantive lineage narrative, not methodology, so folding it away
+    would have worked against the readability goal) → dropdown holding
+    the EDGAR access note, the by-company/type/year counts and the
+    "Known gaps" section (its own `## Known gaps` heading changed to a
+    bold `**Known gaps.**` lead-in for the same no-redundant-heading
+    reason as above; not checker-read, confirmed by grep) → "All
+    filings" unaffected.
+* No dataset field, number, quotation or citation changed — verified by
+  reading full diffs of all three regenerated `index.md` files (and
+  `patents/families.md` for the URL wrapping): only headings moved,
+  wording is byte-identical apart from the two heading-to-bold-lead-in
+  conversions and the one explicit-ref-text fix above.
+* Ran all nine checkers, `gen_steps.py --check`, `gen_index_links.py
+  --check`, and all four `gen_*.py --check` (0 problems throughout,
+  including `check_inforce.py`, which inspects dropdowns). `-W` build
+  clean. Rendered and read all three landing pages
+  (`tmp/shots/rd4-{patents,papers,filings}-*.png`, not committed).
+
 ## Remaining
 
-4. `gen_patents.py` / `gen_papers.py` / `gen_filings.py`: clickable
-   URLs, index reorder, `{dropdown}` for methodology.
 5. B9 step-link text script (11 files, 1,975 links).

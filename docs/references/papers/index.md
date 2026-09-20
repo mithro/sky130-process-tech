@@ -40,40 +40,6 @@ fab-publications
 designed-on-sky130
 ```
 
-(papers-scope)=
-## Scope
-
-A paper is included when its subject is the open PDK and its models, a
-device, test structure or reliability study on SKY130, a circuit
-fabricated on the process with silicon or process-specific results, or
-the S8 lineage and the Bloomington fab. Papers that only simulate with
-the PDK (unless they characterise the process or its models), report no
-silicon or process results, concern another SkyWater process, or are
-theses, datasets, slides or posters are left out. Marginal cases are
-marked "Borderline inclusion" in their entries.
-
-Each entry states its **basis**, how its link to the process is
-established:
-
-* **Process named** (40 papers): the abstract or full text names SKY130, the SkyWater 130 nm process or the SkyWater foundry.
-* **Affiliation inference** (15 papers): the process or fab is not named; the link rests on author affiliations; the entry explains the inference.
-* **Lineage inference** (1 paper): the process is not named; the link rests on public Cypress statements about the S8 lineage; the entry explains the inference.
-
-Process and fabrication statements are quoted from the paper itself.
-Free copies are limited to legitimate sources: arXiv, OSTI, institutional
-repositories, preprint servers, open proceedings pages and open-access
-publisher versions.
-
-## How to read an entry
-
-Each entry gives the full citation (authors, title, venue, volume, issue,
-pages and year); where it is published, with its host, access and DOI or
-arXiv link; the free copies with their open-access type; the basis; the
-topics; the institutions named in the author affiliations; a quotation
-naming the process or the fabrication where the paper gives one; the
-related pages of this reference; and the date and record it was checked
-against.
-
 ## Counts
 
 By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1), {ref}`2005 <papers-year-2005>` (2), {ref}`2006 <papers-year-2006>` (3), {ref}`2008 <papers-year-2008>` (1), {ref}`2019 <papers-year-2019>` (2), {ref}`2020 <papers-year-2020>` (4), {ref}`2021 <papers-year-2021>` (3), {ref}`2022 <papers-year-2022>` (2), {ref}`2023 <papers-year-2023>` (10), {ref}`2024 <papers-year-2024>` (11), {ref}`2025 <papers-year-2025>` (9), {ref}`2026 <papers-year-2026>` (7).
@@ -103,6 +69,41 @@ By year: {ref}`1999 <papers-year-1999>` (1), {ref}`2001 <papers-year-2001>` (1),
 | {ref}`Cypress S8 lineage <papers-topic-lineage-s8>` | 1 | 7 |
 | {ref}`Fab publications (Bloomington) <papers-fab-publications>` | 10 | |
 
+## How to read an entry
+
+Each entry gives the full citation (authors, title, venue, volume, issue,
+pages and year); where it is published, with its host, access and DOI or
+arXiv link; the free copies with their open-access type; the basis; the
+topics; the institutions named in the author affiliations; a quotation
+naming the process or the fabrication where the paper gives one; the
+related pages of this reference; and the date and record it was checked
+against.
+
+:::{dropdown} Scope, method and counts
+:name: papers-scope
+
+A paper is included when its subject is the open PDK and its models, a
+device, test structure or reliability study on SKY130, a circuit
+fabricated on the process with silicon or process-specific results, or
+the S8 lineage and the Bloomington fab. Papers that only simulate with
+the PDK (unless they characterise the process or its models), report no
+silicon or process results, concern another SkyWater process, or are
+theses, datasets, slides or posters are left out. Marginal cases are
+marked "Borderline inclusion" in their entries.
+
+Each entry states its **basis**, how its link to the process is
+established:
+
+* **Process named** (40 papers): the abstract or full text names SKY130, the SkyWater 130 nm process or the SkyWater foundry.
+* **Affiliation inference** (15 papers): the process or fab is not named; the link rests on author affiliations; the entry explains the inference.
+* **Lineage inference** (1 paper): the process is not named; the link rests on public Cypress statements about the S8 lineage; the entry explains the inference.
+
+Process and fabrication statements are quoted from the paper itself.
+Free copies are limited to legitimate sources: arXiv, OSTI, institutional
+repositories, preprint servers, open proceedings pages and open-access
+publisher versions.
+:::
+
 ## All papers
 
 Sorted by first author's family name, then year.
@@ -114,7 +115,7 @@ Akin Akturk, Ayushman Tripathi and Mehdi Saligane. "Cryogenic Modeling for Open-
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10310944/) (paywalled) · DOI [10.1109/bcicts54660.2023.10310944](https://doi.org/10.1109/bcicts54660.2023.10310944)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Cryogenic operation <papers-topic-cryogenic>`, {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`, {ref}`Device characterisation <papers-topic-device-characterisation>`, {ref}`Analog and RF circuits <papers-topic-analog-rf>`
 * **Institutions:** CoolCAD Electronics; University of Michigan
 * **Process and fabrication (quoted from the abstract):** "we measure and SPICE-type compact model CMOS devices from the 130nm Skywater technology node, at the ubiquitously used quantum computing temperature of 4K"
@@ -127,7 +128,7 @@ Abdulaziz Alshaya, Qihao Han and Christos Papavassiliou. "RRAM, Device, Model an
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10005367/) (paywalled) · DOI [10.1109/icm56065.2022.10005367](https://doi.org/10.1109/icm56065.2022.10005367)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`, {ref}`RRAM (ReRAM) <papers-topic-rram>`
 * **Institutions:** Imperial College London
 * **Process and fabrication (quoted from the abstract):** "we present a comprehensive presentation and illustration about SkyWater memristor device and model"
@@ -143,7 +144,7 @@ Emilio Isaac Baungarten-Leon, Susana Ortega Cisneros, Mohamed Abdelmoneum, Ruth 
 
 * **Publication:** [MDPI](https://www.mdpi.com/2079-9292/13/9/1704) (free to read) · DOI [10.3390/electronics13091704](https://doi.org/10.3390/electronics13091704)
 * **Free copies:** the MDPI page above — gold (publisher version, CC BY 4.0)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional; Universidad Autónoma de Guadalajara; Intel Corporation
 * **Process and fabrication (quoted from the abstract):** "its manufacturing with the first fabricable open-source Process Design Kit (PDK), SKY130A"
@@ -157,7 +158,7 @@ F. Beall, A. Rimal, O. Seidel, Y. Mei, A. D. McDonald, I. Parmaksiz, V. A. Chira
 
 * **Publication:** arXiv [2604.21625](https://arxiv.org/abs/2604.21625) (preprint, free)
 * **Free copies:** [OSTI](https://www.osti.gov/servlets/purl/3363571) — repository copy (OSTI)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Cryogenic operation <papers-topic-cryogenic>`, {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
 * **Institutions:** University of Texas at Arlington; Rice University; Fermi National Accelerator Laboratory; Wellesley College
 * **Process and fabrication (quoted from the abstract):** "we characterize and model SKY130 low-threshold voltage transistors at 77 K"
@@ -183,7 +184,7 @@ Jason Blocklove, Siddharth Garg, Ramesh Karri and Hammond Pearce. "Evaluating LL
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10691811/) (paywalled) · DOI [10.1109/lad62341.2024.10691811](https://doi.org/10.1109/lad62341.2024.10691811) · arXiv [2405.02326](https://arxiv.org/abs/2405.02326)
 * **Free copies:** arXiv preprint — preprint (arXiv)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** New York University; University of New South Wales
 * **Process and fabrication (quoted from the abstract):** "We taped out the benchmarks on a Skywater 130nm shuttle and received the functional chip."
@@ -196,7 +197,7 @@ Jason Blocklove, Siddharth Garg, Ramesh Karri and Hammond Pearce. "Evaluating LL
 Everest Bloomer, Irem Didin, Ching-Yi Lin and Sahil Shah. "Ising-ReRAM: A Low Power Ising Machine ReRAM Crossbar for NP Problems." *arXiv*, 2026.
 
 * **Publication:** arXiv [2603.12415](https://arxiv.org/abs/2603.12415) (preprint, free)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`RRAM (ReRAM) <papers-topic-rram>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
 * **Institutions:** University of Maryland, College Park
 * **Process and fabrication (quoted from the abstract):** "a ReRAM crossbar fabricated in the Skywater 130 nm CMOS process"
@@ -210,7 +211,7 @@ Everest Bloomer, Irem Didin, Ching-Yi Lin and Sahil Shah. "Ising-ReRAM: A Low Po
 K. E. Castoria, H. Byeon, N. R. Beysengulov, E. O. Glen, M. Sammon, J. Pollanen, D. G. Rees and S. A. Lyon. "Selective Shuttling of Electrons on Helium Using a CMOS Control Platform." *arXiv*, 2025.
 
 * **Publication:** arXiv [2511.15922](https://arxiv.org/abs/2511.15922) (preprint, free)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Quantum <papers-topic-quantum>`, {ref}`Cryogenic operation <papers-topic-cryogenic>`, {ref}`Sensors <papers-topic-sensors>`
 * **Institutions:** EeroQ Corporation
 * **Process and fabrication (quoted from the HTML full text):** "The CMOS control chip \[…\] was fabricated using the SKY130 130 nm CMOS process at the SkyWater Technologies silicon foundry"
@@ -223,7 +224,7 @@ Po-Han Chen, Charles Tsao and Priyanka Raina. "An Open-Source 4 × 8 Coarse-Grai
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10182052/) (paywalled) · DOI [10.1109/iscas46773.2023.10182052](https://doi.org/10.1109/iscas46773.2023.10182052)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** Stanford University
 * **Process and fabrication (quoted from the abstract):** "This is the first CGRA chip designed using the open-source SkyWater 130nm technology and OpenRAM memory compiler."
@@ -236,7 +237,7 @@ Matthew Chen, Charana Sonnadara and Sahil Shah. "Open-source floating-gate cell 
 
 * **Publication:** [Wiley Online Library](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.70036) (free to read) · DOI [10.1049/ell2.70036](https://doi.org/10.1049/ell2.70036)
 * **Free copies:** [Wiley Online Library](https://onlinelibrary.wiley.com/doi/pdfdirect/10.1049/ell2.70036) — gold (publisher version); [Authorea](https://www.authorea.com/doi/full/10.22541/au.172413095.53999511/v1) — preprint
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Floating-gate devices <papers-topic-floating-gate>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
 * **Institutions:** University of Maryland, College Park
 * **Process and fabrication (quoted from the abstract):** "specifically fabricated using the open‐source Skywater 130 nm process"
@@ -250,7 +251,7 @@ S. Choi, A. Raut, T. Wu, S. Dayo, A. Bechdolt, G. Dutta, S. Li, D. T. Rich, R. H
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11353729/) (paywalled) · DOI [10.1109/iedm50572.2025.11353729](https://doi.org/10.1109/iedm50572.2025.11353729)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`BEOL-integrated devices <papers-topic-beol-integration>`, {ref}`RRAM (ReRAM) <papers-topic-rram>`
 * **Institutions:** Stanford University; Carnegie Mellon University; Massachusetts Institute of Technology; SkyWater Technology
 * **Process and fabrication (quoted from the abstract):** "This is achieved at SkyWater Technology Foundry using a 90/130 nm process on 200 mm wafers."
@@ -265,7 +266,7 @@ Jesse Cirimelli-Low, Muhammad Hadir Khan, Samuel Crow, Amogh Lonkar, Bugra Onal,
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10181379/) (paywalled) · DOI [10.1109/iscas46773.2023.10181379](https://doi.org/10.1109/iscas46773.2023.10181379)
 * **Free copies:** [eScholarship](https://escholarship.org/uc/item/9dc0v8g3) — preprint
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Memory <papers-topic-memory>`, {ref}`Digital circuits <papers-topic-digital>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** University of California, Santa Cruz; IOActive
 * **Process and fabrication (quoted from the abstract):** "The first silicon in SkyWater \[…\] has been successfully verified which includes a 32-bit 1-kilobyte dual-port SRAM macro."
@@ -292,7 +293,7 @@ Irem Didin, Carl Brando, Ching-Yi Lin and Sahil Shah. "Characterization and Mode
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11421367/) (free to read) · DOI [10.1109/jxcdc.2026.3670667](https://doi.org/10.1109/jxcdc.2026.3670667)
 * **Free copies:** the IEEE Xplore page above — gold (publisher version); [TechRxiv](https://www.techrxiv.org/doi/full/10.36227/techrxiv.176539494.47601473/v1) — preprint
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`RRAM (ReRAM) <papers-topic-rram>`, {ref}`Device characterisation <papers-topic-device-characterisation>`, {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`
 * **Institutions:** University of Maryland, College Park
 * **Process and fabrication (quoted from the abstract):** "the characterization and compact modeling of ReRAM devices fabricated in the SkyWater 130 nm CMOS process"
@@ -307,7 +308,7 @@ Anuj Dubey and Aydin Aysu. "A Full-Stack Approach for Side-Channel Secure ML Har
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10351114/) (paywalled) · DOI [10.1109/itc51656.2023.00035](https://doi.org/10.1109/itc51656.2023.00035)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Hardware security <papers-topic-security>`, {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** North Carolina State University
 * **Process and fabrication (quoted from the abstract):** "Fourth, we fabricate the final solution at Skywater 130nm node."
@@ -321,7 +322,7 @@ Anuj Dubey, Aydin Aysu and Rosario Cammarota. "ASIC Tape-Out of the First Side-C
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11419083/) (paywalled) · DOI [10.1109/mdat.2026.3670063](https://doi.org/10.1109/mdat.2026.3670063)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Hardware security <papers-topic-security>`, {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** North Carolina State University; University of California, Irvine
 * **Process and fabrication (quoted from the abstract):** "We fabricated the ASIC using the SkyWater 130nm technology node and a fully open-source design flow."
@@ -334,7 +335,7 @@ Tim Edwards. "Google/SkyWater and the Promise of the Open PDK." *Workshop on Ope
 
 * **Publication:** [WOSET proceedings](https://woset-workshop.github.io/WOSET2020.html) (free to read)
 * **Free copies:** [WOSET proceedings](https://woset-workshop.github.io/PDFs/2020/a03.pdf) — conference open-access page
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** Open Circuit Design; Efabless
 * **Process and fabrication (quoted from the PDF full text):** "Fig. 1. Process stack of the SkyWater 130nm open process"
@@ -404,7 +405,7 @@ Jennifer Hasler, Praveen Raj Ayyappan, Afolabi Ige and Pranav Mathews. "A 130nm 
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10431551/) (paywalled) · DOI [10.1109/tcsi.2024.3355070](https://doi.org/10.1109/tcsi.2024.3355070)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Analog and RF circuits <papers-topic-analog-rf>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** Georgia Institute of Technology
 * **Process and fabrication (quoted from the abstract):** "an experimentally measured, implemented, openly-available programmable analog standard cell library in Skywater’s 130nm CMOS process"
@@ -416,7 +417,7 @@ Jennifer Hasler, Praveen Raj Ayyappan, Afolabi Ige and Pranav Mathews. "A 130nm 
 Md. Sajjad Hossain, Hasibur Rahman Hemel, Kyle Mooney, Yiwen Xu, William Oswald, Mario Renteria-Pinon, Hritom Das, Zhenlin Pei, Jinhui Wang and Na Gong. "SPORT: Spherical-PSNR-Optimized tRuncaTion for Power-Efficient 360-Degree Video Systems." *arXiv*, 2026.
 
 * **Publication:** arXiv [2606.24916](https://arxiv.org/abs/2606.24916) (preprint, free)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Memory <papers-topic-memory>`, {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** University of Alabama; New Mexico State University; Oklahoma State University
 * **Process and fabrication (quoted from the HTML full text):** "As the proposed chip has not yet been fabricated, the fabricated TrunMEM ASIC in Sky130 technology is used for evaluation"
@@ -458,7 +459,7 @@ Astria Nur Irfansyah. "A Silicon-Proven Wide-Range Voltage Controlled Oscillator
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11383342/) (paywalled) · DOI [10.1109/ispacs68724.2025.11383342](https://doi.org/10.1109/ispacs68724.2025.11383342)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Analog and RF circuits <papers-topic-analog-rf>`
 * **Institutions:** Institut Teknologi Sepuluh Nopember
 * **Process and fabrication (quoted from the abstract):** "The VCO design is included in a test-chip fabricated through the Tinytapeout community-driven shuttle service."
@@ -485,7 +486,7 @@ Thomas Jagielski, Xiayuan Wen, Matthew Dobre and Rajit Manohar. "Integrating Asy
 
 * **Publication:** [WOSET proceedings](https://woset-workshop.github.io/WOSET2024.html) (free to read)
 * **Free copies:** [WOSET proceedings](https://woset-workshop.github.io/PDFs/2024/8_Integrating_Asynchronous_Cir.pdf) — conference open-access page
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Open-source tooling <papers-topic-tooling>`, {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** Yale University
 * **Process and fabrication (quoted from the PDF full text):** "we have taped-out an asynchronous MD5 hashing accelerator in the SKY130 process"
@@ -499,7 +500,7 @@ Onur Karataş, Sezen Bal and Hayriye Korkmaz. "Silicon-Proven Chaos-Based Random
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11261982/) (paywalled) · DOI [10.1109/iceee67194.2025.11261982](https://doi.org/10.1109/iceee67194.2025.11261982)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Hardware security <papers-topic-security>`
 * **Institutions:** Marmara University
 * **Process and fabrication (quoted from the abstract):** "designed, fabricated, and validated via the Efabless Open Multi-Project Wafer (MPW) shuttle program using the Sky130 Process Design Kit (PDK)"
@@ -526,7 +527,7 @@ Anhang Li, Hongyi Wu, Madhulika Lingamguntla, Ashbir Aviat Fadila, Chan-Ho Kye, 
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10584418/) (paywalled) · DOI [10.1109/mssc.2024.3380586](https://doi.org/10.1109/mssc.2024.3380586)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Sensors <papers-topic-sensors>`
 * **Institutions:** University of Michigan; Tokyo Institute of Technology; University of Suwon; National Institute of Standards and Technology; Arc PBC; Google
 * **Process and fabrication (quoted from the abstract):** "\[…\] physical chip fabrication runs over the past few years, such as OpenMPW, through semiconductor CMOS processes provided by Skywater (SKY130) \[…\]"
@@ -540,7 +541,7 @@ Yueting Li, Xingyu Ni, Sara Achour and Boris Murmann. "Open-ALOE: An Analog Layo
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11014456/) (paywalled) · DOI [10.1109/isqed65160.2025.11014456](https://doi.org/10.1109/isqed65160.2025.11014456)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Analog and RF circuits <papers-topic-analog-rf>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** University of California, Berkeley; Stanford University; University of Hawaiʻi at Mānoa
 * **Process and fabrication (quoted from the abstract):** "The bandgap design generated by our flow is fabricated in SkyWater's 130-nm CMOS technology, tested"
@@ -553,7 +554,7 @@ Diana N. Maldonado R., Sebastián Eslava G. and Kevin D. Patino-Sosa. "Design, I
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11457090/) (paywalled) · DOI [10.1109/lascas67804.2026.11457090](https://doi.org/10.1109/lascas67804.2026.11457090)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** Universidad Nacional de Colombia; Georgia Institute of Technology
 * **Process and fabrication (quoted from the abstract):** "on the SkyWater 130 nm open PDK, implemented with OpenLane and fabricated via TinyTapeout"
@@ -566,7 +567,7 @@ Jorge Marin, Christian A. Rojas, Alan H. Wilson-Veas, Nelson Salvador, Joel Gak,
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10539610/) (paywalled) · DOI [10.1109/mdat.2024.3405892](https://doi.org/10.1109/mdat.2024.3405892)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Power management <papers-topic-power-management>`
 * **Institutions:** Universidad Técnica Federico Santa María; Universidad Católica del Uruguay; Universidad Nacional del Sur; CONICET
 * **Process and fabrication (quoted from the abstract):** "implemented in 6.27mm2of active area using the Skywater 130nm standard CMOS technology open-source PDK"
@@ -579,7 +580,7 @@ Pranav Mathews, Praveen Raj Ayyappan, Afolabi Ige, Swagat Bhattacharyya, Linhao 
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10529028/) (paywalled) · DOI [10.1109/cicc60959.2024.10529028](https://doi.org/10.1109/cicc60959.2024.10529028)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Floating-gate devices <papers-topic-floating-gate>`, {ref}`Analog and RF circuits <papers-topic-analog-rf>`
 * **Institutions:** Georgia Institute of Technology
 * **Process and fabrication (quoted from the abstract):** "developed in both 65nm CMOS and Skywater (open-source) 130nm CMOS"
@@ -607,7 +608,7 @@ Mauricio Montanares, V.H. Arzate Palma, Kevin G. McCarthy and Gerardo Molina Sal
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11421773/) (paywalled) · DOI [10.1109/vlsi-soc64688.2025.11421773](https://doi.org/10.1109/vlsi-soc64688.2025.11421773)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Cryogenic operation <papers-topic-cryogenic>`, {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
 * **Institutions:** Microelectronics Circuits Centre Ireland (MCCI); University College Cork
 * **Process and fabrication (quoted from the abstract):** "We present an open-source calibration methodology for Sky130 CMOS"
@@ -620,7 +621,7 @@ Mauricio Montanares, V.H. Arzate Palma, Kevin G. McCarthy and Gerardo Molina Sal
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11450324/) (paywalled) · DOI [10.1109/cae69023.2026.11450324](https://doi.org/10.1109/cae69023.2026.11450324)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Power management <papers-topic-power-management>`, {ref}`Reliability and harsh environments <papers-topic-reliability>`
 * **Institutions:** Universidad Técnica Federico Santa María; Universidad de Chile
 * **Process and fabrication (quoted from the abstract):** "The device, fabricated in SkyWater 130 nm technology"
@@ -633,7 +634,7 @@ Ali Olyanasab, Patrick Fath, Leonhard Schreiner, Christoph Guger and Harald Pret
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11183685/) (paywalled) · DOI [10.1109/austrochip67945.2025.11183685](https://doi.org/10.1109/austrochip67945.2025.11183685)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Data converters and mixed-signal circuits <papers-topic-mixed-signal>`
 * **Institutions:** g.tec Medical Engineering GmbH; Johannes Kepler University Linz
 * **Process and fabrication (quoted from the abstract):** "designed using open-source circuit design tools and the open-source SKY130 PDK, is presented. \[…\] the power consumption has been measured at 8.1 µW"
@@ -646,7 +647,7 @@ Nikhil Poole and Amin Arbabian. "A 130-nm Fusion-Based Deconvolution Kernel Gene
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10328566/) (free to read) · DOI [10.1109/access.2023.3336408](https://doi.org/10.1109/access.2023.3336408)
 * **Free copies:** [IEEE Xplore](https://ieeexplore.ieee.org/ielx7/6287639/6514899/10328566.pdf) — gold (publisher version)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Data converters and mixed-signal circuits <papers-topic-mixed-signal>`, {ref}`Sensors <papers-topic-sensors>`
 * **Institutions:** Stanford University
 * **Process and fabrication (quoted from the abstract):** "The custom IC, implemented in the open-source SkyWater 130-nm technology"
@@ -659,7 +660,7 @@ Ryan M. Price, Gabriel Saucedo, Emilio Jackson, Zander Lin Cox, John Perez and R
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11330220/) (paywalled) · DOI [10.1109/sensors59705.2025.11330220](https://doi.org/10.1109/sensors59705.2025.11330220)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Sensors <papers-topic-sensors>`, {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** University of Texas at El Paso; Texas A&M University; Pantex Plant
 * **Process and fabrication (quoted from the abstract):** "resulted in a valid ChipIgnite design which was selected for fabrication on shuttle CI 2309"
@@ -672,7 +673,7 @@ Ivan Rodriguez-Ferrandez, Leonidas Kosmidis, Maris Tali and David Steenari. "Spa
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10224899/) (paywalled) · DOI [10.1109/iolts59296.2023.10224899](https://doi.org/10.1109/iolts59296.2023.10224899)
 * **Free copies:** [UPCommons](https://upcommons.upc.edu/bitstreams/0df9d4ec-b398-4934-b55e-79709208e1df/download) — preprint
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Radiation effects <papers-topic-radiation>`, {ref}`Reliability and harsh environments <papers-topic-reliability>`, {ref}`Test structures and test vehicles <papers-topic-test-structures>`
 * **Institutions:** Universitat Politècnica de Catalunya; Barcelona Supercomputing Center; European Space Agency
 * **Process and fabrication (quoted from the abstract):** "the design and tape-out of Space Shuttle, the first test chip for the evaluation of the suitability of the SkyWater 130nm PDK and the OpenLane EDA toolchain using the Google/E-fabless shuttle run"
@@ -700,7 +701,7 @@ Myrtle Shah, Jakob Ternes and Dirk Koch. "FABulous Demo: Open Source FPGA on Sky
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10296224/) (paywalled) · DOI [10.1109/fpl60245.2023.00070](https://doi.org/10.1109/fpl60245.2023.00070)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** Heidelberg University
 * **Process and fabrication (quoted from the abstract):** "our first silicon taped out on a fully open PDK, Skywater 130nm with shuttle runs sponsored by Google"
@@ -714,7 +715,7 @@ Anish Singhani. "Open-Source, End-to-End Auditable Tapeout of Hardware Cryptogra
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10181702/) (paywalled) · DOI [10.1109/iscas46773.2023.10181702](https://doi.org/10.1109/iscas46773.2023.10181702)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Hardware security <papers-topic-security>`, {ref}`Digital circuits <papers-topic-digital>`
 * **Institutions:** Carnegie Mellon University
 * **Process and fabrication (quoted from the abstract):** "a successful tapeout of our chip on the SKY130 process node using an open-source RTL-to-GDS pipeline"
@@ -769,7 +770,7 @@ T. Srimani, A. C. Yu, R. M. Radway, D. T. Rich, M. Nelson, S. Wong, D. Murphy, S
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10185414/) (paywalled) · DOI [10.23919/vlsitechnologyandcir57934.2023.10185414](https://doi.org/10.23919/vlsitechnologyandcir57934.2023.10185414)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`BEOL-integrated devices <papers-topic-beol-integration>`, {ref}`RRAM (ReRAM) <papers-topic-rram>`
 * **Institutions:** Stanford University; Massachusetts Institute of Technology; SkyWater Technology; Analog Devices; Harvard University
 * **Process and fabrication (quoted from the abstract):** "This process is established within SkyWater Technology Foundry (90/130nm technology node on 200mm Si wafers)"
@@ -784,7 +785,7 @@ Byron Tarabata, Eduardo Holguín, Martín Gavilánez, Esteban Astudillo, Ana Sal
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11218693/) (paywalled) · DOI [10.1109/sbcci66862.2025.11218693](https://doi.org/10.1109/sbcci66862.2025.11218693)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Shuttle programmes and education <papers-topic-education-shuttles>`
 * **Institutions:** Escuela Politécnica Nacional; Universidad San Francisco de Quito
 * **Process and fabrication (quoted from the abstract):** "fabricated via the Tiny Tapeout multi-project wafer (MPW) service using the SKY130 PDK"
@@ -797,7 +798,7 @@ Tee Hui Teo, Maoyang Xiang, Emil Goh and Huan-Ke Hsu. "Open-AI Driven Open-sourc
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10819560/) (paywalled) · DOI [10.1109/mcsoc64144.2024.00066](https://doi.org/10.1109/mcsoc64144.2024.00066)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Power management <papers-topic-power-management>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** Singapore University of Technology and Design
 * **Process and fabrication (quoted from the abstract):** "The three-phase PWM was implemented in SkyWater 130 nm CMOS technology and tapeout through a low-cost multi-project wafer (MPW)."
@@ -811,7 +812,7 @@ Luke R. Upton, Guénolé Lallement, Michael D. Scott, Joyce Taylor, Robert M. Ra
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10129298/) (paywalled) · DOI [10.1109/isqed57927.2023.10129298](https://doi.org/10.1109/isqed57927.2023.10129298)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`RRAM (ReRAM) <papers-topic-rram>`, {ref}`Test structures and test vehicles <papers-topic-test-structures>`
 * **Institutions:** Stanford University; Intrinsix; SkyWater Technology
 * **Process and fabrication (quoted from the abstract):** "a Yield Test Vehicle (YTV) for characterizing resistive RAM (RRAM) at the array level in SkyWater’s 130 nm technology"
@@ -840,7 +841,7 @@ Xi Wang, Gwok-Waa Wan, Sam-Zaak Wong, Layton Zhang, Tianyang Liu, Qi Tian and Ji
 
 * **Publication:** [ACM Digital Library](https://dl.acm.org/doi/10.1145/3649329.3658493) (paywalled) · DOI [10.1145/3649329.3658493](https://doi.org/10.1145/3649329.3658493)
 * **Free copies:** [hal.science](https://hal.science/hal-04642833/document) — green (repository copy)
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Digital circuits <papers-topic-digital>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** National Center of Technology Innovation for EDA; Southeast University; National ASIC Center
 * **Process and fabrication (quoted from the abstract):** "achieving successful tape-out using SkyWater 130nm MPW project with Efabless"
@@ -854,7 +855,7 @@ Raymond H. Yang and Yaqing Xia. "An Open-Source 12-bit 10-kS/s Incremental ADC i
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/10637433/) (paywalled) · DOI [10.1109/mdat.2024.3444728](https://doi.org/10.1109/mdat.2024.3444728)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Data converters and mixed-signal circuits <papers-topic-mixed-signal>`
 * **Institutions:** Apple; Cannan Inc.
 * **Process and fabrication (quoted from the abstract):** "using open-source tools and the Skywater 130-nm CMOS process, with an emphasis on systemlevel design, circuit implementation, and performance results from silicon measurements"
@@ -868,7 +869,7 @@ Qirui Zhang, Wenbo Duan, Tim Edwards, Tim Ansell, David Blaauw, Dennis Sylvester
 
 * **Publication:** [IEEE Xplore](https://ieeexplore.ieee.org/document/9816083/) (paywalled) · DOI [10.1109/lssc.2022.3188925](https://doi.org/10.1109/lssc.2022.3188925)
 * **Free copies:** none located
-* **Basis:** process named (see {ref}`papers-scope`).
+* **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Sensors <papers-topic-sensors>`, {ref}`Data converters and mixed-signal circuits <papers-topic-mixed-signal>`, {ref}`Open-source tooling <papers-topic-tooling>`
 * **Institutions:** University of Michigan; Efabless; Google
 * **Process and fabrication (quoted from the abstract):** "Verified with 64 instances in SkyWater 130 nm, the generator also enables low-effort silicon-proven design space exploration"

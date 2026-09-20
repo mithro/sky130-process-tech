@@ -35,15 +35,6 @@ by-relationship
 audits
 ```
 
-## Lineage timeline
-
-* **2017-03-01** — Cypress reports the sale of its Minnesota fab (Fab 4, Bloomington) to SkyWater's owners as completed during the first quarter of fiscal 2017. See {ref}`the filing <filing-cypress-10-q-2017-05-02>`.
-* **2020-04-16** — Infineon completes its acquisition of Cypress Semiconductor. See {ref}`the filing <filing-cypress-8-k-2020-04-16>`.
-* **2021-04-22** — SkyWater Technology files the final prospectus for its initial public offering. See {ref}`the filing <filing-skywater-424b4-2021-04-22>`.
-* **2025-06-30** — SkyWater completes the purchase of Infineon's Austin fab (Fab 25). See {ref}`the filing <filing-skywater-8-k-2025-07-03>`.
-* **2026-07-31** — IonQ completes its acquisition of SkyWater Technology. See {ref}`the filing <filing-skywater-8-k-2026-07-31>`.
-* **2026-08-10** — SkyWater deregisters from SEC reporting following the IonQ merger. See {ref}`the filing <filing-skywater-15-12g-2026-08-10>`.
-
 ## How to read an entry
 
 Each entry gives the filer, the form and what it covers, the filing
@@ -55,7 +46,16 @@ inventory key when it has one, and related pages of this reference.
 A `Note:` line records a caveat, including a disagreement between
 this filing and another public source.
 
-## EDGAR access note
+## Lineage timeline
+
+* **2017-03-01** — Cypress reports the sale of its Minnesota fab (Fab 4, Bloomington) to SkyWater's owners as completed during the first quarter of fiscal 2017. See {ref}`the filing <filing-cypress-10-q-2017-05-02>`.
+* **2020-04-16** — Infineon completes its acquisition of Cypress Semiconductor. See {ref}`the filing <filing-cypress-8-k-2020-04-16>`.
+* **2021-04-22** — SkyWater Technology files the final prospectus for its initial public offering. See {ref}`the filing <filing-skywater-424b4-2021-04-22>`.
+* **2025-06-30** — SkyWater completes the purchase of Infineon's Austin fab (Fab 25). See {ref}`the filing <filing-skywater-8-k-2025-07-03>`.
+* **2026-07-31** — IonQ completes its acquisition of SkyWater Technology. See {ref}`the filing <filing-skywater-8-k-2026-07-31>`.
+* **2026-08-10** — SkyWater deregisters from SEC reporting following the IonQ merger. See {ref}`the filing <filing-skywater-15-12g-2026-08-10>`.
+
+:::{dropdown} Scope, method and counts
 
 `sec.gov` requires a contact address in the HTTP User-Agent header,
 which this project's checking tools do not send. Every EDGAR
@@ -63,15 +63,13 @@ document below is therefore read from a Wayback Machine capture or a
 company investor-relations copy; the `sec.gov` link is kept as the
 canonical citation but was not itself fetched by this project.
 
-## Counts
-
 By company: Cypress Semiconductor Corporation (26), SkyWater Technology, Inc. (43), Infineon Technologies AG (7), IonQ, Inc. (3), D-Wave Quantum Inc. (4), QuickLogic Corporation (1), Weebit Nano Limited (5).
 
 By type: Annual reports (42), Quarterly and half-year reports (18), Current reports and exhibits (13), Registration statements and prospectuses (7), Proxy statements (6), Announcements and deregistrations (3).
 
 By year: 1994 (1), 1996 (1), 1997 (1), 1998 (1), 1999 (1), 2000 (1), 2002 (1), 2003 (1), 2004 (1), 2005 (1), 2006 (1), 2007 (1), 2008 (1), 2009 (1), 2010 (1), 2011 (1), 2012 (1), 2013 (1), 2014 (1), 2016 (1), 2017 (2), 2018 (1), 2019 (3), 2020 (3), 2021 (9), 2022 (9), 2023 (11), 2024 (10), 2025 (9), 2026 (12).
 
-## Known gaps
+**Known gaps.**
 
 Filings known to exist -- named in another filing's exhibit index, an
 inventory entry already cited elsewhere in this reference, or this
@@ -94,6 +92,8 @@ or read that is not `sec.gov` itself.
 
 * Confidential draft registration statement DRS/A No. 1 (2020-09-30) -- Only the EDGAR filing-index page was captured by the Wayback Machine; the document text itself was not found there or elsewhere.
 * Process Technology License Agreement (exhibit 10.6/10.7 of the S-1/A) -- Not retrievable without EDGAR; known only from the S-1/A's own exhibit index, which is not itself a copy of the exhibit.
+
+:::
 
 ## All filings
 

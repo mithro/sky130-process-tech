@@ -39,7 +39,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SHOCKLEY.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US2787564A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US2787564A/en>
 
 (patent-gp23886506)=
 ## US 3,893,869 A — Megasonic cleaning system
@@ -93,7 +93,7 @@ families and members are counted.
 **Notes:**
 * Round-2 review finding N3: SE7506134L is typed \`other\`, not \`translation-of-granted-patent\`. Google Patents' own publicationDescription for it is "Published abstract", filed 1975-05-29 — a Swedish national application publication, not a translation of a European patent, since it predates both the EPC's entry into force (1977) and Sweden's accession (1978). The Swedish grant from the same application, SE418698B, is a separate member of this family.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US3893869A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US3893869A/en>
 
 (patent-gp25400807)=
 ## US 4,247,203 A — Automatic photomask inspection system and apparatus
@@ -129,7 +129,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PHOTOMASK-KLA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4247203A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4247203A/en>
 
 (patent-gp21918419)=
 ## US 4,234,797 A — Treating workpieces with beams
@@ -164,7 +164,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DISK-NOVA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4234797A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4234797A/en>
 
 (patent-gp22942562)=
 ## US 4,378,159 A — Scanning contaminant and defect detector
@@ -199,7 +199,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SCAN-TENCOR.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4378159A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4378159A/en>
 
 (patent-gp27029211)=
 ## US 4,910,122 A — Anti-reflective coating
@@ -232,7 +232,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ARC-BREWER.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4910122A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4910122A/en>
 
 (patent-gp6203424)=
 ## US 4,522,656 A — Method of making reference surface markings on semiconductor wafers by laser beam
@@ -271,7 +271,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LASERMARK-WACKER.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4522656A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4522656A/en>
 
 (patent-gp15425124)=
 ## US 4,582,624 A — Etchant composition
@@ -311,7 +311,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BHF-DAIKIN.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4582624A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4582624A/en>
 
 (patent-gp24235560)=
 ## US 4,601,576 A — Light collector for optical contaminant and flaw detector
@@ -347,7 +347,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-COLLECTOR-TENCOR.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4601576A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4601576A/en>
 
 (patent-gp27541944)=
 ## US 4,649,261 A — Apparatus for heating semiconductor wafers in order to achieve annealing, silicide formation, reflow of glass passivation layers, etc.
@@ -381,7 +381,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RTP-TAMARACK.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4649261A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4649261A/en>
 
 (patent-gp24451614)=
 ## US 4,579,463 A — Detecting thermal waves to evaluate thermal parameters
@@ -420,7 +420,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-THERMALWAVE-THERMAWAVE.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4579463A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4579463A/en>
 
 (patent-gp27493788)=
 ## US 5,215,639 A — Composite sputtering target structures and process for producing such structures
@@ -453,7 +453,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TARGET-PROFILE-GENUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5215639A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5215639A/en>
 
 (patent-gp24828889)=
 ## US 4,703,252 A — Apparatus and methods for resistivity testing
@@ -491,7 +491,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RSMAP-PROMETRIX.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4703252A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4703252A/en>
 
 (patent-gp24841884)=
 ## US 4,854,710 A — Method and apparatus for evaluating surface and subsurface features in a semiconductor
@@ -527,7 +527,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PLASMAWAVE-THERMAWAVE.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4854710A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4854710A/en>
 
 (patent-gp27111847)=
 ## US 4,657,628 A — Process for patterning local interconnects
@@ -560,7 +560,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LI-TI-HOLLOWAY.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4657628A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4657628A/en>
 
 (patent-gp24930502)=
 ## US 4,821,085 A — VLSI local interconnect structure
@@ -597,7 +597,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LI-TI-HAKEN.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4821085A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4821085A/en>
 
 (patent-gp24955302)=
 ## US 4,667,111 A — Accelerator for ion implantation
@@ -638,7 +638,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LINAC-EATON.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4667111A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4667111A/en>
 
 (patent-gp24957338)=
 ## US 4,710,030 A — Optical generator and detector of stress pulses
@@ -671,7 +671,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PICOSECOND-BROWN.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4710030A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4710030A/en>
 
 (patent-gp15976485)=
 ## US 4,731,319 A — Positive-working naphthoquinone diazide photoresist composition with two cresol novolac resins
@@ -711,7 +711,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RESIST-TOK.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4731319A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4731319A/en>
 
 (patent-gp25155097)=
 ## US 4,789,648 A — Method for producing coplanar multi-level metal/insulator films on a substrate and for forming patterned conductive lines simultaneously with stud vias
@@ -753,7 +753,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CMP-IBM-1988.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4789648A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4789648A/en>
 
 (patent-gp25155001)=
 ## US 4,944,836 A — Chem-mech polishing method for producing coplanar metal/insulator films on a substrate
@@ -795,7 +795,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CMP-IBM-1990.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4944836A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4944836A/en>
 
 (patent-gp27357991)=
 ## US 5,247,199 A — Process for forming twin well CMOS integrated circuits
@@ -829,7 +829,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TWIN-HARRIS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5247199A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5247199A/en>
 
 (patent-gp25274513)=
 ## US 4,675,073 A — Tin etch process
@@ -862,7 +862,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TIN-ETCH-TI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4675073A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4675073A/en>
 
 (patent-gp16907918)=
 ## US 4,795,582 A — Surface treating composition for micro processing
@@ -899,7 +899,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BHF-HASHIMOTO.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4795582A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4795582A/en>
 
 (patent-gp25460564)=
 ## US 4,698,128 A — Sloped contact etch process
@@ -938,7 +938,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SLOPED-MOTOROLA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4698128A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4698128A/en>
 
 (patent-gp22680079)=
 ## US 4,842,683 A — Magnetic field-enhanced plasma etch reactor
@@ -980,7 +980,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MERIE-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4842683A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4842683A/en>
 
 (patent-gp25481509)=
 ## US 5,000,113 A — Thermal CVD/PECVD reactor and use for thermal chemical vapor deposition of silicon dioxide and in-situ multi-step planarized process
@@ -1033,7 +1033,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-P5000-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5000113A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5000113A/en>
 
 (patent-gp21893791)=
 ## US 4,764,248 A — Rapid thermal nitridized oxide locos process
@@ -1066,7 +1066,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4764248 (retrieved 2026-09-21, 745574 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4764248> (retrieved 2026-09-21, 745574 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US4764248A (classification sweep, round 5)
 
@@ -1101,7 +1101,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CORNER-TOSHIBA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5258332A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5258332A/en>
 
 (patent-gp3543072)=
 ## US 4,903,717 A — Support for slice-shaped articles and device for etching silicon wafers with such a support
@@ -1153,7 +1153,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPIN-SEZ.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4903717A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4903717A/en>
 
 (patent-gp22827270)=
 ## US 4,986,878 A — Process for improved planarization of the passivation layers for semiconductor devices
@@ -1227,7 +1227,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BPR-THERMAWAVE.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4999014A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4999014A/en>
 
 (patent-gp26998663)=
 ## US 5,186,718 A — Staged-vacuum wafer processing system and method
@@ -1260,7 +1260,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STAGED-VACUUM-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5186718A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5186718A/en>
 
 (patent-gp23452232)=
 ## US 5,005,102 A — Multilayer electrodes for integrated circuit capacitors
@@ -1293,7 +1293,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5005102 (retrieved 2026-09-21, 383865 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5005102> (retrieved 2026-09-21, 383865 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5005102A (classification sweep, round 5)
 
@@ -1332,7 +1332,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TAPER-ATT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4919748A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4919748A/en>
 
 (patent-gp27012173)=
 ## US 5,443,998 A — Method of forming a chlorinated silicon nitride barrier layer
@@ -1413,7 +1413,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TCP-LAM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US4948458A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US4948458A/en>
 
 (patent-gp23576244)=
 ## US 5,028,565 A — Process for CVD deposition of tungsten layer on semiconductor wafer
@@ -1461,7 +1461,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-WCVD-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5028565A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5028565A/en>
 
 (patent-gp24566844)=
 ## US 5,166,752 A — Simultaneous multiple angle/multiple wavelength ellipsometer and method
@@ -1494,7 +1494,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MAIWL-RUDOLPH.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5166752A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5166752A/en>
 
 (patent-gp27042189)=
 ## US 5,155,336 A — Rapid thermal heating apparatus and method
@@ -1538,7 +1538,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RTP-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5155336A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5155336A/en>
 
 (patent-gp23870722)=
 ## US 5,330,628 A — Collimated deposition apparatus and method
@@ -1577,7 +1577,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-COLLIMATOR-VARIAN.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5330628A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5330628A/en>
 
 (patent-gp23997467)=
 ## US 5,108,570 A — Multistep sputtering process for forming aluminum layer over stepped semiconductor wafer
@@ -1617,7 +1617,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-AL-MULTISTEP-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5108570A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5108570A/en>
 
 (patent-gp24009558)=
 ## US 5,043,790 A — Sealed self aligned contacts using two nitrides process
@@ -1650,7 +1650,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5043790 (retrieved 2026-09-21, 496097 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5043790> (retrieved 2026-09-21, 496097 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5043790A (classification sweep, round 5)
 
@@ -1686,7 +1686,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TIW-HITACHI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5160534A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5160534A/en>
 
 (patent-gp24212535)=
 ## US 5,374,594 A — Gas-based backside protection during substrate processing
@@ -1720,7 +1720,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BACKSIDE-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5374594A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5374594A/en>
 
 (patent-gp24443399)=
 ## US 5,334,332 A — Cleaning compositions for removing etching residue and method of using
@@ -1773,7 +1773,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-EKC-HYDROXYLAMINE.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5334332A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5334332A/en>
 
 (patent-gp26322164)=
 ## US 5,699,447 A — Two-phase optical inspection method and apparatus for defect detection
@@ -1816,7 +1816,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TWOPHASE-ORBOT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5699447A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5699447A/en>
 
 (patent-gp27034223)=
 ## US 5,170,242 A — Reaction barrier for a multilayer structure in an integrated circuit
@@ -1849,7 +1849,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5170242 (retrieved 2026-09-21, 492116 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5170242> (retrieved 2026-09-21, 492116 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5170242A (classification sweep, round 5)
 
@@ -1887,7 +1887,7 @@ families and members are counted.
 **Notes:**
 * The title's "filing" (for "filling") is as shown by Google Patents; the inventory entry marks it \[sic\].
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5527561A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5527561A/en>
 
 (patent-gp27055077)=
 ## US 5,216,281 A — Self sealed aligned contact incorporating a dopant source
@@ -1920,7 +1920,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5216281 (retrieved 2026-09-21, 596138 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5216281> (retrieved 2026-09-21, 596138 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5216281A (classification sweep, round 5)
 
@@ -1958,7 +1958,7 @@ families and members are counted.
 **Notes:**
 * Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows name Persys Technology as the first assignee of the inventors' interest.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5257926A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5257926A/en>
 
 (patent-gp25218688)=
 ## US 5,406,110 A — Resurf lateral double diffused insulated gate field effect transistor
@@ -2002,7 +2002,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RESURF-TI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5406110A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5406110A/en>
 
 (patent-gp25448458)=
 ## US 5,303,558 A — Thermal trap for gaseous materials
@@ -2035,7 +2035,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-NH4CL-VLSI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5303558A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5303558A/en>
 
 (patent-gp25461879)=
 ## US 5,578,362 A — Polymeric polishing pad containing hollow polymeric microelements
@@ -2098,9 +2098,9 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PAD-RODEL.
 
 **Notes:**
-* Round-1 review correction (M9), corrected again by round-3 review finding N8: JP2008238399A's own Google Patents record page names its direct parent, under "Related Parent Applications", as JP2006054961A (filed 2006-03-01, a "Division"; itself not a member of this family) — not JPH08500622A (filed 1993-08-02) as an earlier version of this note said. That 1993 link was this dataset's own inference from the shared 1992-08-19 US priority claim and family membership, not something JP2008238399A's own record page shows; it is not repeated here. Under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own (Art. 44(2)/67(1)), so tracing only the confirmed parent gives a bound of 2006-03-01 + 20 years = 2026-03-01, already past today — the family's expired conclusion is unaffected regardless of whether the chain in fact traces back further. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+* Round-1 review correction (M9), corrected again by round-3 review finding N8: JP2008238399A's own Google Patents record page names its direct parent, under "Related Parent Applications", as JP2006054961A (filed 2006-03-01, a "Division"; itself not a member of this family) — not JPH08500622A (filed 1993-08-02) as an earlier version of this note said. That 1993 link was this dataset's own inference from the shared 1992-08-19 US priority claim and family membership, not something JP2008238399A's own record page shows; it is not repeated here. Under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own (Art. 44(2)/67(1)), so tracing only the confirmed parent gives a bound of 2006-03-01 + 20 years = 2026-03-01, already past today — the family's expired conclusion is unaffected regardless of whether the chain in fact traces back further. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, <https://www.japaneselawtranslation.go.jp/en/laws/view/4097>, retrieved 2026-09-18.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5578362A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5578362A/en>
 
 (patent-gp27479272)=
 ## US 5,693,203 A — Sputtering target assembly having solid-phase bonded interface
@@ -2133,7 +2133,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TARGET-BOND-JAPANENERGY.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5693203A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5693203A/en>
 
 (patent-gp25518280)=
 ## US 5,346,578 A — Induction plasma source
@@ -2173,7 +2173,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ICP-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5346578A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5346578A/en>
 
 (patent-gp25529547)=
 ## US 5,442,828 A — Double-sided wafer scrubber with a wet submersing silicon wafer indexer
@@ -2207,7 +2207,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SCRUBBER-ONTRAK.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5442828A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5442828A/en>
 
 (patent-gp25546287)=
 ## US 5,308,415 A — Enhancing step coverage by creating a tapered profile through three dimensional resist pull back
@@ -2240,7 +2240,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TAPER-CHARTERED.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5308415A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5308415A/en>
 
 (patent-gp21710466)=
 ## US 5,380,401 A — Method to remove fluorine residues from bond pads
@@ -2273,7 +2273,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PAD-FLUORINE-MICRON.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5380401A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5380401A/en>
 
 (patent-gp19355404)=
 ## US 5,364,807 A — Method for fabricating LDD transitor utilizing halo implant
@@ -2312,7 +2312,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HALO-GOLDSTAR.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5364807A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5364807A/en>
 
 (patent-gp22085430)=
 ## US 5,366,929 A — Method for making reliable selective via fills
@@ -2345,7 +2345,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5366929 (retrieved 2026-09-21, 592356 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5366929> (retrieved 2026-09-21, 592356 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5366929A (classification sweep, round 5)
 
@@ -2380,7 +2380,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-QUAD-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5372957A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5372957A/en>
 
 (patent-gp12697185)=
 ## US 5,633,212 A — Pyrogenic wet thermal oxidation of semiconductor wafers
@@ -2415,7 +2415,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TORCH-YAMAHA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5633212A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5633212A/en>
 
 (patent-gp17554170)=
 ## US 5,503,678 A — Vertical low pressure CVD apparatus with an adjustable nozzle
@@ -2451,7 +2451,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LPCVD-NEC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5503678A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5503678A/en>
 
 (patent-gp26377048)=
 ## US 5,551,984 A — Vertical heat treatment apparatus with a circulation gas passage
@@ -2487,7 +2487,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-VF-TRANSFER-TEL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5551984A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5551984A/en>
 
 (patent-gp22631367)=
 ## US 5,433,651 A — In-situ endpoint detection and process monitoring method and apparatus for chemical-mechanical polishing
@@ -2526,7 +2526,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CMP-ENDPOINT-IBM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5433651A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5433651A/en>
 
 (patent-gp46252077)=
 ## US 5,722,442 A — On-site generation of ultra-high-purity buffered-HF for semiconductor processing
@@ -2559,7 +2559,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BHF-STARTEC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5722442A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5722442A/en>
 
 (patent-gp22742690)=
 ## US 5,665,639 A — Process for manufacturing a semiconductor device bump electrode using a rapid thermal anneal
@@ -2593,7 +2593,7 @@ families and members are counted.
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
 * L3 correction (round 6): dates.priority originally recorded 1999-02-22 (the filing date), because PPUBS's search record gives a null priorityClaimsDate for this family. US6403488B1's own printed front page ("Text View") states "This application claims the benefit of U.S. Provisional Application No. 60/079,319, filed Mar. 19, 1998" -- the true earliest priority, now recorded. expiry.date moved from 2020-02-22 to 2019-03-19 accordingly (still well before today, still expired: true).
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5665639 (retrieved 2026-09-20, 938706 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5665639> (retrieved 2026-09-20, 938706 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5665639A (classification sweep, round 5)
 
@@ -2634,7 +2634,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ASHER-FUSION.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5498308A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5498308A/en>
 
 (patent-gp22834355)=
 ## US 5,393,679 A — Use of double charge implant to improve retrograde process PMOS punch through voltage
@@ -2667,7 +2667,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-UMC-DC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5393679A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5393679A/en>
 
 (patent-gp22881554)=
 ## US 5,468,342 A — Method of etching an oxide layer
@@ -2700,7 +2700,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5468342 (retrieved 2026-09-20, 1207002 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5468342> (retrieved 2026-09-20, 1207002 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5468342A (classification sweep, round 5)
 
@@ -2735,7 +2735,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5562801 (retrieved 2026-09-20, 1168017 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5562801> (retrieved 2026-09-20, 1168017 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5562801A (classification sweep, round 5)
 
@@ -2770,7 +2770,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5523258 (retrieved 2026-09-21, 1618122 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5523258> (retrieved 2026-09-21, 1618122 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5523258A (classification sweep, round 5)
 
@@ -2830,7 +2830,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-INSPECT-KLA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5864394A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5864394A/en>
 
 (patent-gp23018112)=
 ## US 5,610,099 A — Process for fabricating transistors using composite nitride structure
@@ -2863,7 +2863,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5610099 (retrieved 2026-09-21, 1374557 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5610099> (retrieved 2026-09-21, 1374557 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5610099A (classification sweep, round 5)
 
@@ -2898,7 +2898,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5401691 (retrieved 2026-09-21, 1088028 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5401691> (retrieved 2026-09-21, 1088028 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5401691A (classification sweep, round 5)
 
@@ -2933,7 +2933,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5503962 (retrieved 2026-09-21, 867721 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5503962> (retrieved 2026-09-21, 867721 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5503962A (classification sweep, round 5)
 
@@ -2977,7 +2977,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DPS-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5540824A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5540824A/en>
 
 (patent-gp23077300)=
 ## US 5,441,596 A — Method for forming a stable plasma
@@ -3010,7 +3010,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5441596 (retrieved 2026-09-21, 537754 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5441596> (retrieved 2026-09-21, 537754 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5441596A (classification sweep, round 5)
 
@@ -3045,7 +3045,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5514622 (retrieved 2026-09-21, 667973 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5514622> (retrieved 2026-09-21, 667973 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5514622A (classification sweep, round 5)
 
@@ -3080,7 +3080,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5851887 (retrieved 2026-09-20, 522085 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5851887> (retrieved 2026-09-20, 522085 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 * L3 correction (round 6): dates.priority originally recorded 1994-09-07 (PPUBS's priorityClaimsDate was null, so this defaulted to a value derived from the search record). US5851887A's own printed front page ("Text View") states the parent application, Ser. No. 08/302,615, was filed Sep. 4, 1994 -- three days earlier -- now recorded as the priority date. expiry.date is unchanged (2016-03-27, governed by this member's own filing date + 20 years, not by the priority-based candidate).
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5851887A (classification sweep, round 5)
@@ -3153,7 +3153,7 @@ families and members are counted.
 **Notes:**
 * Round-1 review finding M10: the round-1 review re-fetched AU3830095A on 2026-09-18 and reports its live status as Expired, not the "Granted" recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not published) for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5518528A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5518528A/en>
 
 (patent-gp24770421)=
 ## US 5,893,796 A — Forming a transparent window in a polishing pad for a chemical mechanical polishing apparatus
@@ -3205,7 +3205,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CMP-WINDOW.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5893796A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5893796A/en>
 
 (patent-gp23689967)=
 ## US 5,836,506 A — Sputter target/backing plate assembly and method of making same
@@ -3246,7 +3246,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TARGET-BOND-MRC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5836506A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5836506A/en>
 
 (patent-gp26456233)=
 ## US 5,735,961 A — Semiconductor fabricating apparatus, method for controlling oxygen concentration within load-lock chamber and method for generating native oxide
@@ -3284,7 +3284,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LOADLOCK-KOKUSAI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5735961A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5735961A/en>
 
 (patent-gp23795580)=
 ## US 5,648,669 A — High speed flash memory cell structure and method
@@ -3317,7 +3317,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5648669 (retrieved 2026-09-21, 977243 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5648669> (retrieved 2026-09-21, 977243 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5648669A (classification sweep, round 5)
 
@@ -3352,7 +3352,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-OXIME-AMD.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5710067A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5710067A/en>
 
 (patent-gp22657288)=
 ## US 5,710,061 A — Disposable post processing for semiconductor device fabrication
@@ -3385,7 +3385,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5710061 (retrieved 2026-09-21, 1020607 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5710061> (retrieved 2026-09-21, 1020607 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5710061A (classification sweep, round 5)
 
@@ -3420,7 +3420,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5844271 (retrieved 2026-09-21, 818267 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5844271> (retrieved 2026-09-21, 818267 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5844271A (classification sweep, round 5)
 
@@ -3459,7 +3459,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-FUSE-IBM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5872390A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5872390A/en>
 
 (patent-gp17268321)=
 ## US 5,709,543 A — Vertical heat treatment apparatus
@@ -3497,7 +3497,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-VF-INSULATION-TEL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5709543A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5709543A/en>
 
 (patent-gp17432179)=
 ## US 5,820,367 A — Boat for heat treatment
@@ -3532,7 +3532,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BOAT-TEL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5820367A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5820367A/en>
 
 (patent-gp24193081)=
 ## US 5,708,559 A — Precision analog metal-metal capacitor
@@ -3570,7 +3570,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-IBM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5708559A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5708559A/en>
 
 (patent-gp24192580)=
 ## US 5,738,574 A — Continuous processing system for chemical mechanical polishing
@@ -3619,7 +3619,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CMP-MIRRA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5738574A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5738574A/en>
 
 (patent-gp24244903)=
 ## US 5,650,666 A — Method and apparatus for preventing cracks in semiconductor die
@@ -3652,7 +3652,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5650666 (retrieved 2026-09-21, 494102 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5650666> (retrieved 2026-09-21, 494102 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5650666A (classification sweep, round 5)
 
@@ -3687,7 +3687,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5780889 (retrieved 2026-09-21, 460535 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5780889> (retrieved 2026-09-21, 460535 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5780889A (classification sweep, round 5)
 
@@ -3720,7 +3720,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5965924A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5965924A/en>
 
 (patent-gp24310003)=
 ## US 6,784,552 B2 — Structure having reduced lateral spacer erosion
@@ -3754,7 +3754,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6784552B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6784552B2/en>
 
 (patent-gp24323213)=
 ## US 5,573,971 A — Planar antifuse and method of fabrication
@@ -3787,7 +3787,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5573971 (retrieved 2026-09-21, 404444 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5573971> (retrieved 2026-09-21, 404444 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5573971A (classification sweep, round 5)
 
@@ -3822,7 +3822,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5652182 (retrieved 2026-09-21, 935384 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5652182> (retrieved 2026-09-21, 935384 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5652182A (classification sweep, round 5)
 
@@ -3857,7 +3857,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5693556 (retrieved 2026-09-21, 451223 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5693556> (retrieved 2026-09-21, 451223 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5693556A (classification sweep, round 5)
 
@@ -3896,7 +3896,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LPCVD-KOKUSAI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5902103A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5902103A/en>
 
 (patent-gp32927824)=
 ## US 6,786,998 B1 — Wafer temperature control apparatus and method
@@ -3929,7 +3929,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6786998 (retrieved 2026-09-21, 576856 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6786998> (retrieved 2026-09-21, 576856 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6786998B1 (classification sweep, round 5)
 
@@ -3975,7 +3975,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DEUTERIUM-UIUC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5872387A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5872387A/en>
 
 (patent-gp24349726)=
 ## US 6,579,777 B1 — Method of forming local oxidation with sloped silicon recess
@@ -4008,7 +4008,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6579777 (retrieved 2026-09-20, 381783 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6579777> (retrieved 2026-09-20, 381783 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6579777B1 (classification sweep, round 5)
 
@@ -4052,7 +4052,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HDP-CLEAN-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6200412B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6200412B1/en>
 
 (patent-gp24414167)=
 ## US 5,595,919 A — Method of making self-aligned halo process for reducing junction capacitance
@@ -4086,7 +4086,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HALO-CHARTERED.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5595919A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5595919A/en>
 
 (patent-gp24428538)=
 ## US 5,635,765 A — Multi-layer gate structure
@@ -4119,7 +4119,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5635765 (retrieved 2026-09-21, 401088 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5635765> (retrieved 2026-09-21, 401088 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5635765A (classification sweep, round 5)
 
@@ -4188,7 +4188,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-EBR-CLARIANT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5814433A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5814433A/en>
 
 (patent-gp24638394)=
 ## US 5,770,521 A — Anti-shear method and system for semiconductor wafer removal
@@ -4221,7 +4221,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5770521 (retrieved 2026-09-21, 532137 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5770521> (retrieved 2026-09-21, 532137 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5770521A (classification sweep, round 5)
 
@@ -4256,7 +4256,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RPN-TI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6136654A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6136654A/en>
 
 (patent-gp24652841)=
 ## US 5,830,375 A — Automated method for monitoring and controlling the orthophosphoric acid etch rate of silicon nitride insulator layers
@@ -4291,7 +4291,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HOTPHOS-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5830375A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5830375A/en>
 
 (patent-gp25134219)=
 ## US 5,760,409 A — Dose control for use in an ion implanter
@@ -4331,7 +4331,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DOSE-EATON.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5760409A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5760409A/en>
 
 (patent-gp24675318)=
 ## US 6,091,129 A — Self-aligned trench isolated structure
@@ -4364,7 +4364,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6091129 (retrieved 2026-09-21, 1967526 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6091129> (retrieved 2026-09-21, 1967526 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6091129A (classification sweep, round 5)
 
@@ -4399,7 +4399,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5830797 (retrieved 2026-09-20, 2005827 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5830797> (retrieved 2026-09-20, 2005827 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5830797A (classification sweep, round 5)
 
@@ -4434,7 +4434,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6004874 (retrieved 2026-09-20, 782171 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6004874> (retrieved 2026-09-20, 782171 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6004874A (classification sweep, round 5)
 
@@ -4505,7 +4505,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5830804 (retrieved 2026-09-21, 561959 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5830804> (retrieved 2026-09-21, 561959 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5830804A (classification sweep, round 5)
 
@@ -4540,7 +4540,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6004399 (retrieved 2026-09-20, 1825018 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6004399> (retrieved 2026-09-20, 1825018 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6004399A (classification sweep, round 5)
 
@@ -4575,7 +4575,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-IMP-COIL-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5707498A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5707498A/en>
 
 (patent-gp24728963)=
 ## US 6,170,428 B1 — Symmetric tunable inductively coupled HDP-CVD reactor
@@ -4621,9 +4621,9 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HDP-REACTOR-AMAT.
 
 **Notes:**
-* Round-1 review correction (M9): JP2008091938A is a divisional of JPH10116826A (filed 1997-07-15, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 1997-07-15 + 20 years, already past today, not 2007-11-12 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+* Round-1 review correction (M9): JP2008091938A is a divisional of JPH10116826A (filed 1997-07-15, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 1997-07-15 + 20 years, already past today, not 2007-11-12 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, <https://www.japaneselawtranslation.go.jp/en/laws/view/4097>, retrieved 2026-09-18.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6170428B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6170428B1/en>
 
 (patent-gp24743931)=
 ## US 5,911,887 A — Method of etching a bond pad
@@ -4656,7 +4656,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5911887 (retrieved 2026-09-20, 461102 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5911887> (retrieved 2026-09-20, 461102 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5911887A (classification sweep, round 5)
 
@@ -4691,7 +4691,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6309971 (retrieved 2026-09-21, 891329 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6309971> (retrieved 2026-09-21, 891329 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6309971B1 (classification sweep, round 5)
 
@@ -4727,7 +4727,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DGOX-AMD.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6033943A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6033943A/en>
 
 (patent-gp24926077)=
 ## US 5,990,513 A — Yield enhancement technique for integrated circuit processing to reduce effects of undesired dielectric moisture retention and subsequent hydrogen out-diffusion
@@ -4760,7 +4760,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5990513 (retrieved 2026-09-21, 773619 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5990513> (retrieved 2026-09-21, 773619 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5990513A (classification sweep, round 5)
 
@@ -4796,7 +4796,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STRIP-ULVAC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5795831A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5795831A/en>
 
 (patent-gp23422662)=
 ## US 5,652,084 A — Method for reduced pitch lithography
@@ -4829,7 +4829,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5652084 (retrieved 2026-09-21, 1148605 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5652084> (retrieved 2026-09-21, 1148605 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5652084A (classification sweep, round 5)
 
@@ -4864,7 +4864,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6156645 (retrieved 2026-09-21, 1018793 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6156645> (retrieved 2026-09-21, 1018793 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6156645A (classification sweep, round 5)
 
@@ -4899,7 +4899,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6016012 (retrieved 2026-09-21, 501837 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6016012> (retrieved 2026-09-21, 501837 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6016012A (classification sweep, round 5)
 
@@ -4967,7 +4967,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CARRIER-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6183354B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6183354B1/en>
 
 (patent-gp25007997)=
 ## US 5,812,403 A — Methods and apparatus for cleaning surfaces in a substrate processing system
@@ -5005,7 +5005,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RPC-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5812403A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5812403A/en>
 
 (patent-gp25035177)=
 ## US 5,977,638 A — Edge metal for interconnect layers
@@ -5038,7 +5038,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5977638 (retrieved 2026-09-20, 2413171 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5977638> (retrieved 2026-09-20, 2413171 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5977638A (classification sweep, round 5)
 
@@ -5080,7 +5080,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CMP-CABOT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5958288A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5958288A/en>
 
 (patent-gp25050977)=
 ## US 5,861,676 A — Method of forming robust interconnect and contact structures in a semiconductor and/or integrated circuit
@@ -5113,7 +5113,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5861676 (retrieved 2026-09-20, 545393 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5861676> (retrieved 2026-09-20, 545393 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5861676A (classification sweep, round 5)
 
@@ -5148,7 +5148,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5763021 (retrieved 2026-09-21, 385471 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5763021> (retrieved 2026-09-21, 385471 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5763021A (classification sweep, round 5)
 
@@ -5183,7 +5183,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5897354 (retrieved 2026-09-20, 784769 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5897354> (retrieved 2026-09-20, 784769 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5897354A (classification sweep, round 5)
 
@@ -5218,7 +5218,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5897371 (retrieved 2026-09-21, 607083 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5897371> (retrieved 2026-09-21, 607083 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5897371A (classification sweep, round 5)
 
@@ -5254,7 +5254,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-VT-LSI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5963801A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5963801A/en>
 
 (patent-gp25102092)=
 ## US 5,811,358 A — Low temperature dry process for stripping photoresist after high dose ion implantation
@@ -5287,7 +5287,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STRIP-MOSEL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5811358A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5811358A/en>
 
 (patent-gp25122771)=
 ## US 5,793,090 A — Integrated circuit having multiple LDD and/or source/drain implant steps to enhance circuit performance
@@ -5321,7 +5321,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MULTI-LDD-AMD.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5793090A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5793090A/en>
 
 :::{dropdown} US 7,253,019 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-11-09
 :name: patent-gp27238821
@@ -5354,7 +5354,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7253019/B2 (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7253019/B2> (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7253019B2 (round-4 unrestricted-assignee sweep)
 :::
@@ -5418,7 +5418,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MDZ-MEMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5994761A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5994761A/en>
 
 (patent-gp24040492)=
 ## US 5,913,712 A — Scratch reduction in semiconductor circuit fabrication using chemical-mechanical polishing
@@ -5451,7 +5451,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5913712 (retrieved 2026-09-21, 619738 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5913712> (retrieved 2026-09-21, 619738 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5913712A (classification sweep, round 5)
 
@@ -5494,7 +5494,7 @@ families and members are counted.
 **Notes:**
 * Google Patents shows the title with "laternal isolation"; the inventory entry PAT-BILLI-GENUS gives "lateral isolation"; the printed patent was not checked.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5821589A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5821589A/en>
 
 (patent-gp25231985)=
 ## US 5,968,851 A — Controlled isotropic etch process and method of forming an opening in a dielectric layer
@@ -5527,7 +5527,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5968851 (retrieved 2026-09-20, 776350 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5968851> (retrieved 2026-09-20, 776350 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US5968851A (classification sweep, round 5)
 
@@ -5572,7 +5572,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CRACKSTOP-IBM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5789302A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5789302A/en>
 
 (patent-gp46276600)=
 ## US 6,425,812 B1 — Polishing head for chemical mechanical polishing using linear planarization technology
@@ -5605,7 +5605,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LINEAR-LAM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6425812B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6425812B1/en>
 
 (patent-gp25314008)=
 ## US 5,851,892 A — Fabrication sequence employing an oxide formed with minimized inducted charge and/or maximized breakdown voltage
@@ -5636,7 +5636,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5851892A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5851892A/en>
 
 (patent-gp25357416)=
 ## US 5,931,173 A — Monitoring cleaning effectiveness of a cleaning system
@@ -5669,7 +5669,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5931173 (retrieved 2026-09-21, 1116383 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5931173> (retrieved 2026-09-21, 1116383 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5931173A (classification sweep, round 5)
 
@@ -5712,7 +5712,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SEASONING-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6121161A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6121161A/en>
 
 (patent-gp25372701)=
 ## US 6,555,484 B1 — Method for controlling the oxidation of implanted silicon
@@ -5745,7 +5745,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6555484 (retrieved 2026-09-20, 378660 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6555484> (retrieved 2026-09-20, 378660 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6555484B1 (classification sweep, round 5)
 
@@ -5780,7 +5780,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6172409 (retrieved 2026-09-21, 724456 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6172409> (retrieved 2026-09-21, 724456 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6172409B1 (classification sweep, round 5)
 
@@ -5815,7 +5815,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ETCHSTOP-TI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6090697A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6090697A/en>
 
 (patent-gp25386002)=
 ## US 6,399,462 B1 — Method and structure for isolating integrated circuit components and/or semiconductor active devices
@@ -5848,7 +5848,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6399462 (retrieved 2026-09-21, 635170 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6399462> (retrieved 2026-09-21, 635170 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6399462B1 (classification sweep, round 5)
 
@@ -5883,7 +5883,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5854138 (retrieved 2026-09-21, 617025 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5854138> (retrieved 2026-09-21, 617025 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5854138A (classification sweep, round 5)
 
@@ -5918,7 +5918,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6015718 (retrieved 2026-09-21, 885072 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6015718> (retrieved 2026-09-21, 885072 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6015718A (classification sweep, round 5)
 
@@ -5953,7 +5953,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6036780 (retrieved 2026-09-21, 505450 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6036780> (retrieved 2026-09-21, 505450 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6036780A (classification sweep, round 5)
 
@@ -5988,7 +5988,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6586806 (retrieved 2026-09-21, 477004 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6586806> (retrieved 2026-09-21, 477004 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6586806B1 (classification sweep, round 5)
 
@@ -6028,7 +6028,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-THINNER-SAMSUNG.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6159646A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6159646A/en>
 
 (patent-gp30771507)=
 ## US 6,689,264 B1 — Semiconductor wafer clamp retainer
@@ -6061,7 +6061,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6689264 (retrieved 2026-09-21, 586432 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6689264> (retrieved 2026-09-21, 586432 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6689264B1 (classification sweep, round 5)
 
@@ -6096,7 +6096,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5914895 (retrieved 2026-09-21, 924965 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5914895> (retrieved 2026-09-21, 924965 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5914895A (classification sweep, round 5)
 
@@ -6163,7 +6163,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-OBLIQUE-KLA.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6201601B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6201601B1/en>
 
 (patent-gp25467538)=
 ## US 6,165,375 A — Plasma etching method
@@ -6196,7 +6196,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6165375 (retrieved 2026-09-20, 620471 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6165375> (retrieved 2026-09-20, 620471 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6165375A (classification sweep, round 5)
 
@@ -6231,7 +6231,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6033991 (retrieved 2026-09-20, 657354 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6033991> (retrieved 2026-09-20, 657354 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6033991A (classification sweep, round 5)
 
@@ -6266,7 +6266,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6105435 (retrieved 2026-09-21, 691129 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6105435> (retrieved 2026-09-21, 691129 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6105435A (classification sweep, round 5)
 
@@ -6300,7 +6300,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6140228A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6140228A/en>
 
 (patent-gp25524224)=
 ## US 6,273,098 B1 — Extension of the useful life of a chemical bath used to process a substrate
@@ -6333,7 +6333,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6273098 (retrieved 2026-09-21, 959923 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6273098> (retrieved 2026-09-21, 959923 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6273098B1 (classification sweep, round 5)
 
@@ -6368,7 +6368,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5976900 (retrieved 2026-09-21, 620298 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5976900> (retrieved 2026-09-21, 620298 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US5976900A (classification sweep, round 5)
 
@@ -6403,7 +6403,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LPCVD-SONY.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US5800616A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US5800616A/en>
 
 (patent-gp25539026)=
 ## US 6,054,710 A — Method and apparatus for obtaining two- or three-dimensional information from scanning electron microscopy
@@ -6436,7 +6436,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6054710 (retrieved 2026-09-21, 667725 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6054710> (retrieved 2026-09-21, 667725 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6054710A (classification sweep, round 5)
 
@@ -6469,7 +6469,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6906421B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6906421B1/en>
 
 (patent-gp21753349)=
 ## US 6,143,663 A — Employing deionized water and an abrasive surface to polish a semiconductor topography
@@ -6502,7 +6502,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6143663 (retrieved 2026-09-21, 903702 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6143663> (retrieved 2026-09-21, 903702 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6143663A (classification sweep, round 5)
 
@@ -6537,7 +6537,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6162682 (retrieved 2026-09-21, 1199216 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6162682> (retrieved 2026-09-21, 1199216 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6162682A (classification sweep, round 5)
 
@@ -6572,7 +6572,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6200896 (retrieved 2026-09-21, 912889 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6200896> (retrieved 2026-09-21, 912889 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6200896B1 (classification sweep, round 5)
 
@@ -6607,7 +6607,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6069382 (retrieved 2026-09-21, 685523 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6069382> (retrieved 2026-09-21, 685523 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6069382A (classification sweep, round 5)
 
@@ -6642,7 +6642,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6403488 (retrieved 2026-09-20, 437577 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6403488> (retrieved 2026-09-20, 437577 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6403488B1 (classification sweep, round 5)
 
@@ -6677,7 +6677,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6124157 (retrieved 2026-09-21, 805275 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6124157> (retrieved 2026-09-21, 805275 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6124157A (classification sweep, round 5)
 
@@ -6712,7 +6712,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6207991 (retrieved 2026-09-21, 802364 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6207991> (retrieved 2026-09-21, 802364 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6207991B1 (classification sweep, round 5)
 
@@ -6750,7 +6750,7 @@ families and members are counted.
 **Notes:**
 * Round-1 review finding L9: Google Patents shows the original assignee as "Individual" (no assignee recorded at grant) and this dataset found no USPTO assignment record naming a first assignee, unlike the other four "Individual" families in this index. The USPTO assignment-search API is unreachable from the environment this note was added in, so this remains an open question rather than a named assignee.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6020614A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6020614A/en>
 
 (patent-gp21979781)=
 ## US 6,114,724 A — Nonvolatile semiconductor memory cell with select gate
@@ -6783,7 +6783,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6114724 (retrieved 2026-09-21, 995733 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6114724> (retrieved 2026-09-21, 995733 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6114724A (classification sweep, round 5)
 
@@ -6818,7 +6818,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6171180 (retrieved 2026-09-21, 857374 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6171180> (retrieved 2026-09-21, 857374 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6171180B1 (classification sweep, round 5)
 
@@ -6853,7 +6853,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HDP-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6030881A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6030881A/en>
 
 (patent-gp22111311)=
 ## US 6,221,776 B1 — Anti-reflective coating used as a disposable etch stop
@@ -6886,7 +6886,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6221776 (retrieved 2026-09-21, 580261 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6221776> (retrieved 2026-09-21, 580261 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6221776B1 (classification sweep, round 5)
 
@@ -6955,7 +6955,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6140676 (retrieved 2026-09-20, 1396626 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6140676> (retrieved 2026-09-20, 1396626 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6140676A (classification sweep, round 5)
 
@@ -6990,7 +6990,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6187667 (retrieved 2026-09-21, 483629 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6187667> (retrieved 2026-09-21, 483629 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6187667B1 (classification sweep, round 5)
 
@@ -7026,7 +7026,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-VIA-POISON-UMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6013581A/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6013581A/en>
 
 (patent-gp26323689)=
 ## US 6,179,609 B1 — Compact external torch assembly for semiconductor processing
@@ -7064,7 +7064,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TORCH-PERSYS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6179609B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6179609B1/en>
 
 (patent-gp22505307)=
 ## US 6,232,231 B1 — Planarized semiconductor interconnect topography and method for polishing a metal layer to form interconnect
@@ -7097,7 +7097,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6232231 (retrieved 2026-09-20, 824482 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6232231> (retrieved 2026-09-20, 824482 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6232231B1 (classification sweep, round 5)
 
@@ -7132,7 +7132,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6534378 (retrieved 2026-09-21, 887759 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6534378> (retrieved 2026-09-21, 887759 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6534378B1 (classification sweep, round 5)
 
@@ -7167,7 +7167,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6638856 (retrieved 2026-09-21, 764850 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6638856> (retrieved 2026-09-21, 764850 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6638856B1 (classification sweep, round 5)
 
@@ -7203,7 +7203,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MULTISTATION-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6319553B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6319553B1/en>
 
 (patent-gp22689334)=
 ## US 6,232,166 B1 — CMOS processing employing zero degree halo implant for P-channel transistor
@@ -7236,7 +7236,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HALO-AMD-ZERO.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6232166B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6232166B1/en>
 
 (patent-gp22697217)=
 ## US 6,566,249 B1 — Planarized semiconductor interconnect topography and method for polishing a metal layer to form wide interconnect structures
@@ -7269,7 +7269,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6566249 (retrieved 2026-09-20, 844953 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6566249> (retrieved 2026-09-20, 844953 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6566249B1 (classification sweep, round 5)
 
@@ -7305,7 +7305,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DUMMY-UMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6214745B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6214745B1/en>
 
 (patent-gp26769194)=
 ## US 6,121,156 A — Contact monitor, method of forming same and method of analyzing contact-, via-and/or trench-forming processes in an integrated circuit
@@ -7338,7 +7338,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6121156 (retrieved 2026-09-21, 1037093 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6121156> (retrieved 2026-09-21, 1037093 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6121156A (classification sweep, round 5)
 
@@ -7371,7 +7371,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6825544B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6825544B1/en>
 
 (patent-gp22801618)=
 ## US 6,372,150 B1 — High vapor plasma strip methods and devices to enhance the reduction of organic residues over metal surfaces
@@ -7404,7 +7404,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6372150 (retrieved 2026-09-21, 470749 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6372150> (retrieved 2026-09-21, 470749 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6372150B1 (classification sweep, round 5)
 
@@ -7440,7 +7440,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HCM-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6179973B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6179973B1/en>
 
 (patent-gp19572018)=
 ## US 6,455,402 B2 — Method of forming retrograde doping file in twin well CMOS device
@@ -7480,7 +7480,7 @@ families and members are counted.
 **Notes:**
 * Google Patents shows the title as "Method of forming retrograde doping file in twin well CMOS device"; the inventory entry PAT-WELL-HYNIX gives "doping profile"; the printed patent was not checked.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6455402B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6455402B2/en>
 
 (patent-gp23061646)=
 ## US 6,100,560 A — Nonvolatile cell
@@ -7513,7 +7513,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6100560 (retrieved 2026-09-21, 478116 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6100560> (retrieved 2026-09-21, 478116 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6100560A (classification sweep, round 5)
 
@@ -7548,7 +7548,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6436848 (retrieved 2026-09-21, 749331 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6436848> (retrieved 2026-09-21, 749331 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6436848B1 (classification sweep, round 5)
 
@@ -7617,7 +7617,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-VT-AMD.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6238982B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6238982B1/en>
 
 (patent-gp23160710)=
 ## US 6,303,496 B1 — Methods of filling constrained spaces with insulating materials and/or of forming contact holes and/or contacts in an integrated circuit
@@ -7650,7 +7650,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6303496 (retrieved 2026-09-21, 922196 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6303496> (retrieved 2026-09-21, 922196 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6303496B1 (classification sweep, round 5)
 
@@ -7685,7 +7685,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6214743 (retrieved 2026-09-21, 837343 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6214743> (retrieved 2026-09-21, 837343 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6214743B1 (classification sweep, round 5)
 :::
@@ -7721,7 +7721,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6372634 (retrieved 2026-09-20, 724015 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6372634> (retrieved 2026-09-20, 724015 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6372634B1 (classification sweep, round 5)
 :::
@@ -7757,7 +7757,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20020090817/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20020090817/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20020090817A1 (classification sweep, round 5)
 :::
@@ -7793,7 +7793,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6890860 (retrieved 2026-09-20, 307442 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6890860> (retrieved 2026-09-20, 307442 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6890860B1 (classification sweep, round 5)
 :::
@@ -7829,7 +7829,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RESIST-ZILOG.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6576405B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6576405B1/en>
 
 :::{dropdown} US 6,373,679 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2020-07-02
 :name: patent-gp23363694
@@ -7862,7 +7862,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6373679 (retrieved 2026-09-21, 674001 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6373679> (retrieved 2026-09-21, 674001 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6373679B1 (classification sweep, round 5)
 :::
@@ -7898,7 +7898,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6322716 (retrieved 2026-09-21, 1247942 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6322716> (retrieved 2026-09-21, 1247942 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6322716B1 (classification sweep, round 5)
 :::
@@ -7934,7 +7934,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6302766 (retrieved 2026-09-21, 654698 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6302766> (retrieved 2026-09-21, 654698 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6302766B1 (classification sweep, round 5)
 :::
@@ -7970,7 +7970,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6734108 (retrieved 2026-09-21, 1088544 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6734108> (retrieved 2026-09-21, 1088544 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6734108B1 (classification sweep, round 5)
 :::
@@ -8006,7 +8006,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-FUSEWIN-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6300252B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6300252B1/en>
 
 :::{dropdown} US 6,344,281 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2020-10-18
 :name: patent-gp23670081
@@ -8109,7 +8109,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-FUSE-VANGUARD.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6294474B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6294474B1/en>
 
 (patent-gp23783296)=
 ## US 6,350,353 B2 — Alternate steps of IMP and sputtering process to improve sidewall coverage
@@ -8149,7 +8149,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-IMP-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6350353B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6350353B2/en>
 
 :::{dropdown} US 7,199,410 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2020-12-14
 :name: patent-gp24960722
@@ -8182,7 +8182,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7199410/B2 (retrieved 2026-09-19, 37139 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7199410/B2> (retrieved 2026-09-19, 37139 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7199410B2 (round-4 unrestricted-assignee sweep)
 :::
@@ -8218,7 +8218,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6455427 (retrieved 2026-09-21, 1461914 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6455427> (retrieved 2026-09-21, 1461914 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6455427B1 (classification sweep, round 5)
 :::
@@ -8257,7 +8257,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, citing-seed — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14); cites US5108570A (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6969448B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6969448B1/en>
 
 :::{dropdown} US 6,596,466 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2021-01-25
 :name: patent-gp23950559
@@ -8290,7 +8290,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6596466 (retrieved 2026-09-20, 977045 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6596466> (retrieved 2026-09-20, 977045 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6596466B1 (classification sweep, round 5)
 :::
@@ -8326,7 +8326,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6727161 (retrieved 2026-09-20, 489405 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6727161> (retrieved 2026-09-20, 489405 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6727161B2 (classification sweep, round 5)
 :::
@@ -8362,7 +8362,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6525962 (retrieved 2026-09-21, 686373 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6525962> (retrieved 2026-09-21, 686373 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6525962B1 (classification sweep, round 5)
 :::
@@ -8398,7 +8398,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350665 (retrieved 2026-09-21, 1424916 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350665> (retrieved 2026-09-21, 1424916 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6350665B1 (classification sweep, round 5)
 :::
@@ -8434,7 +8434,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6518591 (retrieved 2026-09-21, 1035063 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6518591> (retrieved 2026-09-21, 1035063 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6518591B1 (classification sweep, round 5)
 :::
@@ -8479,7 +8479,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LINAC-AXCELIS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6653803B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6653803B1/en>
 
 :::{dropdown} US 6,399,512 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2021-06-15
 :name: patent-gp24376957
@@ -8512,7 +8512,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6399512 (retrieved 2026-09-21, 908131 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6399512> (retrieved 2026-09-21, 908131 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6399512B1 (classification sweep, round 5)
 :::
@@ -8548,7 +8548,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6635566 (retrieved 2026-09-21, 1131547 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6635566> (retrieved 2026-09-21, 1131547 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6635566B1 (classification sweep, round 5)
 :::
@@ -8626,7 +8626,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPRAY-SEMITOOL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7305999B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7305999B2/en>
 
 :::{dropdown} US 6,841,008 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2021-07-17
 :name: patent-gp33552841
@@ -8659,7 +8659,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6841008 (retrieved 2026-09-21, 407253 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6841008> (retrieved 2026-09-21, 407253 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6841008B1 (classification sweep, round 5)
 :::
@@ -8695,7 +8695,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6808944 (retrieved 2026-09-21, 894805 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6808944> (retrieved 2026-09-21, 894805 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6808944B1 (classification sweep, round 5)
 :::
@@ -8731,7 +8731,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPE-AMD.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6521502B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6521502B1/en>
 
 (patent-gp33418789)=
 ## US 6,817,903 B1 — Process for reducing leakage in an integrated circuit with shallow trench isolated active areas
@@ -8762,7 +8762,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6817903B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6817903B1/en>
 
 (patent-gp24577983)=
 ## US 6,759,288 B2 — Double LDD devices for improved DRAM refresh
@@ -8799,7 +8799,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-LDD-MICRON.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6759288B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6759288B2/en>
 
 :::{dropdown} US 2004/0183199 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-01-28
 :name: patent-gp32991247
@@ -8832,7 +8832,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20040183199/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20040183199/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20040183199A1 (classification sweep, round 5)
 :::
@@ -8868,7 +8868,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8030172 (retrieved 2026-09-20, 523012 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8030172> (retrieved 2026-09-20, 523012 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US8030172B1 (classification sweep, round 5)
 :::
@@ -8904,7 +8904,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803318 (retrieved 2026-09-21, 1544566 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803318> (retrieved 2026-09-21, 1544566 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6803318B1 (classification sweep, round 5)
 :::
@@ -8947,7 +8947,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-FARADAY-VARIAN.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6723998B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6723998B2/en>
 
 (patent-gp22880690)=
 ## US 6,660,603 B2 — Higher voltage drain extended MOS transistors with self-aligned channel and drain extensions
@@ -8986,7 +8986,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DEMOS-TI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6660603B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6660603B2/en>
 
 :::{dropdown} US 6,911,395 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2021-09-22
 :name: patent-gp34681120
@@ -9019,7 +9019,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6911395 (retrieved 2026-09-21, 848174 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6911395> (retrieved 2026-09-21, 848174 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6911395B1 (classification sweep, round 5)
 :::
@@ -9055,7 +9055,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6436799 (retrieved 2026-09-21, 360838 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6436799> (retrieved 2026-09-21, 360838 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6436799B1 (classification sweep, round 5)
 :::
@@ -9091,7 +9091,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6756315 (retrieved 2026-09-21, 1366567 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6756315> (retrieved 2026-09-21, 1366567 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6756315B1 (classification sweep, round 5)
 :::
@@ -9127,7 +9127,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-BIM-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6379849B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6379849B1/en>
 
 (patent-gp24897586)=
 ## US 6,430,028 B1 — Method for fabrication of an MIM capacitor and related structure
@@ -9160,7 +9160,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-NEWPORTFAB.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6430028B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6430028B1/en>
 
 (patent-gp24961682)=
 ## US 6,518,136 B2 — Sacrificial polysilicon sidewall process and rapid thermal spike annealing for advance CMOS fabrication
@@ -9196,7 +9196,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPIKE-IBM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6518136B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6518136B2/en>
 
 :::{dropdown} US 6,693,042 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2021-12-28
 :name: patent-gp31188927
@@ -9229,7 +9229,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6693042 (retrieved 2026-09-20, 1112451 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6693042> (retrieved 2026-09-20, 1112451 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6693042B1 (classification sweep, round 5)
 :::
@@ -9265,7 +9265,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7172914 (retrieved 2026-09-21, 429084 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7172914> (retrieved 2026-09-21, 429084 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7172914B1 (classification sweep, round 5)
 :::
@@ -9301,7 +9301,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6461904 (retrieved 2026-09-21, 319108 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6461904> (retrieved 2026-09-21, 319108 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6461904B1 (classification sweep, round 5)
 :::
@@ -9337,7 +9337,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6780771 (retrieved 2026-09-21, 1050098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6780771> (retrieved 2026-09-21, 1050098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6780771B1 (classification sweep, round 5)
 :::
@@ -9373,7 +9373,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6844237 (retrieved 2026-09-21, 442575 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6844237> (retrieved 2026-09-21, 442575 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6844237B1 (classification sweep, round 5)
 :::
@@ -9407,7 +9407,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6593208B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6593208B1/en>
 
 :::{dropdown} US 6,509,270 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-03-30
 :name: patent-gp25239028
@@ -9440,7 +9440,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6509270 (retrieved 2026-09-21, 1393240 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6509270> (retrieved 2026-09-21, 1393240 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6509270B1 (classification sweep, round 5)
 :::
@@ -9476,7 +9476,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6786809 (retrieved 2026-09-20, 1382713 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6786809> (retrieved 2026-09-20, 1382713 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6786809B1 (classification sweep, round 5)
 :::
@@ -9512,7 +9512,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6852649 (retrieved 2026-09-21, 502517 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6852649> (retrieved 2026-09-21, 502517 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6852649B1 (classification sweep, round 5)
 :::
@@ -9548,7 +9548,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HALO-AMD-DIFF.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6630385B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6630385B1/en>
 
 (patent-gp25297601)=
 ## US 6,492,716 B1 — Seal ring structure for IC containing integrated digital/RF/analog circuits and functions
@@ -9581,7 +9581,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SEALRING-ZEEVO.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6492716B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6492716B1/en>
 
 :::{dropdown} US 6,586,296 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-04-30
 :name: patent-gp25298594
@@ -9614,7 +9614,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6586296 (retrieved 2026-09-21, 1158098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6586296> (retrieved 2026-09-21, 1158098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6586296B1 (classification sweep, round 5)
 :::
@@ -9650,7 +9650,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6969684 (retrieved 2026-09-21, 1216565 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6969684> (retrieved 2026-09-21, 1216565 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6969684B1 (classification sweep, round 5)
 :::
@@ -9686,7 +9686,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6831346 (retrieved 2026-09-20, 826432 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6831346> (retrieved 2026-09-20, 826432 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6831346B1 (classification sweep, round 5)
 :::
@@ -9727,7 +9727,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HDP-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6914016B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6914016B2/en>
 
 (patent-gp46204269)=
 ## US 6,635,965 B1 — Method for producing ultra-thin tungsten layers with improved step coverage
@@ -9760,7 +9760,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PNL-NOVELLUS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6635965B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6635965B1/en>
 
 (patent-gp25360011)=
 ## US 6,376,262 B1 — Method of forming a semiconductor device using double endpoint detection
@@ -9793,7 +9793,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-CN-TEL, PAT-ENDPOINT-TEL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6376262B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6376262B1/en>
 
 :::{dropdown} US 6,492,710 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-06-07
 :name: patent-gp25370957
@@ -9826,7 +9826,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492710 (retrieved 2026-09-21, 1035421 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492710> (retrieved 2026-09-21, 1035421 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6492710B1 (classification sweep, round 5)
 :::
@@ -9862,7 +9862,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7014552 (retrieved 2026-09-21, 1379334 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7014552> (retrieved 2026-09-21, 1379334 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7014552B1 (classification sweep, round 5)
 :::
@@ -9898,7 +9898,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6761619 (retrieved 2026-09-21, 1450450 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6761619> (retrieved 2026-09-21, 1450450 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6761619B1 (classification sweep, round 5)
 :::
@@ -9935,7 +9935,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-HV-GRADED-CYP.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6531366B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6531366B1/en>
 
 :::{dropdown} US 6,630,643 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-07-30
 :name: patent-gp25437421
@@ -9968,7 +9968,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6630643 (retrieved 2026-09-21, 335262 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6630643> (retrieved 2026-09-21, 335262 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6630643B2 (classification sweep, round 5)
 :::
@@ -10003,7 +10003,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6818558B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6818558B1/en>
 
 :::{dropdown} US 6,844,235 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-07-31
 :name: patent-gp33565467
@@ -10036,7 +10036,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6844235 (retrieved 2026-09-20, 554496 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6844235> (retrieved 2026-09-20, 554496 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6844235B1 (classification sweep, round 5)
 :::
@@ -10072,7 +10072,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6890859 (retrieved 2026-09-21, 811774 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6890859> (retrieved 2026-09-21, 811774 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6890859B1 (classification sweep, round 5)
 :::
@@ -10108,7 +10108,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6667224 (retrieved 2026-09-21, 325701 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6667224> (retrieved 2026-09-21, 325701 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6667224B1 (classification sweep, round 5)
 :::
@@ -10144,7 +10144,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6562675 (retrieved 2026-09-21, 1733100 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6562675> (retrieved 2026-09-21, 1733100 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6562675B1 (classification sweep, round 5)
 :::
@@ -10183,7 +10183,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SORTER-INFINEON.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6747230B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6747230B2/en>
 
 :::{dropdown} US 6,844,262 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-08-31
 :name: patent-gp33565470
@@ -10216,7 +10216,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6844262 (retrieved 2026-09-20, 383527 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6844262> (retrieved 2026-09-20, 383527 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6844262B1 (classification sweep, round 5)
 :::
@@ -10252,7 +10252,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/6621184/B1 (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/6621184/B1> (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US6621184B1 (round-4 unrestricted-assignee sweep)
 :::
@@ -10304,7 +10304,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-PHILIPS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6717193B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6717193B2/en>
 
 :::{dropdown} US 6,803,330 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-10-12
 :name: patent-gp25522834
@@ -10337,7 +10337,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803330 (retrieved 2026-09-21, 402110 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803330> (retrieved 2026-09-21, 402110 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6803330B2 (classification sweep, round 5)
 :::
@@ -10371,7 +10371,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6828201B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6828201B1/en>
 
 :::{dropdown} US 6,841,491 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-11-08
 :name: patent-gp33550813
@@ -10404,7 +10404,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6841491 (retrieved 2026-09-20, 478289 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6841491> (retrieved 2026-09-20, 478289 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6841491B1 (classification sweep, round 5)
 :::
@@ -10456,7 +10456,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TARGET-TEXTURE-PRAXAIR.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6605199B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6605199B2/en>
 
 :::{dropdown} US 6,713,831 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2022-12-04
 :name: patent-gp31989889
@@ -10489,7 +10489,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6713831 (retrieved 2026-09-21, 985380 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6713831> (retrieved 2026-09-21, 985380 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6713831B1 (classification sweep, round 5)
 :::
@@ -10525,7 +10525,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6777307 (retrieved 2026-09-21, 942371 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6777307> (retrieved 2026-09-21, 942371 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6777307B1 (classification sweep, round 5)
 :::
@@ -10561,7 +10561,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6664120 (retrieved 2026-09-21, 899242 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6664120> (retrieved 2026-09-21, 899242 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6664120B1 (classification sweep, round 5)
 :::
@@ -10597,7 +10597,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6863595 (retrieved 2026-09-21, 1268581 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6863595> (retrieved 2026-09-21, 1268581 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6863595B1 (classification sweep, round 5)
 :::
@@ -10647,7 +10647,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STI-CR.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7439141B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7439141B2/en>
 
 :::{dropdown} US 6,835,616 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-01-29
 :name: patent-gp33516618
@@ -10680,7 +10680,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6835616 (retrieved 2026-09-21, 564632 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6835616> (retrieved 2026-09-21, 564632 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6835616B1 (classification sweep, round 5)
 :::
@@ -10716,7 +10716,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7026235 (retrieved 2026-09-20, 526168 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7026235> (retrieved 2026-09-20, 526168 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7026235B1 (classification sweep, round 5)
 :::
@@ -10752,7 +10752,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7129178 (retrieved 2026-09-21, 1044098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7129178> (retrieved 2026-09-21, 1044098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7129178B1 (classification sweep, round 5)
 :::
@@ -10788,7 +10788,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7365403 (retrieved 2026-09-21, 776704 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7365403> (retrieved 2026-09-21, 776704 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7365403B1 (classification sweep, round 5)
 :::
@@ -10827,7 +10827,7 @@ families and members are counted.
 **Notes:**
 * Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows name Applied Materials as the first assignee of the inventors' interest.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6776873B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6776873B1/en>
 
 (patent-gp27754013)=
 ## US 2003/0170956 A1 — Ultra-thin gate oxide through post decoupled plasma nitridation anneal
@@ -10865,7 +10865,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DPN-ANNEAL-CHARTERED.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20030170956A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20030170956A1/en>
 
 (patent-gp29778448)=
 ## US 6,677,213 B1 — SONOS structure including a deuterated oxide-silicon interface and method for making the same
@@ -10897,7 +10897,7 @@ families and members are counted.
 
 **Discovery:** cited-by-seed, citing-seed — cited by US20090179253A1, US8940645B2 (Google Patents citation tables); cites US5872387A (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6677213B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6677213B1/en>
 
 :::{dropdown} US 7,151,048 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-03-14
 :name: patent-gp37526559
@@ -10965,7 +10965,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6699795 (retrieved 2026-09-20, 464688 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6699795> (retrieved 2026-09-20, 464688 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6699795B1 (classification sweep, round 5)
 :::
@@ -11001,7 +11001,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6620715 (retrieved 2026-09-21, 1449260 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6620715> (retrieved 2026-09-21, 1449260 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6620715B1 (classification sweep, round 5)
 :::
@@ -11037,7 +11037,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6979640 (retrieved 2026-09-20, 423938 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6979640> (retrieved 2026-09-20, 423938 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6979640B1 (classification sweep, round 5)
 :::
@@ -11073,7 +11073,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6838392 (retrieved 2026-09-21, 537746 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6838392> (retrieved 2026-09-21, 537746 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6838392B1 (classification sweep, round 5)
 :::
@@ -11112,7 +11112,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-WELL-IBM.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6667205B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6667205B2/en>
 
 :::{dropdown} US 6,964,929 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-05-02
 :name: patent-gp35266339
@@ -11145,7 +11145,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6964929 (retrieved 2026-09-20, 828796 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6964929> (retrieved 2026-09-20, 828796 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6964929B1 (classification sweep, round 5)
 :::
@@ -11181,7 +11181,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7094707 (retrieved 2026-09-21, 409585 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7094707> (retrieved 2026-09-21, 409585 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7094707B1 (classification sweep, round 5)
 :::
@@ -11217,7 +11217,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6770566 (retrieved 2026-09-21, 610923 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6770566> (retrieved 2026-09-21, 610923 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6770566B1 (classification sweep, round 5)
 :::
@@ -11258,7 +11258,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DNW-HYNIX.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6806133B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6806133B2/en>
 
 :::{dropdown} US 6,866,571 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-05-21
 :name: patent-gp34271789
@@ -11291,7 +11291,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6866571 (retrieved 2026-09-21, 1164108 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6866571> (retrieved 2026-09-21, 1164108 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6866571B1 (classification sweep, round 5)
 :::
@@ -11327,7 +11327,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7078334 (retrieved 2026-09-21, 769588 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7078334> (retrieved 2026-09-21, 769588 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7078334B1 (classification sweep, round 5)
 :::
@@ -11363,7 +11363,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6887784 (retrieved 2026-09-21, 589572 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6887784> (retrieved 2026-09-21, 589572 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6887784B1 (classification sweep, round 5)
 :::
@@ -11399,7 +11399,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6660661 (retrieved 2026-09-21, 819007 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6660661> (retrieved 2026-09-21, 819007 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6660661B1 (classification sweep, round 5)
 :::
@@ -11435,7 +11435,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7192867 (retrieved 2026-09-20, 797962 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7192867> (retrieved 2026-09-20, 797962 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7192867B1 (classification sweep, round 5)
 :::
@@ -11471,7 +11471,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6682996 (retrieved 2026-09-21, 1232166 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6682996> (retrieved 2026-09-21, 1232166 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6682996B1 (classification sweep, round 5)
 :::
@@ -11507,7 +11507,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803289 (retrieved 2026-09-21, 1353455 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803289> (retrieved 2026-09-21, 1353455 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6803289B1 (classification sweep, round 5)
 :::
@@ -11547,7 +11547,7 @@ families and members are counted.
 **Notes:**
 * Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows name Cypress Semiconductor Corporation as the first assignee of the inventors' interest.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6969689B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6969689B1/en>
 
 :::{dropdown} US 7,256,083 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-06-28
 :name: patent-gp38337005
@@ -11580,7 +11580,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7256083 (retrieved 2026-09-20, 447659 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7256083> (retrieved 2026-09-20, 447659 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7256083B1 (classification sweep, round 5)
 :::
@@ -11616,7 +11616,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8080453 (retrieved 2026-09-20, 548336 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8080453> (retrieved 2026-09-20, 548336 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US8080453B1 (classification sweep, round 5)
 :::
@@ -11669,7 +11669,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-VT-RRR.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20110006372A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20110006372A1/en>
 
 :::{dropdown} US 6,866,986 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-07-10
 :name: patent-gp30114169
@@ -11702,7 +11702,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6866986 (retrieved 2026-09-20, 516428 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6866986> (retrieved 2026-09-20, 516428 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6866986B2 (classification sweep, round 5)
 :::
@@ -11738,7 +11738,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6881634 (retrieved 2026-09-21, 663047 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6881634> (retrieved 2026-09-21, 663047 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6881634B2 (classification sweep, round 5)
 :::
@@ -11774,7 +11774,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6893974 (retrieved 2026-09-21, 1833297 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6893974> (retrieved 2026-09-21, 1833297 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6893974B1 (classification sweep, round 5)
 :::
@@ -11810,7 +11810,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6903002 (retrieved 2026-09-21, 465618 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6903002> (retrieved 2026-09-21, 465618 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6903002B1 (classification sweep, round 5)
 :::
@@ -11847,7 +11847,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPIKE-AMAT-AMBIENT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6803297B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6803297B2/en>
 
 (patent-gp32659145)=
 ## US 6,897,131 B2 — Advances in spike anneal processes for ultra shallow junctions
@@ -11881,7 +11881,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPIKE-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6897131B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6897131B2/en>
 
 (patent-gp32068901)=
 ## US 2004/0069224 A1 — Cold trap for CVD furnace
@@ -11915,7 +11915,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-NH4CL-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20040069224A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20040069224A1/en>
 
 (patent-gp32823623)=
 ## US 6,774,033 B1 — Metal stack for local interconnect layer
@@ -11946,7 +11946,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("local interconnect"), priority before 2006-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6774033B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6774033B1/en>
 
 :::{dropdown} US 6,774,012 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-11-08
 :name: patent-gp32823630
@@ -11979,7 +11979,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6774012 (retrieved 2026-09-21, 668939 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6774012> (retrieved 2026-09-21, 668939 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6774012B1 (classification sweep, round 5)
 :::
@@ -12015,7 +12015,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7115462 (retrieved 2026-09-21, 730563 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7115462> (retrieved 2026-09-21, 730563 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7115462B1 (classification sweep, round 5)
 :::
@@ -12049,7 +12049,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search (xhr/query), assignee "Cypress Semiconductor", query "tungsten plug" (21 hits, first page examined), retrieved 2026-09-19; this is the W-plug-module search the progress log listed as outstanding (H1). The top on-topic hit was an aluminium-via/barrier-layer family, not a tungsten-plug-specific one; recorded as such rather than mischaracterised.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US6977217B1/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US6977217B1/en>
 
 :::{dropdown} US 6,680,516 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-12-06
 :name: patent-gp30000311
@@ -12082,7 +12082,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6680516 (retrieved 2026-09-20, 669433 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6680516> (retrieved 2026-09-20, 669433 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6680516B1 (classification sweep, round 5)
 :::
@@ -12118,7 +12118,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803321 (retrieved 2026-09-20, 597981 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803321> (retrieved 2026-09-20, 597981 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6803321B1 (classification sweep, round 5)
 :::
@@ -12154,7 +12154,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6943126 (retrieved 2026-09-20, 647310 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6943126> (retrieved 2026-09-20, 647310 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6943126B1 (classification sweep, round 5)
 :::
@@ -12190,7 +12190,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7189652 (retrieved 2026-09-20, 607185 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7189652> (retrieved 2026-09-20, 607185 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7189652B1 (classification sweep, round 5)
 :::
@@ -12226,7 +12226,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7229929 (retrieved 2026-09-20, 591816 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7229929> (retrieved 2026-09-20, 591816 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7229929B2 (classification sweep, round 5)
 :::
@@ -12262,7 +12262,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7396773 (retrieved 2026-09-20, 679026 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7396773> (retrieved 2026-09-20, 679026 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7396773B1 (classification sweep, round 5)
 :::
@@ -12298,7 +12298,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6857938 (retrieved 2026-09-21, 1079314 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6857938> (retrieved 2026-09-21, 1079314 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6857938B1 (classification sweep, round 5)
 :::
@@ -12370,7 +12370,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-FUSE-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6835642B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6835642B2/en>
 
 :::{dropdown} US 6,869,853 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2023-12-18
 :name: patent-gp34272234
@@ -12403,7 +12403,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6869853 (retrieved 2026-09-21, 498395 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6869853> (retrieved 2026-09-21, 498395 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6869853B1 (classification sweep, round 5)
 :::
@@ -12439,7 +12439,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6773975 (retrieved 2026-09-20, 451311 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6773975> (retrieved 2026-09-20, 451311 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6773975B1 (classification sweep, round 5)
 :::
@@ -12475,7 +12475,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6794269 (retrieved 2026-09-20, 1196546 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6794269> (retrieved 2026-09-20, 1196546 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6794269B1 (classification sweep, round 5)
 :::
@@ -12511,7 +12511,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6869850 (retrieved 2026-09-20, 487947 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6869850> (retrieved 2026-09-20, 487947 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US6869850B1 (classification sweep, round 5)
 :::
@@ -12547,7 +12547,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7173299/B1 (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7173299/B1> (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7173299B1 (round-4 unrestricted-assignee sweep)
 :::
@@ -12583,7 +12583,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7180111/B1 (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7180111/B1> (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7180111B1 (round-4 unrestricted-assignee sweep)
 :::
@@ -12619,7 +12619,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7024954 (retrieved 2026-09-21, 904370 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7024954> (retrieved 2026-09-21, 904370 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7024954B1 (classification sweep, round 5)
 :::
@@ -12653,7 +12653,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6764890B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6764890B1/en>
 
 :::{dropdown} US 6,833,622 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-02-27
 :name: patent-gp33510264
@@ -12686,7 +12686,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6833622 (retrieved 2026-09-21, 1083143 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6833622> (retrieved 2026-09-21, 1083143 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6833622B1 (classification sweep, round 5)
 :::
@@ -12737,7 +12737,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STI-AMBERWAVE.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6960781B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6960781B2/en>
 
 :::{dropdown} US 6,885,955 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-03-28
 :name: patent-gp34434758
@@ -12770,7 +12770,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6885955 (retrieved 2026-09-21, 1348611 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6885955> (retrieved 2026-09-21, 1348611 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6885955B1 (classification sweep, round 5)
 :::
@@ -12806,7 +12806,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6902993 (retrieved 2026-09-21, 674785 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6902993> (retrieved 2026-09-21, 674785 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6902993B2 (classification sweep, round 5)
 :::
@@ -12842,7 +12842,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6939792 (retrieved 2026-09-21, 420398 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6939792> (retrieved 2026-09-21, 420398 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US6939792B1 (classification sweep, round 5)
 :::
@@ -12892,7 +12892,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-FUJ.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7605041B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7605041B2/en>
 
 (patent-gp33298522)=
 ## US 2004/0214448 A1 — Method of ashing a photoresist
@@ -12927,7 +12927,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STRIP-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20040214448A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20040214448A1/en>
 
 (patent-gp32825106)=
 ## US 6,963,106 B1 — Memory array with memory cells having reduced short channel effects
@@ -12976,7 +12976,7 @@ families and members are counted.
 **Notes:**
 * Round-3 verification finding M4: this family's own cached record page carries USPTO assignment events naming Cypress alongside Spansion (2015-03-21 security interest, "Assignors: CYPRESS SEMICONDUCTOR CORPORATION, SPANSION LLC"; 2022-03-16, "Assigned to SPANSION LLC, CYPRESS SEMICONDUCTOR CORPORATION") -- verified directly against the cached page. This reflects the 2015 Cypress-Spansion corporate merger and later intellectual-property financing, not the Bloomington fab's own history; Spansion LLC is the AMD/Fujitsu NOR-flash lineage the design doc's same-lineage-assignee definition does not name, so the technique-class relation stands. The reason above was narrowed from "no public source ... ties Spansion to the Cypress/SkyWater fab lineage" (which read as if no connection to Cypress existed at all) to name the fab-lineage question specifically and acknowledge the assignment record.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US6963106B1/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US6963106B1/en>
 
 (patent-gp32851038)=
 ## US 7,078,310 B1 — Method for fabricating a high density composite MIM capacitor with flexible routing in semiconductor dies
@@ -13010,7 +13010,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-STACK-NEWPORTFAB.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7078310B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7078310B1/en>
 
 (patent-gp33457548)=
 ## US 7,514,373 B2 — Method and apparatus for plasma nitridation of gate dielectrics using amplitude modulated radio-frequency energy
@@ -13054,7 +13054,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DPN-RF-AMAT.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7514373B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7514373B2/en>
 
 :::{dropdown} US 7,323,411 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2024-09-26
 :name: patent-gp38973875
@@ -13087,7 +13087,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7323411 (retrieved 2026-09-20, 468467 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7323411> (retrieved 2026-09-20, 468467 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7323411B1 (classification sweep, round 5)
 :::
@@ -13123,7 +13123,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7371637 (retrieved 2026-09-20, 430579 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7371637> (retrieved 2026-09-20, 430579 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7371637B2 (classification sweep, round 5)
 :::
@@ -13166,7 +13166,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-INFINEON.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7112507B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7112507B2/en>
 
 (patent-gp34080863)=
 ## US 6,849,549 B1 — Method for forming dummy structures for improved CMP and reduced capacitance
@@ -13201,7 +13201,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DUMMY-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US6849549B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US6849549B1/en>
 
 (patent-gp34633830)=
 ## US 7,317,221 B2 — High density MIM capacitor structure and fabrication process
@@ -13235,7 +13235,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-STACK-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7317221B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7317221B2/en>
 
 (patent-gp34678118)=
 ## US 7,055,532 B2 — Method to remove fluorine residue from bond pads
@@ -13271,7 +13271,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-PAD-FLUORINE-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7055532B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7055532B2/en>
 
 :::{dropdown} US 7,112,975 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-02-23
 :name: patent-gp37018897
@@ -13304,7 +13304,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112975 (retrieved 2026-09-21, 452824 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112975> (retrieved 2026-09-21, 452824 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7112975B1 (classification sweep, round 5)
 :::
@@ -13340,7 +13340,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7033900 (retrieved 2026-09-21, 460765 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7033900> (retrieved 2026-09-21, 460765 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7033900B1 (classification sweep, round 5)
 :::
@@ -13376,7 +13376,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (wells / threshold implant, diffusion profile), retrieved 2026-09-19; named by the round-1 review as evidence that the wells module had not been searched.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US7105413B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US7105413B2/en>
 
 :::{dropdown} US 7,323,377 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-03-26
 :name: patent-gp38973874
@@ -13444,7 +13444,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7750420/B2 (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7750420/B2> (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7750420B2 (round-4 unrestricted-assignee sweep)
 :::
@@ -13480,7 +13480,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7329934 (retrieved 2026-09-21, 1529098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7329934> (retrieved 2026-09-21, 1529098 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7329934B1 (classification sweep, round 5)
 :::
@@ -13516,7 +13516,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7320944 (retrieved 2026-09-20, 496287 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7320944> (retrieved 2026-09-20, 496287 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7320944B1 (classification sweep, round 5)
 :::
@@ -13552,7 +13552,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7915175 (retrieved 2026-09-20, 711330 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7915175> (retrieved 2026-09-20, 711330 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7915175B1 (classification sweep, round 5)
 :::
@@ -13595,7 +13595,7 @@ families and members are counted.
 * Google Patents shows the original assignee as "Individual"; the USPTO assignment records it shows name Texas Instruments Incorporated as the first assignee of the inventors' interest.
 * Round-1 review finding M5: the round-1 review re-fetched US20060006461A1 on 2026-09-18 and reports its status as "Expired - Lifetime" with an expiration event 2024-07-08, rather than the "Granted" recorded here from the 2026-09-14 fetch. This drift changes nothing (the family is already expired, and 2024-07-08 already matches the family's expiry.date), but the member record has not been re-fetched to update its own status field, because Google Patents is unreachable from the environment this correction was made in.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20060006461A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20060006461A1/en>
 
 :::{dropdown} US 7,112,790 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-07-23
 :name: patent-gp37018887
@@ -13628,7 +13628,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112790 (retrieved 2026-09-21, 1254669 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112790> (retrieved 2026-09-21, 1254669 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7112790B1 (classification sweep, round 5)
 :::
@@ -13665,7 +13665,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-TI-ALCAP.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7250334B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7250334B2/en>
 
 :::{dropdown} US 7,659,180 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-08-26
 :name: patent-gp41646422
@@ -13698,7 +13698,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7659180 (retrieved 2026-09-21, 436248 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7659180> (retrieved 2026-09-21, 436248 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7659180B1 (classification sweep, round 5)
 :::
@@ -13750,10 +13750,10 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ASHER-AXCELIS.
 
 **Notes:**
-* Round-1 review correction (M9): JP2012191242A is a divisional of JP2008512004A (filed 2005-09-01, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 2005-09-01 + 20 years, already past today, not 2012-07-02 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, https://www.japaneselawtranslation.go.jp/en/laws/view/4097, retrieved 2026-09-18.
+* Round-1 review correction (M9): JP2012191242A is a divisional of JP2008512004A (filed 2005-09-01, a member of this same family); under the Japanese Patent Act a divisional's term is deemed to run from the original application's filing date, not its own, so the correct bound is 2005-09-01 + 20 years, already past today, not 2012-07-02 + 20 years as an earlier version of this dataset computed. Japanese Patent Act (Act No. 121 of 1959) Art. 44(2) (a divisional application "is deemed to have been filed at the time of filing of the original patent application") and Art. 67(1) ("the term of a patent ends 20 years after the filing date of the patent application"), English translation, Japanese Law Translation database, Ministry of Justice, <https://www.japaneselawtranslation.go.jp/en/laws/view/4097>, retrieved 2026-09-18.
 * Round-1 review finding M10: the round-1 review re-fetched CN101053063A on 2026-09-18 and reports its live status as Expired - Fee Related (expiry 2025-09-01), not the "Granted" recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not published) for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7449416B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7449416B2/en>
 
 :::{dropdown} US 7,268,052 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-09-08
 :name: patent-gp38473220
@@ -13786,7 +13786,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7268052 (retrieved 2026-09-21, 311193 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7268052> (retrieved 2026-09-21, 311193 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7268052B1 (classification sweep, round 5)
 :::
@@ -13823,7 +13823,7 @@ families and members are counted.
 **Notes:**
 * Round-3 verification finding M1, resolved per the coordinator's round-4 decision: this family is marked expired solely on a maintenance-fee lapse, not on its own adjusted-expiration date (2027-01-30, in the future). US8513753B1's own cached Google Patents legal events (fetched 2026-09-19) show: maintenance-fee reminder 2025-04-07 (37 CFR 1.362, large entity), lapse for non-payment 2025-09-22 (event code LAPS, "PATENT EXPIRED FOR FAILURE TO PAY MAINTENANCE FEES", recorded as fee\_lapse\_date), and patent discontinuation the same day (event code STCH, citing 37 CFR 1.362). A US patent lapsed for fees can be reinstated within an unintentional-delay petition window (37 CFR 1.378(b)); two years from the 2025-09-22 lapse puts that window open until about 2027-09-22 — still open today, unlike GP50930700's (closed 2025-08-14). The coordinator's decision (2026-09-19): a fee lapse whose reinstatement window is still open is not certainly expired, so this family is \`expired: unknown\` (collapsed) rather than \`true\` until the window closes or its own recorded expiry date (2027-01-30) passes anyway; \`tools/check\_patents.py\` now enforces this generally (a member \`Expired - Fee Related\` with a future recorded expiry needs a closed-window \`fee\_lapse\_date\` to count as ended). See the legal caveat on the landing page.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US8513753B1/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US8513753B1/en>
 :::
 
 :::{dropdown} US 7,071,124 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-09-24
@@ -13857,7 +13857,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7071124 (retrieved 2026-09-21, 551010 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7071124> (retrieved 2026-09-21, 551010 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7071124B1 (classification sweep, round 5)
 :::
@@ -13893,7 +13893,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7361602 (retrieved 2026-09-20, 490226 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7361602> (retrieved 2026-09-20, 490226 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7361602B1 (classification sweep, round 5)
 :::
@@ -13929,7 +13929,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9331180 (retrieved 2026-09-21, 787975 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9331180> (retrieved 2026-09-21, 787975 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9331180B2 (classification sweep, round 5)
 :::
@@ -13978,7 +13978,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SOFTMARK-GSI.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7705268B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7705268B2/en>
 :::
 
 :::{dropdown} US 7,018,942 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2025-11-15
@@ -14012,7 +14012,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7018942 (retrieved 2026-09-21, 841129 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7018942> (retrieved 2026-09-21, 841129 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7018942B1 (classification sweep, round 5)
 :::
@@ -14048,7 +14048,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7166902 (retrieved 2026-09-21, 756108 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7166902> (retrieved 2026-09-21, 756108 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7166902B1 (classification sweep, round 5)
 :::
@@ -14084,7 +14084,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7253094 (retrieved 2026-09-21, 1100495 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7253094> (retrieved 2026-09-21, 1100495 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7253094B1 (classification sweep, round 5)
 :::
@@ -14155,7 +14155,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7256087 (retrieved 2026-09-21, 497616 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7256087> (retrieved 2026-09-21, 497616 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7256087B1 (classification sweep, round 5)
 :::
@@ -14191,7 +14191,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7390750 (retrieved 2026-09-21, 1200508 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7390750> (retrieved 2026-09-21, 1200508 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7390750B1 (classification sweep, round 5)
 :::
@@ -14227,7 +14227,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7151287/B1 (retrieved 2026-09-19, 37131 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7151287/B1> (retrieved 2026-09-19, 37131 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7151287B1 (round-4 unrestricted-assignee sweep)
 :::
@@ -14263,7 +14263,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/7808022/B1 (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/7808022/B1> (retrieved 2026-09-19, 16896 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US7808022B1 (round-4 unrestricted-assignee sweep)
 :::
@@ -14306,7 +14306,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-SPA-TEL.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7501352B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7501352B2/en>
 
 :::{dropdown} US 9,202,758 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2026-04-19
 :name: patent-gp54609329
@@ -14339,7 +14339,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9202758 (retrieved 2026-09-21, 441281 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9202758> (retrieved 2026-09-21, 441281 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9202758B1 (classification sweep, round 5)
 :::
@@ -14375,7 +14375,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7352444 (retrieved 2026-09-21, 790805 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7352444> (retrieved 2026-09-21, 790805 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7352444B1 (classification sweep, round 5)
 :::
@@ -14411,7 +14411,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7351663 (retrieved 2026-09-21, 401293 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7351663> (retrieved 2026-09-21, 401293 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7351663B1 (classification sweep, round 5)
 :::
@@ -14462,7 +14462,7 @@ families and members are counted.
 * Round-1 review finding M10: the round-1 review re-fetched CN101208782A on 2026-09-18 and reports its live status as Active (expiry 2026-05-26), not the "Granted" recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not published) for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 * Round-1 review finding L4: US7429538B2, CN101208782B, JP5072837B2 and KR100993124B1 are all shown with status Active in this dataset, yet the family is correctly marked expired: true, because each one's own recorded adjusted/anticipated expiration date (2026-05-25/26) is in the past relative to today even though the public database has not yet updated its Active/Expired badge. The public databases lag reality here; check the linked record for the current badge before relying on it.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7429538B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7429538B2/en>
 
 :::{dropdown} US 2007/0008800 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2026-06-28
 :name: patent-gp37567141
@@ -14495,7 +14495,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US published application PPUBS's search returned is recorded as a member; other-jurisdiction members and any granted patent that may have issued from this application were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20070008800/A1 (retrieved 2026-09-19, 16972 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20070008800/A1> (retrieved 2026-09-19, 16972 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US20070008800A1 (round-4 unrestricted-assignee sweep)
 :::
@@ -14542,7 +14542,7 @@ families and members are counted.
 * Round-1 review finding M10: the round-1 review re-fetched CN101213641A on 2026-09-18 and reports its live status as Expired - Fee Related (expiry 2026-06-08), not the "Granted" recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not published) for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 * Round-1 review finding L4: US7375002B2 is shown with status Active in this dataset, yet the family is correctly marked expired: true, because its own recorded adjusted expiration date (2026-07-07) is in the past relative to today even though the public database has not yet updated its Active/ Expired badge. The public databases lag reality here; check the linked record for the current badge before relying on it.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7375002B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7375002B2/en>
 
 :::{dropdown} US 9,472,563 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2031-12-12
 :name: patent-gp37683063
@@ -14575,7 +14575,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9472563 (retrieved 2026-09-21, 1887493 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9472563> (retrieved 2026-09-21, 1887493 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9472563B2 (classification sweep, round 5)
 :::
@@ -14646,7 +14646,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8093719 (retrieved 2026-09-21, 723779 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8093719> (retrieved 2026-09-21, 723779 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8093719B1 (classification sweep, round 5)
 :::
@@ -14682,7 +14682,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9299578 (retrieved 2026-09-21, 1366368 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9299578> (retrieved 2026-09-21, 1366368 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9299578B2 (classification sweep, round 5)
 :::
@@ -14718,7 +14718,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7384833 (retrieved 2026-09-20, 709368 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7384833> (retrieved 2026-09-20, 709368 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7384833B2 (classification sweep, round 5)
 :::
@@ -14754,7 +14754,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7394075 (retrieved 2026-09-21, 468005 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7394075> (retrieved 2026-09-21, 468005 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7394075B1 (classification sweep, round 5)
 :::
@@ -14790,7 +14790,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7446063 (retrieved 2026-09-21, 401929 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7446063> (retrieved 2026-09-21, 401929 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7446063B1 (classification sweep, round 5)
 :::
@@ -14828,7 +14828,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-STI-LATTICE.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7985656B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7985656B1/en>
 
 :::{dropdown} US 7,768,068 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2027-06-05
 :name: patent-gp42358802
@@ -14896,7 +14896,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7678640 (retrieved 2026-09-21, 723537 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7678640> (retrieved 2026-09-21, 723537 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7678640B1 (classification sweep, round 5)
 :::
@@ -14932,7 +14932,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7981800 (retrieved 2026-09-20, 641180 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7981800> (retrieved 2026-09-20, 641180 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US7981800B1 (classification sweep, round 5)
 :::
@@ -15014,7 +15014,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-DICO2-MKS.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/EP2104648B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/EP2104648B1/en>
 :::
 
 :::{dropdown} US 8,399,360 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2027-11-14
@@ -15048,7 +15048,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8399360 (retrieved 2026-09-21, 501089 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8399360> (retrieved 2026-09-21, 501089 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8399360B1 (classification sweep, round 5)
 :::
@@ -15084,7 +15084,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9171936 (retrieved 2026-09-20, 1086384 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9171936> (retrieved 2026-09-20, 1086384 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9171936B2 (classification sweep, round 5)
 :::
@@ -15120,7 +15120,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9159568 (retrieved 2026-09-21, 899306 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9159568> (retrieved 2026-09-21, 899306 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9159568B2 (classification sweep, round 5)
 :::
@@ -15191,7 +15191,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9728414 (retrieved 2026-09-20, 460702 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9728414> (retrieved 2026-09-20, 460702 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9728414B2 (classification sweep, round 5)
 :::
@@ -15262,7 +15262,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9583501B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US9583501B1/en>
 :::
 
 :::{dropdown} US 9,831,113 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2034-02-19
@@ -15296,7 +15296,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9831113 (retrieved 2026-09-21, 553444 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9831113> (retrieved 2026-09-21, 553444 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9831113B2 (classification sweep, round 5)
 :::
@@ -15332,7 +15332,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9111985 (retrieved 2026-09-21, 555302 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9111985> (retrieved 2026-09-21, 555302 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9111985B1 (classification sweep, round 5)
 :::
@@ -15368,7 +15368,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9196495 (retrieved 2026-09-21, 943028 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9196495> (retrieved 2026-09-21, 943028 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9196495B2 (classification sweep, round 5)
 :::
@@ -15404,7 +15404,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9515081 (retrieved 2026-09-21, 1993335 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9515081> (retrieved 2026-09-21, 1993335 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9515081B2 (classification sweep, round 5)
 :::
@@ -15440,7 +15440,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9318333 (retrieved 2026-09-21, 482261 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9318333> (retrieved 2026-09-21, 482261 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9318333B2 (classification sweep, round 5)
 :::
@@ -15476,7 +15476,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7901976 (retrieved 2026-09-21, 513961 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7901976> (retrieved 2026-09-21, 513961 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7901976B1 (classification sweep, round 5)
 :::
@@ -15517,7 +15517,7 @@ families and members are counted.
 
 **Discovery:** continuation-search — Google Patents record page for US10699901B2, retrieved 2026-09-19: the granted continuation of exactly the estate this index holds as GP40071593 (same title "SONOS ONO stack scaling", same Jenne/Levy/Ramkumar inventor team, and it cites CN101517714A which is a GP40071593 member) that Google Patents places in a different family (GP49580623), the design doc's own worked example of the continuation/divisional blind spot. Found by checking GP40071593's own later continuations rather than by family/citation-table traversal.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US10699901B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US10699901B2/en>
 :::
 
 :::{dropdown} US 2009/0179253 A1 — shown as in force; estimated expiry 2027-06-17
@@ -15558,7 +15558,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs, assignee-search, citing-seed — Cited on docs pages; inventory PAT-02. Also reached through member US9355849B1: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14); cites US20090179253A1, US6136654A, US8093128B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20090179253A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20090179253A1/en>
 :::
 
 :::{dropdown} US 2013/0178031 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2032-03-31
@@ -15592,7 +15592,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20130178031/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20130178031/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20130178031A1 (classification sweep, round 5)
 :::
@@ -15628,7 +15628,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20130306975/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20130306975/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20130306975A1 (classification sweep, round 5)
 :::
@@ -15674,7 +15674,7 @@ families and members are counted.
 
 **Discovery:** continuation-search — Google Patents record page for US20180366563A1, retrieved 2026-09-19: the round-1 review's own words, "late continuations of the two most heavily cited families in this index (GP44760304, GP40071593) that Google groups separately"; found by an estate-targeted continuation search off those two seeds' later filings.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US20180366563A1/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US20180366563A1/en>
 :::
 
 :::{dropdown} US 7,670,963 B2 — shown as in force; estimated expiry 2028-05-25
@@ -15712,7 +15712,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8940645B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7670963B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7670963B2/en>
 :::
 
 :::{dropdown} US 7,880,219 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2028-05-25
@@ -15779,7 +15779,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, cited-by-seed, citing-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8940645B2 (Google Patents citation tables); cites US20090179253A1, US5872387A (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8067284B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8067284B1/en>
 :::
 
 :::{dropdown} US 8,093,128 B2 — shown as in force; estimated expiry 2028-10-22
@@ -15825,7 +15825,7 @@ families and members are counted.
 **Notes:**
 * Round-1 review finding M10: the round-1 review re-fetched CN101606236A on 2026-09-18 and reports its live status as Active (expiry 2028-05-23), not the "Granted" recorded here from the 2026-09-14 fetch. Checked the builder scripts used to produce this dataset (not published) for a substitution bug: none found — a member's status is copied verbatim from the parsed record page's own IFI legal-status field at fetch time, so "Granted" is what that page showed on 2026-09-14. The discrepancy is therefore either genuine drift (an application-type publication's displayed status can apparently change once the patent that supersedes it changes status) or Google-side rendering variation, not a dataset defect; not independently re-verified because Google Patents is unreachable from the environment this note was added in. Does not change this family's expired/collapsed state.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8093128B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8093128B2/en>
 :::
 
 :::{dropdown} US 8,283,261 B2 — shown as in force; estimated expiry 2030-03-29
@@ -15864,7 +15864,7 @@ families and members are counted.
 
 **Discovery:** cited-by-seed, citing-seed — cited by US20090179253A1, US8093128B2 (Google Patents citation tables); cites US8940645B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8283261B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8283261B2/en>
 :::
 
 :::{dropdown} US 8,614,124 B2 — shown as in force; estimated expiry 2031-06-02
@@ -15905,7 +15905,7 @@ families and members are counted.
 
 **Discovery:** cited-by-seed, citing-seed — cited by US20090179253A1, US8796098B1 (Google Patents citation tables); cites US7514373B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8614124B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8614124B2/en>
 :::
 
 :::{dropdown} US 8,643,124 B2 — shown as in force; estimated expiry 2027-06-13
@@ -15940,7 +15940,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, cited-by-seed, citing-seed — Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8093128B2 (Google Patents citation tables); cites US20090179253A1, US5872387A, US8093128B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8643124B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8643124B2/en>
 :::
 
 :::{dropdown} US 8,680,601 B2 — shown as in force; estimated expiry 2029-08-12
@@ -15982,7 +15982,7 @@ families and members are counted.
 
 **Discovery:** cited-by-seed — cited by US20090179253A1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8680601B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8680601B2/en>
 :::
 
 :::{dropdown} US 8,940,645 B2 — shown as in force; estimated expiry 2029-01-14
@@ -16024,7 +16024,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs, assignee-search — Cited on docs pages; inventory PAT-RADOX-CYP. Also reached through member US10304968B2: Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8940645B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8940645B2/en>
 :::
 
 :::{dropdown} US 9,929,240 B2 — shown as in force; estimated expiry 2032-07-01
@@ -16077,7 +16077,7 @@ families and members are counted.
 
 **Discovery:** continuation-search — Google Patents record page for US9929240B2, retrieved 2026-09-19: a continuation of the 2007-05-25 Cypress ONO estate (the same estate as GP44760304 and GP40071593) that Google Patents places in a separate family (GP49580624); the round-1 review named its sibling US10446656B2 (also a member of this family, original assignee Longitude Flash Memory Solutions Ltd) as absent. Found by an estate-targeted continuation search, not by following an existing seed's family table.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US9929240B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US9929240B2/en>
 :::
 
 :::{dropdown} US 9,281,384 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2028-06-05
@@ -16111,7 +16111,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9281384 (retrieved 2026-09-21, 806985 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9281384> (retrieved 2026-09-21, 806985 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9281384B2 (classification sweep, round 5)
 :::
@@ -16152,7 +16152,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-TESTLINE-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7679384B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7679384B2/en>
 :::
 
 :::{dropdown} US 9,263,249 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2028-07-04
@@ -16186,7 +16186,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9263249 (retrieved 2026-09-21, 857149 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9263249> (retrieved 2026-09-21, 857149 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9263249B2 (classification sweep, round 5)
 :::
@@ -16222,7 +16222,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20090020831/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20090020831/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20090020831A1 (classification sweep, round 5)
 :::
@@ -16258,7 +16258,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20140225116/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20140225116/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20140225116A1 (classification sweep, round 5)
 :::
@@ -16294,7 +16294,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9269828 (retrieved 2026-09-21, 850701 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9269828> (retrieved 2026-09-21, 850701 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9269828B2 (classification sweep, round 5)
 :::
@@ -16334,7 +16334,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10319733B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US10319733B2/en>
 :::
 
 :::{dropdown} US 8,119,538 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2028-08-09
@@ -16368,7 +16368,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8119538 (retrieved 2026-09-20, 562882 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8119538> (retrieved 2026-09-20, 562882 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US8119538B1 (classification sweep, round 5)
 :::
@@ -16404,7 +16404,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8154088 (retrieved 2026-09-21, 1068831 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8154088> (retrieved 2026-09-21, 1068831 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8154088B1 (classification sweep, round 5)
 :::
@@ -16440,7 +16440,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7936023 (retrieved 2026-09-21, 338353 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7936023> (retrieved 2026-09-21, 338353 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US7936023B1 (classification sweep, round 5)
 :::
@@ -16476,7 +16476,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9157150 (retrieved 2026-09-21, 1050162 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9157150> (retrieved 2026-09-21, 1050162 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9157150B2 (classification sweep, round 5)
 :::
@@ -16512,7 +16512,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20130175604/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20130175604/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20130175604A1 (classification sweep, round 5)
 :::
@@ -16548,7 +16548,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8860122 (retrieved 2026-09-20, 869003 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8860122> (retrieved 2026-09-20, 869003 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US8860122B1 (classification sweep, round 5)
 :::
@@ -16583,7 +16583,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US7799670B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US7799670B2/en>
 :::
 
 :::{dropdown} US 8,088,683 B2 — shown as in force; estimated expiry 2029-01-17
@@ -16616,7 +16616,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, citing-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14); cites US5872387A (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8088683B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8088683B2/en>
 :::
 
 :::{dropdown} US 8,063,434 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2029-05-13
@@ -16650,7 +16650,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8063434 (retrieved 2026-09-21, 697253 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8063434> (retrieved 2026-09-21, 697253 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8063434B1 (classification sweep, round 5)
 :::
@@ -16690,7 +16690,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8163660B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8163660B2/en>
 :::
 
 :::{dropdown} US 8,269,287 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2029-05-22
@@ -16724,7 +16724,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8269287 (retrieved 2026-09-21, 1144485 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8269287> (retrieved 2026-09-21, 1144485 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8269287B2 (classification sweep, round 5)
 :::
@@ -16760,7 +16760,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9236448 (retrieved 2026-09-20, 418863 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9236448> (retrieved 2026-09-20, 418863 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9236448B2 (classification sweep, round 5)
 :::
@@ -16796,7 +16796,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9299643 (retrieved 2026-09-20, 452301 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9299643> (retrieved 2026-09-20, 452301 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9299643B2 (classification sweep, round 5)
 :::
@@ -16832,7 +16832,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9041203 (retrieved 2026-09-21, 697315 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9041203> (retrieved 2026-09-21, 697315 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9041203B2 (classification sweep, round 5)
 :::
@@ -16868,7 +16868,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9334578 (retrieved 2026-09-21, 598604 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9334578> (retrieved 2026-09-21, 598604 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9334578B2 (classification sweep, round 5)
 :::
@@ -16904,7 +16904,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9153596 (retrieved 2026-09-21, 943022 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9153596> (retrieved 2026-09-21, 943022 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9153596B2 (classification sweep, round 5)
 :::
@@ -16943,7 +16943,7 @@ families and members are counted.
 **Notes:**
 * Round-3 verification finding M3: "Longitudinal Flash Storage Solutions Co., Ltd." is Google Patents' own machine rendering of the Chinese-language current-assignee text on the CN106653761A representative page; it is the same company recorded elsewhere in this dataset (e.g. GP49580623) as "Longitude Flash Memory Solutions Ltd", the Cypress spin-off. Recorded here as Google shows it on this family's representative page rather than silently substituted, so the by-assignee page's "Longitudinal Flash Storage Solutions Co., Ltd." heading should be read as the same entity as "Longitude Flash Memory Solutions Ltd".
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/CN106653761A/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/CN106653761A/en>
 :::
 
 :::{dropdown} US 10,199,229 B2 — shown as in force; estimated expiry 2030-04-26
@@ -16987,7 +16987,7 @@ families and members are counted.
 
 **Discovery:** continuation-search — Google Patents record page for US10199229B2, retrieved 2026-09-19: a continuation of the GP48743335 estate (same title, same priority 2009-04-24) that Google Patents places in a different family (GP46465479) from its parent, the exact phenomenon patent-index-design.md's "Known blind spot" describes; found by checking GP48743335's own continuations rather than by family/citation-table traversal.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US10199229B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US10199229B2/en>
 :::
 
 :::{dropdown} US 8,071,453 B1 — shown as in force; estimated expiry 2030-05-21
@@ -17020,7 +17020,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query ("shallow trench"), priority before 2010-01-01; Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14); cited by US20090179253A1, US8796098B1, US8940645B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8071453B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8071453B1/en>
 :::
 
 :::{dropdown} US 8,710,578 B2 — shown as in force; estimated expiry 2030-06-18
@@ -17056,7 +17056,7 @@ families and members are counted.
 **Notes:**
 * Subject to a terminal disclaimer per the round-1 review's USPTO front-page check; the dataset's expiry rules do not model terminal disclaimers (design doc, M4's neighbouring caveat), so this family's own estimated expiry may overstate the true term.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US8710578B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US8710578B2/en>
 :::
 
 :::{dropdown} US 8,110,414 B2 — shown as in force; estimated expiry 2030-01-02
@@ -17091,7 +17091,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-MIM-TI-ETCH.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8110414B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8110414B2/en>
 :::
 
 :::{dropdown} US 2009/0230289 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2030-05-28
@@ -17125,7 +17125,7 @@ families and members are counted.
 
 **Notes:**
 * Only the single US publication PPUBS's search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20090230289/A1 (retrieved 2026-09-19, 16972 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20090230289/A1> (retrieved 2026-09-19, 16972 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-19 USPTO Patent Public Search record for US20090230289A1 (round-4 unrestricted-assignee sweep)
 :::
@@ -17196,7 +17196,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8236151 (retrieved 2026-09-21, 675685 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8236151> (retrieved 2026-09-21, 675685 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8236151B1 (classification sweep, round 5)
 :::
@@ -17232,7 +17232,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9240418 (retrieved 2026-09-21, 750371 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9240418> (retrieved 2026-09-21, 750371 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9240418B2 (classification sweep, round 5)
 :::
@@ -17268,7 +17268,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9412598 (retrieved 2026-09-21, 1023152 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9412598> (retrieved 2026-09-21, 1023152 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9412598B2 (classification sweep, round 5)
 :::
@@ -17304,7 +17304,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4/M3 additional-CPC-classes sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20110308955/A1 (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20110308955/A1> (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US20110308955A1 (classification sweep, round 5)
 :::
@@ -17340,7 +17340,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431503 (retrieved 2026-09-20, 1250661 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9431503> (retrieved 2026-09-20, 1250661 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9431503B2 (classification sweep, round 5)
 :::
@@ -17410,7 +17410,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, citing-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cites US20090179253A1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8772059B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8772059B2/en>
 :::
 
 :::{dropdown} US 8,691,648 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2032-06-24
@@ -17444,7 +17444,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8691648 (retrieved 2026-09-21, 778281 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8691648> (retrieved 2026-09-21, 778281 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8691648B1 (classification sweep, round 5)
 :::
@@ -17480,7 +17480,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9245895 (retrieved 2026-09-21, 1804490 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9245895> (retrieved 2026-09-21, 1804490 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9245895B2 (classification sweep, round 5)
 :::
@@ -17516,7 +17516,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9570396 (retrieved 2026-09-21, 1215906 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9570396> (retrieved 2026-09-21, 1215906 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9570396B2 (classification sweep, round 5)
 :::
@@ -17563,7 +17563,7 @@ families and members are counted.
 
 **Discovery:** citing-seed — cites US5872387A, US6136654A, US8093128B2 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8685813B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8685813B2/en>
 :::
 
 :::{dropdown} US 2013/0178030 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2033-03-29
@@ -17597,7 +17597,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20130178030/A1 (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20130178030/A1> (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US20130178030A1 (classification sweep, round 5)
 :::
@@ -17633,7 +17633,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9396959 (retrieved 2026-09-21, 1561146 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9396959> (retrieved 2026-09-21, 1561146 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9396959B2 (classification sweep, round 5)
 :::
@@ -17669,7 +17669,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8592891 (retrieved 2026-09-21, 1423572 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/8592891> (retrieved 2026-09-21, 1423572 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US8592891B1 (classification sweep, round 5)
 :::
@@ -17705,7 +17705,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9564331 (retrieved 2026-09-21, 2077578 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9564331> (retrieved 2026-09-21, 2077578 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9564331B2 (classification sweep, round 5)
 :::
@@ -17741,7 +17741,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9196624 (retrieved 2026-09-21, 993751 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9196624> (retrieved 2026-09-21, 993751 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9196624B2 (classification sweep, round 5)
 :::
@@ -17780,9 +17780,9 @@ families and members are counted.
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RRAM-INTERMOLECULAR.
 
 **Notes:**
-* Round-1 review finding M4, re-checked per the coordinator's round-4 decision: US9076523B2 is marked expired on a maintenance-fee lapse, not on its adjusted-expiration date (2033-07-18, in the future). The independent review reports US9076523B2's own Google Patents legal events (https://patents.google.com/patent/US9076523B2/en) as: maintenance-fee reminder 2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362, recorded as fee\_lapse\_date), and the unintentional-delay petition window for reinstatement (37 CFR 1.378(b)) closed 2025-08-14 with no petition on record. This dataset could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope and the USPTO PatentsView/PED/assignment APIs were all unreachable from this environment when this note was added); the reported dates are recorded here, not independently re-verified, so a future refresh should confirm them directly. \`tools/check\_patents.py\` now computes the window itself from fee\_lapse\_date (2 years): 2025-08-14, already closed as of today, so this family correctly stays \`expired: true\` under the coordinator's new rule (a fee lapse ends the term once its window has closed) — unlike GP48952138, whose window is still open.
+* Round-1 review finding M4, re-checked per the coordinator's round-4 decision: US9076523B2 is marked expired on a maintenance-fee lapse, not on its adjusted-expiration date (2033-07-18, in the future). The independent review reports US9076523B2's own Google Patents legal events (<https://patents.google.com/patent/US9076523B2/en>) as: maintenance-fee reminder 2023-02-27, lapse for non-payment 2023-08-14 (37 CFR 1.362, recorded as fee\_lapse\_date), and the unintentional-delay petition window for reinstatement (37 CFR 1.378(b)) closed 2025-08-14 with no petition on record. This dataset could not independently re-fetch that page (Google Patents, Espacenet, WIPO Patentscope and the USPTO PatentsView/PED/assignment APIs were all unreachable from this environment when this note was added); the reported dates are recorded here, not independently re-verified, so a future refresh should confirm them directly. \`tools/check\_patents.py\` now computes the window itself from fee\_lapse\_date (2 years): 2025-08-14, already closed as of today, so this family correctly stays \`expired: true\` under the coordinator's new rule (a fee lapse ends the term once its window has closed) — unlike GP48952138, whose window is still open.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9076523B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US9076523B2/en>
 
 :::{dropdown} US 11,342,429 B2 — shown as in force; estimated expiry 2032-12-14
 :name: patent-gp58691400
@@ -17820,7 +17820,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS memory integration), retrieved 2026-09-19; found while chasing the round-1 review's named-missing-family table (tmp/review-index-patents-r1.md).
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11342429B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US11342429B2/en>
 :::
 
 :::{dropdown} US 9,209,197 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2033-12-14
@@ -17854,7 +17854,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9209197 (retrieved 2026-09-20, 1143512 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9209197> (retrieved 2026-09-20, 1143512 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9209197B2 (classification sweep, round 5)
 :::
@@ -17890,7 +17890,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9368606 (retrieved 2026-09-21, 3874032 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9368606> (retrieved 2026-09-21, 3874032 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9368606B2 (classification sweep, round 5)
 :::
@@ -17926,7 +17926,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9190531 (retrieved 2026-09-21, 812577 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9190531> (retrieved 2026-09-21, 812577 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9190531B2 (classification sweep, round 5)
 :::
@@ -17962,7 +17962,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9318498 (retrieved 2026-09-21, 1160578 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9318498> (retrieved 2026-09-21, 1160578 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9318498B2 (classification sweep, round 5)
 :::
@@ -18009,7 +18009,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search (xhr/query), assignee "Cypress Semiconductor", query "salicide" (498 hits, first page examined), retrieved 2026-09-19; this is the salicide-module search the progress log listed as outstanding (H1).
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11183509B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US11183509B2/en>
 :::
 
 :::{dropdown} US 2017/0221768 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2037-04-13
@@ -18043,7 +18043,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20170221768/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20170221768/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20170221768A1 (classification sweep, round 5)
 :::
@@ -18095,7 +18095,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs, assignee-search — Cited on docs pages; inventory PAT-04. Also reached through member US9620516B2: Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8796098B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8796098B1/en>
 :::
 
 :::{dropdown} US 9,318,373 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2034-04-19
@@ -18129,7 +18129,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9318373 (retrieved 2026-09-21, 2672731 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9318373> (retrieved 2026-09-21, 2672731 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9318373B2 (classification sweep, round 5)
 :::
@@ -18165,7 +18165,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9614105 (retrieved 2026-09-20, 1156701 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9614105> (retrieved 2026-09-20, 1156701 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9614105B2 (classification sweep, round 5)
 :::
@@ -18201,7 +18201,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US20190355583A1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US20190355583A1/en>
 :::
 
 :::{dropdown} US 9,911,747 B2 — shown as in force; estimated expiry 2034-09-27
@@ -18252,7 +18252,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS high-k metal gate integration), retrieved 2026-09-19; named by the round-1 review.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US9911747B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US9911747B2/en>
 :::
 
 :::{dropdown} US 9,437,470 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2034-10-08
@@ -18286,7 +18286,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9437470 (retrieved 2026-09-20, 1978225 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9437470> (retrieved 2026-09-20, 1978225 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9437470B2 (classification sweep, round 5)
 :::
@@ -18358,7 +18358,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9735289 (retrieved 2026-09-20, 919460 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9735289> (retrieved 2026-09-20, 919460 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9735289B2 (classification sweep, round 5)
 :::
@@ -18394,7 +18394,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9733574 (retrieved 2026-09-20, 708891 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9733574> (retrieved 2026-09-20, 708891 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9733574B2 (classification sweep, round 5)
 :::
@@ -18430,7 +18430,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10516044 (retrieved 2026-09-21, 995044 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10516044> (retrieved 2026-09-21, 995044 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10516044B2 (classification sweep, round 5)
 :::
@@ -18472,7 +18472,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (shallow trench isolation), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10002878B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US10002878B2/en>
 :::
 
 :::{dropdown} US 9,455,352 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2034-12-17
@@ -18506,7 +18506,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9455352 (retrieved 2026-09-21, 1348013 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9455352> (retrieved 2026-09-21, 1348013 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9455352B2 (classification sweep, round 5)
 :::
@@ -18542,7 +18542,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9466489 (retrieved 2026-09-21, 848744 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9466489> (retrieved 2026-09-21, 848744 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9466489B2 (classification sweep, round 5)
 :::
@@ -18578,7 +18578,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9494853 (retrieved 2026-09-21, 1213717 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9494853> (retrieved 2026-09-21, 1213717 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9494853B2 (classification sweep, round 5)
 :::
@@ -18614,7 +18614,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9368644 (retrieved 2026-09-21, 866324 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9368644> (retrieved 2026-09-21, 866324 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9368644B2 (classification sweep, round 5)
 :::
@@ -18650,7 +18650,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9252221 (retrieved 2026-09-21, 2270562 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9252221> (retrieved 2026-09-21, 2270562 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9252221B2 (classification sweep, round 5)
 :::
@@ -18686,7 +18686,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20170263459/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20170263459/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20170263459A1 (classification sweep, round 5)
 :::
@@ -18726,7 +18726,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01 (retrieved 2026-09-14).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10103244B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US10103244B2/en>
 :::
 
 :::{dropdown} US 9,425,325 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2035-01-13
@@ -18760,7 +18760,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9425325 (retrieved 2026-09-21, 631027 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9425325> (retrieved 2026-09-21, 631027 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9425325B2 (classification sweep, round 5)
 :::
@@ -18807,7 +18807,7 @@ families and members are counted.
 
 **Discovery:** citing-seed — cites US8093128B2, US8796098B1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US8916432B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US8916432B1/en>
 :::
 
 :::{dropdown} US 10,622,370 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2035-09-25
@@ -18842,8 +18842,8 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10622370 (retrieved 2026-09-21, 785087 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
-* Second-source check (US9276007B2): the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9276007 (retrieved 2026-09-21, 788346 bytes) exists and is a granted-patent PDF for this number.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10622370> (retrieved 2026-09-21, 785087 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check (US9276007B2): the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9276007> (retrieved 2026-09-21, 788346 bytes) exists and is a granted-patent PDF for this number.
 * Mixed provenance (round-6 H1 re-triage finding): the round-5 "cypress" query's own default-bucket residue separately found US9276007B2, an earlier member of this same DOCDB family (filed 2014-01-29 by the same inventor, Thurgate; Tim), whose PPUBS record shows applicantName "SPANSION LLC" despite an assigneeName of "Cypress Semiconductor Corporation" at grant -- the same applicant/assignee split the round-6 fixer treats as a Spansion tie elsewhere (GP44188074, GP50681947). US10622370B1 itself, the later continuation, was filed directly by Monterey Research LLC as both applicant and assignee. Recorded here rather than excluded, because the technique (self-aligned STI with charge-trap corner rounding) is the same one already cited from US10622370B1 as technique-class, and the two members are one family, not a choice between two.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10622370B1 (classification sweep, round 5)
@@ -18892,7 +18892,7 @@ families and members are counted.
 **Notes:**
 * Round-3 verification finding M3: the representative TWI640082B shows the original assignee only in Chinese (美商賽普拉斯半導體公司) and no current assignee, which produced a non-Latin-script "\#\# 美商賽普拉斯半導體公司" heading on by-assignee.md, the same structural defect round-1 finding M1 fixed for a different family. Corrected assignees.original/current to the Latin-script reading its own US members US8993457B1, US9496144B2 and US9911613B2 each give on their own fetched record pages (original: Cypress Semiconductor Corp; current: Longitude Flash Memory Solutions Ltd, all three agree), independently confirmed by USPTO Patent Public Search (round-3 review, family id 52707807, assignee "Cypress Semiconductor Corporation" on all three US siblings). The representative and its other fields are unchanged.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/TWI640082B/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/TWI640082B/en>
 :::
 
 :::{dropdown} US 9,570,458 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2035-02-12
@@ -18926,7 +18926,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9570458 (retrieved 2026-09-21, 616387 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9570458> (retrieved 2026-09-21, 616387 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9570458B2 (classification sweep, round 5)
 :::
@@ -18973,7 +18973,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RRAM-ETCHSTOP-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10003022B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US10003022B2/en>
 :::
 
 :::{dropdown} US 9,252,026 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2035-03-12
@@ -19007,7 +19007,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9252026 (retrieved 2026-09-20, 766161 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9252026> (retrieved 2026-09-20, 766161 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9252026B2 (classification sweep, round 5)
 :::
@@ -19043,7 +19043,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9917211 (retrieved 2026-09-21, 1012360 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9917211> (retrieved 2026-09-21, 1012360 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9917211B2 (classification sweep, round 5)
 :::
@@ -19079,7 +19079,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9589805 (retrieved 2026-09-21, 973150 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9589805> (retrieved 2026-09-21, 973150 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9589805B2 (classification sweep, round 5)
 :::
@@ -19115,7 +19115,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9343470 (retrieved 2026-09-21, 1318389 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9343470> (retrieved 2026-09-21, 1318389 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9343470B2 (classification sweep, round 5)
 :::
@@ -19156,7 +19156,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-RRAM-OXIDE-TSMC.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9431609B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US9431609B2/en>
 :::
 
 :::{dropdown} US 9,368,588 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2035-09-12
@@ -19190,7 +19190,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9368588 (retrieved 2026-09-21, 1497087 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9368588> (retrieved 2026-09-21, 1497087 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9368588B2 (classification sweep, round 5)
 :::
@@ -19226,7 +19226,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9362287 (retrieved 2026-09-21, 6398051 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9362287> (retrieved 2026-09-21, 6398051 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9362287B2 (classification sweep, round 5)
 :::
@@ -19262,7 +19262,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9496275 (retrieved 2026-09-21, 743249 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9496275> (retrieved 2026-09-21, 743249 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9496275B2 (classification sweep, round 5)
 :::
@@ -19298,7 +19298,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9461247 (retrieved 2026-09-21, 368896 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9461247> (retrieved 2026-09-21, 368896 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9461247B2 (classification sweep, round 5)
 :::
@@ -19351,7 +19351,7 @@ families and members are counted.
 
 **Discovery:** assignee-search, cited-by-seed — Google Patents search, assignee Cypress Semiconductor, query (SONOS), priority before 2016-01-01; Google Patents search, assignee Cypress Semiconductor, query (oxide-nitride-oxide), priority before 2016-01-01 (retrieved 2026-09-14); cited by US9824895B1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9218978B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US9218978B1/en>
 :::
 
 :::{dropdown} US 9,624,094 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2036-11-13
@@ -19385,7 +19385,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9624094 (retrieved 2026-09-20, 912269 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9624094> (retrieved 2026-09-20, 912269 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US9624094B1 (classification sweep, round 5)
 :::
@@ -19421,7 +19421,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10141393 (retrieved 2026-09-21, 1583617 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10141393> (retrieved 2026-09-21, 1583617 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10141393B1 (classification sweep, round 5)
 :::
@@ -19457,7 +19457,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10038004 (retrieved 2026-09-21, 1378793 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10038004> (retrieved 2026-09-21, 1378793 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10038004B2 (classification sweep, round 5)
 :::
@@ -19497,7 +19497,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-ONO-THICK-CYP.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US9824895B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US9824895B1/en>
 :::
 
 :::{dropdown} US 10,074,438 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2037-09-28
@@ -19531,7 +19531,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10074438 (retrieved 2026-09-21, 1032919 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10074438> (retrieved 2026-09-21, 1032919 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10074438B2 (classification sweep, round 5)
 :::
@@ -19572,7 +19572,7 @@ families and members are counted.
 
 **Discovery:** cited-in-docs — Cited on docs pages; inventory PAT-EDGESEAL-GF.
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062748B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US10062748B1/en>
 :::
 
 :::{dropdown} US 9,853,039 B1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2038-03-29
@@ -19606,7 +19606,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9853039 (retrieved 2026-09-21, 1323356 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9853039> (retrieved 2026-09-21, 1323356 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US9853039B1 (classification sweep, round 5)
 :::
@@ -19642,7 +19642,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10068912 (retrieved 2026-09-21, 1680257 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10068912> (retrieved 2026-09-21, 1680257 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10068912B1 (classification sweep, round 5)
 :::
@@ -19682,7 +19682,7 @@ families and members are counted.
 
 **Discovery:** citing-seed — cites US8796098B1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US10062573B1/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US10062573B1/en>
 :::
 
 :::{dropdown} US 11,690,227 B2 — shown as in force; estimated expiry 2038-07-19
@@ -19731,7 +19731,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Cypress Semiconductor, query (high-voltage poly gate), retrieved 2026-09-19; named by the round-1 review (tmp/review-index-patents-r1.md).
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11690227B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US11690227B2/en>
 :::
 
 :::{dropdown} US 2019/0027484 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2038-07-19
@@ -19765,7 +19765,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20190027484/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20190027484/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20190027484A1 (classification sweep, round 5)
 :::
@@ -19872,7 +19872,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10833009 (retrieved 2026-09-21, 2213183 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10833009> (retrieved 2026-09-21, 2213183 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US10833009B2 (classification sweep, round 5)
 :::
@@ -19908,7 +19908,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20190043751/A1 (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20190043751/A1> (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US20190043751A1 (classification sweep, round 5)
 :::
@@ -19948,7 +19948,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
 
-**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/WO2020249699A1/en
+**Verified:** 2026-09-18 Google Patents record page <https://patents.google.com/patent/WO2020249699A1/en>
 :::
 
 :::{dropdown} US 2022/0122660 A1 — legal status shown as Pending; expiry not fully bounded from the records retrieved, estimated no later than 2040-07-22
@@ -19981,7 +19981,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
 
-**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/US20220122660A1/en
+**Verified:** 2026-09-18 Google Patents record page <https://patents.google.com/patent/US20220122660A1/en>
 :::
 
 :::{dropdown} US 11,610,820 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2040-07-24
@@ -20059,7 +20059,7 @@ families and members are counted.
 **Notes:**
 * Round-1 review finding M5: the round-1 review re-fetched EP4062463A1 on 2026-09-18 (the same day as this dataset's own fetch) and reports it live as "Active" with an anticipated expiration of 2040-11-17, a member-level expiry event this dataset does not record (the member is recorded here only with a bare "Granted"/status, no expiry.date). This changes nothing about the family (already shown in force and collapsed), but the member's own record should be re-fetched to pick up its expiry event at the next refresh; not done here because Google Patents is unreachable from the environment this correction was made in.
 
-**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/EP4062463A1/en
+**Verified:** 2026-09-18 Google Patents record page <https://patents.google.com/patent/EP4062463A1/en>
 :::
 
 :::{dropdown} US 11,810,616 B2 — shown as in force; estimated expiry 2040-11-26
@@ -20109,7 +20109,7 @@ families and members are counted.
 
 **Discovery:** assignee-search — Google Patents search, assignee Infineon Technologies, query (SONOS multi-level memory), retrieved 2026-09-19; named by the round-1 review. Same Ramkumar-led inventor team already seen on GP40072804.
 
-**Verified:** 2026-09-19 Google Patents record page https://patents.google.com/patent/US11810616B2/en
+**Verified:** 2026-09-19 Google Patents record page <https://patents.google.com/patent/US11810616B2/en>
 :::
 
 :::{dropdown} US 11,069,789 B2 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2041-05-04
@@ -20143,7 +20143,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (point-4 Monterey Research sweep), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11069789 (retrieved 2026-09-21, 1373862 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11069789> (retrieved 2026-09-21, 1373862 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US11069789B2 (classification sweep, round 5)
 :::
@@ -20179,7 +20179,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20230081072/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20230081072/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20230081072A1 (classification sweep, round 5)
 :::
@@ -20221,7 +20221,7 @@ families and members are counted.
 
 **Discovery:** citing-seed — cites US9824895B1 (Google Patents citation tables).
 
-**Verified:** 2026-09-14 Google Patents record page https://patents.google.com/patent/US12232324B2/en
+**Verified:** 2026-09-14 Google Patents record page <https://patents.google.com/patent/US12232324B2/en>
 :::
 
 :::{dropdown} US 2025/0031586 A1 — legal status shown as Granted; expiry not fully bounded from the records retrieved, estimated no later than 2044-07-21
@@ -20298,10 +20298,10 @@ families and members are counted.
 **Discovery:** assignee-search — Google Patents search assignee:"Weebit Nano", retrieved 2026-09-18; coordinator decision: Weebit Nano ReRAM patents in scope.
 
 **Notes:**
-* Round-1 review finding M1: this dataset originally recorded the original assignee only as shown by the Korean representative page, "위빗 나노 리미티드" (Google's Korean rendering of "Weebit Nano Limited"), which split this family from the "Weebit Nano Ltd" heading of the other three Weebit families on the by-assignee page and omitted the CEA co-applicant entirely. Corrected using the EPO linked-data record for the family's EP member, independently fetched (https://data.epo.org/linked-data/data/publication/EP/4577029/A1/-.json, retrieved 2026-09-18), which gives the applicants as "Commissariat à l'Energie Atomique et aux Energies Alternatives" (FR) and "Weebit Nano Ltd" (IL); recorded here in the ASCII, "CEA"-suffixed form the sibling families GP68072713 and GP69743400 use, for consistency. The representative and its other fields are unchanged (Google Patents itself was not re-fetched for this correction).
+* Round-1 review finding M1: this dataset originally recorded the original assignee only as shown by the Korean representative page, "위빗 나노 리미티드" (Google's Korean rendering of "Weebit Nano Limited"), which split this family from the "Weebit Nano Ltd" heading of the other three Weebit families on the by-assignee page and omitted the CEA co-applicant entirely. Corrected using the EPO linked-data record for the family's EP member, independently fetched (<https://data.epo.org/linked-data/data/publication/EP/4577029/A1/-.json>, retrieved 2026-09-18), which gives the applicants as "Commissariat à l'Energie Atomique et aux Energies Alternatives" (FR) and "Weebit Nano Ltd" (IL); recorded here in the ASCII, "CEA"-suffixed form the sibling families GP68072713 and GP69743400 use, for consistency. The representative and its other fields are unchanged (Google Patents itself was not re-fetched for this correction).
 * Round-1 review finding M5: the round-1 review re-fetched KR20250094623A on 2026-09-18 and reports it live as "Active" with an anticipated expiration of 2044-12-18, a member-level expiry event this dataset does not record (the member is recorded here only with a bare "Granted" status, no expiry.date). This changes nothing about the family (already shown in force and collapsed, and the family's expiry.date of 2044-12-18 already comes from the sibling member US12414485B2's own recorded expiry), but this member's own record should be re-fetched to pick up its expiry event at the next refresh; not done here because Google Patents is unreachable from the environment this correction was made in.
 
-**Verified:** 2026-09-18 Google Patents record page https://patents.google.com/patent/KR20250094623A/en
+**Verified:** 2026-09-18 Google Patents record page <https://patents.google.com/patent/KR20250094623A/en>
 :::
 
 :::{dropdown} US 2024/0206183 A1 — legal status shown as None; expiry not fully bounded from the records retrieved, estimated no later than 2045-02-28
@@ -20335,7 +20335,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search, not Google Patents -- sourced via the round-5 CPC-classification sweep's cached search hit (H1 abstract re-triage of the round-5 default-bucket residue), then re-triaged in round 6 by reading this member's own USPTO Patent Public Search full-text "Text View" front page (title, abstract, claim 1), rather than by the round-5 title-keyword classifier that had rejected it by default. Only the single US publication the search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original (no current-ownership lookup was made). inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list a full record page would show.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20240206183/A1 (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20240206183/A1> (retrieved 2026-09-21, 1071 bytes) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-21 USPTO Patent Public Search record for US20240206183A1 (classification sweep, round 5)
 :::
@@ -20371,7 +20371,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method (see patent-index-design.md's "PPUBS fallback" section, round-5 addendum). Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. assignees.current repeats assignees.original, normalised to the spelling already used elsewhere in this index; no current-ownership lookup was made. inventors reproduces PPUBS's own truncated "inventorsShort" field, not the full named list Google Patents shows.
-* Second-source check: the USPTO grant PDF at https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12250815 (retrieved 2026-09-20, 1930383 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
+* Second-source check: the USPTO grant PDF at <https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12250815> (retrieved 2026-09-20, 1930383 bytes) exists and is a granted-patent PDF for this number, cross-checking PPUBS's own search-hit metadata against a second USPTO system.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US12250815B1 (classification sweep, round 5)
 :::
@@ -20407,7 +20407,7 @@ families and members are counted.
 
 **Notes:**
 * Built from USPTO Patent Public Search (classification sweep, round 5), not Google Patents -- Google Patents was in fact reachable this round, but the coordinating brief directed sourcing new families via the PPUBS fallback path for consistency with this round's own PPUBS-based CPC-classification discovery method. Only the single US publication PPUBS's own search returned is recorded as a member; other-jurisdiction members and any other US member of the same family were not searched for, so this family is not claimed complete. PPUBS reports no legal status or adjusted-expiration date, so this member's status and legal\_status.status are null; expiry is computed purely from the term-arithmetic bound, never assumed extended by a term adjustment PPUBS does not report. inventors reproduces PPUBS's own truncated "inventorsShort" field.
-* Second-source check: EPO linked data at https://data.epo.org/linked-data/data/publication/US/20260068542/A1 (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
+* Second-source check: EPO linked data at <https://data.epo.org/linked-data/data/publication/US/20260068542/A1> (retrieved 2026-09-20) returns a record for this publication, cross-checking PPUBS's own search-hit metadata against a second, independent database.
 
 **Verified:** 2026-09-20 USPTO Patent Public Search record for US20260068542A1 (classification sweep, round 5)
 :::

@@ -109,10 +109,35 @@ OTHER_COUNTRY_NAMES = {
 }
 
 _ESC = re.compile(r"([\\`*_\[\]<>|#${}])")
+_BARE_URL_RE = re.compile(r"https?://[^\s)\]]+")
+_URL_TRAILING_PUNCT = ",.;:!?"
 
 
 def esc(text: object) -> str:
     return _ESC.sub(r"\\\1", " ".join(str(text).split()))
+
+
+def esc_urls(text: object) -> str:
+    """Like ``esc()``, but any bare ``http(s)`` URL in the text is
+    wrapped in ``<…>`` so it renders as a clickable link (report-C C11)
+    instead of plain text; the URL itself is not escaped, and sentence
+    punctuation immediately after it (a comma, full stop, …) is put back
+    outside the angle brackets."""
+    s = " ".join(str(text).split())
+    out = []
+    pos = 0
+    for m in _BARE_URL_RE.finditer(s):
+        url = m.group(0)
+        trail = ""
+        while url and url[-1] in _URL_TRAILING_PUNCT:
+            trail = url[-1] + trail
+            url = url[:-1]
+        out.append(_ESC.sub(r"\\\1", s[pos:m.start()]))
+        out.append(f"<{url}>")
+        out.append(_ESC.sub(r"\\\1", trail))
+        pos = m.end()
+    out.append(_ESC.sub(r"\\\1", s[pos:]))
+    return "".join(out)
 
 
 IRREGULAR_PLURAL = {"family": "families"}
@@ -183,7 +208,7 @@ def members_table(fam: dict) -> list[str]:
         typ = m["document_type"].replace("-", " ")
         pub = m.get("publication_date") or "—"
         status = esc(m.get("status")) if m.get("status") else "not shown"
-        verified = esc(m["verified"])
+        verified = esc_urls(m["verified"])
         links = f"[Espacenet]({m['links']['espacenet']}) · [Google Patents]({m['links']['google_patents']})"
         for name, u in m["links"].items():
             if name not in ("espacenet", "google_patents"):
@@ -248,9 +273,9 @@ def family_body(fam: dict) -> list[str]:
         body.append("")
         body.append("**Notes:**")
         for n in fam["notes"]:
-            body.append(f"* {esc(n)}")
+            body.append(f"* {esc_urls(n)}")
     body.append("")
-    body.append(f"**Verified:** {esc(fam['verified'])}")
+    body.append(f"**Verified:** {esc_urls(fam['verified'])}")
     return body
 
 
@@ -294,7 +319,7 @@ CAVEAT = [
     "patent lapsed for non-payment of a maintenance fee can be reinstated on",
     "a petition showing the delay was unintentional, within statutory time",
     "limits that depend on which fee was missed (37 CFR 1.378(a)/(c),",
-    "Cornell LII, https://www.law.cornell.edu/cfr/text/37/1.378); a family",
+    "Cornell LII, <https://www.law.cornell.edu/cfr/text/37/1.378>); a family",
     "shown as expired solely on the strength of a fee lapse, while its term",
     "has not otherwise run, says so in its notes.",
     "Before relying on the status of any family, check the linked",
@@ -514,6 +539,11 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         if fetched < nmembers else
         [f"record page was fetched, and so has every one of the {nmembers} members.", *ppubs_clause]
     )
+    # report-C C11: purpose -> browse the views, with counts -> how to
+    # read an entry -> legal caveat -> a collapsed "Scope, method and
+    # counts" holding the present methodology text verbatim. Only the
+    # order and headings change here; every sentence below is the same
+    # text this function always produced.
     body = [
         "A worldwide index of patents and published applications related to",
         "the SKY130 process technology and its lineage (Cypress",
@@ -531,14 +561,35 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         "Patents' own record page, linked alongside it, is the working",
         "full-text link this index relies on for every member.",
         "",
-        f"Records were retrieved {when} (individual records carry their own",
-        f"`verified` date). The index holds {plural(n, 'family')} "
-        f"({plural(nmembers, 'member')} in total). Every family's representative",
-        *fetched_note,
+        "## Other views",
         "",
-        "## Legal caveat",
+        "* {ref}`patents-families` — the canonical entry for every family, in priority-date order.",
+        "* {ref}`patents-by-module` — grouped by process module.",
+        "* {ref}`patents-by-assignee` — grouped by original assignee.",
+        "* {ref}`patents-by-jurisdiction` — grouped by country or office, and by family size.",
+        "* {ref}`patents-by-date` — grouped by decade of priority date, and by status.",
         "",
-        *CAVEAT,
+        "```{toctree}",
+        ":hidden:",
+        "",
+        "families",
+        "by-module",
+        "by-assignee",
+        "by-jurisdiction",
+        "by-date",
+        "```",
+        "",
+        "## Counts",
+        "",
+        "| | Families | Members |",
+        "|---|---|---|",
+        f"| Total | {n} | {nmembers} |",
+        f"| Shown as expired | {status['expired']} | "
+        f"{sum(len(f['members']) for f in fams if status_word(f) == 'expired')} |",
+        f"| Shown as in force | {status['in force']} | "
+        f"{sum(len(f['members']) for f in fams if status_word(f) == 'in force')} |",
+        f"| Status unknown | {status['unknown']} | "
+        f"{sum(len(f['members']) for f in fams if status_word(f) == 'unknown')} |",
         "",
         "## Unexpired and unknown-status families are collapsed",
         "",
@@ -560,39 +611,19 @@ def gen_index(fams: list[dict], retrieved: str) -> str:
         body.append(f"* **{RELATION_NAME[rel]}** (`{rel}`) — {text}")
     body += [
         "",
-        "## Counts",
+        "## Legal caveat",
         "",
-        "| | Families | Members |",
-        "|---|---|---|",
-        f"| Total | {n} | {nmembers} |",
-        f"| Shown as expired | {status['expired']} | "
-        f"{sum(len(f['members']) for f in fams if status_word(f) == 'expired')} |",
-        f"| Shown as in force | {status['in force']} | "
-        f"{sum(len(f['members']) for f in fams if status_word(f) == 'in force')} |",
-        f"| Status unknown | {status['unknown']} | "
-        f"{sum(len(f['members']) for f in fams if status_word(f) == 'unknown')} |",
+        *CAVEAT,
         "",
-        "## Scope and completeness",
+        ":::{dropdown} Scope, method and counts",
+        "",
+        f"Records were retrieved {when} (individual records carry their own",
+        f"`verified` date). The index holds {plural(n, 'family')} "
+        f"({plural(nmembers, 'member')} in total). Every family's representative",
+        *fetched_note,
         "",
         *scope_and_completeness(fams),
-        "",
-        "## Other views",
-        "",
-        "* {ref}`patents-families` — the canonical entry for every family, in priority-date order.",
-        "* {ref}`patents-by-module` — grouped by process module.",
-        "* {ref}`patents-by-assignee` — grouped by original assignee.",
-        "* {ref}`patents-by-jurisdiction` — grouped by country or office, and by family size.",
-        "* {ref}`patents-by-date` — grouped by decade of priority date, and by status.",
-        "",
-        "```{toctree}",
-        ":hidden:",
-        "",
-        "families",
-        "by-module",
-        "by-assignee",
-        "by-jurisdiction",
-        "by-date",
-        "```",
+        ":::",
     ]
     return page("patents-index", "Patent index", body)
 

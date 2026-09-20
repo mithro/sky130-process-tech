@@ -233,7 +233,7 @@ def entry(r: dict) -> list[str]:
     elif not is_arxiv_only:
         out.append("* **Free copies:** none located")
     if r["basis"] == "named-process":
-        out.append("* **Basis:** process named (see {ref}`papers-scope`).")
+        out.append("* **Basis:** process named (see {ref}`Scope <papers-scope>`).")
     else:
         out.append(f"* **Basis:** {esc(BASIS_NAME[r['basis']])} — {esc(BASIS_TEXT[r['basis']])}. {esc(r['notes'])}")
     out.append("* **Topics:** " + ", ".join(
@@ -311,8 +311,37 @@ def gen_index(rs: list[dict]) -> str:
         "designed-on-sky130",
         "```",
         "",
-        "(papers-scope)=",
-        "## Scope",
+        "## Counts",
+        "",
+        "By year: " + ", ".join(f"{{ref}}`{y} <papers-year-{y}>` ({years[y]})" for y in sorted(years)) + ".",
+        "",
+        "| Topic | Papers | Also among the fab publications |",
+        "|---|---|---|",
+    ]
+    order = [t for _, ts in TOPIC_GROUPS for t in ts]
+    for t in order:
+        if topics[t] or fab_topics[t]:
+            body.append(f"| {{ref}}`{TOPIC_NAMES[t]} <papers-topic-{t}>` | {topics[t]} | {fab_topics[t] or ''} |")
+    body.append(f"| {{ref}}`Fab publications (Bloomington) <papers-fab-publications>` | {len(fabs)} | |")
+    body += [
+        "",
+        "## How to read an entry",
+        "",
+        "Each entry gives the full citation (authors, title, venue, volume, issue,",
+        "pages and year); where it is published, with its host, access and DOI or",
+        "arXiv link; the free copies with their open-access type; the basis; the",
+        "topics; the institutions named in the author affiliations; a quotation",
+        "naming the process or the fabrication where the paper gives one; the",
+        "related pages of this reference; and the date and record it was checked",
+        "against.",
+        "",
+        # report-C C11: the present "Scope" text moves into a collapsed
+        # dropdown, verbatim, with its (papers-scope)= label following it
+        # so the ~40 bare {ref}`Scope <papers-scope>` mentions elsewhere
+        # in this file keep resolving (their link text is explicit, so
+        # the dropdown's own title does not change what they render).
+        ":::{dropdown} Scope, method and counts",
+        ":name: papers-scope",
         "",
         "A paper is included when its subject is the open PDK and its models, a",
         "device, test structure or reliability study on SKY130, a circuit",
@@ -334,30 +363,13 @@ def gen_index(rs: list[dict]) -> str:
         "Free copies are limited to legitimate sources: arXiv, OSTI, institutional",
         "repositories, preprint servers, open proceedings pages and open-access",
         "publisher versions.",
+        ":::",
         "",
-        "## How to read an entry",
+        "## All papers",
         "",
-        "Each entry gives the full citation (authors, title, venue, volume, issue,",
-        "pages and year); where it is published, with its host, access and DOI or",
-        "arXiv link; the free copies with their open-access type; the basis; the",
-        "topics; the institutions named in the author affiliations; a quotation",
-        "naming the process or the fabrication where the paper gives one; the",
-        "related pages of this reference; and the date and record it was checked",
-        "against.",
+        "Sorted by first author's family name, then year.",
         "",
-        "## Counts",
-        "",
-        "By year: " + ", ".join(f"{{ref}}`{y} <papers-year-{y}>` ({years[y]})" for y in sorted(years)) + ".",
-        "",
-        "| Topic | Papers | Also among the fab publications |",
-        "|---|---|---|",
     ]
-    order = [t for _, ts in TOPIC_GROUPS for t in ts]
-    for t in order:
-        if topics[t] or fab_topics[t]:
-            body.append(f"| {{ref}}`{TOPIC_NAMES[t]} <papers-topic-{t}>` | {topics[t]} | {fab_topics[t] or ''} |")
-    body.append(f"| {{ref}}`Fab publications (Bloomington) <papers-fab-publications>` | {len(fabs)} | |")
-    body += ["", "## All papers", "", "Sorted by first author's family name, then year.", ""]
     for r in sorted(rs, key=lambda r: r["label"]):
         body += entry(r)
     return page("papers-index", "Academic paper index", body)

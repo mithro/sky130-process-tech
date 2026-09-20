@@ -221,7 +221,7 @@ def gen_known_gaps(gaps: list[dict]) -> list[str]:
     for g in gaps:
         by_company[g["company_key"]].append(g)
     body = [
-        "## Known gaps",
+        "**Known gaps.**",
         "",
         "Filings known to exist -- named in another filing's exhibit index, an",
         "inventory entry already cited elsewhere in this reference, or this",
@@ -280,13 +280,6 @@ def gen_index(rs: list[dict], gaps: list[dict]) -> str:
         "audits",
         "```",
         "",
-        "## Lineage timeline",
-        "",
-    ]
-    for date, headline, rid in TIMELINE:
-        body.append(f"* **{date}** — {esc(headline)} See {{ref}}`the filing <filing-{rid}>`.")
-    body += [
-        "",
         "## How to read an entry",
         "",
         "Each entry gives the filer, the form and what it covers, the filing",
@@ -298,15 +291,24 @@ def gen_index(rs: list[dict], gaps: list[dict]) -> str:
         "A `Note:` line records a caveat, including a disagreement between",
         "this filing and another public source.",
         "",
-        "## EDGAR access note",
+        "## Lineage timeline",
+        "",
+    ]
+    for date, headline, rid in TIMELINE:
+        body.append(f"* **{date}** — {esc(headline)} See {{ref}}`the filing <filing-{rid}>`.")
+    # report-C C11: the EDGAR access note, the counts and the known-gaps
+    # list are methodology/accounting, not something a reader browsing
+    # the filings needs first -- collapsed, verbatim, alongside patents'
+    # and papers' identically titled dropdown.
+    body += [
+        "",
+        ":::{dropdown} Scope, method and counts",
         "",
         "`sec.gov` requires a contact address in the HTTP User-Agent header,",
         "which this project's checking tools do not send. Every EDGAR",
         "document below is therefore read from a Wayback Machine capture or a",
         "company investor-relations copy; the `sec.gov` link is kept as the",
         "canonical citation but was not itself fetched by this project.",
-        "",
-        "## Counts",
         "",
         "By company: " + ", ".join(
             f"{esc(check_filings.COMPANIES[k][0])} ({companies[k]})"
@@ -319,6 +321,8 @@ def gen_index(rs: list[dict], gaps: list[dict]) -> str:
     ]
     body += gen_known_gaps(gaps)
     body += [
+        ":::",
+        "",
         "## All filings",
         "",
         "Sorted by filing date, then id.",
