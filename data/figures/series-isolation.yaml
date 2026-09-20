@@ -1,25 +1,135 @@
-# Evolving cross-section for the isolation module, steps 001-013.
-# One geometry for the whole series: a figure is "the state after step N".
-# Thicknesses are DRAWING units (not to scale); min 5 u so that every film is visible.
-# x runs 0..268: active 0-80, field (trench) 80-188, active 188-268.
+# S1 — the isolation module, steps 001-013.
+#
+# One geometry for the whole module: a figure is "the state after step N", so a feature
+# keeps its place from one step page to the next. Thicknesses are DRAWING units and are
+# NOT to scale; the minimum drawn film is 5 u so that every film stays visible.
+#
+# x runs 0..268: active 0-80, field (the trench) 80-188, active 188-268. The deep N-well
+# mask of step 007 is drawn with its window over 0-214 and thick resist over 214-268, so
+# one figure can show both sides of the mask edge. Steps 010-013 hide the deep N-well again
+# and crop the drawing to the top of the wafer: the deep N-well is an option, so those
+# cross-sections are simply drawn outside it, and nothing on those pages describes it.
+# Figures that do not show it also set crop_depth, which trims how much bare substrate is
+# drawn without changing the geometry.
+#
+# Every label here is wording taken from the step page that introduces the layer, and none
+# of them states a number: numbers live in the per-figure dimension and callout labels, so
+# that each one can carry the footnote key that is defined on its own page.
 substrate:
   material: si-sub
-  depth: 96
-  label: {title: "Silicon wafer", note: "p-type substrate (SMAT, step 001)", basis: public}
+  depth: 160
+  label:
+    title: "Silicon wafer"
+    note: "p-type bulk substrate (SMAT, step 001)"
+    basis: public
 ops:
-  - {step: "002", op: deposit, id: padox, material: oxide-thermal, t: 5,
-     label: {title: "Pad oxide", note: "BOX, step 002; thickness not public", basis: public}}
-  - {step: "003", op: deposit, id: isonit, material: nitride, t: 24,
-     label: {title: "Nitride hard mask", note: "ISONIT, step 003", basis: public}}
-  - {step: "004", op: deposit, id: resist, material: resist, t: 38, where: [[0, 79.5], [188.5, 268]],
-     label: {title: "Photoresist", note: "FOM pattern, step 004", basis: public}}
-  - {step: "005", op: etch, materials: [nitride, oxide-thermal], where: [[80, 188]]}
-  - {step: "006", op: etch, materials: [si-sub], where: [[80, 188]], depth: 56, taper_deg: 9, corner_r: 9}
-  - {step: "006", op: strip, materials: [resist]}
-  # (DNM/DNI/DNIS, steps 007-009, add a deep-N-well overlay in the full series)
-  - {step: "010", op: deposit, id: liner, material: oxide-thermal, t: 5, only_on: [si-sub],
-     label: {title: "Liner oxide", note: "LINOX, step 010", basis: public}}
-  - {step: "011", op: deposit, id: fox, material: oxide-dep, fill_to: 60,
-     label: {title: "Fill oxide (HDP)", note: "FILOX, step 011; becomes the field oxide", basis: public}}
-  - {step: "012", op: planarise, stop_on: nitride}
-  - {step: "013", op: strip, materials: [nitride]}
+  - step: "002"
+    op: deposit
+    id: padox
+    material: oxide-thermal
+    t: 5
+    label:
+      title: "Pad oxide"
+      note: "thermal silicon dioxide grown over the whole surface at BOX, step 002"
+      basis: public
+
+  - step: "003"
+    op: deposit
+    id: isonit
+    material: nitride
+    t: 24
+    label:
+      title: "Nitride hard mask"
+      note: "blanket LPCVD silicon nitride deposited at ISONIT, step 003"
+      basis: public
+
+  - step: "004"
+    op: deposit
+    id: resist
+    material: resist
+    t: 38
+    where: [[0, 79.5], [188.5, 268]]
+    label:
+      title: "Photoresist"
+      note: "developed through the field oxide mask at FOM, step 004; it stays over the future active areas"
+      basis: public
+
+  - step: "005"
+    op: etch
+    materials: [nitride, oxide-thermal]
+    where: [[80, 188]]
+
+  - step: "006"
+    op: etch
+    materials: [si-sub]
+    where: [[80, 188]]
+    depth: 56
+    taper_deg: 9
+    corner_r: 9
+  - step: "006"
+    op: strip
+    materials: [resist]
+
+  - step: "007"
+    op: deposit
+    id: dnmresist
+    material: resist
+    t: 44
+    where: [[214, 268]]
+    label:
+      title: "Thick photoresist"
+      note: "developed through the deep N-well mask at DNM, step 007; the window on the left is open to the implant"
+      basis: public
+
+  - step: "008"
+    op: dope
+    id: dnw
+    material: well-dn
+    where: [[0, 214]]
+    from_surface: 64
+    thickness: 22
+    label:
+      title: "Deep N-well"
+      note: "buried N-type layer placed by the implant at DNI, step 008"
+      basis: public
+  - step: "008"
+    op: ions
+    where: [[0, 208]]
+    tilt_deg: 0
+    label:
+      title: "Phosphorus ions"
+      note: "the implant enters bare silicon at the trench floors and passes through the stack over the active areas"
+      basis: public
+
+  - step: "009"
+    op: strip
+    materials: [resist]
+
+  - step: "010"
+    op: deposit
+    id: liner
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Liner oxide"
+      note: "thermal oxide grown on the trench floor and sidewalls at LINOX, step 010"
+      basis: public
+
+  - step: "011"
+    op: deposit
+    id: fox
+    material: oxide-dep
+    fill_to: 60
+    label:
+      title: "Fill oxide"
+      note: "deposited at FILOX, step 011; this oxide is the field oxide of the finished device"
+      basis: public
+
+  - step: "012"
+    op: planarise
+    stop_on: nitride
+
+  - step: "013"
+    op: strip
+    materials: [nitride]

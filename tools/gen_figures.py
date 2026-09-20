@@ -588,7 +588,7 @@ class Label:
         self.height = TY["label-title"]["line"] + TY["label-note"]["line"] * (len(self.lines) - 1)
 
 
-def choose_anchor(xs: XSection, lid: str, prefer: str | None):
+def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | None = None):
     """Return (route, x, y_lo, y_hi, crossings) in drawing coordinates (y up)."""
     pres = xs.present(lid)
     i0, i1 = xs.runs(pres)[-1]
@@ -598,7 +598,9 @@ def choose_anchor(xs: XSection, lid: str, prefer: str | None):
     mid = (s[1] + s[2]) / 2
     crossed = {t[0] for j in range(ir + 1, xs.n) for t in xs.cols[j] if t[0] != lid and t[1] < mid < t[2]}
     pad = 3.5 if s[2] - s[1] > 9 else (s[2] - s[1]) / 2
-    right = ("right", xs.x(ir), max(s[1] + pad, -xs.layers["sub"]["depth"] + 8), s[2] - pad, len(crossed))
+    if floor_y is None:
+        floor_y = -float(xs.layers["sub"]["depth"]) + 8
+    right = ("right", xs.x(ir), max(s[1] + pad, floor_y), s[2] - pad, len(crossed))
     tops = [i for i in pres if xs.cols[i] and xs.cols[i][-1][0] == lid]
     top = None
     if tops:
@@ -613,14 +615,18 @@ def choose_anchor(xs: XSection, lid: str, prefer: str | None):
     return top
 
 
-def overlay_anchor(xs: XSection, ov: dict):
+def overlay_anchor(xs: XSection, ov: dict, floor_y: float | None = None):
     cols = xs.overlay_columns(ov)
     i0, i1 = xs.runs(cols)[-1]
     inset = min(8.0, (i1 - i0) * xs.dx / 2)
     ir = xs.idx(xs.x(i1) - inset)
+    if ov.get("anchor_x") is not None:
+        ir = max(i0, min(i1, xs.idx(float(ov["anchor_x"]))))
     lo, hi = xs.overlay_band(ov, ir)
     pad = 3.5 if hi - lo > 9 else (hi - lo) / 2
-    return ("right", xs.x(ir), lo + pad, hi - pad, 0)
+    if floor_y is not None:
+        lo = max(lo, floor_y - pad)
+    return ("right", xs.x(ir), min(lo + pad, hi - pad), hi - pad, 0)
 
 
 def _isotonic(z):
@@ -635,13 +641,7 @@ def _isotonic(z):
     return [v for v, n in blocks for _ in range(n)]
 
 
-def layout_right_labels(labels: list[Label], floor: float) -> float:
-    """Right-routed labels: keep the order of the layers, keep a minimum distance, and move
-    each label as little as possible from a height at which its leader is horizontal.  The
-    anchor then slides inside its layer to meet the label.  Returns the y below the last."""
-    rights = sorted([l for l in labels if l.route == "right"], key=lambda l: ((l.lo + l.hi) / 2, l.key))
-    if not rights:
-        return floor
+def _place_right(rights: list[Label], floor: float) -> float:
     gap = SP["label-gap"]
     off, acc = [], 0.0
     for l in rights:
@@ -657,6 +657,28 @@ def layout_right_labels(labels: list[Label], floor: float) -> float:
         l.y = yv
         l.ay = min(l.hi, max(l.lo, yv))
     return ys[-1] + rights[-1].height + gap
+
+
+def layout_right_labels(labels: list[Label], floor: float) -> float:
+    """Right-routed labels: keep the order of the layers, keep a minimum distance, and move
+    each label as little as possible from a height at which its leader is horizontal.  The
+    anchor then slides inside its layer to meet the label.
+
+    An anchor that has slid can end up out of order with its neighbour, and two leaders
+    would then cross in the gutter, so the placement is repeated with the labels re-ordered
+    by where their anchors actually landed until that order is stable.  Returns the y below
+    the last label."""
+    rights = sorted([l for l in labels if l.route == "right"], key=lambda l: ((l.lo + l.hi) / 2, l.key))
+    if not rights:
+        return floor
+    bottom = _place_right(rights, floor)
+    for _ in range(4):
+        order = sorted(rights, key=lambda l: (l.ay, l.key))
+        if [l.key for l in order] == [l.key for l in rights]:
+            break
+        rights = order
+        bottom = _place_right(rights, floor)
+    return bottom
 
 
 def draw_label(svg: Svg, l: Label, x_draw_right: float, halo: bool):
@@ -714,7 +736,7 @@ def build_xsection(spec: dict, series: dict) -> Svg:
         return states[keys[-1]]
 
     panels = spec["panels"]
-    depth = float(series["substrate"]["depth"])
+    sub_depth = float(series["substrate"]["depth"])
     X0 = M
     x_right = X0 + DRAW_W
     y = M
@@ -722,8 +744,22 @@ def build_xsection(spec: dict, series: dict) -> Svg:
     for pi, p in enumerate(panels):
         st = state(p["state_after"])
         ions = st.ions if p.get("show_ions", True) and st.ions else []
-        headroom = (SP["ion-arrow-length"] + SP["ion-arrow-gap"] + 3) if ions else 0
-        ymax = st.ymax() + 4 + headroom
+        ion_xs: list[float] = []
+        ion_tilt = 0.0
+        if ions:
+            ion_tilt = math.radians(float(ions[0].get("tilt_deg", 0)))
+            pitch = float(ions[0].get("pitch", SP["ion-arrow-pitch"]))
+            for a, b in ions[0].get("where") or [[0, DRAW_W]]:
+                xv = a + pitch / 2
+                while xv <= b and len(ion_xs) < 40:
+                    ion_xs.append(xv)
+                    xv += pitch
+        ion_len = SP["ion-arrow-length"] + SP["ion-arrow-gap"] * 0
+        tails = [st.top(st.idx(xv)) + SP["ion-arrow-gap"] + SP["ion-arrow-length"] * math.cos(ion_tilt)
+                 for xv in ion_xs]
+        ymax = max([st.ymax()] + tails) + 4
+        depth = float(p.get("crop_depth", sub_depth))
+        floor_y = -depth + 8
         draw_h = ymax + depth
         dims, notes = p.get("dims", []), p.get("callouts", [])
         labels: list[Label] = []
@@ -767,9 +803,9 @@ def build_xsection(spec: dict, series: dict) -> Svg:
             elif lab is ion_label:
                 geo[lab.key] = ("right", 0.0, 0.0, 0.0, 0)      # filled in once the arrows are laid out
             elif st.layers[lab.key].get("op") == "dope":
-                geo[lab.key] = overlay_anchor(st, st.layers[lab.key])
+                geo[lab.key] = overlay_anchor(st, st.layers[lab.key], floor_y)
             else:
-                geo[lab.key] = choose_anchor(st, lab.key, st.layers[lab.key].get("route"))
+                geo[lab.key] = choose_anchor(st, lab.key, st.layers[lab.key].get("route"), floor_y)
             lab.route = geo[lab.key][0]
         # ---- header band for the top-routed labels (at most two: one hangs left, one right)
         tops = sorted([l for l in labels if l.route == "top"], key=lambda l: (geo[l.key][1] + l.stub, l.key))
@@ -779,8 +815,12 @@ def build_xsection(spec: dict, series: dict) -> Svg:
             rx = X0 + geo[lab.key][1] + lab.stub
             lab.hang = "left" if (len(tops) == 2 and k == 0) or (len(tops) == 1 and rx > X0 + DRAW_W * 0.6) else "right"
             lab.wrap(min(200.0, rx - 9 - M) if lab.hang == "left" else min(230.0, W - M - rx - 9))
+        tlines = wrap(p["title"], TY["panel-title"]["size"], W - 2 * M, bold=True)
         title_y = y + TY["panel-title"]["size"]
-        svg.text(M, title_y, p["title"], "t-panel-title")
+        for ln in tlines:
+            svg.text(M, title_y, ln, "t-panel-title")
+            title_y += TY["panel-title"]["line"]
+        title_y -= TY["panel-title"]["line"]
         band_top = title_y + 12
         band_h = max([l.height for l in tops], default=0)
         y_draw_top = band_top + band_h + (SP["header-band-gap"] if tops else 0)
@@ -812,24 +852,23 @@ def build_xsection(spec: dict, series: dict) -> Svg:
         # ---- ion arrows
         ion_tail = None
         if ions:
-            io = ions[0]
-            tilt = math.radians(float(io.get("tilt_deg", 0)))
-            L, gap = SP["ion-arrow-length"], SP["ion-arrow-gap"]
-            pitch = float(io.get("pitch", SP["ion-arrow-pitch"]))
-            for a, b in io.get("where") or [[0, DRAW_W]]:
-                k = 0
-                xv = a + pitch / 2
-                while xv <= b and k < 40:
-                    tipy = st.top(st.idx(xv)) + gap
-                    tx0, ty0 = xv + L * math.sin(tilt), tipy + L * math.cos(tilt)
-                    svg.add(f'<path class="ion" d="M{f1(sx(tx0))} {f1(sy(ty0))}L{f1(sx(xv + 3.2 * math.sin(tilt)))} {f1(sy(tipy + 3.2 * math.cos(tilt)))}"/>')
-                    hx, hy = sx(xv), sy(tipy)
-                    dx, dy = math.sin(tilt), -math.cos(tilt)
-                    px, py = -dy, dx
-                    svg.add(f'<path class="ionhead" d="M{f1(hx)} {f1(hy)}L{f1(hx - 4.4 * dx + 2.4 * px)} {f1(hy - 4.4 * dy + 2.4 * py)}L{f1(hx - 4.4 * dx - 2.4 * px)} {f1(hy - 4.4 * dy - 2.4 * py)}Z"/>')
-                    ion_tail = (sx(tx0), sy(ty0))
-                    xv += pitch
-                    k += 1
+            L, gap, tilt = SP["ion-arrow-length"], SP["ion-arrow-gap"], ion_tilt
+            best = None
+            for xv in ion_xs:
+                tipy = st.top(st.idx(xv)) + gap
+                tx0, ty0 = xv + L * math.sin(tilt), tipy + L * math.cos(tilt)
+                svg.add(f'<path class="ion" d="M{f1(sx(tx0))} {f1(sy(ty0))}'
+                        f'L{f1(sx(xv + 3.2 * math.sin(tilt)))} {f1(sy(tipy + 3.2 * math.cos(tilt)))}"/>')
+                hx, hy = sx(xv), sy(tipy)
+                dx, dy = math.sin(tilt), -math.cos(tilt)
+                px, py = -dy, dx
+                svg.add(f'<path class="ionhead" d="M{f1(hx)} {f1(hy)}'
+                        f'L{f1(hx - 4.4 * dx + 2.4 * px)} {f1(hy - 4.4 * dy + 2.4 * py)}'
+                        f'L{f1(hx - 4.4 * dx - 2.4 * px)} {f1(hy - 4.4 * dy - 2.4 * py)}Z"/>')
+                if best is None or (ty0, tx0) >= (best[1], best[0]):
+                    best = (tx0, ty0)
+            if best is not None:
+                ion_tail = (sx(best[0]), sy(best[1]))
         svg.add("</g>")
         for k, dm in enumerate(dims):
             ya, yb, xd = eval_y(st, dm["y0"]), eval_y(st, dm["y1"]), sx(dm["x"])
@@ -963,6 +1002,7 @@ def build_stack(spec: dict) -> Svg:
     axis_text_w = max(text_w(f"{v:g}", TY["label-note"]["size"])
                       for v in (0, total, float(axis["tick"]))) + 2
     x_bar0 = M + axis_text_w + SP["stack-axis-gap"] + tickw
+    barw = min(barw, LABEL_X - GUT - x_bar0)      # the label column and its gutter stay clear
     x_bar1 = x_bar0 + barw
     scale = SP["stack-max-height"] / total
     y = M + TY["panel-title"]["size"]

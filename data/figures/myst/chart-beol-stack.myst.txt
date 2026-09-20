@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/chart-beol-stack.svg
+:alt: A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and finally a thin oxide under a thicker nitride.
+:width: 560px
+:name: fig-chart-beol-stack
+
+The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale, and adds nothing to them. The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
+:::

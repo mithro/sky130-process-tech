@@ -1,0 +1,33 @@
+id: iso-005-stinite
+kind: xsection
+page: docs/steps/005-stinite.md
+series: series-isolation.yaml
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the nitride and pad oxide run
+  unbroken under the two blocks of resist and across the gap between them. After it the nitride and
+  pad oxide have been cut away in that gap, so the silicon in the middle of the drawing is bare while
+  the sides are still covered by resist, nitride and pad oxide.
+caption: >-
+  The wafer before and after `STINITE`. The etch transfers the resist pattern into the hard mask,
+  removing the isolation nitride and the pad oxide wherever the resist is open and stopping on
+  silicon. In many fabs this etch and the silicon trench etch that follows are run back-to-back in the
+  same chamber as one multi-step recipe; this reference keeps them as two steps, and the hand-off is
+  not public. Not to scale.
+arrow:
+  title: "STINITE, step 005"
+  note: "A plasma etch cuts through the nitride and the pad oxide in the open field, stopping on silicon."
+panels:
+  - state_after: "004"
+    crop_depth: 84
+    title: "Before: the resist pattern from FOM (step 004)"
+  - state_after: "005"
+    crop_depth: 84
+    title: "After: bare silicon in the field, the active areas still covered"
+    highlight: {where: [[80, 188]]}
+    callouts:
+      - x: 134
+        y: "top@134"
+        label:
+          title: "Bare silicon"
+          note: "the future field region"
+          basis: public

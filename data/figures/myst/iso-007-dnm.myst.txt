@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/iso-007-dnm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the etched trench is open and the wafer carries no resist. After it a thick block of photoresist covers the right-hand part of the drawing, filling nothing on the left, so that the trench and the active area on the left lie in an open window and the active area on the right is masked.
+:width: 560px
+:name: fig-iso-007-dnm
+
+The wafer before and after `DNM`, the second mask step of the flow. At this point the wafer has open, unfilled isolation trenches and a nitride/pad-oxide stack over the active areas; the thick resist is opened over the regions that are to receive the high-energy phosphorus implant at `DNI`. The PDK's mask table lists "Deep N-Well, DNM" as used in SKY130.[^pdk-05] Where the mask edge falls in this drawing is chosen only so that both sides of it can be seen. Not to scale.
+:::

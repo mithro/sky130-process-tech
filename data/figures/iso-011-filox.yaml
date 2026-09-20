@@ -1,0 +1,26 @@
+id: iso-011-filox
+kind: xsection
+page: docs/steps/011-filox.md
+series: series-isolation.yaml
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the lined trench is still
+  open. After it a thick blanket of deposited oxide covers everything: it fills the trench and buries
+  the nitride-covered active areas under a flat top surface.
+caption: >-
+  The wafer before and after `FILOX`. The deposited oxide fills the lined trench and buries the
+  nitride-covered active areas; this oxide *is* the field oxide of the finished device, and the PDK's
+  stack drawing labels it "FOX K=3.9".[^pdk-04] The PDK gives no fill thickness. The fill is drawn
+  with a flat top; a real high-density-plasma fill is not flat over a patterned wafer. Not to scale.
+arrow:
+  title: "FILOX, step 011"
+  note: "A thick blanket of silicon dioxide is deposited over the whole wafer, filling the trench."
+panels:
+  - state_after: "010"
+    crop_depth: 84
+    hide_layers: [dnw]
+    title: "Before: the lined trench from LINOX (step 010)"
+  - state_after: "011"
+    crop_depth: 84
+    hide_layers: [dnw]
+    title: "After: the trench filled and the wafer buried in oxide"
+    highlight: {where: [[0, 268]]}

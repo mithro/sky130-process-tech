@@ -1,0 +1,84 @@
+id: chart-beol-stack
+kind: stack
+page: docs/overview/index.md
+to_scale: true
+title: "The stack above the field oxide, to scale"
+axis:
+  unit: "µm"
+  label: "Height above the field-oxide top, from the levels labelled on the PDK's stack diagram"
+  tick: 1
+footer: >-
+  To scale. Every thickness is a level or an interval labelled on the PDK's process stack diagram, as
+  the table below lists them. The two MiM capacitor plates are not labelled with a thickness and are
+  not drawn.
+alt: >-
+  A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the
+  field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local
+  interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and
+  finally a thin oxide under a thicker nitride.
+caption: >-
+  The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The
+  diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels
+  and intervals to scale, and adds nothing to them. The datum is the field-oxide top, the level the
+  diagram puts at 0.3262 µm.[^pdk-04] To scale.
+layers:
+  - id: psg
+    material: psg
+    t: 0.6099
+    label: {title: "Pre-metal dielectric (PSG)", note: "0.6099 µm, from the field-oxide top to the li bottom", basis: public, cite: pdk-04}
+  - id: li
+    material: barrier
+    t: 0.1
+    label: {title: "Local interconnect (li)", note: "0.1 µm", basis: public, cite: pdk-04}
+  - id: lint
+    material: nitride
+    t: 0.075
+    label: {title: "LINT", note: "0.075 µm", basis: public, cite: pdk-04}
+  - id: nild2
+    material: oxide-dep
+    t: 0.265
+    label: {title: "NILD2", note: "0.265 µm", basis: public, cite: pdk-04}
+  - id: met1
+    material: aluminium
+    t: 0.36
+    label: {title: "Metal 1", note: "0.36 µm", basis: public, cite: pdk-04}
+  - id: nild3
+    material: oxide-dep
+    t: 0.27
+    label: {title: "NILD3, via 1", note: "0.27 µm", basis: public, cite: pdk-04}
+  - id: met2
+    material: aluminium
+    t: 0.36
+    label: {title: "Metal 2", note: "0.36 µm", basis: public, cite: pdk-04}
+  - id: nild4
+    material: oxide-dep
+    t: 0.42
+    label: {title: "NILD4, via 2", note: "0.42 µm", basis: public, cite: pdk-04}
+  - id: met3
+    material: aluminium
+    t: 0.845
+    label: {title: "Metal 3", note: "0.845 µm", basis: public, cite: pdk-04}
+  - id: nild5
+    material: oxide-dep
+    t: 0.39
+    label: {title: "NILD5, via 3", note: "0.39 µm", basis: public, cite: pdk-04}
+  - id: met4
+    material: aluminium
+    t: 0.845
+    label: {title: "Metal 4", note: "0.845 µm", basis: public, cite: pdk-04}
+  - id: nild6
+    material: oxide-dep
+    t: 0.505
+    label: {title: "NILD6, via 4", note: "0.505 µm", basis: public, cite: pdk-04}
+  - id: met5
+    material: aluminium
+    t: 1.26
+    label: {title: "Metal 5", note: "1.26 µm", basis: public, cite: pdk-04}
+  - id: topox
+    material: oxide-dep
+    t: 0.09
+    label: {title: "TOPOX", note: "0.09 µm on the metal", basis: public, cite: pdk-04}
+  - id: topnit
+    material: nitride
+    t: 0.54
+    label: {title: "TOPNIT", note: "0.54 µm on the metal", basis: public, cite: pdk-04}

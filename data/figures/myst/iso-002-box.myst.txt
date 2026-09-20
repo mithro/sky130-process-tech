@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/iso-002-box.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the silicon surface is bare. After it a thin, even layer of thermal oxide covers the whole surface from edge to edge of the drawing.
+:width: 560px
+:name: fig-iso-002-box
+
+The wafer before and after `BOX`. The pad oxide is the bottom layer of the two-layer pad-oxide/nitride stack that every shallow-trench-isolation module starts with.[^wiki-sti] No SkyWater document states the SKY130 pad-oxide thickness, and the film is drawn far thicker than any of the ranges the page quotes. Not to scale.
+:::

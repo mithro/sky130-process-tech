@@ -1,0 +1,23 @@
+id: iso-004-fom
+kind: xsection
+page: docs/steps/004-fom.md
+series: series-isolation.yaml
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the nitride-on-oxide stack
+  covers the whole wafer. After it two blocks of photoresist stand on that stack, one at each side of
+  the drawing, with the middle of the wafer left uncovered between them.
+caption: >-
+  The wafer before and after `FOM`, the first photolithography step of the flow. The resist is left
+  over the future active (transistor and tap) areas and opened over the future field (isolation)
+  areas; the PDK's mask table lists "Field Oxide, FOM" as a mask used in SKY130.[^pdk-05] Where the
+  resist edges fall in this drawing is illustrative: no layout is being shown. Not to scale.
+arrow:
+  title: "FOM, step 004"
+  note: "The wafer is coated with resist, exposed through the field oxide mask and developed."
+panels:
+  - state_after: "003"
+    crop_depth: 56
+    title: "Before: the blanket nitride/pad-oxide stack"
+  - state_after: "004"
+    crop_depth: 56
+    title: "After: resist over the future active areas, open over the future field"

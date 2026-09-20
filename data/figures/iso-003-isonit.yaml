@@ -1,0 +1,25 @@
+id: iso-003-isonit
+kind: xsection
+page: docs/steps/003-isonit.md
+series: series-isolation.yaml
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thin pad oxide covers the
+  silicon. After it a thicker, hatched nitride layer lies on top of that oxide, covering the whole
+  wafer from edge to edge of the drawing.
+caption: >-
+  The wafer before and after `ISONIT`. The nitride is the hard mask of the STI module: it is patterned
+  next, protects the future active areas during the trench etch and the liner oxidation, and is the
+  polish stop for the oxide CMP. An AmberWave Systems STI patent gives the mask nitride as
+  "500-2000 Å" (50–200 nm);[^pat-sti-amberwave] no public SkyWater source gives the SKY130 value. Not
+  to scale.
+arrow:
+  title: "ISONIT, step 003"
+  note: "A blanket film of silicon nitride is deposited by LPCVD on top of the pad oxide."
+panels:
+  - state_after: "002"
+    crop_depth: 56
+    title: "Before: the pad oxide from BOX (step 002)"
+  - state_after: "003"
+    crop_depth: 56
+    title: "After: the nitride hard mask over the pad oxide"
+    highlight: {where: [[0, 268]]}

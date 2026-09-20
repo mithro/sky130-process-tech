@@ -1,0 +1,26 @@
+id: iso-012-cmpnit
+kind: xsection
+page: docs/steps/012-cmpnit.md
+series: series-isolation.yaml
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the polish a thick fill oxide buries
+  the lined trench and the nitride-covered active areas. After the polish the oxide is left only in
+  the trench, its top level with the nitride on the active areas, so the whole surface is flat.
+caption: >-
+  The wafer before and after `CMPNIT`, on the same cross-section as the earlier isolation steps. The
+  polish lands on the nitride from `ISONIT`, which polishes far more slowly than the oxide, and what
+  is left is a planar surface of nitride islands over the future active areas and oxide-filled
+  trenches over the future field.[^wiki-sti] Not to scale.
+arrow:
+  title: "CMPNIT, step 012"
+  note: "The wafer is polished face-down until the oxide over the active areas is gone and the polish lands on the nitride."
+panels:
+  - state_after: "011"
+    crop_depth: 84
+    title: "Before: the fill oxide from FILOX (step 011)"
+    hide_layers: [dnw]
+  - state_after: "012"
+    crop_depth: 84
+    title: "After: oxide only in the trench, level with the nitride"
+    hide_layers: [dnw]
+    highlight: {where: [[0, 268]]}

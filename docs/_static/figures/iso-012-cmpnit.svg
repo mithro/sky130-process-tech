@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 690" width="480" height="690" role="img" data-kind="xsection" data-theme="auto">
+<title>Two cross-sections of the wafer, one above the other. Before the polish a thick fill oxide buries the lined trench and the nitride-covered active areas. After the polish the oxide is left only in the trench, its top level with the nitride on the active areas, so the whole surface is flat.</title>
+<desc>Two cross-sections of the wafer, one above the other. Before the polish a thick fill oxide buries the lined trench and the nitride-covered active areas. After the polish the oxide is left only in the trench, its top level with the nitride on the active areas, so the whole surface is flat.</desc>
+<style>
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#f7e9a8;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#e3b92e;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+@media (prefers-color-scheme: dark){:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-sd-p:#e57db4;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#9a8c52;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#ecd05a;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.4;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern></defs>
+<rect class="ground" x="0" y="0" width="480" height="690"/>
+<text x="12.0" y="26.0" class="t-panel-title">Before: the fill oxide from FILOX (step 011)</text>
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="148.0"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,148.0" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,102.00 92.00,102.00 99.00,146.20 99.50,150.00 100.00,152.11 100.50,153.23 101.00,154.06 101.50,154.73 102.00,155.28 102.50,155.76 103.00,156.17 104.00,156.83 105.00,157.31 106.00,157.66 107.00,157.88 108.00,157.99 184.00,157.99 185.00,157.88 186.00,157.66 187.00,157.31 188.00,156.83 189.00,156.17 189.50,155.76 190.00,155.28 190.50,154.73 191.00,154.06 191.50,153.23 192.00,152.11 192.50,150.00 193.00,146.20 200.00,102.00 283.00,102.00 283.00,266.00 9.00,266.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,97.00 91.75,97.00 91.75,102.00 9.00,102.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,97.00 283.00,97.00 283.00,102.00 200.25,102.00"/>
+<polygon class="mat m-nitride" data-layer="isonit" points="9.00,73.00 91.75,73.00 91.75,97.00 9.00,97.00"/>
+<polygon fill="url(#p-hatch)" points="9.00,73.00 91.75,73.00 91.75,97.00 9.00,97.00"/>
+<polygon class="mat m-nitride" data-layer="isonit" points="200.25,73.00 283.00,73.00 283.00,97.00 200.25,97.00"/>
+<polygon fill="url(#p-hatch)" points="200.25,73.00 283.00,73.00 283.00,97.00 200.25,97.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="liner" points="91.75,97.00 92.00,97.00 92.50,100.16 93.00,102.00 97.00,102.00 104.00,146.20 104.50,150.00 105.00,152.11 105.50,152.50 106.50,152.79 107.50,152.95 184.00,152.99 185.00,152.88 186.00,152.66 186.50,152.50 187.00,152.11 187.50,150.00 188.00,146.20 195.00,102.00 199.00,102.00 199.50,100.16 200.00,97.00 200.25,97.00 200.25,102.00 200.00,102.00 193.00,146.20 192.50,150.00 192.00,152.11 191.50,153.23 191.00,154.06 190.50,154.73 190.00,155.28 189.50,155.76 189.00,156.17 188.00,156.83 187.00,157.31 186.00,157.66 185.00,157.88 184.00,157.99 108.00,157.99 107.00,157.88 106.00,157.66 105.00,157.31 104.00,156.83 103.00,156.17 102.50,155.76 102.00,155.28 101.50,154.73 101.00,154.06 100.50,153.23 100.00,152.11 99.50,150.00 99.00,146.20 92.00,102.00 91.75,102.00"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="9.00,42.00 283.00,42.00 283.00,73.00 200.50,73.00 200.00,97.00 199.50,100.16 199.00,102.00 195.00,102.00 188.00,146.20 187.50,150.00 187.00,152.11 186.50,152.50 186.00,152.66 185.00,152.88 184.00,152.99 107.50,152.95 106.50,152.79 105.50,152.50 105.00,152.11 104.50,150.00 104.00,146.20 97.00,102.00 93.00,102.00 92.50,100.16 92.00,97.00 91.50,73.00 9.00,73.00"/>
+</g>
+<text x="304.0" y="369.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<text x="304.0" y="385.9" class="t-label-note muted" data-owner="sub">p-type bulk substrate</text>
+<text x="304.0" y="401.9" class="t-label-note muted" data-owner="sub">(SMAT, step 001)</text>
+<path class="leader" data-owner="sub" d="M272.0 178.0H283.0L300.0 365.0"/>
+<circle class="dot" cx="272.0" cy="178.0" r="1.9"/>
+<text x="304.0" y="209.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="304.0" y="225.9" class="t-label-note muted" data-owner="padox">thermal silicon dioxide</text>
+<text x="304.0" y="241.9" class="t-label-note muted" data-owner="padox">grown over the whole</text>
+<text x="304.0" y="257.9" class="t-label-note muted" data-owner="padox">surface at BOX, step 002</text>
+<path class="leader" data-owner="padox" d="M272.0 99.5H283.0L300.0 205.0"/>
+<circle class="dot" cx="272.0" cy="99.5" r="1.9"/>
+<text x="304.0" y="137.9" class="t-label-title" data-owner="isonit">Nitride hard mask</text>
+<text x="304.0" y="153.9" class="t-label-note muted" data-owner="isonit">blanket LPCVD silicon</text>
+<text x="304.0" y="169.9" class="t-label-note muted" data-owner="isonit">nitride deposited at</text>
+<text x="304.0" y="185.9" class="t-label-note muted" data-owner="isonit">ISONIT, step 003</text>
+<path class="leader" data-owner="isonit" d="M272.0 93.5H283.0L300.0 133.0"/>
+<circle class="dot" cx="272.0" cy="93.5" r="1.9"/>
+<text x="304.0" y="281.9" class="t-label-title" data-owner="liner">Liner oxide</text>
+<text x="304.0" y="297.9" class="t-label-note muted" data-owner="liner">thermal oxide</text>
+<text x="304.0" y="313.9" class="t-label-note muted" data-owner="liner">grown on the trench</text>
+<text x="304.0" y="329.9" class="t-label-note muted" data-owner="liner">floor and sidewalls</text>
+<text x="304.0" y="345.9" class="t-label-note muted" data-owner="liner">at LINOX, step 010</text>
+<path class="halo" d="M195.0 148.6H280.0"/>
+<path class="leader" data-owner="liner" d="M192.0 148.6H283.0L300.0 277.0"/>
+<circle class="dot" cx="192.0" cy="148.6" r="1.9"/>
+<text x="304.0" y="49.9" class="t-label-title" data-owner="fox">Fill oxide</text>
+<text x="304.0" y="65.9" class="t-label-note muted" data-owner="fox">deposited at FILOX,</text>
+<text x="304.0" y="81.9" class="t-label-note muted" data-owner="fox">step 011; this oxide</text>
+<text x="304.0" y="97.9" class="t-label-note muted" data-owner="fox">is the field oxide of</text>
+<text x="304.0" y="113.9" class="t-label-note muted" data-owner="fox">the finished device</text>
+<path class="leader" data-owner="fox" d="M272.0 45.5H283.0L300.0 45.0"/>
+<circle class="dot" cx="272.0" cy="45.5" r="1.9"/>
+<path class="parrow" d="M34 426.0V464.0"/>
+<path class="pahead" d="M34 472.0l-5.5 -9h11.0z"/>
+<text x="50.0" y="437.0" class="t-label-title acc">CMPNIT, step 012</text>
+<text x="50.0" y="452.0" class="t-label-note muted">The wafer is polished face-down until the oxide over the</text>
+<text x="50.0" y="467.0" class="t-label-note muted">active areas is gone and the polish lands on the nitride.</text>
+<text x="12.0" y="500.0" class="t-panel-title">After: oxide only in the trench, level with the nitride</text>
+<clipPath id="clip2"><rect x="12" y="537.0" width="268" height="117.0"/></clipPath>
+<g class="drawing" data-rect="12,537.0,268,117.0" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,570.00 92.00,570.00 99.00,614.20 99.50,618.00 100.00,620.11 100.50,621.23 101.00,622.06 101.50,622.73 102.00,623.28 102.50,623.76 103.00,624.17 104.00,624.83 105.00,625.31 106.00,625.66 107.00,625.88 108.00,625.99 184.00,625.99 185.00,625.88 186.00,625.66 187.00,625.31 188.00,624.83 189.00,624.17 189.50,623.76 190.00,623.28 190.50,622.73 191.00,622.06 191.50,621.23 192.00,620.11 192.50,618.00 193.00,614.20 200.00,570.00 283.00,570.00 283.00,734.00 9.00,734.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,565.00 91.75,565.00 91.75,570.00 9.00,570.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,565.00 283.00,565.00 283.00,570.00 200.25,570.00"/>
+<polygon class="mat m-nitride" data-layer="isonit" points="9.00,541.00 91.75,541.00 91.75,565.00 9.00,565.00"/>
+<polygon fill="url(#p-hatch)" points="9.00,541.00 91.75,541.00 91.75,565.00 9.00,565.00"/>
+<polygon class="mat m-nitride" data-layer="isonit" points="200.25,541.00 283.00,541.00 283.00,565.00 200.25,565.00"/>
+<polygon fill="url(#p-hatch)" points="200.25,541.00 283.00,541.00 283.00,565.00 200.25,565.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="liner" points="91.75,565.00 92.00,565.00 92.50,568.16 93.00,570.00 97.00,570.00 104.00,614.20 104.50,618.00 105.00,620.11 105.50,620.50 106.50,620.79 107.50,620.95 184.00,620.99 185.00,620.88 186.00,620.66 186.50,620.50 187.00,620.11 187.50,618.00 188.00,614.20 195.00,570.00 199.00,570.00 199.50,568.16 200.00,565.00 200.25,565.00 200.25,570.00 200.00,570.00 193.00,614.20 192.50,618.00 192.00,620.11 191.50,621.23 191.00,622.06 190.50,622.73 190.00,623.28 189.50,623.76 189.00,624.17 188.00,624.83 187.00,625.31 186.00,625.66 185.00,625.88 184.00,625.99 108.00,625.99 107.00,625.88 106.00,625.66 105.00,625.31 104.00,624.83 103.00,624.17 102.50,623.76 102.00,623.28 101.50,622.73 101.00,622.06 100.50,621.23 100.00,620.11 99.50,618.00 99.00,614.20 92.00,570.00 91.75,570.00"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,541.00 200.25,541.00 200.25,565.00 200.00,565.00 199.50,568.16 199.00,570.00 195.00,570.00 188.00,614.20 187.50,618.00 187.00,620.11 186.50,620.50 186.00,620.66 185.00,620.88 184.00,620.99 107.50,620.95 106.50,620.79 105.50,620.50 105.00,620.11 104.50,618.00 104.00,614.20 97.00,570.00 93.00,570.00 92.50,568.16 92.00,565.00 91.75,565.00"/>
+<polyline class="hl" points="12.00,541.00 280.00,541.00"/>
+</g>
+<text x="304.0" y="621.3" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M272.0 616.4H283.0H300.0"/>
+<circle class="dot" cx="272.0" cy="616.4" r="1.9"/>
+<text x="304.0" y="572.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<path class="leader" data-owner="padox" d="M272.0 567.5H283.0L300.0 568.0"/>
+<circle class="dot" cx="272.0" cy="567.5" r="1.9"/>
+<text x="304.0" y="548.9" class="t-label-title" data-owner="isonit">Nitride hard mask</text>
+<path class="leader" data-owner="isonit" d="M272.0 544.5H283.0L300.0 544.0"/>
+<circle class="dot" cx="272.0" cy="544.5" r="1.9"/>
+<text x="304.0" y="597.3" class="t-label-title" data-owner="liner">Liner oxide</text>
+<path class="halo" d="M195.0 592.4H280.0"/>
+<path class="leader" data-owner="liner" d="M192.0 592.4H283.0H300.0"/>
+<circle class="dot" cx="192.0" cy="592.4" r="1.9"/>
+<text x="155.0" y="523.9" class="t-label-title" data-owner="fox">Fill oxide</text>
+<path class="leader" data-owner="fox" d="M146.0 549.0V519.0H151.0"/>
+<circle class="dot" cx="146.0" cy="549.0" r="1.9"/>
+<text x="12.0" y="678.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+</svg>
