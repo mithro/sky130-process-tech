@@ -10,10 +10,19 @@ Rules (see docs/plans/citation-style.md):
   index at least 12;
 * every footnote label is a key in ``docs/references/public-sources.md``
   (keys are written there in upper case, e.g. ``**PDK-05**``).
+* (rule 5, C4's invariant) every external URL written inline in the
+  body of the page equals a URL inside one of that page's own footnote
+  definitions, character for character, and every such inline link uses
+  the angle-bracket form ``[text](<https://…>)``. The page is split at
+  its first ``[^label]:`` definition line; everything before that is
+  "body", everything from there on is "definitions". A markdown link
+  whose target is not an ``http(s)`` URL (a ``{ref}``/relative link, an
+  anchor, …) is not checked.
 
 Stub pages (containing "This page is a stub." or "This section is a
 stub.") are skipped.  Exit status
 is non-zero on any violation.  Run with ``uv run tools/check_refs.py``.
+Run with ``--selftest`` for the offline unit tests (touches no files).
 """
 
 from __future__ import annotations
@@ -32,6 +41,9 @@ REF_RE = re.compile(r"\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\](?!:)")
 DEF_RE = re.compile(r"^\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\]:", re.MULTILINE)
 LINKDEF_RE = re.compile(r"^\[(?!\^)[^\]]+\]:\s*\S", re.MULTILINE)
 BULLET_RE = re.compile(r"^\* ", re.MULTILINE)
+FIRST_DEF_RE = re.compile(r"^\[\^[A-Za-z0-9][A-Za-z0-9_-]*\]:", re.MULTILINE)
+DEF_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
+BODY_LINK_RE = re.compile(r"\]\(([^)\n]*)\)")
 
 TARGETS = [
     (DOCS / "steps", re.compile(r"^\d{3}-[a-z0-9-]+\.md$"), 8),
@@ -53,6 +65,51 @@ def deep_dive_count(text: str) -> int:
 
 def inventory_keys() -> set[str]:
     return {k.lower() for k in KEY_RE.findall(INVENTORY.read_text())}
+
+
+def split_body_and_defs(text: str) -> tuple[str, str]:
+    """Split a page at its first footnote definition line.
+
+    Everything before that line is "body" (prose, tables, reading lists);
+    everything from it to the end of the page is "definitions". House
+    style (citation-style.md rule 3) puts every definition at the very
+    end of the page, so this is the boundary C4 describes.
+    """
+    m = FIRST_DEF_RE.search(text)
+    if not m:
+        return text, ""
+    return text[: m.start()], text[m.start() :]
+
+
+def inline_link_problems(text: str) -> list[str]:
+    """C4's invariant: every inline external URL in the body must equal a
+    URL in one of the page's own footnote definitions, and every such
+    link must use the angle-bracket form ``[text](<https://…>)``.
+
+    Returns ``"line N: ..."`` strings, one per offence; the caller (as
+    every other problem in this checker) prefixes the page path.
+    """
+    body, defs = split_body_and_defs(text)
+    def_urls = set(DEF_URL_RE.findall(defs))
+    problems: list[str] = []
+    for m in BODY_LINK_RE.finditer(body):
+        target = m.group(1)
+        bracketed = target.startswith("<") and target.endswith(">")
+        url = target[1:-1] if bracketed else target
+        if not url.startswith(("http://", "https://")):
+            continue  # a {ref}/relative/anchor link, not an external URL
+        lineno = body.count("\n", 0, m.start()) + 1
+        if not bracketed:
+            problems.append(
+                f"line {lineno}: inline link not in angle-bracket form: "
+                f"](<...>) required, found ]({target})"
+            )
+        if url not in def_urls:
+            problems.append(
+                f"line {lineno}: inline URL not in this page's own footnote "
+                f"definitions: {url}"
+            )
+    return problems
 
 
 def check(path: Path, min_deep: int, keys: set[str]) -> list[str]:
@@ -79,10 +136,87 @@ def check(path: Path, min_deep: int, keys: set[str]) -> list[str]:
         problems.append("no '### Deep dive' section")
     elif n < min_deep:
         problems.append(f"Deep dive has {n} entries (minimum {min_deep})")
+    problems.extend(inline_link_problems(text))
     return problems
 
 
+def selftest() -> int:
+    """Offline unit tests for the C4 inline-link invariant. Touches no files."""
+    problems: list[str] = []
+
+    def fail(msg: str) -> None:
+        problems.append(msg)
+
+    page_ok = (
+        "Text with a link.[^a]\n\n"
+        "## References\n\n"
+        "### Deep dive\n\n"
+        "* [Wikipedia, *Widget*](<https://en.wikipedia.org/wiki/Widget>) — a "
+        "widget.[^a]\n\n"
+        "[^a]: Wikipedia, *Widget*. <https://en.wikipedia.org/wiki/Widget>\n"
+    )
+    if inline_link_problems(page_ok):
+        fail(f"a matching angle-bracket link was reported: {inline_link_problems(page_ok)}")
+
+    # 1. An inline URL not present in any footnote definition is reported.
+    page_mismatch = (
+        "## References\n\n"
+        "* [Wikipedia, *Widget*](<https://en.wikipedia.org/wiki/Gadget>) — a "
+        "widget.[^a]\n\n"
+        "[^a]: Wikipedia, *Widget*. <https://en.wikipedia.org/wiki/Widget>\n"
+    )
+    ps = inline_link_problems(page_mismatch)
+    if not any("not in this page's own footnote" in p for p in ps):
+        fail(f"a mismatched inline URL was not reported: {ps}")
+
+    # 2. A bare (non-angle-bracket) inline link is reported, even when the
+    #    URL itself matches a definition.
+    page_bare = (
+        "## References\n\n"
+        "* [Wikipedia, *Widget*](https://en.wikipedia.org/wiki/Widget) — a "
+        "widget.[^a]\n\n"
+        "[^a]: Wikipedia, *Widget*. <https://en.wikipedia.org/wiki/Widget>\n"
+    )
+    ps = inline_link_problems(page_bare)
+    if not any("not in angle-bracket form" in p for p in ps):
+        fail(f"a bare-form inline link was not reported: {ps}")
+    if any("not in this page's own footnote" in p for p in ps):
+        fail(f"a bare-form link whose URL matches was wrongly reported as mismatched: {ps}")
+
+    # 3. A {ref}/relative link (no http(s) target) is never reported.
+    page_ref = (
+        "See {ref}`step-006` and [the mask index](../masks/index.md).\n\n"
+        "## References\n\n"
+        "[^a]: Wikipedia, *Widget*. <https://en.wikipedia.org/wiki/Widget>\n"
+    )
+    ps = inline_link_problems(page_ref)
+    if ps:
+        fail(f"a non-external link was wrongly reported: {ps}")
+
+    # 4. The body/definitions split happens at the *first* [^label]: line;
+    #    a URL that appears only in a later definition still counts.
+    page_multi_def = (
+        "## References\n\n"
+        "* [A](<https://a.example/>) — one.[^a]\n"
+        "* [B](<https://b.example/>) — two.[^b]\n\n"
+        "[^a]: A. <https://a.example/>\n"
+        "[^b]: B. <https://b.example/>\n"
+    )
+    if inline_link_problems(page_multi_def):
+        fail(f"a URL defined in a later footnote was wrongly reported: "
+             f"{inline_link_problems(page_multi_def)}")
+
+    if problems:
+        for p in problems:
+            print("FAIL:", p)
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
+    if "--selftest" in sys.argv[1:]:
+        return selftest()
     bad = 0
     checked = 0
     keys = inventory_keys()
