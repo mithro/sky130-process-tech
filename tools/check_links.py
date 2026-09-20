@@ -359,7 +359,18 @@ def extract_url_titles(text: str, window: int = TITLE_PROXIMITY_WINDOW) -> dict[
     style (citation-style.md) puts the title right before its own URL, so
     nearest-preceding within a modest window is far more reliable than
     "first in the block" while staying a cheap, local regex scan.
+
+    Flattened first (as check_preserved.py's own quote-matching does, for
+    the identical reason): the repository's markdown is hard-wrapped, so
+    a title routinely spans a source line break (``*"Control Data\\n
+    Corporation"*``); ``ITALIC_RE``/``QUOTED_RE`` forbid ``\\n`` inside a
+    match, so applied to the raw text they silently miss every such
+    title -- measured on CYP-13's own two-URL bullet, whose second title
+    wraps: without flattening, both URLs fell back to the first (whole,
+    unwrapped) title as "nearest", wrongly pairing the Control Data
+    Corporation URL with the Cypress Semiconductor title.
     """
+    text = WS_RE.sub(" ", text)
     spans: list[tuple[int, str]] = []
     for m in ITALIC_RE.finditer(text):
         spans.append((m.start(), m.group(1).strip()))
@@ -1741,6 +1752,14 @@ Some claim.[^wiki-fick][^pdk-01]
     # unrelated earlier title should not leak forward indefinitely).
     far_text = "*Unrelated Title*" + (" filler word" * 100) + "\n<https://example.org/far>"
     check("a title far outside the window is not attached", "https://example.org/far" not in extract_url_titles(far_text))
+    # A title that hard-wraps across a source line break (the repository's
+    # own markdown style) must still be found whole, not truncated at the
+    # line break -- the regression CYP-13's own citation hit.
+    wrapped = 'Author, *A Title That Wraps\nAcross Two Lines*.\n<https://example.org/wrapped>'
+    check(
+        "a title wrapped across a source line break is matched whole",
+        extract_url_titles(wrapped) == {"https://example.org/wrapped": "A Title That Wraps Across Two Lines"},
+    )
 
     html_ok = b"<html><head><title>Wafer Prober P-8XL &amp; P-12XL</title></head><body>" + b"Tokyo Electron wafer prober specifications. " * 20 + b"</body></html>"
     check("extracts <title>", extract_page_title(html_ok) == "Wafer Prober P-8XL &amp; P-12XL")
