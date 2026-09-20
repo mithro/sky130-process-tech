@@ -206,15 +206,64 @@ MODULES = [
 
 MACHINES_INDEX = ROOT / "docs" / "machines" / "index.md"
 MASKS_INDEX = ROOT / "docs" / "masks" / "index.md"
+OVERVIEW_INDEX = ROOT / "docs" / "overview" / "index.md"
+OVERVIEW_MODULES_HEADER = "| Module | Steps | Number of steps | Mask steps | Key public facts |"
 
 MACHINES_TABLE_HEADER = "| Machine class | What it does in SKY130 | Tools SkyWater lists publicly | Steps |"
 MASKS_TABLE_HEADER = ("| Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | "
                       "Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |")
 
-STEP_REF_RE = re.compile(r"\{ref\}`[^`]*<step-(\d{3})>`")
+# A single step ref, optionally paired with a second one across an en
+# dash to spell a contiguous range ("{ref}`A <step-010>`-{ref}`B
+# <step-013>`" means steps 10-13 inclusive; review L2).
+STEP_REF_OR_RANGE_RE = re.compile(
+    r"\{ref\}`[^`]*<step-(\d{3})>`(?:\s*[–-]\s*\{ref\}`[^`]*<step-(\d{3})>`)?"
+)
 MASK_STEP_CELL_RE = re.compile(r"^\{ref\}`([A-Za-z0-9/]+) <step-(\d{3})>`")
-MACHINE_REF_RE = re.compile(r"\{ref\}`[^`]*<machine-[^>]+>`")
+MACHINE_REF_RE = re.compile(r"\{ref\}`([^`<]+) <(machine-[^>]+)>`")
 ROLE_MARKER_RE = re.compile(r"\*[^*]+:\*")
+
+# Rows the machines index's own text excludes when it counts steps with
+# two equal main options ("A script check of the process-tool entries
+# (all rows except the track, the post-CMP cleaner and the metrology
+# rows, ...) finds all 171 steps in at least one row" - docs/machines/
+# index.md, "Machine classes and the steps that use them"): supporting
+# equipment used to check or handle other steps' work, not a step's own
+# process tool. Excluding them from the reverse lookup matches the
+# index's own accounting exactly (review M3) and, as a side effect,
+# removes every row that uses the "A-B" range shorthand for a long run
+# of steps (review M4/L2): the remaining process-tool rows name steps
+# individually or in short, genuine either/or ranges only.
+#
+# "Parametric tester and prober" is deliberately NOT here even though
+# the index calls it a metrology tool in prose: unlike the other five,
+# its main list names a step it is the process step FOR (electrical
+# test, {ref}`HPETEST <step-171>`), not only steps it checks after the
+# fact (its "*electrical monitor named:*" list, correctly excluded as
+# non-main); dropping it would leave step 171 with no machine class,
+# contradicting the index's own "all 171 steps in at least one row".
+SUPPORTING_EQUIPMENT_TARGETS = {
+    "machine-coat-develop-track",
+    "machine-post-cmp-cleaner",
+    "machine-cd-sem-overlay-metrology",
+    "machine-film-thickness-metrology",
+    "machine-sheet-resistance-metrology",
+    "machine-cross-section-sem-profilers",
+    "machine-defect-inspection",
+}
+
+
+def expand_step_refs(text: str) -> list[int]:
+    """Every step number named in ``text`` by a bare {ref} or by an
+    en-dash range of two of them (review L2)."""
+    nums: list[int] = []
+    for m in STEP_REF_OR_RANGE_RE.finditer(text):
+        lo = int(m.group(1))
+        if m.group(2):
+            nums.extend(range(lo, int(m.group(2)) + 1))
+        else:
+            nums.append(lo)
+    return nums
 
 
 def _table_rows(text: str, header: str) -> list[str]:
@@ -239,28 +288,62 @@ def _split_row(row: str) -> list[str]:
     return [c.strip() for c in row.strip().strip("|").split("|")]
 
 
-def machine_class_map() -> dict[int, str]:
-    """Step number -> the {ref} link (text and target) of the machine
-    class that "Machine classes and the steps that use them" in the
-    machines index assigns as the *main* tool for that step (report-B
-    B2, "reverse lookup"). Steps named only after a role marker
+def machine_class_map() -> dict[int, list[str]]:
+    """Step number -> the {ref} link(s) (text and target) of the machine
+    class(es) that "Machine classes and the steps that use them" in the
+    machines index assigns as *main* tool for that step (report-B B2,
+    "reverse lookup"). Steps named only after a role marker
     (``*alternative:*``, ``*also …:*``, ``*overlay:*``, ``*CD-SEM:*``)
-    are not "main" and are not recorded from that row; the first row
-    (in the index's own order) to name a step as main wins. No new
-    facts: everything comes from the machines index's own cells."""
-    text = MACHINES_INDEX.read_text(encoding="utf-8")
-    result: dict[int, str] = {}
+    are not "main" and are not recorded from that row. Supporting
+    equipment (the resist track, the post-CMP cleaner, and metrology
+    rows) is excluded, matching the machines index's own accounting
+    (its "Machine classes and the steps that use them" intro: "all rows
+    except the track, the post-CMP cleaner and the metrology rows ...
+    finds all 171 steps in at least one row, and ... 25 steps in two,
+    where a page offers two tool classes as equal options" — review
+    M3/M4/L2). A step named main by two rows keeps both, in the index's
+    own row order (caller joins with "or"; review M3). No new facts:
+    everything comes from the machines index's own cells."""
+    return _machine_class_map_from_text(MACHINES_INDEX.read_text(encoding="utf-8"))
+
+
+def _machine_class_map_from_text(text: str) -> dict[int, list[str]]:
+    """The parsing core of ``machine_class_map()``, taking the machines
+    index's own text as a parameter so ``--selftest`` can pin the role-
+    marker, exclusion and ambiguous-label rules against a small
+    synthetic table instead of the real, large one (review L6)."""
+    rows = []
+    label_counts: dict[str, int] = {}
     for row in _table_rows(text, MACHINES_TABLE_HEADER):
         cells = _split_row(row)
         class_cell, steps_cell = cells[0], cells[3]
         m = MACHINE_REF_RE.search(class_cell)
-        if not m:
+        if not m or m.group(2) in SUPPORTING_EQUIPMENT_TARGETS:
             continue
-        machine_ref = m.group(0)
+        label = m.group(1)
+        label_counts[label] = label_counts.get(label, 0) + 1
+        rows.append((m, class_cell, steps_cell))
+
+    result: dict[int, list[str]] = {}
+    for m, class_cell, steps_cell in rows:
+        label, target = m.group(1), m.group(2)
+        if label_counts[label] > 1:
+            # Ambiguous base label shared by several rows (e.g. three
+            # "Vertical batch furnace" process rows): fold the cell's
+            # own qualifier, given after the role, into the link text
+            # so the reverse-lookup table can tell them apart (review
+            # M4). Rows with a unique label are left exactly as the
+            # index writes them.
+            after = re.split(r"[;,]", class_cell[m.end():], maxsplit=1)[0]
+            qualifier = after.lstrip(": ").strip().rstrip(".")
+            label = f"{label}: {qualifier}" if qualifier else label
+        machine_ref = f"{{ref}}`{label} <{target}>`"
         marker = ROLE_MARKER_RE.search(steps_cell)
         main_text = steps_cell[:marker.start()] if marker else steps_cell
-        for num_s in STEP_REF_RE.findall(main_text):
-            result.setdefault(int(num_s), machine_ref)
+        for num in expand_step_refs(main_text):
+            claims = result.setdefault(num, [])
+            if machine_ref not in claims:
+                claims.append(machine_ref)
     return result
 
 
@@ -269,7 +352,12 @@ def mask_map() -> dict[int, str]:
     pattern the step uses, inverting the masks index's "Mask steps in
     this reference" table (its own "Patterns" column plus the mask step
     itself; report-B B2, "reverse lookup"). No new facts."""
-    text = MASKS_INDEX.read_text(encoding="utf-8")
+    return _mask_map_from_text(MASKS_INDEX.read_text(encoding="utf-8"))
+
+
+def _mask_map_from_text(text: str) -> dict[int, str]:
+    """The parsing core of ``mask_map()``, taking the masks index's own
+    text as a parameter (review L6, see ``_machine_class_map_from_text``)."""
     result: dict[int, str] = {}
     for row in _table_rows(text, MASKS_TABLE_HEADER):
         cells = _split_row(row)
@@ -280,9 +368,36 @@ def mask_map() -> dict[int, str]:
         code, num_s = m.group(1), m.group(2)
         mask_ref = "{{ref}}`{code} <mask-{slug}>`".format(code=code, slug=slug(code))
         result[int(num_s)] = mask_ref
-        for other_s in STEP_REF_RE.findall(patterns_cell):
-            result.setdefault(int(other_s), mask_ref)
+        for other in expand_step_refs(patterns_cell):
+            result.setdefault(other, mask_ref)
     return result
+
+
+def check_modules_match_overview() -> None:
+    """Fail loudly if MODULES drifts from the overview's own "The flow by
+    module" table (review L1): MODULES is a hand copy of it, made once
+    when the step index was grouped, and nothing previously asserted the
+    two stay equal."""
+    text = OVERVIEW_INDEX.read_text(encoding="utf-8")
+    overview: list[tuple[int, int, str]] = []
+    for row in _table_rows(text, OVERVIEW_MODULES_HEADER):
+        cells = _split_row(row)
+        name, steps_cell, count_cell = cells[0], cells[1], cells[2]
+        nums = [int(n) for n in re.findall(r"<step-(\d{3})>", steps_cell)]
+        if len(nums) != 2:
+            raise SystemExit(f"gen_steps: unexpected overview module Steps cell: {steps_cell!r}")
+        lo, hi = nums
+        if hi - lo + 1 != int(count_cell):
+            raise SystemExit(
+                f"gen_steps: overview module {name!r} step range {lo}-{hi} "
+                f"does not match its own Number of steps {count_cell!r}"
+            )
+        overview.append((lo, hi, name))
+    if overview != MODULES:
+        raise SystemExit(
+            "gen_steps.MODULES has drifted from docs/overview/index.md's module "
+            f"table.\noverview: {overview!r}\nMODULES:  {MODULES!r}"
+        )
 
 
 def category_for(code: str) -> str:
@@ -455,11 +570,24 @@ INDEX_FOOTNOTES = """\
 
 
 def index_text(steps: list[dict]) -> str:
+    check_modules_match_overview()
     by_number = {s["number"]: s for s in steps}
     machines = machine_class_map()
     masks = mask_map()
 
     lines = INDEX_INTRO.splitlines()
+    lines.append("")
+    # review L5: a lead-in explaining the two-table-per-module layout and
+    # what "—" and "or" mean in the second table, so a reader meets the
+    # pattern once instead of 13 times unexplained.
+    lines.append(
+        "Each module below is listed twice: first by name and category, "
+        "then by the machine class and mask that the "
+        "{ref}`machines index <machines-index>` and "
+        "{ref}`masks index <masks-index>` assign to each step. "
+        "A dash means neither index names one; \"or\" means the machines "
+        "index offers two tool classes as equal options."
+    )
     lines.append("")
     for lo, hi, module_name in MODULES:
         lines.append(f"## {module_name}")
@@ -486,11 +614,12 @@ def index_text(steps: list[dict]) -> str:
         lines.append("|---:|---|---|---|")
         for num in range(lo, hi + 1):
             s = by_number[num]
+            machine = " or ".join(machines.get(num, [])) or "—"
             lines.append(
                 "| {num} | {{ref}}`{code} <step-{num:03d}>` | {machine} | {mask} |".format(
                     num=num,
                     code=s["code"],
-                    machine=machines.get(num, "—"),
+                    machine=machine,
                     mask=masks.get(num, "—"),
                 )
             )
@@ -511,11 +640,77 @@ def write_index(steps: list[dict]) -> None:
     (STEPS / "index.md").write_text(index_text(steps))
 
 
+# ---------------------------------------------------------------------------
+# Self-test (no repository files touched; review L6)
+# ---------------------------------------------------------------------------
+
+def selftest() -> int:
+    problems: list[str] = []
+
+    # expand_step_refs(): a bare ref, and an en-dash range of two.
+    if expand_step_refs("{ref}`FOM <step-004>`") != [4]:
+        problems.append("expand_step_refs did not read a bare ref")
+    if expand_step_refs("{ref}`A <step-010>`–{ref}`B <step-013>`") != [10, 11, 12, 13]:
+        problems.append("expand_step_refs did not expand an en-dash range")
+    if expand_step_refs("{ref}`A <step-001>`, {ref}`B <step-003>`") != [1, 3]:
+        problems.append("expand_step_refs joined two bare refs into a range")
+
+    # machine_class_map(): role markers, supporting-equipment exclusion,
+    # ambiguous-label disambiguation and multi-row "main" claims, all
+    # against a small synthetic table rather than the real one.
+    machines_text = "\n".join([
+        MACHINES_TABLE_HEADER,
+        "|---|---|---|---|",
+        "| {ref}`Furnace <machine-furnace-ox>`: oxidation | x | y | {ref}`A <step-001>`, {ref}`B <step-002>`; *alternative:* {ref}`C <step-003>` |",
+        "| {ref}`Furnace <machine-furnace-lpcvd>`: LPCVD | x | y | {ref}`C <step-003>` |",
+        "| {ref}`RTP <machine-rtp>` | x | y | {ref}`C <step-003>` |",
+        "| {ref}`Metrology <machine-cd-sem-overlay-metrology>` | x | y | {ref}`A <step-001>`, {ref}`B <step-002>`, {ref}`C <step-003>` |",
+    ])
+    mm = _machine_class_map_from_text(machines_text)
+    if mm.get(1) != ["{ref}`Furnace: oxidation <machine-furnace-ox>`"]:
+        problems.append(f"machine_class_map: step 1 main claim wrong: {mm.get(1)!r}")
+    if 3 not in mm or set(mm[3]) != {
+        "{ref}`Furnace: LPCVD <machine-furnace-lpcvd>`", "{ref}`RTP <machine-rtp>`"
+    }:
+        problems.append(f"machine_class_map: step 3's two equal main options not both kept: {mm.get(3)!r}")
+    if any("machine-cd-sem-overlay-metrology" in r for v in mm.values() for r in v):
+        problems.append("machine_class_map: a supporting-equipment (metrology) row was not excluded")
+    if any("Furnace <machine" in r for v in mm.values() for r in v):
+        problems.append("machine_class_map: an ambiguous label was not disambiguated with its qualifier")
+
+    # mask_map(): the mask step itself plus its Patterns cell map to the
+    # mask; a step named in no row's Patterns cell is simply absent
+    # (rendered "—" by the caller).
+    masks_text = "\n".join([
+        MASKS_TABLE_HEADER,
+        "|---|---|---|---|---|---|",
+        "| {ref}`FOM <step-004>` | x | y | z | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` | w |",
+    ])
+    msk = _mask_map_from_text(masks_text)
+    want_mask_ref = "{ref}`FOM <mask-fom>`"
+    if msk != {4: want_mask_ref, 5: want_mask_ref, 6: want_mask_ref}:
+        problems.append(f"mask_map: unexpected result: {msk!r}")
+    if 7 in msk:
+        problems.append("mask_map: a step named nowhere was assigned a mask")
+
+    if problems:
+        for p in problems:
+            print("SELFTEST FAIL:", p)
+        print(f"{len(problems)} selftest problem(s)")
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--check", action="store_true",
                      help="fail if docs/steps/index.md differs from generated, or a step page is missing")
+    ap.add_argument("--selftest", action="store_true", help="run the offline self-test and exit; touches no files")
     args = ap.parse_args()
+
+    if args.selftest:
+        return selftest()
 
     steps = load_steps()
 

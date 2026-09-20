@@ -10,6 +10,8 @@ are corrected ("Low Vt NOMOS mask" becomes "Low Vt NMOS mask"),
 abbreviations are spelt out, and step 82, which the sheet describes only
 by its code "PSDI", is named "P+ source drain implant".
 
+Each module below is listed twice: first by name and category, then by the machine class and mask that the {ref}`machines index <machines-index>` and {ref}`masks index <masks-index>` assign to each step. A dash means neither index names one; "or" means the machines index offers two tool classes as equal options.
+
 ## Starting material, isolation and deep N-well
 
 | Step | Code | Name | Category |
@@ -31,15 +33,15 @@ by its code "PSDI", is named "P+ source drain implant".
 | Step | Code | Machine class | Mask |
 |---:|---|---|---|
 | 1 | {ref}`SMAT <step-001>` | {ref}`Starting material <machine-starting-material>` | — |
-| 2 | {ref}`BOX <step-002>` | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>` | — |
-| 3 | {ref}`ISONIT <step-003>` | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>` | — |
+| 2 | {ref}`BOX <step-002>` | {ref}`Vertical batch furnace: oxidation <machine-vertical-furnace-oxidation>` | — |
+| 3 | {ref}`ISONIT <step-003>` | {ref}`Vertical batch furnace: LPCVD <machine-vertical-furnace-lpcvd>` | — |
 | 4 | {ref}`FOM <step-004>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`FOM <mask-fom>` |
 | 5 | {ref}`STINITE <step-005>` | {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | {ref}`FOM <mask-fom>` |
 | 6 | {ref}`STIE <step-006>` | {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` | {ref}`FOM <mask-fom>` |
 | 7 | {ref}`DNM <step-007>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`DNM <mask-dnm>` |
 | 8 | {ref}`DNI <step-008>` | {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`DNM <mask-dnm>` |
 | 9 | {ref}`DNIS <step-009>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`DNM <mask-dnm>` |
-| 10 | {ref}`LINOX <step-010>` | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>` | — |
+| 10 | {ref}`LINOX <step-010>` | {ref}`Vertical batch furnace: oxidation <machine-vertical-furnace-oxidation>` | — |
 | 11 | {ref}`FILOX <step-011>` | {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 12 | {ref}`CMPNIT <step-012>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 | 13 | {ref}`NS19 <step-013>` | {ref}`Wet bench and spray processor <machine-wet-bench>` | — |
@@ -77,7 +79,7 @@ by its code "PSDI", is named "P+ source drain implant".
 | 16 | {ref}`LVTNIS <step-016>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`LVTNM <mask-lvtnm>` |
 | 17 | {ref}`NWM <step-017>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`NWM <mask-nwm>` |
 | 18 | {ref}`NWI <step-018>` | {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`NWM <mask-nwm>` |
-| 19 | {ref}`NWI2 <step-019>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`NWM <mask-nwm>` |
+| 19 | {ref}`NWI2 <step-019>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`NWM <mask-nwm>` |
 | 20 | {ref}`LVTPI <step-020>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`NWM <mask-nwm>` |
 | 21 | {ref}`LVTPIS <step-021>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`NWM <mask-nwm>` |
 | 22 | {ref}`HVTPM <step-022>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`HVTPM <mask-hvtpm>` |
@@ -85,12 +87,12 @@ by its code "PSDI", is named "P+ source drain implant".
 | 24 | {ref}`PNCHI <step-024>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`HVTPM <mask-hvtpm>` |
 | 25 | {ref}`PCHIS <step-025>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`HVTPM <mask-hvtpm>` |
 | 26 | {ref}`PWBM <step-026>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`PWBM <mask-pwbm>` |
-| 27 | {ref}`PWI <step-027>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`PWBM <mask-pwbm>` |
-| 28 | {ref}`PWI2 <step-028>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`PWBM <mask-pwbm>` |
+| 27 | {ref}`PWI <step-027>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`PWBM <mask-pwbm>` |
+| 28 | {ref}`PWI2 <step-028>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`PWBM <mask-pwbm>` |
 | 29 | {ref}`PWIS <step-029>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`PWBM <mask-pwbm>` |
 | 30 | {ref}`PWDEM <step-030>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`PWDEM <mask-pwdem>` |
-| 31 | {ref}`PWDEI1 <step-031>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`PWDEM <mask-pwdem>` |
-| 32 | {ref}`PWDEI2 <step-032>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`PWDEM <mask-pwdem>` |
+| 31 | {ref}`PWDEI1 <step-031>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`PWDEM <mask-pwdem>` |
+| 32 | {ref}`PWDEI2 <step-032>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`PWDEM <mask-pwdem>` |
 | 33 | {ref}`PWDEIS <step-033>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`PWDEM <mask-pwdem>` |
 | 34 | {ref}`RTAI <step-034>` | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` | — |
 
@@ -113,10 +115,10 @@ by its code "PSDI", is named "P+ source drain implant".
 | 36 | {ref}`TUNARCE <step-036>` | {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` | {ref}`TUNM <mask-tunm>` |
 | 37 | {ref}`PTSI <step-037>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`TUNM <mask-tunm>` |
 | 38 | {ref}`DEPI <step-038>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`TUNM <mask-tunm>` |
-| 39 | {ref}`TUNME <step-039>` | {ref}`Wet bench and spray processor <machine-wet-bench>` | {ref}`TUNM <mask-tunm>` |
-| 40 | {ref}`ONO <step-040>` | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>` | — |
+| 39 | {ref}`TUNME <step-039>` | {ref}`Wet bench and spray processor <machine-wet-bench>` or {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` | {ref}`TUNM <mask-tunm>` |
+| 40 | {ref}`ONO <step-040>` | {ref}`Vertical batch furnace: oxidation <machine-vertical-furnace-oxidation>` or {ref}`Vertical batch furnace: LPCVD <machine-vertical-furnace-lpcvd>` | — |
 | 41 | {ref}`ONOM <step-041>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`ONOM <mask-onom>` |
-| 42 | {ref}`ONOME <step-042>` | {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` | {ref}`ONOM <mask-onom>` |
+| 42 | {ref}`ONOME <step-042>` | {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` or {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | {ref}`ONOM <mask-onom>` |
 
 ## Gate oxides
 
@@ -130,11 +132,11 @@ by its code "PSDI", is named "P+ source drain implant".
 
 | Step | Code | Machine class | Mask |
 |---:|---|---|---|
-| 43 | {ref}`GOX100 <step-043>` | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>` | — |
+| 43 | {ref}`GOX100 <step-043>` | {ref}`Vertical batch furnace: oxidation <machine-vertical-furnace-oxidation>` | — |
 | 44 | {ref}`LVOM <step-044>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`LVOM <mask-lvom>` |
 | 45 | {ref}`NCHI <step-045>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`LVOM <mask-lvom>` |
-| 46 | {ref}`GOXETCH <step-046>` | {ref}`Wet bench and spray processor <machine-wet-bench>` | {ref}`LVOM <mask-lvom>` |
-| 47 | {ref}`LVGOX <step-047>` | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>` | — |
+| 46 | {ref}`GOXETCH <step-046>` | {ref}`Wet bench and spray processor <machine-wet-bench>` or {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` | {ref}`LVOM <mask-lvom>` |
+| 47 | {ref}`LVGOX <step-047>` | {ref}`Vertical batch furnace: oxidation <machine-vertical-furnace-oxidation>` or {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` | — |
 
 ## Poly gate and poly resistors
 
@@ -159,22 +161,22 @@ by its code "PSDI", is named "P+ source drain implant".
 
 | Step | Code | Machine class | Mask |
 |---:|---|---|---|
-| 48 | {ref}`SAGD <step-048>` | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>` | — |
+| 48 | {ref}`SAGD <step-048>` | {ref}`Vertical batch furnace: LPCVD <machine-vertical-furnace-lpcvd>` | — |
 | 49 | {ref}`RPM <step-049>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`RPM <mask-rpm>` |
 | 50 | {ref}`P1I <step-050>` | {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`RPM <mask-rpm>` |
 | 51 | {ref}`P1IS <step-051>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`RPM <mask-rpm>` |
 | 52 | {ref}`RRPM <step-052>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`RRPM <mask-rrpm>` |
-| 53 | {ref}`PRI <step-053>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`RRPM <mask-rrpm>` |
+| 53 | {ref}`PRI <step-053>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`RRPM <mask-rrpm>` |
 | 54 | {ref}`PRIS <step-054>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`RRPM <mask-rrpm>` |
 | 55 | {ref}`URPM <step-055>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`URPM <mask-urpm>` |
 | 56 | {ref}`UPRI <step-056>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`URPM <mask-urpm>` |
 | 57 | {ref}`UPRIS <step-057>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`URPM <mask-urpm>` |
-| 58 | {ref}`GATENIT <step-058>` | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>` | — |
-| 59 | {ref}`POC <step-059>` | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>` | — |
+| 58 | {ref}`GATENIT <step-058>` | {ref}`Vertical batch furnace: LPCVD <machine-vertical-furnace-lpcvd>` or {ref}`PECVD <machine-pecvd>` | — |
+| 59 | {ref}`POC <step-059>` | {ref}`Vertical batch furnace: LPCVD <machine-vertical-furnace-lpcvd>` or {ref}`PECVD <machine-pecvd>` | — |
 | 60 | {ref}`BFR <step-060>` | {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` | — |
 | 61 | {ref}`P1M <step-061>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`P1M <mask-p1m>` |
 | 62 | {ref}`P1ME <step-062>` | {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` | {ref}`P1M <mask-p1m>` |
-| 63 | {ref}`IOX45 <step-063>` | {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>` | — |
+| 63 | {ref}`IOX45 <step-063>` | {ref}`Vertical batch furnace: oxidation <machine-vertical-furnace-oxidation>` or {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` | — |
 
 ## Tips and halos
 
@@ -196,7 +198,7 @@ by its code "PSDI", is named "P+ source drain implant".
 | Step | Code | Machine class | Mask |
 |---:|---|---|---|
 | 64 | {ref}`NTM <step-064>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`NTM <mask-ntm>` |
-| 65 | {ref}`ASTI <step-065>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`NTM <mask-ntm>` |
+| 65 | {ref}`ASTI <step-065>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`NTM <mask-ntm>` |
 | 66 | {ref}`BHI <step-066>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`NTM <mask-ntm>` |
 | 67 | {ref}`ASTIS <step-067>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`NTM <mask-ntm>` |
 | 68 | {ref}`HVNTM <step-068>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`HVNTM <mask-hvntm>` |
@@ -228,14 +230,14 @@ by its code "PSDI", is named "P+ source drain implant".
 
 | Step | Code | Machine class | Mask |
 |---:|---|---|---|
-| 76 | {ref}`SPNIT <step-076>` | {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>` | — |
+| 76 | {ref}`SPNIT <step-076>` | {ref}`Vertical batch furnace: LPCVD <machine-vertical-furnace-lpcvd>` | — |
 | 77 | {ref}`SPE <step-077>` | {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | — |
 | 78 | {ref}`NPCM <step-078>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`NPCM <mask-npcm>` |
 | 79 | {ref}`NPCME <step-079>` | {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | {ref}`NPCM <mask-npcm>` |
 | 80 | {ref}`SPOX <step-080>` | {ref}`PECVD <machine-pecvd>` | — |
 | 81 | {ref}`PSDM <step-081>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`PSDM <mask-psdm>` |
 | 82 | {ref}`PSDI <step-082>` | {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`PSDM <mask-psdm>` |
-| 83 | {ref}`2PSDI <step-083>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`PSDM <mask-psdm>` |
+| 83 | {ref}`2PSDI <step-083>` | {ref}`Medium-current ion implanter <machine-medium-current-implanter>` or {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`PSDM <mask-psdm>` |
 | 84 | {ref}`PDIS <step-084>` | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`PSDM <mask-psdm>` |
 | 85 | {ref}`NSDM <step-085>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`NSDM <mask-nsdm>` |
 | 86 | {ref}`NSDI <step-086>` | {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`NSDM <mask-nsdm>` |
@@ -267,14 +269,14 @@ by its code "PSDI", is named "P+ source drain implant".
 
 | Step | Code | Machine class | Mask |
 |---:|---|---|---|
-| 89 | {ref}`PSG <step-089>` | {ref}`PECVD <machine-pecvd>` | — |
+| 89 | {ref}`PSG <step-089>` | {ref}`PECVD <machine-pecvd>` or {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 90 | {ref}`CMPP <step-090>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 | 91 | {ref}`NCAPOX <step-091>` | {ref}`PECVD <machine-pecvd>` | — |
 | 92 | {ref}`RTAD2 <step-092>` | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` | — |
 | 93 | {ref}`LICM1 <step-093>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`LICM1 <mask-licm1>` |
 | 94 | {ref}`LICM1E <step-094>` | {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | {ref}`LICM1 <mask-licm1>` |
-| 95 | {ref}`SACETCH <step-095>` | {ref}`Wet bench and spray processor <machine-wet-bench>` | {ref}`LICM1 <mask-licm1>` |
-| 96 | {ref}`ALLY1 <step-096>` | {ref}`Vertical batch furnace <machine-vertical-furnace-anneal>` | — |
+| 95 | {ref}`SACETCH <step-095>` | {ref}`Wet bench and spray processor <machine-wet-bench>` or {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` | {ref}`LICM1 <mask-licm1>` |
+| 96 | {ref}`ALLY1 <step-096>` | {ref}`Vertical batch furnace: anneal and alloy <machine-vertical-furnace-anneal>` | — |
 | 97 | {ref}`TI/TIN1 <step-097>` | {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | — |
 | 98 | {ref}`CSIL <step-098>` | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` | — |
 | 99 | {ref}`WDEP <step-099>` | {ref}`Tungsten CVD <machine-tungsten-cvd>` | — |
@@ -283,7 +285,7 @@ by its code "PSDI", is named "P+ source drain implant".
 | 102 | {ref}`LI1M <step-102>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`LI1M <mask-li1m>` |
 | 103 | {ref}`LI1ME <step-103>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`LI1M <mask-li1m>` |
 | 104 | {ref}`LINIT <step-104>` | {ref}`PECVD <machine-pecvd>` | — |
-| 105 | {ref}`NILD2 <step-105>` | {ref}`PECVD <machine-pecvd>` | — |
+| 105 | {ref}`NILD2 <step-105>` | {ref}`PECVD <machine-pecvd>` or {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 106 | {ref}`CMPL <step-106>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 
 ## Metal contact and metal 1
@@ -312,7 +314,7 @@ by its code "PSDI", is named "P+ source drain implant".
 | 112 | {ref}`TIAL6 <step-112>` | {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | — |
 | 113 | {ref}`MM1 <step-113>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`MM1 <mask-mm1>` |
 | 114 | {ref}`MM1E <step-114>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`MM1 <mask-mm1>` |
-| 115 | {ref}`NILD3 <step-115>` | {ref}`PECVD <machine-pecvd>` | — |
+| 115 | {ref}`NILD3 <step-115>` | {ref}`PECVD <machine-pecvd>` or {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 116 | {ref}`CMPM <step-116>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 | 117 | {ref}`NCAPOX3 <step-117>` | {ref}`PECVD <machine-pecvd>` | — |
 
@@ -348,7 +350,7 @@ by its code "PSDI", is named "P+ source drain implant".
 | 123 | {ref}`TIAL12 <step-123>` | {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | — |
 | 124 | {ref}`MM2 <step-124>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`MM2 <mask-mm2>` |
 | 125 | {ref}`MM2E <step-125>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`MM2 <mask-mm2>` |
-| 126 | {ref}`NILD4 <step-126>` | {ref}`PECVD <machine-pecvd>` | — |
+| 126 | {ref}`NILD4 <step-126>` | {ref}`PECVD <machine-pecvd>` or {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 127 | {ref}`CMPM2 <step-127>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 | 128 | {ref}`NCAPOX4 <step-128>` | {ref}`PECVD <machine-pecvd>` | — |
 | 129 | {ref}`VIM2 <step-129>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`VIM2 <mask-vim2>` |
@@ -383,9 +385,9 @@ by its code "PSDI", is named "P+ source drain implant".
 | 136 | {ref}`CAPTIW1 <step-136>` | {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | — |
 | 137 | {ref}`CAPM <step-137>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`CAPM <mask-capm>` |
 | 138 | {ref}`CAPME <step-138>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`CAPM <mask-capm>` |
-| 139 | {ref}`MM3 <step-139>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`MM3 <mask-mm3>` |
+| 139 | {ref}`MM3 <step-139>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` or {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`MM3 <mask-mm3>` |
 | 140 | {ref}`MM3E <step-140>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`MM3 <mask-mm3>` |
-| 141 | {ref}`NILD5 <step-141>` | {ref}`PECVD <machine-pecvd>` | — |
+| 141 | {ref}`NILD5 <step-141>` | {ref}`PECVD <machine-pecvd>` or {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 142 | {ref}`CMPM3 <step-142>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 | 143 | {ref}`NCAPOX5 <step-143>` | {ref}`PECVD <machine-pecvd>` | — |
 | 144 | {ref}`VIM3 <step-144>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`VIM3 <mask-vim3>` |
@@ -421,9 +423,9 @@ by its code "PSDI", is named "P+ source drain implant".
 | 151 | {ref}`CAPTIW2 <step-151>` | {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | — |
 | 152 | {ref}`CAP2M <step-152>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`CAP2M <mask-cap2m>` |
 | 153 | {ref}`CAP2ME <step-153>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`CAP2M <mask-cap2m>` |
-| 154 | {ref}`MM4 <step-154>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`MM4 <mask-mm4>` |
+| 154 | {ref}`MM4 <step-154>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` or {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`MM4 <mask-mm4>` |
 | 155 | {ref}`MM4E <step-155>` | {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`MM4 <mask-mm4>` |
-| 156 | {ref}`NILD6 <step-156>` | {ref}`PECVD <machine-pecvd>` | — |
+| 156 | {ref}`NILD6 <step-156>` | {ref}`PECVD <machine-pecvd>` or {ref}`HDP-CVD <machine-hdp-cvd>` | — |
 | 157 | {ref}`CMPM4 <step-157>` | {ref}`CMP polisher <machine-cmp-polisher>` | — |
 | 158 | {ref}`NCAPOX6 <step-158>` | {ref}`PECVD <machine-pecvd>` | — |
 | 159 | {ref}`VIM4 <step-159>` | {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`VIM4 <mask-vim4>` |
@@ -453,7 +455,7 @@ by its code "PSDI", is named "P+ source drain implant".
 | 167 | {ref}`NTSD <step-167>` | {ref}`PECVD <machine-pecvd>` | — |
 | 168 | {ref}`PDM <step-168>` | {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`PDM <mask-pdm>` |
 | 169 | {ref}`PDME <step-169>` | {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | {ref}`PDM <mask-pdm>` |
-| 170 | {ref}`ALLY <step-170>` | {ref}`Vertical batch furnace <machine-vertical-furnace-anneal>` | — |
+| 170 | {ref}`ALLY <step-170>` | {ref}`Vertical batch furnace: anneal and alloy <machine-vertical-furnace-anneal>` | — |
 | 171 | {ref}`HPETEST <step-171>` | {ref}`Parametric tester and prober <machine-parametric-tester>` | — |
 
 ```{toctree}
