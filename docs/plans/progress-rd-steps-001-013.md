@@ -428,6 +428,36 @@ table's rows plus the "Rounds the corners" split, hand-verified. All other check
 build pass; screenshots at both widths read cleanly, the three-column patent-comparison table
 with long quotations wraps well even at 400 px.
 
+### 011-filox.md — done
+
+Rules applied: R-H3 (`### What the public record shows` before the film-thickness/HDP-method
+paragraphs, following the page 001/003 pattern), R-PARA (that 137-word block split at its three
+natural seams: thickness reasoning, HDP-as-industry-standard, PDK's own silence; the 115-word
+"Chemistry" item split at its lead quotation's end), R-TABLE (the 215-word Bianchi/test-tile
+paragraph's drain-current comparison across three devices and two `sa`=`sb` extents → a 3-column
+Device|At 2.5 µm|At 0.265 µm table, transposed the same way as page 008's NPN table — geometry
+values as columns, devices as rows — learned from that page's phone-width lesson), R-SENTENCE
+(first sentence of "What this step is" split at its clause boundary), R-CATEGORY (two-bullet
+"Specific to this step:"), R-HEDGE step 1, R-TOOLS (two bullets, split), R-RELATED ("Depends
+on:", "Feeds:", "Same module:"), R-OPENQ (three bullets labelled), R-GLANCE (box last).
+
+One marker-placement slip caught while re-reading my own diff before running the checker (not by
+`check_preserved.py`, which would not have flagged it since the marker count was already correct):
+an early draft of the drain-current table split moved `[^raw-data-lv-mosfets]` to sit right after
+the table instead of leaving it at the end of the following "thresholds" sentence, effectively
+attaching it to a different claim than the one it originally supported. Since the marker's total
+page count would have stayed the same either way, this is exactly the kind of same-count-but-wrong-
+place error `check_preserved.py`'s own documentation warns it cannot catch ("a footnote marker
+moved from one claim to an adjacent one... can... pass with nothing printed") — fixed by reading
+the diff itself rather than relying on the tool alone, per agent-briefs.md's instruction to do
+so regardless of what the checker reports.
+
+`check_preserved.py --base ee3a94ee --allow-added markers,numbers,hedges,number_order
+docs/steps/011-filox.md`: 0 LOST outside `number_order`; the two `number_order` pairs are the
+drain-current table split and the Chemistry-item split, hand-verified. All other checkers and the
+`-W` build pass; screenshots at both widths read cleanly, including the transposed drain-current
+table at 400 px.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s

@@ -10,11 +10,24 @@
 | **Previous step** | {ref}`LINOX <step-010>` |
 | **Next step** | {ref}`CMPNIT <step-012>` |
 
+:::{admonition} At a glance
+* **Does:** deposits the thick HDP-CVD oxide that fills the lined
+  trenches and becomes the finished field oxide.
+* **Why:** must be void-free, dense, low in hydrogen and uniform, so
+  the later polish and every subsequent process step behave.
+* **Public numbers:** none published for SKY130; era-typical fill is
+  of the order of 0.7–0.9 µm (see What this step is).
+* **Likely SkyWater tool:** Novellus (now Lam) HDP-CVD — strong (two
+  SkyWater statements).[^skw-01][^skw-07]
+* **Not public:** the actual fill thickness, deposition temperature
+  and D/S ratio (→ Open questions).
+:::
+
 ## What this step is
 
 `FILOX` (fill oxide) deposits a thick blanket of silicon dioxide over
-the whole wafer, filling the lined isolation trenches from
-{ref}`LINOX <step-010>` and burying the nitride-covered active areas.
+the whole wafer. It fills the lined isolation trenches from
+{ref}`LINOX <step-010>` and buries the nitride-covered active areas.
 This deposited oxide *is* the field oxide of the finished device: the
 PDK's stack drawing labels it "FOX K=3.9",[^pdk-04] and after the
 polish at {ref}`CMPNIT <step-012>` and the nitride strip at
@@ -30,17 +43,23 @@ first interconnect run.
 Before, the lined trench still open; after, a thick blanket of deposited oxide filling it and burying the nitride-covered active areas. The PDK's stack drawing labels this oxide "FOX K=3.9".[^pdk-04] The PDK gives no fill thickness or topography; the fill is drawn with a flat top. This cross-section is drawn outside a deep N-well region, so the buried layer of `DNI` (step 008) does not appear. Not to scale.
 :::
 
+### What the public record shows
+
 The film must be thick enough to fill the deepest trench and still
 stand well above the nitride everywhere — typically 1.5–2 × the
 (trench + nitride) height, which for the ~0.33 µm trench and ~0.15 µm
 nitride read elsewhere in this module ({ref}`STIE <step-006>`,
 {ref}`ISONIT <step-003>`) is of the order of 0.7–0.9 µm (era-typical
-ratio;[^txt-05] no SKY130 figure is public). At the 130 nm node the
+ratio;[^txt-05] no SKY130 figure is public).
+
+At the 130 nm node the
 deposition method is high-density-plasma chemical vapour deposition
 ({term}`HDP-CVD`): "High Density Plasma (HDP) and Chemical Vapor Deposition
 (CVD) is the industry standard for STI oxide",[^thung-2016] and
 Novellus was still calling HDP "the preferred gapfill dielectric
-technology for advanced geometries" in 2009.[^lam-speed] The PDK gives
+technology for advanced geometries" in 2009.[^lam-speed]
+
+The PDK gives
 no fill thickness; it gives the *final* field-oxide top at 0.3262 µm on
 its stack scale[^pdk-04] and the field-oxide step above the silicon
 surface under poly as 0.07 µm.[^pdk-03]
@@ -48,13 +67,18 @@ surface under poly as 0.07 µm.[^pdk-03]
 ## Step category
 
 `FILOX` is a {ref}`Thin-film deposition <category-deposition>` step —
-a plasma {term}`CVD` of undoped silicon oxide. It is the first of many CVD
-oxides in the flow; later ones ({ref}`PSG <step-089>`,
-{ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, …) fill gaps
-between poly and metal lines and use {term}`PECVD` {term}`TEOS`, {term}`PSG` or HDP as the
-topography demands. The isolation fill is distinctive because its gaps
-are the narrowest and deepest in the front end and because it is
-followed immediately by a polish that stops on nitride.
+a plasma {term}`CVD` of undoped silicon oxide.
+
+**Specific to this step:**
+
+* It is the first of many CVD oxides in the flow; later ones
+  ({ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`,
+  {ref}`NILD3 <step-115>`, …) fill gaps between poly and metal lines
+  and use {term}`PECVD` {term}`TEOS`, {term}`PSG` or HDP as the
+  topography demands.
+* The isolation fill is distinctive because its gaps are the
+  narrowest and deepest in the front end and because it is followed
+  immediately by a polish that stops on nitride.
 
 ## Why this step exists
 
@@ -87,23 +111,31 @@ geometries".[^bianchi-2002] The published SKY130 test tile includes
 transistors that differ only in how far the source/drain diffusion
 extends from the gate (`sa` = `sb`, from 2.5 µm down to
 0.265 µm).[^raw-data-testtile-pads] As that extent shortens, the drain
-current at |V_GS| = |V_DS| = 1.8 V of a 7/0.15 µm `pfet_01v8` rises
-from 0.95 mA to 1.38 mA, while that of a 1/0.15 µm `nfet_01v8_lvt`
-falls from 0.536 mA to 0.463 mA and that of a 1/0.15 µm `nfet_01v8`
-from 0.450 mA to 0.409 mA (our extraction from the published
-measurements; one device at each extent; the `nfet_01v8` values do not
-fall at every step). Over the same range the thresholds extracted by
-maximum-transconductance extrapolation at |V_DS| = 0.1 V also move: the
-PMOS threshold magnitude falls by 0.14 V, and the thresholds
-of the low-Vt and standard NMOS rise by 0.04 V and 0.03 V, so the
-current changes are not due to mobility alone.[^raw-data-lv-mosfets]
-We read the opposite trends as consistent with a stress effect of the
-kind Bianchi et al. model (inference); the data do not measure stress,
-and other effects of the diffusion extent cannot be excluded.
+current at |V_GS| = |V_DS| = 1.8 V moves:
+
+| Device | At `sa`=`sb` 2.5 µm | At `sa`=`sb` 0.265 µm |
+|---|---:|---:|
+| 7/0.15 µm `pfet_01v8` | 0.95 mA | 1.38 mA |
+| 1/0.15 µm `nfet_01v8_lvt` | 0.536 mA | 0.463 mA |
+| 1/0.15 µm `nfet_01v8` | 0.450 mA | 0.409 mA |
+
+(our extraction from the published measurements; one device at each
+extent; the `nfet_01v8` values do not fall at every
+step). Over the same range the thresholds
+extracted by maximum-transconductance extrapolation at
+|V_DS| = 0.1 V also move: the PMOS threshold magnitude falls by 0.14 V,
+and the thresholds of the low-Vt and standard NMOS rise by 0.04 V and
+0.03 V, so the current changes are not due to mobility
+alone.[^raw-data-lv-mosfets] We read the opposite trends as consistent
+with a stress effect of the kind Bianchi et al. model (inference); the
+data do not measure stress, and other effects of the diffusion extent
+cannot be excluded.
 
 ## How it is typically performed
 
+:::{note}
 An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
+:::
 
 1. **Chamber.** Inductively coupled high-density plasma reactor with an
    RF-biased electrostatic chuck; wafer temperature of a few hundred
@@ -117,7 +149,9 @@ An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
    widely used to create a nearly hydrogen-free film with good
    conformality over complex surfaces" — Wikipedia's own text, which
    flags the sentence as unsourced, and a peer-reviewed review of the
-   same film.[^wiki-pecvd][^nguyen-1999] Argon (and the
+   same film.[^wiki-pecvd][^nguyen-1999]
+
+   Argon (and the
    oxygen ions) provide the simultaneous sputter component; the
    deposition-to-sputter ratio is the key tuning parameter for
    gap-fill[^thung-2016] (the Novellus release speaks of "tailoring the
@@ -161,15 +195,17 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ## Machines likely used at SkyWater
 
-* **Novellus (now Lam) HDP-CVD.** SkyWater names "Lam/Novellus High
-  Density Plasma (HDP)" with sputter etch,[^skw-01] and the technician
-  profile names "a Novellus high density plasma tool".[^skw-07]
-  Strength: strong (two SkyWater statements). The model (SPEED is the
-  Novellus HDP product line) is our inference, not a SkyWater
-  statement.
-* **Aviza furnace** for any densification anneal.[^skw-01] Strength:
-  strong for existence; the existence of a densification step is an
-  inference.
+* **Novellus (now Lam) HDP-CVD**
+  - *SkyWater says:* it names "Lam/Novellus High Density Plasma
+    (HDP)" with sputter etch,[^skw-01] and the technician profile
+    names "a Novellus high density plasma tool".[^skw-07]
+  - *Tool exists:* strong (two SkyWater statements).
+  - *Runs this step:* the model (SPEED is the Novellus HDP product
+    line) is our inference, not a SkyWater statement.
+* **Aviza furnace** for any densification anneal[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* the existence of a densification step is an
+    inference.
 
 ## Resources required
 
@@ -191,12 +227,12 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 * Previous: {ref}`LINOX <step-010>` (liner under the fill).
 * Next: {ref}`CMPNIT <step-012>` (polish of this film, stopping on
   the nitride from {ref}`ISONIT <step-003>`).
-* Trench geometry from {ref}`STIE <step-006>`; fill "waffles" from
-  {ref}`FOM <step-004>`.
-* The resulting field oxide appears as FOX in the PDK stack and is the
-  surface under field poly at {ref}`P1M <step-061>` and under local
-  interconnect at {ref}`LI1M <step-102>`.
-* Other gap-fill oxides: {ref}`PSG <step-089>`,
+* Depends on: trench geometry from {ref}`STIE <step-006>`; fill
+  "waffles" from {ref}`FOM <step-004>`.
+* Feeds: the resulting field oxide appears as FOX in the PDK stack and
+  is the surface under field poly at {ref}`P1M <step-061>` and under
+  local interconnect at {ref}`LI1M <step-102>`.
+* Same module: other gap-fill oxides — {ref}`PSG <step-089>`,
   {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
@@ -279,14 +315,15 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ## Open questions
 
-* The SKY130 fill thickness, deposition temperature, D/S ratio and
-  whether a densification anneal follows are not public.
-* Whether the fill was HDP from the start of S8 (2003) or whether an
-  earlier TEOS/ozone or PECVD fill was used and later replaced is
-  unknown; SkyWater's capability page describes the fab
-  today.[^skw-01]
-* The HDP tool model (SPEED versus another Novellus/Lam HDP product) is
-  inferred from the vendor name only.
+* **Fill parameters.** The SKY130 fill thickness, deposition
+  temperature, D/S ratio and whether a densification anneal follows
+  are not public.
+* **HDP from the start.** Whether the fill was HDP from the start of
+  S8 (2003) or whether an earlier TEOS/ozone or PECVD fill was used
+  and later replaced is unknown; SkyWater's capability page describes
+  the fab today.[^skw-01]
+* **HDP tool model.** The HDP tool model (SPEED versus another
+  Novellus/Lam HDP product) is inferred from the vendor name only.
 
 <!-- footnotes -->
 [^trikon-10k-1996]: Trikon Technologies, Inc., *Annual Report on Form
