@@ -6,7 +6,7 @@
 | **Step number** | 6 of 171[^steps-sheet] |
 | **Step code** | `STIE` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`STINITE <step-005>` |
 | **Next step** | {ref}`DNM <step-007>` |
 

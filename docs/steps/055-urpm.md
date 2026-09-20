@@ -6,7 +6,7 @@
 | **Step number** | 55 of 171[^steps-sheet] |
 | **Step code** | `URPM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`PRIS <step-054>` |
 | **Next step** | {ref}`UPRI <step-056>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 69 of 171[^steps-sheet] |
 | **Step code** | `HVASTI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`HVNTM <step-068>` |
 | **Next step** | {ref}`HVASTIS <step-070>` |
 

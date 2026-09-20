@@ -6,7 +6,7 @@
 | **Step number** | 98 of 171[^steps-sheet] |
 | **Step code** | `CSIL` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`TI/TIN1 <step-097>` |
 | **Next step** | {ref}`WDEP <step-099>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 79 of 171[^steps-sheet] |
 | **Step code** | `NPCME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`NPCM <step-078>` |
 | **Next step** | {ref}`SPOX <step-080>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 72 of 171[^steps-sheet] |
 | **Step code** | `LDASTI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`LDNTM <step-071>` |
 | **Next step** | {ref}`LDBHI <step-073>` |
 

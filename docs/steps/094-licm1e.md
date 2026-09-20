@@ -6,7 +6,7 @@
 | **Step number** | 94 of 171[^steps-sheet] |
 | **Step code** | `LICM1E` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`LICM1 <step-093>` |
 | **Next step** | {ref}`SACETCH <step-095>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 158 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX6` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
+| **Phase** | {term}`BEOL` — MiM capacitors, metal 3–5, via 3–4 |
 | **Previous step** | {ref}`CMPM4 <step-157>` |
 | **Next step** | {ref}`VIM4 <step-159>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 170 of 171[^steps-sheet] |
 | **Step code** | `ALLY` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
-| **Phase** | BEOL — passivation, pads, alloy, test |
+| **Phase** | {term}`BEOL` — passivation, pads, alloy, test |
 | **Previous step** | {ref}`PDME <step-169>` |
 | **Next step** | {ref}`HPETEST <step-171>` |
 

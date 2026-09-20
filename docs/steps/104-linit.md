@@ -6,7 +6,7 @@
 | **Step number** | 104 of 171[^steps-sheet] |
 | **Step code** | `LINIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`LI1ME <step-103>` |
 | **Next step** | {ref}`NILD2 <step-105>` |
 

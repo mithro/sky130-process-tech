@@ -6,7 +6,7 @@
 | **Step number** | 26 of 171[^steps-sheet] |
 | **Step code** | `PWBM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PCHIS <step-025>` |
 | **Next step** | {ref}`PWI <step-027>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 91 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`CMPP <step-090>` |
 | **Next step** | {ref}`RTAD2 <step-092>` |
 

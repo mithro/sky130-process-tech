@@ -6,7 +6,7 @@
 | **Step number** | 52 of 171[^steps-sheet] |
 | **Step code** | `RRPM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`P1IS <step-051>` |
 | **Next step** | {ref}`PRI <step-053>` |
 

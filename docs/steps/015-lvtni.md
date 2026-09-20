@@ -6,7 +6,7 @@
 | **Step number** | 15 of 171[^steps-sheet] |
 | **Step code** | `LVTNI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`LVTNM <step-014>` |
 | **Next step** | {ref}`LVTNIS <step-016>` |
 

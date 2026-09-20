@@ -6,7 +6,7 @@
 | **Step number** | 33 of 171[^steps-sheet] |
 | **Step code** | `PWDEIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PWDEI2 <step-032>` |
 | **Next step** | {ref}`RTAI <step-034>` |
 

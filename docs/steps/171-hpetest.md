@@ -6,7 +6,7 @@
 | **Step number** | 171 of 171[^steps-sheet] |
 | **Step code** | `HPETEST` |
 | **Category** | {ref}`Electrical test / metrology <category-test>` |
-| **Phase** | BEOL — passivation, pads, alloy, test |
+| **Phase** | {term}`BEOL` — passivation, pads, alloy, test |
 | **Previous step** | {ref}`ALLY <step-170>` |
 | **Next step** | — |
 

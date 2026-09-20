@@ -6,7 +6,7 @@
 | **Step number** | 137 of 171[^steps-sheet] |
 | **Step code** | `CAPM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
+| **Phase** | {term}`BEOL` — MiM capacitors, metal 3–5, via 3–4 |
 | **Previous step** | {ref}`CAPTIW1 <step-136>` |
 | **Next step** | {ref}`CAPME <step-138>` |
 

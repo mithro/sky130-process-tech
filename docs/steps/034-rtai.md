@@ -6,7 +6,7 @@
 | **Step number** | 34 of 171[^steps-sheet] |
 | **Step code** | `RTAI` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PWDEIS <step-033>` |
 | **Next step** | {ref}`TUNM <step-035>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 82 of 171[^steps-sheet] |
 | **Step code** | `PSDI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`PSDM <step-081>` |
 | **Next step** | {ref}`2PSDI <step-083>` |
 

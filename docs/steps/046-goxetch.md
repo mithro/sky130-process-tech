@@ -6,7 +6,7 @@
 | **Step number** | 46 of 171[^steps-sheet] |
 | **Step code** | `GOXETCH` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`NCHI <step-045>` |
 | **Next step** | {ref}`LVGOX <step-047>` |
 

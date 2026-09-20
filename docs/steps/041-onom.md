@@ -6,7 +6,7 @@
 | **Step number** | 41 of 171[^steps-sheet] |
 | **Step code** | `ONOM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`ONO <step-040>` |
 | **Next step** | {ref}`ONOME <step-042>` |
 

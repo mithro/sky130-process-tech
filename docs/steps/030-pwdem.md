@@ -6,7 +6,7 @@
 | **Step number** | 30 of 171[^steps-sheet] |
 | **Step code** | `PWDEM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PWIS <step-029>` |
 | **Next step** | {ref}`PWDEI1 <step-031>` |
 

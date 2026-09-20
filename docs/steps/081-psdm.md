@@ -6,7 +6,7 @@
 | **Step number** | 81 of 171[^steps-sheet] |
 | **Step code** | `PSDM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`SPOX <step-080>` |
 | **Next step** | {ref}`PSDI <step-082>` |
 

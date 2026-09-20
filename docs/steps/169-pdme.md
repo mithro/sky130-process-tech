@@ -6,7 +6,7 @@
 | **Step number** | 169 of 171[^steps-sheet] |
 | **Step code** | `PDME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | BEOL — passivation, pads, alloy, test |
+| **Phase** | {term}`BEOL` — passivation, pads, alloy, test |
 | **Previous step** | {ref}`PDM <step-168>` |
 | **Next step** | {ref}`ALLY <step-170>` |
 

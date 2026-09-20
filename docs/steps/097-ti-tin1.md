@@ -6,7 +6,7 @@
 | **Step number** | 97 of 171[^steps-sheet] |
 | **Step code** | `TI/TIN1` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`ALLY1 <step-096>` |
 | **Next step** | {ref}`CSIL <step-098>` |
 

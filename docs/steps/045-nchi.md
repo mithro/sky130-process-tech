@@ -6,7 +6,7 @@
 | **Step number** | 45 of 171[^steps-sheet] |
 | **Step code** | `NCHI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`LVOM <step-044>` |
 | **Next step** | {ref}`GOXETCH <step-046>` |
 

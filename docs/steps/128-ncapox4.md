@@ -6,7 +6,7 @@
 | **Step number** | 128 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX4` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — via 1, metal 2, via 2 |
+| **Phase** | {term}`BEOL` — via 1, metal 2, via 2 |
 | **Previous step** | {ref}`CMPM2 <step-127>` |
 | **Next step** | {ref}`VIM2 <step-129>` |
 

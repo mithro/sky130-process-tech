@@ -6,7 +6,7 @@
 | **Step number** | 80 of 171[^steps-sheet] |
 | **Step code** | `SPOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`NPCME <step-079>` |
 | **Next step** | {ref}`PSDM <step-081>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 70 of 171[^steps-sheet] |
 | **Step code** | `HVASTIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`HVASTI <step-069>` |
 | **Next step** | {ref}`LDNTM <step-071>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 78 of 171[^steps-sheet] |
 | **Step code** | `NPCM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`SPE <step-077>` |
 | **Next step** | {ref}`NPCME <step-079>` |
 

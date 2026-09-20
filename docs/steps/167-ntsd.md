@@ -6,7 +6,7 @@
 | **Step number** | 167 of 171[^steps-sheet] |
 | **Step code** | `NTSD` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — passivation, pads, alloy, test |
+| **Phase** | {term}`BEOL` — passivation, pads, alloy, test |
 | **Previous step** | {ref}`NSME <step-166>` |
 | **Next step** | {ref}`PDM <step-168>` |
 

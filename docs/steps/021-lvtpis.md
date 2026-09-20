@@ -6,7 +6,7 @@
 | **Step number** | 21 of 171[^steps-sheet] |
 | **Step code** | `LVTPIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`LVTPI <step-020>` |
 | **Next step** | {ref}`HVTPM <step-022>` |
 

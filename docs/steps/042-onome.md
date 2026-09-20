@@ -6,7 +6,7 @@
 | **Step number** | 42 of 171[^steps-sheet] |
 | **Step code** | `ONOME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`ONOM <step-041>` |
 | **Next step** | {ref}`GOX100 <step-043>` |
 

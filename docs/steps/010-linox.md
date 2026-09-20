@@ -6,7 +6,7 @@
 | **Step number** | 10 of 171[^steps-sheet] |
 | **Step code** | `LINOX` |
 | **Category** | {ref}`Thermal oxidation <category-oxidation>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`DNIS <step-009>` |
 | **Next step** | {ref}`FILOX <step-011>` |
 

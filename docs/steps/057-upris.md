@@ -6,7 +6,7 @@
 | **Step number** | 57 of 171[^steps-sheet] |
 | **Step code** | `UPRIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`UPRI <step-056>` |
 | **Next step** | {ref}`GATENIT <step-058>` |
 

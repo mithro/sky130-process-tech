@@ -6,7 +6,7 @@
 | **Step number** | 67 of 171[^steps-sheet] |
 | **Step code** | `ASTIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`BHI <step-066>` |
 | **Next step** | {ref}`HVNTM <step-068>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 37 of 171[^steps-sheet] |
 | **Step code** | `PTSI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`TUNARCE <step-036>` |
 | **Next step** | {ref}`DEPI <step-038>` |
 

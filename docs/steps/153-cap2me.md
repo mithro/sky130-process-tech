@@ -6,7 +6,7 @@
 | **Step number** | 153 of 171[^steps-sheet] |
 | **Step code** | `CAP2ME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
+| **Phase** | {term}`BEOL` — MiM capacitors, metal 3–5, via 3–4 |
 | **Previous step** | {ref}`CAP2M <step-152>` |
 | **Next step** | {ref}`MM4 <step-154>` |
 

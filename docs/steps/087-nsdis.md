@@ -6,7 +6,7 @@
 | **Step number** | 87 of 171[^steps-sheet] |
 | **Step code** | `NSDIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`NSDI <step-086>` |
 | **Next step** | {ref}`RTAD <step-088>` |
 

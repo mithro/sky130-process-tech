@@ -6,7 +6,7 @@
 | **Step number** | 75 of 171[^steps-sheet] |
 | **Step code** | `TIPRTAD` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`LDASTIS <step-074>` |
 | **Next step** | {ref}`SPNIT <step-076>` |
 

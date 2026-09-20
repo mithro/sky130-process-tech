@@ -6,7 +6,7 @@
 | **Step number** | 14 of 171[^steps-sheet] |
 | **Step code** | `LVTNM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`NS19 <step-013>` |
 | **Next step** | {ref}`LVTNI <step-015>` |
 

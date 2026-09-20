@@ -6,7 +6,7 @@
 | **Step number** | 29 of 171[^steps-sheet] |
 | **Step code** | `PWIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PWI2 <step-028>` |
 | **Next step** | {ref}`PWDEM <step-030>` |
 

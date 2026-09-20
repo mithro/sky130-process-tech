@@ -6,7 +6,7 @@
 | **Step number** | 58 of 171[^steps-sheet] |
 | **Step code** | `GATENIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`UPRIS <step-057>` |
 | **Next step** | {ref}`POC <step-059>` |
 

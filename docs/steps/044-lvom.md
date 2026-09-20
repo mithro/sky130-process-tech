@@ -6,7 +6,7 @@
 | **Step number** | 44 of 171[^steps-sheet] |
 | **Step code** | `LVOM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`GOX100 <step-043>` |
 | **Next step** | {ref}`NCHI <step-045>` |
 

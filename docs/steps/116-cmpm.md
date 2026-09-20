@@ -6,7 +6,7 @@
 | **Step number** | 116 of 171[^steps-sheet] |
 | **Step code** | `CMPM` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
-| **Phase** | BEOL — contact and metal 1 |
+| **Phase** | {term}`BEOL` — contact and metal 1 |
 | **Previous step** | {ref}`NILD3 <step-115>` |
 | **Next step** | {ref}`NCAPOX3 <step-117>` |
 

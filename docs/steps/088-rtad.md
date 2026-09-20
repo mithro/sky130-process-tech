@@ -6,7 +6,7 @@
 | **Step number** | 88 of 171[^steps-sheet] |
 | **Step code** | `RTAD` |
 | **Category** | {ref}`Anneal / thermal processing <category-anneal>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`NSDIS <step-087>` |
 | **Next step** | {ref}`PSG <step-089>` |
 

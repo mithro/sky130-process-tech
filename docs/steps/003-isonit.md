@@ -6,7 +6,7 @@
 | **Step number** | 3 of 171[^steps-sheet] |
 | **Step code** | `ISONIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`BOX <step-002>` |
 | **Next step** | {ref}`FOM <step-004>` |
 

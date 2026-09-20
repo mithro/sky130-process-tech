@@ -6,7 +6,7 @@
 | **Step number** | 1 of 171[^steps-sheet] |
 | **Step code** | `SMAT` |
 | **Category** | {ref}`Substrate / starting material <category-substrate>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | — |
 | **Next step** | {ref}`BOX <step-002>` |
 

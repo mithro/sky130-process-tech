@@ -147,7 +147,26 @@ CATEGORY_TITLES = {
     "test": "Electrical test / metrology",
 }
 
-# Phase boundaries (inclusive step numbers).
+# Short category labels for the step index (report-A F17): the link
+# target is unchanged (CATEGORY_TITLES / category-<cat>), only the link
+# text shown in the index table is shortened.
+CATEGORY_SHORT = {
+    "substrate": "Substrate",
+    "oxidation": "Oxidation",
+    "deposition": "Deposition",
+    "lithography": "Litho",
+    "etch": "Etch",
+    "implant": "Implant",
+    "strip": "Strip/clean",
+    "anneal": "Anneal",
+    "cmp": "CMP",
+    "test": "Test",
+}
+
+# Phase boundaries (inclusive step numbers): used only for the
+# quick-facts "Phase" cell on step pages, whose 10-way wording is
+# already written on all 171 pages and is presentation content that is
+# not re-derived here.
 PHASES = [
     (1, 13, "FEOL — isolation"),
     (14, 34, "FEOL — wells and channel implants"),
@@ -160,6 +179,110 @@ PHASES = [
     (135, 163, "BEOL — MiM capacitors, metal 3–5, via 3–4"),
     (164, 171, "BEOL — passivation, pads, alloy, test"),
 ]
+
+# The 13 modules of the overview's module table (docs/overview/index.md,
+# "The flow by module"), used only to group the step index (report-A
+# F17, report-C C8). This is a different, coarser grouping than PHASES
+# above: PHASES is the 10-way "Phase" wording already written into every
+# step page's quick-facts table (presentation content, left alone);
+# MODULES reuses the overview's own 13 module names and step ranges so
+# the index does not invent a fourth vocabulary. See the progress file
+# for the reconciliation note.
+MODULES = [
+    (1, 13, "Starting material, isolation and deep N-well"),
+    (14, 34, "Wells and threshold implants"),
+    (35, 42, "SONOS tunnel window and ONO stack"),
+    (43, 47, "Gate oxides"),
+    (48, 63, "Poly gate and poly resistors"),
+    (64, 75, "Tips and halos"),
+    (76, 88, "Spacers and source/drain"),
+    (89, 106, "Pre-metal dielectric, contact silicide and local interconnect"),
+    (107, 117, "Metal contact and metal 1"),
+    (118, 134, "Via 1, metal 2 and via 2"),
+    (135, 148, "First MiM capacitor, metal 3 and via 3"),
+    (149, 163, "Metal 4, second MiM capacitor, via 4 and metal 5"),
+    (164, 171, "Passivation, pads, alloy and test"),
+]
+
+MACHINES_INDEX = ROOT / "docs" / "machines" / "index.md"
+MASKS_INDEX = ROOT / "docs" / "masks" / "index.md"
+
+MACHINES_TABLE_HEADER = "| Machine class | What it does in SKY130 | Tools SkyWater lists publicly | Steps |"
+MASKS_TABLE_HEADER = ("| Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | "
+                      "Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |")
+
+STEP_REF_RE = re.compile(r"\{ref\}`[^`]*<step-(\d{3})>`")
+MASK_STEP_CELL_RE = re.compile(r"^\{ref\}`([A-Za-z0-9/]+) <step-(\d{3})>`")
+MACHINE_REF_RE = re.compile(r"\{ref\}`[^`]*<machine-[^>]+>`")
+ROLE_MARKER_RE = re.compile(r"\*[^*]+:\*")
+
+
+def _table_rows(text: str, header: str) -> list[str]:
+    """Data rows (raw ``| ... |`` lines) of the one Markdown table in
+    ``text`` whose header line is exactly ``header``: everything from
+    two lines after the header (skipping the ``|---|`` rule) up to the
+    first line that is not a table row."""
+    lines = text.splitlines()
+    try:
+        i = lines.index(header)
+    except ValueError:
+        raise SystemExit(f"gen_steps: table header not found: {header!r}")
+    rows = []
+    j = i + 2
+    while j < len(lines) and lines[j].startswith("|"):
+        rows.append(lines[j])
+        j += 1
+    return rows
+
+
+def _split_row(row: str) -> list[str]:
+    return [c.strip() for c in row.strip().strip("|").split("|")]
+
+
+def machine_class_map() -> dict[int, str]:
+    """Step number -> the {ref} link (text and target) of the machine
+    class that "Machine classes and the steps that use them" in the
+    machines index assigns as the *main* tool for that step (report-B
+    B2, "reverse lookup"). Steps named only after a role marker
+    (``*alternative:*``, ``*also …:*``, ``*overlay:*``, ``*CD-SEM:*``)
+    are not "main" and are not recorded from that row; the first row
+    (in the index's own order) to name a step as main wins. No new
+    facts: everything comes from the machines index's own cells."""
+    text = MACHINES_INDEX.read_text(encoding="utf-8")
+    result: dict[int, str] = {}
+    for row in _table_rows(text, MACHINES_TABLE_HEADER):
+        cells = _split_row(row)
+        class_cell, steps_cell = cells[0], cells[3]
+        m = MACHINE_REF_RE.search(class_cell)
+        if not m:
+            continue
+        machine_ref = m.group(0)
+        marker = ROLE_MARKER_RE.search(steps_cell)
+        main_text = steps_cell[:marker.start()] if marker else steps_cell
+        for num_s in STEP_REF_RE.findall(main_text):
+            result.setdefault(int(num_s), machine_ref)
+    return result
+
+
+def mask_map() -> dict[int, str]:
+    """Step number -> the {ref} link to the mask page whose resist
+    pattern the step uses, inverting the masks index's "Mask steps in
+    this reference" table (its own "Patterns" column plus the mask step
+    itself; report-B B2, "reverse lookup"). No new facts."""
+    text = MASKS_INDEX.read_text(encoding="utf-8")
+    result: dict[int, str] = {}
+    for row in _table_rows(text, MASKS_TABLE_HEADER):
+        cells = _split_row(row)
+        step_cell, patterns_cell = cells[0], cells[4]
+        m = MASK_STEP_CELL_RE.match(step_cell)
+        if not m:
+            raise SystemExit(f"gen_steps: unexpected mask-index step cell: {step_cell!r}")
+        code, num_s = m.group(1), m.group(2)
+        mask_ref = "{{ref}}`{code} <mask-{slug}>`".format(code=code, slug=slug(code))
+        result[int(num_s)] = mask_ref
+        for other_s in STEP_REF_RE.findall(patterns_cell):
+            result.setdefault(int(other_s), mask_ref)
+    return result
 
 
 def category_for(code: str) -> str:
@@ -176,6 +299,23 @@ def phase_for(number: int) -> str:
         if lo <= number <= hi:
             return name
     raise SystemExit(f"no phase for step {number}")
+
+
+def phase_with_term(phase: str) -> str:
+    """``phase`` with a leading FEOL/MOL/BEOL wrapped as a {term} link
+    (report-C C9 rule 1: the glossary defines all three). No checker
+    reads the Phase cell, so this only affects the rendered link."""
+    for term in ("FEOL", "MOL", "BEOL"):
+        if phase.startswith(term):
+            return f"{{term}}`{term}`" + phase[len(term):]
+    return phase
+
+
+def module_for(number: int) -> str:
+    for lo, hi, name in MODULES:
+        if lo <= number <= hi:
+            return name
+    raise SystemExit(f"no module for step {number}")
 
 
 def slug(code: str) -> str:
@@ -283,7 +423,7 @@ def write_stub(step: dict, prev: dict | None, nxt: dict | None) -> bool:
             name=step["name"],
             cat=step["category"],
             cat_title=CATEGORY_TITLES[step["category"]],
-            phase=step["phase"],
+            phase=phase_with_term(step["phase"]),
             prev=ref(prev),
             next=ref(nxt),
         )
@@ -315,24 +455,53 @@ INDEX_FOOTNOTES = """\
 
 
 def index_text(steps: list[dict]) -> str:
+    by_number = {s["number"]: s for s in steps}
+    machines = machine_class_map()
+    masks = mask_map()
+
     lines = INDEX_INTRO.splitlines()
-    lines += [
-        "",
-        "| # | Code | Step | Category |",
-        "|---|------|------|----------|",
-    ]
+    lines.append("")
+    for lo, hi, module_name in MODULES:
+        lines.append(f"## {module_name}")
+        lines.append("")
+        lines.append("| Step | Code | Name | Category |")
+        lines.append("|---:|---|---|---|")
+        for num in range(lo, hi + 1):
+            s = by_number[num]
+            lines.append(
+                "| {num} | {{ref}}`{code} <step-{num:03d}>` | {name} | {{ref}}`{cat_short} <category-{cat}>` |".format(
+                    num=num,
+                    code=s["code"],
+                    name=s["name"],
+                    cat=s["category"],
+                    cat_short=CATEGORY_SHORT[s["category"]],
+                )
+            )
+        # Reverse lookup (report-B B2): a step's machine class and mask,
+        # inverted from the machines and masks indexes. Kept as a second
+        # table per module rather than two more columns on the table
+        # above, which does not fit usefully at 400 px with six columns.
+        lines.append("")
+        lines.append("| Step | Code | Machine class | Mask |")
+        lines.append("|---:|---|---|---|")
+        for num in range(lo, hi + 1):
+            s = by_number[num]
+            lines.append(
+                "| {num} | {{ref}}`{code} <step-{num:03d}>` | {machine} | {mask} |".format(
+                    num=num,
+                    code=s["code"],
+                    machine=machines.get(num, "—"),
+                    mask=masks.get(num, "—"),
+                )
+            )
+        lines.append("")
+    lines += ["```{toctree}", ":maxdepth: 1", ":hidden:", ""]
     for s in steps:
         lines.append(
-            "| {num} | {{ref}}`{code} <step-{num:03d}>` | {name} | {{ref}}`{cat_title} <category-{cat}>` |".format(
-                num=s["number"],
-                code=s["code"],
-                name=s["name"],
-                cat=s["category"],
-                cat_title=CATEGORY_TITLES[s["category"]],
+            "{num:03d} {code} — {name} <{file}>".format(
+                num=s["number"], code=s["code"], name=s["name"], file=s["file"][:-3]
             )
         )
-    lines += ["", "```{toctree}", ":maxdepth: 1", ":hidden:", ""]
-    lines += [s["file"][:-3] for s in steps]
     lines += ["```", ""]
     lines += INDEX_FOOTNOTES.splitlines()
     return "\n".join(lines) + "\n"

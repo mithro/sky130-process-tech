@@ -6,7 +6,7 @@
 | **Step number** | 39 of 171[^steps-sheet] |
 | **Step code** | `TUNME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`DEPI <step-038>` |
 | **Next step** | {ref}`ONO <step-040>` |
 

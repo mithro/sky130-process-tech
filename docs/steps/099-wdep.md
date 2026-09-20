@@ -6,7 +6,7 @@
 | **Step number** | 99 of 171[^steps-sheet] |
 | **Step code** | `WDEP` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`CSIL <step-098>` |
 | **Next step** | {ref}`WCMPLI <step-100>` |
 

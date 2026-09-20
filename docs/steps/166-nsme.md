@@ -6,7 +6,7 @@
 | **Step number** | 166 of 171[^steps-sheet] |
 | **Step code** | `NSME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | BEOL — passivation, pads, alloy, test |
+| **Phase** | {term}`BEOL` — passivation, pads, alloy, test |
 | **Previous step** | {ref}`NSM <step-165>` |
 | **Next step** | {ref}`NTSD <step-167>` |
 

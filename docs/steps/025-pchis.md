@@ -6,7 +6,7 @@
 | **Step number** | 25 of 171[^steps-sheet] |
 | **Step code** | `PCHIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PNCHI <step-024>` |
 | **Next step** | {ref}`PWBM <step-026>` |
 

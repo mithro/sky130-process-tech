@@ -6,7 +6,7 @@
 | **Step number** | 68 of 171[^steps-sheet] |
 | **Step code** | `HVNTM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`ASTIS <step-067>` |
 | **Next step** | {ref}`HVASTI <step-069>` |
 

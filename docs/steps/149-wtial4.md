@@ -6,7 +6,7 @@
 | **Step number** | 149 of 171[^steps-sheet] |
 | **Step code** | `WTIAL4` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
+| **Phase** | {term}`BEOL` — MiM capacitors, metal 3–5, via 3–4 |
 | **Previous step** | {ref}`WCMP5 <step-148>` |
 | **Next step** | {ref}`CAPILD2 <step-150>` |
 

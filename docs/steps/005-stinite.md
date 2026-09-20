@@ -6,7 +6,7 @@
 | **Step number** | 5 of 171[^steps-sheet] |
 | **Step code** | `STINITE` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`FOM <step-004>` |
 | **Next step** | {ref}`STIE <step-006>` |
 

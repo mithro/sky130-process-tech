@@ -6,7 +6,7 @@
 | **Step number** | 76 of 171[^steps-sheet] |
 | **Step code** | `SPNIT` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`TIPRTAD <step-075>` |
 | **Next step** | {ref}`SPE <step-077>` |
 

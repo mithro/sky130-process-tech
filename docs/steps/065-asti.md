@@ -6,7 +6,7 @@
 | **Step number** | 65 of 171[^steps-sheet] |
 | **Step code** | `ASTI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`NTM <step-064>` |
 | **Next step** | {ref}`BHI <step-066>` |
 

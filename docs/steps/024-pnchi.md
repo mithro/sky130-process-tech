@@ -6,7 +6,7 @@
 | **Step number** | 24 of 171[^steps-sheet] |
 | **Step code** | `PNCHI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PCHI <step-023>` |
 | **Next step** | {ref}`PCHIS <step-025>` |
 

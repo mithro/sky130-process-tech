@@ -6,7 +6,7 @@
 | **Step number** | 95 of 171[^steps-sheet] |
 | **Step code** | `SACETCH` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`LICM1E <step-094>` |
 | **Next step** | {ref}`ALLY1 <step-096>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 136 of 171[^steps-sheet] |
 | **Step code** | `CAPTIW1` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — MiM capacitors, metal 3–5, via 3–4 |
+| **Phase** | {term}`BEOL` — MiM capacitors, metal 3–5, via 3–4 |
 | **Previous step** | {ref}`CAPILD <step-135>` |
 | **Next step** | {ref}`CAPM <step-137>` |
 

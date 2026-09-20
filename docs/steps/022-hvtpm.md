@@ -6,7 +6,7 @@
 | **Step number** | 22 of 171[^steps-sheet] |
 | **Step code** | `HVTPM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`LVTPIS <step-021>` |
 | **Next step** | {ref}`PCHI <step-023>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 20 of 171[^steps-sheet] |
 | **Step code** | `LVTPI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`NWI2 <step-019>` |
 | **Next step** | {ref}`LVTPIS <step-021>` |
 

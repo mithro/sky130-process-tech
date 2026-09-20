@@ -6,7 +6,7 @@
 | **Step number** | 56 of 171[^steps-sheet] |
 | **Step code** | `UPRI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`URPM <step-055>` |
 | **Next step** | {ref}`UPRIS <step-057>` |
 

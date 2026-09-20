@@ -6,7 +6,7 @@
 | **Step number** | 47 of 171[^steps-sheet] |
 | **Step code** | `LVGOX` |
 | **Category** | {ref}`Thermal oxidation <category-oxidation>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`GOXETCH <step-046>` |
 | **Next step** | {ref}`SAGD <step-048>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 90 of 171[^steps-sheet] |
 | **Step code** | `CMPP` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`PSG <step-089>` |
 | **Next step** | {ref}`NCAPOX <step-091>` |
 

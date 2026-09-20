@@ -6,7 +6,7 @@
 | **Step number** | 117 of 171[^steps-sheet] |
 | **Step code** | `NCAPOX3` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — contact and metal 1 |
+| **Phase** | {term}`BEOL` — contact and metal 1 |
 | **Previous step** | {ref}`CMPM <step-116>` |
 | **Next step** | {ref}`VIM <step-118>` |
 

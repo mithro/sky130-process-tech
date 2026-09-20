@@ -6,7 +6,7 @@
 | **Step number** | 101 of 171[^steps-sheet] |
 | **Step code** | `LITIN` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`WCMPLI <step-100>` |
 | **Next step** | {ref}`LI1M <step-102>` |
 

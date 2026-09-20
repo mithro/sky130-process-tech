@@ -6,7 +6,7 @@
 | **Step number** | 108 of 171[^steps-sheet] |
 | **Step code** | `CTME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | BEOL — contact and metal 1 |
+| **Phase** | {term}`BEOL` — contact and metal 1 |
 | **Previous step** | {ref}`CTM1 <step-107>` |
 | **Next step** | {ref}`TIN2 <step-109>` |
 

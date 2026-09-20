@@ -6,7 +6,7 @@
 | **Step number** | 12 of 171[^steps-sheet] |
 | **Step code** | `CMPNIT` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`FILOX <step-011>` |
 | **Next step** | {ref}`NS19 <step-013>` |
 

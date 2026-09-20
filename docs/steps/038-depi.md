@@ -6,7 +6,7 @@
 | **Step number** | 38 of 171[^steps-sheet] |
 | **Step code** | `DEPI` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`PTSI <step-037>` |
 | **Next step** | {ref}`TUNME <step-039>` |
 

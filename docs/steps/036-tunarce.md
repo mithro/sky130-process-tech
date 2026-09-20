@@ -6,7 +6,7 @@
 | **Step number** | 36 of 171[^steps-sheet] |
 | **Step code** | `TUNARCE` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | FEOL — SONOS and gate dielectrics |
+| **Phase** | {term}`FEOL` — SONOS and gate dielectrics |
 | **Previous step** | {ref}`TUNM <step-035>` |
 | **Next step** | {ref}`PTSI <step-037>` |
 

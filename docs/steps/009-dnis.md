@@ -6,7 +6,7 @@
 | **Step number** | 9 of 171[^steps-sheet] |
 | **Step code** | `DNIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`DNI <step-008>` |
 | **Next step** | {ref}`LINOX <step-010>` |
 

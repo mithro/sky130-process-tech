@@ -6,7 +6,7 @@
 | **Step number** | 71 of 171[^steps-sheet] |
 | **Step code** | `LDNTM` |
 | **Category** | {ref}`Photolithography (mask step) <category-lithography>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`HVASTIS <step-070>` |
 | **Next step** | {ref}`LDASTI <step-072>` |
 

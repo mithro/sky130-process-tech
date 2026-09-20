@@ -6,7 +6,7 @@
 | **Step number** | 164 of 171[^steps-sheet] |
 | **Step code** | `NFUSOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — passivation, pads, alloy, test |
+| **Phase** | {term}`BEOL` — passivation, pads, alloy, test |
 | **Previous step** | {ref}`MM5E <step-163>` |
 | **Next step** | {ref}`NSM <step-165>` |
 

@@ -6,7 +6,7 @@
 | **Step number** | 48 of 171[^steps-sheet] |
 | **Step code** | `SAGD` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`LVGOX <step-047>` |
 | **Next step** | {ref}`RPM <step-049>` |
 

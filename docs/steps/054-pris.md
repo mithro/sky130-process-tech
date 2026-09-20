@@ -6,7 +6,7 @@
 | **Step number** | 54 of 171[^steps-sheet] |
 | **Step code** | `PRIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — gate and poly resistors |
+| **Phase** | {term}`FEOL` — gate and poly resistors |
 | **Previous step** | {ref}`PRI <step-053>` |
 | **Next step** | {ref}`URPM <step-055>` |
 

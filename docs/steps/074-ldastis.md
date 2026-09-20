@@ -6,7 +6,7 @@
 | **Step number** | 74 of 171[^steps-sheet] |
 | **Step code** | `LDASTIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — extensions, spacers, source/drain |
+| **Phase** | {term}`FEOL` — extensions, spacers, source/drain |
 | **Previous step** | {ref}`LDBHI <step-073>` |
 | **Next step** | {ref}`TIPRTAD <step-075>` |
 

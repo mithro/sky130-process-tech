@@ -6,7 +6,7 @@
 | **Step number** | 11 of 171[^steps-sheet] |
 | **Step code** | `FILOX` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | FEOL — isolation |
+| **Phase** | {term}`FEOL` — isolation |
 | **Previous step** | {ref}`LINOX <step-010>` |
 | **Next step** | {ref}`CMPNIT <step-012>` |
 

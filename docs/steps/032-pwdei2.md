@@ -6,7 +6,7 @@
 | **Step number** | 32 of 171[^steps-sheet] |
 | **Step code** | `PWDEI2` |
 | **Category** | {ref}`Ion implantation <category-implant>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`PWDEI1 <step-031>` |
 | **Next step** | {ref}`PWDEIS <step-033>` |
 

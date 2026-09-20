@@ -6,7 +6,7 @@
 | **Step number** | 16 of 171[^steps-sheet] |
 | **Step code** | `LVTNIS` |
 | **Category** | {ref}`Resist strip / clean <category-strip>` |
-| **Phase** | FEOL — wells and channel implants |
+| **Phase** | {term}`FEOL` — wells and channel implants |
 | **Previous step** | {ref}`LVTNI <step-015>` |
 | **Next step** | {ref}`NWM <step-017>` |
 

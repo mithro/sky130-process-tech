@@ -6,7 +6,7 @@
 | **Step number** | 100 of 171[^steps-sheet] |
 | **Step code** | `WCMPLI` |
 | **Category** | {ref}`Chemical-mechanical planarisation <category-cmp>` |
-| **Phase** | MOL — silicide and local interconnect |
+| **Phase** | {term}`MOL` — silicide and local interconnect |
 | **Previous step** | {ref}`WDEP <step-099>` |
 | **Next step** | {ref}`LITIN <step-101>` |
 

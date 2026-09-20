@@ -6,7 +6,7 @@
 | **Step number** | 119 of 171[^steps-sheet] |
 | **Step code** | `VIME` |
 | **Category** | {ref}`Etch <category-etch>` |
-| **Phase** | BEOL — via 1, metal 2, via 2 |
+| **Phase** | {term}`BEOL` — via 1, metal 2, via 2 |
 | **Previous step** | {ref}`VIM <step-118>` |
 | **Next step** | {ref}`TIN3 <step-120>` |
 

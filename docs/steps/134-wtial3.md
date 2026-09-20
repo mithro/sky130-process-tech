@@ -6,7 +6,7 @@
 | **Step number** | 134 of 171[^steps-sheet] |
 | **Step code** | `WTIAL3` |
 | **Category** | {ref}`Thin-film deposition <category-deposition>` |
-| **Phase** | BEOL — via 1, metal 2, via 2 |
+| **Phase** | {term}`BEOL` — via 1, metal 2, via 2 |
 | **Previous step** | {ref}`WCMP4 <step-133>` |
 | **Next step** | {ref}`CAPILD <step-135>` |
 
