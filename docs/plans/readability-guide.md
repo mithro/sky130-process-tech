@@ -1872,11 +1872,11 @@ A sentence inside the collapsed note.[^b]
 :::
 ```
 
-```
+````
 ```{dropdown} Title
 Text inside.
 ```
-```
+````
 
 A dropdown also builds inside a list item, and around a `Steps:` line plus its link run — verified.
 
@@ -1951,3 +1951,165 @@ means a broken target fails the build.
 **What not to use.** `{numref}`; `list-table` inside any checked table (§5); reference-style links
 (`[text]: url`, refused by `check_refs.py`); MyST `linkify` (not enabled — a bare URL does not become a
 link, which is why generated pages wrap URLs in `<…>`).
+
+## 7. Per-page procedure (executor)
+
+One page at a time. Do not start a second page before the first passes.
+
+**0. Set up once per branch.**
+
+```
+cd <repo>
+git worktree add .worktrees/<name> -b topic/<name> main
+mkdir -p tmp/readability/a-tools tmp/preserve tmp/shots
+cp docs/plans/readability/prototypes/measure/measure*.py tmp/readability/a-tools/
+```
+
+Everything below runs from the worktree. `tmp/` is git-ignored.
+
+**1. Baseline.** Build once and photograph the page **before** you touch it, at both widths, and open
+the tiles:
+
+```
+uv run sphinx-build -W -q -b html docs tmp/_build/html
+uv run -q --with pillow python tools/shoot.py "file://$PWD/tmp/_build/html/steps/006-stie.html" \
+    tmp/shots/006-before
+uv run -q --with pillow python tools/shoot.py "file://$PWD/tmp/_build/html/steps/006-stie.html" \
+    tmp/shots/006-before-phone --width 400
+```
+
+Read the PNGs with the Read tool. You are fixing what you can see there.
+
+**2. Save the "before" copy** for the preservation check:
+
+```
+git show HEAD:docs/steps/006-stie.md > tmp/preserve/before.md
+```
+
+**3. Apply the rules in the order your page type gives** (§4). One rule at a time over the whole page,
+not one paragraph at a time over all rules. Commit after each rule, or at least every 15 minutes.
+
+**4. Preservation check.** `tools/check_preserved.py` is being written on another branch (W0b). When it
+exists, run it as `uv run python tools/check_preserved.py docs/steps/006-stie.md` against the committed
+version, and declare additions (step numbers and step names added by a new table) the way its help
+says. Until then, run the same comparison by hand:
+
+```
+python3 - tmp/preserve/before.md docs/steps/006-stie.md <<'PY'
+import re, sys, collections
+MARK = re.compile(r"\[\^[A-Za-z0-9_-]+\]")
+NUM  = re.compile(r"(?<![\w.])\d[\d   ,.]*\d(?![\w])|(?<![\w.])\d(?![\w.])")
+QUOT = re.compile(r'"[^"\n]{1,400}"')
+def bag(p):
+    t = open(p).read()
+    markers = collections.Counter(MARK.findall(t))
+    t = MARK.sub("", t)
+    return (markers,
+            collections.Counter(n.strip() for n in NUM.findall(t)),
+            collections.Counter(QUOT.findall(re.sub(r"\s+", " ", t))))
+a, b = bag(sys.argv[1]), bag(sys.argv[2])
+for name, x, y in zip(("markers", "numbers", "quotations"), a, b):
+    if x != y:
+        print(f"{name}: lost {dict(x - y)}")
+        print(f"{name}: gained {dict(y - x)}")
+print("identical" if a == b else "DIFFERENT")
+PY
+```
+
+The only acceptable gains are step numbers and step names that a new table introduces, and an em dash
+`—` where a cell has no value. **Any loss is a bug in your edit.** (Tested: an unchanged page prints
+`identical`; a page with one marker deleted and one digit changed prints exactly what was lost.)
+
+**5. Checkers**, from §4 for your page type, then always these:
+
+```
+uv run python tools/check_steps.py ; uv run python tools/check_refs.py
+uv run python tools/check_machines.py ; uv run python tools/check_materials.py
+uv run python tools/check_masks.py ; uv run python tools/check_inforce.py
+uv run python tools/gen_index_links.py --check
+```
+
+**6. Build with `-W`.** `uv run sphinx-build -W -q -b html docs tmp/_build/html`. A warning is a
+failure. The usual causes are a broken `{ref}` (nitpicky), an unreferenced footnote definition after a
+deletion, and `{numref}`.
+
+**7. Look at the result**, desktop and phone, with `tools/shoot.py`, and open every tile. Compare with
+the "before" tiles. Fix what looks wrong: a table that scrolls sideways, a cell that fills the screen, a
+caption that wraps badly, a bullet list that lost its indentation.
+
+**8. Self-review checklist** — all of these before you commit the page:
+
+* [ ] The preservation check prints `identical`, or the only gains are new step numbers, step names and
+      `—`.
+* [ ] No sentence was deleted except a duplicate handled under R-REPEAT, and every footnote label in it
+      still occurs on the page.
+* [ ] Every hedge that was there is still there, in the same strength.
+* [ ] Every `{dropdown}` has the same title, the same body, and nothing moved across its fence.
+* [ ] No empty table cell was filled; empties are `—`.
+* [ ] No new external link, unless its URL appears verbatim in a footnote definition on this page.
+* [ ] The number of `* ` bullets under `### Deep dive` is unchanged.
+* [ ] The mandatory headings of §2.9 are untouched, and any new H3 is allowed on this page type.
+* [ ] The generated index-links block is untouched and `## References` occurs once.
+* [ ] Paragraphs ≤ 100 words, list items ≤ 60, sentences ≤ 45, cells ≤ 25 (quick facts ≤ 20).
+* [ ] Every new table has a caption and `:widths:` if it has a prose column, and ≤ 4 columns if it has.
+* [ ] Every checker and the `-W` build pass.
+* [ ] The phone tiles show no horizontal scrolling outside a table.
+* [ ] Anything doubtful — an arithmetic slip, a number that looks wrong, a source that contradicts the
+      text — is written in `docs/plans/progress-<branch>.md` and **not fixed**.
+
+**9. Commit** with the page name in the subject and the rule ids in the body, and update the progress
+file in the same commit.
+
+## 8. Reviewer checklist (Opus)
+
+Review the diff **and** the rendered tiles. The executor cannot see what it did not think to look at.
+
+1. **Read the diff as a fact diff, not a text diff.** For every hunk: did a number, a unit, a quotation,
+   a hedge or a marker change? Re-run the preservation snippet of §7 yourself against `main`.
+2. **Spot-check the tables.** Pick three cells of every new table and find the same value in the
+   original prose — same digits, same significant figures, same quotation marks, same marker. Confirm
+   that an empty cell is empty in the source too, and is `—`.
+3. **Check the hedges.** Every "our reading", "inference", "industry-typical", "not public" that was in
+   the prose must be somewhere in the new structure, at the same strength, and a table-wide hedge must
+   sit directly under its table.
+4. **Check the dropdowns.** Title unchanged; body unchanged; nothing about an in-force patent anywhere
+   else on the page, in the "At a glance" box or a caption least of all. Run `check_inforce.py`.
+5. **Check the Deep dive count** and the reading-list bullets: same number of `* ` lines, same order,
+   markers still last.
+6. **Look at the tiles**, desktop and phone, before and after. Ask: can I find the page's three numbers
+   in ten seconds? Does the first screen say what the step does? Is any table wider than the column? Is
+   any cell taller than five lines?
+7. **Check the checker contract** for the page type (§5), especially: the step run is still the first
+   non-bullet block with step links on a machine page; the `Steps:` paragraph is still adjacent on a
+   material page; no new table sits above a checked table in the same section.
+8. **Confirm the blocked rules were not started** (§9).
+9. **Read the progress file.** Anything the executor flagged as doubtful is a finding for the
+   coordinator, not something the reviewer fixes in the readability branch.
+10. **Reject the page if any item of the Never list (§2) was broken**, however good the rest is.
+
+## 9. Blocked rules
+
+Nothing in this table may be started by an executor before the workstream lands. `readability-plan.md`
+holds the status.
+
+| Rule | Blocked on | What is blocked |
+|---|---|---|
+| R-LINKS | **W0c** | citation-style rule 5 reworded; the "inline URL must be in this page's own footnote definitions" invariant in `check_refs.py`; `tools/fix_reading_list_links.py` |
+| R-WAYBACK (tooling) | **W0f** | `check_links.py` lookup fix, `--suggest-archive`, `--include-generated`. The citation *form* is usable now |
+| R-H3 on mask pages | **W0e** | `check_masks.OPTIONAL_H3` must accept `Exposure class`, `Mask errors`, `Resist and tone`, `Overlay and alignment`, `Pattern transfer` |
+| R-INDEX, machines main table | **W0e** | `check_machines.index_rows()` must read a two-column table |
+| R-INDEX, materials main table | **W0e** | `check_materials.Index` must read the Steps cell from a second table, keyed by key |
+| R-INDEX, `docs/steps/index.md` | **W0d** | `gen_steps.py`: sync with the committed intro **first** (it is stale), then module grouping, short sidebar titles, `Machine class` and `Mask` columns, `--check` |
+| R-GENBLOCK | **W0d** | `gen_index_links.py` heading and link text, `--selftest` update, one regeneration commit |
+| R-STEPRUN, generated tables | **W0d** | a new `gen_step_tables.py` |
+| R-TERM, Phase cell | **W0d** | the stub template in `gen_steps.py` must change in the same commit |
+| R-FIGURE | **W1a** | `tools/gen_figures.py --check`, `data/figures/`, `docs/_static/figures/`, `figure-theme.js`, tokens, the "Figure conventions" page, the `check_inforce.py` hook for figure specs |
+| R-DROPDOWN, shorter titles | **owner** | the in-force title wording is the owner's; A F12 is a proposal |
+| Theme work (C2, C3, C12) | **W0a** | `docs/_static/custom.css`, `footnote-popover.js`, `conf.py`. Not a content edit; it fixes the phone layout for all 291 pages at once |
+| `check_preserved.py` | **W0b** | until it lands, use the snippet in §7 |
+
+Owner decisions still open, recorded here so that no executor decides them by accident: shortening
+in-force dropdown titles; moving the metal-cap section off the overview; splitting the inventory or
+generating its "used on" lines; mask-render thumbnails versus links; whether the materials `Key` column
+is reader-facing; the 44 em text measure; whether a figure may show a value the page gives as its own
+reading (default: yes, tagged).
