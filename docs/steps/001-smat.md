@@ -10,9 +10,22 @@
 | **Previous step** | — |
 | **Next step** | {ref}`BOX <step-002>` |
 
+:::{admonition} At a glance
+* **Does:** brings a cassette of bare, polished 200 mm p-type silicon
+  wafers into the SKY130 flow.
+* **Why:** the wafer specification is the first process decision the
+  rest of the flow is built on.
+* **Public numbers:** 200 mm diameter;[^skw-02] 725 µm wafer
+  thickness.[^wiki-wafer]
+* **Likely SkyWater tool:** GlobalWafers and SEH America as wafer
+  suppliers — strong.[^sec-01][^sec-02]
+* **Not public:** wafer resistivity and crystal orientation (→ Open
+  questions).
+:::
+
 ## What this step is
 
-`SMAT` is not a process step in the sense of a tool recipe; it is the
+`SMAT` is not a process step in the sense of a tool recipe. It is the
 point at which a cassette of bare, polished 200 mm silicon wafers enters
 the SKY130 flow. Everything that follows — isolation, wells, gates,
 contacts and five levels of aluminium — is built into and on top of the
@@ -26,6 +39,8 @@ decision of the technology.
 
 The wafer as it enters the flow. SkyWater's platform table gives the S130 substrate as "Bulk"[^skw-02] and the PDK's process-stack drawing labels the bottom of the stack "p-substrate",[^pdk-04] so the slice is drawn as bare p-type bulk silicon. Nothing else about the wafer — resistivity, orientation, oxygen content — is public. Not to scale.
 :::
+
+### What the public record shows
 
 What can be said publicly about the SKY130 starting wafer:
 
@@ -48,29 +63,60 @@ What can be said publicly about the SKY130 starting wafer:
 * **Suppliers.** SkyWater's 2021 registration statement lists its
   principal silicon-wafer suppliers as "GlobalWafers Singapore Pte. Ltd.
   (silicon wafers)" and "SEH America, subsidiary of Shin-Etsu Handotai,
-  Ltd. (silicon wafers)";[^sec-01] the 2023 annual report lists
-  "Globalwafers Co. LTD." and "SEH America Inc, subsidiary of Shin-Etsu
-  Handotai, Ltd." as the wafer suppliers.[^sec-02] In 2015 Cypress
-  issued product-change notice
-  PIN152804, "Qualification of GlobalWafer Silicon Wafers for 250nm,
-  130nm and 90nm Technology Products at Cypress Fab 4", covering the
-  "130nm C8/R8/S8/L8" families and stating that Cypress would use
-  GlobalWafer wafers "in addition to wafers from other qualified
-  suppliers".[^cyp-06] That notice is the clearest public link between
-  a named wafer vendor and the S8 process that became SKY130.
+  Ltd. (silicon wafers)".[^sec-01]
+
+  - The 2023 annual report lists "Globalwafers Co. LTD." and "SEH
+    America Inc, subsidiary of Shin-Etsu Handotai, Ltd." as the wafer
+    suppliers.[^sec-02]
+  - In 2015 Cypress issued product-change notice PIN152804,
+    "Qualification of GlobalWafer Silicon Wafers for 250nm, 130nm and
+    90nm Technology Products at Cypress Fab 4", covering the "130nm
+    C8/R8/S8/L8" families and stating that Cypress would use
+    GlobalWafer wafers "in addition to wafers from other qualified
+    suppliers".[^cyp-06] That notice is the clearest public link
+    between a named wafer vendor and the S8 process that became
+    SKY130.
 
 Everything else about the wafer — resistivity, crystal orientation,
 oxygen content, flatness grade — is not stated in any public SkyWater
 or Cypress document and is discussed below as industry-typical.
 
+### How the effective body doping is estimated
+
+| Quantity | Value | Source |
+|---|---:|---|
+| Body-effect coefficient, 20 V zero-Vt NMOS | about 0.07 √V | SkyWater test tile[^raw-data-hv-mosfets] |
+| Electrical oxide thickness | 11.3 nm | our extraction from the tile's C–V data[^raw-data-hv-mosfets] |
+
+1. The 20 V zero-Vt NMOS, whose p-well and all Vt implants are blocked
+   to reach a zero VT,[^pdk-07] is measured on SkyWater's test tile.
+   The raw-data repository files the measurement under the folder name
+   `nfet_20v0_nvt`, but the {ref}`PWBM <step-026>` page reads the pad's
+   own geometry (a "2× 30/5.5" structure with its body tied to `Psub`)
+   as matching the PDK's zero-Vt e-test structure rather than the
+   native device's "2× 30/1.0", and reads it as the zero-Vt
+   (p-well-less) device despite the folder name.
+2. With a uniform-doping model and the inputs above, the body-effect
+   coefficient corresponds to an effective body doping of about
+   **1.4 × 10¹⁵ cm⁻³**.
+
+Result: about 1.4 × 10¹⁵ cm⁻³ (our extraction from the published
+measurements; see {ref}`PWBM <step-026>` for the geometry
+argument).[^raw-data-hv-mosfets] Neither this nor the PDK's n-well
+background concentration (below) is a wafer specification, and neither
+gives the orientation.
+
 ## Step category
 
 This is the only step in the
-{ref}`Substrate / starting material <category-substrate>` category. What
-is specific to SKY130 is that it is a *bulk* 200 mm p-type wafer for a
-process that, unusually for a 130 nm-era logic technology, carries
-5 V and 10–20 V devices, {term}`SONOS` memory and a deep N-well option on the
-same substrate.[^pdk-07][^pdk-10]
+{ref}`Substrate / starting material <category-substrate>` category.
+
+**Specific to this step:**
+
+* What is specific to SKY130 is that it is a *bulk* 200 mm p-type wafer
+  for a process that, unusually for a 130 nm-era logic technology,
+  carries 5 V and 10–20 V devices, {term}`SONOS` memory and a deep
+  N-well option on the same substrate.[^pdk-07][^pdk-10]
 
 ## Why this step exists
 
@@ -129,9 +175,13 @@ typically:
    flow; wafers are sorted into 25-wafer lots.
 5. **Initial clean.** Before the first furnace step
    ({ref}`BOX <step-002>`) the wafers receive a standard RCA-type
-   clean. The RCA sequence is {term}`SC-1` (NH₄OH : H₂O₂ : H₂O, typically
-   1 : 1 : 5 at 75 or 80 °C for about 10 min), an optional dilute HF dip,
-   and {term}`SC-2` (HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75 or 80 °C).[^wiki-rca]
+   clean, in sequence:
+
+   * **{term}`SC-1`** — NH₄OH : H₂O₂ : H₂O, typically 1 : 1 : 5 at
+     75 or 80 °C for about 10 min.
+   * **Dip** — an optional dilute HF dip.
+   * **{term}`SC-2`** — HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75 or
+     80 °C.[^wiki-rca]
 
 ## Machines typically used
 
@@ -146,25 +196,37 @@ typically:
 
 ## Machines likely used at SkyWater
 
-* **Laser scribe — Lumonics Superclean.** SkyWater's capability list
-  names "Lumonics Superclean" under scribe.[^skw-01] Strength: strong
-  (a SkyWater statement), though the page does not say which step uses
-  it.
-* **Unpatterned-wafer inspection — KLA-Tencor SP1 (our reading).** A SkyWater Defect
-  Technician posting reads "General operation of semiconductor defect
-  metrology tools: SEM/AIT/KLA/SP1/EV300/1X";[^job-06] we read "SP1" as
-  KLA-Tencor's Surfscan SP1, and the posting expands none of the
-  abbreviations. Strength: medium
-  (a job listing retrieved 2026-08-30; listings expire).
-* **Pre-furnace clean — DNS or FSI Mercury wet bench.** SkyWater's
-  capability list names "DNS wet bench industry standard HF/SC1/SC2"
-  and "FSI Mercury industry standard HF/SC1/SC2 rotational" under
-  pre-clean.[^skw-01] Strength: strong for existence; the assignment
-  is an inference (below) from their HF/SC1/SC2 chemistry, SC-2 being
-  listed only for these two benches.
-* **Wafers themselves — GlobalWafers and SEH America**,[^sec-01][^sec-02]
-  with GlobalWafers qualified for S8 at Fab 4 in 2015.[^cyp-06]
-  Strength: strong.
+| Tool | Evidence |
+|---|---|
+| Laser scribe — Lumonics Superclean | strong (existence) |
+| Unpatterned-wafer inspection — KLA-Tencor SP1 (our reading) | medium |
+| Pre-furnace clean — DNS or FSI Mercury wet bench | strong (existence); inference (assignment) |
+| Wafers themselves — GlobalWafers and SEH America | strong |
+
+* **Laser scribe — Lumonics Superclean**
+  - *SkyWater says:* its capability list names "Lumonics Superclean"
+    under scribe.[^skw-01]
+  - *Tool exists:* strong (a SkyWater statement).
+  - *Runs this step:* the page does not say which step uses it.
+* **Unpatterned-wafer inspection — KLA-Tencor SP1 (our reading)**
+  - *SkyWater says:* a SkyWater Defect Technician posting reads
+    "General operation of semiconductor defect metrology tools:
+    SEM/AIT/KLA/SP1/EV300/1X";[^job-06] we read "SP1" as KLA-Tencor's
+    Surfscan SP1, and the posting expands none of the abbreviations.
+  - *Tool exists:* medium (a job listing retrieved 2026-08-30;
+    listings expire).
+* **Pre-furnace clean — DNS or FSI Mercury wet bench**
+  - *SkyWater says:* its capability list names "DNS wet bench
+    industry standard HF/SC1/SC2" and "FSI Mercury industry standard
+    HF/SC1/SC2 rotational" under pre-clean.[^skw-01]
+  - *Tool exists:* strong.
+  - *Runs this step:* the assignment is an inference (below) from
+    their HF/SC1/SC2 chemistry, SC-2 being listed only for these two
+    benches.
+* **Wafers themselves — GlobalWafers and SEH America**[^sec-01][^sec-02]
+  - *SkyWater says:* GlobalWafers qualified for S8 at Fab 4 in
+    2015.[^cyp-06]
+  - *Tool exists:* strong.
 
 None of these sources states that the tool in question is the one used
 at `SMAT`; the association is our inference from the tool's function.
@@ -187,9 +249,9 @@ any product to a step.
 ## Related steps and cross-references
 
 * Next: {ref}`BOX <step-002>` grows the pad oxide on the cleaned wafer.
-* The substrate doping is the background for {ref}`DNI <step-008>`,
+* Feeds: the substrate doping is the background for {ref}`DNI <step-008>`,
   {ref}`NWI <step-018>` and {ref}`PWI <step-027>`.
-* The wafer is finally characterised electrically at
+* Feeds: the wafer is finally characterised electrically at
   {ref}`HPETEST <step-171>`.
 * Category page: {ref}`Substrate / starting material <category-substrate>`.
 
@@ -300,23 +362,16 @@ Status and expiry are estimates from public records and are not legal advice.
 * **Resistivity and orientation.** No public source gives the SKY130
   wafer resistivity, boron concentration or surface orientation. The
   (100) orientation and few-to-tens-of-Ω·cm range above are textbook
-  norms, not SkyWater data. Two indirect figures exist. The PDK's
-  process assumptions give a "background concentration" of
-  8 × 10¹⁴ cm⁻³ among the n-well entries (variable `NWBCONC`) of their
-  basic-parameters table without saying that it is the wafer doping.[^pdk-03] And the 20 V zero-Vt
-  NMOS, whose p-well and all Vt implants are blocked to reach a zero
-  VT,[^pdk-07] has a body-effect coefficient of about 0.07 √V on
-  SkyWater's test tile — the raw-data repository files the measurement
-  under the folder name `nfet_20v0_nvt`, but the {ref}`PWBM <step-026>`
-  page reads the pad's own geometry (a "2× 30/5.5" structure with its
-  body tied to `Psub`) as matching the PDK's zero-Vt e-test structure
-  rather than the native device's "2× 30/1.0", and reads it as the
-  zero-Vt (p-well-less) device despite the folder name — which with a
-  uniform-doping model and the 11.3 nm electrical oxide thickness we
-  extracted from the tile's C–V data corresponds to an effective body
-  doping of about 1.4 × 10¹⁵ cm⁻³ (our extraction from the published
-  measurements; see {ref}`PWBM <step-026>` for the geometry
-  argument).[^raw-data-hv-mosfets]
+  norms, not SkyWater data. Two indirect figures exist:
+
+  - The PDK's process assumptions give a "background concentration" of
+    8 × 10¹⁴ cm⁻³ among the n-well entries (variable `NWBCONC`) of
+    their basic-parameters table, without saying that it is the wafer
+    doping.[^pdk-03]
+  - An effective body doping we extracted from the 20 V zero-Vt NMOS
+    test-tile measurements; see *How the effective body doping is
+    estimated* above.
+
   Neither is a wafer specification, and neither gives the orientation.
 * **Bulk versus epitaxial.** SkyWater's "Bulk" entry[^skw-02] is the
   only public statement and it is a marketing table written years
