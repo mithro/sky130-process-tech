@@ -61,6 +61,7 @@ twice makes no further change.
 Usage::
 
     uv run tools/fix_reading_list_links.py [--check] [path ...]
+    uv run tools/fix_reading_list_links.py --refresh [--check] [path ...]
     uv run tools/fix_reading_list_links.py --selftest
 
 With no paths, every ``docs/**/*.md`` file outside ``docs/plans`` is
@@ -68,6 +69,15 @@ processed. ``--check`` reports what would change (file, counts) without
 writing, and exits non-zero if anything would change. Without
 ``--check``, matching files are rewritten in place and a summary is
 printed.
+
+``--refresh`` (review finding H2) is a separate mode: it never links a
+new bullet, only re-points a bullet's *already-existing* single link to
+its own marker's *current* first URL, for the case a definition's first
+URL moves after the link was made (R-WAYBACK: converting a definition to
+archive-first form). Only a bullet with exactly one marker and exactly
+one existing ``](<URL>)`` link is touched -- a multi-link bullet (rule
+3/3b/3c) needs a human to say which link belongs to which marker, so
+``--refresh`` leaves it alone. Combine with ``--check`` for a dry run.
 """
 
 from __future__ import annotations
@@ -266,6 +276,80 @@ def convert_bullet(
     return None, "multi-marker"
 
 
+EXISTING_LINK_URL_RE = re.compile(r"\]\(<(https?://[^<>\s]+)>\)")
+
+
+def refresh_bullet(bullet: str, urls: dict[str, str]) -> tuple[str | None, str]:
+    """Review finding H2. Re-point a bullet's own link to its marker's
+    *current* first URL, when a definition has moved (R-WAYBACK: converting
+    a definition to archive-first form changes its first URL after a
+    bullet already links the old one).
+
+    Only a bullet with **exactly one marker and exactly one existing
+    ``](<URL>)`` link** is touched -- the single shape rules 1, 1b and 2
+    ever produce, and the only shape this can update without first having
+    to work out which of several links belongs to which of several
+    markers. A multi-link bullet (rule 3/3b/3c) is left alone. The
+    replacement is always that marker's *own* definition's first URL,
+    character for character -- never a URL from any other source.
+    """
+    labs = MARK_RE.findall(bullet)
+    if len(labs) != 1:
+        return None, "not-single-marker"
+    lab = labs[0]
+    if lab not in urls:
+        return None, "no-url"
+    link_urls = EXISTING_LINK_URL_RE.findall(bullet)
+    if len(link_urls) != 1:
+        return None, "not-single-link"
+    old_url = link_urls[0]
+    new_url = urls[lab]
+    if old_url == new_url:
+        return None, "up-to-date"
+    new_bullet = bullet.replace(f"(<{old_url}>)", f"(<{new_url}>)", 1)
+    return new_bullet, "ok-refresh"
+
+
+def refresh_text(text: str) -> tuple[str, dict[str, int]]:
+    """Like ``process_text``, but for ``--refresh``: touches only bullets
+    under ``## References`` that already have a single link, re-pointing a
+    stale URL to its own marker's current first URL. Never creates a new
+    link, never touches a dropdown bullet (the same policy as
+    ``convert_bullet``), never touches any other page content.
+    """
+    counts: dict[str, int] = {}
+    urls = page_urls(text)
+    rm = REFS_SECTION_RE.search(text)
+    if not rm:
+        return text, counts
+    section = rm.group(1)
+    dropdown_lines = check_inforce.dropdown_lines(text)
+    base_lines = text[: rm.start(1)].count("\n")
+    chunks = re.split(r"\n(?=\* )", section)
+    out: list[str] = []
+    offset = 0
+    for idx, chunk in enumerate(chunks):
+        if idx > 0:
+            offset += 1
+        if chunk.startswith("* "):
+            bullet, sep, rest = chunk.partition("\n\n")
+            abs_line = base_lines + section[:offset].count("\n") + 1
+            if abs_line in dropdown_lines:
+                new, reason = None, "in-dropdown"
+            else:
+                new, reason = refresh_bullet(bullet, urls)
+            if new is not None:
+                counts[reason] = counts.get(reason, 0) + 1
+            chunk_out = (new if new is not None else bullet) + sep + rest
+        else:
+            chunk_out = chunk
+        out.append(chunk_out if idx == 0 else "\n" + chunk_out)
+        offset += len(chunk)
+    new_section = "".join(out)
+    new_text = text[: rm.start(1)] + new_section + text[rm.end(1) :]
+    return new_text, counts
+
+
 def process_text(text: str) -> tuple[str, dict[str, int]]:
     """Convert every eligible bullet under ``## References``.
 
@@ -331,18 +415,27 @@ def target_files(paths: list[str]) -> list[Path]:
     )
 
 
-def run(paths: list[str], check: bool) -> int:
+def run(paths: list[str], check: bool, refresh: bool = False) -> int:
     total: dict[str, int] = {}
     changed_files: list[Path] = []
+    processor = refresh_text if refresh else process_text
     for path in target_files(paths):
         text = path.read_text(encoding="utf-8")
-        new_text, counts = process_text(text)
+        new_text, counts = processor(text)
         for k, v in counts.items():
             total[k] = total.get(k, 0) + v
         if new_text != text:
             changed_files.append(path)
             if not check:
                 path.write_text(new_text, encoding="utf-8")
+    if refresh:
+        print(f"{len(changed_files)} files {'would change' if check else 'changed'}")
+        print(f"refreshed: {total.get('ok-refresh', 0)}")
+        if check:
+            for f in changed_files:
+                print(f"would change: {f.relative_to(ROOT)}")
+            return 1 if changed_files else 0
+        return 0
     ok_total = sum(v for k, v in total.items() if k.startswith("ok-"))
     print(f"{len(changed_files)} files {'would change' if check else 'changed'}")
     print(f"converted: {ok_total}  ({', '.join(f'{k}={v}' for k, v in sorted(total.items()) if k.startswith('ok-'))})")
@@ -602,6 +695,70 @@ def selftest() -> int:
     if new != page or counts.get("already-linked") != 1:
         fail(f"an already-linked bullet was not left alone: {new!r} {counts}")
 
+    # --refresh (H2): a bullet's link is re-pointed when its own marker's
+    # definition now gives a different first URL (simulating R-WAYBACK:
+    # the definition below has moved to an archive-first form, but the
+    # bullet above still links the old, now-dead URL).
+    page = refs(
+        "* [Wikipedia, *Baz*](<https://en.wikipedia.org/wiki/Old>) — a "
+        "gloss.[^wiki-baz]\n",
+        "[^wiki-baz]: Wikipedia, *Baz*. "
+        "<https://web.archive.org/web/20260101000000/https://en.wikipedia.org/wiki/Baz>\n"
+        "    (Wayback Machine capture of 2026-01-01; original, dead since "
+        "2026-02-01: `https://en.wikipedia.org/wiki/Old`).\n",
+    )
+    new, counts = refresh_text(page)
+    if counts.get("ok-refresh") != 1:
+        fail(f"--refresh did not fire on a moved URL: {counts}")
+    if ("[Wikipedia, *Baz*]"
+        "(<https://web.archive.org/web/20260101000000/https://en.wikipedia.org/wiki/Baz>)"
+        ) not in new:
+        fail(f"--refresh produced the wrong link: {new!r}")
+    if "[^wiki-baz]" not in new:
+        fail("--refresh disturbed the marker")
+
+    # --refresh leaves an up-to-date link untouched (and is therefore
+    # idempotent: refreshing twice makes no further change).
+    new2, counts2 = refresh_text(new)
+    if new2 != new or counts2.get("ok-refresh", 0):
+        fail(f"--refresh is not idempotent: {counts2}")
+
+    # --refresh never touches a multi-link bullet (rule 3): it cannot know
+    # which of several links belongs to which of several markers without
+    # redoing that match, so it leaves the whole bullet alone even if one
+    # of its markers' definitions has moved.
+    page = refs(
+        "* Wikipedia, [*Silane*](<https://en.wikipedia.org/wiki/Old-Silane>) "
+        "and [*Arsine*](<https://en.wikipedia.org/wiki/Arsine>) — two "
+        "gases.[^wiki-silane][^wiki-ash3]\n",
+        "[^wiki-silane]: Wikipedia, *Silane*. "
+        "<https://en.wikipedia.org/wiki/Silane>\n"
+        "[^wiki-ash3]: Wikipedia, *Arsine*. <https://en.wikipedia.org/wiki/Arsine>\n",
+    )
+    new, counts = refresh_text(page)
+    if new != page or counts.get("ok-refresh", 0):
+        fail(f"--refresh touched a multi-link bullet: {new!r} {counts}")
+
+    # --refresh never touches a dropdown bullet, and never creates a link
+    # where none existed (a bullet --check would still report as a
+    # candidate for ordinary conversion is not --refresh's job).
+    page = (
+        "# T\n\n## References\n\n### Deep dive\n\n"
+        ":::{dropdown} From a patent shown as in force (US 1,234,567; "
+        "estimated expiry 2030-01-01) — open to read\n"
+        "* [Doe (Acme), US 1,234,567](<https://old.example/patent>) — a "
+        "gloss.[^pat-doe]\n"
+        ":::\n\n"
+        "* Wikipedia, *Unlinked* — a gloss.[^wiki-unlinked]\n\n"
+        "[^pat-doe]: Doe. <https://patents.google.com/patent/US1234567>\n"
+        "[^wiki-unlinked]: Wikipedia, *Unlinked*. "
+        "<https://en.wikipedia.org/wiki/Unlinked>\n"
+    )
+    new, counts = refresh_text(page)
+    if new != page or counts.get("ok-refresh", 0):
+        fail(f"--refresh touched a dropdown link or an unlinked bullet: "
+             f"{new!r} {counts}")
+
     if problems:
         for p in problems:
             print("FAIL:", p)
@@ -613,12 +770,21 @@ def selftest() -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--check", action="store_true", help="report only, write nothing")
+    ap.add_argument(
+        "--refresh",
+        action="store_true",
+        help=(
+            "re-point an already-linked bullet's URL to its own marker's "
+            "current first URL (e.g. after R-WAYBACK); never links a new "
+            "bullet, combine with --check for a dry run"
+        ),
+    )
     ap.add_argument("--selftest", action="store_true", help="run offline unit tests")
     ap.add_argument("paths", nargs="*")
     args = ap.parse_args()
     if args.selftest:
         return selftest()
-    return run(args.paths, args.check)
+    return run(args.paths, args.check, args.refresh)
 
 
 if __name__ == "__main__":
