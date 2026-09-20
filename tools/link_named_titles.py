@@ -128,6 +128,10 @@ def is_heading_line(line: str) -> bool:
     return line.lstrip().startswith("#")
 
 
+def is_blockquote_line(line: str) -> bool:
+    return line.lstrip().startswith(">")
+
+
 def already_linked(text: str, start: int, end: int) -> bool:
     return text[max(0, start - 1) : start] == "[" and text[end : end + 3] == "](<"
 
@@ -172,7 +176,7 @@ def process_text(text: str) -> tuple[str, dict[str, int]]:
     seen: dict[str, set[str]] = {}  # H2 -> titles already linked in it
     current_h2 = ""
     edits: list[tuple[int, int, str]] = []  # (start, end, replacement) in `body`
-    for block in blocks:
+    for bi, block in enumerate(blocks):
         block_text = "".join(ln for ln, _, _ in block)
         block_start = block[0][2]
         h2m = H2_RE.match(block_text)
@@ -186,6 +190,18 @@ def process_text(text: str) -> tuple[str, dict[str, int]]:
         if any(lineno in dropdown_lines for _, lineno, _ in block):
             continue
         if any(lineno in genblock_lines for _, lineno, _ in block):
+            continue
+        # A block quote's straight or smart quotes can pair up, after
+        # check_preserved.py's own whitespace flattening, with an unrelated
+        # quote mark in an *adjacent* paragraph and make that tool see a
+        # bogus "quotation" spanning both -- so a paragraph immediately
+        # next to a block quote is treated the same as one inside a
+        # quotation itself (never touched).
+        prev_bq = bi > 0 and any(is_blockquote_line(ln) for ln, _, _ in blocks[bi - 1])
+        next_bq = bi + 1 < len(blocks) and any(
+            is_blockquote_line(ln) for ln, _, _ in blocks[bi + 1]
+        )
+        if prev_bq or next_bq or any(is_blockquote_line(ln) for ln, _, _ in block):
             continue
         masked = mask_quotes(block_text)
         sentences: list[tuple[int, int]] = []
@@ -386,6 +402,21 @@ def selftest() -> int:
     new, counts = process_text(p)
     if new != p or counts.get("linked", 0):
         fail(f"a title inside the generated block was linked: {new!r}")
+
+    # Never in a paragraph next to a block quote (check_preserved.py's own
+    # whitespace flattening can pair a quote mark in the block quote with
+    # an unrelated one elsewhere on the page and read the paragraph in
+    # between as part of a bogus "quotation" -- docs/machines/single-wafer
+    # -spin-processor.md:161-166 is the real case that found this).
+    p = page(
+        'SkyWater\'s *Facilities & Capabilities* page lists:[^pdk-periph]\n\n'
+        '> "Single Wafer"\n> "SEZ223, titration controlled"\n',
+        "[^pdk-periph]: SkyWater PDK, *Facilities & Capabilities*. "
+        "<https://example.com/periph>\n",
+    )
+    new, counts = process_text(p)
+    if new != p or counts.get("linked", 0):
+        fail(f"a paragraph beside a block quote was linked: {new!r}")
 
     # Never past "## References" (that's C1's territory).
     p = (
