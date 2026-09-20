@@ -472,6 +472,72 @@ docs/steps/012-cmpnit.md`: exit 0 on the first try — 0 LOST in any category, i
 `number_order` (no dense multi-number passage existed to split). All other checkers and the `-W`
 build pass; screenshots at both widths read cleanly.
 
+### 013-ns19.md — done
+
+This is the guide's own worked-example page for R-LIST ("Two things can go wrong:") and R-TOOLS
+(the Akrion Gamma bullet); both were still in their pre-readability form, so this commit applies
+the guide's own examples verbatim. Rules applied: R-SENTENCE + R-CATEGORY (the 68-word sentence
+in "Step category" split at its semicolon and em-dash, folded into a one-bullet "Specific to this
+step:" alongside the "does not interpret the '19'" sentence), R-LIST (the exact guide example),
+R-TOOLS (the exact guide example; the other two bullets, under 4 tools total, split too),
+R-HEDGE step 1, R-RELATED ("Depends on:", "Feeds:"), R-OPENQ (three bullets labelled), R-GLANCE
+(box last; first sentence already 20 words). R-H3/R-TABLE/R-DERIVATION/R-PARA: no candidate
+(already the cleanest-shaped page along with 012).
+
+`check_preserved.py --base ee3a94ee --allow-added markers,numbers,hedges,number_order
+docs/steps/013-ns19.md`: exit 0 on the first try — 0 LOST in any category, including
+`number_order`. All other checkers and the `-W` build pass; screenshots at both widths read
+cleanly, matching the guide's own illustrations almost exactly.
+
+## Post-pass cleanup: a second measurement sweep after all 13 pages
+
+Per the task's request to measure the whole batch before and after, I ran `measure_batch.py`
+again over all 13 finished pages and found four `≥80`-word list items and four `≥60`-word
+sentences that the per-page passes above had missed — all genuine misses (a list item I didn't
+re-scan after an earlier edit shifted its line number, and a couple of long sentences in
+sections I did not otherwise touch on a given page), not new content. Fixed all of them with the
+same rules as the main pass, re-ran `check_preserved.py --base ee3a94ee`, every other checker and
+the `-W` build for each touched page, and re-screenshotted:
+
+* `001-smat.md` — R-PARA split the 96-word "Latch-up and noise isolation" bullet (missed because
+  the original pass focused on the section's other, longer paragraph) and the 81-word numbered
+  derivation step 1 (a list item inside the H3 I added on the first pass, not re-checked against
+  the item cap afterwards).
+* `002-box.md` — R-PARA split the 109-word "Ramp and oxidise" bullet under "How it is typically
+  performed" (not flagged in the narrower per-page scan I ran before editing that page).
+* `003-isonit.md` — R-PARA split the 123-word "Deposition chemistry" bullet, same cause as above.
+* `006-stie.md` — R-LIST converted a 95-word sentence (an announcing colon followed by three
+  parallel test-tile structures: field-oxide FETs, diffusion lines, gate-oxide capacitors) into
+  three bullets; this sentence was in a part of "Why this step exists" the original R-H3/R-PARA
+  pass did not re-examine once the trench-depth derivation was done.
+* `008-dni.md` — R-TABLE converted a 72-word sentence (device thresholds and drain current with
+  and against deep N-well) into a Parameter|"in DNW"|without table, the same "measured against
+  nominal" shape used elsewhere on this page.
+* `010-linox.md` — R-LIST converted a 62-word "serves two purposes:" sentence into two sub-bullets
+  under the pre-oxidation-clean step.
+* `011-filox.md` — R-SENTENCE split a 70-word "Void-free" bullet at its em-dash.
+
+Two apparent hits remain and are not real: `003-isonit.md` has one list item at exactly 60 words
+(the rule's own threshold is "exceeds 60", so this one is in bounds, and it is a single coherent
+clause inside an already-applied R-LIST structure — splitting it further would fragment one idea
+rather than separate two); `008-dni.md`'s scanner hit is my own ad-hoc measurement script
+mis-reading an indented table (nested two spaces under a bullet) as a run of prose because its
+regex for stripping table rows only matches `^\|`, not indented rows — confirmed by screenshot
+that the table itself renders correctly and is not one giant sentence. Recorded as Guide problem
+9 below, since it is a limitation of the batch-measurement approach this task asked for, not of
+the guide itself.
+
+9. **A quick per-page `measure_batch.py` scan during editing is not the same as a full sweep
+   after all edits land.** Running the measurement script once per page, before editing that
+   page, missed four cases across five pages that a second, whole-batch sweep after all 13 pages
+   were done caught immediately (see above). Two causes: (a) a page's own earlier edit can shift
+   which paragraph is now the "worst offender" printed by the script's top-N lists, burying a
+   still-over-cap item that was never at the top of the list; (b) a section I considered "already
+   handled" after applying one rule (R-H3, say) was not re-scanned for other rules (R-PARA) once
+   its shape changed. Practical fix, recorded for whoever runs the next batch: run the full-batch
+   sweep again after finishing all pages, not only the per-page one before each edit, and treat
+   the per-page number as a floor, not a ceiling.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
@@ -485,3 +551,42 @@ guide's own scripts) against `docs/steps/00[1-9]-*.md docs/steps/01[0-3]-*.md`:
 * H3 headings: 52
 
 "After" numbers are collected once all 13 pages are done (see bottom of this file).
+
+## Batch measurements (all 13 pages, after editing — final)
+
+Same script and same file set, run after every page was edited and after the post-pass cleanup
+sweep above:
+
+* paragraphs ≥120 words: 0 / 203 total prose paragraphs (was 11 / 147)
+* list items ≥80 words (outside References): 0 / 579 total non-ref items (was 17 / 387)
+* sentences ≥60 words: 2 / 953 total sentences (was 21 / 768) — both remaining hits are not real
+  overruns: one is a list item at exactly 60 words (the rule triggers on "exceeds 60"), the other
+  is this batch's own `measure_batch.py` misreading an indented (nested-under-a-bullet) table as
+  a run of prose; see Guide problem 9 and the per-page note on `008-dni.md`
+* tables (markdown `|` blocks): 27 (was 13) — 14 new tables from R-TABLE/R-DERIVATION
+* H3 headings: 58 (was 52) — 6 new H3s from R-H3 (pages 001, 003, 004, 006, 011) plus the
+  guide's own worked example on 006
+
+The paragraph and list-item caps are fully cleared; the table and H3 counts show the guide's
+rules being applied, not just prose being reworded in place.
+
+## Summary
+
+Thirteen step pages (001-smat.md through 013-ns19.md) rewritten for presentation only, one commit
+per page plus one follow-up cleanup commit, all pushed to `topic/rd-steps-001-013`. Every page
+passes `check_preserved.py` (against this branch's own start point, `ee3a94ee`) with 0 lost
+outside the `number_order` category, whose every remaining LOST/ADDED pair was hand-verified
+against a diff-dumping script as intentional restructuring, never a real change; `check_steps.py`,
+`check_refs.py`, `check_machines.py`, `check_materials.py`, `check_masks.py`, `check_inforce.py`,
+`check_papers.py`, `check_patents.py`, `check_filings.py`, `gen_papers.py --check`,
+`gen_figures.py --check`, `gen_index_links.py --check` and the `-W` Sphinx build all pass on the
+finished branch. Nine guide problems were found and recorded above (figure placement vs. the
+§4.1 skeleton; `number_order`'s unconditional LOST; R-CATEGORY's "2-4 bullets" when only one
+sentence remains; R-TOOLS applied to a non-tool bullet; R-RELATED's six labels not covering a
+same-category-different-module bullet; `check_preserved.py`'s `NUMBER_RE` matching digits inside
+identifiers like "SKY130"; the hedge matcher not being whitespace-flattened the way the quote
+matcher is; R-TABLE's column budget not accounting for an asymmetric label-column table; and the
+per-page-versus-whole-batch measurement gap). Several genuine preservation slips (trimmed or
+requoted source text, a misplaced footnote marker) were caught by `check_preserved.py` or by
+rereading the diff before committing, and fixed before any commit landed — none reached the
+branch tip uncorrected.
