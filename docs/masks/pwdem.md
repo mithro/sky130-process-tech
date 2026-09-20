@@ -300,60 +300,60 @@ spacing for `pwde` itself.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "P-Well Drain Extended,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "P-Well Drain Extended,
   PWDEM" with the `Used in SKY130` field blank.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `pwde` and the
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `pwde` and the
   `PWDEM` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `PWDEMCD`/`PWDEMCDSP`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `pwdem` rules, the `depmos` and
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `PWDEMCD`/`PWDEMCDSP`.[^pdk-03]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `pwdem` rules, the `depmos` and
   `uhvi` rules.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `pwde.6`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `pwde.6`
   value.[^pdk-errors]
-* SkyWater PDK, *High Voltage Methodology* — drain extensions of the
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — drain extensions of the
   16 V devices made of lightly doped wells.[^pdk-hv]
-* SkyWater PDK, *Device Details* — the 20 V PMOS.[^pdk-07]
-* SkyWater PDK Authors, test-tile pad documentation — the 20 V PMOS
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the 20 V PMOS.[^pdk-07]
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the 20 V PMOS
   structures and their cell names.[^raw-data-testtile-pads]
-* *S8 / SKY130 Process Steps* sheet — the step and the `PWDEM` plate of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step and the `PWDEM` plate of
   MPW-6.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the empty `PWDEM` renders, their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the empty `PWDEM` renders, their
   layer and note.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implant masking by resist.[^txt-02]
-* Baliga, *Fundamentals of Power Semiconductor Devices* — breakdown and
+* [Baliga, *Fundamentals of Power Semiconductor Devices*](<https://doi.org/10.1007/978-0-387-47314-7>) — breakdown and
   drift-region doping.[^baliga-2008]
 
 ### Deep dive
 
-* Ludikhuize, IEDM 1982 — a p− layer in the extended drain of a
+* [Ludikhuize, IEDM 1982](<https://doi.org/10.1109/IEDM.1982.190218>) — a p− layer in the extended drain of a
   high-voltage PMOS.[^ludikhuize-1982]
-* Mei et al., VLSI Symposium 1994 — N- and P-channel extended-drain
+* [Mei et al., VLSI Symposium 1994](<https://doi.org/10.1109/VLSIT.1994.324367>) — N- and P-channel extended-drain
   RESURF devices in one CMOS process.[^mei-1994]
-* Appels and Vaes, IEDM 1979 — the RESURF principle.[^appels-1979]
-* Ludikhuize, ISPSD 2000 — a review of RESURF technology, including
+* [Appels and Vaes, IEDM 1979](<https://doi.org/10.1109/IEDM.1979.189589>) — the RESURF principle.[^appels-1979]
+* [Ludikhuize, ISPSD 2000](<https://doi.org/10.1109/ISPSD.2000.856763>) — a review of RESURF technology, including
   breakdown and on-resistance.[^ludikhuize-2000]
-* Mitros et al., *IEEE TED* 2001 — drain-extended MOS transistors in a
+* [Mitros et al., *IEEE TED* 2001](<https://doi.org/10.1109/16.936703>) — drain-extended MOS transistors in a
   0.18 µm logic process.[^mitros-2001]
-* Efland, Tsai and Pendharkar, IEDM 1998 — a review of LDMOS structures
+* [Efland, Tsai and Pendharkar, IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746447>) — a review of LDMOS structures
   in BiCMOS power technologies.[^efland-1998]
-* Mitros (Texas Instruments), US 6,660,603 — drain extensions made from
+* [Mitros (Texas Instruments), US 6,660,603](<https://patents.google.com/patent/US6660603B2/en>) — drain extensions made from
   lightly doped wells, with implant conditions.[^pat-demos-ti]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde wells
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — retrograde wells
   with resist thickness and boron energies.[^pat-well-ibm]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation.[^lee-1996]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
 
 ## Open questions

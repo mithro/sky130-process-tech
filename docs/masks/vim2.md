@@ -384,68 +384,68 @@ neither. For the plate the decisive figures are one 0.200 µm square on a
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Via 2-PLM", "Via 2-TNV"
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Via 2-PLM", "Via 2-TNV"
   and "Via 2-S8TM", `VIM2`, with the PLM entry marked.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `via2` 69:44,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `via2` 69:44,
   `cviam2` 44:0, `areaid.mt`, Table C3 and the columns of Table
   F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `VIM2CD`/`VIM2CDSP` for the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `VIM2CD`/`VIM2CDSP` for the
   three variants and `VIM2_CuCD`/`VIM2_CuCDSP`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `via2` rules, m3.4, m3.5, m3.15,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `via2` rules, m3.4, m3.5, m3.15,
   capm.4, capm.5, x.1a, x.1b, x.2, x.7, x.9, x.15a, x.18 and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Tables F3c, F3d and
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Tables F3c, F3d and
   F4.[^pdk-summary]
-* SkyWater PDK, *Error Messages* page — the via2.1d check and the
+* [SkyWater PDK, *Error Messages* page](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) — the via2.1d check and the
   `cviam2.nikon` checks.[^pdk-errors]
-* SkyWater PDK, *Process stack diagram* — the 0.42 µm via-2
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the 0.42 µm via-2
   height.[^pdk-04]
-* SkyWater PDK, *Parasitic Layout Extraction* — the via resistance
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the via resistance
   table.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `VIM2` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `VIM2` plates of
   MPW-1 to MPW-8, the "Info" note and the "Sheet4" mask
   type.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `VIM2` renders, their layer,
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `VIM2` renders, their layer,
   description and info text, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV and i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV and i-line exposure
   tools.[^skw-01]
-* Photronics, *Advanced Binary Reticle* — the EAPSM abbreviation in a
+* [Photronics, *Advanced Binary Reticle*](<https://www.photronics.com/products/advanced-binary-reticle/>) — the EAPSM abbreviation in a
   mask maker's catalogue.[^photronics-abr]
 
 ### High-level understanding
 
-* Wikipedia, *Via (electronics)* — what a via is.[^wiki-via]
-* Wikipedia, *Photomask* and *Phase-shift mask* — binary and attenuated
+* [Wikipedia, *Via (electronics)*](<https://en.wikipedia.org/wiki/Via_(electronics)>) — what a via is.[^wiki-via]
+* Wikipedia, [*Photomask*](<https://en.wikipedia.org/wiki/Photomask>) and [*Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>) — binary and attenuated
   plates.[^wiki-mask][^wiki-psm]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Terasawa et al., *Jpn. J. Appl. Phys.* 1991 — halftone
+* [Terasawa et al., *Jpn. J. Appl. Phys.* 1991](<https://doi.org/10.1143/JJAP.30.2991>) — halftone
   phase-shifting masks and their focus latitude for isolated
   patterns.[^terasawa-1991]
-* Smith et al., *JVST B* 1996 — four candidate shifter films for
+* [Smith et al., *JVST B* 1996](<https://doi.org/10.1116/1.588655>) — four candidate shifter films for
   attenuated phase-shift masks, characterised at 193 nm.[^smith-1996]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of
   contacts on binary and phase-shift masks.[^wong-1998]
-* Kim et al., *Proc. SPIE* 1999 — mask CD error for sub-quarter-micron
+* [Kim et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354400>) — mask CD error for sub-quarter-micron
   contact holes on binary and attenuated masks.[^kim-1999]
-* Ma and Andersson, *Proc. SPIE* 1998 — the cause of side-lobe printing
+* [Ma and Andersson, *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310783>) — the cause of side-lobe printing
   with attenuated plates and a rim-shifter remedy.[^ma-andersson-1998]
-* Chen, Wang and Chu, *Proc. SPIE* 1999 — optimising an attenuated mask
+* [Chen, Wang and Chu, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354399>) — optimising an attenuated mask
   for contact holes.[^chen-1999-psm]
-* Lu et al., *Proc. SPIE* 1999 — contact-hole resists compatible
+* [Lu et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350280>) — contact-hole resists compatible
   with attenuated masks at KrF.[^lu-1999]
-* Yamamoto et al., MNC 2000 — hierarchical OPC on contact-hole
+* [Yamamoto et al., MNC 2000](<https://doi.org/10.1109/IMNC.2000.872612>) — hierarchical OPC on contact-hole
   layers.[^yamamoto-2000]
-* Brunner, *Proc. SPIE* 1991 — the swing ratio and anti-reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — the swing ratio and anti-reflective
   coatings.[^brunner-1991]
-* Le, Banerjee and McPherson (TI), *Semicond. Sci. Technol.* 1996 — via
+* [Le, Banerjee and McPherson (TI), *Semicond. Sci. Technol.* 1996](<https://doi.org/10.1088/0268-1242/11/6/003>) — via
   size and tungsten-plug via electromigration.[^le-1996]
-* ITRS 2001, *Lithography* — the exposure options and mask requirements
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options and mask requirements
   it lists for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

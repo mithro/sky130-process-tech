@@ -322,24 +322,24 @@ marked `areaid.ce`.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "ONO Mask, ONOM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "ONO Mask, ONOM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `conom` 88:0
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `conom` 88:0
   and 87:44, `tunm` 80:20 and the `ONOM` and `TUNM` columns of Table
   F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `ONOMCD`/`ONOMCDSP` and the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `ONOMCD`/`ONOMCDSP` and the
   photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `tunm` rules, x.15a and the flag
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `tunm` rules, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `conom` and
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `conom` and
   `ONOMmk` checks.[^pdk-errors]
-* *S8 / SKY130 Process Steps* sheet — the step, the `ONOM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `ONOM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `ONOM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `ONOM` renders, their layer
   and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
@@ -349,41 +349,41 @@ marked `areaid.ce`.
 
 ### High-level understanding
 
-* Wikipedia, *SONOS* — the oxide–nitride–oxide memory
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the oxide–nitride–oxide memory
   transistor.[^cyp-26]
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Ramkumar et al. (Cypress), US 6,969,689 — the ONO stack this mask
+* [Ramkumar et al. (Cypress), US 6,969,689](<https://patents.google.com/patent/US6969689B1/en>) — the ONO stack this mask
   confines, its layers formed in one reaction chamber (several
   embodiments).[^pat-01]
-* White, Adams and Bu, *IEEE Circuits and Devices* 2000 — a review of
+* [White, Adams and Bu, *IEEE Circuits and Devices* 2000](<https://doi.org/10.1109/101.857747>) — a review of
   scaled SONOS.[^pap-01]
-* Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm local-SONOS embedded
+* [Seo et al. (Samsung), *IEEE JSSC* 2005](<https://doi.org/10.1109/JSSC.2005.845564>) — a 130 nm local-SONOS embedded
   flash from another vendor.[^pap-02]
-* Kim et al. (Samsung), VLSI 2003 — a manufacturable embedded SONOS
+* [Kim et al. (Samsung), VLSI 2003](<https://doi.org/10.1109/VLSIT.2003.1221071>) — a manufacturable embedded SONOS
   module.[^pap-03]
-* Taniguchi et al., IMW 2023 — SONOS embedded flash on a 130 nm platform
+* [Taniguchi et al., IMW 2023](<https://doi.org/10.1109/IMW56887.2023.10145990>) — SONOS embedded flash on a 130 nm platform
   with three added masks.[^pap-05]
-* Jiew, Chien and Yung, NVMTS 2012 — a 2T-SONOS cell for embedded
+* [Jiew, Chien and Yung, NVMTS 2012](<https://doi.org/10.1109/NVMTS.2013.6632849>) — a 2T-SONOS cell for embedded
   flash.[^jiew-2012]
-* Sun et al., ICICDT 2011 — a SONOS-based embedded flash needing "only 3
+* [Sun et al., ICICDT 2011](<https://doi.org/10.1109/ICICDT.2011.5783211>) — a SONOS-based embedded flash needing "only 3
   additional non-critical masks".[^sun-2011]
-* Regis et al., ASMC 1997 — nitride etching with high selectivity to
+* [Regis et al., ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — nitride etching with high selectivity to
   oxide.[^regis-1997]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* Starikov, *Opt. Eng.* 1992 — the accuracy of overlay
+* [Starikov, *Opt. Eng.* 1992](<https://doi.org/10.1117/12.56172>) — the accuracy of overlay
   measurements.[^starikov-1992]
-* van Haren et al., *Proc. SPIE* 2019 — alignment-mark placement and
+* [van Haren et al., *Proc. SPIE* 2019](<https://doi.org/10.1117/12.2536270>) — alignment-mark placement and
   layer-to-layer overlay.[^van-haren-2019]
-* ITRS 2001, *Lithography* — mask magnification and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the optical mask
   requirements of the 130 nm generation.[^itrs-03]
 
 ## Open questions

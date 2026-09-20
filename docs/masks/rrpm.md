@@ -294,71 +294,71 @@ and rpm.2 would set their smallest features (inference).
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Resistor Protect, RPM"
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Resistor Protect, RPM"
   and no reverse mask.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `rpm`, `urpm`,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `rpm`, `urpm`,
   the `prec_resistor` definition and Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — the `RPM` row of Table 2, the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the `RPM` row of Table 2, the
   poly and precision resistor criteria and the photoresist
   thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `rpm` rules, licon.9 and the
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `rpm` rules, licon.9 and the
   flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `urpm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `urpm`
   messages and the absence of any `RRPM` message.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the P+ and P− poly precision resistors
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the P+ and P− poly precision resistors
   and their e-test table.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — the poly and resistor
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the poly and resistor
   sheet resistances.[^pdk-08]
-* SkyWater PDK Authors, test-tile pad documentation — the resistor
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the resistor
   structures marked for "routes using RRPM
   mask".[^raw-data-testtile-pads]
-* SkyWater PDK Authors, measured passive-device data — the measurements
+* [SkyWater PDK Authors, measured passive-device data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — the measurements
   of the marked structures.[^raw-data-passives]
-* *S8 / SKY130 Process Steps* sheet — the step, the "Rev Resistor
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the "Rev Resistor
   Protect" row and its plates on MPW-1 to MPW-8.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the absence of an `RRPM`
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the absence of an `RRPM`
   render and the `RPM` and `URPM` layers.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — single-machine overlay of an i-line
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — single-machine overlay of an i-line
   stepper.[^asml-pas5500-275d]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Sheet resistance* — the ohms-per-square
+* [Wikipedia, *Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>) — the ohms-per-square
   convention.[^wiki-rs]
-* Kamins, *Polycrystalline Silicon for Integrated Circuits and Displays* —
+* [Kamins, *Polycrystalline Silicon for Integrated Circuits and Displays*](<https://doi.org/10.1007/978-1-4615-5577-3>) —
   doping and electrical properties of poly films.[^kamins-1998]
 
 ### Deep dive
 
-* Seto, *J. Appl. Phys.* 1975 — grain-boundary trapping and the steep
+* [Seto, *J. Appl. Phys.* 1975](<https://doi.org/10.1063/1.321593>) — grain-boundary trapping and the steep
   dependence of poly resistivity on doping.[^seto-1975]
-* Mandurah, Saraswat and Kamins, *IEEE TED* 1981 — conduction in poly
+* [Mandurah, Saraswat and Kamins, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20504>) — conduction in poly
   with dopant segregation to the grain boundaries.[^mandurah-1981]
-* Lu et al., *IEEE TED* 1981 — modelling and optimisation of monolithic
+* [Lu et al., *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20437>) — modelling and optimisation of monolithic
   poly resistors.[^lu-1981]
-* Lane and Wrixon, *IEEE TED* 1989 — the design of thin-film poly
+* [Lane and Wrixon, *IEEE TED* 1989](<https://doi.org/10.1109/16.22479>) — the design of thin-film poly
   resistors for analogue ICs.[^lane-1989]
-* Chuang et al., *IEEE TED* 2003 — temperature coefficients of n⁺ and p⁺
+* [Chuang et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.813472>) — temperature coefficients of n⁺ and p⁺
   poly and diffused resistors.[^chuang-2003]
-* O'Dwyer and Kennedy, PRIME 2009 — matching of poly resistor films in a
+* [O'Dwyer and Kennedy, PRIME 2009](<https://doi.org/10.1109/RME.2009.5201322>) — matching of poly resistor films in a
   CMOS process.[^odwyer-2009]
-* Tsang et al., *IEEE TSM* 2014 — resistance variation across banks of
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — resistance variation across banks of
   high-value poly resistors.[^tsang-2014]
-* Ashuah, Shauly and Shacham-Diamand, *IEEE TSM* 2009 — co-implantation
+* [Ashuah, Shauly and Shacham-Diamand, *IEEE TSM* 2009](<https://doi.org/10.1109/TSM.2009.2017655>) — co-implantation
   to improve the TCR of boron-implanted poly resistors.[^ashuah-2009]
-* Upreti and Singh, *Bull. Mater. Sci.* 1991 — grain-boundary effects in
+* [Upreti and Singh, *Bull. Mater. Sci.* 1991](<https://doi.org/10.1007/BF02823239>) — grain-boundary effects in
   boron-doped poly films.[^upreti-1991]
-* Orvek and Huffman, *NIM B* 1985 — the carbonised layer on ion-implanted
+* [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — the carbonised layer on ion-implanted
   resist masks.[^orvek-1985]
-* Hook et al., *IEEE TED* 2003 — lateral straggle and the mask proximity
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral straggle and the mask proximity
   effect at an implant resist edge.[^hook-2003]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
 
 ## Open questions

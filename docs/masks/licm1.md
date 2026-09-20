@@ -369,63 +369,63 @@ licon.2).
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Local Intr Cont.1,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Local Intr Cont.1,
   LICM1, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `licon1`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `licon1`
   66:44, the `clicm1` purposes and the `LICM1` column of Table
   F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `LICM1CD`/`LICM1CDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `LICM1CD`/`LICM1CDSP`,
   `LICM1SLCD`/`LICM1SLCDSP`, `LICM1SLSP1`, `LICENCLR`, `LBCD`,
   `LICETANG`, `ILDTHICKN`, `DEFC` and `XMAXCON`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `licon` rules, rpm.1g–1k, npc.5,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `licon` rules, rpm.1g–1k, npc.5,
   li.5, x.1a, x.1b, x.2, x.7, x.9, x.15a and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F4, the
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F4, the
   connectivity of drawn and mask layers.[^pdk-summary]
-* *S8 / SKY130 Process Steps* sheet — the step, the `LICM1` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `LICM1` plates of
   MPW-1 to MPW-8, the "Info" note and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `LICM1` renders, their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `LICM1` renders, their
   layer, note and info text, and the per-die shape
   counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
-* ASML, PAS 5500/750E press release — a KrF scanner for 130 nm design
+* [ASML, PAS 5500/750E press release](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF scanner for 130 nm design
   rules.[^asml-750e]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Phase-shift mask* and *Optical proximity correction* —
+* Wikipedia, [*Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>) and [*Optical proximity correction*](<https://en.wikipedia.org/wiki/Optical_proximity_correction>) —
   why mask shapes differ from drawn shapes.[^wiki-psm][^wiki-opc]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of
   contacts and the size below which it rises.[^wong-1998]
-* Kim et al., *Proc. SPIE* 1999 — mask CD error for sub-quarter-micron
+* [Kim et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354400>) — mask CD error for sub-quarter-micron
   contact holes on binary and attenuated masks.[^kim-1999]
-* Choo et al., *Proc. SPIE* 2000 — an attenuated mask for 0.16 µm
+* [Choo et al., *Proc. SPIE* 2000](<https://doi.org/10.1117/12.388956>) — an attenuated mask for 0.16 µm
   contact holes of a 0.13 µm technology.[^choo-2000]
-* Yang and Dai, *Proc. SPIE* 1998 — side-lobe dimples in 0.2 µm dense
+* [Yang and Dai, *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310784>) — side-lobe dimples in 0.2 µm dense
   contacts printed with an attenuated mask and off-axis
   illumination.[^yang-1998]
-* Chen, Wang and Chu, *Proc. SPIE* 1999 — process latitude of an
+* [Chen, Wang and Chu, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354399>) — process latitude of an
   attenuated mask for contact holes.[^chen-1999-psm]
-* Lu et al., *Proc. SPIE* 1999 — contact-hole resists for attenuated
+* [Lu et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350280>) — contact-hole resists for attenuated
   masks, limited by side-lobe printing.[^lu-1999]
-* Yamamoto et al., MNC 2000 — two-dimensional, hierarchical OPC on
+* [Yamamoto et al., MNC 2000](<https://doi.org/10.1109/IMNC.2000.872612>) — two-dimensional, hierarchical OPC on
   contact-hole layers.[^yamamoto-2000]
-* Levenson, Viswanathan and Simpson, *IEEE TED* 1982 — the
+* [Levenson, Viswanathan and Simpson, *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.21037>) — the
   phase-shifting mask.[^levenson-1982]
-* Lin, *IEEE Circuits and Devices* 1993 — alternating and attenuated
+* [Lin, *IEEE Circuits and Devices* 1993](<https://doi.org/10.1109/101.200850>) — alternating and attenuated
   phase-shift masks.[^lin-1993]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — mask
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — mask
   data preparation, writing and advanced optical masks.[^rizvi-2005]
-* ITRS 2001, *Lithography* — contact-hole sizes and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — contact-hole sizes and the optical mask
   requirements for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

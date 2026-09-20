@@ -333,62 +333,62 @@ with the flag warning that neither is the final size.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Contact, CTM1,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Contact, CTM1,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `mcon` 67:44,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `mcon` 67:44,
   `ctm1` 35:0 and the columns of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `CTM1CD`/`CTM1CDSP`, `CEFC`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `CTM1CD`/`CTM1CDSP`, `CEFC`,
   `TCONOVLP`, `mconLiEnclosure`, `TBOWINGSEAL` and the "Standard contact
   bottom CD".[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `ct` rules, m1.4–m1.5, m1.15,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `ct` rules, m1.4–m1.5, m1.15,
   pwres.7b, x.1a, x.1b, x.2, x.7, x.9, x.15a, x.18 and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Tables F3c and
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Tables F3c and
   F4.[^pdk-summary]
-* SkyWater PDK, *Parasitic Layout Extraction* — the contact and via
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the contact and via
   resistance table.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `CTM1` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `CTM1` plates of
   MPW-1 to MPW-8, the "Info" note and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `CTM1` renders, their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `CTM1` renders, their
   layer, note and info text, and the per-die shape
   counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Phase-shift mask* — the attenuated
+* [Wikipedia, *Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>) — the attenuated
   type.[^wiki-psm]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of
   contacts and the size below which it rises.[^wong-1998]
-* Kim et al., *Proc. SPIE* 1999 — mask CD error for sub-quarter-micron
+* [Kim et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354400>) — mask CD error for sub-quarter-micron
   contact holes.[^kim-1999]
-* Takeuchi and Miyahara, *Proc. SPIE* 1999 — defect detectability and
+* [Takeuchi and Miyahara, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.360251>) — defect detectability and
   printability on KrF halftone contact-hole reticles.[^takeuchi-1999]
-* Choo et al., *Proc. SPIE* 2000 — an attenuated mask for 0.16 µm
+* [Choo et al., *Proc. SPIE* 2000](<https://doi.org/10.1117/12.388956>) — an attenuated mask for 0.16 µm
   contact holes of a 0.13 µm technology.[^choo-2000]
-* Lu et al., *Proc. SPIE* 1999 — contact-hole resists for attenuated
+* [Lu et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350280>) — contact-hole resists for attenuated
   masks, limited by side-lobe printing.[^lu-1999]
-* Yamamoto et al., MNC 2000 — hierarchical OPC on contact-hole
+* [Yamamoto et al., MNC 2000](<https://doi.org/10.1109/IMNC.2000.872612>) — hierarchical OPC on contact-hole
   layers.[^yamamoto-2000]
-* Socha et al. (ASML), *Proc. SPIE* 2004 — assist features for
+* [Socha et al. (ASML), *Proc. SPIE* 2004](<https://doi.org/10.1117/12.536581>) — assist features for
   low-{math}`k_1` contact holes by interference mapping.[^socha-2004]
-* Fukuda et al. (Hitachi), *IEEE EDL* 1987 — FLEX, multiple-focus
+* [Fukuda et al. (Hitachi), *IEEE EDL* 1987](<https://doi.org/10.1109/EDL.1987.26594>) — FLEX, multiple-focus
   exposure for contact holes.[^fukuda-1987]
-* Toyoshima et al. (Mitsubishi), IEDM 1998 — chemical shrink (RELACS) of
+* [Toyoshima et al. (Mitsubishi), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746367>) — chemical shrink (RELACS) of
   KrF resist holes.[^toyoshima-1998]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — mask
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — mask
   writing, advanced optical masks and mask inspection.[^rizvi-2005]
-* ITRS 2001, *Lithography* — contact-hole imaging and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — contact-hole imaging and the optical mask
   requirements for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

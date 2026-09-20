@@ -303,72 +303,72 @@ the plate is placed against other layers.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Deep N-Well, DNM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Deep N-Well, DNM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `dnwell`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `dnwell`
   64:18, `cdnm` 48:0 and the `DNM` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `DNMCD`/`DNMCDSP`, the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `DNMCD`/`DNMCDSP`, the
   created-deep-N-well and mask-edge criteria and the photoresist
   thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `dnwell` and N-well rules,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `dnwell` and N-well rules,
   x.15a and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Device Details* — the deep N-well in the 1.8 V and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the deep N-well in the 1.8 V and
   20 V isolated NMOS and the NPN.[^pdk-07]
-* *S8 / SKY130 Process Steps* sheet — the step, the `DNM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `DNM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `DNM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `DNM` renders, their layer
   and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Photolithography* — i-line exposure.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line exposure.[^wiki-litho]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implant masking by resist.[^txt-02]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on photoresists,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on photoresists,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor for lines
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor for lines
   and holes and the feature size below which it rises.[^wong-1998]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — data
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — data
   preparation, mask writing and conventional optical
   masks.[^rizvi-2005]
-* Buerger et al., *Proc. SPIE* 1999 — hierarchical mask data
+* [Buerger et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.346217>) — hierarchical mask data
   preparation and fracturing, the step between drawn layers and a
   mask writer.[^buerger-1999]
-* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants
+* [Stolmeijer, *IEEE TED* 1986](<https://doi.org/10.1109/T-ED.1986.22511>) — a twin-well CMOS process using implants
   of up to 1 MeV, with an N-type isolation well and retrograde
   wells.[^stolmeijer-1986]
-* Hong et al., TENCON 1999 — triple-well CMOS at 0.22 µm by high-energy
+* [Hong et al., TENCON 1999](<https://doi.org/10.1109/TENCON.1999.818617>) — triple-well CMOS at 0.22 µm by high-energy
   implantation.[^hong-1999]
-* Voldman, *Latchup*, chapter 5 — dual-well and triple-well CMOS as
+* [Voldman, *Latchup*, chapter 5](<https://doi.org/10.1002/9780470516171.ch5>) — dual-well and triple-well CMOS as
   process solutions to latch-up.[^voldman-2007]
-* Chew et al., ESSDERC 2002 — what a deep N-well does for substrate
+* [Chew et al., ESSDERC 2002](<https://doi.org/10.1109/ESSDERC.2002.194917>) — what a deep N-well does for substrate
   noise and RF transistors.[^chew-2002]
-* Oh (Hynix), US 6,806,133 — a contemporaneous triple-well recipe with
+* [Oh (Hynix), US 6,806,133](<https://patents.google.com/patent/US6806133B2/en>) — a contemporaneous triple-well recipe with
   MeV phosphorus energies and doses.[^pat-dnw-hynix]
-* Buffat and Adams (Zilog), US 6,576,405 — resist thickness and aspect
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — resist thickness and aspect
   ratio for MeV well implant masks.[^pat-resist-zilog]
-* Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
+* [Ross et al., *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241862>) — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation and the dose shift it causes.[^lee-1996]
-* Tsukamoto et al., *NIM B* 1991 — a review of high-energy
+* [Tsukamoto et al., *NIM B* 1991](<https://doi.org/10.1016/0168-583X(91)95283-J>) — a review of high-energy
   implantation for ULSI.[^tsukamoto-1991]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* ITRS 2001, *Lithography* — mask magnification and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the optical mask
   requirements of the 130 nm generation.[^itrs-03]
 
 ## Open questions

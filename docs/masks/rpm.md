@@ -339,72 +339,72 @@ to this plate.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Resistor Protect, RPM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Resistor Protect, RPM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `rpm`, `urpm`,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `rpm`, `urpm`,
   `crpm`, the `prec_resistor` definition of Table C3 and the `RPM`
   column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `RPMCD`/`RPMCDSP`, the poly
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `RPMCD`/`RPMCDSP`, the poly
   resistor and precision resistor criteria and the photoresist
   thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `rpm` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `rpm` rules and function line,
   licon.1b, licon.1c, licon.9, x.15a and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `rpm` and
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `rpm` and
   `urpm` messages and the `RPMmk` checks.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the P+ and P− poly precision
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the P+ and P− poly precision
   resistors.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — the poly and resistor
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the poly and resistor
   sheet resistances.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `RPM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `RPM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `RPM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `RPM` renders, their layer
   and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Sheet resistance* — the ohms-per-square
+* [Wikipedia, *Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>) — the ohms-per-square
   convention.[^wiki-rs]
-* Kamins, *Polycrystalline Silicon for Integrated Circuits and Displays* —
+* [Kamins, *Polycrystalline Silicon for Integrated Circuits and Displays*](<https://doi.org/10.1007/978-1-4615-5577-3>) —
   deposition, doping and electrical properties of poly
   films.[^kamins-1998]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
 
 ### Deep dive
 
-* Lu et al., *IEEE TED* 1981 — modelling and optimisation of monolithic
+* [Lu et al., *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20437>) — modelling and optimisation of monolithic
   poly resistors.[^lu-1981]
-* Lane and Wrixon, *IEEE TED* 1989 — the design of thin-film poly
+* [Lane and Wrixon, *IEEE TED* 1989](<https://doi.org/10.1109/16.22479>) — the design of thin-film poly
   resistors for analogue ICs.[^lane-1989]
-* Seto, *J. Appl. Phys.* 1975 — grain-boundary trapping and the steep
+* [Seto, *J. Appl. Phys.* 1975](<https://doi.org/10.1063/1.321593>) — grain-boundary trapping and the steep
   dependence of poly resistivity on doping.[^seto-1975]
-* Mandurah, Saraswat and Kamins, *IEEE TED* 1981 — conduction in poly
+* [Mandurah, Saraswat and Kamins, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20504>) — conduction in poly
   with dopant segregation to the grain boundaries.[^mandurah-1981]
-* Liu et al., *IEEE EDL* 2001 — electrical width, interface resistance
+* [Liu et al., *IEEE EDL* 2001](<https://doi.org/10.1109/55.930677>) — electrical width, interface resistance
   and sheet resistance of poly resistors in sub-0.25 µm CMOS.[^liu-2001]
-* O'Dwyer and Kennedy, PRIME 2009 — matching of poly resistor films in a
+* [O'Dwyer and Kennedy, PRIME 2009](<https://doi.org/10.1109/RME.2009.5201322>) — matching of poly resistor films in a
   CMOS process.[^odwyer-2009]
-* Tsang et al., *IEEE TSM* 2014 — resistance variation across banks of
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — resistance variation across banks of
   high-value poly resistors.[^tsang-2014]
-* Wright et al., *JVST B* 2010 — rf-sputtered Cr–Si–B–SiO₂/Al₂O₃
+* [Wright et al., *JVST B* 2010](<https://doi.org/10.1116/1.3466531>) — rf-sputtered Cr–Si–B–SiO₂/Al₂O₃
   thin-film resistors reaching 20 kΩ/sq at <200 ppm/°C: the non-poly
   alternative route to a high-sheet-resistance, low-TCR
   film.[^wright-2010]
-* Orvek and Huffman, *NIM B* 1985 — the carbonised layer on ion-implanted
+* [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — the carbonised layer on ion-implanted
   resist masks.[^orvek-1985]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   their lateral reach.[^hook-2003]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* ITRS 2001, *Lithography* — mask magnification and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the optical mask
   requirements of the 130 nm generation.[^itrs-03]
 
 ## Open questions

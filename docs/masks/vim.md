@@ -343,60 +343,60 @@ arithmetic from via.1a and via.2), the smallest hole in the flow.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Via, VIM, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `via` 68:44,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Via, VIM, X".[^pdk-05]
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `via` 68:44,
   `cviam` 40:0, `areaid.mt` and the columns of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `VIMCD`/`VIMCDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `VIMCD`/`VIMCDSP`,
   `VIM_CuCD`/`VIM_CuCDSP`, `VEFC` and `Via1Slope`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `via` rules, m2.4, m2.5, m2.15,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `via` rules, m2.4, m2.5, m2.15,
   capm.8, x.1a, x.1b, x.2, x.7, x.9, x.15a, x.18 and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Tables F3c and
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Tables F3c and
   F4.[^pdk-summary]
-* SkyWater PDK, *Process stack diagram* — the 0.27 µm via-1
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the 0.27 µm via-1
   height.[^pdk-04]
-* SkyWater PDK, *Parasitic Layout Extraction* — the contact and via
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the contact and via
   resistance table.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `VIM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `VIM` plates of
   MPW-1 to MPW-8, the "Info" notes and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `VIM` renders, their layer,
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `VIM` renders, their layer,
   note and info text, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
 
 ### High-level understanding
 
-* Wikipedia, *Via (electronics)* — what a via is.[^wiki-via]
-* Wikipedia, *Photomask* and *Phase-shift mask* — binary and attenuated
+* [Wikipedia, *Via (electronics)*](<https://en.wikipedia.org/wiki/Via_(electronics)>) — what a via is.[^wiki-via]
+* Wikipedia, [*Photomask*](<https://en.wikipedia.org/wiki/Photomask>) and [*Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>) — binary and attenuated
   plates.[^wiki-mask][^wiki-psm]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of
   contacts and the size below which it rises.[^wong-1998]
-* Kim et al., *Proc. SPIE* 1999 — mask CD error for sub-quarter-micron
+* [Kim et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354400>) — mask CD error for sub-quarter-micron
   contact holes on binary and attenuated masks.[^kim-1999]
-* Ma and Andersson, *Proc. SPIE* 1998 — the cause of side-lobe printing
+* [Ma and Andersson, *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310783>) — the cause of side-lobe printing
   with attenuated plates and a rim-shifter remedy.[^ma-andersson-1998]
-* Iwasaki, Hoshi and Tanabe, *Proc. SPIE* 1998 — rim-type attenuated
+* [Iwasaki, Hoshi and Tanabe, *Proc. SPIE* 1998](<https://doi.org/10.1117/12.328842>) — rim-type attenuated
   plates for 0.15 µm hole patterns.[^iwasaki-1998]
-* Chen, Wang and Chu, *Proc. SPIE* 1999 — process latitude and CD bias
+* [Chen, Wang and Chu, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354399>) — process latitude and CD bias
   of an attenuated mask for contact holes.[^chen-1999-psm]
-* Yamamoto et al., MNC 2000 — two-dimensional, hierarchical OPC on
+* [Yamamoto et al., MNC 2000](<https://doi.org/10.1109/IMNC.2000.872612>) — two-dimensional, hierarchical OPC on
   contact-hole layers.[^yamamoto-2000]
-* Samuels, Maurer and Farrell, *Proc. SPIE* 1995 — OPC, mask CD
+* [Samuels, Maurer and Farrell, *Proc. SPIE* 1995](<https://doi.org/10.1117/12.228213>) — OPC, mask CD
   tolerance and mask grid size.[^samuels-1995]
-* Toyoshima et al. (Mitsubishi), IEDM 1998 — chemical shrink (RELACS) of
+* [Toyoshima et al. (Mitsubishi), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746367>) — chemical shrink (RELACS) of
   KrF resist holes.[^toyoshima-1998]
-* Brunner, *Proc. SPIE* 1991 — the swing ratio and anti-reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — the swing ratio and anti-reflective
   coatings.[^brunner-1991]
-* Le, Banerjee and McPherson (TI), *Semicond. Sci. Technol.* 1996 — via
+* [Le, Banerjee and McPherson (TI), *Semicond. Sci. Technol.* 1996](<https://doi.org/10.1088/0268-1242/11/6/003>) — via
   size and tungsten-plug via electromigration.[^le-1996]
-* ITRS 2001, *Lithography* — contact and via mask requirements for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — contact and via mask requirements for
   critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

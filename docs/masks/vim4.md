@@ -300,57 +300,57 @@ via4.1 and via4.2).
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Via4, VIM4, X" and the
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Via4, VIM4, X" and the
   unmarked "Pad Via, VIPDM".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `via4` 71:44
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `via4` 71:44
   and the `cviam4` purposes.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `VIM4CD`/`VIM4CDSP` and
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `VIM4CD`/`VIM4CDSP` and
   `VIPDMCD`/`VIPDMCDSP`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `via4` rules, m5.3, x.2, x.15a
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `via4` rules, m5.3, x.2, x.15a
   and the flag legend.[^pdk-periph]
-* *S8 / SKY130 Process Steps* sheet — the step, the `VIM4` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `VIM4` plates of
   MPW-1 to MPW-8 and the "Sheet4" mask type.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `VIM4` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `VIM4` renders, their layer
   and info text.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV and i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV and i-line exposure
   tools.[^skw-01]
-* Photronics, *Advanced Binary Reticle* — binary reticles, laser and
+* [Photronics, *Advanced Binary Reticle*](<https://www.photronics.com/products/advanced-binary-reticle/>) — binary reticles, laser and
   e-beam writing, dry etch and the EAPSM abbreviation.[^photronics-abr]
-* SkyWater PDK, *Device Details* — the stacked MiM capacitor
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the stacked MiM capacitor
   cross-section with `CAP2M` and via 4.[^pdk-07]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — binary and phase-shift masks.[^wiki-mask]
-* Wikipedia, *Via (electronics)* — what a via is.[^wiki-via]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging of
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — binary and phase-shift masks.[^wiki-mask]
+* [Wikipedia, *Via (electronics)*](<https://en.wikipedia.org/wiki/Via_(electronics)>) — what a via is.[^wiki-via]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging of
   contact holes.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on masks and
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on masks and
   reticles, overlay and lithography costs.[^levinson-2005]
 
 ### Deep dive
 
-* Lin and Wang (TSMC), US 6,379,849 — forming binary intensity masks,
+* [Lin and Wang (TSMC), US 6,379,849](<https://patents.google.com/patent/US6379849B1/en>) — forming binary intensity masks,
   the "BIM" of the mask-type code.[^pat-bim-tsmc]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of
   contacts and the size below which it rises.[^wong-1998]
-* Kim et al., *Proc. SPIE* 1999 — mask CD error for contact holes on
+* [Kim et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354400>) — mask CD error for contact holes on
   binary and attenuated phase-shift masks.[^kim-1999]
-* Chen, Wang and Chu, *Proc. SPIE* 1999 — attenuated phase-shift masks
+* [Chen, Wang and Chu, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.354399>) — attenuated phase-shift masks
   for contact holes, the type recorded for vias 2 and
   3.[^chen-1999-psm]
-* Morgante and Hamaker, *Proc. SPIE* 2000 — a laser reticle writer and
+* [Morgante and Hamaker, *Proc. SPIE* 2000](<https://doi.org/10.1117/12.392079>) — a laser reticle writer and
   the mask nodes it served.[^morgante-2000]
-* Buck and Grenon, *Proc. SPIE* 1994 — wet against dry chrome etching of
+* [Buck and Grenon, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.167247>) — wet against dry chrome etching of
   masks, undercut and its compensation.[^buck-1994]
-* Flack, Tokunaga and Edwards, *Proc. SPIE* 1993 — chrome dry etching
+* [Flack, Tokunaga and Edwards, *Proc. SPIE* 1993](<https://doi.org/10.1117/12.142153>) — chrome dry etching
   for sub-half-micron reticle features.[^flack-1993]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — laser
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — laser
   mask writers, conventional optical masks and mask
   processing.[^rizvi-2005]
-* Ito, *Adv. Polym. Sci.* 2005 — the chemically amplified resists of
+* [Ito, *Adv. Polym. Sci.* 2005](<https://doi.org/10.1007/b97574>) — the chemically amplified resists of
   248 nm exposure.[^ito-2005]
-* ITRS 2001, *Lithography* — mask magnification and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the optical mask
   requirements for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

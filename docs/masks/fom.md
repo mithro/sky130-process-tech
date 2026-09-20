@@ -374,68 +374,68 @@ space.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Field Oxide, FOM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Field Oxide, FOM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `diff`, `tap`,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `diff`, `tap`,
   the `cfom` purposes, `fom` dummy, `areaid.ww`, the Table C3
   definitions and the `FOM` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `FOMCD`/`FOMCDSP`, `FOMSE`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `FOMCD`/`FOMCDSP`, `FOMSE`,
   `FOMSESC`, the pattern-density criteria and the process-bias
   tolerance.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `difftap` rules, x.1a, x.1b,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `difftap` rules, x.1a, x.1b,
   x.2, x.9, x.15a, the poly placement rules and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the
   `cfom.nikon` checks.[^pdk-errors]
-* SkyWater PDK Authors, test-tile pad documentation — the "FOM w/s"
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the "FOM w/s"
   values of the gate-oxide capacitors.[^raw-data-testtile-pads]
-* *S8 / SKY130 Process Steps* sheet — the step, the `FOM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `FOM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `FOM` renders, their layers
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `FOM` renders, their layers
   and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
-* ASML, PAS 5500/750E press release — a KrF scanner for 130 nm
+* [ASML, PAS 5500/750E press release](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF scanner for 130 nm
   resolution.[^asml-750e]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Shallow trench isolation* — the etch, fill and polish
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the etch, fill and polish
   that the mask starts.[^wiki-sti]
-* Wikipedia, *Photolithography* — KrF and i-line exposure.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — KrF and i-line exposure.[^wiki-litho]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of lines
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of lines
   and spaces and the size below which it rises.[^wong-1998]
-* Tian, Tang and Wong, *IEEE TCAD* 2002 — dummy-feature placement for
+* [Tian, Tang and Wong, *IEEE TCAD* 2002](<https://doi.org/10.1109/43.974138>) — dummy-feature placement for
   the dual-material STI polish.[^tian-2002]
-* Gan et al., *J. Electrochem. Soc.* 2001 — a CMP model for
+* [Gan et al., *J. Electrochem. Soc.* 2001](<https://doi.org/10.1149/1.1348266>) — a CMP model for
   reverse-tone etchback STI and the pattern-density effects it
   predicts.[^gan-2001]
-* Stine et al., *IEEE TSM* 1998 — pattern-dependent CMP variation, the
+* [Stine et al., *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — pattern-dependent CMP variation, the
   basis of density rules.[^stine-1998]
-* Kahng and Samadi, *IEEE TCAD* 2008 — a survey of CMP fill
+* [Kahng and Samadi, *IEEE TCAD* 2008](<https://doi.org/10.1109/TCAD.2007.907061>) — a survey of CMP fill
   synthesis.[^kahng-2008]
-* Chiou and Jang (TSMC), US 6,849,549 — dummy structures for CMP
+* [Chiou and Jang (TSMC), US 6,849,549](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6849549>) — dummy structures for CMP
   planarity with reduced added capacitance.[^pat-dummy-tsmc]
-* Thung et al., *JTEC* 2016 — 0.13 µm STI on 0.18 µm tools, including
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — 0.13 µm STI on 0.18 µm tools, including
   OPC on the STI layout.[^thung-2016]
-* Otto et al., *Proc. SPIE* 1994 — rules-based optical proximity
+* [Otto et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175422>) — rules-based optical proximity
   correction.[^otto-1994]
-* Edmark and Ausschnitt, *Proc. SPIE* 1985 — stepper overlay
+* [Edmark and Ausschnitt, *Proc. SPIE* 1985](<https://doi.org/10.1117/12.947752>) — stepper overlay
   calibration by aligning to a latent image.[^edmark-1985]
-* van Haren et al., *Proc. SPIE* 2019 — how alignment-mark placement
+* [van Haren et al., *Proc. SPIE* 2019](<https://doi.org/10.1117/12.2536270>) — how alignment-mark placement
   limits layer-to-layer overlay.[^van-haren-2019]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — data
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — data
   preparation, mask writing and optical masks.[^rizvi-2005]
-* ITRS 2001, *Lithography* — mask magnification and the exposure
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the exposure
   options of the 130 nm generation.[^itrs-03]
 
 ## Open questions

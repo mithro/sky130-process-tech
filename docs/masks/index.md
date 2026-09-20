@@ -745,94 +745,94 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — every mask name,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — every mask name,
   acronym and `Used in SKY130` mark on this page.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — drawn and
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — drawn and
   mask-level layers with layer:datatype and description; Table F2b,
   the mask generation table.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions*, Table 2 — minimum feature
+* [SkyWater PDK, *Criteria & Assumptions*, Table 2](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — minimum feature
   and space per mask with variable names.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — rules x.9 and x.15a on mask-level
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — rules x.9 and x.15a on mask-level
   layers, the grid rules x.1a and x.1b, the rule-set function lines and
   the metal-fuse note.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the checks on
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the checks on
   the undefined `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM`
   layers.[^pdk-errors]
-* SkyWater PDK, *WLCSP Rules* — the DECA `cpbo`, `rdl` and `cpmm2`
+* [SkyWater PDK, *WLCSP Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>) — the DECA `cpbo`, `rdl` and `cpmm2`
   rule sets.[^pdk-wlcsp]
-* SkyWater PDK, *Device Details* — the two MiM capacitor constructions,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the two MiM capacitor constructions,
   `CAPM` and `CAP2M`.[^pdk-07]
-* SkyWater PDK Authors, test-tile pad documentation — the `RRPM`,
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the `RRPM`,
   `URPM`, `CAPM` and `CAP2M` names on test structures and the
   minimum-CD values the structures use.[^raw-data-testtile-pads]
-* *S8 / SKY130 Process Steps* sheet, tabs "Run Mask IDs", "Masks",
-  "Sheet4" and "Random Mask Case Label Info" — the plates recorded for
+* [*S8 / SKY130 Process Steps* sheet, tabs "Run Mask IDs", "Masks",
+  "Sheet4" and "Random Mask Case Label Info"](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the plates recorded for
   each mask on MPW-1 to MPW-8, the mask-step list, the via mask types
   and the plate-case labels.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the drawn shapes of the 40
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the drawn shapes of the 40
   tape-out dies of each MPW run on each of 42 mask layers, with the
   site's reticle-set, lot and derivation metadata.[^mask-renders]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, substrates, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, substrates, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — the mask step in the process
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — the mask step in the process
   sequence.[^wiki-litho]
-* Wikipedia, *Optical proximity correction* and *Phase-shift mask* —
+* Wikipedia, [*Optical proximity correction*](<https://en.wikipedia.org/wiki/Optical_proximity_correction>) and [*Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>) —
   why mask shapes differ from drawn shapes.[^wiki-opc][^wiki-psm]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography*, 4th ed. — masks, overlay and
+* [Levinson, *Principles of Lithography*, 4th ed.](<https://doi.org/10.1117/3.2525393>) — masks, overlay and
   metrology in one volume.[^levinson-2019]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography chapters.[^txt-02]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — the
   fab-floor view of masks and photolithography.[^txt-07]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   lithography chapters.[^campbell-2013]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — mask magnification, PSM choices and
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification, PSM choices and
   overlay targets for the 130 nm generation.[^itrs-03]
-* Levenson, Viswanathan and Simpson (IBM), *IEEE TED* 1982 — the
+* [Levenson, Viswanathan and Simpson (IBM), *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.21037>) — the
   original phase-shifting mask.[^levenson-1982]
-* Lin, *IEEE Circuits and Devices* 1993 — a tutorial on alternating
+* [Lin, *IEEE Circuits and Devices* 1993](<https://doi.org/10.1109/101.200850>) — a tutorial on alternating
   and attenuated phase-shift masks.[^lin-1993]
-* Otto et al., *Proc. SPIE* 1994 — rules-based optical proximity
+* [Otto et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175422>) — rules-based optical proximity
   correction, one way drawn data become mask data.[^otto-1994]
-* Rieger and Stirniman, *Proc. SPIE* 1994 — model-based proximity
+* [Rieger and Stirniman, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175431>) — model-based proximity
   correction.[^rieger-1994]
-* Cobb and Zakhor, *Proc. SPIE* 1995 — fast aerial-image calculation
+* [Cobb and Zakhor, *Proc. SPIE* 1995](<https://doi.org/10.1117/12.228208>) — fast aerial-image calculation
   for model-based OPC.[^cobb-1995]
-* Yamamoto et al., MNC 2000 — hierarchical OPC on contact-hole layers,
+* [Yamamoto et al., MNC 2000](<https://doi.org/10.1109/IMNC.2000.872612>) — hierarchical OPC on contact-hole layers,
   the data-volume side of mask preparation.[^yamamoto-2000]
-* Wong, *Resolution Enhancement Techniques in Optical Lithography* —
+* [Wong, *Resolution Enhancement Techniques in Optical Lithography*](<https://doi.org/10.1117/3.401208>) —
   the SPIE text on PSM, OPC and off-axis illumination.[^wong-2001]
-* Kahng and Samadi, *IEEE TCAD* 2008 — a survey of CMP dummy-fill
+* [Kahng and Samadi, *IEEE TCAD* 2008](<https://doi.org/10.1109/TCAD.2007.907061>) — a survey of CMP dummy-fill
   synthesis, the design-side view of waffle and fill
   layers.[^kahng-2008]
-* Stine et al., *IEEE TSM* 1998 — pattern-dependent CMP variation, the
+* [Stine et al., *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — pattern-dependent CMP variation, the
   basis of density-driven fill rules.[^stine-1998]
-* Chiou and Jang (TSMC), US 6,849,549 — dummy structures for CMP
+* [Chiou and Jang (TSMC), US 6,849,549](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6849549>) — dummy structures for CMP
   planarity with reduced added capacitance.[^pat-dummy-tsmc]
-* Buffat and Adams (Zilog), US 6,576,405 — thick-resist masking for
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — thick-resist masking for
   high-energy implants, the demand an implant block mask
   meets.[^pat-resist-zilog]
-* Edmark and Ausschnitt, *Proc. SPIE* 1985 — stepper overlay
+* [Edmark and Ausschnitt, *Proc. SPIE* 1985](<https://doi.org/10.1117/12.947752>) — stepper overlay
   calibration by aligning to a latent image, relevant to the first
   mask level.[^edmark-1985]
-* Starikov, *Opt. Eng.* 1992 — accuracy of overlay measurement between
+* [Starikov, *Opt. Eng.* 1992](<https://doi.org/10.1117/12.56172>) — accuracy of overlay measurement between
   mask levels.[^starikov-1992]
-* van Haren et al., *Proc. SPIE* 2019 — how alignment-mark placement
+* [van Haren et al., *Proc. SPIE* 2019](<https://doi.org/10.1117/12.2536270>) — how alignment-mark placement
   on the reticle limits layer-to-layer overlay.[^van-haren-2019]
-* Levinson, *Principles of Lithography*, 2nd ed. — chapters on wafer
+* [Levinson, *Principles of Lithography*, 2nd ed.](<https://doi.org/10.1117/3.601520>) — chapters on wafer
   steppers, overlay, masks and reticles, and lithography
   costs.[^levinson-2005]
-* SEMI P1 — the specification for hard-surface photomask
+* [SEMI P1](<https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>) — the specification for hard-surface photomask
   substrates.[^semi-p1]
-* Bruning, *Proc. SPIE* 2007 — forty years of optical lithography
+* [Bruning, *Proc. SPIE* 2007](<https://doi.org/10.1117/12.720631>) — forty years of optical lithography
   tools that print masks onto wafers.[^bruning-2007]
 
 ## Open questions

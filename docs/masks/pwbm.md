@@ -327,66 +327,66 @@ features (inference).
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "P-Well Block Mask,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "P-Well Block Mask,
   PWBM" with the `Used in SKY130` field blank.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `pwbm`,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `pwbm`,
   `nwell`, the `pwell` definition of Table C3 and the `PWBM` column of
   Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `PWBMCD`/`PWBMCDSP` and the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `PWBMCD`/`PWBMCDSP` and the
   P-well profile, junction and spacing criteria.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `pwbm` rules and function line
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `pwbm` rules and function line
   and the rules of other layers that name `pwbm`.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the values in
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the values in
   the `pwbm.5` and `rpm.10` messages.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the 20 V zero-Vt NMOS with its P-well
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the 20 V zero-Vt NMOS with its P-well
   blocked.[^pdk-07]
-* SkyWater PDK Authors, test-tile pad documentation — the 20 V zero-Vt
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the 20 V zero-Vt
   structure and the P-well isolation structures.[^raw-data-testtile-pads]
-* *S8 / SKY130 Process Steps* sheet — the step and the `PWBM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step and the `PWBM` plates of
   MPW-6 and MPW-8.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the empty `PWBM` renders and
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the empty `PWBM` renders and
   their layer.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
 
 ### High-level understanding
 
-* Wikipedia, *CMOS* — NMOS on the p-substrate, PMOS in an
+* [Wikipedia, *CMOS*](<https://en.wikipedia.org/wiki/CMOS>) — NMOS on the p-substrate, PMOS in an
   N-well.[^wiki-cmos]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implant masking by resist.[^txt-02]
 
 ### Deep dive
 
-* Combs, IEDM 1981 — a retrograde P-well from a single high-energy boron
+* [Combs, IEDM 1981](<https://doi.org/10.1109/IEDM.1981.190084>) — a retrograde P-well from a single high-energy boron
   implant.[^combs-1981]
-* Rung, Dell'Oca and Walker, *IEEE TED* 1981 — the retrograde well and
+* [Rung, Dell'Oca and Walker, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20498>) — the retrograde well and
   the device spacing it allows.[^rung-1981]
-* Matlock (Harris), US 5,247,199 — twin wells with a patterned P-well
+* [Matlock (Harris), US 5,247,199](<https://patents.google.com/patent/US5247199A/en>) — twin wells with a patterned P-well
   implant resist.[^pat-twin-harris]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde wells
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — retrograde wells
   with resist thickness and boron energies.[^pat-well-ibm]
-* Lee and Son (Hynix), US 6,455,402 — a three-energy boron
+* [Lee and Son (Hynix), US 6,455,402](<https://patents.google.com/patent/US6455402B2/en>) — a three-energy boron
   P-well.[^pat-well-hynix]
-* Tee et al., ICEDSA 2010 — the baseline P-well implant used in a
+* [Tee et al., ICEDSA 2010](<https://doi.org/10.1109/ICEDSA.2010.5503059>) — the baseline P-well implant used in a
   high-voltage LDNMOS to avoid an extra mask.[^tee-2010]
-* Buffat and Adams (Zilog), US 6,576,405 — resist thickness for MeV
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — resist thickness for MeV
   well implants.[^pat-resist-zilog]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
-* Sheu et al., *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al., *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect.[^sheu-2006]
-* Rubin, Morris and Jasper, IIT 2002 — retrograde-well implant control
+* [Rubin, Morris and Jasper, IIT 2002](<https://doi.org/10.1109/IIT.2002.1257927>) — retrograde-well implant control
   and narrow n+/p+ isolation.[^rubin-2002]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation.[^lee-1996]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
 
 ## Open questions

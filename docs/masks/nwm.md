@@ -366,79 +366,79 @@ nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "N-Well\*, NWM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "N-Well\*, NWM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `nwell`,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `nwell`,
   `cnwm`, the Table C3 definitions and the `NWM` column of Table
   F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `NWMCD`/`NWMCDSP`, the N-well
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `NWMCD`/`NWMCDSP`, the N-well
   profile, junction, punch-through and latch-up criteria, the photo-diode
   `PDNwmCD` and `PDNwmDnwEnc` rows, the serif and extension rows and the
   photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `nwell` rules, the diffusion and
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `nwell` rules, the diffusion and
   high-voltage rules against N-well, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the
   `cnwm.nikon` checks.[^pdk-errors]
-* SkyWater PDK, *Device Details* and *High Voltage Methodology* — the
+* SkyWater PDK, [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) and [*High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — the
   devices built in N-well and the drain extensions made of
   it.[^pdk-07][^pdk-hv]
-* SkyWater PDK Authors, test-tile pad documentation — the N-well
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the N-well
   isolation spacings.[^raw-data-testtile-pads]
-* *S8 / SKY130 Process Steps* sheet — the step, the `NWM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `NWM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `NWM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `NWM` renders, their layer
   and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 ### High-level understanding
 
-* Wikipedia, *CMOS* — NMOS on the p-substrate, PMOS in an
+* [Wikipedia, *CMOS*](<https://en.wikipedia.org/wiki/CMOS>) — NMOS on the p-substrate, PMOS in an
   N-well.[^wiki-cmos]
-* Wikipedia, *Latch-up* — the parasitic path through the
+* [Wikipedia, *Latch-up*](<https://en.wikipedia.org/wiki/Latch-up>) — the parasitic path through the
   wells.[^wiki-latchup]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implant masking by resist.[^txt-02]
-* Levinson, *Principles of Lithography* — chapters on photoresists,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on photoresists,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Rung, Dell'Oca and Walker, *IEEE TED* 1981 — the retrograde well made
+* [Rung, Dell'Oca and Walker, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20498>) — the retrograde well made
   by a deep implant and a brief anneal.[^rung-1981]
-* Martin and Chen, *IEEE JSSC* 1986 — optimising a high-energy
+* [Martin and Chen, *IEEE JSSC* 1986](<https://doi.org/10.1109/JSSC.1986.1052516>) — optimising a high-energy
   implanted N-well for 1 µm CMOS.[^martin-1986]
-* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants
+* [Stolmeijer, *IEEE TED* 1986](<https://doi.org/10.1109/T-ED.1986.22511>) — a twin-well CMOS process using implants
   of up to 1 MeV, with an N-type isolation well and retrograde
   wells.[^stolmeijer-1986]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde N- and
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — retrograde N- and
   P-wells with the resist thickness and implant energies.[^pat-well-ibm]
-* Buffat and Adams (Zilog), US 6,576,405 — resist thickness for MeV well
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — resist thickness for MeV well
   implants.[^pat-resist-zilog]
-* Mitros (Texas Instruments), US 6,660,603 — the N-well as a drain
+* [Mitros (Texas Instruments), US 6,660,603](<https://patents.google.com/patent/US6660603B2/en>) — the N-well as a drain
   extension.[^pat-demos-ti]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
-* Sheu et al., *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al., *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect.[^sheu-2006]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation.[^lee-1996]
-* Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
+* [Ross et al., *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241862>) — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Morris and Rubin, IIT 2000 — batch high-energy against serial
+* [Morris and Rubin, IIT 2000](<https://doi.org/10.1109/IIT.2000.924093>) — batch high-energy against serial
   medium-current implanters for modulated well implants.[^morris-2000]
-* Rubin, Morris and Jasper, IIT 2002 — retrograde-well implant control
+* [Rubin, Morris and Jasper, IIT 2002](<https://doi.org/10.1109/IIT.2002.1257927>) — retrograde-well implant control
   and narrow n+/p+ isolation.[^rubin-2002]
-* Tsukamoto et al., *NIM B* 1991 — a review of high-energy implantation
+* [Tsukamoto et al., *NIM B* 1991](<https://doi.org/10.1016/0168-583X(91)95283-J>) — a review of high-energy implantation
   for ULSI.[^tsukamoto-1991]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
 
 ## Open questions

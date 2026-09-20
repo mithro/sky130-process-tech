@@ -422,70 +422,70 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Metal 4, MM4,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Metal 4, MM4,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `met4` 71:20
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `met4` 71:20
   and its fuse purpose, the `cmm4` purposes, `target`, Table C3 and the
   columns of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `MM4CD`/`MM4CDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `MM4CD`/`MM4CDSP`,
   `MM4_CuCD`/`MM4_CuCDSP`, `BiasMM4`, the metal-4 antenna thicknesses, the
   laser-fuse criteria, `HugeM`, `PimFuseEnc` and `PimLaserEnc`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `m4` rules, via4.4, the fuse note
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `m4` rules, via4.4, the fuse note
   and `mf` rules, nsm.3, x.1a, x.1b, x.7, x.9, x.11, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
-* SkyWater PDK, *Error Messages* page — the metal-4 fuse checks and the
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F4.[^pdk-summary]
+* [SkyWater PDK, *Error Messages* page](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) — the metal-4 fuse checks and the
   `cmm4.nikon` checks.[^pdk-errors]
-* SkyWater PDK, *Process stack diagram* — the 0.845 µm `metal4`.[^pdk-04]
-* SkyWater PDK, *Device Details* — the stacked MiM cross-section with its
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the 0.845 µm `metal4`.[^pdk-04]
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the stacked MiM cross-section with its
   two metal-4 plates.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — the metal sheet
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the metal sheet
   resistances.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `MM4` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `MM4` plates of
   MPW-1 to MPW-8, the "Info" note and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `MM4` renders, their layers
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `MM4` renders, their layers
   and info text, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line and DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line and DUV exposure
   tools.[^skw-01]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line and DUV exposure.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line and DUV exposure.[^wiki-litho]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Smith et al., *IEEE JSSC* 1981 — laser-programmed
+* [Smith et al., *IEEE JSSC* 1981](<https://doi.org/10.1109/JSSC.1981.1051630>) — laser-programmed
   redundancy, link geometry, spot size and targeting.[^smith-1981]
-* Tian, Wong and Boone, *IEEE TCAD* 2001 — model-based dummy-feature
+* [Tian, Wong and Boone, *IEEE TCAD* 2001](<https://doi.org/10.1109/43.931037>) — model-based dummy-feature
   placement over single and multiple layers.[^tian-2001]
-* Kahng et al., *IEEE TCAD* 1999 — fill synthesis to density bounds in
+* [Kahng et al., *IEEE TCAD* 1999](<https://doi.org/10.1109/43.752928>) — fill synthesis to density bounds in
   fixed windows.[^kahng-1999]
-* Kahng and Samadi, *IEEE TCAD* 2008 — a survey of CMP fill
+* [Kahng and Samadi, *IEEE TCAD* 2008](<https://doi.org/10.1109/TCAD.2007.907061>) — a survey of CMP fill
   synthesis.[^kahng-2008]
-* Stine et al., *IEEE TSM* 1998 — pattern density as the dominant factor
+* [Stine et al., *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — pattern density as the dominant factor
   in dielectric polishing.[^stine-1998]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of dense
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of dense
   lines and the size below which it rises.[^wong-1998]
-* Hochmuth, Ruhl and Coleman, *Proc. SPIE* 1999 — plate CD against chrome
+* [Hochmuth, Ruhl and Coleman, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.373324>) — plate CD against chrome
   loading in dry-etched masks.[^hochmuth-1999]
-* Brunner, *Proc. SPIE* 1991 — the swing ratio and anti-reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — the swing ratio and anti-reflective
   coatings.[^brunner-1991]
-* Rocke and Schneegans, *JVST B* 1988 — titanium nitride as an
+* [Rocke and Schneegans, *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — titanium nitride as an
   anti-reflection layer on aluminium.[^rocke-1988]
-* Bohr, IEDM 1995 — interconnect as the limit on performance.[^bohr-1995]
-* Stamper, Fuselier and Tian, IITC 1998 — RC delay of aluminium wiring
+* [Bohr, IEDM 1995](<https://doi.org/10.1109/IEDM.1995.499187>) — interconnect as the limit on performance.[^bohr-1995]
+* [Stamper, Fuselier and Tian, IITC 1998](<https://doi.org/10.1109/IITC.1998.704752>) — RC delay of aluminium wiring
   below 0.25 µm.[^stamper-1998]
-* Ng et al., *IEEE TED* 2005 — MiM integration in Al–Cu and copper back
+* [Ng et al., *IEEE TED* 2005](<https://doi.org/10.1109/TED.2005.850642>) — MiM integration in Al–Cu and copper back
   ends.[^ng-2005]
-* Kar-Roy and Racanelli (Newport Fab), US 6,430,028 — the bottom-plate
+* [Kar-Roy and Racanelli (Newport Fab), US 6,430,028](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>) — the bottom-plate
   metal patterned after the top plate.[^pat-mim-newportfab]
 
 ## Open questions

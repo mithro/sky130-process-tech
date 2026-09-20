@@ -334,66 +334,66 @@ pitch, and elsewhere 0.170 µm on a 0.34 µm pitch (our arithmetic).
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Local Intrcnct 1, LI1M,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Local Intrcnct 1, LI1M,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `li1` 67:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `li1` 67:20,
   the `cli1m` purposes and the `LI1M` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `LI1MCD`/`LI1MCDSP`, "LI1CD
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `LI1MCD`/`LI1MCDSP`, "LI1CD
   add/drop", `LI1PROXSpace`, `LiThick`, `LIRESCD`, `NSMKeepout`,
   `TCONOVLP` and "Mcon enclosure by Li".[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `li` rules, licon.4, ct.4,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `li` rules, licon.4, ct.4,
   nsm.3, mf.7, x.1a, x.1b, x.2, x.7, x.9, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Process stack diagram* — the 0.10 µm `li`.[^pdk-04]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Tables F3c and
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the 0.10 µm `li`.[^pdk-04]
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Tables F3c and
   F4.[^pdk-summary]
-* *S8 / SKY130 Process Steps* sheet — the step, the `LI1M` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `LI1M` plates of
   MPW-1 to MPW-8, the "Info" note and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `LI1M` renders, their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `LI1M` renders, their
   layers and info text, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
-* ASML, PAS 5500/750E press release — a KrF scanner for 130 nm design
+* [ASML, PAS 5500/750E press release](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF scanner for 130 nm design
   rules.[^asml-750e]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Optical proximity correction* — why mask shapes differ
+* [Wikipedia, *Optical proximity correction*](<https://en.wikipedia.org/wiki/Optical_proximity_correction>) — why mask shapes differ
   from drawn shapes.[^wiki-opc]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Otto et al., *Proc. SPIE* 1994 — rules-based optical proximity
+* [Otto et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175422>) — rules-based optical proximity
   correction with edge and corner rules and assist
   features.[^otto-1994]
-* Rieger and Stirniman, *Proc. SPIE* 1994 — behaviour models as
+* [Rieger and Stirniman, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175431>) — behaviour models as
   correction rules.[^rieger-1994]
-* Cobb and Zakhor, *Proc. SPIE* 1995 — fast aerial-image calculation suited
+* [Cobb and Zakhor, *Proc. SPIE* 1995](<https://doi.org/10.1117/12.228208>) — fast aerial-image calculation suited
   to the mask perturbations of OPC.[^cobb-1995]
-* Shi et al., *Proc. SPIE* 2002 — the forbidden-pitch phenomenon and
+* [Shi et al., *Proc. SPIE* 2002](<https://doi.org/10.1117/12.473427>) — the forbidden-pitch phenomenon and
   assist-feature placement.[^shi-2002]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of dense
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of dense
   and isolated lines.[^wong-1998]
-* Arthur and Martin, *Proc. SPIE* 1999 — mask error factor, CD budgets
+* [Arthur and Martin, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350880>) — mask error factor, CD budgets
   and reticle specifications.[^arthur-1999]
-* Garofalo et al., *Proc. SPIE* 1995 — line-end shortening and its mask
+* [Garofalo et al., *Proc. SPIE* 1995](<https://doi.org/10.1117/12.209250>) — line-end shortening and its mask
   compensation.[^garofalo-1995]
-* Sekiguchi et al., *Proc. SPIE* 1998 — underlayer reflection and the
+* [Sekiguchi et al., *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310764>) — underlayer reflection and the
   optical proximity effect.[^sekiguchi-1998]
-* Sturtevant et al. (IBM), *Proc. SPIE* 1994 — substrate contamination
+* [Sturtevant et al. (IBM), *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175469>) — substrate contamination
   of chemically amplified DUV resists, titanium nitride
   included.[^sturtevant-1994]
-* He et al., *Proc. SPIE* 1998 — an inorganic ARC that doubles as a hard
+* [He et al., *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310763>) — an inorganic ARC that doubles as a hard
   mask.[^he-1998]
-* Tang et al. (TI), *IEEE TED* 1987 — the TiN local interconnect,
+* [Tang et al. (TI), *IEEE TED* 1987](<https://doi.org/10.1109/T-ED.1987.22980>) — the TiN local interconnect,
   patterned from a 0.1 µm film.[^tang-1987]
-* ITRS 2001, *Lithography* — the optical mask requirements for critical
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the optical mask requirements for critical
   layers at 130 nm.[^itrs-03]
 
 ## Open questions

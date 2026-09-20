@@ -336,71 +336,71 @@ gates.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Nitride Poly Cut, NPCM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Nitride Poly Cut, NPCM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `npc` 95:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `npc` 95:20,
   the `cnpc` purposes and the `NPC` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `NPCMCD`/`NPCMCDSP`, the poly
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `NPCMCD`/`NPCMCDSP`, the poly
   and cap thicknesses and the photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `npc` rules, licon.13, licon.15,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `npc` rules, licon.13, licon.15,
   licon.18, rpm.4, rpm.5, x.1a, x.1b, x.7, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F3a and Table
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F3a and Table
   F4.[^pdk-summary]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `npc` and
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `npc` and
   `npcon.c6` checks, the module-cut and "nikon cross"
   checks.[^pdk-errors]
-* *S8 / SKY130 Process Steps* sheet — the step, the `NPCM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `NPCM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `NPCM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `NPCM` renders, their layer
   and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV and i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV and i-line exposure
   tools.[^skw-01]
-* ASML, PAS 5500/750E press release — a KrF scanner for 130 nm design
+* [ASML, PAS 5500/750E press release](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF scanner for 130 nm design
   rules.[^asml-750e]
-* Tokyo Electron, US 6,376,262 — CN emission as the nitride etch
+* [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — CN emission as the nitride etch
   endpoint.[^pat-cn-tel]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line and DUV exposure and the
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line and DUV exposure and the
   resolution equation.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — DUV lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — DUV lithography
   of the 0.25–0.13 µm generations.[^txt-05]
 
 ### Deep dive
 
-* Tang et al., IEDM 1985 — a TiN local-interconnect layer formed during
+* [Tang et al., IEDM 1985](<https://doi.org/10.1109/IEDM.1985.191041>) — a TiN local-interconnect layer formed during
   self-aligned silicidation and patterned between gates and junctions
   (abstract).[^tang-1985]
-* Tang et al., *IEEE TED* 1987 — the same TiN local interconnect, with
+* [Tang et al., *IEEE TED* 1987](<https://doi.org/10.1109/T-ED.1987.22980>) — the same TiN local interconnect, with
   its delay and SRAM applications (abstract).[^tang-1987]
-* Cacciato et al., PPID 2003 — charging damage when a contact etch meets
+* [Cacciato et al., PPID 2003](<https://doi.org/10.1109/PPID.2003.1199721>) — charging damage when a contact etch meets
   a borderless nitride.[^cacciato-2003]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of spaces
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of spaces
   and contacts and the sizes below which it rises.[^wong-1998]
-* Brunner, *Proc. SPIE* 1991 — swing curves and anti-reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — swing curves and anti-reflective
   layers.[^brunner-1991]
-* Bossung, *Proc. SPIE* 1977 — projection-printing process
+* [Bossung, *Proc. SPIE* 1977](<https://doi.org/10.1117/12.955357>) — projection-printing process
   characterisation, the source of the focus–exposure "Bossung" plot
   (paper content not checked).[^bossung-1977]
-* Ausschnitt, *Proc. SPIE* 1999 — distinguishing dose from defocus for
+* [Ausschnitt, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350800>) — distinguishing dose from defocus for
   in-line lithography control.[^ausschnitt-1999]
-* Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999 — etching silicon
+* [Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999](<https://doi.org/10.1116/1.582097>) — etching silicon
   nitride selectively over silicon and oxide.[^kastenmeier-1999]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — microscopic
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — microscopic
   uniformity and aspect-ratio-dependent etching.[^gottscho-1992]
-* van Haren et al., *Proc. SPIE* 2019 — alignment-mark placement and
+* [van Haren et al., *Proc. SPIE* 2019](<https://doi.org/10.1117/12.2536270>) — alignment-mark placement and
   layer-to-layer overlay.[^van-haren-2019]
-* Starikov, *Opt. Eng.* 1992 — the accuracy of overlay
+* [Starikov, *Opt. Eng.* 1992](<https://doi.org/10.1117/12.56172>) — the accuracy of overlay
   measurement.[^starikov-1992]
-* ITRS 2001, *Lithography* — exposure options for critical layers and
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — exposure options for critical layers and
   mask magnification at 130 nm.[^itrs-03]
 
 ## Open questions

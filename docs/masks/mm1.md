@@ -339,57 +339,57 @@ m1.2).
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Metal 1, MM1,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Metal 1, MM1,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `met1` 68:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `met1` 68:20,
   the `cmm1` purposes and the `MM1` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `MM1CD`/`MM1CDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `MM1CD`/`MM1CDSP`,
   `MM1_CuCD`/`MM1_CuCDSP`, `DEFC`, `BiasMM1`, `Met1Thick`, the
   pattern-density criteria, `HugeM` and `waffle_large`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `m1` rules, via.4a, via.5a,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `m1` rules, via.4a, via.5a,
   nsm.3, x.1a, x.1b, x.7, x.9, x.15a and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
-* SkyWater PDK, *Parasitic Layout Extraction* — the metal-1 sheet
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F4.[^pdk-summary]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the metal-1 sheet
   resistance.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `MM1` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `MM1` plates of
   MPW-1 to MPW-8, the "Info" note and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `MM1` renders, their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `MM1` renders, their
   layers and info text, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Optical proximity correction* — why mask shapes differ
+* [Wikipedia, *Optical proximity correction*](<https://en.wikipedia.org/wiki/Optical_proximity_correction>) — why mask shapes differ
   from drawn shapes.[^wiki-opc]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Word, Zhu and Sturtevant, *Proc. SPIE* 2002 — assist-feature OPC for
+* [Word, Zhu and Sturtevant, *Proc. SPIE* 2002](<https://doi.org/10.1117/12.474494>) — assist-feature OPC for
   the 130 nm node with KrF and no forbidden pitches.[^word-2002]
-* Shiraishi et al. (Nikon), *Proc. SPIE* 1992 — off-axis illumination
+* [Shiraishi et al. (Nikon), *Proc. SPIE* 1992](<https://doi.org/10.1117/12.130364>) — off-axis illumination
   for dense lines.[^shiraishi-1992]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of dense
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of dense
   and isolated lines.[^wong-1998]
-* Cheng and Neureuther, *Proc. SPIE* 2002 — mask CD errors in the
+* [Cheng and Neureuther, *Proc. SPIE* 2002](<https://doi.org/10.1117/12.474526>) — mask CD errors in the
   isolated–dense bias and line-end shortening.[^cheng-2002]
-* Samuels, Maurer and Farrell, *Proc. SPIE* 1995 — OPC, mask CD
+* [Samuels, Maurer and Farrell, *Proc. SPIE* 1995](<https://doi.org/10.1117/12.228213>) — OPC, mask CD
   tolerance and mask grid size.[^samuels-1995]
-* Brunner, *Proc. SPIE* 1991 — the swing ratio and anti-reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — the swing ratio and anti-reflective
   coatings.[^brunner-1991]
-* Rocke and Schneegans, *JVST B* 1988 — titanium nitride as an
+* [Rocke and Schneegans, *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — titanium nitride as an
   anti-reflection layer on aluminium.[^rocke-1988]
-* Kahng and Samadi, *IEEE TCAD* 2008 — a survey of CMP fill
+* [Kahng and Samadi, *IEEE TCAD* 2008](<https://doi.org/10.1109/TCAD.2007.907061>) — a survey of CMP fill
   synthesis.[^kahng-2008]
-* Stine et al., *IEEE TSM* 1998 — pattern density as the dominant
+* [Stine et al., *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — pattern density as the dominant
   factor in dielectric polishing.[^stine-1998]
-* ITRS 2001, *Lithography* — the optical mask requirements, including
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the optical mask requirements, including
   the mask design grid, for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

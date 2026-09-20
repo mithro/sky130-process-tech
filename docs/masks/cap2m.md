@@ -336,72 +336,72 @@ width.[^raw-data-testtile-pads]
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — no entry for a second
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — no entry for a second
   capacitor mask.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `cap2m` 97:44,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `cap2m` 97:44,
   the layer-97 `chvtpm` purposes, Tables C3 and F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — the "Capacitor MiM" row of
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the "Capacitor MiM" row of
   Table 2 and `MiM_AR`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `capm` rules, x.2, x.7, x.15a,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `capm` rules, x.2, x.7, x.15a,
   x.22 and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page — the module-cut checks naming
+* [SkyWater PDK, *Error Messages* page](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) — the module-cut checks naming
   `cap2m`.[^pdk-errors]
-* SkyWater PDK, *Device Details* — "CAP2M over Metal-4", `CMIM2A`,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — "CAP2M over Metal-4", `CMIM2A`,
   `CMIM2P`, the MiM2 top-plate resistance and the stacked
   cross-section.[^pdk-07]
-* SkyWater PDK, *Process stack diagram* — the `cap2m` layer.[^pdk-04]
-* SkyWater PDK Authors, test-tile pad documentation — the `CAP2M`
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the `cap2m` layer.[^pdk-04]
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the `CAP2M`
   capacitor, linewidth, comb, via-4 and stacked
   structures.[^raw-data-testtile-pads]
-* *S8 / SKY130 Process Steps* sheet — the step, the "Capacitor MiM 2" row
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the "Capacitor MiM 2" row
   with its plates and "Info" note, and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `CAP2M` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `CAP2M` renders, their layer
   and mask record, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
-* SkyWater PDK Authors, repository README — "Optional MiM capacitors"
+* [SkyWater PDK Authors, repository README](<https://github.com/google/skywater-pdk>) — "Optional MiM capacitors"
   and optional features included "as standard".[^pdk-10]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line exposure.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging of large
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line exposure.[^wiki-litho]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging of large
   features, swing curves and BARCs.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on masks and reticles
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on masks and reticles
   and on overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Kar-Roy, Racanelli and Kempf (Newport Fab), US 7,078,310 — two stacked
+* [Kar-Roy, Racanelli and Kempf (Newport Fab), US 7,078,310](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7078310>) — two stacked
   MiM capacitors joined in parallel.[^pat-mim-stack-newportfab]
-* Chang, Lee and Chen (TSMC), US 7,317,221 — stacked plates
+* [Chang, Lee and Chen (TSMC), US 7,317,221](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7317221>) — stacked plates
   cross-connected through filled vias.[^pat-mim-stack-tsmc]
-* Kar-Roy and Racanelli (Newport Fab), US 6,430,028 — the top plate
+* [Kar-Roy and Racanelli (Newport Fab), US 6,430,028](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>) — the top plate
   patterned before the bottom-plate metal.[^pat-mim-newportfab]
-* Shyu, Temes and Krummenacher, *IEEE JSSC* 1984 — random errors in
+* [Shyu, Temes and Krummenacher, *IEEE JSSC* 1984](<https://doi.org/10.1109/JSSC.1984.1052250>) — random errors in
   capacitance ratios as functions of dimensions and process
   spread.[^shyu-1984]
-* Wang, Ackaert et al., *IEEE TED* 2004 — plasma-charging damage of
+* [Wang, Ackaert et al., *IEEE TED* 2004](<https://doi.org/10.1109/TED.2004.829518>) — plasma-charging damage of
   floating MiM capacitors.[^wang-2004-mim]
-* Ng et al., *IEEE TED* 2005 — MiM integration in Al–Cu and copper back
+* [Ng et al., *IEEE TED* 2005](<https://doi.org/10.1109/TED.2005.850642>) — MiM integration in Al–Cu and copper back
   ends.[^ng-2005]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   feature size above which it is unity.[^wong-1998]
-* Morgante and Hamaker, *Proc. SPIE* 2000 — a laser reticle writer and the
+* [Morgante and Hamaker, *Proc. SPIE* 2000](<https://doi.org/10.1117/12.392079>) — a laser reticle writer and the
   mask nodes it served.[^morgante-2000]
-* Buck and Grenon, *Proc. SPIE* 1994 — wet against dry chrome etching of
+* [Buck and Grenon, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.167247>) — wet against dry chrome etching of
   masks.[^buck-1994]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — mask
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — mask
   writers and conventional optical masks.[^rizvi-2005]
-* Brunner, *Proc. SPIE* 1991 — swing curves and anti-reflection on
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — swing curves and anti-reflection on
   reflective substrates.[^brunner-1991]
-* Rocke and Schneegans, *JVST B* 1988 — titanium nitride as an
+* [Rocke and Schneegans, *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — titanium nitride as an
   anti-reflection layer on aluminium.[^rocke-1988]
-* Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the i-line resist
   chemistry.[^dammel-1993]
 
 ## Open questions

@@ -370,73 +370,73 @@ tip-implant opening of 0.1.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "N-tip Implant, NTM, X"
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "N-tip Implant, NTM, X"
   and the absence of a P-tip mask.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — the `cntm`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — the `cntm`
   purposes, `hvi`, `ldntm`, `areaid.ce` and the `NTM` column of Table
   F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `NTMCD`/`NTMCDSP`, "N Tip
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `NTMCD`/`NTMCDSP`, "N Tip
   (As)", the tip implant angle, the shadowing and tip-opening criteria
   and the photoresist thicknesses.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — x.7, x.9, x.15a, the `nwell` and
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — x.7, x.9, x.15a, the `nwell` and
   `hvi` width and spacing rules and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `cntm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `cntm`
   checks on `CLNTM`, the x.9 and x.15a messages and the "nikon cross"
   checks.[^pdk-errors]
-* *S8 / SKY130 Process Steps* sheet — the step, the `NTM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `NTM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `NTM` expression, note and
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `NTM` expression, note and
   per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine overlay
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine overlay
   of an i-line stepper.[^asml-pas5500-275d]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Short-channel effect* — why extensions and halos are
+* [Wikipedia, *Short-channel effect*](<https://en.wikipedia.org/wiki/Short-channel_effect>) — why extensions and halos are
   needed.[^wiki-sce]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD, extension
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD, extension
   and halo engineering.[^txt-04]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped drain-source
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped drain-source
   transistor, the ancestor of every tip implant.[^ogura-1980]
-* Codella and Ogura (IBM), IEDM 1985 — the halo added to the LDD, the
+* [Codella and Ogura (IBM), IEDM 1985](<https://doi.org/10.1109/IEDM.1985.190938>) — the halo added to the LDD, the
   pairing this mask serves.[^codella-1985]
-* Thompson et al. (Intel), VLSI 1998 — how extension depth and doping
+* [Thompson et al. (Intel), VLSI 1998](<https://doi.org/10.1109/VLSIT.1998.689229>) — how extension depth and doping
   scale with gate length.[^thompson-1998]
-* Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD and
+* [Gardner, Hause and Fulford (AMD), US 5,793,090](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5793090>) — separate LDD and
   source/drain implant steps for different transistors on one
   chip.[^pat-multi-ldd-amd]
-* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing in
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — ion-beam shadowing in
   large-angle-tilt implanted drain MOSFETs (title).[^chen-1995]
-* Yoneda and Niwayama, IWJT 2002 — drain-current asymmetry at 130 nm from
+* [Yoneda and Niwayama, IWJT 2002](<https://doi.org/10.1109/IWJT.2002.1225190>) — drain-current asymmetry at 130 nm from
   extension-implant shadowing.[^yoneda-2002]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
-* Lukaszek, Reno and Bammi, IIT 1996 — wafer charging through resist
+* [Lukaszek, Reno and Bammi, IIT 1996](<https://doi.org/10.1109/IIT.1996.586135>) — wafer charging through resist
   during high-current arsenic implants.[^lukaszek-1996]
-* Horsky, IIT 1998 — resist outgassing in high-energy and high-current
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing in high-energy and high-current
   implanters.[^horsky-1998]
-* Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
+* [Ross et al., *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241862>) — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* ITRS 2001, *Lithography* — mask magnification for the 130 nm
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification for the 130 nm
   generation.[^itrs-03]
 
 ## Open questions

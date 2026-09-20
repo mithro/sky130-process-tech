@@ -315,64 +315,64 @@ feature the plate must resolve is therefore the 0.150 µm gate line on a
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Poly 1, P1M,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Poly 1, P1M,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `poly` and
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `poly` and
   its purposes, `cp1m` and its purposes, `areaid.op`, and the `P1M`
   column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `P1G`, `P1MCD`/`P1MCDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `P1G`, `P1MCD`/`P1MCDSP`,
   `PHP1TOL`, `P1MCDcontrol`, `POLYTH` and the poly resistor CD
   criteria.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `poly` rules, x.1a, x.1b, x.2,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `poly` rules, x.1a, x.1b, x.2,
   x.9, x.15a and the flag legend.[^pdk-periph]
-* *S8 / SKY130 Process Steps* sheet — the step, the `P1M` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `P1M` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `P1M` renders and their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `P1M` renders and their
   layers.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the DUV exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DUV exposure
   tools.[^skw-01]
-* ASML, PAS 5500/750E press release — a KrF scanner for 130 nm design
+* [ASML, PAS 5500/750E press release](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF scanner for 130 nm design
   rules.[^asml-750e]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Phase-shift mask* and *Optical proximity correction* —
+* Wikipedia, [*Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>) and [*Optical proximity correction*](<https://en.wikipedia.org/wiki/Optical_proximity_correction>) —
   why mask shapes differ from drawn shapes.[^wiki-psm][^wiki-opc]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging at
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging at
   low {math}`k_1`.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — deep-submicron
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — deep-submicron
   gate lithography.[^txt-05]
 
 ### Deep dive
 
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor of lines
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor of lines
   and spaces and the size below which it rises.[^wong-1998]
-* Arthur and Martin, *Proc. SPIE* 1999 — mask error factor, CD budgets
+* [Arthur and Martin, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.350880>) — mask error factor, CD budgets
   and reticle specifications.[^arthur-1999]
-* Kuijten, Duray and der Kinderen, *Proc. SPIE* 1998 — the reticle's
+* [Kuijten, Duray and der Kinderen, *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310792>) — the reticle's
   share of intrafield CD uniformity on a DUV stepper.[^kuijten-1998]
-* Garofalo et al., *Proc. SPIE* 1995 — gate-level line-end shortening
+* [Garofalo et al., *Proc. SPIE* 1995](<https://doi.org/10.1117/12.209250>) — gate-level line-end shortening
   and its mask compensation.[^garofalo-1995]
-* Zheng et al., *Proc. SPIE* 2003 — optical proximity matching of the
+* [Zheng et al., *Proc. SPIE* 2003](<https://doi.org/10.1117/12.485431>) — optical proximity matching of the
   130 nm gate line width across the field and across
   scanners.[^zheng-2003]
-* Otto et al., *Proc. SPIE* 1994 — rules-based optical proximity
+* [Otto et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175422>) — rules-based optical proximity
   correction.[^otto-1994]
-* Levenson, Viswanathan and Simpson, *IEEE TED* 1982 — the
+* [Levenson, Viswanathan and Simpson, *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.21037>) — the
   phase-shifting mask.[^levenson-1982]
-* Lin, *IEEE Circuits and Devices* 1993 — alternating and attenuated
+* [Lin, *IEEE Circuits and Devices* 1993](<https://doi.org/10.1109/101.200850>) — alternating and attenuated
   phase-shift masks.[^lin-1993]
-* Orshansky, Milor and Hu, *IEEE TSM* 2004 — intrafield gate-CD
+* [Orshansky, Milor and Hu, *IEEE TSM* 2004](<https://doi.org/10.1109/TSM.2003.822735>) — intrafield gate-CD
   variability and mask-level correction.[^orshansky-2004]
-* Starikov, *Opt. Eng.* 1992 — the accuracy of overlay
+* [Starikov, *Opt. Eng.* 1992](<https://doi.org/10.1117/12.56172>) — the accuracy of overlay
   measurement.[^starikov-1992]
-* Rizvi (ed.), *Handbook of Photomask Manufacturing Technology* — mask
+* [Rizvi (ed.), *Handbook of Photomask Manufacturing Technology*](<https://doi.org/10.1201/9781420028782>) — mask
   writing, advanced optical masks and mask metrology.[^rizvi-2005]
-* ITRS 2001, *Lithography* — gate CD targets and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — gate CD targets and the optical mask
   requirements for critical layers at 130 nm.[^itrs-03]
 
 ## Open questions

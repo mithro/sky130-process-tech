@@ -354,68 +354,68 @@ where its edges may fall relative to the active and poly patterns.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Low Vt Nch\*, LVTNM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Low Vt Nch\*, LVTNM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `lvtn`, the
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `lvtn`, the
   `clvtnm` purposes, `areaid.lvt`, `areaid.ce`, the Table C3 definitions
   and the `LVTNM` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `LVTNMCD`/`LVTNMCDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `LVTNMCD`/`LVTNMCDSP`,
   `lvtpmos_poly`, `LvtEnc_forPowerRail` and the photoresist
   thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `lvtn` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `lvtn` rules and function line,
   poly.1b, ncm.5, x.9, x.15a and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `clvtnm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `clvtnm`
   width, spacing and "nikon cross" checks and the lvtn.3b
   message.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the low-Vt and native devices and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the low-Vt and native devices and
   their "VT adjust implants".[^pdk-07]
-* *S8 / SKY130 Process Steps* sheet — the step, the `LVTNM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `LVTNM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `LVTNM` expression, note and
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `LVTNM` expression, note and
   per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 ### High-level understanding
 
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Mutoh et al., *IEEE JSSC* 1995 — low- and high-threshold
+* [Mutoh et al., *IEEE JSSC* 1995](<https://doi.org/10.1109/4.400426>) — low- and high-threshold
   transistors in one LSI, the circuit case for a threshold
   mask.[^mutoh-1995]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — standard and
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — standard and
   low-Vt devices by masked Vt-adjust and counter-doping
   implants.[^pat-vt-rrr]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   voltage against channel doping.[^taur-2009]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist
   edge and the threshold shifts they cause.[^hook-2003]
-* Sheu et al., *IEEE TED* 2006 — a compact model of the
+* [Sheu et al., *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the
   well-edge proximity effect.[^sheu-2006]
-* Drennan, Kniffin and Locascio, CICC 2006 — proximity effects and
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — proximity effects and
   analogue layout.[^drennan-2006]
-* Faricelli, CICC 2010 — a review of layout-dependent proximity
+* [Faricelli, CICC 2010](<https://doi.org/10.1109/CICC.2010.5617407>) — a review of layout-dependent proximity
   effects and their process causes.[^faricelli-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
+* [Ross et al., *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241862>) — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* ITRS 2001, *Lithography* — mask magnification for the 130 nm
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification for the 130 nm
   generation.[^itrs-03]
 
 ## Open questions

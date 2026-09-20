@@ -350,31 +350,31 @@ from any active area.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Low Voltage Oxide, LVOM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Low Voltage Oxide, LVOM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `clvom` 46:0
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `clvom` 46:0
   and 45:20, `hvi` 75:20, the Table C3 definitions and the `LVOM` column
   of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `LVOMCD`/`LVOMCDSPCSMC` and
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `LVOMCD`/`LVOMCDSPCSMC` and
   the photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `hvi`, `hvnwell`, `hvdifftap`
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `hvi`, `hvnwell`, `hvdifftap`
   and `hvpoly` rules and function lines, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — the `hvi` row of
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — the `hvi` row of
   Table F3b.[^pdk-summary]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `hvi`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `hvi`
   messages and the `clvom` and `LVOMmk` checks.[^pdk-errors]
-* SkyWater PDK, *High Voltage Methodology* — the 110 Å gate oxide of the
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — the 110 Å gate oxide of the
   high-voltage devices.[^pdk-hv]
 * SkyWater PDK, `nfet_01v8` and `nfet_g5v0d10v5` models — the two
   electrical oxide thicknesses.[^pdk-model-nfet01v8][^pdk-model-nfet5v]
-* *S8 / SKY130 Process Steps* sheet — the step, the `LVOM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `LVOM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `LVOM` renders, their
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `LVOM` renders, their
   layers and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -386,36 +386,36 @@ from any active area.
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line exposure and
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line exposure and
   resolution.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Diaz et al., VLSI 1999 — dual gate oxides for a 1.5–2 V core
+* [Diaz et al., VLSI 1999](<https://doi.org/10.1109/VLSIT.1999.799315>) — dual gate oxides for a 1.5–2 V core
   and 3.3 V I/O in a 0.18 µm logic technology.[^diaz-1999]
-* Togo, Noda and Tanigawa (NEC), IEDM 1998 — multiple-thickness gate
+* [Togo, Noda and Tanigawa (NEC), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746371>) — multiple-thickness gate
   oxides for logic-embedded DRAM.[^togo-1998]
-* Beverina et al., *Solid State Phenomena* 2003 — the resist and wet
+* [Beverina et al., *Solid State Phenomena* 2003](<https://doi.org/10.4028/www.scientific.net/SSP.92.235>) — the resist and wet
   etch pairing of a dual-gate-oxide mask.[^beverina-2003]
-* Kim et al., *JJAP* 2002 — gate-oxide thinning at the STI edge in a
+* [Kim et al., *JJAP* 2002](<https://doi.org/10.1143/JJAP.41.2404>) — gate-oxide thinning at the STI edge in a
   dual-gate-oxide process and its prevention.[^kim-2002]
-* Lee et al., ICVC 1999 — gate-oxide thinning at the edge of shallow
+* [Lee et al., ICVC 1999](<https://doi.org/10.1109/ICVC.1999.820895>) — gate-oxide thinning at the edge of shallow
   trench isolation in the dual-gate-oxide process.[^lee-1999-icvc]
-* Lee, *Electrochem. Solid-State Lett.* 1999 — a dual-gate-oxide process
+* [Lee, *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390957>) — a dual-gate-oxide process
   with improved gate-oxide integrity.[^lee-1999]
-* Kim et al., SSDM 2001 — an STI scheme compensating corner thinning for
+* [Kim et al., SSDM 2001](<https://doi.org/10.7567/SSDM.2001.A-6-6>) — an STI scheme compensating corner thinning for
   thick dual gate oxides.[^kim-2001]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* ITRS 2001, *Front End Processes* — the gate-stack requirements of the
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — the gate-stack requirements of the
   130 nm generation.[^itrs-01]
-* ITRS 2001, *Lithography* — mask magnification and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the optical mask
   requirements of the 130 nm generation.[^itrs-03]
 
 ## Open questions

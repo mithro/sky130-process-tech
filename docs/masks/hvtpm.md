@@ -362,73 +362,73 @@ created layer the same 0.38 width and spacing (`chvtpm.1`,
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "High Vt PCh\*, HVTPM, X"
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "High Vt PCh\*, HVTPM, X"
   and "HLow VT PCh Radio\*, HVTRM, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `hvtp`, the
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `hvtp`, the
   `chvtpm` purposes, `hvtr`, the Table C3 definitions and the `HVTPM`
   column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `HVTPMCD`/`HVTPMCDSP` and the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `HVTPMCD`/`HVTPMCDSP` and the
   photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `hvtp` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `hvtp` rules and function line,
   lvtn.9, varac.3, varac.8, hvtr.2, x.9, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `chvtpm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `chvtpm`
   checks on `CLHVTPM`, `hvtp.c1` and the "nikon cross"
   checks.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the high-Vt PMOS and the high-Vt
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the high-Vt PMOS and the high-Vt
   varactor option.[^pdk-07]
-* *S8 / SKY130 Process Steps* sheet — the step, the `HVTPM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `HVTPM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `HVTPM` expression, note and
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `HVTPM` expression, note and
   per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
 
 ### High-level understanding
 
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Kao and Chandrakasan, *IEEE JSSC* 2000 — dual-threshold techniques
+* [Kao and Chandrakasan, *IEEE JSSC* 2000](<https://doi.org/10.1109/4.848210>) — dual-threshold techniques
   for low stand-by power at high performance.[^kao-2000]
-* Mutoh et al., *IEEE JSSC* 1995 — low- and high-threshold transistors
+* [Mutoh et al., *IEEE JSSC* 1995](<https://doi.org/10.1109/4.400426>) — low- and high-threshold transistors
   in one LSI.[^mutoh-1995]
-* Wei et al., DAC 1998 — the circuit-level case for a second threshold
+* [Wei et al., DAC 1998](<https://doi.org/10.1109/DAC.1998.724521>) — the circuit-level case for a second threshold
   voltage.[^wei-1998]
-* Kizilyalli et al., *IEEE EDL* 1995 — the threshold and gate-length
+* [Kizilyalli et al., *IEEE EDL* 1995](<https://doi.org/10.1109/55.464816>) — the threshold and gate-length
   trade-off of n+-poly buried-channel PMOS.[^kizilyalli-1995]
-* Andreani and Mattisson, *IEEE JSSC* 2000 — inversion- and
+* [Andreani and Mattisson, *IEEE JSSC* 2000](<https://doi.org/10.1109/4.845194>) — inversion- and
   accumulation-mode MOS varactors.[^andreani-2000]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — multiple thresholds set by
   gate length, with a laterally doped channel implant self-aligned to
   the gate pillars.[^pat-vt-amd]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — masked
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — masked
   Vt-adjust implants for standard and low-Vt devices.[^pat-vt-rrr]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   voltage against channel doping.[^taur-2009]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
-* Sheu et al., *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al., *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect.[^sheu-2006]
-* Drennan, Kniffin and Locascio, CICC 2006 — proximity effects and
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — proximity effects and
   analogue layout.[^drennan-2006]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
+* [Ross et al., *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241862>) — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
 
 ## Open questions

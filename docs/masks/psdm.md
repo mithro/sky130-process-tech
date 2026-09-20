@@ -380,82 +380,82 @@ width and spacing checks without saying which applies where (0.38
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "P+ Implant, PSDM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "P+ Implant, PSDM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `psdm`, the
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `psdm`, the
   `cpsdm` purposes, the `prec_resistor` and `pnp_emitter` definitions and
   the `PSDM` column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `PSDMCD`/`PSDMCDSP`, the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `PSDMCD`/`PSDMCDSP`, the
   junction, punch-through, latch-up, implant-angle, area and
   `pnp_emitter` criteria and the photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `nsdm`/`psdm` rules and function
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `nsdm`/`psdm` rules and function
   line, licon.9, rpm.4, depmos.12, x.7, x.9, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table
   F3a.[^pdk-summary]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `psd` and
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `psd` and
   core checks, the licon.9 and x.9 messages and the "nikon cross"
   checks.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the devices built in P+
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the devices built in P+
   diffusion.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — the P-diffusion sheet
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the P-diffusion sheet
   resistance.[^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step, the `PSDM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `PSDM` plates of
   MPW-1 to MPW-8, the "Masks" tab and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `PSDM` and `PSDI` renders,
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `PSDM` and `PSDI` renders,
   their layer and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine overlay
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine overlay
   of an i-line stepper.[^asml-pas5500-275d]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *CMOS* — NMOS and PMOS side by side, and why each needs its
+* [Wikipedia, *CMOS*](<https://en.wikipedia.org/wiki/CMOS>) — NMOS and PMOS side by side, and why each needs its
   own source/drain implant.[^wiki-cmos]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implant masking by resist.[^txt-02]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Hook et al., *IEEE TED* 2003 — lateral straggle and the mask-proximity
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral straggle and the mask-proximity
   effect at a resist edge.[^hook-2003]
-* Sheu et al., *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al., *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect.[^sheu-2006]
-* Drennan, Kniffin and Locascio, CICC 2006 — proximity effects and
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — proximity effects and
   analogue layout.[^drennan-2006]
-* Smith, in *Ion Implantation: Equipment and Techniques*, 1983 — wafer
+* [Smith, in *Ion Implantation: Equipment and Techniques*, 1983](<https://doi.org/10.1007/978-3-642-69156-0_25>) — wafer
   cooling and resist masking problems in implantation.[^smith-1983]
-* Romig, Bishop and Rio, IIT 1996 — resist burning in a high-current
+* [Romig, Bishop and Rio, IIT 1996](<https://doi.org/10.1109/IIT.1996.586181>) — resist burning in a high-current
   implanter.[^romig-1996]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV implantation
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV implantation
   and its impact on production.[^lee-1996]
-* Horsky, IIT 1998 — resist outgassing in high-energy and high-current
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing in high-energy and high-current
   implanters.[^horsky-1998]
-* Carpenter and Fecteau, IIT 2002 — productivity during high-pressure
+* [Carpenter and Fecteau, IIT 2002](<https://doi.org/10.1109/IIT.2002.1258053>) — productivity during high-pressure
   resist outgassing.[^carpenter-2002]
-* Rubin et al., IIT 2000 — UV photostabilisation of resist before
+* [Rubin et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924279>) — UV photostabilisation of resist before
   high-dose, high-energy implants.[^rubin-2000]
-* Fujimura et al., *JJAP* 1989 — the carbonised layer of high-dose
+* [Fujimura et al., *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer of high-dose
   implanted resist and a two-step ashing process to remove
   it.[^fujimura-1989]
-* Krieger et al., *IEEE TED* 1989 — shadowing of a 7°-tilted arsenic
+* [Krieger et al., *IEEE TED* 1989](<https://doi.org/10.1109/16.43667>) — shadowing of a 7°-tilted arsenic
   source/drain implant by the sidewall spacer.[^krieger-1989]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* ITRS 2001, *Lithography* — mask magnification for the 130 nm
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification for the 130 nm
   generation.[^itrs-03]
 
 ## Open questions

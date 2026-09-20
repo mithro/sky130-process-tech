@@ -381,77 +381,77 @@ them.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Metal 5, MM5,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Metal 5, MM5,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `met5` 72:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `met5` 72:20,
   the `cmm5` purposes, Table C3's "top_metal" and "bondPad" and the `MM5`
   column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `MM5CD`/`MM5CDSP`, the metal-5
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `MM5CD`/`MM5CDSP`, the metal-5
   antenna thicknesses, `MMPDrange`, `PD_FrameWP`, `HugeM` and
   `pmmM5RDLpadEnc`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `m5` rules, pad.3, nsm.3–nsm.3b,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `m5` rules, pad.3, nsm.3–nsm.3b,
   x.1b, x.7, x.9, x.12d, x.12e, x.15a, x.22, x.23c and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page — the `m5`, pad, cupad.3, scribe and
+* [SkyWater PDK, *Error Messages* page](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) — the `m5`, pad, cupad.3, scribe and
   `cmm5.nikon` checks.[^pdk-errors]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
-* SkyWater PDK, *Background* — the flow letters.[^pdk-02]
-* SkyWater PDK, *Process stack diagram* — the 1.26 µm `metal5`.[^pdk-04]
-* SkyWater PDK, *Parasitic Layout Extraction* — the metal-5 and via-4
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F4.[^pdk-summary]
+* [SkyWater PDK, *Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) — the flow letters.[^pdk-02]
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the 1.26 µm `metal5`.[^pdk-04]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the metal-5 and via-4
   resistances.[^pdk-08]
-* SkyWater PDK Authors, test-tile pad documentation — the 1.6 µm metal-5
+* [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the 1.6 µm metal-5
   structures.[^raw-data-testtile-pads]
 * Efabless, caravel `advSeal_6um_gen` seal-ring GDS — the
   `nikon_sealring_shape` sub-cell.[^caravel-sealring]
-* *S8 / SKY130 Process Steps* sheet — the step, the `MM5` plates of MPW-1
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `MM5` plates of MPW-1
   to MPW-8, the "Info" note, the plate-case label and the mask-type
   tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `MM5` renders, their layers
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `MM5` renders, their layers
   and info text, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line exposure.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging, focus
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line exposure.[^wiki-litho]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging, focus
   and thick resists.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on masks and reticles
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on masks and reticles
   and on overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Ching and Schroen, IRPS 1988 — oxides under bond pads and the choice of
+* [Ching and Schroen, IRPS 1988](<https://doi.org/10.1109/IRPS.1988.362201>) — oxides under bond pads and the choice of
   metallisation.[^ching-1988]
-* Marsh et al., ECTC 2016 — copper ball bonds over probe marks on pads of
+* [Marsh et al., ECTC 2016](<https://doi.org/10.1109/ECTC.2016.382>) — copper ball bonds over probe marks on pads of
   two aluminium thicknesses.[^marsh-2016]
-* Hess et al., ECTC 2003 — bond-over-active pad structures for 0.13 µm
+* [Hess et al., ECTC 2003](<https://doi.org/10.1109/ECTC.2003.1216469>) — bond-over-active pad structures for 0.13 µm
   CMOS.[^hess-2003]
-* Chu et al., VLSI-TSA 2001 — thick top metal for high-quality spiral
+* [Chu et al., VLSI-TSA 2001](<https://doi.org/10.1109/VTSA.2001.934506>) — thick top metal for high-quality spiral
   inductors.[^chu-2001]
-* Krogh et al., *J. Electrochem. Soc.* 1987 — photoresist erosion in an
+* [Krogh et al., *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100816>) — photoresist erosion in an
   aluminium etch plasma.[^krogh-1987]
-* Allen and Rickard, *JVST A* 1994 — a tapered aluminium interconnect
+* [Allen and Rickard, *JVST A* 1994](<https://doi.org/10.1116/1.579306>) — a tapered aluminium interconnect
   etch.[^allen-1994]
-* Chang et al., SMTW 2004 — defects of an ultra-low pattern-density
+* [Chang et al., SMTW 2004](<https://doi.org/10.1109/SMTW.2004.1393753>) — defects of an ultra-low pattern-density
   thick-metal etch.[^chang-2004]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   feature size above which it is unity.[^wong-1998]
-* Hochmuth, Ruhl and Coleman, *Proc. SPIE* 1999 — plate CD against chrome
+* [Hochmuth, Ruhl and Coleman, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.373324>) — plate CD against chrome
   loading in dry-etched masks.[^hochmuth-1999]
-* Brunner, *Proc. SPIE* 1991 — the swing ratio on reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — the swing ratio on reflective
   substrates.[^brunner-1991]
-* Rocke and Schneegans, *JVST B* 1988 — titanium nitride as an
+* [Rocke and Schneegans, *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — titanium nitride as an
   anti-reflection layer on aluminium.[^rocke-1988]
-* Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the i-line resist
   chemistry.[^dammel-1993]
 * Bohr, IEDM 1995, and Stamper, Fuselier and Tian, IITC 1998 — why the top
   aluminium level is thick and wide.[^bohr-1995][^stamper-1998]
-* Kahng and Samadi, *IEEE TCAD* 2008 — a survey of CMP fill
+* [Kahng and Samadi, *IEEE TCAD* 2008](<https://doi.org/10.1109/TCAD.2007.907061>) — a survey of CMP fill
   synthesis.[^kahng-2008]
 
 ## Open questions

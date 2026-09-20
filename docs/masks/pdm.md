@@ -404,74 +404,74 @@ pitch (our arithmetic from Table 2), and product openings of the order of
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Pad (scribe protect),
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Pad (scribe protect),
   PDM, X" and "Pad (scribe unprotect), PDM".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `pad` 76:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `pad` 76:20,
   `cpdm` 37:0, `padCenter`, `areaid.fe`, `target`, Table C3's "bondPad",
   "hugePad" and "scribe_line", Table C4b's `cpmm` and the columns of Table
   F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `PDMCD`/`PDMCDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `PDMCD`/`PDMCDSP`,
   `PdmCD_tol`, `padPMMEncInd`, `scribew` and the polyimide
   criteria.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `pad` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `pad` rules and function line,
   m4.13, m4.16, rdl.3, rdl.6, x.1b, x.7, x.9, x.15a, x.15b and the
   flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page — the pad, cupad.3, scribe and `cpdm.nikon`
+* [SkyWater PDK, *Error Messages* page](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) — the pad, cupad.3, scribe and `cpdm.nikon`
   checks.[^pdk-errors]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F4 and its
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F4 and its
   footnotes.[^pdk-summary]
-* SkyWater PDK, *WLCSP Rules* — the DECA and Amkor pad-opening
+* [SkyWater PDK, *WLCSP Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/wlcsp.html>) — the DECA and Amkor pad-opening
   rules.[^pdk-wlcsp]
-* SkyWater PDK, *Process stack diagram* — the "glass cut".[^pdk-04]
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the "glass cut".[^pdk-04]
 * SkyWater I/O library, `sky130_fd_io__top_gpiov2` — the GPIO pad
   opening.[^pdk-io-gpiov2]
 * Efabless, caravel `advSeal_6um_gen` seal-ring GDS — the
   `nikon_sealring_shape` sub-cell.[^caravel-sealring]
-* *S8 / SKY130 Process Steps* sheet — the step, the `PDM` plates of MPW-1
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `PDM` plates of MPW-1
   to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `PDM` renders, their layer,
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `PDM` renders, their layer,
   variants and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line exposure.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — swing curves
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line exposure.[^wiki-litho]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — swing curves
   and coating over topography.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on masks and reticles
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on masks and reticles
   and on overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Lee, *Materials Transactions* 2018 — silicon nitride in the scribe
+* [Lee, *Materials Transactions* 2018](<https://doi.org/10.2320/matertrans.M2018221>) — silicon nitride in the scribe
   region and sawing damage.[^lee-2018]
-* Tzeng, Chen and Wang (Vanguard), US 6,294,474 — oxide thickness over
+* [Tzeng, Chen and Wang (Vanguard), US 6,294,474](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6294474>) — oxide thickness over
   fusible links.[^pat-fuse-vanguard]
 * Jones, Crane, Gilchrist and Langley (Micron), US 5,380,401, and Tsai and
   Liu (TSMC), US 7,055,532 — removing fluorine residues from bond
   pads.[^pat-pad-fluorine-micron][^pat-pad-fluorine-tsmc]
-* Danzl and McLaurin, IEMT 1997 — removing a TiW anti-reflective cap from
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — removing a TiW anti-reflective cap from
   aluminium bond pads.[^danzl-1997]
-* Hunter et al., IMAPS 2012 — wire bonding as a probe of pad damage from
+* [Hunter et al., IMAPS 2012](<https://doi.org/10.4071/isom-2012-TP41>) — wire bonding as a probe of pad damage from
   wafer probing.[^hunter-2012]
-* Ching and Schroen, IRPS 1988 — bond-pad cracking, the oxides under the pad
+* [Ching and Schroen, IRPS 1988](<https://doi.org/10.1109/IRPS.1988.362201>) — bond-pad cracking, the oxides under the pad
   and the pad metallisation.[^ching-1988]
-* Comizzoli et al., *Science* 1986 — corrosion of electronic materials and
+* [Comizzoli et al., *Science* 1986](<https://doi.org/10.1126/science.234.4774.340>) — corrosion of electronic materials and
   devices.[^comizzoli-1986]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   feature size above which it is unity.[^wong-1998]
-* Morgante and Hamaker, *Proc. SPIE* 2000 — a laser reticle writer and the
+* [Morgante and Hamaker, *Proc. SPIE* 2000](<https://doi.org/10.1117/12.392079>) — a laser reticle writer and the
   mask nodes it served.[^morgante-2000]
-* Buck and Grenon, *Proc. SPIE* 1994 — wet against dry chrome etching of
+* [Buck and Grenon, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.167247>) — wet against dry chrome etching of
   masks.[^buck-1994]
-* Brunner, *Proc. SPIE* 1991 — the swing ratio on reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — the swing ratio on reflective
   substrates.[^brunner-1991]
-* Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the i-line resist
   chemistry.[^dammel-1993]
 
 :::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read

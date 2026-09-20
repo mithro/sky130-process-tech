@@ -376,74 +376,74 @@ active pattern.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "High Volt. N-tip, HVNTM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "High Volt. N-tip, HVNTM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `hvntm`, the
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `hvntm`, the
   `chvntm` purposes, `hvi`, the Table C3 definitions and the `HVNTM`
   column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `HVNTMCD`/`HVNTMCDSP`, the HV
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `HVNTMCD`/`HVNTMCDSP`, the HV
   tip angles, the photoresist thicknesses and the shadowing, penetration,
   blocking and HV tip criteria.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `hvntm` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `hvntm` rules and function line,
   rpm.9, x.7, x.15a and the flag legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `chvntm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `chvntm`
   checks on `CLHVNTM`, the `hvntm` messages and the "nikon cross"
   checks.[^pdk-errors]
-* SkyWater PDK, *High Voltage Methodology* — the 110 Å oxide of the VHV
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — the 110 Å oxide of the VHV
   and 5 V devices.[^pdk-hv]
-* *S8 / SKY130 Process Steps* sheet — the step, the `HVNTM` plates of
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `HVNTM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `HVNTM` expression, note and
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `HVNTM` expression, note and
   per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine overlay
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine overlay
   of an i-line stepper.[^asml-pas5500-275d]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Wikipedia, *Hot-carrier injection* — the failure mode that graded and
+* [Wikipedia, *Hot-carrier injection*](<https://en.wikipedia.org/wiki/Hot-carrier_injection>) — the failure mode that graded and
   LATID drains exist to prevent.[^wiki-hci]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD and
   hot-carrier engineering.[^txt-04]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Hori, IEDM 1989 — the quarter-micron LATID transistor for 3.3 V
+* [Hori, IEDM 1989](<https://doi.org/10.1109/IEDM.1989.74169>) — the quarter-micron LATID transistor for 3.3 V
   operation.[^hori-1989-latid]
-* Hori et al., *IEEE TED* 1992 — the full account of large-angle-tilt
+* [Hori et al., *IEEE TED* 1992](<https://doi.org/10.1109/16.158803>) — the full account of large-angle-tilt
   implanted drain technology.[^hori-1992]
-* Rafí and Campabadal, *Solid-State Electronics* 2001 — hot-carrier
+* [Rafí and Campabadal, *Solid-State Electronics* 2001](<https://doi.org/10.1016/S0038-1101(01)00004-1>) — hot-carrier
   degradation of LDD against LATID NMOS.[^rafi-2001]
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped drain-source
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped drain-source
   transistor.[^ogura-1980]
-* Takeda et al., *IEEE TED* 1982 — drain structures for
+* [Takeda et al., *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20752>) — drain structures for
   minimising hot-carrier generation.[^takeda-1982]
-* Hu et al., *IEEE TED* 1985 — the hot-electron degradation model that
+* [Hu et al., *IEEE TED* 1985](<https://doi.org/10.1109/T-ED.1985.21952>) — the hot-electron degradation model that
   sets the lifetime target.[^hu-1985-hci]
-* Kouznetsov (Cypress), US 6,531,366 — a high-voltage device with
+* [Kouznetsov (Cypress), US 6,531,366](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6531366>) — a high-voltage device with
   self-aligned graded junctions in a CMOS flow.[^pat-hv-graded-cyp]
-* Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted-angle
+* [Lin, Yoo and Liang (TSMC), US 5,372,957](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5372957>) — multiple tilted-angle
   implantation with wafer rotation for LDD devices.[^pat-quad-tsmc]
-* Chen et al., *Solid-State Electronics* 1995 — ion-beam shadowing in
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — ion-beam shadowing in
   large-angle-tilt implanted drain MOSFETs (title).[^chen-1995]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — SRIM, for the ion range
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — SRIM, for the ion range
   in resist.[^ziegler-2010]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* ITRS 2001, *Lithography* — mask magnification for the 130 nm
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification for the 130 nm
   generation.[^itrs-03]
 
 ## Open questions

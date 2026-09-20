@@ -361,28 +361,28 @@ a memory array cannot be derived from these rules alone (the
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Tunnel Mask, TUNM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Tunnel Mask, TUNM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `tunm` 80:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `tunm` 80:20,
   `ctunm` 20:0, `areaid.ce`, the Table C4b comment and the `TUNM`
   column of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `TUNMCD`/`TUNMCDSP` and the
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `TUNMCD`/`TUNMCDSP` and the
   photoresist thickness.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `tunm` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `tunm` rules and function line,
   hvi.4, the `lvtn` function line, x.15a and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `tunm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `tunm`
   messages and the `TUNMmk` checks.[^pdk-errors]
-* SkyWater PDK, *Device Details* — the two SONOS cells.[^pdk-07]
-* *S8 / SKY130 Process Steps* sheet — the step, the `TUNM` plates of
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the two SONOS cells.[^pdk-07]
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `TUNM` plates of
   MPW-1 to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `TUNM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `TUNM` renders, their layer
   and note, and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *PAS 5500/275D* data sheet — NA range and single-machine
+* [ASML, *PAS 5500/275D* data sheet](<https://media.asml.com/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/files/products/refurbished-products/pas-5500-275d.pdf>) — NA range and single-machine
   overlay of an i-line stepper.[^asml-pas5500-275d]
-* Cypress/UMC press release — "three additional mask layers" for the
+* [Cypress/UMC press release](<https://www.prnewswire.com/news-releases/cypress-and-umc-deliver-ics-on-new-65-nanometer-sonos-embedded-flash-technology-126238008.html>) — "three additional mask layers" for the
   S65 process; no count is given for S8.[^cyp-22]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -394,44 +394,44 @@ a memory array cannot be derived from these rules alone (the
 
 ### High-level understanding
 
-* Wikipedia, *SONOS* — the oxide–nitride–oxide memory
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the oxide–nitride–oxide memory
   transistor.[^cyp-26]
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Ion implantation* — masking, range and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — masking, range and
   energy.[^wiki-implant]
-* Mack, *Fundamental Principles of Optical Lithography* — how a mask
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — how a mask
   pattern becomes a resist pattern.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Sun et al., ICICDT 2011 — a SONOS-based embedded flash needing "only 3
+* [Sun et al., ICICDT 2011](<https://doi.org/10.1109/ICICDT.2011.5783211>) — a SONOS-based embedded flash needing "only 3
   additional non-critical masks".[^sun-2011]
-* White, Adams and Bu, *IEEE Circuits and Devices* 2000 — a review of
+* [White, Adams and Bu, *IEEE Circuits and Devices* 2000](<https://doi.org/10.1109/101.857747>) — a review of
   scaled SONOS.[^pap-01]
-* Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm local-SONOS embedded
+* [Seo et al. (Samsung), *IEEE JSSC* 2005](<https://doi.org/10.1109/JSSC.2005.845564>) — a 130 nm local-SONOS embedded
   flash from another vendor.[^pap-02]
-* Kim et al. (Samsung), VLSI 2003 — a manufacturable embedded SONOS
+* [Kim et al. (Samsung), VLSI 2003](<https://doi.org/10.1109/VLSIT.2003.1221071>) — a manufacturable embedded SONOS
   module.[^pap-03]
-* Taniguchi et al., IMW 2023 — SONOS embedded flash on a 130 nm platform
+* [Taniguchi et al., IMW 2023](<https://doi.org/10.1109/IMW56887.2023.10145990>) — SONOS embedded flash on a 130 nm platform
   with three added masks.[^pap-05]
-* Jiew, Chien and Yung, NVMTS 2012 — a 2T-SONOS cell for embedded
+* [Jiew, Chien and Yung, NVMTS 2012](<https://doi.org/10.1109/NVMTS.2013.6632849>) — a 2T-SONOS cell for embedded
   flash.[^jiew-2012]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest 2020 —
+* [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest 2020](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) —
   the integration cost of embedded SONOS.[^cyp-25]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   size below which it rises.[^wong-1998]
-* Baker and Capsuto, *Proc. SPIE* 1996 — CD control with an
+* [Baker and Capsuto, *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241869>) — CD control with an
   anti-reflective coating on an i-line 0.35 µm device.[^baker-1996]
-* Ross et al., *Proc. SPIE* 1996 — electron-beam stabilisation of i-line
+* [Ross et al., *Proc. SPIE* 1996](<https://doi.org/10.1117/12.241862>) — electron-beam stabilisation of i-line
   implant resists.[^ross-1996]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge and
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge and
   the threshold shifts they cause.[^hook-2003]
-* van Haren et al., *Proc. SPIE* 2019 — alignment-mark placement and
+* [van Haren et al., *Proc. SPIE* 2019](<https://doi.org/10.1117/12.2536270>) — alignment-mark placement and
   layer-to-layer overlay.[^van-haren-2019]
-* ITRS 2001, *Lithography* — mask magnification and the optical mask
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — mask magnification and the optical mask
   requirements of the 130 nm generation.[^itrs-03]
 
 ## Open questions

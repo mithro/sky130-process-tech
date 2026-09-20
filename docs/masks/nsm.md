@@ -353,65 +353,65 @@ from nsm.1 and nsm.2), kept 1.000 µm from all wiring.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Nitride Seal Mask, NSM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Nitride Seal Mask, NSM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `nsm` 61:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `nsm` 61:20,
   `cnsm` 22:0, Table C3's `NSM_keepout`, Table C4b's `areaid.dt` and the
   columns of Table F2b.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `NSMCD`/`NSMCDSP`,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `NSMCD`/`NSMCDSP`,
   `NSMKeepout`, `NSMKeepout_3um`, `scribew` and `TBOWINGSEAL`.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `nsm` rules and function line,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `nsm` rules and function line,
   x.1b, x.7, x.9, x.15a, x.19, x.23c, x.23e, x.26, x.28 and the flag
   legend.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page — the `nsm`, seal-ring, scribe and
+* [SkyWater PDK, *Error Messages* page](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) — the `nsm`, seal-ring, scribe and
   `cnsm.nikon` checks.[^pdk-errors]
-* SkyWater PDK, *Summary of Key Periphery Rules* — Table F4.[^pdk-summary]
-* SkyWater PDK, *Process stack diagram* — the metal-5 topography.[^pdk-04]
+* [SkyWater PDK, *Summary of Key Periphery Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>) — Table F4.[^pdk-summary]
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the metal-5 topography.[^pdk-04]
 * Efabless, caravel `advSeal_6um_gen` seal-ring GDS — the `nsm` band, its
   polygons and the `nikon_sealring_shape` sub-cell.[^caravel-sealring]
-* *S8 / SKY130 Process Steps* sheet — the step, the `NSM` plates of MPW-1
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step, the `NSM` plates of MPW-1
   to MPW-8 and the mask-type tab.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — the `NSM` renders, their layer
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — the `NSM` renders, their layer
   and the per-die shape counts.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — the i-line exposure
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the i-line exposure
   tools.[^skw-01]
-* ASML, *Three decades of PAS 5500* — older exposure tools moving to less
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — older exposure tools moving to less
   critical layers.[^asml-30]
 
 ### High-level understanding
 
-* Wikipedia, *Photomask* — reticles, absorbers and
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>) — reticles, absorbers and
   pellicles.[^wiki-mask]
-* Wikipedia, *Photolithography* — i-line exposure.[^wiki-litho]
-* Mack, *Fundamental Principles of Optical Lithography* — coating over
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line exposure.[^wiki-litho]
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — coating over
   topography and swing curves.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on masks and reticles
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on masks and reticles
   and on overlay.[^levinson-2005]
 
 ### Deep dive
 
-* Gambino et al., IITC 2014 — the reliability of a segmented edge
+* [Gambino et al., IITC 2014](<https://doi.org/10.1109/IITC.2014.6831836>) — the reliability of a segmented edge
   seal ring in a 0.18 µm RF technology.[^gambino-2014]
-* Mitwalsky and Chen (Siemens and IBM), US 5,789,302 — crack
+* [Mitwalsky and Chen (Siemens and IBM), US 5,789,302](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5789302>) — crack
   stops.[^pat-crackstop-ibm]
-* Bothra, McKay and Jhota (Zeevo), US 6,492,716 — a seal-ring structure
+* [Bothra, McKay and Jhota (Zeevo), US 6,492,716](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>) — a seal-ring structure
   for mixed-signal ICs.[^pat-sealring-zeevo]
-* Ying and Hung (TSMC), US 6,300,252 — etching fuse windows through the
+* [Ying and Hung (TSMC), US 6,300,252](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6300252>) — etching fuse windows through the
   back-end dielectrics.[^pat-fusewin-tsmc]
-* Comizzoli et al., *Science* 1986 — corrosion of electronic materials and
+* [Comizzoli et al., *Science* 1986](<https://doi.org/10.1126/science.234.4774.340>) — corrosion of electronic materials and
   devices.[^comizzoli-1986]
-* Peck, IRPS 1986 — a model for humidity-test correlation.[^peck-1986]
-* Wodecki, *Proc. SPIE* 1999 — endpoint detection at low open
+* [Peck, IRPS 1986](<https://doi.org/10.1109/IRPS.1986.362110>) — a model for humidity-test correlation.[^peck-1986]
+* [Wodecki, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.361313>) — endpoint detection at low open
   area.[^wodecki-1999]
-* Wong et al. (IBM), *Proc. SPIE* 1998 — the mask error factor and the
+* [Wong et al. (IBM), *Proc. SPIE* 1998](<https://doi.org/10.1117/12.310718>) — the mask error factor and the
   feature size above which it is unity.[^wong-1998]
-* Hochmuth, Ruhl and Coleman, *Proc. SPIE* 1999 — plate CD against chrome
+* [Hochmuth, Ruhl and Coleman, *Proc. SPIE* 1999](<https://doi.org/10.1117/12.373324>) — plate CD against chrome
   loading.[^hochmuth-1999]
-* Morgante and Hamaker, *Proc. SPIE* 2000 — a laser reticle writer and the
+* [Morgante and Hamaker, *Proc. SPIE* 2000](<https://doi.org/10.1117/12.392079>) — a laser reticle writer and the
   mask nodes it served.[^morgante-2000]
-* Buck and Grenon, *Proc. SPIE* 1994 — wet against dry chrome etching of
+* [Buck and Grenon, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.167247>) — wet against dry chrome etching of
   masks.[^buck-1994]
-* Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the i-line resist
   chemistry.[^dammel-1993]
 
 :::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read
