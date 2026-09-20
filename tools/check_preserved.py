@@ -106,6 +106,7 @@ DEF_RE = re.compile(
 MARKER_RE = re.compile(r"\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\](?!:)")
 ROLE_RE = re.compile(r"\{(?:ref|term|doc)\}`([^`]+)`")
 URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
+BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
 QUOTE_RE = re.compile(r'"([^"\n]{1,400})"|“([^”\n]{1,400})”')
 
 _SIGN = r"[+\-−±]"
@@ -285,6 +286,38 @@ def extract_hedges(text: str) -> Counter:
     return c
 
 
+def extract_urls_masked(text: str) -> tuple[Counter, str]:
+    """Return (URL counts, ``text`` with every URL masked to one space).
+
+    House style (``docs/plans/citation-style.md``) wraps a citation URL
+    in angle brackets (``<https://...>``); that delimiter is unambiguous
+    and is tried first, taking the *whole* interior, parentheses
+    included -- a bare punctuation-trimming regex would otherwise
+    truncate a pre-2000 Elsevier DOI
+    (``https://doi.org/10.1016/0040-6090(89)90102-8``) or a Wikipedia
+    title with a literal ``(`` at the first ``)``, and the truncated
+    remainder (``)90102-8``) can then be misread as a "new" number by
+    ``extract_numbers`` (see ``tools/check_links.py``, which solves the
+    same problem the same way). Whatever text is left is masked with the
+    old bare-URL regex, in case a page ever strays from house style.
+    """
+    counts: Counter = Counter()
+    spans: list[tuple[int, int]] = []
+    for m in BRACKETED_URL_RE.finditer(text):
+        counts[m.group(1)] += 1
+        spans.append((m.start(), m.end()))
+    if spans:
+        chars = list(text)
+        for s, e in spans:
+            for i in range(s, e):
+                chars[i] = " "
+        text = "".join(chars)
+    for u in URL_RE.findall(text):
+        counts[u] += 1
+    text = URL_RE.sub(" ", text)
+    return counts, text
+
+
 def extract_all(text: str) -> dict[str, Counter]:
     defs: dict[str, str] = {}
     for label, body in DEF_RE.findall(text):
@@ -300,8 +333,7 @@ def extract_all(text: str) -> dict[str, Counter]:
         return " "
 
     masked = ROLE_RE.sub(_role_sub, body_text)
-    urls = Counter(URL_RE.findall(masked))
-    masked = URL_RE.sub(" ", masked)
+    urls, masked = extract_urls_masked(masked)
     masked = MARKER_RE.sub(" ", masked)
 
     numbers = extract_numbers(masked)
@@ -512,6 +544,21 @@ def selftest() -> int:
         "# P\n\nA source says \"first\nline second line\" here.[^a]\n\n"
         "[^a]: Source. <https://example.com/a>\n",
         True,
+    )
+    case(
+        "a reading-list head linked to a DOI URL with a literal parenthesis "
+        "does not leak digits into 'numbers' (W0c)",
+        "# P\n\n## References\n\n### Deep dive\n\n"
+        "* Turban et al., *Thin Solid Films* 1989 — tungsten etching.[^a]\n"
+        "\n[^a]: Turban et al., *Thin Solid Films*. "
+        "<https://doi.org/10.1016/0040-6090(89)90102-8>\n",
+        "# P\n\n## References\n\n### Deep dive\n\n"
+        "* [Turban et al., *Thin Solid Films*](<https://doi.org/10.1016/0040-6090(89)90102-8>)"
+        " 1989 — tungsten etching.[^a]\n"
+        "\n[^a]: Turban et al., *Thin Solid Films*. "
+        "<https://doi.org/10.1016/0040-6090(89)90102-8>\n",
+        True,
+        allowed=frozenset({"urls"}),
     )
     case(
         "prose converted to a table with the same values",
