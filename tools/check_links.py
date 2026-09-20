@@ -259,6 +259,16 @@ CHALLENGE_PATH_MARKERS = (
     "/verify_human",  # openlibrary.org / archive.org
 )
 
+# A redirect landing on one of these *hosts* (regardless of path or
+# status) is a third-party bot-challenge provider, not a real destination
+# -- found via the "cross-domain redirect" report section on
+# iopscience.iop.org, which 200s to a validate.perfdrive.com (Radware)
+# challenge page rather than 403ing on its own host the way most blocked
+# hosts here do.
+CHALLENGE_HOST_MARKERS = (
+    "perfdrive.com",
+)
+
 
 def host_of(url: str) -> str:
     return urllib.parse.urlparse(url).netloc.lower()
@@ -671,7 +681,9 @@ def hosts_in_chain(url: str, chain: list[tuple[int, str]], final_url: str) -> se
 
 
 def is_challenge_url(u: str) -> bool:
-    return any(marker in u for marker in CHALLENGE_PATH_MARKERS)
+    if any(marker in u for marker in CHALLENGE_PATH_MARKERS):
+        return True
+    return any(host_matches(host_of(u), h) for h in CHALLENGE_HOST_MARKERS)
 
 
 def classify(
@@ -1574,6 +1586,18 @@ Some claim.[^wiki-fick][^pdk-01]
             200,
             "https://openlibrary.org/verify_human?next=/books/OLxM",
             [(302, "https://openlibrary.org/books/OLxM"), (303, "https://openlibrary.org/verify_human?next=/books/OLxM")],
+            None,
+        )
+        == "blocked-to-scripts",
+    )
+    check(
+        "a 200 landing on a third-party challenge host is blocked-to-scripts",
+        classify(
+            "https://iopscience.iop.org/article/10.1149/1.2426757",
+            False,
+            200,
+            "https://validate.perfdrive.com/abc123/?ssa=1&rd=iop.org",
+            [(302, "https://validate.perfdrive.com/abc123/?ssa=1&rd=iop.org")],
             None,
         )
         == "blocked-to-scripts",
