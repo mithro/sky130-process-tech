@@ -256,6 +256,42 @@ textbook case this rule category exists to tolerate when a dense passage is deli
 restructured. All other checkers and the `-W` build pass; screenshots at both widths read
 cleanly — the derivation table and the "Which wavelength"-style recap table both hold at 400 px.
 
+### 007-dnm.md — done
+
+Rules applied: R-TABLE (twice: the four dnwell/nwell design-rule values → Rule|Constrains|Value;
+the RSDNW-versus-measured comparison → a "measured against nominal" Parameter|Geometry|Measured|
+PDK nominal|Limits table), R-LIST (the three PDK device-page quotes announced by "describe its
+uses directly:" → three bullets), R-PARA (the 99- and 84-word numbered-list items under "Why
+here?" and "How it is typically performed" → lead + indented continuation), R-SENTENCE (the
+"Resist thickness" item's semicolon split), R-HEDGE step 1 (the second industry-generic-recipe
+opener on this page, in "How it is typically performed", wrapped in a note — the "Why here?"
+section's own numbered list of inference reasons is not a scope sentence and was left alone),
+R-CATEGORY (two-bullet "Specific to this step:", a clean case), R-TOOLS (three bullets, under 4,
+split), R-RELATED ("Feeds:" on the N-well-ring bullet; the page's own "Previous mask:"/"next
+mask:" convention left as is, matching page 004), R-OPENQ (three bullets labelled), R-GLANCE (box
+last). R-H3: no candidate (no bold run-in on this page, no section over cap once the two
+paragraphs above were table-ised). R-DERIVATION: not applicable (no arithmetic, a straight
+measured-vs-nominal comparison, which is R-TABLE's job per §3.2). R-CODE: no candidate.
+
+Two quote-preservation slips caught by `check_preserved.py` and fixed before committing (the same
+lesson as Guide problem 6, generalised: pulling a label out of the FRONT of an existing quotation
+changes what the quotation covers):
+* An early R-CATEGORY/R-TABLE draft paraphrased away the page's own quoted phrase `"must be
+  enclosed by nwell by atleast"` for the nwell.5 row — restored the exact quotation in the
+  table's "Constrains" cell instead of a paraphrase.
+* An early R-LIST draft pulled "20V isolated NMOS FET" out of the front of its quotation to use
+  as a bold bullet label, shortening the quoted string — fixed by keeping the full original
+  quotation intact and using a non-overlapping label ("20 V isolated NMOS").
+Also reworded a first-draft table row that implicitly changed "2 191 Ω" to "2 191 Ω/sq" (adding a
+unit not in the source's literal wording, even though the surrounding sentence arguably implies
+it) — kept the bare "Ω" from the source and moved the shared "per square two-terminal"
+qualifier into the sentence beneath the table instead of inventing a per-cell unit.
+
+`check_preserved.py docs/steps/007-dnm.md --allow-added markers,numbers,hedges,number_order`:
+0 LOST outside `number_order` after the fixes above; all `number_order` LOST/ADDED pairs are the
+table/list splits (hand-verified). All other checkers and the `-W` build pass; screenshots at
+both widths read cleanly, both new tables hold at 400 px.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
