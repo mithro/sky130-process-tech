@@ -65,6 +65,43 @@ written, reviewed and audited to the same standard.
     fetch there, pace requests, and never loop on a host that answers
     with a bot check or HTTP 429/503.
 
+## Checking a readability edit
+
+Every readability branch that hand-edits a written page (`docs/plans/readability-plan.md`
+W1–W4) is presentation only: no fact, number, quotation, hedge or citation
+may change or disappear (Ground rule 1). `tools/check_preserved.py`
+automates the before/after comparison the reports ask for
+(`docs/plans/readability/report-A.md`, "Acceptance check, every page";
+`report-B.md` section 3 item 4).
+
+Run it before every commit that touches page prose, and again before
+finishing the branch:
+
+```
+uv run python tools/check_preserved.py [--base main] [paths…]
+```
+
+With no paths it finds every `docs/**/*.md` file outside `docs/plans` that
+differs from `--base` (default `main`) and compares each one, base revision
+against the working tree, in six categories: footnote markers and
+definitions, numeric tokens, quoted strings, `{ref}`/`{term}`/`{doc}`
+targets and URLs, hedge-phrase counts, and the text inside every
+`{dropdown}` block. Anything **lost** always fails the check. Anything
+**added** is printed either way, and fails unless its category is declared
+with `--allow-added` (a comma-separated list, e.g.
+`--allow-added refs,numbers` for a page where a new table adds step
+numbers already present in prose elsewhere on the page). A changed
+`{dropdown}` body always fails unless the edit is deliberately one the
+dropdown text itself, with `--allow-dropdown-edits`. Exit status is 1 on
+any undeclared difference; `uv run python tools/check_preserved.py
+--selftest` exercises the checker itself and touches no files.
+
+Read every reported line: an addition you did not expect, or a loss in a
+category you meant to leave untouched, usually means the edit moved or
+reworded something incorrectly rather than only re-presenting it. A model
+that finds an arithmetic slip or factual doubt while re-presenting text
+reports it in the branch's progress file; it does not fix it here.
+
 ## Writer brief (step pages)
 
 You are writing `docs/steps/NNN-code.md` for one or more steps. Keep

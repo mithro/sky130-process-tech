@@ -1,0 +1,161 @@
+/* Theme polish for the readability pass (docs/plans/readability/report-C.md
+   C2, C3, C12; report-B.md section 3 item 2). Presentation only: every rule
+   here uses furo's own CSS custom properties, so dark mode follows without a
+   separate dark stylesheet. See docs/_static/footnote-popover.js for the
+   script this file styles. */
+
+/* --------------------------------------------------------------------
+   1. Footnote back-reference lists break the phone layout (report-C C2).
+   docutils prints "(1,2,3,…,77)" with no break opportunity; on a narrow
+   screen this makes the whole page wider than the viewport. */
+.footnote .backrefs {
+  overflow-wrap: anywhere;
+}
+
+/* Belt and braces: the rest of a footnote definition (long URLs) should
+   never force horizontal scrolling either. */
+aside.footnote-list,
+aside.footnote {
+  overflow-wrap: anywhere;
+}
+
+/* --------------------------------------------------------------------
+   2. Footnote popover card (footnote-popover.js). Appended to <body>, so
+   it is never clipped by a table wrapper's or a dropdown's overflow. */
+.fn-popover {
+  position: absolute;
+  z-index: 60;
+  box-sizing: border-box;
+  padding: 0.6rem 0.8rem;
+  background: var(--color-background-primary);
+  color: var(--color-foreground-primary);
+  border: 1px solid var(--color-background-border);
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  font-size: var(--font-size--small);
+  line-height: 1.45;
+}
+
+.fn-popover p,
+.fn-popover li {
+  overflow-wrap: anywhere;
+}
+
+.fn-popover > :first-child {
+  margin-top: 0;
+}
+
+.fn-popover > :last-child {
+  margin-bottom: 0;
+}
+
+/* A slightly larger hit area on the marker itself, and keep a run of
+   several markers ("[18][19][20]") from splitting across a line break. */
+a.footnote-reference {
+  padding: 0 0.1em;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------
+   3. Tables (report-C C12, report-B section 3 item 2): top-aligned
+   cells, zebra rows, sticky header. */
+table.docutils td {
+  vertical-align: top;
+}
+
+table.docutils tbody tr:nth-child(even) {
+  background: var(--color-background-secondary);
+}
+
+table.docutils thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-background-secondary);
+  z-index: 1;
+}
+
+/* No-wrap labels in the first column of a two-column "quick facts"
+   table: a row whose first cell is a single bold run-in label. Row
+   selector requires exactly two cells (first-child that is also
+   second-from-last). */
+table.docutils tr > td:first-child:nth-last-child(2) > p:only-child > strong:only-child {
+  white-space: nowrap;
+}
+
+/* On a narrow screen: a smaller table font and a sticky first column,
+   inside furo's own table-wrapper div, so long tables stay readable
+   without the reader losing the row label while scrolling sideways. */
+@media (max-width: 40em) {
+  .table-wrapper table.docutils {
+    font-size: var(--font-size--small);
+  }
+
+  .table-wrapper td:first-child,
+  .table-wrapper th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  .table-wrapper thead th:first-child {
+    z-index: 3;
+  }
+
+  .table-wrapper tbody tr:nth-child(odd) td:first-child {
+    background: var(--color-background-primary);
+  }
+
+  .table-wrapper tbody tr:nth-child(even) td:first-child {
+    background: var(--color-background-secondary);
+  }
+
+  .table-wrapper thead th {
+    background: var(--color-background-secondary);
+  }
+}
+
+/* --------------------------------------------------------------------
+   4. Glossary: bold terms so the page scans (report-C C12). */
+dl.glossary dt {
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------
+   5. Prose measure: keep running text near 44em while tables, code,
+   figures and admonitions keep the full column width (report-C C12). */
+article[role="main"] p,
+article[role="main"] li,
+article[role="main"] dd {
+  max-width: 44em;
+}
+
+article[role="main"] .table-wrapper p,
+article[role="main"] table.docutils p,
+article[role="main"] figure p,
+article[role="main"] .figure p,
+article[role="main"] .admonition p,
+article[role="main"] .highlight p,
+article[role="main"] pre p {
+  max-width: none;
+}
+
+/* --------------------------------------------------------------------
+   6. Label the footnote block (report-C C12): furo prints the footnote
+   list with no heading of its own. */
+aside.footnote-list::before {
+  content: "Sources cited on this page";
+  display: block;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  color: var(--color-foreground-primary);
+}
+
+/* --------------------------------------------------------------------
+   7. Small, left-aligned figure captions (report-C C12). */
+figure figcaption,
+.figure .caption,
+figcaption {
+  font-size: var(--font-size--small);
+  color: var(--color-foreground-secondary);
+  text-align: left;
+}

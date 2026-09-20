@@ -44,7 +44,8 @@ html_theme = "furo"
 html_title = "SKY130 Process Technology"
 html_static_path = ["_static"]
 templates_path = ["_templates"]
-html_css_files = ["announcement-dismiss.css"]
+html_css_files = ["announcement-dismiss.css", "custom.css"]
+html_js_files = ["footnote-popover.js"]
 # Shown by the theme at the top of every rendered page.
 announcement = "Warning: AI in use — use at own risk."
 
@@ -53,4 +54,6 @@ html_theme_options = {
     "source_repository": "https://github.com/mithro/sky130-process-tech/",
     "source_branch": "main",
     "source_directory": "docs/",
+    # Left/Right arrow keys move between previous/next page (report-C C12).
+    "navigation_with_keys": True,
 }
