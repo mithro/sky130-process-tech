@@ -234,6 +234,7 @@ BLOCKED_HOSTS = {
     "forbes.com",  # 403 to scripted clients (verified 2026-09-19); Wayback shows the page live
     "businesswire.com",  # connection dropped for scripted clients (verified 2026-09-19); Wayback shows the page live
     "startribune.com",  # persistent 429 to scripted clients (verified 2026-09-19); Wayback shows the pages live and recent
+    "semimarket.com",  # 403 to scripted clients, 200 to a browser one (verified 2026-09-20); found via --soft-dead's thin-body check
 }
 
 # Per-host request pacing, in seconds.  Anything not listed uses
