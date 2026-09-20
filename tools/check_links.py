@@ -338,27 +338,60 @@ def extract_access_date(text: str) -> str | None:
     return f"{m.group(1)}{m.group(2)}{m.group(3)}"
 
 
-def extract_cited_title(text: str) -> str | None:
-    """Return the block's cited title, for the soft-dead title check.
+TITLE_PROXIMITY_WINDOW = 400  # chars a title may precede "its" URL by
 
-    House style (``citation-style.md``) puts the title in italics
-    (``*Title*``); a few older entries quote it instead (``"Title"``).
-    Try italics first, then a quoted run; ``None`` if neither is found
-    (a bare title is not worth guessing at, since anything else in the
-    block could false-positive on ``*emphasis*`` used for other reasons).
+
+def extract_url_titles(text: str, window: int = TITLE_PROXIMITY_WINDOW) -> dict[str, str]:
+    """Return ``{token: title}`` for every bracketed URL (or the DOI it
+    resolves to) in ``text``, paired with the *nearest preceding* italic
+    or quoted title within ``window`` characters -- not simply the first
+    title anywhere in the block.
+
+    Why per-URL, not per-block: an inventory/reading-list block routinely
+    holds many bullets, each its own ``*Title* — <url>`` pair (an
+    inventory ``**KEY**`` block runs to the next ``**KEY**`` marker, which
+    can be a whole reading-list section away). Taking "the block's first
+    italic span" for every URL in it hands unrelated bullets the wrong
+    title outright (measured: a 25-bullet Wikipedia reading list under
+    one inventory key, the block's first URL is a `Shallow trench
+    isolation` article and every later bullet's citation -- CVD, RIE,
+    sputter deposition, ... -- wrongly inherited *that* title). House
+    style (citation-style.md) puts the title right before its own URL, so
+    nearest-preceding within a modest window is far more reliable than
+    "first in the block" while staying a cheap, local regex scan.
     """
-    m = ITALIC_RE.search(text)
-    if m:
-        return m.group(1).strip()
-    m = QUOTED_RE.search(text)
-    if m:
-        return m.group(1).strip()
-    return None
+    spans: list[tuple[int, str]] = []
+    for m in ITALIC_RE.finditer(text):
+        spans.append((m.start(), m.group(1).strip()))
+    for m in QUOTED_RE.finditer(text):
+        spans.append((m.start(), m.group(1).strip()))
+    spans.sort()
+
+    titles: dict[str, str] = {}
+    for m in BRACKETED_URL_RE.finditer(text):
+        url = m.group(1)
+        pos = m.start()
+        nearest: str | None = None
+        for ipos, title in spans:
+            if ipos >= pos:
+                break
+            if pos - ipos <= window:
+                nearest = title  # keep the latest (closest) one seen so far
+        if not nearest:
+            continue
+        host = host_of(url)
+        if host in ("doi.org", "dx.doi.org"):
+            doi = urllib.parse.unquote(url.split("doi.org/", 1)[-1]).rstrip(TRAILING_PUNCT).lower()
+            if doi:
+                titles.setdefault(token_for(doi=doi), nearest)
+        else:
+            titles.setdefault(url, nearest)
+    return titles
 
 
-def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None, str | None]]:
-    """Return ``{KEY: (urls, dois, access_date, cited_title)}`` for every ``**KEY**`` entry."""
-    entries: dict[str, tuple[set[str], set[str], str | None, str | None]] = {}
+def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None, dict[str, str]]]:
+    """Return ``{KEY: (urls, dois, access_date, url_titles)}`` for every ``**KEY**`` entry."""
+    entries: dict[str, tuple[set[str], set[str], str | None, dict[str, str]]] = {}
     matches = list(KEY_RE.finditer(text))
     for i, m in enumerate(matches):
         key = m.group(1)
@@ -367,27 +400,29 @@ def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None
         block = text[start:end]
         urls, dois = extract_urls_and_dois(block)
         date = extract_access_date(block)
-        title = extract_cited_title(block)
-        eurls, edois, _, _ = entries.get(key, (set(), set(), None, None))
+        url_titles = extract_url_titles(block)
+        eurls, edois, _, etitles = entries.get(key, (set(), set(), None, {}))
         eurls.update(urls)
         edois.update(dois)
-        entries[key] = (eurls, edois, date, title)
+        etitles.update(url_titles)
+        entries[key] = (eurls, edois, date, etitles)
     return entries
 
 
-def parse_page_footnotes(text: str) -> dict[str, tuple[set[str], set[str], str | None, str | None]]:
-    """Return ``{label: (urls, dois, access_date, cited_title)}`` for every footnote def."""
-    result: dict[str, tuple[set[str], set[str], str | None, str | None]] = {}
+def parse_page_footnotes(text: str) -> dict[str, tuple[set[str], set[str], str | None, dict[str, str]]]:
+    """Return ``{label: (urls, dois, access_date, url_titles)}`` for every footnote def."""
+    result: dict[str, tuple[set[str], set[str], str | None, dict[str, str]]] = {}
     for m in FOOTNOTE_DEF_RE.finditer(text):
         label = m.group(1)
         block = m.group(2)
         urls, dois = extract_urls_and_dois(block)
         date = extract_access_date(block)
-        title = extract_cited_title(block)
-        rurls, rdois, _, _ = result.get(label, (set(), set(), None, None))
+        url_titles = extract_url_titles(block)
+        rurls, rdois, _, rtitles = result.get(label, (set(), set(), None, {}))
         rurls.update(urls)
         rdois.update(dois)
-        result[label] = (rurls, rdois, date, title)
+        rtitles.update(url_titles)
+        result[label] = (rurls, rdois, date, rtitles)
     return result
 
 
@@ -407,8 +442,8 @@ class Registry:
         # token -> the first accessed/retrieved date (compact YYYYMMDD)
         # found citing it; feeds the Wayback availability timestamp (C5).
         self.access_dates: dict[str, str] = {}
-        # token -> the first cited *Title* found; feeds the soft-dead
-        # title-mismatch check.
+        # token -> its nearest-preceding cited *Title* (see
+        # extract_url_titles); feeds the soft-dead title-mismatch check.
         self.cited_titles: dict[str, str] = {}
 
     def _note_dates(self, urls: set[str], dois: set[str], access_date: str | None) -> None:
@@ -419,13 +454,9 @@ class Registry:
         for d in dois:
             self.access_dates.setdefault(token_for(doi=d), access_date)
 
-    def _note_titles(self, urls: set[str], dois: set[str], cited_title: str | None) -> None:
-        if not cited_title:
-            return
-        for u in urls:
-            self.cited_titles.setdefault(u, cited_title)
-        for d in dois:
-            self.cited_titles.setdefault(token_for(doi=d), cited_title)
+    def _note_titles(self, url_titles: dict[str, str]) -> None:
+        for token, title in url_titles.items():
+            self.cited_titles.setdefault(token, title)
 
     def add_inventory(
         self,
@@ -433,14 +464,14 @@ class Registry:
         urls: set[str],
         dois: set[str],
         access_date: str | None = None,
-        cited_title: str | None = None,
+        url_titles: dict[str, str] | None = None,
     ) -> None:
         for u in urls:
             self.inventory_keys[u].add(key)
         for d in dois:
             self.inventory_keys[token_for(doi=d)].add(key)
         self._note_dates(urls, dois, access_date)
-        self._note_titles(urls, dois, cited_title)
+        self._note_titles(url_titles or {})
 
     def add_page(
         self,
@@ -449,14 +480,14 @@ class Registry:
         urls: set[str],
         dois: set[str],
         access_date: str | None = None,
-        cited_title: str | None = None,
+        url_titles: dict[str, str] | None = None,
     ) -> None:
         for u in urls:
             self.pages[u][page].add(label)
         for d in dois:
             self.pages[token_for(doi=d)][page].add(label)
         self._note_dates(urls, dois, access_date)
-        self._note_titles(urls, dois, cited_title)
+        self._note_titles(url_titles or {})
 
     def tokens(self) -> set[str]:
         return set(self.inventory_keys) | set(self.pages)
@@ -504,8 +535,8 @@ def build_registry(
 ) -> Registry:
     reg = Registry()
     if inventory.exists():
-        for key, (urls, dois, date, title) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
-            reg.add_inventory(key, urls, dois, date, title)
+        for key, (urls, dois, date, url_titles) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
+            reg.add_inventory(key, urls, dois, date, url_titles)
     for path in sorted(docs_dir.rglob("*.md")):
         rel_parts = path.relative_to(docs_dir).parts
         if rel_parts and rel_parts[0] in EXCLUDED_TOP_LEVEL_DIRS:
@@ -520,8 +551,8 @@ def build_registry(
             if len(rel_parts) >= 2 and rel_parts[0] == "references" and rel_parts[1] in GENERATED_DIRS:
                 continue  # scanned whole-file by _scan_generated instead
         text = path.read_text(encoding="utf-8")
-        for label, (urls, dois, date, title) in parse_page_footnotes(text).items():
-            reg.add_page(str(path.relative_to(docs_dir.parent)), label, urls, dois, date, title)
+        for label, (urls, dois, date, url_titles) in parse_page_footnotes(text).items():
+            reg.add_page(str(path.relative_to(docs_dir.parent)), label, urls, dois, date, url_titles)
     if include_generated:
         _scan_generated(reg, docs_dir)
     return reg
@@ -1671,9 +1702,45 @@ Some claim.[^wiki-fick][^pdk-01]
     # -- soft-dead? heuristics (all offline; canned title/body/URL inputs,
     # no network, no fetch).
 
-    check("cited title from italics", extract_cited_title('EDN, *Applied dedicates RTP with Vantage*, 2002.') == "Applied dedicates RTP with Vantage")
-    check('cited title falls back to a quoted run', extract_cited_title('Wikipedia, "Fick\'s laws of diffusion".') == "Fick's laws of diffusion")
-    check("no title found is None", extract_cited_title("Just a plain sentence with no markup.") is None)
+    check(
+        "cited title from italics, paired with its own URL",
+        extract_url_titles("EDN, *Applied dedicates RTP with Vantage*, 2002.\n<https://www.edn.com/x/>")
+        == {"https://www.edn.com/x/": "Applied dedicates RTP with Vantage"},
+    )
+    check(
+        "cited title falls back to a quoted run",
+        extract_url_titles("Wikipedia, \"Fick's laws of diffusion\".\n<https://en.wikipedia.org/wiki/Fick>")
+        == {"https://en.wikipedia.org/wiki/Fick": "Fick's laws of diffusion"},
+    )
+    check("no title found is empty", extract_url_titles("<https://example.org/x> with no title nearby at all.") == {})
+    check(
+        "a doi.org URL's title is keyed by its doi: token",
+        extract_url_titles("Author, *A Paper*.\n<https://doi.org/10.1/x>") == {"doi:10.1/x": "A Paper"},
+    )
+    # The regression this function exists to fix: a 25-bullet reading list
+    # under one inventory key, each bullet its own "* *Title* — <url>" --
+    # "the block's first italic span" would wrongly hand every later
+    # bullet the first bullet's title (measured on public-sources.md's
+    # "Encyclopaedia articles" list: every citation after the first
+    # inherited "Shallow trench isolation").
+    reading_list = (
+        "* *Shallow trench isolation* — <https://en.wikipedia.org/wiki/A>\n"
+        "* *Chemical vapor deposition* (LPCVD, PECVD) — <https://en.wikipedia.org/wiki/B>\n"
+        "* *Sputter deposition* — <https://en.wikipedia.org/wiki/C>\n"
+    )
+    rl_titles = extract_url_titles(reading_list)
+    check(
+        "each reading-list bullet keeps its own title, not the block's first",
+        rl_titles == {
+            "https://en.wikipedia.org/wiki/A": "Shallow trench isolation",
+            "https://en.wikipedia.org/wiki/B": "Chemical vapor deposition",
+            "https://en.wikipedia.org/wiki/C": "Sputter deposition",
+        },
+    )
+    # A title far outside the proximity window never attaches (an
+    # unrelated earlier title should not leak forward indefinitely).
+    far_text = "*Unrelated Title*" + (" filler word" * 100) + "\n<https://example.org/far>"
+    check("a title far outside the window is not attached", "https://example.org/far" not in extract_url_titles(far_text))
 
     html_ok = b"<html><head><title>Wafer Prober P-8XL &amp; P-12XL</title></head><body>" + b"Tokyo Electron wafer prober specifications. " * 20 + b"</body></html>"
     check("extracts <title>", extract_page_title(html_ok) == "Wafer Prober P-8XL &amp; P-12XL")
