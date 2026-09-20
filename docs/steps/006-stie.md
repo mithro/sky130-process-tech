@@ -10,6 +10,19 @@
 | **Previous step** | {ref}`STINITE <step-005>` |
 | **Next step** | {ref}`DNM <step-007>` |
 
+:::{admonition} At a glance
+* **Does:** the plasma etch that cuts the isolation trenches into the
+  silicon.
+* **Why:** the trench depth, sidewall angle and corner shape it sets
+  are the main geometric inputs to the whole isolation module.
+* **Public numbers:** about 0.33 µm trench depth (our reading, not a
+  documented fact).[^pdk-04]
+* **Likely SkyWater tool:** AMAT DPS II — strong (tool, application);
+  inference (assignment).[^skw-01]
+* **Not public:** the actual trench depth, and where the FOM resist
+  is stripped (→ Open questions).
+:::
+
 ## What this step is
 
 `STIE` (shallow-trench-isolation etch) is the plasma etch that cuts the
@@ -35,38 +48,54 @@ silicon, depositing one or more dielectric materials (such as silicon
 dioxide) to fill the trenches, and removing the excess
 dielectric";[^wiki-sti] `STIE` is the first of those three operations.
 
-**How deep?** No SkyWater document gives the SKY130 trench depth, and
-the PDK stack drawing does not settle it. The drawing's vertical ladder
-starts at `0.0` and puts the next level at 0.3262 µm, where it labels
-"FOX K=3.9";[^pdk-04] its two `licon` dimensions (0.6099 µm over
-`diffusion` and 0.4299 µm over the 0.18 µm `field poly`, both ending at
-the `li` bottom at 0.9361 µm) put the diffusion surface
-(0.9361 − 0.6099 = 0.3262 µm) and the field-oxide top
-(0.9361 − 0.4299 − 0.18 = 0.3262 µm) at the same level — so the drawing
-shows no field-oxide step, and the 0.07 µm `FOXSTEP` of the assumptions
-table[^pdk-03] cannot be combined with it to derive a trench depth. If
-the drawing's zero is the trench floor — our reading, not a documented
-fact, and the drawing itself says "Diagram not to scale!" — the trench
-would be about 0.33 µm deep; if the zero is the substrate surface, as
-the {ref}`PSG <step-089>` page reads the same labels, the drawing says
-nothing about trench depth.[^pdk-04] Era practice brackets the same
-range: an AmberWave Systems STI patent (now TSMC-owned) gives "a depth
-d1 within a range of, for example, 3000-4000 Å" for a strained-Si/
-relaxed-SiGe module,[^pat-sti-amberwave] and Thung et al. record that
-the STI "aspect ratio is increased by 66% from 0.18µm technology to
-0.13µm technology".[^thung-2016] On the 0.33 µm depth above and a ~150 nm
-nitride, a 0.27 µm minimum trench width (difftap.3)[^pdk-periph] gives a
-fill aspect ratio of roughly 1.8 : 1 by Thung et al.'s
-definition.[^thung-2016]
+### How deep?
+
+No SkyWater document gives the SKY130 trench depth, and
+the PDK stack drawing does not settle it.
+
+| Quantity (PDK stack drawing[^pdk-04]) | Value |
+|---|---:|
+| Vertical ladder start | `0.0` |
+| Next level, labelled "FOX K=3.9" | 0.3262 µm |
+| `licon` over `diffusion` | 0.6099 µm |
+| `licon` over `field poly` (0.18 µm thick) | 0.4299 µm |
+| `li` bottom | 0.9361 µm |
+
+1. Diffusion surface: 0.9361 − 0.6099 = **0.3262 µm**.
+2. Field-oxide top: 0.9361 − 0.4299 − 0.18 = **0.3262 µm**.
+3. Both match the drawing's own next-level value, so the drawing
+   shows no field-oxide step, and the 0.07 µm `FOXSTEP` of the
+   assumptions table[^pdk-03] cannot be combined with it to derive a
+   trench depth.
+
+If the drawing's zero is the trench floor — our reading, not a
+documented fact, and the drawing itself says "Diagram not to scale!" —
+the trench would be about 0.33 µm deep. If the zero is the substrate
+surface, as the {ref}`PSG <step-089>` page reads the same labels, the
+drawing says nothing about trench depth.[^pdk-04]
+
+Era practice brackets the same range: an AmberWave Systems STI patent
+(now TSMC-owned) gives "a depth d1 within a range of, for example,
+3000-4000 Å" for a strained-Si/relaxed-SiGe module,[^pat-sti-amberwave]
+and Thung et al. record that the STI "aspect ratio is increased by 66%
+from 0.18µm technology to 0.13µm technology".[^thung-2016]
+
+Result: on the 0.33 µm depth above and a ~150 nm nitride, a 0.27 µm
+minimum trench width (difftap.3)[^pdk-periph] gives a fill aspect
+ratio of roughly 1.8 : 1 by Thung et al.'s definition.[^thung-2016]
 
 ## Step category
 
 `STIE` is an {ref}`Etch <category-etch>` step — a single-crystal
-silicon etch in HBr/Cl₂/O₂ chemistry. It is the deepest silicon etch
-in the baseline flow (the "deep-trench etching capability" that
-SkyWater "added" in 2020[^sec-02] is a separate, later capability).
-The poly etch at {ref}`P1ME <step-062>` uses the same family of
-chemistry on a different film.
+silicon etch in HBr/Cl₂/O₂ chemistry.
+
+**Specific to this step:**
+
+* It is the deepest silicon etch in the baseline flow (the
+  "deep-trench etching capability" that SkyWater "added" in
+  2020[^sec-02] is a separate, later capability).
+* The poly etch at {ref}`P1ME <step-062>` uses the same family of
+  chemistry on a different film.
 
 ## Why this step exists
 
@@ -110,23 +139,25 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
 
 1. **Chamber and mask.** High-density (inductively coupled or
    transformer-coupled) plasma etcher with independent bias power, so
-   that ion energy and radical flux can be set separately (Wikipedia
-   describes the hybrid in which "the ICP is employed as a high density
-   source of ions … whereas a separate RF bias is applied to the
-   substrate"[^wiki-rie]). The resist from {ref}`FOM <step-004>` is
-   commonly left on during the silicon etch and stripped afterwards;
-   some fabs strip it after the nitride open and etch the silicon with
+   that ion energy and radical flux can be set separately.
+
+   Wikipedia describes the hybrid in which "the ICP is employed as a
+   high density source of ions … whereas a separate RF bias is applied
+   to the substrate".[^wiki-rie] The resist from {ref}`FOM <step-004>`
+   is commonly left on during the silicon etch and stripped afterwards.
+   Some fabs strip it after the nitride open and etch the silicon with
    the nitride alone to get better corner control.[^txt-05]
 2. **Breakthrough.** A few seconds of CF₄ or Cl₂ to clear native oxide
    and any pad-oxide residue.
 3. **Main etch.** HBr with a smaller flow of Cl₂ and a few percent O₂,
-   at a few to a few tens of mTorr. Bromine and chlorine etch silicon;
-   the O₂ forms a thin SiOₓBrᵧ passivation on the sidewall that gives
-   the controlled taper and protects the nitride mask. The
-   HBr/Cl₂/O₂ ratio, pressure and bias set the taper angle and the
-   bottom rounding.[^txt-05] The etch is *timed* rather than
-   endpointed, because there is no interface to detect; depth is
-   controlled by rate calibration on monitor wafers.
+   at a few to a few tens of mTorr.
+
+   Bromine and chlorine etch silicon. The O₂ forms a thin SiOₓBrᵧ
+   passivation on the sidewall that gives the controlled taper and
+   protects the nitride mask. The HBr/Cl₂/O₂ ratio, pressure and bias
+   set the taper angle and the bottom rounding.[^txt-05] The etch is
+   *timed* rather than endpointed, because there is no interface to
+   detect. Depth is controlled by rate calibration on monitor wafers.
 4. **Corner rounding (optional).** A short isotropic step, or a
    dedicated post-etch treatment, softens the top corner.[^itrs-01]
 5. **Resist strip and clean.** O₂ plasma {term}`ash`, then a wet clean to
@@ -155,19 +186,32 @@ W/WN".[^skw-01]
 
 ## Machines likely used at SkyWater
 
-* **AMAT DPS II.** SkyWater names the tool, the HBr/Cl₂/O₂ gases and
-  the "trench" application.[^skw-01] Strength: strong for the tool and
-  its stated application; the assignment to this specific step is our
-  inference.
-* **Lam 9400 TCP** ("poly/nitride, HBr, CF4, SF6, O2"[^skw-01]) and
-  **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01]) are
-  alternative silicon etchers on site. Strength: strong for existence,
-  inference for use here.
+| Tool | Evidence |
+|---|---|
+| AMAT DPS II | strong (tool, application); inference (assignment) |
+| Lam 9400 TCP / Lam 4400 | strong (existence); inference (use here) |
+| Ash — Gasonic PEP / Mattson Aspen2 | strong |
+| Post-etch clean — DNS/FSI Mercury or Akrion Gamma | strong (existence) |
+
+* **AMAT DPS II**
+  - *SkyWater says:* it names the tool, the HBr/Cl₂/O₂ gases and the
+    "trench" application.[^skw-01]
+  - *Tool exists:* strong for the tool and its stated application.
+  - *Runs this step:* the assignment to this specific step is our
+    inference.
+* **Lam 9400 TCP / Lam 4400**
+  - *SkyWater says:* Lam 9400 TCP ("poly/nitride, HBr, CF4, SF6,
+    O2"[^skw-01]) and Lam 4400 ("HBr, Cl2, C2F6, CF4, SF6,
+    O2"[^skw-01]) are alternative silicon etchers on site.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* inference for use here.
 * **Ash — "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C"
   and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to
-  250C".**[^skw-01] Strength: strong.
+  250C"**[^skw-01]
+  - *Tool exists:* strong.
 * **Post-etch clean — DNS / FSI Mercury (HF/SC1/SC2) or Akrion Gamma
-  (sulphuric, SC1).**[^skw-01] Strength: strong for existence.
+  (sulphuric, SC1)**[^skw-01]
+  - *Tool exists:* strong for existence.
 
 ## Resources required
 
@@ -187,9 +231,9 @@ W/WN".[^skw-01]
 * Previous: {ref}`STINITE <step-005>` (hard-mask open).
 * Next: {ref}`DNM <step-007>` — unusually, a mask step follows before
   the trench is lined and filled; see the discussion on that page.
-* The trench is lined at {ref}`LINOX <step-010>`, filled at
+* Feeds: the trench is lined at {ref}`LINOX <step-010>`, filled at
   {ref}`FILOX <step-011>`, planarised at {ref}`CMPNIT <step-012>`.
-* Related silicon/poly etches: {ref}`P1ME <step-062>`,
+* Same module: related silicon/poly etches — {ref}`P1ME <step-062>`,
   {ref}`BFR <step-060>`.
 * Category page: {ref}`Etch <category-etch>`.
 
@@ -286,8 +330,8 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   of SKY130 STI is public.
 * **Where the FOM resist is stripped** — inside `STIE`, or before the
   silicon etch — is not stated publicly.
-* Whether SkyWater's DPSII or a Lam tool carries this etch is not
-  public.
+* **Tool assignment.** Whether SkyWater's DPSII or a Lam tool carries
+  this etch is not public.
 
 <!-- footnotes -->
 

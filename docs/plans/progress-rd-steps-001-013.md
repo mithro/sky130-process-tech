@@ -224,6 +224,38 @@ section over cap). R-TABLE/R-DERIVATION: no candidate. R-CODE: no candidate.
 boundary shift (same pattern as page 002), hand-verified against the diff. All other checkers and
 the `-W` build pass; screenshots at both widths read cleanly.
 
+### 006-stie.md — done
+
+This is the page the guide itself uses for its R-H3 and R-DERIVATION worked examples ("How
+deep?" → "### How deep?"; the trench-depth arithmetic) and for R-GLANCE's own example box. The
+page still had the pre-readability text, so this commit applies the guide's own examples,
+extended to preserve every sentence the actual page carries that the guide's abbreviated
+illustration omits (the PSG alternate-datum reading, the AmberWave/Thung era-practice bracket,
+and the fill-aspect-ratio follow-on calculation, none of which appear in the guide's shortened
+example table). Rules applied: R-H3 ("### How deep?" — kept the bold run-in's own words per rule
+4, not the guide's illustrative alternate title), R-DERIVATION (5-row input table + 2 numbered
+steps + result, with the era-practice and aspect-ratio material kept as prose around it, not
+dropped), R-CATEGORY (classification + two-bullet "Specific to this step:" — a clean 2-item case,
+no Guide problem 3), R-PARA (two 80+-word "How it is typically performed" items → lead + indented
+continuation, with internal R-SENTENCE splits), R-TOOLS (four bullets/tool-groups → the
+Tool|Evidence recap table this time, since "Lam 9400 TCP and Lam 4400" already bundles two named
+tools into one bullet, taking the count to four), R-RELATED ("Feeds:", "Same module:"), R-OPENQ
+(one previously unlabelled bullet), R-GLANCE (box built largely from the guide's own worked
+example text). R-TABLE: no separate candidate (the test-tile paragraph in "Why this step exists"
+is prose evidence, not parallel rows, and was left alone). R-CODE: no candidate.
+
+Two slips caught by `check_preserved.py` before committing: an early R-TOOLS draft put quotation
+marks around "Lam 9400 TCP" and "Lam 4400" (bold in the source, never quoted) — reworded to
+plain text, matching page 004's "waffle" lesson (Guide problem 6 applies generally: watch for
+quote marks added around a term that was only ever bold or plain in the source).
+
+`check_preserved.py docs/steps/006-stie.md --allow-added markers,numbers,hedges,number_order`:
+0 LOST outside `number_order`; the one large LOST/ADDED pair is exactly the trench-depth
+paragraph's giant number sequence breaking into the table rows and the two numbered steps — the
+textbook case this rule category exists to tolerate when a dense passage is deliberately
+restructured. All other checkers and the `-W` build pass; screenshots at both widths read
+cleanly — the derivation table and the "Which wavelength"-style recap table both hold at 400 px.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
