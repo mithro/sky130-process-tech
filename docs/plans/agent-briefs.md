@@ -164,7 +164,9 @@ step provide:
   chapters, standards, vendor application notes; **at least eight
   entries**, each with one clause on what it contributes). Bullets are
   short and end with the footnote reference that carries the full
-  citation.
+  citation; the bullet's head also links to the footnote's own first
+  URL (`docs/plans/citation-style.md` rule 5), so do not write a URL in
+  a bullet that the page's own footnotes do not already carry.
 * **Open questions** — anything you could not confirm publicly.
 
 Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,

@@ -37,16 +37,26 @@ once.[^pdk-04][^txt-02]
    `## References`: `### Cross-check`, `### High-level understanding`,
    `### Deep dive`. Each bullet is a *short* entry — author/organisation
    and title, then one clause saying what the reader gets from it —
-   ending with the footnote reference that carries the full citation:
+   ending with the footnote reference that carries the full citation.
+   **The head of the bullet (the text before the first " — ") links to
+   the first URL in the bullet's own `[^label]:` definition**, so the
+   source is one click away; the footnote itself is unchanged and stays
+   — it keeps the full citation, the hover card and the inventory key:
 
    ```markdown
    ### Deep dive
 
-   * Oh (Hynix), US 6,806,133 — a contemporaneous triple-well recipe with
-     explicit MeV phosphorus energies and doses.[^pat-dnw-hynix]
+   * [Oh (Hynix), US 6,806,133](<https://patents.google.com/patent/US6806133B2>) — a
+     contemporaneous triple-well recipe with explicit MeV phosphorus energies and
+     doses.[^pat-dnw-hynix]
    ```
 
-   Do not repeat URLs in the bullets; the footnote has them.
+   Where the head names its source by an italic title rather than being
+   linkable whole (a role or a backtick precedes the title), link only
+   that title. The URL always comes from the bullet's own definition,
+   copied character for character, in the angle-bracket form
+   `[head](<https://…>)`; never write a URL in a bullet that the page's
+   footnotes do not already carry (see `tools/check_refs.py`).
 6. **Deep dive must be substantial.** Minimum eight entries on a step
    page or per-mask page, and twelve on a category, machine, material or
    overview page or the masks index, drawn from several kinds of
@@ -64,7 +74,11 @@ once.[^pdk-04][^txt-02]
 `uv run tools/check_refs.py` verifies rules 4–6 on every written page:
 footnote references and definitions match, no reference-style link
 definitions (`[label]: url`) remain, and the Deep dive list meets the
-minimum length.
+minimum length. It also enforces rule 5's link: every external URL
+written inline in the body of a checked page must equal a URL inside
+one of that page's own footnote definitions, character for character,
+and every such inline link must use the angle-bracket form
+`[text](<https://…>)`.
 
 ## Exception: generated index pages
 
