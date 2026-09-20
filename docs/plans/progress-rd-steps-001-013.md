@@ -292,6 +292,78 @@ qualifier into the sentence beneath the table instead of inventing a per-cell un
 table/list splits (hand-verified). All other checkers and the `-W` build pass; screenshots at
 both widths read cleanly, both new tables hold at 400 px.
 
+### 008-dni.md — done
+
+The densest page in the batch: two "Why this step exists" paragraphs at 258 and 121 words, both
+full of e-test data (RSDNW resistor measurements, an NPN Gummel-sweep comparison against the
+PDK's `POLY` e-test limits), plus an "Energy"/"Dose" bullet pair in "How it is typically
+performed" that compares three sources' published values. Rules applied: R-LIST (the "measures
+the resulting well directly:" sentence → four bullets), R-TABLE (the RSDNW measured-vs-nominal
+table, reused from page 007's pattern since it is literally the same dataset cited independently
+here; the NPN Gummel-sweep-vs-`POLY`-limits comparison, transposed to 3 columns — see the phone
+note below — after a first 5-column draft cut off on the right at 400 px; the Energy+Dose
+bullets merged into one Source|Energy|Dose table, matching the guide's own NWI worked example
+shape exactly), R-PARA (the single Axcelis GSD tool bullet, 106 words), R-TOOLS (that same bullet
+split into SkyWater says/Tool exists/Runs this step, only one tool so no recap table), R-CATEGORY
+(two-sentence classification/specific split), R-RELATED (both combined Previous/Next bullets
+split into their own lines; "Feeds:" on the two forward-pointing bullets), R-OPENQ (four bullets
+labelled), R-HEDGE step 1, R-GLANCE (box last).
+
+Three preservation slips caught by `check_preserved.py` and fixed before committing, all the
+same family of mistake as pages 004/007 (shortening or unquoting a source's exact wording while
+condensing it into a table):
+* The SkyWater GSD table cell first read only `"10-3000kev"`, dropping the full quoted tool
+  listing `"Axcelis GSD High current/energy B11, BF2, P, As, 10-3000kev"` that the source
+  "Energy" bullet actually quoted — restored the complete quotation.
+* The Hynix energy-range table cell dropped the words "an ion implantation energy of" from the
+  front of its quotation — restored the quotation in full.
+* The two "DNW to DNW Space" / "Nwell to DNW Space" bullets lost their quotation marks entirely
+  (written as plain bold labels) — restored the quotes around the exact test-tile pad names.
+Also caught: an early NPN-table draft silently dropped two of the three original mentions of the
+"0.316 µA"/"3.16 µA" emitter currents by replacing them with "at two emitter currents" — restored
+one explicit mention (the PDK `POLY` sentence introducing the table) so the count matches. And a
+genuine false positive: `check_preserved.py`'s hedge matching runs on the raw (non-flattened) page
+text, so wrapping "(our extraction" and "from the published measurements" onto two different
+source lines made `\bour extraction\b` fail to match even though the phrase reads fine once
+Markdown soft-wraps it back together — re-wrapped the line so the phrase sits on one source line
+instead of relying on the renderer to rejoin it. This is the same class of issue `check_preserved.py`'s
+own comments flag for `QUOTE_RE` (not flattening before matching), just for the hedge patterns
+instead of quotes; recorded as Guide problem 7 below since the tool does not flatten hedge text
+the way it does for quotes.
+
+`check_preserved.py docs/steps/008-dni.md --allow-added markers,numbers,hedges,number_order`:
+0 LOST outside `number_order` after the fixes above; every remaining `number_order` LOST/ADDED
+pair hand-verified as a table/list split of the giant data paragraphs. All other checkers and the
+`-W` build pass. Screenshots: the first NPN-table draft (5 columns: Emitter current | Measured
+gain | PDK nominal gain | Measured V_BE | PDK nominal V_BE) cut off the last column at 400 px;
+transposing it to 3 columns (Parameter | at 0.316 µA | at 3.16 µA) fixed it — recorded as Guide
+problem 8 (below) since R-TABLE's column-budget rule (§1: "≤6 when every cell is a number, a
+code or ≤3 words") technically allows 5 short-celled columns but a table that also carries a
+`Source`-shaped first column of longer labels needs the same "split by key or transpose" fallback
+R-TABLE step 10 already names for a differently-shaped overflow. All other tables and sections
+read cleanly at both widths.
+
+## Guide problems (continued numbering from above)
+
+7. **`check_preserved.py`'s hedge matching is not whitespace-flattened.** Unlike quote matching
+   (whose flattening the tool's own comments explain was added for exactly this reason), a hedge
+   phrase such as "our extraction" that happens to be split across a Markdown source line wrap
+   (soft-wrapped, reads fine rendered) is invisible to `extract_hedges`, producing a false `LOST
+   hedges` finding that has nothing to do with the edit's content. Found once on page 008;
+   avoided by keeping hedge phrases on one source line rather than depending on the renderer to
+   rejoin a wrapped one.
+8. **R-TABLE's column budget doesn't anticipate an asymmetric table (one label column, several
+   short data columns).** §1's rule ("≤4 columns with prose, ≤6 when every cell is short") reads
+   as satisfied by five short data columns, but a table that pairs a row-label column against
+   several codes-and-numbers columns can still overflow a 400 px phone even though every
+   individual cell qualifies as "short" — the failure mode is the number of columns times their
+   minimum content width, not any single cell's length. Transposing (put the thing with few
+   values — here, two emitter currents — across the columns, and the thing with many attributes —
+   gain, V_BE, measured, nominal — down the rows) fixed it; treated this as the same
+   "split by key or transpose" escape hatch R-TABLE step 10 already gives for a table that needs
+   more columns than the budget allows, just triggered by column *count* interacting with content
+   width rather than by a strict column-count overshoot.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
