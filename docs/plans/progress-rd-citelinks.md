@@ -178,6 +178,16 @@ more conservative count here is the intended trade-off, not a shortfall to chase
 exists because a looser version produced a wrong or merely-plausible-looking edit somewhere on this
 site.
 
+* **A fifth bug**, found by running `--check` again right after the site-wide commit (a habit worth
+  keeping after every scripted pass, not just before it): `docs/masks/pwdem.md` still had one more
+  title to link. When a candidate span was already linked, the code skipped it without recording its
+  title as "seen" for that H2, so a second run could still find a *later*, not-yet-linked occurrence
+  of the same title in the same H2 and link it too — exactly the double-link "first occurrence per H2"
+  exists to prevent, just spread across two runs instead of visible within one. Fixed by marking a
+  title seen whether or not this particular occurrence needed a new edit; verified `--check` now
+  reports 0 files/0 links against the committed state, and added a selftest that runs the script twice
+  over a two-occurrence page and checks the second run is a true no-op.
+
 ## Open points for the coordinator
 
 * The 77 in-dropdown bullets (15 pages) are unconverted by design; converting them needs a human
