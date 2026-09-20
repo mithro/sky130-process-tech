@@ -225,17 +225,17 @@ An industry-generic source/drain activation anneal for a 200 mm,
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Ag Heatpulse 8808 NH3, Ar,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Ag Heatpulse 8808 NH3, Ar,
   N2, O2, up to 1200C"; Aviza Ar/N₂ anneals to 1150 °C.[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — S/D junction depth 0.1 µm;
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — S/D junction depth 0.1 µm;
   0.06 µm vertical space; out-diffusion limits next to isolation
   (0.007 µm; 0.05 µm for 6 V devices).[^pdk-03]
-* SkyWater PDK, *Parasitic Layout Extraction* — N- and P-diffusion
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — N- and P-diffusion
   sheet resistances.[^pdk-08]
-* SemiStar, *AG Associates Heatpulse 8800 / 8808* — temperature range,
+* [SemiStar, *AG Associates Heatpulse 8800 / 8808*](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) — temperature range,
   ramp rates, lamp banks, applications.[^ag-8800]
-* SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
-  Specifications* (PDF) — the Heatpulse 4100 and 8108 operating and
+* [SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
+  Specifications* (PDF)](<https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>) — the Heatpulse 4100 and 8108 operating and
   facility specifications.[^ag-8108]
 * Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108
   RTP*.[^plasmatherm-ag]
@@ -246,42 +246,42 @@ An industry-generic source/drain activation anneal for a 200 mm,
 
 * Wikipedia, *Rapid thermal processing*.[^wiki-rtp]
 * Wikipedia, *Furnace anneal*.[^wiki-furnace]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — dopant
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — dopant
   activation and diffusion.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — RTP and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — RTP and
   source/drain anneals.[^txt-05]
-* Taur et al., *Proc. IEEE* 1997 — why junctions must stay
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — why junctions must stay
   shallow.[^taur-1997]
 
 ### Deep dive
 
-* Fair (ed.), *Rapid Thermal Processing: Science and Technology* —
+* [Fair (ed.), *Rapid Thermal Processing: Science and Technology*](<https://doi.org/10.1016/b978-0-12-247690-7.50009-3>) —
   junction formation by RTA.[^txt-10]
-* Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — ramp
+* [Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999](<https://doi.org/10.1007/s11664-999-0118-7>) — ramp
   rate and boron junction depth.[^agarwal-1999]
-* Agarwal et al., *Mater. Sci. Semicond. Process.* 1998 — spike
+* [Agarwal et al., *Mater. Sci. Semicond. Process.* 1998](<https://doi.org/10.1016/S1369-8001(98)00030-4>) — spike
   annealing in lamp-based and hot-walled systems.[^agarwal-1998]
-* Agarwal, IIT 2000 — ultra-shallow junctions by conventional
+* [Agarwal, IIT 2000](<https://doi.org/10.1109/IIT.2000.924147>) — ultra-shallow junctions by conventional
   implantation and RTA.[^agarwal-2000]
-* Fiory, *J. Electron. Mater.* 2002 — RTP developments of the 130 nm
+* [Fiory, *J. Electron. Mater.* 2002](<https://doi.org/10.1007/s11664-002-0031-9>) — RTP developments of the 130 nm
   era.[^fiory-2002]
-* Gerritsen, *Microelectron. Eng.* 2000 — the spike anneal.[^gerritsen-2000]
-* Josse et al. (STMicroelectronics), ESSDERC 2002 — spike-anneal
+* [Gerritsen, *Microelectron. Eng.* 2000](<https://doi.org/10.1016/S0167-9317(99)00275-0>) — the spike anneal.[^gerritsen-2000]
+* [Josse et al. (STMicroelectronics), ESSDERC 2002](<https://doi.org/10.1109/ESSDERC.2002.194906>) — spike-anneal
   optimisation for a 0.13 µm platform.[^josse-2002]
-* Matsuda, Shishiguchi and Kitajima (NEC), *JJAP* 2002 — an
+* [Matsuda, Shishiguchi and Kitajima (NEC), *JJAP* 2002](<https://doi.org/10.1143/JJAP.41.451>) — an
   optimised RTA for shallow junctions.[^matsuda-2002]
-* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997; Michel et al.
-  (IBM), *Appl. Phys. Lett.* 1987; Eaglesham et al. (AT&T), *Appl.
-  Phys. Lett.* 1994 — transient enhanced diffusion.[^stolk-1997][^michel-1987][^eaglesham-1994]
+* Stolk et al. (Bell Labs), [*J. Appl. Phys.*](<https://doi.org/10.1063/1.364452>) 1997; Michel et al.
+  (IBM), [*Appl. Phys. Lett.*](<https://doi.org/10.1063/1.98160>) 1987; Eaglesham et al. (AT&T), [*Appl.
+  Phys. Lett.*](<https://doi.org/10.1063/1.112725>) 1994 — transient enhanced diffusion.[^stolk-1997][^michel-1987][^eaglesham-1994]
 * Nobili et al., *J. Electrochem. Soc.* 1983; Luning et al., IEDM
   1992; Rousseau, Griffin and Plummer, *Appl. Phys. Lett.* 1994 —
   arsenic activation, deactivation and its point-defect
   consequences.[^nobili-1983][^luning-1992][^rousseau-1994]
-* Camillo-Castillo et al., *MRS Proc.* 2002 — two-step anneals and
+* [Camillo-Castillo et al., *MRS Proc.* 2002](<https://doi.org/10.1557/PROC-717-C1.4>) — two-step anneals and
   end-of-range defects.[^camillo-castillo-2002]
-* Csepregi et al., *J. Appl. Phys.* 1978, and Jeon, Becker and
-  Walser, *MRS Proc.* 1989 — solid-phase epitaxial regrowth.[^csepregi-1978][^jeon-1989]
-* Wang et al., *J. Electrochem. Soc.* 1997 — fluorine and boron
+* Csepregi et al., [*J. Appl. Phys.*](<https://doi.org/10.1063/1.325397>) 1978, and Jeon, Becker and
+  Walser, [*MRS Proc.*](<https://doi.org/10.1557/PROC-157-745>) 1989 — solid-phase epitaxial regrowth.[^csepregi-1978][^jeon-1989]
+* [Wang et al., *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1838075>) — fluorine and boron
   diffusion in the RTA.[^wang-1997]
 * Pelletier et al., *Mater. Sci. Eng. B* 2008, and Farhane et al.,
   RTP 2003 — dopant loss into spacers and to the
@@ -289,12 +289,12 @@ An industry-generic source/drain activation anneal for a 200 mm,
 * Vandenabeele and Renken, *MRS Proc.* 1998; Sorrell and Gyurcsik,
   *IEEE TSM* 1993; Chen et al., RTP 2002 — temperature control and
   emissivity in RTP.[^vandenabeele-1998][^sorrell-1993][^chen-2002-rtp]
-* Roozeboom and Parekh (Philips), *JVST B* 1990 — RTP systems
+* [Roozeboom and Parekh (Philips), *JVST B* 1990](<https://doi.org/10.1116/1.584902>) — RTP systems
   review.[^roozeboom-1990]
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — a
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — a
   lamp-heated RTP chamber.[^pat-rtp-amat]
-* Gibbons, *Proc. IEEE* 1972 — damage production and annealing.[^gibbons-1972]
-* ITRS 2001, *Front End Processes* — junction depth, abruptness and
+* [Gibbons, *Proc. IEEE* 1972](<https://doi.org/10.1109/PROC.1972.8854>) — damage production and annealing.[^gibbons-1972]
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — junction depth, abruptness and
   sheet-resistance targets.[^itrs-01]
 
 ## Open questions

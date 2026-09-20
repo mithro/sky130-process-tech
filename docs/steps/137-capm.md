@@ -226,17 +226,17 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* — "Capacitor MiM, CAPM".[^pdk-05]
-* SkyWater PDK, *Layers Reference* — `capm` 89:44 "MiM capacitor
+* [SkyWater PDK, *Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — "Capacitor MiM, CAPM".[^pdk-05]
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `capm` 89:44 "MiM capacitor
   plate over metal 3".[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `CAPMCD` 2 µm, `CAPMCDSP`
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `CAPMCD` 2 µm, `CAPMCDSP`
   0.84 µm; MiM aspect ratio 20; photoresist 1.14 µm.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — capm.1–capm.12 (values not
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — capm.1–capm.12 (values not
   published); m3.1, via3.1.[^pdk-periph]
-* SkyWater PDK, *Device Details* — `CMIMA`, `CMIMP`.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — ASML I-line stepper and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `CMIMA`, `CMIMP`.[^pdk-07]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML I-line stepper and
   scanner, tracks, CD and overlay tools.[^skw-01]
-* SkyWater, Form S-1 — photoresist and developer suppliers.[^sec-01]
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist and developer suppliers.[^sec-01]
 * ASML, *Three decades of PAS 5500*; Chip History Center, PAS
   5500/400.[^asml-30][^chiphistory-pas5500]
 
@@ -244,35 +244,35 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 * Wikipedia, *Photolithography*, *Diazonaphthoquinone*,
   *Anti-reflective coating*.[^wiki-litho][^wiki-dnq][^wiki-arc]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   i-line resist processing on metal.[^txt-02]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging of
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging of
   large features, swing curves and BARCs.[^mack-2007]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Dammel, *Diazonaphthoquinone-based Resists* — the i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the i-line resist
   chemistry in full.[^dammel-1993]
-* Reichmanis and Thompson, *Chem. Rev.* 1989 — polymer materials
+* [Reichmanis and Thompson, *Chem. Rev.* 1989](<https://doi.org/10.1021/cr00096a001>) — polymer materials
   for microlithography, DNQ/novolac included.[^reichmanis-1989]
-* Brunner, SPIE 1991 — swing curves and anti-reflection on
+* [Brunner, SPIE 1991](<https://doi.org/10.1117/12.46410>) — swing curves and anti-reflection on
   reflective substrates.[^brunner-1991]
-* Rocke and Schneegans (Siemens), *JVST B* 1988 — a refractory cap
+* [Rocke and Schneegans (Siemens), *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — a refractory cap
   as an anti-reflective layer on aluminium.[^rocke-1988]
-* Levinson, *Principles of Lithography* — the chapter on
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — the chapter on
   overlay.[^levinson-2005]
-* Ausschnitt, SPIE 1999 — separating dose from defocus in
+* [Ausschnitt, SPIE 1999](<https://doi.org/10.1117/12.350800>) — separating dose from defocus in
   production.[^ausschnitt-1999]
-* Ng et al. (Chartered), *IEEE TED* 2005 — a review of MiM integration
+* [Ng et al. (Chartered), *IEEE TED* 2005](<https://doi.org/10.1109/TED.2005.850642>) — a review of MiM integration
   in Al–Cu and Cu back ends.[^ng-2005]
 * Brabazon et al. (IBM), US 5,708,559; Kar-Roy and Racanelli
   (Newport Fab), US 6,430,028; Roberts and Huffman (Freescale),
   US 7,375,002 — two top-plate-first MiM constructions and a
   damascene-plate one, with their mask
   sequences.[^pat-mim-ibm][^pat-mim-newportfab][^pat-mim-freescale]
-* Kim and Demm (Infineon), US 7,112,507 — a plate formed in the full
+* [Kim and Demm (Infineon), US 7,112,507](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7112507>) — a plate formed in the full
   thickness of a metallisation level, the other way round.[^pat-mim-infineon]
 
 ## Open questions

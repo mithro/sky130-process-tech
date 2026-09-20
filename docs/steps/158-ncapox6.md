@@ -175,10 +175,10 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater PDK, *Process stack diagram* — "NILD6 K=4.0" with no "_C" film;
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "NILD6 K=4.0" with no "_C" film;
   via4 0.505 µm; `metal4` 0.845 µm.[^pdk-04]
-* SkyWater PDK, *Periphery rules* — via4.1, via4.2.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — PECVD TEOS C2 and Producer;
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — via4.1, via4.2.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — PECVD TEOS C2 and Producer;
   PECVD silane oxide C1.[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — a 1 000 Å TEOS film in
   the Fab 4 passivation stacks.[^cyp-qtp-123907][^cyp-qtp-014807]
@@ -187,34 +187,34 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
   orthosilicate*.[^wiki-pecvd][^wiki-teos]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — dielectrics in
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — dielectrics in
   the multilevel back end.[^txt-05]
 
 ### Deep dive
 
-* Raupp, Cale and Hey, *JVST B* 1992 — the kinetics of PECVD TEOS
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — the kinetics of PECVD TEOS
   oxide.[^raupp-1992]
-* Chapple-Sokol, Tierney and Batey (IBM), MRS 1989 — RF-power dependence
+* [Chapple-Sokol, Tierney and Batey (IBM), MRS 1989](<https://doi.org/10.1557/PROC-165-113>) — RF-power dependence
   of PECVD oxide properties.[^chapple-sokol-1989]
-* Mani and Saif, *Thin Solid Films* 2007 — stress from hydrogen evolution
+* [Mani and Saif, *Thin Solid Films* 2007](<https://doi.org/10.1016/j.tsf.2006.08.025>) — stress from hydrogen evolution
   in plasma oxide.[^mani-2007]
-* Adams and Capio, *J. Electrochem. Soc.* 1979, and Becker et al., *JVST
-  B* 1987 — LPCVD oxides and why they are ruled out over
+* Adams and Capio, [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2129171>) 1979, and Becker et al., [*JVST
+  B*](<https://doi.org/10.1116/1.583673>) 1987 — LPCVD oxides and why they are ruled out over
   aluminium.[^adams-1979][^becker-1987]
 * Boning et al., SPIE 1994, and Chang et al., IEDM 1995 — the ILD
   thickness variation a cap tightens.[^boning-1994][^chang-1995]
 * Devriendt et al. (IMEC), 1998, and Moon, 2016 — post-CMP defects and the
   hydrated oxide surface.[^devriendt-1998][^moon-2016]
-* Kobayakawa et al., VMIC 1991 — outgassing from spin-on-glass
+* [Kobayakawa et al., VMIC 1991](<https://doi.org/10.1109/VMIC.1991.153054>) — outgassing from spin-on-glass
   planarising films.[^kobayakawa-1991]
-* Taguchi, Maeda and Aoyama, 1998 — water outgassing from via holes and
+* [Taguchi, Maeda and Aoyama, 1998](<https://doi.org/10.1063/1.54662>) — water outgassing from via holes and
   the filling of vias by high-pressure aluminium reflow.[^taguchi-1998]
 * Cheung, P2ID 2000, and Wang, Ackaert et al., *IEEE TED* 2004 — charging
   during plasma deposition and of floating MiM
   capacitors.[^cheung-2000][^wang-2004-mim]
-* Brunner, SPIE 1991 — why a fixed oxide thickness fixes the swing-curve
+* [Brunner, SPIE 1991](<https://doi.org/10.1117/12.46410>) — why a fixed oxide thickness fixes the swing-curve
   position.[^brunner-1991]
-* Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009 — post-ILD-CMP brush
+* [Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009](<https://doi.org/10.1149/1.3058994>) — post-ILD-CMP brush
   scrubbing.[^philipossian-2009]
 
 ## Open questions

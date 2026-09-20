@@ -211,19 +211,19 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Lam/Novellus High Density
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Lam/Novellus High Density
   Plasma (HDP) doped and phos doped with sputter etch".[^skw-01]
-* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
+* [SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) —
   "Novellus high density plasma tool".[^skw-07]
-* SkyWater PDK, *Criteria & Assumptions* — field oxide 0.07 µm above
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — field oxide 0.07 µm above
   silicon under poly.[^pdk-03]
-* SkyWater PDK, process stack diagram — "FOX K=3.9";
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "FOX K=3.9";
   0.3262 µm.[^pdk-04]
-* SkyWater PDK, *Layers Reference* — "fom_waffles".[^pdk-06]
-* SkyWater, Form S-1 (2021) — gas suppliers.[^sec-01]
-* SkyWater, Form 10-K for fiscal 2023 — updated gas
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — "fom_waffles".[^pdk-06]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — gas suppliers.[^sec-01]
+* [SkyWater, Form 10-K for fiscal 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — updated gas
   suppliers.[^sec-02]
-* Novellus / Lam Research, SPEED Max press release — HDP as the
+* [Novellus / Lam Research, SPEED Max press release](<https://newsroom.lamresearch.com/2009-10-05-NOVELLUS-SPEED-R-MAX-HDP-CVD-DIELECTRIC-GAPFILL-SYSTEM-EXTENDS-STI-APPLICATION-TO-32nm>) — HDP as the
   preferred STI gap-fill technology; S/D ratio; remote plasma
   clean.[^lam-speed]
 * SKY130 raw-data repository, 1.8 V transistor files and test-tile pad
@@ -232,48 +232,48 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma-enhanced chemical vapor deposition* —
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>) —
   high-density plasma, sputtering during deposition, SiH₄/O₂/Ar
   oxide.[^wiki-pecvd]
-* Wikipedia, *Shallow trench isolation* — the fill step in
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the fill step in
   context.[^wiki-sti]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — HDP-CVD and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — HDP-CVD and
   STI fill.[^txt-05]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — CVD
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — CVD
   of SiO₂.[^txt-02]
 
 ### Deep dive
 
-* Nishimura et al., *Jpn. J. Appl. Phys.* 2002 — HDP-CVD gap-fill
+* [Nishimura et al., *Jpn. J. Appl. Phys.* 2002](<https://doi.org/10.1143/JJAP.41.2886>) — HDP-CVD gap-fill
   modelling (sputter-yield angular dependence and ionic deposition)
   demonstrated on 0.13 µm STI.[^nishimura-2002]
-* Thung et al., *JTEC* 2016 — HDP voids, poly stringers and the fill
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — HDP voids, poly stringers and the fill
   aspect ratio on a 0.18 µm-generation tool set.[^thung-2016]
-* Nandakumar et al., IEDM 1998 — trench fill and planarisation in the
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — trench fill and planarisation in the
   STI review.[^rev-01]
-* ITRS 2001, *Front End Processes* — thin films for trench fill: "high
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — thin films for trench fill: "high
   aspect ratio gaps, top and bottom corner profile control".[^itrs-01]
-* Nguyen, *IBM J. Res. Dev.* 1999 — a review of HDP-CVD of
+* [Nguyen, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.431.0109>) — a review of HDP-CVD of
   silicon-based dielectrics: reactor design, film properties and
   gap-fill mechanisms.[^nguyen-1999]
-* Lee et al., SSDM 1997 — STI characteristics with an HDP-CVD gap-fill
+* [Lee et al., SSDM 1997](<https://doi.org/10.7567/SSDM.1997.C-13-4>) — STI characteristics with an HDP-CVD gap-fill
   oxide for deep-submicron CMOS, including device
   results.[^lee-1997]
-* Vassiliev, *Electrochem. Solid-State Lett.* 1999 — properties and
+* [Vassiliev, *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390964>) — properties and
   gap-fill capability of HDP-CVD phosphosilicate glass, the doped
   variant SkyWater also lists.[^vassiliev-1999]
-* Bianchi, Bouche and Roux-dit-Buisson, IEDM 2002 — how the stress
+* [Bianchi, Bouche and Roux-dit-Buisson, IEDM 2002](<https://doi.org/10.1109/IEDM.2002.1175792>) — how the stress
   from the trench fill changes MOSFET performance.[^bianchi-2002]
-* Lindemann, Radecker and Sperlich, ASMC 2007 — selective oxide
+* [Lindemann, Radecker and Sperlich, ASMC 2007](<https://doi.org/10.1109/ASMC.2007.375111>) — selective oxide
   deposition as an alternative STI gap-fill, showing where HDP's
   limits lie.[^lindemann-2007]
-* Papasouliotis et al. (Novellus / IBM), US 6,030,881 — a high-throughput
+* [Papasouliotis et al. (Novellus / IBM), US 6,030,881](<https://patents.google.com/patent/US6030881A/en>) — a high-throughput
   HDP-CVD process for filling high-aspect-ratio
   structures.[^pat-hdp-novellus]
-* Tan, Li and Zygmunt (Applied Materials), US 6,914,016 — a multi-step
+* [Tan, Li and Zygmunt (Applied Materials), US 6,914,016](<https://patents.google.com/patent/US6914016B2/en>) — a multi-step
   HDP-CVD deposition/etch process for high-aspect-ratio gaps, the
   competing vendor's approach.[^pat-hdp-amat]
-* Seshan (ed.), *Handbook of Thin Film Deposition* — the chapter-level
+* [Seshan (ed.), *Handbook of Thin Film Deposition*](<https://openlibrary.org/isbn/9781437778731>) — the chapter-level
   reference on CVD and HDP-CVD dielectric equipment and
   films.[^seshan-2012]
 

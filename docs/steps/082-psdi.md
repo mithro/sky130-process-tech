@@ -222,72 +222,72 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — S/D junction depth 0.1 µm
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — S/D junction depth 0.1 µm
   and 0.06 µm entries; out-diffusion limits; implant angles ("High
   current" 0°); diff/tap width criteria.[^pdk-03]
-* SkyWater PDK, *Device Details* — PMOS cross-section with "P+" and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — PMOS cross-section with "P+" and
   "P−" regions; PNP, NPN, diode and diffusion-resistor
   descriptions; `RSP` and `RSPH` e-test limits.[^pdk-07]
 * SKY130 raw-data repository — two-terminal sweeps of the test tile's
   P⁺ diffusion resistors and the pad list that describes them; the
   sheet resistances quoted here are our
   extraction.[^raw-data-passives][^raw-data-testtile-pads]
-* SkyWater PDK, *Parasitic Layout Extraction* — P-diffusion
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — P-diffusion
   197 000 mΩ/sq, N-diffusion 120 000 mΩ/sq.[^pdk-08]
-* SkyWater PDK, *Periphery rules* — rpm.4, npc.4, psd.*.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — the Axcelis GSD "Hi dose"
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — rpm.4, npc.4, psd.*.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Axcelis GSD "Hi dose"
   and "High current/energy" implanters with species and dose
   ranges; the 8250 medium-current tool.[^skw-01]
-* Axcelis, GSD Ovation press release — the GSD family.[^axcelis-gsd]
+* [Axcelis, GSD Ovation press release](<https://www.prnewswire.com/news-releases/axcelis-announces-introduction-of-the-gsd-ovation-high-current-and-high-energy-batch-implanters-301412520.html>) — the GSD family.[^axcelis-gsd]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — doses, energies, channelling and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — doses, energies, channelling and
   amorphisation.[^wiki-implant]
-* Wikipedia, *Boron trifluoride* — the boron source gas.[^wiki-bf3]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the
+* [Wikipedia, *Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>) — the boron source gas.[^wiki-bf3]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the
   source/drain module and implant chapter.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation practice.[^txt-02]
 
 ### Deep dive
 
-* Ogura et al. (IBM), *IEEE TED* 1980, and Tsang et al. (IBM), *IEEE
-  TED* 1982 — the LDD device and the spacer that self-aligns the
+* Ogura et al. (IBM), [*IEEE TED*](<https://doi.org/10.1109/T-ED.1980.20040>) 1980, and Tsang et al. (IBM), [*IEEE
+  TED*](<https://doi.org/10.1109/T-ED.1982.20748>) 1982 — the LDD device and the spacer that self-aligns the
   deep implant.[^ogura-1980][^tsang-1982]
-* Ng and Lynch (AT&T), *IEEE TED* 1986 — series resistance, the
+* [Ng and Lynch (AT&T), *IEEE TED* 1986](<https://doi.org/10.1109/T-ED.1986.22602>) — series resistance, the
   reason the deep junction must be heavy.[^ng-1986]
-* Wang et al. (Motorola), *J. Electrochem. Soc.* 1997 — fluorine and
+* [Wang et al. (Motorola), *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1838075>) — fluorine and
   boron diffusion after BF₂ through oxide.[^wang-1997]
-* Bourdelle et al. (Agere), IIT 2000 — B versus BF₂ for PMOS
+* [Bourdelle et al. (Agere), IIT 2000](<https://doi.org/10.1109/IIT.2000.924081>) — B versus BF₂ for PMOS
   junctions with thin gate oxides.[^bourdelle-2000]
-* Öztürk et al., *IEEE TED* 1988 — germanium pre-amorphisation for
+* [Öztürk et al., *IEEE TED* 1988](<https://doi.org/10.1109/16.2510>) — germanium pre-amorphisation for
   shallow p⁺ junctions.[^ozturk-1988]
-* Adachi, Ohuchi and Toyoshima (Toshiba), IWJT 2001 — Ge PAI with
+* [Adachi, Ohuchi and Toyoshima (Toshiba), IWJT 2001](<https://doi.org/10.1109/IWJT.2001.993821>) — Ge PAI with
   sub-keV boron for PMOS extensions.[^adachi-2001]
 * Park et al., IEDM 1991, and Lim et al., IEDM 1993 — boron implanted
   through a screen oxide.[^park-1991][^lim-1993]
-* Krieger et al., *IEEE TED* 1989 — shadowing of tilted source/drain
+* [Krieger et al., *IEEE TED* 1989](<https://doi.org/10.1109/16.43667>) — shadowing of tilted source/drain
   implants, the reason for 0°.[^krieger-1989]
-* Jones and Sinclair, IIT 1996 — channelling variation across a
+* [Jones and Sinclair, IIT 1996](<https://doi.org/10.1109/IIT.1996.586257>) — channelling variation across a
   spinning-disc batch implanter.[^jones-1996]
 * Smith, 1983, and Romig, Bishop and Rio, IIT 1996 — wafer cooling
   and resist burning at high beam power.[^smith-1983][^romig-1996]
 * Dixon, Lukaszek and Heden, IIT 1996; Mehta et al., IIT 1996;
   Current, Vella and Lukaszek, IIT 1996 — wafer charging and flood-gun
   control during high-current implants.[^dixon-1996][^mehta-1996][^current-1996-iit]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 —
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) —
   thermal-wave implant monitoring, and its low-dose sensitivity
   range.[^smith-1985]
-* Pfiester et al. (Motorola), *IEEE TED* 1990 — boron penetration
+* [Pfiester et al. (Motorola), *IEEE TED* 1990](<https://doi.org/10.1109/16.57135>) — boron penetration
   through p⁺ gates, the problem a capped n⁺ gate avoids.[^pfiester-1990]
-* Lifshitz (Bell Labs), *IEEE TED* 1985 — poly gate work function
+* [Lifshitz (Bell Labs), *IEEE TED* 1985](<https://doi.org/10.1109/T-ED.1985.21987>) — poly gate work function
   versus doping.[^lifshitz-1985]
-* Mezack et al. (Varian), IIT 2000 — the single-wafer high-current
+* [Mezack et al. (Varian), IIT 2000](<https://doi.org/10.1109/IIT.2000.924180>) — the single-wafer high-current
   implanter alternative.[^mezack-2000]
-* Current, *JVST A* 1996 and *Mater. Sci. Semicond. Process.* 2017 —
+* Current, [*JVST A*](<https://doi.org/10.1116/1.580279>) 1996 and [*Mater. Sci. Semicond. Process.*](<https://doi.org/10.1016/j.mssp.2016.10.045>) 2017 —
   production implanters and the evolution of implantation.[^current-1996][^current-2017]
-* ITRS 2001, *Front End Processes* — junction requirements at the
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — junction requirements at the
   node.[^itrs-01]
 
 ## Open questions

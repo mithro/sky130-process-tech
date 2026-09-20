@@ -204,55 +204,55 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Lam/Novellus PECVD
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Lam/Novellus PECVD
   Tungsten": "plug fill", "PNL option for high aspect ratio (up to
   10:1)"; "W plug dual damascene".[^skw-01]
-* SkyWater PDK, *Layers Reference* — `licon1` "Contact to local
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `licon1` "Contact to local
   interconnect".[^pdk-06]
-* SkyWater PDK, *Parasitic Layout Extraction* — LICON contact
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — LICON contact
   15 000 mΩ.[^pdk-08]
-* SkyWater PDK, *Criteria & Assumptions* — "min. etch and fill
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "min. etch and fill
   capability … licon" 0.15 µm; bottom CD 0.08 µm; etch angle 10°;
   "Pre-LI ILD thickness" 0.5 µm.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — licon.1 0.170 µm.[^pdk-periph]
-* Lee and Collins (Novellus), US 6,635,965 — the pulsed nucleation
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — licon.1 0.170 µm.[^pdk-periph]
+* [Lee and Collins (Novellus), US 6,635,965](<https://patents.google.com/patent/US6635965B1/en>) — the pulsed nucleation
   layer.[^pat-pnl-novellus]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the Altus
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Altus
   line.[^novellus-history]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
-* Wikipedia, *Tungsten hexafluoride* — the CVD chemistry.[^wiki-wf6]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — CVD
+* [Wikipedia, *Tungsten hexafluoride*](<https://en.wikipedia.org/wiki/Tungsten_hexafluoride>) — the CVD chemistry.[^wiki-wf6]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — CVD
   tungsten and plug formation.[^txt-01]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — tungsten CVD equipment and abatement.[^txt-09]
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — tungsten CVD equipment and abatement.[^txt-09]
 
 ### Deep dive
 
-* Broadbent and Ramiller, *J. Electrochem. Soc.* 1984 — the
+* [Broadbent and Ramiller, *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115864>) — the
   foundational WF₆ reduction kinetics.[^rev-03]
-* Kaanta et al. (IBM), IEDM 1987 — tungsten studs with
+* [Kaanta et al. (IBM), IEDM 1987](<https://doi.org/10.1109/IEDM.1987.191389>) — tungsten studs with
   planarisation.[^kaanta-1987]
-* McConica and Krishnamani, *J. Electrochem. Soc.* 1986 — kinetics of
+* [McConica and Krishnamani, *J. Electrochem. Soc.* 1986](<https://doi.org/10.1149/1.2108468>) — kinetics of
   LPCVD tungsten in a single-wafer reactor.[^mcconica-1986]
-* McConica and Cooper, *J. Electrochem. Soc.* 1988 — tungsten
+* [McConica and Cooper, *J. Electrochem. Soc.* 1988](<https://doi.org/10.1149/1.2095756>) — tungsten
   nucleation on thermal oxide.[^mcconica-1988]
-* Kleijn et al., *J. Electrochem. Soc.* 1991 — transport phenomena in
+* [Kleijn et al., *J. Electrochem. Soc.* 1991](<https://doi.org/10.1149/1.2085620>) — transport phenomena in
   a single-wafer tungsten reactor.[^kleijn-1991]
-* Srinivas et al., *MRS Proc.* 1992 — nucleation of tungsten on
+* [Srinivas et al., *MRS Proc.* 1992](<https://doi.org/10.1557/PROC-282-365>) — nucleation of tungsten on
   TiN.[^srinivas-1992]
-* Tripathi and Moghadam, *MRS Proc.* 1994 — a silane-rich CVD
+* [Tripathi and Moghadam, *MRS Proc.* 1994](<https://doi.org/10.1557/PROC-337-561>) — a silane-rich CVD
   tungsten process.[^tripathi-1994]
-* Petri et al., IITC 1998 — nitrogen and post-nucleation tungsten
+* [Petri et al., IITC 1998](<https://doi.org/10.1109/IITC.1998.704792>) — nitrogen and post-nucleation tungsten
   growth.[^petri-1998]
-* Kim et al., *Electrochem. Solid-State Lett.* 2004 — pulsed CVD
+* [Kim et al., *Electrochem. Solid-State Lett.* 2004](<https://doi.org/10.1149/1.1784053>) — pulsed CVD
   tungsten nucleation for plug fill.[^kim-2004]
-* Lee and Collins (Novellus), US 6,635,965 — ultra-thin tungsten
+* [Lee and Collins (Novellus), US 6,635,965](<https://patents.google.com/patent/US6635965B1/en>) — ultra-thin tungsten
   nucleation with improved step coverage.[^pat-pnl-novellus]
-* Koerner, Erb and Melzner, *Appl. Surf. Sci.* 1993 — the liner
+* [Koerner, Erb and Melzner, *Appl. Surf. Sci.* 1993](<https://doi.org/10.1016/0169-4332(93)90139-3>) — the liner
   thicknesses a tungsten plug needs.[^koerner-1993]
 
 ## Open questions

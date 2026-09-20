@@ -241,64 +241,64 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * SkyWater PDK, `cross-section-sonos-cell.svg` — the labelled
   "Depletion Implant" in the 2-T cell drawing.[^pdk-sonos-xs]
-* SkyWater PDK, *Device Details* — read/programme/erase conditions,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — read/programme/erase conditions,
   erased and programmed thresholds, native and zero-Vt device
   descriptions.[^pdk-07]
-* SkyWater PDK, *Periphery rules* — the `lvtn` block-layer
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `lvtn` block-layer
   function.[^pdk-periph]
 * SKY130 raw-data repository — I–V sweeps of the native, zero-Vt and
   5 V NMOS test-tile structures (thresholds and body-effect coefficients
   quoted here are our extraction) and the pad list naming
   them.[^raw-data-hv-mosfets][^raw-data-testtile-pads]
-* SkyWater PDK, *Layers Reference* — `tunm` 80:20.[^pdk-06]
-* SkyWater, *Facilities & Capabilities* — Axcelis 8250 and GSD species
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `tunm` 80:20.[^pdk-06]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Axcelis 8250 and GSD species
   and dose ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest — the
+* [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) — the
   2-T cell and Fowler–Nordheim programming.[^cyp-25]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter*.[^axcelis-8250]
 
 ### High-level understanding
 
-* Wikipedia, *Depletion and enhancement modes* — the sign of the
+* [Wikipedia, *Depletion and enhancement modes*](<https://en.wikipedia.org/wiki/Depletion_and_enhancement_modes>) — the sign of the
   threshold in each mode.[^wiki-depletion]
-* Wikipedia, *SONOS* — how trapped charge shifts the
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — how trapped charge shifts the
   threshold.[^cyp-26]
-* Wikipedia, *Thermal oxidation* — silicon consumed by the tunnel
+* [Wikipedia, *Thermal oxidation*](<https://en.wikipedia.org/wiki/Thermal_oxidation>) — silicon consumed by the tunnel
   oxide.[^wiki-thox]
 * Wikipedia, *Ion implantation*.[^wiki-implant]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation.[^txt-02]
 
 ### Deep dive
 
-* Edwards and Marr, IEDM 1971 — the ion-implanted depletion-mode
+* [Edwards and Marr, IEDM 1971](<https://doi.org/10.1109/IEDM.1971.188465>) — the ion-implanted depletion-mode
   IGFET.[^edwards-1971]
-* Merckel, in *Process and Device Modeling for Integrated Circuit
-  Design* (1977) — modelling of ion-implanted depletion-mode
+* [Merckel, in *Process and Device Modeling for Integrated Circuit
+  Design* (1977)](<https://doi.org/10.1007/978-94-011-7583-8_24>) — modelling of ion-implanted depletion-mode
   transistors.[^merckel-1977]
-* MacPherson, *Appl. Phys. Lett.* 1971 — threshold adjustment by ion
+* [MacPherson, *Appl. Phys. Lett.* 1971](<https://doi.org/10.1063/1.1653513>) — threshold adjustment by ion
   implantation, the technique in its original form.[^macpherson-1971]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — arsenic
   channel adjustment and {term}`counter-doped <counter-doping>` channels in a multi-Vt
   flow.[^pat-vt-rrr]
-* Krivokapic and Milic (AMD), US 6,238,982 — a prior-art threshold
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — a prior-art threshold
   adjust implant, and multiple thresholds set by gate length, with a
   laterally doped channel implant self-aligned to the gate
   pillars.[^pat-vt-amd]
-* Bu and White, *Solid-State Electronics* 2001 — design considerations
+* [Bu and White, *Solid-State Electronics* 2001](<https://doi.org/10.1016/S0038-1101(00)00232-X>) — design considerations
   in scaled SONOS devices, including the memory window.[^bu-2001]
-* French and White, *Solid-State Electronics* 1994 — scaling of
+* [French and White, *Solid-State Electronics* 1994](<https://doi.org/10.1016/0038-1101(94)90057-4>) — scaling of
   multi-dielectric SONOS structures.[^french-1994]
-* White, Adams and Bu, *IEEE Circuits & Devices* 2000 — the SONOS
+* [White, Adams and Bu, *IEEE Circuits & Devices* 2000](<https://doi.org/10.1109/101.857747>) — the SONOS
   review.[^pap-01]
-* Colvin and Roy, ISTFA 2000 — parasitic depletion-mode leakage in a
+* [Colvin and Roy, ISTFA 2000](<https://doi.org/10.31399/asm.cp.istfa2000p0247>) — parasitic depletion-mode leakage in a
   memory select transistor, the failure the 2-T cell must
   avoid.[^colvin-2000]
-* Jiew, Chien and Yung, NVMTS 2012 — a robust 2T-SONOS cell for
+* [Jiew, Chien and Yung, NVMTS 2012](<https://doi.org/10.1109/NVMTS.2013.6632849>) — a robust 2T-SONOS cell for
   embedded flash.[^jiew-2012]
-* Maxim, ESSCIRC 2003 — a circuit built on zero-Vt MOSFETs, showing
+* [Maxim, ESSCIRC 2003](<https://doi.org/10.1109/ESSCIRC.2003.1257083>) — a circuit built on zero-Vt MOSFETs, showing
   what designers do with near-zero-threshold devices.[^maxim-2003]
 
 ## Open questions

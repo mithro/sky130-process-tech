@@ -198,55 +198,55 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Lightly Doped N-tip,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Lightly Doped N-tip,
   LDNTM, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `ldntm`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `ldntm`
   11:44 "N-tip implant on SONOS devices"; `cldntm` 11:0.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — no `ldntm` rules in the public
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — no `ldntm` rules in the public
   periphery set.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `ldntm.c1`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `ldntm.c1`
   to `ldntm.c6` core checks.[^pdk-errors]
-* SkyWater PDK, *Criteria & Assumptions* — 7° tip angle; shadowing
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — 7° tip angle; shadowing
   allowances for NTM and HVNTM only; photoresist 1.14 µm.[^pdk-03]
-* SkyWater PDK, *Device Details* — SONOS cell W/L, programme/erase
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — SONOS cell W/L, programme/erase
   voltages, endurance.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — ASML i-line tools, tracks,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML i-line tools, tracks,
   metrology.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *SONOS* — the charge-trapping cell.[^wiki-sonos]
-* Wikipedia, *Photolithography* — i-line resolution.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the charge-trapping cell.[^wiki-sonos]
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line resolution.[^wiki-litho]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography and implant masking.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD and
   drain-field engineering.[^txt-04]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools of the era.[^txt-05]
 
 ### Deep dive
 
-* White, Adams and Bu, *IEEE Circuits & Devices* 2000 — the SONOS
+* [White, Adams and Bu, *IEEE Circuits & Devices* 2000](<https://doi.org/10.1109/101.857747>) — the SONOS
   cell, its tunnelling programme/erase and reliability.[^pap-01]
-* Eitan et al., *IEEE EDL* 2000 — the NROM cell, whose hot-electron
+* [Eitan et al., *IEEE EDL* 2000](<https://doi.org/10.1109/55.877205>) — the NROM cell, whose hot-electron
   programming shows what a drain junction must *not* do in a
   tunnelling-programmed cell.[^eitan-2000]
-* Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm embedded SONOS
+* [Seo et al. (Samsung), *IEEE JSSC* 2005](<https://doi.org/10.1109/JSSC.2005.845564>) — a 130 nm embedded SONOS
   flash, for comparison of cell voltages and array design.[^pap-02]
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped drain, the
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped drain, the
   design this "LD" tip returns to.[^ogura-1980]
-* Codella and Ogura (IBM), IEDM 1985 — the halo that accompanies
+* [Codella and Ogura (IBM), IEDM 1985](<https://doi.org/10.1109/IEDM.1985.190938>) — the halo that accompanies
   it.[^codella-1985]
-* Tran, McQueen and Kerr (Micron), US 6,759,288 — a lighter LDD on
+* [Tran, McQueen and Kerr (Micron), US 6,759,288](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6759288>) — a lighter LDD on
   selected transistors to cut junction leakage.[^pat-ldd-micron]
-* Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD
+* [Gardner, Hause and Fulford (AMD), US 5,793,090](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5793090>) — separate LDD
   implants for different transistors on one chip.[^pat-multi-ldd-amd]
-* Hook et al. (IBM), *IEEE TED* 2003 — mask-proximity effects at the
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — mask-proximity effects at the
   array edge.[^hook-2003]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read

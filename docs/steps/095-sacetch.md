@@ -205,48 +205,48 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — "Standard Licon bottom
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Standard Licon bottom
   CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm; S/D junction
   0.1 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — DNS wet bench, FSI
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — DNS wet bench, FSI
   Mercury, SEZ 223/Da Vinci, Akrion Gamma, EKC solvents,
   ashers.[^skw-01]
-* SkyWater, Form S-1 — chemical suppliers.[^sec-01]
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — chemical suppliers.[^sec-01]
 
 ### High-level understanding
 
 * Wikipedia, *Hydrofluoric acid*, *Buffered oxide etch*, *RCA
   clean*, *Piranha solution*.[^wiki-hf][^wiki-boe][^wiki-rca][^wiki-piranha]
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution of wafer
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer
   cleaning.[^kern-1990]
 * Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
   Technology*.[^reinhardt-2008]
 
 ### Deep dive
 
-* Judge, *J. Electrochem. Soc.* 1971 — dissolution of SiO₂ in
+* [Judge, *J. Electrochem. Soc.* 1971](<https://doi.org/10.1149/1.2407835>) — dissolution of SiO₂ in
   acidic fluoride solutions.[^judge-1971]
-* Kikuyama et al., *J. Electrochem. Soc.* 1994 — etching in HF of
+* [Kikuyama et al., *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054733>) — etching in HF of
   extremely low concentration.[^kikuyama-1994]
-* Monk, Soane and Howe, *J. Electrochem. Soc.* 1994 — HF etching of
+* [Monk, Soane and Howe, *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054696>) — HF etching of
   sacrificial oxide layers, experiment and model.[^monk-1994]
-* Knotter and Denteneer, *J. Electrochem. Soc.* 2001 — how nitride
+* [Knotter and Denteneer, *J. Electrochem. Soc.* 2001](<https://doi.org/10.1149/1.1348262>) — how nitride
   etches in HF, the exposed-spacer question.[^knotter-2001]
-* Cerofolini, *Appl. Surf. Sci.* 1998 — hydrogen termination after
+* [Cerofolini, *Appl. Surf. Sci.* 1998](<https://doi.org/10.1016/S0169-4332(98)00182-2>) — hydrogen termination after
   HF etching.[^cerofolini-1998]
-* Morita et al., *J. Appl. Phys.* 1990 — native oxide regrowth on
+* [Morita et al., *J. Appl. Phys.* 1990](<https://doi.org/10.1063/1.347181>) — native oxide regrowth on
   silicon, the queue-time constraint.[^morita-1990]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet
   cleaning.[^ohmi-1996]
-* Kern, in Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
-  Cleaning Technology* — overview of cleaning chemistry.[^kern-handbook]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in
-  Semiconductor Manufacturing* — pre-metal and contact
+* [Kern, in Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
+  Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — overview of cleaning chemistry.[^kern-handbook]
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in
+  Semiconductor Manufacturing*](<https://doi.org/10.1002/9781118071748>) — pre-metal and contact
   cleans.[^reinhardt-2010]
-* Fonash, *J. Electrochem. Soc.* 1990, and Oehrlein, *Mater. Sci.
-  Eng. B* 1989 — the etch damage and residue a sacrificial etch
+* Fonash, [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2086322>) 1990, and Oehrlein, [*Mater. Sci.
+  Eng. B*](<https://doi.org/10.1016/0921-5107(89)90284-5>) 1989 — the etch damage and residue a sacrificial etch
   addresses.[^fonash-1990][^oehrlein-1989]
-* Berger, *Solid-State Electron.* 1972 — contact models that assume
+* [Berger, *Solid-State Electron.* 1972](<https://doi.org/10.1016/0038-1101(72)90048-2>) — contact models that assume
   a clean interface.[^berger-1972]
 
 ## Open questions

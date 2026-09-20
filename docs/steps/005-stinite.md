@@ -153,58 +153,58 @@ Which of the three carries the isolation nitride etch is not public.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — the DPSII, Lam 9400 TCP and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the DPSII, Lam 9400 TCP and
   Lam 4400 gas lists.[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist thickness
   1.14 µm.[^pdk-03]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
-  Etcher* — "Transformer Coupled Plasma (TCP) etcher, generates a
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
+  Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — "Transformer Coupled Plasma (TCP) etcher, generates a
   uniform, high density plasma for selective etching of silicon and
   polysilicon"; gases include chlorine, hydrogen bromide, oxygen and
   tetrafluoromethane.[^snf-9400]
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching* — ion-assisted anisotropy and
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — ion-assisted anisotropy and
   operating pressures.[^wiki-rie]
-* Wikipedia, *Shallow trench isolation* — the "Dry etch (Reactive-ion
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the "Dry etch (Reactive-ion
   etching)" step.[^wiki-sti]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
   plasma-etch chapter: fluorocarbon etching of SiO₂ and
   Si₃N₄.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the {term}`STI`
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — the {term}`STI`
   etch.[^txt-05]
 
 ### Deep dive
 
-* Thung et al., *JTEC* 2016 — fill aspect ratio defined by trench
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — fill aspect ratio defined by trench
   depth plus nitride thickness.[^thung-2016]
-* Nandakumar et al., IEDM 1998 — the STI review, including trench
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the STI review, including trench
   definition through the nitride/oxide stack.[^rev-01]
-* Coburn and Winters, *J. Appl. Phys.* 1979 — how ion and electron
+* [Coburn and Winters, *J. Appl. Phys.* 1979](<https://doi.org/10.1063/1.326355>) — how ion and electron
   bombardment enhances gas–surface reactions, examined for Si, SiO₂ and
   Si₃N₄ with XeF₂, F₂ and Cl₂.[^coburn-1979]
-* Oehrlein et al., *J. Vac. Sci. Technol. A* 1994 — fluorocarbon
+* [Oehrlein et al., *J. Vac. Sci. Technol. A* 1994](<https://doi.org/10.1116/1.578876>) — fluorocarbon
   high-density plasmas with CF₄ and CHF₃: polymer deposition versus
   etching, the mechanism behind sidewall passivation.[^oehrlein-1994]
-* Kastenmeier, Matsuo and Oehrlein, *J. Vac. Sci. Technol. A* 1999 —
+* [Kastenmeier, Matsuo and Oehrlein, *J. Vac. Sci. Technol. A* 1999](<https://doi.org/10.1116/1.582097>) —
   how to etch silicon nitride selectively over silicon and silicon
   dioxide in fluorine-based plasmas.[^kastenmeier-1999]
-* Regis et al., ASMC 1997 — a production RIE recipe for silicon nitride
+* [Regis et al., ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — a production RIE recipe for silicon nitride
   with high selectivity to oxide, with the process-window
   data.[^regis-1997]
-* Flamm, *Pure Appl. Chem.* 1990 — mechanisms of silicon etching in
+* [Flamm, *Pure Appl. Chem.* 1990](<https://doi.org/10.1351/pac199062091709>) — mechanisms of silicon etching in
   fluorine- and chlorine-containing plasmas, relevant to the pad-oxide
   breakthrough and the silicon stop.[^flamm-1990]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — the textbook on inductively and
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — the textbook on inductively and
   capacitively coupled etch reactors.[^lieberman-2005]
-* Ogle (Lam Research), US 4,948,458 — the transformer-coupled planar
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the transformer-coupled planar
   plasma source behind the Lam TCP 9400 family.[^pat-tcp-lam]
-* Bawolek, ASTM STP 960 (1987) — a Monte Carlo treatment of plasma-etch
+* [Bawolek, ASTM STP 960 (1987)](<https://doi.org/10.1520/STP25751S>) — a Monte Carlo treatment of plasma-etch
   emission endpoint, i.e. how the signal used at step 3 above
   behaves.[^bawolek-1987]
-* Hon, SJSU master's thesis 2003 — characterisation of line-edge
+* [Hon, SJSU master's thesis 2003](<https://doi.org/10.31979/etd.53yx-bwm5>) — characterisation of line-edge
   roughness in an STI etch, a metrology view of the nitride/trench
   profile.[^hon-2003]
 

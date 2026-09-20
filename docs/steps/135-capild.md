@@ -267,24 +267,24 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — MiM capacitor construction ("thin
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — MiM capacitor construction ("thin
   dielectric over metal, followed by a thin conductor"), `CMIMA`
   2 fF/µm², `CMIMP` 0.19 fF/µm, `RSCAPM` 5.8 Ω/sq, 0–5 V; the
   `cap_mim` cross-section with its "CAPILD" label.[^pdk-07]
-* SkyWater PDK, *Layers Reference* — `capm` 89:44 "MiM capacitor
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `capm` 89:44 "MiM capacitor
   plate over metal 3"; `cap2m` 97:44.[^pdk-06]
-* SkyWater PDK, *Process stack diagram* — `capm` between `metal3` and
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `capm` between `metal3` and
   `metal4`; nitride permittivities 7.3–7.5.[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — `CAPMCD` 2 µm, `CAPMCDSP`
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `CAPMCD` 2 µm, `CAPMCDSP`
   0.84 µm; MiM capacitor aspect ratio 20.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — the `capm` rule set.[^pdk-periph]
-* SkyWater PDK, *Parasitic Layout Extraction* — the `cap_mim_m3`
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the `capm` rule set.[^pdk-periph]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the `cap_mim_m3`
   extraction notes.[^pdk-08]
-* SkyWater PDK, README — "Optional MiM capacitors".[^pdk-10]
-* SkyWater, S130 platform table — "MiM Capacitor".[^skw-02]
-* SkyWater / Efabless, first MPW shuttle release — MiM capacitors
+* [SkyWater PDK, README](<https://github.com/google/skywater-pdk>) — "Optional MiM capacitors".[^pdk-10]
+* [SkyWater, S130 platform table](<https://www.skywatertechnology.com/cmos/>) — "MiM Capacitor".[^skw-02]
+* [SkyWater / Efabless, first MPW shuttle release](<https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>) — MiM capacitors
   offered as standard.[^ann-11]
-* SkyWater, *Facilities & Capabilities* — "PECVD silane
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD silane
   oxide/nitride/oxynitride, C1 – low temp, range of R.I. options".[^skw-01]
 * SKY130 raw-data repository — C–V sweeps of the first-level MiM test
   capacitors and the pad list that gives their areas and perimeters;
@@ -295,7 +295,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * Wikipedia, *Capacitor*, *Silicon oxynitride*, *Silicon nitride*,
   *Plasma-enhanced chemical vapor deposition*.[^wiki-capacitor][^wiki-sion][^wiki-sin][^wiki-pecvd]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — passive
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passive
   components and PECVD dielectrics in the deep-submicron back
   end.[^txt-05]
 * Edwards, WOSET 2020 and the 2021 lecture slides — the SKY130 stack
@@ -304,38 +304,38 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Deep dive
 
-* Kar-Roy et al. (Conexant), IITC 1999 — high-density MiM capacitors
+* [Kar-Roy et al. (Conexant), IITC 1999](<https://doi.org/10.1109/IITC.1999.787134>) — high-density MiM capacitors
   with a PECVD nitride in the back end of a 0.25 µm CMOS flow
   (aluminium, by the date; the abstract does not name the
   metal).[^kar-roy-1999]
-* Babcock et al. (TI), *IEEE EDL* 2001 — the frequency dependence and
+* [Babcock et al. (TI), *IEEE EDL* 2001](<https://doi.org/10.1109/55.919238>) — the frequency dependence and
   voltage linearity of PECVD-nitride MiMs, and the dispersion that
   degrades them below 1 MHz.[^babcock-2001]
-* Van Huylenbroeck et al. (IMEC), *IEEE EDL* 2002 — dispersion in
+* [Van Huylenbroeck et al. (IMEC), *IEEE EDL* 2002](<https://doi.org/10.1109/55.992835>) — dispersion in
   PECVD dielectrics and how to avoid it.[^van-huylenbroeck-2002]
-* Ng, Chew and Chu (Chartered), *IEEE EDL* 2003 — PECVD nitride
+* [Ng, Chew and Chu (Chartered), *IEEE EDL* 2003](<https://doi.org/10.1109/LED.2003.815154>) — PECVD nitride
   versus oxynitride as the MiM dielectric.[^ng-2003]
-* Ng et al. (Chartered), *IEEE TED* 2005 — MiM integration for
+* [Ng et al. (Chartered), *IEEE TED* 2005](<https://doi.org/10.1109/TED.2005.850642>) — MiM integration for
   mixed-signal/RF reviewed.[^ng-2005]
 * Armacost et al. (IBM/Infineon), IEDM 2000, and Mahnkopf et al.,
   IEDM 1999 — a high-reliability MiM in a 0.18 µm platform.[^armacost-2000][^mahnkopf-1999]
-* Denisse et al., *J. Appl. Phys.* 1986, and Bose, Bose and Basa,
-  *Mater. Lett.* 2002 — composition and index of PECVD
+* Denisse et al., [*J. Appl. Phys.*](<https://doi.org/10.1063/1.337117>) 1986, and Bose, Bose and Basa,
+  [*Mater. Lett.*](<https://doi.org/10.1016/S0167-577X(01)00436-0>) 2002 — composition and index of PECVD
   oxynitride.[^denisse-1986][^bose-2002]
-* Blonkowski, *Appl. Phys. Lett.* 2007, and Gonon and Vallée, *Appl.
-  Phys. Lett.* 2007 — the physics of the MiM voltage
+* Blonkowski, [*Appl. Phys. Lett.*](<https://doi.org/10.1063/1.2800291>) 2007, and Gonon and Vallée, [*Appl.
+  Phys. Lett.*](<https://doi.org/10.1063/1.2719618>) 2007 — the physics of the MiM voltage
   coefficient.[^blonkowski-2007][^gonon-2007]
-* Kar-Roy and Racanelli (Newport Fab), US 6,430,028 — a nitride/TiN
+* [Kar-Roy and Racanelli (Newport Fab), US 6,430,028](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>) — a nitride/TiN
   capacitor on an aluminium interconnect layer.[^pat-mim-newportfab]
-* Brabazon et al. (IBM), US 5,708,559 — the precision analogue
+* [Brabazon et al. (IBM), US 5,708,559](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5708559>) — the precision analogue
   metal–metal capacitor.[^pat-mim-ibm]
-* Olewine and Saiz (Philips), US 6,717,193 — bottom-electrode plasma
+* [Olewine and Saiz (Philips), US 6,717,193](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>) — bottom-electrode plasma
   treatment and top-plate etching.[^pat-mim-philips]
-* Roberts and Huffman (Freescale), US 7,375,002 — a MiM over
+* [Roberts and Huffman (Freescale), US 7,375,002](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7375002>) — a MiM over
   planarised interconnect.[^pat-mim-freescale]
-* Chapple-Sokol, Tierney and Batey (IBM), MRS 1989 — RF-power
+* [Chapple-Sokol, Tierney and Batey (IBM), MRS 1989](<https://doi.org/10.1557/PROC-165-113>) — RF-power
   dependence of PECVD film properties.[^chapple-sokol-1989]
-* Lieberman and Lichtenberg — the plasma physics of the
+* [Lieberman and Lichtenberg](<https://doi.org/10.1002/0471724254>) — the plasma physics of the
   deposition.[^lieberman-2005]
 
 ## Open questions

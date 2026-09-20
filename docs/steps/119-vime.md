@@ -236,68 +236,68 @@ recipe is not public); the shared physics is set out at
 
 ### Cross-check
 
-* SkyWater PDK, *Periphery rules* — via.1a 0.150 µm, via.2 0.170 µm,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — via.1a 0.150 µm, via.2 0.170 µm,
   via.4a 0.055 µm.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — "Via1 slope" 0.02; via
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Via1 slope" 0.02; via
   etch-and-fill capability 0.18 µm.[^pdk-03]
-* SkyWater PDK, *Process stack diagram* — via1 (NILD3) 0.27 µm;
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — via1 (NILD3) 0.27 µm;
   NILD3_C 0.030 µm, k 3.5.[^pdk-04]
-* SkyWater PDK, *Layers Reference* — `via` 68:44.[^pdk-06]
-* SkyWater PDK, *Parasitic Layout Extraction* — VIA 4 500 mΩ, MCON
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `via` 68:44.[^pdk-06]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — VIA 4 500 mΩ, MCON
   152 000 mΩ.[^pdk-08]
-* Cypress, QTP 113005 — the 300 Å TiW cap of the 2013 stack, which the etch stops
+* [Cypress, QTP 113005](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — the 300 Å TiW cap of the 2013 stack, which the etch stops
   on.[^cyp-qtp-113005]
-* SkyWater, *Facilities & Capabilities* — DPS II, Lam 9400 TCP and Lam 4400 gas
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — DPS II, Lam 9400 TCP and Lam 4400 gas
   lists; ashers; EKC solvents.[^skw-01]
 * Lam Research, Exelan launch (2001) and 10-K (2003).[^lam-exelan][^lam-10k]
-* SKY130 raw-data repository, test-tile pad documentation — the via-1
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the via-1
   chain structures of the published test tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*, *Dry etching*, *Via
   (electronics)*.[^wiki-rie][^wiki-dry-etch][^wiki-via]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the etch
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the etch
   chapter.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — via etching
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — via etching
   and multilevel-metal integration.[^txt-05]
-* Nojiri, *Dry Etching Technology for Semiconductors* — oxide etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — oxide etch
   chemistry and endpoint.[^nojiri-2015]
 
 ### Deep dive
 
 * Flamm and Donnelly, 1981, and Winters and Coburn, 1992 — the
   surface chemistry of fluorocarbon selectivity.[^flamm-1981][^winters-1992]
-* Oehrlein, Zhang, Vender and Joubert, *JVST A* 1994 — oxide and
+* [Oehrlein, Zhang, Vender and Joubert, *JVST A* 1994](<https://doi.org/10.1116/1.578877>) — oxide and
   silicon etching in CF₄/CHF₃ high-density plasmas.[^oehrlein-1994b]
-* Standaert et al., *JVST A* 1998 — etching through a thick
+* [Standaert et al., *JVST A* 1998](<https://doi.org/10.1116/1.580978>) — etching through a thick
   steady-state fluorocarbon layer.[^standaert-1998]
-* Schaepkens et al., *JVST A* 1999 — how a fluorocarbon film on the
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — how a fluorocarbon film on the
   stop layer creates selectivity.[^schaepkens-1999]
-* Perry et al., *JVST A* 2001 — oxide etch rates and selectivity in a
+* [Perry et al., *JVST A* 2001](<https://doi.org/10.1116/1.1382874>) — oxide etch rates and selectivity in a
   high-density C₂F₆ plasma.[^perry-2001]
-* Coburn and Winters, *Appl. Phys. Lett.* 1989 — conductance limits
+* [Coburn and Winters, *Appl. Phys. Lett.* 1989](<https://doi.org/10.1063/1.101937>) — conductance limits
   in high-aspect-ratio feature etching.[^coburn-1989]
-* Doemling, Rueger and Oehrlein, *Appl. Phys. Lett.* 1996 — inverse
+* [Doemling, Rueger and Oehrlein, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116772>) — inverse
   RIE lag in oxide etching.[^doemling-1996]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — aspect-ratio and
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — aspect-ratio and
   loading effects reviewed.[^gottscho-1992]
-* Petri, Henry and Sadeghi, *J. Appl. Phys.* 1992 — tungsten etching
+* [Petri, Henry and Sadeghi, *J. Appl. Phys.* 1992](<https://doi.org/10.1063/1.351565>) — tungsten etching
   in fluorine plasmas, the reason TiW is a fragile stop.[^petri-1992]
-* Fischl and Hess, *J. Electrochem. Soc.* 1987 — tungsten etching in
+* [Fischl and Hess, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100868>) — tungsten etching in
   chlorine, for contrast.[^fischl-1987]
-* Hess, *Plasma Chem. Plasma Process.* 1982 — why fluorine does not
+* [Hess, *Plasma Chem. Plasma Process.* 1982](<https://doi.org/10.1007/BF00633130>) — why fluorine does not
   etch aluminium.[^hess-1982]
-* Wodecki, SPIE 1999 — endpoint detection on low-open-area
+* [Wodecki, SPIE 1999](<https://doi.org/10.1117/12.361313>) — endpoint detection on low-open-area
   dielectric etches.[^wodecki-1999]
-* Bui et al., MRS 1994 — the anti-reflective cap under a tungsten-plug
+* [Bui et al., MRS 1994](<https://doi.org/10.1557/PROC-338-471>) — the anti-reflective cap under a tungsten-plug
   via and its electromigration performance.[^bui-1994]
 * Kobayakawa et al., VMIC 1991, and Romero et al., *J. Mater. Res.*
   1991 — outgassing from planarising dielectrics, the origin of via
   poisoning.[^kobayakawa-1991][^romero-1991]
-* Wu and Lu (UMC), US 6,013,581 — preventing poisoned vias in a
+* [Wu and Lu (UMC), US 6,013,581](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6013581>) — preventing poisoned vias in a
   dual-damascene flow by densifying the exposed dielectric.[^pat-via-poison-umc]
-* Xing, Cerny and Visokay (TI), US 6,090,697 — a refractory via-etch
+* [Xing, Cerny and Visokay (TI), US 6,090,697](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6090697>) — a refractory via-etch
   stop's oxide selectivity, measured against punch-through.[^pat-etchstop-ti]
 * Yin et al. (Applied Materials), US 5,540,824, and Ogle (Lam
   Research), US 4,948,458 — the two high-density plasma sources of

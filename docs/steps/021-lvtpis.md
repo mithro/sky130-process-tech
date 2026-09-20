@@ -149,63 +149,63 @@ crust stage cannot be hurried.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — ashers with gases and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ashers with gases and
   temperatures; Akrion, DNS, FSI benches.[^skw-01]
-* LinkedIn, SkyWater Technology Foundry listings — the defect-metrology
+* [LinkedIn, SkyWater Technology Foundry listings](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology
   tool list "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the popping
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the popping
   mechanism and a low-temperature O₂/N₂/H₂ first ash
   stage.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — the "carbonized crust" of
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — the "carbonized crust" of
   implanted resist.[^pat-strip-tsmc]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing and implanted-resist
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing and implanted-resist
   problems.[^wiki-ash]
-* Wikipedia, *RCA clean* — SC-1 and SC-2 compositions and
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2 compositions and
   temperatures.[^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — fab-floor
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — fab-floor
   view of ash and wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* Kern, in Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
-  Cleaning Technology* — overview chapter on wet-cleaning chemistry and
+* [Kern, in Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
+  Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — overview chapter on wet-cleaning chemistry and
   contamination.[^kern-handbook]
-* ITRS 2001, *Front End Processes* — surface preparation.[^itrs-01]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the carbonised
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — surface preparation.[^itrs-01]
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised
   layer of high-dose implanted resist, the residues of O₂ ashing and a
   two-step ashing process (abstract).[^fujimura-1989]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — why nitrogen
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — why nitrogen
   is added to oxygen in downstream ashing.[^fujimura-1990]
-* Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994 —
+* [Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994](<https://doi.org/10.1116/1.587773>) —
   water-vapour addition to downstream ashing, the origin of the H₂O/H₂
   chemistries on modern ashers.[^fujimura-1994]
-* Ohmi, *J. Electrochem. Soc.* 1996 — a room-temperature alternative to
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — a room-temperature alternative to
   the hot SPM/SC-1/SC-2 sequence.[^ohmi-1996]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — a modern handbook treatment of post-implant stripping
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — a modern handbook treatment of post-implant stripping
   and wet cleaning.[^reinhardt-2010]
-* Nakayama et al. (ULVAC), US 5,795,831 — a cold process for stripping
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — a cold process for stripping
   implanted resist, showing the alternatives to hot
   ashing.[^pat-strip-ulvac]
-* Lee et al. (Genus), IIT 1996 — outgassing of thick resists during MeV
+* [Lee et al. (Genus), IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — outgassing of thick resists during MeV
   implantation, what the resist has been through before this
   strip.[^lee-1996]
-* Horsky (Eaton), IIT 1998 — resist outgassing in high-energy and
+* [Horsky (Eaton), IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing in high-energy and
   high-current implanters.[^horsky-1998]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the two-stage
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the two-stage
   low-temperature ash for high-dose implanted resist.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — an ashing sequence
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — an ashing sequence
   designed around the carbonised crust.[^pat-strip-tsmc]
 
 ## Open questions

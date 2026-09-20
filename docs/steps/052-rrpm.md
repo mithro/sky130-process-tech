@@ -179,24 +179,24 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page — `RPM` is listed; no reverse mask
+* [SkyWater PDK, *Masks* page](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — `RPM` is listed; no reverse mask
   is.[^pdk-05]
-* SkyWater PDK, *Layers Reference* — `rpm` 86:20 and `urpm`
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `rpm` 86:20 and `urpm`
   79:20.[^pdk-06]
-* SkyWater PDK, *Device Details* — the P+ and P− poly precision
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the P+ and P− poly precision
   resistors, the R₀/R₁ model, "a separate implant".[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — 48.2, 319.8 and
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — 48.2, 319.8 and
   2000 Ω/sq.[^pdk-08]
-* SkyWater PDK, *Periphery rules* — rpm.3, rpm.7, rpm.8.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — RPMCD 1.27 / 0.84 µm;
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — rpm.3, rpm.7, rpm.8.[^pdk-periph]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — RPMCD 1.27 / 0.84 µm;
   photoresist 1.14 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — i-line tools, tracks,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — i-line tools, tracks,
   overlay metrology.[^skw-01]
-* SkyWater, Form S-1 — resist suppliers.[^sec-01]
-* SKY130 raw-data repository, test-tile pad documentation — the
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — resist suppliers.[^sec-01]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the
   poly-resistor (RRPM note) structures of the published test
   tile.[^raw-data-testtile-pads]
-* SKY130 raw-data repository, measured data — I–V sweeps of those
+* [SKY130 raw-data repository, measured data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — I–V sweeps of those
   structures; the resistances quoted here are our
   extraction.[^raw-data-passives]
 
@@ -204,45 +204,45 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 * Wikipedia, *Photolithography*, *Photomask*, *Diazonaphthoquinone*,
   *Tetramethylammonium hydroxide*.[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging,
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging,
   resist and process-window fundamentals.[^mack-2007]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography and implant masking.[^txt-02]
 
 ### Deep dive
 
-* Seto, *J. Appl. Phys.* 1975 — the grain-boundary trapping model:
+* [Seto, *J. Appl. Phys.* 1975](<https://doi.org/10.1063/1.321593>) — the grain-boundary trapping model:
   why resistance is so sensitive to the dose this window
   admits.[^seto-1975]
-* Mandurah, Saraswat and Kamins, *IEEE TED* 1981 — conduction in
+* [Mandurah, Saraswat and Kamins, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20504>) — conduction in
   poly with dopant segregation, the refinement used for real
   resistors.[^mandurah-1981]
-* Lu, Gerzberg and Meindl, *IEEE TED* 1982 — scaling limits of poly
+* [Lu, Gerzberg and Meindl, *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20762>) — scaling limits of poly
   resistors in SRAM and logic, including the end-resistance
   problem.[^lu-1982]
-* Upreti and Singh, *Bull. Mater. Sci.* 1991 — grain-boundary effects
+* [Upreti and Singh, *Bull. Mater. Sci.* 1991](<https://doi.org/10.1007/BF02823239>) — grain-boundary effects
   on the electrical properties of boron-doped poly films.[^upreti-1991]
-* Kato and Ono, *Jpn. J. Appl. Phys.* 1996 — the temperature
+* [Kato and Ono, *Jpn. J. Appl. Phys.* 1996](<https://doi.org/10.1143/JJAP.35.4209>) — the temperature
   coefficient of heavily doped poly resistors and how processing
   changes it.[^kato-1996]
-* Ashuah, Shauly and Shacham-Diamand, *IEEE TSM* 2009 — improving the
+* [Ashuah, Shauly and Shacham-Diamand, *IEEE TSM* 2009](<https://doi.org/10.1109/TSM.2009.2017655>) — improving the
   TCR of boron-implanted poly resistors by co-implantation, a modern
   example of resistor-implant engineering.[^ashuah-2009]
-* Chen et al., *Solid-State Electronics* 2000 — the voltage
+* [Chen et al., *Solid-State Electronics* 2000](<https://doi.org/10.1016/S0038-1101(00)00138-6>) — the voltage
   coefficient of poly resistors in a high-voltage CMOS
   technology.[^chen-2000]
-* O'Dwyer and Kennedy, PRIME 2009 — matching of poly resistor films
+* [O'Dwyer and Kennedy, PRIME 2009](<https://doi.org/10.1109/RME.2009.5201322>) — matching of poly resistor films
   in a CMOS process.[^odwyer-2009]
-* Tsang et al., *IEEE TSM* 2014 — resistance variation across
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — resistance variation across
   high-value poly resistor banks traced to hydrogen diffusion through
   eroded LPCVD-nitride corners.[^tsang-2014]
-* Hook et al., *IEEE TED* 2003 — lateral straggle at resist edges,
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral straggle at resist edges,
   which blurs the n⁺/p boundary this mask defines.[^hook-2003]
-* Bossung, SPIE 1977 — the exposure–focus process window that every
+* [Bossung, SPIE 1977](<https://doi.org/10.1117/12.955357>) — the exposure–focus process window that every
   mask layer, however relaxed, is qualified against.[^bossung-1977]
-* Levinson, *Principles of Lithography*, 4th ed. — mask tone, resist
+* [Levinson, *Principles of Lithography*, 4th ed.](<https://doi.org/10.1117/3.2525393>) — mask tone, resist
   polarity and overlay in one reference.[^levinson-2019]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
 
 ## Open questions

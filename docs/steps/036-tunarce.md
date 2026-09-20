@@ -194,13 +194,13 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — AMAT DPS II and Lam 9400 TCP
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — AMAT DPS II and Lam 9400 TCP
   gas sets; ashers.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* SkyWater PDK, *Periphery rules* — tunm.1, tunm.3 and tunm.4, the
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — tunm.1, tunm.3 and tunm.4, the
   dimensions the ARC protects.[^pdk-periph]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400* — the
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — the
   reactor class and its gases.[^snf-9400]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
@@ -210,36 +210,36 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Anti-reflective coating* — ARCs in photolithography,
+* [Wikipedia, *Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>) — ARCs in photolithography,
   BARC.[^wiki-arc]
-* Wikipedia, *Reactive-ion etching* — the plasma etch
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — the plasma etch
   basics.[^wiki-rie]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   plasma etching and resist processing.[^txt-02]
-* Levinson, *Principles of Lithography* — chapters on photoresists and
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on photoresists and
   on modeling and thin film effects.[^levinson-2005]
 
 ### Deep dive
 
-* Xu, Lill and Podlesnik (Applied Materials), *JVST A* 2001 —
+* [Xu, Lill and Podlesnik (Applied Materials), *JVST A* 2001](<https://doi.org/10.1116/1.1412655>) —
   wall-dependent etching of organic ARC in O₂ + halogen / hydrogen
   halide plasmas.[^xu-2001]
-* Ramanathan et al., SPIE 1998 — etch integration issues with DUV
+* [Ramanathan et al., SPIE 1998](<https://doi.org/10.1117/12.312473>) — etch integration issues with DUV
   resist over organic BARC.[^ramanathan-1998]
-* Baker and Capsuto, SPIE 1996 — CD control for an i-line 0.35 µm
+* [Baker and Capsuto, SPIE 1996](<https://doi.org/10.1117/12.241869>) — CD control for an i-line 0.35 µm
   device using a new anti-reflective coating.[^baker-1996]
-* Linliu, Kuo and Huang, SPIE 2000 — a polymeric ARC for better CD
+* [Linliu, Kuo and Huang, SPIE 2000](<https://doi.org/10.1117/12.389087>) — a polymeric ARC for better CD
   uniformity.[^linliu-2000]
-* Coburn and Winters, *J. Appl. Phys.* 1979 — how ion and electron
+* [Coburn and Winters, *J. Appl. Phys.* 1979](<https://doi.org/10.1063/1.326355>) — how ion and electron
   bombardment enhances gas–surface reactions, and its implications for
   plasma etching.[^coburn-1979]
-* Steinbrüchel, *Appl. Phys. Lett.* 1989 — the energy dependence of
+* [Steinbrüchel, *Appl. Phys. Lett.* 1989](<https://doi.org/10.1063/1.102336>) — the energy dependence of
   ion-enhanced etch yields, governing the low-bias ARC open.[^steinbruchel-1989]
-* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the design
+* [Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981](<https://doi.org/10.1007/BF00565992>) — the design
   of plasma etchants, including oxygen-based organic etches.[^flamm-1981]
-* Nojiri, *Dry Etching Technology for Semiconductors* — selectivity,
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — selectivity,
   endpoint and the practical recipe structure.[^nojiri-2015]
-* Mack, *Fundamental Principles of Optical Lithography* — the
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — the
   reflectivity and standing-wave theory behind the ARC.[^mack-2007]
 
 ## Open questions

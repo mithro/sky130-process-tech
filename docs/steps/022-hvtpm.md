@@ -186,70 +186,70 @@ fab:
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "High Vt PCh*, HVTPM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "High Vt PCh*, HVTPM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `hvtp` 78:44
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `hvtp` 78:44
   "High-Vt LVPMOS implant"; `chvtpm` 97:0, 97:43, 97:42.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — `hvtp` function text; hvtp.1–hvtp.6;
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `hvtp` function text; hvtp.1–hvtp.6;
   lvtn.9.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the
   `chvtpm.1` to `chvtpm.4` checks on the undefined `CLHVTPM`
   layer.[^pdk-errors]
-* SkyWater PDK, *Device Details* — `pfet_01v8_hvt`;
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `pfet_01v8_hvt`;
   `cap_var_hvt`; the varactor e-test table.[^pdk-07]
 * SKY130 raw-data repository — C–V sweeps of the test tile's low- and
   high-Vt varactors and the pad list that names them; the capacitances
   quoted here are our extraction.[^raw-data-passives][^raw-data-testtile-pads]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist
   thickness.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist, gas and chemical
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the site tool list.[^skw-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist, gas and chemical
   suppliers.[^sec-01]
-* *SKY130 Open MPW mask-layer renders* — one public derivation of
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — one public derivation of
   the `HVTPM` layer from the drawn MPW tape-out layouts, without
   `hvtp`.[^mask-renders]
 
 ### High-level understanding
 
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Wikipedia, *Photolithography* — 365 nm i-line and CD =
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — 365 nm i-line and CD =
   k₁·λ/NA.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
-* MicroChemicals, *Development of photoresists* — practical
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — practical
   develop-process notes, including the 2.38 % TMAH
   developers.[^microchemicals-dev]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* ITRS 2001, *Process Integration, Devices, and Structures* — "Multiple
+* [ITRS 2001, *Process Integration, Devices, and Structures*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>) — "Multiple
   Vt".[^itrs-04]
-* Wei et al., DAC 1998 — the circuit-level case for a second PMOS/NMOS
+* [Wei et al., DAC 1998](<https://doi.org/10.1109/DAC.1998.724521>) — the circuit-level case for a second PMOS/NMOS
   threshold.[^wei-1998]
-* Hook et al. (IBM), *IEEE TED* 2003 — threshold shifts from ions
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — threshold shifts from ions
   scattered at an implant-resist edge, the reason for the `hvtp`
   enclosure rules.[^hook-2003]
-* Sheu et al. (TSMC), *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al. (TSMC), *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect.[^sheu-2006]
-* Drennan, Kniffin and Locascio, CICC 2006 — designer-side consequences
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — designer-side consequences
   of proximity effects for analogue layout.[^drennan-2006]
-* Mack, *Fundamental Principles of Optical Lithography* — k₁ and
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — k₁ and
   resist-profile fundamentals behind the i-line assignment.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — multiple
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — multiple
   thresholds made with masked Vt-adjust implants.[^pat-vt-rrr]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — multiple thresholds set by
   gate length, with a laterally doped channel implant self-aligned to
   the gate pillars.[^pat-vt-amd]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   voltage as a function of channel doping, what the extra mask
   buys.[^taur-2009]
 

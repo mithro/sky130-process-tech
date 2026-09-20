@@ -182,64 +182,64 @@ practice).[^txt-02]
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Iridia; Mattson
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — GaSonics PEP; Iridia; Mattson
   Aspen II; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist thickness
   1.14 µm; 0.3 µm resist and 40° angle for the HV tip that
   follows.[^pdk-03]
-* LinkedIn, SkyWater Technology Foundry listings — the defect-metrology
+* [LinkedIn, SkyWater Technology Foundry listings](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology
   tool list.[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the {term}`popping`
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the {term}`popping`
   mechanism and a low-temperature first ash stage.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — the "carbonized crust" of
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — the "carbonized crust" of
   implanted resist.[^pat-strip-tsmc]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing and implanted-resist
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing and implanted-resist
   problems.[^wiki-ash]
-* Wikipedia, *Piranha solution* and *RCA clean* — SPM, SC-1 and SC-2
+* Wikipedia, [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) and [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SPM, SC-1 and SC-2
   compositions.[^wiki-piranha][^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   resist stripping and wafer cleaning.[^txt-02]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — extension
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — extension
   implant doses that set the crust.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash and
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ash and
   wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* Orvek and Huffman, *NIM B* 1985 — the carbonised layer formed in
+* [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — the carbonised layer formed in
   ion-implanted resist masks.[^orvek-1985]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the
   carbonised layer of high-dose implanted resist and a two-step ashing
   process (abstract).[^fujimura-1989]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — why nitrogen
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — why nitrogen
   is added to oxygen in downstream ashing.[^fujimura-1990]
-* Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1991 — resist
+* [Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1991](<https://doi.org/10.1116/1.585575>) — resist
   stripping in an O₂ + H₂O downstream plasma.[^fujimura-1991]
-* Yegnasubramanian, Draper and Pearce, *MRS Proc.* 1992 — TEM of the
+* [Yegnasubramanian, Draper and Pearce, *MRS Proc.* 1992](<https://doi.org/10.1557/PROC-265-295>) — TEM of the
   implanted-resist residues left after oxygen-plasma ashing.[^yegnasubramanian-1992]
-* Rubin et al. (Varian), IIT 2000 — UV photostabilisation of resist
+* [Rubin et al. (Varian), IIT 2000](<https://doi.org/10.1109/IIT.2000.924279>) — UV photostabilisation of resist
   before high-dose implants, the implant-side half of the
   problem.[^rubin-2000]
-* Lukaszek, Reno and Bammi, IIT 1996 — resist and wafer charging
+* [Lukaszek, Reno and Bammi, IIT 1996](<https://doi.org/10.1109/IIT.1996.586135>) — resist and wafer charging
   during high-current arsenic implants.[^lukaszek-1996]
-* Bergman and Leonhard, *Solid State Phenomena* 2009 — wet stripping
+* [Bergman and Leonhard, *Solid State Phenomena* 2009](<https://doi.org/10.4028/www.scientific.net/SSP.145-146.281>) — wet stripping
   of high-dose implanted resist with sulphur trioxide.[^bergman-2009]
-* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 —
+* [Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006](<https://doi.org/10.1149/1.2195884>) —
   formulated liquid strippers for high-dose implanted resist.[^visintin-2006]
-* Kern, *J. Electrochem. Soc.* 1990 — history and chemistry of the RCA
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — history and chemistry of the RCA
   clean.[^kern-1990]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — post-implant stripping and wet cleaning.[^reinhardt-2010]
-* Nakayama et al. (ULVAC), US 5,795,831 — a cold process for stripping
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — post-implant stripping and wet cleaning.[^reinhardt-2010]
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — a cold process for stripping
   implanted resist.[^pat-strip-ulvac]
-* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — a downstream
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — a downstream
   microwave asher design.[^pat-asher-fusion]
-* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — a plasma
+* [Becknell, Hammar and Ferris (Axcelis), US 7,449,416](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>) — a plasma
   ashing process tuned for removal rate.[^pat-asher-axcelis]
 
 ## Open questions

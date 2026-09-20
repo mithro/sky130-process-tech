@@ -250,60 +250,60 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — "thin conductor layer on top of
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — "thin conductor layer on top of
   the dielectric"; `RSCAPM` 5.8 Ω/sq (4.8–6.8); `CMIMA`, `CMIMP`; the
   `cap_mim` cross-section ("CAPM" over "M3 (plate 1)").[^pdk-07]
-* SkyWater PDK, *Layers Reference* — `capm` 89:44.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `CAPMCD` 2 µm; MiM
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `capm` 89:44.[^pdk-06]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `CAPMCD` 2 µm; MiM
   aspect ratio 20.[^pdk-03]
-* SkyWater PDK, *Process stack diagram* — `capm` between `metal3` and
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `capm` between `metal3` and
   `metal4`.[^pdk-04]
 * Cypress, QTP 113005 — the 300 Å TiW caps of the S8TNV-5R metal
   stacks, for comparison; QTP 123907 records the later change away from
   them.[^cyp-qtp-113005][^cyp-qtp-123907]
-* SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal … TiW";
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT PVD Metal … TiW";
   "Sputter etch, degas"; TiW on the metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — sputter-target suppliers.[^sec-01][^sec-02]
-* Hitachi Metals, US 5,160,534 — Ti:W target composition.[^pat-tiw-hitachi]
+* [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — Ti:W target composition.[^pat-tiw-hitachi]
 * Applied Materials, *Endura PVD*.[^amat-endura]
 
 ### High-level understanding
 
 * Wikipedia, *Sputter deposition*, *Capacitor*.[^wiki-sputter][^wiki-capacitor]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and refractory barrier films.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — passive
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passive
   devices in the deep-submicron back end.[^txt-05]
-* Ohring, *Materials Science of Thin Films* — film growth, stress and
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — film growth, stress and
   structure.[^ohring-2002]
 
 ### Deep dive
 
-* Ghate, Blair, Fuller and McGuire (TI), *Thin Solid Films* 1978 —
+* [Ghate, Blair, Fuller and McGuire (TI), *Thin Solid Films* 1978](<https://doi.org/10.1016/0040-6090(78)90024-X>) —
   Ti:W barrier metallisation for integrated circuits.[^ghate-1978]
-* Nicolet, *Thin Solid Films* 1978 — diffusion barriers in thin
+* [Nicolet, *Thin Solid Films* 1978](<https://doi.org/10.1016/0040-6090(78)90184-0>) — diffusion barriers in thin
   films, TiW among them.[^nicolet-1978]
-* Hill, *Thin Solid Films* 1980 — magnetron-sputtered Ti–W
+* [Hill, *Thin Solid Films* 1980](<https://doi.org/10.1016/0040-6090(80)90017-6>) — magnetron-sputtered Ti–W
   films.[^hill-1980]
-* Dirks, Wolters and De Veirman (Philips), *Thin Solid Films* 1992 —
+* [Dirks, Wolters and De Veirman (Philips), *Thin Solid Films* 1992](<https://doi.org/10.1016/0040-6090(92)90640-W>) —
   columnar microstructure of sputtered W and W–Ti(N).[^dirks-1992]
-* Nowicki et al., *Thin Solid Films* 1978, and Olowolafe et al.,
-  *J. Appl. Phys.* 1985 — TiW on and with aluminium.[^nowicki-1978][^olowolafe-1985]
-* Thornton, *JVST* 1974 — the structure-zone model behind the
+* Nowicki et al., [*Thin Solid Films*](<https://doi.org/10.1016/0040-6090(78)90035-4>) 1978, and Olowolafe et al.,
+  [*J. Appl. Phys.*](<https://doi.org/10.1063/1.335764>) 1985 — TiW on and with aluminium.[^nowicki-1978][^olowolafe-1985]
+* [Thornton, *JVST* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone model behind the
   pressure choice.[^thornton-1974]
-* Turban, Coulon and Mutsukura, *Thin Solid Films* 1989, and Liu and
-  Kuo, *J. Electrochem. Soc.* 2007 — the fluorine-plasma etching of
+* Turban, Coulon and Mutsukura, [*Thin Solid Films*](<https://doi.org/10.1016/0040-6090(89)90102-8>) 1989, and Liu and
+  Kuo, [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2737631>) 2007 — the fluorine-plasma etching of
   tungsten and of TiW that makes the plate patternable.[^turban-1989][^liu-2007-tiw]
-* Danzl and McLaurin, IEMT 1997 — peroxide removal of a TiW cap from
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — peroxide removal of a TiW cap from
   aluminium, the wet alternative.[^danzl-1997]
-* Olewine and Saiz (Philips), US 6,717,193 — a MiM whose top-electrode
+* [Olewine and Saiz (Philips), US 6,717,193](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>) — a MiM whose top-electrode
   etch stops in the TiN anti-reflective cap of the metal below, the
   case where plate and cap are different films.[^pat-mim-philips]
 * Kar-Roy et al., IITC 1999, and Babcock et al., *IEEE EDL* 2001 —
   capacitance density and frequency dispersion of published Al-BEOL
   PECVD-nitride MiMs, though neither abstract names an electrode
   material.[^kar-roy-1999][^babcock-2001]
-* Ng et al., *IEEE TED* 2005 — a review of MiM integration in Al–Cu
+* [Ng et al., *IEEE TED* 2005](<https://doi.org/10.1109/TED.2005.850642>) — a review of MiM integration in Al–Cu
   and Cu back ends.[^ng-2005]
 * Brabazon et al. (IBM), US 5,708,559; Kar-Roy and Racanelli
   (Newport Fab), US 6,430,028; Crenshaw et al. (TI), US 7,250,334 —

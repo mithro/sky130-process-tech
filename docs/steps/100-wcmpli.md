@@ -203,58 +203,58 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP":
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT Mirra CMP":
   "tungsten", "high selectivity tungsten"; SEZ/Da Vinci
   cleaners.[^skw-01]
-* SkyWater PDK, *Periphery rules* — licon.4, li.5.[^pdk-periph]
-* SkyWater PDK, process stack diagram — `li` 0.1 µm.[^pdk-04]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — licon.4, li.5.[^pdk-periph]
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `li` 0.1 µm.[^pdk-04]
 * Applied Materials, 1997 Annual Report; Chip History Center on the
   Mirra.[^amat-1997][^chiphistory-mirra]
-* SkyWater, Form S-1 — chemical suppliers.[^sec-01]
-* LinkedIn, SkyWater *Defect Technician 2* posting — inspection
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — chemical suppliers.[^sec-01]
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — inspection
   tools.[^job-06]
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing* — tungsten among the
+* [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>) — tungsten among the
   polished materials.[^wiki-cmp]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical
-  Planarization of Microelectronic Materials* — the tungsten
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical
+  Planarization of Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>) — the tungsten
   chapter.[^steigerwald-1997]
-* Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004 — a long
+* [Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004](<https://doi.org/10.1016/j.mser.2004.06.002>) — a long
   review of CMP including metal polishes.[^zantye-2004]
 
 ### Deep dive
 
-* Jolley, *Solid State Phenomena* 1998 — TMAH as a post-tungsten-CMP
+* [Jolley, *Solid State Phenomena* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.105>) — TMAH as a post-tungsten-CMP
   clean.[^jolley-1998]
-* Kaufman et al. (IBM), *J. Electrochem. Soc.* 1991 — tungsten CMP
+* [Kaufman et al. (IBM), *J. Electrochem. Soc.* 1991](<https://doi.org/10.1149/1.2085434>) — tungsten CMP
   by oxidation and abrasion, the founding paper.[^kaufman-1991]
-* Kaanta et al. (IBM), IEDM 1987 — tungsten studs and
+* [Kaanta et al. (IBM), IEDM 1987](<https://doi.org/10.1109/IEDM.1987.191389>) — tungsten studs and
   planarisation.[^kaanta-1987]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry
   chemistry for tungsten CMP.[^rev-02]
-* Stein, Hetherington and Cecchi, *J. Electrochem. Soc.* 1999 —
+* [Stein, Hetherington and Cecchi, *J. Electrochem. Soc.* 1999](<https://doi.org/10.1149/1.1391617>) —
   kinetics of tungsten CMP in iodate slurries.[^stein-1999]
-* Elbel et al., *J. Electrochem. Soc.* 1998 — tungsten chemical
+* [Elbel et al., *J. Electrochem. Soc.* 1998](<https://doi.org/10.1149/1.1838533>) — tungsten chemical
   mechanical polishing.[^elbel-1998]
-* Bielmann et al., *Electrochem. Solid-State Lett.* 1999 — particle
+* [Bielmann et al., *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390851>) — particle
   size in tungsten CMP.[^bielmann-1999]
-* Wang et al., *JJAP* 2002 — integrated tungsten CMP for via
+* [Wang et al., *JJAP* 2002](<https://doi.org/10.1143/JJAP.41.5120>) — integrated tungsten CMP for via
   plugs.[^wang-2002-wcmp]
-* Lee et al., *J. Mater. Sci.: Mater. Electron.* 2001 — plug CMP
+* [Lee et al., *J. Mater. Sci.: Mater. Electron.* 2001](<https://doi.org/10.1023/A:1011276830620>) — plug CMP
   optimisation across consumables.[^lee-2001-wcmp]
-* Sue, Lültzen and Gonzales, *MRS Proc.* 1999 — tungsten CMP
+* [Sue, Lültzen and Gonzales, *MRS Proc.* 1999](<https://doi.org/10.1557/PROC-566-109>) — tungsten CMP
   endpoint detection.[^sue-1999]
-* Bibby and Holland, *J. Electron. Mater.* 1998 — endpoint
+* [Bibby and Holland, *J. Electron. Mater.* 1998](<https://doi.org/10.1007/s11664-998-0140-1>) — endpoint
   methods.[^bibby-1998]
-* Preston, *J. Soc. Glass Technol.* 1927 — the removal-rate
+* [Preston, *J. Soc. Glass Technol.* 1927](<https://books.google.com/books/about/Journal_of_the_Society_of_Glass_Technolo.html?id=3CTyAAAAMAAJ>) — the removal-rate
   law.[^preston-1927]
 * Tolles et al., Birang et al. and Lustig et al. — Mirra
   architecture, pad window and in-situ endpoint
   patents.[^pat-cmp-mirra][^pat-cmp-window][^pat-cmp-endpoint-ibm]
-* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
-  Materials* — metal CMP and post-CMP cleaning chapters.[^oliver-2004]
+* [Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials*](<https://doi.org/10.1007/978-3-662-06234-0>) — metal CMP and post-CMP cleaning chapters.[^oliver-2004]
 
 ## Open questions
 

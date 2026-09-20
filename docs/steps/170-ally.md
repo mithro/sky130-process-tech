@@ -220,9 +220,9 @@ an aluminium back end (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Furnaces are all made by
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Furnaces are all made by
   Aviza"; "H2 and forming gas alloy"; Heatpulse 8808 ambients.[^skw-01]
-* SkyWater PDK, *Process stack diagram* — TOPOX and TOPNIT over metal 5.[^pdk-04]
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — TOPOX and TOPNIT over metal 5.[^pdk-04]
 * Cypress, QTP 014807, QTP 123907/132302/132301, QTP 113005 — passivation
   nitride thicknesses at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
 * Moov, *Aviza / SVG / Thermco AVP 8000* listing; ASM International,
@@ -233,39 +233,39 @@ an aluminium back end (SKY130's recipe is not public):
 ### High-level understanding
 
 * Wikipedia, *Forming gas*.[^wiki-fg]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the alloy
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the alloy
   anneal and interface passivation.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sinter/alloy practice.[^txt-02]
-* Deal, *IEEE TED* 1980 — standard terminology for oxide
+* [Deal, *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.19908>) — standard terminology for oxide
   charges.[^deal-1980]
 
 ### Deep dive
 
-* Reed and Plummer, *J. Appl. Phys.* 1988 — chemistry of Si–SiO₂
+* [Reed and Plummer, *J. Appl. Phys.* 1988](<https://doi.org/10.1063/1.340317>) — chemistry of Si–SiO₂
   interface-trap annealing.[^reed-1988]
-* Cartier, Stathis and Buchanan, *Appl. Phys. Lett.* 1993 — passivation
+* [Cartier, Stathis and Buchanan, *Appl. Phys. Lett.* 1993](<https://doi.org/10.1063/1.110758>) — passivation
   and depassivation of dangling bonds by atomic hydrogen.[^cartier-1993]
-* Brower, *Phys. Rev. B* 1990 — dissociation kinetics of
+* [Brower, *Phys. Rev. B* 1990](<https://doi.org/10.1103/PhysRevB.42.3444>) — dissociation kinetics of
   hydrogen-passivated interface defects.[^brower-1990]
-* Stesmans, *Appl. Phys. Lett.* 1996 — passivation of P_b0 and P_b1
+* [Stesmans, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116308>) — passivation of P_b0 and P_b1
   centres by molecular hydrogen.[^stesmans-1996]
-* Lyding, Hess and Kizilyalli, *Appl. Phys. Lett.* 1996 — deuterium in
+* [Lyding, Hess and Kizilyalli, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116172>) — deuterium in
   the final sinter and hot-electron degradation.[^lyding-1996]
-* Kizilyalli et al., *IEEE EDL* 1998 — deuterium anneals for
+* [Kizilyalli et al., *IEEE EDL* 1998](<https://doi.org/10.1109/55.728907>) — deuterium anneals for
   manufacturing multilevel metal/dielectric MOS systems.[^kizilyalli-1998]
-* Lyding and Hess (University of Illinois), US 5,872,387 —
+* [Lyding and Hess (University of Illinois), US 5,872,387](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5872387>) —
   deuterium-treated devices and example anneal conditions.[^pat-deuterium-uiuc]
 * Rangan, Krishnan and Ashok, P2ID 1998, and Fang and McVittie, *IEEE
   EDL* 1992 — plasma damage and its hydrogen passivation.[^rangan-1998][^fang-1992]
-* Lanford and Rand, *J. Appl. Phys.* 1978 — hydrogen content of plasma
+* [Lanford and Rand, *J. Appl. Phys.* 1978](<https://doi.org/10.1063/1.325095>) — hydrogen content of plasma
   nitride, a source within the stack.[^lanford-1978]
-* Sah, Sun and Tzou, *Appl. Phys. Lett.* 1983, and Pankove et al., *Phys.
-  Rev. Lett.* 1983 — hydrogen deactivation of boron.[^sah-1983][^pankove-1983]
-* Maes, Usmani and Heyns, *J. Appl. Phys.* 1981 — a post-nitridation
+* Sah, Sun and Tzou, [*Appl. Phys. Lett.*](<https://doi.org/10.1063/1.94287>) 1983, and Pankove et al., [*Phys.
+  Rev. Lett.*](<https://doi.org/10.1103/PhysRevLett.51.2224>) 1983 — hydrogen deactivation of boron.[^sah-1983][^pankove-1983]
+* [Maes, Usmani and Heyns, *J. Appl. Phys.* 1981](<https://doi.org/10.1063/1.329266>) — a post-nitridation
   hydrogen anneal that improved MNOS memory retention, a different
   anneal from this one.[^maes-1981]
-* Learn, *J. Electrochem. Soc.* 1976 — aluminium metallisation and its
+* [Learn, *J. Electrochem. Soc.* 1976](<https://doi.org/10.1149/1.2132964>) — aluminium metallisation and its
   processing.[^learn-1976]
 * Yue, Funsten and Taylor, IRPS 1985, and Hughey and Cook, MRS 2003 —
   stress voiding in aluminium and nitride stress change on

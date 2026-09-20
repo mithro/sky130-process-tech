@@ -178,47 +178,47 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — "oxide spacer" 0.05 µm;
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "oxide spacer" 0.05 µm;
   implant angle "High current" 0°.[^pdk-03]
-* SkyWater PDK, process stack diagram — "SPNIT K=7.5", oxides at
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "SPNIT K=7.5", oxides at
   3.9.[^pdk-04]
-* SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD TEOS, C2 and
   Producer"; "PECVD silane oxide … C1"; Aviza LPCVD oxide.[^skw-01]
 
 ### High-level understanding
 
-* Wikipedia, *Tetraethyl orthosilicate* — TEOS as an oxide
+* [Wikipedia, *Tetraethyl orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>) — TEOS as an oxide
   precursor.[^wiki-teos]
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   CVD oxides and implantation through oxide.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — composite
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — composite
   spacers in deep-submicron CMOS.[^txt-05]
 
 ### Deep dive
 
-* Tsang et al. (IBM), *IEEE TED* 1982 — the oxide sidewall spacer.[^tsang-1982]
-* Janapaty, Tsai and Prasad, SPIE 1998 — oxide versus oxide/nitride
+* [Tsang et al. (IBM), *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20748>) — the oxide sidewall spacer.[^tsang-1982]
+* [Janapaty, Tsai and Prasad, SPIE 1998](<https://doi.org/10.1117/12.324387>) — oxide versus oxide/nitride
   composite spacers on 0.25 µm PMOS.[^janapaty-1998]
-* Park et al., IEDM 1991 — boron profile broadening from a screen
+* [Park et al., IEDM 1991](<https://doi.org/10.1109/IEDM.1991.235422>) — boron profile broadening from a screen
   oxide.[^park-1991]
-* Lim et al., IEDM 1993 — a model of boron implantation through
+* [Lim et al., IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347350>) — a model of boron implantation through
   screen oxide into (100) silicon.[^lim-1993]
-* Wang et al. (Motorola), *J. Electrochem. Soc.* 1997 — fluorine and
+* [Wang et al. (Motorola), *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1838075>) — fluorine and
   boron diffusion after BF₂ implantation through oxide.[^wang-1997]
-* Farhane et al., RTP 2003 — arsenic dose loss during nitrogen
+* [Farhane et al., RTP 2003](<https://doi.org/10.1109/RTP.2003.1249144>) — arsenic dose loss during nitrogen
   anneals.[^farhane-2003]
-* Shibahara et al., *MRS Proc.* 1998 — origins of dopant loss for
+* [Shibahara et al., *MRS Proc.* 1998](<https://doi.org/10.1557/PROC-532-23>) — origins of dopant loss for
   low-energy arsenic and antimony.[^shibahara-1998]
-* Pelletier et al., *Mater. Sci. Eng. B* 2008 — boron out-diffusion
+* [Pelletier et al., *Mater. Sci. Eng. B* 2008](<https://doi.org/10.1016/j.mseb.2008.09.025>) — boron out-diffusion
   into oxide and nitride spacers.[^pelletier-2008]
-* Shrivastava and Fitzpatrick, *IEEE TED* 1982 — overlap and fringing
+* [Shrivastava and Fitzpatrick, *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.21044>) — overlap and fringing
   capacitance through the spacer dielectric.[^shrivastava-1982]
-* Becker et al. (Siemens), *JVST B* 1987 — LPCVD TEOS oxide
+* [Becker et al. (Siemens), *JVST B* 1987](<https://doi.org/10.1116/1.583673>) — LPCVD TEOS oxide
   properties and conformality.[^becker-1987]
-* Adams and Capio (Bell Labs), *J. Electrochem. Soc.* 1979 —
+* [Adams and Capio (Bell Labs), *J. Electrochem. Soc.* 1979](<https://doi.org/10.1149/1.2129171>) —
   reduced-pressure silane oxide deposition.[^adams-1979]
-* Raupp, Cale and Hey, *JVST B* 1992 — PECVD TEOS plasma
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — PECVD TEOS plasma
   chemistry.[^raupp-1992]
 
 ## Open questions

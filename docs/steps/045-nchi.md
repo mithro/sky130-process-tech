@@ -204,15 +204,15 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — `nfet_01v8` versus
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `nfet_01v8` versus
   `nfet_01v8_lvt` ("identical … except for the VT adjust implants");
   native devices with Vt implants blocked.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — Axcelis 8250 and GSD species
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Axcelis 8250 and GSD species
   and dose ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
 * Semiconductor Online, *8250HT Medium Current Ion Implanter*.[^axcelis-8250]
-* SKY130 raw-data repository, 1.8 V transistor files — measured
+* [SKY130 raw-data repository, 1.8 V transistor files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — measured
   `nfet_01v8` thresholds at the e-test geometries (our
   extraction).[^raw-data-lv-mosfets]
 
@@ -225,36 +225,36 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Threshold voltage* and *Multi-threshold CMOS* — how
+* Wikipedia, [*Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>) and [*Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — how
   channel doping sets Vt.[^wiki-vt][^wiki-mtcmos]
 * Wikipedia, *Ion implantation*.[^wiki-implant]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — the submicron
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — the submicron
   MOSFET and its channel engineering.[^txt-04]
 
 ### Deep dive
 
-* MacPherson, *Appl. Phys. Lett.* 1971 — threshold adjustment by ion
+* [MacPherson, *Appl. Phys. Lett.* 1971](<https://doi.org/10.1063/1.1653513>) — threshold adjustment by ion
   implantation.[^macpherson-1971]
-* Peressini and Johnson, IEDM 1973 — threshold adjustment of n-channel
+* [Peressini and Johnson, IEDM 1973](<https://doi.org/10.1109/IEDM.1973.188761>) — threshold adjustment of n-channel
   enhancement FETs.[^peressini-1973]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — multiple thresholds set by
   gate length, with a laterally doped channel implant self-aligned to
   the gate pillars.[^pat-vt-amd]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 —
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) —
   threshold-adjust boron through a sacrificial oxide.[^pat-vt-lsi]
-* Wang et al., *J. Electrochem. Soc.* 1997 — fluorine's effect on
+* [Wang et al., *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1838075>) — fluorine's effect on
   boron diffusion after BF₂ implantation through oxide and RTA.[^wang-1997]
-* Taur et al., *Proc. IEEE* 1997 — channel profile requirements as
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — channel profile requirements as
   gates scale.[^taur-1997]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   versus channel doping and the body effect.[^taur-2009]
-* Wei et al., DAC 1998 — the circuit case for multiple
+* [Wei et al., DAC 1998](<https://doi.org/10.1109/DAC.1998.724521>) — the circuit case for multiple
   thresholds.[^wei-1998]
-* Hook et al., *IEEE TED* 2003 — threshold shifts near implant-mask
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — threshold shifts near implant-mask
   edges.[^hook-2003]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) — the
   thermal-wave implant monitor.[^smith-1985]
 
 ## Open questions

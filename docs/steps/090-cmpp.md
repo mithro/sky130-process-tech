@@ -208,60 +208,60 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — "poly cap after SPE"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "poly cap after SPE"
   0.2 µm; poly 0.18 µm; "Pre-LI ILD thickness" 0.5 µm; "Min pattern
   density for oxide" 0.75; pattern-density boxes.[^pdk-03]
-* SkyWater PDK, process stack diagram — PSG labels; `li` 0.1 µm.[^pdk-04]
-* SkyWater PDK, *Periphery rules* — licon.1 0.170 µm.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP" and its
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — PSG labels; `li` 0.1 µm.[^pdk-04]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — licon.1 0.170 µm.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT Mirra CMP" and its
   film list; SEZ/Da Vinci cleaners.[^skw-01]
-* Applied Materials, 1997 Annual Report — the Mirra product
+* [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — the Mirra product
   line.[^amat-1997]
-* SkyWater, Form S-1 — chemical suppliers.[^sec-01]
-* LinkedIn, SkyWater *Defect Technician 2* posting — inspection
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — chemical suppliers.[^sec-01]
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — inspection
   tools.[^job-06]
 
 ### High-level understanding
 
 * Wikipedia, *Chemical-mechanical polishing*.[^wiki-cmp]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — dielectric
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — dielectric
   CMP.[^txt-05]
 * Steigerwald, Murarka and Gutmann, *Chemical Mechanical
   Planarization of Microelectronic Materials*.[^steigerwald-1997]
-* Levinson, *Principles of Lithography* — the chapter on optical pattern
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — the chapter on optical pattern
   formation.[^levinson-2005]
 * Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
 
 ### Deep dive
 
-* Davari et al. (IBM), IEDM 1989 — RIE plus CMP planarisation of
+* [Davari et al. (IBM), IEDM 1989](<https://doi.org/10.1109/IEDM.1989.74228>) — RIE plus CMP planarisation of
   the inter-level dielectric.[^davari-1989]
-* Daubenspeck et al. (IBM), *J. Electrochem. Soc.* 1991 —
+* [Daubenspeck et al. (IBM), *J. Electrochem. Soc.* 1991](<https://doi.org/10.1149/1.2085619>) —
   planarisation over variable pattern densities.[^daubenspeck-1991]
-* Kaanta et al. (IBM), IEDM 1987 — tungsten studs on a planarised
+* [Kaanta et al. (IBM), IEDM 1987](<https://doi.org/10.1109/IEDM.1987.191389>) — tungsten studs on a planarised
   dielectric, the scheme this module follows.[^kaanta-1987]
-* Preston, *J. Soc. Glass Technol.* 1927, and Nanz and Camilletti,
-  *IEEE TSM* 1995 — the removal-rate law and a review of CMP
+* Preston, [*J. Soc. Glass Technol.*](<https://books.google.com/books/about/Journal_of_the_Society_of_Glass_Technolo.html?id=3CTyAAAAMAAJ>) 1927, and Nanz and Camilletti,
+  [*IEEE TSM*](<https://doi.org/10.1109/66.475179>) 1995 — the removal-rate law and a review of CMP
   models.[^preston-1927][^nanz-1995]
-* Cook, *J. Non-Cryst. Solids* 1990 — the chemistry of glass
+* [Cook, *J. Non-Cryst. Solids* 1990](<https://doi.org/10.1016/0022-3093(90)90200-6>) — the chemistry of glass
   polishing.[^cook-1990]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry
   chemistry for oxide and tungsten CMP.[^rev-02]
-* Stine et al., *IEEE TSM* 1998, and Ouma et al., *IEEE TSM* 2002 —
+* Stine et al., [*IEEE TSM*](<https://doi.org/10.1109/66.661292>) 1998, and Ouma et al., [*IEEE TSM*](<https://doi.org/10.1109/66.999598>) 2002 —
   pattern-density models of oxide CMP.[^stine-1998][^ouma-2002]
-* Yu et al., *Appl. Phys. Lett.* 1992 — dishing in a nitride-stop
+* [Yu et al., *Appl. Phys. Lett.* 1992](<https://doi.org/10.1063/1.107586>) — dishing in a nitride-stop
   polish.[^yu-1992]
-* Bibby and Holland, *J. Electron. Mater.* 1998 — endpoint detection
+* [Bibby and Holland, *J. Electron. Mater.* 1998](<https://doi.org/10.1007/s11664-998-0140-1>) — endpoint detection
   for CMP.[^bibby-1998]
-* Kahng and Samadi, *IEEE TCAD* 2008 — dummy-fill synthesis, the
+* [Kahng and Samadi, *IEEE TCAD* 2008](<https://doi.org/10.1109/TCAD.2007.907061>) — dummy-fill synthesis, the
   design-side answer to density sensitivity.[^kahng-2008]
 * Chow et al. and Beyer et al. (IBM) — the foundational
   metal/insulator CMP patents.[^pat-cmp-ibm-1988][^pat-cmp-ibm-1990]
 * Tolles et al., Birang et al. and Lustig et al. — multi-platen
   architecture, pad window and in-situ endpoint
   patents.[^pat-cmp-mirra][^pat-cmp-window][^pat-cmp-endpoint-ibm]
-* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
-  Materials* — dielectric CMP, endpoint and cleaning
+* [Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials*](<https://doi.org/10.1007/978-3-662-06234-0>) — dielectric CMP, endpoint and cleaning
   chapters.[^oliver-2004]
 
 ## Open questions

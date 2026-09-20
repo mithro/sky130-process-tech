@@ -218,20 +218,20 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Process stack diagram* — "TOPOX K=3.9" 0.09 µm (top)
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "TOPOX K=3.9" 0.09 µm (top)
   and 0.070 µm (sidewall); "TOPNIT K=7.5" 0.54 µm and 0.4223 µm;
   "glass cut"; "PI1 K=2.94"; `metal5` 1.26 µm.[^pdk-04]
-* SkyWater PDK, *Layers Reference* — `pad` 76:20 "Passivation cut
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `pad` 76:20 "Passivation cut
   (opening over pads)"; `target` 76:44 "Metal fuse target".[^pdk-06]
-* SkyWater PDK, *Periphery rules* — m5.1, m5.2; mf.1–mf.24 and the MM4
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — m5.1, m5.2; mf.1–mf.24 and the MM4
   metal-fuse note.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — Laser Fuse Criteria; polyimide
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — Laser Fuse Criteria; polyimide
   enclosure of fuses.[^pdk-03]
 * Cypress, QTP 014807 (2005) and QTP 123907/132302/132301 (2014) — "1000Å
   TEOS / 9000Å PECVD Nitride", "1000A TEOS/9000A Si3N4"; 0 % free
   phosphorus.[^cyp-qtp-014807][^cyp-qtp-123907]
-* Cypress, QTP 113005 (2013) — "7000 +/- 2000A Nitride".[^cyp-qtp-113005]
-* SkyWater, *Facilities & Capabilities* — PECVD TEOS and silane oxide
+* [Cypress, QTP 113005 (2013)](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — "7000 +/- 2000A Nitride".[^cyp-qtp-113005]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — PECVD TEOS and silane oxide
   entries.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
@@ -240,37 +240,37 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
   orthosilicate*.[^wiki-pecvd][^wiki-teos]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — back-end
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — back-end
   dielectrics and passivation.[^txt-05]
 * Novellus company history; Applied Materials 10-K — the 200 mm PECVD
   platforms.[^novellus-history][^amat-10k]
 
 ### Deep dive
 
-* Sinha et al., *J. Electrochem. Soc.* 1978 —
+* [Sinha et al., *J. Electrochem. Soc.* 1978](<https://doi.org/10.1149/1.2131509>) —
   reactive-plasma Si–N films for MOS-LSI passivation, the film this
   oxide lies under.[^sinha-1978]
-* Lanford and Rand, *J. Appl. Phys.* 1978 — hydrogen in plasma nitride
+* [Lanford and Rand, *J. Appl. Phys.* 1978](<https://doi.org/10.1063/1.325095>) — hydrogen in plasma nitride
   and in a plasma oxide deposited at 300 °C.[^lanford-1978]
-* Adams et al., *J. Electrochem. Soc.* 1981 — characterisation of
+* [Adams et al., *J. Electrochem. Soc.* 1981](<https://doi.org/10.1149/1.2127680>) — characterisation of
   plasma-deposited silicon dioxide.[^adams-1981-pecvd]
-* Raupp, Cale and Hey, *JVST B* 1992 — PECVD TEOS oxide
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — PECVD TEOS oxide
   kinetics.[^raupp-1992]
-* Chapple-Sokol, Tierney and Batey (IBM), MRS 1989 — RF-power dependence
+* [Chapple-Sokol, Tierney and Batey (IBM), MRS 1989](<https://doi.org/10.1557/PROC-165-113>) — RF-power dependence
   of PECVD oxide properties.[^chapple-sokol-1989]
-* Mani and Saif, *Thin Solid Films* 2007 — stress change from hydrogen
+* [Mani and Saif, *Thin Solid Films* 2007](<https://doi.org/10.1016/j.tsf.2006.08.025>) — stress change from hydrogen
   evolution in plasma oxide.[^mani-2007]
-* Yue, Funsten and Taylor, IRPS 1985 — stress voids in aluminium
+* [Yue, Funsten and Taylor, IRPS 1985](<https://doi.org/10.1109/IRPS.1985.362087>) — stress voids in aluminium
   interconnects, with the void density tied to the compressive stress
   of the passivation film.[^yue-1985]
-* Chaudhari, *J. Appl. Phys.* 1974 — the stress-relaxation model of
+* [Chaudhari, *J. Appl. Phys.* 1974](<https://doi.org/10.1063/1.1663054>) — the stress-relaxation model of
   hillock growth in thin films (developed for lead and tin), the
   mechanism invoked for aluminium here.[^chaudhari-1974]
-* Paulson and Kirk, IRPS 1974 — why the glass next to aluminium is
+* [Paulson and Kirk, IRPS 1974](<https://doi.org/10.1109/IRPS.1974.362644>) — why the glass next to aluminium is
   undoped.[^paulson-1974]
-* Bothra, McKay and Jhota (Zeevo), US 6,492,716 — a seal ring under a
+* [Bothra, McKay and Jhota (Zeevo), US 6,492,716](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6492716>) — a seal ring under a
   passivation oxide and nitride.[^pat-sealring-zeevo]
-* Cheung, P2ID 2000 — charging during plasma-enhanced dielectric
+* [Cheung, P2ID 2000](<https://doi.org/10.1109/PPID.2000.870658>) — charging during plasma-enhanced dielectric
   deposition.[^cheung-2000]
 
 ## Open questions

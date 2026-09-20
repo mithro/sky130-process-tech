@@ -186,54 +186,54 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — GaSonics PEP, Iridia and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — GaSonics PEP, Iridia and
   Mattson Aspen II with gases and temperatures; Akrion Gamma; DNS and
   FSI benches.[^skw-01]
-* LinkedIn, SkyWater listings — the defect-metrology tool list
+* [LinkedIn, SkyWater listings](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology tool list
   "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — popping and
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — popping and
   the low-temperature first ash.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — the carbonised
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — the carbonised
   crust.[^pat-strip-tsmc]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing and implanted
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing and implanted
   resist.[^wiki-ash]
 * Wikipedia, *RCA clean* and *Piranha solution*.[^wiki-rca][^wiki-piranha]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 —
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) —
   implanted-resist stripping.[^txt-05]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — source/drain
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — source/drain
   doses and pre-anneal cleaning.[^txt-01]
-* Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
-  Removal* — the tool class in a user guide.[^snf-strip]
+* [Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
+  Removal*](<https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal>) — the tool class in a user guide.[^snf-strip]
 
 ### Deep dive
 
-* Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of
+* [Fujimura et al. (Fujitsu), *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer of
   high-dose implanted resist and a two-step ashing process
   (abstract).[^fujimura-1989]
-* Fujimura et al. (Fujitsu), *JJAP* 1990 — nitrogen in downstream
+* [Fujimura et al. (Fujitsu), *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — nitrogen in downstream
   ashing.[^fujimura-1990]
-* Fujimura et al. (Fujitsu), *JVST B* 1994 — O₂+H₂O ashing without
+* [Fujimura et al. (Fujitsu), *JVST B* 1994](<https://doi.org/10.1116/1.587773>) — O₂+H₂O ashing without
   sodium contamination.[^fujimura-1994]
-* Roche, Michaud and Bruel, *MRS Proc.* 1985 — resist outgassing
+* [Roche, Michaud and Bruel, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-45-203>) — resist outgassing
   during implantation.[^roche-1985]
-* Horsky, IIT 1998 — outgassing in high-current implanters.[^horsky-1998]
-* Lukaszek, Reno and Bammi, IIT 1996 — what a high-current arsenic
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — outgassing in high-current implanters.[^horsky-1998]
+* [Lukaszek, Reno and Bammi, IIT 1996](<https://doi.org/10.1109/IIT.1996.586135>) — what a high-current arsenic
   implant does to a resist-covered wafer.[^lukaszek-1996]
-* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 — liquid
+* [Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006](<https://doi.org/10.1149/1.2195884>) — liquid
   formulations for high-dose implanted resist.[^visintin-2006]
-* Kern, *J. Electrochem. Soc.* 1990 — the RCA clean.[^kern-1990]
-* Kern, *Handbook of Silicon Wafer Cleaning Technology* — the
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the RCA clean.[^kern-1990]
+* [Kern, *Handbook of Silicon Wafer Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — the
   handbook overview of cleaning, including pre-anneal
   cleans.[^kern-handbook]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet
   cleaning.[^ohmi-1996]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — post-implant stripping.[^reinhardt-2010]
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — post-implant stripping.[^reinhardt-2010]
 * Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358; Chan, Chiu and
   Tao (TSMC), US 2004/0214448; Nakayama et al. (ULVAC), US 5,795,831
   — three approaches to stripping implanted

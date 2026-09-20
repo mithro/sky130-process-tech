@@ -170,21 +170,21 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — "a separate implant is used to set
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — "a separate implant is used to set
   the sheet resistance to 2000 ohm/sq"; specifications
   "TBD".[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — UHR poly
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — UHR poly
   2000 Ω/sq.[^pdk-08]
-* SkyWater PDK, *Layers Reference* — `urpm` 79:20.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — poly 0.18 µm.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — `rpm` geometry.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — the 8250 and GSD implanters
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `urpm` 79:20.[^pdk-06]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — poly 0.18 µm.[^pdk-03]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `rpm` geometry.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the 8250 and GSD implanters
   with species and dose ranges.[^skw-01]
-* Semiconductor Online, 8250HT — the medium-current class.[^axcelis-8250]
-* SKY130 raw-data repository, test-tile pad documentation — the 2 kΩ/sq
+* [Semiconductor Online, 8250HT](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the medium-current class.[^axcelis-8250]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the 2 kΩ/sq
   poly-resistor and van der Pauw structures of the published test
   tile.[^raw-data-testtile-pads]
-* SKY130 raw-data repository, measured data — I–V sweeps of the 2 kΩ/sq
+* [SKY130 raw-data repository, measured data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — I–V sweeps of the 2 kΩ/sq
   structures; the sheet resistance and width offset quoted here are our
   extraction.[^raw-data-passives]
 
@@ -192,41 +192,41 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 * Wikipedia, *Ion implantation*, *Boron trifluoride*, *Sheet
   resistance*.[^wiki-implant][^wiki-bf3][^wiki-rs]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation.[^txt-02]
-* Kamins, *Polycrystalline Silicon for Integrated Circuits and
-  Displays* — resistivity of lightly doped poly.[^kamins-1998]
+* [Kamins, *Polycrystalline Silicon for Integrated Circuits and
+  Displays*](<https://doi.org/10.1007/978-1-4615-5577-3>) — resistivity of lightly doped poly.[^kamins-1998]
 
 ### Deep dive
 
-* Seto, *J. Appl. Phys.* 1975 — grain-boundary trapping: the physics
+* [Seto, *J. Appl. Phys.* 1975](<https://doi.org/10.1063/1.321593>) — grain-boundary trapping: the physics
   of a lightly doped poly resistor.[^seto-1975]
-* Mandurah, Saraswat and Kamins, *IEEE TED* 1981 — dopant segregation
+* [Mandurah, Saraswat and Kamins, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20504>) — dopant segregation
   to grain boundaries, which removes part of a light dose from
   conduction.[^mandurah-1981]
-* Kamins, Manoliu and Tucker, *J. Appl. Phys.* 1972 — grain-boundary
+* [Kamins, Manoliu and Tucker, *J. Appl. Phys.* 1972](<https://doi.org/10.1063/1.1660842>) — grain-boundary
   diffusion, which spreads the dose.[^kamins-1972]
-* Lu, Gerzberg, Lu and Meindl, *IEEE TED* 1981 — optimisation of poly
+* [Lu, Gerzberg, Lu and Meindl, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20437>) — optimisation of poly
   resistors, including the high-value regime.[^lu-1981]
-* Lane and Wrixon, *IEEE TED* 1989 — analogue poly resistor
+* [Lane and Wrixon, *IEEE TED* 1989](<https://doi.org/10.1109/16.22479>) — analogue poly resistor
   design.[^lane-1989]
-* Ashuah, Shauly and Shacham-Diamand, *IEEE TSM* 2009 — TCR
+* [Ashuah, Shauly and Shacham-Diamand, *IEEE TSM* 2009](<https://doi.org/10.1109/TSM.2009.2017655>) — TCR
   engineering of boron-implanted poly resistors by
   co-implantation.[^ashuah-2009]
-* Chen et al., *Solid-State Electronics* 2000 — voltage coefficient
+* [Chen et al., *Solid-State Electronics* 2000](<https://doi.org/10.1016/S0038-1101(00)00138-6>) — voltage coefficient
   of poly resistors.[^chen-2000]
-* Tsang et al., *IEEE TSM* 2014 — variation of high-value poly
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — variation of high-value poly
   resistors in manufacturing.[^tsang-2014]
-* Wright et al., *J. Vac. Sci. Technol. B* 2010 — rf-sputtered
+* [Wright et al., *J. Vac. Sci. Technol. B* 2010](<https://doi.org/10.1116/1.3466531>) — rf-sputtered
   Cr–Si–B–SiO₂/Al₂O₃ thin-film resistors reaching 20 kΩ/sq at
   <200 ppm/°C: the non-poly alternative route to a
   high-sheet-resistance, low-TCR film.[^wright-2010]
-* Hook et al., *IEEE TED* 2003 — straggle at resist edges.[^hook-2003]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 —
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — straggle at resist edges.[^hook-2003]
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) —
   thermal-wave dose monitoring.[^smith-1985]
-* Current, *Mater. Sci. Semicond. Process.* 2017 — implantation review
+* [Current, *Mater. Sci. Semicond. Process.* 2017](<https://doi.org/10.1016/j.mssp.2016.10.045>) — implantation review
   with dose control.[^current-2017]
-* ITRS 2001, *Front End Processes* — doping requirements.[^itrs-01]
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — doping requirements.[^itrs-01]
 
 ## Open questions
 

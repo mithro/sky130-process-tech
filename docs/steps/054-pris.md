@@ -147,51 +147,51 @@ chemical oxide is thin and will be buried under the
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — ashers, gases, temperatures;
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ashers, gases, temperatures;
   wet benches.[^skw-01]
-* LinkedIn, SkyWater *Defect Technician 2* posting — the
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the
   defect-metrology tool list read as KLA-Tencor AIT.[^job-06]
 * SkyWater, Form S-1 and Form 10-K — chemical suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the cold first
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the cold first
   ash step.[^pat-strip-mosel]
 
 ### High-level understanding
 
 * Wikipedia, *Plasma ashing* and *RCA clean*.[^wiki-ash][^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   stripping and cleaning.[^txt-02]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology* — the standard handbook.[^reinhardt-2008]
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>) — the standard handbook.[^reinhardt-2008]
 
 ### Deep dive
 
-* Orvek and Huffman, *NIM B* 1985 — carbonised-layer formation in
+* [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — carbonised-layer formation in
   implanted resist.[^orvek-1985]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — the carbonised layer
+* [Fujimura et al., *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer
   of high-dose implanted resist, the residues of O₂ ashing and a
   two-step ashing process (abstract).[^fujimura-1989]
-* Fujimura et al., *J. Vac. Sci. Technol. B* 1991 — O₂ + H₂O downstream
+* [Fujimura et al., *J. Vac. Sci. Technol. B* 1991](<https://doi.org/10.1116/1.585575>) — O₂ + H₂O downstream
   stripping, the water-vapour chemistry.[^fujimura-1991]
-* Fujimura et al., *J. Vac. Sci. Technol. B* 1994 — sodium-free
+* [Fujimura et al., *J. Vac. Sci. Technol. B* 1994](<https://doi.org/10.1116/1.587773>) — sodium-free
   ashing, why downstream O₂/H₂O is preferred before a gate
   cap.[^fujimura-1994]
-* Roche, Michaud and Bruel, *MRS Proc.* 1985 — resist outgassing
+* [Roche, Michaud and Bruel, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-45-203>) — resist outgassing
   during implantation, the origin of the crust.[^roche-1985]
-* Lee, *Electrochem. Solid-State Lett.* 1999 — silicon etch rate in
+* [Lee, *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390773>) — silicon etch rate in
   SC-1, the limit on cleaning bare poly.[^lee-kt-1999]
-* Kern, *J. Electrochem. Soc.* 1990 — evolution of wafer
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — evolution of wafer
   cleaning.[^kern-1990]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet
   cleaning.[^ohmi-1996]
-* Kern, "Overview and Evolution of Silicon Wafer Cleaning Technology"
+* [Kern, "Overview and Evolution of Silicon Wafer Cleaning Technology"](<https://doi.org/10.1016/b978-081551554-8.50004-5>)
   — the handbook chapter on post-implant stripping.[^kern-handbook]
-* Nakayama et al. (ULVAC), US 5,795,831 — cold stripping of implanted
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — cold stripping of implanted
   resist.[^pat-strip-ulvac]
-* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — downstream
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — downstream
   microwave asher design.[^pat-asher-fusion]
-* Wang et al., *J. Electrochem. Soc.* 1997 — fluorine effects after
+* [Wang et al., *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1838075>) — fluorine effects after
   BF₂ implantation, relevant if BF₂ is the resistor species.[^wang-1997]
-* ITRS 2001, *Front End Processes* — surface preparation.[^itrs-01]
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — surface preparation.[^itrs-01]
 
 ## Open questions
 

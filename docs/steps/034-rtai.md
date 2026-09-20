@@ -215,15 +215,15 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Ag Heatpulse 8808 NH3, Ar,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Ag Heatpulse 8808 NH3, Ar,
   N2, O2, up to 1200C"; Aviza furnaces, Ar/N₂ anneal to
   1150 °C.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page —
+* [SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) —
   temperature range, ramp rates, lamp banks and applications.[^ag-8800]
-* SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
-  Specifications* (PDF) — operating specifications and facility tables
+* [SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
+  Specifications* (PDF)](<https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>) — operating specifications and facility tables
   of the Heatpulse 4100 and 8108.[^ag-8108]
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
@@ -233,40 +233,40 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Rapid thermal processing* — lamp heating, seconds above
+* [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>) — lamp heating, seconds above
   1000 °C, in-situ pyrometry.[^wiki-rtp]
-* Wikipedia, *Furnace anneal* — furnace anneals being supplanted by
+* [Wikipedia, *Furnace anneal*](<https://en.wikipedia.org/wiki/Diffusion_furnace>) — furnace anneals being supplanted by
   RTA.[^wiki-furnace]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 2 (CMOS
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 2 (CMOS
   well formation) and ch. 8 (ion implantation).[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — RTP.[^txt-05]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — RTP.[^txt-05]
 
 ### Deep dive
 
-* Fair (ed.), *Rapid Thermal Processing: Science and Technology* — the
+* [Fair (ed.), *Rapid Thermal Processing: Science and Technology*](<https://doi.org/10.1016/b978-0-12-247690-7.50009-3>) — the
   chapter on junction formation by rapid thermal annealing.[^txt-10]
-* ITRS 2001, *Front End Processes* — Table 51, retrograde channel
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51, retrograde channel
   depth.[^itrs-01]
-* Lee and Son (Hyundai/Hynix), US 6,455,402 — RTA 1000 °C, 10 s, then
+* [Lee and Son (Hyundai/Hynix), US 6,455,402](<https://patents.google.com/patent/US6455402B2/en>) — RTA 1000 °C, 10 s, then
   gate oxidation.[^pat-well-hynix]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — a well
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — a well
   anneal at 900 °C for 30 min in nitrogen, tool not named.[^pat-vt-lsi]
-* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the physical
+* [Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — the physical
   mechanisms of transient enhanced diffusion.[^stolk-1997]
-* Roozeboom and Parekh (Philips), *J. Vac. Sci. Technol. B* 1990 — a
+* [Roozeboom and Parekh (Philips), *J. Vac. Sci. Technol. B* 1990](<https://doi.org/10.1116/1.584902>) — a
   review of RTP systems with emphasis on temperature
   control.[^roozeboom-1990]
-* Fiory, *J. Electron. Mater.* 2002 — RTP developments of the 130 nm
+* [Fiory, *J. Electron. Mater.* 2002](<https://doi.org/10.1007/s11664-002-0031-9>) — RTP developments of the 130 nm
   era.[^fiory-2002]
-* Michel et al. (IBM), *Appl. Phys. Lett.* 1987 — the first report of
+* [Michel et al. (IBM), *Appl. Phys. Lett.* 1987](<https://doi.org/10.1063/1.98160>) — the first report of
   anomalous boron diffusion under rapid annealing.[^michel-1987]
-* Eaglesham et al. (AT&T), *Appl. Phys. Lett.* 1994 — the interstitial
+* [Eaglesham et al. (AT&T), *Appl. Phys. Lett.* 1994](<https://doi.org/10.1063/1.112725>) — the interstitial
   source behind transient enhanced boron diffusion.[^eaglesham-1994]
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — a lamp-heated
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — a lamp-heated
   single-wafer RTP chamber design.[^pat-rtp-amat]
-* Sheets (Tamarack Scientific), US 4,649,261 — an early lamp-heating
+* [Sheets (Tamarack Scientific), US 4,649,261](<https://patents.google.com/patent/US4649261A/en>) — an early lamp-heating
   apparatus for wafer annealing.[^pat-rtp-tamarack]
-* Taur et al., *Proc. IEEE* 1997 — why retrograde channel profiles
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — why retrograde channel profiles
   demand short anneals.[^taur-1997]
 
 ## Open questions

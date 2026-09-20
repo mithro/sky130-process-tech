@@ -219,19 +219,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Layers Reference* — `tunm` 80:20 "SONOS device tunnel
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `tunm` 80:20 "SONOS device tunnel
   implant".[^pdk-06]
-* SkyWater PDK, *Periphery rules* — `lvtn` blocks the standard {term}`Vt`
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `lvtn` blocks the standard {term}`Vt`
   implants from "SONOS FETs".[^pdk-periph]
-* SkyWater PDK, *Device Details* — SONOS cell W/L, programme/erase
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — SONOS cell W/L, programme/erase
   voltages and thresholds.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — the Axcelis 8250 and GSD
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Axcelis 8250 and GSD
   species, dose and tilt ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
+* [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) —
   deeper, heavier channel implants for the control gate.[^cyp-25]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — energy
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — energy
   and current range of the tool class.[^axcelis-8250]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -244,37 +244,37 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Short-channel effect* — depletion-region overlap and
+* [Wikipedia, *Short-channel effect*](<https://en.wikipedia.org/wiki/Short-channel_effect>) — depletion-region overlap and
   {term}`DIBL`.[^wiki-sce]
-* Wikipedia, *Ion implantation* — energies, tilt and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, tilt and
   channelling.[^wiki-implant]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — the submicron
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — the submicron
   MOSFET: punch-through and channel engineering.[^txt-04]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
   implantation chapter.[^txt-02]
 
 ### Deep dive
 
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — chained
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — chained
   low-energy punch-through barriers with explicit energies and
   doses.[^pat-vt-lsi]
-* Hori and Kurimoto, *IEEE EDL* 1988 — the large-tilt-angle implanted
+* [Hori and Kurimoto, *IEEE EDL* 1988](<https://doi.org/10.1109/55.20422>) — the large-tilt-angle implanted
   punch-through stopper (LATIPS).[^hori-1988]
-* Lin et al., VLSI-TSA 1997 — optimising a tilt-implanted
+* [Lin et al., VLSI-TSA 1997](<https://doi.org/10.1109/VTSA.1997.614915>) — optimising a tilt-implanted
   punch-through stopper in quarter-micron MOSFETs.[^lin-1997]
-* Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
+* [Shahidi et al. (IBM), *IEEE EDL* 1993](<https://doi.org/10.1109/55.225595>) — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
-* Huang et al., *IEEE TED* 2000 — an indium super-steep retrograde
+* [Huang et al., *IEEE TED* 2000](<https://doi.org/10.1109/16.887025>) — an indium super-steep retrograde
   channel at 80 nm gate length.[^huang-2000]
-* Chaudhry et al. (Bell Labs), IEDM 1997 — suppressing the reverse
+* [Chaudhry et al. (Bell Labs), IEDM 1997](<https://doi.org/10.1109/IEDM.1997.650474>) — suppressing the reverse
   short-channel effect with high-energy implantation.[^chaudhry-1997]
-* Taur et al., *Proc. IEEE* 1997 — why retrograde channels and
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — why retrograde channels and
   punch-through control matter as gates shrink.[^taur-1997]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — the
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — the
   short-channel and punch-through physics.[^taur-2009]
-* Hook et al., *IEEE TED* 2003 — threshold shifts near implant-mask
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — threshold shifts near implant-mask
   edges, relevant to the 0.095 µm `tunm` clearances.[^hook-2003]
-* ITRS 2001, *Front End Processes* — retrograde channel depth
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — retrograde channel depth
   targets.[^itrs-01]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read

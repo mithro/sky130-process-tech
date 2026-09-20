@@ -214,79 +214,79 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "200 mm equipment", the
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "200 mm equipment", the
   Lumonics scribe and the DNS / FSI pre-clean benches.[^skw-01]
-* SkyWater, *Mixed-Signal CMOS & ROIC* platform table — "S130 … 200mm …
+* [SkyWater, *Mixed-Signal CMOS & ROIC* platform table](<https://www.skywatertechnology.com/cmos/>) — "S130 … 200mm …
   Substrates: Bulk".[^skw-02]
-* SkyWater, Form S-1 (2021) — the "Raw materials." run-in paragraph
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — the "Raw materials." run-in paragraph
   naming the wafer, gas and chemical suppliers.[^sec-01]
-* SkyWater, Form 10-K for fiscal 2023 — the updated supplier
+* [SkyWater, Form 10-K for fiscal 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — the updated supplier
   list.[^sec-02]
-* Cypress, PIN152804 (2015) — GlobalWafers qualified for the
+* [Cypress, PIN152804 (2015)](<https://media.futureelectronics.com/PCN/45887_SPCN.PDF>) — GlobalWafers qualified for the
   "130nm C8/R8/S8/L8" families at Fab 4.[^cyp-06]
-* Cypress, Form 10-Q/A for Q1 2003 — Fab 4 as an "eight-inch wafer
+* [Cypress, Form 10-Q/A for Q1 2003](<https://www.sec.gov/Archives/edgar/data/0000791915/000120677403000508/d12840.htm>) — Fab 4 as an "eight-inch wafer
   production facility".[^cyp-07]
-* SkyWater PDK, process stack diagram — the "p-substrate"
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the "p-substrate"
   label.[^pdk-04]
-* SkyWater PDK, *Device Details* and the `nfet_01v8` cross-section
+* SkyWater PDK, [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) and the `nfet_01v8` cross-section
   drawing — "P-substrate", "Deep N-well", and the substrate-collector
   PNP.[^pdk-07]
-* SkyWater PDK, *Criteria & Assumptions* — the "background
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the "background
   concentration" among the n-well entries (variable `NWBCONC`) of its
   basic-parameters table.[^pdk-03]
-* SKY130 raw-data repository — I–V sweeps of the 20 V zero-Vt NMOS on
+* [SKY130 raw-data repository](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — I–V sweeps of the 20 V zero-Vt NMOS on
   the test tile, from which the effective body doping quoted in the
   open questions is our extraction.[^raw-data-hv-mosfets]
-* google/skywater-pdk README — the device and option list built on the
+* [google/skywater-pdk README](<https://github.com/google/skywater-pdk>) — the device and option list built on the
   one substrate.[^pdk-10]
-* LinkedIn, SkyWater Defect Technician 2 posting — the
+* [LinkedIn, SkyWater Defect Technician 2 posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the
   "SEM/AIT/KLA/SP1/EV300/1X" tool list.[^job-06]
 
 ### High-level understanding
 
-* Wikipedia, *Wafer (electronics)* — 200 mm wafer thickness and the
+* [Wikipedia, *Wafer (electronics)*](<https://en.wikipedia.org/wiki/Wafer_(electronics)>) — 200 mm wafer thickness and the
   notch convention.[^wiki-wafer]
-* Wikipedia, *RCA clean* — SC-1 and SC-2 compositions and
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2 compositions and
   temperatures.[^wiki-rca]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — chapters on
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — chapters on
   crystal growth and the CMOS process flow.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 2 — CMOS substrate
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 2](<https://openlibrary.org/isbn/9780961672140>) — CMOS substrate
   choice and latch-up.[^txt-03]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — wafer
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — wafer
   specification and incoming inspection.[^txt-07]
 
 ### Deep dive
 
-* ITRS 2001, *Front End Processes* — the "Starting Materials" section
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — the "Starting Materials" section
   and its technology-requirements table: polished versus epitaxial,
   200 mm through the 130 nm node, defect and contamination
   limits.[^itrs-01]
-* SEMI M1, *Specification for Polished Single Crystal Silicon Wafers* —
+* [SEMI M1, *Specification for Polished Single Crystal Silicon Wafers*](<https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>) —
   the industry standard that defines the diameter, thickness, notch,
   flatness and resistivity classes a fab orders against.[^semi-m1]
-* Shimura, *Semiconductor Silicon Crystal Technology* — the standard
+* [Shimura, *Semiconductor Silicon Crystal Technology*](<https://openlibrary.org/isbn/9780126400458>) — the standard
   monograph on CZ growth, dopant and oxygen incorporation, and wafer
   characterisation.[^shimura-1989]
-* Zulehner, *J. Crystal Growth* 1983 — a review of Czochralski silicon
+* [Zulehner, *J. Crystal Growth* 1983](<https://doi.org/10.1016/0022-0248(83)90051-9>) — a review of Czochralski silicon
   growth from the wafer-maker's side: melt, pulling, dopant and oxygen
   control.[^zulehner-1983]
-* Falster and Voronkov, *Mater. Sci. Eng. B* 2000 — how vacancy- and
+* [Falster and Voronkov, *Mater. Sci. Eng. B* 2000](<https://doi.org/10.1016/S0921-5107(99)00439-0>) — how vacancy- and
   interstitial-rich growth regimes are engineered to control
   crystal-originated defects in polished wafers.[^falster-2000]
-* Ryuta et al., *Jpn. J. Appl. Phys.* 1990 — the paper that identified
+* [Ryuta et al., *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.L1947>) — the paper that identified
   "crystal-originated singularities" (COPs) revealed by SC-1 cleaning,
   the defect class that gate-oxide yield depends on.[^ryuta-1990]
-* Borghesi et al., *J. Appl. Phys.* 1995 — a review of oxygen
+* [Borghesi et al., *J. Appl. Phys.* 1995](<https://doi.org/10.1063/1.359479>) — a review of oxygen
   precipitation in CZ silicon, the basis of internal {term}`gettering` and a
   driver of wafer warpage through the thermal budget.[^borghesi-1995]
-* Kang and Schroder, *J. Appl. Phys.* 1989 — gettering experiments in
+* [Kang and Schroder, *J. Appl. Phys.* 1989](<https://doi.org/10.1063/1.342714>) — gettering experiments in
   which phosphorus diffusion getters Au, Cu, Fe and Ni while oxidation
   and oxynitridation do not, with a segregation model of the
   mechanism.[^kang-1989]
-* Troutman, *Latchup in CMOS Technology* — the monograph on why
+* [Troutman, *Latchup in CMOS Technology*](<https://doi.org/10.1007/978-1-4757-1887-4>) — the monograph on why
   substrate resistance matters and how epitaxial substrates, guard
   rings and wells suppress latch-up.[^troutman-1986]
-* Kern, *J. Electrochem. Soc.* 1990 — the history and chemistry of the
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the history and chemistry of the
   RCA clean used as the incoming-wafer clean.[^kern-1990]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read

@@ -334,22 +334,22 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — MiM construction, `CMIMA`,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — MiM construction, `CMIMA`,
   `CMIMP`, `RSCAPM`; the `cap_mim` cross-section with "CAPILD" drawn
   exactly under "CAPM" on a wider "M3 (plate 1)".[^pdk-07]
-* SkyWater PDK, *Layers Reference* — `capm` 89:44.[^pdk-06]
-* SkyWater PDK, *Criteria & Assumptions* — `CAPMCD` 2 µm,
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `capm` 89:44.[^pdk-06]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `CAPMCD` 2 µm,
   `CAPMCDSP` 0.84 µm.[^pdk-03]
 * Cypress, QTP 113005 and QTP 123907 — the two candidate caps of the
   metal beneath the
   dielectric.[^cyp-qtp-113005][^cyp-qtp-123907]
-* SkyWater, *Facilities & Capabilities* — Lam 9600 and 2300 Versys
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Lam 9600 and 2300 Versys
   with TiW; ashers; solvents.[^skw-01]
-* Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
-* SKY130 raw-data repository, test-tile pad documentation — the MiM
+* [Lam Research, Form 10-K (2003)](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the 9600 and 2300 lines.[^lam-10k]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the MiM
   capacitor, plate linewidth, sheet-resistance and serpentine/comb
   structures of the published test tile.[^raw-data-testtile-pads]
-* SKY130 raw-data repository, measured data — C–V sweeps of those
+* [SKY130 raw-data repository, measured data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — C–V sweeps of those
   capacitors; the values quoted here are our
   extraction.[^raw-data-passives]
 
@@ -361,33 +361,33 @@ Status and expiry are estimates from public records and are not legal advice.
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*, *Dry etching*.[^wiki-rie][^wiki-dry-etch]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — refractory
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — refractory
   metal etching in the back end.[^txt-05]
-* Nojiri, *Dry Etching Technology for Semiconductors* — metal etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — metal etch
   chemistry, endpoint and charging damage.[^nojiri-2015]
 
 ### Deep dive
 
-* Turban, Coulon and Mutsukura, *Thin Solid Films* 1989 — the
+* [Turban, Coulon and Mutsukura, *Thin Solid Films* 1989](<https://doi.org/10.1016/0040-6090(89)90102-8>) — the
   mechanism of SF₆ reactive ion etching of tungsten.[^turban-1989]
-* Petri, Henry and Sadeghi, *J. Appl. Phys.* 1992 — tungsten etching
+* [Petri, Henry and Sadeghi, *J. Appl. Phys.* 1992](<https://doi.org/10.1063/1.351565>) — tungsten etching
   mechanisms in SF₆ plasma.[^petri-1992]
-* Liu and Kuo, *J. Electrochem. Soc.* 2007 — reactive ion etching of
+* [Liu and Kuo, *J. Electrochem. Soc.* 2007](<https://doi.org/10.1149/1.2737631>) — reactive ion etching of
   titanium–tungsten films.[^liu-2007-tiw]
-* Fischl and Hess, *J. Electrochem. Soc.* 1987 — tungsten in chlorine
+* [Fischl and Hess, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100868>) — tungsten in chlorine
   discharges, the other halogen.[^fischl-1987]
 * Flamm and Donnelly, 1981, and Winters and Coburn, 1992 — the
   surface chemistry behind metal-to-dielectric selectivity.[^flamm-1981][^winters-1992]
 * Hwang and Giapis, *JVST B* 1997; Fang and McVittie, *IEEE EDL*
   1992; Cheung, P2ID 2000 — plasma charging and thin-dielectric
   damage.[^hwang-1997][^fang-1992][^cheung-2000]
-* Wodecki, SPIE 1999 — emission endpoint and open area.[^wodecki-1999]
-* Danzl and McLaurin, IEMT 1997 — peroxide etching of TiW, the wet
+* [Wodecki, SPIE 1999](<https://doi.org/10.1117/12.361313>) — emission endpoint and open area.[^wodecki-1999]
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — peroxide etching of TiW, the wet
   chemistry this etch's clean must avoid.[^danzl-1997]
-* Olewine and Saiz (Philips), US 6,717,193 — a multi-rate etch of the
+* [Olewine and Saiz (Philips), US 6,717,193](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>) — a multi-rate etch of the
   top electrode and insulator that slows near their interface and
   stops close to the bottom electrode's TiN ARC.[^pat-mim-philips]
-* Kar-Roy and Racanelli (Newport Fab), US 6,430,028 — etching plate
+* [Kar-Roy and Racanelli (Newport Fab), US 6,430,028](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>) — etching plate
   and dielectric together and spacering the edge.[^pat-mim-newportfab]
 * Ogle (Lam Research), US 4,948,458, and Yin et al. (Applied
   Materials), US 5,540,824 — the two high-density metal-etch

@@ -207,58 +207,58 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — S/D junction depth
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — S/D junction depth
   entries; implant angle "High current" 0°; "poly cap after SPE"
   0.2 µm.[^pdk-03]
-* SkyWater PDK, *Device Details* — NMOS cross-section with "N+" and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — NMOS cross-section with "N+" and
   "N−" regions; NPN, PNP, diode and `res_generic_nd`
   descriptions; `RSN` and `RSNH` e-test limits.[^pdk-07]
 * SKY130 raw-data repository — two-terminal sweeps of the test tile's
   N⁺ diffusion resistors and the pad list that describes them; the
   sheet resistances quoted here are our
   extraction.[^raw-data-passives][^raw-data-testtile-pads]
-* SkyWater PDK, *Parasitic Layout Extraction* — N-diffusion
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — N-diffusion
   120 000 mΩ/sq.[^pdk-08]
-* SkyWater PDK, *Periphery rules* — rpm.6, nsd.*.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — Axcelis GSD implanters
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — rpm.6, nsd.*.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Axcelis GSD implanters
   with P and As among their species; the 8250's dose range.[^skw-01]
-* Axcelis, GSD Ovation press release — the GSD family.[^axcelis-gsd]
+* [Axcelis, GSD Ovation press release](<https://www.prnewswire.com/news-releases/axcelis-announces-introduction-of-the-gsd-ovation-high-current-and-high-energy-batch-implanters-301412520.html>) — the GSD family.[^axcelis-gsd]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — amorphisation thresholds,
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — amorphisation thresholds,
   channelling.[^wiki-implant]
-* Wikipedia, *Arsine* and *Phosphine* — the source gases.[^wiki-ash3][^wiki-ph3]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — arsenic
+* Wikipedia, [*Arsine*](<https://en.wikipedia.org/wiki/Arsine>) and [*Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>) — the source gases.[^wiki-ash3][^wiki-ph3]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — arsenic
   source/drains, solid-phase epitaxy.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation practice.[^txt-02]
 
 ### Deep dive
 
-* Ogura et al. (IBM), *IEEE TED* 1980, and Tsang et al. (IBM), *IEEE
-  TED* 1982 — the LDD structure and its spacer.[^ogura-1980][^tsang-1982]
-* Ng and Lynch (AT&T), *IEEE TED* 1986 — series resistance.[^ng-1986]
-* Nobili et al., *J. Electrochem. Soc.* 1983 — precipitation as the
+* Ogura et al. (IBM), [*IEEE TED*](<https://doi.org/10.1109/T-ED.1980.20040>) 1980, and Tsang et al. (IBM), [*IEEE
+  TED*](<https://doi.org/10.1109/T-ED.1982.20748>) 1982 — the LDD structure and its spacer.[^ogura-1980][^tsang-1982]
+* [Ng and Lynch (AT&T), *IEEE TED* 1986](<https://doi.org/10.1109/T-ED.1986.22602>) — series resistance.[^ng-1986]
+* [Nobili et al., *J. Electrochem. Soc.* 1983](<https://doi.org/10.1149/1.2119859>) — precipitation as the
   cause of inactive arsenic.[^nobili-1983]
-* Angelucci et al., *J. Electrochem. Soc.* 1985 — arsenic
+* [Angelucci et al., *J. Electrochem. Soc.* 1985](<https://doi.org/10.1149/1.2113654>) — arsenic
   precipitation and diffusivity.[^angelucci-1985]
-* Luning et al. (Stanford), IEDM 1992 — kinetics of arsenic
+* [Luning et al. (Stanford), IEDM 1992](<https://doi.org/10.1109/IEDM.1992.307400>) — kinetics of arsenic
   deactivation.[^luning-1992]
-* Rousseau, Griffin and Plummer (Stanford), *Appl. Phys. Lett.* 1994,
-  and Rousseau et al., *IEEE TED* 1996 — arsenic deactivation as an
+* Rousseau, Griffin and Plummer (Stanford), [*Appl. Phys. Lett.*](<https://doi.org/10.1063/1.112301>) 1994,
+  and Rousseau et al., [*IEEE TED*](<https://doi.org/10.1109/16.485536>) 1996 — arsenic deactivation as an
   interstitial source and its device consequences.[^rousseau-1994][^rousseau-1996]
-* Lee and Lee, *IEEE EDL* 1999 — As/P double-implanted
+* [Lee and Lee, *IEEE EDL* 1999](<https://doi.org/10.1109/55.737568>) — As/P double-implanted
   source/drain.[^lee-1999-edl]
-* Augendre et al. (IMEC), ESSDERC 2001 — As/P co-implantation.[^augendre-2001]
-* Csepregi et al., *J. Appl. Phys.* 1978, and Jeon, Becker and
-  Walser, *MRS Proc.* 1989 — solid-phase epitaxial regrowth and its
+* [Augendre et al. (IMEC), ESSDERC 2001](<https://doi.org/10.1109/ESSDERC.2001.195214>) — As/P co-implantation.[^augendre-2001]
+* Csepregi et al., [*J. Appl. Phys.*](<https://doi.org/10.1063/1.325397>) 1978, and Jeon, Becker and
+  Walser, [*MRS Proc.*](<https://doi.org/10.1557/PROC-157-745>) 1989 — solid-phase epitaxial regrowth and its
   arsenic-concentration dependence.[^csepregi-1978][^jeon-1989]
 * Farhane et al., RTP 2003, and Shibahara et al., *MRS Proc.* 1998 —
   arsenic dose loss during annealing.[^farhane-2003][^shibahara-1998]
-* Krieger et al., *IEEE TED* 1989 — shadowing of tilted arsenic
+* [Krieger et al., *IEEE TED* 1989](<https://doi.org/10.1109/16.43667>) — shadowing of tilted arsenic
   source/drain implants.[^krieger-1989]
-* Jones and Sinclair, IIT 1996 — channelling variation on
+* [Jones and Sinclair, IIT 1996](<https://doi.org/10.1109/IIT.1996.586257>) — channelling variation on
   spinning-disc implanters.[^jones-1996]
 * Lukaszek, Reno and Bammi, IIT 1996; Current et al., IIT 1998; Mehta
   et al., IIT 1996 — charging control during high-current arsenic
@@ -268,7 +268,7 @@ fab (SKY130's recipe is not public):
 * Mezack et al. (Varian), IIT 2000; Current, *JVST A* 1996 and
   *Mater. Sci. Semicond. Process.* 2017 — implanter
   classes.[^mezack-2000][^current-1996][^current-2017]
-* ITRS 2001, *Front End Processes* — junction requirements.[^itrs-01]
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — junction requirements.[^itrs-01]
 
 ## Open questions
 

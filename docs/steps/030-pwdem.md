@@ -198,73 +198,73 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "P-Well Drain Extended,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "P-Well Drain Extended,
   PWDEM".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `pwde` 124:20;
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `pwde` 124:20;
   `pwbm` 19:44; `uhvi` 74:22.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — pwdem.1–pwdem.6.[^pdk-periph]
-* SkyWater PDK, *Device Details* — 20 V NMOS/PMOS, isolated, native and
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — pwdem.1–pwdem.6.[^pdk-periph]
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — 20 V NMOS/PMOS, isolated, native and
   zero-Vt 20 V NMOS; 10/16 V devices.[^pdk-07]
-* SkyWater PDK, *High Voltage Methodology* — DE by lightly doped wells;
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — DE by lightly doped wells;
   110 Å oxide; channel lengths; poly/drift overlap rule.[^pdk-hv]
-* google/skywater-pdk repository README — "HV extended-drain NMOS and
+* [google/skywater-pdk repository README](<https://github.com/google/skywater-pdk>) — "HV extended-drain NMOS and
   PMOS".[^pdk-10]
-* SkyWater PDK, *Criteria & Assumptions* — P-well peak
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — P-well peak
   concentration.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
-* SkyWater, *Mixed-Signal CMOS & ROIC* platform table — "20+V,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the site tool list.[^skw-01]
+* [SkyWater, *Mixed-Signal CMOS & ROIC* platform table](<https://www.skywatertechnology.com/cmos/>) — "20+V,
   Drain-Extended CMOS (16V)".[^skw-02]
-* SkyWater, Form S-1 (2021) — photoresist, gas and chemical
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist, gas and chemical
   suppliers.[^sec-01]
-* SKY130 raw-data repository, test-tile pad documentation — the
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the
   drain-extended transistor structures of the published test
   tile.[^raw-data-testtile-pads]
-* SKY130 raw-data repository, measured data — I–V sweeps of the 5 V,
+* [SKY130 raw-data repository, measured data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — I–V sweeps of the 5 V,
   16 V and 20 V transistors on the test tile; the resistances, current
   ratios, thresholds and body-effect coefficients quoted here are our
   extraction.[^raw-data-hv-mosfets]
 
 ### High-level understanding
 
-* Wikipedia, *LDMOS* — drift region formed by implantation.[^wiki-ldmos]
-* Wikipedia, *Photolithography* — 365 nm i-line and CD =
+* [Wikipedia, *LDMOS*](<https://en.wikipedia.org/wiki/LDMOS>) — drift region formed by implantation.[^wiki-ldmos]
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — 365 nm i-line and CD =
   {term}`k₁ <k1>`·λ/{term}`NA`.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
-* MicroChemicals, *Development of photoresists* — practical
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — practical
   develop-process notes, including the 2.38 % TMAH
   developers.[^microchemicals-dev]
 
 ### Deep dive
 
-* Mitros (Texas Instruments), US 6,660,603 — drain-extended MOS built on
+* [Mitros (Texas Instruments), US 6,660,603](<https://patents.google.com/patent/US6660603B2/en>) — drain-extended MOS built on
   the existing wells, with drift-well doses and energies.[^pat-demos-ti]
-* Chidambaram (Texas Instruments), US 2006/0006461 — DE devices "without
+* [Chidambaram (Texas Instruments), US 2006/0006461](<https://patents.google.com/patent/US20060006461A1/en>) — DE devices "without
   the addition of extra masks or processing steps".[^pat-demos-ti2]
-* Mitros et al. (Texas Instruments), *IEEE TED* 2001 — drain-extended
+* [Mitros et al. (Texas Instruments), *IEEE TED* 2001](<https://doi.org/10.1109/16.936703>) — drain-extended
   MOS transistors added to a 0.18 µm logic process.[^mitros-2001]
-* Mai and Rücker (IHP), *Solid-State Electronics* 2011 — DE devices in a
+* [Mai and Rücker (IHP), *Solid-State Electronics* 2011](<https://doi.org/10.1016/j.sse.2011.06.034>) — DE devices in a
   0.13 µm technology.[^mai-2011]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — resist thickness
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — resist thickness
   for keV-hundreds boron.[^pat-well-ibm]
-* Appels and Vaes (Philips), IEDM 1979 — the original RESURF paper: why
+* [Appels and Vaes (Philips), IEDM 1979](<https://doi.org/10.1109/IEDM.1979.189589>) — the original RESURF paper: why
   a thin, lightly doped layer holds off high voltage.[^appels-1979]
-* Ludikhuize (Philips), ISPSD 2000 — a review of RESURF design rules for
+* [Ludikhuize (Philips), ISPSD 2000](<https://doi.org/10.1109/ISPSD.2000.856763>) — a review of RESURF design rules for
   drift regions.[^ludikhuize-2000]
-* Baliga, *Fundamentals of Power Semiconductor Devices* — breakdown,
+* [Baliga, *Fundamentals of Power Semiconductor Devices*](<https://doi.org/10.1007/978-0-387-47314-7>) — breakdown,
   drift-region doping and on-resistance trade-offs.[^baliga-2008]
-* Efland, Tsai and Pendharkar (Texas Instruments), IEDM 1998 — LDMOS
+* [Efland, Tsai and Pendharkar (Texas Instruments), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746447>) — LDMOS
   integration into logic CMOS from the TI group behind the DE
   devices.[^efland-1998]
-* Kwon, Efland, Malhi and Ng (Texas Instruments), US 5,406,110 — a
+* [Kwon, Efland, Malhi and Ng (Texas Instruments), US 5,406,110](<https://patents.google.com/patent/US5406110A/en>) — a
   RESURF lateral DMOS with an implanted drift region.[^pat-resurf-ti]
-* Buffat and Adams (Zilog), US 6,576,405 — thick-resist lithography for
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — thick-resist lithography for
   high-energy implants.[^pat-resist-zilog]
-* Lee et al. (Genus), IIT 1996 — outgassing of thick resists during MeV
+* [Lee et al. (Genus), IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — outgassing of thick resists during MeV
   implantation.[^lee-1996]
 
 ## Open questions

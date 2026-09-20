@@ -241,76 +241,76 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Furnaces are all made by
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Furnaces are all made by
   Aviza"; "LPCVD polysilicon (undoped), both amorphous and
   crystalline".[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — "poly thickness"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "poly thickness"
   0.18 µm.[^pdk-03]
-* SkyWater PDK, process stack diagram — poly 0.18 µm.[^pdk-04]
-* SkyWater PDK, *Layers Reference* — `poly` 66:20 and its gate and
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — poly 0.18 µm.[^pdk-04]
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `poly` 66:20 and its gate and
   resistor purposes.[^pdk-06]
-* SkyWater PDK, *Device Details* — the resistor flavours built in the
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the resistor flavours built in the
   same film.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — poly 48.2 Ω/sq.[^pdk-08]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — poly 48.2 Ω/sq.[^pdk-08]
 * SkyWater, Form S-1 and Form 10-K — gas suppliers.[^sec-01][^sec-02]
 * Moov marketplace, Aviza AVP-8000 listing (weak).[^aviza-avp]
 
 ### High-level understanding
 
-* Wikipedia, *Polycrystalline silicon* — the self-aligned poly gate
+* [Wikipedia, *Polycrystalline silicon*](<https://en.wikipedia.org/wiki/Polycrystalline_silicon>) — the self-aligned poly gate
   and LPCVD deposition.[^wiki-poly]
-* Wikipedia, *Amorphous silicon* — the material as
+* [Wikipedia, *Amorphous silicon*](<https://en.wikipedia.org/wiki/Amorphous_silicon>) — the material as
   deposited.[^wiki-asi]
-* Wikipedia, *Silane* — the precursor and its hazards.[^wiki-silane]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the thin-film
+* [Wikipedia, *Silane*](<https://en.wikipedia.org/wiki/Silane>) — the precursor and its hazards.[^wiki-silane]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the thin-film
   chapter on LPCVD silicon.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   LPCVD polysilicon and furnace practice.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — gate stacks of
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — gate stacks of
   the deep-submicron generations.[^txt-05]
 
 ### Deep dive
 
-* Kamins, *Polycrystalline Silicon for Integrated Circuits and
-  Displays* — the monograph on deposition, structure, doping,
+* [Kamins, *Polycrystalline Silicon for Integrated Circuits and
+  Displays*](<https://doi.org/10.1007/978-1-4615-5577-3>) — the monograph on deposition, structure, doping,
   oxidation and electrical properties of poly films.[^kamins-1998]
-* Kamins, *J. Electrochem. Soc.* 1980 — structure and properties of
+* [Kamins, *J. Electrochem. Soc.* 1980](<https://doi.org/10.1149/1.2129733>) — structure and properties of
   LPCVD silicon films as a function of deposition
   temperature.[^kamins-1980]
-* Harbeke et al., *J. Electrochem. Soc.* 1984 — growth and physical
+* [Harbeke et al., *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115672>) — growth and physical
   properties of LPCVD poly, including the amorphous
   regime.[^harbeke-1984]
-* Voutsas and Hatalis, *J. Electrochem. Soc.* 1992 — the structure of
+* [Voutsas and Hatalis, *J. Electrochem. Soc.* 1992](<https://doi.org/10.1149/1.2221280>) — the structure of
   as-deposited LPCVD films at low temperature and pressure: where the
   amorphous/polycrystalline boundary lies.[^voutsas-1992]
-* Hatalis and Greve, *J. Appl. Phys.* 1988 — large-grain poly from
+* [Hatalis and Greve, *J. Appl. Phys.* 1988](<https://doi.org/10.1063/1.341065>) — large-grain poly from
   low-temperature annealing of LPCVD a-Si.[^hatalis-1988]
-* Kinsbron, Sternheim and Knoell, *Appl. Phys. Lett.* 1983 —
+* [Kinsbron, Sternheim and Knoell, *Appl. Phys. Lett.* 1983](<https://doi.org/10.1063/1.94080>) —
   crystallisation of a-Si films during the deposition itself, the
   hazard that sets the temperature margin.[^kinsbron-1983]
-* Iverson and Reif, *J. Appl. Phys.* 1987 — the temperature dependence
+* [Iverson and Reif, *J. Appl. Phys.* 1987](<https://doi.org/10.1063/1.339591>) — the temperature dependence
   of solid-phase crystallisation kinetics of silicon films on
   SiO₂.[^iverson-1987]
-* Joubert et al., *J. Electrochem. Soc.* 1987 — how deposition pressure
+* [Joubert et al., *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100239>) — how deposition pressure
   changes the structure of LPCVD poly films.[^joubert-1987]
-* Claassen et al., *J. Cryst. Growth* 1982 — silane deposition kinetics
+* [Claassen et al., *J. Cryst. Growth* 1982](<https://doi.org/10.1016/0022-0248(82)90481-X>) — silane deposition kinetics
   in a low-pressure hot-wall reactor.[^claassen-1982]
-* Meyerson and Olbricht, *J. Electrochem. Soc.* 1984 — in-situ
+* [Meyerson and Olbricht, *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115258>) — in-situ
   phosphorus doping of LPCVD poly and its effect on deposition rate,
   the alternative not taken here.[^meyerson-1984]
-* Wu, Lee and Lei, IEDM 1993 — the stacked-amorphous-silicon gate,
+* [Wu, Lee and Lei, IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347341>) — the stacked-amorphous-silicon gate,
   the "non-single" alternative.[^wu-1993]
-* Koda et al., IEDM 1993 — gate-oxide integrity improved by
+* [Koda et al., IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347308>) — gate-oxide integrity improved by
   large-grain poly gates.[^koda-1993]
-* Mandurah, Saraswat and Kamins, *IEEE TED* 1981 — the grain-boundary
+* [Mandurah, Saraswat and Kamins, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20504>) — the grain-boundary
   trapping model of conduction in doped poly.[^mandurah-1981]
-* Kamins, Manoliu and Tucker, *J. Appl. Phys.* 1972 — dopant diffusion
+* [Kamins, Manoliu and Tucker, *J. Appl. Phys.* 1972](<https://doi.org/10.1063/1.1660842>) — dopant diffusion
   along grain boundaries in poly.[^kamins-1972]
-* Arora, Rios and Huang, *IEEE TED* 1995 — modelling poly-gate
+* [Arora, Rios and Huang, *IEEE TED* 1995](<https://doi.org/10.1109/16.381991>) — modelling poly-gate
   depletion and its circuit impact.[^arora-1995]
-* ITRS 2001, *Front End Processes* — gate-electrode requirements
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — gate-electrode requirements
   (depletion, sheet resistance) for the 130 nm node.[^itrs-01]
-* Stanford Nanofabrication Facility, *Tystar LPCVD Tube Training* — a
+* [Stanford Nanofabrication Facility, *Tystar LPCVD Tube Training*](<https://snfguide.stanford.edu/guide/equipment/training/tystar-lpcvd-tube-training>) — a
   university guide to running a hot-wall LPCVD tube.[^snf-lpcvd]
 
 ## Open questions

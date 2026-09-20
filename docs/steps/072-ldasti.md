@@ -171,53 +171,53 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — "N Tip (As)", 7° tip
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "N Tip (As)", 7° tip
   angle.[^pdk-03]
-* SkyWater PDK, *Layers Reference* — `ldntm` "N-tip implant on SONOS
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `ldntm` "N-tip implant on SONOS
   devices".[^pdk-06]
-* SkyWater PDK, *Device Details* — SONOS cell dimensions and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — SONOS cell dimensions and
   programme/erase voltages.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — the Axcelis 8250 and GSD
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Axcelis 8250 and GSD
   species, dose and energy ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   tool class.[^axcelis-8250]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — sources, amorphisation
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — sources, amorphisation
   threshold.[^wiki-implant]
-* Wikipedia, *SONOS* — the cell.[^wiki-sonos]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the cell.[^wiki-sonos]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — implantation
   and junction formation.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD design and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD design and
   doses.[^txt-04]
 
 ### Deep dive
 
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped
   drain.[^ogura-1980]
-* Thompson et al. (Intel), VLSI 1998 — the extension depth/doping
+* [Thompson et al. (Intel), VLSI 1998](<https://doi.org/10.1109/VLSIT.1998.689229>) — the extension depth/doping
   trade-off this implant deliberately takes the other way.[^thompson-1998]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — shallow-junction
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — shallow-junction
   doping, arsenic behaviour and {term}`TED`.[^rev-05]
-* Nobili et al., *J. Electrochem. Soc.* 1983 — arsenic precipitation
+* [Nobili et al., *J. Electrochem. Soc.* 1983](<https://doi.org/10.1149/1.2119859>) — arsenic precipitation
   and deactivation, irrelevant at LDD doses but decisive at logic-tip
   doses.[^nobili-1983]
-* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — transient enhanced
+* [Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — transient enhanced
   diffusion from sub-amorphising implants.[^stolk-1997]
-* White, Adams and Bu, *IEEE Circuits & Devices* 2000 — the SONOS
+* [White, Adams and Bu, *IEEE Circuits & Devices* 2000](<https://doi.org/10.1109/101.857747>) — the SONOS
   cell's operation and reliability.[^pap-01]
-* Eitan et al., *IEEE EDL* 2000 — the NROM cell, for contrast on drain
+* [Eitan et al., *IEEE EDL* 2000](<https://doi.org/10.1109/55.877205>) — the NROM cell, for contrast on drain
   engineering of charge-trapping memories.[^eitan-2000]
-* Tran, McQueen and Kerr (Micron), US 6,759,288 — a lighter LDD on
+* [Tran, McQueen and Kerr (Micron), US 6,759,288](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6759288>) — a lighter LDD on
   selected transistors to reduce junction leakage.[^pat-ldd-micron]
-* Yu (AMD), US 6,521,502 — extension and halo activation by
+* [Yu (AMD), US 6,521,502](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6521502>) — extension and halo activation by
   {term}`solid-phase epitaxy`, for contrast with a non-amorphising tip.[^pat-spe-amd]
-* Chen et al., *Solid-State Electronics* 1995 — shadowing of tilted
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — shadowing of tilted
   implants by neighbouring gates.[^chen-1995]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) — the
   thermal-wave implant monitor.[^smith-1985]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read

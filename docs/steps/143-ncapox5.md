@@ -176,13 +176,13 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater PDK, *Process stack diagram* — "NILD5 K=4.1" with no "_C"
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "NILD5 K=4.1" with no "_C"
   film; met3 and met4 bottom levels; `met3` 0.845 µm.[^pdk-04]
-* SkyWater PDK, *Periphery rules* — via3.1 0.200 µm.[^pdk-periph]
-* SkyWater PDK, *Device Details* — the `cap_mim` cross-section with
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — via3.1 0.200 µm.[^pdk-periph]
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the `cap_mim` cross-section with
   vias landing on "CAPM" and on "M3 (plate 1)", the former labelled
   "Via3".[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and Producer
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD TEOS, C2 and Producer
   – low temp options"; "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — "1000A TEOS" in
   the Fab 4 passivation stack.[^cyp-qtp-123907][^cyp-qtp-014807]
@@ -193,29 +193,29 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
   orthosilicate*.[^wiki-pecvd][^wiki-teos]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — PECVD oxides
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — PECVD oxides
   in the back end.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — ILD stacks,
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ILD stacks,
   CMP and cap layers.[^txt-05]
 
 ### Deep dive
 
 * Boning et al., SPIE 1994, and Chang et al., IEDM 1995 — the ILD
   thickness variation a cap is added to control.[^boning-1994][^chang-1995]
-* Raupp, Cale and Hey, *JVST B* 1992 — PECVD TEOS oxide kinetics.[^raupp-1992]
-* Chapple-Sokol, Tierney and Batey (IBM), MRS 1989 — RF-power
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — PECVD TEOS oxide kinetics.[^raupp-1992]
+* [Chapple-Sokol, Tierney and Batey (IBM), MRS 1989](<https://doi.org/10.1557/PROC-165-113>) — RF-power
   dependence of PECVD oxide properties.[^chapple-sokol-1989]
-* Mani and Saif, *Thin Solid Films* 2007 — stress from hydrogen
+* [Mani and Saif, *Thin Solid Films* 2007](<https://doi.org/10.1016/j.tsf.2006.08.025>) — stress from hydrogen
   evolution in plasma oxide.[^mani-2007]
 * Adams and Capio, 1979, and Becker et al., 1987 — the LPCVD TEOS
   oxides the low-temperature cap cannot use.[^adams-1979][^becker-1987]
 * Devriendt et al. (IMEC), 1998, and Philipossian and Sun, 2009 —
   oxide-CMP defects and the scrub before the cap.[^devriendt-1998][^philipossian-2009]
-* Moon, in *Advances in CMP* — the chemistry of the polished oxide
+* [Moon, in *Advances in CMP*](<https://doi.org/10.1016/B978-0-08-100165-3.00001-2>) — the chemistry of the polished oxide
   surface.[^moon-2016]
-* Kobayakawa et al., VMIC 1991 — dielectric outgassing and via
+* [Kobayakawa et al., VMIC 1991](<https://doi.org/10.1109/VMIC.1991.153054>) — dielectric outgassing and via
   poisoning.[^kobayakawa-1991]
-* Brunner, SPIE 1991 — the swing-curve dependence on the oxide under
+* [Brunner, SPIE 1991](<https://doi.org/10.1117/12.46410>) — the swing-curve dependence on the oxide under
   the resist.[^brunner-1991]
 * Cheung, P2ID 2000, and Wang, Ackaert et al., *IEEE TED* 2004 —
   charging during plasma dielectric deposition and its effect on

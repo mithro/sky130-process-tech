@@ -194,25 +194,25 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Nitride Poly Cut,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Nitride Poly Cut,
   NPCM, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `npc` 95:20
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `npc` 95:20
   "Nitride poly cut (under licon1 areas)"; `cnpc` 49:0; `licon1`
   66:44.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — npc.1–npc.5; licon.9, licon.13,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — npc.1–npc.5; licon.9, licon.13,
   licon.15, licon.18; rpm.4–rpm.6.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — `NPCMCD` 0.27 µm; "poly cap
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `NPCMCD` 0.27 µm; "poly cap
   after SPE" 0.2 µm; photoresist thickness 1.14 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — ASML DUV stepper and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML DUV stepper and
   scanner; tracks; metrology.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography* — k₁, wavelengths, resolution.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — k₁, wavelengths, resolution.[^wiki-litho]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography fundamentals.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — DUV
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — DUV
   lithography and BARC in the 0.25–0.13 µm generations.[^txt-05]
 
 ### Deep dive
@@ -221,24 +221,24 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
   TiN local-interconnect layer formed during self-aligned silicidation
   and patterned between gates and junctions
   (abstracts).[^tang-1985][^tang-1987]
-* Cacciato et al., P2ID 2003 — charging damage when a contact etch
+* [Cacciato et al., P2ID 2003](<https://doi.org/10.1109/PPID.2003.1199721>) — charging damage when a contact etch
   meets a borderless nitride.[^cacciato-2003]
-* Ito et al. (NEC), IEDM 2000 — what a nitride over the gate does to
+* [Ito et al. (NEC), IEDM 2000](<https://doi.org/10.1109/IEDM.2000.904303>) — what a nitride over the gate does to
   the transistor, the film this mask cuts.[^ito-2000]
-* Tsang et al., *IEEE TSM* 2014 — resistance variation across
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — resistance variation across
   high-value poly resistor banks, whose ends the cut defines.[^tsang-2014]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers, and overlay requirements by year.[^itrs-03]
-* Mack, *Fundamental Principles of Optical Lithography* — k₁, BARC
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — k₁, BARC
   and process windows.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* Bossung, SPIE 1977 — the focus–exposure process window.[^bossung-1977]
-* Ausschnitt, SPIE 1999 — separating dose from defocus in
+* [Bossung, SPIE 1977](<https://doi.org/10.1117/12.955357>) — the focus–exposure process window.[^bossung-1977]
+* [Ausschnitt, SPIE 1999](<https://doi.org/10.1117/12.350800>) — separating dose from defocus in
   production.[^ausschnitt-1999]
-* van Haren et al., SPIE 2019 — alignment-mark placement and
+* [van Haren et al., SPIE 2019](<https://doi.org/10.1117/12.2536270>) — alignment-mark placement and
   layer-to-layer overlay.[^van-haren-2019]
-* Brunner, *IBM J. Res. Dev.* 1997 — lens aberrations and their
+* [Brunner, *IBM J. Res. Dev.* 1997](<https://doi.org/10.1147/rd.411.0057>) — lens aberrations and their
   effect on printed features.[^brunner-1997]
 
 ## Open questions

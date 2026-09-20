@@ -319,15 +319,15 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — "compared against the EDR (e-test)
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — "compared against the EDR (e-test)
   specs"; `VTXNL`, `IDSNS15`, `RSN`, `RSLI`, `RSM3`, `WN`, `CMIMA` with
   limits; NPN, poly-resistor, SONOS and SRAM e-test statements.[^pdk-07]
-* SkyWater PDK, *Layers Reference* — `areaid.mt` "Location of e-test
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `areaid.mt` "Location of e-test
   modules within the frame"; `areaid.et`.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — "Die must not overlap areaid.mt";
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — "Die must not overlap areaid.mt";
   layers allowed "only inside areaid:mt (i.e., etest modules)";
   via3.1a.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — "HP 4062UX"; sort testers;
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "HP 4062UX"; sort testers;
   "Qualitau".[^skw-01]
 * BRL Test, 4062UX listing; Keithley, *Series S600* data
   sheet.[^brltest-4062][^keithley-s600]
@@ -338,15 +338,15 @@ Status and expiry are estimates from public records and are not legal advice.
   copies" per MPW run), the 273-module pad documentation, the open
   MPW-5 test tile and the MDM file
   format.[^raw-data-readme][^raw-data-testtile-prop][^raw-data-testtile-pads][^raw-data-testtile-open][^raw-data-mdm]
-* The same repository's measured files for the 5 V, 16 V and 20 V
-  transistors and the native, zero-Vt and ESD NMOS — the thresholds, resistances and currents
+* [The same repository's measured files for the 5 V, 16 V and 20 V
+  transistors and the native, zero-Vt and ESD NMOS](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — the thresholds, resistances and currents
   compared here with the e-test nominals are our
   extraction.[^raw-data-hv-mosfets]
-* The same repository's files for the five 1.8 V transistor types — the
+* [The same repository's files for the five 1.8 V transistor types](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — the
   thresholds and drain currents set here beside the e-test nominals are
   our extraction.[^raw-data-lv-mosfets]
-* The same repository's files for the resistors, MiM capacitors,
-  varactors, diodes and bipolar transistors of the tile — what is
+* [The same repository's files for the resistors, MiM capacitors,
+  varactors, diodes and bipolar transistors of the tile](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — what is
   measured and how the files are labelled.[^raw-data-passives]
 
 ### High-level understanding
@@ -354,31 +354,31 @@ Status and expiry are estimates from public records and are not legal advice.
 * Wikipedia, *Wafer testing*, *Sheet resistance*, *Van der Pauw method*,
   *Probe card*, *Automatic test equipment*, *Statistical process
   control*.[^wiki-test][^wiki-rs][^wiki-vdp][^wiki-probecard][^wiki-ate][^wiki-spc]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — process
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — process
   monitoring and wafer test.[^txt-07]
 
 ### Deep dive
 
-* van der Pauw, *Philips Res. Rep.* 1958 — the four-contact
+* [van der Pauw, *Philips Res. Rep.* 1958](<https://doi.org/10.1142/9789814503464_0017>) — the four-contact
   sheet-resistance theorem.[^vdp-1958]
-* Buehler, *Microelectronic Test Patterns*, NBS Special Publication
-  400-6, 1974 — an early NBS publication on test patterns.[^buehler-1974]
-* Buehler, Grant and Thurber (NBS), *J. Electrochem. Soc.* 1978 — bridge
+* [Buehler, *Microelectronic Test Patterns*, NBS Special Publication
+  400-6, 1974](<https://doi.org/10.6028/NBS.SP.400-6>) — an early NBS publication on test patterns.[^buehler-1974]
+* [Buehler, Grant and Thurber (NBS), *J. Electrochem. Soc.* 1978](<https://doi.org/10.1149/1.2131517>) — bridge
   and van der Pauw resistors for electrical line width.[^buehler-1978]
-* Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983 — Kelvin contact
+* [Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983](<https://doi.org/10.1109/T-ED.1983.21334>) — Kelvin contact
   resistance structures.[^proctor-1983]
-* Sayah and Buehler, ICMTS 1988 — a comb/serpentine/cross-bridge
+* [Sayah and Buehler, ICMTS 1988](<https://doi.org/10.1109/ICMTS.1988.672923>) — a comb/serpentine/cross-bridge
   structure for process evaluation.[^sayah-1988]
-* Ortiz-Conde et al., *Microelectron. Reliab.* 2002 — threshold-voltage
+* [Ortiz-Conde et al., *Microelectron. Reliab.* 2002](<https://doi.org/10.1016/S0026-2714(02)00027-6>) — threshold-voltage
   extraction methods.[^ortiz-conde-2002]
-* Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide* — from parametric
+* [Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide*](<https://doi.org/10.1007/b117400>) — from parametric
   data to model parameters.[^cheng-1999]
-* Stapper (IBM), *IBM J. Res. Dev.* 1983, and Hess and Weiland, *IEEE
-  TSM* 1999 — defect sensitivities and defect-density extraction from
+* Stapper (IBM), [*IBM J. Res. Dev.*](<https://doi.org/10.1147/rd.276.0549>) 1983, and Hess and Weiland, [*IEEE
+  TSM*](<https://doi.org/10.1109/66.762875>) 1999 — defect sensitivities and defect-density extraction from
   test structures.[^stapper-1983][^hess-1999]
-* Maly, *Proc. IEEE* 1990 — design for manufacturability.[^maly-1990]
-* Hunter et al., IMAPS 2012 — probe damage in aluminium pads.[^hunter-2012]
-* Schroder, *Semiconductor Material and Device Characterization* — the
+* [Maly, *Proc. IEEE* 1990](<https://doi.org/10.1109/5.52217>) — design for manufacturability.[^maly-1990]
+* [Hunter et al., IMAPS 2012](<https://doi.org/10.4071/isom-2012-TP41>) — probe damage in aluminium pads.[^hunter-2012]
+* [Schroder, *Semiconductor Material and Device Characterization*](<https://doi.org/10.1002/0471749095>) — the
   measurement methods.[^schroder-2006]
 
 :::{dropdown} From a patent shown as in force (US 7,679,384; estimated expiry 2028-06-06) — open to read

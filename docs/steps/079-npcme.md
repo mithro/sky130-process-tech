@@ -210,26 +210,26 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Layers Reference* — `npc` "Nitride poly cut (under
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `npc` "Nitride poly cut (under
   licon1 areas)".[^pdk-06]
-* SkyWater PDK, *Periphery rules* — npc.1–npc.5, rpm.5,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — npc.1–npc.5, rpm.5,
   licon.13–licon.18.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — "poly cap after SPE"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "poly cap after SPE"
   0.2 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — Lam 9400 TCP
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Lam 9400 TCP
   "poly/nitride"; AMAT DPS II; ashers and wet benches.[^skw-01]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400* — the
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — the
   tool class.[^snf-9400]
-* Tokyo Electron, US 6,376,262 — the 387 nm CN endpoint for nitride
+* [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — the 387 nm CN endpoint for nitride
   etching.[^pat-cn-tel]
 
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*.[^wiki-rie]
-* Wikipedia, *RCA clean* — the post-etch clean.[^wiki-rca]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — dielectric
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — the post-etch clean.[^wiki-rca]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — dielectric
   etching and selectivity.[^txt-01]
-* Nojiri, *Dry Etching Technology for Semiconductors* — fluorocarbon
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — fluorocarbon
   etching and endpoint detection.[^nojiri-2015]
 
 ### Deep dive
@@ -238,28 +238,28 @@ fab (SKY130's recipe is not public):
   TiN local-interconnect layer formed during self-aligned silicidation
   and patterned between gates and junctions
   (abstracts).[^tang-1985][^tang-1987]
-* Kastenmeier, Matsuo, Beulens and Oehrlein, *JVST A* 1996 — nitride
+* [Kastenmeier, Matsuo, Beulens and Oehrlein, *JVST A* 1996](<https://doi.org/10.1116/1.580203>) — nitride
   and oxide etch rates in CF₄/O₂/N₂.[^kastenmeier-1996]
-* Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999 — nitride etching
+* [Kastenmeier, Matsuo and Oehrlein, *JVST A* 1999](<https://doi.org/10.1116/1.582097>) — nitride etching
   selective to silicon and oxide, the stop this etch needs.[^kastenmeier-1999]
-* Staffa et al., *Appl. Phys. Lett.* 1995 — remote NF₃/Cl₂ nitride
+* [Staffa et al., *Appl. Phys. Lett.* 1995](<https://doi.org/10.1063/1.114371>) — remote NF₃/Cl₂ nitride
   etching and its selectivity.[^staffa-1995]
-* Lee and Chen, *J. Appl. Phys.* 1983 — how CF₄/O₂ etches silicon,
+* [Lee and Chen, *J. Appl. Phys.* 1983](<https://doi.org/10.1063/1.331774>) — how CF₄/O₂ etches silicon,
   the competing reaction at the stop.[^lee-chen-1983]
-* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981, and
-  Winters and Coburn, *Surf. Sci. Rep.* 1992 — the chemistry of
+* Flamm and Donnelly, [*Plasma Chem. Plasma Process.*](<https://doi.org/10.1007/BF00565992>) 1981, and
+  Winters and Coburn, [*Surf. Sci. Rep.*](<https://doi.org/10.1016/0167-5729(92)90009-Z>) 1992 — the chemistry of
   fluorocarbon selectivity.[^flamm-1981][^winters-1992]
-* Joubert and Bell, *J. Electrochem. Soc.* 1997 — resist and oxide
+* [Joubert and Bell, *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1837690>) — resist and oxide
   masks over poly in high-density plasmas.[^joubert-1997]
-* Tuda, Shintani and Tanimura, *JJAP* 2004 — selective removal of
+* [Tuda, Shintani and Tanimura, *JJAP* 2004](<https://doi.org/10.1143/JJAP.43.945>) — selective removal of
   hard masks and residues from poly gates.[^tuda-2004]
-* Cacciato et al., P2ID 2003 — charging when a contact etch meets a
+* [Cacciato et al., P2ID 2003](<https://doi.org/10.1109/PPID.2003.1199721>) — charging when a contact etch meets a
   nitride layer, the risk the cut removes.[^cacciato-2003]
-* Oehrlein, *Mater. Sci. Eng. B* 1989 — dry-etch damage to the
+* [Oehrlein, *Mater. Sci. Eng. B* 1989](<https://doi.org/10.1016/0921-5107(89)90284-5>) — dry-etch damage to the
   silicon (here poly) surface.[^oehrlein-1989]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — micro-loading
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — micro-loading
   in small openings.[^gottscho-1992]
-* Regis et al. (Applied Materials), ASMC 1997 — the selective nitride
+* [Regis et al. (Applied Materials), ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — the selective nitride
   RIE family.[^regis-1997]
 
 ## Open questions

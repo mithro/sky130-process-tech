@@ -261,19 +261,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — `CMIM2A`, `CMIM2P`, MiM2 top plate
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `CMIM2A`, `CMIM2P`, MiM2 top plate
   5.8 Ω/sq; the stacked `cap_mim` cross-section with "CAPILD" under
   `CAP2M`.[^pdk-07]
-* SkyWater PDK, *Layers Reference* — `cap2m` 97:44.[^pdk-06]
-* Cypress, QTP 113005 — the Ti/Al–Cu/TiW stack of S8TNV-5R at Fab 4,
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `cap2m` 97:44.[^pdk-06]
+* [Cypress, QTP 113005](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — the Ti/Al–Cu/TiW stack of S8TNV-5R at Fab 4,
   one of the two candidate metal-4 stacks.[^cyp-qtp-113005]
-* SkyWater, *Facilities & Capabilities* — Lam 9600 and 2300 Versys with
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Lam 9600 and 2300 Versys with
   TiW; strippers; solvents; etch gases on the poly/silicon etchers.[^skw-01]
-* Lam Research, Form 10-K (2003) — the 9600 and 2300 lines.[^lam-10k]
-* SKY130 raw-data repository, test-tile pad documentation — the CAP2M
+* [Lam Research, Form 10-K (2003)](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the 9600 and 2300 lines.[^lam-10k]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the CAP2M
   capacitor, linewidth and serpentine/comb structures of the published
   test tile.[^raw-data-testtile-pads]
-* SKY130 raw-data repository, measured data — C–V sweeps of those
+* [SKY130 raw-data repository, measured data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — C–V sweeps of those
   capacitors; the values quoted here are our
   extraction.[^raw-data-passives]
 
@@ -285,37 +285,37 @@ Status and expiry are estimates from public records and are not legal advice.
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*, *Dry etching*.[^wiki-rie][^wiki-dry-etch]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — refractory
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — refractory
   metal etching in the back end.[^txt-05]
-* Nojiri, *Dry Etching Technology for Semiconductors* — metal etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — metal etch
   chemistry, endpoint and charging damage.[^nojiri-2015]
 
 ### Deep dive
 
-* Olewine and Saiz (Philips), US 6,717,193 — a fast, slow and timed
+* [Olewine and Saiz (Philips), US 6,717,193](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6717193>) — a fast, slow and timed
   etch through top electrode and insulator, stopping near the bottom
   electrode's TiN coating.[^pat-mim-philips]
-* Kar-Roy and Racanelli (Newport Fab), US 6,430,028 — top plate and
+* [Kar-Roy and Racanelli (Newport Fab), US 6,430,028](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6430028>) — top plate and
   dielectric etched together, with a sidewall spacer.[^pat-mim-newportfab]
-* Liu and Kuo, *J. Electrochem. Soc.* 2007 — reactive-ion etching of
+* [Liu and Kuo, *J. Electrochem. Soc.* 2007](<https://doi.org/10.1149/1.2737631>) — reactive-ion etching of
   titanium–tungsten films.[^liu-2007-tiw]
-* Turban, Coulon and Mutsukura, *Thin Solid Films* 1989, and Petri,
-  Henry and Sadeghi, *J. Appl. Phys.* 1992 — tungsten etching mechanisms
+* Turban, Coulon and Mutsukura, [*Thin Solid Films*](<https://doi.org/10.1016/0040-6090(89)90102-8>) 1989, and Petri,
+  Henry and Sadeghi, [*J. Appl. Phys.*](<https://doi.org/10.1063/1.351565>) 1992 — tungsten etching mechanisms
   in SF₆ plasmas.[^turban-1989][^petri-1992]
-* Fischl and Hess, *J. Electrochem. Soc.* 1987 — tungsten and tungsten
+* [Fischl and Hess, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100868>) — tungsten and tungsten
   silicide in chlorine-containing discharges.[^fischl-1987]
 * Flamm and Donnelly, 1981, and Winters and Coburn, 1992 — the design
   of plasma etchants and the surface chemistry of
   selectivity.[^flamm-1981][^winters-1992]
-* Hess, *Plasma Chem. Plasma Process.* 1982 — the plasma etch chemistry
+* [Hess, *Plasma Chem. Plasma Process.* 1982](<https://doi.org/10.1007/BF00633130>) — the plasma etch chemistry
   of aluminium, and why fluorine does not remove it.[^hess-1982]
 * Hwang and Giapis, *JVST B* 1997; Fang and McVittie, *IEEE EDL* 1992;
   Cheung, P2ID 2000 — charging, notching and thin-dielectric
   damage.[^hwang-1997][^fang-1992][^cheung-2000]
-* Wang, Ackaert et al., *IEEE TED* 2004 — plasma-charging damage of
+* [Wang, Ackaert et al., *IEEE TED* 2004](<https://doi.org/10.1109/TED.2004.829518>) — plasma-charging damage of
   floating MiM capacitors.[^wang-2004-mim]
-* Wodecki, SPIE 1999 — emission endpoint and open area.[^wodecki-1999]
-* Danzl and McLaurin, IEMT 1997 — peroxide etching of a TiW cap, the wet
+* [Wodecki, SPIE 1999](<https://doi.org/10.1117/12.361313>) — emission endpoint and open area.[^wodecki-1999]
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — peroxide etching of a TiW cap, the wet
   chemistry the clean must avoid.[^danzl-1997]
 * Ogle (Lam Research), US 4,948,458, and Yin et al. (Applied Materials),
   US 5,540,824 — the two high-density metal-etch sources.[^pat-tcp-lam][^pat-dps-amat]

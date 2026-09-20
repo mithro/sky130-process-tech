@@ -227,58 +227,58 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Parasitic Layout Extraction* — poly 48 200 mΩ/sq;
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — poly 48 200 mΩ/sq;
   N-diffusion 120 000 mΩ/sq; P-diffusion 197 000 mΩ/sq; LICON
   contact 15 000 mΩ.[^pdk-08]
-* SkyWater PDK, *Device Details* — poly resistors, 5 V and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — poly resistors, 5 V and
   drain-extended devices, SONOS cell.[^pdk-07]
-* SkyWater PDK, *Criteria & Assumptions* — S/D junction 0.1 µm;
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — S/D junction 0.1 µm;
   "Standard Licon bottom CD" 0.08 µm; "Licon1 etch angle" 10°.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — "Ti and Co Silicide"
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Ti and Co Silicide"
   special module; "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to
   1200C".[^skw-01]
 * SemiStar, *AG Associates Heatpulse 8800 / 8808* and family
   specification PDF; Plasma-Therm product spotlight.[^ag-8800][^ag-8108][^plasmatherm-ag]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — gas suppliers.[^sec-01]
 
 ### High-level understanding
 
 * Wikipedia, *Salicide*, *Titanium disilicide*, *Contact
   resistance*.[^wiki-salicide][^wiki-tisi2][^wiki-rc]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — silicides
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — silicides
   and contacts at deep-submicron nodes.[^txt-05]
 * Fair (ed.), *Rapid Thermal Processing: Science and
   Technology*.[^txt-10]
 
 ### Deep dive
 
-* Murarka, *Silicides for VLSI Applications* — formation
+* [Murarka, *Silicides for VLSI Applications*](<https://doi.org/10.1016/b978-0-08-057056-3.50009-4>) — formation
   kinetics.[^murarka-1983]
-* Maex, *Mater. Sci. Eng. R* 1993 — TiSi₂ and CoSi₂: formation,
+* [Maex, *Mater. Sci. Eng. R* 1993](<https://doi.org/10.1016/0927-796X(93)90001-J>) — TiSi₂ and CoSi₂: formation,
   silicon consumption, narrow-line effect.[^maex-1993]
-* Zhang and Östling, *Crit. Rev. Solid State Mater. Sci.* 2003 —
+* [Zhang and Östling, *Crit. Rev. Solid State Mater. Sci.* 2003](<https://doi.org/10.1080/10408430390802431>) —
   metal silicides in CMOS.[^rev-04]
-* Osburn, in Fair (ed.), *Rapid Thermal Processing* — silicides by
+* [Osburn, in Fair (ed.), *Rapid Thermal Processing*](<https://doi.org/10.1016/b978-0-12-247690-7.50010-x>) — silicides by
   RTP.[^osburn-1993]
-* Mann and Clevenger, *J. Electrochem. Soc.* 1994 — the C49-to-C54
+* [Mann and Clevenger, *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054921>) — the C49-to-C54
   transformation.[^mann-1994]
-* Mann et al., *IBM J. Res. Dev.* 1995 — silicides and local
+* [Mann et al., *IBM J. Res. Dev.* 1995](<https://doi.org/10.1147/rd.394.0403>) — silicides and local
   interconnections together.[^mann-1995]
-* Morgan, Broadbent and Reader, *MRS Proc.* 1985 — TiN/TiSi₂
+* [Morgan, Broadbent and Reader, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-52-279>) — TiN/TiSi₂
   bilayers by RTA in nitrogen.[^morgan-1985]
-* Koerner, Erb and Melzner, *Appl. Surf. Sci.* 1993 — Ti and TiN
+* [Koerner, Erb and Melzner, *Appl. Surf. Sci.* 1993](<https://doi.org/10.1016/0169-4332(93)90139-3>) — Ti and TiN
   thicknesses for tungsten-plug contacts.[^koerner-1993]
-* Ohto et al., IEDM 1996 — a TiN/Ti contact-plug technology.[^ohto-1996]
-* Yoo, Atanos and Whitworth, *JJAP* 1999 — TiSi₂ formation in a
+* [Ohto et al., IEDM 1996](<https://doi.org/10.1109/IEDM.1996.553603>) — a TiN/Ti contact-plug technology.[^ohto-1996]
+* [Yoo, Atanos and Whitworth, *JJAP* 1999](<https://doi.org/10.1143/JJAP.38.L304>) — TiSi₂ formation in a
   low-pressure RTP system.[^yoo-1999]
-* Varahramyan and Verret, *Solid-State Electron.* 1996 — specific
+* [Varahramyan and Verret, *Solid-State Electron.* 1996](<https://doi.org/10.1016/0038-1101(96)00091-3>) — specific
   contact resistance of TiSi₂–silicon contacts.[^varahramyan-1996]
-* Berger, *Solid-State Electron.* 1972, and Schroder and Meier,
-  *IEEE TED* 1984 — contact-resistance models and
+* Berger, [*Solid-State Electron.*](<https://doi.org/10.1016/0038-1101(72)90048-2>) 1972, and Schroder and Meier,
+  [*IEEE TED*](<https://doi.org/10.1109/T-ED.1984.21583>) 1984 — contact-resistance models and
   measurement.[^berger-1972][^schroder-1984]
-* Sorrell and Gyurcsik, *IEEE TSM* 1993 — emissivity correction in
+* [Sorrell and Gyurcsik, *IEEE TSM* 1993](<https://doi.org/10.1109/66.238178>) — emissivity correction in
   RTP pyrometry.[^sorrell-1993]
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — the
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — the
   lamp-heated RTP chamber.[^pat-rtp-amat]
 
 ## Open questions

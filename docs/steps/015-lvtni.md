@@ -230,18 +230,18 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Axcelis 8250 "Mid current B11,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Axcelis 8250 "Mid current B11,
   BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
-* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
+* [SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) —
   implanters are maintained in house.[^skw-07]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* SkyWater PDK, *Periphery rules* — `lvtn` function text.[^pdk-periph]
-* SkyWater PDK, *Device Details* — `nfet_01v8`, `nfet_01v8_lvt`; native
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `lvtn` function text.[^pdk-periph]
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `nfet_01v8`, `nfet_01v8_lvt`; native
   devices "blocking out all VT implants".[^pdk-07]
-* SkyWater PDK, *Criteria & Assumptions* — implant angles
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — implant angles
   table.[^pdk-03]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — Eaton
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — Eaton
   Semiconductor Equipment Operations product description; 3–750 keV,
   4–3500 µA.[^axcelis-8250]
 * SKY130 raw-data repository, 1.8 V transistor files and test-tile pad
@@ -256,49 +256,49 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, sources, channelling and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, sources, channelling and
   tilt in one page.[^wiki-implant]
-* Wikipedia, *Threshold voltage* — body-effect parameter containing
+* [Wikipedia, *Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>) — body-effect parameter containing
   N_A.[^wiki-vt]
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 8 ("Ion
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 8 ("Ion
   Implantation").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — implanter classes.[^txt-09]
-* Ramkumar, Prabhakar and Kapre (Cypress), *Scalable SONOS based
-  embedded non-volatile memory technology* — indium channel
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — implanter classes.[^txt-09]
+* [Ramkumar, Prabhakar and Kapre (Cypress), *Scalable SONOS based
+  embedded non-volatile memory technology*](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) — indium channel
   engineering.[^cyp-25]
 
 ### Deep dive
 
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic and
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — arsenic and
   BF₂/indium {term}`Vt` adjusts; counter-doped low-Vt channel.[^pat-vt-rrr]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — Vt-adjust
   boron 1e12–1e13 cm⁻² at 50–100 keV.[^pat-vt-lsi]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — multiple thresholds set by
   gate length, with a laterally doped channel implant self-aligned to
   the gate pillars.[^pat-vt-amd]
-* Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
+* [Shahidi et al. (IBM), *IEEE EDL* 1993](<https://doi.org/10.1109/55.225595>) — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
-* Huang et al., *IEEE TED* 2000 — an 80 nm DTMOS with an indium
+* [Huang et al., *IEEE TED* 2000](<https://doi.org/10.1109/16.887025>) — an 80 nm DTMOS with an indium
   super-steep retrograde channel.[^huang-2000]
-* MacPherson, *Appl. Phys. Lett.* 1971 — the original demonstration of
+* [MacPherson, *Appl. Phys. Lett.* 1971](<https://doi.org/10.1063/1.1653513>) — the original demonstration of
   setting a MOS threshold by ion implantation.[^macpherson-1971]
-* Peressini and Johnson, IEDM 1973 — early NMOS threshold adjustment by
+* [Peressini and Johnson, IEDM 1973](<https://doi.org/10.1109/IEDM.1973.188761>) — early NMOS threshold adjustment by
   implantation with dose-versus-threshold data.[^peressini-1973]
-* Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels and
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — super-steep retrograde channels and
   multiple thresholds at the 0.1 µm node.[^taur-1997]
-* Rafferty et al. (AT&T), IEDM 1993 — how implant damage and the anneal
+* [Rafferty et al. (AT&T), IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347345>) — how implant damage and the anneal
   reshape the channel profile (the reverse short-channel
   effect).[^rafferty-1993]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) — the
   thermal-wave monitor that checks light channel implants where sheet
   resistance cannot.[^smith-1985]
-* Current, *J. Vac. Sci. Technol. A* 1996 — what a production
+* [Current, *J. Vac. Sci. Technol. A* 1996](<https://doi.org/10.1116/1.580279>) — what a production
   medium-current implanter looks like inside.[^current-1996]
 
 ## Open questions

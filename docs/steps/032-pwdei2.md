@@ -123,53 +123,53 @@ An industry-generic second drift-well implant for a 200 mm,
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
-* SkyWater PDK, *Device Details* — 20 V devices: "Longer drift
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the site tool list.[^skw-01]
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — 20 V devices: "Longer drift
   region".[^pdk-07]
-* SkyWater PDK, *High Voltage Methodology* — 110 Å gate oxide on VHV
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — 110 Å gate oxide on VHV
   devices.[^pdk-hv]
-* SkyWater PDK, *Periphery rules* — pwdem.5, pwdem.6.[^pdk-periph]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — pwdem.5, pwdem.6.[^pdk-periph]
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
 
 ### High-level understanding
 
-* Wikipedia, *LDMOS* — drift regions formed by chained
+* [Wikipedia, *LDMOS*](<https://en.wikipedia.org/wiki/LDMOS>) — drift regions formed by chained
   implants.[^wiki-ldmos]
-* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 2 (CMOS
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 2 (CMOS
   well formation) and ch. 8 (ion implantation).[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — channel
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — channel
   engineering, surface- versus {term}`buried-channel PMOS`, high-voltage
   MOS.[^txt-04]
 
 ### Deep dive
 
-* Mitros (Texas Instruments), US 6,660,603 — drain-extended MOS built on
+* [Mitros (Texas Instruments), US 6,660,603](<https://patents.google.com/patent/US6660603B2/en>) — drain-extended MOS built on
   the existing wells, with drift-well doses and energies.[^pat-demos-ti]
-* Mitros et al. (Texas Instruments), *IEEE TED* 2001 — drain-extended
+* [Mitros et al. (Texas Instruments), *IEEE TED* 2001](<https://doi.org/10.1109/16.936703>) — drain-extended
   MOS transistors added to a 0.18 µm logic process.[^mitros-2001]
-* Mai and Rücker (IHP), *Solid-State Electronics* 2011 — 10 V
+* [Mai and Rücker (IHP), *Solid-State Electronics* 2011](<https://doi.org/10.1016/j.sse.2011.06.034>) — 10 V
   drain-extended devices in a 0.13 µm technology.[^mai-2011]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — {term}`retrograde N-well <retrograde well>`
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — {term}`retrograde N-well <retrograde well>`
   and P-well energies, doses and resist thickness.[^pat-well-ibm]
-* Lee and Son (Hyundai/Hynix), US 6,455,402 — chained retrograde
+* [Lee and Son (Hyundai/Hynix), US 6,455,402](<https://patents.google.com/patent/US6455402B2/en>) — chained retrograde
   twin-well implants and a 1000 °C, 10 s {term}`RTA`.[^pat-well-hynix]
-* Appels and Vaes (Philips), IEDM 1979 — the original RESURF paper:
+* [Appels and Vaes (Philips), IEDM 1979](<https://doi.org/10.1109/IEDM.1979.189589>) — the original RESURF paper:
   vertical and lateral depletion of a thin drift layer.[^appels-1979]
-* Ludikhuize (Philips), ISPSD 2000 — a review of RESURF design rules for
+* [Ludikhuize (Philips), ISPSD 2000](<https://doi.org/10.1109/ISPSD.2000.856763>) — a review of RESURF design rules for
   graded drift regions.[^ludikhuize-2000]
-* Baliga, *Fundamentals of Power Semiconductor Devices* — breakdown,
+* [Baliga, *Fundamentals of Power Semiconductor Devices*](<https://doi.org/10.1007/978-0-387-47314-7>) — breakdown,
   drift-region doping and on-resistance trade-offs.[^baliga-2008]
-* Efland, Tsai and Pendharkar (Texas Instruments), IEDM 1998 — LDMOS
+* [Efland, Tsai and Pendharkar (Texas Instruments), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746447>) — LDMOS
   integration into logic CMOS from the TI group behind the DE
   devices.[^efland-1998]
-* Kwon, Efland, Malhi and Ng (Texas Instruments), US 5,406,110 — a
+* [Kwon, Efland, Malhi and Ng (Texas Instruments), US 5,406,110](<https://patents.google.com/patent/US5406110A/en>) — a
   RESURF lateral DMOS with an implanted drift region.[^pat-resurf-ti]
-* Chidambaram (Texas Instruments), US 2006/0006461 — drain-extended MOS
+* [Chidambaram (Texas Instruments), US 2006/0006461](<https://patents.google.com/patent/US20060006461A1/en>) — drain-extended MOS
   made with the existing process layers.[^pat-demos-ti2]
-* Oh (Hynix), US 6,806,133 — a triple-well recipe showing how a P-well
+* [Oh (Hynix), US 6,806,133](<https://patents.google.com/patent/US6806133B2/en>) — a triple-well recipe showing how a P-well
   is placed above a deep N-well floor.[^pat-dnw-hynix]
 
 ## Open questions

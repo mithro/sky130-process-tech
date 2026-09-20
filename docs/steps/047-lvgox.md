@@ -241,17 +241,17 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * SkyWater PDK, SPICE models of `nfet_01v8` and `nfet_g5v0d10v5` —
   `toxe` 4.148 nm and 11.6 nm.[^pdk-model-nfet01v8][^pdk-model-nfet5v]
-* SkyWater PDK, *Device Details* — 1.8 V device operating
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — 1.8 V device operating
   voltages; "1.8V accumulation-mode MOS varactors".[^pdk-07]
 * SKY130 raw-data repository — C–V sweeps of the test tile's
   varactors and the pad list that gives their sizes; the area
   capacitance and electrical thickness quoted here are our
   extraction.[^raw-data-passives][^raw-data-testtile-pads]
-* SkyWater, *Facilities & Capabilities* — Aviza furnaces; Heatpulse
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Aviza furnaces; Heatpulse
   8808 with NH₃; "Nitrided gate oxide" special module.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* ITRS 2001, *Front End Processes* — {term}`EOT` targets and thickness
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — {term}`EOT` targets and thickness
   control; oxynitride evolution.[^itrs-01]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -264,52 +264,52 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Gate oxide* — role and field strength.[^wiki-gate-oxide]
-* Wikipedia, *Deal–Grove model* — the thin-oxide deviation.[^wiki-dg]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 6,
+* [Wikipedia, *Gate oxide*](<https://en.wikipedia.org/wiki/Gate_oxide>) — role and field strength.[^wiki-gate-oxide]
+* [Wikipedia, *Deal–Grove model*](<https://en.wikipedia.org/wiki/Deal%E2%80%93Grove_model>) — the thin-oxide deviation.[^wiki-dg]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 6,
   thermal oxidation.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — gate
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — gate
   dielectrics of the deep-submicron era.[^txt-05]
 
 ### Deep dive
 
-* Green, Gusev, Degraeve and Garfunkel, *J. Appl. Phys.* 2001 — the
+* [Green, Gusev, Degraeve and Garfunkel, *J. Appl. Phys.* 2001](<https://doi.org/10.1063/1.1385803>) — the
   review of ultrathin SiO₂ and Si–O–N gate dielectrics.[^green-2001]
-* Hori, *Gate Dielectrics and MOS ULSIs* — the monograph on gate
+* [Hori, *Gate Dielectrics and MOS ULSIs*](<https://doi.org/10.1007/978-3-642-60856-8>) — the monograph on gate
   oxides and nitrided oxides.[^hori-1997]
-* Hori, Iwasaki and Tsuji, *IEEE TED* 1989 — ultrathin reoxidised
+* [Hori, Iwasaki and Tsuji, *IEEE TED* 1989](<https://doi.org/10.1109/16.19935>) — ultrathin reoxidised
   nitrided oxides by rapid thermal processing.[^hori-1989]
-* Ito, Nozaki and Ishikawa, *J. Electrochem. Soc.* 1980 — direct
+* [Ito, Nozaki and Ishikawa, *J. Electrochem. Soc.* 1980](<https://doi.org/10.1149/1.2130065>) — direct
   thermal nitridation of SiO₂ in ammonia.[^ito-1980]
-* Hattangady, Niimi and Lucovsky, *Appl. Phys. Lett.* 1995 —
+* [Hattangady, Niimi and Lucovsky, *Appl. Phys. Lett.* 1995](<https://doi.org/10.1063/1.113775>) —
   controlled nitrogen incorporation at the gate-oxide surface.[^hattangady-1995]
-* Kraft et al., *JVST B* 1997 — surface nitridation of SiO₂ with a
+* [Kraft et al., *JVST B* 1997](<https://doi.org/10.1116/1.589516>) — surface nitridation of SiO₂ with a
   high-density nitrogen plasma.[^kraft-1997]
-* Kuehne et al., MRS 1997 — nitric oxide rapid thermal nitridation of
+* [Kuehne et al., MRS 1997](<https://doi.org/10.1557/PROC-470-381>) — nitric oxide rapid thermal nitridation of
   thin gate oxides.[^kuehne-1997]
-* Pfiester et al., *IEEE TED* 1990 — {term}`boron penetration` through thin
+* [Pfiester et al., *IEEE TED* 1990](<https://doi.org/10.1109/16.57135>) — {term}`boron penetration` through thin
   oxides from p⁺ poly gates.[^pfiester-1990]
-* Hwang, Ting, Kwong and Lee, *Appl. Phys. Lett.* 1991 — a physical
+* [Hwang, Ting, Kwong and Lee, *Appl. Phys. Lett.* 1991](<https://doi.org/10.1063/1.106290>) — a physical
   model of boron penetration through N₂O oxynitride.[^hwang-1991]
-* Tseng et al. (Motorola), IEDM 1998 — reduced leakage and boron
+* [Tseng et al. (Motorola), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746475>) — reduced leakage and boron
   penetration with an RTCVD oxynitride at 0.18 µm.[^tseng-1998]
-* Massoud, Plummer and Irene, *J. Electrochem. Soc.* 1985 — thin-regime
+* [Massoud, Plummer and Irene, *J. Electrochem. Soc.* 1985](<https://doi.org/10.1149/1.2113648>) — thin-regime
   growth kinetics.[^massoud-1985]
-* Deal and Grove, *J. Appl. Phys.* 1965 — the oxidation law.[^deal-1965]
-* Deal, *J. Electrochem. Soc.* 1980 — oxide-charge terminology.[^deal-1980]
-* Nulman, Krusius and Gat, *IEEE EDL* 1985 — rapid thermal oxidation
+* [Deal and Grove, *J. Appl. Phys.* 1965](<https://doi.org/10.1063/1.1713945>) — the oxidation law.[^deal-1965]
+* [Deal, *J. Electrochem. Soc.* 1980](<https://doi.org/10.1109/T-ED.1980.19908>) — oxide-charge terminology.[^deal-1980]
+* [Nulman, Krusius and Gat, *IEEE EDL* 1985](<https://doi.org/10.1109/EDL.1985.26099>) — rapid thermal oxidation
   of thin gate dielectrics.[^nulman-1985]
 * Yu et al. (TSMC), SPIE 1999 and Rozé et al., *J. Appl. Phys.* 2017 —
   {term}`ISSG` oxidation and its kinetics.[^yu-1999][^roze-2017]
-* Lo, Buchanan, Taur and Wang, *IEEE EDL* 1997 — tunnelling current
+* [Lo, Buchanan, Taur and Wang, *IEEE EDL* 1997](<https://doi.org/10.1109/55.568766>) — tunnelling current
   through ultrathin oxides.[^lo-1997]
-* Stathis, *IBM J. Res. Dev.* 2002 — reliability limits of the gate
+* [Stathis, *IBM J. Res. Dev.* 2002](<https://doi.org/10.1147/rd.462.0265>) — reliability limits of the gate
   insulator.[^stathis-2002]
-* Buchanan, *IBM J. Res. Dev.* 1999 — scaling the gate dielectric:
+* [Buchanan, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.433.0245>) — scaling the gate dielectric:
   materials, integration, reliability.[^buchanan-1999]
-* Wright and Saraswat, *IEEE TED* 1990 — thickness limitations of SiO₂
+* [Wright and Saraswat, *IEEE TED* 1990](<https://doi.org/10.1109/16.57140>) — thickness limitations of SiO₂
   gate dielectrics.[^wright-1990]
-* Ma, *IEEE TED* 1998 — silicon nitride as a gate dielectric, the
+* [Ma, *IEEE TED* 1998](<https://doi.org/10.1109/16.661229>) — silicon nitride as a gate dielectric, the
   nitrogen-rich end of the spectrum.[^ma-1998]
 
 ## Open questions

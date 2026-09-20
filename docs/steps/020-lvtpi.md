@@ -187,15 +187,15 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Axcelis 8250 species and dose
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Axcelis 8250 species and dose
   range; GSD.[^skw-01]
-* SkyWater PDK, *Device Details* — `pfet_01v8`, `pfet_01v8_lvt`,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `pfet_01v8`, `pfet_01v8_lvt`,
   `pfet_01v8_hvt`, `pfet_g5v0d10v5`.[^pdk-07]
-* SkyWater PDK, *Periphery rules* — `lvtn` and `hvtp` function
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `lvtn` and `hvtp` function
   text.[^pdk-periph]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
-* SKY130 raw-data repository, 1.8 V transistor files — measured
+* [SKY130 raw-data repository, 1.8 V transistor files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — measured
   `pfet_01v8` thresholds at the e-test geometries (our
   extraction).[^raw-data-lv-mosfets]
 
@@ -208,49 +208,49 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
-* Wikipedia, *Threshold voltage* — the body-effect parameter containing
+* [Wikipedia, *Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>) — the body-effect parameter containing
   the channel doping.[^wiki-vt]
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — surface- versus
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — surface- versus
   buried-channel PMOS, dual-gate CMOS.[^txt-04]
 
 ### Deep dive
 
-* ITRS 2001, *Front End Processes* — Table 51: channel concentration,
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51: channel concentration,
   retrograde channel depth.[^itrs-01]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — a 50 keV
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — a 50 keV
   phosphorus low-dose implant as the shallowest member of the N-well
   chain, with a further optional implant "to more precisely control
   dopant levels at the surface".[^pat-well-ibm]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — arsenic first
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — arsenic first
   Vt adjust.[^pat-vt-rrr]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — Vt-adjust
   boron at 1e12–1e13 cm⁻² and 50–100 keV, chained punch-through
   barriers, and a well anneal "at approximately 900° C. in a neutral
   ambient such as nitrogen for approximately 30 minutes" (the patent does
   not name the tool).[^pat-vt-lsi]
-* Krivokapic and Milic (AMD), US 6,238,982 — multiple thresholds set by
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — multiple thresholds set by
   gate length, with a laterally doped channel implant self-aligned to
   the gate pillars.[^pat-vt-amd]
-* MacPherson, *Appl. Phys. Lett.* 1971 — the original
+* [MacPherson, *Appl. Phys. Lett.* 1971](<https://doi.org/10.1063/1.1653513>) — the original
   threshold-adjust-by-implantation paper.[^macpherson-1971]
-* Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels and
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — super-steep retrograde channels and
   multiple thresholds at 0.1 µm.[^taur-1997]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   voltage versus channel doping and the body effect a channel implant
   sets.[^taur-2009]
-* Rafferty et al. (AT&T), IEDM 1993 — how implant damage and the anneal
+* [Rafferty et al. (AT&T), IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347345>) — how implant damage and the anneal
   reshape the channel doping.[^rafferty-1993]
-* Thompson, Packan and Bohr (Intel), VLSI 1996 — the drive-current
+* [Thompson, Packan and Bohr (Intel), VLSI 1996](<https://doi.org/10.1109/VLSIT.1996.507830>) — the drive-current
   trade-offs of super-steep retrograde channel
   engineering.[^thompson-1996]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) — the
   thermal-wave monitor used for light channel implants.[^smith-1985]
 
 ## Open questions

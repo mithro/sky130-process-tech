@@ -203,21 +203,21 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Low Voltage Oxide,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Low Voltage Oxide,
   LVOM, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `hvi` 75:20,
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `hvi` 75:20,
   `clvom` 46:0 and 45:20.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — hvi.1, hvi.2a, hvi.2b, hvi.4,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — hvi.1, hvi.2a, hvi.2b, hvi.4,
   hvi.5.[^pdk-periph]
-* SkyWater PDK, *High Voltage Methodology* — 110 Å gate oxide for
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — 110 Å gate oxide for
   HV and VHV devices; gate-stress limits.[^pdk-hv]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist
   thickness.[^pdk-03]
 * SkyWater PDK, SPICE model files — `toxe` of `nfet_01v8` and
   `nfet_g5v0d10v5`.[^pdk-model-nfet01v8][^pdk-model-nfet5v]
-* SkyWater PDK, repository README — "internal 1.8V with 5.0V I/Os".[^pdk-10]
-* SkyWater, *Facilities & Capabilities* — lithography tools.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* [SkyWater PDK, repository README](<https://github.com/google/skywater-pdk>) — "internal 1.8V with 5.0V I/Os".[^pdk-10]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — lithography tools.[^skw-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 * Koutny et al. (Cypress), US 8,093,128 — the resist opening over the
@@ -229,29 +229,29 @@ Status and expiry are estimates from public records and are not legal advice.
 ### High-level understanding
 
 * Wikipedia, *Photolithography*.[^wiki-litho]
-* Wikipedia, *Gate oxide* — what the thickness does.[^wiki-gate-oxide]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *Gate oxide*](<https://en.wikipedia.org/wiki/Gate_oxide>) — what the thickness does.[^wiki-gate-oxide]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography.[^txt-02]
 
 ### Deep dive
 
-* Togo, Noda and Tanigawa (NEC), IEDM 1998 — multiple-thickness gate
+* [Togo, Noda and Tanigawa (NEC), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746371>) — multiple-thickness gate
   oxide and dual-gate technologies for embedded DRAM.[^togo-1998]
-* Beverina et al. (STMicroelectronics), *Solid State Phenomena* 2003 —
+* [Beverina et al. (STMicroelectronics), *Solid State Phenomena* 2003](<https://doi.org/10.4028/www.scientific.net/SSP.92.235>) —
   the resist / wet-etch couple for dual gate oxide.[^beverina-2003]
-* Lee (Hyundai), *Electrochem. Solid-State Lett.* 1999 — a dual gate
+* [Lee (Hyundai), *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390957>) — a dual gate
   oxide process with improved {term}`gate-oxide integrity <gate oxide integrity>`.[^lee-1999]
-* Lee et al., ICVC 1999 — gate oxide thinning at the STI edge in a
+* [Lee et al., ICVC 1999](<https://doi.org/10.1109/ICVC.1999.820895>) — gate oxide thinning at the STI edge in a
   dual gate oxide process.[^lee-1999-icvc]
-* Kim et al., SSDM 2001 — an STI scheme that compensates thinning at
+* [Kim et al., SSDM 2001](<https://doi.org/10.7567/SSDM.2001.A-6-6>) — an STI scheme that compensates thinning at
   the STI corner for thick dual gate oxides.[^kim-2001]
-* Inukai and Hiramoto, *Jpn. J. Appl. Phys.* 2000 — dual oxide
+* [Inukai and Hiramoto, *Jpn. J. Appl. Phys.* 2000](<https://doi.org/10.1143/JJAP.39.2287>) — dual oxide
   thickness / multiple threshold CMOS for stand-by leakage.[^inukai-2000]
-* ITRS 2001, *Front End Processes* — {term}`EOT` targets that force two
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — {term}`EOT` targets that force two
   oxides.[^itrs-01]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Levinson, *Principles of Lithography* — chapters on photoresists and
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on photoresists and
   overlay.[^levinson-2005]
 
 ## Open questions

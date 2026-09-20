@@ -211,57 +211,57 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater PDK, process stack diagram — `li` 0.1 µm between "PSG"
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `li` 0.1 µm between "PSG"
   and "LINT".[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — "LI1 thickness for
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "LI1 thickness for
   antenna ratio calculations" 0.1 µm; "Li resistor width".[^pdk-03]
-* SkyWater PDK, *Parasitic Layout Extraction* — Local interconnect
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — Local interconnect
   12 800 mΩ/sq; Metal1 125 mΩ/sq; Poly 48 200 mΩ/sq.[^pdk-08]
-* SkyWater PDK, *Layers Reference* — `li1` 67:20 "Local
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `li1` 67:20 "Local
   interconnect".[^pdk-06]
-* SkyWater PDK, *Periphery rules* — li.1–li.7; licon.4.[^pdk-periph]
-* google/skywater-pdk README — "1 level of local interconnect".[^pdk-10]
-* Edwards (Efabless), *Introduction to the SkyWater PDK* — local
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — li.1–li.7; licon.4.[^pdk-periph]
+* [google/skywater-pdk README](<https://github.com/google/skywater-pdk>) — "1 level of local interconnect".[^pdk-10]
+* [Edwards (Efabless), *Introduction to the SkyWater PDK*](<https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>) — local
   interconnect "Titanium Nitride (TiN)", 0.1 µm.[^ann-16]
-* SkyWater/Efabless press release, 2021-04-06 — "the local
+* [SkyWater/Efabless press release, 2021-04-06](<https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>) — "the local
   interconnect" as a standard feature.[^ann-11]
-* SkyWater, *Facilities & Capabilities* — "ESC TiN", "Imp TiN".[^skw-01]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "ESC TiN", "Imp TiN".[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — sputter-target and
   gas suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
-* Wikipedia, *Titanium nitride* — properties and microelectronic
+* [Wikipedia, *Titanium nitride*](<https://en.wikipedia.org/wiki/Titanium_nitride>) — properties and microelectronic
   uses.[^wiki-tin]
 * Wikipedia, *Sputter deposition*.[^wiki-sputter]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — PVD equipment.[^txt-09]
-* Ohring, *Materials Science of Thin Films* — growth and
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — PVD equipment.[^txt-09]
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — growth and
   microstructure of sputtered films.[^ohring-2002]
 
 ### Deep dive
 
 * Tang et al. (TI), IEDM 1985 and *IEEE TED* 1987 — the titanium
   nitride local interconnect.[^tang-1985][^tang-1987]
-* Haken and Holloway (TI), US 4,821,085 — the VLSI local interconnect
+* [Haken and Holloway (TI), US 4,821,085](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4821085>) — the VLSI local interconnect
   structure.[^pat-li-ti-haken]
-* Holloway et al. (TI), US 4,657,628 — the process for patterning
+* [Holloway et al. (TI), US 4,657,628](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4657628>) — the process for patterning
   local interconnects.[^pat-li-ti-holloway]
-* Mann et al. (IBM), *IBM J. Res. Dev.* 1995 — silicides and local
+* [Mann et al. (IBM), *IBM J. Res. Dev.* 1995](<https://doi.org/10.1147/rd.394.0403>) — silicides and local
   interconnections.[^mann-1995]
-* White et al., IEDM 1992 — a damascene-stud local interconnect,
+* [White et al., IEDM 1992](<https://doi.org/10.1109/IEDM.1992.307365>) — a damascene-stud local interconnect,
   the alternative structure.[^white-1992]
-* Sundgren, *Thin Solid Films* 1985 — structure, resistivity and
+* [Sundgren, *Thin Solid Films* 1985](<https://doi.org/10.1016/0040-6090(85)90333-5>) — structure, resistivity and
   properties of TiN coatings.[^sundgren-1985]
-* Berg and Nyberg, *Thin Solid Films* 2005 — reactive sputtering
+* [Berg and Nyberg, *Thin Solid Films* 2005](<https://doi.org/10.1016/j.tsf.2004.10.051>) — reactive sputtering
   and its hysteresis.[^berg-2005]
-* Petrov et al., *JVST A* 2003 — microstructural evolution during
+* [Petrov et al., *JVST A* 2003](<https://doi.org/10.1116/1.1601610>) — microstructural evolution during
   film growth.[^petrov-2003]
-* Thornton, *J. Vac. Sci. Technol.* 1974 — the structure-zone
+* [Thornton, *J. Vac. Sci. Technol.* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone
   diagram.[^thornton-1974]
-* Blech, *J. Appl. Phys.* 1976 — electromigration in aluminium on
+* [Blech, *J. Appl. Phys.* 1976](<https://doi.org/10.1063/1.322842>) — electromigration in aluminium on
   TiN, the classic TiN-underlayer study.[^blech-1976]
-* Boumerzoug et al., *MRS Proc.* 1997 — oxide on TiN and via contact
+* [Boumerzoug et al., *MRS Proc.* 1997](<https://doi.org/10.1557/PROC-495-345>) — oxide on TiN and via contact
   resistance.[^boumerzoug-1997]
 
 ## Open questions

@@ -197,70 +197,70 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Ag Heatpulse 8808 NH3, Ar,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Ag Heatpulse 8808 NH3, Ar,
   N2, O2, up to 1200C"; Aviza furnaces.[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — "N Tip (As)" 0.01 µm, S/D
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "N Tip (As)" 0.01 µm, S/D
   junction depth 0.1 µm.[^pdk-03]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page —
+* [SemiStar, *AG Associates Heatpulse 8800 / 8808* reseller page](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) —
   temperature range, ramp rates and applications.[^ag-8800]
-* SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
-  Specifications* (PDF) — operating specifications and facility
+* [SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
+  Specifications* (PDF)](<https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>) — operating specifications and facility
   table.[^ag-8108]
-* ITRS 2001, *Front End Processes* — Table 51a extension depth and
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51a extension depth and
   abruptness.[^itrs-01]
 
 ### High-level understanding
 
-* Wikipedia, *Rapid thermal processing* — lamp heating, seconds above
+* [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>) — lamp heating, seconds above
   1000 °C, pyrometry.[^wiki-rtp]
-* Wikipedia, *Ion implantation* — amorphisation and damage.[^wiki-implant]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 8
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — amorphisation and damage.[^wiki-implant]
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 8
   (implantation, damage, TED) and the spacer deposition that
   follows.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — RTP.[^txt-05]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — RTP.[^txt-05]
 
 ### Deep dive
 
-* Fair (ed.), *Rapid Thermal Processing: Science and Technology* —
+* [Fair (ed.), *Rapid Thermal Processing: Science and Technology*](<https://doi.org/10.1016/b978-0-12-247690-7.50009-3>) —
   junction formation by rapid thermal annealing.[^txt-10]
-* Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — ramp rate
+* [Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999](<https://doi.org/10.1007/s11664-999-0118-7>) — ramp rate
   and boron ultra-shallow junctions, the case for spike
   anneals.[^agarwal-1999]
-* Agarwal et al., *Mater. Sci. Semicond. Process.* 1998 — spike
+* [Agarwal et al., *Mater. Sci. Semicond. Process.* 1998](<https://doi.org/10.1016/S1369-8001(98)00030-4>) — spike
   annealing in lamp and hot-wall systems and the effect of ramp-up
   rate.[^agarwal-1998]
-* Shishiguchi et al. (NEC), VLSI 1997 — 400 °C/s RTA for boron shallow
+* [Shishiguchi et al. (NEC), VLSI 1997](<https://doi.org/10.1109/VLSIT.1997.623709>) — 400 °C/s RTA for boron shallow
   junctions.[^shishiguchi-1997]
-* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the physics of
+* [Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — the physics of
   transient enhanced diffusion.[^stolk-1997]
-* Michel et al. (IBM), *Appl. Phys. Lett.* 1987 — anomalous boron
+* [Michel et al. (IBM), *Appl. Phys. Lett.* 1987](<https://doi.org/10.1063/1.98160>) — anomalous boron
   diffusion under rapid annealing, first reported.[^michel-1987]
-* Eaglesham et al., *Appl. Phys. Lett.* 1994 — the interstitial source
+* [Eaglesham et al., *Appl. Phys. Lett.* 1994](<https://doi.org/10.1063/1.112725>) — the interstitial source
   of boron TED.[^eaglesham-1994]
-* Rousseau, Griffin and Plummer, *Appl. Phys. Lett.* 1994 — arsenic
+* [Rousseau, Griffin and Plummer, *Appl. Phys. Lett.* 1994](<https://doi.org/10.1063/1.112301>) — arsenic
   deactivation as an interstitial source.[^rousseau-1994]
-* Nobili et al., *J. Electrochem. Soc.* 1983 — arsenic precipitation
+* [Nobili et al., *J. Electrochem. Soc.* 1983](<https://doi.org/10.1149/1.2119859>) — arsenic precipitation
   above its solubility.[^nobili-1983]
-* Csepregi et al., *J. Appl. Phys.* 1978 — solid-phase epitaxial
+* [Csepregi et al., *J. Appl. Phys.* 1978](<https://doi.org/10.1063/1.325397>) — solid-phase epitaxial
   regrowth of amorphised silicon.[^csepregi-1978]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — review of shallow
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — review of shallow
   junction formation by implantation and RTA.[^rev-05]
-* Fiory, *J. Electron. Mater.* 2002 — RTP developments of the 130 nm
+* [Fiory, *J. Electron. Mater.* 2002](<https://doi.org/10.1007/s11664-002-0031-9>) — RTP developments of the 130 nm
   era.[^fiory-2002]
-* Roozeboom and Parekh (Philips), *J. Vac. Sci. Technol. B* 1990 — RTP
+* [Roozeboom and Parekh (Philips), *J. Vac. Sci. Technol. B* 1990](<https://doi.org/10.1116/1.584902>) — RTP
   systems and temperature control.[^roozeboom-1990]
-* Ramachandran et al. (Applied Materials), US 6,897,131 — sharpening
+* [Ramachandran et al. (Applied Materials), US 6,897,131](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6897131>) — sharpening
   the spike by faster cool-down.[^pat-spike-amat]
-* Jennings, Tallavarjula and Thakur (Applied Materials), US 6,803,297 —
+* [Jennings, Tallavarjula and Thakur (Applied Materials), US 6,803,297](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6803297>) —
   the anneal ambient for spike anneals.[^pat-spike-amat-ambient]
-* Lee et al. (IBM), US 6,518,136 — extensions and halos activated by
+* [Lee et al. (IBM), US 6,518,136](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6518136>) — extensions and halos activated by
   spike annealing to prevent their diffusion.[^pat-spike-ibm]
-* Yu (AMD), US 6,521,502 — activating extensions and halos by
+* [Yu (AMD), US 6,521,502](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6521502>) — activating extensions and halos by
   solid-phase epitaxy at low temperature, the alternative
   philosophy.[^pat-spe-amd]
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — a lamp-heated
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — a lamp-heated
   single-wafer RTP chamber.[^pat-rtp-amat]
 
 ## Open questions

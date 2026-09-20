@@ -149,57 +149,57 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — 0.3 µm HV-tip resist, 40°
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — 0.3 µm HV-tip resist, 40°
   angle, 0.02 µm penetration.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Iridia; Mattson
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — GaSonics PEP; Iridia; Mattson
   Aspen II; Akrion Gamma; DNS and FSI Mercury benches.[^skw-01]
-* LinkedIn, SkyWater Technology Foundry listings — defect-metrology
+* [LinkedIn, SkyWater Technology Foundry listings](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — defect-metrology
   tools.[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the two-stage
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the two-stage
   low-temperature ash.[^pat-strip-mosel]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing.[^wiki-ash]
-* Wikipedia, *Piranha solution* and *RCA clean* — the wet
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing.[^wiki-ash]
+* Wikipedia, [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) and [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — the wet
   chemistries.[^wiki-piranha][^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   resist stripping and cleaning.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD doses that
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD doses that
   set the crust.[^txt-04]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash and
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ash and
   wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the carbonised
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised
   layer of high-dose implanted resist, the residues of O₂ ashing and a
   two-step ashing process (abstract).[^fujimura-1989]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — nitrogen
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — nitrogen
   addition in downstream ashing.[^fujimura-1990]
-* Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1991 — O₂ + H₂O
+* [Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1991](<https://doi.org/10.1116/1.585575>) — O₂ + H₂O
   downstream stripping.[^fujimura-1991]
-* Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994 —
+* [Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994](<https://doi.org/10.1116/1.587773>) —
   sodium-free ashing with water vapour.[^fujimura-1994]
-* Horsky, IIT 1998 — resist outgassing in high-energy and high-current
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing in high-energy and high-current
   implanters.[^horsky-1998]
-* Roche, Michaud and Bruel, *MRS Proc.* 1985 — outgassing of resist
+* [Roche, Michaud and Bruel, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-45-203>) — outgassing of resist
   during implantation.[^roche-1985]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet cleaning as
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet cleaning as
   an alternative to hot SPM/SC-1.[^ohmi-1996]
-* Kern, *Handbook of Silicon Wafer Cleaning Technology* — overview of
+* [Kern, *Handbook of Silicon Wafer Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — overview of
   cleaning chemistry and contamination.[^kern-handbook]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — post-implant strip and clean.[^reinhardt-2010]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — post-implant strip and clean.[^reinhardt-2010]
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the
   low-temperature dry strip after implantation.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — ashing designed around
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — ashing designed around
   the carbonised crust.[^pat-strip-tsmc]
-* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — a downstream
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — a downstream
   microwave asher.[^pat-asher-fusion]
-* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — a plasma
+* [Becknell, Hammar and Ferris (Axcelis), US 7,449,416](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>) — a plasma
   ashing process for higher removal rate.[^pat-asher-axcelis]
 
 ## Open questions

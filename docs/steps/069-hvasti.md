@@ -197,59 +197,59 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — 40° HV tip angle, 23°
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — 40° HV tip angle, 23°
   twist, 0.3 µm HV-tip resist, 0.232 µm shadowing, 0.02 µm penetration,
   0.013 µm blocking distance, 0.5 µm HV MOSFET channel length, "N Tip
   (As)".[^pdk-03]
-* SkyWater PDK, *Device Details* — the 5 V NMOS family and the 0.9 µm
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the 5 V NMOS family and the 0.9 µm
   minimum gate length of the native 5 V NMOS.[^pdk-07]
-* SkyWater PDK, *High Voltage Methodology* — 110 Å oxide; N-well drain
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — 110 Å oxide; N-well drain
   extensions for the VHV devices.[^pdk-hv]
-* SkyWater, *Facilities & Capabilities* — the Axcelis 8250's arsenic,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Axcelis 8250's arsenic,
   dose and "0-60 deg tilt".[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   tool class.[^axcelis-8250]
 
 ### High-level understanding
 
-* Wikipedia, *Hot-carrier injection* — the failure mode.[^wiki-hci]
-* Wikipedia, *Ion implantation* — tilt, {term}`channelling`, sources.[^wiki-implant]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD, LATID
+* [Wikipedia, *Hot-carrier injection*](<https://en.wikipedia.org/wiki/Hot-carrier_injection>) — the failure mode.[^wiki-hci]
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — tilt, {term}`channelling`, sources.[^wiki-implant]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD, LATID
   and hot-carrier design.[^txt-04]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — implantation
   and junction formation.[^txt-01]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — dopant behaviour in
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — dopant behaviour in
   shallow junctions.[^rev-05]
 
 ### Deep dive
 
-* Hori (Matsushita), IEDM 1989 — the LATID transistor.[^hori-1989-latid]
-* Hori et al. (Matsushita), *IEEE TED* 1992 — LATID technology in
+* [Hori (Matsushita), IEDM 1989](<https://doi.org/10.1109/IEDM.1989.74169>) — the LATID transistor.[^hori-1989-latid]
+* [Hori et al. (Matsushita), *IEEE TED* 1992](<https://doi.org/10.1109/16.158803>) — LATID technology in
   full: tilt, dose, overlap and reliability.[^hori-1992]
-* Ogura et al. (IBM), *IEEE TED* 1980 — the LDD.[^ogura-1980]
-* Ogura et al. (IBM), IEDM 1981 — elimination of hot-electron gate
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the LDD.[^ogura-1980]
+* [Ogura et al. (IBM), IEDM 1981](<https://doi.org/10.1109/IEDM.1981.190171>) — elimination of hot-electron gate
   current by the LDD structure.[^ogura-1981]
-* Takeda et al. (Hitachi), *IEEE TED* 1982 — drain structures for
+* [Takeda et al. (Hitachi), *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20752>) — drain structures for
   minimum hot-carrier generation.[^takeda-1982]
-* Hu et al. (Berkeley), *IEEE TED* 1985 — the hot-electron lifetime
+* [Hu et al. (Berkeley), *IEEE TED* 1985](<https://doi.org/10.1109/T-ED.1985.21952>) — the hot-electron lifetime
   model.[^hu-1985-hci]
-* Rafí and Campabadal, *Solid-State Electronics* 2001 — LDD versus
+* [Rafí and Campabadal, *Solid-State Electronics* 2001](<https://doi.org/10.1016/S0038-1101(01)00004-1>) — LDD versus
   LATID hot-carrier degradation.[^rafi-2001]
-* King, Lacoe and Wang-Ratkovic, IRPS 2000 — spacer oxide and
+* [King, Lacoe and Wang-Ratkovic, IRPS 2000](<https://doi.org/10.1109/RELPHY.2000.843895>) — spacer oxide and
   worst-case stress in LDD NMOS.[^king-2000]
-* Chen et al., *Solid-State Electronics* 1995 — beam shadowing in
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — beam shadowing in
   LATID MOSFETs.[^chen-1995]
-* Mitros et al. (TI), *IEEE TED* 2001 — the drain-extended
+* [Mitros et al. (TI), *IEEE TED* 2001](<https://doi.org/10.1109/16.936703>) — the drain-extended
   alternative.[^mitros-2001]
-* Kouznetsov (Cypress), US 6,531,366 — self-aligned {term}`graded junctions <graded junction>`
+* [Kouznetsov (Cypress), US 6,531,366](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6531366>) — self-aligned {term}`graded junctions <graded junction>`
   for a high-voltage device.[^pat-hv-graded-cyp]
-* Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted-angle
+* [Lin, Yoo and Liang (TSMC), US 5,372,957](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5372957>) — multiple tilted-angle
   implantation with rotation.[^pat-quad-tsmc]
-* Lee et al. (Genus), IIT 1996 — resist outgassing under
+* [Lee et al. (Genus), IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — resist outgassing under
   implantation.[^lee-1996]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) — the
   thermal-wave monitor.[^smith-1985]
 
 ## Open questions

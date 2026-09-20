@@ -157,61 +157,61 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — GaSonics PEP; Iridia; Mattson
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — GaSonics PEP; Iridia; Mattson
   Aspen II; Akrion Gamma; DNS and FSI Mercury benches with
   "HF/SC1/SC2".[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist thickness
   1.14 µm.[^pdk-03]
-* LinkedIn, SkyWater Technology Foundry listings — defect-metrology
+* [LinkedIn, SkyWater Technology Foundry listings](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — defect-metrology
   tools.[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the two-stage
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the two-stage
   low-temperature ash.[^pat-strip-mosel]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing.[^wiki-ash]
-* Wikipedia, *Piranha solution* and *RCA clean* — SPM, SC-1 and
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing.[^wiki-ash]
+* Wikipedia, [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) and [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SPM, SC-1 and
   SC-2.[^wiki-piranha][^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   resist stripping, wafer cleaning and queue times.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD doses that
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD doses that
   set the crust.[^txt-04]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash and
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ash and
   wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution and chemistry of
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution and chemistry of
   the {term}`RCA clean`, including SC-2's role against metals.[^kern-1990]
-* Kern, *Handbook of Silicon Wafer Cleaning Technology* — cleaning
+* [Kern, *Handbook of Silicon Wafer Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — cleaning
   chemistry and contamination control before thermal steps.[^kern-handbook]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — post-implant strip and pre-anneal cleaning.[^reinhardt-2010]
-* Ohmi, *J. Electrochem. Soc.* 1996 — a room-temperature clean that
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — post-implant strip and pre-anneal cleaning.[^reinhardt-2010]
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — a room-temperature clean that
   replaces the hot RCA sequence.[^ohmi-1996]
-* ITRS 2001, *Front End Processes* — surface-preparation
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — surface-preparation
   requirements for metallic and particle contamination.[^itrs-01]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989 — the carbonised
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised
   layer of high-dose implanted resist, the residues of O₂ ashing and a
   two-step ashing process (abstract).[^fujimura-1989]
-* Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990 — nitrogen in
+* [Fujimura et al. (Fujitsu), *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — nitrogen in
   downstream ashing.[^fujimura-1990]
-* Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994 —
+* [Fujimura et al. (Fujitsu), *J. Vac. Sci. Technol. B* 1994](<https://doi.org/10.1116/1.587773>) —
   sodium-free ashing with water vapour, a contamination argument
   relevant before an anneal.[^fujimura-1994]
-* Orvek and Huffman, *NIM B* 1985 — the carbonised layer in
+* [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — the carbonised layer in
   implanted resist.[^orvek-1985]
-* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the anneal
+* [Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — the anneal
   conditions this clean prepares the wafer for.[^stolk-1997]
-* Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — spike
+* [Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999](<https://doi.org/10.1007/s11664-999-0118-7>) — spike
   anneal ramp rates.[^agarwal-1999]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — low-temperature
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — low-temperature
   dry strip after implantation.[^pat-strip-mosel]
-* Nakayama et al. (ULVAC), US 5,795,831 — a cold strip for implanted
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — a cold strip for implanted
   resist.[^pat-strip-ulvac]
-* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — a plasma
+* [Becknell, Hammar and Ferris (Axcelis), US 7,449,416](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>) — a plasma
   ashing process for higher removal rate.[^pat-asher-axcelis]
 
 ## Open questions

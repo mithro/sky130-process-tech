@@ -155,56 +155,56 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — ashers; Akrion, DNS and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ashers; Akrion, DNS and
   FSI benches with their chemistries.[^skw-01]
-* LinkedIn, SkyWater *Defect Technician 2* posting — the
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the
   defect-metrology tool list read as KLA-Tencor Surfscan SP1 and
   AIT.[^job-06]
 * SkyWater, Form S-1 and Form 10-K — chemical suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — two-stage
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — two-stage
   ash.[^pat-strip-mosel]
 
 ### High-level understanding
 
 * Wikipedia, *Plasma ashing* and *RCA clean*.[^wiki-ash][^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   cleaning before furnace steps.[^txt-02]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — wet
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — wet
   benches and dryers.[^txt-07]
 
 ### Deep dive
 
 * Kern and Puotinen, *RCA Review* 1970 — the original SC-1/SC-2
   sequence.[^kern-1970]
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution of wafer
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer
   cleaning.[^kern-1990]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — the carbonised layer
+* [Fujimura et al., *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer
   of implanted resist and a two-step H₂-RIE-plus-downstream ashing
   process, a different two-step sequence from the cold-then-hot one
   this page describes.[^fujimura-1989]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1990 — nitrogen additions in
+* [Fujimura et al., *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — nitrogen additions in
   downstream ashing.[^fujimura-1990]
-* Lee, *Electrochem. Solid-State Lett.* 1999 — silicon etch rate in
+* [Lee, *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390773>) — silicon etch rate in
   SC-1.[^lee-kt-1999]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature cleaning as
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature cleaning as
   the alternative to hot RCA steps.[^ohmi-1996]
 * Hu, *J. Appl. Phys.* 1991 — nitride film stress and why a thin
   oxide under a nitride is welcome.[^hu-1991] Temple-Boyer et al.,
   *J. Vac. Sci. Technol. A* 1998 — ≈600 MPa for the lowest-stress
   stoichiometric silane/ammonia LPCVD films, and the NH₃/SiH₄ ratio as
   the dominant stress parameter.[^temple-boyer-1998]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology* — pre-deposition cleaning and drying.[^reinhardt-2008]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — post-implant stripping in a modern
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>) — pre-deposition cleaning and drying.[^reinhardt-2008]
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — post-implant stripping in a modern
   handbook.[^reinhardt-2010]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — cold first
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — cold first
   ash.[^pat-strip-mosel]
-* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — asher design
+* [Becknell, Hammar and Ferris (Axcelis), US 7,449,416](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>) — asher design
   for removal rate.[^pat-asher-axcelis]
-* Roche, Michaud and Bruel, *MRS Proc.* 1985 — resist outgassing
+* [Roche, Michaud and Bruel, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-45-203>) — resist outgassing
   during implantation.[^roche-1985]
-* ITRS 2001, *Front End Processes* — surface preparation before
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — surface preparation before
   gate-stack steps.[^itrs-01]
 
 ## Open questions

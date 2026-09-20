@@ -212,9 +212,9 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * SkyWater PDK, SPICE model of `nfet_01v8` — `toxe`
   4.148 nm.[^pdk-model-nfet01v8]
-* SkyWater, *Facilities & Capabilities* — Akrion, DNS, FSI and SEZ wet
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Akrion, DNS, FSI and SEZ wet
   tools; ashers.[^skw-01]
-* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*
+* [SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>)
   — the SEZ etcher.[^skw-07]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
@@ -230,34 +230,34 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Buffered oxide etch* — BOE and its etch rate.[^wiki-boe]
-* Wikipedia, *RCA clean* — SC-1 and SC-2.[^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>) — BOE and its etch rate.[^wiki-boe]
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2.[^wiki-rca]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   wet etching and cleaning.[^txt-02]
 
 ### Deep dive
 
-* Judge, *J. Electrochem. Soc.* 1971 — SiO₂ dissolution kinetics in
+* [Judge, *J. Electrochem. Soc.* 1971](<https://doi.org/10.1149/1.2407835>) — SiO₂ dissolution kinetics in
   acidic fluoride solutions.[^judge-1971]
-* Kikuyama et al., *J. Electrochem. Soc.* 1994 — extremely dilute HF
+* [Kikuyama et al., *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054733>) — extremely dilute HF
   and its etching reaction.[^kikuyama-1994]
-* Monk, Soane and Howe, *J. Electrochem. Soc.* 1994 — HF etching of
+* [Monk, Soane and Howe, *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054696>) — HF etching of
   oxide films: observations and model.[^monk-1994]
-* Cerofolini, *Appl. Surf. Sci.* 1998 — hydrogen termination after HF
+* [Cerofolini, *Appl. Surf. Sci.* 1998](<https://doi.org/10.1016/S0169-4332(98)00182-2>) — hydrogen termination after HF
   etching.[^cerofolini-1998]
-* Beverina et al. (STMicroelectronics), *Solid State Phenomena* 2003 —
+* [Beverina et al. (STMicroelectronics), *Solid State Phenomena* 2003](<https://doi.org/10.4028/www.scientific.net/SSP.92.235>) —
   the resist / wet-etch couple for dual gate oxide.[^beverina-2003]
-* Lee et al., ICVC 1999 — gate oxide thinning at the STI edge in the
+* [Lee et al., ICVC 1999](<https://doi.org/10.1109/ICVC.1999.820895>) — gate oxide thinning at the STI edge in the
   dual gate oxide process.[^lee-1999-icvc]
-* Kim et al., SSDM 2001 — an STI scheme to compensate thick-oxide
+* [Kim et al., SSDM 2001](<https://doi.org/10.7567/SSDM.2001.A-6-6>) — an STI scheme to compensate thick-oxide
   thinning at the corner.[^kim-2001]
-* Lee (Hyundai), *Electrochem. Solid-State Lett.* 1999 — a dual gate
+* [Lee (Hyundai), *Electrochem. Solid-State Lett.* 1999](<https://doi.org/10.1149/1.1390957>) — a dual gate
   oxide process with improved {term}`gate-oxide integrity <gate oxide integrity>`.[^lee-1999]
-* Kern, *J. Electrochem. Soc.* 1990 — wafer-cleaning chemistry.[^kern-1990]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — wafer-cleaning chemistry.[^kern-1990]
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature
   cleaning.[^ohmi-1996]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — pre-gate cleans.[^reinhardt-2010]
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — pre-gate cleans.[^reinhardt-2010]
 
 ## Open questions
 

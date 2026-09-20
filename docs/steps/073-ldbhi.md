@@ -166,68 +166,68 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — SONOS cell W/L, programme/erase
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — SONOS cell W/L, programme/erase
   conditions.[^pdk-07]
-* SkyWater PDK, *Layers Reference* — `ldntm` "N-tip implant on SONOS
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `ldntm` "N-tip implant on SONOS
   devices".[^pdk-06]
-* SkyWater, *Facilities & Capabilities* — the Axcelis 8250 species,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Axcelis 8250 species,
   dose and "0-60 deg tilt"; no indium listed.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
+* [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) —
   low surface doping and deeper, heavier channel implants for the
   cell.[^cyp-25]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   tool class.[^axcelis-8250]
-* Krivokapic and Milic (AMD), US 6,238,982 — boron and BF₂ energies
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — boron and BF₂ energies
   and doses for a laterally doped channel implant self-aligned to the
   gate pillars.[^pat-vt-amd]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — tilt, channelling and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — tilt, channelling and
   damage.[^wiki-implant]
-* Wikipedia, *Boron trifluoride* — the boron source gas.[^wiki-bf3]
-* Wikipedia, *SONOS* — the cell.[^wiki-sonos]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — halo and
+* [Wikipedia, *Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>) — the boron source gas.[^wiki-bf3]
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the cell.[^wiki-sonos]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — halo and
   pocket engineering.[^txt-04]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — implantation
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — implantation
   and {term}`TED`.[^txt-01]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — non-uniform
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — non-uniform
   channel doping and short-channel thresholds.[^taur-2009]
 
 ### Deep dive
 
-* Codella and Ogura (IBM), IEDM 1985 — the original halo.[^codella-1985]
-* Hori and Kurimoto, *IEEE EDL* 1988 — the large-tilt punch-through
+* [Codella and Ogura (IBM), IEDM 1985](<https://doi.org/10.1109/IEDM.1985.190938>) — the original halo.[^codella-1985]
+* [Hori and Kurimoto, *IEEE EDL* 1988](<https://doi.org/10.1109/55.20422>) — the large-tilt punch-through
   stopper.[^hori-1988]
-* Taur, Wann and Frank (IBM), IEDM 1998 — super-halo design: pockets
+* [Taur, Wann and Frank (IBM), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746474>) — super-halo design: pockets
   at the channel ends, light doping in between.[^taur-1998]
-* Lu and Sung, *IEEE EDL* 1989 — the reverse short-channel
+* [Lu and Sung, *IEEE EDL* 1989](<https://doi.org/10.1109/55.43095>) — the reverse short-channel
   effect.[^lu-1989-rsce]
-* Rafferty et al. (AT&T), IEDM 1993 — its explanation by defect
+* [Rafferty et al. (AT&T), IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347345>) — its explanation by defect
   gradients.[^rafferty-1993]
-* Machala et al. (TI), SISPAD 1997 — boron segregation and TED in the
+* [Machala et al. (TI), SISPAD 1997](<https://doi.org/10.1109/SISPAD.1997.621357>) — boron segregation and TED in the
   reverse short-channel effect.[^machala-1997]
-* Shahidi et al. (IBM), *IEEE EDL* 1993 — indium for steep p-type
+* [Shahidi et al. (IBM), *IEEE EDL* 1993](<https://doi.org/10.1109/55.225595>) — indium for steep p-type
   profiles.[^shahidi-1993]
-* Eaglesham et al., *Appl. Phys. Lett.* 1994 — the "+1" interstitial
+* [Eaglesham et al., *Appl. Phys. Lett.* 1994](<https://doi.org/10.1063/1.112725>) — the "+1" interstitial
   source of boron TED after sub-amorphising implants.[^eaglesham-1994]
-* Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997 — the physics of
+* [Stolk et al. (Bell Labs), *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — the physics of
   transient enhanced diffusion.[^stolk-1997]
-* Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — ramp rate
+* [Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999](<https://doi.org/10.1007/s11664-999-0118-7>) — ramp rate
   and boron junction movement, the case for a {term}`spike anneal`.[^agarwal-1999]
-* White, Adams and Bu, *IEEE Circuits & Devices* 2000 — SONOS cell
+* [White, Adams and Bu, *IEEE Circuits & Devices* 2000](<https://doi.org/10.1109/101.857747>) — SONOS cell
   operation and the disturb mechanisms the pocket affects.[^pap-01]
-* Chen et al., *Solid-State Electronics* 1995 — shadowing of tilted
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — shadowing of tilted
   implants by neighbouring gates.[^chen-1995]
-* Pan (Chartered), US 5,595,919 — a self-aligned halo with limited
+* [Pan (Chartered), US 5,595,919](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5595919>) — a self-aligned halo with limited
   junction-capacitance penalty.[^pat-halo-chartered]
-* Lin, Yoo and Liang (TSMC), US 5,372,957 — multiple tilted-angle
+* [Lin, Yoo and Liang (TSMC), US 5,372,957](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5372957>) — multiple tilted-angle
   implantation with rotation.[^pat-quad-tsmc]
-* Hwang (Goldstar), US 5,364,807 — an {term}`LDD` transistor with a halo
+* [Hwang (Goldstar), US 5,364,807](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5364807>) — an {term}`LDD` transistor with a halo
   punch-through stopper.[^pat-halo-goldstar]
-* Yu (AMD), US 6,630,385 — differential halo implants and
+* [Yu (AMD), US 6,630,385](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6630385>) — differential halo implants and
   anneals.[^pat-halo-amd-diff]
 
 ## Open questions

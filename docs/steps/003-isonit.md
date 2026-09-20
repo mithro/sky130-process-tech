@@ -180,15 +180,15 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Aviza furnaces; LPCVD
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Aviza furnaces; LPCVD
   nitride; BTBAS nitride.[^skw-01]
-* SkyWater PDK, *Criteria & Assumptions* — "field oxide (above silicon
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "field oxide (above silicon
   surface) … underneath poly" 0.07 µm.[^pdk-03]
-* Ramkumar et al. (Cypress), US 6,969,689 — DCS/NH₃ LPCVD nitride in
+* [Ramkumar et al. (Cypress), US 6,969,689](<https://patents.google.com/patent/US6969689B1/en>) — DCS/NH₃ LPCVD nitride in
   the ONO stack.[^pat-01]
-* Currie and Lochtefeld (AmberWave), US 6,960,781 — nitride mask
+* [Currie and Lochtefeld (AmberWave), US 6,960,781](<https://patents.google.com/patent/US6960781B2/en>) — nitride mask
   500–2000 Å; CMP stop on nitride.[^pat-sti-amberwave]
-* van Gelder and Hauser, *J. Electrochem. Soc.* 1967 — hot phosphoric
+* [van Gelder and Hauser, *J. Electrochem. Soc.* 1967](<https://doi.org/10.1149/1.2426757>) — hot phosphoric
   etch rates.[^vgh-1967]
 * Moov marketplace, Aviza / SVG / Thermco AVP-8000 listing
   (weak).[^aviza-avp]
@@ -200,46 +200,46 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Silicon nitride* — the LPCVD reaction, hot H₃PO₄ etch
+* [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — the LPCVD reaction, hot H₃PO₄ etch
   and use as an oxidation mask.[^wiki-sin]
-* Wikipedia, *Chemical vapor deposition* — LPCVD in
+* [Wikipedia, *Chemical vapor deposition*](<https://en.wikipedia.org/wiki/Chemical_vapor_deposition>) — LPCVD in
   context.[^wiki-cvd]
-* Wikipedia, *Shallow trench isolation* — the "protective
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the "protective
   nitride".[^wiki-sti]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — the
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
   {term}`CVD` chapter on LPCVD nitride.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the STI
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — the STI
   chapter.[^txt-05]
 
 ### Deep dive
 
-* Thung et al., *JTEC* 2016 — the fill-aspect-ratio definition that
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the fill-aspect-ratio definition that
   ties the nitride thickness to the HDP fill window.[^thung-2016]
-* Nandakumar et al., IEDM 1998 — the STI review, including the
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the STI review, including the
   stack and its role in corner rounding and CMP.[^rev-01]
-* Roenigk and Jensen, *J. Electrochem. Soc.* 1987 — a reactor model of
+* [Roenigk and Jensen, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100756>) — a reactor model of
   LPCVD nitride from DCS/NH₃, explaining thickness uniformity along a
   hot-wall tube.[^roenigk-1987]
-* Peev, Zambov and Yanakiev, *Thin Solid Films* 1990 — the kinetics of
+* [Peev, Zambov and Yanakiev, *Thin Solid Films* 1990](<https://doi.org/10.1016/0040-6090(90)90456-N>) — the kinetics of
   the DCS–NH₃ reaction and how the deposition rate depends on gas
   ratio, pressure and temperature.[^peev-1990]
-* Temple-Boyer et al., *J. Vac. Sci. Technol. A* 1998 — residual stress
+* [Temple-Boyer et al., *J. Vac. Sci. Technol. A* 1998](<https://doi.org/10.1116/1.581302>) — residual stress
   in LPCVD SiNₓ as a function of composition, the reason
   stoichiometric films are highly tensile.[^temple-boyer-1998]
-* Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — a review of silicon
+* [Habraken and Kuiper, *Mater. Sci. Eng. R* 1994](<https://doi.org/10.1016/0927-796X(94)90006-X>) — a review of silicon
   nitride and {term}`oxynitride` films: growth, composition, hydrogen content
   and etch behaviour.[^habraken-1994]
-* Stoney, *Proc. R. Soc. A* 1909 — the wafer-curvature relation used to
+* [Stoney, *Proc. R. Soc. A* 1909](<https://doi.org/10.1098/rspa.1909.0021>) — the wafer-curvature relation used to
   turn a bow measurement into a film stress.[^stoney-1909]
-* Hu, *J. Appl. Phys.* 1991 — how nitride stress on a pad oxide
+* [Hu, *J. Appl. Phys.* 1991](<https://doi.org/10.1063/1.349282>) — how nitride stress on a pad oxide
   generates dislocations during later oxidation.[^hu-1991]
-* Kooi, van Lierop and Appels, *J. Electrochem. Soc.* 1976 — the
+* [Kooi, van Lierop and Appels, *J. Electrochem. Soc.* 1976](<https://doi.org/10.1149/1.2133008>) — the
   nitride mask's edge behaviour during oxidation (the Kooi
   effect).[^kooi-1976]
-* Teasdale et al., *Electrochem. Solid-State Lett.* 2001 — single-wafer
+* [Teasdale et al., *Electrochem. Solid-State Lett.* 2001](<https://doi.org/10.1149/1.1359056>) — single-wafer
   RTCVD of DCS/NH₃ nitride, the alternative to a batch
   furnace.[^teasdale-2001]
-* Stanford Nanofabrication Facility, *Tystar LPCVD Tube Training* — a
+* [Stanford Nanofabrication Facility, *Tystar LPCVD Tube Training*](<https://snfguide.stanford.edu/guide/equipment/training/tystar-lpcvd-tube-training>) — a
   university facility guide to running a hot-wall LPCVD nitride
   tube.[^snf-lpcvd]
 

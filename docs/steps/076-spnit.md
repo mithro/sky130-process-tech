@@ -243,74 +243,74 @@ fab (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater PDK, process stack diagram — "SPNIT K=7.5".[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — "oxide spacer" 0.05 µm;
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "SPNIT K=7.5".[^pdk-04]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "oxide spacer" 0.05 µm;
   "poly cap after SPE" 0.2 µm; N⁺/P⁺ S/D junction entries.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — poly.1a 0.150 µm, poly.2
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — poly.1a 0.150 µm, poly.2
   0.210 µm.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — Aviza furnaces with LPCVD
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Aviza furnaces with LPCVD
   nitride and BTBAS nitride; "PECVD nitride C1".[^skw-01]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing — the furnace
+* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the furnace
   class.[^aviza-avp]
 
 ### High-level understanding
 
-* Wikipedia, *Silicon nitride* — LPCVD and PECVD nitride.[^wiki-sin]
+* [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — LPCVD and PECVD nitride.[^wiki-sin]
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   CVD nitride and step coverage.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — spacer
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — spacer
   formation in deep-submicron CMOS.[^txt-05]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — series
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — series
   resistance and the extension/spacer trade-off.[^taur-2009]
 
 ### Deep dive
 
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped drain
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped drain
   transistor that spacers exist to build.[^ogura-1980]
-* Tsang et al. (IBM), *IEEE TED* 1982 — the oxide sidewall-spacer
+* [Tsang et al. (IBM), *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20748>) — the oxide sidewall-spacer
   process: conformal deposition plus anisotropic etch-back.[^tsang-1982]
 * Ng and Lynch (AT&T), *IEEE TED* 1986 and 1987 — series resistance of
   the un-silicided extension under the spacer, and why it limits
   scaling.[^ng-1986][^ng-1987]
-* Goss and Thornburg, ASMC 1997 — integrating a nitride spacer into a
+* [Goss and Thornburg, ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630740>) — integrating a nitride spacer into a
   0.35 µm CMOS technology.[^goss-1997]
-* Regis et al. (Applied Materials), ASMC 1997 — the selective nitride
+* [Regis et al. (Applied Materials), ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — the selective nitride
   spacer etch the film is designed for.[^regis-1997]
-* Mizuno et al. (Toshiba), IEDM 1989 — high-permittivity spacers and
+* [Mizuno et al. (Toshiba), IEDM 1989](<https://doi.org/10.1109/IEDM.1989.74355>) — high-permittivity spacers and
   the gate-fringing field.[^mizuno-1989]
 * Shrivastava and Fitzpatrick, *IEEE TED* 1982, and McAndrew et al.,
   ICMTS 1994 — overlap/fringing capacitance models in which the
   spacer's permittivity appears.[^shrivastava-1982][^mcandrew-1994]
-* Sambonsugi and Sugii (Fujitsu), IRPS 1998 — hot-carrier mechanism
+* [Sambonsugi and Sugii (Fujitsu), IRPS 1998](<https://doi.org/10.1109/RELPHY.1998.670531>) — hot-carrier mechanism
   of NMOS with nitride spacers.[^sambonsugi-1998]
-* Hwang, Lee and Hwang, SSDM 1996 — nitride spacer versus hot-carrier
+* [Hwang, Lee and Hwang, SSDM 1996](<https://doi.org/10.7567/SSDM.1996.PC-4-6>) — nitride spacer versus hot-carrier
   reliability.[^hwang-1996]
-* Janapaty, Tsai and Prasad, SPIE 1998 — oxide/nitride composite
+* [Janapaty, Tsai and Prasad, SPIE 1998](<https://doi.org/10.1117/12.324387>) — oxide/nitride composite
   versus oxide spacers on 0.25 µm PMOS.[^janapaty-1998]
-* Shimaya (NTT), IRPS 1995 — water diffusion through nitride and
+* [Shimaya (NTT), IRPS 1995](<https://doi.org/10.1109/RELPHY.1995.513694>) — water diffusion through nitride and
   hot-carrier degradation.[^shimaya-1995]
-* Om et al., ICMTS 1995 — junction leakage versus spacer
+* [Om et al., ICMTS 1995](<https://doi.org/10.1109/ICMTS.1995.513968>) — junction leakage versus spacer
   material.[^om-1995]
 * Ito et al. (NEC), IEDM 2000, and Shimizu et al. (Hitachi), IEDM
   2001 — nitride film stress as a channel-strain
   variable.[^ito-2000][^shimizu-2001]
-* Gumpher et al., *J. Electrochem. Soc.* 2004, and Smith, Seutter and
-  Iyer, *J. Electrochem. Soc.* 2005 — BTBAS low-temperature LPCVD
+* Gumpher et al., [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.1690294>) 2004, and Smith, Seutter and
+  Iyer, [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.1870792>) 2005 — BTBAS low-temperature LPCVD
   nitride.[^gumpher-2004][^smith-2005]
-* Roenigk and Jensen, *J. Electrochem. Soc.* 1987 — DCS/NH₃ LPCVD
+* [Roenigk and Jensen, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100756>) — DCS/NH₃ LPCVD
   reactor model.[^roenigk-1987]
-* Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — nitride film
+* [Habraken and Kuiper, *Mater. Sci. Eng. R* 1994](<https://doi.org/10.1016/0927-796X(94)90006-X>) — nitride film
   properties and hydrogen.[^habraken-1994]
-* Temple-Boyer et al., *JVST A* 1998 — residual stress of LPCVD
+* [Temple-Boyer et al., *JVST A* 1998](<https://doi.org/10.1116/1.581302>) — residual stress of LPCVD
   nitride.[^temple-boyer-1998]
-* Smith et al., *J. Electrochem. Soc.* 1990, and Claassen et al.,
-  *J. Electrochem. Soc.* 1985 — PECVD nitride mechanism, composition
+* Smith et al., [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2086517>) 1990, and Claassen et al.,
+  [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2113980>) 1985 — PECVD nitride mechanism, composition
   and stress.[^smith-1990][^claassen-1985]
-* Hughey and Cook, *MRS Proc.* 2003 — irreversible stress change in
+* [Hughey and Cook, *MRS Proc.* 2003](<https://doi.org/10.1557/PROC-795-U1.6>) — irreversible stress change in
   PECVD nitride on heating.[^hughey-2003]
-* International Technology Roadmap for Semiconductors, 2001 *Front
-  End Processes* — the roadmap's sidewall-spacer-width figure, used
+* [International Technology Roadmap for Semiconductors, 2001 *Front
+  End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — the roadmap's sidewall-spacer-width figure, used
   here as a scale cross-check rather than a value.[^itrs-01]
 
 ## Open questions

@@ -159,57 +159,57 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "Gasonic PEP"; "Mattson
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "Gasonic PEP"; "Mattson
   Aspen2"; Iridia; Akrion Gamma with sulphuric/SC1/phosphoric/BOE and
   spin/IPA dry; DNS and FSI Mercury HF/SC1/SC2.[^skw-01]
-* LinkedIn, SkyWater Defect Technician 2 posting —
+* [LinkedIn, SkyWater Defect Technician 2 posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) —
   "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-* Kim et al. (Spansion), US 7,439,141 — pad-oxide undercut of
+* [Kim et al. (Spansion), US 7,439,141](<https://patents.google.com/patent/US7439141B2/en>) — pad-oxide undercut of
   100–300 Å before liner oxidation.[^pat-sti-cr]
 
 ### High-level understanding
 
-* Wikipedia, *RCA clean* — SC-1 and SC-2 compositions and
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2 compositions and
   temperatures.[^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   resist stripping; wafer cleaning.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 —
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) —
   implanted-resist stripping.[^txt-05]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash and
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ash and
   wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* Nandakumar et al., IEDM 1998 — the {term}`STI` flow and its defectivity
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the {term}`STI` flow and its defectivity
   drivers.[^rev-01]
-* Thung et al., *JTEC* 2016 — the post-trench-etch wet clean in a
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the post-trench-etch wet clean in a
   0.13 µm STI module.[^thung-2016]
-* Orvek and Huffman, *NIM B* 1985 — the carbonised layer that forms on
+* [Orvek and Huffman, *NIM B* 1985](<https://doi.org/10.1016/0168-583X(85)90421-5>) — the carbonised layer that forms on
   ion-implanted photoresist, the reason implant strips are
   hard.[^orvek-1985]
-* Smith, *Ion Implantation: Equipment and Techniques* 1983 — resist
+* [Smith, *Ion Implantation: Equipment and Techniques* 1983](<https://doi.org/10.1007/978-3-642-69156-0_25>) — resist
   heating, flow and crust formation during implantation.[^smith-1983]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation, which conditions the crust this step
   removes.[^lee-1996]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1990 — the effect of nitrogen
+* [Fujimura et al., *Jpn. J. Appl. Phys.* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — the effect of nitrogen
   addition on downstream O₂ ashing, the chemistry behind an N₂/O₂
   first stage.[^fujimura-1990]
-* Fujimura et al., *J. Vac. Sci. Technol. B* 1991 — resist stripping in
+* [Fujimura et al., *J. Vac. Sci. Technol. B* 1991](<https://doi.org/10.1116/1.585575>) — resist stripping in
   an O₂ + H₂O downstream plasma, a low-damage
   alternative.[^fujimura-1991]
-* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 — liquid
+* [Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006](<https://doi.org/10.1149/1.2195884>) — liquid
   formulations for stripping high-dose implanted resist when ashing
   alone is insufficient.[^visintin-2006]
-* Bergman and Leonhard, *Solid State Phenomena* 2009 — wet stripping of
+* [Bergman and Leonhard, *Solid State Phenomena* 2009](<https://doi.org/10.4028/www.scientific.net/SSP.145-146.281>) — wet stripping of
   high-dose implanted resist with sulphur trioxide, a sulphuric-family
   alternative to SPM.[^bergman-2009]
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution of the {term}`RCA clean`
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of the {term}`RCA clean`
   used as the pre-furnace clean.[^kern-1990]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet cleaning,
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet cleaning,
   the later alternative to hot RCA chemistry.[^ohmi-1996]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology* — the reference volume on wet and dry cleaning, resist
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>) — the reference volume on wet and dry cleaning, resist
   removal and particle control.[^reinhardt-2008]
 
 ## Open questions

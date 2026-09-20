@@ -175,13 +175,13 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
-* SkyWater PDK, *Device Details* — `pfet_01v8_hvt`, `cap_var_hvt`,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the site tool list.[^skw-01]
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `pfet_01v8_hvt`, `cap_var_hvt`,
   inverter delay tables.[^pdk-07]
-* SkyWater PDK, *Periphery rules* — `hvtp` function text.[^pdk-periph]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `hvtp` function text.[^pdk-periph]
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
-* SKY130 raw-data repository, 1.8 V transistor files — `pfet_01v8_hvt`
+* [SKY130 raw-data repository, 1.8 V transistor files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — `pfet_01v8_hvt`
   and `pfet_01v8` thresholds and drain currents side by side (our
   extraction).[^raw-data-lv-mosfets]
 * SKY130 raw-data repository, varactor C–V files and test-tile pad
@@ -196,45 +196,45 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, sources, {term}`channelling` and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, sources, {term}`channelling` and
   tilt in one page.[^wiki-implant]
-* Wikipedia, *Threshold voltage* — the body-effect parameter containing
+* [Wikipedia, *Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>) — the body-effect parameter containing
   the channel doping.[^wiki-vt]
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — channel
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — channel
   engineering of submicron PMOS.[^txt-04]
 
 ### Deep dive
 
-* ITRS 2001, *Front End Processes* — Table 51 retrograde channel
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51 retrograde channel
   depth.[^itrs-01]
-* ITRS 2001, *Process Integration, Devices, and Structures* — multiple
+* [ITRS 2001, *Process Integration, Devices, and Structures*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>) — multiple
   threshold-voltage devices as a roadmap requirement.[^itrs-04]
-* Thompson, Packan and Bohr (Intel), VLSI 1996 — drive-current
+* [Thompson, Packan and Bohr (Intel), VLSI 1996](<https://doi.org/10.1109/VLSIT.1996.507830>) — drive-current
   trade-offs of super-steep retrograde channels.[^thompson-1996]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — low-Vt NMOS and
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — low-Vt NMOS and
   PMOS defined by masked Vt-adjust implants, including a {term}`counter-doped <counter-doping>`
   channel.[^pat-vt-rrr]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — Vt-adjust
   boron at 1e12–1e13 cm⁻² and 50–100 keV, chained {term}`punch-through`
   barriers, and a well anneal "at approximately 900° C. in a neutral
   ambient such as nitrogen for approximately 30 minutes" (the patent does
   not name the tool).[^pat-vt-lsi]
-* Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
+* [Shahidi et al. (IBM), *IEEE EDL* 1993](<https://doi.org/10.1109/55.225595>) — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
-* Wei et al., DAC 1998 — the circuit-level case for a second threshold
+* [Wei et al., DAC 1998](<https://doi.org/10.1109/DAC.1998.724521>) — the circuit-level case for a second threshold
   voltage.[^wei-1998]
-* Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels and
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — super-steep retrograde channels and
   multiple thresholds at 0.1 µm.[^taur-1997]
-* MacPherson, *Appl. Phys. Lett.* 1971 — the original
+* [MacPherson, *Appl. Phys. Lett.* 1971](<https://doi.org/10.1063/1.1653513>) — the original
   threshold-adjust-by-implantation paper.[^macpherson-1971]
-* Rafferty et al. (AT&T), IEDM 1993 — how implant damage and the anneal
+* [Rafferty et al. (AT&T), IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347345>) — how implant damage and the anneal
   reshape the channel profile.[^rafferty-1993]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   voltage versus channel doping and the mobility and body-effect
   penalties of a heavier channel.[^taur-2009]
 

@@ -213,19 +213,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "ONO Mask, ONOM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "ONO Mask, ONOM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `conom`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `conom`
   88:0 and 87:44; `tunm` 80:20.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — tunm.1, tunm.5, tunm.8.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — tunm.1, tunm.5, tunm.8.[^pdk-periph]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist
   thickness.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — lithography tools, tracks
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — lithography tools, tracks
   and metrology.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
-* Cypress/UMC press release — "three additional mask layers" for the
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
+* [Cypress/UMC press release](<https://www.prnewswire.com/news-releases/cypress-and-umc-deliver-ics-on-new-65-nanometer-sonos-embedded-flash-technology-126238008.html>) — "three additional mask layers" for the
   S65 process; no count is given for S8.[^cyp-22]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest —
+* [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) —
   "fewer extra lithography masks".[^cyp-25]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -238,33 +238,33 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography* — i-line, resolution and
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line, resolution and
   overlay.[^wiki-litho]
-* Wikipedia, *SONOS* — the stack being patterned.[^cyp-26]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the stack being patterned.[^cyp-26]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography.[^txt-02]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* van Haren et al., SPIE 2019 — alignment-mark placement and
+* [van Haren et al., SPIE 2019](<https://doi.org/10.1117/12.2536270>) — alignment-mark placement and
   layer-to-layer overlay.[^van-haren-2019]
-* Mack, *Fundamental Principles of Optical Lithography* — imaging
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging
   and resist theory for relaxed layers.[^mack-2007]
-* Baker and Capsuto, SPIE 1996 — ARC and CD control on an i-line
+* [Baker and Capsuto, SPIE 1996](<https://doi.org/10.1117/12.241869>) — ARC and CD control on an i-line
   0.35 µm device.[^baker-1996]
-* Kim et al. (Samsung), VLSI 2003 — a manufacturable embedded SONOS
+* [Kim et al. (Samsung), VLSI 2003](<https://doi.org/10.1109/VLSIT.2003.1221071>) — a manufacturable embedded SONOS
   module and its patterning.[^pap-03]
-* Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm local-SONOS
+* [Seo et al. (Samsung), *IEEE JSSC* 2005](<https://doi.org/10.1109/JSSC.2005.845564>) — a 130 nm local-SONOS
   embedded flash, another vendor's cell geometry.[^pap-02]
-* Jiew, Chien and Yung, NVMTS 2012 — the 2T-SONOS cell whose control
+* [Jiew, Chien and Yung, NVMTS 2012](<https://doi.org/10.1109/NVMTS.2013.6632849>) — the 2T-SONOS cell whose control
   gate the ONO island defines.[^jiew-2012]
-* Ramkumar et al. (Cypress), US 6,969,689 — the stack this mask
+* [Ramkumar et al. (Cypress), US 6,969,689](<https://patents.google.com/patent/US6969689B1/en>) — the stack this mask
   protects.[^pat-01]
-* Taniguchi et al., IMW 2023 — a three-mask SONOS module on a 130 nm
+* [Taniguchi et al., IMW 2023](<https://doi.org/10.1109/IMW56887.2023.10145990>) — a three-mask SONOS module on a 130 nm
   platform.[^pap-05]
 
 ## Open questions

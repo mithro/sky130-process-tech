@@ -229,59 +229,59 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater PDK, *Periphery rules* — ct.1 0.170 µm, ct.2 0.190 µm,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — ct.1 0.170 µm, ct.2 0.190 µm,
   ct.4 0.000 µm.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — mcon etch-and-fill
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — mcon etch-and-fill
   capability 0.14 µm; "Standard contact bottom CD" 0.09 µm; contact
   bowing 0.015 µm per edge.[^pdk-03]
-* SkyWater PDK, *Process stack diagram* — `li` 0.10 µm, LINT 0.075 µm
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `li` 0.10 µm, LINT 0.075 µm
   (k 7.3), NILD2 0.265 µm.[^pdk-04]
-* SkyWater PDK, *Layers Reference* — `mcon` 67:44.[^pdk-06]
-* SkyWater PDK, *Parasitic Layout Extraction* — MCON 152 000 mΩ.[^pdk-08]
-* SkyWater, *Facilities & Capabilities* — DPS II, Lam 9400 TCP and
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `mcon` 67:44.[^pdk-06]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — MCON 152 000 mΩ.[^pdk-08]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — DPS II, Lam 9400 TCP and
   Lam 4400 gas lists; ashers; EKC solvents.[^skw-01]
 * Lam Research, Exelan launch (2001) and 10-K (2003).[^lam-exelan][^lam-10k]
-* SKY130 raw-data repository, test-tile pad documentation — the mcon
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the mcon
   contact-string and Kelvin structures of the published test
   tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*, *Dry etching*.[^wiki-rie][^wiki-dry-etch]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the etch
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the etch
   chapter; contact formation.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 —
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) —
   high-aspect-ratio contact etching.[^txt-05]
-* Nojiri, *Dry Etching Technology for Semiconductors* — oxide etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — oxide etch
   chemistry and endpoint.[^nojiri-2015]
 
 ### Deep dive
 
 * Flamm and Donnelly, 1981, and Winters and Coburn, 1992 — the
   surface chemistry of fluorocarbon selectivity.[^flamm-1981][^winters-1992]
-* Oehrlein, Zhang, Vender and Joubert, *JVST A* 1994 — oxide and
+* [Oehrlein, Zhang, Vender and Joubert, *JVST A* 1994](<https://doi.org/10.1116/1.578877>) — oxide and
   silicon etching in CF₄/CHF₃ high-density plasmas.[^oehrlein-1994b]
-* Standaert et al., *JVST A* 1998 — etching through a thick
+* [Standaert et al., *JVST A* 1998](<https://doi.org/10.1116/1.580978>) — etching through a thick
   steady-state fluorocarbon layer.[^standaert-1998]
-* Schaepkens et al., *JVST A* 1999 — the oxide-to-nitride selectivity
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — the oxide-to-nitride selectivity
   mechanism in inductively coupled fluorocarbon plasmas.[^schaepkens-1999]
-* Perry et al., *JVST A* 2001 — oxide etch rates and selectivity in a
+* [Perry et al., *JVST A* 2001](<https://doi.org/10.1116/1.1382874>) — oxide etch rates and selectivity in a
   high-density C₂F₆ plasma.[^perry-2001]
-* Coburn and Winters, *Appl. Phys. Lett.* 1989 — conductance limits
+* [Coburn and Winters, *Appl. Phys. Lett.* 1989](<https://doi.org/10.1063/1.101937>) — conductance limits
   in high-aspect-ratio feature etching.[^coburn-1989]
-* Doemling, Rueger and Oehrlein, *Appl. Phys. Lett.* 1996 — inverse
+* [Doemling, Rueger and Oehrlein, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116772>) — inverse
   RIE lag in oxide etching.[^doemling-1996]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — aspect-ratio and
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — aspect-ratio and
   loading effects reviewed.[^gottscho-1992]
-* Kastenmeier et al., *JVST A* 1996 — nitride and oxide etching in
+* [Kastenmeier et al., *JVST A* 1996](<https://doi.org/10.1116/1.580203>) — nitride and oxide etching in
   CF₄/O₂/N₂, the breakthrough chemistry.[^kastenmeier-1996]
-* Wodecki, SPIE 1999 — endpoint detection on low-open-area
+* [Wodecki, SPIE 1999](<https://doi.org/10.1117/12.361313>) — endpoint detection on low-open-area
   dielectric etches.[^wodecki-1999]
-* Cacciato et al., P2ID 2003 — charging damage during a contact etch
+* [Cacciato et al., P2ID 2003](<https://doi.org/10.1109/PPID.2003.1199721>) — charging damage during a contact etch
   landing on a conductive nitride.[^cacciato-2003]
-* Yin et al. (Applied Materials), US 5,540,824 — the multi-section
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the multi-section
   coil DPS reactor SkyWater lists.[^pat-dps-amat]
-* Ogle (Lam Research), US 4,948,458 — the transformer-coupled plasma
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the transformer-coupled plasma
   source.[^pat-tcp-lam]
 
 ## Open questions

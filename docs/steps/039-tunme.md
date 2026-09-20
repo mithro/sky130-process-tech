@@ -239,12 +239,12 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — programme/erase voltages and the
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — programme/erase voltages and the
   100K-cycle endurance.[^pdk-07]
-* SkyWater PDK, *Periphery rules* — tunm.3.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — Akrion, DNS, FSI and SEZ wet
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — tunm.3.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Akrion, DNS, FSI and SEZ wet
   tools; ashers.[^skw-01]
-* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*
+* [SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>)
   — the SEZ etcher.[^skw-07]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
@@ -262,31 +262,31 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Buffered oxide etch* — BOE composition and etch
+* [Wikipedia, *Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>) — BOE composition and etch
   rate.[^wiki-boe]
-* Wikipedia, *RCA clean* — SC-1 and SC-2.[^wiki-rca]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2.[^wiki-rca]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   wet etching and wafer cleaning.[^txt-02]
 
 ### Deep dive
 
-* Judge, *J. Electrochem. Soc.* 1971 — the dissolution kinetics of
+* [Judge, *J. Electrochem. Soc.* 1971](<https://doi.org/10.1149/1.2407835>) — the dissolution kinetics of
   SiO₂ in acidic fluoride solutions.[^judge-1971]
-* Kikuyama et al., *J. Electrochem. Soc.* 1994 — dissociation state
+* [Kikuyama et al., *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054733>) — dissociation state
   and etching reaction of extremely dilute HF.[^kikuyama-1994]
-* Monk, Soane and Howe, *J. Electrochem. Soc.* 1994 — HF etching of
+* [Monk, Soane and Howe, *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2054696>) — HF etching of
   silicon dioxide, experiments and model.[^monk-1994]
-* Cerofolini, *Appl. Surf. Sci.* 1998 — how HF etching leaves
+* [Cerofolini, *Appl. Surf. Sci.* 1998](<https://doi.org/10.1016/S0169-4332(98)00182-2>) — how HF etching leaves
   hydrogen-terminated silicon.[^cerofolini-1998]
-* Kern, *J. Electrochem. Soc.* 1990 — the evolution of wafer cleaning
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer cleaning
   and the RCA sequence.[^kern-1990]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet cleaning
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet cleaning
   as an alternative to hot RCA.[^ohmi-1996]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — pre-gate cleans and post-implant strips.[^reinhardt-2010]
-* Fujimura et al., *Jpn. J. Appl. Phys.* 1989 — ashing of
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — pre-gate cleans and post-implant strips.[^reinhardt-2010]
+* [Fujimura et al., *Jpn. J. Appl. Phys.* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — ashing of
   ion-implanted resist.[^fujimura-1989]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — low-temperature
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — low-temperature
   stripping of implanted resist.[^pat-strip-mosel]
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read

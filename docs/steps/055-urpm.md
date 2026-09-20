@@ -182,25 +182,25 @@ it as an open question, so the two pages should be read together.
 
 ### Cross-check
 
-* SkyWater PDK, *Device Details* — P− poly precision resistors,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — P− poly precision resistors,
   2000 Ω/sq, "a separate implant", specifications "TBD".[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — UHR poly 2000 Ω/sq.[^pdk-08]
-* SkyWater PDK, *Layers Reference* — `urpm` 79:20.[^pdk-06]
-* SkyWater PDK, *Masks* page — no ultra-high resistor mask
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — UHR poly 2000 Ω/sq.[^pdk-08]
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `urpm` 79:20.[^pdk-06]
+* [SkyWater PDK, *Masks* page](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — no ultra-high resistor mask
   listed.[^pdk-05]
-* SkyWater PDK, *Background* — "Poly resistor (`r`)" option.[^pdk-02]
-* SkyWater PDK, repository README — "high sheet rho poly
+* [SkyWater PDK, *Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) — "Poly resistor (`r`)" option.[^pdk-02]
+* [SkyWater PDK, repository README](<https://github.com/google/skywater-pdk>) — "high sheet rho poly
   resistor".[^pdk-10]
-* Edwards (Efabless), WOSET 2020 — "high and ultra-high sheet ρ
+* [Edwards (Efabless), WOSET 2020](<https://woset-workshop.github.io/PDFs/2020/a03.pdf>) — "high and ultra-high sheet ρ
   resistors".[^ann-15]
-* SkyWater PDK, *Periphery rules* — `rpm` geometry.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — photoresist thickness.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — litho tools.[^skw-01]
-* SkyWater, Form S-1 — resist suppliers.[^sec-01]
-* SKY130 raw-data repository, test-tile pad documentation — the 2 kΩ/sq
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `rpm` geometry.[^pdk-periph]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — photoresist thickness.[^pdk-03]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — litho tools.[^skw-01]
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — resist suppliers.[^sec-01]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the 2 kΩ/sq
   poly-resistor (URPM note) structures of the published test
   tile.[^raw-data-testtile-pads]
-* SKY130 raw-data repository, measured data — I–V sweeps of the 2 kΩ/sq
+* [SKY130 raw-data repository, measured data](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — I–V sweeps of the 2 kΩ/sq
   structures; the resistances and sheet resistance quoted here are our
   extraction.[^raw-data-passives]
 
@@ -209,46 +209,46 @@ it as an open question, so the two pages should be read together.
 * Wikipedia, *Photolithography*, *Photomask*, *Diazonaphthoquinone*,
   *Tetramethylammonium hydroxide*.[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
 * Wikipedia, *Sheet resistance*.[^wiki-rs]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography.[^txt-02]
-* Kamins, *Polycrystalline Silicon for Integrated Circuits and
-  Displays* — lightly doped poly.[^kamins-1998]
-* MicroChemicals, *Development of photoresists* — practical
+* [Kamins, *Polycrystalline Silicon for Integrated Circuits and
+  Displays*](<https://doi.org/10.1007/978-1-4615-5577-3>) — lightly doped poly.[^kamins-1998]
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — practical
   develop-process notes, including the 2.38 % TMAH
   developers.[^microchemicals-dev]
 
 ### Deep dive
 
-* Seto, *J. Appl. Phys.* 1975 — the model that puts 300 and
+* [Seto, *J. Appl. Phys.* 1975](<https://doi.org/10.1063/1.321593>) — the model that puts 300 and
   2000 Ω/sq on different parts of the same curve.[^seto-1975]
-* Tsang et al., *IEEE TSM* 2014 — resistance variation across
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — resistance variation across
   high-value poly resistor banks traced to hydrogen diffusion through
   eroded LPCVD-nitride corners.[^tsang-2014]
-* Wright et al., *J. Vac. Sci. Technol. B* 2010 — rf-sputtered
+* [Wright et al., *J. Vac. Sci. Technol. B* 2010](<https://doi.org/10.1116/1.3466531>) — rf-sputtered
   Cr–Si–B–SiO₂/Al₂O₃ thin-film resistors reaching 20 kΩ/sq at
   <200 ppm/°C: the non-poly route to a high-sheet-resistance, low-TCR
   film, and the yardstick the implanted-poly resistor is measured
   against.[^wright-2010]
-* Lane and Wrixon, *IEEE TED* 1989 — the design of thin-film poly
+* [Lane and Wrixon, *IEEE TED* 1989](<https://doi.org/10.1109/16.22479>) — the design of thin-film poly
   resistors for analogue ICs, and the published design space that
   brackets the 2000 Ω/sq target.[^lane-1989]
-* Lu, Gerzberg, Lu and Meindl, *IEEE TED* 1981 — poly resistor
+* [Lu, Gerzberg, Lu and Meindl, *IEEE TED* 1981](<https://doi.org/10.1109/T-ED.1981.20437>) — poly resistor
   optimisation.[^lu-1981]
-* Lu, Gerzberg and Meindl, *IEEE TED* 1982 — scaling limits of
+* [Lu, Gerzberg and Meindl, *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20762>) — scaling limits of
   high-value poly resistors.[^lu-1982]
-* Kato and Ono, *Jpn. J. Appl. Phys.* 1996 — temperature-coefficient
+* [Kato and Ono, *Jpn. J. Appl. Phys.* 1996](<https://doi.org/10.1143/JJAP.35.4209>) — temperature-coefficient
   changes in poly resistors.[^kato-1996]
-* Upreti and Singh, *Bull. Mater. Sci.* 1991 — grain-boundary effects
+* [Upreti and Singh, *Bull. Mater. Sci.* 1991](<https://doi.org/10.1007/BF02823239>) — grain-boundary effects
   in boron-doped poly.[^upreti-1991]
-* Chen et al., *Solid-State Electronics* 2000 — voltage coefficient of
+* [Chen et al., *Solid-State Electronics* 2000](<https://doi.org/10.1016/S0038-1101(00)00138-6>) — voltage coefficient of
   poly resistors, largest for the lightest doping.[^chen-2000]
-* Hook et al., *IEEE TED* 2003 — {term}`straggle` at resist edges.[^hook-2003]
-* Buffat and Adams (Zilog), US 6,576,405 — implant-mask lithography
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — {term}`straggle` at resist edges.[^hook-2003]
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — implant-mask lithography
   design space.[^pat-resist-zilog]
-* Bossung, SPIE 1977 — the exposure–focus process window.[^bossung-1977]
-* Levinson, *Principles of Lithography* — chapters on photoresists and
+* [Bossung, SPIE 1977](<https://doi.org/10.1117/12.955357>) — the exposure–focus process window.[^bossung-1977]
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on photoresists and
   overlay.[^levinson-2005]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
 
 ## Open questions

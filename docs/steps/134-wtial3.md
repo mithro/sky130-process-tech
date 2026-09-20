@@ -270,59 +270,59 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 
 ### Cross-check
 
-* Cypress, QTP 113005 (2013) — S8TNV-5R "Metal 3: 150A Ti / 7200A
+* [Cypress, QTP 113005 (2013)](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — S8TNV-5R "Metal 3: 150A Ti / 7200A
   Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005]
-* Cypress, QTP 123907/132302/132301 (2014) — S8DI "Metal 3: 500A
+* [Cypress, QTP 123907/132302/132301 (2014)](<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>) — S8DI "Metal 3: 500A
   TiW/21,250A Al 0.5% Cu/300A TiW"; the S8P change "excluding top
   metal layers".[^cyp-qtp-123907]
-* Cypress, QTP 030204 (2013) — RAM42HA at Fab 4: TiW/AlCu/TiW
+* [Cypress, QTP 030204 (2013)](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>) — RAM42HA at Fab 4: TiW/AlCu/TiW
   500/6 000/300 Å.[^cyp-qtp-030204]
-* SkyWater PDK, *Process stack diagram* — `met3` 0.845 µm; met3
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `met3` 0.845 µm; met3
   bottom 2.7861 µm.[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — metal 3 thickness 0.8,
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — metal 3 thickness 0.8,
   0.85 and 2 µm by flow; `MM3CD` 0.3/0.36/0.8 µm; `VIM2CD` 0.8 µm for
   S8TM.[^pdk-03]
-* SkyWater PDK, *Masks* — "Metal 3-TLM", "Metal 3-S8TM", "Metal
+* [SkyWater PDK, *Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — "Metal 3-TLM", "Metal 3-S8TM", "Metal
   3-PLM", all `MM3`; PLM flagged.[^pdk-05]
-* SkyWater PDK, *Parasitic Layout Extraction* — metal 3–4 47 mΩ/sq;
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — metal 3–4 47 mΩ/sq;
   metal 1–2 125 mΩ/sq.[^pdk-08]
-* SkyWater PDK, *Layers Reference* — `met3` 70:20; `capm` 89:44.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — m3.1, m3.2, m3.4, m3.6.[^pdk-periph]
-* SkyWater PDK, *Background* and *Device Details* — the
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `met3` 70:20; `capm` 89:44.[^pdk-06]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — m3.1, m3.2, m3.4, m3.6.[^pdk-periph]
+* SkyWater PDK, [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) and [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the
   inductor-capable option; the MiM capacitor at 2 fF/µm².[^pdk-02][^pdk-07]
-* SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal" film
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT PVD Metal" film
   list; metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — target suppliers.[^sec-01][^sec-02]
-* Hitachi Metals, US 5,160,534 — Ti:W target composition.[^pat-tiw-hitachi]
+* [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — Ti:W target composition.[^pat-tiw-hitachi]
 * Applied Materials, *Endura PVD*.[^amat-endura]
 
 ### High-level understanding
 
 * Wikipedia, *Electromigration*, *Sputter deposition*, *Interconnect
   (integrated circuits)*.[^wiki-em][^wiki-sputter][^wiki-interconnect]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and aluminium metallisation.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — multilevel
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — multilevel
   aluminium stacks and thick upper metals.[^txt-05]
-* Ohring, *Materials Science of Thin Films* — film growth, stress and
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — film growth, stress and
   structure.[^ohring-2002]
 
 ### Deep dive
 
-* Chu et al., VLSI-TSA 2001 — thick top metal for high-Q spiral
+* [Chu et al., VLSI-TSA 2001](<https://doi.org/10.1109/VTSA.2001.934506>) — thick top metal for high-Q spiral
   inductors on silicon.[^chu-2001]
 * Bohr (Intel), IEDM 1995, and Stamper, Fuselier and Tian (IBM), IITC
   1998 — interconnect scaling and wiring RC delay.[^bohr-1995][^stamper-1998]
-* ITRS 2001, *Interconnect* — aluminium metallisation at the 130 nm
+* [ITRS 2001, *Interconnect*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>) — aluminium metallisation at the 130 nm
   generation.[^itrs-02]
-* Zlatanović and Davinić, *Vacuum* 1990, and Chaudhari (IBM), *J.
-  Appl. Phys.* 1974 — hillock formation versus aluminium film
+* Zlatanović and Davinić, [*Vacuum*](<https://doi.org/10.1016/0042-207X(90)90144-N>) 1990, and Chaudhari (IBM), [*J.
+  Appl. Phys.*](<https://doi.org/10.1063/1.1663054>) 1974 — hillock formation versus aluminium film
   thickness and heat treatment.[^zlatanovic-1990][^chaudhari-1974]
-* Yue, Funsten and Taylor, IRPS 1985 — stress-induced voids in
+* [Yue, Funsten and Taylor, IRPS 1985](<https://doi.org/10.1109/IRPS.1985.362087>) — stress-induced voids in
   aluminium interconnects.[^yue-1985]
-* Stoney, *Proc. R. Soc. A* 1909 — film stress from wafer
+* [Stoney, *Proc. R. Soc. A* 1909](<https://doi.org/10.1098/rspa.1909.0021>) — film stress from wafer
   curvature.[^stoney-1909]
-* Rocke and Schneegans (Siemens), *JVST B* 1988 — a refractory cap
+* [Rocke and Schneegans (Siemens), *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — a refractory cap
   for anti-reflection and hillock suppression.[^rocke-1988]
 * Ghate et al. (TI), 1978; Olowolafe et al., 1985; Hartsough, 1979;
   Georgiou, Baker and Eshraghi, 1991 — Ti:W as barrier and cap: its
@@ -337,11 +337,11 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
   growth.[^ames-1970][^blech-1976][^filippi-1993][^nix-1992]
 * Knorr and Rodbell, 1996, and Kamoshida and Ito, 1997 — texture and
   the refractory underlayer.[^knorr-1996][^kamoshida-1997]
-* Thornton, *JVST* 1974 — the structure-zone model for thick sputtered
+* [Thornton, *JVST* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone model for thick sputtered
   films.[^thornton-1974]
 * Rossnagel et al., 1991, and Rossnagel, 1998 — collimated and
   ionised PVD for the thin underlayer.[^rossnagel-1991][^rossnagel-1998]
-* Greenwood and Prasad, ISDRS 2007 — a TiN-only bottom plate for a
+* [Greenwood and Prasad, ISDRS 2007](<https://doi.org/10.1109/ISDRS.2007.4422363>) — a TiN-only bottom plate for a
   MiM capacitor in an aluminium back end.[^greenwood-2007]
 
 ## Open questions

@@ -200,16 +200,16 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Layers Reference* — `pad` 76:20 "Passivation cut
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `pad` 76:20 "Passivation cut
   (opening over pads)".[^pdk-06]
-* SkyWater PDK, *Process stack diagram* — "glass cut" through TOPNIT and
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "glass cut" through TOPNIT and
   TOPOX to `metal5`.[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — `PDMCD` 2 µm.[^pdk-03]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `PDMCD` 2 µm.[^pdk-03]
 * SkyWater I/O library, `sky130_fd_io__top_gpiov2` GDS — the 60 µm ×
   70 µm pad opening.[^pdk-io-gpiov2]
 * Cypress, QTP 014807, QTP 123907/132302/132301, QTP 113005 — passivation
   and metal caps at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
-* SkyWater, *Facilities & Capabilities* — etchers and gases, strippers,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — etchers and gases, strippers,
   solvents.[^skw-01]
 * Lam Research, Form 10-K (2003) and Exelan press release; Stanford
   Nanofabrication Facility, *Lam TCP 9400*.[^lam-10k][^lam-exelan][^snf-9400]
@@ -217,9 +217,9 @@ an aluminium top metal (SKY130's recipe is not public):
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*, *Silicon nitride*.[^wiki-rie][^wiki-sin]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — passivation and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passivation and
   pad processing.[^txt-05]
-* Nojiri, *Dry Etching Technology for Semiconductors* — dielectric etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — dielectric etch
   chemistry.[^nojiri-2015]
 
 ### Deep dive
@@ -227,27 +227,27 @@ an aluminium top metal (SKY130's recipe is not public):
 * Kastenmeier et al., *JVST A* 1996 and 1999 — nitride and oxide etch
   rates and nitride-over-silicon/oxide selectivity, both in downstream
   or remote reactors.[^kastenmeier-1996][^kastenmeier-1999]
-* Oehrlein et al., *JVST A* 1994, and Schaepkens et al., *JVST A* 1999 —
+* Oehrlein et al., [*JVST A*](<https://doi.org/10.1116/1.578877>) 1994, and Schaepkens et al., [*JVST A*](<https://doi.org/10.1116/1.582108>) 1999 —
   fluorocarbon etching of oxide and the oxide/nitride selectivity
   mechanism.[^oehrlein-1994b][^schaepkens-1999]
-* Hess, *Plasma Chem. Plasma Process.* 1982 — why fluorine does not etch
+* [Hess, *Plasma Chem. Plasma Process.* 1982](<https://doi.org/10.1007/BF00633130>) — why fluorine does not etch
   aluminium.[^hess-1982]
-* Liu and Kuo, *J. Electrochem. Soc.* 2007, and Turban, Coulon and
-  Mutsukura, *Thin Solid Films* 1989 — fluorine-plasma etching of TiW
+* Liu and Kuo, [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2737631>) 2007, and Turban, Coulon and
+  Mutsukura, [*Thin Solid Films*](<https://doi.org/10.1016/0040-6090(89)90102-8>) 1989 — fluorine-plasma etching of TiW
   and tungsten.[^liu-2007-tiw][^turban-1989]
-* Danzl and McLaurin, IEMT 1997 — removing a TiW ARC from aluminium bond
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — removing a TiW ARC from aluminium bond
   pads.[^danzl-1997]
-* Jones, Crane, Gilchrist and Langley (Micron), US 5,380,401 — fluorine
+* [Jones, Crane, Gilchrist and Langley (Micron), US 5,380,401](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5380401>) — fluorine
   residues on bond pads after the nitride pad etch.[^pat-pad-fluorine-micron]
-* Tsai and Liu (TSMC), US 7,055,532 — reactive ion etching of Al–F–O
+* [Tsai and Liu (TSMC), US 7,055,532](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7055532>) — reactive ion etching of Al–F–O
   deposits on bond pads.[^pat-pad-fluorine-tsmc]
-* Teo et al., IPFA 2015 — TOF-SIMS measurement of fluorine on aluminium
+* [Teo et al., IPFA 2015](<https://doi.org/10.1109/IPFA.2015.7224333>) — TOF-SIMS measurement of fluorine on aluminium
   bond pads.[^teo-2015]
-* Hunter et al., IMAPS 2012 — probe and bond damage in aluminium
+* [Hunter et al., IMAPS 2012](<https://doi.org/10.4071/isom-2012-TP41>) — probe and bond damage in aluminium
   pads.[^hunter-2012]
-* Wodecki, SPIE 1999 — endpoint detection demonstrated at low open
+* [Wodecki, SPIE 1999](<https://doi.org/10.1117/12.361313>) — endpoint detection demonstrated at low open
   area.[^wodecki-1999]
-* Comizzoli et al., *Science* 1986 — corrosion of electronic
+* [Comizzoli et al., *Science* 1986](<https://doi.org/10.1126/science.234.4774.340>) — corrosion of electronic
   metallisation.[^comizzoli-1986]
 
 ## Open questions

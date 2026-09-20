@@ -198,65 +198,65 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Low Vt Nch*, LVTNM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Low Vt Nch*, LVTNM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `lvtn` 125:44;
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `lvtn` 125:44;
   `clvtnm` 25:0, 25:43, 25:42.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — `lvtn` function text; lvtn.1a,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `lvtn` function text; lvtn.1a,
   lvtn.2, lvtn.3a, lvtn.3b, lvtn.4b, lvtn.9, lvtn.10, lvtn.13;
   poly.1b.[^pdk-periph]
-* SkyWater PDK, *Device Details* — `nfet_01v8_lvt`, `pfet_01v8_lvt`,
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `nfet_01v8_lvt`, `pfet_01v8_lvt`,
   `pfet_01v8_hvt`, native NMOS "constructed by blocking out all VT
   implants".[^pdk-07]
-* SkyWater PDK, *Criteria & Assumptions* — "Photoresist thickness"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Photoresist thickness"
   1.14 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — ASML i-line stepper and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML i-line stepper and
   scanner; tracks; overlay and CD tools.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
-* SKY130 raw-data repository, 1.8 V transistor files — low-Vt and
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
+* [SKY130 raw-data repository, 1.8 V transistor files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — low-Vt and
   standard thresholds of both polarities (our
   extraction).[^raw-data-lv-mosfets]
 
 ### High-level understanding
 
-* Wikipedia, *Multi-threshold CMOS* — why several thresholds are offered
+* [Wikipedia, *Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — why several thresholds are offered
   and how they are set.[^wiki-mtcmos]
-* Wikipedia, *Photolithography* — 365 nm i-line, CD =
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — 365 nm i-line, CD =
   k₁·λ/NA.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography and implant-masking chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools of the 0.25–0.13 µm generations.[^txt-05]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* ITRS 2001, *Process Integration, Devices, and Structures* — "multiple
+* [ITRS 2001, *Process Integration, Devices, and Structures*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>) — "multiple
   threshold-voltage and multiple-oxide-thickness devices".[^itrs-04]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — an example of
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — an example of
   low-Vt NMOS and PMOS defined by masked Vt-adjust
   implants.[^pat-vt-rrr]
-* Hook et al. (IBM), *IEEE TED* 2003 — how ions scattered from an
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — how ions scattered from an
   implant-resist edge shift the threshold of nearby transistors, the
   reason implant layers carry enclosure rules.[^hook-2003]
-* Sheu et al. (TSMC), *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al. (TSMC), *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect for layout-dependent threshold shifts.[^sheu-2006]
-* Drennan, Kniffin and Locascio, CICC 2006 — what proximity effects mean
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — what proximity effects mean
   for analogue designers placing devices near implant
   edges.[^drennan-2006]
-* Mack, *Fundamental Principles of Optical Lithography* — k₁, resist
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — k₁, resist
   profiles and thick-resist imaging, the optics behind the i-line
   assignment.[^mack-2007]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — threshold
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — threshold
   voltage as a function of channel doping, the physics a Vt-adjust mask
   exists to exploit.[^taur-2009]
-* Lee et al. (Genus), IIT 1996 — outgassing of thick implant resists
+* [Lee et al. (Genus), IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — outgassing of thick implant resists
   during implantation, one reason to hard-bake or UV-cure the
   resist.[^lee-1996]
-* Buffat and Adams (Zilog), US 6,576,405 — what a resist must do when
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — what a resist must do when
   the implant behind it is MeV-class, for contrast with this keV
   layer.[^pat-resist-zilog]
 

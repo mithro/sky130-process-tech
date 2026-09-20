@@ -190,59 +190,59 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — GaSonics PEP, Iridia and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — GaSonics PEP, Iridia and
   Mattson Aspen II with gases and temperatures; Akrion Gamma; DNS and
   FSI benches.[^skw-01]
-* LinkedIn, SkyWater listings — the defect-metrology tool list
+* [LinkedIn, SkyWater listings](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology tool list
   "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — chemical
   suppliers.[^sec-01][^sec-02]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — popping and
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — popping and
   the low-temperature first ash.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — the carbonised
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — the carbonised
   crust.[^pat-strip-tsmc]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing and implanted
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing and implanted
   resist.[^wiki-ash]
-* Wikipedia, *RCA clean* and *Piranha solution* — the wet
+* Wikipedia, [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) and [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) — the wet
   chemistries.[^wiki-rca][^wiki-piranha]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 —
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) —
   implanted-resist stripping.[^txt-05]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — source/drain
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — source/drain
   doses.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ash
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ash
   and wet-clean tools.[^txt-07]
 
 ### Deep dive
 
-* Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of
+* [Fujimura et al. (Fujitsu), *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer of
   high-dose implanted resist, the residues of O₂ ashing and a two-step
   ashing process (abstract).[^fujimura-1989]
-* Fujimura et al. (Fujitsu), *JJAP* 1990 — nitrogen addition in
+* [Fujimura et al. (Fujitsu), *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — nitrogen addition in
   downstream ashing.[^fujimura-1990]
-* Fujimura et al. (Fujitsu), *JVST B* 1994 — O₂+H₂O downstream ashing
+* [Fujimura et al. (Fujitsu), *JVST B* 1994](<https://doi.org/10.1116/1.587773>) — O₂+H₂O downstream ashing
   without sodium contamination.[^fujimura-1994]
-* Roche, Michaud and Bruel, *MRS Proc.* 1985 — resist outgassing
+* [Roche, Michaud and Bruel, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-45-203>) — resist outgassing
   during implantation, the origin of the crust.[^roche-1985]
 * Horsky, IIT 1998, and Carpenter and Fecteau, IIT 2002 —
   outgassing in high-current implanters and its management.[^horsky-1998][^carpenter-2002]
-* Romig, Bishop and Rio, IIT 1996 — resist burning in a high-current
+* [Romig, Bishop and Rio, IIT 1996](<https://doi.org/10.1109/IIT.1996.586181>) — resist burning in a high-current
   implanter, the worst case a strip can meet.[^romig-1996]
-* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 — liquid
+* [Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006](<https://doi.org/10.1149/1.2195884>) — liquid
   formulations for high-dose implanted resist.[^visintin-2006]
-* Kern, *J. Electrochem. Soc.* 1990 — the RCA clean and its
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the RCA clean and its
   evolution.[^kern-1990]
-* Ohmi, *J. Electrochem. Soc.* 1996 — room-temperature wet
+* [Ohmi, *J. Electrochem. Soc.* 1996](<https://doi.org/10.1149/1.1837133>) — room-temperature wet
   cleaning.[^ohmi-1996]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — post-implant stripping.[^reinhardt-2010]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — the two-stage
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — post-implant stripping.[^reinhardt-2010]
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — the two-stage
   low-temperature ash.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — ashing around the
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — ashing around the
   crust.[^pat-strip-tsmc]
-* Nakayama et al. (ULVAC), US 5,795,831 — a cold stripping
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — a cold stripping
   process.[^pat-strip-ulvac]
 * Becknell, Hammar and Ferris (Axcelis), US 7,449,416, and Kamarehi
   and Simpson (Fusion Systems), US 5,498,308 — asher

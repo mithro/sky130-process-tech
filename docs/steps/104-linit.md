@@ -189,51 +189,51 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 
 ### Cross-check
 
-* SkyWater PDK, process stack diagram — "LINT K=7.3", 0.075 µm,
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "LINT K=7.3", 0.075 µm,
   between `li` and "NILD2".[^pdk-04]
-* SkyWater PDK, *Parasitic Layout Extraction* — the LI capacitance
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the LI capacitance
   tables the film enters.[^pdk-08]
-* SkyWater PDK, *Periphery rules* — ct.4 ("Mcon must be enclosed by
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — ct.4 ("Mcon must be enclosed by
   LI by at least" 0.000 µm); li.1, li.3.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — "PECVD nitride C1";
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD nitride C1";
   "PECVD silane oxide/nitride/oxynitride, C1"; Aviza BTBAS
   nitride.[^skw-01]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — gas suppliers.[^sec-01]
 
 ### High-level understanding
 
 * Wikipedia, *Silicon nitride*, *Plasma-enhanced chemical vapor
   deposition*.[^wiki-sin][^wiki-pecvd]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   PECVD nitride.[^txt-02]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — PECVD equipment and chamber cleaning.[^txt-09]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the Concept One/Two
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — PECVD equipment and chamber cleaning.[^txt-09]
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Concept One/Two
   product history.[^novellus-history]
 
 ### Deep dive
 
-* Liao et al., *Thin Solid Films* 2004 — etch-stop layers for
+* [Liao et al., *Thin Solid Films* 2004](<https://doi.org/10.1016/j.tsf.2004.05.035>) — etch-stop layers for
   borderless contacts and device performance.[^liao-2004]
-* Schaepkens et al., *JVST A* 1999 — the SiO₂-to-Si₃N₄ selectivity
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — the SiO₂-to-Si₃N₄ selectivity
   mechanism that makes the film an etch stop.[^schaepkens-1999]
-* Cacciato et al., P2ID 2003 — charging through a conductive
+* [Cacciato et al., P2ID 2003](<https://doi.org/10.1109/PPID.2003.1199721>) — charging through a conductive
   borderless nitride during contact etch.[^cacciato-2003]
-* Smith et al., *J. Electrochem. Soc.* 1990, and Claassen et al.,
-  *J. Electrochem. Soc.* 1985 — PECVD nitride mechanism, composition
+* Smith et al., [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2086517>) 1990, and Claassen et al.,
+  [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2113980>) 1985 — PECVD nitride mechanism, composition
   and stress.[^smith-1990][^claassen-1985]
-* Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — nitride and
+* [Habraken and Kuiper, *Mater. Sci. Eng. R* 1994](<https://doi.org/10.1016/0927-796X(94)90006-X>) — nitride and
   oxynitride film properties and hydrogen.[^habraken-1994]
-* Hughey and Cook, *MRS Proc.* 2003 — irreversible stress change in
+* [Hughey and Cook, *MRS Proc.* 2003](<https://doi.org/10.1557/PROC-795-U1.6>) — irreversible stress change in
   PECVD nitride on heating.[^hughey-2003]
-* Shimaya (NTT), IRPS 1995 — water diffusion through nitride and
+* [Shimaya (NTT), IRPS 1995](<https://doi.org/10.1109/RELPHY.1995.513694>) — water diffusion through nitride and
   hot-carrier degradation.[^shimaya-1995]
 * Ito et al. (NEC), IEDM 2000, and Shimizu et al. (Hitachi), IEDM
   2001 — etch-stop nitride stress and transistor
   performance.[^ito-2000][^shimizu-2001]
-* Gumpher et al., *J. Electrochem. Soc.* 2004 — BTBAS
+* [Gumpher et al., *J. Electrochem. Soc.* 2004](<https://doi.org/10.1149/1.1690294>) — BTBAS
   low-temperature LPCVD nitride, the furnace alternative.[^gumpher-2004]
-* Teasdale et al., *Electrochem. Solid-State Lett.* 2001 —
+* [Teasdale et al., *Electrochem. Solid-State Lett.* 2001](<https://doi.org/10.1149/1.1359056>) —
   single-wafer thermal nitride from DCS/NH₃.[^teasdale-2001]
 
 ## Open questions

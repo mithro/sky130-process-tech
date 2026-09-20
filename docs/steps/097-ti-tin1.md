@@ -213,58 +213,58 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal": "Imp
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT PVD Metal": "Imp
   TiN", "Collimated Ti", "ESC TiN".[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — sputter-target and
   gas suppliers.[^sec-01][^sec-02]
-* SkyWater PDK, *Criteria & Assumptions* — "Standard Licon bottom
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Standard Licon bottom
   CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm; S/D junction
   0.1 µm.[^pdk-03]
 * Applied Materials, *Endura PVD* product page and 1997 Annual
   Report.[^amat-endura][^amat-1997]
-* Applied Materials, US 6,350,353 — IMP/sputter alternation.[^pat-imp-amat]
+* [Applied Materials, US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — IMP/sputter alternation.[^pat-imp-amat]
 
 ### High-level understanding
 
 * Wikipedia, *Titanium nitride*, *Sputter deposition*, *Physical
   vapor deposition*.[^wiki-tin][^wiki-sputter][^wiki-pvd]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and barrier metals.[^txt-02]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — PVD equipment, degas and pre-clean.[^txt-09]
-* Ohring, *Materials Science of Thin Films* — nucleation, growth and
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — PVD equipment, degas and pre-clean.[^txt-09]
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — nucleation, growth and
   the structure-zone model.[^ohring-2002]
 
 ### Deep dive
 
-* Rossnagel and Hopwood, *Appl. Phys. Lett.* 1993 and *JVST B*
+* Rossnagel and Hopwood, [*Appl. Phys. Lett.*](<https://doi.org/10.1063/1.110176>) 1993 and [*JVST B*](<https://doi.org/10.1116/1.587142>)
   1994 — ionised magnetron sputtering and metal-ion
   deposition.[^rossnagel-1993][^rossnagel-1994]
-* Hopwood, *Phys. Plasmas* 1998 — ionised PVD for
+* [Hopwood, *Phys. Plasmas* 1998](<https://doi.org/10.1063/1.872829>) — ionised PVD for
   interconnects.[^hopwood-1998]
-* Rossnagel, *JVST B* 1998 — review of directional and ionised
+* [Rossnagel, *JVST B* 1998](<https://doi.org/10.1116/1.590242>) — review of directional and ionised
   PVD.[^rossnagel-1998]
-* Rossnagel et al., *JVST A* 1991 — collimated magnetron sputter
+* [Rossnagel et al., *JVST A* 1991](<https://doi.org/10.1116/1.577531>) — collimated magnetron sputter
   deposition.[^rossnagel-1991]
-* Ryan et al., *MRS Bulletin* 1995 — collimated sputtering of Ti and
+* [Ryan et al., *MRS Bulletin* 1995](<https://doi.org/10.1557/S0883769400045553>) — collimated sputtering of Ti and
   TiN.[^ryan-1995]
-* Wittmer, *Appl. Phys. Lett.* 1980, and Nicolet, *Thin Solid Films*
+* Wittmer, [*Appl. Phys. Lett.*](<https://doi.org/10.1063/1.91505>) 1980, and Nicolet, [*Thin Solid Films*](<https://doi.org/10.1016/0040-6090(78)90184-0>)
   1978 — TiN as a diffusion barrier; barriers in
   general.[^wittmer-1980][^nicolet-1978]
-* Sundgren, *Thin Solid Films* 1985 — structure and properties of
+* [Sundgren, *Thin Solid Films* 1985](<https://doi.org/10.1016/0040-6090(85)90333-5>) — structure and properties of
   TiN coatings.[^sundgren-1985]
-* Berg and Nyberg, *Thin Solid Films* 2005 — reactive sputtering
+* [Berg and Nyberg, *Thin Solid Films* 2005](<https://doi.org/10.1016/j.tsf.2004.10.051>) — reactive sputtering
   model and hysteresis.[^berg-2005]
-* Petrov et al., *JVST A* 2003 — microstructural evolution during
+* [Petrov et al., *JVST A* 2003](<https://doi.org/10.1116/1.1601610>) — microstructural evolution during
   film growth.[^petrov-2003]
-* Thornton, *J. Vac. Sci. Technol.* 1974 — the structure-zone
+* [Thornton, *J. Vac. Sci. Technol.* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone
   diagram.[^thornton-1974]
-* Koerner, Erb and Melzner, *Appl. Surf. Sci.* 1993 — Ti and TiN
+* [Koerner, Erb and Melzner, *Appl. Surf. Sci.* 1993](<https://doi.org/10.1016/0169-4332(93)90139-3>) — Ti and TiN
   thicknesses for tungsten-plug contacts.[^koerner-1993]
-* Srinivas et al., *MRS Proc.* 1992 — tungsten nucleation on
+* [Srinivas et al., *MRS Proc.* 1992](<https://doi.org/10.1557/PROC-282-365>) — tungsten nucleation on
   TiN.[^srinivas-1992]
-* Murarka, *Silicides for VLSI Applications* 1983, and Maex, *Mater.
-  Sci. Eng. R* 1993 — silicide formation and silicon
+* Murarka, [*Silicides for VLSI Applications*](<https://doi.org/10.1016/b978-0-08-057056-3.50009-4>) 1983, and Maex, [*Mater.
+  Sci. Eng. R*](<https://doi.org/10.1016/0927-796X(93)90001-J>) 1993 — silicide formation and silicon
   consumption.[^murarka-1983][^maex-1993]
 
 ## Open questions

@@ -261,63 +261,63 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 
 ### Cross-check
 
-* SkyWater PDK, *Process stack diagram* — `metal4` 0.845 µm; metal4
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `metal4` 0.845 µm; metal4
   and metal5 bottom levels 4.0211 and 5.3711 µm; `cap2m` between
   `metal4` and `metal5`.[^pdk-04]
-* SkyWater PDK, *Device Details* — `RSM4` 0.047 Ω/sq; "CAP2M over
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `RSM4` 0.047 Ω/sq; "CAP2M over
   Metal-4"; `CMIM2A`, `CMIM2P`; the stacked `cap_mim`
   cross-section.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — metal 4 47 mΩ/sq;
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — metal 4 47 mΩ/sq;
   metal-3-to-4 and metal-4-to-5 plate capacitances.[^pdk-08]
-* SkyWater PDK, *Criteria & Assumptions* — metal-4 antenna thickness
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — metal-4 antenna thickness
   0.8 µm (S8P*/SP8P*) and 2 µm (S8Q*/SP8Q).[^pdk-03]
-* SkyWater PDK, *Background* — "5 levels of metal (p - penta)".[^pdk-02]
-* SkyWater PDK, *Masks* — "Via 2-PLM", "Metal 3-PLM", "Via3-PLM" flagged
+* [SkyWater PDK, *Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) — "5 levels of metal (p - penta)".[^pdk-02]
+* [SkyWater PDK, *Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — "Via 2-PLM", "Metal 3-PLM", "Via3-PLM" flagged
   as used in SKY130.[^pdk-05]
-* SkyWater PDK, *Periphery rules* — m4.1–m4.pd.2b; via4 function
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — m4.1–m4.pd.2b; via4 function
   "SKY130P*/SP8P*"; the metal-fuse note and mf.1–mf.2.[^pdk-periph]
-* SkyWater PDK, *Layers Reference* — `met4` 71:20, `met4` fuse 71:17;
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `met4` 71:20, `met4` fuse 71:17;
   `cap2m` 97:44.[^pdk-06]
-* Edwards, 2021 lecture slides — metal4 0.845 µm.[^ann-16]
+* [Edwards, 2021 lecture slides](<https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>) — metal4 0.845 µm.[^ann-16]
 * Cypress, QTP 113005 and QTP 123907/132302/132301 — the three-metal
   S8 stacks, for comparison.[^cyp-qtp-113005][^cyp-qtp-123907]
-* SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal" film list;
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT PVD Metal" film list;
   metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — target suppliers.[^sec-01][^sec-02]
-* Hitachi Metals, US 5,160,534 — Ti:W target composition.[^pat-tiw-hitachi]
+* [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — Ti:W target composition.[^pat-tiw-hitachi]
 * Applied Materials, *Endura PVD*.[^amat-endura]
 
 ### High-level understanding
 
 * Wikipedia, *Electromigration*, *Sputter deposition*, *Interconnect
   (integrated circuits)*.[^wiki-em][^wiki-sputter][^wiki-interconnect]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and aluminium metallisation.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — multilevel
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — multilevel
   aluminium stacks and thick upper metals.[^txt-05]
-* Ohring, *Materials Science of Thin Films* — film growth, stress and
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — film growth, stress and
   structure.[^ohring-2002]
 
 ### Deep dive
 
-* Kar-Roy, Racanelli and Kempf (Newport Fab), US 7,078,310 — a
+* [Kar-Roy, Racanelli and Kempf (Newport Fab), US 7,078,310](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7078310>) — a
   composite MiM of two capacitors stacked between interconnect levels
   and joined in parallel.[^pat-mim-stack-newportfab]
-* Chang, Lee and Chen (TSMC), US 7,317,221 — stacked MiM capacitors
+* [Chang, Lee and Chen (TSMC), US 7,317,221](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7317221>) — stacked MiM capacitors
   cross-connected through filled vias.[^pat-mim-stack-tsmc]
-* Greenwood and Prasad, ISDRS 2007 — a TiN-only MiM bottom plate in
+* [Greenwood and Prasad, ISDRS 2007](<https://doi.org/10.1109/ISDRS.2007.4422363>) — a TiN-only MiM bottom plate in
   an aluminium back end.[^greenwood-2007]
 * Bohr (Intel), IEDM 1995, and Stamper, Fuselier and Tian (IBM), IITC
   1998 — interconnect scaling and wiring RC delay.[^bohr-1995][^stamper-1998]
-* ITRS 2001, *Interconnect* — aluminium metallisation at the 130 nm
+* [ITRS 2001, *Interconnect*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>) — aluminium metallisation at the 130 nm
   generation.[^itrs-02]
-* Zlatanović and Davinić, *Vacuum* 1990, and Chaudhari (IBM), *J.
-  Appl. Phys.* 1974 — hillock formation versus aluminium thickness and
+* Zlatanović and Davinić, [*Vacuum*](<https://doi.org/10.1016/0042-207X(90)90144-N>) 1990, and Chaudhari (IBM), [*J.
+  Appl. Phys.*](<https://doi.org/10.1063/1.1663054>) 1974 — hillock formation versus aluminium thickness and
   heat treatment.[^zlatanovic-1990][^chaudhari-1974]
 * Yue, Funsten and Taylor, IRPS 1985, and Stoney, *Proc. R. Soc. A*
   1909 — stress-induced voids and film stress from wafer
   curvature.[^yue-1985][^stoney-1909]
-* Rocke and Schneegans (Siemens), *JVST B* 1988 — a titanium-nitride
+* [Rocke and Schneegans (Siemens), *JVST B* 1988](<https://doi.org/10.1116/1.584306>) — a titanium-nitride
   cap for anti-reflection and hillock suppression on aluminium.[^rocke-1988]
 * Ames, d'Heurle and Horstmann, 1970; Blech, 1976; Filippi, Biery and
   Wood, 1993; Nix and Arzt, 1992 — copper doping, the critical length,
@@ -325,7 +325,7 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
   growth.[^ames-1970][^blech-1976][^filippi-1993][^nix-1992]
 * Knorr and Rodbell, 1996, and Kamoshida and Ito, 1997 — texture and
   the refractory underlayer.[^knorr-1996][^kamoshida-1997]
-* Thornton, *JVST* 1974 — the structure-zone model for thick sputtered
+* [Thornton, *JVST* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone model for thick sputtered
   films.[^thornton-1974]
 * Rossnagel et al., 1991, and Rossnagel, 1998 — collimated and ionised
   PVD for the thin underlayer.[^rossnagel-1991][^rossnagel-1998]

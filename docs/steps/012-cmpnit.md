@@ -176,76 +176,76 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP – oxide –
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT Mirra CMP – oxide –
   nitride – niobium – aluminum – tungsten …"; SEZ 223 /
   Da Vinci.[^skw-01]
-* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
+* [SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) —
   "a SEZ etcher tool".[^skw-07]
-* SkyWater PDK, *Criteria & Assumptions* — field oxide 0.07 µm above
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — field oxide 0.07 µm above
   silicon under poly.[^pdk-03]
-* SkyWater PDK, *Layers Reference* — "fom_waffles".[^pdk-06]
-* Currie and Lochtefeld (AmberWave), US 6,960,781 —
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — "fom_waffles".[^pdk-06]
+* [Currie and Lochtefeld (AmberWave), US 6,960,781](<https://patents.google.com/patent/US6960781B2/en>) —
   "chemical-mechanical polishing (CMP), using the silicon nitride layer
   over the active area as a stop layer".[^pat-sti-amberwave]
-* Kim et al. (Spansion), US 7,439,141 — isolation oxide "polished back
+* [Kim et al. (Spansion), US 7,439,141](<https://patents.google.com/patent/US7439141B2/en>) — isolation oxide "polished back
   … approximately level with the nitride mask".[^pat-sti-cr]
-* LinkedIn, SkyWater *Defect Technician 2* posting — inspection
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — inspection
   tools.[^job-06]
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing* — pads, conditioners,
+* [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>) — pads, conditioners,
   abrasives and endpoint.[^wiki-cmp]
-* Wikipedia, *Shallow trench isolation* — the polish and nitride
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the polish and nitride
   removal steps.[^wiki-sti]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — the CMP
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — the CMP
   chapter; STI CMP.[^txt-05]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — CMP
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — CMP
   tools and consumables.[^txt-07]
 
 ### Deep dive
 
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry chemistry,
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry chemistry,
   materials and mechanisms, including silica and ceria slurries for
   oxide/STI.[^rev-02]
-* Nandakumar et al., IEDM 1998 — STI planarisation in the STI
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — STI planarisation in the STI
   review.[^rev-01]
-* Thung et al., *JTEC* 2016 — CMP in a 0.13 µm STI module on
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — CMP in a 0.13 µm STI module on
   0.18 µm-generation tools.[^thung-2016]
-* Cook, *J. Non-Cryst. Solids* 1990 — the chemical mechanism of glass
+* [Cook, *J. Non-Cryst. Solids* 1990](<https://doi.org/10.1016/0022-3093(90)90200-6>) — the chemical mechanism of glass
   (oxide) polishing that oxide CMP inherits.[^cook-1990]
-* Hoshino et al., *J. Non-Cryst. Solids* 2001 — the mechanism by which
+* [Hoshino et al., *J. Non-Cryst. Solids* 2001](<https://doi.org/10.1016/S0022-3093(01)00364-7>) — the mechanism by which
   ceria particles polish SiO₂.[^hoshino-2001]
-* Manivannan, Victoria and Ramanathan, *Thin Solid Films* 2010 — the
+* [Manivannan, Victoria and Ramanathan, *Thin Solid Films* 2010](<https://doi.org/10.1016/j.tsf.2010.05.072>) — the
   mechanism of high oxide-to-nitride selectivity in ceria STI
   slurries.[^manivannan-2010]
-* America and Babu, *Electrochem. Solid-State Lett.* 2004 — slurry
+* [America and Babu, *Electrochem. Solid-State Lett.* 2004](<https://doi.org/10.1149/1.1817870>) — slurry
   additives that suppress silicon nitride removal, i.e. how a
   self-stopping STI slurry is made.[^america-2004]
-* Bu and Moudgil, MRS 2005 — a colloidal-silica route to a
+* [Bu and Moudgil, MRS 2005](<https://doi.org/10.1557/PROC-867-W8.5>) — a colloidal-silica route to a
   high-selectivity STI slurry, the alternative to ceria.[^bu-2005]
-* Yu, Fazan, Mathews and Doan (Micron), *Appl. Phys. Lett.* 1992 —
+* [Yu, Fazan, Mathews and Doan (Micron), *Appl. Phys. Lett.* 1992](<https://doi.org/10.1063/1.107586>) —
   dishing effects in CMP planarisation for trench isolation, measured
   early.[^yu-1992]
-* Stine et al., *IEEE Trans. Semicond. Manuf.* 1998 — rapid
+* [Stine et al., *IEEE Trans. Semicond. Manuf.* 1998](<https://doi.org/10.1109/66.661292>) — rapid
   characterisation and modelling of pattern-dependent CMP variation,
   the basis of density-based fill rules.[^stine-1998]
-* Chang, *Microelectron. Eng.* 2005 — a dishing model specific to the
+* [Chang, *Microelectron. Eng.* 2005](<https://doi.org/10.1016/j.mee.2005.07.002>) — a dishing model specific to the
   STI CMP process.[^chang-2005]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
-  of Microelectronic Materials* — the standard CMP textbook: {term}`Preston <Preston equation>`'s
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
+  of Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>) — the standard CMP textbook: {term}`Preston <Preston equation>`'s
   law, pads, slurries and process control.[^steigerwald-1997]
-* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
-  Materials* — chapter-level treatments of dielectric CMP, endpoint and
+* [Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials*](<https://doi.org/10.1007/978-3-662-06234-0>) — chapter-level treatments of dielectric CMP, endpoint and
   post-CMP cleaning.[^oliver-2004]
-* Tolles et al. (Applied Materials), US 5,738,574 — the multi-platen
+* [Tolles et al. (Applied Materials), US 5,738,574](<https://patents.google.com/patent/US5738574A/en>) — the multi-platen
   "continuous processing" CMP architecture of the Mirra
   family.[^pat-cmp-mirra]
-* Birang, Gleason and Guthrie (Applied Materials), US 5,893,796 — a
+* [Birang, Gleason and Guthrie (Applied Materials), US 5,893,796](<https://patents.google.com/patent/US5893796A/en>) — a
   transparent window in the pad for in-situ optical endpoint
   detection.[^pat-cmp-window]
-* Sun, Han and Keswani, *Developments in Surface Contamination and
-  Cleaning* 2017 — brush scrubbing for post-CMP cleaning.[^sun-2017]
+* [Sun, Han and Keswani, *Developments in Surface Contamination and
+  Cleaning* 2017](<https://doi.org/10.1016/B978-0-323-43157-6.00004-5>) — brush scrubbing for post-CMP cleaning.[^sun-2017]
 
 ## Open questions
 

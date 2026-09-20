@@ -226,60 +226,60 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — "Pre-LI ILD thickness"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Pre-LI ILD thickness"
   0.5 µm; "Licon1 etch angle" 10°; "Standard Licon bottom CD"
   0.08 µm; "min. etch and fill capability … licon" 0.15 µm.[^pdk-03]
-* SkyWater PDK, *Periphery rules* — licon.1, licon.3, licon.11,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — licon.1, licon.3, licon.11,
   licon.15, licon.18.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — AMAT DPS II, Lam 9400,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — AMAT DPS II, Lam 9400,
   Lam 4400 gas sets; ashers; wet benches.[^skw-01]
-* Applied Materials, 1997 Annual Report — DPS and MxP
+* [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — DPS and MxP
   etchers.[^amat-1997]
 * Lam Research, Exelan press release and Form 10-K.[^lam-exelan][^lam-10k]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
-* SKY130 raw-data repository, test-tile pad documentation — the licon
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — gas suppliers.[^sec-01]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the licon
   contact-string and contact-resistance structures of the published test
   tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*.[^wiki-rie]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   oxide etching.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — contact and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — contact and
   via etching at deep-submicron nodes.[^txt-05]
-* Nojiri, *Dry Etching Technology for Semiconductors* — oxide etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — oxide etch
   chemistry and equipment.[^nojiri-2015]
 
 ### Deep dive
 
-* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the
+* [Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981](<https://doi.org/10.1007/BF00565992>) — the
   design of plasma etchants.[^flamm-1981]
-* Winters and Coburn, *Surf. Sci. Rep.* 1992 — surface science of
+* [Winters and Coburn, *Surf. Sci. Rep.* 1992](<https://doi.org/10.1016/0167-5729(92)90009-Z>) — surface science of
   etching reactions.[^winters-1992]
-* Oehrlein et al., *JVST A* 1994, and Rueger et al., *JVST A* 1997 —
+* Oehrlein et al., [*JVST A*](<https://doi.org/10.1116/1.578877>) 1994, and Rueger et al., [*JVST A*](<https://doi.org/10.1116/1.580655>) 1997 —
   fluorocarbon films in high-density oxide etching.[^oehrlein-1994-ii][^rueger-1997]
-* Standaert et al., *JVST A* 1998 — etching through a thick
+* [Standaert et al., *JVST A* 1998](<https://doi.org/10.1116/1.580978>) — etching through a thick
   steady-state fluorocarbon layer.[^standaert-1998]
-* Schaepkens et al., *JVST A* 1999 — the SiO₂-to-Si₃N₄ selectivity
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — the SiO₂-to-Si₃N₄ selectivity
   mechanism.[^schaepkens-1999]
-* Joubert, Oehrlein and Surendra, *JVST A* 1994 — RIE-lag model for
+* [Joubert, Oehrlein and Surendra, *JVST A* 1994](<https://doi.org/10.1116/1.578850>) — RIE-lag model for
   contact holes.[^joubert-1994]
-* Doemling, Rueger and Oehrlein, *Appl. Phys. Lett.* 1996 — inverse
+* [Doemling, Rueger and Oehrlein, *Appl. Phys. Lett.* 1996](<https://doi.org/10.1063/1.116772>) — inverse
   RIE lag.[^doemling-1996]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — microscopic
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — microscopic
   uniformity and ARDE.[^gottscho-1992]
-* Oehrlein and Kurogi, *Mater. Sci. Eng. R* 1998 — sidewall
+* [Oehrlein and Kurogi, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00016-3>) — sidewall
   chemistry and profile control.[^oehrlein-1998]
-* Fonash, *J. Electrochem. Soc.* 1990, and Oehrlein, *Mater. Sci.
-  Eng. B* 1989 — etch damage and contamination.[^fonash-1990][^oehrlein-1989]
+* Fonash, [*J. Electrochem. Soc.*](<https://doi.org/10.1149/1.2086322>) 1990, and Oehrlein, [*Mater. Sci.
+  Eng. B*](<https://doi.org/10.1016/0921-5107(89)90284-5>) 1989 — etch damage and contamination.[^fonash-1990][^oehrlein-1989]
 * Cacciato et al., P2ID 2003, and Hashimoto, *JJAP* 1994 — charging
   damage during contact etch; electron shading.[^cacciato-2003][^hashimoto-1994]
-* Yin et al. (Applied Materials), US 5,540,824 — the DPS
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the DPS
   reactor.[^pat-dps-amat]
-* Tokyo Electron, US 6,376,262 — double endpoint detection for
+* [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — double endpoint detection for
   layered stacks.[^pat-cn-tel]
-* Tang et al. (TI), IEDM 1985 — a TiN {term}`local interconnect` formed
+* [Tang et al. (TI), IEDM 1985](<https://doi.org/10.1109/IEDM.1985.191041>) — a TiN {term}`local interconnect` formed
   during self-aligned silicidation and patterned between gates and
   junctions (abstract).[^tang-1985]
 

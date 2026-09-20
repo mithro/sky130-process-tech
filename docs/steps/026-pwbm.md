@@ -209,72 +209,72 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "P-Well Block Mask,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "P-Well Block Mask,
   PWBM" with the "Used in SKY130" column blank.[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `pwbm` 19:44;
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `pwbm` 19:44;
   `nwell` 64:20; `pwell` label/pin/resistor purposes only.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — pwbm.1–5 "Define p-well block";
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — pwbm.1–5 "Define p-well block";
   pwdem.3; nwell.1, nwell.2a.[^pdk-periph]
-* SkyWater PDK, *Device Details* — `nfet_20v0_zvt`: "p-well and all Vt
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `nfet_20v0_zvt`: "p-well and all Vt
   implants blocked".[^pdk-07]
-* SkyWater PDK, *Criteria & Assumptions* — P-well peak concentration and
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — P-well peak concentration and
   coordinate, vertical dimension, junction offset.[^pdk-03]
 * SKY130 raw-data repository — I–V sweeps of the 20 V zero-Vt test-tile
   structure (threshold, body-effect coefficient and effective doping
   quoted here are our extraction) and the pad-list row that names
   it.[^raw-data-hv-mosfets][^raw-data-testtile-pads]
-* SkyWater PDK, *High Voltage Methodology* — drain extensions
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — drain extensions
   "fabricated by lightly doped Nwells and Pwells".[^pdk-hv]
-* SkyWater, *Facilities & Capabilities* — the site tool list.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist, gas and chemical
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the site tool list.[^skw-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist, gas and chemical
   suppliers.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *CMOS* — NMOS on the p-substrate, PMOS in an
+* [Wikipedia, *CMOS*](<https://en.wikipedia.org/wiki/CMOS>) — NMOS on the p-substrate, PMOS in an
   N-well.[^wiki-cmos]
-* Wikipedia, *Photolithography* — 365 nm i-line and {term}`CD` =
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — 365 nm i-line and {term}`CD` =
   k₁·λ/NA.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography, resist stripping, wafer cleaning and implantation
   chapters.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 2 — twin-well CMOS,
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 2](<https://openlibrary.org/isbn/9780961672140>) — twin-well CMOS,
   well masking options.[^txt-03]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools, implanted-resist stripping and {term}`RTP` of the 0.25–0.13 µm
   generations.[^txt-05]
-* MicroChemicals, *Development of photoresists* — practical
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — practical
   develop-process notes, including the 2.38 % TMAH
   developers.[^microchemicals-dev]
 
 ### Deep dive
 
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde N-well
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — retrograde N-well
   and P-well energies, doses and resist thickness.[^pat-well-ibm]
-* Buffat and Adams (Zilog), US 6,576,405 — 3.4–4.2 µm resist for
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — 3.4–4.2 µm resist for
   1.3–1.5 MeV phosphorus wells.[^pat-resist-zilog]
-* Matlock (Harris), US 5,247,199 — a twin-well flow with 500/275/130 keV
+* [Matlock (Harris), US 5,247,199](<https://patents.google.com/patent/US5247199A/en>) — a twin-well flow with 500/275/130 keV
   phosphorus and 360/185/55 keV boron chains.[^pat-twin-harris]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral {term}`straggle` from a thick
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral {term}`straggle` from a thick
   well resist and the resulting mask proximity effect.[^hook-2003]
-* Sheu et al. (TSMC), *IEEE TED* 2006 — a compact model of the well-edge
+* [Sheu et al. (TSMC), *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — a compact model of the well-edge
   proximity effect.[^sheu-2006]
-* Rubin, Morris and Jasper, IIT 2002 — how well-implant control sets the
+* [Rubin, Morris and Jasper, IIT 2002](<https://doi.org/10.1109/IIT.2002.1257927>) — how well-implant control sets the
   n⁺/p⁺ isolation spacing.[^rubin-2002]
-* Drennan, Kniffin and Locascio, CICC 2006 — the analogue-design
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — the analogue-design
   consequences of the well proximity effect.[^drennan-2006]
-* Mack, *Fundamental Principles of Optical Lithography* — thick-resist
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — thick-resist
   imaging and k₁ margins behind the i-line choice.[^mack-2007]
-* Levinson, *Principles of Lithography* — the chapter on
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — the chapter on
   overlay.[^levinson-2005]
-* Lee et al. (Genus), IIT 1996 — outgassing of thick resists during MeV
+* [Lee et al. (Genus), IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — outgassing of thick resists during MeV
   implantation.[^lee-1996]
-* Stolmeijer, *IEEE TED* 1986 — a twin-well CMOS process using implants of
+* [Stolmeijer, *IEEE TED* 1986](<https://doi.org/10.1109/T-ED.1986.22511>) — a twin-well CMOS process using implants of
   up to 1 MeV, with an N-type isolation well and retrograde
   wells.[^stolmeijer-1986]
-* Lee and Son (Hyundai/Hynix), US 6,455,402 — chained retrograde P-well
+* [Lee and Son (Hyundai/Hynix), US 6,455,402](<https://patents.google.com/patent/US6455402B2/en>) — chained retrograde P-well
   implants placed through a resist mask.[^pat-well-hynix]
-* Borland, Cho and Kim, IIT 1998 — latch-up with MeV-implanted wells
+* [Borland, Cho and Kim, IIT 1998](<https://doi.org/10.1109/IIT.1999.812053>) — latch-up with MeV-implanted wells
   under STI, the reason the P-well profile matters.[^borland-1998]
 
 ## Open questions

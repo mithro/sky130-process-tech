@@ -199,19 +199,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Axcelis 8250 "B11, BF2,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Axcelis 8250 "B11, BF2,
   As".[^skw-01]
-* SkyWater PDK, *Device Details* — `pfet_01v8_hvt`.[^pdk-07]
-* SkyWater PDK, *Periphery rules* — `hvtp`: "Vt adjust implant region
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `pfet_01v8_hvt`.[^pdk-07]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — `hvtp`: "Vt adjust implant region
   for high Vt LV PMOS".[^pdk-periph]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   Eaton/Axcelis 8250HT energy and beam-current ranges.[^axcelis-8250]
-* Axcelis, *GSD Ovation* product page — fluorinated-species source
+* [Axcelis, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — fluorinated-species source
   costs.[^axcelis-gsd-page]
-* SKY130 raw-data repository, 1.8 V transistor files — the high-Vt
+* [SKY130 raw-data repository, 1.8 V transistor files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — the high-Vt
   threshold increment at two gate lengths and the body effect (our
   extraction).[^raw-data-lv-mosfets]
-* SKY130 raw-data repository, varactor C–V files — the low- and
+* [SKY130 raw-data repository, varactor C–V files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells/unsorted>) — the low- and
   high-Vt varactors compared on the HVTPM page (our
   extraction).[^raw-data-passives]
 
@@ -222,41 +222,41 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, sources, channelling and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, sources, channelling and
   tilt in one page.[^wiki-implant]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — BF₂
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — BF₂
   implantation, fluorine effects.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — channel
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — channel
   engineering, surface- versus buried-channel PMOS, high-voltage
   MOS.[^txt-04]
 
 ### Deep dive
 
-* ITRS 2001, *Front End Processes* — Table 51 retrograde channel
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51 retrograde channel
   depth.[^itrs-01]
-* Thompson, Packan and Bohr (Intel), VLSI 1996 — drive-current
+* [Thompson, Packan and Bohr (Intel), VLSI 1996](<https://doi.org/10.1109/VLSIT.1996.507830>) — drive-current
   trade-offs of super-steep retrograde channels.[^thompson-1996]
-* Helm and Zhou (Round Rock Research), US 2011/0006372 — "boron type of
+* [Helm and Zhou (Round Rock Research), US 2011/0006372](<https://patents.google.com/patent/US20110006372A1/en>) — "boron type of
   implant such as BF2, or Indium".[^pat-vt-rrr]
-* Krivokapic and Milic (AMD), US 6,238,982 — a laterally doped channel
+* [Krivokapic and Milic (AMD), US 6,238,982](<https://patents.google.com/patent/US6238982B1/en>) — a laterally doped channel
   implant self-aligned to the gate pillars, BF₂ 45–90 keV, 1–2.5 ×
   10¹³ cm⁻².[^pat-vt-amd]
-* Wang et al., *J. Electrochem. Soc.* 1997 — fluorine's effect on boron
+* [Wang et al., *J. Electrochem. Soc.* 1997](<https://doi.org/10.1149/1.1838075>) — fluorine's effect on boron
   diffusion after BF₂ implantation through oxide and {term}`RTA`, directly
   relevant to a BF₂ channel implant annealed at RTAI.[^wang-1997]
-* Taur et al., *Proc. IEEE* 1997 — super-steep retrograde channels at
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — super-steep retrograde channels at
   0.1 µm, the profile a surface compensation implant helps
   create.[^taur-1997]
-* MacPherson, *Appl. Phys. Lett.* 1971 — the original
+* [MacPherson, *Appl. Phys. Lett.* 1971](<https://doi.org/10.1063/1.1653513>) — the original
   threshold-adjust-by-implantation paper.[^macpherson-1971]
-* Rafferty et al. (AT&T), IEDM 1993 — how implant damage and the anneal
+* [Rafferty et al. (AT&T), IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347345>) — how implant damage and the anneal
   reshape shallow channel doping.[^rafferty-1993]
-* Huang et al., *IEEE TED* 2000 — an indium super-steep retrograde
+* [Huang et al., *IEEE TED* 2000](<https://doi.org/10.1109/16.887025>) — an indium super-steep retrograde
   channel, an alternative to shallow boron for profile
   shaping.[^huang-2000]
-* Shahidi et al. (IBM), *IEEE EDL* 1993 — indium channel implants for
+* [Shahidi et al. (IBM), *IEEE EDL* 1993](<https://doi.org/10.1109/55.225595>) — indium channel implants for
   steep retrograde NMOS channels.[^shahidi-1993]
-* Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801 — Vt-adjust and
+* [Aronowitz, Khan and Kimball (LSI Logic), US 5,963,801](<https://patents.google.com/patent/US5963801A/en>) — Vt-adjust and
   punch-through implants placed through a sacrificial
   oxide.[^pat-vt-lsi]
 

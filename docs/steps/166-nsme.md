@@ -220,45 +220,45 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Periphery rules* — nsm.1–nsm.3b.[^pdk-periph]
-* SkyWater PDK, *Process stack diagram* — TOPOX, NILD2–NILD6, LINT,
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — nsm.1–nsm.3b.[^pdk-periph]
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — TOPOX, NILD2–NILD6, LINT,
   PSG and FOX; metal-5 level 5.3711 µm.[^pdk-04]
 * Efabless, Caravel `advSeal_6um_gen` seal-ring GDS — the 5 µm `nsm`
   band over diffusion rings.[^caravel-sealring]
-* SkyWater, *Facilities & Capabilities* — etchers and their gases;
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — etchers and their gases;
   strippers and solvents.[^skw-01]
 * Lam Research, Exelan press release and Form 10-K (2003).[^lam-exelan][^lam-10k]
 
 ### High-level understanding
 
 * Wikipedia, *Reactive-ion etching*, *Dry etching*.[^wiki-rie][^wiki-dry-etch]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — plasma etching
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — plasma etching
   of dielectrics.[^txt-01]
-* Nojiri, *Dry Etching Technology for Semiconductors* — oxide etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — oxide etch
   chemistry and equipment.[^nojiri-2015]
 
 ### Deep dive
 
-* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the design
+* [Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981](<https://doi.org/10.1007/BF00565992>) — the design
   of plasma etchants and the fluorine-to-carbon ratio.[^flamm-1981]
-* Winters and Coburn, *Surf. Sci. Rep.* 1992 — surface science of
+* [Winters and Coburn, *Surf. Sci. Rep.* 1992](<https://doi.org/10.1016/0167-5729(92)90009-Z>) — surface science of
   etching reactions.[^winters-1992]
-* Oehrlein et al., *JVST A* 1994 — silicon dioxide and silicon etching
+* [Oehrlein et al., *JVST A* 1994](<https://doi.org/10.1116/1.578877>) — silicon dioxide and silicon etching
   in CF₄ and CHF₃ high-density plasmas.[^oehrlein-1994b]
-* Perry et al., *JVST A* 2001 — oxide etch rates and selectivity to
+* [Perry et al., *JVST A* 2001](<https://doi.org/10.1116/1.1382874>) — oxide etch rates and selectivity to
   photoresist in a C₂F₆ plasma.[^perry-2001]
-* Schaepkens et al., *JVST A* 1999 — the SiO₂-to-Si₃N₄ selectivity
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — the SiO₂-to-Si₃N₄ selectivity
   mechanism, for a stop on the LINIT nitride.[^schaepkens-1999]
-* Kastenmeier et al., *JVST A* 1996 — nitride and oxide etch rates in a
+* [Kastenmeier et al., *JVST A* 1996](<https://doi.org/10.1116/1.580203>) — nitride and oxide etch rates in a
   downstream CF₄/O₂/N₂ reactor, for the chemical contrast a breakthrough
   step exploits.[^kastenmeier-1996]
-* Wodecki, SPIE 1999 — endpoint detection demonstrated at low open
+* [Wodecki, SPIE 1999](<https://doi.org/10.1117/12.361313>) — endpoint detection demonstrated at low open
   area.[^wodecki-1999]
-* Mitwalsky and Chen (Siemens and IBM), US 5,789,302 — dielectric discontinuities as
+* [Mitwalsky and Chen (Siemens and IBM), US 5,789,302](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5789302>) — dielectric discontinuities as
   dicing crack stops.[^pat-crackstop-ibm]
-* Ying and Hung (TSMC), US 6,300,252 — a two-step window etch through a
+* [Ying and Hung (TSMC), US 6,300,252](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6300252>) — a two-step window etch through a
   passivation and inter-metal dielectrics.[^pat-fusewin-tsmc]
-* Comizzoli et al., *Science* 1986 — corrosion of electronic devices by
+* [Comizzoli et al., *Science* 1986](<https://doi.org/10.1126/science.234.4774.340>) — corrosion of electronic devices by
   moisture and ions.[^comizzoli-1986]
 
 :::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read

@@ -214,60 +214,60 @@ fab (SKY130's energy and dose are not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — "N Tip (As)" 0.01 µm, S/D
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "N Tip (As)" 0.01 µm, S/D
   XJ 0.1 µm, tip implant angle 7°, poly thickness 0.18 µm.[^pdk-03]
-* SkyWater PDK, *Device Details* — the 1.8 V NMOS family this tip
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the 1.8 V NMOS family this tip
   serves.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — the Axcelis GSD and 8250
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the Axcelis GSD and 8250
   species, energy, dose and tilt ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter* — the
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
   energy and current range of the medium-current class.[^axcelis-8250]
-* ITRS 2001, *Front End Processes* — Table 51a extension depth, sheet
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51a extension depth, sheet
   resistance and abruptness.[^itrs-01]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — sources, amorphisation, tilt.[^wiki-implant]
-* Wikipedia, *Short-channel effect* — depletion-region overlap and
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — sources, amorphisation, tilt.[^wiki-implant]
+* [Wikipedia, *Short-channel effect*](<https://en.wikipedia.org/wiki/Short-channel_effect>) — depletion-region overlap and
   DIBL.[^wiki-sce]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 8
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 8
   (implantation) and the extension-junction discussion.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD and
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD and
   extension engineering.[^txt-04]
-* Taur and Ning, *Fundamentals of Modern VLSI Devices* — source/drain
+* [Taur and Ning, *Fundamentals of Modern VLSI Devices*](<https://doi.org/10.1017/CBO9781139195065>) — source/drain
   series resistance and short-channel physics.[^taur-2009]
 
 ### Deep dive
 
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped drain, the
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped drain, the
   first self-aligned extension.[^ogura-1980]
-* Thompson et al. (Intel), VLSI 1998 — extension depth and doping
+* [Thompson et al. (Intel), VLSI 1998](<https://doi.org/10.1109/VLSIT.1998.689229>) — extension depth and doping
   scaling for 0.1 µm and below.[^thompson-1998]
-* Kasnavi, Griffin and Plummer, VLSI 2000 — the limits of ultra-low
+* [Kasnavi, Griffin and Plummer, VLSI 2000](<https://doi.org/10.1109/VLSIT.2000.852790>) — the limits of ultra-low
   energy arsenic implants on sheet resistance and junction
   depth.[^kasnavi-2000]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — review of shallow
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — review of shallow
   junction formation: low-energy implantation, {term}`TED` and {term}`RTA`.[^rev-05]
-* Nobili et al., *J. Electrochem. Soc.* 1983 — precipitation as the
+* [Nobili et al., *J. Electrochem. Soc.* 1983](<https://doi.org/10.1149/1.2119859>) — precipitation as the
   cause of electrically inactive arsenic above its solubility.[^nobili-1983]
-* Rousseau, Griffin and Plummer, *Appl. Phys. Lett.* 1994 — arsenic
+* [Rousseau, Griffin and Plummer, *Appl. Phys. Lett.* 1994](<https://doi.org/10.1063/1.112301>) — arsenic
   deactivation as a source of interstitials that enhance diffusion of
   neighbouring dopants.[^rousseau-1994]
-* Taur et al., *Proc. IEEE* 1997 — why junction depth and abruptness
+* [Taur et al., *Proc. IEEE* 1997](<https://doi.org/10.1109/5.573737>) — why junction depth and abruptness
   govern scaling.[^taur-1997]
-* Yoneda and Niwayama, IWJT 2002 — extension-implant shadowing and
+* [Yoneda and Niwayama, IWJT 2002](<https://doi.org/10.1109/IWJT.2002.1225190>) — extension-implant shadowing and
   drain-current asymmetry at 130 nm.[^yoneda-2002]
-* Lukaszek, Reno and Bammi, IIT 1996 — wafer charging through resist
+* [Lukaszek, Reno and Bammi, IIT 1996](<https://doi.org/10.1109/IIT.1996.586135>) — wafer charging through resist
   during high-current arsenic implants.[^lukaszek-1996]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral {term}`straggle` at implant
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral {term}`straggle` at implant
   edges.[^hook-2003]
-* Yu (AMD), US 6,521,502 — activating extensions and halos by
+* [Yu (AMD), US 6,521,502](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6521502>) — activating extensions and halos by
   solid-phase epitaxy of an amorphised layer.[^pat-spe-amd]
-* Tran, McQueen and Kerr (Micron), US 6,759,288 — a masked second LDD
+* [Tran, McQueen and Kerr (Micron), US 6,759,288](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6759288>) — a masked second LDD
   implant with explicit device motivation.[^pat-ldd-micron]
-* Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985 — the
+* [Smith, Rosencwaig and Willenborg, *Appl. Phys. Lett.* 1985](<https://doi.org/10.1063/1.96079>) — the
   thermal-wave implant monitor.[^smith-1985]
 
 ## Open questions

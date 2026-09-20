@@ -224,16 +224,16 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Process stack diagram* — "TOPNIT K=7.5", 0.54 µm and
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "TOPNIT K=7.5", 0.54 µm and
   0.4223 µm; 0.3777 µm; "TOPOX"; "PI1"; `metal5` 1.26 µm.[^pdk-04]
-* SkyWater PDK, *Masks* — PMM not flagged for SKY130; PMM2, PBO and
+* [SkyWater PDK, *Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — PMM not flagged for SKY130; PMM2, PBO and
   CU1M flagged.[^pdk-05]
-* SkyWater Technology, *Mixed-Signal CMOS & ROIC* platform table —
+* [SkyWater Technology, *Mixed-Signal CMOS & ROIC* platform table](<https://www.skywatertechnology.com/cmos/>) —
   polyimide "Yes" for S130.[^skw-02]
-* SkyWater PDK, *Periphery rules* — m5.1, m5.2.[^pdk-periph]
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — m5.1, m5.2.[^pdk-periph]
 * Cypress, QTP 014807, QTP 123907/132302/132301 and QTP 113005 — the
   passivation descriptions at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
-* SkyWater, *Facilities & Capabilities* — "PECVD nitride C1"; furnace
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD nitride C1"; furnace
   nitrides; "Polyimide cure".[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
@@ -242,37 +242,37 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * Wikipedia, *Silicon nitride*, *Plasma-enhanced chemical vapor
   deposition*, *Silane*.[^wiki-sin][^wiki-pecvd][^wiki-silane]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — passivation
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passivation
   films in the deep-submicron back end.[^txt-05]
 * Novellus company history; Applied Materials 10-K — the 200 mm PECVD
   platforms.[^novellus-history][^amat-10k]
 
 ### Deep dive
 
-* Sinha et al., *J. Electrochem. Soc.* 1978 — reactive-plasma Si–N
+* [Sinha et al., *J. Electrochem. Soc.* 1978](<https://doi.org/10.1149/1.2131509>) — reactive-plasma Si–N
   films for MOS-LSI passivation.[^sinha-1978]
-* Lanford and Rand, *J. Appl. Phys.* 1978 — hydrogen content of plasma
+* [Lanford and Rand, *J. Appl. Phys.* 1978](<https://doi.org/10.1063/1.325095>) — hydrogen content of plasma
   nitride and its infrared calibration.[^lanford-1978]
-* Chow et al., *J. Appl. Phys.* 1982 — hydrogen and etch rate across
+* [Chow et al., *J. Appl. Phys.* 1982](<https://doi.org/10.1063/1.331445>) — hydrogen and etch rate across
   nine commercial plasma-nitride reactors.[^chow-1982]
-* Claassen et al., *J. Electrochem. Soc.* 1985 — composition and stress
+* [Claassen et al., *J. Electrochem. Soc.* 1985](<https://doi.org/10.1149/1.2113980>) — composition and stress
   versus temperature, pressure, gas ratio and RF
   frequency.[^claassen-1985]
-* Smith et al., *J. Electrochem. Soc.* 1990 — the SiNₓHᵧ deposition
+* [Smith et al., *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086517>) — the SiNₓHᵧ deposition
   mechanism.[^smith-1990]
-* Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — review of silicon
+* [Habraken and Kuiper, *Mater. Sci. Eng. R* 1994](<https://doi.org/10.1016/0927-796X(94)90006-X>) — review of silicon
   nitride and oxynitride films.[^habraken-1994]
-* Hughey and Cook, MRS 2003 — irreversible tensile stress in PECVD
+* [Hughey and Cook, MRS 2003](<https://doi.org/10.1557/PROC-795-U1.6>) — irreversible tensile stress in PECVD
   nitride on heating.[^hughey-2003]
-* Shimaya, IRPS 1995 — nitride passivation and hot-carrier
+* [Shimaya, IRPS 1995](<https://doi.org/10.1109/RELPHY.1995.513694>) — nitride passivation and hot-carrier
   degradation.[^shimaya-1995]
-* Snow, Grove, Deal and Sah, *J. Appl. Phys.* 1965 — alkali-ion
+* [Snow, Grove, Deal and Sah, *J. Appl. Phys.* 1965](<https://doi.org/10.1063/1.1703105>) — alkali-ion
   transport in oxide, the contamination the nitride blocks.[^snow-1965]
-* Peck, IRPS 1986 — a humidity-test acceleration model for plastic
+* [Peck, IRPS 1986](<https://doi.org/10.1109/IRPS.1986.362110>) — a humidity-test acceleration model for plastic
   packages.[^peck-1986]
-* Hunter et al., IMAPS 2012 — probe- and bond-induced cracking in
+* [Hunter et al., IMAPS 2012](<https://doi.org/10.4071/isom-2012-TP41>) — probe- and bond-induced cracking in
   aluminium pad structures.[^hunter-2012]
-* Tzeng, Chen and Wang (Vanguard), US 6,294,474 — an oxide/nitride
+* [Tzeng, Chen and Wang (Vanguard), US 6,294,474](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6294474>) — an oxide/nitride
   passivation stack with stated thicknesses.[^pat-fuse-vanguard]
 
 :::{dropdown} From a patent shown as in force (US 10,062,748; estimated expiry 2038-02-27) — open to read

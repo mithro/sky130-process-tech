@@ -202,67 +202,67 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "High Volt. N-tip,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "High Volt. N-tip,
   HVNTM, X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `hvntm`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `hvntm`
   125:20; `chvntm` 39:0, 38:20; `hvi` 75:20.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — hvntm.X.1, hvntm.1–hvntm.10, the
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — hvntm.X.1, hvntm.1–hvntm.10, the
   "Defines tip implants for the HV NMOS" heading.[^pdk-periph]
-* SkyWater PDK, *Error Messages* page and `errors.csv` — the `chvntm`
+* SkyWater PDK, [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page and `errors.csv` — the `chvntm`
   checks on the undefined `CLHVNTM` layer.[^pdk-errors]
-* SkyWater PDK, *Criteria & Assumptions* — 40° HV tip angle, 23°
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — 40° HV tip angle, 23°
   twist, 0.3 µm HV-tip resist, 0.232 µm HVNTM shadowing, 0.02 µm
   penetration, 0.013 µm blocking distance, 0.1 µm minimum HV tip.[^pdk-03]
-* SkyWater PDK, *High Voltage Methodology* — 110 Å gate oxide for the
+* [SkyWater PDK, *High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) — 110 Å gate oxide for the
   5 V and drain-extended families; N-well drain extensions.[^pdk-hv]
-* SkyWater PDK, *Device Details* — the 5 V NMOS, native 5 V NMOS and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the 5 V NMOS, native 5 V NMOS and
   ESD NMOS devices.[^pdk-07]
-* SkyWater, *Facilities & Capabilities* — ASML i-line tools, tracks,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML i-line tools, tracks,
   metrology.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *Hot-carrier injection* — the failure mode this drain
+* [Wikipedia, *Hot-carrier injection*](<https://en.wikipedia.org/wiki/Hot-carrier_injection>) — the failure mode this drain
   design exists to prevent.[^wiki-hci]
-* Wikipedia, *Photolithography* — i-line resolution.[^wiki-litho]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 3 — LDD, DDD and
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line resolution.[^wiki-litho]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — LDD, DDD and
   LATID drain structures and hot-carrier reliability.[^txt-04]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography and implant masking.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — lithography
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — lithography
   tools of the era.[^txt-05]
 
 ### Deep dive
 
-* Hori (Matsushita), IEDM 1989 — the quarter-micron LATID transistor
+* [Hori (Matsushita), IEDM 1989](<https://doi.org/10.1109/IEDM.1989.74169>) — the quarter-micron LATID transistor
   for 3.3 V operation.[^hori-1989-latid]
-* Hori et al. (Matsushita), *IEEE TED* 1992 — the full account of
+* [Hori et al. (Matsushita), *IEEE TED* 1992](<https://doi.org/10.1109/16.158803>) — the full account of
   large-angle-tilt implanted drain technology.[^hori-1992]
-* Hu et al. (Berkeley), *IEEE TED* 1985 — the hot-electron degradation
+* [Hu et al. (Berkeley), *IEEE TED* 1985](<https://doi.org/10.1109/T-ED.1985.21952>) — the hot-electron degradation
   model that sets the lifetime target.[^hu-1985-hci]
-* Takeda et al. (Hitachi), *IEEE TED* 1982 — drain structures for
+* [Takeda et al. (Hitachi), *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.20752>) — drain structures for
   minimising hot-carrier generation.[^takeda-1982]
-* Ogura et al. (IBM), *IEEE TED* 1980 — the lightly doped
+* [Ogura et al. (IBM), *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.20040>) — the lightly doped
   drain.[^ogura-1980]
-* Rafí and Campabadal, *Solid-State Electronics* 2001 — hot-carrier
+* [Rafí and Campabadal, *Solid-State Electronics* 2001](<https://doi.org/10.1016/S0038-1101(01)00004-1>) — hot-carrier
   degradation of LDD versus LATID NMOS.[^rafi-2001]
-* King, Lacoe and Wang-Ratkovic, IRPS 2000 — the role of the spacer
+* [King, Lacoe and Wang-Ratkovic, IRPS 2000](<https://doi.org/10.1109/RELPHY.2000.843895>) — the role of the spacer
   oxide in hot-carrier stress of LDD NMOS.[^king-2000]
-* Chen et al., *Solid-State Electronics* 1995 — beam shadowing in
+* [Chen et al., *Solid-State Electronics* 1995](<https://doi.org/10.1016/0038-1101(94)00256-F>) — beam shadowing in
   LATID devices, the effect behind the PDK's shadowing
   allowance.[^chen-1995]
-* Mitros et al. (TI), *IEEE TED* 2001 — drain-extended transistors in
+* [Mitros et al. (TI), *IEEE TED* 2001](<https://doi.org/10.1109/16.936703>) — drain-extended transistors in
   a logic process, the other high-voltage drain design in SKY130.[^mitros-2001]
-* Kouznetsov (Cypress), US 6,531,366 — a high-voltage device with
+* [Kouznetsov (Cypress), US 6,531,366](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6531366>) — a high-voltage device with
   self-aligned {term}`graded junctions <graded junction>` in a CMOS flow.[^pat-hv-graded-cyp]
-* Mitros (TI), US 6,660,603 — drain-extended transistors with
+* [Mitros (TI), US 6,660,603](<https://patents.google.com/patent/US6660603B2/en>) — drain-extended transistors with
   self-aligned channel and drain extensions.[^pat-demos-ti]
-* Gardner, Hause and Fulford (AMD), US 5,793,090 — separate LDD
+* [Gardner, Hause and Fulford (AMD), US 5,793,090](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5793090>) — separate LDD
   implants for different transistors on one chip.[^pat-multi-ldd-amd]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Mack, *Fundamental Principles of Optical Lithography* — thin-resist
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — thin-resist
   imaging and reflective notching.[^mack-2007]
 
 ## Open questions

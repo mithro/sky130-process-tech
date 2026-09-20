@@ -215,57 +215,57 @@ recipe is not public):
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — "AMAT Mirra CMP – oxide";
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT Mirra CMP – oxide";
   SEZ 223 / Da Vinci.[^skw-01]
-* SkyWater, *A Day in the Life of a SkyWater Maintenance Technician* —
+* [SkyWater, *A Day in the Life of a SkyWater Maintenance Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) —
   "a SEZ etcher tool".[^skw-07]
-* LinkedIn, SkyWater *Defect Technician 2* posting — inspection
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — inspection
   tools.[^job-06]
-* SkyWater PDK, *Periphery rules* — m1.pd.1 (0.7), the `cmm1`
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — m1.pd.1 (0.7), the `cmm1`
   waffle-drop density check in 700 µm windows.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — "Oxide Bias for MM1" 0.6;
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Oxide Bias for MM1" 0.6;
   "Min pattern density for oxide" 0.75; "Min MM* PD range" 0.3;
   700 µm and 2 000 µm extraction boxes.[^pdk-03]
-* SkyWater PDK, *Process stack diagram* — `met1` 0.36 µm; via1
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `met1` 0.36 µm; via1
   0.27 µm.[^pdk-04]
-* SkyWater PDK, *Parasitic Layout Extraction* — the capacitance
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the capacitance
   tables.[^pdk-08]
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing*; *Photolithography* —
+* Wikipedia, [*Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>); [*Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) —
   the depth-of-focus relation.[^wiki-cmp][^wiki-litho]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — ILD CMP.[^txt-05]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — CMP
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ILD CMP.[^txt-05]
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — CMP
   tools and consumables.[^txt-07]
 * Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
-* Moon, in *Advances in Chemical Mechanical Planarization* — the
+* [Moon, in *Advances in Chemical Mechanical Planarization*](<https://doi.org/10.1016/B978-0-08-100165-3.00001-2>) — the
   chemical and physical mechanisms of dielectric CMP.[^moon-2016]
 
 ### Deep dive
 
-* Stine et al., *IEEE Trans. Semicond. Manuf.* 1998 — rapid
+* [Stine et al., *IEEE Trans. Semicond. Manuf.* 1998](<https://doi.org/10.1109/66.661292>) — rapid
   characterisation of pattern-dependent CMP variation.[^stine-1998]
-* Stine et al., *IEEE TED* 1998 — the physical and electrical effects
+* [Stine et al., *IEEE TED* 1998](<https://doi.org/10.1109/16.661228>) — the physical and electrical effects
   of metal-fill patterning for oxide CMP.[^stine-1998-ted]
-* Ouma et al., *IEEE Trans. Semicond. Manuf.* 2002 — planarisation
+* [Ouma et al., *IEEE Trans. Semicond. Manuf.* 2002](<https://doi.org/10.1109/66.999598>) — planarisation
   length and pattern density in oxide CMP.[^ouma-2002]
 * Boning et al., SPIE 1994, and Chang et al., IEDM 1995 —
   statistical metrology of ILD thickness variation.[^boning-1994][^chang-1995]
-* Sivaram et al. (SEMATECH), MRS 1992 — removal-rate and planarity
+* [Sivaram et al. (SEMATECH), MRS 1992](<https://doi.org/10.1557/PROC-260-53>) — removal-rate and planarity
   models for ILD CMP.[^sivaram-1992]
-* Cook, *J. Non-Cryst. Solids* 1990 — the chemistry of glass
+* [Cook, *J. Non-Cryst. Solids* 1990](<https://doi.org/10.1016/0022-3093(90)90200-6>) — the chemistry of glass
   polishing.[^cook-1990]
 * Preston, 1927, and Runnels and Eyman, *J. Electrochem. Soc.* 1994
   — the removal-rate law and the tribology of the wafer–pad
   contact.[^preston-1927][^runnels-1994]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry
   chemistry.[^rev-02]
-* Devriendt et al. (IMEC), *Solid State Phenomena* 1998 — oxide-CMP
+* [Devriendt et al. (IMEC), *Solid State Phenomena* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.173>) — oxide-CMP
   defects versus post-CMP cleaning.[^devriendt-1998]
-* Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009 — brush
+* [Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009](<https://doi.org/10.1149/1.3058994>) — brush
   design for post-ILD-CMP scrubbing.[^philipossian-2009]
-* Sun, Han and Keswani, 2017 — brush scrubbing reviewed.[^sun-2017]
+* [Sun, Han and Keswani, 2017](<https://doi.org/10.1016/B978-0-323-43157-6.00004-5>) — brush scrubbing reviewed.[^sun-2017]
 * Steigerwald, Murarka and Gutmann; Oliver (ed.); Zantye, Kumar and
   Sikder — the CMP texts and review.[^steigerwald-1997][^oliver-2004][^zantye-2004]
 * Chow et al. (IBM), US 4,789,648, and Beyer et al. (IBM),

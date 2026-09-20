@@ -180,49 +180,49 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ### Cross-check
 
-* SkyWater PDK, process stack diagram — "PSG K=3.9" interval,
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "PSG K=3.9" interval,
   0.4299 µm over field poly; `li` bottom 0.9361 µm; NILD naming.[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — "Pre-LI ILD thickness"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Pre-LI ILD thickness"
   0.5 µm; S/D junction depth 0.1 µm.[^pdk-03]
-* SkyWater PDK, *Parasitic Layout Extraction* — the poly/li
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the poly/li
   capacitance tables the cap thickness feeds.[^pdk-08]
-* SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD TEOS, C2 and
   Producer"; "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
-* SkyWater, Form S-1 — gas suppliers.[^sec-01]
+* [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — gas suppliers.[^sec-01]
 
 ### High-level understanding
 
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
 * Wikipedia, *Tetraethyl orthosilicate*.[^wiki-teos]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   PECVD oxides.[^txt-02]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — PECVD equipment and chamber cleaning.[^txt-09]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the Concept One/Two
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — PECVD equipment and chamber cleaning.[^txt-09]
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Concept One/Two
   product history.[^novellus-history]
 
 ### Deep dive
 
-* Nguyen et al. (IBM), *J. Electrochem. Soc.* 1990 — reaction
+* [Nguyen et al. (IBM), *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086914>) — reaction
   mechanisms of plasma and thermal TEOS oxide deposition.[^nguyen-1990]
-* Raupp, Cale and Hey, *JVST B* 1992 — oxygen excitation and loss
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — oxygen excitation and loss
   in PECVD TEOS.[^raupp-1992]
-* Becker et al., *JVST B* 1987 — high-quality SiO₂ from TEOS
+* [Becker et al., *JVST B* 1987](<https://doi.org/10.1116/1.583673>) — high-quality SiO₂ from TEOS
   pyrolysis.[^becker-1987]
-* Adams et al., *J. Electrochem. Soc.* 1981 — characterisation of
+* [Adams et al., *J. Electrochem. Soc.* 1981](<https://doi.org/10.1149/1.2127680>) — characterisation of
   plasma-deposited silicon dioxide.[^adams-1981-pecvd]
-* Fujino et al., *J. Electrochem. Soc.* 1990 — TEOS/ozone oxide at
+* [Fujino et al., *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2087093>) — TEOS/ozone oxide at
   atmospheric pressure.[^fujino-1990]
-* Kwok et al. (Applied Materials), *J. Electrochem. Soc.* 1994 —
+* [Kwok et al. (Applied Materials), *J. Electrochem. Soc.* 1994](<https://doi.org/10.1149/1.2055081>) —
   integrated PECVD/ozone-TEOS films and their surface
   effects.[^kwok-1994]
-* Levin, *J. Electrochem. Soc.* 1982 — water absorption and
+* [Levin, *J. Electrochem. Soc.* 1982](<https://doi.org/10.1149/1.2124289>) — water absorption and
   densification of PSG, the problem a cap solves.[^levin-1982]
-* Paulson and Kirk, IRPS 1974 — phosphorus glass, moisture and
+* [Paulson and Kirk, IRPS 1974](<https://doi.org/10.1109/IRPS.1974.362644>) — phosphorus glass, moisture and
   aluminium corrosion.[^paulson-1974]
-* Hsiao, Liu and Wang, *JVST B* 2005 — thermal-budget behaviour of
+* [Hsiao, Liu and Wang, *JVST B* 2005](<https://doi.org/10.1116/1.2050670>) — thermal-budget behaviour of
   HDP PSG under a cap.[^hsiao-2005]
-* Nguyen, *IBM J. Res. Dev.* 1999 — HDP-CVD dielectrics, the
+* [Nguyen, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.431.0109>) — HDP-CVD dielectrics, the
   alternative cap route.[^nguyen-1999]
 
 ## Open questions

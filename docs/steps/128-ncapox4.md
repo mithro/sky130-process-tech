@@ -177,56 +177,56 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ### Cross-check
 
-* SkyWater PDK, *Process stack diagram* — via2 (NILD4) 0.42 µm;
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — via2 (NILD4) 0.42 µm;
   "NILD4_C K=3.5", 0.030 µm.[^pdk-04]
-* SkyWater PDK, *Periphery rules* — via2.1a 0.200 µm.[^pdk-periph]
-* SkyWater, *Facilities & Capabilities* — "PECVD TEOS, C2 and
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — via2.1a 0.200 µm.[^pdk-periph]
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "PECVD TEOS, C2 and
   Producer – low temp options"; "PECVD silane
   oxide/nitride/oxynitride, C1".[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — "1000A TEOS" in
   the Fab 4 passivation stack.[^cyp-qtp-123907][^cyp-qtp-014807]
-* Applied Materials, Form 10-K (2003) — the Producer platform.[^amat-10k]
-* Encyclopedia.com, *Novellus Systems, Inc.* — Concept One/Two and
+* [Applied Materials, Form 10-K (2003)](<https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm>) — the Producer platform.[^amat-10k]
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — Concept One/Two and
   Sequel.[^novellus-history]
 
 ### High-level understanding
 
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
   orthosilicate*.[^wiki-pecvd][^wiki-teos]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — PECVD
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — PECVD
   oxides in the back end.[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — ILD stacks,
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ILD stacks,
   CMP and cap layers.[^txt-05]
-* Seshan (ed.), *Handbook of Thin Film Deposition* — PECVD
+* [Seshan (ed.), *Handbook of Thin Film Deposition*](<https://openlibrary.org/isbn/9781437778731>) — PECVD
   equipment.[^seshan-2012]
 
 ### Deep dive
 
 * Boning et al., SPIE 1994, and Chang et al., IEDM 1995 — the ILD
   thickness variation a cap is added to control.[^boning-1994][^chang-1995]
-* Raupp, Cale and Hey, *JVST B* 1992 — PECVD TEOS oxide
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — PECVD TEOS oxide
   kinetics.[^raupp-1992]
-* Chapple-Sokol, Tierney and Batey (IBM), MRS 1989 — RF-power
+* [Chapple-Sokol, Tierney and Batey (IBM), MRS 1989](<https://doi.org/10.1557/PROC-165-113>) — RF-power
   dependence of PECVD oxide properties.[^chapple-sokol-1989]
-* Mani and Saif, *Thin Solid Films* 2007 — stress development in
+* [Mani and Saif, *Thin Solid Films* 2007](<https://doi.org/10.1016/j.tsf.2006.08.025>) — stress development in
   plasma oxide from hydrogen evolution.[^mani-2007]
 * Adams and Capio (Bell Labs), 1979, and Becker et al. (Siemens),
   1987 — the LPCVD TEOS oxides the low-temperature cap cannot
   use.[^adams-1979][^becker-1987]
-* Devriendt et al. (IMEC), *Solid State Phenomena* 1998 — oxide-CMP
+* [Devriendt et al. (IMEC), *Solid State Phenomena* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.173>) — oxide-CMP
   defects that the cap buries.[^devriendt-1998]
-* Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009 —
+* [Philipossian and Sun, *Electrochem. Solid-State Lett.* 2009](<https://doi.org/10.1149/1.3058994>) —
   post-ILD-CMP scrubbing before the cap.[^philipossian-2009]
-* Moon, in *Advances in Chemical Mechanical Planarization* — the
+* [Moon, in *Advances in Chemical Mechanical Planarization*](<https://doi.org/10.1016/B978-0-08-100165-3.00001-2>) — the
   chemistry of the polished oxide surface.[^moon-2016]
-* Kobayakawa et al., VMIC 1991 — outgassing from planarising
+* [Kobayakawa et al., VMIC 1991](<https://doi.org/10.1109/VMIC.1991.153054>) — outgassing from planarising
   dielectrics, the via-poisoning risk a dense cap reduces.[^kobayakawa-1991]
-* Brunner, SPIE 1991 — the swing-curve dependence on the oxide under
+* [Brunner, SPIE 1991](<https://doi.org/10.1117/12.46410>) — the swing-curve dependence on the oxide under
   the resist.[^brunner-1991]
-* Nguyen (IBM), *IBM J. Res. Dev.* 1999 — HDP and plasma dielectric
+* [Nguyen (IBM), *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.431.0109>) — HDP and plasma dielectric
   film properties compared.[^nguyen-1999]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — plasma-enhanced deposition and film
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — plasma-enhanced deposition and film
   stress.[^lieberman-2005]
 
 ## Open questions

@@ -226,63 +226,63 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "Tunnel Mask, TUNM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "Tunnel Mask, TUNM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `tunm`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `tunm`
   80:20 "SONOS device tunnel implant"; `ctunm` 20:0; `areaid.ce`
   81:2.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — tunm.1–tunm.8 and hvi.4.[^pdk-periph]
-* SkyWater PDK, *Background* — "8th generation SONOS technology
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — tunm.1–tunm.8 and hvi.4.[^pdk-periph]
+* [SkyWater PDK, *Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) — "8th generation SONOS technology
   node".[^pdk-02]
-* SkyWater PDK, *Device Details* — the SONOS cells, their
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — the SONOS cells, their
   programme/erase conditions and e-test thresholds.[^pdk-07]
-* SkyWater PDK, *Criteria & Assumptions* — "Photoresist thickness"
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Photoresist thickness"
   1.14 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — ASML i-line and DUV tools,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML i-line and DUV tools,
   tracks, CD-SEM and overlay metrology.[^skw-01]
-* SkyWater, first MPW shuttle press release — SONOS offered as a
+* [SkyWater, first MPW shuttle press release](<https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>) — SONOS offered as a
   standard feature.[^ann-11]
-* Cypress/UMC press release — the S65 process "only requires three
+* [Cypress/UMC press release](<https://www.prnewswire.com/news-releases/cypress-and-umc-deliver-ics-on-new-65-nanometer-sonos-embedded-flash-technology-126238008.html>) — the S65 process "only requires three
   additional mask layers"; no count is given for S8.[^cyp-22]
-* Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest — the
+* [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) — the
   2T cell and its {term}`Fowler–Nordheim <Fowler–Nordheim tunnelling>` programming.[^cyp-25]
-* SKY130 raw-data repository, test-tile pad documentation — the SONOS
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the SONOS
   transistor, array and capacitor structures of the published test
   tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
-* Wikipedia, *SONOS* — the ONO stack and its typical
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>) — the ONO stack and its typical
   thicknesses.[^cyp-26]
-* Wikipedia, *Anti-reflective coating* — why a BARC is used.[^wiki-arc]
-* Wikipedia, *Photolithography* — i-line versus KrF and
+* [Wikipedia, *Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>) — why a BARC is used.[^wiki-arc]
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line versus KrF and
   CD = k₁·λ/NA.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   the lithography chapters.[^txt-02]
-* Ramkumar (Cypress), *Cypress SONOS — A Scalable Embedded Flash
+* [Ramkumar (Cypress), *Cypress SONOS](<https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>) — A Scalable Embedded Flash
   Technology* — "three to five masking layers" and the thermal-budget
   argument.[^cyp-24]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* White, Adams and Bu, *IEEE Circuits & Devices* 2000 — the classic
+* [White, Adams and Bu, *IEEE Circuits & Devices* 2000](<https://doi.org/10.1109/101.857747>) — the classic
   review of scaled SONOS, including cell structures.[^pap-01]
-* Seo et al. (Samsung), *IEEE JSSC* 2005 — a 130 nm logic-compatible
+* [Seo et al. (Samsung), *IEEE JSSC* 2005](<https://doi.org/10.1109/JSSC.2005.845564>) — a 130 nm logic-compatible
   SONOS embedded flash from another vendor, for comparison of cell
   and array design.[^pap-02]
-* Kim et al. (Samsung), VLSI 2003 — a "highly manufacturable"
+* [Kim et al. (Samsung), VLSI 2003](<https://doi.org/10.1109/VLSIT.2003.1221071>) — a "highly manufacturable"
   embedded SONOS module and its mask adders.[^pap-03]
-* Taniguchi et al., IMW 2023 — SONOS embedded flash on a 130 nm
+* [Taniguchi et al., IMW 2023](<https://doi.org/10.1109/IMW56887.2023.10145990>) — SONOS embedded flash on a 130 nm
   platform with three added masks.[^pap-05]
-* Jiew, Chien and Yung, NVMTS 2012 — development of a robust 2T-SONOS
+* [Jiew, Chien and Yung, NVMTS 2012](<https://doi.org/10.1109/NVMTS.2013.6632849>) — development of a robust 2T-SONOS
   cell for embedded flash, the same cell topology as SKY130's.[^jiew-2012]
-* Baker and Capsuto, SPIE 1996 — CD control for an i-line 0.35 µm
+* [Baker and Capsuto, SPIE 1996](<https://doi.org/10.1117/12.241869>) — CD control for an i-line 0.35 µm
   device using a new anti-reflective coating.[^baker-1996]
-* Levinson, *Principles of Lithography* — chapters on wafer steppers,
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — chapters on wafer steppers,
   masks and reticles, and overlay.[^levinson-2005]
-* Hook et al., *IEEE TED* 2003 — ions scattered from the resist edge
+* [Hook et al., *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — ions scattered from the resist edge
   shift the threshold of devices near an implant-mask edge, relevant
   to the 0.095 µm `tunm` clearances.[^hook-2003]
 

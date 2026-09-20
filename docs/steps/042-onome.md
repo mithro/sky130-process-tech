@@ -238,12 +238,12 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — Lam 9400 TCP, AMAT DPS II,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — Lam 9400 TCP, AMAT DPS II,
   Akrion Gamma, ashers.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) —
   suppliers.[^sec-01][^sec-02]
 * Stanford Nanofabrication Facility, *Lam Research TCP 9400*.[^snf-9400]
-* Tokyo Electron, US 6,376,262 — CN emission at 387 nm as the nitride
+* [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — CN emission at 387 nm as the nitride
   etch endpoint.[^pat-cn-tel]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -256,32 +256,32 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching* — plasma etch basics.[^wiki-rie]
-* Wikipedia, *Silicon nitride* — nitride as an oxidation mask and its
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — plasma etch basics.[^wiki-rie]
+* [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — nitride as an oxidation mask and its
   etches.[^wiki-sin]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   plasma etching of dielectrics.[^txt-02]
 
 ### Deep dive
 
-* Regis et al., ASMC 1997 — reactive-ion etch of a nitride spacer
+* [Regis et al., ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — reactive-ion etch of a nitride spacer
   with high selectivity to oxide.[^regis-1997]
-* van Gelder and Hauser, *J. Electrochem. Soc.* 1967 — phosphoric
+* [van Gelder and Hauser, *J. Electrochem. Soc.* 1967](<https://doi.org/10.1149/1.2426757>) — phosphoric
   acid etch rates of nitride and oxide.[^vgh-1967]
-* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the design
+* [Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981](<https://doi.org/10.1007/BF00565992>) — the design
   of fluorocarbon plasma etchants.[^flamm-1981]
-* Winters and Coburn, *Surf. Sci. Rep.* 1992 — surface-science
+* [Winters and Coburn, *Surf. Sci. Rep.* 1992](<https://doi.org/10.1016/0167-5729(92)90009-Z>) — surface-science
   mechanisms of fluorine-based etching.[^winters-1992]
-* Coburn and Winters, *J. Appl. Phys.* 1979 — ion- and
+* [Coburn and Winters, *J. Appl. Phys.* 1979](<https://doi.org/10.1063/1.326355>) — ion- and
   electron-enhanced gas–surface reactions of Si, SiO₂ and Si₃N₄, and
   their implications for plasma etching.[^coburn-1979]
-* Nojiri, *Dry Etching Technology for Semiconductors* — endpoint,
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — endpoint,
   selectivity and stack-etch practice.[^nojiri-2015]
-* Kern, *J. Electrochem. Soc.* 1990 — the wet-clean chemistry used
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the wet-clean chemistry used
   for the bottom oxide and the pre-gate clean.[^kern-1990]
-* Kim et al. (Samsung), VLSI 2003 — patterning of an embedded SONOS
+* [Kim et al. (Samsung), VLSI 2003](<https://doi.org/10.1109/VLSIT.2003.1221071>) — patterning of an embedded SONOS
   module in a logic flow.[^pap-03]
-* Ramkumar et al. (Cypress), US 6,969,689 — the stack being
+* [Ramkumar et al. (Cypress), US 6,969,689](<https://patents.google.com/patent/US6969689B1/en>) — the stack being
   etched.[^pat-01]
 
 ## Open questions

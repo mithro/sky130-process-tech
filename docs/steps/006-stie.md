@@ -205,75 +205,75 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater, *Facilities & Capabilities* — DPSII "gate, trench"; Lam
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — DPSII "gate, trench"; Lam
   9400/4400; ashers; wet benches.[^skw-01]
-* SkyWater, Form 10-K for fiscal 2023 — "In 2020, we added deep-trench
+* [SkyWater, Form 10-K for fiscal 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — "In 2020, we added deep-trench
   etching capability".[^sec-02]
-* SkyWater PDK, *Criteria & Assumptions* — field oxide 0.07 µm above
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — field oxide 0.07 µm above
   the silicon surface under poly.[^pdk-03]
-* SkyWater PDK, process stack diagram — "FOX K=3.9"; 0.3262 µm;
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — "FOX K=3.9"; 0.3262 µm;
   "Diagram not to scale!".[^pdk-04]
-* SkyWater PDK, *Periphery rules* — difftap.3 = 0.270 µm.[^pdk-periph]
-* Currie and Lochtefeld (AmberWave), US 6,960,781 — trench depth
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — difftap.3 = 0.270 µm.[^pdk-periph]
+* [Currie and Lochtefeld (AmberWave), US 6,960,781](<https://patents.google.com/patent/US6960781B2/en>) — trench depth
   3000–4000 Å.[^pat-sti-amberwave]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
-  Etcher* page — the TCP etcher and its gas set.[^snf-9400]
-* SKY130 raw-data repository, test-tile pad documentation — the
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
+  Etcher* page](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — the TCP etcher and its gas set.[^snf-9400]
+* [SKY130 raw-data repository, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the
   field-oxide FET, diffusion-line and field-edge capacitor structures of
   the published test tile.[^raw-data-testtile-pads]
 
 ### High-level understanding
 
-* Wikipedia, *Shallow trench isolation* — the three STI operations and
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the three STI operations and
   the LOCOS cross-over node.[^wiki-sti]
-* Wikipedia, *Reactive-ion etching* — {term}`ICP` with separate
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — {term}`ICP` with separate
   bias.[^wiki-rie]
-* Wikipedia, *RCA clean* — the post-etch clean chemistry.[^wiki-rca]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — STI trench
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — the post-etch clean chemistry.[^wiki-rca]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — STI trench
   etch, HBr/Cl₂/O₂ chemistry, profile control.[^txt-05]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   plasma etching of silicon.[^txt-02]
 
 ### Deep dive
 
-* Nandakumar et al., IEDM 1998 — the STI review: trench profile,
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the STI review: trench profile,
   corner rounding, stress and defects.[^rev-01]
-* ITRS 2001, *Front End Processes* — the etch section on STI corner
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — the etch section on STI corner
   rounding and the thin-film section on trench fill.[^itrs-01]
-* Thung et al., *JTEC* 2016 — the HDP void at the trench wall, the
+* [Thung et al., *JTEC* 2016](<https://jtec.utem.edu.my/jtec/article/view/697>) — the HDP void at the trench wall, the
   post-etch wet clean and the fill-aspect-ratio
   definition.[^thung-2016]
-* Kim et al. (Spansion), US 7,439,141 — a corner-rounding scheme from
+* [Kim et al. (Spansion), US 7,439,141](<https://patents.google.com/patent/US7439141B2/en>) — a corner-rounding scheme from
   a company later merged into Cypress; not evidence for the S8 flow
   itself.[^pat-sti-cr]
-* Bryant, Hänsch and Mii, IEDM 1994 — the device-level case for STI
+* [Bryant, Hänsch and Mii, IEDM 1994](<https://doi.org/10.1109/IEDM.1994.383292>) — the device-level case for STI
   over LOCOS and what trench isolation must deliver.[^bryant-1994]
-* Chatterjee et al., VLSI 1996 — an STI study for 0.25/0.18 µm CMOS:
+* [Chatterjee et al., VLSI 1996](<https://doi.org/10.1109/VLSIT.1996.507831>) — an STI study for 0.25/0.18 µm CMOS:
   trench depth, corner and stress trade-offs.[^chatterjee-1996]
-* Nandakumar et al., IEDM 1997 — STI for sub-0.13 µm CMOS, the node
+* [Nandakumar et al., IEDM 1997](<https://doi.org/10.1109/IEDM.1997.650469>) — STI for sub-0.13 µm CMOS, the node
   this flow belongs to.[^nandakumar-1997]
-* Fazan and Mathews (Micron), IEDM 1993 — an early manufacturable
+* [Fazan and Mathews (Micron), IEDM 1993](<https://doi.org/10.1109/IEDM.1993.347399>) — an early manufacturable
   trench isolation process, showing the etch, fill and polish
   sequence.[^fazan-1993]
-* Bestwick and Oehrlein, *J. Vac. Sci. Technol. A* 1990 — reactive-ion
+* [Bestwick and Oehrlein, *J. Vac. Sci. Technol. A* 1990](<https://doi.org/10.1116/1.576832>) — reactive-ion
   etching of silicon in bromine-containing plasmas, the chemistry of
   the main etch.[^bestwick-1990]
-* Matsuda et al. (Toshiba), IEDM 1998 — a corner-rounding process
+* [Matsuda et al. (Toshiba), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746298>) — a corner-rounding process
   based on silicon micro-structure transformation after the trench
   etch.[^matsuda-1998]
-* Watanabe et al., IEDM 1996 — corner-rounded STI to cut stress-induced
+* [Watanabe et al., IEDM 1996](<https://doi.org/10.1109/IEDM.1996.554109>) — corner-rounded STI to cut stress-induced
   tunnel-oxide leakage in flash memory.[^watanabe-1996]
-* Lin et al., *Solid-State Electronics* 1998 — an analytical model of
+* [Lin et al., *Solid-State Electronics* 1998](<https://doi.org/10.1016/S0038-1101(98)00161-0>) — an analytical model of
   the sub-threshold current hump caused by the STI top
   corner.[^lin-1998]
-* Bianchi, Bouche and Roux-dit-Buisson, IEDM 2002 — modelling of
+* [Bianchi, Bouche and Roux-dit-Buisson, IEDM 2002](<https://doi.org/10.1109/IEDM.2002.1175792>) — modelling of
   trench-isolation-induced mechanical stress on MOSFET
   performance.[^bianchi-2002]
-* Horioka et al. (Toshiba), US 5,258,332 — rounding of trench corner
+* [Horioka et al. (Toshiba), US 5,258,332](<https://patents.google.com/patent/US5258332A/en>) — rounding of trench corner
   portions by fluorine/oxygen chemical dry etching (framed around
   trench capacitors rather than STI), the same technique as step 4
   above.[^pat-corner-toshiba]
-* Hon, SJSU master's thesis 2003 — {term}`line-edge roughness <LER>` measurement on
+* [Hon, SJSU master's thesis 2003](<https://doi.org/10.31979/etd.53yx-bwm5>) — {term}`line-edge roughness <LER>` measurement on
   an STI etch.[^hon-2003]
 
 ## Open questions

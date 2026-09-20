@@ -302,67 +302,67 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 ### Cross-check
 
-* SkyWater PDK, *Background* — "5 levels of metal (p - penta)";
+* [SkyWater PDK, *Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) — "5 levels of metal (p - penta)";
   "Inductor or Inductor-Capable".[^pdk-02]
-* SkyWater PDK, *Previous Nomenclature* — "s8pfhd", "5 metal layer
+* [SkyWater PDK, *Previous Nomenclature*](<https://skywater-pdk.readthedocs.io/en/main/previous.html>) — "s8pfhd", "5 metal layer
   backend stack"; "s8phirs", rdl metal inductors.[^pdk-previous]
-* SkyWater PDK, *Process stack diagram* — `metal5` 1.26 µm; metal5 bottom
+* [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — `metal5` 1.26 µm; metal5 bottom
   5.3711 µm; via4 0.505 µm.[^pdk-04]
-* SkyWater PDK, *Criteria & Assumptions* — metal-5 antenna thicknesses
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — metal-5 antenna thicknesses
   1.2 µm and 2 µm.[^pdk-03]
-* SkyWater PDK, *Antenna Rules* — Table Ig (S8P12-10R*/S8PIR-10R/S8PF-10R*)
+* [SkyWater PDK, *Antenna Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules.html>) — Table Ig (S8P12-10R*/S8PIR-10R/S8PF-10R*)
   `met5.1` 1.200 µm; Table Ie (S8P-5R/SP8P-5R/S8P-10R*)
   `waffle_chip` 2.000 µm.[^pdk-11]
-* SkyWater PDK, *Device Details* — `RSM5` 0.0285 Ω/sq.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — metal 5 29 mΩ/sq; `via4`
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — `RSM5` 0.0285 Ω/sq.[^pdk-07]
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — metal 5 29 mΩ/sq; `via4`
   380 mΩ; `via3` 3 410 mΩ.[^pdk-08]
-* SkyWater PDK, *Periphery rules* — m5.1–m5.4; via4.1, via4.3, via4.4;
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — m5.1–m5.4; via4.1, via4.3, via4.4;
   pad.2; the `rdl` function text.[^pdk-periph]
-* SkyWater PDK, *Layers Reference* — `met5` 72:20; `pad` 76:20.[^pdk-06]
-* Edwards, 2021 lecture slides — metal5 1.26 µm.[^ann-16]
-* Cypress, QTP 123907/132302/132301 — the S8DI 2.2 µm TiW/Al–Cu/TiW top
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `met5` 72:20; `pad` 76:20.[^pdk-06]
+* [Edwards, 2021 lecture slides](<https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>) — metal5 1.26 µm.[^ann-16]
+* [Cypress, QTP 123907/132302/132301](<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/PIN145273.pdf>) — the S8DI 2.2 µm TiW/Al–Cu/TiW top
   metal.[^cyp-qtp-123907]
-* SkyWater, *Facilities & Capabilities* — "AMAT PVD Metal" film list;
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — "AMAT PVD Metal" film list;
   metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — target suppliers.[^sec-01][^sec-02]
-* Hitachi Metals, US 5,160,534 — Ti:W target composition.[^pat-tiw-hitachi]
+* [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — Ti:W target composition.[^pat-tiw-hitachi]
 * Applied Materials, *Endura PVD*.[^amat-endura]
 
 ### High-level understanding
 
 * Wikipedia, *Sputter deposition*, *Wire bonding*, *Interconnect
   (integrated circuits)*.[^wiki-sputter][^wiki-wire-bonding][^wiki-interconnect]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and aluminium metallisation.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — thick upper
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — thick upper
   metals and via filling.[^txt-05]
-* Kikuta, *MRS Bulletin* 1995 — a short review of aluminium reflow
+* [Kikuta, *MRS Bulletin* 1995](<https://doi.org/10.1557/S0883769400045577>) — a short review of aluminium reflow
   sputtering.[^kikuta-1995]
 
 ### Deep dive
 
-* Wang (Applied Materials), US 5,108,570 — a multistep, biased, heated
+* [Wang (Applied Materials), US 5,108,570](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5108570>) — a multistep, biased, heated
   aluminium sputter process for stepped wafers.[^pat-al-multistep-amat]
-* Dobson (Electrotech), US 5,527,561 — filling recesses by high pressure
+* [Dobson (Electrotech), US 5,527,561](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5527561>) — filling recesses by high pressure
   and temperature after closing them with sputtered
   metal.[^pat-forcefill-electrotech]
 * Dirks et al., *J. Appl. Phys.* 1999, and Janssen et al., 1998 — the
   mechanisms of aluminium via fill by reflow and
   forcefill.[^dirks-1999][^janssen-1998]
-* Skelly and Gruenke, *JVST A* 1986 — bias-sputtered aluminium in
+* [Skelly and Gruenke, *JVST A* 1986](<https://doi.org/10.1116/1.573905>) — bias-sputtered aluminium in
   straight-walled vias.[^skelly-1986]
-* Taylor, Jain and Cale, *JVST A* 1998 — temperature and rate dependence
+* [Taylor, Jain and Cale, *JVST A* 1998](<https://doi.org/10.1116/1.581476>) — temperature and rate dependence
   of Al–Cu step coverage.[^taylor-1998]
 * Ono, Ushiku and Yoda, VMIC 1990; Hariu et al., IRPS 1989; Nishimura,
   Yamada and Ogawa, VMIC 1991 — planarised and high-temperature aluminium
   contact and via filling.[^ono-1990][^hariu-1989][^nishimura-1991]
-* Deshmukh, *Thin Solid Films* 2003 — deposition-time ratio and via
+* [Deshmukh, *Thin Solid Films* 2003](<https://doi.org/10.1016/j.tsf.2003.08.041>) — deposition-time ratio and via
   density in aluminium via fill.[^deshmukh-2003]
 * Pramanik and Jain, VMIC 1990, and Lee and Rha, *Jpn. J. Appl. Phys.*
   2003 — underlayer effects on aluminium grain structure and via
   fill.[^pramanik-1990][^lee-2003]
-* Gn, Liu and Guo, SPIE 1994 — tungsten versus aluminium plugs.[^gn-1994]
-* Taguchi, Maeda and Aoyama, 1998 — water outgassing and aluminium via
+* [Gn, Liu and Guo, SPIE 1994](<https://doi.org/10.1117/12.186049>) — tungsten versus aluminium plugs.[^gn-1994]
+* [Taguchi, Maeda and Aoyama, 1998](<https://doi.org/10.1063/1.54662>) — water outgassing and aluminium via
   fill.[^taguchi-1998]
 * Berglund et al. (Motorola), US 4,698,128, and Chou (Chartered),
   US 5,308,415 — sloped and tapered vias for metal step
@@ -371,14 +371,14 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   electromigration at tungsten-stud and tungsten-filled vias: the
   Al–Cu/W interface as a flux divergence, and tungsten-filled against
   unfilled vias.[^kwok-1990][^matsuoka-1990]
-* Chu et al., VLSI-TSA 2001 — thick top metal for high-Q
+* [Chu et al., VLSI-TSA 2001](<https://doi.org/10.1109/VTSA.2001.934506>) — thick top metal for high-Q
   inductors.[^chu-2001]
 * Hunter et al., IMAPS 2012; Marsh et al., ECTC 2016; Hess et al., ECTC
   2003 — probing, bonding and bond-over-active reliability of aluminium
   pads.[^hunter-2012][^marsh-2016][^hess-2003]
-* Danzl and McLaurin, IEMT 1997 — removing a TiW cap from aluminium bond
+* [Danzl and McLaurin, IEMT 1997](<https://doi.org/10.1109/IEMT.1997.626884>) — removing a TiW cap from aluminium bond
   pads.[^danzl-1997]
-* Rossnagel et al., *JVST A* 1991 — collimated sputtering for via-floor
+* [Rossnagel et al., *JVST A* 1991](<https://doi.org/10.1116/1.577531>) — collimated sputtering for via-floor
   coverage.[^rossnagel-1991]
 
 ## Open questions

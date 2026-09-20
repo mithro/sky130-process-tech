@@ -196,62 +196,62 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page — "Nitride Poly Cut, NPCM".[^pdk-05]
-* SkyWater PDK, *Layers Reference* — `npc` "Nitride poly cut (under
+* [SkyWater PDK, *Masks* page](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) — "Nitride Poly Cut, NPCM".[^pdk-05]
+* [SkyWater PDK, *Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) — `npc` "Nitride poly cut (under
   licon1 areas)".[^pdk-06]
-* SkyWater PDK, *Periphery rules* — npc.1–npc.5, rpm.5.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — poly 0.18 µm; "poly cap
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — npc.1–npc.5, rpm.5.[^pdk-periph]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — poly 0.18 µm; "poly cap
   after SPE" 0.2 µm.[^pdk-03]
-* SkyWater, *Facilities & Capabilities* — LPCVD nitride on Aviza
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — LPCVD nitride on Aviza
   furnaces; "PECVD nitride C1".[^skw-01]
-* Foote and Gupta (AMD), US 5,710,067 — a silicon-oxynitride-type
+* [Foote and Gupta (AMD), US 5,710,067](<https://patents.google.com/patent/US5710067A/en>) — a silicon-oxynitride-type
   dielectric ARC.[^pat-oxime-amd]
 
 ### High-level understanding
 
-* Wikipedia, *Silicon nitride* — LPCVD and PECVD nitride.[^wiki-sin]
+* [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — LPCVD and PECVD nitride.[^wiki-sin]
 * Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
-* Wikipedia, *Anti-reflective coating* — inorganic ARCs.[^wiki-arc]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>) — inorganic ARCs.[^wiki-arc]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   {term}`CVD` nitride.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — gate stacks
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — gate stacks
   and {term}`DUV` reflectivity control.[^txt-05]
 
 ### Deep dive
 
-* Ogawa et al., SPIE 1993 — the "complete antireflective layer" for
+* [Ogawa et al., SPIE 1993](<https://doi.org/10.1117/12.150431>) — the "complete antireflective layer" for
   KrF lithography, the origin of inorganic DARC.[^ogawa-1993]
-* Dijkstra and Juffermans, SPIE 1993 — optimisation of
+* [Dijkstra and Juffermans, SPIE 1993](<https://doi.org/10.1117/12.150432>) — optimisation of
   anti-reflection layers for deep-UV.[^dijkstra-1993]
-* Czech et al., *Microelectron. Eng.* 1993 — linewidth-variation
+* [Czech et al., *Microelectron. Eng.* 1993](<https://doi.org/10.1016/0167-9317(93)90025-Z>) — linewidth-variation
   reduction at the gate level with a new ARC.[^czech-1993]
-* He et al., SPIE 1998 — an inorganic ARC process for deep-UV in
+* [He et al., SPIE 1998](<https://doi.org/10.1117/12.310763>) — an inorganic ARC process for deep-UV in
   production.[^he-1998]
-* Foote and Gupta (AMD), US 5,710,067 — silicon oxime dielectric ARC
+* [Foote and Gupta (AMD), US 5,710,067](<https://patents.google.com/patent/US5710067A/en>) — silicon oxime dielectric ARC
   film.[^pat-oxime-amd]
-* Bell and Joubert, *J. Vac. Sci. Technol. B* 1997 — resist- versus
+* [Bell and Joubert, *J. Vac. Sci. Technol. B* 1997](<https://doi.org/10.1116/1.589259>) — resist- versus
   hard-mask-masked poly gate etching.[^bell-1997]
-* Desvoivres, Vallier and Joubert, *J. Vac. Sci. Technol. B* 2000 —
+* [Desvoivres, Vallier and Joubert, *J. Vac. Sci. Technol. B* 2000](<https://doi.org/10.1116/1.591168>) —
   sub-0.1 µm gate etch with hard masks and its limits.[^desvoivres-2000]
-* Wong et al. (IBM), IEDM 1988 — gate doping by source/drain implants,
+* [Wong et al. (IBM), IEDM 1988](<https://doi.org/10.1109/IEDM.1988.32800>) — gate doping by source/drain implants,
   the route a capped gate forgoes.[^wong-1988]
-* Tsang et al., *IEEE TSM* 2014 — a commercial high-value poly
+* [Tsang et al., *IEEE TSM* 2014](<https://doi.org/10.1109/TSM.2014.2311375>) — a commercial high-value poly
   resistor bank capped by exactly this construction, and what goes
   wrong when the cap's corners erode.[^tsang-2014]
-* Smith et al., *J. Electrochem. Soc.* 1990 — mechanism of PECVD SiNₓHᵧ
+* [Smith et al., *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086517>) — mechanism of PECVD SiNₓHᵧ
   deposition from NH₃/SiH₄.[^smith-1990]
-* Claassen et al., *J. Electrochem. Soc.* 1985 — PECVD nitride
+* [Claassen et al., *J. Electrochem. Soc.* 1985](<https://doi.org/10.1149/1.2113980>) — PECVD nitride
   composition and stress versus deposition conditions.[^claassen-1985]
-* Roenigk and Jensen, *J. Electrochem. Soc.* 1987 — LPCVD nitride
+* [Roenigk and Jensen, *J. Electrochem. Soc.* 1987](<https://doi.org/10.1149/1.2100756>) — LPCVD nitride
   reactor model.[^roenigk-1987]
-* Habraken and Kuiper, *Mater. Sci. Eng. R* 1994 — nitride and
+* [Habraken and Kuiper, *Mater. Sci. Eng. R* 1994](<https://doi.org/10.1016/0927-796X(94)90006-X>) — nitride and
   oxynitride film properties.[^habraken-1994]
-* Temple-Boyer et al., *J. Vac. Sci. Technol. A* 1998 — residual
+* [Temple-Boyer et al., *J. Vac. Sci. Technol. A* 1998](<https://doi.org/10.1116/1.581302>) — residual
   stress of LPCVD SiNₓ from silane and ammonia, ≈600 MPa for the
   lowest-stress stoichiometric films.[^temple-boyer-1998]
-* Teasdale et al., *Electrochem. Solid-State Lett.* 2001 —
+* [Teasdale et al., *Electrochem. Solid-State Lett.* 2001](<https://doi.org/10.1149/1.1359056>) —
   single-wafer RTCVD nitride, a third route.[^teasdale-2001]
-* ITRS 2001, *Lithography* — reflectivity control and hard masks at
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — reflectivity control and hard masks at
   the node.[^itrs-03]
 
 ## Open questions

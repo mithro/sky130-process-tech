@@ -185,56 +185,56 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ### Cross-check
 
-* SkyWater PDK, *Masks* page and `masks.csv` — "N+ Implant, NSDM,
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>) page and `masks.csv` — "N+ Implant, NSDM,
   X".[^pdk-05]
-* SkyWater PDK, *Layers Reference* and `gds_layers.csv` — `nsdm`
+* SkyWater PDK, [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and `gds_layers.csv` — `nsdm`
   93:44; `cnsdm` 30:0, 29:21, 29:22; `tap` 65:44.[^pdk-06]
-* SkyWater PDK, *Periphery rules* — nsd.1–nsd.11; rpm.6;
+* [SkyWater PDK, *Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — nsd.1–nsd.11; rpm.6;
   `de_nFet_source` enclosure by nsdm.[^pdk-periph]
-* SkyWater PDK, *Criteria & Assumptions* — `NSDMCD` 0.38 µm;
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — `NSDMCD` 0.38 µm;
   photoresist thickness 1.14 µm.[^pdk-03]
-* SkyWater PDK, *Device Details* — NMOS, NPN, PNP, diode and
+* [SkyWater PDK, *Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) — NMOS, NPN, PNP, diode and
   `res_generic_nd` descriptions and cross-sections.[^pdk-07]
-* SkyWater PDK, *Parasitic Layout Extraction* — N-diffusion sheet
+* [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — N-diffusion sheet
   resistance 120 000 mΩ/sq.[^pdk-08]
-* SkyWater, *Facilities & Capabilities* — i-line tools, tracks,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — i-line tools, tracks,
   metrology.[^skw-01]
-* SkyWater, Form S-1 (2021) — photoresist suppliers.[^sec-01]
+* [SkyWater, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist suppliers.[^sec-01]
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography* — i-line, k₁.[^wiki-litho]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — i-line, k₁.[^wiki-litho]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography and implant masking.[^txt-02]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the CMOS
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the CMOS
   source/drain module.[^txt-01]
 
 ### Deep dive
 
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle and the
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral straggle and the
   mask-proximity effect.[^hook-2003]
-* Sheu et al. (TSMC), *IEEE TED* 2006 — well-edge proximity
+* [Sheu et al. (TSMC), *IEEE TED* 2006](<https://doi.org/10.1109/TED.2006.884070>) — well-edge proximity
   model.[^sheu-2006]
-* Drennan, Kniffin and Locascio, CICC 2006 — proximity effects in
+* [Drennan, Kniffin and Locascio, CICC 2006](<https://doi.org/10.1109/CICC.2006.320869>) — proximity effects in
   analogue design.[^drennan-2006]
-* Levinson, *Principles of Lithography* — the chapter on
+* [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — the chapter on
   overlay.[^levinson-2005]
-* Mack, *Fundamental Principles of Optical Lithography* — thick-resist
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — thick-resist
   imaging.[^mack-2007]
-* Fujimura et al. (Fujitsu), *JJAP* 1989 — the carbonised layer of
+* [Fujimura et al. (Fujitsu), *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer of
   high-dose implanted resist, the residues of O₂ ashing and a two-step
   ashing process (abstract).[^fujimura-1989]
-* Smith, 1983 — wafer cooling and resist masking in
+* [Smith, 1983](<https://doi.org/10.1007/978-3-642-69156-0_25>) — wafer cooling and resist masking in
   implantation.[^smith-1983]
-* Romig, Bishop and Rio, IIT 1996 — resist burning in a high-current
+* [Romig, Bishop and Rio, IIT 1996](<https://doi.org/10.1109/IIT.1996.586181>) — resist burning in a high-current
   implanter.[^romig-1996]
-* Lukaszek, Reno and Bammi, IIT 1996 — resist and wafer charging
+* [Lukaszek, Reno and Bammi, IIT 1996](<https://doi.org/10.1109/IIT.1996.586135>) — resist and wafer charging
   during a high-current arsenic implant.[^lukaszek-1996]
 * Lee et al. (Genus), IIT 1996, and Horsky, IIT 1998 — resist
   outgassing under implantation.[^lee-1996][^horsky-1998]
-* Buffat and Adams (Zilog), US 6,576,405 — resist design for
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — resist design for
   high-energy implants, for contrast.[^pat-resist-zilog]
 
 ## Open questions
