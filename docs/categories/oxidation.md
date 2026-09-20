@@ -362,7 +362,9 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
     1992; 125–200 mm).
     <https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>
 [^amat-rtp]: EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
-    (Applied Materials Radiance/Vantage RTP chambers).
+    (Applied Materials Radiance/Vantage RTP chambers). No longer
+    retrievable as of 2026-09-19 (confirmed again 2026-09-20); no
+    Wayback, CDX or archive.ph copy found. Evidence weak.
     <https://www.edn.com/applied-dedicates-rtp-with-vantage/>
 [^plasmatherm-ag]: Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 /
     8108 RTP*, blog post.

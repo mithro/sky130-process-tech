@@ -407,7 +407,9 @@ not public beyond the PDK's e-test parameter tables, which the
     <https://web.archive.org/web/20020530031508/http://www.electroglas.com:80/press/pressreleases/reports/1999annual/wafer.htm>
 [^tel-prober]: Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*
     (Certified Used Equipment), product page, accessed 2026-09-13.
-    <https://www.telcertifiedused.com/cue/buy/product-test.jsp>
+    <https://web.archive.org/web/20160603063003/http://telcertifiedused.com/cue/buy/product-test.jsp>
+    (Wayback Machine capture of 2016-06-03; original, dead since
+    2026-09-19: `https://www.telcertifiedused.com/cue/buy/product-test.jsp`).
 [^formfactor-summit200]: FormFactor, *Cascade SUMMIT200 Probe Station*,
     product page, accessed 2026-09-13.
     <https://www.formfactor.com/product/probe-systems/200-mm-systems/summit200/>

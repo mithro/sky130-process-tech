@@ -145,8 +145,8 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
   production processes that utilize wafer sizes from 125 to 200
   millimeters"),[^ag-10k] later sold by Steag and Mattson; Applied
   Materials RTP XE Centura (1997)[^amat-1997] and its Radiance and
-  Vantage successors (which measure "the temperature 100 times per
-  second at seven different places on the wafer");[^amat-rtp] Mattson
+  Vantage successors (named in a since-offline, unarchived vendor
+  article; evidence weak);[^amat-rtp] Mattson
   RTP 3000; Kokusai and TEL RTP tools.
 * **{ref}`Vertical furnaces <machine-vertical-furnace-anneal>`** for well drive, densification and alloy: ASM
   A400,[^asm-vf] TEL Alpha-8, Aviza/Thermco, Kokusai; older horizontal
@@ -340,7 +340,9 @@ Status and expiry are estimates from public records and are not legal advice.
 [^amat-1997]: Applied Materials, Inc., *1997 Annual Report*.
     <https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>
 [^amat-rtp]: EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
-    (Applied Materials Radiance/Vantage RTP chambers).
+    (Applied Materials Radiance/Vantage RTP chambers). No longer
+    retrievable as of 2026-09-19 (confirmed again 2026-09-20); no
+    Wayback, CDX or archive.ph copy found. Evidence weak.
     <https://www.edn.com/applied-dedicates-rtp-with-vantage/>
 [^asm-vf]: ASM International, *Vertical furnace*, product page.
     <https://www.asm.com/our-technology-products/vertical-furnace>

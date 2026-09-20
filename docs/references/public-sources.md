@@ -2220,9 +2220,10 @@ F. Salehuddin, *"Challenges for 0.13µm Generation Shallow Trench
 Isolation on 0.18µm Equipment Platform"*, Journal of Telecommunication,
 Electronic and Computer Engineering (JTEC), vol. 8, no. 5, pp. 15–21,
 2016.
-<https://jtec.utem.edu.my/jtec/article/view/697> (times out as of
-2026-09-19; a Wayback Machine copy from 2026-04-11 confirms it was up;
-the PDF link below still works directly) (PDF:
+<https://web.archive.org/web/20260411150120/https://jtec.utem.edu.my/jtec/article/view/697>
+(Wayback Machine capture of 2026-04-11; original, dead since 2026-09-19:
+`https://jtec.utem.edu.my/jtec/article/view/697`; the PDF link below
+still works directly) (PDF:
 <https://jtec.utem.edu.my/jtec/article/download/697/707/3255>). A
 foundry account of running 0.13 µm STI on 0.18 µm-generation tools:
 definition of the fill aspect ratio, HDP void / poly-stringer yield
@@ -5247,10 +5248,12 @@ Also used on the CMP polisher machine page.
 Tier: cross-check.
 
 **AMAT-RTP** — EDN, *Applied dedicates RTP with Vantage*, 2002-09-23
-(Applied Materials Radiance/Vantage RTP chambers).
+(Applied Materials Radiance/Vantage RTP chambers). No longer
+retrievable as of 2026-09-19 (confirmed again 2026-09-20); no Wayback,
+CDX or archive.ph copy found.
 <https://www.edn.com/applied-dedicates-rtp-with-vantage/> The
 Radiance/Vantage RTP chamber family. Used on the anneal and oxidation
-category pages. Tier: cross-check.
+category pages. Tier: cross-check; evidence weak.
 
 **ASM-VF** — ASM International, *Vertical furnace*, product page.
 <https://www.asm.com/our-technology-products/vertical-furnace> ASM
@@ -13139,7 +13142,9 @@ Also used on the hardware consumables material page.
 
 **TEL-PROBER** — Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*
 (Certified Used Equipment), product page, accessed 2026-09-13.
-<https://www.telcertifiedused.com/cue/buy/product-test.jsp> Refurbished
+<https://web.archive.org/web/20160603063003/http://telcertifiedused.com/cue/buy/product-test.jsp>
+(Wayback Machine capture of 2016-06-03; original, dead since 2026-09-19:
+`https://www.telcertifiedused.com/cue/buy/product-test.jsp`). Refurbished
 TEL P-8 and P-12 series probers; the P-8XL handles 100–200 mm wafers.
 Used on the parametric tester and prober page. Tier: cross-check (vendor
 statement).
