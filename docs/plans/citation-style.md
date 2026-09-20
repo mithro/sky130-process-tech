@@ -56,6 +56,15 @@ once.[^pdk-04][^txt-02]
    copied character for character, in the angle-bracket form
    `[head](<URL>)`; never write a URL in a bullet that the page's
    footnotes do not already carry (see `tools/check_refs.py`).
+
+   A bullet with no annotation (no " — ", so the whole visible text sits
+   directly before the marker) links the same way: the head is
+   everything up to the final full stop, which — like the marker — stays
+   outside the link:
+
+   ```markdown
+   * [Wikipedia, *Furnace anneal*](<URL>).[^wiki-furnace]
+   ```
 6. **Deep dive must be substantial.** Minimum eight entries on a step
    page or per-mask page, and twelve on a category, machine, material or
    overview page or the masks index, drawn from several kinds of

@@ -34,9 +34,12 @@ Task: `docs/plans/readability-plan.md` W0c. Spec: `docs/plans/readability/report
   converted in place as R-LINKS step 7 allows: `tools/check_preserved.py` treats *any* change inside a
   dropdown's body as content requiring `--allow-dropdown-edits`, which is a page-by-page judgement call
   this script cannot make safely at 6,000-bullet scale. Left as hand-finish work for whoever reviews the
-  in-force notes; not attempted here (rule 2.5's "if in doubt, leave it" applied). 77 bullets, on 15
-  pages (see `git grep -n "^:::{dropdown}" -A2 docs/steps docs/machines docs/materials docs/masks
-  docs/categories docs/overview` to find them — the note titles name the family).
+  in-force notes; not attempted here (rule 2.5's "if in doubt, leave it" applied). **77 bullets, on
+  50 pages** (corrected 2026-09-20 per review finding M3 — a first draft of this note undercounted
+  threefold, at "15 pages, 15 distinct in-force families"; the true distribution is 30 pages with
+  one such bullet, 15 with two, 3 with three, 2 with four). See `git grep -n "^:::{dropdown}" -A2
+  docs/steps docs/machines docs/materials docs/masks docs/categories docs/overview` to find them —
+  the note titles name the family.
 * Two **pre-existing bugs in `tools/check_preserved.py`** were exposed by this branch (both fixed,
   each with its own commit and selftest case) because it had never before been asked to compare a page
   with an external URL inline in its body (report C: "External links inline in the body of any
@@ -114,7 +117,7 @@ buckets (709 outside dropdowns, 77 inside) break down as:
   `[^preston-1927]: Preston, *J. Soc. Glass Technol.* 1927 …` with no online copy known, cited
   identically on `docs/categories/cmp.md`, `docs/machines/cmp-polisher.md` and elsewhere; `[^kern-1970]`
   the same, on four pages). §2.11 forbids inventing a URL; correctly left.
-* **in-dropdown, 77** (15 pages, 15 distinct in-force families). See the decision above — genuine
+* **in-dropdown, 77** (50 pages — corrected, see above). See the decision above — genuine
   hand-finish work, intentionally not attempted by this branch.
 
 Conclusion: implementing rule 3 in the script (rather than leaving it as a manual step, as the original
@@ -190,7 +193,7 @@ site.
 
 ## Open points for the coordinator
 
-* The 77 in-dropdown bullets (15 pages) are unconverted by design; converting them needs a human
+* The 77 in-dropdown bullets (50 pages) are unconverted by design; converting them needs a human
   decision per page plus `check_preserved.py --allow-dropdown-edits` on that page, which this branch's
   script-based approach cannot safely automate at scale.
 * Two `check_preserved.py` bugs were fixed on this branch (see above) — worth a look from whoever
