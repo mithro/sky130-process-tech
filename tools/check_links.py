@@ -154,6 +154,55 @@ SAMPLE_RATE = 50  # 1 in N
 # ("accessed 2026-08-30." / "..., retrieved 2026-09-14.") found in the
 # same footnote-definition or inventory-entry block as its URL(s).
 ACCESS_DATE_RE = re.compile(r"\b(?:accessed|retrieved)\s+(\d{4})-(\d{2})-(\d{2})\b", re.IGNORECASE)
+ITALIC_RE = re.compile(r"\*([^*\n]{3,120})\*")
+QUOTED_RE = re.compile(r'"([^"\n]{3,120})"')
+
+# --- soft-dead? heuristics (a URL that answers 200 but is not the cited
+# page: a soft 404, a discontinued-product page, a search/landing page a
+# deep link collapsed to, or a page whose title plainly doesn't match).
+# Cheap, offline-testable heuristics; a hit only ever produces a *suspect*
+# ("soft-dead?") for a person or a later pass to judge -- never an
+# automatic "dead".
+TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.IGNORECASE | re.DOTALL)
+H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.IGNORECASE | re.DOTALL)
+TAG_RE = re.compile(r"<[^>]+>")
+WS_RE = re.compile(r"\s+")
+SOFT_DEAD_TITLE_MARKERS = (
+    "404",
+    "410 gone",
+    "not found",
+    "page not found",
+    "doesn't exist",
+    "does not exist",
+    "no longer available",
+    "no longer exists",
+    "page unavailable",
+    "cannot be found",
+    "can't be found",
+    "oops",
+    "error",
+)
+# Path segments a deep link is suspicious to have collapsed to, or a
+# cross-domain/same-domain redirect to have landed on, regardless of
+# title (a generic catalogue, search or auth page is never "the cited
+# page" itself).
+GENERIC_LANDING_PATH_MARKERS = (
+    "/404",
+    "/not-found",
+    "/notfound",
+    "/error",
+    "/search",
+    "/login",
+    "/signin",
+    "/sign-in",
+    "/discontinued",
+)
+STOPWORDS = {
+    "a", "an", "and", "for", "in", "of", "on", "or", "the", "to", "with",
+    "series", "product", "page", "family", "system", "systems", "inc",
+    "corp", "llc", "ltd", "co",
+}
+MIN_SOFT_DEAD_TEXT_LEN = 150  # visible-text floor below which a page reads as suspiciously thin
 
 KEY_RE = re.compile(r"^\*\*([A-Za-z0-9][A-Za-z0-9_-]*)\*\*", re.MULTILINE)
 FOOTNOTE_DEF_RE = re.compile(
@@ -289,9 +338,27 @@ def extract_access_date(text: str) -> str | None:
     return f"{m.group(1)}{m.group(2)}{m.group(3)}"
 
 
-def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None]]:
-    """Return ``{KEY: (urls, dois, access_date)}`` for every ``**KEY**`` entry."""
-    entries: dict[str, tuple[set[str], set[str], str | None]] = {}
+def extract_cited_title(text: str) -> str | None:
+    """Return the block's cited title, for the soft-dead title check.
+
+    House style (``citation-style.md``) puts the title in italics
+    (``*Title*``); a few older entries quote it instead (``"Title"``).
+    Try italics first, then a quoted run; ``None`` if neither is found
+    (a bare title is not worth guessing at, since anything else in the
+    block could false-positive on ``*emphasis*`` used for other reasons).
+    """
+    m = ITALIC_RE.search(text)
+    if m:
+        return m.group(1).strip()
+    m = QUOTED_RE.search(text)
+    if m:
+        return m.group(1).strip()
+    return None
+
+
+def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None, str | None]]:
+    """Return ``{KEY: (urls, dois, access_date, cited_title)}`` for every ``**KEY**`` entry."""
+    entries: dict[str, tuple[set[str], set[str], str | None, str | None]] = {}
     matches = list(KEY_RE.finditer(text))
     for i, m in enumerate(matches):
         key = m.group(1)
@@ -300,25 +367,27 @@ def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None
         block = text[start:end]
         urls, dois = extract_urls_and_dois(block)
         date = extract_access_date(block)
-        eurls, edois, _ = entries.get(key, (set(), set(), None))
+        title = extract_cited_title(block)
+        eurls, edois, _, _ = entries.get(key, (set(), set(), None, None))
         eurls.update(urls)
         edois.update(dois)
-        entries[key] = (eurls, edois, date)
+        entries[key] = (eurls, edois, date, title)
     return entries
 
 
-def parse_page_footnotes(text: str) -> dict[str, tuple[set[str], set[str], str | None]]:
-    """Return ``{label: (urls, dois, access_date)}`` for every footnote def."""
-    result: dict[str, tuple[set[str], set[str], str | None]] = {}
+def parse_page_footnotes(text: str) -> dict[str, tuple[set[str], set[str], str | None, str | None]]:
+    """Return ``{label: (urls, dois, access_date, cited_title)}`` for every footnote def."""
+    result: dict[str, tuple[set[str], set[str], str | None, str | None]] = {}
     for m in FOOTNOTE_DEF_RE.finditer(text):
         label = m.group(1)
         block = m.group(2)
         urls, dois = extract_urls_and_dois(block)
         date = extract_access_date(block)
-        rurls, rdois, _ = result.get(label, (set(), set(), None))
+        title = extract_cited_title(block)
+        rurls, rdois, _, _ = result.get(label, (set(), set(), None, None))
         rurls.update(urls)
         rdois.update(dois)
-        result[label] = (rurls, rdois, date)
+        result[label] = (rurls, rdois, date, title)
     return result
 
 
@@ -338,6 +407,9 @@ class Registry:
         # token -> the first accessed/retrieved date (compact YYYYMMDD)
         # found citing it; feeds the Wayback availability timestamp (C5).
         self.access_dates: dict[str, str] = {}
+        # token -> the first cited *Title* found; feeds the soft-dead
+        # title-mismatch check.
+        self.cited_titles: dict[str, str] = {}
 
     def _note_dates(self, urls: set[str], dois: set[str], access_date: str | None) -> None:
         if not access_date:
@@ -347,14 +419,28 @@ class Registry:
         for d in dois:
             self.access_dates.setdefault(token_for(doi=d), access_date)
 
+    def _note_titles(self, urls: set[str], dois: set[str], cited_title: str | None) -> None:
+        if not cited_title:
+            return
+        for u in urls:
+            self.cited_titles.setdefault(u, cited_title)
+        for d in dois:
+            self.cited_titles.setdefault(token_for(doi=d), cited_title)
+
     def add_inventory(
-        self, key: str, urls: set[str], dois: set[str], access_date: str | None = None
+        self,
+        key: str,
+        urls: set[str],
+        dois: set[str],
+        access_date: str | None = None,
+        cited_title: str | None = None,
     ) -> None:
         for u in urls:
             self.inventory_keys[u].add(key)
         for d in dois:
             self.inventory_keys[token_for(doi=d)].add(key)
         self._note_dates(urls, dois, access_date)
+        self._note_titles(urls, dois, cited_title)
 
     def add_page(
         self,
@@ -363,12 +449,14 @@ class Registry:
         urls: set[str],
         dois: set[str],
         access_date: str | None = None,
+        cited_title: str | None = None,
     ) -> None:
         for u in urls:
             self.pages[u][page].add(label)
         for d in dois:
             self.pages[token_for(doi=d)][page].add(label)
         self._note_dates(urls, dois, access_date)
+        self._note_titles(urls, dois, cited_title)
 
     def tokens(self) -> set[str]:
         return set(self.inventory_keys) | set(self.pages)
@@ -416,8 +504,8 @@ def build_registry(
 ) -> Registry:
     reg = Registry()
     if inventory.exists():
-        for key, (urls, dois, date) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
-            reg.add_inventory(key, urls, dois, date)
+        for key, (urls, dois, date, title) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
+            reg.add_inventory(key, urls, dois, date, title)
     for path in sorted(docs_dir.rglob("*.md")):
         rel_parts = path.relative_to(docs_dir).parts
         if rel_parts and rel_parts[0] in EXCLUDED_TOP_LEVEL_DIRS:
@@ -432,8 +520,8 @@ def build_registry(
             if len(rel_parts) >= 2 and rel_parts[0] == "references" and rel_parts[1] in GENERATED_DIRS:
                 continue  # scanned whole-file by _scan_generated instead
         text = path.read_text(encoding="utf-8")
-        for label, (urls, dois, date) in parse_page_footnotes(text).items():
-            reg.add_page(str(path.relative_to(docs_dir.parent)), label, urls, dois, date)
+        for label, (urls, dois, date, title) in parse_page_footnotes(text).items():
+            reg.add_page(str(path.relative_to(docs_dir.parent)), label, urls, dois, date, title)
     if include_generated:
         _scan_generated(reg, docs_dir)
     return reg
@@ -583,7 +671,88 @@ def classify(
     return "dead"
 
 
-def check_one(token: str, limiter: RateLimiter, timeout: float, access_date: str | None = None) -> dict:
+def extract_page_title(body: bytes) -> str | None:
+    """Return a fetched page's ``<title>`` (or ``<h1>`` if there is no
+    title), tags stripped, whitespace collapsed. ``None`` if neither is
+    present (a non-HTML or malformed response)."""
+    text = body.decode("utf-8", "replace")
+    m = TITLE_RE.search(text) or H1_RE.search(text)
+    if not m:
+        return None
+    return WS_RE.sub(" ", TAG_RE.sub(" ", m.group(1))).strip()
+
+
+def visible_text_len(body: bytes) -> int:
+    """Rough visible-text length of an HTML response: tags (and their
+    content for ``<script>``/``<style>``, which is never visible text)
+    stripped, whitespace collapsed. Cheap and approximate by design --
+    only ever used as one weak signal among several, never alone."""
+    text = body.decode("utf-8", "replace")
+    text = re.sub(r"(?is)<(script|style)\b[^>]*>.*?</\1>", " ", text)
+    text = TAG_RE.sub(" ", text)
+    return len(WS_RE.sub(" ", text).strip())
+
+
+def _title_words(s: str) -> set[str]:
+    words = re.findall(r"[a-z0-9]+", s.lower())
+    return {w for w in words if w not in STOPWORDS and len(w) > 2}
+
+
+def soft_dead_reasons(
+    url: str,
+    final_url: str,
+    title: str | None,
+    text_len: int | None,
+    cited_title: str | None,
+) -> list[str]:
+    """C5 follow-up ("soft 404s"): cheap, offline-testable heuristics for a
+    URL that answers 200 (or a permanent redirect that still answers 200)
+    but is plausibly not the cited page any more. Returns the list of
+    triggered reasons (empty if nothing looks wrong) -- a *suspect* list
+    for a person or a later pass to judge, never a verdict: this function
+    never returns "dead", and its caller never reclassifies a token as
+    dead from it either.
+    """
+    reasons: list[str] = []
+
+    orig = urllib.parse.urlsplit(url)
+    fin = urllib.parse.urlsplit(final_url)
+    orig_path = orig.path.rstrip("/")
+    fin_path = fin.path.rstrip("/")
+
+    if any(fin_path.lower() == m or fin_path.lower().startswith(m + "/") for m in GENERIC_LANDING_PATH_MARKERS):
+        reasons.append(f"final URL path looks like a generic landing/error page: {fin.path!r}")
+    elif orig_path and not fin_path:
+        reasons.append("final URL collapsed to the site root")
+    elif orig_path and fin_path and orig_path != fin_path and orig_path.startswith(fin_path + "/"):
+        reasons.append(f"final URL path collapsed from {orig.path!r} to {final_url!r}")
+
+    if title:
+        low = title.lower()
+        hit = next((m for m in SOFT_DEAD_TITLE_MARKERS if m in low), None)
+        if hit:
+            reasons.append(f"title contains {hit!r}: {title!r}")
+
+    if text_len is not None and text_len < MIN_SOFT_DEAD_TEXT_LEN:
+        reasons.append(f"page body is suspiciously thin ({text_len} chars of visible text)")
+
+    if title and cited_title:
+        cited_words = _title_words(cited_title)
+        page_words = _title_words(title)
+        if len(cited_words) >= 2 and page_words and not (cited_words & page_words):
+            reasons.append(f"title doesn't match the citation: cited {cited_title!r}, page says {title!r}")
+
+    return reasons
+
+
+def check_one(
+    token: str,
+    limiter: RateLimiter,
+    timeout: float,
+    access_date: str | None = None,
+    cited_title: str | None = None,
+    check_soft_dead: bool = True,
+) -> dict:
     is_doi = token.startswith("doi:")
     url = f"https://doi.org/{urllib.parse.quote(token[4:], safe='/:')}" if is_doi else token
 
@@ -619,7 +788,39 @@ def check_one(token: str, limiter: RateLimiter, timeout: float, access_date: str
     if category == "dead":
         result["wayback"] = wayback_lookup(url, limiter, timeout, access_date=access_date)
         result["wayback_checked"] = dt.datetime.now(dt.timezone.utc).isoformat()
+
+    if check_soft_dead and not is_doi and category in ("ok", "redirected-permanently"):
+        apply_soft_dead_check(result, cited_title, limiter, timeout)
     return result
+
+
+def apply_soft_dead_check(
+    entry: dict, cited_title: str | None, limiter: RateLimiter, timeout: float
+) -> None:
+    """Soft-404 check ("the checker misses this"): a nominally successful
+    token (``ok`` / ``redirected-permanently``) whose actual content is
+    plausibly not the cited page any more. Mutates ``entry`` in place,
+    setting its category to ``"soft-dead?"`` (never ``"dead"`` -- this is
+    always a suspect for a person or a later pass to judge) when
+    ``soft_dead_reasons`` finds something. Always sets
+    ``soft_dead_checked`` so a caller can tell this was attempted, whether
+    or not it fired. One extra GET (the HEAD/GET already done for the
+    main check does not necessarily read a body); never done for a DOI or
+    a token already dead/blocked -- callers are expected to gate that.
+    """
+    url, final_url = entry["url"], entry["final_url"]
+    g_status, g_final, _g_chain, _g_err, body = fetch_with_retries(final_url, "GET", limiter, timeout, read_body=True)
+    entry["soft_dead_checked"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    if not g_status or not body:
+        return
+    title = extract_page_title(body)
+    text_len = visible_text_len(body)
+    reasons = soft_dead_reasons(url, g_final, title, text_len, cited_title)
+    if reasons:
+        entry["soft_dead_of"] = entry["category"]  # what it would otherwise be classified as
+        entry["category"] = "soft-dead?"
+        entry["soft_dead_reasons"] = reasons
+        entry["title"] = title
 
 
 def _swap_scheme(url: str) -> str:
@@ -841,8 +1042,11 @@ def run_checks(
     only_hosts: set[str] | None,
     skip_hosts: set[str] | None,
     access_dates: dict[str, str] | None = None,
+    cited_titles: dict[str, str] | None = None,
+    check_soft_dead: bool = True,
 ) -> None:
     access_dates = access_dates or {}
+    cited_titles = cited_titles or {}
 
     def token_host(t: str) -> str:
         return "doi.org" if t.startswith("doi:") else host_of(t)
@@ -876,7 +1080,14 @@ def run_checks(
             if stop.is_set() or (deadline and time.monotonic() > deadline):
                 return
             try:
-                result = check_one(t, limiter, timeout, access_date=access_dates.get(t))
+                result = check_one(
+                    t,
+                    limiter,
+                    timeout,
+                    access_date=access_dates.get(t),
+                    cited_title=cited_titles.get(t),
+                    check_soft_dead=check_soft_dead,
+                )
             except Exception as e:  # noqa: BLE001
                 result = {
                     "url": t,
@@ -928,6 +1139,54 @@ def run_checks(
             save_cache(cache_path, cache)
             print(f"    wayback  {'found' if entry['wayback'].get('available') else 'none'}  {t}", file=sys.stderr)
 
+    # Soft-404 top-up: an "ok"/"redirected-permanently" token that was
+    # already fresh (so the main pass above skipped it) but has never had
+    # the soft-dead body/title check applied -- one extra GET each, not a
+    # re-fetch of the original result. Threaded the same way as the main
+    # pass so it doesn't serialise across unrelated hosts; every existing
+    # per-host pacing/rate-limit rule still applies (same shared limiter).
+    if check_soft_dead:
+        soft_pending = [
+            t
+            for t in sorted(tokens)
+            if t not in pending
+            and not host_filtered_out(t)
+            and not t.startswith("doi:")
+            and t in cache
+            and cache[t].get("category") in ("ok", "redirected-permanently")
+            and "soft_dead_checked" not in cache[t]
+        ]
+        if soft_pending:
+            print(f"soft-404 top-up: {len(soft_pending)} tokens", file=sys.stderr)
+            soft_groups: dict[str, list[str]] = defaultdict(list)
+            for t in soft_pending:
+                soft_groups[token_host(t)].append(t)
+            soft_deadline = time.monotonic() + time_budget if time_budget else None
+
+            def soft_worker(toks: list[str]) -> None:
+                for t in toks:
+                    if stop.is_set() or (soft_deadline and time.monotonic() > soft_deadline):
+                        return
+                    entry = cache[t]
+                    try:
+                        apply_soft_dead_check(entry, cited_titles.get(t), limiter, timeout)
+                    except Exception as e:  # noqa: BLE001
+                        entry["soft_dead_checked"] = dt.datetime.now(dt.timezone.utc).isoformat()
+                        entry["soft_dead_error"] = f"internal error: {e}"
+                    with save_lock:
+                        cache[t] = entry
+                        save_cache(cache_path, cache)
+                        flag = " -> soft-dead?" if entry["category"] == "soft-dead?" else ""
+                        print(f"     soft-404  {entry['category']:>15}{flag}  {t}", file=sys.stderr)
+
+            try:
+                with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+                    futs = [ex.submit(soft_worker, toks) for toks in soft_groups.values()]
+                    concurrent.futures.wait(futs)
+            except KeyboardInterrupt:
+                stop.set()
+                raise
+
 
 # --------------------------------------------------------------------------
 # Report
@@ -961,7 +1220,7 @@ def render_report(reg: Registry, cache: dict, tokens: set[str]) -> str:
     lines.append(f"Generated {dt.datetime.now(dt.timezone.utc).date().isoformat()}.")
     lines.append("")
     lines.append(f"* Tokens: {len(tokens)} ({n_urls} URLs, {n_dois} DOIs)")
-    for cat in ("ok", "redirected-permanently", "blocked-to-scripts", "dead"):
+    for cat in ("ok", "redirected-permanently", "blocked-to-scripts", "soft-dead?", "dead"):
         lines.append(f"* {cat}: {len(by_cat.get(cat, []))}")
     if unchecked:
         lines.append(f"* unchecked (no cache entry): {unchecked}")
@@ -969,6 +1228,7 @@ def render_report(reg: Registry, cache: dict, tokens: set[str]) -> str:
 
     for cat, heading in (
         ("dead", "## Dead"),
+        ("soft-dead?", "## Soft-dead? (suspects only -- never auto-decided; a person or a later pass must judge)"),
         ("redirected-permanently", "## Redirected permanently"),
         ("blocked-to-scripts", "## Blocked to scripts"),
     ):
@@ -982,6 +1242,9 @@ def render_report(reg: Registry, cache: dict, tokens: set[str]) -> str:
         if cat == "dead":
             lines.append("| Token | Cited by | HTTP / error | Wayback |")
             lines.append("| --- | --- | --- | --- |")
+        elif cat == "soft-dead?":
+            lines.append("| Token | Cited by | Final URL | Title | Reasons |")
+            lines.append("| --- | --- | --- | --- | --- |")
         else:
             lines.append("| Token | Cited by | Final URL |")
             lines.append("| --- | --- | --- |")
@@ -996,6 +1259,10 @@ def render_report(reg: Registry, cache: dict, tokens: set[str]) -> str:
                 else:
                     wtext = "no snapshot"
                 lines.append(f"| {t} | {cited} | {httpbit} | {wtext} |")
+            elif cat == "soft-dead?":
+                title = entry.get("title") or ""
+                reasons = "; ".join(entry.get("soft_dead_reasons", []))
+                lines.append(f"| {t} | {cited} | {entry.get('final_url')} | {title} | {reasons} |")
             else:
                 lines.append(f"| {t} | {cited} | {entry.get('final_url')} |")
         lines.append("")
@@ -1004,6 +1271,34 @@ def render_report(reg: Registry, cache: dict, tokens: set[str]) -> str:
     lines.append("")
     lines.append(f"{len(by_cat.get('ok', []))} tokens resolved normally (not listed individually).")
     lines.append("")
+
+    lines.append("## Cross-domain redirects (needs a look regardless of category)")
+    lines.append("")
+    lines.append(
+        "Every token whose fetch chain crossed to a different host than the one cited -- "
+        "worth a human/model judgement on whether the final page is still the cited "
+        "document, independent of whether the checker still calls it \"ok\"."
+    )
+    lines.append("")
+    cross_domain = []
+    for t in sorted(tokens):
+        entry = cache.get(t)
+        if not entry or t.startswith("doi:") or entry["category"] in ("dead", "blocked-to-scripts"):
+            continue
+        hosts = hosts_in_chain(entry["url"], entry.get("chain", []), entry.get("final_url", entry["url"]))
+        if len(hosts) > 1:
+            cross_domain.append(t)
+    if not cross_domain:
+        lines.append("None.")
+        lines.append("")
+    else:
+        lines.append("| Token | Cited by | Category | Final URL |")
+        lines.append("| --- | --- | --- | --- |")
+        for t in cross_domain:
+            entry = cache[t]
+            lines.append(f"| {t} | {citers_for(reg, t)} | {entry['category']} | {entry.get('final_url')} |")
+        lines.append("")
+
     return "\n".join(lines)
 
 
@@ -1091,9 +1386,9 @@ Tier: deep dive.
     check("PDK-01 present", "PDK-01" in entries)
     check(
         "PDK-01 url",
-        entries.get("PDK-01", (set(), set(), None))[0] == {"https://skywater-pdk.readthedocs.io/"},
+        entries.get("PDK-01", (set(), set(), None, None))[0] == {"https://skywater-pdk.readthedocs.io/"},
     )
-    urls2, dois2, _date2 = entries.get("PDK-02", (set(), set(), None))
+    urls2, dois2, _date2, _title2 = entries.get("PDK-02", (set(), set(), None, None))
     check("PDK-02 dedups doi.org URL and bare DOI", dois2 == {"10.1109/proc.1972.8854"})
     check("PDK-02 other url kept", urls2 == {"https://example.org/mirror"})
 
@@ -1118,8 +1413,8 @@ Tier: cross-check.
     check("ACC-02 access date", acc_entries["ACC-02"][2] == "20260411")
     check("ACC-03 has no access date", acc_entries["ACC-03"][2] is None)
     acc_reg = Registry()
-    for key, (urls, dois, date) in acc_entries.items():
-        acc_reg.add_inventory(key, urls, dois, date)
+    for key, (urls, dois, date, title) in acc_entries.items():
+        acc_reg.add_inventory(key, urls, dois, date, title)
     check(
         "registry records the access date per token (feeds the Wayback timestamp)",
         acc_reg.access_dates.get("https://example.org/a") == "20260830"
@@ -1373,6 +1668,101 @@ Some claim.[^wiki-fick][^pdk-01]
         kept == [t for t in sample_tokens if _sample_keep(t)],
     )
 
+    # -- soft-dead? heuristics (all offline; canned title/body/URL inputs,
+    # no network, no fetch).
+
+    check("cited title from italics", extract_cited_title('EDN, *Applied dedicates RTP with Vantage*, 2002.') == "Applied dedicates RTP with Vantage")
+    check('cited title falls back to a quoted run', extract_cited_title('Wikipedia, "Fick\'s laws of diffusion".') == "Fick's laws of diffusion")
+    check("no title found is None", extract_cited_title("Just a plain sentence with no markup.") is None)
+
+    html_ok = b"<html><head><title>Wafer Prober P-8XL &amp; P-12XL</title></head><body>" + b"Tokyo Electron wafer prober specifications. " * 20 + b"</body></html>"
+    check("extracts <title>", extract_page_title(html_ok) == "Wafer Prober P-8XL &amp; P-12XL")
+    check("visible text length excludes tags", visible_text_len(html_ok) > 400)
+
+    html_404 = b"<html><head><title>404 Not Found</title></head><body>Sorry, that page doesn't exist any more.</body></html>"
+    check("extracts a 404 title", extract_page_title(html_404) == "404 Not Found")
+
+    html_h1_only = b"<html><body><h1>Product Discontinued</h1><p>See our current catalogue.</p></body></html>"
+    check("falls back to <h1> when there is no <title>", extract_page_title(html_h1_only) == "Product Discontinued")
+
+    check("no title or h1 is None", extract_page_title(b"<html><body><p>hi</p></body></html>") is None)
+
+    # A genuine, matching page: no reasons at all.
+    check(
+        "a fine page has no soft-dead reasons",
+        soft_dead_reasons(
+            "https://example.com/products/widget-9000",
+            "https://example.com/products/widget-9000",
+            "Widget 9000 Product Page",
+            2000,
+            "Widget 9000",
+        )
+        == [],
+    )
+    # Title contains an explicit not-found phrase.
+    check(
+        "title 404 marker is a suspect",
+        any("404" in r or "not found" in r.lower() for r in soft_dead_reasons(
+            "https://example.com/products/widget-9000", "https://example.com/products/widget-9000",
+            "404 Not Found", 200, "Widget 9000",
+        )),
+    )
+    # Deep product URL collapsed to a shorter category page.
+    check(
+        "path collapse is a suspect",
+        any("collapsed" in r for r in soft_dead_reasons(
+            "https://example.com/products/widget-9000", "https://example.com/products/",
+            "Our Products", 2000, "Widget 9000",
+        )),
+    )
+    # Collapsed all the way to the site root.
+    check(
+        "collapse to site root is a suspect",
+        any("site root" in r for r in soft_dead_reasons(
+            "https://example.com/products/widget-9000", "https://example.com/",
+            "Example Corp — Home", 2000, "Widget 9000",
+        )),
+    )
+    # A generic landing-page path marker (search/login/error/etc).
+    check(
+        "generic landing path marker is a suspect",
+        any("landing" in r for r in soft_dead_reasons(
+            "https://example.com/products/widget-9000", "https://example.com/search?q=widget",
+            "Search results", 2000, "Widget 9000",
+        )),
+    )
+    # Suspiciously thin body.
+    check(
+        "a very thin page is a suspect",
+        any("thin" in r for r in soft_dead_reasons(
+            "https://example.com/products/widget-9000", "https://example.com/products/widget-9000",
+            "Widget 9000", 20, "Widget 9000",
+        )),
+    )
+    # Title shares nothing at all with the cited title.
+    check(
+        "an unrelated title is a suspect",
+        any("doesn't match" in r for r in soft_dead_reasons(
+            "https://example.com/products/widget-9000", "https://example.com/products/widget-9000",
+            "Contact Us", 2000, "Widget 9000 Specifications",
+        )),
+    )
+    # A short/generic cited title (< 2 significant words) never triggers
+    # the title-mismatch check alone -- too easy to false-positive.
+    check(
+        "a too-short cited title never triggers the mismatch check by itself",
+        soft_dead_reasons(
+            "https://example.com/x", "https://example.com/x", "Completely Unrelated Text", 2000, "Home",
+        )
+        == [],
+    )
+    # A single missing/None title (e.g. a PDF or a JSON body) never
+    # crashes and never wrongly matches "no title" as a mismatch.
+    check(
+        "no page title at all is not itself a suspect (only tested signals fire)",
+        soft_dead_reasons("https://example.com/x", "https://example.com/x", None, 2000, "Some Title") == [],
+    )
+
     if failures:
         print("SELFTEST FAILED:")
         for f in failures:
@@ -1429,6 +1819,12 @@ def main() -> int:
         help="print, for each dead token, the ready-to-paste C5 step-3 citation "
         "lines and the files citing it (does not write any file)",
     )
+    ap.add_argument(
+        "--no-soft-dead",
+        action="store_true",
+        help="skip the soft-404 body/title check (one extra GET per ok/redirected "
+        "non-DOI token); on by default",
+    )
     args = ap.parse_args()
 
     if args.selftest:
@@ -1438,6 +1834,8 @@ def main() -> int:
         cache = load_cache(args.cache)
         changed = 0
         for t, entry in cache.items():
+            if entry.get("category") == "soft-dead?":
+                continue  # a separate axis from classify(); --reclassify only touches its output
             new_cat = classify(
                 entry["url"], t.startswith("doi:"), entry["status"], entry["final_url"], entry["chain"], entry.get("error")
             )
@@ -1487,6 +1885,8 @@ def main() -> int:
         set(args.only_host) or None,
         set(args.skip_host) or None,
         access_dates=reg.access_dates,
+        cited_titles=reg.cited_titles,
+        check_soft_dead=not args.no_soft_dead,
     )
 
     report = render_report(reg, cache, tokens)
