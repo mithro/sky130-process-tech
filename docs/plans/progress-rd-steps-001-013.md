@@ -176,6 +176,37 @@ new glance-box sentence naming "SKY130" and "150 nm" together, not a real transp
 LOST counterpart at all this time, unlike page 001). All other checkers and the `-W` build pass;
 screenshots at both widths read cleanly.
 
+### 004-fom.md — done
+
+Rules applied: R-SENTENCE (the mask-layer paragraph's semicolon/em-dash chains split into three
+sentences), R-TABLE (the `cfom`/`fom` drawn-side layer:purpose list, 5 rows, → a Layer|Purpose
+table), R-H3 ("### Which wavelength?" — a 190-word bold run-in that argues evidence → calculation
+→ inference, a whole passage, not one point; "**Mask polarity.**" stayed bold, a single ~35-word
+point), further R-SENTENCE inside that section (the two semicolon/long sentences of the k1
+argument split), R-PARA (the 84-word "Anti-reflective coating" numbered-list item → lead sentence
++ indented continuation, itself split at its semicolon), R-CATEGORY + R-LIST together (the
+"unusual in three ways" enumeration was already a clean 3-item list under one classification
+sentence — no Guide-problem-3 single-bullet case this time), R-TOOLS (three "Strength:" bullets,
+under 4 so no recap table; the two bullets whose only "SkyWater says" content was already the
+bold head text skip an empty *SkyWater says:* sub-bullet and go straight to *Tool exists:*/*Runs
+this step:*), R-OPENQ (three bullets labelled), R-GLANCE (box added last; first sentence already
+9 words). R-DERIVATION: no candidate (no arithmetic, just a k1 comparison already given as
+prose). R-CODE: no candidate.
+
+One slip caught by `check_preserved.py` and fixed before committing: the first glance-box draft
+quoted `"waffle"` as if it were the page's own quotation; the page only ever quotes "waffle drop"
+and "waffles", never bare "waffle" — reworded to "dummy waffle pattern" (no quotation marks) since
+inventing a new quoted string is exactly what `check_preserved.py`'s `quotes` category is there to
+catch (§2 rule 1).
+
+`check_preserved.py docs/steps/004-fom.md --allow-added markers,numbers,hedges,number_order`:
+0 LOST outside `number_order`; six `number_order` LOST/ADDED pairs, all hand-verified (dumped
+units script) as the table split, the two semicolon/em-dash sentence splits, and the numbered
+anti-reflective-coating item split — one of the ADDED tuples' leading digit is the "2." of that
+numbered list item itself (`_LIST_ITEM_RE`/`NUMBER_RE` count a list marker as a number), not page
+content. All other checkers and the `-W` build pass; screenshots at both widths read cleanly, the
+new layer table holds at 400 px.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
