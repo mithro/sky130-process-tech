@@ -1000,3 +1000,396 @@ and difftap.5 is blank in the PDK[^pdk-periph]` and `:widths: 14 62 24`.
 which tables have no `:::{table}` line above them.
 
 **Kind.** hand (one line per table); safe to do in the same commit as the table rule that created it.
+
+### 3.3 Links, references and navigation
+
+#### R-LINKS — reading-list heads and named titles become links
+*(reports A F14, B B10 and C C1/C4, merged — one rule)*
+
+**Blocked until W0c** (citation-style rule 5 reworded, the `check_refs.py` invariant added, the script
+promoted to `tools/fix_reading_list_links.py`). Do not start it by hand before then.
+
+**Applies when** a bullet under `## References` ends in exactly one footnote marker and contains no
+link, **or** prose names a source by its italic title in the same sentence as that source's marker.
+
+**Do.**
+1. **Reading-list bullets.** The *head* is the text before the first ` — `.
+   * head contains no `{role}`, no `[`, no backtick → wrap the whole head: `[head](<URL>)`;
+   * head contains a role or a backtick but exactly one `*italic title*` → link only that span;
+   * N markers and exactly N italic titles in the same order → link title *i* to marker *i*'s URL;
+   * anything else → leave the bullet alone.
+2. The URL is **the first `<URL>` in that page's own `[^k]: …` definition**, copied character for
+   character. Where the definition gives an archive URL first (R-WAYBACK), that is the URL you copy.
+3. Angle brackets around the URL are mandatory: `[head](<https://…>)`. They keep URLs containing
+   parentheses valid.
+4. **The marker always stays**, at the end of the bullet, unchanged. It carries the inventory key.
+5. **Named titles in prose** (C4): link the italic title to the definition's first URL, **first
+   occurrence per H2 only**, marker unchanged.
+6. Leave alone: vendor model names in "Representative …" and "Machines typically used" sections (the
+   footnote is the evidence); short "name + marker" bullets outside the reading lists (22 site-wide);
+   the generated index pages (already inline).
+7. Bullets inside a `{dropdown}` may be converted, **in place** (§2.5).
+
+**Example** — `docs/steps/006-stie.md:215`.
+
+Before:
+
+```
+* Wikipedia, *Shallow trench isolation* — the three STI operations and
+  the LOCOS cross-over node.[^wiki-sti]
+```
+
+After:
+
+```
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the
+  three STI operations and the LOCOS cross-over node.[^wiki-sti]
+```
+
+The three-marker case is `docs/machines/pecvd.md:468` ("Wikipedia, *Silane*, *Tetraethyl orthosilicate*
+and *Nitrogen trifluoride* — the precursors and the clean gas.[^wiki-silane][^wiki-teos][^wiki-nf3]"):
+three italic titles, three markers, in the same order, each title linked to its own marker's URL.
+
+**Do not touch.** Footnote definitions; the annotation after the dash; **the number of bullets**
+(`check_refs.py` counts `^\* ` under `### Deep dive`); the generated index-links block. Never invent a
+URL, and never use a URL that is not in one of that page's own definitions (§2.11).
+
+**Find.** The dry run, from the repository root — it prints, it never writes:
+
+```
+python3 docs/plans/readability/prototypes/links-theme/titlelink_dryrun.py              # site totals
+python3 docs/plans/readability/prototypes/links-theme/titlelink_dryrun.py docs/steps/006-stie.md
+```
+
+On this branch: `{'ok': 6200, 'multi-marker': 676, 'no-dash': 176, 'role-in-head': 16, 'no-url': 6}`.
+The 6,200 are the script's; the ≈ 870 leftovers are hand work under steps 1b and 1c.
+
+**Kind.** scripted for the 6,200 (once W0c lands: `tools/fix_reading_list_links.py`); hand for the rest.
+After running it: `check_refs.py`, `check_inforce.py`, `gen_index_links.py --check`, `-W` build.
+
+#### R-WAYBACK — a cited page that no longer resolves
+*(report C C5)*
+
+**Blocked until W0f** for the tooling half (`check_links.py` lookup fix, `--suggest-archive`,
+`--include-generated`). The citation *form* below applies from now on.
+
+**Applies when** `check_links.py` reports a URL dead in two runs at least 24 h apart (404, 410, DNS
+failure, 5xx or timeout) and the host is not in its `BLOCKED_HOSTS`. A single failure is not "dead".
+
+**Do.**
+1. **Find a snapshot.** Query the availability API with the citation's accessed/retrieved date as the
+   timestamp (else `20260830`), `User-Agent: sky130-process-tech docs checker`, one request per 3 s.
+   Accept only `available: true` and `status: "200"`. On an empty answer: retry once after 10 s, then
+   the other scheme, then with and without `www.`, then the CDX endpoint. Never loop on an error page.
+2. **Verify it.** Fetch the snapshot once and confirm the title, or a string the pages quote from it, is
+   present. A captured soft-404 or a redirect counts as no snapshot.
+3. **Cite both URLs**, in every footnote definition that repeats it *and* in the inventory entry:
+
+```
+[^key]: Author, *Title*, publisher, date.
+    <https://web.archive.org/web/20260411150120/https://example.com/page>
+    (Wayback Machine capture of 2026-04-11; original, dead since 2026-09-19:
+    `https://example.com/page`).
+```
+
+   The archive URL comes **first** — R-LINKS and the hover card take the first URL. Always `https://`,
+   even where an older definition on the page writes `http://web.archive.org/…`. The original goes in
+   backticks: searchable, but not a link, so the checker stops reporting it. Use exactly the house
+   wording "Wayback Machine capture of YYYY-MM-DD" (87 inventory entries already use it).
+4. **No snapshot anywhere** (try `archive.ph/newest/` by hand as well): rule 11 of
+   `docs/plans/agent-briefs.md` applies, unchanged — and that rule *deletes quotations*, so never reach
+   it on a lookup that merely failed intermittently.
+5. A DOI whose landing page is broken keeps the DOI plus a dated note. **Never replace a DOI with an
+   archive URL.**
+
+**Do not touch.** The bibliographic text of the definition; any quotation resting on the source; hosts
+that block scripts.
+
+**Find.** `uv run tools/check_links.py` (and, after W0f, `--suggest-archive`). The existing report is
+`docs/plans/link-check-2026-09.md`; note its THUNG-2016 row says "no snapshot" and is wrong.
+
+**Kind.** hand, one source at a time, with the fetch etiquette of `agent-briefs.md` rules 10 and 12.
+
+#### R-STEPRUN — runs of step links, and link text that is a bare number
+*(report B B1 and B9)*
+
+**Applies when** a paragraph, bullet or table cell contains six or more `{ref}` links to step pages,
+**or** a step link's text is a three-digit number instead of the step code.
+
+**Do.**
+1. **Run of 25 links or fewer:** add a table `Step | Code | Name | Role`. `Name` comes from the step
+   page's title; `Role` only from the page's own markers and grouped bullets ("main", "alternative",
+   the `*also …:*` wording). Right-align `Step`.
+2. **Run of more than 25 links:** no table. Keep the page's grouped bullets first and put the run in a
+   `{dropdown}` titled "All N steps (links)".
+3. **The run itself stays byte-identical**, wherever it ends up.
+4. **Placement is a checker contract:**
+   * *machine pages* — the run must remain the **first block under `### SKY130 steps assigned to this
+     class` that contains a step link and does not start with `* `**. So: dropdown (with the run inside
+     it) first, new table **after** it. Verified: table after the run passes; the same table placed
+     before the run fails with "steps: page only [], index only [...]".
+   * *material pages* — the run must stay in the paragraph directly after a line reading `Steps:`.
+     Verified: moving the `Steps:` line and the run together inside a `{dropdown}` passes.
+   * *mask pages* — six steps or fewer, one bullet each; nothing to do.
+5. **Link text**: make it the step code everywhere (`{ref}`PSG <step-089>``, not `{ref}`089
+   <step-089>``). In a table with a `Step` number column, show the number in that column and the code in
+   the link. Index cells need only *start* with a link, so the checkers still pass.
+
+**Example** — `docs/materials/process-gases.md:307-309`: a `Steps:` line followed by 142 links. After:
+the grouped bullets stay, then
+
+```
+:::{dropdown} All 142 steps (links)
+
+Steps:
+
+{ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, …
+:::
+```
+
+`docs/machines/wet-bench.md:213` is the 40-link machine case (4 main + 36 "*also for a clean or
+strip:*").
+
+**Do not touch.** The order of the links, the `*alternative:*` and `*also …:*` markers and their
+wording, the `N steps; see …` quick-facts row.
+
+**Find.** `measure_b.py --list` keys `steplink-run-paragraph` (37), `bullet>=8steplinks` (41),
+`tablecell>=8steplinks` (46); `grep -rEn '\{ref\}`[0-9]{3} <step-' docs/` for the bare-number links
+(1,975 in 11 files).
+
+**Kind.** the link text is scripted; the table is best generated (a `gen_step_tables.py` fed by
+`tools/steps.csv` and the index rows) — **blocked until W0d** if generated. Building it by hand is
+allowed only for a single page, and then the run must be re-checked against the index.
+
+#### R-INDEX — index pages put methodology before navigation
+*(reports B B2, B3 and C C6/C7)*
+
+**Applies when** the first lookup table of an index page starts more than 300 words into the page, or
+the page opens with evidence policy rather than with what the page is for.
+
+**Do (safe now).**
+1. Reorder whole H2 sections, with their `(label)=` lines, into: (1) purpose, ≤ 80 words;
+   (2) navigation (cards or a lookup table); (3) detail tables; (4) "How to read this index" — the
+   evidence and grading text, moved unchanged; (5) open questions; (6) references.
+2. Move sections whole. Rewrite nothing, renumber nothing, drop no label.
+3. Any **new** navigation table gets **its own heading**, and goes *above* the checked section or after
+   it — never inside a checked section before the checked table. Verified on the masks index: a
+   four-column navigation table inserted before `| Step | PDK mask (`masks.csv`) | …` inside
+   `## Mask steps in this reference` makes `check_masks.py` report 76 problems; the same table under its
+   own `## Find a mask` heading passes.
+4. On `docs/machines/index.md`, a new table must **not** have exactly four columns with a machine link
+   in its first cell: `index_rows()` maps every such line and the **last** one wins. Verified: such a
+   table after the main table silently replaces the checked row and the page checks fail; before it, it
+   is overwritten and passes — do not rely on that, give the new table a different shape.
+5. Replace a bulleted list that merely repeats the sidebar (the 30 bare links at
+   `docs/machines/index.md:17-57`) with a navigation table `class → one clause → number of steps`, and
+   make the toctree `:hidden:`.
+
+**Do (blocked until W0e).** The main-table restructurings: machines index to `Machine class | Steps`
+plus a `{grid}` of cards (needs `check_machines.index_rows` to read a two-column table); materials index
+split into `Material | Class page | Role | SkyWater evidence` and `Material | Steps` (needs
+`check_materials.Index` to read the Steps cell from a second table, keyed by key rather than by
+position). Until then only the cosmetic fix is available: wrap in `{table}` with a caption and
+`:widths:` (R-CAPTION).
+
+**Do (blocked until W0d).** `docs/steps/index.md` — grouping into the 13 module H3s, the short sidebar
+titles, the `Machine class` and `Mask` columns. It is generated; §2.8.
+
+**Do not touch.** Cell wording, quotations, footnotes, the row order of any checked table; the six
+checked columns of the masks index; the mask-types paragraph under `### Mask types and plate labels`
+(the checker parses its **first paragraph**, sentence by sentence); the words "custody", "shipment",
+"exp_ship" must never appear on a mask page or the masks index (`FORBIDDEN`).
+
+**Find.** `grep -n "^## \|^| " docs/machines/index.md | head -40` and the same for the other three
+indexes: the first `| ` line tells you how deep the first table sits.
+
+**Kind.** hand (moves only).
+
+#### R-TERM — glossary links and the glossary page
+*(report C C9)*
+
+**Applies when** a glossary term appears in a page's prose and that page has no `{term}` link for it,
+or the glossary page is one undivided block.
+
+**Do.**
+1. Per page, link the **first** prose occurrence of each term: whole word, case-sensitive for
+   acronyms. Plurals take the explicit form: ``{term}`vias <via>` ``.
+2. Never inside: a heading, a code span, link text, a table header row, a footnote definition,
+   `## References`, or **a quotation**.
+3. Skip the ambiguous terms: `via`, `liner`, `TED`.
+4. The `**Phase**` row of the step quick-facts table gets its leading `FEOL`/`MOL`/`BEOL` as a `{term}`
+   (no checker reads that row; the stub template in `gen_steps.py` must be updated in the same
+   change — **blocked until W0d** for the generator half).
+5. Glossary page: one `{glossary}` block per initial under `## A` … `## W`, plus an A–Z link line.
+   Sphinx merges the blocks and every existing `{term}` still resolves. Entries keep their wording.
+
+**Do not touch.** Any term inside a quotation; the definitions themselves; the 15 terms that are never
+linked (they are still definitions).
+
+**Find.** `python3 docs/plans/readability/prototypes/links-theme/gloss.py` from the repository root
+(prints terms, uses, and the per-page misses).
+
+**Kind.** scripted proposal, hand acceptance — a `{term}` inside a quotation is the failure mode to
+watch for.
+
+#### R-CARDS — the landing page and section fronts
+*(report C C6)*
+
+**Applies when** a landing or section-front page is prose plus a toctree that repeats the sidebar.
+
+**Do.**
+1. Keep the existing paragraphs and their footnotes verbatim.
+2. Add a `{grid} 1 2 3 3` of `{grid-item-card}`s with `:link:` and `:link-type: ref`, one sentence and
+   a count per card: Overview ("start here"), Process steps (171), Categories (10), Machines (30),
+   Materials (12), Masks (36), Glossary (219), References (1,826 sources + three indexes).
+3. Add "The flow in 13 modules": the first four columns of the overview's module table
+   (`docs/overview/index.md:328`), so a step is two clicks away. Copy the cells; change nothing.
+4. Four lines on how to read a page (fact / typical / inference; footnotes), linking to the overview.
+5. Make the three toctrees `:hidden:`.
+
+**Do not touch.** The three opening paragraphs of `docs/index.md` and their markers. Counts must be
+counted, not remembered: `ls docs/steps/[0-9]*.md | wc -l`, and so on.
+
+**Find.** one page: `docs/index.md`. The same defect opens `docs/machines/index.md:17-57`.
+
+**Kind.** hand. `docs/index.md` is not a `check_refs.py` target, so it needs no reading list.
+
+#### R-ANCHOR — the inventory page
+*(report C C10)*
+
+**Applies when** an inventory entry has no anchor, or its `Tier:` and "Also used on …" sentences sit
+before the bibliographic text.
+
+**Do.**
+1. Script an anchor line `(src-pdk-04)=` above every `**PDK-04** —` entry (label = key, lower-cased).
+   Nothing else on the page changes; the popover can then link to the entry.
+2. Move each entry's `Tier:` sentence and its "used on" sentences to the end of the entry, each on its
+   own line. Whole sentences only, in their existing order.
+3. Keep every heading, every key, every URL.
+
+**Do not touch.** The keys (`check_refs.py` matches footnote labels against them, case-folded); the
+status-flag sentence of any in-force patent entry (`check_inforce.py` compares it with the dataset,
+character for character); the URLs (`check_links.py` reads this file).
+
+**Example** — `docs/references/public-sources.md:83`, entry `**PDK-04**`: the bibliographic line and the
+URL stay first; anything after them that begins "Tier:" or "Also used on" moves to the end.
+
+**Find.** `grep -n "^\*\*[A-Z0-9-]*\*\* —" docs/references/public-sources.md` (1,826 entries).
+
+**Kind.** scripted; nine tools read this file, so run every checker afterwards.
+
+#### R-DROPDOWN — in-force notes as the reader meets them
+*(report A F12)*
+
+**Applies when** you are editing a page that contains a `{dropdown}`.
+
+**Do.**
+1. **Leave the dropdown title exactly as it is** (§2.7). The shortened title of report A F12 is an owner
+   decision and is **blocked**.
+2. Leave the body of the note in place. R-PARA, R-LIST, R-SENTENCE and R-TABLE may be applied *inside*
+   it; nothing crosses the fence.
+3. Pointer prose in the body text ("which, the collapsed note above sets out", 107 occurrences on 35
+   pages) may be shortened to one end-of-sentence clause — "(details in the in-force patent note
+   below)" — **only** when the sentence keeps its own meaning without it and no content of the note
+   moves out.
+4. The note stays directly after the paragraph it belongs to. Do not insert a heading, a figure or a
+   table between them.
+5. Never leave a dropdown empty: `check_inforce.py` reports an empty `{dropdown}` as a lost note.
+
+**Example** — `docs/steps/138-capme.md:55` and `:92` carry the same title twice, and `:109`, `:114`,
+`:153`, `:185`, `:225`, `:238` and `:289` point at "the collapsed note(s) above". The titles stay;
+`:109` ("which, the collapsed note above sets out") may become a trailing clause.
+
+**Do not touch.** Titles, fence markers, blank lines inside the block, the order of the notes.
+
+**Find.** `grep -rn "{dropdown}" docs/steps/*.md` and `grep -rn "collapsed note" docs/steps/*.md`.
+Counted on this branch, outside the generated block: 93 hand-written notes on 37 step pages, and 107
+"collapsed note" pointers on 35 of them.
+
+**Kind.** hand.
+
+#### R-GENBLOCK — the generated "related index entries" block
+*(reports A F13 and B B11, merged)*
+
+**Applies when** never, for an executor. This rule exists so that you recognise the block and leave it
+alone.
+
+**The block** is everything between
+`<!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->` and
+`<!-- index-links:end -->`, spliced immediately before `## References` on 206 pages (144 steps, 28
+machines, 13 materials, 10 categories, 9 masks, 2 overview).
+
+**Do.**
+1. Nothing by hand. `gen_index_links.py --check` fails if the block differs by one character from what
+   the generator would write, and `check_steps.py`, `check_machines.py`, `check_materials.py` and
+   `check_masks.py` each call `stale_pages_in()` and fail too.
+2. Keep `## References` occurring **exactly once** on the page: the generator finds its splice point by
+   that heading and refuses a page with two.
+3. Do not move the block, and do not put a heading between it and `## References`.
+
+**The generator changes themselves (W0d, blocked):** emit
+`### Patents, papers and filings about this step` (or an H2 on class pages, with the H2 added to the
+three checker templates), use `{ref}`Title <patent-…>` — US 5,830,375 A (1996)` as the link text instead
+of a bare number, and split the count-only sentence into a count line and a link line. One generator
+commit plus one regeneration commit.
+
+**Find.** `grep -rln "index-links:begin" docs/`.
+
+**Kind.** generator. **Never by hand.**
+
+### 3.4 Figures
+
+#### R-FIGURE — figures are generated, never drawn
+*(report D)*
+
+**Blocked until W1a** (`tools/gen_figures.py`, `data/figures/`, `docs/_static/figures/`,
+`figure-theme.js`, the tokens file, the "Figure conventions" page and the `check_inforce.py` hook for
+figure specs). Until then no page gets a figure.
+
+**Applies when** W1a has landed and your page type is listed in §4 as taking a figure.
+
+**Do.**
+1. **Never write SVG, and never hand-edit a generated SVG.** Copy an existing figure YAML in
+   `data/figures/`, set `page`, `series`, the two `state_after` values, the panel titles, the arrow
+   text, the alt text and the caption — **using only wording that is already on the page**.
+2. Run the generator, fix every `LINT:` line, then look at the rendered result (the harness pages, shot
+   at desktop and phone width) before pasting anything.
+3. Paste the generated MyST block from `out/NAME.myst.txt` after the first paragraph of the section §4
+   names for your page type.
+4. Every label carries `basis: public | reading | inferred | typical`; anything other than `public`
+   prints its tag. Every label note containing a number carries `cite:`, and that footnote key must
+   already be defined on the target page.
+5. Every cross-section carries "Not to scale. Thin films are drawn thicker than they are."
+6. A dimension that is not public is never drawn to scale, and its label says "not public" first and the
+   reading second.
+7. **Nothing from a patent that `check_inforce.py` treats as in force may appear in a figure**, in any
+   form: a figure cannot sit inside a collapsed note (§2.6).
+8. The caption says what is shown, repeats the page's hedges, carries the citation and ends with "Not to
+   scale". Alt text is 60–450 characters, describes the geometry and carries no citations.
+9. At most two panels (three only for a deposit → pattern → etch summary on a category page). A figure
+   never replaces text or a table, never sits inside a dropdown, and is always followed by prose.
+10. The default taken in `readability-plan.md`: a figure **may** show a value the page gives as its own
+    reading, always with the `our reading` tag and the hedge repeated in the caption.
+
+**Example** — the prototype block, `docs/plans/readability/prototypes/diagrams/out/sti-006-stie.myst.txt`:
+
+```
+:::{figure} /_static/figures/sti-006-stie.svg
+:alt: Two cross-sections of the wafer, one above the other. …
+:width: 560px
+:name: fig-sti-006-stie
+
+The wafer before and after `STIE`. … about 0.33 µm is this page's reading of the PDK stack
+drawing.[^pdk-04] Not to scale.
+:::
+```
+
+(The prototype writes `/figures/<dir>/` in its paste blocks; production writes `/_static/figures/`.)
+
+**Do not touch.** Any page text. A figure is additive: no sentence is deleted because a drawing now
+shows it.
+
+**Find.** §4 says which pages take which figure. `grep -rl '{figure}\|{image}' docs` returns nothing
+today.
+
+**Kind.** generator. **Never by hand.**
