@@ -174,7 +174,9 @@ keys and class-page table, rows covered, step lists and summary table),
 `uv run tools/check_masks.py` (mask-page titles, headings, quick facts, plates,
 step lists and links), `uv run tools/check_papers.py` (the academic paper
 index dataset), `uv run tools/gen_papers.py --check` (the generated paper
-index pages are up to date and no published label changed) and
+index pages are up to date and no published label changed),
+`uv run tools/gen_steps.py --check` (`docs/steps/index.md` is up to date
+and every step page exists) and
 `uv run sphinx-build -W -q -b html docs docs/_build/html` before
 finishing. Report the branch name, commits, and any claims you were
 unable to source.
@@ -451,7 +453,9 @@ them. Check, and report with file and line references:
    `tools/gen_filings.py --check`, `tools/gen_index_links.py --check`
    (the generated "Related patents / papers / filings" block on every
    step, category, machine, material, mask and overview page is
-   up to date, not stale or hand-edited), `tools/check_inforce.py` (no
+   up to date, not stale or hand-edited), `tools/gen_steps.py --check`
+   (`docs/steps/index.md` is up to date and every step page exists),
+   `tools/check_inforce.py` (no
    footnote reference, publication number or title of a patent family
    that is not certainly expired appears outside a collapsed
    `{dropdown}`; footnote definitions and inventory entries carry the

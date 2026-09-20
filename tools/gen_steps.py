@@ -5,13 +5,21 @@ Existing step pages are *never* overwritten; only missing pages are
 created, so the script is safe to re-run after real content has been
 written.  ``docs/steps/index.md`` is always regenerated.
 
-Run with ``uv run tools/gen_steps.py``.
+``--check`` fails if the committed ``docs/steps/index.md`` differs from
+what this script would write, or if a step page that should exist is
+missing.  It never writes anything.  Written step pages themselves are
+never compared or touched by ``--check`` (or by a normal run): once a
+page exists, its content is the writers' to keep.
+
+Run with ``uv run tools/gen_steps.py [--check]``.
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -283,13 +291,32 @@ def write_stub(step: dict, prev: dict | None, nxt: dict | None) -> bool:
     return True
 
 
-def write_index(steps: list[dict]) -> None:
-    lines = [
-        "(steps-index)=",
-        "# Process steps",
-        "",
-        "The SKY130 flow is documented here as 171 numbered steps, in the",
-        "order in which a wafer experiences them. Each step has its own page.",
+INDEX_INTRO = """\
+(steps-index)=
+# Process steps
+
+The SKY130 flow is documented here as 171 numbered steps, in the
+order in which a wafer experiences them. Each step has its own page.
+The step numbers and codes are those of the public
+*S8 / SKY130 Process Steps* sheet, and the names follow its
+descriptions,[^steps-sheet] lightly edited for 20 steps: typing slips
+are corrected ("Low Vt NOMOS mask" becomes "Low Vt NMOS mask"),
+abbreviations are spelt out, and step 82, which the sheet describes only
+by its code "PSDI", is named "P+ source drain implant".
+"""
+
+INDEX_FOOTNOTES = """\
+<!-- footnotes -->
+
+[^steps-sheet]: *[external] S8 / SKY130 Process Steps*, public Google Sheet,
+    retrieved 2026-09-14; tab "Sheet1" lists the 171 steps (number, code and
+    description). <https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>
+"""
+
+
+def index_text(steps: list[dict]) -> str:
+    lines = INDEX_INTRO.splitlines()
+    lines += [
         "",
         "| # | Code | Step | Category |",
         "|---|------|------|----------|",
@@ -307,11 +334,38 @@ def write_index(steps: list[dict]) -> None:
     lines += ["", "```{toctree}", ":maxdepth: 1", ":hidden:", ""]
     lines += [s["file"][:-3] for s in steps]
     lines += ["```", ""]
-    (STEPS / "index.md").write_text("\n".join(lines))
+    lines += INDEX_FOOTNOTES.splitlines()
+    return "\n".join(lines) + "\n"
 
 
-def main() -> None:
+def write_index(steps: list[dict]) -> None:
+    (STEPS / "index.md").write_text(index_text(steps))
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--check", action="store_true",
+                     help="fail if docs/steps/index.md differs from generated, or a step page is missing")
+    args = ap.parse_args()
+
     steps = load_steps()
+
+    if args.check:
+        problems = []
+        for s in steps:
+            if not (STEPS / s["file"]).exists():
+                problems.append(f"docs/steps/{s['file']}: missing")
+        index_path = STEPS / "index.md"
+        expected = index_text(steps)
+        if not index_path.exists():
+            problems.append("docs/steps/index.md: missing")
+        elif index_path.read_text() != expected:
+            problems.append("docs/steps/index.md: differs from generated output (run `uv run tools/gen_steps.py`)")
+        for p in problems:
+            print(p)
+        print(f"{len(steps)} steps, {len(problems)} problem(s)")
+        return 1 if problems else 0
+
     STEPS.mkdir(parents=True, exist_ok=True)
     created = 0
     for i, step in enumerate(steps):
@@ -320,7 +374,8 @@ def main() -> None:
         created += write_stub(step, prev, nxt)
     write_index(steps)
     print(f"{created} stub(s) created, {len(steps)} steps indexed")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
