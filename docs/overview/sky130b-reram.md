@@ -569,89 +569,89 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * SkyWater, `sky130_fd_pr_reram` documentation index — "SkyWater
   Provided", "Initial documentation only release".[^reram-index]
-* SkyWater, `sky130_fd_pr_reram` *Background* — HfO₂-based RRAM in the
+* SkyWater, `sky130_fd_pr_reram` [*Background*](<https://sky130-fd-pr-reram.readthedocs.io/en/latest/background.html>) — HfO₂-based RRAM in the
   BEOL; FORM, SET, RESET, read; the 1T1R cell.[^reram-background]
-* SkyWater, `sky130_fd_pr_reram` *Technology Specifications* — forming
+* SkyWater, `sky130_fd_pr_reram` [*Technology Specifications*](<https://sky130-fd-pr-reram.readthedocs.io/en/latest/technology_specifications.html>) — forming
   voltages and pulses, resistance states, programming
   tables.[^reram-specs]
-* SkyWater, `sky130_fd_pr_reram` *User Guide* — "RRAM between met1/met2",
+* SkyWater, `sky130_fd_pr_reram` [*User Guide*](<https://sky130-fd-pr-reram.readthedocs.io/en/latest/user_guide.html>) — "RRAM between met1/met2",
   drawn and mask layers, the bypass, DRC example and tech-file
   stack.[^reram-ug]
-* SkyWater, layer-description slide in the library repository — `via`,
+* [SkyWater, layer-description slide in the library repository](<https://github.com/google/skywater-pdk-libs-sky130_fd_pr_reram/blob/d6d2a3c6960aac0a0b12fc21221c31777bbf284d/docs/figures/page_5.svg>) — `via`,
   `cviam`, `r1c`, `r1v`.[^reram-layers]
 * SkyWater, `reram_cell` layout and Verilog-A model and the DRC test
   layout — GDS 201:20, cell area, `Tox`.[^reram-cell]
-* SkyWater, `sky130_fd_pr_reram` *References* — the two compact
+* SkyWater, `sky130_fd_pr_reram` [*References*](<https://sky130-fd-pr-reram.readthedocs.io/en/latest/references.html>) — the two compact
   models.[^reram-refs]
 * open_pdks `Makefile.in` and `README` — the sky130B variant and its
   definition by ReRAM support.[^opdks-makefile][^opdks-readme]
-* open_pdks Magic technology file — the `RERAM` layer on 201:20, its
+* [open_pdks Magic technology file](<https://github.com/fossi-foundation/open-pdks/blob/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130/magic/sky130.tech>) — the `RERAM` layer on 201:20, its
   DRC, the shifted extraction heights and the doubled via-1
   resistance.[^opdks-magic-tech]
-* SkyWater PDK, process stack diagram — the base via-1 and metal-2
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — the base via-1 and metal-2
   levels.[^pdk-04]
-* SkyWater PDK, *Masks*, *Layers Reference*, *Periphery rules* and
-  *Parasitic Layout Extraction* — `cviam`, `via`, via
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>), [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>), [*Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) and
+  [*Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — `cviam`, `via`, via
   enclosures and via resistance.[^pdk-05][^pdk-06][^pdk-periph][^pdk-08]
-* *S8 / SKY130 Process Steps* sheet — the step list, and in "Run Mask
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the step list, and in "Run Mask
   IDs" the RRM and VIMC masks and the runs for which they
   exist.[^steps-sheet]
-* *SKY130 Open MPW mask-layer renders* — one public derivation of
+* [*SKY130 Open MPW mask-layer renders*](<https://foss-eda-tools.googlesource.com/third_party/shuttle/sky130/>) — one public derivation of
   `VIMC` from the drawn `via` and 201:20 layers.[^mask-renders]
-* SkyWater, *Facilities & Capabilities* — ALD HfO₂ and TiN, PVD TiN,
+* [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ALD HfO₂ and TiN, PVD TiN,
   TiN metal etch.[^skw-01]
-* SkyWater, Weebit Nano ReRAM press release — a ReRAM bitcell "between
+* [SkyWater, Weebit Nano ReRAM press release](<https://www.skywatertechnology.com/weebit-nano-reram-ip-now-available-in-skywater-technologys-s130-process/>) — a ReRAM bitcell "between
   Metal1 and Metal2" in S130.[^skw-04]
-* IEEE Spectrum, 2018 — SkyWater's role in the DARPA monolithic-3D
+* [IEEE Spectrum, 2018](<https://spectrum.ieee.org/the-foundry-at-the-heart-of-darpas-plan-to-let-old-fabs-beat-new-ones>) — SkyWater's role in the DARPA monolithic-3D
   project with RRAM.[^press-05]
 
 ### High-level understanding
 
-* Wikipedia, *Resistive random-access memory* — oxygen vacancies,
+* [Wikipedia, *Resistive random-access memory*](<https://en.wikipedia.org/wiki/Resistive_random-access_memory>) — oxygen vacancies,
   forming, set and reset.[^wiki-reram]
-* Wikipedia, *Atomic layer deposition* and *Hafnium(IV) oxide* — how
+* Wikipedia, [*Atomic layer deposition*](<https://en.wikipedia.org/wiki/Atomic_layer_deposition>) and [*Hafnium(IV) oxide*](<https://en.wikipedia.org/wiki/Hafnium(IV)_oxide>) — how
   the switching layer is typically grown, and the
   material.[^wiki-ald][^wiki-hfo2]
-* Wikipedia, *Physical vapor deposition*, *Reactive-ion etching* and
-  *Chemical-mechanical polishing* — the electrode, etch and polish
+* Wikipedia, [*Physical vapor deposition*](<https://en.wikipedia.org/wiki/Physical_vapor_deposition>), [*Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) and
+  [*Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>) — the electrode, etch and polish
   processes of the module.[^wiki-pvd][^wiki-rie][^wiki-cmp]
-* ITRS 2001, *Lithography* — the exposure options it lists by node for
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
   critical layers.[^itrs-03]
 
 ### Deep dive
 
-* Guan, Yu and Wong, *IEEE EDL* 2012 — the SPICE compact model of
+* [Guan, Yu and Wong, *IEEE EDL* 2012](<https://doi.org/10.1109/LED.2012.2210856>) — the SPICE compact model of
   metal-oxide RRAM the SkyWater documentation cites.[^guan-2012]
-* Jiang et al., SISPAD 2014 — the Verilog-A RRAM model the SkyWater
+* [Jiang et al., SISPAD 2014](<https://doi.org/10.1109/SISPAD.2014.6931558>) — the Verilog-A RRAM model the SkyWater
   documentation cites.[^jiang-2014]
-* Hsieh et al., IEDM 2019 — a 1T4R multi-bit HfO₂ RRAM array in a
+* [Hsieh et al., IEDM 2019](<https://doi.org/10.1109/IEDM19573.2019.8993514>) — a 1T4R multi-bit HfO₂ RRAM array in a
   logic foundry back end, the source of a figure in SkyWater's
   specifications.[^hsieh-2019]
-* Le et al., *IEEE TED* 2019 — 3-bits-per-cell programming of HfOx 1T1R
+* [Le et al., *IEEE TED* 2019](<https://doi.org/10.1109/TED.2018.2879788>) — 3-bits-per-cell programming of HfOx 1T1R
   arrays in a 130 nm back end.[^le-2019]
-* Srimani et al., VLSI 2020 — two RRAM tiers and two CNFET tiers in a
+* [Srimani et al., VLSI 2020](<https://doi.org/10.1109/VLSITechnology18217.2020.9265083>) — two RRAM tiers and two CNFET tiers in a
   ~130 nm commercial-foundry back end.[^srimani-2020]
-* Wong et al., *Proc. IEEE* 2012 — the standard review of metal-oxide
+* [Wong et al., *Proc. IEEE* 2012](<https://doi.org/10.1109/JPROC.2012.2190369>) — the standard review of metal-oxide
   RRAM.[^wong-2012]
-* Waser and Aono, *Nature Materials* 2007 — the classification of
+* [Waser and Aono, *Nature Materials* 2007](<https://doi.org/10.1038/nmat2023>) — the classification of
   resistive-switching mechanisms.[^waser-2007]
-* Ielmini, *Semicond. Sci. Technol.* 2016 — open-access review of
+* [Ielmini, *Semicond. Sci. Technol.* 2016](<https://doi.org/10.1088/0268-1242/31/6/063002>) — open-access review of
   switching, reliability and scaling.[^ielmini-2016]
-* Lee et al. (ITRI), IEDM 2008 — a TiN/HfO₂ cell with a Ti buffer
+* [Lee et al. (ITRI), IEDM 2008](<https://doi.org/10.1109/IEDM.2008.4796677>) — a TiN/HfO₂ cell with a Ti buffer
   integrated with 0.18 µm CMOS.[^lee-2008-hfo2]
-* Chen et al. (ITRI), IEDM 2009 — a 1 kb HfOx 1T1R array with an AlOx
+* [Chen et al. (ITRI), IEDM 2009](<https://doi.org/10.1109/IEDM.2009.5424411>) — a 1 kb HfOx 1T1R array with an AlOx
   buffer.[^chen-2009-hfox]
-* Govoreanu et al. (imec), IEDM 2011 — a sub-10 nm Hf/HfOx cell and the
+* [Govoreanu et al. (imec), IEDM 2011](<https://doi.org/10.1109/IEDM.2011.6131652>) — a sub-10 nm Hf/HfOx cell and the
   role of the cap layer.[^govoreanu-2011]
-* Beckmann et al., *ECS Trans.* 2016 — wet HF versus BCl₃/O₂ RIE
+* [Beckmann et al., *ECS Trans.* 2016](<https://doi.org/10.1149/07513.0093ecst>) — wet HF versus BCl₃/O₂ RIE
   removal of the HfO₂, compared for structure, electrical behaviour and
   yield.[^beckmann-2016]
-* Golonzka et al. (Intel), VLSI 2019 — RRAM integrated into Intel's
+* [Golonzka et al. (Intel), VLSI 2019](<https://doi.org/10.23919/VLSIT.2019.8776570>) — RRAM integrated into Intel's
   22FFL FinFET logic technology.[^golonzka-2019]
-* George, *Chem. Rev.* 2010 — atomic layer deposition.[^george-2010]
-* Wilk, Wallace and Anthony, *J. Appl. Phys.* 2001 — high-κ dielectrics
+* [George, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900056b>) — atomic layer deposition.[^george-2010]
+* [Wilk, Wallace and Anthony, *J. Appl. Phys.* 2001](<https://doi.org/10.1063/1.1361065>) — high-κ dielectrics
   and their process compatibility.[^wilk-2001]
-* Lee, Chiang and Pramanik (Intermolecular), US 9,076,523 B2 — embedded
+* [Lee, Chiang and Pramanik (Intermolecular), US 9,076,523 B2](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9076523>) — embedded
   bipolar ReRAM, BEOL thermal budget, inert and reactive electrodes and
   forming as part of fabrication.[^pat-rram-intermolecular]
 

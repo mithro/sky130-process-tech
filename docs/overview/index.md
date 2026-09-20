@@ -1133,29 +1133,29 @@ See {ref}`filings-by-relationship` for the full, grouped list.
 
 ### Cross-check
 
-* SkyWater PDK, *Background* and *Previous Nomenclature* — the Cypress
+* SkyWater PDK, [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) and [*Previous Nomenclature*](<https://skywater-pdk.readthedocs.io/en/main/previous.html>) — the Cypress
   origin, "8th generation SONOS", the `s8` name and the older flow
   names.[^pdk-02][^pdk-previous]
-* SkyWater PDK, repository README — the technology-stack summary and the
+* [SkyWater PDK, repository README](<https://github.com/google/skywater-pdk>) — the technology-stack summary and the
   licence.[^pdk-10]
 * SKY130 raw-data repository, README and test-tile pad documentation —
   the CoolCAD measurements and the 273 test modules, including the MiM
   capacitor structures; the transistor, gate-capacitor, passive-device,
   varactor and bipolar files from which our extracted values
   come.[^raw-data-readme][^raw-data-testtile-pads][^raw-data-hv-mosfets][^raw-data-lv-mosfets][^raw-data-passives]
-* SkyWater PDK, *Criteria & Assumptions* — poly, cap, spacer and pre-LI
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — poly, cap, spacer and pre-LI
   dielectric thicknesses, well and junction depths, implant angles and
   the antenna thicknesses by flow.[^pdk-03]
-* SkyWater PDK, process stack diagram — every label of the
+* [SkyWater PDK, process stack diagram](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — every label of the
   cross-section.[^pdk-04]
-* SkyWater PDK, *Masks*, *Layers Reference* and *Periphery rules* — the
+* SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>), [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and [*Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the
   mask marks, layer descriptions and design rules behind the module
   table.[^pdk-05][^pdk-06][^pdk-periph]
 * SkyWater PDK, *Device Details*, *High Voltage Methodology*, *Parasitic
   Layout Extraction* and SPICE models — the device list, capacitor and
   resistor values, gate-oxide thickness, sheet resistances and
   `toxe`.[^pdk-07][^pdk-hv][^pdk-08][^pdk-model-nfet01v8][^pdk-model-nfet5v]
-* *S8 / SKY130 Process Steps* sheet — the 171 steps, their codes, names
+* [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the 171 steps, their codes, names
   and order.[^steps-sheet]
 * open_pdks `Makefile.in` and `README`, and the `sky130_fd_pr_reram`
   documentation index — the `sky130A` and `sky130B`
@@ -1171,7 +1171,7 @@ See {ref}`filings-by-relationship` for the full, grouped list.
 * Cypress qualification reports QTP 113005, 123907 and 014807 — metal
   and passivation stacks of S8 and another technology at Fab
   4.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
-* SkyWater, Form 10-K for 2023 — the other flows run in the same
+* [SkyWater, Form 10-K for 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — the other flows run in the same
   fab.[^sec-02]
 * Google, SkyWater and Efabless shuttle announcement (2020) and
   SkyWater's SKY130 article (2023) — the open shuttle programme and
@@ -1179,70 +1179,70 @@ See {ref}`filings-by-relationship` for the full, grouped list.
 
 ### High-level understanding
 
-* Wikipedia, *SkyWater Technology* and *130 nm process* — the company's
+* Wikipedia, [*SkyWater Technology*](<https://en.wikipedia.org/wiki/SkyWater_Technology>) and [*130 nm process*](<https://en.wikipedia.org/wiki/130_nm_process>) — the company's
   origin and the 2020 open-source release.[^wiki-skywater][^ann-17]
-* FOSSi Foundation, announcement of the open PDK (2020) — how the
+* [FOSSi Foundation, announcement of the open PDK (2020)](<https://fossi-foundation.org/blog/2020-06-30-skywater-pdk>) — how the
   release was presented to the open-hardware community.[^ann-03]
-* Edwards, *Introduction to the SkyWater PDK* (2021) — lecture slides on
+* [Edwards, *Introduction to the SkyWater PDK* (2021)](<https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>) — lecture slides on
   the layers and metal stack from a designer's point of view.[^ann-16]
-* Wikipedia, *SONOS* and *Shallow trench isolation* — the memory cell and
+* Wikipedia, [*SONOS*](<https://en.wikipedia.org/wiki/SONOS>) and [*Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>) — the memory cell and
   the isolation module in outline.[^cyp-26][^wiki-sti]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — the unit
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the unit
   processes of a CMOS flow, with models.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — unit
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — unit
   processes and their typical conditions.[^txt-02]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 2 — process
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 2](<https://openlibrary.org/isbn/9780961672140>) — process
   integration: isolation, wells, contacts, multilevel metal and
   passivation.[^txt-03]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — deep-submicron
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — deep-submicron
   STI, CMP, tungsten plugs, silicides and RTP.[^txt-05]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — the
   fab-floor view of each tool class and the flow as a
   whole.[^txt-07]
 
 ### Deep dive
 
-* ITRS 2001, *Front End Processes* — starting-material, isolation,
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — starting-material, isolation,
   gate-stack and junction targets for the 130 nm generation.[^itrs-01]
-* ITRS 2001, *Process Integration, Devices, and Structures* — the
+* [ITRS 2001, *Process Integration, Devices, and Structures*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>) — the
   transistor and gate-oxide targets SKY130's 1.8 V and 5 V devices can be
   compared with.[^itrs-04]
-* ITRS 2001, *Interconnect* — aluminium and copper back ends and via and
+* [ITRS 2001, *Interconnect*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>) — aluminium and copper back ends and via and
   metal dimensions by node.[^itrs-02]
-* Nandakumar et al., IEDM 1998 — the STI flow of
+* [Nandakumar et al., IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — the STI flow of
   trench, corner rounding, fill and planarisation.[^rev-01]
-* Deal and Grove, *J. Appl. Phys.* 1965 — the kinetics behind every
+* [Deal and Grove, *J. Appl. Phys.* 1965](<https://doi.org/10.1063/1.1713945>) — the kinetics behind every
   thermal oxidation in the flow.[^deal-1965]
-* White, Adams and Bu, *IEEE Circuits and Devices* 2000 — a review of
+* [White, Adams and Bu, *IEEE Circuits and Devices* 2000](<https://doi.org/10.1109/101.857747>) — a review of
   scaled SONOS memory.[^pap-01]
-* Ramkumar et al. (Cypress), US 6,969,689 — ONO layers formed in one
+* [Ramkumar et al. (Cypress), US 6,969,689](<https://patents.google.com/patent/US6969689B1/en>) — ONO layers formed in one
   reaction chamber, with thickness and temperature ranges from several
   embodiments.[^pat-01]
-* Ramkumar, Prabhakar and Kapre (Cypress), *Semiconductor Digest*
-  2020 — SONOS integration cost and scaling from the 130 nm
+* [Ramkumar, Prabhakar and Kapre (Cypress), *Semiconductor Digest*
+  2020](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) — SONOS integration cost and scaling from the 130 nm
   generation.[^cyp-25]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — shallow-junction doping,
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — shallow-junction doping,
   extensions, halos and rapid thermal annealing.[^rev-05]
-* Hori, IEDM 1989 — the large-tilt-angle implanted drain
+* [Hori, IEDM 1989](<https://doi.org/10.1109/IEDM.1989.74169>) — the large-tilt-angle implanted drain
   ({term}`LATID`), the
   construction read for SKY130's high-voltage tip.[^hori-1989-latid]
-* Stolk et al., *J. Appl. Phys.* 1997 — transient enhanced diffusion,
+* [Stolk et al., *J. Appl. Phys.* 1997](<https://doi.org/10.1063/1.364452>) — transient enhanced diffusion,
   the reason junction anneals are short.[^stolk-1997]
-* Fair (ed.), *Rapid Thermal Processing* — junction formation by rapid
+* [Fair (ed.), *Rapid Thermal Processing*](<https://doi.org/10.1016/b978-0-12-247690-7.50009-3>) — junction formation by rapid
   thermal annealing.[^txt-10]
-* Maex, *Mater. Sci. Eng. R* 1993 — titanium and cobalt silicide
+* [Maex, *Mater. Sci. Eng. R* 1993](<https://doi.org/10.1016/0927-796X(93)90001-J>) — titanium and cobalt silicide
   formation.[^maex-1993]
-* Zhang and Östling, *Crit. Rev. Solid State Mater. Sci.* 2003 — metal
+* [Zhang and Östling, *Crit. Rev. Solid State Mater. Sci.* 2003](<https://doi.org/10.1080/10408430390802431>) — metal
   silicides in CMOS from titanium to nickel.[^rev-04]
-* Broadbent and Ramiller, *J. Electrochem. Soc.* 1984 — the WF₆
+* [Broadbent and Ramiller, *J. Electrochem. Soc.* 1984](<https://doi.org/10.1149/1.2115864>) — the WF₆
   chemistry behind tungsten plug fill.[^rev-03]
-* Rossnagel and Hopwood, *Appl. Phys. Lett.* 1993 — ionised sputter
+* [Rossnagel and Hopwood, *Appl. Phys. Lett.* 1993](<https://doi.org/10.1063/1.110176>) — ionised sputter
   deposition for contact and via liners.[^rossnagel-1993]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry chemistry
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry chemistry
   and mechanisms of oxide and tungsten CMP.[^rev-02]
-* Kar-Roy et al., IITC 1999 — PECVD-nitride MiM capacitors in
+* [Kar-Roy et al., IITC 1999](<https://doi.org/10.1109/IITC.1999.787134>) — PECVD-nitride MiM capacitors in
   an aluminium back end.[^kar-roy-1999]
-* Edwards (Efabless), WOSET 2020 — the open PDK, its process stack and
+* [Edwards (Efabless), WOSET 2020](<https://woset-workshop.github.io/PDFs/2020/a03.pdf>) — the open PDK, its process stack and
   its options, by the author of open_pdks.[^ann-15]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
