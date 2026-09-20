@@ -251,3 +251,119 @@ problems after the edit. `-W` build clean.
 ## Remaining
 
 None. All five steps of the W0d task are done.
+
+## Independent review response (2026-09-20)
+
+Review at `tmp/reviews/rd-generators.md` (not committed), verdict "approve
+with fixes": 1 High, 6 Medium, 8 Low. Fixed all High/Medium and all Lows
+except three recorded below. Four commits, in this order:
+
+1. `gen_steps.py`: M3, M4, L1, L2, L5, L6.
+2. `gen_index_links.py`: H1, L3, plus M1/M2 (legend wording in the same
+   two files the H1 regeneration touches).
+3. `gen_papers.py`: M5.
+4. `gen_filings.py`: M6.
+
+**H1 (high).** The generic block heading was always an H3
+(`heading_for()`); on 14 pages (10 category pages, the overview, and the
+machines/materials/masks *index* pages) the preceding H2 is unrelated, so
+the H3 became a false child of it. `heading_level()` now downgrades to H2
+there, kept as H3 wherever the preceding H2 already starts "Related" (step
+pages; machine/material/mask *class* pages' "Related pages"). Exactly 14
+pages changed on regeneration, matching the review's own trial. No
+checker template change needed (re-verified `check_masks.py` still
+rejects the H3 under any other H2).
+
+**M1/M2 (medium).** `docs/machines/index.md` and `docs/materials/index.md`
+each had a legend sentence describing the Steps column as giving "step
+numbers" — stale since B9 switched those cells to codes. Wording only,
+fixed by hand; no fact changed.
+
+**M3/M4 (medium).** `machine_class_map()` was using `setdefault`
+(first-row-wins) and copying only the role text of an ambiguous label
+("Vertical batch furnace" appears on 3 rows, distinguished only by a
+qualifier written outside the `{ref}` role). Fixed by (a) collecting every
+row's main claim per step and joining with "or" when there is more than
+one (25 steps, reproducing the machines index's own stated count exactly:
+"25 steps in two, where a page offers two tool classes as equal
+options"), and (b) folding the qualifier into the link text when a label
+is shared by more than one row. Both required first excluding supporting
+equipment (the resist track, the post-CMP cleaner, and five of the six
+metrology classes — full list in the code comment) from "main" claims,
+matching the machines index's own accounting exactly. **Correction made
+during this fix:** an initial version also excluded "Parametric tester
+and prober" as a sixth metrology row, which dropped step 171's only main
+claim (it names step 171, electrical test, as its own process step, not
+only as a check on other steps) — caught by re-running the "0 steps
+without a machine class" check before committing, and fixed by keeping
+that one row in.
+
+**L1/L2 (low, fixed).** `check_modules_match_overview()` now fails loudly
+if `MODULES` drifts from the overview's own module table (previously
+unchecked). En-dash step ranges are now expanded (`expand_step_refs()`)
+instead of reading only a range's two endpoints — moot for the current,
+now-narrower row set (excluding the metrology rows that were the only
+ones using ranges removes every range from consideration), but real
+should a future row use one.
+
+**L3 (low, fixed).** On a page with only one of patents/papers/filings,
+the dataset's own bold lead-in ("**Related patents.**") repeated the
+heading immediately above it. `drop_redundant_label()` removes it (or
+just its bold prefix, for the >THRESHOLD count sentence) when there is
+only one dataset.
+
+**L5 (low, fixed).** Added one lead-in sentence on the step index
+explaining the two-table-per-module layout and what "—" and "or" mean.
+
+**L6 (low, fixed).** Split `machine_class_map()`/`mask_map()` into a
+thin file-reading wrapper plus a `_..._from_text()` parsing core, and
+added `gen_steps.py --selftest` exercising both against small synthetic
+tables (role markers, supporting-equipment exclusion, label
+disambiguation, multiple main claims, range expansion, "no claim at all"
+→ absent from the dict, which the caller renders as "—").
+
+**M5 (medium).** `(papers-scope)=` had moved onto a collapsed
+`{dropdown}`'s `:name:`; a `<details>` element is not auto-opened by
+browsers on fragment navigation, so the ~40 "(see Scope)" links plus
+`designed-on-sky130.md`'s pointed at hidden text. Fixed by keeping
+`## Scope` a plain visible heading — unlike patents/filings there was no
+separate "method and counts" remainder to still collapse on the papers
+index (its counts already have their own visible section), so nothing
+is collapsed here now.
+
+**M6 (medium).** The filings index was the only one of the three hiding
+its counts inside the closing dropdown. Moved `## Counts` back to a
+visible section right after "Other views", matching patents and papers;
+the dropdown keeps only the EDGAR access note and Known gaps.
+
+**Verification.** All nine checkers, `gen_steps.py --check`/`--selftest`,
+`gen_index_links.py --check`/`--selftest`, and the three
+`gen_{papers,patents,filings}.py --check` pass with 0 problems after
+every commit. `-W` build clean. Also ran `tools/check_preserved.py`
+(copied in temporarily from the main checkout, since it is not yet on
+this branch's history; not committed here) with `--base 2fd1ff7c`
+(the last commit before this review-response work) over the whole
+worktree: with `--allow-added quotes,refs --allow-dropdown-edits`, 0
+pages had undeclared differences. The declared additions are exactly
+what this response intends: the literal quoted `"or"` in the new L5
+lead-in sentence, and the `{ref}` targets M3 restores for the 25 steps
+whose second, previously-suppressed machine-class option is now shown;
+the dropdown content changes are M5 (dropdown removed on the papers
+index) and M6 (counts moved out of the filings dropdown). Rendered and
+read the step index, a step page, `fom.md`, `cmp.md` and all three
+reference-index landing pages at desktop and 400 px after every commit.
+
+**Lows not changed, with reasons:**
+
+* **L4** (materials index Steps cells lost their numeric ordering cue
+  after B9). The review itself calls this "in-spec" and marks the fix
+  an "owner call" (render as `` {ref}`002 BOX <step-002>` `` or leave
+  as is) — a presentation-style decision beyond what the review asked
+  fixed outright, so left for the coordinator/owner. M2's legend fix
+  at least stops the page asserting the wrong convention.
+* **L7** (sidebar titles still wrap for the longer step names). The
+  review's own text says "No action needed unless the owner wants the
+  name truncated" — no code change made.
+* **L8** (main has advanced, fast-forward no longer possible). Marked
+  informational in the review ("the coordinator will need a rebase or
+  a merge commit"); nothing for this branch to do.
