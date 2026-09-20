@@ -1641,3 +1641,166 @@ has landed.
 **Never edited.** Their order (purpose → browse the views with counts → how to read an entry → legal
 caveat → a `{dropdown}` holding the present methodology text verbatim) and their clickable URLs are
 generator changes, in `gen_patents.py`, `gen_papers.py` and `gen_filings.py`. **W0d.**
+
+## 5. Checker contract
+
+Every checker in `tools/` is a **positional text parser**. It does not build a document tree; it splits
+on headings, on blank lines and on `| ` at the start of a line. That is why layout changes can break a
+check that seems unrelated to the text you edited. This section says, per checker, exactly what
+structure it depends on. It was written by reading the code, and the "verified" notes were produced by
+running the checker on a copy of the tree.
+
+### `tools/check_steps.py`
+
+* Tests only that each of the 13 strings of §2.9 occurs as `"\n" + heading + "\n"`. Exact characters,
+  alone on its line. Order is not checked; extra headings are free; **that is why new H3s on step pages
+  are safe**.
+* Reports pages still containing "This page is a stub."
+* Calls `gen_index_links.stale_pages_in("steps")`, so a hand-edited generated block fails here too.
+
+### `tools/check_refs.py`
+
+* Targets and Deep dive minimums: `docs/steps/NNN-*.md` 8; `docs/categories/*.md` (not `index.md`) 12;
+  **`docs/machines/*.md` and `docs/materials/*.md`, `index.md` included**, 12; `docs/masks/index.md` 12;
+  other `docs/masks/*.md` 8; `docs/overview/*.md` 12.
+* `deep_dive_count()` matches from `^### Deep dive\n` **to the next `^## ` or `^### ` or the end of the
+  file**, and counts lines matching `^\* `. Consequences:
+  * inserting any heading inside the Deep dive list truncates the count;
+  * a bullet turned into a table row, or indented into a sub-bullet, stops counting;
+  * two bullets merged into one lose a count.
+  **Never change the number of `* ` lines under `### Deep dive`.**
+* Every `[^label]` must have a definition and every definition a reference; no duplicates; every label
+  must be an inventory key of `docs/references/public-sources.md` (case-folded).
+* `^\[not-caret\]:` anywhere is an error ("reference-style link definitions present"), so never use the
+  `[text]: url` link style.
+* Pages containing "This page is a stub." or "This section is a stub." are skipped entirely.
+
+### `tools/check_machines.py`
+
+* H2 headings, by `re.findall(r"^## (.+)$")`, must equal the template list **in order**. H3s under
+  `At SkyWater` and under `References` likewise. H3s under the other H2s are unconstrained.
+* The page needs a `^(machine-…)=$` label line.
+* `index_rows()` scans **every line of `docs/machines/index.md`** that starts with `| `, splits it on
+  `" | "`, and records `rows[label] = cells[3]` when `cells[0]` contains `<machine-…>` **and there are
+  exactly four cells**. The **last** matching line wins.
+  *Verified:* a four-column navigation table with a machine link in its first cell, placed **after** the
+  main table, silently replaces the checked row and the page checks fail (three problems on
+  `wet-bench.md`); placed before it, it is overwritten and passes. Give any new table a different shape.
+* The page's step run is `next(p for p in body.split("\n\n") if STEP_RE.search(p) and not
+  p.lstrip().startswith("* "))` inside `### SKY130 steps assigned to this class` — **the first
+  blank-line-separated block there that contains a step link and is not a bullet list**. A table block
+  starts with `| `, not `* `, so a table placed before the run *becomes* "the run".
+  *Verified:* dropdown + run first, table after → passes; table before the run → "steps: page only [],
+  index only ['step-039', …]".
+* Main, `*alternative:*` and `*also …:*` lists are compared as **sets** with the index cell, duplicates
+  are reported, and the `*also …:*` **marker wording must match the index's, character for character**.
+* Both `{ref}`CODE <step-NNN>`` and bare `{ref}`step-NNN`` are accepted.
+
+### `tools/check_materials.py`
+
+* Main table of `index.md` under `## Materials index`: lines starting `| ` (except `| Key |`) must split
+  into **exactly six** cells, the first being `` `key` `` and nothing else, and the sixth must start
+  with "all except" or with `{ref}`. Changing the column count or the key position is the **W0e**
+  change.
+* Class-page table under `## How to read the index` starts at the line `| Consumable class | Page |` and
+  needs three cells per row.
+* Per page: the `(material-…)=` label, the exact H2 list, the exact H3 lists under `At SkyWater` and
+  `References`, and an entry in the class-page table.
+* `Materials index rows covered:` must be followed immediately by `* ` bullets shaped
+  `` * `key` — name``; a continuation line must start with two spaces, and the first line that is
+  neither stops the list.
+* `paragraph_after(body, "Steps:")` matches `^Steps:[ \t]*\n[ \t]*\n(.+?)(\n[ \t]*\n|\Z)`: a line
+  reading **exactly** `Steps:`, one blank line, then the run as one block. Nothing may come between
+  them. *Verified:* wrapping both in a `{dropdown}` (fence, blank line, `Steps:`, blank line, run, blank
+  line, closing fence) passes.
+* The steps paragraph must link exactly the union of the owned rows' steps, in ascending order, without
+  duplicates, each link's text being the step's code taken from the title of its step page.
+* `check_summary()` takes the text before the first `\n## `, keeps **every** line starting with `|`,
+  drops the first two, and treats the rest as rows. A second table before the first H2 would be read as
+  more rows. The first row must be `What they do`, the last two `SkyWater evidence` and `SKY130 steps`,
+  and the last cell must read "N steps; see …" with N equal to the number of step links in the steps
+  paragraph. *Verified:* wrapping the summary table in `:::{table}` with a caption and `:widths:`
+  passes — directive lines do not start with `|`.
+
+### `tools/check_masks.py`
+
+* The index is read **by heading title**, and in each section by `table()`, which returns **the first
+  markdown table in that section's body** (it starts at the first `|` line and stops at the first
+  non-`|` line after that).
+  *Verified:* a navigation table inserted before `| Step | PDK mask (`masks.csv`) | …` inside
+  `## Mask steps in this reference` makes the checker report 76 problems across the 36 mask pages; the
+  same table under its own `## Find a mask` heading passes.
+* Sections it reads: `## Mask steps in this reference` (the six-column table),
+  `## Plates recorded for the MPW runs` (its **opening paragraph**, for the "Run Mask IDs" names),
+  `### Runs, reticle sets and plate IDs`, `### Plates by mask` (first table),
+  `### Mask types and plate labels` (its **first paragraph**, parsed sentence by sentence).
+* Per page: H2 list exact and ordered; H3s under `Drawn layers and derivation` and `References` exact;
+  `Plates and reticle sets` may have only `The mask-type record`; **every other H2 must have no H3** —
+  the `OPTIONAL_H3` extension is the **W0e** change that unblocks R-H3 on mask pages.
+* `## Steps that use this mask` must be immediately preceded by `(mask-<stem>-steps)=`.
+* Quick facts: the **first** table before the first H2; header exactly `| | CODE — name |`; rows exactly
+  `FACT_ROWS`, in order. Cells are compared with the index after footnote markers are stripped and
+  whitespace collapsed: `Plates recorded`, `Plate no.` and `Dies with shapes …` must match the index
+  cell **exactly**; the layer, drawn-layer and CD rows must contain, **in the index's order**, every
+  code span, quotation, `layer:datatype` pair, number and `N/A` of the index cell. `Polarity and tone`
+  must be non-empty; `Exposure class` must link a machine page; `Mask type …` must start with the
+  index's code or read the exact `NO_TYPE` sentence; the last row must read "N steps; see …" and link
+  `mask-<stem>-steps`.
+* The plate table under `Plates and reticle sets` has a header starting `| Run |` and one row per run,
+  MPW-1 to MPW-8 in order.
+* `In the public renders` must keep "not SkyWater's" and "renders of *drawn* data".
+* The words `custody`, `shipment`, `exp_ship` are forbidden anywhere on a mask page or the index.
+
+### `tools/check_inforce.py`
+
+* See §2.6 for what it forbids. Structurally:
+  * it flattens the page (all whitespace collapsed) before matching, so a number or a title split across
+    lines is still found, and **line numbers come from a character-to-line map**;
+  * "inside a collapsed block" is computed **by line**: `dropdown_lines()` tracks `:::{name}` and
+    ```` ```{name} ```` fences and their nesting, and treats the `{dropdown}` directive line itself as
+    inside (that is where the number legitimately sits);
+  * a footnote definition is its `[^label]:` line plus the following lines indented by **four spaces**;
+    a blank line only continues the definition when the next line is indented. Re-wrapping a definition
+    with a different indent moves it out of its own exemption;
+  * the inventory is split into entries by blank lines, each starting `**KEY**`;
+  * the status-flag sentence is compared with the dataset **character for character**, including the
+    date;
+  * a `{dropdown}` with a blank body is an error;
+  * `docs/plans/` and `docs/references/patents/` are skipped, which is why this guide may quote a
+    dropdown title.
+
+### `tools/check_links.py`
+
+* Scans **only** the inventory entries and the **footnote definitions** of pages under `docs/`. It does
+  not scan the generated index directories, and it does not see a URL written inline in the body.
+* That is the whole reason for §2.11: an inline link must copy a URL that already exists in a footnote
+  definition on the same page, or it escapes link-rot checking. The `check_refs.py` invariant that
+  enforces it is the **W0c** change.
+
+### `tools/gen_index_links.py --check`
+
+* Finds its splice point with `"\n## References\n"` and **refuses a page that has it twice**.
+* Rebuilds the block and compares it byte for byte with what is on the page; any difference is "stale".
+* `stale_pages_in()` is called by `check_steps`, `check_machines`, `check_materials` and `check_masks`,
+  so a hand edit to the block fails four checkers at once.
+
+### `tools/gen_steps.py`
+
+* Rewrites `docs/steps/index.md` **in full** and never overwrites an existing step page.
+* **It is stale.** Its `write_index()` emits a two-sentence intro and no `[^steps-sheet]` footnote,
+  while the committed page carries a longer intro, the marker and the definition. Running it today
+  **silently deletes that citation** — `check_refs.py` does not target `steps/index.md`, so nothing
+  would fail. Do not run it before W0d.
+
+### `tools/check_papers.py`, `check_patents.py`, `check_filings.py`
+
+Dataset checkers (`data/*.yaml`). They constrain no prose on a hand-edited page. Run them anyway: they
+are cheap and they catch an accidental edit to a generated page.
+
+### `tools/check_preserved.py` (W0b, being written on another branch)
+
+The before/after preservation check every hand-edit branch must run. Per
+`docs/plans/readability-plan.md` W0b it compares a page before and after an edit and requires the
+multisets of **footnote markers, numbers and quoted strings** to be identical, apart from declared
+additions (such as step names and step numbers added by a new table). Use it as §7 step 4 describes.
+Until it exists, do the same comparison by hand with the snippet in §7.
