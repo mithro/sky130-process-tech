@@ -202,7 +202,7 @@ processor as the tool or one of two options, then the steps where it
 runs a clean (identical to the {ref}`machines index <machines-index>`
 table):
 
-{ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`, {ref}`SACETCH <step-095>`; *also for a clean:* {ref}`012 <step-012>`, {ref}`033 <step-033>`, {ref}`108 <step-108>`, {ref}`111 <step-111>`, {ref}`116 <step-116>`, {ref}`119 <step-119>`, {ref}`122 <step-122>`, {ref}`127 <step-127>`, {ref}`130 <step-130>`, {ref}`133 <step-133>`, {ref}`142 <step-142>`, {ref}`145 <step-145>`, {ref}`148 <step-148>`, {ref}`157 <step-157>`
+{ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`, {ref}`SACETCH <step-095>`; *also for a clean:* {ref}`CMPNIT <step-012>`, {ref}`PWDEIS <step-033>`, {ref}`CTME <step-108>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`VIME <step-119>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`VIM2E <step-130>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`VIM3E <step-145>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
 
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:

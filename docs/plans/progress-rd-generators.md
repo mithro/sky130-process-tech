@@ -6,6 +6,29 @@ report-C (C8, C9 rule 1, C11). Working through the five numbered steps
 of the task brief as separate commits, running the full check suite and
 looking at a rendered sample after each.
 
+## Checker changes (summary; see each step below for detail)
+
+Only one checker needed a semantic change across all five steps:
+
+* **`tools/check_masks.py`** (step 3): `OPTIONAL_H3` gained
+  `"Related pages": ["Related patents, papers and filings"]`. Reason:
+  it forbids *any* H3 under an H2 not listed there, for every
+  `docs/masks/*.md` page except `index.md`; `gen_index_links.py`'s new
+  heading (report-A F13) lands under "Related pages" on the 36
+  per-mask pages, which was not previously allowed to have H3s at all.
+
+Every other checker was surveyed and found not to need a change:
+`check_steps.py` has no H3 restriction at all; `check_machines.py` and
+`check_materials.py` restrict H3s only under "At SkyWater"/"References"
+(not "Related pages", where the same new heading lands on those page
+types); there is no `check_categories.py`; and `check_machines.py` /
+`check_materials.py`'s step-list comparisons (step 5) already accept a
+`{ref}` step link with or without custom link text, so changing the
+link text alone from a bare number to the step's code required no
+checker change. `check_inforce.py` was re-run after every step that
+touched a dropdown (3 and 4) and after step 5's link-text-only change;
+0 problems throughout.
+
 ## Step 1 — `gen_steps.py` sync + `--check` (done)
 
 `write_index()` was stale: it dropped the committed intro paragraph
@@ -201,6 +224,30 @@ No checker change was needed for this step either.
   clean. Rendered and read all three landing pages
   (`tmp/shots/rd4-{patents,papers,filings}-*.png`, not committed).
 
+## Step 5 — B9 step-link text script (done)
+
+Ran a one-off script (not committed; same treatment as the step-2
+Phase-cell edit): built a step-number -> code map from every
+`docs/steps/NNN-*.md` page's own `# Step NNN — CODE: Name` title, then
+replaced every `{ref}`NNN <step-NNN>`` (bare-number link text) with
+`{ref}`CODE <step-NNN>`` in the 11 files `grep -rlE
+'\{ref\}\`[0-9]{3} <step-' docs/` found — machines/index.md,
+materials/index.md, and nine machine class pages (mostly the
+"SKY130 steps assigned to this class" paragraphs). Exactly 1,975
+replacements, matching the brief's count. None of the 11 files has a
+table with a separate plain step-number column next to these links —
+all occurrences are either prose paragraphs or a single "Steps" table
+cell — so the "keep both" case did not arise; confirmed by inspecting
+every match's context before running.
+
+`check_machines.py`/`check_materials.py` (the checkers whose "Steps"
+comparisons touch these exact lines) both already accept `{ref}` with
+or without custom link text (`STEP_RE` matches either form and reads
+only the `step-NNN` label), so no checker change was needed — all
+nine checkers, `gen_steps.py --check`, `gen_index_links.py --check`
+and the three `gen_*.py --check` (patents/papers/filings) pass with 0
+problems after the edit. `-W` build clean.
+
 ## Remaining
 
-5. B9 step-link text script (11 files, 1,975 links).
+None. All five steps of the W0d task are done.
