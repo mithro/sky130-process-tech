@@ -204,77 +204,77 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * Preston, *J. Soc. Glass Technol.* 1927 — the removal-rate law (no
   online copy is known).[^preston-1927]
-* Cook, *J. Non-Cryst. Solids* 1990 — the chemistry of oxide
+* [Cook, *J. Non-Cryst. Solids* 1990](<https://doi.org/10.1016/0022-3093(90)90200-6>) — the chemistry of oxide
   polishing.[^cook-1990]
-* Kaufman et al. (IBM), *JES* 1991 — tungsten CMP by oxidation and
+* [Kaufman et al. (IBM), *JES* 1991](<https://doi.org/10.1149/1.2085434>) — tungsten CMP by oxidation and
   abrasion.[^kaufman-1991]
-* Beyer et al. (IBM), US 4,944,836 — the foundational
+* [Beyer et al. (IBM), US 4,944,836](<https://patents.google.com/patent/US4944836A/en>) — the foundational
   metal/insulator CMP patent.[^pat-cmp-ibm-1990]
-* SkyWater PDK, *Criteria & Assumptions* — dielectric
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — dielectric
   thicknesses.[^pdk-03]
-* Chip History Center, *The Mirra CMP System* — the Mirra in
+* [Chip History Center, *The Mirra CMP System*](<https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>) — the Mirra in
   historical context (its integrated-cleaning claim is qualified
   above).[^chiphistory-mirra]
-* Applied Materials, 1997 Annual Report — entry into CMP with the
+* [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — entry into CMP with the
   Mirra.[^amat-1997]
-* EBARA Precision Machinery Europe, *CMP Tools* —
+* [EBARA Precision Machinery Europe, *CMP Tools*](<https://www.ebara-pm.eu/systems/cmp-tools/>) —
   F-REX200M2.[^ebara-frex]
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing* — abrasives, pads and
+* [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>) — abrasives, pads and
   conditioning.[^wiki-cmp]
 * Wikipedia, *Shallow trench isolation*.[^wiki-sti]
 * Wikipedia, *Colloidal silica*.[^wiki-colloidal-silica]
 * Wikipedia, *Cerium(IV) oxide*.[^wiki-ceria]
 * Wikipedia, *Polyurethane*.[^wiki-polyurethane]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 11
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 11
   ("Back-End Technology").[^txt-01]
-* Wolf, *Silicon Processing for the VLSI Era*, vol. 4 — ch. 8
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ch. 8
   ("Chemical-Mechanical Polishing").[^txt-05]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* —
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) —
   ch. 18.[^txt-07]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 12.[^txt-08]
 
 ### Deep dive
 
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
-  of Microelectronic Materials* — the standard monograph: pads,
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
+  of Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>) — the standard monograph: pads,
   slurries, pattern effects and consumables.[^steigerwald-1997]
-* Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004 — a long review
+* [Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004](<https://doi.org/10.1016/j.mser.2004.06.002>) — a long review
   of CMP for microelectronics, including Preston deviations and slurry
   consumption.[^zantye-2004]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — oxide, tungsten
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — oxide, tungsten
   and copper slurry chemistry and mechanisms.[^rev-02]
-* Luo and Dornfeld, *IEEE TSM* 2001 — the abrasive-contact model of
+* [Luo and Dornfeld, *IEEE TSM* 2001](<https://doi.org/10.1109/66.920723>) — the abrasive-contact model of
   material removal.[^luo-2001]
-* Runnels and Eyman, *JES* 1994 — a tribology (fluid-film) analysis of
+* [Runnels and Eyman, *JES* 1994](<https://doi.org/10.1149/1.2054985>) — a tribology (fluid-film) analysis of
   the wafer–pad contact.[^runnels-1994]
-* Stine et al. (MIT), *IEEE TSM* 1998 — the pattern-density model and
+* [Stine et al. (MIT), *IEEE TSM* 1998](<https://doi.org/10.1109/66.661292>) — the pattern-density model and
   the test-mask method for characterising planarisation
   length.[^stine-1998]
-* Ouma et al., *IEEE TSM* 2002 — characterisation and modelling of
+* [Ouma et al., *IEEE TSM* 2002](<https://doi.org/10.1109/66.999598>) — characterisation and modelling of
   oxide CMP with planarisation length and density
   concepts.[^ouma-2002]
-* Boyd and Ellul, *JES* 1997 — a one-step STI planarisation process by
+* [Boyd and Ellul, *JES* 1997](<https://doi.org/10.1149/1.1837687>) — a one-step STI planarisation process by
   CMP.[^boyd-1997]
-* Nandakumar et al. (TI), IEDM 1998 — STI integration including gap
+* [Nandakumar et al. (TI), IEDM 1998](<https://doi.org/10.1109/IEDM.1998.746297>) — STI integration including gap
   fill and planarisation.[^rev-01]
-* Stein, Hetherington and Cecchi (Sandia), *JES* 1999 — kinetics of
+* [Stein, Hetherington and Cecchi (Sandia), *JES* 1999](<https://doi.org/10.1149/1.1391617>) — kinetics of
   tungsten CMP: the roles of alumina abrasive and
   oxidiser.[^stein-1999]
-* Lustig, Saenger and Tong (IBM), US 5,433,651 — in-situ optical
+* [Lustig, Saenger and Tong (IBM), US 5,433,651](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5433651>) — in-situ optical
   endpoint detection through a window in the platen.[^pat-cmp-endpoint-ibm]
-* Chow et al. (IBM), US 4,789,648 — coplanar multi-level
+* [Chow et al. (IBM), US 4,789,648](<https://patents.google.com/patent/US4789648A/en>) — coplanar multi-level
   metal/insulator films by polishing, with lines and stud vias formed
   together.[^pat-cmp-ibm-1988]
-* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
-  Materials* — chapters on oxide, tungsten and STI CMP, pads and
+* [Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials*](<https://doi.org/10.1007/978-3-662-06234-0>) — chapters on oxide, tungsten and STI CMP, pads and
   slurries.[^oliver-2004]
-* Li (ed.), *Microelectronic Applications of Chemical Mechanical
-  Planarization* — including a chapter on STI CMP.[^li-2007]
-* MIT OpenCourseWare 6.152J — lecture notes on the deposition and etch
+* [Li (ed.), *Microelectronic Applications of Chemical Mechanical
+  Planarization*](<https://doi.org/10.1002/9780470180907>) — including a chapter on STI CMP.[^li-2007]
+* [MIT OpenCourseWare 6.152J](<https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>) — lecture notes on the deposition and etch
   steps that CMP planarises (no dedicated CMP lecture).[^ocw-6152]
 
 <!-- footnotes -->

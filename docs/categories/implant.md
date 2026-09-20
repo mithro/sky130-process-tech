@@ -256,28 +256,28 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* Lindhard, Scharff and Schiøtt, *Mat. Fys. Medd.* 1963 — the LSS
+* [Lindhard, Scharff and Schiøtt, *Mat. Fys. Medd.* 1963](<https://gymarkiv.sdu.dk/MFM/kdvs/mfm%2030-39/mfm-33-14.pdf>) — the LSS
   range theory.[^lindhard-1963]
-* Gibbons, *Proc. IEEE* 1968 — range distributions in
+* [Gibbons, *Proc. IEEE* 1968](<https://doi.org/10.1109/PROC.1968.6273>) — range distributions in
   semiconductors.[^gibbons-1968]
-* Gibbons, *Proc. IEEE* 1972 — damage production and
+* [Gibbons, *Proc. IEEE* 1972](<https://doi.org/10.1109/PROC.1972.8854>) — damage production and
   annealing.[^gibbons-1972]
-* Ziegler, Ziegler and Biersack, *NIM B* 2010 — the SRIM
+* [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — the SRIM
   code.[^ziegler-2010]
 * Ziegler, *SRIM* software and documentation.[^srim]
-* ITRS 2001, *Front End Processes* — Table 51, doping technology
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51, doping technology
   requirements, retrograde-well and extension notes.[^itrs-01]
-* Axcelis, *GSD Ovation* product page — high-current and high-energy
+* [Axcelis, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — high-current and high-energy
   batch implanter classes and LINAC energies.[^axcelis-gsd-page]
-* Axcelis, *Our History* — dates of the Nova, Eaton and Axcelis
+* [Axcelis, *Our History*](<https://www.axcelis.com/about/our-history/>) — dates of the Nova, Eaton and Axcelis
   high-current and medium-current implanters.[^axcelis-history]
 * Legacy Semi, Varian VIISta HC listing.[^semimarket-viista]
-* Shockley, US 2,787,564 — the original patent on forming devices by
+* [Shockley, US 2,787,564](<https://patents.google.com/patent/US2787564A/en>) — the original patent on forming devices by
   ion bombardment.[^pat-shockley]
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — energies, ranges, {term}`channelling`,
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, ranges, {term}`channelling`,
   amorphisation and implanter classes.[^wiki-implant]
 * Wikipedia, *Stopping and Range of Ions in Matter*.[^wiki-srim]
 * Wikipedia, *Channelling (physics)*.[^wiki-channel]
@@ -288,63 +288,63 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 * Wikipedia, *Arsine*.[^wiki-ash3]
 * Wikipedia, *Axcelis Technologies*.[^wiki-axcelis]
 * Wikipedia, *Varian Semiconductor*.[^wiki-varian]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 8 ("Ion
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 8 ("Ion
   Implantation").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 9 ("Ion Implantation for VLSI").[^txt-02]
-* Sze and Lee, *Semiconductor Devices: Physics and Technology* —
+* [Sze and Lee, *Semiconductor Devices: Physics and Technology*](<https://www.wiley.com/en-us/Semiconductor+Devices%3A+Physics+and+Technology%2C+3rd+Edition-p-9780470537947>) —
   ch. 13.[^sze-2012]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   ch. 5.[^campbell-2013]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* —
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) —
   ch. 17.[^txt-07]
 
 ### Deep dive
 
-* Eaglesham, Stolk, Gossmann and Poate, *APL* 1994 — the "+1"
+* [Eaglesham, Stolk, Gossmann and Poate, *APL* 1994](<https://doi.org/10.1063/1.112725>) — the "+1"
   interstitials as the source of transient enhanced
   diffusion.[^eaglesham-1994]
-* Stolk et al., *JAP* 1997 — the physical mechanisms of transient
+* [Stolk et al., *JAP* 1997](<https://doi.org/10.1063/1.364452>) — the physical mechanisms of transient
   enhanced diffusion.[^stolk-1997]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — review of shallow
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — review of shallow
   junction doping: low-energy implantation, TED, extension and halo
   formation.[^rev-05]
-* Current, *Mater. Sci. Semicond. Process.* 2017 — implantation for
+* [Current, *Mater. Sci. Semicond. Process.* 2017](<https://doi.org/10.1016/j.mssp.2016.10.045>) — implantation for
   advanced silicon devices, past to future.[^current-2017]
-* Current, *JVST A* 1996 — production implanters from a vacuum
+* [Current, *JVST A* 1996](<https://doi.org/10.1116/1.580279>) — production implanters from a vacuum
   perspective: sources, beam lines, end stations.[^current-1996]
-* Smith, Rosencwaig and Willenborg, *APL* 1985 — the thermal-wave
+* [Smith, Rosencwaig and Willenborg, *APL* 1985](<https://doi.org/10.1063/1.96079>) — the thermal-wave
   implant monitor.[^smith-1985]
-* Dennard et al., *IEEE JSSC* 1974 — the ion-implanted MOSFET scaling
+* [Dennard et al., *IEEE JSSC* 1974](<https://doi.org/10.1109/JSSC.1974.1050511>) — the ion-implanted MOSFET scaling
   paper.[^dennard-1974]
-* MacPherson, *APL* 1971 — the original threshold-adjust-by-implant
+* [MacPherson, *APL* 1971](<https://doi.org/10.1063/1.1653513>) — the original threshold-adjust-by-implant
   paper.[^macpherson-1971]
-* Tsukamoto et al., *NIM B* 1991 — review of high-energy implantation
+* [Tsukamoto et al., *NIM B* 1991](<https://doi.org/10.1016/0168-583X(91)95283-J>) — review of high-energy implantation
   for {term}`retrograde wells <retrograde well>` and buried layers.[^tsukamoto-1991]
-* Morris and Rubin, IIT 2000 — batch high-energy against serial
+* [Morris and Rubin, IIT 2000](<https://doi.org/10.1109/IIT.2000.924093>) — batch high-energy against serial
   medium-current implanters for multiple modulated well implants, in
   device performance and cost.[^morris-2000]
-* Rubin, Morris and Jasper, IIT 2002 — process-control issues for
+* [Rubin, Morris and Jasper, IIT 2002](<https://doi.org/10.1109/IIT.2002.1257927>) — process-control issues for
   well implants.[^rubin-2002]
-* Hook et al. (IBM), *IEEE TED* 2003 — lateral straggle and the mask
+* [Hook et al. (IBM), *IEEE TED* 2003](<https://doi.org/10.1109/TED.2003.815371>) — lateral straggle and the mask
   proximity effect.[^hook-2003]
-* Horsky, IIT 1998 — resist outgassing in high-energy and high-current
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing in high-energy and high-current
   implantation.[^horsky-1998]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation and its production impact.[^lee-1996]
-* Breitwisch, Lam and Slinkman (IBM), US 6,667,205 — retrograde N-well
+* [Breitwisch, Lam and Slinkman (IBM), US 6,667,205](<https://patents.google.com/patent/US6667205B2/en>) — retrograde N-well
   and P-well energies and doses.[^pat-well-ibm]
-* Oh (Hynix), US 6,806,133 — a triple-well recipe with MeV phosphorus
+* [Oh (Hynix), US 6,806,133](<https://patents.google.com/patent/US6806133B2/en>) — a triple-well recipe with MeV phosphorus
   energies and doses.[^pat-dnw-hynix]
-* Borland (Genus), US 5,821,589 — the BILLI buried-layer approach to
+* [Borland (Genus), US 5,821,589](<https://patents.google.com/patent/US5821589A/en>) — the BILLI buried-layer approach to
   latch-up suppression.[^pat-billi-genus]
-* Yang (UMC), US 5,393,679 — doubly charged phosphorus at 380–400 keV
+* [Yang (UMC), US 5,393,679](<https://patents.google.com/patent/US5393679A/en>) — doubly charged phosphorus at 380–400 keV
   for a retrograde-process punch-through implant.[^pat-umc-dc]
-* Ryssel and Ruge, *Ion Implantation* — the classic monograph on
+* [Ryssel and Ruge, *Ion Implantation*](<https://openlibrary.org/isbn/9780471103110>) — the classic monograph on
   range theory, damage, annealing and equipment.[^ryssel-1986]
-* Hössinger, PhD thesis (TU Wien, 2000) — Monte Carlo simulation of
+* [Hössinger, PhD thesis (TU Wien, 2000)](<https://www.iue.tuwien.ac.at/phd/hoessinger/>) — Monte Carlo simulation of
   implantation for ULSI technology.[^hoessinger-2000]
-* MIT OpenCourseWare 6.774 — lecture notes on implantation, damage
+* [MIT OpenCourseWare 6.774](<https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/>) — lecture notes on implantation, damage
   and TED.[^ocw-6774]
 
 <!-- footnotes -->

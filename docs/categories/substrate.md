@@ -176,78 +176,78 @@ The substrate category has no process tool in the fab itself; the
 
 ### Cross-check
 
-* SEMI M1 — the specification that defines every parameter of a
+* [SEMI M1](<https://store-us.semi.org/products/m00100-semi-m1-specification-for-polished-single-crystal-silicon-wafers>) — the specification that defines every parameter of a
   polished prime wafer.[^semi-m1]
-* SEMI M8 — the looser specification for polished test
+* [SEMI M8](<https://store-us.semi.org/products/m00800-semi-m8-specification-for-polished-monocrystalline-silicon-test-wafers>) — the looser specification for polished test
   wafers.[^semi-m8]
-* SEMI M62 — the specification for epitaxial wafers.[^semi-m62]
-* ITRS 2001, *Front End Processes* — Table 49a, starting-material
+* [SEMI M62](<https://store-us.semi.org/products/m06200-semi-m62-specification-for-silicon-epitaxial-wafers>) — the specification for epitaxial wafers.[^semi-m62]
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 49a, starting-material
   targets node by node, and the scanner field-size note.[^itrs-01]
-* SkyWater PDK documentation — the layer set and 200 mm wafer
+* [SkyWater PDK documentation](<https://skywater-pdk.readthedocs.io/en/main/>) — the layer set and 200 mm wafer
   statement from which the substrate type is inferred.[^pdk-01]
 
 ### High-level understanding
 
-* Wikipedia, *Wafer (electronics)* — diameters, thickness, notch,
+* [Wikipedia, *Wafer (electronics)*](<https://en.wikipedia.org/wiki/Wafer_(electronics)>) — diameters, thickness, notch,
   orientation and doping ranges.[^wiki-wafer]
 * Wikipedia, *Czochralski method*.[^wiki-cz]
-* Wikipedia, *Silicon* — the melting point.[^wiki-si]
+* [Wikipedia, *Silicon*](<https://en.wikipedia.org/wiki/Silicon>) — the melting point.[^wiki-si]
 * Wikipedia, *Float-zone silicon*.[^wiki-fz]
 * Wikipedia, *Monocrystalline silicon*.[^wiki-monosi]
 * Wikipedia, *Miller index*.[^wiki-miller]
 * Wikipedia, *Epitaxy*.[^wiki-epitaxy]
 * Wikipedia, *Latch-up*.[^wiki-latchup]
-* Wikipedia, *SkyWater Technology* — fab history and 200 mm
+* [Wikipedia, *SkyWater Technology*](<https://en.wikipedia.org/wiki/SkyWater_Technology>) — fab history and 200 mm
   capacity.[^wiki-skywater]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 3
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 3
   ("Crystal Growth, Wafer Fabrication and Basic Properties of Silicon
   Wafers") and ch. 4 ("Semiconductor Manufacturing — Clean Rooms, Wafer
   Cleaning and Gettering").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 1 ("Silicon: Single Crystal Growth and Wafer Preparation") and
   ch. 5 ("Silicon Epitaxial Growth").[^txt-02]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* —
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) —
   ch. 4.[^txt-07]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 4.[^txt-08]
 
 ### Deep dive
 
-* Zulehner, *J. Cryst. Growth* 1983 — a wafer-maker's review of
+* [Zulehner, *J. Cryst. Growth* 1983](<https://doi.org/10.1016/0022-0248(83)90051-9>) — a wafer-maker's review of
   Czochralski silicon growth: pulling, oxygen and carbon incorporation,
   dopant segregation.[^zulehner-1983]
-* Dash, *JAP* 1959 — the "Dash neck" technique that gives
+* [Dash, *JAP* 1959](<https://doi.org/10.1063/1.1702390>) — the "Dash neck" technique that gives
   dislocation-free CZ crystals.[^dash-1959]
-* Shimura, *Semiconductor Silicon Crystal Technology* — the standard
+* [Shimura, *Semiconductor Silicon Crystal Technology*](<https://openlibrary.org/isbn/9780126400458>) — the standard
   monograph on crystal growth, wafer preparation, oxygen and defect
   characterisation.[^shimura-1989]
-* Voronkov, *J. Cryst. Growth* 1982 — the v/G theory of vacancy- versus
+* [Voronkov, *J. Cryst. Growth* 1982](<https://doi.org/10.1016/0022-0248(82)90386-4>) — the v/G theory of vacancy- versus
   interstitial-rich growth that governs grown-in defects.[^voronkov-1982]
-* Falster and Voronkov, *Mater. Sci. Eng. B* 2000 — engineering of
+* [Falster and Voronkov, *Mater. Sci. Eng. B* 2000](<https://doi.org/10.1016/S0921-5107(99)00439-0>) — engineering of
   intrinsic point defects in crystals and wafers, the basis of
   "perfect silicon" and controlled precipitation.[^falster-2000]
-* Ryuta et al., *JJAP* 1990 — the discovery of crystal-originated pits
+* [Ryuta et al., *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.L1947>) — the discovery of crystal-originated pits
   (COPs) revealed by {term}`SC-1` cleaning.[^ryuta-1990]
-* Borghesi et al., *JAP* 1995 — a long review of oxygen precipitation in
+* [Borghesi et al., *JAP* 1995](<https://doi.org/10.1063/1.359479>) — a long review of oxygen precipitation in
   silicon.[^borghesi-1995]
-* Myers, Seibt and Schröter, *JAP* 2000 — review of the mechanisms of
+* [Myers, Seibt and Schröter, *JAP* 2000](<https://doi.org/10.1063/1.1289273>) — review of the mechanisms of
   transition-metal gettering.[^myers-2000]
-* Kang and Schroder, *JAP* 1989 — phosphorus-diffusion, argon-implant
+* [Kang and Schroder, *JAP* 1989](<https://doi.org/10.1063/1.342714>) — phosphorus-diffusion, argon-implant
   and nickel-film gettering experiments (oxidation does not getter), and
   a segregation model.[^kang-1989]
-* Falster et al. (MEMC), US 5,994,761 — the "magic denuded zone"
+* [Falster et al. (MEMC), US 5,994,761](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5994761>) — the "magic denuded zone"
   rapid-thermal treatment that sets precipitation behaviour without an
   oxygen out-diffusion anneal.[^pat-mdz-memc]
-* Srinivasan, *JES* 1980 — autodoping during silicon epitaxy, the
+* [Srinivasan, *JES* 1980](<https://doi.org/10.1149/1.2129895>) — autodoping during silicon epitaxy, the
   main process problem of p/p⁺ epi wafers.[^srinivasan-1980]
-* Troutman, *Latchup in CMOS Technology* — the monograph on the
+* [Troutman, *Latchup in CMOS Technology*](<https://doi.org/10.1007/978-1-4757-1887-4>) — the monograph on the
   parasitic thyristor and the substrate choices that tame
   it.[^troutman-1986]
-* Bean, *IEEE TED* 1978 — crystal-plane behaviour of silicon in
+* [Bean, *IEEE TED* 1978](<https://doi.org/10.1109/T-ED.1978.19250>) — crystal-plane behaviour of silicon in
   anisotropic etching.[^bean-1978]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — ch. 1–3 on silicon materials.[^txt-09]
-* MIT OpenCourseWare 6.774 — lecture notes on crystal growth, point
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — ch. 1–3 on silicon materials.[^txt-09]
+* [MIT OpenCourseWare 6.774](<https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/>) — lecture notes on crystal growth, point
   defects and gettering.[^ocw-6774]
 
 <!-- footnotes -->

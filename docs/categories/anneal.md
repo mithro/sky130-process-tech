@@ -201,89 +201,89 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* Roozeboom and Parekh, *JVST B* 1990 — RTP systems and their ramp
+* [Roozeboom and Parekh, *JVST B* 1990](<https://doi.org/10.1116/1.584902>) — RTP systems and their ramp
   rates and temperature-control trade-offs.[^roozeboom-1990]
-* Maex, *Mater. Sci. Eng. R* 1993 — TiSi₂ and CoSi₂ formation,
+* [Maex, *Mater. Sci. Eng. R* 1993](<https://doi.org/10.1016/0927-796X(93)90001-J>) — TiSi₂ and CoSi₂ formation,
   silicon consumption and the narrow-line effect.[^maex-1993]
 * Osburn, "Silicides", in Fair (ed.), *Rapid Thermal
   Processing*.[^osburn-1993]
 * Fair, "Junction Formation in Silicon by Rapid Thermal Annealing", in
   Fair (ed.), *Rapid Thermal Processing*.[^txt-10]
-* ITRS 2001, *Front End Processes* — Table 51 and its notes on
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51 and its notes on
   junctions and silicide thickness.[^itrs-01]
 * Plasma-Therm, *AG Heatpulse 8800 / 8108 RTP* product
   spotlight.[^plasmatherm-ag]
-* AG Associates, Form 10-K (fiscal 1996) — Heatpulse 8108 first
+* [AG Associates, Form 10-K (fiscal 1996)](<https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>) — Heatpulse 8108 first
   shipped October 1992.[^ag-10k]
-* Applied Materials, 1997 Annual Report — RTP XE Centura.[^amat-1997]
-* EDN, *Applied dedicates RTP with Vantage* — the Radiance/Vantage
+* [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — RTP XE Centura.[^amat-1997]
+* [EDN, *Applied dedicates RTP with Vantage*](<https://www.edn.com/applied-dedicates-rtp-with-vantage/>) — the Radiance/Vantage
   chambers' pyrometry.[^amat-rtp]
 * ASM International, *Vertical furnace* product page.[^asm-vf]
 
 ### High-level understanding
 
-* Wikipedia, *Rapid thermal processing* — lamps, pyrometry and the
+* [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>) — lamps, pyrometry and the
   main trade-offs.[^wiki-rtp]
 * Wikipedia, *Furnace anneal*.[^wiki-furnace]
 * Wikipedia, *Annealing (materials science)*.[^wiki-annealing]
 * Wikipedia, *Fick's laws of diffusion*.[^wiki-fick]
 * Wikipedia, *Arrhenius equation*.[^wiki-arrhenius]
-* Wikipedia, *Salicide* — the two-anneal self-aligned silicide
+* [Wikipedia, *Salicide*](<https://en.wikipedia.org/wiki/Salicide>) — the two-anneal self-aligned silicide
   sequence.[^wiki-salicide]
 * Wikipedia, *Titanium disilicide*.[^wiki-tisi2]
-* Wikipedia, *Forming gas* — the 5 % H₂ in N₂ mixture and interface
+* [Wikipedia, *Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>) — the 5 % H₂ in N₂ mixture and interface
   passivation.[^wiki-fg]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 7
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 7
   ("Dopant Diffusion") and ch. 8 ("Ion Implantation").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 8 ("Diffusion in Silicon") and ch. 10 ("Rapid Thermal
   Processing").[^txt-02]
-* Sze and Lee, *Semiconductor Devices: Physics and Technology* —
+* [Sze and Lee, *Semiconductor Devices: Physics and Technology*](<https://www.wiley.com/en-us/Semiconductor+Devices%3A+Physics+and+Technology%2C+3rd+Edition-p-9780470537947>) —
   ch. 12.[^sze-2012]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   ch. 3 and 6.[^campbell-2013]
 
 ### Deep dive
 
-* Gibbons, *Proc. IEEE* 1972 — damage production and annealing of
+* [Gibbons, *Proc. IEEE* 1972](<https://doi.org/10.1109/PROC.1972.8854>) — damage production and annealing of
   implanted layers.[^gibbons-1972]
-* Stolk et al., *JAP* 1997 — physical mechanisms of transient enhanced
+* [Stolk et al., *JAP* 1997](<https://doi.org/10.1063/1.364452>) — physical mechanisms of transient enhanced
   diffusion.[^stolk-1997]
-* Michel et al. (IBM), *APL* 1987 — the first report of anomalous
+* [Michel et al. (IBM), *APL* 1987](<https://doi.org/10.1063/1.98160>) — the first report of anomalous
   (transient enhanced) boron diffusion during rapid
   annealing.[^michel-1987]
-* Eaglesham et al., *APL* 1994 — the "+1" interstitial source of
+* [Eaglesham et al., *APL* 1994](<https://doi.org/10.1063/1.112725>) — the "+1" interstitial source of
   TED.[^eaglesham-1994]
-* Jones and Ishida, *Mater. Sci. Eng. R* 1998 — review of shallow
+* [Jones and Ishida, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00013-8>) — review of shallow
   junction formation by implantation and RTA.[^rev-05]
-* Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999 — the effect
+* [Agarwal, Gossmann and Fiory, *J. Electron. Mater.* 1999](<https://doi.org/10.1007/s11664-999-0118-7>) — the effect
   of RTA ramp rate on boron ultra-shallow junctions, the case for
   {term}`spike anneals <spike anneal>`.[^agarwal-1999]
-* Fiory, *J. Electron. Mater.* 2002 — RTP developments of the 130 nm
+* [Fiory, *J. Electron. Mater.* 2002](<https://doi.org/10.1007/s11664-002-0031-9>) — RTP developments of the 130 nm
   era.[^fiory-2002]
-* Sedgwick, *JES* 1983 — an early review of short-time
+* [Sedgwick, *JES* 1983](<https://doi.org/10.1149/1.2119736>) — an early review of short-time
   annealing.[^sedgwick-1983]
-* Csepregi et al., *JAP* 1978 — solid-phase epitaxial regrowth rates of
+* [Csepregi et al., *JAP* 1978](<https://doi.org/10.1063/1.325397>) — solid-phase epitaxial regrowth rates of
   amorphised silicon versus orientation.[^csepregi-1978]
-* Zhang and Östling, *Crit. Rev. Solid State Mater. Sci.* 2003 —
+* [Zhang and Östling, *Crit. Rev. Solid State Mater. Sci.* 2003](<https://doi.org/10.1080/10408430390802431>) —
   review of TiSi₂, CoSi₂ and NiSi salicide technology.[^rev-04]
-* Mann and Clevenger (IBM), *JES* 1994 — the C49-to-C54 TiSi₂ phase
+* [Mann and Clevenger (IBM), *JES* 1994](<https://doi.org/10.1149/1.2054921>) — the C49-to-C54 TiSi₂ phase
   transformation and its nucleation limit on narrow
   lines.[^mann-1994]
-* Murarka, *Silicides for VLSI Applications* — ch. "Formation", the
+* [Murarka, *Silicides for VLSI Applications*](<https://doi.org/10.1016/b978-0-08-057056-3.50009-4>) — ch. "Formation", the
   classic text on silicide reaction kinetics.[^murarka-1983]
-* Cartier, Stathis and Buchanan (IBM), *APL* 1993 — hydrogen
+* [Cartier, Stathis and Buchanan (IBM), *APL* 1993](<https://doi.org/10.1063/1.110758>) — hydrogen
   passivation and depassivation of interface dangling
   bonds.[^cartier-1993]
-* Reed and Plummer, *JAP* 1988 — the chemistry of Si/SiO₂ interface-trap
+* [Reed and Plummer, *JAP* 1988](<https://doi.org/10.1063/1.340317>) — the chemistry of Si/SiO₂ interface-trap
   annealing in hydrogen.[^reed-1988]
-* Deal, *JES* 1980 — the standard terminology for the oxide charges
+* [Deal, *JES* 1980](<https://doi.org/10.1109/T-ED.1980.19908>) — the standard terminology for the oxide charges
   affected by the alloy anneal.[^deal-1980]
-* Gronet and Gibbons (Applied Materials), US 5,155,336 — a lamp-heated
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — a lamp-heated
   single-wafer RTP chamber design.[^pat-rtp-amat]
-* Sheets (Tamarack Scientific), US 4,649,261 — an early lamp annealer
+* [Sheets (Tamarack Scientific), US 4,649,261](<https://patents.google.com/patent/US4649261A/en>) — an early lamp annealer
   for silicide formation and reflow.[^pat-rtp-tamarack]
-* MIT OpenCourseWare 6.774 — lecture notes on diffusion, TED and
+* [MIT OpenCourseWare 6.774](<https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/>) — lecture notes on diffusion, TED and
   rapid thermal annealing.[^ocw-6774]
 
 <!-- footnotes -->

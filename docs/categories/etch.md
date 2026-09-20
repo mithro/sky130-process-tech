@@ -273,91 +273,91 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* Coburn and Winters, *JAP* 1979 — ion- and electron-enhanced reactions of
+* [Coburn and Winters, *JAP* 1979](<https://doi.org/10.1063/1.326355>) — ion- and electron-enhanced reactions of
   Si, SiO₂ and Si₃N₄ with XeF₂, F₂ and Cl₂.[^coburn-1979]
-* Steinbrüchel, *APL* 1989 — the square-root energy dependence of
+* [Steinbrüchel, *APL* 1989](<https://doi.org/10.1063/1.102336>) — the square-root energy dependence of
   ion-enhanced etch yields.[^steinbruchel-1989]
-* ITRS 2001, *Front End Processes* — the gate etch bias.[^itrs-01]
-* SkyWater PDK, *Criteria & Assumptions* — antenna-rule film
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — the gate etch bias.[^itrs-01]
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — antenna-rule film
   thicknesses.[^pdk-03]
-* Lam Research, Form 10-K (fiscal 2003) — the TCP 9400PTX/DFM, 2300
+* [Lam Research, Form 10-K (fiscal 2003)](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the TCP 9400PTX/DFM, 2300
   and Exelan product line.[^lam-10k]
 * Lam Research, Exelan High Performance press release
   (2001).[^lam-exelan]
-* Stanford Nanofabrication Facility, *Lam TCP 9400 Poly Etcher* — the
+* [Stanford Nanofabrication Facility, *Lam TCP 9400 Poly Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — the
   reactor and its gas set.[^snf-9400]
-* Applied Materials, 1997 Annual Report — DPS, MxP/eMxP+ and HDP
+* [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — DPS, MxP/eMxP+ and HDP
   dielectric etch history.[^amat-1997]
 * C2MI, *Akrion GAMA acid bench*.[^akrion-gama]
-* Tokyo Electron, US 6,376,262 — CN emission at 387 nm as the nitride
+* [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — CN emission at 387 nm as the nitride
   etch endpoint signal.[^pat-endpoint-tel]
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching* — RF frequency, self-bias,
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — RF frequency, self-bias,
   pressure range and ICP sources.[^wiki-rie]
 * Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
 * Wikipedia, *Dry etching*.[^wiki-dry-etch]
 * Wikipedia, *Etching (microfabrication)*.[^wiki-etching]
 * Wikipedia, *Inductively coupled plasma*.[^wiki-icp]
-* Wikipedia, *Buffered oxide etch* — BOE composition and
+* [Wikipedia, *Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>) — BOE composition and
   rate.[^wiki-boe]
 * Wikipedia, *Hydrofluoric acid*.[^wiki-hf]
 * Wikipedia, *Phosphoric acid*.[^wiki-h3po4]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 10
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 10
   ("Etching").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 15–16 ("Wet Processing" and "Dry Etching for VLSI").[^txt-02]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   ch. 11.[^campbell-2013]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 9.[^txt-08]
 
 ### Deep dive
 
-* Nojiri, *Dry Etching Technology for Semiconductors* — a
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — a
   production-oriented monograph on poly, oxide and metal etch
   chemistries and endpoint.[^nojiri-2015]
-* Donnelly and Kornblit, *JVST A* 2013 — a long review of plasma
+* [Donnelly and Kornblit, *JVST A* 2013](<https://doi.org/10.1116/1.4819316>) — a long review of plasma
   etching from its origins to the present.[^donnelly-2013]
-* Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981 — the design
+* [Flamm and Donnelly, *Plasma Chem. Plasma Process.* 1981](<https://doi.org/10.1007/BF00565992>) — the design
   principles of plasma etchants.[^flamm-1981]
-* Winters and Coburn, *Surf. Sci. Rep.* 1992 — surface-science view of
+* [Winters and Coburn, *Surf. Sci. Rep.* 1992](<https://doi.org/10.1016/0167-5729(92)90009-Z>) — surface-science view of
   etching reactions.[^winters-1992]
-* Coburn and Winters, *JVST* 1979 — a discussion of plasma etching
+* [Coburn and Winters, *JVST* 1979](<https://doi.org/10.1116/1.569958>) — a discussion of plasma etching
   mechanisms.[^coburn-1979b]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — ch. 12 (high-density sources) and ch. 15
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — ch. 12 (high-density sources) and ch. 15
   (etching).[^lieberman-2005]
-* Oehrlein, *Mater. Sci. Eng. B* 1989 — review of dry-etching damage to
+* [Oehrlein, *Mater. Sci. Eng. B* 1989](<https://doi.org/10.1016/0921-5107(89)90284-5>) — review of dry-etching damage to
   silicon.[^oehrlein-1989]
-* Oehrlein and Kurogi, *Mater. Sci. Eng. R* 1998 — sidewall passivation
+* [Oehrlein and Kurogi, *Mater. Sci. Eng. R* 1998](<https://doi.org/10.1016/S0927-796X(98)00016-3>) — sidewall passivation
   chemistry in directional etching.[^oehrlein-1998]
-* Oehrlein et al., *JVST A* 1994 — fluorocarbon film deposition and
+* [Oehrlein et al., *JVST A* 1994](<https://doi.org/10.1116/1.578876>) — fluorocarbon film deposition and
   etching with CF₄ and CHF₃ in high-density plasmas.[^oehrlein-1994]
-* Standaert et al., *JVST A* 1998 — etching through a steady-state
+* [Standaert et al., *JVST A* 1998](<https://doi.org/10.1116/1.580978>) — etching through a steady-state
   fluorocarbon layer, the mechanism behind oxide-to-silicon
   selectivity.[^standaert-1998]
-* Gottscho, Jurgensen and Vitkavage, *JVST B* 1992 — microscopic
+* [Gottscho, Jurgensen and Vitkavage, *JVST B* 1992](<https://doi.org/10.1116/1.586180>) — microscopic
   uniformity: aspect-ratio-dependent etching and its
   causes.[^gottscho-1992]
-* Bell and Joubert, *JVST B* 1997 — chemical analysis of HBr/Cl₂/O₂
+* [Bell and Joubert, *JVST B* 1997](<https://doi.org/10.1116/1.589259>) — chemical analysis of HBr/Cl₂/O₂
   gate-etch sidewalls under resist and oxide masks.[^bell-1997]
-* Tuda, Shintani and Ootera, *JVST A* 2001 — profile evolution during
+* [Tuda, Shintani and Ootera, *JVST A* 2001](<https://doi.org/10.1116/1.1365135>) — profile evolution during
   Cl₂/HBr/O₂ high-density poly gate etching.[^tuda-2001]
-* Mogab, *JES* 1977 — the loading effect.[^mogab-1977]
-* Hashimoto, *JJAP* 1994 — electron-shading charging damage during
+* [Mogab, *JES* 1977](<https://doi.org/10.1149/1.2133542>) — the loading effect.[^mogab-1977]
+* [Hashimoto, *JJAP* 1994](<https://doi.org/10.1143/JJAP.33.6013>) — electron-shading charging damage during
   high-density plasma etching.[^hashimoto-1994]
-* Poulsen, *JVST* 1977 — an early review of plasma etching in IC
+* [Poulsen, *JVST* 1977](<https://doi.org/10.1116/1.569137>) — an early review of plasma etching in IC
   manufacture, including aluminium.[^poulsen-1977]
-* van Gelder and Hauser, *JES* 1967 — hot phosphoric acid etch rates
+* [van Gelder and Hauser, *JES* 1967](<https://doi.org/10.1149/1.2426757>) — hot phosphoric acid etch rates
   of nitride, oxide and silicon.[^vgh-1967]
-* Ogle (Lam Research), US 4,948,458 — the planar-coil
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the planar-coil
   transformer-coupled plasma source behind the TCP
   etchers.[^pat-tcp-lam]
-* Yin et al. (Applied Materials), US 5,540,824 — the multi-section RF
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the multi-section RF
   coil and isolated lid of the DPS reactor.[^pat-dps-amat]
-* MIT OpenCourseWare 6.152J — lecture notes on plasma and wet
+* [MIT OpenCourseWare 6.152J](<https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>) — lecture notes on plasma and wet
   etching.[^ocw-6152]
 
 <!-- footnotes -->

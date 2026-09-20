@@ -297,24 +297,24 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* SkyWater PDK, *Criteria & Assumptions* — the nominal film
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the nominal film
   thicknesses used for antenna calculations.[^pdk-03]
 * SkyWater PDK, process stack diagram (`metal_stack.svg`) — conductor
   thicknesses 0.36, 0.845 and 1.26 µm.[^pdk-04]
-* ITRS 2001, *Interconnect* — FSG in production since the 250 nm node,
+* [ITRS 2001, *Interconnect*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Interconnect.pdf>) — FSG in production since the 250 nm node,
   and the dielectric roadmap.[^itrs-02]
-* Blech, *JAP* 1976 — the critical-length effect measured on Al lines
+* [Blech, *JAP* 1976](<https://doi.org/10.1063/1.322842>) — the critical-length effect measured on Al lines
   over TiN.[^blech-1976]
 * Applied Materials, *Endura PVD* product page.[^amat-endura]
-* Applied Materials, Form 10-K (fiscal 2003) — Centura, Endura and
+* [Applied Materials, Form 10-K (fiscal 2003)](<https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm>) — Centura, Endura and
   Producer platform descriptions.[^amat-10k]
-* Encyclopedia.com, *Novellus Systems, Inc.* — the Concept One/Two,
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Concept One/Two,
   Sequel, SPEED and Altus product history.[^novellus-history]
-* ASM International, A400 DUO press release — the A400's LPCVD
+* [ASM International, A400 DUO press release](<https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>) — the A400's LPCVD
   processes.[^asm-a400]
-* Applied Materials, US 6,350,353 — alternating IMP and conventional
+* [Applied Materials, US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — alternating IMP and conventional
   sputtering to improve sidewall coverage.[^pat-imp-amat]
-* Hitachi Metals, US 5,160,534 — the 10 wt.% Ti composition of Ti:W
+* [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — the 10 wt.% Ti composition of Ti:W
   sputter targets.[^pat-tiw-hitachi]
 
 ### High-level understanding
@@ -331,62 +331,62 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 * Wikipedia, *Tungsten hexafluoride*.[^wiki-wf6]
 * Wikipedia, *Electromigration*.[^wiki-em]
 * Wikipedia, *Thin film*.[^wiki-thinfilm]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 9 ("Thin
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 9 ("Thin
   Film Deposition") and ch. 11 ("Back-End Technology").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 6 ("Chemical Vapor Deposition of Amorphous and Polycrystalline
   Films") and ch. 11 ("Aluminum Thin Films and Physical Vapor
   Deposition").[^txt-02]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   ch. 12 and 13.[^campbell-2013]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 10 and 11.[^txt-08]
 
 ### Deep dive
 
-* Ohring, *Materials Science of Thin Films* — nucleation, growth
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — nucleation, growth
   regimes, step coverage and the structure-zone model.[^ohring-2002]
-* Lieberman and Lichtenberg, *Principles of Plasma Discharges and
-  Materials Processing* — ch. 16 on plasma-enhanced deposition and
+* [Lieberman and Lichtenberg, *Principles of Plasma Discharges and
+  Materials Processing*](<https://doi.org/10.1002/0471724254>) — ch. 16 on plasma-enhanced deposition and
   ion-bombardment control of film stress.[^lieberman-2005]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapters on CVD, PVD, HDP-CVD and IMP
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapters on CVD, PVD, HDP-CVD and IMP
   liners.[^txt-09]
-* Bohr, IEDM 1995 — why interconnect, not the transistor, limits
+* [Bohr, IEDM 1995](<https://doi.org/10.1109/IEDM.1995.499187>) — why interconnect, not the transistor, limits
   performance, motivating the metallisation stack.[^bohr-1995]
-* Broadbent and Ramiller, *JES* 1984 — WF₆/H₂ and WF₆/Si kinetics for
+* [Broadbent and Ramiller, *JES* 1984](<https://doi.org/10.1149/1.2115864>) — WF₆/H₂ and WF₆/Si kinetics for
   *selective* tungsten deposition; the hydrogen-reduction kinetics
   carry over to the blanket process.[^rev-03]
-* Kaanta et al. (IBM), IEDM 1987 — the tungsten-stud plus planarisation
+* [Kaanta et al. (IBM), IEDM 1987](<https://doi.org/10.1109/IEDM.1987.191389>) — the tungsten-stud plus planarisation
   wiring scheme that became the standard plug process.[^kaanta-1987]
-* Rossnagel and Hopwood, *JVST B* 1994 — the first ionised-magnetron
+* [Rossnagel and Hopwood, *JVST B* 1994](<https://doi.org/10.1116/1.587142>) — the first ionised-magnetron
   (IMP) metal deposition experiments.[^rossnagel-1994]
-* Rossnagel, *JVST B* 1998 — review of collimated and ionised PVD for
+* [Rossnagel, *JVST B* 1998](<https://doi.org/10.1116/1.590242>) — review of collimated and ionised PVD for
   liners and barriers.[^rossnagel-1998]
-* Thornton, *JVST* 1974 — the structure-zone diagram for sputtered films
+* [Thornton, *JVST* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone diagram for sputtered films
   versus pressure and temperature.[^thornton-1974]
-* Raupp, Cale and Hey, *JVST B* 1992 — reaction kinetics of PECVD TEOS
+* [Raupp, Cale and Hey, *JVST B* 1992](<https://doi.org/10.1116/1.586361>) — reaction kinetics of PECVD TEOS
   oxide and their effect on step coverage.[^raupp-1992]
-* Adams and Capio, *JES* 1979 — LPCVD oxide deposition, including TEOS
+* [Adams and Capio, *JES* 1979](<https://doi.org/10.1149/1.2129171>) — LPCVD oxide deposition, including TEOS
   and doped glasses.[^adams-1979]
-* Kamins, *JES* 1980 — structure and properties of LPCVD silicon films
+* [Kamins, *JES* 1980](<https://doi.org/10.1149/1.2129733>) — structure and properties of LPCVD silicon films
   as a function of deposition temperature.[^kamins-1980]
-* Ames, d'Heurle and Horstmann, *IBM J. Res. Dev.* 1970 — the original
+* [Ames, d'Heurle and Horstmann, *IBM J. Res. Dev.* 1970](<https://doi.org/10.1147/rd.144.0461>) — the original
   demonstration that copper doping suppresses aluminium
   electromigration.[^ames-1970]
-* Nguyen, *IBM J. Res. Dev.* 1999 — review of HDP-CVD dielectrics,
+* [Nguyen, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.431.0109>) — review of HDP-CVD dielectrics,
   gap-fill and the deposition-to-sputter ratio.[^nguyen-1999]
-* Nishimura et al., *JJAP* 2002 — HDP-CVD gap-fill modelling
+* [Nishimura et al., *JJAP* 2002](<https://doi.org/10.1143/JJAP.41.2886>) — HDP-CVD gap-fill modelling
   demonstrated on 0.13 µm STI.[^nishimura-2002]
-* Novellus, SPEED Max press release — a vendor's description of HDP
+* [Novellus, SPEED Max press release](<https://newsroom.lamresearch.com/2009-10-05-NOVELLUS-SPEED-R-MAX-HDP-CVD-DIELECTRIC-GAPFILL-SYSTEM-EXTENDS-STI-APPLICATION-TO-32nm>) — a vendor's description of HDP
   gap-fill knobs (deposition, etch and sputter-to-deposition
   ratio).[^lam-speed]
-* Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
-  Techniques* — chapter-per-technique reference on CVD, PECVD, PVD and
+* [Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
+  Techniques*](<https://openlibrary.org/isbn/9780815514428>) — chapter-per-technique reference on CVD, PECVD, PVD and
   their equipment.[^seshan-2002]
-* Applied Materials, 1997 Annual Report — Centura and Endura platform
+* [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — Centura and Endura platform
   history.[^amat-1997]
-* MIT OpenCourseWare 6.152J — lecture notes on CVD and PVD
+* [MIT OpenCourseWare 6.152J](<https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>) — lecture notes on CVD and PVD
   fundamentals.[^ocw-6152]
 
 <!-- footnotes -->

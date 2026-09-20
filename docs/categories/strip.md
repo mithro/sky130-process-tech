@@ -215,78 +215,78 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* Kern, *JES* 1990 — the history and chemistry of the RCA
+* [Kern, *JES* 1990](<https://doi.org/10.1149/1.2086825>) — the history and chemistry of the RCA
   clean.[^kern-1990]
 * Kern and Puotinen, *RCA Review* 1970 — the original SC-1/SC-2
   paper.[^kern-1970]
-* Kern, ch. 1 of Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
-  Cleaning Technology* — overview of cleaning and of implanted-resist
+* [Kern, ch. 1 of Reinhardt and Kern (eds.), *Handbook of Silicon Wafer
+  Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — overview of cleaning and of implanted-resist
   stripping.[^kern-handbook]
-* ITRS 2001, *Front End Processes* — surface preparation
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — surface preparation
   requirements.[^itrs-01]
-* SemiStar, GaSonics L3510 description — platen temperature
+* [SemiStar, GaSonics L3510 description](<http://www.semistarcorp.com/product/gasonics-l3510-asher/>) — platen temperature
   100–300 °C.[^gasonics-l3510]
-* Allwin21, GaSonics Aura 1000 specification — 150–300 °C.[^gasonics-aura]
+* [Allwin21, GaSonics Aura 1000 specification](<https://allwin21.com/gasonics-aura-1000-plasma-asher-2/>) — 150–300 °C.[^gasonics-aura]
 * Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
   Removal*.[^snf-strip]
 * C2MI, *Akrion GAMA acid bench*.[^akrion-gama]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* — downstream ashing and implanted-resist
+* [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing and implanted-resist
   problems.[^wiki-ash]
-* Wikipedia, *Piranha solution* — SPM ratios and
+* [Wikipedia, *Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) — SPM ratios and
   temperature.[^wiki-piranha]
-* Wikipedia, *RCA clean* — SC-1 and SC-2 recipes.[^wiki-rca]
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2 recipes.[^wiki-rca]
 * Wikipedia, *Hydrofluoric acid*.[^wiki-hf]
 * Wikipedia, *Phosphoric acid*.[^wiki-h3po4]
 * Wikipedia, *N-Methyl-2-pyrrolidone*.[^wiki-nmp]
 * Wikipedia, *Photoresist*.[^wiki-resist]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 4
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 4
   ("Semiconductor Manufacturing — Clean Rooms, Wafer Cleaning and
   Gettering").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 15 ("Wet Processing: Cleaning, Etching and Liftoff").[^txt-02]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ch. 7
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ch. 7
   and 16.[^txt-07]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 8.[^txt-08]
 
 ### Deep dive
 
-* Fujimura et al., *JJAP* 1989 — the carbonised layer of high-dose
+* [Fujimura et al., *JJAP* 1989](<https://doi.org/10.1143/JJAP.28.2130>) — the carbonised layer of high-dose
   implanted resist, the residues of O₂ ashing and a two-step ashing
   process (abstract).[^fujimura-1989]
-* Fujimura et al., *JJAP* 1990 — why nitrogen is added to oxygen
+* [Fujimura et al., *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.2165>) — why nitrogen is added to oxygen
   downstream ashing.[^fujimura-1990]
-* Fujimura et al., *JVST B* 1994 — water-vapour downstream ashing to
+* [Fujimura et al., *JVST B* 1994](<https://doi.org/10.1116/1.587773>) — water-vapour downstream ashing to
   avoid sodium contamination.[^fujimura-1994]
-* Ohmi, *JES* 1996 — a room-temperature alternative to the hot RCA
+* [Ohmi, *JES* 1996](<https://doi.org/10.1149/1.1837133>) — a room-temperature alternative to the hot RCA
   sequence.[^ohmi-1996]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — modern wet and dry cleaning
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — modern wet and dry cleaning
   fundamentals.[^reinhardt-2010]
-* van Gelder and Hauser, *JES* 1967 — hot phosphoric acid selectivity
+* [van Gelder and Hauser, *JES* 1967](<https://doi.org/10.1149/1.2426757>) — hot phosphoric acid selectivity
   between nitride, oxide and silicon.[^vgh-1967]
-* Horsky, IIT 1998 — resist outgassing in high-energy and high-current
+* [Horsky, IIT 1998](<https://doi.org/10.1109/IIT.1999.812201>) — resist outgassing in high-energy and high-current
   implantation, the origin of the crust.[^horsky-1998]
-* Lee et al., IIT 1996 — thick-resist outgassing during MeV
+* [Lee et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586180>) — thick-resist outgassing during MeV
   implantation.[^lee-1996]
-* Roche, Michaud and Bruel, *MRS Proc.* 1985 — early measurements of
+* [Roche, Michaud and Bruel, *MRS Proc.* 1985](<https://doi.org/10.1557/PROC-45-203>) — early measurements of
   resist outgassing under the beam.[^roche-1985]
-* Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358 — a
+* [Tseng, Chao and Tsai (Mosel Vitelic), US 5,811,358](<https://patents.google.com/patent/US5811358A/en>) — a
   low-temperature dry strip after high-dose implantation.[^pat-strip-mosel]
-* Chan, Chiu and Tao (TSMC), US 2004/0214448 — a one-step CₓHᵧF_z/O₂
+* [Chan, Chiu and Tao (TSMC), US 2004/0214448](<https://patents.google.com/patent/US20040214448A1/en>) — a one-step CₓHᵧF_z/O₂
   plasma ash for the carbonised crust of implanted resist.[^pat-strip-tsmc]
-* Nakayama et al. (ULVAC), US 5,795,831 — cold stripping and cleaning
+* [Nakayama et al. (ULVAC), US 5,795,831](<https://patents.google.com/patent/US5795831A/en>) — cold stripping and cleaning
   processes.[^pat-strip-ulvac]
-* Kamarehi and Simpson (Fusion Systems), US 5,498,308 — a downstream
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — a downstream
   microwave asher design.[^pat-asher-fusion]
-* Becknell, Hammar and Ferris (Axcelis), US 7,449,416 — an oxygen-free,
+* [Becknell, Hammar and Ferris (Axcelis), US 7,449,416](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7449416>) — an oxygen-free,
   nitrogen-free ashing chemistry for resist and post-etch residue
   removal over low-k dielectrics.[^pat-asher-axcelis]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapters on wafer cleaning and plasma
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapters on wafer cleaning and plasma
   stripping.[^txt-09]
 
 <!-- footnotes -->

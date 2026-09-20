@@ -221,98 +221,98 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* Deal and Grove, *JAP* 1965 — the linear–parabolic law and its rate
+* [Deal and Grove, *JAP* 1965](<https://doi.org/10.1063/1.1713945>) — the linear–parabolic law and its rate
   constants.[^deal-1965]
-* Massoud, Plummer and Irene, *JES* 1985 (part I) — the measured
+* [Massoud, Plummer and Irene, *JES* 1985 (part I)](<https://doi.org/10.1149/1.2113648>) — the measured
   thin-regime growth enhancement.[^massoud-1985]
-* Deal, *JES* 1980 — the standard names for the four oxide
+* [Deal, *JES* 1980](<https://doi.org/10.1109/T-ED.1980.19908>) — the standard names for the four oxide
   charges.[^deal-1980]
-* ITRS 2001, *Front End Processes* — Tables 51 and 52, gate dielectric
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Tables 51 and 52, gate dielectric
   requirements and EOT control.[^itrs-01]
-* ASM International, A400 DUO press release — the A400 furnace's
+* [ASM International, A400 DUO press release](<https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>) — the A400 furnace's
   install base and wet-oxidation/anneal use.[^asm-a400]
 * Plasma-Therm, *AG Heatpulse 8800 / 8108 RTP* product
   spotlight.[^plasmatherm-ag]
-* AG Associates, Form 10-K (fiscal 1996) — Heatpulse 8108 first shipped
+* [AG Associates, Form 10-K (fiscal 1996)](<https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>) — Heatpulse 8108 first shipped
   October 1992, 125–200 mm.[^ag-10k]
 
 ### High-level understanding
 
-* Wikipedia, *Thermal oxidation* — reaction, silicon consumption,
+* [Wikipedia, *Thermal oxidation*](<https://en.wikipedia.org/wiki/Thermal_oxidation>) — reaction, silicon consumption,
   chlorine additions and dry–wet–dry cycles.[^wiki-thox]
-* Wikipedia, *Deal–Grove model* — the rate-constant table and the
+* [Wikipedia, *Deal–Grove model*](<https://en.wikipedia.org/wiki/Deal%E2%80%93Grove_model>) — the rate-constant table and the
   thin-oxide caveat.[^wiki-dg]
 * Wikipedia, *Gate oxide*.[^wiki-gox]
 * Wikipedia, *LOCOS*.[^wiki-locos]
 * Wikipedia, *Shallow trench isolation*.[^wiki-sti]
 * Wikipedia, *SONOS*.[^wiki-sonos]
 * Wikipedia, *Rapid thermal processing*.[^wiki-rtp]
-* Brigham Young University Cleanroom, *Oxide Growth Calculator* —
+* [Brigham Young University Cleanroom, *Oxide Growth Calculator*](<https://cleanroom.byu.edu/OxideTimeCalc>) —
   Deal–Grove with the thin-oxide correction, runnable
   online.[^byu-oxcalc]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 6
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 6
   ("Thermal Oxidation and the Si/SiO₂ Interface") and ch. 8 (screen
   oxides and channelling).[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 7 ("Thermal Oxidation of Single-Crystal Silicon").[^txt-02]
-* Sze and Lee, *Semiconductor Devices: Physics and Technology* —
+* [Sze and Lee, *Semiconductor Devices: Physics and Technology*](<https://www.wiley.com/en-us/Semiconductor+Devices%3A+Physics+and+Technology%2C+3rd+Edition-p-9780470537947>) —
   ch. 11.[^sze-2012]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   ch. 4.[^campbell-2013]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 5.[^txt-08]
 
 ### Deep dive
 
-* Ligenza and Spitzer, *J. Phys. Chem. Solids* 1960 — the isotope
+* [Ligenza and Spitzer, *J. Phys. Chem. Solids* 1960](<https://doi.org/10.1016/0022-3697(60)90219-5>) — the isotope
   experiments showing that the oxidant diffuses through the oxide to
   react at the interface.[^ligenza-1960]
-* Massoud, Plummer and Irene, *JES* 1985 (part II) — candidate physical
+* [Massoud, Plummer and Irene, *JES* 1985 (part II)](<https://doi.org/10.1149/1.2113649>) — candidate physical
   mechanisms for the thin-regime enhancement.[^massoud-1985b]
-* Massoud and Plummer, *JAP* 1987 — the closed-form thin-film oxidation
+* [Massoud and Plummer, *JAP* 1987](<https://doi.org/10.1063/1.339305>) — the closed-form thin-film oxidation
   relationship used by growth calculators.[^massoud-1987]
-* Kao, McVittie, Nix and Saraswat, *IEEE TED* 1987 — measured
+* [Kao, McVittie, Nix and Saraswat, *IEEE TED* 1987](<https://doi.org/10.1109/T-ED.1987.23037>) — measured
   two-dimensional oxidation of trench corners and its retardation at
   low temperature.[^kao-1987]
-* Kao et al., *IEEE TED* 1988 — the viscous-stress model of corner
+* [Kao et al., *IEEE TED* 1988](<https://doi.org/10.1109/16.2412>) — the viscous-stress model of corner
   oxidation, the basis of liner-oxide corner rounding.[^kao-1988]
-* Kooi, van Lierop and Appels, *JES* 1976 — the "Kooi effect": nitride
+* [Kooi, van Lierop and Appels, *JES* 1976](<https://doi.org/10.1149/1.2133008>) — the "Kooi effect": nitride
   formed at the Si/SiO₂ interface under a nitride mask, and why a
   sacrificial oxide is grown before the gate oxide.[^kooi-1976]
-* Hu, *JAP* 1974 — oxidation-induced stacking faults and
+* [Hu, *JAP* 1974](<https://doi.org/10.1063/1.1663459>) — oxidation-induced stacking faults and
   oxidation-enhanced diffusion from injected
   interstitials.[^hu-1974]
-* Tan and Gösele, *APL* 1982 — growth and shrinkage of
+* [Tan and Gösele, *APL* 1982](<https://doi.org/10.1063/1.93200>) — growth and shrinkage of
   oxidation-induced stacking faults tied to the interstitial
   supersaturation.[^tan-1982]
-* Green, Gusev, Degraeve and Garfunkel, *JAP* 2001 — a long review of
+* [Green, Gusev, Degraeve and Garfunkel, *JAP* 2001](<https://doi.org/10.1063/1.1385803>) — a long review of
   sub-4 nm SiO₂ and oxynitride gate dielectrics, their processing,
   structure and electrical limits.[^green-2001]
-* Hori, *Gate Dielectrics and MOS ULSIs* — monograph on nitrided and
+* [Hori, *Gate Dielectrics and MOS ULSIs*](<https://doi.org/10.1007/978-3-642-60856-8>) — monograph on nitrided and
   reoxidised-nitrided gate oxides.[^hori-1997]
-* Hori, Iwasaki and Tsuji, *IEEE TED* 1989 — electrical and physical
+* [Hori, Iwasaki and Tsuji, *IEEE TED* 1989](<https://doi.org/10.1109/16.19935>) — electrical and physical
   properties of RTP reoxidised nitrided oxides.[^hori-1989]
-* Yu et al. (TSMC), *Proc. SPIE* 1999 — ultrathin gate oxide grown by
+* [Yu et al. (TSMC), *Proc. SPIE* 1999](<https://doi.org/10.1117/12.360557>) — ultrathin gate oxide grown by
   in-situ steam generation in an RTP chamber.[^yu-1999]
-* Nagai et al., *JAP* 2002 — infrared study comparing RTO and ISSG thin
+* [Nagai et al., *JAP* 2002](<https://doi.org/10.1063/1.1459097>) — infrared study comparing RTO and ISSG thin
   oxides.[^nagai-2002]
-* Nicollian and Brews, *MOS Physics and Technology* — the reference on
+* [Nicollian and Brews, *MOS Physics and Technology*](<https://openlibrary.org/isbn/9780471085003>) — the reference on
   oxide charges and C–V characterisation of the Si/SiO₂
   interface.[^nicollian-1982]
-* Roozeboom and Parekh, *JVST B* 1990 — review of RTP systems with
+* [Roozeboom and Parekh, *JVST B* 1990](<https://doi.org/10.1116/1.584902>) — review of RTP systems with
   emphasis on temperature control.[^roozeboom-1990]
-* Gardner (AMD), US 6,033,943 — a {term}`dual-gate-oxide <dual gate oxide>` process: first oxide,
+* [Gardner (AMD), US 6,033,943](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6033943>) — a {term}`dual-gate-oxide <dual gate oxide>` process: first oxide,
   masked strip, second oxidation.[^pat-dgox-amd]
-* Mehta, Logie and Fong (Lattice), US 7,985,656 — a thick STI trench
+* [Mehta, Logie and Fong (Lattice), US 7,985,656](<https://patents.google.com/patent/US7985656B1/en>) — a thick STI trench
   liner grown above 1000 °C.[^pat-sti-lattice]
-* SEMI MF576 — the standard ellipsometric test method for insulator
+* [SEMI MF576](<https://store-us.semi.org/products/mf057600-semi-mf576-test-method-for-measurement-of-insulator-thickness-and-refractive-index-on-silicon-substrates-by-ellipsometry>) — the standard ellipsometric test method for insulator
   thickness and refractive index on silicon.[^semi-mf576]
-* MIT OpenCourseWare 6.774 — lecture notes on oxidation kinetics and
+* [MIT OpenCourseWare 6.774](<https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/>) — lecture notes on oxidation kinetics and
   the Si/SiO₂ interface.[^ocw-6774]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapters on thermal processing, furnaces and
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapters on thermal processing, furnaces and
   RTP.[^txt-09]
-* EDN, *Applied dedicates RTP with Vantage* — the Radiance/Vantage RTP
+* [EDN, *Applied dedicates RTP with Vantage*](<https://www.edn.com/applied-dedicates-rtp-with-vantage/>) — the Radiance/Vantage RTP
   chamber family.[^amat-rtp]
 
 <!-- footnotes -->

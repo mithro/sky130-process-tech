@@ -203,20 +203,20 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* Keithley, *Series S600 Parametric Test Systems* data sheet — the
+* [Keithley, *Series S600 Parametric Test Systems* data sheet](<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>) — the
   tester's intended uses.[^keithley-s600]
 * Semiconductor Online, *S600 Series Parametric Test
   Systems*.[^semionline-s600]
 * BRL Test, HP/Agilent 4062UX listing.[^brltest-4062]
-* ITRS 2001, *Process Integration, Devices and Structures* — the
+* [ITRS 2001, *Process Integration, Devices and Structures*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>) — the
   I_off and I_dsat targets for the 130 nm node.[^itrs-04]
-* ITRS 2001, *Metrology* — the test-structure and in-line metrology
+* [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — the test-structure and in-line metrology
   needs.[^itrs-2001-met]
-* ITRS 2001, *Yield Enhancement* — the yield-learning
+* [ITRS 2001, *Yield Enhancement*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>) — the yield-learning
   loop.[^itrs-2001-yield]
-* ITRS 2001, *Test and Test Equipment* — wafer sort and tester
+* [ITRS 2001, *Test and Test Equipment*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Test.pdf>) — wafer sort and tester
   requirements.[^itrs-2001-test]
-* SkyWater PDK documentation — the device models and corners that
+* [SkyWater PDK documentation](<https://skywater-pdk.readthedocs.io/en/main/>) — the device models and corners that
   e-test checks a wafer against.[^pdk-01]
 * Google's SKY130 raw-data repository — the README, the manufacturing
   test tile, its 273-module pad documentation, measured transistor,
@@ -226,7 +226,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Wafer testing* — parametric versus functional test and
+* [Wikipedia, *Wafer testing*](<https://en.wikipedia.org/wiki/Wafer_testing>) — parametric versus functional test and
   the wafermap.[^wiki-test]
 * Wikipedia, *Sheet resistance*.[^wiki-rs]
 * Wikipedia, *Van der Pauw method*.[^wiki-vdp]
@@ -241,57 +241,57 @@ Status and expiry are estimates from public records and are not legal advice.
 * Wikipedia, *Agilent Technologies*.[^wiki-agilent]
 * Wikipedia, *Teradyne*.[^wiki-teradyne]
 * Wikipedia, *Advantest*.[^wiki-advantest]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 4 (yield
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 4 (yield
   and manufacturing) and the measurement sections of
   ch. 7–8.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — ch. 15
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — ch. 15
   ("Process Monitoring") and ch. 19 ("Wafer Test").[^txt-07]
-* Xiao, *Introduction to Semiconductor Manufacturing Technology* —
+* [Xiao, *Introduction to Semiconductor Manufacturing Technology*](<https://doi.org/10.1117/3.924283>) —
   ch. 14.[^txt-08]
-* Sze and Lee, *Semiconductor Devices: Physics and Technology* — ch. 6
+* [Sze and Lee, *Semiconductor Devices: Physics and Technology*](<https://www.wiley.com/en-us/Semiconductor+Devices%3A+Physics+and+Technology%2C+3rd+Edition-p-9780470537947>) — ch. 6
   (MOSFET characteristics).[^sze-2012]
 
 ### Deep dive
 
-* van der Pauw, *Philips Res. Rep.* 1958 — the theorem behind the
+* [van der Pauw, *Philips Res. Rep.* 1958](<https://doi.org/10.1142/9789814503464_0017>) — the theorem behind the
   four-contact sheet-resistance structure.[^vdp-1958]
-* Smits, *Bell Syst. Tech. J.* 1958 — four-point-probe sheet
+* [Smits, *Bell Syst. Tech. J.* 1958](<https://doi.org/10.1002/j.1538-7305.1958.tb03883.x>) — four-point-probe sheet
   resistivity and its correction factors.[^smits-1958]
-* Valdes, *Proc. IRE* 1954 — the original four-point-probe resistivity
+* [Valdes, *Proc. IRE* 1954](<https://doi.org/10.1109/JRPROC.1954.274680>) — the original four-point-probe resistivity
   measurement.[^valdes-1954]
-* Buehler, Grant and Thurber (NBS), *JES* 1978 — bridge and van der
+* [Buehler, Grant and Thurber (NBS), *JES* 1978](<https://doi.org/10.1149/1.2131517>) — bridge and van der
   Pauw resistors for linewidth (electrical {term}`CD`)
   measurement.[^buehler-1978]
-* Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983 — Kelvin
+* [Proctor, Linholm and Mazer (NBS), *IEEE TED* 1983](<https://doi.org/10.1109/T-ED.1983.21334>) — Kelvin
   measurement of interfacial contact resistance and its
   pitfalls.[^proctor-1983]
-* Berger, *Solid-State Electron.* 1972 — contact models, the origin of
+* [Berger, *Solid-State Electron.* 1972](<https://doi.org/10.1016/0038-1101(72)90048-2>) — contact models, the origin of
   the transmission-line method.[^berger-1972]
-* Reeves and Harrison, *IEEE EDL* 1982 — extracting specific contact
+* [Reeves and Harrison, *IEEE EDL* 1982](<https://doi.org/10.1109/EDL.1982.25502>) — extracting specific contact
   resistance from TLM ladders.[^reeves-1982]
-* Ortiz-Conde et al., *Microelectron. Reliab.* 2002 — a review of
+* [Ortiz-Conde et al., *Microelectron. Reliab.* 2002](<https://doi.org/10.1016/S0026-2714(02)00027-6>) — a review of
   MOSFET threshold-voltage extraction methods.[^ortiz-conde-2002]
-* Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide* — how
+* [Cheng and Hu, *MOSFET Modeling & BSIM3 User's Guide*](<https://doi.org/10.1007/b117400>) — how
   parametric data become compact-model parameters.[^cheng-1999]
-* Hess and Weiland, *IEEE TSM* 1999 — extracting defect-density
+* [Hess and Weiland, *IEEE TSM* 1999](<https://doi.org/10.1109/66.762875>) — extracting defect-density
   distributions from test structures for yield
   prediction.[^hess-1999]
-* Stapper (IBM), *IBM J. Res. Dev.* 1983 — defect-sensitivity and
+* [Stapper (IBM), *IBM J. Res. Dev.* 1983](<https://doi.org/10.1147/rd.276.0549>) — defect-sensitivity and
   critical-area yield modelling.[^stapper-1983]
-* Maly, *Proc. IEEE* 1990 — design for manufacturability and the role
+* [Maly, *Proc. IEEE* 1990](<https://doi.org/10.1109/5.52217>) — design for manufacturability and the role
   of test structures.[^maly-1990]
-* Yang et al. (TSMC), ICMTS 2005 — a 130 nm test-structure study of
+* [Yang et al. (TSMC), ICMTS 2005](<https://doi.org/10.1109/ICMTS.2005.1452242>) — a 130 nm test-structure study of
   deep N-well flicker noise, an example of PCM-style
   characterisation.[^yang-2005]
-* Dennard et al., *IEEE JSSC* 1974 — the scaling rules against which
+* [Dennard et al., *IEEE JSSC* 1974](<https://doi.org/10.1109/JSSC.1974.1050511>) — the scaling rules against which
   the measured parameters are judged.[^dennard-1974]
-* Schroder, *Semiconductor Material and Device Characterization* — the
+* [Schroder, *Semiconductor Material and Device Characterization*](<https://doi.org/10.1002/0471749095>) — the
   reference text on resistivity, contact, C–V and MOSFET
   measurements.[^schroder-2006]
-* SEMI MF84 — the standard four-point-probe resistivity test
+* [SEMI MF84](<https://store-us.semi.org/products/mf008400-semi-mf84-test-method-for-measuring-resistivity-of-silicon-wafers-with-an-in-line-four-point-probe>) — the standard four-point-probe resistivity test
   method.[^semi-mf84]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapters on test structures, yield and
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapters on test structures, yield and
   metrology.[^txt-09]
 
 <!-- footnotes -->

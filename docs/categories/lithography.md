@@ -264,38 +264,38 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### Cross-check
 
-* ITRS 2001, *Lithography* — Tables 57a and 59a: half-pitch, gate,
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — Tables 57a and 59a: half-pitch, gate,
   contact, overlay and CD-control targets, mask magnification and PSM
   choices.[^itrs-03]
-* ITRS 2001, *Front End Processes* — scanner field size and gate etch
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — scanner field size and gate etch
   bias.[^itrs-01]
-* SkyWater PDK, *Criteria & Assumptions* — the nominal photoresist
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the nominal photoresist
   thickness.[^pdk-03]
-* *S8 / SKY130 Process Steps* sheet, tab "Sheet4" — the mask types
+* [*S8 / SKY130 Process Steps* sheet, tab "Sheet4"](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the mask types
   recorded for the via 2, via 3 and via 4 plates.[^steps-sheet]
-* ASML, PAS 5500/750E press release (2000) — 130 nm resolution at
+* [ASML, PAS 5500/750E press release (2000)](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — 130 nm resolution at
   248 nm, NA 0.7, 120 wafers per hour.[^asml-750e]
-* ASML, PAS 5500/800 press release (2001) — NA 0.80, 120 nm
+* [ASML, PAS 5500/800 press release (2001)](<https://www.asml.com/en/news/press-releases/2001/asml-introduces-new-krf-step-and-scan-system-that-extends>) — NA 0.80, 120 nm
   resolution.[^asml-800]
-* ASML, *Three decades of PAS 5500* — the platform's longevity.[^asml-30]
-* Nikon, NSR-S204B specification summary — field, NA and
+* [ASML, *Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>) — the platform's longevity.[^asml-30]
+* [Nikon, NSR-S204B specification summary](<https://f.machineryhost.com/fc49306d97602c8ed1be1dfbf0835ead/aa008f2897d7d4a224ff92839b4299e9/SpecSummary_LITV25-01_NSR-S204B.pdf>) — field, NA and
   wavelength.[^nikon-s204b]
-* Tolpygo et al., arXiv 2014 — a Canon FPA-3000EX4 described in
+* [Tolpygo et al., arXiv 2014](<https://arxiv.org/abs/1408.5829>) — a Canon FPA-3000EX4 described in
   use.[^tolpygo-2014]
 * Tokyo Electron, *Coater/Developer ACT Series* product
   page.[^tel-act]
-* Semiconductor Online, *CLEAN TRACK ACT 8* — introduction date and
+* [Semiconductor Online, *CLEAN TRACK ACT 8*](<https://www.semiconductoronline.com/doc/clean-track-act-8-system-for-spin-on-dielectr-0001>) — introduction date and
   throughput.[^tel-act8]
 * GCE Market, KLA-Tencor 8100XP CD-SEM specification
   summary.[^gce-kla8100]
-* Ikegami et al., *Hitachi Review* 2011 — release dates and
+* [Ikegami et al., *Hitachi Review* 2011](<https://www.hitachihyoron.com/rev/pdf/2011/r2011_05_104.pdf>) — release dates and
   specifications of Hitachi CD-SEMs, including the S-9200.[^hitachi-2011]
-* MicroChemicals, *Development of photoresists* — TMAH developer
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — TMAH developer
   strength and practice.[^microchemicals-dev]
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography* — the process sequence, the resolution
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — the process sequence, the resolution
   equation and wavelengths.[^wiki-litho]
 * Wikipedia, *Stepper*.[^wiki-stepper]
 * Wikipedia, *Photoresist*.[^wiki-resist]
@@ -309,72 +309,72 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 * Wikipedia, *Diazonaphthoquinone*.[^wiki-dnq]
 * Wikipedia, *Tetramethylammonium hydroxide*.[^wiki-tmah]
 * Wikipedia, *Critical dimension*.[^wiki-cd]
-* Wikipedia, *KLA Corporation* — the inspection and metrology
+* [Wikipedia, *KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the inspection and metrology
   vendor.[^wiki-kla]
-* Mack, *The Basics of Microlithography* — an online
+* [Mack, *The Basics of Microlithography*](<https://www.lithoguru.com/scientist/lithobasics.html>) — an online
   tutorial.[^mack-basics]
-* Mack, *Fundamental Principles of Optical Lithography* — the full
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — the full
   chain from aerial image through resist kinetics to developed
   profile.[^mack-2007]
-* Levinson, *Principles of Lithography*, 4th ed. — tools, resists,
+* [Levinson, *Principles of Lithography*, 4th ed.](<https://doi.org/10.1117/3.2525393>) — tools, resists,
   overlay and metrology in one volume.[^levinson-2019]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — ch. 5
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 5
   ("Lithography").[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ch. 12–14.[^txt-02]
-* Campbell, *Fabrication Engineering at the Micro- and Nanoscale* —
+* [Campbell, *Fabrication Engineering at the Micro- and Nanoscale*](<https://openlibrary.org/isbn/9780199861224>) —
   ch. 7–9.[^campbell-2013]
 
 ### Deep dive
 
-* Lin, *J. Micro/Nanolith. MEMS MOEMS* 2002 — the k₁ and k₃ coefficients and
+* [Lin, *J. Micro/Nanolith. MEMS MOEMS* 2002](<https://doi.org/10.1117/1.1445798>) — the k₁ and k₃ coefficients and
   the nonparaxial scaling equations for resolution and depth of
   focus.[^lin-2002]
-* Lin, *Proc. SPIE* 1986 — where the resolution is lost between the
+* [Lin, *Proc. SPIE* 1986](<https://doi.org/10.1117/12.963701>) — where the resolution is lost between the
   Rayleigh limit and production practice.[^lin-1986]
-* Levenson, Viswanathan and Simpson, *IEEE TED* 1982 — the original
+* [Levenson, Viswanathan and Simpson, *IEEE TED* 1982](<https://doi.org/10.1109/T-ED.1982.21037>) — the original
   phase-shifting mask paper.[^levenson-1982]
-* Lin, *IEEE Circuits and Devices* 1993 — a tutorial on alternating and
+* [Lin, *IEEE Circuits and Devices* 1993](<https://doi.org/10.1109/101.200850>) — a tutorial on alternating and
   {term}`attenuated phase-shift masks <attenuated PSM>`.[^lin-1993]
-* Ito and Willson, *ACS Symp. Ser.* 1984 — the chemically amplified
+* [Ito and Willson, *ACS Symp. Ser.* 1984](<https://doi.org/10.1021/bk-1984-0242.ch002>) — the chemically amplified
   resist concept applied to semiconductor manufacturing.[^ito-1984]
-* Ito and Willson, *Polym. Eng. Sci.* 1983 — the first chemical
+* [Ito and Willson, *Polym. Eng. Sci.* 1983](<https://doi.org/10.1002/pen.760231807>) — the first chemical
   amplification resist paper.[^ito-1983]
-* Ito, *Adv. Polym. Sci.* 2005 — a 200-page review of chemically
+* [Ito, *Adv. Polym. Sci.* 2005](<https://doi.org/10.1007/b97574>) — a 200-page review of chemically
   amplified resists, including KrF poly(hydroxystyrene)
   systems.[^ito-2005]
-* Reichmanis and Thompson, *Chem. Rev.* 1989 — polymer materials for
+* [Reichmanis and Thompson, *Chem. Rev.* 1989](<https://doi.org/10.1021/cr00096a001>) — polymer materials for
   microlithography, DNQ/novolac included.[^reichmanis-1989]
-* Wallraff and Hinsberg, *Chem. Rev.* 1999 — lithographic imaging
+* [Wallraff and Hinsberg, *Chem. Rev.* 1999](<https://doi.org/10.1021/cr980003i>) — lithographic imaging
   techniques and resist chemistry for sub-quarter-micron
   features.[^wallraff-1999]
-* Dammel, *Diazonaphthoquinone-based Resists* — the SPIE tutorial text
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — the SPIE tutorial text
   on i-line resist chemistry.[^dammel-1993]
-* Otto et al., *Proc. SPIE* 1994 — rules-based optical proximity
+* [Otto et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175422>) — rules-based optical proximity
   correction.[^otto-1994]
-* Rieger and Stirniman, *Proc. SPIE* 1994 — model-based ("behaviour
+* [Rieger and Stirniman, *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175431>) — model-based ("behaviour
   modelling") proximity correction.[^rieger-1994]
-* Brunner, *Proc. SPIE* 1991 — optimising resist-stack optical
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — optimising resist-stack optical
   properties: swing curves and anti-reflective layers.[^brunner-1991]
-* Bossung, *Proc. SPIE* 1977 — the focus–exposure ("Bossung") plots
+* [Bossung, *Proc. SPIE* 1977](<https://doi.org/10.1117/12.955357>) — the focus–exposure ("Bossung") plots
   used to characterise projection printing.[^bossung-1977]
-* Mack, *Opt. Eng.* 1988 — understanding focus effects in
+* [Mack, *Opt. Eng.* 1988](<https://doi.org/10.1117/12.7978683>) — understanding focus effects in
   submicrometre optical lithography.[^mack-1988]
-* Levinson and Arnold, *JVST B* 1987 — focus as the critical parameter
+* [Levinson and Arnold, *JVST B* 1987](<https://doi.org/10.1116/1.583886>) — focus as the critical parameter
   for submicron lithography, and its budget.[^levinson-1987]
-* Starikov, *Opt. Eng.* 1992 — accuracy of overlay measurements and
+* [Starikov, *Opt. Eng.* 1992](<https://doi.org/10.1117/12.56172>) — accuracy of overlay measurements and
   tool-induced shift.[^starikov-1992]
-* Bruning, *Proc. SPIE* 2007 — a history of optical lithography tools
+* [Bruning, *Proc. SPIE* 2007](<https://doi.org/10.1117/12.720631>) — a history of optical lithography tools
   from contact printers to scanners.[^bruning-2007]
-* SEMI P1 — the specification for hard-surface photomask
+* [SEMI P1](<https://store-us.semi.org/products/p00100-semi-p1-specification-for-hard-surface-photomask-substrates>) — the specification for hard-surface photomask
   substrates.[^semi-p1]
-* Buffat and Adams (Zilog), US 6,576,405 — high-aspect-ratio thick
+* [Buffat and Adams (Zilog), US 6,576,405](<https://patents.google.com/patent/US6576405B1/en>) — high-aspect-ratio thick
   resist for high-energy implant masks.[^pat-resist-zilog]
-* Chip History Center, *PAS 5500/400 Step & Scan* — the ASML platform
+* [Chip History Center, *PAS 5500/400 Step & Scan*](<https://www.chiphistory.org/163-asml-pas-5500-400-step-scan-system>) — the ASML platform
   in its historical context.[^chiphistory-pas5500]
-* Mack, *Online Micro- and Nanofabrication Course* (CHE323) —
+* [Mack, *Online Micro- and Nanofabrication Course* (CHE323)](<https://www.lithoguru.com/scientist/CHE323/course.html>) —
   university lecture materials.[^mack-course]
-* MIT OpenCourseWare 6.152J — lecture notes on optical lithography and
+* [MIT OpenCourseWare 6.152J](<https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/>) — lecture notes on optical lithography and
   resists.[^ocw-6152]
 
 <!-- footnotes -->
