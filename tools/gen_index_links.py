@@ -23,11 +23,12 @@ and that label resolves to a file outside ``docs/references/`` and
 themselves is out of scope for this direction; those pages already link
 back to process pages on their own).
 
-Block content: one H3 heading (``heading_for()`` — step-specific wording
-on step pages, ``### Related patents, papers and filings`` elsewhere),
-then per dataset a bold inline lead-in (report-A F13, report-B B11 —
-the block used to be an orphan bold line with no heading and no TOC
-entry):
+Block content: one heading (``heading_for()`` — step-specific wording on
+step pages, ``### Related patents, papers and filings`` elsewhere),
+normally an H3 but downgraded to H2 wherever an H3 would falsely nest
+under an unrelated preceding H2 (``heading_level()``; review H1), then
+per dataset a bold inline lead-in (report-A F13, report-B B11 — the
+block used to be an orphan bold line with no heading and no TOC entry):
 
 * **Related patents.** Expired families listed as ``{ref}`` links whose
   text is the title, followed by the publication number and year
@@ -48,9 +49,10 @@ hidden" rule is then trivially satisfied: no numbers are shown on the
 process page at all).
 
 The block is inserted immediately before the page's ``## References``
-heading, which every target page has exactly once, so the new H3 always
-falls under whatever H2 precedes ``## References`` (on step pages,
-"Related steps and cross-references"). ``--check`` fails if any page's
+heading, which every target page has exactly once, so the new heading
+always falls under whatever H2 precedes ``## References`` (on step
+pages, "Related steps and cross-references"; see ``heading_level()``
+for the H2/H3 choice on other page types). ``--check`` fails if any page's
 block is missing, stale or was hand-edited (i.e. differs from what this
 script would write). ``--selftest`` exercises the block-building and
 text-splicing logic on synthetic data, touching nothing in the
@@ -257,17 +259,63 @@ def render_filings(filings: list[dict]) -> list[str]:
 
 
 def heading_for(path: Path) -> str:
-    """The H3 heading that introduces the block (report-A F13, report-B
-    B11): step pages get step-specific wording, every other page type
-    gets the generic form. The block always lands under whatever H2
-    precedes "## References" on that page (see apply_block/module
-    docstring) — on step pages that is "Related steps and
-    cross-references" (a mandatory heading), which is where F13 asks
-    for it to fall."""
+    """The heading that introduces the block (report-A F13, report-B
+    B11), as an H3: step pages get step-specific wording, every other
+    page type gets the generic form. The block always lands
+    immediately before "## References" (see apply_block/module
+    docstring). On a page whose last H2 before that point is itself a
+    "Related …" section (step pages' "Related steps and
+    cross-references", or "Related pages" on machine/material/mask
+    pages), an H3 correctly nests under it, which is where F13 asks for
+    it to fall. See ``heading_level()`` for pages where it does not."""
     kind = path.relative_to(DOCS).parts[0]
     if kind == "steps":
         return "### Patents, papers and filings about this step"
     return "### Related patents, papers and filings"
+
+
+def heading_level(stripped_text: str, path: Path) -> str:
+    """``heading_for(path)``, downgraded from H3 to H2 where nesting it
+    under the preceding H2 would be false (review H1): report-B B11
+    named exactly this — on the 10 category pages, the two overview
+    pages and the machines/materials/masks *index* pages, the block's
+    H2 predecessor is unrelated ("Steps in this category", "Key open
+    questions", "Safety and abatement", …), so an H3 there reads as a
+    false child of that section rather than its own topic. Where the
+    preceding H2 already starts "Related" (step pages, and the
+    machine/material/mask *class* pages, whose H2 is "Related pages"),
+    the H3 nests correctly and is left alone. ``stripped_text`` is the
+    page text with any existing generated block already removed, so a
+    stale block's own heading is never mistaken for page content."""
+    idx = stripped_text.find(f"\n{REF_HEADING}\n")
+    before = stripped_text[:idx] if idx != -1 else stripped_text
+    h2s = [line for line in before.splitlines() if line.startswith("## ")]
+    heading = heading_for(path)
+    if h2s and h2s[-1].startswith("## Related"):
+        return heading
+    return heading[1:]  # "### ..." -> "## ..."
+
+
+LABEL_ONLY_RE = re.compile(r"^\*\*Related \w+\.\*\*$")
+LABEL_PREFIX_RE = re.compile(r"^\*\*Related \w+\.\*\* ")
+
+
+def drop_redundant_label(part: list[str]) -> list[str]:
+    """Remove a dataset's own bold "**Related X.**" lead-in when it is
+    the only dataset in the block (review L3): the heading above it
+    already says "Patents, papers and filings" (or the step-specific
+    form), so repeating "Related patents." immediately under it reads
+    as the same label twice. Only used when ``len(parts) == 1`` in
+    ``render_block()``; with two or three datasets each lead-in still
+    tells them apart and is left alone."""
+    if not part:
+        return part
+    if LABEL_ONLY_RE.match(part[0]):
+        rest = part[1:]
+        if rest[:1] == [""]:
+            rest = rest[1:]
+        return rest
+    return [LABEL_PREFIX_RE.sub("", part[0], count=1), *part[1:]]
 
 
 def render_block(data: dict[str, list], heading: str) -> str:
@@ -275,6 +323,8 @@ def render_block(data: dict[str, list], heading: str) -> str:
                           render_filings(data["filings"])) if p]
     if not parts:
         return ""
+    if len(parts) == 1:
+        parts = [drop_redundant_label(parts[0])]
     lines: list[str] = [heading, ""]
     for i, part in enumerate(parts):
         if i:
@@ -341,8 +391,9 @@ def generate() -> dict[Path, str]:
     out: dict[Path, str] = {}
     for path in sorted(candidate_pages(labels, targets)):
         data = targets.get(path, empty)
-        content = render_block(data, heading_for(path))
         old_text = path.read_text(encoding="utf-8")
+        heading = heading_level(strip_existing(old_text), path)
+        content = render_block(data, heading)
         new_text = apply_block(old_text, content, str(path.relative_to(ROOT)))
         if new_text != old_text:
             out[path] = new_text
@@ -518,6 +569,44 @@ def selftest() -> int:
     headed = render_block({"patents": [_fam("GP7", True)], "papers": [], "filings": []}, step_h)
     if not headed.startswith(step_h + "\n\n"):
         problems.append(f"render_block did not lead with the heading: {headed!r}")
+
+    # 4d. heading_level(): H3 kept only when it would nest under a
+    # "Related ..." H2; downgraded to H2 otherwise (review H1).
+    related_page = "# Title\n\n## Related pages\n\nSome text.\n\n## References\n\n### Cross-check\n"
+    unrelated_page = "# Title\n\n## Steps in this category\n\nSome text.\n\n## References\n\n### Cross-check\n"
+    machines_index_path = DOCS / "machines" / "index.md"
+    lvl_related = heading_level(related_page, machines_index_path)
+    lvl_unrelated = heading_level(unrelated_page, DOCS / "categories" / "cmp.md")
+    if lvl_related != other_h:
+        problems.append(f"heading_level downgraded an H3 that nests correctly: {lvl_related!r}")
+    if lvl_unrelated != "## Related patents, papers and filings":
+        problems.append(f"heading_level did not downgrade a false H3 nesting: {lvl_unrelated!r}")
+    # A stale block already in the text must not be mistaken for a
+    # "## Related ..." predecessor once strip_existing() removes it.
+    stale = apply_block(unrelated_page, "### Some stale heading\n\nstuff", "test")
+    lvl_after_stale = heading_level(strip_existing(stale), DOCS / "categories" / "cmp.md")
+    if lvl_after_stale != "## Related patents, papers and filings":
+        problems.append(f"heading_level was fooled by a stale block: {lvl_after_stale!r}")
+
+    # 4e. render_block() drops the redundant "**Related X.**" lead-in
+    # when only one dataset is present (review L3), in both the list
+    # form and the >THRESHOLD count-sentence form; with two datasets
+    # both lead-ins stay so the reader can tell them apart.
+    one_list = render_block({"patents": [_fam("GP10", True)], "papers": [], "filings": []}, other_h)
+    if "**Related patents.**" in one_list:
+        problems.append(f"single-dataset block kept the redundant label: {one_list!r}")
+    if "patent-gp10" not in one_list:
+        problems.append(f"dropping the label lost the list itself: {one_list!r}")
+    fams13 = [_fam(f"GP1{i}", True) for i in range(13)]
+    one_over = render_block({"patents": fams13, "papers": [], "filings": []}, other_h)
+    if "**Related patents.**" in one_over:
+        problems.append(f"single-dataset over-threshold block kept the redundant label: {one_over!r}")
+    if "concern this page" not in one_over:
+        problems.append(f"dropping the label lost the count sentence: {one_over!r}")
+    two = render_block({"patents": [_fam("GP20", True)], "papers": [_paper("doi:2", "paper-y-2021a")],
+                         "filings": []}, other_h)
+    if "**Related patents.**" not in two:
+        problems.append(f"two-dataset block dropped a lead-in it should have kept: {two!r}")
 
     # 5. Papers and filings render at all, and also collapse over threshold.
     p_block = render_papers([_paper("doi:1", "paper-x-2020a")])
