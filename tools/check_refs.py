@@ -19,6 +19,24 @@ Rules (see docs/plans/citation-style.md):
   whose target is not an ``http(s)`` URL (a ``{ref}``/relative link, an
   anchor, …) is not checked.
 
+  Known scope, deliberately (review finding L1, so this is not
+  rediscovered as a bug):
+
+  * the split is at the *first* such line, so a link placed after it
+    (house style never does: citation-style.md rule 3 puts every
+    definition at the very end of the page) would not be checked;
+  * generated pages (``docs/references/{papers,patents,filings}/``, and
+    ``docs/references/index.md``, ``docs/index.md``,
+    ``docs/glossary.md``, none of which is in ``TARGETS``) are outside
+    this invariant entirely -- citation-style.md's own exception for
+    generated index pages already says they cite inline, not by
+    footnote, so there is no "own footnote definitions" for them to
+    match;
+  * a bare autolink (``<https://evil.example/x>`` with no ``[text](...)``
+    around it) is not a markdown *link* and is not checked -- C4 only
+    ever specifies a linked reading-list head or title, never a bare
+    URL dropped into prose.
+
 Stub pages (containing "This page is a stub." or "This section is a
 stub.") are skipped.  Exit status
 is non-zero on any violation.  Run with ``uv run tools/check_refs.py``.
