@@ -102,6 +102,7 @@ import hashlib
 import json
 import re
 import sys
+import tempfile
 import threading
 import time
 import urllib.error
@@ -132,6 +133,14 @@ WAYBACK_NEGATIVE_MAX_AGE_DAYS = 1
 # to the hand-written pages (citation-style.md's documented exception --
 # these pages link inline, not via footnotes).
 GENERATED_DIRS = ("patents", "papers", "filings")
+
+# Not content pages -- matches conf.py's own Sphinx `exclude_patterns`
+# ("plans/**"). Internal planning docs illustrate citation forms with
+# fenced-code-block examples (a literal <https://example.com/page>, an
+# ellipsis-truncated placeholder host); a bare "starts a line with
+# `[^label]:`" regex cannot tell that apart from a real footnote
+# definition, so this scope must be excluded explicitly.
+EXCLUDED_TOP_LEVEL_DIRS = {"plans"}
 
 # Hosts cited so many times on generated pages (thousands of Espacenet /
 # Google Patents record-page links per family) that checking every one
@@ -399,7 +408,7 @@ def _scan_generated(reg: Registry, docs_dir: Path) -> None:
                         kept_urls.add(u)
                 else:
                     kept_urls.add(u)
-            reg.add_page(str(path.relative_to(ROOT)), "(generated)", kept_urls, dois)
+            reg.add_page(str(path.relative_to(docs_dir.parent)), "(generated)", kept_urls, dois)
 
 
 def build_registry(
@@ -410,13 +419,21 @@ def build_registry(
         for key, (urls, dois, date) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
             reg.add_inventory(key, urls, dois, date)
     for path in sorted(docs_dir.rglob("*.md")):
+        rel_parts = path.relative_to(docs_dir).parts
+        if rel_parts and rel_parts[0] in EXCLUDED_TOP_LEVEL_DIRS:
+            # Not a hand-written or generated content page (Sphinx's own
+            # conf.py excludes "plans/**" from the build the same way):
+            # planning docs quote example citations -- including a fenced
+            # R-WAYBACK template with a literal <https://example.com/page>
+            # -- as illustrative markdown, not real footnote definitions to
+            # check.
+            continue
         if include_generated:
-            rel_parts = path.relative_to(docs_dir).parts
             if len(rel_parts) >= 2 and rel_parts[0] == "references" and rel_parts[1] in GENERATED_DIRS:
                 continue  # scanned whole-file by _scan_generated instead
         text = path.read_text(encoding="utf-8")
         for label, (urls, dois, date) in parse_page_footnotes(text).items():
-            reg.add_page(str(path.relative_to(ROOT)), label, urls, dois, date)
+            reg.add_page(str(path.relative_to(docs_dir.parent)), label, urls, dois, date)
     if include_generated:
         _scan_generated(reg, docs_dir)
     return reg
@@ -1159,6 +1176,33 @@ Some claim.[^wiki-fick][^pdk-01]
         "doi token merges bare-DOI and doi.org URL forms",
         reg.inventory_keys[token_for(doi="10.1109/proc.1972.8854")] == {"PDK-02"},
     )
+
+    # build_registry() must not scan docs/plans/ (matches conf.py's own
+    # Sphinx exclude_patterns): a planning doc's fenced-code-block example
+    # citation (R-WAYBACK's own template, verbatim) is not a real
+    # footnote to check -- it is not a content page at all. Filesystem
+    # only, no network.
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_docs = Path(tmp) / "docs"
+        (tmp_docs / "steps").mkdir(parents=True)
+        (tmp_docs / "plans").mkdir(parents=True)
+        (tmp_docs / "steps" / "001-real.md").write_text(
+            "Claim.[^wiki-x]\n\n[^wiki-x]: Wikipedia, *X*.\n    <https://en.wikipedia.org/wiki/X>\n",
+            encoding="utf-8",
+        )
+        (tmp_docs / "plans" / "readability-guide.md").write_text(
+            "Example template:\n\n```\n[^key]: Author, *Title*.\n"
+            "    <https://web.archive.org/web/20260411150120/https://example.com/page>\n"
+            "    (original: `https://example.com/page`).\n```\n",
+            encoding="utf-8",
+        )
+        tmp_reg = build_registry(docs_dir=tmp_docs, inventory=Path(tmp) / "nonexistent.md")
+        check("real content page is scanned", "https://en.wikipedia.org/wiki/X" in tmp_reg.tokens())
+        check(
+            "docs/plans/ is excluded (illustrative example, not a real citation)",
+            "https://example.com/page" not in tmp_reg.tokens()
+            and not any("web.archive.org" in t for t in tmp_reg.tokens()),
+        )
 
     # classify() unit cases, no network.
     check("plain 200 is ok", classify("https://a/", False, 200, "https://a/", [], None) == "ok")
