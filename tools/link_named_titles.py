@@ -40,7 +40,16 @@ is recognised as already linked and never re-processed.
 Usage::
 
     uv run tools/link_named_titles.py [--check] [path ...]
+    uv run tools/link_named_titles.py --refresh [--check] [path ...]
     uv run tools/link_named_titles.py --selftest
+
+``--refresh`` (review finding H2) is a separate mode: it never links a
+new title, only re-points an *already-linked* title's URL to its own
+label's *current* first URL, for the case a definition's first URL
+moves after the link was made (R-WAYBACK). Only a link whose italic
+title matches exactly one label's own definition title is touched --
+review finding L3's ambiguity case (two labels sharing a title) is left
+for a human. Combine with ``--check`` for a dry run.
 """
 
 from __future__ import annotations
@@ -83,6 +92,10 @@ GENBLOCK_RE = re.compile(
     r"do not edit\) -->.*?<!-- index-links:end -->",
     re.S,
 )
+
+
+def _norm(s: str) -> str:
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def page_titles(text: str) -> dict[str, tuple[str, str]]:
@@ -254,6 +267,64 @@ def process_text(text: str) -> tuple[str, dict[str, int]]:
     return new_text, counts
 
 
+# Matches exactly the shape this script itself produces: an italic title
+# (the same ITALIC_RE span) wrapped in a link.
+REFRESH_LINK_RE = re.compile(
+    r"\[((?<!\*)\*(?![\s*])[^*]+?(?<![\s*])\*(?!\*))\]\(<(https?://[^<>\s]+)>\)"
+)
+
+
+def refresh_text(text: str) -> tuple[str, dict[str, int]]:
+    """Review finding H2. Re-point an already-linked title to its own
+    label's *current* first URL, when a definition has moved (R-WAYBACK).
+
+    Only a link whose italic title (whitespace-normalised) matches
+    **exactly one** label's own definition title is touched -- review
+    finding L3 warns that two labels can share a title (a paper's own
+    title versus its journal name, say); refreshing such a link would
+    have to guess which label it was ever meant to point at, so it is
+    left alone instead. Never creates a new link; never changes a URL to
+    anything but that one label's own definition's first URL.
+    """
+    counts: dict[str, int] = {"refreshed": 0}
+    titles = page_titles(text)
+    by_title: dict[str, list[str]] = {}
+    for lab, (title, _url) in titles.items():
+        by_title.setdefault(_norm(title), []).append(lab)
+    body, _ = split_body(text)
+    dropdown_lines = check_inforce.dropdown_lines(text)
+    genblock_lines: set[int] = set()
+    gm = GENBLOCK_RE.search(body)
+    if gm:
+        start_line = body.count("\n", 0, gm.start()) + 1
+        end_line = body.count("\n", 0, gm.end()) + 1
+        genblock_lines = set(range(start_line, end_line + 1))
+
+    edits: list[tuple[int, int, str]] = []
+    for m in REFRESH_LINK_RE.finditer(body):
+        lineno = body.count("\n", 0, m.start()) + 1
+        if lineno in dropdown_lines or lineno in genblock_lines:
+            continue
+        title_text = _norm(m.group(1)[1:-1])
+        labs = by_title.get(title_text, [])
+        if len(labs) != 1:
+            continue  # unknown, or ambiguous between labels (L3): skip
+        lab = labs[0]
+        current_url = titles[lab][1]
+        old_url = m.group(2)
+        if old_url == current_url:
+            continue
+        edits.append((m.start(2), m.end(2), current_url))
+        counts["refreshed"] += 1
+
+    edits.sort(key=lambda e: e[0], reverse=True)
+    new_body = body
+    for start, end, replacement in edits:
+        new_body = new_body[:start] + replacement + new_body[end:]
+    new_text = new_body + text[len(body) :]
+    return new_text, counts
+
+
 def target_files(paths: list[str]) -> list[Path]:
     if paths:
         return [Path(p).resolve() for p in paths]
@@ -265,19 +336,21 @@ def target_files(paths: list[str]) -> list[Path]:
     )
 
 
-def run(paths: list[str], check: bool) -> int:
+def run(paths: list[str], check: bool, refresh: bool = False) -> int:
     total = 0
     changed_files: list[Path] = []
+    processor = refresh_text if refresh else process_text
+    key = "refreshed" if refresh else "linked"
     for path in target_files(paths):
         text = path.read_text(encoding="utf-8")
-        new_text, counts = process_text(text)
-        total += counts["linked"]
+        new_text, counts = processor(text)
+        total += counts[key]
         if new_text != text:
             changed_files.append(path)
             if not check:
                 path.write_text(new_text, encoding="utf-8")
     print(f"{len(changed_files)} files {'would change' if check else 'changed'}")
-    print(f"linked: {total}")
+    print(f"{key}: {total}")
     if check:
         for f in changed_files:
             print(f"would change: {f.relative_to(ROOT)}")
@@ -492,6 +565,61 @@ def selftest() -> int:
     if "[*Periphery\nrules*](<https://example.com/periph>)" not in new:
         fail(f"the wrapped title was mishandled: {new!r}")
 
+    # --refresh (H2): an already-linked title is re-pointed when its own
+    # label's definition now gives a different first URL (R-WAYBACK).
+    p = page(
+        "## A\n\nThe PDK's [*Periphery rules*](<https://example.com/old>) "
+        "page gives a value.[^pdk-periph]\n",
+        "[^pdk-periph]: SkyWater PDK, *Periphery rules*. "
+        "<https://web.archive.org/web/20260101000000/https://example.com/old>\n",
+    )
+    new, counts = refresh_text(p)
+    if counts.get("refreshed") != 1:
+        fail(f"--refresh did not fire on a moved URL: {counts}")
+    if ("[*Periphery rules*]"
+        "(<https://web.archive.org/web/20260101000000/https://example.com/old>)"
+        ) not in new:
+        fail(f"--refresh produced the wrong link: {new!r}")
+
+    # --refresh is idempotent: refreshing twice makes no further change.
+    new2, counts2 = refresh_text(new)
+    if new2 != new or counts2.get("refreshed", 0):
+        fail(f"--refresh is not idempotent: {counts2}")
+
+    # --refresh never touches a link whose title is ambiguous between two
+    # labels (L3): here both "x" and "y" have the definition title "Same
+    # Title", so the existing link is left exactly as it is.
+    p = page(
+        "## A\n\nSee [*Same Title*](<https://example.com/old>) for "
+        "details.[^x]\n",
+        "[^x]: A. *Same Title*. <https://example.com/new>\n"
+        "[^y]: B. *Same Title*. <https://example.com/other>\n",
+    )
+    new, counts = refresh_text(p)
+    if new != p or counts.get("refreshed", 0):
+        fail(f"--refresh touched an ambiguous title: {new!r} {counts}")
+
+    # --refresh never creates a new link, and never touches one inside a
+    # dropdown.
+    p = (
+        "# T\n\n## A\n\n"
+        ":::{dropdown} From a patent shown as in force (US 1,234,567; "
+        "estimated expiry 2030-01-01) — open to read\n"
+        "The PDK's [*Periphery rules*](<https://example.com/old>) also "
+        "matters here.[^pdk-periph]\n"
+        ":::\n\n"
+        "The PDK's *Unlinked rules* are separate.[^pdk-unlinked]\n\n"
+        "## References\n\n"
+        "[^pdk-periph]: SkyWater PDK, *Periphery rules*. "
+        "<https://example.com/new>\n"
+        "[^pdk-unlinked]: SkyWater PDK, *Unlinked rules*. "
+        "<https://example.com/unlinked>\n"
+    )
+    new, counts = refresh_text(p)
+    if new != p or counts.get("refreshed", 0):
+        fail(f"--refresh touched a dropdown link or created a new one: "
+             f"{new!r} {counts}")
+
     if problems:
         for p_ in problems:
             print("FAIL:", p_)
@@ -503,12 +631,21 @@ def selftest() -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--check", action="store_true", help="report only, write nothing")
+    ap.add_argument(
+        "--refresh",
+        action="store_true",
+        help=(
+            "re-point an already-linked title to its own label's current "
+            "first URL (e.g. after R-WAYBACK); never links a new title, "
+            "combine with --check for a dry run"
+        ),
+    )
     ap.add_argument("--selftest", action="store_true", help="run offline unit tests")
     ap.add_argument("paths", nargs="*")
     args = ap.parse_args()
     if args.selftest:
         return selftest()
-    return run(args.paths, args.check)
+    return run(args.paths, args.check, args.refresh)
 
 
 if __name__ == "__main__":
