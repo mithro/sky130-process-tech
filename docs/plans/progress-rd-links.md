@@ -52,35 +52,90 @@ Branch `topic/rd-links`, worktree `.worktrees/rd-links`. Task: W0f of
     the deterministic generated-host sampling. `uv run tools/check_links.py
     --selftest` passes.
 
-## In progress / next
+* Found and fixed a second, pre-existing tool bug while running the real
+  check: `build_registry()` scanned all of `docs/**/*.md`, including
+  `docs/plans/` (excluded from the Sphinx build by `conf.py`'s own
+  `exclude_patterns`, but not from this tool). `docs/plans/readability-guide.md`'s
+  own R-WAYBACK worked example (a fenced code block with a literal
+  `<https://web.archive.org/web/.../https://example.com/page>`) was
+  being picked up as a real footnote definition. Fixed by excluding
+  `docs/plans/`, covered by a new offline `--selftest` case. Separate
+  commit `34f20c91`.
 
-* Committing the tool fix (this file + `tools/check_links.py`) before
-  running the real, long, foreground site check per common rule 4 and
-  the task's "commit the tool first" instruction.
-* Full re-check of every hand-written page (chunked by directory, cache
-  kept, foreground) — this is check 2 for the C5 "two checks ≥ 24 h
-  apart" dead rule; `docs/plans/link-check-2026-09.md` (2026-09-19) is
-  check 1.
-* Early finding (smoke test, `--only-host jtec.utem.edu.my`, before the
-  full run): `https://jtec.utem.edu.my/jtec/article/view/697` (THUNG-2016)
-  now resolves **200 OK** directly. Check 1 failed (timeout, 2026-09-19);
-  check 2 (today, 2026-09-20) succeeds — by the C5 rule ("two checks ≥
-  24 h apart both fail") this is **not dead**, confirming report-C.md's
-  C5 finding that the old report's "no snapshot" row for THUNG-2016 was
-  wrong (the tool's stale/glitchy Wayback answer, not a real dead link).
-  Checked commit `97d5754410a535c29357c96f5b1f76c155096824` ("Note
-  THUNG-2016's article-view page timeout; point at the working PDF
-  link"): it only added a note and surfaced the already-cited PDF link
-  on all 11 repeating footnotes plus the inventory entry — **no
-  quotation was removed under rule 11** for this source. Nothing to
-  restore. No citation change needed for THUNG-2016 (leaving the
-  existing "(times out as of 2026-09-19...)" note as a true, dated
-  historical record — presentation-only, not something this branch
-  rewrites).
-* Still to do: the full run; verify (fetch `id_` form) and rewrite any
-  link found genuinely dead by the two-check rule, in every repeating
-  footnote and the inventory entry, C5 step-3 form; wording
-  normalisation pass on existing Wayback citations where trivially
-  safe; `docs/plans/link-check-2026-09b.md`; `check_preserved.py` on
-  every page touched; the full checker/build suite from
-  `tmp/prompts/rd-common.txt` rule 7.
+## The real re-check (task item 2) — done
+
+Full details, reasoning and evidence are in `docs/plans/link-check-2026-09b.md`
+(the deliverable for this item); summary here for anyone resuming this
+branch:
+
+* Ran the full site check (1791 tokens, same scope as the 2026-09-19
+  report). It is genuinely a long job (~941 DOIs alone, 3 s/host pacing,
+  ≈ 47 minutes with nothing else running) — rather than duplicate that
+  load from the same shared IP (common rule 12), reused another
+  worktree's independently completed same-day full run as the cache
+  base, merged with this branch's own partial run, then topped up
+  (`--list-hosts` confirmed 0 pending everywhere) and explicitly
+  recomputed the Wayback answer for all six dead tokens with the fixed
+  lookup (not inherited from either run).
+* **Result: the same six tokens as 2026-09-19, no new dead links.**
+  2 MERCKEL-1977 DOIs and 1 ROSENFIELD-1986 DOI: still dead, still no
+  Wayback snapshot (checked the actual redirect targets, not just the
+  DOI), already correctly under rule 11 with a dated note — no change
+  (DOIs are never replaced by an archive URL, C5 step 5).
+* **THUNG-2016**: the task's specific ask. Confirmed and fixed the
+  report-C.md C5 finding — the availability API's intermittent bare
+  `{}` was being cached as "no snapshot"; a real snapshot
+  (2026-04-11) exists and the fixed tool now finds it reliably.
+  **Verified it (C5 step 2)**: fetched the `id_` form, confirmed the
+  exact title and the author's name are present, not a soft-404.
+  **Checked for wrongly-removed quotations** (the task's specific
+  ask): reviewed commit `97d5754410a535c29357c96f5b1f76c155096824`
+  (2026-09-19, the only commit that ever touched this citation for a
+  dead-link reason) — it only added a note and surfaced the
+  already-cited working PDF link on all 11 footnotes + the inventory
+  entry. **No quotation was removed under rule 11; nothing needs
+  restoring.** No citation change made: the primary URL is
+  intermittently reachable (confirmed both an HTTP 200 and a timeout
+  from this session alone), and the existing note plus the always-live
+  PDF alternative already serves the reader better than a five-month-stale
+  archive substitute would (that would also misstate the resource as
+  flatly "dead since 2026-09-20", which it demonstrably is not).
+* **AMAT-RTP / TEL-PROBER**: re-verified with fresh, direct `curl`
+  checks; both reproduce the exact same "checking-environment
+  limitation" / "intermittent, not dead" pattern the 2026-09-19 report
+  already documented for these two sources (independently, again,
+  today). No citation change, matching that precedent.
+* All three "no change" calls above are judgement calls, flagged
+  clearly in `link-check-2026-09b.md` for the owner to override.
+* **Wording normalisation (task item 3)**: audited all 228 archive-first
+  Wayback citations on hand-written pages. 177 already use the exact
+  house wording. The remaining 21 are two different, correct, existing
+  patterns unrelated to R-WAYBACK (THUNG-2016's aside note; the
+  SEC-01/SEC-02 "read from a copy" note for a script-blocked, not dead,
+  host) plus 3 reading-list-bullet short annotations whose own footnote
+  definitions already use the house wording. Nothing needed changing;
+  full breakdown in `link-check-2026-09b.md`.
+* **Side finding, not acted on**: 17 `openlibrary.org` tokens flipped
+  from `blocked-to-scripts` to `redirected-permanently` between the two
+  runs today (the site's `/verify_human` bot challenge is known to be
+  IP-load-triggered, not UA-based, so this is expected flakiness, not a
+  citation problem). Not an R-WAYBACK matter; left untouched; recorded
+  in the b-report so the count difference isn't mistaken for a
+  regression.
+* No content page was changed, so `tools/check_preserved.py` had
+  nothing to run on.
+* Full checker suite (`tmp/prompts/rd-common.txt` rule 7) run and
+  passing: `check_steps`, `check_refs`, `check_machines`,
+  `check_materials`, `check_masks`, `check_papers`, `check_patents`,
+  `check_filings`, `check_inforce`, `gen_papers/gen_patents/gen_filings/gen_index_links --check`,
+  and `sphinx-build -W -q -b html docs tmp/_build/html`.
+
+## Status: done
+
+All four numbered items of the W0f task are complete:
+1. `tools/check_links.py` fixed and extended (see "Done" above).
+2. The real re-check run, dead-link determination, THUNG-2016 recheck,
+   quotation audit — see "The real re-check" above and
+   `docs/plans/link-check-2026-09b.md`.
+3. Wording normalisation audited — nothing unsafe found; documented.
+4. `docs/plans/link-check-2026-09b.md` written.
