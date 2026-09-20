@@ -362,57 +362,57 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the film deposition,
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the film deposition,
   furnace, RTA and asher entries.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   compressed gases, gas suppliers and the fab's Cypress
   history.[^sec-01][^sec-02]
-* Cypress Semiconductor, *Cypress Closes Sale of Minnesota Wafer
-  Fabrication Facility* (2017) — the Bloomington fab as Fab 4.[^cyp-01]
-* Cypress Semiconductor, QTP 014807 — a TEOS and PECVD nitride
+* [Cypress Semiconductor, *Cypress Closes Sale of Minnesota Wafer
+  Fabrication Facility* (2017)](<https://www.prnewswire.com/news-releases/cypress-closes-sale-of-minnesota-wafer-fabrication-facility-300416287.html>) — the Bloomington fab as Fab 4.[^cyp-01]
+* [Cypress Semiconductor, QTP 014807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>) — a TEOS and PECVD nitride
   passivation at the fab in 2005.[^cyp-qtp-014807]
 * SEMI C3.55, C3.12 and C70 — specifications for silane, ammonia and
   tungsten hexafluoride.[^semi-c3-55][^semi-c3-12][^semi-c70]
 * NIOSH, *Pocket Guide to Chemical Hazards* — ammonia and
   diborane.[^niosh-nh3][^niosh-diborane]
-* Applied Materials, *SACVD* (Wayback capture of 2000) — TEOS and ozone
+* [Applied Materials, *SACVD* (Wayback capture of 2000)](<https://web.archive.org/web/20000709131617/http://www.appliedmaterials.com:80/products/sacvd.html>) — TEOS and ozone
   in a sub-atmospheric chamber.[^amat-sacvd-2000]
-* Lee and Collins (Novellus), US 6,635,965 — the pulsed nucleation
+* [Lee and Collins (Novellus), US 6,635,965](<https://patents.google.com/patent/US6635965B1/en>) — the pulsed nucleation
   layer.[^pat-pnl-novellus]
 
 ### High-level understanding
 
-* Wikipedia, *Silane*, *Dichlorosilane* and *Ammonia* — silicon and
+* Wikipedia, [*Silane*](<https://en.wikipedia.org/wiki/Silane>), [*Dichlorosilane*](<https://en.wikipedia.org/wiki/Dichlorosilane>) and [*Ammonia*](<https://en.wikipedia.org/wiki/Ammonia>) — silicon and
   nitrogen precursors.[^wiki-silane][^wiki-dcs][^wiki-ammonia]
-* Wikipedia, *Tetraethyl orthosilicate*, *Ozone* and *Silicon
-  tetrafluoride* — oxide precursors.[^wiki-teos][^wiki-ozone][^wiki-sif4]
-* Wikipedia, *Tungsten hexafluoride* and *Diborane* — the tungsten fill
+* Wikipedia, [*Tetraethyl orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>), [*Ozone*](<https://en.wikipedia.org/wiki/Ozone>) and [*Silicon
+  tetrafluoride*](<https://en.wikipedia.org/wiki/Silicon_tetrafluoride>) — oxide precursors.[^wiki-teos][^wiki-ozone][^wiki-sif4]
+* Wikipedia, [*Tungsten hexafluoride*](<https://en.wikipedia.org/wiki/Tungsten_hexafluoride>) and [*Diborane*](<https://en.wikipedia.org/wiki/Diborane>) — the tungsten fill
   gases.[^wiki-wf6][^wiki-diborane]
-* Wikipedia, *Industrial gas* — gas cabinets and supply.[^wiki-industrial-gas]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — CVD
+* [Wikipedia, *Industrial gas*](<https://en.wikipedia.org/wiki/Industrial_gas>) — gas cabinets and supply.[^wiki-industrial-gas]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — CVD
   of silicon, oxide, nitride and tungsten.[^txt-02]
 
 ### Deep dive
 
-* Kamins, *JES* 1980 — LPCVD silicon from silane.[^kamins-1980]
-* Roenigk and Jensen, *JES* 1987 — LPCVD nitride from dichlorosilane and
+* [Kamins, *JES* 1980](<https://doi.org/10.1149/1.2129733>) — LPCVD silicon from silane.[^kamins-1980]
+* [Roenigk and Jensen, *JES* 1987](<https://doi.org/10.1149/1.2100756>) — LPCVD nitride from dichlorosilane and
   ammonia.[^roenigk-1987]
-* Gumpher et al., *JES* 2004 — BTBAS nitride.[^gumpher-2004]
-* Becker et al., *JVST B* 1987 — LPCVD TEOS oxide.[^becker-1987]
-* Adams et al., *JES* 1981 — plasma-deposited oxide.[^adams-1981-pecvd]
-* Denisse et al., *JAP* 1986 — PECVD oxynitride from silane, N₂O and
+* [Gumpher et al., *JES* 2004](<https://doi.org/10.1149/1.1690294>) — BTBAS nitride.[^gumpher-2004]
+* [Becker et al., *JVST B* 1987](<https://doi.org/10.1116/1.583673>) — LPCVD TEOS oxide.[^becker-1987]
+* [Adams et al., *JES* 1981](<https://doi.org/10.1149/1.2127680>) — plasma-deposited oxide.[^adams-1981-pecvd]
+* [Denisse et al., *JAP* 1986](<https://doi.org/10.1063/1.337117>) — PECVD oxynitride from silane, N₂O and
   ammonia.[^denisse-1986]
 * Fujino et al., *JES* 1990 and 1991 — TEOS–ozone oxide and doped
   glass.[^fujino-1990][^fujino-1991]
-* Kwok et al., *JES* 1994 — surface effects in ozone–TEOS gap
+* [Kwok et al., *JES* 1994](<https://doi.org/10.1149/1.2055081>) — surface effects in ozone–TEOS gap
   fill.[^kwok-1994]
-* Nguyen, *IBM J. Res. Dev.* 1999 — HDP-CVD dielectrics.[^nguyen-1999]
-* Denison, Barbour and Burkhart, *JVST A* 1996 — fluorine-doped oxide
+* [Nguyen, *IBM J. Res. Dev.* 1999](<https://doi.org/10.1147/rd.431.0109>) — HDP-CVD dielectrics.[^nguyen-1999]
+* [Denison, Barbour and Burkhart, *JVST A* 1996](<https://doi.org/10.1116/1.580280>) — fluorine-doped oxide
   from SiF₄.[^denison-1996]
-* McConica and Krishnamani, *JES* 1986 — WF₆ reduction
+* [McConica and Krishnamani, *JES* 1986](<https://doi.org/10.1149/1.2108468>) — WF₆ reduction
   kinetics.[^mcconica-1986]
-* Kleijn et al., *JES* 1991 — transport in tungsten LPCVD.[^kleijn-1991]
-* Britton, *Plant/Operations Progress* 1990 — combustion hazards of
+* [Kleijn et al., *JES* 1991](<https://doi.org/10.1149/1.2085620>) — transport in tungsten LPCVD.[^kleijn-1991]
+* [Britton, *Plant/Operations Progress* 1990](<https://doi.org/10.1002/prsb.720090107>) — combustion hazards of
   silane and chlorosilanes.[^britton-1990]
 * Caton et al. (VLSI Technology), US 5,303,558, and Lin et al. (TSMC),
   US 2004/0069224 — ammonium chloride traps for nitride

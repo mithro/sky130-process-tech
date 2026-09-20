@@ -357,7 +357,7 @@ sputtering recipes are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "AMAT PVD Metal"
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "AMAT PVD Metal"
   and metal-etch entries.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   the raw-materials paragraphs and sputter-target
@@ -368,64 +368,64 @@ sputtering recipes are not public.
 * SkyWater PDK Authors, `metal_stack.svg` and *Device Details*; Edwards,
   PDK lecture — conductor thicknesses, the MiM top plate and the TiN
   local interconnect.[^pdk-04][^pdk-07][^ann-16]
-* Solstice Advanced Materials, *PVD Sputtering Targets and Coil Sets* and
-  *History and Brand Transition* — current target specifications and the
+* Solstice Advanced Materials, [*PVD Sputtering Targets and Coil Sets*](<https://www.solstice.com/content/dam/advancedmaterials/solstice/events/semicon-tw-2026/sputtering-targets.pdf>) and
+  [*History and Brand Transition*](<https://www.solstice.com/us/en/about-us/solstice-advanced-materials-history-and-brand-transition>) — current target specifications and the
   Honeywell spin-off.[^solstice-targets][^solstice-history]
-* JX Advanced Metals, *Sputtering Target (PVD) for Semiconductor* and
-  *What Is Sputtering?* — titanium targets, coils and parts
+* JX Advanced Metals, [*Sputtering Target (PVD) for Semiconductor*](<https://www.jx-nmm.com/english/products/sputtering/semiconductor_st/>) and
+  [*What Is Sputtering?*](<https://www.jx-nmm.com/english/products/sputtering/about_sputtering.html>) — titanium targets, coils and parts
   sets.[^jx-semi-targets][^jx-sputtering]
-* Applied Materials, *Interconnect Systems & Modules* (product page,
-  Wayback capture of 2000-08-15) — the IMP
+* [Applied Materials, *Interconnect Systems & Modules* (product page,
+  Wayback capture of 2000-08-15)](<https://web.archive.org/web/20000815075033/http://www.appliedmaterials.com:80/products/ism_liner.html>) — the IMP
   chamber's target and coil as consumables.[^amat-ism-2000]
 
 ### High-level understanding
 
-* Wikipedia, *Sputter deposition* and *Physical vapor deposition* —
+* Wikipedia, [*Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>) and [*Physical vapor deposition*](<https://en.wikipedia.org/wiki/Physical_vapor_deposition>) —
   magnetrons, targets, erosion and reactive
   sputtering.[^wiki-sputter][^wiki-pvd]
-* Wikipedia, *Titanium nitride* and *Electromigration* — the liner film
+* Wikipedia, [*Titanium nitride*](<https://en.wikipedia.org/wiki/Titanium_nitride>) and [*Electromigration*](<https://en.wikipedia.org/wiki/Electromigration>) — the liner film
   and the reason for copper in aluminium.[^wiki-tin][^wiki-em]
-* Ohring, *Materials Science of Thin Films* — sputtering and film
+* [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — sputtering and film
   growth.[^ohring-2002]
-* Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
-  Techniques* — sputtering equipment and targets.[^seshan-2002]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Seshan (ed.), *Handbook of Thin-Film Deposition Processes and
+  Techniques*](<https://openlibrary.org/isbn/9780815514428>) — sputtering equipment and targets.[^seshan-2002]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   aluminium films and PVD.[^txt-02]
 
 ### Deep dive
 
-* Thornton, *JVST* 1974 — the structure-zone model for sputtered
+* [Thornton, *JVST* 1974](<https://doi.org/10.1116/1.1312732>) — the structure-zone model for sputtered
   coatings.[^thornton-1974]
-* Ames, d'Heurle and Horstmann, *IBM J. Res. Dev.* 1970 — copper doping
+* [Ames, d'Heurle and Horstmann, *IBM J. Res. Dev.* 1970](<https://doi.org/10.1147/rd.144.0461>) — copper doping
   against electromigration in aluminium.[^ames-1970]
-* Nicolet, *Thin Solid Films* 1978 — diffusion barriers in thin
+* [Nicolet, *Thin Solid Films* 1978](<https://doi.org/10.1016/0040-6090(78)90184-0>) — diffusion barriers in thin
   films.[^nicolet-1978]
-* Waterman, Dunlop and Brat, VMIC 1990 — TiW target manufacture, purity
+* [Waterman, Dunlop and Brat, VMIC 1990](<https://doi.org/10.1109/VMIC.1990.127887>) — TiW target manufacture, purity
   and film defects.[^waterman-1990]
-* Rossnagel et al., *JVST A* 1991 — collimated magnetron
+* [Rossnagel et al., *JVST A* 1991](<https://doi.org/10.1116/1.577531>) — collimated magnetron
   sputtering.[^rossnagel-1991]
-* Leybovich and Kuniya, *JVST A* 1993 — target grain relief and
+* [Leybovich and Kuniya, *JVST A* 1993](<https://doi.org/10.1116/1.578504>) — target grain relief and
   orientation against discharge characteristics.[^leybovich-1993]
-* Wickersham et al., *JVST A* 2001 — the inclusion size that makes
+* [Wickersham et al., *JVST A* 2001](<https://doi.org/10.1116/1.1403719>) — the inclusion size that makes
   aluminium targets arc.[^wickersham-2001]
-* Mao and Hopwood, *JAP* 2004 — ionised deposition of TiN.[^mao-2004]
-* Berg and Nyberg, *Thin Solid Films* 2005 — reactive sputtering
+* [Mao and Hopwood, *JAP* 2004](<https://doi.org/10.1063/1.1753663>) — ionised deposition of TiN.[^mao-2004]
+* [Berg and Nyberg, *Thin Solid Films* 2005](<https://doi.org/10.1016/j.tsf.2004.10.051>) — reactive sputtering
   processes.[^berg-2005]
-* Hiraki (Hitachi Metals), US 5,160,534 — TiW target structure against
+* [Hiraki (Hitachi Metals), US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — TiW target structure against
   particles.[^pat-tiw-hitachi]
-* Perry, Gilman and Van den Sype (Praxair), US 6,605,199 — textured
+* [Perry, Gilman and Van den Sype (Praxair), US 6,605,199](<https://patents.google.com/patent/US6605199B2/en>) — textured
   fine-grained aluminium alloy targets.[^pat-target-texture-praxair]
-* Hunt and Gilman (Materials Research Corp. and Sony), US 5,836,506 —
+* [Hunt and Gilman (Materials Research Corp. and Sony), US 5,836,506](<https://patents.google.com/patent/US5836506A/en>) —
   a pressed and heated target–backing plate bond.[^pat-target-bond-mrc]
-* Ohhashi et al. (Japan Energy), US 5,693,203 — solid-phase bonding that
+* [Ohhashi et al. (Japan Energy), US 5,693,203](<https://patents.google.com/patent/US5693203A/en>) — solid-phase bonding that
   preserves target microstructure.[^pat-target-bond-japanenergy]
-* Boys (Genus), US 5,215,639 — a target profiled to its end-of-life
+* [Boys (Genus), US 5,215,639](<https://patents.google.com/patent/US5215639A/en>) — a target profiled to its end-of-life
   erosion.[^pat-target-profile-genus]
-* Ngan (Applied Materials), US 5,707,498 — pasting the IMP coil with
+* [Ngan (Applied Materials), US 5,707,498](<https://patents.google.com/patent/US5707498A/en>) — pasting the IMP coil with
   target material.[^pat-imp-coil-amat]
-* ASTM F1512 — ultrasonic evaluation of target–backing plate
+* [ASTM F1512](<https://www.astm.org/f1512-94r11.html>) — ultrasonic evaluation of target–backing plate
   bonds.[^astm-f1512]
-* ASTM F3166 — a specification for high-purity titanium
+* [ASTM F3166](<https://www.astm.org/f3166-16.html>) — a specification for high-purity titanium
   targets.[^astm-f3166]
 
 ## Open questions

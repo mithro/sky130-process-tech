@@ -287,65 +287,65 @@ temperatures are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the furnace, RTA and
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the furnace, RTA and
   asher entries quoted above.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   gas suppliers and hazardous-materials statements.[^sec-01][^sec-02]
-* SemiStar Corp., *Novellus Gasonics PEP Iridia DL* listing — an asher's
+* [SemiStar Corp., *Novellus Gasonics PEP Iridia DL* listing](<https://www.semistarcorp.com/product/novellus-gasonics-pep-iridia-dl-plasma-asher/>) — an asher's
   4 % H₂/N₂ gas line.[^semistar-iridia]
-* Lyding and Hess (University of Illinois), US 5,872,387 — deuterium and
+* [Lyding and Hess (University of Illinois), US 5,872,387](<https://patents.google.com/patent/US5872387A/en>) — deuterium and
   hydrogen anneal mixtures.[^pat-deuterium-uiuc]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing; ASM, *Vertical
-  furnace* — furnace platforms of the class.[^aviza-avp][^asm-vf]
-* Mattson Technology, *The Aspen Strip* — the Aspen strip
+* Moov, [*Aviza / SVG / Thermco AVP 8000*](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) listing; ASM, [*Vertical
+  furnace*](<https://www.asm.com/our-technology-products/vertical-furnace>) — furnace platforms of the class.[^aviza-avp][^asm-vf]
+* [Mattson Technology, *The Aspen Strip*](<https://web.archive.org/web/20011219013713/http://www.mattson.com/products/aspen_strip.html>) — the Aspen strip
   platforms.[^mattson-2001]
 
 ### High-level understanding
 
-* Wikipedia, *Forming gas*, *Plasma ashing* and *Flammability limit* —
+* Wikipedia, [*Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>), [*Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) and [*Flammability limit*](<https://en.wikipedia.org/wiki/Flammability_limit>) —
   the mixtures, their use and hydrogen's flammability
   limits.[^wiki-fg][^wiki-ash][^wiki-flammability]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — anneals and the
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — anneals and the
   final forming-gas anneal.[^txt-01]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 — alloy
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — alloy
   anneals and metallisation.[^txt-02]
-* Deal, *IEEE TED* 1980 — the terminology of oxide charges.[^deal-1980]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — thermal processing and gas systems.[^txt-09]
+* [Deal, *IEEE TED* 1980](<https://doi.org/10.1109/T-ED.1980.19908>) — the terminology of oxide charges.[^deal-1980]
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — thermal processing and gas systems.[^txt-09]
 
 ### Deep dive
 
-* Razouk and Deal, *JES* 1979 — interface states against oxidation,
+* [Razouk and Deal, *JES* 1979](<https://doi.org/10.1149/1.2129333>) — interface states against oxidation,
   cooling and hydrogen annealing.[^razouk-1979]
-* Reed and Plummer, *JAP* 1988 — the chemistry of interface-trap
+* [Reed and Plummer, *JAP* 1988](<https://doi.org/10.1063/1.340317>) — the chemistry of interface-trap
   annealing.[^reed-1988]
-* Brower, *Phys. Rev. B* 1990 — dissociation kinetics of passivated
+* [Brower, *Phys. Rev. B* 1990](<https://doi.org/10.1103/PhysRevB.42.3444>) — dissociation kinetics of passivated
   interface defects.[^brower-1990]
-* Cartier, Stathis and Buchanan, *APL* 1993 — passivation and
+* [Cartier, Stathis and Buchanan, *APL* 1993](<https://doi.org/10.1063/1.110758>) — passivation and
   depassivation by atomic hydrogen.[^cartier-1993]
-* Stesmans, *APL* 1996 — P_b0 and P_b1 passivation by molecular
+* [Stesmans, *APL* 1996](<https://doi.org/10.1063/1.116308>) — P_b0 and P_b1 passivation by molecular
   hydrogen.[^stesmans-1996]
-* Lyding, Hess and Kizilyalli, *APL* 1996 — deuterium sintering against
+* [Lyding, Hess and Kizilyalli, *APL* 1996](<https://doi.org/10.1063/1.116172>) — deuterium sintering against
   hot-carrier degradation.[^lyding-1996]
-* Kizilyalli et al., *IEEE EDL* 1998 — deuterium anneals in multilevel
+* [Kizilyalli et al., *IEEE EDL* 1998](<https://doi.org/10.1109/55.728907>) — deuterium anneals in multilevel
   metal manufacturing.[^kizilyalli-1998]
-* Sah, Sun and Tzou, *APL* 1983 — boron deactivation by
+* [Sah, Sun and Tzou, *APL* 1983](<https://doi.org/10.1063/1.94287>) — boron deactivation by
   hydrogen.[^sah-1983]
-* Pankove et al., *PRL* 1983 — neutralisation of shallow acceptors by
+* [Pankove et al., *PRL* 1983](<https://doi.org/10.1103/PhysRevLett.51.2224>) — neutralisation of shallow acceptors by
   atomic hydrogen.[^pankove-1983]
-* Maes, Usmani and Heyns, *JAP* 1981 — hydrogen anneal and MNOS
+* [Maes, Usmani and Heyns, *JAP* 1981](<https://doi.org/10.1063/1.329266>) — hydrogen anneal and MNOS
   retention.[^maes-1981]
-* Rangan, Krishnan and Ashok, P2ID 1998 — hydrogen and deuterium
+* [Rangan, Krishnan and Ashok, P2ID 1998](<https://doi.org/10.1109/PPID.1998.725612>) — hydrogen and deuterium
   passivation of process damage.[^rangan-1998]
-* Fang and McVittie, *IEEE EDL* 1992 — thin-oxide damage from plasma
+* [Fang and McVittie, *IEEE EDL* 1992](<https://doi.org/10.1109/55.145056>) — thin-oxide damage from plasma
   charging.[^fang-1992]
-* Lanford and Rand, *JAP* 1978 — hydrogen in plasma nitride.[^lanford-1978]
-* Ohashi, Kubota and Nakajima, *IEEE EDL* 2007 — argon annealing at the
+* [Lanford and Rand, *JAP* 1978](<https://doi.org/10.1063/1.325095>) — hydrogen in plasma nitride.[^lanford-1978]
+* [Ohashi, Kubota and Nakajima, *IEEE EDL* 2007](<https://doi.org/10.1109/LED.2007.899328>) — argon annealing at the
   STI edge.[^ohashi-2007]
-* Fujimura et al., *JVST B* 1991 — water vapour against hydrogen as an
+* [Fujimura et al., *JVST B* 1991](<https://doi.org/10.1116/1.585575>) — water vapour against hydrogen as an
   addition to downstream O₂ ashing, and the activation energies of
   each.[^fujimura-1991]
-* Xu and Diao, *JVST A* 2008 — tungsten oxidation in O₂/H₂/N₂ downstream
+* [Xu and Diao, *JVST A* 2008](<https://doi.org/10.1116/1.2897316>) — tungsten oxidation in O₂/H₂/N₂ downstream
   plasma.[^xu-2008]
 
 ## Open questions

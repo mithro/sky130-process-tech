@@ -386,24 +386,24 @@ cards are not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* and *Certifications &
-  Policies* — the tool and test entries and the Minnesota site's
+* SkyWater Technology, [*Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) and [*Certifications &
+  Policies*](<https://www.skywatertechnology.com/certifications-policies/>) — the tool and test entries and the Minnesota site's
   environmental accreditation.[^skw-01][^skw-certs]
 * SkyWater Technology, Form S-1 (2021) and 10-K for fiscal 2023 —
   maintenance parts, hazardous materials and ISO 14001.[^sec-01][^sec-02]
-* SkyWater Technology, maintenance-technician profile — tool maintenance
+* [SkyWater Technology, maintenance-technician profile](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — tool maintenance
   work.[^skw-07]
 * US EPA, GHGRP facility record and *Subpart I Information Sheet* —
   electronics-manufacturing reporting and abatement
   systems.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i]
-* Minnesota Pollution Control Agency, 2025 enforcement release — a permit
+* [Minnesota Pollution Control Agency, 2025 enforcement release](<https://www.pca.state.mn.us/news-and-stories/skywater-technology-fined-more-than-97000-for-air-permit-violations>) — a permit
   finding that mentions greenhouse-gas control equipment.[^mpca-2025]
-* Heraeus Covantics, *Fused Quartz and Silica Tubes*; Entegris,
-  *SUPERSiC* brochure and *CMC Materials | July 2022* — quartz, SiC and
+* Heraeus Covantics, [*Fused Quartz and Silica Tubes*](<https://www.heraeus-covantics.com/products-and-solutions/products-by-shape/tubes/fused-quartz-and-silica-tubes-for-semiconductor-applications>); Entegris,
+  [*SUPERSiC*](<https://www.entegris.com/content/dam/shared-product-assets/specialty-shared/brochure-supersic-semiconductor-front-end-6116.pdf>) brochure and [*CMC Materials | July 2022*](<https://www.entegris.com/en/home/brands/cmc-materials-july-2022.html>) — quartz, SiC and
   probe-card cleaning products.[^heraeus-tubes][^entegris-supersic][^entegris-cmc-2022]
 * SemiStar, Heatpulse 8800/8808 page and specifications — lamps and
   facilities.[^ag-8800][^ag-8108]
-* Lam Research, TCP 9600DFM release — consumables cost and time between
+* [Lam Research, TCP 9600DFM release](<https://investor.lamresearch.com/2001-06-18-Lam-Research-Corporation-Takes-Metal-Processing-To-New-Level-With-New-TCP-R-9600DFM>) — consumables cost and time between
   cleans.[^lam-9600dfm-2001]
 * SkyWater PDK Authors, raw-data test tiles — the proprietary tile's
   probe points and the open OpenFASoC tile's test-interface image, which
@@ -412,65 +412,65 @@ cards are not public.
 
 ### High-level understanding
 
-* Wikipedia, *Probe card*, *Nitrogen trifluoride* and *Global warming
-  potential* — probe cards, NF₃ chamber cleaning and the greenhouse
+* Wikipedia, [*Probe card*](<https://en.wikipedia.org/wiki/Probe_card>), [*Nitrogen trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) and [*Global warming
+  potential*](<https://en.wikipedia.org/wiki/Global_warming_potential>) — probe cards, NF₃ chamber cleaning and the greenhouse
   potential of clean and etch gases.[^wiki-probecard][^wiki-nf3][^wiki-gwp]
-* Wikipedia, *ISO 14000 series* — the environmental-management standards
+* [Wikipedia, *ISO 14000 series*](<https://en.wikipedia.org/wiki/ISO_14000_series>) — the environmental-management standards
   and what ISO 14001 and ISO 14004 each cover.[^wiki-iso14000]
-* Sherer, *Semiconductor Industry: Wafer Fab Exhaust Management* —
+* [Sherer, *Semiconductor Industry: Wafer Fab Exhaust Management*](<https://doi.org/10.1201/9781420027198>) —
   point-of-use and central exhaust treatment.[^sherer-2005]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — tools, exhaust by-products and facilities.[^txt-09]
-* Expertech, *VTR7000PLUS* — a vertical reactor's heater and
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — tools, exhaust by-products and facilities.[^txt-09]
+* [Expertech, *VTR7000PLUS*](<https://www.exper-tech.com/products/vertical-thermal-reactor>) — a vertical reactor's heater and
   load.[^expertech-vtr]
-* Electroglas, 1999 annual report — wafer probing.[^electroglas-1999]
+* [Electroglas, 1999 annual report](<https://web.archive.org/web/20020530031508/http://www.electroglas.com:80/press/pressreleases/reports/1999annual/wafer.htm>) — wafer probing.[^electroglas-1999]
 
 ### Deep dive
 
-* Eisele and Ruthardt, *JES* 1978 — stabilised quartz tubes against
+* [Eisele and Ruthardt, *JES* 1978](<https://doi.org/10.1149/1.2131646>) — stabilised quartz tubes against
   sodium.[^eisele-1978]
-* Horii et al., *J. Ceram. Soc. Japan* 2010 — crystallisation of silica
+* [Horii et al., *J. Ceram. Soc. Japan* 2010](<https://doi.org/10.2109/jcersj2.118.318>) — crystallisation of silica
   glass in contact with NaCl.[^horii-2010]
-* Osawa (Tokyo Electron), US 5,820,367 — a ring boat against
+* [Osawa (Tokyo Electron), US 5,820,367](<https://patents.google.com/patent/US5820367A/en>) — a ring boat against
   slip.[^pat-boat-tel]
-* Shimazu (Tokyo Electron), US 5,709,543 — furnace-throat
+* [Shimazu (Tokyo Electron), US 5,709,543](<https://patents.google.com/patent/US5709543A/en>) — furnace-throat
   insulation.[^pat-vf-insulation-tel]
-* Maeda et al. (Kokusai), US 5,902,103 — LPCVD tubes and a boat
+* [Maeda et al. (Kokusai), US 5,902,103](<https://patents.google.com/patent/US5902103A/en>) — LPCVD tubes and a boat
   cover.[^pat-lpcvd-kokusai]
-* Joubert et al., *JVST A* 2004 — monitoring chamber-wall
+* [Joubert et al., *JVST A* 2004](<https://doi.org/10.1116/1.1697484>) — monitoring chamber-wall
   coatings.[^joubert-2004]
-* Cunge et al., *PSST* 2005 — plasma–wall interactions in gate
+* [Cunge et al., *PSST* 2005](<https://doi.org/10.1088/0963-0252/14/2/S06>) — plasma–wall interactions in gate
   etch.[^cunge-2005]
-* Bell and Joubert, *JVST B* 1996 — quartz sputtered from a helicon
+* [Bell and Joubert, *JVST B* 1996](<https://doi.org/10.1116/1.588758>) — quartz sputtered from a helicon
   source.[^bell-1996]
-* Ito et al., *JJAP* 2008 — AlF₃ particles from chamber
+* [Ito et al., *JJAP* 2008](<https://doi.org/10.1143/JJAP.47.3630>) — AlF₃ particles from chamber
   walls.[^ito-2008]
-* Rossman et al. (Applied Materials), US 6,121,161 — seasoning films
+* [Rossman et al. (Applied Materials), US 6,121,161](<https://patents.google.com/patent/US6121161A/en>) — seasoning films
   against dome and nozzle contamination.[^pat-seasoning-amat]
-* Redeker et al. (Applied Materials), US 6,170,428 — an HDP-CVD reactor's
+* [Redeker et al. (Applied Materials), US 6,170,428](<https://patents.google.com/patent/US6170428B1/en>) — an HDP-CVD reactor's
   dome, chuck and clean.[^pat-hdp-reactor-amat]
-* Sun et al., US 6,776,873 — yttria coatings on chamber
+* [Sun et al., US 6,776,873](<https://patents.google.com/patent/US6776873B1/en>) — yttria coatings on chamber
   parts.[^pat-yttria]
-* Rossnagel et al., *JVST A* 1991 — collimated sputtering.[^rossnagel-1991]
-* Chen et al., RTP 2002 — emissivity and RTP temperature
+* [Rossnagel et al., *JVST A* 1991](<https://doi.org/10.1116/1.577531>) — collimated sputtering.[^rossnagel-1991]
+* [Chen et al., RTP 2002](<https://doi.org/10.1109/RTP.2002.1039440>) — emissivity and RTP temperature
   measurement.[^chen-2002-rtp]
-* Caton et al. (VLSI Technology), US 5,303,558 — a thermal trap for
+* [Caton et al. (VLSI Technology), US 5,303,558](<https://patents.google.com/patent/US5303558A/en>) — a thermal trap for
   ammonium chloride.[^pat-nh4cl-vlsi]
-* Lin et al. (TSMC), US 2004/0069224 — a cold trap for a CVD
+* [Lin et al. (TSMC), US 2004/0069224](<https://patents.google.com/patent/US20040069224A1/en>) — a cold trap for a CVD
   furnace.[^pat-nh4cl-tsmc]
-* Fiala et al., *JAP* 1999 — point-of-use plasma abatement of
+* [Fiala et al., *JAP* 1999](<https://doi.org/10.1063/1.370711>) — point-of-use plasma abatement of
   PFCs.[^fiala-1999]
-* Hu et al., *IEEE TSM* 2018 — wet-thermal-wet abatement of
+* [Hu et al., *IEEE TSM* 2018](<https://doi.org/10.1109/TSM.2018.2808173>) — wet-thermal-wet abatement of
   NF₃.[^hu-2018]
-* Mangyou et al., ISSM 2005 — atmospheric plasma PFC
+* [Mangyou et al., ISSM 2005](<https://doi.org/10.1109/ISSM.2005.1513352>) — atmospheric plasma PFC
   abatement.[^mangyou-2005]
 * Hsu et al., *JAWMA* 2007 and 2010 — metal-oxide and copper adsorbents
   on alumina for silane and phosphine removal.[^hsu-2007][^hsu-2010]
-* Johnson, Ridgeway and Maroulis, *IEEE TSM* 2004 — PFC reduction in CVD
+* [Johnson, Ridgeway and Maroulis, *IEEE TSM* 2004](<https://doi.org/10.1109/TSM.2004.835700>) — PFC reduction in CVD
   and etch.[^johnson-2004]
-* Broz and Rincon, ITC 1999 — probe contact resistance at
+* [Broz and Rincon, ITC 1999](<https://doi.org/10.1109/TEST.1999.805761>) — probe contact resistance at
   temperature.[^broz-1999]
-* Roggei and Seshan, ISSM 1999 — probe-to-pad contact
+* [Roggei and Seshan, ISSM 1999](<https://doi.org/10.1109/ISSM.1999.808775>) — probe-to-pad contact
   resistance.[^roggei-1999]
 
 ## Open questions

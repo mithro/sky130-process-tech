@@ -443,7 +443,7 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the furnace, RTA,
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the furnace, RTA,
   asher and etcher entries quoted on this page.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   the raw-materials paragraphs and gas suppliers.[^sec-01][^sec-02]
@@ -456,61 +456,61 @@ not public.
   industry.[^semi-c3][^semi-c59][^semi-c54][^semi-c58][^semi-c3-20]
 * NIOSH, *Pocket Guide to Chemical Hazards* — exposure limits for
   hydrogen chloride and nitric oxide.[^niosh-hcl][^niosh-no]
-* Linde, *Gases for semiconductors* and Linde Engineering, *Serving the
-  Electronics Industry* — current bulk-gas supply and on-site plant
+* Linde, [*Gases for semiconductors*](<https://www.lindeus.com/industries/electronics/semiconductors>) and Linde Engineering, [*Serving the
+  Electronics Industry*](<https://www.linde-engineering.com/industries/electronics>) — current bulk-gas supply and on-site plant
   statements.[^linde-semi][^linde-eng-electronics]
 
 ### High-level understanding
 
-* Wikipedia, *Nitrogen*, *Oxygen*, *Hydrogen*, *Argon* and *Helium* —
+* Wikipedia, [*Nitrogen*](<https://en.wikipedia.org/wiki/Nitrogen>), [*Oxygen*](<https://en.wikipedia.org/wiki/Oxygen>), [*Hydrogen*](<https://en.wikipedia.org/wiki/Hydrogen>), [*Argon*](<https://en.wikipedia.org/wiki/Argon>) and [*Helium*](<https://en.wikipedia.org/wiki/Helium>) —
   production, uses and hazards of the bulk
   gases.[^wiki-nitrogen][^wiki-oxygen][^wiki-hydrogen][^wiki-argon][^wiki-helium]
-* Wikipedia, *Air separation* — how nitrogen, oxygen and argon are
+* [Wikipedia, *Air separation*](<https://en.wikipedia.org/wiki/Air_separation>) — how nitrogen, oxygen and argon are
   made.[^wiki-air-separation]
-* Wikipedia, *Thermal oxidation*, *Forming gas* and *Plasma ashing* —
+* Wikipedia, [*Thermal oxidation*](<https://en.wikipedia.org/wiki/Thermal_oxidation>), [*Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>) and [*Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) —
   wet, dry and chlorinated oxidation, forming gas and
   ashing.[^wiki-thox][^wiki-fg][^wiki-ash]
-* Wikipedia, *Nitrous oxide*, *Nitric oxide* and
-  *1,2-Dichloroethylene* — the oxidation
+* Wikipedia, [*Nitrous oxide*](<https://en.wikipedia.org/wiki/Nitrous_oxide>), [*Nitric oxide*](<https://en.wikipedia.org/wiki/Nitric_oxide>) and
+  [*1,2-Dichloroethylene*](<https://en.wikipedia.org/wiki/1,2-Dichloroethylene>) — the oxidation
   additives.[^wiki-n2o][^wiki-no][^wiki-dce]
-* Wikipedia, *Praxair*, *Airgas* and *Versum Materials* — the corporate
+* Wikipedia, [*Praxair*](<https://en.wikipedia.org/wiki/Praxair>), [*Airgas*](<https://en.wikipedia.org/wiki/Airgas>) and [*Versum Materials*](<https://en.wikipedia.org/wiki/Versum_Materials>) — the corporate
   histories behind the filings' supplier
   names.[^wiki-praxair][^wiki-airgas][^wiki-versum]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — oxidation and
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — oxidation and
   thin-film processes.[^txt-01]
 
 ### Deep dive
 
-* Deal and Grove, *JAP* 1965 — the growth model for dry and wet
+* [Deal and Grove, *JAP* 1965](<https://doi.org/10.1063/1.1713945>) — the growth model for dry and wet
   oxidation.[^deal-1965]
-* Kriegler, Cheng and Colton, *JES* 1972 — HCl and Cl₂ in dry
+* [Kriegler, Cheng and Colton, *JES* 1972](<https://doi.org/10.1149/1.2404208>) — HCl and Cl₂ in dry
   oxidation.[^kriegler-1972]
-* Yoneda et al., *JES* 1995 — trans-1,2-dichloroethylene in place of
+* [Yoneda et al., *JES* 1995](<https://doi.org/10.1149/1.2048502>) — trans-1,2-dichloroethylene in place of
   trichloroethane.[^yoneda-1995]
-* Hwang et al., *APL* 1990 — ultrathin oxynitride grown in
+* [Hwang et al., *APL* 1990](<https://doi.org/10.1063/1.103550>) — ultrathin oxynitride grown in
   N₂O.[^hwang-1990]
-* Hwang et al., *APL* 1991 — boron penetration through N₂O
+* [Hwang et al., *APL* 1991](<https://doi.org/10.1063/1.106290>) — boron penetration through N₂O
   oxynitride.[^hwang-1991]
-* Tobin et al., *JAP* 1994 — the role of NO in N₂O furnace
+* [Tobin et al., *JAP* 1994](<https://doi.org/10.1063/1.356374>) — the role of NO in N₂O furnace
   oxynitridation.[^tobin-1994]
-* Okada et al., *IEEE TED* 1994 — gate oxynitride grown in
+* [Okada et al., *IEEE TED* 1994](<https://doi.org/10.1109/16.310113>) — gate oxynitride grown in
   NO.[^okada-1994]
-* Kuehne et al., MRS 1997 — rapid thermal nitridation in
+* [Kuehne et al., MRS 1997](<https://doi.org/10.1557/PROC-470-381>) — rapid thermal nitridation in
   NO.[^kuehne-1997]
-* Green et al., *JAP* 2001 — a review of ultrathin oxide and oxynitride
+* [Green et al., *JAP* 2001](<https://doi.org/10.1063/1.1385803>) — a review of ultrathin oxide and oxynitride
   gate dielectrics.[^green-2001]
-* Yu et al., *Proc. SPIE* 1999 — in-situ steam generation for gate
+* [Yu et al., *Proc. SPIE* 1999](<https://doi.org/10.1117/12.360557>) — in-situ steam generation for gate
   oxide.[^yu-1999]
-* Fujimura et al., *JVST B* 1994 — O₂/H₂O downstream
+* [Fujimura et al., *JVST B* 1994](<https://doi.org/10.1116/1.587773>) — O₂/H₂O downstream
   ashing.[^fujimura-1994]
-* Lee, Eldridge and Schwartz, *JAP* 1981 — corrosion of Al and Al–Cu
+* [Lee, Eldridge and Schwartz, *JAP* 1981](<https://doi.org/10.1063/1.329043>) — corrosion of Al and Al–Cu
   after chlorine reactive ion etching.[^lee-1981-corrosion]
-* Berg and Nyberg, *Thin Solid Films* 2005 — reactive sputtering with
+* [Berg and Nyberg, *Thin Solid Films* 2005](<https://doi.org/10.1016/j.tsf.2004.10.051>) — reactive sputtering with
   nitrogen.[^berg-2005]
-* Goodman, *JAP* 2008 — electrostatic chucking and backside gas
+* [Goodman, *JAP* 2008](<https://doi.org/10.1063/1.3043843>) — electrostatic chucking and backside gas
   cooling.[^goodman-2008]
-* Ohmi, *Proc. IEEE* 1993 — ultraclean processing for ULSI.[^ohmi-1993]
-* Drimer, Mendelovici and Borivker (Persys Technology), US 6,179,609 —
+* [Ohmi, *Proc. IEEE* 1993](<https://doi.org/10.1109/5.220903>) — ultraclean processing for ULSI.[^ohmi-1993]
+* [Drimer, Mendelovici and Borivker (Persys Technology), US 6,179,609](<https://patents.google.com/patent/US6179609B1/en>) —
   an external steam and chlorination torch.[^pat-torch-persys]
 
 ## Open questions

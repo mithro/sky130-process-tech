@@ -392,7 +392,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the etcher and asher
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the etcher and asher
   entries.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   gas suppliers and environmental requirements.[^sec-01][^sec-02]
@@ -405,62 +405,62 @@ Status and expiry are estimates from public records and are not legal advice.
   SF₆.[^semi-c3-40][^semi-c3-24]
 * NIOSH, *Pocket Guide to Chemical Hazards* — chlorine, hydrogen bromide
   and nitrogen trifluoride.[^niosh-cl2][^niosh-hbr][^niosh-nf3]
-* Linde Engineering, *Serving the Electronics Industry* — on-site
+* [Linde Engineering, *Serving the Electronics Industry*](<https://www.linde-engineering.com/industries/electronics>) — on-site
   fluorine as a chamber-clean gas.[^linde-eng-electronics]
-* Applied Materials, *Producer SE* (Wayback capture of 2001) — a
+* [Applied Materials, *Producer SE* (Wayback capture of 2001)](<https://web.archive.org/web/20010817134045/http://www.appliedmaterials.com:80/products/producer_se.html>) — a
   low-flow remote clean.[^amat-producer-se-2001]
 
 ### High-level understanding
 
-* Wikipedia, *Carbon tetrafluoride*, *Fluoroform*, *Hexafluoroethane*
-  and *Octafluorocyclobutane* — fluorocarbon etch
+* Wikipedia, [*Carbon tetrafluoride*](<https://en.wikipedia.org/wiki/Carbon_tetrafluoride>), [*Fluoroform*](<https://en.wikipedia.org/wiki/Fluoroform>), [*Hexafluoroethane*](<https://en.wikipedia.org/wiki/Hexafluoroethane>)
+  and [*Octafluorocyclobutane*](<https://en.wikipedia.org/wiki/Octafluorocyclobutane>) — fluorocarbon etch
   gases.[^wiki-cf4][^wiki-chf3][^wiki-c2f6][^wiki-c4f8]
-* Wikipedia, *Fluoromethane* and *Fluorocarbon* — an additive and the
+* Wikipedia, [*Fluoromethane*](<https://en.wikipedia.org/wiki/Fluoromethane>) and [*Fluorocarbon*](<https://en.wikipedia.org/wiki/Fluorocarbon>) — an additive and the
   greenhouse properties of PFCs.[^wiki-ch3f][^wiki-pfc]
-* Wikipedia, *Sulfur hexafluoride* and *Nitrogen trifluoride* — the
+* Wikipedia, [*Sulfur hexafluoride*](<https://en.wikipedia.org/wiki/Sulfur_hexafluoride>) and [*Nitrogen trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) — the
   carbon-free fluorides.[^wiki-sf6][^wiki-nf3]
-* Wikipedia, *Hydrogen bromide* and *Boron trichloride* — bromine and
+* Wikipedia, [*Hydrogen bromide*](<https://en.wikipedia.org/wiki/Hydrogen_bromide>) and [*Boron trichloride*](<https://en.wikipedia.org/wiki/Boron_trichloride>) — bromine and
   chlorine etch gases.[^wiki-hbr][^wiki-bcl3]
-* Donnelly and Kornblit, *JVST A* 2013 — plasma etching from its origins
+* [Donnelly and Kornblit, *JVST A* 2013](<https://doi.org/10.1116/1.4819316>) — plasma etching from its origins
   to the present.[^donnelly-2013]
-* Nojiri, *Dry Etching Technology for Semiconductors* — production etch
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — production etch
   chemistries.[^nojiri-2015]
 
 ### Deep dive
 
-* Coburn and Winters, *JAP* 1979 — ion-assisted gas–surface
+* [Coburn and Winters, *JAP* 1979](<https://doi.org/10.1063/1.326355>) — ion-assisted gas–surface
   chemistry.[^coburn-1979]
-* Winters and Coburn, *Surface Science Reports* 1992 — surface science of
+* [Winters and Coburn, *Surface Science Reports* 1992](<https://doi.org/10.1016/0167-5729(92)90009-Z>) — surface science of
   etching reactions.[^winters-1992]
-* Flamm, *Pure Appl. Chem.* 1990 — silicon etching in fluorine and
+* [Flamm, *Pure Appl. Chem.* 1990](<https://doi.org/10.1351/pac199062091709>) — silicon etching in fluorine and
   chlorine plasmas.[^flamm-1990]
-* Oehrlein et al., *JVST A* 1994 — fluorocarbon film deposition with CF₄
+* [Oehrlein et al., *JVST A* 1994](<https://doi.org/10.1116/1.578876>) — fluorocarbon film deposition with CF₄
   and CHF₃.[^oehrlein-1994]
-* Schaepkens et al., *JVST A* 1999 — the oxide-to-nitride selectivity
+* [Schaepkens et al., *JVST A* 1999](<https://doi.org/10.1116/1.582108>) — the oxide-to-nitride selectivity
   mechanism.[^schaepkens-1999]
-* Perry et al., *JVST A* 2001 — C₂F₆ oxide etching in a high-density
+* [Perry et al., *JVST A* 2001](<https://doi.org/10.1116/1.1382874>) — C₂F₆ oxide etching in a high-density
   plasma.[^perry-2001]
-* Regis et al., ASMC 1997 — a selective nitride spacer
+* [Regis et al., ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630744>) — a selective nitride spacer
   etch.[^regis-1997]
 * Kastenmeier et al., *JVST A* 1996 and 1998 — CF₄/O₂/N₂ and NF₃/O₂
   remote etching of nitride and oxide.[^kastenmeier-1996][^kastenmeier-1998]
-* Sobolewski, Langan and Felker, *JVST B* 1998 — chamber-cleaning
+* [Sobolewski, Langan and Felker, *JVST B* 1998](<https://doi.org/10.1116/1.589774>) — chamber-cleaning
   plasmas.[^sobolewski-1998]
-* Chan, Loh and Allgood, *IEEE TSM* 2004 — a C₄F₈ chamber clean with
+* [Chan, Loh and Allgood, *IEEE TSM* 2004](<https://doi.org/10.1109/TSM.2004.835712>) — a C₄F₈ chamber clean with
   lower PFC emissions.[^chan-2004]
-* Ridgeway, ASMC 1995 — measuring emissions and abatement
+* [Ridgeway, ASMC 1995](<https://doi.org/10.1109/ASMC.1995.484346>) — measuring emissions and abatement
   effectiveness.[^ridgeway-1995]
-* Bell and Joubert, *JVST B* 1997, and Tuda et al., *JVST A* 2001 —
+* Bell and Joubert, [*JVST B*](<https://doi.org/10.1116/1.589259>) 1997, and Tuda et al., [*JVST A*](<https://doi.org/10.1116/1.1365135>) 2001 —
   HBr/Cl₂/O₂ gate etching.[^bell-1997][^tuda-2001]
-* Chen, DeOrnellas and Burke, ASTM STP 990 — aluminium alloys in
+* [Chen, DeOrnellas and Burke, ASTM STP 990](<https://doi.org/10.1520/STP26039S>) — aluminium alloys in
   BCl₃/Cl₂.[^chen-1989]
-* Selamoglu et al., *JVST B* 1991 — tapered aluminium etching with
+* [Selamoglu et al., *JVST B* 1991](<https://doi.org/10.1116/1.585687>) — tapered aluminium etching with
   CHF₃/Cl₂/BCl₃.[^selamoglu-1991]
-* Allen and Rickard, *JVST A* 1994 — a tapered aluminium etch with
+* [Allen and Rickard, *JVST A* 1994](<https://doi.org/10.1116/1.579306>) — a tapered aluminium etch with
   nitrogen.[^allen-1994]
-* Lee, Eldridge and Schwartz, *JAP* 1981 — corrosion after chlorine
+* [Lee, Eldridge and Schwartz, *JAP* 1981](<https://doi.org/10.1063/1.329043>) — corrosion after chlorine
   etching.[^lee-1981-corrosion]
-* Liu and Kuo, *JES* 2007 — reactive ion etching of TiW.[^liu-2007-tiw]
+* [Liu and Kuo, *JES* 2007](<https://doi.org/10.1149/1.2737631>) — reactive ion etching of TiW.[^liu-2007-tiw]
 
 ## Open questions
 

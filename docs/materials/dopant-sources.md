@@ -378,7 +378,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the implanter and
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the implanter and
   HDP entries.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   the specialty-gas suppliers.[^sec-01][^sec-02]
@@ -386,12 +386,12 @@ Status and expiry are estimates from public records and are not legal advice.
   boron trifluoride.[^semi-c3-6][^semi-c3-2][^semi-c3-27]
 * NIOSH, *Pocket Guide to Chemical Hazards* — arsine, phosphine and boron
   trifluoride.[^niosh-arsine][^niosh-phosphine][^niosh-bf3]
-* Axcelis Technologies, *GSD Ovation* — source upgrades and fluorinated
+* [Axcelis Technologies, *GSD Ovation*](<https://www.axcelis.com/products/gsd-ovation/>) — source upgrades and fluorinated
   species.[^axcelis-gsd-page]
-* Entegris, *Specialty Gases and Delivery Systems for Ion Implantation*
-  and EMD Electronics, *ION-X BF3* — current sub-atmospheric
+* Entegris, [*Specialty Gases and Delivery Systems for Ion Implantation*](<https://www.entegris.com/en/home/resources/industry-insights/specialty-gases-and-delivery-systems-for-ion-implantation.html>)
+  and EMD Electronics, [*ION-X BF3*](<https://www.emdgroup.com/en/expertise/semiconductors/offering/isotopically-enriched-bf3.html>) — current sub-atmospheric
   packages.[^entegris-implant-gases][^emd-ion-x]
-* Fabsurplus, *Varian E500 HP* — a medium-current gas box with SDS
+* [Fabsurplus, *Varian E500 HP*](<https://www.fabsurplus.com/sdicatalog/download?id=44950>) — a medium-current gas box with SDS
   bottles.[^fabsurplus-e500]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
@@ -402,39 +402,39 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation* — sources, support gases, solid sources
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — sources, support gases, solid sources
   and hazards.[^wiki-implant]
-* Wikipedia, *Boron trifluoride*, *Phosphine* and *Arsine* — the dopant
+* Wikipedia, [*Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>), [*Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>) and [*Arsine*](<https://en.wikipedia.org/wiki/Arsine>) — the dopant
   gases.[^wiki-bf3][^wiki-ph3][^wiki-ash3]
-* Wikipedia, *Industrial gas* and *Versum Materials* — gas cabinets and
+* Wikipedia, [*Industrial gas*](<https://en.wikipedia.org/wiki/Industrial_gas>) and [*Versum Materials*](<https://en.wikipedia.org/wiki/Versum_Materials>) — gas cabinets and
   a supplier's history.[^wiki-industrial-gas][^wiki-versum]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   ion implantation equipment.[^txt-02]
 
 ### Deep dive
 
-* Tom and McManus (ATMI), US 5,518,528 — the sorbent sub-atmospheric
+* [Tom and McManus (ATMI), US 5,518,528](<https://patents.google.com/patent/US5518528A/en>) — the sorbent sub-atmospheric
   hydride source.[^pat-sds-atmi]
-* Olander et al., IIT 2000 — the vacuum-actuated cylinder.[^olander-2000]
-* McKee and Van Horn, IIT 2002 — a sub-atmospheric BF₃ package on a
+* [Olander et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924255>) — the vacuum-actuated cylinder.[^olander-2000]
+* [McKee and Van Horn, IIT 2002](<https://doi.org/10.1109/IIT.2002.1258031>) — a sub-atmospheric BF₃ package on a
   production GSD implanter.[^mckee-2002]
-* Horsky, *Rev. Sci. Instrum.* 1998 — the indirectly heated cathode
+* [Horsky, *Rev. Sci. Instrum.* 1998](<https://doi.org/10.1063/1.1148866>) — the indirectly heated cathode
   source and its life.[^horsky-1998-ihc]
-* Swenson et al., IIT 1996 — shields against metal contamination in a
+* [Swenson et al., IIT 1996](<https://doi.org/10.1109/IIT.1996.586154>) — shields against metal contamination in a
   medium-current beam line.[^swenson-1996]
-* Current, *JVST A* 1996 — implanter vacuum, including cryopump
+* [Current, *JVST A* 1996](<https://doi.org/10.1116/1.580279>) — implanter vacuum, including cryopump
   regeneration.[^current-1996]
-* Ham et al., *Aerosol and Air Quality Research* 2017 — arsenic exposure
+* [Ham et al., *Aerosol and Air Quality Research* 2017](<https://doi.org/10.4209/aaqr.2016.07.0310>) — arsenic exposure
   during implanter maintenance.[^ham-2017]
-* Shahidi et al., *IEEE EDL* 1993 — indium channel
+* [Shahidi et al., *IEEE EDL* 1993](<https://doi.org/10.1109/55.225595>) — indium channel
   implants.[^shahidi-1993]
-* Momiyama et al., VLSI 1999 — tilted indium channel implantation for
+* [Momiyama et al., VLSI 1999](<https://doi.org/10.1109/VLSIT.1999.799343>) — tilted indium channel implantation for
   60 nm nMOSFETs.[^momiyama-1999]
-* Hsiao, Liu and Wang, *JVST B* 2005 — HDP phosphosilicate
+* [Hsiao, Liu and Wang, *JVST B* 2005](<https://doi.org/10.1116/1.2050670>) — HDP phosphosilicate
   glass.[^hsiao-2005]
-* Fujino et al., *JES* 1991 — PSG and BSG from TEOS and ozone with
+* [Fujino et al., *JES* 1991](<https://doi.org/10.1149/1.2085358>) — PSG and BSG from TEOS and ozone with
   organic dopant sources.[^fujino-1991]
-* Ryssel and Ruge, *Ion Implantation* — ion sources and implanter
+* [Ryssel and Ruge, *Ion Implantation*](<https://openlibrary.org/isbn/9780471103110>) — ion sources and implanter
   technology.[^ryssel-1986]
 
 ## Open questions

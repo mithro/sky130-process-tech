@@ -359,7 +359,7 @@ Status and expiry are estimates from public records and are not legal advice.
   and "Bulk".[^skw-01][^skw-02]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   the raw-materials paragraphs, wafer suppliers and supply risk.[^sec-01][^sec-02]
-* Cypress Semiconductor, PIN152804 (2015) — GlobalWafers qualified for S8
+* [Cypress Semiconductor, PIN152804 (2015)](<https://media.futureelectronics.com/PCN/45887_SPCN.PDF>) — GlobalWafers qualified for S8
   at Fab 4.[^cyp-06]
 * SkyWater PDK, process stack diagram and *Criteria & Assumptions* — the
   "p-substrate" label and the background concentration.[^pdk-04][^pdk-03]
@@ -368,54 +368,54 @@ Status and expiry are estimates from public records and are not legal advice.
 * SEMI M12 and M13 — wafer marking.[^semi-m12][^semi-m13]
 * GlobalWafers, *Products* and home page; SEH America, *Products* —
   current wafer catalogues.[^gw-products][^gw-home][^seh-products]
-* Entegris, *SUPERSiC Silicon Carbide* brochure — silicon-carbide dummy
+* [Entegris, *SUPERSiC Silicon Carbide* brochure](<https://www.entegris.com/content/dam/shared-product-assets/specialty-shared/brochure-supersic-semiconductor-front-end-6116.pdf>) — silicon-carbide dummy
   wafers and reclaimed silicon dummies.[^entegris-supersic]
 * SkyWater PDK Authors, raw-data repository — the test tile and the
   transistor data the SMAT page uses.[^raw-data-testtile-prop][^raw-data-hv-mosfets]
 
 ### High-level understanding
 
-* Wikipedia, *Wafer (electronics)* and *GlobalWafers* — wafer sizes,
+* Wikipedia, [*Wafer (electronics)*](<https://en.wikipedia.org/wiki/Wafer_(electronics)>) and [*GlobalWafers*](<https://en.wikipedia.org/wiki/GlobalWafers>) — wafer sizes,
   thicknesses and notches; the supplier's history.[^wiki-wafer][^wiki-gw]
-* Kao and Chung, *Wafer Manufacturing* — slicing, lapping and polishing
+* [Kao and Chung, *Wafer Manufacturing*](<https://doi.org/10.1002/9781118696224>) — slicing, lapping and polishing
   of silicon wafers.[^kao-2021]
-* Shimura, *Semiconductor Silicon Crystal Technology* — the crystal and
+* [Shimura, *Semiconductor Silicon Crystal Technology*](<https://openlibrary.org/isbn/9780126400458>) — the crystal and
   its defects.[^shimura-1989]
-* Plummer, Deal and Griffin, *Silicon VLSI Technology* — wafer
+* [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — wafer
   preparation and gettering.[^txt-01]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — wafers and
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — wafers and
   incoming inspection on the fab floor.[^txt-07]
 
 ### Deep dive
 
-* Zulehner, *J. Cryst. Growth* 1983 — Czochralski growth of
+* [Zulehner, *J. Cryst. Growth* 1983](<https://doi.org/10.1016/0022-0248(83)90051-9>) — Czochralski growth of
   silicon.[^zulehner-1983]
-* Falster and Voronkov, *Mater. Sci. Eng. B* 2000 — engineering point
+* [Falster and Voronkov, *Mater. Sci. Eng. B* 2000](<https://doi.org/10.1016/S0921-5107(99)00439-0>) — engineering point
   defects in crystals and wafers.[^falster-2000]
-* Ryuta et al., *JJAP* 1990 — crystal-originated pits revealed by
+* [Ryuta et al., *JJAP* 1990](<https://doi.org/10.1143/JJAP.29.L1947>) — crystal-originated pits revealed by
   SC-1.[^ryuta-1990]
-* Ishii et al., *JJAP* 1996 — pair pits and gate-oxide
+* [Ishii et al., *JJAP* 1996](<https://doi.org/10.1143/JJAP.35.L1385>) — pair pits and gate-oxide
   failure.[^ishii-1996]
-* Miyazaki et al., *JJAP* 1997 — COP microstructure and gate-oxide
+* [Miyazaki et al., *JJAP* 1997](<https://doi.org/10.1143/JJAP.36.6187>) — COP microstructure and gate-oxide
   integrity.[^miyazaki-1997]
-* Borghesi et al., *JAP* 1995 — oxygen precipitation in
+* [Borghesi et al., *JAP* 1995](<https://doi.org/10.1063/1.359479>) — oxygen precipitation in
   silicon.[^borghesi-1995]
-* Kang and Schroder, *JAP* 1989 — experiments and a segregation model
+* [Kang and Schroder, *JAP* 1989](<https://doi.org/10.1063/1.342714>) — experiments and a segregation model
   for phosphorus-diffusion and other extrinsic gettering.[^kang-1989]
-* Falster et al. (MEMC), US 5,994,761 — wafers with pre-set oxygen
+* [Falster et al. (MEMC), US 5,994,761](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5994761>) — wafers with pre-set oxygen
   precipitation.[^pat-mdz-memc]
-* ITRS 2001, *Front End Processes* — starting-material targets and the
+* [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — starting-material targets and the
   polished-versus-epi trade.[^itrs-01]
-* Popovich, Chilton and Kilgore, ASMC 1997 — a test-wafer inventory and
+* [Popovich, Chilton and Kilgore, ASMC 1997](<https://doi.org/10.1109/ASMC.1997.630777>) — a test-wafer inventory and
   reuse system.[^popovich-1997]
-* Watanabe et al., ISSM 1999 — cutting monitor wafers per wafer start in
+* [Watanabe et al., ISSM 1999](<https://doi.org/10.1109/ISSM.1999.808796>) — cutting monitor wafers per wafer start in
   a DRAM fab.[^watanabe-1999]
-* Ozelkan and Cakanyildirim, *IEEE TSM* 2006 — a network model of
+* [Ozelkan and Cakanyildirim, *IEEE TSM* 2006](<https://doi.org/10.1109/TSM.2006.873401>) — a network model of
   test-wafer purchase and downgrading.[^ozelkan-2006]
-* Faruqi et al., ASMC 2008 — automated test-wafer management and
+* [Faruqi et al., ASMC 2008](<https://doi.org/10.1109/ASMC.2008.4529062>) — automated test-wafer management and
   sorting.[^faruqi-2008]
-* Dong et al., ASMC 2024 — in-house test-wafer reclaim.[^dong-2024]
-* Chen et al., RTP 2002 — thin-film-thermocouple test wafers in a 200 mm
+* [Dong et al., ASMC 2024](<https://doi.org/10.1109/ASMC61125.2024.10545463>) — in-house test-wafer reclaim.[^dong-2024]
+* [Chen et al., RTP 2002](<https://doi.org/10.1109/RTP.2002.1039440>) — thin-film-thermocouple test wafers in a 200 mm
   RTP test bed.[^chen-2002-rtp]
 
 ## Open questions

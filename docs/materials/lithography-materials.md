@@ -379,85 +379,85 @@ conditions of their own.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the lithography,
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the lithography,
   photo-metrology and mask-service entries.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   the photoresist and developer suppliers.[^sec-01][^sec-02]
-* SkyWater PDK, *Criteria & Assumptions* — the two photoresist
+* [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the two photoresist
   thicknesses.[^pdk-03]
-* The *S8 / SKY130 Process Steps* sheet — mask types for three
+* [The *S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — mask types for three
   plates.[^steps-sheet]
-* Tokyo Ohka Kogyo, *Semiconductor Manufacturing Field* — the company's
+* [Tokyo Ohka Kogyo, *Semiconductor Manufacturing Field*](<https://www.tok.co.jp/eng/products/semiconductor-pre>) — the company's
   resist, developer, thinner and adhesion product lines.[^tok-products]
-* JSR, *About our Electronic Materials Business* — photoresists and
+* [JSR, *About our Electronic Materials Business*](<https://www.jsr.co.jp/jsr_e/products/em/biz/>) — photoresists and
   multilayer materials.[^jsr-em]
-* Moses Lake Industries, *TMAH Aqueous Solutions* and *About MLI* — TMAH
+* Moses Lake Industries, [*TMAH Aqueous Solutions*](<https://mlindustries.com/products/tmah-aqueous-solutions/>) and [*About MLI*](<https://mlindustries.com/about-mli/>) — TMAH
   concentrations, purity and packaging, and the company's
   ownership.[^mli-tmah][^mli-about]
-* Photronics, *Advanced Binary Reticle* — binary and embedded attenuated
+* [Photronics, *Advanced Binary Reticle*](<https://www.photronics.com/products/advanced-binary-reticle/>) — binary and embedded attenuated
   phase-shift reticles.[^photronics-abr]
-* Ushio, *Super high-pressure UV lamps* — lithography mercury
+* [Ushio, *Super high-pressure UV lamps*](<https://www.ushio.co.jp/en/products/1010.html>) — lithography mercury
   lamps.[^ushio-uv-lamps]
 
 ### High-level understanding
 
-* Wikipedia, *Photoresist* and *Diazonaphthoquinone* — resist types,
+* Wikipedia, [*Photoresist*](<https://en.wikipedia.org/wiki/Photoresist>) and [*Diazonaphthoquinone*](<https://en.wikipedia.org/wiki/Diazonaphthoquinone>) — resist types,
   DNQ/novolac and chemical amplification.[^wiki-resist][^wiki-dnq]
-* Wikipedia, *Photolithography* — priming, BARC, edge-bead removal,
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — priming, BARC, edge-bead removal,
   developer and hard bake.[^wiki-litho]
-* Wikipedia, *Anti-reflective coating* — ARCs in
+* [Wikipedia, *Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>) — ARCs in
   lithography.[^wiki-arc]
-* Wikipedia, *Bis(trimethylsilyl)amine*, *Propylene glycol methyl ether
-  acetate* and *Tetramethylammonium hydroxide* — the primer, a casting
+* Wikipedia, [*Bis(trimethylsilyl)amine*](<https://en.wikipedia.org/wiki/Bis(trimethylsilyl)amine>), [*Propylene glycol methyl ether
+  acetate*](<https://en.wikipedia.org/wiki/Propylene_glycol_methyl_ether_acetate>) and [*Tetramethylammonium hydroxide*](<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>) — the primer, a casting
   and rinse solvent, and the developer.[^wiki-hmds][^wiki-pgmea][^wiki-tmah]
-* Wikipedia, *Photomask* and *Excimer laser* — reticles, pellicles and
+* Wikipedia, [*Photomask*](<https://en.wikipedia.org/wiki/Photomask>) and [*Excimer laser*](<https://en.wikipedia.org/wiki/Excimer_laser>) — reticles, pellicles and
   KrF lasers.[^wiki-mask][^wiki-excimer]
-* MicroChemicals, *Development of photoresists* — developer types and
+* [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — developer types and
   strength.[^microchemicals-dev]
-* Mack, *Fundamental Principles of Optical Lithography* — resist
+* [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — resist
   chemistry and processing.[^mack-2007]
 
 ### Deep dive
 
-* Dill et al., *IEEE TED* 1975 — the A, B, C exposure parameters and
+* [Dill et al., *IEEE TED* 1975](<https://doi.org/10.1109/T-ED.1975.18159>) — the A, B, C exposure parameters and
   development rate of positive resist.[^dill-1975]
-* Pacansky and Lyerla, *IBM J. Res. Dev.* 1979 — the photochemistry of
+* [Pacansky and Lyerla, *IBM J. Res. Dev.* 1979](<https://doi.org/10.1147/rd.231.0042>) — the photochemistry of
   DNQ in novolac.[^pacansky-1979]
-* Kim, Oldham and Neureuther, *IEEE TED* 1984 — a development model for
+* [Kim, Oldham and Neureuther, *IEEE TED* 1984](<https://doi.org/10.1109/T-ED.1984.21779>) — a development model for
   positive resist.[^kim-1984]
-* Dammel, *Diazonaphthoquinone-based Resists* — i-line resist
+* [Dammel, *Diazonaphthoquinone-based Resists*](<https://doi.org/10.1117/3.2265072>) — i-line resist
   chemistry.[^dammel-1993]
-* Reichmanis and Thompson, *Chem. Rev.* 1989 — polymer materials for
+* [Reichmanis and Thompson, *Chem. Rev.* 1989](<https://doi.org/10.1021/cr00096a001>) — polymer materials for
   microlithography.[^reichmanis-1989]
-* Ito and Willson, *ACS Symp. Ser.* 1984 — chemically amplified
+* [Ito and Willson, *ACS Symp. Ser.* 1984](<https://doi.org/10.1021/bk-1984-0242.ch002>) — chemically amplified
   resists.[^ito-1984]
-* MacDonald et al., *Proc. SPIE* 1991 — airborne amines and chemically
+* [MacDonald et al., *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46354>) — airborne amines and chemically
   amplified resist.[^macdonald-1991]
-* Ito et al., *J. Photopolym. Sci. Technol.* 1994 — the environmentally
+* [Ito et al., *J. Photopolym. Sci. Technol.* 1994](<https://doi.org/10.2494/photopolymer.7.433>) — the environmentally
   stable ESCAP resist.[^ito-1994]
-* Huang et al., *Proc. SPIE* 1994 — a base-resilient positive DUV
+* [Huang et al., *Proc. SPIE* 1994](<https://doi.org/10.1117/12.175370>) — a base-resilient positive DUV
   resist.[^huang-1994]
-* Ito, *Adv. Polym. Sci.* 2005 — a review of chemically amplified
+* [Ito, *Adv. Polym. Sci.* 2005](<https://doi.org/10.1007/b97574>) — a review of chemically amplified
   resists.[^ito-2005]
-* Brunner, *Proc. SPIE* 1991 — swing curves and anti-reflective
+* [Brunner, *Proc. SPIE* 1991](<https://doi.org/10.1117/12.46410>) — swing curves and anti-reflective
   coatings.[^brunner-1991]
-* Perera, *Proc. SPIE* 1989 — developer surfactants for puddle
+* [Perera, *Proc. SPIE* 1989](<https://doi.org/10.1117/12.953060>) — developer surfactants for puddle
   development.[^perera-1989]
-* Hershel, *Proc. SPIE* 1981 — the optical requirements of
+* [Hershel, *Proc. SPIE* 1981](<https://doi.org/10.1117/12.931869>) — the optical requirements of
   pellicles.[^hershel-1981]
-* Das and Sandstrom, *Proc. IEEE* 2002 — excimer lasers for
+* [Das and Sandstrom, *Proc. IEEE* 2002](<https://doi.org/10.1109/JPROC.2002.803665>) — excimer lasers for
   lithography.[^das-2002]
-* Norton et al., IIT 2000 — i-line and DUV resists under high-current
+* [Norton et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924278>) — i-line and DUV resists under high-current
   implantation.[^norton-2000]
-* Wang et al., *Ind. Eng. Chem. Res.* 2013 — recovering TMAH from
+* [Wang et al., *Ind. Eng. Chem. Res.* 2013](<https://doi.org/10.1021/ie4023995>) — recovering TMAH from
   developer wastewater.[^wang-2013-tmah]
-* Arnold, Brewer and Punyakumleard (Brewer Science), US 4,910,122 — a
+* [Arnold, Brewer and Punyakumleard (Brewer Science), US 4,910,122](<https://patents.google.com/patent/US4910122A/en>) — a
   dyed anti-reflective coating under resist.[^pat-arc-brewer]
-* Kohara et al. (Tokyo Ohka Kogyo), US 4,731,319 — a two-novolac DNQ
+* [Kohara et al. (Tokyo Ohka Kogyo), US 4,731,319](<https://patents.google.com/patent/US4731319A/en>) — a two-novolac DNQ
   resist.[^pat-resist-tok]
-* Nelson and Lehar (Clariant), US 5,814,433 — an ethyl lactate edge-bead
+* [Nelson and Lehar (Clariant), US 5,814,433](<https://patents.google.com/patent/US5814433A/en>) — an ethyl lactate edge-bead
   remover.[^pat-ebr-clariant]
-* Jeon, Lee and Lee (Samsung), US 6,159,646 — thinner compositions for
+* [Jeon, Lee and Lee (Samsung), US 6,159,646](<https://patents.google.com/patent/US6159646A/en>) — thinner compositions for
   edge rinse and rework.[^pat-thinner-samsung]
 * SEMI P1, SEMI P5 and SEMI C46 — photomask substrates, pellicles and
   25 % TMAH.[^semi-p1][^semi-p5][^semi-c46]

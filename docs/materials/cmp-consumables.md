@@ -322,88 +322,88 @@ not public.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "AMAT Mirra CMP"
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "AMAT Mirra CMP"
   entry, its polishes and cleans.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   chemical suppliers, including "CMC Chemicals, Inc.".[^sec-01][^sec-02]
-* SkyWater Technology, maintenance-technician profile — the SEZ
+* [SkyWater Technology, maintenance-technician profile](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — the SEZ
   tool.[^skw-07]
-* Entegris, *CMC Materials | July 2022* and *Semiconductor Cleaning
-  Solutions* — the acquisition and the CMP consumables
+* Entegris, [*CMC Materials | July 2022*](<https://www.entegris.com/en/home/brands/cmc-materials-july-2022.html>) and [*Semiconductor Cleaning
+  Solutions*](<https://www.entegris.com/en/home/products/chemistries/specialty-chemicals/post-cmp-cleaning-solutions/semiconductor-cleaning-solutions.html>) — the acquisition and the CMP consumables
   offered.[^entegris-cmc-2022][^entegris-post-cmp]
-* Qnity Electronics, *CMP Pads* and *Our story* — current pad lines and
+* Qnity Electronics, [*CMP Pads*](<https://www.qnityelectronics.com/cmp-pads.html>) and [*Our story*](<https://www.qnityelectronics.com/our-story.html>) — current pad lines and
   the company's DuPont origin.[^qnity-cmp-pads][^qnity-story]
-* Cabot, US 5,958,288 — an oxidiser-and-catalyst tungsten
+* [Cabot, US 5,958,288](<https://patents.google.com/patent/US5958288A/en>) — an oxidiser-and-catalyst tungsten
   slurry.[^pat-cmp-cabot]
-* Applied Materials, Mirra Mesa release — integrated cleaner
+* [Applied Materials, Mirra Mesa release](<https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-new-mirra-mesa-system-address-market>) — integrated cleaner
   chemistries.[^amat-mesa-1999]
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing*, *Cerium(IV) oxide* and
-  *Colloidal silica* — pads, abrasives and slurry
+* Wikipedia, [*Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>), [*Cerium(IV) oxide*](<https://en.wikipedia.org/wiki/Cerium(IV)_oxide>) and
+  [*Colloidal silica*](<https://en.wikipedia.org/wiki/Colloidal_silica>) — pads, abrasives and slurry
   particles.[^wiki-cmp][^wiki-ceria][^wiki-colloidal-silica]
-* Wikipedia, *Entegris* — CMC Materials' acquisition and its former name,
+* [Wikipedia, *Entegris*](<https://en.wikipedia.org/wiki/Entegris>) — CMC Materials' acquisition and its former name,
   Cabot Microelectronics.[^wiki-entegris]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — CMP on the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — CMP on the
   fab floor, with its water and waste.[^txt-07]
-* Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
-  Materials* — chapters on dielectric and metal CMP and
+* [Oliver (ed.), *Chemical-Mechanical Planarization of Semiconductor
+  Materials*](<https://doi.org/10.1007/978-3-662-06234-0>) — chapters on dielectric and metal CMP and
   cleaning.[^oliver-2004]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization of
-  Microelectronic Materials* — pads, slurries and process
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization of
+  Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>) — pads, slurries and process
   control.[^steigerwald-1997]
-* IPEC-Planar, *AVANTI 472* — slurry delivery on a 200 mm polisher of
+* [IPEC-Planar, *AVANTI 472*](<https://web.archive.org/web/19970626104141/http://www.ipec.com:80/planar/472.html>) — slurry delivery on a 200 mm polisher of
   the period.[^ipec-472-1997]
 
 ### Deep dive
 
-* Cook, *J. Non-Cryst. Solids* 1990 — the chemistry of oxide
+* [Cook, *J. Non-Cryst. Solids* 1990](<https://doi.org/10.1016/0022-3093(90)90200-6>) — the chemistry of oxide
   polishing.[^cook-1990]
-* Kaufman et al., *JES* 1991 — tungsten CMP for interconnect.[^kaufman-1991]
-* Stein, Hetherington and Cecchi, *JES* 1999 — tungsten polishing kinetics
+* [Kaufman et al., *JES* 1991](<https://doi.org/10.1149/1.2085434>) — tungsten CMP for interconnect.[^kaufman-1991]
+* [Stein, Hetherington and Cecchi, *JES* 1999](<https://doi.org/10.1149/1.1391617>) — tungsten polishing kinetics
   with alumina and iodate.[^stein-1999]
-* Hoshino et al., *J. Non-Cryst. Solids* 2001 — how ceria polishes
+* [Hoshino et al., *J. Non-Cryst. Solids* 2001](<https://doi.org/10.1016/S0022-3093(01)00364-7>) — how ceria polishes
   silica.[^hoshino-2001]
-* America and Babu, *ESSL* 2004 — additives that suppress nitride
+* [America and Babu, *ESSL* 2004](<https://doi.org/10.1149/1.1817870>) — additives that suppress nitride
   removal.[^america-2004]
-* Kim et al., *JVST B* 2002 — a ceria high-selectivity STI slurry in
+* [Kim et al., *JVST B* 2002](<https://doi.org/10.1116/1.1475984>) — a ceria high-selectivity STI slurry in
   0.18 µm CMOS.[^kim-2002-ceria]
-* Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010 — slurry chemistry
+* [Krishnan, Nalaskowski and Cook, *Chem. Rev.* 2010](<https://doi.org/10.1021/cr900170z>) — slurry chemistry
   and mechanisms.[^rev-02]
-* Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004 — a long review of
+* [Zantye, Kumar and Sikder, *Mater. Sci. Eng. R* 2004](<https://doi.org/10.1016/j.mser.2004.06.002>) — a long review of
   CMP and its consumables.[^zantye-2004]
-* Luo and Dornfeld, *IEEE TSM* 2001 — abrasive-contact removal
+* [Luo and Dornfeld, *IEEE TSM* 2001](<https://doi.org/10.1109/66.920723>) — abrasive-contact removal
   model.[^luo-2001]
-* Reinhardt et al. (Rodel), US 5,578,362 — the microelement-filled
+* [Reinhardt et al. (Rodel), US 5,578,362](<https://patents.google.com/patent/US5578362A/en>) — the microelement-filled
   polymer pad.[^pat-pad-rodel]
-* Castillo-Mejia, Kelchner and Beaudoin, *JES* 2004 — pad surface
+* [Castillo-Mejia, Kelchner and Beaudoin, *JES* 2004](<https://doi.org/10.1149/1.1649751>) — pad surface
   morphology and removal.[^castillo-mejia-2004]
-* Kakireddy et al., *ECS Trans.* 2010 — conditioner diamonds, pad cut
+* [Kakireddy et al., *ECS Trans.* 2010](<https://doi.org/10.1149/1.3489056>) — conditioner diamonds, pad cut
   rate and removal rate.[^kakireddy-2010]
-* Zuniga et al. (Applied Materials), US 6,183,354 — a membrane carrier
+* [Zuniga et al. (Applied Materials), US 6,183,354](<https://patents.google.com/patent/US6183354B1/en>) — a membrane carrier
   head.[^pat-carrier-amat]
-* Birang, Gleason and Guthrie (Applied Materials), US 5,893,796 — a
+* [Birang, Gleason and Guthrie (Applied Materials), US 5,893,796](<https://patents.google.com/patent/US5893796A/en>) — a
   window pad for optical endpoint.[^pat-cmp-window]
-* Bennett and Fury, ICPT 2014 — slurry large-particle counts against
+* [Bennett and Fury, ICPT 2014](<https://doi.org/10.1109/ICPT.2014.7017243>) — slurry large-particle counts against
   production defects.[^bennett-2014]
-* Kwon, Ramachandran and Park, *Friction* 2013 — scratch formation and
+* [Kwon, Ramachandran and Park, *Friction* 2013](<https://doi.org/10.1007/s40544-013-0026-y>) — scratch formation and
   its prevention.[^kwon-2013]
-* Lutz (OnTrak), US 5,442,828 — a double-sided scrubber with a wet
+* [Lutz (OnTrak), US 5,442,828](<https://patents.google.com/patent/US5442828A/en>) — a double-sided scrubber with a wet
   indexer.[^pat-scrubber-ontrak]
-* Zhang, Raghavan and Weling, *JVST B* 1999 — CMP defects and post-CMP
+* [Zhang, Raghavan and Weling, *JVST B* 1999](<https://doi.org/10.1116/1.590901>) — CMP defects and post-CMP
   cleaning.[^zhang-raghavan-1999]
-* Xu et al., *JVST B* 2004 — particle removal by brush
+* [Xu et al., *JVST B* 2004](<https://doi.org/10.1116/1.1815319>) — particle removal by brush
   scrubbing.[^xu-2004]
-* Philipossian and Sun, *ESSL* 2009 — PVA brush roller
+* [Philipossian and Sun, *ESSL* 2009](<https://doi.org/10.1149/1.3058994>) — PVA brush roller
   designs.[^philipossian-2009]
-* Jolley, *Solid State Phenomena* 1998 — TMAH after tungsten
+* [Jolley, *Solid State Phenomena* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.105>) — TMAH after tungsten
   CMP.[^jolley-1998]
-* Ge et al., ICSICT 2006 — post-tungsten-CMP clean and metal
+* [Ge et al., ICSICT 2006](<https://doi.org/10.1109/ICSICT.2006.306249>) — post-tungsten-CMP clean and metal
   bridging.[^ge-2006]
-* Ollendorf, Cabral and Fuller, ASMC 2004 — tungsten micro-scratch
+* [Ollendorf, Cabral and Fuller, ASMC 2004](<https://doi.org/10.1109/ASMC.2004.1309523>) — tungsten micro-scratch
   shorts.[^ollendorf-2004]
-* Lai and Lin, *Chem. Eng. J.* 2003 — electrocoagulation of CMP waste
+* [Lai and Lin, *Chem. Eng. J.* 2003](<https://doi.org/10.1016/S1385-8947(03)00106-2>) — electrocoagulation of CMP waste
   water.[^lai-2003]
 
 ## Open questions

@@ -291,16 +291,16 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the "CO2 injected DI"
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the "CO2 injected DI"
   entry.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   raw materials, the Florida water treatment facility and environmental
   statements.[^sec-01][^sec-02]
 * SEMI F63 and SEMI F61 — UPW quality and system
   guides.[^semi-f63][^semi-f61]
-* ASTM D5127 — ultrapure water for the electronics and semiconductor
+* [ASTM D5127](<https://www.astm.org/d5127-13r18.html>) — ultrapure water for the electronics and semiconductor
   industries.[^astm-d5127]
-* ITRS 2001, *Yield Enhancement* — UPW definition, requirements, test
+* [ITRS 2001, *Yield Enhancement*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>) — UPW definition, requirements, test
   methods and recycling.[^itrs-2001-yield]
 
 :::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
@@ -310,39 +310,39 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ultrapure water* and *Purified water* — production,
+* Wikipedia, [*Ultrapure water*](<https://en.wikipedia.org/wiki/Ultrapure_water>) and [*Purified water*](<https://en.wikipedia.org/wiki/Purified_water>) — production,
   specifications and analytical methods.[^wiki-upw][^wiki-purified-water]
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — water on the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — water on the
   fab floor.[^txt-07]
-* Kern, *JES* 1990 — the wet cleaning that water rinses.[^kern-1990]
-* SCREEN, SS-3200 release — DI water use per wafer in a 200 mm
+* [Kern, *JES* 1990](<https://doi.org/10.1149/1.2086825>) — the wet cleaning that water rinses.[^kern-1990]
+* [SCREEN, SS-3200 release](<https://www.screen.co.jp/spe/en/information/spe241106>) — DI water use per wafer in a 200 mm
   scrubber.[^screen-ss3200]
-* Wikipedia, *RCA clean* — water in the peroxide cleans.[^wiki-rca]
+* [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — water in the peroxide cleans.[^wiki-rca]
 
 ### Deep dive
 
-* Morita et al., *JAP* 1990 — native-oxide growth in air and ultrapure
+* [Morita et al., *JAP* 1990](<https://doi.org/10.1063/1.347181>) — native-oxide growth in air and ultrapure
   water.[^morita-1990]
-* Li, Balazs and Anderson, *JES* 2005 — dissolved oxygen in UPW and
+* [Li, Balazs and Anderson, *JES* 2005](<https://doi.org/10.1149/1.1946487>) — dissolved oxygen in UPW and
   initial native-oxide growth.[^li-2005]
-* Yagi et al., *IEEE TSM* 1992 — low-dissolved-oxygen UPW
+* [Yagi et al., *IEEE TSM* 1992](<https://doi.org/10.1109/66.136273>) — low-dissolved-oxygen UPW
   systems.[^yagi-1992]
-* Ohmi, *JES* 1996 — a room-temperature clean with less water.[^ohmi-1996]
-* Gaudet, ASTM *Semiconductor Processing* 1984 — point-of-use ultrafiltration of rinse
+* [Ohmi, *JES* 1996](<https://doi.org/10.1149/1.1837133>) — a room-temperature clean with less water.[^ohmi-1996]
+* [Gaudet, ASTM *Semiconductor Processing* 1984](<https://doi.org/10.1520/STP32652S>) — point-of-use ultrafiltration of rinse
   water.[^gaudet-1984]
-* Cartwright, *Water Sci. Technol.* 1985 — rinse-water reclamation in a
+* [Cartwright, *Water Sci. Technol.* 1985](<https://doi.org/10.2166/wst.1985.0141>) — rinse-water reclamation in a
   semiconductor plant.[^cartwright-1985]
-* Libman, Wilcox and Zerfas, *ECS Trans.* 2015 — UPW challenges for
+* [Libman, Wilcox and Zerfas, *ECS Trans.* 2015](<https://doi.org/10.1149/06908.0017ecst>) — UPW challenges for
   advanced manufacturing.[^libman-2015]
-* Nakata, Fukui and Nagai, ISSM 2016 — particle adsorption onto silicon in
+* [Nakata, Fukui and Nagai, ISSM 2016](<https://doi.org/10.1109/ISSM.2016.7934544>) — particle adsorption onto silicon in
   UPW.[^nakata-2016]
-* Leenaars, Huethorst and van Oekel, *Langmuir* 1990 — Marangoni drying
+* [Leenaars, Huethorst and van Oekel, *Langmuir* 1990](<https://doi.org/10.1021/la00101a014>) — Marangoni drying
   after the rinse.[^leenaars-1990]
-* Busnaina, Kashkoush and Gale, *JES* 1995 — megasonic cleaning in DI
+* [Busnaina, Kashkoush and Gale, *JES* 1995](<https://doi.org/10.1149/1.2050096>) — megasonic cleaning in DI
   water and SC-1.[^busnaina-1995]
-* Lutz (OnTrak), US 5,442,828 — water-flushed brushes and a wet
+* [Lutz (OnTrak), US 5,442,828](<https://patents.google.com/patent/US5442828A/en>) — water-flushed brushes and a wet
   indexer.[^pat-scrubber-ontrak]
-* SEMI F63 — the UPW quality guide, with its IRDS basis.[^semi-f63]
+* [SEMI F63](<https://store-us.semi.org/products/f06300-semi-f63-guide-for-ultrapure-water-used-in-semiconductor-processing>) — the UPW quality guide, with its IRDS basis.[^semi-f63]
 
 ## Open questions
 

@@ -440,7 +440,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — every gas,
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — every gas,
   chemistry, film and polish process quoted in the main table and the
   inconsistency notes.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
@@ -453,68 +453,68 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater PDK, *Device Details*, *High Voltage Methodology* and the
   1.8 V and 5 V NMOS models — MiM parameters and gate-oxide
   thicknesses.[^pdk-07][^pdk-hv][^pdk-model-nfet01v8][^pdk-model-nfet5v]
-* SkyWater, `sky130_fd_pr_reram` *Background* — the hafnium-oxide
+* SkyWater, `sky130_fd_pr_reram` [*Background*](<https://sky130-fd-pr-reram.readthedocs.io/en/latest/background.html>) — the hafnium-oxide
   switching layer of the ReRAM module.[^reram-background]
-* The *S8 / SKY130 Process Steps* sheet — the 171 steps indexed
+* [The *S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the 171 steps indexed
   here.[^steps-sheet]
-* Axcelis, *GSD Ovation* product page — source consumable costs with
+* [Axcelis, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — source consumable costs with
   fluorinated species.[^axcelis-gsd-page]
 
 ### High-level understanding
 
-* Quirk and Serda, *Semiconductor Manufacturing Technology* — the
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — the
   fab-floor view of each tool class and its consumables, including
   CMP water and waste.[^txt-07]
-* Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1 —
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   cleaning, CVD, sputtering, lithography and etch chemistry.[^txt-02]
-* Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology* — chapter-per-process detail on chamber cleans and
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapter-per-process detail on chamber cleans and
   exhaust by-products.[^txt-09]
-* Wikipedia, *RCA clean* and *Piranha solution* — SC-1, SC-2 and SPM
+* Wikipedia, [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) and [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) — SC-1, SC-2 and SPM
   compositions.[^wiki-rca][^wiki-piranha]
-* Wikipedia, *Tetramethylammonium hydroxide* and *Forming gas* — the
+* Wikipedia, [*Tetramethylammonium hydroxide*](<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>) and [*Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>) — the
   developer and the alloy ambient.[^wiki-tmah][^wiki-fg]
-* Wikipedia, *Silane*, *Phosphine*, *Arsine*, *Boron trifluoride* and
-  *Tungsten hexafluoride* — properties and hazards of the main
+* Wikipedia, [*Silane*](<https://en.wikipedia.org/wiki/Silane>), [*Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>), [*Arsine*](<https://en.wikipedia.org/wiki/Arsine>), [*Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>) and
+  [*Tungsten hexafluoride*](<https://en.wikipedia.org/wiki/Tungsten_hexafluoride>) — properties and hazards of the main
   precursor and dopant gases.[^wiki-silane][^wiki-ph3][^wiki-ash3][^wiki-bf3][^wiki-wf6]
 
 ### Deep dive
 
-* Kern, *J. Electrochem. Soc.* 1990 — how the RCA cleans and their
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — how the RCA cleans and their
   successors developed.[^kern-1990]
-* Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
-  Manufacturing* — wet and dry cleaning, including post-implant
+* [Reinhardt and Reidy (eds.), *Handbook of Cleaning in Semiconductor
+  Manufacturing*](<https://doi.org/10.1002/9781118071748>) — wet and dry cleaning, including post-implant
   strip.[^reinhardt-2010]
-* Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006 — liquid
+* [Visintin, Korzenski and Baum, *J. Electrochem. Soc.* 2006](<https://doi.org/10.1149/1.2195884>) — liquid
   strippers for high-dose implanted resist.[^visintin-2006]
-* Fujimura et al., *JVST B* 1994 — water-vapour addition to downstream
+* [Fujimura et al., *JVST B* 1994](<https://doi.org/10.1116/1.587773>) — water-vapour addition to downstream
   ashing.[^fujimura-1994]
-* van Gelder and Hauser, *J. Electrochem. Soc.* 1967 — hot phosphoric
+* [van Gelder and Hauser, *J. Electrochem. Soc.* 1967](<https://doi.org/10.1149/1.2426757>) — hot phosphoric
   acid etching of nitride against oxide.[^vgh-1967]
-* Schwartz and Robbins, *J. Electrochem. Soc.* 1976 — HF/HNO₃ etching
+* [Schwartz and Robbins, *J. Electrochem. Soc.* 1976](<https://doi.org/10.1149/1.2132721>) — HF/HNO₃ etching
   of silicon.[^schwartz-1976]
-* Nojiri, *Dry Etching Technology for Semiconductors* — production
+* [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — production
   etch chemistries for poly, oxide and metal.[^nojiri-2015]
-* Gumpher et al., *J. Electrochem. Soc.* 2004 — low-temperature LPCVD
+* [Gumpher et al., *J. Electrochem. Soc.* 2004](<https://doi.org/10.1149/1.1690294>) — low-temperature LPCVD
   nitride from BTBAS and ammonia.[^gumpher-2004]
-* Denison, Barbour and Burkhart, *JVST A* 1996 — fluorine-doped oxide
+* [Denison, Barbour and Burkhart, *JVST A* 1996](<https://doi.org/10.1116/1.580280>) — fluorine-doped oxide
   as an {term}`inter-metal dielectric`.[^denison-1996]
-* Berg and Nyberg, *Thin Solid Films* 2005 — reactive sputtering, the
+* [Berg and Nyberg, *Thin Solid Films* 2005](<https://doi.org/10.1016/j.tsf.2004.10.051>) — reactive sputtering, the
   process that makes TiN from titanium targets.[^berg-2005]
-* Hitachi Metals, US 5,160,534 — the 10 wt.% Ti composition of Ti:W
+* [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — the 10 wt.% Ti composition of Ti:W
   sputter targets.[^pat-tiw-hitachi]
-* Ito, *Advances in Polymer Science* 2005 — chemically amplified KrF
+* [Ito, *Advances in Polymer Science* 2005](<https://doi.org/10.1007/b97574>) — chemically amplified KrF
   resists.[^ito-2005]
-* Krishnan, Nalaskowski and Cook, *Chemical Reviews* 2010 — oxide and
+* [Krishnan, Nalaskowski and Cook, *Chemical Reviews* 2010](<https://doi.org/10.1021/cr900170z>) — oxide and
   tungsten slurry chemistry.[^rev-02]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
-  of Microelectronic Materials* — pads, slurries and process
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical Planarization
+  of Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>) — pads, slurries and process
   control.[^steigerwald-1997]
-* Zantye, Kumar and Sikder, *Materials Science and Engineering R* 2004
+* [Zantye, Kumar and Sikder, *Materials Science and Engineering R* 2004](<https://doi.org/10.1016/j.mser.2004.06.002>)
   — a long review of CMP, including slurry consumption.[^zantye-2004]
-* Cabot, US 5,958,288 — a peroxide and ferric-catalyst tungsten
+* [Cabot, US 5,958,288](<https://patents.google.com/patent/US5958288A/en>) — a peroxide and ferric-catalyst tungsten
   slurry.[^pat-cmp-cabot]
-* Jolley, *Solid State Phenomena* 1998 — TMAH as a post-tungsten-CMP
+* [Jolley, *Solid State Phenomena* 1998](<https://doi.org/10.4028/www.scientific.net/SSP.65-66.105>) — TMAH as a post-tungsten-CMP
   clean.[^jolley-1998]
 * SEMI M1 and SEMI M8 — the specifications for prime and test
   wafers.[^semi-m1][^semi-m8]

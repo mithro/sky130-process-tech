@@ -413,7 +413,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* — the wet-bench,
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — the wet-bench,
   solvent, single-wafer, pre-clean and CMP entries quoted on this
   page.[^skw-01]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
@@ -423,7 +423,7 @@ Status and expiry are estimates from public records and are not legal advice.
   hydrofluoric acid, buffered oxide etchants, hydrogen peroxide,
   sulphuric acid and
   2-propanol.[^semi-c28][^semi-c23][^semi-c30][^semi-c44][^semi-c41]
-* Lee (EKC Technology), US 5,334,332 — hydroxylamine and alkanolamine
+* [Lee (EKC Technology), US 5,334,332](<https://patents.google.com/patent/US5334332A/en>) — hydroxylamine and alkanolamine
   residue removers.[^pat-ekc-hydroxylamine]
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
@@ -434,60 +434,60 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *RCA clean* and *Piranha solution* — the SC-1, SC-2 and SPM
+* Wikipedia, [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) and [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) — the SC-1, SC-2 and SPM
   recipes and their hazards.[^wiki-rca][^wiki-piranha]
-* Wikipedia, *Hydrofluoric acid* and *Buffered oxide etch* — oxide
+* Wikipedia, [*Hydrofluoric acid*](<https://en.wikipedia.org/wiki/Hydrofluoric_acid>) and [*Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>) — oxide
   etchants.[^wiki-hf][^wiki-boe]
-* Wikipedia, *Hydrogen peroxide*, *Sulfuric acid*, *Phosphoric acid*,
-  *Nitric acid* and *Isopropyl alcohol* — the bulk
+* Wikipedia, [*Hydrogen peroxide*](<https://en.wikipedia.org/wiki/Hydrogen_peroxide>), [*Sulfuric acid*](<https://en.wikipedia.org/wiki/Sulfuric_acid>), [*Phosphoric acid*](<https://en.wikipedia.org/wiki/Phosphoric_acid>),
+  [*Nitric acid*](<https://en.wikipedia.org/wiki/Nitric_acid>) and [*Isopropyl alcohol*](<https://en.wikipedia.org/wiki/Isopropyl_alcohol>) — the bulk
   chemicals.[^wiki-h2o2][^wiki-h2so4][^wiki-h3po4][^wiki-hno3][^wiki-ipa]
-* Kern, ch. 1 of *Handbook of Silicon Wafer Cleaning Technology* — an
+* [Kern, ch. 1 of *Handbook of Silicon Wafer Cleaning Technology*](<https://doi.org/10.1016/b978-081551554-8.50004-5>) — an
   overview of cleaning technology.[^kern-handbook]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology* — wet cleaning, resist removal and
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>) — wet cleaning, resist removal and
   contamination.[^reinhardt-2008]
 
 ### Deep dive
 
 * Kern and Puotinen, *RCA Review* 1970 — the original peroxide cleaning
   solutions.[^kern-1970]
-* Kern, *JES* 1990 — how cleaning chemistry and equipment
+* [Kern, *JES* 1990](<https://doi.org/10.1149/1.2086825>) — how cleaning chemistry and equipment
   evolved.[^kern-1990]
-* Higashi et al., *APL* 1990 — the hydrogen-terminated surface HF
+* [Higashi et al., *APL* 1990](<https://doi.org/10.1063/1.102728>) — the hydrogen-terminated surface HF
   leaves.[^higashi-1990]
-* Morita et al., *JAP* 1990 — native-oxide regrowth in air and
+* [Morita et al., *JAP* 1990](<https://doi.org/10.1063/1.347181>) — native-oxide regrowth in air and
   water.[^morita-1990]
-* Itano et al., *IEEE TSM* 1993 — particle removal in alkaline and acid
+* [Itano et al., *IEEE TSM* 1993](<https://doi.org/10.1109/66.238174>) — particle removal in alkaline and acid
   cleans and a dilute SC-1 ratio.[^itano-1993]
-* Norga et al., *JES* 1997 — copper deposition on silicon from dilute
+* [Norga et al., *JES* 1997](<https://doi.org/10.1149/1.1837898>) — copper deposition on silicon from dilute
   HF.[^norga-1997]
-* Kikuyama et al., *JES* 1994 — dissociation and oxide etching in very
+* [Kikuyama et al., *JES* 1994](<https://doi.org/10.1149/1.2054733>) — dissociation and oxide etching in very
   dilute HF.[^kikuyama-1994]
-* Knotter and Denteneer, *JES* 2001 — the etching mechanism of nitride
+* [Knotter and Denteneer, *JES* 2001](<https://doi.org/10.1149/1.1348262>) — the etching mechanism of nitride
   in HF solutions.[^knotter-2001]
-* van Gelder and Hauser, *JES* 1967 — nitride etching in hot phosphoric
+* [van Gelder and Hauser, *JES* 1967](<https://doi.org/10.1149/1.2426757>) — nitride etching in hot phosphoric
   acid.[^vgh-1967]
-* Liu et al., *ECS Trans.* 2007 — keeping a phosphoric bath's
+* [Liu et al., *ECS Trans.* 2007](<https://doi.org/10.1149/1.2779363>) — keeping a phosphoric bath's
   selectivity stable in production.[^liu-2007]
-* Robbins and Schwartz, *JES* 1959 — the kinetics of HF–HNO₃ silicon
+* [Robbins and Schwartz, *JES* 1959](<https://doi.org/10.1149/1.2427397>) — the kinetics of HF–HNO₃ silicon
   etching.[^robbins-1959]
-* Schwartz and Robbins, *JES* 1976 — silicon etching
+* [Schwartz and Robbins, *JES* 1976](<https://doi.org/10.1149/1.2132721>) — silicon etching
   technology.[^schwartz-1976]
-* Ohmi, *JES* 1996 — a room-temperature clean with less chemical and
+* [Ohmi, *JES* 1996](<https://doi.org/10.1149/1.1837133>) — a room-temperature clean with less chemical and
   water.[^ohmi-1996]
-* Hattori et al., *JES* 1998 — ozonised water and dilute HF in a spin
+* [Hattori et al., *JES* 1998](<https://doi.org/10.1149/1.1838798>) — ozonised water and dilute HF in a spin
   clean.[^hattori-1998]
-* Leenaars, Huethorst and van Oekel, *Langmuir* 1990 — Marangoni
+* [Leenaars, Huethorst and van Oekel, *Langmuir* 1990](<https://doi.org/10.1021/la00101a014>) — Marangoni
   drying.[^leenaars-1990]
-* Chen et al., *Ind. Eng. Chem. Res.* 2003 — tungsten corrosion in
+* [Chen et al., *Ind. Eng. Chem. Res.* 2003](<https://doi.org/10.1021/ie030025h>) — tungsten corrosion in
   EKC265.[^chen-2003-ekc]
-* Visintin, Korzenski and Baum, *JES* 2006 — liquid strippers for
+* [Visintin, Korzenski and Baum, *JES* 2006](<https://doi.org/10.1149/1.2195884>) — liquid strippers for
   high-dose implanted resist.[^visintin-2006]
-* Ohmi, Miki and Kikuyama (Hashimoto Chemical), US 4,795,582 — buffered
+* [Ohmi, Miki and Kikuyama (Hashimoto Chemical), US 4,795,582](<https://patents.google.com/patent/US4795582A/en>) — buffered
   HF with surfactants.[^pat-bhf-hashimoto]
-* Enjo and Tamura (Daikin), US 4,582,624 — buffered HF with a
+* [Enjo and Tamura (Daikin), US 4,582,624](<https://patents.google.com/patent/US4582624A/en>) — buffered HF with a
   fluorinated surfactant.[^pat-bhf-daikin]
-* Hoffman and Clark (Startec Ventures), US 5,722,442 — on-site
+* [Hoffman and Clark (Startec Ventures), US 5,722,442](<https://patents.google.com/patent/US5722442A/en>) — on-site
   generation of buffered HF.[^pat-bhf-startec]
 
 ## Open questions
