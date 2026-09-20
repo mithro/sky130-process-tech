@@ -33,9 +33,21 @@ standing rules are `agent-briefs.md`.
   linked from step pages, also collapsed.
 * The five-hour usage window is the tighter limit in practice: on 2026-09-18 it filled in under five hours with five or six agents running and cut one agent off in mid-work. Keep to about three agents at a time, launch nothing new once the window is above 80 %, and require agents to commit at least every 15 minutes so that a cut-off loses little. The usage endpoint allows only a few reads per hour; the ledger script reads it at most hourly.
 
-## In flight (2026-09-19, afternoon)
+## In flight (2026-09-20)
 
-Nothing. Every branch is merged on `main`; there are no worktrees.
+Readability phase. Plan: `docs/plans/readability-plan.md`. Agents get the ground rules of that plan, the
+check list of `agent-briefs.md`, one worktree and branch each, and a progress file
+`docs/plans/progress-<name>.md`.
+
+| Branch / worktree | Task | Model | State |
+|---|---|---|---|
+| `topic/rd-theme` | W0a theme CSS and footnote popover; W0b `tools/check_preserved.py` | Sonnet | running |
+| `topic/rd-generators` | W0d generators (step index, index-links block, patent/paper/filing indexes, step-link text) | Sonnet | running |
+| `topic/rd-guide` | `docs/plans/readability-guide.md` from the four reports | Opus | running |
+
+Next: Opus review of each branch (rendered pages included), fixes, merge; then W0c (citation links — after the
+generators branch, which touches the same region of 206 pages), W0e, W0f, W1a; then the page batches W2–W4.
+Local `main` is pushed to the `next` branch on origin.
 
 ## Open items, none of them blocking (details in `TASKLOG.md`)
 
