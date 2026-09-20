@@ -10,11 +10,24 @@
 | **Previous step** | {ref}`FOM <step-004>` |
 | **Next step** | {ref}`STIE <step-006>` |
 
+:::{admonition} At a glance
+* **Does:** plasma-etches the resist-open field down through the BARC,
+  nitride and pad oxide, stopping on bare silicon.
+* **Why:** opens a clean, vertical hard-mask window that the silicon
+  trench etch and liner oxidation both depend on.
+* **Public numbers:** fluorocarbon nitride etch rates of the order of
+  100–300 nm/min; selectivity to resist roughly 1–2:1.[^txt-02][^txt-05]
+* **Likely SkyWater tool:** Lam 9400 TCP — strong (existence);
+  inference (assignment).[^skw-01]
+* **Not public:** whether STINITE and STIE run as one chamber recipe
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `STINITE` (shallow-trench-isolation nitride etch) is a plasma etch that
 transfers the resist pattern from {ref}`FOM <step-004>` into the hard
-mask: it removes the {term}`BARC` (if one is used), the isolation nitride
+mask. It removes the {term}`BARC` (if one is used), the isolation nitride
 ({ref}`ISONIT <step-003>`) and the pad oxide ({ref}`BOX <step-002>`)
 wherever the resist is open, stopping on silicon. When it is finished
 the future field regions are bare silicon and the future active
@@ -38,9 +51,12 @@ note that the hand-off is not public.
 
 `STINITE` is an {ref}`Etch <category-etch>` step — a fluorocarbon
 dielectric etch of nitride and oxide, distinct from the halogen
-silicon etch at {ref}`STIE <step-006>`. Similar nitride-opening etches
-occur later at {ref}`SPE <step-077>` ({term}`spacer`) and
-{ref}`NPCME <step-079>`.
+silicon etch at {ref}`STIE <step-006>`.
+
+**Specific to this step:**
+
+* Similar nitride-opening etches occur later at {ref}`SPE <step-077>`
+  ({term}`spacer`) and {ref}`NPCME <step-079>`.
 
 ## Why this step exists
 
@@ -68,8 +84,10 @@ An industry-generic recipe for a 200 mm, 130 nm-era fab:
    removes the organic anti-reflective layer in the open areas.
 2. **Nitride main etch.** Fluorocarbon chemistry — CF₄, CHF₃ and O₂ (or
    CF₄/O₂ with a little Ar) — in a medium-density or high-density
-   plasma. Fluorine radicals etch nitride; CHF₃ adds polymerising
-   carbon that protects the sidewall and gives {term}`anisotropy`; O₂ trims the
+   plasma.
+
+   Fluorine radicals etch nitride. CHF₃ adds polymerising
+   carbon that protects the sidewall and gives {term}`anisotropy`. O₂ trims the
    polymer[^txt-02] (Wikipedia: "High-energy ions from the plasma
    attack the wafer surface and react with it", giving "very
    anisotropic etch profiles"[^wiki-rie]). Gas pressure in {term}`RIE` is
@@ -105,21 +123,26 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
 
 ## Machines likely used at SkyWater
 
-* **Lam 9400 TCP.** SkyWater lists "Lam 9400 TCP, poly/nitride, HBr,
-  CF4, SF6, O2".[^skw-01] Strength: strong that a nitride-capable TCP
-  etcher exists; **inference** for this step, the entry being the only
-  one on the list that names nitride. The 9400 is a
-  transformer-coupled high-density plasma etcher which Stanford's
-  facility describes as being "for selective etching of silicon and
-  polysilicon".[^snf-9400]
-* **AMAT DPS II (Centura).** SkyWater lists it with CF₄ and CHF₃ among
-  its gases and "trench" among its applications.[^skw-01] Strength:
-  strong that the tool and gases exist; **medium** for this step,
-  since its CF₄ and CHF₃ etch nitride although the entry names no
-  nitride application.
-* **Lam 4400.** SkyWater lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
-  O2".[^skw-01] Strength: strong for existence; **weak** for this
-  step, as the entry names no application.
+* **Lam 9400 TCP**
+  - *SkyWater says:* it lists "Lam 9400 TCP, poly/nitride, HBr, CF4,
+    SF6, O2".[^skw-01]
+  - *Tool exists:* strong that a nitride-capable TCP etcher exists.
+  - *Runs this step:* **inference**, the entry being the only one on
+    the list that names nitride. The 9400 is a transformer-coupled
+    high-density plasma etcher which Stanford's facility describes as
+    being "for selective etching of silicon and
+    polysilicon".[^snf-9400]
+* **AMAT DPS II (Centura)**
+  - *SkyWater says:* it lists it with CF₄ and CHF₃ among its gases and
+    "trench" among its applications.[^skw-01]
+  - *Tool exists:* strong that the tool and gases exist.
+  - *Runs this step:* **medium**, since its CF₄ and CHF₃ etch nitride
+    although the entry names no nitride application.
+* **Lam 4400**
+  - *SkyWater says:* it lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
+    O2".[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* **weak**, as the entry names no application.
 
 Which of the three carries the isolation nitride etch is not public.
 
@@ -137,10 +160,10 @@ Which of the three carries the isolation nitride etch is not public.
 * Previous: {ref}`FOM <step-004>` (resist pattern).
 * Next: {ref}`STIE <step-006>` (silicon trench etch through this
   opening).
-* Films etched: {ref}`ISONIT <step-003>` nitride and
+* Depends on: films etched — {ref}`ISONIT <step-003>` nitride and
   {ref}`BOX <step-002>` pad oxide.
-* Other nitride etches: {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`,
-  {ref}`NSME <step-166>`.
+* Same module: other nitride etches — {ref}`SPE <step-077>`,
+  {ref}`NPCME <step-079>`, {ref}`NSME <step-166>`.
 * Category page: {ref}`Etch <category-etch>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -210,13 +233,14 @@ Which of the three carries the isolation nitride etch is not public.
 
 ## Open questions
 
-* Whether `STINITE` and `STIE` run in one chamber as one recipe, or on
-  different tools, is not public.
-* The exact chemistry (CF₄/CHF₃/O₂ versus CF₄/O₂ or CHF₃/O₂) and
-  whether a BARC is present are inferred from the era and from
-  SkyWater's gas lists.[^skw-01]
-* Whether the pad oxide is fully cleared here or left as a thin screen
-  for the start of the silicon etch is not public.
+* **Chamber sharing with STIE.** Whether `STINITE` and `STIE` run in
+  one chamber as one recipe, or on different tools, is not public.
+* **Exact chemistry.** The exact chemistry (CF₄/CHF₃/O₂ versus
+  CF₄/O₂ or CHF₃/O₂) and whether a BARC is present are inferred from
+  the era and from SkyWater's gas lists.[^skw-01]
+* **Pad-oxide clearing.** Whether the pad oxide is fully cleared here
+  or left as a thin screen for the start of the silicon etch is not
+  public.
 
 <!-- footnotes -->
 

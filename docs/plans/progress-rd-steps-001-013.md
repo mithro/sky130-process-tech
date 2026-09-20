@@ -207,6 +207,23 @@ numbered list item itself (`_LIST_ITEM_RE`/`NUMBER_RE` count a list marker as a 
 content. All other checkers and the `-W` build pass; screenshots at both widths read cleanly, the
 new layer table holds at 400 px.
 
+### 005-stinite.md — done
+
+Rules applied: R-SENTENCE (first sentence of "What this step is" split at its colon for the
+≤25-word cap; the 81-word "Nitride main etch" item's semicolon chain converted to sentences
+rather than forced into R-LIST bullets — no natural "announcing" clause existed to introduce a
+list without inventing one), R-PARA (that same item: lead sentence + indented continuation),
+R-CATEGORY (classification sentence + one-bullet "Specific to this step:" — Guide problem 3
+again), R-TOOLS (three "Strength:" bullets, under 4, split into sub-bullets), R-RELATED
+("Depends on:" for the films-etched bullet, "Same module:" for the other-nitride-etches bullet),
+R-OPENQ (three bullets labelled), R-GLANCE (box last). R-H3: no candidate (no bold run-in, no
+section over cap). R-TABLE/R-DERIVATION: no candidate. R-CODE: no candidate.
+
+`check_preserved.py docs/steps/005-stinite.md --allow-added markers,numbers,hedges,number_order`:
+0 LOST outside `number_order`; the two `number_order` pairs are the R-TOOLS bullet-head/sub-bullet
+boundary shift (same pattern as page 002), hand-verified against the diff. All other checkers and
+the `-W` build pass; screenshots at both widths read cleanly.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
