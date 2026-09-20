@@ -24,3 +24,4 @@ panels:
   - state_after: "010"
     hide_layers: [dnw]
     title: "After: a thermal liner oxide on the trench floor and walls"
+    highlight: {where: [[80, 188]]}

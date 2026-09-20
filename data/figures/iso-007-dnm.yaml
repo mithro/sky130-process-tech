@@ -21,3 +21,4 @@ panels:
     title: "Before: the open trench left by STIE (step 006)"
   - state_after: "007"
     title: "After: thick resist, with a window over the deep N-well region"
+    highlight: {where: [[214, 268]]}

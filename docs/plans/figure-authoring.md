@@ -35,7 +35,41 @@ cross-section (`iso-006-stie`), `flow-*`, `tool-*`, `mask-*` or `chart-*` otherw
 
 ## 3. Fill in the fields
 
-A cross-section spec (`kind: xsection`) has these and nothing else:
+## 2a. The budgets
+
+Layout is where an unassisted model fails, so the limits are numbers, not adjectives, and
+every one of them is a lint rule. The label column is 140 u wide, which is about **18
+characters** of bold title per line and **21** of note; a panel title has 456 u, about
+**54 characters** per line.
+
+| Budget | Limit | Why |
+|---|---|---|
+| Label title | 30 characters | two lines at most; three lines push every label below it down |
+| Label note | 90 characters | the rest belongs in the caption |
+| Arrow note | 130 characters | it runs the full width between the panels |
+| Panel title | 110 characters | two lines at most |
+| Labels carrying a note, per panel | **3** | this is the single rule that prevents a fan of leaders |
+| Labelled layers per panel | 6 | at seven the label column is taller than the drawing |
+| Labels above the drawing, per panel | 2 | `dims` + `callouts` + an ion label, together |
+| Note lines on a label above the drawing | 2 | the band would otherwise out-weigh the picture |
+| Whole figure | 800 u tall | past that, drop a note or split the figure |
+
+The generator applies the noted-label budget for you: if more than three labels in a panel
+carry a note, it keeps the note on the layer the step made and on the next two in layer
+order, and prints the rest as titles only. It never shortens a note — a truncated note could
+drop a hedge — so an over-long note is an error you fix in the spec.
+
+**Split the figure** when the step changes more than one thing geometrically, when a panel
+needs more than two things labelled from above, or when a panel would carry more than six
+labels. When a stack has more films than the six-label budget allows, a cross-section is the
+wrong figure: use `kind: stack`.
+
+A note is printed **once per figure**: in the second panel a layer that was already labelled
+shows its title only. Write the note on the series entry, not on the second panel.
+
+## 3. Fill in the fields
+
+A cross-section spec (`kind: xsection`) has these fields:
 
 | Field | What goes in it |
 |---|---|
@@ -46,16 +80,17 @@ A cross-section spec (`kind: xsection`) has these and nothing else:
 | `alt` | 60–450 characters describing the **geometry**: what a reader who cannot see the picture would need. No citations, no step codes to look up, no interpretation |
 | `caption` | what is shown, the page's hedges **repeated**, the footnote keys, ending "Not to scale." |
 | `arrow` | `title` (the step code and number) and `note` (one sentence saying what the step does), shown between the two panels |
-| `panels` | two of them: "before" and "after" |
+| `panels` | two of them: "before" and "after" (one, where there is no "before") |
+| `crop_depth` | how much substrate to draw below the surface, for the **whole figure**; presentation only, it changes no geometry |
+| `three_panels_allowed` | only for a deposit → pattern → etch summary on a category page |
 
 Each panel has:
 
 | Field | What it does |
 |---|---|
-| `state_after` | the step number whose finished state this panel draws (`"005"`) |
+| `state_after` | the step number whose finished state this panel draws — **always three digits**, `"005"` not `"5"`, and never past the last step of the series |
 | `title` | `Before: …` / `After: …`, a short sentence |
-| `crop_depth` | how much substrate to draw below the surface; presentation only, it changes no geometry |
-| `hide_layers` | layers to leave out of this panel (use it when the target page does not discuss an optional layer) |
+| `hide_layers` | layers to leave out of this panel (use it when the target page does not discuss an optional layer — and say so in the caption) |
 | `hide_labels` | layers to draw but not label |
 | `labels` | per-panel overrides of a series label |
 | `highlight` | x ranges whose surface is traced in the accent colour: *the one thing this step changed* |
@@ -64,8 +99,15 @@ Each panel has:
 | `show_ions` | `false` to suppress the implant arrows of the step in this panel |
 
 `dims` and `callouts` are labelled from **above**, in a band over the drawing, and there may
-be **at most two of them per panel**. Everything else is labelled from the right-hand
-column, automatically.
+be **at most two of them per panel** (an ion label takes one of the two). Everything else is
+labelled from the right-hand column, automatically. A callout's `x` should be at least 8 u
+from any near-vertical material edge, or its riser will be read as a film; with two of them
+the left one hangs to the left of its riser, so give it `x + stub ≥ 80`, and leave `stub` at
+its default of 12.
+
+`y` in a `dim` or a `callout` is one of three things: a number (a height above the original
+silicon surface), `top@<x>` (the top surface at that x) or `si@<x>` (the silicon surface at
+that x). Anything else is a lint error.
 
 ### Labels
 
@@ -79,8 +121,9 @@ Every label is `{title, note, basis, cite}`:
 * `cite` — the footnote key, without the `[^…]`, and it **must already be defined on the
   target page**.
 
-If a value is not public, say so first: `note: "not public; about 0.33 µm is this page's
-reading"`, `basis: reading`. And never draw a value that is not public to scale.
+If a value is not public, say so first: `note: "not public; about 0.33 µm"`, `basis:
+reading` — the tag prints "our reading" underneath, so the note does not have to repeat it.
+And never draw a value that is not public to scale.
 
 **Nothing from a patent that `tools/check_inforce.py` treats as in force may appear in a
 figure, in any form** — not a number, not a phrase, not the footnote key. A figure cannot
@@ -96,7 +139,15 @@ editing the series on your own.
 
 Series labels carry no numbers, because the same label appears on a dozen different pages
 and each one would need the same footnote key. Numbers go in the per-figure `dims` and
-`callouts`, where they can carry the key their own page defines.
+`callouts`, where they can carry the key their own page defines. For the same reason a
+series label must be true on **every** page that uses it: where one page says more than the
+others, put the fuller wording in that figure's `panels[…].labels` override, not in the
+series.
+
+An operation's extent should be derived from the mask that defines it rather than typed
+again: `where_open: <layer id>` means "wherever that patterned layer is absent", which is
+exactly the window the mask opens. Use it for the etch that transfers a resist pattern and
+for the implant that goes through it.
 
 ## 4. Build
 
@@ -121,8 +172,15 @@ The lint is not advisory. Common ones and what they mean:
 | `text overlap` | two labels collided; shorten a note or move a callout's `x` |
 | `leader of … touches text` / `leaders cross` | move the anchor (`x`) of a callout or dimension |
 | `leader … runs within 5 u of a material edge` | the riser looks like a film; move the callout's `x` away from the wall |
-| `more than two top-routed labels in panel N` | you have more than two `dims` + `callouts`; drop one |
+| `has N labels routed above the drawing; at most 2` | you have more than two `dims` + `callouts` (an ion label counts); drop one |
 | `text inside a drawing area` | a cross-section never has text on the drawing; use a label |
+| `the note is N characters; at most 90` | move the rest into the caption |
+| `panel N labels N layers; at most 6` | hide a layer this page does not discuss, or split the figure |
+| `the figure is N u tall; at most 800` | drop a note or split the figure |
+| `leaders … run side by side` / `anchors … are N u apart` | a layout regression: report it rather than working around it in the spec |
+| `the caption repeats the paragraph it sits under` | the caption shares eight consecutive words with the paragraph above the figure; say what the *picture* shows instead |
+| `state_after … is not a three-digit step number` | write `"005"`, not `"5"` |
+| `… belongs to patent family …, which is not shown as certainly expired` | remove it; a figure can never sit inside a collapsed note |
 
 ## 6. Look at it
 
@@ -141,6 +199,7 @@ Open every PNG with the Read tool and check:
 1. Every label is readable at phone width, and every label is beside the thing it names.
 2. No leader looks like a layer, and no leader runs through a label.
 3. Nothing escapes its box and nothing is clipped at an edge.
+   Every leader can be followed from its dot to its label without guessing.
 4. The accent-coloured highlight is on **the one thing this step changed**, and on nothing
    else.
 5. The dark version keeps every boundary visible and its ground matches the page.
@@ -153,8 +212,10 @@ checked and any compromise you accepted.
 ## 7. Paste it into the page
 
 Paste `data/figures/myst/<id>.myst.txt` **whole and unchanged** after the first paragraph
-of "What this step is" (a step page). Never edit the block in the page: `--check` compares
-it with the generated one and fails if they differ.
+of "What this step is" (a step page), or, on the overview, directly above the table the
+figure redraws. Never edit the block in the page: `--check` fails if the block is missing,
+if its `:name:` was changed, or if a single character of its alt text or caption differs
+from the generated one.
 
 **A figure never replaces text.** Nothing is deleted because a drawing now shows it. The
 only change to the page is the added block, and `git diff` must show only additions.
@@ -192,4 +253,6 @@ more in place.
 * Anything from a patent shown as in force.
 * Deleting or rewriting page text because the figure now shows it.
 * A figure inside a `{dropdown}`.
+* A caption that re-runs the paragraph above it instead of saying what the picture shows.
+* Hiding a layer with `hide_layers` without saying so in the caption.
 * `{numref}`: `numfig` is off and the `-W` build fails.

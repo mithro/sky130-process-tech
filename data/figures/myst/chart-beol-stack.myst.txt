@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-chart-beol-stack
 
-The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale, and adds nothing to them. The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
+The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale and adds nothing to them, except that it follows this page's reading of the 1.0111 µm label as the top of the LINT beside li.[^pdk-04] The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
 :::

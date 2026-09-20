@@ -8,9 +8,10 @@ axis:
   label: "Height above the field-oxide top, from the levels labelled on the PDK's stack diagram"
   tick: 1
 footer: >-
-  To scale. Every thickness is a level or an interval labelled on the PDK's process stack diagram, as
-  the table below lists them. The two MiM capacitor plates are not labelled with a thickness and are
-  not drawn.
+  To scale, with the axis in 1 µm steps from the field-oxide top. Every thickness is a level or an
+  interval labelled on the PDK's process stack diagram, as the table below lists them. The via
+  intervals include the thin "NILD3_C" and "NILD4_C" films the table lists separately, and the two
+  MiM capacitor plates carry no labelled thickness and are not drawn.
 alt: >-
   A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the
   field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local
@@ -18,9 +19,10 @@ alt: >-
   finally a thin oxide under a thicker nitride.
 caption: >-
   The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The
-  diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels
-  and intervals to scale, and adds nothing to them. The datum is the field-oxide top, the level the
-  diagram puts at 0.3262 µm.[^pdk-04] To scale.
+  diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled
+  levels and intervals to scale and adds nothing to them, except that it follows this page's reading
+  of the 1.0111 µm label as the top of the LINT beside li.[^pdk-04] The datum is the field-oxide
+  top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
 layers:
   - id: psg
     material: psg

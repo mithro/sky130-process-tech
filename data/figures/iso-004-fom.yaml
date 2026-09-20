@@ -20,3 +20,4 @@ panels:
     title: "Before: the blanket nitride/pad-oxide stack"
   - state_after: "004"
     title: "After: resist over the future active areas, open over the future field"
+    highlight: {where: [[0, 268]]}

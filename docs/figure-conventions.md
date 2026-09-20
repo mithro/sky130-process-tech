@@ -9,11 +9,17 @@ away from what you see.
 ## What a cross-section shows
 
 A cross-section is a slice through the wafer, drawn as the wafer would look if it were cut
-and you looked at the cut face. Two panels are shown, one above the other: the state before
-the step, then the state after it. The blue arrow between them names the step.
+and you looked at the cut face. Usually two panels are shown, one above the other: the state
+before the step, then the state after it. (A step with nothing before it, such as the arrival
+of the wafer, gets one panel.) The blue arrow between them names the step and says in one
+sentence what it does.
 
 The panels of one module are all cut at the same place, so a feature keeps its position from
 one step page to the next.
+
+**Blue is what changed.** The same accent blue marks the one thing the step did and nothing
+else: the arrow between the panels, the ion arrows of an implant, and a thin blue trace just
+clear of the surface the step made. If a surface is traced in blue, that surface is new.
 
 ## Not to scale
 
@@ -33,27 +39,27 @@ A chart that *is* to scale says "To scale" and carries an axis with units instea
 The palette used by every cross-section on this site. Colour is never the only channel: each material also carries an outline, a pattern and a label of its own.
 :::
 
-| Material | Token | Pattern |
-|---|---|---|
-| Silicon substrate (p-type) | `si-sub` | — |
-| N-well | `well-n` | — |
-| P-well | `well-p` | plus |
-| Deep N-well | `well-dn` | hlines |
-| N+ source/drain, n-tip | `sd-n` | — |
-| P+ source/drain | `sd-p` | plus |
-| Thermal oxide (pad, liner, gate, screen) | `oxide-thermal` | — |
-| Deposited oxide (field oxide, inter-level dielectric, cap oxide, TOPOX) | `oxide-dep` | — |
-| Phosphosilicate glass (PSG) | `psg` | dots |
-| Silicon nitride (hard mask, spacer, LINT, TOPNIT) | `nitride` | hatch |
-| ONO charge-trap stack | `ono` | hlines |
-| Polysilicon | `poly` | — |
-| Photoresist | `resist` | dots |
-| Titanium silicide | `silicide` | — |
-| Ti / TiN / TiW (liner, barrier, cap, local interconnect, MiM plate) | `barrier` | — |
-| Tungsten plug | `tungsten` | xhatch |
-| Aluminium-copper metal | `aluminium` | hatch-back |
-| MiM capacitor dielectric | `mim-diel` | vlines |
-| Polyimide | `polyimide` | hlines |
+| Material | What is printed over the colour |
+|---|---|
+| Silicon substrate (p-type) | plain colour, no pattern |
+| N-well | plain colour, no pattern |
+| P-well | small crosses |
+| Deep N-well | horizontal lines |
+| N+ source/drain, n-tip | plain colour, no pattern |
+| P+ source/drain | small crosses |
+| Thermal oxide (pad, liner, gate, screen) | plain colour, no pattern |
+| Deposited oxide (field oxide, inter-level dielectric, cap oxide, TOPOX) | plain colour, no pattern |
+| Phosphosilicate glass (PSG) | small dots |
+| Silicon nitride (hard mask, spacer, LINT, TOPNIT) | diagonal lines, leaning right |
+| ONO charge-trap stack | horizontal lines |
+| Polysilicon | plain colour, no pattern |
+| Photoresist | small dots |
+| Titanium silicide | plain colour, no pattern |
+| Ti / TiN / TiW (liner, barrier, cap, local interconnect, MiM plate) | plain colour, no pattern |
+| Tungsten plug | crossed diagonal lines |
+| Aluminium-copper metal | diagonal lines, leaning left |
+| MiM capacitor dielectric | vertical lines |
+| Polyimide | horizontal lines |
 
 ## Where a figure's numbers come from
 
@@ -84,6 +90,28 @@ it.
 
 Text never sits on top of a drawing. Material labels stand in a column to the right of the
 drawing, in the order of the layers, joined to the layer they name by a thin line ending in a
-dot. Features that are open at the top — a trench, a contact hole, a polished surface — are
-labelled from above instead. A label line never crosses another one, never crosses text, and
-never runs alongside the edge of a film, where it could be mistaken for one.
+dot on the layer itself. Each of those lines runs out of its dot, down a track of its own, and
+into its label, so two labels can always be told apart; where two films are too thin to give
+their dots separate heights, the dots are shifted sideways instead.
+
+Features that are open at the top — a trench, a contact hole, a polished surface, a beam of
+ions — are labelled from above instead, from a band over the drawing. There are never more
+than two of those in one panel.
+
+A label line never crosses another one, never crosses text, and never runs alongside the edge
+of a film, where it could be mistaken for one. Where a line has to cross a material to reach
+its label, it is drawn with a narrow halo in the page colour so that it cannot be read as a
+boundary.
+
+## Other marks
+
+| Mark | What it means |
+|---|---|
+| A thin line with an arrowhead at each end | a dimension: the distance between the two surfaces it touches |
+| A dashed line running sideways from a dimension | a witness line, marking the surface the dimension is measured to |
+| A short line ending in a dot | a label leader; the dot sits on the material the label names |
+| Blue arrows pointing at the surface | an implant; the arrows lean if the page gives a tilt |
+| A blue trace just above a surface | the surface this step made |
+
+A label with no tag is a plain public fact. A label in amber carries one of the three tags in
+the table above, and the figure's caption repeats the same hedge in words.

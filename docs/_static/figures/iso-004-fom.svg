@@ -67,6 +67,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-dots)" points="9.00,406.00 91.75,406.00 91.75,444.00 9.00,444.00"/>
 <polygon class="mat m-resist" data-layer="resist" points="200.25,406.00 283.00,406.00 283.00,444.00 200.25,444.00"/>
 <polygon fill="url(#p-dots)" points="200.25,406.00 283.00,406.00 283.00,444.00 200.25,444.00"/>
+<polyline class="hl" points="12.00,403.00 91.50,403.00 92.00,441.00 200.00,441.00 200.50,403.00 280.00,403.00"/>
 </g>
 <text x="328.0" y="549.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 521.0H285.0V545.0H324.0"/>

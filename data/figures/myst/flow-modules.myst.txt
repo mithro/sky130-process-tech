@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-flow-modules
 
-The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table above.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
+The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table below.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
 :::

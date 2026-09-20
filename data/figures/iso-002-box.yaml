@@ -20,3 +20,4 @@ panels:
     title: "Before: the bare wafer from SMAT (step 001)"
   - state_after: "002"
     title: "After: a thermal pad oxide over the whole wafer"
+    highlight: {where: [[0, 268]]}

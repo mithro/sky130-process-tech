@@ -330,7 +330,7 @@ steps and 36 masks.
 :width: 560px
 :name: fig-flow-modules
 
-The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table above.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
+The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table below.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
 :::
 
 | Module | Steps | Number of steps | Mask steps | Key public facts |
@@ -805,14 +805,6 @@ materials to the process stack diagram. None of these is public.
 (overview-cross-section)=
 ## A simplified cross-section
 
-:::{figure} /_static/figures/chart-beol-stack.svg
-:alt: A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and finally a thin oxide under a thicker nitride.
-:width: 560px
-:name: fig-chart-beol-stack
-
-The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale, and adds nothing to them. The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
-:::
-
 The most complete public drawing of the SKY130 stack is the PDK's
 process stack diagram.[^pdk-04] It is marked "(Diagram not to scale!)" and labels
 each conductor with a thickness, each dielectric with a name and a
@@ -844,6 +836,14 @@ the trench floor). Reading it from the bottom up, with the step pages:
   polyimide "PI1 K=2.94" is drawn on top.[^pdk-04] The step list has no
   polyimide step, although SkyWater's S130 table gives polyimide
   "Yes".[^skw-02]
+
+:::{figure} /_static/figures/chart-beol-stack.svg
+:alt: A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and finally a thin oxide under a thicker nitride.
+:width: 560px
+:name: fig-chart-beol-stack
+
+The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale and adds nothing to them, except that it follows this page's reading of the 1.0111 µm label as the top of the LINT beside li.[^pdk-04] The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
+:::
 
 The table lists the levels bottom to top with the thicknesses and
 heights the step pages quote. Dielectric heights are the diagram's

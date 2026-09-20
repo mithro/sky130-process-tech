@@ -17,8 +17,11 @@ back-end stack chart on the overview) of `docs/plans/readability-plan.md`.
     and the new operations and kinds added their own.
   * **No new runtime dependency.** The DejaVu Sans, Sans Bold and Sans Mono advance
     widths are embedded in the tool as a table in 1/1000 em, so text measurement no longer
-    needs Pillow. Kerning is deliberately ignored, which can only over-estimate a width,
-    so a real rendering is never wider than the lint assumed. PyYAML is already in
+    needs Pillow. Kerning is deliberately ignored and each advance is rounded up, and
+    `text_w` adds a further 0.05 u per character, so the estimate is an over-estimate and a
+    real rendering is never wider than the lint assumed; a character the table does not
+    carry is measured at the font's true widest advance and named by the lint. PyYAML is
+    already in
     `uv.lock` (a dependency of `myst-parser`) and therefore in the Read the Docs
     requirements export, so nothing was added to `pyproject.toml`.
   * Deterministic output: fixed one- and two-decimal float formatting with no `-0.0`,
@@ -135,6 +138,116 @@ and step 006 in a forced-dark build, which confirmed that `figure-theme.js` swap
 | `flow-modules` | overview | sits directly above the module table; all thirteen rows, ranges and mask lists match the table; 171 steps and 36 masks add up; legible at 400 px | — |
 | `chart-beol-stack` | overview | to scale from the field-oxide top to the passivation nitride; thinnest layer (LINT, 0.075 µm) still visible and labelled at 400 px | the two MiM plates carry no labelled thickness and are not drawn; said in the footer |
 | `legend-palette` | figure conventions | all nineteen materials, colour plus pattern plus name, both themes | — |
+
+## Review round (independent Opus review, verdict "approve with fixes")
+
+Every High and every Medium is fixed; the Low list is fixed except where a reason is
+recorded below.
+
+**H1 — the leader fan.** Fixed in the placer, not per figure. The gutter went from 24 u to
+48 u and the label column from 164 u to 140 u; a leader now runs out of its dot, along a
+vertical **lane of its own**, and into its label — three orthogonal segments, no diagonal.
+Lanes are handed out right to left in label order, which makes a crossing impossible by
+construction rather than unlikely: a lane further left always belongs to a label further
+down, whose vertical span lies below. Two more passes keep the anchors apart — they are
+pushed apart in y as far as each layer allows, and where a film is too thin for that the
+dots are staggered 9 u sideways inside their own layer. Three budgets collapse the column
+that caused the fan: at most three noted labels per panel (the layer the step made, first),
+at most six labelled layers, at most 90 characters of note. Three lint rules stop it coming
+back: no two leaders within 4 u side by side with overlapping extent, no two anchor dots
+within 8 u by 10 u, and no figure taller than 800 u.
+*Before:* `tmp/shots/q4-02.png`, `tmp/shots/q2-01.png` (the fan, four near-parallel strokes
+in one gutter). *After:* `tmp/shots/h1-after-01.png`, `tmp/shots/h1b-02.png`,
+`tmp/shots/f2-light-phone-02.png`, `tmp/shots/f2-dark-phone-04.png`.
+
+**H2 — the in-force gate.** It now builds `check_inforce.Matcher` from that checker's own
+`restricted_families` and runs it over **every** free-text string that reaches the SVG, the
+caption or the alt: panel titles, the arrow title and note, every label title and note
+(series, per-panel override, dimension, callout, ion), the chart's title, footer and axis
+label, the flow map's headers, footer and module names. `arrow` also joined the label set,
+so it gets the basis, number-needs-cite and cite-defined checks it never had.
+`--check` additionally parses every committed SVG and runs the matcher over its text, which
+no page checker reads. Demonstrated live: a restricted publication number in a panel title
+is refused with the family id. `--selftest` drives it from a real restricted number and a
+real restricted phrase taken from the dataset.
+
+**H3 — `--check`.** A page named as a figure's target with **no** `{figure}` block, or with
+the block's `:name:` changed, is now an error (both proven by deleting and by renaming);
+a block mismatch prints a diff; the stale sweep covers every file under
+`docs/_static/figures/` and `data/figures/myst/`, not only `*.svg`; a missing target page is
+an error. The three cases are in `--selftest`.
+
+**H4 — the ion beam.** Arrows are evenly spaced across the window, 36 u long and 1.8 u wide
+(was 26 u and 1.4 u), with a **single shared tail height** so the beam reads as a beam while
+each tip still lands on its own local surface. The label is routed into the header band
+above the drawing from the middle of the widest window, not on to the last arrow, so it can
+no longer merge with an arrow or run through the resist. A lint rule forbids an ion-beam
+leader from crossing any material polygon.
+*Before:* `tmp/shots/q3-02.png` (the leader through the resist, merged with the last arrow).
+*After:* `tmp/shots/h1-after-01.png` (desktop), `tmp/shots/f2-dark-phone-04.png` (400 px,
+dark), `tmp/shots/pg-steps-008-dni-p-01.png` (the built page at 400 px).
+
+**H5 / H6.** `state_after` must be three digits and within the series (a wrong one used to
+render a different wafer silently). Unknown operations, unknown operation fields, unknown
+materials or groups and a `where_open` naming no layer are errors. A bad `y` expression and
+a missing `y:` are lint lines. Nothing raises `SystemExit` any more, so one author's mistake
+no longer abandons every other figure in the run.
+
+**Mediums.** M1: the deep N-well is declared in all four captions that hide it, and 012's
+"same cross-section" clause is gone; `crop_depth` moved from the panel to the figure, so the
+two panels of a figure always crop alike (across figures it still varies, because the
+deep-implant figures have to be deeper — recorded rather than forced). M2: the HDP
+topography claim the page does not make is replaced by "The PDK gives no fill thickness or
+topography". M3: the chart's caption now says it follows this page's reading of the
+1.0111 µm label. M4: "as in the table below". M5: every step caption says what the picture
+shows, and an eight-word echo of the paragraph above the figure is a lint error. M6: a label
+above the drawing may wrap to at most two note lines, and when the header band would be
+taller than the drawing the labels fall back to the right-hand column. M7: the 90-character
+note budget plus the three-noted-labels cap removed most of the 10 px text. M8: the accent
+is drawn 3 u clear of the surface, so it marks a 5 u film instead of covering it, and it is
+now on every cross-section that has a new surface to trace (001, 008 and 009 have none —
+nothing new reaches the surface there). M9: `psg` and `mim-diel` no longer share a hex with
+another material, `palette` prints the three tightest pairs per theme, and a new lint rule
+refuses two touching materials under ΔE 14 that share a pattern, or where either is drawn
+thinner than 10 u. M10: an unknown glyph is measured at the font's true widest advance
+(1735/2016 per mille, not the table maximum) and reported by name. M11: the theme script
+only touches images that came from the generated directories, falls back to the shipped file
+on error, and watches for added nodes; `conf.py` appends to `html_js_files` instead of
+assigning it. M12: the label traverse is shorter (the anchor inset went from 8 u to 4 u) but
+a label for a feature inside the trench still crosses the silicon with a halo — inherent to
+labelling something in the middle of the drawing, and now the only such case. M13: the etch
+windows and the implant extents are derived from the mask that defines them with
+`where_open:`. M14: the conventions page now explains the accent, dimension lines, witness
+lines, leaders and the halo, says two panels are the usual rather than the universal case,
+and prints reader words for the patterns instead of token names. M15: the authoring guide
+gained a budget table with the measured numbers, the `top@`/`si@` syntax, the real field
+list and the corrected description of the header-callout rule.
+
+**Lows.** Fixed: 1 (a layer keeps one route for the whole figure, decided by whether it is
+top-most in *every* panel), 2 (the stack chart now follows a paragraph), 3 ("rounded base"),
+4 (013's caption gives the pad oxide as the usual case, not a certainty), 5 (the shared
+substrate note is now "the starting wafer (SMAT, step 001)"; only 001, whose page says it,
+carries "p-type bulk substrate"), 6 (004 and 005 declare that the anti-reflective coating is
+not drawn), 7 (006's caption leaves the strip's ownership open, as the page does), 8 (a
+figure with no film says only "Not to scale."), 9 (the chart's footer discloses the merged
+`NILD3_C`/`NILD4_C` films and the 1 µm axis step), 10 (the width table is generated with a
+ceiling and `text_w` adds 0.05 u per character, so the estimate is now genuinely an
+over-estimate), 11 (the text-overlap rule is driven from a real figure with the placer
+monkeypatched), 12 (the selftest claim is no longer overstated: the callout rule is driven
+through `build_xsection`, the overlap rule from a spec).
+
+Recorded rather than changed:
+
+* **Low 13** — furo centres a `figcaption` and a `figure`, so the legend's swatches start
+  right of the body text. That is `custom.css`, which belongs to W0a (`rd-theme`); a second
+  branch editing it would only make a conflict. The legend's internal heading is gone.
+* **Low 14** — one emitted coordinate (`600.55`) sits exactly on the `f1` rounding boundary.
+  It comes from exact arithmetic on token constants, not from libm, so no build can move it;
+  determinism was re-confirmed after every change of this round.
+* **Low 15** — in dark, `well-dn` (horizontal lines) against `well-n` (plain) and `ono`
+  against `barrier` are close; so are `silicide` and `tungsten` in light. None of them touch
+  in S1. The new adjacency rule will refuse them the first time they do, which is the wells
+  module (S2) and the middle of line (S7).
 
 ## Noticed, not fixed (presentation only; not this branch's files)
 
