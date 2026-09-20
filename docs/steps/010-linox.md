@@ -10,12 +10,26 @@
 | **Previous step** | {ref}`DNIS <step-009>` |
 | **Next step** | {ref}`FILOX <step-011>` |
 
+:::{admonition} At a glance
+* **Does:** grows a thin thermal oxide lining the trench floor and
+  walls before the HDP fill.
+* **Why:** removes etch damage, rounds the trench corners, gives a
+  low-defect interface, and doubles as the deep N-well's first
+  anneal.
+* **Public numbers:** none published for SKY130; comparable flows use
+  10–30 nm at 900–1100 °C (see Open questions).
+* **Likely SkyWater tool:** Aviza furnace — strong (fleet); inference
+  (assignment vs RTP).[^skw-01]
+* **Not public:** the actual SKY130 liner thickness, ambient and
+  temperature (→ Open questions).
+:::
+
 ## What this step is
 
 `LINOX` (liner oxidation) grows a thin thermal oxide on the exposed
 silicon inside the isolation trenches — the floor and sidewalls cut at
-{ref}`STIE <step-006>` — before the trenches are filled with deposited
-oxide at {ref}`FILOX <step-011>`. The active areas, still covered by
+{ref}`STIE <step-006>`. This happens before the trenches are filled
+with deposited oxide at {ref}`FILOX <step-011>`. The active areas, still covered by
 the nitride from {ref}`ISONIT <step-003>`, do not oxidise (apart from
 a small encroachment at the nitride edge). The result is a *trench
 liner* of the order of 10–30 nm of high-quality thermal SiO₂ lining
@@ -29,32 +43,29 @@ every trench.
 Before, a bare trench; after, a thin thermal oxide lining its floor and both walls, with the active areas unchanged under their nitride. This cross-section is drawn outside a deep N-well region, so the buried layer of `DNI` (step 008) does not appear. A Spansion STI patent that later passed to Cypress, contemporaneous with the 130 nm node but not evidence for S8, grows a first liner "to a thickness of approximately 100-300 Å";[^pat-sti-cr] no SkyWater source gives the SKY130 liner thickness or temperature. Not to scale.
 :::
 
-Public numbers for comparable flows: a Spansion STI patent that later
-passed to Cypress, contemporaneous with the 130 nm node but not
-evidence for S8 (see *Open questions*), grows a first liner "to a
-thickness of approximately 100-300 Å"
-at "900-1100 degrees Celsius" and, in its double-liner variant, a
-second of "approximately 100-500 Å";[^pat-sti-cr] a Lattice patent
-(scoped to "90 nm or less") grows a 3 nm liner everywhere and then
-thickens it, with "a high temperature (for example, in excess of
-approximately 1000 degrees C.) oxide growth process", to "a thickness
-in the range of approximately 10 nm to approximately 30 nm" in the
-trenches beside its high-voltage transistors;[^pat-sti-lattice] an
-AmberWave Systems patent (now TSMC-owned) notes the alternative that
-"the liner oxidation may take place in a wet, i.e., steam ambient
-and/or at a low temperature, i.e., <1000° C.".[^pat-sti-amberwave] No
-SkyWater source gives the SKY130 liner
-thickness or temperature.
+Public numbers for comparable flows:
+
+| Source | Liner thickness | Temperature |
+|---|---|---|
+| Spansion STI patent, later Cypress (contemporaneous with the 130 nm node, not evidence for S8; see *Open questions*)[^pat-sti-cr] | "to a thickness of approximately 100-300 Å" (first liner); "approximately 100-500 Å" (second, double-liner variant) | "900-1100 degrees Celsius" |
+| Lattice patent (scoped to "90 nm or less")[^pat-sti-lattice] | grows 3 nm everywhere, then thickens to "a thickness in the range of approximately 10 nm to approximately 30 nm" beside its high-voltage transistors | "a high temperature (for example, in excess of approximately 1000 degrees C.) oxide growth process" |
+| AmberWave Systems patent, now TSMC-owned[^pat-sti-amberwave] | — | alternative: "the liner oxidation may take place in a wet, i.e., steam ambient and/or at a low temperature, i.e., <1000° C." |
+
+No SkyWater source gives the SKY130 liner thickness or temperature.
 
 ## Step category
 
 `LINOX` is a {ref}`Thermal oxidation <category-oxidation>` step, like
-{ref}`BOX <step-002>` before it, but its purpose is different: it is
-grown on *etched* silicon, on vertical and sloped surfaces, and its
-main job is to repair and passivate rather than to buffer stress.
-In SKY130 it is also, by position, the first high-temperature step
-after the deep N-well implant ({ref}`DNI <step-008>`), so it doubles
-as that implant's first anneal.
+{ref}`BOX <step-002>` before it, but its purpose is different.
+
+**Specific to this step:**
+
+* It is grown on *etched* silicon, on vertical and sloped surfaces,
+  and its main job is to repair and passivate rather than to buffer
+  stress.
+* In SKY130 it is also, by position, the first high-temperature step
+  after the deep N-well implant ({ref}`DNI <step-008>`), so it doubles
+  as that implant's first anneal.
 
 ## Why this step exists
 
@@ -72,15 +83,16 @@ cannot:
    etch".[^thung-2016]
 2. **Rounds the corners.** A sharp convex corner is consumed from two
    sides at once, and above about 1000 °C the oxide flows viscously
-   enough to relieve the stress that non-planar growth builds up, so
-   the sharp top corner of the trench is rounded — reducing the field
-   crowding that causes the sub-threshold "double hump" and gate-oxide
-   thinning at the active edge.[^itrs-01][^rev-01][^txt-01] Oxidation
-   on curved surfaces is in fact *retarded* relative to planar silicon:
-   Kao et al. found the retardation strongest "at low temperatures and
-   sharp curvatures" and "more severe on concave than convex
-   structures",[^kao-1987][^kao-1988] which is one reason a hot liner
-   oxidation rounds better. The Spansion patent's whole subject
+   enough to relieve the stress that non-planar growth builds up.
+
+   So the sharp top corner of the trench is rounded, reducing the
+   field crowding that causes the sub-threshold "double hump" and
+   gate-oxide thinning at the active edge.[^itrs-01][^rev-01][^txt-01]
+   Oxidation on curved surfaces is in fact *retarded* relative to
+   planar silicon: Kao et al. found the retardation strongest "at low
+   temperatures and sharp curvatures" and "more severe on concave than
+   convex structures",[^kao-1987][^kao-1988] which is one reason a hot
+   liner oxidation rounds better. The Spansion patent's whole subject
    is using "double liner oxidation" plus "double sacrificial
    oxidation" so that "corners of the trenches are substantially
    rounded by the four oxidation processes".[^pat-sti-cr]
@@ -96,7 +108,9 @@ cannot:
 
 ## How it is typically performed
 
+:::{note}
 An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
+:::
 
 1. **Pre-oxidation clean.** After the resist strip
    ({ref}`DNIS <step-009>`), an {term}`SC-1`/{term}`SC-2` clean and a *short* dilute-HF
@@ -139,17 +153,22 @@ width because of the encroachment under the nitride edge.
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnace.** SkyWater states "Furnaces are all made by Aviza",
-  with dry and wet oxidation to 1150 °C.[^skw-01] Strength: strong for
-  the furnace fleet; assignment of `LINOX` to a furnace rather than an
-  RTP tool is our inference (SkyWater's RTP tool, the "Ag Heatpulse
-  8808", is listed with NH₃/Ar/N₂/O₂ to 1200 °C,[^skw-01] so an RTP
-  liner is not excluded; strength: weak for the Heatpulse as an
-  alternative).
+* **Aviza furnace**
+  - *SkyWater says:* it states "Furnaces are all made by Aviza", with
+    dry and wet oxidation to 1150 °C.[^skw-01]
+  - *Tool exists:* strong for the furnace fleet.
+  - *Runs this step:* assignment of `LINOX` to a furnace rather than
+    an RTP tool is our inference.
+
+  SkyWater's RTP tool, the "Ag Heatpulse 8808", is listed with
+  NH₃/Ar/N₂/O₂ to 1200 °C,[^skw-01] so an RTP liner is not excluded
+  (strength: weak for the Heatpulse as an alternative).
 * **DNS / FSI Mercury HF/SC1/SC2 bench** for the pre-oxidation
-  clean.[^skw-01] Strength: strong for existence; the assignment is an
-  inference from their HF/SC1/SC2 chemistry, SC-2 being listed only for
-  these two benches.
+  clean[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* the assignment is an inference from their
+    HF/SC1/SC2 chemistry, SC-2 being listed only for these two
+    benches.
 
 ## Resources required
 
@@ -164,9 +183,9 @@ width because of the encroachment under the nitride edge.
 
 * Previous: {ref}`DNIS <step-009>` (clean wafer with open trenches).
 * Next: {ref}`FILOX <step-011>` (HDP oxide fill over this liner).
-* Trench cut at {ref}`STIE <step-006>`; nitride mask from
+* Depends on: trench cut at {ref}`STIE <step-006>`; nitride mask from
   {ref}`ISONIT <step-003>`; pad oxide from {ref}`BOX <step-002>`.
-* First anneal of {ref}`DNI <step-008>`.
+* Feeds: first anneal of {ref}`DNI <step-008>`.
 * Category page: {ref}`Thermal oxidation <category-oxidation>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -239,16 +258,18 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ## Open questions
 
-* The SKY130 liner thickness, ambient and temperature are not public;
-  the 10–30 nm / 900–1100 °C figures are from third-party and
-  Spansion-lineage patents.
-* Whether SKY130 uses a single liner oxidation or a double liner /
-  sacrificial-oxidation scheme of the Spansion-patent type[^pat-sti-cr]
-  is unknown (that patent came into Cypress through Spansion in 2015,
-  long after S8 was developed, and is not evidence for S8).
-* Whether a nitride or oxynitride liner follows the oxide liner is not
-  public.
-* Whether the step is a furnace or an RTP oxidation is inferred.
+* **Thickness, ambient and temperature.** The SKY130 liner thickness,
+  ambient and temperature are not public; the 10–30 nm / 900–1100 °C
+  figures are from third-party and Spansion-lineage patents.
+* **Single or double liner.** Whether SKY130 uses a single liner
+  oxidation or a double liner / sacrificial-oxidation scheme of the
+  Spansion-patent type[^pat-sti-cr] is unknown (that patent came into
+  Cypress through Spansion in 2015, long after S8 was developed, and
+  is not evidence for S8).
+* **Nitride or oxynitride liner.** Whether a nitride or oxynitride
+  liner follows the oxide liner is not public.
+* **Furnace or RTP.** Whether the step is a furnace or an RTP
+  oxidation is inferred.
 
 <!-- footnotes -->
 

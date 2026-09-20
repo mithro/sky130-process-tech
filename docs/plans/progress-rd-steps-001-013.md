@@ -397,6 +397,37 @@ first row repeats the bullet head's own `"Gasonic PEP"`/`"Mattson Aspen2"` quota
 the same kind of expected repetition as R-GLANCE's markers/numbers, just in a table this time.
 All other checkers and the `-W` build pass; screenshots at both widths read cleanly.
 
+### 010-linox.md — done
+
+Rules applied: R-SENTENCE (first sentence of "What this step is" split at its em-dash for the
+≤25-word cap), R-TABLE (the "Public numbers for comparable flows" paragraph — three patents'
+liner-thickness/temperature quotes — → a Source|Liner thickness|Temperature table), R-PARA (the
+133-word "Rounds the corners" item → lead + indented continuation), R-CATEGORY (two-bullet
+"Specific to this step:"), R-HEDGE step 1, R-TOOLS (two bullets, one of which names a second,
+alternative tool inside its own parenthetical aside — kept that aside as trailing prose after the
+Aviza sub-bullets rather than forcing it into the three-part template, since it grades a
+different tool, not a different attribute of the same one), R-RELATED ("Depends on:", "Feeds:"),
+R-OPENQ (four bullets labelled), R-GLANCE (box last).
+
+Three quote-preservation slips caught by `check_preserved.py` and fixed before committing — the
+by-now-familiar mistake of trimming a quotation's leading words when moving it into a table cell
+(this time three at once, all in the same new table): "to a thickness of approximately 100-300 Å"
+had "to a thickness of" trimmed off (and this exact quote also appears unedited in the page's own
+figure caption, which is how the checker caught a multiset mismatch rather than a same-page
+duplicate); "a high temperature (for example, in excess of approximately 1000 degrees C.) oxide
+growth process" had its last three words trimmed; "the liner oxidation may take place in a wet,
+i.e., steam ambient and/or at a low temperature, i.e., <1000° C." had its first eight words
+trimmed (this one also caused a `LOST hedges: 'may'` finding, since the trimmed prefix carried the
+page's only "may" — a reminder that a hedge can hide inside a quotation's own wording, not just in
+the surrounding prose). All three restored to their full original wording.
+
+`check_preserved.py --base ee3a94ee --allow-added markers,numbers,hedges,number_order
+docs/steps/010-linox.md`: 0 LOST outside `number_order` after the fixes; the one `number_order`
+LOST/ADDED pair is the "Public numbers" paragraph's giant number sequence breaking into the new
+table's rows plus the "Rounds the corners" split, hand-verified. All other checkers and the `-W`
+build pass; screenshots at both widths read cleanly, the three-column patent-comparison table
+with long quotations wraps well even at 400 px.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
