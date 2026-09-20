@@ -71,7 +71,13 @@ DEF_RE = re.compile(
 FIRST_DEF_RE = re.compile(r"^\[\^[A-Za-z0-9][A-Za-z0-9_-]*\]:", re.M)
 MARK_RE = re.compile(r"\[\^([A-Za-z0-9_-]+)\]")
 URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
-TITLE_IN_DEF_RE = re.compile(r"\*([^*\n]+)\*")
+# Review finding L2: [^*\n]+ cannot cross a line break, so a hard-wrapped
+# title ("*Journal of\n    Applied Physics*") was missed entirely and the
+# single space between the wrap and the next token (often "**81**", a
+# volume number) was extracted as the "title" instead. Mirror ITALIC_RE's
+# guards (no run of "**bold**", no whitespace directly inside the
+# delimiters) so this also never picks up a bold volume/page number.
+TITLE_IN_DEF_RE = re.compile(r"(?<!\*)\*(?![\s*])([^*]+?)(?<![\s*])\*(?!\*)")
 # A single-asterisk italic span: never a run of "**bold**" (an opening or
 # closing "*" adjacent to another "*"), and never a list bullet's own
 # leading "* " (CommonMark forbids whitespace directly inside an emphasis
@@ -94,6 +100,20 @@ GENBLOCK_RE = re.compile(
 )
 
 
+def _genblock_lines(body: str) -> set[int]:
+    """1-based line numbers of every generated index-links block in
+    ``body`` (review finding L5: there is exactly one per page today, but
+    ``finditer`` rather than ``search`` makes that an observation, not an
+    assumption this function has to share).
+    """
+    lines: set[int] = set()
+    for gm in GENBLOCK_RE.finditer(body):
+        start_line = body.count("\n", 0, gm.start()) + 1
+        end_line = body.count("\n", 0, gm.end()) + 1
+        lines.update(range(start_line, end_line + 1))
+    return lines
+
+
 def _norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
@@ -105,14 +125,34 @@ def page_titles(text: str) -> dict[str, tuple[str, str]]:
     ``[^label]:`` definition (citation-style.md rule 3: title is always
     italicised there). A label with no italic title, or no URL, is omitted:
     there is nothing for this rule to match or link.
+
+    Review finding L3: for a paper citation the first italic is often the
+    *journal*, not the paper's own title ("Proc. SPIE", "Journal of The
+    Electrochemical Society", ...), so several labels on one page can
+    legitimately share the same extracted "title". Linking prose that
+    names the journal would then point at whichever one label happened to
+    be picked, which is wrong for every other paper in that journal. A
+    title shared by three or more labels on the same page is dropped for
+    all of them -- one page's plain coincidence is not filtered (a title
+    genuinely repeated on exactly two labels is rare enough, and common
+    enough as a real duplicate-source case, to still be worth linking),
+    but a journal name repeated across a run of citations is.
     """
-    out: dict[str, tuple[str, str]] = {}
+    raw: dict[str, tuple[str, str]] = {}
     for lab, body in DEF_RE.findall(text):
         tm = TITLE_IN_DEF_RE.search(body)
         um = URL_RE.findall(body)
         if tm and um:
-            out[lab] = (tm.group(1), um[0])
-    return out
+            raw[lab] = (tm.group(1), um[0])
+    title_counts: dict[str, int] = {}
+    for title, _url in raw.values():
+        key = _norm(title)
+        title_counts[key] = title_counts.get(key, 0) + 1
+    return {
+        lab: (title, url)
+        for lab, (title, url) in raw.items()
+        if title_counts[_norm(title)] < 3
+    }
 
 
 REFERENCES_RE = re.compile(r"^## References\s*$", re.M)
@@ -161,12 +201,7 @@ def process_text(text: str) -> tuple[str, dict[str, int]]:
     if not titles:
         return text, counts
     body, _ = split_body(text)
-    genblock_lines: set[int] = set()
-    gm = GENBLOCK_RE.search(body)
-    if gm:
-        start_line = body.count("\n", 0, gm.start()) + 1
-        end_line = body.count("\n", 0, gm.end()) + 1
-        genblock_lines = set(range(start_line, end_line + 1))
+    genblock_lines = _genblock_lines(body)
     dropdown_lines = check_inforce.dropdown_lines(text)
 
     # Walk the body as blank-line-delimited blocks, each block a list of
@@ -293,12 +328,7 @@ def refresh_text(text: str) -> tuple[str, dict[str, int]]:
         by_title.setdefault(_norm(title), []).append(lab)
     body, _ = split_body(text)
     dropdown_lines = check_inforce.dropdown_lines(text)
-    genblock_lines: set[int] = set()
-    gm = GENBLOCK_RE.search(body)
-    if gm:
-        start_line = body.count("\n", 0, gm.start()) + 1
-        end_line = body.count("\n", 0, gm.end()) + 1
-        genblock_lines = set(range(start_line, end_line + 1))
+    genblock_lines = _genblock_lines(body)
 
     edits: list[tuple[int, int, str]] = []
     for m in REFRESH_LINK_RE.finditer(body):
@@ -564,6 +594,46 @@ def selftest() -> int:
         fail(f"a title wrapped across a line break was not linked: {counts}")
     if "[*Periphery\nrules*](<https://example.com/periph>)" not in new:
         fail(f"the wrapped title was mishandled: {new!r}")
+
+    # L2: a title wrapped across a line break *inside the definition
+    # itself* is still extracted (not, say, the single space between the
+    # wrap and a following "**81**" volume number).
+    p = page(
+        "## A\n\nThe paper appears in *Journal of Applied "
+        "Physics*.[^jap-1990]\n",
+        "[^jap-1990]: Smith, *Journal of Applied\n"
+        "    Physics* **68**(4), 1990. <https://example.com/jap>\n",
+    )
+    new, counts = process_text(p)
+    if counts.get("linked") != 1:
+        fail(f"a title wrapped across a line break in a definition was "
+             f"not matched: {counts}")
+    if "[*Journal of Applied Physics*](<https://example.com/jap>)" not in new:
+        fail(f"the definition's wrapped title was mishandled: {new!r}")
+
+    # L3: a title shared by three or more labels (typically a journal
+    # name) is never used for matching -- prose naming it is left alone,
+    # since there is no way to tell which paper it means.
+    p = page(
+        "## A\n\nSee *Proc. SPIE* for the method.[^spie-1]\n",
+        "[^spie-1]: A, *Proc. SPIE* 1990. <https://example.com/1>\n"
+        "[^spie-2]: B, *Proc. SPIE* 1991. <https://example.com/2>\n"
+        "[^spie-3]: C, *Proc. SPIE* 1992. <https://example.com/3>\n",
+    )
+    new, counts = process_text(p)
+    if new != p or counts.get("linked", 0):
+        fail(f"a title shared by 3+ labels was wrongly linked: {new!r} {counts}")
+
+    # A title shared by exactly two labels is not filtered by L3's guard
+    # (only 3+ is treated as a probable journal/series name).
+    p = page(
+        "## A\n\nSee *Widget Review* for the summary.[^wr-1]\n",
+        "[^wr-1]: A, *Widget Review* 1990. <https://example.com/1>\n"
+        "[^wr-2]: B, *Widget Review* 1991. <https://example.com/2>\n",
+    )
+    new, counts = process_text(p)
+    if counts.get("linked") != 1:
+        fail(f"a title shared by only two labels was wrongly filtered: {counts}")
 
     # --refresh (H2): an already-linked title is re-pointed when its own
     # label's definition now gives a different first URL (R-WAYBACK).
