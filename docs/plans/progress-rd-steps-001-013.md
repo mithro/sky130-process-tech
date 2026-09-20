@@ -458,6 +458,20 @@ drain-current table split and the Chemistry-item split, hand-verified. All other
 `-W` build pass; screenshots at both widths read cleanly, including the transposed drain-current
 table at 400 px.
 
+### 012-cmpnit.md — done
+
+The cleanest page in the batch by the measure scripts: 0 paragraphs ≥120, 0 items ≥80, 0
+sentences ≥60. Rules applied: R-CATEGORY (classification + one-bullet "Specific to this step:",
+the remaining sentence's internal semicolon split into two), R-HEDGE step 1, R-TOOLS (three
+bullets, split into sub-bullets, no recap table since under four), R-RELATED ("Depends on:",
+"Same module:"), R-OPENQ (four bullets labelled), R-GLANCE (box last; first sentence already 17
+words). R-H3/R-TABLE/R-DERIVATION/R-LIST/R-PARA/R-SENTENCE: no candidate anywhere on the page.
+
+`check_preserved.py --base ee3a94ee --allow-added markers,numbers,hedges,number_order
+docs/steps/012-cmpnit.md`: exit 0 on the first try — 0 LOST in any category, including
+`number_order` (no dense multi-number passage existed to split). All other checkers and the `-W`
+build pass; screenshots at both widths read cleanly.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
