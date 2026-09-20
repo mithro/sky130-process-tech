@@ -1393,3 +1393,251 @@ shows it.
 today.
 
 **Kind.** generator. **Never by hand.**
+
+## 4. Page types
+
+Each section gives the target skeleton, the order in which the rules are applied to that page, and the
+limits that differ from §1. `+` marks an addition; everything else already exists and keeps its words.
+
+### 4.1 Step page (`docs/steps/NNN-code.md`, 171 pages)
+
+```
+(step-NNN)=
+# Step NNN — CODE: Name
+| quick-facts table |                     unchanged; Phase cell gains a {term} link (R-TERM, W0d)
+
++ :::{admonition} At a glance                                         R-GLANCE, written last
++ * **Does:** …[^x]  * **Why:** …  * **Public numbers:** …
++ * **Likely SkyWater tool:** …[^skw-01]  * **Not public:** … (→ Open questions)
++ :::
++ (generated figure: before/after cross-section)                      R-FIGURE, W1a
+
+## What this step is                   ≤ 2 paragraphs, ≤ 120 words before the first H3;
+                                       first sentence ≤ 25 words
++ ### Key numbers                      table: Quantity · Value · Source · Basis   R-TABLE
++ ### What the public record shows     short paragraphs; measured-against-nominal tables
++ ### How <quantity> is estimated      input table, numbered arithmetic, hedged result  R-DERIVATION
++ ### Competing readings               where the page weighs two readings
+## Step category                       one classification sentence ≤ 35 words, then
+                                       "**Specific to this step:**" and 2–4 bullets       R-CATEGORY
+## Why this step exists                1–2 lead sentences; 3–5 labelled bullets ≤ 60 words;
+                                       studies as sub-bullets "Author (year) — finding.[^x]";
+                                       keep the closing "Without `X` …" paragraph
+## How it is typically performed       :::{note} the existing scope sentence, word for word :::
+                                       numbered list for a sequence; parameter table or labelled
+                                       bullets for a parameter set; SkyWater-specific statements last
+## Machines typically used             bullets ≤ 40 words: class link, then example models
+## Machines likely used at SkyWater    three-line items                                   R-TOOLS
+## Resources required                  bullets; the supplier sentence once, last
+## Related steps and cross-references  labelled bullets, in order Previous / Next / Same module /
+                                       Depends on / Feeds / Category                      R-RELATED
+   (generated index-links block)                                       never touched      R-GENBLOCK
+## References                          three tiers, linked heads, `* ` bullets and their count unchanged
+## Open questions                      labelled bullets; in-force notes last               R-OPENQ
+<!-- footnotes -->
+```
+
+**Order of work.**
+
+1. **R-H3** — structure below H2 (do this first; everything else is easier afterwards).
+2. **R-TABLE**, **R-DERIVATION** — the numbers come out of the prose.
+3. **R-LIST**, **R-CATEGORY** — enumerations and the category paragraph.
+4. **R-PARA**, **R-SENTENCE** — what is left of the prose.
+5. **R-TOOLS** — the SkyWater tool items.
+6. **R-OPENQ**, **R-RELATED**, **R-CODE** — the fixed-pattern sections.
+7. **R-HEDGE**, **R-REPEAT** — hedge placement and repetition, once the sections are settled.
+8. **R-GLANCE** — written last, from the finished page.
+9. **R-DROPDOWN** applies throughout, whenever the page has a note.
+10. **R-LINKS** (W0c) and **R-FIGURE** (W1a) are separate passes, not part of the hand edit.
+
+**Form to use.**
+
+| Form | Use it for |
+|---|---|
+| Table | any ≥ 3 × 2 parallel data: recipes, stacks, rules, measured against nominal, derivation inputs. **Not** the reference tiers |
+| Numbered list | sequences and arithmetic steps |
+| Bullets | reasons, failure modes, tools, resources, unknowns |
+| Admonition | "At a glance" and the "How" scope note; at most 2 per page |
+| Dropdown | **only** in-force-patent notes |
+| Figure | module cross-section, tilt/shadow geometry, flow strip (W1a) |
+
+**Checkers to run:** `check_steps.py`, `check_refs.py`, `check_inforce.py`, `gen_index_links.py --check`,
+`-W` build.
+
+### 4.2 Machine page (`docs/machines/*.md`, 30 pages)
+
+```
+(machine-slug)=
+# Title
+intro ≤ 70 words                                                     R-INTRO
+| quick facts |                         cells ≤ 20 words             R-QUICKFACTS
++ :::{seealso} pointer sentences moved out of the intro :::          R-INTRO
+## What the machine class is and how it works
+   H3 per subsystem (allowed here), opening paragraph ≤ 60 words
++  (generated block-chain figure)                                    R-FIGURE, W1a
+## Representative 200 mm-era models     table + ≤ 3 remarks           R-MODELS, R-CAPTION
+## At SkyWater
+### What SkyWater lists                 blockquote, then an entry table   R-ENTRIES
+### Strength of the evidence            grade in bold in the first sentence, ≤ 80 words
+### SKY130 steps assigned to this class dropdown holding the run FIRST, then the steps table,
+                                        then the grade table Tool | Grade | Steps   R-STEPRUN
+## Consumables and facilities           bullets whose lead-ins link material pages   R-COMPARE step 2
+## Process-integration notes for SKY130 bullets ≤ 60 words, lead-in names the steps
+## Related pages                        grouped under bold labels                    R-RELATED
+   (generated index-links block)
+## References
+## Open questions                       one question per bullet
+```
+
+**Order.** R-INTRO → R-STEPRUN → R-MODELS → R-ENTRIES → R-QUICKFACTS → R-PARA/R-SENTENCE/R-LIST →
+R-RELATED → R-CAPTION → R-LINKS (W0c).
+
+**The H2 and the three H3s under `At SkyWater` are fixed** (§2.9). H3s **are** allowed under
+`What the machine class is and how it works` — `docs/machines/duv-krf-stepper.md:42`
+(`### Excimer laser source`) is an existing example.
+
+**Checkers:** `check_machines.py`, `check_refs.py`, `check_inforce.py`, `gen_index_links.py --check`.
+
+### 4.3 Material page (`docs/materials/*.md`, 12 pages)
+
+Same skeleton as the machine page with the material H2s (§2.9), plus:
+
+* the summary table before the first H2 must still start with `What they do` and end with
+  `SkyWater evidence`, `SKY130 steps`; the last cell reads "N steps; see …" and **N must equal the
+  number of step links in the steps paragraph**;
+* under `### SKY130 steps that use this class`: the `Materials index rows covered:` line and its
+  `` * `key` — short name `` bullets stay exactly as they are (one key per bullet, first on its line);
+* the `Steps:` line and the paragraph after it stay adjacent, the steps in ascending order, each link
+  showing the step's code. The pair may move inside a `{dropdown}` together (verified);
+* `+ Material | Steps (count) | Used for` table after the steps paragraph, built from the grouped
+  bullets — no new facts;
+* the supplier table at `docs/materials/sputter-targets.md:195` is the model for "What SkyWater's
+  filings list".
+
+**Order.** R-INTRO → R-STEPRUN → R-MODELS → R-ENTRIES → R-QUICKFACTS → prose rules → R-RELATED →
+R-CAPTION.
+
+**Checkers:** `check_materials.py` (also on the index), `check_refs.py`, `check_inforce.py`,
+`gen_index_links.py --check`.
+
+### 4.4 Mask page (`docs/masks/*.md`, 36 pages)
+
+The strictest checker and the most consistent pages. **Leave alone:** quick facts (every row except
+`Polarity and tone` and `Exposure class` is compared with the index), the plates table, the step
+bullets, the design-rule table's rows, the reticle-set column, the title, the `(mask-<stem>-steps)=`
+label before `## Steps that use this mask`.
+
+```
+(mask-slug)=
+# CODE — name                            title text is checked against the index
+| quick facts |                          leave                       §2.9, R-QUICKFACTS step 4
+intro ≤ 70 words                                                     R-INTRO
+## What the mask defines
+## Drawn layers and derivation
+### In the PDK
+### In the public renders                must keep "not SkyWater's" and "renders of *drawn* data"
++ (derivation-chain figure)                                          R-FIGURE, W1a
+## Plates and reticle sets               optional H3 `The mask-type record` only
+## Lithography and pattern transfer      + H3s: Exposure class, Mask errors, Resist and tone,
+                                         Overlay and alignment, Pattern transfer   R-H3 — **W0e**
+## Steps that use this mask
+## Design rules and critical dimensions  + parameter table               R-PARAMS, R-CAPTION
+## Related pages                                                        R-RELATED
+## References
+## Open questions
+```
+
+**Order.** R-INTRO → R-PARAMS → R-CAPTION → prose rules → R-RELATED → (W0e) R-H3.
+
+**Never** write "custody", "shipment" or "exp_ship" on a mask page or the masks index.
+
+**Checkers:** `check_masks.py`, `check_refs.py`, `check_inforce.py`, `gen_index_links.py --check`.
+
+### 4.5 Category page (`docs/categories/*.md`, 10 pages)
+
+No heading checker, so this is the freest page type — and the one where `check_refs.py` still demands
+**12** Deep dive entries.
+
+```
+(category-slug)=
+# Title
++ intro ≤ 60 words, assembled from the first paragraph of "What this class of step does"   R-INTRO
++ | quick facts | What it does · Steps in SKY130 (N) · Tool classes (links) ·
+                  Consumable classes (links) · Governing relation
+## What this class of step does
++ (generic mechanism figure)                                          R-FIGURE, W1a
+## Physics and engineering background    H3s welcome; comparisons as tables   R-COMPARE, R-CAPTION
+## Typical equipment                     Tool class (link) | Representative models | Note;
+                                         model history stays on the machine page
+## Typical consumables                   lead-ins link material pages          R-COMPARE step 2
+## Steps in this category                + `Machine class` column              R-COMPARE step 3
+   (generated index-links block)
+## References                            ≥ 12 Deep dive bullets — count unchanged
+```
+
+**Order.** R-INTRO → R-COMPARE → R-TABLE → R-CAPTION → prose rules → R-LINKS (W0c).
+
+### 4.6 Index pages (`{machines,materials,masks,categories}/index.md`, `steps/index.md`)
+
+Target shape, in this order: **purpose ≤ 80 words → navigation table or cards → detail tables → "How to
+read this index" (the evidence and grading text, moved unchanged) → open questions → references.**
+`docs/categories/index.md` is already in this shape; copy it.
+
+| Index | Safe now | Blocked |
+|---|---|---|
+| `machines/index.md` | reorder H2s (R-INDEX 1–2); replace the 30 bare links at `:17-57` with a table; caption the tables | two-column main table + card grid — **W0e** |
+| `materials/index.md` | reorder; caption; `{table}` + `:widths:` on the six-column table | split into two tables keyed by material — **W0e** |
+| `masks/index.md` | reorder; caption; a navigation table **under its own heading** | none of the six checked columns may move |
+| `categories/index.md` | nothing needed | — |
+| `steps/index.md` | nothing by hand | grouping, columns, sidebar titles — **W0d**, generator |
+
+**Do not** put a new table inside a checked section above the checked table (verified failure), and do
+not give `machines/index.md` a new four-column table whose first cell links a machine page (verified
+failure). See §5.
+
+### 4.7 Overview (`docs/overview/index.md`)
+
+* **Reorder H2s only**, labels and text unchanged: *How to read this reference* → *The flow by module* →
+  *A simplified cross-section* → *Front end, middle of line and back end* → *What SKY130 is* → *The
+  metal cap and barrier question* → *Key open questions* → *References*.
+* Add a five-bullet "On this page" of `{ref}` links after the opening paragraph (furo hides the contents
+  list below about 1,300 px).
+* Turn each run-in bold module paragraph into an H3 (R-H3), so the 13 modules appear in the contents
+  list and can be linked from the landing page. **Each collapsed in-force note stays directly after its
+  own paragraph** — the overview has them (for example at `docs/overview/index.md:344`).
+* Paragraphs ≤ 90 words here (the page has 13 over 120, longest 517); more than four markers in a
+  paragraph means a list or a table.
+* Figures (W1a): the module flow strip directly above the module table at `:328`; the to-scale back-end
+  stack at the top of *A simplified cross-section*; the two Cypress metal-1 stacks in the metal-cap
+  section.
+* Moving the metal-cap section to its own page is an **owner decision**; 57 pages use its label.
+
+### 4.8 Landing page (`docs/index.md`)
+
+Three paragraphs and their footnotes verbatim → **R-CARDS** grid → the 13-module table (first four
+columns of the overview's) → four lines on how to read a page → `:hidden:` toctrees. No reading list;
+this page is not a `check_refs.py` target. Every section in one click, a module's first step in two.
+
+### 4.9 Glossary (`docs/glossary.md`)
+
+One `{glossary}` block per initial under `## A` … `## W`, plus an A–Z link line; entries unchanged, ≤ 80
+words, first sentence expands the acronym; `{term}` and `{ref}` roles only. Bold terms come from CSS
+(W0a), not from markup. **R-TERM** step 5.
+
+### 4.10 Inventory (`docs/references/public-sources.md`)
+
+Entry = anchor line, bold key, bibliographic sentence, URL(s), what it gives, then `Tier:` and the "used
+on" lines last. Keep all ten section headings and every key. **R-ANCHOR**. Nine tools read this file:
+run every checker after any change to it.
+
+### 4.11 References index (`docs/references/index.md`)
+
+After the first paragraph, add a four-row table — Inventory · Papers · Patents · Filings, each with its
+count and one clause. Update "How citations work" for the linked reading-list heads (R-LINKS) once W0c
+has landed.
+
+### 4.12 Generated index pages (`docs/references/{papers,patents,filings}/`)
+
+**Never edited.** Their order (purpose → browse the views with counts → how to read an entry → legal
+caveat → a `{dropdown}` holding the present methodology text verbatim) and their clickable URLs are
+generator changes, in `gen_patents.py`, `gen_papers.py` and `gen_filings.py`. **W0d.**
