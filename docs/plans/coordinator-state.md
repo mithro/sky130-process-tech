@@ -41,9 +41,12 @@ check list of `agent-briefs.md`, one worktree and branch each, and a progress fi
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-links` | W0f link checker, dead links to Wayback copies, soft-404 detection, generated pages | Sonnet | running (second round) |
-| `topic/rd-citelinks` | W0c citation links: style rule 5, `check_refs.py` invariant, `tools/fix_reading_list_links.py`, site-wide run | Sonnet | started 2026-09-20 |
-| `topic/rd-steps-001-013` | W2 pilot: readability rules on steps 001–013 (validates the guide) | Sonnet | started 2026-09-20 |
+| `topic/rd-citelinks` | W0c citation links (6,288 reading-list heads linked; tools `fix_reading_list_links.py`, `link_named_titles.py`; `check_refs.py` invariant) | Sonnet | written; Opus review running, report to `tmp/reviews/rd-citelinks.md`. After review fixes: rebase on `main`, then re-run `fix_reading_list_links.py` because `main` now has archive-first definitions for THUNG-2016 and TEL-PROBER (the inline URL must equal the definition's first URL) |
+| `topic/rd-steps-001-013` | W2 pilot: readability rules on steps 001–013; its progress file lists guide problems | Sonnet | running; one commit per page |
+
+If the account quota stops the agents: each commits per page or per step and keeps
+`docs/plans/progress-<name>.md`; restart by giving a new agent the same task text (the plan's W-item), the
+worktree and "read the progress file and continue".
 
 Merged so far: guide, theme + `check_preserved.py`, generators, figure tooling + 16 figures (see the plan's
 status column). Reviews live under the git-ignored `tmp/reviews/`.
