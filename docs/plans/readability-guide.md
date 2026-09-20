@@ -369,7 +369,7 @@ under an H2 other than `Drawn layers and derivation`, `References` or `Plates an
 
 **Find.** `grep -rnE '^\*\*[^*]{3,80}[.?:]\*\*' docs/steps/*.md | grep -v 'Related patents\|Related
 papers\|Related filings'` — 184 hits, 146 of them the generated index-links block, so 38 real candidates on
-step pages; the same grep on `docs/masks/*.md` finds the 208 mask run-ins of B8. Section word counts come
+step pages; the same grep on `docs/masks/*.md` finds 217 mask run-ins (report B8 counted 208). Section word counts come
 from `measure.py`.
 
 **Kind.** hand.
@@ -667,3 +667,336 @@ at `docs/steps/006-stie.md:32` into quotation marks instead of backticks — is 
 it changes quoting, which §2.1 forbids. Owner decision; left out.
 
 **Kind.** hand, opportunistic.
+
+### 3.2 Tables, data and derivations
+
+Read §2.4 (never fill a cell from memory) and the column budget in §1 before any of these.
+
+#### R-TABLE — numeric data written as prose or bullets
+*(report A F3; report B §2 supplies the column budget)*
+
+**Applies when** a paragraph or bullet holds **three or more parallel items that each carry two or more
+attributes** — a source and a value, a rule and a number, a layer and a thickness. Mechanical proxies:
+five or more unit-bearing numbers plus two or more semicolons in one block; three or more design-rule
+identifiers in one block.
+
+**Do.**
+1. Choose the columns from the kind of block:
+
+   | Kind | Columns |
+   |---|---|
+   | Published recipes from other fabs | Source · Species · Energy · Dose · Note |
+   | Film stacks | Report (year, technology) · Stack as quoted · Total |
+   | Design rules | Rule · Constrains · Value |
+   | Measured against nominal | Parameter · Geometry · Test tile · PDK nominal · Limits |
+   | Generic recipe parameters | Parameter · Typical · Public for SKY130? |
+
+2. One row per item, in the original order.
+3. Every row keeps its footnote marker, in the first or the last cell.
+4. Units go in the header (`Energy (keV)`). Per-cell units only where the source itself is
+   inconsistent, and then say so in the caption (R-CAPTION).
+5. A hedge that covers the whole table goes, word for word, in one sentence directly under it. A hedge
+   that covers one row goes in a final `Basis` column.
+6. Quoted values stay quoted, inside the cell. A value the page does not give is `—`.
+7. Numbers, step numbers and years are right-aligned (`---:`); everything else left; never centred.
+8. The sentence that draws the conclusion stays as prose after the table.
+9. A row whose only source is a patent shown as in force belongs **inside that patent's dropdown**, in a
+   table of its own (§2.5, §2.6).
+10. Obey the column budget of §1. If the data needs more columns, split the table by key or transpose it.
+
+**Example** — `docs/steps/018-nwi.md:94`.
+
+Before:
+
+```
+* **Energy.** Set by the wanted peak depth. Published retrograde N-wells
+  of the 0.25–0.13 µm era: 500, 275 and 130 keV phosphorus in a Harris
+  twin-well flow;[^pat-twin-harris] 700 keV at 2.0 × 10¹³ cm⁻² plus
+  120 keV at 2.0 × 10¹² cm⁻² in a Hynix flow;[^pat-well-hynix] 850 keV
+  at 5.2 × 10¹³ cm⁻², 550 keV at 1.25 × 10¹² cm⁻² and 50 keV at 5 ×
+  10¹¹ cm⁻² at IBM;[^pat-well-ibm] …
+```
+
+After:
+
+```
+* **Energy.** Set by the wanted peak depth. Published retrograde N-wells of the
+  0.25–0.13 µm era:
+
+  | Source | Energy (keV) | Dose (cm⁻²) |
+  |---|---:|---:|
+  | Harris twin-well[^pat-twin-harris] | 500, 275, 130 | — |
+  | Hynix[^pat-well-hynix] | 700 + 120 | 2.0 × 10¹³ + 2.0 × 10¹² |
+  | IBM[^pat-well-ibm] | 850 / 550 / 50 | 5.2 × 10¹³ / 1.25 × 10¹² / 5 × 10¹¹ |
+
+  For a 1.1 µm well depth[^pdk-03] the deepest `NWI` energy is plausibly
+  500 keV–1 MeV (inference from range tables).[^txt-01]
+```
+
+(The Harris row has no published dose, so its cell is `—`, not a number from memory.)
+
+A second worked case: `docs/steps/061-p1m.md:30-38` recites six poly rules in one paragraph
+("the minimum poly width (poly.1a) is 0.150 µm and the minimum poly-to-poly spacing (poly.2) is
+0.210 µm;[^pdk-periph] … 0.130 µm (poly.8, the endcap) … 0.250 µm (poly.7 …) … 0.075 µm (poly.4) …
+0.330 µm (poly.3)"). That becomes a three-column `Rule | Constrains | Value` table with one marker per
+row, and the closing sentence about the drawn gate length stays as prose.
+
+**Do not touch.** Significant figures, thousands spacing ("1 800 Å"), "about", "~", the order of the
+items, the markers, the rule identifiers (bare, per R-CODE step 3).
+
+**Find.** `python3 tmp/readability/a-tools/measure3.py` (table candidates: blocks with ≥ 5 unit-bearing
+numbers and ≥ 2 semicolons) and `measure4.py` (blocks citing ≥ 3 design-rule ids).
+
+**Kind.** hand, from the templates above.
+
+#### R-DERIVATION — arithmetic buried in prose
+*(report A F5)*
+
+**Applies when** a passage performs two or more arithmetic operations, or takes two or more inputs to
+reach a number; or contains "our arithmetic", "our extraction", an inline `=` chain or "≈".
+
+**Do.**
+1. Give it an H3: `### How <the quantity> is estimated`.
+2. Input table first: one row per input, each with its own footnote marker and the source's own wording
+   for the quantity.
+3. Numbered list: **one operation per line**, the arithmetic written out, the result of that line in
+   bold.
+4. A bold result line.
+5. Then every hedge the original carried, word for word, in the original order.
+6. A single-operation estimate stays inline as its own sentence — no table.
+7. If the same derivation appears twice on the page, work it once; the second place keeps the result,
+   the hedge, the marker and "(derived above)".
+8. **Check the arithmetic as you copy it. If it does not come out, copy it exactly as written and put a
+   line in your progress file.** Never correct a number.
+
+**Example** — `docs/steps/006-stie.md:30-44`, where one sentence holds two subtractions, the
+conclusion, and a judgement about `FOXSTEP`.
+
+After:
+
+```
+### How the trench depth is estimated
+
+| Quantity (PDK stack drawing[^pdk-04]) | Value (µm) |
+|---|---:|
+| `li` bottom | 0.9361 |
+| `licon` over `diffusion` | 0.6099 |
+| `licon` over `field poly` | 0.4299 |
+| `field poly` thickness | 0.18 |
+
+1. Diffusion surface: 0.9361 − 0.6099 = **0.3262 µm**.
+2. Field-oxide top: 0.9361 − 0.4299 − 0.18 = **0.3262 µm**.
+3. The two are equal, so the drawing shows no field-oxide step, and the 0.07 µm `FOXSTEP`
+   of the assumptions table[^pdk-03] cannot be combined with it to derive a trench depth.
+
+Result: about 0.33 µm **only if** the drawing's zero is the trench floor. That is our reading,
+not a documented fact, and the drawing says "Diagram not to scale!".[^pdk-04]
+```
+
+**Do not touch.** Any number. Any hedge. The markers on the inputs.
+
+**Find.** `grep -rn "our arithmetic\|our extraction\|≈\| = [0-9]" docs/steps/*.md` (56 "our arithmetic"
+uses on 42 pages).
+
+**Kind.** hand.
+
+#### R-MODELS — "Representative models / materials and grades" as vendor paragraphs
+*(report B B4)*
+
+**Applies when** the `## Representative 200 mm-era models` (machine pages) or
+`## Representative materials and grades` (material pages) section contains no line starting with `| `.
+
+**Do.**
+1. One row per model or grade. Machine pages: `Vendor | Model | Year | Type | Published figures`.
+   Material pages: `Material | As supplied | Specification | Note`.
+2. Quotation marks and footnote markers travel with the value into the cell.
+3. A value the page does not give is `—`.
+4. Sentences that fit no column — litigation, "still used in 2014", "no vendor description was
+   retrieved" — stay as a short paragraph under the table, unchanged.
+5. Wrap the table per R-CAPTION.
+
+**Example** — `docs/machines/duv-krf-stepper.md:144`.
+
+Before:
+
+```
+* **ASML.** Its first KrF stepper, the PAS 5000/70 of 1991, had NA
+  0.42;[^kato-2007] its first step-and-scan tool, the PAS 5500/500 of 1997,
+  had "a resolution of 0.22µm, with 96wph throughput
+  (200mm)".[^kato-2007] The PAS 5500/350C is "a Deep UV stepper for
+  0.15-µm applications and beyond".[^asml-pas5500-350c] …
+```
+
+After:
+
+```
+:::{table} Representative KrF exposure tools of the 200 mm era (figures as each source gives them)
+:widths: 12 20 8 12 48
+
+| Vendor | Model | Year | Type | Published figures |
+|---|---|---:|---|---|
+| ASML | PAS 5000/70 | 1991 | stepper | NA 0.42[^kato-2007] |
+| ASML | PAS 5500/500 | 1997 | scanner | "a resolution of 0.22µm, with 96wph throughput (200mm)"[^kato-2007] |
+| ASML | PAS 5500/350C | — | stepper | "a Deep UV stepper for 0.15-µm applications and beyond"[^asml-pas5500-350c] |
+:::
+```
+
+**Do not touch.** The vendor names, the model designations, the quotations, the markers. Do not add a
+year the page does not give.
+
+**Find.** per class page, `sed -n '/^## Representative/,/^## /p' FILE | grep -c '^| '` → 0 means the
+rule applies (42 of 42 class pages today).
+
+**Kind.** hand. Not scriptable: deciding which clause is a "published figure" is judgement.
+
+#### R-ENTRIES — "read term by term" paragraphs
+*(report B B6)*
+
+**Applies when** a paragraph glosses the entries of a quoted list in turn, one after another, usually
+separated by semicolons; often signalled by the words "term by term" or "The mask-type record".
+
+**Do.**
+1. One row per quoted entry: `Entry as listed | What it names | Status`.
+2. `Entry as listed` is the quotation, unchanged, in quotation marks.
+3. `Status` is **the page's own hedge**: "SkyWater statement", "our reading", "our inference",
+   "not stated". Never invent one, never upgrade one.
+4. Sentences about the list as a whole stay as prose above or below the table.
+5. Two-column material (term → explanation) may use a definition list instead (§6).
+
+**Example** — `docs/machines/duv-krf-stepper.md:191`: "Read term by term: "DUV" names no wavelength; the
+step pages read "ASML DUV stepper" and "ASML DUV scanner" as 248 nm (KrF) tools, as the machines index
+records, and that the list gives the two 193 nm scanners as separate entries is consistent with that …".
+After: a table whose first row is `"DUV" | names no wavelength | not stated` and whose second is
+`"ASML DUV stepper", "ASML DUV scanner" | read as 248 nm (KrF) tools | our reading (machines index)`,
+with the markers in the cells and the concluding sentence left as prose.
+
+**Do not touch.** The quotations, the order of the entries, the markers, the hedge words.
+
+**Find.** `grep -rln "term by term" docs/` (34 pages); `measure_b.py --list` key `para>=3semicolons`
+(129 paragraphs on 65 pages).
+
+**Kind.** hand.
+
+#### R-QUICKFACTS — quick-facts cells that are not quick
+*(report B B5)*
+
+**Applies when** a quick-facts cell exceeds 20 words or holds more than one quotation.
+
+**Do.**
+1. Value first, in the page's own words. At most one quotation. Then the markers. Then, if needed, a
+   pointer: "see *Excimer laser source*".
+2. **Before deleting anything from a cell, find the same words in the body.** If they are not there,
+   move them into the right section *with their markers and quotation marks first*, in a separate step,
+   and only then shorten the cell.
+3. Keep every row label. Keep the row order.
+4. **Mask pages:** do not touch the cells the checker compares with the index — `Mask step`,
+   `PDK mask (`masks.csv`)`, `Mask-level layer (`gds_layers.csv`)`, `Drawn layer (`gds_layers.csv`)`,
+   `Minimum CD, feature / space`, `Mask type (process-steps sheet)`, `Plates recorded`, `Plate no.`,
+   `Dies with shapes, MPW-1 to MPW-8 (renders)`, `Steps that use the pattern`. That is every row except
+   `Polarity and tone` and `Exposure class`, which must stay non-empty and keep its machine link.
+   In practice: **mask quick facts are already the model; leave them alone.**
+5. **Material pages:** the summary table must still start with `What they do` and end with
+   `SkyWater evidence` then `SKY130 steps`, and the last cell must still read "N steps; see …" with N
+   equal to the number of step links in the steps paragraph.
+6. **Step pages:** the quick-facts table has no checker, but `Step number`, `Step code`, `Category`,
+   `Phase`, `Previous step` and `Next step` are the site's navigation. Do not reword them.
+
+**Example** — `docs/machines/duv-krf-stepper.md:22`, the `Light source` cell: 38 words and six
+quotations. The /350C figures ("Type: Cymer 5610", "Power: 10 W", "Frequency: 1 kHz") appear **only**
+here, so they move into `### Excimer laser source` (`docs/machines/duv-krf-stepper.md:42`) with
+`[^asml-pas5500-350c]`; the cell then reads: `A KrF excimer laser, "Type: Cymer ELS6600, Gigaphoton
+KES-G2OK", 20 W, up to 2 kHz on the PAS 5500/750F;[^asml-pas5500-750f] see *Excimer laser source*.`
+
+**Do not touch.** Row labels; any cell listed in step 4; numbers; quotation marks.
+
+**Find.** `measure_b.py --list` key `tablecell>40w` (97 cells on 42 pages).
+
+**Kind.** hand. Never scripted.
+
+#### R-PARAMS — number-dense paragraphs beside a table
+*(report B B14)*
+
+**Applies when** a paragraph names four or more identified parameters with values ("Table 2 gives …
+`FOMCD` 0.14 …; Table 7 gives … 0.135 (`FOMSE`) …"), next to an existing table.
+
+**Do.**
+1. Second table: `Parameter | PDK table | Published description | Value`.
+2. One row per parameter, values and identifiers exactly as written.
+3. The interpretation ("the PDK does not reconcile these with the 0.150 µm of difftap.1", "our
+   reading") stays as prose after the table, unchanged.
+4. Do not merge it into the existing design-rule table: that one is quoted rule text, this one is
+   parameters.
+
+**Example** — `docs/masks/fom.md:331` ("Table 2 of *Criteria & Assumptions* gives the minimum feature
+and space as `FOMCD` 0.14 and `FOMCDSP` 0.27, and Table 7 gives a "MOSFET width" of 0.135 (`FOMSE`) and a
+"MOSFET width in standard cells" of 0.075 (`FOMSESC`);[^pdk-03] the PDK does not reconcile these …").
+All 36 mask pages have a paragraph of this shape.
+
+**Do not touch.** The sentence beginning "the PDK does not reconcile …"; the unit caveat (it belongs in
+the caption, R-CAPTION, *and* stays in the prose if that is where the page put it).
+
+**Find.** `grep -rn "Table [0-9] gives\|Table [0-9] of" docs/masks/*.md`.
+
+**Kind.** hand.
+
+#### R-COMPARE — category-page comparisons and consumables
+*(report B B7)*
+
+**Applies when** a category page has three or more bullets of the shape *thing (steps): values;
+explanation*, or a "Typical consumables" list whose lead-ins name materials but link nowhere.
+
+**Do.**
+1. Comparison bullets become `Material | SKY130 steps | Typical chemistry | Why`. An explanation over
+   40 words stays as prose below the table, under the same name.
+2. Each consumables lead-in becomes a link to its material page. Map the name through the class-page
+   table of `docs/materials/index.md` (`## How to read the index`, the `Consumable class | Page` table);
+   if the name is not in that table, leave it unlinked.
+3. Add a `Machine class` column to the category's steps table, taken from the machines index.
+4. Add no material that the page does not already name.
+
+**Example** — `docs/categories/etch.md:91`: `* **Silicon and polysilicon** (STI trench {ref}`STIE
+<step-006>`, gate {ref}`P1ME <step-062>`): HBr/Cl₂ with a little O₂, which forms …` — seven bullets of
+this shape become one table with the columns above. `docs/categories/etch.md:219`
+(`* **Fluorine sources**: CF₄, CHF₃, C₄F₈, C₂F₆, SF₆, NF₃ (chamber clean).`) keeps its text and gains a
+link on the lead-in to the etch-gases material page. `docs/categories/cmp.md:134` (`Polish | Film removed | Stop | Slurry | Failure modes`) is the model to copy.
+
+**Do not touch.** The chemistry, the step links, the order.
+
+**Find.** `grep -rn "^\* \*\*[^*]*\*\* (\|^\* \*\*[^*]*\*\*:" docs/categories/*.md`.
+
+**Kind.** the table is hand work; the consumables links and the machine-class column are scripted.
+
+#### R-CAPTION — every table says what it is
+*(report B B13)*
+
+**Applies when** a table is not the page's quick-facts table and has no caption. (185 tables on the 92
+class pages today; 0 captions.)
+
+**Do.**
+1. Wrap it:
+
+```
+:::{table} What the rows are, from which source; unit note if the units are uneven
+:widths: 12 20 8 12 48
+
+| … |
+:::
+```
+
+2. The caption says three things: what one row is, where the values come from, and any unit caveat
+   ("values in µm where the PDK gives a unit; blank units are blank in the PDK").
+3. `:widths:` is required on any table with a prose column; the numbers are relative.
+4. The pipe table inside stays exactly as it was — same rows, same cells, same order (§5).
+5. Never `{numref}`, and do not refer to tables by number in prose.
+
+**Example** — `docs/masks/fom.md:310`, the rule table `| Rule | Description (published wording, abridged
+where marked "[…]") | Value |`, gets
+`:::{table} Periphery design rules naming `diff` and `tap`, as published; the unit column of difftap.4
+and difftap.5 is blank in the PDK[^pdk-periph]` and `:widths: 14 62 24`.
+
+**Do not touch.** Cell contents, column order, row order.
+
+**Find.** `grep -rn "^| " docs/{machines,materials,masks,categories}/*.md | grep -v "|---"` and check
+which tables have no `:::{table}` line above them.
+
+**Kind.** hand (one line per table); safe to do in the same commit as the table rule that created it.
