@@ -1,0 +1,7 @@
+:::{figure} /figures/overview/flow-modules.svg
+:alt: A vertical strip divided into the thirteen process modules in proportion to their number of steps, bracketed into front end (88 steps), middle of line (18) and back end (65). Each segment fans out to a row giving the module's name, its step range and its masks.
+:width: 560px
+:name: fig-flow-modules
+
+The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table above.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
+:::

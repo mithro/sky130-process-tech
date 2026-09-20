@@ -1,0 +1,25 @@
+# Evolving cross-section for the isolation module, steps 001-013.
+# One geometry for the whole series: a figure is "the state after step N".
+# Thicknesses are DRAWING units (not to scale); min 5 u so that every film is visible.
+# x runs 0..268: active 0-80, field (trench) 80-188, active 188-268.
+substrate:
+  material: si-sub
+  depth: 96
+  label: {title: "Silicon wafer", note: "p-type substrate (SMAT, step 001)", basis: public}
+ops:
+  - {step: "002", op: deposit, id: padox, material: oxide-thermal, t: 5,
+     label: {title: "Pad oxide", note: "BOX, step 002; thickness not public", basis: public}}
+  - {step: "003", op: deposit, id: isonit, material: nitride, t: 24,
+     label: {title: "Nitride hard mask", note: "ISONIT, step 003", basis: public}}
+  - {step: "004", op: deposit, id: resist, material: resist, t: 38, where: [[0, 79.5], [188.5, 268]],
+     label: {title: "Photoresist", note: "FOM pattern, step 004", basis: public}}
+  - {step: "005", op: etch, materials: [nitride, oxide-thermal], where: [[80, 188]]}
+  - {step: "006", op: etch, materials: [si-sub], where: [[80, 188]], depth: 56, taper_deg: 9, corner_r: 9}
+  - {step: "006", op: strip, materials: [resist]}
+  # (DNM/DNI/DNIS, steps 007-009, add a deep-N-well overlay in the full series)
+  - {step: "010", op: deposit, id: liner, material: oxide-thermal, t: 5, only_on: [si-sub],
+     label: {title: "Liner oxide", note: "LINOX, step 010", basis: public}}
+  - {step: "011", op: deposit, id: fox, material: oxide-dep, fill_to: 60,
+     label: {title: "Fill oxide (HDP)", note: "FILOX, step 011; becomes the field oxide", basis: public}}
+  - {step: "012", op: planarise, stop_on: nitride}
+  - {step: "013", op: strip, materials: [nitride]}

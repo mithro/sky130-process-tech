@@ -1,0 +1,7 @@
+:::{figure} /figures/sti/sti-012-cmpnit.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the polish, a thick fill oxide buries the lined trench and the nitride-covered active areas. After the polish, the oxide is left only in the trench, level with the nitride on the active areas.
+:width: 560px
+:name: fig-sti-012-cmpnit
+
+The wafer before and after `CMPNIT`, on the same cross-section as the earlier isolation steps. The polish stops on the nitride of `ISONIT`. Not to scale.
+:::

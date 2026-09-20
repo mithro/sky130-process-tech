@@ -1,0 +1,35 @@
+/* Prototype for docs/_static/custom.css (add to html_css_files). Uses furo variables, so dark mode follows. */
+
+/* 1. BUG FIX: a footnote cited many times renders "(1,2,3,…,77)" with no break opportunity, which makes
+      the whole page wider than a phone screen (overview, machines index, materials index, masks index). */
+.footnote .backrefs, aside.footnote > span.backrefs { overflow-wrap: anywhere; word-break: break-word; font-size: 85%; }
+aside.footnote > p, aside.footnote a.reference.external { overflow-wrap: anywhere; }
+
+/* 2. Footnote popover card (footnote-popover.js). */
+.fn-popover { position: absolute; z-index: 60; box-sizing: border-box; padding: .6rem .8rem;
+  background: var(--color-background-primary); color: var(--color-foreground-primary);
+  border: 1px solid var(--color-background-border); border-radius: .4rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,.25); font-size: var(--font-size--small); line-height: 1.45; }
+.fn-popover p { margin: 0 0 .3rem; overflow-wrap: anywhere; }
+
+/* 3. Footnote markers: a larger hit area, never split "[18]" from the word before it is not possible in CSS,
+      but keep a run of markers together. */
+a.footnote-reference { padding: 0 .1em; white-space: nowrap; }
+
+/* 4. Tables: top-align cells (multi-line "Key public facts" cells), zebra rows, sticky header row. */
+table.docutils td { vertical-align: top; }
+table.docutils tbody tr:nth-child(even) { background: var(--color-background-secondary); }
+table.docutils thead th { position: sticky; top: 0; background: var(--color-background-secondary); z-index: 1; }
+
+/* 5. Glossary: make the terms scannable. */
+dl.glossary > dt { font-weight: 700; margin-top: 1.1rem; }
+
+/* 6. Prose measure: keep running text near 80 characters; tables, code and figures keep the full column. */
+article[role="main"] p, article[role="main"] li, article[role="main"] dd { max-width: 44em; }
+
+/* 7. Label the footnote block. */
+aside.footnote-list::before, hr.footnotes + aside.footnote:first-of-type::before { content: "Sources cited on this page";
+  display: block; font-weight: 700; margin: 0 0 .6rem; color: var(--color-foreground-primary); }
+
+/* 8. Figure captions. */
+figure figcaption, .figure .caption { font-size: var(--font-size--small); color: var(--color-foreground-secondary); text-align: left; }
