@@ -10,6 +10,20 @@
 | **Previous step** | {ref}`BOX <step-002>` |
 | **Next step** | {ref}`FOM <step-004>` |
 
+:::{admonition} At a glance
+* **Does:** deposits a blanket LPCVD silicon nitride film on the pad
+  oxide, the STI module's hard mask.
+* **Why:** an oxidation barrier, a CMP stop, a plasma-etch mask and
+  selectively removable in hot phosphoric acid, all at once.
+* **Public numbers:** none published for SKY130 (150 nm is a working
+  figure used across this module, not a SkyWater number; see Open
+  questions).
+* **Likely SkyWater tool:** Aviza furnace running LPCVD nitride —
+  strong.[^skw-01]
+* **Not public:** the actual thickness, deposition temperature and
+  pressure (→ Open questions).
+:::
+
 ## What this step is
 
 `ISONIT` ("isolation nitride") deposits a blanket film of silicon
@@ -30,6 +44,8 @@ at {ref}`NS19 <step-013>`.
 Before, the thin pad oxide alone; after, a thicker nitride film on top of it, right across the slice. An AmberWave Systems STI patent gives the mask nitride as "500-2000 Å" (50–200 nm);[^pat-sti-amberwave] no public SkyWater source gives the SKY130 value. Not to scale.
 :::
 
+### What the public record shows
+
 Precisely: a stoichiometric LPCVD nitride of the order of 150 nm — the
 working figure used throughout this module, not a SkyWater number — is
 deposited in a furnace from dichlorosilane and ammonia. An AmberWave
@@ -39,10 +55,12 @@ Systems STI patent gives the mask nitride as "500-2000 Å"
 SKY130 value, and the 150 nm used as a working figure on the later
 pages of this module ({ref}`STINITE <step-005>`, {ref}`STIE <step-006>`,
 {ref}`NS19 <step-013>`) sits in the upper half of the patent's range and is not a
-SkyWater number. The thickness is a compromise: thick enough to survive
+SkyWater number.
+
+The thickness is a compromise: thick enough to survive
 the trench etch and the CMP with margin, thin enough to keep the trench
 {term}`aspect ratio` (trench depth *plus* nitride, divided by trench width)
-manageable for the HDP fill — a paper on 0.13 µm STI defines the fill
+manageable for the HDP fill. A paper on 0.13 µm STI defines the fill
 aspect ratio exactly that way, as "the ratio of the sum of the STI
 trench depth and pad nitride thickness to the minimum space design rule
 critical dimension".[^thung-2016]
@@ -52,9 +70,13 @@ critical dimension".[^thung-2016]
 `ISONIT` is a {ref}`Thin-film deposition <category-deposition>` step —
 specifically a furnace LPCVD step, like the later
 {ref}`SAGD <step-048>` polysilicon and {ref}`GATENIT <step-058>`
-depositions. What is specific to this instance is that the film is
-sacrificial and its mechanical properties (stress, density, polish
-rate, wet-etch rate) matter more than its electrical ones.
+depositions.
+
+**Specific to this step:**
+
+* What is specific to this instance is that the film is sacrificial
+  and its mechanical properties (stress, density, polish rate,
+  wet-etch rate) matter more than its electrical ones.
 
 ## Why this step exists
 
@@ -87,7 +109,9 @@ states the relation.
 
 ## How it is typically performed
 
+:::{note}
 An industry-generic recipe for a 200 mm, 130 nm-era fab:
+:::
 
 * **Deposition chemistry.** Dichlorosilane (SiH₂Cl₂, "DCS") and ammonia:
   3 SiCl₂H₂ + 4 NH₃ → Si₃N₄ + 6 HCl + 6 H₂.[^wiki-sin][^wiki-cvd] LPCVD
@@ -129,12 +153,14 @@ which is a different (later-generation) precursor.
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnace running LPCVD nitride.** SkyWater states "Furnaces
-  are all made by Aviza", with LPCVD nitride among the listed
-  processes.[^skw-01] Strength: strong. Vertical configuration: not
-  stated publicly; a used-equipment listing for the
-  AVP-8000[^aviza-avp] shows the vendor's vertical 200 mm furnace
-  (weak).
+* **Aviza furnace running LPCVD nitride**
+  - *SkyWater says:* it states "Furnaces are all made by Aviza", with
+    LPCVD nitride among the listed processes.[^skw-01]
+  - *Tool exists:* strong.
+
+  Vertical configuration: not stated publicly; a used-equipment
+  listing for the AVP-8000[^aviza-avp] shows the vendor's vertical
+  200 mm furnace (weak).
 * No public source names the specific tube used for the isolation
   nitride versus the gate-stack or {term}`spacer` nitrides.
 
@@ -154,12 +180,13 @@ which is a different (later-generation) precursor.
 
 * Previous: {ref}`BOX <step-002>` (pad oxide under the nitride).
 * Next: {ref}`FOM <step-004>` prints the active/field pattern on it.
-* Etched at {ref}`STINITE <step-005>`; used as the mask at
+* Feeds: etched at {ref}`STINITE <step-005>`; used as the mask at
   {ref}`STIE <step-006>` and {ref}`LINOX <step-010>`; polish stop at
   {ref}`CMPNIT <step-012>`; removed at {ref}`NS19 <step-013>`.
-* Other nitride depositions: {ref}`ONO <step-040>` (SONOS charge-trap
-  nitride), {ref}`GATENIT <step-058>`, {ref}`SPNIT <step-076>`,
-  {ref}`LINIT <step-104>`, {ref}`NTSD <step-167>`.
+* Same module: other nitride depositions — {ref}`ONO <step-040>`
+  (SONOS charge-trap nitride), {ref}`GATENIT <step-058>`,
+  {ref}`SPNIT <step-076>`, {ref}`LINIT <step-104>`,
+  {ref}`NTSD <step-167>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -245,15 +272,15 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The SKY130 isolation-nitride thickness, deposition temperature and
-  pressure are not public; 50–200 nm from the cited patent and
-  700–800 °C from the cited patents and textbooks are era-typical
-  values.
-* Whether a thin oxide cap or anti-reflective layer is deposited on the
-  nitride before {ref}`FOM <step-004>` (some fabs do, to control
-  reflectivity at 248 nm) is unknown.
-* Whether SkyWater's nitride tube is a dedicated one or shared with the
-  ONO and spacer nitrides is not public.
+* **Thickness, temperature and pressure.** The SKY130 isolation-nitride
+  thickness, deposition temperature and pressure are not public;
+  50–200 nm from the cited patent and 700–800 °C from the cited
+  patents and textbooks are era-typical values.
+* **Anti-reflective cap.** Whether a thin oxide cap or anti-reflective
+  layer is deposited on the nitride before {ref}`FOM <step-004>` (some
+  fabs do, to control reflectivity at 248 nm) is unknown.
+* **Tube sharing.** Whether SkyWater's nitride tube is a dedicated one
+  or shared with the ONO and spacer nitrides is not public.
 
 <!-- footnotes -->
 

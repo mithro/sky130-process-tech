@@ -156,6 +156,26 @@ page 001, which come from "SKY130", "EV300" and "1X" the same way) — recorded 
 below. All other checkers and the `-W` build pass; screenshots at both widths read cleanly, note
 admonition and both tool sub-bullet blocks render without overflow.
 
+### 003-isonit.md — done
+
+Rules applied: R-H3 (`### What the public record shows` before the 173-word thickness/evidence
+paragraph), R-SENTENCE (split the 76-word "thickness is a compromise" sentence at its em-dash),
+R-CATEGORY (classification sentence + one-bullet "Specific to this step:" — Guide problem 3
+again), R-HEDGE step 1 (industry-generic recipe opener → note), R-TOOLS (the one "Strength:"
+bullet split into SkyWater says/Tool exists; the trailing "Vertical configuration: … (weak)"
+sentence, which grades a different attribute than existence/assignment, kept as plain text after
+the sub-bullets rather than forced into "Runs this step"), R-RELATED ("Feeds:" and "Same module:"
+labels, per Guide problem 5's convention), R-OPENQ (three bullets labelled), R-GLANCE (box added
+last; first sentence of "What this step is" already exactly 25 words, no split needed).
+R-TABLE/R-DERIVATION: no candidate. R-CODE: no candidate. R-LIST: the CMP-stop bullet (60 words)
+is at, not over, the item cap — left alone.
+
+`check_preserved.py docs/steps/003-isonit.md --allow-added markers,numbers,hedges,number_order`:
+exit 0, 0 LOST in any category (the one `number_order` addition, `('130','150')`, comes from the
+new glance-box sentence naming "SKY130" and "150 nm" together, not a real transposition — no
+LOST counterpart at all this time, unlike page 001). All other checkers and the `-W` build pass;
+screenshots at both widths read cleanly.
+
 ## Batch measurements (all 13 pages, before editing)
 
 `tmp/readability/a-tools/measure_batch.py` (written for this batch; reuses `measure.py`'s
