@@ -119,7 +119,16 @@ _DEC = r"(?:\.\d+)?"
 _NUM = rf"{_INT}{_DEC}"
 _EXP = rf"(?:\s?[×x]\s?10(?:\^-?\d+|{_SUP_CLASS}+))?"
 _CORE = rf"{_SIGN}?{_NUM}{_EXP}"
-_DASH = r"\s?[-–—]\s?"
+# Hyphen and en-dash join two numbers into one range/exponent token
+# ("3000–4000", "0.25-0.13"); an em-dash is never a numeric-range
+# separator in this house style (citation-style.md: it is the reading-list
+# head/annotation punctuation, "* head — annotation", and the general
+# prose dash) -- excluding it stops a number that merely sits right
+# before a bullet's " — " from being chained with the next number in the
+# annotation into one combined token (W0c: linking the head inserts
+# "](<...>)" between the two, which un-chains them and would otherwise
+# read as a LOST/ADDED pair even though neither number's value changed).
+_DASH = r"\s?[-–]\s?"
 NUMBER_RE = re.compile(rf"{_CORE}(?:{_DASH}{_CORE})*")
 SUP_STANDALONE_RE = re.compile(rf"{_SUP_CLASS}+")
 
@@ -557,6 +566,19 @@ def selftest() -> int:
         " 1989 — tungsten etching.[^a]\n"
         "\n[^a]: Turban et al., *Thin Solid Films*. "
         "<https://doi.org/10.1016/0040-6090(89)90102-8>\n",
+        True,
+        allowed=frozenset({"urls"}),
+    )
+    case(
+        "linking a bullet head does not un-chain a number 'joined' to the "
+        "annotation's number across the bullet's em-dash (W0c)",
+        "# P\n\n## References\n\n### Deep dive\n\n"
+        "* Oh (Hynix), US 6,576,405 — 3.4-4.2 MeV phosphorus.[^a]\n"
+        "\n[^a]: Oh. <https://patents.google.com/patent/US6576405B2>\n",
+        "# P\n\n## References\n\n### Deep dive\n\n"
+        "* [Oh (Hynix), US 6,576,405](<https://patents.google.com/patent/US6576405B2>)"
+        " — 3.4-4.2 MeV phosphorus.[^a]\n"
+        "\n[^a]: Oh. <https://patents.google.com/patent/US6576405B2>\n",
         True,
         allowed=frozenset({"urls"}),
     )
