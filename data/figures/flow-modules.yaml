@@ -1,0 +1,34 @@
+id: flow-modules
+kind: flowmap
+dir: overview
+page: docs/overview/index.md
+alt: >-
+  A vertical strip divided into the thirteen process modules in proportion to their number of steps, bracketed
+  into front end (88 steps), middle of line (18) and back end (65). Each segment fans out to a row giving the
+  module's name, its step range and its masks.
+caption: >-
+  The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step
+  range and its masks, as in the table above.[^steps-sheet] The phase boundaries are this reference's
+  ({ref}`overview-phases`).
+total_steps: 171
+strip_header: "All 171 steps"
+rows_header: "The thirteen modules"
+footer: "171 steps, 36 masks. Strip height is proportional to the number of steps."
+phases:
+  - {id: feol, first: 1, last: 88}
+  - {id: mol, first: 89, last: 106}
+  - {id: beol, first: 107, last: 171}
+modules:
+  - {name: "Starting material, isolation and deep N-well", first: 1, last: 13, codes: [SMAT, NS19], masks: [FOM, DNM], phase: feol}
+  - {name: "Wells and threshold implants", first: 14, last: 34, codes: [LVTNM, RTAI], masks: [LVTNM, NWM, HVTPM, PWBM, PWDEM], phase: feol}
+  - {name: "SONOS tunnel window and ONO stack", first: 35, last: 42, codes: [TUNM, ONOME], masks: [TUNM, ONOM], phase: feol}
+  - {name: "Gate oxides", first: 43, last: 47, codes: [GOX100, LVGOX], masks: [LVOM], phase: feol}
+  - {name: "Poly gate and poly resistors", first: 48, last: 63, codes: [SAGD, IOX45], masks: [RPM, RRPM, URPM, P1M], phase: feol}
+  - {name: "Tips and halos", first: 64, last: 75, codes: [NTM, TIPRTAD], masks: [NTM, HVNTM, LDNTM], phase: feol}
+  - {name: "Spacers and source/drain", first: 76, last: 88, codes: [SPNIT, RTAD], masks: [NPCM, PSDM, NSDM], phase: feol}
+  - {name: "Pre-metal dielectric, contact silicide and local interconnect", first: 89, last: 106, codes: [PSG, CMPL], masks: [LICM1, LI1M], phase: mol}
+  - {name: "Metal contact and metal 1", first: 107, last: 117, codes: [CTM1, NCAPOX3], masks: [CTM1, MM1], phase: beol}
+  - {name: "Via 1, metal 2 and via 2", first: 118, last: 134, codes: [VIM, WTIAL3], masks: [VIM, MM2, VIM2], phase: beol}
+  - {name: "First MiM capacitor, metal 3 and via 3", first: 135, last: 148, codes: [CAPILD, WCMP5], masks: [CAPM, MM3, VIM3], phase: beol}
+  - {name: "Metal 4, second MiM capacitor, via 4 and metal 5", first: 149, last: 163, codes: [WTIAL4, MM5E], masks: [CAP2M, MM4, VIM4, MM5], phase: beol}
+  - {name: "Passivation, pads, alloy and test", first: 164, last: 171, codes: [NFUSOX, HPETEST], masks: [NSM, PDM], phase: beol}

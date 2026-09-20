@@ -45,7 +45,9 @@ html_title = "SKY130 Process Technology"
 html_static_path = ["_static"]
 templates_path = ["_templates"]
 html_css_files = ["announcement-dismiss.css", "custom.css"]
-html_js_files = ["footnote-popover.js"]
+# footnote-popover: hover card for footnote markers. figure-theme: swaps a figure to its
+# forced light/dark file when the reader uses furo's toggle.
+html_js_files = ["footnote-popover.js", "figure-theme.js"]
 # Shown by the theme at the top of every rendered page.
 announcement = "Warning: AI in use — use at own risk."
 

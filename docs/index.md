@@ -39,6 +39,7 @@ machines/index
 materials/index
 masks/index
 glossary
+figure-conventions
 references/index
 ```
 
