@@ -72,6 +72,25 @@ chunked, resumable runs: ``--only-host HOST`` / ``--skip-host HOST``
 ``--time-budget SECONDS`` (stop dispatching new checks after this long;
 already-cached results are still reported), ``--force`` (ignore
 ``--max-age-days`` and recheck everything).
+
+``--include-generated`` additionally scans the generated reference indexes
+(``docs/references/{patents,papers,filings}/``), which cite sources as
+inline links rather than footnotes (the documented exception in
+``docs/plans/citation-style.md``); Espacenet and Google Patents record-page
+links are sampled 1-in-50 rather than crawled, since a single family can
+carry a pair of them and there are thousands of families -- every other
+host cited there is still checked in full, and ``BLOCKED_HOSTS`` still
+applies.
+
+``--suggest-archive`` prints, for each token classified dead, the
+ready-to-paste archive citation lines (R-WAYBACK / report-C.md C5 step 3)
+and the files that repeat its URL -- a suggestion only: this tool never
+rewrites a page or the inventory, and never gives a DOI an archive form.
+
+A "dead" token's Wayback answer is never trusted negative for more than a
+day (independent of ``--max-age-days``, which governs the surrounding HTTP
+check): a stale negative lookup is quietly redone on the next run even
+when the HTTP result itself is still considered fresh.
 """
 
 from __future__ import annotations
@@ -79,6 +98,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import datetime as dt
+import hashlib
 import json
 import re
 import sys
@@ -95,6 +115,36 @@ DOCS = ROOT / "docs"
 INVENTORY = DOCS / "references" / "public-sources.md"
 DEFAULT_CACHE = ROOT / "tmp" / "link-check-cache.json"
 USER_AGENT = "sky130-process-tech docs checker"
+
+# report-C.md C5 step 1: the availability API's timestamp when a citation
+# carries no accessed/retrieved date of its own -- the inventory's own
+# check date.
+DEFAULT_WAYBACK_TIMESTAMP = "20260830"
+
+# C5: "never cache a negative archive answer for more than a day" -- this
+# is independent of --max-age-days, which governs the surrounding HTTP
+# check.  A "dead" token whose last Wayback lookup came back negative (or
+# was never done) more than this many days ago gets that lookup redone
+# even when the HTTP result itself is still considered fresh.
+WAYBACK_NEGATIVE_MAX_AGE_DAYS = 1
+
+# --include-generated: directories of gen_*.py output scanned in addition
+# to the hand-written pages (citation-style.md's documented exception --
+# these pages link inline, not via footnotes).
+GENERATED_DIRS = ("patents", "papers", "filings")
+
+# Hosts cited so many times on generated pages (thousands of Espacenet /
+# Google Patents record-page links per family) that checking every one
+# would hammer those hosts; --include-generated samples them instead of
+# crawling them, per report-C.md C5 and the coordinator's note on that
+# open question.
+SAMPLED_GENERATED_HOSTS = {"patents.google.com", "espacenet.com"}
+SAMPLE_RATE = 50  # 1 in N
+
+# "the citation's accessed/retrieved date" -- ordinary house-style wording
+# ("accessed 2026-08-30." / "..., retrieved 2026-09-14.") found in the
+# same footnote-definition or inventory-entry block as its URL(s).
+ACCESS_DATE_RE = re.compile(r"\b(?:accessed|retrieved)\s+(\d{4})-(\d{2})-(\d{2})\b", re.IGNORECASE)
 
 KEY_RE = re.compile(r"^\*\*([A-Za-z0-9][A-Za-z0-9_-]*)\*\*", re.MULTILINE)
 FOOTNOTE_DEF_RE = re.compile(
@@ -217,30 +267,49 @@ def extract_urls_and_dois(text: str) -> tuple[set[str], set[str]]:
     return urls, dois
 
 
-def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str]]]:
-    """Return ``{KEY: (urls, dois)}`` for every ``**KEY**`` entry."""
-    entries: dict[str, tuple[set[str], set[str]]] = {}
+def extract_access_date(text: str) -> str | None:
+    """Return the block's ``accessed``/``retrieved YYYY-MM-DD`` date, compact.
+
+    Used as the availability API's timestamp (C5 step 1); ``None`` if the
+    block names no such date, in which case the caller falls back to
+    ``DEFAULT_WAYBACK_TIMESTAMP``.
+    """
+    m = ACCESS_DATE_RE.search(text)
+    if not m:
+        return None
+    return f"{m.group(1)}{m.group(2)}{m.group(3)}"
+
+
+def parse_inventory(text: str) -> dict[str, tuple[set[str], set[str], str | None]]:
+    """Return ``{KEY: (urls, dois, access_date)}`` for every ``**KEY**`` entry."""
+    entries: dict[str, tuple[set[str], set[str], str | None]] = {}
     matches = list(KEY_RE.finditer(text))
     for i, m in enumerate(matches):
         key = m.group(1)
         start = m.end()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-        urls, dois = extract_urls_and_dois(text[start:end])
-        eurls, edois = entries.setdefault(key, (set(), set()))
+        block = text[start:end]
+        urls, dois = extract_urls_and_dois(block)
+        date = extract_access_date(block)
+        eurls, edois, _ = entries.get(key, (set(), set(), None))
         eurls.update(urls)
         edois.update(dois)
+        entries[key] = (eurls, edois, date)
     return entries
 
 
-def parse_page_footnotes(text: str) -> dict[str, tuple[set[str], set[str]]]:
-    """Return ``{label: (urls, dois)}`` for every footnote definition."""
-    result: dict[str, tuple[set[str], set[str]]] = {}
+def parse_page_footnotes(text: str) -> dict[str, tuple[set[str], set[str], str | None]]:
+    """Return ``{label: (urls, dois, access_date)}`` for every footnote def."""
+    result: dict[str, tuple[set[str], set[str], str | None]] = {}
     for m in FOOTNOTE_DEF_RE.finditer(text):
         label = m.group(1)
-        urls, dois = extract_urls_and_dois(m.group(2))
-        rurls, rdois = result.setdefault(label, (set(), set()))
+        block = m.group(2)
+        urls, dois = extract_urls_and_dois(block)
+        date = extract_access_date(block)
+        rurls, rdois, _ = result.get(label, (set(), set(), None))
         rurls.update(urls)
         rdois.update(dois)
+        result[label] = (rurls, rdois, date)
     return result
 
 
@@ -257,32 +326,99 @@ class Registry:
     def __init__(self) -> None:
         self.inventory_keys: dict[str, set[str]] = defaultdict(set)
         self.pages: dict[str, dict[str, set[str]]] = defaultdict(lambda: defaultdict(set))
+        # token -> the first accessed/retrieved date (compact YYYYMMDD)
+        # found citing it; feeds the Wayback availability timestamp (C5).
+        self.access_dates: dict[str, str] = {}
 
-    def add_inventory(self, key: str, urls: set[str], dois: set[str]) -> None:
+    def _note_dates(self, urls: set[str], dois: set[str], access_date: str | None) -> None:
+        if not access_date:
+            return
+        for u in urls:
+            self.access_dates.setdefault(u, access_date)
+        for d in dois:
+            self.access_dates.setdefault(token_for(doi=d), access_date)
+
+    def add_inventory(
+        self, key: str, urls: set[str], dois: set[str], access_date: str | None = None
+    ) -> None:
         for u in urls:
             self.inventory_keys[u].add(key)
         for d in dois:
             self.inventory_keys[token_for(doi=d)].add(key)
+        self._note_dates(urls, dois, access_date)
 
-    def add_page(self, page: str, label: str, urls: set[str], dois: set[str]) -> None:
+    def add_page(
+        self,
+        page: str,
+        label: str,
+        urls: set[str],
+        dois: set[str],
+        access_date: str | None = None,
+    ) -> None:
         for u in urls:
             self.pages[u][page].add(label)
         for d in dois:
             self.pages[token_for(doi=d)][page].add(label)
+        self._note_dates(urls, dois, access_date)
 
     def tokens(self) -> set[str]:
         return set(self.inventory_keys) | set(self.pages)
 
 
-def build_registry(docs_dir: Path = DOCS, inventory: Path = INVENTORY) -> Registry:
+def _sample_keep(token: str, rate: int = SAMPLE_RATE) -> bool:
+    """Deterministic 1-in-``rate`` sample (stable across runs, for the cache)."""
+    digest = hashlib.sha256(token.encode("utf-8")).hexdigest()
+    return int(digest, 16) % rate == 0
+
+
+def _scan_generated(reg: Registry, docs_dir: Path) -> None:
+    """Add inline links from the generated reference indexes (--include-generated).
+
+    These pages cite sources as plain inline links, not footnotes
+    (``docs/plans/citation-style.md``, "Exception: generated index
+    pages"), so they are scanned as a whole rather than split into
+    definition blocks.  Espacenet and Google Patents record-page links
+    are sampled 1-in-``SAMPLE_RATE`` rather than crawled (thousands of
+    them, one pair per patent family); every other host cited here is
+    checked in full, same as a hand-written page's footnotes; hosts
+    already in ``BLOCKED_HOSTS`` are still classified blocked-to-scripts
+    as usual, not specially excluded.
+    """
+    for sub in GENERATED_DIRS:
+        d = docs_dir / "references" / sub
+        if not d.exists():
+            continue
+        for path in sorted(d.rglob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            urls, dois = extract_urls_and_dois(text)
+            kept_urls = set()
+            for u in urls:
+                host = host_of(u)
+                if any(host_matches(host, s) for s in SAMPLED_GENERATED_HOSTS):
+                    if _sample_keep(u):
+                        kept_urls.add(u)
+                else:
+                    kept_urls.add(u)
+            reg.add_page(str(path.relative_to(ROOT)), "(generated)", kept_urls, dois)
+
+
+def build_registry(
+    docs_dir: Path = DOCS, inventory: Path = INVENTORY, include_generated: bool = False
+) -> Registry:
     reg = Registry()
     if inventory.exists():
-        for key, (urls, dois) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
-            reg.add_inventory(key, urls, dois)
+        for key, (urls, dois, date) in parse_inventory(inventory.read_text(encoding="utf-8")).items():
+            reg.add_inventory(key, urls, dois, date)
     for path in sorted(docs_dir.rglob("*.md")):
+        if include_generated:
+            rel_parts = path.relative_to(docs_dir).parts
+            if len(rel_parts) >= 2 and rel_parts[0] == "references" and rel_parts[1] in GENERATED_DIRS:
+                continue  # scanned whole-file by _scan_generated instead
         text = path.read_text(encoding="utf-8")
-        for label, (urls, dois) in parse_page_footnotes(text).items():
-            reg.add_page(str(path.relative_to(ROOT)), label, urls, dois)
+        for label, (urls, dois, date) in parse_page_footnotes(text).items():
+            reg.add_page(str(path.relative_to(ROOT)), label, urls, dois, date)
+    if include_generated:
+        _scan_generated(reg, docs_dir)
     return reg
 
 
@@ -430,7 +566,7 @@ def classify(
     return "dead"
 
 
-def check_one(token: str, limiter: RateLimiter, timeout: float) -> dict:
+def check_one(token: str, limiter: RateLimiter, timeout: float, access_date: str | None = None) -> dict:
     is_doi = token.startswith("doi:")
     url = f"https://doi.org/{urllib.parse.quote(token[4:], safe='/:')}" if is_doi else token
 
@@ -459,31 +595,180 @@ def check_one(token: str, limiter: RateLimiter, timeout: float) -> dict:
         "category": category,
         "checked": dt.datetime.now(dt.timezone.utc).isoformat(),
     }
+    # A dead DOI is still looked up (the report keeps saying whether a
+    # snapshot exists, as before), but --suggest-archive never turns that
+    # into a citation: a DOI is never replaced by an archive URL (C5 step
+    # 5, rule 11) -- a dead DOI keeps the DOI and a dated note by hand.
     if category == "dead":
-        result["wayback"] = wayback_lookup(url, limiter, timeout)
+        result["wayback"] = wayback_lookup(url, limiter, timeout, access_date=access_date)
+        result["wayback_checked"] = dt.datetime.now(dt.timezone.utc).isoformat()
     return result
 
 
-def wayback_lookup(url: str, limiter: RateLimiter, timeout: float) -> dict | None:
-    api = "https://archive.org/wayback/available?url=" + urllib.parse.quote(url, safe="")
+def _swap_scheme(url: str) -> str:
+    if url.startswith("https://"):
+        return "http://" + url[len("https://") :]
+    if url.startswith("http://"):
+        return "https://" + url[len("http://") :]
+    return url
+
+
+def _toggle_www(url: str) -> str:
+    parts = urllib.parse.urlsplit(url)
+    host = parts.netloc
+    new_host = host[4:] if host.lower().startswith("www.") else "www." + host
+    return urllib.parse.urlunsplit((parts.scheme, new_host, parts.path, parts.query, parts.fragment))
+
+
+def _accept_snapshot(data: dict | None) -> dict | None:
+    """Return the ``closest`` snapshot dict iff it is a positive, well-formed hit.
+
+    C5 step 1: accept only ``available: true`` and ``status: "200"``.
+    """
+    if not isinstance(data, dict):
+        return None
+    snaps = data.get("archived_snapshots")
+    if not isinstance(snaps, dict):
+        return None
+    closest = snaps.get("closest")
+    if not isinstance(closest, dict):
+        return None
+    if closest.get("available") is True and str(closest.get("status")) == "200":
+        return closest
+    return None
+
+
+def _availability_json(url: str, timestamp: str, limiter: RateLimiter, timeout: float) -> dict | None:
+    """Real network call to the Wayback availability API. Returns the parsed
+    JSON body (which may legitimately be ``{}`` -- see ``wayback_lookup``),
+    or ``None`` if the HTTP request itself failed."""
+    api = (
+        "https://archive.org/wayback/available?url="
+        + urllib.parse.quote(url, safe="")
+        + "&timestamp="
+        + timestamp
+    )
     status, _final, _chain, _err, body = fetch_with_retries(
         api, "GET", limiter, timeout, retries=2, read_body=True
     )
     if status != 200 or not body:
         return None
     try:
-        data = json.loads(body.decode("utf-8", "replace"))
+        return json.loads(body.decode("utf-8", "replace"))
     except ValueError:
         return None
-    snap = (data.get("archived_snapshots") or {}).get("closest")
-    if not snap:
-        return {"available": False}
+
+
+def _cdx_lookup(url: str, limiter: RateLimiter, timeout: float) -> dict | None:
+    """Real network call to the CDX API; returns an already-formatted
+    snapshot result (matching wayback_lookup's return shape), or ``None``."""
+    api = (
+        "https://web.archive.org/cdx/search/cdx?url="
+        + urllib.parse.quote(url, safe="")
+        + "&output=json&filter=statuscode:200&limit=-3&fl=timestamp,original"
+    )
+    status, _final, _chain, _err, body = fetch_with_retries(
+        api, "GET", limiter, timeout, retries=2, read_body=True
+    )
+    if status != 200 or not body:
+        return None
+    try:
+        rows = json.loads(body.decode("utf-8", "replace"))
+    except ValueError:
+        return None
+    if not isinstance(rows, list) or len(rows) < 2:
+        return None
+    timestamp, original = rows[-1][0], rows[-1][1]  # most recent 200 capture
     return {
-        "available": bool(snap.get("available")),
-        "url": snap.get("url"),
-        "timestamp": snap.get("timestamp"),
-        "status": snap.get("status"),
+        "available": True,
+        "url": f"https://web.archive.org/web/{timestamp}/{original}",
+        "timestamp": timestamp,
+        "status": "200",
     }
+
+
+def wayback_lookup(
+    url: str,
+    limiter: RateLimiter,
+    timeout: float,
+    access_date: str | None = None,
+    query_availability=_availability_json,
+    query_cdx=_cdx_lookup,
+    sleep=time.sleep,
+) -> dict:
+    """C5 step 1, fixed.
+
+    Query the availability API with the citation's own accessed/retrieved
+    date as the timestamp (else ``DEFAULT_WAYBACK_TIMESTAMP``). Accept only
+    ``available: true`` and ``status: "200"``. The API intermittently
+    answers a bare, structurally empty ``{}`` under load rather than its
+    normal "nothing archived" shape (``{"url": ..., "archived_snapshots":
+    {}, "timestamp": ...}``) -- report-C.md's C5 finding, confirmed by this
+    tool's earlier behaviour of caching that glitch as a permanent "no
+    snapshot". On that exact ``{}``, retry once after 10 s. If there is
+    still no accepted snapshot (whether from the glitch or a genuine miss),
+    fall through, in order and without looping, to: the other URL scheme,
+    then the URL with/without a leading ``www.``, then the CDX API. At most
+    five network calls total.
+    """
+    timestamp = access_date or DEFAULT_WAYBACK_TIMESTAMP
+
+    def result_from(snap: dict) -> dict:
+        return {
+            "available": True,
+            "url": snap.get("url"),
+            "timestamp": snap.get("timestamp"),
+            "status": snap.get("status"),
+        }
+
+    data = query_availability(url, timestamp, limiter, timeout)
+    snap = _accept_snapshot(data)
+    if snap:
+        return result_from(snap)
+
+    if data == {}:
+        sleep(10)
+        data = query_availability(url, timestamp, limiter, timeout)
+        snap = _accept_snapshot(data)
+        if snap:
+            return result_from(snap)
+
+    data = query_availability(_swap_scheme(url), timestamp, limiter, timeout)
+    snap = _accept_snapshot(data)
+    if snap:
+        return result_from(snap)
+
+    data = query_availability(_toggle_www(url), timestamp, limiter, timeout)
+    snap = _accept_snapshot(data)
+    if snap:
+        return result_from(snap)
+
+    cdx = query_cdx(url, limiter, timeout)
+    if cdx:
+        return cdx
+
+    return {"available": False}
+
+
+def wayback_is_stale_negative(entry: dict, max_age_days: int = WAYBACK_NEGATIVE_MAX_AGE_DAYS) -> bool:
+    """True if a "dead" entry's cached Wayback answer is a negative one
+    older than ``max_age_days`` -- C5: "never cache a negative archive
+    answer for more than a day", independent of --max-age-days on the
+    surrounding HTTP check."""
+    wb = entry.get("wayback")
+    if wb is None or wb.get("available"):
+        return False
+    checked = entry.get("wayback_checked") or entry.get("checked")
+    if not checked:
+        return True
+    try:
+        when = dt.datetime.fromisoformat(checked)
+    except ValueError:
+        return True
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=dt.timezone.utc)
+    age = dt.datetime.now(dt.timezone.utc) - when
+    return age >= dt.timedelta(days=max_age_days)
 
 
 # --------------------------------------------------------------------------
@@ -538,16 +823,24 @@ def run_checks(
     time_budget: float | None,
     only_hosts: set[str] | None,
     skip_hosts: set[str] | None,
+    access_dates: dict[str, str] | None = None,
 ) -> None:
+    access_dates = access_dates or {}
+
     def token_host(t: str) -> str:
         return "doi.org" if t.startswith("doi:") else host_of(t)
 
-    pending = []
-    for t in sorted(tokens):
+    def host_filtered_out(t: str) -> bool:
         h = token_host(t)
         if only_hosts and not any(host_matches(h, o) for o in only_hosts):
-            continue
+            return True
         if skip_hosts and any(host_matches(h, s) for s in skip_hosts):
+            return True
+        return False
+
+    pending = []
+    for t in sorted(tokens):
+        if host_filtered_out(t):
             continue
         if not force and t in cache and is_fresh(cache[t], max_age_days):
             continue
@@ -566,7 +859,7 @@ def run_checks(
             if stop.is_set() or (deadline and time.monotonic() > deadline):
                 return
             try:
-                result = check_one(t, limiter, timeout)
+                result = check_one(t, limiter, timeout, access_date=access_dates.get(t))
             except Exception as e:  # noqa: BLE001
                 result = {
                     "url": t,
@@ -582,18 +875,41 @@ def run_checks(
                 save_cache(cache_path, cache)
                 print(f"{result['category']:>20}  {result.get('status', 0):>3}  {t}", file=sys.stderr)
 
-    if not pending:
+    if pending:
+        print(f"checking {len(pending)} tokens across {len(groups)} hosts (workers={workers})", file=sys.stderr)
+        try:
+            with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+                futs = [ex.submit(worker, toks) for toks in groups.values()]
+                concurrent.futures.wait(futs)
+        except KeyboardInterrupt:
+            stop.set()
+            raise
+    else:
         print("nothing to check (all fresh or filtered out)", file=sys.stderr)
-        return
 
-    print(f"checking {len(pending)} tokens across {len(groups)} hosts (workers={workers})", file=sys.stderr)
-    try:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
-            futs = [ex.submit(worker, toks) for toks in groups.values()]
-            concurrent.futures.wait(futs)
-    except KeyboardInterrupt:
-        stop.set()
-        raise
+    # C5: "never cache a negative archive answer for more than a day",
+    # independent of --max-age-days above. A "dead" token that was not
+    # rechecked in full just now, but whose last Wayback lookup was
+    # negative and is stale, gets just that lookup redone (no re-fetch of
+    # the original, still-dead URL).
+    refresh = [
+        t
+        for t in sorted(tokens)
+        if t not in pending
+        and not host_filtered_out(t)
+        and t in cache
+        and cache[t].get("category") == "dead"
+        and wayback_is_stale_negative(cache[t])
+    ]
+    if refresh:
+        print(f"refreshing {len(refresh)} stale negative Wayback lookups", file=sys.stderr)
+        for t in refresh:
+            entry = cache[t]
+            entry["wayback"] = wayback_lookup(entry["url"], limiter, timeout, access_date=access_dates.get(t))
+            entry["wayback_checked"] = dt.datetime.now(dt.timezone.utc).isoformat()
+            cache[t] = entry
+            save_cache(cache_path, cache)
+            print(f"    wayback  {'found' if entry['wayback'].get('available') else 'none'}  {t}", file=sys.stderr)
 
 
 # --------------------------------------------------------------------------
@@ -674,6 +990,62 @@ def render_report(reg: Registry, cache: dict, tokens: set[str]) -> str:
     return "\n".join(lines)
 
 
+def _files_citing(reg: Registry, token: str) -> list[str]:
+    files = sorted(reg.pages.get(token, {}))
+    if token in reg.inventory_keys:
+        files = [str(INVENTORY.relative_to(ROOT))] + files
+    return files
+
+
+def render_suggestions(reg: Registry, cache: dict, tokens: set[str]) -> str:
+    """``--suggest-archive``: for each dead token, the ready-to-paste C5
+    step-3 citation lines and the files that repeat its URL. Never rewrites
+    a file -- printing only; step 2 (verifying the snapshot) is a judgement
+    call for a person, not this tool, and DOIs are never given an archive
+    form (C5 step 5)."""
+    lines = ["## Suggested archive citations (--suggest-archive)", ""]
+    dead = sorted(t for t in tokens if cache.get(t, {}).get("category") == "dead")
+    if not dead:
+        lines.append("No dead tokens.")
+        lines.append("")
+        return "\n".join(lines)
+
+    for t in dead:
+        entry = cache[t]
+        files = _files_citing(reg, t)
+        lines.append(f"### `{t}`")
+        lines.append("")
+        lines.append(f"Cited by: {', '.join(files) if files else '(unreferenced)'}")
+        lines.append("")
+        if t.startswith("doi:"):
+            lines.append(
+                "DOI -- never replace with an archive URL (C5 step 5). Keep the DOI plus a "
+                "dated note (rule 11 of `docs/plans/agent-briefs.md`)."
+            )
+            lines.append("")
+            continue
+        wb = entry.get("wayback") or {}
+        if not wb.get("available"):
+            lines.append("No snapshot found (also try `archive.ph/newest/<url>` by hand). Apply rule 11 of "
+                         "`docs/plans/agent-briefs.md` unchanged.")
+            lines.append("")
+            continue
+        dead_since = entry.get("checked", "")[:10]
+        ts = wb.get("timestamp") or ""
+        capture_date = f"{ts[0:4]}-{ts[4:6]}-{ts[6:8]}" if len(ts) >= 8 else "unknown-date"
+        archive_url = (wb.get("url") or "").replace("http://web.archive.org", "https://web.archive.org", 1)
+        lines.append("Verify the snapshot (C5 step 2) before pasting -- fetch the `id_` form once and confirm "
+                      "the title, or a string the pages quote, is present.")
+        lines.append("")
+        lines.append("```markdown")
+        lines.append(f"    <{archive_url}>")
+        lines.append(f"    (Wayback Machine capture of {capture_date}; original, dead since {dead_since}:")
+        lines.append(f"    `{t}`).")
+        lines.append("```")
+        lines.append("")
+    return "\n".join(lines)
+
+
 # --------------------------------------------------------------------------
 # Self-test
 # --------------------------------------------------------------------------
@@ -702,11 +1074,41 @@ Tier: deep dive.
     check("PDK-01 present", "PDK-01" in entries)
     check(
         "PDK-01 url",
-        entries.get("PDK-01", (set(), set()))[0] == {"https://skywater-pdk.readthedocs.io/"},
+        entries.get("PDK-01", (set(), set(), None))[0] == {"https://skywater-pdk.readthedocs.io/"},
     )
-    urls2, dois2 = entries.get("PDK-02", (set(), set()))
+    urls2, dois2, _date2 = entries.get("PDK-02", (set(), set(), None))
     check("PDK-02 dedups doi.org URL and bare DOI", dois2 == {"10.1109/proc.1972.8854"})
     check("PDK-02 other url kept", urls2 == {"https://example.org/mirror"})
+
+    access_text = """
+**ACC-01** — *Some page*, accessed 2026-08-30.
+<https://example.org/a>.
+Tier: cross-check.
+
+**ACC-02** — *Some other page*, retrieved 2026-04-11.
+<https://example.org/b>.
+Tier: cross-check.
+
+**ACC-03** — *No date given*.
+<https://example.org/c>.
+Tier: cross-check.
+"""
+    check("accessed date extracted compact", extract_access_date("accessed 2026-08-30.") == "20260830")
+    check("retrieved date extracted compact", extract_access_date("retrieved 2026-04-11.") == "20260411")
+    check("no date found is None", extract_access_date("no date here.") is None)
+    acc_entries = parse_inventory(access_text)
+    check("ACC-01 access date", acc_entries["ACC-01"][2] == "20260830")
+    check("ACC-02 access date", acc_entries["ACC-02"][2] == "20260411")
+    check("ACC-03 has no access date", acc_entries["ACC-03"][2] is None)
+    acc_reg = Registry()
+    for key, (urls, dois, date) in acc_entries.items():
+        acc_reg.add_inventory(key, urls, dois, date)
+    check(
+        "registry records the access date per token (feeds the Wayback timestamp)",
+        acc_reg.access_dates.get("https://example.org/a") == "20260830"
+        and acc_reg.access_dates.get("https://example.org/b") == "20260411"
+        and "https://example.org/c" not in acc_reg.access_dates,
+    )
 
     paren_text = "See <https://doi.org/10.1016/0022-0248(82)90456-2> and " "<https://en.wikipedia.org/wiki/Wafer_(electronics)>."
     urls3, dois3 = extract_urls_and_dois(paren_text)
@@ -800,6 +1202,133 @@ Some claim.[^wiki-fick][^pdk-01]
         classify("https://a/", False, 0, "https://a/", [], "timed out") == "dead",
     )
 
+    # -- wayback_lookup() fallback chain (C5 step 1), all offline: canned
+    # query functions stand in for the two network calls it makes, and
+    # `sleep` is captured rather than actually waited on.
+
+    def fake_limiter() -> RateLimiter:
+        return RateLimiter(0.0, {})
+
+    check("swap scheme https->http", _swap_scheme("https://a.example/x") == "http://a.example/x")
+    check("swap scheme http->https", _swap_scheme("http://a.example/x") == "https://a.example/x")
+    check("toggle www adds it", _toggle_www("https://a.example/x") == "https://www.a.example/x")
+    check("toggle www removes it", _toggle_www("https://www.a.example/x") == "https://a.example/x")
+
+    good_snapshot = {
+        "archived_snapshots": {"closest": {"available": True, "status": "200", "url": "https://web.archive.org/web/20260411000000/https://a.example/x", "timestamp": "20260411000000"}}
+    }
+    not_found = {"url": "https://a.example/x", "archived_snapshots": {}, "timestamp": "20260830"}
+    unavailable = {
+        "archived_snapshots": {"closest": {"available": False, "status": "404", "url": "x", "timestamp": "20260101"}}
+    }
+
+    # 1. First query already succeeds -- no fallback calls made at all.
+    calls = []
+
+    def q_first_ok(url, ts, limiter, timeout):
+        calls.append(url)
+        return good_snapshot
+
+    def cdx_should_not_be_called(url, limiter, timeout):
+        failures.append("cdx called when the first query already succeeded")
+        return None
+
+    r = wayback_lookup(
+        "https://a.example/x", fake_limiter(), 5.0, query_availability=q_first_ok, query_cdx=cdx_should_not_be_called, sleep=lambda s: None
+    )
+    check("first-query success is accepted", r == {"available": True, "url": good_snapshot["archived_snapshots"]["closest"]["url"], "timestamp": "20260411000000", "status": "200"})
+    check("first-query success makes exactly one call", calls == ["https://a.example/x"])
+
+    # 2. Empty `{}` on the first call -> retry once after a (mocked) sleep,
+    #    which then succeeds; no scheme/www/CDX fallback needed.
+    calls = []
+    sleeps = []
+
+    def q_empty_then_ok(url, ts, limiter, timeout):
+        calls.append(url)
+        return {} if len(calls) == 1 else good_snapshot
+
+    r = wayback_lookup(
+        "https://a.example/x",
+        fake_limiter(),
+        5.0,
+        query_availability=q_empty_then_ok,
+        query_cdx=cdx_should_not_be_called,
+        sleep=lambda s: sleeps.append(s),
+    )
+    check("retries once after a bare {} answer", calls == ["https://a.example/x", "https://a.example/x"])
+    check("sleeps 10s before the retry", sleeps == [10])
+    check("retry success is accepted", r["available"] is True)
+
+    # 3. Never finds anything positive -> falls through scheme, www, then
+    #    CDX, in that order, and stops as soon as one accepts; never loops
+    #    (bounded at exactly the calls below).
+    calls = []
+
+    def q_track_variants(url, ts, limiter, timeout):
+        calls.append(url)
+        return not_found  # well-formed "nothing archived", every time
+
+    def cdx_hit(url, limiter, timeout):
+        return {"available": True, "url": f"https://web.archive.org/web/20250101000000/{url}", "timestamp": "20250101000000", "status": "200"}
+
+    r = wayback_lookup(
+        "https://a.example/x", fake_limiter(), 5.0, query_availability=q_track_variants, query_cdx=cdx_hit, sleep=lambda s: None
+    )
+    check(
+        "tries original, other scheme, then www-toggle before CDX (bounded, no retry loop on a well-formed miss)",
+        calls == ["https://a.example/x", "http://a.example/x", "https://www.a.example/x"],
+    )
+    check("CDX fallback result is used when nothing else accepts", r["available"] is True and r["timestamp"] == "20250101000000")
+
+    # 4. Nothing anywhere, CDX included -> a clean negative, not a crash or
+    #    an infinite loop.
+    r = wayback_lookup(
+        "https://a.example/x",
+        fake_limiter(),
+        5.0,
+        query_availability=lambda *a: unavailable,
+        query_cdx=lambda *a: None,
+        sleep=lambda s: None,
+    )
+    check("no snapshot anywhere is a clean negative", r == {"available": False})
+
+    # 5. The citation's own accessed/retrieved date is used as the
+    #    timestamp; falls back to DEFAULT_WAYBACK_TIMESTAMP otherwise.
+    seen_ts = []
+
+    def q_record_ts(url, ts, limiter, timeout):
+        seen_ts.append(ts)
+        return good_snapshot
+
+    wayback_lookup("https://a.example/x", fake_limiter(), 5.0, access_date="20260411", query_availability=q_record_ts, sleep=lambda s: None)
+    wayback_lookup("https://a.example/x", fake_limiter(), 5.0, access_date=None, query_availability=q_record_ts, sleep=lambda s: None)
+    check("uses the citation's own access date as the timestamp", seen_ts[0] == "20260411")
+    check("falls back to the inventory's check date", seen_ts[1] == DEFAULT_WAYBACK_TIMESTAMP)
+
+    # -- stale-negative cache rule: never trust a negative Wayback answer
+    # for more than a day, independent of --max-age-days.
+    now = dt.datetime.now(dt.timezone.utc)
+    fresh_negative = {"wayback": {"available": False}, "wayback_checked": now.isoformat()}
+    stale_negative = {
+        "wayback": {"available": False},
+        "wayback_checked": (now - dt.timedelta(days=2)).isoformat(),
+    }
+    positive = {"wayback": {"available": True}, "wayback_checked": (now - dt.timedelta(days=30)).isoformat()}
+    check("a same-day negative is not stale", wayback_is_stale_negative(fresh_negative) is False)
+    check("a two-day-old negative is stale", wayback_is_stale_negative(stale_negative) is True)
+    check("a positive answer is never 'stale negative', however old", wayback_is_stale_negative(positive) is False)
+
+    # -- deterministic sampling for --include-generated (same subset every
+    # run, so the cache stays useful; never every token, never zero).
+    sample_tokens = [f"https://patents.google.com/patent/US{n}A/en" for n in range(2000)]
+    kept = [t for t in sample_tokens if _sample_keep(t)]
+    check("sampling keeps roughly 1-in-N, not all or none", 0 < len(kept) < len(sample_tokens))
+    check(
+        "sampling is deterministic across calls (stable cache)",
+        kept == [t for t in sample_tokens if _sample_keep(t)],
+    )
+
     if failures:
         print("SELFTEST FAILED:")
         for f in failures:
@@ -843,6 +1372,19 @@ def main() -> int:
         "(no network access) -- use after a classify() logic change, then rerun "
         "normally to fill in anything newly dead (e.g. a missing wayback lookup)",
     )
+    ap.add_argument(
+        "--include-generated",
+        action="store_true",
+        help="also scan docs/references/{patents,papers,filings}/ (inline links, "
+        "citation-style.md's documented exception); Espacenet and Google Patents "
+        f"record-page links are sampled 1-in-{SAMPLE_RATE} rather than crawled",
+    )
+    ap.add_argument(
+        "--suggest-archive",
+        action="store_true",
+        help="print, for each dead token, the ready-to-paste C5 step-3 citation "
+        "lines and the files citing it (does not write any file)",
+    )
     args = ap.parse_args()
 
     if args.selftest:
@@ -862,7 +1404,7 @@ def main() -> int:
         print(f"reclassified {len(cache)} entries, {changed} changed", file=sys.stderr)
         return 0
 
-    reg = build_registry()
+    reg = build_registry(include_generated=args.include_generated)
     tokens = reg.tokens()
 
     slow_hosts = dict(SLOW_HOSTS)
@@ -900,9 +1442,12 @@ def main() -> int:
         args.time_budget,
         set(args.only_host) or None,
         set(args.skip_host) or None,
+        access_dates=reg.access_dates,
     )
 
     report = render_report(reg, cache, tokens)
+    if args.suggest_archive:
+        report = report.rstrip("\n") + "\n\n" + render_suggestions(reg, cache, tokens)
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(report, encoding="utf-8")
