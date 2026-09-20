@@ -23,26 +23,38 @@ and that label resolves to a file outside ``docs/references/`` and
 themselves is out of scope for this direction; those pages already link
 back to process pages on their own).
 
-Block content, per dataset, heading-less (bold inline lead-ins only):
+Block content: one H3 heading (``heading_for()`` — step-specific wording
+on step pages, ``### Related patents, papers and filings`` elsewhere),
+then per dataset a bold inline lead-in (report-A F13, report-B B11 —
+the block used to be an orphan bold line with no heading and no TOC
+entry):
 
-* **Related patents.** Expired families listed as ``{ref}`` links
-  (number, title, year). Families still in force or of unknown status
-  go inside one collapsed ``{dropdown}`` whose title names only the
-  count, plus a one-sentence estimate/not-legal-advice caveat.
-* **Related papers.** ``{ref}`` links, reusing ``gen_papers.line()``.
+* **Related patents.** Expired families listed as ``{ref}`` links whose
+  text is the title, followed by the publication number and year
+  (``{ref}`Title <patent-…>` — US 5,830,375 A (1996)``; number-first as
+  a fallback for the one title that itself contains a literal
+  ``<...>``). Families still in force or of unknown status go inside one
+  collapsed ``{dropdown}`` whose title names only the count, plus a
+  one-sentence estimate/not-legal-advice caveat.
+* **Related papers.** ``{ref}`` links, reusing ``gen_papers.line()``
+  (already title-first: a bare ``{ref}`` to a paper's own label resolves
+  to its "### Title" heading).
 * **Related filings.** ``{ref}`` links, reusing ``gen_filings.short_line()``.
 
-A page with more than ``THRESHOLD`` entries in one category shows the
-count and a link to that dataset's grouped page instead of listing them
-(the "in force is hidden" rule is then trivially satisfied: no numbers
-are shown on the process page at all).
+A page with more than ``THRESHOLD`` entries in one category shows a
+count sentence, then, as its own line, a sentence linking to that
+dataset's grouped page, instead of listing them (the "in force is
+hidden" rule is then trivially satisfied: no numbers are shown on the
+process page at all).
 
 The block is inserted immediately before the page's ``## References``
-heading, which every target page has exactly once. ``--check`` fails if
-any page's block is missing, stale or was hand-edited (i.e. differs from
-what this script would write). ``--selftest`` exercises the block-
-building and text-splicing logic on synthetic data, touching nothing in
-the repository.
+heading, which every target page has exactly once, so the new H3 always
+falls under whatever H2 precedes ``## References`` (on step pages,
+"Related steps and cross-references"). ``--check`` fails if any page's
+block is missing, stale or was hand-edited (i.e. differs from what this
+script would write). ``--selftest`` exercises the block-building and
+text-splicing logic on synthetic data, touching nothing in the
+repository.
 
 Run with ``uv run tools/gen_index_links.py [--check]``.
 """
@@ -174,7 +186,15 @@ def expired_line(fam: dict) -> str:
     label = gen_patents.label_of(fam)
     pn = gen_patents.display_pn(gen_patents.rep_member(fam))
     year = str(fam["dates"]["priority"])[:4]
-    return f"* {{ref}}`{pn} <{label}>` — {gen_patents.esc(fam['title'])} ({year})"
+    title = fam["title"]
+    if "<" in title or ">" in title:
+        # A literal "<...>" in the title (crystal-plane notation, e.g.
+        # "<100>") cannot sit inside a {ref} role's own "<target>"
+        # delimiter, even backslash-escaped: MyST's target regex runs
+        # before escape processing. Fall back to number-first for just
+        # this case rather than break the link.
+        return f"* {{ref}}`{pn} <{label}>` — {gen_patents.esc(title)} ({year})"
+    return f"* {{ref}}`{gen_patents.esc(title)} <{label}>` — {pn} ({year})"
 
 
 def render_patents(fams: list[dict]) -> list[str]:
@@ -183,8 +203,10 @@ def render_patents(fams: list[dict]) -> list[str]:
     if len(fams) > THRESHOLD:
         return [
             f"**Related patents.** {gen_patents.plural(len(fams), 'family')} concern this page "
-            f"({status_breakdown(fams)}); see {{ref}}`patents-by-module` for the full, grouped list "
-            "(families still in force or of unknown status are collapsed there too)."
+            f"({status_breakdown(fams)}).",
+            "",
+            "See {ref}`patents-by-module` for the full, grouped list "
+            "(families still in force or of unknown status are collapsed there too).",
         ]
     expired = [f for f in fams if f["expired"] is True]
     collapsed = [f for f in fams if f["expired"] is not True]
@@ -209,8 +231,9 @@ def render_papers(papers: list[dict]) -> list[str]:
         return []
     if len(papers) > THRESHOLD:
         return [
-            f"**Related papers.** {gen_papers.plural(len(papers))} relate to this page; see "
-            "{ref}`papers-by-module` for the full, grouped list."
+            f"**Related papers.** {gen_papers.plural(len(papers))} relate to this page.",
+            "",
+            "See {ref}`papers-by-module` for the full, grouped list.",
         ]
     lines = ["**Related papers.**", ""]
     for p in papers:
@@ -223,8 +246,9 @@ def render_filings(filings: list[dict]) -> list[str]:
         return []
     if len(filings) > THRESHOLD:
         return [
-            f"**Related filings.** {gen_filings.plural(len(filings), 'filing')} relate to this page; see "
-            "{ref}`filings-by-relationship` for the full, grouped list."
+            f"**Related filings.** {gen_filings.plural(len(filings), 'filing')} relate to this page.",
+            "",
+            "See {ref}`filings-by-relationship` for the full, grouped list.",
         ]
     lines = ["**Related filings.**", ""]
     for f in filings:
@@ -232,12 +256,26 @@ def render_filings(filings: list[dict]) -> list[str]:
     return lines
 
 
-def render_block(data: dict[str, list]) -> str:
+def heading_for(path: Path) -> str:
+    """The H3 heading that introduces the block (report-A F13, report-B
+    B11): step pages get step-specific wording, every other page type
+    gets the generic form. The block always lands under whatever H2
+    precedes "## References" on that page (see apply_block/module
+    docstring) — on step pages that is "Related steps and
+    cross-references" (a mandatory heading), which is where F13 asks
+    for it to fall."""
+    kind = path.relative_to(DOCS).parts[0]
+    if kind == "steps":
+        return "### Patents, papers and filings about this step"
+    return "### Related patents, papers and filings"
+
+
+def render_block(data: dict[str, list], heading: str) -> str:
     parts = [p for p in (render_patents(data["patents"]), render_papers(data["papers"]),
                           render_filings(data["filings"])) if p]
     if not parts:
         return ""
-    lines: list[str] = []
+    lines: list[str] = [heading, ""]
     for i, part in enumerate(parts):
         if i:
             lines.append("")
@@ -303,7 +341,7 @@ def generate() -> dict[Path, str]:
     out: dict[Path, str] = {}
     for path in sorted(candidate_pages(labels, targets)):
         data = targets.get(path, empty)
-        content = render_block(data)
+        content = render_block(data, heading_for(path))
         old_text = path.read_text(encoding="utf-8")
         new_text = apply_block(old_text, content, str(path.relative_to(ROOT)))
         if new_text != old_text:
@@ -429,13 +467,19 @@ def selftest() -> int:
     if removed != "# Title\n\nSome text.\n\n## References\n\n### Cross-check\n":
         problems.append(f"block removal left residue:\n{removed!r}")
 
-    # 3. Threshold: <=12 lists everything, >12 collapses to a count + link.
+    # 3. Threshold: <=12 lists everything, >12 collapses to a count line
+    #    and a separate link line (report-A F13: "split the count-only
+    #    sentence").
     fams13 = [_fam(f"GP{i}", True) for i in range(13)]
     block13 = render_patents(fams13)
     if not any("patents-by-module" in l for l in block13):
         problems.append("13 families did not collapse to a by-module link")
     if any("patent-gp" in l for l in block13):
         problems.append("13-family collapsed block still names a family")
+    count_line = next((i for i, l in enumerate(block13) if "concern this page" in l), None)
+    link_line = next((i for i, l in enumerate(block13) if "patents-by-module" in l), None)
+    if count_line is None or link_line is None or link_line <= count_line or block13[count_line + 1] != "":
+        problems.append(f"count line and link line are not split onto their own lines: {block13!r}")
     fams12 = [_fam(f"GP{i}", True) for i in range(12)]
     block12 = render_patents(fams12)
     if not all(f"patent-gp{i}" in "\n".join(block12) for i in range(12)):
@@ -453,6 +497,28 @@ def selftest() -> int:
     if "not legal advice" not in block:
         problems.append("collapsed dropdown missing the estimate/not-legal-advice sentence")
 
+    # 4b. Expired-family link text is title-first, number after (F13);
+    #     a title containing a literal "<...>" falls back to number-first
+    #     so the {ref} role's own "<target>" delimiter is unambiguous.
+    plain = expired_line(_fam("GP9", True, title="A widget"))
+    if not plain.startswith("* {ref}`A widget <patent-gp9>` — US 10,000,000 B2 ("):
+        problems.append(f"expired_line is not title-first: {plain!r}")
+    angled = expired_line(_fam("GP8", True, title="Has a <100> plane"))
+    if not angled.startswith("* {ref}`US 10,000,000 B2 <patent-gp8>` — "):
+        problems.append(f"expired_line did not fall back for a title with '<...>': {angled!r}")
+
+    # 4c. heading_for(): step-specific wording vs. the generic form, and
+    #     render_block() puts it first, only when there is content.
+    step_h = heading_for(DOCS / "steps" / "001-smat.md")
+    other_h = heading_for(DOCS / "machines" / "index.md")
+    if step_h != "### Patents, papers and filings about this step":
+        problems.append(f"wrong step-page heading: {step_h!r}")
+    if other_h != "### Related patents, papers and filings":
+        problems.append(f"wrong non-step-page heading: {other_h!r}")
+    headed = render_block({"patents": [_fam("GP7", True)], "papers": [], "filings": []}, step_h)
+    if not headed.startswith(step_h + "\n\n"):
+        problems.append(f"render_block did not lead with the heading: {headed!r}")
+
     # 5. Papers and filings render at all, and also collapse over threshold.
     p_block = render_papers([_paper("doi:1", "paper-x-2020a")])
     if not any("paper-x-2020a" in l for l in p_block):
@@ -467,8 +533,8 @@ def selftest() -> int:
     if not any("filings-by-relationship" in l for l in f_over):
         problems.append("13 filings did not collapse to a by-relationship link")
 
-    # 6. Empty input renders nothing.
-    if render_block({"patents": [], "papers": [], "filings": []}) != "":
+    # 6. Empty input renders nothing (not even the heading).
+    if render_block({"patents": [], "papers": [], "filings": []}, other_h) != "":
         problems.append("empty data did not render an empty block")
 
     if problems:

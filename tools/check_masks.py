@@ -29,10 +29,12 @@ For every ``docs/masks/*.md`` page except ``index.md``:
   Protect" for RRPM).
 * **Headings.** The H2 headings are exactly the template's, in order;
   the H3 headings under "Drawn layers and derivation" and "References"
-  are exactly the template's; "Plates and reticle sets" may have only
-  the optional H3s listed in ``OPTIONAL_H3``; no other H2 has H3s. The
-  "Steps that use this mask" heading is preceded by a
-  ``(mask-<stem>-steps)=`` label.
+  are exactly the template's; "Plates and reticle sets" and "Related
+  pages" may have only the optional H3s listed in ``OPTIONAL_H3``; no
+  other H2 has H3s. ("Related pages" is where ``gen_index_links.py``
+  puts its generated "### Related patents, papers and filings"
+  sub-heading — report-A F13, report-B B11.) The "Steps that use this
+  mask" heading is preceded by a ``(mask-<stem>-steps)=`` label.
 * **Quick facts.** The table before the first H2 has the header
   ``| | CODE — name |`` and exactly the rows of ``FACT_ROWS``, in order.
   Footnote references are ignored in every comparison.
@@ -122,7 +124,10 @@ H3 = {
     "Drawn layers and derivation": ["In the PDK", "In the public renders"],
     "References": ["Cross-check", "High-level understanding", "Deep dive"],
 }
-OPTIONAL_H3 = {"Plates and reticle sets": ["The mask-type record"]}
+OPTIONAL_H3 = {
+    "Plates and reticle sets": ["The mask-type record"],
+    "Related pages": ["Related patents, papers and filings"],
+}
 STEPS_H2 = "Steps that use this mask"
 STEPS_INTRO = "Steps:"
 PDK_ROW = "PDK mask (`masks.csv`)"
