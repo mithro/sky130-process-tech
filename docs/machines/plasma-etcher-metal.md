@@ -390,8 +390,8 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * [Edwards (Efabless), *Introduction to the SkyWater PDK*](<https://isn.ucsd.edu/courses/beng207/lectures/Tim_Edwards_2021_slides.pdf>) — the TiN
   local interconnect and the five aluminium metal layers.[^ann-16]
-* Wikipedia, *Reactive-ion etching*.[^wiki-rie]
-* Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>).[^wiki-rie]
+* [Wikipedia, *Plasma etching*](<https://en.wikipedia.org/wiki/Plasma_etching>).[^wiki-plasma-etch]
 * [Wikipedia, *Boron trichloride*](<https://en.wikipedia.org/wiki/Boron_trichloride>) — the oxide-scavenging etch
   gas.[^wiki-bcl3]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — dry

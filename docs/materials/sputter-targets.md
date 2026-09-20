@@ -365,7 +365,7 @@ sputtering recipes are not public.
 * Cypress Semiconductor, QTP 113005, QTP 123907 and PIN145273 — the S8
   metal stacks and the 2014 change from TiW to
   TiN.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-pin145273]
-* SkyWater PDK Authors, `metal_stack.svg` and *Device Details*; Edwards,
+* SkyWater PDK Authors, `metal_stack.svg` and [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>); Edwards,
   PDK lecture — conductor thicknesses, the MiM top plate and the TiN
   local interconnect.[^pdk-04][^pdk-07][^ann-16]
 * Solstice Advanced Materials, [*PVD Sputtering Targets and Coil Sets*](<https://www.solstice.com/content/dam/advancedmaterials/solstice/events/semicon-tw-2026/sputtering-targets.pdf>) and

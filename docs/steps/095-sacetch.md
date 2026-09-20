@@ -215,12 +215,12 @@ fab (SKY130's recipe is not public):
 
 ### High-level understanding
 
-* Wikipedia, *Hydrofluoric acid*, *Buffered oxide etch*, *RCA
-  clean*, *Piranha solution*.[^wiki-hf][^wiki-boe][^wiki-rca][^wiki-piranha]
+* Wikipedia, [*Hydrofluoric acid*](<https://en.wikipedia.org/wiki/Hydrofluoric_acid>), [*Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>), [*RCA
+  clean*](<https://en.wikipedia.org/wiki/RCA_clean>), [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>).[^wiki-hf][^wiki-boe][^wiki-rca][^wiki-piranha]
 * [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer
   cleaning.[^kern-1990]
-* Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
-  Technology*.[^reinhardt-2008]
+* [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning
+  Technology*](<https://openlibrary.org/isbn/9780815515548>).[^reinhardt-2008]
 
 ### Deep dive
 

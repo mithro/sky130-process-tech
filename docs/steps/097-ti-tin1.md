@@ -220,14 +220,14 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 * [SkyWater PDK, *Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — "Standard Licon bottom
   CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm; S/D junction
   0.1 µm.[^pdk-03]
-* Applied Materials, *Endura PVD* product page and 1997 Annual
+* Applied Materials, [*Endura PVD*](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>) product page and 1997 Annual
   Report.[^amat-endura][^amat-1997]
 * [Applied Materials, US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — IMP/sputter alternation.[^pat-imp-amat]
 
 ### High-level understanding
 
-* Wikipedia, *Titanium nitride*, *Sputter deposition*, *Physical
-  vapor deposition*.[^wiki-tin][^wiki-sputter][^wiki-pvd]
+* Wikipedia, [*Titanium nitride*](<https://en.wikipedia.org/wiki/Titanium_nitride>), [*Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>), [*Physical
+  vapor deposition*](<https://en.wikipedia.org/wiki/Physical_vapor_deposition>).[^wiki-tin][^wiki-sputter][^wiki-pvd]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and barrier metals.[^txt-02]
 * [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing

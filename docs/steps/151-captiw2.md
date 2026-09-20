@@ -225,11 +225,11 @@ back end (SKY130's recipe is not public); the sequence is that of
   "Sputter etch, degas"; TiW on the metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — sputter-target suppliers.[^sec-01][^sec-02]
 * [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — Ti:W target composition.[^pat-tiw-hitachi]
-* Applied Materials, *Endura PVD*.[^amat-endura]
+* [Applied Materials, *Endura PVD*](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>).[^amat-endura]
 
 ### High-level understanding
 
-* Wikipedia, *Sputter deposition*, *Capacitor*.[^wiki-sputter][^wiki-capacitor]
+* Wikipedia, [*Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>), [*Capacitor*](<https://en.wikipedia.org/wiki/Capacitor>).[^wiki-sputter][^wiki-capacitor]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and refractory barrier films.[^txt-02]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passive devices

@@ -227,9 +227,9 @@ Status and expiry are estimates from public records and are not legal advice.
 * [SemiStar, GaSonics L3510 description](<http://www.semistarcorp.com/product/gasonics-l3510-asher/>) — platen temperature
   100–300 °C.[^gasonics-l3510]
 * [Allwin21, GaSonics Aura 1000 specification](<https://allwin21.com/gasonics-aura-1000-plasma-asher-2/>) — 150–300 °C.[^gasonics-aura]
-* Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
-  Removal*.[^snf-strip]
-* C2MI, *Akrion GAMA acid bench*.[^akrion-gama]
+* [Stanford Nanofabrication Facility, *Downstream/Remote Plasma Resist
+  Removal*](<https://snfguide.stanford.edu/guide/equipment/purpose/cleaning/resist-removal/dry-resist-removal/downstreamremote-plasma-resist-removal>).[^snf-strip]
+* [C2MI, *Akrion GAMA acid bench*](<https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/>).[^akrion-gama]
 
 ### High-level understanding
 
@@ -238,10 +238,10 @@ Status and expiry are estimates from public records and are not legal advice.
 * [Wikipedia, *Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>) — SPM ratios and
   temperature.[^wiki-piranha]
 * [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — SC-1 and SC-2 recipes.[^wiki-rca]
-* Wikipedia, *Hydrofluoric acid*.[^wiki-hf]
-* Wikipedia, *Phosphoric acid*.[^wiki-h3po4]
-* Wikipedia, *N-Methyl-2-pyrrolidone*.[^wiki-nmp]
-* Wikipedia, *Photoresist*.[^wiki-resist]
+* [Wikipedia, *Hydrofluoric acid*](<https://en.wikipedia.org/wiki/Hydrofluoric_acid>).[^wiki-hf]
+* [Wikipedia, *Phosphoric acid*](<https://en.wikipedia.org/wiki/Phosphoric_acid>).[^wiki-h3po4]
+* [Wikipedia, *N-Methyl-2-pyrrolidone*](<https://en.wikipedia.org/wiki/N-Methyl-2-pyrrolidone>).[^wiki-nmp]
+* [Wikipedia, *Photoresist*](<https://en.wikipedia.org/wiki/Photoresist>).[^wiki-resist]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 4
   ("Semiconductor Manufacturing — Clean Rooms, Wafer Cleaning and
   Gettering").[^txt-01]

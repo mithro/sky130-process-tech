@@ -256,7 +256,7 @@ fab (SKY130's recipe is not public):
 ### High-level understanding
 
 * [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — LPCVD and PECVD nitride.[^wiki-sin]
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-pecvd]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   CVD nitride and step coverage.[^txt-02]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — spacer

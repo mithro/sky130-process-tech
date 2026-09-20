@@ -328,7 +328,7 @@ and 0.84 spacing of the `urpm` checks would set their smallest features
   resistors.[^pdk-07]
 * [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — the "UHR poly resistor"
   sheet resistance.[^pdk-08]
-* SkyWater PDK, repository README and *Background* — the high sheet-rho
+* SkyWater PDK, repository README and [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>) — the high sheet-rho
   resistor and the `r` option.[^pdk-10][^pdk-02]
 * [SkyWater PDK Authors, test-tile pad documentation](<https://github.com/google/skywater-pdk-sky130-raw-data/blob/main/docs/sky130-testtile-proprietary/sky130-testtile-pad-documentation.csv>) — the structures
   marked for "routes using URPM mask".[^raw-data-testtile-pads]

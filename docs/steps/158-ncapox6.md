@@ -185,8 +185,8 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ### High-level understanding
 
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
-  orthosilicate*.[^wiki-pecvd][^wiki-teos]
+* Wikipedia, [*Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>), [*Tetraethyl
+  orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>).[^wiki-pecvd][^wiki-teos]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — dielectrics in
   the multilevel back end.[^txt-05]
 

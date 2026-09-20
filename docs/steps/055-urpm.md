@@ -206,9 +206,9 @@ it as an open question, so the two pages should be read together.
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography*, *Photomask*, *Diazonaphthoquinone*,
-  *Tetramethylammonium hydroxide*.[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
-* Wikipedia, *Sheet resistance*.[^wiki-rs]
+* Wikipedia, [*Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>), [*Photomask*](<https://en.wikipedia.org/wiki/Photomask>), [*Diazonaphthoquinone*](<https://en.wikipedia.org/wiki/Diazonaphthoquinone>),
+  [*Tetramethylammonium hydroxide*](<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>).[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
+* [Wikipedia, *Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>).[^wiki-rs]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography.[^txt-02]
 * [Kamins, *Polycrystalline Silicon for Integrated Circuits and

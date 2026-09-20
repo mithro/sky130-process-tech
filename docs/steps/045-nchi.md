@@ -211,7 +211,7 @@ Status and expiry are estimates from public records and are not legal advice.
   and dose ranges.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter*.[^axcelis-8250]
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>).[^axcelis-8250]
 * [SKY130 raw-data repository, 1.8 V transistor files](<https://github.com/google/skywater-pdk-sky130-raw-data/tree/main/sky130_fd_pr/cells>) — measured
   `nfet_01v8` thresholds at the e-test geometries (our
   extraction).[^raw-data-lv-mosfets]
@@ -227,7 +227,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * Wikipedia, [*Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>) and [*Multi-threshold CMOS*](<https://en.wikipedia.org/wiki/Multi-threshold_CMOS>) — how
   channel doping sets Vt.[^wiki-vt][^wiki-mtcmos]
-* Wikipedia, *Ion implantation*.[^wiki-implant]
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>).[^wiki-implant]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation.[^txt-02]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 3](<https://openlibrary.org/isbn/9780961672157>) — the submicron

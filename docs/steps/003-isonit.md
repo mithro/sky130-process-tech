@@ -190,8 +190,8 @@ Status and expiry are estimates from public records and are not legal advice.
   500–2000 Å; CMP stop on nitride.[^pat-sti-amberwave]
 * [van Gelder and Hauser, *J. Electrochem. Soc.* 1967](<https://doi.org/10.1149/1.2426757>) — hot phosphoric
   etch rates.[^vgh-1967]
-* Moov marketplace, Aviza / SVG / Thermco AVP-8000 listing
-  (weak).[^aviza-avp]
+* [Moov marketplace, Aviza / SVG / Thermco AVP-8000 listing
+  (weak)](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>).[^aviza-avp]
 
 :::{dropdown} From a patent shown as in force (US 2009/0179253; estimated expiry 2027-06-17) — open to read
 * Levy et al. (Cypress), US 2009/0179253 — LPCVD at 700–850 °C,

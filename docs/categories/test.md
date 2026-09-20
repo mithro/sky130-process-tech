@@ -205,9 +205,9 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * [Keithley, *Series S600 Parametric Test Systems* data sheet](<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>) — the
   tester's intended uses.[^keithley-s600]
-* Semiconductor Online, *S600 Series Parametric Test
-  Systems*.[^semionline-s600]
-* BRL Test, HP/Agilent 4062UX listing.[^brltest-4062]
+* [Semiconductor Online, *S600 Series Parametric Test
+  Systems*](<https://www.semiconductoronline.com/doc/s600-series-parametric-test-systems-0001>).[^semionline-s600]
+* [BRL Test, HP/Agilent 4062UX listing](<https://www.brltest.com/index.php?main_page=product_info&products_id=7874>).[^brltest-4062]
 * [ITRS 2001, *Process Integration, Devices and Structures*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001PIDS.pdf>) — the
   I_off and I_dsat targets for the 130 nm node.[^itrs-04]
 * [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — the test-structure and in-line metrology
@@ -228,19 +228,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 * [Wikipedia, *Wafer testing*](<https://en.wikipedia.org/wiki/Wafer_testing>) — parametric versus functional test and
   the wafermap.[^wiki-test]
-* Wikipedia, *Sheet resistance*.[^wiki-rs]
-* Wikipedia, *Van der Pauw method*.[^wiki-vdp]
-* Wikipedia, *Four-terminal sensing*.[^wiki-4t]
-* Wikipedia, *Transfer length method*.[^wiki-tlm]
-* Wikipedia, *Contact resistance*.[^wiki-rc]
-* Wikipedia, *Probe card*.[^wiki-probecard]
-* Wikipedia, *Automatic test equipment*.[^wiki-ate]
-* Wikipedia, *Statistical process control*.[^wiki-spc]
-* Wikipedia, *Threshold voltage*.[^wiki-vt]
-* Wikipedia, *Keithley Instruments*.[^wiki-keithley]
-* Wikipedia, *Agilent Technologies*.[^wiki-agilent]
-* Wikipedia, *Teradyne*.[^wiki-teradyne]
-* Wikipedia, *Advantest*.[^wiki-advantest]
+* [Wikipedia, *Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>).[^wiki-rs]
+* [Wikipedia, *Van der Pauw method*](<https://en.wikipedia.org/wiki/Van_der_Pauw_method>).[^wiki-vdp]
+* [Wikipedia, *Four-terminal sensing*](<https://en.wikipedia.org/wiki/Four-terminal_sensing>).[^wiki-4t]
+* [Wikipedia, *Transfer length method*](<https://en.wikipedia.org/wiki/Transmission_line_measurement>).[^wiki-tlm]
+* [Wikipedia, *Contact resistance*](<https://en.wikipedia.org/wiki/Contact_resistance>).[^wiki-rc]
+* [Wikipedia, *Probe card*](<https://en.wikipedia.org/wiki/Probe_card>).[^wiki-probecard]
+* [Wikipedia, *Automatic test equipment*](<https://en.wikipedia.org/wiki/Automatic_test_equipment>).[^wiki-ate]
+* [Wikipedia, *Statistical process control*](<https://en.wikipedia.org/wiki/Statistical_process_control>).[^wiki-spc]
+* [Wikipedia, *Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>).[^wiki-vt]
+* [Wikipedia, *Keithley Instruments*](<https://en.wikipedia.org/wiki/Keithley_Instruments>).[^wiki-keithley]
+* [Wikipedia, *Agilent Technologies*](<https://en.wikipedia.org/wiki/Agilent_Technologies>).[^wiki-agilent]
+* [Wikipedia, *Teradyne*](<https://en.wikipedia.org/wiki/Teradyne>).[^wiki-teradyne]
+* [Wikipedia, *Advantest*](<https://en.wikipedia.org/wiki/Advantest>).[^wiki-advantest]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 4 (yield
   and manufacturing) and the measurement sections of
   ch. 7–8.[^txt-01]

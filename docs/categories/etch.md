@@ -282,13 +282,13 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   thicknesses.[^pdk-03]
 * [Lam Research, Form 10-K (fiscal 2003)](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the TCP 9400PTX/DFM, 2300
   and Exelan product line.[^lam-10k]
-* Lam Research, Exelan High Performance press release
-  (2001).[^lam-exelan]
+* [Lam Research, Exelan High Performance press release
+  (2001)](<https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>).[^lam-exelan]
 * [Stanford Nanofabrication Facility, *Lam TCP 9400 Poly Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — the
   reactor and its gas set.[^snf-9400]
 * [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — DPS, MxP/eMxP+ and HDP
   dielectric etch history.[^amat-1997]
-* C2MI, *Akrion GAMA acid bench*.[^akrion-gama]
+* [C2MI, *Akrion GAMA acid bench*](<https://www.c2mi.ca/en/equipement/akrion-gama-acid-bench/>).[^akrion-gama]
 * [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — CN emission at 387 nm as the nitride
   etch endpoint signal.[^pat-endpoint-tel]
 
@@ -296,14 +296,14 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>) — RF frequency, self-bias,
   pressure range and ICP sources.[^wiki-rie]
-* Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
-* Wikipedia, *Dry etching*.[^wiki-dry-etch]
-* Wikipedia, *Etching (microfabrication)*.[^wiki-etching]
-* Wikipedia, *Inductively coupled plasma*.[^wiki-icp]
+* [Wikipedia, *Plasma etching*](<https://en.wikipedia.org/wiki/Plasma_etching>).[^wiki-plasma-etch]
+* [Wikipedia, *Dry etching*](<https://en.wikipedia.org/wiki/Dry_etching>).[^wiki-dry-etch]
+* [Wikipedia, *Etching (microfabrication)*](<https://en.wikipedia.org/wiki/Etching_(microfabrication)>).[^wiki-etching]
+* [Wikipedia, *Inductively coupled plasma*](<https://en.wikipedia.org/wiki/Inductively_coupled_plasma>).[^wiki-icp]
 * [Wikipedia, *Buffered oxide etch*](<https://en.wikipedia.org/wiki/Buffered_oxide_etch>) — BOE composition and
   rate.[^wiki-boe]
-* Wikipedia, *Hydrofluoric acid*.[^wiki-hf]
-* Wikipedia, *Phosphoric acid*.[^wiki-h3po4]
+* [Wikipedia, *Hydrofluoric acid*](<https://en.wikipedia.org/wiki/Hydrofluoric_acid>).[^wiki-hf]
+* [Wikipedia, *Phosphoric acid*](<https://en.wikipedia.org/wiki/Phosphoric_acid>).[^wiki-h3po4]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 10
   ("Etching").[^txt-01]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —

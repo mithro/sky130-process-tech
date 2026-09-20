@@ -448,9 +448,9 @@ Status and expiry are estimates from public records and are not legal advice.
 * Cypress Semiconductor qualification reports QTP 113005, 123907 and
   014807 — metal-stack and passivation compositions at the
   fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
-* SkyWater PDK, *Criteria & Assumptions* and the process stack
+* SkyWater PDK, [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) and the process stack
   diagram — film thicknesses and dielectric labels.[^pdk-03][^pdk-04]
-* SkyWater PDK, *Device Details*, *High Voltage Methodology* and the
+* SkyWater PDK, [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>), [*High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>) and the
   1.8 V and 5 V NMOS models — MiM parameters and gate-oxide
   thicknesses.[^pdk-07][^pdk-hv][^pdk-model-nfet01v8][^pdk-model-nfet5v]
 * SkyWater, `sky130_fd_pr_reram` [*Background*](<https://sky130-fd-pr-reram.readthedocs.io/en/latest/background.html>) — the hafnium-oxide

@@ -207,12 +207,12 @@ fab (SKY130's recipe is not public):
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing*.[^wiki-cmp]
+* [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>).[^wiki-cmp]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — dielectric
   CMP.[^txt-05]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical
-  Planarization of Microelectronic Materials*.[^steigerwald-1997]
-* Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical
+  Planarization of Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>).[^steigerwald-1997]
+* [Chip History Center, *The Mirra CMP System*](<https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>).[^chiphistory-mirra]
 
 ### Deep dive
 

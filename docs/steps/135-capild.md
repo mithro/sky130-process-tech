@@ -293,8 +293,8 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Capacitor*, *Silicon oxynitride*, *Silicon nitride*,
-  *Plasma-enhanced chemical vapor deposition*.[^wiki-capacitor][^wiki-sion][^wiki-sin][^wiki-pecvd]
+* Wikipedia, [*Capacitor*](<https://en.wikipedia.org/wiki/Capacitor>), [*Silicon oxynitride*](<https://en.wikipedia.org/wiki/Silicon_oxynitride>), [*Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>),
+  [*Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-capacitor][^wiki-sion][^wiki-sin][^wiki-pecvd]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passive
   components and PECVD dielectrics in the deep-submicron back
   end.[^txt-05]

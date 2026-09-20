@@ -238,7 +238,7 @@ recipe is not public):
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ILD CMP.[^txt-05]
 * [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — CMP
   tools and consumables.[^txt-07]
-* Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
+* [Chip History Center, *The Mirra CMP System*](<https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>).[^chiphistory-mirra]
 * [Moon, in *Advances in Chemical Mechanical Planarization*](<https://doi.org/10.1016/B978-0-08-100165-3.00001-2>) — the
   chemical and physical mechanisms of dielectric CMP.[^moon-2016]
 

@@ -1151,8 +1151,8 @@ See {ref}`filings-by-relationship` for the full, grouped list.
 * SkyWater PDK, [*Masks*](<https://skywater-pdk.readthedocs.io/en/main/rules/masks.html>), [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) and [*Periphery rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html>) — the
   mask marks, layer descriptions and design rules behind the module
   table.[^pdk-05][^pdk-06][^pdk-periph]
-* SkyWater PDK, *Device Details*, *High Voltage Methodology*, *Parasitic
-  Layout Extraction* and SPICE models — the device list, capacitor and
+* SkyWater PDK, [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>), [*High Voltage Methodology*](<https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>), [*Parasitic
+  Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) and SPICE models — the device list, capacitor and
   resistor values, gate-oxide thickness, sheet resistances and
   `toxe`.[^pdk-07][^pdk-hv][^pdk-08][^pdk-model-nfet01v8][^pdk-model-nfet5v]
 * [*S8 / SKY130 Process Steps* sheet](<https://docs.google.com/spreadsheets/d/1PbI3IVNg93fR9Gi_hXlEDrlYtwFQuMyaD8PNEaIs3Sg>) — the 171 steps, their codes, names
@@ -1160,7 +1160,7 @@ See {ref}`filings-by-relationship` for the full, grouped list.
 * open_pdks `Makefile.in` and `README`, and the `sky130_fd_pr_reram`
   documentation index — the `sky130A` and `sky130B`
   variants.[^opdks-makefile][^opdks-readme][^reram-index]
-* SkyWater, *Facilities & Capabilities* and the S130 platform table —
+* SkyWater, [*Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) and the S130 platform table —
   the fab's equipment and the S130 platform data.[^skw-01][^skw-02]
 * Cypress, 10-Q/A for Q1 2003 and PIN152804 — Fab 4 as Cypress's
   eight-inch 0.13 µm fab and S8 as a Fab 4 technology.[^cyp-07][^cyp-06]

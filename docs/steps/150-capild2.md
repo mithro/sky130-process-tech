@@ -315,7 +315,7 @@ Status and expiry are estimates from public records and are not legal advice.
   layers on metal 3 and metal 4".[^pdk-previous]
 * [SkyWater PDK, README](<https://github.com/google/skywater-pdk>) — "Optional MiM capacitors".[^pdk-10]
 * [SkyWater, S130 platform table](<https://www.skywatertechnology.com/cmos/>) — "MiM Capacitor".[^skw-02]
-* SkyWater / Efabless, first MPW shuttle release.[^ann-11]
+* [SkyWater / Efabless, first MPW shuttle release](<https://www.skywatertechnology.com/first-google-sponsored-mpw-shuttle-launched-at-skywater-with-40-open-source-community-submitted-designs/>).[^ann-11]
 * SKY130 raw-data repository — C–V sweeps of the first-level,
   second-level and stacked MiM test capacitors and the pad list that
   describes them; the values quoted here are our
@@ -325,8 +325,8 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Capacitor*, *Silicon oxynitride*, *Silicon nitride*,
-  *Plasma-enhanced chemical vapor deposition*.[^wiki-capacitor][^wiki-sion][^wiki-sin][^wiki-pecvd]
+* Wikipedia, [*Capacitor*](<https://en.wikipedia.org/wiki/Capacitor>), [*Silicon oxynitride*](<https://en.wikipedia.org/wiki/Silicon_oxynitride>), [*Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>),
+  [*Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-capacitor][^wiki-sion][^wiki-sin][^wiki-pecvd]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — PECVD
   dielectrics and passive components in the back end.[^txt-05]
 * [Edwards, WOSET 2020](<https://woset-workshop.github.io/PDFs/2020/a03.pdf>) — the SKY130 stack from the open-PDK

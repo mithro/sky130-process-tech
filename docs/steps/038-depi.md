@@ -257,7 +257,7 @@ Status and expiry are estimates from public records and are not legal advice.
   suppliers.[^sec-01][^sec-02]
 * [Ramkumar, Prabhakar and Kapre (Cypress), Semiconductor Digest](<https://sst.semiconductor-digest.com/2020/02/scalable-sonos-based-embedded-non-volatile-memory-technology/>) — the
   2-T cell and Fowler–Nordheim programming.[^cyp-25]
-* Semiconductor Online, *8250HT Medium Current Ion Implanter*.[^axcelis-8250]
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>).[^axcelis-8250]
 
 ### High-level understanding
 
@@ -267,7 +267,7 @@ Status and expiry are estimates from public records and are not legal advice.
   threshold.[^cyp-26]
 * [Wikipedia, *Thermal oxidation*](<https://en.wikipedia.org/wiki/Thermal_oxidation>) — silicon consumed by the tunnel
   oxide.[^wiki-thox]
-* Wikipedia, *Ion implantation*.[^wiki-implant]
+* [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>).[^wiki-implant]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation.[^txt-02]
 

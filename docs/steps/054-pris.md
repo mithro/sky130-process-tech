@@ -157,7 +157,7 @@ chemical oxide is thin and will be buried under the
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* and *RCA clean*.[^wiki-ash][^wiki-rca]
+* Wikipedia, [*Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) and [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>).[^wiki-ash][^wiki-rca]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   stripping and cleaning.[^txt-02]
 * [Reinhardt and Kern (eds.), *Handbook of Silicon Wafer Cleaning

@@ -190,13 +190,13 @@ The substrate category has no process tool in the fab itself; the
 
 * [Wikipedia, *Wafer (electronics)*](<https://en.wikipedia.org/wiki/Wafer_(electronics)>) — diameters, thickness, notch,
   orientation and doping ranges.[^wiki-wafer]
-* Wikipedia, *Czochralski method*.[^wiki-cz]
+* [Wikipedia, *Czochralski method*](<https://en.wikipedia.org/wiki/Czochralski_method>).[^wiki-cz]
 * [Wikipedia, *Silicon*](<https://en.wikipedia.org/wiki/Silicon>) — the melting point.[^wiki-si]
-* Wikipedia, *Float-zone silicon*.[^wiki-fz]
-* Wikipedia, *Monocrystalline silicon*.[^wiki-monosi]
-* Wikipedia, *Miller index*.[^wiki-miller]
-* Wikipedia, *Epitaxy*.[^wiki-epitaxy]
-* Wikipedia, *Latch-up*.[^wiki-latchup]
+* [Wikipedia, *Float-zone silicon*](<https://en.wikipedia.org/wiki/Float-zone_silicon>).[^wiki-fz]
+* [Wikipedia, *Monocrystalline silicon*](<https://en.wikipedia.org/wiki/Monocrystalline_silicon>).[^wiki-monosi]
+* [Wikipedia, *Miller index*](<https://en.wikipedia.org/wiki/Miller_index>).[^wiki-miller]
+* [Wikipedia, *Epitaxy*](<https://en.wikipedia.org/wiki/Epitaxy>).[^wiki-epitaxy]
+* [Wikipedia, *Latch-up*](<https://en.wikipedia.org/wiki/Latch-up>).[^wiki-latchup]
 * [Wikipedia, *SkyWater Technology*](<https://en.wikipedia.org/wiki/SkyWater_Technology>) — fab history and 200 mm
   capacity.[^wiki-skywater]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 3

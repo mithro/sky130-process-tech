@@ -225,14 +225,14 @@ an aluminium back end (SKY130's recipe is not public):
 * [SkyWater PDK, *Process stack diagram*](<https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>) — TOPOX and TOPNIT over metal 5.[^pdk-04]
 * Cypress, QTP 014807, QTP 123907/132302/132301, QTP 113005 — passivation
   nitride thicknesses at Fab 4.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
-* Moov, *Aviza / SVG / Thermco AVP 8000* listing; ASM International,
-  *Vertical furnace*.[^aviza-avp][^asm-vf]
+* Moov, [*Aviza / SVG / Thermco AVP 8000*](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) listing; ASM International,
+  [*Vertical furnace*](<https://www.asm.com/our-technology-products/vertical-furnace>).[^aviza-avp][^asm-vf]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
-* Wikipedia, *Forming gas*.[^wiki-fg]
+* [Wikipedia, *Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>).[^wiki-fg]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the alloy
   anneal and interface passivation.[^txt-01]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —

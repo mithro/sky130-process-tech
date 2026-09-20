@@ -243,12 +243,12 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Salicide*, *Titanium disilicide*, *Contact
-  resistance*.[^wiki-salicide][^wiki-tisi2][^wiki-rc]
+* Wikipedia, [*Salicide*](<https://en.wikipedia.org/wiki/Salicide>), [*Titanium disilicide*](<https://en.wikipedia.org/wiki/Titanium_disilicide>), [*Contact
+  resistance*](<https://en.wikipedia.org/wiki/Contact_resistance>).[^wiki-salicide][^wiki-tisi2][^wiki-rc]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — silicides
   and contacts at deep-submicron nodes.[^txt-05]
-* Fair (ed.), *Rapid Thermal Processing: Science and
-  Technology*.[^txt-10]
+* [Fair (ed.), *Rapid Thermal Processing: Science and
+  Technology*](<https://doi.org/10.1016/b978-0-12-247690-7.50009-3>).[^txt-10]
 
 ### Deep dive
 

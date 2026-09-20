@@ -247,7 +247,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching*, *Dry etching*.[^wiki-rie][^wiki-dry-etch]
+* Wikipedia, [*Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>), [*Dry etching*](<https://en.wikipedia.org/wiki/Dry_etching>).[^wiki-rie][^wiki-dry-etch]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — the etch
   chapter; contact formation.[^txt-01]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) —

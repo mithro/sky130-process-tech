@@ -350,7 +350,7 @@ sampling plans are not public.
 
 * [Wikipedia, *Scanning electron microscope*](<https://en.wikipedia.org/wiki/Scanning_electron_microscope>) — secondary-electron imaging,
   electron sources and charging.[^wiki-sem]
-* Wikipedia, *Critical dimension*.[^wiki-cd]
+* [Wikipedia, *Critical dimension*](<https://en.wikipedia.org/wiki/Critical_dimension>).[^wiki-cd]
 * [Wikipedia, *KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the overlay and CD-SEM
   vendor.[^wiki-kla]
 * [Levinson, *Principles of Lithography*, 4th ed.](<https://doi.org/10.1117/3.2525393>) — overlay and metrology

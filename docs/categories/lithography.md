@@ -282,12 +282,12 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   wavelength.[^nikon-s204b]
 * [Tolpygo et al., arXiv 2014](<https://arxiv.org/abs/1408.5829>) — a Canon FPA-3000EX4 described in
   use.[^tolpygo-2014]
-* Tokyo Electron, *Coater/Developer ACT Series* product
-  page.[^tel-act]
+* [Tokyo Electron, *Coater/Developer ACT Series* product
+  page](<https://www.tel.com/product/act.html>).[^tel-act]
 * [Semiconductor Online, *CLEAN TRACK ACT 8*](<https://www.semiconductoronline.com/doc/clean-track-act-8-system-for-spin-on-dielectr-0001>) — introduction date and
   throughput.[^tel-act8]
-* GCE Market, KLA-Tencor 8100XP CD-SEM specification
-  summary.[^gce-kla8100]
+* [GCE Market, KLA-Tencor 8100XP CD-SEM specification
+  summary](<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>).[^gce-kla8100]
 * [Ikegami et al., *Hitachi Review* 2011](<https://www.hitachihyoron.com/rev/pdf/2011/r2011_05_104.pdf>) — release dates and
   specifications of Hitachi CD-SEMs, including the S-9200.[^hitachi-2011]
 * [MicroChemicals, *Development of photoresists*](<https://www.microchemicals.com/dokumente/application_notes/development_photoresist.pdf>) — TMAH developer
@@ -297,18 +297,18 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>) — the process sequence, the resolution
   equation and wavelengths.[^wiki-litho]
-* Wikipedia, *Stepper*.[^wiki-stepper]
-* Wikipedia, *Photoresist*.[^wiki-resist]
-* Wikipedia, *Photomask*.[^wiki-mask]
-* Wikipedia, *Phase-shift mask*.[^wiki-psm]
-* Wikipedia, *Optical proximity correction*.[^wiki-opc]
-* Wikipedia, *Resolution enhancement technologies*.[^wiki-ret]
-* Wikipedia, *Anti-reflective coating*.[^wiki-arc]
-* Wikipedia, *Numerical aperture*.[^wiki-na]
-* Wikipedia, *Excimer laser*.[^wiki-excimer]
-* Wikipedia, *Diazonaphthoquinone*.[^wiki-dnq]
-* Wikipedia, *Tetramethylammonium hydroxide*.[^wiki-tmah]
-* Wikipedia, *Critical dimension*.[^wiki-cd]
+* [Wikipedia, *Stepper*](<https://en.wikipedia.org/wiki/Stepper>).[^wiki-stepper]
+* [Wikipedia, *Photoresist*](<https://en.wikipedia.org/wiki/Photoresist>).[^wiki-resist]
+* [Wikipedia, *Photomask*](<https://en.wikipedia.org/wiki/Photomask>).[^wiki-mask]
+* [Wikipedia, *Phase-shift mask*](<https://en.wikipedia.org/wiki/Phase-shift_mask>).[^wiki-psm]
+* [Wikipedia, *Optical proximity correction*](<https://en.wikipedia.org/wiki/Optical_proximity_correction>).[^wiki-opc]
+* [Wikipedia, *Resolution enhancement technologies*](<https://en.wikipedia.org/wiki/Resolution_enhancement_technologies>).[^wiki-ret]
+* [Wikipedia, *Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>).[^wiki-arc]
+* [Wikipedia, *Numerical aperture*](<https://en.wikipedia.org/wiki/Numerical_aperture>).[^wiki-na]
+* [Wikipedia, *Excimer laser*](<https://en.wikipedia.org/wiki/Excimer_laser>).[^wiki-excimer]
+* [Wikipedia, *Diazonaphthoquinone*](<https://en.wikipedia.org/wiki/Diazonaphthoquinone>).[^wiki-dnq]
+* [Wikipedia, *Tetramethylammonium hydroxide*](<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>).[^wiki-tmah]
+* [Wikipedia, *Critical dimension*](<https://en.wikipedia.org/wiki/Critical_dimension>).[^wiki-cd]
 * [Wikipedia, *KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the inspection and metrology
   vendor.[^wiki-kla]
 * [Mack, *The Basics of Microlithography*](<https://www.lithoguru.com/scientist/lithobasics.html>) — an online

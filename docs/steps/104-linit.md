@@ -202,8 +202,8 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 
 ### High-level understanding
 
-* Wikipedia, *Silicon nitride*, *Plasma-enhanced chemical vapor
-  deposition*.[^wiki-sin][^wiki-pecvd]
+* Wikipedia, [*Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>), [*Plasma-enhanced chemical vapor
+  deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-sin][^wiki-pecvd]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   PECVD nitride.[^txt-02]
 * [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing

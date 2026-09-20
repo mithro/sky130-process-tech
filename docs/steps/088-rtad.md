@@ -237,15 +237,15 @@ An industry-generic source/drain activation anneal for a 200 mm,
 * [SemiStar, *AG Associates Heatpulse 4100 / 8108 / 8800 / 8800i
   Specifications* (PDF)](<https://www.semistarcorp.com/wp-content/uploads/2025/12/AG-Associates-Heatpulse-4100-8108-8800-8800i-Specifications-Rapid-Thermal-Processor.pdf>) — the Heatpulse 4100 and 8108 operating and
   facility specifications.[^ag-8108]
-* Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108
-  RTP*.[^plasmatherm-ag]
+* [Plasma-Therm, *Product Spotlight: AG Heatpulse 8800 / 8108
+  RTP*](<https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>).[^plasmatherm-ag]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) — gas
   suppliers.[^sec-01][^sec-02]
 
 ### High-level understanding
 
-* Wikipedia, *Rapid thermal processing*.[^wiki-rtp]
-* Wikipedia, *Furnace anneal*.[^wiki-furnace]
+* [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>).[^wiki-rtp]
+* [Wikipedia, *Furnace anneal*](<https://en.wikipedia.org/wiki/Diffusion_furnace>).[^wiki-furnace]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — dopant
   activation and diffusion.[^txt-01]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — RTP and

@@ -228,7 +228,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography*.[^wiki-litho]
+* [Wikipedia, *Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>).[^wiki-litho]
 * [Wikipedia, *Gate oxide*](<https://en.wikipedia.org/wiki/Gate_oxide>) — what the thickness does.[^wiki-gate-oxide]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   lithography.[^txt-02]

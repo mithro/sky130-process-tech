@@ -225,7 +225,7 @@ fab (SKY130's recipe is not public):
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching*.[^wiki-rie]
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>).[^wiki-rie]
 * [Wikipedia, *RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) — the post-etch clean.[^wiki-rca]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — dielectric
   etching and selectivity.[^txt-01]

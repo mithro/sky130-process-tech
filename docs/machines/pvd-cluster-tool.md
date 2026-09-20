@@ -414,14 +414,14 @@ its film thicknesses are not public.
 * Applied Materials, [*Aluminum Liner/Barrier*](<https://web.archive.org/web/20010807161527/http://www.appliedmaterials.com:80/products/liner_barrier.html>) (2001) and [*Aluminum Slab
   and Fill*](<https://web.archive.org/web/20020625163718/http://www.appliedmaterials.com:80/products/aluminum_slab_and_fill.html>) (2002) pages — SIP Ti/TiN, aluminium over tungsten plugs and
   ALPS+ fill.[^amat-liner-barrier-2001][^amat-al-slab-2002]
-* Novellus Systems, *Metal PVD Solutions* (1998 and 2001 captures) — the
+* Novellus Systems, [*Metal PVD Solutions*](<https://web.archive.org/web/20011214001648/http://www.novellus.com:80/products/pvd.asp>) (1998 and 2001 captures) — the
   INOVA, its Varian origin and the HCM source.[^novellus-pvd-1998][^novellus-pvd-2001]
 * [Tepman et al. (Applied Materials), US 5,186,718](<https://patents.google.com/patent/US5186718A/en>) — the staged-vacuum
   multi-chamber platform.[^pat-staged-vacuum-amat]
 * [Demaray et al. (Varian), US 5,330,628](<https://patents.google.com/patent/US5330628A/en>) — collimated deposition.[^pat-collimator-varian]
 * Cypress Semiconductor, QTP 113005 and PIN145273 — the S8 metal stack
   and its change from TiW to TiN.[^cyp-qtp-113005][^cyp-pin145273]
-* SkyWater PDK Authors, `metal_stack.svg` and *Device Details*; Edwards,
+* SkyWater PDK Authors, `metal_stack.svg` and [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>); Edwards,
   PDK lecture — the conductor thicknesses, the MiM top plate and the TiN
   local interconnect.[^pdk-04][^pdk-07][^ann-16]
 

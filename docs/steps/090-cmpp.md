@@ -223,14 +223,14 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 ### High-level understanding
 
-* Wikipedia, *Chemical-mechanical polishing*.[^wiki-cmp]
+* [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>).[^wiki-cmp]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — dielectric
   CMP.[^txt-05]
-* Steigerwald, Murarka and Gutmann, *Chemical Mechanical
-  Planarization of Microelectronic Materials*.[^steigerwald-1997]
+* [Steigerwald, Murarka and Gutmann, *Chemical Mechanical
+  Planarization of Microelectronic Materials*](<https://doi.org/10.1002/9783527617746>).[^steigerwald-1997]
 * [Levinson, *Principles of Lithography*](<https://doi.org/10.1117/3.601520>) — the chapter on optical pattern
   formation.[^levinson-2005]
-* Chip History Center, *The Mirra CMP System*.[^chiphistory-mirra]
+* [Chip History Center, *The Mirra CMP System*](<https://www.chiphistory.org/142-applied-materials-the-mirra-cmp-system>).[^chiphistory-mirra]
 
 ### Deep dive
 

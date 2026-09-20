@@ -453,7 +453,7 @@ pressures, thicknesses and chemistries are not public.
   SACVD and DxZ products and the Novellus settlement.[^amat-1997]
 * [Wang et al. (Applied Materials), US 5,000,113](<https://patents.google.com/patent/US5000113A/en>) — a single-wafer
   thermal and plasma CVD reactor and its TEOS processes.[^pat-p5000-amat]
-* SkyWater PDK Authors, *Device Details* and `metal_stack.svg` — the MiM
+* SkyWater PDK Authors, [*Device Details*](<https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html>) and `metal_stack.svg` — the MiM
   capacitor construction and the passivation layers.[^pdk-07][^pdk-04]
 * [Cypress Semiconductor, QTP 014807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>) — a TEOS and PECVD nitride
   passivation from the Bloomington fab.[^cyp-qtp-014807]

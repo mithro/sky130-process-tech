@@ -216,7 +216,7 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching*, *Silicon nitride*.[^wiki-rie][^wiki-sin]
+* Wikipedia, [*Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>), [*Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>).[^wiki-rie][^wiki-sin]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passivation and
   pad processing.[^txt-05]
 * [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — dielectric etch

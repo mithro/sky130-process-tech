@@ -192,8 +192,8 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ### High-level understanding
 
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
-* Wikipedia, *Tetraethyl orthosilicate*.[^wiki-teos]
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-pecvd]
+* [Wikipedia, *Tetraethyl orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>).[^wiki-teos]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   PECVD oxides.[^txt-02]
 * [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing

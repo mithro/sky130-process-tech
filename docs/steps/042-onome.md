@@ -242,7 +242,7 @@ Status and expiry are estimates from public records and are not legal advice.
   Akrion Gamma, ashers.[^skw-01]
 * SkyWater, Form S-1 (2021) and Form 10-K (fiscal 2023) —
   suppliers.[^sec-01][^sec-02]
-* Stanford Nanofabrication Facility, *Lam Research TCP 9400*.[^snf-9400]
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>).[^snf-9400]
 * [Tokyo Electron, US 6,376,262](<https://patents.google.com/patent/US6376262B1/en>) — CN emission at 387 nm as the nitride
   etch endpoint.[^pat-cn-tel]
 

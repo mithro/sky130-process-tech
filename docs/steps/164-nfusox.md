@@ -238,8 +238,8 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
-  orthosilicate*.[^wiki-pecvd][^wiki-teos]
+* Wikipedia, [*Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>), [*Tetraethyl
+  orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>).[^wiki-pecvd][^wiki-teos]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — back-end
   dielectrics and passivation.[^txt-05]
 * Novellus company history; Applied Materials 10-K — the 200 mm PECVD

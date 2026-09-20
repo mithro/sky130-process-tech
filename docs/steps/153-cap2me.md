@@ -284,7 +284,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching*, *Dry etching*.[^wiki-rie][^wiki-dry-etch]
+* Wikipedia, [*Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>), [*Dry etching*](<https://en.wikipedia.org/wiki/Dry_etching>).[^wiki-rie][^wiki-dry-etch]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — refractory
   metal etching in the back end.[^txt-05]
 * [Nojiri, *Dry Etching Technology for Semiconductors*](<https://doi.org/10.1007/978-3-319-10295-5>) — metal etch

@@ -305,7 +305,7 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   and the dielectric roadmap.[^itrs-02]
 * [Blech, *JAP* 1976](<https://doi.org/10.1063/1.322842>) — the critical-length effect measured on Al lines
   over TiN.[^blech-1976]
-* Applied Materials, *Endura PVD* product page.[^amat-endura]
+* [Applied Materials, *Endura PVD* product page](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>).[^amat-endura]
 * [Applied Materials, Form 10-K (fiscal 2003)](<https://www.sec.gov/Archives/edgar/data/6951/000089161804000093/f95058e10vk.htm>) — Centura, Endura and
   Producer platform descriptions.[^amat-10k]
 * [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the Concept One/Two,
@@ -319,18 +319,18 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ### High-level understanding
 
-* Wikipedia, *Chemical vapor deposition*.[^wiki-cvd]
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
-* Wikipedia, *Sputter deposition*.[^wiki-sputter]
-* Wikipedia, *Physical vapor deposition*.[^wiki-pvd]
-* Wikipedia, *Polycrystalline silicon*.[^wiki-poly]
-* Wikipedia, *Silicon nitride*.[^wiki-sin]
-* Wikipedia, *Tetraethyl orthosilicate*.[^wiki-teos]
-* Wikipedia, *Phosphosilicate glass*.[^wiki-psg]
-* Wikipedia, *Titanium nitride*.[^wiki-tin]
-* Wikipedia, *Tungsten hexafluoride*.[^wiki-wf6]
-* Wikipedia, *Electromigration*.[^wiki-em]
-* Wikipedia, *Thin film*.[^wiki-thinfilm]
+* [Wikipedia, *Chemical vapor deposition*](<https://en.wikipedia.org/wiki/Chemical_vapor_deposition>).[^wiki-cvd]
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-pecvd]
+* [Wikipedia, *Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>).[^wiki-sputter]
+* [Wikipedia, *Physical vapor deposition*](<https://en.wikipedia.org/wiki/Physical_vapor_deposition>).[^wiki-pvd]
+* [Wikipedia, *Polycrystalline silicon*](<https://en.wikipedia.org/wiki/Polycrystalline_silicon>).[^wiki-poly]
+* [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>).[^wiki-sin]
+* [Wikipedia, *Tetraethyl orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>).[^wiki-teos]
+* [Wikipedia, *Phosphosilicate glass*](<https://en.wikipedia.org/wiki/Phosphosilicate_glass>).[^wiki-psg]
+* [Wikipedia, *Titanium nitride*](<https://en.wikipedia.org/wiki/Titanium_nitride>).[^wiki-tin]
+* [Wikipedia, *Tungsten hexafluoride*](<https://en.wikipedia.org/wiki/Tungsten_hexafluoride>).[^wiki-wf6]
+* [Wikipedia, *Electromigration*](<https://en.wikipedia.org/wiki/Electromigration>).[^wiki-em]
+* [Wikipedia, *Thin film*](<https://en.wikipedia.org/wiki/Thin_film>).[^wiki-thinfilm]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 9 ("Thin
   Film Deposition") and ch. 11 ("Back-End Technology").[^txt-01]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —

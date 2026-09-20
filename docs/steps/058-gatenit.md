@@ -210,7 +210,7 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 ### High-level understanding
 
 * [Wikipedia, *Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>) — LPCVD and PECVD nitride.[^wiki-sin]
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-pecvd]
 * [Wikipedia, *Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>) — inorganic ARCs.[^wiki-arc]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   {term}`CVD` nitride.[^txt-02]

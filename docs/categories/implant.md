@@ -264,14 +264,14 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   annealing.[^gibbons-1972]
 * [Ziegler, Ziegler and Biersack, *NIM B* 2010](<https://doi.org/10.1016/j.nimb.2010.02.091>) — the SRIM
   code.[^ziegler-2010]
-* Ziegler, *SRIM* software and documentation.[^srim]
+* [Ziegler, *SRIM* software and documentation](<http://www.srim.org/>).[^srim]
 * [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51, doping technology
   requirements, retrograde-well and extension notes.[^itrs-01]
 * [Axcelis, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — high-current and high-energy
   batch implanter classes and LINAC energies.[^axcelis-gsd-page]
 * [Axcelis, *Our History*](<https://www.axcelis.com/about/our-history/>) — dates of the Nova, Eaton and Axcelis
   high-current and medium-current implanters.[^axcelis-history]
-* Legacy Semi, Varian VIISta HC listing.[^semimarket-viista]
+* [Legacy Semi, Varian VIISta HC listing](<https://www.semimarket.com/item/varian-viista-hc-high-current-implanter/94062>).[^semimarket-viista]
 * [Shockley, US 2,787,564](<https://patents.google.com/patent/US2787564A/en>) — the original patent on forming devices by
   ion bombardment.[^pat-shockley]
 
@@ -279,15 +279,15 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * [Wikipedia, *Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>) — energies, ranges, {term}`channelling`,
   amorphisation and implanter classes.[^wiki-implant]
-* Wikipedia, *Stopping and Range of Ions in Matter*.[^wiki-srim]
-* Wikipedia, *Channelling (physics)*.[^wiki-channel]
-* Wikipedia, *Dopant*.[^wiki-dopant]
-* Wikipedia, *Threshold voltage*.[^wiki-vt]
-* Wikipedia, *Boron trifluoride*.[^wiki-bf3]
-* Wikipedia, *Phosphine*.[^wiki-ph3]
-* Wikipedia, *Arsine*.[^wiki-ash3]
-* Wikipedia, *Axcelis Technologies*.[^wiki-axcelis]
-* Wikipedia, *Varian Semiconductor*.[^wiki-varian]
+* [Wikipedia, *Stopping and Range of Ions in Matter*](<https://en.wikipedia.org/wiki/Stopping_and_Range_of_Ions_in_Matter>).[^wiki-srim]
+* [Wikipedia, *Channelling (physics)*](<https://en.wikipedia.org/wiki/Channelling_(physics)>).[^wiki-channel]
+* [Wikipedia, *Dopant*](<https://en.wikipedia.org/wiki/Dopant>).[^wiki-dopant]
+* [Wikipedia, *Threshold voltage*](<https://en.wikipedia.org/wiki/Threshold_voltage>).[^wiki-vt]
+* [Wikipedia, *Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>).[^wiki-bf3]
+* [Wikipedia, *Phosphine*](<https://en.wikipedia.org/wiki/Phosphine>).[^wiki-ph3]
+* [Wikipedia, *Arsine*](<https://en.wikipedia.org/wiki/Arsine>).[^wiki-ash3]
+* [Wikipedia, *Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>).[^wiki-axcelis]
+* [Wikipedia, *Varian Semiconductor*](<https://en.wikipedia.org/wiki/Varian_Semiconductor>).[^wiki-varian]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 8 ("Ion
   Implantation").[^txt-01]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —

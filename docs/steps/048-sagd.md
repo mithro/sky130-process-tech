@@ -253,7 +253,7 @@ Status and expiry are estimates from public records and are not legal advice.
   same film.[^pdk-07]
 * [SkyWater PDK, *Parasitic Layout Extraction*](<https://skywater-pdk.readthedocs.io/en/main/rules/rcx.html>) — poly 48.2 Ω/sq.[^pdk-08]
 * SkyWater, Form S-1 and Form 10-K — gas suppliers.[^sec-01][^sec-02]
-* Moov marketplace, Aviza AVP-8000 listing (weak).[^aviza-avp]
+* [Moov marketplace, Aviza AVP-8000 listing (weak)](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>).[^aviza-avp]
 
 ### High-level understanding
 

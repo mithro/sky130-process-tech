@@ -233,7 +233,7 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * [Wikipedia, *Titanium nitride*](<https://en.wikipedia.org/wiki/Titanium_nitride>) — properties and microelectronic
   uses.[^wiki-tin]
-* Wikipedia, *Sputter deposition*.[^wiki-sputter]
+* [Wikipedia, *Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>).[^wiki-sputter]
 * [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
   Technology*](<https://openlibrary.org/isbn/9781574446753>) — PVD equipment.[^txt-09]
 * [Ohring, *Materials Science of Thin Films*](<https://doi.org/10.1016/B978-0-12-524975-1.X5000-9>) — growth and

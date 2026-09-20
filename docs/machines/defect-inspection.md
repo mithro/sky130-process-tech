@@ -409,7 +409,7 @@ Status and expiry are estimates from public records and are not legal advice.
   7700.[^tencor-unpatterned-1997][^tencor-patterned-1997]
 * [Tencor, Surfscan AIT press release (1995)](<https://web.archive.org/web/19970302034359/http://www.tencor.com:80/press/surfscan.html>) — the first high-speed
   in-line patterned inspector, developed with SEMATECH.[^tencor-ait-1995]
-* Tencor, *Laser Confocal Review* page (1997) and ADC press release
+* Tencor, [*Laser Confocal Review*](<https://web.archive.org/web/19970302033431/http://www.tencor.com:80/products/lasercreview.html>) page (1997) and ADC press release
   (1996) — optical review and automatic
   classification.[^tencor-crs-1997][^tencor-adc-1996]
 * [Tencor, *Defect Data Analysis* page (1997)](<https://web.archive.org/web/19970302033417/http://www.tencor.com:80/products/defectdata.html>) — the SwiftAccess defect

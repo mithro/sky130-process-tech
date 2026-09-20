@@ -243,7 +243,7 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ### High-level understanding
 
-* Wikipedia, *Reactive-ion etching*.[^wiki-rie]
+* [Wikipedia, *Reactive-ion etching*](<https://en.wikipedia.org/wiki/Reactive-ion_etching>).[^wiki-rie]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   oxide etching.[^txt-02]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — contact and

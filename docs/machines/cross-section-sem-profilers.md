@@ -340,19 +340,19 @@ Status and expiry are estimates from public records and are not legal advice.
   tools.[^fei-fib200xp-1999][^fei-fib800-1999][^fei-dualbeam-2006]
 * [SELA, *Company Background* page (2001)](<https://web.archive.org/web/20011031233400/http://sela.com:80/about.htm>) — conventional and automated
   cleaving for SEM and TEM samples.[^sela-2001]
-* Tencor, *Surface Profiling* page (1997) and HRP-200 press release
+* Tencor, [*Surface Profiling*](<https://web.archive.org/web/19970302033450/http://www.tencor.com:80/products/surfaceprof.html>) page (1997) and HRP-200 press release
   (1996) — stylus profilers and CMP
   applications.[^tencor-profiling-1997][^tencor-hrp200-1996]
-* KLA-Tencor, *HRPs 240/340* and *P-15* product pages
+* KLA-Tencor, [*HRPs 240/340*](<https://web.archive.org/web/20020604105300/http://www.kla-tencor.com:80/products/metrology/hrps/hrps.html>) and [*P-15*](<https://web.archive.org/web/20020604110248/http://www.kla-tencor.com:80/products/metrology/profilers/profilers.html>) product pages
   (2002).[^kla-hrp][^kla-p15]
-* Veeco, *Stylus Profilers* and *DI AFM* pages
+* Veeco, [*Stylus Profilers*](<https://web.archive.org/web/20000523020041/http://www.veeco.com:80/body_stylus_profilers.html>) and [*DI AFM*](<https://web.archive.org/web/20000521223941/http://www.veeco.com:80/body_di_afm.html>) pages
   (2000).[^veeco-stylus-2000][^veeco-afm-2000]
 
 ### High-level understanding
 
-* Wikipedia, *Focused ion beam*.[^wiki-fib]
-* Wikipedia, *Atomic force microscopy*.[^wiki-afm]
-* Wikipedia, *Profilometer*.[^wiki-profilometer]
+* [Wikipedia, *Focused ion beam*](<https://en.wikipedia.org/wiki/Focused_ion_beam>).[^wiki-fib]
+* [Wikipedia, *Atomic force microscopy*](<https://en.wikipedia.org/wiki/Atomic_force_microscopy>).[^wiki-afm]
+* [Wikipedia, *Profilometer*](<https://en.wikipedia.org/wiki/Profilometer>).[^wiki-profilometer]
 * [Wikipedia, *Scanning electron microscope*](<https://en.wikipedia.org/wiki/Scanning_electron_microscope>) — secondary-electron
   imaging.[^wiki-sem]
 

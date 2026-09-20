@@ -237,13 +237,13 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 * [SkyWater, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — ASML I-line stepper and
   scanner, tracks, CD and overlay tools.[^skw-01]
 * [SkyWater, Form S-1](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — photoresist and developer suppliers.[^sec-01]
-* ASML, *Three decades of PAS 5500*; Chip History Center, PAS
+* ASML, [*Three decades of PAS 5500*](<https://www.asml.com/en/company/stories/2021/three-decades-of-pas-5500>); Chip History Center, PAS
   5500/400.[^asml-30][^chiphistory-pas5500]
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography*, *Diazonaphthoquinone*,
-  *Anti-reflective coating*.[^wiki-litho][^wiki-dnq][^wiki-arc]
+* Wikipedia, [*Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>), [*Diazonaphthoquinone*](<https://en.wikipedia.org/wiki/Diazonaphthoquinone>),
+  [*Anti-reflective coating*](<https://en.wikipedia.org/wiki/Anti-reflective_coating>).[^wiki-litho][^wiki-dnq][^wiki-arc]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   i-line resist processing on metal.[^txt-02]
 * [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging of

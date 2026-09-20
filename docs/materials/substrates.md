@@ -354,14 +354,14 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### Cross-check
 
-* SkyWater Technology, *Facilities & Capabilities* and the CMOS platform
+* SkyWater Technology, [*Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) and the CMOS platform
   table — "200 mm equipment", the substrate services, and S130's "200mm"
   and "Bulk".[^skw-01][^skw-02]
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   the raw-materials paragraphs, wafer suppliers and supply risk.[^sec-01][^sec-02]
 * [Cypress Semiconductor, PIN152804 (2015)](<https://media.futureelectronics.com/PCN/45887_SPCN.PDF>) — GlobalWafers qualified for S8
   at Fab 4.[^cyp-06]
-* SkyWater PDK, process stack diagram and *Criteria & Assumptions* — the
+* SkyWater PDK, process stack diagram and [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) — the
   "p-substrate" label and the background concentration.[^pdk-04][^pdk-03]
 * SEMI M1, M8, M24, M38 and M62 — prime, test, premium, reclaimed and
   epitaxial wafers.[^semi-m1][^semi-m8][^semi-m24][^semi-m38][^semi-m62]

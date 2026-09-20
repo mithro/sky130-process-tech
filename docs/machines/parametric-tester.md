@@ -305,12 +305,12 @@ not public beyond the PDK's e-test parameter tables, which the
   per-pin electronics, parallel test and test-plan software.[^keithley-s600]
 * [EE Power, *Agilent Technologies Offers New 4070 Series Testers* (2002)](<https://eepower.com/new-industry-products/agilent-technologies-offers-new-4070-series-testers/>) —
   the 4072B and 4073B.[^eepower-4070]
-* Electroglas, *Horizon 4090*, *Horizon 4085X* and *Horizon 4090µ* pages
+* Electroglas, *Horizon 4090*, [*Horizon 4085X*](<https://web.archive.org/web/19980211212526/http://www.electroglas.com:80/products/4085x.htm>) and [*Horizon 4090µ*](<https://web.archive.org/web/20010713004941/http://www.electroglas.com:80/products/4090micro.html>) pages
   and 1999 annual report — probers and what they
   do.[^electroglas-4090][^electroglas-4085x][^electroglas-4090u][^electroglas-1999]
 * [Tokyo Electron, *P-8XL & P-12XL Series Wafer Prober*](<https://www.telcertifiedused.com/cue/buy/product-test.jsp>) — the TEL prober
   line.[^tel-prober]
-* FormFactor, *Cascade SUMMIT200* and *Cascade PMC200* product
+* FormFactor, [*Cascade SUMMIT200*](<https://www.formfactor.com/product/probe-systems/200-mm-systems/summit200/>) and [*Cascade PMC200*](<https://www.formfactor.com/product/probe-systems/wafer-multi-chip-cryogenic-systems/pmc200/>) product
   pages.[^formfactor-summit200][^formfactor-pmc200]
 * [ITRS 2001, *Yield Enhancement*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001YieldEnhance.pdf>) — parametric data in yield
   learning.[^itrs-2001-yield]
@@ -322,8 +322,8 @@ not public beyond the PDK's e-test parameter tables, which the
 
 * [Wikipedia, *Wafer testing*](<https://en.wikipedia.org/wiki/Wafer_testing>) — parametric and functional wafer test and the
   prober.[^wiki-test]
-* Wikipedia, *Probe card*.[^wiki-probecard]
-* Wikipedia, *Automatic test equipment*.[^wiki-ate]
+* [Wikipedia, *Probe card*](<https://en.wikipedia.org/wiki/Probe_card>).[^wiki-probecard]
+* [Wikipedia, *Automatic test equipment*](<https://en.wikipedia.org/wiki/Automatic_test_equipment>).[^wiki-ate]
 * Wikipedia, [*Keithley Instruments*](<https://en.wikipedia.org/wiki/Keithley_Instruments>) and [*Agilent Technologies*](<https://en.wikipedia.org/wiki/Agilent_Technologies>) — the
   parametric tester vendors.[^wiki-keithley][^wiki-agilent]
 

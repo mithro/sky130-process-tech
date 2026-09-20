@@ -294,12 +294,12 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
   list; metal etchers.[^skw-01]
 * SkyWater, Form S-1 and 10-K — target suppliers.[^sec-01][^sec-02]
 * [Hitachi Metals, US 5,160,534](<https://patents.google.com/patent/US5160534A/en>) — Ti:W target composition.[^pat-tiw-hitachi]
-* Applied Materials, *Endura PVD*.[^amat-endura]
+* [Applied Materials, *Endura PVD*](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>).[^amat-endura]
 
 ### High-level understanding
 
-* Wikipedia, *Electromigration*, *Sputter deposition*, *Interconnect
-  (integrated circuits)*.[^wiki-em][^wiki-sputter][^wiki-interconnect]
+* Wikipedia, [*Electromigration*](<https://en.wikipedia.org/wiki/Electromigration>), [*Sputter deposition*](<https://en.wikipedia.org/wiki/Sputter_deposition>), [*Interconnect
+  (integrated circuits)*](<https://en.wikipedia.org/wiki/Interconnect_(integrated_circuits)>).[^wiki-em][^wiki-sputter][^wiki-interconnect]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   sputtering and aluminium metallisation.[^txt-02]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — multilevel

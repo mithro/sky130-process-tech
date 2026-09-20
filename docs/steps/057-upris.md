@@ -166,7 +166,7 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ### High-level understanding
 
-* Wikipedia, *Plasma ashing* and *RCA clean*.[^wiki-ash][^wiki-rca]
+* Wikipedia, [*Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) and [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>).[^wiki-ash][^wiki-rca]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   cleaning before furnace steps.[^txt-02]
 * [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — wet

@@ -202,8 +202,8 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 ### High-level understanding
 
-* Wikipedia, *Photolithography*, *Photomask*, *Diazonaphthoquinone*,
-  *Tetramethylammonium hydroxide*.[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
+* Wikipedia, [*Photolithography*](<https://en.wikipedia.org/wiki/Photolithography>), [*Photomask*](<https://en.wikipedia.org/wiki/Photomask>), [*Diazonaphthoquinone*](<https://en.wikipedia.org/wiki/Diazonaphthoquinone>),
+  [*Tetramethylammonium hydroxide*](<https://en.wikipedia.org/wiki/Tetramethylammonium_hydroxide>).[^wiki-litho][^wiki-mask][^wiki-dnq][^wiki-tmah]
 * [Mack, *Fundamental Principles of Optical Lithography*](<https://doi.org/10.1002/9780470723876>) — imaging,
   resist and process-window fundamentals.[^mack-2007]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —

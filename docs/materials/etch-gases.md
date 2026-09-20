@@ -397,8 +397,8 @@ Status and expiry are estimates from public records and are not legal advice.
 * SkyWater Technology, Form S-1 (2021) and Form 10-K for fiscal 2023 —
   gas suppliers and environmental requirements.[^sec-01][^sec-02]
 * U.S. EPA, Greenhouse Gas Reporting Program data for SkyWater's
-  Bloomington facility, the subpart I information sheet and *Fluorinated
-  Greenhouse Gas Emissions and Supplies Reported to the GHGRP* —
+  Bloomington facility, the subpart I information sheet and [*Fluorinated
+  Greenhouse Gas Emissions and Supplies Reported to the GHGRP*](<https://www.epa.gov/ghgreporting/fluorinated-greenhouse-gas-emissions-and-supplies-reported-ghgrp>) —
   fluorinated-gas reporting at the fab and what it
   covers.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i][^epa-ghgrp-fgas]
 * SEMI C3.40 and C3.24 — specifications for CF₄ and

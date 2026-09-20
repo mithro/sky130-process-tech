@@ -331,7 +331,7 @@ Status and expiry are estimates from public records and are not legal advice.
   "Qualitau".[^skw-01]
 * BRL Test, 4062UX listing; Keithley, *Series S600* data
   sheet.[^brltest-4062][^keithley-s600]
-* ITRS 2001, *Test and Test Equipment* and *Metrology*.[^itrs-2001-test][^itrs-2001-met]
+* ITRS 2001, [*Test and Test Equipment*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Test.pdf>) and [*Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>).[^itrs-2001-test][^itrs-2001-met]
 * Google's SKY130 raw-data repository — the README (data "collected
   under contract by CoolCAD Electronics LLC using the manufacturing test
   tile created by SkyWater"), the proprietary test-tile README ("two
@@ -351,9 +351,9 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Wafer testing*, *Sheet resistance*, *Van der Pauw method*,
-  *Probe card*, *Automatic test equipment*, *Statistical process
-  control*.[^wiki-test][^wiki-rs][^wiki-vdp][^wiki-probecard][^wiki-ate][^wiki-spc]
+* Wikipedia, [*Wafer testing*](<https://en.wikipedia.org/wiki/Wafer_testing>), [*Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>), [*Van der Pauw method*](<https://en.wikipedia.org/wiki/Van_der_Pauw_method>),
+  [*Probe card*](<https://en.wikipedia.org/wiki/Probe_card>), [*Automatic test equipment*](<https://en.wikipedia.org/wiki/Automatic_test_equipment>), [*Statistical process
+  control*](<https://en.wikipedia.org/wiki/Statistical_process_control>).[^wiki-test][^wiki-rs][^wiki-vdp][^wiki-probecard][^wiki-ate][^wiki-spc]
 * [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — process
   monitoring and wafer test.[^txt-07]
 

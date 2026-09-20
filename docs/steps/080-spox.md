@@ -189,7 +189,7 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 * [Wikipedia, *Tetraethyl orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>) — TEOS as an oxide
   precursor.[^wiki-teos]
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*.[^wiki-pecvd]
+* [Wikipedia, *Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>).[^wiki-pecvd]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   CVD oxides and implantation through oxide.[^txt-02]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — composite

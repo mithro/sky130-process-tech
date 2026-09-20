@@ -186,13 +186,13 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
   – low temp options"; "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
 * Cypress, QTP 123907/132302/132301 and QTP 014807 — "1000A TEOS" in
   the Fab 4 passivation stack.[^cyp-qtp-123907][^cyp-qtp-014807]
-* Applied Materials, Form 10-K (2003); Encyclopedia.com, *Novellus
-  Systems, Inc.*[^amat-10k][^novellus-history]
+* Applied Materials, Form 10-K (2003); Encyclopedia.com, [*Novellus
+  Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>)[^amat-10k][^novellus-history]
 
 ### High-level understanding
 
-* Wikipedia, *Plasma-enhanced chemical vapor deposition*, *Tetraethyl
-  orthosilicate*.[^wiki-pecvd][^wiki-teos]
+* Wikipedia, [*Plasma-enhanced chemical vapor deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>), [*Tetraethyl
+  orthosilicate*](<https://en.wikipedia.org/wiki/Tetraethyl_orthosilicate>).[^wiki-pecvd][^wiki-teos]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — PECVD oxides
   in the back end.[^txt-01]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ILD stacks,

@@ -240,8 +240,8 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Silicon nitride*, *Plasma-enhanced chemical vapor
-  deposition*, *Silane*.[^wiki-sin][^wiki-pecvd][^wiki-silane]
+* Wikipedia, [*Silicon nitride*](<https://en.wikipedia.org/wiki/Silicon_nitride>), [*Plasma-enhanced chemical vapor
+  deposition*](<https://en.wikipedia.org/wiki/Plasma-enhanced_chemical_vapor_deposition>), [*Silane*](<https://en.wikipedia.org/wiki/Silane>).[^wiki-sin][^wiki-pecvd][^wiki-silane]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — passivation
   films in the deep-submicron back end.[^txt-05]
 * Novellus company history; Applied Materials 10-K — the 200 mm PECVD

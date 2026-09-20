@@ -205,32 +205,32 @@ Status and expiry are estimates from public records and are not legal advice.
   rates and temperature-control trade-offs.[^roozeboom-1990]
 * [Maex, *Mater. Sci. Eng. R* 1993](<https://doi.org/10.1016/0927-796X(93)90001-J>) — TiSi₂ and CoSi₂ formation,
   silicon consumption and the narrow-line effect.[^maex-1993]
-* Osburn, "Silicides", in Fair (ed.), *Rapid Thermal
-  Processing*.[^osburn-1993]
-* Fair, "Junction Formation in Silicon by Rapid Thermal Annealing", in
-  Fair (ed.), *Rapid Thermal Processing*.[^txt-10]
+* [Osburn, "Silicides", in Fair (ed.), *Rapid Thermal
+  Processing*](<https://doi.org/10.1016/b978-0-12-247690-7.50010-x>).[^osburn-1993]
+* [Fair, "Junction Formation in Silicon by Rapid Thermal Annealing", in
+  Fair (ed.), *Rapid Thermal Processing*](<https://doi.org/10.1016/b978-0-12-247690-7.50009-3>).[^txt-10]
 * [ITRS 2001, *Front End Processes*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001FEP.pdf>) — Table 51 and its notes on
   junctions and silicide thickness.[^itrs-01]
-* Plasma-Therm, *AG Heatpulse 8800 / 8108 RTP* product
-  spotlight.[^plasmatherm-ag]
+* [Plasma-Therm, *AG Heatpulse 8800 / 8108 RTP* product
+  spotlight](<https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>).[^plasmatherm-ag]
 * [AG Associates, Form 10-K (fiscal 1996)](<https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>) — Heatpulse 8108 first
   shipped October 1992.[^ag-10k]
 * [Applied Materials, 1997 Annual Report](<https://www.annualreports.com/HostedData/AnnualReportArchive/a/NASDAQ_AMAT_1997.pdf>) — RTP XE Centura.[^amat-1997]
 * [EDN, *Applied dedicates RTP with Vantage*](<https://www.edn.com/applied-dedicates-rtp-with-vantage/>) — the Radiance/Vantage
   chambers' pyrometry.[^amat-rtp]
-* ASM International, *Vertical furnace* product page.[^asm-vf]
+* [ASM International, *Vertical furnace* product page](<https://www.asm.com/our-technology-products/vertical-furnace>).[^asm-vf]
 
 ### High-level understanding
 
 * [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>) — lamps, pyrometry and the
   main trade-offs.[^wiki-rtp]
-* Wikipedia, *Furnace anneal*.[^wiki-furnace]
-* Wikipedia, *Annealing (materials science)*.[^wiki-annealing]
-* Wikipedia, *Fick's laws of diffusion*.[^wiki-fick]
-* Wikipedia, *Arrhenius equation*.[^wiki-arrhenius]
+* [Wikipedia, *Furnace anneal*](<https://en.wikipedia.org/wiki/Diffusion_furnace>).[^wiki-furnace]
+* [Wikipedia, *Annealing (materials science)*](<https://en.wikipedia.org/wiki/Annealing_(materials_science)>).[^wiki-annealing]
+* [Wikipedia, *Fick's laws of diffusion*](<https://en.wikipedia.org/wiki/Fick%27s_laws_of_diffusion>).[^wiki-fick]
+* [Wikipedia, *Arrhenius equation*](<https://en.wikipedia.org/wiki/Arrhenius_equation>).[^wiki-arrhenius]
 * [Wikipedia, *Salicide*](<https://en.wikipedia.org/wiki/Salicide>) — the two-anneal self-aligned silicide
   sequence.[^wiki-salicide]
-* Wikipedia, *Titanium disilicide*.[^wiki-tisi2]
+* [Wikipedia, *Titanium disilicide*](<https://en.wikipedia.org/wiki/Titanium_disilicide>).[^wiki-tisi2]
 * [Wikipedia, *Forming gas*](<https://en.wikipedia.org/wiki/Forming_gas>) — the 5 % H₂ in N₂ mixture and interface
   passivation.[^wiki-fg]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 7

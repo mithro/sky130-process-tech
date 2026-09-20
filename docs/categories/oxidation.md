@@ -231,8 +231,8 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   requirements and EOT control.[^itrs-01]
 * [ASM International, A400 DUO press release](<https://www.asm.com/press-releases/asm-international-nv-launches-a400-duo-vertical-furnace-system-1944469>) — the A400 furnace's
   install base and wet-oxidation/anneal use.[^asm-a400]
-* Plasma-Therm, *AG Heatpulse 8800 / 8108 RTP* product
-  spotlight.[^plasmatherm-ag]
+* [Plasma-Therm, *AG Heatpulse 8800 / 8108 RTP* product
+  spotlight](<https://blog.plasmatherm.com/product-spotlight-ag-heatpulse-8800-8108-rtp>).[^plasmatherm-ag]
 * [AG Associates, Form 10-K (fiscal 1996)](<https://www.sec.gov/Archives/edgar/data/942124/000089161896003159/0000891618-96-003159.txt>) — Heatpulse 8108 first shipped
   October 1992, 125–200 mm.[^ag-10k]
 
@@ -242,11 +242,11 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
   chlorine additions and dry–wet–dry cycles.[^wiki-thox]
 * [Wikipedia, *Deal–Grove model*](<https://en.wikipedia.org/wiki/Deal%E2%80%93Grove_model>) — the rate-constant table and the
   thin-oxide caveat.[^wiki-dg]
-* Wikipedia, *Gate oxide*.[^wiki-gox]
-* Wikipedia, *LOCOS*.[^wiki-locos]
-* Wikipedia, *Shallow trench isolation*.[^wiki-sti]
-* Wikipedia, *SONOS*.[^wiki-sonos]
-* Wikipedia, *Rapid thermal processing*.[^wiki-rtp]
+* [Wikipedia, *Gate oxide*](<https://en.wikipedia.org/wiki/Gate_oxide>).[^wiki-gox]
+* [Wikipedia, *LOCOS*](<https://en.wikipedia.org/wiki/LOCOS>).[^wiki-locos]
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>).[^wiki-sti]
+* [Wikipedia, *SONOS*](<https://en.wikipedia.org/wiki/SONOS>).[^wiki-sonos]
+* [Wikipedia, *Rapid thermal processing*](<https://en.wikipedia.org/wiki/Rapid_thermal_processing>).[^wiki-rtp]
 * [Brigham Young University Cleanroom, *Oxide Growth Calculator*](<https://cleanroom.byu.edu/OxideTimeCalc>) —
   Deal–Grove with the thin-oxide correction, runnable
   online.[^byu-oxcalc]

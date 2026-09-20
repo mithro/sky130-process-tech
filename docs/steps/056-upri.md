@@ -190,8 +190,8 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 ### High-level understanding
 
-* Wikipedia, *Ion implantation*, *Boron trifluoride*, *Sheet
-  resistance*.[^wiki-implant][^wiki-bf3][^wiki-rs]
+* Wikipedia, [*Ion implantation*](<https://en.wikipedia.org/wiki/Ion_implantation>), [*Boron trifluoride*](<https://en.wikipedia.org/wiki/Boron_trifluoride>), [*Sheet
+  resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>).[^wiki-implant][^wiki-bf3][^wiki-rs]
 * [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) —
   implantation.[^txt-02]
 * [Kamins, *Polycrystalline Silicon for Integrated Circuits and

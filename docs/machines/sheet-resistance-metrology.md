@@ -292,12 +292,12 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
 * [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — four-point probe for high dose, modulated
   reflectance for low dose, and the need for better
   methods.[^itrs-2001-met]
-* Tencor, OmniMap RS75 press release (1995) and *Resistivity Measurement*
+* Tencor, OmniMap RS75 press release (1995) and [*Resistivity Measurement*](<https://web.archive.org/web/19970302033556/http://www.tencor.com:80/products/resistivity.html>)
   page (1997) — Prometrix four-point probes and the
   NC110.[^tencor-rs75-1995][^tencor-resistivity-1997]
 * [KLA-Tencor, *RS-100* product page (2002)](<https://web.archive.org/web/20020816223302/http://www.kla-tencor.com:80/products/metrology/rs-100/rs-100.html>) — the four-point probe for
   metals, CMP and diffusion.[^kla-rs100]
-* Therma-Wave, *Ion Implantation Monitoring*, *Therma-Probe Family*,
+* Therma-Wave, [*Ion Implantation Monitoring*](<https://web.archive.org/web/20010713111006/http://www.thermawave.com:80/apps/implant.htm>), *Therma-Probe Family*,
   products (1997) and corporate history pages — the thermal-wave
   monitor, its uses and
   limits.[^tw-implant][^tw-tp-2000][^tw-products-1997][^tw-history]
@@ -306,7 +306,7 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
 
 * [Wikipedia, *Sheet resistance*](<https://en.wikipedia.org/wiki/Sheet_resistance>) — ohms per square, implanted layers,
   four-point and eddy-current measurement.[^wiki-rs]
-* Wikipedia, *Four-terminal sensing*.[^wiki-4t]
+* [Wikipedia, *Four-terminal sensing*](<https://en.wikipedia.org/wiki/Four-terminal_sensing>).[^wiki-4t]
 * [Schroder, *Semiconductor Material and Device Characterization*](<https://doi.org/10.1002/0471749095>) — the
   reference text on resistivity measurement.[^schroder-2006]
 

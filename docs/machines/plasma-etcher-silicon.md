@@ -396,7 +396,7 @@ Status and expiry are estimates from public records and are not legal advice.
   ICP-with-bias hybrid.[^wiki-rie]
 * [Wikipedia, *Inductively coupled plasma*](<https://en.wikipedia.org/wiki/Inductively_coupled_plasma>) — the source type behind TCP
   and DPS.[^wiki-icp]
-* Wikipedia, *Plasma etching*.[^wiki-plasma-etch]
+* [Wikipedia, *Plasma etching*](<https://en.wikipedia.org/wiki/Plasma_etching>).[^wiki-plasma-etch]
 * Wikipedia, [*Hydrogen bromide*](<https://en.wikipedia.org/wiki/Hydrogen_bromide>) and [*Nitrogen trifluoride*](<https://en.wikipedia.org/wiki/Nitrogen_trifluoride>) — two of the
   listed gases and their hazards.[^wiki-hbr][^wiki-nf3]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 10 on

@@ -224,10 +224,10 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 * [Wikipedia, *Chemical-mechanical polishing*](<https://en.wikipedia.org/wiki/Chemical-mechanical_polishing>) — abrasives, pads and
   conditioning.[^wiki-cmp]
-* Wikipedia, *Shallow trench isolation*.[^wiki-sti]
-* Wikipedia, *Colloidal silica*.[^wiki-colloidal-silica]
-* Wikipedia, *Cerium(IV) oxide*.[^wiki-ceria]
-* Wikipedia, *Polyurethane*.[^wiki-polyurethane]
+* [Wikipedia, *Shallow trench isolation*](<https://en.wikipedia.org/wiki/Shallow_trench_isolation>).[^wiki-sti]
+* [Wikipedia, *Colloidal silica*](<https://en.wikipedia.org/wiki/Colloidal_silica>).[^wiki-colloidal-silica]
+* [Wikipedia, *Cerium(IV) oxide*](<https://en.wikipedia.org/wiki/Cerium(IV)_oxide>).[^wiki-ceria]
+* [Wikipedia, *Polyurethane*](<https://en.wikipedia.org/wiki/Polyurethane>).[^wiki-polyurethane]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — ch. 11
   ("Back-End Technology").[^txt-01]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — ch. 8

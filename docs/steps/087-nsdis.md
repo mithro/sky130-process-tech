@@ -202,7 +202,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 * [Wikipedia, *Plasma ashing*](<https://en.wikipedia.org/wiki/Plasma_ashing>) — downstream ashing and implanted
   resist.[^wiki-ash]
-* Wikipedia, *RCA clean* and *Piranha solution*.[^wiki-rca][^wiki-piranha]
+* Wikipedia, [*RCA clean*](<https://en.wikipedia.org/wiki/RCA_clean>) and [*Piranha solution*](<https://en.wikipedia.org/wiki/Piranha_solution>).[^wiki-rca][^wiki-piranha]
 * [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) —
   implanted-resist stripping.[^txt-05]
 * [Plummer, Deal and Griffin, *Silicon VLSI Technology*](<https://openlibrary.org/isbn/9780130850379>) — source/drain

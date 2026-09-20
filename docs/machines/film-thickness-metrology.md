@@ -361,7 +361,7 @@ Status and expiry are estimates from public records and are not legal advice.
   options.[^skw-01]
 * [ITRS 2001, *Metrology*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Met.pdf>) — thickness precision, integrated metrology and
   monitor-wafer use.[^itrs-2001-met]
-* Tencor, *Thin Film Measurement* and *Thin Film Stress Measurement* pages
+* Tencor, [*Thin Film Measurement*](<https://web.archive.org/web/19970302033547/http://www.tencor.com:80/products/thinfilmmesaurement.html>) and [*Thin Film Stress Measurement*](<https://web.archive.org/web/19970302033500/http://www.tencor.com:80/products/thinfilmstress.html>) pages
   (1997) and UV-1270SE press release (1996) — the Prometrix optical gauges
   and the FLX stress
   gauges.[^tencor-thinfilm-1997][^tencor-stress-1997][^tencor-uv1270se-1996]
@@ -377,10 +377,10 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ### High-level understanding
 
-* Wikipedia, *Ellipsometry*.[^wiki-ellipsometry]
+* [Wikipedia, *Ellipsometry*](<https://en.wikipedia.org/wiki/Ellipsometry>).[^wiki-ellipsometry]
 * [Wikipedia, *Picosecond ultrasonics*](<https://en.wikipedia.org/wiki/Picosecond_ultrasonics>) — sound echoes from thin
   films.[^wiki-picosecond]
-* Wikipedia, *Fourier-transform infrared spectroscopy*.[^wiki-ftir]
+* [Wikipedia, *Fourier-transform infrared spectroscopy*](<https://en.wikipedia.org/wiki/Fourier-transform_infrared_spectroscopy>).[^wiki-ftir]
 * [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — process
   monitoring in a 200 mm fab.[^txt-07]
 
