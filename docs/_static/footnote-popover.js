@@ -142,8 +142,13 @@
           tappedMarker = null; // second tap: let the click through
           return;
         }
-        tappedMarker = marker;
+        // show() closes any other open card via hide(), which also
+        // clears "tappedMarker" as a side effect (that is what lets a
+        // fresh tap after a close start over) — so set it *after*
+        // show() returns, or that same call would immediately wipe
+        // out the flag this tap just set.
         show(marker);
+        tappedMarker = marker;
       });
       marker.addEventListener("click", function (event) {
         if (tappedMarker === marker) {
