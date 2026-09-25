@@ -1042,8 +1042,13 @@ quotations. The /350C figures ("Type: Cymer 5610", "Power: 10 W", "Frequency: 1 
 here, so they move into `### Excimer laser source` (`docs/machines/duv-krf-stepper.md:42`) with
 `[^asml-pas5500-350c]`; the cell then reads: `A KrF excimer laser, "Type: Cymer ELS6600, Gigaphoton
 KES-G2OK", 20 W, up to 2 kHz on the PAS 5500/750F;[^asml-pas5500-750f] see *Excimer laser source*.`
+Note that "20 W" and "up to 2 kHz" paraphrase the /750F's own "Power: 20 W" and "Frequency:
+Continuously variable up to 2 kHz" — allowed here because those two quotations stay verbatim, with
+their marker, in the body (`docs/machines/duv-krf-stepper.md:70-71`); a quick-facts cell may
+paraphrase a quotation this way only when the exact words survive elsewhere on the page.
 
-**Do not touch.** Row labels; any cell listed in step 4; numbers; quotation marks.
+**Do not touch.** Row labels; any cell listed in step 4; numbers; a quotation mark, unless the exact
+words it quotes stay verbatim elsewhere on the page (see the example above).
 
 **Find.** `measure_b.py --list` key `tablecell>40w` (97 cells on 42 pages).
 
