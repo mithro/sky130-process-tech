@@ -180,6 +180,21 @@ Group B has 15 more R52T-3 reports plus 20 file ids for other technologies
 (R52FFD-3, B55SGT, C8Q-3R, R9Q-3R, R95LD-3R, S4AD-5 variants) still to
 process.
 
+## Tenth batch: five more R52T-3 reports (B30M lineage)
+
+qtp-051203, qtp-043502, qtp-053404, qtp-054203, qtp-054810 -- all Fab 4,
+R52T-3, same 3-metal/0.25 µm/55 Å figures as the ninth batch. Also fixed
+qtp-050401's note (added last batch): its odd passivation wording is an
+outlier specific to that one report, not a general A30M-vs-B30M split (the
+other B30M reports print the corpus-standard passivation). Small printed
+quirks: qtp-043502 misprints "Al" as "A1" in Metal 1; qtp-053404 misprints
+"CY28443-3" as "CY2844303"; qtp-054203's own history-table row calls itself
+a "Bond Option" while its own Qualification Purpose two pages later calls
+the same event a "New Mask Option".
+
+10 more R52T-3 file ids remain (92916, 92716, 93181, 93176, 93216, 92776,
+92136, 92921, 92926, 92236), plus 20 file ids for other Group B technologies.
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
