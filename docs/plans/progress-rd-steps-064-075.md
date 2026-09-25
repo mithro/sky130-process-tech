@@ -23,6 +23,13 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   split at the §1 caps (paragraph > 100, item > 60, sentence > 45, cell > 25), `{figure}` blocks,
   `{dropdown}` bodies, the generated block and `## References` excluded.
 * Repeats: `tmp/readability/repeat.py` (git-ignored), 10-word runs shared by two H2 sections.
+* Dropped words: `tmp/readability/worddiff.py` (git-ignored, added after 074's first draft) lists every
+  run of words present in the base and missing from the page (glance box, recap table, References and
+  footnotes excluded), so a word lost in a replacement cannot hide behind unchanged numbers and markers.
+  Every page was re-run with it; each run it lists is a move, a case change at a split, a joining
+  "and"/"which" at a split, a "Strength:" label, or the table and label rewordings named in the page
+  entries. (On 074 it caught "removing step:" dropped by an overlapping replacement in the first draft;
+  restored before the commit.)
 * Checkers after each page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`,
   `gen_figures --check`; `-W` build; tiles at 1280 px and 400 px, read against the baseline.
 
@@ -241,7 +248,9 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   **LOST `number_order`** — the base's one test-tile sentence (0.534, 7, 8, 0.707, …, 0.1, 100) is
   now five table rows that put W/L first, plus the hedge line; pairings checked above. ADDED
   number_order: the five rows. Declared `--allow-added markers,numbers,quotes,hedges,number_order`;
-  the LOST line is the only one left and is this table's transposition.
+  the LOST line is the only one left and is this table's transposition. Words the table replaces (from
+  `worddiff.py`): "V at", "at L", "for L", "µm", "from … to", and one of the two "7/8 µm" and "7/0.15 µm"
+  mentions (the test-tile and e-test values for the same geometry now share a row).
 * **Marker coverage.** 17 flags, all read: the dash-pair move ("infer" now in the next sentence, as in
   the guide's example); the category repeat; split halves whose base marker belonged to the other clause
   (Lu/Rafferty – Machala; txt-01 – AMD patent; Large tilts – the beam; the NTM-shadowing estimate – the
@@ -367,6 +376,9 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   bullet's own words); hedges "inference", "not public" (glance). **LOST `number_order`**: the rule
   sentence, now six rows with the rule id first; pairings checked above. Declared
   `--allow-added markers,numbers,quotes,hedges,number_order`; the LOST line is the only one left.
+  Words the two tables replace (from `worddiff.py`): "by", "a", "µm" and the rule ids' repeated "hvntm"
+  in the rule table; "Its … table gives" ×3 (the table names are the first column), "and", "an", "of"
+  in the assumptions table.
 * **Marker coverage.** 24 flags, all read: split halves whose base marker sat on another clause (the
   1.8 V tip / Hu; the remedies / Rafí; F2b / "So this is where …" and "How the implant is placed …",
   which had no marker of their own in the base; the 20 V NMOS / hvntm.7; Cypress / the inventor); the
@@ -605,3 +617,42 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   (the depletion-tail physics / the gate lengths; Cypress / the depletion implant; txt-01 / the AMD
   patent); the host list (no markers in the base); glance and labels.
 * **Caps**: para > 100 0 → 0; item > 60 3 → 0; sentence > 45 4 → 1 (the Cypress lead, above).
+
+### 074 LDASTIS — done
+
+* **Lead.** First sentence (32 w) split before ", and cleans the wafer" ("It cleans the wafer."); now 25
+  words. Lead 83 words.
+* **R-SENTENCE.** After the figure: the 47-word resist sentence split at ", and it has received" ("It has
+  received a moderate arsenic dose …"); "we infer" governed the first clause only. No H3 (72 words).
+* **R-CATEGORY.** Classification sentence (22 w) alone. The rest is the category page's general
+  statement and one sentence about this step ("Here the extra care goes into the wet clean, …"), split
+  at its semicolon: one specific sentence, so a plain second paragraph (R-CATEGORY step 2).
+* **R-LIST (Why).** "Two reasons, one ordinary and one specific to its position." announces a count and
+  its two paragraphs already begin "The ordinary one:" / "The specific one:" → the announcing sentence
+  ends in a colon and the two paragraphs become bullets with those words bolded in place (R-LIST step 3).
+  "The specific one" (95 w): lead split before ", and any metallic contamination" ("Any metallic
+  contamination …"), continuation paragraph. "metal-⏎removing" and "arsenic-⏎bearing" (hard-wrapped
+  after the hyphen, so they rendered as "metal- removing" and "arsenic- bearing") are joined; spacing
+  only.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4.** "Plasma ash" (88 w): split at its first semicolon; continuation from "A cooler first
+  stage …". "Pre-anneal clean" (72 w): split at the semicolon after Kern; continuation from "SkyWater's
+  DNS bench …".
+* **R-TOOLS.** As 067/070: recap table (four tools, grades as the page gives them), pilot-form heads,
+  grades as sub-bullets; DNS/FSI keeps its gloss "— the tools with the SC-2 chemistry …" in the head,
+  with both grades below.
+* **R-RELATED.** "Companion strips: ASTIS, HVASTIS; the earlier pre-anneal clean: PWDEIS" names two
+  relationships → "Same module: companion strips …" and "Same category: the earlier pre-anneal clean,
+  `PWDEIS`." (a strip/clean step elsewhere in the flow).
+* **R-OPENQ.** Labels "Ash recipe and wet sequence", "Which asher and wet bench", "Queue time"; text
+  unchanged.
+* **R-GLANCE.** Does/Why from the lead and "The specific one"; Public numbers "none published for
+  SKY130" (the only thickness on the page, ~1 µm, is "we infer"); tool line the ashers' grades; Not public
+  from Open questions 1 and 3.
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, hedges "inference", "not public",
+  identifier SKY130 (glance); "inference"×2, "our reading" (recap table). Declared
+  `--allow-added markers,hedges,identifiers`: clean.
+* **Marker coverage.** 11 flags, all read: split pieces each keeping their own markers (the resist /
+  dose; the anneal / metal contamination, which had no marker of its own in the base; the ash pieces;
+  SC-1/SC-2 / DNS); glance and labels.
+* **Caps**: para > 100 0 → 0; item > 60 2 → 0; sentence > 45 3 → 0.

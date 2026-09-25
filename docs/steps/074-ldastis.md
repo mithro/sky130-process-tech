@@ -10,15 +10,29 @@
 | **Previous step** | {ref}`LDBHI <step-073>` |
 | **Next step** | {ref}`TIPRTAD <step-075>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the `LDNTM` resist after `LDASTI` and `LDBHI` and
+  cleans the wafer before the tip anneal.
+* **Why:** metal left on the surface would diffuse into the junction
+  regions during `TIPRTAD` and raise junction leakage.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
+  ashers — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** the ash recipe, the wet sequence before the anneal and
+  the queue time (→ Open questions).
+:::
+
 ## What this step is
 
-`LDASTIS` removes the resist patterned at {ref}`LDNTM <step-071>` after
-it has masked the lightly doped arsenic tip {ref}`LDASTI <step-072>`
-and the boron {term}`halo` {ref}`LDBHI <step-073>` of the {term}`SONOS` memory
-transistors, and cleans the wafer. It is the last strip of the tip
-module and — because the next step is the activation anneal
-{ref}`TIPRTAD <step-075>` — it is also the *pre-anneal clean* for every
-tip and halo implanted since {ref}`NTM <step-064>`.
+`LDASTIS` removes the resist patterned at {ref}`LDNTM <step-071>` after it
+has masked the lightly doped arsenic tip {ref}`LDASTI <step-072>` and the
+boron {term}`halo` {ref}`LDBHI <step-073>` of the {term}`SONOS` memory
+transistors. It cleans the wafer. It is the last strip of the tip module and
+— because the next step is the activation anneal {ref}`TIPRTAD <step-075>` —
+it is also the *pre-anneal clean* for every tip and halo implanted since
+{ref}`NTM <step-064>`.
 
 :::{figure} /_static/figures/sd-074-ldastis.svg
 :alt: Two cross-sections of the wafer, one above the other. Before the step a flat-topped block of resist covers the whole slice. After it the resist is gone, uncovering a wide capped stack on the oxide-filled trench, a narrow capped gate on the right-hand active area and doped layers in the silicon of both active areas.
@@ -28,11 +42,11 @@ tip and halo implanted since {ref}`NTM <step-064>`.
 Before, the LDNTM resist after the two SONOS implants, which it stopped everywhere in this slice; after, the resist stripped and the wafer cleaned before the tip anneal, with every tip and halo of the module in place and not yet annealed. The thin oxide over the silicon and the capped gates is drawn unchanged: the page infers that no HF step, or only a very dilute one, is used, so that it stays as a cap for the anneal. The resist's implanted crust is not drawn. The tips' colour and the halo's hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Under the resist in the upper panel the high-voltage tip on the left is not labelled, because its leader would have to rise through the resist. Not to scale.
 :::
 
-The resist is, we infer, the standard ~1 µm film (the PDK's nominal
-1.14 µm),[^pdk-03] and it has received a moderate arsenic dose (of order 10¹³
-cm⁻², typical of an {term}`LDD`)[^txt-04] plus a light, tilted boron dose: a
-thinner {term}`crust <implant crust>` than after {ref}`ASTI <step-065>`, but a
-crust nonetheless. Under it lies, we infer, the {term}`screen oxide` of
+The resist is, we infer, the standard ~1 µm film (the PDK's nominal 1.14
+µm).[^pdk-03] It has received a moderate arsenic dose (of order 10¹³ cm⁻²,
+typical of an {term}`LDD`)[^txt-04] plus a light, tilted boron dose: a
+thinner {term}`crust <implant crust>` than after {ref}`ASTI <step-065>`, but
+a crust nonetheless. Under it lies, we infer, the {term}`screen oxide` of
 {ref}`IOX45 <step-063>` over silicon and polysilicon, now carrying, in
 different regions, all three tips and both halos in their as-implanted,
 unannealed state.
@@ -41,63 +55,66 @@ unannealed state.
 
 `LDASTIS` is a {ref}`Resist strip / clean <category-strip>` step of the
 *post-implant* type, of medium difficulty, followed by the most
-thorough clean of the module. The category page explains that
-post-implant strips are "longer and more carefully engineered than
-etch strips" because of the implanted crust; here the extra care goes
-into the wet clean, since whatever is left on the surface will be
-driven into the silicon by the anneal that follows.
+thorough clean of the module.
+
+The category page explains that post-implant strips are "longer and more
+carefully engineered than etch strips" because of the implanted crust. Here
+the extra care goes into the wet clean, since whatever is left on the
+surface will be driven into the silicon by the anneal that follows.
 
 ## Why this step exists
 
-Two reasons, one ordinary and one specific to its position.
+Two reasons, one ordinary and one specific to its position:
 
-The ordinary one: the resist must be gone, and its arsenic-bearing
-crust with it, before the wafer is heated. Resist that survives an {term}`ash`
-carbonises further in the anneal and becomes almost impossible to
-remove; flakes of popped crust {term}`shadow <shadowing>` the {term}`spacer` deposition that
-follows the anneal ({ref}`SPNIT <step-076>`).
+* **The ordinary one:** the resist must be gone, and its arsenic-bearing
+  crust with it, before the wafer is heated. Resist that survives an
+  {term}`ash` carbonises further in the anneal and becomes almost
+  impossible to remove; flakes of popped crust {term}`shadow <shadowing>`
+  the {term}`spacer` deposition that follows the anneal
+  ({ref}`SPNIT <step-076>`).
+* **The specific one:** {ref}`TIPRTAD <step-075>` heats the wafer to
+  1000 °C-class temperatures for seconds (typical of a tip
+  anneal).[^stolk-1997][^agarwal-1999]
 
-The specific one: {ref}`TIPRTAD <step-075>` heats the wafer to
-1000 °C-class temperatures for seconds (typical of a tip
-anneal),[^stolk-1997][^agarwal-1999] and any metallic contamination on
-the surface — from the implanter beam lines, the ashers, or handling —
-diffuses into the junction regions at such temperatures and raises
-junction leakage. The pre-anneal clean therefore includes a metal-
-removing step: {term}`SC-2` (HCl/H₂O₂/H₂O) after {term}`SC-1` in the RCA
-sequence,[^wiki-rca][^kern-1990] or an HCl- or HF-based
-alternative.[^ohmi-1996] ITRS 2001's surface-preparation section sets
-the metallic-contamination targets a front-end clean must
-meet.[^itrs-01] The same role was played by {ref}`PWDEIS <step-033>`
-before {ref}`RTAI <step-034>`.
+  Any metallic contamination on the surface — from the implanter beam lines,
+  the ashers, or handling — diffuses into the junction regions at such
+  temperatures and raises junction leakage. The pre-anneal clean therefore
+  includes a metal-removing step: {term}`SC-2` (HCl/H₂O₂/H₂O) after
+  {term}`SC-1` in the RCA sequence,[^wiki-rca][^kern-1990] or an HCl- or
+  HF-based alternative.[^ohmi-1996] ITRS 2001's surface-preparation section
+  sets the metallic-contamination targets a front-end clean must
+  meet.[^itrs-01] The same role was played by {ref}`PWDEIS <step-033>`
+  before {ref}`RTAI <step-034>`.
 
 ## How it is typically performed
 
-An industry-generic post-implant strip and pre-anneal clean for a
-200 mm, 130 nm-era fab:
+*An industry-generic post-implant strip and pre-anneal clean for a
+200 mm, 130 nm-era fab:*
 
 1. **Plasma ash.** Downstream microwave or RF oxygen plasma with
-   nitrogen[^fujimura-1990] or water vapour[^fujimura-1994] additions;
-   a cooler first stage — "low-temperature (<220° C.)"[^pat-strip-mosel]
-   — to open the crust without {term}`popping`,[^pat-strip-mosel] then a hot
-   stage to clear the bulk, with optical-emission {term}`endpoint` and a timed
-   over-ash. SkyWater's ashers offer these chemistries: "Gasonic PEP,
-   remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF
-   microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" and "Mattson
-   Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] Downstream
-   operation avoids charging the exposed gates.[^wiki-ash]
+   nitrogen[^fujimura-1990] or water vapour[^fujimura-1994] additions.
+
+   A cooler first stage — "low-temperature (<220° C.)"[^pat-strip-mosel] —
+   to open the crust without {term}`popping`,[^pat-strip-mosel] then a hot
+   stage to clear the bulk, with optical-emission {term}`endpoint` and a
+   timed over-ash. SkyWater's ashers offer these chemistries: "Gasonic PEP,
+   remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave, N2,
+   O2, H2, CF4, NH3, H2/N2, 40C-270C" and "Mattson Aspen2, RF plasma, O2,
+   CF4, H2>N2, up to 250C".[^skw-01] Downstream operation avoids charging
+   the exposed gates.[^wiki-ash]
 2. **Wet strip.** {term}`SPM` ("3 parts of concentrated sulfuric acid and 1
-   part of 30 wt. % hydrogen peroxide solution" is
-   typical)[^wiki-piranha] for the last organics and the arsenic-
-   bearing residue; SkyWater's Akrion Gamma bench lists "Sulfuric,
-   SC1".[^skw-01]
+   part of 30 wt. % hydrogen peroxide solution" is typical)[^wiki-piranha]
+   for the last organics and the arsenic-bearing residue; SkyWater's Akrion
+   Gamma bench lists "Sulfuric, SC1".[^skw-01]
 3. **Pre-anneal clean.** SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for
    particles, then SC-2 (HCl/H₂O₂/H₂O) for metals,[^wiki-rca] the
-   sequence Kern traced from its RCA origins;[^kern-1990] SkyWater's
-   DNS bench and FSI Mercury offer "industry standard
-   HF/SC1/SC2".[^skw-01] We infer that no HF step is used, or only a
-   very dilute one: the screen oxide should remain as a cap during the
-   anneal, where it limits dopant out-diffusion and keeps the silicon
-   surface from roughening (see {ref}`TIPRTAD <step-075>`).
+   sequence Kern traced from its RCA origins.[^kern-1990]
+
+   SkyWater's DNS bench and FSI Mercury offer "industry standard
+   HF/SC1/SC2".[^skw-01] We infer that no HF step is used, or only a very
+   dilute one: the screen oxide should remain as a cap during the anneal,
+   where it limits dopant out-diffusion and keeps the silicon surface from
+   roughening (see {ref}`TIPRTAD <step-075>`).
 4. **Rinse and dry.** Cascade DI-water rinse; spin-rinse or IPA dry,
    with a short queue time to the anneal to limit re-contamination and
    native-oxide growth (industry practice).[^txt-02]
@@ -115,19 +132,31 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ## Machines likely used at SkyWater
 
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench and FSI Mercury | strong (existence); inference (assignment) |
+| KLA-Tencor AIT (our reading) | medium |
+
 * **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   named on SkyWater's facilities page with their gases and
-  temperatures.[^skw-01] Strength: **strong** for existence; the
-  assignment of this strip to any one of them is an inference.
+  temperatures.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to any one of them is
+    an inference.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE").[^skw-01] Strength: strong for existence.
+  BOE").[^skw-01]
+  - *Tool exists:* strong for existence.
 * **DNS wet bench and FSI Mercury** ("industry standard
   HF/SC1/SC2")[^skw-01] — the tools with the SC-2 chemistry the
-  pre-anneal clean needs. Strength: strong for existence; the
-  assignment is an inference from the chemistry list.
+  pre-anneal clean needs.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* the assignment is an inference from the chemistry
+    list.
 * **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -149,8 +178,9 @@ An industry-generic post-implant strip and pre-anneal clean for a
   it: {ref}`LDASTI <step-072>`.
 * Next: {ref}`TIPRTAD <step-075>` (the anneal this clean prepares
   for), then the spacer {ref}`SPNIT <step-076>`.
-* Companion strips: {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`;
-  the earlier pre-anneal clean: {ref}`PWDEIS <step-033>`.
+* Same module: companion strips {ref}`ASTIS <step-067>`,
+  {ref}`HVASTIS <step-070>`.
+* Same category: the earlier pre-anneal clean, {ref}`PWDEIS <step-033>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -224,13 +254,13 @@ An industry-generic post-implant strip and pre-anneal clean for a
 
 ## Open questions
 
-* The ash recipe and the exact wet sequence — in particular whether
-  SC-2 or an HF-last step precedes the anneal, and whether the screen
-  oxide is deliberately kept — are not public.
-* Which asher and which wet bench run this strip is not stated
-  publicly.
-* The queue-time limit between this clean and {ref}`TIPRTAD <step-075>`
-  is not public.
+* **Ash recipe and wet sequence.** The ash recipe and the exact wet sequence
+  — in particular whether SC-2 or an HF-last step precedes the anneal, and
+  whether the screen oxide is deliberately kept — are not public.
+* **Which asher and wet bench.** Which asher and which wet bench run this
+  strip is not stated publicly.
+* **Queue time.** The queue-time limit between this clean and
+  {ref}`TIPRTAD <step-075>` is not public.
 
 <!-- footnotes -->
 
