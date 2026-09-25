@@ -231,8 +231,8 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 * Next: {ref}`NCHI <step-045>` (implant through the window), then
   {ref}`GOXETCH <step-046>` (thick oxide stripped in the window) and
   {ref}`LVGOX <step-047>` (thin oxide grown).
-* Same category: devices inside `hvi` — the 5 V family and the
-  10–20 V drain-extended devices ({ref}`PWDEM <step-030>`).
+* Devices inside `hvi`: the 5 V family and the 10–20 V drain-extended
+  devices ({ref}`PWDEM <step-030>`).
 * Depends on: the memory cells' relationship to `hvi` (hvi.4),
   {ref}`TUNM <step-035>`.
 * Mask: {ref}`LVOM <mask-lvom>` — the mask's layers, plates,

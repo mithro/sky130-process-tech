@@ -220,8 +220,8 @@ oxide; both have to be budgeted in the resist thickness.
 * Next: {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant
   through the cleared windows; {ref}`TUNME <step-039>` etches the pad
   oxide in them.
-* Same category: the ARC question for the other mask layers is
-  discussed on {ref}`FOM <step-004>`.
+* The ARC question for the other mask layers is discussed on
+  {ref}`FOM <step-004>`.
 * Category page: {ref}`Etch <category-etch>`; the ARC itself belongs
   to {ref}`category-lithography`.
 
