@@ -23,7 +23,7 @@ its fab and which SKY130 steps name them. The etch mechanisms are on the
 | What they do | Supply halogen atoms and ions that form volatile products with the film; ion bombardment enhances the gas–surface reaction, the effect Coburn and Winters describe.[^coburn-1979] |
 | Gases in the SKY130 steps | CF₄, CHF₃, C₂F₆, C₄F₈, CH₃F, CH₂F₂, CO, CH₄, SF₆, NF₃, HBr, Cl₂, BCl₃ (step-page readings). |
 | Grades | SEMI C3.40 (carbon tetrafluoride) and C3.24 (sulphur hexafluoride).[^semi-c3-40][^semi-c3-24] |
-| Climate | CF₄ "persists in the atmosphere for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential (GWP) 17,200 times greater than that of CO2" (a fourth-assessment value);[^wiki-nf3] SF₆ is, according to the IPCC as Wikipedia reports it, "the most potent greenhouse gas".[^wiki-sf6] |
+| Climate | Long-lived, high-GWP fluorinated gases; see *Greenhouse gases*. |
 | Hazards | NIOSH IDLH "10 ppm" for chlorine, "30 ppm" for hydrogen bromide and "1000 ppm" for nitrogen trifluoride.[^niosh-cl2][^niosh-hbr][^niosh-nf3] |
 | SkyWater evidence | "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2"; "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2"; "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"; CF4 on two ashers;[^skw-01] fluorinated-gas emissions reported to the EPA for the Bloomington fab[^epa-ghgrp-skywater] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps that use this class <material-etch-gases-steps>` |
@@ -35,13 +35,20 @@ with the film to give a volatile product, and by driving the reaction
 with ions from the plasma. Coburn and Winters showed how strongly energetic
 radiation enhances such gas–surface reactions, examining "the reactions of
 Si, SiO2, and Si3N4 with XeF2, F2, and Cl2";[^coburn-1979] their later
-review covers the surface science of etching.[^winters-1992] Fluorine
-gives volatile SiF₄ from silicon, oxide and nitride, and WF₆ from
-tungsten; chlorine gives volatile aluminium and titanium chlorides, and
-chlorine and bromine a slower, more controllable silicon etch; carbon in
-the feed gas builds a fluorocarbon film that protects sidewalls and the
-layer beneath ({ref}`category-etch`). Flamm reviewed the mechanisms of
+review covers the surface science of etching.[^winters-1992]
+
+Different halogens give different volatile products:
+
+* **Fluorine** — gives volatile SiF₄ from silicon, oxide and nitride,
+  and WF₆ from tungsten.
+* **Chlorine** — gives volatile aluminium and titanium chlorides, and
+  with bromine a slower, more controllable silicon etch.
+* **Carbon** (in the feed gas) — builds a fluorocarbon film that
+  protects sidewalls and the layer beneath ({ref}`category-etch`).
+
+Flamm reviewed the mechanisms of
 silicon etching in fluorine- and chlorine-containing plasmas.[^flamm-1990]
+
 The same fluorine chemistry removes film from the walls of deposition
 chambers, which is why NF₃ and perfluorocarbons are also cleaning gases.
 
@@ -50,15 +57,19 @@ chambers, which is why NF₃ and perfluorocarbons are also cleaning gases.
 Carbon tetrafluoride "is used in electronics microfabrication alone or
 in combination with oxygen as a plasma etchant for silicon, silicon
 dioxide, and silicon nitride".[^wiki-cf4] Adding hydrogen or more carbon
-shifts the balance from etching to deposition: "CHF3 is used in the
-semiconductor industry in plasma etching of silicon oxide and silicon
-nitride",[^wiki-chf3] hexafluoroethane "is used as a versatile etchant in
-semiconductor manufacturing",[^wiki-c2f6] and octafluorocyclobutane
-"serves mainly as a passivation layer material in etching
-processes".[^wiki-c4f8] Oehrlein et al. found fluorocarbon film deposition
+shifts the balance from etching to deposition:
+
+* "CHF3 is used in the semiconductor industry in plasma etching of
+  silicon oxide and silicon nitride".[^wiki-chf3]
+* **Hexafluoroethane (C₂F₆)** — "is used as a versatile etchant in
+  semiconductor manufacturing".[^wiki-c2f6]
+* **Octafluorocyclobutane (c-C₄F₈)** — "serves mainly as a passivation
+  layer material in etching processes".[^wiki-c4f8]
+
+Oehrlein et al. found fluorocarbon film deposition
 "plays a key role in determining the profile shape of contact holes and
 the etch selectivity with respect to the mask and the
-underlayer";[^oehrlein-1994] Schaepkens et al. found that "the substrate
+underlayer".[^oehrlein-1994] Schaepkens et al. found that "the substrate
 etch rate is inversely proportional to the thickness of this fluorocarbon
 film", the basis of oxide-to-nitride selectivity.[^schaepkens-1999]
 Perry et al. measured CF and CF₂ densities in a high-density C₂F₆ plasma
@@ -86,7 +97,9 @@ silicon etchant for semiconductor manufacturing", and in the plasma it
 ions performing a chemical reaction with silicon".[^wiki-sf6] NF₃ is
 "primarily used to remove silicon and silicon-compounds during the
 manufacturing of semiconductor devices", and "is also widely used to
-clean PECVD chambers".[^wiki-nf3] Kastenmeier et al. characterised remote
+clean PECVD chambers".[^wiki-nf3]
+
+Kastenmeier et al. characterised remote
 NF₃/O₂ plasma etching of nitride and oxide,[^kastenmeier-1998] and their
 earlier work used CF₄/O₂/N₂ for chemical dry etching.[^kastenmeier-1996]
 Sobolewski, Langan and Felker compared NF₃/Ar, CF₄/O₂/Ar and C₂F₆/O₂/Ar
@@ -100,14 +113,16 @@ emissions".[^chan-2004]
 Aluminium, titanium and TiN are etched with chlorine: Chen, DeOrnellas and
 Burke studied the etch rates of aluminium and "native aluminum oxide
 films" in BCl₃/Cl₂ plasmas,[^chen-1989] the native alumina that must be
-broken through before the metal etches, and "BCl3 is also used in plasma
+broken through before the metal etches. "BCl3 is also used in plasma
 etching in semiconductor manufacturing. This gas etches metal oxides by
 formation of a volatile BOClx and MxOyClz compounds".[^wiki-bcl3] Allen
 and Rickard added nitrogen for a tapered aluminium
 etch.[^allen-1994] Chlorine-etched Al–Cu corrodes if it meets air
-unprotected.[^lee-1981-corrosion] Silicon gates and trenches are etched
+unprotected.[^lee-1981-corrosion]
+
+Silicon gates and trenches are etched
 in HBr/Cl₂/O₂, whose oxygen forms a silicon oxide sidewall film and gives
-selectivity to the gate oxide ({ref}`category-etch`); Bell and Joubert,
+selectivity to the gate oxide ({ref}`category-etch`). Bell and Joubert,
 analysing gates "etched in HBr/Cl2/O2 plasmas", found the sidewall
 passivation layer to be "a chlorine rich silicon oxide
 film",[^bell-1997] and Tuda et al. followed profile evolution in
@@ -124,29 +139,24 @@ The statements below describe standards and supplier catalogues, not what
 SkyWater buys, even where the supplier is named in SkyWater's filings;
 SKY130's etch recipes are not public.
 
-* **Carbon tetrafluoride.** SEMI C3.40 provides a "specification for
-  carbon tetrafluoride (CF4) that is used in the semiconductor
-  industry".[^semi-c3-40]
-* **Sulphur hexafluoride.** SEMI C3.24 provides "specifications for
-  sulfur hexafluoride (SF6) that is used in the semiconductor
-  industry";[^semi-c3-24] the gas is "colorless, odorless,
-  non-flammable, and non-toxic".[^wiki-sf6]
-* **Nitrogen trifluoride.** "a colorless, non-flammable, toxic gas with a
-  slightly musty odor";[^wiki-nf3] NIOSH notes it is "Shipped as a
-  nonliquefied compressed gas".[^niosh-nf3] Linde Engineering offers
-  on-site fluorine generators that replace "nitrogen trifluoride (NF3),
-  chlorine trifluoride (ClF3), sulfur hexafluoride (SF6) and F2/N2
-  mixtures" in chamber cleaning.[^linde-eng-electronics]
-* **Hydrofluorocarbons and perfluorocarbons.** CHF₃, CH₃F ("non-toxic,
-  liquefiable, and flammable"[^wiki-ch3f]), C₂F₆ and c-C₄F₈, the last
-  also investigated "as a possible replacement for sulfur hexafluoride as
-  a dielectric gas".[^wiki-c4f8]
-* **Chlorine and boron trichloride.** Chlorine is a "Greenish-yellow gas
-  with a pungent, irritating odor", "Shipped as a liquefied compressed
-  gas";[^niosh-cl2] Wikipedia's article on boron trichloride links it to its list of
-  highly toxic gases.[^wiki-bcl3]
-* **Hydrogen bromide.** "Colorless gas with a sharp, irritating odor",
-  "Shipped as a liquefied compressed gas".[^niosh-hbr]
+:::{table} Representative etch and chamber-clean gases, as standards and public sources describe them
+:widths: 26 20 54
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Carbon tetrafluoride | SEMI C3.40 | a "specification for carbon tetrafluoride (CF4) that is used in the semiconductor industry"[^semi-c3-40] |
+| Sulphur hexafluoride | SEMI C3.24 | "specifications for sulfur hexafluoride (SF6) that is used in the semiconductor industry";[^semi-c3-24] "colorless, odorless, non-flammable, and non-toxic"[^wiki-sf6] |
+| Nitrogen trifluoride | — | "a colorless, non-flammable, toxic gas with a slightly musty odor";[^wiki-nf3] "Shipped as a nonliquefied compressed gas"[^niosh-nf3] |
+| Hydrofluorocarbons and perfluorocarbons | CHF₃, CH₃F, C₂F₆ and c-C₄F₈ | CH₃F is "non-toxic, liquefiable, and flammable";[^wiki-ch3f] c-C₄F₈ has also been investigated "as a possible replacement for sulfur hexafluoride as a dielectric gas"[^wiki-c4f8] |
+| Chlorine | — | a "Greenish-yellow gas with a pungent, irritating odor", "Shipped as a liquefied compressed gas"[^niosh-cl2] |
+| Boron trichloride | — | listed by Wikipedia among highly toxic gases[^wiki-bcl3] |
+| Hydrogen bromide | — | "Colorless gas with a sharp, irritating odor", "Shipped as a liquefied compressed gas"[^niosh-hbr] |
+:::
+
+Linde Engineering offers
+on-site fluorine generators that replace "nitrogen trifluoride (NF3),
+chlorine trifluoride (ClF3), sulfur hexafluoride (SF6) and F2/N2
+mixtures" in chamber cleaning.[^linde-eng-electronics]
 
 ## At SkyWater
 
@@ -167,7 +177,9 @@ and under "Resist removal/cleans", "Iridia RF microwave, N2, O2, H2, CF4,
 NH3, H2/N2, 40C-270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up
 to 250C".[^skw-01] Read term by term, the page names HBr, Cl₂, NF₃, CF₄,
 CHF₃, SF₆ and C₂F₆; it names no BCl₃, C₄F₈, CH₃F, CH₂F₂, CO or CH₄, no
-gases for the metal etchers, and no dedicated oxide etcher. The filings
+gases for the metal etchers, and no dedicated oxide etcher.
+
+The filings
 name gas suppliers, as quoted on the
 {ref}`process gases <material-process-gases>` page, without naming any
 etch gas.[^sec-01][^sec-02] SkyWater's annual report for fiscal 2023 adds
@@ -183,15 +195,19 @@ reporting under subpart I, electronics manufacturing, in each year from
 2011 to 2023.[^epa-ghgrp-skywater] The
 subpart covers plasma etching and chamber cleaning "using
 plasma-generated F2 atoms and other reactive F2-containing fragments", N₂O
-use and fluorinated heat-transfer fluids.[^epa-ghgrp-subpart-i] For 2023
+use and fluorinated heat-transfer fluids.[^epa-ghgrp-subpart-i]
+
+For 2023
 the public tables give the facility's subpart I emissions as CO₂-equivalent
 values of about 47,100 for perfluorocarbons, 6,110 for
 hydrofluorocarbons, 2,300 for SF₆, 2,140 for other fully fluorinated
 gases and 1,440 for NF₃, against about 101,800 for perfluorocarbons in
-2011;[^epa-ghgrp-skywater] the programme expresses emissions in metric
+2011.[^epa-ghgrp-skywater] The programme expresses emissions in metric
 tons of CO₂ equivalent, computed with GWPs "generally based on the
 IPCC’s Fourth Assessment Report (AR4)", with fifth-assessment values for
-fluorinated gases that have none in AR4.[^epa-ghgrp-fgas] The tables do not give the
+fluorinated gases that have none in AR4.[^epa-ghgrp-fgas]
+
+The tables do not give the
 individual gases, processes or tools, and heat-transfer fluids may
 account for some of the fully fluorinated total (our reading). The totals
 also include by-product gases: a facility reports emissions of each
@@ -204,10 +220,12 @@ that a gas of that group is supplied to a tool.
 The etcher and asher entries are SkyWater statements and rank as
 **strong** evidence, on the scale of the
 {ref}`machines index <machines-reading-evidence>`, that HBr, Cl₂, NF₃,
-CF₄, CHF₃, SF₆ and C₂F₆ are used at the fab; they describe the whole fab
+CF₄, CHF₃, SF₆ and C₂F₆ are used at the fab. They describe the whole fab
 in the 2020s and tie no gas to a step, and they come from silicon and
 poly etchers, not from the tools the step pages assign to the contact,
-via and metal etches.[^skw-01] The EPA record is a regulatory filing and
+via and metal etches.[^skw-01]
+
+The EPA record is a regulatory filing and
 is strong evidence that the Bloomington facility's subpart I processes
 emit perfluorocarbons, hydrofluorocarbons, SF₆ and NF₃ (as input or
 by-product gases), weak for any particular gas being bought and for any
@@ -248,7 +266,8 @@ Steps:
 The steps fall into groups, as the index rows describe them:
 
 * **Front-end etches.** HBr, Cl₂ and O₂ with CF₄ breakthrough for the
-  trench and gate ({ref}`STIE <step-006>`, {ref}`P1ME <step-062>`);
+  trench and gate ({ref}`STIE <step-006>`, {ref}`P1ME <step-062>`).
+
   CF₄, CHF₃ and SF₆ for the nitride, ONO and spacer etches
   ({ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`,
   {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`), with CH₃F or CH₂F₂ as
@@ -280,12 +299,17 @@ None of the SkyWater sources cited here describes the fab's etch-gas
 delivery, exhaust or abatement; the points below are industry practice,
 safety data and regulatory context.
 
-* **Toxic and corrosive gases.** NIOSH lists chlorine with an IDLH of
-  "10 ppm" and a REL of "C 0.5 ppm (1.45 mg/m3)
-  [15-minute]";[^niosh-cl2] hydrogen bromide with an IDLH of "30 ppm" and
-  a REL of "C 3 ppm (10 mg/m3)";[^niosh-hbr] and nitrogen trifluoride
-  with an IDLH of "1000 ppm" and a REL of "TWA 10 ppm (29
-  mg/m3)".[^niosh-nf3] Chlorine "Reacts explosively or forms explosive
+* **Toxic and corrosive gases.** NIOSH lists IDLH and REL values for
+  three of the gases:
+
+  * **Chlorine** — IDLH "10 ppm", REL "C 0.5 ppm (1.45 mg/m3)
+    [15-minute]".[^niosh-cl2]
+  * **Hydrogen bromide** — IDLH "30 ppm", REL "C 3 ppm
+    (10 mg/m3)".[^niosh-hbr]
+  * **Nitrogen trifluoride** — IDLH "1000 ppm", REL "TWA 10 ppm
+    (29 mg/m3)".[^niosh-nf3]
+
+  Chlorine "Reacts explosively or forms explosive
   compounds with many common substances such as acetylene, ether,
   turpentine, ammonia, fuel gas, hydrogen & finely divided
   metals".[^niosh-cl2] These gases are kept in exhausted gas cabinets
@@ -293,11 +317,20 @@ safety data and regulatory context.
 * **Greenhouse gases.** Lifetimes and warming potentials are long and
   large: CF₄ "has an atmospheric lifetime of 50,000 years";[^wiki-cf4]
   Wikipedia's extract of the IPCC fifth assessment (AR5) gives 100-year
-  GWPs of 6630 for CF₄, 11,100 for C₂F₆ and 9540 for c-C₄F₈;[^wiki-pfc]
+  GWPs of 6630 for CF₄, 11,100 for C₂F₆ and 9540 for c-C₄F₈.[^wiki-pfc]
+
   Wikipedia gives CHF₃'s as "14,800 for HFC-23" and NF₃'s as 17,200, both
   citing the fourth assessment (AR4),[^wiki-chf3][^wiki-nf3] and SF₆'s as
   "23,500 times greater" than CO₂'s, citing AR5, beside the AR4 figure of
-  23,900.[^wiki-sf6] Values differ between assessments: Wikipedia's
+  23,900.[^wiki-sf6]
+
+  Put another way: CF₄ "persists in the atmosphere
+  for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential
+  (GWP) 17,200 times greater than that of CO2" (a fourth-assessment
+  value);[^wiki-nf3] SF₆ is, according to the IPCC as Wikipedia reports
+  it, "the most potent greenhouse gas".[^wiki-sf6]
+
+  Values differ between assessments: Wikipedia's
   *Hexafluoroethane* article gives C₂F₆ "a global warming potential
   (GWP) of 9200" without naming an assessment, the figure the
   {ref}`dielectric etcher page <machine-plasma-etcher-dielectric>`
@@ -327,7 +360,9 @@ conditions of their own. SKY130's etch gases, flows and endpoints are not
 public.
 
 * **Named gases on unnamed tools.** SkyWater's gas lists belong to the
-  DPS II, 9400 and 4400 poly/silicon etchers;[^skw-01] the contact, via
+  DPS II, 9400 and 4400 poly/silicon etchers.[^skw-01]
+
+  The contact, via
   and seal-ring pages assign their oxide etches to a dielectric-etcher
   class that SkyWater does not list and so borrow C₂F₆, CF₄ and CHF₃ from
   those entries as evidence that the gases exist at the fab, not that
@@ -339,7 +374,9 @@ public.
   source cited here.
 * **Breakthroughs and caps.** The TiW capacitor plates, and the metal
   stacks' cap on the step pages' reading of it as TiW
-  ({ref}`overview-metal-cap`), need fluorine as well as chlorine; Liu
+  ({ref}`overview-metal-cap`), need fluorine as well as chlorine.
+
+  Liu
   and Kuo etched TiW in CF₄-based mixtures,[^liu-2007-tiw] and a Texas
   Instruments patent that may still be in force is the second published
   account, in the collapsed note below this list. The materials index records that the cap
@@ -358,7 +395,7 @@ public.
   perfluorocarbon emissions, input and by-product gases together, fell
   from about 101,800 to about 47,100 CO₂-equivalent units between 2011
   and 2023, while its NF₃ figure stayed
-  of the order of 1,000–3,500;[^epa-ghgrp-skywater] the public tables do
+  of the order of 1,000–3,500.[^epa-ghgrp-skywater] The public tables do
   not say whether production, process changes or abatement caused this.
 
 :::{dropdown} From a patent shown as in force (US 8,110,414; estimated expiry 2030-01-02) — open to read
@@ -368,19 +405,19 @@ electrodes.[^pat-mim-ti-etch]
 
 ## Related pages
 
-* {ref}`category-etch` — plasma etch mechanisms and the etch steps.
-* {ref}`machine-plasma-etcher-silicon`,
+* **Category.** {ref}`category-etch` — plasma etch mechanisms and the
+  etch steps.
+* **Machines.** {ref}`machine-plasma-etcher-silicon`,
   {ref}`machine-plasma-etcher-dielectric` and
   {ref}`machine-plasma-etcher-metal` — the etchers that consume these
-  gases.
-* {ref}`machine-pecvd`, {ref}`machine-hdp-cvd` and
+  gases. {ref}`machine-pecvd`, {ref}`machine-hdp-cvd` and
   {ref}`machine-tungsten-cvd` — the deposition tools cleaned with NF₃.
-* {ref}`machine-downstream-plasma-asher` — CF₄ on the ashers.
-* {ref}`material-process-gases` — oxygen, argon, nitrogen and helium used
-  with the etch gases.
-* {ref}`material-precursors` — the deposition gases whose chamber films
-  the clean gases remove.
-* {ref}`materials-index` — all consumable classes, including abatement.
+  {ref}`machine-downstream-plasma-asher` — CF₄ on the ashers.
+* **Materials.** {ref}`material-process-gases` — oxygen, argon, nitrogen
+  and helium used with the etch gases. {ref}`material-precursors` — the
+  deposition gases whose chamber films the clean gases remove.
+* **Indexes.** {ref}`materials-index` — all consumable classes, including
+  abatement.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

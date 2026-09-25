@@ -161,3 +161,63 @@ column-budget tension just noted.
 
 Committed as `Material sputter targets: readability pass` (rules R-MODELS,
 R-ENTRIES, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-CAPTION, R-RELATED).
+
+### `etch-gases.md`
+
+Rules applied: R-MODELS (Representative materials and grades: 6 bullets →
+8-row `Material | As supplied | Specification` table, 3 columns from the
+start this time, no phone-width rework needed), R-QUICKFACTS (the Climate
+cell's 3 stacked quotations moved as a group into the "Greenhouse gases"
+bullet, preserving their original adjacency so `check_preserved.py`'s
+number-order pairing of "50,000" with "17,200" still holds; cell shortened
+to a paraphrase + pointer, no quotation left in it at all since none of
+the three could stay without breaking the `≤1 quotation` cap on its own),
+R-PARA (9 over-100-word paragraphs split at topic/citation seams; one
+enumeration sentence — CHF₃/hexafluoroethane/octafluorocyclobutane, each
+separately marked — converted to a bulleted R-LIST instead of split, since
+each item already carried its own marker), R-SENTENCE (8 more sentences
+over 45 words split at an existing semicolon, comma-"and" or quotation
+boundary; one further R-LIST conversion for the fluorine/chlorine/carbon
+enumeration under "What the class is and what it does", and one for the
+three NIOSH IDLH/REL values under "Toxic and corrosive gases"),
+R-CAPTION (no pre-existing uncaptioned tables besides the new one),
+R-RELATED (Related pages: 7 bullets grouped under **Category.** /
+**Machines.** / **Materials.** / **Indexes.**).
+
+A first version of the CHF₃ list item read `**CHF₃** — "is used in
+the semiconductor industry…"`, silently dropping "CHF3" from the front of
+the quotation into the bold label — caught by `check_preserved.py`
+(`LOST quotes` / `LOST identifiers: 'CHF3'`), not by eye; fixed by dropping
+the separate label per R-LIST rule 3 ("if the item already begins with the
+words the label would use … do not repeat them as a separate label") and
+keeping the quotation exactly as written, including "CHF3" inside it.
+
+Skipped, with reasons:
+* R-INTRO — out of scope (see header); the 91-word intro paragraph before
+  the first H2 is unchanged.
+* Quick-facts cells "What they do" (24w, no quotation), "Hazards" (17w,
+  3 quotations — all three duplicate the "Toxic and corrosive gases"
+  bullet) and "SkyWater evidence" (38w, mostly duplicate) left over cap
+  or over the 1-quotation limit for the reasons in the recurring finding.
+
+Over-cap counts, before → after:
+* paragraphs > 100 words: 9 → 1 (the R-INTRO-scoped lead paragraph).
+* sentences > 45 words: 9 → 1 (a blockquote of raw SkyWater tool-model
+  text, not real prose — R-SENTENCE does not apply to a quoted block that
+  cannot be split without altering the quotation).
+* tables with no caption: 1 → 0 (the one new table).
+
+`check_preserved.py --base main --allow-regrouped`: 0 undeclared
+differences, **no `--allow-added` needed at all** (every relocation this
+time kept exact adjacency or exact wording, so no category's count
+changed). `REGROUPED` printouts (3, from the R-MODELS split and one
+R-LIST conversion of the NIOSH bullet): hand-checked, digits reappear in
+order in each case.
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+`-W` build (fresh, `-E`): clean. Screenshots at 400 px: the R-MODELS
+table wraps cleanly (3 columns from the start avoided the sputter-targets
+overflow).
+
+Content/guide problems: none beyond the two recurring findings above.
