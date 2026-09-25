@@ -64,6 +64,25 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 028-pwi2.md — done (one in-force dropdown, content untouched)
+
+Rules applied: R-SENTENCE (the "characterised in the PDK" sentence; the two "Why this step
+exists" bullets, each split into lead + indented continuation), R-HEDGE step 1 (italic
+lead-in), R-TOOLS (2 "Strength:" bullets split, one with an indented continuation for its long
+"Runs this step" elaboration; no recap table), R-RELATED (`Previous:`/`Next:`/`Mask:` split;
+`Same category:`, `Feeds:` labels), R-OPENQ (bold labels on both bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 0 → 0; list items > 60 words 3 → 0;
+sentences > 45 words 3 → 0; table cells > 25 words 0 → 0. Clean measurement, no figure-caption
+issue on this page (short caption).
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/028-pwi2.md`:
+`quotes`, `hedges` and plain `numbers` (condition (a)) show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for two tuples — "0.75" (vertical dimension, now alone in a
+split sentence), one of two "8250" mentions, and "100–200" (the 8250's keV band, now alone in
+its own sentence) — all the familiar Guide-problem-11 pattern. All other checkers pass; `-W`
+build clean. Screenshots (desktop + 400 px) read cleanly top to bottom.
+
 ### 027-pwi.md — done (one in-force dropdown, content untouched)
 
 Rules applied: R-PARA/R-SENTENCE throughout (lead paragraph — the first sentence needed a
