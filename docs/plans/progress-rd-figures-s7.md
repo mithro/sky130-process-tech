@@ -1,6 +1,6 @@
 # Progress — rd-figures-s7 (W1c, series S7: pre-metal dielectric, contact, silicide and local interconnect, steps 089–106)
 
-Status: **complete**, awaiting review. 18 figures, one per step, on `topic/rd-figures-s7`.
+Status: **complete**; review round done, awaiting re-review. 18 figures, one per step, on `topic/rd-figures-s7`.
 
 ## What was done
 
@@ -148,3 +148,57 @@ patent key.
   done (S6 made the same call for spacers).
 * The field-oxide height inherited from S4–S6 (29 u above the 1.8 V surface) drives the polish
   level; any later change to it must re-derive CMPP's level.
+
+## Review round (tmp review rd-figures-s7: approve with fixes)
+
+All items done.
+
+* **H1:** 092 hides the N⁺ label (caption lists the doped regions as unlabelled). **Generator:**
+  lint 18 now also measures risers: a leader may not rise more than `max-riser-traverse` (40 u)
+  through more than `max-riser-layers` (3) other films, where a vertical line reads as a contact
+  or a plug. Thresholds chosen from the existing series: every riser over 40 u on `main` crosses
+  at most three layers (a resist block, a fill, or oxide over silicon; the longest, 111 u, is the
+  iso liner up through the field oxide), while 092's crossed five. Selftest (stack refused, one
+  fill accepted); every figure re-linted clean.
+* **M1:** new figure field `routes` (`right | over | top | auto`) overrides a series route;
+  097–099 give the liner and tungsten `right` (straight runs), 100 gives the tungsten `auto`
+  (right in the blanket panel, over from the plug). **Generator:** an over-route riser keeps
+  8 u off both drawing edges; new lint "dot within 3 u of its drawing's edge" (cross-sections
+  only; a stack chart's dots sit on its bar by design), selftest. This also moved the dot of
+  poly-048/049/050's gate film, which sat on the edge, 8 u in.
+* **M2 (one rule, generator):** in a close-up a faded film keeps its own fill inside the dashed
+  outline (class `ghost`, CSS emitted only where used); at full-slice scale it stays unfilled.
+  Documented in figure-authoring.md and in the conventions page row. Regenerated the S6
+  close-ups (065, 066, 069, 075–077, 080, 086, 088), which carry the faded trench liner.
+* **M3 (generator):** a close-up emulates its series on a grid finer by the enlargement
+  (dx = 0.5 / ceil(zoom)), so tapered walls are straight lines; the S6 close-ups regenerate with
+  it (their sloped trench and spacer edges also smooth). Build time for a close-up ~14 s.
+* **M4:** 089 before drops the spacer-oxide label; 095 after drops the glass label; both declared.
+* **M5:** 091, 100 and 103 captions state the polish-level drawing (glass stays over the gate).
+* **M6:** "of the order of" restored on 097 and 099 (099 quotes it, so the caption does not
+  echo the lead); "about" dropped from 095's 0.08 µm.
+* **Lows:** L1 "p-type poly, resistor head" on 089 and 095, 094 callout "Poly contact hole";
+  L2 no "dark" wording (captions and alts say purple / same colour); L3 header says 16 u; L4 as
+  L1; L5 104 hides the LI label; L6 098 caption says nothing is traced; L7 the right-hand LI pad
+  now runs on over the gate (x 178–250), so NILD2 is flat to the edge (102, 103, 105, 106 texts
+  updated); L8 noted below; L9 the silicide note drops "we infer" (the tag says it).
+* QA: all 18 re-shot in light and dark at desktop and 400 px after the last change, every tile
+  opened, plus the regenerated S6 close-ups 065, 069, 086 and poly-048; built pages 092, 097,
+  099 at 1280 and 400 px.
+
+## For the generator before S8 (ruling: acceptable as declared for S7 only)
+
+* **Conformal deposit.** `deposit` dilates with a square element, so a film over a step keeps
+  square corners, fills the bottom corners of a tapered hole (097–100: the liner) and merges
+  bumps within 2t into terraces (089 PSG, 105 NILD2). It should dilate with a round (or
+  chamfered) element of radius t, and, inside a hole, grow normal to each wall, so a liner has
+  even thickness on a sloped wall and leaves a rounded, open bottom; vias and plugs of S8/S9 will
+  otherwise inherit narrowed plugs.
+* **PSG and ILD profiles.** A gap-filling glass should be emulated by a deposit that fills gaps
+  up to an aspect ratio and then copies the surface with a smoothing length (HDP: peaked profile
+  over narrow lines, flat over wide ones), instead of square dilation's terraces.
+* **Etch walls.** With the finer close-up grid, taper walls render straight; a dedicated
+  straight-edge polygon for `taper_deg` walls would make full-slice walls exact too.
+* **Silicide against tungsten** (review L8): ΔE 2.1/4.2 for deuteranopes, told apart only by
+  tungsten's cross-hatch. They never touch in S7 (the liner is between); check it if a later
+  plug sits directly on a silicide.
