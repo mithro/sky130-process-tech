@@ -836,3 +836,30 @@ The sibling of nsdm; the same treatment throughout.
 * **tunm:** the second in-force note holds a 126-word paragraph with 66- and 60-word sentences; no edit
   is allowed inside a note.
 * No arithmetic or factual doubts found in the eighteen pages.
+
+## Review round 1 (review `tmp/reviews/rd-masks-b.md`: approve with fixes, 1 High / 3 Medium / 10 Low)
+
+One commit per page; main's `check_preserved.py` (with `words`) run on every touched page with
+`--allow-regrouped` only.
+
+* **H1 tunm, vim3, vim4** — `[^pdk-06]` added to the first half of the split `gds_layers.csv` sentence
+  (three ADDED markers).
+* **M1 nwm** — the ASML comparison rejoins the placement-rule sentence; to keep the paragraph under 100
+  words it now breaks after the Table 3b/3e sentence instead. **M2 pwbm** — caption "Parameters of
+  *Criteria & Assumptions* that bear on the mask; none is stated as a rule for it, as published".
+  **M3 tunm** — the "Plates on runs with no drawn `tunm`" bullet split before "Because" (main's R-PARA 2).
+* **L1** p1m "the poly mask is the mask …"; **L2** p1m `**Table 7** ("Other criteria and parameters") —`,
+  "rule x.9" lower case; **L3** rpm "the RRPM and URPM mask pages", rrpm URPM step link under **Steps.**
+  (mask page gloss "the ultra-high-resistor mask's page"); **L4** nsm: recorded as a scope judgement —
+  the base's one "(inferences on those pages)" closed a sentence covering both the NSM and NSME
+  readings, so each piece keeps it; **L5** onom break moved up so the note and "The site gives no source
+  for either statement" share a paragraph; pdm run-in joined to the Table F4 sentence (the `rdl` rules
+  start the next paragraph); **L6** urpm "through the windows", vim "the type is", vim2/vim3 "read from
+  `560`/`575`", vim2 "The via2.1b–e sizes"; **L7** vim4 pad-via description cells `—`; **L8** not changed
+  (ntm's Value cells are all numbers, right-aligned; nwm's hold prose, left-aligned — as the rule
+  says); **L9** not done (optional); **L10** nwm "It points to …", rpm "On the step page's reading,
+  anti-reflective coating is optional …" (the hedge the review worded), pwdem "Its details text …" with
+  `[^pdk-07]` on both halves.
+* **Rulings D1–D3** written into the guide (R-PARAMS step 5, R-RELATED step 2, R-H3 step 2).
+* **Section E (onom/tunm in-force passages)** not touched; it goes to a separate branch.
+* Batch after the round: paragraphs > 100 words 1 (in tunm's note), items 0, sentences 51, cells 37.
