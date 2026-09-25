@@ -1,0 +1,331 @@
+# S2 — the well and channel-implant module, steps 014-034.
+#
+# One geometry for the whole module; a figure is "the state after step N". Thicknesses are
+# DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# The module starts from the wafer the isolation series (series-isolation.yaml) ends in, so
+# steps 002-013 are repeated here with the same geometry: x runs 0..268, active 0-80, field
+# (the filled trench) 80-188, active 188-268. This series is drawn outside a deep N-well
+# region, as the isolation figures for steps 010-013 are, so the deep N-well steps 007-009
+# are left out: none of the step pages 014-034 describes a slice through that tub except
+# for the drain-extended well of steps 030-032, whose windows therefore lie outside this
+# slice.
+#
+# The left active area is an NMOS area and the right one a PMOS area. Every mask edge of the
+# module is drawn at x = 134, the middle of the field between them: the NWM page says the
+# well edge "must sit inside the isolation between the NMOS and PMOS active areas", and the
+# PWBM page that the two well edges meet there. Which side a threshold mask opens follows
+# the page: LVTNM's polarity is not public, and its window is drawn over the NMOS side only
+# so that both sides of a resist edge can be seen (the caption says so); HVTPM opens over a
+# PMOS on either of the two readings its page sets out; PWBM is a block mask that leaves
+# resist over the N-well; PWDEM opens only regions of the 20 V devices inside a deep N-well
+# tub, none of which lies in this slice.
+#
+# Well depths: the PDK gives a baseline N-well vertical dimension of 1.1 um and a P-well
+# vertical dimension of 0.75 um (pdk-03, cited on the NWI and PWI pages). They are drawn
+# 112 u and 76 u deep, in that ratio to each other and NOT to scale against anything else;
+# no well profile is drawn (the PDK gives a peak and a depth, not a shape). The wells run
+# continuously under active and field alike, as the NWI page says.
+#
+# Channel implants: their type (n or p) is not public for any of them, so they are drawn in
+# the neutral "implant" material, as a thin band at the surface of the active silicon only
+# (the pages have them enter "the active silicon" through the pad oxide), and drawn over a
+# well made after them (z: 1). The depth and profile of each is not public, so a later
+# channel implant into the same active area (PCHI and PNCHI into the PMOS band made at LVTPI)
+# changes no geometry; neither do the second member of each well pair (NWI2, PWI2), whose
+# depth relative to the first is not public, nor the anneal RTAI. Those figures say so.
+#
+# Implant tilt is drawn as 0: no page gives the SKY130 tilt, only typical practice.
+#
+# Series labels carry no numbers; numbers live in the per-figure label overrides, where each
+# can carry a footnote key defined on its own page.
+# Label notes: the newest layers keep theirs first (see gen_figures.py, note_order).
+note_order: newest
+substrate:
+  material: si-sub
+  depth: 160
+  label:
+    title: "Silicon wafer"
+    basis: public
+ops:
+  # ---- steps 002-013, as in series-isolation.yaml (without the deep N-well, 007-009)
+  - step: "002"
+    op: deposit
+    id: padox
+    material: oxide-thermal
+    t: 5
+    label:
+      title: "Pad oxide"
+      note: "from BOX, step 002; still in place, we infer"
+      basis: inferred
+  - step: "003"
+    op: deposit
+    id: isonit
+    material: nitride
+    t: 24
+    label:
+      title: "Nitride hard mask"
+      basis: public
+  - step: "004"
+    op: deposit
+    id: fomres
+    material: resist
+    t: 38
+    where: [[0, 79.5], [188.5, 268]]
+    label:
+      title: "Photoresist"
+      basis: public
+  - step: "005"
+    op: etch
+    materials: [nitride, oxide-thermal]
+    where_open: fomres
+  - step: "006"
+    op: etch
+    materials: [si-sub]
+    where_open: fomres
+    depth: 56
+    taper_deg: 9
+    corner_r: 9
+  - step: "006"
+    op: strip
+    materials: [resist]
+  - step: "010"
+    op: deposit
+    id: liner
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Liner oxide"
+      basis: public
+  - step: "011"
+    op: deposit
+    id: fox
+    material: oxide-dep
+    fill_to: 60
+    route: right
+    anchor_x: 164
+    anchor_y: -24
+    label:
+      title: "Fill oxide"
+      basis: public
+  - step: "012"
+    op: planarise
+    stop_on: nitride
+  - step: "013"
+    op: strip
+    materials: [nitride]
+
+  # ---- the low-Vt NMOS mask, implant and strip
+  - step: "014"
+    op: deposit
+    id: lvtnres
+    material: resist
+    t: 38
+    where: [[134, 268]]
+    label:
+      title: "Photoresist"
+      note: "LVTNM, step 014; which regions it opens is not public"
+      basis: public
+  - step: "015"
+    op: dope
+    id: chn
+    material: implant
+    where: [[0, 78]]
+    follow: surface
+    from_surface: 0
+    thickness: 10
+    anchor_y: -7
+    z: 1
+    label:
+      title: "LVTNI channel implant"
+      note: "LVTNI, step 015; its type and extent are not public"
+      basis: public
+  - step: "015"
+    op: ions
+    where_open: lvtnres
+    tilt_deg: 0
+    label:
+      title: "Channel implant"
+      note: "species, energy and dose are not public"
+      basis: public
+  - step: "016"
+    op: strip
+    materials: [resist]
+
+  # ---- the N-well mask and the three implants through it
+  - step: "017"
+    op: deposit
+    id: nwres
+    material: resist
+    t: 44
+    where: [[0, 134]]
+    label:
+      title: "Thick photoresist"
+      note: "N-well mask, NWM, step 017; its thickness is inferred"
+      basis: inferred
+  - step: "018"
+    op: dope
+    id: nwell
+    material: well-n
+    where_open: nwres
+    follow: flat
+    y_top: 0
+    y_bot: -112
+    anchor_y: -60
+    label:
+      title: "N-well"
+      note: "retrograde (NWI, step 018)"
+      basis: public
+  - step: "018"
+    op: ions
+    where_open: nwres
+    tilt_deg: 0
+    label:
+      title: "N-well implant"
+      note: "phosphorus, we infer, at high energy"
+      basis: inferred
+  - step: "019"
+    op: ions
+    where_open: nwres
+    tilt_deg: 0
+    label:
+      title: "Second N-well implant"
+      note: "a second phosphorus dose, we infer"
+      basis: inferred
+  - step: "020"
+    op: dope
+    id: chp
+    material: implant
+    where: [[190, 268]]
+    follow: surface
+    from_surface: 0
+    thickness: 10
+    anchor_y: -7
+    z: 1
+    label:
+      title: "PMOS channel implant"
+      note: "LVTPI, step 020; its type is not public"
+      basis: public
+  - step: "020"
+    op: ions
+    where_open: nwres
+    tilt_deg: 0
+    label:
+      title: "PMOS channel implant"
+      note: "species, energy and dose are not public"
+      basis: public
+  - step: "021"
+    op: strip
+    materials: [resist]
+
+  # ---- the high-Vt PMOS mask and its two implants
+  - step: "022"
+    op: deposit
+    id: hvtpres
+    material: resist
+    t: 38
+    where: [[0, 134]]
+    label:
+      title: "Photoresist"
+      note: "high-Vt PMOS mask, HVTPM, step 022"
+      basis: public
+  - step: "023"
+    op: ions
+    where_open: hvtpres
+    tilt_deg: 0
+    label:
+      title: "High-Vt channel implant"
+      note: "species, energy and dose are not public"
+      basis: public
+  - step: "024"
+    op: ions
+    where_open: hvtpres
+    tilt_deg: 0
+    label:
+      title: "Second high-Vt implant"
+      note: "BF₂ on this reference's inference"
+      basis: inferred
+  - step: "025"
+    op: strip
+    materials: [resist]
+
+  # ---- the P-well block mask and the two P-well implants
+  - step: "026"
+    op: deposit
+    id: pwbres
+    material: resist
+    t: 44
+    where: [[134, 268]]
+    label:
+      title: "Thick photoresist"
+      note: "PWBM, step 026; left over the N-well, we infer"
+      basis: inferred
+  - step: "027"
+    op: dope
+    id: pwell
+    material: well-p
+    where_open: pwbres
+    follow: flat
+    y_top: 0
+    y_bot: -76
+    anchor_x: 126
+    anchor_y: -70
+    label:
+      title: "P-well"
+      note: "retrograde (PWI, step 027)"
+      basis: public
+  - step: "027"
+    op: ions
+    where_open: pwbres
+    tilt_deg: 0
+    label:
+      title: "P-well implant"
+      note: "boron, inferred"
+      basis: inferred
+  - step: "028"
+    op: ions
+    where_open: pwbres
+    tilt_deg: 0
+    label:
+      title: "Second P-well implant"
+      note: "a second boron dose, we infer"
+      basis: inferred
+  - step: "029"
+    op: strip
+    materials: [resist]
+
+  # ---- the drain-extended P-well mask: its windows lie outside this slice
+  - step: "030"
+    op: deposit
+    id: pwderes
+    material: resist
+    t: 44
+    where: [[0, 268]]
+    label:
+      title: "Thick photoresist"
+      note: "PWDEM, step 030; its windows lie outside this slice"
+      basis: inferred
+  - step: "031"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label:
+      title: "Drain-extended well implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "032"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label:
+      title: "Second drain-extended dose"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "033"
+    op: strip
+    materials: [resist]
+
+  # ---- the anneal: no geometry change this drawing can support (see wells-034-rtai.yaml)
+  - step: "034"
+    op: anneal
