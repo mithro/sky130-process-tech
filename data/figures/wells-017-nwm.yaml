@@ -4,25 +4,24 @@ page: docs/steps/017-nwm.md
 series: series-wells.yaml
 crop_depth: 84
 alt: >-
-  Two cross-sections of the wafer, one above the other. Before the step the oxide surface is bare,
-  with a thin implanted band under the left-hand active area. After it a thick block of photoresist
-  covers the left-hand part of the drawing up to the middle of the trench, and the right-hand active
-  area and the right half of the trench lie in an open window.
+  Two cross-sections of the wafer, one above the other. Before the step the oxide surface is bare.
+  After it a thick block of photoresist covers the left-hand part of the drawing up to the middle of
+  the trench, and the right-hand active area and the right half of the trench lie in an open window.
 caption: >-
   Before, the bare oxide surface; after, a thick resist over the NMOS side and a window over the
   future N-well. The PDK's mask table lists "N-Well*, NWM" as used in SKY130.[^pdk-05] The resist
   edge is drawn in the middle of the trench because the well edge has to fall inside the isolation
   between NMOS and PMOS; no layout is being shown. The resist thickness is this reference's
   inference, and that the three implants which follow share this one resist is its
-  reading.[^txt-01] The liner oxide is drawn faded. Not to scale.
+  reading.[^txt-01] The NMOS channel implant and the liner oxide are drawn faded. Not to scale.
 arrow:
   title: "NWM, step 017"
-  note: "A thick resist is coated, exposed through the N-well mask and developed, opening windows over the future N-wells."
+  note: "A resist, thick on this reference's inference, is coated, exposed through the N-well mask and developed over the future N-wells."
 panels:
   - state_after: "016"
     title: "Before: the cleaned wafer after LVTNIS (step 016); NMOS left, PMOS right"
-    dim_layers: [liner]
+    dim_layers: [liner, chn]
   - state_after: "017"
     title: "After: thick resist over the NMOS side, a window over the future N-well"
-    dim_layers: [liner]
+    dim_layers: [liner, chn]
     highlight: {where: [[0, 134]]}

@@ -9,9 +9,9 @@ alt: >-
   N-well on the right.
 caption: >-
   Before, the PWDEM resist over the whole slice; after, the resist gone and the oxide bare over both
-  wells, ready for the anneal. The page assumes that the pad oxide is kept through the anneal, so it is
-  drawn in place; whether it is kept is not stated publicly. The two channel-implant bands and the
-  liner oxide are drawn faded. Not to scale.
+  wells, ready for the anneal. The page assumes that the pad oxide is kept through the anneal, so it
+  is drawn in place; whether it is kept is not stated publicly. The NMOS channel implant, the PMOS
+  channel implant and the liner oxide are drawn faded. Not to scale.
 arrow:
   title: "PWDEIS, step 033"
   note: "The implanted resist is ashed and stripped, and the wafer is given a full clean before the anneal."

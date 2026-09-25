@@ -26,7 +26,7 @@ resist is stripped at {ref}`PWDEIS <step-033>`.
 :width: 560px
 :name: fig-wells-030-pwdem
 
-Before, the bare wafer over both wells; after, thick resist over the whole slice. This mask opens windows only over parts of the 20 V devices, whose `pwde` regions lie inside a deep-N-well tub;[^pdk-periph] this slice, drawn outside a deep N-well region like the rest of the module, is an ordinary NMOS and PMOS pair and stays covered. The resist thickness is inferred. The PDK's mask table leaves the mask's "Used in SKY130" column blank, which this reference treats as a documentation inconsistency.[^pdk-05] The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+Before, the bare wafer over both wells; after, thick resist over the whole slice. This mask opens windows only over parts of the 20 V devices, whose `pwde` regions lie inside a deep-N-well tub;[^pdk-periph] this slice, drawn outside a deep N-well region like the rest of the module, is an ordinary NMOS and PMOS pair and stays covered. The resist thickness is inferred. The PDK's mask table leaves the mask's "Used in SKY130" column blank, which this reference treats as a documentation inconsistency.[^pdk-05] The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
 The drawn layer is `pwde` (GDS 124:20), "Regions to receive p-well

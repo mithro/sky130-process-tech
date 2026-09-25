@@ -22,7 +22,7 @@ for the last mask of the module, {ref}`PWDEM <step-030>`.
 :width: 560px
 :name: fig-wells-029-pwis
 
-Before, the block resist after its two implants; after, the resist gone and the oxide bare over both wells. The pad oxide is drawn as still in place, which the page infers: it still has to screen the two drain-extended implants. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+Before, the block resist after its two implants; after, the resist gone and the oxide bare over both wells. The pad oxide is drawn as still in place, which the page infers: it still has to screen the two drain-extended implants. The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
 The resist is a thick (about 2 µm class, inferred on the

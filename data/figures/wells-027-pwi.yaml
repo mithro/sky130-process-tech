@@ -12,11 +12,13 @@ alt: >-
 caption: >-
   Before, the block resist over the N-well; after, a beam on the open part of the slice and the P-well
   under it, drawn from the silicon surface to a flat bottom. The PDK's process assumptions give a
-  P-well peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm and a vertical dimension of 0.75 µm;[^pdk-03] the well is
-  drawn shallower than the N-well in the ratio of the PDK's two depths, but not to scale against
-  anything else, and no doping profile is drawn. Boron is inferred; the energy, dose and tilt are not
-  public, and the arrows are drawn vertical. The two channel-implant bands and the liner oxide are
-  drawn faded. Not to scale.
+  P-well peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm and a vertical dimension of 0.75 µm, against a baseline
+  N-well vertical dimension of 1.1 µm;[^pdk-03] the P-well is drawn shallower than the N-well in that
+  ratio, but not to scale against anything else (the trench is drawn deeper relative to the wells
+  than it is), and no doping profile is drawn. The two wells are drawn meeting in the middle of the
+  trench, where the PWBM page infers the two well edges meet. Boron is inferred; the energy, dose
+  and tilt are not public, and the arrows are drawn vertical. The NMOS channel implant, the PMOS
+  channel implant and the liner oxide are drawn faded. Not to scale.
 arrow:
   title: "PWI, step 027"
   note: "Ions are implanted at high energy into everything the P-well block resist leaves open."
@@ -25,7 +27,7 @@ panels:
     title: "Before: the P-well block resist from PWBM (step 026); NMOS left, PMOS right"
     dim_layers: [liner, chn, chp]
   - state_after: "027"
-    title: "After: the P-well under the opening, meeting the N-well in the trench"
+    title: "After: the P-well under the opening"
     dim_layers: [liner, chn, chp]
     labels:
       pwell:

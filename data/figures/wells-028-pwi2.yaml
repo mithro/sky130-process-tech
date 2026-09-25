@@ -3,25 +3,19 @@ kind: xsection
 page: docs/steps/028-pwi2.md
 series: series-wells.yaml
 crop_depth: 128
+no_drawn_change: true
 alt: >-
-  Two cross-sections of the wafer, one above the other. Before the step the P-well lies under the open
-  left-hand part of the drawing beside the thick resist over the N-well. After it a second set of
-  arrows comes down on the same opening; the drawing of the well is unchanged.
+  One cross-section of the wafer. Thick resist covers the N-well on the right; the P-well lies under
+  the open left-hand part of the drawing, and arrows come down on that opening. The drawing is the
+  same as the state before the step.
 caption: >-
-  Before, the P-well from PWI under the open part of the slice; after, a second beam on the same
-  opening and the well drawn unchanged. That PWI2 is a second boron dose at another energy is this
-  reference's inference;[^txt-01] whether it is the shallower or the deeper member of the pair is not
-  public, so the drawing does not divide the well between the two implants. The arrows are drawn
-  vertical because the tilt is not public. The two channel-implant bands and the liner oxide are drawn
-  faded. Not to scale.
-arrow:
-  title: "PWI2, step 028"
-  note: "A second P-well implant goes through the same block-mask opening, directly after PWI."
+  At PWI2 a second P-well implant goes through the same block-mask opening, directly after PWI; the
+  drawing is the state at this step, which is the same as before it. That PWI2 is a second boron dose
+  at another energy is this reference's inference;[^txt-01] whether it is the shallower or the deeper
+  member of the pair is not public, so the drawing does not divide the well between the two implants.
+  The arrows are drawn vertical because the tilt is not public. The NMOS channel implant, the PMOS
+  channel implant and the liner oxide are drawn faded. Not to scale.
 panels:
-  - state_after: "027"
-    title: "Before: the P-well implanted at PWI (step 027); NMOS left, PMOS right"
-    dim_layers: [liner, chn, chp]
-    show_ions: false
   - state_after: "028"
-    title: "After: a second dose into the same opening; the drawn well is unchanged"
+    title: "State at this step (no drawn change)"
     dim_layers: [liner, chn, chp]

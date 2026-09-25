@@ -31,11 +31,11 @@ the {term}`SONOS` module ({ref}`TUNM <step-035>`) and then gate oxidation
 ({ref}`GOX100 <step-043>`).
 
 :::{figure} /_static/figures/wells-034-rtai.svg
-:alt: Two cross-sections of the wafer, one above the other and identical: pad oxide over a P-well on the left and an N-well on the right, which meet under the middle of an oxide-filled trench, with a thin implanted band at the surface of each active area.
+:alt: One cross-section of the wafer: pad oxide over a P-well on the left and an N-well on the right, which meet under the middle of an oxide-filled trench, with a thin implanted band at the surface of each active area. The drawing is the same as the state before the step.
 :width: 560px
 :name: fig-wells-034-rtai
 
-The same drawing before and after the anneal. RTAI repairs the implant damage and activates the implants of the module; no public source says how far it moves any of the wells or channel bands, so no diffusion is drawn and the geometry does not change. The anneal's temperature, time and ambient are not public. The pad oxide is drawn in place, as the pages assume; whether it is present during the anneal is not stated publicly. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+The state the module leaves: at RTAI the wafer is heated to repair the implant damage and activate the implants of the module, and the drawing is the same as before it. No public source says how far the anneal moves any of the wells or channel bands, so no diffusion is drawn. The anneal's temperature, time and ambient are not public. The pad oxide is drawn in place, as the pages assume; whether it is present during the anneal is not stated publicly. The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
 The only other anneal the wells have seen is incidental: the deep

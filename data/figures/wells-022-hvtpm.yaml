@@ -11,10 +11,11 @@ alt: >-
 caption: >-
   Before, the bare wafer with its N-well; after, resist over the NMOS side and a window over the PMOS.
   The PDK's mask table lists "High Vt PCh*, HVTPM".[^pdk-05] The page sets out two readings of the
-  opening — over the drawn `hvtp` devices only, or over most low-voltage N-well outside `lvtn` — and
-  the PMOS area drawn here lies in the window on either; which matches the plate is not
-  public.[^pdk-errors] The resist edge in the trench is illustrative. The LVTNI band and the liner
-  oxide are drawn faded. Not to scale.
+  opening — over the drawn `hvtp` devices only, or over most low-voltage N-well outside `lvtn` — and,
+  taking this PMOS as a high-Vt (`hvtp`) device, as the whole slice is read (an NMOS beside a
+  high-Vt PMOS), it lies in the window on either; which matches the plate is not
+  public.[^pdk-errors] The resist edge in the trench is illustrative. The NMOS channel implant and
+  the liner oxide are drawn faded. Not to scale.
 arrow:
   title: "HVTPM, step 022"
   note: "Resist is coated, exposed through the high-Vt PMOS mask and developed, opening windows over PMOS channels."

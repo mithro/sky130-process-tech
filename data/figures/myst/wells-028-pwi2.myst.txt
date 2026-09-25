@@ -1,7 +1,7 @@
 :::{figure} /_static/figures/wells-028-pwi2.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step the P-well lies under the open left-hand part of the drawing beside the thick resist over the N-well. After it a second set of arrows comes down on the same opening; the drawing of the well is unchanged.
+:alt: One cross-section of the wafer. Thick resist covers the N-well on the right; the P-well lies under the open left-hand part of the drawing, and arrows come down on that opening. The drawing is the same as the state before the step.
 :width: 560px
 :name: fig-wells-028-pwi2
 
-Before, the P-well from PWI under the open part of the slice; after, a second beam on the same opening and the well drawn unchanged. That PWI2 is a second boron dose at another energy is this reference's inference;[^txt-01] whether it is the shallower or the deeper member of the pair is not public, so the drawing does not divide the well between the two implants. The arrows are drawn vertical because the tilt is not public. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+At PWI2 a second P-well implant goes through the same block-mask opening, directly after PWI; the drawing is the state at this step, which is the same as before it. That PWI2 is a second boron dose at another energy is this reference's inference;[^txt-01] whether it is the shallower or the deeper member of the pair is not public, so the drawing does not divide the well between the two implants. The arrows are drawn vertical because the tilt is not public. The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::

@@ -143,3 +143,85 @@ figure changed.
 * Left for the reviewer: the neutral `implant` colour and `dim_layers` are new site-wide
   conventions (the conventions page explains both); an owner may prefer n/p colours with
   the page's reading tagged instead.
+
+## Review round (independent review "approve with fixes"; coordinator rulings)
+
+Every High and Medium is fixed, and every Low; the rulings on the three owner decisions are
+applied. Nothing on the pages changed except the generated figure blocks (and 015's block
+moving below its dropdown); `check_preserved.py` against `main` shows only the blocks' own
+additions, plus the one regenerated caption line of `iso-008-dni`.
+
+**H1 — leaders that read as film boundaries.** Fixed in the generator, for both series:
+* two SVG lint rules: a label leader may not run more than `max-leader-traverse` (40 u)
+  horizontally through materials other than the one it names, nor more than `max-edge-run`
+  (20 u) within `edge-clearance` (4 u) of a horizontal material edge; and a third: no
+  leader may cut through an ion beam;
+* routing: a right-column leader keeps its dot to the heights where it breaks neither rule;
+  where there are none, the leader takes a new `over` route — up out of its layer at the
+  column with least material above it (clear of walls, mask edges, ion arrows and the risers
+  of labels above the drawing), across above the surface, then to its label. The LVTNI band
+  on 015–016 is labelled this way (its leader leaves the band upwards through the pad oxide,
+  instead of running through the trench), and it is faded from 017 on;
+* a halo is drawn only where a leader crosses a material other than its own, never over the
+  layer it names (the white notch on the PMOS band is gone);
+* ions take `label_x`, so the beam's label can rise where it does not block these routes.
+In the isolation series the liner, the deep N-well and (on 012) the fill oxide now take the
+over route; nothing else there moved. On 018–020 and 023–024, where the beam is over the
+N-well and every route for the fill oxide's label would cross it, the fill oxide is drawn but
+not labelled (`hide_labels`) and the caption says so — faded, it would show the trench as
+empty.
+*Before:* `tmp/rv/shots/Z1-01.png`, `Z3-crop.png` (reviewer's). *After:*
+`tmp/shots/fix-015-lvtni-d-01.png`, `tmp/shots/s014-light-phone-01.png`,
+`tmp/shots/s028-light-desktop-01.png`, `tmp/shots/iso2-light-desktop-04.png`.
+
+**H2 / ruling (a) — faded layers and the implant colour.** A faded layer is now a hue-free
+ghost: no fill, no pattern, a dashed `ink-muted` outline (`faded-fill-opacity: 0`,
+`faded-dash`). The channel implant has no colour of its own: vertical ink hatching over the
+silicon's colour (`fill: none`, pattern `vlines-ink`), so it cannot be read as resist and
+does not hide the well under it. `palette` now composites every material, faded, over every
+host (ground, substrate, N-well, P-well, deep N-well) and reports anything a faded layer
+could be mistaken for; a selftest shows it catches a 35 % tint. The conventions page and the
+legend regenerate. *Before:* `tmp/rv/shots/Z3-crop.png`, `H-light-desktop-08.png`. *After:*
+`tmp/shots/s028-light-desktop-02.png`, `tmp/shots/s028-dark-phone-01.png`.
+
+**Ruling (b) — one panel for no drawn change.** Spec option `no_drawn_change: true`: one
+panel, titled "State at this step (no drawn change)", no arrow (its text is in the caption).
+Lint: such a figure must really equal the step before, and two identical panels are an error.
+Applied to 019, 023, 024, 028, 031, 032 and 034; the conventions page explains it.
+
+**Ruling (c) — placement.** A dropdown right after the lead belongs to the lead; the figure
+goes after it. `--check` refuses a block followed directly by a dropdown. 015's block moved;
+the rule is in `figure-authoring.md` §7 (with "never the last element of a page", Low 8).
+
+**Mediums.** M1: 034's arrow text is gone (one panel; the caption keeps "ambient … not
+public"); the "PMOS channel implants" labels are `inferred`; 014/015/022 captions and the
+series comment state the device reading ("an NMOS beside a high-Vt PMOS"); 015 says its
+window side is illustrative and 014's after-title says "(illustrative)"; 027's well meeting
+is hedged as the PWBM page's inference and dropped from its title; 018 carries the page's
+"infers" for continuity under the field; 030's resist note is "it opens only inside
+deep-N-well tubs", `public`, and 031/032 declare the slice. M3: every faded layer's series
+title must appear in the caption. M4: series ops are type-checked (numbers, `route`,
+`note_order`, unknown top-level fields), named anchors must fall 3 u inside their layer, and
+`route`, `tilt_deg`, `label_x`, `min-hang-width` and the routing tokens are documented.
+M5: beams are named by step ("NWI implant"), bands by device ("NMOS channel implant").
+M6: by ruling (a).
+
+**Lows.** 1 hedges trimmed from notes that carry the tag; 2 "thick" hedged in the arrow notes
+(017, 021, 026, 029, 030), 031's species inferred; 3 lint: a figure with an ion beam must
+mention the tilt (iso-008's caption gained the clause; the DNI page lists the tilt as not
+public), conventions row reworded; 4 018 and 027 give the other well's depth, with
+[^pdk-03]; 5 the trench clause is in both well captions; 6 thick resists now 52 u against
+38 u; 7 lint lines are printed once; 8 by ruling (c); 9 the duplicate heading is gone;
+10 014's title now "the wafer left by NS19".
+
+Figure QA after the round: every wells figure rebuilt and shot in three harness groups, light
+and dark, desktop and 400 px (`tmp/shots/s{014,021,028}-*`), the isolation series again
+(`tmp/shots/iso2-*`, `iso3-*`), and built pages 015, 019, 030 and the conventions page
+(`tmp/shots/fix-*`). Accepted: on `iso-012-cmpnit` the over-runs of the liner and fill-oxide
+labels run 11–18 u above the polished surface, above the accent trace (the only routes that
+pass the new rules there); on `iso-008-dni` the deep N-well's riser rises between two ion
+arrows, 10 u from each.
+
+Noticed, not fixed: 034's first paragraph says RTAI heats the wafer "in an inert ambient"
+(L23) while its open questions say the "anneal temperature, time and ambient are not
+public" (L282); for the page owner.

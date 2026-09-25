@@ -27,11 +27,11 @@ that page); the species of `PCHI` is discussed below. The resist is stripped at
 {ref}`PCHIS <step-025>`.
 
 :::{figure} /_static/figures/wells-023-pchi.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand part of the drawing and the PMOS active area lies in a window. After it arrows come down on the window; the drawing is otherwise unchanged, the thin surface band of the PMOS area now standing for both of the channel implants it has received.
+:alt: One cross-section of the wafer. Resist covers the left-hand part of the drawing and the PMOS active area, with its thin hatched surface band inside the N-well, lies in a window on which arrows come down. The drawing is the same as the state before the step.
 :width: 560px
 :name: fig-wells-023-pchi
 
-Before, the HVTPM window over the PMOS; after, a beam on that window and the PMOS channel band drawn unchanged. On the page's reading PCHI adds dopant to the PMOS channel, on top of the dose the page infers LVTPI gave it; its species, energy and dose are not public, and no public source gives the depth of either implant, so the drawing does not separate them. The arrows are drawn vertical because the tilt is not public. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+At PCHI a light channel implant goes through the HVTPM window into the PMOS channel area; the drawing is the state at this step, which is the same as before it, the surface band now standing for both of the channel implants it has received. On the page's reading PCHI adds dopant to the PMOS channel, on top of the dose the page infers LVTPI gave it; its species, energy and dose are not public, and no public source gives the depth of either implant, so the drawing does not separate them. The arrows are drawn vertical because the tilt is not public. The fill oxide is drawn but not labelled; the NMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
 The PDK describes the `hvtp` region as the "Vt adjust implant region for

@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-wells-026-pwbm
 
-Before, the bare wafer with its N-well; after, a thick resist left over the N-well and the rest of the slice open. This is a block mask: the resist stays wherever the P-well must not go. That the plate is generated from `nwell` together with `pwbm`, and so covers the N-wells, is this reference's inference from the absence of a drawn P-well layer,[^pdk-06] and the resist thickness is inferred. The PDK's mask table lists "P-Well Block Mask, PWBM" but leaves its "Used in SKY130" column blank, which this reference treats as a documentation inconsistency.[^pdk-05] The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+Before, the bare wafer with its N-well; after, a thick resist left over the N-well and the rest of the slice open. This is a block mask: the resist stays wherever the P-well must not go. That the plate is generated from `nwell` together with `pwbm`, and so covers the N-wells, is this reference's inference from the absence of a drawn P-well layer,[^pdk-06] and the resist thickness is inferred. The PDK's mask table lists "P-Well Block Mask, PWBM" but leaves its "Used in SKY130" column blank, which this reference treats as a documentation inconsistency.[^pdk-05] The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::

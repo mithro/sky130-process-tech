@@ -23,11 +23,11 @@ windows through which the {ref}`LVTNI <step-015>` implant is placed. The
 resist is removed at {ref}`LVTNIS <step-016>`.
 
 :::{figure} /_static/figures/wells-014-lvtnm.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step the surface is flat: thin pad oxide over two active areas and, between them, a filled trench whose oxide stands slightly proud. After it a block of photoresist covers the right-hand active area and the right half of the trench, and the left-hand active area lies in an open window.
+:alt: Two cross-sections of the wafer, one above the other. Before the step the surface is flat apart from the filled trench, whose oxide stands slightly proud of the thin pad oxide over the two active areas. After it a block of photoresist covers the right-hand active area and the right half of the trench, and the left-hand active area lies in an open window.
 :width: 560px
 :name: fig-wells-014-lvtnm
 
-Before, the planar wafer; after, resist over the right of the slice and a window over the left. The PDK's mask table lists "Low Vt Nch*, LVTNM" as used in SKY130.[^pdk-05] Which regions the plate opens is not public (see *Open questions*), so the window is drawn over an NMOS area and the resist over a PMOS area only so that both sides of a resist edge can be seen; no layout is being shown. The pad oxide is drawn as still in place, which the page infers, and the liner oxide in the trench is drawn faded. Not to scale.
+Before, the wafer as NS19 leaves it; after, resist over the right of the slice and a window over the left. The PDK's mask table lists "Low Vt Nch*, LVTNM" as used in SKY130.[^pdk-05] Which regions the plate opens is not public (see *Open questions*), so the window is drawn over an NMOS area and the resist over a PMOS area only so that both sides of a resist edge can be seen; no layout is being shown, and the slice is read as an NMOS beside a high-Vt PMOS. The pad oxide is drawn as still in place, which the page infers, and the liner oxide in the trench is drawn faded. Not to scale.
 :::
 
 The PDK's mask table lists "Low Vt Nch*, LVTNM" as a mask used in

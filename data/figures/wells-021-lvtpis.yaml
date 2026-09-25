@@ -9,12 +9,13 @@ alt: >-
   across the slice; the N-well and the implanted surface bands are unchanged.
 caption: >-
   Before, the N-well resist after its three implants; after, the resist gone and the oxide bare, with
-  the well and the bands untouched. That NWI, NWI2 and LVTPI share this one resist, and so that this
-  is the strip of the N-well resist, is this reference's reading. The pad oxide is drawn as still in
-  place, which the page infers. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+  the well and the PMOS channel implant untouched. That NWI, NWI2 and LVTPI share this one resist,
+  and so that this is the strip of the N-well resist, is this reference's reading. The pad oxide is
+  drawn as still in place, which the page infers. The NMOS channel implant and the liner oxide are
+  drawn faded. Not to scale.
 arrow:
   title: "LVTPIS, step 021"
-  note: "The thick implanted resist is ashed and stripped, and the wafer is cleaned for the next mask."
+  note: "The implanted resist, thick on this reference's inference, is ashed and stripped, and the wafer is cleaned for the next mask."
 panels:
   - state_after: "020"
     title: "Before: the N-well resist after LVTPI (step 020); NMOS left, PMOS right"

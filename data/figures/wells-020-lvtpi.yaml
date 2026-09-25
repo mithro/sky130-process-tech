@@ -5,16 +5,17 @@ series: series-wells.yaml
 crop_depth: 128
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the step the N-well lies under the
-  open window beside the thick resist. After it arrows come down on the window again, and a thin band
-  just under the surface of the right-hand active silicon, inside the N-well, marks the implanted
-  channel dose.
+  open window beside the thick resist. After it arrows come down on the window again, and a thin
+  hatched band just under the surface of the right-hand active silicon, inside the N-well, marks the
+  implanted channel dose.
 caption: >-
-  Before, the N-well under its window; after, a thin implanted band at the surface of the PMOS active
-  silicon inside the well. The band is drawn in the neutral implant colour because the implant's type
-  is not public: under the n⁺ poly gate the gate pages infer it would be a p-type counter-dope, under
-  a p⁺ gate an n-type dose. That it shares the N-well resist is this reference's reading. The band is
-  drawn only in the active silicon and its depth is not public; the arrows are drawn vertical because
-  the tilt is not public. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+  Before, the N-well under its window; after, the PMOS channel implant, a thin band at the surface of
+  the PMOS active silicon inside the well. The band is hatched, with no colour of its own, because
+  the implant's type is not public: under the n⁺ poly gate the gate pages infer it would be a p-type
+  counter-dope, under a p⁺ gate an n-type dose. That it shares the N-well resist is this reference's
+  reading. The band is drawn only in the active silicon and its depth is not public; the arrows are
+  drawn vertical because the tilt is not public. The fill oxide is drawn but not labelled; the NMOS channel implant and
+  the liner oxide are drawn faded. Not to scale.
 arrow:
   title: "LVTPI, step 020"
   note: "A low-energy channel implant goes through the same N-well window; on this reference's reading it sets the PMOS surface doping."
@@ -22,7 +23,9 @@ panels:
   - state_after: "019"
     title: "Before: the N-well after NWI2 (step 019); NMOS left, PMOS right"
     dim_layers: [liner, chn]
+    hide_labels: [fox]
     show_ions: false
   - state_after: "020"
     title: "After: a thin implanted band in the PMOS active silicon"
     dim_layers: [liner, chn]
+    hide_labels: [fox]

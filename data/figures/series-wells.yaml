@@ -11,7 +11,9 @@
 # for the drain-extended well of steps 030-032, whose windows therefore lie outside this
 # slice.
 #
-# The left active area is an NMOS area and the right one a PMOS area. Every mask edge of the
+# The left active area is an NMOS area and the right one a PMOS area; the slice is read as
+# an NMOS beside a high-Vt PMOS, the one device for which the HVTPM page's two readings of
+# its opening agree that the PMOS lies in the window. Every mask edge of the
 # module is drawn at x = 134, the middle of the field between them: the NWM page says the
 # well edge "must sit inside the isolation between the NMOS and PMOS active areas", and the
 # PWBM page that the two well edges meet there. Which side a threshold mask opens follows
@@ -28,7 +30,7 @@
 # continuously under active and field alike, as the NWI page says.
 #
 # Channel implants: their type (n or p) is not public for any of them, so they are drawn in
-# the neutral "implant" material, as a thin band at the surface of the active silicon only
+# the "implant" material, ink hatching with no colour of its own, as a thin band at the surface of the active silicon only
 # (the pages have them enter "the active silicon" through the pad oxide), and drawn over a
 # well made after them (z: 1). The depth and profile of each is not public, so a later
 # channel implant into the same active area (PCHI and PNCHI into the PMOS band made at LVTPI)
@@ -103,9 +105,7 @@ ops:
     id: fox
     material: oxide-dep
     fill_to: 60
-    route: right
-    anchor_x: 164
-    anchor_y: -24
+    route: over
     label:
       title: "Fill oxide"
       basis: public
@@ -135,18 +135,18 @@ ops:
     follow: surface
     from_surface: 0
     thickness: 10
-    anchor_y: -7
     z: 1
     label:
-      title: "LVTNI channel implant"
+      title: "NMOS channel implant"
       note: "LVTNI, step 015; its type and extent are not public"
       basis: public
   - step: "015"
     op: ions
     where_open: lvtnres
     tilt_deg: 0
+    label_x: 30
     label:
-      title: "Channel implant"
+      title: "LVTNI implant"
       note: "species, energy and dose are not public"
       basis: public
   - step: "016"
@@ -158,7 +158,7 @@ ops:
     op: deposit
     id: nwres
     material: resist
-    t: 44
+    t: 52
     where: [[0, 134]]
     route: top
     label:
@@ -183,16 +183,16 @@ ops:
     where_open: nwres
     tilt_deg: 0
     label:
-      title: "N-well implant"
-      note: "phosphorus, we infer, at high energy"
+      title: "NWI implant"
+      note: "phosphorus, at high energy"
       basis: inferred
   - step: "019"
     op: ions
     where_open: nwres
     tilt_deg: 0
     label:
-      title: "Second N-well implant"
-      note: "a second phosphorus dose, we infer"
+      title: "NWI2 implant"
+      note: "a second phosphorus dose"
       basis: inferred
   - step: "020"
     op: dope
@@ -213,7 +213,7 @@ ops:
     where_open: nwres
     tilt_deg: 0
     label:
-      title: "PMOS channel implant"
+      title: "LVTPI implant"
       note: "species, energy and dose are not public"
       basis: public
   - step: "021"
@@ -237,7 +237,7 @@ ops:
     where_open: hvtpres
     tilt_deg: 0
     label:
-      title: "High-Vt channel implant"
+      title: "PCHI implant"
       note: "species, energy and dose are not public"
       basis: public
   - step: "024"
@@ -245,8 +245,8 @@ ops:
     where_open: hvtpres
     tilt_deg: 0
     label:
-      title: "Second high-Vt implant"
-      note: "BF₂ on this reference's inference"
+      title: "PNCHI implant"
+      note: "BF₂"
       basis: inferred
   - step: "025"
     op: strip
@@ -257,7 +257,7 @@ ops:
     op: deposit
     id: pwbres
     material: resist
-    t: 44
+    t: 52
     where: [[134, 268]]
     label:
       title: "Thick photoresist"
@@ -271,8 +271,6 @@ ops:
     follow: flat
     y_top: 0
     y_bot: -76
-    anchor_x: 126
-    anchor_y: -66
     label:
       title: "P-well"
       note: "retrograde (PWI, step 027)"
@@ -281,17 +279,19 @@ ops:
     op: ions
     where_open: pwbres
     tilt_deg: 0
+    label_x: 30
     label:
-      title: "P-well implant"
-      note: "boron, inferred"
+      title: "PWI implant"
+      note: "boron"
       basis: inferred
   - step: "028"
     op: ions
     where_open: pwbres
     tilt_deg: 0
+    label_x: 30
     label:
-      title: "Second P-well implant"
-      note: "a second boron dose, we infer"
+      title: "PWI2 implant"
+      note: "a second boron dose"
       basis: inferred
   - step: "029"
     op: strip
@@ -302,26 +302,28 @@ ops:
     op: deposit
     id: pwderes
     material: resist
-    t: 44
+    t: 52
     where: [[0, 268]]
     label:
       title: "Thick photoresist"
-      note: "PWDEM, step 030; its windows lie outside this slice"
-      basis: inferred
+      note: "PWDEM, step 030; it opens only inside deep-N-well tubs"
+      basis: public
   - step: "031"
     op: ions
     where: [[0, 268]]
     tilt_deg: 0
+    label_x: 10
     label:
-      title: "Drain-extended well implant"
+      title: "PWDEI1 implant"
       note: "stopped here by the resist"
       basis: public
   - step: "032"
     op: ions
     where: [[0, 268]]
     tilt_deg: 0
+    label_x: 10
     label:
-      title: "Second drain-extended dose"
+      title: "PWDEI2 implant"
       note: "stopped here by the resist"
       basis: public
   - step: "033"

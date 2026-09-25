@@ -3,30 +3,29 @@ kind: xsection
 page: docs/steps/023-pchi.md
 series: series-wells.yaml
 crop_depth: 128
+no_drawn_change: true
 alt: >-
-  Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand
-  part of the drawing and the PMOS active area lies in a window. After it arrows come down on the
-  window; the drawing is otherwise unchanged, the thin surface band of the PMOS area now standing for
-  both of the channel implants it has received.
+  One cross-section of the wafer. Resist covers the left-hand part of the drawing and the PMOS active
+  area, with its thin hatched surface band inside the N-well, lies in a window on which arrows come
+  down. The drawing is the same as the state before the step.
 caption: >-
-  Before, the HVTPM window over the PMOS; after, a beam on that window and the PMOS channel band drawn
-  unchanged. On the page's reading PCHI adds dopant to the PMOS channel, on top of the
-  dose the page infers LVTPI gave it; its species, energy and dose are not public, and no public source
-  gives the depth of either implant, so the drawing does not separate them. The arrows are drawn
-  vertical because the tilt is not public. The LVTNI band and the liner oxide are drawn faded. Not to
-  scale.
-arrow:
-  title: "PCHI, step 023"
-  note: "A light channel implant goes through the HVTPM window into the PMOS channel area."
+  At PCHI a light channel implant goes through the HVTPM window into the PMOS channel area; the
+  drawing is the state at this step, which is the same as before it, the surface band now standing
+  for both of the channel implants it has received. On the page's reading PCHI adds dopant to the
+  PMOS channel, on top of the dose the page infers LVTPI gave it; its species, energy and dose are
+  not public, and no public source gives the depth of either implant, so the drawing does not
+  separate them. The arrows are drawn vertical because the tilt is not public. The fill oxide is drawn but not labelled; the NMOS channel implant and the liner oxide are drawn faded. Not to scale.
 panels:
-  - state_after: "022"
-    title: "Before: the HVTPM window (step 022); NMOS left, PMOS right"
-    dim_layers: [liner, chn]
   - state_after: "023"
-    title: "After: a further dose into the PMOS channel band, drawn as one band"
+    title: "State at this step (no drawn change)"
     dim_layers: [liner, chn]
+    hide_labels: [fox]
     labels:
+      hvtpres:
+        title: "Photoresist"
+        note: "HVTPM, step 022"
+        basis: public
       chp:
         title: "PMOS channel implants"
         note: "LVTPI and now PCHI (steps 020, 023); not drawn apart"
-        basis: public
+        basis: inferred

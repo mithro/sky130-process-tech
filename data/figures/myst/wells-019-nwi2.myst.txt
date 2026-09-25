@@ -1,7 +1,7 @@
 :::{figure} /_static/figures/wells-019-nwi2.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step the N-well lies under the open window beside the thick resist. After it a second set of arrows comes down on the same window; the drawing of the well is unchanged.
+:alt: One cross-section of the wafer. Thick resist covers the left-hand part of the drawing; under the open window on the right lies the N-well, and arrows come down on that window. The drawing is the same as the state before the step.
 :width: 560px
 :name: fig-wells-019-nwi2
 
-Before, the N-well from NWI under its window; after, a second beam on the same window and the well drawn unchanged. That NWI2 is a second phosphorus dose at another energy is this reference's inference from retrograde-well practice;[^txt-01] whether it is the shallower or the deeper member of the pair is not public, so the drawing does not divide the well between the two implants. The arrows are drawn vertical because the tilt is not public. The earlier channel-implant band and the liner oxide are drawn faded. Not to scale.
+At NWI2 a second N-well implant goes through the same resist window, directly after NWI; the drawing is the state at this step, which is the same as before it. That NWI2 is a second phosphorus dose at another energy is this reference's inference from retrograde-well practice;[^txt-01] whether it is the shallower or the deeper member of the pair is not public, so the drawing does not divide the well between the two implants. The arrows are drawn vertical because the tilt is not public. The fill oxide is drawn but not labelled; the NMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::

@@ -28,11 +28,11 @@ document describes the two implants. The
 resist is stripped at {ref}`PWDEIS <step-033>`.
 
 :::{figure} /_static/figures/wells-031-pwdei1.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole slice. After it arrows come down across the whole slice and stop on the resist; nothing under the resist changes.
+:alt: One cross-section of the wafer. Thick resist covers the whole slice, over a P-well on the left and an N-well on the right; arrows come down across the whole slice and stop on the resist. The drawing is the same as the state before the step.
 :width: 560px
 :name: fig-wells-031-pwdei1
 
-Before, the PWDEM resist over the whole slice; after, the beam stopped by that resist and nothing changed beneath it. The implant goes only into the `pwde` regions of the 20 V devices,[^pdk-06] which lie outside this slice, so the lightly doped well it builds there is not drawn. Boron is inferred from the layer name; the energy and dose are not public. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+At PWDEI1 an implant goes through the PWDEM windows, which lie outside this slice; here the resist stops the beam and nothing beneath it changes, so the drawing is the state at this step, the same as before it. The implant goes only into the `pwde` regions of the 20 V devices,[^pdk-06] which lie inside a deep-N-well tub; this slice is drawn outside one, like the rest of the module, so the lightly doped well the implant builds there is not drawn. The species, boron, is inferred from the layer name; the energy and dose are not public, and the arrows are drawn vertical because the tilt is not public. The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
 ## Step category

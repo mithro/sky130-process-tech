@@ -1,7 +1,7 @@
 :::{figure} /_static/figures/wells-032-pwdei2.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole slice. After it a second set of arrows comes down across the whole slice and stops on the resist; nothing under the resist changes.
+:alt: One cross-section of the wafer. Thick resist covers the whole slice, over a P-well on the left and an N-well on the right; a second set of arrows comes down across the whole slice and stops on the resist. The drawing is the same as the state before the step.
 :width: 560px
 :name: fig-wells-032-pwdei2
 
-Before, the PWDEM resist over the whole slice; after, the second beam also stopped by it. That this is a second boron energy, completing a two-member profile for the drain-extended well, is this reference's inference;[^txt-01] its energy and dose are not public, and its windows, over the 20 V devices, lie outside this slice. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+At PWDEI2 a second implant goes through the same PWDEM windows, outside this slice; here the resist stops it again, so the drawing is the state at this step, the same as before it. That it is a second boron energy, completing a two-member profile for the drain-extended well, is this reference's inference;[^txt-01] its energy and dose are not public, and its windows, over the 20 V devices inside a deep-N-well tub, lie outside this slice, which is drawn outside one like the rest of the module. The arrows are drawn vertical because the tilt is not public. The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::

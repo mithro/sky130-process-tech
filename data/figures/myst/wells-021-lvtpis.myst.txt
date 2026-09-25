@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-wells-021-lvtpis
 
-Before, the N-well resist after its three implants; after, the resist gone and the oxide bare, with the well and the bands untouched. That NWI, NWI2 and LVTPI share this one resist, and so that this is the strip of the N-well resist, is this reference's reading. The pad oxide is drawn as still in place, which the page infers. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+Before, the N-well resist after its three implants; after, the resist gone and the oxide bare, with the well and the PMOS channel implant untouched. That NWI, NWI2 and LVTPI share this one resist, and so that this is the strip of the N-well resist, is this reference's reading. The pad oxide is drawn as still in place, which the page infers. The NMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
