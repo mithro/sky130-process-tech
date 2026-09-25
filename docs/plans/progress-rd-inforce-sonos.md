@@ -38,24 +38,57 @@ Worktree: .worktrees/rd-inforce-sonos, branch topic/rd-inforce-sonos.
 | 045:42-46 | reviewer's table entry is empty ("—") | reviewed: the passage ("a Cypress patent...says what an implant does to an oxide that is then stripped (collapsed note below)") is already a compliant generic pointer, naming no content. No change made. |
 | 039:23-24 "uses a wet chemistry of its own" | confirms the patent's technique matches the inferred wet etch — content, and redundant with the paragraph's own closing pointer | deleted the clause "and the Cypress patent, which may still be in force, uses a wet chemistry of its own (collapsed note below)"; kept the paragraph's closing pointer sentence |
 
-## check_preserved
+## check_preserved (per page, `--allow-dropdown-edits` + `--allow-regrouped`,
+`--allow-added` as noted; ran per commit, `--base main`)
 
-Run with `--allow-dropdown-edits` per page (some edits touch text adjoining a
-dropdown boundary — moving a sentence in). LOST items recorded per page below
-as edits land.
+* **037-ptsi.md**: clean, 0 undeclared differences.
+* **038-depi.md** (`--allow-added markers,numbers,number_order`): LOST hedges
+  'may' — part of the deleted "a Cypress patent that may still be in force
+  gives it" attributing clause; the patent's in-force status is still stated
+  via this page's own dropdown and its flag sentence. Deleted as ruled.
+* **039-tunme.md** (`--allow-added markers,numbers,refs,hedges`): LOST
+  hedges 'may' — same pattern, from the deleted "which may still be in
+  force" clause in the 23-24 fix. Deleted as ruled.
+* **040-ono.md** (`--allow-added markers,numbers,number_order,quotes,hedges`):
+  LOST refs 'step-043' (one instance) — from the deleted step-4 clause
+  "...completes the layer at the logic gate oxidation ({ref}`GOX100
+  <step-043>`)"; content already in the dropdown at 209-211, and two other
+  {ref}`GOX100 <step-043>` links remain on the page. Deleted as ruled.
+* **042-onome.md** (`--allow-added markers,numbers,refs,quotes,hedges`):
+  - LOST quotes (one pair, both truncated to the same "class of tool..."
+    prefix): a pre-existing checker artifact, not a real content loss —
+    `check_preserved`'s "quotes" scan already pairs a quote mark inside the
+    dropdown's block quote with "poly/nitride"'s quote mark *on main*
+    (verified directly against `check_preserved.extract_all()` on both
+    `main` and this branch's text); editing anything between them changes
+    the bogus paired substring. "poly/nitride", "selectivity to oxide" and
+    "stop on a thin oxide without trenching the silicon" are all still on
+    the page, unchanged.
+  - LOST hedges 'about' — from deleting "warns about" in the 139-142 fix
+    (the idiom "warns about", not an epistemic hedge); the warning's content
+    is still verbatim in the dropdown at 155-167.
+* **043-gox100.md**: clean, 0 undeclared differences.
+* **044-lvom.md**: clean, 0 undeclared differences.
+* **045-nchi.md**: no edit, not run.
 
 ## Status
 
-- [ ] 037-ptsi.md (indium leak) — edited, checkers pending
-- [ ] 038-depi.md (leak, re-source)
-- [ ] 039-tunme.md (public knowledge + open summary)
-- [ ] 040-ono.md (public knowledge + two open summaries)
-- [ ] 042-onome.md (leak + three open summaries)
-- [ ] 043-gox100.md (open summary)
-- [ ] 044-lvom.md (open summary)
-- [ ] 045-nchi.md (reviewed, no change needed)
-- [ ] tools/check_inforce.py PHRASES extension + selftest cases
-- [ ] Full checker suite + `-W` build
+- [x] 037-ptsi.md (indium leak)
+- [x] 038-depi.md (leak, re-source)
+- [x] 039-tunme.md (public knowledge + open summary)
+- [x] 040-ono.md (public knowledge + two open summaries)
+- [x] 042-onome.md (leak + three open summaries)
+- [x] 043-gox100.md (open summary)
+- [x] 044-lvom.md (open summary)
+- [x] 045-nchi.md (reviewed, no change needed)
+- [x] tools/check_inforce.py PHRASES extension + selftest cases (3d): verified
+      the checker now fails on `main`'s pre-fix 037/042/043 and passes (0
+      problems) on this branch's fixed pages
+- [x] Full checker suite: check_steps, check_refs, check_machines,
+      check_materials, check_masks, check_papers, check_patents,
+      check_filings, check_inforce (0 problems each); gen_papers,
+      gen_patents, gen_filings, gen_index_links --check (0 problems each);
+      `sphinx-build -W -q -b html docs tmp/_build/html` rc 0
 - [ ] Push
 
 ## Notes
