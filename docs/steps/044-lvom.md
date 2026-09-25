@@ -55,8 +55,8 @@ the thick-oxide regions, yet their gate dielectric is the {term}`ONO` island,
 not the thin oxide. How the generated `clvom` mask treats the ONO
 islands — whether it excludes them so that the resist protects the
 {term}`blocking oxide` during the etch and clean — is not public. The
-Cypress integration patent, which may still be in force, shows that its
-equivalent resist does exactly that; its wording is in the collapsed
+Cypress integration patent, which may still be in force, describes its
+own equivalent resist; its wording is in the collapsed
 note below. We infer the same for SKY130 (see *Open questions*).
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
