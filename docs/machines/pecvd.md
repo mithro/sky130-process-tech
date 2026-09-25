@@ -6,16 +6,7 @@ to deposit silicon oxide, silicon nitride and oxynitride at a few
 hundred degrees Celsius, low enough for a wafer that already carries
 silicide, tungsten or aluminium. A radio-frequency discharge between the
 wafer pedestal and a gas showerhead breaks up the precursors so that the
-film grows without the heat an LPCVD furnace needs. Sub-atmospheric CVD
-(SACVD), which grows oxide from TEOS and ozone without a plasma, is
-built on the same single-wafer platforms and is grouped with PECVD here
-because a step page offers it as an option. This page describes the
-class in general, lists representative 200 mm-era models, and then says
-what SkyWater has published about its own tools of this class and which
-SKY130 steps this reference assigns to it. The film chemistry and the
-growth regimes are on the {ref}`category page <category-deposition>`;
-the furnace alternative for the front-end dielectrics is on the
-{ref}`LPCVD furnace page <machine-vertical-furnace-lpcvd>`.
+film grows without the heat an LPCVD furnace needs.
 
 | | PECVD (and SACVD) |
 |---|---|
@@ -28,7 +19,19 @@ the furnace alternative for the front-end dielectrics is on the
 | SkyWater-listed tool | "Lam/Novellus/AMAT": "PECVD TEOS, C2 and Producer" ("low temp options"), "PECVD silane oxide/nitride/oxynitride, C1" ("low temp, range of R.I. options"), "PECVD nitride C1"[^skw-01] |
 | SKY130 steps | 19 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-pecvd-steps>` |
 
+:::{seealso}
+The film chemistry and the growth regimes are on the {ref}`category page
+<category-deposition>`; the furnace alternative for the front-end
+dielectrics is on the {ref}`LPCVD furnace page
+<machine-vertical-furnace-lpcvd>`.
+:::
+
 ## What the machine class is and how it works
+
+Sub-atmospheric CVD
+(SACVD), which grows oxide from TEOS and ozone without a plasma, is
+built on the same single-wafer platforms and is grouped with PECVD here
+because a step page offers it as an option.
 
 A plasma supplies the energy that heat supplies in LPCVD. In a
 low-pressure discharge "the electrons can be maintained at very high
@@ -36,31 +39,40 @@ equivalent temperatures – tens of thousands of kelvins, equivalent to
 several electronvolts average energy—while the neutral atoms remain at
 the ambient temperature", and those electrons dissociate the precursor
 molecules.[^wiki-pecvd] The wafer can therefore sit at a few hundred
-degrees while silane, TEOS, ammonia or nitrous oxide react above it. The
+degrees while silane, TEOS, ammonia or nitrous oxide react above it.
+
+The
 plasma also bombards the growing film with ions, and the balance between
 neutral radicals and ions sets the film's density, hydrogen content,
 stress and step coverage. What makes a machine a production PECVD tool
 is control of that balance across a 200 mm wafer, wafer after wafer:
-uniform gas delivery, a stable RF supply, a temperature-controlled
-pedestal and a chamber clean that keeps deposits on the walls from
-becoming particles on the wafer.
+
+* uniform gas delivery;
+* a stable RF supply;
+* a temperature-controlled pedestal; and
+* a chamber clean that keeps deposits on the walls from becoming
+  particles on the wafer.
 
 ### Capacitive reactors
 
 The production reactors of the period are capacitively coupled. Adams
 et al. characterised silane–N₂O oxide in "a parallel‐plate, radial flow,
 plasma reactor",[^adams-1981-pecvd] and Sinha et al. made passivation
-nitride "at 275°C in an improved radial flow reactor".[^sinha-1978] The
+nitride "at 275°C in an improved radial flow reactor".[^sinha-1978]
+
+The
 single-wafer reactor of an Applied Materials patent filed in 1986
 is "capable of thermal CVD, plasma-enhanced CVD,
 plasma-assisted etchback, plasma self-cleaning, and deposition topography
-modification by sputtering"; it positions the wafer "with variable,
+modification by sputtering".[^pat-p5000-amat] It positions the wafer "with variable,
 controlled, close parallel spacing between the wafer and the chamber gas
 inlet manifold" and applies "RF energy to the gas inlet manifold", which is
-thus the powered electrode.[^pat-p5000-amat] Wikipedia
+thus the powered electrode.[^pat-p5000-amat]
+
+Wikipedia
 notes that for TEOS oxide "Pressures of a few torr and small electrode
 spacings, and/or dual frequency deposition, are helpful to achieve high
-deposition rates with good film stability", and that "Excitation power
+deposition rates with good film stability".[^wiki-pecvd] It also notes that "Excitation power
 of tens to hundreds of watts is typical for an electrode with a diameter
 of 200 to 300 mm".[^wiki-pecvd]
 
@@ -74,7 +86,9 @@ division of labour for nitride, oxynitride and TEOS oxide: "The main role
 of the high-frequency RF is to generate the reactive species and provide
 sufficient electron and ion densities. The low frequency is added to
 control the ion bombardment to which the substrates are subjected during
-deposition."[^van-de-ven-1990] Pearce et al. used the two supplies "to
+deposition."[^van-de-ven-1990]
+
+Pearce et al. used the two supplies "to
 vary film properties such as stress by altering the amount of power
 supplied by each source", and found that "The low-frequency excitation
 was seen to favor the formation of N—H bonds in the deposited
@@ -87,9 +101,11 @@ Producer TEOS oxides "in single and mixed frequency".[^amat-pecvd-teos-2002]
 The two main vendors reached throughput in different ways. Novellus's
 Concept One, its first product, is described as "a two-part system,
 consisting of a machine that positions wafers for handling, and a
-processing chamber"; the company history counts it a strength that "its
+processing chamber".[^novellus-history] The company history counts it a strength that "its
 machines process 5 to 7 wafers at a time, while most CVD systems can only
-process one at a time".[^novellus-history] Novellus called its
+process one at a time".[^novellus-history]
+
+Novellus called its
 architecture "multi-station sequential deposition" and argued, of the
 300 mm version, that it "offers superior reproducibility because every
 wafer sees the same environment".[^novellus-pecvd-2002] The Concept Two Sequel put
@@ -143,15 +159,19 @@ oxide from "ozone, oxygen, tetraethylorthosilicate, and a carrier gas" at
 "10 torr to 200 torr".[^pat-p5000-amat] Fujino et al. showed at
 atmospheric pressure that "step coverage of the films changed from
 isotropic to flow shape with ozone concentration
-increase".[^fujino-1990] Applied released its "sub-atmospheric (SA)
+increase".[^fujino-1990]
+
+Applied released its "sub-atmospheric (SA)
 process technology" in April 1994 and the Giga-Fill SACVD Centura in
-April 1997;[^amat-1997] its product page claims "excellent step
+April 1997.[^amat-1997] Its product page claims "excellent step
 coverage, void-free gap-filling and superior planarization" and a
-"ceramic heater, which provides high temperature process capability at
->550°C", for "BPSG and STI applications".[^amat-sacvd-2000] Ozone–TEOS
+"ceramic heater, which provides high temperature process capability
+at >550°C", for "BPSG and STI applications".[^amat-sacvd-2000]
+
+Ozone–TEOS
 films are sensitive to the surface they grow on: Kwok et al. studied a
 "2 step gap fill process consisting of a thin PECVD underlayer and a
-thick SACVD oxide" and traced the surface dependence to "electronegative
+thick SACVD oxide".[^kwok-1994] They traced the surface dependence to "electronegative
 species such as fluorine on the surface of the PECVD oxide
 underlayer".[^kwok-1994]
 
@@ -166,10 +186,11 @@ performance of such fluorinated discharges "varies in unpredictable
 ways".[^sobolewski-1998] Allgood et
 al. measured clean times and perfluorocompound emissions "in a Novellus
 Concept One 200, a widely used commercial PECVD tool".[^allgood-2003]
+
 Remote plasma cleans move the discharge out of the chamber: an Applied
 patent introduces "reactive species into the processing chamber from a
 clean gas that is input to a remote microwave plasma
-system",[^pat-rpc-amat] and Applied's Producer SE has "a new low-flow
+system".[^pat-rpc-amat] Applied's Producer SE has "a new low-flow
 remote clean that reduces gas costs by up to 40
 percent".[^amat-producer-se-2001]
 
@@ -184,35 +205,46 @@ temperature".[^cheung-2000]
 
 ## Representative 200 mm-era models
 
-* **Novellus Systems.** The Concept One ("Introduced in 1987",
-  "150/200mm"), the Concept One MAXUS, the Concept Two Sequel and the
-  Concept Two Dual Sequel;[^novellus-pecvd-1998] by 2002 the Sequel
-  Express and the VECTOR, "Introduced in 2000" as "a 200mm/300mm bridge
-  tool".[^novellus-pecvd-2002] The company history records a
-  "$14 million order from Hyundai Electronics for Concept One-200
-  plasma-enhanced CVD systems" in 1993.[^novellus-history] Novellus was
-  acquired by Lam Research in June 2012.[^wiki-novellus]
-* **Applied Materials.** The Precision 5000 (1987), dielectric PECVD on
-  the Precision 5000 and Centura platforms "During the 1990s", the
-  sub-atmospheric process (1994), the Giga-Fill SACVD Centura (1997) and
-  the "DxZ(TM)Optima(TM)" of fiscal 1997;[^amat-1997] the Producer,
-  introduced in 1998,[^amat-producer-se-2001] whose film list by 2002
-  included TEOS and silane oxides, TEOS and silane PSG, and
-  nitrides.[^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002]
-  In 1997 Applied settled patent litigation with Novellus "concerning
-  plasma TEOS and tungsten CVD technology".[^amat-1997]
-* **Trikon Technologies.** The {ref}`NCAPOX <step-091>` page names
-  Trikon's Delta 201, one of its "CVD products"; the 10-K does not say
-  whether it is plasma-enhanced. The Delta 201 was one of
-  the products Trikon "obtained with the acquisition of Electrotech on
-  November 15, 1996", described as "a versatile, single-chamber
-  production system for producing films, including silicon dioxide or
-  silicon nitride".[^trikon-10k-1996] Semiconductor Today traces the
-  line from Newport-based Electrotech (founded in 1968), bought in 1996
-  by Plasma & Materials Technologies, which became Trikon Technologies;
-  "Trikon later merged with Aviza Technology Inc in 2005", and in 2009
-  Sumitomo Precision Products bought most of Aviza's assets and formed
-  SPP Process Technology Systems (SPTS).[^semitoday-spts-2009]
+:::{table} Representative PECVD/SACVD systems of the 200 mm era (figures as each source gives them)
+:widths: 20 10 70
+
+| Vendor / model | Year | Published figures |
+|---|---:|---|
+| Novellus — Concept One | — | "Introduced in 1987", "150/200mm"[^novellus-pecvd-1998] |
+| Novellus — Concept One MAXUS | — | —[^novellus-pecvd-1998] |
+| Novellus — Concept Two Sequel | — | —[^novellus-pecvd-1998] |
+| Novellus — Concept Two Dual Sequel | — | —[^novellus-pecvd-1998] |
+| Novellus — Sequel Express | 2002 | —[^novellus-pecvd-2002] |
+| Novellus — VECTOR | — | "Introduced in 2000", "a 200mm/300mm bridge tool"[^novellus-pecvd-2002] |
+| Applied Materials — Precision 5000 | 1987 | —[^amat-1997] |
+| Applied Materials — Precision 5000, Centura | — | dielectric PECVD "During the 1990s"[^amat-1997] |
+| Applied Materials — SACVD (sub-atmospheric process) | 1994 | —[^amat-1997] |
+| Applied Materials — Giga-Fill SACVD Centura | 1997 | —[^amat-1997] |
+| Applied Materials — "DxZ(TM)Optima(TM)" | — | of fiscal 1997[^amat-1997] |
+| Applied Materials — Producer | 1998 | by 2002 included TEOS and silane oxides, TEOS and silane PSG, and nitrides[^amat-producer-se-2001][^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002] |
+:::
+
+The company history records a
+"$14 million order from Hyundai Electronics for Concept One-200
+plasma-enhanced CVD systems" in 1993.[^novellus-history] Novellus was
+acquired by Lam Research in June 2012.[^wiki-novellus] In 1997 Applied
+settled patent litigation with Novellus "concerning plasma TEOS and
+tungsten CVD technology".[^amat-1997]
+
+**Trikon Technologies.** The {ref}`NCAPOX <step-091>` page names
+Trikon's Delta 201, one of its "CVD products"; the 10-K does not say
+whether it is plasma-enhanced. The Delta 201 was one of
+the products Trikon "obtained with the acquisition of Electrotech on
+November 15, 1996", described as "a versatile, single-chamber
+production system for producing films, including silicon dioxide or
+silicon nitride".[^trikon-10k-1996]
+
+Semiconductor Today traces the
+line from Newport-based Electrotech (founded in 1968), bought in 1996
+by Plasma & Materials Technologies, which became Trikon Technologies.
+"Trikon later merged with Aviza Technology Inc in 2005", and in 2009
+Sumitomo Precision Products bought most of Aviza's assets and formed
+SPP Process Technology Systems (SPTS).[^semitoday-spts-2009]
 
 ## At SkyWater
 
@@ -231,15 +263,26 @@ sub-entry:[^skw-01]
 >
 > "PECVD nitride C1" — "– high R.I., low temp options"
 
-Read term by term: a TEOS oxide process on tools called "C2" and
-"Producer"; a silane process for oxide, nitride and oxynitride on a tool
-called "C1", with a choice of refractive index; and a nitride on "C1"
-with a high-index option. The page does not expand "C1" or "C2" or say
+Read term by term, on our reading:
+
+:::{table} The three PECVD entries, term by term
+:widths: 34 44 22
+
+| Entry as listed | What it names (our reading) | Status |
+|---|---|---|
+| "PECVD TEOS, C2 and Producer" — "– low temp options" | a TEOS oxide process on tools called "C2" and "Producer"[^skw-01] | "C2" and "Producer" not expanded by SkyWater |
+| "PECVD silane oxide/nitride/oxynitride, C1" — "– low temp, range of R.I. options" | a silane process for oxide, nitride and oxynitride on a tool called "C1", with a choice of refractive index[^skw-01] | "C1" not expanded by SkyWater |
+| "PECVD nitride C1" — "– high R.I., low temp options" | a nitride on "C1" with a high-index option[^skw-01] | "C1" not expanded by SkyWater |
+:::
+
+The page does not expand "C1" or "C2" or say
 which vendor makes which tool. The {ref}`public-sources inventory
 <references-public-sources>` (§9) and the step pages read "C1" and "C2"
 as Novellus Concept One and Concept Two class tools and "Producer" as
 Applied's Producer; these are readings of the names, and the vendor
-line lists Lam, Novellus and AMAT together.[^skw-01] No SACVD tool, no
+line lists Lam, Novellus and AMAT together.[^skw-01]
+
+No SACVD tool, no
 doped PECVD oxide and no deposition temperatures are listed; the only
 doped oxide on the page is the HDP entry, "doped and phos doped"
 ({ref}`HDP-CVD page <machine-hdp-cvd>`).[^skw-01]
@@ -316,8 +359,8 @@ likely used at SkyWater"), as collected on the machines index:
 
 The grades follow the film each page describes. The TEOS entry is the
 inference for the cap and fuse oxides, on the TEOS oxide under the
-passivation nitride of Cypress's Bloomington reports;[^cyp-qtp-014807]
-the "C1" entries are the inference where the film is a nitride or, on
+passivation nitride of Cypress's Bloomington reports.[^cyp-qtp-014807]
+The "C1" entries are the inference where the film is a nitride or, on
 this reference's reading, an oxynitride, since "oxynitride" appears only
 in the "C1" entry.[^skw-01] On the inter-level oxides the pages give the
 gap fill to the HDP entry and grade the PECVD entries for a liner or
@@ -396,11 +439,13 @@ pressures, thicknesses and chemistries are not public.
   it does not name the dielectric. The {ref}`CAPILD <step-135>` and
   {ref}`CAPILD2 <step-150>` pages read it as a PECVD oxynitride
   (inference, from the "range of R.I. options" of the "C1"
-  entry[^skw-01]). PECVD nitride MiM capacitors of the period reached
+  entry[^skw-01]).
+
+  PECVD nitride MiM capacitors of the period reached
   "capacitance densities of 1.0 to 2.0 fF/μm²" in a 0.25 µm
-  flow;[^kar-roy-1999] nitride ones show "significant degradation in
-  capacitor linearity as the frequency is reduced",[^babcock-2001] and
-  the high temperature of LPCVD "excludes the use of LPCVD dielectrics for
+  flow.[^kar-roy-1999] Nitride ones show "significant degradation in
+  capacitor linearity as the frequency is reduced".[^babcock-2001] The
+  high temperature of LPCVD "excludes the use of LPCVD dielectrics for
   MIM capacitors using the standard back-end metal layers as capacitor
   bottom plates".[^van-huylenbroeck-2002] Applied's nitride white paper
   gives a 400 °C nitride "with thickness between 500Å and 1000Å" for MIM
@@ -427,25 +472,22 @@ pressures, thicknesses and chemistries are not public.
 
 ## Related pages
 
-* {ref}`category-deposition` — PECVD film chemistry and the deposition
-  steps of SKY130.
-* {ref}`machine-hdp-cvd` — the gap-fill class that shares the
-  inter-level oxide steps.
-* {ref}`machine-vertical-furnace-lpcvd` — the batch alternative for the
-  front-end nitrides and oxides.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — silane, TEOS and the chamber-clean gases.
-* {ref}`category-cmp` — the polish that precedes the cap oxides.
-* {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement.
-* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
-  ammonia, SiF₄, ozone and WF₆.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
-  bromine etch and chamber-clean gases.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
-  helium and the oxidation additives, their grades and SkyWater's listed
-  gases.
+* **Category.** {ref}`category-deposition` — PECVD film chemistry and
+  the deposition steps of SKY130. {ref}`category-cmp` — the polish that
+  precedes the cap oxides.
+* **Machines.** {ref}`machine-hdp-cvd` — the gap-fill class that shares
+  the inter-level oxide steps. {ref}`machine-vertical-furnace-lpcvd` —
+  the batch alternative for the front-end nitrides and oxides.
+* **Materials.** {ref}`material-hardware-consumables` — chamber parts
+  and exhaust abatement. {ref}`material-precursors` — silane,
+  dichlorosilane, TEOS, BTBAS, ammonia, SiF₄, ozone and WF₆.
+  {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases. {ref}`material-process-gases` —
+  nitrogen, oxygen, hydrogen, argon, helium and the oxidation additives,
+  their grades and SkyWater's listed gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  silane, TEOS and the chamber-clean gases.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
