@@ -717,3 +717,38 @@ The sibling of nsdm; the same treatment throughout.
   facts, a quoted irdrop cell). Before → after: paragraphs 15 → 0, items 1 → 0, sentences 19 → 6, cells
   3 → 3.
 * **Content problems for the owner:** none found.
+
+### 17. vim3 — done
+
+* **Rules applied.** R-INTRO (178 → 51 words); R-PARAMS (four Table 2 parameters, as on vim); R-CAPTION
+  (rule table, parameter table); R-PARA, R-SENTENCE; R-LIST (the test-tile structures); R-RELATED; R-H3
+  (Exposure class, Mask errors and mask type, Two floors and the resist, Overlay and alignment, Pattern
+  transfer; the H3 "The mask-type record" was already there).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **Intro.** Kept the first sentence up to its colon and the reading up to "… over every drawn `via3`."
+  Moved with the hedge repeated ("On the VIM3 page's reading, the VIM3E etch cuts the holes … down to
+  two kinds of floor, …"); "It is the second of the three via masks" → "The mask is …".
+* **Other splits.** The 101-word via3.1 sentence: at its semicolon and at "which the PDK's *Error
+  Messages* page … checks as" ("The PDK's *Error Messages* page, a description of "…", checks it as …"),
+  the relative clause given its subject and "it"; the test-tile sentence: its structures as a list under
+  the base's own lead-in, then "The test tile's second large capacitor …" ("its" → the noun, after the
+  list; its marker repeated); the Photronics dash pair made its own sentence after the reading (as on
+  vim2; the ('248', '248', '193', '6', '4', '4') `number_order` LOST); "Electron-beam pattern generators
+  served mask shops of this period:" → full stop, and the Abboud/Kurihara sentence split at ", and";
+  Exposure class: ", and infers a 248 nm level" → ". It infers a 248 nm level".
+* **Declared additions** (`--allow-added markers,numbers,quotes,refs,identifiers`): markers
+  `mask-renders` (render sentence), `pdk-periph` ×2 (the via3.1 split; the second copper Value cell;
+  the base's single `pdk-periph` of the Table 2 sentence), `raw-data-testtile-pads` (list lead-in and
+  the second-capacitor sentence), `steps-sheet` ×3 (Plate number split twice; Sheet4 sentence split);
+  numbers `575` ("It falls" → "`575` falls"), `2`, `3` ×2 (the caption and the table's "Via3-Cu" rows);
+  quotes/identifiers "Via3-Cu" ×2 (the table rows), `metal-4`, `via3` (the rule-table caption); refs
+  `step-144` (hedge repeated).
+* **LOST lines that are not losses:** the parameter table (0.2, 0.2, 0.21, 0.18 in the base order,
+  via3.11 and via3.12 in their cells) and the Photronics reordering above.
+* **Marker coverage.** Flags read: every flagged sentence is one of the splits above or had no marker
+  of its own in the base.
+* **Over the caps after the pass:** "The VIM3 page reads the PDK's cross-section …" (57 by the script,
+  three quotations), the capm sentence (52, three quotations), the Exposure-class formula sentence and
+  the flag legend (60, quotations); three cells. Before → after: paragraphs 14 → 0, items 1 → 0,
+  sentences 18 → 4, cells 3 → 3.
+* **Content problems for the owner:** none found.
