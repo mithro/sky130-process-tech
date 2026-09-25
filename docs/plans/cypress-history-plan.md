@@ -72,9 +72,10 @@ The pages are drafted once the evidence exists. The provisional list:
 
 * `tools/check_history.py` imports `check_refs.check()` and
   `inline_link_problems()` and runs them on `docs/history/*.md` against a
-  history-only inventory, `docs/history/sources.md` (same entry layout as
-  `public-sources.md`: anchor line, bibliographic sentence, URL, what it
-  gives, then Tier and used-on). It also checks the claims matrix
+  history-only inventory, `docs/history/sources.md`, generated from the
+  pages' footnotes by `tools/gen_history_sources.py` (anchor line, the
+  citation with its URL, and the pages that cite it; a source defined two
+  ways is an error). It also checks the claims matrix
   `data/history/claims.yaml`: every claim needs two independent sources,
   or is marked single-source in the prose the way
   `readability-guide.md` marks inferences. It has a `--selftest`, sits in
@@ -106,9 +107,13 @@ The pages are drafted once the evidence exists. The provisional list:
 | Item | State |
 |---|---|
 | Plan | written 2026-09-25 |
-| Evidence: QTP | not started |
-| Evidence: corporate | not started |
-| Evidence: literature | not started |
-| Claims matrix | not started |
-| Pages | not started |
-| Review | not started |
+| Evidence | `qtp.yaml` 67 reports, `corporate.yaml` 29 records, `extra.yaml` 40 records; all quotes verified |
+| Claims matrix | 165 claims, checked by `tools/check_history.py` |
+| Pages | index, fabs, technologies, sonos-s4, s8-lineage, naming; generated stackups, products, sources |
+| Review r1 (Opus) | 19 High, 22 Medium, 15 Low; fixes applied 2026-09-25 |
+| Review r2 | pending |
+
+Not done, for the owner: the commit messages of the research branches mention the lead list and codes
+never found in a public document (review r1, H12/H13); rewriting them needs the owner's decision under the
+history-rewrite policy. The literature agent's evidence file (papers, patents, teardowns) was never
+committed; two of its sources were re-verified and added to `extra.yaml`.

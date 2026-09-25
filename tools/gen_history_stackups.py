@@ -44,6 +44,10 @@ NOTE_RE = re.compile(r"\s*\((?:printed|the printed|decoded|as printed|value trun
 # name ("6K Al", ".5KAlCu", "1.2K Å"). "0.5% Cu" and "-5%Cu" are compositions, not thicknesses.
 THICK_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?|\.\d+)\s*(?:(K)\s*(?:Å|A\b)?(?=\s*[A-Za-zÅ])|(K)?\s*(?:Å|A(?=[/\s,;]|$)))")
 
+MONTHS = {"Jan": "January", "Feb": "February", "Mar": "March", "Apr": "April", "Jun": "June",
+          "Jul": "July", "Aug": "August", "Sep": "September", "Sept": "September", "Oct": "October",
+          "Nov": "November", "Dec": "December"}
+
 # Title misprints that the evidence notes identify, folded into the process they name.
 ALIASES = {"R7FTW-3R": "R7FT-3R"}
 
@@ -67,7 +71,9 @@ def qtp_footnote(rec: dict) -> str:
     lines indented four spaces, as citation-style.md asks)."""
     kind = {"QTP": "Product Qualification Report"}.get(rec.get("doc_type", "QTP"), rec.get("doc_type", "report"))
     title = " ".join(str(rec.get("title", "")).split()).replace("*", "\\*")
-    printed = rec.get("date_printed")
+    printed = str(rec.get("date_printed") or "")
+    for short, full in MONTHS.items():
+        printed = re.sub(rf"^{short}\b\.?", full, printed)
     when = f", {printed}" if printed else ""
     if rec.get("archive_url"):
         # the cypress.com original is gone; cite the Wayback Machine copy

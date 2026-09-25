@@ -135,6 +135,8 @@ def check_file(path: Path, problems: list[str], checked: list[str], missing_cach
         rid = record.get("id") or path_hint
         quotes = record["quotes"]
         if not isinstance(quotes, list) or not quotes:
+            # every evidence record must carry at least one verified quotation
+            problems.append(f"{path.name}:{rid}: no quotes")
             continue
         cache_file = None
         if record.get("cache"):

@@ -194,7 +194,9 @@ S8 is the fourth of these; how it relates to the other three is on {ref}`history
 
 Cypress moved its 90 nm process from Fab 1 to Fab 4 from 2002, was "ramping" it in 2003, and says in its
 2004 report that it was "now in production at our Minnesota facility" (Cypress's
-reports).[^ar-fy2002][^ar-fy2003][^ar-fy2004] The qualification reports show four 90 nm processes at Fab 4,
+reports).[^ar-fy2002][^ar-fy2003][^ar-fy2004]
+
+The qualification reports show four 90 nm processes at Fab 4,
 qualified from 2004 to 2007 (Cypress's reports):[^qtp-032003][^qtp-051207][^qtp-063807][^qtp-061806]
 
 * **R9T-3R** and **R9Q-3R**: three and four metal layers, nitrided gate oxide of 22 Å, synchronous and QDR
@@ -362,7 +364,7 @@ reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>
 [^qtp-051207]: Cypress Semiconductor, Product Qualification Report QTP 051207: *18 MEG QDR SYNCHRONOUS SRAM FAMILY, R9Q-3R TECHNOLOGY, FAB4*, June 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-051207-18-meg-qdr-synchronous-sram--cy7c1313d-product-family--r9q-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148e37b08a2>
-[^qtp-063807]: Cypress Semiconductor, Product Qualification Report QTP 063807: *1 Meg Fast Asynchronous SRAM Family, C9FD-3R Technology, Fab4*, Jan 2024.
+[^qtp-063807]: Cypress Semiconductor, Product Qualification Report QTP 063807: *1 Meg Fast Asynchronous SRAM Family, C9FD-3R Technology, Fab4*, January 2024.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45>
 [^qtp-061806]: Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>

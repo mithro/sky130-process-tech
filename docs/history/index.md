@@ -66,6 +66,10 @@ Cypress alone. The pages give the details and the points where sources disagree.
 * **Qualification reports.** Much of the detail comes from Cypress's product qualification reports,
   now published by Infineon. They were reissued over the years, and the reissues sometimes rename
   sites and drop or misprint codes; see {ref}`history-fabs` and {ref}`history-naming`.
+* **Gaps.** The reports give metals, passivation and gate oxides, but rarely isolation, poly, contacts
+  or implants, and none covers the 1.2 µm and 0.8 µm processes in detail. Some reports can be read only
+  after logging in to Infineon's site and are not used. Cypress's annual reports before fiscal 1993 were
+  not found online, and the fiscal 2000 report is a scan whose text could not be read.
 
 ```{toctree}
 :maxdepth: 1
