@@ -356,6 +356,47 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Caps**: para > 100 2 → 0; item > 60 1 → 0; sentence > 45 4 → 1 (the "Second, …" bullet, 45 words
   plus the bullet marker).
 
+### 055 URPM — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the PDK device/layer
+  record, the mask-table reading and the test-tile evidence (≈ 290 words). The run-in
+  "**Interaction with the other resistor masks.**" (107 w) had to be split (§1 cap); it then
+  introduces two paragraphs, so it becomes `### Interaction with the other resistor masks`, same
+  words (R-H3 step 4). Its text — this page's reading that the `urpm` bodies receive only `UPRI`,
+  and the pointer to RRPM's open question — is unchanged (the S5 figure agent's note; see Content
+  problems under 052).
+* **R-PARA / R-SENTENCE.** Device paragraph (133 w): its 59-word sentence split at the semicolon,
+  **`[^pdk-07]` repeated** on the first half (its quotation is the PDK's); paragraph split before
+  "The extraction table …". Mask-table/test-tile paragraph (158 w) → three paragraphs; its 64-word
+  measurement sentence split at the semicolon with **"(our extraction from the published
+  measurements)" and `[^raw-data-passives]` repeated** on the first half (R-SENTENCE step 5); the
+  second half keeps the full original hedge "(our extraction from the published measurements; see
+  UPRI)". "Why" paragraph 1 (181 w) → three paragraphs; the 63-word sentence split into three ("It
+  also cannot be made by under-dosing … mask." / "This is because the two values differ … curve."
+  with all three markers / "So they need separate, individually controlled doses."); the 55-word
+  Lane and Wrixon sentence split at ", which is consistent with" → "This is consistent with …"
+  (`[^lane-1989]` stays on the design space, `[^pdk-07]` on the PDK's caution — each marker on its
+  own clause, as the base order implies). "Why" paragraph 2 (121 w): split at the semicolon before
+  "Tsang et al.".
+* **R-CATEGORY.** Classification sentence (31 w) alone; the one remaining sentence as the second
+  paragraph, split at its colon (no markers in it).
+* **R-HEDGE, R-TOOLS** (three tools, grades verbatim), **R-OPENQ** (labels "Separate reticles", "What
+  the `urpm` bodies receive", "Process option", "Tone, resist and tool").
+* **R-RELATED.** Previous/Next split; "The other resistor masks: …" → "Same module: the other
+  resistor masks, …"; mask bullets → one `Mask:` bullet; the P1ME/NPCM/LICM1 bullet unlabelled.
+* **R-GLANCE.** Not public states the `urpm` route as "this page's reading is an inference", matching
+  Open questions ("… (the reading used here) is inferred") and 052's open question.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07` ×2 (glance; the device split),
+  `pdk-08`, `pdk-periph`, `skw-01` (glance), `raw-data-passives` (the repeated hedge); numbers 2000,
+  1.270, 0.840 (glance); hedges "inference" ×2, "not public" (glance), "our extraction" (the repeat);
+  number_order (2000, 1.270, 0.840) (glance). REGROUPED: the measurement and sheet-resistance
+  sentences, same digits in the same order. Declared `markers,numbers,hedges,number_order`: clean.
+* **Marker coverage.** 6 flags, all read: "It also cannot be made …" and "So they need …" frame the
+  cited reason sentence between them; "Its resistance is dominated by grain-boundary barriers …"
+  had no marker of its own in the base (the Tsang marker belongs to the Tsang clause).
+* **Caps**: para > 100 5 → 0; item > 60 0 → 0; sentence > 45 7 → 3 (47 w: the measurement sentence
+  with its repeated hedge; 46 w: the Tsang/Lane sentence; 46 w: the "Alignment" item, base text).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph

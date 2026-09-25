@@ -10,6 +10,21 @@
 | **Previous step** | {ref}`PRIS <step-054>` |
 | **Next step** | {ref}`UPRI <step-056>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** opens resist windows over the bodies of the ultra-high
+  sheet-resistance poly resistors for their own implant, `UPRI`.
+* **Why:** that resistor needs its own, individually controlled dose.
+* **Public numbers:** the resistor's 2000 Ω/sq;[^pdk-07][^pdk-08] the
+  `rpm` minimum width 1.270 µm and spacing 0.840 µm.[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (tools); inference (layer assignment).[^skw-01]
+* **Not public:** whether the `urpm` bodies receive only `UPRI` (this
+  page's reading is an inference); tone, resist and exposure tool
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `URPM` opens resist windows over the bodies of the *ultra-high*
@@ -26,13 +41,15 @@ under resist. The resist is stripped at {ref}`UPRIS <step-057>`.
 Before, the bare gate film; after, resist over the whole slice. URPM opens only over the bodies of the ultra-high-value (`res_xhigh_po`) resistors,[^pdk-07] and the resistor drawn in this slice is read as a 300 Ω/sq one,[^pdk-07] so here the resist has no window. That the URPM reticle is made from `urpm` in the window tone is the page's inference; the PDK's mask table does not list it.[^pdk-05] The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
 
 The device it serves is public. The PDK lists "P- poly precision
 resistors" (`res_xhigh_po`) with the same five fixed widths and layout
 footprints as the 300 Ω/sq family, and states that "a separate implant
-is used to set the sheet resistance to 2000 ohm/sq"; at the time the
+is used to set the sheet resistance to 2000 ohm/sq".[^pdk-07] At the time the
 documentation was written their electrical and {term}`e-test` specifications
 were "still TBD, once sufficient silicon has been evaluated".[^pdk-07]
+
 The extraction table lists the "UHR poly resistor" at 2000 Ω/sq.[^pdk-08]
 The drawn layer is `urpm` (GDS 79:20, "2000 ohms/square polysilicon
 resistor implant").[^pdk-06] The resistor is one of the process's
@@ -46,15 +63,19 @@ Like {ref}`RRPM <step-052>`, `URPM` is not in the PDK's public mask
 table, which lists only `RPM` among the resistor masks.[^pdk-05] We
 infer that the {term}`reticle` is generated from `urpm` in the window
 (dark-field) tone, and that its geometry follows the `rpm` rules,
-because the P− resistors share the P+ layout footprints.[^pdk-07] The
+because the P− resistors share the P+ layout footprints.[^pdk-07]
+
+The
 pad documentation of the SKY130 {term}`test tile` names the mask too,
 marking the equivalent shortest 2 kΩ/sq resistors (W = 0.69 µm,
 L = 0.345 µm and W = 0.33 µm, L = 0.33 µm) "(may not work for routes
-using URPM mask)".[^raw-data-testtile-pads] The published measurements
+using URPM mask)".[^raw-data-testtile-pads]
+
+The published measurements
 of the marked structures read, from the slope of each sweep within
 ±0.1 V, 1.33–1.43 kΩ (0.33 µm, one square) and,
 at 0.69 µm and half a square, 0.59 kΩ in one module against 2.8–3.1 kΩ
-in another; the longer resistors of the family give a sheet resistance
+in another (our extraction from the published measurements).[^raw-data-passives] The longer resistors of the family give a sheet resistance
 of about 1 950 Ω/sq (our extraction from the published measurements;
 see {ref}`UPRI <step-056>`).[^raw-data-passives]
 
@@ -63,8 +84,10 @@ see {ref}`UPRI <step-056>`).[^raw-data-passives]
 `URPM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type, printed on the doped gate film with
 relaxed geometry (the `rpm` minimum width is 1.270 µm and spacing
-0.840 µm[^pdk-periph]). Its special feature is the sensitivity of what
-lies beneath the windows: the 2000 Ω/sq film is the highest-resistance
+0.840 µm[^pdk-periph]).
+
+Its special feature is the sensitivity of what
+lies beneath the windows. The 2000 Ω/sq film is the highest-resistance
 and therefore most lightly doped conductor in the process, and any
 lithographic error that lets the implant stray — or the window
 mis-size — shows up directly as resistor value and matching error.
@@ -76,24 +99,30 @@ kilohms to megohms in a few square micrometres, which is what bias
 networks, reference ladders, RC filters and the load devices of
 low-power analogue blocks need. It cannot be made from the 300 Ω/sq
 film simply by drawing it longer: area, parasitic capacitance to the
-substrate and matching all scale badly. It also cannot be made by
-under-dosing the 300 Ω/sq implant on the same mask, because the two
+substrate and matching all scale badly.
+
+It also cannot be made by
+under-dosing the 300 Ω/sq implant on the same mask. This is because the two
 values differ by between six and seven times in {term}`sheet resistance`
 (2000 Ω/sq against the device page's 300 Ω/sq and the extraction
 table's 319.8 Ω/sq)[^pdk-07][^pdk-08] and, on Seto's
 model, sit on different parts of the steep resistance-versus-doping
-curve,[^seto-1975] so they need separate, individually controlled
-doses. Lane and Wrixon's published design space for implanted LPCVD
+curve.[^seto-1975] So they need separate, individually controlled
+doses.
+
+Lane and Wrixon's published design space for implanted LPCVD
 poly — sheet resistances from 40 to 2400 Ω/sq within a ±500 ppm/°C
 temperature coefficient, for films 50–600 nm thick — puts 2000 Ω/sq at
 the high end of what an ordinary implanted-poly resistor process
-reaches, which is consistent with the PDK's caution about its
-specifications.[^lane-1989][^pdk-07]
+reaches.[^lane-1989] This is consistent with the PDK's caution about its
+specifications.[^pdk-07]
 
 The price of a lightly doped poly resistor is variability. Its
 resistance is dominated by grain-boundary barriers, so it is sensitive
 to grain size, to the exact dose and to anything that changes the trap
-density; Tsang et al. document resistance variation across banks of
+density.
+
+Tsang et al. document resistance variation across banks of
 high-value poly resistors and trace it to hydrogen diffusing through
 eroded corners of the capping nitride and the overlying
 oxide,[^tsang-2014] and Lane and Wrixon's design space (above) shows
@@ -106,8 +135,8 @@ optimisable implant window.
 
 ## How it is typically performed
 
-An industry-generic implant-mask litho sequence for a 200 mm, 130 nm-era
-fab, as on {ref}`RRPM <step-052>`:
+*An industry-generic implant-mask litho sequence for a 200 mm, 130 nm-era
+fab, as on {ref}`RRPM <step-052>`:*
 
 1. **Surface preparation.** {term}`HMDS` prime; the surface is the doped
    a-Si film with the chemical oxide left by {ref}`PRIS <step-054>`.
@@ -130,13 +159,17 @@ fab, as on {ref}`RRPM <step-052>`:
 6. **Inspection.** Overlay to active; window presence by optical
    inspection.
 
-**Interaction with the other resistor masks.** If the `urpm` bodies
+### Interaction with the other resistor masks
+
+If the `urpm` bodies
 were covered at {ref}`RPM <step-049>` (no gate implant) and *not*
 opened at {ref}`RRPM <step-052>` (no 300 Ω/sq implant), then
 {ref}`UPRI <step-056>` is the only implant they receive and its dose
 alone sets 2000 Ω/sq. If instead they were opened at `RRPM`, `UPRI`
 would have to be a *counter*-doping or a very small additional dose,
-which is implausible for a resistance six to seven times higher. The
+which is implausible for a resistance six to seven times higher.
+
+The
 first reading is the one this page uses, and is marked as an
 inference; {ref}`RRPM <step-052>` leaves the question open and lists
 it as an open question, so the two pages should be read together.
@@ -150,13 +183,16 @@ it as an open question, so the two pages should be read together.
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper or scanner.**[^skw-01] Strength: strong for
-  the tools; **inference** for the layer assignment.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
-  Strength: strong.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM.**[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper or scanner**[^skw-01]
+  - *Tool exists:* strong for
+    the tools.
+  - *Runs this step:* **inference** for the layer assignment.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this
+    mask is an inference.
 
 ## Resources required
 
@@ -169,16 +205,16 @@ it as an open question, so the two pages should be read together.
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PRIS <step-054>`. Next: {ref}`UPRI <step-056>`
+* Previous: {ref}`PRIS <step-054>`.
+* Next: {ref}`UPRI <step-056>`
   (the implant); strip at {ref}`UPRIS <step-057>`.
-* The other resistor masks: {ref}`RPM <step-049>` (protect) and
+* Same module: the other resistor masks, {ref}`RPM <step-049>` (protect) and
   {ref}`RRPM <step-052>` (reverse, for the 300 Ω/sq flavour).
 * Resistor bodies cut at {ref}`P1ME <step-062>`; contacted through
   {ref}`NPCM <step-078>` and {ref}`LICM1 <step-093>`.
-* Previous mask step: {ref}`RRPM <step-052>`; next mask step:
-  {ref}`P1M <step-061>`.
-* Mask page: {ref}`URPM <mask-urpm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`URPM <mask-urpm>` — the mask's layers, plates,
+  renders and design rules. Previous mask step: {ref}`RRPM <step-052>`;
+  next mask step: {ref}`P1M <step-061>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -262,16 +298,16 @@ it as an open question, so the two pages should be read together.
 
 ## Open questions
 
-* This page treats `URPM` and {ref}`RRPM <step-052>` as separate
+* **Separate reticles.** This page treats `URPM` and {ref}`RRPM <step-052>` as separate
   reticles, on the strength of the PDK's "separate implant" and two
   drawn layers; one reticle with two implant recipes would also fit
   the public sources.
-* Whether the `urpm` bodies receive only {ref}`UPRI <step-056>` (the
+* **What the `urpm` bodies receive.** Whether the `urpm` bodies receive only {ref}`UPRI <step-056>` (the
   reading used here) is inferred.
-* Whether the ultra-high resistor is a process option in the sense of
+* **Process option.** Whether the ultra-high resistor is a process option in the sense of
   the *Background* page's `r` suffix — i.e. whether this mask is
   skipped on some product flows — is not stated.
-* Reticle tone, resist and exposure tool are inferred.
+* **Tone, resist and tool.** Reticle tone, resist and exposure tool are inferred.
 
 <!-- footnotes -->
 
