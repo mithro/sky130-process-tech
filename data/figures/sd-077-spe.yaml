@@ -3,6 +3,7 @@ kind: xsection
 page: docs/steps/077-spe.md
 series: series-tips-sd.yaml
 close_up: [197, 268]
+close_up_name: "the 1.8 V gate edge"
 crop_depth: 50
 alt: >-
   Two enlarged cross-sections of one transistor edge, one above the other. Before the step a
@@ -19,7 +20,7 @@ caption: >-
   was: the page reads the PDK's 0.2 µm "poly cap after SPE" as what is left of the cap stack
   when this etch is done,[^pdk-03] and how much the etch takes, or whether the oxide cap
   survives, is not public. Outside this view the same etch leaves spacers on the resistor's
-  sidewalls, and the over-etch clears the nitride from the step down from the field oxide to the
+  sidewalls, and the over-etch clears the nitride, as the page's recipe describes, from the step down from the field oxide to the
   active areas. The tip's colour and the halo's hatching mark where the implants are, not their
   profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and
   the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not

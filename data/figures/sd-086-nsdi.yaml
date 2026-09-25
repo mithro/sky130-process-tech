@@ -2,8 +2,9 @@ id: sd-086-nsdi
 kind: xsection
 page: docs/steps/086-nsdi.md
 series: series-tips-sd.yaml
-close_up: [197, 268]
-crop_depth: 55
+close_up: [194, 268]
+close_up_name: "the 1.8 V gate edge"
+crop_depth: 53
 alt: >-
   Two enlarged cross-sections of one transistor edge, one above the other. Before the step a
   capped gate with a nitride block and a thin oxide on its sidewall stands over a shallow doped
@@ -20,8 +21,8 @@ caption: >-
   phosphorus), energy and dose are not public. Outside this view the same implant makes the deep
   junction over the whole 5 V area, which has no gate in this slice. The colours mark the type
   of the doping, and the hatching where the halo implant is, not their profiles. The caps, the
-  re-oxidation oxide, the gate oxide and the spacer oxide are drawn but not labelled, and the
-  liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not
+  re-oxidation oxide, the gate oxide and the spacer oxide are drawn but not labelled, nor are the
+  spacer nitride and the silicon in the upper panel, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not
   drawn. Not to scale.
 arrow:
   title: "NSDI, step 086"
@@ -30,10 +31,13 @@ panels:
   - state_after: "085"
     title: "Before: the gate edge in the NSDM window (step 085)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, thinox, poly, nit, capox, iox, spox, polyn]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, spox, polyn, spnit, sub]
+    labels:
+      halo:
+        note: "BHI, step 066"
     dim_layers: [liner]
   - state_after: "086"
     title: "After: a deep N+ source/drain outside the spacer"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, thinox, poly, nit, capox, iox, spox, polyn, spnit]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, spox, polyn]
     dim_layers: [liner]

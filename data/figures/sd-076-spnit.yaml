@@ -3,6 +3,7 @@ kind: xsection
 page: docs/steps/076-spnit.md
 series: series-tips-sd.yaml
 close_up: [197, 268]
+close_up_name: "the 1.8 V gate edge"
 crop_depth: 50
 alt: >-
   Two enlarged cross-sections of one transistor edge, one above the other. Before the step a

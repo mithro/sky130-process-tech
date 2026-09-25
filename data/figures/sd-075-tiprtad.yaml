@@ -3,6 +3,7 @@ kind: xsection
 page: docs/steps/075-tiprtad.md
 series: series-tips-sd.yaml
 close_up: [197, 268]
+close_up_name: "the 1.8 V gate edge"
 crop_depth: 50
 no_drawn_change: true
 alt: >-

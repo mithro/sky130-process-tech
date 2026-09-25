@@ -88,9 +88,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="187.4" class="t-label-note muted" data-owner="ldntmres">SONOS transistors</text>
 <path class="leader" data-owner="ldntmres" d="M276.0 134.5H297.0H324.0"/>
 <circle class="dot" data-owner="ldntmres" cx="276.0" cy="134.5" r="1.9"/>
-<text x="31.0" y="49.9" class="t-label-title" data-owner="ions">LDBHI implant</text>
-<text x="31.0" y="65.9" class="t-label-note muted" data-owner="ions">stopped here by the resist</text>
-<path class="leader" data-owner="ions" d="M22.0 83.0V45.0H27.0"/>
-<circle class="dot" data-owner="ions" cx="22.0" cy="83.0" r="1.9"/>
+<text x="27.9" y="49.9" class="t-label-title" data-owner="ions">LDBHI implant</text>
+<text x="27.9" y="65.9" class="t-label-note muted" data-owner="ions">stopped here by the resist</text>
+<path class="leader" data-owner="ions" d="M18.9 83.0V45.0H23.9"/>
+<circle class="dot" data-owner="ions" cx="18.9" cy="83.0" r="1.9"/>
 <text x="12.0" y="326.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

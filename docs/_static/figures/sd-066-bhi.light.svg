@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 761" width="480" height="761" role="img" data-kind="xsection" data-theme="light">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 778" width="480" height="778" role="img" data-kind="xsection" data-theme="light">
 <title>Two enlarged cross-sections of one transistor edge, one above the other. Before the step a shallow doped layer lies in the silicon beside a capped gate. After it arrows come down on both sides of the gate, and a second, hatched region lies under the shallow layer and reaches a short way under the edge of the gate, where it comes up to the silicon surface.</title>
 <desc>Two enlarged cross-sections of one transistor edge, one above the other. Before the step a shallow doped layer lies in the silicon beside a capped gate. After it arrows come down on both sides of the gate, and a second, hatched region lies under the shallow layer and reaches a short way under the edge of the gate, where it comes up to the silicon surface.</desc>
 <style>
@@ -21,7 +21,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="761"/>
+<rect class="ground" x="0" y="0" width="480" height="778"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the n-type tip beside the gate (step 065)</text>
 <clipPath id="clip1"><rect x="12" y="38.0" width="268" height="216.3"/></clipPath>
 <g class="drawing" data-rect="12,38.0,268,216.3" clip-path="url(#clip1)">
@@ -112,10 +112,11 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="688.7" class="t-label-note tag" data-owner="halo">typical practice</text>
 <path class="leader" data-owner="halo" d="M276.0 653.9H297.0V635.8H324.0"/>
 <circle class="dot" data-owner="halo" cx="276.0" cy="653.9" r="1.9"/>
-<text x="155.0" y="374.3" class="t-label-title" data-owner="ions">BHI implant</text>
-<text x="155.0" y="390.3" class="t-label-note muted" data-owner="ions">species, energy, dose</text>
-<text x="155.0" y="406.3" class="t-label-note muted" data-owner="ions">and tilt are not public</text>
-<path class="leader" data-owner="ions" d="M146.0 423.4V369.4H151.0"/>
-<circle class="dot" data-owner="ions" cx="146.0" cy="423.4" r="1.9"/>
-<text x="12.0" y="748.8" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="140.1" y="374.3" class="t-label-title" data-owner="ions">BHI implant</text>
+<text x="140.1" y="390.3" class="t-label-note muted" data-owner="ions">species, energy, dose</text>
+<text x="140.1" y="406.3" class="t-label-note muted" data-owner="ions">and tilt are not public</text>
+<path class="leader" data-owner="ions" d="M131.1 423.4V369.4H136.1"/>
+<circle class="dot" data-owner="ions" cx="131.1" cy="423.4" r="1.9"/>
+<text x="12.0" y="748.8" class="t-label-title">Close-up of the 1.8 V gate edge, enlarged about 3.8×.</text>
+<text x="12.0" y="765.8" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

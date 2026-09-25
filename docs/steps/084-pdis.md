@@ -30,7 +30,7 @@ al. characterised.[^fujimura-1989]
 :width: 560px
 :name: fig-sd-084-pdis
 
-Before, the PSDM resist after the two p-type implants; after, the resist stripped and the wafer cleaned. On this reference's reading the surface under the resist is the spacer oxide everywhere, and the clean leaves it in place (no HF step, as the page infers), so it is drawn unchanged; how much of it the clean takes is not public. The resist's implanted crust is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+Before, the PSDM resist after the two p-type implants; after, the resist stripped and the wafer cleaned. On this reference's reading the surface under the resist is the spacer oxide everywhere, and the clean leaves it in place (no HF step, as the page infers), so it is drawn unchanged; how much of it the clean takes is not public. The resist's implanted crust is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the upper panel the n-type gate film under the resist is not labelled. Not to scale.
 :::
 
 The surface under the resist is, on our reading of the flow, the

@@ -26,49 +26,49 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="12.0" y="44.0" class="t-panel-title">stacks after IOX45 (step 063)</text>
 <clipPath id="clip1"><rect x="12" y="56.0" width="268" height="205.7"/></clipPath>
 <g class="drawing" data-rect="12,56.0,268,205.7" clip-path="url(#clip1)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,138.00 92.00,138.00 99.00,182.20 99.50,186.00 100.00,188.11 100.50,189.23 101.00,190.06 101.50,190.73 102.00,191.28 102.50,191.76 103.00,192.17 104.00,192.83 105.00,193.31 106.00,193.66 107.00,193.88 108.00,193.99 184.00,193.99 185.00,193.88 186.00,193.66 187.00,193.31 188.00,192.83 189.00,192.17 189.50,191.76 190.00,191.28 190.50,190.73 191.00,190.06 191.50,189.23 192.00,188.11 192.50,186.00 193.00,182.20 200.00,138.00 283.00,138.00 283.00,302.00 9.00,302.00"/>
-<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="91.75,133.00 92.00,133.00 92.50,136.16 93.00,138.00 97.00,138.00 104.00,182.20 104.50,186.00 105.00,188.11 105.50,188.50 106.50,188.79 107.50,188.95 184.00,188.99 185.00,188.88 186.00,188.66 186.50,188.50 187.00,188.11 187.50,186.00 188.00,182.20 195.00,138.00 199.00,138.00 199.50,136.16 200.00,133.00 200.25,133.00 200.25,138.00 200.00,138.00 193.00,182.20 192.50,186.00 192.00,188.11 191.50,189.23 191.00,190.06 190.50,190.73 190.00,191.28 189.50,191.76 189.00,192.17 188.00,192.83 187.00,193.31 186.00,193.66 185.00,193.88 184.00,193.99 108.00,193.99 107.00,193.88 106.00,193.66 105.00,193.31 104.00,192.83 103.00,192.17 102.50,191.76 102.00,191.28 101.50,190.73 101.00,190.06 100.50,189.23 100.00,188.11 99.50,186.00 99.00,182.20 92.00,138.00 91.75,138.00"/>
-<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,109.00 200.25,109.00 200.25,133.00 200.00,133.00 199.50,136.16 199.00,138.00 195.00,138.00 188.00,182.20 187.50,186.00 187.00,188.11 186.50,188.50 186.00,188.66 185.00,188.88 184.00,188.99 107.50,188.95 106.50,188.79 105.50,188.50 105.00,188.11 104.50,186.00 104.00,182.20 97.00,138.00 93.00,138.00 92.50,136.16 92.00,133.00 91.75,133.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="gox" points="9.00,128.00 91.75,128.00 91.75,138.00 9.00,138.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="thinox" points="200.25,133.00 283.00,133.00 283.00,138.00 200.25,138.00"/>
-<polygon class="mat m-poly" data-layer="poly" points="119.75,89.00 172.25,89.00 172.25,109.00 119.75,109.00"/>
-<polygon class="mat m-poly" data-layer="poly" points="247.75,113.00 272.25,113.00 272.25,133.00 247.75,133.00"/>
-<polygon class="mat m-nitride" data-layer="nit" points="119.75,79.00 172.25,79.00 172.25,89.00 119.75,89.00"/>
-<polygon fill="url(#p-hatch)" points="119.75,79.00 172.25,79.00 172.25,89.00 119.75,89.00"/>
-<polygon class="mat m-nitride" data-layer="nit" points="247.75,103.00 272.25,103.00 272.25,113.00 247.75,113.00"/>
-<polygon fill="url(#p-hatch)" points="247.75,103.00 272.25,103.00 272.25,113.00 247.75,113.00"/>
-<polygon class="mat m-oxide-dep" data-layer="capox" points="119.75,71.00 172.25,71.00 172.25,79.00 119.75,79.00"/>
-<polygon class="mat m-oxide-dep" data-layer="capox" points="247.75,95.00 272.25,95.00 272.25,103.00 247.75,103.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,123.00 91.75,123.00 91.75,128.00 9.00,128.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="200.25,128.00 242.50,128.00 243.00,113.00 247.75,113.00 247.75,133.00 200.25,133.00"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="272.25,113.00 277.00,113.00 277.50,128.00 283.00,128.00 283.00,133.00 272.25,133.00"/>
-<polygon class="mat m-sd-n" data-layer="polyn" points="247.75,113.00 272.25,113.00 272.25,133.00 247.75,133.00"/>
-<polygon class="mat m-sd-p" data-layer="polyp" points="119.75,89.00 172.25,89.00 172.25,109.00 119.75,109.00"/>
-<polygon fill="url(#p-plus)" points="119.75,89.00 172.25,89.00 172.25,109.00 119.75,109.00"/>
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,141.00 92.00,141.00 99.00,185.20 99.50,189.00 100.00,191.11 100.50,192.23 101.00,193.06 101.50,193.73 102.00,194.28 102.50,194.76 103.00,195.17 104.00,195.83 105.00,196.31 106.00,196.66 107.00,196.88 108.00,196.99 184.00,196.99 185.00,196.88 186.00,196.66 187.00,196.31 188.00,195.83 189.00,195.17 189.50,194.76 190.00,194.28 190.50,193.73 191.00,193.06 191.50,192.23 192.00,191.11 192.50,189.00 193.00,185.20 200.00,141.00 283.00,141.00 283.00,305.00 9.00,305.00"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="91.75,136.00 92.00,136.00 92.50,139.16 93.00,141.00 97.00,141.00 104.00,185.20 104.50,189.00 105.00,191.11 105.50,191.50 106.50,191.79 107.50,191.95 184.00,191.99 185.00,191.88 186.00,191.66 186.50,191.50 187.00,191.11 187.50,189.00 188.00,185.20 195.00,141.00 199.00,141.00 199.50,139.16 200.00,136.00 200.25,136.00 200.25,141.00 200.00,141.00 193.00,185.20 192.50,189.00 192.00,191.11 191.50,192.23 191.00,193.06 190.50,193.73 190.00,194.28 189.50,194.76 189.00,195.17 188.00,195.83 187.00,196.31 186.00,196.66 185.00,196.88 184.00,196.99 108.00,196.99 107.00,196.88 106.00,196.66 105.00,196.31 104.00,195.83 103.00,195.17 102.50,194.76 102.00,194.28 101.50,193.73 101.00,193.06 100.50,192.23 100.00,191.11 99.50,189.00 99.00,185.20 92.00,141.00 91.75,141.00"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,112.00 200.25,112.00 200.25,136.00 200.00,136.00 199.50,139.16 199.00,141.00 195.00,141.00 188.00,185.20 187.50,189.00 187.00,191.11 186.50,191.50 186.00,191.66 185.00,191.88 184.00,191.99 107.50,191.95 106.50,191.79 105.50,191.50 105.00,191.11 104.50,189.00 104.00,185.20 97.00,141.00 93.00,141.00 92.50,139.16 92.00,136.00 91.75,136.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="9.00,131.00 91.75,131.00 91.75,141.00 9.00,141.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="thinox" points="200.25,136.00 283.00,136.00 283.00,141.00 200.25,141.00"/>
+<polygon class="mat m-poly" data-layer="poly" points="119.75,92.00 172.25,92.00 172.25,112.00 119.75,112.00"/>
+<polygon class="mat m-poly" data-layer="poly" points="247.75,116.00 272.25,116.00 272.25,136.00 247.75,136.00"/>
+<polygon class="mat m-nitride" data-layer="nit" points="119.75,82.00 172.25,82.00 172.25,92.00 119.75,92.00"/>
+<polygon fill="url(#p-hatch)" points="119.75,82.00 172.25,82.00 172.25,92.00 119.75,92.00"/>
+<polygon class="mat m-nitride" data-layer="nit" points="247.75,106.00 272.25,106.00 272.25,116.00 247.75,116.00"/>
+<polygon fill="url(#p-hatch)" points="247.75,106.00 272.25,106.00 272.25,116.00 247.75,116.00"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="119.75,74.00 172.25,74.00 172.25,82.00 119.75,82.00"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="247.75,98.00 272.25,98.00 272.25,106.00 247.75,106.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,126.00 91.75,126.00 91.75,131.00 9.00,131.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="200.25,131.00 242.50,131.00 243.00,116.00 247.75,116.00 247.75,136.00 200.25,136.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="272.25,116.00 277.00,116.00 277.50,131.00 283.00,131.00 283.00,136.00 272.25,136.00"/>
+<polygon class="mat m-sd-n" data-layer="polyn" points="247.75,116.00 272.25,116.00 272.25,136.00 247.75,136.00"/>
+<polygon class="mat m-sd-p" data-layer="polyp" points="119.75,92.00 172.25,92.00 172.25,112.00 119.75,112.00"/>
+<polygon fill="url(#p-plus)" points="119.75,92.00 172.25,92.00 172.25,112.00 119.75,112.00"/>
 </g>
 <text x="328.0" y="283.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 202.0H285.0V279.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="202.0" r="1.9"/>
+<path class="leader" data-owner="sub" d="M276.0 205.0H285.0V279.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="205.0" r="1.9"/>
 <text x="328.0" y="227.9" class="t-label-title" data-owner="polyn">n-type gate film</text>
 <text x="328.0" y="243.9" class="t-label-note muted" data-owner="polyn">gate implant,</text>
 <text x="328.0" y="259.9" class="t-label-note muted" data-owner="polyn">step 050</text>
-<path class="halo" d="M272.5 129.5L280.0 129.5"/>
-<path class="leader" data-owner="polyn" d="M259.0 129.5H291.0V223.0H324.0"/>
-<circle class="dot" data-owner="polyn" cx="259.0" cy="129.5" r="1.9"/>
+<path class="halo" d="M272.5 132.5L280.0 132.5"/>
+<path class="leader" data-owner="polyn" d="M259.0 132.5H291.0V223.0H324.0"/>
+<circle class="dot" data-owner="polyn" cx="259.0" cy="132.5" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="polyp">p-type</text>
 <text x="328.0" y="83.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="115.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 88.5L164.0 71.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 92.5V60.0H303.0V63.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="92.5" r="1.9"/>
+<path class="halo" d="M164.0 91.5L164.0 74.0"/>
+<path class="leader" data-owner="polyp" d="M164.0 95.5V60.0H303.0V63.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="164.0" cy="95.5" r="1.9"/>
 <text x="328.0" y="139.9" class="t-label-title" data-owner="iox">Re-oxidation</text>
 <text x="328.0" y="155.9" class="t-label-title" data-owner="iox">oxide</text>
 <text x="328.0" y="171.9" class="t-label-note muted" data-owner="iox">grown at step</text>
 <text x="328.0" y="187.9" class="t-label-note muted" data-owner="iox">063; thin, we infer</text>
 <text x="328.0" y="203.9" class="t-label-note tag" data-owner="iox">inferred</text>
-<path class="leader" data-owner="iox" d="M276.0 124.5H297.0V135.0H324.0"/>
-<circle class="dot" data-owner="iox" cx="276.0" cy="124.5" r="1.9"/>
+<path class="leader" data-owner="iox" d="M276.0 127.5H297.0V135.0H324.0"/>
+<circle class="dot" data-owner="iox" cx="276.0" cy="127.5" r="1.9"/>
 <path class="parrow" d="M34 308.0V346.0"/>
 <path class="pahead" d="M34 354.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="319.0" class="t-label-title acc">NTM, step 064</text>

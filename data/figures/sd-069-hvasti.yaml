@@ -2,16 +2,17 @@ id: sd-069-hvasti
 kind: xsection
 page: docs/steps/069-hvasti.md
 series: series-tips-sd.yaml
-close_up: [0, 88]
+close_up: [0, 97]
+close_up_name: "the 5 V NMOS area"
 crop_depth: 50
 alt: >-
   Two enlarged cross-sections of the left-hand end of the slice, one above the other: an active
   area under a thick oxide, and the edge of the oxide-filled trench on the right. Before the step
-  the active area is bare. After it steeply slanted arrows come down on it, and a doped layer
+  the active area is bare and a thin resist edge stands on the trench oxide. After it steeply slanted arrows come down on it, and a doped layer
   lies in the silicon under the whole active area.
 caption: >-
-  A close-up of the 5 V NMOS area at the left-hand end of the slice, inside the HVNTM window; the
-  thin resist over the rest of the slice lies outside it. Before, the open window; after, the
+  A close-up of the 5 V NMOS area at the left-hand end of the slice, inside the HVNTM window; only
+  the edge of the thin resist, on the field oxide at the right, is in view. Before, the open window; after, the
   high-voltage n-type tip in the silicon. The
   arrows lean at the PDK's 40° "Angle for HV tip implant"; its 23° twist, which turns the beam
   out of the plane of the drawing, is not drawn, and the number of rotations is not

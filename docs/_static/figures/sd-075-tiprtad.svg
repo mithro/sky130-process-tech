@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 343" width="480" height="343" role="img" data-kind="xsection" data-theme="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360" role="img" data-kind="xsection" data-theme="auto">
 <title>One enlarged cross-section of one transistor edge. A capped gate stands on a thin oxide over the silicon; beside it a shallow doped layer lies in the silicon, and a hatched region lies under that layer and reaches a short way under the gate edge. The drawing is the same as the state before the step.</title>
 <desc>One enlarged cross-section of one transistor edge. A capped gate stands on a thin oxide over the silicon; beside it a shallow doped layer lies in the silicon, and a hatched region lies under that layer and reaches a short way under the gate edge. The drawing is the same as the state before the step.</desc>
 <style>
@@ -22,7 +22,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="343"/>
+<rect class="ground" x="0" y="0" width="480" height="360"/>
 <text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
 <clipPath id="clip1"><rect x="12" y="38.0" width="268" height="234.5"/></clipPath>
 <g class="drawing" data-rect="12,38.0,268,234.5" clip-path="url(#clip1)">
@@ -63,5 +63,6 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="270.7" class="t-label-note tag" data-owner="halo">typical practice</text>
 <path class="leader" data-owner="halo" d="M276.0 230.6H291.0V217.8H324.0"/>
 <circle class="dot" data-owner="halo" cx="276.0" cy="230.6" r="1.9"/>
-<text x="12.0" y="330.8" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="12.0" y="330.8" class="t-label-title">Close-up of the 1.8 V gate edge, enlarged about 3.8×.</text>
+<text x="12.0" y="347.8" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

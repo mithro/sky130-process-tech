@@ -91,10 +91,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="154.9" class="t-label-note muted" data-owner="psdres">the resistor</text>
 <path class="leader" data-owner="psdres" d="M276.0 106.5H297.0V102.0H324.0"/>
 <circle class="dot" data-owner="psdres" cx="276.0" cy="106.5" r="1.9"/>
-<text x="155.0" y="49.9" class="t-label-title" data-owner="ions">PSDI implant</text>
-<text x="155.0" y="65.9" class="t-label-note muted" data-owner="ions">p-type; species, energy</text>
-<text x="155.0" y="81.9" class="t-label-note muted" data-owner="ions">and dose are not public</text>
-<path class="leader" data-owner="ions" d="M146.0 99.0V45.0H151.0"/>
-<circle class="dot" data-owner="ions" cx="146.0" cy="99.0" r="1.9"/>
+<text x="147.5" y="49.9" class="t-label-title" data-owner="ions">PSDI implant</text>
+<text x="147.5" y="65.9" class="t-label-note muted" data-owner="ions">p-type; species, energy</text>
+<text x="147.5" y="81.9" class="t-label-note muted" data-owner="ions">and dose are not public</text>
+<path class="leader" data-owner="ions" d="M138.5 99.0V45.0H143.5"/>
+<circle class="dot" data-owner="ions" cx="138.5" cy="99.0" r="1.9"/>
 <text x="12.0" y="303.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

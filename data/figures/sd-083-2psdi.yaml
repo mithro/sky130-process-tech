@@ -19,7 +19,8 @@ caption: >-
   films, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the
   oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn
   faded; the P-well and the NCHI channel implant made earlier are not drawn. The p-type resistor body is not labelled, because its leader would
-  have to cross the beam. Not to scale.
+  have to cross the beam. The slice has no PMOS; the P⁺ source/drain this implant makes beside the
+  spacers of every PMOS transistor is not shown. Not to scale.
 panels:
   - state_after: "083"
     title: "State at this step (no drawn change)"

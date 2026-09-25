@@ -27,7 +27,7 @@ by such a strip ({ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`).
 :width: 560px
 :name: fig-sd-067-astis
 
-Before, the NTM resist after the tip and halo implants; after, the resist stripped and the wafer cleaned, down to the thin oxide the page infers is left over the silicon and the capped gates. The crust the implants leave in the resist is not drawn, and no HF step is drawn, as the page infers, so the oxide is unchanged. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides and the re-oxidation oxide are drawn but not labelled, nor is the field oxide (the oxide-filled trench in the middle); the liner oxide is drawn faded, and the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+Before, the NTM resist after the tip and halo implants; after, the resist stripped and the wafer cleaned, down to the thin oxide the page infers is left over the silicon and the capped gates. The crust the implants leave in the resist is not drawn, and no HF step is drawn, as the page infers, so the oxide is unchanged. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides and the re-oxidation oxide are drawn but not labelled, nor is the field oxide (the oxide-filled trench in the middle); the liner oxide is drawn faded, and the P-well and the NCHI channel implant made earlier are not drawn. In the upper panel the p-type resistor body under the resist is not labelled. Not to scale.
 :::
 
 The resist being removed is the roughly 1 µm i-line implant resist
