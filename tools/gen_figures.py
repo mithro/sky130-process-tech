@@ -2853,6 +2853,7 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
         if series["substrate"]["material"] not in TOK["materials"]:
             errs.append(f"unknown material {series['substrate']['material']}")
         steps = {"000"}
+        bad_types = False
         for op in series["ops"]:
             if op["op"] not in OPS:
                 errs.append(f"unknown operation {op['op']!r}; one of {', '.join(sorted(OPS))}")
@@ -2883,7 +2884,17 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
                 errs.append(f"operation {op['op']} at step {op.get('step')}: thin_ok is true or absent")
             if op.get("material") and op["material"] not in TOK["materials"]:
                 errs.append(f"unknown material {op['material']}")
-            for mat in (op.get("materials") or []) + (op.get("only_on") or []) + (op.get("consumes") or []):
+            mat_lists = []
+            for mk in ("materials", "only_on", "consumes"):
+                if op.get(mk) is None:
+                    continue
+                if not isinstance(op[mk], list):
+                    errs.append(f"operation {op['op']} at step {op.get('step')}: {mk} is "
+                                f"{op[mk]!r}, which is not a list (write [{op[mk]}])")
+                    bad_types = True
+                    continue
+                mat_lists += op[mk]
+            for mat in mat_lists:
                 if mat not in TOK["materials"] and mat not in GROUPS:
                     errs.append(f"operation {op['op']} at step {op.get('step')}: "
                                 f"unknown material or group {mat!r}")
@@ -2891,6 +2902,24 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
                 errs.append(f"operation {op['op']} at step {op.get('step')}: "
                             f"where_open names no layer of this series ({op['where_open']!r})")
             labs.append((op.get("id", op["op"]), op.get("label")))
+        if bad_types:
+            return errs                 # a material list that is not a list cannot be emulated
+        # An etch through a resist that removes nothing: every opening's top film is one it
+        # does not etch (a template's `etch_materials` left at a default that does not reach
+        # the MiM dielectric on the metal, say). The picture would silently show no etch.
+        if not any(("unknown" in e or "where_open names no layer" in e) for e in errs):
+            xs_e = XSection(series["substrate"], 0.5)
+            for op in series["ops"]:
+                if op["op"] == "etch" and op.get("where_open"):
+                    before_cols = [[list(s) for s in col] for col in xs_e.cols]
+                    xs_e.apply(op)
+                    if xs_e.cols == before_cols:
+                        errs.append(f"operation etch at step {op.get('step')} (where_open "
+                                    f"{op['where_open']}) removes nothing: the top film in every "
+                                    f"opening is one its materials {op.get('materials')} do not "
+                                    "include")
+                else:
+                    xs_e.apply(op)
         for pn in spec.get("panels", []):
             sa = str(pn.get("state_after", ""))
             if not re.fullmatch(r"\d{3}", sa):
@@ -3351,7 +3380,7 @@ def render_spec(spec: dict, series_cache: dict[str, dict]) -> tuple[Svg, list[st
             series_cache[sp] = load_series(sp)
         series = series_cache[sp]
     errs = lint_spec(spec, series)
-    if kind == "xsection" and series.get("_errors"):
+    if kind == "xsection" and (series.get("_errors") or any("which is not a list" in e for e in errs)):
         # a series whose base or templates did not resolve cannot be emulated: report its
         # faults (lint_spec did) and draw nothing, rather than fail on a half-filled op
         svg = Svg("xsection", spec.get("alt", ""), spec.get("alt", ""))
@@ -3819,6 +3848,21 @@ def selftest() -> int:
          "may not be drawn to scale")
 
     bad = 0
+    # `etch_materials` (S10): a scalar where a list belongs is a lint line, not a TypeError, and
+    # an etch through a resist that removes nothing (the parameter left out, so the default
+    # does not reach the top film) is reported
+    def _etch_series(mats):
+        ser = copy.deepcopy(_SERIES_OK)
+        ser["ops"] += [
+            {"step": "003", "op": "deposit", "id": "res", "material": "resist", "t": 10,
+             "where": [[0, 100]], "label": {"title": "Photoresist", "note": "step 003",
+                                            "basis": "public"}},
+            {"step": "004", "op": "etch", "materials": mats, "where_open": "res"}]
+        return ser
+    case("etch materials given as a scalar", lambda s, r: None, "which is not a list",
+         series=_etch_series("oxide-thermal"))
+    case("an etch through a resist that removes nothing", lambda s, r: None, "removes nothing",
+         series=_etch_series(["nitride"]))
     for name, spec, series, needle in cases:
         errs = lint_spec(spec, series)
         if not any(needle in e for e in errs):
@@ -3929,6 +3973,36 @@ def selftest() -> int:
     else:
         if not any("required parameter 't' is missing" in x for x in e_lint + e_build):
             print(f"SELFTEST FAIL: a misspelled template parameter was not reported: {e_lint}")
+            bad += 1
+    # a template whose `etch_materials` is left out at a level where the MiM dielectric lies on
+    # the metal: the default does not reach it, and the lint says so; given as a scalar, the
+    # lint and the build report it instead of raising
+    def pat_raw(with_extra):
+        return {
+            "substrate": copy.deepcopy(_SERIES_OK["substrate"]),
+            "templates": {"pat": {
+                "params": ["s"], "defaults": {"etch_materials": ["barrier"]},
+                "ops": [{"step": "${s}", "op": "deposit", "id": "res", "material": "resist",
+                         "t": 10, "where": [[0, 100]],
+                         "label": {"title": "Photoresist", "note": "a mask", "basis": "public"}},
+                        {"step": "${s}", "op": "etch", "materials": "${etch_materials}",
+                         "where_open": "res"}]}},
+            "ops": [{"step": "002", "op": "deposit", "id": "diel", "material": "mim-diel", "t": 3,
+                     "thin_ok": True,
+                     "label": {"title": "Dielectric", "note": "a film", "basis": "public"}},
+                    {"use": "pat", "with": dict({"s": "003"}, **with_extra)}],
+        }
+    for label, extra, needle in (("left out", {}, "removes nothing"),
+                                 ("a scalar", {"etch_materials": "mim-diel"}, "which is not a list")):
+        ser_p = expand_series(pat_raw(extra), "selftest.yaml")
+        try:
+            e_p = lint_spec(_spec_ok(), ser_p) + render_spec(_spec_ok(), {"x.yaml": ser_p})[1]
+        except Exception as exc:                               # noqa: BLE001
+            print(f"SELFTEST FAIL: etch_materials {label} raised {exc!r}")
+            bad += 1
+            continue
+        if not any(needle in x for x in e_p):
+            print(f"SELFTEST FAIL: etch_materials {label} did not report {needle!r}; got {e_p}")
             bad += 1
     # cite keys are checked against the real page, and a restricted key is refused
     real = _spec_ok()
