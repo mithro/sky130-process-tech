@@ -202,6 +202,7 @@ class Svg:
         self.h = 0.0
         self.patterns_used: set[str] = set()
         self.ghosts = False
+        self.cuts = False
 
     def add(self, s: str):
         self.body.append(s)
@@ -245,6 +246,9 @@ class Svg:
         # it looks the same on every host and cannot be mistaken for any material.
         css += (f".mat.faded{{fill:none;stroke:var(--ink-muted);"
                 f"stroke-dasharray:{ST['faded-dash']}}}\n")
+        if self.cuts:
+            css += (f".cutfill{{fill:var(--bg)}}.cutline{{stroke:var(--ink-muted);"
+                    f"stroke-width:{ST['rule']};fill:none;stroke-linejoin:round}}\n")
         if self.ghosts:
             # ... except in a close-up, where the enlargement would turn an empty film into a
             # gap: there it keeps its own fill and loses only its outline and its label.
@@ -385,6 +389,11 @@ def _gapfill(tops: list[float], t: float, dx: float, facet_deg: float = 45.0,
         out = [min(max(a, b), c) for a, b, c in zip(out, floor, f)]
     return out
 
+
+# a close-up cut off above the silicon: the caption's declaration, and the least height a film
+# must show above the cut to be drawn at all
+CUT_PHRASE = "the lower part of the slice is cut off"
+CUT_SLIVER = 2.0
 
 # a gap-filling deposit: a drop larger than this (u) is a line's edge; the least film anywhere
 GAPFILL_EDGE = 1.0
@@ -1530,6 +1539,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     panels = [_zoom_panel(p, close[0], zoom) if close else p for p in spec["panels"]]
     sub_depth = float(series["substrate"]["depth"])
     depth = float(spec.get("crop_depth", sub_depth))
+    cut = close is not None and depth < 0          # a close-up cut off above the silicon
     floor_y = -depth + 8
     X0 = M
     x_right = X0 + DRAW_W
@@ -1802,6 +1812,10 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             if layer.get("op") in ("dope", "ions") or lid in hidden:
                 continue
             for poly in st.polygons(lid):
+                # a close-up cut off above the silicon: a film that shows less than
+                # CUT_SLIVER above the cut is a sliver of something the figure does not draw
+                if cut and max(py for _px, py in poly) < -depth + CUT_SLIVER:
+                    continue
                 fill_material(svg, layer["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly),
                               lid, faded=lid in faded, ghost=zoom > 1)
         # Doped overlays are painted in order of ``z`` (default 0), then of creation: a thin
@@ -1810,8 +1824,24 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             if ov["id"] in hidden:
                 continue
             for poly in st.overlay_polygons(ov):
+                if cut and max(py for _px, py in poly) < -depth + CUT_SLIVER:
+                    continue
                 fill_material(svg, ov["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly),
                               ov["id"], faded=ov["id"] in faded, ghost=zoom > 1)
+        if cut:
+            # the cut is drawn as a break: a zigzag edge with the page's ground below it, so the
+            # figure itself shows that the slice goes on further down
+            zz = [(0.0, -depth + 1.0)]
+            xv, k = 0.0, 0
+            while xv < DRAW_W:
+                xv = min(float(DRAW_W), xv + 4.0)
+                k += 1
+                zz.append((xv, -depth + (3.5 if k % 2 else 1.0)))
+            pts = " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in zz)
+            svg.cuts = True
+            svg.add(f'<polygon class="cutfill" points="{pts} {f2(sx(DRAW_W))},{f2(sy(-depth - 4))} '
+                    f'{f2(sx(0))},{f2(sy(-depth - 4))}"/>')
+            svg.add(f'<polyline class="cutline" points="{pts}"/>')
         # The accent traces the surface this step made, drawn just clear of it, so that it
         # marks a 5 u film instead of covering it.
         off = SP["highlight-offset"]
@@ -1862,7 +1892,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                       if l.route in ("right", "over")], default=0.0)
         want = lowest - y_draw_top - SP["max-label-drop"] + 1
         room = ymax + sub_depth
-        if want > draw_h + 1 and room > draw_h:
+        if want > draw_h + 1 and room > draw_h and not cut:
             new_h = min(want, room)
             for k in (i_clip, i_clip + 1):
                 svg.body[k] = svg.body[k].replace(f'{f1(draw_h)}"', f'{f1(new_h)}"', 1)
@@ -1917,7 +1947,8 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     if close:
         # A close-up says so on the figure itself, not only in the caption below it.
         what = spec.get("close_up_name", "part of the slice")
-        for ln in wrap(f"Close-up of {what}, enlarged about {zoom:.1f}\u00d7.",
+        tail = "; the lower part of the slice is not drawn" if cut else ""
+        for ln in wrap(f"Close-up of {what}, enlarged about {zoom:.1f}\u00d7{tail}.",
                        TY["label-title"]["size"], W - 2 * M, bold=True):
             svg.text(M, y + 10, ln, "t-label-title")
             y += TY["label-title"]["line"]
@@ -2872,9 +2903,9 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
             if spec.get("close_up") is None:
                 errs.append("crop_depth is negative (the drawing starts above the silicon); only "
                             "a close-up may cut off the lower part of the slice")
-            elif "cut off" not in cap_l:
-                errs.append("crop_depth is negative but the caption does not say that the lower "
-                            "part of the slice is cut off")
+            elif CUT_PHRASE not in cap_l:
+                errs.append("crop_depth is negative but the caption does not say "
+                            f"'{CUT_PHRASE}'")
         # A step that changes nothing the drawing can show gets one panel, not two copies.
         if spec.get("no_drawn_change"):
             if len(spec.get("panels", [])) != 1:
@@ -3508,7 +3539,11 @@ def selftest() -> int:
     case("a close-up cut off at the bottom the caption does not declare",
          lambda s, r: s.update(close_up=[100, 200], crop_depth=-20,
                                caption="A close-up of part of the slice. Not to scale."),
-         "does not say that the lower part")
+         "does not say 'the lower part")
+    case("a cut-off close-up whose caption only mentions a cut",
+         lambda s, r: s.update(close_up=[100, 200], crop_depth=-20,
+                               caption="A close-up of part of the slice; the resist is cut off. Not to scale."),
+         "does not say 'the lower part")
     case("unknown basis",
          lambda s, r: r["ops"][0]["label"].update(basis="guess"), "unknown basis")
     case("a number beside a step code, without a cite",

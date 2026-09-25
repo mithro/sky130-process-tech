@@ -23,7 +23,7 @@
 #   treats the strip and post-etch clean as part of this step"). The walls are drawn tapered,
 #   the bottom about half the top, as the CTM1 page reads the PDK's 0.09 um "Standard contact
 #   bottom CD" against the 0.17 um drawn opening ("markedly tapered", our reading); the angle is
-#   not public and the 12 deg drawn is illustrative.
+#   not public and the 19.5 deg drawn is illustrative (it gives a 12 u floor under the 24 u mouth).
 # * TIN2 (109) is one conformal TiN liner (the barrier material, like the local interconnect it
 #   lands on: the TIN2 page's TiN-on-TiN contact); its thickness is not public.
 # * WDEP2 (110) is conformal and thick enough to close the lined holes; WCMP2 (111) polishes
@@ -825,7 +825,7 @@ ops:
     materials: [oxide-dep, nitride]
     where_open: ctm1res
     depth: 18
-    taper_deg: 12
+    taper_deg: 19.5
   - step: "108"
     op: strip
     materials: [resist]
@@ -865,13 +865,14 @@ ops:
     t: 5
     label:
       title: "Bottom film"
-      note: "Ti, or Ti/TiN — see the overview"
+      note: "Ti or Ti/TiN — see the overview"
       basis: inferred
   - step: "112"
     op: deposit
     id: m1al
     material: aluminium
     t: 18
+    anchor_y: 108
     label:
       title: "Aluminium alloy"
       note: "aluminium–copper, the conductor; step 112"

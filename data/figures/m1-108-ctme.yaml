@@ -2,26 +2,26 @@ id: m1-108-ctme
 kind: xsection
 page: docs/steps/108-ctme.md
 series: series-metal1.yaml
-crop_depth: 40
+close_up: [170, 268]
+close_up_name: "the right-hand metal contact"
+crop_depth: -130
 alt: >-
-  Two cross-sections of the wafer, one above the other. Before the step a violet resist with two
-  narrow windows lies on a flat pale oxide that buries three thin purple pads. After it the
-  resist is gone and under each window a small hole with sloping walls goes down through the
-  oxide and a thin hatched film to the top of a purple pad.
+  Two enlarged cross-sections of a flat pale oxide over a thin hatched film and a thin purple pad,
+  which stands on a larger tungsten plug. Before the step a violet resist with a narrow window
+  lies on the oxide. After it the resist is gone and under the window a small hole with sloping
+  walls, narrower at the bottom, goes down through the oxide and the hatched film to the pad.
 caption: >-
-  Before, the contact resist; after, two holes etched through the inter-level oxide and the LI
-  nitride cap to the titanium nitride of the local interconnect, and the resist stripped, which
-  the page treats as part of this step. That the etch first stops on the nitride cap and then
-  opens it is the page's reading of the stack diagram. The holes are drawn tapered, the bottom
-  about half the top, as the pages read the PDK's 0.09 µm "Standard contact bottom
-  CD"[^pdk-03] against the 0.170 µm drawn square (ct.1);[^pdk-periph] the wall angle is not
-  public. The depth, about 0.34 µm on the page's reading of the stack diagram,[^pdk-04] is not
-  drawn to scale. The local interconnect (the thin purple pads, titanium nitride), the glass,
-  the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the transistors'
-  films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the
-  spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle)
-  are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI
-  channel implant made earlier are not drawn. Not to scale.
+  A close-up of the right-hand metal contact, over the local-contact plug beside the gate; the
+  lower part of the slice is cut off. Before, the contact resist; after, the hole etched through
+  the inter-level oxide and the LI nitride cap to the titanium nitride of the local interconnect,
+  and the resist stripped, which the page treats as part of this step. That the etch first stops
+  on the nitride cap and then opens it is the page's reading of the stack diagram. The hole is
+  drawn tapered, the bottom about half the top, as the pages read the PDK's 0.09 µm "Standard
+  contact bottom CD"[^pdk-03] against the 0.170 µm drawn square (ct.1);[^pdk-periph] the wall
+  angle is not public. The hole is drawn much shallower than it is: on the page's reading of the
+  stack diagram it is about 0.34 µm deep,[^pdk-04] about twice its width. The left-hand hole is
+  etched in the same way, outside this view. The local interconnect, the local-contact plug and
+  its liner, the glass and the cap oxide below are drawn but not labelled. Not to scale.
 arrow:
   title: "CTME, step 108"
   note: "A fluorocarbon plasma etches the holes through the oxide and the nitride cap to the local interconnect; the resist is stripped."
@@ -29,13 +29,11 @@ panels:
   - state_after: "107"
     title: "Before: the contact resist (step 107)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li]
-    dim_layers: [liner]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner]
   - state_after: "108"
-    title: "After: two tapered holes down to the local interconnect"
+    title: "After: a tapered hole down to the local interconnect"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li]
-    dim_layers: [liner]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner]
     callouts:
       - x: 204
         y: "top@204"
@@ -44,4 +42,4 @@ panels:
           note: "a 0.170 µm square in the PDK's rules"
           basis: public
           cite: pdk-periph
-    highlight: {where: [[28, 52], [192, 216]]}
+    highlight: {where: [[192, 216]]}

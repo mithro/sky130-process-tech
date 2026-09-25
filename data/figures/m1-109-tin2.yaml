@@ -22,7 +22,9 @@ caption: >-
   colour. The liner thickness is not public (the page gives of the order of 10–30 nm on the field
   as an industry-typical value[^txt-05]); it is drawn of even thickness, and the thinner coverage
   at the bottom of the hole that the page gives as typical is not drawn. The PDK's assumptions
-  put the hole's bottom at 0.09 µm,[^pdk-03] not drawn to scale.
+  put the hole's bottom at 0.09 µm,[^pdk-03] not drawn to scale. The hole is drawn much shallower
+  than it is: on the page's reading of the stack diagram it is about 0.34 µm deep,[^pdk-04] about
+  twice its width.
   The left-hand hole is lined in the same way, outside this view. The local interconnect, the
   local-contact plug and its liner, the glass and the cap oxide below are drawn but not labelled.
   Not to scale.

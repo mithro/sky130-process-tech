@@ -15,7 +15,8 @@ caption: >-
   step. The lines are drawn with vertical walls; their profile is not drawn to scale, and neither
   are the 0.140 µm widths and spaces of the PDK's rules.[^pdk-periph] Which refractory films the
   bottom and the cap of each line are is not public (the overview of the metal cap sets out the
-  two readings, and the figure does not choose). The bottom film of each line, the metal contacts, the local
+  two readings, and the figure does not choose; the page's text opens with the TiW stack of the
+  2013 report, and the figure, like the overview, draws neither). The bottom film of each line, the metal contacts, the local
   interconnect, the glass, the cap oxide, the lower tungsten plugs, the silicide discs, the contact liners and the
   transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation
   oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in
@@ -36,4 +37,6 @@ panels:
     hide_layers: [pwell, nchi]
     hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot]
     dim_layers: [liner]
+    labels:
+      m1cap: {title: "Cap film", note: "TiW or Ti/TiN — see the overview"}
     highlight: {where: [[0, 22], [58, 100], [150, 186]]}

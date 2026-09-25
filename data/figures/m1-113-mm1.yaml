@@ -14,14 +14,14 @@ caption: >-
   the slice), and one over the middle of the slice, which has no contact here. The layout is an illustrative choice; the PDK's rules give a
   0.140 µm minimum width and space (m1.1, m1.2) and an enclosure of the contact of 0.030 µm
   (m1.4).[^pdk-periph] Which refractory films the bottom and the cap of the stack are is not
-  public (the overview of the metal cap sets out the two readings, and the figure does not
-  choose); either way the resist sits on a flat film. Nothing is drawn to scale. The metal
+  public (the overview of the metal cap sets out the two readings, and the figure does not choose; the page's text opens with the TiW stack of the
+  2013 report, and the figure, like the overview, draws neither); either way the resist sits on a flat film. Nothing is drawn to scale. The metal
   contacts, the bottom film of the stack, the local interconnect, the glass, the cap oxide, the lower tungsten plugs, the
   silicide discs, the contact liners and the transistors' films (the spacers, the caps, the gate
   oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the
   field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner
-  oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not
-  to scale.
+  oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The inter-level
+  oxide under the stack is not labelled either. Not to scale.
 arrow:
   title: "MM1, step 113"
   note: "Resist is coated, exposed through the metal reticle and developed, leaving a line wherever metal is to remain."
@@ -29,11 +29,13 @@ panels:
   - state_after: "112"
     title: "Before: the blanket metal-1 stack (step 112)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot, nild2]
     dim_layers: [liner]
   - state_after: "113"
     title: "After: resist lines over the metal-1 stack"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot, nild2]
     dim_layers: [liner]
+    labels:
+      m1cap: {title: "Cap film", note: "TiW or Ti/TiN — see the overview"}
     highlight: {where: [[22, 58], [100, 150], [186, 268]]}
