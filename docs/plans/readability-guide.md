@@ -990,7 +990,9 @@ separated by semicolons; often signalled by the words "term by term" or "The mas
 1. One row per quoted entry: `Entry as listed | What it names | Status`.
 2. `Entry as listed` is the quotation, unchanged, in quotation marks.
 3. `Status` is **the page's own hedge**: "SkyWater statement", "our reading", "our inference",
-   "not stated". Never invent one, never upgrade one.
+   "not stated". Never invent one, never upgrade one. Where the page identifies an entry with no
+   hedge at all, `Status` is `—`; "not stated" is reserved for where the page itself says the thing
+   is not stated (by SkyWater, by the source, or by whichever party the row is about).
 4. Sentences about the list as a whole stay as prose above or below the table.
 5. Two-column material (term → explanation) may use a definition list instead (§6).
 
@@ -998,7 +1000,7 @@ separated by semicolons; often signalled by the words "term by term" or "The mas
 step pages read "ASML DUV stepper" and "ASML DUV scanner" as 248 nm (KrF) tools, as the machines index
 records, and that the list gives the two 193 nm scanners as separate entries is consistent with that …".
 After: a table whose first row is `"DUV" | names no wavelength | not stated` and whose second is
-`"ASML DUV stepper", "ASML DUV scanner" | read as 248 nm (KrF) tools | our reading (machines index)`,
+`"ASML DUV stepper", "ASML DUV scanner" | the step pages read these as 248 nm (KrF) tools | our reading (machines index)`,
 with the markers in the cells and the concluding sentence left as prose.
 
 **Do not touch.** The quotations, the order of the entries, the markers, the hedge words.
