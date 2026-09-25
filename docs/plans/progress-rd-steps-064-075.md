@@ -373,3 +373,56 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   derivation lines ("our arithmetic" now closes the list); glance and label lines.
 * **Caps**: para > 100 3 → 0; item > 60 3 → 0; sentence > 45 13 → 1. Left: "The Error Messages page's
   checks …" in Open questions (46 w; two quoted checks).
+
+### 069 HVASTI — done
+
+* **Lead.** The 63-word second sentence: its dash pair (the assumptions page's 40° and 23° with
+  `[^pdk-03]`) becomes the following sentence "The PDK's assumptions page gives …[^pdk-03]"
+  (R-SENTENCE step 1). Lead split into two paragraphs before "After `TIPRTAD` the result is …" (what
+  is done / what results). Lead 116 words; first sentence 18.
+* **R-H3 not applied.** The passage after the figure is 55 words. The only `{dropdown}` on the page is
+  inside the generated index-links block, untouched.
+* **R-CATEGORY.** Classification sentence (40 w; its dash pair holds the typical dose and its marker, no
+  closing seam that leaves both halves whole) kept; the one remaining sentence becomes a second
+  paragraph with no label (R-CATEGORY step 2).
+* **R-PARA / R-SENTENCE (Why).** The 149-word paragraph split into three: the hot-carrier problem; the
+  remedies (the 70-word "The LDD spreads …; Takeda's group …; and Hori's LATID …" split at its two
+  semicolons, each piece with its own markers, "and" dropped); Rafí and King. The 131-word F2b paragraph:
+  the 70-word sentence split at ", so this is where" ("So this is where …, all on the 110 Å
+  oxide.[^pdk-hv]") and at the semicolon ("How the implant is placed … is not stated."); the 20 V NMOS
+  sentence becomes its own paragraph. Same treatment as 068.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4 (How items).** "Energy and dose" (65 w): split at the semicolon; continuation from "The
+  dose sets …". "Tilt, twist and rotation" (155 w): lead "40° tilt with a 23° twist.[^pdk-03]";
+  continuation 1 "We read the twist …" split at its colon ("With gates on a Manhattan grid, … (inference;
+  …[^pdk-03]).": "We read" stays on the first piece and the parenthetical on the second) and "We further
+  infer …"; continuation 2 "The lateral reach …" split at the semicolon and before ", and Chen et al."
+  (each piece keeps its marker). "Resist" (102 w): continuation from "Outgassing scales …"; the dash
+  pair (Lee and co-workers, `[^lee-1996]`) becomes the following sentence "Lee and co-workers
+  characterised it …" so "(inference)" stays with its claim; the semicolons before "charging" and
+  "platen cooling" become full stops.
+* **R-TOOLS.** 8250: *SkyWater says:* the quotation; grades (the *Runs this step:* reason, "the only
+  listed tool with a *stated* tilt range", points at SkyWater's list, which is above it); the gloss
+  "Arsenic, a dose window …, and a tilt range that reaches 60° — the published 40° HV tip angle fits
+  inside it." as the continuation. GSD: pilot form, as 066.
+* **R-RELATED.** "The other tips:" → "Same module: the other tips …". The thick-oxide/drift-well bullet
+  and "Activation: …" keep their own wording.
+* **R-OPENQ.** "Energy and dose", "Rotations and twist"; "20 V devices excluded" (93 w) as on 068; "A 5 V
+  PMOS p-tip" (64 w): the dash pair (the PDK evidence, three markers) becomes the continuation paragraph
+  after the question "Whether the 5 V PMOS has a corresponding tilted p-tip is not stated publicly; this
+  reference describes none." (R-OPENQ step 2: the lead keeps the question and its hedge).
+* **R-REPEAT not applied**, as on 068 (the Table F2b lists in Why and Open questions differ: "3.3 V" /
+  "3 V" native NMOS; see Content problems).
+* **R-GLANCE.** Does/Why from the lead and Why (no unmarked numbers); Public numbers 40°, 23°, 0.3 µm,
+  0.232 µm `[^pdk-03]`; tool line the 8250's grades; Not public from Open questions 1–2.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, numbers 0.232, 0.3, 23,
+  40, 8250, 5×2, quote "HVNTM shadowing", hedges "inference", "not public" — the glance box; numbers 5
+  and 20 from the OQ labels ("A 5 V PMOS p-tip", "20 V devices excluded", the bullets' own words).
+  Declared `--allow-added markers,numbers,quotes,hedges`: clean.
+* **Marker coverage.** 26 flags, all read: split pieces each keeping the markers of their own clauses
+  (the remedies, the F2b pieces, the lateral-reach pieces, the resist pieces, the moved Lee sentence);
+  "How the implant is placed … is not stated." had no marker in the base; glance and labels.
+* **Caps**: para > 100 3 → 0; item > 60 6 → 0; sentence > 45 9 → 2. Left: "At 5.5 V on the drain, …
+  — the degradation mechanism Hu and co-workers modelled …[^hu-1985-hci]" (49 w; the only seam would
+  leave the physics claim without the marker that covered the whole sentence) and Hori's LATID sentence
+  (50 w; no seam).

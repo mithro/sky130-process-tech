@@ -10,16 +10,33 @@
 | **Previous step** | {ref}`HVNTM <step-068>` |
 | **Next step** | {ref}`HVASTIS <step-070>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants arsenic at a steep tilt through the `HVNTM` windows,
+  so that the 5 V NMOS drain extension reaches under the gate edge.
+* **Why:** a gate-overlapped, graded drain keeps the 5 V NMOS reliable
+  against hot carriers.
+* **Public numbers:** 40° tilt and 23° twist; 0.3 µm resist; 0.232 µm
+  "HVNTM shadowing".[^pdk-03]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool and tilt range); inference (assignment).[^skw-01]
+* **Not public:** the energy, the dose and the number of rotations
+  (→ Open questions).
+:::
+
 ## What this step is
 
-`HVASTI` is the arsenic implant that forms the drain {term}`extension` of the
-high-voltage (5 V-class) NMOS transistors. Through the thin resist
-windows opened at {ref}`HVNTM <step-068>`, and through the {term}`screen oxide`
-inferred at {ref}`IOX45 <step-063>`, arsenic ions strike the wafer at a
-steep angle — the PDK's assumptions page gives "Angle for HV tip
-implant" 40° and "Twist angle for HV Tip" 23°[^pdk-03] — so that the
-implanted region reaches *under* the edge of the polysilicon gate
-rather than stopping at it. After {ref}`TIPRTAD <step-075>` the result
+`HVASTI` is the arsenic implant that forms the drain {term}`extension` of
+the high-voltage (5 V-class) NMOS transistors. Through the thin resist
+windows opened at {ref}`HVNTM <step-068>`, and through the
+{term}`screen oxide` inferred at {ref}`IOX45 <step-063>`, arsenic ions
+strike the wafer at a steep angle, so that the implanted region reaches
+*under* the edge of the polysilicon gate rather than stopping at it. The
+PDK's assumptions page gives "Angle for HV tip implant" 40° and "Twist angle
+for HV Tip" 23°.[^pdk-03]
+
+After {ref}`TIPRTAD <step-075>` the result
 is a lightly doped, graded n⁻ region overlapped by the gate on both
 sides of the channel: the *large-angle-tilt implanted drain* ({term}`LATID`) of
 Hori,[^hori-1989-latid][^hori-1992] the modern descendant of the lightly
@@ -45,7 +62,9 @@ channel length"[^pdk-03] is long enough not to need one (inference).
 `HVASTI` is an {ref}`Ion implantation <category-implant>` step of the
 *{term}`LDD`* class: a moderate dose — of order 10¹³ cm⁻² is typical of an LDD
 for a 3.3–5 V transistor[^txt-04] — at tens of keV, delivered at a
-large tilt with wafer rotation. It is the flow's most steeply tilted
+large tilt with wafer rotation.
+
+It is the flow's most steeply tilted
 implant, and the one whose geometry the PDK documents most completely
 (resist thickness, angle, twist, {term}`shadowing`, penetration).[^pdk-03]
 
@@ -55,28 +74,31 @@ At 5.5 V on the drain, an abrupt, heavily doped tip of the
 {ref}`ASTI <step-065>` kind would concentrate the lateral field at the
 gate edge and inject hot electrons into the gate oxide — the
 degradation mechanism Hu and co-workers modelled, monitored and showed
-how to reduce by drain engineering.[^hu-1985-hci] The LDD spreads the
-field over a lightly doped region;[^ogura-1980][^ogura-1981] Takeda's
-group compared drain structures for minimum hot-carrier
-generation;[^takeda-1982] and Hori's LATID improved on the LDD by
-implanting the n⁻ region at a large tilt so that it lies *under* the
-gate, where the gate field keeps it conductive, instead of under the
+how to reduce by drain engineering.[^hu-1985-hci]
+
+The LDD spreads the field over a lightly doped
+region.[^ogura-1980][^ogura-1981] Takeda's group compared drain structures
+for minimum hot-carrier generation.[^takeda-1982] Hori's LATID improved on
+the LDD by implanting the n⁻ region at a large tilt so that it lies *under*
+the gate, where the gate field keeps it conductive, instead of under the
 {term}`spacer`, where an un-gated n⁻ region adds series resistance and can
-itself be damaged by hot carriers.[^hori-1992] Rafí and Campabadal's
+itself be damaged by hot carriers.[^hori-1992]
+
+Rafí and Campabadal's
 direct comparison of LDD and LATID NMOS shows the reliability
 difference.[^rafi-2001] King et al. showed how the spacer over the n⁻
 region sets the worst-case stress condition.[^king-2000]
 
-The PDK's 40° angle[^pdk-03] is therefore the strongest public hint
-about the nature of the SKY130 5 V NMOS: not a plain LDD but a
-gate-overlapped, tilt-implanted drain. The PDK's Table F2b marks
-`HVNTM` "created" for `nfet_g5v0d10v5`, the ESD NMOS built on it, the
-5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS, four HV
-diodes, an HV n-diffusion resistor and an HV varactor,[^pdk-06] so this is where those
-devices' n-type extension is defined, all on the 110 Å
-oxide;[^pdk-hv] how the implant is placed relative to a drain-extended
-device's drift well is not stated. The
-20 V {term}`drain-extended <DEMOS>` NMOS uses an N-well {term}`drift region` as its drain
+The PDK's 40° angle[^pdk-03] is therefore the strongest public hint about
+the nature of the SKY130 5 V NMOS: not a plain LDD but a gate-overlapped,
+tilt-implanted drain. The PDK's Table F2b marks `HVNTM` "created" for
+`nfet_g5v0d10v5`, the ESD NMOS built on it, the 5 V and 3.3 V native NMOS,
+the 16 V drain-extended NMOS, four HV diodes, an HV n-diffusion resistor and
+an HV varactor.[^pdk-06] So this is where those devices' n-type extension is
+defined, all on the 110 Å oxide.[^pdk-hv] How the implant is placed relative
+to a drain-extended device's drift well is not stated.
+
+The 20 V {term}`drain-extended <DEMOS>` NMOS uses an N-well {term}`drift region` as its drain
 extension[^pdk-hv][^mitros-2001] and Table F2b marks it "-" ("Layer not
 created for the device"), so it does not take this tip.
 
@@ -86,8 +108,8 @@ between channel and n⁺ drain).
 
 ## How it is typically performed
 
-An industry-generic large-tilt LDD implant for a 200 mm, 130 nm-era
-fab (SKY130's energy and dose are not public):
+*An industry-generic large-tilt LDD implant for a 200 mm, 130 nm-era
+fab (SKY130's energy and dose are not public):*
 
 * **Species and source.** ⁷⁵As⁺ from arsine or solid
   arsenic.[^wiki-implant][^wiki-ash3] The original LDD used
@@ -96,37 +118,43 @@ fab (SKY130's energy and dose are not public):
   gives a better-defined overlap, at the price of a less graded
   profile.
 * **Energy and dose.** Tens of keV and of order 10¹³ cm⁻²
-  (typical);[^txt-04][^txt-01] the dose sets the n⁻ {term}`sheet resistance`
-  and hence the trade between hot-carrier margin and on-resistance,
-  and the energy sets how far the tilted beam reaches under the gate.
-  The PDK's "N+ or P+ S/D (XJ)" of 0.1 µm[^pdk-03] bounds the depth the
-  later n⁺ junction will reach; the LDD is shallower.
-* **Tilt, twist and rotation.** 40° tilt with a 23° twist.[^pdk-03] We
-  read the twist as rotating the beam's plane of incidence away from
+  (typical).[^txt-04][^txt-01]
+
+  The dose sets the n⁻ {term}`sheet resistance` and hence the trade between
+  hot-carrier margin and on-resistance, and the energy sets how far the
+  tilted beam reaches under the gate. The PDK's "N+ or P+ S/D (XJ)" of 0.1
+  µm[^pdk-03] bounds the depth the later n⁺ junction will reach; the LDD is
+  shallower.
+* **Tilt, twist and rotation.** 40° tilt with a 23° twist.[^pdk-03]
+
+  We read the twist as rotating the beam's plane of incidence away from
   the wafer's low-index channelling directions and away from the gate
-  edges: with gates on a Manhattan grid, a beam twisted 23° from the
+  edges. With gates on a Manhattan grid, a beam twisted 23° from the
   flat has a component along both gate orientations, so neither is
   fully shadowed (inference; the PDK publishes the angle and no
   explanation[^pdk-03]). We further
   infer that the implant is split into rotations so that source and
   drain, and gates running in both directions, are implanted
-  symmetrically.[^pat-quad-tsmc] The lateral reach under the gate is
-  set by the tilt and the screen oxide; the resist and the neighbouring
-  gates shadow the beam — the PDK's "HVNTM shadowing" of 0.232 µm and
-  "Photoresist tilted implant blocking distance" of 0.013 µm[^pdk-03]
-  are the mask generator's allowances for this, and Chen et al.
-  measured the device consequences of such shadowing in LATID
+  symmetrically.[^pat-quad-tsmc]
+
+  The lateral reach under the gate is set by the tilt and the screen oxide.
+  The resist and the neighbouring gates shadow the beam — the PDK's "HVNTM
+  shadowing" of 0.232 µm and "Photoresist tilted implant blocking distance"
+  of 0.013 µm[^pdk-03] are the mask generator's allowances for this. Chen et
+  al. measured the device consequences of such shadowing in LATID
   transistors.[^chen-1995]
 * **Resist.** Only 0.3 µm thick,[^pdk-03] so that the wall casts a
   short shadow; the PDK's 0.02 µm "Photoresist tilted implant
   penetration"[^pdk-03] allows for ions that pass through the resist
-  edge. Outgassing scales with the volume of resist exposed to the
-  beam — Lee and co-workers characterised it for thick resist under MeV
-  implantation[^lee-1996] — so a 0.3 µm film outgasses less than the
-  standard 1.14 µm one[^pdk-03] (inference); charging is likewise reduced with
-  less resist volume, but an electron shower and electrostatic chuck ("ESC
-  chuck, E shower" on SkyWater's medium-current tool) are, we infer,
-  still used;[^skw-01] platen cooling is industry practice.
+  edge.
+
+  Outgassing scales with the volume of resist exposed to the beam, so a
+  0.3 µm film outgasses less than the standard 1.14 µm one[^pdk-03]
+  (inference). Lee and co-workers characterised it for thick resist
+  under MeV implantation.[^lee-1996] Charging is likewise reduced with
+  less resist volume, but an electron shower and electrostatic chuck
+  ("ESC chuck, E shower" on SkyWater's medium-current tool) are, we
+  infer, still used.[^skw-01] Platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Thermal-wave measurement on monitor
   wafers;[^smith-1985] tilt-angle verification is the specific control
@@ -143,19 +171,23 @@ fab (SKY130's energy and dose are not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
-  8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
-  0-60 deg tilt".[^skw-01] Arsenic, a dose window that contains an LDD
-  dose, and a tilt range that reaches 60° — the published 40° HV tip
-  angle[^pdk-03] fits inside it. Strength: **strong** for the tool and
-  its tilt range; **inference** for the assignment, because it is the
-  only listed tool with a *stated* tilt range, and that range covers
-  40°.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "Axcelis 8250 Mid current B11, BF2, As, ESC
+    chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* **strong** for the tool and its tilt range.
+  - *Runs this step:* **inference** for the assignment, because it is the
+    only listed tool with a *stated* tilt range, and that range covers
+    40°.
+
+  Arsenic, a dose window that contains an LDD dose, and a tilt range
+  that reaches 60° — the published 40° HV tip angle[^pdk-03] fits inside
+  it.
 * **Axcelis GSD implanters (high-current/high-energy and high-dose)**
   ("10-3000kev, 1e11 to 5e15, tilt/twist" and "2-180kev, 5e12 to 5e16,
-  tilt/twist")[^skw-01] — batch tools listed with tilt and twist capability
-  but with no stated tilt range. Strength: strong for existence; weak for
-  assignment.
+  tilt/twist")[^skw-01] — batch tools listed with tilt and twist
+  capability but with no stated tilt range.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak for assignment.
 
 ## Resources required
 
@@ -175,7 +207,7 @@ fab (SKY130's energy and dose are not public):
 * Previous: {ref}`HVNTM <step-068>` (the thin resist mask); screen
   oxide: {ref}`IOX45 <step-063>`.
 * Next: {ref}`HVASTIS <step-070>` (strip).
-* The other tips: {ref}`ASTI <step-065>` (1.8 V NMOS),
+* Same module: the other tips {ref}`ASTI <step-065>` (1.8 V NMOS),
   {ref}`LDASTI <step-072>` ({term}`SONOS` transistors); the 1.8 V halo:
   {ref}`BHI <step-066>`.
 * The thick gate oxide of these devices: {ref}`GOX100 <step-043>`,
@@ -262,25 +294,28 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The HV tip energy and dose are not public; the LDD-typical values
-  above are from textbooks.
-* The number of rotations at 40°/23°, and whether the twist is fixed or
-  alternated between rotations, is not public.
-* Table F2b marks `HVNTM` "C (CREATED)" on the 5/10.5 V NMOS, the 5 V
-  and 3 V native NMOS, the 16 V drain-extended NMOS, the HV and HV
-  native ESD NMOS, the HV n-diffusion resistor, the HV varactor and
-  four n-type diodes, and "-" ("Layer not created for the device") on
-  every PMOS row and on all five UHV 5/20 V rows;[^pdk-06] see the
-  {ref}`HVNTM mask page <mask-hvntm>`. What the table does not say is
+* **Energy and dose.** The HV tip energy and dose are not public; the
+  LDD-typical values above are from textbooks.
+* **Rotations and twist.** The number of rotations at 40°/23°, and whether
+  the twist is fixed or alternated between rotations, is not public.
+* **20 V devices excluded.** Table F2b marks `HVNTM`:[^pdk-06]
+  - "C (CREATED)" on the 5/10.5 V NMOS, the 5 V and 3 V native NMOS, the
+    16 V drain-extended NMOS, the HV and HV native ESD NMOS, the HV
+    n-diffusion resistor, the HV varactor and four n-type diodes;
+  - "-" ("Layer not created for the device") on every PMOS row and on
+    all five UHV 5/20 V rows.
+
+  See the {ref}`HVNTM mask page <mask-hvntm>`. What the table does not say is
   why the 20 V devices are excluded, or on which side of a
   drain-extended device the implant lands.
-* Whether the 5 V PMOS has a corresponding tilted p-tip — the PDK's
-  "HVPTM shadowing" parameter[^pdk-03] suggests one was at least
-  contemplated, and its *High Voltage Methodology* page says hv
+* **A 5 V PMOS p-tip.** Whether the 5 V PMOS has a corresponding tilted
+  p-tip is not stated publicly; this reference describes none.
+
+  The PDK's "HVPTM shadowing" parameter[^pdk-03] suggests one was at
+  least contemplated, and its *High Voltage Methodology* page says hv
   p-channel devices "get the extra junction grading implant into the
   ringed gate with the HVPDM mask",[^pdk-hv] a mask name absent from
-  the PDK's `masks.csv`[^pdk-05] — is not stated publicly; this
-  reference describes none.
+  the PDK's `masks.csv`.[^pdk-05]
 
 <!-- footnotes -->
 
