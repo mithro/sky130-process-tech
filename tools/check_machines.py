@@ -9,13 +9,16 @@ For every ``docs/machines/*.md`` page except ``index.md``:
 * the steps paragraph under "SKY130 steps assigned to this class" links
   the same steps as the page's row in the main table of
   ``docs/machines/index.md`` (the row whose first cell links the page's
-  label), separately for the main list, the "*alternative:*" list and
-  the "*also …:*" lists, so a step moved between lists is caught; a
-  step listed twice in one list, and "*also …:*" marker wording that
-  differs between page and index, are reported too.
+  label and whose **last** cell is the Steps cell, whatever the column
+  count between them — W0e, report-B B2), separately for the main list,
+  the "*alternative:*" list and the "*also …:*" lists, so a step moved
+  between lists is caught; a step listed twice in one list, and
+  "*also …:*" marker wording that differs between page and index, are
+  reported too.
 
 Exit status is non-zero on any problem.  Run with
-``uv run tools/check_machines.py``.
+``uv run tools/check_machines.py``. Run with ``--selftest`` for the
+offline ``index_rows_from_lines`` unit tests (touches no files).
 """
 
 from __future__ import annotations
@@ -84,17 +87,33 @@ def duplicates(steps: list[str]) -> list[str]:
     return sorted({s for s in steps if steps.count(s) > 1})
 
 
-def index_rows() -> dict[str, str]:
-    """Map a machine label to the Steps cell of its main-table row."""
+def index_rows_from_lines(lines: list[str]) -> dict[str, str]:
+    """Map a machine label to the Steps cell of its main-table row.
+
+    A matching line is any ``| `` row whose first cell links a
+    ``machine-…`` label; the **last** cell is the Steps cell, whatever
+    the column count in between (report-B B2: the index may shrink from
+    the current four columns to just ``Machine class | Steps``, moving
+    the descriptive columns to cards). At least two cells are required,
+    so a one-column line cannot be mistaken for a row. As before, the
+    **last** matching line wins, so a differently-shaped table placed
+    after the main one can still silently override a checked row —
+    see R-INDEX rule 4 in readability-guide.md.
+    """
     rows = {}
-    for line in (MACHINES / "index.md").read_text().splitlines():
+    for line in lines:
         if not line.startswith("| "):
             continue
         cells = line.split(" | ")
         m = re.search(r"<(machine-[a-z0-9-]+)>", cells[0])
-        if m and len(cells) == 4:
-            rows[m.group(1)] = cells[3]
+        if m and len(cells) >= 2:
+            rows[m.group(1)] = cells[-1]
     return rows
+
+
+def index_rows() -> dict[str, str]:
+    """Map a machine label to the Steps cell of its main-table row."""
+    return index_rows_from_lines((MACHINES / "index.md").read_text().splitlines())
 
 
 def check(page: Path, rows: dict[str, str]) -> list[str]:
@@ -136,7 +155,77 @@ def check(page: Path, rows: dict[str, str]) -> list[str]:
     return problems
 
 
+def selftest() -> int:
+    """Offline unit tests for ``index_rows_from_lines`` (W0e: the machines
+    index may shrink to a two-column ``Machine class | Steps`` table).
+    Touches no files."""
+    problems: list[str] = []
+
+    # 1. The old, four-column form still works: the last (fourth) cell is
+    #    read as the Steps cell, unchanged from before W0e.
+    old = [
+        "| {ref}`wet bench <machine-wet-bench>` | What it does | Tools | "
+        "{ref}`NS19 <step-013>` |"
+    ]
+    got = index_rows_from_lines(old)
+    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |":
+        problems.append(f"old 4-column form: {got!r}")
+
+    # 2. The new, two-column form (Machine class | Steps) is read the same
+    #    way: first cell links the label, last cell is Steps.
+    new = ["| {ref}`wet bench <machine-wet-bench>` | {ref}`NS19 <step-013>` |"]
+    got = index_rows_from_lines(new)
+    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |":
+        problems.append(f"new 2-column form: {got!r}")
+
+    # 3. A shape with columns in between (more than two, fewer than four)
+    #    also works: only the position of the first and last cell matters.
+    mid = ["| {ref}`wet bench <machine-wet-bench>` | grouping | "
+           "{ref}`NS19 <step-013>` |"]
+    got = index_rows_from_lines(mid)
+    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |":
+        problems.append(f"3-column form: {got!r}")
+
+    # 4. A one-column line (no room for a separate Steps cell) is not
+    #    mistaken for a row.
+    one = ["| {ref}`wet bench <machine-wet-bench>` |"]
+    got = index_rows_from_lines(one)
+    if got:
+        problems.append(f"a one-column line was wrongly read as a row: {got!r}")
+
+    # 5. The last matching line still wins, in both the old and new shapes.
+    two_old = [
+        "| {ref}`wet bench <machine-wet-bench>` | a | b | {ref}`NS19 <step-013>` |",
+        "| {ref}`wet bench <machine-wet-bench>` | a | b | {ref}`FOM <step-004>` |",
+    ]
+    got = index_rows_from_lines(two_old)
+    if got.get("machine-wet-bench") != "{ref}`FOM <step-004>` |":
+        problems.append(f"last-line-wins (old shape): {got!r}")
+    two_new = [
+        "| {ref}`wet bench <machine-wet-bench>` | {ref}`NS19 <step-013>` |",
+        "| {ref}`wet bench <machine-wet-bench>` | {ref}`FOM <step-004>` |",
+    ]
+    got = index_rows_from_lines(two_new)
+    if got.get("machine-wet-bench") != "{ref}`FOM <step-004>` |":
+        problems.append(f"last-line-wins (new shape): {got!r}")
+
+    # 6. A line whose first cell links no machine label is not a row.
+    unrelated = ["| Something else | {ref}`NS19 <step-013>` |"]
+    if index_rows_from_lines(unrelated):
+        problems.append("a line with no machine link in its first cell was read as a row")
+
+    if problems:
+        for p in problems:
+            print("SELFTEST FAIL:", p)
+        print(f"{len(problems)} selftest problem(s)")
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
+    if "--selftest" in sys.argv[1:]:
+        return selftest()
     rows = index_rows()
     pages = sorted(p for p in MACHINES.glob("*.md") if p.name != "index.md")
     bad = 0
