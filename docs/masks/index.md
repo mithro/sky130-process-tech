@@ -2,16 +2,18 @@
 # Masks
 
 A *mask level* is one pattern in the stack of patterns that builds an
-integrated circuit. For each level a {term}`reticle` — a fused-silica
-plate carrying a chromium image of one layer of the layout, drawn
-four or five times larger than it will print on the wafer[^wiki-mask]
-(4× is the ITRS 2001 mask magnification for the 130 nm
-generation;[^itrs-03] the two Photronics plate-case labels transcribed
-in the process-steps sheet carry "4X" in their type field, although
-the tab does not say which process or run they belong to,[^steps-sheet]
-and we read the sheet's mask-type codes for the via 2, via 3 and via 4 plates as 4×
-too[^steps-sheet]) —
-is projected onto a photoresist-coated wafer.
+integrated circuit. For each level a {term}`reticle` is projected onto
+a photoresist-coated wafer.
+
+A {term}`reticle` is a fused-silica plate carrying a chromium image of
+one layer of the layout, drawn four or five times larger than it will
+print on the wafer.[^wiki-mask] 4× is the ITRS 2001 mask magnification
+for the 130 nm generation.[^itrs-03] The two Photronics plate-case
+labels transcribed in the process-steps sheet carry "4X" in their type
+field, although the tab does not say which process or run they belong
+to.[^steps-sheet] We read the sheet's mask-type codes for the via 2,
+via 3 and via 4 plates as 4× too.[^steps-sheet]
+
 The developed resist then serves as a stencil for an etch, or as a
 {term}`block mask` for an implant, and is removed afterwards. The
 coat–expose–develop sequence, its tools and its consumables are

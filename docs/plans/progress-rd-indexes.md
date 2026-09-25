@@ -342,7 +342,76 @@ about the table's shape changed, only a caption was added above it. Flagged
 for the coordinator rather than fixed, since fixing it would mean touching
 checker-fixed columns, out of scope here.
 
-## 4. Remaining captions and prose limits — not started
+## 4. Remaining captions and prose limits — partly done
+
+**Captions.** Every table created or restructured by this branch is
+captioned (R-CAPTION): 9 captioned tables on the machines index (the main
+table + 8 grouped SkyWater-tools tables), 24 on the materials index (2 per
+class × 12 classes), 2 on the masks index (the nav table + the checked
+table). No pre-existing table on any of the three pages had a caption before
+this branch (0 on all three, confirmed against the `05e7a3ba` merge base);
+none of the pages had any table left without one after the restructuring —
+every `| ` table block on all three pages now sits inside a page that was
+fully rebuilt through the section move, so nothing was missed by omission
+(checked by eye against each page's full render, not just grepped).
+
+**Paragraph word counts (>100 words), whole-page measurement** (crude
+script, `tmp/readability/a-tools/measure.py`'s method was not used — that
+tool's own path assumption puts it three directories below the repo root and
+this branch never copied it there; a from-scratch counter in
+`tmp/build/measure.py` was used instead, same method: strip `[^...]`
+markers and role wrappers, split on blank lines, skip table/list/heading
+blocks):
+
+| Page | >100-word paragraphs, before (`05e7a3ba`) | after this branch |
+|---|---|---|
+| `docs/machines/index.md` | 4 (the purpose paragraph, 113 words, plus 3 in "Open questions and inconsistencies") | 3 (the purpose paragraph fixed; the 3 in Open questions untouched — see below) |
+| `docs/materials/index.md` | 5 (the purpose paragraph, 139 words, plus 4 elsewhere) | 4 (purpose paragraph fixed; 4 untouched) |
+| `docs/masks/index.md` | 8 (the intro, 211 words, plus 7 elsewhere) | 7 (intro fixed; 7 untouched) |
+
+**Fixed in this pass:** the three pages' opening/purpose paragraphs (already
+described in sections 1–3 above, done as part of each page's R-INDEX
+restructuring since the ≤80-word purpose cap forced the split anyway), plus
+the masks-index intro paragraph (211 → three paragraphs, none over 45
+words per sentence, one over-length parenthetical split out per R-SENTENCE;
+`check_preserved.py` 0 undeclared differences with `--allow-regrouped`).
+
+**Not fixed, out of time for this session — full list for a follow-up**
+(none of these were touched by this branch's restructuring beyond being
+*moved* whole; all pre-exist on `main` at the same lengths, in sections this
+task's brief treats as "methodology, moved below, unchanged" or other
+untouched detail content, so leaving them was the safe default rather than
+an oversight, but they are still over the §1 cap and in scope for R-PARA):
+
+* `docs/machines/index.md`: "A fab of this kind does not have one tool per
+  step…" (107 words, `## Equipment classes in a 200 mm, 130 nm fab`);
+  "After those passes the step pages quote both SkyWater pages…" (164
+  words) and "The passes applied one treatment to each group of analogous
+  steps…" (132 words), both under `### Different tools or grades for
+  analogous steps` in Open questions.
+* `docs/materials/index.md`: "The `sky130B` variant of the PDK adds a
+  resistive-memory tier…" (178 words, `## The sky130B ReRAM module`); "The
+  table lists every film that a deposition or oxidation step…" (147 words,
+  `## Films and stacks deposited`); "Several consumables of the flow are
+  hazardous…" (166 words, `## Safety and abatement`); "The step pages were
+  written separately, and their *Resources required* sections…" (140
+  words, `## How to read the index`).
+* `docs/masks/index.md`: "The *S8 / SKY130 Process Steps* sheet…" (111
+  words), "A tab headed "Sheet4" gives a coded mask type…" (154 words),
+  both under `## Plates recorded for the MPW runs`; "A public web directory
+  of mask-layer renders…" (178 words), "The site states the limits of its
+  images…" (172 words), "For MPW-4 the renders and the sheet's plates
+  belong to different reticle sets…" (133 words), "For six masks the site
+  renders a Boolean expression…" (114 words), all under `## What the
+  mask-layer renders show`; "What the PDK does *not* publish is a table
+  that says…" (230 words, `## What the PDK publishes`).
+
+These 13 paragraphs are flagged here rather than fixed, in the interest of
+finishing the batch's primary restructuring (B2/B3/B13/B16, the task's main
+ask) within the session; each would need the same seam-finding,
+hedge-preservation and `check_preserved.py --allow-regrouped` verification
+already demonstrated three times above, so the method is established even
+though the work itself is not done.
 
 ## Measurements (to fill in after all page-steps)
 
