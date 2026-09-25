@@ -10,6 +10,21 @@
 | **Previous step** | {ref}`RTAI <step-034>` |
 | **Next step** | {ref}`TUNARCE <step-036>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** opens resist windows over the SONOS memory-transistor
+  channels for two implants and an oxide etch.
+* **Why:** the memory transistor's channel needs its own implants and
+  a tunnel oxide grown on bare silicon, all through one mask.
+* **Public numbers:** minimum `tunm` width 0.410 µm, spacing 0.500 µm
+  and area 0.672 µm².[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (vendor); inference (assignment).[^skw-01]
+* **Not public:** which tool exposes it, and the reticle tone and
+  resist type (→ Open questions).
+:::
+
 ## What this step is
 
 `TUNM` is the first mask of the {term}`SONOS` non-volatile-memory module and
@@ -18,11 +33,15 @@ at {ref}`RTAI <step-034>`. It coats the wafer with an anti-reflective
 coating and photoresist, exposes the *tunnel mask* {term}`reticle` and
 develops it, opening windows over the channel regions of the SONOS
 memory transistors and leaving everything else — every logic
-transistor, every 5 V and high-voltage device — covered. The windows
+transistor, every 5 V and high-voltage device — covered.
+
+The windows
 are used three times before the resist comes off: two implants go
-through them ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`), and the
+through them ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`).
+
+The
 oxide inside them — the pad oxide, we infer — is then etched away
-({ref}`TUNME <step-039>`) so
+({ref}`TUNME <step-039>`), so
 that the {term}`tunnel oxide` of the {term}`ONO` stack can be grown on bare
 silicon at {ref}`ONO <step-040>`.
 
@@ -34,6 +53,8 @@ silicon at {ref}`ONO <step-040>`.
 Before, the wafer as the wells module leaves it, on a slice through a SONOS memory transistor (right) and an active area that stands for any other transistor (left); after, the tunnel-mask resist with one window over the memory transistor's channel, and the anti-reflective coating still covering the bottom of that window. This slice is not the one the wells figures show: a tunnel window may only lie inside a deep N-well ("Tunm outside deep n-well is not allowed", tunm.6a),[^pdk-periph] so the slice is drawn inside one deep-N-well tub, and the channel implants of the wells module are not drawn. The window's width and place are illustrative; no layout is being shown. That the layer carries an anti-reflective coating is inferred from the ARC etch that follows. The pad oxide is drawn as still in place, which the page infers, and the liner oxide in the trench is drawn faded. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK documents the mask and the drawn layer behind it. The mask table
 lists "Tunnel Mask, TUNM" as used in SKY130,[^pdk-05] the generated mask
 layer is `ctunm` (GDS 20:0, "Tunnel mask"), and the drawn layer is
@@ -41,55 +62,76 @@ layer is `ctunm` (GDS 20:0, "Tunnel mask"), and the drawn layer is
 tunnel implant".[^pdk-06] That description — an *implant* layer rather
 than an oxide layer — is the strongest hint in the PDK about what the
 following steps do, and this reference accordingly describes two
-implants between this mask and its etch. The `tunm`
-rules (function: "Defines SONOS FETs") give the geometry: minimum width
-0.410 µm (tunm.1), minimum spacing 0.500 µm (tunm.2), an extension of
-`tunm` beyond the poly-over-active gate of 0.095 (tunm.3; the published
-table leaves the unit cell empty — µm by analogy with
-tunm.4)[^pdk-periph] and the
-same 0.095 µm clearance to any other gate (tunm.4); "(poly and diff) may
-not straddle tunm" (tunm.5); "Tunm outside deep n-well is not allowed"
-(tunm.6a); a minimum area of 0.672 µm² (tunm.7); and `tunm` "must be
-enclosed by areaid.ce" (tunm.8),[^pdk-periph] the "Memory (SRAM) core
-cell identifier" layer.[^pdk-06] A separate rule on the thick-oxide
-layer, "Hvi must not overlap tunm" (hvi.4),[^pdk-periph] keeps the
-memory transistor out of the 5 V thick-oxide regions, which designers
-draw as `hvi` and which we read as printed by the complement of the
-{ref}`LVOM <step-044>` window (the NOT-`hvi` inference set out
-there).
+implants between this mask and its etch.
 
-Together these say that the tunnel window is drawn tightly around the
-gate of each SONOS transistor, that every memory cell sits inside a
-deep N-well tub (formed at {ref}`DNI <step-008>`), and that the cells
-live only inside memory-array blocks whose internal rules the PDK does
-not publish.
+The `tunm` rules (function: "Defines SONOS FETs") give the
+geometry:[^pdk-periph]
+
+:::{table} The `tunm` design rules, as published
+:widths: 14 56 30
+
+| Rule | Constrains | Value |
+|---|---|---|
+| tunm.1 | minimum width | 0.410 µm |
+| tunm.2 | minimum spacing | 0.500 µm |
+| tunm.3 | extension of `tunm` beyond the poly-over-active gate | 0.095 (unit cell empty in the published table; µm by analogy with tunm.4) |
+| tunm.4 | clearance of `tunm` to any other gate | 0.095 µm |
+| tunm.5 | poly and diff | "(poly and diff) may not straddle tunm" |
+| tunm.6a | `tunm` outside a deep N-well | "Tunm outside deep n-well is not allowed" |
+| tunm.7 | minimum area | 0.672 µm² |
+| tunm.8 | enclosure by `areaid.ce` (the "Memory (SRAM) core cell identifier" layer)[^pdk-06] | "must be enclosed by areaid.ce"[^pdk-periph] |
+:::
+
+A separate rule on the thick-oxide layer keeps the memory transistor
+out of the 5 V thick-oxide regions: "Hvi must not overlap tunm"
+(hvi.4).[^pdk-periph] Designers draw the thick-oxide layer as `hvi`,
+which we read as printed by the complement of the
+{ref}`LVOM <step-044>` window (the NOT-`hvi` inference set out there).
+
+Together these say:
+
+* **Tight window.** The tunnel window is drawn tightly around the gate
+  of each SONOS transistor.
+* **Deep-N-well tub.** Every memory cell sits inside a deep N-well tub
+  (formed at {ref}`DNI <step-008>`).
+* **Array-only.** The cells live only inside memory-array blocks whose
+  internal rules the PDK does not publish.
 
 ## Step category
 
 `TUNM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant and etch window* type: a relaxed, non-critical
 layer whose resist must survive two implants and an (inferred) wet oxide
-etch. Its minimum feature (0.410 µm) and space (0.500 µm)[^pdk-periph]
-are far above the 0.15 µm of the active layer ({ref}`FOM <step-004>`),
-so it sits in the class of layers that a 130 nm-era fab prints on an
-i-line {term}`stepper` (see below). What sets it apart from the other implant
-masks of the flow is that it is followed by a dedicated anti-reflective
-coating etch ({ref}`TUNARCE <step-036>`), the only such step in the step
-list used in this reference.
+etch.
+
+**Specific to this step:**
+
+* Its minimum feature (0.410 µm) and space (0.500 µm)[^pdk-periph]
+  are far above the 0.15 µm of the active layer ({ref}`FOM <step-004>`),
+  so it sits in the class of layers that a 130 nm-era fab prints on an
+  i-line {term}`stepper` (see below).
+* What sets it apart from the other implant
+  masks of the flow is that it is followed by a dedicated anti-reflective
+  coating etch ({ref}`TUNARCE <step-036>`), the only such step in the step
+  list used in this reference.
 
 ## Why this step exists
 
-SKY130 is, in the PDK's words, "the 8th generation SONOS technology
-node (130nm)",[^pdk-02] and SkyWater lists "SONOS non-volatile memory
-functionality" among the features the process offers as
-standard.[^ann-11] The memory transistor is a MOSFET whose gate
+**SONOS at SkyWater.** SKY130 is, in the PDK's words, "the 8th generation
+SONOS technology node (130nm)",[^pdk-02] and SkyWater lists "SONOS
+non-volatile memory functionality" among the features the process
+offers as standard.[^ann-11]
+
+**The memory transistor.** The memory transistor is a MOSFET whose gate
 dielectric is an oxide–nitride–oxide sandwich that stores charge in
 the nitride; the PDK supports a two-transistor cell and shows "the
 schematic for the 2-T SONOS memory cell".[^pdk-07] Cypress describes it
 as "a SONOS Control Gate (CG) in series with a CMOS Select Gate", in
 which "charge injected from the Si substrate across the thin tunnel
 oxide by Fowler-Nordheim tunneling is trapped in the Nitride (N)
-layer".[^cyp-25] A 2011 Cypress/UMC press release says that the
+layer".[^cyp-25]
+
+**Mask count.** A 2011 Cypress/UMC press release says that the
 65 nm S65 SONOS process "only requires three additional mask layers to
 a standard CMOS process";[^cyp-22] it gives no mask count for the
 130 nm S8 process. We read `TUNM`, `ONOM` and `LDNTM` in the PDK's
@@ -99,26 +141,31 @@ first.
 The tunnel window has to be a separate mask because the memory
 transistor's channel is engineered differently from every logic
 transistor. Its threshold must be set so that the programmed and
-erased states straddle the read condition — the PDK's {term}`e-test` table
+erased states straddle the read condition.
+
+The PDK's {term}`e-test` table
 gives a nominal programmed threshold of 1.44 V and an erased threshold
-of −2.3 V[^pdk-07] — which calls for its own channel implants
-({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`), and its tunnel oxide
+of −2.3 V,[^pdk-07] which calls for its own channel implants
+({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`). Its tunnel oxide
 has to be grown on bare silicon, which means removing the (inferred)
 pad oxide only where the cells are ({ref}`TUNME <step-039>`). One mask
 serves all three. Without `TUNM` there would be no SONOS cells; the logic
 flow would be unaffected.
 
 The published SKY130 {term}`test tile` shows the structures the SONOS
-module is characterised with: "SONOS Rev 2" transistors from 0.45/0.15
-to 25/25 µm, in deep N-well and "w/o DNW", a "2T Flash Cell Rev 2
-Array, 11,264 cells" with "FET W/Lsonos/Lnpass = 0.45/0.22/0.15",
-area- and perimeter-intensive "SONOS Rev 2" capacitors, and "NV Latch
-Tri-Gates".[^raw-data-testtile-pads]
+module is characterised with:[^raw-data-testtile-pads]
+
+* **SONOS transistors.** "SONOS Rev 2" transistors from 0.45/0.15
+  to 25/25 µm, in deep N-well and "w/o DNW".
+* **Flash array.** A "2T Flash Cell Rev 2
+  Array, 11,264 cells" with "FET W/Lsonos/Lnpass = 0.45/0.22/0.15".
+* **Capacitors and latches.** Area- and perimeter-intensive "SONOS Rev 2" capacitors, and "NV Latch
+  Tri-Gates".
 
 ## How it is typically performed
 
-An industry-generic sequence for a relaxed implant-plus-etch window in
-a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic sequence for a relaxed implant-plus-etch window in
+a 200 mm, 130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Surface preparation.** The wafer arrives with, we infer, the pad
    oxide still over the active areas and trench oxide over the field
@@ -126,7 +173,9 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    open questions there and on {ref}`RTAI <step-034>`). Dehydration
    bake and {term}`HMDS` vapour prime on the coat/develop track.
 2. **Bottom anti-reflective coating.** An organic {term}`BARC` is
-   spun and baked. ARCs "are often used in microelectronic
+   spun and baked.
+
+   ARCs "are often used in microelectronic
    photolithography to help reduce image distortions associated with
    reflections off the surface of the substrate" and "help reduce
    standing waves, thin-film interference, and specular
@@ -135,15 +184,19 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
    one; why a relaxed layer needs it is discussed on that page.
 3. **Resist coat and soft bake.** A positive resist of roughly 1 µm
    — the PDK's assumptions table gives 1.14 µm as its generic
-   "Photoresist thickness"[^pdk-03] — thick enough to stop the
-   channel-type implants that follow (industry-typical: a 1 µm resist
-   stops ions of a few hundred keV; {ref}`category-implant`).
+   "Photoresist thickness"[^pdk-03] — is thick enough to stop the
+   channel-type implants that follow.
+
+   (Industry-typical: a 1 µm resist
+   stops ions of a few hundred keV; {ref}`category-implant`.)
 4. **Exposure.** Through the tunnel reticle, aligned to the {term}`STI` pattern
-   printed at {ref}`FOM <step-004>`. The 0.410 µm minimum
+   printed at {ref}`FOM <step-004>`.
+
+   The 0.410 µm minimum
    feature[^pdk-periph] corresponds to {term}`k₁ <k1>` ≈ 0.67 at the 365 nm i-line
-   with a typical 0.6 {term}`NA` i-line lens (illustrative) ({term}`CD` =
+   with a typical 0.6 {term}`NA` i-line lens (illustrative; {term}`CD` =
    k₁·λ/NA),[^wiki-litho] comfortably inside the i-line process window,
-   so we infer an i-line layer; ASML describes older exposure tools that
+   so we infer an i-line layer. ASML describes older exposure tools that
    "migrate to the lithography of choice for less critical
    layers".[^asml-30]
 5. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse,
@@ -170,20 +223,34 @@ and the pre-oxidation clean as part of those steps (see the
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper or i-line scanner.** SkyWater lists "ASML
-  I-line stepper" and "ASML I-line scanner" alongside its {term}`DUV`
-  tools.[^skw-01] Strength: **strong** for the vendor and wavelength
-  classes; **inference** for assigning `TUNM` to the i-line tools,
-  from the 0.410 µm design rule.[^pdk-periph]
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
-  Strength: strong for existence; which track serves the i-line tools
-  is not public.
+Four tools are named at SkyWater for this step:
+
+| Tool | Evidence |
+|---|---|
+| ASML i-line stepper/scanner | **strong** (vendor); **inference** (assignment) |
+| Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius | strong (existence) |
+| Metrology — AMAT Verity/VeraSEM; KLA 5200/5300/Archer | strong (existence); inference (assignment) |
+| Defect inspection — KLA-Tencor AIT | medium |
+
+* **ASML i-line stepper or i-line scanner**
+  - *SkyWater says:* lists "ASML I-line stepper" and "ASML I-line
+    scanner" alongside its {term}`DUV` tools.[^skw-01]
+  - *Tool exists:* **strong** for the vendor and wavelength classes.
+  - *Runs this step:* **inference**, from the 0.410 µm design
+    rule.[^pdk-periph]
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+
+  Which track serves the i-line tools is not public.
 * **Metrology — AMAT Verity/VeraSEM CD-SEM; KLA 5200/5300/Archer
-  overlay.**[^skw-01] Strength: strong for
-  existence (SkyWater statement); use at this mask is an inference.
-* **Defect inspection — KLA-Tencor AIT**, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  overlay**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
+* **Defect inspection — KLA-Tencor AIT**
+  - *SkyWater says:* a job posting lists
+    "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *Tool exists:* medium — our reading of "AIT" in that list as this
+    tool.
 
 ## Resources required
 
@@ -207,14 +274,14 @@ and the pre-oxidation clean as part of those steps (see the
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant through
   them; {ref}`TUNME <step-039>` etches the oxide (the pad oxide, we
   infer) inside them.
-* The ONO stack that the windows are made for is grown at
+* Depends on: the deep N-well requirement (tunm.6a) —
+  {ref}`DNM <step-007>`, {ref}`DNI <step-008>`.
+* Feeds: the ONO stack that the windows are made for, grown at
   {ref}`ONO <step-040>` and confined to the cells by
   {ref}`ONOM <step-041>`/{ref}`ONOME <step-042>`.
-* The other two SONOS-specific masks are {ref}`ONOM <step-041>` and
-  {ref}`LDNTM <step-071>`.
-* Deep N-well requirement (tunm.6a): {ref}`DNM <step-007>`,
-  {ref}`DNI <step-008>`.
-* Mask page: {ref}`TUNM <mask-tunm>` — the mask's layers, plates,
+* Same category: the other two SONOS-specific masks,
+  {ref}`ONOM <step-041>` and {ref}`LDNTM <step-071>`.
+* Mask: {ref}`TUNM <mask-tunm>` — the mask's layers, plates,
   renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
@@ -304,18 +371,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* Whether `TUNM` is exposed on the i-line or the DUV tools is an
-  inference from the 0.410 µm rule; no SkyWater statement assigns
-  layers to tools.
-* Reticle tone and resist type are not public.
-* Why a relaxed implant layer carries an ARC is an open question
-  (see {ref}`TUNARCE <step-036>`).
-* The internal layout rules of the memory arrays (`areaid.ce`) are not
-  published, so the real cell pitch cannot be derived from the `tunm`
-  rules alone.
-* Where the resist is stripped after {ref}`TUNME <step-039>` is not
-  stated publicly; this reference treats the strip as part of that
-  etch.
+* **Exposure tool.** Whether `TUNM` is exposed on the i-line or the
+  DUV tools is an inference from the 0.410 µm rule; no SkyWater
+  statement assigns layers to tools.
+* **Reticle tone and resist.** Reticle tone and resist type are not
+  public.
+* **Why an ARC.** Why a relaxed implant layer carries an ARC is an
+  open question (see {ref}`TUNARCE <step-036>`).
+* **Cell pitch.** The internal layout rules of the memory arrays
+  (`areaid.ce`) are not published, so the real cell pitch cannot be
+  derived from the `tunm` rules alone.
+* **Resist strip point.** Where the resist is stripped after
+  {ref}`TUNME <step-039>` is not stated publicly; this reference
+  treats the strip as part of that etch.
 
 <!-- footnotes -->
 
