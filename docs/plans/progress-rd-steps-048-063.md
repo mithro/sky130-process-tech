@@ -22,8 +22,19 @@ Writer: Opus. Started 2026-09-26 from `main` at `e75c04e8`. Guide: `docs/plans/r
 
 ## Batch measurement (§1 caps, open text, figure text excluded)
 
-Before (16 pages at `e75c04e8`): paragraphs > 100: 45; list items > 60: 49; sentences > 45: 109;
-table cells > 25: 0. After: see the batch summary at the end.
+| §1 cap (open text, figure captions excluded) | Before (`e75c04e8`) | After |
+|---|---:|---:|
+| paragraphs > 100 words | 45 | 0 |
+| list items > 60 words | 49 | 2 |
+| sentences > 45 words | 109 | 20 |
+| table cells > 25 words | 0 | 0 |
+
+`measure5.py` as committed (it still counts `{figure}` caption text, G10): paragraphs 61 → 16 (the
+16 remaining are the 16 figure captions), items 49 → 2, sentences 115 → 26, cells 0 → 0.
+The 22 remaining over-cap items are all listed, with their reasons, under "Left over the caps" in the
+page entries; 12 of the 20 sentences are 46–48 words, and the other 8 (49–67 words) are base text
+kept whole (a quoted tool list, Open-questions text) or sentences whose only seam would leave part of
+the claim outside its closing hedge (053, 056: two of them carry a repeated extraction hedge).
 
 ## Pages
 
@@ -301,7 +312,10 @@ table cells > 25: 0. After: see the batch summary at the end.
   `Same module:` (all three in the module); the "Later steps that touch the resistor" bullet (mixed
   modules) keeps its own gloss and no label.
 * **R-GLANCE.** Public numbers are the PDK's 300 Ω/sq and 319.8 Ω/sq; the extracted values are not
-  in the box. Tool line keeps "which one is not stated".
+  in the box. Tool line keeps "which one is not stated". Does does not say the implant "sets" the
+  sheet resistance (the lead's wording): Open questions calls "how much of the final 300 Ω/sq is set
+  here versus by the later p⁺ source/drain implant" not public, so the box says that instead
+  (changed in the batch self-review, R-GLANCE step 5).
 * **Left over the caps (known items).** "For a 0.18 µm film, 300 Ω/sq corresponds to … — an
   illustrative estimate, not a SkyWater number." (51 w): its closing hedge covers the whole chain, so
   a split would leave part of it unhedged. The extraction-method sentence "Taking the difference …
@@ -310,8 +324,8 @@ table cells > 25: 0. After: see the batch summary at the end.
   extraction)." (46 w). The "Resistor ends" lead-in (49 w including its two hedges).
 * **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07` ×2 (glance; the e-test split),
   `pdk-08`, `skw-01` (glance), `raw-data-passives` ×2 (the two repeated extraction hedges); numbers
-  300, 319.8 (glance), 8250 (glance tool name); hedges "not public" (glance label), "our extraction"
-  ×2 (the repeats). REGROUPED: all sentence splits, same digits in the same order. **LOST
+  300, 319.8 (glance), 8250 (glance tool name); hedges "not public" ×2 (glance label and Does line),
+  "our extraction" ×2 (the repeats). REGROUPED: all sentence splits, same digits in the same order. **LOST
   number_order** ('70', '5.73', '190', '1.41', '390', '0.69', '4', '68', '256', '392'): the
   resistor-ends table puts the width first in each row (the rule-table pattern the batch-2 and
   batch-3 reviews accepted); every pairing checked by hand above; "4" (4-square) stays in the
@@ -798,6 +812,35 @@ table cells > 25: 0. After: see the batch summary at the end.
   list lead-ins over cited items; labels).
 * **Caps**: para > 100 2 → 0; item > 60 6 → 0; sentence > 45 16 → 2 (above).
 
+## Batch summary
+
+**Pages done:** all 16 (048–063), one commit each, plus progress-file corrections. The batch has no
+hand-written in-force note, so no `{dropdown}` was edited or needed checking beyond the generated
+index-links block (unchanged).
+
+**Invariants, checked by script over all 16 pages against `main`** (`tmp/readability/batchcheck.py`,
+`oqcheck.py`, git-ignored): `## References` sections, footnote definitions, generated index-links
+blocks, `{figure}` blocks and quick-facts tables byte-identical; Deep-dive `* ` bullet counts
+unchanged on every page; H2 lists unchanged; no duplicate H3 title; every marker in a glance box
+recurs below it; one admonition per page (the glance box); every Open-questions bullet is its base
+text after the new label, except 050 (the PDK facts as sub-bullets) and 053 (the resistor-ends
+table), both described above.
+
+**Preservation, final** (`--allow-regrouped` plus the categories named per page): clean on 12 pages.
+Remaining lines, all explained in the page entries: 053 and 061 `number_order` (table rows that put
+the width or rule id first; pairings checked by hand); 061, 062, 063 a LOST/ADDED `refs` pair from
+the known tool bug G15.
+
+**Gates** (run in the worktree at the end): `check_steps`, `check_refs`, `check_machines`,
+`check_materials`, `check_masks`, `check_papers`, `check_patents`, `check_filings`, `check_inforce` —
+0 problems; `gen_papers`, `gen_patents`, `gen_filings`, `gen_index_links`, `gen_steps`,
+`gen_figures` `--check` — 0 differences; `sphinx-build -W -E` into a fresh directory — exit 0.
+
+**Use of the three model pages.** The forms follow 018/030/043: glance box last, italic scope lead-in,
+R-TOOLS three-line items, `**Label.**` Open questions, R-RELATED labels only where true. Where the
+models had a form the batch reviews later criticised (a gloss under *SkyWater says:*, invented list
+labels, a paragraph opening with "So"), the stricter review ruling was followed instead.
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
@@ -821,4 +864,31 @@ table cells > 25: 0. After: see the batch summary at the end.
 
 ## Guide problems
 
-(none yet)
+1. **G15 is still in `tools/check_preserved.py` on `main`.** A role followed on the same line by a code
+   span (`{ref}`POC <step-059>`. `P1M``) yields a false LOST/ADDED `refs` pair whenever a split or a
+   paragraph break changes that line (061, 062, 063). The batch-3 review's single-pass masking fix
+   would remove it.
+2. **R-LIST step 3 (bold labels) against the batch-3 review's Low item on invented labels.** Where
+   the only possible label repeated the item's first words or was new wording, this batch used plain
+   bullets (048, 049, 051, 053, 054, 056, 060, 061, 062, 063) and kept existing bold labels where the
+   page had them (062's failure modes). Suggested wording for step 3: "If no 2–4-word label can be
+   taken from the item without repeating it or adding words, use plain bullets."
+3. **R-H3 vocabulary.** A passage of ≥ 120 words after the figure that is generic reasoning or this
+   reference's own inference (051, 054, 063) fits none of the four step-page titles; those pages were
+   left without an H3 and structured by R-LIST instead. The guide could say so explicitly, or add a
+   title such as "What this reference infers".
+4. **R-CATEGORY step 1 (≤ 35 words)** cannot always be met without rewording: 052 (44 w) and 063
+   (42 w) keep a whole classification sentence with its em-dash pair and markers.
+5. **R-PARA step 2 inside list items.** The no-connective rule was applied to indented continuation
+   paragraphs too; it leaves 049 "Resist coat" (65 w, seam only before "Because") and one 061 bullet
+   (65 w, seam only before "But") over the item cap. The guide could say whether a continuation
+   paragraph inside an item counts as a "new paragraph" here.
+6. **R-TOOLS when the head sentence mixes SkyWater's list with our gloss** ("as later additions" on
+   061; "all named on SkyWater's facilities page" on 051; "all on SkyWater's public list" on 059). The pilot form (keep the head
+   sentence whole, grades as sub-bullets, no *SkyWater says:*) was used so that nothing of ours is
+   filed under SkyWater's name. The guide could name this form in step 2.
+7. **Tables in cells with a `:::{table}` `:widths:`** — on 056 `:widths:` did not change the rendered
+   column split, so a pad label ("pad 10-11") wraps at its hyphen at 1280 px. Not a number, but the
+   phone-test wording ("no number broken across lines") does not say whether identifiers count.
+8. **`tools/shoot.py` stops at 10 tiles**; long step pages (053, 061–063) need `--max-height 24000` for
+   the phone tiles to reach Open questions. Worth a line in §7 step 7.
