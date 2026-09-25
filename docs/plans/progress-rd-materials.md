@@ -460,3 +460,28 @@ lead); list items > 60 words 5 -> 0; tables with no caption 1 -> 0.
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
 Incremental `-W` build: clean. Screenshots at 400 px: table and
 paragraphs wrap cleanly.
+
+### `ultrapure-water.md`
+
+Rules applied: R-MODELS (5-row 3-column table), R-PARA (4 over-100-word
+paragraphs split at seams), R-PARA (one over-60-word list item split
+into lead + continuation), R-RELATED (Related pages grouped under bold
+labels).
+
+`check_preserved.py --allow-regrouped`: 0 undeclared differences. Two
+`REGROUPED` printouts, hand-checked: splitting the Cartwright/Ohmi
+sentence separated a (90, 18, 1, 5) unit into (90, 18) and a (1, 5)
+pairing that the tool matched against the pre-existing "Volumes"
+quick-facts cell (the Ohmi "less than 1% and 5%" figures were already
+duplicated in both places before this edit) -- confirmed no digit lost
+or reordered.
+
+Over-cap counts, before -> after: paragraphs > 100 words 4 -> 1 (R-INTRO
+lead); list items > 60 words 1 -> 0; tables with no caption 0 -> 0 (none
+pre-existing).
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: table and
+paragraphs wrap cleanly; the in-force patent dropdowns (MKS carbonated
+water patent) render unchanged, boundaries untouched.

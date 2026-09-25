@@ -40,7 +40,9 @@ matter — "ionics (cations, anions, metals), total organic carbon, silica
 (dissolved and colloidal), particles, and bacteria" — and notes that
 "UPW quality, more than any other critical fluid, can change between"
 the point of distribution, the point of connection at the back of the
-tool and the point of use in the tool.[^itrs-2001-yield] Libman, Wilcox
+tool and the point of use in the tool.[^itrs-2001-yield]
+
+Libman, Wilcox
 and Zerfas list hydrogen peroxide "generated in Ultraviolet treatment"
 and dissolved organics "either originating from incoming city water or
 introduced by UPW system materials" among the trace contaminants that
@@ -62,10 +64,12 @@ years.[^itrs-2001-yield]
 Oxygen dissolved in rinse water oxidises a freshly etched silicon
 surface. Morita et al. found that "The coexistence of oxygen and water or
 moisture is required for growth of native oxide both in air and in
-ultrapure water at room temperature";[^morita-1990] Li, Balazs and
+ultrapure water at room temperature".[^morita-1990]
+
+Li, Balazs and
 Anderson showed that "the ambient and the dissolved oxygen concentration
 in UPW dramatically affect the growth rate of the native
-oxide";[^li-2005] and Yagi et al. built UPW systems with membrane
+oxide".[^li-2005] Yagi et al. built UPW systems with membrane
 degassing and catalytic reduction or nitrogen bubbling that supply "10
 ppb or less in dissolved oxygen concentration".[^yagi-1992] The ITRS
 records that "Some semiconductor manufactures now treat dissolved oxygen
@@ -102,28 +106,17 @@ Ultrapure water is made on site, not bought, so its "grade" is the
 specification the fab sets for its UPW system, usually framed by the
 standards below. SKY130's water specification is not public.
 
-* **SEMI F63** (F63-1224, current) — a guide that may be used "To
-  establish quality expectations for the supplied UPW" and "To set the
-  process control parameters for UPW-system operation", written for
-  facilities making semiconductors "with line widths of 32 nm and
-  smaller", a scope far below 130 nm, and developed with input from the IRDS UPW
-  committee.[^semi-f63]
-* **SEMI F61** (F61-0521, current) — "the engineering and component
-  requirements for a UPW system used in semiconductor manufacturing",
-  including hot UPW.[^semi-f61]
-* **ASTM D5127** (D5127-13, reapproved 2018) — recommends "the water
-  quality required for the electronics and microelectronics industries";
-  "The types of ultra-pure water are defined with respect to device line
-  width", and the recommendations "apply at the point of
-  distribution".[^astm-d5127]
-* **ITRS 2001 yield tables** — TOC, bacteria, total silica, particles
-  and critical ions and metals for UPW, measured at the point of
-  distribution or connection by the methods of its figure 56 (online
-  resistivity cells, TOC by resistivity or CO₂, ICP-MS, ion chromatography
-  and light scattering).[^itrs-2001-yield]
-* **Carbonated DI water** — CO₂-dissolved water for rinsing where charging
-  matters; the patent describing it may still be in force, and is in the
-  collapsed note below this list.
+:::{table} Representative UPW standards and grades, as public sources describe them
+:widths: 22 10 68
+
+| Material | As supplied | Specification |
+|---|---|---|
+| SEMI F63 | — | (F63-1224, current) — a guide that may be used "To establish quality expectations for the supplied UPW" and "To set the process control parameters for UPW-system operation", written for facilities making semiconductors "with line widths of 32 nm and smaller", a scope far below 130 nm, and developed with input from the IRDS UPW committee[^semi-f63] |
+| SEMI F61 | — | (F61-0521, current) — "the engineering and component requirements for a UPW system used in semiconductor manufacturing", including hot UPW[^semi-f61] |
+| ASTM D5127 | — | (D5127-13, reapproved 2018) — recommends "the water quality required for the electronics and microelectronics industries"; "The types of ultra-pure water are defined with respect to device line width", and the recommendations "apply at the point of distribution"[^astm-d5127] |
+| ITRS 2001 yield tables | — | TOC, bacteria, total silica, particles and critical ions and metals for UPW, measured at the point of distribution or connection by the methods of its figure 56 (online resistivity cells, TOC by resistivity or CO₂, ICP-MS, ion chromatography and light scattering)[^itrs-2001-yield] |
+| Carbonated DI water | — | CO₂-dissolved water for rinsing where charging matters; the patent describing it may still be in force, and is in the collapsed note below this list |
+:::
 
 :::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read
 Carbonated DI water is the subject of an MKS patent.[^pat-dico2-mks]
@@ -143,7 +136,9 @@ which carbon dioxide is injected, which we read as carbonated rinse water
 of the kind the MKS patent describes (that patent may still be in force;
 it is cited in the collapsed notes above and below); SkyWater does not
 explain it. The page describes no UPW plant, water quality or water use,
-and no other tool entry mentions water.[^skw-01] SkyWater's filings list
+and no other tool entry mentions water.[^skw-01]
+
+SkyWater's filings list
 no water supplier among raw materials.[^sec-01][^sec-02] The S-1's
 mention of "an advanced water treatment facility" concerns the Center
 for NeoVation in Osceola County, Florida, which SkyWater agreed to
@@ -222,7 +217,9 @@ standards and literature statements.
   actually improve final water quality by using a cleaner stream for the
   feed".[^itrs-2001-yield] Cartwright described a semiconductor plant
   where "over 90% of the rinse water is purified back to 18 megohm/cm
-  quality for reuse" (sic, for megohm·cm);[^cartwright-1985] Ohmi's clean
+  quality for reuse" (sic, for megohm·cm).[^cartwright-1985]
+
+  Ohmi's clean
   reduced chemical and ultrapure water use to "less than 1% and 5%,
   respectively".[^ohmi-1996] Tool makers promote lower DI water use per
   wafer.[^screen-ss3200]
@@ -269,15 +266,15 @@ MKS patent.[^pat-dico2-mks]
 
 ## Related pages
 
-* {ref}`machine-wet-bench` and {ref}`machine-single-wafer-spin-processor` —
-  rinses, carbonated DI water and drying.
-* {ref}`machine-coat-develop-track` — the develop rinse.
-* {ref}`machine-cmp-polisher` and {ref}`machine-post-cmp-cleaner` — water
-  for polishing and brush cleaning.
-* {ref}`material-wet-chemicals` — the chemicals water dilutes and rinses
-  away.
-* {ref}`material-cmp-consumables` — slurries and post-CMP cleans.
-* {ref}`materials-index` — all consumable classes.
+* **Machines.** {ref}`machine-wet-bench` and
+  {ref}`machine-single-wafer-spin-processor` — rinses, carbonated DI
+  water and drying. {ref}`machine-coat-develop-track` — the develop
+  rinse. {ref}`machine-cmp-polisher` and {ref}`machine-post-cmp-cleaner`
+  — water for polishing and brush cleaning.
+* **Materials.** {ref}`material-wet-chemicals` — the chemicals water
+  dilutes and rinses away. {ref}`material-cmp-consumables` — slurries
+  and post-CMP cleans.
+* **Indexes.** {ref}`materials-index` — all consumable classes.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
