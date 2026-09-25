@@ -463,10 +463,9 @@ them. Check, and report with file and line references:
    step, category, machine, material, mask and overview page is
    up to date, not stale or hand-edited), `tools/gen_steps.py --check`
    (`docs/steps/index.md` is up to date and every step page exists),
-   up to date, not stale or hand-edited), `tools/gen_step_tables.py
-   --check` (the generated "which steps use this" table or dropdown on
-   every machine and material page matches its checked step-link run,
-   up to date, not stale or hand-edited), `tools/gen_figures.py --check`
+   `tools/gen_step_tables.py --check` (the generated "which steps use
+   this" table or dropdown on every machine and material page matches
+   its checked step-link run), `tools/gen_figures.py --check`
    (every SVG under `docs/_static/figures/`, every paste block under
    `data/figures/myst/`, the generated `docs/figure-conventions.md` and
    every `{figure}` block pasted into a page is what the specs in
