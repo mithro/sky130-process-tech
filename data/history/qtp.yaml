@@ -2681,3 +2681,64 @@ documents:
     further variant of the R52-family suffix pattern (R52D, R52D-3, R52D-5R), and weak evidence that "R5"
     is understood internally as a valid abbreviation for the "R52" family root, alongside the plain "R5"
     naming already implied by "R52", "R5D" and "R59" -- style codes throughout this corpus.'
+- id: qtp-i000005
+  doc_type: QTP
+  number: I000005
+  cypress_document_number: 001-89529 Rev. **
+  title: 0.35um Technology, CSM Fab 2
+  version: '**'
+  date_printed: October 2013
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-i000005-0.35um-technology-csm-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152d1a52016
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 1373d4daa89b9bc9076b0344e120e5affa28d4abeb88befde6b04dcfb8bbcefe
+  technology_codes:
+  - CSM 0.35um
+  - G35C
+  fab: Chartered Semiconductor Singapore ('CSM', Fab 2 in this document's own numbering)
+  products:
+  - CY7B9950
+  - CY2DP818*
+  - CY28346
+  - CY29946
+  - CY29947
+  - CY29948
+  - CY29972
+  - CY29973
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1,2: 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC; Metal 3: 300Å IMPTi /300Å
+      TiN/.8K AlCu/350Å TiN ARC'
+    passivation: 350Å TiN/2K PSG/7K Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Triple Metal /0.35 µm
+    gate_oxide: SiO2 / 65Å
+    fab_location: Chartered Semiconductor Singapore
+    die_fab_line_id: 2L313-698-CBB/CRA
+    transistors: 8,000
+    gates: 2225
+  qualification_history:
+  - number: I000005
+    description: 3.3V, 125MHz Multi-Output Zero Delay Buffer, CY29972AIT is a member of the G35C base
+      wafer product, 0.35um Technology, Chartered Semiconductor Singapore, Fab 2
+    date: '2000'
+  quotes:
+  - text: 3.3V, 125MHz Multi-Output Zero Delay Buffer, CY29972AIT is a member of the G35C
+    location: p.2, Product Qualification History, row I000005 (the table wraps 'base wafer product,
+      0.35um Technology, Chartered Semiconductor Singapore, Fab 2' onto the next physical line)
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION S4AD-5
+    location: p.3, section heading (this report is about the G35C/CSM 0.35 µm foundry technology
+      throughout; "S4AD-5" is an unrelated code)
+  notes: 'This is one CSM (Chartered Semiconductor Manufacturing, Singapore) foundry technology already
+    named as a base-die platform in qtp-i000006 (the IMI-acquisition summary report, "A35C/G35C base die
+    platform (0.35uM, 3 layers metal, CMOS, CSM - Singapore)"); this document gives a full
+    Technology/Fab Process Description for the G35C variant specifically, confirming 0.35 µm, 3 metal
+    layers and CMOS. Cypress calls this foundry "Fab 2" in its own numbering here (Chartered Semiconductor
+    Singapore, Fab 2) -- a third distinct usage of the "Fab 2" label in this corpus, alongside Cypress''s
+    own Round Rock, TX Fab 2 and TSMC''s "Fab 3" (qtp-s050001). The Technology/Fab Process Description
+    section heading misprints "S4AD-5" -- a wholly unrelated SONOS technology -- continuing the pattern of
+    stale/copy-pasted headings already seen in qtp-082506 ("R52D-3" in an R52T-3 report) and qtp-110605
+    ("R9T-3R" in an L28 report); this is now the third such mismatched heading found in this corpus,
+    suggesting Cypress''s QTP template was commonly cloned from an unrelated prior report without updating
+    this one field.'
