@@ -7057,3 +7057,311 @@ documents:
     Metal 1 is printed "300A Ti/3,200A Al 0.5% Cu /300A TiW" against qtp-042106's "100A Ti/3,200A Al 0.5%
     Cu /300A TiW" (Ti thickness 300A here vs 100A there) for the same technology code and fab -- both quoted
     verbatim rather than reconciled.
+- id: qtp-071005
+  origin: cypress
+  doc_type: QTP
+  number: '071005'
+  cypress_document_number: null
+  title: West Bridge Astoria, C8Q-3R Technology, Fab4
+  version: '1.0'
+  date_printed: April 2008
+  url: https://www.cypress.com/file/93281/download
+  archive_url: https://web.archive.org/web/20211203221107/https://www.cypress.com/file/93281/download
+  retrieved: '2026-09-25'
+  sha256: cb321e0ed1525be4d3b985ca7862eee9899aba8ff7270df36158f22fa40a247f
+  technology_codes:
+  - C8Q-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN, CMI)
+  products:
+  - CYWB0224ABS
+  - CYWB0224ABM
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 150Å Ti / 3,200Å Al 0.5% Cu / 300Å TiW; Metal 2: 150Å Ti / 4,000Å Al 0.5%
+      Cu / 300 Å TiW; Metal 3: 150Å Ti / 4,000 Å Al 0.5% Cu / 300Å TiW; Metal 4: 150Å Ti / 8,000Å Al 0.5%
+      Cu / 300Å TiW'
+    passivation: 1,000Å TeOs / 9,000Å Si3N4
+    free_phosphorus_percent: null
+    design_rule: CMOS, 0.13 µm
+    gate_oxide: SiO2 DGOX 32/55Å
+    fab_location: CMI/Bloomington MN
+    die_fab_line_id: Fab4, C8Q-3R
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '033805'
+    description: FX2LP/FX1/AT2LP New Device family on New C8Q-3R Technology, Fab4
+    date: Jan 05
+  - number: '071005'
+    description: Device Qualification of West Bridge Astoria 7C07101A in C8Q-3R Technology, Fab4
+    date: Mar 08
+  quotes:
+  - text: FX2LP/FX1/AT2LP New Device family on New C8Q-3R Technology, Fab4
+    location: p.2, Product Qualification History, row 033805
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4, C8Q-3R'
+    location: p.3, Technology/Fab Process Description
+  notes: This history row (QTP 033805, Jan 05, "New Device family on New C8Q-3R Technology") names a
+    different QTP number for C8Q-3R's origin than qtp-042106's own history row (QTP 042106, also Jan 05,
+    "New C8Q-3R Technology") -- two different reports, dated the same month, each calling their own QTP
+    number the technology's origin; see qtp-044505 (this session) which independently repeats this same
+    033805 row.
+- id: qtp-044505
+  origin: cypress
+  doc_type: QTP
+  number: '044505'
+  cypress_document_number: null
+  title: FX2LP/FX1-128 Device Family, C8Q-3R Technology, Fab 4
+  version: '1.0'
+  date_printed: July 2005
+  url: https://www.cypress.com/file/92551/download
+  archive_url: https://web.archive.org/web/20210305103805/https://www.cypress.com/file/92551/download
+  retrieved: '2026-09-25'
+  sha256: eb2991c93f6c3b928caec1d2f2686008b1fd9fb9a9337351326bb34ca161597b
+  technology_codes:
+  - C8Q-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN, CMI)
+  products:
+  - CY7C68013A
+  - CY7C68014A
+  - CY7C64713
+  - CY7C68300B
+  - CY7C68301B
+  - CY7C68320
+  - CY7C68321
+  die_ids:
+  - 7C68100A
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 300A Ti/3,200A Al 0.5% Cu /300A TiW; Metal 2: 150A Ti/4,000A Al 0.5% Cu/300A
+      TiW; Metal 3: 150A Ti/4,000A Al 0.5% Cu/300A TiW; Metal 4: 150A Ti/4,000A Al 0.5% Cu/300A TiW'
+    passivation: 1,000A TeOs / 9,000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, 0.13 µm
+    gate_oxide: SiO2 DGOX 32/55A
+    fab_location: CMI/Fab4
+    die_fab_line_id: Fab4, C8Q-3R
+    transistors: 700K
+    gates: 120K
+  qualification_history:
+  - number: '033805'
+    description: FX2LP/FX1/AT2LP New Device Family on New C8Q-3R Technology, Fab4
+    date: Jan 05
+  - number: '044505'
+    description: 7C6810**B Device Family (FX2LP-128) on C8Q-3R Technology, Fab4
+    date: Jun 05
+  quotes:
+  - text: FX2LP/FX1/AT2LP New Device Family on New C8Q-3R Technology, Fab4
+    location: p.2, Product Qualification History, row 033805
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4, C8Q-3R'
+    location: p.3, Technology/Fab Process Description
+  notes: Independently repeats the QTP 033805 origin row also seen in qtp-071005 (this session), matching
+    it exactly. Metal 1 here is printed "300A Ti/3,200A Al 0.5% Cu /300A TiW", matching qtp-042105's Metal
+    1 figure (this session) rather than qtp-042106's "100A Ti" for the same technology code.
+- id: qtp-082609
+  origin: cypress
+  doc_type: QTP
+  number: '082609'
+  cypress_document_number: null
+  title: HX2LP Device Family, C8Q-3R Technology, Fab 5
+  version: '1.0'
+  date_printed: June 2009
+  url: https://www.cypress.com/file/95566/download
+  archive_url: https://web.archive.org/web/20201026131537/https://www.cypress.com/file/95566/download
+  retrieved: '2026-09-25'
+  sha256: 446b3589fd0a3aedcbcfc59d9587c9970cfbaa561bf139f528d7ddb0527240e7
+  technology_codes:
+  - C8Q-3R
+  fab: Fab 5 (GSMC, China)
+  products:
+  - CY7C656205
+  - CY7C656305
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 100A Ti/3,200A Al 0.5% Cu/300A TiW; Metal 2: 150A Ti/4,230A Al 0.5% Cu/300A
+      TiW; Metal 3: 150A Ti/4,230 Al 0.5% Cu/300A TiW; Metal 4: 150A Ti/8,000 Al 0.5% Cu/300A TiW'
+    passivation: 1000Å TEOS / 9000Å Si3N4
+    free_phosphorus_percent: null
+    design_rule: CMOS, 0.13µm
+    gate_oxide: SiO2 /55A
+    fab_location: GSMC China
+    die_fab_line_id: Fab5, C8Q-3R
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '065201'
+    description: Qualify FX2LP18 Device Family on C8Q-3R Technology at GSMC Foundry (Fab 5)
+    date: Sep 07
+  - number: '082609'
+    description: Qualify HX2LP (7C65630C, USB High Speed HUB) at GSMC on C8Q-3R
+    date: Jun 09
+  quotes:
+  - text: Qualify FX2LP18 Device Family on C8Q-3R Technology at GSMC Foundry (Fab 5)
+    location: p.2, Product Qualification History, row 065201
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab5, C8Q-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: SiO2 /55A
+    location: p.3, Technology/Fab Process Description, Gate Oxide Material/Thickness
+  notes: C8Q-3R also runs at Fab 5 (GSMC, China), transferred there per this row (QTP 065201, Sep 07),
+    alongside the Fab 4/CMI-run reports elsewhere in this corpus. This Fab 5 report's Gate Oxide field
+    prints a single value ("SiO2 /55A") rather than the dual-gate-oxide "DGOX 32/55A" the Fab 4 reports
+    print for the same technology code.
+- id: qtp-044201
+  origin: cypress
+  doc_type: QTP
+  number: '044201'
+  cypress_document_number: null
+  title: 36 Meg QDR Synchronous SRAM Family, R9Q-3R Technology, Fab4
+  version: '6.2'
+  date_printed: May 2008
+  url: https://www.cypress.com/file/92546/download
+  archive_url: https://web.archive.org/web/20201127164450/https://www.cypress.com/file/92546/download
+  retrieved: '2026-09-25'
+  sha256: e8f16044cd5f42ddbc1551d652c6c96fa7cea96d2fc63415aeedc917f3d18f2d
+  technology_codes:
+  - R9Q-3R
+  - R9T-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1410AV18
+  - CY7C1412AV18
+  - CY7C1414AV18
+  - CY7C1425AV18
+  - CY7C1411AV18
+  - CY7C1413AV18
+  - CY7C1415AV18
+  - CY7C1426AV18
+  - CY7C1416AV18
+  - CY7C1418AV18
+  - CY7C1420AV18
+  - CY7C1427AV18
+  - CY7C1417AV18
+  - CY7C1419AV18
+  - CY7C1421AV18
+  - CY7C1428AV18
+  - CY7C1422AV18
+  - CY7C1423AV18
+  - CY7C1424AV18
+  - CY7C1429AV18
+  die_ids:
+  - 7C1412B
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 150Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 6000Å Al / 300Å TiW; Metal
+      3: 150Å Ti / 6000Å Al / 300Å TiW; Metal 4: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Quad Metal, 90 nm
+    gate_oxide: Nitridized SiO2, Thin GOX 20A, Thick GOX, 58A
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R9Q-3R
+    transistors: ~252M
+    gates: ~36M
+  qualification_history:
+  - number: '033302'
+    description: New Technology R9T-3R, Fab 4 and New Device CY7C137*/138*E, 18 Meg Synchronous product family
+    date: Sep 04
+  - number: '051207'
+    description: R9 18 Meg QDR, 7C1313D 4 Metal Layer Process
+    date: Mar 05
+  - number: '051901'
+    description: New Device CY7C151*/7C152* AC (72Meg QDR/DDR/LW) device family, R9Q-3R Technology fabricated
+      at Fab4
+    date: May 05
+  - number: '044201'
+    description: R9 36 Meg QDR, 7C1414B 4 Metal Layer Process
+    date: May 05
+  - number: '071004'
+    description: R9 36 Meg QDRII New Metal Mask Process (MM1)
+    date: Mar 07
+  quotes:
+  - text: New Technology R9T-3R, Fab 4 and New Device CY7C137*/138*E, 18 Meg Synchronous product family
+    location: p.2, Product Qualification History, row 033302
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R9Q-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Quad Metal, 90 nm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R9Q-3R derives from R9T-3R (origin QTP 033302, Sep 04, already in this corpus's qtp-051207). This
+    report calls the process "Quad Metal" and gives gate oxide as a dual figure ("Thin GOX 20A, Thick GOX,
+    58A"), where qtp-051207 -- covering the same technology code, fab and 4 printed metal layers -- instead
+    calls it "Triple Metal" and gives a single gate-oxide figure ("22Å"); both quoted verbatim rather than
+    reconciled.
+- id: qtp-060908
+  origin: cypress
+  doc_type: QTP
+  number: '060908'
+  cypress_document_number: null
+  title: 36 Meg QDR/DDR Synchronous SRAM Family, R9Q-3R Technology, Fab4
+  version: '3.1'
+  date_printed: February 2009
+  url: https://www.cypress.com/file/92956/download
+  archive_url: https://web.archive.org/web/20211025141847/https://www.cypress.com/file/92956/download
+  retrieved: '2026-09-25'
+  sha256: f0fb23cc2539d41f38689d5dfa4256cc92dfc9b120236c9ecfd51dfce055d100
+  technology_codes:
+  - R9Q-3R
+  - R9T-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1243V18
+  - CY7C1245V18
+  - CY7C1248V18
+  - CY7C1250V18
+  - CY7C1263V18
+  - CY7C1265V18
+  - CY7C1268V18
+  - CY7C1270V18
+  - CY7C1413JV18
+  - CY7C1415JV18
+  - CY7C1426JV18
+  - CY7C1418JV18
+  - CY7C1420JV18
+  - CY7C1414JV18
+  - CY7C1425JV18
+  - CY7C1423JV18
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 150Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 6000Å Al / 300Å TiW; Metal
+      3: 150Å Ti / 6000Å Al / 300Å TiW; Metal 4: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    free_phosphorus_percent: null
+    design_rule: CMOS, Quad Metal, 90 nm
+    gate_oxide: Nitridized SiO2, Thin GOX 20A, Thick GOX, 58A
+    fab_location: Cypress Semiconductor – Bloomington, MN
+    die_fab_line_id: Fab4/R9Q-3R
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '033302'
+    description: New Technology R9T-3R, Fab 4 and New Device CY7C137*/138*E, 18 Meg Synchronous product family
+    date: Sep 04
+  - number: '044201'
+    description: R9 36 Meg QDR, 7C1414B 4 Metal Layer Process
+    date: May 05
+  - number: '063206'
+    description: R9 36 Meg QDR MM1 New Mask Qualification
+    date: Sep 06
+  - number: '063903'
+    description: R9 36 Meg QDR/DDR B-4 Baja Fix Mask Qualification
+    date: Jan 07
+  - number: '060908'
+    description: Qualify R9 36 Meg QDRII (Smaller or Same Die Area/Density), Fab4
+    date: Jan 07
+  - number: '081001'
+    description: Qualify 7C1423J/U Bond Option Using 7C1273A/B (QDR2+) Silicon
+    date: May 08
+  - number: '083809'
+    description: R9 7C1273AC 36M QDRII+ Fast A1 Output Register Noise and Decoupling Design Fix Mask Qualification
+    date: Oct 08
+  - number: '082702'
+    description: Qualify R9 36 Meg QDRII Bond Option CY7C1414J/CY7C1415J
+    date: Feb 09
+  quotes:
+  - text: Qualify R9 36 Meg QDRII (Smaller or Same Die Area/Density), Fab4
+    location: p.2, Product Qualification History, row 060908
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R9Q-3R'
+    location: p.3, Technology/Fab Process Description
+  notes: Extends R9Q-3R's history with five later rows (063206 through 082702) not seen in qtp-044201 or
+    qtp-051207; process figures match qtp-044201 exactly.

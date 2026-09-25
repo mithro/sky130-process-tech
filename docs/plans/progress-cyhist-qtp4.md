@@ -219,6 +219,18 @@ where the Marketing Part field and history row both say plain "CY28547".
 15 more Group B file ids remain (R9Q-3R, R95LD-3R, further C8Q-3R, S4AD-5
 variants).
 
+## Thirteenth batch: more C8Q-3R and R9Q-3R reports
+
+| id | technology_codes | fab | notes |
+|---|---|---|---|
+| qtp-071005 | C8Q-3R | Fab 4 | **conflict:** names QTP 033805 as C8Q-3R's origin, where qtp-042106's own row instead calls QTP 042106 (same month, Jan 05) the origin |
+| qtp-044505 | C8Q-3R | Fab 4 | independently repeats the QTP 033805 origin row |
+| qtp-082609 | C8Q-3R | Fab 5 (GSMC, China) | C8Q-3R also runs at a GSMC foundry; single gate-oxide figure vs Fab 4's dual-gate-oxide figure |
+| qtp-044201 | R9Q-3R, R9T-3R | Fab 4 | calls the process "Quad Metal"; qtp-051207 (existing) calls the same code/fab/layer-count "Triple Metal" with a different gate-oxide figure |
+| qtp-060908 | R9Q-3R, R9T-3R | Fab 4 | extends R9Q-3R's history with five later rows |
+
+15 more Group B file ids remain (further R9Q-3R, R95LD-3R, S4AD-5 variants).
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
