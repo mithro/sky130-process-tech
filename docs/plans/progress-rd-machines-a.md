@@ -546,6 +546,51 @@ about total row-content width, not any one vendor name) and 6 (2-row entries tab
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 10. `docs/machines/high-current-implanter.md` — done
+
+Rules applied: R-INTRO (both remaining sentences fit at 64 words after the template deletion, no
+move to the H2 needed this time; pointer moved to `{seealso}`). R-MODELS (13-row table across
+Nova/Eaton/Axcelis, Applied Materials and Varian). R-ENTRIES: the page's one "Read term by term"
+paragraph decodes a *single* quoted spec line field by field (species, energy, dose, tilt), not
+several distinct named entries — closer to the mask-page "record decoded in turn" shape than the
+multi-entry shape, but without the record's own fields being individually quoted, so there was no
+clean `Entry as listed` content to put in a table's first column. Left as prose per the guide's
+"if a rule does not clearly apply, leave the text alone" instruction; only split its one sentence
+that ran past the caps. R-QUICKFACTS: left as written (method note 3). R-PARA (5 of 6 H3s needed
+splitting). R-SENTENCE (about 10 sentences over 45 words split). R-RELATED (9 sentence-bullets →
+4 grouped bullets). R-CAPTION (the one new table). R-PARA step 4 (one 99-word list item, "Zero
+tilt for source/drain", fixed with a continuation paragraph).
+
+Over-cap counts (before → after): paragraphs > 100 words: 7 → 0; sentences > 45 words: ~11 → 0;
+list items > 60 words: 1 → 0; tables with no caption: 1 new → 0.
+
+**A quote-capitalisation bug caught before committing, not after.** While drafting the "Flood
+guns" paragraph split I initially wrote a sentence starting "Commercial high current implanters
+are now being increasingly configured with plasma based flood guns" — capitalising the source's
+lowercase "commercial" exactly as on page 9. Caught this one myself while re-reading the diff
+before running `check_preserved.py` (the page-9 lesson from the previous page was still fresh)
+and rejoined the two quotations with "and" instead of splitting between them, which also
+shortened the sentence to 40 words without needing the split at all.
+
+**One further identifier loss, a new pattern.** `check_preserved.py` reported `LOST identifiers:
+NV-10` after the R-MODELS conversion: the source's "The NV-10 series (the NV-10-60 of 1979 was
+…)" names the *family* "NV-10" once, bare, in addition to the specific model "NV-10-60" — and the
+table draft kept only the specific model, dropping the bare family name entirely. Fixed by naming
+the row "NV-10 series (NV-10-60)" instead of just "NV-10-60". Generalising: when a source sentence
+names both a product *family* and a specific *model* within it, an R-MODELS row must keep both
+strings, not just the more specific one — the family name is not implied by the model number
+being a checker/preservation matter, only a readability one.
+
+`check_preserved.py --base 929ecf6d --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 and three `LOST number_order` tuples of the now-familiar table-conversion shape
+(method note 1), verified as regroups of the same digits.
+
+Checkers, `-W` build: clean. Screenshot: phone tile 4 (13-row Representative-models table) read;
+wraps cleanly at 400 px.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but

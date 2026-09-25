@@ -6,11 +6,7 @@ heavy doses at low to moderate energy: source/drain implants, gate
 doping and the heavier extension implants. It trades the fine angle
 control of a medium-current tool for beam current and throughput, and
 in the 200 mm era it usually did so by loading a whole batch of wafers
-onto a spinning disc. This page describes the class in general, lists
-representative 200 mm-era models, and then says what SkyWater has
-published about its own tool of this class and which SKY130 steps this
-reference assigns to it. The physics of implantation is on the
-{ref}`category page <category-implant>`.
+onto a spinning disc.
 
 | | High-current ion implanter |
 |---|---|
@@ -22,6 +18,11 @@ reference assigns to it. The physics of implantation is on the
 | 200 mm era | Eaton's NV-GSD/200 (1993) and GSD/200E2 (1996), the second "still being sold today as the GSD Ovation";[^axcelis-history] Applied Materials' "compact 200mm xR LEAP system" and the Quantum that "bridges 150mm, 200mm or 300mm wafers".[^amat-quantum-1999] |
 | SkyWater-listed tool | "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12 to 5e16, tilt/twist"[^skw-01] |
 | SKY130 steps | 6 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-high-current-implanter-steps>` |
+
+:::{seealso}
+The physics of implantation is on the
+{ref}`category page <category-implant>`.
+:::
 
 ## What the machine class is and how it works
 
@@ -43,11 +44,14 @@ delay the degradation of tungsten components due to the halogen
 cycle";[^wiki-implant] Axcelis's current GSD Ovation adds a "Hydrogen
 Generator, Source Bushing Shields and Extended Life Extraction
 Electrodes" to cut "source operating costs especially with fluorinated
-species".[^axcelis-gsd-page] A beam of many milliamperes at a few keV
+species".[^axcelis-gsd-page]
+
+**A short beam path.** A beam of many milliamperes at a few keV
 spreads under its own space charge, so a short path helps: Applied
 Materials describes the Quantum's "extremely short source-to-wafer beam
 path, which minimizes beam 'blow up' and energy contamination".[^amat-quantum-1999]
-Species changes leave contamination in the beam line: in arsenic
+
+**Species cross-contamination.** Species changes leave contamination in the beam line: in arsenic
 implants run straight after boron processes, Xu and Lee found both
 energetic boron, whose energy was "directly related to the post-analyzer
 acceleration voltage", and surface boron "generated in the beamline by
@@ -59,22 +63,29 @@ The classic high-current end station scans the wafers, not the beam.
 Ryding's 1979 Nova patent describes it: the wafers sit on "a constantly
 spinning disk the axis of which is translated in the control direction",
 and "a detector, mounted behind the support, … periodically samples the
-beam through a moving slot in the support element", so that the
+beam through a moving slot in the support element".[^pat-disk-nova] The
 translation speed is adjusted to give "a uniform ion dosage … despite
-variations in beam intensity".[^pat-disk-nova] Axcelis's history of the
+variations in beam intensity".[^pat-disk-nova]
+
+**Axcelis's history of the slot.** Axcelis's history of the
 first NV-10-60 of 1979 names the same "dosimetry slot in the disk" and
 notes that "the velocity was proportional to 1/R"; the concept "was
 carried forward successfully for many generations of NV-10, GSD, HE,
-HE3, HC3, Ultra, and Paradigm".[^axcelis-history] In an Eaton patent
+HE3, HC3, Ultra, and Paradigm".[^axcelis-history]
+
+**Faraday cages and neutrals.** In an Eaton patent
 the detector behind the slot is a Faraday cage; the patent notes that
 "Faraday cages trap and measure the ion beam current while blocking the
 electrons which might accompany the ion beam" (electron suppression is
 described on the {ref}`medium-current page
-<machine-medium-current-implanter>`), but that neutralised ions, which
+<machine-medium-current-implanter>`).[^pat-dose-eaton] Neutralised ions,
+which
 still implant, are not counted: "Such Faraday cages do not measure
-neutral atoms in the ion beam". It therefore compensates the dose for
+neutral atoms in the ion beam".[^pat-dose-eaton] It therefore compensates the dose for
 the gas pressure in the beam path, noting that dose tolerances "are now
-at the 1% level in many applications".[^pat-dose-eaton] Kraupner et al.
+at the 1% level in many applications".[^pat-dose-eaton]
+
+**Pressure compensation.** Kraupner et al.
 discuss this pressure compensation on the Axcelis GSD, where
 "neutralization of ions by charge changing interactions with gas … may
 lead to wrong dose and bad uniformity".[^kraupner-2002]
@@ -84,17 +95,21 @@ lead to wrong dose and bad uniformity".[^kraupner-2002]
 "Implantation of semiconductor devices at very high beam currents can
 often lead to device damage due to charging."[^mehta-1996] Already in Ryding's patent the dose detector
 "is not affected by a shower of electrons upon the support that
-neutralizes charge on the workpieces".[^pat-disk-nova] Secondary-electron
+neutralizes charge on the workpieces".[^pat-disk-nova]
+
+**Flood guns.** Secondary-electron
 flood guns helped against positive charging, but "the risk of negative
 charging persists due to the inherent high energy electrons present
 with this approach", and
 "commercial high current implanters are now being increasingly
-configured with plasma based flood guns";[^mehta-1996] Eaton instead
+configured with plasma based flood guns".[^mehta-1996] Eaton instead
 introduced a "back biased Secondary Electron Flood (SEF)" in 1996, "to
 provide charge control with low risk of emitting high energy primary
 electrons".[^axcelis-history] On Varian's VIISion 80 and VIISion 200,
 "When implanting with high currents, a plasma flood gun system is used
-to prevent wafer charging problems".[^lundquist-1996] Resist changes the
+to prevent wafer charging problems".[^lundquist-1996]
+
+**Resist and heating.** Resist changes the
 charging: photoresist on a
 charge-collection electrode "increases positive charging
 dramatically",[^dixon-1996] and a wafer half covered with resist shows
@@ -118,28 +133,30 @@ al. present Varian's VIISta 80 for "Large Angle Tilt Implants (LATI,
 
 ## Representative 200 mm-era models
 
-* **Nova / Eaton / Axcelis.** The NV-10 series (the NV-10-60 of 1979 was
-  "the industry's first commercial high current implanter"), the NV-20
-  (1985), the NV-GSD (1990, ">600 units shipped in total"), the NV-GSD/200
-  (1993, "designed for low energy performance, quick species change and
-  high beam utilization"), the GSD/200E2 (1996) and, for 300 mm, the HC3
-  (2001).[^axcelis-history] The GSD line continues as the GSD Ovation,
-  whose GSD/E2 is "For general high current
-  applications".[^axcelis-gsd-page] Axcelis calls the GSD "the industry
-  benchmark for the longest manufactured and supported batch ion
-  implanter".[^axcelis-gsd]
-* **Applied Materials.** The xR80 and xR LEAP ("Nearly 100 Applied
-  Materials implant systems using the xR80(TM) and xR LEAP … technology
-  are currently in use", 1999), and the Quantum LEAP, Quantum 80 and
-  Quantum 120 announced in July 1999.[^amat-quantum-1999]
-* **Varian.** The VIISion 80 and VIISion 200 high-current systems, 80 keV
-  and 200 keV machines presented at IIT 1996 that "autotune and implant
-  high doses with high beam currents";[^lundquist-1996] Todorov et al.
-  studied the energy purity of a VIISion 80 PLUS as a function of,
-  among other things, its "disc tilt angle"; we read the disc as a batch
-  end station.[^todorov-1998] The VIISta 80 single-wafer high-current
-  implanter followed.[^mezack-2000] Varian Semiconductor was acquired by
-  Applied Materials in 2011.[^wiki-varian]
+:::{table} Representative high-current implanters of the 200 mm era (figures as each source gives them)
+:widths: 16 18 8 58
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Nova Associates | NV-10 series (NV-10-60) | 1979 | "the industry's first commercial high current implanter"[^axcelis-history] |
+| Nova Associates | NV-20 | 1985 | —[^axcelis-history] |
+| Eaton | NV-GSD | 1990 | ">600 units shipped in total"[^axcelis-history] |
+| Eaton | NV-GSD/200 | 1993 | "designed for low energy performance, quick species change and high beam utilization"[^axcelis-history] |
+| Eaton | GSD/200E2 | 1996 | —[^axcelis-history] |
+| Axcelis | HC3 | 2001 | for 300 mm[^axcelis-history] |
+| Axcelis | GSD Ovation (GSD/E2) | — | "For general high current applications"[^axcelis-gsd-page] |
+| Applied Materials | xR80, xR LEAP | 1999 | "Nearly 100 Applied Materials implant systems using the xR80(TM) and xR LEAP … technology are currently in use"[^amat-quantum-1999] |
+| Applied Materials | Quantum LEAP, Quantum 80, Quantum 120 | 1999 | announced in July[^amat-quantum-1999] |
+| Varian | VIISion 80 | 1996 | 80 keV, "autotune and implant high doses with high beam currents"[^lundquist-1996] |
+| Varian | VIISion 200 | 1996 | 200 keV, "autotune and implant high doses with high beam currents"[^lundquist-1996] |
+| Varian | VIISion 80 PLUS | — | studied by Todorov et al. as a function of, among other things, its "disc tilt angle"; we read the disc as a batch end station[^todorov-1998] |
+| Varian | VIISta 80 | — | single-wafer high-current implanter[^mezack-2000] |
+:::
+
+Axcelis calls the GSD "the industry
+benchmark for the longest manufactured and supported batch ion
+implanter".[^axcelis-gsd] Varian Semiconductor was acquired by
+Applied Materials in 2011.[^wiki-varian]
 
 Eaton spun its implanter business off as Axcelis Technologies in
 2000.[^wiki-axcelis] The {ref}`category page <category-implant>` lists
@@ -162,12 +179,14 @@ implanters:[^skw-01]
 The {ref}`machines index <machines-index>` places the "Hi dose" entry in
 the high-current class and the "High current/energy" entry, the only
 listed tool that reaches MeV energies, in the
-{ref}`high-energy class <machine-high-energy-implanter>`; this page
+{ref}`high-energy class <machine-high-energy-implanter>`. This page
 follows it. Read term by term, the "Hi dose" entry offers ¹¹B⁺, BF₂⁺,
 P⁺ and As⁺, energies of 2–180 keV, doses of 5 × 10¹²–5 × 10¹⁶ cm⁻² and
 tilt and twist, with no tilt range stated.[^skw-01] SkyWater does not
 say whether the two entries are two machines or two configurations, nor
-which GSD model either is. Axcelis describes the GSD as a batch
+which GSD model either is.
+
+Axcelis describes the GSD as a batch
 implanter,[^axcelis-gsd-page] so we read both entries as batch
 (spinning-disc) tools; SkyWater does not describe the end station.
 
@@ -180,8 +199,8 @@ caveats that apply to every listed tool are under
 this class the weak point is the split between the two GSD entries:
 placing the "Hi dose" entry here and the "High current/energy" entry in
 the high-energy class is the machines index's reading of their energy
-and dose ranges, and that the "Hi dose" tool is a batch machine is an
-inference from the model family.[^skw-01][^axcelis-gsd-page]
+and dose ranges.[^skw-01] That the "Hi dose" tool is a batch machine is an
+inference from the model family.[^axcelis-gsd-page]
 
 (machine-high-current-implanter-steps)=
 ### SKY130 steps assigned to this class
@@ -269,10 +288,12 @@ not public.
 
 * **Zero tilt for source/drain.** The PDK lists a "High current" implant
   angle of 0°,[^pdk-03] which the {ref}`PSDI <step-082>` and
-  {ref}`NSDI <step-086>` pages take as the tilt of their implants. A 7°
+  {ref}`NSDI <step-086>` pages take as the tilt of their implants.
+
+  A 7°
   source/drain implant is shadowed by the spacer, and Krieger et al.
   concluded that "0 degrees tilt should be used for both n⁻ (LDD) and n⁺
-  (source/drain) implants";[^krieger-1989] on a spinning disc, however,
+  (source/drain) implants".[^krieger-1989] On a spinning disc, however,
   the angle varies across the wafer and near 0° that variation changes
   channelling,[^jones-1996] which both step pages note. Yoneda and
   Niwayama measured drain-current asymmetry at 130 nm from this error
@@ -308,21 +329,19 @@ not public.
 
 ## Related pages
 
-* {ref}`category-implant` — implantation physics and the 25 implant
-  steps of SKY130.
-* {ref}`machine-medium-current-implanter` — the beam-line chain in
-  detail, and the 8250 entry.
-* {ref}`machine-high-energy-implanter` — the other GSD entry.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — dopant gases, ion-source parts and their
-  hazards.
-* {ref}`category-strip` — removal of the crusted resist after high-dose
-  implants.
-* {ref}`material-substrates` — monitor wafers for dose and uniformity.
-* {ref}`material-hardware-consumables` — exhaust abatement.
-* {ref}`material-dopant-sources` — dopant gases, solid sources,
-  sub-atmospheric packages and ion-source parts.
+* **Category.** {ref}`category-implant` — implantation physics and the
+  25 implant steps of SKY130. {ref}`category-strip` — removal of the
+  crusted resist after high-dose implants.
+* **Machines.** {ref}`machine-medium-current-implanter` — the beam-line
+  chain in detail, and the 8250 entry. {ref}`machine-high-energy-implanter`
+  — the other GSD entry.
+* **Materials.** {ref}`material-substrates` — monitor wafers for dose
+  and uniformity. {ref}`material-hardware-consumables` — exhaust
+  abatement. {ref}`material-dopant-sources` — dopant gases, solid
+  sources, sub-atmospheric packages and ion-source parts.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  dopant gases, ion-source parts and their hazards.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
