@@ -20,9 +20,7 @@ step, {ref}`ONO <step-040>`. The resist patterned at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
 {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now serves
 a third time, as the mask for an oxide etch that we infer to be wet: a
-plasma would damage the silicon, and the Cypress patent, which may still
-be in force, uses a wet chemistry of its own (collapsed note below).
-Inside each window the oxide —
+plasma would damage the silicon. Inside each window the oxide —
 the pad oxide, we infer — is dissolved in dilute hydrofluoric acid or
 buffered HF down to the silicon; outside the windows the resist keeps
 the oxide intact. The patent's own chemistries, its pad-oxide thickness
@@ -127,7 +125,8 @@ fab (SKY130's recipe is not public):
    surfactant-containing BOE in a wet bench or single-wafer spray tool.
    A 6:1 BOE etches thermal oxide at "approximately 2 nanometres per
    second at 25 degrees Celsius"[^wiki-boe] — far too fast to control
-   for a 10–20 nm film — so more dilute chemistries with rates of
+   for a pad oxide of the order of 10–20 nm (the era-typical range on
+   {ref}`BOX <step-002>`) — so more dilute chemistries with rates of
    typically a few nanometres per minute are used;[^kikuyama-1994] the
    etch rate scales with the HF and HF₂⁻ concentrations,[^judge-1971]
    and at very low concentrations the dissociation state of the acid
