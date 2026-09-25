@@ -806,6 +806,27 @@ def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | N
     return top
 
 
+def _visible_run(xs: XSection, ov: dict, i: int) -> tuple[float, float] | None:
+    """The longest stretch of column i in which the overlay is what is painted on top: a
+    later (higher-z) overlay over part of it hides that part."""
+    band = xs.overlay_band(ov, i)
+    if not band:
+        return None
+    ys = [y for y in _frange(band[0], band[1], 0.5) if _visible(xs, i, y, set()) == ov["id"]]
+    if not ys:
+        return None
+    runs, cur = [], [ys[0], ys[0]]
+    for y in ys[1:]:
+        if y - cur[1] <= 0.51:
+            cur[1] = y
+        else:
+            runs.append(cur)
+            cur = [y, y]
+    runs.append(cur)
+    lo, hi = max(runs, key=lambda r: r[1] - r[0])
+    return (lo, hi) if hi - lo >= 1.0 else None
+
+
 def overlay_anchor(xs: XSection, ov: dict, floor_y: float | None = None):
     cols = xs.overlay_columns(ov)
     i0, i1 = xs.runs(cols)[-1]
@@ -813,15 +834,30 @@ def overlay_anchor(xs: XSection, ov: dict, floor_y: float | None = None):
     ir = xs.idx(xs.x(i1) - inset)
     if ov.get("anchor_x") is not None:
         ir = max(i0, min(i1, xs.idx(float(ov["anchor_x"]))))
+    x_min = xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2)
     lo, hi = xs.overlay_band(ov, ir)
+    vis = _visible_run(xs, ov, ir)
+    if vis is None or vis[1] - vis[0] < min(6.0, (hi - lo) * 0.8):
+        # Partly painted over: take the column, nearest the right-hand end, where the most
+        # of the overlay shows, and keep the dot there (no stagger into the covered part).
+        best = None
+        for j in sorted(cols, key=lambda c: -c):
+            v = _visible_run(xs, ov, j)
+            if v and (best is None or v[1] - v[0] > best[1][1] - best[1][0] + 1.0):
+                best = (j, v)
+        if best:
+            ir, vis = best
+            lo, hi = vis
+            x_min = xs.x(ir)
+    elif vis:
+        lo, hi = vis
     pad = 3.5 if hi - lo > 9 else (hi - lo) / 2
     if floor_y is not None:
         lo = max(lo, floor_y - pad)
     if ov.get("anchor_y") is not None:      # a thin band: keep the leader clear of the film above
         ya = max(lo + pad, min(hi - pad, float(ov["anchor_y"])))
-        return ("right", xs.x(ir), ya, ya, 0, xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2))
-    return ("right", xs.x(ir), min(lo + pad, hi - pad), hi - pad, 0,
-            xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2))
+        return ("right", xs.x(ir), ya, ya, 0, x_min)
+    return ("right", xs.x(ir), min(lo + pad, hi - pad), hi - pad, 0, x_min)
 
 
 def _frange(a: float, b: float, step: float) -> list[float]:
@@ -1313,6 +1349,11 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             errs.append("crop_depth belongs to the figure, not to a panel; move it up one level")
         st, st_step = state(p["state_after"])
         st = view(st)
+        # A hidden overlay is not drawn, so nothing may be anchored around it either.
+        hidden_ov = set(p.get("hide_layers", []))
+        if any(ov["id"] in hidden_ov for ov in st.overlays):
+            st = st.clone()
+            st.overlays = [ov for ov in st.overlays if ov["id"] not in hidden_ov]
         ions = st.ions if p.get("show_ions", True) and st.ions else []
         # ---- ion beam: evenly spaced arrows sharing one tail height, so it reads as a beam
         ion_xs: list[float] = []
@@ -2094,6 +2135,29 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 errs.append(f"the anchors of {oa!r} and {ob!r} are "
                             f"{math.hypot(ax - bx, ay - by):.1f} u apart; "
                             "stagger one of them inside its own layer")
+    # 15b: a label's dot must sit on the material it names, as a reader sees it: the last
+    # (top-most) polygon painted at the dot, inside the dot's own drawing, faded ghosts aside.
+    painted = []
+    for grp in root.iter("{http://www.w3.org/2000/svg}g"):
+        if "drawing" not in (grp.get("class") or "").split() or not grp.get("data-rect"):
+            continue
+        gx, gy, gw, gh = (float(v) for v in grp.get("data-rect").split(","))
+        for pg in grp.iter("{http://www.w3.org/2000/svg}polygon"):
+            cls = (pg.get("class") or "").split()
+            if "mat" in cls and "faded" not in cls and pg.get("data-layer"):
+                pts = [tuple(float(v) for v in q.split(",")) for q in pg.get("points").split()]
+                painted.append((pg.get("data-layer"), pts, (gx, gy, gx + gw, gy + gh)))
+    names = {lay for lay, _p, _r in painted}
+    for owner, cx, cy in dots:
+        if owner not in names:
+            continue
+        top = None
+        for lay, pts, (x0, y0, x1, y1) in painted:
+            if x0 <= cx <= x1 and y0 <= cy <= y1 and _point_in((cx, cy), pts):
+                top = lay
+        if top is not None and top != owner:
+            errs.append(f"the top-most material painted at the dot of {owner!r} is {top!r}; "
+                        "the dot names what a reader sees there")
     # 16: an implant label may never be drawn over the material that blocks the implant.
     # A material polygon is seen only inside the clip rectangle of its drawing (the substrate
     # runs on below the crop), so a point counts as inside it only within that rectangle.
@@ -3442,6 +3506,28 @@ def selftest() -> int:
          f'<desc>d</desc><text x="12" y="40" class="t-label-note">{NOT_TO_SCALE}</text></svg>',
          "without a panel title"),
     ]
+    hdr = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} 400" data-kind="chain"><title>t</title>'
+           f'<desc>d</desc>')
+    svg_cases += [
+        ("a dot on the material painted over the one it names",
+         hdr + '<g class="drawing" data-rect="12,20,268,100">'
+         '<polygon class="mat m-implant" data-layer="halo" points="20,40 200,40 200,80 20,80"/>'
+         '<polygon class="mat m-tip-n" data-layer="tipn" points="20,40 200,40 200,60 20,60"/></g>'
+         '<circle class="dot" data-owner="halo" cx="100" cy="50" r="1.9"/></svg>',
+         "the top-most material painted at the dot of 'halo' is 'tipn'"),
+        ("an ion label's leader through a material inside its drawing",
+         hdr + '<g class="drawing" data-rect="12,20,268,100">'
+         '<polygon class="mat m-si-sub" data-layer="sub" points="12,60 280,60 280,380 12,380"/></g>'
+         '<path class="leader" data-owner="ions" d="M150 90V70"/></svg>',
+         "the ion-beam label's leader runs through"),
+    ]
+    # ... but not through the part of a polygon that runs on below its drawing's clip
+    clipped = (hdr + '<g class="drawing" data-rect="12,20,268,100">'
+               '<polygon class="mat m-si-sub" data-layer="sub" points="12,60 280,60 280,380 12,380"/></g>'
+               '<path class="leader" data-owner="ions" d="M150 300V250"/></svg>')
+    if any("ion-beam label's leader runs through" in e for e in lint_svg_text(clipped)):
+        print("SELFTEST FAIL: rule 16 counts a polygon outside its drawing's clip rectangle")
+        bad += 1
     for name, raw, needle in svg_cases:
         errs = lint_svg_text(raw)
         if not any(needle in e for e in errs):
@@ -3468,6 +3554,23 @@ def selftest() -> int:
         tail = [float(v) for v in re.findall(r"-?[\d.]+", shaft)][:2]
         if not (cy < hp[1] and (tail[0] - hp[0]) * (cx - hp[0]) + (tail[1] - hp[1]) * (cy - hp[1]) > 0):
             print(f"SELFTEST FAIL: the ion arrowhead at {tilt_deg} degrees points back up the beam")
+            bad += 1
+    # a close-up moves a panel's positions into its own coordinates
+    zp = _zoom_panel({"highlight": {"where": [[100, 150]]}, "callouts": [{"x": 120, "y": "top@120"}],
+                      "dims": [{"x": 110, "y0": 0, "y1": 10, "witness": [[100, 130]]}]}, 100, 2.0)
+    if (zp["highlight"]["where"] != [[0.0, 100.0]] or zp["callouts"][0]["x"] != 40.0
+            or zp["callouts"][0]["y"] != "top@40.00" or zp["dims"][0]["y1"] != 20.0
+            or zp["dims"][0]["witness"] != [[0.0, 60.0]]):
+        print(f"SELFTEST FAIL: _zoom_panel moved the panel's positions wrongly: {zp}")
+        bad += 1
+    # a close-up window has to be a sensible range
+    for rng in ([100, 120], [200, 100], [0, 400], "wide"):
+        e: list[str] = []
+        sp = _spec_ok()
+        sp["close_up"] = rng
+        build_xsection(sp, copy.deepcopy(_SERIES_OK), e)
+        if not any("close_up must be" in x for x in e):
+            print(f"SELFTEST FAIL: close_up {rng!r} was accepted")
             bad += 1
     # a thin patterned film follows the surface only inside its ranges
     xs1 = XSection({"material": "si-sub", "depth": 40})

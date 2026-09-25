@@ -120,11 +120,11 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-xhatch)" points="9.00,461.00 92.25,461.00 92.25,470.00 9.00,470.00"/>
 <polyline class="hl" points="12.00,353.00 280.00,353.00"/>
 </g>
-<text x="328.0" y="492.8" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 487.9H285.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="487.9" r="1.9"/>
-<text x="328.0" y="468.8" class="t-label-title" data-owner="tipn">n-type tip</text>
-<path class="leader" data-owner="tipn" d="M276.0 464.0H291.0V463.9H324.0"/>
+<text x="328.0" y="492.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 488.0H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="488.0" r="1.9"/>
+<text x="328.0" y="468.9" class="t-label-title" data-owner="tipn">n-type tip</text>
+<path class="leader" data-owner="tipn" d="M276.0 464.0H291.0H324.0"/>
 <circle class="dot" data-owner="tipn" cx="276.0" cy="464.0" r="1.9"/>
 <text x="328.0" y="370.4" class="t-label-title" data-owner="ldntmres">Photoresist</text>
 <text x="328.0" y="386.4" class="t-label-note muted" data-owner="ldntmres">LDNTM, step 071;</text>

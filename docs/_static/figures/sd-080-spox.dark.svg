@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 634" width="480" height="634" role="img" data-kind="xsection" data-theme="dark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 643" width="480" height="643" role="img" data-kind="xsection" data-theme="dark">
 <title>Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands with a nitride block against each sidewall, on a thin oxide over doped silicon. After it a thin new film of even thickness covers everything: the flat oxide, the outer face and top of the nitride block and the top of the gate.</title>
 <desc>Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands with a nitride block against each sidewall, on a thin oxide over doped silicon. After it a thin new film of even thickness covers everything: the flat oxide, the outer face and top of the nitride block and the top of the gate.</desc>
 <style>
@@ -21,7 +21,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="634"/>
+<rect class="ground" x="0" y="0" width="480" height="643"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the nitride spacer on the gate edge (step 079)</text>
 <clipPath id="clip1"><rect x="12" y="38.0" width="268" height="216.3"/></clipPath>
 <g class="drawing" data-rect="12,38.0,268,216.3" clip-path="url(#clip1)">
@@ -96,17 +96,16 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-xhatch)" points="249.75,547.57 283.00,547.57 283.00,570.21 249.75,570.21"/>
 <polyline class="hl" points="12.00,487.95 89.00,487.95 89.50,484.36 91.00,439.36 91.50,431.33 109.00,431.33 109.50,363.38 280.00,363.38"/>
 </g>
-<text x="328.0" y="580.6" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="halo" d="M276.5 575.7L280.0 575.7"/>
-<path class="leader" data-owner="sub" d="M276.0 575.7H285.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="575.7" r="1.9"/>
+<text x="328.0" y="594.5" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 589.6H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="589.6" r="1.9"/>
 <text x="328.0" y="487.6" class="t-label-title" data-owner="polyn">n-type gate film</text>
 <path class="halo" d="M251.0 482.7L280.0 482.7"/>
 <path class="leader" data-owner="polyn" d="M246.5 482.7H297.0H324.0"/>
 <circle class="dot" data-owner="polyn" cx="246.5" cy="482.7" r="1.9"/>
-<text x="328.0" y="556.6" class="t-label-title" data-owner="tipn">n-type tip</text>
-<path class="leader" data-owner="tipn" d="M276.0 551.7H291.0H324.0"/>
-<circle class="dot" data-owner="tipn" cx="276.0" cy="551.7" r="1.9"/>
+<text x="328.0" y="562.6" class="t-label-title" data-owner="tipn">n-type tip</text>
+<path class="leader" data-owner="tipn" d="M276.0 557.7H291.0H324.0"/>
+<circle class="dot" data-owner="tipn" cx="276.0" cy="557.7" r="1.9"/>
 <text x="328.0" y="463.6" class="t-label-title" data-owner="spnit">Spacer nitride</text>
 <path class="leader" data-owner="spnit" d="M276.0 458.7H303.0H324.0"/>
 <circle class="dot" data-owner="spnit" cx="276.0" cy="458.7" r="1.9"/>
@@ -117,5 +116,5 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="439.6" class="t-label-note tag" data-owner="spox">inferred</text>
 <path class="leader" data-owner="spox" d="M276.0 370.8H309.0V370.7H324.0"/>
 <circle class="dot" data-owner="spox" cx="276.0" cy="370.8" r="1.9"/>
-<text x="12.0" y="621.6" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="12.0" y="630.6" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>
