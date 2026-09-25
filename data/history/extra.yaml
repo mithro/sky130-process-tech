@@ -601,6 +601,11 @@ records:
     location: section "SONOS Integration"
   - text: This technology is qualified in Cypress manufacturing plants and in a foundry.
     location: section "Cypress SONOS Technology"
+  - text: Conventional floating gate technology was used for embedded solutions in the older technologies
+      (0.25 &micro;m and 0.18 &micro;m) but scaling it down to 130 nm and beyond has proved to be difficult
+      and expensive.
+    location: section "SONOS or Charge Trap Memory Technology" (the cached text keeps the page's "&micro;"
+      entity for the micro sign)
   claims:
   - subject: SONOS module
     attribute: extra masks
@@ -679,6 +684,9 @@ records:
   quotes:
   - text: All high voltage devices use 110A gate oxide thickness just like low voltage (0 to Vcc) devices.
     location: introduction
+  - text: In order to preserve the reliability performance of the VHV FETs the Field Oxide (STI) length may
+      not be changed from the values below
+    location: section on very-high-voltage devices
   claims:
   - subject: SKY130 HV devices
     attribute: gate oxide

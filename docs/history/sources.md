@@ -153,6 +153,14 @@ Used on {ref}`history-technologies`.
 **PAT-US4764248** — A. Bhattacherjee et al. (Cypress Semiconductor), *Rapid thermal nitridized oxide LOCOS process*, US 4,764,248 A, priority 1987-04-13. <https://patents.google.com/patent/US4764248A/en>
 Used on {ref}`history-technologies`.
 
+(hsrc-pat-us5648669)=
+**PAT-US5648669** — R. B. Sethi et al. (Cypress Semiconductor), *High speed flash memory cell structure and method*, US 5,648,669 A, priority 1995-05-26. <https://patents.google.com/patent/US5648669A/en>
+Used on {ref}`history-sonos-s4`.
+
+(hsrc-pat-us5844271)=
+**PAT-US5844271** — R. Sethi et al. (Cypress Semiconductor), *Single layer polycrystalline silicon split-gate EEPROM cell having a buried control gate*, US 5,844,271 A, priority 1995-08-21. <https://patents.google.com/patent/US5844271A/en>
+Used on {ref}`history-sonos-s4`.
+
 (hsrc-pat-us6033991)=
 **PAT-US6033991** — K. Ramkumar et al. (Cypress Semiconductor), *Isolation scheme based on recessed LOCOS using a sloped Si etch and dry field oxidation*, US 6,033,991 A, priority 1997-09-29. <https://patents.google.com/patent/US6033991A/en>
 Used on {ref}`history-technologies`.
@@ -160,6 +168,10 @@ Used on {ref}`history-technologies`.
 (hsrc-pat-us6091129)=
 **PAT-US6091129** — J. M. Cleeves (Cypress Semiconductor), *Self-aligned trench isolated structure*, US 6,091,129 A, priority 1996-06-19. <https://patents.google.com/patent/US6091129A/en>
 Used on {ref}`history-technologies`.
+
+(hsrc-pat-us6207991)=
+**PAT-US6207991** — I. Rahim (Cypress Semiconductor), *Integrated non-volatile and CMOS memories having substantially the same thickness gates and methods of forming the same*, US 6,207,991 B1, priority 1998-03-20. <https://patents.google.com/patent/US6207991B1/en>
+Used on {ref}`history-sonos-s4`.
 
 (hsrc-pat-us6677213)=
 **PAT-US6677213** — K. Ramkumar and F. B. Jenne (Cypress Semiconductor), *SONOS structure including a deuterated oxide-silicon interface and method for making the same*, US 6,677,213 B1, priority 2002-03-08. <https://patents.google.com/patent/US6677213B1/en>
@@ -516,6 +528,10 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 (hsrc-tenq-2017q1)=
 **TENQ-2017Q1** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed 2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>
 Used on {ref}`history-fabs`, {ref}`history-s8-lineage`.
+
+(hsrc-yang-2000)=
+**YANG-2000** — Y. Yang and M. H. White (Cypress Semiconductor and Lehigh University), *Charge retention of scaled SONOS nonvolatile memory devices at elevated temperatures*, Solid-State Electronics 44 (6), pp. 949–958, 2000, DOI 10.1016/S0038-1101(00)00012-5. <https://doi.org/10.1016/s0038-1101(00)00012-5>
+Used on {ref}`history-sonos-s4`.
 
 :::{dropdown} Patents shown as in force or of unknown status — open to read
 

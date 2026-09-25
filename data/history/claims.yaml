@@ -437,7 +437,7 @@ claims:
   - {id: cyhist-corp-2005-ar-grace-flexmfg, origin: cypress}
 - id: grace-sonos-035-2006
   page: docs/history/fabs.md
-  anchor: Cypress completed the transfer of its "0.35-micron SONOS process"
+  anchor: Cypress completed the transfer of its "[0].35-micron SONOS process"
   grade: attributed
   attribution: (Cypress's reports)
   footnotes: [ar-fy2006, tenk-fy2007]
@@ -1221,6 +1221,36 @@ claims:
   - {id: GP29778448, origin: patent-record}
   - {id: GP35405131, origin: patent-record}
 
+- id: s4-floating-gate-before
+  page: docs/history/sonos-s4.md
+  anchor: 'conventional floating gate technology'
+  grade: single-source
+  footnotes: [chipest-2008]
+  sources:
+  - {id: cyx-chipestimate-sonos-2008, origin: cypress}
+- id: s4-fg-patents-1995
+  page: docs/history/sonos-s4.md
+  anchor: 'fast, fieldless flash memory cell'
+  grade: attributed
+  attribution: (patent records)
+  footnotes: [pat-us5648669, pat-us5844271]
+  sources:
+  - {id: pat-us5648669a-flash-cell-1995, origin: patent-record}
+  - {id: pat-us5844271a-splitgate-eeprom-1995, origin: patent-record}
+- id: s4-nv-cmos-1998
+  page: docs/history/sonos-s4.md
+  anchor: 'on a single die or chip'
+  grade: single-source
+  footnotes: [pat-us6207991]
+  sources:
+  - {id: pat-us6207991b1-integrated-nv-cmos-1998, origin: patent-record}
+- id: s4-sonos-retention-2000
+  page: docs/history/sonos-s4.md
+  anchor: 'A 2000 paper by Cypress and Lehigh'
+  grade: single-source
+  footnotes: [yang-2000]
+  sources:
+  - {id: paper-yang-white-2000-sonos-retention, origin: cypress}
 # ---- docs/history/s8-lineage.md ---------------------------------------------
 - id: s8-013-sonos
   page: docs/history/s8-lineage.md
@@ -1348,7 +1378,7 @@ claims:
   - {id: qtp-061806, origin: cypress}
 - id: s8-name-skywater
   page: docs/history/s8-lineage.md
-  anchor: stood for the "8th generation"
+  anchor: stood for the '8th generation'
   grade: single-source
   footnotes: [pdk-previous]
   sources:

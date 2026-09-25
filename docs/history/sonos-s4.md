@@ -112,6 +112,24 @@ The S4AD-5 reports name these products (Cypress's reports):[^qtp-021507][^qtp-04
 
 Infineon's history of PSoC says "PSoC™ 1, used the SONOS process technology", which agrees with the reports.[^psoc-history][^qtp-062509]
 
+## Non-volatile memory before SONOS
+
+Cypress's first memories were EPROM-based (see {ref}`history-tech-early`). A 2008 Cypress article says
+"conventional floating gate technology" served its embedded memories at 0.25 µm and 0.18 µm, and that
+scaling it to 130 nm proved "difficult and expensive" (single source).[^chipest-2008]
+
+Cypress's patents of the mid-1990s describe floating-gate cells. A patent shows what Cypress worked on,
+not what a production process used.
+
+* **1995.** A "fast, fieldless flash memory cell" and a single-poly split-gate EEPROM cell
+  (patent records).[^pat-us5648669][^pat-us5844271]
+* **1998.** A method to form non-volatile memory and a CMOS device "on a single die or chip" with gates
+  of the same thickness (single source).[^pat-us6207991]
+
+The first Cypress SONOS cell patent found was filed in 1999 (below). A 2000 paper by Cypress and Lehigh
+University authors studies the "charge retention of scaled SONOS nonvolatile memory devices at elevated
+temperatures" (single source).[^yang-2000]
+
 ## The patents
 
 Cypress patented its SONOS dielectrics in the early 2000s. The patent records show these families as expired:
@@ -219,3 +237,14 @@ details, and what changed, are on {ref}`history-s8-lineage`.
     <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>
 [^qtp-151005]: Cypress Semiconductor, Product Qualification Report QTP 151005: *PSoC RADON Device Family, S4AD-5 Technology, HHGrace FAB5*, October 2015.
     <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-151005-psoc24x94-hhgrace-productqualificationreport-en.pdf>
+[^pat-us5648669]: R. B. Sethi et al. (Cypress Semiconductor), *High speed flash memory cell structure
+    and method*, US 5,648,669 A, priority 1995-05-26. <https://patents.google.com/patent/US5648669A/en>
+[^pat-us5844271]: R. Sethi et al. (Cypress Semiconductor), *Single layer polycrystalline silicon
+    split-gate EEPROM cell having a buried control gate*, US 5,844,271 A, priority 1995-08-21.
+    <https://patents.google.com/patent/US5844271A/en>
+[^pat-us6207991]: I. Rahim (Cypress Semiconductor), *Integrated non-volatile and CMOS memories having
+    substantially the same thickness gates and methods of forming the same*, US 6,207,991 B1, priority
+    1998-03-20. <https://patents.google.com/patent/US6207991B1/en>
+[^yang-2000]: Y. Yang and M. H. White (Cypress Semiconductor and Lehigh University), *Charge retention
+    of scaled SONOS nonvolatile memory devices at elevated temperatures*, Solid-State Electronics 44 (6),
+    pp. 949–958, 2000, DOI 10.1016/S0038-1101(00)00012-5. <https://doi.org/10.1016/s0038-1101(00)00012-5>
