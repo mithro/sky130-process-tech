@@ -10,11 +10,27 @@
 | **Previous step** | {ref}`ONO <step-040>` |
 | **Next step** | {ref}`ONOME <step-042>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** prints resist islands over the memory transistors so the
+  ONO stack can be etched away everywhere else.
+* **Why:** logic, 5 V and high-voltage transistors must not keep an
+  ONO stack under their gate oxide.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** the mask's oversize margin over `tunm`, and the
+  reticle tone (→ Open questions).
+:::
+
 ## What this step is
 
 `ONOM` is the second of the three SONOS-specific masks. The
 oxide–nitride–oxide stack grown at {ref}`ONO <step-040>` covers the
-whole wafer; this lithography step prints resist islands over the memory
+whole wafer.
+
+This lithography step prints resist islands over the memory
 transistors and leaves the stack exposed everywhere else, so that
 {ref}`ONOME <step-042>` can etch it away from all the logic, 5 V and
 high-voltage transistors before their gate oxides are grown. After the
@@ -33,7 +49,9 @@ The PDK lists "ONO Mask, ONOM" as used in SKY130.[^pdk-05]
 `gds_layers.csv` lists `conom` both as a mask layer (88:0, "ONO Mask")
 and with a drawing purpose (87:44) whose description cell is empty,
 and the periphery rules contain no `onom` rule at all, so designers
-are given nothing to draw for it.[^pdk-06][^pdk-periph] We infer that
+are given nothing to draw for it.[^pdk-06][^pdk-periph]
+
+We infer that
 the mask is generated — most simply, by oversizing `tunm` (80:20) — so
 that the ONO island encloses the tunnel window; the generator's inputs
 and the oversize value are not published. That the
@@ -50,9 +68,11 @@ sacrificial oxide layer 234, and the sacrificial oxide, cap layer 232,
 and the charge-trapping layer 230 etched or patterned to form a gate
 stack 236 overlying the channel 224 of the NVM transistor and to remove
 the sacrificial oxide, cap layer, and the charge trapping layers 230
-from the second region 208 of the substrate 204"; "The patterned mask
+from the second region 208 of the substrate 204".[^pat-04] "The patterned mask
 layer can include a photoresist layer patterned using standard
-lithographic techniques".[^pat-04] In another, "Conventional lithography
+lithographic techniques".[^pat-04]
+
+In another, "Conventional lithography
 and etching techniques may be employed to remove the charge trapping
 dielectric layers from other regions of the substrate, such as the HV
 MOS region 350 and MOS region 370".[^pat-03]
@@ -62,52 +82,67 @@ MOS region 350 and MOS region 370".[^pat-03]
 
 `ONOM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *etch mask* type, printed on a dielectric stack rather than
-on resist-friendly oxide alone: the top surface is the {term}`blocking oxide`
-(or a sacrificial oxide cap over it, as in the Cypress flow described in
-the collapsed note above), which behaves like any
-other oxide for coating purposes. Its features are the tunnel windows
-plus an overlap — 0.410 µm windows[^pdk-periph] grown by a margin that
-is not public — so it is a relaxed layer, and we infer an i-line
-exposure as for {ref}`TUNM <step-035>`. Its critical {term}`overlay` is, we
-infer, to the tunnel mask rather than to active, which is unusual: most
-layers align to the {term}`STI` pattern or to poly.
+on resist-friendly oxide alone.
+
+**Specific to this step:**
+
+* The top surface is the {term}`blocking oxide`
+  (or a sacrificial oxide cap over it, as in the Cypress flow described in
+  the collapsed note above), which behaves like any
+  other oxide for coating purposes.
+* Its features are the tunnel windows
+  plus an overlap — 0.410 µm windows[^pdk-periph] grown by a margin that
+  is not public — so it is a relaxed layer, and we infer an i-line
+  exposure as for {ref}`TUNM <step-035>`.
+* Its critical {term}`overlay` is, we
+  infer, to the tunnel mask rather than to active, which is unusual: most
+  layers align to the {term}`STI` pattern or to poly.
 
 ## Why this step exists
 
-The logic transistors must not have an ONO stack under their gates —
-a nitride that traps charge is the last thing a 1.8 V or 5 V MOSFET
-wants as a gate dielectric — and their gate oxides are grown by
-thermal oxidation of bare silicon, which the stack would block. The
+The logic transistors must not have an ONO stack under their gates.
+A nitride that traps charge is the last thing a 1.8 V or 5 V MOSFET
+wants as a gate dielectric. Their gate oxides are grown by
+thermal oxidation of bare silicon, which the stack would block.
+
+The
 stack therefore has to be removed everywhere except the cells, and it
 has to be removed *before* the gate oxidations
 ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`), which is where
 the step list puts it, `ONO` being step 40 and `GOX100`
-step 43;[^steps-sheet] a Cypress patent that may still be in force bears
-on the same point, in the collapsed note below this section. A 2011
+step 43.[^steps-sheet] A Cypress patent that may still be in force bears
+on the same point, in the collapsed note below this section.
+
+A 2011
 Cypress/UMC
 press release puts the cost of the module in the 65 nm S65 process at
-"three additional mask layers" (it gives no count for S8),[^cyp-22] and
+"three additional mask layers"; it gives no count for S8.[^cyp-22]
 Cypress's 2020 article credits {term}`SONOS` with "the
 simplicity of its integration (fewer extra lithography
-masks)"[^cyp-25] — `ONOM` is the mask that pays for keeping the ONO
+masks)".[^cyp-25] `ONOM` is the mask that pays for keeping the ONO
 out of the logic.
 
 Two geometric facts about the island matter. It must enclose the
 tunnel window with margin, because the silicon inside the window has
-only the {term}`tunnel oxide` on it: if the ONO etch reached it, the etch
+only the {term}`tunnel oxide` on it.
+
+If the ONO etch reached it, the etch
 would land on a tunnel oxide only a few nanometres thick (the thickness
-is in the collapsed note below) and then on the channel. And the
+is in the collapsed note below) and then on the channel.
+
+The
 island edge is where the logic gate oxide will later grow up against
 the nitride sidewall, so the edge must lie on field oxide or on
 silicon that becomes part of the select transistor's structure, never
-inside a logic channel — which the "(poly and diff) may not straddle
-tunm" rule (tunm.5)[^pdk-periph] already guarantees for the window.
+inside a logic channel. The "(poly and diff) may not straddle
+tunm" rule (tunm.5)[^pdk-periph] already guarantees this for the window.
 The Cypress integration patent makes the same point about its own
 window, in the collapsed note below.
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 The ONO is formed and patterned, then "the logic MOS gate insulator" is
-formed by a thermal process that "additionally" reoxidises the ONO; the
+formed by a thermal process that "additionally" reoxidises the ONO.
+The
 patent notes for its window that "the dimensions and alignment of window
 305 and ONO charge trapping dielectric stack 306 are
 important".[^pat-03] The tunnel oxide inside the window is
@@ -120,8 +155,8 @@ transistor.
 
 ## How it is typically performed
 
-An industry-generic etch-mask lithography sequence for a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic etch-mask lithography sequence for a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Surface.** The wafer's top surface is the blocking oxide of the
    ONO stack, or a thin sacrificial oxide over it whose thickness in one
@@ -138,9 +173,11 @@ An industry-generic etch-mask lithography sequence for a 200 mm,
 4. **Exposure.** Through the ONO {term}`reticle` on an i-line {term}`stepper` (our
    inference from feature size, as on {ref}`TUNM <step-035>`; ASML
    describes older exposure tools that "migrate to the lithography of
-   choice for less critical layers"[^asml-30]). Overlay would be measured to the `TUNM` layer,
-   because the island-to-window enclosure is the quantity that matters
-   — or, equally possible and more usual in a 200 mm fab, both layers
+   choice for less critical layers"[^asml-30]).
+
+   Overlay would be measured to the `TUNM` layer,
+   because the island-to-window enclosure is the quantity that matters.
+   Or, equally possible and more usual in a 200 mm fab, both layers
    align to the same reference marks so that their enclosure is
    controlled by the tool's alignment tree rather than by a direct
    `ONOM`-to-`TUNM` measurement. Neither is public.
@@ -174,13 +211,15 @@ etch).
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / scanner.**[^skw-01] Strength: **strong** for
-  the tool class; **inference** for assigning `ONOM` to it.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
-  Strength: strong for existence.
-* **KLA 5200/5300/Archer overlay; AMAT Verity/VeraSEM CD.**[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / scanner**
+  - *SkyWater says:* lists it.[^skw-01]
+  - *Tool exists:* **strong** for the tool class.
+  - *Runs this step:* **inference**, for assigning `ONOM` to it.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **KLA 5200/5300/Archer overlay; AMAT Verity/VeraSEM CD**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -196,10 +235,10 @@ etch).
 * Previous: {ref}`ONO <step-040>` (the stack being masked).
 * Next: {ref}`ONOME <step-042>` (the etch); then the first gate
   oxidation {ref}`GOX100 <step-043>`.
-* The window the island must enclose: {ref}`TUNM <step-035>`.
-* The other SONOS masks: {ref}`TUNM <step-035>`,
+* Depends on: the window the island must enclose, {ref}`TUNM <step-035>`.
+* Same category: the other SONOS masks, {ref}`TUNM <step-035>`,
   {ref}`LDNTM <step-071>`.
-* Mask page: {ref}`ONOM <mask-onom>` — the mask's layers, plates,
+* Mask: {ref}`ONOM <mask-onom>` — the mask's layers, plates,
   renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
@@ -277,16 +316,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The derivation of the ONO mask from `tunm` (oversize value, any
-  merging inside the array) is not public.
-* Whether the ONO layer is printed on the i-line or {term}`DUV` tools is an
-  inference from feature size.
-* Whether an ARC is used under the ONO-mask resist, and if so which
-  kind, is an open question; this page describes no separate ARC etch
-  here; if one is used, its open is part of
+* **Mask derivation.** The derivation of the ONO mask from `tunm`
+  (oversize value, any merging inside the array) is not public.
+* **Exposure tool.** Whether the ONO layer is printed on the i-line or
+  {term}`DUV` tools is an inference from feature size.
+* **ARC use.** Whether an ARC is used under the ONO-mask resist, and
+  if so which kind, is an open question; this page describes no
+  separate ARC etch here.
+
+  If one is used, its open is part of
   {ref}`ONOME <step-042>`, as in the Cypress flow (collapsed notes
   above).
-* Reticle tone and the resist thickness for this layer are not public.
+* **Reticle and resist.** Reticle tone and the resist thickness for
+  this layer are not public.
 
 <!-- footnotes -->
 

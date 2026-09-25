@@ -45,6 +45,39 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 041-onom.md — done (3 hand-written in-force notes in the body plus their copies
+under References; content untouched, sentences split inside them under R-DROPDOWN
+rule 2 — inside the 037–044 in-force-sweep range)
+
+Rules applied: R-PARA/R-SENTENCE throughout (lead split at its stack/lithography seam;
+the PDK-evidence paragraph split in two at its lists/inference seam; R-CATEGORY on
+"Step category" — 24-word classification + `**Specific to this step:**` and 3 bullets;
+all three "Why this step exists" paragraphs split extensively at their em-dashes,
+colons and semicolons, always keeping the parenthetical-vs-em-dash count at 0–1 per
+sentence; R-HEDGE step 1; the Exposure item's "would be measured… or, equally
+possible…" sentence split at its "or" alternative), R-SENTENCE **inside two
+`{dropdown}` notes** (splitting only before/after complete quotations — one 65-word
+quotation was left whole since it is a single indivisible quoted clause with no
+internal sentence break, the same accepted-exception pattern as 037's `PTSI` page),
+R-TOOLS (3 "Strength:" bullets → SkyWater-says/Tool-exists/Runs-this-step form; no
+recap table), R-RELATED (`Previous:`, `Next:`, `Depends on:`, `Same category:`,
+`Mask:`, `Category page:`), R-OPENQ (bold labels on all four bullets, the ARC-use
+bullet split into lead + indented continuation), R-GLANCE (box inserted last; checked
+against `check_inforce.py` before commit, following 040's lesson — no in-force-patent
+figure went into it, since none of this page's public numbers come from an in-force
+note; "Public numbers" is "none published for SKY130").
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 6 → 1 (figure caption, off
+limits); list items > 60 words 1 → 0; sentences > 45 words 11 → 2 (the figure caption,
+plus the one accepted indivisible-quotation exception above).
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order --allow-regrouped --allow-dropdown-edits
+docs/steps/041-onom.md`: **0 undeclared differences**, no LOST in any category. All
+other checkers, `check_inforce.py` included, pass; `-W` build clean. Screenshots
+(desktop + 400 px) read cleanly top to bottom; both dropdowns collapsed and untouched.
+
+
 ### 040-ono.md — done (the densest page in the batch: 5 hand-written in-force notes in
 the body plus their copies under References; content untouched, sentences split
 inside them under R-DROPDOWN rule 2 — inside the 037–044 in-force-sweep range)
