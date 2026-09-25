@@ -14,9 +14,10 @@
 :class: at-a-glance
 
 * **Does:** implants the PMOS channel through the reused `NWM` resist,
-  right after the two N-well implants.
+  right after the two N-well implants, in the sequence this reference
+  describes.
 * **Why:** sets the PMOS threshold independently of the N-well's
-  buried profile.
+  buried profile (inference, from the arrangement described below).
 * **Public numbers:** measured standard-PMOS threshold magnitude
   1.065 V at 7/8 µm, 0.798 V at 7/0.15 µm (our
   extraction).[^raw-data-lv-mosfets]

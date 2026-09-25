@@ -13,11 +13,12 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** strips the thick N-well resist after three implants
-  (`NWI`, `NWI2`, `LVTPI`) and cleans the wafer for `HVTPM`.
+* **Does:** strips the thick resist that has masked three implants
+  (`NWI`, `NWI2`, `LVTPI`) — the N-well resist, we infer — and cleans
+  the wafer for `HVTPM`.
 * **Why:** residue would block the next implant (`PCHI`) and shift
-  its threshold; this is the hardest strip in the module because of
-  the resist's thickness and total absorbed dose.
+  its threshold; this is, we infer, the hardest strip in the module,
+  from the resist's thickness and total absorbed dose.
 * **Public numbers:** none published for SKY130.
 * **Likely SkyWater tool:** GaSonics PEP / Iridia RF microwave /
   Mattson Aspen II ashers — strong (existence); inference

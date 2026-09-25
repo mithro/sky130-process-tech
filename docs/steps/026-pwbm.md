@@ -13,8 +13,8 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** leaves resist over the N-wells and the special 20 V
-  regions, opening the rest of the wafer for the P-well implants.
+* **Does:** leaves resist, we infer, over the N-wells and the special
+  20 V regions, opening the rest of the wafer for the P-well implants.
 * **Why:** the P-well must be kept out of N-wells (where it would
   compensate the PMOS body) and out of 20 V regions that need no well
   or a custom one; a block mask does both in one lithography.

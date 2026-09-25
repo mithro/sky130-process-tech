@@ -13,8 +13,8 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** adds a shallow BF₂ (boron) dose through the same `HVTPM`
-  resist, right after `PCHI`.
+* **Does:** adds, on this reference's reading, a shallow BF₂ dose
+  through the same `HVTPM` resist, right after `PCHI`.
 * **Why:** boron is p-type and would normally lower |Vt|; its role
   here is one of three candidate profile-shaping mechanisms, none
   confirmed publicly.

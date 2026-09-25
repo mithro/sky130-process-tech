@@ -13,8 +13,9 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** adds a high-Vt channel dose through the `HVTPM` resist, on
-  top of the baseline PMOS implant.
+* **Does:** on this page's reading, adds a high-Vt channel dose
+  through the `HVTPM` resist, on top of the baseline PMOS implant
+  that, we infer, every N-well received.
 * **Why:** raises |Vt| for low-leakage PMOS; split into two implants
   (with `PNCHI`) to shape the channel profile without hurting
   mobility.

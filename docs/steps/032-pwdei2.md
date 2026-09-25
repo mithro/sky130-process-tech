@@ -13,12 +13,12 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** implants the second, lower-energy boron dose that completes
-  the two-member drift-well profile in the 20 V device regions opened
-  by `PWDEM`.
-* **Why:** a single implant cannot grade the drift-region doping the
-  way two implants at different energies can, and SKY130's 20 V devices
-  need that graded profile to fully deplete at rated voltage.
+* **Does:** a second boron implant through the `PWDEM` windows,
+  completing, we infer, a two-member drift-well profile.
+* **Why:** a single implant cannot grade a drift region the way two
+  implants at different energies can (generic RESURF/LDMOS practice);
+  SKY130's 20 V devices specify a "Longer drift region" than the
+  16 V ones, consistent with needing that grading.
 * **Public numbers:** SKY130's 20 V devices are specified with a
   "Longer drift region" than the 16 V ones and the same 110 Å gate
   oxide.[^pdk-07][^pdk-hv]
