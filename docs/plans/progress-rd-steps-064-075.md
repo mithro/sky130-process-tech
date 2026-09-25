@@ -33,6 +33,45 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
 * Checkers after each page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`,
   `gen_figures --check`; `-W` build; tiles at 1280 px and 400 px, read against the baseline.
 
+## Batch measurement (§1 caps, open text; figure captions excluded)
+
+Counted with `tmp/readability/caps.py`: `{figure}` blocks, `{dropdown}` bodies (in-force notes may not be
+edited), the generated index-links block and `## References` are **excluded**. Before = `main` at
+`7fea7c90`.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 26 | 0 |
+| list items > 60 words | 48 | 2 |
+| sentences > 45 words | 87 | 10 |
+| table cells > 25 words | 0 | 0 |
+
+`measure5.py` as committed (it still counts `{figure}` caption text and dropdown bodies): paragraphs
+38 → 12 (the 12 remaining are the 12 figure captions), items 48 → 2, sentences 96 → 19, cells 0 → 0.
+
+**Left over the caps, with reasons** (each is also in its page entry):
+
+* Items: 064 "5 V NMOS" (61 w; its only seam is before "That is the HVNTM tip"); 064 "Exposure" lead
+  (62 w; its only seam is before "That is well within …").
+* Sentences (46–50 w): 064 the `ntm` inference (46); 065 "We read that value …" (46), "Gate overlap" (46
+  + label), "Without `ASTI` …" (47), "For SKY130's 0.15 µm drawn gate …" (47); 066 the GSD pilot-form head
+  (48 with the tool name); 068 "The Error Messages page's checks …" (46); 069 the Hu sentence (49) and
+  Hori's LATID (50); 073 the Cypress two-quotation lead (46 + label). Each would need a split inside a
+  quotation, a split that leaves part of a claim outside its hedge or marker, or a pilot-form head.
+* First sentence over 25 words: 074 (27; no seam).
+* Leads over 120 words, as in the base: 064 (150), 065 (129), 066 (122), 075 (171, three paragraphs).
+
+**Gates (end of batch, in the worktree):** `check_steps`, `check_refs`, `check_machines`,
+`check_materials`, `check_masks`, `check_papers`, `check_patents`, `check_filings`, `check_inforce` — 0
+problems; `gen_papers`, `gen_patents`, `gen_filings`, `gen_index_links`, `gen_steps`, `gen_figures`,
+`gen_step_tables` `--check` — 0 differences; `sphinx-build -W -E` into a fresh directory — exit 0.
+`invariants.py` over the 12 pages: 0 changes to References, footnote definitions, generated blocks,
+figures, quick facts, dropdowns, H2 lists or Deep-dive counts; one admonition (the glance box) per page;
+every glance marker recurs below; no duplicate H3; every scope sentence is the italic lead-in.
+`check_preserved.py --allow-regrouped` (plus the categories named per page): the only remaining lines are
+three LOST `number_order` (066 threshold table, 068 rule table, 071 "-38" hedge moved to the end of its
+sentence), each checked by hand in its page entry; no `{dropdown}` line on any page.
+
 ## Pages
 
 ### 064 NTM — done
@@ -45,9 +84,9 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   table, layer list, Error Messages, Table F2b, Criteria & Assumptions; ≈ 390 words, one inference
   that the derivation is Boolean, stated with its hedge).
 * **R-PARA.** The 230-word evidence paragraph split at its seams, with run-in labels (evidence
-  sequence, R-PARA step 3): "**Mask and layer.**", "**Error checks.**", "**Created and drawn
-  layers.**" (the mask page's reading of the created data, Table F2b, and the two designer-drawn tip
-  layers), "**Published parameters.**".
+  sequence, R-PARA step 3): "**Mask and layer.**", "**Error checks.**", "**Created data.**" (the mask
+  page's reading of the created data and Table F2b), "**Drawn tip layers.**" (the two designer-drawn
+  tip layers), "**Published parameters.**".
 * **R-SENTENCE.** "The generated mask layer is `cntm` …;[^pdk-06] there is no designer-drawn `ntm`
   layer …" split at the semicolon (each half keeps its own marker; the inference clause had none).
   Error Messages sentence split at the colon and at the semicolon; `[^pdk-errors]` **repeated** on
@@ -711,3 +750,52 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   clause is the industry-generic description under the italic scope sentence; temperature / Agarwal; the
   two reseller sentences); glance and labels.
 * **Caps**: para > 100 1 → 0; item > 60 6 → 0; sentence > 45 6 → 0.
+
+## Content problems for the owner (not fixed)
+
+* `068-hvntm.md` and `069-hvasti.md`: the Table F2b device list in *Why this step exists* reads "the 5 V
+  and 3.3 V native NMOS … the ESD NMOS built on it … four HV diodes, an HV n-diffusion resistor and an HV
+  varactor", while the Open questions bullet on the same page reads "the 5 V and 3 V native NMOS … the HV
+  and HV native ESD NMOS … four n-type diodes". Both kept verbatim (this is also why R-REPEAT was not
+  applied to the shared 10-word run).
+* `072-ldasti.md` (the S6 figure agent's note): the category sentence says the PDK's 7° tip angle
+  "applies, we infer, to this tip as to the standard one"; *How it is typically performed* says "7° (PDK
+  tip angle), with twist; two or four rotations, or 0°, for symmetry — not public"; Open questions says
+  "Whether the implant is at 7° with rotations or at 0° is not public." Consistent, but the category
+  sentence reads more certain than the rest. All three kept verbatim; the category sentence is now the
+  first "Specific to this step" bullet, word for word.
+* `070-hvastis.md`: two consecutive sentences state the same conclusion, first as fact ("so the resist
+  sidewalls facing the beam have been implanted along their whole height") and then as an inference
+  ("so the sidewalls facing the beam are implanted through their whole height (inference)"). Kept
+  verbatim (they were one sentence in the base; the split at ", and we read" left each clause with its
+  own wording).
+* Figure captions (generated) were not touched. Of the S6 figure agent's other points (field-oxide step,
+  halo colour, 079 lead, no PMOS in the slice) none concerns a page in this batch.
+* Arithmetic re-checked while copying, all consistent: 064 k₁ = 0.7 × 0.6 / 0.365 ≈ 1.15 ("≈ 1.2"); 065
+  0.38 µm × tan 7° ≈ 47 nm; 066 1.14 µm × tan 7° ≈ 0.14 µm; 068 0.3 µm × tan 40° ≈ 0.25 µm, less 0.02 µm
+  ≈ 0.232 µm.
+
+## Guide problems
+
+1. **R-DERIVATION step 1 against R-H3 step 6.** R-DERIVATION always asks for an H3 `How <quantity> is
+   estimated`; R-H3 allows an H3 only over ≥ 120 words. 068's derivation (two lines, about 60 words, its
+   inputs in the table just above) got a numbered list and no H3. The guide could say that a derivation
+   under 120 words takes the list without the H3.
+2. **Lead: ≤ 2 paragraphs against the 100-word paragraph cap.** When the base lead is well over 120 words
+   (075: 162), two paragraphs leave one over 100 words; 075 uses three. The guide could say which limit
+   wins.
+3. **`check_preserved.py` and line wrapping.** An en-dash range written with spaces ("400 – 1200°C") is
+   read as one number when it sits on one line and as two when a line break falls inside it, so a re-wrap
+   gives a false LOST/ADDED pair (075; fixed here by wrapping as the base did). G15 (a role followed by a
+   code span on the same line) is still present (071; avoided by re-wrapping).
+4. **`check_preserved.py` does not see dropped words** that carry no number, quotation, marker, hedge,
+   role or identifier. A first draft of 074 lost "removing step:" through an overlapping replacement and
+   every check passed; `tmp/readability/worddiff.py` (a word-level difference against the base, glance
+   box and recap table excluded) caught it. A word-level mode in the tool would close this gap.
+5. **R-TOOLS: a gloss the grade rests on but does not name.** The batch followed 050 (the gloss as the
+   continuation paragraph below the grades) where the grade's reason does not refer to the gloss by name
+   (065, 066, 069, 072, 073, 075), and the pilot form where the gloss and SkyWater's quotation are one
+   sentence (066, 069, 072, 073 GSD; 067, 070, 074 ashers; 075 Aviza). The guide could say so.
+6. **R-OPENQ step 2 when the question comes last.** The Table F2b bullets on 068/069 give the evidence
+   first and the question last; the batch kept that order (label, evidence as sub-bullets, question in
+   the continuation) rather than moving the question into the lead.
