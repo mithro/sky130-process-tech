@@ -28,49 +28,49 @@ public renders of those runs' tape-out layouts show
 
 ## Find a mask
 
-One row per mask step, built from the checked table below and each mask page's own quick-facts row (exposure class): the step's code, its mask page, the exposure class the step page infers for it (linked to the machine-class page; no public source names the tool for any of the 36), the minimum feature/space CD, and the steps that use the resist pattern.
+One row per mask step, built from the checked table below and each mask page's own quick-facts row: the step's number and its mask page, the exposure class the mask page gives, with its hedge and any alternative it names, the minimum feature/space CD, and the steps that use the resist pattern.
 
 :::{table} The 36 mask steps, for finding a mask: step/mask page, exposure class, minimum CD and patterned steps
-:widths: 16 28 26 30
+:widths: 16 30 24 30
 
-| Step no. / mask page | Exposure class | Min. CD | Steps patterned |
+| Step · mask | Exposure class | Min. CD | Steps patterned |
 |---|---|---|---|
-| {ref}`FOM <step-004>` / {ref}`FOM <mask-fom>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `FOMCD` 0.14 / `FOMCDSP` 0.27 | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` |
-| {ref}`DNM <step-007>` / {ref}`DNM <mask-dnm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `DNMCD` 3 / `DNMCDSP` 6.3 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` |
-| {ref}`LVTNM <step-014>` / {ref}`LVTNM <mask-lvtnm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` |
-| {ref}`NWM <step-017>` / {ref}`NWM <mask-nwm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NWMCD` 0.84 / `NWMCDSP` 1.27 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` |
-| {ref}`HVTPM <step-022>` / {ref}`HVTPM <mask-hvtpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` |
-| {ref}`PWBM <step-026>` / {ref}`PWBM <mask-pwbm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` |
-| {ref}`PWDEM <step-030>` / {ref}`PWDEM <mask-pwdem>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` |
-| {ref}`TUNM <step-035>` / {ref}`TUNM <mask-tunm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` |
-| {ref}`ONOM <step-041>` / {ref}`ONOM <mask-onom>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `ONOMCD` 0.41 / `ONOMCDSP` 0.5 | {ref}`ONOME <step-042>` |
-| {ref}`LVOM <step-044>` / {ref}`LVOM <mask-lvom>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7 | {ref}`NCHI <step-045>`, {ref}`GOXETCH <step-046>` |
-| {ref}`RPM <step-049>` / {ref}`RPM <mask-rpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `RPMCD` 1.27 / `RPMCDSP` 0.84 | {ref}`P1I <step-050>`; strip {ref}`P1IS <step-051>` |
-| {ref}`RRPM <step-052>` / {ref}`RRPM <mask-rrpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`PRI <step-053>`; strip {ref}`PRIS <step-054>` |
-| {ref}`URPM <step-055>` / {ref}`URPM <mask-urpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`UPRI <step-056>`; strip {ref}`UPRIS <step-057>` |
-| {ref}`P1M <step-061>` / {ref}`P1M <mask-p1m>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 | {ref}`P1ME <step-062>` |
-| {ref}`NTM <step-064>` / {ref}`NTM <mask-ntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NTMCD` 0.84 / `NTMCDSP` 0.7 | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`; strip {ref}`ASTIS <step-067>` |
-| {ref}`HVNTM <step-068>` / {ref}`HVNTM <mask-hvntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` |
-| {ref}`LDNTM <step-071>` / {ref}`LDNTM <mask-ldntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` |
-| {ref}`NPCM <step-078>` / {ref}`NPCM <mask-npcm>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `NPCMCD` 0.27 / `NPCMCDSP` 0.27 | {ref}`NPCME <step-079>` |
-| {ref}`PSDM <step-081>` / {ref}`PSDM <mask-psdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PSDMCD` 0.38 / `PSDMCDSP` 0.38 | {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`; strip {ref}`PDIS <step-084>` |
-| {ref}`NSDM <step-085>` / {ref}`NSDM <mask-nsdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NSDMCD` 0.38 / `NSDMCDSP` 0.38 | {ref}`NSDI <step-086>`; strip {ref}`NSDIS <step-087>` |
-| {ref}`LICM1 <step-093>` / {ref}`LICM1 <mask-licm1>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | "Core" `LICM1CD` 0.19 / `LICM1CDSP` 0.35; "Slotted" `LICM1SLCD` 0.17 / `LICM1SLCDSP` 0.17 | {ref}`LICM1E <step-094>`, followed by {ref}`SACETCH <step-095>` |
-| {ref}`LI1M <step-102>` / {ref}`LI1M <mask-li1m>` | {ref}`KrF (248 nm) with OPC <machine-duv-krf-stepper>` (inference) | `LI1MCD` 0.17 / `LI1MCDSP` 0.17; "Core" 0.14 / 0.14 | {ref}`LI1ME <step-103>` |
-| {ref}`CTM1 <step-107>` / {ref}`CTM1 <mask-ctm1>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `CTM1CD` 0.17 / `CTM1CDSP` 0.19 | {ref}`CTME <step-108>` |
-| {ref}`MM1 <step-113>` / {ref}`MM1 <mask-mm1>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | `MM1CD` 0.14 / `MM1CDSP` 0.14 | {ref}`MM1E <step-114>` |
-| {ref}`VIM <step-118>` / {ref}`VIM <mask-vim>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIMCD` 0.15 / `VIMCDSP` 0.17 | {ref}`VIME <step-119>` |
-| {ref}`MM2 <step-124>` / {ref}`MM2 <mask-mm2>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | `MM2CD` 0.14 / `MM2CDSP` 0.14 | {ref}`MM2E <step-125>` |
-| {ref}`VIM2 <step-129>` / {ref}`VIM2 <mask-vim2>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM2CD` / `VIM2CDSP`: "Via 2-PLM" 0.2 / 0.2; "Via 2-TNV" 0.28 / 0.28; "Via 2-S8TM" 0.8 / 0.8 | {ref}`VIM2E <step-130>` |
-| {ref}`CAPM <step-137>` / {ref}`CAPM <mask-capm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `CAPMCD` 2 / `CAPMCDSP` 0.84 | {ref}`CAPME <step-138>` |
-| {ref}`MM3 <step-139>` / {ref}`MM3 <mask-mm3>` | {ref}`i-line <machine-i-line-stepper>` or {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (open) | `MM3CD` / `MM3CDSP`: "Metal 3-PLM" 0.3 / 0.3; "Metal 3-TLM" 0.36 / 0.36; "Metal 3-S8TM" 0.8 / 0.8 | {ref}`MM3E <step-140>` |
-| {ref}`VIM3 <step-144>` / {ref}`VIM3 <mask-vim3>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM3CD` 0.2 / `VIM3CDSP` 0.2 | {ref}`VIM3E <step-145>` |
-| {ref}`CAP2M <step-152>` / {ref}`CAP2M <mask-cap2m>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`CAP2ME <step-153>` |
-| {ref}`MM4 <step-154>` / {ref}`MM4 <mask-mm4>` | {ref}`i-line <machine-i-line-stepper>` or {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (open) | `MM4CD` 0.3 / `MM4CDSP` 0.3 | {ref}`MM4E <step-155>` |
-| {ref}`VIM4 <step-159>` / {ref}`VIM4 <mask-vim4>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM4CD` 0.8 / `VIM4CDSP` 0.8 | {ref}`VIM4E <step-160>` |
-| {ref}`MM5 <step-162>` / {ref}`MM5 <mask-mm5>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `MM5CD` / `MM5CDSP`: "All flows except S8PF\*/S8PIR\*" 0.8 / 0.8; "S8PF\*/S8PIR\*" 1.6 / 1.6 | {ref}`MM5E <step-163>` |
-| {ref}`NSM <step-165>` / {ref}`NSM <mask-nsm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NSMCD` 3 / `NSMCDSP` 4 | {ref}`NSME <step-166>` |
-| {ref}`PDM <step-168>` / {ref}`PDM <mask-pdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | "Pad (scribe protect)" `PDMCD` 2 / `PDMCDSP` 1.27 | {ref}`PDME <step-169>` |
+| {ref}`4 <step-004>` · {ref}`FOM <mask-fom>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference; {ref}`i-line <machine-i-line-stepper>` fallback) | `FOMCD` 0.14 / `FOMCDSP` 0.27 | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` |
+| {ref}`7 <step-007>` · {ref}`DNM <mask-dnm>` | {ref}`i-line <machine-i-line-stepper>` (reading; {ref}`KrF (248 nm) <machine-duv-krf-stepper>` alternative) | `DNMCD` 3 / `DNMCDSP` 6.3 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` |
+| {ref}`14 <step-014>` · {ref}`LVTNM <mask-lvtnm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` |
+| {ref}`17 <step-017>` · {ref}`NWM <mask-nwm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NWMCD` 0.84 / `NWMCDSP` 1.27 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` |
+| {ref}`22 <step-022>` · {ref}`HVTPM <mask-hvtpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` |
+| {ref}`26 <step-026>` · {ref}`PWBM <mask-pwbm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` |
+| {ref}`30 <step-030>` · {ref}`PWDEM <mask-pwdem>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` |
+| {ref}`35 <step-035>` · {ref}`TUNM <mask-tunm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` |
+| {ref}`41 <step-041>` · {ref}`ONOM <mask-onom>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `ONOMCD` 0.41 / `ONOMCDSP` 0.5 | {ref}`ONOME <step-042>` |
+| {ref}`44 <step-044>` · {ref}`LVOM <mask-lvom>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7 | {ref}`NCHI <step-045>`, {ref}`GOXETCH <step-046>` |
+| {ref}`49 <step-049>` · {ref}`RPM <mask-rpm>` | {ref}`i-line <machine-i-line-stepper>` (inference; {ref}`KrF (248 nm) <machine-duv-krf-stepper>` option) | `RPMCD` 1.27 / `RPMCDSP` 0.84 | {ref}`P1I <step-050>`; strip {ref}`P1IS <step-051>` |
+| {ref}`52 <step-052>` · {ref}`RRPM <mask-rrpm>` | {ref}`i-line <machine-i-line-stepper>` (inference; {ref}`KrF (248 nm) <machine-duv-krf-stepper>` option) | none listed | {ref}`PRI <step-053>`; strip {ref}`PRIS <step-054>` |
+| {ref}`55 <step-055>` · {ref}`URPM <mask-urpm>` | {ref}`i-line <machine-i-line-stepper>` (inference; {ref}`KrF (248 nm) <machine-duv-krf-stepper>` option) | none listed | {ref}`UPRI <step-056>`; strip {ref}`UPRIS <step-057>` |
+| {ref}`61 <step-061>` · {ref}`P1M <mask-p1m>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 | {ref}`P1ME <step-062>` |
+| {ref}`64 <step-064>` · {ref}`NTM <mask-ntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NTMCD` 0.84 / `NTMCDSP` 0.7 | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`; strip {ref}`ASTIS <step-067>` |
+| {ref}`68 <step-068>` · {ref}`HVNTM <mask-hvntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` |
+| {ref}`71 <step-071>` · {ref}`LDNTM <mask-ldntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` |
+| {ref}`78 <step-078>` · {ref}`NPCM <mask-npcm>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference; {ref}`i-line <machine-i-line-stepper>` alternative) | `NPCMCD` 0.27 / `NPCMCDSP` 0.27 | {ref}`NPCME <step-079>` |
+| {ref}`81 <step-081>` · {ref}`PSDM <mask-psdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PSDMCD` 0.38 / `PSDMCDSP` 0.38 | {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`; strip {ref}`PDIS <step-084>` |
+| {ref}`85 <step-085>` · {ref}`NSDM <mask-nsdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NSDMCD` 0.38 / `NSDMCDSP` 0.38 | {ref}`NSDI <step-086>`; strip {ref}`NSDIS <step-087>` |
+| {ref}`93 <step-093>` · {ref}`LICM1 <mask-licm1>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | "Core" `LICM1CD` 0.19 / `LICM1CDSP` 0.35; "Slotted" `LICM1SLCD` 0.17 / `LICM1SLCDSP` 0.17 | {ref}`LICM1E <step-094>`, followed by {ref}`SACETCH <step-095>` |
+| {ref}`102 <step-102>` · {ref}`LI1M <mask-li1m>` | {ref}`KrF (248 nm) with OPC <machine-duv-krf-stepper>` (inference) | `LI1MCD` 0.17 / `LI1MCDSP` 0.17; "Core" 0.14 / 0.14 | {ref}`LI1ME <step-103>` |
+| {ref}`107 <step-107>` · {ref}`CTM1 <mask-ctm1>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (reading) | `CTM1CD` 0.17 / `CTM1CDSP` 0.19 | {ref}`CTME <step-108>` |
+| {ref}`113 <step-113>` · {ref}`MM1 <mask-mm1>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | `MM1CD` 0.14 / `MM1CDSP` 0.14 | {ref}`MM1E <step-114>` |
+| {ref}`118 <step-118>` · {ref}`VIM <mask-vim>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (reading) | `VIMCD` 0.15 / `VIMCDSP` 0.17 | {ref}`VIME <step-119>` |
+| {ref}`124 <step-124>` · {ref}`MM2 <mask-mm2>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | `MM2CD` 0.14 / `MM2CDSP` 0.14 | {ref}`MM2E <step-125>` |
+| {ref}`129 <step-129>` · {ref}`VIM2 <mask-vim2>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM2CD` / `VIM2CDSP`: "Via 2-PLM" 0.2 / 0.2; "Via 2-TNV" 0.28 / 0.28; "Via 2-S8TM" 0.8 / 0.8 | {ref}`VIM2E <step-130>` |
+| {ref}`137 <step-137>` · {ref}`CAPM <mask-capm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `CAPMCD` 2 / `CAPMCDSP` 0.84 | {ref}`CAPME <step-138>` |
+| {ref}`139 <step-139>` · {ref}`MM3 <mask-mm3>` | {ref}`i-line <machine-i-line-stepper>` or {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (open) | `MM3CD` / `MM3CDSP`: "Metal 3-PLM" 0.3 / 0.3; "Metal 3-TLM" 0.36 / 0.36; "Metal 3-S8TM" 0.8 / 0.8 | {ref}`MM3E <step-140>` |
+| {ref}`144 <step-144>` · {ref}`VIM3 <mask-vim3>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM3CD` 0.2 / `VIM3CDSP` 0.2 | {ref}`VIM3E <step-145>` |
+| {ref}`152 <step-152>` · {ref}`CAP2M <mask-cap2m>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`CAP2ME <step-153>` |
+| {ref}`154 <step-154>` · {ref}`MM4 <mask-mm4>` | {ref}`i-line <machine-i-line-stepper>` or {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (open) | `MM4CD` 0.3 / `MM4CDSP` 0.3 | {ref}`MM4E <step-155>` |
+| {ref}`159 <step-159>` · {ref}`VIM4 <mask-vim4>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference; {ref}`i-line <machine-i-line-stepper>` alternative) | `VIM4CD` 0.8 / `VIM4CDSP` 0.8 | {ref}`VIM4E <step-160>` |
+| {ref}`162 <step-162>` · {ref}`MM5 <mask-mm5>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `MM5CD` / `MM5CDSP`: "All flows except S8PF\*/S8PIR\*" 0.8 / 0.8; "S8PF\*/S8PIR\*" 1.6 / 1.6 | {ref}`MM5E <step-163>` |
+| {ref}`165 <step-165>` · {ref}`NSM <mask-nsm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NSMCD` 3 / `NSMCDSP` 4 | {ref}`NSME <step-166>` |
+| {ref}`168 <step-168>` · {ref}`PDM <mask-pdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | "Pad (scribe protect)" `PDMCD` 2 / `PDMCDSP` 1.27 | {ref}`PDME <step-169>` |
 :::
 
 ## Mask steps in this reference
