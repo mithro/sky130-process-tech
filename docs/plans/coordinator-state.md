@@ -33,45 +33,34 @@ standing rules are `agent-briefs.md`.
   linked from step pages, also collapsed.
 * The five-hour usage window is the tighter limit in practice: on 2026-09-18 it filled in under five hours with five or six agents running and cut one agent off in mid-work. Keep to about three agents at a time, launch nothing new once the window is above 80 %, and require agents to commit at least every 15 minutes so that a cut-off loses little. The usage endpoint allows only a few reads per hour; the ledger script reads it at most hourly.
 
-## In flight (2026-09-20)
+## In flight (2026-09-25)
 
-Readability phase. Plan: `docs/plans/readability-plan.md`. Agents get the ground rules of that plan, the
-check list of `agent-briefs.md`, one worktree and branch each, and a progress file
-`docs/plans/progress-<name>.md`.
+Owner rule since 2026-09-25: at most FOUR sub-agents running at any time. Everything else waits in the
+queue below; a stopped agent is restarted by giving a fresh agent the same task text plus "read the
+progress file docs/plans/progress-<name>.md and continue from where it stops".
+
+Running (4):
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-site` | W4: landing page cards, references index table, glossary by letter, first-use `{term}` links, inventory anchors | Sonnet | running since 2026-09-25 |
-| `topic/rd-overview` | W4: overview page reorder, module H3s, prose rules | Sonnet | running since 2026-09-25 |
-| `topic/rd-links2` | second check of the four dead generated-page links; `archive_url` in the datasets | Sonnet | running since 2026-09-25 |
-| `topic/rd-figures-s3s4` | W1c series S3 SONOS + S4 gate oxides (035–047) | Opus | running since 2026-09-25 |
-| `topic/rd-figures-s5` | W1c series S5 poly (048–063); starting state assumed from the S4 pages, reconcile at merge | Opus | running since 2026-09-25 |
-| `topic/rd-steps-014-034` | W2 batch 2 (wells module) | Sonnet | running since 2026-09-25 |
-| `topic/rd-indexes` | W3 batch 1: machines, materials and masks index pages | Sonnet | running since 2026-09-25 |
-| `topic/cypress-history` (another session, `sky130-process-tech-54`) | Cypress process history in a new `docs/history/` section; merges only when told | — | running since 2026-09-25 |
+| `topic/rd-site` | W4 site pages: fix round (inventory entry, link_terms.py improvements, term-link commits reverted from the branch) | Sonnet | fixing |
+| `topic/rd-figures-s3s4` | W1c S3+S4 figures: fix round (labels below the drawing, lint for vertical gutter legs, ARC colour) | Opus | fixing |
+| `topic/rd-steps-014-034` | W2 batch 2 (wells module) | Sonnet | writing |
+| `topic/rd-overview` | W4 overview: Opus review running (`tmp/reviews/rd-overview.md`) | Opus | in review |
 
-Every branch gets an Opus review (rendered pages included), a fix round by its writer, then the coordinator
-rebases and fast-forward merges. Merge order when several are ready: tooling/generators first, then site
-pages, then content batches (rebase conflicts in the scripted term links are resolved by re-running
-`tools/link_terms.py`, not by hand).
+Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 
-Order after these: apply the pilot review's guide corrections, merge the pilot, then W2 batches module by
-module, each module's figures landing before its readability batch. Quota week now runs 2026-09-24 → 2026-10-01
-10:00 UTC (75-point cap by 2026-09-30 10:00 UTC).
+1. `topic/rd-preserved2` — check_preserved.py: fence skipping, numbered bold labels, tabulation regroups (Sonnet; reads the overview review's section C for the exact fixes).
+2. `topic/rd-inforce-sonos` — in-force patent content in the open on steps 037–042 (Sonnet; rulings in `tmp/reviews/rd-figures-s3s4.md` "Existing pages").
+3. `topic/rd-figures-s5` — fix round except the slice rework (Opus; then, after S3/S4 merges and a rebase, redo the series start from the merged `series-gates.yaml`).
+4. `topic/rd-indexes` — W3 batch 1: the three index pages (Sonnet).
+5. `topic/rd-links2` — second check of the dead generated-page links, `archive_url` in the datasets (Sonnet; cache under its worktree tmp/).
+6. Reviews as branches finish: rd-site (verify fixes), rd-figures-s3s4 (verify), rd-steps-014-034, rd-indexes, rd-links2, rd-preserved2, rd-inforce-sonos, rd-figures-s5.
+7. Next batches after those: W2 035–047 (after the S3/S4 figures merge), 048–063 (after S5), figure series S6–S11, W3 class-page batches (machines, materials, masks, categories), the final term-link pass on main.
+8. `topic/cypress-history` (another session, `sky130-process-tech-54`): merges only when told, after its own review; it adds a landing-page card after rd-site merges.
 
-Merged 2026-09-20: W0c citation links (all Wikipedia reading-list bullets are direct links; `--refresh` re-points
-inline links after a definition's first URL changes — run both link tools with `--refresh` after any Wayback conversion).
-
-If the account quota stops the agents: each commits per page or per step and keeps
-`docs/plans/progress-<name>.md`; restart by giving a new agent the same task text (the plan's W-item), the
-worktree and "read the progress file and continue".
-
-Merged so far: guide, theme + `check_preserved.py`, generators, figure tooling + 16 figures (see the plan's
-status column). Reviews live under the git-ignored `tmp/reviews/`.
-
-Next: Opus review of each branch (rendered pages included), fixes, merge; then W0c (citation links — after the
-generators branch, which touches the same region of 206 pages), W0e, W0f, W1a; then the page batches W2–W4.
-Local `main` is pushed to the `next` branch on origin.
+Merge order when several are ready: tooling first, then site pages, then content batches; rebase +
+fast-forward only; a batch's rebase conflicts in scripted regions are resolved by re-running the script.
 
 ## Open items, none of them blocking (details in `TASKLOG.md`)
 
