@@ -123,15 +123,15 @@ line.[^pat-testline-tsmc]
 :::
 
 **Polyimide, redistribution and packaging.** Several PDK entries set the
-opening against layers above it.
-
-Table F4 of the *Summary of Key
+opening against layers above it. Table F4 of the *Summary of Key
 Periphery Rules* joins the copper redistribution layer `rdl` to metal 5
 through "(pad AND pmm) for s8pir/s8pr2-10r flows", with the footnotes
 "All layers drawn except pmm which is created as cpmm:mask over bond pads
 or converted into cpbo:mask" and "(Met5 AND pad AND rdl) should have one
 of the following sizes for LVS to work with WLCSP option: 60x60, 50x70,
-60x80, and 80x80".[^pdk-summary] The `rdl` rules require a "Min
+60x80, and 80x80".[^pdk-summary]
+
+The `rdl` rules require a "Min
 enclosure of pad by rdl, except rdl interacting with bump" of 10.750 µm
 (rdl.3) and a spacing of 19.660 µm to pads (rdl.6).[^pdk-periph]
 
