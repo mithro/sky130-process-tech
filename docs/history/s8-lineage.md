@@ -97,7 +97,7 @@ disagree; no Cypress source found explains the name directly. The naming is set 
 * [Cypress, QTP 113005](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — S8TNV-5R and the first S8 qualification.[^qtp-113005]
 * [Cypress, QTP 043004](<https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>) — C8Q-3R.[^qtp-043004]
 * [Cypress, QTP 053301](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>) — L8C-3R, a derivative of C8.[^qtp-053301]
-* [Cypress, QTP 021507](<https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — S4AD-5.[^qtp-021507]
+* [Cypress, QTP 021507](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — S4AD-5.[^qtp-021507]
 * [Cypress, QTP 102101](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>) — R42HD and its 110 Å oxide.[^qtp-102101]
 * [Cypress, QTP 030206](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>) — RAM42 and its 110 Å oxide.[^qtp-030206]
 * [Cypress, QTP 063807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45>) — C9FD-3R's first metal.[^qtp-063807]
@@ -141,7 +141,7 @@ disagree; no Cypress source found explains the name directly. The naming is set 
     <https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>
 [^eflash-brief]: Cypress Semiconductor (an Infineon company), *SONOS eFlash* product overview,
     undated product brief.
-    <https://www.infineon.com/dgdl/Infineon-SONOS_eFlash_Product_Overview-ProductBrief-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
+    <https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
 [^pdk-previous]: SkyWater PDK Authors, *Previous Nomenclature*, SkyWater SKY130 PDK documentation,
     retrieved 2026-09-25. <https://skywater-pdk.readthedocs.io/en/main/previous.html>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater SKY130 PDK documentation,
@@ -157,7 +157,7 @@ disagree; no Cypress source found explains the name directly. The naming is set 
 [^qtp-053301]: Cypress Semiconductor, Product Qualification Report QTP 053301: *L8C-3R Technology, Fab 4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>
 [^qtp-021507]: Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015.
-    <https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
 [^qtp-030206]: Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014.

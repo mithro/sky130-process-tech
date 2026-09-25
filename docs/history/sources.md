@@ -110,7 +110,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`
 Used on {ref}`history-fabs`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-eflash-brief)=
-**EFLASH-BRIEF** — Cypress Semiconductor (an Infineon company), *SONOS eFlash* product overview, undated product brief. <https://www.infineon.com/dgdl/Infineon-SONOS_eFlash_Product_Overview-ProductBrief-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
+**EFLASH-BRIEF** — Cypress Semiconductor (an Infineon company), *SONOS eFlash* product overview, undated product brief. <https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
 Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-ew-2007-s8)=
@@ -166,7 +166,7 @@ Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-003907)=
-**QTP-003907** — Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013. <https://www.infineon.com/dgdl/Infineon-QTP_003907_High_Frequency_Programmable_PECL_Clock_Generator_R42LDHA_Technology_Fab_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714957940a14>
+**QTP-003907** — Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
 Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-011503)=
@@ -174,11 +174,11 @@ Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-sonos-s4`, {
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-011908)=
-**QTP-011908** — Cypress Semiconductor, Product Qualification Report QTP 011908: *Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification*, August 2014. <https://www.infineon.com/dgdl/Infineon-QTP_011908_Fast_Asynchronous_SRAM_Technology_Derivative_R7FD_Fab_4_Qualification-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>
+**QTP-011908** — Cypress Semiconductor, Product Qualification Report QTP 011908: *Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification*, August 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-011908-fast-asynchronous-sram-technology-derivative-r7fd-fab-4-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-012705)=
-**QTP-012705** — Cypress Semiconductor, Product Qualification Report QTP 012705: *1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4*, June 2014. <https://www.infineon.com/dgdl/Infineon-QTP_012705_1MEG_SRAM_FAST_ASYNCHRONOUS_FAMILY_R52FFD-3_TECHNOLOGY_FAB_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>
+**QTP-012705** — Cypress Semiconductor, Product Qualification Report QTP 012705: *1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4*, June 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-012801)=
@@ -190,7 +190,7 @@ Used on {ref}`history-index`, {ref}`history-products`, {ref}`history-stackups`, 
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-021507)=
-**QTP-021507** — Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015. <https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
+**QTP-021507** — Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-023101)=
@@ -198,7 +198,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`
 Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-024110)=
-**QTP-024110** — Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013. <https://www.infineon.com/dgdl/Infineon-QTP_024110_1_MEG_(3.0V)_MOBL_DEVICES_RAM8NLD-1.8V_TECHNOLOGY_FAB4-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
+**QTP-024110** — Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
 Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-030206)=
@@ -206,7 +206,7 @@ Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {re
 Used on {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-032003)=
-**QTP-032003** — Cypress Semiconductor, Product Qualification Report QTP 032003: *36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4*, August 2014. <https://www.infineon.com/dgdl/Infineon-QTP_032003_36_Meg_Synchronous_SRAM_Family_Technology_R9T-3R_Fab4-ProductQualificationReport-v04_00-EN.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>
+**QTP-032003** — Cypress Semiconductor, Product Qualification Report QTP 032003: *36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4*, August 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-032005)=
@@ -270,11 +270,11 @@ Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage
 Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-080608)=
-**QTP-080608** — Cypress Semiconductor, Product Qualification Report QTP 080608: *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A*, May 2013. <https://www.infineon.com/dgdl/Infineon-QTP_080608_HIGH_ACCURACY_EPROM_PROGRAMMABLE_DEVICE_FAMILY_L28_TECHNOLOGY_TSMC-2A-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
+**QTP-080608** — Cypress Semiconductor, Product Qualification Report QTP 080608: *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A*, May 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-082506)=
-**QTP-082506** — Cypress Semiconductor, Product Qualification Report QTP 082506: *PCI-E Clock Family, R52T-3 Technology, Fab 4*, September 2014. <https://www.infineon.com/dgdl/Infineon-QTP_082506_PCI-E_Clock_Family_R52T-3_Technology_Fab_4-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>
+**QTP-082506** — Cypress Semiconductor, Product Qualification Report QTP 082506: *PCI-E Clock Family, R52T-3 Technology, Fab 4*, September 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-091302)=
@@ -330,7 +330,7 @@ Used on {ref}`history-naming`, {ref}`history-products`.
 Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-099202)=
-**QTP-099202** — Cypress Semiconductor, Product Qualification Report QTP 99202: *Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4*, May 2014. <https://www.infineon.com/dgdl/Infineon-QTP_99202_Low_Voltage_Synchronous_Asynchronous_RAM_R52D-3_Technology_at_Fab_4-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d71491c270982>
+**QTP-099202** — Cypress Semiconductor, Product Qualification Report QTP 99202: *Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4*, May 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-99202-low-voltage-synchronous-asynchronous-ram-r52d-3-technology-at-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491c270982>
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-102101)=
@@ -338,7 +338,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-110605)=
-**QTP-110605** — Cypress Semiconductor, Product Qualification Report QTP 110605: *Zero Delay Buffer, L28 Technology, TSMC-2A*, March 2025. <https://www.infineon.com/dgdl/Infineon-QTP_110605_Zero_Delay_Buffer_L28_Technology_TSMC-2A-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714b37f41005>
+**QTP-110605** — Cypress Semiconductor, Product Qualification Report QTP 110605: *Zero Delay Buffer, L28 Technology, TSMC-2A*, March 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-110605-zero-delay-buffer-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714b37f41005>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-113005)=

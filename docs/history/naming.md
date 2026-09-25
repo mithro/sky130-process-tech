@@ -96,14 +96,14 @@ Read a single code in a single report with care.
 
 * [Cypress, 1997 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf>) — RAM4 among the trademarks.[^ar-fy1997]
 * [Cypress, 2002 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf>) — RAM 7 and RAM 8.[^ar-fy2002]
-* [Cypress, QTP 012705](<https://www.infineon.com/dgdl/Infineon-QTP_012705_1MEG_SRAM_FAST_ASYNCHRONOUS_FAMILY_R52FFD-3_TECHNOLOGY_FAB_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>) — R52FD-3 to R52FFD-3.[^qtp-012705]
+* [Cypress, QTP 012705](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>) — R52FD-3 to R52FFD-3.[^qtp-012705]
 * [Cypress, QTP 098462](<https://www.infineon.cn/assets/row/public/documents/10/316/infineon-qtp-98462-fast-asynchronous-sram-family--cy7c106b-cy7c1006b-cy7c194b-cy7c195b-cy7c199c--r52d-5r-technology-skywater-productqualificationreport-en.pdf>) — R52D-5R, a "Technology Derivative".[^qtp-098462]
 * [Cypress, QTP 014807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>) — "RAM7FT-3R".[^qtp-014807]
-* [Cypress, QTP 024110](<https://www.infineon.com/dgdl/Infineon-QTP_024110_1_MEG_(3.0V)_MOBL_DEVICES_RAM8NLD-1.8V_TECHNOLOGY_FAB4-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>) — "RAM8NLD-1.8".[^qtp-024110]
+* [Cypress, QTP 024110](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>) — "RAM8NLD-1.8".[^qtp-024110]
 * [Cypress, QTP 091302](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>) — "RAM42".[^qtp-091302]
 * [Cypress, QTP 053301](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>) — L8C-3R from C8.[^qtp-053301]
 * [Cypress, QTP 051101](<https://web.archive.org/web/20201028052046/https://www.cypress.com/file/92676/download>) — B55SGT and its spellings.[^qtp-051101]
-* [Cypress, QTP 110605](<https://www.infineon.com/dgdl/Infineon-QTP_110605_Zero_Delay_Buffer_L28_Technology_TSMC-2A-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714b37f41005>) — a borrowed heading.[^qtp-110605]
+* [Cypress, QTP 110605](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-110605-zero-delay-buffer-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714b37f41005>) — a borrowed heading.[^qtp-110605]
 * [Cypress, QTP 096411](<https://web.archive.org/web/20201026124735/https://www.cypress.com/file/93566/download>) — P26.[^qtp-096411]
 * [Electronics Weekly, *Cypress 4-Mbit non-volatile static random access memory*](<https://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/>) — S8 as SONOS.[^ew-2007-s8]
 
@@ -137,11 +137,11 @@ Read a single code in a single report with care.
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
 [^qtp-021507]: Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015.
-    <https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
 [^qtp-012705]: Cypress Semiconductor, Product Qualification Report QTP 012705: *1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4*, June 2014.
-    <https://www.infineon.com/dgdl/Infineon-QTP_012705_1MEG_SRAM_FAST_ASYNCHRONOUS_FAMILY_R52FFD-3_TECHNOLOGY_FAB_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>
 [^qtp-011908]: Cypress Semiconductor, Product Qualification Report QTP 011908: *Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification*, August 2014.
-    <https://www.infineon.com/dgdl/Infineon-QTP_011908_Fast_Asynchronous_SRAM_Technology_Derivative_R7FD_Fab_4_Qualification-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-011908-fast-asynchronous-sram-technology-derivative-r7fd-fab-4-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>
 [^qtp-043004]: Cypress Semiconductor, Product Qualification Report QTP 043004: *DDR2-PLL Device Family, C8Q-3R, Fab 4*, March 2007;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>
@@ -154,7 +154,7 @@ Read a single code in a single report with care.
 [^qtp-014807]: Cypress Semiconductor, Product Qualification Report QTP 014807: *Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV*, June 2005.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
-    <https://www.infineon.com/dgdl/Infineon-QTP_024110_1_MEG_(3.0V)_MOBL_DEVICES_RAM8NLD-1.8V_TECHNOLOGY_FAB4-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
 [^qtp-053301]: Cypress Semiconductor, Product Qualification Report QTP 053301: *L8C-3R Technology, Fab 4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>
 [^qtp-051101]: Cypress Semiconductor, Product Qualification Report QTP 051101: *FastEdge Series, B55SGT Technology, Fab 4*, May 2005;
@@ -169,4 +169,4 @@ Read a single code in a single report with care.
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211130190834/https://www.cypress.com/file/92671/download>
 [^qtp-110605]: Cypress Semiconductor, Product Qualification Report QTP 110605: *Zero Delay Buffer, L28 Technology, TSMC-2A*, March 2025.
-    <https://www.infineon.com/dgdl/Infineon-QTP_110605_Zero_Delay_Buffer_L28_Technology_TSMC-2A-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714b37f41005>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-110605-zero-delay-buffer-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714b37f41005>

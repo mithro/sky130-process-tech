@@ -198,7 +198,7 @@ names of the sites. Read them with these points in mind:
 * [EE Times, *Cypress inks foundry deal with Grace*](<https://www.eetimes.com/cypress-inks-foundry-deal-with-grace/>) — the processes to be moved to Grace.[^eet-2005-grace]
 * [EE Times, *Cypress furthers 'fab lite'*](<https://www.eetimes.com/cypress-furthers-fab-lite/>) — UMC, the sale of Fab 1 and the S8 plan.[^eet-2007-fablite]
 * [EDN, *Honeywell debuts rad-hard process in new foundry fab*](<https://www.edn.com/honeywell-debuts-rad-hard-process-in-new-foundry-fab/>) — the SOI process developed with Honeywell.[^edn-2005-honeywell]
-* [Cypress, QTP 021507](<https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — S4AD-5 at "CTI Round Rock".[^qtp-021507]
+* [Cypress, QTP 021507](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — S4AD-5 at "CTI Round Rock".[^qtp-021507]
 * [Cypress, QTP 091302](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>) — RAM42 moved to Grace, "Fab5 GSMC".[^qtp-091302]
 
 <!-- footnotes -->
@@ -296,7 +296,7 @@ names of the sites. Read them with these points in mind:
     2015-07-12 (copy hosted by Future Electronics).
     <https://media.futureelectronics.com/PCN/45887_SPCN.PDF>
 [^qtp-021507]: Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015.
-    <https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
 [^qtp-096091]: Cypress Semiconductor, Product Qualification Report QTP 96091: *Dual Port SRAM - R28 Technology, 6% Shrink*, September 1996.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-96091-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148ab080847>
 [^qtp-097476]: Cypress Semiconductor, Product Qualification Report QTP 97476: *256K STATIC RAM "CY7C194/CY7195/CY7C199" R28 PROCESS, FAB 2 QUALIFICATION*, August 2016.
@@ -304,7 +304,7 @@ names of the sites. Read them with these points in mind:
 [^qtp-098393]: Cypress Semiconductor, Product Qualification Report QTP 98393: *Dual Port SRAM - R28 Technology - Fab 2*, March 1999.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-98393-productqualificationreport-en.pdf>
 [^qtp-003907]: Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013.
-    <https://www.infineon.com/dgdl/Infineon-QTP_003907_High_Frequency_Programmable_PECL_Clock_Generator_R42LDHA_Technology_Fab_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714957940a14>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
 [^qtp-113005]: Cypress Semiconductor, Product Qualification Report QTP 113005: *64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4)*, January 2013.
@@ -320,4 +320,4 @@ names of the sites. Read them with these points in mind:
 [^qtp-041406]: Cypress Semiconductor, Product Qualification Report QTP 041406: *4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater*, February 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
-    <https://www.infineon.com/dgdl/Infineon-QTP_024110_1_MEG_(3.0V)_MOBL_DEVICES_RAM8NLD-1.8V_TECHNOLOGY_FAB4-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>

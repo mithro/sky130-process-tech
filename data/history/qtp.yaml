@@ -23,7 +23,7 @@ documents:
   title: Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2
   version: '*A'
   date_printed: December 2015
-  url: https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b
   archive_url: null
   retrieved: '2026-09-25'
   sha256: 7284a2f0144db23786172a8ee364642b01e53a118ba0f6777cdfd2fc35e52671
@@ -80,7 +80,7 @@ documents:
   title: High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4
   version: '*A'
   date_printed: June 2013
-  url: https://www.infineon.com/dgdl/Infineon-QTP_003907_High_Frequency_Programmable_PECL_Clock_Generator_R42LDHA_Technology_Fab_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714957940a14
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14
   archive_url: null
   retrieved: '2026-09-25'
   sha256: 15850b60d53cf2576937d6b0a14025a4b06d9369b9ec80258eea59717bf71ce8
@@ -131,7 +131,7 @@ documents:
   title: 1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4
   version: '**'
   date_printed: June 2013
-  url: https://www.infineon.com/dgdl/Infineon-QTP_024110_1_MEG_(3.0V)_MOBL_DEVICES_RAM8NLD-1.8V_TECHNOLOGY_FAB4-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde
   archive_url: null
   retrieved: '2026-09-25'
   sha256: c27e14096c811fabd1fadb089953d4941bfc83e25f2808a9bd554ee195a54145
@@ -667,7 +667,7 @@ documents:
   title: Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification
   version: '*A'
   date_printed: August 2014
-  url: https://www.infineon.com/dgdl/Infineon-QTP_011908_Fast_Asynchronous_SRAM_Technology_Derivative_R7FD_Fab_4_Qualification-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7150e6271aff
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-011908-fast-asynchronous-sram-technology-derivative-r7fd-fab-4-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150e6271aff
   archive_url: null
   retrieved: '2026-09-25'
   sha256: c9bd8d6a83558c93925e2d1d2c2dbfc0484a66be2ad2329ad514e0708ec11db0
@@ -1489,7 +1489,7 @@ documents:
   title: PCI-E Clock Family, R52T-3 Technology, Fab 4
   version: '*B'
   date_printed: September 2014
-  url: https://www.infineon.com/dgdl/Infineon-QTP_082506_PCI-E_Clock_Family_R52T-3_Technology_Fab_4-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39
   archive_url: null
   retrieved: '2026-09-25'
   sha256: 7af32cc310872d19bb8bfcbc32625205e0f2ea39d4df1f84c9ae55cb284a46b4
@@ -1549,7 +1549,7 @@ documents:
   title: Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4
   version: '*B'
   date_printed: May 2014
-  url: https://www.infineon.com/dgdl/Infineon-QTP_99202_Low_Voltage_Synchronous_Asynchronous_RAM_R52D-3_Technology_at_Fab_4-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d71491c270982
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-99202-low-voltage-synchronous-asynchronous-ram-r52d-3-technology-at-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491c270982
   archive_url: null
   retrieved: '2026-09-25'
   sha256: a370caf058bfb30193f9ab0f74e39c5d63c8fdca15b156712143ddafb2ad5f04
@@ -1664,7 +1664,7 @@ documents:
   title: High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A
   version: '**'
   date_printed: May 2013
-  url: https://www.infineon.com/dgdl/Infineon-QTP_080608_HIGH_ACCURACY_EPROM_PROGRAMMABLE_DEVICE_FAMILY_L28_TECHNOLOGY_TSMC-2A-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d714a27090cd2
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2
   archive_url: null
   retrieved: '2026-09-25'
   sha256: 0f431b937ee9db326c848c3581b5957aea7c402015fc613e0336c247def604c0
@@ -1713,7 +1713,7 @@ documents:
   title: Zero Delay Buffer, L28 Technology, TSMC-2A
   version: '*B'
   date_printed: March 2025
-  url: https://www.infineon.com/dgdl/Infineon-QTP_110605_Zero_Delay_Buffer_L28_Technology_TSMC-2A-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714b37f41005
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-110605-zero-delay-buffer-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714b37f41005
   archive_url: null
   retrieved: '2026-09-25'
   sha256: fe25fbae23a0181364240774c4d51581685df7c94e7f6b2ef22447bc768b391e
@@ -1769,7 +1769,7 @@ documents:
   title: 1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4
   version: '*A'
   date_printed: June 2014
-  url: https://www.infineon.com/dgdl/Infineon-QTP_012705_1MEG_SRAM_FAST_ASYNCHRONOUS_FAMILY_R52FFD-3_TECHNOLOGY_FAB_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7148db7c0893
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893
   archive_url: null
   retrieved: '2026-09-25'
   sha256: 3b146101e71d80a1f3a50e5a87aed66f26f5755109768393efd28a2753bef7d9
@@ -2470,7 +2470,7 @@ documents:
   title: 36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4
   version: '*C'
   date_printed: August 2014
-  url: https://www.infineon.com/dgdl/Infineon-QTP_032003_36_Meg_Synchronous_SRAM_Family_Technology_R9T-3R_Fab4-ProductQualificationReport-v04_00-EN.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5
   archive_url: null
   retrieved: '2026-09-25'
   sha256: 937619d5820a6ce961198d2d94322c02b82fb6c1cde5886b0c550f8a15505651

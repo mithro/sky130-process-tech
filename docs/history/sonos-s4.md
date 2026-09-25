@@ -134,7 +134,7 @@ details, and what changed, are on {ref}`history-s8-lineage`.
 
 ### Cross-check
 
-* [Cypress, QTP 021507](<https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — S4AD-5 as an R42D-5 derivative.[^qtp-021507]
+* [Cypress, QTP 021507](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — S4AD-5 as an R42D-5 derivative.[^qtp-021507]
 * [Cypress, 2002 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf>) — the SONOS process in Fab 2.[^ar-fy2002]
 
 ### High-level understanding
@@ -144,12 +144,12 @@ details, and what changed, are on {ref}`history-s8-lineage`.
 
 ### Deep dive
 
-* [Cypress, SONOS eFlash product brief](<https://www.infineon.com/dgdl/Infineon-SONOS_eFlash_Product_Overview-ProductBrief-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d715307cf2069>) — the cell and its extra masks.[^eflash-brief]
+* [Cypress, SONOS eFlash product brief](<https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069>) — the cell and its extra masks.[^eflash-brief]
 * [Cypress, QTP 042806](<https://web.archive.org/web/20211025144943/https://www.cypress.com/file/92521/download>) — "S4ADLatch" at Fab 2.[^qtp-042806]
 * [Cypress, QTP 051005](<https://web.archive.org/web/20211130190834/https://www.cypress.com/file/92671/download>) — S4AD-5CTI, automotive PSoC.[^qtp-051005]
 * [Cypress, QTP 062509](<https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>) — the Neutron family moved to GSMC.[^qtp-062509]
 * [Cypress, QTP 151005](<https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-151005-psoc24x94-hhgrace-productqualificationreport-en.pdf>) — S4AD-5 at HHGrace.[^qtp-151005]
-* [Cypress, QTP 003907](<https://www.infineon.com/dgdl/Infineon-QTP_003907_High_Frequency_Programmable_PECL_Clock_Generator_R42LDHA_Technology_Fab_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714957940a14>) — the R42D stack for comparison.[^qtp-003907]
+* [Cypress, QTP 003907](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>) — the R42D stack for comparison.[^qtp-003907]
 * [EE Times, *Cypress inks foundry deal with Grace*](<https://www.eetimes.com/cypress-inks-foundry-deal-with-grace/>) — the S4 process at Grace.[^eet-2005-grace]
 * [EE Times, *Cypress furthers 'fab lite'*](<https://www.eetimes.com/cypress-furthers-fab-lite/>) — the 0.4 µm PSoC process at Grace.[^eet-2007-fablite]
 * [Cypress, 2006 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf>) — the 0.35 µm SONOS process moved to Grace.[^ar-fy2006]
@@ -183,7 +183,7 @@ details, and what changed, are on {ref}`history-s8-lineage`.
     <https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>
 [^eflash-brief]: Cypress Semiconductor (an Infineon company), *SONOS eFlash* product overview,
     undated product brief.
-    <https://www.infineon.com/dgdl/Infineon-SONOS_eFlash_Product_Overview-ProductBrief-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
+    <https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
 [^pat-us6818558]: M. Rathor, K. Ramkumar, F. Jenne and L. Lancaster (Cypress Semiconductor), *Method of
     manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon (SONOS) type
     devices*, US 6,818,558 B1, priority 2001-07-31. <https://patents.google.com/patent/US6818558B1/en>
@@ -198,9 +198,9 @@ details, and what changed, are on {ref}`history-s8-lineage`.
     1999-10-22. Status shown as unknown; estimated expiry no later than 2020-10-22 (estimate from
     public records, not legal advice). <https://patents.google.com/patent/US6172907B1/en>
 [^qtp-021507]: Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015.
-    <https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
 [^qtp-003907]: Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013.
-    <https://www.infineon.com/dgdl/Infineon-QTP_003907_High_Frequency_Programmable_PECL_Clock_Generator_R42LDHA_Technology_Fab_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714957940a14>
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
 [^qtp-042806]: Cypress Semiconductor, Product Qualification Report QTP 042806: *S4ADLATCH Technology, Fab 2*, January 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211025144943/https://www.cypress.com/file/92521/download>
