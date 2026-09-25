@@ -77,6 +77,11 @@ task (`docs/plans/agent-briefs.md`, `docs/plans/readability-guide.md` §7) — n
   footnote-definition lines correctly excluded (327/450, 481/665, 586/798 lines kept). Ran the
   full CLI against a synthetic one-word addition on `006-stie.md`: printed `WORDS ADDED:
   'carefully'` and nothing else, as expected.
+* Item 6 (glance/`*SkyWater says:*` WARN checks, brand new): ran directly against
+  `docs/steps/006-stie.md` and `docs/steps/018-nwi.md` (both already merged and reviewed) — 0
+  warnings, as expected. Ran against a hand-built bad page — correctly warned on the dropped
+  glance number and the unsourced `*SkyWater says:*` line — and a hand-built good page (number
+  recurs, SkyWater line quoted) — 0 warnings.
 
 ## Selftest
 

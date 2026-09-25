@@ -1029,6 +1029,84 @@ def check_regrouped(
     return still_lost, still_added, lines
 
 
+# ---------------------------------------------------------------------------
+# Two informational quality checks writers keep failing (task instruction,
+# not tied to one review finding): run once against the CURRENT page text,
+# not a before/after diff, and always print WARN with page and line; never
+# fail the run.
+
+_GLANCE_ADMONITION_RE = re.compile(
+    r"^([:]{3,})\{admonition\}[ \t]*At a glance[ \t]*\n(.*?)\n\1[ \t]*$",
+    re.MULTILINE | re.DOTALL,
+)
+
+
+def check_glance_recurrence(text: str, page_label: str) -> list[str]:
+    """Every "At a glance" bullet's numbers and footnote markers must
+    recur somewhere in the body below the box: writers keep trimming the
+    box down to a claim the body itself no longer makes (or no longer
+    cites)."""
+    warns: list[str] = []
+    m = _GLANCE_ADMONITION_RE.search(text)
+    if not m:
+        return warns
+    glance_body = m.group(2)
+    after_body = DEF_RE.sub("", text[m.end():])
+    after_masked = _mask_prose(after_body)
+    after_numbers = extract_numbers(IDENT_RE.sub(" ", after_masked))
+    after_markers = set(MARKER_RE.findall(after_body))
+    glance_start_line = text.count("\n", 0, m.start(2)) + 1
+    for offset, line in enumerate(glance_body.splitlines()):
+        if not line.strip().startswith("*"):
+            continue
+        lineno = glance_start_line + offset
+        line_masked = _mask_prose(line)
+        for tok in extract_numbers(IDENT_RE.sub(" ", line_masked)).elements():
+            if after_numbers[tok] < 1:
+                warns.append(
+                    f"{page_label}:{lineno}: WARN glance number {tok!r} does "
+                    "not recur in the body below"
+                )
+        for mk in MARKER_RE.findall(line):
+            if mk not in after_markers:
+                warns.append(
+                    f"{page_label}:{lineno}: WARN glance marker [^{mk}] does "
+                    "not recur in the body below"
+                )
+    return warns
+
+
+_SKYWATER_SAYS_RE = re.compile(r"^[ \t]*[-*][ \t]*\*SkyWater says:\*")
+_BULLET_START_RE = re.compile(r"^[ \t]*[-*][ \t]")
+_SKW_CYP_MARKER_RE = re.compile(r"\[\^(?:skw|cyp)-[A-Za-z0-9_-]+\]")
+
+
+def check_skywater_says(text: str, page_label: str) -> list[str]:
+    """Every "*SkyWater says:*" line (or the bullet it starts, if it
+    wraps) must contain a quotation mark or a ``skw-``/``cyp-`` footnote
+    marker: writers keep paraphrasing what SkyWater's own page says
+    without either quoting it or citing it."""
+    warns: list[str] = []
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if not _SKYWATER_SAYS_RE.match(line):
+            continue
+        block = [line]
+        j = i + 1
+        while j < len(lines) and lines[j].strip() and not _BULLET_START_RE.match(lines[j]):
+            block.append(lines[j])
+            j += 1
+        joined = " ".join(block)
+        has_quote = '"' in joined or "“" in joined or "”" in joined
+        has_marker = bool(_SKW_CYP_MARKER_RE.search(joined))
+        if not has_quote and not has_marker:
+            warns.append(
+                f"{page_label}:{i + 1}: WARN '*SkyWater says:*' line has no "
+                "quotation mark or skw-/cyp- marker"
+            )
+    return warns
+
+
 def diff_page(
     old_text: str,
     new_text: str,
@@ -1084,6 +1162,12 @@ def diff_page(
         strict_lost = Counter({w: n for w, n in lost_words.items() if w not in WORDS_STOPLIST})
         if strict_lost:
             results.append((True, f"LOST words (--strict-words): {format_counter(strict_lost)}"))
+
+    # Two informational checks against the CURRENT page only (not a diff).
+    for w in check_glance_recurrence(new_text, page_path):
+        results.append((False, w))
+    for w in check_skywater_says(new_text, page_path):
+        results.append((False, w))
 
     return results
 
@@ -1742,6 +1826,51 @@ def selftest() -> int:
         "The caption word here.\n:::\n",
         True,
     )
+
+    # -- glance-box and "*SkyWater says:*" WARN checks (task instruction) -
+    _glance_bad = (
+        "# Step 999 -- TEST\n\n"
+        "::::{admonition} At a glance\n"
+        ":class: at-a-glance\n"
+        "* **Does:** a made-up step at 900 degC, see [^skw-01].\n"
+        "* **Why:** because.\n"
+        "::::\n\n"
+        "## What this step is\n\n"
+        "This step happens at some temperature.[^skw-01]\n\n"
+        "  - *SkyWater says:* runs the process without further detail.\n\n"
+        "[^skw-01]: Source. <https://example.com/a>\n"
+    )
+    case(
+        "a glance number/marker not recurring in the body, and a "
+        "'*SkyWater says:*' line with neither a quote nor a skw-/cyp- "
+        "marker, are printed as WARN but never fail the run",
+        _glance_bad, _glance_bad, True,
+    )
+    glance_msgs = _messages(_glance_bad, _glance_bad)
+    if not any("WARN glance number '900'" in m for m in glance_msgs):
+        problems.append(f"glance check: expected a WARN for the number 900, got {glance_msgs!r}")
+    if not any("SkyWater says" in m and "WARN" in m for m in glance_msgs):
+        problems.append(f"SkyWater-says check: expected a WARN line, got {glance_msgs!r}")
+
+    _glance_good = (
+        "# Step 999 -- TEST\n\n"
+        "::::{admonition} At a glance\n"
+        ":class: at-a-glance\n"
+        "* **Does:** a made-up step at 900 degC, see [^skw-01].\n"
+        "* **Why:** because.\n"
+        "::::\n\n"
+        "## What this step is\n\n"
+        'This step runs at 900 degC, which the facilities page lists as '
+        '"the process window".[^skw-01]\n\n'
+        "  - *SkyWater says:* \"the process window\".[^skw-01]\n\n"
+        "[^skw-01]: Source. <https://example.com/a>\n"
+    )
+    good_msgs = _messages(_glance_good, _glance_good)
+    if any("WARN" in m for m in good_msgs):
+        problems.append(
+            f"glance/SkyWater-says checks: expected no WARN when the number "
+            f"recurs and the SkyWater line is quoted, got {good_msgs!r}"
+        )
 
     if problems:
         for p in problems:
