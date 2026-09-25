@@ -50,7 +50,9 @@ dissolution of the novolac resin, but upon exposure to light, the
 dissolution rate increases even beyond that of pure novolac", and
 "DNQ-novolac resists are developed by dissolution in a basic solution
 (usually 0.26N tetramethylammonium hydroxide (TMAH) in
-water)".[^wiki-resist][^wiki-dnq] Pacansky and Lyerla showed that the
+water)".[^wiki-resist][^wiki-dnq]
+
+Pacansky and Lyerla showed that the
 photochemical decomposition "proceeds via a ketene intermediate to a
 photoproduct, the nature of which depends on the reaction conditions",
 giving "3-indenecarboxylic acid" under ambient
@@ -59,7 +61,9 @@ optical parameters, A, B, and C" and development to "a rate relationship
 R(M)", the basis for the process models of the papers that accompanied
 it;[^dill-1975] Kim, Oldham and
 Neureuther extended the development model "over the full range of
-exposure".[^kim-1984] Resist makers tune the resin: a Tokyo Ohka Kogyo
+exposure".[^kim-1984]
+
+Resist makers tune the resin: a Tokyo Ohka Kogyo
 patent combines "two different cresol novolac resins differentiated in
 respects of the weight-average molecular weight" with a naphthoquinone
 diazide ester for "fine patterning in the manufacture of semiconductor
@@ -77,10 +81,13 @@ bake step", and "A single acid molecule can catalyze many such
 in which a photogenerated acid removes the t-butoxycarbonyl protecting
 group from a polystyrene to leave poly(hydroxystyrene), and wrote that
 "The extremely high sensitivity of these systems is achieved through
-chemical amplification".[^ito-1984] The catalyst can be
+chemical amplification".[^ito-1984]
+
+The catalyst can be
 poisoned: MacDonald et al. found such a resist "severely degraded by
 vapor from organic bases" at "as little as 15 parts per billion (ppb)",
 and relieved it with "localized air filtration".[^macdonald-1991]
+
 Environmentally stable resists followed. The ESCAP resist of Ito et al.,
 a copolymer of 4-hydroxystyrene with t-butyl acrylate, "is extremely
 insensitive to the delay effect";[^ito-1994] Huang et al. described a resist "resilient
@@ -99,7 +106,9 @@ under the resist".[^brunner-1991] A Brewer Science patent describes the
 organic form: "A light absorbing medium to be interposed under
 photosensitive layers", with "a polymer vehicle which can penetrate into
 small depressions of a substrate" and "a light absorbing
-dye".[^pat-arc-brewer] Before coating, the wafer is primed: "The surface
+dye".[^pat-arc-brewer]
+
+Before coating, the wafer is primed: "The surface
 layer of silicon dioxide on the wafer reacts with HMDS to form
 tri-methylated silicon-dioxide, a highly water repellent
 layer",[^wiki-litho] and "Best results are obtained by applying HMDS
@@ -113,10 +122,14 @@ extremely undesirable contaminant in MOSFET fabrication", so
 "Metal-ion-free developers such as tetramethylammonium hydroxide (TMAH)
 are now used", with the developer's temperature controlled "to within
 0.2 °C".[^wiki-litho] A common ready-to-use strength is 2.38 %
-TMAH.[^microchemicals-dev] Surfactants are added for puddle
+TMAH.[^microchemicals-dev]
+
+Surfactants are added for puddle
 development: Perera found that the developer's surface tension "has to
 be lowered, by adding a surfactant, to avoid 'pullback' of the developer
-during puddling".[^perera-1989] TMAH is also toxic: "The
+during puddling".[^perera-1989]
+
+TMAH is also toxic: "The
 tetramethylammonium ion affects nerves and muscles, causing difficulties
 in breathing, muscular paralysis and possibly death".[^wiki-tmah]
 
@@ -124,7 +137,9 @@ in breathing, muscular paralysis and possibly death".[^wiki-tmah]
 
 Resists are cast from organic solvents, and the same solvents clean the
 wafer: "In the semiconductor industry, PGMEA is a commonly used
-solvent".[^wiki-pgmea] Spin
+solvent".[^wiki-pgmea]
+
+Spin
 coating leaves a thick rim: "Edge bead removal (EBR) is carried out,
 usually with a nozzle, to remove this extra resist as it could otherwise
 cause particulate contamination".[^wiki-litho] A Clariant patent uses
@@ -140,7 +155,9 @@ The reticle is a patterned absorber on a quartz plate, bought as a blank
 to the SEMI hard-surface substrate specification[^semi-p1] and written
 by a mask shop; a mask maker describes "embedded attenuated phase-shift
 masks (EAPSM)" that "rely on a wavelength-tuned, 6% transmission MoSiON
-absorber" at 248 and 193 nm.[^photronics-abr] It is kept clean by a
+absorber" at 248 and 193 nm.[^photronics-abr]
+
+It is kept clean by a
 pellicle, placed so that "moderate-to-small sized particles that land on
 the pellicle will be too far out of focus to print".[^wiki-mask] SEMI P5
 "covers the general requirements for pellicles used on photomasks or
@@ -172,37 +189,20 @@ current company statements about their catalogues; none says what
 SkyWater buys, although Tokyo Ohka Kogyo, JSR and Moses Lake Industries
 are among the suppliers SkyWater's filings name.[^sec-01][^sec-02]
 
-* **i-line positive resists.** DNQ/novolac, including thick grades for
-  implant masks;[^wiki-resist] Tokyo Ohka Kogyo lists "g/i-Line
-  photoresists" among its semiconductor products,[^tok-products] and JSR
-  a lineup "compatible with various exposure sources, including EUV
-  (MOR), EUV (CAR), ArF, KrF, i-line, and g-line".[^jsr-em]
-* **KrF positive resists.** Chemically amplified hydroxystyrene
-  resists;[^ito-2005] TOK lists "KrF excimer laser
-  photoresists".[^tok-products]
-* **Anti-reflective coatings.** Organic dyed polymers of the kind
-  Brewer Science patented;[^pat-arc-brewer] JSR sells "underlayers and
-  topcoats" as "multilayer materials".[^jsr-em]
-* **Adhesion promoter.** HMDS, bis(trimethylsilyl)amine, applied as
-  vapour;[^wiki-hmds] TOK lists "Adhesion Enhancing
-  Materials".[^tok-products]
-* **Developer.** TMAH in water, commonly 2.38 % (0.26 N), with or
-  without surfactant;[^microchemicals-dev][^wiki-resist] SEMI C46 is a
-  "guide for a grade of 25% tetramethylammonium hydroxide", the
-  concentrate,[^semi-c46] and Moses Lake Industries sells TMAH "at
-  concentrations of choice (in water) up to 25%, and with or without
-  surfactants", with "metallic impurity levels of <1000
-  ppt".[^mli-tmah]
-* **Edge-bead and rinse solvents.** PGMEA and ethyl lactate
-  blends;[^wiki-pgmea][^pat-ebr-clariant][^pat-thinner-samsung] TOK
-  lists "Thinners".[^tok-products]
-* **Reticles and pellicles.** Chrome or attenuated phase-shift absorbers
-  on quartz blanks to SEMI P1, protected by pellicles to SEMI
-  P5.[^semi-p1][^semi-p5][^photronics-abr]
-* **Exposure-tool consumables.** KrF laser gas, a noble gas with a
-  reactive halogen[^wiki-excimer] (krypton with a fluorine–neon premix,
-  as the step pages list it), and mercury arc
-  lamps.[^ushio-uv-lamps]
+:::{table} Representative lithography materials and grades, as public and current supplier documents describe them
+:widths: 20 12 68
+
+| Material | As supplied | Specification |
+|---|---|---|
+| i-line positive resists | — | DNQ/novolac, including thick grades for implant masks;[^wiki-resist] Tokyo Ohka Kogyo lists "g/i-Line photoresists" among its semiconductor products,[^tok-products] and JSR a lineup "compatible with various exposure sources, including EUV (MOR), EUV (CAR), ArF, KrF, i-line, and g-line"[^jsr-em] |
+| KrF positive resists | — | Chemically amplified hydroxystyrene resists;[^ito-2005] TOK lists "KrF excimer laser photoresists"[^tok-products] |
+| Anti-reflective coatings | — | Organic dyed polymers of the kind Brewer Science patented;[^pat-arc-brewer] JSR sells "underlayers and topcoats" as "multilayer materials"[^jsr-em] |
+| Adhesion promoter | — | HMDS, bis(trimethylsilyl)amine, applied as vapour;[^wiki-hmds] TOK lists "Adhesion Enhancing Materials"[^tok-products] |
+| Developer | — | TMAH in water, commonly 2.38 % (0.26 N), with or without surfactant;[^microchemicals-dev][^wiki-resist] SEMI C46 is a "guide for a grade of 25% tetramethylammonium hydroxide", the concentrate,[^semi-c46] and Moses Lake Industries sells TMAH "at concentrations of choice (in water) up to 25%, and with or without surfactants", with "metallic impurity levels of <1000 ppt"[^mli-tmah] |
+| Edge-bead and rinse solvents | — | PGMEA and ethyl lactate blends;[^wiki-pgmea][^pat-ebr-clariant][^pat-thinner-samsung] TOK lists "Thinners"[^tok-products] |
+| Reticles and pellicles | — | Chrome or attenuated phase-shift absorbers on quartz blanks to SEMI P1, protected by pellicles to SEMI P5[^semi-p1][^semi-p5][^photronics-abr] |
+| Exposure-tool consumables | — | KrF laser gas, a noble gas with a reactive halogen[^wiki-excimer] (krypton with a fluorine–neon premix, as the step pages list it), and mercury arc lamps[^ushio-uv-lamps] |
+:::
 
 ## At SkyWater
 
@@ -223,16 +223,21 @@ reticle supplier. Both of SkyWater's filings describe the raw materials
 as including "semiconductor grade photoresist and developer for
 photolithography" and name suppliers:[^sec-01][^sec-02]
 
+:::{table} Photoresist and developer suppliers as SkyWater's filings name them
+:widths: 22 48 30
+
 | Filing | Photoresist | Developer |
 |--------|-------------|-----------|
 | S-1 (2021)[^sec-01] | "The Dow Chemical Company (photoresist)"; "JSR Corporation (photoresist)"; "Tokyo Ohka Kogyo America, Inc. (photoresist)" | "Air Products & Chemicals, Inc., Moses Lake (developer)" |
 | 10-K for fiscal 2023[^sec-02] | "Rohm and Haas EM LLC (a subsidiary of DuPont) (photoresist)"; "JSR Micro Inc. (photoresist)"; "FUJIFILM Electronic Materials USA, Inc. (photoresist)"; "Tokyo Ohka Kogyo America, Inc. (photoresist)" | "Moses Lake Industries Inc. (developer)" |
+:::
 
 Neither filing names a product or says which resist serves which tool.
 Moses Lake Industries describes itself as "Founded in 1984 as a wholly
 owned subsidiary of Tama Chemicals" and sells TMAH solutions;[^mli-about][^mli-tmah]
 the filings do not say what developer SkyWater buys, and the S-1's
 wording, which attaches "Moses Lake" to Air Products, is not explained.
+
 The PDK's design assumptions give a "Photoresist thickness" of 1.14 and
 a "Photoresist thickness for HV Tip Implants" of 0.3 (µm),[^pdk-03]
 and the process-steps sheet records a mask type for three plates only,
@@ -244,7 +249,9 @@ phase-shift masks for vias 2 and 3 and a binary mask for via
 
 The exposure tools, tracks and reticle services are SkyWater statements
 and rank as **strong** on the scale of the
-{ref}`machines index <machines-reading-evidence>`.[^skw-01] The resist
+{ref}`machines index <machines-reading-evidence>`.[^skw-01]
+
+The resist
 and developer suppliers are strong as statements but tie no product,
 chemistry or wavelength to a supplier, and they changed between the
 2021 and 2023 filings.[^sec-01][^sec-02] That TMAH is the developer, and
@@ -330,7 +337,9 @@ conditions of their own.
   amplified resist, and the implant blocks, relaxed etch masks and thick
   top levels as i-line levels with DNQ/novolac resist, as the index rows
   record; the {ref}`MM3 <step-139>` and {ref}`MM4 <step-154>` pages
-  allow either. The
+  allow either.
+
+  The
   chemically amplified levels carry the airborne-amine and delay
   constraints the i-line levels do not.[^macdonald-1991][^huang-1994]
 * **Resist thickness.** The PDK assumes 1.14 µm of photoresist in
@@ -361,15 +370,15 @@ conditions of their own.
 
 ## Related pages
 
-* {ref}`category-lithography` — the sequence of a mask step, resists,
-  anti-reflective coatings and developer.
-* {ref}`machine-coat-develop-track` — the tool that primes, coats,
-  bakes and develops.
-* {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
-  exposure tools and their light sources.
-* {ref}`masks-index` — the 36 mask steps and their reticles.
-* {ref}`category-strip` — removing the resist after etch or implant.
-* {ref}`materials-index` — all consumable classes.
+* **Category.** {ref}`category-lithography` — the sequence of a mask
+  step, resists, anti-reflective coatings and developer.
+  {ref}`category-strip` — removing the resist after etch or implant.
+* **Machines.** {ref}`machine-coat-develop-track` — the tool that
+  primes, coats, bakes and develops. {ref}`machine-i-line-stepper` and
+  {ref}`machine-duv-krf-stepper` — the exposure tools and their light
+  sources.
+* **Indexes.** {ref}`masks-index` — the 36 mask steps and their
+  reticles. {ref}`materials-index` — all consumable classes.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

@@ -389,3 +389,25 @@ copies). `check_materials.py`, `check_refs.py`, `check_inforce.py`,
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
 Incremental `-W` build: clean. Screenshots at 400 px: table and
 paragraphs wrap cleanly.
+
+### `lithography-materials.md`
+
+Rules applied: R-MODELS (8-row 3-column table), R-CAPTION (existing
+"Filing | Photoresist | Developer" table wrapped -- 3 columns, two
+holding stacked quotes, checked at 400px and confirmed no overflow),
+R-PARA (9 over-100-word paragraphs split at seams), R-PARA (one
+over-60-word list item split into lead + continuation), R-RELATED
+(Related pages grouped under bold labels).
+
+`check_preserved.py --allow-regrouped`: 0 undeclared differences, no
+additions or regroupings needed -- every split fell on an existing
+citation boundary.
+
+Over-cap counts, before -> after: paragraphs > 100 words 9 -> 1 (R-INTRO
+lead); list items > 60 words 1 -> 0; tables with no caption 1 -> 0.
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: both tables and
+all lists wrap cleanly, including the 3-column Photoresist/Developer
+table despite two prose columns.
