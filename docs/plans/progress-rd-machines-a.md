@@ -682,6 +682,49 @@ checked.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 13. `docs/machines/medium-current-implanter.md` — done
+
+Largest paragraph-density page of the batch so far (10 H3 subsections in "What the machine class
+is and how it works", each written as one dense paragraph). Rules applied: R-INTRO (template
+sentence dropped, pointer moved to `{seealso}`). R-MODELS: two tables instead of one — a 5-row
+Eaton/Axcelis table and a 3-row Nissin table, with the Varian paragraph (E220/E500, VIISta 810,
+Swenson's contamination study, the Applied Materials acquisition) left as prose *between* them,
+in its original reading position (see the number_order note below for why). R-ENTRIES: the "Read
+term by term" paragraph decodes the single SkyWater entry's own fields, not several named
+entries; left as prose, per the page-10/11/12 precedent. R-LIST: the opening H2's Wikipedia
+sentence ("an ion source with extraction electrodes, a magnet with slits '...', 'some combination
+of beam scanning...', and a way of collecting the charge...") was a four-part enumeration written
+as one 69-word sentence; converted to a four-item bulleted list, each item keeping its quote and
+falling under the 60-word list-item cap. R-PARA (10 of 10 H3 paragraphs and 2 list-item bodies
+split, all by inserting a paragraph break at a natural topic seam rather than rewording).
+R-SENTENCE (about 14 sentences over 45 words split, mostly at a semicolon or an "and"/"so" join,
+several requiring the marker to be repeated on both halves per the batch's inherited rule).
+R-RELATED (7 ungrouped bullets → 4 grouped: Category/Machines/Materials/Indexes). R-CAPTION (both
+new tables).
+
+**A number_order loss resolved by moving one vendor's whole paragraph out of table order.** The
+Eaton/Axcelis, Varian and Nissin bullets were originally three back-to-back paragraphs; converting
+all three straight into one table (vendor blocks in the same order) broke the Varian block
+specifically, because its own bullet mixes a quoted "E-series ... 150mm and 200mm" fact with a
+*prose* mention of "the EHP-220/500" and only *then* a second quoted "200 mm/300 mm" fact from a
+different model (VIISta 810) — the prose mention sits between the two quotes in the source, but a
+table's Model/Year/Published-figures columns cannot hold a free-standing prose aside between two
+rows. Splitting the Representative-models section into two tables (Eaton/Axcelis, then Nissin)
+with the Varian paragraph left as prose in between — its original position — reproduced the exact
+source order with no rewrite. The same MC3/HE3-style fix from page 11 recurred here too: the
+Axcelis MC3 row's "for 300 mm" had to move into the Model cell (`MC3 (300 mm)`) so the row emits
+300 before 1998, matching the source's "the MC3 for 300 mm (1998)".
+
+`check_preserved.py --base 0765dfeb --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 (`about`, `SKY130`); every `number_order` difference resolved to REGROUPED once the
+table was split as above.
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 4–5 (both new tables and the Varian
+paragraph between them, wraps cleanly with no overflow) and 8 (grouped Related pages) read well.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but

@@ -6,11 +6,6 @@ light and moderate doses that must be placed precisely: threshold and
 channel implants, punch-through and depletion implants, halos, and the
 tilted tips of the higher-voltage transistors. It implants one wafer at
 a time, which lets it hold a large, accurately known tilt and twist.
-This page describes the class in general, lists representative
-200 mm-era models, and then says what SkyWater has published about its
-own tool of this class and which SKY130 steps this reference assigns to
-it. The physics of implantation (ranges, channelling, damage) is on the
-{ref}`category page <category-implant>`.
 
 | | Medium-current ion implanter |
 |---|---|
@@ -23,15 +18,26 @@ it. The physics of implantation (ranges, channelling, damage) is on the
 | SkyWater-listed tool | "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt"[^skw-01] |
 | SKY130 steps | 20 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-medium-current-implanter-steps>` |
 
+:::{seealso}
+The physics of implantation (ranges, channelling, damage) is on the
+{ref}`category page <category-implant>`.
+:::
+
 ## What the machine class is and how it works
 
 Every beam-line implanter has the same chain of functions. Wikipedia
-summarises it as an ion source with extraction electrodes, a magnet with
-slits "that allow only ions with a specific value of the product of mass
-and velocity/charge to continue down the beamline", "some combination
-of beam scanning and wafer motion" to spread the dose, and a way of
-collecting the charge of the implanted ions "so that the delivered dose
-can be measured in a continuous fashion".[^wiki-implant] Nissin
+summarises the chain as:[^wiki-implant]
+
+* an ion source with extraction electrodes;
+* a magnet with slits "that allow only ions with a specific value of
+  the product of mass and velocity/charge to continue down the
+  beamline";
+* "some combination of beam scanning and wafer motion" to spread the
+  dose; and
+* a way of collecting the charge of the implanted ions "so that the
+  delivered dose can be measured in a continuous fashion".
+
+Nissin
 describes its medium-current EXCEED line as "an ion source, analyzer
 magnet, acceleration tube, energy filter magnet (FEM), beam sweep magnet
 (BSM), collimator magnet (COL), and end station".[^tanjyo-2011] What
@@ -47,14 +53,18 @@ demands.[^glavish-2018]
 The source is an arc chamber in which a plasma is struck in a dopant
 gas — boron trifluoride, arsine or phosphine — between tungsten
 electrodes; ions are drawn out through a slit by an extraction
-electrode.[^wiki-implant] The classic design is the Bernas source, whose
+electrode.[^wiki-implant]
+
+The classic design is the Bernas source, whose
 filament is exposed to the plasma; in an indirectly heated cathode
 (IHC) source "a plate cathode positions between the plasma and the
 filament so that the filament is not exposed directly to the
 plasma".[^tanjyo-2011] Horsky's IHC source has "several times the
 lifetime of commercial Bernas sources which incorporate a bare filament
 cathode", with doubly charged fractions of "15% for phosphorus, and 2%
-for boron".[^horsky-1998-ihc] The Eaton 8250 uses "an extended life ion
+for boron".[^horsky-1998-ihc]
+
+The Eaton 8250 uses "an extended life ion
 source using an indirectly heated cathode for longer source life and
 higher multiple charged beam currents".[^harlan-1998] Multiply charged
 ions matter to this class because they reach two or three times the
@@ -67,11 +77,14 @@ EXCEED9600A reaches 320 keV with singly, 640 keV with doubly and
 The analysing magnet selects one ion species and charge state, and the
 ions are then accelerated towards the wafer;[^wiki-implant] the 8250HT
 works "in either deceleration or acceleration mode".[^axcelis-8250]
+
 Collisions "with residual gas particles in the vicinity of the
 accelerating tube" create ions of the wrong energy,[^tanjyo-2011] so a
 medium-current beam line is built to remove them: "In medium current
 ion implanters there is also a neutral ion trap before the process
-chamber".[^wiki-implant] The Eaton 8250HT's
+chamber".[^wiki-implant]
+
+The Eaton 8250HT's
 "Angular Energy Filter (AEF) … deflects the beam by 15 degrees and
 eliminates contamination before it reaches the wafer",[^axcelis-8250]
 and Nissin introduced "the world's first energy filtering function" on
@@ -89,7 +102,9 @@ the hybrid approach. The Eaton 8250 sweeps the beam with an
 electrostatic scanner and "a novel electrostatic scan angle correction
 lens to produce parallel beams", with "beam parallelism better than
 +/-0.2 degrees at the wafer", and moves the wafer mechanically in the
-other direction.[^harlan-1998] Varian's VIISta 810 uses "an
+other direction.[^harlan-1998]
+
+Varian's VIISta 810 uses "an
 electrostatic deflector operating at 1 kHz", "a 45° angle corrector
 magnet" to make the beam parallel, and "a mechanical scan of the wafer"
 for the vertical direction.[^olson-1998] Nissin scans magnetically and
@@ -102,18 +117,23 @@ variations as small as ±0.5 degrees".[^rathmell-1998]
 
 The dose is "the integral over time of the ion current", collected so
 that it "can be measured in a continuous fashion and the implant process
-stopped at the desired dose level".[^wiki-implant] The current is read
+stopped at the desired dose level".[^wiki-implant]
+
+The current is read
 on a Faraday cup, and ions striking the cup knock out electrons: "Escape
 of secondary and tertiary electrons from the Faraday cup body … causes a
-measurement error", so a suppression electrode is placed at the cup's
-entrance — "By negatively charging the electrostatic suppression
-electrode, the escape of electrons from the Faraday cup is inhibited",
-as a Varian patent describes the established approach, to which it adds
-magnetic suppression.[^pat-faraday-varian] In the 8250,
+measurement error".[^pat-faraday-varian] So a suppression electrode is
+placed at the cup's entrance: "By negatively charging the electrostatic
+suppression electrode, the escape of electrons from the Faraday cup is
+inhibited", as a Varian patent describes the established approach, to
+which it adds magnetic suppression.[^pat-faraday-varian]
+
+In the 8250,
 "dosimetry is based on robust measurements of beam flux at the plane of
-the wafer";[^harlan-1998] the EXCEED line measures the scanned beam on
+the wafer".[^harlan-1998] The EXCEED line measures the scanned beam on
 Faraday arrays in front of and behind the wafer position and iterates
 the scan waveform until the dose profile is uniform.[^tanjyo-2011]
+
 Collisions with residual gas neutralise ions or strip them to a higher
 charge state, which "can lead to dosing errors",[^curello-1998] and
 resist outgassing "can alter the real-time measurements of implanted
@@ -130,12 +150,13 @@ damage may be caused to ICs due to the electrical
 charge-up".[^tanjyo-2011] Implanters therefore supply electrons to the
 beam near the wafer; Current et al. model the charge-control systems in
 use, "dense and dilute plasma flows, electron showers".[^current-1996-iit]
+
 Nissin's 200 mm EXCEED2000AH uses "a filament-type plasma flood gun
-(PFG)" and its 300 mm EXCEED2300H an RF-type PFG; to keep the plasma
-electrons from charging the device negatively, "the electron energy must
-be less than 3 eV", corresponding to the breakdown voltage of gate oxides
-of 1 nm or less, and the RF type "can supply such low energy electrons
-by magnetic filtering".[^tanjyo-2011] Eaton, whose history calls charge
+(PFG)" and its 300 mm EXCEED2300H an RF-type PFG.[^tanjyo-2011] To keep
+the plasma electrons from charging the device negatively, "the electron
+energy must be less than 3 eV", corresponding to the breakdown voltage
+of gate oxides of 1 nm or less, and the RF type "can supply such low
+energy electrons by magnetic filtering".[^tanjyo-2011] Eaton, whose history calls charge
 control one of the bigger process challenges of the era because gate
 oxides were "very sensitive to charge breakdown", introduced a "back biased
 Secondary Electron Flood (SEF)" in 1996.[^axcelis-history]
@@ -144,10 +165,12 @@ Secondary Electron Flood (SEF)" in 1996.[^axcelis-history]
 
 The end station moves wafers by robot from cassettes through load locks
 onto a platen,[^tanjyo-2011] clamps them (the 8250 has "an
-electrostatic clamp"[^harlan-1998]) and tilts and rotates the platen. Serial end
+electrostatic clamp"[^harlan-1998]) and tilts and rotates the platen.
+
+Serial end
 stations reached large angles early: Eaton's NV-6200AV of 1990 offered
 "rotation during processing and multiple tilt angles from 0 to 60
-degrees",[^axcelis-history] and the 8250HT is described as a "high-tilt,
+degrees".[^axcelis-history] The 8250HT is described as a "high-tilt,
 medium-current ion implanter" whose "HT" refers to its "improved
 capabilities for high throughput in high-tilt implants".[^axcelis-8250] Nissin's later end stations measure
 the wafer notch with a camera and hold tilt and twist by "feedback
@@ -155,26 +178,45 @@ control at an accuracy of ±0.1 degrees".[^tanjyo-2011]
 
 ## Representative 200 mm-era models
 
-* **Eaton / Axcelis.** The NV-6200AV (1990), the 8200P ("featuring
-  innovative parallel scanning beam", 1996), the 8250 (presented at IIT
-  1998[^harlan-1998]) and the NV-8250HT (2000), and the MC3 for 300 mm
-  (1998).[^axcelis-history] Eaton
-  describes the 8250 as "a 200mm system that provides enhanced yield and
-  serial processing advantages to users for high-tilt, medium-current
-  implants and indium implants".[^axcelis-8250] Eaton spun the business
-  off as Axcelis Technologies in 2000.[^wiki-axcelis]
-* **Varian.** The E-series — E220 and E500 and their HP, EHP and EHPi
-  versions — described by Varian as its "E-series medium current
-  implanter" line for "150mm and 200mm" wafers;[^varian-eseries-2003]
-  Swenson et al. describe metals-contamination and ion-source work on
-  the EHP-220/500.[^swenson-1996][^swenson-1996-bernas] The VIISta 810
-  followed as a "200 mm/300 mm serial medium current ion
-  implanter".[^olson-1998] Varian Semiconductor was acquired by Applied
-  Materials in 2011.[^wiki-varian]
-* **Nissin Ion Equipment.** The NH20-SP and then the EXCEED series: the
-  EXCEED2000 (1994) and EXCEED2000A (1998) for 200 mm, followed by
-  300 mm models; Nissin states it has "held about 30% share" of the
-  medium-current market "since 2004".[^tanjyo-2011]
+:::{table} Representative Eaton/Axcelis medium-current implanters of the 200 mm era (figures as each source gives them)
+:widths: 12 24 8 56
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Eaton | NV-6200AV | 1990 | —[^axcelis-history] |
+| Eaton | 8200P | 1996 | "featuring innovative parallel scanning beam"[^axcelis-history] |
+| Eaton | 8250 | 1998 | presented at IIT[^harlan-1998] |
+| Eaton | NV-8250HT | 2000 | —[^axcelis-history] |
+| Axcelis | MC3 (300 mm) | 1998 | —[^axcelis-history] |
+:::
+
+Eaton describes the 8250 as "a 200mm system that provides enhanced
+yield and serial processing advantages to users for high-tilt,
+medium-current implants and indium implants".[^axcelis-8250] Eaton
+spun the business off as Axcelis Technologies in 2000.[^wiki-axcelis]
+
+The E-series — E220 and E500 and their HP, EHP and EHPi versions — is
+described by Varian as its "E-series medium current implanter" line
+for "150mm and 200mm" wafers.[^varian-eseries-2003] Swenson et al.
+describe metals-contamination and ion-source work on the
+EHP-220/500.[^swenson-1996][^swenson-1996-bernas] The VIISta 810
+followed as a "200 mm/300 mm serial medium current ion
+implanter".[^olson-1998] Varian Semiconductor was acquired by Applied
+Materials in 2011.[^wiki-varian]
+
+:::{table} Representative Nissin Ion Equipment medium-current implanters of the 200 mm era (figures as each source gives them)
+:widths: 12 24 8 56
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Nissin | NH20-SP | — | —[^tanjyo-2011] |
+| Nissin | EXCEED2000 | 1994 | —[^tanjyo-2011] |
+| Nissin | EXCEED2000A | 1998 | for 200 mm[^tanjyo-2011] |
+:::
+
+Nissin's EXCEED series was followed by 300 mm models; Nissin states it
+has "held about 30% share" of the medium-current market "since
+2004".[^tanjyo-2011]
 
 The {ref}`category page <category-implant>` lists the same families;
 Current's review sets them in the history of implantation for silicon
@@ -193,6 +235,7 @@ tool:[^skw-01]
 
 Read term by term: the species are ¹¹B⁺, BF₂⁺ and As⁺, with no
 phosphorus; the dose range is 10¹¹–10¹⁴ cm⁻²; the tilt range is 0–60°.
+
 We read "ESC chuck" as an electrostatic chuck, which Harlan and Petry
 describe on the 8250,[^harlan-1998] and "E shower" as an electron shower
 for charge control, a term the charging literature
@@ -278,24 +321,31 @@ page.
   phosphine for As⁺ and P⁺.[^wiki-implant] Phosphine is "a highly toxic
   respiratory poison",[^wiki-ph3] and arsine for implanters "can be
   provided by a sub-atmospheric gas source", adsorbed on "a solid
-  microporous adsorbent inside a gas cylinder".[^wiki-ash3] The ATMI
+  microporous adsorbent inside a gas cylinder".[^wiki-ash3]
+
+  The ATMI
   patent behind such sources records the earlier practice of dilute
   (10–15 %) hydride mixtures "in either 0.44 L or 2.3 L cylinders at
-  pressures of 400-1800 psig", and that switching from arsenic to
+  pressures of 400-1800 psig".[^pat-sds-atmi] It also records that
+  switching from arsenic to
   phosphorus "on an implanter with solid sources can take as long as 90
-  minutes" against "5-15 minutes with gas sources".[^pat-sds-atmi] A used
+  minutes" against "5-15 minutes with gas sources".[^pat-sds-atmi]
+
+  A used
   1995 Varian E500 HP "Medium Current Implanter" listed for sale has
   "PH3 - SDS II, AsH3 - SDS II, BF3 - SDS" bottles in its gas box, with
   argon.[^fabsurplus-e500] Boron trifluoride is "applied as dopant in
   ion implantation".[^wiki-bf3]
   The SkyWater entry has no phosphorus.[^skw-01]
 * **Ion-source parts.** Filaments or indirectly heated cathodes, arc
-  chambers, reflectors and extraction electrodes are worn by the plasma;
-  Wikipedia gives source lives of "often … 300 hours",[^wiki-implant]
-  Horsky IHC cathode lives "from 70 h at the highest discharge power
-  levels to over 500 h for moderate operation",[^horsky-1998-ihc] and
+  chambers, reflectors and extraction electrodes are worn by the plasma.
+  Wikipedia gives source lives of "often … 300 hours".[^wiki-implant]
+  Horsky gives IHC cathode lives "from 70 h at the highest discharge power
+  levels to over 500 h for moderate operation".[^horsky-1998-ihc]
   Swenson et al. lowered arc voltages on the EHP-500 "to reduce sputter
-  erosion of the filament".[^swenson-1996-bernas] The E500 listing
+  erosion of the filament".[^swenson-1996-bernas]
+
+  The E500 listing
   specifies a "Type II Bernas ion source w/ tungsten arc
   chamber".[^fabsurplus-e500]
 * **Beam-line liners.** Graphite and silicon-coated shields line the
@@ -336,7 +386,7 @@ not public.
   {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`,
   {ref}`NCHI <step-045>`) are shallow and light, so a small change of
   beam angle alters the channelled tail and the thermal-wave or
-  sheet-resistance reading;[^rathmell-1998] the step pages name
+  sheet-resistance reading.[^rathmell-1998] The step pages name
   thermal-wave monitors for them, the method Smith et al.
   introduced.[^smith-1985]
 * **Energy purity and dose at low dose.** Energy contamination from
@@ -369,20 +419,18 @@ not public.
 
 ## Related pages
 
-* {ref}`category-implant` — implantation physics and the 25 implant
-  steps of SKY130.
-* {ref}`machine-high-current-implanter` and
+* **Category.** {ref}`category-implant` — implantation physics and the
+  25 implant steps of SKY130. {ref}`category-strip` — removal of the
+  implant resist after each implant.
+* **Machines.** {ref}`machine-high-current-implanter` and
   {ref}`machine-high-energy-implanter` — the other two implanter
   classes and SkyWater's two GSD entries.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — dopant gases, ion-source parts and their
-  hazards.
-* {ref}`category-strip` — removal of the implant resist after each
-  implant.
-* {ref}`material-substrates` — monitor wafers for dose and uniformity.
-* {ref}`material-dopant-sources` — dopant gases, solid sources,
-  sub-atmospheric packages and ion-source parts.
+* **Materials.** {ref}`material-substrates` — monitor wafers for dose
+  and uniformity. {ref}`material-dopant-sources` — dopant gases, solid
+  sources, sub-atmospheric packages and ion-source parts.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  dopant gases, ion-source parts and their hazards.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
