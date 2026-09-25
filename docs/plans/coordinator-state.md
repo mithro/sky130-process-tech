@@ -45,7 +45,6 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 |---|---|---|---|
 | `topic/rd-figures-s8` | W1c: emulator improvements + series S8 (107–117): written; Opus review running | Opus | in review |
 | `topic/rd-steps-048-063` | W2 batch 4 (poly module) — first OPUS writer on a step batch, to test whether it passes review first time | Opus | running since 2026-09-25 |
-| `topic/rd-materials` | W3 batch 3: material pages — fix round done, Opus verification running | Sonnet / Opus | verifying |
 | `topic/rd-machines-a` | W3 batch 2: machine pages 1–15 — review rejected as it stood (false Year cells, dropped words); fix round running | Sonnet | fixing |
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
