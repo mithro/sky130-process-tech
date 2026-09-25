@@ -531,3 +531,42 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   quotations); "At 365 nm that threshold …" (46); the Polarity and tone cell (45; not in the body).
   Before → after: paragraphs 10 → 0, items 1 → 0, sentences 16 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 13. mm1 — done
+
+* **Rules applied.** R-INTRO (170 → 40 words; first sentence split at its colon; the "With 0.14 µm lines
+  …" and waffle-drop sentences moved to the top of `## What the mask defines`, "it is" → "the mask is",
+  the first split before "the step pages read it"); R-PARAMS (nine Table 4 / Table 7 criteria); R-CAPTION
+  (rule table, parameter table); R-PARA, R-SENTENCE; R-LIST (what the mask carries, with the "dummy fill"
+  item keeping its "on our reading of the waffle-drop rules below"); R-RELATED; R-H3 (Exposure class, Mask
+  errors, Reflective substrate, Fill and the polish above, Overlay and alignment ← "Overlay", Pattern
+  transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS.** The Table 2 sentence (with its remark that the "Metal 1 - Cu" row belongs to a copper back
+  end) stays prose. "Table 4 adds … (`DEFC`) … (`BiasMM1`) … (`Met1Thick`), and, among its pattern-density
+  criteria, … (`OxideMinPD`) … (`MMPDrange`) … (`SMALLPDBOX`) … (`PD_FrameWP`); Table 7 gives … (`HugeM`)
+  and … (`waffle_large`).[^pdk-03]" became "Tables 4 and 7 add the following:[^pdk-03]" and a nine-row
+  table in the base's order; "among its pattern-density criteria" went into the caption with the four
+  identifiers it covers.
+* **Hedge repeated on a split:** "On the step pages' readings" on the passivation / strip / clean clause
+  of Pattern transfer ("with passivation, resist strip and clean treated as part of that step" → "On the
+  step pages' readings passivation, resist strip and clean are treated as part of that step").
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m, here wrapped
+  "gathers what public sources say / about the mask itself"; `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,identifiers`): markers `pdk-periph` ×2 (list
+  lead-in, the base marker staying on the island/hole sentence; the fill-check sentence split at its
+  colon), `pdk-06` (`gds_layers.csv` sentence), `mask-renders` (render sentence), `steps-sheet` ("Plate
+  number" lead), `itrs-03` (ITRS sentence, as on ctm1), `word-2002` ("… and obtained" → "They obtained"),
+  `wong-1998` (second Wong finding), `rocke-1988` ("… and use" → "They use"); numbers — the PDK-table
+  column and caption (`4`, `7`), "ITRS 2001" repeated, `1` and `3` from "metal 1" and "nsm.3" in the rule
+  caption; identifier `m1` (rule caption).
+* **LOST `number_order`, read by hand:** the Exposure-class sentence (the repeated "ITRS 2001", as on
+  ctm1); the Table 4 / Table 7 sentence (the parameter table: values 0.15, 0.6, 0.35, 0.75, 0.3, 700,
+  0.55, 3, 7.2 in the base's order, each on the base's table; the "1" of "Metal 1 thickness" and the "4"
+  of "divisible by 4" are inside the quoted descriptions as before).
+* **Marker coverage.** Flags read: the shape list (lead-in marker); clauses with no marker of their own in
+  the base. (`markcov`'s NEWHEDGE "assum" is "Criteria & Assumptions" in the caption, not a hedge.)
+* **Over the caps after the pass:** the flag-legend sentence (68 by the script, seven quotations); the
+  quick-facts Exposure class cell (36; not in the body) and two quoted rule cells (33, 27). Before →
+  after: paragraphs 11 → 0, items 1 → 0, sentences 15 → 1, cells 3 → 3.
+* **Content problems for the owner:** none found.
