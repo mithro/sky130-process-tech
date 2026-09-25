@@ -821,3 +821,13 @@ One commit each.
 * **069:79, Hori's LATID (50 w): left as it is**, as the review rules borderline: the only split, at ",
   instead of under the spacer", needs a new subject and a repeated marker for a contrast that is one
   claim.
+* **L6, 070 `[^wiki-ash]` scope — checked against the source, no change.** The current Wikipedia
+  *Plasma ashing* article (wikitext fetched once, 2026-09-26, with the project's user agent) says that
+  ions formed in an in-chamber plasma "could damage the wafer" and that a downstream configuration
+  "prevents damage to the wafer surface"; it mentions implanted resist becoming "resistant to
+  oxidizing". It says nothing about a thin film being over-ashed when the recipe is tuned for a thick
+  one, nor about screen oxide, gate-oxide edges or poly sidewalls seeing the plasma for longer. So the
+  marker supports "That is one reason downstream (charge-free) ashing is preferred over direct plasma
+  exposure once gates exist.", where it stands, and not the over-ashing sentence; repeating it there would
+  attribute to Wikipedia a claim it does not make. The over-ashing sentence is this reference's own
+  reasoning and had no separate marker in the base either.
