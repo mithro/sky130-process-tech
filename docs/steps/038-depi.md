@@ -347,8 +347,9 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* **Species, energy and dose.** These are not public; arsenic at
-  tens of keV and ~10¹² cm⁻² is an era-typical inference.
+* **Species, energy and dose.** The species, energy and dose of `DEPI`
+  are not public; arsenic at tens of keV and ~10¹² cm⁻² is an
+  era-typical inference.
 * **Which implant the drawing labels.** Whether the "Depletion
   Implant" label in the PDK drawing denotes a single implant or the
   combined effect of `PTSI` and `DEPI` is not stated; we read `DEPI`

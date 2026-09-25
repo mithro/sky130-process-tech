@@ -334,7 +334,8 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* **Species, energy, dose and tilt.** These are not public; the values
+* **Species, energy, dose and tilt.** The species (boron or indium),
+  energy, dose and tilt of `PTSI` are not public; the values
   above are from a Cypress patent for a later node and from
   era-typical logic patents.
 * **Indium tool configuration.** Indium is absent from SkyWater's
