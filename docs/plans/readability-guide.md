@@ -471,7 +471,9 @@ key `para>100w`; `grep -rn "This page describes the class in general" docs/` (62
 **Applies when** the `## Step category` section is a single paragraph of more than 35 words.
 
 **Do.**
-1. First paragraph, ≤ 35 words: the classification sentence, with its markers.
+1. First paragraph: the classification sentence, with its markers — ≤ 35 words where it can be
+   split at an existing seam (a semicolon, a closing em dash); never reword to reach 35. The §1
+   45-word sentence cap still applies.
 2. If **two or more** sentences remain and they describe this step, add `**Specific to this
    step:**` and one bullet per sentence. If one sentence remains, leave it as a second paragraph
    with no label and no bullet. A sentence that only lists other steps ("Similar etches occur
