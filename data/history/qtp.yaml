@@ -7904,3 +7904,290 @@ documents:
   notes: Covers the same Hydra/8C29000A device family as qtp-060201 (this session, Fab 4); this report's
     later history row (073302, Jan 08) names a Metal 2 mask change on the "Hydra Device (8C29000AT)"
     without naming a fab, printed under the plain "S4AD-5" name rather than "S4AD-5CTI".
+- id: qtp-032508
+  origin: cypress
+  doc_type: QTP
+  number: '032508'
+  cypress_document_number: null
+  title: PSoC Mixed Signal Array Product Family, S4AD-5 Technology, Fab 2
+  version: '4.0'
+  date_printed: January 2008
+  url: https://www.cypress.com/file/92321/download
+  archive_url: https://web.archive.org/web/20211130004251/https://www.cypress.com/file/92321/download
+  retrieved: '2026-09-25'
+  sha256: e05c6a9601ad40191eb41b2b9e9c8d1159093a9a52e10fe015c2b5b6653dbb27
+  technology_codes:
+  - S4AD-5
+  fab: Fab 2 (Cypress Semiconductor -- CTI Round Rock, TX)
+  products:
+  - CY8C22113
+  - CY8C22213
+  - CY8C22113A
+  - CY8C22213A
+  - CY8C24123
+  - CY8C24223
+  - CY8C24423
+  - CY8C24123A
+  - CY8C24223A
+  - CY8C24423A
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6,000A Al 0.5% Cu /1,200A TiW; Metal 2: 500A Ti/8,000A Al 0.5%
+      Cu/300A TiW'
+    passivation: 3,000A TeOs / 6,000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: 1P2M/0.35um
+    gate_oxide: SiO2 / 110°A
+    fab_location: Cypress Semiconductor – CTI Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5CTI SONOS
+    transistors: '150,000'
+    gates: '25,000'
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product
+      family and bond option.
+    date: Apr 01
+  - number: '032508'
+    description: PSoC 8C22XX/8C24XXX Product Family on Industrial SONOS S4AD-5 Technology
+    date: Mar 04
+  - number: '043104'
+    description: PSoC 8C24XXXB (New Die Revision) to fix know errata and improve silicon performance
+    date: Jul 04
+  - number: '073901'
+    description: New Metal 2 (MM2) masks on Lithium Device (8C24001BT) on S4AD-5 Technology, Fab 2
+    date: Jan 08
+  quotes:
+  - text: PSoC 8C22XX/8C24XXX Product Family on Industrial SONOS S4AD-5 Technology
+    location: p.2, Product Qualification History, row 032508
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-5CTI SONOS'
+    location: p.3, Technology/Fab Process Description
+  notes: Design rule printed as "1P2M/0.35um" (an abbreviated wording distinct from most other S4AD-5
+    reports' "Single Poly, Double Metal, 0.35 µm") for the same figure. Gate oxide is printed "SiO2 / 110°A"
+    (a stray degree sign before the Å), quoted verbatim.
+- id: qtp-063003
+  origin: cypress
+  doc_type: QTP
+  number: '063003'
+  cypress_document_number: null
+  title: Nitride Seal Mask (NSM) Qualification, S4AD-5 Technology, Fab 2
+  version: '1.0'
+  date_printed: June 2007
+  url: https://www.cypress.com/file/93161/download
+  archive_url: https://web.archive.org/web/20201101021800/https://www.cypress.com/file/93161/download
+  retrieved: '2026-09-25'
+  sha256: 635c77ea52fb75bab1cf7d584605e8c35d9426fb4f4dc67f4b75b6ecf86bd5c2
+  technology_codes:
+  - S4AD-5
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products: []
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6,000A Al 0.5% Cu /1,200A TiW; Metal 2: 500A Ti/8,000A A1 0.5%
+      Cu/300A TiW'
+    passivation: 3000A TeOs / 6,000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2/ 110A
+    fab_location: Cypress Semiconductor – Round Rock, TX
+    die_fab_line_id: 'Fab2, S4AD-5'
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5/ New Product, Programmable Clock Generator, CY2414ZC, its product
+      family and bond option.
+    date: Apr 01
+  - number: '063002'
+    description: S4AD Technology Nitride Seal Mask (NSM) Process Implementation in Fab2 using MXP Equipment
+    date: Oct 06
+  - number: '063003'
+    description: S4AD Technology Nitride Seal Mask (NSM) Process Implementation in Fab2 using Drytek
+    date: Apr 07
+  quotes:
+  - text: Qualify S4AD Technology, Nitride Seal Mask Process at Fab 2 using Drytek
+    location: p.3, Product Description, Qualification Purpose
+  - text: 'Fab2, S4AD-5'
+    location: p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  notes: 'This report''s cover calls itself a "Process Qualification Report" (not "Product Qualification
+    Report") and covers "All S4 Devices"/"All S4AD Devices" rather than one product, similar in kind to
+    qtp-053103''s R9-family mask qualification (this session). Its own history row (063002, Oct 06) names
+    an earlier equipment-specific NSM implementation ("using MXP Equipment") superseded by this one (''using
+    Drytek'').'
+- id: qtp-010902
+  origin: cypress
+  doc_type: QTP
+  number: '010902'
+  cypress_document_number: null
+  title: Programmable Clock Generator Family, S4AD-5 Technology, Fab 2
+  version: '2.0'
+  date_printed: March 2005
+  url: https://www.cypress.com/file/91606/download
+  archive_url: https://web.archive.org/web/20210518082051/https://www.cypress.com/file/91606/download
+  retrieved: '2026-09-25'
+  sha256: 785f03b381793c33c9daf7ce5be12c98659f1d96caecc96454c4aabb9fcfc4a9
+  technology_codes:
+  - S4AD-5
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY22381
+  - CY22392
+  - CY22393
+  - CY22394
+  - CY22395
+  die_ids:
+  - 7C83900A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/6,000Å Al 0.5% Cu /1,200Å TiW; Metal 2: 500Å Ti/8,000Å Al 0.5%
+      Cu/300Å TiW'
+    passivation: 3,000Å TeOs / 6,000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: 'Fab2, S4AD-5'
+    transistors: '50,000'
+    gates: '2,500'
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator Device family , CY2414ZC,
+      and bond option.
+    date: Apr 01
+  - number: '010902'
+    description: New Clock Device Family, CY22392 bond and program option.
+    date: Jul 01
+  quotes:
+  - text: New Clock Device Family, CY22392 bond and program option.
+    location: p.2, Product Qualification History, row 010902
+  - text: 'Fab2, S4AD-5'
+    location: p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  notes: Independently repeats S4AD-5's origin row (QTP 010702, Apr 01); figures agree with the corpus norm.
+- id: qtp-050507
+  origin: cypress
+  doc_type: QTP
+  number: '050507'
+  cypress_document_number: null
+  title: Programmable Clock Generator w/ VCXO Device Family, S4AD-LATCH, Fab 2
+  version: '1.0'
+  date_printed: August 2005
+  url: https://www.cypress.com/file/92611/download
+  archive_url: https://web.archive.org/web/20211208073525/https://www.cypress.com/file/92611/download
+  retrieved: '2026-09-25'
+  sha256: 1bd091c810b026485da6c66768afebafa2febd977824cf9d9435601ffd1e0f6b
+  technology_codes:
+  - S4AD-LATCH
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY22388
+  - CY22389
+  - CY22391
+  - CY24378
+  - CY24745
+  die_ids:
+  - 7C84980A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6,000A Al 0.5% Cu /1,200A TiW; Metal 2: 500A Ti/8,000A Al 0.5%
+      Cu/300A TiW'
+    passivation: null
+    free_phosphorus_percent: 0%
+    design_rule: 1P2m, 0.35 µm
+    gate_oxide: SiO2 / 70Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-LATCH Sonos
+    transistors: '35,000'
+    gates: '2,500'
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product
+      family and bond option.
+    date: Apr 01
+  - number: '044105'
+    description: S4ADLATCH Derivative Technology at Fab2
+    date: Mar 05
+  - number: '050507'
+    description: 7C84980A (CY22388) Device Family using S4AD-Latch Technology, Fab2
+    date: Aug 05
+  quotes:
+  - text: S4ADLATCH Derivative Technology at Fab2
+    location: p.2, Product Qualification History, row 044105
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-LATCH Sonos'
+    location: p.3, Technology/Fab Process Description
+  - text: SiO2 / 70Å
+    location: p.3, Technology/Fab Process Description, Gate Oxide Material/Thickness
+  notes: S4AD-LATCH is a technology derivative of S4AD-5, dated here to QTP 044105 (Mar 05, printed without
+    a hyphen as "S4ADLATCH"). Its gate oxide is printed 70Å against plain S4AD-5's 110Å in every other
+    report in this corpus -- a real figure difference for the derivative, not merely a naming variant. This
+    report's process-description block prints no Passivation Type and Materials line at all (omitted, not
+    blank).
+- id: qtp-071502
+  origin: cypress
+  doc_type: QTP
+  number: '071502'
+  cypress_document_number: null
+  title: Ovation 1 Family, S4AD-5/C8QR-3R Technology, Fab2/4
+  version: '2.1'
+  date_printed: August 2008
+  url: https://www.cypress.com/file/93021/download
+  archive_url: https://web.archive.org/web/20211130175633/https://www.cypress.com/file/93021/download
+  retrieved: '2026-09-25'
+  sha256: 34c8388ef0d331acb7cc96e6b7817e0b037056f97e096b9329bd70b66bbbf3e8
+  technology_codes:
+  - S4AD-5
+  - C8Q-3R
+  fab: Fab 2 / Fab 4 (Cypress CTI-Texas / Cypress CMI-Minnesota)
+  products:
+  - CYONS1001
+  - CYONS1001L
+  - CYONS1001G
+  - CYONS1001LR
+  - CYONS10017
+  - CYONS1001T0
+  - CYONS10800
+  - CYONS10810
+  - CYONS10820
+  die_ids:
+  - 7CN0000A
+  - 7CN1001A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti / 6000A Al 0.5% Cu / 1200A TiW; Metal 2: 500A T i/ 8000A A1 0.5%
+      Cu / 300A TiW'
+    passivation: 7000A TEOS / 6000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2/ 11
+    fab_location: Cypress CTI-Texas
+    die_fab_line_id: 'Fab2, S4AD-5'
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '071502'
+    description: CYONS1001 (Laser Optical Sensor) VCSEL and GOOBI Qualification
+    date: Aug 07
+  - number: '072206'
+    description: CYONS1001 (Optical Navigation System) Ovation 1A (New Digital Die – 7CN1200AC) Qualification
+    date: Aug 07
+  - number: '080804'
+    description: CYONS1001 (Optical Navigation Sensor) S4 die Metal Mask (minor change)
+    date: Mar 08
+  quotes:
+  - text: CYONS1001 (Optical Navigation System) Ovation 1A (New Digital Die – 7CN1200AC) Qualification
+    location: p.2, Product Qualification History, row 072206
+  - text: 'TECHNOLOGY/FAB PROCESS DESCRIPTION (Digital Die: 7CN1001A)'
+    location: p.3, section heading
+  - text: CMOS/ 0.3µm
+    location: p.3, Technology/Fab Process Description (Digital Die), Generic Process Technology/Design Rule
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4, C8Q-3R'
+    location: p.3, Technology/Fab Process Description (Digital Die)
+  notes: 'This single product (an optical sensor) combines three separately printed process blocks: an
+    "Analog Die" (7CN0000A) on S4AD-5 at Fab 2 (Cypress CTI-Texas, 0.35 µm, matching this corpus''s norm --
+    recorded as the process_description above), a "Digital Die" (7CN1001A) on C8Q-3R at Fab 4 (Cypress
+    CMI-Minnesota, 4 metal layers, dual gate oxide "DGOX 32/55A" matching this corpus''s other C8Q-3R
+    figures) whose design rule is printed "CMOS/ 0.3µm" -- a different figure from every other C8Q-3R report
+    in this corpus, which print "0.13 µm" (possibly a dropped digit, not corrected here) -- and a VCSEL
+    (laser diode) process fabricated by Bookham in Zurich, Switzerland, an entirely different vendor and
+    technology not comparable to this corpus''s CMOS processes (1 metal layer of Ti/Pt/Au, "Oxide VCSEL").
+    The title itself prints the second code as "C8QR-3R" (letters transposed from "C8Q-3R").'

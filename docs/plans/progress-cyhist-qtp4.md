@@ -254,36 +254,56 @@ S4D-5" for Neuron devices). 5 more Group B file ids remain, all S4AD-5
 variants: 92321 (032508), 93161 (063003), 91606 (010902), 92611 (050507),
 93021 (071502).
 
+## Sixteenth batch: the last five Group B reports -- Group B now fully processed
+
+| id | technology_codes | fab | notes |
+|---|---|---|---|
+| qtp-032508 | S4AD-5 | Fab 2 (CTI, Round Rock, TX) | design rule abbreviated "1P2M/0.35um" |
+| qtp-063003 | S4AD-5 | Fab 2 | a "Process Qualification Report" covering "All S4AD Devices"; supersedes an earlier NSM implementation |
+| qtp-010902 | S4AD-5 | Fab 2 | repeats S4AD-5's origin row |
+| qtp-050507 | S4AD-LATCH | Fab 2 | a derivative of S4AD-5 with a different gate-oxide figure (70Å vs 110Å) |
+| qtp-071502 | S4AD-5, C8Q-3R | Fab 2 / Fab 4 | one product combines three process blocks (S4AD-5 analog die, C8Q-3R digital die, and a Bookham VCSEL laser-diode die); the C8Q-3R block's design rule is printed "0.3µm" against every other C8Q-3R report's "0.13 µm" |
+
+**Group B is now fully processed**: all 50 file ids fetched, 2 identified as
+duplicates (qtp-072002, qtp-061806 under other file ids), the rest all
+records. Every file id from both groups B and C has now been resolved into
+either a record or a documented reason it was not (duplicate, unusable PDF,
+Infineon-login-gated -- none of the latter were encountered this session).
+
+## Status: groups B and C both fully processed
+
+Every file id fetched this session (Group A retries, all of Group B, all of
+Group C) is now either a `qtp.yaml` record, an identified duplicate of an
+existing record, or documented as unusable (94076, 94146: no extractable
+process text). `data/history/qtp.yaml` now holds 152 documents (73 at the
+start of this session, 79 added across sixteen batches).
+
 ## Still to do
 
-- Group B: 46 more staged-and-extracted file ids not yet turned into records
-  (all of `tmp/priority_order_b.txt` except the 2 duplicates and the 4 now
-  recorded) -- R52T-3 clocks (many), R52FFD-3, B55SGT, C8Q-3R, R9Q-3R,
-  R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
-  quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
-  extracted text at `tmp/extracted/<fid>.txt` (both done).
-- Group C is done (see the eighth batch above). Only 94076 and 94146 from the
-  whole session's fetch list are unusable.
-- Group B: 46 staged-and-extracted file ids not yet turned into records (all
-  of `tmp/priority_order_b.txt` except the 2 duplicates and the 4 now
-  recorded) -- R52T-3 clocks (many), R52FFD-3, B55SGT, C8Q-3R, R9Q-3R,
-  R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
-  quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
-  extracted text at `tmp/extracted/<fid>.txt` (both done).
-- Once the stackup generator's new-band gap is resolved upstream, regenerate
-  `docs/history/stackups.md`, `products.md` and `sources.md` and commit them.
-- Cross-check every new QTP number against the existing (now 87) records
-  before writing one, the way the qtp-072002/qtp-061806 duplicates were
-  caught: `grep -oP "^  number: '?\K[0-9]+" data/history/qtp.yaml | sed
-  's/^0*//' | sort -u`, comparing numerically since leading zeros vary
-  between the printed field and the padded `id`.
+- Once the stackup generator's design-rule-band gap for R63D-25's 0.27 µm
+  (qtp-011805, qtp-012407) is resolved upstream in `tools/`, regenerate
+  `docs/history/stackups.md`, `products.md` and `sources.md` (they currently
+  still reflect only the state after the first batch of this session -- see
+  "Stackup generator gap" above) and commit them.
+- No further fetching is planned. If a future session wants to extend this
+  corpus, `docs/plans/cypress-history-plan.md` and `tools/check_history.py`
+  are the entry points; there is no more work queued in this worktree's
+  `tmp/`.
+
+## Notes for anyone resuming this kind of work
+
+- Cross-check every new QTP number against the existing records before
+  writing one, the way the qtp-072002/qtp-061806 duplicates were caught:
+  `grep -oP "^  number: '?\K[0-9]+" data/history/qtp.yaml | sed 's/^0*//' |
+  sort -u`, comparing numerically since leading zeros vary between the
+  printed field and the padded `id`.
 - **YAML gotcha found this session:** a plain (unquoted) scalar in this file
   breaks the parser if it contains a colon followed by a space (reads as a
   new mapping key) or a space followed by `#` (reads as a comment) anywhere
   in the middle of the value -- both appear in verbatim report text (e.g.
-  "QTP #98064", "Architecture:"). Wrap the `text:` value in single quotes
-  whenever a quote itself contains " #"; for `notes:` (not verbatim-checked)
-  it is simplest to reword around the colon or drop the "#". Always re-run
-  `uv run tools/check_history_quotes.py` after appending records, since a
-  YAML syntax error surfaces there as a Python traceback, not as a normal
-  "problem" line.
+  "QTP #98064", "Digital Die: 7CN1001A"). Wrap the `text:` value in single
+  quotes whenever a quote itself contains " #" or ": "; for `notes:` (not
+  verbatim-checked) it is simplest to reword around the colon or drop the
+  "#". Always re-run `uv run tools/check_history_quotes.py` after appending
+  records, since a YAML syntax error surfaces there as a Python traceback,
+  not as a normal "problem" line.
