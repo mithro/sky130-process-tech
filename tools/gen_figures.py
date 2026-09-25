@@ -234,7 +234,8 @@ class Svg:
         css += f".leader{{stroke:var(--ink-muted);stroke-width:{ST['leader']};fill:none}}"
         css += (f".halo{{stroke:var(--halo);stroke-width:{ST['leader-halo']};fill:none;"
                 f"opacity:{ST['halo-opacity']}}}")
-        css += ".dot{fill:var(--ink)}\n"
+        css += ".dot{fill:var(--ink)}"
+        css += f".faded{{opacity:{ST['faded-opacity']}}}\n"
         css += f".dim{{stroke:var(--ink);stroke-width:{ST['dimension']};fill:none}}.dimhead{{fill:var(--ink)}}"
         css += f".witness{{stroke:var(--ink-muted);stroke-width:{ST['rule']};stroke-dasharray:3 2.5;fill:none}}\n"
         css += f".rule{{stroke:var(--rule);stroke-width:{ST['rule']};fill:none}}"
@@ -276,14 +277,17 @@ class Svg:
         )
 
 
-def fill_material(svg: Svg, mat: str, points: str, layer: str = "") -> None:
-    """A material polygon: the token fill, its outline, and its pattern overlay."""
+def fill_material(svg: Svg, mat: str, points: str, layer: str = "", faded: bool = False) -> None:
+    """A material polygon: the token fill, its outline, and its pattern overlay.  A faded
+    polygon is context the step does not touch: drawn, but quietly, and never labelled."""
     lid = f' data-layer="{layer}"' if layer else ""
-    svg.add(f'<polygon class="mat m-{mat}"{lid} points="{points}"/>')
+    fd = " faded" if faded else ""
+    svg.add(f'<polygon class="mat m-{mat}{fd}"{lid} points="{points}"/>')
     pat = TOK["materials"][mat]["pattern"]
     if pat != "none":
         svg.patterns_used.add(pat)
-        svg.add(f'<polygon fill="url(#p-{pat})" points="{points}"/>')
+        cls = ' class="faded"' if faded else ""
+        svg.add(f'<polygon{cls} fill="url(#p-{pat})" points="{points}"/>')
 
 
 def expand_materials(names) -> set[str]:
@@ -511,6 +515,12 @@ class XSection:
         names it."""
         self.ions = [op]
 
+    def op_anneal(self, op):
+        """A thermal step that changes nothing this drawing can show.  It exists so that the
+        step has a state of its own; any movement of a doped region that a page supports is
+        drawn by the ``dope`` operations, not here."""
+        return None
+
     # ---- geometry extraction
     def present(self, lid):
         return [i for i in range(self.n) if any(s[0] == lid for s in self.cols[i])]
@@ -637,14 +647,45 @@ def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | N
     i0, i1 = xs.runs(pres)[-1]
     inset = min(4.0, (i1 - i0) * xs.dx / 2)
     ir = xs.idx(xs.x(i1) - inset)
+    # A film whose right-hand end is a thin wedge (a trench fill meeting a tapered wall) can
+    # name where its dot sits instead, so the dot can slide to the label's height rather than
+    # pinning the leader against the film above or below.
+    if xs.layers[lid].get("anchor_x") is not None:
+        ir = max(i0, min(i1, xs.idx(float(xs.layers[lid]["anchor_x"]))))
     s = xs.seg(ir, lid)
     mid = (s[1] + s[2]) / 2
     crossed = {t[0] for j in range(ir + 1, xs.n) for t in xs.cols[j] if t[0] != lid and t[1] < mid < t[2]}
-    pad = 3.5 if s[2] - s[1] > 9 else (s[2] - s[1]) / 2
     if floor_y is None:
         floor_y = -float(xs.layers["sub"]["depth"]) + 8
+    # Silicon under a doped overlay is drawn as the overlay, so a dot there would sit on the
+    # wrong material: keep the dot of a silicon layer to the largest stretch of its column
+    # that no overlay covers.
+    lo_s, hi_s = s[1], s[2]
+    if xs.mat(lid) in SILICON and xs.overlays:
+        free = [(lo_s, hi_s)]
+        for ov in xs.overlays:
+            band = xs.overlay_band(ov, ir)
+            if not band:
+                continue
+            nxt = []
+            for a, c in free:
+                if band[1] <= a or band[0] >= c:
+                    nxt.append((a, c))
+                    continue
+                if band[0] > a:
+                    nxt.append((a, band[0]))
+                if band[1] < c:
+                    nxt.append((band[1], c))
+            free = nxt
+        free = [f for f in free if f[1] - max(f[0], floor_y) > 1]
+        if free:
+            lo_s, hi_s = max(free, key=lambda f: f[1] - max(f[0], floor_y))
+    pad = 3.5 if hi_s - lo_s > 9 else (hi_s - lo_s) / 2
     x_min = xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2)
-    right = ("right", xs.x(ir), max(s[1] + pad, floor_y), s[2] - pad, len(crossed), x_min)
+    right = ("right", xs.x(ir), max(lo_s + pad, floor_y), hi_s - pad, len(crossed), x_min)
+    if xs.layers[lid].get("anchor_y") is not None:       # ... and at what height, inside it
+        ya = max(right[2], min(right[3], float(xs.layers[lid]["anchor_y"])))
+        right = ("right", right[1], ya, ya, right[4], right[5])
     tops = [i for i in pres if xs.cols[i] and xs.cols[i][-1][0] == lid]
     top = None
     if tops:
@@ -670,6 +711,9 @@ def overlay_anchor(xs: XSection, ov: dict, floor_y: float | None = None):
     pad = 3.5 if hi - lo > 9 else (hi - lo) / 2
     if floor_y is not None:
         lo = max(lo, floor_y - pad)
+    if ov.get("anchor_y") is not None:      # a thin band: keep the leader clear of the film above
+        ya = max(lo + pad, min(hi - pad, float(ov["anchor_y"])))
+        return ("right", xs.x(ir), ya, ya, 0, xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2))
     return ("right", xs.x(ir), min(lo + pad, hi - pad), hi - pad, 0,
             xs.x(i0) + min(4.0, (i1 - i0) * xs.dx / 2))
 
@@ -754,7 +798,40 @@ def layout_right_labels(labels: list[Label], floor: float) -> float:
             cluster = 0
         if cluster:
             l.ax = max(l.ax_min, l.ax - cluster * step)
+    _untangle_lanes(rights)
     return bottom
+
+
+def _right_leader(l: Label, lane: float) -> list:
+    """The three segments of a right-routed leader, as ``draw_label`` draws them."""
+    return [((l.ax, l.ay), (lane, l.ay)), ((lane, l.ay), (lane, l.y)), ((lane, l.y), (LABEL_X - 4, l.y))]
+
+
+def _untangle_lanes(rights: list[Label]) -> None:
+    """The right-to-left lane order cannot cross only while every label sits at or below
+    its anchor.  Where labels have been pushed up above their anchors (thin films crowded at
+    the surface, under a tall label above them) two leaders can cross; the lanes are then
+    re-dealt, keeping the default order where it works and otherwise taking the first order,
+    nearest the default, in which no two leaders cross."""
+    import itertools
+
+    def crossings(lanes):
+        segs = [_right_leader(l, ln) for l, ln in zip(rights, lanes)]
+        return sum(1 for i in range(len(segs)) for j in range(i + 1, len(segs))
+                   if any(_cross(a, b) for a in segs[i] for b in segs[j]))
+
+    lanes = [l.lane for l in rights]
+    if len(rights) < 2 or len(rights) > 7 or not crossings(lanes):
+        return
+    best = None
+    for perm in itertools.permutations(sorted(lanes, reverse=True)):
+        c = crossings(perm)
+        if best is None or c < best[0]:
+            best = (c, perm)
+        if c == 0:
+            break
+    for l, ln in zip(rights, best[1]):
+        l.lane = ln
 
 
 def draw_label(svg: Svg, l: Label, x_draw_right: float, halo: bool):
@@ -822,6 +899,8 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     svg = Svg("xsection", spec["alt"], spec["alt"])
     states, born = series_states(series)
     last_step = max(states)
+    series_ids = {"sub"} | {o["id"] for o in series["ops"] if o.get("id")}
+    newest = series.get("note_order") == "newest"
 
     def state(step):
         key = str(step)
@@ -848,7 +927,8 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     routes: dict[str, str] = {}
     for p in panels:
         st_pre, _ = state(p["state_after"])
-        hid = set(p.get("hide_layers", [])) | set(p.get("hide_labels", []))
+        hid = (set(p.get("hide_layers", [])) | set(p.get("hide_labels", []))
+               | set(p.get("dim_layers", [])))
         for lid, layer in st_pre.layers.items():
             if lid in hid or "label" not in layer or layer.get("op") in ("dope", "ions"):
                 continue
@@ -883,9 +963,19 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
         dims, notes = p.get("dims", []), p.get("callouts", [])
         labels: list[Label] = []
         hidden = set(p.get("hide_layers", []))
+        # Faded layers: context this step does not touch, drawn quietly and not labelled, so
+        # that a module with many doped regions stays inside the label budget.  The layer
+        # this step made may never be one of them.
+        faded = set(p.get("dim_layers", []))
+        for lid in sorted(faded):
+            if lid not in series_ids:
+                errs.append(f"panel {pi + 1}: dim_layers names no layer of this series ({lid!r})")
+            elif born.get(lid) == st_step and st_step == str(p["state_after"]):
+                errs.append(f"panel {pi + 1}: {lid!r} is the layer this step made; "
+                            "it must be labelled, not faded")
         material_labels: list[Label] = []
         for lid, layer in st.layers.items():
-            if lid in hidden or lid in p.get("hide_labels", []) or "label" not in layer:
+            if lid in hidden or lid in faded or lid in p.get("hide_labels", []) or "label" not in layer:
                 continue
             if layer.get("op") == "dope":
                 if not st.overlay_columns(layer):
@@ -902,12 +992,19 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             labels.append(lab)
             material_labels.append(lab)
         # ---- the noted-label budget: at most N labels in a panel carry a note, the layer
-        # this step made first.  Everything else prints its title only, which is what keeps
-        # the label column from growing taller than the drawing beside it.
+        # this step made first, then the rest in layer order.  A series that declares
+        # `note_order: newest` puts a label the figure overrides for this panel second and
+        # then the most recently made layers, which are what a page in the middle of a long
+        # module is about.  Everything else prints its title only, which is what keeps the
+        # label column from growing taller than the drawing beside it.
         cap = int(SP["max-noted-labels"])
         noted = [l for l in material_labels if l.spec.get("note")]
         if len(noted) > cap:
-            noted.sort(key=lambda l: (born.get(l.key) != st_step, list(st.layers).index(l.key)))
+            if newest:
+                noted.sort(key=lambda l: (born.get(l.key) != st_step, l.key not in p.get("labels", {}),
+                                          -list(st.layers).index(l.key)))
+            else:
+                noted.sort(key=lambda l: (born.get(l.key) != st_step, list(st.layers).index(l.key)))
             for l in noted[cap:]:
                 l.spec = {k: v for k, v in l.spec.items() if k != "note"}
                 l.wrap(LABEL_W)
@@ -1008,12 +1105,16 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             if layer.get("op") in ("dope", "ions") or lid in hidden:
                 continue
             for poly in st.polygons(lid):
-                fill_material(svg, layer["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly), lid)
-        for ov in st.overlays:
+                fill_material(svg, layer["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly),
+                              lid, faded=lid in faded)
+        # Doped overlays are painted in order of ``z`` (default 0), then of creation: a thin
+        # channel implant made before a well is still drawn over that well.
+        for ov in sorted(st.overlays, key=lambda o: float(o.get("z", 0))):
             if ov["id"] in hidden:
                 continue
             for poly in st.overlay_polygons(ov):
-                fill_material(svg, ov["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly), ov["id"])
+                fill_material(svg, ov["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly),
+                              ov["id"], faded=ov["id"] in faded)
         # The accent traces the surface this step made, drawn just clear of it, so that it
         # marks a 5 u film instead of covering it.
         off = SP["highlight-offset"]
@@ -1750,6 +1851,12 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
             elif sa > max(steps):
                 errs.append(f"state_after {sa!r} is beyond the last step of the series "
                             f"({max(steps)})")
+        # A faded layer carries no label, so the caption has to tell the reader what the
+        # quiet shapes are, as it must for a hidden layer.
+        if any(pn.get("dim_layers") for pn in spec.get("panels", [])) \
+                and "faded" not in spec.get("caption", ""):
+            errs.append("a panel fades layers (dim_layers) but the caption does not say which "
+                        "are drawn faded")
         if len(spec["panels"]) > (3 if spec.get("three_panels_allowed") else 2):
             errs.append(f"{len(spec['panels'])} panels; at most two (three only for a "
                         "deposit/pattern/etch summary on a category page)")
@@ -1807,14 +1914,16 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
 
 
 OPS = {
-    "deposit": {"id", "material", "t", "where", "flat", "fill_to", "only_on", "label", "route"},
+    "deposit": {"id", "material", "t", "where", "flat", "fill_to", "only_on", "label", "route",
+                "anchor_x", "anchor_y"},
     "etch": {"materials", "where", "depth", "taper_deg", "corner_r", "iso"},
     "strip": {"materials"},
     "planarise": {"to", "stop_on"},
     "react": {"id", "material", "consumes", "under", "t", "where", "label", "route"},
     "dope": {"id", "material", "where", "from_surface", "thickness", "follow", "y_top",
-             "y_bot", "anchor_x", "label", "route"},
+             "y_bot", "anchor_x", "anchor_y", "label", "route", "z"},
     "ions": {"where", "tilt_deg", "pitch", "label"},
+    "anneal": set(),
 }
 COMMON_OP_FIELDS = {"op", "step", "where_open"}
 
@@ -2052,6 +2161,7 @@ boundary.
 | A short line ending in a dot | a label leader; the dot sits on the material the label names |
 | Blue arrows pointing at the surface | an implant; the arrows lean if the page gives a tilt |
 | A blue trace just above a surface | the surface this step made |
+| A material drawn faded, with no label | present but untouched by this step; it is named on the figure of the step that made it, and the caption says which it is |
 
 A label with no tag is a plain public fact. A label in amber carries one of the three tags in
 the table above, and the figure's caption repeats the same hedge in words.
@@ -2451,6 +2561,53 @@ def selftest() -> int:
     if not any("bad y expression" in e for e in ye):
         print("SELFTEST FAIL: a bad y expression did not report a lint line")
         bad += 1
+    # Faded layers: the caption must say so, the step's own layer may not be faded, and an
+    # unknown id is an error.  An anneal gives its step a state; a dope ``z`` changes only
+    # the painting order.
+    ser_d = json.loads(json.dumps(_SERIES_OK))
+    ser_d["ops"] += [
+        {"step": "003", "op": "dope", "id": "band", "material": "implant", "follow": "surface",
+         "from_surface": 0, "thickness": 8, "z": 1,
+         "label": {"title": "Band", "note": "a thin implant", "basis": "public"}},
+        {"step": "004", "op": "dope", "id": "well", "material": "well-p", "follow": "flat",
+         "y_top": 0, "y_bot": -30, "label": {"title": "Well", "basis": "public"}},
+        {"step": "005", "op": "anneal"}]
+    sp = _spec_ok()
+    sp["panels"] = [{"state_after": "005", "title": "Only panel", "dim_layers": ["band"]}]
+    if not any("does not say which are drawn faded" in e for e in lint_spec(sp, ser_d)):
+        print("SELFTEST FAIL: faded layers without a caption that says so were accepted")
+        bad += 1
+    sp["caption"] = "A self-test figure; the band is drawn faded. Not to scale."
+    if lint_spec(sp, ser_d):
+        print(f"SELFTEST FAIL: a clean spec with an anneal, a z and a faded layer reported "
+              f"{lint_spec(sp, ser_d)}")
+        bad += 1
+    de: list[str] = []
+    svg_d = build_xsection(sp, ser_d, de).render("auto")
+    if de or svg_d.find('data-layer="band"') < svg_d.find('data-layer="well"'):
+        print(f"SELFTEST FAIL: a z-ordered overlay was not painted over the later well ({de})")
+        bad += 1
+    if 'class="mat m-implant faded"' not in svg_d or ">Band<" in svg_d:
+        print("SELFTEST FAIL: a faded layer was not drawn faded, or was labelled")
+        bad += 1
+    # The substrate's dot never lands on a well drawn over it.
+    st_d = series_states(ser_d)[0]["005"]
+    r_sub = choose_anchor(st_d, "sub", None)
+    if r_sub[3] > -30 + 1e-6:
+        print(f"SELFTEST FAIL: the substrate's dot may sit on the well above it ({r_sub})")
+        bad += 1
+    for panel, needle in (({"state_after": "003", "title": "P", "dim_layers": ["band"]},
+                           "it must be labelled, not faded"),
+                          ({"state_after": "005", "title": "P", "dim_layers": ["nosuch"]},
+                           "dim_layers names no layer")):
+        sp = _spec_ok()
+        sp["caption"] = "Drawn faded. Not to scale."
+        sp["panels"] = [panel]
+        de = []
+        build_xsection(sp, ser_d, de)
+        if not any(needle in e for e in de):
+            print(f"SELFTEST FAIL: {needle!r} was not reported; got {de}")
+            bad += 1
     # The text-overlap rule is reachable from a real figure, not only from hand-written SVG.
     _real = _place_right
     try:

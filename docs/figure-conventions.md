@@ -47,6 +47,7 @@ The palette used by every cross-section on this site. Colour is never the only c
 | Deep N-well | horizontal lines |
 | N+ source/drain, n-tip | plain colour, no pattern |
 | P+ source/drain | small crosses |
+| Channel implant (its n- or p-type is not shown by the colour) | vertical lines |
 | Thermal oxide (pad, liner, gate, screen) | plain colour, no pattern |
 | Deposited oxide (field oxide, inter-level dielectric, cap oxide, TOPOX) | plain colour, no pattern |
 | Phosphosilicate glass (PSG) | small dots |
@@ -112,6 +113,7 @@ boundary.
 | A short line ending in a dot | a label leader; the dot sits on the material the label names |
 | Blue arrows pointing at the surface | an implant; the arrows lean if the page gives a tilt |
 | A blue trace just above a surface | the surface this step made |
+| A material drawn faded, with no label | present but untouched by this step; it is named on the figure of the step that made it, and the caption says which it is |
 
 A label with no tag is a plain public fact. A label in amber carries one of the three tags in
 the table above, and the figure's caption repeats the same hedge in words.

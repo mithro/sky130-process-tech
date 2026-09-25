@@ -97,6 +97,7 @@ Each panel has:
 | `dims` | at most a couple: a dimension line with a label |
 | `callouts` | a label on a feature that is open at the top (a trench, a hole, a polished surface) |
 | `show_ions` | `false` to suppress the implant arrows of the step in this panel |
+| `dim_layers` | layers drawn **faded and unlabelled**: context this step does not touch. They do not count against the six-label budget. The layer the panel's step made may never be faded, and the caption must say which layers are drawn faded (both are lint rules) |
 
 `dims` and `callouts` are labelled from **above**, in a band over the drawing, and there may
 be **at most two of them per panel** (an ion label takes one of the two). Everything else is
@@ -143,6 +144,18 @@ and each one would need the same footnote key. Numbers go in the per-figure `dim
 series label must be true on **every** page that uses it: where one page says more than the
 others, put the fuller wording in that figure's `panels[…].labels` override, not in the
 series.
+
+Fields a series may need for a module with many doped regions (added for S2, the wells):
+
+| Field | Where | What it does |
+|---|---|---|
+| `op: anneal` | operation | a thermal step that changes nothing the drawing can show; it gives the step a state of its own, so its figure can say so |
+| `z` | `dope` | painting order of overlays (default 0): a thin channel implant made before a well is still drawn over it |
+| `anchor_x`, `anchor_y` | `deposit`, `dope` | where the label's dot sits inside the layer, when the default (the right-hand end, sliding to the label's height) would run the leader along another film |
+| `note_order: newest` | top of the series | the noted-label budget keeps the notes of the newest layers (after the step's own layer and any per-panel override) instead of the oldest |
+
+A silicon layer's dot is kept off any doped overlay drawn over it, so the substrate's label
+never points at a well.
 
 An operation's extent should be derived from the mask that defines it rather than typed
 again: `where_open: <layer id>` means "wherever that patterned layer is absent", which is
