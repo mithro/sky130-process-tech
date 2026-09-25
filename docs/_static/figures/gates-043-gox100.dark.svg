@@ -33,8 +33,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-plus)" points="9.00,103.00 92.00,103.00 99.00,147.20 99.50,151.00 100.00,153.11 100.50,154.23 101.00,155.06 101.50,155.73 102.00,156.28 102.50,156.76 103.00,157.17 104.00,157.83 105.00,158.31 106.00,158.66 107.00,158.88 108.00,158.99 184.00,158.99 185.00,158.88 186.00,158.66 187.00,158.31 188.00,157.83 189.00,157.17 189.50,156.76 190.00,156.28 190.50,155.73 191.00,155.06 191.50,154.23 192.00,153.11 192.50,151.00 193.00,147.20 200.00,103.00 283.00,103.00 283.00,179.00 9.00,179.00"/>
 </g>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 77.5V60.0H291.0V63.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="77.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 77.5V60.0H291.0V63.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="77.5" r="1.9"/>
 <text x="328.0" y="171.9" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="187.9" class="t-label-note muted" data-owner="pwell">PWI, step 027</text>
 <path class="leader" data-owner="pwell" d="M276.0 167.0H285.0H324.0"/>
@@ -58,8 +58,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polyline class="hl" points="200.00,316.00 200.50,332.00 280.00,332.00"/>
 </g>
 <text x="328.0" y="309.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 319.5V302.0H297.0V305.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="319.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 319.5V302.0H297.0V305.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="319.5" r="1.9"/>
 <text x="328.0" y="414.6" class="t-label-title" data-owner="pwell">P-well</text>
 <path class="leader" data-owner="pwell" d="M276.0 409.0H285.0V409.8H324.0"/>
 <circle class="dot" data-owner="pwell" cx="276.0" cy="409.0" r="1.9"/>

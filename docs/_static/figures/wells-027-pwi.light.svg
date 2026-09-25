@@ -47,8 +47,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 152.5H297.0V175.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="152.5" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M136.0 129.5V60.0H309.0V63.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="136.0" cy="129.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M132.0 129.5V60.0H309.0V63.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="132.0" cy="129.5" r="1.9"/>
 <text x="328.0" y="251.9" class="t-label-title" data-owner="nwell">N-well</text>
 <text x="328.0" y="267.9" class="t-label-note muted" data-owner="nwell">retrograde</text>
 <text x="328.0" y="283.9" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
@@ -105,9 +105,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="502.9" class="t-label-note muted" data-owner="pwell">retrograde; PDK</text>
 <text x="328.0" y="518.9" class="t-label-note muted" data-owner="pwell">vertical dimension</text>
 <text x="328.0" y="534.9" class="t-label-note muted" data-owner="pwell">0.75 µm</text>
-<path class="halo" d="M82.0 588.5L82.0 580.0"/>
-<path class="leader" data-owner="pwell" d="M82.0 588.5V479.0H315.0V482.0H324.0"/>
-<circle class="dot" data-owner="pwell" cx="82.0" cy="588.5" r="1.9"/>
+<path class="halo" d="M78.0 588.5L78.0 580.0"/>
+<path class="leader" data-owner="pwell" d="M78.0 588.5V479.0H315.0V482.0H324.0"/>
+<circle class="dot" data-owner="pwell" cx="78.0" cy="588.5" r="1.9"/>
 <text x="54.4" y="429.9" class="t-label-title" data-owner="ions">PWI implant</text>
 <text x="54.4" y="445.9" class="t-label-note muted" data-owner="ions">boron</text>
 <text x="54.4" y="461.9" class="t-label-note tag" data-owner="ions">inferred</text>

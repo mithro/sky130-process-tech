@@ -95,8 +95,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="thinox" cx="276.0" cy="555.5" r="1.9"/>
 <text x="328.0" y="460.9" class="t-label-title" data-owner="rpmres">Photoresist</text>
 <text x="328.0" y="476.9" class="t-label-note tag" data-owner="rpmres">inferred</text>
-<path class="leader" data-owner="rpmres" d="M172.0 474.5V453.0H303.0V456.0H324.0"/>
-<circle class="dot" data-owner="rpmres" cx="172.0" cy="474.5" r="1.9"/>
+<path class="leader" data-owner="rpmres" d="M168.0 474.5V453.0H303.0V456.0H324.0"/>
+<circle class="dot" data-owner="rpmres" cx="168.0" cy="474.5" r="1.9"/>
 <text x="328.0" y="522.9" class="t-label-title" data-owner="polyn">n-type gate film</text>
 <text x="328.0" y="538.9" class="t-label-note muted" data-owner="polyn">gate implant,</text>
 <text x="328.0" y="554.9" class="t-label-note muted" data-owner="polyn">step 050</text>

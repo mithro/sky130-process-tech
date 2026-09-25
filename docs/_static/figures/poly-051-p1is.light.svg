@@ -79,9 +79,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="381.9" class="t-label-note muted" data-owner="poly">body, kept from</text>
 <text x="328.0" y="397.9" class="t-label-note muted" data-owner="poly">the gate implant</text>
 <text x="328.0" y="413.9" class="t-label-note tag" data-owner="poly">inferred</text>
-<path class="halo" d="M172.0 334.0L172.0 340.0"/>
-<path class="leader" data-owner="poly" d="M172.0 343.5V326.0H297.0V329.0H324.0"/>
-<circle class="dot" data-owner="poly" cx="172.0" cy="343.5" r="1.9"/>
+<path class="halo" d="M168.0 334.0L168.0 340.0"/>
+<path class="leader" data-owner="poly" d="M168.0 343.5V326.0H297.0V329.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="168.0" cy="343.5" r="1.9"/>
 <text x="328.0" y="437.9" class="t-label-title" data-owner="polyn">n-type gate film</text>
 <path class="leader" data-owner="polyn" d="M276.0 380.5H291.0V433.0H324.0"/>
 <circle class="dot" data-owner="polyn" cx="276.0" cy="380.5" r="1.9"/>

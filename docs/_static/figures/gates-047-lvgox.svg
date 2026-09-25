@@ -37,8 +37,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-vlines-ink)" points="201.75,160.00 283.00,160.00 283.00,169.00 201.75,169.00"/>
 </g>
 <text x="328.0" y="124.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 134.5V117.0H297.0V120.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="134.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 134.5V117.0H297.0V120.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="134.5" r="1.9"/>
 <text x="328.0" y="243.2" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="259.1" class="t-label-note muted" data-owner="pwell">PWI, step 027</text>
 <path class="leader" data-owner="pwell" d="M276.0 224.0H285.0V238.2H324.0"/>
@@ -75,8 +75,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polyline class="hl" points="200.00,444.25 200.50,465.25 280.00,465.25"/>
 </g>
 <text x="328.0" y="438.1" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 447.8V430.2H297.0V433.2H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="447.8" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 447.8V430.2H297.0V433.2H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="447.8" r="1.9"/>
 <text x="60.5" y="381.1" class="t-label-title" data-owner="gox">Thick gate oxide</text>
 <text x="60.5" y="397.1" class="t-label-note muted" data-owner="gox">the 5 V model gives</text>
 <text x="60.5" y="413.1" class="t-label-note muted" data-owner="gox">11.6 nm (electrical)</text>

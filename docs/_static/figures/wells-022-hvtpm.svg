@@ -44,8 +44,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 100.5H297.0V87.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="100.5" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 77.5V60.0H303.0V63.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="77.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 77.5V60.0H303.0V63.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="77.5" r="1.9"/>
 <text x="328.0" y="235.9" class="t-label-title" data-owner="nwell">N-well</text>
 <text x="328.0" y="251.9" class="t-label-note muted" data-owner="nwell">retrograde</text>
 <text x="328.0" y="267.9" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
@@ -87,8 +87,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 521.5H303.0V506.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="521.5" r="1.9"/>
 <text x="328.0" y="485.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 498.5V481.0H309.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="498.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 498.5V481.0H309.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="498.5" r="1.9"/>
 <text x="328.0" y="616.9" class="t-label-title" data-owner="nwell">N-well</text>
 <path class="leader" data-owner="nwell" d="M276.0 612.0H291.0H324.0"/>
 <circle class="dot" data-owner="nwell" cx="276.0" cy="612.0" r="1.9"/>

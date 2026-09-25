@@ -62,9 +62,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="dnw">layer placed by</text>
 <text x="328.0" y="97.9" class="t-label-note muted" data-owner="dnw">the implant at</text>
 <text x="328.0" y="113.9" class="t-label-note muted" data-owner="dnw">DNI, step 008</text>
-<path class="halo" d="M178.0 244.5L178.0 185.0"/>
-<path class="leader" data-owner="dnw" d="M178.0 248.5V42.0H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="dnw" cx="178.0" cy="248.5" r="1.9"/>
+<path class="halo" d="M174.0 244.5L174.0 185.0"/>
+<path class="leader" data-owner="dnw" d="M174.0 248.5V42.0H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="dnw" cx="174.0" cy="248.5" r="1.9"/>
 <path class="parrow" d="M34 346.0V384.0"/>
 <path class="pahead" d="M34 392.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="357.0" class="t-label-title acc">DNIS, step 009</text>
@@ -94,8 +94,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="isonit" d="M276.0 463.0H297.0H324.0"/>
 <circle class="dot" data-owner="isonit" cx="276.0" cy="463.0" r="1.9"/>
 <text x="328.0" y="443.9" class="t-label-title" data-owner="dnw">Deep N-well</text>
-<path class="halo" d="M178.0 594.5L178.0 535.0"/>
-<path class="leader" data-owner="dnw" d="M178.0 598.5V436.0H303.0V439.0H324.0"/>
-<circle class="dot" data-owner="dnw" cx="178.0" cy="598.5" r="1.9"/>
+<path class="halo" d="M174.0 594.5L174.0 535.0"/>
+<path class="leader" data-owner="dnw" d="M174.0 598.5V436.0H303.0V439.0H324.0"/>
+<circle class="dot" data-owner="dnw" cx="174.0" cy="598.5" r="1.9"/>
 <text x="12.0" y="643.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

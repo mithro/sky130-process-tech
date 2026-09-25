@@ -68,9 +68,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="spnit" cx="276.0" cy="85.0" r="1.9"/>
 <text x="328.0" y="49.9" class="t-label-title" data-owner="nsd">N+ source/drain</text>
 <text x="328.0" y="65.9" class="t-label-note muted" data-owner="nsd">NSDI, step 086</text>
-<path class="halo" d="M80.0 236.7L80.0 180.7"/>
-<path class="leader" data-owner="nsd" d="M80.0 240.7V42.0H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="nsd" cx="80.0" cy="240.7" r="1.9"/>
+<path class="halo" d="M76.0 236.7L76.0 180.7"/>
+<path class="leader" data-owner="nsd" d="M76.0 240.7V42.0H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="nsd" cx="76.0" cy="240.7" r="1.9"/>
 <text x="12.0" y="360.3" class="t-label-title">Close-up of the 1.8 V gate edge, enlarged about 3.8×.</text>
 <text x="12.0" y="377.3" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

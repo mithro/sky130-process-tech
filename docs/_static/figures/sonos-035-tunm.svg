@@ -50,8 +50,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="dnw" d="M276.0 185.0H285.0V201.5H324.0"/>
 <circle class="dot" data-owner="dnw" cx="276.0" cy="185.0" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M120.0 77.5V60.0H303.0V63.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="120.0" cy="77.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M116.0 77.5V60.0H303.0V63.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="116.0" cy="77.5" r="1.9"/>
 <text x="328.0" y="166.4" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="182.4" class="t-label-note muted" data-owner="pwell">PWI, step 027</text>
 <path class="leader" data-owner="pwell" d="M276.0 167.0H291.0V161.5H324.0"/>

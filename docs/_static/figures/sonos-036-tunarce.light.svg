@@ -93,9 +93,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="464.9" class="t-label-note muted" data-owner="arc">coating, left</text>
 <text x="328.0" y="480.9" class="t-label-note muted" data-owner="arc">under the resist</text>
 <text x="328.0" y="496.9" class="t-label-note tag" data-owner="arc">our reading</text>
-<path class="halo" d="M124.0 476.5L124.0 439.0"/>
-<path class="leader" data-owner="arc" d="M124.0 479.5V425.0H297.0V428.0H324.0"/>
-<circle class="dot" data-owner="arc" cx="124.0" cy="479.5" r="1.9"/>
+<path class="halo" d="M120.0 476.5L120.0 439.0"/>
+<path class="leader" data-owner="arc" d="M120.0 479.5V425.0H297.0V428.0H324.0"/>
+<circle class="dot" data-owner="arc" cx="120.0" cy="479.5" r="1.9"/>
 <text x="95.0" y="407.9" class="t-label-title" data-owner="tunres">Photoresist</text>
 <path class="leader" data-owner="tunres" d="M86.0 447.0V403.0H91.0"/>
 <circle class="dot" data-owner="tunres" cx="86.0" cy="447.0" r="1.9"/>

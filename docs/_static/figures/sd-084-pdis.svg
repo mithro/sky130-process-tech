@@ -74,9 +74,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="83.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="115.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 116.5L164.0 112.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 120.5V60.0H303.0V63.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="120.5" r="1.9"/>
+<path class="halo" d="M160.0 116.5L160.0 112.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 120.5V60.0H303.0V63.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="120.5" r="1.9"/>
 <text x="328.0" y="211.9" class="t-label-title" data-owner="spox">Spacer oxide</text>
 <text x="328.0" y="227.9" class="t-label-note muted" data-owner="spox">SPOX, step 080;</text>
 <text x="328.0" y="243.9" class="t-label-note muted" data-owner="spox">read as the PDK&#x27;s</text>
@@ -147,9 +147,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="polyn" cx="268.0" cy="473.5" r="1.9"/>
 <text x="328.0" y="421.9" class="t-label-title" data-owner="polyp">p-type</text>
 <text x="328.0" y="437.9" class="t-label-title" data-owner="polyp">resistor body</text>
-<path class="halo" d="M164.0 432.5L164.0 428.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 436.5V414.0H303.0V417.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="436.5" r="1.9"/>
+<path class="halo" d="M160.0 432.5L160.0 428.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 436.5V414.0H303.0V417.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="436.5" r="1.9"/>
 <text x="328.0" y="461.9" class="t-label-title" data-owner="spox">Spacer oxide</text>
 <text x="328.0" y="477.9" class="t-label-note tag" data-owner="spox">inferred</text>
 <path class="leader" data-owner="spox" d="M276.0 436.5H297.0V457.0H324.0"/>

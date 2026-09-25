@@ -48,8 +48,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 111.5H297.0V143.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="111.5" r="1.9"/>
 <text x="328.0" y="123.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 88.5V71.0H303.0V119.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="88.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 88.5V71.0H303.0V119.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="88.5" r="1.9"/>
 <text x="328.0" y="219.9" class="t-label-title" data-owner="nwell">N-well</text>
 <text x="328.0" y="235.9" class="t-label-note muted" data-owner="nwell">retrograde</text>
 <text x="328.0" y="251.9" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
@@ -58,9 +58,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="67.9" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="83.9" class="t-label-note muted" data-owner="pwell">retrograde</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="pwell">(PWI, step 027)</text>
-<path class="halo" d="M82.0 117.5L82.0 109.0"/>
-<path class="leader" data-owner="pwell" d="M82.0 117.5V60.0H309.0V63.0H324.0"/>
-<circle class="dot" data-owner="pwell" cx="82.0" cy="117.5" r="1.9"/>
+<path class="halo" d="M78.0 117.5L78.0 109.0"/>
+<path class="leader" data-owner="pwell" d="M78.0 117.5V60.0H309.0V63.0H324.0"/>
+<circle class="dot" data-owner="pwell" cx="78.0" cy="117.5" r="1.9"/>
 <path class="parrow" d="M34 300.0V338.0"/>
 <path class="pahead" d="M34 346.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="311.0" class="t-label-title acc">PWDEM, step 030</text>
@@ -92,18 +92,18 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 511.5H297.0V531.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="511.5" r="1.9"/>
 <text x="328.0" y="439.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="halo" d="M192.0 484.5L192.0 433.0"/>
-<path class="halo" d="M192.0 427.0L192.0 433.0"/>
-<path class="leader" data-owner="fox" d="M192.0 488.5V419.0H309.0V435.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="488.5" r="1.9"/>
+<path class="halo" d="M188.0 484.5L188.0 433.0"/>
+<path class="halo" d="M188.0 427.0L188.0 433.0"/>
+<path class="leader" data-owner="fox" d="M188.0 488.5V419.0H309.0V435.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="488.5" r="1.9"/>
 <text x="328.0" y="606.9" class="t-label-title" data-owner="nwell">N-well</text>
 <path class="leader" data-owner="nwell" d="M276.0 602.0H291.0H324.0"/>
 <circle class="dot" data-owner="nwell" cx="276.0" cy="602.0" r="1.9"/>
 <text x="328.0" y="415.9" class="t-label-title" data-owner="pwell">P-well</text>
-<path class="halo" d="M82.0 517.5L82.0 433.0"/>
-<path class="halo" d="M82.0 427.0L82.0 433.0"/>
-<path class="leader" data-owner="pwell" d="M82.0 517.5V408.0H315.0V411.0H324.0"/>
-<circle class="dot" data-owner="pwell" cx="82.0" cy="517.5" r="1.9"/>
+<path class="halo" d="M78.0 517.5L78.0 433.0"/>
+<path class="halo" d="M78.0 427.0L78.0 433.0"/>
+<path class="leader" data-owner="pwell" d="M78.0 517.5V408.0H315.0V411.0H324.0"/>
+<circle class="dot" data-owner="pwell" cx="78.0" cy="517.5" r="1.9"/>
 <text x="328.0" y="463.9" class="t-label-title" data-owner="pwderes">Thick photoresist</text>
 <text x="328.0" y="479.9" class="t-label-note muted" data-owner="pwderes">PWDEM, step 030;</text>
 <text x="328.0" y="495.9" class="t-label-note muted" data-owner="pwderes">it opens only inside</text>

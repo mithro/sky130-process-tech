@@ -45,8 +45,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 138.5H291.0V159.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="138.5" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M136.0 115.5V60.0H303.0V63.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="136.0" cy="115.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M132.0 115.5V60.0H303.0V63.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="132.0" cy="115.5" r="1.9"/>
 <text x="328.0" y="91.9" class="t-label-title" data-owner="lvtnres">Photoresist</text>
 <text x="328.0" y="107.9" class="t-label-note muted" data-owner="lvtnres">LVTNM, step 014;</text>
 <text x="328.0" y="123.9" class="t-label-note muted" data-owner="lvtnres">which regions it</text>
@@ -91,9 +91,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="446.9" class="t-label-note muted" data-owner="chn">LVTNI, step 015;</text>
 <text x="328.0" y="462.9" class="t-label-note muted" data-owner="chn">its type and extent</text>
 <text x="328.0" y="478.9" class="t-label-note muted" data-owner="chn">are not public</text>
-<path class="halo" d="M82.0 502.5L82.0 498.0"/>
-<path class="leader" data-owner="chn" d="M82.0 506.5V407.0H309.0V410.0H324.0"/>
-<circle class="dot" data-owner="chn" cx="82.0" cy="506.5" r="1.9"/>
+<path class="halo" d="M78.0 502.5L78.0 498.0"/>
+<path class="leader" data-owner="chn" d="M78.0 506.5V407.0H309.0V410.0H324.0"/>
+<circle class="dot" data-owner="chn" cx="78.0" cy="506.5" r="1.9"/>
 <text x="54.4" y="357.9" class="t-label-title" data-owner="ions">LVTNI implant</text>
 <text x="54.4" y="373.9" class="t-label-note muted" data-owner="ions">species, energy and</text>
 <text x="54.4" y="389.9" class="t-label-note muted" data-owner="ions">dose are not public</text>

@@ -47,8 +47,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M267.0 149.5H291.0V247.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="267.0" cy="149.5" r="1.9"/>
 <text x="328.0" y="155.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M136.0 126.5V71.0H303.0V151.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="136.0" cy="126.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M132.0 126.5V71.0H303.0V151.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="132.0" cy="126.5" r="1.9"/>
 <text x="328.0" y="179.9" class="t-label-title" data-owner="lvtnres">Photoresist</text>
 <text x="328.0" y="195.9" class="t-label-note muted" data-owner="lvtnres">LVTNM, step 014;</text>
 <text x="328.0" y="211.9" class="t-label-note muted" data-owner="lvtnres">which regions it</text>
@@ -60,9 +60,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="chn">LVTNI, step 015;</text>
 <text x="328.0" y="115.9" class="t-label-note muted" data-owner="chn">its type and extent</text>
 <text x="328.0" y="131.9" class="t-label-note muted" data-owner="chn">are not public</text>
-<path class="halo" d="M82.0 151.5L82.0 147.0"/>
-<path class="leader" data-owner="chn" d="M82.0 155.5V60.0H309.0V63.0H324.0"/>
-<circle class="dot" data-owner="chn" cx="82.0" cy="155.5" r="1.9"/>
+<path class="halo" d="M78.0 151.5L78.0 147.0"/>
+<path class="leader" data-owner="chn" d="M78.0 155.5V60.0H309.0V63.0H324.0"/>
+<circle class="dot" data-owner="chn" cx="78.0" cy="155.5" r="1.9"/>
 <path class="parrow" d="M34 348.0V386.0"/>
 <path class="pahead" d="M34 394.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="359.0" class="t-label-title acc">LVTNIS, step 016</text>
@@ -88,12 +88,12 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 507.5H291.0V523.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="507.5" r="1.9"/>
 <text x="328.0" y="503.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 484.5V467.0H297.0V499.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="484.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 484.5V467.0H297.0V499.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="484.5" r="1.9"/>
 <text x="328.0" y="463.9" class="t-label-title" data-owner="chn">NMOS channel</text>
 <text x="328.0" y="479.9" class="t-label-title" data-owner="chn">implant</text>
-<path class="halo" d="M82.0 509.5L82.0 505.0"/>
-<path class="leader" data-owner="chn" d="M82.0 513.5V456.0H303.0V459.0H324.0"/>
-<circle class="dot" data-owner="chn" cx="82.0" cy="513.5" r="1.9"/>
+<path class="halo" d="M78.0 509.5L78.0 505.0"/>
+<path class="leader" data-owner="chn" d="M78.0 513.5V456.0H303.0V459.0H324.0"/>
+<circle class="dot" data-owner="chn" cx="78.0" cy="513.5" r="1.9"/>
 <text x="12.0" y="618.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

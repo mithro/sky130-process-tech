@@ -75,9 +75,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="65.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="97.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 60.5L164.0 56.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 64.5V42.0H303.0V45.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="64.5" r="1.9"/>
+<path class="halo" d="M160.0 60.5L160.0 56.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 64.5V42.0H303.0V45.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="64.5" r="1.9"/>
 <text x="328.0" y="121.9" class="t-label-title" data-owner="spox">Spacer oxide</text>
 <text x="328.0" y="137.9" class="t-label-note muted" data-owner="spox">SPOX, step 080;</text>
 <text x="328.0" y="153.9" class="t-label-note muted" data-owner="spox">read as the PDK&#x27;s</text>
@@ -141,9 +141,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="sub" cx="276.0" cy="553.0" r="1.9"/>
 <text x="328.0" y="405.9" class="t-label-title" data-owner="polyp">p-type</text>
 <text x="328.0" y="421.9" class="t-label-title" data-owner="polyp">resistor body</text>
-<path class="halo" d="M164.0 454.5L164.0 450.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 458.5V398.0H303.0V401.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="458.5" r="1.9"/>
+<path class="halo" d="M160.0 454.5L160.0 450.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 458.5V398.0H303.0V401.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="458.5" r="1.9"/>
 <text x="328.0" y="517.9" class="t-label-title" data-owner="spox">Spacer oxide</text>
 <text x="328.0" y="533.9" class="t-label-note tag" data-owner="spox">inferred</text>
 <path class="leader" data-owner="spox" d="M276.0 458.5H291.0V513.0H324.0"/>

@@ -57,12 +57,12 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="isonit" d="M276.0 87.5H297.0V93.0H324.0"/>
 <circle class="dot" data-owner="isonit" cx="276.0" cy="87.5" r="1.9"/>
 <text x="328.0" y="49.9" class="t-label-title" data-owner="liner">Liner oxide</text>
-<path class="halo" d="M178.0 146.5L178.0 67.0"/>
-<path class="leader" data-owner="liner" d="M178.0 149.5V42.0H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="liner" cx="178.0" cy="149.5" r="1.9"/>
+<path class="halo" d="M174.0 146.5L174.0 67.0"/>
+<path class="leader" data-owner="liner" d="M174.0 149.5V42.0H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="liner" cx="174.0" cy="149.5" r="1.9"/>
 <text x="328.0" y="73.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 70.5V53.0H303.0V69.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="70.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 70.5V53.0H303.0V69.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="70.5" r="1.9"/>
 <path class="parrow" d="M34 346.0V384.0"/>
 <path class="pahead" d="M34 392.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="357.0" class="t-label-title acc">NS19, step 013</text>
@@ -86,10 +86,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 494.5H291.0V505.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="494.5" r="1.9"/>
 <text x="328.0" y="461.9" class="t-label-title" data-owner="liner">Liner oxide</text>
-<path class="halo" d="M178.0 547.5L178.0 468.0"/>
-<path class="halo" d="M178.0 462.0L178.0 468.0"/>
-<path class="leader" data-owner="liner" d="M178.0 550.5V454.0H303.0V457.0H324.0"/>
-<circle class="dot" data-owner="liner" cx="178.0" cy="550.5" r="1.9"/>
+<path class="halo" d="M174.0 547.5L174.0 468.0"/>
+<path class="halo" d="M174.0 462.0L174.0 468.0"/>
+<path class="leader" data-owner="liner" d="M174.0 550.5V454.0H303.0V457.0H324.0"/>
+<circle class="dot" data-owner="liner" cx="174.0" cy="550.5" r="1.9"/>
 <text x="328.0" y="485.9" class="t-label-title" data-owner="fox">Fill oxide</text>
 <path class="leader" data-owner="fox" d="M196.0 478.5H297.0V481.0H324.0"/>
 <circle class="dot" data-owner="fox" cx="196.0" cy="478.5" r="1.9"/>

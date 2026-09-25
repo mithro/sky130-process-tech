@@ -36,8 +36,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="sub" d="M276.0 197.4H285.0H324.0"/>
 <circle class="dot" data-owner="sub" cx="276.0" cy="197.4" r="1.9"/>
 <text x="328.0" y="124.9" class="t-label-title" data-owner="fox">Field oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 134.5V117.0H297.0V120.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="134.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 134.5V117.0H297.0V120.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="134.5" r="1.9"/>
 <text x="60.5" y="67.9" class="t-label-title" data-owner="gox">Thick gate oxide</text>
 <text x="60.5" y="83.9" class="t-label-note muted" data-owner="gox">grown on every active</text>
 <text x="60.5" y="99.9" class="t-label-note muted" data-owner="gox">area at step 043</text>

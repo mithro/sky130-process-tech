@@ -42,11 +42,11 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="107.9" class="t-label-note muted" data-owner="padox">from BOX, step 002;</text>
 <text x="328.0" y="123.9" class="t-label-note muted" data-owner="padox">still in place, we infer</text>
 <text x="328.0" y="139.9" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M150.5 100.5V84.0H291.0V87.0H324.0"/>
-<circle class="dot" data-owner="padox" cx="150.5" cy="100.5" r="1.9"/>
+<path class="leader" data-owner="padox" d="M146.5 100.5V84.0H291.0V87.0H324.0"/>
+<circle class="dot" data-owner="padox" cx="146.5" cy="100.5" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M120.0 77.5V60.0H297.0V63.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="120.0" cy="77.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M116.0 77.5V60.0H297.0V63.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="116.0" cy="77.5" r="1.9"/>
 <text x="328.0" y="171.9" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="187.9" class="t-label-note muted" data-owner="pwell">PWI, step 027</text>
 <path class="leader" data-owner="pwell" d="M276.0 167.0H285.0H324.0"/>

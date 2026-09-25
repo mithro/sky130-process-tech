@@ -66,9 +66,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="106.9" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="122.9" class="t-label-note muted" data-owner="pwell">retrograde</text>
 <text x="328.0" y="138.9" class="t-label-note muted" data-owner="pwell">(PWI, step 027)</text>
-<path class="halo" d="M82.0 208.5L82.0 200.0"/>
-<path class="leader" data-owner="pwell" d="M82.0 208.5V99.0H315.0V102.0H324.0"/>
-<circle class="dot" data-owner="pwell" cx="82.0" cy="208.5" r="1.9"/>
+<path class="halo" d="M78.0 208.5L78.0 200.0"/>
+<path class="leader" data-owner="pwell" d="M78.0 208.5V99.0H315.0V102.0H324.0"/>
+<circle class="dot" data-owner="pwell" cx="78.0" cy="208.5" r="1.9"/>
 <text x="54.4" y="49.9" class="t-label-title" data-owner="ions">PWI2 implant</text>
 <text x="54.4" y="65.9" class="t-label-note muted" data-owner="ions">a second boron dose</text>
 <text x="54.4" y="81.9" class="t-label-note tag" data-owner="ions">inferred</text>

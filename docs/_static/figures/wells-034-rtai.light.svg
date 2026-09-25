@@ -46,8 +46,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 93.5H297.0V125.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="93.5" r="1.9"/>
 <text x="328.0" y="105.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 70.5V53.0H303.0V101.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="70.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 70.5V53.0H303.0V101.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="70.5" r="1.9"/>
 <text x="328.0" y="201.9" class="t-label-title" data-owner="nwell">N-well</text>
 <text x="328.0" y="217.9" class="t-label-note muted" data-owner="nwell">retrograde</text>
 <text x="328.0" y="233.9" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
@@ -56,8 +56,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="49.9" class="t-label-title" data-owner="pwell">P-well</text>
 <text x="328.0" y="65.9" class="t-label-note muted" data-owner="pwell">retrograde</text>
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="pwell">(PWI, step 027)</text>
-<path class="halo" d="M82.0 99.5L82.0 91.0"/>
-<path class="leader" data-owner="pwell" d="M82.0 99.5V42.0H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="pwell" cx="82.0" cy="99.5" r="1.9"/>
+<path class="halo" d="M78.0 99.5L78.0 91.0"/>
+<path class="leader" data-owner="pwell" d="M78.0 99.5V42.0H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="pwell" cx="78.0" cy="99.5" r="1.9"/>
 <text x="12.0" y="294.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

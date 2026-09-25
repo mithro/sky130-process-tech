@@ -77,10 +77,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 </g>
 <text x="328.0" y="414.9" class="t-label-title" data-owner="padox">Pad oxide</text>
 <text x="328.0" y="430.9" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M150.5 423.5V407.0H285.0V410.0H324.0"/>
-<circle class="dot" data-owner="padox" cx="150.5" cy="423.5" r="1.9"/>
+<path class="leader" data-owner="padox" d="M146.5 423.5V407.0H285.0V410.0H324.0"/>
+<circle class="dot" data-owner="padox" cx="146.5" cy="423.5" r="1.9"/>
 <text x="328.0" y="390.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M120.0 400.5V383.0H291.0V386.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="120.0" cy="400.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M116.0 400.5V383.0H291.0V386.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="116.0" cy="400.5" r="1.9"/>
 <text x="12.0" y="540.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

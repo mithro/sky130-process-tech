@@ -53,9 +53,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="83.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="115.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 91.5L164.0 74.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 95.5V60.0H309.0V63.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="95.5" r="1.9"/>
+<path class="halo" d="M160.0 91.5L160.0 74.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 95.5V60.0H309.0V63.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="95.5" r="1.9"/>
 <text x="328.0" y="179.9" class="t-label-title" data-owner="nit">Nitride cap</text>
 <text x="328.0" y="195.9" class="t-label-note muted" data-owner="nit">GATENIT, step 058</text>
 <path class="leader" data-owner="nit" d="M268.0 112.5H297.0V175.0H324.0"/>
@@ -105,9 +105,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="polyn" cx="259.0" cy="448.5" r="1.9"/>
 <text x="328.0" y="383.9" class="t-label-title" data-owner="polyp">p-type</text>
 <text x="328.0" y="399.9" class="t-label-title" data-owner="polyp">resistor body</text>
-<path class="halo" d="M164.0 407.5L164.0 390.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 411.5V376.0H315.0V379.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="411.5" r="1.9"/>
+<path class="halo" d="M160.0 407.5L160.0 390.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 411.5V376.0H315.0V379.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="411.5" r="1.9"/>
 <text x="328.0" y="447.9" class="t-label-title" data-owner="nit">Nitride cap</text>
 <path class="leader" data-owner="nit" d="M268.0 428.5H303.0V443.0H324.0"/>
 <circle class="dot" data-owner="nit" cx="268.0" cy="428.5" r="1.9"/>

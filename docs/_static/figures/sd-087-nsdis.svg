@@ -88,9 +88,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="nsdres" cx="192.0" cy="45.5" r="1.9"/>
 <text x="328.0" y="121.9" class="t-label-title" data-owner="nsd">N+ source/drain</text>
 <text x="328.0" y="137.9" class="t-label-note muted" data-owner="nsd">NSDI, step 086</text>
-<path class="halo" d="M221.5 133.5L221.5 119.0"/>
-<path class="leader" data-owner="nsd" d="M221.5 137.5V72.0H303.0V117.0H324.0"/>
-<circle class="dot" data-owner="nsd" cx="221.5" cy="137.5" r="1.9"/>
+<path class="halo" d="M217.5 133.5L217.5 119.0"/>
+<path class="leader" data-owner="nsd" d="M217.5 137.5V72.0H303.0V117.0H324.0"/>
+<circle class="dot" data-owner="nsd" cx="217.5" cy="137.5" r="1.9"/>
 <path class="parrow" d="M34 298.0V336.0"/>
 <path class="pahead" d="M34 344.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="309.0" class="t-label-title acc">NSDIS, step 087</text>
@@ -149,13 +149,13 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="411.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="427.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="443.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 411.5L164.0 407.0"/>
-<path class="halo" d="M164.0 401.0L164.0 407.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 415.5V388.0H303.0V391.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="415.5" r="1.9"/>
+<path class="halo" d="M160.0 411.5L160.0 407.0"/>
+<path class="halo" d="M160.0 401.0L160.0 407.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 415.5V388.0H303.0V391.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="415.5" r="1.9"/>
 <text x="328.0" y="467.9" class="t-label-title" data-owner="nsd">N+ source/drain</text>
-<path class="halo" d="M221.5 460.5L221.5 446.0"/>
-<path class="leader" data-owner="nsd" d="M221.5 464.5V399.0H297.0V463.0H324.0"/>
-<circle class="dot" data-owner="nsd" cx="221.5" cy="464.5" r="1.9"/>
+<path class="halo" d="M217.5 460.5L217.5 446.0"/>
+<path class="leader" data-owner="nsd" d="M217.5 464.5V399.0H297.0V463.0H324.0"/>
+<circle class="dot" data-owner="nsd" cx="217.5" cy="464.5" r="1.9"/>
 <text x="12.0" y="557.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

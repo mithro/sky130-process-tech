@@ -952,7 +952,8 @@ def _plan_over(xs: XSection, lid: str, hidden: set, ion_xs, ion_tail, ion_cx, to
         oy = hi - min(3.5, (hi - lo) / 2)
         h = max(xs.top(j) for j in range(i, xs.n)) + SP["over-gap"]
         # the riser may not run beside a wall or a mask edge anywhere on its way up
-        near = [j for j in (i - k8, i - k8 // 2, i + k8 // 2, i + k8) if 0 <= j < xs.n]
+        k12 = int(round(12 / xs.dx))
+        near = [j for j in (i - k12, i - k8, i - k8 // 2, i + k8 // 2, i + k8, i + k12) if 0 <= j < xs.n]
         if any(_visible(xs, j, yv, hidden) != _visible(xs, i, yv, hidden)
                for yv in _frange(oy, h, 2.0) for j in near):
             continue

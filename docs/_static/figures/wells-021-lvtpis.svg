@@ -47,8 +47,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 211.5H303.0V188.6H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="211.5" r="1.9"/>
 <text x="328.0" y="169.5" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 188.5V171.0H309.0V164.6H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="188.5" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 188.5V171.0H309.0V164.6H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="188.5" r="1.9"/>
 <text x="88.0" y="67.9" class="t-label-title" data-owner="nwres">Thick photoresist</text>
 <text x="88.0" y="83.9" class="t-label-note muted" data-owner="nwres">N-well mask, NWM, step</text>
 <text x="88.0" y="99.9" class="t-label-note muted" data-owner="nwres">017; its thickness is inferred</text>
@@ -94,8 +94,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="padox" d="M276.0 549.1H303.0V535.6H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="549.1" r="1.9"/>
 <text x="328.0" y="516.5" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 526.1V508.6H309.0V511.6H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="526.1" r="1.9"/>
+<path class="leader" data-owner="fox" d="M188.0 526.1V508.6H309.0V511.6H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="526.1" r="1.9"/>
 <text x="328.0" y="644.5" class="t-label-title" data-owner="nwell">N-well</text>
 <path class="leader" data-owner="nwell" d="M276.0 639.6H291.0H324.0"/>
 <circle class="dot" data-owner="nwell" cx="276.0" cy="639.6" r="1.9"/>

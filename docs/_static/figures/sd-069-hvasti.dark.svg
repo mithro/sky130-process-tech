@@ -38,9 +38,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="83.9" class="t-label-note muted" data-owner="gox">grown on every</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="gox">active area at</text>
 <text x="328.0" y="115.9" class="t-label-note muted" data-owner="gox">step 043</text>
-<path class="halo" d="M224.0 154.1L224.0 140.6"/>
-<path class="leader" data-owner="gox" d="M224.0 157.6V60.0H291.0V63.0H324.0"/>
-<circle class="dot" data-owner="gox" cx="224.0" cy="157.6" r="1.9"/>
+<path class="halo" d="M220.0 154.1L220.0 140.6"/>
+<path class="leader" data-owner="gox" d="M220.0 157.6V60.0H291.0V63.0H324.0"/>
+<circle class="dot" data-owner="gox" cx="220.0" cy="157.6" r="1.9"/>
 <text x="328.0" y="139.9" class="t-label-title" data-owner="hvntmres">Thin photoresist</text>
 <text x="328.0" y="155.9" class="t-label-note muted" data-owner="hvntmres">HVNTM, step 068;</text>
 <text x="328.0" y="171.9" class="t-label-note muted" data-owner="hvntmres">open over the</text>

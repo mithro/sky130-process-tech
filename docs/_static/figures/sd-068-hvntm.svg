@@ -67,9 +67,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="65.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="97.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 73.5L164.0 56.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 77.5V42.0H303.0V45.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="77.5" r="1.9"/>
+<path class="halo" d="M160.0 73.5L160.0 56.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 77.5V42.0H303.0V45.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="77.5" r="1.9"/>
 <text x="328.0" y="177.9" class="t-label-title" data-owner="tipn">n-type tip</text>
 <text x="328.0" y="193.9" class="t-label-note muted" data-owner="tipn">ASTI, step 065</text>
 <path class="leader" data-owner="tipn" d="M276.0 126.0H291.0V173.0H324.0"/>

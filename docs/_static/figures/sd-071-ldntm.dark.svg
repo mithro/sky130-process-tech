@@ -66,9 +66,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="121.9" class="t-label-title" data-owner="polyp">resistor body</text>
 <text x="328.0" y="137.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="153.9" class="t-label-note muted" data-owner="polyp">step 053</text>
-<path class="halo" d="M164.0 84.5L164.0 67.0"/>
-<path class="leader" data-owner="polyp" d="M164.0 88.5V53.0H303.0V101.0H324.0"/>
-<circle class="dot" data-owner="polyp" cx="164.0" cy="88.5" r="1.9"/>
+<path class="halo" d="M160.0 84.5L160.0 67.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 88.5V53.0H303.0V101.0H324.0"/>
+<circle class="dot" data-owner="polyp" cx="160.0" cy="88.5" r="1.9"/>
 <text x="328.0" y="201.9" class="t-label-title" data-owner="tipn">n-type tip</text>
 <text x="328.0" y="217.9" class="t-label-note muted" data-owner="tipn">ASTI, step 065</text>
 <path class="leader" data-owner="tipn" d="M276.0 137.0H291.0V197.0H324.0"/>
@@ -76,9 +76,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="49.9" class="t-label-title" data-owner="hvtip">High-voltage</text>
 <text x="328.0" y="65.9" class="t-label-title" data-owner="hvtip">n-type tip</text>
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="hvtip">HVASTI, step 069</text>
-<path class="halo" d="M82.0 133.5L82.0 119.0"/>
-<path class="leader" data-owner="hvtip" d="M82.0 137.5V42.0H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="hvtip" cx="82.0" cy="137.5" r="1.9"/>
+<path class="halo" d="M78.0 133.5L78.0 119.0"/>
+<path class="leader" data-owner="hvtip" d="M78.0 137.5V42.0H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="hvtip" cx="78.0" cy="137.5" r="1.9"/>
 <path class="parrow" d="M34 266.0V304.0"/>
 <path class="pahead" d="M34 312.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="277.0" class="t-label-title acc">LDNTM, step 071</text>

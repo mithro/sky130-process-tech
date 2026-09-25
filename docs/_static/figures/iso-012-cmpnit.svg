@@ -53,9 +53,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="isonit" d="M276.0 107.5H297.0V157.0H324.0"/>
 <circle class="dot" data-owner="isonit" cx="276.0" cy="107.5" r="1.9"/>
 <text x="328.0" y="49.9" class="t-label-title" data-owner="liner">Liner oxide</text>
-<path class="halo" d="M178.0 166.5L178.0 56.0"/>
-<path class="leader" data-owner="liner" d="M178.0 169.5V42.0H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="liner" cx="178.0" cy="169.5" r="1.9"/>
+<path class="halo" d="M174.0 166.5L174.0 56.0"/>
+<path class="leader" data-owner="liner" d="M174.0 169.5V42.0H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="liner" cx="174.0" cy="169.5" r="1.9"/>
 <text x="328.0" y="73.9" class="t-label-title" data-owner="fox">Fill oxide</text>
 <text x="328.0" y="89.9" class="t-label-note muted" data-owner="fox">deposited at FILOX,</text>
 <text x="328.0" y="105.9" class="t-label-note muted" data-owner="fox">step 011; this oxide</text>
@@ -93,13 +93,13 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="isonit" d="M276.0 481.5H297.0V487.0H324.0"/>
 <circle class="dot" data-owner="isonit" cx="276.0" cy="481.5" r="1.9"/>
 <text x="328.0" y="443.9" class="t-label-title" data-owner="liner">Liner oxide</text>
-<path class="halo" d="M178.0 540.5L178.0 461.0"/>
-<path class="halo" d="M178.0 455.0L178.0 461.0"/>
-<path class="leader" data-owner="liner" d="M178.0 543.5V436.0H309.0V439.0H324.0"/>
-<circle class="dot" data-owner="liner" cx="178.0" cy="543.5" r="1.9"/>
+<path class="halo" d="M174.0 540.5L174.0 461.0"/>
+<path class="halo" d="M174.0 455.0L174.0 461.0"/>
+<path class="leader" data-owner="liner" d="M174.0 543.5V436.0H309.0V439.0H324.0"/>
+<circle class="dot" data-owner="liner" cx="174.0" cy="543.5" r="1.9"/>
 <text x="328.0" y="467.9" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="halo" d="M192.0 455.0L192.0 461.0"/>
-<path class="leader" data-owner="fox" d="M192.0 464.5V447.0H303.0V463.0H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="464.5" r="1.9"/>
+<path class="halo" d="M188.0 455.0L188.0 461.0"/>
+<path class="leader" data-owner="fox" d="M188.0 464.5V447.0H303.0V463.0H324.0"/>
+<circle class="dot" data-owner="fox" cx="188.0" cy="464.5" r="1.9"/>
 <text x="12.0" y="598.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>
