@@ -40,6 +40,14 @@ fab[^cyp-qtp-113005] — though not on the stack qualified in
 {ref}`CAPTIW2 <step-151>` is the corresponding step for the second
 capacitor.
 
+:::{figure} /_static/figures/mim-136-captiw1.svg
+:alt: Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a blanket of three metal films, a thick silver one between two thin purple ones, carries a very thin film with fine vertical stripes. After it a purple film, thicker than the thin purple films of the metal stack, covers that striped film across the whole width.
+:width: 560px
+:name: fig-mim-136-captiw1
+
+A close-up of part of the metal-3 level; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 3. Before, the thin capacitor dielectric on the blanket metal-3 stack; after, the blanket top-plate film on the dielectric, so that metal, dielectric and plate film lie over the whole wafer until the plate is patterned. The PDK calls the plate only a thin conductor and gives its sheet resistance, 5.8 Ω/sq;[^pdk-07] this page describes it as titanium–tungsten (inference), and reads its thickness, which is not public, as roughly 0.1 µm from that sheet resistance (our arithmetic), several times the 300 Å TiW cap of the 2013 metal stack[^cyp-qtp-113005] and several times the dielectric. The plate is drawn thicker than the metal cap and than the dielectric, but none of the films is drawn to scale. Which refractory film caps metal 3 is not public (the overview of the metal cap); the figure draws the plate, the cap and every other Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the stack are drawn but not labelled. Not to scale.
+:::
+
 The film's thickness is not public, but the sheet resistance bounds
 it. Sputtered Ti:W is a resistive metal; Ghate et al. and Hill
 characterised such films, though their values are not publicly

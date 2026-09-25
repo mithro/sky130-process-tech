@@ -25,6 +25,14 @@ separate strip step after `CAP2ME`, so this page treats the resist
 strip and clean as part of the etch. The step repeats
 {ref}`CAPME <step-138>` one metal level higher.
 
+:::{figure} /_static/figures/mim-153-cap2me.svg
+:alt: Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a violet resist block stands on a purple film over the right-hand part of the width. After it the resist is gone and the purple film remains only where the resist was, as a raised plate with a vertical edge; to its left the very thin striped film is bare on the blanket metal stack.
+:width: 560px
+:name: fig-mim-153-cap2me
+
+A close-up of the left edge of a top plate of the second capacitor; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 4. Before, the resist block on the blanket plate film; after, the plate film etched away outside the resist, stopping on the thin dielectric, which is left on the whole blanket metal-4 stack, and the resist stripped (the page treats the strip and clean as part of this step). Whether the etch stops on the dielectric or cuts through it is not public; the page describes the stop, while the PDK's schematic cross-section draws the dielectric only under the plate.[^pdk-07] Any small loss into the dielectric is not drawn, and the plate edge is drawn vertical. The dielectric, the plate, of the order of 0.1 µm by the page's inference, and the metal are not drawn to scale. The two oxides and the bottom film of the metal stack are drawn but not labelled. Not to scale.
+:::
+
 What lies under the film sets the difficulty. Beneath the plate film
 is a dielectric some 20–30 nm thick (our estimate at
 {ref}`CAPILD2 <step-150>`), and beneath that is the unpatterned
