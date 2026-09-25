@@ -293,11 +293,21 @@ IDENT_RE = re.compile(
 _LEADING_LIST_MARKER_RE = re.compile(r"^\d{1,2}[.)]\s+", re.MULTILINE)
 
 # Hedge phrases (docs/plans/readability-plan.md W0b / report-A "hedges").
+# "roughly", "of order", "of the order of", "typically", "usually" and
+# "likely" are the rd-categories.md review's recommendation (finding D2 /
+# the fix round's "For the tool branch" note): without "of order", the
+# tool could not see implant.md silently dropping "doses of order
+# 10^12-10^13 cm^-2" to the bare range twice over. "light" (as in "light
+# doses of order ...", the same finding) is added on the task's own
+# instruction, from the same page: it narrows the same approximation the
+# same way "of order" does, dropped in the same edit.
 HEDGES = [
     "not public", "we infer", "inference", "our reading", "our arithmetic",
     "our extraction", "our estimate", "typical", "industry-typical",
     "industry-generic", "plausibly", "presumably", "probably", "may",
     "might", "about", "approximately", "~", "≈",
+    "roughly", "of order", "of the order of", "light", "typically",
+    "usually", "likely",
 ]
 
 
@@ -1123,6 +1133,25 @@ def selftest() -> int:
         "a dropped hedge",
         "# P\n\nThis is about 130 nm thick.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
         "# P\n\nThis is 130 nm thick.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+    )
+    case(
+        "rd-categories.md review finding H: dropping 'of order' and "
+        "'light' narrows an approximation and must be caught (reproduced "
+        "against main's copy of the tool: previously undetected)",
+        "# P\n\nThreshold-adjust uses light doses of order "
+        "10e12-10e13 cm-2.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nThreshold-adjust uses 10e12-10e13 cm-2.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        False,
+    )
+    case(
+        "the new hedge words ('roughly', 'of the order of', 'typically', "
+        "'usually', 'likely') are each individually tracked",
+        "# P\n\nA roughly typical value, of the order of 900 degC, "
+        "usually and likely so.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nA typical value, 900 degC, so.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
         False,
     )
     case(

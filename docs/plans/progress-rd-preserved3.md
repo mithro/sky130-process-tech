@@ -64,6 +64,9 @@ task (`docs/plans/agent-briefs.md`, `docs/plans/readability-guide.md` §7) — n
   (over the old 400 cap, under the new 800 cap) elsewhere on the page — `diff_page` reported
   **no failure at all** for a real wording change in a later, unrelated quotation (the exact
   desync/masking bug). Confirmed the fixed tool detects it (`LOST`/`ADDED quotes`).
+* Item 3 (hedge list): reproduced the exact rd-categories.md finding H against `main`'s copy —
+  "light doses of order 10^12-10^13 cm^-2" -> "10^12-10^13 cm^-2" reported **no failure at all**.
+  Confirmed the fixed tool reports `LOST hedges: 'light'; 'of order'`.
 
 ## Selftest
 
