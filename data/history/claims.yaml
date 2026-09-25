@@ -290,12 +290,13 @@ claims:
 - id: fab4-r42
   page: docs/history/fabs.md
   anchor: '"New R42D Technology Qualification" is dated October 1997'
-  grade: attributed
-  attribution: (Cypress's
-  footnotes: [qtp-097483, qtp-102101]
+  grade: conflict
+  hedge: the reports disagree
+  footnotes: [qtp-097483, qtp-102101, qtp-001605]
   sources:
   - {id: qtp-097483, origin: cypress}
   - {id: qtp-102101, origin: cypress}
+  - {id: qtp-001605, origin: cypress}
 - id: fab4-pin-families
   page: docs/history/fabs.md
   anchor: 90nm C9/R9/R95 technology products at Cypress Fab 4
@@ -368,11 +369,31 @@ claims:
 - id: foundry-hyundai
   page: docs/history/fabs.md
   anchor: '| Hyundai Electronics ("Fab HME"), Korea |'
-  grade: single-source
-  hedge: single source
-  footnotes: [qtp-001004]
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-001004, qtp-002703]
   sources:
   - {id: qtp-001004, origin: cypress}
+  - {id: qtp-002703, origin: cypress}
+- id: fab-wafertech
+  page: docs/history/fabs.md
+  anchor: '| WaferTech, Camas, Washington |'
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-g990003, qtp-011103]
+  sources:
+  - {id: qtp-g990003, origin: cypress}
+  - {id: qtp-011103, origin: cypress}
+- id: fab-names-fab5-tsmc
+  page: docs/history/fabs.md
+  anchor: '"Fab 5" was TSMC before.'
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-l000004, qtp-011103, qtp-002703]
+  sources:
+  - {id: qtp-l000004, origin: cypress}
+  - {id: qtp-011103, origin: cypress}
+  - {id: qtp-002703, origin: cypress}
 - id: foundry-imi
   page: docs/history/fabs.md
   anchor: '| Tower, IBM and Chartered |'
@@ -386,9 +407,10 @@ claims:
   anchor: '| TSMC, Taiwan |'
   grade: attributed
   attribution: Cypress's reports
-  footnotes: [ar-fy1998, qtp-080608, qtp-s050001]
+  footnotes: [ar-fy1998, qtp-l000004, qtp-080608, qtp-s050001]
   sources:
   - {id: cyx-ar-fy1998-foundries, origin: cypress}
+  - {id: qtp-l000004, origin: cypress}
   - {id: qtp-080608, origin: cypress}
   - {id: qtp-s050001, origin: cypress}
 - id: fab-grace-65nm-conflict
@@ -989,6 +1011,34 @@ claims:
   sources:
   - {id: qtp-097044, origin: cypress}
   - {id: qtp-097461, origin: cypress}
+- id: tech-r42hd-date-conflict
+  page: docs/history/technologies.md
+  anchor: 'Its first
+  row, QTP 98064'
+  grade: conflict
+  hedge: disagree
+  footnotes: [qtp-102101, qtp-001605]
+  sources:
+  - {id: qtp-102101, origin: cypress}
+  - {id: qtp-001605, origin: cypress}
+- id: tech-b53-fab-conflict
+  page: docs/history/technologies.md
+  anchor: 'Another B53D-3 report gives the same August'
+  grade: conflict
+  hedge: the reports disagree
+  footnotes: [qtp-002202, qtp-032005]
+  sources:
+  - {id: qtp-002202, origin: cypress}
+  - {id: qtp-032005, origin: cypress}
+- id: tech-r9q-quad-metal
+  page: docs/history/technologies.md
+  anchor: 'Two later reports'
+  grade: attributed
+  attribution: (Cypress's
+  footnotes: [qtp-044201, qtp-060908]
+  sources:
+  - {id: qtp-044201, origin: cypress}
+  - {id: qtp-060908, origin: cypress}
 - id: tech-p20
   page: docs/history/technologies.md
   anchor: The one 0.8 µm process in the qualification reports is P20

@@ -125,8 +125,8 @@ says whether Fab 4b or Fab 4c was completed.
 
 **Processes.** Fab 4 ran every Cypress SRAM and logic generation from 0.5 µm to 90 nm:
 
-* **R42.** "New R42D Technology Qualification" is dated October 1997 and R42HD November 1997 (Cypress's
-  reports).[^qtp-097483][^qtp-102101]
+* **R42.** "New R42D Technology Qualification" is dated October 1997. R42HD's first row is dated "Nov 97"
+  in one report and "Apr 98" in another; the reports disagree.[^qtp-097483][^qtp-102101][^qtp-001605]
 * **R7, R8, C8, L8, C9, R9, R95 and S8.** A 2015 Cypress notice lists "250nm R7, 130nm C8/R8/S8/L8 and
   90nm C9/R9/R95 technology products at Cypress Fab 4" (single source).[^pin-152804]
 * **S8.** The first S8 qualification, "S8 SONOS technology", was at "Cypress Minnesota CMI (Fab4)" in
@@ -163,9 +163,10 @@ technology (single source).[^ar-fy1998] The foundries the sources name before S8
 |---|---|---|
 | Magnachip, Cheong-Ju, Korea | P26 moved from Fab 2 as a three-metal "P26 TLM", qualified March 2006 | single source[^qtp-054605] |
 | NEC Electronics America, Roseville, California | a USB 2.0 bridge chip on NEC's "0.25um" process, five metal layers, qualified June 2003 | single source[^qtp-030310] |
-| Hyundai Electronics ("Fab HME"), Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000 | single source[^qtp-001004] |
+| Hyundai Electronics ("Fab HME"), Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000; a "0.35um TLM" process for USB chips from June 2000 | Cypress's reports[^qtp-001004][^qtp-002703] |
 | Tower, IBM and Chartered | foundries of IMI, which Cypress bought in February 2001 | single source[^qtp-i000006] |
-| TSMC, Taiwan | process development for CPLDs in 1998; L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^ar-fy1998][^qtp-080608][^qtp-s050001] |
+| TSMC, Taiwan | process development for CPLDs in 1998; "New Technology TSMC 0.25um" for SRAMs in October 1999; L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^ar-fy1998][^qtp-l000004][^qtp-080608][^qtp-s050001] |
+| WaferTech, Camas, Washington | "WaferTech 0.35um" from January 1998 and "WaferTech .25um" from March 2001, for synchronous SRAMs | Cypress's reports[^qtp-g990003][^qtp-011103] |
 | ProMOS and Powerchip, Taiwan | memory processes: ProMOS S17 (0.17 µm, 2003), Powerchip 0.16 µm | Cypress's reports[^qtp-032301][^qtp-051501] |
 | Honeywell, Minnesota | a joint silicon-on-insulator process from 2002 | conflict on the node[^ar-fy2002][^edn-2005-honeywell] |
 | Grace (GSMC, later HHGrace), Shanghai | foundry deal of December 2005; S4 PSoC first; 0.35 µm SONOS and C8 moved from 2006 | Cypress and EE Times[^ar-fy2005][^eet-2005-grace][^ar-fy2006][^eet-2006-c8] |
@@ -199,6 +200,8 @@ names of the sites. Read them with these points in mind:
 
 * **"Fab 5" is a foundry.** Reports from 2009 onwards call Grace in Shanghai "Fab 5" or "Fab5 GSMC"
   (Cypress's reports).[^qtp-091302][^qtp-151005]
+* **"Fab 5" was TSMC before.** Reports printed in 2001 call TSMC and WaferTech "Fab 5", and a 2003 report
+  calls Hyundai "Fab 25" (Cypress's reports).[^qtp-l000004][^qtp-011103][^qtp-002703]
 * **GSMC becomes HHGrace.** A 2015 reissue lists the August 2006 qualification of the foundry as "Qualify
   HHGrace using PSoC Device Product Family", under the foundry's later name (single source).[^qtp-151005]
 * **Fab 4 becomes "Skywater".** A 2025 reissue of a 2004 report gives the fab as "Skywater --
@@ -400,3 +403,18 @@ names of the sites. Read them with these points in mind:
 [^sd-2005-honeywell]: Semiconductor Digest, *New Honeywell foundry to produce 150nm radiation-hardened
     semiconductors*, 2005-04-28.
     <https://sst.semiconductor-digest.com/2005/04/new-honeywell-foundry-to-produce-150nm-radiation-hardened-semiconductors/>
+[^qtp-001605]: Cypress Semiconductor, Product Qualification Report QTP 001605: *256K Fast Asynchronous SRAM, R42HDHA Technology, Fab 4*, December, 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211203231803/https://www.cypress.com/file/92016/download>
+[^qtp-002703]: Cypress Semiconductor, Product Qualification Report QTP 002703: *Full Speed CYUSB Family, EZ-USB FX, 0.35um TLM Technology, Fab 25*, June, 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201031003107/https://www.cypress.com/file/91526/download>
+[^qtp-011103]: Cypress Semiconductor, Product Qualification Report QTP 011103: *WaferTech 0.25um 3P2M Process Technology*, April, 2001;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201101013242/https://www.cypress.com/file/91621/download>
+[^qtp-g990003]: Cypress Semiconductor, Product Qualification Report QTP G990003: *WaferTech 0.35um*, May, 2001;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810011117/https://www.cypress.com/file/94381/download>
+[^qtp-l000004]: Cypress Semiconductor, Product Qualification Report QTP L000004: *CYNCP80192-BGC Network Co-Processor, TSMC 0.25um Technology, Fab 5 (TSMC)*, October, 2001;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211203223801/https://www.cypress.com/file/94401/download>

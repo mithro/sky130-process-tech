@@ -118,7 +118,9 @@ reports show four processes of this generation at Fab 4 (Cypress's reports):[^qt
 
 * **R42D**, "New R42D Technology Qualification" in October 1997; FIFOs, clocks and SRAMs. Its variant "R42D
   with Hot Al" prints two metal layers, 0.35 µm and 70 Å of gate oxide.
-* **R42HD**, November 1997: two metal layers, 0.42 µm, 110 Å of gate oxide; 3.3 V and 5 V dual-port SRAMs.
+* **R42HD**: two metal layers, 0.42 µm, 110 Å of gate oxide; 3.3 V and 5 V dual-port SRAMs. Its first
+  row, QTP 98064, is dated "Nov 97" in one report and "Apr 98" in another; the reports
+  disagree.[^qtp-102101][^qtp-001605]
 * **RAM42HA and RAM42HHA**, single-metal 0.42 µm versions for the CY62256 256K SRAM: 70 Å of gate oxide
   for the 3 V part, 110 Å for the 5 V part. The metals differ too: 6000 Å of aluminium–copper between TiW
   layers for the 3 V part, 8000 Å of aluminium under "500A Cu-Ti" for the 5 V part (Cypress's
@@ -160,7 +162,9 @@ the upper metals start using CoTi or Ti (Cypress's reports).[^qtp-099202][^qtp-0
 **BiCMOS.** Cypress's 1998 report describes "a new, 0.25-micron BiCMOS process technology" with bipolar
 transistors up to 25 GHz (single source).[^ar-fy1998] B53D-3, "New Technology, B53D-3" at Fab 4 in August
 2000 and printed as 0.25 µm CMOS, made WirelessUSB radio chips and clocks. That it is the BiCMOS process is
-our reading; the report does not say "BiCMOS".[^qtp-032005]
+our reading; the report does not say "BiCMOS".[^qtp-032005] Another B53D-3 report gives the same August
+2000 row as "New Technology B53D-3, Fab1" and records a "Technology transfer from Fab1 to Fab4" in March
+2001; the reports disagree on where B53D-3 began.[^qtp-002202][^qtp-032005]
 
 **SiGe BiCMOS.** In 2002 Cypress "completed development of 0.20-micron Silicon Germanium ("SiGe")"
 BiCMOS at Fab 4. Its qualification report, B55SGT ("New Technology B55SGT18A", May 2003), prints "CMOS
@@ -229,8 +233,9 @@ qualified from 2004 to 2007 (Cypress's reports):[^qtp-032003][^qtp-051207][^qtp-
 
 * **R9T-3R** and **R9Q-3R**: synchronous and QDR SRAMs with a nitrided 22 Å gate oxide. R9T-3R has three
   metal layers and also prints a "Thick GOx" whose value is cut off. R9Q-3R lists four metals, but its
-  design rule says "Triple Metal"; the report disagrees with itself (Cypress's
-  reports).[^qtp-032003][^qtp-051207]
+  design rule says "Triple Metal"; the report disagrees with itself (Cypress's reports).[^qtp-032003][^qtp-051207] Two later reports
+  call R9Q-3R "Quad Metal" and print a dual gate oxide, "Thin GOX 20A, Thick GOX, 58A" (Cypress's
+  reports).[^qtp-044201][^qtp-060908]
 * **C9FD-3R**: two metal layers, 23 Å of gate oxide, fast SRAMs.
 * **R95LD-3R**: two metal layers, 28 Å of gate oxide, low-power SRAMs.
 
@@ -499,3 +504,15 @@ public record found. The sources show both in development from
 [^qtp-097461]: Cypress Semiconductor, Product Qualification Report QTP 97461: *3.3V, Light Device 16-Bit FCT Family*, April, 1998;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20210517162807/https://www.cypress.com/file/93881/download>
+[^qtp-001605]: Cypress Semiconductor, Product Qualification Report QTP 001605: *256K Fast Asynchronous SRAM, R42HDHA Technology, Fab 4*, December, 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211203231803/https://www.cypress.com/file/92016/download>
+[^qtp-002202]: Cypress Semiconductor, Product Qualification Report QTP 002202: *Robo Clock II High-Speed Multi-Phase PLL Clock, B53D-3 Technology, Fab 4*, October 2014;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210509103832/https://www.cypress.com/file/135526/download>
+[^qtp-044201]: Cypress Semiconductor, Product Qualification Report QTP 044201: *36 Meg QDR Synchronous SRAM Family, R9Q-3R Technology, Fab4*, May 2008;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201127164450/https://www.cypress.com/file/92546/download>
+[^qtp-060908]: Cypress Semiconductor, Product Qualification Report QTP 060908: *36 Meg QDR/DDR Synchronous SRAM Family, R9Q-3R Technology, Fab4*, February 2009;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211025141847/https://www.cypress.com/file/92956/download>
