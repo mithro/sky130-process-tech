@@ -4095,3 +4095,224 @@ documents:
     CY7C1350/CY7C1352"), but with different device-size wording ("4 Meg, 128K x 36" here vs "1Meg" there)
     for what is presumably the same historical qualification event -- another example of the same QTP
     number being summarised differently across independently-issued reports.'
+- id: qtp-060201
+  origin: cypress
+  doc_type: QTP
+  number: '060201'
+  cypress_document_number: 001-87727 Rev. **
+  title: PSoC Mixed Signal Array Hydra Device Family S4AD-5 Technology, Fab4
+  version: '**'
+  date_printed: May 2013
+  url: https://www.cypress.com/file/121336/download
+  archive_url: https://web.archive.org/web/20210127141736/https://www.cypress.com/file/121336/download
+  retrieved: '2026-09-25'
+  sha256: 0926dbdc1f18123c6ff67866b692dcfc47bcaf6458787de282f0a15d57b649a2
+  technology_codes:
+  - S4AD-5
+  fab: Fab 4 (Cypress Semiconductor -- Minnesota)
+  products:
+  - CY8C29466
+  - CY8C29566
+  - CY8C29666
+  - CY8C29866
+  - CY8C27466
+  - CY8C27566
+  - CY8C27666
+  - CY8C27866
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A TiW/6,000A Al 0.5% Cu /300A TiW; Metal 2: 500A TiW/8,000A Al 0.5%
+      Cu/300A TiW'
+    passivation: 7,000A TeOs / 6,000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110A
+    fab_location: Cypress Semiconductor -- Minnesota
+    die_fab_line_id: Fab 4, S4AD-5, SONOS
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '052004'
+    description: PSoC 8C21001A Neutron Product Family on SONOS S4AD-5 Technology, Fab4
+    date: Aug 05
+  - number: '060201'
+    description: PSoC 8C29000A Hydra Product Family Transfer on SONOS S4AD-5 Technology, Fab4
+    date: Dec 07
+  - number: '080703'
+    description: Qualify Hydra 8C29000A at CMI on SONOS S4AD-5 Technology, Fab4
+    date: Apr 08
+  - number: '082009'
+    description: Qualify new MM2 mask on Hydra for Industrial (8C29000AC) S4AD-5 Technology, Fab4
+    date: Nov 08
+  quotes:
+  - text: PSoC 8C29000A Hydra Product Family Transfer on SONOS S4AD-5 Technology, Fab4
+    location: p.2, Product Qualification History, row 060201
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab 4, S4AD-5, SONOS'
+    location: p.3, Technology/Fab Process Description
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This report gives S4AD-5's die-fab location only as "Cypress Semiconductor – Minnesota", without
+    naming Bloomington explicitly (other Fab 4 reports in this corpus print "Bloomington, MN"). Its 0.35
+    µm design rule matches every other S4AD-5 report in this corpus except qtp-021507's "0.5 m" outlier.
+- id: qtp-070505
+  origin: cypress
+  doc_type: QTP
+  number: '070505'
+  cypress_document_number: 001-88012 Rev. *A
+  title: PSoC Quark Device Family, S4AD-5 Technology, Fab 5
+  version: '*A'
+  date_printed: June 2014
+  url: https://www.cypress.com/file/130041/download
+  archive_url: https://web.archive.org/web/20210507230215/https://www.cypress.com/file/130041/download
+  retrieved: '2026-09-25'
+  sha256: b6a009d610188b5d8306f4871f1828a3bd29dd1190849cfb4520f43c6c8b542a
+  technology_codes:
+  - S4AD-5
+  fab: Fab 5 (GSMC, China)
+  products:
+  - CY8C20000
+  - CY8C20234
+  - CY8C20334
+  - CY8C20434
+  - CY8C20534
+  - CY8C20224
+  - CY8C20324
+  - CY8C20424
+  - CY8C20524
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 250A TiN/5,800A Al/700A TiN; Metal 2: 500A TiN/8,000A Al/250A TiN'
+    passivation: 7,000A TeOs /6,000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110A
+    fab_location: GSMC China
+    die_fab_line_id: S4AD-5 GSMC Sonos
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '060605'
+    description: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
+    date: Aug 06
+  - number: '070505'
+    description: Qualify PSOC 8C20000A Quark Device on S4AD-5 Technology, Fab5 (GSMC)
+    date: Jan 08
+  - number: '081803'
+    description: To qualify New Metal 2 mask (MM2, SA Iref adjust) and Metal 1 mask (MM1, Vneg Cut)
+    date: Aug 08
+  quotes:
+  - text: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
+    location: p.2, Product Qualification History, row 060605
+  - text: 'Die Fab Line ID/Wafer Process ID: S4AD-5 GSMC Sonos'
+    location: p.3, Technology/Fab Process Description
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This report and qtp-071104 are the first in this corpus to place S4AD-5 at "Fab 5", a foundry
+    (GSMC, China) rather than a Cypress-owned fab; the qualification-history row 060605 dates this transfer's
+    qualification to Aug 06. Metal composition and gate oxide match every other S4AD-5 report at 0.35 µm.
+- id: qtp-071104
+  origin: cypress
+  doc_type: QTP
+  number: '071104'
+  cypress_document_number: 001-89221 Rev. *A
+  title: PSoC Mixed Signal Array Product Family, S4AD-5 Technology, Fab5
+  version: '*A'
+  date_printed: September 2014
+  url: https://www.cypress.com/file/134771/download
+  archive_url: https://web.archive.org/web/20211203232141/https://www.cypress.com/file/134771/download
+  retrieved: '2026-09-25'
+  sha256: 498b8089451c4f5c4f977e853737220219b0ea8692f53f670bdb4ed9ccd895ff
+  technology_codes:
+  - S4AD-5
+  fab: Fab 5 (GSMC, China)
+  products:
+  - CY8C21123
+  - CY8C21223
+  - CY8C21323
+  - CY8C21000
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 250A TiN/5,800A Al/700A TiN Metal 2: 500A TiN/8,000A Al/250A TiN'
+    passivation: 7,000A TeOs /6,000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110A
+    fab_location: GSMC/China
+    die_fab_line_id: S4AD-5 GSMC SONOS
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '060605'
+    description: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
+    date: Aug 06
+  - number: '071104'
+    description: Qualify PSoC 8C21000A Device on S4AD-5 Technology, Fab5
+    date: Nov 07
+  quotes:
+  - text: Qualify PSoC 8C21000A Device on S4AD-5 Technology, Fab5
+    location: p.2, Product Qualification History, row 071104
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION –R28
+    location: p.3, Technology/Fab Process Description (section header)
+  - text: 'Die Fab Line ID/Wafer Process ID: S4AD-5 GSMC SONOS'
+    location: p.3, Technology/Fab Process Description
+  notes: This report's process-description section header prints "TECHNOLOGY/FAB PROCESS DESCRIPTION –R28"
+    even though the title, qualification history and Die Fab Line ID all name S4AD-5, not R28 -- an
+    apparent template copy-paste error carried into the printed document, quoted here verbatim rather than
+    corrected. The process figures under that mislabelled header (0.35 µm, 110 Å gate oxide) match the
+    other Fab 5/GSMC S4AD-5 report (qtp-070505) rather than any R28 report in this corpus (R28 is 0.65 µm).
+- id: qtp-098296
+  origin: cypress
+  doc_type: QTP
+  number: '98296'
+  cypress_document_number: null
+  title: 64K Static RAM – R28 Technology – Fab 2
+  version: '1.0'
+  date_printed: September, 1998
+  url: https://www.cypress.com/file/94056/download
+  archive_url: https://web.archive.org/web/20210519014520/https://www.cypress.com/file/94056/download
+  retrieved: '2026-09-25'
+  sha256: 4977650f03b0cb3d009ee34dd18189d701997da0044e0c440570a725b4397702
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C185
+  - CY7C186
+  - CY7C6264
+  - CY7C164
+  - CY7C166
+  - CY7C187
+  die_ids:
+  - 7C185C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history:
+  - number: '97476'
+    description: 256K SRAM, R28 Technology, Fab 2 qualification
+    date: null
+  - number: '98296'
+    description: Qualify Fab 2 for 64K SRAM, R28 process (Rev N)
+    date: null
+  quotes:
+  - text: Qualify Fab 2 for 64K SRAM, R28 process (Rev N)
+    location: p.2, Product Description, Qualification Purpose
+  - text: QTP 97476, 256K SRAM, R28 Technology, Fab2 qualification
+    location: p.5, Reliability Failure Rate Summary, footnote 4
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/R28'
+    location: p.2, Technology/Fab Process Description
+  notes: R28 here (2 metal layers, CMOS Double Poly Double Metal, 0.65 µm, 165 Å gate oxide) matches every
+    other R28 report in this corpus. References a prior "QTP 97476, 256K SRAM, R28 Technology, Fab2
+    qualification" as its reliability-failure-rate baseline; this agrees with QTP 97476's own report
+    (qtp-097476, "256K STATIC RAM ... R28 PROCESS, FAB 2 QUALIFICATION"), but qtp-098252 instead cites the
+    same QTP 97476 as "32K x 8 SRAM, R28 Technology, Fab2 qualification" -- one QTP number described two
+    different ways across independently-issued reports.

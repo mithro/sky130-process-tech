@@ -361,6 +361,10 @@ Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage
 **QTP-054605** — Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
 Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
+(hsrc-qtp-060201)=
+**QTP-060201** — Cypress Semiconductor, Product Qualification Report QTP 060201: *PSoC Mixed Signal Array Hydra Device Family S4AD-5 Technology, Fab4*, May 2013; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210127141736/https://www.cypress.com/file/121336/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
+
 (hsrc-qtp-061806)=
 **QTP-061806** — Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
@@ -376,6 +380,14 @@ Used on {ref}`history-index`, {ref}`history-products`, {ref}`history-sonos-s4`, 
 (hsrc-qtp-063807)=
 **QTP-063807** — Cypress Semiconductor, Product Qualification Report QTP 063807: *1 Meg Fast Asynchronous SRAM Family, C9FD-3R Technology, Fab4*, January 2024. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
+
+(hsrc-qtp-070505)=
+**QTP-070505** — Cypress Semiconductor, Product Qualification Report QTP 070505: *PSoC Quark Device Family, S4AD-5 Technology, Fab 5*, June 2014; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507230215/https://www.cypress.com/file/130041/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
+
+(hsrc-qtp-071104)=
+**QTP-071104** — Cypress Semiconductor, Product Qualification Report QTP 071104: *PSoC Mixed Signal Array Product Family, S4AD-5 Technology, Fab5*, September 2014; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211203232141/https://www.cypress.com/file/134771/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-072002)=
 **QTP-072002** — Cypress Semiconductor, Product Qualification Report QTP 072002: *2 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025 rev*B. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-072002-2-meg-mobl-sram-cy62136-7fv30-r95ld-3rfab4-aec-q100-productqualificationreport-en.pdf>
@@ -447,6 +459,10 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-098252)=
 **QTP-098252** — Cypress Semiconductor, Product Qualification Report QTP 98252: *CY7C188 32K x 9 Static RAM – R28 Technology – Fab2*, November 1998; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20200810004607/https://www.cypress.com/file/94051/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
+
+(hsrc-qtp-098296)=
+**QTP-098296** — Cypress Semiconductor, Product Qualification Report QTP 98296: *64K Static RAM – R28 Technology – Fab 2*, September, 1998; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210519014520/https://www.cypress.com/file/94056/download>
 Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-098333)=

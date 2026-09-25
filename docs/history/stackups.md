@@ -52,6 +52,7 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
 | R28, QTP 97476[^qtp-097476] | Cypress Semiconductor -- Round Rock, TX | 2 | SiO2 / 165 Å |
 | R28, QTP 98236[^qtp-098236] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
 | R28, QTP 98252[^qtp-098252] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
+| R28, QTP 98296[^qtp-098296] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
 | R28, QTP 98393[^qtp-098393] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
 | R28, QTP 99083[^qtp-099083] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
 | R28, QTP 99175[^qtp-099175] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
@@ -78,7 +79,10 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
 | RAM42HNHA, QTP 091302[^qtp-091302] | Grace Semiconductor, Shanghai, China | 1 | SiO2 /110A |
 | S4AD-5, QTP 020305[^qtp-020305] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 110 Å |
 | S4AD-5, QTP 022505[^qtp-022505] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 110 Å |
+| S4AD-5, QTP 060201[^qtp-060201] | Cypress Semiconductor -- Minnesota | 2 | SiO2 / 110A |
 | S4AD-5, QTP 062509[^qtp-062509] | GSMC/Shanghai-China | 2 | SiO2 / 110A |
+| S4AD-5, QTP 070505[^qtp-070505] | GSMC China | 2 | SiO2 / 110A |
+| S4AD-5, QTP 071104[^qtp-071104] | GSMC/China | 2 | SiO2 / 110A |
 | S4AD-5, QTP 151005[^qtp-151005] | HHGrace /Shanghai-China | 2 | SiO2 / 110A |
 | S4AD-5CTI, QTP 051005[^qtp-051005] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 110A |
 | S4ADLatch, QTP 042806[^qtp-042806] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 7A |
@@ -312,6 +316,16 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
 | Passivation | 7000A TEOS + 6000A Si2N4 | — |
 
+### QTP 98296: Fab2/R28
+
+*64K Static RAM – R28 Technology – Fab 2.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: the history table gives no dates.[^qtp-098296]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
+
 ### QTP 98333: Fab2/L28
 
 *100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC), Fab2, L28 Technology.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: no history table.[^qtp-098333]
@@ -529,6 +543,16 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 2 | 500A Ti/8000A Al 0.5% Cu/300A TiW | 0.880 µm |
 | Passivation | 3,000A TeOs / 6000A Si3N4 | — |
 
+### QTP 060201: Fab 4, S4AD-5, SONOS
+
+*PSoC Mixed Signal Array Hydra Device Family S4AD-5 Technology, Fab4.* Design rule: Single Poly, Double Metal, 0.35 µm. Earliest dated history row: Aug 05 (QTP 052004).[^qtp-060201]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500A TiW/6,000A Al 0.5% Cu /300A TiW | 0.680 µm |
+| Metal 2 | 500A TiW/8,000A Al 0.5% Cu/300A TiW | 0.880 µm |
+| Passivation | 7,000A TeOs / 6,000A Si3N4 | — |
+
 ### QTP 062509: S4AD-5 GSMC SONOS
 
 *Neutron Device Family, S4AD-5 Technology, GSMC.* Design rule: Single Poly, Double Metal, 0.35 µm. Earliest dated history row: Aug 06 (QTP 060605).[^qtp-062509]
@@ -538,6 +562,27 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 1 | 250A TiN/5,800A Al/700A TiN | 0.675 µm |
 | Metal 2 | 500A TiN/8,000A Al/250A TiN | 0.875 µm |
 | Passivation | 7,000A TeOs /6,000A Si3N4 | — |
+
+### QTP 070505: S4AD-5 GSMC Sonos
+
+*PSoC Quark Device Family, S4AD-5 Technology, Fab 5.* Design rule: Single Poly, Double Metal, 0.35 µm. Earliest dated history row: Aug 06 (QTP 060605).[^qtp-070505]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 250A TiN/5,800A Al/700A TiN | 0.675 µm |
+| Metal 2 | 500A TiN/8,000A Al/250A TiN | 0.875 µm |
+| Passivation | 7,000A TeOs /6,000A Si3N4 | — |
+
+### QTP 071104: S4AD-5 GSMC SONOS
+
+*PSoC Mixed Signal Array Product Family, S4AD-5 Technology, Fab5.* Design rule: Single Poly, Double Metal, 0.35 µm. Earliest dated history row: Aug 06 (QTP 060605).[^qtp-071104]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 250A TiN/5,800A Al/700A TiN Metal 2: 500A TiN/8,000A Al/250A TiN | 1.550 µm |
+| Passivation | 7,000A TeOs /6,000A Si3N4 | — |
+
+The report gives 2 metal layers but lists films for 1.
 
 ### QTP 151005: S4AD-5
 
@@ -853,10 +898,13 @@ Each table gives one report's metal layers and passivation, with its design rule
 * [Cypress, QTP 051501](<https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download>) — Cypress Minnesota (CMI) Sort Site Qualification -- 2 Meg, 3V PSRAM Device, PowerChip 0.165µm.[^qtp-051501]
 * [Cypress, QTP 053301](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>) — L8C-3R Technology, Fab 4.[^qtp-053301]
 * [Cypress, QTP 054605](<https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>) — P26 TLM Technology Transfer to Magnachip.[^qtp-054605]
+* [Cypress, QTP 060201](<https://web.archive.org/web/20210127141736/https://www.cypress.com/file/121336/download>) — PSoC Mixed Signal Array Hydra Device Family S4AD-5 Technology, Fab4.[^qtp-060201]
 * [Cypress, QTP 061806](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>) — 4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.[^qtp-061806]
 * [Cypress, QTP 062201](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-062201-mobl-adm-dual-port-static-ram-family-r52ld-3-technology-fab4-productqualificationreport-en.pdf>) — MoBL ADM Dual Port Static RAM Family, R52LD-3 Technology, Fab4.[^qtp-062201]
 * [Cypress, QTP 062509](<https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>) — Neutron Device Family, S4AD-5 Technology, GSMC.[^qtp-062509]
 * [Cypress, QTP 063807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45>) — 1 Meg Fast Asynchronous SRAM Family, C9FD-3R Technology, Fab4.[^qtp-063807]
+* [Cypress, QTP 070505](<https://web.archive.org/web/20210507230215/https://www.cypress.com/file/130041/download>) — PSoC Quark Device Family, S4AD-5 Technology, Fab 5.[^qtp-070505]
+* [Cypress, QTP 071104](<https://web.archive.org/web/20211203232141/https://www.cypress.com/file/134771/download>) — PSoC Mixed Signal Array Product Family, S4AD-5 Technology, Fab5.[^qtp-071104]
 * [Cypress, QTP 072002](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-072002-2-meg-mobl-sram-cy62136-7fv30-r95ld-3rfab4-aec-q100-productqualificationreport-en.pdf>) — 2 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.[^qtp-072002]
 * [Cypress, QTP 080608](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>) — High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A.[^qtp-080608]
 * [Cypress, QTP 082506](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>) — PCI-E Clock Family, R52T-3 Technology, Fab 4.[^qtp-082506]
@@ -874,6 +922,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 * [Cypress, QTP 98021](<https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>) — 1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices.[^qtp-098021]
 * [Cypress, QTP 98236](<https://web.archive.org/web/20210507140402/https://www.cypress.com/file/94031/download>) — 256K x 1 Static RAM, R28 Process, Fab 2 Qualification.[^qtp-098236]
 * [Cypress, QTP 98252](<https://web.archive.org/web/20200810004607/https://www.cypress.com/file/94051/download>) — CY7C188 32K x 9 Static RAM – R28 Technology – Fab2.[^qtp-098252]
+* [Cypress, QTP 98296](<https://web.archive.org/web/20210519014520/https://www.cypress.com/file/94056/download>) — 64K Static RAM – R28 Technology – Fab 2.[^qtp-098296]
 * [Cypress, QTP 98333](<https://web.archive.org/web/20201205131229/https://www.cypress.com/file/94086/download>) — 100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC), Fab2, L28 Technology.[^qtp-098333]
 * [Cypress, QTP 98368](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-98368-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152cc652012>) — SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4.[^qtp-098368]
 * [Cypress, QTP 98393](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-98393-productqualificationreport-en.pdf>) — Dual Port SRAM - R28 Technology - Fab 2.[^qtp-098393]
@@ -974,6 +1023,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 [^qtp-054605]: Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
+[^qtp-060201]: Cypress Semiconductor, Product Qualification Report QTP 060201: *PSoC Mixed Signal Array Hydra Device Family S4AD-5 Technology, Fab4*, May 2013;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210127141736/https://www.cypress.com/file/121336/download>
 [^qtp-061806]: Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>
 [^qtp-062201]: Cypress Semiconductor, Product Qualification Report QTP 062201: *MoBL ADM Dual Port Static RAM Family, R52LD-3 Technology, Fab4*, June 2014.
@@ -982,6 +1034,12 @@ Each table gives one report's metal layers and passivation, with its design rule
     <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>
 [^qtp-063807]: Cypress Semiconductor, Product Qualification Report QTP 063807: *1 Meg Fast Asynchronous SRAM Family, C9FD-3R Technology, Fab4*, January 2024.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45>
+[^qtp-070505]: Cypress Semiconductor, Product Qualification Report QTP 070505: *PSoC Quark Device Family, S4AD-5 Technology, Fab 5*, June 2014;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507230215/https://www.cypress.com/file/130041/download>
+[^qtp-071104]: Cypress Semiconductor, Product Qualification Report QTP 071104: *PSoC Mixed Signal Array Product Family, S4AD-5 Technology, Fab5*, September 2014;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211203232141/https://www.cypress.com/file/134771/download>
 [^qtp-072002]: Cypress Semiconductor, Product Qualification Report QTP 072002: *2 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025 rev*B.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-072002-2-meg-mobl-sram-cy62136-7fv30-r95ld-3rfab4-aec-q100-productqualificationreport-en.pdf>
 [^qtp-080608]: Cypress Semiconductor, Product Qualification Report QTP 080608: *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A*, May 2013.
@@ -1025,6 +1083,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 [^qtp-098252]: Cypress Semiconductor, Product Qualification Report QTP 98252: *CY7C188 32K x 9 Static RAM – R28 Technology – Fab2*, November 1998;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20200810004607/https://www.cypress.com/file/94051/download>
+[^qtp-098296]: Cypress Semiconductor, Product Qualification Report QTP 98296: *64K Static RAM – R28 Technology – Fab 2*, September, 1998;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210519014520/https://www.cypress.com/file/94056/download>
 [^qtp-098333]: Cypress Semiconductor, Product Qualification Report QTP 98333: *100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC), Fab2, L28 Technology*, August 2003;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201205131229/https://www.cypress.com/file/94086/download>
