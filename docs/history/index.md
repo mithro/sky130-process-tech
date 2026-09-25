@@ -10,14 +10,15 @@ they relate to S8. It is a history kept apart from the SKY130 reference, which s
 
 * **Cypress made its own processes, one generation at a time.** From 1.2 µm CMOS in 1984 to 90 nm in 2004,
   with SRAM processes named RAM3 at 0.5 µm, RAM5 at 0.25 µm and RAM 8 at 0.13 µm. See
-  {ref}`history-technologies`.[^fu-cypress][^ar-fy1995][^ar-fy1998][^ar-fy2002]
+  {ref}`history-technologies`.[^fu-cypress][^ar-fy1995][^ar-fy1998][^ar-fy2002][^ar-fy2004]
 * **Four fabs of its own.** San Jose (Fab 1), Round Rock, Texas (Fab 2) and two fabs on one site in
   Bloomington, Minnesota (Fab 3 and Fab 4). Fab 4, built from 1994, is the fab SkyWater runs today. See
   {ref}`history-fabs`.[^ar-fy1993][^ar-fy1995][^strib-2017]
 * **SONOS in the reports from 2001.** S4AD-5, a 0.35 µm process built on the R42D SRAM process with six
   more masks, was qualified at Round Rock in 2001 with clock chips. It made automotive PSoC parts there by
-  2004, and PSoC at Grace in Shanghai from 2006 (Cypress's reports). An Infineon history claims SONOS in
-  the 1980s. See {ref}`history-sonos-s4`.[^qtp-021507][^qtp-051005][^qtp-062509]
+  2004, and PSoC at Grace in Shanghai from 2006 (Cypress's reports).[^qtp-021507][^qtp-051005][^qtp-062509]
+  An Infineon history claims SONOS in the 1980s (single source). See
+  {ref}`history-sonos-s4`.[^psoc-history]
 * **S8, in our reading, joined the two lines.** S8 is a 0.13 µm SONOS process of the same generation as
   Cypress's C8, R8 and L8, and its thick gate oxide is 110 Å, like S4AD-5's (our reading). See
   {ref}`history-s8-lineage`.[^pin-152804][^qtp-113005][^qtp-021507]
@@ -66,10 +67,11 @@ Cypress alone. The pages give the details and the points where sources disagree.
 * **Qualification reports.** Much of the detail comes from Cypress's product qualification reports,
   now published by Infineon. They were reissued over the years, and the reissues sometimes rename
   sites and drop or misprint codes; see {ref}`history-fabs` and {ref}`history-naming`.
-* **Gaps.** The reports give metals, passivation and gate oxides, but rarely isolation, poly, contacts
-  or implants, and none covers the 1.2 µm and 0.8 µm processes in detail. Some reports can be read only
-  after logging in to Infineon's site and are not used. Cypress's annual reports before fiscal 1993 were
-  not found online, and the fiscal 2000 report is a scan whose text could not be read.
+* **Gaps in the reports.** The reports give metals, passivation and gate oxides, but rarely isolation,
+  poly, contacts or implants, and none covers the 1.2 µm and 0.8 µm processes in detail. Some reports can
+  be read only after logging in to Infineon's site and are not used.
+* **Gaps in the filings.** Cypress's annual reports before fiscal 1993 were not found online, and the
+  fiscal 2000 report is a scan whose text could not be read.
 
 ```{toctree}
 :maxdepth: 1
@@ -176,3 +178,11 @@ sources
     <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
+
+[^ar-fy2004]: Cypress Semiconductor Corp., *2004 Annual Report* with Form 10-K, fiscal year ended
+    2005-01-02: Item 1, Research and development.
+    <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf>
+
+[^psoc-history]: Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of
+    2025-07-13 (the live page now redirects elsewhere).
+    <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>

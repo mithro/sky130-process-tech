@@ -1107,7 +1107,7 @@ claims:
   page: docs/history/s8-lineage.md
   anchor: our 0.13-micron, nonvolatile PSoC wafer
   grade: attributed
-  attribution: (Cypress's reports)
+  attribution: (Cypress and Infineon)
   footnotes: [ar-fy2010, psoc-history]
   sources:
   - {id: cyhist-corp-2010-ar-s8, origin: cypress}
@@ -1330,12 +1330,13 @@ claims:
   page: docs/history/index.md
   anchor: Cypress made its own processes, one generation at a time.
   grade: corroborated
-  footnotes: [fu-cypress, ar-fy1995, ar-fy1998, ar-fy2002]
+  footnotes: [fu-cypress, ar-fy1995, ar-fy1998, ar-fy2002, ar-fy2004]
   sources:
   - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
   - {id: cyx-ar-fy1995-ram3, origin: cypress}
   - {id: cyx-ar-fy1998-ram5, origin: cypress}
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+  - {id: cyhist-corp-2004-ar-90nm-prod, origin: cypress}
 - id: idx-four-fabs
   page: docs/history/index.md
   anchor: Four fabs of its own.
@@ -1355,6 +1356,13 @@ claims:
   - {id: qtp-021507, origin: cypress}
   - {id: qtp-051005, origin: cypress}
   - {id: qtp-062509, origin: cypress}
+- id: idx-infineon-sonos-1980s
+  page: docs/history/index.md
+  anchor: An Infineon history claims SONOS in the 1980s
+  grade: single-source
+  footnotes: [psoc-history]
+  sources:
+  - {id: cyx-infineon-psoc-history, origin: cypress}
 - id: idx-s8-joined
   page: docs/history/index.md
   anchor: S8, in our reading, joined the two lines.

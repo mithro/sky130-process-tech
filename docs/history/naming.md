@@ -50,7 +50,7 @@ from the products and the process figures each suffix appears with.
 | Suffix | Seen on | Our reading |
 |---|---|---|
 | -3, -5 | R52D-3 (50 Å), R7FD-3R (32 Å), R95LD-3R (28 Å); S4AD-5 (110 Å), S8TNV-5R (110 Å and 32 Å)[^qtp-099202][^qtp-011908][^qtp-061806][^qtp-021507][^qtp-113005] | the supply voltage: 3.3 V processes have thin oxides, the "-5" processes the 110 Å oxide of 5 V devices |
-| H | R42HD (110 Å) against R42D (70 Å); RAM42HHA (5 V, 110 Å) against RAM42HA (3 V, 70 Å)[^qtp-102101][^qtp-003907][^qtp-030206][^qtp-030204] | a 5 V version |
+| H | R42HD (110 Å) against R42D (70 Å); RAM42HHA (5 V, 110 Å) against RAM42HA (3 V, 70 Å). The 3 V report's document history also calls it "RAM42HHA", and R42LDHA's report calls it "R42D with Hot Al".[^qtp-102101][^qtp-003907][^qtp-030206][^qtp-030204] | perhaps a 5 V version; a weak reading, since "HA" may mean "Hot Al" |
 | D | R32D, R42D, R52D-3 | R32D has two metal layers where R32 has one; perhaps "double metal"[^qtp-098021] |
 | LD | R52LD-3, R7LD-1.8, R8LD-1.8, R95LD-3R | low-power ("MoBL") SRAM products |
 | FD, FFD | R52FD-3, R52FFD-3, R7FD-3R, C9FD-3R | fast asynchronous SRAM products |

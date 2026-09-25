@@ -2820,10 +2820,13 @@ documents:
     location: p.3, Technology/Fab Process Description
   - text: Fab4/RAM42HA
     location: p.3, Die Fab Line ID
+  - text: 'QTP #030204: 256K (3V) STATIC RAM AUTOMOTIVE DEVICES (CY62256A) RAM42HHA'
+    location: Document History Page, Document Title
   notes: 'RAM42HA is the 3 V version (CY62256V, "2.7V-3.6V"): 70 Å gate oxide and a TiW/AlCu/TiW metal.
     The 5 V RAM42HHA (qtp-030206, "256K, 5V Automotive Qualification") prints 110 Å and "500A Cu-Ti/8000A
-    A1". The two are different variants, not a conflict. The history row prints the number 030206 against
-    a 3 V qualification that qtp-030206 dates the same month for its 5 V part.'
+    A1". The heading and die fab line of this report say RAM42HA, but its own document-history title calls
+    the 3 V report "RAM42HHA", so the two names are not used consistently. The history row prints the
+    number 030206 against a 3 V qualification that qtp-030206 dates the same month for its 5 V part.'
 - id: qtp-091216
   origin: cypress
   doc_type: QTP
@@ -2873,7 +2876,7 @@ documents:
   - text: QTP
     location: p.6, undated footnote list (the printed footnote marker '5' runs directly into 'QTP', no
       space)
-  notes: 'P20 (MAX EPLD, Fab 2, licensed from Altera) is not named in qtp.yaml before this round: 2 metal
+  notes: 'P20 (MAX EPLD, Fab 2, licensed from Altera) is not named in any other report in this file: 2 metal
     layers, CMOS Double Metal, 0.8 µm design rule, 195 Å gate oxide -- the coarsest design rule found
     anywhere in this corpus so far, coarser than P26 and R28 (both 0.65 µm) and S4AD-5/R32 (0.5 µm), consistent
     with P20 being an older Cypress technology generation. This report''s own Technology/Fab Process Description
@@ -2975,9 +2978,9 @@ documents:
   - text: 'Die Fab Line ID/Wafer Process ID: Fab2/P26'
     location: p.3, Technology/Fab Process Description
   notes: This report's own history row dates a P26 qualification ("Qualify New Device (CY27H010) in P26
-    Technology, Fab2", QTP 95075) to Aug 96 -- earlier than round 2's previously-earliest P26 report (qtp-096411,
-    May 97) -- making Aug 96 the earliest dated P26 reference in this corpus. A companion report (qtp-099092,
-    this round) independently names 95075 as one of four QTP numbers ("96411, 96352, 95517 and 95075")
+    Technology, Fab2", QTP 95075) to Aug 96 -- earlier than the next-earliest P26 report (qtp-096411,
+    May 97) -- making Aug 96 the earliest dated P26 reference in this corpus. A companion report (qtp-099092)
+    independently names 95075 as one of four QTP numbers ("96411, 96352, 95517 and 95075")
     that together qualified P26 at Fab 2; 96352 and 95517 are named but not independently retrieved. Process
     figures here (2 metal layers, 0.65 µm, 165 Å gate oxide) match qtp-096411 and qtp-099092 exactly.
     This report is a reissue (V. 2.0, printed November 2005) of an originally 1996 qualification, the
@@ -3038,7 +3041,7 @@ documents:
     location: p.2, Technology/Fab Process Description
   notes: 'This report''s own footnote names four QTP numbers as the batch that originally qualified P26
     at Fab 2 ("QTP # 96411, 96352, 95517 and 95075"); two of these are independently retrieved in this
-    corpus (qtp-096411, round 2; qtp-095075, this round), while 96352 and 95517 are named here but not
+    corpus (qtp-096411 and qtp-095075), while 96352 and 95517 are named here but not
     independently retrieved. Process figures here (2 metal layers, 0.65 µm, 165 Å gate oxide, CMOS Double
     Poly Double Metal) match qtp-096411 and qtp-095075 exactly. Unlike those two reports, this document''s
     Technology/Fab Process Description section heading is printed with no technology code at all ("TECHNOLOGY/FAB
@@ -3090,13 +3093,13 @@ documents:
     location: p.3, Technology/Fab Process Description
   notes: 'The first dated "New Technology"-style qualification-history row found in this corpus for P26''s
     transfer to Magnachip (Cheong-Ju, Korea): "P26 TLM Technology at Magnachip", Mar 06, QTP 054605 --
-    confirming the transfer and giving its qualification date, filling the gap left by round 2 where P26
-    was known only from Cypress''s own Fab 2 reports. Despite the fab move, the Die Fab Line ID field
+    confirming the transfer and giving its qualification date, where P26
+    was otherwise known only from Cypress''s own Fab 2 reports. Despite the fab move, the Die Fab Line ID field
     is left unchanged as "Fab2/P26" (not renamed for Magnachip), the same pattern already seen for L28''s
-    TSMC-2A transfer (qtp-080608, round 2). Unlike the Fab 2 reports (2 metal layers), this Magnachip
+    TSMC-2A transfer (qtp-080608). Unlike the Fab 2 reports (2 metal layers), this Magnachip
     version of P26 prints 3 metal layers, though design rule (0.65 µm) and gate oxide (165 Å) are unchanged
     -- a genuine stackup difference between the origin fab and the transferred foundry, the same pattern
-    already documented for L28 (Fab 2 vs TSMC-2A, round 2, inconsistency 9).'
+    already documented for L28 (Fab 2 vs TSMC-2A).'
 - id: qtp-098252
   origin: cypress
   doc_type: QTP
@@ -3253,7 +3256,7 @@ documents:
     field below separately calls it "R28 process, 256K SRAM Chop") -- the first "RAM28" spelling found
     in this corpus, alongside the plain "R28" used throughout every other report. Confirms R28 directly
     at Fab 3 (Cypress Semiconductor, Bloomington, MN), with the same figures (2 metal layers, 0.65 µm,
-    165 Å gate oxide) as the Fab 2 R28 reports -- consistent with, not contradicting, round 2's finding
+    165 Å gate oxide) as the Fab 2 R28 reports -- consistent with, not contradicting, the finding
     that R28's figures stayed identical across its Fab3-to-Fab2 transfer (qtp-098393).
 - id: qtp-099083
   origin: cypress
@@ -3315,7 +3318,7 @@ documents:
     qtp-098393's Fab3-to-Fab2 transfer (round 1) for a different device family (Low Voltage Synchronous
     FIFOs rather than Dual Port SRAM). Process figures (2 metal layers, 0.65 µm, 165 Å gate oxide) match
     every other R28 report in this corpus. Names two more unretrieved Fab 2 R28 qualifications, QTP 97476
-    (also referenced by qtp-098252 and qtp-098236, this round) and QTP 98302.
+    (also referenced by qtp-098252 and qtp-098236) and QTP 98302.
 - id: qtp-096361
   origin: cypress
   doc_type: QTP
@@ -3360,7 +3363,7 @@ documents:
     location: p.2, Technology/Fab Process Description (the value 'Fab3/R28' prints on the following line)
   - text: Fab3/R28
     location: p.2, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
-  notes: 'A second independent R28-at-Fab-3 confirmation this round (alongside qtp-095515): identical
+  notes: 'A second independent R28-at-Fab-3 confirmation (alongside qtp-095515): identical
     process figures (2 metal layers, 0.65 µm, 165 Å gate oxide, Cypress Semiconductor - Bloomington, MN)
     to every other R28 report in this corpus. No dated qualification-history table is printed in this
     early (June 1997) report, matching the pattern already noted for other pre-1998 reports in this corpus.'
@@ -3459,7 +3462,7 @@ documents:
     location: p.2, Product Qualification History, row 98225
   - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
     location: p.3, Technology/Fab Process Description
-  notes: 'Independently confirms round 2''s L28 origin finding: this report''s own history table repeats
+  notes: 'Independently confirms the L28 origin finding: this report''s own history table repeats
     the identical row "New Technology L28/New Device CY227*", QTP 97403, Apr 98 -- verbatim the same row
     already found in qtp-011503 -- and adds two further dated L28 history rows not previously in this
     corpus: "New Device CY2037AWAF/CY5037AWAF, L28 Technology" (QTP 98225, Sep 98) and this report''s
@@ -3512,12 +3515,12 @@ documents:
   - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
     location: p.3, Technology/Fab Process Description
   notes: 'A major new finding for this corpus: this report''s own history table dates "New Technology
-    L28 / CY2291 (Rev A/C) Device" to QTP 95197, Feb 96 -- more than two years earlier than round 2''s
-    previously-earliest L28 date (QTP 97403, Apr 98, from qtp-011503 and this round''s qtp-004604). Combined
-    with qtp-031101 (this round), which describes QTP 97403 as "Qualified Technology L28 transfer from
+    L28 / CY2291 (Rev A/C) Device" to QTP 95197, Feb 96 -- more than two years earlier than the
+    previously-earliest L28 date (QTP 97403, Apr 98, from qtp-011503 and qtp-004604). Combined
+    with qtp-031101, which describes QTP 97403 as "Qualified Technology L28 transfer from
     Fab 3 to Fab 2" rather than a from-scratch origination, the picture now reads: L28 originated Feb
     96 (QTP 95197, fab not stated in this row), and was transferred to (or extended at) Fab 2 by Apr 98
-    (QTP 97403) -- not originated at Fab 2 in Apr 98 as round 2''s more limited evidence suggested. Process
+    (QTP 97403) -- not originated at Fab 2 in Apr 98 as the other reports alone would suggest. Process
     figures here (2 metal layers, 0.65 µm, 145 Å gate oxide, Fab2/L28) match every other Fab 2 L28 report
     in this corpus.'
 - id: qtp-012204
@@ -3631,9 +3634,9 @@ documents:
   - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
     location: p.3, Technology/Fab Process Description
   notes: This report describes QTP 97403 as "Qualified Technology L28 transfer from Fab 3 to Fab 2" --
-    explicitly a transfer, not a from-scratch origination -- contradicting the wording in qtp-011503 (round
-    2) and qtp-004604 (this round), both of which give the same QTP number's own row as "New Technology
-    L28/New Device CY227*" with no mention of a transfer. Combined with qtp-000901 (this round), which
+    explicitly a transfer, not a from-scratch origination -- contradicting the wording in qtp-011503
+    and qtp-004604, both of which give the same QTP number's own row as "New Technology
+    L28/New Device CY227*" with no mention of a transfer. Combined with qtp-000901, which
     independently dates an actual "New Technology L28" origin to QTP 95197, Feb 96 (predating 97403 by
     over two years), the most consistent reading is that L28 originated Feb 96 and QTP 97403 (Apr 98)
     was its transfer/extension to Fab 2 -- with different reports summarising the same historical event
@@ -3685,9 +3688,9 @@ documents:
   - text: 'Metal 1: Ti 400A /TiN1000A /AlSiCu 4700A /TiN 375A'
     location: p.3, Technology/Fab Process Description, Metal Composition
   notes: 'This is the primary "New Technology" origin report for L28-TSMC itself, previously known in
-    this corpus only by reference: qtp-080608 and qtp-110605 (round 2) both cite "QTP 99285, To qualify
+    this corpus only by reference: qtp-080608 and qtp-110605 both cite "QTP 99285, To qualify
     L28-TSMC Technology in TMSC-2A, May 2003" as a history row, but the qtp-099285 document had not been
-    independently retrieved before this round. This confirms the May 2003 date and wording verbatim. Process
+    independently retrieved. This confirms the May 2003 date and wording verbatim. Process
     figures mostly match qtp-080608/qtp-110605 (2 metal layers, 0.65 µm, same metal composition, 125 Å
     gate oxide) but this document''s passivation reads "SiN 3,000Å/SOG 3,150Å/SiN 12,000Å" where qtp-080608
     and qtp-110605 both give the final layer as "1,200Å SiN" -- a tenfold discrepancy in the printed final

@@ -16,7 +16,7 @@ where it came from. The processes themselves are on {ref}`history-technologies` 
   nvSRAM devices" to November 2008, at "Cypress Minnesota CMI (Fab4)" (single source).[^qtp-113005]
 * **The PSoC process.** Cypress's 2010 report calls S8 "our 0.13-micron, nonvolatile PSoC wafer
   fabrication process"; Infineon's history of PSoC says PSoC 3 was developed "using a 130 nm 5 V process"
-  (Cypress's reports).[^ar-fy2010][^psoc-history]
+  (Cypress and Infineon).[^ar-fy2010][^psoc-history]
 * **nvSRAM.** The first S8 products were nvSRAMs, and in 2008 Cypress bought Simtek, whose nvSRAM line it
   took over (Cypress's reports).[^ew-2007-s8][^ar-fy2008]
 

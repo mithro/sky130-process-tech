@@ -111,9 +111,8 @@ The pages are drafted once the evidence exists. The provisional list:
 | Claims matrix | 165 claims, checked by `tools/check_history.py` |
 | Pages | index, fabs, technologies, sonos-s4, s8-lineage, naming; generated stackups, products, sources |
 | Review r1 (Opus) | 19 High, 22 Medium, 15 Low; fixes applied 2026-09-25 |
-| Review r2 | pending |
+| Review r2 (Opus) | 1 High, 10 Medium, 14 Low; fixes applied 2026-09-25 |
 
-Not done, for the owner: the commit messages of the research branches mention the lead list and codes
-never found in a public document (review r1, H12/H13); rewriting them needs the owner's decision under the
-history-rewrite policy. The literature agent's evidence file (papers, patents, teardowns) was never
+Not done, for the owner: some research-branch commit messages need the owner's review under the
+history-rewrite policy (review r1, H12/H13). The literature agent's evidence file (papers, patents, teardowns) was never
 committed; two of its sources were re-verified and added to `extra.yaml`.

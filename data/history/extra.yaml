@@ -821,8 +821,8 @@ records:
   - {subject: first process, attribute: stack, value: 1.2 µm N-well, double poly, single metal, date: 1988}
   - {subject: 0.8 µm process, attribute: status, value: in production, date: 1988}
   notes: >-
-    A scanned PDF with no text layer, hosted by deramp.com's archive of component documentation; the cache
-    file is a transcription of the two pages from their images, word for word. "Founded in April of 1983"
+    A scanned PDF with an OCR text layer, hosted by deramp.com's archive of component documentation; the
+    cache file holds excerpts of the two pages transcribed from their images, each copied word for word. "Founded in April of 1983"
     differs from the 10-K's "incorporated in California in December 1982" (cyhist-corp-2006-ar-history-grace-complete).
 - id: cyx-jin-1999-locos
   origin: cypress

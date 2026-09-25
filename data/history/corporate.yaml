@@ -788,7 +788,7 @@ records:
       partners.
     location: article body
   - text: the mature (0.35-micron/150mm) Fab 2 “is a very efficient and well-run operation,”
-    location: article body, quoting Shahin Sharifzadeh, EVP of manufacturing
+    location: article body, quoting Cypress's head of manufacturing
   - text: Opened in 1986 and expanded in 1999, Cypress’ Fab 2 has most recently been making legacy USB,
       programmable logic, timing and communications devices, employing 245 workers. Fab 4, opened in 1995
       as the company’s first 200mm facility, produces the company’s SRAM products including specialty
@@ -906,8 +906,8 @@ records:
     date: '2009'
   notes: The nvSRAM/UMC pairing here is the closest primary-source link found between the Simtek acquisition's
     product line and a named foundry; no source in this corpus states which process node or whether SONOS
-    is used for nvSRAM specifically -- UNSUPPORTED for the "Simtek brought SONOS" part of the task's acquisition
-    list, only nvSRAM as a product line is confirmed.
+    is used for nvSRAM specifically -- so a claim that Simtek brought SONOS to Cypress is
+    unsupported; only nvSRAM as a product line is confirmed.
 - id: cyhist-corp-2010-ar-s8
   origin: cypress
   source:
@@ -1180,14 +1180,13 @@ records:
     that Cypress''s own FY2006 10-K also states (cyhist-corp-2006-ar-history-grace-complete) -- so those
     two dates are now SUPPORTED by primary + two independent secondary sources. The August 2008 Simtek
     date and the Spansion merger dates/values are each SINGLE-SOURCE so far in this corpus (not cross-checked
-    against a primary Cypress filing in this pass -- the FY2008 annual report gives only the year, "In
+    against a primary Cypress filing -- the FY2008 annual report gives only the year, "In
     2008", for Simtek: cyhist-corp-2008-ar-simtek). The article names Cypress''s founders and a Simtek/AgigaTech/Anchor-Chips
     connection to a specific start-up founder; those personal names are omitted here per the project''s
     no-staff-names rule (the substantive facts -- formation from a group of AMD colleagues in 1982, and
     that the same founder was behind both Anchor Chips and Simtek/AgigaTech -- are kept without the names).
-    Spansion/Fab 25 itself is outside this task''s 1982-2010 core window and was not otherwise researched
-    in this pass (see the progress file''s "not yet done" list) -- this record is the only mention of
-    it in this corpus.'
+    Spansion/Fab 25 is outside the 1982-2010 window of this file; this record is the only mention of
+    it here.'
 known_gaps:
 - description: Cypress annual reports / 10-Ks for fiscal years 1986-1992 (the IPO year through the year
     before the earliest report found)
@@ -1212,5 +1211,4 @@ known_gaps:
 - description: Cypress DEFM14A / merger proxies, and most 8-Ks, for fiscal years 1997, 1999-2007 and 2009
     (only the 1996 10-Qs, the 1998 EE Times restructuring story, and the 2005/2006/2007 Grace/UMC trade-press
     stories cover this span from the filing/press side)
-  reason: Not searched in the time available for this pass -- flagged as unfinished work in the progress
-    file, not as absent.
+  reason: Not searched; unfinished work, not a statement that the documents do not exist.
