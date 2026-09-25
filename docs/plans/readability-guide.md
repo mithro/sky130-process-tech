@@ -667,8 +667,12 @@ awk '/^## Open questions/{f=1} /^<!-- footnotes/{f=0} f && /^\* [^*]/ {print FIL
 pages) is an unordered run of sentence-bullets.
 
 **Do.**
-1. Step pages: order the bullets Previous / Next / Same module / Depends on / Feeds / Category, and
-   label each with that word. Keep every gloss and every link.
+1. Step pages: labels, in this order: `Previous:` · `Next:` · `Same module:` (only steps whose
+   Phase cell in `docs/steps/index.md` names the same module) · `Depends on:` · `Feeds:` ·
+   `Same category:` (steps of the same kind elsewhere in the flow) · `Mask:` (mask page,
+   previous/next mask) · `Evidence:` (e.g. a die-shot) · `Category page:`. Keep every gloss and
+   link. Never split one bullet's links over two labels unless the bullet already names two
+   relationships.
 2. Class pages: group under bold labels — Category · Machines · Materials · Masks · Indexes — and keep
    each gloss to ≤ 12 words. Six or more mask links with one shared gloss become a single line.
 3. Drop no link, add no link, change no link text.
