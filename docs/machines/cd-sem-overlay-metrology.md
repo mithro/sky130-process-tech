@@ -2,30 +2,27 @@
 # CD-SEM and overlay metrology
 
 After every mask step a sample of wafers is measured before the pattern
-is etched or implanted: a critical-dimension scanning electron
+is etched or implanted. A critical-dimension scanning electron
 microscope (CD-SEM) measures the width of lines and holes in the
 developed resist, and an optical overlay tool measures how far the new
 pattern sits from the level beneath it. The same CD-SEMs measure the
-etched features again after etch. The measurements decide whether a lot
-goes on or is stripped and reworked, and are fed back to the exposure
-tool as dose, focus and alignment corrections. This page describes the
-two classes, which fabs buy from partly different vendors but run
-together in the lithography area, lists representative 200 mm-era
-models, and then says what SkyWater has published about its own tools
-and which SKY130 steps this reference assigns to them. CD and overlay
-control in general are on the {ref}`category page <category-lithography>`.
+etched features again after etch.
 
 | | CD-SEM and overlay metrology |
 |---|---|
-| What it does | CD-SEMs "measure properties of wafer circuit patterns such as line width and hole diameter";[^hitachi-2011] an overlay tool "performs fully automated overlay measurements on multilayer integrated circuit product and test wafers".[^kla-5200xp] |
-| CD-SEM beam | Low-energy electrons for "non-invasive measurements that did not require preparatory steps";[^hitachi-2011] an accelerating voltage of 0.4–1.5 kV and a Schottky electron source on the KLA-Tencor 8100XP.[^gce-kla8100] |
-| CD-SEM resolution and repeatability | 3 nm resolution and 3 nm repeatability on the Hitachi S-9200 of 1998, against 15 nm and 15 nm on the S-6000 of 1984;[^hitachi-2011] 4 nm resolution on the 8100XP.[^gce-kla8100] |
-| Overlay measurement | Optical imaging of box-in-box targets: "Fully Automated Non-Contact Box-In-Box Measurement for Overlay Registration (stepper alignment)" and "Coherence Probe Microscopy (CPM)" on a KLA-Tencor 5200XP in a reseller's description.[^classone-kla5200xp] |
-| Throughput | "45 (automatic operation)" wafers per hour on 8-inch wafers at five points (S-9200);[^hitachi-2011] 50 wafers per hour on 8-inch wafers (8100XP);[^gce-kla8100] "a 30 percent increase in throughput over previous generation tools" (Archer 10 overlay).[^kla-archer10] |
-| Requirement at 130 nm | ITRS 2001 sets overlay at 46 nm for 2001 and CD control (3σ) at 7.3 nm for ASIC/low-power logic, and calls the "20% measurement precision to process tolerance metric" "somewhat relaxed".[^itrs-03] |
-| 200 mm era | Hitachi's S-8820 (1994) and S-9200 (1998);[^hitachi-2011] Opal's 7830-series CD-SEMs, acquired by Applied Materials in 1997,[^amat-1997] and Applied's VeraSEM of 1999;[^amat-verasem-1999] KLA-Tencor's 5200XP overlay system for "0.18 micron technology".[^kla-5200xp] |
+| What it does | CD-SEMs measure line width and hole diameter; an overlay tool measures multilayer registration.[^hitachi-2011][^kla-5200xp] See *CD-SEM column* and *Overlay tools*. |
+| CD-SEM beam | Low-energy electrons, "non-invasive measurements that did not require preparatory steps"; 0.4–1.5 kV, Schottky source on the 8100XP.[^hitachi-2011][^gce-kla8100] |
+| CD-SEM resolution and repeatability | 3 nm and 3 nm on the S-9200 (1998); 15 nm and 15 nm on the S-6000 (1984).[^hitachi-2011] 4 nm on the KLA-Tencor 8100XP.[^gce-kla8100] |
+| Overlay measurement | Optical box-in-box imaging on a KLA-Tencor 5200XP; see *Overlay tools* for the reseller's quotes.[^classone-kla5200xp] |
+| Throughput | "45 (automatic operation)" wph, 8-inch, S-9200;[^hitachi-2011] 50 wph, 8-inch, 8100XP;[^gce-kla8100] "a 30 percent increase in throughput over previous generation tools" (Archer 10).[^kla-archer10] |
+| Requirement at 130 nm | ITRS 2001: overlay 46 nm for 2001; CD control (3σ) 7.3 nm, ASIC/low-power logic; "20% measurement precision to process tolerance metric", "somewhat relaxed".[^itrs-03] |
+| 200 mm era | Hitachi S-8820 (1994), S-9200 (1998);[^hitachi-2011] Opal 7830-series (1997);[^amat-1997] Applied VeraSEM (1999);[^amat-verasem-1999] KLA-Tencor 5200XP, "0.18 micron technology".[^kla-5200xp] |
 | SkyWater-listed tool | "AMAT Verity (multiple versions) CD", "AMAT VeraSEM", "KLA 5200/5300/Archer overlay"[^skw-01] |
 | SKY130 steps | Overlay at all 36 mask steps and CD-SEM at 54 steps; see {ref}`SKY130 steps assigned to this class <machine-cd-sem-overlay-metrology-steps>` |
+
+:::{seealso}
+CD and overlay control in general are on the {ref}`category page <category-lithography>`.
+:::
 
 ## What the machine class is and how it works
 
@@ -37,19 +34,32 @@ defect map, and that those numbers go straight into process control.
 The {ref}`category page <category-lithography>` gives the resolution
 and overlay background; the sections below describe the instruments.
 
+The measurements decide whether a lot goes on or is stripped and
+reworked, and are fed back to the exposure tool as dose, focus and
+alignment corrections.
+
 ### CD-SEM column and low-voltage imaging
 
-A scanning electron microscope scans a focused beam over the sample and
+A CD-SEM is built to "measure properties of wafer circuit patterns such
+as line width and hole diameter".[^hitachi-2011] A scanning electron microscope scans a focused beam over the sample and
 builds an image from the electrons it knocks out; secondary electrons
 "have very low energies on the order of 50 eV" and "can only escape from
 the top few nanometers of the surface".[^wiki-sem] A CD-SEM is such a
-microscope rebuilt as a production gauge. Hitachi, whose S-6000 was
-"commercialized in 1984", describes the design aims: "in-lens detection
-systems which do not cast a pattern shadow that could affect the
-measurement", "a fast and precise XY stage", "low-energy electron beams"
-for measurements without preparation, a field-emission gun with image
-memory so that it "was able to be used without a dark room", and
-recipes "that anyone could use".[^hitachi-2011] Low voltage matters
+microscope rebuilt as a production gauge.
+
+**Hitachi's design aims.** Hitachi, whose S-6000 was
+"commercialized in 1984", describes the design aims:[^hitachi-2011]
+
+* **In-lens detection** — "in-lens detection systems which do not cast a
+  pattern shadow that could affect the measurement".
+* **XY stage** — "a fast and precise XY stage".
+* **Low-energy beams** — "low-energy electron beams" for measurements
+  without preparation.
+* **Image memory** — a field-emission gun with image memory so that it
+  "was able to be used without a dark room".
+* **Simple recipes** — recipes "that anyone could use".
+
+**Why low voltage.** Low voltage matters
 because resist and oxide are insulators that charge under the beam:
 Singh and Arnold describe low-voltage SEM as "a nondestructive method to
 acquire precise linewidth measurements from features too small for
@@ -62,10 +72,12 @@ reached "less than 1.8nm resolution at ultra low voltages
 A CD-SEM does not see edges; it sees a line profile of signal and places
 the edges on it by an algorithm. Singh and Arnold describe the usual
 method: "a threshold is selected to determine the distance between the
-edges of the video profile at that threshold", a technique "critically
-sensitive to various SEM parameters including the primary electron
-energy, the beam diameter, and the defocus of the beam".[^singh-1988]
-Rosenfield's 1986 paper is likewise understood to have distinguished
+edges of the video profile at that threshold".[^singh-1988] It is a
+technique "critically sensitive to various SEM parameters including the
+primary electron energy, the beam diameter, and the defocus of the
+beam".[^singh-1988]
+
+**Choice of algorithm.** Rosenfield's 1986 paper is likewise understood to have distinguished
 which edge-detection method suits an isolated resist line versus an
 isolated space, though this could not be independently re-checked
 (evidence weak).[^rosenfield-1986] Postek,
@@ -73,12 +85,16 @@ Keery and Larrabee showed why width
 is harder than pitch: edge location errors cancel in a pitch
 measurement, but "in linewidth measurement applications, the effects of
 edge location uncertainty are additive and thus give twice the edge
-detection error to the measured width".[^postek-1988] Monte Carlo models
+detection error to the measured width".[^postek-1988]
+
+**Validating the algorithm.** Monte Carlo models
 of beam–sample interaction are used to relate the profile to the true
-edge,[^lowney-1995] and Solecky, Mayer and Archie tuned CD algorithms
+edge.[^lowney-1995] Solecky, Mayer and Archie tuned CD algorithms
 against AFM and electrical test, noting that CD-SEMs' "combination of
 throughput, resolution, precision, ability to measure any feature of
-interest and automation has been unmatched".[^solecky-2002] The beam
+interest and automation has been unmatched".[^solecky-2002]
+
+**Beam damage.** The beam
 also changes some samples: You, Bok and Shin saw acrylate-type ArF
 resist lines shrink by 30 % after 30 measurements,[^you-2002] a problem
 reported for a 193 nm acrylate resist, not for the i-line and KrF
@@ -90,9 +106,13 @@ A gauge is only useful if its precision is small against the tolerance
 it checks; ITRS 2001 uses a "20% measurement precision to process
 tolerance metric" and notes that "Precision includes measurement tool
 variation from short- and long-term tool variation as well as
-tool-to-tool matching".[^itrs-03] Magnification is calibrated on pitch
+tool-to-tool matching".[^itrs-03]
+
+**Calibration.** Magnification is calibrated on pitch
 standards: Hitachi developed a "standard microscale with a 240-nm pitch"
-and later a 100 nm one.[^hitachi-2011] Several CD-SEMs on one line must
+and later a 100 nm one.[^hitachi-2011]
+
+**Matching.** Several CD-SEMs on one line must
 agree: Applied advertised "excellent system matching, with shared
 library and database capabilities" on the VeraSEM,[^amat-verasem-1999]
 and Marschner et al. extended in-fab matching methods to tools in fabs on
@@ -100,26 +120,41 @@ different continents.[^marschner-2006]
 
 ### Overlay tools
 
-An overlay tool is an automated optical microscope. The classic target
+An overlay tool is an automated optical microscope; it
+"performs fully automated overlay measurements on multilayer integrated
+circuit product and test wafers".[^kla-5200xp] The classic target
 is box-in-box: an outer box printed at the reference level and an inner
 box at the current level, whose offset in x and y is the misregistration
-at that site. A reseller describes the KLA-Tencor 5200XP as a
+at that site.
+
+**Box-in-box optics.** A reseller describes the KLA-Tencor 5200XP as a
 "Fully Automated Non-Contact Box-In-Box Measurement" system using
-"Proven Coherence Probe Microscopy (CPM) Technology", with "KLASS (KLA
+"Proven Coherence Probe Microscopy (CPM) Technology".[^classone-kla5200xp]
+It also has "KLASS (KLA
 Stepper Set-up Software) which allows the calculation of critical
-parameters for overlay control on lithography tools";[^classone-kla5200xp]
+parameters for overlay control on lithography tools".[^classone-kla5200xp]
 KLA-Tencor's own page gave the 5200XP "coherence probe measurement
 capability which is optimized for planarized layers".[^kla-5200xp]
 Coherence probe microscopy builds a three-dimensional image with a
 Linnik interferometer and broadband illumination;[^dockrey-1989] Plambeck,
 Knoll and Lord applied it to overlay targets made hard to read by
-chemical-mechanical polishing.[^plambeck-1995] The tool itself can shift
+chemical-mechanical polishing.[^plambeck-1995]
+
+**Reseller's fuller description.** The same reseller listing also
+describes the 5200XP as a "Fully Automated Non-Contact Box-In-Box
+Measurement for Overlay Registration (stepper alignment)" using
+"Coherence Probe Microscopy (CPM)".[^classone-kla5200xp]
+
+**Tool-induced shift.** The tool itself can shift
 the result. Starikov proposed "tool-induced shift (TIS)" as "a simple
-measure of tool-related inaccuracy", having seen overlay inaccuracies
-"on the order of 100 nm" from tools and marks;[^starikov-1992] Hoshi et
+measure of tool-related inaccuracy".[^starikov-1992] He had seen overlay
+inaccuracies "on the order of 100 nm" from tools and
+marks.[^starikov-1992] Hoshi et
 al. describe how modern tools control "critical asymmetries in the
 imaging optics" and compensate the rest "through
-TIS-calibration".[^hoshi-2002] Targets far larger than the circuit can
+TIS-calibration".[^hoshi-2002]
+
+Targets far larger than the circuit can
 also misreport the overlay of fine features under lens
 aberration.[^chu-1999] Den Boef reviews the optical alignment, levelling
 and overlay sensors of lithography as one family.[^den-boef-2016]
@@ -130,39 +165,42 @@ The numbers go back to the exposure tool. KLA-Tencor's Archer 10, as its
 product page described it in 2003, "Automatically transfers overlay test
 data to the ASML PAS 5500™ series stepper", and its analysis software
 gives "analysis results for wafer lot dispositioning, stepper
-correction, and problem troubleshooting".[^kla-archer10] In a foundry
+correction, and problem troubleshooting".[^kla-archer10]
+
+**Recipe load in a foundry.** In a foundry
 the recipe load is heavy: DeMoor et al. describe ASIC fabs with
 "thousands or even tens of thousands of reticles active at any one
 time", where "each individual reticle will require independent recipes
 for stepper exposure, and the subsequent misregistration and critical
-dimension metrology steps", and used an off-line recipe database across
-several overlay tools.[^demoor-2000]
+dimension metrology steps".[^demoor-2000] They used an off-line recipe
+database across several overlay tools.[^demoor-2000]
 
 ## Representative 200 mm-era models
 
-* **Hitachi.** The S-6000 (1984; 15 nm resolution, 15 nm repeatability,
-  "8 (manual operation)" wafers per hour), S-8820 (1994; 5 nm and 5 nm,
-  20 wafers per hour) and S-9200 (1998; 3 nm and 3 nm, 45 wafers per hour
-  on 8-inch wafers); the S-9300 of 1999 was "ready in time for the shift
-  to 300-mm wafers".[^hitachi-2011]
-* **Opal, then Applied Materials.** Applied acquired Opal, "a supplier of
-  CD-SEM (Critical Dimension-Scanning Electron Microscope) systems", in
-  January 1997, and introduced the Opal 7830Si, "Building on the proven
-  technology of the earlier 7830-series systems", that
-  year.[^amat-1997] The VeraSEM of 1999 was "designed to handle both 200mm
-  and 300mm wafer sizes" and added "Process Variation Monitoring"
-  measurements such as "line edge roughness, line edge width variation,
-  and distinguishing open/closed contact holes".[^amat-verasem-1999] The
-  VeritySEM followed in 2004 for 65–45 nm, with "less than 5 angstrom
-  precision".[^amat-veritysem-2004]
-* **KLA-Tencor.** The 8100XP CD-SEM, 0.4–1.5 kV with a 4 nm
-  resolution;[^gce-kla8100] the 5200XP overlay system for
-  0.18 µm;[^kla-5200xp] the Archer 10, whose product page (2003 capture)
-  describes an overlay tool "for 300 mm manufacturing at the
-  sub-0.13-micron node";[^kla-archer10] KLA-Tencor's overlay product
-  menu already listed it in 2001;[^kla-5200xp] and later Archers, the
-  Archer 300 LCM of 2010 succeeding "the widely-adopted Archer
-  200".[^kla-archer300-2010]
+:::{table} Representative CD-SEM and overlay tools of the 200 mm era (figures as each source gives them)
+:widths: 20 14 8 12 46
+
+| Vendor | Model | Year | Type | Published figures |
+|---|---|---:|---|---|
+| Hitachi | S-6000 | 1984 | CD-SEM | 15 nm resolution, 15 nm repeatability, "8 (manual operation)" wafers per hour[^hitachi-2011] |
+| Hitachi | S-8820 | 1994 | CD-SEM | 5 nm resolution, 5 nm repeatability, 20 wafers per hour[^hitachi-2011] |
+| Hitachi | S-9200 | 1998 | CD-SEM | 3 nm resolution, 3 nm repeatability, 45 wafers per hour on 8-inch wafers[^hitachi-2011] |
+| Hitachi | S-9300 | 1999 | CD-SEM | "ready in time for the shift to 300-mm wafers"[^hitachi-2011] |
+| Opal / Applied Materials | 7830Si | 1997 | CD-SEM | "Building on the proven technology of the earlier 7830-series systems"[^amat-1997] |
+| Applied Materials | VeraSEM | 1999 | CD-SEM | "designed to handle both 200mm and 300mm wafer sizes"[^amat-verasem-1999] |
+| Applied Materials | VeritySEM | 2004 | CD-SEM | 65–45 nm, "less than 5 angstrom precision"[^amat-veritysem-2004] |
+| KLA-Tencor | 8100XP | — | CD-SEM | 0.4–1.5 kV, 4 nm resolution[^gce-kla8100] |
+| KLA-Tencor | 5200XP | — | overlay | for 0.18 µm[^kla-5200xp] |
+| KLA-Tencor | Archer 10 | — | overlay | (2003 capture) "for 300 mm manufacturing at the sub-0.13-micron node"; listed in the product menu by 2001[^kla-archer10][^kla-5200xp] |
+| KLA-Tencor | Archer 300 LCM | 2010 | overlay | succeeding "the widely-adopted Archer 200"[^kla-archer300-2010] |
+:::
+
+Applied Materials acquired Opal, "a supplier of CD-SEM (Critical
+Dimension-Scanning Electron Microscope) systems", in January 1997, and
+introduced the 7830Si that year, building on the earlier
+7830-series.[^amat-1997] The VeraSEM added "Process Variation Monitoring"
+measurements such as "line edge roughness, line edge width variation,
+and distinguishing open/closed contact holes".[^amat-verasem-1999]
 
 ## At SkyWater
 
@@ -183,14 +221,23 @@ lists:[^skw-01]
 
 The "Lithography" group above it ends its exposure-tool list with
 "Overlay down to single digit nm", and the "Physical Analysis" group
-lists a "Hitachi S-4800" SEM ({ref}`machine-cross-section-sem-profilers`).[^skw-01] Read term by term: "AMAT Verity"
-is Applied Materials' VeritySEM CD-SEM line, as we read the
-name,[^amat-veritysem-2004] in unstated versions; "AMAT VeraSEM" is the
-CD-SEM Applied introduced in 1999;[^amat-verasem-1999] "KLA
-5200/5300/Archer" we read as KLA-Tencor optical overlay tools of the
-5200, 5300 and Archer lines; the 5200XP and the Archer 10 have public
-descriptions,[^kla-5200xp][^kla-archer10] but no description of a 5300
-was retrieved. SkyWater gives no tool counts, and does not say whether
+lists a "Hitachi S-4800" SEM ({ref}`machine-cross-section-sem-profilers`).[^skw-01]
+This reference reads "KLA 5200/5300/Archer" as shorthand for the third
+entry below.
+
+:::{table} How this reference reads the Photo Metrology entries
+:widths: 30 46 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "AMAT Verity (multiple versions) CD" | Applied Materials' VeritySEM CD-SEM line ("AMAT Verity"), in unstated versions[^amat-veritysem-2004] | our reading |
+| "AMAT VeraSEM" | the CD-SEM Applied introduced in 1999[^amat-verasem-1999] | not stated |
+| "KLA 5200/5300/Archer overlay" | KLA-Tencor optical overlay tools of the 5200, 5300 and Archer lines; the 5200XP and Archer 10 have public descriptions,[^kla-5200xp][^kla-archer10] no 5300 description was retrieved | our reading |
+| "Reticle storage/handler/defect inspection" | — | not stated |
+| "Advanced Process Control (APC) feed forward and backwards" | — | not stated |
+:::
+
+SkyWater gives no tool counts, and does not say whether
 "Overlay down to single digit nm" is a measurement or an exposure
 capability, nor which tools the APC line connects. No step page assigns
 the S-4800, the reticle inspection or the APC entry to a SKY130 step.
@@ -229,7 +276,7 @@ likely used at SkyWater"), as collected on the machines index:
 * **"KLA 5200/5300/Archer overlay"** — *strong for existence (SkyWater statement); use at this mask is an inference:* {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`; *strong for existence; that the gate level is measured on them is an inference:* {ref}`P1M <step-061>`; *strong for existence:* {ref}`NSM <step-165>`, {ref}`PDM <step-168>`
 
 The CD-SEM list includes the etch steps whose pages measure CD after
-etch; the coarse implant masks name a CD-SEM only "for periodic checks"
+etch. The coarse implant masks name a CD-SEM only "for periodic checks"
 ({ref}`DNM <step-007>`, {ref}`NWM <step-017>`), and the first mask,
 {ref}`FOM <step-004>`, has no earlier level to overlay, so its page notes
 that overlay "is measured only from the second layer onwards".
@@ -271,7 +318,7 @@ sampling plans are not public.
 * **Mixed exposure classes.** The i-line and KrF levels
   ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) share
   one overlay entry in SkyWater's list, which does not say whether
-  separate tools serve the two classes; where a level is printed on a
+  separate tools serve the two classes. Where a level is printed on a
   different tool from its reference, the tool corrections the
   measurements feed back must cover matched-machine errors (inference
   from the exposure-tool specifications on those pages). SkyWater lists
@@ -299,16 +346,18 @@ sampling plans are not public.
 
 ## Related pages
 
-* {ref}`category-lithography` — CD and overlay control, etch bias and
-  rework.
-* {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
-  exposure tools the measurements correct.
-* {ref}`machine-coat-develop-track` — the track whose output is measured.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`masks-index` — the 36 masks and their minimum CDs.
-* {ref}`category-etch` — the etches measured after etch.
-* {ref}`material-substrates` — reference and monitor wafers.
+* **Category.** {ref}`category-lithography` — CD and overlay control,
+  etch bias and rework. {ref}`category-etch` — the etches measured after
+  etch.
+* **Machines.** {ref}`machine-i-line-stepper` and
+  {ref}`machine-duv-krf-stepper` — the exposure tools the measurements
+  correct. {ref}`machine-coat-develop-track` — the track whose output is
+  measured.
+* **Materials.** {ref}`material-substrates` — reference and monitor
+  wafers.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`masks-index` — the 36
+  masks and their minimum CDs.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
