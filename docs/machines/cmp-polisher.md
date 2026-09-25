@@ -190,7 +190,7 @@ Typical 200 mm tools of the
 endpoint in situ and, increasingly, cleaned the wafer on board so that it
 entered and left dry.
 
-:::{table} Representative CMP polishers of the 200 mm era, all rotary unless noted (figures as each source gives them)
+:::{table} Representative CMP polishers of the 200 mm era (figures as each source gives them)
 :widths: 18 20 10 52
 
 | Vendor | Model | Year | Published figures |
@@ -198,7 +198,7 @@ entered and left dry.
 | Applied Materials | Mirra | 1995 | entered CMP in December 1995 with "a unique three-station, four polishing head design that permits continuous processing of several wafers simultaneously"[^amat-1997] |
 | Applied Materials | Mirra Mesa | 1999 | added the Mesa cleaner[^amat-mesa-1999] |
 | IPEC-Planar | AVANTI 472 | — | "IPEC-Planar's third generation Chemical Mechanical Planarization (CMP) product", for "both oxide and metal planarization processes" (1997 capture)[^ipec-472-1997] |
-| IPEC-Planar | AvantGaard 676 | — | "Multiple wafer polishing modules (4)"; "Integrated post CMP spray box cleaning" (1997 capture)[^ipec-676-1997] |
+| IPEC-Planar | AvantGaard 676 (orbital) | — | "Multiple wafer polishing modules (4)"; "Integrated post CMP spray box cleaning" (1997 capture)[^ipec-676-1997] |
 | SpeedFam-IPEC | Auriga | — | by 2001[^speedfam-ipec-2001] |
 | SpeedFam-IPEC | Momentum | — | by 2001, for "the 0.18 micron and 0.13 micron design node requirements"[^speedfam-ipec-2001] |
 | Strasbaugh | 6DS-SP (dual-spindle production planarizer) | — | optional: "Dual polishing tables for 2-step processes" and "Double-sided, post-CMP scrubber integration" (1999 capture)[^strasbaugh-6ds-1999] |
