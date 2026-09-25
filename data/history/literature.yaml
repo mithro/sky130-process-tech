@@ -190,3 +190,331 @@ records:
     instead call the joint programme a "0.13-micron Silicon-On-Insulator"
     process, a conflict between Cypress's own corporate description and the
     150 nm figure both trade-press articles give.
+
+# --- Papers (Cypress-authored technical literature) ---------------------
+
+- id: paper-qiao-1999-sac-018um-sram
+  kind: paper
+  origin: cypress
+  source: >-
+    Jianmin Qiao et al. (Cypress Semiconductor, San Jose, California),
+    "Development of self-aligned contact technology for 0.18 μm static
+    random access memory devices", Journal of Vacuum Science & Technology
+    B, vol. 17, issue 5, published 1999-09-01. DOI: 10.1116/1.590921.
+  url: https://doi.org/10.1116/1.590921
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/crossref-10_1116_1_590921.json.txt
+  sha256: abe7929fe80c02a8d5ea81ae4cebffafc571d6d2fa44ba6fad1ac236f8e32f3e
+  quotes:
+  - text: >-
+      A self-aligned contact (SAC) technology is developed for the
+      application of electrical contacts between the local interconnect
+      and the silicon diffusion regions for 0.18 μm static random access
+      memory cells. The key components of this SAC technology include the
+      deposition and gap fill of borophosphosilicate glass (BPSG) films, a
+      selective oxide etch process, and metal-plug contact formation by
+      Ti/TiN-liner silicidation and W filling. The BPSG film, deposited by
+      plasma enhanced chemical vapor deposition, has exhibited an ability
+      of filling 0.04 μm spaces with an aspect ratio (AR) of about 10:1
+      after reflow at 800 °C.
+    location: "abstract, via the Crossref REST API (works/10.1116/1.590921)"
+  claims:
+  - {technology: "Cypress 0.18 µm SRAM technology", attribute: "contact scheme", value: "self-aligned contacts (SAC) with BPSG gap fill (PECVD, reflow at 800 °C, 10:1 aspect ratio at 0.04 µm spaces), a selective oxide etch, and Ti/TiN-liner silicidation with W plug"}
+  - {technology: "Cypress 0.18 µm SRAM technology", attribute: "local interconnect", value: "local interconnect contacted to diffusion via the same SAC scheme"}
+  notes: >-
+    Confirms a distinct 0.18 µm SRAM generation at Cypress (San Jose) in
+    1999, between the 0.25 µm generation
+    (data/history/extra.yaml's cyx-jin-1999-locos) and the eventual 0.13 µm
+    generation. No technology-code letter for this 0.18 µm generation was
+    found.
+
+- id: paper-hu-1992-bifamos-eprom
+  kind: paper
+  origin: cypress
+  source: >-
+    G.J. Hu, L.C. Tran, P. Keshtbod, J. Segal, K.H. Park, T. Amin, B.
+    Prickett, S.C. Tsao, J. Yen, E. Smith, J. Bornstein et al., "BiFAMOS
+    technology for high speed mega-bit EPROMs", 1992 Symposium on VLSI
+    Technology Digest of Technical Papers, pp. 42-43. DOI:
+    10.1109/vlsit.1992.200637.
+  url: https://doi.org/10.1109/vlsit.1992.200637
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_vlsit_1992_200637.json.txt
+  sha256: aa3ace29f89a748abee620b6b6bbae41985fe9fc55d5c3f8d68f7055b72d40cf
+  quotes:
+  - text: >-
+      An advanced BiCMOS floating gate avalanche MOS (BiFAMOS) technology
+      for high-speed and high-density EPROM applications is described.
+    location: "abstract, reconstructed from OpenAlex's word-position index (abstract_inverted_index) for this DOI, reproduced in reading order, first sentence"
+  - text: >-
+      Fast bipolar sense amplifiers and high-current NPN drivers allow
+      very-high-speed access without a large cell current. With a 1-T
+      cell, an access time of 12 ns was obtained on a 1-Mb EPROM,
+      demonstrating that this 0.8- mu m BiFAMOS is capable of sub-20-ns 4M
+      EPROMs.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI, final three sentences"
+  claims:
+  - {technology: "BiFAMOS (Cypress EPROM technology)", attribute: "existence and node", value: "a named Cypress BiCMOS floating-gate-avalanche-injection (FAMOS) EPROM technology, at 0.8 µm, presented at VLSI Symposium 1992; a bipolar sense-amplifier/driver scheme lets a 1-transistor cell reach 12 ns access on a 1 Mb EPROM"}
+  notes: >-
+    "BiFAMOS" ("Bipolar" + "Floating-gate Avalanche-injection MOS") is a
+    named Cypress EPROM cell/process technology distinct from the SONOS
+    line and from the plain floating-gate cells in the patents below,
+    giving an explicit 0.8 µm node for a Cypress BiCMOS EPROM generation
+    that data/history/corporate.yaml's 1993 10-K also names (0.5/0.8 µm
+    BiCMOS) without this level of device detail.
+
+- id: paper-isscc1985-cmos-prom
+  kind: paper
+  origin: cypress
+  source: >-
+    Cypress Semiconductor authors, "A 25ns 16K CMOS PROM using a
+    4-transistor cell", 1985 IEEE International Solid-State Circuits
+    Conference (ISSCC) Digest of Technical Papers, DOI:
+    10.1109/isscc.1985.1156754; expanded as "A 25-ns 16K CMOS PROM using a
+    four-transistor cell and differential design techniques", IEEE Journal
+    of Solid-State Circuits, 1985, DOI: 10.1109/jssc.1985.1052422.
+  url: https://doi.org/10.1109/jssc.1985.1052422
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_jssc_1985_1052422.json.txt
+  sha256: ef366507deefef7545945acdb4e9be729f23f17f40c6f328a57a1b1495f3d09f
+  quotes:
+  - text: >-
+      A 25-ns, 250-mW, 2K/spl times/8 PROM using a 1.2-/spl mu/m n-well
+      CMOS technology is described. Speed and programmability are
+      optimized by separating the READ and WRITE transistor functions in a
+      four-transistor differential cell and using differential design
+      techniques. For the first time, a substrate bias generator is used
+      in an EPROM technology to improve speed and raise latch-up immunity
+      to over 200 mA.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI ('/spl times/' and '/spl mu/' are IEEE Xplore's own encoding of '×' and 'µ' carried through unchanged)"
+  claims:
+  - {technology: "Cypress CMOS PROM (earliest Cypress process paper found)", attribute: "product, node and date", value: "a 25 ns, 2K×8 (16 Kbit) CMOS PROM in a 1.2 µm n-well process with a four-transistor differential cell and an on-chip substrate bias generator, presented at ISSCC 1985"}
+  notes: >-
+    The earliest Cypress technical paper found (the company was founded in
+    1982); gives an explicit 1.2 µm n-well node for Cypress's first
+    published process/product work, consistent with the roughly 1.2-2 µm
+    CMOS description of Cypress's first products elsewhere in the public
+    record (data/history/corporate.yaml).
+
+- id: paper-cicc1994-altera-eprom
+  kind: paper
+  origin: cypress
+  source: >-
+    Cypress Semiconductor and Altera authors, "An advanced CMOS EPROM
+    technology for high speed/high density programmable logic devices and
+    memory applications", Proceedings of the IEEE 1994 Custom Integrated
+    Circuits Conference (CICC), DOI: 10.1109/cicc.1994.379676.
+  url: https://doi.org/10.1109/cicc.1994.379676
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_cicc_1994_379676.json.txt
+  sha256: 1a07c8e56f432c8a4f24fe062aed8fecdfcd081fc937f68a8408f58664bf883f
+  quotes:
+  - text: >-
+      A 0.65 /spl mu/m double-level poly and metal UV EPROM CMOS technology
+      has been developed for high speed complex Programmable Logic Device
+      (PLD) and memory applications. Six types of transistors are used for
+      the high performance designs. In addition to the design rule
+      scaling, the new process includes poly buffer LOCOS (PBL) isolation,
+      borderless contacts/vias. Half the die size and twice the speed on a
+      high density MAX product has been demonstrated compared to a 0.8
+      /spl mu/m technology.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI"
+  claims:
+  - {technology: "Cypress/Altera joint CMOS EPROM technology", attribute: "node and isolation", value: "0.65 µm double-poly, double-metal UV EPROM CMOS with poly-buffer LOCOS (PBL) isolation, six transistor types, compared against a prior 0.8 µm technology; applied to Altera MAX PLD products"}
+  notes: >-
+    Shows a cross-company (Cypress + Altera) EPROM process at 0.65 µm in
+    1994, using a LOCOS variant (poly-buffer LOCOS) rather than trench
+    isolation -- one more data point, alongside
+    paper-jin-1999-locos-cop-025um-sram in data/history/extra.yaml, that
+    LOCOS-family isolation was still in use through the mid/late 1990s at
+    Cypress, before the SONOS-based nonvolatile-cell patents below (from
+    1998 on).
+
+- id: paper-kennings-2000-delta39k-cpld
+  kind: paper
+  origin: cypress
+  source: >-
+    A. Kennings, H. Mohammed, J.P. Skudlarek and B. Tian (Cypress
+    Semiconductor Corporation), "Cypress Delta39K(TM): A memory-rich, high
+    performance, scalable CPLD architecture", Proceedings of the IEEE 2000
+    Custom Integrated Circuits Conference (CICC), pp. 135-138. DOI:
+    10.1109/cicc.2000.852634.
+  url: https://doi.org/10.1109/cicc.2000.852634
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_cicc_2000_852634.json.txt
+  sha256: 80183c4b8a8b0735b197234457dc9853344edbfcd28ce8bb8d8c8a2938a6146c
+  quotes:
+  - text: >-
+      The architecture of the Cypress Delta39K CPLD family is described,
+      including: (i) the hierarchical organization; (ii) the novel single
+      source, dedicated track MUX-based routing architecture; and (iii)
+      the large quantity of on-chip specialty memory.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI"
+  claims:
+  - {technology: "Cypress Delta39K CPLD", attribute: "description", value: "a memory-rich, high-performance, scalable CPLD architecture (hierarchical organisation, single-source dedicated-track MUX routing, large on-chip specialty memory), presented at CICC 2000"}
+  notes: >-
+    Confirms Delta39K as a real, named Cypress CPLD family from 2000. This
+    paper is about the digital architecture (routing, memory), not the
+    underlying process technology or nonvolatile-cell details;
+    pat-us6525962b1-cpld-nvcell-2000 (same year) is the closest
+    process-level evidence found for how such a CPLD's configuration cells
+    were built. No paper or patent naming "Ultra37000" was found.
+
+- id: paper-lovett-2001-nonvolatile-hidden-cmos
+  kind: paper
+  origin: cypress
+  source: >-
+    S.J. Lovett (Cypress Semiconductor and Micron), "The nonvolatile cell
+    hidden in standard CMOS logic technologies", IEEE Transactions on
+    Electron Devices, vol. 48, issue 5, pp. 1017-1018, May 2001. DOI:
+    10.1109/16.918257.
+  url: https://doi.org/10.1109/16.918257
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_16_918257.json.txt
+  sha256: 38cb917d519d776ead656362c12931709fb417cb6e17f168a045d5d4c5fd0803
+  quotes:
+  - text: >-
+      An electrically programmable cell is described which is latently
+      available in virtually all modern CMOS logic processes. The cell
+      consists of an n-ch and a p-ch device with their gates coupled
+      together to form the floating gate. The element may be used to
+      adjust circuit function, timing, zero adjust, etc.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI"
+  claims:
+  - {technology: "nonvolatile cell embeddable in standard CMOS (no extra masks)", attribute: "cell structure", value: "an n-channel and p-channel device with coupled gates forming a floating gate, realisable from standard CMOS logic layers alone with no dedicated NVM process module"}
+  notes: >-
+    A contrasting data point to the SONOS "three to five extra masks" and
+    "five extra masks" figures in data/history/extra.yaml's ChipEstimate
+    and SONOS-eFlash-brief records: a genuinely zero-extra-mask
+    nonvolatile cell was also being published on by a Cypress-affiliated
+    author in the same period, though this is a short (2-page) technical
+    note, not a description of a Cypress product process.
+
+- id: paper-yang-white-2000-sonos-retention
+  kind: paper
+  origin: cypress
+  source: >-
+    Yang (Larry) Yang and Marvin H. White (Cypress Semiconductor and Lehigh
+    University), "Charge retention of scaled SONOS nonvolatile memory
+    devices at elevated temperatures", Solid-State Electronics, vol. 44,
+    issue 6, pp. 949-958, June 2000. DOI: 10.1016/s0038-1101(00)00012-5.
+  url: https://doi.org/10.1016/s0038-1101(00)00012-5
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/crossref-10_1016_s0038-1101_00_00012-5.json.txt
+  sha256: 1cae2b780d518a8a9f947780e9be052d0bd75d2ee52e6b99331ba04a64aede15
+  quotes:
+  - text: "Charge retention of scaled SONOS nonvolatile memory devices at elevated temperatures"
+    location: "title field, Crossref REST API record (works/10.1016/s0038-1101(00)00012-5); no abstract is available from Crossref or OpenAlex for this record, so only the title is quoted"
+  claims:
+  - {technology: "SONOS nonvolatile memory (general, scaled devices)", attribute: "subject of this paper", value: "charge-retention behaviour of scaled SONOS devices at elevated temperature, a Cypress and Lehigh University collaboration, published June 2000"}
+  notes: >-
+    Full text is paywalled and no abstract is available from either
+    Crossref or OpenAlex; only the title is verifiable here. An
+    industry-academia collaboration on SONOS reliability physics around
+    the time (1999-2001) Cypress's first SONOS patents were being filed
+    (pat-us6172907b1-sonos-jenne-1999).
+
+- id: paper-radaelli-2005-150nm-mbu-sram
+  kind: paper
+  origin: cypress
+  source: >-
+    D. Radaelli, H. Puchner, Skip Wong and S. Daniel (Cypress
+    Semiconductor), "Investigation of multi-bit upsets in a 150 nm
+    technology SRAM device", IEEE Transactions on Nuclear Science, vol.
+    52, issue 6, pp. 2433-2437, December 2005. DOI: 10.1109/tns.2005.860675.
+  url: https://doi.org/10.1109/tns.2005.860675
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_tns_2005_860675.json.txt
+  sha256: de399d5301b71bfbe7e82bb9a2e2474a3368120b04da9f9e190641886276cf2f
+  quotes:
+  - text: >-
+      Multi-bit upset (MBU) events collected from accelerated soft error
+      rate (SER) measurements performed with a quasi-monoenergetic neutron
+      beam were analyzed with a threefold purpose.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI"
+  - text: >-
+      The results showed that the memory architecture is critical in
+      affecting the single-bit EDAC effectiveness. Also, it was put in
+      evidence that the tapping scheme is very effective in reducing the
+      MBU rate.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI, final two sentences"
+  claims:
+  - {technology: "Cypress SRAM technology", attribute: "node named in this paper's title", value: "150 nm SRAM device, radiation multi-bit-upset study using a memory-core P-well tapping scheme, published December 2005"}
+  notes: >-
+    Independently confirms a "150 nm" Cypress SRAM technology existed by
+    2005, alongside paper-kitonaki-2006-015um-cmos-ekv3 below (a general
+    CMOS technology, not specifically SRAM). No named technology code for
+    this 150 nm generation was found.
+
+- id: paper-kitonaki-2006-015um-cmos-ekv3
+  kind: paper
+  origin: cypress
+  source: >-
+    E. Kitonaki, A. Bazigos, M. Bucher, H. Puchner (Cypress Semiconductor),
+    S. Bhardwaj and Y. Papananos, "Scaling Issues In An 0.15 μm CMOS
+    Technology With EKV3.0", 2006 International Conference Mixed Design of
+    Integrated Circuits and Systems (MIXDES), pp. 151-158. DOI:
+    10.1109/mixdes.2006.1706557.
+  url: https://doi.org/10.1109/mixdes.2006.1706557
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_mixdes_2006_1706557.json.txt
+  sha256: 72530c532223fd48e189c71d92712396f53363959f87bd02922492b8ec5ca369
+  quotes:
+  - text: >-
+      Application of the EKV3.0 model to 0.15mum CMOS technology with
+      single poly, and buried channel PMOS, is presented with emphasis on
+      scaling properties of the technology and the model.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI; OpenAlex marks this work open access"
+  claims:
+  - {technology: "Cypress 0.15 µm CMOS technology", attribute: "process detail", value: "single-poly, buried-channel PMOS 0.15 µm CMOS technology, compact-model (EKV3.0) scaling study, published 2006"}
+  notes: >-
+    Shares an author with paper-radaelli-2005-150nm-mbu-sram, one more
+    connection between the two 150 nm-era papers. Gives a specific
+    front-end detail (buried-channel PMOS) not stated in the other 150 nm
+    record.
+
+- id: paper-fliesler-2008-nvsram-013u-sonos
+  kind: paper
+  origin: cypress
+  source: >-
+    Michael Fliesler, David Still and Jeong-Mo Hwang (Cypress Semiconductor
+    and Simtek Corporation), "A 15ns 4Mb NVSRAM in 0.13u SONOS Technology",
+    2008 Joint Non-Volatile Semiconductor Memory Workshop and International
+    Conference on Memory Technology and Design (NVSMW/ICMTD). DOI:
+    10.1109/nvsmw.2008.30. Also indexed in data/papers.yaml as label
+    paper-fliesler-2008a.
+  url: https://ieeexplore.ieee.org/document/4531830/
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/openalex-10_1109_nvsmw_2008_30.json.txt
+  sha256: e934e9f5cab6152bc012c82da0f5b76a06756c74870202e684d9f62c24df46b9
+  quotes:
+  - text: >-
+      SONOS based 4Mb nvSRAM has been developed which combines a fast
+      access CMOS SRAM array with a highly reliable non-volatile memory
+      array.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI, first sentence"
+  - text: >-
+      The nonvolatile memory uses Fowler-Nordheim program and erase to
+      achieve excellent reliability, with EOL window > 1V after 10 years
+      of retention at 85degC and 200K endurance cycles.
+    location: "abstract, reconstructed from OpenAlex's word-position index for this DOI, final sentence"
+  claims:
+  - {technology: "S8 (0.13 µm SONOS)", attribute: "nvSRAM product", value: "a 15 ns, 4 Mb NVSRAM in '0.13u SONOS Technology' combining a CMOS SRAM array with a Fowler-Nordheim-programmed SONOS non-volatile array, endurance 200K cycles and >1 V end-of-life window after 10 years at 85 °C; Cypress and Simtek Corporation authors"}
+  notes: >-
+    Also indexed in data/papers.yaml, whose own record notes that the
+    abstract does not itself state the product uses the S8 process (that
+    link is an inference from Cypress's other 2007 nvSRAM product
+    coverage). This is the clearest literature marker of the S8 endpoint
+    and of Simtek Corporation as the source of Cypress's nvSRAM line: the
+    co-authorship (Cypress + Simtek) is the direct public evidence for
+    that connection.
