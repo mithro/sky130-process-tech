@@ -1,0 +1,42 @@
+id: mol-100-wcmpli
+kind: xsection
+page: docs/steps/100-wcmpli.md
+series: series-mol.yaml
+close_up: [170, 268]
+close_up_name: "the 1.8 V source/drain contact"
+crop_depth: 24
+alt: >-
+  Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other.
+  Before the step a cross-hatched grey metal fills the hole and covers the flat top. After it the
+  metal and the thin dark film under it are gone from the top: the metal is left only in the
+  hole, its top flush with the flat oxide around it.
+caption: >-
+  A close-up of the 1.8 V source/drain contact, beside the gate. Before, the tungsten blanket;
+  after, the polish has removed the tungsten and the liner from the field down to the cap oxide,
+  leaving a plug flush with it. The plug recess and the oxide erosion the polish leaves are not
+  public and are not drawn. The other two holes become plugs in the same way, outside this view;
+  the local interconnect that lands on them must cover each one (licon.4, li.5).[^pdk-periph]
+  The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers,
+  the thin oxides, the tip and the halo, and the field oxide at the left edge are drawn but not
+  labelled, and the liner oxide is drawn faded; the P-well and the NCHI
+  channel implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "WCMPLI, step 100"
+  note: "The tungsten and the liner are polished off the field, down to the cap oxide."
+panels:
+  - state_after: "099"
+    title: "Before: the tungsten blanket (step 099)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, sub]
+    dim_layers: [liner]
+  - state_after: "100"
+    title: "After: a tungsten plug, flush with the cap oxide"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, sub, ctliner]
+    dim_layers: [liner]
+    highlight: {where: [[170, 268]]}
+    labels:
+      wfill:
+        title: "Tungsten plug"
+        note: "WDEP, step 099; polished at step 100"
+        basis: public
