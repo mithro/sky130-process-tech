@@ -54,7 +54,7 @@ are allowed except die seal ring […]" (via2.3).[^pdk-periph]
 Rules via2.1b
 to via2.1e allow sets of square sizes inside `areaid.mt`, which `gds_layers.csv` describes as the
 "Location of e-test modules within the frame", and via2.1f "Two sizes
-of square Vias allowed outside areaid:mt: 0.8um and 1.2 um".[^pdk-periph][^pdk-06] The sizes are drawn from 0.2, 0.280, 0.8, 1.2
+of square Vias allowed outside areaid:mt: 0.8um and 1.2 um".[^pdk-periph][^pdk-06] The via2.1b–e sizes are drawn from 0.2, 0.280, 0.8, 1.2
 and 1.5 µm.[^pdk-periph] All five
 carry flag AL but no value ("N/A" or blank), and none names a product
 flow.[^pdk-periph]
@@ -203,7 +203,7 @@ rows.[^steps-sheet]
   and metal numbers rise in step order, but each capacitor mask is
   numbered 2 above the metal mask that follows it (`CAPM`, step 137, is
   `572` against `MM3`, step 139, `570`).[^steps-sheet] Elsewhere the numbers do not
-  follow process order, so no process position is read from it
+  follow process order, so no process position is read from `560`
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
   renders are from the original set `5CS8010AC`
