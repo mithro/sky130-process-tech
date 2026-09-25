@@ -1,21 +1,13 @@
 (mask-mm5)=
 # MM5 — Metal 5
 
-The metal-5 mask is the {term}`reticle` that draws SKY130's top metal:
-on the {ref}`MM5 <step-162>` page's reading, the resist printed through
+The metal-5 mask is the {term}`reticle` that draws SKY130's top metal.
+On the {ref}`MM5 <step-162>` page's reading, the resist printed through
 it at step 162 stays wherever `met5` is drawn — the top-level supply
 grid and wide buses, the bond pads that the pad mask later
 opens, inductor turns and the landings of every via 4 — and the
 {ref}`MM5E <step-163>` etch removes the 1.26 µm metal-5 stack everywhere
-else. It is the coarsest of the five metal masks, with 1.6 µm lines on
-the step page's reading of the flow, and, with metal 2, one of the two
-masks for which a transcribed plate-case label is public, although the
-label is not tied to an MPW run. This page gathers what public sources say
-about the mask itself — its PDK entry and layers, the plates the
-process-steps sheet records for the MPW runs, what the public renders of
-those runs show, the lithography it needs and the rules that constrain
-it. How the step is performed is on the step page; every mask is indexed
-on the {ref}`masks index <masks-index>`.
+else.
 
 | | MM5 — Metal 5 |
 |---|---|
@@ -32,23 +24,42 @@ on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-mm5-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page; every mask is indexed
+on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
 
+The mask is the coarsest of the five metal masks, with 1.6 µm lines on
+the step page's reading of the flow. With metal 2, it is one of the two
+masks for which a transcribed plate-case label is public, although the
+label is not tied to an MPW run.
+
 The periphery rules give the function of the `m5` rule set as "Defines
-Fifth level of metal interconnects;", and the PDK's Table F4 shows metal
+Fifth level of metal interconnects;".[^pdk-periph] The PDK's Table F4 shows metal
 5 joined to metal 4 by "Via4" and to the copper redistribution layer
-`rdl` by "(pad AND pmm) for s8pir/s8pr2-10r flows".[^pdk-periph][^pdk-summary]
-The `m5` rules are four: a minimum width and spacing of 1.600 µm (m5.1,
-m5.2), an enclosure of via 4 of 0.310 µm (m5.3) and a minimum area of
-4.000 µm², with probe pads of exactly 1.42 µm × 1.42 µm exempted "For all
-flows except SKY130PIR\*/SKY130PF\*" (m5.4).[^pdk-periph] Table 2 of
+`rdl` by "(pad AND pmm) for s8pir/s8pr2-10r flows".[^pdk-summary]
+
+The `m5` rules are four:[^pdk-periph]
+
+* a minimum width and spacing of 1.600 µm (m5.1,
+  m5.2)
+* an enclosure of via 4 of 0.310 µm (m5.3)
+* a minimum area of
+  4.000 µm², with probe pads of exactly 1.42 µm × 1.42 µm exempted "For all
+  flows except SKY130PIR\*/SKY130PF\*" (m5.4)
+
+Table 2 of
 *Criteria & Assumptions* gives two rows for the mask, 0.8 for "All flows
 except S8PF\*/S8PIR\*" and 1.6 for "S8PF\*/S8PIR\*".[^pdk-03] The
 {ref}`MM5 <step-162>` page reads SKY130 as an S8PIR\* flow, from the
 background page's "5 levels of metal (p - penta)", "Inductor or
 Inductor-Capable (i)" and "Poly resistor (r)",[^pdk-02] so that both
 tables give 1.6 µm and the m5.4 exemption does not apply (inference on
-that page). The published SKY130 {term}`test tile` measures metal 5 at
+that page).
+
+The published SKY130 {term}`test tile` measures metal 5 at
 that width: "S8PIR/PF WM5_Kelvin (Width = 1.6um/ Length = 223.6um)", "s8pir/pf M5
 (w=1.6) serp / comb over field" and "top:met5 width:1.600 space:1.600",
 among other structures.[^raw-data-testtile-pads]
@@ -58,20 +69,22 @@ headed "Resistivity (mohms/sq)", against 47 for metals 3 and 4, and via 4
 380,[^pdk-08] and the stack diagram draws `metal5` 1.26 µm
 thick.[^pdk-04] Table C3 of the *Layers Reference* defines "top_metal" as
 "met5.dg OR mm5.mk (for SP8P\*/S8P\*)" and "bondPad" as "pad:dg OUTSIDE
-areaid:ft".[^pdk-06] The mask therefore draws, on the step page's reading,
-the pads that {ref}`PDM <step-168>` opens: the Error Messages page, which
-describes "many of the automated DRC rules that are checked by SkyWater
-as part of the acceptance criteria for GDS data", checks "2.7 min.
+areaid:ft".[^pdk-06]
+
+The mask therefore draws, on the step page's reading,
+the pads that {ref}`PDM <step-168>` opens: the Error Messages page checks "2.7 min.
 enclosure of bondpadNormal by met5" (pad.4/4a) (and cupad.3 for pad
 openings inside an inductor) and "2.5 min. enclosure
 of UTESTPAD by met5" (scribe.17), none of which the periphery rules
-list.[^pdk-errors][^pdk-periph] The {ref}`PDM <step-168>` page reports
+list.[^pdk-errors][^pdk-periph] The page describes "many of the automated DRC rules that are checked by SkyWater
+as part of the acceptance criteria for GDS data".[^pdk-errors] The {ref}`PDM <step-168>` page reports
 the same 2.7 µm margin, per side, in SkyWater's GPIO pad cell
 ({ref}`mask-pdm`).
+
 Marsh et al. bonded copper wire over probe marks on pads of 0.8 µm and
 3 µm aluminium,[^marsh-2016] and Ching and Schroen found that the choice
 of pad metallisation, among systems of aluminium and titanium-tungsten
-alloy, changed a pad's tolerance of bonding stresses;[^ching-1988] Hess et al. studied pads
+alloy, changed a pad's tolerance of bonding stresses.[^ching-1988] Hess et al. studied pads
 with circuitry under them at 0.13 µm.[^hess-2003]
 
 The PDK's mask generation table, Table F2b, has an `MM5` column, marked
@@ -89,9 +102,11 @@ it.[^pdk-05] Table 4 of [*Criteria & Assumptions*](<https://skywater-pdk.readthe
 thicknesses "for antenna ratio calculation" of 2 for "(S8P\*/SP8P\* with
 2um thick metal)" (`Met5Thick_p`) and 1.2 for "(S8P\*/SP8P\* with 1.2um
 thick metal)" (`Met5Thickp_12`), in a block headed "Material Thicknesses"
-with a column headed "Value (um)";[^pdk-03] the
+with a column headed "Value (um)".[^pdk-03] The
 {ref}`MM5E <step-163>` page reads the 1.2 µm entry as SKY130's
-(inference). The mask does not define the metal stack it patterns,
+(inference).
+
+The mask does not define the metal stack it patterns,
 which {ref}`WTIAL5 <step-161>` deposits, the via-4 holes beneath
 ({ref}`mask-vim4`), or the passivation openings above
 ({ref}`mask-nsm`, {ref}`mask-pdm`).
@@ -102,43 +117,56 @@ which {ref}`WTIAL5 <step-161>` deposits, the via-4 holes beneath
 
 `gds_layers.csv` gives the mask-level layer `cmm5` two purposes: `mask`
 at 59:0 ("Metal 5 mask") and `waffle drop` at 117:4, on a layer number
-that also carries the `cviam4` drawing purpose at 117:20; the drawn layer
+that also carries the `cviam4` drawing purpose at 117:20.[^pdk-06] The drawn layer
 is `met5` at 72:20, with block, label, net, pin, cut, probe and short
 purposes among its others.[^pdk-06] The pairing of the mask with `met5`
 rests on those names and descriptions, as on the
-{ref}`masks index <masks-index>`; the PDK publishes no operation from the
-drawn layer to the plate. Rule x.15a confines "Drawn compatible, mask,
+{ref}`masks index <masks-index>`. The PDK publishes no operation from the
+drawn layer to the plate.
+
+Rule x.15a confines "Drawn compatible, mask,
 and waffle-drop layers" to test modules, seal ring and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P),[^pdk-periph]
 so a die may carry `cmm5` waffle-drop shapes as well as `met5` (our
-reading); with no add or drop purpose, rule x.9's "serifs" have no
-`cmm5` layer to sit on. Unlike metals 1 to 4, metal 5 has no waffle-drop density rule
-in the periphery rules, and the Error Messages page lists waffle-drop
+reading). With no add or drop purpose, rule x.9's "serifs" have no
+`cmm5` layer to sit on.
+
+Unlike metals 1 to 4, metal 5 has no waffle-drop density rule
+in the periphery rules.[^pdk-periph] The Error Messages page lists waffle-drop
 density checks for metals 1 to 4 (`m1.x.1` to `m4.x.1`) and none for
-metal 5;[^pdk-periph][^pdk-errors] Table 4's "Waffling / Pattern Density"
+metal 5.[^pdk-errors] Table 4's "Waffling / Pattern Density"
 block, headed "Value", gives a "Min MM\* PD range" of 0.3 (`MMPDrange`)
 and a "Maximum metal waffle drop pattern density in the frame" of 0.55
 (`PD_FrameWP`), without naming metal 5.[^pdk-03] The
 {ref}`MM5 <step-162>` page notes that this reference describes no oxide
 polish over metal 5 (its inference for the missing density rule).
 
-The Error Messages page names a mask-data layer `MM5mk` in the generic
-grid, octagonal-edge and x.15a checks ("off 0.005 grid MM5mk vertex",
-"non-octagonal MM5mk edge", "X.15a: layer MM5mk allowed inside areaid:mt
-or inside areaid.sl or inside areaid.ft"), in "Wide mm5mk >= 10.0x10.0um
-within 150.0 of scribe junction" (scribe.5), and in two checks named
-`cmm5.nikon`, "MM5mk in the nikon cross has the wrong polarity" and
-"MM5mk is missing from the nikon cross in the layout".[^pdk-errors] It
+The Error Messages page names a mask-data layer `MM5mk` in:[^pdk-errors]
+
+* the generic
+  grid, octagonal-edge and x.15a checks ("off 0.005 grid MM5mk vertex",
+  "non-octagonal MM5mk edge", "X.15a: layer MM5mk allowed inside areaid:mt
+  or inside areaid.sl or inside areaid.ft")
+* "Wide mm5mk >= 10.0x10.0um
+  within 150.0 of scribe junction" (scribe.5)
+* two checks named
+  `cmm5.nikon`, "MM5mk in the nikon cross has the wrong polarity" and
+  "MM5mk is missing from the nikon cross in the layout"
+
+The page
 does not say what the "nikon cross" is. The seal-ring cell
 `advSeal_6um_gen` published in Efabless's caravel repository contains, in
-each of its four corners, a sub-cell named `nikon_sealring_shape` that
+each of its four corners, a sub-cell named `nikon_sealring_shape` (our reading
+of the GDS file).[^caravel-sealring] The sub-cell
 draws inside a 4 µm square a cross of three rectangles, 2.4 µm across
 with 0.5 µm arms, on `cmm5` 59:0 and 23 other mask-level layers, and the
 square, with its corners cut at 45°, less the cross on seven more, among
 them `cpdm` 37:0 (our reading
-of the GDS file).[^caravel-sealring] We read that sub-cell as a "nikon
+of the GDS file).[^caravel-sealring]
+
+We read that sub-cell as a "nikon
 cross" of the kind the checks name, and the two drawn forms as the
-"polarity" they test (inference from the names); rule nsm.3 exempts cells
+"polarity" they test (inference from the names). Rule nsm.3 exempts cells
 named "nikon\*" from the nitride-seal keep-out.[^pdk-periph] None of this
 states the tone of the plate.
 
@@ -148,13 +176,17 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `MM5` the site renders layers 72:20 (`met5`)
 and 59:28, which it lists as a fill layer, with no Boolean expression and
-no note, on all eight runs; its mask record gives the mask-level layer
-59:0 and the info text "Metal 5".[^mask-renders] Layer 59:28 is not in
+no note, on all eight runs.[^mask-renders] Its mask record gives the mask-level layer
+59:0 and the info text "Metal 5".[^mask-renders]
+
+Layer 59:28 is not in
 `gds_layers.csv`, whose `cmm5` waffle-drop purpose is 117:4, so the site's
 choice of it is one public reading of the tape-out files, not a PDK
-definition ({ref}`masks-derivations`); like the site's other layer
-choices it is one public derivation from the drawn data, not SkyWater's
-mask-generation recipe.[^mask-renders][^pdk-06] The info text is
+definition ({ref}`masks-derivations`).[^pdk-06] Like the site's other layer
+choices, it is one public derivation from the drawn data, not SkyWater's
+mask-generation recipe.[^mask-renders]
+
+The info text is
 identical to the "Info" note of the `MM5` row in the process-steps sheet,
 so neither is cited as corroborating the other
 ({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders] The
@@ -163,7 +195,9 @@ render.
 
 Every rendered die of every run carries shapes on these layers — at least
 115 443 on each die, fill included[^mask-renders] — so the count of 40
-dies says only that every layout has metal 5. The site states the limits
+dies says only that every layout has metal 5.
+
+The site states the limits
 of its images: "These are renders of *drawn* data, not photomask artwork:
 reticle pitch, 4x reduction, mirroring and the frame features the fab
 adds are not modelled."[^mask-renders] Its metadata carries no plate ID,
@@ -195,30 +229,44 @@ is the heading of the run's columns in the tab
   recorded for MPW-5; the masks index reads the MPW-5 gap of `VIM4` as
   more likely a gap in the record than in the run
   ({ref}`masks-mpw-runs`).[^steps-sheet]
-* **Plate number.** The sheet does not say what `590` encodes. It is the
+* **Plate number.** The sheet does not say what `590` encodes.
+
+  It is the
   highest of the via and metal numbers from `500` to `590`, which rise in
   step order apart from the capacitor masks, and `PDM` (step 168) is
-  `600`, but `NSM` (step 165), between them, is `007`, and elsewhere the
+  `600`.[^steps-sheet] But `NSM` (step 165), between them, is `007`, and elsewhere the
   numbers do not follow process order, so no process position is read
   from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Plate-case label.** The sheet's "Random Mask Case Label Info" tab
   transcribes a Photronics plate-case label whose part-number field names
-  `MM5` and the number 590. It gives the material as a 6 × 6 × 0.25 in
-  blank, the type as "4X Beam Final", a "Percent Clear" of 58.56 and a
-  "Level" of 14, and a CD specification for patterns it names "Scribe
-  Frame Array / Plot / X" and "Scribe Frame Array / Plot / Y", nominal
-  6.52 with tolerances of 0.08 either way, measured at means of 6.5163
-  (X) and 6.5388 (Y), in no stated unit.[^steps-sheet] The tab does not
+  `MM5` and the number 590.
+
+  It gives:[^steps-sheet]
+
+  * the material as a 6 × 6 × 0.25 in
+    blank
+  * the type as "4X Beam Final"
+  * a "Percent Clear" of 58.56
+  * a
+    "Level" of 14
+  * a CD specification for patterns it names "Scribe
+    Frame Array / Plot / X" and "Scribe Frame Array / Plot / Y", nominal
+    6.52 with tolerances of 0.08 either way, measured at means of 6.5163
+    (X) and 6.5388 (Y), in no stated unit
+
+  The tab does not
   tie the label to one of the MPW runs ({ref}`masks-mpw-runs`) or define
-  its fields; we read "4X" as the reduction ratio and "Percent Clear" as
+  its fields. We read "4X" as the reduction ratio and "Percent Clear" as
   the transmitting share of the plate area (inference from the field
   names alone). On those readings a metal-5 plate that is 58.56 % clear
   would fit the clear-field reading of the quick-facts table, but the
-  label may belong to another reticle set (inference). Hochmuth, Ruhl
+  label may belong to another reticle set (inference).
+
+  Hochmuth, Ruhl
   and Coleman found that with chrome dry etch "the deviation of the CD
   from the target value is a function of the chrome loading on the
-  plate";[^hochmuth-1999] whether the recorded percentage serves that
+  plate".[^hochmuth-1999] Whether the recorded percentage serves that
   purpose is not stated.
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `MM5`.[^steps-sheet] 4× is the ITRS 2001 mask magnification for the
@@ -229,61 +277,76 @@ is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`MM5 <step-162>` page gives
+### Exposure class
+
+The {ref}`MM5 <step-162>` page gives
 {math}`k_1 = 1.6 \times 0.6 / 0.365 \approx 2.6` on an i-line lens of NA
 0.6, and about 1.3 for the 0.8 µm of other flows, "far from any
 resolution limit", and infers an i-line level, quoting ASML's statement
 that older systems "migrate to the lithography of choice for less
-critical layers";[^asml-30] the
+critical layers".[^asml-30] The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
+
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" but
 assigns no layer to them.[^skw-01] If via 4 below is a KrF level, as the
 {ref}`VIM4 <step-159>` page infers, this mask overlays a level printed on
 another class of tool ({ref}`mask-vim4`).
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
-patterns";[^wong-1998] at 365 nm and NA 0.6 that is about 0.30 µm (our
+patterns".[^wong-1998] At 365 nm and NA 0.6 that is about 0.30 µm (our
 arithmetic), far below the 1.6 µm line, so plate CD errors would print
 at their own size (inference). At 4× a 1.6 µm line is 6.4 µm on the plate
 (our arithmetic).
 
-**Thick metal and the resist.** The step page's point is thickness rather
+### Thick metal and the resist
+
+The step page's point is thickness rather
 than resolution: the resist must outlast the etch of a 1.26 µm
 stack,[^pdk-04] and Krogh et al. followed photoresist erosion in an
 aluminium etch plasma by emission spectroscopy,[^krogh-1987] so the
 {ref}`MM5 <step-162>` page reads a thicker DNQ/novolac i-line resist than
 at the lower metal levels (the chemistry of Dammel's
 text[^dammel-1993]) and notes that Allen and Rickard's tapered aluminium
-etch need not follow the resist slope.[^allen-1994] On a reflective metal
+etch need not follow the resist slope.[^allen-1994]
+
+On a reflective metal
 the swing ratio scales with the square root of the substrate
 reflectivity, as Brunner showed,[^brunner-1991] and Rocke and Schneegans
 used titanium nitride on aluminium as an anti-reflection
-layer;[^rocke-1988] the step page reads a BARC or dyed resist as a
+layer.[^rocke-1988] The step page reads a BARC or dyed resist as a
 latitude choice at these sizes. None of this is published for SKY130. The
 consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
-transferred by {ref}`MM5E <step-163>`, a chlorine etch of the metal stack
-on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class that
-stops on the {ref}`NCAPOX6 <step-158>` cap oxide, with passivation, resist
-strip and clean treated as part of that step. The level's pattern density
-is low over much of a die on that page's reading; Chang et al. studied
-the corrosion and passivation-swelling defects of an ultra-low
-pattern-density thick-metal etch.[^chang-2004] Bohr argued that
-interconnect limits performance[^bohr-1995] and Stamper, Fuselier and
-Tian treated the RC delay of aluminium wiring below 0.25 µm;[^stamper-1998]
-the step page cites both for why the top level is the thickest. The
-renders' fill layer suggests that some layouts add metal-5 fill
-(inference from the site's layer name); Kahng and Samadi survey fill
-synthesis.[^kahng-2008]
+### Overlay and alignment
 
-**Overlay.** Metal 5 must enclose each via 4 by 0.310 µm (m5.3), and,
+Metal 5 must enclose each via 4 by 0.310 µm (m5.3), and,
 on the Error Messages page, a normal bond pad ("bondpadNormal") by
 2.7.[^pdk-periph][^pdk-errors] The {ref}`MM5 <step-162>` page names the
 alignment to the via-4 pattern as the registration that matters.
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
+transferred by {ref}`MM5E <step-163>`, a chlorine etch of the metal stack
+on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class that
+stops on the {ref}`NCAPOX6 <step-158>` cap oxide. On the step pages' readings passivation, resist
+strip and clean are treated as part of that step. The level's pattern density
+is low over much of a die on that page's reading; Chang et al. studied
+the corrosion and passivation-swelling defects of an ultra-low
+pattern-density thick-metal etch.[^chang-2004]
+
+Bohr argued that
+interconnect limits performance[^bohr-1995] and Stamper, Fuselier and
+Tian treated the RC delay of aluminium wiring below 0.25 µm.[^stamper-1998]
+The step page cites both for why the top level is the thickest. The
+renders' fill layer suggests that some layouts add metal-5 fill
+(inference from the site's layer name); Kahng and Samadi survey fill
+synthesis.[^kahng-2008]
 
 (mask-mm5-steps)=
 ## Steps that use this mask
@@ -311,12 +374,16 @@ The rule needs no exception for this mask.
 ## Design rules and critical dimensions
 
 The `m5` rules of the periphery rules, with the other rules that name
-metal 5 or its mask data. Flag P means "Rule applies to periphery only
+metal 5 or its mask data.
+
+Flag P means "Rule applies to periphery only
 (outside areaid.ce). A corresponding core rule may or may not exist.", AL
 "Rules applicable only to Al BE flows", F "Rule intended for Frame only,
 not checked inside Die", RC "Recommended rule at the chip level, required
 rule at the IP level." and NC "Rule not checked by DRC. It should be used
 as a guideline only."[^pdk-periph]
+
+:::{table} The `m5` rules and the other rules that name metal 5 or its mask data, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -337,22 +404,33 @@ as a guideline only."[^pdk-periph]
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 | x.22 | "No floating interconnects (poly, li1, met1-met5) or capm allowed; […]" (RC) | — |
 | x.23c | "areaid.sl must not overlap tap, poly, li1 and metX" | — |
+:::
 
 The Error Messages page repeats m5.1 to m5.4 with the same values ("1.6
 min. width of met5", "1.6 min. spacing/notch of met5", "0.31 min.
-enclosure of via4 by met5", "4 min. area of met5") and adds checks the
-periphery rules do not list: the bond-pad enclosure of 2.7 (pad.4/4a), a
-"1.6 min. spacing of met5 & met5Block" (metblk.1), "0.8 min. spacing of
-moduleCutAREA & q0met5notBuildSpace" (x.12a), "2.50um min. enclosure of
-Etest pad by met5" (scribe.13) and "3.295 min. spacing of target & met5"
-(mf.24).[^pdk-errors] Table 2 of *Criteria & Assumptions* gives `MM5CD`
+enclosure of via4 by met5", "4 min. area of met5").[^pdk-errors] It adds checks the
+periphery rules do not list:[^pdk-errors]
+
+* the bond-pad enclosure of 2.7 (pad.4/4a)
+* a
+  "1.6 min. spacing of met5 & met5Block" (metblk.1)
+* "0.8 min. spacing of
+  moduleCutAREA & q0met5notBuildSpace" (x.12a)
+* "2.50um min. enclosure of
+  Etest pad by met5" (scribe.13)
+* "3.295 min. spacing of target & met5"
+  (mf.24)
+
+Table 2 of *Criteria & Assumptions* gives `MM5CD`
 and `MM5CDSP` as 0.8 and 0.8 for "All flows except S8PF\*/S8PIR\*" and
-1.6 and 1.6 for "S8PF\*/S8PIR\*"; Table 4 adds, in its "Material
+1.6 and 1.6 for "S8PF\*/S8PIR\*".[^pdk-03] Table 4 adds, in its "Material
 Thicknesses" block, the metal-5 antenna thicknesses of 2 and 1.2 and, in
-its "Waffling / Pattern Density" block, the 0.3 of `MMPDrange`; Table 7 a
-"Huge metal X min. W and L" of 3 (`HugeM`) in its column headed "CD"; and
-Table 9, "Criteria for polyimide manufacturability", a "Min/Max enclosure
-of pad.dg inside M5RDL by pmm" of 0 (`pmmM5RDLpadEnc`).[^pdk-03] For the
+its "Waffling / Pattern Density" block, the 0.3 of `MMPDrange`.[^pdk-03] Table 7 gives a
+"Huge metal X min. W and L" of 3 (`HugeM`) in its column headed "CD".[^pdk-03]
+Table 9, "Criteria for polyimide manufacturability", gives a "Min/Max enclosure
+of pad.dg inside M5RDL by pmm" of 0 (`pmmM5RDLpadEnc`).[^pdk-03]
+
+For the
 plate the decisive figures are 1.600 µm lines on a 3.2 µm pitch (our
 arithmetic from m5.1 and m5.2), with pads tens of micrometres wide among
 them.
@@ -361,21 +439,19 @@ them.
 
 * {ref}`MM5 <step-162>` and {ref}`MM5E <step-163>` — the mask step and
   the metal etch; {ref}`WTIAL5 <step-161>` — the stack patterned.
-* {ref}`mask-vim4` — the via mask below; {ref}`mask-mm4` — the metal mask
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step and
+  etch categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-vim4` — the via mask below; {ref}`mask-mm4` — the metal mask
   one level down; {ref}`mask-nsm` and {ref}`mask-pdm` — the two masks
   printed over this level.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   plate-case labels.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step and
-  etch categories.
 
 ## References
 

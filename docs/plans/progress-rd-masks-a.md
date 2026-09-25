@@ -698,3 +698,46 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   (58), the Pattern transfer sentence (47), the flag legend (73, quotations); two quick-facts cells and
   three rule cells. Before → after: paragraphs 14 → 0, items 2 → 0, sentences 29 → 6, cells 5 → 5.
 * **Content problems for the owner:** none found.
+
+### 17. mm5 — done
+
+* **Rules applied.** R-INTRO (179 → 68 words; first sentence split at its colon; "It is the coarsest …,
+  and, with metal 2, one of the two masks …" moved to the top of `## What the mask defines` as two
+  sentences, "It" → "The mask", "and, with metal 2, one of" → "With metal 2, it is one of"); R-CAPTION;
+  R-PARA, R-SENTENCE; R-LIST (the four `m5` rules as three items, the first holding m5.1 and m5.2; the
+  places the *Error Messages* page names `MM5mk`; the plate-case label's fields; the checks the Error
+  Messages page adds to the periphery rules); R-RELATED; R-H3 (Exposure class, Mask errors, Thick metal
+  and the resist, Overlay and alignment ← "Overlay", Pattern transfer). `**Variants and flows.**` stays
+  bold.
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS not applied as a table:** the closing design-rules paragraph names only `HugeM`,
+  `MMPDrange` and `pmmM5RDLpadEnc` by identifier besides the Table 2 pair, and refers back to the
+  thicknesses without their names; it was split into one sentence per table, each keeping `pdk-03`
+  (as on mm4).
+* **One clause reordered:** "The mask therefore draws, …, the pads that PDM opens: the Error Messages
+  page, which describes "many … GDS data", checks "2.7 …" … none of which the periphery rules list." The
+  colon and the checks stay together (the checks are the evidence for the reading); the relative clause
+  "which describes "…"" became the next sentence, "The page describes "…".[^pdk-errors]", word for word.
+* **Hedges repeated on splits:** "(our reading of the GDS file)" on the first half of the seal-ring
+  sentence ("… a sub-cell named `nikon_sealring_shape` (our reading of the GDS file).[^caravel-sealring]
+  The sub-cell draws …"); "On the step pages' readings" on the Pattern transfer strip clause.
+* **Markers moved to their own clause:** function line / Table F4 (`pdk-periph`, `pdk-summary`); "no
+  waffle-drop density rule in the periphery rules" / Error Messages density checks (`pdk-periph`,
+  `pdk-errors`); Layer 59:28 / site's derivation (`pdk-06`, `mask-renders`).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,hedges,identifiers`): markers `pdk-errors` ×2
+  (the moved page description; the "It adds checks …" lead-in, the base marker on the repeated-rules
+  sentence), `pdk-03` ×3 (per-table sentences), `pdk-06` (`gds_layers.csv`), `caravel-sealring` and
+  hedge `our reading` (seal-ring split), `mask-renders` (render sentence), `steps-sheet` ("Plate number"
+  split before "But `NSM` …"); number `5` and identifier `m5` (rule caption).
+* **Marker coverage.** Flags read: lists under lead-in markers; clauses with no marker of their own.
+* **Over the caps after the pass:** the intro's reading sentence (57: one hedge and one dash pair around
+  the list of what `met5` draws); "The MM5 page reads SKY130 as an S8PIR\* flow …" (46, three quotations);
+  "The mask therefore draws … none of which the periphery rules list" (51, two quotations); the seal-ring
+  geometry sentence (53, one measurement); the formula sentence (56 by the script); "The step page's
+  point is thickness rather than resolution: … so the MM5 page reads …" (71: its "so" follows both the
+  thickness point and Krogh et al., so a split would change what the reading rests on); the flag legend
+  (47, quotations); the Polarity cell (37) and two quoted rule cells. Before → after: paragraphs 11 → 0,
+  items 2 → 0, sentences 24 → 7, cells 3 → 3.
+* **Content problems for the owner:** none found.
