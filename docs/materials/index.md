@@ -436,6 +436,9 @@ flows, or Cypress qualification reports for products from the same fab
 QTP 014807) — and the last column summarises the step page's reading,
 with its inferences marked there.
 
+:::{table} Every film the flow deposits or grows, with the PDK's own thickness where it gives one
+:widths: 16 12 18 30 24
+
 | Film (PDK label) | Formed at | PDK thickness or dimension | Other public numbers or composition | Reading on the step pages |
 |------------------|-----------|----------------------------|-------------------------------------|---------------------------|
 | Pad (base) oxide | {ref}`BOX <step-002>` | none | A Cypress {term}`SONOS` patent that may still be in force; see the collapsed note under this table | Thermal SiO₂ of the order of 10–20 nm (typical) |
@@ -471,6 +474,7 @@ with its inferences marked there.
 | "TOPOX K=3.9" | {ref}`NFUSOX <step-164>` | 0.09 µm on the metal-5 top, 0.070 µm on its sidewall[^pdk-04] | Fab 4 passivation "1000Å TEOS / 9000Å PECVD Nitride"[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4"[^cyp-qtp-123907] | Thin undoped oxide |
 | "TOPNIT K=7.5" | {ref}`NTSD <step-167>` | 0.54 µm on the metal-5 top, 0.4223 µm on its sidewall[^pdk-04] | As above, and "7000 +/- 2000A Nitride"[^cyp-qtp-113005] | PECVD silicon nitride |
 | "PI1 K=2.94" | no step | Drawn over the passivation, no thickness[^pdk-04] | "Polyimide cure" is a furnace entry[^skw-01] | Not part of the step list |
+:::
 
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 The *Pad (base) oxide* row above: the Cypress {term}`SONOS` patent gives
@@ -551,6 +555,9 @@ wet processing steps, and semiconductor grade photoresist and
 developer for photolithography", and both name principal
 suppliers:[^sec-01][^sec-02]
 
+:::{table} Principal suppliers the S-1 and the FY2023 10-K name, by material
+:widths: 16 42 42
+
 | Material | S-1 (filed 2021)[^sec-01] | 10-K for fiscal 2023[^sec-02] |
 |----------|---------------------------|-------------------------------|
 | Silicon wafers | "GlobalWafers Singapore Pte. Ltd."; "SEH America, subsidiary of Shin-Etsu Handotai, Ltd." | "Globalwafers Co. LTD."; "SEH America Inc, subsidiary of Shin-Etsu Handotai, Ltd." |
@@ -559,6 +566,7 @@ suppliers:[^sec-01][^sec-02]
 | Chemicals | "KMG Chemicals, Inc. (chemicals)" (and Air Products, above) | "CMC Chemicals, Inc. (a subsidiary of Entegris) (process and chemical mechanical polishing chemicals)" (and EMD, above) |
 | Photoresist | "The Dow Chemical Company (photoresist)"; "JSR Corporation (photoresist)"; "Tokyo Ohka Kogyo America, Inc. (photoresist)" | "Rohm and Haas EM LLC (a subsidiary of DuPont) (photoresist)"; "JSR Micro Inc. (photoresist)"; "FUJIFILM Electronic Materials USA, Inc. (photoresist)"; "Tokyo Ohka Kogyo America, Inc. (photoresist)" |
 | Developer | "Air Products & Chemicals, Inc., Moses Lake (developer)" | "Moses Lake Industries Inc. (developer)" |
+:::
 
 **Qualification reports and the PDK.** Cypress Semiconductor's
 qualification reports for products made at the same fab give the
@@ -637,6 +645,9 @@ what the record shows for their classes.
   `tools/check_materials.py` checks that each page's list of rows and
   steps matches this index.
 
+:::{table} Each consumable class, its page and the main-table keys it owns
+:widths: 24 22 54
+
 | Consumable class | Page | Rows owned (keys) |
 |------------------|------|-------------------|
 | Substrates and test wafers | {ref}`substrates <material-substrates>` | `si-wafers`, `test-wafers` |
@@ -651,6 +662,7 @@ what the record shows for their classes.
 | Anneal ambients | {ref}`anneal-ambients <material-anneal-ambients>` | `forming-gas` (nitrogen, argon, oxygen and ammonia, also used as anneal ambients, belong to process gases and precursors) |
 | Ultrapure water | {ref}`ultrapure-water <material-ultrapure-water>` | `upw` |
 | Hardware consumables and abatement | {ref}`hardware-consumables <material-hardware-consumables>` | `furnace-ware`, `chamber-parts`, `rtp-parts`, `abatement`, `probe-cards` |
+:::
 
 ```{toctree}
 :maxdepth: 1

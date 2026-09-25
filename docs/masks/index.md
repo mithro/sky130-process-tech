@@ -260,12 +260,16 @@ and contains no polyimide, redistribution or bump steps. The
 process-steps sheet records no plate for any of the four on MPW-1 to
 MPW-8 ({ref}`masks-mpw-runs`).[^steps-sheet]
 
+:::{table} The four masks.csv entries marked used but with no mask step in this reference
+:widths: 16 18 14 18 34
+
 | `masks.csv` entry | Mask-level layer (`gds_layers.csv`) | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
 |-------------------|-------------------------------------|--------------------------------|-----------------------------|----------------|
 | HLow VT PCh Radio\*, HVTRM — `X` | `chvtrm` mask 98:0 | `hvtr` 18:20 | `HVTRMCD` 0.38 / `HVTRMCDSP` 0.38 | Layer descriptions "HLow VT PCh Radio mask" (`chvtrm`) and "High-Vt RF transistor implant" (`hvtr`); the `hvtr` rule set's function line reads "Define low VT adjust implant region for pmedlvtrf". The {ref}`HVTPM <step-022>` page lists the absence of a step as an open question. |
 | DECA PBO, PBO — `X` | none | none | `PBOCD` 10 / `PBOCDSP` 10 | The WLCSP rules' DECA table has a `cpbo` rule set, "1st polyimide (mask)", whose function is "Opens over the pad openings; Allows RDL layer to connect to top metal". |
 | Cu Inductor/Redist., CU1M — `X` | none | none | `CU1MCD` 20 / `CU1MCDSP` 20 | The periphery rules' `rdl` rule set: "Defines the Cu Inductor. Connects to met5 through the pad opening"; the DECA table's `rdl` "connects the top metal from the customer to the bumps". Table F2b has a CU1M column. |
 | Polyimide 2 (2), PMM2 — `X` | none | none | none listed | The DECA table's `cpmm2` rule set, "2nd polyimide", describes a via between the redistribution layer and the under-bump metal. |
+:::
 
 ### Mask steps in this reference without a marked `masks.csv` entry
 
@@ -277,6 +281,9 @@ nevertheless records plates for `RRPM`, `URPM`, `CAPM` and `CAP2M` on
 all eight MPW runs, for `PWBM` on MPW-6 and MPW-8, and for `PWDEM` on
 MPW-6 ({ref}`masks-mpw-runs`).[^steps-sheet]
 
+:::{table} The six mask steps with no marked masks.csv entry
+:widths: 10 18 20 18 34
+
 | Step | `masks.csv` | Drawn layer (`gds_layers.csv`) | Minimum CD, feature / space | Other PDK data |
 |------|-------------|--------------------------------|-----------------------------|----------------|
 | {ref}`PWBM <step-026>` | P-Well Block Mask, PWBM — *blank* | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | The periphery rules have a `pwbm` rule set, "Define p-well block"; Table F2b has a PWBM column, marked `C` in, among others, the UHV 5/20 V drain-extended device rows. The step page treats the blank field as a documentation inconsistency. |
@@ -285,6 +292,7 @@ MPW-6 ({ref}`masks-mpw-runs`).[^steps-sheet]
 | {ref}`RRPM <step-052>` | *not listed* | `rpm` 86:20 *(inference)* | none listed | No separate rule set or Table F2b column. The test tile's pad documentation names the mask: its shortest 0.33 µm- and 0.69 µm-wide 300 Ω/sq poly resistors are marked "(will not work for any routes using RRPM mask)".[^raw-data-testtile-pads] |
 | {ref}`URPM <step-055>` | *not listed* | `urpm` 79:20 *(inference)* | none listed | No separate rule set or Table F2b column. The test tile's pad documentation names the mask: the 2 kΩ/sq equivalents of those resistors are marked "(may not work for routes using URPM mask)".[^raw-data-testtile-pads] |
 | {ref}`CAP2M <step-152>` | *not listed* | `cap2m` 97:44 *(inference)* | none listed | No `cap2m` rule set or Table F2b column; the MiM device page lists "CAP2M over Metal-4" beside "CAPM over Metal-3" and calls the constructions "identical";[^pdk-07] the test tile's pad documentation has "CAP2M over M4".[^raw-data-testtile-pads] |
+:::
 
 The sources for both tables are `masks.csv`,[^pdk-05] `gds_layers.csv`
 and Table F2b,[^pdk-06] the minimum-CD table,[^pdk-03] the periphery
@@ -300,6 +308,9 @@ and the process-steps sheet records no plate for any of them on the MPW
 runs;[^steps-sheet] the unmarked variants of `VIM2`, `MM3` and `PDM`
 are in the main table.
 
+:::{table} The nine unmarked masks.csv entries with no mask step
+:widths: 30 40 30
+
 | `masks.csv` entry | Mask-level and drawn layers (`gds_layers.csv`) | Minimum CD, feature / space |
 |-------------------|------------------------------------------------|-----------------------------|
 | N-Core Implant, NCM — *blank* | `cncm` mask 17:0, drawing 96:44; `ncm` 92:44 | `NCMCD` 0.38 / `NCMCDSP` 0.38 |
@@ -311,6 +322,7 @@ are in the main table.
 | Pad&Polyimide_ExtFab, PDMM[E] — *blank* | none | none listed |
 | Under Bump Metal, UBM — *blank* | none | none listed |
 | Bumps, BUMP — *blank* | none | none listed |
+:::
 
 `NCM` is the only one of the nine with layers in `gds_layers.csv`; its
 rule set's function is "Define Vt adjust implant region for LV NMOS in
@@ -346,6 +358,9 @@ for every run except MPW-4 (below); it adds a fab lot for five runs,
 how confidently it has identified each set, and a project count for
 each shuttle.[^steps-sheet][^mask-renders]
 
+:::{table} The eight MPW runs: the sheet's column heading and the renders site's own reticle-set record
+:widths: 8 24 16 18 12 22
+
 | Run | Sheet column heading (reticle set) | Fab lot (site) | Identification (site) | Projects (site) | Run page (site) |
 |-----|------------------------------------|----------------|-----------------------|-----------------|-----------------|
 | MPW-1 | `7CS8M06AC` | 4120787 | "likely" | 37 | `mpw-001.html` |
@@ -356,6 +371,7 @@ each shuttle.[^steps-sheet][^mask-renders]
 | MPW-6 | `5CS8014AC` | none given | "confirmed" | 85 | `mpw-006.html` |
 | MPW-7 | `5CS8016AC` | none given | "inferred" | 106 | `mpw-007.html` |
 | MPW-8 | `5CS8017AC` | none given | "inferred" | 144 | `mpw-008.html` |
+:::
 
 * **MPW-4 has two sets.** The sheet heads its MPW-4 column `5CS8018AC`,
   and every MPW-4 plate ID in it has the prefix
@@ -397,6 +413,9 @@ dies of each run carry shapes on the layers the renders site uses for
 the mask; the MPW-4 figures are for its original set
 ({ref}`masks-mpw-reticle-sets`).
 
+:::{table} The 36 mask steps: plates recorded on the eight MPW runs and dies with shapes on the renders site
+:widths: 10 20 16 12 42
+
 | Step | `masks.csv` (`Used in SKY130`) | Plates recorded | Plate no. | Dies with shapes, MPW-1 to MPW-8 (renders) |
 |------|--------------------------------|-----------------|-----------|----------|
 | {ref}`FOM <step-004>` | `X` | all eight | `020` | 40 on every run |
@@ -435,6 +454,10 @@ the mask; the MPW-4 figures are for its original set
 | {ref}`MM5 <step-162>` | `X` | all eight | `590` | 40 on every run |
 | {ref}`NSM <step-165>` | `X` | all eight | `007`; MPW-6: `616` | 39, 40, 40, 40, 40, 40, 40, 40 |
 | {ref}`PDM <step-168>` | Pad (scribe protect) `X`; Pad (scribe unprotect) *blank* | scribe protect: all except MPW-5; scribe unprotect: not recorded | `600` | 40 on every run |
+:::
+
+:::{table} The same, for masks.csv entries with no mask step in this reference
+:widths: 26 20 16 12 26
 
 | Entry with no mask step in this reference | `masks.csv` (`Used in SKY130`) | Plates recorded | Plate no. | Dies with shapes, MPW-1 to MPW-8 (renders) |
 |-------------------------------------------|--------------------------------|-----------------|-----------|----------|
@@ -444,6 +467,7 @@ the mask; the MPW-4 figures are for its original set
 | PBO, CU1M, PMM2 | `X` | not recorded | — | not rendered |
 | NCM, VIPDM, INDM | *blank* | not recorded | — | 40 on every run (`VIPDM`, `INDM`: other masks' layers; `NCM`: `ncm` plus the `HVTPM` expression) |
 | OFM, PMM, PMM[E], PDMM[E], UBM, BUMP | *blank* | not recorded | — | not rendered |
+:::
 
 The source of both tables is the "Run Mask IDs" tab,[^steps-sheet] with
 the `masks.csv` fields from the PDK[^pdk-05] and the die counts from the
@@ -621,6 +645,9 @@ expressions (below). The layer names are those of
 not in that file, and the {ref}`overview-sky130b-reram` page reads
 201:20 as `r1c`.
 
+:::{table} The 11 masks where the renders site's own Boolean expression can be compared with this page's pairing
+:widths: 12 24 32 32
+
 | Mask | This page's pairing (from the PDK files) | Renders site (`expr` verbatim, or layers rendered) | In layer names |
 |------|------------------------------------------|----------------------------------------------------|----------------|
 | {ref}`LVTNM <step-014>` | `lvtn` 125:44 | `125:44 OR (64:20 AND (78:44 OR 81:2))` | `lvtn` OR (`nwell` AND (`hvtp` OR `areaid.ce`)) |
@@ -633,6 +660,7 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
 | {ref}`PWBM <step-026>` | `pwbm` 19:44 with `nwell` 64:20 *(inference)* | layer 19:44 | `pwbm` |
 | {ref}`RPM <step-049>` | `rpm` 86:20; `urpm` 79:20 *(inference)* | layer 86:20 | `rpm` |
 | {ref}`MM4 <step-154>` | `met4` 71:20; `met4` fuse 71:17 | layers 71:20 and 51:28 | `met4` and the fill layer 51:28; no fuse purpose |
+:::
 
 * **Where the readings differ.** For `HVTPM` this page follows the
   PDK's description of `hvtp`, "High-Vt LVPMOS implant";[^pdk-06] the
