@@ -10,14 +10,12 @@ starts from a bare, chemically defined surface.
 | What it does | takes off the photoresist and cleans the wafer for the next step |
 | Steps in SKY130 | 15 |
 | Tool classes | {ref}`Ashers <machine-downstream-plasma-asher>`, {ref}`Wet benches <machine-wet-bench>` |
-| Consumable classes | {ref}`Wet chemicals <material-wet-chemicals>` |
+| Consumable classes | {ref}`Process gases <material-process-gases>`, {ref}`Wet chemicals <material-wet-chemicals>`, {ref}`Ultrapure water <material-ultrapure-water>`, {ref}`Hardware consumables <material-hardware-consumables>` |
 | Governing relation | — |
 
 ## What this class of step does
 
-A strip step takes off the photoresist once it has done its job as an
-implant or etch mask, and then cleans the wafer so that the next step
-starts from a bare, chemically defined surface. Resist is an organic
+Resist is an organic
 polymer; it is burnt off in an oxygen plasma ({term}`ash`) and the
 inorganic residue and any remaining organic film are dissolved in hot
 acid–peroxide baths. A few "strip" steps in the flow remove not resist
@@ -152,7 +150,7 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   (a "production-proven downstream plasma photoresist ashing system" for
   75–200 mm wafers)[^gasonics-l3510] and the GaSonics Aura series.
 
-  Mattson Aspen (ICP-based strip); Axcelis/Fusion ES and RadiantStrip;
+  Other ashers include Mattson Aspen (ICP-based strip); Axcelis/Fusion ES and RadiantStrip;
   single-wafer RF ashers integrated onto etch platforms (Applied
   Materials ASP and Lam). University clean-room guides describe the
   class.[^snf-strip]
@@ -178,15 +176,15 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
   metals).
 * **{ref}`Solvents <material-wet-chemicals>`**: NMP, DMSO, hydroxylamine-based strippers, isopropanol
   for drying.
-* **Water**: ultrapure de-ionised water at 18 MΩ·cm with sub-ppb
+* **{ref}`Water <material-ultrapure-water>`**: ultrapure de-ionised water at 18 MΩ·cm with sub-ppb
   TOC,[^reinhardt-2010] in very large volumes (thousands of litres per
   wafer pass through a wet bench).
-* **Hardware**: quartz and PFA tanks, PTFE/PFA cassettes and carriers,
+* **{ref}`Hardware <material-hardware-consumables>`**: quartz and PFA tanks, PTFE/PFA cassettes and carriers,
   filters, megasonic transducers, and asher quartz tubes and windows.
 
 ## Steps in this category
 
-:::{table} The fifteen strip steps of the flow
+:::{table} The fifteen strip steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
