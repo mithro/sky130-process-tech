@@ -10,18 +10,36 @@
 | **Previous step** | {ref}`LVOM <step-044>` |
 | **Next step** | {ref}`GOXETCH <step-046>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants the p-type dose that sets the 1.8 V NMOS
+  threshold, through the LVOM window.
+* **Why:** the well and retrograde profile only set a background; a
+  dedicated surface implant is what puts the threshold where the PDK's
+  models say it is.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** species, energy, dose and tilt (→ Open questions).
+:::
+
 ## What this step is
 
 `NCHI` is a channel implant made through the windows that
 {ref}`LVOM <step-044>` opened over the low-voltage (1.8 V) regions,
 before the thick oxide is stripped from them at
-{ref}`GOXETCH <step-046>`. This reference describes it as the baseline
-threshold-setting implant of the 1.8 V NMOS (inference from its
+{ref}`GOXETCH <step-046>`.
+
+This reference describes it as the baseline
+threshold-setting implant of the 1.8 V NMOS: the p-type
+dose in the top of the channel that gives `nfet_01v8` its threshold.
+This is an inference from its
 place in the sequence this reference describes — under the low-voltage
 oxide mask, after the well and
 channel module was annealed at {ref}`RTAI <step-034>` — and from the
-PDK's device description below): the p-type
-dose in the top of the channel that gives `nfet_01v8` its threshold.
+PDK's device description below.
+
 The earlier pages of this reference treat it that way: the low-Vt
 device `nfet_01v8_lvt` is made by the separate {ref}`LVTNI <step-015>`
 implant, and the PDK says its cross-section "is identical to the std
@@ -38,10 +56,13 @@ Before, the LVOM window over the 1.8 V area; after, a beam into the window and t
 The implant passes through the thick gate oxide grown at
 {ref}`GOX100 <step-043>` — thinner than the PDK's 110 Å finished
 thick-oxide figure[^pdk-hv] by an amount that is not public — and through
-the resist windows; the 5 V and high-voltage regions are covered. That
-the oxide it goes through is about to be etched away is not incidental:
-a Cypress patent that may still be in force says what an implant does to
-an oxide that is then stripped (collapsed note below), and an implant
+the resist windows; the 5 V and high-voltage regions are covered.
+
+That
+the oxide it goes through is about to be etched away is not incidental.
+A Cypress patent that may still be in force says what an implant does to
+an oxide that is then stripped (collapsed note below).
+An implant
 placed *before* the oxide strip leaves the damaged oxide to be discarded
 rather than kept as a gate dielectric.
 
@@ -52,7 +73,7 @@ implant in its flow; the energies and doses are in the same note.
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 Cypress notes that implanted oxide is degraded and loses more in every
 strip.[^pat-03] The Cypress embedded-SONOS patent describes the
-equivalent implant in its flow: "BF₂ can be implanted at an energy of
+equivalent implant in its flow. It states, "BF₂ can be implanted at an energy of
 from about 10 to about 100 kilo-electron volts (keV), and a dose of from
 about 1e12 cm⁻² to about 1e14 cm⁻² to form an N-type MOS (NMOS)
 transistor".[^pat-04]
@@ -61,15 +82,20 @@ transistor".[^pat-04]
 ## Step category
 
 `NCHI` is an {ref}`Ion implantation <category-implant>` step of the
-*{term}`threshold-adjust <threshold-adjust implant>` channel implant* class — low energy, medium current,
-of order 10¹²–10¹³ cm⁻² (industry-typical)[^txt-01] — and, in the
-order this reference describes, the last of the channel implants:
-{ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`,
-{ref}`PNCHI <step-024>`, {ref}`PTSI <step-037>` and
-{ref}`DEPI <step-038>` all precede it, and the gate is deposited at
-{ref}`SAGD <step-048>`. It is the N-channel counterpart of
-{ref}`LVTPI <step-020>`, which the 1.8 V PMOS received through the
-N-well window.
+*{term}`threshold-adjust <threshold-adjust implant>` channel implant* class, low energy, medium current,
+of order 10¹²–10¹³ cm⁻² (industry-typical).[^txt-01]
+
+**Specific to this step:**
+
+* In the
+  order this reference describes, it is the last of the channel implants:
+  {ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`,
+  {ref}`PNCHI <step-024>`, {ref}`PTSI <step-037>` and
+  {ref}`DEPI <step-038>` all precede it, and the gate is deposited at
+  {ref}`SAGD <step-048>`.
+* It is the N-channel counterpart of
+  {ref}`LVTPI <step-020>`, which the 1.8 V PMOS received through the
+  N-well window.
 
 ## Why this step exists
 
@@ -90,7 +116,9 @@ consequences worth stating:
 
 * **{term}`Thermal budget <thermal budget>`.** The implant sees only the {ref}`LVGOX <step-047>`
   oxidation and the later RTAs before the gate goes on, so the surface
-  profile stays shallow — the same logic Cypress applies to its memory
+  profile stays shallow.
+
+  This is the same logic Cypress applies to its memory
   channel, keeping "surface dopant concentrations low" by limiting
   thermal budget after the critical steps.[^cyp-25] The
   short-channel behaviour of a 130 nm-era NMOS depends on a steep,
@@ -108,25 +136,31 @@ deliberately blocked.[^pdk-07]
 
 ## How it is typically performed
 
-An industry-generic NMOS threshold implant for a 200 mm, 130 nm-era
-fab (SKY130's values are not public):
+*An industry-generic NMOS threshold implant for a 200 mm, 130 nm-era
+fab (SKY130's values are not public):*
 
 * **Species.** Boron, as ¹¹B⁺ or BF₂⁺; BF₂⁺ gives a shallower profile
   for the same accelerator voltage because the molecule shares its
   energy, and the fluorine it carries affects boron diffusion during
-  the later {term}`RTA`.[^wang-1997] The species and conditions Cypress's
-  flow uses are in the collapsed note above; an AMD
+  the later {term}`RTA`.[^wang-1997]
+
+  The species and conditions Cypress's
+  flow uses are in the collapsed note above. An AMD
   patent of the era gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
   ions/cm² […]" for a laterally doped channel implant made after gate
-  formation with the gate pillars as a self-aligned mask, a different
+  formation with the gate pillars as a self-aligned mask. That is a
+  different
   placement from this pre-gate implant.[^pat-vt-amd]
 * **Energy.** Tens of keV for BF₂ (the Cypress range is in the collapsed
   note above), set so that the peak lies just under the eventual
-  gate oxide after allowing for the {term}`screen oxide` — thinner
+  gate oxide after allowing for the {term}`screen oxide`.
+
+  The screen oxide is
+  thinner
   than the PDK's 110 Å finished thick-oxide figure[^pdk-hv] by an
-  amount that is not public (see {ref}`GOX100 <step-043>`) — the
-  ions must cross — the screen also randomises the beam and reduces
+  amount that is not public (see {ref}`GOX100 <step-043>`); the
+  ions must cross it. The screen also randomises the beam and reduces
   {term}`channelling`.[^txt-02]
 * **Dose.** Of order 10¹²–10¹³ cm⁻²: the Cypress range is in the
   collapsed note above, and 1.0–2.5 × 10¹³ cm⁻² is the AMD laterally
@@ -144,12 +178,14 @@ fab (SKY130's values are not public):
   ({ref}`category-implant`).
 * **Monitoring.** Thermal-wave measurement on product;[^smith-1985]
   the {term}`e-test` threshold of `nfet_01v8` is the ultimate monitor.
+
   In the published test-tile measurements that threshold is 0.534 V at
-  7/8 µm and 0.707 V at 7/0.15 µm (mean of the module 8008 and 8392
-  sweeps at each geometry; maximum-transconductance
-  extrapolation at V_DS = 0.1 V, less half the drain bias; our
-  extraction from the published measurements), inside the PDK's e-test
+  7/8 µm and 0.707 V at 7/0.15 µm, inside the PDK's e-test
   limits of 0.515–0.567 V and 0.661–0.739 V.[^raw-data-lv-mosfets][^pdk-07]
+  (This is the mean of the module 8008 and 8392
+  sweeps at each geometry, by maximum-transconductance
+  extrapolation at V_DS = 0.1 V, less half the drain bias; our
+  extraction from the published measurements.)
 
 ## Machines typically used
 
@@ -160,15 +196,19 @@ fab (SKY130's values are not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter** — "B11, BF2, As, ESC
-  chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01] Boron and
-  BF₂ at 10¹¹–10¹⁴ cm⁻² is exactly this implant's envelope. Strength:
-  **strong** for the tool; **inference** for its assignment to
-  `NCHI`.
-* **Axcelis GSD implanters** — both GSD entries, "High current/energy"
-  and "Hi dose", list "B11, BF2, P, As"[^skw-01] — as the alternative;
-  which entry would serve is not stated. Strength: strong for existence;
-  weak for assignment.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "B11, BF2, As, ESC
+    chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* **strong** — boron and
+    BF₂ at 10¹¹–10¹⁴ cm⁻² is exactly this implant's envelope.
+  - *Runs this step:* **inference**, for its assignment to
+    `NCHI`.
+* **Axcelis GSD implanters**
+  - *SkyWater says:* both GSD entries, "High current/energy"
+    and "Hi dose", list "B11, BF2, P, As".[^skw-01]
+  - *Tool exists:* strong for existence — as the alternative; which
+    entry would serve is not stated.
+  - *Runs this step:* weak.
 
 ## Resources required
 
@@ -182,14 +222,14 @@ fab (SKY130's values are not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`LVOM <step-044>` (the window); next:
-  {ref}`GOXETCH <step-046>` (the screen oxide is stripped),
+* Previous: {ref}`LVOM <step-044>` (the window).
+* Next: {ref}`GOXETCH <step-046>` (the screen oxide is stripped),
   {ref}`LVGOX <step-047>`.
-* Companion channel implants: {ref}`LVTNI <step-015>` (low-Vt NMOS),
-  {ref}`LVTPI <step-020>` (1.8 V PMOS), {ref}`PCHI <step-023>` /
-  {ref}`PNCHI <step-024>` (high-Vt PMOS), {ref}`PTSI <step-037>` /
-  {ref}`DEPI <step-038>` ({term}`SONOS`).
-* Wells: {ref}`PWI <step-027>`; anneal of the well module:
+* Same category: companion channel implants, {ref}`LVTNI <step-015>`
+  (low-Vt NMOS), {ref}`LVTPI <step-020>` (1.8 V PMOS),
+  {ref}`PCHI <step-023>` / {ref}`PNCHI <step-024>` (high-Vt PMOS),
+  {ref}`PTSI <step-037>` / {ref}`DEPI <step-038>` ({term}`SONOS`).
+* Depends on: wells, {ref}`PWI <step-027>`; anneal of the well module,
   {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
@@ -267,17 +307,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* That `NCHI` is the baseline 1.8 V NMOS threshold implant is an
-  inference from its place in the sequence this reference describes
-  and from the PDK's VT-adjust
+* **Whether it is the baseline implant.** That `NCHI` is the baseline
+  1.8 V NMOS threshold implant is an inference from its place in the
+  sequence this reference describes and from the PDK's VT-adjust
   description;[^pdk-07] no public source describes it directly.
-* Species (B or BF₂), energy, dose and tilt are not public.
-* Whether the low-voltage oxide window through which it is implanted
-  excludes the 1.8 V PMOS regions, or whether those regions receive
-  the dose, is not public.
-* The label "N-channel implant" used in this reference does not say
-  which N-channel implant this is; the reading on this page is an
-  inference from its place in the sequence this reference describes.
+* **Species, energy, dose, tilt.** Species (B or BF₂), energy, dose
+  and tilt are not public.
+* **PMOS exposure.** Whether the low-voltage oxide window through
+  which it is implanted excludes the 1.8 V PMOS regions, or whether
+  those regions receive the dose, is not public.
+* **Which N-channel implant.** The label "N-channel implant" used in
+  this reference does not say which N-channel implant this is; the
+  reading on this page is an inference from its place in the sequence
+  this reference describes.
 
 <!-- footnotes -->
 

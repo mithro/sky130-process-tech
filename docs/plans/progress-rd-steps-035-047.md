@@ -58,6 +58,45 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 045-nchi.md — done (2 hand-written in-force notes in the body plus their copies
+under References; content untouched — outside the 037–044 sweep range but still citing
+in-force Cypress patents `pat-03`/`pat-04`, so `check_inforce.py` is run after every edit
+here too)
+
+Rules applied: R-PARA/R-SENTENCE throughout (the lead split into 3 paragraphs at its
+definition/inference/comparison seams; the oxide-passage paragraph split in two, moving
+its hedge to a following sentence rather than a mid-sentence colon; R-CATEGORY on "Step
+category" — the em-dash-plus-parenthetical classification sentence reduced to one
+parenthetical, then `**Specific to this step:**` and 2 bullets; the Thermal-budget bullet
+split; all three flagged "How it is typically performed" items (Species, Energy,
+Monitoring) restructured into lead + indented continuation, the Monitoring item's long
+"(mean of the module 8008 and 8392 sweeps…)" hedge moved to its own trailing
+parenthetical sentence per the ≥12-word rule), R-SENTENCE **inside one `{dropdown}`
+note** (lead-in added before an indivisible single-quotation patent sentence), R-HEDGE
+step 1, R-TOOLS (2 "Strength:" bullets → SkyWater-says/Tool-exists/Runs-this-step form;
+no recap table), R-RELATED (`Previous:`, `Next:`, `Same category:`, `Depends on:`,
+`Category page:`), R-OPENQ (bold labels on all four bullets), R-GLANCE (box inserted
+last; checked against `check_inforce.py` — clean; "Public numbers" is "none published for
+SKY130" since the page's only SKY130-specific numbers are the e-test threshold
+measurements, already the subject of an Open-questions-adjacent inference rather than a
+clean "public number").
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 3 → 1 (figure caption, off
+limits); list items > 60 words 4 → 0; sentences > 45 words 8 → 0; table cells > 25 words
+0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order --allow-regrouped --allow-dropdown-edits
+docs/steps/045-nchi.md`: the only failure is `LOST number_order (not a clean regroup)`
+for the Monitoring item's threshold/geometry tuple, split into two `ADDED` tuples by the
+hedge-sentence move above — hand-verified: all eleven digits (0.534, 7, 8, 0.707, 7,
+0.15, 8008, 8392, 0.1, 0.515–0.567, 0.661–0.739) are present on the page, unchanged, just
+divided between the main sentence and its now-separate hedge sentence, the same "Guide
+problem 11" pattern documented in batch 2. `quotes` and `hedges` (undeclared) show no
+LOST; plain `numbers` shows no LOST. All other checkers, `check_inforce.py` included,
+pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom.
+
+
 ### 044-lvom.md — done (1 hand-written in-force note in the body plus its copy under
 References; content untouched — the last page in the 037–044 in-force-sweep range)
 
