@@ -828,3 +828,95 @@ claims:
   - {id: GP29778448, origin: patent-office}
   - {id: GP35405131, origin: patent-office}
   - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+
+# ---- docs/history/s8-lineage.md ---------------------------------------------
+- id: s8-013-sonos
+  page: docs/history/s8-lineage.md
+  anchor: 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile memory
+  grade: corroborated
+  footnotes: [ew-2007-s8, eet-2007-fablite]
+  sources:
+  - {id: cyx-ew-2007-s8-nvsram, origin: ew}
+  - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
+- id: s8-qualified-2008
+  page: docs/history/s8-lineage.md
+  anchor: To qualify S8 SONOS technology and
+  grade: single-source
+  footnotes: [qtp-113005]
+  sources:
+  - {id: qtp-113005, origin: cypress}
+- id: s8-psoc-process
+  page: docs/history/s8-lineage.md
+  anchor: our 0.13-micron, nonvolatile PSoC wafer
+  grade: corroborated
+  footnotes: [ar-fy2010, psoc-history]
+  sources:
+  - {id: cyhist-corp-2010-ar-s8, origin: cypress}
+  - {id: cyx-infineon-psoc-history, origin: infineon}
+- id: s8-c8-family
+  page: docs/history/s8-lineage.md
+  anchor: S8's first metal layer is the same as C8's, film for film
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [pin-152804, qtp-043004, qtp-053301, qtp-113005]
+  sources:
+  - {id: cyx-pin152804-fab4-families, origin: cypress}
+  - {id: qtp-043004, origin: cypress}
+  - {id: qtp-053301, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+- id: s8-sonos-from-s4
+  page: docs/history/s8-lineage.md
+  anchor: had been in production
+  grade: attributed
+  attribution: Cypress's earlier SONOS process
+  footnotes: [eflash-brief, qtp-021507, chipest-2008]
+  sources:
+  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+  - {id: qtp-021507, origin: cypress}
+- id: s8-110a-lineage
+  page: docs/history/s8-lineage.md
+  anchor: The 110 Å oxide is the
+  grade: corroborated
+  footnotes: [qtp-113005, qtp-021507, qtp-102101, qtp-030206, qtp-043004, pdk-hv]
+  sources:
+  - {id: qtp-113005, origin: cypress}
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-102101, origin: cypress}
+  - {id: qtp-030206, origin: cypress}
+  - {id: qtp-043004, origin: cypress}
+  - {id: cyx-pdk-hv, origin: skywater}
+- id: s8-side-by-side
+  page: docs/history/s8-lineage.md
+  anchor: The values are as the reports and the PDK print them.
+  grade: corroborated
+  footnotes: [qtp-021507, qtp-043004, qtp-113005, pdk-hv, pdk-metal-stack]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-043004, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+  - {id: cyx-pdk-hv, origin: skywater}
+  - {id: cyx-pdk-metal-stack, origin: skywater}
+- id: s8-m1-036
+  page: docs/history/s8-lineage.md
+  anchor: S8's first metal adds up to 0.36 µm (our arithmetic)
+  grade: corroborated
+  footnotes: [qtp-113005, pdk-metal-stack, qtp-063807, qtp-061806]
+  sources:
+  - {id: qtp-113005, origin: cypress}
+  - {id: cyx-pdk-metal-stack, origin: skywater}
+  - {id: qtp-063807, origin: cypress}
+  - {id: qtp-061806, origin: cypress}
+- id: s8-name-conflict
+  page: docs/history/s8-lineage.md
+  anchor: SkyWater's statement and this reading
+  grade: conflict
+  hedge: SkyWater's statement and this reading disagree
+  footnotes: [pdk-previous, qtp-021507, ar-fy2006, ar-fy1995, ar-fy1998, ar-fy2002, pin-152804]
+  sources:
+  - {id: cyx-pdk-previous, origin: skywater}
+  - {id: qtp-021507, origin: cypress}
+  - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
+  - {id: cyx-ar-fy1995-ram3, origin: cypress}
+  - {id: cyx-ar-fy1998-ram5, origin: cypress}
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+  - {id: cyx-pin152804-fab4-families, origin: cypress}

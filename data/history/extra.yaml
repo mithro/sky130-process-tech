@@ -511,3 +511,62 @@ records:
   - {subject: SONOS eFlash, attribute: in production since, value: '2001', date: null}
   - {subject: SONOS eFlash, attribute: extra masks, value: five, date: null}
   notes: The brief is undated; it lists 65 nm, 55 nm and 40 nm products, so it post-dates S8.
+- id: cyx-pdk-previous
+  source:
+    publisher: SkyWater PDK Authors
+    title: Previous Nomenclature, SkyWater SKY130 PDK documentation
+    date: null
+    form: web page
+  url: https://skywater-pdk.readthedocs.io/en/main/previous.html
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/pdk-previous.txt
+  quotes:
+  - text: >-
+      The old Cypress and SkyWater name for the SKY130 process. It stood for the “8th generation” of
+      the SONOS technology developed originally by Cypress.
+    location: entry "s8"
+  claims:
+  - {subject: s8, attribute: meaning, value: 8th generation of the SONOS technology, date: null}
+  notes: >-
+    SkyWater's statement. The Cypress sources in this evidence show only one SONOS process before S8
+    (S4AD-5, 0.35 µm), and use the digit for the process generation of every family (RAM3, RAM5,
+    RAM8, C8, C9), so "8th generation of SONOS" is not supported by them.
+- id: cyx-pdk-hv
+  source:
+    publisher: SkyWater PDK Authors
+    title: High Voltage Methodology, SkyWater SKY130 PDK documentation
+    date: null
+    form: web page
+  url: https://skywater-pdk.readthedocs.io/en/main/rules/hv.html
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/pdk-hv.txt
+  quotes:
+  - text: >-
+      All high voltage devices use 110A gate oxide thickness just like low voltage (0 to Vcc) devices.
+    location: introduction
+  claims:
+  - {subject: SKY130 HV devices, attribute: gate oxide, value: 110 Å, date: null}
+  notes: null
+- id: cyx-pdk-metal-stack
+  source:
+    publisher: SkyWater PDK Authors
+    title: metal_stack.svg (process stack diagram), google/skywater-pdk repository
+    date: null
+    form: diagram
+  url: https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/pdk-metal-stack.txt
+  quotes:
+  - text: 0.36 µm
+    location: label on metal1 and metal2
+  - text: 0.845 µm
+    location: label on metal3 and metal4
+  claims:
+  - {subject: SKY130 met1 and met2, attribute: thickness, value: 0.36 µm, date: null}
+  notes: >-
+    The cached text is the diagram's text labels in document order; the thickness labels are not
+    tied to their layers in the text, so which label belongs to which layer rests on the drawing
+    (as read on the SKY130 overview, footnote pdk-04).
