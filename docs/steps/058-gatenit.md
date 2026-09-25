@@ -26,7 +26,7 @@ rules.
 :width: 560px
 :name: fig-poly-058-gatenit
 
-Before, the doped gate film; after, the blanket nitride cap on top of it. Its thickness and whether it is deposited by LPCVD or PECVD are not public, so it is drawn at an arbitrary thickness. That it stays on the gates until contacts are cut, and is opened only under them, is the page's inference from the PDK's nitride-cut rules[^pdk-periph] and its "poly cap after SPE" of 0.2 µm, read as the whole cap stack.[^pdk-03] The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+Before, the doped gate film; after, the blanket nitride cap on top of it. Its thickness and whether it is deposited by LPCVD or PECVD are not public, so it is drawn at an arbitrary thickness. That it stays on the gates until contacts are cut, and is opened only under them, is the page's inference from the PDK's nitride-cut rules[^pdk-periph] and its "poly cap after SPE" of 0.2 µm, read as the whole cap stack.[^pdk-03] The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
 :::
 
 

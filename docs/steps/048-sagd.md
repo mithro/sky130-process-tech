@@ -31,7 +31,7 @@ steps that follow, which is why the PDK calls the layer simply "poly".
 :width: 560px
 :name: fig-poly-048-sagd
 
-Before, the wafer as this series takes it from the gate-oxide module: a thin gate oxide on both active areas (the slice is read as two low-voltage transistors, so the thick oxide of GOX100 and the ONO islands of the memory cells lie outside it) and the field oxide standing a little above them. After, the blanket gate film over the whole slice; it is drawn as one layer, which the page infers (the PDK's stack drawing shows a single poly layer[^pdk-04]), and its thickness is the PDK's 0.18 µm,[^pdk-03] drawn far thicker than it is. That the film is undoped and amorphous as deposited is the page's inference from SkyWater's capability list.[^skw-01] The liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+Before, the wafer as this series takes it from the gate-oxide module: a thin gate oxide on both active areas (the slice is read as two low-voltage transistors, so the thick oxide of GOX100 and the ONO islands of the memory cells lie outside it) and the field oxide standing a little above them. After, the blanket gate film over the whole slice; it is drawn as one layer, which the page infers (the PDK's stack drawing shows a single poly layer[^pdk-04]), and its thickness is the PDK's 0.18 µm,[^pdk-03] drawn far thicker than it is. That the film is undoped and amorphous as deposited is the page's inference from SkyWater's capability list.[^skw-01] In the lower panel the field oxide (the oxide-filled trench in the middle) is drawn but not labelled. The liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
 :::
 
 

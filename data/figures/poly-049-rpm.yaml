@@ -14,7 +14,7 @@ caption: >-
   implant cannot reach it, is the page's inference from the PDK's p-type resistors and n-type
   gate poly.[^pdk-07] The island is drawn wider than the body because `rpm` must enclose the
   resistor (rpm.3).[^pdk-periph] Whether this reticle also covers the 2000 Ω/sq bodies[^pdk-07] is not
-  public; none lies in this slice. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel
+  public; none lies in this slice. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel
   implants made earlier are not drawn. Not to scale.
 arrow:
   title: "RPM, step 049"

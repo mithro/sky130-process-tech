@@ -12,7 +12,7 @@ caption: >-
   the front, drawn here, is kept away from the chemistry. The back of the wafer is not part of
   any cross-section on this site, so the drawing is the same as before the step. Which films
   the back carries depends on whether the caps were deposited in a furnace, which is not public.
-  The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and
+  The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and
   channel implants made earlier are not drawn. Not to scale.
 panels:
   - state_after: "060"

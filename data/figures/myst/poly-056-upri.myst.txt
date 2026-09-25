@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-poly-056-upri
 
-At UPRI a light p-type dose goes through the URPM windows into the bodies of the 2000 Ω/sq resistors.[^pdk-07] None lies in this slice, which carries a 300 Ω/sq resistor,[^pdk-07] so here the resist stops the whole beam and nothing changes. Species, energy, dose and tilt are not public; the arrows are drawn vertical. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+At UPRI a light p-type dose goes through the URPM windows into the bodies of the 2000 Ω/sq resistors.[^pdk-07] None lies in this slice, which carries a 300 Ω/sq resistor,[^pdk-07] so here the resist stops the whole beam and nothing changes. Species, energy, dose and tilt are not public; the arrows are drawn vertical. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
 :::

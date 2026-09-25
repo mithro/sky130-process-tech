@@ -14,7 +14,7 @@ caption: >-
   gate film. The doping is not drawn, because its depth in the film is not public, so the
   drawing is the same as before the step. Species, energy, dose and tilt are not public, and
   whether the resistor doping is one implant or several is not stated; the arrows are drawn
-  vertical. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the
+  vertical. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the
   wells and channel implants made earlier are not drawn. Not to scale.
 panels:
   - state_after: "053"

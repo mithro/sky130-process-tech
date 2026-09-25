@@ -60,9 +60,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-poly" data-layer="poly" points="9.00,310.00 71.50,310.00 72.00,303.00 220.00,303.00 220.50,310.00 283.00,310.00 283.00,330.00 200.50,330.00 200.00,323.00 92.00,323.00 91.50,330.00 9.00,330.00"/>
 <polyline class="hl" points="12.00,307.00 71.50,307.00 72.00,300.00 220.00,300.00 220.50,307.00 280.00,307.00"/>
 </g>
-<path class="dim" d="M52.0 304.0V336.0"/>
-<path class="dimhead" d="M52.0 308.8l-2.5 -7h5.0z"/>
-<path class="dimhead" d="M52.0 330.0l-2.5 7h5.0z"/>
+<path class="dim" d="M34.0 304.0V336.0"/>
+<path class="dimhead" d="M34.0 308.8l-2.5 -7h5.0z"/>
+<path class="dimhead" d="M34.0 330.0l-2.5 7h5.0z"/>
 <text x="328.0" y="438.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 399.0H285.0V434.0H324.0"/>
 <circle class="dot" data-owner="sub" cx="276.0" cy="399.0" r="1.9"/>
@@ -77,8 +77,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="390.9" class="t-label-note tag" data-owner="poly">inferred</text>
 <path class="leader" data-owner="poly" d="M276.0 313.5H297.0V306.0H324.0"/>
 <circle class="dot" data-owner="poly" cx="276.0" cy="313.5" r="1.9"/>
-<text x="73.0" y="269.9" class="t-label-title" data-owner="dim0">Gate film thickness</text>
-<text x="73.0" y="285.9" class="t-label-note muted" data-owner="dim0">0.18 µm in the PDK</text>
-<path class="leader" data-owner="dim0" d="M52.0 320.0H64.0V265.0H69.0"/>
+<text x="55.0" y="269.9" class="t-label-title" data-owner="dim0">Gate film thickness</text>
+<text x="55.0" y="285.9" class="t-label-note muted" data-owner="dim0">0.18 µm in the PDK</text>
+<path class="leader" data-owner="dim0" d="M34.0 320.0H46.0V265.0H51.0"/>
 <text x="12.0" y="475.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>
