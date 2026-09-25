@@ -143,7 +143,7 @@ deposited films".[^waterman-1990]
 and mounts the target in the chamber: "The bond between sputtering
 target and its supporting backing plate is a critical reliability
 element in a sputter deposition system".[^astm-f1512] ASTM's practice
-for inspecting the joint gives the bond three requirements:[^astm-f1512]
+for inspecting the joint explains:[^astm-f1512]
 
 * **High thermal conductivity** — "A bond must have high thermal
   conductivity to provide adequate target cooling during sputtering".
@@ -207,13 +207,13 @@ lists one PVD tool and its films:[^skw-01]
 
 and its metal etchers as "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300
 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01] Read term by term, the PVD entry
-names these target films; these are our readings of film names, and the
-page names no target.
+implies targets of the materials below. These are our readings of film
+names; the page names no target.
 
 :::{table} The "AMAT PVD Metal" entry, read term by term[^skw-01]
 :widths: 30 46 24
 
-| Entry as listed | What it names | Status |
+| Entry as listed | What it implies | Status |
 |---|---|---|
 | "Aluminum both pure and Cu doped" | aluminium with and without copper | our reading |
 | "TiW" | titanium–tungsten | our reading |

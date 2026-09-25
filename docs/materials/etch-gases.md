@@ -23,7 +23,7 @@ its fab and which SKY130 steps name them. The etch mechanisms are on the
 | What they do | Supply halogen atoms and ions that form volatile products with the film; ion bombardment enhances the gas–surface reaction, the effect Coburn and Winters describe.[^coburn-1979] |
 | Gases in the SKY130 steps | CF₄, CHF₃, C₂F₆, C₄F₈, CH₃F, CH₂F₂, CO, CH₄, SF₆, NF₃, HBr, Cl₂, BCl₃ (step-page readings). |
 | Grades | SEMI C3.40 (carbon tetrafluoride) and C3.24 (sulphur hexafluoride).[^semi-c3-40][^semi-c3-24] |
-| Climate | Long-lived, high-GWP fluorinated gases; see *Greenhouse gases*. |
+| Climate | Lifetimes and warming potentials are long and large; see *Greenhouse gases*. |
 | Hazards | NIOSH IDLH "10 ppm" for chlorine, "30 ppm" for hydrogen bromide and "1000 ppm" for nitrogen trifluoride.[^niosh-cl2][^niosh-hbr][^niosh-nf3] |
 | SkyWater evidence | "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2"; "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2"; "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"; CF4 on two ashers;[^skw-01] fluorinated-gas emissions reported to the EPA for the Bloomington fab[^epa-ghgrp-skywater] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps that use this class <material-etch-gases-steps>` |
@@ -37,7 +37,7 @@ radiation enhances such gas–surface reactions, examining "the reactions of
 Si, SiO2, and Si3N4 with XeF2, F2, and Cl2";[^coburn-1979] their later
 review covers the surface science of etching.[^winters-1992]
 
-Different halogens give different volatile products:
+Each element of the feed gas does its own work:
 
 * **Fluorine** — gives volatile SiF₄ from silicon, oxide and nitride,
   and WF₆ from tungsten.
@@ -324,11 +324,10 @@ safety data and regulatory context.
   "23,500 times greater" than CO₂'s, citing AR5, beside the AR4 figure of
   23,900.[^wiki-sf6]
 
-  Put another way: CF₄ "persists in the atmosphere
-  for 50,000 years";[^wiki-cf4] NF₃ has "a global warming potential
-  (GWP) 17,200 times greater than that of CO2" (a fourth-assessment
-  value);[^wiki-nf3] SF₆ is, according to the IPCC as Wikipedia reports
-  it, "the most potent greenhouse gas".[^wiki-sf6]
+  CF₄ "persists in the atmosphere for 50,000 years";[^wiki-cf4] NF₃ has
+  "a global warming potential (GWP) 17,200 times greater than that of
+  CO2" (a fourth-assessment value);[^wiki-nf3] SF₆ is, according to the
+  IPCC as Wikipedia reports it, "the most potent greenhouse gas".[^wiki-sf6]
 
   Values differ between assessments: Wikipedia's
   *Hexafluoroethane* article gives C₂F₆ "a global warming potential
