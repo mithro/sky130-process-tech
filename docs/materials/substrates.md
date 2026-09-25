@@ -33,7 +33,9 @@ The wafer is the one material that every step acts on. It is bought, not
 made: the crystal is grown, sliced, lapped, etched and polished at the
 wafer maker, and what the fab controls is the order it places and the
 inspection it runs on receipt ({ref}`category-substrate`,
-{ref}`machine-starting-material`). The SEMI M1 specification explains
+{ref}`machine-starting-material`).
+
+The SEMI M1 specification explains
 why the order is standardised: "Single crystal silicon wafers are
 utilized for essentially all integrated circuits", and as dimensions
 shrink "it has become of interest to standardize additional properties
@@ -50,7 +52,9 @@ monograph covers the crystal, its oxygen and its
 defects.[^shimura-1989] The 200 mm wafer, introduced in 1992, is
 "725 μm" thick, and "Wafers of 200 mm diameter and above use a single
 small notch to convey wafer orientation, with no visual indication of
-doping type".[^wiki-wafer] Two properties of the crystal matter to the
+doping type".[^wiki-wafer]
+
+Two properties of the crystal matter to the
 process beyond its doping. Oxygen from the crucible precipitates during
 the hot steps.[^borghesi-1995] A MEMC patent's background states that
 precipitates in the bulk "are capable of trapping undesired metal
@@ -59,7 +63,9 @@ patent describes wafers whose precipitation behaviour is set by a rapid
 thermal treatment at the wafer maker;[^pat-mdz-memc] GlobalWafers, which
 acquired SunEdison Semiconductor in 2016,[^wiki-gw] offers a "Starting
 polished wafer with built-in denuding and nucleation that does not rely
-on long thermal treatments in the IC fab process".[^gw-products] And
+on long thermal treatments in the IC fab process".[^gw-products]
+
+And
 voids from crystal growth open as pits: Ryuta et al. showed that SC-1
 cleaning reveals "crystal-originated singularities" that laser counters
 see as particles, presuming their origin to be "some kind of defect in
@@ -91,13 +97,17 @@ implant into bare silicon, particles added by a tool, an etch rate or a
 selectivity. GlobalWafers states that "Although monitor wafers are
 substantially the same as prime polished wafers with respect to
 cleanliness, and in some cases flatness, other specifications are
-generally less rigorous".[^gw-products] SEMI M8 covers "virgin test
+generally less rigorous".[^gw-products]
+
+SEMI M8 covers "virgin test
 wafers in all standard wafer diameters", in "two classes of larger
 diameter test wafers (from 150 mm)", but "does not cover test wafers
 intended for applications placing higher demands on silicon wafers, such
 as particle counting, measuring resolution in a photolithography
 process, or monitoring metallic contamination", for which it refers to
-SEMI M24.[^semi-m8] Batch furnaces also take filler (dummy) wafers at
+SEMI M24.[^semi-m8]
+
+Batch furnaces also take filler (dummy) wafers at
 the ends of the load: one vertical reactor holds "150 product, test, and
 filler wafers",[^expertech-vtr] and a silicon-carbide supplier notes that
 "It is still common for silicon dummy wafers to be made from reclaimed
@@ -125,37 +135,22 @@ supplier statements. The supplier statements describe the suppliers'
 catalogues, not the wafers SkyWater buys, although both suppliers are
 named in SkyWater's filings (see *At SkyWater*).
 
-* **Prime polished wafers.** SEMI M1 (current revision M1-0924) gives
-  "Standardized dimensional requirements" for "a large number of
-  categories of standardized polished wafers".[^semi-m1] SEH America
-  states that its polished wafers "can be produced in orientations
-  <100>, <111>, and <110>" with boron or phosphorus for all diameters,
-  and that its 200 mm range includes "standard CZ polished wafers, COP
-  free polished wafers, epi wafers of all types, argon annealed
-  wafers".[^seh-products] GlobalWafers calls its principal product "the
-  prime polished wafer".[^gw-products]
-* **Annealed and gettering wafers.** Argon-annealed wafers with a
-  "COP-free surface zone" and an oxygen-denuded zone;[^gw-products]
-  SEH uses "nitrogen doping in the CZ crystal and optimized annealing
-  recipes".[^seh-products]
-* **Epitaxial wafers.** "P/P-, P/P+, N/N-, and N/N+ wafers" in SEH's
-  list;[^seh-products] SEMI M62.[^semi-m62]
-* **Virgin test wafers.** SEMI M8 (M8-0312, reapproved 1023, current),
-  with classes by diameter;[^semi-m8] GlobalWafers' "Test and Monitor
-  Wafers".[^gw-products]
-* **Premium wafers.** SEMI M24 (M24-0612, inactive) for particle
-  counting, metal contamination and lithography resolution, with
-  "tighter specification values in some specific items for the specific
-  usage".[^semi-m24]
-* **Reclaimed wafers.** SEMI M38 (M38-0312, reapproved 1023, current)
-  "divides reclaimed wafers into four application categories:
-  Mechanical, Furnace, Particle, and Lithography" and includes
-  requirements for "devices in the 180 and 130 nm technology
-  generations".[^semi-m38]
-* **Non-silicon dummy wafers.** Silicon-carbide dummy and baffle wafers
-  for furnaces, which "can be cleaned and reused indefinitely in LPCVD
-  or diffusion processes", including a 200 mm size of "0.724 mm"
-  thickness.[^entegris-supersic]
+:::{table} Representative wafer grades, as public standards and current supplier documents describe them
+:widths: 20 16 64
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Prime polished wafers | — | SEMI M1 (current revision M1-0924) gives "Standardized dimensional requirements" for "a large number of categories of standardized polished wafers"[^semi-m1] |
+| Prime polished wafers | SEH America | polished wafers "can be produced in orientations <100>, <111>, and <110>" with boron or phosphorus for all diameters, and its 200 mm range includes "standard CZ polished wafers, COP free polished wafers, epi wafers of all types, argon annealed wafers"[^seh-products] |
+| Prime polished wafers | GlobalWafers | calls its principal product "the prime polished wafer"[^gw-products] |
+| Annealed and gettering wafers | GlobalWafers | Argon-annealed wafers with a "COP-free surface zone" and an oxygen-denuded zone[^gw-products] |
+| Annealed and gettering wafers | SEH | uses "nitrogen doping in the CZ crystal and optimized annealing recipes"[^seh-products] |
+| Epitaxial wafers | SEH | "P/P-, P/P+, N/N-, and N/N+ wafers" in SEH's list;[^seh-products] SEMI M62[^semi-m62] |
+| Virgin test wafers | GlobalWafers | SEMI M8 (M8-0312, reapproved 1023, current), with classes by diameter;[^semi-m8] GlobalWafers' "Test and Monitor Wafers"[^gw-products] |
+| Premium wafers | — | SEMI M24 (M24-0612, inactive) for particle counting, metal contamination and lithography resolution, with "tighter specification values in some specific items for the specific usage"[^semi-m24] |
+| Reclaimed wafers | — | SEMI M38 (M38-0312, reapproved 1023, current) "divides reclaimed wafers into four application categories: Mechanical, Furnace, Particle, and Lithography" and includes requirements for "devices in the 180 and 130 nm technology generations"[^semi-m38] |
+| Non-silicon dummy wafers | — | Silicon-carbide dummy and baffle wafers for furnaces, which "can be cleaned and reused indefinitely in LPCVD or diffusion processes", including a 200 mm size of "0.724 mm" thickness[^entegris-supersic] |
+:::
 
 ## At SkyWater
 
@@ -173,15 +168,21 @@ neither mentions test, monitor or reclaimed wafers.
 Both of SkyWater's filings list "silicon wafers" first among the raw
 materials, and name wafer suppliers:[^sec-01][^sec-02]
 
+:::{table} Silicon-wafer suppliers as SkyWater's filings name them
+:widths: 30 70
+
 | Filing | Silicon-wafer suppliers as named |
 |--------|----------------------------------|
 | S-1 (2021)[^sec-01] | "GlobalWafers Singapore Pte. Ltd. (silicon wafers)"; "SEH America, subsidiary of Shin-Etsu Handotai, Ltd. (silicon wafers)" |
 | 10-K for fiscal 2023[^sec-02] | "Globalwafers Co. LTD."; "SEH America Inc, subsidiary of Shin-Etsu Handotai, Ltd." |
+:::
 
 Neither filing names a wafer type, grade or diameter, or says whether
 the suppliers provide prime, test or reclaimed wafers. The S-1's risk
 factors add that "The raw materials used to manufacture our products are
-subject to availability constraints and price volatility".[^sec-01] For
+subject to availability constraints and price volatility".[^sec-01]
+
+For
 the fab's history, the S-1 states that before independent operations
 "our fab was owned and operated by Cypress Semiconductor Corporation, or
 Cypress, as a captive manufacturing facility for 20 years".[^sec-01]
@@ -198,6 +199,7 @@ The "200 mm equipment", "200mm" and "Bulk" statements are SkyWater's
 own and rank as **strong** on the scale of the
 {ref}`machines index <machines-reading-evidence>`, though the platform
 table was written long after the S8 flow was developed.[^skw-01][^skw-02]
+
 The supplier lists are strong as statements but name no product, and the
 statements quoted from GlobalWafers' and SEH America's pages describe
 their catalogues, not SkyWater's purchases.[^sec-01][^sec-02][^gw-products][^seh-products]
@@ -258,12 +260,16 @@ practice or supplier and standards statements.
   "links the properties of the wafer stored in an appropriate database
   system to each individual wafer",[^semi-m12] or to SEMI M13, whose code
   includes "the origin, approximate resistivity, dopant species, and
-  crystal growth orientation";[^semi-m13] the
+  crystal growth orientation".[^semi-m13]
+
+  The
   marking and sorting tools are on the
   {ref}`starting-material page <machine-starting-material>`.
 * **Supply.** Wafers come from a few large makers; SkyWater's filings
   name two,[^sec-01][^sec-02] and GlobalWafers says it serves "100% of
-  the top 25 customers in the semiconductor industry".[^gw-home] The S-1
+  the top 25 customers in the semiconductor industry".[^gw-home]
+
+  The S-1
   warns that "availability concerns with respect to some of our essential
   materials, tools and maintenance parts could also prompt a lengthy and
   expensive search for alternative sources which would necessitate
@@ -271,6 +277,7 @@ practice or supplier and standards statements.
 * **Test-wafer stock and reclaim.** Used test wafers are downgraded to
   less demanding uses, reclaimed by polishing, or scrapped; automated
   tracking and sorting cut the cost.[^popovich-1997][^ozelkan-2006][^faruqi-2008]
+
   Reclaim can be external or in-house: Dong et al. describe Micron's
   in-house process, whose CMP and wet steps met "the global reclaim
   specifications".[^dong-2024] SEMI M38 warns buyers to "exercise caution
@@ -294,7 +301,9 @@ are not public.
   S130's "Bulk" substrate[^skw-02] as a polished CZ wafer, notes what a
   Cypress patent that may still be in force allows (collapsed note below
   this list), and leaves open whether the original S8 wafer was
-  epitaxial. The step pages rely on STI, retrograde wells and the optional
+  epitaxial.
+
+  The step pages rely on STI, retrograde wells and the optional
   deep N-well for latch-up control, the combination the ITRS says reduces
   the need for epi.[^itrs-01]
 * **Substrate doping.** No resistivity is published. The SMAT page gives
@@ -310,8 +319,9 @@ are not public.
   pre-engineered wafer is not public.
 * **Crystal pits and the gate oxides.** Pair-pit COPs caused failures in
   gate oxides around 10 nm thick,[^ishii-1996] and COPs were the main
-  cause of GOI failure in Miyazaki et al.'s capacitors,[^miyazaki-1997]
-  10 nm being the range of the thick gate oxide of
+  cause of GOI failure in Miyazaki et al.'s capacitors.[^miyazaki-1997]
+
+  10 nm is the range of the thick gate oxide of
   {ref}`GOX100 <step-043>` on that page's reading, so the incoming
   wafer's defect grade bears on gate-oxide yield (our reading).
 * **Monitors as a hidden consumable.** On the step pages' readings, most
@@ -332,15 +342,14 @@ layer.[^pat-04]
 
 ## Related pages
 
-* {ref}`category-substrate` — the wafer specification, crystal growth and
-  the vendor's equipment.
-* {ref}`machine-starting-material` — incoming inspection, marking and
-  sorting.
-* {ref}`machine-sheet-resistance-metrology` and
+* **Category.** {ref}`category-substrate` — the wafer specification,
+  crystal growth and the vendor's equipment.
+* **Machines.** {ref}`machine-starting-material` — incoming inspection,
+  marking and sorting. {ref}`machine-sheet-resistance-metrology` and
   {ref}`machine-film-thickness-metrology` — the gauges that measure most
-  monitor wafers.
-* {ref}`machine-defect-inspection` — particle monitors on bare wafers.
-* {ref}`materials-index` — all consumable classes.
+  monitor wafers. {ref}`machine-defect-inspection` — particle monitors
+  on bare wafers.
+* **Indexes.** {ref}`materials-index` — all consumable classes.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

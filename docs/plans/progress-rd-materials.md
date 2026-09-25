@@ -437,3 +437,26 @@ pre-existing besides quick-facts).
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
 Incremental `-W` build: clean. Screenshots at 400 px: table and nested
 list wrap cleanly.
+
+### `substrates.md`
+
+Rules applied: R-MODELS (10-row 3-column table, splitting the "Prime
+polished wafers" and "Annealed and gettering wafers" bullets' two
+distinct supplier claims into their own rows), R-CAPTION (existing
+Filing/suppliers table wrapped), R-PARA (7 over-100-word paragraphs
+split at seams), R-PARA (5 over-60-word list items split into lead +
+continuation), R-RELATED (Related pages grouped under bold labels).
+
+`check_preserved.py --allow-regrouped`: 0 undeclared differences. One
+`REGROUPED` printout, hand-checked: the "Crystal pits" bullet's two "10"
+mentions (10 nm gate-oxide thickness, 10 nm COP range) were one
+two-number unit before the split and are now two separate one-number
+sentences, same digits, same order.
+
+Over-cap counts, before -> after: paragraphs > 100 words 6 -> 1 (R-INTRO
+lead); list items > 60 words 5 -> 0; tables with no caption 1 -> 0.
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: table and
+paragraphs wrap cleanly.
