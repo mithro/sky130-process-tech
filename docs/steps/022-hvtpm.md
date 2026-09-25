@@ -223,9 +223,10 @@ fab:*
 * Previous: {ref}`LVTPIS <step-021>`.
 * Next: {ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` through
   this resist; strip at {ref}`PCHIS <step-025>`.
-* Same category: the baseline PMOS channel implant is
-  {ref}`LVTPI <step-020>`; the low-Vt option is defined by
+* Same category: the low-Vt option is defined by
   {ref}`LVTNM <step-014>` (`lvtn`, which may not overlap `hvtp`).
+* Same module: the baseline PMOS channel implant is
+  {ref}`LVTPI <step-020>`.
 * Mask: {ref}`HVTPM <mask-hvtpm>` — the mask's layers, plates, renders
   and design rules; the previous mask is {ref}`NWM <step-017>`, the
   next mask {ref}`PWBM <step-026>`.

@@ -195,8 +195,8 @@ The Cypress {term}`SONOS` patent gives the pad oxide as
 * Previous: {ref}`HVTPM <step-022>` (mask).
 * Next: {ref}`PNCHI <step-024>` (second implant through the same
   resist), then {ref}`PCHIS <step-025>` (strip).
-* Same category: baseline PMOS channel — {ref}`LVTPI <step-020>`;
-  low-Vt option via {ref}`LVTNM <step-014>`.
+* Same category: baseline PMOS channel — {ref}`LVTPI <step-020>`.
+* Same module: low-Vt option via {ref}`LVTNM <step-014>`.
 * Feeds: activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 

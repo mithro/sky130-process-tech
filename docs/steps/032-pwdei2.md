@@ -133,9 +133,9 @@ sets that junction.
 
 * Previous: {ref}`PWDEI1 <step-031>`.
 * Next: {ref}`PWDEIS <step-033>` (strip); mask: {ref}`PWDEM <step-030>`.
-* Depends on: the main-well pairs it extends —
-  {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>`,
-  {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`.
+* Depends on: the standard P-well it replaces in the 20 V regions —
+  {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`; the N-well drift
+  regions of the DE NMOS — {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>`.
 * Feeds: activated at {ref}`RTAI <step-034>`; the gate oxide of the
   20 V devices is grown at {ref}`GOX100 <step-043>`.
 * Category page: {ref}`Ion implantation <category-implant>`.

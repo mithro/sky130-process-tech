@@ -241,9 +241,9 @@ raises NMOS {term}`Vt`.[^hook-2003]
   resist; strip at {ref}`PWIS <step-029>`.
 * Same category: complementary mask — {ref}`NWM <step-017>`. The
   regions blocked here and re-doped later: {ref}`PWDEM <step-030>`.
-* Depends on: the isolated P-well inside the deep N-well tub
-  ({ref}`DNM <step-007>`) is formed by this same implant, ringed by
-  N-well.
+* Feeds: the isolated P-well inside the deep N-well tub
+  ({ref}`DNM <step-007>`) is formed by the implant this mask enables,
+  ringed by N-well.
 * Mask: {ref}`PWBM <mask-pwbm>` — the mask's layers, plates, renders
   and design rules; the previous mask is {ref}`HVTPM <step-022>`, the
   next mask {ref}`PWDEM <step-030>`.
