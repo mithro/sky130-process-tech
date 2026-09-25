@@ -1,6 +1,17 @@
 (category-test)=
 # Electrical test / metrology
 
+Electrical test is where the finished wafer is measured rather than
+changed. This is the {term}`e-test` or wafer acceptance test ({term}`WAT`).
+
+| | Electrical test / metrology |
+|---|---|
+| What it does | the finished wafer is measured rather than changed |
+| Steps in SKY130 | 1 |
+| Tool classes | {ref}`Parametric testers <machine-parametric-tester>` |
+| Consumable classes | {ref}`Hardware consumables <material-hardware-consumables>` |
+| Governing relation | Van der Pauw's theorem |
+
 ## What this class of step does
 
 Electrical test is where the finished wafer is measured rather than
@@ -19,11 +30,15 @@ In the general description, "wafer testing is a step performed during
 semiconductor device fabrication after back end of line (BEOL) and
 before IC packaging"; this reference, whose phase table ends the back
 end with the final alloy and test, files {ref}`HPETEST <step-171>`
-itself under BEOL. Wafer testing comes in two kinds: wafer parametric tests, performed
-at "a few locations on each wafer" to verify that fabrication succeeded,
-and wafer functional testing (also called die sort or {term}`wafer
-sort`), which applies "special test patterns" to test "all individual
-integrated circuits on the wafer".[^wiki-test] This category page
+itself under BEOL. Wafer testing comes in two kinds:
+
+* **Wafer parametric tests** — performed
+  at "a few locations on each wafer" to verify that fabrication succeeded.
+* **Wafer functional testing** (also called die sort or {term}`wafer
+sort`) — applies "special test patterns" to test "all individual
+integrated circuits on the wafer".[^wiki-test]
+
+This category page
 concerns the first kind; the second is a product step performed by or
 for the customer, and its results are recorded not by inking but "in a
 file, named a wafermap".[^wiki-test]
@@ -65,29 +80,42 @@ typically contains:
 The structures are laid out so that every measurement is a
 four-terminal one where a resistance is involved: "a constant current
 is applied to two probes, and the potential on the other two probes is
-measured with a high-impedance voltmeter", so that probe and lead
+measured with a high-impedance voltmeter".[^wiki-rs][^wiki-4t] So probe and lead
 resistance drop out.[^wiki-rs][^wiki-4t]
 
-For SKY130 one such structure list is public, although it is not stated
+**The public test tile.** For SKY130 one such structure list is public, although it is not stated
 to be the fab's production PCM. Google's raw-data repository publishes
 the pad documentation of the SkyWater "manufacturing test tile" carried
 on Google's MPW runs: 273 numbered modules, each a line of up to twelve
 pads with the terminal on each pad written
-out.[^raw-data-testtile-pads][^raw-data-testtile-prop] By our count
-they include 36 finger-capacitor ("VPP") modules, 28 poly-resistor modules (24 of them labelled 300 Ω/sq or 2 kΩ/sq; many as "Mismatch" pairs), 7 MiM
-capacitor modules, 9 diode, 6 bipolar-transistor and 6 ring-oscillator
-modules, together with licon and mcon contact strings, via chains from
-via 1 to via 4, comb/serpentine and line-integrity structures, and SRAM,
-SONOS, 2T-flash and antifuse structures; the transistor modules sweep
+out.[^raw-data-testtile-pads][^raw-data-testtile-prop]
+
+**Module counts.** By our count
+they include:[^raw-data-testtile-pads]
+
+* 36 finger-capacitor ("VPP") modules;
+* 28 poly-resistor modules (24 of them labelled 300 Ω/sq or 2 kΩ/sq;
+  many as "Mismatch" pairs);
+* 7 MiM capacitor modules;
+* 9 diode, 6 bipolar-transistor and 6 ring-oscillator modules;
+* licon and mcon contact strings, via chains from via 1 to via 4,
+  comb/serpentine and line-integrity structures; and
+* SRAM, SONOS, 2T-flash and antifuse structures.
+
+The transistor modules sweep
 width, length and the source/drain extent (`sa`,
-`sb`).[^raw-data-testtile-pads] The data measured on the tile were
+`sb`).[^raw-data-testtile-pads]
+
+**Measurement files.** The data measured on the tile were
 "collected under contract by CoolCAD Electronics LLC" to help validate
 the PDK.[^raw-data-readme] Its transistor and gate-capacitor files are
 current–voltage and capacitance–voltage sweeps whose headers give the
 biases, compliance and instrument channels but no temperature, date or
-wafer; {ref}`HPETEST <step-171>` sets thresholds, currents and resistances we
+wafer. {ref}`HPETEST <step-171>` sets thresholds, currents and resistances we
 extracted from them beside the PDK's e-test
-nominals.[^raw-data-hv-mosfets][^raw-data-lv-mosfets] Measurements of
+nominals.[^raw-data-hv-mosfets][^raw-data-lv-mosfets]
+
+**Passive-device files.** Measurements of
 the tile's passive devices, varactors and bipolar transistors are also
 published as IC-CAP files (resistor, diode and bipolar I–V; MiM and
 varactor C–V), which likewise carry no temperature, date or wafer
@@ -113,7 +141,7 @@ spacing.[^wiki-tlm][^wiki-rc]
 For each transistor the tester sweeps the gate at a small drain bias to
 get the linear-region characteristics, extracting the threshold
 voltage by linear extrapolation or at a constant current, the maximum
-transconductance and the linear drain current; then at full supply
+transconductance and the linear drain current. Then at full supply
 voltage it measures the saturation current {math}`I_{\mathrm{dsat}}`,
 the off-current {math}`I_{\mathrm{off}}` (at picoampere sensitivity),
 the substrate current, and the breakdown voltages. From the dependence
@@ -171,21 +199,24 @@ device.
 
 ## Typical consumables
 
-* Probe cards and replacement needles (tungsten, tungsten–rhenium or
+* {ref}`Probe cards <material-hardware-consumables>` and replacement needles (tungsten, tungsten–rhenium or
   beryllium–copper), which wear and must be re-planarised or re-tipped.
 * Probe-tip cleaning media (abrasive films and gel pads) used every
   few touchdowns to remove aluminium debris.
 * Reference and calibration standards for the source-measure units and
   capacitance meter.
-* Test wafers and golden reference wafers for tester correlation.
+* {ref}`Test wafers <material-substrates>` and golden reference wafers for tester correlation.
 * No process chemicals or gases; the wafer leaves e-test unchanged
   apart from probe marks on the scribe-line pads.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 171 | {ref}`HPETEST <step-171>` | Electrical test |
+:::{table} The one electrical-test step of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 171 | {ref}`HPETEST <step-171>` | Electrical test | {ref}`Parametric tester <machine-parametric-tester>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings

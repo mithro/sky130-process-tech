@@ -38,9 +38,60 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 - substrate.md — done
 - anneal.md — done
 - oxidation.md — done
-- (remaining six to do: deposition, etch, implant, lithography, strip, test)
+- test.md — done
+- (remaining five to do: deposition, etch, implant, lithography, strip)
 
 ## Pages
+
+### test.md — done
+
+Rules applied: intro + quick-facts table (Governing relation "Van der Pauw's theorem", named on the page
+in "Sheet resistance and van der Pauw"); R-LIST three times (the "wafer testing comes in two kinds"
+sentence → two bullets; the "by our count they include" module-count sentence, a dense 12-number run →
+six bullets, kept as a plain list since it is a tally, not a chemistry/material comparison; the PCM list
+was already bulleted, untouched); R-PARA with bold run-in labels on the test-tile evidence block (The
+public test tile / Module counts / Measurement files / Passive-device files — an evidence sequence, so
+labelled per R-PARA step 3) — this also fixes what had been one ~230-word paragraph; R-SENTENCE splits
+(the four-terminal-measurement sentence, the transistor-sweep sentence), each a semicolon joining two
+claims; R-COMPARE step 2 (two consumables lead-ins linked: Probe cards → `hardware-consumables`
+(its `probe-cards` row), Test wafers → `substrates`); R-COMPARE step 3 (Machine class column, one row:
+Parametric tester); R-CAPTION on the new steps table.
+
+**Tool-limitation finding, worth flagging to the coordinator:** converting "wafer functional testing
+(also called die sort or `{term}`wafer\nsort``)" into a list item at first produced a false LOST/ADDED
+ref pair in `check_preserved.py` — not a real change. The original source happens to hard-wrap the bare
+`{term}` role across a line break with no indentation (`{term}`wafer` / `sort``), and `role_target()`
+only strips leading/trailing whitespace from a bare (no explicit `<target>`) role's content, so the
+literal embedded newline is part of the extracted "ref" string. My first two reformattings (indented
+list continuation, then an explicit `<wafer sort>` target) both legitimately changed that raw string and
+were flagged, even though the rendered link is identical either way. Fixed by keeping the same bare role
+with the same mid-word line break, using CommonMark's lazy-continuation rule (an unindented follow-on
+line still belongs to the list item's paragraph) so the source bytes inside the backticks are now
+byte-for-byte what they were before. No content changed at any point; this is a documented tool
+quirk (whitespace inside a bare, target-less role is not normalised) for whoever reviews the other
+category pages, in case the same pattern recurs.
+
+`check_preserved.py --base 26714efa --allow-regrouped --allow-added markers,numbers,refs,identifiers` →
+exit 0. One `--allow-regrouped` group confirmed by hand: the original 12-digit module-count run
+(36,28,24,300,2,7,9,6,6,1,4,2) reappears as three contiguous sub-runs across the new bullets
+((28,24,300,2), (9,6,6), (1,4)) with the other four digits (36, 7, 2) now alone in their own bullets,
+below the tool's two-number tracking threshold — same digits, same order throughout.
+
+* **ADDED markers:** `raw-data-testtile-pads` (one extra occurrence, R-LIST rule 1: repeated on the
+  list's lead-in colon as well as its original position on the trailing clause), `wiki-rs`, `wiki-4t`
+  (one extra occurrence each, R-SENTENCE rule 5).
+* **ADDED numbers:** `1` — Steps-in-SKY130 count.
+* **ADDED refs:** `WAT`, `e-test` (the new intro repeats the page's own naming sentence),
+  `machine-parametric-tester` ×2, `material-hardware-consumables` ×2, `material-substrates` ×1.
+* **ADDED identifiers:** `SKY130` ×1.
+
+Quick-facts derivation: What it does = verbatim fragment "the finished wafer is measured rather than
+changed". Steps in SKY130 = 1. Tool classes = the one `{ref}` target in Typical equipment. Consumable
+classes = `hardware-consumables` (its `probe-cards` row is this page's main consumable). Governing
+relation = "Van der Pauw's theorem" (page's own H3 and named theorem).
+
+Checkers and `-W` build pass. Screenshots (desktop, 400 px) reviewed: the reformatted evidence block and
+new lists read cleanly; no horizontal scroll.
 
 ### oxidation.md — done
 
