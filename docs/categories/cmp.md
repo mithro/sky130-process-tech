@@ -1,6 +1,19 @@
 (category-cmp)=
 # Chemical-mechanical planarisation
 
+Chemical-mechanical planarisation ({term}`CMP`) makes the wafer flat
+again. Every deposited film copies the topography beneath it, so after
+a few layers the surface would become a landscape of hills and valleys
+too rough for lithography to focus on and too steep for metal to cover.
+
+| | Chemical-mechanical planarisation |
+|---|---|
+| What it does | Makes the wafer flat again; the high points are removed faster than the low points until the surface is planar. |
+| Steps in SKY130 | 12 |
+| Tool classes | {ref}`Polishers <machine-cmp-polisher>`, {ref}`Post-CMP cleaners <machine-post-cmp-cleaner>` |
+| Consumable classes | {ref}`CMP consumables <material-cmp-consumables>` |
+| Governing relation | Preston's equation |
+
 ## What this class of step does
 
 Chemical-mechanical planarisation ({term}`CMP`) makes the wafer flat
@@ -58,7 +71,7 @@ and wafer,
 where {math}`k_p`, the Preston coefficient, absorbs the properties of
 pad, slurry and film. It holds well for oxide polishing over the range
 of a few psi and tens of metres per minute used in production (typical
-industry values),[^zantye-2004] and deviations from it (a non-zero
+industry values).[^zantye-2004] Deviations from it (a non-zero
 pressure threshold, sub-linear velocity dependence) are the subject of
 later models such as Luo and Dornfeld's, which treats the removal as the
 product of the number of active abrasive particles and the volume each
@@ -66,22 +79,28 @@ removes.[^luo-2001][^zantye-2004]
 
 ### Chemistry and mechanics
 
-Polishing is neither pure abrasion nor pure etching. For silicon
-dioxide, Cook showed that the alkaline slurry (pH 10–11) hydrolyses the
-oxide surface to a soft silanol-rich layer, that silica abrasive
-particles bond to it and tear it away, and that dissolved silica must be
-carried off before it re-deposits;[^cook-1990] the abrasive is "cerium
-dioxide"[^wiki-cmp] or, for oxide, colloidal/fumed silica in water with
-KOH or NH₄OH.[^cook-1990][^rev-02] For tungsten, Kaufman and co-workers
-at IBM showed that an oxidiser in the slurry (originally potassium
+Polishing is neither pure abrasion nor pure etching.
+
+**Oxide chemistry.** For silicon dioxide, Cook showed that the alkaline
+slurry (pH 10–11) hydrolyses the oxide surface to a soft silanol-rich
+layer, that silica abrasive particles bond to it and tear it away, and
+that dissolved silica must be carried off before it
+re-deposits.[^cook-1990] The abrasive is "cerium dioxide"[^wiki-cmp] or,
+for oxide, colloidal/fumed silica in water with KOH or
+NH₄OH.[^cook-1990][^rev-02]
+
+**Tungsten chemistry.** For tungsten, Kaufman and co-workers at IBM
+showed that an oxidiser in the slurry (originally potassium
 ferricyanide, later hydrogen peroxide or ferric nitrate) forms a thin,
-soft WO₃ layer that the abrasive removes, exposing fresh metal, so that
-the rate is set by oxidation and the {term}`selectivity` to oxide by the
-slurry's acidity.[^kaufman-1991] The pad — a porous polyurethane,
-"porous polymeric materials with a pore size between 30 and 50
-μm"[^wiki-cmp] — carries the slurry in its pores, and its asperities
-transmit the load; it glazes with use and "must be regularly
-reconditioned" with a diamond disc.
+soft WO₃ layer that the abrasive removes, exposing fresh
+metal.[^kaufman-1991] The rate is set by oxidation and the
+{term}`selectivity` to oxide by the slurry's acidity.[^kaufman-1991]
+
+**The pad.** The pad — a porous polyurethane, "porous polymeric
+materials with a pore size between 30 and 50 μm"[^wiki-cmp] — carries
+the slurry in its pores, and its asperities transmit the load. It
+glazes with use and "must be regularly reconditioned" with a diamond
+disc.
 
 ### Planarisation, dishing and erosion
 
@@ -92,11 +111,16 @@ order of a few millimetres, and within it the removal rate of a feature
 depends on the local pattern density — dense regions of raised oxide
 polish more slowly than sparse ones.[^steigerwald-1997] The same
 compliance causes the two classic defects of a stop-layer or metal
-polish: {term}`dishing`, the recession of a wide soft feature (an
-oxide-filled wide trench, a tungsten pad) below the surrounding hard
-surface, and {term}`erosion`, the thinning of the hard surface (oxide
-between a dense array of plugs, or the STI nitride in dense active
-areas). Both are reduced by high-selectivity slurries, a short
+polish:
+
+* **{term}`Dishing <dishing>`** — the recession of a wide soft feature
+  (an oxide-filled wide trench, a tungsten pad) below the surrounding
+  hard surface.
+* **{term}`Erosion <erosion>`** — the thinning of the hard surface
+  (oxide between a dense array of plugs, or the STI nitride in dense
+  active areas).
+
+Both are reduced by high-selectivity slurries, a short
 over-polish, and design rules on feature width and density — which is
 why PDKs require metal fill and limit wide
 plates.[^zantye-2004][^rev-02]
@@ -109,7 +133,7 @@ reaches a different material (nitride under oxide, oxide under
 tungsten); or in-situ optical or eddy-current thickness sensing. A Chip History
 Center article calls the Applied Mirra "the first CMP system that
 successfully integrated endpoint detection and integrated
-cleaning";[^chiphistory-mirra] Applied's own release introduces its
+cleaning".[^chiphistory-mirra] Applied's own release introduces its
 integrated Mesa cleaner, "specifically developed for the Mirra", with the
 Mirra Mesa in 1999.[^amat-mesa-1999] Pre-
 and post-polish thickness maps from an optical thickness gauge give the
@@ -132,63 +156,83 @@ The film and stop-layer columns are those typical of the node; SKY130's
 own films are this reference's readings, set out with their public
 sources on the step pages.
 
+:::{table} The three CMP polishes of the flow, film and stop typical of the node; SKY130's own films are this reference's readings, set out on the step pages
+
 | Polish | Film removed | Stop | Slurry | Failure modes |
 |--------|--------------|------|--------|---------------|
 | STI ({ref}`CMPNIT <step-012>`) | HDP oxide | Si₃N₄ | silica/KOH, or ceria with surfactant for high oxide:nitride selectivity | nitride erosion, oxide dishing in wide trenches, residual oxide on nitride |
 | Tungsten ({ref}`WCMPLI <step-100>` etc.) | W and Ti/TiN liner | ILD oxide | alumina or silica with H₂O₂ or Fe(NO₃)₃, pH 2–4 | plug recess, oxide erosion in dense arrays, W "coring", corrosion |
 | ILD ({ref}`CMPM <step-116>` etc.) | PECVD/HDP oxide | none (fixed removal) | fumed silica/KOH or NH₄OH, pH 10–11 | thickness non-uniformity, scratches, pattern-density steps |
+:::
 
 The slurry pH values in the table are typical industry
 values.[^steigerwald-1997][^zantye-2004]
 
 ## Typical equipment
 
-* **{ref}`Polishers <machine-cmp-polisher>`**: Applied Materials Mirra ("the Company announced its
-  entry into the CMP market with the Mirra CMP in December 1995. The
-  Mirra CMP system features a unique three-station, four polishing head
-  design")[^amat-1997] and Mirra Mesa with integrated cleaner (1999);[^amat-mesa-1999] Ebara
-  F-REX 200 (the current F-REX200M2 "polishes 200 mm wafers with high
-  k-materials and aluminium layers");[^ebara-frex] IPEC/Westech 372 and
-  472 and the SpeedFam-IPEC Auriga; Strasbaugh 6DS-SP; Lam Teres.
-* **{ref}`Post-CMP cleaners <machine-post-cmp-cleaner>`**: OnTrak (later Lam) DSS-200 double-sided brush
-  scrubbers; Applied Mesa integrated cleaner.
-* **Metrology**: {ref}`optical film-thickness mappers <machine-film-thickness-metrology>` (Nanometrics NanoSpec,
-  Rudolph, KLA-Tencor), {ref}`stylus profilers <machine-cross-section-sem-profilers>` for dishing and step height
-  (KLA-Tencor HRP), and {ref}`unpatterned-wafer defect inspection <machine-defect-inspection>` (KLA-Tencor
-  Surfscan) for scratches.
+**Polishers.** Applied Materials Mirra ("the Company announced its
+entry into the CMP market with the Mirra CMP in December 1995. The
+Mirra CMP system features a unique three-station, four polishing head
+design")[^amat-1997] and Mirra Mesa with integrated cleaner
+(1999);[^amat-mesa-1999] Ebara F-REX 200 (the current F-REX200M2
+"polishes 200 mm wafers with high k-materials and aluminium
+layers");[^ebara-frex] IPEC/Westech 372 and 472 and the SpeedFam-IPEC
+Auriga; Strasbaugh 6DS-SP; Lam Teres.
+
+**Post-CMP cleaners.** OnTrak (later Lam) DSS-200 double-sided brush
+scrubbers; Applied Mesa integrated cleaner.
+
+**Metrology.** {ref}`Optical film-thickness mappers <machine-film-thickness-metrology>` (Nanometrics NanoSpec,
+Rudolph, KLA-Tencor), {ref}`stylus profilers <machine-cross-section-sem-profilers>` for dishing and step height
+(KLA-Tencor HRP), and {ref}`unpatterned-wafer defect inspection <machine-defect-inspection>` (KLA-Tencor
+Surfscan) for scratches.
+
+:::{table} The equipment classes above, for scanning; models, dates and quotations are in the paragraphs above
+
+| Tool class | Representative models | Note |
+|---|---|---|
+| {ref}`Polishers <machine-cmp-polisher>` | Applied Materials Mirra, Mirra Mesa; Ebara F-REX; IPEC/Westech; SpeedFam-IPEC Auriga; Strasbaugh; Lam Teres | see above |
+| {ref}`Post-CMP cleaners <machine-post-cmp-cleaner>` | OnTrak (later Lam), Applied Mesa | double-sided brush scrubbers |
+| {ref}`Optical film-thickness mappers <machine-film-thickness-metrology>` | Nanometrics NanoSpec, Rudolph, KLA-Tencor | — |
+| {ref}`Stylus profilers <machine-cross-section-sem-profilers>` | KLA-Tencor | for dishing and step height |
+| {ref}`Unpatterned-wafer defect inspection <machine-defect-inspection>` | KLA-Tencor Surfscan | for scratches |
+:::
 
 ## Typical consumables
 
-* **Slurries**: fumed-silica in KOH (Cabot Semi-Sperse SS-12 class)
+* **{ref}`Slurries <material-cmp-consumables>`**: fumed-silica in KOH (Cabot Semi-Sperse SS-12 class)
   for oxide; colloidal silica (Klebosol class); ceria-based slurries
   for STI with nitride selectivity; alumina or silica plus oxidiser
   (H₂O₂, Fe(NO₃)₃) for tungsten. Slurry is consumed at a few hundred
   millilitres per wafer per platen, a typical industry figure.[^zantye-2004]
-* **Pads**: stacked polyurethane pads (Rodel IC1000 over Suba IV
+* **{ref}`Pads <material-cmp-consumables>`**: stacked polyurethane pads (Rodel IC1000 over Suba IV
   class) for primary polish; soft Politex-type pads for buffing;
   replaced after a few hundred to a thousand wafers, a typical
   industry figure.[^steigerwald-1997]
 * **Conditioners**: diamond-grit discs; **carrier films** and retaining
   rings; **brushes** (PVA) for the cleaner.
-* **Chemicals**: KOH, NH₄OH, dilute HF, citric acid, hydrogen peroxide
+* **{ref}`Chemicals <material-cmp-consumables>`**: KOH, NH₄OH, dilute HF, citric acid, hydrogen peroxide
   for slurry make-up and post-CMP clean; ultrapure water in quantity.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 12 | {ref}`CMPNIT <step-012>` | CMP over nitride |
-| 90 | {ref}`CMPP <step-090>` | CMP over poly |
-| 100 | {ref}`WCMPLI <step-100>` | W CMP for local interconnect |
-| 106 | {ref}`CMPL <step-106>` | CMP polish over local interconnect |
-| 111 | {ref}`WCMP2 <step-111>` | W CMP for metal contact |
-| 116 | {ref}`CMPM <step-116>` | CMP over metal1 |
-| 122 | {ref}`WCMP3 <step-122>` | W CMP for via1 |
-| 127 | {ref}`CMPM2 <step-127>` | CMP over metal2 |
-| 133 | {ref}`WCMP4 <step-133>` | W CMP for via2 |
-| 142 | {ref}`CMPM3 <step-142>` | CMP over metal3 |
-| 148 | {ref}`WCMP5 <step-148>` | W CMP for via3 |
-| 157 | {ref}`CMPM4 <step-157>` | CMP over metal4 |
+:::{table} The twelve CMP steps of the flow, by step number
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 12 | {ref}`CMPNIT <step-012>` | CMP over nitride | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 90 | {ref}`CMPP <step-090>` | CMP over poly | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 100 | {ref}`WCMPLI <step-100>` | W CMP for local interconnect | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 106 | {ref}`CMPL <step-106>` | CMP polish over local interconnect | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 111 | {ref}`WCMP2 <step-111>` | W CMP for metal contact | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 116 | {ref}`CMPM <step-116>` | CMP over metal1 | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 122 | {ref}`WCMP3 <step-122>` | W CMP for via1 | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 127 | {ref}`CMPM2 <step-127>` | CMP over metal2 | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 133 | {ref}`WCMP4 <step-133>` | W CMP for via2 | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 142 | {ref}`CMPM3 <step-142>` | CMP over metal3 | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 148 | {ref}`WCMP5 <step-148>` | W CMP for via3 | {ref}`CMP polisher <machine-cmp-polisher>` |
+| 157 | {ref}`CMPM4 <step-157>` | CMP over metal4 | {ref}`CMP polisher <machine-cmp-polisher>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
