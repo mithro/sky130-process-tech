@@ -121,12 +121,11 @@ fab (SKY130 values are not public):*
   SKY130 uses n⁺ poly on the PMOS, the baseline threshold implant is a
   *p-type* counter-doping (boron or BF₂).
 
-  That brings a buried-channel PMOS from the roughly −1.2 V that an
+  That brings a buried-channel PMOS from roughly −1.2 V towards the
+  PDK's −1.05 V long-channel value.[^pdk-07] The −1.2 V is what an
   uncompensated n⁺-gate PMOS of this oxide thickness and well doping
-  would show towards the PDK's −1.05 V long-channel
-  value.[^pdk-07] This is our estimate from the n⁺-gate work-function
-  shift of about one band gap; it is not a published SKY130
-  value.[^taur-2009]
+  would show (our estimate from the n⁺-gate work-function shift of
+  about one band gap; not a published SKY130 value).[^taur-2009]
 
   If the gate were p⁺, an *n-type* species (arsenic or phosphorus)
   would set the threshold instead. The Round Rock/Micron patent uses

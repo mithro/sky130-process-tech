@@ -84,7 +84,8 @@ The published test-tile measurements include both devices at the PDK's
 e-test geometries. By maximum-transconductance extrapolation at
 V_DS = −0.1 V, less half the drain bias, we extract threshold magnitudes
 of 1.124 V for `pfet_01v8_hvt` against 1.065 V for `pfet_01v8` at
-7/8 µm (+0.059 V) and 0.917 V against 0.798 V at 7/0.15 µm (+0.119 V).
+7/8 µm (+0.059 V) and 0.917 V against 0.798 V at 7/0.15 µm
+(+0.119 V).[^raw-data-lv-mosfets]
 
 At 7/0.15 µm the drain current at V_GS = V_DS = −1.8 V falls from
 1.28 mA to 0.94 mA (our extraction from the published measurements).

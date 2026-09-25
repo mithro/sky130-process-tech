@@ -143,8 +143,9 @@ a 0.925 µm drawn gate ("L=0.7") have a median resistance of about 470 Ω
 at V_GS = 5 V and V_DS = 0.1 V (from the I_D–V_D sweeps), against 119 Ω for a 20/0.5 µm
 `nfet_g5v0d10v5`. At V_DS = 2.5 V they carry 62–71 % of their
 V_DS = 5 V current, against 95 % for that device and 96 % for a
-1/1 µm `nfet_g5v0d10v5`. That device's 3.2 kΩ at the same bias
-corresponds to about 160 Ω at 20 µm width.
+1/1 µm `nfet_g5v0d10v5`. The 1/1 µm device's 3.2 kΩ at the same bias
+corresponds to about 160 Ω at 20 µm width (our extraction from the
+published measurements).[^raw-data-hv-mosfets]
 
 Their threshold, taken at a constant
 current of 100 nA × W/L, moves by 1–6 mV per volt of drain bias, which
