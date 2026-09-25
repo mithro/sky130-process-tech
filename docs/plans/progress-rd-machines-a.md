@@ -316,6 +316,64 @@ cleanly at 400 px with the 4-column Vendor/Model/Year/Published-figures shape.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 5. `docs/machines/defect-inspection.md` — done
+
+The largest page in the batch so far (~600 lines before editing). Rules applied: R-INTRO (kept
+the first 3 sentences, 57 words; moved the patterned-inspector/review/output sentences into the
+H2 lead, ahead of the H2's own sentence; template deleted; pointer moved to `{seealso}`).
+R-MODELS (13-row table across 5 vendor groups — Tencor/KLA-Tencor unpatterned scanners, laser
+patterned inspectors, imaging inspectors, review stations, Orbot — the largest R-MODELS table in
+the batch so far). R-ENTRIES: two separate gloss passages on this page. `## At SkyWater` has no
+SkyWater capabilities-page listing at all (SkyWater names no wafer inspection tool here — the
+page is explicit about that, and it stays prose, since there is nothing to tabulate), but the
+job-posting quote "SEM/AIT/KLA/SP1/EV300/1X" gets its own "Read term by term, on our reading"
+gloss, converted to a 6-row table. R-QUICKFACTS: one cell ("Detection principle") shrunk on the
+first pass by dropping a quotation that turned out to be a *pre-existing* duplicate of the same
+quotation already sitting in the body (`## Light scattering from bare and blanket wafers`) —
+removing one of the two existing copies is still a loss (`check_preserved.py` tracks exact
+occurrence counts, not "at least one somewhere"), caught only when the check was run, and fixed
+by restoring the cell to its original wording (see the caught-bug note below). R-PARA (9 of the
+9 H3/H2 paragraphs on this page needed splitting, several twice — this page had the densest prose
+of the batch so far). R-SENTENCE (about 15 sentences over 45 words split, several needing a
+second pass after the first split still left one half over 45). R-RELATED (10 sentence-bullets →
+4 grouped bullets). R-CAPTION (both new tables).
+
+Over-cap counts (before → after): paragraphs > 100 words: 9 → 0; sentences > 45 words: ~15 → 0;
+list items > 60 words: 0 (none on this page reached 60 before editing; two exceeded it only
+transiently while I was mid-edit and were fixed with a continuation paragraph in the same pass);
+quick-facts cells > 20 words: 5 of 6 → 5 (unchanged by design, method note 3, except the one
+restored to its original length after the duplicate-quote bug); tables with no caption: 2 new →
+0.
+
+**Bug caught by `check_preserved.py`, not by reading:** shrinking the "Detection principle"
+quick-facts cell by cutting "whose amplitude 'corresponds to the size of the defect detected'"
+looked safe on inspection — the same quotation is in the body, so it reads like the
+already-covered "the number stays the page, just moves" case method note 2 describes. It is not:
+the original page carries that exact quotation **twice already** (once in quick facts, once in
+the body, both there before this branch touched the page), and `check_preserved.py` tracks exact
+occurrence *counts*. Cutting one of two pre-existing duplicates is still `LOST quotes` — the
+same rule as method note 2's numbers, which I had stated for numbers but not yet noticed applies
+identically to quotations and (per page 3's list) markers. Restored the cell to its original
+wording. Generalising method note 2: **never delete any quotation, number or marker occurrence
+while shrinking a cell, even one that is a byte-for-byte duplicate of text kept elsewhere on the
+page** — only add, never subtract, unless the text is moving (leaving zero at the old site and
+appearing once at the new one).
+
+`check_preserved.py --base cb078d92 --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4. Every `number_order` LOST tuple this time was successfully downgraded to
+`REGROUPED` by `--allow-regrouped` (hand-checked anyway) — the first page in the batch where the
+table conversions did not leave any undeclarable `LOST number_order`, probably because the
+Representative-models table's Year column happens not to duplicate a number already inline in
+this page's quotations as often as on pages 2–4.
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 5 (13-row Representative-models table) and
+7 (job-posting entries table, grading bullet, consumables) read; the 13-row table — the largest
+in the batch — wraps cleanly with no horizontal scroll at 400 px using the same 4-column
+Vendor/Model/Year/Published-figures shape as pages 3–4.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but

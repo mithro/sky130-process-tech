@@ -6,20 +6,12 @@ particles, scratches, residues, pits and pattern flaws. Two instrument
 families do the searching. Unpatterned-wafer surface scanners sweep a
 laser over bare or blanket-coated wafers — incoming wafers and the
 monitor wafers that qualify process tools — and count the light that
-defects scatter. Patterned-wafer inspectors scan product wafers and
-compare each die with its neighbours, so that a difference marks a
-defect. Review stations, optical or electron-beam, then revisit a sample
-of the defects found and classify them. The output is a defect map
-rather than a measurement, and it feeds excursion control and yield
-learning. This page describes the classes, lists representative
-200 mm-era models, and then says what SkyWater has published about its
-own tools and which SKY130 steps this reference assigns to them. In-line
-metrology in general is on the {ref}`test category page <category-test>`.
+defects scatter.
 
 | | Defect and particle inspection |
 |---|---|
 | What it does | Unpatterned inspection systems "locate contaminants, particulates and surface-level defects that, if left undetected, can hamper the device manufacturing process";[^tencor-sp1-wp] a patterned-wafer inspector provides "in-line defect detection for capture of both process-induced pattern defects and contaminants".[^tencor-patterned-1997] |
-| Detection principle | Laser scattering: "a laser illuminates the wafer surface, and light scattered by contaminants and other surface irregularities is collected by specially positioned collection optics and then translated into electronic signals", whose amplitude "corresponds to the size of the defect detected";[^tencor-sp1-wp] on patterned wafers, anomalies are found "by comparing adjacent repeating patterns".[^pat-inspect-kla] |
+| Detection principle | "a laser illuminates the wafer surface, and light scattered by contaminants and other surface irregularities is collected by specially positioned collection optics and then translated into electronic signals", whose amplitude "corresponds to the size of the defect detected";[^tencor-sp1-wp] on patterned wafers, anomalies are found "by comparing adjacent repeating patterns".[^pat-inspect-kla] |
 | Sensitivity | "down to 0.09 micron on well-polished silicon" (Surfscan 6220) and "down to 0.08 micron" (Surfscan SP1) on bare wafers;[^tencor-unpatterned-1997][^tencor-sp1-wp] "an optimal sensitivity of 0.15 micron" on the patterned Surfscan 7700.[^tencor-patterned-1997] |
 | Throughput | "150 wph for 200mm wafers" on the SP1;[^tencor-sp1-wp] "30 full wafer inspections/hour" on the patterned Surfscan AIT.[^tencor-patterned-1997] |
 | Requirement at 130 nm | ITRS 2001 sets, for 2001, a patterned-inspection sensitivity of 104 nm (polystyrene-latex sphere equivalent) at a yield-ramp scan rate of 1200 cm²/h and 130 nm at a volume-production rate of 3000 cm²/h, 70 nm on bare silicon and non-metal films, and 7 nm resolution for defect review.[^itrs-2001-yield] |
@@ -27,7 +19,19 @@ metrology in general is on the {ref}`test category page <category-test>`.
 | SkyWater-listed tool | None on the capabilities page; a job posting reads "SEM/AIT/KLA/SP1/EV300/1X"[^job-06] |
 | SKY130 steps | 64 steps; see {ref}`SKY130 steps assigned to this class <machine-defect-inspection-steps>` |
 
+:::{seealso}
+In-line
+metrology in general is on the {ref}`test category page <category-test>`.
+:::
+
 ## What the machine class is and how it works
+
+Patterned-wafer inspectors scan product wafers and
+compare each die with its neighbours, so that a difference marks a
+defect. Review stations, optical or electron-beam, then revisit a sample
+of the defects found and classify them. The output is a defect map
+rather than a measurement, and it feeds excursion control and yield
+learning.
 
 Inspection tools differ from the metrology tools of the same fab in what
 they return. A film gauge or a {ref}`CD-SEM <machine-cd-sem-overlay-metrology>`
@@ -46,13 +50,17 @@ early patents describe "A scanning laser contaminant and defect detector
 for reflective surfaces, having a light collector for increasing
 sensitivity to scattered light",[^pat-scan-tencor] and then "A two-stage
 light collector" that re-images the scattered light onto a
-detector.[^pat-collector-tencor] A later KLA-Tencor patent, aimed at
+detector.[^pat-collector-tencor]
+
+**A later, oblique-illumination patent.** A later KLA-Tencor patent, aimed at
 inspecting "not only bare or unpatterned wafers but also rough films",
 collects the light scattered from a normal and an oblique beam with a
-curved mirror, compares the two signals "to distinguish between particles
+curved mirror.[^pat-oblique-kla] It compares the two signals "to distinguish between particles
 and COPs" (crystal-originated particles), and uses "Butterfly-shaped
 spatial filters" to restrict detection to certain azimuthal
-angles.[^pat-oblique-kla] The scattered signal is converted into
+angles.[^pat-oblique-kla]
+
+The scattered signal is converted into
 a size: in Tencor's description of the Surfscan SP1, the amplitude of the
 signal "corresponds to the size of the defect detected".[^tencor-sp1-wp]
 Sizes are therefore equivalents, not dimensions; ITRS 2001 states its
@@ -60,25 +68,31 @@ sensitivity requirements in terms of "detecting accurately sized
 Polystyrene Latex (PSL) spheres" deposited on test and calibration
 wafers.[^itrs-2001-yield]
 
-The SP1, which Tencor introduced in June 1996,[^tencor-sp1-1996] illustrates
-the design choices; as Tencor's 1997 pages describe it, it used a fixed
+**The SP1's design.** The SP1, which Tencor introduced in June 1996,[^tencor-sp1-1996] illustrates
+the design choices. As Tencor's 1997 pages describe it, it used a fixed
 illumination beam, so that "the wafer be moved in two dimensions: It must
-be rotated and translated along a radius", with axi-symmetric collection
+be rotated and translated along a radius".[^tencor-sp1-tech] It used
+axi-symmetric collection
 optics that collect scattered light "independent of the defect's
-orientation on the wafer" — important for scratches, which scatter
-preferentially in one direction.[^tencor-sp1-tech] An optional
+orientation on the wafer".[^tencor-sp1-tech] This was important for scratches, which scatter
+preferentially in one direction. An optional
 bright-field channel, based on Nomarski phase contrast, found
 "difficult-to-detect defects—such as mounds and dimples" by "measuring the
-phase difference between two laser beams".[^tencor-sp1-tech] The same
+phase difference between two laser beams".[^tencor-sp1-tech]
+
+**Haze.** The same
 scan measures haze, "a characteristic closely associated with surface
 roughness", "down to a few parts per billion".[^tencor-sp1-wp] Haze
 matters in both directions: Scheer notes that "Microroughness, or haze,
 on wafer surfaces can mask the detection of particles by scanning surface
-inspection systems (SSIS)".[^scheer-1996] A rough or grainy film raises
+inspection systems (SSIS)".[^scheer-1996]
+
+A rough or grainy film raises
 the background, which is why Tencor sold a separate scanner that "Easily
-detects submicron defects on metal films and rough surfaces", and why the
+detects submicron defects on metal films and rough surfaces".[^tencor-unpatterned-1997]
+It is also why the
 ITRS table sets a coarser sensitivity for metal films (91 nm in 2001) than
-for bare silicon (70 nm).[^tencor-unpatterned-1997][^itrs-2001-yield]
+for bare silicon (70 nm).[^itrs-2001-yield]
 
 ### Patterned-wafer inspection
 
@@ -92,12 +106,13 @@ to keep neighbouring patterns registered.[^pat-inspect-kla] Tencor's Surfscan AI
 "the first in the industry to provide high-speed capture of both pattern
 defects and particles for in-line process monitoring", built on Tencor's
 "other laser scattering tools".[^tencor-ait-1995]
-KLA-Tencor's own product pages of 2002 set "High-throughput scanning for
+
+**Combined strategies.** KLA-Tencor's own product pages of 2002 set "High-throughput scanning for
 patterned wafer inspection" (AIT XP) beside "High-resolution imaging for
-patterned wafer inspection" (the 2351), and described its 23xx, AIT
+patterned wafer inspection" (the 2351).[^kla-aitxp][^kla-2351] They described its 23xx, AIT
 and eS20 series as a strategy "that combines inspection technologies that
 traditionally were isolated, such as brightfield/darkfield and
-e-beam";[^kla-aitxp][^kla-2351] we read the 23xx imaging tools as the
+e-beam".[^kla-aitxp][^kla-2351] We read the 23xx imaging tools as the
 bright-field and the AIT laser-scanning tools as the dark-field members of
 that grouping, which the pages do not spell out. Orbot Instruments
 patented a two-phase scheme: a fast laser scan of the whole surface, then
@@ -117,10 +132,12 @@ An inspector finds more events than engineers can look at, and does not
 say what they are. Review stations relocate a sample and image it at
 higher resolution. Tencor's CRS laser confocal review station was
 "Designed specifically for reviewing and classifying defects detected by
-automatic wafer inspection systems", could "discern features as small as
-0.15 micron", and made it "easy to distinguish pits from particles, and
+automatic wafer inspection systems", and could "discern features as small as
+0.15 micron".[^tencor-crs-1997] It made it "easy to distinguish pits from particles, and
 to determine whether a defect is located under, within or on top of a
-film or metal layer".[^tencor-crs-1997] KLA-Tencor's eV300 ("E-beam
+film or metal layer".[^tencor-crs-1997]
+
+**Electron-beam review.** KLA-Tencor's eV300 ("E-beam
 defect review") "Reads defect files from inspection and optical review
 systems" and "Features integrated automatic defect classification
 (ADC)".[^kla-ev300] Electron-beam tools also find defects that optics
@@ -128,8 +145,10 @@ miss: KLA-Tencor described e-beam review that redetects "hard-to-find
 yield-killers such as electrical and HAR defects",[^kla-defect-2002] and
 ITRS 2001 notes that high-aspect-ratio inspection for process verification
 "usually refers to SEM-type tools" and "includes voltage contrast
-capability".[^itrs-2001-yield] Classification was the bottleneck: Breaux and Singh
-note that it "is typically a manual process limited in its effectiveness
+capability".[^itrs-2001-yield]
+
+**Classification, the bottleneck.** Breaux and Singh
+note that classification "is typically a manual process limited in its effectiveness
 by human factors",[^breaux-1995] and Sherman, Tirosh and Smilansky call
 automated classification "one of the biggest challenges to successful
 integration of automated inspection into wafer manufacturing
@@ -150,50 +169,43 @@ fabs to sparse sampling, and asks for statistically optimised
 sampling.[^itrs-2001-yield] Tobin et al. describe spatial signature
 analysis, "an automated wafermap analysis procedure which performs a
 sophisticated defect clustering and signature classification of
-electronic wafermaps".[^tobin-1997] Yield impact is commonly estimated
+electronic wafermaps".[^tobin-1997]
+
+**Estimating yield impact.** Yield impact is commonly estimated
 from kill ratios (industry practice); Ono, Iwata and Watanabe found that
 such estimates become inaccurate when
 "parametric faults caused low yield or a large number of non-killer
 defects were included in inspection reports".[^ono-2002] Stapper's
 defect-sensitivity models, used at IBM for more than fifteen years, treat
 photolithographic defects of the same dimensions as the device and
-interconnection patterns and are related to test sites.[^stapper-1983] Tencor's SwiftAccess system "Integrates defect data
+interconnection patterns and are related to test sites.[^stapper-1983]
+
+Tencor's SwiftAccess system "Integrates defect data
 from multiple sources throughout a fab", and its "Control charts
 constructed on the SwiftAccess system can be displayed directly on the
 Surfscan AIT".[^tencor-defectdata-1997]
 
 ## Representative 200 mm-era models
 
-* **Tencor, then KLA-Tencor, unpatterned scanners.** The Surfscan 6220,
-  "Designed for detecting particles, pits and scratches on bare wafers,
-  wafers deposited with smooth blanket films, and for measuring haze on a
-  broad range of surfaces", and the Surfscan 6420 for metal films and
-  rough surfaces, "Also ideal for detecting defects on non-uniform films,
-  a critical requirement for CMP applications";[^tencor-unpatterned-1997]
-  the Surfscan SP1, introduced in June 1996,[^tencor-sp1-1996] for 200 mm
-  and 300 mm wafers at 150 and 100 wafers per hour;[^tencor-sp1-wp] and the
-  Surfscan SP1 DLS, described on a 2002 capture of KLA-Tencor's site, which
-  "Continues the industry-leading SP1 TBI platform" and added a backside
-  inspection module for "fully automated, non-destructive inspection of
-  the backsides of patterned (product) wafers".[^kla-sp1dls-2002]
-* **Laser-scanning patterned inspectors.** The Surfscan AIT (1995),
-  developed with SEMATECH as an "in-line defect inspection system for
-  0.25-micron technology";[^tencor-ait-1995] the Surfscan 7700, which
-  detected contaminants "below 0.20 micron" on "complex process levels
-  such as nitride, oxide and TEOS films";[^tencor-patterned-1997] and the
-  AIT XP, described on a 2002 capture, extending "the AIT II and AIT
-  III".[^kla-aitxp]
-* **Imaging inspectors.** KLA's 2020, used in Radin's 1988
-  defect-reduction work;[^radin-1988] the 2350 and its successor the 2351,
-  for "critical-defect detection at design rules of 0.13 µm and
-  smaller".[^kla-2351]
-* **Review stations.** Tencor's CRS laser confocal review station, with
-  the ADC module first offered on the CRS-1010;[^tencor-crs-1997][^tencor-adc-1996]
-  KLA-Tencor's CRS-3000 optical review and eV300 e-beam review systems,
-  listed together in 2002.[^kla-defect-2002][^kla-ev300]
-* **Orbot Instruments.** Patterned-wafer inspection with a two-phase
-  laser and high-resolution scheme and automatic defect
-  classification.[^pat-twophase-orbot][^sherman-1993]
+:::{table} Representative defect-inspection and review tools of the 200 mm era (figures as each source gives them)
+:widths: 16 18 8 58
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Tencor | Surfscan 6220 | — | "Designed for detecting particles, pits and scratches on bare wafers, wafers deposited with smooth blanket films, and for measuring haze on a broad range of surfaces"[^tencor-unpatterned-1997] |
+| Tencor | Surfscan 6420 | — | for metal films and rough surfaces, "Also ideal for detecting defects on non-uniform films, a critical requirement for CMP applications"[^tencor-unpatterned-1997] |
+| Tencor | Surfscan SP1 | 1996 | for 200 mm and 300 mm wafers at 150 and 100 wafers per hour[^tencor-sp1-1996][^tencor-sp1-wp] |
+| KLA-Tencor | Surfscan SP1 DLS | 2002 | "Continues the industry-leading SP1 TBI platform"; backside module for "fully automated, non-destructive inspection of the backsides of patterned (product) wafers"[^kla-sp1dls-2002] |
+| Tencor | Surfscan AIT | 1995 | developed with SEMATECH as an "in-line defect inspection system for 0.25-micron technology"[^tencor-ait-1995] |
+| Tencor | Surfscan 7700 | — | detected contaminants "below 0.20 micron" on "complex process levels such as nitride, oxide and TEOS films"[^tencor-patterned-1997] |
+| KLA-Tencor | AIT XP | 2002 | extending "the AIT II and AIT III"[^kla-aitxp] |
+| KLA | 2020 | — | used in Radin's 1988 defect-reduction work[^radin-1988] |
+| KLA-Tencor | 2350, 2351 | — | for "critical-defect detection at design rules of 0.13 µm and smaller"[^kla-2351] |
+| Tencor | CRS (CRS-1010) | — | laser confocal review station; the ADC module first offered on the CRS-1010[^tencor-crs-1997][^tencor-adc-1996] |
+| KLA-Tencor | CRS-3000 | 2002 | optical review[^kla-defect-2002] |
+| KLA-Tencor | eV300 | 2002 | e-beam review[^kla-ev300] |
+| Orbot Instruments | — | — | patterned-wafer inspection with a two-phase laser and high-resolution scheme and automatic defect classification[^pat-twophase-orbot][^sherman-1993] |
+:::
 
 ## At SkyWater
 
@@ -204,22 +216,33 @@ inspection tool. The nearest entries are "Reticle storage/handler/defect
 inspection" under "Photo Metrology", which as written concerns reticles,
 "Camtek Falcon (outgoing QA)" under "Sort", and the "FEI Dual Beam
 FIB/SEM" and "Hitachi S-4800" of the "Physical Analysis"
-group;[^skw-01] no step page assigns any of these to a SKY130 step. The
+group.[^skw-01] No step page assigns any of these to a SKY130 step.
+
+The
 public evidence for SkyWater's in-line inspection tools is a *Defect
-Technician 2* job posting — first retrieved from Indeed on 2026-08-30,
-no longer retrievable there and not archived, but still live as a
-LinkedIn repost of the same text, retrieved 2026-09-19 — which asks
+Technician 2* job posting. It was first retrieved from Indeed on
+2026-08-30, is no longer retrievable there and not archived, but is
+still live as a LinkedIn repost of the same text, retrieved 2026-09-19.
+It asks
 for:[^job-06]
 
 > "General operation of semiconductor defect metrology tools:
 > SEM/AIT/KLA/SP1/EV300/1X"
 
-Read term by term, on our reading: "AIT" and "SP1" match the product
-names of Tencor's Surfscan AIT patterned inspector and Surfscan SP1
-unpatterned scanner,[^tencor-ait-1995][^tencor-sp1-wp] and "EV300" that of
-KLA-Tencor's eV300 e-beam review SEM;[^kla-ev300] "SEM" and "KLA" could
-denote a review or analysis SEM and other KLA inspection tools, and "1X"
-is not explained. The posting gives no models, counts or process
+:::{table} How this reference reads the job-posting tool list
+:widths: 20 56 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "AIT" | Tencor's Surfscan AIT patterned inspector[^tencor-ait-1995] | our reading |
+| "SP1" | Tencor's Surfscan SP1 unpatterned scanner[^tencor-sp1-wp] | our reading |
+| "EV300" | KLA-Tencor's eV300 e-beam review SEM[^kla-ev300] | our reading |
+| "SEM" | could denote a review or analysis SEM | not stated |
+| "KLA" | could denote other KLA inspection tools | not stated |
+| "1X" | — | not stated |
+:::
+
+The posting gives no models, counts or process
 steps.[^job-06]
 
 ### Strength of the evidence
@@ -257,7 +280,9 @@ likely used at SkyWater"), as collected on the machines index:
 The two lists now match. {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`,
 {ref}`UPRIS <step-057>` and {ref}`BFR <step-060>` had briefly stopped
 grading this posting after the original Indeed listing went
-unretrievable with no archived copy; a live LinkedIn repost of the same
+unretrievable with no archived copy.
+
+A live LinkedIn repost of the same
 *Defect Technician 2* text, found 2026-09-19, restored the citation on
 all four, replacing the dead `JOB-01` entry (inventory key `JOB-06`;
 see the inventory). The grades otherwise fall on the starting-material page,
@@ -308,10 +333,12 @@ plans and defect limits are not public.
   unpatterned inspection after ashing and cleaning; the {ref}`strip category page <category-strip>` lists laser
   surface scanners among its metrology.
 * **After CMP.** The CMP pages from {ref}`CMPP <step-090>` onwards name
-  unpatterned or patterned inspection. Tencor
+  unpatterned or patterned inspection.
+
+  Tencor
   marketed the Surfscan 6420 for "non-uniform films, a critical
-  requirement for CMP applications" and the Surfscan AIT as "Ideal for
-  after-etch and post-CMP inspection levels";[^tencor-unpatterned-1997][^tencor-patterned-1997]
+  requirement for CMP applications".[^tencor-unpatterned-1997] It marketed the Surfscan AIT as "Ideal for
+  after-etch and post-CMP inspection levels".[^tencor-patterned-1997]
   ITRS 2001 notes that the buried patterns of a polished wafer let a
   grazing-angle laser inspector approximate unpatterned inspection for
   tool qualification.[^itrs-2001-yield]
@@ -321,7 +348,9 @@ plans and defect limits are not public.
   to {ref}`PDM <step-168>`) — name after-develop or optical inspection;
   the other 20, among them {ref}`FOM <step-004>`, {ref}`NPCM <step-078>`,
   {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>` and the implant masks
-  other than TUNM, do not. {ref}`P1M <step-061>` names bright-field
+  other than TUNM, do not.
+
+  {ref}`P1M <step-061>` names bright-field
   inspectors of the KLA-Tencor 2xxx class; KLA-Tencor paired the SP1 DLS
   with "after-develop inspection (ADI) for macro and micro defects" in its
   lithography-module strategy.[^kla-sp1dls-2002]
@@ -348,23 +377,22 @@ plans and defect limits are not public.
 
 ## Related pages
 
-* {ref}`category-test` — in-line metrology and electrical test.
-* {ref}`category-strip` and {ref}`category-cmp` — the strips, cleans and
-  polishes after which the step pages name inspection.
-* {ref}`category-substrate` — incoming wafer inspection.
-* {ref}`machine-starting-material` — the incoming-wafer scanner, marker
-  and sorter at SMAT.
-* {ref}`machine-cd-sem-overlay-metrology` — the metrology tools of the
-  lithography area.
-* {ref}`machine-film-thickness-metrology` — the thickness and stress gauges run on the same monitor
-  wafers.
-* {ref}`material-substrates` — test, monitor and particle-counting
-  wafers and their standards.
-* {ref}`machine-cross-section-sem-profilers` — sectioning and review of defects in physical analysis.
-* {ref}`machine-parametric-tester` — the electrical defect structures measured at
-  e-test.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
+* **Category.** {ref}`category-test` — in-line metrology and electrical
+  test. {ref}`category-strip` and {ref}`category-cmp` — the strips,
+  cleans and polishes after which the step pages name inspection.
+  {ref}`category-substrate` — incoming wafer inspection.
+* **Machines.** {ref}`machine-starting-material` — the incoming-wafer
+  scanner, marker and sorter at SMAT. {ref}`machine-cd-sem-overlay-metrology`
+  — the metrology tools of the lithography area.
+  {ref}`machine-film-thickness-metrology` — the thickness and stress
+  gauges run on the same monitor wafers.
+  {ref}`machine-cross-section-sem-profilers` — sectioning and review of
+  defects in physical analysis. {ref}`machine-parametric-tester` — the
+  electrical defect structures measured at e-test.
+* **Materials.** {ref}`material-substrates` — test, monitor and
+  particle-counting wafers and their standards.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
