@@ -71,8 +71,9 @@ In-force dropdown titles stay as they are (owner's wording).
 Status: the three index pages (machines cards + two-column lookup, materials per-material tables, masks
 "Find a mask" table, methodology moved below the lookups, captions) merged 2026-09-25 after review and a
 fix round. The twelve material pages merged 2026-09-26 after review, fix round, verification and a one-row
-round (specification tables now `Material | Source | What the source says`). Machine pages 1–15 in
-their fix round; machines 16–30, masks and categories to do.
+round (specification tables now `Material | Source | What the source says`). Machine pages 1–15 (cd-sem … pecvd) merged 2026-09-26 after review, fix round, verification and a
+final round (Year cells hold only the model's year; `:widths:` is inert). Machines 16–30, masks and
+categories to do.
 
 B1 step tables (generated), B3 index reorder, B4 model tables, B5 quick facts, B6 entry tables, B7 category
 comparisons and links to material pages, B8 mask H3s (after W0e), B9 step-link text (scripted), B12–B15.
