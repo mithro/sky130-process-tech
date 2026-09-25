@@ -411,3 +411,29 @@ lead); list items > 60 words 1 -> 0; tables with no caption 1 -> 0.
 Incremental `-W` build: clean. Screenshots at 400 px: both tables and
 all lists wrap cleanly, including the 3-column Photoresist/Developer
 table despite two prose columns.
+
+### `precursors.md`
+
+Rules applied: R-MODELS (9-row 3-column table), R-PARA (4 over-100-word
+paragraphs split at seams), R-LIST (the "Plasma dielectrics" over-60-word
+list item, a 4-part semicolon-joined enumeration, converted to a nested
+bulleted sub-list rather than a lead+continuation split, since each
+clause names a distinct group of steps), R-RELATED (Related pages
+grouped under bold labels).
+
+`check_preserved.py --allow-regrouped`: 0 undeclared differences. One
+`REGROUPED` printout, hand-checked: the Silane row's table cell merges
+what were two separate sentences (the SEMI C3.55 citation and the LC50
+hazard citation) into one table-row unit, so the numbers ('55', '0.96',
+'9,600', '4') now appear together where they were previously in two
+separate number_order units in the same order -- confirmed as the same
+digits, same order, just recombined by the table conversion.
+
+Over-cap counts, before -> after: paragraphs > 100 words 5 -> 1 (R-INTRO
+lead); list items > 60 words 1 -> 0; tables with no caption 0 -> 0 (none
+pre-existing besides quick-facts).
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: table and nested
+list wrap cleanly.

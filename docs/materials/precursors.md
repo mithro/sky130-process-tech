@@ -49,12 +49,16 @@ N₂O it gives oxide in HDP and PECVD
 tools,[^adams-1981-pecvd][^nguyen-1999] and with ammonia it gives
 nitride: Denisse et al. covered "the entire range of compositions from
 silicon oxide to silicon nitride" from SiH₄, N₂O and
-NH₃.[^denisse-1986] Its hazard is ignition: silane
+NH₃.[^denisse-1986]
+
+Its hazard is ignition: silane
 "undergoes spontaneous combustion in air, without the need for external
 ignition",[^wiki-silane] and Britton's paper on "the unusual combustion
 hazards of silane and its chlorides" gives "new experimental data
 presented showing the effects of sudden releases into free
-air".[^britton-1990] Dichlorosilane is the chlorinated relative used for
+air".[^britton-1990]
+
+Dichlorosilane is the chlorinated relative used for
 furnace nitride: "In its major use, it is mixed with ammonia (NH3) in
 LPCVD chambers to grow silicon nitride in semiconductor
 processing".[^wiki-dcs] Roenigk and Jensen modelled that growth in a hot-wall
@@ -82,7 +86,9 @@ dioxide in the semiconductor industry", and "At elevated temperatures
 deposited LPCVD TEOS oxide "at temperatures between 650 and 800
 °C".[^becker-1987] In a PECVD chamber the plasma lowers the temperature,
 and TEOS oxide conforms to steps better than silane oxide
-({ref}`category-deposition`). Ozone oxidises TEOS without a plasma: Fujino
+({ref}`category-deposition`).
+
+Ozone oxidises TEOS without a plasma: Fujino
 et al. found that "step coverage of the films changed from isotropic to
 flow shape with ozone concentration increase",[^fujino-1990] and later
 added "trimethylphosphate for PSG films".[^fujino-1991] Kwok et al.
@@ -123,6 +129,7 @@ the hydrogen reduction "is one‐half order in hydrogen, zero order in
 tungsten hexafluoride".[^mcconica-1986] Kleijn et al. modelled transport
 in a single-wafer reactor.[^kleijn-1991] The by-product is a hazard: "HF
 vapor is very aggressive and etches away most materials".[^wiki-wf6]
+
 Nucleation layers may use diborane, "a highly toxic, colorless, and
 pyrophoric gas",[^wiki-diborane] which NIOSH notes is "Usually shipped in
 pressurized cylinders diluted with hydrogen, argon, nitrogen, or
@@ -139,30 +146,21 @@ systems at the tool (industry practice). The statements below describe
 standards and general properties, not what SkyWater buys; SKY130's
 precursor grades and flows are not public.
 
-* **Silane.** SEMI C3.55 provides "specifications for silane (SiH4)" and
-  covers "requirements for bulk silane (SiH4) used in the semiconductor
-  industry".[^semi-c3-55] Silane is "slightly toxic", with an LC50 for
-  rats of "0.96% (9,600 ppm) over a 4-hour exposure".[^wiki-silane]
-* **Dichlorosilane.** "Dichlorosilane must be ultrapurified and
-  concentrated in order to be used for the manufacturing of
-  semiconducting epitaxial silicon layers"; it "is also very
-  toxic".[^wiki-dcs]
-* **Ammonia.** SEMI C3.12 is a "specification for ammonia (NH3) that is
-  used in the semiconductor industry", first published in 1983 and
-  reapproved in 2022 as C3.12-0116 (Reapproved 0922).[^semi-c3-12]
-* **TEOS.** A liquid precursor to silicon dioxide.[^wiki-teos]
-* **BTBAS.** A liquid aminosilane for 550–600 °C LPCVD
-  nitride.[^gumpher-2004]
-* **Silicon tetrafluoride.** A "toxic, corrosive" gas.[^wiki-sif4]
-* **Tungsten hexafluoride.** SEMI C70 provides "specifications for
-  tungsten hexafluoride (WF6) that are used in the semiconductor
-  industry" (revision C70-0924).[^semi-c70] The gas is "roughly 11 times
-  heavier than air".[^wiki-wf6]
-* **Ozone.** Generated at the tool from oxygen by corona
-  discharge;[^wiki-ozone] Applied's SACVD chamber used "TEOS
-  (tetraethylorthosilicate) and ozone".[^amat-sacvd-2000]
-* **Diborane.** Diluted in hydrogen, argon, nitrogen or
-  helium.[^niosh-diborane]
+:::{table} Representative precursors and grades, as public and current supplier documents describe them
+:widths: 20 12 68
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Silane | — | SEMI C3.55 provides "specifications for silane (SiH4)" and covers "requirements for bulk silane (SiH4) used in the semiconductor industry";[^semi-c3-55] silane is "slightly toxic", with an LC50 for rats of "0.96% (9,600 ppm) over a 4-hour exposure"[^wiki-silane] |
+| Dichlorosilane | — | "Dichlorosilane must be ultrapurified and concentrated in order to be used for the manufacturing of semiconducting epitaxial silicon layers"; it "is also very toxic"[^wiki-dcs] |
+| Ammonia | — | SEMI C3.12 is a "specification for ammonia (NH3) that is used in the semiconductor industry", first published in 1983 and reapproved in 2022 as C3.12-0116 (Reapproved 0922)[^semi-c3-12] |
+| TEOS | — | A liquid precursor to silicon dioxide[^wiki-teos] |
+| BTBAS | — | A liquid aminosilane for 550–600 °C LPCVD nitride[^gumpher-2004] |
+| Silicon tetrafluoride | — | A "toxic, corrosive" gas[^wiki-sif4] |
+| Tungsten hexafluoride | — | SEMI C70 provides "specifications for tungsten hexafluoride (WF6) that are used in the semiconductor industry" (revision C70-0924);[^semi-c70] the gas is "roughly 11 times heavier than air"[^wiki-wf6] |
+| Ozone | — | Generated at the tool from oxygen by corona discharge;[^wiki-ozone] Applied's SACVD chamber used "TEOS (tetraethylorthosilicate) and ozone"[^amat-sacvd-2000] |
+| Diborane | — | Diluted in hydrogen, argon, nitrogen or helium[^niosh-diborane] |
+:::
 
 ## At SkyWater
 
@@ -214,7 +212,9 @@ The film and process entries are SkyWater statements and rank as
 {ref}`machines index <machines-reading-evidence>`, that TEOS, silane,
 ammonia and BTBAS chemistries run at the fab, and that tungsten plugs are
 filled; they tie no precursor to a step and describe the fab in the
-2020s.[^skw-01] That the tungsten fill uses WF₆, that the furnace nitride
+2020s.[^skw-01]
+
+That the tungsten fill uses WF₆, that the furnace nitride
 uses dichlorosilane, and that SiF₄ and ozone are available, are
 industry practice that the step pages supply, not SkyWater statements.
 The Cypress report is strong for the passivation of one product in 2005
@@ -259,15 +259,19 @@ The steps fall into groups, as the index rows describe them:
   {ref}`GATENIT <step-058>` and {ref}`SPNIT <step-076>`; silane for the
   gate silicon at {ref}`SAGD <step-048>`; BTBAS as the low-temperature
   option at {ref}`SPNIT <step-076>` and {ref}`LINIT <step-104>`.
-* **Plasma dielectrics.** Silane for the HDP fills
-  ({ref}`FILOX <step-011>`, {ref}`PSG <step-089>`,
-  {ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`), with SiF₄ as the
-  fluorinated option at {ref}`NILD3 <step-115>` and
-  {ref}`NILD4 <step-126>`; TEOS or silane for the cap oxides, spacer
-  oxide and fuse oxide; silane and ammonia for the nitrides and the
-  capacitor oxynitride at {ref}`CAPILD <step-135>`,
-  {ref}`CAPILD2 <step-150>` and {ref}`NTSD <step-167>`; ozone only for
-  the TEOS route of {ref}`PSG <step-089>`.
+* **Plasma dielectrics.**
+  * Silane for the HDP fills
+    ({ref}`FILOX <step-011>`, {ref}`PSG <step-089>`,
+    {ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`), with SiF₄ as the
+    fluorinated option at {ref}`NILD3 <step-115>` and
+    {ref}`NILD4 <step-126>`.
+  * TEOS or silane for the cap oxides, spacer
+    oxide and fuse oxide.
+  * Silane and ammonia for the nitrides and the
+    capacitor oxynitride at {ref}`CAPILD <step-135>`,
+    {ref}`CAPILD2 <step-150>` and {ref}`NTSD <step-167>`.
+  * Ozone only for
+    the TEOS route of {ref}`PSG <step-089>`.
 * **Tungsten.** WF₆ with silane or diborane nucleation at the five
   tungsten fills.
 * **Ammonia outside deposition.** As a nitriding option at
@@ -345,15 +349,18 @@ not public.
 
 ## Related pages
 
-* {ref}`category-deposition` — CVD chemistry, films and chamber cleaning.
-* {ref}`machine-vertical-furnace-lpcvd`, {ref}`machine-pecvd`,
+* **Category.** {ref}`category-deposition` — CVD chemistry, films and
+  chamber cleaning.
+* **Machines.** {ref}`machine-vertical-furnace-lpcvd`, {ref}`machine-pecvd`,
   {ref}`machine-hdp-cvd` and {ref}`machine-tungsten-cvd` — the tools that
-  consume these precursors.
-* {ref}`machine-rapid-thermal-processor` — ammonia nitridation.
-* {ref}`material-process-gases` and {ref}`material-dopant-sources` — the
-  oxidants, carriers and phosphorus sources used with the precursors.
-* {ref}`material-etch-gases` — the NF₃ and fluorocarbon chamber cleans.
-* {ref}`materials-index` — all consumable classes and the films table.
+  consume these precursors. {ref}`machine-rapid-thermal-processor` —
+  ammonia nitridation.
+* **Materials.** {ref}`material-process-gases` and
+  {ref}`material-dopant-sources` — the oxidants, carriers and phosphorus
+  sources used with the precursors. {ref}`material-etch-gases` — the
+  NF₃ and fluorocarbon chamber cleans.
+* **Indexes.** {ref}`materials-index` — all consumable classes and the
+  films table.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
