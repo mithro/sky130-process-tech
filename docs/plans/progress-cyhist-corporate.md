@@ -2,11 +2,11 @@
 
 Agent: `cyhist-corporate`. Branch/worktree: `topic/cyhist-corporate` /
 `.worktrees/cyhist-corporate`. Evidence file: `data/history/corporate.yaml`
-(27 records so far). Verifier: this agent's own
+(30 records so far). Verifier: this agent's own
 `tmp/check_history_quotes.py` (not `tools/check_history_quotes.py` -- no
 such shared tool was visible on this branch; see that script's docstring).
 Run `uv run tmp/check_history_quotes.py data/history/corporate.yaml` --
-currently "27 records checked, 0 problems". Shared fetch cache:
+currently "30 records checked, 0 problems". Shared fetch cache:
 `/home/admin/github/mithro/sky130-process-tech/tmp/cyhist-cache/{filings,web}/`
 in the main checkout (not this worktree's own `tmp/`, which holds only this
 agent's scripts, per the plan's "Shared fetch cache" note).
@@ -301,6 +301,64 @@ reused for something else? None of the sources in this corpus resolve it
 directly. Recommend the QTP or literature agents' sources be checked for a
 "Fab 5" mention before the fabs.md page is drafted.
 
+## Additional acquisitions researched (this update)
+
+- **1999-01**: Cypress merged with **IC Works** (PC clock-chip maker, $130M)
+  -- a DIFFERENT company from "IC Designs, Inc." ($16M, 1993-1994, per
+  `cyhist-corp-sec-fundinguniverse`) despite the similar name and line of
+  business. **Do not conflate these two on the acquisitions timeline.**
+  `cyhist-corp-pr-1999-anchorchips` (mentioned in context).
+- **1999-05-21**: Cypress acquired **Anchor Chips Inc.** (San Diego, USB
+  peripheral microcontrollers) for $15M cash. `cyhist-corp-pr-1999-anchorchips`
+  (EE Times, retrieval caveat). No fab or named process technology attached
+  to this acquisition in the source -- product line only.
+- **1998 (foundry work) / 2000-07-31 (acquisition completed)**: Cypress's
+  **Fab 2 (Round Rock, Texas)** ran foundry work manufacturing **Silicon
+  Light Machines'** MEMS-based optical chips (Grating Light Valve --
+  aluminium mirrors on silicon nitride membranes) during the 1998
+  recession, using excess capacity; Cypress later acquired SLM outright
+  (completed 2000-07-31) and continued making its optical chips at Fab 2
+  "using standard CMOS processes". `cyhist-corp-pr-2000-silicon-light-machines`
+  (EDN). This is the corpus's clearest example of Fab 2 running a
+  non-core (MEMS/optical) process before its owner was acquired.
+- **2012 (outside the core 1982-2010 window, researched for the
+  coordinator's benefit since the task brief names it)**: **Ramtron
+  International** was **fabless** (Texas Instruments and Toshiba
+  manufactured its F-RAM), not an owner of a fab Cypress inherited --
+  **this corrects the task brief's framing** of Ramtron as an acquisition
+  that "brought ... fabs". `cyhist-corp-sec-ramtron-fabless` (a web-search
+  summary only, no cached document or quote -- flagged `notes` recommends a
+  primary-source follow-up before relying on it for anything beyond this
+  fabless correction).
+
+## FY1994 10-K hunt: further negative results (this update)
+
+Checked two more candidate accessions from the Wayback CDX pull of CIK
+791915's Archives folder, both with genuine 200-status snapshots:
+`0000315066-94-000316` (3,781 bytes -- too small to be a 10-K, not
+identified further) and `0000791915-97-000004` (fetched in full: another
+DEF 14A, the 1997 proxy, filed 1997-04-25). Still no 10-K or 10-Q found for
+FY1994-1997 self-filed by Cypress under CIK 791915 beyond the two 1996
+10-Qs already in the corpus. Untried candidates remain:
+`0000315066-94-001044`, `0000350440-96-000017`, `0000350440-96-000040`,
+`0000791915-96-000004`, `0000791915-97-000010`, `0000791915-97-000012`.
+
+## FY2000 and FY1999 annual reports: technical limitation found
+
+`filings/ar-fy2000.txt` (cached, 13 MB source PDF) extracts to almost no
+text at all (224 lines for 56 pages, nearly all blank) -- this is a
+glossy, apparently image-based or fully-custom-font annual report that
+`pypdf` cannot read, the same failure mode as FY2006's cover/president's-
+letter pages but affecting the *entire* FY2000 document, including
+whatever Item 1 Business section it contains. **This is a machine-
+readability problem, not a confirmed absence of content** -- OCR (out of
+scope for this pass) would likely recover it. `filings/ar-fy1999.txt`
+extracts fine but appears to be only the glossy shareholder-letter/product
+section, not the full 10-K text (no "Item 1"/"Business" heading found) --
+its only usable process-technology sentence is the one already in
+`data/filings.yaml` ("bulk of its production to 0.25-micron technology"),
+confirmed still present but not extended with anything new.
+
 ## Retrieval difficulties
 
 * **EE Times hangs on direct fetch.** Four EE Times URLs
@@ -432,24 +490,30 @@ directly. Recommend the QTP or literature agents' sources be checked for a
 
 ## Counts
 
-* 27 records in `data/history/corporate.yaml`, covering: 1 pre-EDGAR 10-K
+* 30 records in `data/history/corporate.yaml`, covering: 1 pre-EDGAR 10-K
   (FY1993, reused from filings.yaml with new quotes added), 2 EDGAR proxy
   statements (1994, 1995 -- one record for both, same text), 2 EDGAR 10-Qs
   (Q1 and Q3 1996), 13 annual reports (FY1995-1999, 2001-2006, 2008-2010),
-  7 trade-press articles (EE Times x4, Electronics Weekly, Semiconductor
-  Digest, ConnectCRE), 1 press release (Innopower/SONOS, via a direct
+  9 trade-press articles (EE Times x5, Electronics Weekly, Semiconductor
+  Digest, ConnectCRE, EDN), 1 press release (Innopower/SONOS, via a direct
   mirror), 2 secondary company-history references (FundingUniverse and
   Encyclopedia.com -- explicitly noted as one underlying Gale source, not
-  two independent ones).
-* 33 documents fetched and cached in total under
+  two independent ones), 1 unverified web-search summary (Ramtron fabless
+  correction, no cached document, deliberately marked as such).
+* 36 documents fetched and cached in total under
   `tmp/cyhist-cache/{filings,web}/` (some not yet turned into records: the
-  FY2000 annual report, the FY1993 duplicate probe, several CDX/availability
-  probe files, two failed fetches (mouser PCN, theporterco 404)).
-* 0 verifier problems (`tmp/check_history_quotes.py`, "27 records checked,
+  FY2000 annual report -- see the technical-limitation note above -- the
+  FY1993 duplicate probe, several CDX/availability probe files, two
+  1994/1997 proxy/10-Q candidates fetched during the FY1994 10-K hunt that
+  turned out not to be 10-Ks, two failed fetches (mouser PCN, theporterco
+  404)).
+* 0 verifier problems (`tmp/check_history_quotes.py`, "30 records checked,
   0 problems").
 * 5 seed claims addressed: 4 SUPPORTED outright (CTI/Fab 2/warehouses;
   C8-to-Grace 2006; Innopower 2011; -- and the Fab 4/Control-Data-VTC seed
   claim is corrected to Fab 3, see above), 1 PARTIALLY SUPPORTED (S4/S8).
+  Plus one unprompted correction found and flagged: Ramtron (2012) was
+  fabless, not a fab acquisition, despite the task brief's framing.
 
 ## Tools
 

@@ -1049,6 +1049,111 @@ records:
     "Fab 5" project (cyhist-corp-1996-ar-fabv-fab1rd,
     cyhist-corp-pr-1998-restructure) even though it does not use that name.
 
+- id: cyhist-corp-pr-1999-anchorchips
+  source:
+    publisher: EE Times
+    title: "Cypress buys Anchor Chips to bolster USB strategy"
+    date: 1999-05-25
+    form: trade press article
+  url: https://www.eetimes.com/cypress-buys-anchor-chips-to-bolster-usb-strategy/
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/eetimes-anchorchips-1999.txt
+  sha256: c88cfe8872e8863a33b012a94c017f774d7da225d224af2df8f6241b07a05f17
+  quotes:
+  - text: "printers, scanners, xDSL modems and digital cameras"
+    location: "article body"
+  - text: "the leading supplier of peripheral controllers in the USB market"
+    location: "article body"
+  - text: "This was Cypress's second major acquisition in 1999, following its January merger with IC Works (a PC clock-chip maker valued at $130 million)."
+    location: "article body (context paragraph)"
+  claims:
+  - {subject: "Anchor Chips Inc. (San Diego)", attribute: "acquisition", value: "acquired by Cypress for $15 million cash, effective 1999-05-21 (announced 1999-05-25); designer of high-speed USB peripheral microcontrollers", date: "1999-05"}
+  - {subject: "IC Works", attribute: "acquisition (distinct from IC Designs)", value: "PC clock-chip maker, merged with Cypress in January 1999, valued at $130 million", date: "1999-01"}
+  notes: >-
+    RETRIEVAL CAVEAT as the other EE Times records in this corpus (hangs on
+    direct fetch; cached text is a WebFetch extraction, not independently
+    checkable raw HTML; a Wayback capture was not tested for this
+    particular URL). IMPORTANT NAMING NOTE for the coordinator: this
+    "IC Works" (PC clock chips, $130M, January 1999) is a DIFFERENT company
+    from "IC Designs, Inc." (programmable clock oscillators, $16M,
+    1993-1994, per cyhist-corp-sec-fundinguniverse) despite the similar
+    line of business and near-identical name -- do not conflate them on the
+    acquisitions timeline. Neither acquisition is described here as
+    bringing a fab or a named process technology, only product lines.
+
+- id: cyhist-corp-pr-2000-silicon-light-machines
+  source:
+    publisher: EDN
+    title: "Why Cypress acquired Silicon Light Machines"
+    date: 2000-07-31
+    form: trade press article
+  url: https://www.edn.com/why-cypress-acquired-silicon-light-machines/
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/edn-slm-acquisition.txt
+  sha256: 866d6fecb1a0b6b9053568269595b2471dda2eb3303f1da531a0da02028c4158
+  quotes:
+  - text: >-
+      During the 1998 recession, Cypress's Round Rock, Texas fabrication
+      facility took on foundry work manufacturing SLM's optical chips to
+      utilize excess capacity.
+    location: "article body"
+  - text: >-
+      The GLV chip represents a "1,080-pixel" optical switching element
+      using "tiny aluminum mirrors mounted on flexible silicon nitride
+      membranes."
+    location: "article body"
+  - text: "Cypress Round Rock, Texas manufactured all SLM optical chips using standard CMOS processes."
+    location: "article body"
+  claims:
+  - {subject: "Silicon Light Machines (SLM)", attribute: "acquisition", value: "acquired by Cypress, completed 2000-07-31 (Cypress had already taken a 5% stake, $2.25M, and a board seat earlier)", date: "2000-07-31"}
+  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "foundry work for SLM", value: "ran foundry manufacturing for SLM's MEMS-based optical chips (Grating Light Valve) starting during the 1998 recession, using excess capacity; continued as Cypress's own fab after the 2000 acquisition, using standard CMOS processes", date: "1998 (foundry start), 2000 (acquisition)"}
+  notes: >-
+    RETRIEVAL CAVEAT: fetched via WebFetch, not independently verified as a
+    direct-fetch or Wayback capture (not tested either way for this URL --
+    unlike the EE Times records, this is caution rather than a confirmed
+    access failure). This is the corpus's clearest example of a fab (Fab 2)
+    running a non-Cypress-core process (MEMS/optical, not CMOS memory or
+    logic) as contract/foundry work before the technology's owner was
+    acquired -- relevant context for cyhist-corp-pr-2007-fab2exit-semidigest's
+    description of Fab 2 later making only "legacy USB, programmable logic,
+    timing and communications devices" (SLM/optical had evidently moved on
+    or wound down by 2007; not confirmed either way in this pass).
+
+- id: cyhist-corp-sec-ramtron-fabless
+  source:
+    publisher: "Yahoo Finance / Nasdaq (Zacks Analyst Blog), web search summary"
+    title: "Cypress Finally Acquires Ramtron / Cypress Closes Ramtron Buyout"
+    date: 2012-11-23
+    form: secondary financial-news summary (not independently fetched; see notes)
+  url: https://www.nasdaq.com/articles/cypress-closes-ramtron-buyout-analyst-blog-2012-11-23
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: null
+  sha256: null
+  quotes: []
+  claims:
+  - {subject: "Ramtron International Corporation", attribute: "acquisition and fab status", value: "acquired by Cypress; merger completed 2012-11-20; Ramtron was a FABLESS F-RAM (ferroelectric RAM) company using Texas Instruments and Toshiba as manufacturing/foundry partners -- it did not bring an owned fab to Cypress", date: "2012-09 (agreement) to 2012-11-20 (completed)"}
+  notes: >-
+    NOT INDEPENDENTLY VERIFIED -- this record has no cached document and no
+    verbatim quote (deliberately left `quotes: []` so the checker does not
+    need to find text that was never fetched); it records only a WebSearch
+    tool summary, used here to flag an IMPORTANT CORRECTION to this task's
+    brief, which lists Ramtron among "acquisitions that brought process
+    technology or fabs": multiple secondary sources found by search
+    (Yahoo Finance, Nasdaq/Zacks, Wikipedia's Ramtron International page)
+    describe Ramtron as fabless, manufacturing through Texas Instruments and
+    Toshiba, not as an owner of a fab Cypress inherited. Ramtron's F-RAM is
+    a process *technology* (brought via IP/product line, not a fab) and is
+    also outside this task's core 1982-2010 window (deal announced
+    2012-09-19, completed 2012-11-20). Recommend the coordinator or a later
+    pass fetch a primary source (Cypress's FY2012 10-K, or the Ramtron
+    press release at
+    https://www.sec.gov/Archives/edgar/data/849502/000119312512269032/d366157dex992.htm,
+    via a Wayback copy, not sec.gov directly) before relying on this
+    record for anything beyond the fabless correction.
+
 known_gaps:
 - description: "Cypress annual reports / 10-Ks for fiscal years 1986-1992 (the IPO year through the year before the earliest report found)"
   reason: >-
