@@ -596,6 +596,7 @@ ops:
     op: ions
     where_open: psdres
     tilt_deg: 0
+    pitch: 16
     label:
       title: "PSDI implant"
       note: "p-type; species, energy and dose are not public"
@@ -604,6 +605,7 @@ ops:
     op: ions
     where_open: psdres
     tilt_deg: 0
+    pitch: 16
     label:
       title: "2PSDI implant"
       note: "p-type; what it adds is not public"
@@ -632,6 +634,7 @@ ops:
     from_surface: 0
     thickness: 14
     z: 3
+    route: over
     label:
       title: "N+ source/drain"
       note: "NSDI, step 086"
@@ -640,9 +643,10 @@ ops:
     op: ions
     where_open: nsdres
     tilt_deg: 0
+    label_x: 199
     label:
       title: "NSDI implant"
-      note: "n-type; species, energy and dose are not public"
+      note: "species, energy, dose not public"
       basis: public
   - step: "087"
     op: strip
