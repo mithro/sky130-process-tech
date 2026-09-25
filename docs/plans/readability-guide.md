@@ -2270,6 +2270,34 @@ if one is wanted: `--allow-template-intro`, which matches only
 `^This page describes the (class|classes|two classes)[^.]*\.$` after whitespace flattening, and
 prints it, rather than requiring this by-hand confirmation each time.)
 
+**4a. `--allow-deduplicated` (R-QUICKFACTS).** Deleting a quick-facts cell's copy of a value
+already checked to be in the body (R-QUICKFACTS step 2) always produces a `LOST
+quotes`/`markers`/`numbers` line, since the string genuinely left the summary table. Re-run with
+`--allow-deduplicated` on a `docs/machines/*.md` or `docs/materials/*.md` page and read the
+printed `DEDUPLICATED` line: it names the string the tool confirmed is still in the body,
+unchanged. Paste that line into the progress file. If a loss is not reclassified this way even
+with the flag, treat it as a real loss and go find the missing text — do not reach for
+`--allow-added` instead.
+
+**4b. The `words` line.** Every run also prints `WORDS LOST: ...` / `WORDS ADDED: ...` for the
+page's ordinary prose (outside `{dropdown}` bodies, `{figure}` fences, generated blocks and
+footnote definitions) — the one category that can see a plain word dropped or added with no
+number, quotation, marker or hedge attached to it (a first draft of step 074 lost "removing
+step:" this way with every other check green). It never fails the run by itself: a lost
+connective word from splitting or joining a sentence is normal, and you do not need to explain
+it in the progress file. A lost *content* word — anything you would miss reading the sentence
+aloud — is worth a second look. Run with `--strict-words` as a final check before you finish the
+page (not while still mid-edit, when word counts are expected to be in flux): it fails on any
+LOST word outside the small function-word stop-list, which is exactly the "did I drop a word"
+gate 074 needed.
+
+**4c. Two informational WARN lines**, printed once per page (not part of the before/after diff):
+a `WARN glance number/marker ... does not recur in the body below` means an "At a glance" bullet
+states something the body text does not (any more); a `WARN '*SkyWater says:*' line has no
+quotation mark or skw-/cyp- marker` means that line paraphrases SkyWater without quoting or
+citing it. Neither fails the run, but fix both before moving on — they are exactly the two
+mistakes writers keep making when trimming a glance box or an evidence bullet.
+
 **5. Checkers**, from §4 for your page type, then always these:
 
 ```

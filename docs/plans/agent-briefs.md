@@ -83,21 +83,23 @@ uv run python tools/check_preserved.py [--base main] [paths…]
 
 With no paths it finds every `docs/**/*.md` file outside `docs/plans` that
 differs from `--base` (default `main`) and compares each one, base revision
-against the working tree, in nine categories: footnote markers and
-definitions, numeric tokens, the *ordered* sequence of numbers that share
-a table row, list item, heading, fence caption/title or sentence
-(`number_order` — see below), quoted strings, `{ref}`/`{term}`/`{doc}`
-targets and URLs, hedge-phrase counts, whole identifier tokens
-("SKY130", "1X"), and the text inside every `{dropdown}` block. Anything
-**lost** always fails the check. Anything **added** is printed either way
-(tagged "(declared)" when it was), and fails unless its category is
-declared with `--allow-added` (a comma-separated list, e.g.
-`--allow-added refs,numbers` for a page where a new table adds step
-numbers already present in prose elsewhere on the page). A changed
-`{dropdown}` body always fails unless the edit is deliberately one the
-dropdown text itself, with `--allow-dropdown-edits`. Exit status is 1 on
-any undeclared difference; `uv run python tools/check_preserved.py
---selftest` exercises the checker itself and touches no files.
+against the working tree, in nine multiset categories plus a tenth,
+`words` (below): footnote markers and definitions, numeric tokens, the
+*ordered* sequence of numbers that share a table row, list item, heading,
+fence caption/title or sentence (`number_order` — see below), quoted
+strings, `{ref}`/`{term}`/`{doc}` targets and URLs, hedge-phrase counts,
+whole identifier tokens ("SKY130", "1X"), and the text inside every
+`{dropdown}` block. Anything **lost** in the first nine always fails the
+check (unless `--allow-deduplicated` reclassifies it — see below).
+Anything **added** is printed either way (tagged "(declared)" when it
+was), and fails unless its category is declared with `--allow-added` (a
+comma-separated list, e.g. `--allow-added refs,numbers` for a page where a
+new table adds step numbers already present in prose elsewhere on the
+page). A changed `{dropdown}` body always fails unless the edit is
+deliberately one the dropdown text itself, with `--allow-dropdown-edits`.
+Exit status is 1 on any undeclared difference; `uv run python
+tools/check_preserved.py --selftest` exercises the checker itself and
+touches no files.
 
 MyST fence lines (`:::{table} Caption`, a bare `:::`/```` ``` ````) and
 directive option lines (`:widths:`, `:width:`, `:name:`, `:class:`,
@@ -109,11 +111,18 @@ caption made from a sentence that used to sit above the table) is still
 counted normally, as its own unit. An ATX heading is always its own unit
 too, and always ends whatever paragraph came before it even with no
 blank line before the heading's body — so an R-H3 conversion never needs
-to omit that blank line to work around the checker. An inline code span's
-backtick delimiters are stripped (its content is kept) before `{ref}`/
-`{term}`/`{doc}` roles are matched, so a role shown as a literal code
-example (documenting the syntax itself) is never misread as a real
-invocation.
+to omit that blank line to work around the checker. A `{ref}`/`{term}`/
+`{doc}` role is matched and removed as one atomic unit *before* any inline
+code span is masked, so a role shown as a literal code example
+(documenting the syntax itself) is never misread as a real invocation,
+and — the fix that landed after batches 2 and 3 hit it (G15/T-new-1) — a
+role's own closing backtick is never mistaken for the opening delimiter of
+an unrelated code span later on the same line, which used to silently eat
+the hedged prose between them. A quotation is matched per paragraph, up
+to 800 characters (raised from 400 for the same reason: a longer
+quotation used to desynchronise every later quotation's pairing on the
+page); `HEDGES` now also includes "roughly", "of order", "of the order
+of", "light", "typically", "usually" and "likely".
 
 **`number_order`.** The plain `numbers` category is a multiset: "6 of
 171" and "171 of 6" are the same two numbers, so a transposition inside
@@ -159,19 +168,59 @@ is still visible.
 **Read every reported line regardless.** The check is necessary, not
 sufficient: besides `number_order`'s own limits above, it has no notion
 of "the same claim" across a move, so a fact relocated to a different
-table cell, a footnote marker moved from one claim to an adjacent one
-that already carries a citation, or invented prose that carries no
-number, quotation, marker or hedge, can all pass with nothing printed.
-An addition you did not expect, or a loss in a category you meant to
-leave untouched, usually means the edit moved or reworded something
-incorrectly rather than only re-presenting it — but a silent page is not
-proof the edit is safe, only that this tool's checks did not catch a
-problem; read the diff itself, particularly around any table a weaker
-edit might have "completed" with an invented value. Record, in the
-branch's progress file, every `--allow-added` category used on a page and
-why. A model that finds an arithmetic slip or factual doubt while
-re-presenting text reports it in the branch's progress file; it does not
-fix it here.
+table cell, or a footnote marker moved from one claim to an adjacent one
+that already carries a citation, can pass with nothing printed. Invented
+or dropped prose that carries no number, quotation, marker or hedge is
+now at least *visible*, informationally, in the `words` line below — but
+that line does not fail the run by itself, so still read it. An addition
+you did not expect, or a loss in a category you meant to leave untouched,
+usually means the edit moved or reworded something incorrectly rather
+than only re-presenting it — but a silent page is not proof the edit is
+safe, only that this tool's checks did not catch a problem; read the
+diff itself, particularly around any table a weaker edit might have
+"completed" with an invented value. Record, in the branch's progress
+file, every `--allow-added` category used on a page and why. A model
+that finds an arithmetic slip or factual doubt while re-presenting text
+reports it in the branch's progress file; it does not fix it here.
+
+**The `words` line.** Every run prints `WORDS LOST: ...` / `WORDS ADDED:
+...` when the page's ordinary prose (outside `{dropdown}` bodies,
+`{figure}` fences, generated blocks and footnote definitions) gained or
+lost a word, case-folded, that none of the other eight categories would
+otherwise notice — the gap a first draft of step 074 fell into, dropping
+"removing step:" through an overlapping replacement with every other
+check green (rd-steps-064-075.md guide problem 4). Read it like any other
+informational line: a lost connective word from a routine sentence split
+or join is normal and not a problem; a lost content word (a verb, a noun,
+a qualifier — anything you would notice missing if you read the sentence
+aloud) is a real edit to go back and check. It never fails the run on its
+own. Pass `--strict-words` to turn a LOST word that is not one of a small
+set of common function words ("the", "of", "is", and the like — see
+`WORDS_STOPLIST` in the tool) into a hard failure; use this on a final
+pass over a page, not while still splitting sentences, since a mid-edit
+page routinely has real, temporary word-count churn.
+
+**`--allow-deduplicated`.** R-QUICKFACTS asks you to delete a quick-facts
+cell's copy of a value once you have checked the same words are in the
+body. Doing that always produces a `LOST quotes`/`markers`/`numbers` line,
+because the string is genuinely gone from the summary table even though
+it is still on the page. Re-run with `--allow-deduplicated` (only on
+`docs/machines/*.md` and `docs/materials/*.md`) and read the printed
+`DEDUPLICATED` line: it names the string and confirms the tool found it,
+unchanged, in the body. If a loss is not reclassified this way even with
+the flag, it is a real loss (the body copy is missing too, or changed) —
+go find it, do not add the flag to more categories to make it go away.
+
+**Two more informational lines.** `WARN glance number/marker ... does
+not recur in the body below` means an "At a glance" bullet states a
+number or cites a marker that the page's body no longer backs up —
+usually because the body wording changed and the box was not updated to
+match, or vice versa. `WARN '*SkyWater says:*' line has no quotation mark
+or skw-/cyp- marker` means exactly that: either quote SkyWater's own
+words or cite the source, so a reader can tell what SkyWater actually
+said from what this reference infers. Neither line fails the run; both
+name the page and line, and both are worth fixing before you finish the
+page.
 
 ## Writer brief (step pages)
 
