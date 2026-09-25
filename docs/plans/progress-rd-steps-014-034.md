@@ -64,6 +64,36 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 022-hvtpm.md — done (the densest page in the batch so far; no in-force dropdown in the body)
+
+Rules applied: R-H3 (three new H3s under "What this step is" — `### What the public record
+shows` (the "V vs. Vt" naming evidence), `### Key numbers` (the `hvtp` design-rule table),
+`### Competing readings` (the reticle-polarity argument and the `CLHVTPM` error-check table) —
+well under the 6-H3 ceiling), R-LIST (the three-marker "PDK is unambiguous" sentence → bullets),
+R-TABLE (twice: the `hvtp` design rules, and the four `chvtpm.*` error-message checks, kept as
+quoted rule text since each check is a single self-contained quotation, avoiding the
+quote-splitting mistake found on 015), R-PARA/R-SENTENCE (throughout, including the varactor
+capacitance paragraphs — kept as prose, not tabulated, because the "which value belongs to
+which device" pairing in the capacitance-sweep sentence was ambiguous enough on a close reading
+that transposing it into table cells risked a wrong pairing; restructuring stayed at the
+sentence level, where every number's own words stay attached to it), R-HEDGE step 1 (italic
+lead-in), R-TOOLS (3 "Strength:" bullets split, no recap table), R-RELATED (`Same category:`
+label; `Mask:` bullet merged per the pilot's M6 convention), R-OPENQ (bold labels on all three
+bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 7 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 0 → 0; sentences > 45 words 8 → 1 (same figure
+caption); table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/022-hvtpm.md`:
+`quotes`, `hedges` and plain `numbers` (condition (a)) show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for three tuples: the two new tables' rows regroup cleanly
+(each row's numbers are a subsequence of the original design-rule/error-check sentence, in the
+same order), and the varactor-capacitance tuple mismatch is a single stranded "1.8" from the
+sentence-splitting, the familiar Guide-problem-11 pattern. All other checkers pass; `-W` build
+clean. Screenshots (desktop + 400 px) read cleanly top to bottom: both new tables hold at 400 px
+without horizontal scroll, and every new H3, bullet list and R-TOOLS block reads correctly.
+
 ### 021-lvtpis.md — done (no in-force dropdown on this page)
 
 Rules applied: R-SENTENCE/R-PARA throughout (lead paragraph, the "hardest strip" paragraph, the

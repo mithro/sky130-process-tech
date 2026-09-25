@@ -10,6 +10,21 @@
 | **Previous step** | {ref}`LVTPIS <step-021>` |
 | **Next step** | {ref}`PCHI <step-023>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** opens resist windows for the high-Vt PMOS channel implants
+  (`PCHI`, `PNCHI`).
+* **Why:** gives SKY130 a third 1.8 V PMOS threshold for low-leakage
+  design, since the baseline threshold is set through the N-well mask.
+* **Public numbers:** minimum `hvtp` width and spacing 0.380 µm
+  (hvtp.1, hvtp.2).[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (existence); inference (assignment).[^skw-01]
+* **Not public:** which reticle-polarity reading is correct (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `HVTPM` prints the *high-Vt P-channel mask*: photoresist is coated on
@@ -30,44 +45,70 @@ stripped at {ref}`PCHIS <step-025>`.
 Before, the bare wafer with its N-well; after, resist over the NMOS side and a window over the PMOS. The PDK's mask table lists "High Vt PCh*, HVTPM".[^pdk-05] The page sets out two readings of the opening — over the drawn `hvtp` devices only, or over most low-voltage N-well outside `lvtn` — and, taking this PMOS as a high-Vt (`hvtp`) device, as the whole slice is read (an NMOS beside a high-Vt PMOS), it lies in the window on either; which matches the plate is not public.[^pdk-errors] The resist edge in the trench is illustrative. The NMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
+### What the public record shows
+
 A note on the name. The step list used in this reference gives the name
 "High V P-channel implant mask", which could be read as *high-voltage*.
-The PDK is unambiguous that the "V" is a threshold: the mask table lists
-"High Vt PCh*, HVTPM";[^pdk-05] the drawn layer `hvtp` (GDS 78:44) is
-"High-Vt LVPMOS implant" and the generated mask `chvtpm` (GDS 97:0) is
-"High Vt Pch mask", with mask add/drop purposes 97:43 and
-97:42;[^pdk-06] and the rule table's function line reads "Define Vt
-adjust implant region for high Vt LV PMOS".[^pdk-periph] The device it
-creates is `pfet_01v8_hvt`, the "1.8V high-VT PMOS FET", and the high-Vt
-varactor option `cap_var_hvt`.[^pdk-07] The "LV" in the layer's
-description makes the point twice: this is a low-voltage (1.8 V) device
-with a high threshold, nothing to do with the 5 V or 20 V families.
 
-The design rules are as coarse as those of `lvtn`: minimum width
-0.380 µm (hvtp.1), minimum spacing 0.380 µm (hvtp.2), minimum enclosure
-of a PMOS by `hvtp` 0.180 µm (hvtp.3), minimum spacing from a PMOS not
-meant to be high-Vt 0.180 µm (hvtp.4), minimum area 0.265 µm² (hvtp.5,
-hvtp.6), and no overlap with `lvtn`, with 0.380 µm spacing between the
-two (lvtn.9).[^pdk-periph] Unlike `lvtn`, whose rule heading says it
+The PDK is unambiguous that the "V" is a threshold:
+
+* the mask table lists "High Vt PCh*, HVTPM";[^pdk-05]
+* the drawn layer `hvtp` (GDS 78:44) is "High-Vt LVPMOS implant" and
+  the generated mask `chvtpm` (GDS 97:0) is "High Vt Pch mask", with
+  mask add/drop purposes 97:43 and 97:42;[^pdk-06]
+* the rule table's function line reads "Define Vt adjust implant
+  region for high Vt LV PMOS".[^pdk-periph]
+
+The device it creates is `pfet_01v8_hvt`, the "1.8V high-VT PMOS FET",
+and the high-Vt varactor option `cap_var_hvt`.[^pdk-07] The "LV" in the
+layer's description makes the point twice: this is a low-voltage
+(1.8 V) device with a high threshold, nothing to do with the 5 V or
+20 V families.
+
+### Key numbers
+
+The design rules are as coarse as those of `lvtn`:
+
+| Rule[^pdk-periph] | Constrains | Value |
+|---|---|---:|
+| hvtp.1 | minimum width | 0.380 µm |
+| hvtp.2 | minimum spacing | 0.380 µm |
+| hvtp.3 | minimum enclosure of a PMOS by `hvtp` | 0.180 µm |
+| hvtp.4 | minimum spacing from a PMOS not meant to be high-Vt | 0.180 µm |
+| hvtp.5, hvtp.6 | minimum area | 0.265 µm² |
+| lvtn.9 | no overlap with `lvtn` | 0.380 µm spacing |
+
+Unlike `lvtn`, whose rule heading says it
 *blocks* an implant, `hvtp` is described as the *region that receives*
 the implant, so we read the reticle polarity as straightforward: resist
 is removed over `hvtp`. That reading is an inference from the layer
-description; one public derivation from the drawn MPW
+description.
+
+One public derivation from the drawn MPW
 tape-out layouts, which cites no source, renders it as (`nwell` NOT
 `hvi`) NOT `lvtn`, without `hvtp`
 ({ref}`masks-derivations`).[^mask-renders]
 
+### Competing readings
+
 The PDK's *Error Messages* page lists checks on a layer it calls
-`CLHVTPM` but does not define: "0.38 min. width of CLHVTPM"
-(`chvtpm.1`), "0.38 min. spacing/notch of CLHVTPM" (`chvtpm.2a`), "0
-min. enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by
-CLHVTPM" (`chvtpm.3`) and "0 min. enclosure of ((LVnwell overlapping
-Var_channel) AND hvtp) by CLHVTPM" (`chvtpm.4`).[^pdk-errors] The
+`CLHVTPM` but does not define:
+
+| Check[^pdk-errors] | Rule text |
+|---|---|
+| chvtpm.1 | "0.38 min. width of CLHVTPM" |
+| chvtpm.2a | "0.38 min. spacing/notch of CLHVTPM" |
+| chvtpm.3 | "0 min. enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by CLHVTPM" |
+| chvtpm.4 | "0 min. enclosure of ((LVnwell overlapping Var_channel) AND hvtp) by CLHVTPM" |
+
+The
 {ref}`HVTPM mask page <mask-hvtpm>` reads `CLHVTPM` as the created
-`HVTPM` data (inference from the rule names); on that reading the
+`HVTPM` data (inference from the rule names). On that reading the
 openings cover low-voltage N-well that does not overlap a varactor
 channel, outside `lvtn`, and `hvtp` within low-voltage N-well that does,
-rather than drawn `hvtp` alone. Openings over `hvtp`, as above, and
+rather than drawn `hvtp` alone.
+
+Openings over `hvtp`, as above, and
 openings over most low-voltage N-well are both readings; the PDK does
 not say which matches the plate, and the checks state what the created
 layer must cover, not the operation that makes it.
@@ -88,7 +129,9 @@ used on non-critical paths to reduce static leakage power without
 incurring a delay penalty. Typical high Vth devices reduce static
 leakage by 10 times compared with low Vth devices".[^wiki-mtcmos] The
 2001 ITRS treats "Multiple Vt" as a standard feature of the mixed-
-signal and low-power roadmap.[^itrs-04] In a flow where the baseline
+signal and low-power roadmap.[^itrs-04]
+
+In a flow where the baseline
 PMOS threshold is set by {ref}`LVTPI <step-020>` through the N-well
 mask, a *separate* mask is the only way to give some PMOS a different
 channel dose; `HVTPM` is that mask. Without it the PDK's `_hvt` PMOS and
@@ -99,22 +142,26 @@ The varactor shows what the high-Vt implants change. The device page's
 e-test table gives the high-Vt option, at the same size, about twice
 the minimum capacitance of the low-Vt one (`VC2_CMIN_5_5` 4.197 pF
 against `VC_CMIN_5_5` 2.058 pF) and almost the same maximum (20.37 pF
-against 20.26 pF); we read the parameter names, because the table's
-descriptions do not match them.[^pdk-07] Published
+against 20.26 pF). We read the parameter names, because the table's
+descriptions do not match them.[^pdk-07]
+
+Published
 capacitance–voltage sweeps of the test tile's two options, which the
 pad list maps to `cap_var_lvt` and `cap_var_hvt`, show the same
-pattern: for 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at −1.8 V, on the
+pattern. For 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at −1.8 V, on the
 low-capacitance side, and 21.04 pF against 21.14 pF at 1.8 V into
-accumulation, and, over five sizes, an area capacitance of about 1.66
-against 0.80 fF/µm² at −1.8 V (our extraction from the
+accumulation. Over five sizes, an area capacitance is about 1.66
+against 0.80 fF/µm² at −1.8 V. This is our extraction from the
 published measurements; the files record no measurement frequency,
 temperature, date or
-wafer).[^raw-data-passives][^raw-data-testtile-pads] A larger
+wafer.[^raw-data-passives][^raw-data-testtile-pads]
+
+A larger
 depletion capacitance at the same bias means a thinner depletion
 layer, consistent with a higher net donor concentration near the well
-surface under the high-Vt implants (inference; the data do not show
+surface under the high-Vt implants (inference). The data do not show
 how {ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` divide that
-effect).
+effect.
 
 There is no NMOS equivalent: the PDK's
 NMOS come in standard, low-Vt and native flavours only,[^pdk-07] so the
@@ -122,8 +169,8 @@ high-Vt option is PMOS-only in SKY130.
 
 ## How it is typically performed
 
-An industry-generic implant-block lithography for a 200 mm, 130 nm-era
-fab:
+*An industry-generic implant-block lithography for a 200 mm, 130 nm-era
+fab:*
 
 1. **Track preparation.** {term}`HMDS` prime on the oxide surface.
 2. **Resist coat.** A conventional positive resist of roughly 1 µm (the
@@ -152,14 +199,16 @@ fab:
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / scanner**.[^skw-01] Strength: **strong** for
-  existence; assignment to `HVTPM` is an **inference** from the 0.38 µm
-  rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01] Strength:
-  strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / scanner**
+  - *SkyWater says:* lists it.[^skw-01]
+  - *Tool exists:* strong.
+  - *Runs this step:* assignment to `HVTPM` is an inference from the
+    0.38 µm rules.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -174,13 +223,12 @@ fab:
 * Previous: {ref}`LVTPIS <step-021>`.
 * Next: {ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` through
   this resist; strip at {ref}`PCHIS <step-025>`.
-* The baseline PMOS channel implant is {ref}`LVTPI <step-020>`; the
-  low-Vt option is defined by {ref}`LVTNM <step-014>` (`lvtn`, which
-  may not overlap `hvtp`).
-* Previous mask: {ref}`NWM <step-017>`; next mask:
-  {ref}`PWBM <step-026>`.
-* Mask page: {ref}`HVTPM <mask-hvtpm>` — the mask's layers, plates,
-  renders and design rules.
+* Same category: the baseline PMOS channel implant is
+  {ref}`LVTPI <step-020>`; the low-Vt option is defined by
+  {ref}`LVTNM <step-014>` (`lvtn`, which may not overlap `hvtp`).
+* Mask: {ref}`HVTPM <mask-hvtpm>` — the mask's layers, plates, renders
+  and design rules; the previous mask is {ref}`NWM <step-017>`, the
+  next mask {ref}`PWBM <step-026>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -263,17 +311,18 @@ fab:
 
 ## Open questions
 
-* The PDK mask table also flags "HLow VT PCh Radio*, HVTRM" as used in
-  SKY130,[^pdk-05] with a drawn layer `hvtr` (GDS 18:20, "High-Vt RF
-  transistor implant").[^pdk-06] The PDK does not say whether that mask
-  is absent from the baseline flow, folded into `HVTPM`, or belongs to
-  an option; this reference describes no separate step for it.
-* Whether the plate is opened over drawn `hvtp`, as this page reads the
-  layer description, or over low-voltage N-well outside `lvtn`, as the
-  {ref}`HVTPM mask page <mask-hvtpm>` reads the `chvtpm` checks, is not
-  stated in the PDK; the Error Messages page does not define
-  `CLHVTPM`.[^pdk-periph][^pdk-errors]
-* Resist thickness and exposure tool are inferred.
+* **HVTRM mask.** The PDK mask table also flags "HLow VT PCh Radio*,
+  HVTRM" as used in SKY130,[^pdk-05] with a drawn layer `hvtr` (GDS
+  18:20, "High-Vt RF transistor implant").[^pdk-06] The PDK does not
+  say whether that mask is absent from the baseline flow, folded into
+  `HVTPM`, or belongs to an option; this reference describes no
+  separate step for it.
+* **Reticle polarity.** Whether the plate is opened over drawn `hvtp`,
+  as this page reads the layer description, or over low-voltage
+  N-well outside `lvtn`, as the {ref}`HVTPM mask page <mask-hvtpm>`
+  reads the `chvtpm` checks, is not stated in the PDK.[^pdk-periph] The
+  Error Messages page does not define `CLHVTPM`.[^pdk-errors]
+* **Resist thickness and exposure tool.** Both are inferred.
 
 <!-- footnotes -->
 
