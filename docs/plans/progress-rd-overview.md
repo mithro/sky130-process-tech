@@ -286,3 +286,63 @@ All checkers, `gen_*.py --check`, and the `-W` build pass. Screenshots at
   digit-bearing bold label (mask/machine/material page module or model
   names, if any), and the workaround (no blank line after the heading) is
   not obvious from the guide.
+* `check_preserved.py`'s `number_order` has no fence-skipping logic, so
+  every `:::{table} caption` / `:widths:` pair added by R-CAPTION is read
+  as ordinary prose and its numbers show up as `numbers`/`number_order`
+  additions (always declarable, never a loss, but unavoidable and
+  undocumented — see step 4 above).
+* R-TABLE/R-LIST on a numeric prose sequence whose numbers were one
+  `number_order` unit is at real risk of an **unconditional,
+  undeclarable** `check_preserved.py` failure once every row/item holds
+  only one number (each drops below the 2-number tracking threshold, so
+  the old multi-number unit is lost with nothing to replace it — see
+  step 4 above, hit twice on this page and reverted both times). This is
+  a first-order risk for W2/W3, where R-TABLE is used constantly on
+  numeric lists, and is not mentioned anywhere in the guide or in
+  `check_preserved.py`'s own docstring (which only discusses losing a
+  swap *within* a unit, not losing a unit's grouping entirely to
+  atomisation).
+
+## Step 5 — read-through (no further commit needed)
+
+Rendered the finished page in full (`uv run sphinx-build -W -q -b html
+docs tmp/_build/html`, then `tools/shoot.py --max-height 30000` at
+desktop and `--width 400 --max-height 30000`, 19 tiles each,
+`tmp/shots/04-full-*.png` and `tmp/shots/04-phone-*.png`) and read every
+tile top to bottom as a newcomer, desktop and phone. Findings:
+
+* The five-bullet "On this page" list renders correctly right under the
+  opening paragraph, above the (now separately-rendered) `sky130b-reram`
+  toctree bullet; no double-counting or visual confusion.
+* All 13 module H3s appear in the sidebar/contents and read naturally in
+  place of the old bold run-ins, including the two (`Via 1, metal 2 and
+  via 2`; `Metal 4, second MiM capacitor, via 4 and metal 5`) whose
+  source omits the blank line before their body paragraph for the
+  `check_preserved.py` reason above — they render pixel-identical to the
+  other 11.
+* Every new bold-labelled sub-paragraph, the two new R-LIST bullet
+  groups, and the back-end stack table's new caption read naturally and
+  match a first-time reader's expectation of what is coming next; no
+  orphaned pronouns or broken cross-references from a split (checked
+  each split point for "it"/"that"/"this" needing its noun back per
+  R-PARA step 5 — none needed one).
+* Wide tables (module table, back-end stack table, phase table) scroll
+  horizontally on the 400 px tiles as furo already handles; no page-wide
+  horizontal scroll and no cell taller than the surrounding rows.
+* The two `{figure}` blocks and every `{dropdown}` are confirmed
+  byte-identical to `main` (diffed directly) and only moved by the step-1
+  reorder; nothing was hand-edited inside them.
+* Nothing else looked wrong: no leftover "So/This/That/It" paragraph
+  openers were introduced by a split (checked every new paragraph's first
+  word), every new heading/label is true of the text under it, and the
+  scope-note admonition and "At a glance" box (both explicitly out of
+  scope for the overview page per the task) were not added anywhere.
+
+No further edits were needed at this step.
+
+## Files touched
+
+Only `docs/overview/index.md` and this progress file
+(`docs/plans/progress-rd-overview.md`) — confirmed with
+`git diff --stat main...topic/rd-overview`. `docs/overview/sky130b-reram.md`
+and every other page are untouched.
