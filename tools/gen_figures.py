@@ -333,6 +333,72 @@ class XSection:
         c.ions = list(self.ions)
         return c
 
+    def window(self, a: float, b: float) -> "XSection":
+        """A close-up: the part of this state between x = a and x = b, enlarged by the same
+        factor in both directions so that it fills the drawing width.  Angles (an implant's
+        tilt, a tapered wall) survive the enlargement; the series geometry is not touched,
+        only this copy of it.  Every x in the result is ``(x - a) * zoom``, every y
+        ``y * zoom``."""
+        z = DRAW_W / (b - a)
+        c = XSection.__new__(XSection)
+        c.dx, c.n = self.dx, self.n
+
+        def tx(v):
+            return (float(v) - a) * z
+
+        def twhere(rng):
+            out = []
+            for lo, hi in rng:
+                lo, hi = max(float(lo), a), min(float(hi), b)
+                if hi > lo:
+                    out.append([tx(lo), tx(hi)])
+            return out
+
+        c.layers = {}
+        for lid, layer in self.layers.items():
+            lay = dict(layer)
+            if lid == "sub":
+                lay["depth"] = float(layer["depth"]) * z
+            if lay.get("anchor_x") is not None:
+                if a <= float(lay["anchor_x"]) <= b:
+                    lay["anchor_x"] = tx(lay["anchor_x"])
+                else:
+                    lay.pop("anchor_x")
+            if lay.get("anchor_y") is not None:
+                lay["anchor_y"] = float(lay["anchor_y"]) * z
+            if layer.get("op") == "dope":
+                if layer.get("where"):
+                    lay["where"] = twhere(layer["where"])
+                for fld in ("y_top", "y_bot", "from_surface", "thickness"):
+                    if lay.get(fld) is not None:
+                        lay[fld] = float(lay[fld]) * z
+            c.layers[lid] = lay
+        c.overlays = [c.layers[ov["id"]] for ov in self.overlays]
+        c.ions = []
+        for op in self.ions:
+            o = dict(op)
+            o["where"] = twhere(op.get("where") or [[0, DRAW_W]])
+            if o.get("label_x") is not None:
+                o["label_x"] = tx(o["label_x"])
+            c.ions.append(o)
+        c.cols = []
+        for i in range(c.n):
+            # Between two source columns with the same stack, interpolate the heights, so a
+            # sloped wall stays a slope instead of a staircase of enlarged samples.
+            f = (a + c.x(i) / z) / self.dx
+            j0 = max(0, min(self.n - 1, int(math.floor(f))))
+            j1 = min(self.n - 1, j0 + 1)
+            t = f - j0
+            c0, c1 = self.cols[j0], self.cols[j1]
+            if [s[0] for s in c0] == [s[0] for s in c1]:
+                src = [[s0[0], s0[1] + (s1[1] - s0[1]) * t, s0[2] + (s1[2] - s0[2]) * t]
+                       for s0, s1 in zip(c0, c1)]
+            else:
+                src = c0 if t < 0.5 else c1
+            c.cols.append([[s[0], s[1] * z, s[2] * z] for s in src])
+        c.zoom = z
+        return c
+
     def x(self, i):
         return i * self.dx
 
@@ -386,6 +452,10 @@ class XSection:
             k = int(round(t / self.dx))
             only = expand_materials(op.get("only_on"))
             for i in range(self.n):
+                # `flat: false` with `where`: a thin patterned film (a resist thinner than
+                # the topography it covers) follows the surface inside its ranges only.
+                if where and not any(a <= self.x(i) <= b for a, b in where):
+                    continue
                 lo, hi = max(0, i - k), min(self.n, i + k + 1)
                 if only:
                     if not self.cols[i] or self.mat(self.cols[i][-1][0]) not in only:
@@ -1112,6 +1182,38 @@ def eval_y(xs: XSection, expr, errs: list[str] | None = None):
     return 0.0
 
 
+def _zoom_panel(p: dict, a: float, z: float) -> dict:
+    """A panel's positions moved into a close-up's coordinates: x -> (x - a) * z, a height
+    -> y * z, and ``top@x`` / ``si@x`` re-aimed at the moved x."""
+    import copy
+    q = copy.deepcopy(p)
+
+    def tx(v):
+        return (float(v) - a) * z
+
+    def ty(expr):
+        if isinstance(expr, (int, float)):
+            return float(expr) * z
+        m = re.fullmatch(r"(top|si)@([\d.]+)", str(expr))
+        return f"{m.group(1)}@{tx(m.group(2)):.2f}" if m else expr
+
+    if q.get("highlight"):
+        q["highlight"]["where"] = [[max(0.0, tx(lo)), min(float(DRAW_W), tx(hi))]
+                                   for lo, hi in q["highlight"].get("where", [])
+                                   if tx(hi) > 0 and tx(lo) < DRAW_W]
+    for c in q.get("callouts", []):
+        if "x" in c:
+            c["x"] = tx(c["x"])
+        if "y" in c:
+            c["y"] = ty(c["y"])
+    for d in q.get("dims", []):
+        d["x"] = tx(d["x"])
+        d["y0"], d["y1"] = ty(d["y0"]), ty(d["y1"])
+        if d.get("witness"):
+            d["witness"] = [[tx(lo), tx(hi)] for lo, hi in d["witness"]]
+    return q
+
+
 def series_states(series: dict) -> tuple[dict[str, XSection], dict[str, str]]:
     """The state after every step of a series, plus the step at which each layer appeared."""
     states = {}
@@ -1144,8 +1246,25 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
         keys = [k for k in sorted(states) if k <= key]
         return states[keys[-1]], keys[-1]
 
-    panels = spec["panels"]
-    sub_depth = float(series["substrate"]["depth"])
+    # A close-up draws a window of the series state, enlarged; the panels, their
+    # highlights, callouts and dimensions are written in the series' own x, and moved here.
+    close = spec.get("close_up")
+    zoom = 1.0
+    if close is not None:
+        if (not isinstance(close, list) or len(close) != 2
+                or not all(isinstance(v, (int, float)) for v in close)
+                or not 0 <= close[0] < close[1] <= DRAW_W or close[1] - close[0] < 40):
+            errs.append(f"close_up must be [x0, x1] inside 0..{DRAW_W}, at least 40 u wide; "
+                        f"got {close!r}")
+            close = None
+        else:
+            zoom = DRAW_W / (close[1] - close[0])
+
+    def view(xs):
+        return xs.window(close[0], close[1]) if close else xs
+
+    panels = [_zoom_panel(p, close[0], zoom) if close else p for p in spec["panels"]]
+    sub_depth = float(series["substrate"]["depth"]) * zoom
     depth = float(spec.get("crop_depth", sub_depth))
     floor_y = -depth + 8
     X0 = M
@@ -1157,7 +1276,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     # same layer labelled two different ways in one picture.
     routes: dict[str, str] = {}
     for p in panels:
-        st_pre, _ = state(p["state_after"])
+        st_pre = view(state(p["state_after"])[0])
         hid = (set(p.get("hide_layers", [])) | set(p.get("hide_labels", []))
                | set(p.get("dim_layers", [])))
         for lid, layer in st_pre.layers.items():
@@ -1171,6 +1290,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
         if "crop_depth" in p:
             errs.append("crop_depth belongs to the figure, not to a panel; move it up one level")
         st, st_step = state(p["state_after"])
+        st = view(st)
         ions = st.ions if p.get("show_ions", True) and st.ions else []
         # ---- ion beam: evenly spaced arrows sharing one tail height, so it reads as a beam
         ion_xs: list[float] = []
@@ -2301,6 +2421,11 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
             if t and t not in cap_l:
                 errs.append(f"{lid!r} is drawn faded but the caption does not name it "
                             f"({t!r}); a faded layer carries no label of its own")
+        # A close-up is a different scale from the full slice beside it on the next page:
+        # the reader is told, in words, what the enlarged window is.
+        if spec.get("close_up") is not None and "close-up" not in cap_l:
+            errs.append("the figure draws a close-up (close_up:) but the caption does not say "
+                        "so ('close-up of …')")
         # A step that changes nothing the drawing can show gets one panel, not two copies.
         if spec.get("no_drawn_change"):
             if len(spec.get("panels", [])) != 1:
@@ -2927,6 +3052,8 @@ def selftest() -> int:
     case("no 'Not to scale' in the caption",
          lambda s, r: s.update(caption="A self-test figure."), "must end with 'Not to scale.'")
     case("unknown kind", lambda s, r: s.update(kind="doodle"), "unknown kind")
+    case("a close-up the caption does not declare",
+         lambda s, r: s.update(close_up=[100, 200]), "does not say so ('close-up of")
     case("unknown basis",
          lambda s, r: r["ops"][0]["label"].update(basis="guess"), "unknown basis")
     case("a number without a cite",
@@ -3294,6 +3421,27 @@ def selftest() -> int:
         if not any(needle in e for e in errs):
             print(f"SELFTEST FAIL: SVG case {name!r} did not report {needle!r}; got {errs}")
             bad += 1
+    # a close-up enlarges one window of a state, in both directions, and moves nothing else
+    xs0 = XSection({"material": "si-sub", "depth": 40})
+    xs0.apply({"op": "deposit", "id": "f", "material": "oxide-thermal", "t": 6, "where": [[100, 140]]})
+    xs0.apply({"op": "dope", "id": "d", "material": "sd-n", "where": [[120, 200]], "thickness": 5})
+    zx = xs0.window(94, 161)
+    zf = DRAW_W / 67
+    col_in = zx.cols[zx.idx((110 - 94) * zf)]
+    if not (abs(col_in[-1][2] - 6 * zf) < 1e-6 and abs(col_in[0][1] + 40 * zf) < 1e-6):
+        print(f"SELFTEST FAIL: a close-up does not scale heights by the zoom: {col_in}")
+        bad += 1
+    if abs(zx.overlays[0]["where"][0][0] - (120 - 94) * zf) > 1e-6 or xs0.overlays[0]["where"] != [[120, 200]]:
+        print("SELFTEST FAIL: a close-up must move a doped region's extent and leave the series' own alone")
+        bad += 1
+    # a thin patterned film follows the surface only inside its ranges
+    xs1 = XSection({"material": "si-sub", "depth": 40})
+    xs1.apply({"op": "deposit", "id": "g", "material": "poly", "t": 20, "where": [[60, 80]]})
+    xs1.apply({"op": "deposit", "id": "r", "material": "resist", "t": 6, "flat": False,
+               "where": [[40, 120]]})
+    if not (xs1.top(xs1.idx(70)) == 26 and xs1.top(xs1.idx(100)) == 6 and xs1.top(xs1.idx(20)) == 0):
+        print("SELFTEST FAIL: a conformal patterned film (flat: false, where) is wrong")
+        bad += 1
     # a clean spec must lint clean
     clean = _spec_ok()
     if lint_spec(clean, _SERIES_OK):

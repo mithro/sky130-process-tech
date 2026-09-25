@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 928" width="480" height="928" role="img" data-kind="legend" data-theme="light">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 969" width="480" height="969" role="img" data-kind="legend" data-theme="light">
 <title>Figure palette</title>
 <desc>A key to the colours used in every cross-section on this site: one swatch per material, with the material&#x27;s name beside it and the pattern that is printed over the colour, so that colour is never the only thing that tells two materials apart.</desc>
 <style>
-:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-tip-n:#8cc3f2;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -18,10 +18,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
 .ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
 .cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
-.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-hatch-back" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line class="pat" x1="0" y1="0" x2="0" y2="7"/></pattern><pattern id="p-hlines" width="6" height="5" patternUnits="userSpaceOnUse"><line class="pat" x1="0" y1="2.5" x2="6" y2="2.5"/></pattern><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern><pattern id="p-vlines" width="4" height="6" patternUnits="userSpaceOnUse"><line class="pat" x1="2" y1="0" x2="2" y2="6"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="928"/>
+<rect class="ground" x="0" y="0" width="480" height="969"/>
 <polygon class="mat m-si-sub" data-layer="si-sub" points="12.0,19.0 58.0,19.0 58.0,38.0 12.0,38.0"/>
 <text x="68.0" y="23.9" class="t-label-title">Silicon substrate (p-type)</text>
 <text x="68.0" y="40.9" class="t-label-note muted">plain colour, no pattern</text>
@@ -37,67 +37,71 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="68.0" y="146.9" class="t-label-title">Deep N-well</text>
 <text x="68.0" y="163.9" class="t-label-note muted">horizontal lines</text>
 <polygon class="mat m-sd-n" data-layer="sd-n" points="12.0,183.0 58.0,183.0 58.0,202.0 12.0,202.0"/>
-<text x="68.0" y="187.9" class="t-label-title">N+ source/drain, n-tip, N+ gate poly</text>
+<text x="68.0" y="187.9" class="t-label-title">N+ source/drain, N+ gate poly</text>
 <text x="68.0" y="204.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-sd-p" data-layer="sd-p" points="12.0,224.0 58.0,224.0 58.0,243.0 12.0,243.0"/>
-<polygon fill="url(#p-plus)" points="12.0,224.0 58.0,224.0 58.0,243.0 12.0,243.0"/>
-<text x="68.0" y="228.9" class="t-label-title">P+ source/drain, p-type poly resistor body</text>
-<text x="68.0" y="245.9" class="t-label-note muted">small crosses</text>
-<polygon class="mat m-implant" data-layer="implant" points="12.0,273.5 58.0,273.5 58.0,292.5 12.0,292.5"/>
-<polygon fill="url(#p-vlines-ink)" points="12.0,273.5 58.0,273.5 58.0,292.5 12.0,292.5"/>
-<text x="68.0" y="269.9" class="t-label-title">Channel implant (n- or p-type not shown:</text>
-<text x="68.0" y="286.9" class="t-label-title">ink hatching over the silicon&#x27;s own colour)</text>
-<text x="68.0" y="303.9" class="t-label-note muted">vertical ink hatching, no fill of its own</text>
-<polygon class="mat m-oxide-thermal" data-layer="oxide-thermal" points="12.0,323.0 58.0,323.0 58.0,342.0 12.0,342.0"/>
-<text x="68.0" y="327.9" class="t-label-title">Thermal oxide (pad, liner, gate, screen)</text>
-<text x="68.0" y="344.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-oxide-dep" data-layer="oxide-dep" points="12.0,372.5 58.0,372.5 58.0,391.5 12.0,391.5"/>
-<text x="68.0" y="368.9" class="t-label-title">Deposited oxide (field oxide, inter-level</text>
-<text x="68.0" y="385.9" class="t-label-title">dielectric, cap oxide, TOPOX)</text>
-<text x="68.0" y="402.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-psg" data-layer="psg" points="12.0,422.0 58.0,422.0 58.0,441.0 12.0,441.0"/>
-<polygon fill="url(#p-dots)" points="12.0,422.0 58.0,422.0 58.0,441.0 12.0,441.0"/>
-<text x="68.0" y="426.9" class="t-label-title">Phosphosilicate glass (PSG)</text>
-<text x="68.0" y="443.9" class="t-label-note muted">small dots</text>
-<polygon class="mat m-nitride" data-layer="nitride" points="12.0,463.0 58.0,463.0 58.0,482.0 12.0,482.0"/>
-<polygon fill="url(#p-hatch)" points="12.0,463.0 58.0,463.0 58.0,482.0 12.0,482.0"/>
-<text x="68.0" y="467.9" class="t-label-title">Silicon nitride (hard mask, spacer, LINT, TOPNIT)</text>
-<text x="68.0" y="484.9" class="t-label-note muted">diagonal lines, leaning right</text>
-<polygon class="mat m-ono" data-layer="ono" points="12.0,504.0 58.0,504.0 58.0,523.0 12.0,523.0"/>
-<polygon fill="url(#p-hlines)" points="12.0,504.0 58.0,504.0 58.0,523.0 12.0,523.0"/>
-<text x="68.0" y="508.9" class="t-label-title">ONO charge-trap stack</text>
-<text x="68.0" y="525.9" class="t-label-note muted">horizontal lines</text>
-<polygon class="mat m-poly" data-layer="poly" points="12.0,545.0 58.0,545.0 58.0,564.0 12.0,564.0"/>
-<text x="68.0" y="549.9" class="t-label-title">Polysilicon</text>
-<text x="68.0" y="566.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-resist" data-layer="resist" points="12.0,586.0 58.0,586.0 58.0,605.0 12.0,605.0"/>
-<polygon fill="url(#p-dots)" points="12.0,586.0 58.0,586.0 58.0,605.0 12.0,605.0"/>
-<text x="68.0" y="590.9" class="t-label-title">Photoresist</text>
-<text x="68.0" y="607.9" class="t-label-note muted">small dots</text>
-<polygon class="mat m-arc" data-layer="arc" points="12.0,627.0 58.0,627.0 58.0,646.0 12.0,646.0"/>
-<text x="68.0" y="631.9" class="t-label-title">Anti-reflective coating (ARC) under a resist</text>
-<text x="68.0" y="648.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-silicide" data-layer="silicide" points="12.0,668.0 58.0,668.0 58.0,687.0 12.0,687.0"/>
-<text x="68.0" y="672.9" class="t-label-title">Titanium silicide</text>
+<polygon class="mat m-tip-n" data-layer="tip-n" points="12.0,224.0 58.0,224.0 58.0,243.0 12.0,243.0"/>
+<polygon fill="url(#p-xhatch)" points="12.0,224.0 58.0,224.0 58.0,243.0 12.0,243.0"/>
+<text x="68.0" y="228.9" class="t-label-title">n-type tip (source/drain extension)</text>
+<text x="68.0" y="245.9" class="t-label-note muted">crossed diagonal lines</text>
+<polygon class="mat m-sd-p" data-layer="sd-p" points="12.0,265.0 58.0,265.0 58.0,284.0 12.0,284.0"/>
+<polygon fill="url(#p-plus)" points="12.0,265.0 58.0,265.0 58.0,284.0 12.0,284.0"/>
+<text x="68.0" y="269.9" class="t-label-title">P+ source/drain, p-type poly resistor body</text>
+<text x="68.0" y="286.9" class="t-label-note muted">small crosses</text>
+<polygon class="mat m-implant" data-layer="implant" points="12.0,314.5 58.0,314.5 58.0,333.5 12.0,333.5"/>
+<polygon fill="url(#p-vlines-ink)" points="12.0,314.5 58.0,314.5 58.0,333.5 12.0,333.5"/>
+<text x="68.0" y="310.9" class="t-label-title">Channel implant (n- or p-type not shown:</text>
+<text x="68.0" y="327.9" class="t-label-title">ink hatching over the silicon&#x27;s own colour)</text>
+<text x="68.0" y="344.9" class="t-label-note muted">vertical ink hatching, no fill of its own</text>
+<polygon class="mat m-oxide-thermal" data-layer="oxide-thermal" points="12.0,364.0 58.0,364.0 58.0,383.0 12.0,383.0"/>
+<text x="68.0" y="368.9" class="t-label-title">Thermal oxide (pad, liner, gate, screen)</text>
+<text x="68.0" y="385.9" class="t-label-note muted">plain colour, no pattern</text>
+<polygon class="mat m-oxide-dep" data-layer="oxide-dep" points="12.0,413.5 58.0,413.5 58.0,432.5 12.0,432.5"/>
+<text x="68.0" y="409.9" class="t-label-title">Deposited oxide (field oxide, inter-level</text>
+<text x="68.0" y="426.9" class="t-label-title">dielectric, cap oxide, TOPOX)</text>
+<text x="68.0" y="443.9" class="t-label-note muted">plain colour, no pattern</text>
+<polygon class="mat m-psg" data-layer="psg" points="12.0,463.0 58.0,463.0 58.0,482.0 12.0,482.0"/>
+<polygon fill="url(#p-dots)" points="12.0,463.0 58.0,463.0 58.0,482.0 12.0,482.0"/>
+<text x="68.0" y="467.9" class="t-label-title">Phosphosilicate glass (PSG)</text>
+<text x="68.0" y="484.9" class="t-label-note muted">small dots</text>
+<polygon class="mat m-nitride" data-layer="nitride" points="12.0,504.0 58.0,504.0 58.0,523.0 12.0,523.0"/>
+<polygon fill="url(#p-hatch)" points="12.0,504.0 58.0,504.0 58.0,523.0 12.0,523.0"/>
+<text x="68.0" y="508.9" class="t-label-title">Silicon nitride (hard mask, spacer, LINT, TOPNIT)</text>
+<text x="68.0" y="525.9" class="t-label-note muted">diagonal lines, leaning right</text>
+<polygon class="mat m-ono" data-layer="ono" points="12.0,545.0 58.0,545.0 58.0,564.0 12.0,564.0"/>
+<polygon fill="url(#p-hlines)" points="12.0,545.0 58.0,545.0 58.0,564.0 12.0,564.0"/>
+<text x="68.0" y="549.9" class="t-label-title">ONO charge-trap stack</text>
+<text x="68.0" y="566.9" class="t-label-note muted">horizontal lines</text>
+<polygon class="mat m-poly" data-layer="poly" points="12.0,586.0 58.0,586.0 58.0,605.0 12.0,605.0"/>
+<text x="68.0" y="590.9" class="t-label-title">Polysilicon</text>
+<text x="68.0" y="607.9" class="t-label-note muted">plain colour, no pattern</text>
+<polygon class="mat m-resist" data-layer="resist" points="12.0,627.0 58.0,627.0 58.0,646.0 12.0,646.0"/>
+<polygon fill="url(#p-dots)" points="12.0,627.0 58.0,627.0 58.0,646.0 12.0,646.0"/>
+<text x="68.0" y="631.9" class="t-label-title">Photoresist</text>
+<text x="68.0" y="648.9" class="t-label-note muted">small dots</text>
+<polygon class="mat m-arc" data-layer="arc" points="12.0,668.0 58.0,668.0 58.0,687.0 12.0,687.0"/>
+<text x="68.0" y="672.9" class="t-label-title">Anti-reflective coating (ARC) under a resist</text>
 <text x="68.0" y="689.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-barrier" data-layer="barrier" points="12.0,717.5 58.0,717.5 58.0,736.5 12.0,736.5"/>
-<text x="68.0" y="713.9" class="t-label-title">Ti / TiN / TiW (liner, barrier, cap,</text>
-<text x="68.0" y="730.9" class="t-label-title">local interconnect, MiM plate)</text>
-<text x="68.0" y="747.9" class="t-label-note muted">plain colour, no pattern</text>
-<polygon class="mat m-tungsten" data-layer="tungsten" points="12.0,767.0 58.0,767.0 58.0,786.0 12.0,786.0"/>
-<polygon fill="url(#p-xhatch)" points="12.0,767.0 58.0,767.0 58.0,786.0 12.0,786.0"/>
-<text x="68.0" y="771.9" class="t-label-title">Tungsten plug</text>
-<text x="68.0" y="788.9" class="t-label-note muted">crossed diagonal lines</text>
-<polygon class="mat m-aluminium" data-layer="aluminium" points="12.0,808.0 58.0,808.0 58.0,827.0 12.0,827.0"/>
-<polygon fill="url(#p-hatch-back)" points="12.0,808.0 58.0,808.0 58.0,827.0 12.0,827.0"/>
-<text x="68.0" y="812.9" class="t-label-title">Aluminium-copper metal</text>
-<text x="68.0" y="829.9" class="t-label-note muted">diagonal lines, leaning left</text>
-<polygon class="mat m-mim-diel" data-layer="mim-diel" points="12.0,849.0 58.0,849.0 58.0,868.0 12.0,868.0"/>
-<polygon fill="url(#p-vlines)" points="12.0,849.0 58.0,849.0 58.0,868.0 12.0,868.0"/>
-<text x="68.0" y="853.9" class="t-label-title">MiM capacitor dielectric</text>
-<text x="68.0" y="870.9" class="t-label-note muted">vertical lines</text>
-<polygon class="mat m-polyimide" data-layer="polyimide" points="12.0,890.0 58.0,890.0 58.0,909.0 12.0,909.0"/>
-<polygon fill="url(#p-hlines)" points="12.0,890.0 58.0,890.0 58.0,909.0 12.0,909.0"/>
-<text x="68.0" y="894.9" class="t-label-title">Polyimide</text>
-<text x="68.0" y="911.9" class="t-label-note muted">horizontal lines</text>
+<polygon class="mat m-silicide" data-layer="silicide" points="12.0,709.0 58.0,709.0 58.0,728.0 12.0,728.0"/>
+<text x="68.0" y="713.9" class="t-label-title">Titanium silicide</text>
+<text x="68.0" y="730.9" class="t-label-note muted">plain colour, no pattern</text>
+<polygon class="mat m-barrier" data-layer="barrier" points="12.0,758.5 58.0,758.5 58.0,777.5 12.0,777.5"/>
+<text x="68.0" y="754.9" class="t-label-title">Ti / TiN / TiW (liner, barrier, cap,</text>
+<text x="68.0" y="771.9" class="t-label-title">local interconnect, MiM plate)</text>
+<text x="68.0" y="788.9" class="t-label-note muted">plain colour, no pattern</text>
+<polygon class="mat m-tungsten" data-layer="tungsten" points="12.0,808.0 58.0,808.0 58.0,827.0 12.0,827.0"/>
+<polygon fill="url(#p-xhatch)" points="12.0,808.0 58.0,808.0 58.0,827.0 12.0,827.0"/>
+<text x="68.0" y="812.9" class="t-label-title">Tungsten plug</text>
+<text x="68.0" y="829.9" class="t-label-note muted">crossed diagonal lines</text>
+<polygon class="mat m-aluminium" data-layer="aluminium" points="12.0,849.0 58.0,849.0 58.0,868.0 12.0,868.0"/>
+<polygon fill="url(#p-hatch-back)" points="12.0,849.0 58.0,849.0 58.0,868.0 12.0,868.0"/>
+<text x="68.0" y="853.9" class="t-label-title">Aluminium-copper metal</text>
+<text x="68.0" y="870.9" class="t-label-note muted">diagonal lines, leaning left</text>
+<polygon class="mat m-mim-diel" data-layer="mim-diel" points="12.0,890.0 58.0,890.0 58.0,909.0 12.0,909.0"/>
+<polygon fill="url(#p-vlines)" points="12.0,890.0 58.0,890.0 58.0,909.0 12.0,909.0"/>
+<text x="68.0" y="894.9" class="t-label-title">MiM capacitor dielectric</text>
+<text x="68.0" y="911.9" class="t-label-note muted">vertical lines</text>
+<polygon class="mat m-polyimide" data-layer="polyimide" points="12.0,931.0 58.0,931.0 58.0,950.0 12.0,950.0"/>
+<polygon fill="url(#p-hlines)" points="12.0,931.0 58.0,931.0 58.0,950.0 12.0,950.0"/>
+<text x="68.0" y="935.9" class="t-label-title">Polyimide</text>
+<text x="68.0" y="952.9" class="t-label-note muted">horizontal lines</text>
 </svg>

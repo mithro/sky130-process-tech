@@ -47,7 +47,8 @@ The palette used by every cross-section on this site. Colour is never the only c
 | N-well | plain colour, no pattern |
 | P-well | small crosses |
 | Deep N-well | horizontal lines |
-| N+ source/drain, n-tip, N+ gate poly | plain colour, no pattern |
+| N+ source/drain, N+ gate poly | plain colour, no pattern |
+| n-type tip (source/drain extension) | crossed diagonal lines |
 | P+ source/drain, p-type poly resistor body | small crosses |
 | Channel implant (n- or p-type not shown: ink hatching over the silicon's own colour) | vertical ink hatching, no fill of its own |
 | Thermal oxide (pad, liner, gate, screen) | plain colour, no pattern |
