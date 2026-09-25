@@ -11,6 +11,7 @@
 | **Next step** | {ref}`CMPNIT <step-012>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** deposits the thick HDP-CVD oxide that fills the lined
   trenches and becomes the finished field oxide.
 * **Why:** must be void-free, dense, low in hydrogen and uniform, so
@@ -121,9 +122,10 @@ current at |V_GS| = |V_DS| = 1.8 V moves:
 | 1/0.15 µm `nfet_01v8_lvt` | 0.536 mA | 0.463 mA |
 | 1/0.15 µm `nfet_01v8` | 0.450 mA | 0.409 mA |
 
-(our extraction from the published measurements; one device at each
-extent; the `nfet_01v8` values do not fall at every
-step). Over the same range the thresholds
+(Our extraction from the published measurements; one device at each
+extent; the `nfet_01v8` values do not fall at every step.)
+
+Over the same range the thresholds
 extracted by maximum-transconductance extrapolation at
 |V_DS| = 0.1 V also move: the PMOS threshold magnitude falls by 0.14 V,
 and the thresholds of the low-Vt and standard NMOS rise by 0.04 V and
@@ -135,9 +137,7 @@ cannot be excluded.
 
 ## How it is typically performed
 
-:::{note}
-An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:
-:::
+*An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:*
 
 1. **Chamber.** Inductively coupled high-density plasma reactor with an
    RF-biased electrostatic chuck; wafer temperature of a few hundred
@@ -234,7 +234,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 * Feeds: the resulting field oxide appears as FOX in the PDK stack and
   is the surface under field poly at {ref}`P1M <step-061>` and under
   local interconnect at {ref}`LI1M <step-102>`.
-* Same module: other gap-fill oxides — {ref}`PSG <step-089>`,
+* Same category: other gap-fill oxides — {ref}`PSG <step-089>`,
   {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
