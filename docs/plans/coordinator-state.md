@@ -45,6 +45,19 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 |---|---|---|---|
 | `topic/rd-masks-b` | W3 batch 6: mask pages 19–36 — Opus writer | Opus | writing |
 
+Quota pause: the project's share of the weekly quota is about 63 of the 75-point cap (2026-09-26). No new
+agent is launched until the reset on 2026-10-01 10:00 UTC; the mask batch finishes, gets its Opus review
+and merges. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
+1. Figures S9b (141–149, 154–163) from the beol templates — read the "Drawing the next groups" section
+   of `figure-authoring.md` (dielectric cleared at 145/155/160; MM4 covers the second plate); then S11
+   passivation (164–170) and a prober block-chain for 171.
+2. Step batches 076–088, 089–106, 107–117, 118–134, 135–140 + 150–153, 141–149, 154–171 (each after its
+   figures are on main).
+3. Machine pages 16–30 (medium-current-implanter … wet-bench, minus the 15 done).
+4. The final `tools/link_terms.py --report` pass on main, reviewed by sampling, then applied.
+5. Machine block-chain figures (30), mask derivation chains (36), category sketches (10) — report D's
+   remaining families — if quota allows.
+
 Next after these: S10 MiM figures (must precede S9b, because metal 3 is patterned inside the MiM steps),
 then S9b (141–149, 154–163) and S11 passivation; step batches 076–088 onward; machines 16–30; masks 19–36;
 the final `link_terms.py` pass on main.
