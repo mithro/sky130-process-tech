@@ -301,3 +301,55 @@ pages: 066, 068, 072. One commit per page.
   TEL quotation/"Because …", asher/wet bench/"We infer no HF"); glance and label lines.
 * **Caps**: para > 100 4 → 0; item > 60 2 → 0; sentence > 45 10 → 1 (the
   51-word "order … on our reading" sentence, above).
+
+### 080 SPOX — done
+
+* **Lead.** The 46-word second sentence split at ", and we infer": "… (variable `SpThickn`).[^pdk-03]
+  We infer that this film is that oxide, so that …" (the hedge stays with the inference, the marker
+  with the PDK entry). Two paragraphs, split before "What the PDK does not say". 121 words (base
+  122), first sentence 21.
+* **R-LIST.** "The surfaces the oxide lands on are, at this point:" → five plain bullets (bare noun
+  phrases, no labels invented), "(inferred, SPE)" kept on its own item; the "A conformal 0.05 µm oxide
+  …" sentence stays as the paragraph after (R-LIST step 4).
+* **R-CATEGORY.** Classification sentence (22 w) alone; "What is specific to it is that …" is its own
+  label (step 3): a paragraph, split at the colon ("Its thickness enters …") and at ", and its thermal
+  budget" ("Its thermal budget must be low …").
+* **Why items.** "Spacer width without a second etch" (102 w): the dash pair "the PDK's high-current
+  implant angle is 0°[^pdk-03]" became its own sentence after the claim ("The PDK's high-current
+  implant angle is 0°.[^pdk-03]", step 1; the marker travels with it); continuation from "It is a
+  cheap way", with "It" → "The conformal oxide" (R-PARA step 5, so the continuation does not open on
+  a pronoun under the label), and the Janapaty half split off at the semicolon. "Implant screen"
+  (85 w): the appositive "a behaviour Lim et al. later modelled" became "It is a behaviour Lim et al.
+  later modelled for (100) silicon.[^lim-1993]" ("It is" added, step 7) in the lead block;
+  continuation from "For BF₂, Wang et al.". "Protecting the opened poly" split at ", and the poly heads"
+  ("The poly heads receive …"). "A cap for the anneal": the three studies split at ", and" and
+  ", while" into three sentences, each with its own marker (joining "and" and "while" dropped).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How.** "LPCVD TEOS oxide" (80 w): lead = the furnace clause, split at its semicolon; continuation
+  from "Becker et al.".
+* **R-TOOLS.** "C2"/Producer: *SkyWater says:* "lists "PECVD TEOS, C2 and Producer"" (verb-first),
+  *Tool exists:* strong, *Runs this step:* weak; the inventory's reading of "C2" (this reference's,
+  "(inference)") is its own clause, so it moves to the continuation after the grades (R-TOOLS step 2).
+  "C1": *SkyWater says:* the quotation (no subject in the base), *Tool exists:*. Aviza: the head
+  sentence ""LPCVD silane oxide" is among the furnace processes" is this reference's wording around
+  SkyWater's words → pilot-form head, *Tool exists:*. The "Which of the three …" bullet is not a
+  tool and keeps its form. Three tools, no recap table.
+* **R-RELATED.** Previous/Next split. "The nitride component of the spacer" (SPNIT, SPE) →
+  `Same module:`; "the oxide under the nitride" (IOX45, gate module) split off and left unlabelled
+  (the bullet named two relationships). "The implants that pass through this oxide … the anneal it
+  caps" → `Feeds:`; "Other CVD oxides" → `Same category:` (POC, PSG, NCAPOX are Thin-film deposition
+  steps).
+* **R-OPENQ.** Labels "Etch-back and deposition method", "Removal before PSG", "Oxide thickness at
+  implant"; text unchanged.
+* **R-GLANCE.** Does from the lead; Why from the category's "implant screen and spacer extension"
+  and the Why lead's "the public evidence does not say which SKY130 had in mind"; Public numbers the
+  0.05 µm "oxide spacer" `[^pdk-03]` with "which we infer is this film"; tool line "C2"/Producer with
+  both grades; Not public from Open questions 1 ("all inferred").
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 0.05, quotes
+  "C2", "oxide spacer", identifiers "C2", "SKY130", hedges "likely", "not public", "we infer" — the
+  glance box. REGROUPED: the LPCVD TEOS item (650–750 | 400–450). WORDS LOST: "and"×2, "while"
+  (joining words at splits), "strength"×3.
+* **Marker coverage.** 17 flags, all read: split halves whose base marker belonged to the other
+  clause (PDK entry/inference, the moved 0° sentence, Park/Lim, the three dose-loss studies, the
+  inventory reading); the list lead-in; glance and label lines.
+* **Caps**: para > 100 1 → 0; item > 60 3 → 0; sentence > 45 7 → 0.

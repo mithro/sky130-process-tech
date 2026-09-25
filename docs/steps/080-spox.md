@@ -10,15 +10,32 @@
 | **Previous step** | {ref}`NPCME <step-079>` |
 | **Next step** | {ref}`PSDM <step-081>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a blanket silicon dioxide film after the nitride
+  cut, immediately before the first source/drain mask.
+* **Why:** an implant screen and spacer extension; the public evidence
+  does not say which of its purposes SKY130 had in mind.
+* **Public numbers:** the PDK's "oxide spacer" of 0.05 µm,[^pdk-03]
+  which we infer is this film.
+* **Likely SkyWater tool:** "C2" / Producer PECVD TEOS — strong
+  (capability); weak (assignment to this step).[^skw-01]
+* **Not public:** whether the film is etched back, its deposition method
+  and temperature — all inferred (→ Open questions).
+:::
+
 ## What this step is
 
 `SPOX` deposits a blanket silicon dioxide film over the wafer after the
 {term}`nitride cut` and immediately before the first source/drain mask. This
 reference describes it as the *spacer oxide*: the PDK's
 assumptions table lists an "oxide spacer" of 0.05 µm (variable
-`SpThickn`),[^pdk-03] and we infer that this film is that oxide,
+`SpThickn`).[^pdk-03] We infer that this film is that oxide,
 so that the SKY130 spacer is a composite of the nitride from
-{ref}`SPNIT <step-076>`/{ref}`SPE <step-077>` and this oxide. What the
+{ref}`SPNIT <step-076>`/{ref}`SPE <step-077>` and this oxide.
+
+What the
 PDK does not say is whether the oxide is etched back into a second
 spacer or left as a blanket layer. This reference treats the film as
 staying conformal and blanket through the source/drain implants, with
@@ -33,11 +50,17 @@ describes an oxide spacer etch before {ref}`PSDM <step-081>`).
 A close-up of the 1.8 V NMOS gate edge, as for the tip module. Before, the nitride spacer after SPE; after, the spacer oxide over everything. The page reads this film as the PDK's 0.05 µm "oxide spacer"[^pdk-03] and treats it as staying blanket through the source/drain implants, with no etch-back; both are inferences, and the thickness is not drawn to scale. Beside the spacer the film adds its own width to the offset a vertical implant sees, which is how it is drawn. Outside this view it also covers the poly opened in the cut, the resistor's spacers and the field oxide. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
-The surfaces the oxide lands on are, at this point: the thin oxide
-over the source/drain silicon that the spacer etch stopped on
-(inferred, {ref}`SPE <step-077>`); the nitride spacers; the
-nitride/oxide cap on the gates; the bare poly opened at
-{ref}`NPCME <step-079>`; and the field oxide. A conformal 0.05 µm
+The surfaces the oxide lands on are, at this point:
+
+* the thin oxide
+  over the source/drain silicon that the spacer etch stopped on
+  (inferred, {ref}`SPE <step-077>`);
+* the nitride spacers;
+* the nitride/oxide cap on the gates;
+* the bare poly opened at {ref}`NPCME <step-079>`;
+* the field oxide.
+
+A conformal 0.05 µm
 oxide (the PDK figure[^pdk-03]) adds the same thickness to each, and
 at the foot of a spacer it adds more than that in the direction an
 implant travels.
@@ -46,11 +69,13 @@ implant travels.
 
 `SPOX` is a {ref}`Thin-film deposition <category-deposition>` step: a
 CVD oxide of the same family as the {term}`cap oxide` {ref}`POC <step-059>`
-and the later {ref}`NCAPOX <step-091>`. What is specific to it is
+and the later {ref}`NCAPOX <step-091>`.
+
+What is specific to it is
 that it is an *implant screen and spacer extension* rather than an
-insulator: its thickness enters the range and lateral placement of
+insulator. Its thickness enters the range and lateral placement of
 the P⁺ and N⁺ source/drain implants, so uniformity and conformality
-matter as they would for a gate-adjacent film, and its thermal budget
+matter as they would for a gate-adjacent film. Its thermal budget
 must be low because the tips are already annealed.
 
 ## Why this step exists
@@ -61,33 +86,37 @@ does not say which SKY130 had in mind:
 
 * **Spacer width without a second etch.** A conformal oxide over a
   nitride spacer increases the effective offset seen by a
-  zero-degree implant — the PDK's high-current implant angle is
-  0°[^pdk-03] — because ions arriving next to the spacer foot must
-  traverse the sloping oxide before reaching silicon. It is a cheap
+  zero-degree implant, because ions arriving next to the spacer foot must
+  traverse the sloping oxide before reaching silicon. The PDK's
+  high-current implant angle is 0°.[^pdk-03]
+
+  The conformal oxide is a cheap
   way to widen the spacer for the deep implants alone, leaving the
-  narrower nitride spacer to define where the contact etch stops;
-  composite oxide/nitride spacers of this kind were standard by the
+  narrower nitride spacer to define where the contact etch stops.
+  Composite oxide/nitride spacers of this kind were standard by the
   0.25 µm generation, as Janapaty et al.'s comparison of oxide and
   oxide/nitride spacers on 0.25 µm PMOS shows.[^janapaty-1998]
 * **Implant screen.** Implanting through a thin oxide keeps the
   beam's sputtered contamination out of the silicon, scatters the
   beam to reduce {term}`channelling`, and — for boron — produces a
   profile that Park et al. found to be paradoxically *broadened* by
-  the screen,[^park-1991] a behaviour Lim et al. later modelled for
-  (100) silicon.[^lim-1993] For BF₂, Wang et al. showed that fluorine
+  the screen.[^park-1991] It is a behaviour Lim et al. later modelled for
+  (100) silicon.[^lim-1993]
+
+  For BF₂, Wang et al. showed that fluorine
   from implantation through oxide changes boron's enhanced diffusion
   during a high-temperature RTA.[^wang-1997] The screen's thickness is
   therefore a design input to the junction depth.
 * **Protecting the opened poly.** The bare poly in the nitride cut
   windows is covered before the implant resists are coated and
   stripped, so the resist chemistry and the ash never touch doped
-  poly, and the poly heads receive their source/drain doping through
+  poly. The poly heads receive their source/drain doping through
   a defined oxide.
 * **A cap for the anneal.** During {ref}`RTAD <step-088>` a surface
   oxide limits dopant loss: Farhane et al. measured arsenic {term}`dose loss`
-  during nitrogen anneals of shallow implants,[^farhane-2003] and
+  during nitrogen anneals of shallow implants.[^farhane-2003]
   Shibahara et al. traced the origins of dopant loss for low-energy
-  arsenic and antimony,[^shibahara-1998] while Pelletier et al.
+  arsenic and antimony.[^shibahara-1998] Pelletier et al.
   showed that boron out-diffuses differently into oxide and nitride
   spacers.[^pelletier-2008]
 * **Lower fringing capacitance.** The extra spacer width added here
@@ -105,12 +134,14 @@ nitride alone.
 
 ## How it is typically performed
 
-Industry-generic routes for a thin conformal oxide in a 200 mm,
-130 nm-era fab (SKY130's is not public):
+*Industry-generic routes for a thin conformal oxide in a 200 mm,
+130 nm-era fab (SKY130's is not public):*
 
 * **LPCVD TEOS oxide.** Tetraethyl orthosilicate pyrolysis in a
   furnace at roughly 650–750 °C (typical industry values, category
-  page[^wiki-teos][^txt-02]); Becker et al. characterise the film and
+  page[^wiki-teos][^txt-02]).
+
+  Becker et al. characterise the film and
   its conformality,[^becker-1987] and Adams and Capio the reduced-
   pressure silane–oxygen alternative at roughly 400–450 °C.[^adams-1979]
   LPCVD TEOS is the most conformal of the three and the usual choice
@@ -147,15 +178,21 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **"C2" / Producer PECVD TEOS** — SkyWater lists "PECVD TEOS, C2 and
-  Producer"[^skw-01]; the {ref}`public-sources inventory
+* **"C2" / Producer PECVD TEOS**
+  - *SkyWater says:* lists "PECVD TEOS, C2 and Producer".[^skw-01]
+  - *Tool exists:* strong for the capability.
+  - *Runs this step:* weak for assignment to this step.
+
+  The {ref}`public-sources inventory
   <references-public-sources>` reads "C2" as a Novellus Concept Two
-  class tool (inference). Strength: strong for the capability; weak
-  for assignment to this step.
-* **"C1" PECVD silane oxide** — "PECVD silane
-  oxide/nitride/oxynitride, C1".[^skw-01] Strength: strong for existence.
+  class tool (inference).
+* **"C1" PECVD silane oxide**
+  - *SkyWater says:* "PECVD silane oxide/nitride/oxynitride,
+    C1".[^skw-01]
+  - *Tool exists:* strong for existence.
 * **Aviza furnaces, LPCVD silane oxide** — "LPCVD silane oxide" is among the
-  furnace processes.[^skw-01] Strength: strong for existence.
+  furnace processes.[^skw-01]
+  - *Tool exists:* strong for existence.
 * Which of the three deposits the spacer oxide is not public; the
   thermal-budget argument favours a PECVD film (inference).
 
@@ -170,15 +207,15 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 ## Related steps and cross-references
 
 * Previous: {ref}`NPCME <step-079>` (the bare poly this oxide
-  covers). Next: {ref}`PSDM <step-081>` (the first implant mask coated
-  on it).
-* The nitride component of the spacer: {ref}`SPNIT <step-076>`,
-  {ref}`SPE <step-077>`; the oxide under the nitride:
-  {ref}`IOX45 <step-063>`.
-* The implants that pass through this oxide: {ref}`PSDI <step-082>`,
-  {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; the anneal it caps:
-  {ref}`RTAD <step-088>`.
-* Other CVD oxides: {ref}`POC <step-059>`, {ref}`PSG <step-089>`,
+  covers).
+* Next: {ref}`PSDM <step-081>` (the first implant mask coated on it).
+* Same module: the nitride component of the spacer,
+  {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`.
+* The oxide under the nitride: {ref}`IOX45 <step-063>`.
+* Feeds: the implants that pass through this oxide,
+  {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`,
+  {ref}`NSDI <step-086>`; the anneal it caps, {ref}`RTAD <step-088>`.
+* Same category: other CVD oxides, {ref}`POC <step-059>`, {ref}`PSG <step-089>`,
   {ref}`NCAPOX <step-091>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
@@ -231,13 +268,13 @@ Industry-generic routes for a thin conformal oxide in a 200 mm,
 
 ## Open questions
 
-* Whether `SPOX` is the PDK's 0.05 µm "oxide spacer", whether it is
+* **Etch-back and deposition method.** Whether `SPOX` is the PDK's 0.05 µm "oxide spacer", whether it is
   etched back or left blanket, and its deposition method and
   temperature, are all inferred; the PDK entry does not name a step.
-* Whether the film is removed before the {ref}`PSG <step-089>`
+* **Removal before PSG.** Whether the film is removed before the {ref}`PSG <step-089>`
   deposition or survives under it as part of the pre-LI dielectric is
   not public.
-* The thickness of oxide over the source/drain silicon at implant
+* **Oxide thickness at implant.** The thickness of oxide over the source/drain silicon at implant
   time — this film plus whatever remained from
   {ref}`IOX45 <step-063>` — is not public, and it sets the effective
   implant energy.
