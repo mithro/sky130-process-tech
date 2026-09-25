@@ -1039,6 +1039,15 @@ claims:
   sources:
   - {id: qtp-044201, origin: cypress}
   - {id: qtp-060908, origin: cypress}
+- id: tech-c8q-origin-conflict
+  page: docs/history/technologies.md
+  anchor: Two reports name different first rows for C8Q-3R
+  grade: conflict
+  hedge: the reports disagree
+  footnotes: [qtp-071005, qtp-042106]
+  sources:
+  - {id: qtp-071005, origin: cypress}
+  - {id: qtp-042106, origin: cypress}
 - id: tech-p20
   page: docs/history/technologies.md
   anchor: The one 0.8 µm process in the qualification reports is P20

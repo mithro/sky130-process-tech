@@ -212,8 +212,9 @@ reports):[^qtp-024110][^qtp-043004][^qtp-053301]
 * **R8LD-1.8**, also printed RAM8NLD-1.8: "New Technology R8LD-1.8V" in March 2003, two metal layers, 26 Å
   of gate oxide, low-power SRAMs.
 * **C8**, a logic process: "New C8Q-3R Technology" in January 2005, and L8C-3R is a "Technology Derivative
-  of the C8 Technology". Both have four metal layers and a dual gate oxide of 32 Å and 55 Å, for clock
-  and PLL parts.
+  of the C8 Technology".[^qtp-053301] Both have four metal layers and a dual gate oxide of 32 Å and 55 Å, for clock
+  and PLL parts. Two reports name different first rows for C8Q-3R, QTP 033805 (USB parts) and QTP 042106
+  (a DDR2 PLL), both of January 2005; the reports disagree.[^qtp-071005][^qtp-042106]
 
 In 2006 Cypress announced it would move "its 0.13-micron C8 process technology" to Grace, for USB and
 clock chips; its 2010 report says the transfer of its "0.13-micron SRAM and LOGIC processes" was completed
@@ -516,3 +517,9 @@ public record found. The sources show both in development from
 [^qtp-060908]: Cypress Semiconductor, Product Qualification Report QTP 060908: *36 Meg QDR/DDR Synchronous SRAM Family, R9Q-3R Technology, Fab4*, February 2009;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211025141847/https://www.cypress.com/file/92956/download>
+[^qtp-042106]: Cypress Semiconductor, Product Qualification Report QTP 042106: *DDR2 PLL Device Family, C8Q-3R Technology, Fab 4*, March 2007;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210419230227/https://www.cypress.com/file/92096/download>
+[^qtp-071005]: Cypress Semiconductor, Product Qualification Report QTP 071005: *West Bridge Astoria, C8Q-3R Technology, Fab4*, April 2008;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211203221107/https://www.cypress.com/file/93281/download>
