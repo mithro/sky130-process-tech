@@ -1,0 +1,33 @@
+id: mol-091-ncapox
+kind: xsection
+page: docs/steps/091-ncapox.md
+series: series-mol.yaml
+crop_depth: 60
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a dotted glass with a
+  flat top buries the active areas, the oxide-filled trench with a wide stack on it and a narrow
+  capped gate. After it a thin flat oxide of even thickness covers the whole glass.
+caption: >-
+  Before, the polished glass; after, the undoped cap oxide over it, a flat blanket of even
+  thickness. The PDK does not name the cap separately; the page reads it as part of the stack
+  diagram's "PSG" interval[^pdk-04] and of the 0.5 µm "Pre-LI ILD thickness",[^pdk-03] which puts
+  it of the order of 0.2–0.3 µm (inferred; not public). That it is an undoped plasma-deposited
+  oxide is also the page's inference. It is not drawn to scale. The transistors' films (the
+  spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn
+  but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant
+  made earlier are not drawn. Not to scale.
+arrow:
+  title: "NCAPOX, step 091"
+  note: "An undoped oxide is deposited over the polished glass."
+panels:
+  - state_after: "090"
+    title: "Before: the polished glass (step 090)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
+    dim_layers: [liner]
+  - state_after: "091"
+    title: "After: a cap oxide seals the glass"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}

@@ -1,0 +1,36 @@
+id: mol-090-cmpp
+kind: xsection
+page: docs/steps/090-cmpp.md
+series: series-mol.yaml
+crop_depth: 60
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thick dotted glass with
+  a stepped top buries two active areas, an oxide-filled trench with a wide stack on it, and a
+  narrow capped gate. After it the glass is polished flat: a thin layer of it is left over the
+  wide stack and a thicker one over the gate and the active areas.
+caption: >-
+  Before, the glass as deposited; after, polished flat. How far down the polish goes is not
+  public. The page reads it as stopping on the nitride caps of the poly lines (inferred). This
+  slice holds no capped poly line on the field oxide, where such caps would stand highest, and
+  its resistor head, whose cap the nitride cut removed, stands higher than the capped gate; so
+  the surface is drawn at the height a nitride-capped line on the field oxide would have, which
+  leaves a little glass over the resistor head and more over the gate. On that reading the
+  PDK's 0.5 µm "Pre-LI ILD thickness"[^pdk-03] and the stack diagram's 0.4299 µm from the
+  field-poly top to the li bottom[^pdk-04] include the cap oxide still to come; nothing is drawn
+  to scale. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the
+  oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "CMPP, step 090"
+  note: "The glass is polished flat in a silica slurry until its high points are gone."
+panels:
+  - state_after: "089"
+    title: "Before: the glass as deposited (step 089)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
+    dim_layers: [liner]
+  - state_after: "090"
+    title: "After: the glass polished flat"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}

@@ -1,0 +1,36 @@
+id: mol-089-psg
+kind: xsection
+page: docs/steps/089-psg.md
+series: series-mol.yaml
+crop_depth: 110
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thin oxide covers two
+  active areas, an oxide-filled trench between them with a wide stack on it, and a narrow capped
+  gate on the right. After it a thick dotted glass buries everything; its top is higher over the
+  wide stack and the gate than over the active areas.
+caption: >-
+  Before, the slice after the source/drain anneal; after, the phosphosilicate glass over
+  everything, standing higher where it covers the resistor and the gate. The PDK's stack diagram
+  labels this dielectric "PSG K=3.9".[^pdk-04] Its as-deposited thickness is not public: the
+  page infers a film of the order of 0.6–0.9 µm, a typical industry figure,[^txt-05] and it is
+  not drawn to scale. The glass is drawn copying the steps beneath it in broad terraces; its real
+  profile, how it fills the gaps between lines and any undoped liner under it are not drawn. The
+  colours mark the type of the doping, not a depth profile. The spacers, the caps, the gate
+  oxides, the gate film, the re-oxidation oxide, the tips and the halo, and the field oxide (the
+  oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel
+  only the new glass and the silicon are labelled. Not to scale.
+arrow:
+  title: "PSG, step 089"
+  note: "A thick phosphorus-doped oxide is deposited over the whole wafer."
+panels:
+  - state_after: "088"
+    title: "Before: the finished transistors under the spacer oxide (step 088)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, polyn]
+    dim_layers: [liner]
+  - state_after: "089"
+    title: "After: a thick glass buries everything"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
