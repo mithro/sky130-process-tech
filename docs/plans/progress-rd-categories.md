@@ -653,6 +653,17 @@ the first fix round's own restoring of the "metal 1–5" table label. Each fixed
    already links `material-hardware-consumables` under "Typical consumables"). The guide's §4.5 now
    states the rule explicitly: Tool/Consumable classes are the classes the page itself already links,
    page-derived, no new facts — not a set derived from the machines/materials index.
+4. **etch.md:137** — restoring "metal 1–5" into the R-COMPARE table's Steps cell (first fix round)
+   duplicated the "For metal 1–5, a 2013 Cypress report…" prose lead-in added earlier in the same
+   round to keep the base's contiguous digit run (`1–5, 2013, 1–3, 2014, 130`) together. Tried the
+   verifier's suggested fix (drop "For metal 1–5, " from the prose) first: this reintroduces a hard
+   `LOST number_order` for that run, because the table's "1–5" is now many rows away from "2013" with
+   other rows' numbers in between — worse than the undeclared ADDED it was meant to fix. Reverted that
+   and instead declared the repeated range: `--allow-added numbers` on etch.md, with the reason "1–5
+   is a second, page-adjacent copy of a range already in the base, needed opposite ends of the same
+   table/prose split to satisfy the contiguous-run check at each end; not a new fact." Confirmed
+   `check_preserved.py --base c79af95b --allow-regrouped --allow-added markers,numbers,quotes,refs,
+   hedges,identifiers` → 0 undeclared differences, same declared-addition set as before plus `1–5`.
 
 **Note for the owner (not actioned as edits) — consumable-classes, materials-index cross-check.** The
 verifier also built, for etch/deposition/oxidation/strip/test, the union of consumable classes the
