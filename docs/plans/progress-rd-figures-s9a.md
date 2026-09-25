@@ -69,9 +69,30 @@ one figure per step for 118–134.
 
 All 17 pages: check_preserved ADDED only (136 lines added, 0 deleted).
 
+## Checks (final)
+
+All nine checkers pass; `gen_papers/patents/filings/index_links/steps/step_tables --check` pass;
+`gen_figures.py --check` 552 files, 0 problems; `--selftest` OK; `palette` 0 pairs;
+`sphinx-build -W` passes. Every figure looked at in the harness at both widths in both themes;
+built pages 119, 125, 130 and 134 shot at 1280 and 400 px, light and dark (dark forced through
+furo's stored theme in a throw-away copy of the page): the figure follows the lead paragraph,
+the swap to the dark variant works, prose follows the caption.
+
 ## Left
 
-* Figures 118–134, placement, checkers, QA.
+* Nothing for 118–134. Next group (141–149, 154–163): see "Series templates" in
+  `docs/plans/figure-authoring.md` and the header of `series-beol.yaml`.
+
+## Page contradictions and doubts (not fixed; presentation-only branch)
+
+* `docs/steps/120-tin3.md:19` and `docs/steps/131-tin4.md:19` say the liner coats "the
+  titanium–tungsten floor" without a hedge, while the same pages, a paragraph later, give the
+  floor as TiW on the 2013 stack or TiN on the 2014 one (undecided, `overview-metal-cap`). The
+  figures follow the undecided reading.
+* The metal-3 cap: `docs/steps/134-wtial3.md` describes it as "TiW or TiN"; the metal-1 and
+  metal-2 figures (S8 and here) label the cap "TiW or Ti/TiN" (the 2014 cap is 90 Å Ti under
+  500 Å TiN). The metal-3 label follows its own page ("TiW or TiN"); the bottom film "Ti or
+  TiW" likewise. Both come from template parameters, so a later wording decision is one line.
 
 ## Decisions
 
