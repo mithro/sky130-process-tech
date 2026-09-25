@@ -3,7 +3,7 @@ kind: xsection
 page: docs/steps/131-tin4.md
 series: series-beol.yaml
 close_up: [0, 64]
-close_up_name: "the via 2"
+close_up_name: "via 2"
 routes: {m2cap: right, m2al: right}
 crop_depth: -662
 alt: >-
@@ -12,13 +12,13 @@ alt: >-
   purple film of even thickness covers the whole top: the oxide surface, the walls of the hole
   and its floor, leaving an opening in the middle.
 caption: >-
-  A close-up of the via 2; the lower part of the slice is cut off, and the drawing starts inside
+  A close-up of via 2; the lower part of the slice is cut off, and the drawing starts inside
   the aluminium of the metal-2 line under it. Before, the via-2 hole etched to the cap of the
   line; after, the liner over the whole wafer: across the oxide, down the walls of the hole and
   over its floor. The page describes it as ionised-metal-plasma titanium nitride; its thickness
   is not public (industry-typical: a few tens of nanometres over the oxide, much less on the
   floor of the via[^txt-05]). It is drawn with one thickness everywhere, which such a film does
-  not have, and far thicker in proportion to the hole than it is. The liner and the cap of the
+  not have; on the floor of the hole in particular it is drawn thicker, in proportion to the hole, than it is. The liner and the cap of the
   line are drawn in the one colour the figure conventions use for every Ti, TiN and TiW film;
   which film the cap is is not public (the overview of the metal cap sets out the readings). The
   hole is drawn about 1.4 times as deep as it is wide; on the page it is 0.20 µm wide and

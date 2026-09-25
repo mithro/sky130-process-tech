@@ -2,10 +2,10 @@ id: beol-119-vime
 kind: xsection
 page: docs/steps/119-vime.md
 series: series-beol.yaml
-close_up: [59, 150]
+close_up: [59, 136]
 close_up_name: "the middle via"
 routes: {m1cap: right, m1al: right}
-crop_depth: -265
+crop_depth: -313
 alt: >-
   Two enlarged cross-sections of one metal line, a thick silver film between two thin purple
   ones, buried in a flat pale oxide. Before the step a violet resist with a narrow window lies

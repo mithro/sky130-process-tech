@@ -2,10 +2,10 @@ id: beol-123-tial12
 kind: xsection
 page: docs/steps/123-tial12.md
 series: series-beol.yaml
-close_up: [59, 150]
+close_up: [59, 136]
 close_up_name: "the middle via"
 routes: {m1cap: right, m1al: right, m2bot: right, m2al: right, m2cap: right, v1w: top}
-crop_depth: -265
+crop_depth: -313
 alt: >-
   Two enlarged cross-sections of a small tungsten plug set flush in a flat pale oxide over a metal
   line. Before the step the top is flat oxide with the plug's top showing. After it three blanket
@@ -24,7 +24,7 @@ caption: >-
   page follows the Ti/Al–Cu/TiW stack, as an inference from its 3 600 Å sum and the PDK's
   0.36 µm for metal 2;[^pdk-04] the figure, like the overview, draws neither. The stack is drawn
   as thick as the metal-1 stack under it, since the PDK gives both 0.36 µm, but nothing is drawn
-  to scale. The plug's liner, the metal-1 line and the oxides are drawn but not labelled, nor, in
+  to scale. The plug's liner (drawn with one thickness, thicker on the floor of the hole, in proportion, than it is), the metal-1 line and the oxides are drawn but not labelled, nor, in
   the lower panel, is the plug. Not to scale.
 arrow:
   title: "TIAL12, step 123"
@@ -38,4 +38,4 @@ panels:
     title: "After: the three-film metal-2 stack"
     hide_layers: [pwell, nchi]
     hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, nild2, m1al, m1cap, v1liner, ncap3, nild3, v1w]
-    highlight: {where: [[59, 150]]}
+    highlight: {where: [[59, 136]]}

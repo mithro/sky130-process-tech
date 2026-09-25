@@ -45,7 +45,9 @@
 #   the oxide over metal 1 (18 u), so it is drawn about 1.1 times as deep as it is wide,
 #   against about 1.8:1 on the pages (0.27 um deep, pdk-04; 0.15 um wide): the captions say
 #   so. Walls vertical (the pages give a "Via1 slope" of 0.02 and read it as a taper
-#   allowance; the wall angle is not drawn). Liner 5 u; tungsten 10 u; polished at 140 u.
+#   allowance; the wall angle is not drawn). Liner 3 u (`thin_ok`: the liners are seen mainly
+#   in close-ups enlarged 2.6-4.2x; at 5 u the liner was most of the plug); tungsten 10 u;
+#   polished at 140 u.
 # * Metal 2: 5 + 18 + 5 u (28 u, the same as metal 1: both are 0.36 um in the PDK); three
 #   lines, x 14-64 (no via under it), 106-144 (over the middle via) and 226-268 (over the
 #   right-hand via, running on past the edge); layout illustrative.
@@ -54,7 +56,7 @@
 #   (pdk-04).
 # * Via 2: one 20 u hole over the left-hand metal-2 line (x 29-49), not over a via 1
 #   (placement illustrative); 28 u deep, so drawn about 1.4 times as deep as it is wide,
-#   against about 2.1:1 on the pages (0.42 um deep, 0.20 um wide). Liner 5 u; tungsten 12 u;
+#   against about 2.1:1 on the pages (0.42 um deep, 0.20 um wide). Liner 3 u; tungsten 12 u;
 #   polished at 196 u.
 # * Metal 3 (the stack only; it is patterned at 139-140, after the MiM steps): 5 + 32 + 5 u
 #   (42 u, half as thick again as metal 2; in the PDK 0.845 um against 0.36 um, which is not
@@ -86,13 +88,14 @@ templates:
         materials: [resist]
   via-plug:
     params: [liner_step, fill_step, polish_step, liner_id, fill_id, fill_t, polish_to]
-    defaults: {liner_t: 5}
+    defaults: {liner_t: 3}
     ops:
       - step: "${liner_step}"
         op: deposit
         id: "${liner_id}"
         material: barrier
         t: "${liner_t}"
+        thin_ok: true
         route: over
         label:
           title: "TiN liner"
@@ -268,4 +271,4 @@ ops:
       al_t: 32
       al_anchor_y: 217
       bot_note: "Ti or TiW — see the overview"
-      cap_note: "TiW or TiN — see the overview"
+      cap_note: "TiW or Ti/TiN — see the overview"

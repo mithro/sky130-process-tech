@@ -16,7 +16,7 @@ caption: >-
   windows are not drawn to scale, and neither is the resist; the page reads the PDK's 1.14 µm
   resist[^pdk-03] as an antenna-rule assumption that need not describe this layer. The lower
   part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1.
-  The bottom film of each metal-1 line, that inter-level oxide and the tungsten metal-contact
+  The bottom and cap films of each metal-1 line, that inter-level oxide and the tungsten metal-contact
   plugs with their liners are drawn but not labelled, nor, in the upper panel, are the metal-1
   lines. Not to scale.
 arrow:

@@ -3,7 +3,7 @@ kind: xsection
 page: docs/steps/130-vim2e.md
 series: series-beol.yaml
 close_up: [0, 64]
-close_up_name: "the via 2"
+close_up_name: "via 2"
 routes: {m2cap: right, m2al: right}
 crop_depth: -662
 alt: >-
@@ -12,7 +12,7 @@ alt: >-
   above the line. After it the resist is gone and under the window a hole with vertical walls
   goes down through the oxide to the thin purple film on top of the line.
 caption: >-
-  A close-up of the via 2, over the left-hand metal-2 line; the lower part of the slice is cut
+  A close-up of via 2, over the left-hand metal-2 line; the lower part of the slice is cut
   off, and the drawing starts inside the aluminium of that line. Before, the via-2 resist;
   after, the hole etched through the cap oxide and the NILD4 oxide, 0.42 µm together in the
   PDK's stack diagram,[^pdk-04] to the cap film on top of the metal-2 line, and the resist

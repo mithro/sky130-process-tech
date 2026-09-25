@@ -3,7 +3,7 @@ kind: xsection
 page: docs/steps/133-wcmp4.md
 series: series-beol.yaml
 close_up: [0, 64]
-close_up_name: "the via 2"
+close_up_name: "via 2"
 routes: {m2cap: right, m2al: right, v2w: top}
 crop_depth: -662
 alt: >-
@@ -12,13 +12,12 @@ alt: >-
   hole. After it the top is flat oxide again, with the tungsten and its liner left only inside the
   hole, their tops level with the oxide.
 caption: >-
-  A close-up of the via 2; the lower part of the slice is cut off, and the drawing starts inside
+  A close-up of via 2; the lower part of the slice is cut off, and the drawing starts inside
   the aluminium of the metal-2 line under it. Before, the tungsten and its liner over the whole
   wafer; after, both polished off the field down to the cap oxide, leaving the via-2 plug: a
   0.20 µm square in the PDK's rules,[^pdk-periph] drawn here flush with the oxide. How far the
   polish recesses the plug and thins the 0.42 µm dielectric[^pdk-04] under the field is not
-  public, and neither is drawn. The plug is drawn about 1.4 times as tall as it is wide, and the
-  liner far thicker in proportion than it is. The liner, the metal-2 line and, in the upper
+  public, and neither is drawn. The plug is drawn about 1.4 times as tall as it is wide, and its liner with one thickness, thicker on the floor, in proportion, than it is. The liner, the metal-2 line and, in the upper
   panel, the oxides are drawn but not labelled. Not to scale.
 arrow:
   title: "WCMP4, step 133"

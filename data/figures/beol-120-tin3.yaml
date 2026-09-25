@@ -2,10 +2,10 @@ id: beol-120-tin3
 kind: xsection
 page: docs/steps/120-tin3.md
 series: series-beol.yaml
-close_up: [59, 150]
+close_up: [59, 136]
 close_up_name: "the middle via"
 routes: {m1cap: right, m1al: right}
-crop_depth: -265
+crop_depth: -313
 alt: >-
   Two enlarged cross-sections of a hole with vertical walls going down through a flat pale oxide
   to a thin purple film on top of a metal line. Before the step the hole is open. After it a thin
@@ -18,8 +18,7 @@ caption: >-
   hole and over its floor. The page describes it as ionised-metal-plasma titanium nitride; its
   thickness is not public (industry-typical: a few tens of nanometres over the oxide, much less
   on the floor of the via[^txt-05]). It is drawn with one thickness everywhere,
-  which such a film does not have, and far thicker in proportion to the hole than a film of a
-  few tens of nanometres in a 0.15 µm hole. The liner and the cap of the line are drawn in the one colour
+  which such a film does not have; on the floor of the hole in particular it is drawn thicker, in proportion to the hole, than it is. The liner and the cap of the line are drawn in the one colour
   the figure conventions use for every Ti, TiN and TiW film; which film the cap is is not public
   (the overview of the metal cap sets out the readings). The hole is drawn about 1.1 times as
   deep as it is wide; on the page it is 0.15 µm wide and 0.27 µm deep,[^pdk-periph][^pdk-04]
@@ -41,4 +40,4 @@ panels:
     title: "After: a TiN liner over the whole top"
     hide_layers: [pwell, nchi]
     hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, nild2, ncap3, nild3, m1al, m1cap]
-    highlight: {where: [[59, 150]]}
+    highlight: {where: [[59, 136]]}
