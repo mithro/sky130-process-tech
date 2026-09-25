@@ -1867,6 +1867,12 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                 svg.add(f'<path class="ion" d="{shaft}"/>')
                 svg.add(f'<path class="ionhead" d="{head}"/>')
         svg.add("</g>")
+        if cut:
+            # below the zigzag's lowest points, paint the ground over the drawing's clip edge:
+            # a film cut there would otherwise leave an anti-aliased stroke under the break
+            yb = sy(-depth + 1.0) + 0.4
+            svg.add(f'<rect class="cutfill" x="{f1(X0)}" y="{f2(yb)}" width="{DRAW_W}" '
+                    f'height="{f2(sy(-depth) + 2.0 - yb)}"/>')
         for k, dm in enumerate(dims):
             ya, yb, xd = eval_y(st, dm["y0"], errs), eval_y(st, dm["y1"], errs), sx(dm["x"])
             for a, b in dm.get("witness", []):
@@ -2825,8 +2831,9 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
     if kind == "xsection":
         # the series' own faults (its base and templates, resolved when it was loaded)
         errs += series.get("_errors", [])
-        if not series.get("substrate") or not isinstance(series.get("ops"), list):
-            return errs
+        if series.get("_errors") or not series.get("substrate") \
+                or not isinstance(series.get("ops"), list):
+            return errs                 # a broken series is reported, never emulated
         # a layer id names one layer; the flow runs forward (a template instantiated twice
         # with the same ids, or in the wrong place, is caught here)
         ids_seen: set[str] = set()
@@ -2864,8 +2871,16 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
                     and op.get("profile") != "gapfill":
                 errs.append(f"operation deposit at step {op.get('step')}: facet_deg and smooth "
                             "belong to profile: gapfill")
-            if op["op"] == "deposit" and op.get("t") is not None and float(op["t"]) < SP["min-layer-thickness"]:
-                errs.append(f"layer {op['id']} drawn thinner than {SP['min-layer-thickness']} u")
+            # A film seen mainly in close-ups (a via liner, enlarged 2.5x or more) may be drawn
+            # down to THIN_OK_MIN with `thin_ok: true`; everything else keeps the full minimum.
+            if op["op"] == "deposit" and op.get("t") is not None:
+                floor = THIN_OK_MIN if op.get("thin_ok") is True else SP["min-layer-thickness"]
+                if float(op["t"]) < floor:
+                    errs.append(f"layer {op['id']} drawn thinner than {floor:g} u"
+                                + ("" if op.get("thin_ok") is True else
+                                   " (a film drawn mainly in close-ups may take thin_ok: true)"))
+            if op.get("thin_ok") is not None and op.get("thin_ok") is not True:
+                errs.append(f"operation {op['op']} at step {op.get('step')}: thin_ok is true or absent")
             if op.get("material") and op["material"] not in TOK["materials"]:
                 errs.append(f"unknown material {op['material']}")
             for mat in (op.get("materials") or []) + (op.get("only_on") or []) + (op.get("consumes") or []):
@@ -3011,7 +3026,7 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
 
 OPS = {
     "deposit": {"id", "material", "t", "where", "flat", "fill_to", "only_on", "label", "route",
-                "anchor_x", "anchor_y", "profile", "facet_deg", "smooth"},
+                "anchor_x", "anchor_y", "profile", "facet_deg", "smooth", "thin_ok"},
     "etch": {"materials", "where", "depth", "taper_deg", "corner_r", "iso"},
     "strip": {"materials"},
     "planarise": {"to", "stop_on"},
@@ -3154,10 +3169,27 @@ def load_spec(path: Path) -> dict:
 # list of ranges); inside a longer string the value is written as text ("mask, step ${step}").
 # The expansion is done when the series is loaded, so everything downstream (the emulator,
 # the lint, the in-force screen) sees ordinary ops.
+THIN_OK_MIN = 3.0          # a `thin_ok` film (seen mainly in close-ups enlarged 2.5x or more)
 SERIES_KEYS = ("substrate", "ops", "note_order", "base", "templates")
 TEMPLATE_KEYS = ("params", "defaults", "ops")
 USE_KEYS = ("use", "with")
 PARAM_RE = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)((?:\.[A-Za-z0-9_]+)*)\}")
+
+
+# what is left of a placeholder that PARAM_RE did not consume: "${mask-code}", "$liner_step"
+LEFTOVER_RE = re.compile(r"\$\{[^}]*\}?|\$[A-Za-z_]\w*")
+
+
+def _strings(obj):
+    """Every string inside a nest of lists and mappings (values only)."""
+    if isinstance(obj, str):
+        yield obj
+    elif isinstance(obj, list):
+        for x in obj:
+            yield from _strings(x)
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            yield from _strings(v)
 
 
 def _param_refs(obj) -> set[str]:
@@ -3284,7 +3316,13 @@ def expand_series(raw: dict, name: str, _chain: tuple[str, ...] = ()) -> dict:
                 errs.append(f"{where}: required parameter {p!r} is missing")
         params = dict(tpl.get("defaults") or {})
         params.update(given)
-        out["ops"] += _substitute(tpl["ops"], params, errs, where)
+        made = _substitute(tpl["ops"], params, errs, where)
+        for text in _strings(made):
+            left = LEFTOVER_RE.search(text)
+            if left:
+                errs.append(f"{where}: unexpanded placeholder {left.group(0)!r} in {text!r} "
+                            "(write ${name}, with letters, digits and underscores)")
+        out["ops"] += made
     out["_templates"] = templates
     if errs:
         out["_errors"] = list(dict.fromkeys(errs))
@@ -3313,7 +3351,13 @@ def render_spec(spec: dict, series_cache: dict[str, dict]) -> tuple[Svg, list[st
             series_cache[sp] = load_series(sp)
         series = series_cache[sp]
     errs = lint_spec(spec, series)
-    if kind == "xsection":
+    if kind == "xsection" and series.get("_errors"):
+        # a series whose base or templates did not resolve cannot be emulated: report its
+        # faults (lint_spec did) and draw nothing, rather than fail on a half-filled op
+        svg = Svg("xsection", spec.get("alt", ""), spec.get("alt", ""))
+        svg.text(M, M + 10, NOT_TO_SCALE, "t-label-note muted")
+        svg.h = 2 * M + 10
+    elif kind == "xsection":
         svg = build_xsection(spec, series, errs)
     elif kind == "flowmap":
         svg = build_flowmap(spec)
@@ -3698,6 +3742,7 @@ def _spec_ok() -> dict:
 
 
 def selftest() -> int:
+    global SPEC_DIR                  # the base-loop case points it at a scratch directory
     import copy
     cases: list[tuple[str, dict, dict, str]] = []
 
@@ -3738,6 +3783,10 @@ def selftest() -> int:
          "needs cite:")
     case("a film thinner than the minimum",
          lambda s, r: r["ops"][0].update(t=2), "drawn thinner than")
+    case("a thin_ok film thinner than its minimum",
+         lambda s, r: r["ops"][0].update(t=2, thin_ok=True), "drawn thinner than 3 u")
+    case("a 4 u film without thin_ok",
+         lambda s, r: r["ops"][0].update(t=4), "may take thin_ok: true")
     case("unknown material",
          lambda s, r: r["ops"][0].update(material="unobtainium"), "unknown material")
     case("three panels",
@@ -3850,6 +3899,37 @@ def selftest() -> int:
     tcase("a base that loops back",
           lambda r: r.update(base="series-isolation.yaml", _name="series-isolation.yaml"),
           "loops back")
+    tcase("a malformed placeholder",
+          lambda r: tops(r)["label"].update(note="${code}, step ${steps-dep}"),
+          "unexpanded placeholder")
+    tcase("a placeholder without braces",
+          lambda r: tops(r).update(id="f$s"), "unexpanded placeholder")
+    # a longer loop than a file naming itself: A -> B -> A, through a scratch spec directory
+    import tempfile
+    real_dir = SPEC_DIR
+    with tempfile.TemporaryDirectory(dir=ROOT / "tmp" if (ROOT / "tmp").is_dir() else None) as td:
+        SPEC_DIR = Path(td)
+        (SPEC_DIR / "a.yaml").write_text("base: b.yaml\nops: []\n", encoding="utf-8")
+        (SPEC_DIR / "b.yaml").write_text("base: a.yaml\nops: []\n", encoding="utf-8")
+        loop = expand_series(load_spec(SPEC_DIR / "a.yaml"), "a.yaml")
+        SPEC_DIR = real_dir
+    if not any("loops back" in x for x in loop.get("_errors", [])):
+        print(f"SELFTEST FAIL: a two-file base loop was not reported: {loop.get('_errors')}")
+        bad += 1
+    # a misspelled numeric parameter is reported by the lint and the build, never a traceback
+    raw = tpl_raw()
+    raw["ops"][0]["with"]["tt"] = raw["ops"][0]["with"].pop("t")
+    broken = expand_series(raw, "selftest.yaml")
+    try:
+        e_lint = lint_spec(_spec_ok(), broken)
+        _svg, e_build = render_spec(_spec_ok(), {"x.yaml": broken})
+    except Exception as exc:                                   # noqa: BLE001
+        print(f"SELFTEST FAIL: a misspelled template parameter raised {exc!r}")
+        bad += 1
+    else:
+        if not any("required parameter 't' is missing" in x for x in e_lint + e_build):
+            print(f"SELFTEST FAIL: a misspelled template parameter was not reported: {e_lint}")
+            bad += 1
     # cite keys are checked against the real page, and a restricted key is refused
     real = _spec_ok()
     real["page"] = "docs/steps/006-stie.md"
