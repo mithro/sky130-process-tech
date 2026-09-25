@@ -190,12 +190,13 @@ oxide; both have to be budgeted in the resist thickness.
   - *Runs this step:* **inference**, for its assignment to `TUNARCE`.
 * **Lam 9400 TCP**
   - *SkyWater says:* lists "Lam 9400 TCP, poly/nitride, HBr, CF4,
-    SF6, O2".[^skw-01] A university clean-room describes the 9400 as
-    "a Transformer Coupled Plasma (TCP) etcher" with a gas list
-    including oxygen.[^snf-9400]
+    SF6, O2".[^skw-01]
   - *Tool exists:* strong — also capable of O₂/HBr ARC opens and, with
     CF₄, of an inorganic ARC open.
   - *Runs this step:* inference.
+
+  A university clean-room describes the 9400 as "a Transformer Coupled
+  Plasma (TCP) etcher" with a gas list including oxygen.[^snf-9400]
 * **GaSonics PEP / Iridia / Mattson Aspen II ashers**
   - *SkyWater says:* lists them ("N2, O2",
     "N2, O2, H2, CF4, NH3, H2/N2").[^skw-01]

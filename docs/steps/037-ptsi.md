@@ -214,10 +214,11 @@ formed".[^pat-03]
   - *Runs this step:* **inference**, for its assignment to `PTSI`.
 * **Axcelis GSD high-current/high-energy implanter**
   - *SkyWater says:* lists "B11, BF2, P,
-    As, 10-3000kev, 1e11 to 5e15"[^skw-01] (the entry whose dose range
-    starts below the Hi dose entry's 5e12).
+    As, 10-3000kev, 1e11 to 5e15".[^skw-01]
   - *Tool exists:* strong for existence.
   - *Runs this step:* weak — could also run it.
+
+  The dose range in this entry starts below the Hi dose entry's 5e12.
 * Indium is *not* among the species SkyWater lists for any
   implanter,[^skw-01] so if SKY130 used indium here it would be on a
   configuration not described publicly (see *Open questions*).

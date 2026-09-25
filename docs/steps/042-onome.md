@@ -213,8 +213,6 @@ cap that the BOE removes.[^pat-04]
 
 ## Machines likely used at SkyWater
 
-Five tools are named at SkyWater for this step:
-
 | Tool | Evidence |
 |---|---|
 | Lam 9400 TCP | **strong** (tool); **inference** (assignment) |
@@ -225,13 +223,14 @@ Five tools are named at SkyWater for this step:
 
 * **Lam 9400 TCP**
   - *SkyWater says:* lists "Lam 9400 TCP, poly/nitride, HBr,
-    CF4, SF6, O2".[^skw-01] A university
-    clean-room describes the 9400 as a TCP etcher "for selective etching
-    of silicon and polysilicon" with tetrafluoromethane
-    and oxygen in its gas list.[^snf-9400]
+    CF4, SF6, O2".[^skw-01]
   - *Tool exists:* **strong** — a nitride-capable tool with the
     CF₄/SF₆/O₂ chemistries of steps 2–3.
   - *Runs this step:* **inference**, for its assignment to `ONOME`.
+
+  A university clean-room describes the 9400 as a TCP etcher "for
+  selective etching of silicon and polysilicon" with tetrafluoromethane
+  and oxygen in its gas list.[^snf-9400]
 * **Applied Materials DPS II**
   - *SkyWater says:* lists "HBR, Cl2, NF3, CF4, CHF3, O2 – gate,
     trench, W/WN".[^skw-01]

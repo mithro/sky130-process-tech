@@ -253,19 +253,19 @@ oxide (N₂O), nitrogen dioxide (NO₂), nitric oxide (NO) and ammonia
   - *Runs this step:* **inference**, for the assignment to `LVGOX`.
 * **AG Associates Heatpulse 8808**
   - *SkyWater says:* lists "NH3, Ar, N2, O2, up to 1200C".[^skw-01]
-
-    An RTP with ammonia and oxygen is a rapid thermal
-    oxidation/nitridation tool; its NH₃ capability is one public route
-    by which a nitrided gate oxide could be produced in this fab.
   - *Tool exists:* strong for existence.
   - *Runs this step:* **weak**.
+
+  An RTP with ammonia and oxygen is a rapid thermal
+  oxidation/nitridation tool; its NH₃ capability is one public route
+  by which a nitrided gate oxide could be produced in this fab.
 * **"Nitrided gate oxide"** is listed by SkyWater as a special
   module.[^skw-01]
-  - *SkyWater says:* the listing shows that SkyWater offers nitrided
-    gate oxide as a capability; it does not say which process or
-    which product uses it.
+  - *SkyWater says:* offers nitrided gate oxide as a capability.
   - *Tool exists:* strong for the capability.
   - *Runs this step:* inference, for its use on SKY130's 1.8 V oxide.
+
+  The listing does not say which process or which product uses it.
 
 ## Resources required
 

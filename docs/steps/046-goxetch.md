@@ -190,8 +190,6 @@ preferred.[^pat-03]
 
 ## Machines likely used at SkyWater
 
-Four tools are named at SkyWater for this step:
-
 | Tool | Evidence |
 |---|---|
 | Akrion Gamma batch wet bench | strong (tool); inference (assignment) |

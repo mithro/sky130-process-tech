@@ -223,8 +223,6 @@ and the pre-oxidation clean as part of those steps (see the
 
 ## Machines likely used at SkyWater
 
-Four tools are named at SkyWater for this step:
-
 | Tool | Evidence |
 |---|---|
 | ASML i-line stepper/scanner | **strong** (vendor); **inference** (assignment) |
