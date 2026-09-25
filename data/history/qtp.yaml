@@ -5834,3 +5834,263 @@ documents:
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
   notes: Adds a history row (011406, Oct 01, "Quad HOTLink II family") not present in this corpus's other
     B53D-3 record (qtp-032005); figures (0.25 µm, 55 Å gate oxide, 2 metal layers) agree with it exactly.
+- id: qtp-011103
+  origin: cypress
+  doc_type: QTP
+  number: '011103'
+  cypress_document_number: null
+  title: WaferTech 0.25um 3P2M Process Technology
+  version: '1.2'
+  date_printed: April, 2001
+  url: https://www.cypress.com/file/91621/download
+  archive_url: https://web.archive.org/web/20201101013242/https://www.cypress.com/file/91621/download
+  retrieved: '2026-09-25'
+  sha256: 3620f3f1b1347d16b0d2c699000029633a6c3d16e7b46b687d738e7e0126f6f1
+  technology_codes:
+  - WaferTech 0.25um
+  fab: Fab 5 (WaferTech, Camas, WA)
+  products:
+  - GVT71128D36V
+  - CY7C1347D
+  die_ids:
+  - GVT71128DA36W
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 4,000Å AlCu/.700Å TiN; Metal 2: 1,000Å TiN/6,000Å AlCu/250Å TiN'
+    passivation: 1,500Å SiON / 5,000Å SOG/10,000Å PESN
+    free_phosphorus_percent: '0'
+    design_rule: CMOS, Double Metal / 0.25um
+    gate_oxide: SiO2 / 70Å
+    fab_location: WaferTech, WA USA
+    die_fab_line_id: WaferTech 0.25um 3P2M Process Technology
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '011103'
+    description: WaferTech .25um Technology / 4Meg, GVT71128D36 (CY7C1347D) product and its bond and metal
+      options
+    date: Mar 01
+  quotes:
+  - text: WaferTech .25um Technology / 4Meg, GVT71128D36 (CY7C1347D) product and its bond and metal options
+    location: p.2, Product Qualification History, row 011103
+  - text: WaferTech 0.25um 3P2M Process Technology
+    location: p.1, cover title, and p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process
+      ID
+  - text: CMOS, Double Metal / 0.25um
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This report titles itself "Technology Qualification Report" (not "Product Qualification Report")
+    and its cover carries no "QTP#" label at all -- only the bare number "011103"; the running headers on
+    later pages do print "QTP# 011103". WaferTech (Camas, WA) is a TSMC-affiliated foundry; this corpus
+    already records a separate TSMC-run "Fab 5" (qtp-l000004, this session) under letter-prefixed QTP
+    numbers, while this WaferTech technology uses plain numeric ones.
+- id: qtp-g990003
+  origin: cypress
+  doc_type: QTP
+  number: G990003
+  cypress_document_number: null
+  title: WaferTech 0.35um
+  version: '1.0'
+  date_printed: May, 2001
+  url: https://www.cypress.com/file/94381/download
+  archive_url: https://web.archive.org/web/20200810011117/https://www.cypress.com/file/94381/download
+  retrieved: '2026-09-25'
+  sha256: f4181f40e36d2eae424d2e5b29d89fe252d057956295d4c2197a4bc182822b71
+  technology_codes:
+  - WaferTech 0.35um
+  fab: Fab 5 (WaferTech, WA, USA)
+  products:
+  - GVT71128B36Y
+  - GVT71128E36Y
+  - GVT71128G36Y
+  - GVT71256B18Y
+  - GVT71256D18Y
+  - GVT71256E18Y
+  - GVT71256F18Y
+  - GVT71256G18Y
+  die_ids:
+  - GVT71128E36
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 4,000K Å Ti/1,000K Å TiN/4,000K Å AlCu/250K Å TiN; Metal 2: 1,500K Å Ti/6,000K
+      Å AlCu/250K Å TiN'
+    passivation: 2K PE-Oxide + 6.5K PE-Nitride
+    free_phosphorus_percent: '0'
+    design_rule: CMOS, Double Metal, 0.35um
+    gate_oxide: 70A SiO2
+    fab_location: WaferTech, WA, USA
+    die_fab_line_id: WaferTech 0.35um
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: G990003
+    description: New Technology, WaferTech 0.35um / 4Meg, Asynchronous RAM, GVT71128E36, its product family
+      and bonding option
+    date: Jan 98
+  quotes:
+  - text: New Technology, WaferTech 0.35um / 4Meg, Asynchronous RAM, GVT71128E36, its product family and
+      bonding option
+    location: p.2, Product Qualification History, row G990003
+  - text: WaferTech 0.35um
+    location: p.1, cover title, and p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process
+      ID
+  - text: CMOS, Double Metal, 0.35um
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This is the origin report for a second WaferTech-run foundry technology (0.35 µm, distinct from
+    the 0.25 µm WaferTech technology in qtp-011103, this session), qualified like the TSMC report
+    qtp-l000004 under a letter-prefixed QTP number ("G990003") rather than a plain numeric one, dated here
+    to Jan 98 though the report itself was printed in May 2001. Its per-part table carries a column headed
+    "TSMC Part" (with a number-sign suffix in the original) giving every listed part the same value
+    ("TM6783") even though the die fab is named as WaferTech, not TSMC -- quoted as printed, not reconciled.
+- id: qtp-002703
+  origin: cypress
+  doc_type: QTP
+  number: '002703'
+  cypress_document_number: null
+  title: Full Speed CYUSB Family, EZ-USB FX, 0.35um TLM Technology, Fab 25
+  version: '2.0'
+  date_printed: June, 2003
+  url: https://www.cypress.com/file/91526/download
+  archive_url: https://web.archive.org/web/20201031003107/https://www.cypress.com/file/91526/download
+  retrieved: '2026-09-25'
+  sha256: 774225066b74967ac092047773c2cee7e77801a8f316abefed37448b03bb3253
+  technology_codes:
+  - 0.35um TLM
+  fab: Fab 25 (HME, Hyundai, Korea)
+  products:
+  - CY7C64601
+  - CY7C64603
+  - CY7C64613
+  die_ids:
+  - 7C646000A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: Al-Si-Cu/Ti/TiN; Metal 2: Al-Si-Cu/Ti/TiN/W-PLUG; Metal 3: Al-Si-Cu/Ti/TiN/W-PLUG'
+    passivation: Double Layer, Nitride, Oxide
+    free_phosphorus_percent: null
+    design_rule: CMOS, Triple Metal /0.35 µm
+    gate_oxide: N/A
+    fab_location: Fab 25-Hyundai-Korea (HME)
+    die_fab_line_id: Fab 25 / 0.35TLM
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '000602'
+    description: New 0.35um TLM Technology/New CY7C64613 EZ-FX Product Qualification
+    date: Jun 00
+  - number: '002703'
+    description: CY7C64613 ESD/HBM fix at HME (Hyundai)
+    date: Aug 00
+  quotes:
+  - text: New 0.35um TLM Technology/New CY7C64613 EZ-FX Product Qualification
+    location: p.2, Product Qualification History, row 000602
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab 25 / 0.35TLM'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Triple Metal /0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: Fab 25 (Hyundai Microelectronics, Korea) is a foundry name not otherwise seen in this corpus.
+    "0.35um TLM" is qualified under a plain numeric QTP number (000602 for its own origin, Jun 00) rather
+    than the letter-prefixed scheme this corpus's other foundry technologies use (TSMC, WaferTech).
+- id: qtp-002202
+  origin: cypress
+  doc_type: QTP
+  number: '002202'
+  cypress_document_number: 001-84207 Rev. *B
+  title: Robo Clock II High-Speed Multi-Phase PLL Clock, B53D-3 Technology, Fab 4
+  version: '*B'
+  date_printed: October 2014
+  url: https://www.cypress.com/file/135526/download
+  archive_url: https://web.archive.org/web/20210509103832/https://www.cypress.com/file/135526/download
+  retrieved: '2026-09-25'
+  sha256: de829b5a9fd2ab1804116342b5809611c6041287f8fbcc78511ee88dd545a0b1
+  technology_codes:
+  - B53D-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7B993V
+  - CY7B994V
+  die_ids:
+  - 7B993A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A TiW+6,000A Al/0.5%Cu/300A TiW; Metal 2: 300A TiW+8,000A Al/0.5%Cu/300A
+      TiW'
+    passivation: 1,000A TEOS + 9,000A SiN
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal/0.25 m
+    gate_oxide: SiO2 55Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/B53D-3
+    transistors: '15,000'
+    gates: '3,750'
+  qualification_history:
+  - number: '99256'
+    description: New Technology B53D-3, Fab1 / CY7B993V / CY7B994V (for reference only)
+    date: Aug 00
+  - number: '002202'
+    description: Technology transfer from Fab1 to Fab4 using CY7B993V / CY7B994V
+    date: Mar 01
+  quotes:
+  - text: New Technology B53D-3, Fab1 / CY7B993V / CY7B994V (for reference only)
+    location: p.2, Product Qualification History, row 99256
+  - text: Technology transfer from Fab1 to Fab4 using CY7B993V / CY7B994V
+    location: p.2, Product Qualification History, row 002202
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/B53D-3'
+    location: p.3, Technology/Fab Process Description
+  notes: This report is itself the qualification of B53D-3's "Technology transfer from Fab1 to Fab4" (QTP
+    002202, Mar 01); its history row for QTP 99256 names the technology's origin fab as "Fab1", marked
+    "(for reference only)" -- conflicting with qtp-032005's row for the same QTP number 99256, which instead
+    names the origin fab "Fab 4" ("New Technology, B53D-3, Fab 4"). Both are quoted verbatim; the transfer
+    row here suggests "Fab1" is the more likely origin, but the two reports print it two different ways for
+    the same event.
+- id: qtp-005004
+  origin: cypress
+  doc_type: QTP
+  number: '005004'
+  cypress_document_number: 001-87914 Rev. **
+  title: HOTLink DX Family, R42LHDHA Technology, Fab 4
+  version: '**'
+  date_printed: June 2013
+  url: http://www.cypress.com:80/file/121666/download
+  archive_url: https://web.archive.org/web/20170606123624/http://www.cypress.com:80/file/121666/download
+  retrieved: '2026-09-25'
+  sha256: 54280883b5190500ba0350fc83c1e37e680892a8d530608af009a804e181b972
+  technology_codes:
+  - R42LHDHA
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C924DX
+  - CY7C954DX
+  - CY7C9689
+  die_ids:
+  - 7C924A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW /600A AL5%; Metal 2: 500Å TiW/800 Å Al'
+    passivation: 7,000 Å SiO2 + 6,000 Å Si2N4
+    free_phosphorus_percent: null
+    design_rule: CMOS, Double Metal /0.35 m
+    gate_oxide: SiO2 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab 4/R42LHDHA
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '99041'
+    description: Device CY7C924DX, CY7C954DX, CY7C9689, R42LHDHA Technology, Fab 4
+    date: Nov 99
+  - number: '005004'
+    description: 4 layer mask change (Contact, Via, MM1 and MM1) to enhance functionality
+    date: Apr 01
+  quotes:
+  - text: Device CY7C924DX, CY7C954DX, CY7C9689, R42LHDHA Technology, Fab 4
+    location: p.2, Product Qualification History, row 99041
+  - text: RAM42LHDHA Technology, Fab 4
+    location: p.3, Product Description, Purpose (device-description wording)
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab 4/R42LHDHA'
+    location: p.3, Technology/Fab Process Description
+  notes: R42LHDHA is a technology code new to this corpus, distinct in spelling from the existing R42LDHA
+    (qtp-003907, this corpus) and printed with a "RAM" prefix in the Product Description's own wording
+    ("RAM42LHDHA") -- the same RAM-prefix pattern seen elsewhere in this corpus (e.g. qtp-099325). Its
+    figures (0.35 µm, 110 Å gate oxide) differ from R42LDHA's printed 70 Å gate oxide, so the two read as
+    genuinely distinct processes rather than a misprint of one name for the other. R42LHDHA's own origin is
+    dated here to QTP 99041 (Nov 99).
