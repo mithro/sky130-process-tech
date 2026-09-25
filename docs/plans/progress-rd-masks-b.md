@@ -211,3 +211,51 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   the `cntm.nikon` sentence, both mostly quotations); the quick-facts Polarity cell. Before → after:
   paragraphs 11 → 0, items 1 → 0, sentences 21 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 4. nwm — done
+
+* **Rules applied.** R-INTRO (167 → 31 words); R-PARAMS (three columns); R-CAPTION (rule table,
+  parameter table); R-PARA, R-SENTENCE; R-LIST (what the regions are for, the Table F2b `C` rows, the
+  Table 7 serif/extension rows, the per-die counts, the two resist-thickness patents — markers on the
+  lead-ins, the two patents as plain bullets with their own markers); R-RELATED; R-H3 (Exposure class,
+  Mask errors, Resist and tone, Resist edges, Overlay and alignment, Pattern transfer).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged apart from the split below, above
+  "Pattern transfer". Neither refers to the other by position.
+* **Intro.** Kept the first sentence up to its colon and "On the NWM page's reading, the thick resist
+  … is opened over every future N-well." The dash list became "On the NWM page's reading, the future
+  N-wells are the body of every PMOS, the ring … and the drift regions …" at the top of the body,
+  followed by "On the NWM page's reading, three implants pass through the same openings, …" (the hedge
+  covered the whole base sentence); "It is an implant block mask" → "The mask is …".
+* **R-PARAMS.** Eight parameters (Tables 2, 3d, 3e, 4, 7, 8). The base's comparisons stay in their Value
+  cells with the `pdk-periph` marker they rest on ("0.835 µm, below the 1.270 µm of nwell.2a",
+  "2, the value of hvnwell.8"), as on lvtnm; "for photo diodes" is repeated on both Table 4 rows it
+  covered. The lead-in keeps `pdk-03`.
+* **Declared additions** (`--allow-added markers,numbers,refs`):
+  * markers — `mask-renders` (render sentence split at its semicolon), `pdk-errors` (Error Messages
+    "describes" sentence), `pdk-periph` (the base's one `pdk-periph` at the end of the Criteria
+    sentence now sits on the two Value cells that compare with periphery rules), `steps-sheet` (Plate
+    number split at its semicolon);
+  * numbers — `2`, `4`: the table column ("Table 2" twice, "Table 4" twice where the base named each
+    table once);
+  * refs — `step-017` ×2 (the NWM page's reading hedge, twice at the top of the body).
+* **LOST lines that are not losses:** `number_order` ('2', '0.84', '1.27', '3', '0.835', …, '8', '2', '8')
+  is the parameter table: values 0.84, 1.27, 0.835, 0.04, 0.84, 1.08, 0.22, 2 in the base order, each
+  with its base table number and comparison.
+* **Marker coverage.** Flags read: list items under lead-in markers; the three-way "So the PDK names a
+  rule `cnwm.3f` …, but …; the Error Messages page …,[^pdk-errors] and the serif and extension rows …"
+  split into three sentences, each keeping its own marker (the serif sentence had none in the base);
+  "On no run do more than nine dies …" (no marker in the base); "ASML specifies …" (see below).
+* **Other edits.** Overlay: "…(difftap.9),[^pdk-periph] against the "≤ 40 nm" single-machine overlay
+  ASML specifies for the /275D stepper[^asml-pas5500-275d] (our comparison; …)" → "…(difftap.9).[^pdk-periph]
+  ASML specifies the "≤ 40 nm" single-machine overlay for the /275D stepper[^asml-pas5500-275d] (our
+  comparison; …)" — the word "against" goes; "(our comparison)" still marks the two as compared, as the
+  sibling pages (nsdm, ntm) write the same comparison. Renders: "Counts rarely repeat — on no run … —
+  so we read …" → "Counts rarely repeat. On no run … . So we read …". Steps section: "The one point
+  that needs stating is LVTPI:" split at its colon only; the rest of the sentence (51 by the script)
+  keeps its dash pair, because moving the IBM-patent clause out would detach it from "the step pages
+  read it as using the `NWM` resist" or attach it to "no public document says so".
+* **Over the caps after the pass:** five sentences the script over-counts because of quotations (the
+  two Table C3 sentences, the Hook quotation, the Table 3b/3e overlay sentence, the Table 3a/3b
+  "result" sentence) and the Steps-section sentence above; the quick-facts Polarity cell. Before →
+  after: paragraphs 10 → 0, items 0 → 0, sentences 22 → 6, cells 1 → 1.
+* **Content problems for the owner:** none found.

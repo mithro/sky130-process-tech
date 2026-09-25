@@ -2,21 +2,8 @@
 # NWM — N-Well\*
 
 The N-well mask is the {term}`reticle` that decides where SKY130's
-silicon is N-type: on the {ref}`NWM <step-017>` page's reading, the thick
-resist printed through it at step 17 is opened over every future N-well —
-the body of every PMOS, the ring that closes each deep-N-well tub, the
-drift regions of the drain-extended NMOS — and three implants pass
-through the same openings, the MeV well pair {ref}`NWI <step-018>` and
-{ref}`NWI2 <step-019>` and the P-channel threshold implant
-{ref}`LVTPI <step-020>`, before the strip at {ref}`LVTPIS <step-021>`.
-It is an implant {term}`block mask`, and its drawn layer is also the one
-the PDK's layout definitions use to tell PMOS from NMOS. This
-page gathers what public sources say about the mask itself — its PDK
-entry and layers, the plates the process-steps sheet records for the MPW
-runs, what the public renders of those runs show, the lithography it
-needs and the rules that constrain it. How the step is performed is on
-the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+silicon is N-type. On the {ref}`NWM <step-017>` page's reading, the thick
+resist printed through it at step 17 is opened over every future N-well.
 
 | | NWM — N-Well\* |
 |---|---|
@@ -33,16 +20,36 @@ the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 5 steps; see {ref}`Steps that use this mask <mask-nwm-steps>` |
 
+:::{seealso}
+How the step is performed is on
+the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`NWM <step-017>` page's reading, the future N-wells are
+the body of every PMOS, the ring that closes each deep-N-well tub and the
+drift regions of the drain-extended NMOS. On the {ref}`NWM <step-017>` page's reading, three implants pass
+through the same openings, the MeV well pair {ref}`NWI <step-018>` and
+{ref}`NWI2 <step-019>` and the P-channel threshold implant
+{ref}`LVTPI <step-020>`, before the strip at {ref}`LVTPIS <step-021>`.
+The mask is an implant {term}`block mask`, and its drawn layer is also the one
+the PDK's layout definitions use to tell PMOS from NMOS.
 
 The periphery rules give the function of the layer as "Define nwell
 implant regions".[^pdk-periph] The {ref}`NWM <step-017>` page lists what
-those regions are for, from the PDK: the body of every PMOS and varactor;
-the side wall of the deep-N-well tub, since rule nwell.5 requires "Deep
-nwell must be enclosed by nwell"; the drain extension of the
-high-voltage NMOS, which the PDK's high-voltage methodology says is
-"fabricated by lightly doped Nwells" and P-wells; and the base of the
-PNP and the collector contact of the NPN.[^pdk-periph][^pdk-hv][^pdk-07]
+those regions are for, from the PDK:[^pdk-periph][^pdk-hv][^pdk-07]
+
+* the body of every PMOS and varactor
+* the side wall of the deep-N-well tub, since rule nwell.5 requires "Deep
+  nwell must be enclosed by nwell"
+* the drain extension of the
+  high-voltage NMOS, which the PDK's high-voltage methodology says is
+  "fabricated by lightly doped Nwells" and P-wells
+* the base of the
+  PNP and the collector contact of the NPN
+
 A Texas Instruments patent describes the same use of "the n-well region
 … as the lightly doped drain extension region".[^pat-demos-ti]
 
@@ -57,14 +64,28 @@ outside `nwell` is P-well by definition, which is why the
 (the masks index marks that pairing as an inference).
 
 The PDK's mask generation table, Table F2b, marks the `NWM` column `C`
-("CREATED") in 34 of its 80 device rows: the three p-diffusion
-resistors, the seven 1.8 V PMOS rows (standard, low-Vt, high-Vt and
-core), the three varactors, the 5/10.5 V PMOS, the 16 V drain-extended
-NMOS and PMOS, all five 20 V drain-extended rows, ten diode rows, both
-bipolar transistors and the HV PMOS ESD transistor.[^pdk-06] It marks
+("CREATED") in 34 of its 80 device rows:[^pdk-06]
+
+* the three p-diffusion
+  resistors
+* the seven 1.8 V PMOS rows (standard, low-Vt, high-Vt and
+  core)
+* the three varactors
+* the 5/10.5 V PMOS
+* the 16 V drain-extended
+  NMOS and PMOS
+* all five 20 V drain-extended rows
+* ten diode rows
+* both
+  bipolar transistors
+* the HV PMOS ESD transistor
+
+The table marks
 `-` in the 1.8 V and 5/10.5 V NMOS rows, and `C` in the 16 V and 20 V
 drain-extended NMOS rows,[^pdk-06] which fits the drain-extension use
-the step page describes (our reading of the table). Rung, Dell'Oca and
+the step page describes (our reading of the table).
+
+Rung, Dell'Oca and
 Walker introduced the retrograde well — a deep implant with a brief
 anneal, which allowed a much shallower well and closer n- and p-channel
 spacing — in 1981,[^rung-1981] and Martin and Chen optimised a
@@ -80,28 +101,36 @@ purpose `mask` at 21:0 ("Nwell mask"), and no `drawing`, `mask add`,
 64:20, "N-well region".[^pdk-06] The PDK publishes no operation from
 `nwell` to the plate, and rule x.15a confines mask layers to test
 modules, seal ring and frame, with an exception that names only
-"FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design inside
+"FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] So a design inside
 the die draws `nwell` (our reading of x.15a).
 
 Several published criteria suggest that the plate is not the drawn layer
 unchanged, without giving the whole operation. Table 7 of *Criteria &
-Assumptions* gives a "Serif added to nwell convex corner (SXX-572, 573)"
-of 0.22 (`NwellCvxSerif`), a "Serif added to nwell concave corner
-(SXX-572, 573)" of 0.12 (`NwellCveSerif`) and an "NWM extension beyond
-nwell edge straddling de_nFet_source (for GSMC; QZM-133)" of 0.075
-(`NvhvNwellExt`).[^pdk-03] Table C3 defines `nwell_all` as "nwell OR
+Assumptions* gives:[^pdk-03]
+
+* a "Serif added to nwell convex corner (SXX-572, 573)"
+  of 0.22 (`NwellCvxSerif`)
+* a "Serif added to nwell concave corner
+  (SXX-572, 573)" of 0.12 (`NwellCveSerif`)
+* an "NWM extension beyond
+  nwell edge straddling de_nFet_source (for GSMC; QZM-133)" of 0.075
+  (`NvhvNwellExt`)
+
+Table C3 defines `nwell_all` as "nwell OR
 extension of cnwm beyond nwell edge straddling de_nFet_source by
 cnwm.3f (45 degree edges are retained for the NVHV device nwell); Rule
 cnwm.3f applies only to GSMC flows", and its `nwellDnwellHoles` and
 `photoArray` definitions say that the "Die+frame utility will use the
 mask data of nwell and dnwell".[^pdk-06] So the PDK names a rule
 `cnwm.3f` and speaks of "mask data of nwell", but the periphery rules
-contain no `cnwm` rule set;[^pdk-periph] the [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page,
-which describes "many of the automated DRC rules that are checked by
-SkyWater as part of the acceptance criteria for GDS data", names only
+contain no `cnwm` rule set.[^pdk-periph]
+
+The [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page
+describes "many of the automated DRC rules that are checked by
+SkyWater as part of the acceptance criteria for GDS data".[^pdk-errors] It names only
 two `cnwm.nikon` checks, "NWMmk in the nikon cross has the wrong
 polarity" and "NWMmk is missing from the nikon cross in the
-layout",[^pdk-errors] and the serif and extension
+layout".[^pdk-errors] The serif and extension
 rows name other flows and references that the PDK does not explain. We
 read the serifs as corner corrections added to the drawn outline and
 the extension as flow-specific (inference from the row wording).
@@ -111,10 +140,12 @@ the extension as flow-specific (inference from the row wording).
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `NWM` the site renders layer 64:20 alone, with
-no Boolean expression and no fill layer, on all eight runs; its mask
+no Boolean expression and no fill layer, on all eight runs.[^mask-renders] Its mask
 record gives the mask-level layer 21:0 and the note "NWM = nwell sized
 (cnwm.3a outside hvi / 3b inside), with DEPMOS/pwell-resistor
-exemptions".[^mask-renders] The periphery rules have no `cnwm.3a` or
+exemptions".[^mask-renders]
+
+The periphery rules have no `cnwm.3a` or
 `cnwm.3b`; the only other `cnwm` names in the PDK are Table C3's
 `cnwm.3f` and the Error Messages page's `cnwm.nikon`
 checks,[^pdk-periph][^pdk-06][^pdk-errors] and the site gives no source
@@ -125,14 +156,22 @@ layer are one public derivation from the drawn data, not SkyWater's
 mask-generation recipe.
 
 All 40 rendered dies of every run carry `nwell` shapes, but that says
-nothing about how many designs use PMOS in particular: every die carries
-at least 352 206 shapes, the minimum on each run lies between 352 206
-(MPW-5) and 463 378 (MPW-8), and on MPW-1 one die accounts for 99 % of
-the run's shapes.[^mask-renders] Counts rarely repeat — on no run do
-more than nine dies have a count that another die shares — so we read
+nothing about how many designs use PMOS in particular:[^mask-renders]
+
+* every die carries
+  at least 352 206 shapes
+* the minimum on each run lies between 352 206
+  (MPW-5) and 463 378 (MPW-8)
+* on MPW-1 one die accounts for 99 % of
+  the run's shapes
+
+Counts rarely repeat. On no run do
+more than nine dies have a count that another die shares. So we read
 the large minimum as `nwell` shapes that every die of these runs carries
 rather than as project content (inference; the site does not say what
-they are). The site states the limits of its images: "These are renders
+they are).
+
+The site states the limits of its images: "These are renders
 of *drawn* data, not photomask artwork: reticle pitch, 4x reduction,
 mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] Its metadata carries no plate ID, so a render
@@ -162,7 +201,7 @@ the reticle set is the heading of the run's columns in the tab
 
 * **Plate number.** `010` is the second-lowest plate number in the tab,
   after `NSM` (`007`), and lower than `FOM` (`020`) and `DNM` (`150`),
-  which precede this mask in the flow; the sheet does not say what the
+  which precede this mask in the flow.[^steps-sheet] The sheet does not say what the
   numbers encode, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type and magnification.** The sheet's "Sheet4" tab gives no
@@ -175,43 +214,58 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`NWM <step-017>` page puts the 0.84 µm
+### Exposure class
+
+The {ref}`NWM <step-017>` page puts the 0.84 µm
 minimum width at {math}`k_1 \approx 1.4` on an i-line lens of NA 0.6,
 notes that chemically amplified DUV resists are seldom made as thick as
-this level needs, and infers an i-line level; the
+this level needs, and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01] At the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the same width has
 {math}`k_1 = 0.84 \times 0.48 / 0.365 \approx 1.1` (our arithmetic).
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
-at 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
+At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
 under half the `NWM` minimum, so a CD error on the plate would be
 expected to print at its own size (inference). The demands of this mask
 fall on its resist and its placement.
 
-**Resist.** The resist must stop the MeV well implants wherever the
+### Resist and tone
+
+The resist must stop the MeV well implants wherever the
 plate leaves it. The {ref}`NWM <step-017>` page reads a 2–3 µm-class
-thick i-line resist, from published examples: an IBM patent uses a
-photoresist "typically 1800–2500 nm in thickness" for phosphorus
-implants up to 850 keV,[^pat-well-ibm] and a Zilog patent needs
-"minimum thicknesses of 3.4 µm" for a 1.3–1.5 MeV phosphorus
-N-well.[^pat-resist-zilog] The ion range in resist that sets the
+thick i-line resist, from published examples:
+
+* an IBM patent uses a
+  photoresist "typically 1800–2500 nm in thickness" for phosphorus
+  implants up to 850 keV[^pat-well-ibm]
+* a Zilog patent needs
+  "minimum thicknesses of 3.4 µm" for a 1.3–1.5 MeV phosphorus
+  N-well[^pat-resist-zilog]
+
+The ion range in resist that sets the
 thickness is what SRIM computes.[^ziegler-2010] Thick resist under MeV
 ions outgasses — Lee et al. measured the effect and the dose shift it
 causes[^lee-1996] — and Ross et al. stabilised i-line implant resists
 with a flood electron beam, reducing shrinkage and CD variation and
 eliminating popping.[^ross-1996] Tsukamoto et al. review high-energy
-implantation for ULSI, including masking.[^tsukamoto-1991] SkyWater's
+implantation for ULSI, including masking.[^tsukamoto-1991]
+
+SkyWater's
 resist, its thickness and any hardening are not public; the PDK's
 generic "Photoresist thickness" is 1.14 µm,[^pdk-03] which the step page
 does not take as this level's resist. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Resist edges.** A thick implant resist also scatters ions: "Some of
+### Resist edges
+
+A thick implant resist also scatters ions: "Some of
 the ions scattered out of the edge of the photoresist are implanted in
 the silicon surface near the mask edge, altering the threshold voltage
 of those devices", with shifts "of up to 100 mV … over a lateral
@@ -222,16 +276,38 @@ enclosure of `lvtn` by `nwell`, as the kind of layout guard that
 follows;[^pdk-periph] the PDK does not state the purpose of any `nwell`
 spacing.
 
-**Pattern transfer.** Nothing is etched through this resist. On the step
+### Overlay and alignment
+
+The {ref}`NWM <step-017>` page reads the mask as aligned to
+the trench pattern of {ref}`FOM <step-004>`, and points to Table 3b's
+"N-w/P-w junction (from drawn edge)" of 0.034 µm and Table 3e's
+"Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23 µm as
+showing how tightly the well edge is budgeted.[^pdk-03] The placement
+rules against active are 0.180 µm of `nwell` around p+ diffusion
+(difftap.8) and n+ tap (difftap.10) and 0.340 µm from n+ diffusion
+(difftap.9).[^pdk-periph]
+
+ASML specifies the "≤ 40 nm" single-machine overlay
+for the /275D stepper[^asml-pas5500-275d] (our
+comparison; the rules must also absorb the lateral spread of the MeV
+implants, which is not published). Rubin, Morris and Jasper describe
+how retrograde-well implant control sets the narrow n+/p+
+isolation.[^rubin-2002]
+
+### Pattern transfer
+
+Nothing is etched through this resist. On the step
 pages' readings the pattern is transferred into the silicon as dopant by
 the {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>` implants on the
 {ref}`high-energy implanter <machine-high-energy-implanter>` class and
 by {ref}`LVTPI <step-020>` on the
 {ref}`medium-current implanter <machine-medium-current-implanter>`
-class, and the resist is removed at {ref}`LVTPIS <step-021>`, which that
+class. On the step pages' readings the resist is removed at {ref}`LVTPIS <step-021>`, which that
 page calls the hardest strip of the module, on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
-{ref}`wet bench <machine-wet-bench>` classes. The PDK gives the result
+{ref}`wet bench <machine-wet-bench>` classes.
+
+The PDK gives the result
 rather than the conditions: an "n-well peak concentration" of
 6.00E+017 cm⁻³ over a "background concentration" of 8.00E+14 cm⁻³, a
 baseline N-well vertical dimension of 1.1 µm and a "min n-well width to
@@ -239,20 +315,6 @@ guarantee 90 % peak concentr." of 0.55 µm (Tables 3a and 3b).[^pdk-03]
 Morris and Rubin compared batch high-energy and serial medium-current
 implanters for multiple modulated well implants, in device performance
 and cost.[^morris-2000]
-
-**Overlay.** The {ref}`NWM <step-017>` page reads the mask as aligned to
-the trench pattern of {ref}`FOM <step-004>`, and points to Table 3b's
-"N-w/P-w junction (from drawn edge)" of 0.034 µm and Table 3e's
-"Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23 µm as
-showing how tightly the well edge is budgeted.[^pdk-03] The placement
-rules against active are 0.180 µm of `nwell` around p+ diffusion
-(difftap.8) and n+ tap (difftap.10) and 0.340 µm from n+ diffusion
-(difftap.9),[^pdk-periph] against the "≤ 40 nm" single-machine overlay
-ASML specifies for the /275D stepper[^asml-pas5500-275d] (our
-comparison; the rules must also absorb the lateral spread of the MeV
-implants, which is not published). Rubin, Morris and Jasper describe
-how retrograde-well implant control sets the narrow n+/p+
-isolation.[^rubin-2002]
 
 (mask-nwm-steps)=
 ## Steps that use this mask
@@ -279,7 +341,7 @@ Steps:
 The next step, {ref}`HVTPM <step-022>`, is itself the next mask step: on
 its step page's reading it coats a new resist for the high-Vt PMOS
 implants on the cleaned surface. The one point that needs stating is
-{ref}`LVTPI <step-020>`: on its step page it is a channel implant rather
+{ref}`LVTPI <step-020>`. On its step page it is a channel implant rather
 than a well implant, and the strip follows it in the step list, but the
 step pages read it as using the `NWM` resist — the arrangement of an IBM
 retrograde-well patent cited there[^pat-well-ibm] — and no public
@@ -295,6 +357,8 @@ periphery only (outside areaid.ce). A corresponding core rule may or may
 not exist.", NE "Rule not checked for esd_nwell_tap. There are no
 corresponding rule for esd_nwell_tap." and DE "Rule not checked for
 source of Drain Extended device".[^pdk-periph]
+
+:::{table} The `nwell` rules, with the diffusion and high-voltage rules that place other layers against it, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -316,43 +380,48 @@ source of Drain Extended device".[^pdk-periph]
 | hvnwell.8 | "Min space between HV_nwell  and any nwell on different nets" | 2.000 µm |
 | hv.nwell.1 | "Min spacing of nwell tagged with text "shv_nwell" to any nwell on different nets" | 2.500 µm |
 | denmos.12 | "Min spacing between nwells overlapping de_nFET_drain" | 2.400 µm |
+:::
 
-Table 2 of *Criteria & Assumptions* repeats the width and space as
-`NWMCD` 0.84 and `NWMCDSP` 1.27; Table 3d gives a punch-through spacing
-for "n-well - n-well" of 0.835 µm (`NWPTS`), below the 1.270 µm of
-nwell.2a; Table 3e gives a "Min n-well enclos. of tap to ensure bkdwn
-N-w/P-w before N+/P-w (ESD)" of 0.04 µm (`XNWESD`); Table 4 gives, for
-photo diodes, a "Min/Max width of nwell inside deep nwell" of 0.84
-(`PDNwmCD`) and a "Min/Max enclosure of nwell by deep nwell" of 1.08
-(`PDNwmDnwEnc`); Table 7 gives an
-"Enclosure of tap by nwell for pwell res" of 0.22 (`PTAP_NWL_SP`); and
-Table 8 a "Min HVNwell to any nwell space" of 2 (`HVNwell_Nwell_SP`),
-the value of hvnwell.8.[^pdk-03][^pdk-periph] The SKY130
+*Criteria & Assumptions* gives the following:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask
+| Parameter (table) | Published description | Value |
+|---|---|---|
+| `NWMCD` (Table 2) | width | 0.84 |
+| `NWMCDSP` (Table 2) | space | 1.27 |
+| `NWPTS` (Table 3d) | punch-through spacing for "n-well - n-well" | 0.835 µm, below the 1.270 µm of nwell.2a[^pdk-periph] |
+| `XNWESD` (Table 3e) | "Min n-well enclos. of tap to ensure bkdwn N-w/P-w before N+/P-w (ESD)" | 0.04 µm |
+| `PDNwmCD` (Table 4) | for photo diodes, "Min/Max width of nwell inside deep nwell" | 0.84 |
+| `PDNwmDnwEnc` (Table 4) | for photo diodes, "Min/Max enclosure of nwell by deep nwell" | 1.08 |
+| `PTAP_NWL_SP` (Table 7) | "Enclosure of tap by nwell for pwell res" | 0.22 |
+| `HVNwell_Nwell_SP` (Table 8) | "Min HVNwell to any nwell space" | 2, the value of hvnwell.8[^pdk-periph] |
+:::
+
+The SKY130
 {term}`test tile`'s pad documentation has a "High Voltage Nwell to Nwell
 Isolation" module whose spacings are 2.00, 2.50, 1.50, 1.27 and
-1.00 µm:[^raw-data-testtile-pads] the 1.27 µm of nwell.2a, the 2.00 µm
+1.00 µm.[^raw-data-testtile-pads] These are the 1.27 µm of nwell.2a, the 2.00 µm
 and 2.50 µm of the two high-voltage spacings, and two values between or
 below them (our comparison). For the plate, nwell.1 and
 nwell.2a set the smallest features: a 0.84 µm line on a 1.27 µm space.
 
 ## Related pages
 
-* {ref}`NWM <step-017>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`,
+* **Steps.** {ref}`NWM <step-017>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`,
   {ref}`LVTPI <step-020>` and {ref}`LVTPIS <step-021>` — the mask step,
   the three implants and the strip.
-* {ref}`mask-dnm` — the deep N-well mask whose tubs the N-well ring
-  closes.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-high-energy-implanter` and
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
+  step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-high-energy-implanter` and
   {ref}`machine-medium-current-implanter` — the implant classes that use
   the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
   reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
-  step and implant categories.
+* **Masks.** {ref}`mask-dnm` — the deep N-well mask whose tubs the N-well ring
+  closes.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
