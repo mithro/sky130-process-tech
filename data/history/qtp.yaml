@@ -5594,3 +5594,243 @@ documents:
   notes: This qualification is for a mask/process change (replacing a tungsten plug with Hot Aluminum on
     Metal 2) rather than a new product; its process-description figures otherwise match qtp-097118's
     exactly, including the same transistor and gate counts for the same die (CY7C1049).
+- id: qtp-097506
+  origin: cypress
+  doc_type: QTP
+  number: '97506'
+  cypress_document_number: null
+  title: 1 Meg SRAM, R42 Technology, Fab 4 Qualification
+  version: '1.0'
+  date_printed: May, 1998
+  url: https://www.cypress.com/file/93896/download
+  archive_url: https://web.archive.org/web/20211207083723/https://www.cypress.com/file/93896/download
+  retrieved: '2026-09-25'
+  sha256: 6ada3b6391bfb3cd58b53bf6214dc550bb59979a0e7469505e23ccb257b73760
+  technology_codes:
+  - R42
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62126V
+  - CY62127V
+  die_ids:
+  - 7C62126V
+  - 7C62127V
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiW,AlCu,TiW/500Å,6000Å,300Å'
+    passivation: 3K Å Oxide + 6,000 Å Nitride (both with PECVD)
+    free_phosphorus_percent: N/A
+    design_rule: CMOS , 0.35µm
+    gate_oxide: SiO2 / 70 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '97506'
+    description: Qualify 1 Meg SRAM, CY62126/7V (Rev. A) in Fab 4 with R42 technology
+    date: null
+  quotes:
+  - text: Qualify 1 Meg SRAM, CY62126/7V (Rev. A) in Fab 4 with R42 technology
+    location: p.2, Product Description, Qualification Purpose
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS , 0.35µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: 'This report''s process-description block prints "Number of Metal Layers: 2" but lists only one
+    Metal Composition line (no separate Metal 2 entry) -- quoted verbatim rather than filled in. "R42" here
+    is plain, without a D/HD/H suffix, at the same 0.35 µm/70 Å figures this corpus already has for R42D.'
+- id: qtp-097396
+  origin: cypress
+  doc_type: QTP
+  number: '97396'
+  cypress_document_number: null
+  title: 4 Meg SRAM, R42D Technology, Fab 4 Qualification
+  version: '1.2'
+  date_printed: June, 1999
+  url: https://www.cypress.com/file/93831/download
+  archive_url: https://web.archive.org/web/20210507122518/https://www.cypress.com/file/93831/download
+  retrieved: '2026-09-25'
+  sha256: bea788e8af4feeaf7fff53555baf1094a2ed5e97c65e720b98d7780f426f0fff
+  technology_codes:
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1049V33
+  - CY7C1041V33
+  die_ids:
+  - 7C1349A
+  - 7C1341A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiW,AlCu,TiW/500Å,6000Å,1200Å; Metal 2: TiW,AlCu,TiW/500Å,8000Å,300Å'
+    passivation: 3000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.35 µm
+    gate_oxide: SiO2 / 70 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42D
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '97396'
+    description: 4 Meg SRAM, R42D Technology, Fab 4 Qualification
+    date: null
+  quotes:
+  - text: 4 Meg SRAM, R42D Technology, Fab 4 Qualification
+    location: p.1, cover title
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42D'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.35 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This is QTP 97396 itself, already cited by qtp-097517 (this session) as the source of reliability
+    test data reused for CY7C1049V33/CY7C1041V33; figures agree exactly (0.35 µm, 70 Å gate oxide, 2 metal
+    layers).
+- id: qtp-098081
+  origin: cypress
+  doc_type: QTP
+  number: '98081'
+  cypress_document_number: null
+  title: Synchronous 3.3V Cache RAM, R42D Technology w/ Hot Al, Fab 4 Qualification
+  version: '2.0'
+  date_printed: August, 1999
+  url: https://www.cypress.com/file/93926/download
+  archive_url: https://web.archive.org/web/20211206081930/https://www.cypress.com/file/93926/download
+  retrieved: '2026-09-25'
+  sha256: 2cda229fb5e2fb99499aa4561c65e011eb4e9c8d3a06ec58fb75ccc72175de15
+  technology_codes:
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1325
+  - CY7C1327
+  - CY7C1345
+  - CY7C1347
+  - CY7C1338
+  - CY7C1339
+  die_ids:
+  - 7C1325A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiW,AlCu,TiW/500Å,6000Å,1200Å; Metal 2: TiW,AlCu,TiW/500Å,8000Å,300Å'
+    passivation: 3000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.35 µm
+    gate_oxide: SiO2 / 70 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42D w/ Hot Al
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98081'
+    description: Qualifies 256K x 18 Synchronous 3.3V Cache RAM, CY7C1325 and its options in R42D technology
+      with Hot Al in Fab4.
+    date: null
+  quotes:
+  - text: Qualifies 256K x 18 Synchronous 3.3V Cache RAM, CY7C1325 and its options in R42D technology with
+      Hot Al in Fab4.
+    location: p.2, Product Description, Qualification Purpose
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42D w/ Hot Al'
+    location: p.2, Technology/Fab Process Description
+  notes: This report's die (CY7C1325, revision "7C1325A") is the pre-"B" revision of the same part family
+    qtp-099503 (this session) later qualifies as CY7C1325B; both share R42D/R52D-3-era 0.35 µm-class figures
+    for the "with Hot Al" Die Fab Line ID variant already seen in qtp-098357 (this session).
+- id: qtp-l000004
+  origin: cypress
+  doc_type: QTP
+  number: L000004
+  cypress_document_number: null
+  title: CYNCP80192-BGC Network Co-Processor, TSMC 0.25um Technology, Fab 5 (TSMC)
+  version: '1.0'
+  date_printed: October, 2001
+  url: https://www.cypress.com/file/94401/download
+  archive_url: https://web.archive.org/web/20211203223801/https://www.cypress.com/file/94401/download
+  retrieved: '2026-09-25'
+  sha256: 54797165f49c770cfa7341b9b909970fe20695dce85914996985150e57cd2c9f
+  technology_codes:
+  - T025LV
+  fab: Fab 5 (TSMC, Taiwan)
+  products:
+  - CYNCP80192-BGC
+  die_ids:
+  - LNT2501COP
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: Al - 0.5%Cu
+    passivation: Oxide / Nitride
+    free_phosphorus_percent: 0%
+    design_rule: COMS, T025LV
+    gate_oxide: SiO2 / 50Å
+    fab_location: TSMC Taiwan
+    die_fab_line_id: Fab5, CMOS, 0.25 microns, Low Voltage, 4Metal, 1Poly, (TSMC)
+    transistors: '1,233,478'
+    gates: '26,190'
+  qualification_history:
+  - number: G990001
+    description: New Technology TSMC 0.25um 4T 3P2M /New Product, 8Meg, GVT71256B36 and its product family
+      and bonding / metal option
+    date: Oct 99
+  - number: L000004
+    description: New Network Co-Processor, CYNCP80192-BGC
+    date: Oct 01
+  quotes:
+  - text: New Technology TSMC 0.25um 4T 3P2M /New Product, 8Meg, GVT71256B36 and its product family and bonding
+      / metal option
+    location: p.2, Product Qualification History, row G990001
+  - text: Fab5, CMOS, 0.25 microns, Low Voltage, 4Metal, 1Poly, (TSMC)
+    location: p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  - text: COMS, T025LV
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule (sic, printed
+      "COMS" for CMOS)
+  notes: This foundry technology (TSMC, Taiwan, run as Cypress's "Fab 5") is qualified under letter-prefixed
+    QTP numbers ("G990001", "L000004") rather than the plain numeric QTP numbers used at Cypress's own fabs.
+    The qualification-history row for G990001 describes the technology as "TSMC 0.25um 4T 3P2M" (4 transistor?
+    3 poly 2 metal?), while the process-description block for this device instead prints 4 metal layers and
+    calls the design rule "T025LV" -- both quoted verbatim rather than reconciled. See qtp-g990003 (this
+    session) for a second WaferTech-run foundry technology qualified the same way.
+- id: qtp-024907
+  origin: cypress
+  doc_type: QTP
+  number: '024907'
+  cypress_document_number: null
+  title: WirelessUSB Radio, CYWUSB6941, B53D-3 Technology, Fab4
+  version: '1.0'
+  date_printed: June, 2003
+  url: https://www.cypress.com/file/91736/download
+  archive_url: https://web.archive.org/web/20210921021823/https://www.cypress.com/file/91736/download
+  retrieved: '2026-09-25'
+  sha256: 4bbcb6f37a5de2d94fda0e39fb7fbf09f708d083a09e2e9fd61f12962e2eff76
+  technology_codes:
+  - B53D-3
+  fab: Fab 4 (Cypress Semiconductor -- Minnesota)
+  products:
+  - CYWUSB6941
+  die_ids:
+  - CY7B6961A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500/6000/300 [Å]; Metal 2: 500/6000/300 [Å]'
+    passivation: 1,000A TEOS + 9,000A Si2N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, 0.25 µm
+    gate_oxide: SiO2 / 55Å
+    fab_location: Cypress Minnesota, Fab4
+    die_fab_line_id: Fab4 / B53D-3
+    transistors: 150K
+    gates: 30K
+  qualification_history:
+  - number: '011406'
+    description: New Product, Quad HOTLink II family, B53D-3 Technology in Fab4
+    date: Oct 01
+  - number: '024907'
+    description: New Device , CYWUSB6941 (WirelessUSB Radio), B53D-3 Technology in Fab4
+    date: May 03
+  quotes:
+  - text: New Product, Quad HOTLink II family, B53D-3 Technology in Fab4
+    location: p.2, Product Qualification History, row 011406
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4 / B53D-3'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, 0.25 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: Adds a history row (011406, Oct 01, "Quad HOTLink II family") not present in this corpus's other
+    B53D-3 record (qtp-032005); figures (0.25 µm, 55 Å gate oxide, 2 metal layers) agree with it exactly.

@@ -137,6 +137,18 @@ Five more records, all Fab 4 (Bloomington, MN):
 | qtp-097222 | R32D | 93746 | cover prints "R3.2D" with a decimal point, elsewhere "R32D" |
 | qtp-097344 | R32D | 93801 | a mask-change qualification (tungsten plug to Hot Aluminum on Metal 2), not a new product |
 
+## Seventh batch: R42, R42D reports, a TSMC foundry report, B53D-3
+
+Five more records:
+
+| id | technology_codes | fab | source file id | notes |
+|---|---|---|---|---|
+| qtp-097506 | R42 | Fab 4 (Bloomington, MN) | 93896 | plain "R42" (no suffix); prints "2 metal layers" but only one Metal Composition line |
+| qtp-097396 | R42D | Fab 4 (Bloomington, MN) | 93831 | this is QTP 97396 itself, cited by qtp-097517 |
+| qtp-098081 | R42D | Fab 4 (Bloomington, MN) | 93926 | pre-"B"-revision sibling of qtp-099503's product family |
+| qtp-l000004 | T025LV | Fab 5 (TSMC, Taiwan) | 94401 | letter-prefixed QTP numbers (G990001, L000004); "COMS" misprint for CMOS |
+| qtp-024907 | B53D-3 | Fab 4 (Minnesota) | 91736 | adds a history row (QTP 011406, Quad HOTLink II) missing from qtp-032005 |
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
@@ -145,19 +157,17 @@ Five more records, all Fab 4 (Bloomington, MN):
   R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
   quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
   extracted text at `tmp/extracted/<fid>.txt` (both done).
-- Group C: 12 more fetched-and-extracted file ids not yet turned into records
-  (all of `tmp/priority_order_c.txt` except the 5 codes, 19 further reports
-  handled above, and 94146 which is unusable):
-  93896 (QTP 97506), 93831 (QTP 97396 -- referenced by qtp-097517 above),
-  93926 (QTP 98081), 94401 (QTP L000004, TSMC 0.25 µm foundry report),
-  91736 (QTP 024907), 91621 (QTP 011103), 94381 (no "QTP#" prefix at all --
-  numbered "G990003", a WaferTech 0.35 µm "Technology Qualification Report";
-  keep `doc_type: QTP` for consistency with the rest of this corpus rather
-  than adding a new `doc_type` value), 91526 (QTP 002703), 135526
-  (QTP 002202), 121666 (QTP 005004). None of these QTP numbers duplicate an
-  existing record (checked against the numeric set as of this session's third
-  batch). QTP-number identification for all of them was done with `grep -om1
-  -E "QTP#?\s*:?\s*[0-9]{4,6}" tmp/extracted/<fid>.txt`.
+- Group C: all 36 file ids now attempted. 7 remain to be turned into records:
+  91621 (QTP 011103), 94381 (no "QTP#" prefix at all -- numbered "G990003", a
+  WaferTech 0.35 µm "Technology Qualification Report"; keep `doc_type: QTP`
+  for consistency with the rest of this corpus rather than adding a new
+  `doc_type` value; already referred to as `qtp-g990003` in qtp-l000004's
+  notes -- use that id when adding it), 91526 (QTP 002703), 135526
+  (QTP 002202), 121666 (QTP 005004), plus 94076 and 94146 which are unusable
+  (see above). None of the pending QTP numbers duplicate an existing record
+  (checked against the numeric set as of this session's sixth batch).
+  QTP-number identification was done with `grep -om1 -E "QTP#?\s*:?\s*[0-9]{4,6}"
+  tmp/extracted/<fid>.txt`.
 - Group B: 46 staged-and-extracted file ids not yet turned into records (all
   of `tmp/priority_order_b.txt` except the 2 duplicates and the 4 now
   recorded) -- R52T-3 clocks (many), R52FFD-3, B55SGT, C8Q-3R, R9Q-3R,
