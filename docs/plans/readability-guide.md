@@ -394,8 +394,11 @@ starts with a bold run-in label that introduces a whole passage rather than one 
 **Do.**
 1. Keep at most two paragraphs and 120 words between the H2 and the first H3: what is done, what
    arrives, what leaves, where it sits in the module.
-2. Move nothing between H2 sections. Everything stays in its own H2, in its own order; you are only
-   adding H3 lines.
+2. Move nothing between H2 sections. Everything stays in its own H2, in its own order — except on
+   mask pages, where the canonical H3s of `check_masks.OPTIONAL_H3` stand in canonical order: a passage
+   under a canonical H3 moves, unchanged and within its H2, to meet that order, provided no passage
+   refers to another by position ("above", "below", "that step"). Record every such move in the
+   progress file. Otherwise you are only adding H3 lines.
 3. Use this vocabulary for new H3s on step pages: `### Key numbers`, `### What the public record shows`,
    `### How <quantity> is estimated`, `### Competing readings`.
 4. A bold run-in that introduces a passage becomes an H3 with the same words, minus the trailing
@@ -730,8 +733,9 @@ pages) is an unordered run of sentence-bullets.
    previous/next mask) · `Evidence:` (e.g. a die-shot) · `Category page:`. Keep every gloss and
    link. Never split one bullet's links over two labels unless the bullet already names two
    relationships.
-2. Class pages: group under bold labels — Category · Machines · Materials · Masks · Indexes — and keep
-   each gloss to ≤ 12 words. Six or more mask links with one shared gloss become a single line.
+2. Class pages: group under bold labels — Steps (mask pages: the mask step and the steps that transfer,
+   strip or depend on its pattern) · Category · Machines · Materials · Masks · Indexes — and keep each
+   gloss to ≤ 12 words. Six or more mask links with one shared gloss become a single line.
 3. Drop no link, add no link, change no link text.
 
 **Example** — `docs/machines/duv-krf-stepper.md:333-352`: seven bullets beginning "per-mask pages
@@ -1075,7 +1079,9 @@ words it quotes stay verbatim elsewhere on the page (see the example above).
 `FOMCD` 0.14 …; Table 7 gives … 0.135 (`FOMSE`) …"), next to an existing table.
 
 **Do.**
-1. Second table: `Parameter | PDK table | Published description | Value`.
+1. Second table: `Parameter | PDK table | Published description | Value`, or, if a cell exceeds five
+   lines at 400 px, `Parameter (table) | Published description | Value`. Right-align the Value column
+   when every cell is a number; left-align it when a cell holds prose (review L7, masks batch A).
 2. One row per parameter, values and identifiers exactly as written.
 3. The interpretation ("the PDK does not reconcile these with the 0.150 µm of difftap.1", "our
    reading") stays as prose after the table, unchanged.
