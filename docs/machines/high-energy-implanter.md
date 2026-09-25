@@ -149,8 +149,8 @@ concern here than on high-current tools.
 | Eaton | NV-1000 | 1986 | —[^axcelis-history] |
 | Eaton | NV-1002 | 1990 | —[^axcelis-history] |
 | Eaton | NV-GSD-HE | 1994 | —[^axcelis-history] |
-| Axcelis | HE3 (300 mm) | 1998 | —[^axcelis-history] |
-| Axcelis | NV-GSD/VHE | — | "an evolutionary step from the NV-GSD/HE" using the same "source, injector and end station"[^wilson-1996] |
+| Eaton / Axcelis | HE3 (300 mm) | 1998 | —[^axcelis-history] |
+| Eaton / Axcelis | NV-GSD/VHE | — | "an evolutionary step from the NV-GSD/HE" using the same "source, injector and end station"[^wilson-1996] |
 | Axcelis | GSD/HE and GSD/VHE Ovation | — | —[^axcelis-gsd-page][^axcelis-gsd] |
 | Genus | G1500 | — | MeV implanter[^tokoro-1996] |
 | Genus | G1510 | — | MeV implanter[^tokoro-1996] |
