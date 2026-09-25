@@ -129,6 +129,10 @@ Used on {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`.
 **EW-2007-UMC** — Electronics Weekly, *Cypress moves SRAM production to foundry*, February 2007. <https://www.electronicsweekly.com/news/business/manufacturing/cypress-moves-sram-production-to-foundry-2007-02/>
 Used on {ref}`history-fabs`.
 
+(hsrc-fliesler-2008)=
+**FLIESLER-2008** — M. Fliesler, D. Still and J.-M. Hwang (Cypress Semiconductor and Simtek), *A 15ns 4Mb NVSRAM in 0.13u SONOS Technology*, 2008 Joint Non-Volatile Semiconductor Memory Workshop and International Conference on Memory Technology and Design, DOI 10.1109/NVSMW.2008.30. <https://ieeexplore.ieee.org/document/4531830/>
+Used on {ref}`history-s8-lineage`.
+
 (hsrc-fu-cypress)=
 **FU-CYPRESS** — FundingUniverse (from the *International Directory of Company Histories*), *History of Cypress Semiconductor Corporation*, retrieved 2026-09-25. <https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
@@ -538,4 +542,16 @@ Used on {ref}`history-sonos-s4`.
 (hsrc-pat-us6172907)=
 **PAT-US6172907** — F. Jenne (Cypress Semiconductor), *Silicon-oxide-nitride-oxide-semiconductor (SONOS) type memory cell and method for retaining data in the same*, US 6,172,907 B1, priority 1999-10-22. Status shown as unknown; estimated expiry no later than 2020-10-22 (estimate from public records, not legal advice). <https://patents.google.com/patent/US6172907B1/en>
 Used on {ref}`history-sonos-s4`.
+
+(hsrc-pat-us7592661)=
+**PAT-US7592661** — S. Lee et al. (Cypress Semiconductor), US 7,592,661 B1, priority 2005-07-29. Status shown as unknown; estimated expiry no later than 2026-07-29 (estimate from public records, not legal advice). <https://patents.google.com/patent/US7592661B1/en>
+Used on {ref}`history-s8-lineage`.
+
+(hsrc-pat-us8093128)=
+**PAT-US8093128** — W. W. C. Koutny Jr. et al. (Cypress Semiconductor), US 8,093,128 B2, priority 2007-05-25. Shown as in force; estimated expiry 2028-10-22 (estimate from public records, not legal advice). <https://patents.google.com/patent/US8093128B2/en>
+Used on {ref}`history-s8-lineage`.
+
+(hsrc-pat-us9583501)=
+**PAT-US9583501** — J.-M. Hwang (Cypress Semiconductor), US 9,583,501 B1, priority 2006-12-22. Shown as in force; estimated expiry 2026-12-22 (estimate from public records, not legal advice). <https://patents.google.com/patent/US9583501B1/en>
+Used on {ref}`history-s8-lineage`.
 :::

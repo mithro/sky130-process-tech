@@ -1405,6 +1405,36 @@ claims:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyx-pin152804-fab4-families, origin: cypress}
 
+- id: s8-nvsram-paper
+  page: docs/history/s8-lineage.md
+  anchor: 'A 2008 paper by Cypress and Simtek authors'
+  grade: attributed
+  attribution: Cypress and Simtek
+  footnotes: [fliesler-2008, ew-2007-s8]
+  sources:
+  - {id: paper-fliesler-2008-nvsram-013u-sonos, origin: cypress}
+  - {id: cyx-ew-2007-s8-nvsram, origin: cypress}
+- id: s8-pat-hv-2005
+  page: docs/history/s8-lineage.md
+  anchor: 'a high voltage, drain-extended'
+  grade: single-source
+  footnotes: [pat-us7592661]
+  sources:
+  - {id: pat-us7592661b1-cmos-hv-transistor-2005, origin: patent-record}
+- id: s8-pat-top-oxide-2006
+  page: docs/history/s8-lineage.md
+  anchor: 'a top oxide layer over the nitride layer'
+  grade: single-source
+  footnotes: [pat-us9583501]
+  sources:
+  - {id: pat-us9583501b1-sonos-mos-simultaneous-2006, origin: patent-record}
+- id: s8-pat-integration-2007
+  page: docs/history/s8-lineage.md
+  anchor: 'a non-volatile charge trap memory device'
+  grade: single-source
+  footnotes: [pat-us8093128]
+  sources:
+  - {id: pat-us8093128b2-s8-family-2007, origin: patent-record}
 # ---- docs/history/naming.md -------------------------------------------------
 - id: name-table-digit-2
   page: docs/history/naming.md

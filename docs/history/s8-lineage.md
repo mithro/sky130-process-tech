@@ -18,7 +18,8 @@ where it came from. The processes themselves are on {ref}`history-technologies` 
   fabrication process"; Infineon's history of PSoC says PSoC 3 was developed "using a 130 nm 5 V process"
   (Cypress and Infineon).[^ar-fy2010][^psoc-history]
 * **nvSRAM.** The first S8 products were nvSRAMs, and in 2008 Cypress bought Simtek, whose nvSRAM line it
-  took over (Cypress's reports).[^ew-2007-s8][^ar-fy2008]
+  took over (Cypress's reports).[^ew-2007-s8][^ar-fy2008] A 2008 paper by Cypress and Simtek authors
+  describes "A 15ns 4Mb NVSRAM in 0.13u SONOS Technology".[^fliesler-2008][^ew-2007-s8]
 
 ## What S8 has in common with earlier processes
 
@@ -86,6 +87,31 @@ was the SONOS process of generation 4 (our reading). The numbering is Cypress's,
 generation 6 was found, and generation 2 covers 0.8 µm and 0.65 µm. SkyWater's "8th generation of the
 SONOS technology" and this reading agree that S8 is a SONOS process; they differ on what the 8 counts, and
 no Cypress source found says.[^pdk-previous] The naming is set out on {ref}`history-naming`.
+
+## Patents from the years before S8
+
+Three Cypress patent families filed in 2005–2007 describe process modules of the kind S8 needed: a
+high-voltage transistor, and ways to build SONOS memory and logic transistors together. A patent shows
+what Cypress worked on, not what S8 used. The patent records show them as in force or of unknown status,
+so each is in a collapsed note.
+
+:::{dropdown} A high-voltage transistor patent of status shown as unknown (US 7,592,661; estimated expiry no later than 2026-07-29) — open to read
+Filed with a 2005 priority date, it describes "a high voltage, drain-extended (DE) metal-oxide-
+semiconductor (MOS) transistor" whose drain extension is formed in a deep n-well (single
+source).[^pat-us7592661]
+:::
+
+:::{dropdown} A SONOS-and-logic oxide patent shown as in force (US 9,583,501 family; estimated expiry 2026-12-22) — open to read
+Filed with a 2006 priority date, it forms the SONOS top oxide and the gate oxide of the logic transistors
+in one step: "a top oxide layer over the nitride layer and a gate oxide layer over the surface of
+substrate in the second region" (single source).[^pat-us9583501]
+:::
+
+:::{dropdown} A memory-and-logic integration patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
+Filed with a 2007 priority date, it describes a chip with "a non-volatile charge trap memory device
+disposed on a first region and a logic device disposed on a second region" (single
+source).[^pat-us8093128]
+:::
 
 ## Open questions
 
@@ -191,3 +217,16 @@ no Cypress source found says.[^pdk-previous] The naming is set out on {ref}`hist
 [^tenq-2017q1]: Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed
     2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing.
     <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>
+[^fliesler-2008]: M. Fliesler, D. Still and J.-M. Hwang (Cypress Semiconductor and Simtek), *A 15ns 4Mb
+    NVSRAM in 0.13u SONOS Technology*, 2008 Joint Non-Volatile Semiconductor Memory Workshop and
+    International Conference on Memory Technology and Design, DOI 10.1109/NVSMW.2008.30.
+    <https://ieeexplore.ieee.org/document/4531830/>
+[^pat-us7592661]: S. Lee et al. (Cypress Semiconductor), US 7,592,661 B1, priority 2005-07-29. Status
+    shown as unknown; estimated expiry no later than 2026-07-29 (estimate from public records, not legal
+    advice). <https://patents.google.com/patent/US7592661B1/en>
+[^pat-us9583501]: J.-M. Hwang (Cypress Semiconductor), US 9,583,501 B1, priority 2006-12-22. Shown as in
+    force; estimated expiry 2026-12-22 (estimate from public records, not legal advice).
+    <https://patents.google.com/patent/US9583501B1/en>
+[^pat-us8093128]: W. W. C. Koutny Jr. et al. (Cypress Semiconductor), US 8,093,128 B2, priority 2007-05-25.
+    Shown as in force; estimated expiry 2028-10-22 (estimate from public records, not legal advice).
+    <https://patents.google.com/patent/US8093128B2/en>
