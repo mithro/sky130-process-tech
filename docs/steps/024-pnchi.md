@@ -115,7 +115,7 @@ L = 0.15 µm than at L = 8 µm — 0.119 V against 0.059 V at W = 7 µm
 (twice) and 0.110 V against 0.064 V at W = 0.42 µm (1.7 times). The
 threshold rise for 1.8 V of reverse body bias is almost the same for
 the two devices at 7/8 µm (0.352 V against 0.341 V) but not at
-7/0.15 µm (0.233 V against 0.159 V). This is our extraction from the
+7/0.15 µm (0.233 V against 0.159 V). Both are our extraction from the
 published measurements, by maximum-transconductance extrapolation at
 V_DS = −0.1 V.[^raw-data-lv-mosfets]
 

@@ -150,11 +150,14 @@ capacitance–voltage sweeps of the test tile's two options, which the
 pad list maps to `cap_var_lvt` and `cap_var_hvt`, show the same
 pattern. For 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at −1.8 V, on the
 low-capacitance side, and 21.04 pF against 21.14 pF at 1.8 V into
-accumulation. Over five sizes, an area capacitance is about 1.66
-against 0.80 fF/µm² at −1.8 V. This is our extraction from the
-published measurements; the files record no measurement frequency,
-temperature, date or
-wafer.[^raw-data-passives][^raw-data-testtile-pads]
+accumulation. This is our extraction from the published
+measurements.[^raw-data-passives][^raw-data-testtile-pads]
+
+The same pattern holds for an area capacitance of about 1.66
+against 0.80 fF/µm² at −1.8 V, over five sizes (our extraction from
+the published measurements; the files record no measurement
+frequency, temperature, date or
+wafer).[^raw-data-passives][^raw-data-testtile-pads]
 
 A larger
 depletion capacitance at the same bias means a thinner depletion

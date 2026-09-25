@@ -93,8 +93,8 @@ Five instances give a
 threshold of −0.12 to −0.13 V by maximum-transconductance extrapolation
 at a drain bias of 0.1 V (less half that bias), against an e-test nominal of −0.1224 V. They also give a
 body-effect coefficient of 0.070–0.072 √V from the threshold shift at
-substrate biases of −2.5 V and −5 V. This is our extraction from the published
-measurements.[^raw-data-hv-mosfets][^pdk-07]
+substrate biases of −2.5 V and −5 V. Both are our extraction from the
+published measurements.[^raw-data-hv-mosfets][^pdk-07]
 
 With the standard
 uniform-doping expression and the thick-oxide capacitance measured on
