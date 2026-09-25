@@ -64,6 +64,68 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 018-nwi.md — done (this is the guide's own R-TABLE worked example page)
+
+`docs/plans/readability-guide.md` quotes `docs/steps/018-nwi.md:94` (the "Energy" bullet) as
+R-TABLE's own worked example. The committed page still had the pre-readability text, so this
+commit applies the guide's own example, **extended** with the page's 4th source (a Hynix
+triple-well "middle n-well" quote) that the guide's illustration omits — the same "extend, don't
+drop" convention the pilot used on `006-stie.md`/`013-ns19.md`.
+
+Rules applied: R-PARA (the lead paragraph split at its process-assumptions seam; the Latch-up
+and Well-to-well-isolation bullets → lead + indented continuation; the Species item likewise),
+R-SENTENCE (em-dash/semicolon splits throughout), R-OPENQ step 2 (the RSNW e-test bullet, 95
+words and mostly numbers, moved into a new `### What the public record shows` H3 under "What
+this step is", per the rule's own instruction; the Open-questions bullet keeps the question,
+the hedge and a pointer to it), R-HEDGE step 1 (italic lead-in on the scope sentence only — the
+following "SKY130's values are not public" sentence is a separate statement, left as plain
+prose, not italicised), R-TABLE (the guide's own Energy table, extended to 4 rows), R-TOOLS (2
+"Strength:" bullets, split, no recap table), R-RELATED (`Previous:`/`Next:` split;
+`Depends on:`, `Feeds:` labels), R-OPENQ (bold labels on all five bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 4 → 0; sentences > 45 words 10 → 3 (figure caption
+alt+caption, plus the table-markdown-misread artifact); table cells > 25 words 0 → 0.
+
+**Two new, more significant Guide problems found on this page** (numbered 13 and 14, continuing
+from Guide problem 12 in the 015 entry above):
+
+13. **`check_preserved.py`'s `numbers` category counts a repeated unit's own exponent as
+    content, so R-TABLE's own instruction to move units into the header (rule 4: "Units go in
+    the header… Per-cell units only where the source itself is inconsistent") can produce a
+    genuine, unconditional `LOST numbers` failure** — not a `number_order` regroup warning, the
+    stricter category that has no `--allow-regrouped`/`--allow-added` escape at all. Concretely:
+    the source repeats "cm⁻²" after every dose value (six times across the Energy bullet's four
+    sources); the guide's own table collapses that to one "Dose (cm⁻²)" header cell, and
+    `extract_numbers` counts each "⁻²" as a number, so the header consolidation shows as `LOST
+    numbers: '⁻²'×5`. Verified by hand (`extract_numbers` old vs. new, script in the method
+    note below): no dose *value* is missing or changed, only the repeated unit symbol's count
+    dropped, exactly as R-TABLE rule 4 instructs. Since `check_preserved.py` is off limits to
+    edit (§2 rule 15) and the guide's own worked example for this exact page uses header units,
+    the table was kept as the guide specifies and this is recorded rather than "fixed" by
+    reverting to per-cell units (which would contradict rule 4 and the guide's own example).
+14. **A number split across a markdown line-wrap in the *pre-existing* source tokenises as
+    multiple numbers, not one**, the same family of bug as pilot Guide problem 7 (hedge
+    matching not flattened across a line wrap) but for `NUMBER_RE` instead of hedge phrases:
+    the base text had "…at 5 ×\n  10¹¹ cm⁻²…" (the multiplication broken across the line wrap),
+    so `extract_numbers` on the **old** text alone returns `'5'`, `'10'`, `'¹¹'` as three
+    separate tokens instead of one `'5 × 10¹¹'`. This page's edit naturally rejoins that phrase
+    onto one line inside a table cell, where it correctly tokenises as one token — which then
+    reads as `LOST numbers: '10', '5', '¹¹'` even though the value "5 × 10¹¹" itself is
+    unchanged and, if anything, more correctly represented afterwards. Verified with the same
+    method-note script, confirmed the split is purely a line-wrap artifact of the base commit,
+    not this edit's doing.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/018-nwi.md`:
+fails on `LOST numbers` for the two reasons above (13, 14) and `LOST number_order (not a clean
+regroup)` for the same tuples (verified as clean regroups or single-number strandings, the same
+Guide-problem-11 pattern, using the `extract_number_order`-import method from the 017 entry).
+`quotes` and `hedges` show no LOST. All other checkers pass; `-W` build clean. Screenshots
+(desktop + 400 px) read cleanly top to bottom: the new "What the public record shows" H3, the
+extended Energy table (holds at 400 px even with four rows and the long "5.2×10¹³ / 1.25×10¹² /
+5×10¹¹" cell wrapping onto three lines), the glance box and the Related/Open-questions sections
+all render without overflow.
+
 ### 017-nwm.md — done (no in-force patent note on this page; index-links dropdown only)
 
 Rules applied: R-SENTENCE (the em-dash/colon sentences throughout), R-PARA (the lead paragraph
