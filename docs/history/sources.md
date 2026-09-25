@@ -169,6 +169,10 @@ Used on {ref}`history-fabs`.
 **PSOC-HISTORY** — Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of 2025-07-13 (the live page now redirects elsewhere). <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
 Used on {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
+(hsrc-qtp-000505)=
+**QTP-000505** — Cypress Semiconductor, Product Qualification Report QTP 000505: *1 Meg Fast Asynchronous SRAM, R52FD-3 Technology, Fab 4*, December 2002; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210517171315/https://www.cypress.com/file/91326/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
+
 (hsrc-qtp-000901)=
 **QTP-000901** — Cypress Semiconductor, Product Qualification Report QTP 000901: *Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology*, May 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
@@ -209,9 +213,17 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 **QTP-014807** — Cypress Semiconductor, Product Qualification Report QTP 014807: *Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV*, June 2005. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
+(hsrc-qtp-020305)=
+**QTP-020305** — Cypress Semiconductor, Product Qualification Report QTP 020305: *Two-PLL Clock Generator, S4AD-5 Technology, Fab 2 / R42LDHA, Fab 4*, August 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211203215015/https://www.cypress.com/file/91946/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
+
 (hsrc-qtp-021507)=
 **QTP-021507** — Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
+
+(hsrc-qtp-022505)=
+**QTP-022505** — Cypress Semiconductor, Product Qualification Report QTP 022505: *PSoC Microcontrollers Family, S4AD-5 Technology, Fab 2*, June 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211025133341/https://www.cypress.com/file/91396/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-023101)=
 **QTP-023101** — Cypress Semiconductor, Product Qualification Report QTP 023101: *Synchronous Dual Port RAM Family CY7C083xV / CY7C085xV, R7FTW-3R Technology Fab4*, June 2005. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf>
@@ -229,6 +241,10 @@ Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`,
 **QTP-030206** — Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>
 Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
 
+(hsrc-qtp-030310)=
+**QTP-030310** — Cypress Semiconductor, Product Qualification Report QTP 030310: *ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology*, June 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download>
+Used on {ref}`history-products`.
+
 (hsrc-qtp-031101)=
 **QTP-031101** — Cypress Semiconductor, Product Qualification Report QTP 031101: *High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2*, January 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>
 Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
@@ -241,9 +257,17 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 **QTP-032005** — Cypress Semiconductor, Product Qualification Report QTP 032005: *WirelessUSB Device Family, B53D-3RF Technology, Fab 4*, May 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211206184334/https://www.cypress.com/file/92296/download>
 Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
+(hsrc-qtp-032105)=
+**QTP-032105** — Cypress Semiconductor, Product Qualification Report QTP 032105: *18 Meg QDR/DDR Synchronous SRAM, R7FFT-18, Fab 4*, May 2004; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211207080356/https://www.cypress.com/file/92306/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
+
 (hsrc-qtp-032301)=
 **QTP-032301** — Cypress Semiconductor, Product Qualification Report QTP 032301: *16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan*, May 2004; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>
 Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+
+(hsrc-qtp-041005)=
+**QTP-041005** — Cypress Semiconductor, Product Qualification Report QTP 041005: *8-Meg Super TSRAM Device, 0.165um Technology, Power Chip in Taiwan*, March 2004; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210517162948/https://www.cypress.com/file/92446/download>
+Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-041406)=
 **QTP-041406** — Cypress Semiconductor, Product Qualification Report QTP 041406: *4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater*, February 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>

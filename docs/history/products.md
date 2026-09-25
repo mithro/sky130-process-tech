@@ -40,7 +40,7 @@ described on {ref}`history-technologies`.
 | RAM42 | Grace Semiconductor, Shanghai, China; Cypress Semiconductor -- Bloomington, MN | CY62256*, CY62256, CY62256V | 3[^qtp-091302][^qtp-030206][^qtp-030204] |
 | CSM 0.35um | Chartered Semiconductor Singapore | CY7B9950, CY2DP818*, CY28346, CY29946, CY29947, CY29948, CY29972, CY29973 | 1[^qtp-i000005] |
 | R42LDHA | Cypress Semiconductor - Bloomington, MN | CY2213ZC-1 | 1[^qtp-003907] |
-| S4AD-5 | Cypress Semiconductor -- CTI Round Rock, TX; HHGrace /Shanghai-China; GSMC/Shanghai-China | CY26049-1/3/4/5, CY26049-36, CY23FP12, CY23FS04, CY23FS08, CY8C24794, CY8C24894, CY8C21234, CY8C21334, CY8C21434 and 3 more | 3[^qtp-021507][^qtp-151005][^qtp-062509] |
+| S4AD-5 | Cypress Semiconductor -- CTI Round Rock, TX; HHGrace /Shanghai-China; GSMC/Shanghai-China | CY26049-1/3/4/5, CY26049-36, CY23FP12, CY23FS04, CY23FS08, CY8C24794, CY8C24894, CY8C21234, CY8C21334, CY8C21434 and 8 more | 5[^qtp-021507][^qtp-151005][^qtp-062509][^qtp-022505][^qtp-020305] |
 | S4AD-5CTI | Cypress Semiconductor - Round Rock, TX | CY8C21334, CY8C21534 | 1[^qtp-051005] |
 | S4ADLatch | Cypress Semiconductor - Round Rock, TX | CY5048WAF | 1[^qtp-042806] |
 
@@ -49,7 +49,9 @@ described on {ref}`history-technologies`.
 | Process | Fab as printed | Products named in the reports | Reports |
 |---|---|---|---|
 | B53D-3RF | Cypress Minnesota, Fab4 | CYWUSB6932, CYWUSB6934, CYWUSB6935, CYWUSB6941 | 1[^qtp-032005] |
+| NEC 0.25um | NEC Electronics America (Roseville) | CY7C68310 | 1[^qtp-030310] |
 | R52D-3 | Cypress Semiconductor - Bloomington, MN | CY7C056V, CY7C057V, CY7C09569V, CY7C09579V | 1[^qtp-099202] |
+| R52FD-3 | Cypress Semiconductor -- Bloomington, MN | CY7C1021BV33, CY7C1019BV33 | 1[^qtp-000505] |
 | R52FFD-3 | Cypress Semiconductor – Bloomington, MN | CY7C1021BV33, CY7C1019BV33 | 1[^qtp-012705] |
 | R52LD-3 | Cypress Semiconductor – Bloomington Minnesota | CYDMX256A16, CYDMX128A16, CYDMX064A16 | 1[^qtp-062201] |
 | R52T-3 | Cypress Semiconductor - Bloomington, MN | CY28437, CY24291, CY24292, CY24293 | 1[^qtp-082506] |
@@ -61,9 +63,10 @@ described on {ref}`history-technologies`.
 | B55SGT | Cypress Semiconductor – Bloomington, MN (CMI) | CY2DP3110, CY2DP314 | 1[^qtp-051101] |
 | R7FT-3R | Cypress Semiconductor -- Bloomington, MN; Cypress Semiconductor -- Bloomington Minnesota | CY7C0831V, CY7C0832V, CY7C0851V, CY7C0852V, CY7C0853V | 2[^qtp-014807][^qtp-023101] |
 | S17 | Promos (Taiwan) | CYU001M16TFFA, CYU001M16TFF1A, CYU001M16TFF3A | 1[^qtp-032301] |
-| PowerChip 0.165um | Powerchip Semiconductor Corp, HsinChu, Taiwan | K002MC5BW, GC2016V5BW, CYK128K16SCCB, CYK128K16MCCB, WCMC2016V9B, WCMC2016V7B | 1[^qtp-051501] |
+| PowerChip 0.165um | Powerchip Semiconductor Corp, HsinChu, Taiwan; Power Chip (Foundry) - Taiwan | K002MC5BW, GC2016V5BW, CYK128K16SCCB, CYK128K16MCCB, WCMC2016V9B, WCMC2016V7B, CYK512K16SCCAU, K512KSC9A, GC8016V5A, GC8016V9A | 2[^qtp-051501][^qtp-041005] |
 | R7LD-1.8 | Cypress Semiconductor -- Bloomington, MN | CY62146CV18, CY62147CV18 | 1[^qtp-012801] |
 | R7FD | Cypress Semiconductor -- Bloomington, MN | CY7C1018CV33, CY7C1019CV33, CY7C1021CV33 | 1[^qtp-011908] |
+| R7FFT-18 | Cypress Semiconductor -- Bloomington, MN | CY7C1303AV18, CY7C1306AV18, CY7C1305AV18, CY7C1307AV18, CY7C1302BV25, CY7C1304BV25, CY7C1308BV25, CY7C1322V25, CY7C1397V25, CY7C1310V18 and 20 more | 1[^qtp-032105] |
 
 ### 0.13 µm
 
@@ -100,6 +103,7 @@ described on {ref}`history-technologies`.
 
 ### Deep dive
 
+* [Cypress, QTP 000505](<https://web.archive.org/web/20210517171315/https://www.cypress.com/file/91326/download>) — 1 Meg Fast Asynchronous SRAM, R52FD-3 Technology, Fab 4.[^qtp-000505]
 * [Cypress, QTP 000901](<https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>) — Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology.[^qtp-000901]
 * [Cypress, QTP 001004](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-001004-productqualificationreport-en.pdf>) — 0.5um TLM Technology, Fab HME, Dual Port SRAM with PCI Bus Controller.[^qtp-001004]
 * [Cypress, QTP 003907](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>) — High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4.[^qtp-003907]
@@ -110,15 +114,20 @@ described on {ref}`history-technologies`.
 * [Cypress, QTP 012705](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>) — 1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4.[^qtp-012705]
 * [Cypress, QTP 012801](<https://web.archive.org/web/20210302225236/https://www.cypress.com/file/91706/download>) — 4 Meg SRAM Device R7LD-1.8 Technology, Fab4.[^qtp-012801]
 * [Cypress, QTP 014807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>) — Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV.[^qtp-014807]
+* [Cypress, QTP 020305](<https://web.archive.org/web/20211203215015/https://www.cypress.com/file/91946/download>) — Two-PLL Clock Generator, S4AD-5 Technology, Fab 2 / R42LDHA, Fab 4.[^qtp-020305]
 * [Cypress, QTP 021507](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2.[^qtp-021507]
+* [Cypress, QTP 022505](<https://web.archive.org/web/20211025133341/https://www.cypress.com/file/91396/download>) — PSoC Microcontrollers Family, S4AD-5 Technology, Fab 2.[^qtp-022505]
 * [Cypress, QTP 023101](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf>) — Synchronous Dual Port RAM Family CY7C083xV / CY7C085xV, R7FTW-3R Technology Fab4.[^qtp-023101]
 * [Cypress, QTP 024110](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>) — 1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4.[^qtp-024110]
 * [Cypress, QTP 030204](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>) — 256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4.[^qtp-030204]
 * [Cypress, QTP 030206](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>) — 256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4.[^qtp-030206]
+* [Cypress, QTP 030310](<https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download>) — ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology.[^qtp-030310]
 * [Cypress, QTP 031101](<https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>) — High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2.[^qtp-031101]
 * [Cypress, QTP 032003](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>) — 36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4.[^qtp-032003]
 * [Cypress, QTP 032005](<https://web.archive.org/web/20211206184334/https://www.cypress.com/file/92296/download>) — WirelessUSB Device Family, B53D-3RF Technology, Fab 4.[^qtp-032005]
+* [Cypress, QTP 032105](<https://web.archive.org/web/20211207080356/https://www.cypress.com/file/92306/download>) — 18 Meg QDR/DDR Synchronous SRAM, R7FFT-18, Fab 4.[^qtp-032105]
 * [Cypress, QTP 032301](<https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>) — 16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan.[^qtp-032301]
+* [Cypress, QTP 041005](<https://web.archive.org/web/20210517162948/https://www.cypress.com/file/92446/download>) — 8-Meg Super TSRAM Device, 0.165um Technology, Power Chip in Taiwan.[^qtp-041005]
 * [Cypress, QTP 041406](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>) — 4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater.[^qtp-041406]
 * [Cypress, QTP 042806](<https://web.archive.org/web/20211025144943/https://www.cypress.com/file/92521/download>) — S4ADLATCH Technology, Fab 2.[^qtp-042806]
 * [Cypress, QTP 043004](<https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>) — DDR2-PLL Device Family, C8Q-3R, Fab 4.[^qtp-043004]
@@ -170,6 +179,9 @@ described on {ref}`history-technologies`.
 
 <!-- footnotes -->
 
+[^qtp-000505]: Cypress Semiconductor, Product Qualification Report QTP 000505: *1 Meg Fast Asynchronous SRAM, R52FD-3 Technology, Fab 4*, December 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210517171315/https://www.cypress.com/file/91326/download>
 [^qtp-000901]: Cypress Semiconductor, Product Qualification Report QTP 000901: *Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology*, May 2003;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>
@@ -195,8 +207,14 @@ described on {ref}`history-technologies`.
     <https://web.archive.org/web/20210302225236/https://www.cypress.com/file/91706/download>
 [^qtp-014807]: Cypress Semiconductor, Product Qualification Report QTP 014807: *Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV*, June 2005.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
+[^qtp-020305]: Cypress Semiconductor, Product Qualification Report QTP 020305: *Two-PLL Clock Generator, S4AD-5 Technology, Fab 2 / R42LDHA, Fab 4*, August 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211203215015/https://www.cypress.com/file/91946/download>
 [^qtp-021507]: Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
+[^qtp-022505]: Cypress Semiconductor, Product Qualification Report QTP 022505: *PSoC Microcontrollers Family, S4AD-5 Technology, Fab 2*, June 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211025133341/https://www.cypress.com/file/91396/download>
 [^qtp-023101]: Cypress Semiconductor, Product Qualification Report QTP 023101: *Synchronous Dual Port RAM Family CY7C083xV / CY7C085xV, R7FTW-3R Technology Fab4*, June 2005.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
@@ -205,6 +223,9 @@ described on {ref}`history-technologies`.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
 [^qtp-030206]: Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>
+[^qtp-030310]: Cypress Semiconductor, Product Qualification Report QTP 030310: *ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology*, June 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download>
 [^qtp-031101]: Cypress Semiconductor, Product Qualification Report QTP 031101: *High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2*, January 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>
@@ -213,9 +234,15 @@ described on {ref}`history-technologies`.
 [^qtp-032005]: Cypress Semiconductor, Product Qualification Report QTP 032005: *WirelessUSB Device Family, B53D-3RF Technology, Fab 4*, May 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211206184334/https://www.cypress.com/file/92296/download>
+[^qtp-032105]: Cypress Semiconductor, Product Qualification Report QTP 032105: *18 Meg QDR/DDR Synchronous SRAM, R7FFT-18, Fab 4*, May 2004;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211207080356/https://www.cypress.com/file/92306/download>
 [^qtp-032301]: Cypress Semiconductor, Product Qualification Report QTP 032301: *16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan*, May 2004;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>
+[^qtp-041005]: Cypress Semiconductor, Product Qualification Report QTP 041005: *8-Meg Super TSRAM Device, 0.165um Technology, Power Chip in Taiwan*, March 2004;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210517162948/https://www.cypress.com/file/92446/download>
 [^qtp-041406]: Cypress Semiconductor, Product Qualification Report QTP 041406: *4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater*, February 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>
 [^qtp-042806]: Cypress Semiconductor, Product Qualification Report QTP 042806: *S4ADLATCH Technology, Fab 2*, January 2005;
