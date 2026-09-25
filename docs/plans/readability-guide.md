@@ -587,7 +587,9 @@ checks every R-REPEAT edit.
    supplier, write "none assignable" rather than naming it here.
 5. Markers are required on every number and on the tool line. The Does and Why lines condense the
    lead and need none. Every qualifier in the source sentence ("part of", "typical", "standard",
-   "our reading") must survive the condensing unchanged.
+   "our reading") must survive the condensing unchanged. "We infer", "(inference)", "this
+   reference's reading" and "on this page's reading" are qualifiers. A glance line may not state
+   as fact anything the page's Open questions calls not public.
 6. No new fact, no new number, no new source. Every marker in the box must occur again below it.
 7. Nothing from an in-force note: no patent number, no title, no value that only the collapsed note
    gives (§2.6).
