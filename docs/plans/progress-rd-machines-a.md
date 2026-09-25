@@ -374,6 +374,46 @@ Vendor/Model/Year/Published-figures shape as pages 3–4.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 6. `docs/machines/downstream-plasma-asher.md` — done
+
+Rules applied: R-INTRO (kept the first and third sentences, 47 words; moved the mechanism
+sentence — "It generates an oxygen-based plasma..." — into the H2 lead, ahead of the H2's own
+sentence; template deleted; pointer moved to `{seealso}`). R-MODELS (7-row table across
+GaSonics/Mattson/Lam/Applied; the GaSonics-applications quote, the Novellus acquisition narrative
+and the Mattson "25 steps"/"number one in Taiwan" quotes kept as prose before/after the table,
+since none is a model spec). R-ENTRIES (3-row table for the PEP/Iridia/Aspen2 gas-and-temperature
+entries; the follow-on sentences about SkyWater's spelling, the Iridia's unstated vendor and the
+"H2>N2" reading kept as prose after the table, since they are commentary on the entries as a
+group, not per-entry glosses). R-QUICKFACTS: all 6 cells read over 20 words with essentially no
+duplicated content elsewhere to trade against (unlike pages 1–2, this page's quick-facts figures —
+wattages, generator model numbers, wafer counts — mostly appear nowhere else), so cutting further
+risked exactly the bug caught on page 5; left as the page wrote them (documented skip, not an
+oversight). R-PARA (6 paragraphs split, most needing only one seam). R-SENTENCE (about 8 sentences
+split). R-RELATED (8 sentence-bullets → 4 grouped bullets). R-CAPTION (both new tables).
+
+Over-cap counts (before → after): paragraphs > 100 words: 6 → 0; sentences > 45 words: ~8 → 0;
+list items > 60 words: 0 (the R-STEPRUN grading bullet is 77 words but is the method-note-5
+checker-format exception); quick-facts cells > 20 words: 6 of 6 → 6 (unchanged by design, see
+above); tables with no caption: 2 new → 0.
+
+`check_preserved.py --base 5ea544b3 --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 and one further `LOST number_order` tuple, `('120','270','40','250')` — the three
+gas/temperature entries' own figures (`"120C – 270C"`, `"40C-270C"`, `"up to 250C"`), which the
+R-ENTRIES table's `Entry as listed` column necessarily re-quotes verbatim ahead of the matching
+`What it names` cell in the same row. Hand-checked: reading only the `What it names` column (the
+actual paraphrase, ignoring the quoted `Entry as listed` column that repeats the source's own
+digits first) reproduces the exact old order 120, 270, 40, 250 — the loss is the Entry column's
+unavoidable duplication of the source's own numbers sitting in front of each row's translation,
+not a real transposition. This is a new sub-case of method note 1, arising specifically for
+R-ENTRIES (not just R-MODELS) whenever the quoted entry itself carries the same figures the "What
+it names" cell restates.
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 4 (7-row Representative-models table) and 5
+(3-row entries table) read; both wrap cleanly at 400 px.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but

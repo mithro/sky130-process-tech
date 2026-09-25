@@ -3,16 +3,8 @@
 
 A downstream plasma asher is the single-wafer tool a fab uses to burn
 photoresist off wafers after it has served as an implant or etch mask.
-It generates an oxygen-based plasma away from the wafer and lets only
-the neutral reactive species reach it, so that the resist is oxidised
-without the ion bombardment and charging that a plasma in contact with
-the wafer would bring. It is one of the most heavily used tools in a
-fab: a strip follows nearly every masked implant and etch. This
-page describes the class in general, lists representative 200 mm-era
-models, and then says what SkyWater has published about its own tools
-of this class and which SKY130 steps this reference assigns to it. The
-chemistry of ashing and of the implant crust is on the
-{ref}`strip category page <category-strip>`.
+It is one of the most heavily used tools in a
+fab: a strip follows nearly every masked implant and etch.
 
 | | Downstream plasma asher |
 |---|---|
@@ -25,14 +17,27 @@ chemistry of ashing and of the implant crust is on the
 | SkyWater-listed tool | Under "Resist removal/cleans": "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C", "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"[^skw-01] |
 | SKY130 steps | 14 steps, plus 1 where the class is an alternative and 22 where it strips the resist after an etch; see {ref}`SKY130 steps assigned to this class <machine-downstream-plasma-asher-steps>` |
 
+:::{seealso}
+The
+chemistry of ashing and of the implant crust is on the
+{ref}`strip category page <category-strip>`.
+:::
+
 ## What the machine class is and how it works
+
+It generates an oxygen-based plasma away from the wafer and lets only
+the neutral reactive species reach it, so that the resist is oxidised
+without the ion bombardment and charging that a plasma in contact with
+the wafer would bring.
 
 An asher turns resist — a hydrocarbon polymer — into volatile products
 with atomic oxygen, which a plasma supplies. "Originally, plasma was
 generated in the process chamber, but as the need to get rid of the ions
 has increased, many machines now use a downstream plasma configuration,
 where plasma is formed remotely and the desired particles are channeled
-to the wafer"; neutral atomic oxygen survives the trip better than
+to the wafer".[^wiki-ash]
+
+Neutral atomic oxygen survives the trip better than
 charged species, although "a large portion of the active species is
 lost to recombination", which heating the wafer partly
 offsets.[^wiki-ash] What makes a machine a *downstream* asher is that
@@ -47,14 +52,17 @@ oxides".[^lam-9600se-stripper-1998]
 In a microwave asher, gas flows through a dielectric tube in a
 microwave cavity. The GaSonics Aura 1000 has two interconnected vacuum chambers
 ("reaction and stripping"), a microwave plasma generator, mass flow
-controllers and "an infrared heat source";[^gasonics-aura] Stanford's Aura description says the mixture
+controllers and "an infrared heat source".[^gasonics-aura] Stanford's Aura description says the mixture
 "flows downstream to the process chamber where it reaches a state of
 'afterglow,' where it is highly reactive and no longer electrically
-active or damaging to the wafer surface".[^snf-aura] Microwave
+active or damaging to the wafer surface".[^snf-aura]
+
+Microwave
 leakage from the cavity is an engineering problem of its own: a Fusion
 Systems patent adds "a microwave trap proximate the opening through
 which the plasma tube exits the microwave cavity".[^pat-asher-fusion]
-Mattson took the other route, a remote inductively coupled source,
+
+**A remote ICP alternative.** Mattson took the other route, a remote inductively coupled source,
 introduced "in 1997 to further extend the capability for removal of
 the most difficult residues", and designed "for advanced semiconductor
 device manufacturing processes of 0.18 micron and below".[^mattson-2001]
@@ -68,7 +76,9 @@ simultaneously.[^pat-strip-ulvac]
 
 Below the source, the plasma products are spread over the wafer. An
 Axcelis patent flows the downstream plasma "through the baffle plate
-assembly" and cools the baffle plates with gas.[^pat-asher-axcelis] The
+assembly" and cools the baffle plates with gas.[^pat-asher-axcelis]
+
+**Heating the wafer.** The
 wafer is heated by lamps or a platen: the L3510 lists "programmable
 lamp and platen heating",[^gasonics-l3510] the Aura 1000 "Closed loop
 temperature control with RTP technology",[^gasonics-aura] and Stanford's
@@ -86,19 +96,22 @@ impurity gas is only to increase oxygen in the plasma".[^fujimura-1990]
 Resist that has masked a high-dose implant carbonises; Fujimura et al.
 found that "A decrease in the etching rate of the high-dose
 ion-implanted resist was caused by carbonization", that residues were
-"oxide of the implanted species", and developed a two-step process of
-"H₂ RIE and downstream ashing".[^fujimura-1989] Horsky traced an abrupt
+"oxide of the implanted species".[^fujimura-1989] They developed a two-step process of
+"H₂ RIE and downstream ashing".[^fujimura-1989]
+
+**Critical dose and sodium.** Horsky traced an abrupt
 change in resist outgassing to amorphisation above a critical dose,
 which he put at 4.5 × 10¹⁴ cm⁻² for a 150 kV phosphorus source/drain
 implant.[^horsky-1998] Water
 vapour protects the gate oxide from the resist's sodium: an O₂ + H₂O
 downstream ash left sodium in the oxide "nearly the same as that in the
 SiO₂ layer as grown", most effectively at 40–60 % H₂O.[^fujimura-1994]
-Fluorine additions attack the substrate as well as the resist: TSMC's patent uses
+
+**Fluorine additions.** Fluorine additions attack the substrate as well as the resist. TSMC's patent uses
 O₂ with CH₃F or CH₂F₂ for "a photoresist with a carbonized crust" while
 "reducing thickness loss in exposed oxide, polysilicon, and silicon
 layers compared with conventional methods that employ O₂ and CₘFₙ
-gases",[^pat-strip-tsmc] and Kastenmeier et al.'s downstream CF₄/O₂
+gases".[^pat-strip-tsmc] Kastenmeier et al.'s downstream CF₄/O₂
 plasmas etched nitride and oxide.[^kastenmeier-1996] Mattson offered
 "a wide range of hydrogen and fluorine chemistries" for cleaning vias
 with exposed low-k films;[^mattson-2001] Axcelis patented an
@@ -116,31 +129,39 @@ consumed".[^wiki-ash]
 
 ## Representative 200 mm-era models
 
-* **GaSonics International** ("Photoresist removal and wafer cleaning
-  processes" among its applications in 2000[^gasonics-2000]). The Aura
-  1000 for 75–150 mm wafers, with ">320 systems in production" in a reseller's
-  description;[^gasonics-aura] the L3510, "a production-proven downstream
-  plasma photoresist ashing system" for 75–200 mm wafers;[^gasonics-l3510]
-  and the PEP Iridia line, whose modules pair microwave and RF
-  generators.[^semistar-iridia] Solid State Technology reported on
-  2000-10-27 that Novellus "is acquiring" GaSonics, "a supplier of dry
-  resist removal and surface preparation equipment", in a stock-for-stock
-  merger "valued at approximately $347 million";[^sst-gasonics-2000] a
-  2006 report refers to "Novellus' 2001 purchase of GaSonics" and
-  reports that Novellus had just licensed the Aura 1000/2000LL and L3510 designs to a
-  refurbisher while keeping the "Gamma and PEP Iridia lines".[^sst-novellus-spec-2006]
-* **Mattson Technology.** The Aspen II Strip and Aspen III Strip on the
-  "Aspen II platform" and "Aspen III platform", with ICP sources; Mattson
-  wrote that strip "is used in as many as 25 steps during IC production"
-  and that its Aspen Strip had "become the number one strip choice in
-  Taiwan".[^mattson-2001]
-* **Etch-platform strippers.** Lam's microwave stripper option for the
-  TCP 9600SE metal etcher[^lam-9600se-stripper-1998] and Applied
-  Materials' ASP strip chamber on its metal etch systems.[^amat-300-etch-2000]
-* **Other vendors.** The step pages also name Axcelis/Fusion ES and PSK
-  ashers ({ref}`DNIS <step-009>`); the Fusion and Axcelis patents above
-  describe their technology, but no product description was retrieved for
-  this page.
+GaSonics International described "Photoresist removal and wafer cleaning
+processes" among its applications in 2000.[^gasonics-2000]
+
+:::{table} Representative downstream plasma ashers of the 200 mm era (figures as each source gives them)
+:widths: 18 20 8 54
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| GaSonics | Aura 1000 | — | for 75–150 mm wafers, ">320 systems in production" in a reseller's description[^gasonics-aura] |
+| GaSonics | L3510 | — | "a production-proven downstream plasma photoresist ashing system" for 75–200 mm wafers[^gasonics-l3510] |
+| GaSonics | PEP Iridia | — | modules pair microwave and RF generators[^semistar-iridia] |
+| Mattson Technology | Aspen II Strip | — | on the "Aspen II platform", with ICP sources[^mattson-2001] |
+| Mattson Technology | Aspen III Strip | — | on the "Aspen III platform"[^mattson-2001] |
+| Lam Research | TCP 9600SE (microwave stripper option) | 1998 | for a metal etcher[^lam-9600se-stripper-1998] |
+| Applied Materials | ASP strip chamber | 2000 | on its metal etch systems[^amat-300-etch-2000] |
+:::
+
+Solid State Technology reported on
+2000-10-27 that Novellus "is acquiring" GaSonics, "a supplier of dry
+resist removal and surface preparation equipment", in a stock-for-stock
+merger "valued at approximately $347 million".[^sst-gasonics-2000] A
+2006 report refers to "Novellus' 2001 purchase of GaSonics" and
+reports that Novellus had just licensed the Aura 1000/2000LL and L3510 designs to a
+refurbisher while keeping the "Gamma and PEP Iridia lines".[^sst-novellus-spec-2006]
+Mattson
+wrote that strip "is used in as many as 25 steps during IC production"
+and that its Aspen Strip had "become the number one strip choice in
+Taiwan".[^mattson-2001]
+
+**Other vendors.** The step pages also name Axcelis/Fusion ES and PSK
+ashers ({ref}`DNIS <step-009>`); the Fusion and Axcelis patents above
+describe their technology, but no product description was retrieved for
+this page.
 
 ## At SkyWater
 
@@ -155,10 +176,17 @@ page lists three plasma strip tools before its wet benches:[^skw-01]
 >
 > "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"
 
-Read term by term: the PEP entry is a remote microwave plasma with N₂
-and O₂ from 120 °C to 270 °C; the Iridia entry adds H₂, CF₄, NH₃ and
-H₂/N₂ and reaches down to 40 °C; the Aspen entry is an RF plasma with O₂,
-CF₄ and hydrogen in nitrogen, to 250 °C.[^skw-01] SkyWater spells the
+:::{table} How this reference reads the three resist-removal entries
+:widths: 30 46 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C" | a remote microwave plasma with N₂ and O₂ from 120 °C to 270 °C[^skw-01] | our reading |
+| "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" | adds H₂, CF₄, NH₃ and H₂/N₂ and reaches down to 40 °C[^skw-01] | our reading |
+| "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C" | an RF plasma with O₂, CF₄ and hydrogen in nitrogen, to 250 °C[^skw-01] | our reading |
+:::
+
+SkyWater spells the
 vendor "Gasonic" and writes "Aspen2", which we read as the Aspen II
 Strip (an inference from the name); it names no vendor for the
 Iridia. A trade report lists the "PEP Iridia" among the GaSonics lines
@@ -201,7 +229,7 @@ likely used at SkyWater"), as collected on the machines index:
 
 The one choice between the three rests on the listed ranges: the Iridia
 entry is the only one with a 40 °C lower limit and the only one
-listing NH₃, and it has H₂ and H₂/N₂, the conditions the crust-strip pages want for a cool first
+listing NH₃.[^skw-01] It has H₂ and H₂/N₂, the conditions the crust-strip pages want for a cool first
 stage.[^skw-01] The {ref}`DNIS <step-009>` and
 {ref}`LVTPIS <step-021>` pages describe a crust from MeV well implants
 but make no choice; the {ref}`machines index <machines-inconsistencies>`
@@ -261,7 +289,9 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
   the three ashers for the resist strip, except after
   {ref}`TUNARCE <step-036>`, whose resist stays on for the
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants and the
-  {ref}`TUNME <step-039>` wet etch; after a metal etch the strip
+  {ref}`TUNME <step-039>` wet etch.
+
+  After a metal etch the strip
   also removes chlorine-bearing polymer, a job that some metal-etch platforms do in an
   integrated downstream chamber.[^lam-9600se-stripper-1998][^amat-300-etch-2000]
 * **The organic ARC option.** The {ref}`TUNARCE <step-036>` page names
@@ -273,21 +303,19 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
 
 ## Related pages
 
-* {ref}`category-strip` — ashing, the implant crust and wet strips, and
-  the 15 strip steps of SKY130.
-* {ref}`machine-wet-bench` — the wet clean that follows most strips.
-* {ref}`category-implant` — the implants whose resist this tool
-  removes.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — strip gases.
-* {ref}`material-anneal-ambients` — forming gas in anneals and
-  ashers.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
-  helium and the oxidation additives, their grades and SkyWater's listed
+* **Category.** {ref}`category-strip` — ashing, the implant crust and
+  wet strips, and the 15 strip steps of SKY130. {ref}`category-implant`
+  — the implants whose resist this tool removes.
+* **Machines.** {ref}`machine-wet-bench` — the wet clean that follows
+  most strips.
+* **Materials.** {ref}`material-anneal-ambients` — forming gas in
+  anneals and ashers. {ref}`material-process-gases` — nitrogen, oxygen,
+  hydrogen, argon, helium and the oxidation additives, their grades and
+  SkyWater's listed gases. {ref}`material-etch-gases` — fluorocarbon,
+  fluoride, chlorine and bromine etch and chamber-clean gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` — strip
   gases.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
-  bromine etch and chamber-clean gases.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
