@@ -72,13 +72,13 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Substrates and test wafers
 
-:::{table} Substrates and test wafers: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Substrates and test wafers: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Silicon wafers, 200 mm, p-type, polished bulk (`si-wafers`) | {ref}`Substrate <material-substrates>` | Starting material of the flow. | "200 mm equipment";[^skw-01] suppliers in both filings (table above).[^sec-01][^sec-02] |
-| Test and monitor wafers (SEMI M8 class) (`test-wafers`) | {ref}`Substrate <material-substrates>` | Thickness, {term}`sheet-resistance <sheet resistance>`, particle, rate and selectivity monitors; RTP thermocouple wafers; CD, {term}`overlay` and tester reference wafers. | typical (not listed) |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Silicon wafers, 200 mm, p-type, polished bulk (`si-wafers`) — {ref}`Substrate <material-substrates>` | Starting material of the flow. | "200 mm equipment";[^skw-01] suppliers in both filings (table below).[^sec-01][^sec-02] |
+| Test and monitor wafers (SEMI M8 class) (`test-wafers`) — {ref}`Substrate <material-substrates>` | Thickness, {term}`sheet-resistance <sheet resistance>`, particle, rate and selectivity monitors; RTP thermocouple wafers; CD, {term}`overlay` and tester reference wafers. | typical (not listed) |
 :::
 
 :::{table} Substrates and test wafers: material and the SKY130 steps that use it
@@ -92,19 +92,19 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Process gases
 
-:::{table} Process gases: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Process gases: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Nitrogen (N₂) (`n2`) | {ref}`Bulk gas; anneal ambient <material-process-gases>` | Purge, drying and vent gas; anneal ambient; ash gas; reactive gas for TiN; etch and CVD diluent; CDA/N₂ lamp cooling. | "N2 anneal to 1150C"; "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"; N2 on the GaSonics and Iridia asher entries.[^skw-01] |
-| Oxygen (O₂) (`o2`) | {ref}`Bulk gas; oxidant <material-process-gases>` | Dry oxidation and pyrogenic steam; ash; etch additive; oxidant for HDP and {term}`PECVD` oxides; minor RTA addition. | "dry oxidation to 1150C"; "wet oxidation to 1150C"; O2 in the Heatpulse, asher and all three poly/silicon etcher entries.[^skw-01] |
-| Hydrogen (H₂) (`h2`) | {ref}`Bulk gas; reductant <material-process-gases>` | Pyrogenic or {term}`radical oxidation`; bulk reduction of WF₆; alloy anneal; implant-source co-gas; possible {term}`PVD` pre-clean. | "H2 and forming gas alloy"; "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C".[^skw-01] |
-| Argon (Ar) (`ar`) | {ref}`Bulk gas; anneal ambient <material-process-gases>` | Sputter gas and sputter-etch pre-clean; {term}`HDP-CVD`; etch diluent; RTA and furnace ambient; implant-source support gas. | "Ar anneal to 1150C"; Ar in the Heatpulse entry.[^skw-01] |
-| Helium (He) (`he`) | {ref}`Bulk gas <material-process-gases>` | Backside wafer cooling in etch, CVD, PVD and implant tools; TEOS carrier and CVD diluent. | typical (not listed) |
-| Water vapour (H₂O) (`water-vapour`) | {ref}`Ash and passivation additive <material-process-gases>` | Ash additive after high-dose implants ({ref}`PRIS <step-054>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`); post-etch corrosion passivation of Al–Cu and TiN. | typical (not listed) |
-| HCl or trans-1,2-dichloroethylene (DCE) (`hcl-dce`) | {ref}`Oxidation additive <material-process-gases>` | Chlorine source for {term}`gettering` in furnace oxidations. | typical (not listed) |
-| Nitrous oxide (N₂O), nitric oxide (NO) (`n2o-no`) | {ref}`Oxidant; nitriding gas <material-process-gases>` | Nitrided or {term}`oxynitride` gate and {term}`liner` oxides; {term}`ONO` oxynitride layers; oxidant for PECVD silane oxide and oxynitride. | The capability list names neither gas but has "Nitrided gate oxide" and "PECVD silane oxide/nitride/oxynitride, C1";[^skw-01] N₂O emissions reported to the EPA for the Bloomington facility in each year 2011–2023, process not stated.[^epa-ghgrp-skywater] |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Nitrogen (N₂) (`n2`) — {ref}`Bulk gas; anneal ambient <material-process-gases>` | Purge, drying and vent gas; anneal ambient; ash gas; reactive gas for TiN; etch and CVD diluent; CDA/N₂ lamp cooling. | "N2 anneal to 1150C"; "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"; N2 on the GaSonics and Iridia asher entries.[^skw-01] |
+| Oxygen (O₂) (`o2`) — {ref}`Bulk gas; oxidant <material-process-gases>` | Dry oxidation and pyrogenic steam; ash; etch additive; oxidant for HDP and {term}`PECVD` oxides; minor RTA addition. | "dry oxidation to 1150C"; "wet oxidation to 1150C"; O2 in the Heatpulse, asher and all three poly/silicon etcher entries.[^skw-01] |
+| Hydrogen (H₂) (`h2`) — {ref}`Bulk gas; reductant <material-process-gases>` | Pyrogenic or {term}`radical oxidation`; bulk reduction of WF₆; alloy anneal; implant-source co-gas; possible {term}`PVD` pre-clean. | "H2 and forming gas alloy"; "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C".[^skw-01] |
+| Argon (Ar) (`ar`) — {ref}`Bulk gas; anneal ambient <material-process-gases>` | Sputter gas and sputter-etch pre-clean; {term}`HDP-CVD`; etch diluent; RTA and furnace ambient; implant-source support gas. | "Ar anneal to 1150C"; Ar in the Heatpulse entry.[^skw-01] |
+| Helium (He) (`he`) — {ref}`Bulk gas <material-process-gases>` | Backside wafer cooling in etch, CVD, PVD and implant tools; TEOS carrier and CVD diluent. | typical (not listed) |
+| Water vapour (H₂O) (`water-vapour`) — {ref}`Ash and passivation additive <material-process-gases>` | Ash additive after high-dose implants ({ref}`PRIS <step-054>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`); post-etch corrosion passivation of Al–Cu and TiN. | typical (not listed) |
+| HCl or trans-1,2-dichloroethylene (DCE) (`hcl-dce`) — {ref}`Oxidation additive <material-process-gases>` | Chlorine source for {term}`gettering` in furnace oxidations. | typical (not listed) |
+| Nitrous oxide (N₂O), nitric oxide (NO) (`n2o-no`) — {ref}`Oxidant; nitriding gas <material-process-gases>` | Nitrided or {term}`oxynitride` gate and {term}`liner` oxides; {term}`ONO` oxynitride layers; oxidant for PECVD silane oxide and oxynitride. | The capability list names neither gas but has "Nitrided gate oxide" and "PECVD silane oxide/nitride/oxynitride, C1";[^skw-01] N₂O emissions reported to the EPA for the Bloomington facility in each year 2011–2023, process not stated.[^epa-ghgrp-skywater] |
 :::
 
 :::{table} Process gases: material and the SKY130 steps that use it
@@ -124,16 +124,16 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Dopant gases and implant sources
 
-:::{table} Dopant gases and implant sources: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Dopant gases and implant sources: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Phosphine (PH₃), solid phosphorus; TMPO (`ph3`) | {ref}`Dopant source <material-dopant-sources>` | Phosphorus implants (deep N-well, N-well, poly and source/drain; the phosphorus option for the threshold, channel and depletion implants); phosphorus for HDP or TEOS PSG. | Species "P" on both GSD implanters ("B11, BF2, P, As"); "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch".[^skw-01] |
-| Boron trifluoride (BF₃), solid boron source (`bf3`) | {ref}`Dopant source <material-dopant-sources>` | B⁺ and BF₂⁺ for wells, threshold adjusts, halos, resistor and P+ source/drain implants. | Species "B11, BF2" on all three implanter entries, e.g. "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01] |
-| Arsine (AsH₃), solid arsenic (`ash3`) | {ref}`Dopant source <material-dopant-sources>` | Arsenic for tips, depletion and threshold options, poly and N+ source/drain implants. | Species "As" on all three implanter entries.[^skw-01] |
-| Indium (solid source) (`indium`) | {ref}`Dopant source <material-dopant-sources>` | Alternative heavy p-type species discussed for threshold and {term}`punch-through` implants. | Not listed; no implanter entry names indium.[^skw-01] |
-| Ion-source and beam-line consumables: Ar, Xe or H₂ support gases, filaments or cathodes, arc-chamber liners, electrodes, disc pads, flood-gun parts, LN₂ for cryopumps (`ion-source`) | {ref}`Implant-source hardware; support gas <material-dopant-sources>` | Consumed by every implant; fluorinated species wear sources faster (Axcelis notes "source operating costs especially with fluorinated species"[^axcelis-gsd-page]). | typical (not listed) |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Phosphine (PH₃), solid phosphorus; TMPO (`ph3`) — {ref}`Dopant source <material-dopant-sources>` | Phosphorus implants (deep N-well, N-well, poly and source/drain; the phosphorus option for the threshold, channel and depletion implants); phosphorus for HDP or TEOS PSG. | Species "P" on both GSD implanters ("B11, BF2, P, As"); "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch".[^skw-01] |
+| Boron trifluoride (BF₃), solid boron source (`bf3`) — {ref}`Dopant source <material-dopant-sources>` | B⁺ and BF₂⁺ for wells, threshold adjusts, halos, resistor and P+ source/drain implants. | Species "B11, BF2" on all three implanter entries, e.g. "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01] |
+| Arsine (AsH₃), solid arsenic (`ash3`) — {ref}`Dopant source <material-dopant-sources>` | Arsenic for tips, depletion and threshold options, poly and N+ source/drain implants. | Species "As" on all three implanter entries.[^skw-01] |
+| Indium (solid source) (`indium`) — {ref}`Dopant source <material-dopant-sources>` | Alternative heavy p-type species discussed for threshold and {term}`punch-through` implants. | Not listed; no implanter entry names indium.[^skw-01] |
+| Ion-source and beam-line consumables: Ar, Xe or H₂ support gases, filaments or cathodes, arc-chamber liners, electrodes, disc pads, flood-gun parts, LN₂ for cryopumps (`ion-source`) — {ref}`Implant-source hardware; support gas <material-dopant-sources>` | Consumed by every implant; fluorinated species wear sources faster (Axcelis notes "source operating costs especially with fluorinated species"[^axcelis-gsd-page]). | typical (not listed) |
 :::
 
 :::{table} Dopant gases and implant sources: material and the SKY130 steps that use it
@@ -150,19 +150,19 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Precursors
 
-:::{table} Precursors: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Precursors: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Ammonia (NH₃) (`nh3`) | {ref}`Precursor; nitriding gas <material-precursors>` | {term}`LPCVD`, BTBAS and PECVD nitride; PECVD oxynitride; oxide nitridation; possible ash additive. | "LPCVD nitride, with NH3 and also DH3"; NH3 in the Heatpulse and Iridia entries.[^skw-01] |
-| Silane (SiH₄) (`sih4`) | {ref}`Precursor <material-precursors>` | HDP-CVD oxide and {term}`PSG`; PECVD oxide, nitride and oxynitride; LPCVD amorphous-silicon gate; tungsten {term}`nucleation <nucleation layer>`. | Named only in film names: "PECVD silane oxide/nitride/oxynitride, C1", "LPCVD silane oxide"; the gate film is "LPCVD polysilicon (undoped), both amorphous and crystalline".[^skw-01] |
-| Dichlorosilane (SiH₂Cl₂) (`dcs`) | {ref}`Precursor <material-precursors>` | LPCVD nitride (isolation, gate cap, {term}`spacer` options); ONO trapping layer. | Not named; the LPCVD nitride entry reads "with NH3 and also DH3" and the list has "LPCVD oxide/nitride/oxide".[^skw-01] |
-| TEOS (tetraethyl orthosilicate) (`teos`) | {ref}`Precursor (liquid) <material-precursors>` | PECVD cap, spacer, inter-level and fuse oxides; TEOS route for PSG. | "PECVD TEOS, C2 and Producer" with "low temp options";[^skw-01] a 2005 Cypress Fab 4 report gives the passivation as "1000Å TEOS / 9000Å PECVD Nitride".[^cyp-qtp-014807] |
-| BTBAS (bis(tertiary-butylamino)silane) (`btbas`) | {ref}`Precursor (liquid) <material-precursors>` | Low-temperature LPCVD nitride option for the spacer and the {term}`local-interconnect <local interconnect>` cap. | "LPCVD BTBAS low temp nitride".[^skw-01] |
-| Silicon tetrafluoride (SiF₄) (`sif4`) | {ref}`Precursor <material-precursors>` | Fluorinated oxide option for the metal-1/metal-2 and metal-2/metal-3 dielectrics. | typical (not listed) |
-| Tungsten hexafluoride (WF₆), with SiH₄ or B₂H₆ nucleation (`wf6`) | {ref}`Precursor <material-precursors>` | CVD tungsten plugs in the local-interconnect and metal contacts and in vias 1–3. | Precursor not named; "Lam/Novellus PECVD Tungsten" with "plug fill" and "PNL option for high aspect ratio (up to 10:1)".[^skw-01] |
-| Ozone (O₃) for TEOS oxide deposition (`ozone`) | {ref}`Precursor; oxidant <material-precursors>` | O₂/O₃ oxidant for the TEOS PSG route. | typical (not listed) |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Ammonia (NH₃) (`nh3`) — {ref}`Precursor; nitriding gas <material-precursors>` | {term}`LPCVD`, BTBAS and PECVD nitride; PECVD oxynitride; oxide nitridation; possible ash additive. | "LPCVD nitride, with NH3 and also DH3"; NH3 in the Heatpulse and Iridia entries.[^skw-01] |
+| Silane (SiH₄) (`sih4`) — {ref}`Precursor <material-precursors>` | HDP-CVD oxide and {term}`PSG`; PECVD oxide, nitride and oxynitride; LPCVD amorphous-silicon gate; tungsten {term}`nucleation <nucleation layer>`. | Named only in film names: "PECVD silane oxide/nitride/oxynitride, C1", "LPCVD silane oxide"; the gate film is "LPCVD polysilicon (undoped), both amorphous and crystalline".[^skw-01] |
+| Dichlorosilane (SiH₂Cl₂) (`dcs`) — {ref}`Precursor <material-precursors>` | LPCVD nitride (isolation, gate cap, {term}`spacer` options); ONO trapping layer. | Not named; the LPCVD nitride entry reads "with NH3 and also DH3" and the list has "LPCVD oxide/nitride/oxide".[^skw-01] |
+| TEOS (tetraethyl orthosilicate) (`teos`) — {ref}`Precursor (liquid) <material-precursors>` | PECVD cap, spacer, inter-level and fuse oxides; TEOS route for PSG. | "PECVD TEOS, C2 and Producer" with "low temp options";[^skw-01] a 2005 Cypress Fab 4 report gives the passivation as "1000Å TEOS / 9000Å PECVD Nitride".[^cyp-qtp-014807] |
+| BTBAS (bis(tertiary-butylamino)silane) (`btbas`) — {ref}`Precursor (liquid) <material-precursors>` | Low-temperature LPCVD nitride option for the spacer and the {term}`local-interconnect <local interconnect>` cap. | "LPCVD BTBAS low temp nitride".[^skw-01] |
+| Silicon tetrafluoride (SiF₄) (`sif4`) — {ref}`Precursor <material-precursors>` | Fluorinated oxide option for the metal-1/metal-2 and metal-2/metal-3 dielectrics. | typical (not listed) |
+| Tungsten hexafluoride (WF₆), with SiH₄ or B₂H₆ nucleation (`wf6`) — {ref}`Precursor <material-precursors>` | CVD tungsten plugs in the local-interconnect and metal contacts and in vias 1–3. | Precursor not named; "Lam/Novellus PECVD Tungsten" with "plug fill" and "PNL option for high aspect ratio (up to 10:1)".[^skw-01] |
+| Ozone (O₃) for TEOS oxide deposition (`ozone`) — {ref}`Precursor; oxidant <material-precursors>` | O₂/O₃ oxidant for the TEOS PSG route. | typical (not listed) |
 :::
 
 :::{table} Precursors: material and the SKY130 steps that use it
@@ -182,20 +182,20 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Etch and chamber-clean gases
 
-:::{table} Etch and chamber-clean gases: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Etch and chamber-clean gases: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Carbon tetrafluoride (CF₄) (`cf4`) | {ref}`Etch gas; clean gas <material-etch-gases>` | Nitride and oxide etch, breakthrough and cap-open steps; ash additive; CF₄/O₂ PECVD chamber clean. | CF4 on "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2", "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" and the Iridia and Mattson ashers.[^skw-01] |
-| Trifluoromethane (CHF₃) (`chf3`) | {ref}`Etch gas <material-etch-gases>` | Oxide and nitride etch, ARC open, sidewall passivation in metal etch. | CHF3 on the DPSII entry only.[^skw-01] |
-| Hexafluoroethane (C₂F₆) (`c2f6`) | {ref}`Etch gas <material-etch-gases>` | Contact, via and seal-ring oxide etches. | C2F6 on the Lam 4400 entry only.[^skw-01] |
-| C₄F₈, CO, CH₃F, CH₂F₂, CH₄ (`etch-additives`) | {ref}`Etch additive <material-etch-gases>` | Polymerising, selectivity and passivation additives: C₄F₈ and CO in contact and via etches; CH₃F or CH₂F₂ for nitride selectivity; CH₄ in metal etch. | typical (not listed) |
-| Sulphur hexafluoride (SF₆) (`sf6`) | {ref}`Etch gas; clean gas <material-etch-gases>` | Nitride, TiN, TiW and pad etches; SF₆/O₂ chamber clean. | SF6 on the Lam 9400 and Lam 4400 entries;[^skw-01] SF₆ emissions (input or by-product gas) reported to the EPA for the Bloomington facility, no tool or process stated.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] |
-| Nitrogen trifluoride (NF₃) (`nf3`) | {ref}`Clean gas; etch gas <material-etch-gases>` | Remote- or in-situ-plasma clean of HDP, PECVD and tungsten CVD chambers and etchers; nitride-tube clean option. | NF3 on the DPSII entry;[^skw-01] NF₃ emissions (input or by-product gas) reported to the EPA for the Bloomington facility, no tool or process stated.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] |
-| Hydrogen bromide (HBr), Br₂ (`hbr`) | {ref}`Etch gas <material-etch-gases>` | Silicon trench and gate etches; organic ARC open; bromine option for the {term}`MiM <MiM capacitor>` plate etches; optional silicon-selective landing step in the ONO etch. | "HBR" on the DPSII entry; "HBr" on the Lam 9400 and 4400 entries.[^skw-01] |
-| Chlorine (Cl₂) (`cl2`) | {ref}`Etch gas <material-etch-gases>` | Trench and gate etches; Al–Cu, TiN and TiW metal etches. | Cl2 on the DPSII and Lam 4400 entries; the metal etchers are listed without gases ("Lam 9600, Al, TiW, TiN, Pt").[^skw-01] |
-| Boron trichloride (BCl₃) (`bcl3`) | {ref}`Etch gas <material-etch-gases>` | Al–Cu and TiN etches; MiM plate etch. | typical (not listed) |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Carbon tetrafluoride (CF₄) (`cf4`) — {ref}`Etch gas; clean gas <material-etch-gases>` | Nitride and oxide etch, breakthrough and cap-open steps; ash additive; CF₄/O₂ PECVD chamber clean. | CF4 on "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2", "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" and the Iridia and Mattson ashers.[^skw-01] |
+| Trifluoromethane (CHF₃) (`chf3`) — {ref}`Etch gas <material-etch-gases>` | Oxide and nitride etch, ARC open, sidewall passivation in metal etch. | CHF3 on the DPSII entry only.[^skw-01] |
+| Hexafluoroethane (C₂F₆) (`c2f6`) — {ref}`Etch gas <material-etch-gases>` | Contact, via and seal-ring oxide etches. | C2F6 on the Lam 4400 entry only.[^skw-01] |
+| C₄F₈, CO, CH₃F, CH₂F₂, CH₄ (`etch-additives`) — {ref}`Etch additive <material-etch-gases>` | Polymerising, selectivity and passivation additives: C₄F₈ and CO in contact and via etches; CH₃F or CH₂F₂ for nitride selectivity; CH₄ in metal etch. | typical (not listed) |
+| Sulphur hexafluoride (SF₆) (`sf6`) — {ref}`Etch gas; clean gas <material-etch-gases>` | Nitride, TiN, TiW and pad etches; SF₆/O₂ chamber clean. | SF6 on the Lam 9400 and Lam 4400 entries;[^skw-01] SF₆ emissions (input or by-product gas) reported to the EPA for the Bloomington facility, no tool or process stated.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] |
+| Nitrogen trifluoride (NF₃) (`nf3`) — {ref}`Clean gas; etch gas <material-etch-gases>` | Remote- or in-situ-plasma clean of HDP, PECVD and tungsten CVD chambers and etchers; nitride-tube clean option. | NF3 on the DPSII entry;[^skw-01] NF₃ emissions (input or by-product gas) reported to the EPA for the Bloomington facility, no tool or process stated.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] |
+| Hydrogen bromide (HBr), Br₂ (`hbr`) — {ref}`Etch gas <material-etch-gases>` | Silicon trench and gate etches; organic ARC open; bromine option for the {term}`MiM <MiM capacitor>` plate etches; optional silicon-selective landing step in the ONO etch. | "HBR" on the DPSII entry; "HBr" on the Lam 9400 and 4400 entries.[^skw-01] |
+| Chlorine (Cl₂) (`cl2`) — {ref}`Etch gas <material-etch-gases>` | Trench and gate etches; Al–Cu, TiN and TiW metal etches. | Cl2 on the DPSII and Lam 4400 entries; the metal etchers are listed without gases ("Lam 9600, Al, TiW, TiN, Pt").[^skw-01] |
+| Boron trichloride (BCl₃) (`bcl3`) — {ref}`Etch gas <material-etch-gases>` | Al–Cu and TiN etches; MiM plate etch. | typical (not listed) |
 :::
 
 :::{table} Etch and chamber-clean gases: material and the SKY130 steps that use it
@@ -216,22 +216,22 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Wet chemicals
 
-:::{table} Wet chemicals: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Wet chemicals: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Hydrofluoric acid (49 % and dilute HF) (`hf`) | {ref}`Wet chemical <material-wet-chemicals>` | Native-oxide strip and HF-last pre-clean; tunnel-window and gate-oxide etches; ONO bottom-oxide clear; nitride-strip breakthrough; backside film removal; pre-metal contact clean; nitride-tube clean option; post-etch clean after the trench etch. | "DNS wet bench industry standard HF/SC1/SC2" with "dilute HF-last with IPA dry"; "SEZ223, Davinci, HF, DSP+HF, titration controlled".[^skw-01] |
-| Buffered oxide etch (NH₄F/HF), with surfactant (`boe`) | {ref}`Wet chemical <material-wet-chemicals>` | Tunnel-window and thick-gate-oxide etches; ONO bottom-oxide clear; pre-clean and sacrificial-etch alternatives. | "Akrion Gamma Batch Wet Bench": "Sulfuric, SC1, phosphoric, BOE, spin or IPA dry".[^skw-01] |
-| SC-1 (NH₄OH + H₂O₂ + H₂O) (`sc1`) | {ref}`Wet chemical <material-wet-chemicals>` | Particle and organic clean in pre-furnace, post-strip and post-etch sequences. | "SC1" on the Akrion, DNS and FSI Mercury entries.[^skw-01] |
-| SC-2 (HCl + H₂O₂ + H₂O) (`sc2`) | {ref}`Wet chemical <material-wet-chemicals>` | Metal-ion clean before furnace steps and anneals. | "SC2" only on the DNS and FSI Mercury entries ("HF/SC1/SC2").[^skw-01] |
-| SPM, piranha (H₂SO₄ + H₂O₂) (`spm`) | {ref}`Wet chemical <material-wet-chemicals>` | Wet resist strip after the ash; post-etch organic clean. | "Sulfuric" on the Akrion entry.[^skw-01] |
-| Hot phosphoric acid (H₃PO₄, 85 %[^wiki-h3po4]) (`h3po4`) | {ref}`Wet chemical <material-wet-chemicals>` | Isolation-nitride strip at {ref}`NS19 <step-013>`; all-wet alternative for the ONO nitride. | "phosphoric" on the Akrion entry.[^skw-01] |
-| Hydrogen peroxide (H₂O₂, 30 %[^wiki-rca][^wiki-piranha]) (`h2o2`) | {ref}`Wet chemical; oxidiser <material-wet-chemicals>` | Component of SC-1, SC-2 and SPM; tungsten-slurry oxidiser; possible wet removal of the TiW pad cap. | Not listed separately; SC-1 and SC-2[^wiki-rca] and SPM[^wiki-piranha] contain it. |
-| Nitric acid (HF/HNO₃); titration reagents (`hno3`) | {ref}`Wet chemical <material-wet-chemicals>` | Isotropic silicon etch in backside film removal; bath-concentration control. | Nitric acid not named; "SEZ223, Davinci, HF, DSP+HF, titration controlled".[^skw-01] |
-| Ozonated water (O₃ in water) (`ozonated-water`) | {ref}`Wet chemical; oxidant <material-wet-chemicals>` | Ozonated-water pre-clean options. | typical (not listed) |
-| Isopropanol (IPA) (`ipa`) | {ref}`Solvent <material-wet-chemicals>` | Drying after wet benches and strips. | "spin or IPA dry" (Akrion); "dilute HF-last with IPA dry" (DNS); "IPA clean" (Mirra CMP).[^skw-01] |
-| Amine or semi-aqueous post-etch residue removers (EKC265/EKC270 class) (`residue-removers`) | {ref}`Solvent <material-wet-chemicals>` | Polymer and residue removal after contact, via, local-interconnect, metal, capacitor, seal-ring and pad etches, and in the sacrificial etch. | "Batch Rotational": "EKS265, EKC270 solvents, CO2 injected DI".[^skw-01] |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Hydrofluoric acid (49 % and dilute HF) (`hf`) — {ref}`Wet chemical <material-wet-chemicals>` | Native-oxide strip and HF-last pre-clean; tunnel-window and gate-oxide etches; ONO bottom-oxide clear; nitride-strip breakthrough; backside film removal; pre-metal contact clean; nitride-tube clean option; post-etch clean after the trench etch. | "DNS wet bench industry standard HF/SC1/SC2" with "dilute HF-last with IPA dry"; "SEZ223, Davinci, HF, DSP+HF, titration controlled".[^skw-01] |
+| Buffered oxide etch (NH₄F/HF), with surfactant (`boe`) — {ref}`Wet chemical <material-wet-chemicals>` | Tunnel-window and thick-gate-oxide etches; ONO bottom-oxide clear; pre-clean and sacrificial-etch alternatives. | "Akrion Gamma Batch Wet Bench": "Sulfuric, SC1, phosphoric, BOE, spin or IPA dry".[^skw-01] |
+| SC-1 (NH₄OH + H₂O₂ + H₂O) (`sc1`) — {ref}`Wet chemical <material-wet-chemicals>` | Particle and organic clean in pre-furnace, post-strip and post-etch sequences. | "SC1" on the Akrion, DNS and FSI Mercury entries.[^skw-01] |
+| SC-2 (HCl + H₂O₂ + H₂O) (`sc2`) — {ref}`Wet chemical <material-wet-chemicals>` | Metal-ion clean before furnace steps and anneals. | "SC2" only on the DNS and FSI Mercury entries ("HF/SC1/SC2").[^skw-01] |
+| SPM, piranha (H₂SO₄ + H₂O₂) (`spm`) — {ref}`Wet chemical <material-wet-chemicals>` | Wet resist strip after the ash; post-etch organic clean. | "Sulfuric" on the Akrion entry.[^skw-01] |
+| Hot phosphoric acid (H₃PO₄, 85 %[^wiki-h3po4]) (`h3po4`) — {ref}`Wet chemical <material-wet-chemicals>` | Isolation-nitride strip at {ref}`NS19 <step-013>`; all-wet alternative for the ONO nitride. | "phosphoric" on the Akrion entry.[^skw-01] |
+| Hydrogen peroxide (H₂O₂, 30 %[^wiki-rca][^wiki-piranha]) (`h2o2`) — {ref}`Wet chemical; oxidiser <material-wet-chemicals>` | Component of SC-1, SC-2 and SPM; tungsten-slurry oxidiser; possible wet removal of the TiW pad cap. | Not listed separately; SC-1 and SC-2[^wiki-rca] and SPM[^wiki-piranha] contain it. |
+| Nitric acid (HF/HNO₃); titration reagents (`hno3`) — {ref}`Wet chemical <material-wet-chemicals>` | Isotropic silicon etch in backside film removal; bath-concentration control. | Nitric acid not named; "SEZ223, Davinci, HF, DSP+HF, titration controlled".[^skw-01] |
+| Ozonated water (O₃ in water) (`ozonated-water`) — {ref}`Wet chemical; oxidant <material-wet-chemicals>` | Ozonated-water pre-clean options. | typical (not listed) |
+| Isopropanol (IPA) (`ipa`) — {ref}`Solvent <material-wet-chemicals>` | Drying after wet benches and strips. | "spin or IPA dry" (Akrion); "dilute HF-last with IPA dry" (DNS); "IPA clean" (Mirra CMP).[^skw-01] |
+| Amine or semi-aqueous post-etch residue removers (EKC265/EKC270 class) (`residue-removers`) — {ref}`Solvent <material-wet-chemicals>` | Polymer and residue removal after contact, via, local-interconnect, metal, capacitor, seal-ring and pad etches, and in the sacrificial etch. | "Batch Rotational": "EKS265, EKC270 solvents, CO2 injected DI".[^skw-01] |
 :::
 
 :::{table} Wet chemicals: material and the SKY130 steps that use it
@@ -254,19 +254,19 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Lithography materials
 
-:::{table} Lithography materials: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Lithography materials: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| i-line positive photoresist (DNQ/novolac), including thick implant resist (`i-line-resist`) | {ref}`Lithography <material-lithography-materials>` | Implant block masks, relaxed etch masks and thick top levels. | "ASML I-line stepper", "ASML I-line scanner";[^skw-01] resist suppliers in both filings (table above).[^sec-01][^sec-02] |
-| KrF (248 nm) chemically amplified positive photoresist (`krf-resist`) | {ref}`Lithography <material-lithography-materials>` | Critical levels: active, poly, {term}`nitride cut`, local-interconnect contact and line, contact, metals 1–4, vias 1–4 (per step-page readings). | "ASML DUV stepper", "ASML DUV scanner";[^skw-01] resist suppliers in both filings (table above).[^sec-01][^sec-02] |
-| Organic BARC, inorganic ARC or dyed resist (`arc`) | {ref}`Lithography <material-lithography-materials>` | Reflectivity control on DUV levels and over metal; the ARC opened at {ref}`TUNARCE <step-036>`. | typical (not listed) |
-| HMDS adhesion promoter (`hmds`) | {ref}`Lithography <material-lithography-materials>` | Vapour prime before resist coat. | typical (not listed) |
-| TMAH developer, 2.38 %[^microchemicals-dev] (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol,[^wiki-tmah] taking the solution's density as about 1 g/mL) (`tmah`) | {ref}`Lithography <material-lithography-materials>` | Aqueous development of positive resist. | S-1: "Air Products & Chemicals, Inc., Moses Lake (developer)";[^sec-01] FY2023 10-K: "Moses Lake Industries Inc. (developer)".[^sec-02] |
-| Edge-bead remover and rinse solvents (PGMEA, ethyl lactate, cyclohexanone) (`ebr-solvents`) | {ref}`Lithography; solvent <material-lithography-materials>` | Edge-bead removal, back-rinse and rework. | typical (not listed) |
-| Reticles (chrome on quartz or embedded attenuated phase-shift, with pellicles; SEMI P1 blanks) (`reticles`) | {ref}`Lithography <material-lithography-materials>` | One per mask step; the process-steps sheet records a type for three plates only, which we read as embedded attenuated phase-shift masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm exposure;[^steps-sheet] see {ref}`masks-index`. | "Mask GDS to reticle"; "Reticle storage/handler/defect inspection".[^skw-01] |
-| Exposure-tool consumables: KrF laser gas (Kr, F₂/Ne), mercury lamps (`exposure-consumables`) | {ref}`Lithography hardware <material-lithography-materials>` | Light sources of the DUV and i-line tools. | typical (not listed) |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| i-line positive photoresist (DNQ/novolac), including thick implant resist (`i-line-resist`) — {ref}`Lithography <material-lithography-materials>` | Implant block masks, relaxed etch masks and thick top levels. | "ASML I-line stepper", "ASML I-line scanner";[^skw-01] resist suppliers in both filings (table below).[^sec-01][^sec-02] |
+| KrF (248 nm) chemically amplified positive photoresist (`krf-resist`) — {ref}`Lithography <material-lithography-materials>` | Critical levels: active, poly, {term}`nitride cut`, local-interconnect contact and line, contact, metals 1–4, vias 1–4 (per step-page readings). | "ASML DUV stepper", "ASML DUV scanner";[^skw-01] resist suppliers in both filings (table below).[^sec-01][^sec-02] |
+| Organic BARC, inorganic ARC or dyed resist (`arc`) — {ref}`Lithography <material-lithography-materials>` | Reflectivity control on DUV levels and over metal; the ARC opened at {ref}`TUNARCE <step-036>`. | typical (not listed) |
+| HMDS adhesion promoter (`hmds`) — {ref}`Lithography <material-lithography-materials>` | Vapour prime before resist coat. | typical (not listed) |
+| TMAH developer, 2.38 %[^microchemicals-dev] (0.26 N; our arithmetic from TMAH's molar mass of 91.15 g/mol,[^wiki-tmah] taking the solution's density as about 1 g/mL) (`tmah`) — {ref}`Lithography <material-lithography-materials>` | Aqueous development of positive resist. | S-1: "Air Products & Chemicals, Inc., Moses Lake (developer)";[^sec-01] FY2023 10-K: "Moses Lake Industries Inc. (developer)".[^sec-02] |
+| Edge-bead remover and rinse solvents (PGMEA, ethyl lactate, cyclohexanone) (`ebr-solvents`) — {ref}`Lithography; solvent <material-lithography-materials>` | Edge-bead removal, back-rinse and rework. | typical (not listed) |
+| Reticles (chrome on quartz or embedded attenuated phase-shift, with pellicles; SEMI P1 blanks) (`reticles`) — {ref}`Lithography <material-lithography-materials>` | One per mask step; the process-steps sheet records a type for three plates only, which we read as embedded attenuated phase-shift masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm exposure;[^steps-sheet] see {ref}`masks-index`. | "Mask GDS to reticle"; "Reticle storage/handler/defect inspection".[^skw-01] |
+| Exposure-tool consumables: KrF laser gas (Kr, F₂/Ne), mercury lamps (`exposure-consumables`) — {ref}`Lithography hardware <material-lithography-materials>` | Light sources of the DUV and i-line tools. | typical (not listed) |
 :::
 
 :::{table} Lithography materials: material and the SKY130 steps that use it
@@ -286,14 +286,14 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Sputter targets
 
-:::{table} Sputter targets: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Sputter targets: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Titanium sputter targets (Ti; reactive TiN) (`ti-target`) | {ref}`Sputter target <material-sputter-targets>` | Contact Ti/TiN liner; TiN local interconnect; TiN via liners; Ti underlayer of the metal stacks. | "Collimated Ti", "ESC TiN", "Imp TiN" under "AMAT PVD Metal";[^skw-01] S-1: "Honeywell Electronic Materials, Inc. (metal sputter targets)";[^sec-01] FY2023 10-K adds "JX Metals USA, Inc. (metal sputtering targets)".[^sec-02] |
-| Aluminium–copper sputter targets (Al–0.5%Cu) (`alcu-target`) | {ref}`Sputter target <material-sputter-targets>` | Conductor of metals 1–5. | "Aluminum both pure and Cu doped";[^skw-01] Cypress S8 report: "Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
-| Titanium–tungsten sputter targets (Ti:W, 10 wt.% Ti[^pat-tiw-hitachi]) (`tiw-target`) | {ref}`Sputter target <material-sputter-targets>` | MiM top plates; cap of the metal stacks on the step pages' reading ({ref}`overview-metal-cap`); possible underlayer of metals 3–5. | "TiW" under "AMAT PVD Metal" and on both metal etchers.[^skw-01] |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Titanium sputter targets (Ti; reactive TiN) (`ti-target`) — {ref}`Sputter target <material-sputter-targets>` | Contact Ti/TiN liner; TiN local interconnect; TiN via liners; Ti underlayer of the metal stacks. | "Collimated Ti", "ESC TiN", "Imp TiN" under "AMAT PVD Metal";[^skw-01] S-1: "Honeywell Electronic Materials, Inc. (metal sputter targets)";[^sec-01] FY2023 10-K adds "JX Metals USA, Inc. (metal sputtering targets)".[^sec-02] |
+| Aluminium–copper sputter targets (Al–0.5%Cu) (`alcu-target`) — {ref}`Sputter target <material-sputter-targets>` | Conductor of metals 1–5. | "Aluminum both pure and Cu doped";[^skw-01] Cypress S8 report: "Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005] |
+| Titanium–tungsten sputter targets (Ti:W, 10 wt.% Ti[^pat-tiw-hitachi]) (`tiw-target`) — {ref}`Sputter target <material-sputter-targets>` | MiM top plates; cap of the metal stacks on the step pages' reading ({ref}`overview-metal-cap`); possible underlayer of metals 3–5. | "TiW" under "AMAT PVD Metal" and on both metal etchers.[^skw-01] |
 :::
 
 :::{table} Sputter targets: material and the SKY130 steps that use it
@@ -308,15 +308,15 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### CMP consumables
 
-:::{table} CMP consumables: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} CMP consumables: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Post-CMP clean chemistry: dilute NH₄OH or TMAH, dilute HF, citric acid, surfactant; PVA brushes (`post-cmp-clean`) | {ref}`CMP consumable; wet chemical <material-cmp-consumables>` | Removal of slurry particles and metal contamination after oxide and tungsten polishes. | "AMAT Mirra CMP" with "Track ammonia clean" and "IPA clean";[^skw-01] the FY2023 10-K names "CMC Chemicals, Inc. (a subsidiary of Entegris) (process and chemical mechanical polishing chemicals)".[^sec-02] |
-| Oxide CMP slurry (fumed or colloidal silica in KOH or NH₄OH); ceria or additive slurry for nitride selectivity (`oxide-slurry`) | {ref}`CMP consumable <material-cmp-consumables>` | STI, pre-metal-dielectric and inter-level oxide polishes. | "AMAT Mirra CMP" with "oxide" and "nitride";[^skw-01] slurry product not named. |
-| Tungsten CMP slurry (alumina or silica with H₂O₂, Fe(NO₃)₃ or KIO₃) (`w-slurry`) | {ref}`CMP consumable <material-cmp-consumables>` | Removal of field tungsten after each plug fill. | "tungsten" and "high selectivity tungsten" under "AMAT Mirra CMP".[^skw-01] |
-| CMP pads, diamond conditioners, carrier films, membranes, retaining rings (`cmp-pads`) | {ref}`CMP consumable <material-cmp-consumables>` | Consumed by every polish. | typical (not listed) |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Post-CMP clean chemistry: dilute NH₄OH or TMAH, dilute HF, citric acid, surfactant; PVA brushes (`post-cmp-clean`) — {ref}`CMP consumable; wet chemical <material-cmp-consumables>` | Removal of slurry particles and metal contamination after oxide and tungsten polishes. | "AMAT Mirra CMP" with "Track ammonia clean" and "IPA clean";[^skw-01] the FY2023 10-K names "CMC Chemicals, Inc. (a subsidiary of Entegris) (process and chemical mechanical polishing chemicals)".[^sec-02] |
+| Oxide CMP slurry (fumed or colloidal silica in KOH or NH₄OH); ceria or additive slurry for nitride selectivity (`oxide-slurry`) — {ref}`CMP consumable <material-cmp-consumables>` | STI, pre-metal-dielectric and inter-level oxide polishes. | "AMAT Mirra CMP" with "oxide" and "nitride";[^skw-01] slurry product not named. |
+| Tungsten CMP slurry (alumina or silica with H₂O₂, Fe(NO₃)₃ or KIO₃) (`w-slurry`) — {ref}`CMP consumable <material-cmp-consumables>` | Removal of field tungsten after each plug fill. | "tungsten" and "high selectivity tungsten" under "AMAT Mirra CMP".[^skw-01] |
+| CMP pads, diamond conditioners, carrier films, membranes, retaining rings (`cmp-pads`) — {ref}`CMP consumable <material-cmp-consumables>` | Consumed by every polish. | typical (not listed) |
 :::
 
 :::{table} CMP consumables: material and the SKY130 steps that use it
@@ -332,12 +332,12 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Anneal ambients
 
-:::{table} Anneal ambients: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Anneal ambients: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Forming gas (H₂ in N₂) (`forming-gas`) | {ref}`Anneal and ash ambient <material-anneal-ambients>` | Implant-crust and post-etch ash; alloy anneals at {ref}`ALLY1 <step-096>` and {ref}`ALLY <step-170>` ("5% H2 in N2" is the typical formulation[^wiki-fg]). | "H2 and forming gas alloy"; Iridia "H2/N2"; "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Forming gas (H₂ in N₂) (`forming-gas`) — {ref}`Anneal and ash ambient <material-anneal-ambients>` | Implant-crust and post-etch ash; alloy anneals at {ref}`ALLY1 <step-096>` and {ref}`ALLY <step-170>` ("5% H2 in N2" is the typical formulation[^wiki-fg]). | "H2 and forming gas alloy"; Iridia "H2/N2"; "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] |
 :::
 
 :::{table} Anneal ambients: material and the SKY130 steps that use it
@@ -350,12 +350,12 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Ultrapure water
 
-:::{table} Ultrapure water: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Ultrapure water: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Ultrapure (DI) water (`upw`) | {ref}`Utility <material-ultrapure-water>` | Rinses, dilution of wet chemicals, CMP and post-CMP cleaning, developer rinse. | "CO2 injected DI" (batch rotational solvent tool); otherwise not listed.[^skw-01] |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Ultrapure (DI) water (`upw`) — {ref}`Utility <material-ultrapure-water>` | Rinses, dilution of wet chemicals, CMP and post-CMP cleaning, developer rinse. | "CO2 injected DI" (batch rotational solvent tool); otherwise not listed.[^skw-01] |
 :::
 
 :::{table} Ultrapure water: material and the SKY130 steps that use it
@@ -368,16 +368,16 @@ Two tables under each class heading below, both keyed by material. The first giv
 
 ### Hardware consumables and abatement
 
-:::{table} Hardware consumables and abatement: material, class page, role and SkyWater evidence
-:widths: 22 20 30 28
+:::{table} Hardware consumables and abatement: material and class, role and SkyWater evidence
+:widths: 34 32 34
 
-| Material | Class page | Role | SkyWater evidence |
-|---|---|---|---|
-| Furnace ware: quartz or SiC tubes, boats, baffles, liners (`furnace-ware`) | {ref}`Hardware <material-hardware-consumables>` | Batch oxidation, LPCVD and alloy furnaces. | Tool vendor only: "Furnaces are all made by Aviza".[^skw-01] |
-| Plasma, CVD and PVD chamber parts: focus rings, liners, ESC parts, showerheads, domes, shields, collimators, endpoint windows, spin-chuck nozzles (`chamber-parts`) | {ref}`Hardware <material-hardware-consumables>` | Scheduled replacement on etch, CVD, PVD and single-wafer wet tools. | typical (not listed) |
-| RTP consumables: tungsten-halogen lamps, quartz windows, edge rings, pyrometer calibration; cooling water and CDA/N₂ (`rtp-parts`) | {ref}`Hardware; utility <material-hardware-consumables>` | Rapid thermal anneals and silicidation (facility table for the Heatpulse family[^ag-8108]). | typical (not listed) |
-| Exhaust abatement and waste treatment: HCl-tolerant exhaust and NH₄Cl traps, scrubbing of arsenic-, chlorine-, fluorine- and HF-bearing exhaust, acid-waste neutralisation, CMP slurry waste; pump oil (`abatement`) | {ref}`Abatement <material-hardware-consumables>` | Handles by-products and spent chemicals (see *Safety and abatement* below). | typical (not listed) |
-| Probe cards, needles, tip-cleaning media, calibration standards (`probe-cards`) | {ref}`Test <material-hardware-consumables>` | Parametric {term}`e-test`. | "HP 4062UX" with "DC, capacitance, pulse generator, frequency counter"; "Engineering manual Probe Station".[^skw-01] |
+| Material | Role in SKY130 steps | Public SkyWater evidence |
+|---|---|---|
+| Furnace ware: quartz or SiC tubes, boats, baffles, liners (`furnace-ware`) — {ref}`Hardware <material-hardware-consumables>` | Batch oxidation, LPCVD and alloy furnaces. | Tool vendor only: "Furnaces are all made by Aviza".[^skw-01] |
+| Plasma, CVD and PVD chamber parts: focus rings, liners, ESC parts, showerheads, domes, shields, collimators, endpoint windows, spin-chuck nozzles (`chamber-parts`) — {ref}`Hardware <material-hardware-consumables>` | Scheduled replacement on etch, CVD, PVD and single-wafer wet tools. | typical (not listed) |
+| RTP consumables: tungsten-halogen lamps, quartz windows, edge rings, pyrometer calibration; cooling water and CDA/N₂ (`rtp-parts`) — {ref}`Hardware; utility <material-hardware-consumables>` | Rapid thermal anneals and silicidation (facility table for the Heatpulse family[^ag-8108]). | typical (not listed) |
+| Exhaust abatement and waste treatment: HCl-tolerant exhaust and NH₄Cl traps, scrubbing of arsenic-, chlorine-, fluorine- and HF-bearing exhaust, acid-waste neutralisation, CMP slurry waste; pump oil (`abatement`) — {ref}`Abatement <material-hardware-consumables>` | Handles by-products and spent chemicals (see *Safety and abatement* below). | typical (not listed) |
+| Probe cards, needles, tip-cleaning media, calibration standards (`probe-cards`) — {ref}`Test <material-hardware-consumables>` | Parametric {term}`e-test`. | "HP 4062UX" with "DC, capacitance, pulse generator, frequency counter"; "Engineering manual Probe Station".[^skw-01] |
 :::
 
 :::{table} Hardware consumables and abatement: material and the SKY130 steps that use it
@@ -570,7 +570,7 @@ stacks, the Ti/TiN/AlCu/Ti/TiN stack that replaced them at the fab in
 {ref}`overview-metal-cap`)
 — and the PDK documentation gives thicknesses and permittivities for
 the SKY130 stack.[^pdk-03][^pdk-04] These are the sources of the
-{ref}`films table <materials-films>` below.
+{ref}`films table <materials-films>` above.
 
 **The EPA greenhouse-gas record.** The U.S. Environmental Protection
 Agency's Greenhouse Gas Reporting Program lists the Bloomington facility
@@ -621,18 +621,19 @@ what the record shows for their classes.
 * **Coverage.** Each of the 171 steps of the step list[^steps-sheet]
   has a page with a non-empty *Resources required* section, and each
   appears in at least one row.
-* **Keys.** The first column gives each row a short, stable key. Class
-  pages name the rows they cover by key, so rewording a cell does not
-  break them.
+* **Keys.** The *Material* cell ends with a short, stable key in
+  parentheses. Class pages name the rows they cover by key, so
+  rewording a cell does not break them.
 * **Class pages.** Each consumable class above is to have a page of its
   own, describing the class, representative materials and grades, what
   SkyWater lists, the steps that use it, supply and safety, and
   process-integration notes. Every row belongs to exactly one class page,
-  the one for the row's primary role, which is the first term of its
-  *Class* cell; a second term (such as "anneal ambient" on the nitrogen
-  row) names a secondary role, whose page may discuss the row but does
-  not list it. The table below assigns every row by key. A row owned by
-  a written page has a *Class* cell that links the page, and
+  the one for the row's primary role, which is the first term of the
+  class link in its *Material* cell; a second term (such as "anneal
+  ambient" on the nitrogen row) names a secondary role, whose page may
+  discuss the row but does not list it. The table below assigns every
+  row by key. A row owned by a written page has a class link in its
+  *Material* cell, and
   `tools/check_materials.py` checks that each page's list of rows and
   steps matches this index.
 
