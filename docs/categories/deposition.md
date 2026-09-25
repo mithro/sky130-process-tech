@@ -11,15 +11,12 @@ back.
 | What it does | adds a layer of material onto the wafer surface, covering everything that is there |
 | Steps in SKY130 | 41 |
 | Tool classes | {ref}`LPCVD furnaces <machine-vertical-furnace-lpcvd>`, {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>`, {ref}`PVD <machine-pvd-cluster-tool>`, {ref}`CVD tungsten <machine-tungsten-cvd>` |
-| Consumable classes | {ref}`Precursors <material-precursors>`, {ref}`Sputter targets <material-sputter-targets>` |
+| Consumable classes | {ref}`Precursors <material-precursors>`, {ref}`Process gases <material-process-gases>`, {ref}`Dopant gases and implant sources <material-dopant-sources>`, {ref}`Etch and chamber-clean gases <material-etch-gases>`, {ref}`Sputter targets <material-sputter-targets>`, {ref}`Hardware consumables <material-hardware-consumables>` |
 | Governing relation | Arrhenius growth-rate law |
 
 ## What this class of step does
 
-Deposition steps *add* a layer of material onto the wafer surface,
-covering everything that is there. Almost every other step in the flow
-either patterns a deposited film, implants through one, or polishes one
-back. In a 130 nm aluminium-interconnect process like SKY130, the
+In a 130 nm aluminium-interconnect process like SKY130, the
 deposited films are: silicon nitride ({term}`STI` {term}`hard mask`, gate cap, sidewall
 {term}`spacers <spacer>`, etch stops and final passivation); silicon dioxide in several
 flavours (STI trench fill, spacer oxide, {term}`PSG`, inter-level
@@ -39,7 +36,7 @@ deposition* ({term}`PVD`) knocks atoms off a solid target with argon
 ions from a magnetron plasma and lets them condense on the
 wafer.[^wiki-sputter] The choice between them is set by the material
 (metals are sputtered; dielectrics, silicon and tungsten are grown by
-CVD). It is also set by the temperature the wafer can tolerate at that point in the
+CVD).[^txt-02] It is also set by the temperature the wafer can tolerate at that point in the
 flow (typically below about 450 °C once aluminium is present)[^txt-02],
 and by how conformally the film must coat holes and steps.
 
@@ -76,10 +73,10 @@ standard LPCVD films and their typical industry conditions are:
 
 | Film | SKY130 steps | Composition and conditions |
 |---|---|---|
-| Polysilicon or amorphous silicon | {ref}`SAGD <step-048>` | SiH₄ → Si + 2H₂, roughly 580–650 °C |
-| Silicon nitride | {ref}`ISONIT <step-003>`, {ref}`GATENIT <step-058>`, {ref}`SPNIT <step-076>` | 3SiH₂Cl₂ + 4NH₃ → Si₃N₄ + 6HCl + 6H₂, roughly 700–800 °C; dense, conformal, tensile stress of order 1 GPa |
-| TEOS oxide | — | Si(OC₂H₅)₄ → SiO₂ + by-products, roughly 650–750 °C |
-| {term}`HTO` (high-temperature oxide) | — | SiH₂Cl₂ + N₂O, roughly 800–900 °C |
+| Polysilicon or amorphous silicon | {ref}`SAGD <step-048>` | from silane, SiH₄ → Si + 2H₂, roughly 580–650 °C[^wiki-poly][^txt-01] |
+| Silicon nitride | {ref}`ISONIT <step-003>`, {ref}`GATENIT <step-058>`, {ref}`SPNIT <step-076>` | from dichlorosilane and ammonia, 3SiH₂Cl₂ + 4NH₃ → Si₃N₄ + 6HCl + 6H₂, roughly 700–800 °C; dense, highly conformal, tensile stress of order 1 GPa[^wiki-sin][^txt-02] |
+| TEOS oxide | — | Si(OC₂H₅)₄ → SiO₂ + by-products, roughly 650–750 °C[^txt-01][^txt-02] |
+| {term}`HTO` (high-temperature oxide) | — | SiH₂Cl₂ + N₂O, 800–900 °C[^txt-01][^txt-02] |
 :::
 
 **Polysilicon or amorphous silicon.** At low temperature and a deposition rate above a
@@ -112,11 +109,16 @@ carry aluminium.[^wiki-pecvd] Typical films:
 
 | Film | SKY130 steps | Composition, conditions and use |
 |---|---|---|
-| Oxide | — | SiH₄ + N₂O, or TEOS + O₂ (better conformality and lower particle count); the workhorse inter-level dielectric and capping oxide of an aluminium {term}`BEOL`; ITRS 2001: fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in production since the 250 nm node".[^itrs-02] |
+| Oxide | — | SiH₄ + N₂O, or TEOS + O₂ (better conformality and lower particle count) |
 | Nitride | {ref}`NTSD <step-167>` | SiH₄ + NH₃ + N₂, hydrogen-rich (typically 10–25 at.% H)[^txt-02]; an etch stop and the final scratch- and moisture-resistant passivation |
 | Silicon oxynitride | {ref}`CAPILD <step-135>` | SiOₓNᵧ from SiH₄ + N₂O + NH₃, refractive index tunable between oxide and nitride; a dielectric anti-reflective coating under photoresist and the dielectric of MiM capacitors |
 | PSG | — | oxide + PH₃, typically 4–8 wt.% P (a typical industry range)[^txt-02]; getters sodium and, in older flows, could be reflowed[^wiki-psg] |
 :::
+
+**Oxide.** PECVD TEOS oxide is the workhorse inter-level
+dielectric and capping oxide of an aluminium {term}`BEOL`; the ITRS 2001
+notes that fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in
+production since the 250 nm node".[^itrs-02]
 
 The ion bombardment inherent in PECVD lets film stress be tuned from
 compressive to tensile by adjusting the low-frequency power, a
@@ -199,7 +201,7 @@ etch oxide. The blanket film is then removed from the field by CMP
 The SKY130 PDK's design-rule assumptions page publishes the nominal
 thicknesses used for antenna-ratio calculations:[^pdk-03]
 
-:::{table} Nominal deposited-film thicknesses from the SKY130 PDK's antenna-ratio assumptions
+:::{table} Nominal thicknesses the SKY130 PDK uses for antenna-ratio calculations
 
 | Layer | Thickness |
 |---|---|
@@ -271,7 +273,7 @@ must hit.
 
 ## Steps in this category
 
-:::{table} The forty-one deposition steps of the flow
+:::{table} The forty-one deposition steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
