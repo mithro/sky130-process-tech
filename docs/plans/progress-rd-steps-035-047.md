@@ -45,6 +45,82 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 038-depi.md — done (1 hand-written in-force note under "How it is typically
+performed" and its copy under References; both untouched — inside the 037–044
+in-force-sweep range)
+
+The densest page in the batch so far: a 300-word "Why this step exists" paragraph
+mixing three device families' measured thresholds and body-effect coefficients.
+
+Rules applied: R-PARA/R-SENTENCE throughout (the lead split at its
+mechanism/drawing-label seam; the buried-channel paragraph's 53-word sentence split at
+its em-dash; the read-condition paragraph split into 3 shorter paragraphs at its own
+seams, each long sentence further split at its em-dashes/colons; the trapped-charge and
+native-device paragraphs each split in two at natural seams; the 300-word measured-data
+paragraph split into 4 paragraphs with 2 new bold run-in labels, **Measured
+thresholds.** and **Body-effect coefficients.**, matching the "Relation to the native
+devices." label already on the page), R-TOOLS (2 "Strength:" bullets split into
+SkyWater-says/Tool-exists/Runs-this-step form; no recap table), R-HEDGE step 1 (italic
+lead-in), R-RELATED (labelled and reordered: `Previous:`, `Next:`, `Same category:` ×2,
+`Mask:`, `Category page:`), R-OPENQ (bold labels on all four bullets), R-GLANCE (box
+inserted last; "Public numbers" is "none published for SKY130", since the page's only
+SKY130-specific numbers belong to the native/zero-Vt comparison devices, not `DEPI`
+itself).
+
+**Two sentences deliberately left over the 45-word cap, not a miss.** The
+"**Measured thresholds.**" sentence (121 words) and the "**Body-effect
+coefficients.**" sentence (70 words) each carry a single "(our extraction from the
+published measurements)"-type hedge that covers threshold or body-effect values for
+*three different device families* named later in the same sentence. Splitting either
+sentence at any of its internal semicolons would separate at least one device's
+number from the hedge that supports it — exactly the mistake the task brief warns
+against twice over (marker/hedge must travel with every resulting clause, and this
+project's own precedent, batch 2's pages 022–024, treats this "which value belongs to
+which device" pairing risk as a reason to keep dense measured-comparison prose intact
+rather than force a split or a table). Both sentences were left as originally
+written; only the paragraph around them was split. Recorded here per §7's "write it in
+the progress file, do not force a fix" instruction.
+
+**One checker-parsing artifact found and avoided, not a real preservation issue.**
+Reformatting "Native devices: see {ref}`LVTNM <step-014>` for the `lvtn` block layer."
+to "Same category: native devices — see {ref}`LVTNM <step-014>` for the\n  `lvtn`
+block layer." (a plain rewording, wrapped onto two lines by the editor) produced a
+`LOST refs` / `ADDED refs` pair in `check_preserved.py` even though the `{ref}` role
+and the `` `lvtn` `` code span are byte-identical to the source. Root cause (read from
+`tools/check_preserved.py`'s own `_mask_inline_code`/`_CODE_SPAN_SINGLE_RE`, not
+changed): the single-backtick code-span masker only refuses to swallow a role's own
+*opening* backtick, and its content class excludes newlines, so in the base commit —
+where "for the" and `` `lvtn` `` sat on the same line — a stray, incorrect code-span
+match already bridged the ref's closing backtick through "for the" to `lvtn`'s
+opening backtick, mis-parsing the ref's target as `LVTNM <step-014> for the lvtn`.
+Wrapping the same two spans onto separate lines put a newline inside that bridge,
+which the masker's content class forbids, so the mis-parse silently stopped happening
+and `check_preserved` reported it as a changed ref. Fixed by keeping "for the" and
+`` `lvtn` `` on one line (no rewording change, just no new line break at that exact
+point) — restores the original, if quirky, tokenisation so the diff shows nothing.
+Recorded as **Guide problem 15**: a `{ref}`X`` role followed later on the *same
+source line* by an unrelated inline-code span, with nothing between them but the
+role's own closing backtick and plain words, can be mis-tokenised by
+`check_preserved.py`'s code-span masker; rewrapping the line (even with no wording
+change) can silently change which mis-parse happens and show up as a false
+`LOST`/`ADDED refs` pair. Not a real content difference; the checker is off limits to
+edit (§2 rule 15), so future pages should keep this exact line-wrapping relationship
+undisturbed rather than "fix" the tokenisation by accident.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 6 → 1 (figure caption,
+off limits); list items > 60 words 2 → 0; sentences > 45 words 7 → 2 (the two
+deliberately-unsplit measured-data sentences above, plus the figure caption no longer
+counted separately since it wasn't a SENT hit this time); table cells > 25 words 0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers --allow-regrouped docs/steps/038-depi.md`: **0
+undeclared differences** after the line-wrap fix above. All `number_order` findings are
+clean `REGROUPED` matches. All other checkers pass; `-W` build clean. Screenshots
+(desktop + 400 px) read cleanly top to bottom, including the two new bold-labelled
+measurement paragraphs (both readable in one screen-width, no overflow) and the
+in-force dropdown (collapsed, untouched).
+
+
 ### 037-ptsi.md — done (1 hand-written in-force note under "How it is typically
 performed" and its copy under References; both untouched — this page is inside the
 037–044 in-force sweep range, checked with `check_inforce.py` after every edit)

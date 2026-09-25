@@ -10,13 +10,28 @@
 | **Previous step** | {ref}`PTSI <step-037>` |
 | **Next step** | {ref}`TUNME <step-039>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** dopes the memory channel surface so the SONOS transistor
+  conducts at zero gate volts (depletion mode).
+* **Why:** the 2-T cell is read at 0 V on the control gate, so the
+  erased state must be a depletion-mode conduction level.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** species, energy and dose (→ Open questions).
+:::
+
 ## What this step is
 
 `DEPI` is the second implant through the tunnel-mask windows. Where
 {ref}`PTSI <step-037>` put a p-type barrier *under* the memory
 transistor's channel, `DEPI` dopes the channel *surface* so that the
 {term}`SONOS` transistor is a {term}`depletion-mode` device: one that conducts with zero
-volts on its gate and needs a negative gate voltage to turn off. The
+volts on its gate and needs a negative gate voltage to turn off.
+
+The
 PDK's own cross-section of the {term}`2-T <2-T cell>` SONOS cell uses the same term: its
 labels include "Depletion Implant" alongside "ONO", "SONOS gate", "NPASS
 gate" and "NMOS VT implants".[^pdk-sonos-xs] The implant is confined to
@@ -36,7 +51,7 @@ Before, the tunnel window with the punch-through stop of PTSI beneath it; after,
 For an n-channel transistor a depletion implant is an n-type dose
 (arsenic or phosphorus) placed in the top few tens of nanometres of
 the channel, enough to over-compensate the p-well and leave a thin
-n-type layer that conducts until the gate depletes it — the "buried
+n-type layer that conducts until the gate depletes it. This is the "buried
 channel" of the classic ion-implanted depletion-mode
 IGFET.[^edwards-1971] We infer arsenic on the grounds that it gives
 the shallowest, best-controlled profile and is among the species
@@ -57,16 +72,20 @@ confined to the memory cells.
 
 The reason is the way the 2-T cell is read. The PDK's programme/erase
 table shows the read condition as 0 V on the {term}`control gate`, +1.1 V on
-the drain and +1.8 V on the word line (the {term}`select gate`), and
+the drain and +1.8 V on the word line (the {term}`select gate`). It
 defines the threshold on the same bias conditions as the gate voltage
-at which the drain current reaches 2.05 µA — the e-test parameters are
+at which the drain current reaches 2.05 µA. The e-test parameters are
 named "SONOS erased VT (VG@2.05uA)" and "SONOS programmed VT
-(VG@2.05uA)".[^pdk-07] The memory transistor therefore has to conduct with its
+(VG@2.05uA)".[^pdk-07]
+
+The memory transistor therefore has to conduct with its
 gate *grounded* when erased and be cut off with its gate grounded when
 programmed. The {term}`e-test` table gives exactly that: a nominal "SONOS
 erased VT" of −2.3 V (specification −3.648 to −0.952 V), a "SONOS
 programmed VT" of 1.44 V, and a "program inhibit VT" of
-−1.132 V.[^pdk-07] A transistor whose erased threshold is −2.3 V is a
+−1.132 V.[^pdk-07]
+
+A transistor whose erased threshold is −2.3 V is a
 depletion-mode device — "[f]or an N-type FET, enhancement-mode devices
 have positive thresholds, and depletion-mode devices have negative
 thresholds", and such a device "is normally on at zero gate–source
@@ -77,7 +96,9 @@ removes electrons (or adds holes) to the nitride and shifts the
 threshold negative; programming adds electrons and shifts it
 positive.[^cyp-25][^cyp-26] The *neutral* threshold — with no net
 charge in the nitride — sits between the two, and it is set by the
-channel doping under the {term}`ONO`. A depletion implant places that
+channel doping under the {term}`ONO`.
+
+A depletion implant places that
 neutral point near or below zero so that a symmetric ±ΔV window from
 {term}`Fowler–Nordheim <Fowler–Nordheim tunnelling>` programming and erase[^cyp-25] straddles the 0 V read
 condition with margin on both sides. Scaled-SONOS design papers treat
@@ -98,7 +119,9 @@ transistors (`nfet_03v3_nvt`, `nfet_05v0_nvt`) and a 20 V zero-Vt
 device. It is tempting to connect them to a "depletion implant", but
 the PDK says the opposite: "The native device is constructed by
 blocking out all VT implants", and the zero-Vt device "has p-well and
-all Vt implants blocked to achieve a zero VT".[^pdk-07] Those devices
+all Vt implants blocked to achieve a zero VT".[^pdk-07]
+
+Those devices
 are made by *omitting* implants (through the `lvtn` block layer, whose
 function is to "block Vt adjust implant for low Vt LV PMOS/NMOS, SONOS
 FETs and Native NMOS"[^pdk-periph]), not by adding one. We therefore
@@ -108,7 +131,9 @@ channels without threshold-adjust implants (and, for the zero-Vt device,
 without the P-well).
 
 Measurements published in the SKY130 raw-data repository are consistent
-with that reading. By maximum-transconductance extrapolation of the
+with that reading.
+
+**Measured thresholds.** By maximum-transconductance extrapolation of the
 drain current at a drain bias of 0.1 V, less half that bias (our
 extraction from the
 published measurements), the `nfet_05v0_nvt` structures have thresholds
@@ -122,7 +147,9 @@ the zero-Vt e-test geometry "2* 30/5.5" of `VTXNZVT1`, not the 20 V
 native device's "2* 30/1.0", and the extracted value matches the
 published `VTXNZVT1` nominal of −0.1224 V) gives −0.12 to
 −0.13 V.[^pdk-07][^raw-data-hv-mosfets][^raw-data-testtile-pads] None of these
-thresholds is strongly negative. The shift of threshold with body bias
+thresholds is strongly negative.
+
+**Body-effect coefficients.** The shift of threshold with body bias
 tells the devices apart: the body-effect coefficient is about 0.47 √V
 for a 10/4 µm `nfet_05v0_nvt`, 0.73 √V for the 7/8 µm `nfet_g5v0d10v5`
 and 0.07 √V for the zero-Vt structure (our extraction: a least-squares
@@ -132,6 +159,7 @@ implied doping). With the standard uniform-doping expression and the
 thick-oxide capacitance measured on the same tile (see
 {ref}`GOX100 <step-043>`), these correspond to effective body dopings
 of about 6 × 10¹⁶, 1.5 × 10¹⁷ and 1.4 × 10¹⁵ cm⁻³.[^raw-data-hv-mosfets]
+
 We read this as a native device that keeps a well-doped body under its
 channel, and a zero-Vt device whose body is some forty times more
 lightly doped, as the PDK's "p-well and all Vt implants blocked"
@@ -141,12 +169,13 @@ themselves.
 
 ## How it is typically performed
 
-An industry-generic depletion-mode channel implant for a 200 mm,
-130 nm-era memory transistor (SKY130's values are not public):
+*An industry-generic depletion-mode channel implant for a 200 mm,
+130 nm-era memory transistor (SKY130's values are not public):*
 
 * **Species.** On our arsenic reading (see above; the species is not
   public), arsenic (⁷⁵As⁺, from AsH₃) for a shallow, abrupt
   n-layer; phosphorus is the lighter alternative with a longer tail.
+
   The original ion-implanted depletion-mode IGFET work established the
   implanted n-layer approach,[^edwards-1971] and Merckel's modelling
   chapter treats the resulting device physics.[^merckel-1977] A
@@ -154,10 +183,11 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   "an implant of Arsenic" as a first channel adjustment and a
   "counter-doped channel region".[^pat-vt-rrr]
 * **Energy.** Low — tens of keV for arsenic — so that the n-layer is
-  confined to the top few tens of nanometres above the `PTSI` barrier;
-  the {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes 46 %
-  of its own thickness of silicon[^wiki-thox] — of order 1 nm for the
-  2 nm lower oxide of Wikipedia's generic SONOS stack[^cyp-26] — which
+  confined to the top few tens of nanometres above the `PTSI` barrier.
+
+  The {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes 46 %
+  of its own thickness of silicon[^wiki-thox] (of order 1 nm for the
+  2 nm lower oxide of Wikipedia's generic SONOS stack[^cyp-26]), which
   the target must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
@@ -171,7 +201,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
   two implants does not matter physically and is presumably chosen for
   implanter scheduling.
 * **Anneal.** By the furnace steps that follow, beginning with the
-  tunnel oxidation at {ref}`ONO <step-040>`; if the species is
+  tunnel oxidation at {ref}`ONO <step-040>`.
+
+  If the species is
   arsenic, its slow diffusion keeps the layer shallow through the ONO
   and gate-oxide thermal budget, which Cypress notes must be kept low
   after the stack is formed.[^cyp-25]
@@ -194,14 +226,18 @@ one.[^pat-04]
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter** — "B11, BF2, As, ESC
-  chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01] Arsenic and
-  the dose range match a depletion implant. Strength: **strong** for
-  the tool; **inference** for its assignment to `DEPI`.
-* **Axcelis GSD implanters** — both GSD entries, "High current/energy"
-  and "Hi dose", list "B11, BF2, P, As"[^skw-01] — if phosphorus were
-  the species; which entry would serve is not stated. Strength: strong
-  for existence; weak for assignment.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "B11, BF2, As, ESC
+    chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* **strong** — arsenic and the dose range match a
+    depletion implant.
+  - *Runs this step:* **inference**, for its assignment to `DEPI`.
+* **Axcelis GSD implanters**
+  - *SkyWater says:* both GSD entries, "High current/energy"
+    and "Hi dose", list "B11, BF2, P, As".[^skw-01]
+  - *Tool exists:* strong for existence — if phosphorus were the
+    species; which entry would serve is not stated.
+  - *Runs this step:* weak.
 
 ## Resources required
 
@@ -217,15 +253,16 @@ one.[^pat-04]
 ## Related steps and cross-references
 
 * Previous: {ref}`PTSI <step-037>` (sub-surface barrier through the
-  same window); mask: {ref}`TUNM <step-035>`.
+  same window).
 * Next: {ref}`TUNME <step-039>` removes the (inferred) pad oxide the
   implant went through; {ref}`ONO <step-040>` grows the tunnel oxide on the
   implanted silicon.
-* The select transistor of the cell is a standard NMOS whose channel we
-  take to have been implanted at {ref}`LVTNI <step-015>` or later; the
-  cell's tip implant is {ref}`LDNTM <step-071>`.
-* Native devices: see {ref}`LVTNM <step-014>` for the `lvtn` block
-  layer.
+* Same category: the select transistor of the cell is a standard NMOS
+  whose channel we take to have been implanted at
+  {ref}`LVTNI <step-015>` or later; the cell's tip implant is
+  {ref}`LDNTM <step-071>`.
+* Same category: native devices — see {ref}`LVTNM <step-014>` for the `lvtn` block layer.
+* Mask: {ref}`TUNM <step-035>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -310,19 +347,23 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The species, energy and dose of `DEPI` are not public; arsenic at
+* **Species, energy and dose.** These are not public; arsenic at
   tens of keV and ~10¹² cm⁻² is an era-typical inference.
-* Whether the "Depletion Implant" label in the PDK drawing denotes a
-  single implant or the combined effect of `PTSI` and `DEPI` is not
-  stated; we read `DEPI` as the surface, n-type component.
-* Whether `DEPI` contributes to any device other than the SONOS
-  transistor is inferred (no) from the PDK's description of the native
-  and zero-Vt devices as implant-blocked; their measured thresholds of
+* **Which implant the drawing labels.** Whether the "Depletion
+  Implant" label in the PDK drawing denotes a single implant or the
+  combined effect of `PTSI` and `DEPI` is not stated; we read `DEPI`
+  as the surface, n-type component.
+* **Contribution to other devices.** Whether `DEPI` contributes to any
+  device other than the SONOS transistor is inferred (no) from the
+  PDK's description of the native and zero-Vt devices as
+  implant-blocked.
+
+  Their measured thresholds of
   about −0.13 to +0.12 V (our extraction) are consistent with that but
   do not exclude a small contribution.[^raw-data-hv-mosfets]
-* The programme-inhibit threshold of −1.132 V[^pdk-07] implies a
-  partial-erase state whose relation to the channel doping is not
-  documented publicly.
+* **Programme-inhibit state.** The programme-inhibit threshold of
+  −1.132 V[^pdk-07] implies a partial-erase state whose relation to
+  the channel doping is not documented publicly.
 
 <!-- footnotes -->
 
