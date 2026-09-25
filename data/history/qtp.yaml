@@ -1327,3 +1327,158 @@ documents:
     share the double-metal, single-poly description; only the design-rule figure differs, which may reflect
     a real fab-to-fab (Fab 2 vs HHGrace) shrink under the same 'S4AD-5' name rather than a simple error,
     but the two reports do not say so themselves.
+- id: qtp-096411
+  doc_type: QTP
+  number: '96411'
+  cypress_document_number: null
+  title: 256K/512K PROM - P26 Technology
+  version: '1.1'
+  date_printed: May 1997
+  url: https://www.cypress.com/file/93566/download
+  archive_url: https://web.archive.org/web/20201026124735/https://www.cypress.com/file/93566/download
+  retrieved: '2026-09-25'
+  sha256: 246794ee5eaf46de829450d0d2d6b8cf6990244908c201a33a50bca5009e2f3f
+  technology_codes:
+  - P26
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C271A
+  - CY27H256
+  - CY27C256A
+  - CY27C512
+  - CY27H512
+  die_ids:
+  - 7C274B
+  - 7C286B
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 6K Al, 1200A TiW; Metal 2: 1,500A TiW, 9K Al, 320A TiW'
+    passivation: Oxynitride
+    free_phosphorus_percent: None
+    design_rule: CMOS, Double Metal / 0.65µm
+    gate_oxide: SiO2 / 165A
+    fab_location: Cypress Semiconductor - Round Rock, TX (Fab2)
+    die_fab_line_id: Fab 2/ P26
+    transistors: 557,694 (512K EPROM) / 29,635 (256K EPROM)
+    gates: 557,694 (512K EPROM) / 29,635 (256K EPROM)
+  qualification_history: []
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab 2/ P26'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Double Metal / 0.65µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  - text: 128K x 8 High Speed CMOS EPROM qualifiled in P26 technology.
+    location: p.9, footnote 3
+  notes: 'No Technology/Product Qualification History table is printed in this early-style (May 1997)
+    report, matching the pattern seen in the other early (1996-97) reports in this corpus (qtp-096091,
+    qtp-096182, both R28). P26 is a single-poly(?) CMOS, double-metal, 0.65 µm process run at Fab 2, Round
+    Rock, TX -- the same 0.65 µm design rule as R28 (also 0.65 µm, but double-poly and run initially at Fab
+    3), suggesting P26 and R28 may be contemporary, similarly-geometried Cypress processes distinguished
+    by device type (PROM vs SRAM) rather than by design rule. A footnote (p.9) also names CY27H010 as
+    "qualified in P26 technology" without its own qualification-history row in this document.'
+- id: qtp-032301
+  doc_type: QTP
+  number: '032301'
+  cypress_document_number: null
+  title: 16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan
+  version: '1.0'
+  date_printed: May 2004
+  url: https://www.cypress.com/file/92311/download
+  archive_url: https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download
+  retrieved: '2026-09-25'
+  sha256: ac2f4a16c1461725216458e5140c013d5540a577623744284e559b462d49ba8a
+  technology_codes:
+  - S17
+  fab: ProMOS Technologies (Taiwan)
+  products:
+  - CYU001M16TFFA
+  - CYU001M16TFF1A
+  - CYU001M16TFF3A
+  die_ids:
+  - U0166TFF1A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Al Cu (WL); Metal 2: Al Cu'
+    passivation: 1650Å TEOS / 4500Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: Promos S17/0.17 µm
+    gate_oxide: SiO2, 62Å
+    fab_location: Promos (Taiwan)
+    die_fab_line_id: U016TFF
+    transistors: 35 million
+    gates: 1.75 million
+  qualification_history:
+  - number: '020606'
+    description: New Technology S17 / New Device, 32Meg, MoBL3 SRAM CYU0326A5/7/9AZ and family
+    date: Feb 03
+  - number: '031605'
+    description: Fast Process Change for S17 Promos for 16Meg and 32Meg IT SRAM
+    date: May 03
+  - number: '032301'
+    description: Qualify 16 Meg A/D MUX product U0166TFF0/1/3AZ fabricated at Promos Fab using the S17
+      Technology
+    date: Apr 04
+  quotes:
+  - text: New Technology S17 / New Device, 32Meg, MoBL3 SRAM CYU0326A5/7/9AZ and family
+    location: p.2, Technology Qualification History, row 020606
+  - text: Promos S17/0.17 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'Earliest dated reference to ProMOS S17 in this corpus: QTP 020606, Feb 03 ("New Technology
+    S17"). This is a Cypress foundry technology at ProMOS Technologies, Taiwan (an outsourced line, not
+    a Cypress-numbered fab), alongside the HHGrace/Hyundai/GSMC/IMI foundries elsewhere in this corpus.
+    Design rule is given directly as "Promos S17/0.17 µm"; the Die Fab Line ID field instead reads
+    "U016TFF" (a device/mask-set code, not the technology name).'
+- id: qtp-012801
+  doc_type: QTP
+  number: '012801'
+  cypress_document_number: null
+  title: 4 Meg SRAM Device R7LD-1.8 Technology, Fab4
+  version: '1.0'
+  date_printed: October 2004
+  url: https://www.cypress.com/file/91706/download
+  archive_url: https://web.archive.org/web/20210302225236/https://www.cypress.com/file/91706/download
+  retrieved: '2026-09-25'
+  sha256: da670bb9ca2139d5c4743487eb35a4c9c0a63d3428e2fab46d903b8166516e84
+  technology_codes:
+  - R7LD-1.8
+  - R7-1.8
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62146CV18
+  - CY62147CV18
+  die_ids:
+  - 7C62345A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW; Metal 2: 300Å Ti/8,000 Å Al / 300Å TiW'
+    passivation: 1000Å TEOS / 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.16 µm
+    gate_oxide: SiO2, 32Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R7-1.8
+    transistors: 50 million
+    gates: 3,512 million (printed thus; likely a decimal-point OCR/typo for 3.512 million)
+  qualification_history:
+  - number: '012411'
+    description: New Technology R7LD-1.8 / New Device, 8Meg, MoBL Static RAM CY62157CV18LL
+    date: Jun 01
+  - number: '012801'
+    description: New Device 4Meg MoBL Static RAM CY62146/7CV18, R7LD-1.8 Technology
+    date: Jul 01
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – R7LD-1.8
+    location: p.3, section heading
+  - text: New Technology R7LD-1.8 / New Device, 8Meg, MoBL Static RAM CY62157CV18LL
+    location: p.2, Technology Qualification History, row 012411
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R7-1.8'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Title and process-description heading call the technology "R7LD-1.8"; the Die Fab Line ID field
+    instead prints "Fab4/R7-1.8" (dropping "LD"), and the page footer repeatedly abbreviates it "R7-1.8"
+    -- the same short-form-in-running-text pattern seen with R7FD-3R/R7FT-3R elsewhere in this corpus.
+    Earliest dated reference to R7LD-1.8 in this corpus: QTP 012411, Jun 01 ("New Technology R7LD-1.8").
+    At 0.16 µm this is a notably finer design rule than the contemporary R7FD-3R (0.15 µm, close) and
+    R7FT-3R (0.18 µm) codes (qtp-011908, qtp-014807) -- three separate R7-family suffixes (LD, FD, FT) at
+    three close-but-distinct geometries, all Fab 4/Bloomington.'
