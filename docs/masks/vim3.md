@@ -194,7 +194,7 @@ is the heading of the run's columns in the tab
   via and metal numbers rise in step order, but each capacitor mask is
   numbered 2 above the metal mask that follows it (`CAPM`, step 137, is
   `572` against `MM3`, step 139, `570`).[^steps-sheet] Elsewhere the numbers do not
-  follow process order, so no process position is read from it
+  follow process order, so no process position is read from `575`
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
   renders are from the original set `5CS8010AC`
