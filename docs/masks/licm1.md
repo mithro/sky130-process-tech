@@ -3,19 +3,10 @@
 
 The local-interconnect contact mask is the {term}`reticle` that places
 every connection between the devices in the silicon and the first
-wiring level above them: on the {ref}`LICM1 <step-093>` page's reading,
+wiring level above them. On the {ref}`LICM1 <step-093>` page's reading,
 the resist printed through it at step 93 is opened over every drawn
 `licon1`, and the {ref}`LICM1E <step-094>` etch cuts the holes through
-the dielectric down to the diffusions, taps and poly heads. Every
-transistor terminal, well tap and resistor end of SKY130 is reached
-through one of these holes, and the step pages read the level as the
-first of the flow's three hole layers and as a critical KrF level. This
-page gathers what public sources say about the mask itself — its PDK
-entry and layers, the plates the process-steps sheet records for the MPW
-runs, what the public renders of those runs show, the lithography it
-needs and the rules that constrain it. How the step is performed is on
-the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+the dielectric down to the diffusions, taps and poly heads.
 
 | | LICM1 — Local Intr Cont.1 |
 |---|---|
@@ -32,13 +23,26 @@ the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-licm1-steps>` |
 
+:::{seealso}
+How the step is performed is on
+the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+Every
+transistor terminal, well tap and resistor end of SKY130 is reached
+through one of these holes, and the step pages read the level as the
+first of the flow's three hole layers and as a critical KrF level.
 
 The periphery rules give the function of the `licon` rule set as
 "Defines contacts between poly/diff/tap and Li1".[^pdk-periph] The PDK's
 Table F4, "Connectivity of Drawn and Mask Layers", names the layer that
 joins `li1` to the layers beneath it: "Licon1" to diff and to tap, and
-"Licon1 AND Npc" to poly.[^pdk-summary] The mask therefore carries holes
+"Licon1 AND Npc" to poly.[^pdk-summary]
+
+The mask therefore carries holes
 of two landing kinds — on diffusion or tap, and on poly inside a
 {term}`nitride cut` — and the rules keep them apart: "Licons may not
 overlap both poly and (diff or tap)" (licon.17).[^pdk-periph] Rule
@@ -57,7 +61,7 @@ xhrpoly_5p73 prec_resistor_terminal" (rpm.1k).[^pdk-periph] On the
 a uniform contact.
 
 The PDK's mask generation table, Table F2b, has a `LICM1` column but
-marks it `C` ("CREATED") in none of its 80 device rows: it gives `+`,
+marks it `C` ("CREATED") in none of its 80 device rows.[^pdk-06] It gives `+`,
 "Layer allowed to overlap", in 74 rows and `-`, "Layer not created for
 the device", in six — the LI resistor, the two metal fuses, the HV
 varactor and the two VPP capacitors.[^pdk-06] We read this as the table
@@ -80,16 +84,20 @@ readings.[^pdk-periph]
 `gds_layers.csv` gives the mask-level layer `clicm1` three purposes:
 `mask` at 43:0 ("Local interconnect contact mask"), and `mask add`
 106:43 and `mask drop` 106:42 on a different layer number, with no
-`drawing` or `waffle drop` purpose; the drawn layer is `licon1` at 66:44,
+`drawing` or `waffle drop` purpose.[^pdk-06] The drawn layer is `licon1` at 66:44,
 "Contact to local interconnect".[^pdk-06] The pairing rests on those names
 and descriptions, as on the {ref}`masks index <masks-index>`, and the
-PDK publishes no operation from `licon1` to the plate. Two rules show
+PDK publishes no operation from `licon1` to the plate.
+
+Two rules show
 what a designer may draw on the mask layers. Rule x.9 reads "Shapes on
 maskAdd or maskDrop layers ("serifs") are allowed in core only", with
-the exemptions it lists, and rule x.15a confines
+the exemptions it lists.[^pdk-periph] Rule x.15a confines
 "Drawn compatible, mask, and waffle-drop layers" to test modules, seal
 ring and frame, with the exception that "FOM/P1M/Metal waffle drop are
-allowed inside the die" (flag P, periphery only).[^pdk-periph] A design
+allowed inside the die" (flag P, periphery only).[^pdk-periph]
+
+A design
 inside the die therefore draws `licon1`, and the `clicm1` purposes are
 for the core, test modules, seal ring and frame (our reading of x.9 and
 x.15a).
@@ -101,7 +109,9 @@ and Table 4 a "Standard Licon bottom CD" of 0.08 (`LBCD`) against the
 drawn 0.17, with a "Licon1 etch angle (deg)" of 10
 (`LICETANG`).[^pdk-03] The {ref}`LICM1 <step-093>` page lists mask bias,
 etch taper and resist trim as candidate routes from the one to the
-other; the PDK gives only the end values. The `LICM1` mask data are not
+other; the PDK gives only the end values.
+
+The `LICM1` mask data are not
 among those rule x.1a names for the 0.001 grid ("mask data for p1m, met1,
 via, met2"), so they fall under x.1b's 0.005 for "all layers except
 those mentioned in 1a" (our reading; both values are printed with the
@@ -113,15 +123,19 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `LICM1` the site renders layer 66:44
 (`licon1`) alone, with no Boolean expression and no fill layer, on all
-eight runs; its mask record gives the mask-level layer 43:0, the note
+eight runs.[^mask-renders] Its mask record gives the mask-level layer 43:0, the note
 "LICM1 = licon1 sized (clicm1.3a/3b by spacing)" and the info text "Via
-0 (???→M0)".[^mask-renders] The periphery rules contain no `clicm1` rule
+0 (???→M0)".[^mask-renders]
+
+The periphery rules contain no `clicm1` rule
 set and no rule of that name,[^pdk-periph] and the site gives no source
 for the note. The render jobs list only the drawn layer, with no sizing
 step, so, as the {ref}`masks index <masks-derivations>` reads the site
 in general, the images are unsized drawn data. The note and the choice
 of layer are one public derivation from the drawn data, not SkyWater's
-mask-generation recipe. The info text is identical to the "Info" note of
+mask-generation recipe.
+
+The info text is identical to the "Info" note of
 the `LICM1` row in the process-steps sheet, one of the level names the
 two sources share, so neither is cited as corroborating the other
 ({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders]
@@ -129,7 +143,9 @@ two sources share, so neither is cited as corroborating the other
 Every rendered die of every run carries `licon1` shapes — at least
 6 533 865 on each die, and a few counts recur on two or three dies of a
 run[^mask-renders] — so the count of 40 dies says only that every
-layout has contacts, as every working die must. The site states the
+layout has contacts, as every working die must.
+
+The site states the
 limits of its images: "These are renders of *drawn* data, not photomask
 artwork: reticle pitch, 4x reduction, mirroring and the frame features
 the fab adds are not modelled."[^mask-renders] They therefore show the
@@ -176,12 +192,16 @@ set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`LICM1 <step-093>` page puts the 0.17 µm
+### Exposure class
+
+The {ref}`LICM1 <step-093>` page puts the 0.17 µm
 hole at {math}`k_1 \approx 0.28` on an i-line tool of NA 0.6, which it
 excludes, and at {math}`k_1 \approx 0.41–0.48` on a KrF lens of NA
 0.6–0.7, "workable for holes only with an attenuated phase-shift mask […]
-and off-axis illumination", and infers a 248 nm level; the
-{ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there. ITRS
+and off-axis illumination", and infers a 248 nm level. The
+{ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there.
+
+ITRS
 2001 lists "248 nm + PSM" and "193 nm" as the exposure options for the
 130 nm node, and says that "only 248 nm lithography has a mature
 infrastructure".[^itrs-03] ASML's PAS 5500/750E "achieves 130 nm
@@ -189,15 +209,19 @@ resolution while using standard 248 nm light".[^asml-750e] SkyWater
 lists "ASML DUV stepper" and "ASML DUV scanner" but assigns no layer to
 them.[^skw-01]
 
-**Mask errors.** ITRS 2001 notes "the particular challenges associated with imaging
+### Mask errors
+
+ITRS 2001 notes "the particular challenges associated with imaging
 contact holes", because "contacts have very small process windows and
 large mask error factors, and minor changes in the contact size have
 large implications for mask CD control requirements".[^itrs-03] Wong
 et al. found the mask error factor rising "rapidly when the critical
 dimension (CD) is less than […] 0.75 (lambda) /NA for
-contacts";[^wong-1998] at 248 nm and NA 0.7 that is about 0.27 µm (our
+contacts".[^wong-1998] At 248 nm and NA 0.7 that is about 0.27 µm (our
 arithmetic), well above the 0.17 µm licon, so a CD error on this plate
-would print magnified (inference). Kim et al. found the factor rising
+would print magnified (inference).
+
+Kim et al. found the factor rising
 near the resolution limit, larger for dense than for isolated contacts,
 and smaller on attenuated than on binary masks "because it is applied
 the positive mask bias in order to reduce the sidelobe
@@ -205,30 +229,40 @@ printing".[^kim-1999] Choo et al., moving a contact level to a
 0.13 µm technology, printed 0.16 µm contact holes on a scanner of NA
 0.68, "a low 0.44" in {math}`k_1`, with a 6 % attenuated mask whose
 0.16, 0.18 and 0.20 µm hole patterns were biased by 0.04, 0.06 and
-0.08 µm.[^choo-2000] ITRS 2001's optical mask requirements, which are
+0.08 µm.[^choo-2000]
+
+ITRS 2001's optical mask requirements, which are
 "for critical layers", ask in 2001 for a mask CD uniformity of 8.0 nm
 (3σ) on contacts and vias at 4× magnification.[^itrs-03] How tightly
 SkyWater specifies the `LICM1` plate is not public.
 
-**Side lobes.** The price of an attenuated plate for holes is side-lobe
+### Side lobes
+
+The price of an attenuated plate for holes is side-lobe
 printing. Yang and Dai found resist dimples "caused by the sidelobe
 effect" when printing 0.2 µm dense contact holes with an attenuated mask
 on a KrF stepper, and removed them by controlling bias, duty ratio and
-the resist and oxide thicknesses;[^yang-1998] Chen, Wang and Chu
+the resist and oxide thicknesses.[^yang-1998] Chen, Wang and Chu
 characterised the process latitude of such a mask for contact
-holes;[^chen-1999-psm] and Lu et al. found that "for most of resists,
+holes.[^chen-1999-psm] Lu et al. found that "for most of resists,
 the process windows are limited by unwanted sidelobe printing through
-focus".[^lu-1999] Whether the `LICM1` plate is attenuated at all is not
+focus".[^lu-1999]
+
+Whether the `LICM1` plate is attenuated at all is not
 public, so these results describe the choice the step page reads, not a
 known SKY130 practice.
 
-**Proximity correction.** The `clicm1` add and drop purposes are, on the
+### Proximity correction
+
+The `clicm1` add and drop purposes are, on the
 {ref}`LICM1 <step-093>` page's reading, where proximity corrections
 would be applied.[^pdk-06] For contact holes "2-dimensional correction
 is required", as Yamamoto et al. note for holes below
 0.2 µm.[^yamamoto-2000] The PDK does not say what the purposes carry.
 
-**Resist and tone.** The step page reads a chemically amplified positive
+### Resist and tone
+
+The step page reads a chemically amplified positive
 KrF resist over an organic anti-reflective coating; with the holes
 opened where `licon1` is drawn, the plate would be dark-field: clear
 squares in an opaque field (inference). Neither is published. The
@@ -237,21 +271,31 @@ consumables are on the
 the coat and develop on the
 {ref}`coat/develop track <machine-coat-develop-track>` page.
 
-**Pattern transfer.** On the step pages' readings the holes are etched at
+### Overlay and alignment
+
+The margins against the layers beneath are small:[^pdk-periph]
+
+* 0.040 µm
+  of diffusion around a licon (licon.5a)
+* 0.050 µm of poly around a poly
+  licon (licon.8)
+* 0.055 µm from a diffusion licon to a gate
+  (licon.11)
+
+Above it, the local interconnect must enclose the licon by
+0.080 µm on one of two adjacent sides (li.5).[^pdk-periph] The
+{ref}`LICM1 <step-093>` page reads the mask as aligned to poly for the
+poly contacts and to active for the diffusion contacts.
+
+### Pattern transfer
+
+On the step pages' readings the holes are etched at
 {ref}`LICM1E <step-094>` through the cap oxide and the phosphosilicate
 glass — the PDK's "Pre-LI ILD thickness" of 0.5 (`ILDTHICKN`)[^pdk-03] —
 on the {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
 class, with a taper that takes the 0.17 µm opening to the 0.08 µm
-bottom; the resist strip falls to that step or to
+bottom. On the step pages' readings the resist strip falls to that step or to
 {ref}`SACETCH <step-095>`.
-
-**Overlay.** The margins against the layers beneath are small: 0.040 µm
-of diffusion around a licon (licon.5a), 0.050 µm of poly around a poly
-licon (licon.8) and 0.055 µm from a diffusion licon to a gate
-(licon.11); above it, the local interconnect must enclose the licon by
-0.080 µm on one of two adjacent sides (li.5).[^pdk-periph] The
-{ref}`LICM1 <step-093>` page reads the mask as aligned to poly for the
-poly contacts and to active for the diffusion contacts.
 
 (mask-licm1-steps)=
 ## Steps that use this mask
@@ -280,7 +324,7 @@ On its step page's reading, the next step, {ref}`ALLY1 <step-096>`, is
 a hydrogen-bearing anneal with the contact holes open and no metal yet
 on the wafer, and the next mask step is {ref}`LI1M <step-102>`. The
 exception is `SACETCH`: it is listed because the step pages leave the
-resist strip either to the etch or to it; on its page's third reading,
+resist strip either to the etch or to it. On its page's third reading,
 which is compatible with the other two, it also removes the resist, and
 on the first two it treats the holes rather than the resist.
 
@@ -292,6 +336,8 @@ x.15a; flag P means "Rule applies to periphery only (outside
 areaid.ce). A corresponding core rule may or may not exist.", and NC
 "Rule not checked by DRC. It should be used as a guideline
 only."[^pdk-periph]
+
+:::{table} The `licon` rules, the rules of other sets that constrain the licon plate and the mask-data rules, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -329,6 +375,7 @@ only."[^pdk-periph]
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. Exempted are: […]" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* has two "Local Intr Cont.1" rows: a
 "Slotted" row with 0.17 and 0.17 under `LICM1SLCD` and `LICM1SLCDSP`,
@@ -337,7 +384,9 @@ and a "Core" row with 0.19 and 0.35 under `LICM1CD` and
 for the square licon (licon.1, licon.2) and 0.190 µm and 0.350 µm for
 the slotted one (licon.1b, licon.2b),[^pdk-periph] so the two rows'
 numbers match the rules with their labels the other way round (our
-comparison); Table 4's "Spacing between slotted_licons (Not applicable
+comparison).
+
+Table 4's "Spacing between slotted_licons (Not applicable
 when the two edges L= 0.19um)", 0.51 under `LICM1SLSP1`, matches
 licon.2c.[^pdk-03] The PDK does not reconcile the labels. Table 4 also
 gives a "min. etch and fill capability for isolation, licon, and met1"
@@ -352,18 +401,16 @@ licon.2).
 * {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>` and
   {ref}`SACETCH <step-095>` — the mask step, the contact etch and the
   clean that follows.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-duv-krf-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 ## References
 

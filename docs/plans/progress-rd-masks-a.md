@@ -404,3 +404,37 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   the nsm.3 rule cell (27, a quotation). Before → after: paragraphs 12 → 0, items 0 → 0, sentences
   13 → 1, cells 2 → 2.
 * **Content problems for the owner:** none found.
+
+### 10. licm1 — done
+
+* **Rules applied.** R-INTRO (163 → 61 words; first sentence split at its colon; "Every transistor
+  terminal … a critical KrF level." moved to the top of `## What the mask defines`); R-CAPTION; R-PARA,
+  R-SENTENCE; R-LIST (the three margins against the layers beneath, the base's end marker repeated on
+  the lead-in, the li.5 sentence keeping its own); R-RELATED; R-H3 (Exposure class, Mask errors, Side
+  lobes, Proximity correction, Resist and tone, Overlay and alignment ← "Overlay", Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS not applied.** The design-rules paragraph's parameters (`LICM1SLCD` … `XMAXCON`) are there to
+  compare Table 2's labels with the periphery rules ("with their labels the other way round (our
+  comparison)", "matches licon.2c", "the value of licon.12"); tabulating them would split each value from
+  its comparison. Sentences split at their semicolons; the paragraph split in two.
+* **Hedge repeated on a split:** "On the step pages' readings" on the resist-strip clause of Pattern
+  transfer.
+* **Steps section:** the step bullets and the `Steps:` run are untouched; the closing paragraph's
+  "The exception is `SACETCH`: …; on its page's third reading …" was split at its semicolon.
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers`): `pdk-06` ×2 (`gds_layers.csv` sentence; the Table F2b
+  sentence split at its colon), `pdk-periph` ×2 (x.9 / x.15a sentence; the margin-list lead-in),
+  `mask-renders` (render sentence).
+* **Marker coverage.** Flags read: the margin list (lead-in marker); the Wong arithmetic and the
+  repeated-hedge strip sentence (no marker of their own in the base).
+* **Over the caps after the pass (7 sentences):** "The nitride openings … on the step pages' readings"
+  (55: the trailing hedge may cover all three clauses or only the last, so neither a list nor a split
+  keeps its scope); the x.1a grid sentence (46, two quotations); "Every rendered die … — at least
+  6 533 865 … — so the count …" (50, one dash pair); the Exposure-class formula sentence (53 by the
+  script); the Choo et al. sentence (50, one study's figures); the Pattern transfer sentence (49, one
+  dash pair around a quotation); the `SACETCH` step bullet (54; step bullets are left alone, §4.4).
+  Before → after: paragraphs 10 → 0, items 0 → 0, sentences 16 → 7, cells 0 → 0.
+* **Content problem for the owner:** `docs/masks/licm1.md:178`, the "Plate number" bullet reads "The sheet
+  does not say what `265` encodes. It falls Its neighbours in the tab are `260` …" — "It falls" is a
+  broken fragment (compare "It falls between … and …" on cap2m and capm). Left as it is.
