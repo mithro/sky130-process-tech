@@ -2,20 +2,11 @@
 # VIM4 — Via4
 
 The via-4 mask is the {term}`reticle` that places every connection
-between metal 4 and metal 5, the top metal: on the
+between metal 4 and metal 5, the top metal. On the
 {ref}`VIM4 <step-159>` page's reading, the resist printed through it at
 step 159 is opened in a 0.8 µm square over every drawn `via4`, and the
 {ref}`VIM4E <step-160>` etch cuts the holes through the inter-metal
-oxide. It is one of three masks, with vias 2 and 3, for which the public
-record gives a coded mask type as well as plate IDs on the MPW runs, the
-only one of the three whose type reads as a binary mask, and that type
-is the reason the step pages read this coarse level as a 248 nm (KrF)
-level rather than an i-line one. This page gathers what public
-sources say about the mask itself — its PDK entry and layers, the plates and mask type the
-process-steps sheet records, what the public renders of the MPW runs
-show, the lithography it needs and the rules that constrain it. How the
-step is performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+oxide.
 
 | | VIM4 — Via4 |
 |---|---|
@@ -32,7 +23,19 @@ step is performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-vim4-steps>` |
 
+:::{seealso}
+How the
+step is performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is one of three masks, with vias 2 and 3, for which the public
+record gives a coded mask type as well as plate IDs on the MPW runs, and the
+only one of the three whose type reads as a binary mask. That type
+is the reason the step pages read this coarse level as a 248 nm (KrF)
+level rather than an i-line one.
 
 The periphery rules give the function of the layer as "Via4 connects
 met4 to met5 in the SKY130P\*/SP8P\* flow", and allow one via size: the
@@ -40,7 +43,9 @@ met4 to met5 in the SKY130P\*/SP8P\* flow", and allow one via size: the
 square via4s are allowed except die seal ring" (via4.3).[^pdk-periph]
 The mask therefore carries a single feature, a 0.8 µm square, repeated
 wherever metal 5 meets metal 4; wide connections are arrays of it
-(the {ref}`VIM4 <step-159>` page's reading). On the step pages' readings
+(the {ref}`VIM4 <step-159>` page's reading).
+
+On the step pages' readings
 the same holes also land on the top plates of the second
 {term}`MiM capacitor` ({ref}`CAP2M <step-152>`); the PDK's cross-section
 of the stacked capacitor labels `CAP2M`, "Via4", "M5 (plate 1)" and
@@ -49,8 +54,8 @@ of the stacked capacitor labels `CAP2M`, "Via4", "M5 (plate 1)" and
 `masks.csv` has a second entry that could be taken for this level,
 "Pad Via, `VIPDM`", which is not marked as used in SKY130 and whose
 minimum CD, `VIPDMCD` 1.2 / `VIPDMCDSP` 1.27, does not match the via-4
-rules; the {ref}`VIM4 <step-159>` page therefore describes the `VIM4`
-level.[^pdk-05][^pdk-03][^pdk-periph] The process-steps sheet records
+rules.[^pdk-05][^pdk-03][^pdk-periph] The {ref}`VIM4 <step-159>` page therefore describes the `VIM4`
+level. The process-steps sheet records
 no `VIPDM` plate on any MPW run, and the renders site's `VIPDM` render
 reuses the via-3 layer with the note "pad-via flow, not SKY130"
 ({ref}`masks-index`).[^steps-sheet][^mask-renders]
@@ -67,13 +72,15 @@ has no via columns, so it says nothing about which devices create
 
 `gds_layers.csv` gives `cviam4` a `mask` purpose at 58:0 ("Via 4 mask")
 and a `drawing` purpose at 117:20, a layer number that also carries the
-`cmm5` waffle drop at 117:4; the drawn layer is `via4` at 71:44,
+`cmm5` waffle drop at 117:4. The drawn layer is `via4` at 71:44,
 "Contact from metal 4 to metal 5".[^pdk-06] The pairing rests on the
 names and descriptions, as on the {ref}`masks index <masks-index>`, and
-the PDK publishes no operation from `via4` to the plate. Rule x.15a
+the PDK publishes no operation from `via4` to the plate.
+
+Rule x.15a
 confines mask layers to test modules, seal ring and frame, and its
 exception names only "FOM/P1M/Metal waffle drop" (flag P, periphery
-only),[^pdk-periph] so a design inside the die draws `via4` (our reading
+only).[^pdk-periph] So a design inside the die draws `via4` (our reading
 of x.15a, which does not say what applies in the core). One row of rule
 x.2 limits via3 and via4 to "n x 90" degrees: "Angles permitted on: via3
 and via4. Anchors are exempted."[^pdk-periph]
@@ -83,9 +90,11 @@ and via4. Anchors are exempted."[^pdk-periph]
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `VIM4` the site renders layer 71:44 alone, with
-no Boolean expression and no fill layer, on all eight runs; its mask
+no Boolean expression and no fill layer, on all eight runs.[^mask-renders] Its mask
 record gives the mask-level layer 58:0 and the info text "Via 4
-(M4→M5)".[^mask-renders] That text is identical to the "Info" note of
+(M4→M5)".[^mask-renders]
+
+That text is identical to the "Info" note of
 the `VIM4` row in the process-steps sheet, one of the level names the
 two sources share, so neither is cited as corroborating the other
 ({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders] The
@@ -98,7 +107,9 @@ nothing about how many projects use via 4 in particular. For MPW-5 the
 renders show shapes on all 40 dies although the sheet records no `VIM4`
 plate for that run, which fits the masks index's reading of the gap as
 one in the record, but the renders show the drawn layouts, not the
-plates ({ref}`masks-mpw-runs`).[^mask-renders][^steps-sheet] The site
+plates ({ref}`masks-mpw-runs`).[^mask-renders][^steps-sheet]
+
+The site
 states the limits of its images: "These are renders of *drawn* data,
 not photomask artwork: reticle pitch, 4x reduction, mirroring and the
 frame features the fab adds are not modelled."[^mask-renders] Its
@@ -126,7 +137,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 | MPW-8 | `5CS8017AC` | `S8017AA585A` |
 
 * **MPW-5.** The sheet records no plates for `CTM1`, `MM1`, `VIM`,
-  `VIM4` and `PDM` on MPW-5 and gives no reason; the masks index reads
+  `VIM4` and `PDM` on MPW-5 and gives no reason.[^steps-sheet] The masks index reads
   a gap in the record as likelier than a run without these masks, since
   every working die needs them (inference), and does not conclude that
   the plate was absent ({ref}`masks-mpw-runs`).[^steps-sheet]
@@ -143,83 +154,105 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 A tab headed "Sheet4" gives a mask type for three masks only, under the
 column heading "Mask type": `F4-248-EAPSM-A43-APRX` for `VIM2` and
-`VIM3`, and `B4-248-BIM-LSR-WET` for `VIM4`; a further column, "e-beam
+`VIM3`, and `B4-248-BIM-LSR-WET` for `VIM4`.[^steps-sheet] A further column, "e-beam
 spot size", holds 0.02 for `VIM3` and nothing for the other
 two.[^steps-sheet] The tab does not define its codes or say to which
-runs they apply. The masks index reads `BIM` as a binary
+runs they apply.
+
+The masks index reads `BIM` as a binary
 (chrome-on-quartz) mask and `248` as the exposure wavelength, because
-mask makers and the patent literature use those abbreviations — a TSMC
+mask makers and the patent literature use those abbreviations, and reads the digit 4, less certainly, as the
+4× reduction ratio.[^photronics-abr] A TSMC
 patent is titled [*Method for forming binary intensity masks*](<https://patents.google.com/patent/US6379849B1/en>) and
-abbreviates them "BIM" — and reads the digit 4, less certainly, as the
-4× reduction ratio.[^photronics-abr][^pat-bim-tsmc]
+abbreviates them "BIM".[^pat-bim-tsmc]
 
 The index does not read the last two fields, `LSR` and `WET`. We read
 them, less certainly still, as a laser-written plate with a wet-etched
 absorber (inference from the abbreviations alone). Both are established
-options for a plate whose features are large. A mask maker describes
+options for a plate whose features are large.
+
+A mask maker describes
 laser lithography tools as "a lower-cost solution when ultimate
 resolution is less critical", and dry etch as what "ensures pattern
-fidelity by minimizing CD loss";[^photronics-abr] laser reticle writers
+fidelity by minimizing CD loss".[^photronics-abr] Laser reticle writers
 of the ALTA family served mask makers at the 180 nm and 150 nm
-nodes;[^morgante-2000] and chrome masks "have traditionally been wet
+nodes.[^morgante-2000] Chrome masks "have traditionally been wet
 etched in an acidic solution of cerric ammonium nitrate", with an
 undercut of about 150 nm per edge that is compensated by sizing the
 data,[^buck-1994] whereas dry etch was developed for sub-half-micron
-features on the plate.[^flack-1993] At 4×, a 0.8 µm via is a 3.2 µm
+features on the plate.[^flack-1993]
+
+At 4×, a 0.8 µm via is a 3.2 µm
 square on the plate (our arithmetic), well above those limits. If the
 reading is right, the via-4 plate is the simplest kind a mask shop
 makes; the sheet does not say so.
 
 ## Lithography and pattern transfer
 
-**Exposure class.** On geometry alone the level would print on an
+### Exposure class
+
+On geometry alone the level would print on an
 i-line tool: the {ref}`VIM4 <step-159>` page gives
 {math}`k_1 \approx 1.3` at 365 nm and NA 0.6. The
 step page nevertheless reads it as a KrF level, because a reticle made
 for 248 nm points to a 248 nm tool, and gives {math}`k_1 \approx 2.3` on
-a lens of NA 0.70; the {ref}`KrF stepper <machine-duv-krf-stepper>` page
+a lens of NA 0.70. The {ref}`KrF stepper <machine-duv-krf-stepper>` page
 lists it there, and the {ref}`i-line stepper <machine-i-line-stepper>`
-page as an alternative. SkyWater lists both "ASML DUV stepper" and
+page as an alternative.
+
+SkyWater lists both "ASML DUV stepper" and
 "ASML I-line stepper" but assigns no layer to either.[^skw-01] Why a
 0.8 µm level has a reticle recorded for 248 nm is not stated.
 
-**Mask errors and mask type.** Wong et al. found that the mask error
+### Mask errors and mask type
+
+Wong et al. found that the mask error
 factor for contacts rises only when the CD falls below 0.75 λ/NA, and
 that attenuated phase-shift masks are about as sensitive to mask CD
-error as chrome-on-glass masks;[^wong-1998] at 248 nm and NA 0.70 the
+error as chrome-on-glass masks.[^wong-1998] At 248 nm and NA 0.70 the
 threshold is about 0.27 µm (our arithmetic), a third of the via-4 size,
-so the plate's CD errors would print about one to one (inference). Kim
+so the plate's CD errors would print about one to one (inference).
+
+Kim
 et al. found the same for contact holes on binary and attenuated
 masks — a mask error factor of about one for large features, rising
 near the resolution limit — with attenuated masks lower there because
 of their positive bias.[^kim-1999] On that evidence the attenuated type
 recorded for the 0.2 µm vias 2 and 3 would gain little at 0.8 µm, and a
-binary plate would suffice (our reading); Chen, Wang and Chu describe the
+binary plate would suffice (our reading).
+
+Chen, Wang and Chu describe the
 process latitude of an attenuated mask in contact-hole
 printing.[^chen-1999-psm] ITRS 2001's optical mask requirements, which
 are "for critical layers", ask for a mask CD uniformity of 8.0 nm (3σ)
-on contacts and vias in the 130 nm year at 4× magnification;[^itrs-03]
-no public source gives the via-4 plate's specification.
+on contacts and vias in the 130 nm year at 4× magnification.[^itrs-03]
+No public source gives the via-4 plate's specification.
 
-**Resist and tone.** On the KrF reading the resist is a positive
+### Resist and tone
+
+On the KrF reading the resist is a positive
 chemically amplified resist,[^ito-2005] and the plate is dark-field:
 clear squares in an opaque field (inference from drawing the holes).
 Neither is published. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the holes are etched
-at {ref}`VIM4E <step-160>` through the cap oxide and inter-metal oxide,
-on the {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
-class, down to the metal-4 cap and the `cap2m` plates, and the resist is
-stripped within that step; the next step, {ref}`WTIAL5 <step-161>`,
-deposits the metal-5 stack that the step page reads as filling the
-holes.
+### Overlay and alignment
 
-**Overlay.** Metal 4 must enclose the via by 0.190 µm (via4.4) and
+Metal 4 must enclose the via by 0.190 µm (via4.4) and
 metal 5 by 0.310 µm (m5.3).[^pdk-periph] If via 4 is a KrF level and
 metal 5 an i-line level, as the machine pages read them, the metal-5
 overlay to via 4 is a matched overlay between classes
 ({ref}`machine-i-line-stepper`).
+
+### Pattern transfer
+
+On the step pages' readings the holes are etched
+at {ref}`VIM4E <step-160>` through the cap oxide and inter-metal oxide,
+on the {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
+class, down to the metal-4 cap and the `cap2m` plates. On the step pages' readings the resist is
+stripped within that step. The next step, {ref}`WTIAL5 <step-161>`,
+deposits the metal-5 stack that the step page reads as filling the
+holes.
 
 (mask-vim4-steps)=
 ## Steps that use this mask
@@ -251,6 +284,8 @@ flag CU means "Rules applicable only to Cu BE flows" and IR "IR drop
 check compering Al database and slotted Cu database for the same product
 (2 gds files) must be clean".[^pdk-periph]
 
+:::{table} The `via4` rules, with the metal-5 enclosure, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | via4.1 | "Min and max L and W of via4" | 0.800 µm |
@@ -263,10 +298,20 @@ check compering Al database and slotted Cu database for the same product
 | via4.irdrop.4 | For more than 100 via4s (CU IR) | 0.8 µm |
 | m5.3 | "via4 must be enclosed by met5 by atleast" | 0.310 µm |
 | x.2 | "Angles permitted on: via3 and via4. Anchors are exempted." | n x 90 deg |
+:::
 
-Table 2 of *Criteria & Assumptions* repeats the size and space as
-`VIM4CD` 0.8 and `VIM4CDSP` 0.8, and gives the unmarked pad via
-`VIPDMCD` 1.2 and `VIPDMCDSP` 1.27.[^pdk-03] The irdrop rules, flagged
+Table 2 of *Criteria & Assumptions* repeats the size and space, and gives the unmarked pad via:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask and the unmarked pad via, all from Table 2
+| Parameter | Published description | Value |
+|---|---|---:|
+| `VIM4CD` | size | 0.8 |
+| `VIM4CDSP` | space | 0.8 |
+| `VIPDMCD` | the unmarked pad via | 1.2 |
+| `VIPDMCDSP` | the unmarked pad via | 1.27 |
+:::
+
+The irdrop rules, flagged
 for copper flows, compare "mcon area pre- and post- Cu conversion" in
 their published wording although they are via-4 rules; the PDK does not
 explain the wording.[^pdk-periph] For the plate, via4.1 to via4.3 are
@@ -275,20 +320,20 @@ via4.1 and via4.2).
 
 ## Related pages
 
-* {ref}`VIM4 <step-159>` and {ref}`VIM4E <step-160>` — the mask step
+* **Steps.** {ref}`VIM4 <step-159>` and {ref}`VIM4E <step-160>` — the mask step
   and the via etch; {ref}`WTIAL5 <step-161>` — the metal that follows.
-* {ref}`mask-mm4` and {ref}`mask-mm5` — the metal masks below and above,
-  whose lines must enclose the vias.
-* {ref}`masks-index` — every mask's PDK entry, plates, renders and the
-  mask-type record for vias 2–4.
-* {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
-  exposure class the step page assigns and its alternative.
-* {ref}`machine-plasma-etcher-dielectric` — the etch class that
-  transfers the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
+  exposure class the step page assigns and its alternative.
+  {ref}`machine-plasma-etcher-dielectric` — the etch class that
+  transfers the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-mm4` and {ref}`mask-mm5` — the metal masks below and above,
+  whose lines must enclose the vias.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates, renders and the
+  mask-type record for vias 2–4.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
@@ -355,7 +400,9 @@ via4.1 and via4.2).
 
 ## Open questions
 
-* The "Sheet4" codes are not defined in the sheet; the binary and 248 nm
+* The "Sheet4" codes are not defined in the sheet.
+
+  The binary and 248 nm
   readings rest on common abbreviations, the 4× reading is less certain,
   and the laser-written and wet-etched reading of `LSR` and `WET` less
   certain still. The tab does not say to which runs the type applies or

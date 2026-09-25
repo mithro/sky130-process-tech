@@ -750,5 +750,33 @@ The sibling of nsdm; the same treatment throughout.
 * **Over the caps after the pass:** "The VIM3 page reads the PDK's cross-section …" (57 by the script,
   three quotations), the capm sentence (52, three quotations), the Exposure-class formula sentence and
   the flag legend (60, quotations); three cells. Before → after: paragraphs 14 → 0, items 1 → 0,
-  sentences 18 → 4, cells 3 → 3.
+  sentences 18 → 3, cells 3 → 3.
+* **Content problems for the owner:** none found.
+
+### 18. vim4 — done
+
+* **Rules applied.** R-INTRO (184 → 50 words); R-PARAMS (the four Table 2 parameters, the pad-via pair
+  included as the base names it, three columns with the table in the caption); R-CAPTION (rule table,
+  parameter table); R-PARA, R-SENTENCE; R-RELATED; R-H3 (Exposure class, Mask errors and mask type,
+  Resist and tone, Overlay and alignment, Pattern transfer; the H3 "The mask-type record" was already
+  there).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer". It
+  names "the machine pages", not another passage.
+* **Intro.** Kept the first sentence up to its colon and the whole reading (33 words). "It is one of three
+  masks …, the only one of the three whose type reads as a binary mask, and that type is the reason …"
+  → "The mask is one of three masks …, and the only one … . That type is the reason …" at the top of
+  the body.
+* **Other splits.** "the VIM4 page therefore describes the `VIM4` level" split off after the three
+  markers, which support the `masks.csv`, Table 2 and rule facts before it; the `BIM` dash pair (the
+  TSMC patent title) made its own sentence after the reading, `photronics-abr` staying with "mask
+  makers … use those abbreviations" and `pat-bim-tsmc` going with the patent; the 90-word mask-maker
+  sentence split at its semicolons into three, each with its own marker; the first Open question given a
+  lead sentence and a continuation paragraph.
+* **Declared additions** (`--allow-added markers,numbers,identifiers`): markers `mask-renders` (render
+  sentence), `steps-sheet` ×2 (the MPW-5 bullet and the Sheet4 sentence, each split at its semicolon);
+  number `2` and identifiers `metal-5`, `via4` (captions).
+* **Marker coverage.** Flags read: every flagged sentence had no marker of its own in the base or is one
+  of the splits above.
+* **Over the caps after the pass:** the function-line sentence (49 by the script, three quotations).
+  Before → after: paragraphs 9 → 0, items 1 → 0, sentences 10 → 1, cells 0 → 0.
 * **Content problems for the owner:** none found.
