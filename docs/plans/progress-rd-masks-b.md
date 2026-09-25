@@ -679,3 +679,41 @@ The sibling of nsdm; the same treatment throughout.
   cells (quick facts and two quoted rule cells). Before → after: paragraphs 12 → 0, items 2 → 0,
   sentences 15 → 3, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 16. vim2 — done
+
+* **Rules applied.** R-INTRO (181 → 54 words); R-PARAMS (eight rows: `VIM2CD`/`VIM2CDSP` for each of
+  the three variants and the two copper parameters; all Table 2, named in the caption); R-CAPTION (rule
+  table, parameter table); R-PARA, R-SENTENCE; R-LIST (the two summary tables); R-RELATED; R-H3
+  (Exposure class, Mask errors, Side lobes and resist, Substrate and tone, Overlay and alignment, Pattern
+  transfer; the H3 "The mask-type record" under `## Plates and reticle sets` was already there).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **Intro.** Kept the first sentence up to its colon and the whole reading (38 words). "It is the first
+  of the two masks …; the masks index reads that type …" → "The mask is the first …. The masks index
+  reads that type …" at the top of the body.
+* **Dash pairs made sentences (R-SENTENCE 1).** "Rules via2.1b to via2.1e allow sets of square sizes —
+  drawn from 0.2, 0.280, 0.8, 1.2 and 1.5 µm — inside `areaid.mt`, …" → "… sizes inside `areaid.mt`,
+  … . The sizes are drawn from 0.2, 0.280, 0.8, 1.2 and 1.5 µm.[^pdk-periph]"; "because a mask maker
+  uses the abbreviation — Photronics' product page states "…" — and reads the digit 4 …" → the reading
+  first, then "Photronics' product page states "…".[^photronics-abr]" as its own sentence (the marker
+  goes with the quotation it supports). Both reorderings are the cause of two `number_order` LOSTs
+  (('1', '1', '0.2', …) and ('248', '248', '193', '6', '4', '4')): the same numbers, the dash material
+  now after its sentence.
+* **Declared additions** (`--allow-added markers,numbers,quotes,identifiers`): markers `pdk-periph` ×5
+  (the function-line sentence split from Table F4; the sizes sentence and "All five carry flag AL …",
+  split from the via2.1b–f sentence; the capm sentence split before "The VIM2 page sets the "met2/capm"
+  landing aside"; the second copper Value cell), `pdk-06` (that capm split), `pdk-errors` (Error
+  Messages "describes"), `mask-renders` (render sentence), `steps-sheet` ×3 (Plate number split twice;
+  the Sheet4 sentence split at its semicolon); numbers `2` ×8 and quotes and identifiers (the parameter
+  table's repeated row names, parameter names and the caption), `560` ("It falls between" → "`560`
+  falls between", continuation paragraph).
+* **LOST lines that are not losses:** the third `number_order` line is the parameter table (0.2, 0.2,
+  0.28, 0.28, 0.8, 0.8, 0.21, 0.18 in the base order; via2.11 and via2.12 in their cells).
+* **Marker coverage.** Flags read: each flagged sentence either had no marker of its own in the base or
+  is one of the splits above.
+* **Over the caps after the pass:** "The mask is the first of the two masks …" (47), "The mask defines
+  neither …" (49, four roles), the capm sentence (57 by the script, four quotations), the metadata
+  sentence (48), the Exposure-class formula (48) and the flag legend (60, quotations); three cells (quick
+  facts, a quoted irdrop cell). Before → after: paragraphs 15 → 0, items 1 → 0, sentences 19 → 6, cells
+  3 → 3.
+* **Content problems for the owner:** none found.
