@@ -16,10 +16,6 @@ too rough for lithography to focus on and too steep for metal to cover.
 
 ## What this class of step does
 
-Chemical-mechanical planarisation ({term}`CMP`) makes the wafer flat
-again. Every deposited film copies the topography beneath it, so after
-a few layers the surface would become a landscape of hills and valleys
-too rough for lithography to focus on and too steep for metal to cover.
 CMP presses the wafer face-down against a rotating polishing pad
 flooded with a slurry of fine abrasive particles in a chemically active
 liquid. The high points are removed faster than the low points until the
@@ -93,7 +89,7 @@ NH₄OH.[^cook-1990][^rev-02]
 showed that an oxidiser in the slurry (originally potassium
 ferricyanide, later hydrogen peroxide or ferric nitrate) forms a thin,
 soft WO₃ layer that the abrasive removes, exposing fresh
-metal.[^kaufman-1991] The rate is set by oxidation and the
+metal, so that the rate is set by oxidation and the
 {term}`selectivity` to oxide by the slurry's acidity.[^kaufman-1991]
 
 **The pad.** The pad — a porous polyurethane, "porous polymeric
@@ -170,33 +166,20 @@ values.[^steigerwald-1997][^zantye-2004]
 
 ## Typical equipment
 
-**Polishers.** Applied Materials Mirra ("the Company announced its
-entry into the CMP market with the Mirra CMP in December 1995. The
-Mirra CMP system features a unique three-station, four polishing head
-design")[^amat-1997] and Mirra Mesa with integrated cleaner
-(1999);[^amat-mesa-1999] Ebara F-REX 200 (the current F-REX200M2
-"polishes 200 mm wafers with high k-materials and aluminium
-layers");[^ebara-frex] IPEC/Westech 372 and 472 and the SpeedFam-IPEC
-Auriga; Strasbaugh 6DS-SP; Lam Teres.
-
-**Post-CMP cleaners.** OnTrak (later Lam) DSS-200 double-sided brush
-scrubbers; Applied Mesa integrated cleaner.
-
-**Metrology.** {ref}`Optical film-thickness mappers <machine-film-thickness-metrology>` (Nanometrics NanoSpec,
-Rudolph, KLA-Tencor), {ref}`stylus profilers <machine-cross-section-sem-profilers>` for dishing and step height
-(KLA-Tencor HRP), and {ref}`unpatterned-wafer defect inspection <machine-defect-inspection>` (KLA-Tencor
-Surfscan) for scratches.
-
-:::{table} The equipment classes above, for scanning; models, dates and quotations are in the paragraphs above
-
-| Tool class | Representative models | Note |
-|---|---|---|
-| {ref}`Polishers <machine-cmp-polisher>` | Applied Materials Mirra, Mirra Mesa; Ebara F-REX; IPEC/Westech; SpeedFam-IPEC Auriga; Strasbaugh; Lam Teres | see above |
-| {ref}`Post-CMP cleaners <machine-post-cmp-cleaner>` | OnTrak (later Lam), Applied Mesa | double-sided brush scrubbers |
-| {ref}`Optical film-thickness mappers <machine-film-thickness-metrology>` | Nanometrics NanoSpec, Rudolph, KLA-Tencor | — |
-| {ref}`Stylus profilers <machine-cross-section-sem-profilers>` | KLA-Tencor | for dishing and step height |
-| {ref}`Unpatterned-wafer defect inspection <machine-defect-inspection>` | KLA-Tencor Surfscan | for scratches |
-:::
+* **{ref}`Polishers <machine-cmp-polisher>`**: Applied Materials Mirra ("the Company announced its
+  entry into the CMP market with the Mirra CMP in December 1995. The
+  Mirra CMP system features a unique three-station, four polishing head
+  design")[^amat-1997] and Mirra Mesa with integrated cleaner
+  (1999);[^amat-mesa-1999] Ebara F-REX 200 (the current F-REX200M2
+  "polishes 200 mm wafers with high k-materials and aluminium
+  layers");[^ebara-frex] IPEC/Westech 372 and 472 and the SpeedFam-IPEC
+  Auriga; Strasbaugh 6DS-SP; Lam Teres.
+* **{ref}`Post-CMP cleaners <machine-post-cmp-cleaner>`**: OnTrak (later Lam) DSS-200 double-sided brush
+  scrubbers; Applied Mesa integrated cleaner.
+* **Metrology**: {ref}`optical film-thickness mappers <machine-film-thickness-metrology>` (Nanometrics NanoSpec,
+  Rudolph, KLA-Tencor), {ref}`stylus profilers <machine-cross-section-sem-profilers>` for dishing and step height
+  (KLA-Tencor HRP), and {ref}`unpatterned-wafer defect inspection <machine-defect-inspection>` (KLA-Tencor
+  Surfscan) for scratches.
 
 ## Typical consumables
 
@@ -216,7 +199,7 @@ Surfscan) for scratches.
 
 ## Steps in this category
 
-:::{table} The twelve CMP steps of the flow, by step number
+:::{table} The twelve CMP steps of the flow, by step number; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
