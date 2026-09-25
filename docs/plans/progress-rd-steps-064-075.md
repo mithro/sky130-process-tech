@@ -808,3 +808,5 @@ One commit each.
   **Channelling.** the pronoun read as channelling's); 075 "Its rule Xj" → "The roadmap's rule Xj"; 069
   "characterised it" → "characterised resist outgassing" (after the Lee dash pair moved, "it" pointed at
   the resist film). Paragraphs re-wrapped; `check_preserved` output unchanged on all three pages.
+* **L1, 067.** "The patent adds:" → "The second patent adds:" (the sentence before quotes two patents; the
+  quotation is `pat-strip-mosel`'s, the second one named). `check_preserved` output unchanged.

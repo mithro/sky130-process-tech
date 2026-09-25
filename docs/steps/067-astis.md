@@ -108,10 +108,11 @@ prevent popping problem".[^pat-strip-mosel]
    carbonized crust that is difficult to remove"[^pat-strip-tsmc] and a
    conventional "high temperature (>200° C.) dry ashing" lets the volatile
    bulk "build up pressure beneath the implant-hardened surface
-   layer",[^pat-strip-mosel] the first stage runs cool. The patent adds:
-   "removed by oxygen and nitrogen/hydrogen plasma in a low-temperature
-   (<220° C.) environment".[^pat-strip-mosel] The cool stage runs until the
-   crust is opened, after which a hotter bulk stage finishes the film.
+   layer",[^pat-strip-mosel] the first stage runs cool. The second patent
+   adds: "removed by oxygen and nitrogen/hydrogen plasma in a
+   low-temperature (<220° C.) environment".[^pat-strip-mosel] The cool stage
+   runs until the crust is opened, after which a hotter bulk stage finishes
+   the film.
 
    Fujimura's group showed why nitrogen[^fujimura-1990]
    and water vapour[^fujimura-1991] are added to the oxygen for
