@@ -84,6 +84,13 @@ The 36 lithography masks that pattern the wafer.
 How to read a diagram: what is to scale, what is a reading, and what "Not to scale" means.
 :::
 
+:::{grid-item-card} History
+:link: history/index
+:link-type: doc
+
+The Cypress process technologies that came before S8 — fabs, products, stackups and how they relate to SKY130.
+:::
+
 ::::
 
 ## The flow in 13 modules
@@ -148,6 +155,7 @@ references/index
 ```{toctree}
 :maxdepth: 1
 :caption: History
+:hidden:
 
 history/index
 ```

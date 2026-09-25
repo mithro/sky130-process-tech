@@ -39,7 +39,7 @@ Owner rule since 2026-09-25: at most FOUR sub-agents running at any time. Everyt
 queue below; a stopped agent is restarted by giving a fresh agent the same task text plus "read the
 progress file docs/plans/progress-<name>.md and continue from where it stops".
 
-Running: rd-steps-014-034, rd-preserved2, plus the queue resumed in order
+Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window allows
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
@@ -47,14 +47,13 @@ Running: rd-steps-014-034, rd-preserved2, plus the queue resumed in order
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 
-1. `topic/rd-preserved2` — check_preserved.py: fence skipping, numbered bold labels, tabulation regroups (Sonnet; reads the overview review's section C for the exact fixes).
 2. `topic/rd-inforce-sonos` — in-force patent content in the open on steps 037–042 (Sonnet; rulings in `tmp/reviews/rd-figures-s3s4.md` "Existing pages").
 3. `topic/rd-figures-s5` — fix round except the slice rework (Opus; then, after S3/S4 merges and a rebase, redo the series start from the merged `series-gates.yaml`).
 4. `topic/rd-indexes` — W3 batch 1: the three index pages (Sonnet).
 5. `topic/rd-links2` — second check of the dead generated-page links, `archive_url` in the datasets (Sonnet; cache under its worktree tmp/).
 6. Reviews as branches finish: rd-site (verify fixes), rd-figures-s3s4 (verify), rd-steps-014-034, rd-indexes, rd-links2, rd-preserved2, rd-inforce-sonos, rd-figures-s5.
 7. Next batches after those: W2 035–047 (after the S3/S4 figures merge), 048–063 (after S5), figure series S6–S11, W3 class-page batches (machines, materials, masks, categories), the final term-link pass on main.
-8. `topic/cypress-history` (another session, `sky130-process-tech-54`): merges only when told, after its own review; it adds a landing-page card after rd-site merges.
+8. `topic/cypress-history`: merged 2026-09-25 (two review rounds by its own session; landing-page card added by the coordinator). Its two tool follow-ups: chain-layout arrow floating below a branch box and dashed hedged arrows in `gen_figures.py`; smart dashes turning `--` into an en dash in autolink text.
 
 Merge order when several are ready: tooling first, then site pages, then content batches; rebase +
 fast-forward only; a batch's rebase conflicts in scripted regions are resolved by re-running the script.
