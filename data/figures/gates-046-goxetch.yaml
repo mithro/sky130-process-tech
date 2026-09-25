@@ -1,0 +1,31 @@
+id: gates-046-goxetch
+kind: xsection
+page: docs/steps/046-goxetch.md
+series: series-gates.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step photoresist covers the
+  left-hand part of the drawing and a thick oxide film covers the right-hand active area in the
+  window, over a hatched band. After it the resist is gone, the thick oxide remains on the left-hand
+  active area, and the right-hand active silicon is bare.
+caption: >-
+  Before, the LVOM resist with the thick oxide still in its window; after, the oxide gone from the
+  1.8 V area down to the silicon, the resist gone, and the thick oxide kept on the 5 V area. The
+  etch is drawn as stopping at the silicon and leaving the trench oxide as it is; the undercut at
+  the resist edge and any loss of trench oxide are not public and are not drawn. The resist is
+  drawn stripped because this page treats the strip and clean as part of this step. The NMOS
+  channel implant of NCHI is unchanged. The liner oxide is drawn faded. Not to scale.
+arrow:
+  title: "GOXETCH, step 046"
+  note: "The thick oxide is etched out of the LVOM window to bare silicon; then the resist is stripped and the wafer cleaned."
+panels:
+  - state_after: "045"
+    title: "Before: the implanted LVOM window (step 045)"
+    dim_layers: [liner]
+    hide_labels: [sub]
+    show_ions: false
+  - state_after: "046"
+    title: "After: bare silicon on the 1.8 V area, thick oxide kept on the 5 V area"
+    dim_layers: [liner]
+    hide_labels: [sub]
+    highlight: {where: [[188, 268]]}

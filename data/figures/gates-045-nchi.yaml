@@ -1,0 +1,31 @@
+id: gates-045-nchi
+kind: xsection
+page: docs/steps/045-nchi.md
+series: series-gates.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step photoresist covers the
+  left-hand part of the drawing and the right-hand active area, still covered by thick oxide, lies
+  in a window. After it arrows come straight down into the window and a hatched band lies at the
+  surface of the right-hand active silicon, under the oxide; the silicon under the resist is
+  untouched.
+caption: >-
+  Before, the LVOM window over the 1.8 V area; after, a beam into the window and the implanted dose
+  drawn as a thin band at the surface of the active silicon, under the thick oxide it passes
+  through. On this page's reading, which is an inference, this dose sets the threshold of the 1.8 V
+  NMOS; the band is hatched with no colour of its own, and the species, energy, dose and
+  depth are not public. The page assumes the textbook 7° tilt, but SKY130's tilt is not public, so
+  the arrows are drawn vertical. This is the only channel implant drawn in this slice. The fill oxide is labelled in the upper
+  panel only, and the liner oxide is drawn faded. Not to scale.
+arrow:
+  title: "NCHI, step 045"
+  note: "Ions are implanted through the LVOM window and the thick oxide into the low-voltage NMOS channel; the resist stops them elsewhere."
+panels:
+  - state_after: "044"
+    title: "Before: the LVOM window (step 044) over the 1.8 V area"
+    dim_layers: [liner]
+    hide_labels: [sub]
+  - state_after: "045"
+    title: "After: an implanted band at the surface of the 1.8 V area"
+    dim_layers: [liner]
+    hide_labels: [sub, fox]

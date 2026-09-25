@@ -26,6 +26,14 @@ and the wafer cleaned for the thin gate oxidation at
 process described on the {ref}`category-oxidation` page: "a mask and wet
 etch to strip it from the low-voltage active areas".
 
+:::{figure} /_static/figures/gates-046-goxetch.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step photoresist covers the left-hand part of the drawing and a thick oxide film covers the right-hand active area in the window, over a hatched band. After it the resist is gone, the thick oxide remains on the left-hand active area, and the right-hand active silicon is bare.
+:width: 560px
+:name: fig-gates-046-goxetch
+
+Before, the LVOM resist with the thick oxide still in its window; after, the oxide gone from the 1.8 V area down to the silicon, the resist gone, and the thick oxide kept on the 5 V area. The etch is drawn as stopping at the silicon and leaving the trench oxide as it is; the undercut at the resist edge and any loss of trench oxide are not public and are not drawn. The resist is drawn stripped because this page treats the strip and clean as part of this step. The NMOS channel implant of NCHI is unchanged. The liner oxide is drawn faded. Not to scale.
+:::
+
 Both Cypress flows describe the operation, and both patents are shown as
 in force: they give the etchant, the order of etch, strip and clean, and
 what the clean must not attack. The two passages are in the collapsed

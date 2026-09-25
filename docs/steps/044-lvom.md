@@ -22,6 +22,14 @@ then stripped ({ref}`GOXETCH <step-046>`), so that the thin 1.8 V gate
 oxide can be grown on bare silicon at {ref}`LVGOX <step-047>` while
 the covered regions keep their thick oxide.
 
+:::{figure} /_static/figures/gates-044-lvom.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thick oxide film covers both active areas either side of an oxide-filled trench. After it a block of photoresist covers the left-hand active area and the left half of the trench, and the right-hand active area lies in an open window, the resist edge standing on the trench oxide.
+:width: 560px
+:name: fig-gates-044-lvom
+
+Before, the thick oxide on both active areas; after, resist over the 5 V area and a window over the 1.8 V area, with the resist edge on the field oxide between them. That the window opens the low-voltage transistors is this page's reading, from the inference that the reticle is the complement of the drawn thick-oxide layer `hvi`.[^pdk-periph] The memory cells are not in this slice: whether this mask also covers their ONO islands is not public. The liner oxide is drawn faded. Not to scale.
+:::
+
 The PDK lists "Low Voltage Oxide, LVOM" as used in SKY130,[^pdk-05]
 with the generated mask layer `clvom` (GDS 46:0, "Low Voltage oxide
 mask") and a drawing purpose at 45:20.[^pdk-06] In the published rule

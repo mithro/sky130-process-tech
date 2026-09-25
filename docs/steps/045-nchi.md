@@ -27,6 +27,14 @@ device `nfet_01v8_lvt` is made by the separate {ref}`LVTNI <step-015>`
 implant, and the PDK says its cross-section "is identical to the std
 NMOS FET except for the VT adjust implants".[^pdk-07]
 
+:::{figure} /_static/figures/gates-045-nchi.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step photoresist covers the left-hand part of the drawing and the right-hand active area, still covered by thick oxide, lies in a window. After it arrows come straight down into the window and a hatched band lies at the surface of the right-hand active silicon, under the oxide; the silicon under the resist is untouched.
+:width: 560px
+:name: fig-gates-045-nchi
+
+Before, the LVOM window over the 1.8 V area; after, a beam into the window and the implanted dose drawn as a thin band at the surface of the active silicon, under the thick oxide it passes through. On this page's reading, which is an inference, this dose sets the threshold of the 1.8 V NMOS; the band is hatched with no colour of its own, and the species, energy, dose and depth are not public. The page assumes the textbook 7° tilt, but SKY130's tilt is not public, so the arrows are drawn vertical. This is the only channel implant drawn in this slice. The fill oxide is labelled in the upper panel only, and the liner oxide is drawn faded. Not to scale.
+:::
+
 The implant passes through the thick gate oxide grown at
 {ref}`GOX100 <step-043>` — thinner than the PDK's 110 Å finished
 thick-oxide figure[^pdk-hv] by an amount that is not public — and through

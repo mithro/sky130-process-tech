@@ -1,0 +1,37 @@
+id: gates-043-gox100
+kind: xsection
+page: docs/steps/043-gox100.md
+series: series-gates.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other, each showing two active areas of P-type
+  silicon either side of an oxide-filled trench that stands proud of them. Before the step the
+  silicon of both active areas is bare. After it a thick oxide film covers both active areas, and
+  the filled trench is unchanged.
+caption: >-
+  Before, bare silicon on both active areas; after, the thick gate oxide on both. The slice runs
+  through logic: a 5 V NMOS area (left) and a 1.8 V NMOS area (right), both in the P-well. The
+  silicon is drawn bare because this page has the logic silicon cleared at ONOME. The PDK gives the
+  finished thick oxide as 110 Å;[^pdk-hv] the oxide grown here is thinner than that by an amount
+  that is not public, and neither is drawn to scale. The memory cells and their ONO islands are not
+  in this slice; what this oxidation does to the islands is not public. The channel implants of
+  the wells module are not drawn, and the liner oxide is drawn faded. Not to scale.
+arrow:
+  title: "GOX100, step 043"
+  note: "The wafer is oxidised in a furnace, growing a gate-quality oxide on the silicon of every active area."
+panels:
+  - state_after: "042"
+    title: "Before: the logic silicon bare after ONOME (step 042); 5 V left, 1.8 V right"
+    dim_layers: [liner]
+    hide_labels: [sub]
+  - state_after: "043"
+    title: "After: the thick gate oxide on both active areas"
+    dim_layers: [liner]
+    hide_labels: [sub]
+    highlight: {where: [[0, 80], [188, 268]]}
+    labels:
+      gox:
+        title: "Thick gate oxide"
+        note: "110 Å when finished; the part grown here is not public"
+        basis: public
+        cite: pdk-hv
