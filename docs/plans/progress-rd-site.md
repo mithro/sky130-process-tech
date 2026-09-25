@@ -361,4 +361,84 @@ touched, immediately before writing this note.
     `0-9`/`0–9` numbers from the new heading). Not fixed here per the Never-list rule against
     touching a checker; flagging for the coordinator in case `check_preserved.py`'s `ROLE_RE`
     should learn to skip role-shaped text inside an inline code span (e.g. require the character
-    before `` \{ `` not be a backtick, or mask code spans first).
+    before `` \{ `` not be a backtick, or mask code spans first). **Note for the
+    `check_preserved.py` branch** (per coordinator, not fixed here): mask inline code spans
+    before matching `ROLE_RE` so a literal `` `{term}` `` shown as text is never read as a role
+    use.
+
+## Review round (`tmp/reviews/rd-site.md`, "approve with fixes"): H1, H2/M1/M2/M4, M3
+
+**H2 + M1/M2/M4 — term-link pass reverted out of this branch.** The seven `tools/link_terms.py`
+site-wide commits were reverted with seven `git revert --no-edit` commits (history not
+rewritten); `git diff 2dbe9493` for every affected directory is empty, confirming a clean
+revert. `tools/link_terms.py` itself stays on the branch, rewritten for a later single pass on
+`main` after the in-flight content batches merge:
+- `SKIP_TERMS` extended with the review's wrong-sense terms (`passivation`, `extension`,
+  `erosion`, `notching`, `reflow`, `footing`, `SPE`, `SPC`) plus one this branch's own sampling
+  found (`punch-through`, see below).
+- `CONTEXT_SKIP` added: regex guards rejecting a match when the surrounding text shows the
+  term is part of a longer token, not the glossary sense — `ICP` before `-MS`, `DUV` before
+  `-series`/`-Series`, `TCP` next to a 3–5 digit model number, `overlay` after a modal verb or
+  before certain determiners.
+- Paragraph cap: at most 3 new links per paragraph (`paragraph_starts`/`paragraph_of`); a term
+  over the cap is deferred, not dropped — it can still link at its next occurrence in a later
+  paragraph.
+- Per-page opt-out marker `<!-- link_terms: skip <term> -->` (`PAGE_SKIP_RE`/
+  `page_skip_terms`) so a hand-reverted link stays reverted on a re-run.
+- `--report` mode: prints every proposed link with ~90 chars of context, writes nothing.
+- 35 selftests (`--selftest`), covering every item above plus two pre-existing tests whose
+  assertions needed updating for the `apply_links()` 4-tuple return (start/end added to support
+  `--report`).
+
+**Wrong-sense measurement** (scratch, not committed): `--report` over all of `docs/index.md`,
+`docs/overview/`, `docs/steps/`, `docs/categories/`, `docs/machines/`, `docs/materials/`,
+`docs/masks/` gave 1178 proposed links before the `punch-through` fix. A 100-line sample (seed
+`20260925`, the review's own seed) found 99 correct and 1 wrong-sense: `docs/steps/153-cap2me.md`
+linking "a fluorine-rich punch-through would thin the cap" (etch chemistry, not the glossary's
+source/drain leakage sense). Checked all 10 total `punch-through` occurrences in the report: 9
+are the correct transistor/design-rule sense (including "punch-through spacing" on several mask
+pages, a design-rule name for the same electrical effect), 1 is the etch-context case above.
+Added `punch-through` to `SKIP_TERMS`. Re-ran `--report`: 1168 links (down 10), no line proposes
+`punch-through` any more (`grep "'punch-through'"` against the new report is empty). Drew a
+second 100-line sample with the same seed from the new report; all 100 read as correct-sense on
+inspection. **Combined result: 1 wrong-sense in 200 sampled links before the fix, 0 in 200 after
+— comfortably under the coordinator's 1-in-200 bar.** Both report/sample files are scratch,
+under `tmp/checklogs/`, not committed.
+
+**H1 — PAT-TIW-HITACHI restored; `fix_inventory_entries.py` learns abbreviations.** The entry's
+original sentence order (Tier line before "Also used on", "used on" clauses interleaved with
+their sentences) had been scrambled by the tool's earlier sentence-boundary regex treating
+`A. Hiraki` as two sentences ("A." then "Hiraki)…"). Restored the entry by hand from
+`tmp/inv-orig.md` (a pre-anchor backup already in the worktree) and re-derived the fix instead
+of patching around the bad boundary. `SENTENCE_END` now chains negative lookbehinds against a
+list of known abbreviations/initials (`al`, `Inc`, `Vol`, `No`, `pp`, `Fig`, `etc`, and a general
+single-capital-letter initial pattern) so `A. Hiraki`, `et al.`, `Inc.`, `Vol.`, `no.`, `pp.` and
+`Fig.` no longer end a sentence early. Added a selftest reproducing the exact PAT-TIW-HITACHI
+text and asserting the old bug's stranded-fragment signature (`"(A.\n"` / `"\nHiraki)"`) is
+gone. Regenerated the whole inventory fresh from `tmp/inv-orig.md` with the fixed tool; `--check`
+now reports "no change: 1719 of 1720 entries already anchored and formatted" on a second run
+(idempotent). `check_preserved.py --base 2dbe9493 --allow-added refs,numbers,hedges` on the
+regenerated inventory still shows only the two previously-documented `number_order` false
+positives, unchanged.
+
+**M3 — `Tier:`/"used on" lines render as separate lines.** Relocated sentences are now joined
+with a trailing two-space hard break (`LINE_BREAK = "  \n"`), not a run-on space. A backslash
+hard break (`"\\\n"`) was tried first and confirmed to render identically (`<br />` in the built
+HTML), but rejected: `check_preserved.py`'s sentence splitter
+(`_SENTENCE_SPLIT_RE = r'(?<=[.!?])\s+(?=[A-Z0-9"])'`) requires `.!?` immediately before the
+whitespace run, and a trailing backslash sits between the period and the whitespace, so the
+lookbehind never matches and the splitter reads an entire multi-sentence paragraph as one unit
+— causing a large false `number_order` blow-up. Two trailing spaces avoid this (the period is
+still immediately followed by whitespace) and were verified against `check_preserved.py`'s
+regex directly, and against a scratch Sphinx build showing identical `<br />` output. Confirmed
+in the real build: `grep -A5 'id="src-pdk-03"' tmp/_build/html/references/public-sources.html`
+shows `<br />` correctly separating the relocated `Tier:`/"used on" lines from their neighbours.
+
+Two idempotence bugs were found and fixed while adding this (surfaced only by a new
+re-run/idempotence selftest, not explicitly requested but needed so a future coordinator re-run
+of the tool is safe): `entry_spans()`'s boundary regex didn't recognise an existing
+`(src-...)=` anchor line as a stopping point (only headings), so a second run merged the next
+entry's anchor into the previous entry's trailing text; and the sentence-removal
+boundary-widening logic was two-sided and mishandled an already-hard-broken boundary, causing
+drift across repeated runs. Both fixed; `fix_inventory_entries.py` selftest count is now 16, all
+passing (`--selftest` → `selftest OK`).
