@@ -43,7 +43,6 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-indexes` | W3 batch 1 (machines, materials, masks indexes): Opus review running (`tmp/reviews/rd-indexes.md`) | Opus | in review |
 | `topic/rd-figures-s6` | W1c series S6 tips/halos/spacers/S-D (064–088): written; Opus review running | Opus | in review |
 | `topic/rd-steps-035-047` | W2 batch 3 (SONOS + gate oxides) | Sonnet | running since 2026-09-25 |
 | `topic/rd-machines-a` | W3 batch 2: machine class pages 1–15 (alphabetical) | Sonnet | running since 2026-09-25 |

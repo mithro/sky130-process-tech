@@ -66,6 +66,10 @@ In-force dropdown titles stay as they are (owner's wording).
 
 ### W3 — machine, material, mask, category pages and their indexes
 
+Status: the three index pages (machines cards + two-column lookup, materials per-material tables, masks
+"Find a mask" table, methodology moved below the lookups, captions) merged 2026-09-25 after review and a
+fix round. Class-page batches follow.
+
 B1 step tables (generated), B3 index reorder, B4 model tables, B5 quick facts, B6 entry tables, B7 category
 comparisons and links to material pages, B8 mask H3s (after W0e), B9 step-link text (scripted), B12–B15.
 
