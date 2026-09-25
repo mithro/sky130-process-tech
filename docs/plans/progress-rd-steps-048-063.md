@@ -539,6 +539,37 @@ table cells > 25: 0. After: see the batch summary at the end.
   to another clause; labels).
 * **Caps**: para > 100 2 → 0; item > 60 5 → 0; sentence > 45 7 → 2 (above).
 
+### 059 POC — done
+
+* **R-H3.** Not applied: the passage after the figure is 78 words (an H3 needs ≥ 120).
+* **Lead.** First sentence (39 w) split at ", completing the gate stack" → "It completes the gate stack
+  …" (R-GLANCE step 8; `[^pdk-03]` stays on the 0.18 µm, "(thin, we infer)" stays on the film). Lead
+  split into two paragraphs before "The oxide is not a device layer" (a new subject).
+* **R-CATEGORY.** Classification sentence alone; "What is specific to it is that …" is its own label
+  (step 3), split at its colon (46 → 15 + 31 w).
+* **R-SENTENCE / R-PARA step 4.** "Protecting the resist from the nitride" (141 w, a 58-word first
+  sentence): split at the colon; the em-dash pair (the Hinsberg measurement) becomes its own sentence
+  after the claim (R-SENTENCE step 1): "The airborne bases are amines and amides such as the
+  N-methylpyrrolidone whose uptake Hinsberg et al. measured at the 10 ppb level.[^hinsberg-1992]"
+  ("The airborne bases are" added as subject + verb; the marker stays on the measurement, where the
+  base had it). Lead + two continuation paragraphs. "Completing an anti-reflective stack" (67 w, a
+  53-word sentence): split at the semicolon; the two studies keep their markers. "PECVD TEOS oxide"
+  (68 w): lead + continuation.
+* **R-HEDGE** (italic lead-in), **R-TOOLS** (two tools: head keeps its SkyWater gloss and quotations,
+  the pilot form; grades verbatim under *Tool exists:*, including "the model behind "C1"/"C2" is an
+  inference"), **R-OPENQ** (labels "Deposition method and thickness", "Function of the cap",
+  "Survival to the finished device").
+* **R-RELATED.** Previous/Next split; "Other deposited oxides: FILOX, SPOX, NCAPOX" → `Same category:`
+  (all three are Deposition steps in `docs/steps/index.md`); the P1M/P1ME/NPCM bullet unlabelled.
+* **R-GLANCE.** Does keeps "(thin, we infer)"; Why states the four roles as this reference's
+  inference (Open questions: "Which of the four functions … is inferred"); Public numbers as on 058.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 0.2, quotes
+  "C1", "C2", "poly cap after SPE", hedges "inference", "not public" ×2, "our reading", "we infer",
+  identifiers `C1`, `C2` — all the glance box. No LOST. Declared
+  `markers,numbers,quotes,hedges,identifiers`: clean.
+* **Marker coverage.** 8 flags, all read (the uncited pieces were uncited in the base; labels).
+* **Caps**: para > 100 0 → 0; item > 60 3 → 0; sentence > 45 3 → 0.
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
