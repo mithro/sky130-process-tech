@@ -117,9 +117,8 @@ all ten, each committed separately, each passing the full checker suite and a cl
 SKY130 / Tool classes / Consumable classes / Governing relation), a `Machine class` column on its "Steps
 in this category" table (all steps-table row counts cross-check against the page's own prose count where
 one was given: cmp 12, substrate 1, anneal 7, oxidation 6, test 1, strip 15, implant 25, etch 27,
-deposition 41, lithography 36 — 191 rows total, matching the 171-step flow with the expected
-double-counting where a step's mask, implant and strip halves are each catalogued once on their own
-category page). Six category pages gained at least one R-COMPARE or number-list table beyond the
+deposition 41, lithography 36 — 171 rows total, one per step in the flow, no double-counting).
+Six category pages gained at least one R-COMPARE or number-list table beyond the
 quick-facts table (cmp's existing table gained a caption only; implant, etch, deposition ×3, lithography
 ×2 gained genuinely new comparison/data tables); every new table has an R-CAPTION caption. Roughly 40
 consumables lead-ins were linked to their material-class page across the ten pages; roughly 35
@@ -600,3 +599,38 @@ paragraph above**, so the new table adds zero numbers and cannot create a second
 copy of a number sequence for `check_preserved.py`'s contiguous-run check to trip over. This is
 documented once here rather than repeated on every page's entry below.
 
+
+## Fix round (review): tmp/reviews/rd-categories.md, 2026-09-26
+
+Reviewer verdict was "approve with fixes": nine lost citations, two dropped hedges ("of order" x2) and
+one added hedge ("roughly"), one widened hedge (etch's NSME), one re-worded-into-false claim (implant's
+extension/halo sentence), Machine-class columns stated as flat fact where the body says "not public",
+plus a set of Medium items (dropped role labels/member lists, a duplicate equipment table on cmp, the
+intro sentence appearing on-page three times, implant's table failing the phone test, hand-picked
+consumable/tool-class subsets in the quick-facts rows, two caption/connective wording slips) and several
+Low items. All High and Medium items are fixed, each in its own commit, verified with
+`tools/check_preserved.py --base c79af95b --allow-regrouped` plus a precise `--allow-added` list (no
+LOST anything on any of the ten pages after the fixes) and the full checker suite. Most Low items were
+also fixed opportunistically (substrate/cmp's dropped ", so"; ONO's missing LPCVD furnace class; strip's
+unlinked Water/Hardware and verbless paragraph; anneal's repeated R-LIST labels) where the fix was a
+one-line change; link-text consistency across pages (A6) was left alone as a follow-on since it changes
+no fact and the review marked it Low.
+
+**Rulings accepted and applied:**
+* D1 (caption digits/claims): every table caption added or touched in this round carries no digit and
+  states no fact the page does not already give — confirmed by rereading each one after the fix
+  (deposition's thickness caption now uses the PDK's own "uses for antenna-ratio calculations" wording;
+  lithography's ITRS caption now reads "The ITRS figures listed in the sentence above, one per row").
+* D2 ("Typical chemistry" as an ADDED hedge): kept the R-COMPARE column name as prescribed; the
+  declaration in etch's write-up already matched the ruling (declare, don't rename) before this round.
+* Every steps table now carries a caption clause: `Machine class is the class each step page's "Machines
+  typically used" section names (see the machines index), not a published SkyWater assignment`;
+  lithography's also adds "which mask runs on which tool is not public", and oxidation's explains "A, B".
+
+**For the tool branch** (not actioned here — `check_preserved.py` is a checker, and rule 15/rd-common
+forbid touching it from a content worktree): the reviewer recommends adding `roughly`, `of order`, `of
+the order of`, `typically`, `usually` and `likely` to `check_preserved.py`'s `HEDGES` list. With `of
+order` listed, the tool would have caught implant's two silent losses in the original pass by itself.
+
+**Correction:** the earlier "191 rows total... expected double-counting" line above is wrong; the
+per-page row counts sum to 171, one row per step in the flow, with no double-counting. Fixed in place.
