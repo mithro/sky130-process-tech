@@ -399,7 +399,10 @@ starts with a bold run-in label that introduces a whole passage rather than one 
    mask pages, where the canonical H3s of `check_masks.OPTIONAL_H3` stand in canonical order: a passage
    under a canonical H3 moves, unchanged and within its H2, to meet that order, provided no passage
    refers to another by position ("above", "below", "that step"). Record every such move in the
-   progress file. Otherwise you are only adding H3 lines.
+   progress file. To reach the canonical order, move whichever canonical passage keeps every
+   positional pointer ("above", "below") true — moving a later passage down is as good as moving an
+   earlier one up. Record which moved (review D3, masks batch B: rpm moved Pattern transfer down).
+   Otherwise you are only adding H3 lines.
 3. Use this vocabulary for new H3s on step pages: `### Key numbers`, `### What the public record shows`,
    `### How <quantity> is estimated`, `### Competing readings`.
 4. A bold run-in that introduces a passage becomes an H3 with the same words, minus the trailing
@@ -746,6 +749,8 @@ pages) is an unordered run of sentence-bullets.
 2. Class pages: group under bold labels — Steps (mask pages: the mask step and the steps that transfer,
    strip or depend on its pattern) · Category · Machines · Materials · Masks · Indexes — and keep each
    gloss to ≤ 12 words. Six or more mask links with one shared gloss become a single line.
+   A link to an `overview-*` section takes the label of what its gloss describes; there is no
+   Overview label (review D2, masks batch B).
 3. Drop no link, add no link, change no link text.
 
 **Example** — `docs/machines/duv-krf-stepper.md:333-352`: seven bullets beginning "per-mask pages
@@ -1100,6 +1105,11 @@ words it quotes stay verbatim elsewhere on the page (see the example above).
    reading") stays as prose after the table, unchanged.
 4. Do not merge it into the existing design-rule table: that one is quoted rule text, this one is
    parameters.
+5. If the paragraph qualifies its rows table by table — a clause that belongs to one table's rows and
+   has no cell — make it a list by table instead: one item per table, headed `**Table N** —` (with
+   the table's quoted title in parentheses where the base gives one), each item the base clause word
+   for word with its markers. A qualifier that covers the whole list goes directly under it (review
+   D1, masks batch B; `docs/masks/p1m.md`).
 
 **Example** — `docs/masks/fom.md:331` ("Table 2 of *Criteria & Assumptions* gives the minimum feature
 and space as `FOMCD` 0.14 and `FOMCDSP` 0.27, and Table 7 gives a "MOSFET width" of 0.135 (`FOMSE`) and a
