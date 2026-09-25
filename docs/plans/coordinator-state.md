@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s9a` | W1c S9 first group (118–134): reviewed, fixes done, committing in logical pieces (the megacommit hook refused the first attempt; see rd-common rule 11) | Opus | committing |
+| `topic/rd-figures-s10` | W1c series S10 MiM capacitors (135–140, 150–153) | Opus | running since 2026-09-26 |
 | `topic/rd-categories` | W3 batch 5: category pages — written; Opus review running | Sonnet / Opus | in review |
 | `topic/rd-masks-a` | W3 batch 4: mask pages 1–18 — Opus writer | Opus | writing |
 | `topic/rd-steps-064-075` | W2 batch 5 (tips and halos) — Opus writer | Opus | writing |
