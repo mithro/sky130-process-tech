@@ -1,0 +1,509 @@
+# S5 — the poly gate and poly-resistor module, steps 048-063.
+#
+# One geometry for the whole module; a figure is "the state after step N". Thicknesses are
+# DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# STARTING STATE (an assumption, to be reconciled with the S3/S4 series when both merge).
+# The module starts from the wafer the gate-oxide module leaves after LVGOX (step 047). That
+# series (SONOS and gate oxides, steps 035-047) is being drawn separately, so its state is
+# defined here from what the S4 pages say the wafer looks like after step 047, on the same
+# geometry and with the same material names as series-wells.yaml: steps 002-034 are repeated
+# below exactly as in that file (x runs 0..268; NMOS active 0-80, the filled trench 80-188,
+# PMOS active 188-268), and the changes of steps 035-047 are drawn as one change placed at
+# step 047:
+#   * the pad oxide is gone from both active areas, and each carries the thin gate oxide
+#     grown at LVGOX (step 047). The slice is read, as in series-wells.yaml, as a 1.8 V NMOS
+#     beside a (1.8 V) high-Vt PMOS, so both active areas take the thin oxide; the thick
+#     5 V oxide of GOX100 (step 043) and the ONO islands of the SONOS cells (steps 040-042)
+#     lie outside this slice;
+#   * the field oxide stands only a little above the gate oxide: P1M (step 061) describes
+#     the surface the gate is printed on as planar, with only the small field-oxide step at
+#     each active edge (the PDK gives 0.07 um above the silicon surface under poly, pdk-03).
+#     The step drawn is still much larger than that. No page of this module says how the
+#     earlier, larger step came down, and no mechanism is drawn.
+#
+# Module geometry. One gate line is drawn over the NMOS active area (x 14-38, clear of
+# the steps that the conformal films make near the field edge) and one resistor body over the field oxide (x 108-160), as report D sets out for this series; the
+# PMOS active area gets no gate in this slice. The resistor is read as a 300 ohm/sq P+ poly
+# resistor (res_high_po, the `rpm` layer): RPM (step 049) leaves resist over it, RRPM (step
+# 052) opens a window over it, and URPM (step 055), which opens only over the 2000 ohm/sq
+# `urpm` bodies, leaves resist over the whole slice, so UPRI (step 056) reaches nothing
+# here. The RPM island and the RRPM window (x 100-168) are drawn wider than the body,
+# because `rpm` encloses the resistor (rule rpm.3, cited on the pages).
+#
+# Doping of the gate film. The generator draws a doped region only in single-crystal
+# silicon, and none of P1I, PRI or UPRI has a public depth, so the three implants into the
+# film (steps 050, 053, 056) change no geometry and their figures are one panel each, with
+# the beam; the captions say so.
+#
+# Thicknesses drawn: gate oxide 5 u, gate film 20 u, nitride cap 10 u, oxide cap 8 u,
+# implant-mask resist 38 u, gate-mask resist 30 u (P1M infers a thinner resist than the
+# generic 1.14 um of the assumptions table), re-oxidation 5 u. None of the cap thicknesses
+# is public (the PDK's 0.2 um "poly cap after SPE" is read on the pages as the whole cap
+# stack after the spacer etch), so the caps are not drawn to any ratio with the 0.18 um
+# poly.
+#
+# BFR (step 060) etches the back of the wafer, which is not drawn: it is written as an etch
+# of depth 0 on the front so that the step has a state of its own.
+#
+# The wells and channel implants (series-wells.yaml) are kept in the geometry so that the
+# two series stay one, but the figures of this module hide them: no page of this module
+# discusses them. Series labels carry no numbers.
+note_order: newest
+substrate:
+  material: si-sub
+  depth: 160
+  label:
+    title: "Silicon wafer"
+    basis: public
+ops:
+  # ---- steps 002-013, as in series-isolation.yaml (without the deep N-well, 007-009)
+  - step: "002"
+    op: deposit
+    id: padox
+    material: oxide-thermal
+    t: 5
+    label:
+      title: "Pad oxide"
+      note: "from BOX, step 002; still in place, we infer"
+      basis: inferred
+  - step: "003"
+    op: deposit
+    id: isonit
+    material: nitride
+    t: 24
+    label:
+      title: "Nitride hard mask"
+      basis: public
+  - step: "004"
+    op: deposit
+    id: fomres
+    material: resist
+    t: 38
+    where: [[0, 79.5], [188.5, 268]]
+    label:
+      title: "Photoresist"
+      basis: public
+  - step: "005"
+    op: etch
+    materials: [nitride, oxide-thermal]
+    where_open: fomres
+  - step: "006"
+    op: etch
+    materials: [si-sub]
+    where_open: fomres
+    depth: 56
+    taper_deg: 9
+    corner_r: 9
+  - step: "006"
+    op: strip
+    materials: [resist]
+  - step: "010"
+    op: deposit
+    id: liner
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Liner oxide"
+      basis: public
+  - step: "011"
+    op: deposit
+    id: fox
+    material: oxide-dep
+    fill_to: 60
+    route: over
+    label:
+      title: "Field oxide"
+      basis: public
+  - step: "012"
+    op: planarise
+    stop_on: nitride
+  - step: "013"
+    op: strip
+    materials: [nitride]
+
+  # ---- the low-Vt NMOS mask, implant and strip
+  - step: "014"
+    op: deposit
+    id: lvtnres
+    material: resist
+    t: 38
+    where: [[134, 268]]
+    label:
+      title: "Photoresist"
+      note: "LVTNM, step 014; which regions it opens is not public"
+      basis: public
+  - step: "015"
+    op: dope
+    id: chn
+    material: implant
+    where: [[0, 78]]
+    follow: surface
+    from_surface: 0
+    thickness: 10
+    z: 1
+    label:
+      title: "NMOS channel implant"
+      note: "LVTNI, step 015; its type and extent are not public"
+      basis: public
+  - step: "015"
+    op: ions
+    where_open: lvtnres
+    tilt_deg: 0
+    label_x: 30
+    label:
+      title: "LVTNI implant"
+      note: "species, energy and dose are not public"
+      basis: public
+  - step: "016"
+    op: strip
+    materials: [resist]
+
+  # ---- the N-well mask and the three implants through it
+  - step: "017"
+    op: deposit
+    id: nwres
+    material: resist
+    t: 52
+    where: [[0, 134]]
+    route: top
+    label:
+      title: "Thick photoresist"
+      note: "N-well mask, NWM, step 017; its thickness is inferred"
+      basis: inferred
+  - step: "018"
+    op: dope
+    id: nwell
+    material: well-n
+    where_open: nwres
+    follow: flat
+    y_top: 0
+    y_bot: -112
+    anchor_y: -88
+    label:
+      title: "N-well"
+      note: "retrograde (NWI, step 018)"
+      basis: public
+  - step: "018"
+    op: ions
+    where_open: nwres
+    tilt_deg: 0
+    label:
+      title: "NWI implant"
+      note: "phosphorus, at high energy"
+      basis: inferred
+  - step: "019"
+    op: ions
+    where_open: nwres
+    tilt_deg: 0
+    label:
+      title: "NWI2 implant"
+      note: "a second phosphorus dose"
+      basis: inferred
+  - step: "020"
+    op: dope
+    id: chp
+    material: implant
+    where: [[190, 268]]
+    follow: surface
+    from_surface: 0
+    thickness: 10
+    anchor_y: -7
+    z: 1
+    label:
+      title: "PMOS channel implant"
+      note: "LVTPI, step 020; its type is not public"
+      basis: public
+  - step: "020"
+    op: ions
+    where_open: nwres
+    tilt_deg: 0
+    label:
+      title: "LVTPI implant"
+      note: "species, energy and dose are not public"
+      basis: public
+  - step: "021"
+    op: strip
+    materials: [resist]
+
+  # ---- the high-Vt PMOS mask and its two implants
+  - step: "022"
+    op: deposit
+    id: hvtpres
+    material: resist
+    t: 38
+    where: [[0, 134]]
+    route: top
+    label:
+      title: "Photoresist"
+      note: "high-Vt PMOS mask, HVTPM, step 022"
+      basis: public
+  - step: "023"
+    op: ions
+    where_open: hvtpres
+    tilt_deg: 0
+    label:
+      title: "PCHI implant"
+      note: "species, energy and dose are not public"
+      basis: public
+  - step: "024"
+    op: ions
+    where_open: hvtpres
+    tilt_deg: 0
+    label:
+      title: "PNCHI implant"
+      note: "BF₂"
+      basis: inferred
+  - step: "025"
+    op: strip
+    materials: [resist]
+
+  # ---- the P-well block mask and the two P-well implants
+  - step: "026"
+    op: deposit
+    id: pwbres
+    material: resist
+    t: 52
+    where: [[134, 268]]
+    label:
+      title: "Thick photoresist"
+      note: "PWBM, step 026; left over the N-well, we infer"
+      basis: inferred
+  - step: "027"
+    op: dope
+    id: pwell
+    material: well-p
+    where_open: pwbres
+    follow: flat
+    y_top: 0
+    y_bot: -76
+    label:
+      title: "P-well"
+      note: "retrograde (PWI, step 027)"
+      basis: public
+  - step: "027"
+    op: ions
+    where_open: pwbres
+    tilt_deg: 0
+    label_x: 30
+    label:
+      title: "PWI implant"
+      note: "boron"
+      basis: inferred
+  - step: "028"
+    op: ions
+    where_open: pwbres
+    tilt_deg: 0
+    label_x: 30
+    label:
+      title: "PWI2 implant"
+      note: "a second boron dose"
+      basis: inferred
+  - step: "029"
+    op: strip
+    materials: [resist]
+
+  # ---- the drain-extended P-well mask: its windows lie outside this slice
+  - step: "030"
+    op: deposit
+    id: pwderes
+    material: resist
+    t: 52
+    where: [[0, 268]]
+    label:
+      title: "Thick photoresist"
+      note: "PWDEM, step 030; it opens only inside deep-N-well tubs"
+      basis: public
+  - step: "031"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label_x: 10
+    label:
+      title: "PWDEI1 implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "032"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label_x: 10
+    label:
+      title: "PWDEI2 implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "033"
+    op: strip
+    materials: [resist]
+
+  # ---- the anneal: no geometry change this drawing can support (see wells-034-rtai.yaml)
+  - step: "034"
+    op: anneal
+
+  # ---- steps 035-047, drawn as one change (see the header): the gate oxide module's result
+  - step: "047"
+    op: etch
+    materials: [oxide-dep]
+    depth: 17
+  - step: "047"
+    op: strip
+    materials: [oxide-thermal]
+  - step: "047"
+    op: deposit
+    id: gox
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Gate oxide"
+      note: "grown at LVGOX, step 047"
+      basis: public
+
+  # ---- the gate film
+  - step: "048"
+    op: deposit
+    id: poly
+    material: poly
+    t: 20
+    label:
+      title: "Gate film"
+      note: "amorphous silicon, undoped as deposited (SAGD, step 048)"
+      basis: inferred
+
+  # ---- the resistor-protect mask and the gate implant
+  - step: "049"
+    op: deposit
+    id: rpmres
+    material: resist
+    t: 38
+    where: [[100, 168]]
+    label:
+      title: "Photoresist"
+      note: "RPM, step 049; over the future resistor body"
+      basis: inferred
+  - step: "050"
+    op: ions
+    where_open: rpmres
+    tilt_deg: 0
+    label:
+      title: "P1I implant"
+      note: "n-type; species, energy and dose are not public"
+      basis: public
+  - step: "051"
+    op: strip
+    materials: [resist]
+
+  # ---- the reverse resistor mask and the P+ resistor implant
+  - step: "052"
+    op: deposit
+    id: rrpmres
+    material: resist
+    t: 38
+    where: [[0, 100], [168, 268]]
+    label:
+      title: "Photoresist"
+      note: "RRPM, step 052; open over the resistor body"
+      basis: inferred
+  - step: "053"
+    op: ions
+    where_open: rrpmres
+    tilt_deg: 0
+    label:
+      title: "PRI implant"
+      note: "p-type; species, energy and dose are not public"
+      basis: public
+  - step: "054"
+    op: strip
+    materials: [resist]
+
+  # ---- the ultra-high-resistor mask: its windows lie outside this slice
+  - step: "055"
+    op: deposit
+    id: urpmres
+    material: resist
+    t: 38
+    where: [[0, 268]]
+    label:
+      title: "Photoresist"
+      note: "URPM, step 055; it opens only over the ultra-high-value resistors"
+      basis: public
+  - step: "056"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label_x: 10
+    label:
+      title: "UPRI implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "057"
+    op: strip
+    materials: [resist]
+
+  # ---- the caps
+  - step: "058"
+    op: deposit
+    id: nit
+    material: nitride
+    t: 10
+    label:
+      title: "Nitride cap"
+      note: "GATENIT, step 058; thickness and method not public"
+      basis: public
+  - step: "059"
+    op: deposit
+    id: capox
+    material: oxide-dep
+    t: 8
+    label:
+      title: "Oxide cap"
+      note: "POC, step 059; thickness and method not public"
+      basis: public
+
+  # ---- the backside film removal: nothing on the front changes (see the header)
+  - step: "060"
+    op: etch
+    materials: [oxide-dep]
+    depth: 0
+
+  # ---- the gate mask and the gate etch
+  - step: "061"
+    op: deposit
+    id: p1mres
+    material: resist
+    t: 30
+    where: [[14, 38], [108, 160]]
+    label:
+      title: "Photoresist"
+      note: "gate mask, step 061; a line wherever poly is to remain"
+      basis: public
+  - step: "062"
+    op: etch
+    materials: [oxide-dep]
+    where_open: p1mres
+  - step: "062"
+    op: etch
+    materials: [nitride]
+    where_open: p1mres
+  - step: "062"
+    op: etch
+    materials: [poly]
+    where_open: p1mres
+  - step: "062"
+    op: strip
+    materials: [resist]
+
+  # ---- the re-oxidation: silicon and the poly sidewalls; the capped poly top does not grow.
+  # The thinner oxide on the resistor's sidewalls cannot be drawn by this operation (the
+  # resistor stands on field oxide) and is left out; the IOX45 caption says so.
+  - step: "063"
+    op: deposit
+    id: iox
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub, oxide-thermal, poly]
+    label:
+      title: "Re-oxidation oxide"
+      note: "grown at step 063; thin, we infer"
+      basis: inferred
