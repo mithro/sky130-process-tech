@@ -71,6 +71,12 @@ task (`docs/plans/agent-briefs.md`, `docs/plans/readability-guide.md` §7) — n
   the flag on a materials page (warns, does not fail), the flag on a non-class page (still fails
   -- condition c), and a real body-level loss alongside the quick-facts deletion (still fails --
   condition b).
+* Item 5 (`words` category, brand new): smoke-tested `extract_words`/`open_text_lines` directly
+  against three real merged pages (`docs/steps/006-stie.md`, `docs/materials/wet-chemicals.md`,
+  `docs/machines/pecvd.md`) — no crashes, sane word counts, dropdown/figure/generated-block/
+  footnote-definition lines correctly excluded (327/450, 481/665, 586/798 lines kept). Ran the
+  full CLI against a synthetic one-word addition on `006-stie.md`: printed `WORDS ADDED:
+  'carefully'` and nothing else, as expected.
 
 ## Selftest
 

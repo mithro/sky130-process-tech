@@ -826,6 +826,113 @@ def apply_deduplicated(
 
 
 # ---------------------------------------------------------------------------
+# ``words`` category (rd-steps-064-075.md guide problem 4): none of the nine
+# categories above see an ordinary word that carries no number, quotation,
+# marker, hedge, role or identifier -- a first draft of 074 lost "removing
+# step:" through an overlapping replacement, and every other check passed;
+# only an ad hoc word-level diff script caught it. This is a word-multiset
+# diff of the page's "open text": everything outside a {dropdown} body, a
+# {figure} fence (both generated/managed, never hand-edited prose), a
+# generated ``<!-- name:begin -->``...``<!-- name:end -->`` block, and a
+# footnote definition. Informational by default (always printed, never
+# fails on its own); ``--strict-words`` turns a LOST word that is not in a
+# small stop-list of common function words into a failure -- distinctive
+# content words like "removing" are not in that list and do fail.
+
+_GENERATED_BLOCK_BEGIN_RE = re.compile(r"^\s*<!--\s*[\w-]+:begin\b")
+_GENERATED_BLOCK_END_RE = re.compile(r"^\s*<!--\s*[\w-]+:end\s*-->\s*$")
+
+
+def _figure_fence_lines(text: str) -> set[int]:
+    """1-based line numbers inside a ``{figure}`` fence, the same stack-
+    based scan ``check_inforce.dropdown_lines`` uses for ``{dropdown}``,
+    just watching for the ``figure`` directive name instead."""
+    inside: set[int] = set()
+    stack: list[tuple[str, int, bool]] = []
+    for lineno, line in enumerate(text.splitlines(), start=1):
+        if stack and any(is_fig for _, _, is_fig in stack):
+            inside.add(lineno)
+        m = check_inforce.FENCE_OPEN_RE.match(line)
+        if m:
+            marker, name = m.group(1), m.group(2)
+            is_figure = name == "figure"
+            stack.append((marker[0], len(marker), is_figure))
+            if is_figure:
+                inside.add(lineno)
+            continue
+        m = check_inforce.FENCE_BARE_RE.match(line)
+        if m:
+            marker = m.group(1)
+            if stack and stack[-1][0] == marker[0] and len(marker) >= stack[-1][1]:
+                stack.pop()
+    return inside
+
+
+def open_text_lines(text: str) -> set[int]:
+    """1-based line numbers of ``text`` that are "open text" for the
+    ``words`` category: outside a ``{dropdown}`` body, a ``{figure}``
+    fence, a generated block, and a footnote definition."""
+    lines = text.splitlines()
+    excluded = check_inforce.dropdown_lines(text) | _figure_fence_lines(text)
+    in_generated = False
+    for i, line in enumerate(lines, start=1):
+        if _GENERATED_BLOCK_BEGIN_RE.match(line):
+            in_generated = True
+        if in_generated:
+            excluded.add(i)
+        if _GENERATED_BLOCK_END_RE.match(line):
+            in_generated = False
+    for m in DEF_RE.finditer(text):
+        start_line = text.count("\n", 0, m.start()) + 1
+        end_line = text.count("\n", 0, m.end()) + 1
+        excluded.update(range(start_line, end_line + 1))
+    return {ln for ln in range(1, len(lines) + 1) if ln not in excluded}
+
+
+def _mask_prose(text: str) -> str:
+    """Roles, inline code, URLs, footnote markers and layout-option lines
+    stripped -- the same masking ``extract_all`` applies, as a standalone
+    helper for text that is not a whole page (``extract_words`` runs it on
+    a filtered subset of the page's lines, so it cannot reuse
+    ``extract_all``'s own line-numbered ``body_text`` directly)."""
+    text = ROLE_RE.sub(" ", text)
+    text = _mask_inline_code(text)
+    text = MARKER_RE.sub(" ", text)
+    _, text = extract_urls_masked(text)
+    text = _LAYOUT_OPTION_RE.sub(" ", text)
+    return text
+
+
+_WORD_RE = re.compile(r"[A-Za-z]+(?:['’][A-Za-z]+)*")
+
+# A small stop-list of common function words (--strict-words): natural
+# rewording -- splitting or joining sentences, adding a subject and verb
+# -- constantly shifts their counts by one or two with no content lost, so
+# strict mode would otherwise be unusable. A distinctive content word
+# (e.g. "removing") is deliberately not in this list.
+WORDS_STOPLIST = frozenset({
+    "a", "an", "the", "and", "or", "but", "nor", "so", "yet", "of", "to",
+    "in", "on", "at", "by", "for", "with", "as", "is", "are", "was",
+    "were", "be", "been", "being", "it", "its", "this", "that", "these",
+    "those", "which", "who", "whom", "whose", "not", "no", "do", "does",
+    "did", "has", "have", "had", "can", "will", "would", "could",
+    "should", "into", "onto", "than", "then", "also", "each", "any",
+    "all", "some", "one", "two", "three", "such", "if", "when", "while",
+    "because", "thus", "there", "here",
+})
+
+
+def extract_words(text: str) -> Counter:
+    """Case-folded word-multiset of ``text``'s open text (see
+    ``open_text_lines``)."""
+    lines = text.splitlines()
+    keep = open_text_lines(text)
+    kept_lines = [lines[i - 1] for i in sorted(keep) if 1 <= i <= len(lines)]
+    open_text = _mask_prose("\n".join(kept_lines))
+    return Counter(w.lower() for w in _WORD_RE.findall(open_text))
+
+
+# ---------------------------------------------------------------------------
 # Diffing and reporting.
 
 
@@ -930,6 +1037,7 @@ def diff_page(
     allow_regrouped: bool = False,
     page_path: str = "",
     allow_deduplicated: bool = False,
+    strict_words: bool = False,
 ) -> list[tuple[bool, str]]:
     """Return (is_failure, message) pairs; does not print anything."""
     results: list[tuple[bool, str]] = []
@@ -961,6 +1069,22 @@ def diff_page(
     if not allow_dropdown_edits:
         for msg in compare_dropdowns(old_text, new_text):
             results.append((True, msg))
+
+    # ``words`` (not one of the nine CATEGORIES: it has its own, separate
+    # gate, --strict-words, rather than --allow-added).
+    old_words = extract_words(old_text)
+    new_words = extract_words(new_text)
+    lost_words = old_words - new_words
+    added_words = new_words - old_words
+    if lost_words:
+        results.append((False, f"WORDS LOST: {format_counter(lost_words)}"))
+    if added_words:
+        results.append((False, f"WORDS ADDED: {format_counter(added_words)}"))
+    if strict_words and lost_words:
+        strict_lost = Counter({w: n for w, n in lost_words.items() if w not in WORDS_STOPLIST})
+        if strict_lost:
+            results.append((True, f"LOST words (--strict-words): {format_counter(strict_lost)}"))
+
     return results
 
 
@@ -1551,6 +1675,74 @@ def selftest() -> int:
         page_path="docs/materials/wet-chemicals.md", allow_deduplicated=True,
     )
 
+    # -- words category (rd-steps-064-075.md guide problem 4) ------------
+    _words_old = (
+        "# P\n\nThe process for removing step: strip resist.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n"
+    )
+    _words_new = (
+        "# P\n\nThe process for strip resist.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n"
+    )
+    case(
+        "a dropped 'removing step:' is informational only by default "
+        "(WORDS LOST), and does not fail the run",
+        _words_old, _words_new, True,
+    )
+
+    def _messages(old: str, new: str, **kw) -> list[str]:
+        return [msg for _, msg in diff_page(old, new, **kw)]
+
+    msgs = _messages(_words_old, _words_new)
+    if not any("WORDS LOST" in m and "removing" in m for m in msgs):
+        problems.append(f"words category: expected a WORDS LOST line naming 'removing', got {msgs!r}")
+
+    case(
+        "the same dropped 'removing step:' fails under --strict-words "
+        "('removing'/'step' are not in the stop-list)",
+        _words_old, _words_new, False, strict_words=True,
+    )
+    case(
+        "--strict-words does not fail on a lost STOP-LIST word alone "
+        "(routine rewording constantly shifts common-word counts)",
+        "# P\n\nThe the value is stated twice here.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nThe value is stated twice here.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        True, strict_words=True,
+    )
+    case(
+        "a word dropped from inside a {dropdown} body never reaches the "
+        "words diff (excluded as generated/managed text, not open prose; "
+        "--allow-dropdown-edits isolates this from the dropdown-body "
+        "check itself)",
+        "# P\n\n::::{dropdown} t\nRemoving the old resist here.\n::::\n",
+        "# P\n\n::::{dropdown} t\nThe old resist here.\n::::\n",
+        True, allow_dropdown_edits=True,
+    )
+    case(
+        "a word dropped from a generated index-links block never reaches "
+        "the words diff",
+        "# P\n\nBody text.\n\n"
+        "<!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->\n"
+        "Removing related patents here.\n"
+        "<!-- index-links:end -->\n",
+        "# P\n\nBody text.\n\n"
+        "<!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->\n"
+        "Related patents here.\n"
+        "<!-- index-links:end -->\n",
+        True,
+    )
+    case(
+        "a word dropped from a {figure} caption never reaches the words "
+        "diff",
+        "# P\n\n:::{figure} /_static/figures/x.svg\n"
+        "Removing the caption word here.\n:::\n",
+        "# P\n\n:::{figure} /_static/figures/x.svg\n"
+        "The caption word here.\n:::\n",
+        True,
+    )
+
     if problems:
         for p in problems:
             print("SELFTEST FAIL:", p)
@@ -1596,6 +1788,14 @@ def main() -> int:
             "(rd-materials.md review D1)"
         ),
     )
+    ap.add_argument(
+        "--strict-words",
+        action="store_true",
+        help=(
+            "fail on any LOST word (the 'words' category) that is not in a small stop-list of "
+            "common function words; by default 'words' is informational only (WARN)"
+        ),
+    )
     ap.add_argument("--selftest", action="store_true", help="run the offline self-test and exit")
     ap.add_argument("paths", nargs="*", help="pages to check (default: every changed docs/**/*.md)")
     args = ap.parse_args()
@@ -1632,6 +1832,7 @@ def main() -> int:
         results = diff_page(
             old_text, new_text, allowed, args.allow_dropdown_edits, args.allow_regrouped,
             page_path=rel, allow_deduplicated=args.allow_deduplicated,
+            strict_words=args.strict_words,
         )
         page_failed = False
         for is_fail, msg in results:
