@@ -5,28 +5,28 @@ series: series-poly.yaml
 crop_depth: 72
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the step a narrow capped gate
-  stack stands on the thin oxide of the left-hand active area and a wider capped stack on the
+  stack stands on the thin oxide of the right-hand active area and a wider capped stack on the
   oxide-filled trench. After it a thin new oxide lines both sides of the gate stack and lies on
-  top of the old thin oxide over both active areas; the tops of the stacks are unchanged.
+  top of the gate oxides over both active areas; the tops of the stacks are unchanged.
 caption: >-
   Before, the etched gate and resistor stacks; after, a thin oxide on every exposed silicon
   surface: on both sidewalls of the gate film and on the active areas, where it thickens what
   the etch left of the gate oxide. The capped top of the gate film does not oxidise, which is
   the page's reading of the nitride cap. The resistor body's sidewalls oxidise too, less than
   the gate's, but that oxide is not drawn. The oxide's thickness, ambient, temperature and tool
-  are not public, and that it is thin is the page's inference; it is drawn at the same minimum film thickness everywhere, although the page has the gate sidewalls growing the most oxide and the source/drain silicon the least. The thickening of the gate oxide under the foot of the gate is not drawn either. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled. The gate oxide is not labelled in the lower panel, where its leader would run along the new oxide. The liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+  are not public, and that it is thin is the page's inference; it is drawn at the same minimum film thickness everywhere, although the page has the gate sidewalls growing the most oxide and the source/drain silicon the least. The thickening of the gate oxide under the foot of the gate is not drawn either. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled. In the lower panel the thin gate oxide is not labelled, where its leader would run along the new oxide. The liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "IOX45, step 063"
   note: "A thin thermal oxidation grows oxide on the bare poly sidewalls and on the silicon beside the gate."
 panels:
   - state_after: "062"
     title: "Before: the gate and resistor stacks after P1ME (step 062)"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox, poly]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, poly, gox]
     dim_layers: [liner]
   - state_after: "063"
     title: "After: a thin oxide on the gate sidewalls and the active areas"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox, poly, gox]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, poly, gox, thinox]
     dim_layers: [liner]
-    highlight: {where: [[0, 14], [38, 80], [188, 268]]}
+    highlight: {where: [[0, 80], [188, 236], [260, 268]]}

@@ -25,7 +25,7 @@ only where the gate implant did not. The resist is stripped at
 :width: 560px
 :name: fig-poly-052-rrpm
 
-Before, the bare gate film; after, resist everywhere except a window over the resistor body, the complement of the RPM island. That a reverse-tone reticle of the `rpm` layer makes this window is the page's inference; the PDK's mask table lists no reverse mask.[^pdk-05] The window is drawn the same width as the RPM island. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+Before, the bare gate film; after, resist everywhere except a window over the resistor body, the complement of the RPM island. That a reverse-tone reticle of the `rpm` layer makes this window is the page's inference; the PDK's mask table lists no reverse mask.[^pdk-05] The window is drawn the same width as the RPM island. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
 

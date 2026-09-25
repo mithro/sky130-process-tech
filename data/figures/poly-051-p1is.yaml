@@ -9,7 +9,7 @@ alt: >-
   gone and the film is bare across the whole slice.
 caption: >-
   Before, the implanted resist island of RPM; after, the island gone and the gate film bare
-  everywhere, the resistor body still undoped and the rest of the film n-type. The thin chemical oxide the clean leaves on the film is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. In the upper panel the undoped film under the island is not labelled, because its leader would have to rise through the resist. In the upper panel the undoped film under the island is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to
+  everywhere, the resistor body still undoped and the rest of the film n-type. The thin chemical oxide the clean leaves on the film is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. In the upper panel the undoped film under the island is not labelled, because its leader would have to rise through the resist. In the upper panel the undoped film under the island is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to
   scale.
 arrow:
   title: "P1IS, step 051"
@@ -17,14 +17,14 @@ arrow:
 panels:
   - state_after: "050"
     title: "Before: the RPM resist after the gate implant P1I (step 050)"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox, poly]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, poly, gox]
     dim_layers: [liner]
     show_ions: false
   - state_after: "051"
     title: "After: resist removed; the gate film bare"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox]
     dim_layers: [liner]
     labels:
       poly:

@@ -15,17 +15,15 @@ caption: >-
   while the resist keeps the dose off the n⁺ gate film. The colour fills the whole thickness of
   the body because it marks the type of the doping; its depth in the film is not public, and
   whether the resistor doping is one implant or several is not stated. Species, energy, dose and
-  tilt are not public; the arrows are drawn vertical. The field oxide (the oxide-filled trench in
-  the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel
-  implants made earlier are not drawn. Not to scale.
+  tilt are not public; the arrows are drawn vertical. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "PRI, step 053"
   note: "A p-type dose goes through the window into the resistor body; the resist stops it everywhere else."
 panels:
   - state_after: "052"
     title: "Before: the RRPM window over the resistor body (step 052)"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox]
     dim_layers: [liner]
     labels:
       poly:
@@ -34,6 +32,6 @@ panels:
         basis: inferred
   - state_after: "053"
     title: "After: the resistor body p-type"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox, poly]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, poly, gox]
     dim_layers: [liner]

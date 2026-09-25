@@ -23,7 +23,7 @@ under resist. The resist is stripped at {ref}`UPRIS <step-057>`.
 :width: 560px
 :name: fig-poly-055-urpm
 
-Before, the bare gate film; after, resist over the whole slice. URPM opens only over the bodies of the ultra-high-value (`res_xhigh_po`) resistors,[^pdk-07] and the resistor drawn in this slice is read as a 300 Ω/sq one,[^pdk-07] so here the resist has no window. That the URPM reticle is made from `urpm` in the window tone is the page's inference; the PDK's mask table does not list it.[^pdk-05] The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+Before, the bare gate film; after, resist over the whole slice. URPM opens only over the bodies of the ultra-high-value (`res_xhigh_po`) resistors,[^pdk-07] and the resistor drawn in this slice is read as a 300 Ω/sq one,[^pdk-07] so here the resist has no window. That the URPM reticle is made from `urpm` in the window tone is the page's inference; the PDK's mask table does not list it.[^pdk-05] The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
 

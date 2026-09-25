@@ -12,23 +12,12 @@ Status: **complete**, awaiting review. 16 figures, one per step, on `topic/rd-fi
   has a `{dropdown}` straight after that paragraph, so the placement rule moves nothing.
 * Commits: the series file first, then the figures in four groups (048–051, 052–055, 056–059, 060–063).
 
-## The starting-state assumption (for the coordinator to reconcile with S3/S4)
+## Starting state (superseded; see "Review round" below)
 
-S3/S4 (035–047) are being drawn on another branch. This series writes the result of 035–047 as
-one change at step 047:
+The first version assumed its own state at 047. It now continues exactly from `series-gates.yaml`
+(S4, merged on main); see below.
 
-1. The pad oxide is stripped from both active areas.
-2. A 5 u thermal gate oxide (`gox`, LVGOX) is grown on both. The slice is read as a 1.8 V NMOS
-   beside a high-Vt 1.8 V PMOS, as in S2, so the GOX100 thick oxide and the ONO islands lie
-   outside it.
-3. The field oxide is etched down 17 u, from 29 u to 12 u above the silicon. P1M describes the
-   gate as printing on a planar surface with only the small field-oxide step. The drawn step is
-   still larger than the PDK's 0.07 µm, and no mechanism is drawn.
-
-When S3/S4 merge, replace these three ops with that series' ops for 035–047. The `gox` id is used by the S5
-specs (`hide_labels` on 063), so keep that id or rename it in `poly-063-iox45.yaml`.
-
-## Geometry choices
+## Geometry choices (first version; see "Review round" for what changed)
 
 * **Gate line.** x 14–38, over the NMOS active area. It was first drawn at 28–52, but there the
   conformal caps' steps notched the gate stack: the dilation model moves each film's top step
@@ -121,3 +110,59 @@ deletions in `docs/steps` (insert-only). Note that `main` has moved since the br
 * `063-iox45.md` says the oxide grows "on every exposed silicon surface". Its step 3 then
   distinguishes the resistor bodies ("less"). Not a contradiction, but the figure cannot draw
   the resistor sidewall oxide (see above).
+
+## Review round (tmp review rd-figures-s5: approve with fixes)
+
+Done, in the coordinator's order, one commit each:
+
+* **H1.** The series note on the gate film is neutral. "Undoped as deposited" (inferred) is
+  on 048/049 only, and each later panel's labels state the doping the page gives.
+* **H3 (generator).** A leader may not run along the accent trace of a highlight: `_edge_run`
+  and SVG lint rule 18 count the trace as an edge, and there is a selftest case.
+  `edge-clearance` is now 6 u (was 4). Every series was re-linted clean: the only other
+  figure that changed is `iso-013-ns19` (one dot moved 1.5 u).
+* **Mediums.**
+  * The 063 caption now says the oxide is drawn equally thick everywhere although the page
+    varies it, and that the bird's beak is not drawn.
+  * 048 and 051 now declare their hidden labels.
+  * The silicon is labelled on 061–063.
+  * 048's dimension is clear of the shoulder.
+  * The field-oxide clause reads "the oxide-filled trench in the middle".
+* **Ruling (a) (generator).** `dope` takes `host: <film id>`. The overlay fills that film,
+  through its whole thickness, only where the film still is, and follows later etches. The
+  film's own label goes where no overlay covers it, in both the right and the over route.
+  * Lint: a host not deposited earlier in the series, or absent everywhere the overlay is
+    made.
+  * Two selftests.
+  * `sd-n` and `sd-p` are reused over poly, and their legend labels now name that use.
+  * S5 draws the n-type gate film (P1I) and the p-type resistor body (PRI). 050 and 053 are
+    now two panels.
+  * Every caption from 050 on says that the colour marks the type of doping, not a depth
+    profile.
+* **Ruling (b).** The re-oxidation of the resistor's sidewalls remains a recorded follow-up.
+  It needs a `beside:` option on `deposit`.
+* **Series start (coordinator decision on H2).** Steps 002–047 are now `series-gates.yaml`'s
+  ops verbatim. The only change is the trench oxide's label title, "Field oxide" for "Fill
+  oxide", as this module's pages say. The slice is:
+  * a 5 V NMOS on the left, keeping the thick `gox`;
+  * a 1.8 V NMOS on the right, with `thinox` and NCHI;
+  * the P-well under both;
+  * field oxide still proud.
+
+  The gate line is now x 236–260 over the 1.8 V area, and the resistor is unchanged on the
+  field. 048's caption says the page's nearly planar surface is not drawn, because no page
+  says where the step comes down. The figures hide the P-well and NCHI, and the captions say
+  so.
+
+Labels hidden to keep leaders honest (each one declared in its caption):
+* the thick gate oxide from 049 on (its leader would cross the whole slice);
+* the undoped body under the RPM island (050 after, 051 before);
+* the p-type body under full resist (055 after, 056, 057 before) and under the P1M line
+  (061 after, 062 before);
+* the thin gate oxide in 063 after.
+
+The n-type gate film's leader in 062 before and 063 rises through the gate's caps (short).
+That compromise is accepted.
+
+Follow-ups: `beside:` for the sidewall oxide (ruling b); a highlight clipped to changed
+surfaces (review L1).

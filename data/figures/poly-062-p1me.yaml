@@ -6,7 +6,7 @@ crop_depth: 72
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the step two resist lines stand on
   three stacked films that cover the whole slice. After it the three films remain only under
-  those lines, as a narrow gate stack on the thin oxide of the left-hand active area and a wider
+  those lines, as a narrow gate stack on the thin oxide of the right-hand active area and a wider
   resistor stack on the oxide-filled trench; the resist is gone and the thin oxide is bare
   elsewhere.
 caption: >-
@@ -16,31 +16,25 @@ caption: >-
   this step. Whether the resist stays on through the poly etch or the caps serve as a hard mask
   after an early strip is not public, and the drawing shows only the result. The walls are drawn
   vertical, and the gate oxide is drawn intact; how much of it the over-etch removes is not
-  public. The colours of the gate film mark the type of its doping, not a depth profile. The p-type resistor body is not labelled in the upper panel, because its leader would have to rise through the resist line, and in the lower panel the n-type gate film is named by the "Gate" callout rather than a label of its own. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells
-  and channel implants made earlier are not drawn. Not to scale.
+  public. The colours of the gate film mark the type of its doping, not a depth profile. The p-type resistor body is not labelled from the right in either panel, because its leader would have to cross the resist line or the gate stack; in the lower panel a label above the drawing names it. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "P1ME, step 062"
   note: "A plasma etch cuts the caps and the gate film down to the gate oxide; the resist is then stripped."
 panels:
   - state_after: "061"
     title: "Before: the P1M resist lines on the gate stack (step 061)"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox, poly, polyp]
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, poly, polyp, gox]
     dim_layers: [liner]
   - state_after: "062"
-    title: "After: a gate stack on the NMOS and a resistor stack on the field"
-    hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox, poly, polyn]
+    title: "After: a gate stack on the thin-oxide NMOS and a resistor stack on the field"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, poly, polyp, gox]
     dim_layers: [liner]
     highlight: {where: [[0, 268]]}
     callouts:
-      - x: 26
-        y: "top@26"
-        label:
-          title: "Gate"
-          basis: public
       - x: 134
         y: "top@134"
         label:
-          title: "Resistor body"
+          title: "p-type resistor body"
           basis: public
