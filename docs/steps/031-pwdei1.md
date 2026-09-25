@@ -10,6 +10,21 @@
 | **Previous step** | {ref}`PWDEM <step-030>` |
 | **Next step** | {ref}`PWDEI2 <step-032>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants a lightly doped, custom P-well into the 20 V
+  device regions opened by `PWDEM`.
+* **Why:** the 20 V devices need a drift region far more lightly doped
+  than the standard P-well, so it fully depletes at rated voltage.
+* **Public numbers:** SKY130's 20 V devices are modelled to
+  V_DS = ±22 V on a 110 Å gate oxide.[^pdk-07][^pdk-hv]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** the actual species, energy and dose (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `PWDEI1` is the first of two boron implants placed through the
@@ -18,7 +33,9 @@ receive p-well drain-extended implants"[^pdk-06] — of the 20 V devices.
 Together with {ref}`PWDEI2 <step-032>` it builds a *lightly doped
 P-well* that serves as the drift (drain-extension) region of the 20 V
 PMOS and, we infer, as the low-doped body of the 20 V NMOS whose
-standard P-well was blocked at {ref}`PWBM <step-026>`. This reference
+standard P-well was blocked at {ref}`PWBM <step-026>`.
+
+This reference
 describes the well as a chained, two-energy implant like the main wells
 ({ref}`NWI <step-018>`/{ref}`NWI2 <step-019>`,
 {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`). That is our inference,
@@ -39,32 +56,41 @@ At PWDEI1 an implant goes through the PWDEM windows, which lie outside this slic
 
 `PWDEI1` is an {ref}`Ion implantation <category-implant>` step of the
 *well* class, but with a twist: the aim is a doping *lower* than the
-standard well, so its dose is at the light end of the well range and
-its energy is chosen for the depth the {term}`drift region` must have.
+standard well.
+
+Its dose is at the light end of the well
+range and its energy is chosen for the depth the {term}`drift region`
+must have.
 
 ## Why this step exists
 
 A {term}`drain-extended <DEMOS>` MOSFET holds off voltage in a drift region that
 depletes before the gate oxide or the channel junction breaks down: "a
 very lightly doped extension region adjacent to the drain that depletes
-at high drain voltages".[^pat-demos-ti] The trade is one-dimensional
-physics — the lower the doping, the wider the depletion region and the
-higher the breakdown voltage, but the higher the on-resistance — and it
+at high drain voltages".[^pat-demos-ti]
+
+The trade is one-dimensional
+physics: the lower the doping, the wider the depletion region and the
+higher the breakdown voltage, but the higher the on-resistance. It
 is set by implantation: in LDMOS-type devices "the drift region of this
 power MOSFET is fabricated using up to three ion implantation sequences
 in order to achieve the appropriate doping profile needed to withstand
-high electric fields".[^wiki-ldmos] SKY130's 20 V devices are modelled
+high electric fields".[^wiki-ldmos]
+
+SKY130's 20 V devices are modelled
 to V_DS = ±22 V with the same 5.5 V gate rating as the 5 V
-devices,[^pdk-07] on a 110 Å gate oxide;[^pdk-hv] that combination is
+devices,[^pdk-07] on a 110 Å gate oxide.[^pdk-hv] That combination is
 only possible with a drift region far more lightly doped than the 4 ×
 10¹⁷ cm⁻³ standard P-well.[^pdk-03]
 
 Texas Instruments' DE devices for a 0.18 µm logic process[^mitros-2001]
-used the existing wells as drift regions; the companion patent gives
+used the existing wells as drift regions. The companion patent gives
 boron "at doses of 2×10¹² cm² to 7×10¹³ cm² at energies of about 40 keV"
 for the p-type well and "phosphorous species at about 8×10¹² cm² to
 7×10¹³ cm² at an energy of about 150 keV" for the n-type
-one;[^pat-demos-ti] SKY130 does the same for its 16 V devices ("drain
+one.[^pat-demos-ti]
+
+SKY130 does the same for its 16 V devices ("drain
 extentions (DE) fabricated by lightly doped Nwells and Pwells")[^pdk-hv]
 but adds, we infer from the `pwde` layer,[^pdk-06] a dedicated, lighter
 P-well for the 20 V family. Without `PWDEI1`/`PWDEI2` there would be no
@@ -73,8 +99,8 @@ P-well for the 20 V family. Without `PWDEI1`/`PWDEI2` there would be no
 
 ## How it is typically performed
 
-An industry-generic drain-extension well implant for a 200 mm,
-130 nm-era fab. SKY130's values are not public; the figures are
+*An industry-generic drain-extension well implant for a 200 mm,
+130 nm-era fab.* SKY130's values are not public; the figures are
 illustrative.
 
 * **Species.** Boron (¹¹B⁺) from BF₃.[^wiki-implant] The layer name
@@ -86,10 +112,12 @@ illustrative.
   example uses 40 keV for a shallow p-type drift;[^pat-demos-ti] a
   deeper, higher-voltage design would go higher.
 * **Dose.** Light — of order 10¹² cm⁻² per implant — so that the drift
-  region fully depletes at 20 V. The TI range of 2 × 10¹²–7 ×
+  region fully depletes at 20 V.
+
+  The TI range of 2 × 10¹²–7 ×
   10¹³ cm⁻²[^pat-demos-ti] is for 5–12 V-class devices; a 20 V design at
-  a fixed drift length would sit at or below its lower end (inference;
-  see the RESURF-type design discussion in Wolf vol. 3[^txt-04]).
+  a fixed drift length would sit at or below its lower end (inference).
+  See the RESURF-type design discussion in Wolf vol. 3.[^txt-04]
 * **Tilt and twist.** 7° with twist;[^wiki-implant] the drift region is
   long, so tilt {term}`shadowing` at the resist edge is a small fraction of it.
 * **Wafer handling and anneal.** As for {ref}`PWI <step-027>`;
@@ -109,13 +137,15 @@ illustrative.
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current** ("B11, BF2, As … 1e11 to
-  1e14"):[^skw-01] boron and the dose window match a light drift-well
-  implant. Strength: **strong** for the tool; assignment is an
-  **inference**.
-* **Axcelis GSD high-current/high-energy implanter** ("B11 …
-  10-3000kev")[^skw-01] if the energy is above the 8250's reach. Strength:
-  strong for existence.
+* **Axcelis 8250 medium-current**
+  - *SkyWater says:* lists it ("B11, BF2, As … 1e11 to 1e14").[^skw-01]
+  - *Tool exists:* strong — boron and the dose window match a light
+    drift-well implant.
+  - *Runs this step:* inference.
+* **Axcelis GSD high-current/high-energy implanter**
+  - *SkyWater says:* lists it ("B11 … 10-3000kev").[^skw-01]
+  - *Tool exists:* strong for existence, if the energy is above the
+    8250's reach.
 
 ## Resources required
 
@@ -125,12 +155,12 @@ illustrative.
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PWDEM <step-030>` (mask); next:
-  {ref}`PWDEI2 <step-032>`; strip at {ref}`PWDEIS <step-033>`.
-* The standard P-well it replaces: {ref}`PWI <step-027>`; the deep
-  N-well tub it sits in: {ref}`DNI <step-008>`; the N-well drift
-  regions of the DE NMOS: {ref}`NWI <step-018>`.
-* Activated at {ref}`RTAI <step-034>`.
+* Previous: {ref}`PWDEM <step-030>` (mask).
+* Next: {ref}`PWDEI2 <step-032>`; strip at {ref}`PWDEIS <step-033>`.
+* Depends on: the standard P-well it replaces — {ref}`PWI <step-027>`;
+  the deep N-well tub it sits in — {ref}`DNI <step-008>`; the N-well
+  drift regions of the DE NMOS — {ref}`NWI <step-018>`.
+* Feeds: activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -202,17 +232,19 @@ illustrative.
 
 ## Open questions
 
-* The species is inferred from the layer name; energy and dose are
-  not public.
-* Whether the `pwde` well is the drift region of the 20 V PMOS, the
-  body of the 20 V NMOS, or both, is inferred from the rule geometry.
+* **Species, energy and dose.** The species is inferred from the layer
+  name; energy and dose are not public.
+* **Reticle scope.** Whether the `pwde` well is the drift region of
+  the 20 V PMOS, the body of the 20 V NMOS, or both, is inferred from
+  the rule geometry.
+
   The test-tile pad list puts `pwde` in the cell names of its 20 V PMOS
   structures but not in those of its 20 V NMOS structures (see
-  {ref}`PWDEM <step-030>`);[^raw-data-testtile-pads] names need not list
+  {ref}`PWDEM <step-030>`).[^raw-data-testtile-pads] Names need not list
   every layer, so this supports the PMOS reading without settling the
   NMOS one.
-* Whether `PWDEI1` is the deeper or the shallower member of the pair
-  is unknown.
+* **Which implant of the pair.** Whether `PWDEI1` is the deeper or the
+  shallower member of the pair is unknown.
 
 <!-- footnotes -->
 

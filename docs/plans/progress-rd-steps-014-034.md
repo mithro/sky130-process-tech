@@ -617,3 +617,34 @@ SC-1 temperature) stranded alone in its own sentence after the split — the sam
 pattern, confirmed present and unchanged on the page. `quotes` and `hedges` show no LOST at
 all. All other checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly
 top to bottom, including the new recap table and all four R-TOOLS sub-bullet blocks.
+
+### 031-pwdei1.md — done (no in-force dropdown on this page)
+
+Rules applied: R-PARA (lead paragraph split into two; "Why this step exists" split into four
+paragraphs at its consequence seams), R-CATEGORY ("the aim is a doping lower than standard
+well" / "Its dose is at the light end..." two-paragraph, no-label pattern — Guide problem 3
+convention, since the generic-vs-specific split leaves a single remaining unit once the
+background sentence is set aside), R-HEDGE step 1 (italic scope lead-in on "How it is
+typically performed"), R-LIST (Dose item split into lead + continuation), R-TOOLS (both
+"Machines likely used at SkyWater" bullets converted to SkyWater-says/Tool-exists/Runs-this-step
+form), R-RELATED (relabelled with `Previous:`/`Next:`/`Depends on:`/`Feeds:`/`Category page:`),
+R-OPENQ (bold labels added to all three bullets; the "Reticle scope" bullet split into lead +
+continuation to stay under the sentence cap), R-GLANCE (box inserted last, after the
+quick-facts table; "Public numbers" uses "SKY130's 20 V devices are modelled to V_DS = ±22 V
+on a 110 Å gate oxide." rather than "none published for SKY130", since that number is on the
+page and is SKY130-specific).
+
+Caps before → after (`measure5.py`): the only item still over cap afterward is the generated
+`{figure}` caption paragraph (128 words) — off-limits per the guide's own figure-block
+exclusion (Guide problem 10 pattern, `infence` flag never applied in `measure5.py`). All other
+paragraphs, list items and sentences on the page are at or under cap after the edit.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/031-pwdei1.md`:
+exit 1, but the only findings are `LOST number_order (not a clean regroup)` for two benign
+stranded-single-number cases: "0.18" (from "0.18 µm logic process") and "10-3000"/"8250"
+(isolated after the R-TOOLS bullet-head/sub-bullet split) — the same Guide-problem-11 pattern
+as every prior page. No LOST quotes, hedges, or plain numbers. All other checkers
+(`check_steps.py`, `check_refs.py`, `check_inforce.py`, `gen_index_links.py --check`) pass;
+`-W` sphinx build clean. Screenshots (desktop + 400 px) read cleanly top to bottom: the glance
+box, the R-TOOLS sub-bullet blocks, and the Open-questions bold labels all render correctly at
+both widths.
