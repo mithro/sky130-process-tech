@@ -3,19 +3,10 @@
 
 At the end of the flow the finished wafer is measured electrically. A
 wafer prober loads it, aligns it under a probe card whose needles land on
-the pads of test structures in the scribe lines or drop-in sites, and a
+the pads of test structures in the scribe lines or drop-in sites. A
 parametric tester — source-measure units, a capacitance meter and a
 switching matrix under test-plan software — measures transistors,
-resistors, capacitors and chains site by site. In a fab of this kind the results decide
-whether the wafer is shipped and feed statistical process control
-(industry practice). The same kind
-of instrument, on a manual probe station, serves engineering work, and
-some step pages name electrical monitors earlier in the flow. This page
-describes the classes, lists representative 200 mm-era models, and then
-says what SkyWater has published about its tools and which SKY130 steps
-this reference assigns to them. Test structures, sheet resistance and
-transistor parameters are on the {ref}`test category page
-<category-test>`.
+resistors, capacitors and chains site by site.
 
 | | Parametric tester and prober |
 |---|---|
@@ -28,7 +19,18 @@ transistor parameters are on the {ref}`test category page
 | SkyWater-listed tool | "HP 4062UX" ("DC, capacitance, pulse generator, frequency counter"), "Engineering manual Probe Station"; no production prober[^skw-01] |
 | SKY130 steps | 1 step, with an electrical monitor named at 21 more; see {ref}`SKY130 steps assigned to this class <machine-parametric-tester-steps>` |
 
+:::{seealso}
+Test structures, sheet resistance and transistor parameters are on the
+{ref}`test category page <category-test>`.
+:::
+
 ## What the machine class is and how it works
+
+In a fab of this kind the results decide
+whether the wafer is shipped and feed statistical process control
+(industry practice). The same kind
+of instrument, on a manual probe station, serves engineering work, and
+some step pages name electrical monitors earlier in the flow.
 
 Parametric test measures structures, not circuits. Linholm, Allen and
 Cresswell define microelectronic test structures as "electrical devices
@@ -44,11 +46,12 @@ structures and the limits.
 The structures are small and four-terminal wherever a resistance is
 measured. Buehler, Grant and Thurber showed that line width "can be
 computed from simple d-c electrical measurements made on bridge and van
-der Pauw shaped test structures";[^buehler-1978] Proctor, Linholm and
+der Pauw shaped test structures".[^buehler-1978] Proctor, Linholm and
 Mazer described four- and six-terminal structures for contact
-resistance;[^proctor-1983] Sayah and Buehler's comb, serpentine and
+resistance.[^proctor-1983] Sayah and Buehler's comb, serpentine and
 cross-bridge structure monitors shorts and step coverage and was "tested
 using a computer-controlled parametric test system".[^sayah-1988]
+
 Lukaszek, Grambow and Yarbrough built a test chip on "systematic
 structural decomposition" so that electrical faults could be diagnosed
 unambiguously.[^lukaszek-1990] Transistor thresholds are extracted by one
@@ -61,17 +64,24 @@ describes a typical process control monitor.
 A parametric tester is a set of precision DC instruments behind a
 switching matrix. The HP 4062UX in a dealer's listing combines an HP 4142B
 modular DC source/monitor mainframe with source/monitor units, an HP 4085B
-48-pin switching matrix and an HP 4284A LCR meter, and describes the
+48-pin switching matrix and an HP 4284A LCR meter.[^brltest-4062] The
+dealer describes the
 system as
 "the high-end system of the HP4062 Semiconductor Parametric Test System
 family", for "both process monitoring and process
-development".[^brltest-4062] Long cables and relay matrices add leakage and
+development".[^brltest-4062]
+
+Long cables and relay matrices add leakage and
 capacitance: Keithley describes "the parasitic capacitances and leakage
 currents inherent in systems with long cables and a reed-relay-based
-switch matrix between the DUT and the measurement circuitry", which its
-Series S600 minimised with "active electronics on each tester pin inside a
-test head that mounts on top of the prober", where "Each probing pin has its own amplifier for
-bi-directional scaling of currents".[^keithley-s600] Keithley lists its
+switch matrix between the DUT and the measurement circuitry".[^keithley-s600]
+Its
+Series S600 minimised this with "active electronics on each tester pin inside a
+test head that mounts on top of the prober".[^keithley-s600]
+"Each probing pin has its own amplifier for
+bi-directional scaling of currents".[^keithley-s600]
+
+Keithley lists its
 uses as "process control, process and equipment tuning and optimization,
 equipment qualification, Wafer Acceptance Testing, and device modeling and
 characterization", with options including a "Frequency counter for ring
@@ -97,16 +107,18 @@ the required parametric or functional test".[^electroglas-1999] A prober
 is "equipped with automatic pattern recognition optics capable of aligning
 the wafer with sufficient accuracy to ensure accurate registration between
 the contact pads on the wafer and the tips of the probes".[^wiki-test]
+
 Electroglas's Horizon 4090, described on a 1998 capture, added "automatic
 probe-to-pad-alignment (APTPA)" and GEM factory
 integration,[^electroglas-4090] and the Horizon 4090µ integrated a mini-environment
 and SMIF interface for parametric test.[^electroglas-4090u]
+
 The probe card is "an interface between an electronic test system and a
 semiconductor wafer".[^wiki-probecard] Its needles are a source of error
 and damage: Broz and Rincon found that "increased and unstable contact
 resistance" with tungsten and tungsten–rhenium needles on aluminium pads
 at 85 °C comes partly from oxide formed by "localized Joule heating at the
-probe tip contact",[^broz-1999] and Hunter et al. found that probe cracks
+probe tip contact".[^broz-1999] Hunter et al. found that probe cracks
 in the oxide under a pad "may not be visible even in a careful cratering
 test".[^hunter-2012]
 
@@ -116,7 +128,7 @@ Not all parametric work runs on an automatic cell. Manual and
 semi-automatic probe stations serve device characterisation: FormFactor's
 current Cascade SUMMIT200 is designed "for R&D, device
 characterization/modelling or niche production applications" over
-"-60°C to 300°C",[^formfactor-summit200] and its PMC200 is "a highly-precise,
+"-60°C to 300°C".[^formfactor-summit200] Its PMC200 is "a highly-precise,
 advanced manual probe system for wafers and substrates up to 200 mm in a high
 vacuum environment, at cryogenic temperatures down to 77 K with liquid
 nitrogen or < 7 K with liquid helium".[^formfactor-pmc200]
@@ -134,20 +146,19 @@ and the same data feed model extraction.[^cheng-1999]
 
 ## Representative 200 mm-era models
 
-* **Hewlett-Packard, then Agilent.** The HP 4062 Semiconductor Parametric
-  Test System family, whose 4062UX "uses the same measurement hardware as
-  the HP 4062C" with an HP-UX software environment;[^brltest-4062] and the
-  4070 series, extended in 2002 by the 4072B and 4073B.[^eepower-4070]
-* **Keithley.** The Series S600 parametric testers, with the S680 as the
-  latest configuration on the data sheet.[^keithley-s600]
-* **Electroglas.** The Horizon 4090 and 4085X automatic probers for 200 mm
-  wafers (1998 captures), the latter for "probing high-pin-count
-  devices", and the Horizon 4090µ.[^electroglas-4090][^electroglas-4085x][^electroglas-4090u]
-* **Tokyo Electron.** The P-8 and P-12 series probers, refurbished today as
-  the P-8XL for wafers from 100 mm to 200 mm.[^tel-prober]
-* **Cascade Microtech, now FormFactor.** The SUMMIT200 and PMC200 probe
-  systems for characterisation and cryogenic
-  work.[^formfactor-summit200][^formfactor-pmc200]
+:::{table} Representative parametric testers and probers of the 200 mm era (figures as each source gives them)
+:widths: 30 8 62
+
+| Vendor / model | Year | Published figures |
+|---|---:|---|
+| HP/Agilent — 4062 family (4062C, 4062UX) | — | the 4062UX "uses the same measurement hardware as the HP 4062C" with an HP-UX software environment[^brltest-4062] |
+| HP/Agilent — 4070 series (4072B, 4073B) | 2002 | —[^eepower-4070] |
+| Keithley — Series S600 (S680 latest) | — | —[^keithley-s600] |
+| Electroglas — Horizon 4090, 4085X (200 mm) | 1998 | the latter for "probing high-pin-count devices"[^electroglas-4090][^electroglas-4085x] |
+| Electroglas — Horizon 4090µ | — | —[^electroglas-4090u] |
+| Tokyo Electron — P-8, P-12 (refurbished as P-8XL) | — | for wafers from 100 mm to 200 mm[^tel-prober] |
+| Cascade/FormFactor — SUMMIT200, PMC200 | — | for characterisation and cryogenic work[^formfactor-summit200][^formfactor-pmc200] |
+:::
 
 ## At SkyWater
 
@@ -169,12 +180,14 @@ lists:[^skw-01]
 and, among its services, "eTest measurement development" and "Cryogenic
 probing down to 8-Kelvin".[^skw-01] Read term by term, on our reading:
 "HP 4062UX" is the high-end system of HP's 4062 parametric test family
-described in the dealer listing,[^brltest-4062] and its sub-entries name a
+described in the dealer listing.[^brltest-4062] Its sub-entries name a
 DC, capacitance, pulse and frequency capability and a data path to SPC and
-disposition; "Summit 200 Prober/Tester" and "PMC200 Cryo Probe" match the
+disposition. "Summit 200 Prober/Tester" and "PMC200 Cryo Probe" match the
 names of FormFactor's Cascade SUMMIT200 and PMC200 probe
-systems,[^formfactor-summit200][^formfactor-pmc200] which SkyWater does not
-spell out. The sort testers are functional testers for product sort, a
+systems, which SkyWater does not
+spell out.[^formfactor-summit200][^formfactor-pmc200]
+
+The sort testers are functional testers for product sort, a
 different step from parametric test (our reading).[^wiki-test] No
 production wafer prober is named for the parametric tester.
 
@@ -240,11 +253,13 @@ likely used at SkyWater"), as collected on the machines index:
 repository does not describe SkyWater's own production test or name its
 tester. It states that its
 initial data "was collected under contract by CoolCAD Electronics LLC
-using the manufacturing test tile created by SkyWater",[^raw-data-readme]
-of which "each of the Google MPW runs includes two
-copies";[^raw-data-testtile-prop] the pad documentation lists the
+using the manufacturing test tile created by SkyWater", of which "each of
+the Google MPW runs includes two
+copies".[^raw-data-readme][^raw-data-testtile-prop] The pad documentation lists the
 structures,[^raw-data-testtile-pads] and the IC-CAP files record sweeps,
-compliance and source-measurement-unit channels.[^raw-data-mdm] The
+compliance and source-measurement-unit channels.[^raw-data-mdm]
+
+The
 repository names neither the tester nor the prober, and the files record
 no temperature, date or wafer. What the files contain, and the thresholds,
 currents and resistances extracted from them and set beside the PDK's
@@ -310,18 +325,17 @@ not public beyond the PDK's e-test parameter tables, which the
 
 ## Related pages
 
-* {ref}`category-test` — test structures, sheet resistance, transistor
-  parameters and SPC.
-* {ref}`machine-sheet-resistance-metrology` — the in-line sheet-resistance
-  monitors that precede e-test.
-* {ref}`machine-film-thickness-metrology` — the optical gauges beside the
-  C–V monitors.
-* {ref}`machine-defect-inspection` — the optical counterpart of the
-  electrical defect structures.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`material-hardware-consumables` — probe cards, needles and
-  cleaning media.
+* **Category.** {ref}`category-test` — test structures, sheet
+  resistance, transistor parameters and SPC.
+* **Machines.** {ref}`machine-sheet-resistance-metrology` — the in-line
+  sheet-resistance monitors that precede e-test.
+  {ref}`machine-film-thickness-metrology` — the optical gauges beside
+  the C–V monitors. {ref}`machine-defect-inspection` — the optical
+  counterpart of the electrical defect structures.
+* **Materials.** {ref}`material-hardware-consumables` — probe cards,
+  needles and cleaning media.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments.
 
 ## References
 

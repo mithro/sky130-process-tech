@@ -725,6 +725,53 @@ paragraph between them, wraps cleanly with no overflow) and 8 (grouped Related p
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 14. `docs/machines/parametric-tester.md` — done
+
+Different page shape from the implanter/lithography run: no template sentence at all (its intro is
+bespoke prose, not the boilerplate wording other classes share), and the intro itself ran to
+111 words, well past the 70-word R-INTRO cap, with no marker on the two trailing sentences. Rules
+applied: R-INTRO (kept the first two sentences, 65 words; the two trailing sentences carried real
+facts — the SPC/shipping-decision statement and the manual-probe-station/electrical-monitor
+statement — so, per the guide's "do not touch a sentence with no marker to delete" spirit and the
+"never delete a fact" rule, they were *moved* to open the "What the machine class is and how it
+works" section rather than cut; pointer sentence moved to `{seealso}`). R-MODELS (7-row table:
+HP/Agilent, Keithley, Electroglas ×2, Tokyo Electron, Cascade/FormFactor). R-ENTRIES: considered
+for the "Read term by term" SkyWater-listing paragraph, which does gloss several distinct named
+entries (HP 4062UX, Summit 200 Prober/Tester, PMC200 Cryo Probe, the sort testers as a group) —
+closer to a real fit than the implanter pages' single-record decodes — but the sort-tester row
+would need to hold seven quoted product names in one cell and the REL-lab "Qualitau" entry has no
+gloss at all; judged that forcing this into three columns would lose more clarity than it gained,
+so left as prose, only re-sentenced. R-PARA (9 of 10 paragraphs split, several needing two breaks).
+R-SENTENCE (about 16 sentences over 45 words split). R-RELATED (6 bullets → 4 grouped:
+Category/Machines/Materials/Indexes). R-CAPTION (the one new table).
+
+**A phone-width overflow with no visual effect from `:widths:`, traced and fixed by merging
+columns.** The 4-column, 7-row models table overflowed at 400 px even after shortening "HP/Agilent"
+and "Cascade/FormFactor" and after twice changing the `:widths:` percentages — neither edit moved
+the rendered table by a single pixel. Diffing the built HTML against a working table from an
+earlier page in this batch showed both are missing a `<colgroup>`/`<col style="width: …">` element
+entirely: the `:widths:` option on a MyST `{table}` directive is not reaching the renderer as
+column widths at all in this build (both the working and the overflowing table lack it alike), so
+every table's column proportions actually come from the browser's automatic layout on cell
+content, not from `:widths:`. Earlier "phone-width" fixes in this batch (page 2's dropped `Type`
+column, page 8's Vendor+Model merge) worked for the same underlying reason — narrower *content*,
+not the directive — and this page's fix follows the same pattern: merging `Vendor` and `Model`
+into one `Vendor / model` column (4 columns → 3) removed the overflow completely. Recommend the
+guide record that `:widths:` cannot be relied on to control phone-width overflow at all pending a
+fix, and that the real, verified lever is column count and per-cell content length, confirmed only
+by a 400 px screenshot.
+
+`check_preserved.py --base a024957e --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 (`about`, `SKY130`); the Electroglas row needed the same "move a bare number into the
+Model cell" fix as pages 11 and 13 (`Horizon 4090, 4085X (200 mm)`) to keep "200" ahead of "1998" in
+table order, matching the source's "for 200 mm wafers (1998 captures)".
+
+Checkers, `-W` build: clean. Screenshots: phone tile 4 (7-row Representative-models table,
+confirmed overflow-free only after the column merge) and others read well.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
@@ -753,5 +800,17 @@ Content problems for the owner: none found while re-presenting this page.
    when every column carries distinct, undeclarable-if-lost information and there is nothing
    redundant to drop. Shortening long vendor names alone (`cmp-polisher.md`'s "Rudolph
    Technologies" → "Rudolph") fixed page 2 but was not sufficient on its own for page 8.
+
+4. **The `:widths:` option on a MyST `{table}` directive appears to have no effect on the
+   rendered page at all**, in addition to item 3's column-count point. Diffing the built HTML of
+   `parametric-tester.md`'s Representative-models table (which overflowed at 400 px) against an
+   earlier, non-overflowing table from this batch showed neither has a `<colgroup>` or
+   `<col style="width: …">` element; changing the `:widths:` percentages on the overflowing table
+   twice, with a full rebuild between each, produced byte-identical screenshots. This means every
+   `:widths:` line added across this batch's R-MODELS/R-ENTRIES tables (dozens of pages) may be
+   inert, and the phone-width safety the guide asks for is coming entirely from short cell
+   content and low column counts, never from the directive. Recommend checking whether the
+   `colon_fence`/`table` directive in this Sphinx config actually supports `:widths:`, and if not,
+   either dropping the option from the crib (§6) or fixing the renderer.
 
 (to be continued — pages 3–15)
