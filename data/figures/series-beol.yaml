@@ -66,7 +66,7 @@ base: series-metal1.yaml
 templates:
   via-hole:
     params: [mask_step, etch_step, mask_code, resist_id, resist_where]
-    defaults: {resist_t: 30}
+    defaults: {resist_t: 30, etch_materials: [oxide-dep]}
     ops:
       - step: "${mask_step}"
         op: deposit
@@ -78,10 +78,11 @@ templates:
           title: "Photoresist"
           note: "${mask_code} mask, step ${mask_step}"
           basis: public
-      # the etch cuts every oxide under the windows and stops on the metal line's cap
+      # the etch cuts every oxide under the windows and stops on the metal line's cap (or on a
+      # MiM top plate); `etch_materials` adds the capacitor dielectric where it lies on a line
       - step: "${etch_step}"
         op: etch
-        materials: [oxide-dep]
+        materials: "${etch_materials}"
         where_open: "${resist_id}"
       - step: "${etch_step}"
         op: strip
@@ -149,7 +150,7 @@ templates:
           basis: inferred
   metal-pattern:
     params: [mask_step, etch_step, mask_code, resist_id, resist_where]
-    defaults: {resist_t: 30}
+    defaults: {resist_t: 30, etch_materials: [barrier, aluminium]}
     ops:
       - step: "${mask_step}"
         op: deposit
@@ -162,10 +163,11 @@ templates:
           note: "${mask_code} mask, step ${mask_step}"
           basis: public
       # the etch removes the whole stack between the lines, stopping on the cap oxide and
-      # the plug tops; the resist is stripped in the same step
+      # the plug tops; the resist is stripped in the same step. At metals 3 and 4 the MiM
+      # dielectric lies on the stack and `etch_materials` adds it (the MM3E, MM4E pages)
       - step: "${etch_step}"
         op: etch
-        materials: [barrier, aluminium]
+        materials: "${etch_materials}"
         where_open: "${resist_id}"
       - step: "${etch_step}"
         op: strip
@@ -272,3 +274,143 @@ ops:
       al_anchor_y: 217
       bot_note: "Ti or TiW — see the overview"
       cap_note: "TiW or Ti/TiN — see the overview"
+  # ================================================================ the first MiM capacitor (135-138)
+  # Built on the blanket metal-3 stack, before metal 3 is patterned. The dielectric is drawn
+  # 3 u (`thin_ok`: it is seen only in close-ups enlarged about 2.7x) and the plate 8 u, thicker
+  # than the 5 u metal cap: the pages give no thickness for either (not public); their
+  # estimates are 18-33 nm for the dielectric and about 0.1 um for the plate, several times the
+  # 300 A cap of the 2013 stack. The plate is `barrier` (the conventions' Ti/TiN/TiW colour).
+  - step: "135"
+    op: deposit
+    id: capild
+    material: mim-diel
+    t: 3
+    thin_ok: true
+    label:
+      title: "Capacitor dielectric"
+      note: "not public; read here as a PECVD oxynitride"
+      basis: inferred
+  - step: "136"
+    op: deposit
+    id: capm
+    material: barrier
+    t: 8
+    label:
+      title: "Top-plate film"
+      note: "TiW on this reference's reading"
+      basis: inferred
+  # the capacitor: one top plate from x 130, running on past the right edge of the slice
+  - step: "137"
+    op: deposit
+    id: capmres
+    material: resist
+    t: 30
+    where: [[130, 268]]
+    label:
+      title: "Photoresist"
+      note: "CAPM mask, step 137"
+      basis: public
+  # the plate etch stops on the dielectric (the CAPME page's reading); the resist is stripped
+  # in the same step
+  - step: "138"
+    op: etch
+    materials: [barrier]
+    where_open: capmres
+  - step: "138"
+    op: strip
+    materials: [resist]
+  # ================================================================ metal 3 patterned (139-140)
+  # Two metal-3 shapes: a wiring line over the via-2 plug (x 14-76) and the capacitor's bottom
+  # plate (x 100 on, past the edge), which encloses the top plate by 30 u. The MM3 resist
+  # covers the plate; under it the dielectric is not etched, so it stays on both shapes; the
+  # etch removes the dielectric left outside them, then the stack.
+  - use: metal-pattern
+    with:
+      mask_step: "139"
+      etch_step: "140"
+      mask_code: "MM3"
+      resist_id: mm3res
+      resist_where: [[14, 76], [100, 268]]
+      etch_materials: [mim-diel, barrier, aluminium]
+  # ================================================================ NILD5 and via 3 (141-148)
+  # Context for the second capacitor, instantiated here so that 150-153 have a state to draw;
+  # S9b owns these levels and may change them (then rebuild 150-153). Oxide over the metal-3
+  # tops 26 u with the cap (0.39 um on the PDK's stack diagram, against via 2's 0.42 um and
+  # 28 u); over the plate 15 u. Via 3: two 20 u holes, one on the wiring line (etched through
+  # the capacitor dielectric to the cap) and one on the top plate.
+  - use: imd
+    with:
+      dep_step: "141"
+      polish_step: "142"
+      cap_step: "143"
+      imd_id: nild5
+      cap_id: ncap5
+      imd_t: 72
+      polish_to: 256
+  - use: via-hole
+    with:
+      mask_step: "144"
+      etch_step: "145"
+      mask_code: "VIM3"
+      resist_id: vim3res
+      resist_where: [[0, 52], [72, 196], [216, 268]]
+      etch_materials: [oxide-dep, mim-diel]
+  - use: via-plug
+    with:
+      liner_step: "146"
+      fill_step: "147"
+      polish_step: "148"
+      liner_id: v3liner
+      fill_id: v3w
+      fill_t: 12
+      polish_to: 264
+  # ================================================================ the metal-4 stack (149)
+  # As thick as metal 3 (the PDK gives both 0.845 um); top at 306 u.
+  - use: metal-stack
+    with:
+      step: "149"
+      bot_id: m4bot
+      al_id: m4al
+      cap_id: m4cap
+      al_t: 32
+      al_anchor_y: 285
+      bot_note: "Ti or TiW — see the overview"
+      cap_note: "TiW or Ti/TiN — see the overview"
+  # ================================================================ the second MiM capacitor (150-153)
+  # The same construction one level up, the plate drawn over the first one's (x 130 on).
+  - step: "150"
+    op: deposit
+    id: capild2
+    material: mim-diel
+    t: 3
+    thin_ok: true
+    label:
+      title: "Capacitor dielectric"
+      note: "not public; read here as a PECVD oxynitride"
+      basis: inferred
+  - step: "151"
+    op: deposit
+    id: cap2m
+    material: barrier
+    t: 8
+    label:
+      title: "Top-plate film"
+      note: "TiW on this reference's reading"
+      basis: inferred
+  - step: "152"
+    op: deposit
+    id: cap2mres
+    material: resist
+    t: 30
+    where: [[130, 268]]
+    label:
+      title: "Photoresist"
+      note: "CAP2M mask, step 152"
+      basis: public
+  - step: "153"
+    op: etch
+    materials: [barrier]
+    where_open: cap2mres
+  - step: "153"
+    op: strip
+    materials: [resist]
