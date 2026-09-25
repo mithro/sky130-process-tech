@@ -167,3 +167,21 @@ figcaption {
   color: var(--color-foreground-secondary);
   text-align: left;
 }
+
+/* --------------------------------------------------------------------
+   8. "At a glance" box at body-text size, not furo's smaller admonition
+   default (readability review of topic/rd-steps-001-013, finding M9;
+   coordinator ruling (b), owned by W0a). Furo gives every admonition a
+   reduced font-size — right for a caveat aside, wrong for the one block
+   on a step page meant to be read first, which ended up the smallest
+   text on the page apart from a figure caption. Scoped to the
+   `:class: at-a-glance` line R-GLANCE's template now requires
+   (docs/plans/readability-guide.md), so every *other* admonition on the
+   site (:::{seealso}, :::{note}, a mask page's plain note) keeps furo's
+   normal, smaller admonition treatment; only the box meant to be read
+   first is promoted to body-text size. */
+.admonition.at-a-glance,
+.admonition.at-a-glance p,
+.admonition.at-a-glance li {
+  font-size: var(--font-size--normal);
+}
