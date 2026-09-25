@@ -463,3 +463,58 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   pieces (the base marker covered only the downstream-ashing claim, which keeps it); the SPM / Akrion
   split; glance and labels.
 * **Caps**: para > 100 2 → 0; item > 60 1 → 0; sentence > 45 5 → 0.
+
+### 071 LDNTM — done
+
+* **In-force notes.** The page has two hand-written `{dropdown}` notes (Why this step exists; References)
+  and one inside the generated block. None was edited: `invariants.py` confirms every dropdown block
+  byte-identical, and `check_inforce.py` passes. The paragraph the Why note belongs to stays directly
+  above it; inside that paragraph only its 70-word sentence was split at the semicolon ("Cypress's
+  embedded-SONOS patents, which may still be in force, describe the cell in the collapsed note below,
+  …"), wording unchanged; nothing from the note appears elsewhere (glance box included).
+* **Lead.** Unchanged (84 words; first sentence 11).
+* **R-H3.** `### What the public record shows` after the figure caption, over the PDK mask, layer,
+  Error Messages and assumptions-page evidence (≈ 200 words; ends in one hedged reading, "(inference)").
+* **R-PARA.** Labels "**Mask and layers.**", "**Core checks.**", "**Tip angle.**" (evidence sequence).
+  "The public periphery rule set contains no `ldntm` rules;[^pdk-periph] the PDK's *Error Messages* page,
+  however, …" split at the semicolon.
+* **R-LIST.** The six quoted core checks ("… `ldntm.c1` to `ldntm.c6`: "…", … and "…".[^pdk-errors]")
+  → lead-in with the marker before the colon (it ended the enumeration; R-LIST step 1 / R-TABLE step 3)
+  and six plain bullets, each quotation unchanged (the double space inside "must be more than  0.180"
+  kept). Not a `Rule | …` table: the page does not pair each id with a check.
+* **R-CATEGORY.** Classification sentence (21 w) alone; two statements about this step →
+  `**Specific to this step:**`, two bullets.
+* **R-LIST / R-SENTENCE (Why).** The 117-word e-test sentence ("… describe it at drawn W/L …; its
+  programme and erase conditions apply …; and it must keep its window over 100 000 cycles.[^pdk-07]")
+  → lead-in "The PDK's e-test parameters describe it:[^pdk-07]" (the marker, which ended the enumeration,
+  before the colon) and three plain bullets, "and" dropped. The 40-word mid-sentence parenthetical on
+  the "-38" source voltage ("we read it as −3.8 V …") moves, unchanged, to the end of its own sentence
+  and is closed as "(The PDK's table prints … junction limits.)" (R-SENTENCE steps 2 and 7), as an
+  indented continuation of that bullet. This moves "-38" and its "−3.8" after the erase voltages, so
+  `check_preserved` reports a **LOST `number_order`** on that sentence; every value and pairing is
+  unchanged (programme: gate +6.7 V, source/drain/body −3.8 V; erase: gate −3.8 V, the other three
+  +6.7 V; "-38" read as −3.8 V).
+* **R-PARA step 4.** "Junction voltage" (101 w): continuation from "A heavily doped, abrupt tip …".
+  "Charge-trapping reliability" (62 w): split at its semicolon; continuation from "Any hot-carrier
+  injection …".
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-TOOLS.** As 064/068.
+* **R-RELATED.** "Sibling tip masks:" → "Same module: sibling tip masks …"; "Mask page:" → "Mask:".
+* **R-OPENQ.** "Select transistor" (83 w): lead = the question; continuation "The Error Messages page …
+  without naming the device.[^pdk-errors] Table F2b … "NV SONOS Diode".[^pdk-06] On our reading these
+  may include the select transistor, but neither source says so." (split at ", and Table F2b" and at the
+  semicolon; each piece keeps its own marker; the hedge stays with its claim). Labels "Resist thickness
+  and tilt", "Why lightly doped", "Exposure tool"; text unchanged. One line re-wrapped so that the
+  `{term}` role and a code span do not share a line (the known G15 false positive in `check_preserved`).
+* **R-GLANCE.** Does from the lead; Why hedged "on our reading of the cell's published voltages" (Open
+  questions 3 says the reasoning is our reading); Public numbers the two 0.7 core checks
+  `[^pdk-errors]`; tool line; Not public from Open questions 1–2. Nothing from either in-force note.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-errors`, `skw-01`, numbers 0.7×2,
+  quotes "0.7 min. width of ldntmCore", "0.7 min. spacing/notch of ldntmCore", hedges "inference", "not
+  public", "our reading" — all the glance box. LOST `number_order` as above. Declared
+  `--allow-added markers,numbers,quotes,hedges,number_order`; the LOST line is the only one left.
+* **Marker coverage.** 17 flags, all read: the list lead-ins (markers before the colon, by rule); the
+  split pieces (periphery rules / Error Messages; bottom oxide / hot carriers; Error Messages / Table F2b
+  / our reading), each with its own marker; the paragraph before the note (flagged only because the
+  script sees the note's markers as its neighbours); glance and labels.
+* **Caps**: para > 100 2 → 0; item > 60 3 → 0; sentence > 45 5 → 0.
