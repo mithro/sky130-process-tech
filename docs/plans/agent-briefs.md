@@ -83,33 +83,78 @@ uv run python tools/check_preserved.py [--base main] [paths…]
 
 With no paths it finds every `docs/**/*.md` file outside `docs/plans` that
 differs from `--base` (default `main`) and compares each one, base revision
-against the working tree, in eight categories: footnote markers and
+against the working tree, in nine categories: footnote markers and
 definitions, numeric tokens, the *ordered* sequence of numbers that share
-a table row, list item or sentence (`number_order` — see below), quoted
-strings, `{ref}`/`{term}`/`{doc}` targets and URLs, hedge-phrase counts,
-and the text inside every `{dropdown}` block. Anything **lost** always
-fails the check. Anything **added** is printed either way (tagged
-"(declared)" when it was), and fails unless its category is declared with
-`--allow-added` (a comma-separated list, e.g. `--allow-added refs,numbers`
-for a page where a new table adds step numbers already present in prose
-elsewhere on the page). A changed `{dropdown}` body always fails unless
-the edit is deliberately one the dropdown text itself, with
-`--allow-dropdown-edits`. Exit status is 1 on any undeclared difference;
-`uv run python tools/check_preserved.py --selftest` exercises the checker
-itself and touches no files.
+a table row, list item, heading, fence caption/title or sentence
+(`number_order` — see below), quoted strings, `{ref}`/`{term}`/`{doc}`
+targets and URLs, hedge-phrase counts, whole identifier tokens
+("SKY130", "1X"), and the text inside every `{dropdown}` block. Anything
+**lost** always fails the check. Anything **added** is printed either way
+(tagged "(declared)" when it was), and fails unless its category is
+declared with `--allow-added` (a comma-separated list, e.g.
+`--allow-added refs,numbers` for a page where a new table adds step
+numbers already present in prose elsewhere on the page). A changed
+`{dropdown}` body always fails unless the edit is deliberately one the
+dropdown text itself, with `--allow-dropdown-edits`. Exit status is 1 on
+any undeclared difference; `uv run python tools/check_preserved.py
+--selftest` exercises the checker itself and touches no files.
+
+MyST fence lines (`:::{table} Caption`, a bare `:::`/```` ``` ````) and
+directive option lines (`:widths:`, `:width:`, `:name:`, `:class:`,
+`:align:` and a few more layout-only options; not `:alt:`/`:caption:`,
+which hold real prose) are never read as content: an R-CAPTION table's
+`:widths:` values never add undeclarable numbers, but a caption or title
+argument after the `{name}` (real, pre-existing prose, e.g. a table
+caption made from a sentence that used to sit above the table) is still
+counted normally, as its own unit. An ATX heading is always its own unit
+too, and always ends whatever paragraph came before it even with no
+blank line before the heading's body — so an R-H3 conversion never needs
+to omit that blank line to work around the checker. An inline code span's
+backtick delimiters are stripped (its content is kept) before `{ref}`/
+`{term}`/`{doc}` roles are matched, so a role shown as a literal code
+example (documenting the syntax itself) is never misread as a real
+invocation.
 
 **`number_order`.** The plain `numbers` category is a multiset: "6 of
 171" and "171 of 6" are the same two numbers, so a transposition inside
 one claim is invisible to it. `number_order` additionally tracks, per
-table row / list item / (heuristically split) sentence that holds two or
-more numbers, their left-to-right order, and catches exactly that kind of
-swap. It cannot catch a number moved *between* two units — two figures
-exchanged between adjacent table rows, or a marker moved from one claim
-to the next — because each unit's own internal order is still unchanged
-in that case; nor can it catch new prose that introduces no number at
-all. Sentence boundaries are found with a punctuation heuristic, not
-parsed, so an unusual sentence can be split the wrong way — this changes
-what counts as "one unit", not whether the table-row case works.
+table row / list item / heading / fence caption / (heuristically split)
+sentence that holds two or more numbers, their left-to-right order, and
+catches exactly that kind of swap. It cannot catch a number moved
+*between* two units — two figures exchanged between adjacent table rows,
+or a marker moved from one claim to the next — because each unit's own
+internal order is still unchanged in that case; nor can it catch new
+prose that introduces no number at all. Sentence boundaries are found
+with a punctuation heuristic, not parsed, so an unusual sentence can be
+split the wrong way — this changes what counts as "one unit", not
+whether the table-row case works. The heuristic tolerates a closing
+`**`/`*`/`_`/quote/bracket between the sentence-ending punctuation and
+the following space, so a numbered bold run-in label (`**Via 1, metal 2
+and via 2.**`) is correctly split from the sentence after it rather than
+fused with it.
+
+**`--allow-regrouped`: R-TABLE/R-LIST/R-DERIVATION turning one numeric
+unit into several.** Converting a numeric prose sequence into a table or
+list is a normal, presentation-only edit, but by default it fails this
+check: each new row or item is its own `number_order` unit, so the one
+old unit that held all the numbers together is reported **LOST**, with
+nothing on the new side able to explain it away (an addition can be
+declared with `--allow-added`; a loss never can). Pass
+`--allow-regrouped` and the checker instead asks whether the lost
+sequence of numbers still occurs, unchanged and in the same left-to-right
+order, as a *contiguous run* somewhere in the new page (reading order:
+rows top to bottom, cells left to right; list items top to bottom) — and
+if so, prints it as an informational `REGROUPED` line instead of an
+error. This works even when the table ends up with only **one** number
+per row or item (each row alone is far below the two-number tracking
+threshold above, so there is no per-row `number_order` unit at all to
+declare) — the check looks at the page's numbers directly, not at how
+the new page happens to group them. A genuine transposition — two
+numbers swapped within a unit, between adjacent table rows, or between
+list items — breaks the contiguous run and still fails, with or without
+the flag. Always read the printed `REGROUPED` line: it names the old and
+new text the digits came from, so misdeclaring a real swap as a "regroup"
+is still visible.
 
 **Read every reported line regardless.** The check is necessary, not
 sufficient: besides `number_order`'s own limits above, it has no notion

@@ -18,24 +18,47 @@ or **ADDED** in nine categories:
    Digits that are part of an identifier (see 9) are masked out first, so
    "SKY130" does not count as the number 130, and so is a leading ordered-
    list marker ("3. "), so a numbered item's own "3." is never the number 3.
-3. ``number_order`` — per table row, list item or (heuristically split)
-   sentence that contains two or more numbers, the *ordered* tuple of
-   those numbers. ``numbers`` alone is a multiset and cannot tell
-   "6 of 171" from "171 of 6" apart — both are the same two numbers;
-   comparing the order within the unit that holds them both catches that
-   swap. It cannot catch a swap *between* two units (a number moved from
-   one table row or claim to another): see ``extract_number_order``'s
-   docstring and "Checking a readability edit" in agent-briefs.md for
-   that and other limitations. A LOST tuple is always an error *unless*
-   ``--allow-regrouped`` is given and ``check_regrouped`` finds it is a
-   clean regroup of the same digits (review T1) — the deliberate result of
-   R-TABLE/R-DERIVATION/R-LIST turning one dense unit into several.
+   A MyST/backtick fence line (``:::{table} Caption``, a bare ``:::``/
+   `````` ``` `` close) and a directive option line (``:widths:``,
+   ``:width:``, ``:name:``, ``:class:``, ``:align:`` and a few more; not
+   ``:alt:``/``:caption:``, which hold real prose) are masked out too
+   (review section C finding C2, rd-overview finding 2): layout markup and
+   metadata are never content, so an R-CAPTION table's ``:widths:`` values
+   never add undeclarable numbers, but the caption/title text itself
+   (real, pre-existing prose) is still counted normally.
+3. ``number_order`` — per table row, list item, ATX heading, fence
+   caption/title or (heuristically split) sentence that contains two or
+   more numbers, the *ordered* tuple of those numbers. ``numbers`` alone
+   is a multiset and cannot tell "6 of 171" from "171 of 6" apart — both
+   are the same two numbers; comparing the order within the unit that
+   holds them both catches that swap. It cannot catch a swap *between*
+   two units (a number moved from one table row or claim to another):
+   see ``extract_number_order``'s docstring and "Checking a readability
+   edit" in agent-briefs.md for that and other limitations. A LOST tuple
+   is always an error *unless* ``--allow-regrouped`` is given and
+   ``check_regrouped`` finds it still occurs, unchanged and in order, as
+   a contiguous run in the *other* page's flat numeric-token stream
+   (review T1, redesigned per review section C finding C3) — the
+   deliberate result of R-TABLE/R-DERIVATION/R-LIST turning one dense
+   unit into several, including turning it into several rows/items with
+   only *one* number each (rd-overview finding 3), which on its own
+   drops every one of those rows/items below the "two or more numbers"
+   threshold above and so would otherwise be an unconditional,
+   undeclarable loss. A genuine swap — within a unit, between table rows,
+   or between list items — breaks the contiguous run and still fails.
 4. ``quotes`` — the multiset of quoted strings (straight ``"..."`` and
    curly “...”), matched against the whitespace-*flattened* page so a
    quotation that spans a hard-wrapped source line is still seen as one
    run, then whitespace-normalised for comparison like everything else.
 5. ``refs`` — the multiset of ``{ref}``/``{term}``/``{doc}`` targets, and
-   ``urls`` — the multiset of URLs written anywhere on the page.
+   ``urls`` — the multiset of URLs written anywhere on the page. An
+   inline code span's backtick delimiters (`` `...` ``/`` ``...`` ``) are
+   stripped (its content is kept) before roles are matched, so a role
+   shown as a literal code example is never misread as a real invocation
+   (rd-site review finding L5): without this, ``{ref}``/``{term}``/
+   ``{doc}``` scanned forward past the example's own closing backtick to
+   whatever backtick came next, fabricating a fake target out of the text
+   in between.
 6. ``hedges`` — counts of the hedge phrases in HEDGES below (e.g. "about",
    "typical", "our reading", "~"), matched against the same whitespace-
    flattened text as quotes, for the same reason (a hedge phrase can span a
@@ -88,15 +111,22 @@ built-in self-tests (touches no files, needs no git history):
 paragraph splits, a sentence moved between sections, a re-wrapped
 paragraph whose quotation now crosses a different line break, a re-wrapped
 paragraph whose hedge now crosses a different line break, prose turned
-into a table with the same values, "SKY130"/"SC-1"/"1X"/a numbered-item
-marker never counting as numbers, and (with ``--allow-regrouped``) a
-prose sentence turned into a table all pass; a dropped footnote marker, a
-changed number, two numbers swapped in place ("6 of 171" to "171 of 6"),
-a dropped hedge, an altered quotation (including one that spans a source
-line break), an identifier changed ("SKY130" to "SKY 130"), the same
-table split *without* ``--allow-regrouped``, a regroup with a genuinely
-missing number even *with* ``--allow-regrouped``, and text moved out of a
-dropdown all fail.
+into a table with the same values, a numbered bold run-in label converted
+to a heading (a digit-bearing label immediately followed by ``**`` no
+longer fuses with the next sentence), a ``:::{table}`` caption/``:widths:``
+pair (the caption's own numbers are kept, the fence and ``:widths:``
+line are not), "SKY130"/"SC-1"/"1X"/a numbered-item marker never counting
+as numbers, a role shown as a literal inline-code example never counting
+as a real role, a bare number directly before a year-like number not
+mis-tokenising into a bogus grouped number, and (with ``--allow-regrouped``)
+a prose sentence turned into a table, and a numeric sequence regrouped
+into one-number-per-row table or list rows, all pass; a dropped footnote
+marker, a changed number, two numbers swapped in place ("6 of 171" to
+"171 of 6"), a dropped hedge, an altered quotation (including one that
+spans a source line break), an identifier changed ("SKY130" to "SKY 130"),
+the same table split *without* ``--allow-regrouped``, a regroup with a
+genuinely missing number or a genuine swap between rows even *with*
+``--allow-regrouped``, and text moved out of a dropdown all fail.
 """
 
 from __future__ import annotations
@@ -127,6 +157,35 @@ URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
 BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
 QUOTE_RE = re.compile(r'"([^"\n]{1,400})"|“([^”\n]{1,400})”')
 
+# An inline code span (`` ``...`` `` or `` `...` ``) whose *opening*
+# backtick does not immediately follow a role's closing brace (rd-site
+# review, finding L5): ROLE_RE scans forward from ``{ref}``/``{term}``/
+# ``{doc}``` for the next backtick with no notion of code-span nesting, so
+# a role shown as a literal example inside its own inline code span (e.g.
+# a glossary intro demonstrating the ``{term}`text``` syntax) is misread as
+# a *real* role invocation, fabricating a fake ref/term target out of
+# whatever text sits between that span's own backtick and the next one
+# anywhere later in the paragraph. Masking these spans first — by
+# stripping only their backtick *delimiters*, not their content, so a
+# genuine identifier or number written in code style is still tracked
+# normally — removes the backtick ROLE_RE would otherwise latch onto.
+# The negative lookbehind leaves a real role's own opening backtick
+# (always directly after "}") untouched, and the inner negative lookahead
+# refuses to let a tentative span swallow a role-start sequence, so a
+# stray, unrelated code span earlier in the same paragraph can never eat
+# into a later genuine role by matching all the way to *its* backtick.
+_ROLE_START = r"\{(?:ref|term|doc)\}`"
+_CODE_SPAN_DOUBLE_RE = re.compile(r"(?<!\})``((?:(?!``).)*?)``")
+_CODE_SPAN_SINGLE_RE = re.compile(
+    rf"(?<!\}})`((?:(?!{_ROLE_START})[^`\n])*)`"
+)
+
+
+def _mask_inline_code(text: str) -> str:
+    text = _CODE_SPAN_DOUBLE_RE.sub(lambda m: m.group(1), text)
+    text = _CODE_SPAN_SINGLE_RE.sub(lambda m: m.group(1), text)
+    return text
+
 # An inch mark: a straight double quote right after a digit, immediately
 # followed (optionally after a closing bracket) by another straight quote,
 # as in 8"" or (8")". Left unmasked, QUOTE_RE reads the inch mark as a quote
@@ -145,7 +204,16 @@ INCH_RE = re.compile(r'(?:(?<=\(\d)|(?<=[^A-Za-z\s] \d))"(?=[)\]]?")')
 _SIGN = r"[+\-−±]"
 _SUP_DIGITS = "⁰¹²³⁴⁵⁶⁷⁸⁹"
 _SUP_CLASS = rf"[{_SUP_DIGITS}⁻⁺]"
-_GROUPED = r"\d{1,3}(?:[,   ]\d{3})+"
+# (?!\d) after each group of 3 stops a bare space from over-running into
+# a following, unrelated number: without it "Q4 2020" tokenised as "4 202"
+# + "0" (rd-overview reviewer, 2026-09-25 review, section C finding C4) --
+# "2020" was read as the start of a thousands-grouped number ("4 202") plus
+# a stray trailing "0", because the space between "4" and "2020" is also a
+# valid thousands separator and nothing stopped the group from being
+# followed by a fourth digit. Real thousands groups ("3 200", "1,940",
+# "12,500") are unaffected: each of their groups is followed by whitespace,
+# punctuation or end of string, never a fifth digit.
+_GROUPED = r"\d{1,3}(?:[,   ]\d{3}(?!\d))+"
 _PLAIN = r"\d+"
 _INT = rf"(?:{_GROUPED}|{_PLAIN})"
 _DEC = r"(?:\.\d+)?"
@@ -227,7 +295,45 @@ _LIST_ITEM_RE = re.compile(r"^(?:[*-]|\d+[.)])\s+")
 _TABLE_ROW_RE = re.compile(r"^\|")
 # A rough sentence boundary: end punctuation followed by a capital, a
 # digit, or an opening quote. Heuristic only — see extract_number_order.
-_SENTENCE_SPLIT_RE = re.compile(r'(?<=[.!?])\s+(?=[A-Z0-9"“])')
+# The closing markers `` [*_"”’)\]]* `` between the punctuation and the
+# whitespace let the boundary through a closing bold/italic marker, a
+# closing quote, a closing bracket, or several of these together (rd-
+# overview finding 1 / review C1): a numbered bold run-in label such as
+# "**Via 1, metal 2 and via 2.**" was invisible to the old regex, because
+# it required `[.!?]` to be *immediately* followed by whitespace, and
+# ".**" has "*" in between — the label's digits silently fused with the
+# next sentence's into one bogus, inflated `number_order` unit. The
+# `[*_(]*` before the capital/digit/quote symmetrically lets the boundary
+# through an *opening* marker on the next sentence (e.g. a new bold label).
+_SENTENCE_SPLIT_RE = re.compile(r'(?<=[.!?])[*_"”’)\]]*\s+(?=[*_(]*[A-Z0-9"“])')
+# An ATX heading ("### Name") is always its own unit and always ends
+# whatever paragraph came before it, even with no blank line in between
+# (review C1): without this, a bold run-in label converted to a heading
+# with no blank line before its body (a workaround some branches used
+# specifically to dodge the bug above) reads as one fused unit, same as
+# the un-fixed sentence splitter did. With both C1 fixes landed, that
+# workaround is unnecessary — a heading may always be followed directly
+# by its body with no blank line, or written the normal way with one.
+_HEADING_RE = re.compile(r"^#{1,6}\s+(.*)$")
+# A fence line: a MyST/backtick directive open (optionally with a caption
+# or title after the ``{name}``, e.g. ``:::{table} Caption text.`` or
+# ``::::{dropdown} Title``) or a bare close (``:::``/`````` ``). Also
+# always its own unit boundary, and never itself prose (review C2): the
+# fence markup is layout, not content. A caption/title *argument* after
+# the ``{name}`` is real content that pre-existed as ordinary prose before
+# the fence was added (e.g. an R-CAPTION table caption), so it is passed
+# on to ``add_prose`` as its own unit rather than discarded with the
+# fence syntax.
+_FENCE_RE = re.compile(r"^(?::{3,}|`{3,})\s*(?:\{[\w-]+\})?\s*(.*)$")
+# MyST directive option lines (``:widths: 16 20 28 12 24``, ``:name: ...``)
+# inside a fence: layout metadata, never content (review C2). Masked out
+# before number/identifier extraction in ``extract_all`` (not here: this
+# module-level constant is reused there). Deliberately excludes ``:alt:``
+# and ``:caption:``, which hold real, previously-existing prose.
+_LAYOUT_OPTION_RE = re.compile(
+    r"(?m)^[ \t]*:(?:widths|width|height|scale|align|name|class|"
+    r"header-rows|stub-columns|maxdepth|numbered):.*$"
+)
 
 
 def normalize_ws(s: str) -> str:
@@ -331,6 +437,19 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
     while i < len(lines):
         line = lines[i]
         stripped = line.strip()
+        hm = _HEADING_RE.match(stripped)
+        if hm:
+            flush_paragraph()
+            add_unit(hm.group(1))
+            i += 1
+            continue
+        fm = _FENCE_RE.match(stripped)
+        if fm:
+            flush_paragraph()
+            if fm.group(1):
+                add_prose(fm.group(1))
+            i += 1
+            continue
         if _TABLE_ROW_RE.match(stripped):
             flush_paragraph()
             add_unit(line)
@@ -416,11 +535,16 @@ def extract_urls_masked(text: str) -> tuple[Counter, str]:
     return counts, text
 
 
-def extract_all(text: str) -> tuple[dict[str, Counter], dict[tuple[str, ...], list[str]]]:
+def extract_all(
+    text: str,
+) -> tuple[dict[str, Counter], dict[tuple[str, ...], list[str]], list[str]]:
     defs: dict[str, str] = {}
     for label, body in DEF_RE.findall(text):
         defs[label] = normalize_ws(body)
     body_text = DEF_RE.sub("", text)
+    # Strip inline-code backtick delimiters before anything else scans for
+    # markers/roles/quotes (rd-site review L5): see _mask_inline_code.
+    body_text = _mask_inline_code(body_text)
 
     markers = Counter(MARKER_RE.findall(body_text))
 
@@ -433,6 +557,11 @@ def extract_all(text: str) -> tuple[dict[str, Counter], dict[tuple[str, ...], li
     masked = ROLE_RE.sub(_role_sub, body_text)
     urls, masked = extract_urls_masked(masked)
     masked = MARKER_RE.sub(" ", masked)
+    # Layout-only directive options (":widths: 16 20 28 12 24", etc.) are
+    # never content (review C2, rd-overview finding 2): masked out here,
+    # before quotes/hedges/numbers/identifiers ever see them, so a
+    # captioned table's own layout metadata can never be misread as prose.
+    masked = _LAYOUT_OPTION_RE.sub(" ", masked)
 
     # Flatten before matching (review finding H1): the repository's
     # markdown is hard-wrapped, so a quotation frequently spans a source
@@ -465,9 +594,20 @@ def extract_all(text: str) -> tuple[dict[str, Counter], dict[tuple[str, ...], li
         return " "
 
     masked_for_numbers = IDENT_RE.sub(_ident_sub, masked)
-    numbers = extract_numbers(_LEADING_LIST_MARKER_RE.sub(" ", masked_for_numbers))
+    numbers_stream_text = _LEADING_LIST_MARKER_RE.sub(" ", masked_for_numbers)
+    numbers = extract_numbers(numbers_stream_text)
     number_order, number_order_samples = extract_number_order(masked_for_numbers)
     footnotes = Counter(f"[^{label}]: {text}" for label, text in defs.items())
+    # The page's numeric tokens, left to right, ignoring all unit
+    # boundaries (review C3, rd-overview finding 3): used only by
+    # check_regrouped, to recognise a LOST number_order tuple that still
+    # occurs, unchanged and in the same order, as a contiguous run
+    # somewhere in the *other* page's stream -- i.e. the same numbers were
+    # only regrouped into different rows/items/sentences, which is exactly
+    # what R-TABLE/R-LIST does to a numeric prose sequence. Computed from
+    # the same fully-masked text as `numbers`/`number_order`, so widths
+    # and identifiers never enter it.
+    stream = _number_tokens_ordered(numbers_stream_text)
 
     return {
         "markers": markers,
@@ -479,7 +619,7 @@ def extract_all(text: str) -> tuple[dict[str, Counter], dict[tuple[str, ...], li
         "hedges": hedges,
         "number_order": number_order,
         "identifiers": identifiers,
-    }, number_order_samples
+    }, number_order_samples, stream
 
 
 # ---------------------------------------------------------------------------
@@ -544,83 +684,80 @@ def format_counter(c: Counter, limit: int = 100) -> str:
     return "; ".join(parts)
 
 
-def _is_subsequence(sub: tuple[str, ...], full: tuple[str, ...]) -> bool:
-    it = iter(full)
-    for x in sub:
-        for y in it:
-            if y == x:
-                break
-        else:
-            return False
-    return True
-
-
-def _flatten(tuples_counter: Counter) -> Counter:
-    flat: Counter = Counter()
-    for t, n in tuples_counter.items():
-        for v in t:
-            flat[v] += n
-    return flat
+def _contiguous(t: tuple[str, ...], stream: list[str]) -> bool:
+    """Whether ``t`` occurs, in order and with nothing else interleaved,
+    somewhere in ``stream`` (a plain sliding-window check)."""
+    n = len(t)
+    if n == 0 or n > len(stream):
+        return False
+    return any(tuple(stream[k : k + n]) == t for k in range(len(stream) - n + 1))
 
 
 def check_regrouped(
     lost_no: Counter,
     added_no: Counter,
-    old_numbers: Counter,
-    new_numbers: Counter,
-    numbers_allowed: bool,
+    old_stream: list[str],
+    new_stream: list[str],
     old_samples: dict[tuple[str, ...], list[str]],
     new_samples: dict[tuple[str, ...], list[str]],
-) -> tuple[bool, list[str]]:
-    """``--allow-regrouped`` (review T1): downgrade a ``number_order`` LOST
-    to a warning when all four hold:
+) -> tuple[Counter, Counter, list[str]]:
+    """``--allow-regrouped`` (review T1, redesigned per review C3 for
+    rd-overview finding 3): reclassify a ``number_order`` LOST tuple as an
+    informational REGROUPED line, rather than an error, when it still
+    occurs — same numbers, same order, nothing interleaved — as a
+    contiguous run in the *other* page's flat, left-to-right numeric-token
+    stream (``extract_all``'s ``"_stream"``, built after masking widths,
+    identifiers, roles etc. away, so only real content numbers are in it).
+    Symmetric for an ADDED tuple checked against the old page's stream (a
+    table or list collapsed into prose).
 
-    (a) ``numbers`` itself has no LOST — nothing actually disappeared, only
-        the grouping changed;
-    (b) the flattened multiset of numbers across the LOST tuples equals
-        that of the ADDED tuples, once numbers separately declared with
-        ``--allow-added numbers`` are removed from the ADDED side (a
-        deliberate new number — an "At a glance" box repeating one — is
-        not required to also balance the regrouping arithmetic);
-    (c) every ADDED tuple is an ordered subsequence of some one LOST
-        tuple. This is what actually catches a same-unit transposition; it
-        cannot catch a *wrong* "respectively" pairing, because both the
-        right and the wrong pairing are equally valid subsequences of the
-        same lost tuple — that is what (d) is for;
-    (d) print each LOST unit's source text next to the ADDED units that,
-        per (c), cover it, so the reviewer reads the actual pairing rather
-        than trusting the digits alone.
+    This one check replaces four narrower ones from the first design. It
+    directly covers the case that design could not: R-TABLE/R-LIST turning
+    one multi-number unit into several rows/items with only *one* number
+    each. Each such row/item alone falls below ``extract_number_order``'s
+    2-or-more-numbers-per-unit threshold, so *no* per-unit ADDED tuple
+    exists at all to "cover" the LOST one — the old design required at
+    least one, the stream check does not, because it looks at the page's
+    numbers directly rather than at how they happen to be grouped into
+    units on the new side.
 
-    Returns ``(all four hold, extra message lines including the (d)
-    printout)``. When any of (a)-(c) fails, the extra lines say which.
+    A real swap is still caught: transposing two numbers, whether within
+    one unit, between adjacent table rows, or between list items, breaks
+    contiguity in the stream (the exact sequence no longer appears
+    anywhere, in that order, with nothing else run through it), so it
+    stays a real, undeclarable LOST/ADDED difference.
+
+    Known limit — not multiplicity-aware: if a tuple's digits occur twice
+    in one page and only one copy survives on the other, the survivor
+    still satisfies "occurs as a contiguous run", so the loss of the
+    second copy is excused too. Rare in practice (it requires the same
+    multi-number grouping to appear verbatim twice on one page) and
+    already flagged by the plain ``numbers``/``identifiers`` categories if
+    the vanished copy's own text otherwise differed; not a substitute for
+    the reviewer reading the diff (see the module docstring).
+
+    Returns ``(still-lost, still-added, info lines)``: the LOST/ADDED
+    tuples that were *not* explained as a regroup (still errors), and
+    human-readable lines reporting what was excused and why.
     """
     lines: list[str] = []
-    if old_numbers - new_numbers:
-        return False, ["condition (a) failed: `numbers` itself lost a value"]
-    declared_added_numbers = (new_numbers - old_numbers) if numbers_allowed else Counter()
-    lost_flat = _flatten(lost_no)
-    added_flat = _flatten(added_no) - declared_added_numbers
-    if lost_flat != added_flat:
-        return False, [
-            "condition (b) failed: flattened numbers differ - lost "
-            f"{dict(lost_flat)} vs added (after declared) {dict(added_flat)}"
-        ]
-    lost_units = list(lost_no)
-    for added_tuple in added_no:
-        if not any(_is_subsequence(added_tuple, t) for t in lost_units):
-            return False, [
-                f"condition (c) failed: added tuple {added_tuple} is not an "
-                "ordered subsequence of any lost tuple"
-            ]
-    for lost_tuple in lost_units:
-        covering = [t for t in added_no if _is_subsequence(t, lost_tuple)]
-        lines.append(f"regrouped: {lost_tuple} -> {covering}")
-        for sample in old_samples.get(lost_tuple, [])[:1]:
-            lines.append(f"    was: {sample!r}")
-        for t in covering:
+    still_lost: Counter = Counter()
+    still_added: Counter = Counter()
+    for t, c in lost_no.items():
+        if _contiguous(t, new_stream):
+            lines.append(f"REGROUPED (--allow-regrouped) number_order, was: {t}")
+            for sample in old_samples.get(t, [])[:1]:
+                lines.append(f"    was: {sample!r}")
+        else:
+            still_lost[t] = c
+    for t, c in added_no.items():
+        if _contiguous(t, old_stream):
+            lines.append(f"REGROUPED (--allow-regrouped) number_order, now: {t}")
             for sample in new_samples.get(t, [])[:1]:
-                lines.append(f"    now {t}: {sample!r}")
-    return True, lines
+                lines.append(f"    now: {sample!r}")
+        else:
+            still_added[t] = c
+    return still_lost, still_added, lines
 
 
 def diff_page(
@@ -632,33 +769,18 @@ def diff_page(
 ) -> list[tuple[bool, str]]:
     """Return (is_failure, message) pairs; does not print anything."""
     results: list[tuple[bool, str]] = []
-    old, old_samples = extract_all(old_text)
-    new, new_samples = extract_all(new_text)
+    old, old_samples, old_stream = extract_all(old_text)
+    new, new_samples, new_stream = extract_all(new_text)
     for cat in CATEGORIES:
         lost = old[cat] - new[cat]
         added = new[cat] - old[cat]
         limit = _DISPLAY_LIMIT.get(cat, 100)
-        if cat == "number_order" and allow_regrouped and lost:
-            ok, extra = check_regrouped(
-                lost, added, old["numbers"], new["numbers"],
-                "numbers" in allowed, old_samples, new_samples,
+        if cat == "number_order" and allow_regrouped and (lost or added):
+            lost, added, extra = check_regrouped(
+                lost, added, old_stream, new_stream, old_samples, new_samples,
             )
-            if ok:
-                results.append(
-                    (False, f"REGROUPED (--allow-regrouped) number_order: "
-                            f"{format_counter(lost, limit)} -> {format_counter(added, limit)}")
-                )
-                for line in extra:
-                    results.append((False, line))
-                continue
-            results.append((True, f"LOST number_order (not a clean regroup): {format_counter(lost, limit)}"))
             for line in extra:
-                results.append((True, line))
-            if added:
-                is_fail = cat not in allowed
-                tag = "ADDED" if is_fail else "ADDED (declared)"
-                results.append((is_fail, f"{tag} {cat}: {format_counter(added, limit)}"))
-            continue
+                results.append((False, line))
         if lost:
             results.append((True, f"LOST {cat}: {format_counter(lost, limit)}"))
         if added:
@@ -812,6 +934,31 @@ def selftest() -> int:
         "# P\n\nA value (our extraction\nfrom data).[^a]\n\n[^a]: Source. <https://example.com/a>\n",
         True,
     )
+    case(
+        "a numbered bold run-in label immediately followed by ** does not "
+        "fuse its digits with the next sentence's, so R-H3 does not report "
+        "a false number_order LOST (rd-overview finding 1 / review C1)",
+        "# P\n\n**Metal 4, second MiM capacitor, via 4 and metal 5.** The "
+        "second capacitor sits on metal 4.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        "# P\n\n### Metal 4, second MiM capacitor, via 4 and metal 5\n\n"
+        "The second capacitor sits on metal 4.[^a]\n\n"
+        "[^a]: Source. <https://example.com/a>\n",
+        True,
+    )
+    case(
+        "a :::{table} caption / :widths: pair adds no undeclared numbers "
+        "or number_order (rd-overview finding 2 / review C2): the caption "
+        "sentence is kept as content, the fence and :widths: line are not",
+        "# P\n\nSee the numbers 16 and 20 in the caption below.[^a]\n\n"
+        "| Level | Width |\n|---|---|\n| 1 | 16 |\n| 2 | 20 |\n"
+        "\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\n:::{table} See the numbers 16 and 20 in the caption below.[^a]\n"
+        ":widths: 30 70\n\n"
+        "| Level | Width |\n|---|---|\n| 1 | 16 |\n| 2 | 20 |\n:::\n"
+        "\n[^a]: Source. <https://example.com/a>\n",
+        True,
+    )
 
     # -- T1: --allow-regrouped -------------------------------------------
     _regroup_old = (
@@ -836,6 +983,47 @@ def selftest() -> int:
         "# P\n\n| A | B |\n|---|---|\n| 5 | 6 |\n| 7 | 9[^a] |\n"
         "\n[^a]: Source. <https://example.com/a>\n",
         False,
+        allow_regrouped=True,
+    )
+    # -- gap 3 (rd-overview finding 3): a numeric prose sequence regrouped
+    # into a table/list with only *one* number per row/item. Each row/item
+    # alone is below the 2-number tracking threshold, so no per-unit ADDED
+    # tuple exists at all -- the original T1 design required one and so
+    # rejected this unconditionally; the stream-contiguity redesign (C3)
+    # does not need one.
+    _regroup_singleton_old = (
+        "# P\n\nThe count is 2, 3 and 4 masks per tier.[^a]\n"
+        "\n[^a]: Source. <https://example.com/a>\n"
+    )
+    _regroup_singleton_new = (
+        "# P\n\n| Tier | Masks |\n|---|---|\n| A | 2 |\n| B | 3 |\n"
+        "| C | 4[^a] |\n\n[^a]: Source. <https://example.com/a>\n"
+    )
+    case(
+        "a numeric prose sequence regrouped into one-number-per-row table "
+        "rows is accepted under --allow-regrouped",
+        _regroup_singleton_old, _regroup_singleton_new, True, allow_regrouped=True,
+    )
+    case(
+        "the same one-number-per-row regroup still fails without --allow-regrouped",
+        _regroup_singleton_old, _regroup_singleton_new, False,
+    )
+    case(
+        "a real swap between rows in a one-number-per-row regroup is still "
+        "caught, even with --allow-regrouped",
+        _regroup_singleton_old,
+        "# P\n\n| Tier | Masks |\n|---|---|\n| A | 3 |\n| B | 2 |\n"
+        "| C | 4[^a] |\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+        allow_regrouped=True,
+    )
+    case(
+        "the same one-number-per-row regroup as a bulleted list, not a "
+        "table, is also accepted under --allow-regrouped",
+        _regroup_singleton_old,
+        "# P\n\n* Tier A: 2\n* Tier B: 3\n* Tier C: 4[^a]\n"
+        "\n[^a]: Source. <https://example.com/a>\n",
+        True,
         allow_regrouped=True,
     )
 
@@ -901,12 +1089,12 @@ def selftest() -> int:
     # extract_all rather than through diff_page, since these are single-
     # text assertions, not before/after comparisons.
     def assert_no_numbers(name: str, body: str) -> None:
-        extracted, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
         if extracted["numbers"]:
             problems.append(f"{name}: expected no numbers, got {dict(extracted['numbers'])}")
 
     def assert_has_number(name: str, body: str, expected: str) -> None:
-        extracted, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
         if extracted["numbers"].get(expected, 0) < 1:
             problems.append(f"{name}: expected {expected!r} in {dict(extracted['numbers'])}")
 
@@ -918,6 +1106,66 @@ def selftest() -> int:
         "2. **Step.** No digits appear in this sentence at all.",
     )
     assert_has_number("0.18µm still yields 0.18", "The gap is 0.18µm wide.", "0.18")
+
+    def assert_numbers(name: str, body: str, expected: set[str]) -> None:
+        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        got = set(extracted["numbers"].elements())
+        if got != expected:
+            problems.append(f"{name}: expected numbers {expected!r}, got {got!r}")
+
+    # -- C4: a space-grouped number must not over-run into a following,
+    # unrelated number. A bare 1-3 digit number directly followed by a
+    # space and a 3-or-4-digit number used to tokenise as a bogus grouped
+    # number plus a stray leftover digit ("4 2020" -> "4 202" + "0";
+    # rd-overview review section C, finding C4, reported as "Q4 2020" --
+    # reproduced here without the leading letter, which this repository's
+    # own identifier masking (T2, already on main) already protects "Q4"
+    # with, unlike the reviewer's prototype tool). A real space-grouped
+    # thousands number ("3 200") must still work.
+    assert_numbers(
+        "a bare number directly followed by a year-like number is not "
+        "mis-split into a bogus grouped number (C4: 'Q4 2020' -> "
+        "'4 202' + '0')",
+        "The value is 4 2020, next to 3 200 wafers.",
+        {"4", "2020", "3 200"},
+    )
+
+    def assert_refs(name: str, body: str, expected: set[str]) -> None:
+        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        got = set(extracted["refs"].elements())
+        if got != expected:
+            problems.append(f"{name}: expected refs {expected!r}, got {got!r}")
+
+    # -- rd-site review finding L5: ROLE_RE has no notion of inline-code
+    # nesting and scans forward for the next backtick regardless, so a
+    # role shown as a literal code-span example (documenting the syntax
+    # itself, not using it) is misread as a real role invocation.
+    assert_refs(
+        "a role shown as a literal inline-code example is not read as a "
+        "real role invocation (L5: ROLE_RE runs through the code span's "
+        "own backtick)",
+        "Write a term link by wrapping it as `{term}`sense`` in the source.",
+        set(),
+    )
+    assert_refs(
+        "a genuine role still resolves normally after inline-code masking",
+        "See {ref}`overview-modules` for details.",
+        {"overview-modules"},
+    )
+    assert_refs(
+        "a genuine role right after an unrelated inline code span still "
+        "resolves (the code span's own backtick is not consumed into the "
+        "role's)",
+        "Set `nfet_01v8` then see {ref}`overview-modules` for details.",
+        {"overview-modules"},
+    )
+    assert_refs(
+        "a stray unmatched backtick earlier in the paragraph cannot "
+        "swallow a later genuine role's own opening backtick",
+        "Note the ` odd stray mark, then see {ref}`overview-modules` for "
+        "details.",
+        {"overview-modules"},
+    )
 
     # -- inch marks (checkers review, "check_preserved.py quote finding"):
     # a straight-quote inch mark right before a real closing quote used to
