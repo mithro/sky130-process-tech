@@ -490,6 +490,55 @@ table cells > 25: 0. After: see the batch summary at the end.
   either); "We read …" (base marker on the quotation); a label.
 * **Caps**: para > 100 1 → 0; item > 60 1 → 0; sentence > 45 3 → 0.
 
+### 058 GATENIT — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the `npc`/NPCM record,
+  the "poly cap after SPE" reading and the e-test "with NGNIT" parameter (≈ 185 words).
+* **R-LIST.** The three PDK facts about the later nitride cut ("The PDK's mask table lists …,[^pdk-05]
+  the drawn layer `npc` … ,[^pdk-06] and the rules require …[^pdk-periph]") → three plain bullets,
+  each with its own marker, under the page's own lead-in sentence (its full stop → colon; "and"
+  dropped). The four ARC studies (Ogawa; Dijkstra and Juffermans; Czech; He) → sub-bullets inside the
+  "Hard mask and anti-reflective layer" item, each with its marker (§4.1 "studies as sub-bullets";
+  the lead-in "Silicon oxynitride and nitride films … were the standard inorganic anti-reflective
+  layers of the KrF generation:" keeps its colon).
+* **R-SENTENCE / R-PARA.** The 53-word inference sentence split at "; this reference accordingly
+  places …"; paragraph split before the e-test sentence. "Resistor protection" item: the Tsang
+  sentence split at ", which is what a cap …" → "This is what …" (the base marker stood before
+  "which", so it never covered that clause). LPCVD item (124 w, one 67-word sentence with nested
+  dashes): split into "The film is stoichiometric, dense and strongly tensile — of the order of 1 GPa
+  … (typical industry value, …;[^txt-02])." / "Temple-Boyer et al. measured ≈600 MPa … the
+  stress.[^temple-boyer-1998]" / "It deposits on both sides of the wafer — one reason a backside film
+  removal (BFR) follows." ("and" dropped; hedge and markers stay with their values).
+* **R-CATEGORY.** Classification sentence (25 w) alone; "Both are on SkyWater's public capability
+  list — …" as the second paragraph (one sentence about this step); "What distinguishes this nitride
+  from ISONIT and SPNIT is that …" is its own label (the step-3 form), third paragraph.
+* **R-PARA step 4.** "Hard mask …" (169 w), "A cap that stays" (85 w), "Resistor protection" (92 w),
+  "LPCVD nitride" (124 w), "PECVD nitride" (100 w): lead sentence + indented continuation paragraphs.
+* **R-HEDGE, R-TOOLS** (Aviza: *SkyWater says:* states "Furnaces are all made by Aviza", with LPCVD
+  nitride listed — "states" added for verb-first, as on 043; "C1": *SkyWater says:* the two listed
+  entries, and the inventory's reading of "C1" as a Novellus Concept One, "which is an inference", as
+  the continuation paragraph), **R-OPENQ** (labels "LPCVD or PECVD", "Function of the nitride", "The
+  "poly cap after SPE" entry", "Later doping of the gate").
+* **R-RELATED.** Previous/Next split. The "Backside film removed at BFR; patterned at …; cut …;
+  possible polish stop …" bullet (mixed modules) and "Other nitrides: ISONIT, ONO, SPNIT, LINIT"
+  (ONO is an oxidation step, so "Same category:" would not be true of every link) keep their own
+  glosses and no label.
+* **R-GLANCE.** Why is hedged as the lead hedges the whole purpose ("what follows is our inference
+  from the PDK's public rules"); Public numbers gives the 0.2 µm "poly cap after SPE" with "(our
+  reading)" of what it measures.
+* **Left over the caps.** The PECVD "The film is hydrogen-rich, its stress can be tuned …" sentence
+  (46 w; no split point that keeps its em-dash pair whole); the "Later doping of the gate" Open
+  question (46 w, base text after the label).
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 0.2, quotes
+  "poly cap after SPE" ×2 (glance; the Open-questions label), "C1" (glance), hedges "inference", "not
+  public" ×2, "our reading", identifier `C1` — glance box and one label. REGROUPED: the `npc` list and
+  the Temple-Boyer split, same digits in the same order. Declared
+  `markers,numbers,quotes,hedges,identifiers`: clean.
+* **Marker coverage.** 13 flags, all read (list items and study sub-bullets keep their own markers;
+  the ARC lead-in is followed directly by its four cited studies; pieces whose base marker belonged
+  to another clause; labels).
+* **Caps**: para > 100 3 → 0; item > 60 6 → 0; sentence > 45 7 → 2 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph

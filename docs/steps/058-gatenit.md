@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`UPRIS <step-057>` |
 | **Next step** | {ref}`POC <step-059>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a blanket silicon nitride on top of the doped gate
+  poly, the first layer of the gate cap.
+* **Why:** on our inference from the PDK's rules, a cap that seals the
+  gate until contacts are cut, and possibly the gate layer's
+  anti-reflective layer or hard mask.
+* **Public numbers:** none for the nitride itself; the PDK's "poly cap
+  after SPE" of 0.2 µm,[^pdk-03] read here as the whole cap stack (our
+  reading).
+* **Likely SkyWater tool:** Aviza furnace (LPCVD nitride) or "C1" PECVD
+  system — strong for existence; which one is not public.[^skw-01]
+* **Not public:** LPCVD or PECVD, and the film's thickness and optical
+  constants (→ Open questions).
+:::
+
 ## What this step is
 
 `GATENIT` deposits a blanket silicon nitride film on top of the doped
@@ -29,22 +46,29 @@ rules.
 Before, the doped gate film; after, the blanket nitride cap on top of it. Its thickness and whether it is deposited by LPCVD or PECVD are not public, so it is drawn at an arbitrary thickness. That it stays on the gates until contacts are cut, and is opened only under them, is the page's inference from the PDK's nitride-cut rules[^pdk-periph] and its "poly cap after SPE" of 0.2 µm, read as the whole cap stack.[^pdk-03] The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
 
-The most informative public fact is what happens to this film later.
-The PDK's mask table lists a "Nitride Poly Cut, NPCM" mask,[^pdk-05]
-the drawn layer `npc` (GDS 95:20) is described as "Nitride poly cut
-(under licon1 areas)",[^pdk-06] and the rules require every precision
-resistor to be enclosed by `npc` by 0.095 µm (rpm.5) and keep `npc`
-0.090 µm from any gate (npc.4).[^pdk-periph] The assumptions table
+The most informative public fact is what happens to this film later:
+
+* The PDK's mask table lists a "Nitride Poly Cut, NPCM" mask.[^pdk-05]
+* The drawn layer `npc` (GDS 95:20) is described as "Nitride poly cut
+  (under licon1 areas)".[^pdk-06]
+* The rules require every precision
+  resistor to be enclosed by `npc` by 0.095 µm (rpm.5) and keep `npc`
+  0.090 µm from any gate (npc.4).[^pdk-periph]
+
+The assumptions table
 also gives a "poly cap after SPE" of 0.2 µm,[^pdk-03] which we read as
 the thickness of cap material still standing on the gate after the
 {term}`spacer` etch; the table does not define the term further. We
 therefore infer that the nitride deposited here stays on top of the
 poly through gate etch, spacer formation and the source/drain
 implants, and is opened only where the local-interconnect contacts
-must reach the poly; this reference accordingly places the nitride
+must reach the poly. This reference accordingly places the nitride
 cut ({ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`) after the spacer
-etch ({ref}`SPE <step-077>`) and before the source/drain masks. The
+etch ({ref}`SPE <step-077>`) and before the source/drain masks.
+
+The
 PDK's e-test table gives the poly sheet-resistance parameter as "poly
 sheet resistance, with NGNIT",[^pdk-07] a second public sign that the
 production poly is measured with a nitride on it.
@@ -53,11 +77,15 @@ production poly is measured with a nitride on it.
 
 `GATENIT` is a {ref}`Thin-film deposition <category-deposition>` step:
 a silicon nitride deposited either by furnace {term}`LPCVD` from
-dichlorosilane and ammonia or by {term}`PECVD` from silane and ammonia. Both
+dichlorosilane and ammonia or by {term}`PECVD` from silane and ammonia.
+
+Both
 are on SkyWater's public capability list — "LPCVD nitride" among the
 Aviza furnace processes, and "PECVD nitride C1" and "PECVD silane
 oxide/nitride/oxynitride, C1" among the PECVD tools[^skw-01] — and no
-public source says which is used here. What distinguishes this
+public source says which is used here.
+
+What distinguishes this
 nitride from {ref}`ISONIT <step-003>` and {ref}`SPNIT <step-076>` is
 that it is deposited on a *doped silicon film* rather than on oxide,
 and that its optical properties at the exposure wavelength may matter
@@ -71,15 +99,24 @@ public evidence supports more than one of them:
 * **{term}`Hard mask <hard mask>` and anti-reflective layer for the gate
   lithography.** Poly is highly reflective at 248 nm, the wavelength we infer
   for the gate layer ({ref}`P1M <step-061>`), and a gate printed at
-  0.15 µm[^pdk-periph] needs reflectivity control. Silicon {term}`oxynitride`
+  0.15 µm[^pdk-periph] needs reflectivity control.
+
+  Silicon {term}`oxynitride`
   and nitride films deposited by PECVD were the standard *inorganic*
-  anti-reflective layers of the KrF generation: Ogawa et al. demonstrated a
-  "complete antireflective layer" of this kind for KrF
-  lithography,[^ogawa-1993] Dijkstra and Juffermans showed how to optimise its
-  thickness and index,[^dijkstra-1993] Czech et al. used one specifically to
-  reduce linewidth variation at the gate-conductor level,[^czech-1993] and He
-  et al. describe a production inorganic {term}`ARC` process for
-  deep-UV.[^he-1998] Such a layer doubles as a hard mask: Bell and Joubert
+  anti-reflective layers of the KrF generation:
+
+  - Ogawa et al. demonstrated a
+    "complete antireflective layer" of this kind for KrF
+    lithography;[^ogawa-1993]
+  - Dijkstra and Juffermans showed how to optimise its
+    thickness and index;[^dijkstra-1993]
+  - Czech et al. used one specifically to
+    reduce linewidth variation at the gate-conductor level;[^czech-1993]
+  - He
+    et al. describe a production inorganic {term}`ARC` process for
+    deep-UV.[^he-1998]
+
+  Such a layer doubles as a hard mask: Bell and Joubert
   compared gate etches masked by resist and by a hard mask,[^bell-1997] and the
   resist can be stripped before the poly is etched, which improves the profile
   and removes the resist's contribution to line-edge
@@ -88,7 +125,9 @@ public evidence supports more than one of them:
   ({ref}`P1M <step-061>`).
 * **A cap that stays.** Because the nitride is cut only under contacts
   ({ref}`NPCM <step-078>`), the gate poly is sealed during the tip,
-  {term}`halo` and source/drain implants. That is consistent with — and, we
+  {term}`halo` and source/drain implants.
+
+  That is consistent with — and, we
   infer, the reason for — doping the gate *before* patterning at
   {ref}`P1I <step-050>`: a capped gate cannot be doped by the
   source/drain implants, as in a conventional dual-gate flow.[^wong-1988]
@@ -98,11 +137,13 @@ public evidence supports more than one of them:
   `npc` with a defined margin,[^pdk-periph] so their bodies remain
   capped and are contacted only at their ends through the cut; the
   cap is part of what makes the resistor's end resistance
-  reproducible. Tsang et al. describe a commercial high-value poly
+  reproducible.
+
+  Tsang et al. describe a commercial high-value poly
   resistor bank with exactly this construction — an LPCVD nitride
   barrier over the poly lines — and trace a resistance shift to
   hydrogen diffusing through eroded corners of that
-  nitride,[^tsang-2014] which is what a cap over a resistor body is
+  nitride.[^tsang-2014] This is what a cap over a resistor body is
   there to prevent.
 * **A stop layer.** This reference describes a polish over the poly
   ({ref}`CMPP <step-090>`) after the sacrificial {term}`PSG` deposition;
@@ -116,19 +157,21 @@ resistor ends would be defined by the contact etch alone.
 
 ## How it is typically performed
 
-Two industry-generic routes for a 200 mm, 130 nm-era fab:
+*Two industry-generic routes for a 200 mm, 130 nm-era fab:*
 
 * **LPCVD nitride.** Dichlorosilane and ammonia in a hot-wall furnace
   at roughly 700–800 °C and a few hundred mTorr (typical industry
   values, category page[^txt-02][^wiki-sin]); Roenigk and Jensen model
   the reactor,[^roenigk-1987] and Habraken and Kuiper review the film
-  properties.[^habraken-1994] The film is stoichiometric, dense and
+  properties.[^habraken-1994]
+
+  The film is stoichiometric, dense and
   strongly tensile — of the order of 1 GPa for stoichiometric LPCVD
-  nitride (typical industry value, {ref}`category-deposition`;[^txt-02]);
+  nitride (typical industry value, {ref}`category-deposition`;[^txt-02]).
   Temple-Boyer et al. measured ≈600 MPa for the lowest-stress
   stoichiometric films in a silane/ammonia LPCVD process and showed
-  that the NH₃/SiH₄ ratio dominates the stress[^temple-boyer-1998] —
-  and it deposits on both sides of the
+  that the NH₃/SiH₄ ratio dominates the stress.[^temple-boyer-1998]
+  It deposits on both sides of the
   wafer — one reason a {term}`backside film removal`
   ({ref}`BFR <step-060>`) follows. The deposition temperature would
   crystallise the amorphous gate film and begin activating its
@@ -137,7 +180,9 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
   chamber at about 300–400 °C; Smith et al. describe the deposition
   mechanism,[^smith-1990] and Claassen et al. how temperature,
   pressure, gas ratio and RF frequency set the film's composition and
-  stress.[^claassen-1985] The film is hydrogen-rich, its stress can be
+  stress.[^claassen-1985]
+
+  The film is hydrogen-rich, its stress can be
   tuned from tensile to compressive, and — decisive for the ARC role —
   its refractive index and extinction coefficient at 248 nm can be set
   by the N/Si ratio, which is how "silicon oxime"-type dielectric ARCs
@@ -162,15 +207,22 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnace (LPCVD nitride)** — "Furnaces are all made by
-  Aviza", with LPCVD nitride listed.[^skw-01] Strength: strong for
-  existence; assignment to this step is an inference.
-* **"C1" PECVD system (PECVD nitride)** — SkyWater lists "PECVD nitride
-  C1" and "PECVD silane oxide/nitride/oxynitride, C1" among its
-  Lam/Novellus/AMAT film tools;[^skw-01] the
+* **Aviza furnace (LPCVD nitride)**
+  - *SkyWater says:* states "Furnaces are all made by
+    Aviza", with LPCVD nitride listed.[^skw-01]
+  - *Tool exists:* strong for
+    existence.
+  - *Runs this step:* assignment to this step is an inference.
+* **"C1" PECVD system (PECVD nitride)**
+  - *SkyWater says:* lists "PECVD nitride
+    C1" and "PECVD silane oxide/nitride/oxynitride, C1" among its
+    Lam/Novellus/AMAT film tools.[^skw-01]
+  - *Tool exists:* strong for the capability; weak for the model.
+
+  The
   {ref}`public-sources inventory <references-public-sources>` (§9)
   reads "C1" as a Novellus Concept One class tool, which is an
-  inference. Strength: strong for the capability; weak for the model.
+  inference.
 * Which of the two deposits the gate nitride is not public.
 
 ## Resources required
@@ -186,7 +238,8 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 ## Related steps and cross-references
 
 * Previous: {ref}`UPRIS <step-057>` (the clean the film is deposited
-  on). Next: {ref}`POC <step-059>` (the oxide cap on top of it).
+  on).
+* Next: {ref}`POC <step-059>` (the oxide cap on top of it).
 * Backside film removed at {ref}`BFR <step-060>`; patterned at
   {ref}`P1M <step-061>`/{ref}`P1ME <step-062>`; cut under contacts at
   {ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`; possible polish stop
@@ -265,15 +318,15 @@ Two industry-generic routes for a 200 mm, 130 nm-era fab:
 
 ## Open questions
 
-* Whether the gate nitride is LPCVD or PECVD, and its thickness,
+* **LPCVD or PECVD.** Whether the gate nitride is LPCVD or PECVD, and its thickness,
   stoichiometry and optical constants, are not public.
-* Whether it functions as the anti-reflective layer for
+* **Function of the nitride.** Whether it functions as the anti-reflective layer for
   {ref}`P1M <step-061>`, as a hard mask for {ref}`P1ME <step-062>`, as
   a polish stop for {ref}`CMPP <step-090>`, or as all three, is
   this reference's inference from the PDK rules, not stated.
-* The meaning of the PDK's "poly cap after SPE" (0.2 µm) entry is our
+* **The "poly cap after SPE" entry.** The meaning of the PDK's "poly cap after SPE" (0.2 µm) entry is our
   reading; the table does not define it.
-* Whether the gate is ever doped through or around the cap by later
+* **Later doping of the gate.** Whether the gate is ever doped through or around the cap by later
   implants is not public; with a 0.2 µm cap[^pdk-03] and no nitride cut
   over gates (npc.4)[^pdk-periph] we read the gates as keeping the n⁺
   doping of {ref}`P1I <step-050>` on both NMOS and PMOS.
