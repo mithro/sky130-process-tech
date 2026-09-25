@@ -39,7 +39,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polyline class="cutline" points="12.00,247.32 16.00,244.82 20.00,247.32 24.00,244.82 28.00,247.32 32.00,244.82 36.00,247.32 40.00,244.82 44.00,247.32 48.00,244.82 52.00,247.32 56.00,244.82 60.00,247.32 64.00,244.82 68.00,247.32 72.00,244.82 76.00,247.32 80.00,244.82 84.00,247.32 88.00,244.82 92.00,247.32 96.00,244.82 100.00,247.32 104.00,244.82 108.00,247.32 112.00,244.82 116.00,247.32 120.00,244.82 124.00,247.32 128.00,244.82 132.00,247.32 136.00,244.82 140.00,247.32 144.00,244.82 148.00,247.32 152.00,244.82 156.00,247.32 160.00,244.82 164.00,247.32 168.00,244.82 172.00,247.32 176.00,244.82 180.00,247.32 184.00,244.82 188.00,247.32 192.00,244.82 196.00,247.32 200.00,244.82 204.00,247.32 208.00,244.82 212.00,247.32 216.00,244.82 220.00,247.32 224.00,244.82 228.00,247.32 232.00,244.82 236.00,247.32 240.00,244.82 244.00,247.32 248.00,244.82 252.00,247.32 256.00,244.82 260.00,247.32 264.00,244.82 268.00,247.32 272.00,244.82 276.00,247.32 280.00,244.82"/>
 </g>
 <rect class="cutfill" x="12.0" y="247.72" width="268" height="2.60"/>
-<text x="328.0" y="225.9" class="t-label-title" data-owner="m3cap">Cap film</text>
+<text x="328.0" y="225.9" class="t-label-title" data-owner="m3cap">Metal cap film</text>
 <text x="328.0" y="241.9" class="t-label-note muted" data-owner="m3cap">TiW or Ti/TiN —</text>
 <text x="328.0" y="257.9" class="t-label-note muted" data-owner="m3cap">see the overview</text>
 <text x="328.0" y="273.9" class="t-label-note tag" data-owner="m3cap">inferred</text>
@@ -92,7 +92,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="627.9" class="t-label-note muted" data-owner="m3al">step 134</text>
 <path class="leader" data-owner="m3al" d="M276.0 554.2H285.0V575.0H324.0"/>
 <circle class="dot" data-owner="m3al" cx="276.0" cy="554.2" r="1.9"/>
-<text x="328.0" y="539.9" class="t-label-title" data-owner="m3cap">Cap film</text>
+<text x="328.0" y="539.9" class="t-label-title" data-owner="m3cap">Metal cap film</text>
 <text x="328.0" y="555.9" class="t-label-note tag" data-owner="m3cap">inferred</text>
 <path class="leader" data-owner="m3cap" d="M276.0 507.8H291.0V535.0H324.0"/>
 <circle class="dot" data-owner="m3cap" cx="276.0" cy="507.8" r="1.9"/>
@@ -109,8 +109,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="418.8" class="t-label-note muted" data-owner="mm3res">MM3 mask, step 139</text>
 <path class="leader" data-owner="mm3res" d="M276.0 397.9H309.0H324.0"/>
 <circle class="dot" data-owner="mm3res" cx="276.0" cy="397.9" r="1.9"/>
-<text x="12.0" y="698.7" class="t-label-title">Close-up of the edge of a capacitor and</text>
-<text x="12.0" y="715.7" class="t-label-title">a metal-3 line, enlarged about 2.7×;</text>
-<text x="12.0" y="732.7" class="t-label-title">the lower part of the slice is not drawn.</text>
+<text x="12.0" y="698.7" class="t-label-title">Close-up of the edges of a capacitor and</text>
+<text x="12.0" y="715.7" class="t-label-title">a metal-3 line, enlarged about 2.7×; the</text>
+<text x="12.0" y="732.7" class="t-label-title">lower part of the slice is not drawn.</text>
 <text x="12.0" y="749.7" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

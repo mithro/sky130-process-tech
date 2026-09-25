@@ -41,7 +41,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polyline class="cutline" points="12.00,327.72 16.00,325.22 20.00,327.72 24.00,325.22 28.00,327.72 32.00,325.22 36.00,327.72 40.00,325.22 44.00,327.72 48.00,325.22 52.00,327.72 56.00,325.22 60.00,327.72 64.00,325.22 68.00,327.72 72.00,325.22 76.00,327.72 80.00,325.22 84.00,327.72 88.00,325.22 92.00,327.72 96.00,325.22 100.00,327.72 104.00,325.22 108.00,327.72 112.00,325.22 116.00,327.72 120.00,325.22 124.00,327.72 128.00,325.22 132.00,327.72 136.00,325.22 140.00,327.72 144.00,325.22 148.00,327.72 152.00,325.22 156.00,327.72 160.00,325.22 164.00,327.72 168.00,325.22 172.00,327.72 176.00,325.22 180.00,327.72 184.00,325.22 188.00,327.72 192.00,325.22 196.00,327.72 200.00,325.22 204.00,327.72 208.00,325.22 212.00,327.72 216.00,325.22 220.00,327.72 224.00,325.22 228.00,327.72 232.00,325.22 236.00,327.72 240.00,325.22 244.00,327.72 248.00,325.22 252.00,327.72 256.00,325.22 260.00,327.72 264.00,325.22 268.00,327.72 272.00,325.22 276.00,327.72 280.00,325.22"/>
 </g>
 <rect class="cutfill" x="12.0" y="328.12" width="268" height="2.60"/>
-<text x="328.0" y="281.9" class="t-label-title" data-owner="m3cap">Cap film</text>
+<text x="328.0" y="281.9" class="t-label-title" data-owner="m3cap">Metal cap film</text>
 <text x="328.0" y="297.9" class="t-label-note tag" data-owner="m3cap">inferred</text>
 <path class="leader" data-owner="m3cap" d="M276.0 161.8H285.0V277.0H324.0"/>
 <circle class="dot" data-owner="m3cap" cx="276.0" cy="161.8" r="1.9"/>
@@ -92,7 +92,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="654.6" class="t-label-note muted" data-owner="m3al">step 134</text>
 <path class="leader" data-owner="m3al" d="M276.0 516.5H285.0V601.7H324.0"/>
 <circle class="dot" data-owner="m3al" cx="276.0" cy="516.5" r="1.9"/>
-<text x="328.0" y="534.6" class="t-label-title" data-owner="m3cap">Cap film</text>
+<text x="328.0" y="534.6" class="t-label-title" data-owner="m3cap">Metal cap film</text>
 <text x="328.0" y="550.6" class="t-label-note muted" data-owner="m3cap">TiW or Ti/TiN —</text>
 <text x="328.0" y="566.6" class="t-label-note muted" data-owner="m3cap">see the overview</text>
 <text x="328.0" y="582.6" class="t-label-note tag" data-owner="m3cap">inferred</text>
