@@ -645,7 +645,12 @@ original form and is left out of the recap table.
      public list") and cannot be separated at an existing seam, keep it whole as the bullet's head
      after the bold tool name. Give only the grades as sub-bullets, and never file it under
      *SkyWater says:*. Any sentence the grade's reason refers to ("in that lab") stays above the
-     grade.
+     grade. This reference's gloss of SkyWater's list ("both offer arsenic …", "everything a halo
+     needs") goes in the continuation paragraph after the grades when it is its own sentence or can
+     be separated at an existing seam (a dash, "— both"). It stays in the head only when it and
+     SkyWater's words are one sentence with no seam (pilot form), or when a grade's reason refers
+     to it by name. A continuation that would open on a bare pronoun ("Both", "It") takes its noun
+     back if the head is more than one line above.
    * `*Tool exists:*` — the grading of existence, and its reason only.
    * `*Runs this step:*` — the grading of the assignment to this step, and its reason only. Any
      other sentence stays in the continuation paragraph.
