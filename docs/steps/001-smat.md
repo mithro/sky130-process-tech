@@ -11,14 +11,15 @@
 | **Next step** | {ref}`BOX <step-002>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** brings a cassette of bare, polished 200 mm p-type silicon
   wafers into the SKY130 flow.
 * **Why:** the wafer specification is the first process decision the
   rest of the flow is built on.
-* **Public numbers:** 200 mm diameter;[^skw-02] 725 µm wafer
-  thickness.[^wiki-wafer]
-* **Likely SkyWater tool:** GlobalWafers and SEH America as wafer
-  suppliers — strong.[^sec-01][^sec-02]
+* **Public numbers:** 200 mm diameter;[^skw-02] 725 µm standard
+  200 mm thickness (Wikipedia).[^wiki-wafer]
+* **Likely SkyWater tool:** DNS or FSI Mercury wet bench — strong
+  (existence); inference (assignment).[^skw-01]
 * **Not public:** wafer resistivity and crystal orientation (→ Open
   questions).
 :::
@@ -81,43 +82,15 @@ Everything else about the wafer — resistivity, crystal orientation,
 oxygen content, flatness grade — is not stated in any public SkyWater
 or Cypress document and is discussed below as industry-typical.
 
-### How the effective body doping is estimated
-
-| Quantity | Value | Source |
-|---|---:|---|
-| Body-effect coefficient, 20 V zero-Vt NMOS | about 0.07 √V | SkyWater test tile[^raw-data-hv-mosfets] |
-| Electrical oxide thickness | 11.3 nm | our extraction from the tile's C–V data[^raw-data-hv-mosfets] |
-
-1. The 20 V zero-Vt NMOS, whose p-well and all Vt implants are blocked
-   to reach a zero VT,[^pdk-07] is measured on SkyWater's test tile.
-
-   The raw-data repository files the measurement under the folder name
-   `nfet_20v0_nvt`, but the {ref}`PWBM <step-026>` page reads the pad's
-   own geometry (a "2× 30/5.5" structure with its body tied to `Psub`)
-   as matching the PDK's zero-Vt e-test structure rather than the
-   native device's "2× 30/1.0", and reads it as the zero-Vt
-   (p-well-less) device despite the folder name.
-2. With a uniform-doping model and the inputs above, the body-effect
-   coefficient corresponds to an effective body doping of about
-   **1.4 × 10¹⁵ cm⁻³**.
-
-Result: about 1.4 × 10¹⁵ cm⁻³ (our extraction from the published
-measurements; see {ref}`PWBM <step-026>` for the geometry
-argument).[^raw-data-hv-mosfets] Neither this nor the PDK's n-well
-background concentration (below) is a wafer specification, and neither
-gives the orientation.
-
 ## Step category
 
 This is the only step in the
 {ref}`Substrate / starting material <category-substrate>` category.
 
-**Specific to this step:**
-
-* What is specific to SKY130 is that it is a *bulk* 200 mm p-type wafer
-  for a process that, unusually for a 130 nm-era logic technology,
-  carries 5 V and 10–20 V devices, {term}`SONOS` memory and a deep
-  N-well option on the same substrate.[^pdk-07][^pdk-10]
+What is specific to SKY130 is that it is a *bulk* 200 mm p-type wafer
+for a process that, unusually for a 130 nm-era logic technology,
+carries 5 V and 10–20 V devices, {term}`SONOS` memory and a deep
+N-well option on the same substrate.[^pdk-07][^pdk-10]
 
 ## Why this step exists
 
@@ -177,13 +150,13 @@ typically:
    flow; wafers are sorted into 25-wafer lots.
 5. **Initial clean.** Before the first furnace step
    ({ref}`BOX <step-002>`) the wafers receive a standard RCA-type
-   clean, in sequence:
+   clean, in sequence:[^wiki-rca]
 
    * **{term}`SC-1`** — NH₄OH : H₂O₂ : H₂O, typically 1 : 1 : 5 at
      75 or 80 °C for about 10 min.
    * **Dip** — an optional dilute HF dip.
    * **{term}`SC-2`** — HCl : H₂O₂ : H₂O, 1 : 1 : 6 at 75 or
-     80 °C.[^wiki-rca]
+     80 °C.
 
 ## Machines typically used
 
@@ -197,13 +170,6 @@ typically:
 * **{ref}`Batch wet bench <machine-wet-bench>`** for the {term}`RCA clean`.
 
 ## Machines likely used at SkyWater
-
-| Tool | Evidence |
-|---|---|
-| Laser scribe — Lumonics Superclean | strong (existence) |
-| Unpatterned-wafer inspection — KLA-Tencor SP1 (our reading) | medium |
-| Pre-furnace clean — DNS or FSI Mercury wet bench | strong (existence); inference (assignment) |
-| Wafers themselves — GlobalWafers and SEH America | strong |
 
 * **Laser scribe — Lumonics Superclean**
   - *SkyWater says:* its capability list names "Lumonics Superclean"
@@ -225,10 +191,9 @@ typically:
   - *Runs this step:* the assignment is an inference (below) from
     their HF/SC1/SC2 chemistry, SC-2 being listed only for these two
     benches.
-* **Wafers themselves — GlobalWafers and SEH America**[^sec-01][^sec-02]
-  - *SkyWater says:* GlobalWafers qualified for S8 at Fab 4 in
-    2015.[^cyp-06]
-  - *Tool exists:* strong.
+* **Wafers themselves — GlobalWafers and SEH America**,[^sec-01][^sec-02]
+  with GlobalWafers qualified for S8 at Fab 4 in 2015.[^cyp-06]
+  Strength: strong.
 
 None of these sources states that the tool in question is the one used
 at `SMAT`; the association is our inference from the tool's function.
@@ -370,9 +335,23 @@ Status and expiry are estimates from public records and are not legal advice.
     8 × 10¹⁴ cm⁻³ among the n-well entries (variable `NWBCONC`) of
     their basic-parameters table, without saying that it is the wafer
     doping.[^pdk-03]
-  - An effective body doping we extracted from the 20 V zero-Vt NMOS
-    test-tile measurements; see *How the effective body doping is
-    estimated* above.
+  - The 20 V zero-Vt NMOS, whose p-well and all Vt implants are
+    blocked to reach a zero VT,[^pdk-07] has a body-effect coefficient
+    of about 0.07 √V on SkyWater's test tile:
+
+    - the raw-data repository files the measurement under the folder
+      name `nfet_20v0_nvt`;
+    - the {ref}`PWBM <step-026>` page reads the pad's own
+      geometry (a "2× 30/5.5" structure with its body tied to `Psub`)
+      as matching the PDK's zero-Vt e-test structure rather than the
+      native device's "2× 30/1.0", and reads it as the zero-Vt
+      (p-well-less) device despite the folder name;
+    - with a uniform-doping model and the 11.3 nm electrical oxide
+      thickness we extracted from the tile's C–V data, this
+      corresponds to an effective body doping of about
+      1.4 × 10¹⁵ cm⁻³ (our extraction from the published
+      measurements; see {ref}`PWBM <step-026>` for the geometry
+      argument).[^raw-data-hv-mosfets]
 
   Neither is a wafer specification, and neither gives the orientation.
 * **Bulk versus epitaxial.** SkyWater's "Bulk" entry[^skw-02] is the
