@@ -767,13 +767,17 @@ def _traverse(xs: XSection, lid: str, x: float, y: float, hidden: set,
     return total
 
 
-def _edge_run(xs: XSection, lid: str, x: float, y: float, hidden: set, step: int = 4) -> float:
+def _edge_run(xs: XSection, lid: str, x: float, y: float, hidden: set, step: int = 4,
+              highlight=()) -> float:
     """How far a horizontal leader from (x, y) runs within the edge clearance of, and
-    parallel to, a horizontal material boundary."""
+    parallel to, a horizontal material boundary or the accent trace of a highlight (which
+    sits `highlight-offset` above the surface and reads as a line just as much)."""
     clear = SP["edge-clearance"]
     total = 0.0
     for i in range(xs.idx(x) + 1, xs.n, step):
         edges = [xs.top(i)]
+        if any(a <= xs.x(i) <= b for a, b in highlight):
+            edges.append(xs.top(i) + SP["highlight-offset"])
         edges += [e for s in xs.cols[i] if s[0] not in hidden for e in (s[1], s[2])]
         for ov in xs.overlays:
             if ov["id"] in hidden:
@@ -1275,7 +1279,9 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             ok = [] if layer.get("route") == "over" else [
                 yv for yv in _frange(glo, ghi, 1.0)
                 if _traverse(st, lab.key, gx, yv, hidden, ion_xs, ion_tail_y) <= SP["max-leader-traverse"]
-                and _edge_run(st, lab.key, gx, yv, hidden) <= SP["max-edge-run"]]
+                and _edge_run(st, lab.key, gx, yv, hidden,
+                             highlight=(p.get("highlight") or {}).get("where", []))
+                <= SP["max-edge-run"]]
             if ok:
                 runs_ok, cur = [], [ok[0]]
                 for yv in ok[1:]:
@@ -1977,6 +1983,15 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
     hedges = []
     for _lid, pts in layered:
         for a, b in zip(pts, pts[1:] + pts[:1]):
+            if abs(a[1] - b[1]) < 0.3 and abs(a[0] - b[0]) > 0.5:
+                hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1]))
+    # The accent trace of a highlight is a line on the drawing too: a leader beside it reads
+    # as one more film edge.
+    for pl in root.iter("{http://www.w3.org/2000/svg}polyline"):
+        if "hl" not in (pl.get("class") or "").split():
+            continue
+        pts = [tuple(float(v) for v in q.split(",")) for q in pl.get("points").split()]
+        for a, b in zip(pts, pts[1:]):
             if abs(a[1] - b[1]) < 0.3 and abs(a[0] - b[0]) > 0.5:
                 hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1]))
 
@@ -3142,6 +3157,9 @@ def selftest() -> int:
                 '<path class="leader" data-owner="nw" d="M25 55H300"/></svg>', "through other materials"),
         (base + '<polygon class="mat m-si-sub" data-layer="a" points="12,10 280,10 280,100 12,100"/>'
                 '<path class="leader" data-owner="a" d="M40 102H300"/></svg>', "alongside a material edge"),
+        # the accent trace of a highlight counts as an edge, and 5 u off is still too close
+        (base + '<polyline class="hl" points="30,150 280,150"/>'
+                '<path class="leader" data-owner="a" d="M40 145H300"/></svg>', "alongside a material edge"),
         (base + '<path class="ion" d="M100 20L100 80"/>'
                 '<path class="leader" data-owner="a" d="M40 50H300"/></svg>', "cuts through the ion beam"),
         (base.replace('data-kind="chain"', 'data-kind="xsection"')

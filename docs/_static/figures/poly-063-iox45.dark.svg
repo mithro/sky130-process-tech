@@ -46,8 +46,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="211.9" class="t-label-title" data-owner="poly">Gate film</text>
 <text x="328.0" y="227.9" class="t-label-note muted" data-owner="poly">n-type gate film,</text>
 <text x="328.0" y="243.9" class="t-label-note muted" data-owner="poly">p-type resistor body</text>
-<path class="leader" data-owner="poly" d="M168.0 93.5H291.0V207.0H324.0"/>
-<circle class="dot" data-owner="poly" cx="168.0" cy="93.5" r="1.9"/>
+<path class="leader" data-owner="poly" d="M168.0 91.5H291.0V207.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="168.0" cy="91.5" r="1.9"/>
 <text x="328.0" y="139.9" class="t-label-title" data-owner="nit">Nitride cap</text>
 <text x="328.0" y="155.9" class="t-label-note muted" data-owner="nit">GATENIT, step</text>
 <text x="328.0" y="171.9" class="t-label-note muted" data-owner="nit">058; thickness and</text>
@@ -90,8 +90,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polyline class="hl" points="200.00,435.00 200.50,437.00 280.00,437.00"/>
 </g>
 <text x="328.0" y="455.9" class="t-label-title" data-owner="poly">Gate film</text>
-<path class="leader" data-owner="poly" d="M168.0 433.5H291.0V451.0H324.0"/>
-<circle class="dot" data-owner="poly" cx="168.0" cy="433.5" r="1.9"/>
+<path class="leader" data-owner="poly" d="M168.0 430.5H291.0V451.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="168.0" cy="430.5" r="1.9"/>
 <text x="328.0" y="431.9" class="t-label-title" data-owner="nit">Nitride cap</text>
 <path class="leader" data-owner="nit" d="M168.0 414.5H297.0V427.0H324.0"/>
 <circle class="dot" data-owner="nit" cx="168.0" cy="414.5" r="1.9"/>
@@ -103,7 +103,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="511.9" class="t-label-note muted" data-owner="iox">grown at step</text>
 <text x="328.0" y="527.9" class="t-label-note muted" data-owner="iox">063; thin, we infer</text>
 <text x="328.0" y="543.9" class="t-label-note tag" data-owner="iox">inferred</text>
-<path class="leader" data-owner="iox" d="M267.0 442.5H285.0V475.0H324.0"/>
-<circle class="dot" data-owner="iox" cx="267.0" cy="442.5" r="1.9"/>
+<path class="leader" data-owner="iox" d="M276.0 442.5H285.0V475.0H324.0"/>
+<circle class="dot" data-owner="iox" cx="276.0" cy="442.5" r="1.9"/>
 <text x="12.0" y="580.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

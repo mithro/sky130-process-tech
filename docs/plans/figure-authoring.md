@@ -160,7 +160,10 @@ Tokens that shape the layout (in `tokens.json`, `space`): `min-hang-width` (110 
 one of two labels above the drawing hangs right of its riser instead of left when less than
 this is left to the canvas edge; `max-leader-traverse`, `max-edge-run`, `edge-clearance` and
 `over-gap` — the leader-routing limits above and the clearance of an over-run above the
-surface. Every series field is type-checked, and an unknown field or value is a lint line.
+surface. `edge-clearance` (6 u) is how close a horizontal leader may run to a horizontal
+material edge **or to the accent trace of a highlight** before it counts as running along it;
+the trace is a line on the drawing, and a leader beside it reads as one more film.
+Every series field is type-checked, and an unknown field or value is a lint line.
 
 A silicon layer's dot is kept off any doped overlay drawn over it, so the substrate's label
 never points at a well.

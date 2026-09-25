@@ -90,8 +90,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="gox" d="M276.0 478.5H285.0V506.0H324.0"/>
 <circle class="dot" data-owner="gox" cx="276.0" cy="478.5" r="1.9"/>
 <text x="328.0" y="486.9" class="t-label-title" data-owner="poly">Gate film</text>
-<path class="leader" data-owner="poly" d="M168.0 464.5H291.0V482.0H324.0"/>
-<circle class="dot" data-owner="poly" cx="168.0" cy="464.5" r="1.9"/>
+<path class="leader" data-owner="poly" d="M168.0 459.5H291.0V482.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="168.0" cy="459.5" r="1.9"/>
 <text x="328.0" y="462.9" class="t-label-title" data-owner="nit">Nitride cap</text>
 <path class="leader" data-owner="nit" d="M168.0 445.5H297.0V458.0H324.0"/>
 <circle class="dot" data-owner="nit" cx="168.0" cy="445.5" r="1.9"/>
