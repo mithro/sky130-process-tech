@@ -2307,6 +2307,16 @@ Review the diff **and** the rendered tiles. The executor cannot see what it did 
     heads?** A checker cannot see this: "Tightest isolation width" over a bullet that says the rule
     is *not* the tightest, and "Same module:" over a list that spans the whole flow, both passed
     every checker and were only found by reading the label against its own text.
+12. **Hand-check any "sentence > 45 words" flag on a Related-pages bullet, or any bullet built as
+    "**Category.** {ref}`x` — ... {ref}`y` — ...".** `measure.py`'s `clean()` reduces
+    `` {ref}`text` `` to bare lowercase `text` before its sentence splitter runs, and that splitter
+    requires an uppercase letter after the whitespace to recognise a new sentence — so it cannot see
+    a sentence that starts with a `{ref}` role, and reports the whole bullet as one long "sentence"
+    even when each one is well under the cap. This is a measurement artefact, not a page fault
+    (confirmed on `pecvd.md` and `duv-krf-stepper.md` in this batch's review). The scripts live under
+    `docs/plans/readability/`, which executors must not touch (§2.15); fixing the splitter itself is
+    a coordinator task for the prototype or `measure5.py`. Until then, read the flagged text by eye
+    before asking for a split.
 
 ## 9. Blocked rules
 
