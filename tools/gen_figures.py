@@ -2314,16 +2314,19 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
             errs.append(f"leader of {owner!r} cuts through the ion beam")
     # 18: a leader may not run a long way through materials other than the one it names,
     # nor alongside a material edge: either way it reads as the boundary of a film.
+    # As in rule 16, a polygon counts only inside the clip rectangle of its own drawing: the
+    # substrate runs on below a close-up's crop, into the next panel.
     layered = []
     for pg in root.iter("{http://www.w3.org/2000/svg}polygon"):
         cls = (pg.get("class") or "").split()
         if "mat" in cls:
             pts = [tuple(float(v) for v in q.split(",")) for q in pg.get("points").split()]
-            layered.append((pg.get("data-layer") or "", pts))
+            layered.append((pg.get("data-layer") or "", pts,
+                            clip_of.get(id(pg), (-math.inf, -math.inf, math.inf, math.inf))))
     hedges = []
-    for _lid, pts in layered:
+    for _lid, pts, clip in layered:
         for a, b in zip(pts, pts[1:] + pts[:1]):
-            if abs(a[1] - b[1]) < 0.3 and abs(a[0] - b[0]) > 0.5:
+            if abs(a[1] - b[1]) < 0.3 and abs(a[0] - b[0]) > 0.5 and clip[1] <= a[1] <= clip[3]:
                 hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1], SP["edge-clearance"]))
     # The accent trace of a highlight is a line on the drawing too: a leader beside it reads
     # as one more film edge.
@@ -2351,8 +2354,8 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 if not in_rect(q):
                     continue
                 vis = None
-                for lid, pts in layered:
-                    if _point_in(q, pts):
+                for lid, pts, clip in layered:
+                    if clip[0] <= q[0] <= clip[2] and clip[1] <= q[1] <= clip[3] and _point_in(q, pts):
                         vis = lid
                 if vis is not None and vis != owner:
                     through += 1
@@ -2393,7 +2396,10 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 errs.append(f"{ma} and {mb} touch, are {de:.1f} apart in colour and share "
                             f"a pattern; one of them needs its own pattern")
             else:
-                thin = [m for m, b in ((ma, boxes[i]), (mb, boxes[j])) if b[4] - b[2] < 10]
+                # Only a patterned film needs the height for its pattern to show; a plain film
+                # reads as its flat colour, inked, at any thickness (a thin oxide under PSG).
+                thin = [m for m, b in ((ma, boxes[i]), (mb, boxes[j]))
+                        if b[4] - b[2] < 10 and TOK["materials"][m]["pattern"] != "none"]
                 if thin:
                     errs.append(f"{ma} and {mb} touch and are {de:.1f} apart in colour, so the "
                                 f"pattern is the only thing between them, but {', '.join(thin)} "
@@ -3653,6 +3659,18 @@ def selftest() -> int:
     if any("ion-beam label's leader runs through" in e for e in lint_svg_text(clipped)):
         print("SELFTEST FAIL: rule 16 counts a polygon outside its drawing's clip rectangle")
         bad += 1
+    # rule 18 likewise: a run through the next panel's drawing does not cross the substrate of
+    # the panel above, which runs on below its own clip; a run inside that drawing does
+    two = (hdr + '<g class="drawing" data-rect="12,20,268,100">'
+           '<polygon class="mat m-si-sub" data-layer="sub" points="12,60 280,60 280,380 12,380"/></g>'
+           '<g class="drawing" data-rect="12,250,268,100"></g>'
+           '<path class="leader" data-owner="x" d="M20 {y}H270"/></svg>')
+    for y_run, want in ((300, False), (90, True)):
+        got = any("runs" in e and "through other materials" in e
+                  for e in lint_svg_text(two.format(y=y_run)))
+        if got != want:
+            print(f"SELFTEST FAIL: rule 18 clip: a run at y {y_run} reported={got}")
+            bad += 1
     for name, raw, needle in svg_cases:
         errs = lint_svg_text(raw)
         if not any(needle in e for e in errs):
@@ -3720,6 +3738,22 @@ def selftest() -> int:
             and band == (-14.0, -5.0) and xs2.overlay_band(xs2.layers["sd"], i_off) == (-14.0, 0.0)):
         print("SELFTEST FAIL: react (a contact silicide) or the doped region under it is wrong")
         bad += 1
+    # lint 17: a thin plain film may touch a thick patterned film of a similar colour; a thin
+    # patterned one may not
+    for t_ox, t_psg, want in ((5, 30, False), (30, 5, True)):
+        ser = {"substrate": {"material": "si-sub", "depth": 60},
+               "ops": [{"step": "002", "op": "deposit", "id": "ox", "material": "oxide-dep",
+                        "t": t_ox, "label": {"title": "Oxide", "basis": "public"}},
+                       {"step": "003", "op": "deposit", "id": "pg", "material": "psg",
+                        "t": t_psg, "label": {"title": "Glass", "basis": "public"}}]}
+        sp = _spec_ok()
+        sp["panels"] = [{"state_after": "003", "title": "Only panel"}]
+        e = []
+        raw = build_xsection(sp, ser, e).render("auto")
+        got = any("where a pattern may not show" in x for x in lint_svg_text(raw))
+        if got != want:
+            print(f"SELFTEST FAIL: lint 17 on {t_ox} u oxide under {t_psg} u PSG: fired={got}")
+            bad += 1
     # a clean spec must lint clean
     clean = _spec_ok()
     if lint_spec(clean, _SERIES_OK):

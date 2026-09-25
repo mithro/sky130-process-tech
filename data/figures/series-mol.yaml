@@ -27,8 +27,8 @@
 #   anywhere is not public, and every figure that shows the polished surface says so.
 # * NCAPOX (091) is a flat blanket oxide on the polished glass.
 # * LICM1/LICM1E (093, 094): three contact holes, one on each landing surface of the slice:
-#   the 5 V source/drain (x 24-56), the resistor head inside the nitride cut (x 118-150) and the
-#   1.8 V source/drain beside the gate (x 189-221). The walls taper at the PDK's 10 deg "Licon1
+#   the 5 V source/drain (x 20-60), the resistor head inside the nitride cut (x 114-154) and the
+#   1.8 V source/drain beside the gate (x 184-224). The walls taper at the PDK's 10 deg "Licon1
 #   etch angle"; the drawn width is not to scale (the PDK's 0.17 um drawn opening and 0.08 um
 #   bottom do not reconcile with 10 deg over the full ILD, as the LICM1E page says). The etch
 #   clears the oxides at the bottom of the diffusion holes (the LICM1E page: "which the etch must
@@ -694,7 +694,7 @@ ops:
     id: licres
     material: resist
     t: 30
-    where: [[0, 24], [56, 118], [150, 189], [221, 268]]
+    where: [[0, 20], [60, 114], [154, 184], [224, 268]]
     label:
       title: "Photoresist"
       note: "contact mask, step 093"
@@ -719,6 +719,7 @@ ops:
     id: ctliner
     material: barrier
     t: 5
+    route: over
     label:
       title: "Ti/TiN liner"
       note: "step 097; titanium, then titanium nitride, drawn as one film"
@@ -731,7 +732,7 @@ ops:
     consumes: [si-sub, poly]
     under: [barrier]
     t: 5
-    where: [[24, 56], [118, 150], [189, 221]]
+    where: [[20, 60], [114, 154], [184, 224]]
     label:
       title: "Titanium silicide"
       note: "CSIL, step 098; only in the contact holes, we infer"
@@ -741,7 +742,8 @@ ops:
     op: deposit
     id: wfill
     material: tungsten
-    t: 14
+    t: 16
+    route: over
     label:
       title: "Tungsten"
       note: "WDEP, step 099"
@@ -767,7 +769,7 @@ ops:
     id: li1mres
     material: resist
     t: 30
-    where: [[18, 62], [112, 156], [183, 227]]
+    where: [[14, 66], [108, 160], [178, 230]]
     label:
       title: "Photoresist"
       note: "local-interconnect mask, step 102"
