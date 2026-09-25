@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/beol-124-mm2.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a flat blanket of three films, a thick silver one between two thin purple ones, covers a pale oxide with two small tungsten plugs in it, over buried metal lines. After it three violet resist lines stand on the blanket, two of them over the plugs.
+:width: 560px
+:name: fig-beol-124-mm2
+
+Before, the blanket metal-2 stack on the polished via level; after, the resist lines of the metal-2 mask: one over each via, enclosing it, and one over the left of the slice with no via under it; the right-hand line runs on past the edge of the slice. The PDK's metal-2 lines are at least 0.140 µm wide and 0.140 µm apart (m2.1, m2.2) and enclose a via by 0.055 µm (m2.4);[^pdk-periph] the layout is an illustrative choice, and neither the lines nor the resist are drawn to scale. Which refractory films the bottom and the cap of the stack are is not public (the overview of the metal cap sets out the two readings, and the figure does not choose). The lower part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1. The bottom film of the stack, the via plugs and their liners, the oxides and the metal-1 lines with their contact plugs are drawn but not labelled. Not to scale.
+:::

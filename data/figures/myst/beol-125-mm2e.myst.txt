@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/beol-125-mm2e.svg
+:alt: Two enlarged cross-sections over a small tungsten plug set in a pale oxide. Before the step a violet resist line stands on a flat blanket of three films, a thick silver one between two thin purple ones. After it the resist is gone and the three films remain only under where it was: a line with vertical edges standing on the oxide over the plug, with bare oxide on both sides.
+:width: 560px
+:name: fig-beol-125-mm2e
+
+A close-up of the middle metal-2 line, over the middle via; the lower part of the slice is cut off, and the drawing starts inside the inter-metal oxide over metal 1. Before, a resist line on the blanket stack; after, the chlorine etch has removed the whole stack on both sides of the line, stopping on the cap oxide, and the resist has been stripped; the page treats the passivation, the strip and the clean as part of this step. The line encloses the via, so the plug top is not exposed. The line is drawn with vertical edges; its profile is not drawn to scale, and neither are the PDK's 0.140 µm width (m2.1) and 0.055 µm enclosure of the via (m2.4).[^pdk-periph] Which refractory films the bottom and the cap of the line are is not public: the overview of the metal cap sets out the two readings, and the figure does not choose. The two other metal-2 lines are etched in the same way, outside this view. The via plug and its liner, the oxides and the bottom film of the line are drawn but not labelled, nor, in the upper panel, is the cap. Not to scale.
+:::

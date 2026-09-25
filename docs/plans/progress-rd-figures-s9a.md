@@ -41,6 +41,16 @@ one figure per step for 118–134.
   122 labels the plug from above (`routes: {v1w: top}`; a right route ran 50 u inside NILD3).
   121's dip over the hole is small (alt: "a dip"). Two captions reworded after the
   caption-echo lint (119, 120). check_preserved: ADDED only on all five.
+* **123 TIAL12** (close-up as 119): the metal-2 stack over the plug; bottom, AlCu and cap
+  labelled with the S8 wording (both readings, `inferred`); caption quotes both Cypress metal-2
+  stacks from the page and the page's own TiW-following inference (S8 review M4), and says the
+  stack is drawn as thick as metal 1 because the PDK gives both 0.36 µm.
+* **124 MM2** (full slice, cut): three resist lines; before labels the cap and the AlCu only.
+* **125 MM2E** (close-up [86, 164], 3.4×, the middle metal-2 line; the drawing starts inside
+  NILD3 above metal 1, declared): the metal-2 edges. The bottom-film label ran 72 u along the
+  oxide surface, so it is hidden and declared; the cap keeps its note by override. A first
+  window [59, 150] left slivers of the neighbouring metal-2 line and a 6 u gap at the edges.
+* **126 NILD4** (full slice, cut): gap-fill profile as at NILD3; NILD4_C not drawn (declared).
 
 ## Left
 
