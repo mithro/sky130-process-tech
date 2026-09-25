@@ -393,7 +393,9 @@ depth, and the PDK stack drawing does not settle it. …`
 
 **Do not touch.** The 13 mandatory step headings; the H2/H3 template of machine, material and mask pages
 (§2.9); the placement of `{dropdown}` blocks — a note stays directly after the paragraph it belongs to,
-and an H3 is never inserted between them.
+and an H3 is never inserted between them; the `{figure}` block and its position — it stays where
+`gen_figures` put it, directly after the lead, and a new H3 goes after the figure's caption, never
+between the lead and the figure.
 
 **Where it is safe.** Step pages: yes — `check_steps.py` only tests that the 13 headings exist, and
 `check_refs.py` reads only `### Deep dive`. Machine and material pages: yes **except** under
@@ -1480,10 +1482,11 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 + * **Does:** …[^x]  * **Why:** …  * **Public numbers:** …
 + * **Likely SkyWater tool:** …[^skw-01]  * **Not public:** … (→ Open questions)
 + :::
-+ (generated figure: before/after cross-section)                      R-FIGURE, W1a
 
-## What this step is                   ≤ 2 paragraphs, ≤ 120 words before the first H3;
-                                       first sentence ≤ 25 words
+## What this step is                   lead: ≤ 2 paragraphs, ≤ 120 words, first sentence ≤ 25 words
+   (generated {figure} block)          stays where gen_figures put it: directly after the lead
++ ### …                                any new H3 goes after the figure's caption, never between
+                                       the lead and the figure
 + ### Key numbers                      table: Quantity · Value · Source · Basis   R-TABLE
 + ### What the public record shows     short paragraphs; measured-against-nominal tables
 + ### How <quantity> is estimated      input table, numbered arithmetic, hedged result  R-DERIVATION
