@@ -26,6 +26,7 @@ build:
       - python tools/gen_patents.py --check
       - python tools/gen_filings.py --check
       - python tools/gen_index_links.py --check
+      - python tools/gen_step_tables.py --check
       - python tools/gen_figures.py --check
 
 sphinx:

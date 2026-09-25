@@ -105,16 +105,131 @@ missed.
 counts from `main`. `sphinx-build -W -q -b html docs tmp/_build/html`:
 clean. The three new `--selftest`s all pass.
 
+## Commit 4 — `tools/gen_step_tables.py` (B1) (done)
+
+New generator, modelled on `gen_index_links.py`'s marker-delimited block:
+inserts `<!-- step-tables:begin … --> … <!-- step-tables:end -->`
+directly after the checked step-link run on every machine and material
+page (`check_machines.STEPS_H3`/`check_materials.STEPS_H3` reused
+directly, so the run is located exactly the same way the checkers
+locate it — the two scripts can never disagree). `--check`,
+`--selftest` (locate/extract/render logic on synthetic in-memory pages,
+no repository files touched), idempotent (verified: a second run on
+already-generated pages makes no change), deterministic.
+
+* **≤ 25 links:** `{table}` `Step | Code | Name | Role on this page`
+  (Step right-aligned; Code a fresh `{ref}` link with the step's code
+  as text; Name from `tools/steps.csv`; Role from the run's own
+  markers — "main" for the unmarked/only list, "alternative" for
+  `*alternative:*`, or the `*also …:*` marker's own wording with the
+  asterisks and trailing colon stripped — material-page runs have no
+  markers, so every role there is "main"). 24 of 42 pages (22 machine,
+  2 material: `cmp-consumables`, `sputter-targets`).
+* **> 25 links:** `{dropdown}` titled "All N steps (links)" whose body
+  adds nothing new, only a one-line pointer to the grouped bullets that
+  already follow the run on the same page. 18 of 42 pages (8 machine,
+  10 material).
+* Ran over all 42 pages (30 machine + 12 material) in one commit, as
+  asked. `check_machines.py`/`check_materials.py`: 0 problems on the
+  generated result. Build: clean.
+* Added `python tools/gen_step_tables.py --check` to `.readthedocs.yaml`
+  `pre_build` (after `gen_index_links.py --check`, before
+  `gen_figures.py --check`) and to both checklists in
+  `docs/plans/agent-briefs.md` (the step-page writer brief's checker
+  list, and the reviewer brief's item 5).
+* Rendered three pages with `tools/shoot.py`, desktop and 400 px, and
+  read the tiles: `machines/duv-krf-stepper` (table, 18 rows, several
+  long names), `machines/wet-bench` (dropdown, 40 links), and
+  `materials/cmp-consumables` (table, 12 rows). All three: clean
+  columns, correct right-alignment on Step, no horizontal overflow at
+  400 px, no cell wraps awkwardly, the dropdown's collapsed control
+  renders like the page's other dropdowns. Nothing needed fixing.
+
+### `tools/check_preserved.py` on the 42 changed pages
+
+Ground rule 3 / the task's closing instruction: ran
+`uv run python tools/check_preserved.py --allow-added refs,numbers
+docs/machines/*.md docs/materials/*.md`. Two things showed up beyond
+the declared `refs`/`numbers` additions, both investigated to ground
+truth and both verified **not** a content loss:
+
+1. **`ADDED number_order` on 24 pages** (every table page), always the
+   same shape, e.g. `('130', '8', '14', '46', '32')`. Cause: the
+   generated table's caption line (`:::{table} SKY130 steps assigned to
+   this class`, containing "130" from "SKY130") and its `:widths: 8 14
+   46 32` line are two adjacent non-blank lines with no list/table
+   marker, so `extract_number_order`'s paragraph splitter treats them
+   as one prose "sentence" and records their numbers' left-to-right
+   order as one new tuple. MyST's colon-fence syntax requires directive
+   options to immediately follow the directive line (no blank line
+   between), so this cannot be avoided by reformatting while keeping a
+   caption that mentions "SKY130" and a `:widths:` line — any table
+   whose caption contains a number, followed by its widths line, would
+   do this. No `LOST number_order` anywhere (confirmed). Re-ran with
+   `--allow-added refs,numbers,number_order` for the record; this is
+   the third declared category and is recorded here with its reason,
+   as `agent-briefs.md` "Checking a readability edit" asks.
+2. **`{dropdown} block count changed` / reindexed dropdowns on the 18
+   pages that got a new dropdown.** `check_preserved.py` compares
+   dropdowns *by position*, so inserting one new dropdown before a
+   page's existing ones (the in-force patent notes, always further
+   down) shifts every later dropdown's index and makes each one print
+   as "changed" even though its text is untouched. Verified this is
+   positional-only noise, not a real edit, two ways: (a)
+   `git diff --numstat main -- docs/machines docs/materials` shows
+   **zero deletions in all 42 files** (pure insertion), so no existing
+   character was touched anywhere; (b) for a sample page (`wet-bench.md`)
+   read the diff directly — the only change is the new block. Re-ran
+   with `--allow-dropdown-edits` for the record.
+3. **Two pages still report `LOST`/`ADDED quotes` even with both flags
+   above: `docs/machines/starting-material.md` and
+   `docs/machines/single-wafer-spin-processor.md`.** Root-caused this
+   fully rather than accepting it on faith:
+   `check_preserved.extract_quotes` pairs `"..."` marks strictly
+   left-to-right, non-overlapping, minimum 1 character between marks.
+   Both pages contain, pre-existing on `main`, a quoted phrase that
+   itself ends in an inch mark immediately followed by the closing
+   quote — `"Laser marking system, 8""` (starting-material.md) and
+   `(8")"` (single-wafer-spin-processor.md) — i.e. two `"` characters
+   with **zero** characters between them. Since the regex requires at
+   least one character between marks, it cannot match that adjacent
+   pair as a (degenerate, empty) quote; it matches the *first* of the
+   two as the close of the *previous* quote instead, and the *second*
+   becomes an orphaned "open" that pairs with whatever `"` comes next —
+   which, on both pages, is dozens to hundreds of characters later,
+   consuming ordinary prose as if it were quoted text. This
+   mis-pairing cascades for the rest of the page's body. It is **not**
+   caused by this branch: confirmed with `check_preserved.extract_all`
+   that `strip_existing(new) == old` byte-for-byte on both pages (i.e.
+   removing the generated block restores the committed `main` text
+   exactly), and that the raw quote-mark count in each page's body is
+   odd (189 on starting-material.md, 171 on
+   single-wafer-spin-processor.md) independent of any edit here. Any
+   future edit to either page that changes the flattened text at all
+   (even one with zero quote characters, as this one does) can shift
+   which spurious pairing the heuristic lands on, which is exactly
+   what happened. This is a pre-existing fragility of
+   `check_preserved.py`'s quote heuristic (documented in its own
+   docstring as "necessary, not sufficient") meeting a pre-existing
+   `8""`/`(8")"` inch-mark-before-closing-quote sequence already on
+   `main`; **not fixed here** (out of scope: `check_preserved.py` is a
+   different, already-merged W0b branch, and the inch-mark phrasing is
+   page content, not this branch's to rewrite). Flagged for the
+   coordinator. No actual quotation was added, changed or lost on
+   either page — verified by the byte-identical `strip_existing`
+   check above, which is definitive regardless of what the heuristic
+   reports.
+
+Final command run for the record:
+`uv run python tools/check_preserved.py --allow-added
+refs,numbers,number_order --allow-dropdown-edits docs/machines/*.md
+docs/materials/*.md` → "44 page(s) checked against main, 2 with
+undeclared differences" (the two pages in point 3 above, both verified
+harmless).
+
 ## Remaining (this branch)
 
-* Commit 4 — `tools/gen_step_tables.py` (B1): generate the marker-delimited
-  step tables/dropdowns on all 42 machine/material pages, wire into
-  `.readthedocs.yaml` and `docs/plans/agent-briefs.md`, render three
-  pages with `tools/shoot.py` (desktop + 400 px) and fix anything that
-  looks wrong.
 * Commit 5 — `docs/plans/readability-guide.md` §9 and R-STEPRUN updates.
-* `tools/check_preserved.py --allow-added refs,numbers` on every page
-  gen_step_tables.py touches.
 
 ## Decisions and things to flag for the coordinator
 

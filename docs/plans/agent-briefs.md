@@ -179,6 +179,9 @@ index dataset), `uv run tools/gen_papers.py --check` (the generated paper
 index pages are up to date and no published label changed),
 `uv run tools/gen_steps.py --check` (`docs/steps/index.md` is up to date
 and every step page exists),
+`uv run tools/gen_step_tables.py --check` (the generated "which steps use
+this" table or dropdown on every machine and material page matches its
+checked step-link run),
 `uv run python tools/gen_figures.py --check` (every committed figure, paste
 block and generated page matches what `data/figures/` says, and the figure
 lint passes) and
@@ -460,6 +463,9 @@ them. Check, and report with file and line references:
    step, category, machine, material, mask and overview page is
    up to date, not stale or hand-edited), `tools/gen_steps.py --check`
    (`docs/steps/index.md` is up to date and every step page exists),
+   up to date, not stale or hand-edited), `tools/gen_step_tables.py
+   --check` (the generated "which steps use this" table or dropdown on
+   every machine and material page matches its checked step-link run,
    up to date, not stale or hand-edited), `tools/gen_figures.py --check`
    (every SVG under `docs/_static/figures/`, every paste block under
    `data/figures/myst/`, the generated `docs/figure-conventions.md` and
