@@ -6,6 +6,13 @@ is listed, with notes on what it contains, in the
 {doc}`public sources inventory <public-sources>`. This page explains how
 the citations are organised.
 
+| Index | Count | What it holds |
+|---|---|---|
+| {doc}`Inventory <public-sources>` | 1,720 sources | every source cited anywhere on the site, with a note on what it contains |
+| {ref}`Papers <papers-index>` | 56 papers | academic papers on SKY130 and its Cypress lineage |
+| {ref}`Patents <patents-index>` | 552 families (1,845 members) | worldwide patents related to the process technology and its lineage |
+| {ref}`Filings <filings-index>` | 89 filings | SEC and other regulatory filings documenting the fab's ownership and lineage |
+
 ## How citations work
 
 Pages cite sources with Markdown footnotes. A footnote label is the
