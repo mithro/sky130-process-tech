@@ -163,6 +163,23 @@ Five more records:
 Group-A-adjacent file (94076) left unusable (no extractable process text),
 every other file id turned into a record or identified as a duplicate.
 
+## Ninth batch: Group B begins -- five R52T-3 clock reports
+
+All Fab 4 (Bloomington, MN), 3 metal layers, CMOS Triple Metal 0.25 µm,
+55 Å gate oxide:
+
+| id | source file id | notes |
+|---|---|---|
+| qtp-025003 | 91741 | origin of the "A30M" base die lineage; R52T-3's own technology origin dated to QTP 024604 |
+| qtp-041801 | 92076 | A30M mask-option variant |
+| qtp-050502 | 92601 | A30M base-option variant |
+| qtp-041603 | 92056 | A30M bond-option variant |
+| qtp-050401 | 92591 | a second base-die lineage ("B30M"); passivation printed differently from the A30M-lineage reports |
+
+Group B has 15 more R52T-3 reports plus 20 file ids for other technologies
+(R52FFD-3, B55SGT, C8Q-3R, R9Q-3R, R95LD-3R, S4AD-5 variants) still to
+process.
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records

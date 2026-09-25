@@ -6094,3 +6094,235 @@ documents:
     figures (0.35 µm, 110 Å gate oxide) differ from R42LDHA's printed 70 Å gate oxide, so the two read as
     genuinely distinct processes rather than a misprint of one name for the other. R42LHDHA's own origin is
     dated here to QTP 99041 (Nov 99).
+- id: qtp-025003
+  origin: cypress
+  doc_type: QTP
+  number: '025003'
+  cypress_document_number: null
+  title: Clock Synthesizer with Differential SRC and CPU Outputs, R52T-3 Technology, Fab4
+  version: '2.1'
+  date_printed: December 2005
+  url: https://www.cypress.com/file/91741/download
+  archive_url: https://web.archive.org/web/20211025144417/https://www.cypress.com/file/91741/download
+  retrieved: '2026-09-25'
+  sha256: 5ea4e598d21b3612e129e7a909c8224dbdbe989cdaaabcbb9dc8ed94cf632e34
+  technology_codes:
+  - R52T-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY28409
+  die_ids:
+  - CY7C8A002A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al / 500Å TiW; Metal 2: 500Å TiW / 6000Å Al / 500Å TiW;
+      Metal 3: 300Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å SiO2 / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS – Triple Metal, 0.25µm
+    gate_oxide: SiO2, 55Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52T-3
+    transistors: '40,000'
+    gates: '5,000'
+  qualification_history:
+  - number: '024604'
+    description: R52T-3 Technology Process Derivative Qual
+    date: May 03
+  - number: '025003'
+    description: New Device A30M (CY28409) Base Die in R52T-3 Technology
+    date: June 03
+  quotes:
+  - text: R52T-3 Technology Process Derivative Qual
+    location: p.2, Technology Qualification History, row 024604
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52T-3'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS – Triple Metal, 0.25µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This is the origin qualification for the "A30M" base die used by several other R52T-3 reports in
+    this corpus (its own row is repeated verbatim in each of them). R52T-3's own technology-level origin is
+    dated here to QTP 024604 (May 03, "R52T-3 Technology Process Derivative Qual"), naming no earlier
+    technology it derives from.
+- id: qtp-041801
+  origin: cypress
+  doc_type: QTP
+  number: '041801'
+  cypress_document_number: null
+  title: Clock Generator for Intel Grantsdale Chipset, R52T-3 Technology, Fab4
+  version: '1.1'
+  date_printed: December 2005
+  url: https://www.cypress.com/file/92076/download
+  archive_url: https://web.archive.org/web/20211203231242/https://www.cypress.com/file/92076/download
+  retrieved: '2026-09-25'
+  sha256: a820cd6aa400bdf26027f16c32878c96b6566db49b93282d2bf182443902e977
+  technology_codes:
+  - R52T-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY28410
+  die_ids:
+  - CY7C8A030A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al / 500Å TiW; Metal 2: 500Å TiW / 6000Å Al / 500Å TiW;
+      Metal 3: 300Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å SiO2 / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS – Triple Metal, 0.25µm
+    gate_oxide: SiO2, 55Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52T-3
+    transistors: '44,000'
+    gates: '5,500'
+  qualification_history:
+  - number: '025003'
+    description: New Device A30M (CY28409) Base Die in R52T-3 Technology
+    date: null
+  - number: '041801'
+    description: New Device (CY28410) Mask Option A30M Base Die in R52T-3 Technology
+    date: null
+  quotes:
+  - text: New Device (CY28410) Mask Option A30M Base Die in R52T-3 Technology
+    location: p.2, Technology Qualification History, row 041801
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52T-3'
+    location: p.3, Technology/Fab Process Description
+  notes: A mask-option variant of the A30M base die qtp-025003 (this session) originates; same process
+    figures except a higher transistor/gate count for this specific device (44,000/5,500 vs 40,000/5,000).
+- id: qtp-050502
+  origin: cypress
+  doc_type: QTP
+  number: '050502'
+  cypress_document_number: null
+  title: Clock Generator for Intel Blackford and Bayshore Chipset, R52T-3 Technology, Fab4
+  version: '1.1'
+  date_printed: December 2005
+  url: https://www.cypress.com/file/92601/download
+  archive_url: https://web.archive.org/web/20201028061532/https://www.cypress.com/file/92601/download
+  retrieved: '2026-09-25'
+  sha256: 0ad1a099228aba4feda0773c90b8ed2be41b5ac4a40ffb7ee4d8af92f502258f
+  technology_codes:
+  - R52T-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY284108-2
+  die_ids:
+  - CY7C8A038A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al / 500Å TiW; Metal 2: 500Å TiW / 6000Å Al / 500Å TiW;
+      Metal 3: 300Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å SiO2 / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS – Triple Metal, 0.25µm
+    gate_oxide: SiO2, 55Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52T-3
+    transistors: '44,000'
+    gates: '5,500'
+  qualification_history:
+  - number: '025003'
+    description: New Device A30M (CY28409) Base Die in R52T-3 Technology
+    date: null
+  - number: '050502'
+    description: New Device (CY284108-2) Rev. A Base Option Device in R52T-3 Technology
+    date: null
+  quotes:
+  - text: New Device (CY284108-2) Rev. A Base Option Device in R52T-3 Technology
+    location: p.2, Technology Qualification History, row 050502
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52T-3'
+    location: p.3, Technology/Fab Process Description
+  notes: A further base-option variant of the A30M base die; figures match qtp-041801 exactly.
+- id: qtp-041603
+  origin: cypress
+  doc_type: QTP
+  number: '041603'
+  cypress_document_number: null
+  title: Next Generation FTG for Intel Architecture, R52T-3 Technology, Fab4
+  version: '1.1'
+  date_printed: December 2005
+  url: https://www.cypress.com/file/92056/download
+  archive_url: https://web.archive.org/web/20210415090123/https://www.cypress.com/file/92056/download
+  retrieved: '2026-09-25'
+  sha256: 5e52f9b6de5e1b2d976e20c77e87e1c1413e12712fa56c5542e8912ce6a33635
+  technology_codes:
+  - R52T-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY28416
+  die_ids:
+  - CY7C8A022A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al / 500Å TiW; Metal 2: 500Å TiW / 6000Å Al / 500Å TiW;
+      Metal 3: 300Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å SiO2 / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS – Triple Metal, 0.25µm
+    gate_oxide: SiO2, 55Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52T-3
+    transistors: '44,000'
+    gates: '5,500'
+  qualification_history:
+  - number: '025003'
+    description: New Device A30M (CY28409) Base Die in R52T-3 Technology
+    date: null
+  - number: '041603'
+    description: New Device (CY28416) Bond Option A30M Base Die in R52T-3 Technology
+    date: null
+  quotes:
+  - text: New Device (CY28416) Bond Option A30M Base Die in R52T-3 Technology
+    location: p.2, Technology Qualification History, row 041603
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52T-3'
+    location: p.3, Technology/Fab Process Description
+  notes: A bond-option variant of the A30M base die; figures match qtp-041801 exactly.
+- id: qtp-050401
+  origin: cypress
+  doc_type: QTP
+  number: '050401'
+  cypress_document_number: null
+  title: AV Clock Generator, R52T-3 Technology, Fab4
+  version: '1.1'
+  date_printed: December 2005
+  url: https://www.cypress.com/file/92591/download
+  archive_url: https://web.archive.org/web/20210422140813/https://www.cypress.com/file/92591/download
+  retrieved: '2026-09-25'
+  sha256: f023984954d8620e45268d31bff03fa177643ae03fd3dee7f54507a262742aff
+  technology_codes:
+  - R52T-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY27425
+  die_ids:
+  - CY7C8B004A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al / 500Å TiW; Metal 2: 500Å TiW / 6000Å Al / 500Å TiW;
+      Metal 3: 300Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1,000Å TEOS + 9000Å Si2N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS – Triple Metal, 0.25µm
+    gate_oxide: SiO2, 55Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52T-3
+    transistors: '26,400'
+    gates: '3,300'
+  qualification_history:
+  - number: '024604'
+    description: R52T-3 Technology Process Derivative Qual
+    date: May 03
+  - number: '040903'
+    description: New Device (CY28437) B30M Base Die in R52T-3 Technology
+    date: Feb 05
+  - number: '050401'
+    description: New Device (CY27425) Mask Option B30M Base Die in R52T-3 Technology
+    date: May 05
+  quotes:
+  - text: New Device (CY28437) B30M Base Die in R52T-3 Technology
+    location: p.2, Technology Qualification History, row 040903
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52T-3'
+    location: p.3, Technology/Fab Process Description
+  notes: A second base-die lineage ("B30M", QTP 040903, Feb 05) alongside the "A30M" lineage (qtp-025003,
+    this session), both under R52T-3; this report's passivation is printed "1,000Å TEOS + 9000Å Si2N4"
+    where the A30M-lineage reports print "1000Å SiO2 / 9000Å Si3N4" for the same technology code and fab --
+    quoted verbatim rather than reconciled.
