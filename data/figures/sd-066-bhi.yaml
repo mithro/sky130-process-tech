@@ -1,0 +1,38 @@
+id: sd-066-bhi
+kind: xsection
+page: docs/steps/066-bhi.md
+series: series-tips-sd.yaml
+close_up: [189, 268]
+crop_depth: 50
+alt: >-
+  Two enlarged cross-sections of one transistor edge, one above the other. Before the step a
+  shallow doped layer lies in the silicon beside a capped gate. After it arrows come down on
+  both sides of the gate, and a second, hatched region lies under the shallow layer and reaches
+  a short way under the edge of the gate, where it comes up to the silicon surface.
+caption: >-
+  A close-up of the 1.8 V NMOS gate edge, as for ASTI. Before, the n-type tip; after, the halo
+  drawn under the tip and reaching a short way under the gate edge, on the channel side of the
+  tip. The halo's shape is the industry-generic one the page describes; that it is boron is this
+  reference's description (industry-typical),[^txt-04] and no public source gives its species,
+  energy, dose, tilt or rotation. The page places the pocket under the gate edge with a large
+  tilt, 20–45° being typical;[^txt-04] because the SKY130 tilt is not public, the arrows are
+  drawn vertical. The halo is drawn as hatching over the silicon, which marks where the implant
+  is and not its type or profile; the same resist as the tip's is assumed, as the page infers.
+  The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner
+  oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not
+  to scale.
+arrow:
+  title: "BHI, step 066"
+  note: "A boron halo is implanted through the same resist window, placed by the gate edge."
+panels:
+  - state_after: "065"
+    title: "Before: the n-type tip beside the gate (step 065)"
+    show_ions: false
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox]
+    dim_layers: [liner]
+  - state_after: "066"
+    title: "After: a halo under the tip and the gate edge"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox]
+    dim_layers: [liner]

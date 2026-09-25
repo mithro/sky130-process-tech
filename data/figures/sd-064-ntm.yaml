@@ -1,0 +1,39 @@
+id: sd-064-ntm
+kind: xsection
+page: docs/steps/064-ntm.md
+series: series-tips-sd.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a narrow capped gate
+  stands on the right-hand active area and a wider capped stack on the oxide-filled trench, with
+  a thin oxide over the active areas and the gate sidewalls. After it resist covers the left-hand
+  active area, the trench and the wide stack, and leaves the right-hand active area and its gate
+  bare.
+caption: >-
+  Before, the gate and resistor stacks as the poly module leaves them; after, the NTM resist,
+  with its window over the 1.8 V NMOS area on the right and resist over the 5 V NMOS area on the
+  left, the field and the resistor. The PDK's Table F2b marks the layer "created" on the other
+  device rows and "-" on the 1.8 V NMOS rows, and the page reads the created data as covering what
+  is not implanted here;[^pdk-06] the window is drawn on that reading. The resist is drawn
+  flat-topped and thick; the PDK's nominal photoresist thickness is 1.14 µm,[^pdk-03] and the
+  thickness used for this mask is not public. The resist edge is drawn on the field oxide, well away
+  from the gate; the 0.16 µm "NTM shadowing" allowance[^pdk-03] is not drawn to scale. The colours
+  of the gate film mark the type of its doping, not a depth profile. The field oxide (the
+  oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the
+  liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn.
+  Not to scale.
+arrow:
+  title: "NTM, step 064"
+  note: "Resist is coated over the etched gates, exposed through the N-tip reticle and developed."
+panels:
+  - state_after: "063"
+    title: "Before: the capped gate and resistor stacks after IOX45 (step 063)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox]
+    dim_layers: [liner]
+  - state_after: "064"
+    title: "After: resist everywhere but the 1.8 V NMOS area"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, polyp, nit, capox, iox]
+    dim_layers: [liner]
+    highlight: {where: [[0, 176]]}

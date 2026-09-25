@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/sd-067-astis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand active area, the oxide-filled trench and the wide capped stack on it, and doped layers lie in the silicon of the right-hand active area beside its narrow gate. After it the resist is gone and the rest of the drawing is unchanged.
+:width: 560px
+:name: fig-sd-067-astis
+
+Before, the NTM resist after the tip and halo implants; after, the resist stripped and the wafer cleaned, down to the thin oxide the page infers is left over the silicon and the capped gates. The crust the implants leave in the resist is not drawn, and no HF step is drawn, as the page infers, so the oxide is unchanged. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides and the re-oxidation oxide are drawn but not labelled, nor is the field oxide (the oxide-filled trench in the middle); the liner oxide is drawn faded, and the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::

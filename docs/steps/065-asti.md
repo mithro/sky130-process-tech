@@ -26,6 +26,14 @@ is a shallow, heavily doped n-type layer that will link the channel to
 the deep n⁺ source/drain formed later at {ref}`NSDI <step-086>`,
 outside the {term}`spacer`.
 
+:::{figure} /_static/figures/sd-065-asti.svg
+:alt: Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands on a thin oxide over the silicon, with thin oxide on its sidewalls, and bare oxide-covered silicon beside it. After it tilted arrows come down on both sides of the gate, and a shallow doped layer lies in the silicon from the left edge of the view up to the gate edge on the left, and in the narrow strip right of the gate.
+:width: 560px
+:name: fig-sd-065-asti
+
+A close-up of the 1.8 V NMOS gate edge (the right-hand end of the slice); the resist over the rest of the slice lies outside it. Before, the gate after NTM; after, the n-type tip in the silicon on both sides of the gate, beginning at the edge of the gate film, which the caps and the gate itself shield. The arrows lean at the PDK's 7° "Angle for tip implant";[^pdk-03] the rotation scheme is not public, so the tip is drawn the same on both sides and the shadowing a tilted beam casts beside the gate is not drawn. The tip's depth is not public; it is drawn shallow, and its reach under the gate edge, which the page reads from the PDK's 0.01 µm "N Tip (As)" entry, is not drawn.[^pdk-03] The colour marks the type of the doping, not a depth profile. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 That the tip is arsenic is stated publicly: the PDK's junction-depth
 table has a row "N Tip (As)" carrying 0.01 µm in the table's "Vertical
 Space" column (variable `LDNTIP`), which we read as the tip's lateral
