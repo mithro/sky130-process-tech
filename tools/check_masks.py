@@ -31,10 +31,16 @@ For every ``docs/masks/*.md`` page except ``index.md``:
   the H3 headings under "Drawn layers and derivation" and "References"
   are exactly the template's; "Plates and reticle sets" and "Related
   pages" may have only the optional H3s listed in ``OPTIONAL_H3``; no
-  other H2 has H3s. ("Related pages" is where ``gen_index_links.py``
-  puts its generated "### Related patents, papers and filings"
-  sub-heading — report-A F13, report-B B11.) The "Steps that use this
-  mask" heading is preceded by a ``(mask-<stem>-steps)=`` label.
+  other H2 has H3s, **except** "Lithography and pattern transfer",
+  which may take any H3 at all — the five named in ``OPTIONAL_H3`` for
+  it (``Exposure class``, ``Mask errors``, ``Resist and tone``,
+  ``Overlay and alignment``, ``Pattern transfer``, report-B B8) or any
+  further heading a page needs (``OPEN_H3_H2``: unlike the two closed
+  lists above, this one is a floor, not a ceiling). ("Related pages" is
+  where ``gen_index_links.py`` puts its generated "### Related patents,
+  papers and filings" sub-heading — report-A F13, report-B B11.) The
+  "Steps that use this mask" heading is preceded by a
+  ``(mask-<stem>-steps)=`` label.
 * **Quick facts.** The table before the first H2 has the header
   ``| | CODE — name |`` and exactly the rows of ``FACT_ROWS``, in order.
   Footnote references are ignored in every comparison.
@@ -96,6 +102,8 @@ Exit status is non-zero on any problem.  Run with
 ``uv run tools/check_masks.py``; an optional positional argument names
 another ``masks`` directory to check, whose sibling ``steps`` directory
 holds the step pages (used to test the checker on a copy of ``docs``).
+Run with ``--selftest`` for the offline ``check_h3`` unit tests (touches
+no files).
 """
 
 from __future__ import annotations
@@ -126,8 +134,17 @@ H3 = {
 }
 OPTIONAL_H3 = {
     "Plates and reticle sets": ["The mask-type record"],
+    "Lithography and pattern transfer": [
+        "Exposure class", "Mask errors", "Resist and tone",
+        "Overlay and alignment", "Pattern transfer",
+    ],
     "Related pages": ["Related patents, papers and filings"],
 }
+# H2s where OPTIONAL_H3's list is a floor, not a ceiling (report-B B8: the
+# five headings above name the run-in labels the report found on every mask
+# page, "then free extras"): any further H3 is allowed there too, unlike
+# "Plates and reticle sets" and "Related pages", whose lists are closed.
+OPEN_H3_H2 = {"Lithography and pattern transfer"}
 STEPS_H2 = "Steps that use this mask"
 STEPS_INTRO = "Steps:"
 PDK_ROW = "PDK mask (`masks.csv`)"
@@ -537,6 +554,23 @@ def check_steps(body: str, code: str, index: Index,
     return problems, len(steps)
 
 
+def check_h3(body: dict[str, str]) -> list[str]:
+    """H3 headings under every H2, against ``H3`` (exact), ``OPTIONAL_H3``
+    (a closed list, extra headings forbidden) and ``OPEN_H3_H2`` (a floor:
+    ``OPTIONAL_H3``'s list for that H2, plus any further heading)."""
+    problems = []
+    for parent in H2:
+        h3 = re.findall(r"^### (.+)$", body.get(parent, ""), flags=re.MULTILINE)
+        if parent in H3:
+            if h3 != H3[parent]:
+                problems.append(f"H3 under '{parent}' {h3} differ from {H3[parent]}")
+        elif parent in OPEN_H3_H2:
+            continue
+        elif any(h not in OPTIONAL_H3.get(parent, []) for h in h3):
+            problems.append(f"H3 under '{parent}' {h3} are not among {OPTIONAL_H3.get(parent, [])}")
+    return problems
+
+
 def check(page: Path, index: Index, pages: dict[int, tuple[str, str]],
           sheet: dict[str, dict[str, str]] | None) -> list[str]:
     text = page.read_text()
@@ -560,13 +594,7 @@ def check(page: Path, index: Index, pages: dict[int, tuple[str, str]],
     if h2 != H2:
         problems.append(f"H2 headings {h2} differ from the template")
     body = sections(text, "##")
-    for parent in H2:
-        h3 = re.findall(r"^### (.+)$", body.get(parent, ""), flags=re.MULTILINE)
-        if parent in H3:
-            if h3 != H3[parent]:
-                problems.append(f"H3 under '{parent}' {h3} differ from {H3[parent]}")
-        elif any(h not in OPTIONAL_H3.get(parent, []) for h in h3):
-            problems.append(f"H3 under '{parent}' {h3} are not among {OPTIONAL_H3.get(parent, [])}")
+    problems += check_h3(body)
     if not re.search(rf"^\(mask-{re.escape(stem)}-steps\)=\n## {STEPS_H2}$", text,
                      flags=re.MULTILINE):
         problems.append(f"'## {STEPS_H2}' is not preceded by a (mask-{stem}-steps)= label")
@@ -630,13 +658,99 @@ def read_sheet(path: Path, index: Index) -> tuple[dict[str, dict[str, str]], lis
     return plates, problems
 
 
+def selftest() -> int:
+    """Offline unit tests for ``check_h3`` (W0e: ``OPTIONAL_H3`` gained
+    "Lithography and pattern transfer", and it is open-ended unlike the
+    other two entries). Touches no files."""
+    problems: list[str] = []
+
+    required = {
+        "Drawn layers and derivation": "\n### In the PDK\n\ntext\n\n### In the public renders\n\ntext\n",
+        "References": "\n### Cross-check\n\ntext\n\n### High-level understanding\n\ntext\n\n### Deep dive\n\ntext\n",
+    }
+
+    def case(name: str, body: dict[str, str], should_pass: bool) -> None:
+        found = check_h3({**required, **body})
+        if should_pass and found:
+            problems.append(f"{name}: expected no problems, got {found}")
+        if not should_pass and not found:
+            problems.append(f"{name}: expected a problem, got none")
+
+    # The five named headings, in the report's order, pass.
+    case(
+        "the five named headings pass",
+        {"Lithography and pattern transfer": (
+            "\n### Exposure class\n\ntext\n\n### Mask errors\n\ntext\n\n"
+            "### Resist and tone\n\ntext\n\n### Overlay and alignment\n\ntext\n\n"
+            "### Pattern transfer\n\ntext\n"
+        )},
+        True,
+    )
+    # A subset of the five, in a different order, also passes -- OPTIONAL_H3
+    # is not an exact-match template there, unlike H3's entries.
+    case(
+        "a subset, reordered, passes",
+        {"Lithography and pattern transfer": "\n### Pattern transfer\n\ntext\n\n### Exposure class\n\ntext\n"},
+        True,
+    )
+    # A further heading the report did not name also passes (the "then free
+    # extras" rule) -- this is what distinguishes OPEN_H3_H2 from a normal
+    # OPTIONAL_H3 entry such as "Plates and reticle sets" below.
+    case(
+        "a heading beyond the five also passes",
+        {"Lithography and pattern transfer": "\n### Exposure class\n\ntext\n\n### Something else entirely\n\ntext\n"},
+        True,
+    )
+    case(
+        "no H3 at all still passes (unconverted mask pages, W3)",
+        {"Lithography and pattern transfer": "\nplain prose, no H3.\n"},
+        True,
+    )
+    # The other two OPTIONAL_H3 entries stay closed lists: an unlisted H3
+    # under them is still a problem.
+    case(
+        "'Plates and reticle sets' rejects an unlisted H3",
+        {"Plates and reticle sets": "\n### The mask-type record\n\ntext\n\n### Extra\n\ntext\n"},
+        False,
+    )
+    case(
+        "'Plates and reticle sets' accepts its one listed H3",
+        {"Plates and reticle sets": "\n### The mask-type record\n\ntext\n"},
+        True,
+    )
+    case(
+        "'Related pages' rejects an unlisted H3",
+        {"Related pages": "\n### Something else\n\ntext\n"},
+        False,
+    )
+    # An H2 with no OPTIONAL_H3 entry at all (e.g. "What the mask defines")
+    # still forbids any H3.
+    case(
+        "an H2 outside OPTIONAL_H3 forbids any H3",
+        {"What the mask defines": "\n### Surprise\n\ntext\n"},
+        False,
+    )
+
+    if problems:
+        for p in problems:
+            print("SELFTEST FAIL:", p)
+        print(f"{len(problems)} selftest problem(s)")
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check the per-mask pages.")
     parser.add_argument("masks", nargs="?", type=Path, default=MASKS,
                         help="masks directory (its sibling 'steps' holds the step pages)")
     parser.add_argument("--sheet", type=Path,
                         help="local CSV export of the sheet's 'Run Mask IDs' tab")
+    parser.add_argument("--selftest", action="store_true",
+                        help="run the offline self-test and exit; touches no files")
     args = parser.parse_args()
+    if args.selftest:
+        return selftest()
     index = Index(args.masks)
     pages = step_pages(args.masks.parent / "steps")
     bad = 0
