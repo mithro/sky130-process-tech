@@ -28,6 +28,14 @@ is the third RTA described in this reference; the next,
 {ref}`RTAD2 <step-092>`, is a second source/drain anneal
 placed after the sacrificial PSG, the polish and the {term}`cap oxide`.
 
+:::{figure} /_static/figures/sd-088-rtad.svg
+:alt: One enlarged cross-section of one transistor edge. A capped gate with a nitride block and a thin oxide on its sidewall stands on a thin oxide. In the silicon a deep doped region runs from the left edge of the view to the outer foot of the sidewall films, and a shallow doped layer and a hatched region continue under them to the gate edge. The drawing is the same as the state before the step.
+:width: 560px
+:name: fig-sd-088-rtad
+
+A close-up of the 1.8 V NMOS gate edge at the source/drain anneal, the finished front-end transistor edge of this module: the deep N⁺ source/drain outside the spacer, the tip under it, the halo around the tip, the nitride spacer and the spacer oxide over it. The anneal regrows the implanted silicon and activates the dopant; the deep junction's designed depth is 0.1 µm in the PDK's junction table ("N+ or P+ S/D (XJ)"), which is not drawn to scale.[^pdk-03] How far the junctions and the tip move is not public, and nothing the drawing shows moves. The temperature, time and ambient are not public; the page describes an industry-typical rapid thermal anneal. The colours mark the type of the doping, and the hatching where the halo implant is, not their profiles. The caps, the re-oxidation oxide, the gate oxide and the spacer oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
 the thermal step that finishes the doping of the poly heads opened at
 {ref}`NPCME <step-079>`; it re-anneals the

@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/sd-087-nsdis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the oxide-filled trench and a wide stack on it, and deep doped regions lie in both active areas. After it the resist is gone and a thin oxide covers everything.
+:width: 560px
+:name: fig-sd-087-nsdis
+
+Before, the NSDM resist after the N⁺ implant; after, the resist stripped and the wafer given the clean before the source/drain anneal. On this reference's reading the surface under the resist is the spacer oxide throughout, which stays as the cap for the anneal (no HF step, as the page infers), so it is drawn unchanged; how much of it survives the two strips is not public. The resist's implanted crust is not drawn. The colours mark the type of the doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The spacer oxide is not labelled in the lower panel. Not to scale.
+:::

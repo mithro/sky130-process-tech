@@ -1,0 +1,39 @@
+id: sd-086-nsdi
+kind: xsection
+page: docs/steps/086-nsdi.md
+series: series-tips-sd.yaml
+close_up: [197, 268]
+crop_depth: 55
+alt: >-
+  Two enlarged cross-sections of one transistor edge, one above the other. Before the step a
+  capped gate with a nitride block and a thin oxide on its sidewall stands over a shallow doped
+  layer and a hatched region. After it vertical arrows come down, and a deeper doped region lies
+  in the silicon from the left edge of the view up to the outer foot of the sidewall films; the
+  shallow layer remains under the sidewall films.
+caption: >-
+  A close-up of the 1.8 V NMOS gate edge, as for the tip module, inside the NSDM window. Before,
+  the tip and the halo under the spacer; after, the deep N⁺ source/drain, drawn from the outer
+  foot of the spacer oxide outwards: self-aligned to the spacer, the deep junction lies one
+  spacer width from the gate edge and meets the tip, which is left under the spacer. It is drawn deeper than the tip and the halo; the PDK gives the junction 0.1 µm (XJ)
+  after the anneal,[^pdk-03] which is not drawn to scale. The arrows are drawn vertical, with no
+  tilt, as the PDK's "High current" implant angle of 0° gives;[^pdk-03] the species (arsenic alone or with
+  phosphorus), energy and dose are not public. Outside this view the same implant makes the deep
+  junction over the whole 5 V area, which has no gate in this slice. The colours mark the type
+  of the doping, and the hatching where the halo implant is, not their profiles. The caps, the
+  re-oxidation oxide, the gate oxide and the spacer oxide are drawn but not labelled, and the
+  liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not
+  drawn. Not to scale.
+arrow:
+  title: "NSDI, step 086"
+  note: "A heavy n-type dose, masked by the gate and its spacers."
+panels:
+  - state_after: "085"
+    title: "Before: the gate edge in the NSDM window (step 085)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, spox, polyn]
+    dim_layers: [liner]
+  - state_after: "086"
+    title: "After: a deep N+ source/drain outside the spacer"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, spox, polyn, spnit]
+    dim_layers: [liner]
