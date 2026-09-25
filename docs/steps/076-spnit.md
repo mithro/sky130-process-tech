@@ -10,12 +10,31 @@
 | **Previous step** | {ref}`TIPRTAD <step-075>` |
 | **Next step** | {ref}`SPE <step-077>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a blanket, conformal silicon nitride film that
+  {ref}`SPE <step-077>` etches back into a sidewall spacer on every
+  vertical edge.
+* **Why:** the deposited thickness becomes, to first order, the spacer
+  width, which sets the offset between the gate edge and the deep
+  source/drain junctions.
+* **Public numbers:** the PDK's "SPNIT" dielectric, relative
+  permittivity 7.5;[^pdk-04] an "oxide spacer" of 0.05 µm.[^pdk-03]
+* **Likely SkyWater tool:** Aviza furnace, BTBAS nitride — strong
+  (existence of both processes); inference (assignment).[^skw-01]
+* **Not public:** the deposition route, temperature and thickness of the
+  spacer nitride (→ Open questions).
+:::
+
 ## What this step is
 
 `SPNIT` deposits a blanket, conformal silicon nitride film over the
-whole wafer — over the capped gate lines and resistor bodies, down
+whole wafer. It runs over the capped gate lines and resistor bodies, down
 their sidewalls and across the source/drain silicon whose tips and
-halos were activated at {ref}`TIPRTAD <step-075>`. The film is not a
+halos were activated at {ref}`TIPRTAD <step-075>`.
+
+The film is not a
 device layer in itself: the next step, {ref}`SPE <step-077>`, etches
 it back anisotropically until it survives only as a sidewall
 {term}`spacer` on every vertical edge. The deposited thickness
@@ -32,27 +51,34 @@ deep source/drain junctions implanted at {ref}`PSDI <step-082>` and
 A close-up of the 1.8 V NMOS gate edge, as for the tip module. Before, the gate after the tip anneal; after, the spacer nitride, drawn as a film of the same thickness on the top, the sidewalls and the flat oxide beside the gate, the near-perfect conformality the page asks of it. Where the gate's sidewall steps in at the top of the gate film (the re-oxidation oxide covers only the poly sidewall), the film steps with it. That the film is silicon nitride follows the PDK's "SPNIT" dielectric of relative permittivity 7.5;[^pdk-04] its thickness, the deposition route and its temperature are not public, and the page infers that no pre-spacer liner is deposited, the IOX45 oxide playing that part. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
-Two public facts bear on the step. The PDK's process stack
-diagram names a dielectric "SPNIT" with a relative permittivity of
-7.5,[^pdk-04] the value of silicon nitride, alongside the other
-front-end dielectrics (the field and inter-level oxides at 3.9–4.5, the
-"LINT" nitride at 7.3); this reference uses the same word as the
-step's label. And the PDK's assumptions table carries an
-"oxide spacer" of 0.05 µm[^pdk-03] — so the finished SKY130 spacer is,
-we infer, a composite: an oxide component (the re-oxidation of
-{ref}`IOX45 <step-063>` under the nitride, the oxide of
-{ref}`SPOX <step-080>` over it, or both) and this nitride. The nitride
-thickness itself is not public.
+Two public facts bear on the step:
+
+* **The PDK's process stack diagram** names a dielectric "SPNIT" with
+  a relative permittivity of 7.5,[^pdk-04] the value of silicon
+  nitride, alongside the other front-end dielectrics (the field and
+  inter-level oxides at 3.9–4.5, the "LINT" nitride at 7.3). This
+  reference uses the same word as the step's label.
+* **The PDK's assumptions table** carries an "oxide spacer" of
+  0.05 µm.[^pdk-03] So the finished SKY130 spacer is, we infer, a
+  composite: an oxide component (the re-oxidation of
+  {ref}`IOX45 <step-063>` under the nitride, the oxide of
+  {ref}`SPOX <step-080>` over it, or both) and this nitride.
+
+The nitride thickness itself is not public.
 
 What the film is deposited onto matters for the etch that follows.
-On this reading of the flow, the surface is oxide everywhere: the
-nitride/oxide cap on top of the gates ({ref}`GATENIT <step-058>`,
-{ref}`POC <step-059>`), which the {ref}`GATENIT <step-058>` page reads
-as at least the PDK's 0.2 µm "poly cap after SPE" (the PDK's figure is
-the thickness that survives the spacer etch at {ref}`SPE <step-077>`,
-so the cap here is no thinner)[^pdk-03], the
-{ref}`IOX45 <step-063>` oxide on the gate sidewalls and on the
-source/drain silicon, and the trench oxide over the field. Whether
+On this reading of the flow, the surface is oxide everywhere:
+
+* the nitride/oxide cap on top of the gates ({ref}`GATENIT <step-058>`,
+  {ref}`POC <step-059>`), which the {ref}`GATENIT <step-058>` page reads
+  as at least the PDK's 0.2 µm "poly cap after SPE".[^pdk-03] (The PDK's
+  figure is the thickness that survives the spacer etch at
+  {ref}`SPE <step-077>`, so the cap here is no thinner.)[^pdk-03]
+* the {ref}`IOX45 <step-063>` oxide on the gate sidewalls and on the
+  source/drain silicon;
+* the trench oxide over the field.
+
+Whether
 the thin implant/re-oxidation oxide over the source/drain is still
 intact after the four tip and halo strips, or has been thinned, is
 not public; the spacer etch will stop on it, so its thickness is a
@@ -63,15 +89,19 @@ recipe input.
 `SPNIT` is a {ref}`Thin-film deposition <category-deposition>` step —
 a CVD silicon nitride, like {ref}`ISONIT <step-003>` and
 {ref}`GATENIT <step-058>` before it and {ref}`LINIT <step-104>`
-after. What is specific to this instance is that *conformality* is
-the film property that matters most: the spacer width is the
+after.
+
+What is specific to this instance is that *conformality* is
+the film property that matters most. The spacer width is the
 sidewall thickness, so the ratio of sidewall to top thickness
 ({term}`step coverage`) must be close to one and reproducible across
-the wafer, and the film must coat the foot of a gate line at least
+the wafer. The film must coat the foot of a gate line at least
 0.38 µm tall (0.18 µm of poly[^pdk-03] plus a cap no thinner than the
 PDK's 0.2 µm "poly cap after SPE", which is the post-{ref}`SPE
 <step-077>` figure[^pdk-03]) on a 0.21 µm space
-(poly.2)[^pdk-periph] without seaming. The second
+(poly.2)[^pdk-periph] without seaming.
+
+The second
 distinguishing property is thermal budget: the wafer now carries
 annealed arsenic tips and boron halos, and a hot furnace deposition
 would move them.
@@ -81,10 +111,12 @@ would move them.
 The sidewall spacer is the device that makes a lightly doped drain
 possible. Ogura et al. introduced the LDD transistor in 1980 to move
 the peak drain field away from the gate edge and so limit hot-carrier
-damage,[^ogura-1980] and Tsang et al. showed in 1982 how to build it
+damage.[^ogura-1980] Tsang et al. showed in 1982 how to build it
 with an oxide sidewall spacer formed by conformal deposition and
 anisotropic etch-back, so that the light and heavy implants are both
-self-aligned to the gate without a second mask.[^tsang-1982] Every
+self-aligned to the gate without a second mask.[^tsang-1982]
+
+Every
 CMOS process since has kept the idea: the shallow {term}`extension`
 is implanted with the bare gate as the mask ({ref}`ASTI <step-065>`),
 the spacer is grown, and the deep source/drain is implanted with the
@@ -99,7 +131,7 @@ several reasons that the literature sets out:
 
 * **Etch selectivity.** A nitride spacer can be etched back with high
   selectivity to the oxide under it, so the source/drain silicon is
-  not trenched and the gate cap survives;[^regis-1997] Goss and
+  not trenched and the gate cap survives.[^regis-1997] Goss and
   Thornburg describe the integration of a nitride spacer into a
   0.35 µm CMOS technology and the process challenges that came with
   it.[^goss-1997]
@@ -108,24 +140,31 @@ several reasons that the literature sets out:
   gate stack against the wet chemistry and implants that follow.
 * **Fringing field.** The dielectric constant of the spacer sets the
   gate-to-extension fringing capacitance and the fringing field that
-  helps the gate control the extension; Mizuno et al. deliberately
+  helps the gate control the extension.
+
+  Mizuno et al. deliberately
   used a high-permittivity spacer for that
   reason,[^mizuno-1989] and Shrivastava and Fitzpatrick[^shrivastava-1982]
   and McAndrew et al.[^mcandrew-1994] give the overlap/fringing
-  capacitance models that circuit designers use — the PDK's 7.5 value
+  capacitance models that circuit designers use. The PDK's 7.5 value
   for "SPNIT"[^pdk-04] is exactly the number those models need.
 
-The cost of nitride is hydrogen and stress. CVD nitride carries
-hydrogen that can reach the gate oxide, and Sambonsugi and
-Sugii,[^sambonsugi-1998] Hwang et al.[^hwang-1996] and Janapaty et
-al.[^janapaty-1998] all report hot-carrier behaviour that depends on
-whether the spacer is nitride, oxide or a composite; Shimaya traced
-part of the effect to water diffusing through nitride
-passivation.[^shimaya-1995] Om et al. measured junction leakage for
-LDD NMOS with different spacer materials.[^om-1995] The film's stress
-matters too: an etch-stop nitride over the gate strains the channel
-enough to change drive current, as Ito et al. and Shimizu et al.
-showed at the 130 nm generation.[^ito-2000][^shimizu-2001] These are
+The cost of nitride is hydrogen and stress:
+
+* **CVD nitride carries hydrogen** that can reach the gate oxide.
+
+  Sambonsugi and Sugii,[^sambonsugi-1998] Hwang et al.[^hwang-1996] and
+  Janapaty et al.[^janapaty-1998] all report hot-carrier behaviour that
+  depends on whether the spacer is nitride, oxide or a composite.
+  Shimaya traced part of the effect to water diffusing through nitride
+  passivation.[^shimaya-1995] Om et al. measured junction leakage for
+  LDD NMOS with different spacer materials.[^om-1995]
+* **The film's stress** matters too: an etch-stop nitride over the gate
+  strains the channel enough to change drive current, as Ito et al. and
+  Shimizu et al. showed at the 130 nm
+  generation.[^ito-2000][^shimizu-2001]
+
+These are
 the reasons a {term}`composite spacer` with an oxide {term}`liner` — which the PDK's
 "oxide spacer" entry[^pdk-03] suggests SKY130 has — is common.
 
@@ -135,29 +174,35 @@ short-channel behaviour of every transistor in the PDK would change.
 
 ## How it is typically performed
 
-Industry-generic routes for a spacer nitride in a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*Industry-generic routes for a spacer nitride in a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 * **LPCVD from dichlorosilane and ammonia.** Hot-wall furnace at
   roughly 700–800 °C and a few hundred mTorr (typical industry
-  values, category page[^txt-02][^wiki-sin]); Roenigk and Jensen model
+  values, category page[^txt-02][^wiki-sin]).
+
+  Roenigk and Jensen model
   the reactor,[^roenigk-1987] Habraken and Kuiper review the film
   properties.[^habraken-1994] The film is stoichiometric, dense,
   nearly perfectly conformal and under tensile stress of order 1 GPa
   (typical industry value, category page[^wiki-sin][^txt-02]), and
-  deposits on both wafer faces; Temple-Boyer et al. measured the
+  deposits on both wafer faces. Temple-Boyer et al. measured the
   stress of LPCVD SiNₓ from silane and ammonia across deposition
   temperature, pressure and gas ratio and obtained ≈600 MPa for their
-  lowest-stress Si₃N₄ condition.[^temple-boyer-1998] The drawback is
+  lowest-stress Si₃N₄ condition.[^temple-boyer-1998]
+
+  The drawback is
   thermal budget:
   minutes at 750 °C after the tips are annealed is a real diffusion
   step, and part of the reason the tip anneal precedes the spacer
   rather than following it.
 * **Low-temperature LPCVD from BTBAS.** Bis(tertiary-butylamino)silane
-  with ammonia deposits nitride in a furnace at 550–600 °C, which
-  Gumpher et al. demonstrated in a 200 mm vertical batch furnace at
+  with ammonia deposits nitride in a furnace at
+  550–600 °C.[^gumpher-2004]
+
+  Gumpher et al. demonstrated it in a 200 mm vertical batch furnace at
   deposition rates of 4–30 Å/min,[^gumpher-2004] with conformality
-  close to the DCS film; Gumpher et al. characterise the process and
+  close to the DCS film. Gumpher et al. characterise the process and
   film,[^gumpher-2004] and Smith, Seutter and Iyer the
   thermal chemistry.[^smith-2005] SkyWater lists "BTBAS" among its
   Aviza furnace processes,[^skw-01] and a low-temperature spacer
@@ -171,16 +216,19 @@ fab (SKY130's recipe is not public):
   Conformality is poorer than LPCVD, which makes the spacer width
   depend on {term}`pattern density`; PECVD spacers are therefore less usual
   at this node, though not unknown.
-* **Thickness.** Not public. The spacer width is a fraction of the
-  0.15 µm minimum gate length (poly.1a);[^pdk-periph] the PDK's
+* **Thickness.** Not public.
+
+  The spacer width is a fraction of the
+  0.15 µm minimum gate length (poly.1a).[^pdk-periph] The PDK's
   0.06 µm "vertical space" entry for the N⁺/P⁺ source/drain
   (variable `LD`)[^pdk-03] is, if we read it as the lateral
   diffusion allowance, a hint at the scale of offset the flow is
   designed around, but it does not give the nitride thickness.
+
   ITRS 2001 takes the sidewall spacer width of an extension structure
   to equal the contact junction depth and gives 48–95 nm for the 2001
-  technology year[^itrs-01] — for an MPU of 65 nm physical gate
-  length, not for SKY130's 0.15 µm drawn gate, so the figure sets a
+  technology year.[^itrs-01] That is for an MPU of 65 nm physical gate
+  length,[^itrs-01] not for SKY130's 0.15 µm drawn gate, so the figure sets a
   scale rather than a value (our reading of the roadmap, as on
   {ref}`NTM <step-064>`). The PDK's 0.05 µm "oxide spacer"[^pdk-03]
   lies at the bottom of that band.
@@ -204,20 +252,25 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnace, BTBAS nitride.** SkyWater states that "Furnaces are
-  all made by Aviza" and lists, among the furnace processes, LPCVD
-  nitride and a BTBAS nitride.[^skw-01] Strength: **strong** for the
-  existence of both processes; the assignment of the *spacer* to the
-  BTBAS process is an **inference** from the thermal-budget argument
-  above, and a DCS/NH₃ LPCVD spacer on the same furnaces is equally
-  consistent with the public list. Dealer documentation describes the
+* **Aviza furnace, BTBAS nitride**
+  - *SkyWater says:* states that "Furnaces are all made by Aviza" and
+    lists, among the furnace processes, LPCVD nitride and a BTBAS
+    nitride.[^skw-01]
+  - *Tool exists:* **strong** for the existence of both processes.
+  - *Runs this step:* the assignment of the *spacer* to the BTBAS
+    process is an **inference** from the thermal-budget argument above,
+    and a DCS/NH₃ LPCVD spacer on the same furnaces is equally
+    consistent with the public list.
+
+  Dealer documentation describes the
   Aviza/SVG AVP-8000 as "a vertical batch furnace with a flexible
   platform for diffusion, oxidation, and LPCVD processes" for
   150–200 mm wafers[^aviza-avp] (weak, a listing rather than a data
   sheet).
 * **"C1" PECVD system** — "PECVD nitride C1" is on the same
-  list.[^skw-01] Strength: strong for the capability; weak for
-  assignment to this step.
+  list.[^skw-01]
+  - *Tool exists:* strong for the capability.
+  - *Runs this step:* weak for assignment to this step.
 
 ## Resources required
 
@@ -234,15 +287,16 @@ fab (SKY130's recipe is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`TIPRTAD <step-075>` (the tip anneal that fixes the
-  extensions before the spacer thermal cycle). Next:
-  {ref}`SPE <step-077>` (the etch-back that forms the spacer).
-* The oxide the film is deposited on: {ref}`IOX45 <step-063>`; the
-  cap it covers: {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`.
-* The oxide component of the spacer: {ref}`SPOX <step-080>`; the
-  implants the finished spacer masks: {ref}`PSDI <step-082>`,
+  extensions before the spacer thermal cycle).
+* Next: {ref}`SPE <step-077>` (the etch-back that forms the spacer).
+* Same module: the oxide component of the spacer,
+  {ref}`SPOX <step-080>`; where the nitride is later cut for contacts,
+  {ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`.
+* Depends on: the oxide the film is deposited on,
+  {ref}`IOX45 <step-063>`; the cap it covers, {ref}`GATENIT <step-058>`,
+  {ref}`POC <step-059>`.
+* Feeds: the implants the finished spacer masks, {ref}`PSDI <step-082>`,
   {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`.
-* Where the nitride is later cut for contacts: {ref}`NPCM <step-078>`,
-  {ref}`NPCME <step-079>`.
 * Other nitrides: {ref}`ISONIT <step-003>`, {ref}`ONO <step-040>`,
   {ref}`GATENIT <step-058>`, {ref}`LINIT <step-104>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
@@ -323,18 +377,18 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* The deposition route (DCS/NH₃ LPCVD, BTBAS LPCVD or PECVD), the
+* **Deposition route and thickness.** The deposition route (DCS/NH₃ LPCVD, BTBAS LPCVD or PECVD), the
   temperature and the thickness of the spacer nitride are not public;
   the BTBAS assignment is an inference from SkyWater's furnace list
   and the thermal budget after {ref}`TIPRTAD <step-075>`.
-* Whether the SKY130 spacer is nitride-only, oxide/nitride or
+* **Spacer structure.** Whether the SKY130 spacer is nitride-only, oxide/nitride or
   oxide/nitride/oxide is inferred from the PDK's "SPNIT" and "oxide
   spacer" entries; the PDK does not draw the spacer's structure.
-* Whether a thin pre-spacer oxide is deposited between
+* **Pre-spacer oxide.** Whether a thin pre-spacer oxide is deposited between
   {ref}`TIPRTAD <step-075>` and this step (a common liner) is not
   stated publicly; this reference describes none, reading the
   {ref}`IOX45 <step-063>` oxide as playing that part (inference).
-* The condition of the oxide over the source/drain silicon at this
+* **Oxide over the source/drain.** The condition of the oxide over the source/drain silicon at this
   point, on which the {ref}`SPE <step-077>` etch must stop, is not
   public.
 
