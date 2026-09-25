@@ -920,3 +920,79 @@ claims:
   - {id: cyx-ar-fy1998-ram5, origin: cypress}
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyx-pin152804-fab4-families, origin: cypress}
+
+# ---- docs/history/naming.md -------------------------------------------------
+- id: name-generation-table
+  page: docs/history/naming.md
+  anchor: The codes and design rules are from the qualification reports
+  grade: attributed
+  attribution: which are all Cypress's
+  footnotes: [qtp-096091, qtp-097132, qtp-102101, qtp-021507, qtp-012705, qtp-011908, qtp-043004, qtp-113005, qtp-063807]
+  sources:
+  - {id: qtp-096091, origin: cypress}
+  - {id: qtp-097132, origin: cypress}
+  - {id: qtp-102101, origin: cypress}
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-012705, origin: cypress}
+  - {id: qtp-011908, origin: cypress}
+  - {id: qtp-043004, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+  - {id: qtp-063807, origin: cypress}
+- id: name-ram-trademarks
+  page: docs/history/naming.md
+  anchor: The product names are from Cypress's annual reports
+  grade: attributed
+  attribution: Cypress's annual reports
+  footnotes: [ar-fy1995, ar-fy1998, ar-fy1997, ar-fy2002, pin-152804]
+  sources:
+  - {id: cyx-ar-fy1995-ram3, origin: cypress}
+  - {id: cyx-ar-fy1998-ram5, origin: cypress}
+  - {id: cyx-ar-fy1997-trademarks, origin: cypress}
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+  - {id: cyx-pin152804-fab4-families, origin: cypress}
+- id: name-digit-reading
+  page: docs/history/naming.md
+  anchor: That the digit of a code is the RAM generation number is our reading.
+  grade: conflict
+  hedge: one source conflicts
+  footnotes: [pin-152804, qtp-011908]
+  sources:
+  - {id: cyx-pin152804-fab4-families, origin: cypress}
+  - {id: qtp-011908, origin: cypress}
+- id: name-letters
+  page: docs/history/naming.md
+  anchor: The evidence for each row is in Cypress's reports and the press.
+  grade: corroborated
+  footnotes: [qtp-091302, qtp-014807, qtp-024110, qtp-021507, ew-2007-s8, eet-2006-c8, qtp-053301, qtp-051101, qtp-096411]
+  sources:
+  - {id: qtp-091302, origin: cypress}
+  - {id: qtp-014807, origin: cypress}
+  - {id: qtp-024110, origin: cypress}
+  - {id: qtp-021507, origin: cypress}
+  - {id: cyx-ew-2007-s8-nvsram, origin: ew}
+  - {id: cyhist-corp-pr-2006-grace-c8-130nm, origin: eetimes}
+  - {id: qtp-053301, origin: cypress}
+  - {id: qtp-051101, origin: cypress}
+  - {id: qtp-096411, origin: cypress}
+- id: name-derivatives
+  page: docs/history/naming.md
+  anchor: Two relations between codes are stated outright.
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-012705, qtp-098462, qtp-011908, qtp-014807]
+  sources:
+  - {id: qtp-012705, origin: cypress}
+  - {id: qtp-098462, origin: cypress}
+  - {id: qtp-011908, origin: cypress}
+  - {id: qtp-014807, origin: cypress}
+- id: name-spelling
+  page: docs/history/naming.md
+  anchor: One report spells the same process five ways
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-051101, qtp-051005, qtp-098462, qtp-110605]
+  sources:
+  - {id: qtp-051101, origin: cypress}
+  - {id: qtp-051005, origin: cypress}
+  - {id: qtp-098462, origin: cypress}
+  - {id: qtp-110605, origin: cypress}
