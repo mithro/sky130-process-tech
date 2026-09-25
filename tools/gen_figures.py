@@ -357,8 +357,6 @@ class XSection:
         c.layers = {}
         for lid, layer in self.layers.items():
             lay = dict(layer)
-            if lid == "sub":
-                lay["depth"] = float(layer["depth"]) * z
             if lay.get("anchor_x") is not None:
                 if a <= float(lay["anchor_x"]) <= b:
                     lay["anchor_x"] = tx(lay["anchor_x"])
@@ -368,7 +366,9 @@ class XSection:
                 lay["anchor_y"] = float(lay["anchor_y"]) * z
             if layer.get("op") == "dope":
                 if layer.get("where"):
-                    lay["where"] = twhere(layer["where"])
+                    # a region wholly outside the window keeps an extent no column matches
+                    # (an empty list would read as "everywhere")
+                    lay["where"] = twhere(layer["where"]) or [[-2.0, -1.0]]
                 for fld in ("y_top", "y_bot", "from_surface", "thickness"):
                     if lay.get(fld) is not None:
                         lay[fld] = float(lay[fld]) * z
@@ -378,6 +378,8 @@ class XSection:
         for op in self.ions:
             o = dict(op)
             o["where"] = twhere(op.get("where") or [[0, DRAW_W]])
+            if not o["where"]:
+                continue                  # the beam lands outside the close-up
             if o.get("label_x") is not None:
                 o["label_x"] = tx(o["label_x"])
             c.ions.append(o)
@@ -395,7 +397,11 @@ class XSection:
                        for s0, s1 in zip(c0, c1)]
             else:
                 src = c0 if t < 0.5 else c1
-            c.cols.append([[s[0], s[1] * z, s[2] * z] for s in src])
+            # The substrate keeps the series' own depth in drawing units: a close-up shows
+            # less of it, not a taller block (and the block may not reach the next panel).
+            bottom = -float(self.layers["sub"]["depth"])
+            c.cols.append([[s[0], max(s[1] * z, bottom), s[2] * z] for s in src
+                           if s[2] * z > bottom])
         c.zoom = z
         return c
 
@@ -1264,7 +1270,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
         return xs.window(close[0], close[1]) if close else xs
 
     panels = [_zoom_panel(p, close[0], zoom) if close else p for p in spec["panels"]]
-    sub_depth = float(series["substrate"]["depth"]) * zoom
+    sub_depth = float(series["substrate"]["depth"])
     depth = float(spec.get("crop_depth", sub_depth))
     floor_y = -depth + 8
     X0 = M
@@ -2080,7 +2086,15 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                             f"{math.hypot(ax - bx, ay - by):.1f} u apart; "
                             "stagger one of them inside its own layer")
     # 16: an implant label may never be drawn over the material that blocks the implant.
+    # A material polygon is seen only inside the clip rectangle of its drawing (the substrate
+    # runs on below the crop), so a point counts as inside it only within that rectangle.
     polys = []
+    clip_of = {}
+    for grp in root.iter("{http://www.w3.org/2000/svg}g"):
+        if "drawing" in (grp.get("class") or "").split() and grp.get("data-rect"):
+            gx, gy, gw, gh = (float(v) for v in grp.get("data-rect").split(","))
+            for pg in grp.iter("{http://www.w3.org/2000/svg}polygon"):
+                clip_of[id(pg)] = (gx, gy, gx + gw, gy + gh)
     for pg in root.iter("{http://www.w3.org/2000/svg}polygon"):
         cls = (pg.get("class") or "").split()
         if "mat" not in cls:
@@ -2090,13 +2104,16 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
             mat = "~" + mat                  # drawn without a colour of its own
         pts = [tuple(float(v) for v in q.split(",")) for q in pg.get("points").split()]
         polys.append((mat, pts))
+        clip_of[len(polys) - 1] = clip_of.get(id(pg), (-math.inf, -math.inf, math.inf, math.inf))
     for owner, segs in leaders:
         if owner != "ions":
             continue
         for (p0, p1) in segs:
             for k in range(21):
                 q = (p0[0] + (p1[0] - p0[0]) * k / 20, p0[1] + (p1[1] - p0[1]) * k / 20)
-                hit = next((mt for mt, pts in polys if _point_in(q, pts)), None)
+                hit = next((mt for k2, (mt, pts) in enumerate(polys)
+                            if clip_of[k2][0] <= q[0] <= clip_of[k2][2]
+                            and clip_of[k2][1] <= q[1] <= clip_of[k2][3] and _point_in(q, pts)), None)
                 if hit:
                     errs.append(f"the ion-beam label's leader runs through {hit}; "
                                 "route it above the surface, clear of every mask")
@@ -3428,7 +3445,7 @@ def selftest() -> int:
     zx = xs0.window(94, 161)
     zf = DRAW_W / 67
     col_in = zx.cols[zx.idx((110 - 94) * zf)]
-    if not (abs(col_in[-1][2] - 6 * zf) < 1e-6 and abs(col_in[0][1] + 40 * zf) < 1e-6):
+    if not (abs(col_in[-1][2] - 6 * zf) < 1e-6 and abs(col_in[0][1] + 40) < 1e-6):
         print(f"SELFTEST FAIL: a close-up does not scale heights by the zoom: {col_in}")
         bad += 1
     if abs(zx.overlays[0]["where"][0][0] - (120 - 94) * zf) > 1e-6 or xs0.overlays[0]["where"] != [[120, 200]]:
