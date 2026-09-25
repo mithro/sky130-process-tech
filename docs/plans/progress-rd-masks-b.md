@@ -65,6 +65,46 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   since the section it links describes the via masks the tier adds; a label such as **Overview.** would
   need the guide's approval.
 
+## Status
+
+All eighteen pages done, one commit each (`Mask <code>: readability pass`). Final gates on the branch:
+check_steps, check_refs, check_machines, check_materials, check_masks (and `--selftest`), check_papers,
+check_patents, check_filings, check_inforce — 0 problems; gen_papers, gen_patents, gen_filings,
+gen_index_links, gen_step_tables, gen_figures `--check` — 0 differences; `sphinx-build -W -E` into a
+fresh directory — exit 0.
+
+**Batch measurement** (`measure5.py` over the 18 pages, §1 caps), before → after:
+
+| Measure | Before | After |
+|---|---:|---:|
+| Paragraphs > 100 words | 196 | 1 |
+| List items > 60 words | 14 | 1 |
+| Sentences > 45 words | 295 | 54 |
+| Table cells > 25 words | 37 | 37 |
+
+The paragraph left is inside tunm's second in-force note (not editable, §2.5), as are two of the 54
+sentences. The item left is tunm's "Plates on runs with no drawn `tunm`" bullet, whose only seam is
+before "Because" (R-PARA 2). The other sentences are listed per page with the reason each was left:
+mostly sentences the script over-counts (quotations, which §1 counts as one word, formulas, role
+links, run lists), flag legends made of quotations, and a few whose split would strand a hedge or need
+new words. The 37 cells are quick-facts cells (left alone, R-QUICKFACTS 4) and quoted rule-table cells;
+none was touched.
+
+**Checked blocks.** A script comparing each page with the base (`tmp/blocks.py`, git-ignored) finds the
+quick-facts tables, the plate tables, the References sections, the footnote definitions, the generated
+index-links blocks, every `{dropdown}` and every rule-table row byte-identical on all 18 pages. The
+`## Steps that use this mask` sections are identical except the closing paragraph on nwm and psdm
+(sentence splits only; the step run and bullets unchanged).
+
+**Preservation summary** (`check_preserved.py --base f629785e --allow-regrouped`, plus the categories
+declared per page): every page reports `LOST hedges: 'about'` (the preposition of the deleted template
+sentence); the other LOSTs are the parameter-table and dash-pair `number_order` regroups explained per
+page, `LOST markers: 'pdk-03'`/`'pdk-06'` ×1 where two markers of one source became one on a list or
+table lead-in (pwbm, rpm, tunm), and tool artefacts (quote and backtick re-pairing) read by hand. No
+`{dropdown}` changed.
+
+**R-CODE.** Nothing to change; the pages write identifiers both ways only inside quotations.
+
 ## Pages
 
 ### 1. nsdm — done
@@ -780,3 +820,14 @@ The sibling of nsdm; the same treatment throughout.
 * **Over the caps after the pass:** the function-line sentence (49 by the script, three quotations).
   Before → after: paragraphs 9 → 0, items 1 → 0, sentences 10 → 1, cells 0 → 0.
 * **Content problems for the owner:** none found.
+
+## Content problems for the owner (collected)
+
+* **onom, tunm:** open text outside the collapsed in-force notes already paraphrases what the notes
+  say ("says the same of its own flow", "describes the same combination and notes what the wet step
+  does to the masked region", "The undercut it describes shrinks …", "takes the other view for tight
+  layouts", "describe the same sequence, the mask it uses and the undercut the isotropic etch
+  leaves"). `check_inforce.py` passes; §2.5 forbids such paraphrase. Left word for word.
+* **tunm:** the second in-force note holds a 126-word paragraph with 66- and 60-word sentences; no edit
+  is allowed inside a note.
+* No arithmetic or factual doubts found in the eighteen pages.
