@@ -42,7 +42,18 @@ check list of `agent-briefs.md`, one worktree and branch each, and a progress fi
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
 | `topic/rd-site` | W4: landing page cards, references index table, glossary by letter, first-use `{term}` links, inventory anchors | Sonnet | running since 2026-09-25 |
-| `topic/cypress-history` (another session, `sky130-process-tech-54`) | History of the Cypress process technologies before S8: new top-level section `docs/history/` (plus `data/history/`, `tools/check_history_quotes.py`), one line in `docs/index.md` after `topic/rd-site` merges; research sub-branches `topic/cyhist-*` | — | running since 2026-09-25; that session merges only when told; coordinate on `docs/index.md`, `docs/references/index.md`, `docs/references/public-sources.md` with `topic/rd-site` |
+| `topic/rd-overview` | W4: overview page reorder, module H3s, prose rules | Sonnet | running since 2026-09-25 |
+| `topic/rd-links2` | second check of the four dead generated-page links; `archive_url` in the datasets | Sonnet | running since 2026-09-25 |
+| `topic/rd-figures-s3s4` | W1c series S3 SONOS + S4 gate oxides (035–047) | Opus | running since 2026-09-25 |
+| `topic/rd-figures-s5` | W1c series S5 poly (048–063); starting state assumed from the S4 pages, reconcile at merge | Opus | running since 2026-09-25 |
+| `topic/rd-steps-014-034` | W2 batch 2 (wells module) | Sonnet | running since 2026-09-25 |
+| `topic/rd-indexes` | W3 batch 1: machines, materials and masks index pages | Sonnet | running since 2026-09-25 |
+| `topic/cypress-history` (another session, `sky130-process-tech-54`) | Cypress process history in a new `docs/history/` section; merges only when told | — | running since 2026-09-25 |
+
+Every branch gets an Opus review (rendered pages included), a fix round by its writer, then the coordinator
+rebases and fast-forward merges. Merge order when several are ready: tooling/generators first, then site
+pages, then content batches (rebase conflicts in the scripted term links are resolved by re-running
+`tools/link_terms.py`, not by hand).
 
 Order after these: apply the pilot review's guide corrections, merge the pilot, then W2 batches module by
 module, each module's figures landing before its readability batch. Quota week now runs 2026-09-24 → 2026-10-01
