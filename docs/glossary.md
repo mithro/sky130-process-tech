@@ -2,7 +2,12 @@
 # Glossary
 
 Terms and acronyms used throughout this reference. Each entry is
-referenced from the pages that use it with the `{term}` role.
+referenced from the pages that use it with the ``{term}`` role.
+
+{ref}`0–9 <gloss-09>` · {ref}`A <gloss-a>` · {ref}`B <gloss-b>` · {ref}`C <gloss-c>` · {ref}`D <gloss-d>` · {ref}`E <gloss-e>` · {ref}`F <gloss-f>` · {ref}`G <gloss-g>` · {ref}`H <gloss-h>` · {ref}`I <gloss-i>` · {ref}`K <gloss-k>` · {ref}`L <gloss-l>` · {ref}`M <gloss-m>` · {ref}`N <gloss-n>` · {ref}`O <gloss-o>` · {ref}`P <gloss-p>` · {ref}`Q <gloss-q>` · {ref}`R <gloss-r>` · {ref}`S <gloss-s>` · {ref}`T <gloss-t>` · {ref}`V <gloss-v>` · {ref}`W <gloss-w>`
+
+(gloss-09)=
+## 0–9
 
 ```{glossary}
 1T1R
@@ -22,7 +27,12 @@ referenced from the pages that use it with the `{term}` role.
     memory transistor to the bit line only when the cell is addressed,
     so that reading and programming one cell do not disturb its
     neighbours, at the cost of more area than a one-transistor cell.
+```
 
+(gloss-a)=
+## A
+
+```{glossary}
 ALD
     Atomic layer deposition: a form of {term}`CVD` in which two
     precursors are admitted one after the other, separated by purges,
@@ -94,7 +104,12 @@ attenuated PSM
     two cancel at the feature edge and the image is sharper. Also
     "attenuated phase-shift mask" or "half-tone PSM"; usually combined
     with {term}`OPC` and {term}`SRAF`s.
+```
 
+(gloss-b)=
+## B
+
+```{glossary}
 backside film removal
     Etching away the oxide, nitride and polysilicon that furnace and
     deposition steps leave on the back of a wafer, in a single-wafer spin
@@ -195,7 +210,12 @@ buried-channel PMOS
     function would otherwise give the PMOS far too negative a threshold.
     Buried channels are more prone to {term}`punch-through` at short
     gate lengths than surface channels.
+```
 
+(gloss-c)=
+## C
+
+```{glossary}
 C49 TiSi₂
     The metastable, high-resistivity crystal form of titanium disilicide
     that forms first when titanium reacts with silicon. A second, hotter
@@ -339,7 +359,12 @@ CZ
     Czochralski: the crystal-growth technique in which a seed crystal is
     slowly pulled from a melt of silicon, producing the boules from which
     almost all IC wafers are cut.
+```
 
+(gloss-d)=
+## D
+
+```{glossary}
 damascene
     A way of making metal wiring by etching trenches or holes into the
     dielectric, overfilling them with metal and polishing the excess
@@ -423,7 +448,12 @@ DUV
     Deep ultraviolet: exposure wavelengths shorter than the mercury
     i-line (365 nm), in practice the KrF excimer laser at 248 nm and
     ArF at 193 nm.
+```
 
+(gloss-e)=
+## E
+
+```{glossary}
 EBR
     Edge-bead removal: dissolving the thick rim of resist that forms at
     the wafer edge during spin coating, using a solvent stream or an
@@ -503,7 +533,12 @@ extension
     The shallow, moderately doped part of the source/drain that extends
     under the gate edge; formed by a low-energy implant self-aligned to
     the gate before the spacer. Also "tip" or {term}`LDD`.
+```
 
+(gloss-f)=
+## F
+
+```{glossary}
 FEOL
     Front end of line: the portion of the process flow that forms the
     transistors and other devices in the silicon, up to but excluding
@@ -537,7 +572,12 @@ Fowler–Nordheim tunnelling
     across it. It is the mechanism by which a {term}`SONOS` cell is
     programmed and erased through its {term}`tunnel oxide`, and it is
     also a leakage and wear-out mechanism in any thin gate oxide.
+```
 
+(gloss-g)=
+## G
+
+```{glossary}
 gap fill
     The ability of a dielectric deposition to fill the narrow space
     between adjacent lines or gates without leaving a void or seam. It
@@ -569,7 +609,12 @@ graded junction
     electric field at the drain, raising the breakdown voltage and
     reducing {term}`hot-carrier injection`; the {term}`LDD` and
     {term}`LATID` drains are ways of grading the drain junction.
+```
 
+(gloss-h)=
+## H
+
+```{glossary}
 halo
     A pocket implant of the opposite type to the source/drain, placed at
     an angle around the extension so that the channel doping rises as
@@ -622,7 +667,12 @@ HTO
     a denser, more thermal-oxide-like film than {term}`TEOS` oxide. Used
     where a deposited oxide must behave like a grown one, for example as
     the {term}`blocking oxide` of an {term}`ONO` stack.
+```
 
+(gloss-i)=
+## I
+
+```{glossary}
 ICP
     Inductively coupled plasma: a high-density plasma excited by an RF
     coil, with ion energy controlled independently by a separate bias
@@ -660,7 +710,12 @@ ISSG
     In-situ steam generation: growth of thin oxides in a single-wafer
     rapid-thermal chamber where H₂ and O₂ react at the wafer to produce
     steam and highly reactive atomic oxygen.
+```
 
+(gloss-k)=
+## K
+
+```{glossary}
 k1
     The dimensionless process factor in the resolution equation
     {math}`CD = k_1 \lambda / NA`; it captures how far resist,
@@ -686,7 +741,12 @@ knock-on implantation
     {term}`screen oxide` into the silicon. The recoiled atoms create
     defects or change the properties of the shallow layer. Also "recoil
     implantation".
+```
 
+(gloss-l)=
+## L
+
+```{glossary}
 LATID
     Large-angle-tilt implanted drain: an {term}`LDD` variant in which the
     extension is implanted at a large tilt so that it reaches well under
@@ -746,7 +806,12 @@ LSS theory
     The Lindhard–Scharff–Schiøtt theory of ion stopping and range, which
     predicts the projected range and straggle of implanted ions from
     nuclear and electronic stopping powers.
+```
 
+(gloss-m)=
+## M
+
+```{glossary}
 mask-proximity effect
     A shift in the characteristics of a transistor that lies close to
     the edge of an implant's resist mask, caused by ions scattering out
@@ -778,7 +843,12 @@ MOL
     FEOL and BEOL; in this reference, the pre-metal glass through the
     polish over the local interconnect ({ref}`step-089` to
     {ref}`step-106`).
+```
 
+(gloss-n)=
+## N
+
+```{glossary}
 NA
     Numerical aperture of the projection lens, {math}`n \sin\theta`; the
     larger the NA the finer the resolution and the shallower the depth
@@ -807,7 +877,12 @@ nucleation layer
     slowly and unevenly on titanium nitride and the fluorine attacks
     the liner. A {term}`pulsed nucleation layer` is one way of forming
     it (see {ref}`step-099`).
+```
 
+(gloss-o)=
+## O
+
+```{glossary}
 ONO
     Oxide–nitride–oxide: the tunnel oxide / charge-trapping nitride /
     blocking oxide stack of a SONOS non-volatile memory transistor.
@@ -854,7 +929,12 @@ oxynitride
     {term}`boron penetration` and raises the dielectric constant; as a
     deposited film silicon oxynitride serves as an inorganic
     {term}`BARC` and as a {term}`hard mask`. Also "nitrided oxide".
+```
 
+(gloss-p)=
+## P
+
+```{glossary}
 passivation
     The final dielectric layers deposited over the top metal — in SKY130
     a thin oxide under a silicon nitride — that protect the finished
@@ -1038,7 +1118,12 @@ PVD
     Physical vapour deposition: deposition of a film from atoms ejected
     from a solid target, in IC manufacturing almost always by magnetron
     sputtering in argon.
+```
 
+(gloss-q)=
+## Q
+
+```{glossary}
 quad implant
     A tilted implant delivered in four equal doses at wafer rotations
     90° apart, so that every gate receives the same tilted dose on both
@@ -1059,7 +1144,12 @@ queue time
     re-oxidises, a freshly polished oxide absorbs moisture, an exposed
     resist loses its latent image. Wafers that exceed it are cleaned
     again or reworked.
+```
 
+(gloss-r)=
+## R
+
+```{glossary}
 radical oxidation
     Oxidation by atomic oxygen radicals generated from hydrogen and
     oxygen at low pressure, either in a single-wafer {term}`ISSG` chamber
@@ -1142,7 +1232,12 @@ RTA
 RTP
     Rapid thermal processing: the family of single-wafer lamp-heated
     processes (anneal, oxidation, nitridation, silicidation).
+```
 
+(gloss-s)=
+## S
+
+```{glossary}
 SACVD
     Sub-atmospheric chemical vapour deposition: thermal CVD of silicon
     dioxide from {term}`TEOS` and ozone at a pressure well above that of
@@ -1315,7 +1410,12 @@ swing curve
     light reflected from the substrate beneath it. Its amplitude is
     largest on shiny substrates such as metal; a {term}`BARC` or
     {term}`TARC` flattens it (see {ref}`step-113`).
+```
 
+(gloss-t)=
+## T
+
+```{glossary}
 TARC
     Top anti-reflective coating: a thin, low-index layer spun on top of
     the resist to reduce reflection at the air–resist interface.
@@ -1363,7 +1463,12 @@ tunnel oxide
     {term}`Fowler–Nordheim tunnelling` during program and erase, yet must
     hold them back during retention; its thickness and quality dominate
     the memory's endurance and retention.
+```
 
+(gloss-v)=
+## V
+
+```{glossary}
 van der Pauw structure
     A symmetric four-contact test structure (Greek cross or cloverleaf)
     from which the sheet resistance of a film is obtained by van der
@@ -1397,7 +1502,12 @@ voltage coefficient
 Vt
     Threshold voltage: the gate voltage at which a MOSFET turns on; set
     by channel doping, oxide thickness and gate work function.
+```
 
+(gloss-w)=
+## W
+
+```{glossary}
 wafer sort
     Functional testing of every die on a wafer with automatic test
     equipment before dicing, in contrast to parametric {term}`e-test`.
