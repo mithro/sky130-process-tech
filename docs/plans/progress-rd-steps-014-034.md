@@ -879,3 +879,30 @@ value already on the page, an R-TOOLS head reusing an existing `{ref}` target, a
 recorded in that fix's own commit message and/or progress-file note rather than pre-declared on
 the command line. See the "Review fix H1"–"Review fix M7" sections of this file (and their
 commits) for the per-fix verification detail.
+
+## For the tool branch
+
+**T-new-1 (tool bug, per review/rd-steps-014-034.md, not fixed here — `tools/check_preserved.py`
+is off-limits to edit, §2 rule 15).** The `refs`/`hedges` extraction regex for `{ref}`/`{term}`/
+`{doc}` roles spans from the role's closing inline-code backtick into the *next* role on the same
+line, rather than stopping at the role's own closing backtick, and so swallows any hedge word
+sitting between the two roles. Confirmed present in both the worktree's `tools/check_preserved.py`
+and the copy of main's improved version used for review-fix verification
+(`tmp/check_preserved.py`, this worktree, not committed). Reproduced on three pages in this
+batch, all pre-existing text unrelated to any review fix:
+
+- `docs/steps/014-lvtnm.md`: `{ref}`\`counter-doping implant\`... produces a garbled
+  `ADDED refs: 'counter-doping implant) or *everywhere except* lvtn'` instead of a clean ref
+  target.
+- `docs/steps/017-nwm.md:227`: `` {ref}`PWBM <step-026>`, whose reticle, we infer, covers the
+  `nwell` `` regions." reports `LOST refs: 'step-026'` and `LOST hedges: 'we infer'` — the regex
+  runs from the closing backtick after `<step-026>` through "whose reticle, we infer, covers the"
+  to the next backtick before `` `nwell` ``, fabricating one bogus combined match instead of
+  seeing a clean `{ref}` target followed by ordinary hedged prose.
+- `docs/steps/022-hvtpm.md:227`: the same pattern on `` {ref}`LVTNM <step-014>` (`lvtn`, which may
+  not overlap `hvtp`). `` reports `LOST refs` and `LOST hedges: 'may'`.
+
+The review's suggested tool fix: anchor the pattern to one role, e.g.
+`` \{(ref|term|doc)\}`[^`]*` ``, so it cannot read past its own closing backtick. Each occurrence
+above was verified by hand to be an intact, unedited `{ref}` role with ordinary surrounding prose
+— no ref target, hedge or number was actually lost — and left untouched.
