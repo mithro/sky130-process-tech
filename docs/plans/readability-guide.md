@@ -219,7 +219,10 @@ Its keys are the triggers used below: `para>100w`, `para>150w`, `para>=3semicolo
 
 **Do.**
 1. Read the block and find its seams: a new source, a new quantity, a new question, a change of subject.
-2. Split at a seam. Keep every sentence, in its original order and wording.
+2. Split at a seam. Keep every sentence, in its original order and wording. Never start a new
+   paragraph with a connective (So, This, But, Which, Because): it means the seam was not real, and
+   the reader is left inferring a cause the split removed. If the only split point is before one, do
+   not split. A split that leaves a block over the cap is no split.
 3. Give each new paragraph a bold run-in label of 2–4 words followed by a full stop
    (`**PDK thickness.** …`) when the block is part of an evidence sequence; a narrative passage takes no
    label.
@@ -285,6 +288,10 @@ of 12 words or more, or a semicolon joining two separately cited facts.
 4. Put the subject and the verb in the first 12 words.
 5. Markers travel with their clause.
 6. Never split inside a quotation: split before it or after it.
+7. A split may add a subject and a verb ("It is", "This is"). It may not add a clause ("This holds
+   even though"): that states a relationship the original sentence did not, in different words. A
+   hedge in parentheses that ends up alone at a split may be capitalised and closed as its own
+   sentence — "(our extraction …)" → "(Our extraction ….)" — do nothing else to it.
 
 **Example** — `docs/steps/066-bhi.md:16`.
 
