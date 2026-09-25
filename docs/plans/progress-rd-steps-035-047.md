@@ -45,6 +45,38 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 036-tunarce.md — done (1 hand-written in-force note in the body, plus its copy under
+References; both untouched)
+
+Rules applied: R-PARA/R-SENTENCE throughout (the lead split at its
+definition/mechanism/consequence seams, and the semicolon inside its second sentence split
+into two; the "industry-generic form" paragraph split at its resist-in-place/plasma-exposure
+seam; both "Why this step exists" bullets split into lead + indented continuation at their
+own seams; the "Chemistry" and "Selectivity" items split into lead + indented continuation),
+R-HEDGE step 1 (italic lead-in on the "How it is typically performed" scope sentence — same
+missing-heading slip as 035 happened again on the first pass and was caught the same way, by
+`check_steps.py`, before any checker was declared passing), R-TOOLS (3 "Strength:" bullets
+split into SkyWater-says/Tool-exists/Runs-this-step form; 3 tools, under the 4-tool
+threshold, so no recap table), R-RELATED (`Same category:` label added to the FOM pointer
+bullet), R-OPENQ (bold labels added to all four bullets), R-GLANCE (box inserted last;
+"Public numbers" is "none published for SKY130" since every number on this page is either a
+category-page generality or lives inside the in-force dropdown).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 3 → 0 (figure caption
+excepted, off limits); list items > 60 words 4 → 0; sentences > 45 words 5 → 0; table cells >
+25 words 0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,hedges,identifiers --allow-regrouped docs/steps/036-tunarce.md`: **0 undeclared
+differences** — the cleanest page so far. Declared additions are exactly the glance box's own
+marker (`skw-01`, repeating the first R-TOOLS item's grade) and its template words
+("inference", "not public", the bare word "SKY130" in "none published for SKY130"). All other
+checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom,
+including both hand-written in-force dropdowns (title, body and the copy under References all
+byte-identical to the source, confirmed by the preservation check's `dropdown` category
+showing no finding).
+
+
 ### 035-tunm.md — done (2 in-force patents in the generated dropdown; no hand-written
 in-force note in the body)
 

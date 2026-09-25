@@ -10,21 +10,41 @@
 | **Previous step** | {ref}`TUNM <step-035>` |
 | **Next step** | {ref}`PTSI <step-037>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the anti-reflective coating out of the tunnel
+  windows, stopping on the oxide beneath.
+* **Why:** the coating would otherwise absorb part of the following
+  implants' dose and block the later oxide etch.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** Applied Materials DPS II — strong (tool);
+  inference (assignment).[^skw-01]
+* **Not public:** whether the ARC is organic or inorganic, and its
+  thickness (→ Open questions).
+:::
+
 ## What this step is
 
 The step list describes `TUNARCE` as "Tunnel mask ARC etch" and does not
-explain it;[^steps-sheet] we read it as a short plasma etch that removes
+explain it.[^steps-sheet] We read it as a short plasma etch that removes
 the anti-reflective coating from the bottom of the windows that
-{ref}`TUNM <step-035>` opened in the photoresist. A bottom anti-reflective coating
-({term}`BARC`) is spun on *under* the resist and is not photosensitive:
-after develop the resist is gone from the tunnel windows but the {term}`ARC`
+{ref}`TUNM <step-035>` opened in the photoresist.
+
+A bottom anti-reflective coating
+({term}`BARC`) is spun on *under* the resist and is not photosensitive.
+
+After
+develop, the resist is gone from the tunnel windows, but the {term}`ARC`
 film still covers the oxide inside them — the pad oxide from
-{ref}`BOX <step-002>`, we infer (its retention is not public). This etch
+{ref}`BOX <step-002>`, we infer (its retention is not public).
+
+This etch
 transfers the resist pattern through the ARC and stops on that oxide, so
 that the
 two implants that follow ({ref}`PTSI <step-037>`,
 {ref}`DEPI <step-038>`) enter the silicon through a known, thin oxide
-only, and so that the wet etch at {ref}`TUNME <step-039>` can reach and
+only. It also lets the wet etch at {ref}`TUNME <step-039>` reach and
 remove that oxide.
 
 :::{figure} /_static/figures/sonos-036-tunarce.svg
@@ -35,12 +55,15 @@ remove that oxide.
 Before, the tunnel-mask window with the anti-reflective coating still across its bottom; after, the coating cleared from the window only, down to the oxide, and left in place under the resist. The step list gives only the step's name; that it is an etch of the coating in the windows, stopping on the oxide, is this page's reading.[^steps-sheet] Whether the coating is organic or inorganic, how thick it is and how much resist the etch consumes are not public, so the resist is drawn unchanged. The oxide in the window is drawn as the pad oxide, which the page infers; the fill oxide and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
 :::
 
-In its industry-generic form (SKY130's recipe is not public): with the
-tunnel-mask resist in place, the wafer is exposed to an oxygen-based
-plasma, we infer, that {term}`ashes <ash>` the organic ARC in the open windows (the
-resist is attacked at a similar rate but is many times thicker), with
-the etch run to an optical-emission {term}`endpoint` plus a timed {term}`over-etch`, and
-stopping on the pad oxide beneath, whose thickness in a Cypress patent
+In its industry-generic form (SKY130's recipe is not public), the
+tunnel-mask resist stays in place. The wafer is exposed to an
+oxygen-based plasma, we infer, that {term}`ashes <ash>` the organic ARC in the
+open windows (the resist is attacked at a similar rate but is many
+times thicker).
+
+The etch is run
+to an optical-emission {term}`endpoint` plus a timed {term}`over-etch`, and
+stops on the pad oxide beneath, whose thickness in a Cypress patent
 that may still be in force is in the collapsed note below. This
 reference describes the film only as an ARC; whether it is an organic
 BARC or an inorganic dielectric ARC is discussed under *Open questions*.
@@ -68,26 +91,30 @@ window is for.
 
 * **Why the ARC.** Anti-reflective coatings "help reduce standing
   waves, thin-film interference, and specular reflections"[^wiki-arc]
-  from the substrate. At the tunnel mask the substrate is a thin pad
-  oxide over silicon next to thick trench oxide over silicon: two
+  from the substrate.
+
+  At the tunnel mask the substrate is a thin pad
+  oxide over silicon next to thick trench oxide over silicon. These are two
   stacks with very different reflectivity at 365 nm, side by side,
   under a resist that must define 0.410 µm windows with 0.095 µm
   clearances to the gates (tunm.1, tunm.3, tunm.4).[^pdk-periph]
+
   Reflectivity swings of that kind change the effective dose inside
-  the resist and shift the printed {term}`CD` ({ref}`category-lithography`);
-  an ARC removes the substrate from the exposure equation. A 1996
+  the resist and shift the printed {term}`CD` ({ref}`category-lithography`).
+  An ARC removes the substrate from the exposure equation. A 1996
   study on an i-line 0.35 µm device is the classic demonstration that
   a new anti-reflective coating tightens CD control.[^baker-1996]
 * **Why the ARC must be opened before implanting.** The thickness of
   the ARC is not public, and this reference has no checked figure for
-  it. The channel-type implants that follow are at tens to several
+  it.
+
+  The channel-type implants that follow are at tens to several
   hundred keV on the published analogues
-  ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`); an unopened organic film in their path
+  ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`). An unopened organic film in their path
   would absorb part of the dose, by an amount that depends on its
-  thickness and the ions' {term}`projected range` in it (inference),
-  and shift the profile of the
-  memory transistor's channel — precisely the parameter these implants
-  exist to set.
+  thickness and the ions' {term}`projected range` in it (inference).
+  This would shift the profile of the memory transistor's channel —
+  precisely the parameter these implants exist to set.
 * **Why it must be opened before the oxide etch.** The (inferred)
   HF-based etch at {ref}`TUNME <step-039>` cannot penetrate an organic
   film; the window has to be clear down to the oxide.
@@ -100,8 +127,8 @@ oxide; both have to be budgeted in the resist thickness.
 
 ## How it is typically performed
 
-An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 * **Chamber.** A high-density or medium-density plasma etcher of the
   silicon/poly class, at a few to tens of millitorr
@@ -112,7 +139,9 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * **Chemistry.** Oxygen with nitrogen, or oxygen with a hydrogen
   halide such as HBr. Pure O₂ etches organics fast but isotropically;
   adding N₂ or HBr passivates the sidewall so that the ARC opening does
-  not undercut the resist edge. Xu, Lill and Podlesnik (Applied
+  not undercut the resist edge.
+
+  Xu, Lill and Podlesnik (Applied
   Materials) characterised organic ARC etching "in O₂+halogen/hydrogen
   halide plasma" and showed how the sidewall chemistry controls the
   profile;[^xu-2001] Ramanathan et al. discuss the integration issues
@@ -121,7 +150,9 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * **{term}`Selectivity <selectivity>`.** Organic ARC and resist are chemically similar, so
   selectivity to resist is close to 1:1 and the resist budget must
   include the ARC thickness plus over-etch (industry practice; Nojiri,
-  ch. 3).[^nojiri-2015] Selectivity to the underlying oxide is very
+  ch. 3).[^nojiri-2015]
+
+  Selectivity to the underlying oxide is very
   high in an oxygen plasma, because oxide has no volatile product
   without fluorine; a small HBr addition etches oxide only slowly.
 * **Endpoint.** Optical emission of a carbon-containing product line
@@ -151,19 +182,25 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials DPS II.** SkyWater lists "AMAT DPSII, HBR, Cl2,
-  NF3, CF4, CHF3, O2 – gate, trench, W/WN".[^skw-01] The HBr/O₂ gas set
-  is exactly an organic-ARC-open chemistry. Strength: **strong** for
-  the tool; **inference** for its assignment to `TUNARCE`.
-* **Lam 9400 TCP.** Listed as "Lam 9400 TCP, poly/nitride, HBr, CF4,
-  SF6, O2"[^skw-01] — also capable of O₂/HBr ARC opens and, with CF₄,
-  of an inorganic ARC open. Strength: strong for the tool; inference
-  for the assignment. A university clean-room describes the 9400 as "a
-  Transformer Coupled Plasma (TCP) etcher" with a gas list including
-  oxygen.[^snf-9400]
-* **GaSonics PEP / Iridia / Mattson Aspen II ashers** ("N2, O2",
-  "N2, O2, H2, CF4, NH3, H2/N2")[^skw-01] — the isotropic alternative.
-  Strength: strong for existence; weak for assignment.
+* **Applied Materials DPS II**
+  - *SkyWater says:* lists "AMAT DPSII, HBR, Cl2,
+    NF3, CF4, CHF3, O2 – gate, trench, W/WN".[^skw-01]
+  - *Tool exists:* **strong** — the HBr/O₂ gas set
+    is exactly an organic-ARC-open chemistry.
+  - *Runs this step:* **inference**, for its assignment to `TUNARCE`.
+* **Lam 9400 TCP**
+  - *SkyWater says:* lists "Lam 9400 TCP, poly/nitride, HBr, CF4,
+    SF6, O2".[^skw-01] A university clean-room describes the 9400 as
+    "a Transformer Coupled Plasma (TCP) etcher" with a gas list
+    including oxygen.[^snf-9400]
+  - *Tool exists:* strong — also capable of O₂/HBr ARC opens and, with
+    CF₄, of an inorganic ARC open.
+  - *Runs this step:* inference.
+* **GaSonics PEP / Iridia / Mattson Aspen II ashers**
+  - *SkyWater says:* lists them ("N2, O2",
+    "N2, O2, H2, CF4, NH3, H2/N2").[^skw-01]
+  - *Tool exists:* strong for existence — the isotropic alternative.
+  - *Runs this step:* weak.
 
 ## Resources required
 
@@ -182,8 +219,8 @@ An industry-generic BARC-open recipe for a 200 mm, 130 nm-era fab
 * Next: {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant
   through the cleared windows; {ref}`TUNME <step-039>` etches the pad
   oxide in them.
-* The ARC question for the other mask layers is discussed on
-  {ref}`FOM <step-004>`.
+* Same category: the ARC question for the other mask layers is
+  discussed on {ref}`FOM <step-004>`.
 * Category page: {ref}`Etch <category-etch>`; the ARC itself belongs
   to {ref}`category-lithography`.
 
@@ -252,16 +289,18 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* Whether the tunnel-mask ARC is an organic BARC or an inorganic
-  dielectric ARC is not public; the O₂/HBr reading is an inference from
-  the tool gas sets and from industry practice on i-line layers.
-* Why a relaxed implant layer would carry an ARC, when this reference
-  describes no ARC etch at the other implant masks, is an open
-  question; the reflectivity contrast of the pad-oxide/trench-oxide
-  substrate is our best reading.
-* Which etcher runs the step, and whether the open is directional or a
-  timed ash, is inferred, not stated.
-* ARC thickness, etch time and over-etch are not public.
+* **ARC type.** Whether the tunnel-mask ARC is an organic BARC or an
+  inorganic dielectric ARC is not public; the O₂/HBr reading is an
+  inference from the tool gas sets and from industry practice on
+  i-line layers.
+* **Why an ARC here.** Why a relaxed implant layer would carry an ARC,
+  when this reference describes no ARC etch at the other implant
+  masks, is an open question; the reflectivity contrast of the
+  pad-oxide/trench-oxide substrate is our best reading.
+* **Which tool and method.** Which etcher runs the step, and whether
+  the open is directional or a timed ash, is inferred, not stated.
+* **Thickness and timing.** ARC thickness, etch time and over-etch are
+  not public.
 
 <!-- footnotes -->
 
