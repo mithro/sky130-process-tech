@@ -44,7 +44,6 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
 | `topic/rd-figures-s10` | W1c series S10 MiM (135–140, 150–153): written; Opus review running | Opus | in review |
-| `topic/rd-steps-064-075` | W2 batch 5 (tips and halos): written; Opus review running | Opus | in review |
 | `topic/rd-masks-b` | W3 batch 6: mask pages 19–36 — Opus writer | Opus | writing |
 | `topic/rd-preserved3` | check_preserved.py round 3: refs/code-span masking, per-paragraph quotes, hedge list, `--allow-deduplicated`, word-multiset diff, glance/SkyWater-says warnings | Sonnet | writing |
 
