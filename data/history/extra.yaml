@@ -18,7 +18,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   sha256: 07f39317b4e487f1b0122f69ebdd2291f07cd399c5adde7c0dcaef6313806abd
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706194432/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1997.txt
   quotes:
@@ -41,7 +41,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   sha256: efd6684a9682200288260eb9660a2d726836cd429e47ecec07e8db2ecfd8987b
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706210744/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1998.txt
   quotes:
@@ -79,7 +79,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
   sha256: c82e16d790c1b548eb1385af2a809f4a1773334dec2c5ce16c1e936400650688
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240707071917/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2001.txt
   quotes:
@@ -101,7 +101,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
   sha256: e9cdda6bb05f28276b3251022a2396765e5e623148d4a23123459793f58d53b3
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706204241/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2008.txt
   quotes:
@@ -134,7 +134,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
   sha256: 4bf8d7ca7bad3f776da4f488ad62e05dca4aa3031f84dbdd5657aac7ed89077b
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240707001734/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2009.txt
   quotes:
@@ -160,7 +160,7 @@ records:
     date: 2017-03-31
     form: newspaper article
   url: https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063
-  archive_url: null
+  archive_url: https://web.archive.org/web/20250918182333/https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063
   retrieved: 2026-09-25
   cache: web/chrome-startribune-2017-03-31-cypress-plant-bloomington.txt
   quotes:
@@ -187,7 +187,7 @@ records:
     date: 2019-06-09
     form: newspaper article
   url: https://www.startribune.com/why-computer-chip-factories-from-the-1980s-are-still-going-strong-in-bloomington/510984342
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240619151732/https://www.startribune.com/why-computer-chip-factories-from-the-1980s-are-still-going-strong-in-bloomington/510984342/
   retrieved: 2026-09-25
   cache: web/chrome-startribune-2019-06-09-chip-factories-1980s-bloomington.txt
   quotes:
@@ -221,7 +221,7 @@ records:
     form: trade-press article
   url: https://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/
   sha256: 3a0f9b153eac61b9a14bc74725a463b7ab012fdc71b366a2de0be6a2063ca335
-  archive_url: null
+  archive_url: https://web.archive.org/web/20151004203204/http://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/
   retrieved: 2026-09-25
   cache: web/ew-2007-10-cypress-4mbit-nvsram.txt
   quotes:
@@ -376,7 +376,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
   sha256: c1c09b68e0845712e3ffacda5182317c335dcf87389b87dbcf6a3f151e2be739
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618114229/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1995.txt
   quotes:
@@ -400,7 +400,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
   sha256: 1c03f974ae1189581ac6cbc28a18f150c8d2493bd34bb87bba38f4bbb25d171a
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706220723/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1996.txt
   quotes:
@@ -437,7 +437,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   sha256: 07f39317b4e487f1b0122f69ebdd2291f07cd399c5adde7c0dcaef6313806abd
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706194432/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1997.txt
   quotes:
@@ -462,7 +462,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   sha256: efd6684a9682200288260eb9660a2d726836cd429e47ecec07e8db2ecfd8987b
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706210744/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1998.txt
   quotes:
@@ -499,7 +499,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf
   sha256: 205fb51787cfa0444268ccb82e01a186e08147b2f5f3ca77543b537977f0640f
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618114621/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1999.decoded.txt
   quotes:
@@ -528,7 +528,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
   sha256: e464d9584e1d2517b2f03093bb21595579a7727378bc19ecdd063f44cc199454
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618112715/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2002.txt
   quotes:
@@ -591,7 +591,7 @@ records:
     form: technical article
   url: https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21
   sha256: 5fbb0149f50581ca083eb167b764b6ccccad091f77135aee0f207db237d1f809
-  archive_url: null
+  archive_url: https://web.archive.org/web/20251206103410/https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21
   retrieved: 2026-09-25
   cache: web/chipestimate-sonos-scalable.html.txt
   quotes:
@@ -616,7 +616,7 @@ records:
     form: product brief
   url: https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069
   sha256: 2e0eecb3250078cade2fef1150adf2173ec7c899bcdff615faa4c40bc4d9f1a9
-  archive_url: null
+  archive_url: https://web.archive.org/web/20250825141423/https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069
   retrieved: 2026-09-25
   cache: web/infineon-sonos-eflash-brief.txt
   quotes:
@@ -643,7 +643,7 @@ records:
     form: web page
   url: https://skywater-pdk.readthedocs.io/en/main/previous.html
   sha256: b3731bba09a09afad903195ffca8fe5d22b98264c743eccb80e716085df0c82c
-  archive_url: null
+  archive_url: https://web.archive.org/web/20260709144650/https://skywater-pdk.readthedocs.io/en/main/previous.html
   retrieved: 2026-09-25
   cache: web/pdk-previous.txt
   quotes:
@@ -673,7 +673,7 @@ records:
     form: web page
   url: https://skywater-pdk.readthedocs.io/en/main/rules/hv.html
   sha256: 40a26df11d988aeccecc5285d0166a25b567cc1384f59c5a1f818ef0c6433422
-  archive_url: null
+  archive_url: https://web.archive.org/web/20260613065332/https://skywater-pdk.readthedocs.io/en/main/rules/hv.html
   retrieved: 2026-09-25
   cache: web/pdk-hv.txt
   quotes:
@@ -719,7 +719,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
   sha256: c1c09b68e0845712e3ffacda5182317c335dcf87389b87dbcf6a3f151e2be739
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618114229/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1995.txt
   quotes:
@@ -741,7 +741,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
   sha256: 1c03f974ae1189581ac6cbc28a18f150c8d2493bd34bb87bba38f4bbb25d171a
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706220723/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1996.txt
   quotes:
@@ -770,7 +770,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   sha256: 07f39317b4e487f1b0122f69ebdd2291f07cd399c5adde7c0dcaef6313806abd
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706194432/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1997.txt
   quotes:
@@ -800,7 +800,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   sha256: efd6684a9682200288260eb9660a2d726836cd429e47ecec07e8db2ecfd8987b
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706210744/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1998.txt
   quotes:
@@ -821,7 +821,7 @@ records:
     date: 1988
     form: data book
   url: https://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20190515185553/http://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf
   retrieved: 2026-09-25
   cache: web/cypress-1988-cmos-databook-p1-1-2.txt
   quotes:
@@ -881,7 +881,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
   sha256: 2158a5196d2afb71e5032e177a70fdab676bd2c0389eb6382e4dee1a57fd338c
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706194840/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2010.txt
   quotes:
@@ -902,7 +902,7 @@ records:
     form: technical article
   url: https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21
   sha256: 5fbb0149f50581ca083eb167b764b6ccccad091f77135aee0f207db237d1f809
-  archive_url: null
+  archive_url: https://web.archive.org/web/20251206103410/https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21
   retrieved: 2026-09-25
   cache: web/chipestimate-sonos-scalable.html.txt
   quotes:

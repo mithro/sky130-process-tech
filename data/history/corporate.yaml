@@ -27,7 +27,7 @@ records:
     date: 1994-03-16
     form: 10-K
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1994.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618114056/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1994.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1993.txt
   sha256: f07dc8e77da34eec184513d2449c4713214bc3d747c6496cda55603544083dc8
@@ -180,7 +180,7 @@ records:
     date: 1996-01-19
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618114229/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1995.txt
   sha256: c1c09b68e0845712e3ffacda5182317c335dcf87389b87dbcf6a3f151e2be739
@@ -218,7 +218,7 @@ records:
     date: 1997-02-25
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706220723/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1996.txt
   sha256: 1c03f974ae1189581ac6cbc28a18f150c8d2493bd34bb87bba38f4bbb25d171a
@@ -263,7 +263,7 @@ records:
     date: 1998-03-06
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706194432/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1997.txt
   sha256: 07f39317b4e487f1b0122f69ebdd2291f07cd399c5adde7c0dcaef6313806abd
@@ -305,7 +305,7 @@ records:
     date: 1999-01-25
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706210744/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy1998.txt
   sha256: efd6684a9682200288260eb9660a2d726836cd429e47ecec07e8db2ecfd8987b
@@ -388,7 +388,7 @@ records:
     date: 2002-02-28
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240707071917/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2001.txt
   sha256: c82e16d790c1b548eb1385af2a809f4a1773334dec2c5ce16c1e936400650688
@@ -422,7 +422,7 @@ records:
     date: 2003-03-07
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240618112715/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2002.txt
   sha256: e464d9584e1d2517b2f03093bb21595579a7727378bc19ecdd063f44cc199454
@@ -475,7 +475,7 @@ records:
     date: 2004-02-27
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706213633/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2003.txt
   sha256: c60d06820b9c920335af47d06c8c3b32d92520c78fd8a0df47827cdfa47a7d40
@@ -515,7 +515,7 @@ records:
     date: 2005-03-18
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706204425/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2004.txt
   sha256: 66ea340dcae2e8379c9f83775ae56e56f4f2f9f503e0dd73e345f569a0a7e6c8
@@ -551,7 +551,7 @@ records:
     date: 2006-03-17
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706213259/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2005.txt
   sha256: f5444a0d6e2ac7924ca6db9a43291a7f64cc976cb1b94861bb62e8870ceae96a
@@ -591,7 +591,7 @@ records:
     date: 2007-03-28
     form: Annual Report (with Form 10-K and proxy statement)
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706200116/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2006.txt
   sha256: c131fe4cbe39c5b11cebba645cabcdf12ece522ae8c1b0192cfdd57ea05aac0b
@@ -780,7 +780,7 @@ records:
     date: 2007-12-19
     form: trade press article
   url: https://sst.semiconductor-digest.com/2007/12/cypress-getting-rid-of-round-rock-tx-fab/
-  archive_url: null
+  archive_url: https://web.archive.org/web/20250717003840/https://sst.semiconductor-digest.com/2007/12/cypress-getting-rid-of-round-rock-tx-fab/
   retrieved: 2026-09-25
   cache: web/semidigest-fab2-2007.txt
   sha256: 54912ac4033adb41825d796d1bd3699d85d3cb670bd90ecb6596a047d4866c9b
@@ -860,7 +860,7 @@ records:
     date: 2009-02-26
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706204241/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2008.txt
   sha256: e9cdda6bb05f28276b3251022a2396765e5e623148d4a23123459793f58d53b3
@@ -887,7 +887,7 @@ records:
     date: 2010-03-03
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240707001734/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2009.txt
   sha256: 4bf8d7ca7bad3f776da4f488ad62e05dca4aa3031f84dbdd5657aac7ed89077b
@@ -918,7 +918,7 @@ records:
     date: 2011-02-25
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
-  archive_url: null
+  archive_url: https://web.archive.org/web/20240706194840/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2010.txt
   sha256: 2158a5196d2afb71e5032e177a70fdab676bd2c0389eb6382e4dee1a57fd338c
@@ -996,7 +996,7 @@ records:
     date: 2026-09-25
     form: secondary company-history reference
   url: https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/
-  archive_url: null
+  archive_url: https://web.archive.org/web/20250616030518/https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/
   retrieved: 2026-09-25
   cache: web/fundinguniverse-cypress.txt
   sha256: 5fed6eaac380f2888176f35129c9b48bd8c9c95644e338cfe0123b5fc6252564
@@ -1067,7 +1067,7 @@ records:
     date: 2026-09-25
     form: secondary company-history reference
   url: https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/cypress-semiconductor-corp
-  archive_url: null
+  archive_url: https://web.archive.org/web/20251206180309/https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/cypress-semiconductor-corp
   retrieved: 2026-09-25
   cache: web/encyclopedia-cypress.txt
   sha256: f5240998d4bf0a8e7a86295cedbd5733bfca0b68de9423f030a0757daafa3245
@@ -1138,7 +1138,7 @@ records:
     date: 2026-09-25
     form: secondary encyclopedia article
   url: https://en.wikipedia.org/wiki/Cypress_Semiconductor
-  archive_url: null
+  archive_url: https://web.archive.org/web/20260911171017/https://en.wikipedia.org/wiki/Cypress_Semiconductor
   retrieved: 2026-09-25
   cache: web/wikipedia-cypress.txt
   sha256: 3b376f5c936baee1dce40948d973b42e1526542d0eb1302063aceba68a163756
