@@ -248,8 +248,8 @@ amorphous silicon. The
 {ref}`RPM <step-049>` page reads a conventional positive i-line resist of
 about 1 µm, the PDK's generic "Photoresist thickness" being
 1.14 µm,[^pdk-03] as ample for a shallow poly-doping implant of tens of
-keV (industry-typical on the {ref}`P1I <step-050>` page), with
-anti-reflective coating optional because amorphous silicon absorbs
+keV (industry-typical on the {ref}`P1I <step-050>` page). On the step page's reading,
+anti-reflective coating is optional because amorphous silicon absorbs
 strongly at 365 nm.
 
 The implant is heavy: the {ref}`P1IS <step-051>` page
@@ -389,7 +389,7 @@ to this plate.
 * **Materials.** {ref}`material-lithography-materials` — resists, developer and
   reticles.
 * **Masks.** {ref}`mask-rrpm` and
-  {ref}`mask-urpm` — their mask pages. {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
+  {ref}`mask-urpm` — the RRPM and URPM mask pages. {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
 * **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the derivations the renders use.
 
