@@ -329,7 +329,7 @@ The Error Messages page's messages give values for two of these rules:
 spacing of rpmNotXmt & pwbm" (with "rpmNotXmt must not overlap
 pwbm").[^pdk-errors] *Criteria & Assumptions* gives the following:[^pdk-03]
 
-:::{table} Parameters of *Criteria & Assumptions* for the mask
+:::{table} Parameters of *Criteria & Assumptions* that bear on the mask; none is stated as a rule for it, as published
 | Parameter | PDK table | Published description | Value |
 |---|---:|---|---|
 | `PWBMCD` | 2 | — | 0.84 |
