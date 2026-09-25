@@ -59,7 +59,7 @@ edited), the generated index-links block and `## References` are **excluded**. B
   Hori's LATID (50); 073 the Cypress two-quotation lead (46 + label). Each would need a split inside a
   quotation, a split that leaves part of a claim outside its hedge or marker, or a pilot-form head.
 * First sentence over 25 words: 074 (27; no seam).
-* Leads over 120 words, as in the base: 064 (150), 065 (129), 066 (122), 075 (171, three paragraphs).
+* Leads over 120 words, as in the base: 064 (129), 065 (129), 075 (163, three paragraphs).
 
 **Gates (end of batch, in the worktree):** `check_steps`, `check_refs`, `check_machines`,
 `check_materials`, `check_masks`, `check_papers`, `check_patents`, `check_filings`, `check_inforce` — 0
@@ -78,8 +78,8 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 
 * **Lead.** Split into two paragraphs before "`NTM` coats this now-topographic surface" (what arrives /
   what the step does). The 16-word parenthetical "(inference: the tip and its halo … serves both)"
-  closed as its own sentence, "(Inference: … serves both.)" (R-SENTENCE step 7). Lead 150 words, as in
-  the base less nothing: §1's 120 cannot be met without dropping words. First sentence 21 words.
+  closed as its own sentence, "(Inference: … serves both.)" (R-SENTENCE step 7). Lead 129 words, as in
+  the base: §1's 120 cannot be met without dropping words. First sentence 20 words.
 * **R-H3.** `### What the public record shows` after the figure caption, over the PDK evidence (mask
   table, layer list, Error Messages, Table F2b, Criteria & Assumptions; ≈ 390 words, one inference
   that the derivation is Boolean, stated with its hedge).
@@ -158,7 +158,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 
 * **Lead.** Split into two paragraphs before "The gate stack itself masks the channel" (what the step
   does / why the tip is self-aligned); its 49-word sentence split at the semicolon ("The gate poly is
-  shielded …"). Lead 129 words, as in the base; first sentence 20 words.
+  shielded …"). Lead 129 words, as in the base; first sentence 21 words.
 * **R-H3 not applied.** The passage after the figure is 107 words, under R-H3's 120.
 * **R-SENTENCE.** The 85-word "That the tip is arsenic is stated publicly: …" sentence split at
   ", which we read as" → "We read that value as the tip's lateral extent because … (inference),
@@ -228,7 +228,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 * **Lead.** The guide's own R-SENTENCE example (`:16`) applied as written: the dash pair "— we infer
   that the two share the `NTM` resist, since … (see below) —" becomes the following sentence "We infer
   that the two share …", hedge first. The lead then splits into two paragraphs before "After the anneal
-  at `TIPRTAD`" (what is done / what results). Lead 122 words, as in the base; first sentence 16 words.
+  at `TIPRTAD`" (what is done / what results). Lead 120 words (122 in the base); first sentence 15 words.
 * **R-H3 not applied.** The passage after the figure is 75 words.
 * **R-CATEGORY.** The 63-word classification sentence is split at its opening dash: "`BHI` is an Ion
   implantation step of the *channel-engineering* class." alone; the dash material becomes "It is a
@@ -302,7 +302,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 
 * **Lead.** First sentence (40 w) split before ", and cleans the wafer" → "It cleans the wafer …"
   (R-GLANCE step 8, the form batch 4 used on 051/054); now 23 words. "…in the tip module; in this
-  reference …" split at the semicolon. Lead 95 words, one paragraph.
+  reference …" split at the semicolon. Lead 87 words, one paragraph.
 * **R-H3 not applied.** The passage after the figure (136 words) is industry-typical and inferred
   (resist thickness "inferred on the NTM page", the dose "typical", the surface "we infer"); none of
   the four titles is true of it (R-H3 step 6). **R-PARA** split it before "The surface under the resist
@@ -353,7 +353,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 
 * **Lead.** The 48-word second sentence: its dash pair "— those built on the 110 Å thick gate oxide
   inside the `hvi` regions[^pdk-hv] —" becomes the following sentence "These transistors are those
-  built on …[^pdk-hv]" (R-SENTENCE step 1; subject + verb added), marker with its clause. Lead 72 words;
+  built on …[^pdk-hv]" (R-SENTENCE step 1; subject + verb added), marker with its clause. Lead 64 words;
   first sentence 9 words.
 * **R-H3.** `### What the public record shows` after the figure caption, over the PDK mask, layer,
   rule and assumptions-page evidence (≈ 310 words, mostly public record, ending in "our arithmetic"
@@ -430,7 +430,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 * **Lead.** The 63-word second sentence: its dash pair (the assumptions page's 40° and 23° with
   `[^pdk-03]`) becomes the following sentence "The PDK's assumptions page gives …[^pdk-03]"
   (R-SENTENCE step 1). Lead split into two paragraphs before "After `TIPRTAD` the result is …" (what
-  is done / what results). Lead 116 words; first sentence 18.
+  is done / what results). Lead 114 words; first sentence 17.
 * **R-H3 not applied.** The passage after the figure is 55 words. The only `{dropdown}` on the page is
   inside the generated index-links block, untouched.
 * **R-CATEGORY.** Classification sentence (40 w; its dash pair holds the typical dose and its marker, no
@@ -481,7 +481,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 ### 070 HVASTIS — done
 
 * **Lead.** First sentence (31 w) split before ", and cleans the wafer" → "It cleans the wafer …" (R-GLANCE
-  step 8); now 21 words. Lead 50 words.
+  step 8); now 17 words. Lead 41 words.
 * **R-LIST.** "Two things distinguish it from `ASTIS`. The resist is thin — … — and the implant it has absorbed
   is, we infer …" → lead-in with a colon and two plain bullets (the second item offers no 2–4-word label
   of its own; batch-4 ruling), every word kept except the joining "and"; `[^pdk-03]` ends the first
@@ -577,7 +577,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 * **Lead.** First sentence (45 w) split at its first colon: "`LDASTI` is the *lightly doped* arsenic tip
   implant of the SONOS memory transistors." (13 w) / "It is the counterpart of `ASTI` made through the
   `LDNTM` resist, at a dose that is, we infer, lower …: the PDK calls the mask …[^pdk-06]" ("It is"
-  added; "we infer" and the marker stay in their sentence). Lead (115 w) split into two paragraphs
+  added; "we infer" and the marker stay in their sentence). Lead (101 w) split into two paragraphs
   before "Arsenic ions enter …" (what the step is / what it does in the silicon).
 * **R-H3 not applied.** The passage after the figure is 45 words.
 * **R-CATEGORY.** The classification sentence (after "small tilt") split at its dash: "… of the *LDD*
@@ -618,7 +618,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 ### 073 LDBHI — done
 
 * **Lead.** First sentence (30 w) split at its dash: "`LDBHI` is the boron halo implant of the SONOS
-  memory transistors." (13 w) / "It is the counterpart of `BHI` made through …" ("It is" added). Lead 95
+  memory transistors." (11 w) / "It is the counterpart of `BHI` made through …" ("It is" added). Lead 95
   words.
 * **R-LIST (after the figure).** The 46-word "What distinguishes this halo … is its host: a transistor
   whose channel …, whose gate …, and whose tip is lightly doped and, we infer, non-amorphising (…)."
@@ -660,7 +660,7 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 ### 074 LDASTIS — done
 
 * **Lead.** First sentence (32 w) split before ", and cleans the wafer" ("It cleans the wafer."); now 27
-  words. Lead 83 words.
+  words. Lead 66 words.
 * **R-SENTENCE.** After the figure: the 47-word resist sentence split at ", and it has received" ("It has
   received a moderate arsenic dose …"); "we infer" governed the first clause only. No H3 (72 words).
 * **R-CATEGORY.** Classification sentence (22 w) alone. The rest is the category page's general
