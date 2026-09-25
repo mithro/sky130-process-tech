@@ -51,14 +51,16 @@ or **ADDED** in nine categories:
    quotation that spans a hard-wrapped source line is still seen as one
    run, then whitespace-normalised for comparison like everything else.
 5. ``refs`` — the multiset of ``{ref}``/``{term}``/``{doc}`` targets, and
-   ``urls`` — the multiset of URLs written anywhere on the page. An
-   inline code span's backtick delimiters (`` `...` ``/`` ``...`` ``) are
-   stripped (its content is kept) before roles are matched, so a role
-   shown as a literal code example is never misread as a real invocation
-   (rd-site review finding L5): without this, ``{ref}``/``{term}``/
-   ``{doc}``` scanned forward past the example's own closing backtick to
-   whatever backtick came next, fabricating a fake target out of the text
-   in between.
+   ``urls`` — the multiset of URLs written anywhere on the page. A role is
+   matched and removed from the text as one atomic unit *before* inline
+   code spans are masked (G15/T-new-1, rd-steps-035-047.md and rd-steps-
+   014-034.md reviews): the previous order let a role's own closing
+   backtick be mistaken for the opening delimiter of whatever unrelated
+   code span came next on the same line, swallowing the prose between
+   them (a hedge, another role). A role's own closing backtick
+   immediately followed by a second backtick is left alone, so a role
+   shown as a literal code example is still never misread as a real
+   invocation (rd-site review finding L5).
 6. ``hedges`` — counts of the hedge phrases in HEDGES below (e.g. "about",
    "typical", "our reading", "~"), matched against the same whitespace-
    flattened text as quotes, for the same reason (a hedge phrase can span a
@@ -152,28 +154,49 @@ DEF_RE = re.compile(
     re.MULTILINE | re.DOTALL,
 )
 MARKER_RE = re.compile(r"\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\](?!:)")
-ROLE_RE = re.compile(r"\{(?:ref|term|doc)\}`([^`]+)`")
+# A genuine {ref}/{term}/{doc} role, consumed as one atomic unit and
+# removed from the text BEFORE any inline-code-span masking runs (rd-
+# steps-035-047.md review section D, "Guide problem 15"; rd-steps-014-
+# 034.md review, "T-new-1"). The previous design ran code-span masking
+# first and role-matching second: nothing marked a role's own CLOSING
+# backtick as already "spent", so the code-span masker was free to treat
+# it as a fresh OPENING delimiter for whatever backtick came next later
+# on the line, silently swallowing every word of ordinary prose in
+# between (a hedge, another role, a citation) into one bogus masked span
+# and leaving the role's own target unmatched -- a false LOST ref *and* a
+# false LOST hedge from the same edit, and one that came and went with
+# harmless re-wrapping (rd-steps-064-075.md guide problem 3), since it
+# only fired when the role and the next code span both landed on one
+# physical source line. Matching the whole role up front and deleting it
+# here removes the characters the bug needed before code-span masking
+# ever sees them, so the bug cannot occur regardless of line wrapping.
+#
+# The trailing negative lookahead ``(?!`)`` -- the role's own closing
+# backtick must not be immediately followed by another backtick -- keeps
+# this from also swallowing the "role shown as a literal code example"
+# case (rd-site review L5, e.g. a glossary intro demonstrating the
+# `` `{term}`sense`` `` syntax itself): there the role's closing backtick
+# sits right against a second backtick (the start of an enclosing double-
+# backtick span), which is the shape of a role *displayed inside* a
+# larger code span rather than invoked. Excluding that shape leaves it
+# for the ordinary code-span masking below to handle, exactly as before.
+ROLE_RE = re.compile(r"\{(?:ref|term|doc)\}`([^`]+)`(?!`)")
 URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
 BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
 QUOTE_RE = re.compile(r'"([^"\n]{1,400})"|“([^”\n]{1,400})”')
 
-# An inline code span (`` ``...`` `` or `` `...` ``) whose *opening*
-# backtick does not immediately follow a role's closing brace (rd-site
-# review, finding L5): ROLE_RE scans forward from ``{ref}``/``{term}``/
-# ``{doc}``` for the next backtick with no notion of code-span nesting, so
-# a role shown as a literal example inside its own inline code span (e.g.
-# a glossary intro demonstrating the ``{term}`text``` syntax) is misread as
-# a *real* role invocation, fabricating a fake ref/term target out of
-# whatever text sits between that span's own backtick and the next one
-# anywhere later in the paragraph. Masking these spans first — by
-# stripping only their backtick *delimiters*, not their content, so a
-# genuine identifier or number written in code style is still tracked
-# normally — removes the backtick ROLE_RE would otherwise latch onto.
-# The negative lookbehind leaves a real role's own opening backtick
-# (always directly after "}") untouched, and the inner negative lookahead
-# refuses to let a tentative span swallow a role-start sequence, so a
-# stray, unrelated code span earlier in the same paragraph can never eat
-# into a later genuine role by matching all the way to *its* backtick.
+# An inline code span (`` ``...`` `` or `` `...` ``), run AFTER roles are
+# already extracted and removed (see ROLE_RE above): masking here only
+# ever sees the ordinary backticks of real code spans, never a role's own
+# delimiters, which is what fixes G15/T-new-1. The negative lookbehind
+# still refuses to start a span right after a "}" (belt and suspenders:
+# harmless now that a genuine role's own opening backtick is always gone
+# by this point, but cheap insurance against a malformed role ROLE_RE
+# failed to match), and the inner negative lookahead still refuses to let
+# a tentative span swallow a role-start sequence, so a stray, unrelated
+# code span earlier in the paragraph can never eat into a role ROLE_RE
+# also failed to recognise (the literal-example case above) by matching
+# all the way to *its* backtick.
 _ROLE_START = r"\{(?:ref|term|doc)\}`"
 _CODE_SPAN_DOUBLE_RE = re.compile(r"(?<!\})``((?:(?!``).)*?)``")
 _CODE_SPAN_SINGLE_RE = re.compile(
@@ -542,19 +565,28 @@ def extract_all(
     for label, body in DEF_RE.findall(text):
         defs[label] = normalize_ws(body)
     body_text = DEF_RE.sub("", text)
-    # Strip inline-code backtick delimiters before anything else scans for
-    # markers/roles/quotes (rd-site review L5): see _mask_inline_code.
+
+    # Extract {ref}/{term}/{doc} roles and remove them BEFORE any inline-
+    # code masking (G15/T-new-1: see ROLE_RE's comment above). The role's
+    # own content is whitespace-flattened before being recorded, so a role
+    # target hard-wrapped across a source line break compares the same
+    # after a harmless re-wrap as before it (the same reasoning that
+    # already flattens quotes/hedges below).
+    refs: Counter = Counter()
+
+    def _role_sub(m: re.Match) -> str:
+        refs[role_target(normalize_ws(m.group(1)))] += 1
+        return " "
+
+    body_text = ROLE_RE.sub(_role_sub, body_text)
+
+    # Strip inline-code backtick delimiters now that roles are already
+    # gone (its content is kept): see _mask_inline_code.
     body_text = _mask_inline_code(body_text)
 
     markers = Counter(MARKER_RE.findall(body_text))
 
-    refs: Counter = Counter()
-
-    def _role_sub(m: re.Match) -> str:
-        refs[role_target(m.group(1))] += 1
-        return " "
-
-    masked = ROLE_RE.sub(_role_sub, body_text)
+    masked = body_text
     urls, masked = extract_urls_masked(masked)
     masked = MARKER_RE.sub(" ", masked)
     # Layout-only directive options (":widths: 16 20 28 12 24", etc.) are
@@ -1165,6 +1197,48 @@ def selftest() -> int:
         "Note the ` odd stray mark, then see {ref}`overview-modules` for "
         "details.",
         {"overview-modules"},
+    )
+
+    # -- G15 / T-new-1 (rd-steps-035-047.md review section D; rd-steps-014-
+    # 034.md review): a role's own CLOSING backtick, followed later on the
+    # same line by an unrelated inline code span, used to be treated as a
+    # fresh opening delimiter for that later span, swallowing every word
+    # of ordinary prose (a hedge, another role) in between and leaving the
+    # role's own target unmatched. Reproduced on the exact three pages the
+    # batch-2 progress file named.
+    def assert_refs_and_hedges(
+        name: str, body: str, expected_refs: set[str], expected_hedges: set[str]
+    ) -> None:
+        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        got_refs = set(extracted["refs"].elements())
+        got_hedges = set(extracted["hedges"].elements())
+        if got_refs != expected_refs:
+            problems.append(f"{name}: expected refs {expected_refs!r}, got {got_refs!r}")
+        if got_hedges != expected_hedges:
+            problems.append(f"{name}: expected hedges {expected_hedges!r}, got {got_hedges!r}")
+
+    assert_refs_and_hedges(
+        "G15/T-new-1: a role followed on the same line by an unrelated "
+        "code span no longer eats the hedged prose between them "
+        "(docs/steps/017-nwm.md:227)",
+        "{ref}`PWBM <step-026>`, whose reticle, we infer, covers the "
+        "`nwell` regions.",
+        {"step-026"},
+        {"we infer"},
+    )
+    assert_refs_and_hedges(
+        "G15/T-new-1: the same bug, a second role and hedge afterwards "
+        "(docs/steps/022-hvtpm.md:227)",
+        "{ref}`LVTNM <step-014>` (`lvtn`, which may not overlap `hvtp`).",
+        {"step-014"},
+        {"may"},
+    )
+    assert_refs(
+        "G15/T-new-1: a {term} role followed by more code-styled text on "
+        "the same line (docs/steps/014-lvtnm.md:315)",
+        "Whether the reticle opens *over* `lvtn` (and `LVTNI` is a "
+        "{term}`counter-doping` implant) or *everywhere except* `lvtn`.",
+        {"counter-doping"},
     )
 
     # -- inch marks (checkers review, "check_preserved.py quote finding"):
