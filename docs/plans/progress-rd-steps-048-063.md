@@ -178,12 +178,60 @@ table cells > 25: 0. After: see the batch summary at the end.
   markers of its own clause; labels).
 * **Caps**: para > 100 3 → 0; item > 60 4 → 0; sentence > 45 4 → 0.
 
+### 051 P1IS — done
+
+* **R-H3.** Not applied. The passage after the figure ("Two things make this strip different …") is
+  generic reasoning; none of the four step-page H3 titles (R-H3 step 3) is true of it, and "What the
+  public record shows" is excluded over industry-typical text. R-LIST gives it structure instead.
+* **R-LIST.** "Two things make this strip different … First, … Second, …" → lead-in with a colon and
+  two plain bullets keeping "First," / "Second," (no invented labels). The first item's 48-word
+  sentence split at ", so the carbonised crust …" → "So the carbonised crust …" (inside the bullet,
+  not a new paragraph); the second item's "There is no oxide …" sentence is its indented continuation
+  paragraph (item 61 → 20 + 33 words).
+* **R-CATEGORY.** Classification sentence (12 w) alone; the category-page sentence and the "other
+  members of this class" sentence stay together as the second paragraph (one sentence about this
+  step remains, so no "Specific to this step:").
+* **R-PARA.** "Why" paragraph (134 w) → three paragraphs: why the resist must go; the crust
+  literature; popping. No labels (narrative).
+* **R-PARA step 4 / R-SENTENCE.** "Two-step plasma ash" (132 w): lead sentence (37 w, cannot be
+  shortened without rewording its em-dash quotation) + two continuation paragraphs (literature;
+  SkyWater's ashers and the consequences). "Wet strip and clean" (153 w): lead (41 w, same reason) +
+  two continuation paragraphs; its 74-word sentence split at "), and SC-1 etches" → "). SC-1 etches"
+  (only "and" dropped; `[^kern-1990]` and `[^lee-kt-1999]` each stay on their own clause).
+  **Skipped:** the 20-word parenthetical "(of the order of a nanometre — a typical industry figure;
+  Kern's review … thickness)" stays a parenthetical: it is the hedge on "a thin chemical oxide" and
+  closing it as its own sentence would detach it from the value it qualifies.
+* **R-HEDGE.** Italic scope lead-in.
+* **R-TOOLS.** Four tools → recap table `Tool | Evidence` (grades as the page gives them; the AIT row
+  keeps "(our reading)"). Ashers, Akrion bench and DNS/FSI keep their original head text with the
+  SkyWater quotation or gloss (the pilot form "head already carries the quotation"); grades go under
+  *Tool exists:* / *Runs this step:* word for word. AIT: *SkyWater says:* holds the posting quotation,
+  verb-first with the page's own verb ("reads … in a *Defect Technician 2* posting"); "We read "AIT"
+  as …" is our reading, so it is the continuation paragraph.
+* **R-OPENQ.** Labels "Ash recipe and wet sequence", "Silicon-loss budget", "Which asher".
+* **R-RELATED.** "Companion strips in this module: …; the other high-dose strips are …; the
+  light-dose exemplar is …" names two relationships → `Same module:` (PRIS, UPRIS) and
+  `Same category:` (PDIS, NSDIS, LVTNIS — strip steps elsewhere in the flow).
+* **R-GLANCE.** Public numbers "none published for SKY130" (the only numbers are tool specifications
+  and industry-typical figures). Tool line: the three ashers with the page's grades.
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, hedges "inference" ×2 (glance,
+  recap table), "not public" (glance label), "our reading" (recap table row), identifiers `P1I`,
+  `SKY130` (glance). No LOST. Declared `markers,hedges,identifiers`: clean.
+* **Marker coverage.** 6 flags, all explained: the SC-1 sentence split (each clause keeps its own
+  marker); "So the carbonised crust" (consequence of the dose; the base had no marker there); "We
+  read "AIT" …" (the base marker `[^job-06]` stood before "; we read", on the quotation); a label.
+* **Caps**: para > 100 2 → 0; item > 60 2 → 0; sentence > 45 2 → 0.
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
   (now under "What the public record shows") calls the same description an inference ("… the public
   basis for describing `SAGD` as one undoped amorphous layer (inference)"). Both kept verbatim (the S5
   figure agent's note in `progress-rd-figures-s5.md`).
+
+* `051-p1is.md`, figure caption (generated from `data/figures/`): the sentence "In the upper panel
+  the undoped film under the island is not labelled, because its leader would have to rise through
+  the resist." appears twice in a row. Generated text; not touched here (§2.8).
 
 ## Guide problems
 
