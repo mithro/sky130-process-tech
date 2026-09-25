@@ -234,8 +234,8 @@ tools but assigns no layer to them.[^skw-01]
 At the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the same feature has
 {math}`k_1 \approx 0.54` (our arithmetic). One Cypress integration
-patent, which may still be in force, takes the other view for tight
-layouts; its sentence is in the collapsed note below this paragraph.
+patent, which may still be in force, is cited on the exposure class;
+its sentence is in the collapsed note below this paragraph.
 That is the patent's flow, not a statement about SKY130.
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
@@ -304,9 +304,8 @@ four times:
   or buffered HF on the {ref}`wet bench <machine-wet-bench>` class, with
   the resist strip and pre-oxidation clean treated as part of that step
 
-Two Cypress patents that may still be in force describe the same
-sequence, the mask it uses and the undercut the isotropic etch leaves;
-their wording is in the collapsed note below this paragraph. Whether
+Two Cypress patents that may still be in force are cited on this
+sequence; their wording is in the collapsed note below this paragraph. Whether
 SKY130's `ctunm` data are sized is not public; the renders' "sized by
 ctunm.3" note names no source.
 
