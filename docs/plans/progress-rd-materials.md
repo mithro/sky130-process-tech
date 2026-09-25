@@ -295,3 +295,33 @@ conversion at an existing clause boundary. `check_materials.py`,
 `check_refs.py`, `check_inforce.py`, `gen_step_tables.py --check`,
 `gen_index_links.py --check`: all pass. Incremental `-W` build: clean.
 Screenshots at 400 px: table wraps cleanly.
+
+### `anneal-ambients.md`
+
+Rules applied: R-MODELS (4-row 3-column table), R-CAPTION (existing
+Filing/suppliers table wrapped), R-PARA (3 over-100-word paragraphs
+split), R-LIST (four enumerations converted to bulleted lists: the
+interface-trap literature citations, the deuterium-isotope citations,
+the "read term by term" three-tool summary — each item already a
+complete clause joined only by semicolons/"and"), R-SENTENCE (2 more
+long sentences split at an existing semicolon), R-PARA (one over-60-word
+list item split into lead + continuation), R-RELATED (Related pages
+grouped under bold labels).
+
+`check_preserved.py --allow-regrouped`: **0 undeclared differences and
+no `--allow-added` or `REGROUPED` entries at all** — every split in this
+page landed on an existing semicolon or "and" with markers already
+attached per clause, so nothing needed relocating or repeating. This is
+the cleanest page in the batch so far.
+
+Over-cap counts, before → after: paragraphs > 100 words 4 → 1 (R-INTRO
+lead); list items > 60 words 1 → 0; sentences > 45 words (real) 6 → 0;
+tables with no caption 1 → 0.
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: table and lists
+wrap cleanly; the pre-existing "P_b0"/"P_b1" underscore notation (not
+proper subscript) renders as literal text — this is the page's own
+existing wording (verified against `main`), not something this pass
+touched or should fix.

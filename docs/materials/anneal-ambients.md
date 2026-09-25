@@ -58,31 +58,42 @@ terminology names the charges involved.[^deal-1980]
 
 A small oxygen flow in an inert anneal grows a thin oxide or keeps a
 surface from roughening, and ammonia nitrides a surface in a rapid
-thermal chamber (industry practice); the step pages that use these
+thermal chamber (industry practice). The step pages that use these
 ambients name the gases under their own rows ({ref}`materials index <materials-table>`).
 
 ### Forming gas in anneals
 
 Forming gas brings hydrogen to the wafer below its flammable
 concentration. Hydrogen diffuses through oxide at alloy temperatures
-and ties up dangling bonds at the Si/SiO₂ interface: Reed and Plummer
-set out the chemistry of interface-trap annealing;[^reed-1988] Cartier,
-Stathis and Buchanan the passivation and depassivation of dangling bonds
-by atomic hydrogen;[^cartier-1993] Brower the dissociation kinetics of the
-passivated defects;[^brower-1990] and Stesmans the passivation of P_b0 and
-P_b1 centres by molecular hydrogen.[^stesmans-1996] Hydrogen also repairs
+and ties up dangling bonds at the Si/SiO₂ interface:
+
+* **Reed and Plummer** — set out the chemistry of interface-trap
+  annealing.[^reed-1988]
+* **Cartier, Stathis and Buchanan** — the passivation and depassivation
+  of dangling bonds by atomic hydrogen.[^cartier-1993]
+* **Brower** — the dissociation kinetics of the passivated
+  defects.[^brower-1990]
+* **Stesmans** — the passivation of P_b0 and
+  P_b1 centres by molecular hydrogen.[^stesmans-1996]
+
+Hydrogen also repairs
 damage from plasma steps: Rangan, Krishnan and Ashok studied hydrogen and
 deuterium passivation of process-induced damage,[^rangan-1998] of the kind
 Fang and McVittie described in thin oxides charged during plasma
 processing.[^fang-1992]
 
-The isotope matters. Lyding, Hess and Kizilyalli reported that
-"replacing hydrogen with deuterium during the final wafer sintering
-process greatly reduces hot electron degradation
-effects";[^lyding-1996] Kizilyalli et al. applied deuterium anneals to
-multilevel metal/dielectric MOS systems in manufacturing;[^kizilyalli-1998]
-and a University of Illinois patent gives an example anneal "in an
-ambient of 10% deuterium in nitrogen".[^pat-deuterium-uiuc] Hydrogen has
+The isotope matters:
+
+* **Lyding, Hess and Kizilyalli** — reported that
+  "replacing hydrogen with deuterium during the final wafer sintering
+  process greatly reduces hot electron degradation
+  effects".[^lyding-1996]
+* **Kizilyalli et al.** — applied deuterium anneals to
+  multilevel metal/dielectric MOS systems in manufacturing.[^kizilyalli-1998]
+* A University of Illinois patent gives an example anneal "in an
+  ambient of 10% deuterium in nitrogen".[^pat-deuterium-uiuc]
+
+Hydrogen has
 other effects that bear on the recipe: it deactivates boron acceptors in
 silicon,[^sah-1983][^pankove-1983] and it affects nitride
 charge-trapping memories, whose retention a high-temperature
@@ -98,6 +109,7 @@ A downstream asher strips resist with the neutral products of a remote
 plasma. Wikipedia lists "N2/H2 where the H2 portion is 2%" among ashing
 gases besides oxygen and fluorine;[^wiki-ash] a used Iridia module of
 the kind SkyWater lists has a "4 percent H2/N2" line.[^semistar-iridia]
+
 Additions change the ash chemistry: Fujimura et al. found that 1 % water
 vapour lowered the activation energy of downstream O₂ ashing of a novolak
 resist more than 3 % hydrogen did, which they attributed to OH
@@ -112,19 +124,16 @@ Anneal ambients are bulk or cylinder gases bought to purity
 specifications and mixed at the tool or supplied premixed; SKY130's
 mixtures and purities are not public.
 
-* **Premixed forming gas.** "Typical forming gas formulations (5% H2 in
-  N2)";[^wiki-fg] the anneal category page gives 4–10 % H₂ in N₂
-  ({ref}`category-anneal`), and an Iridia asher's gas lines include "4
-  percent H2/N2".[^semistar-iridia]
-* **Hydrogen and nitrogen mixed at the tool.** The ALLY pages name this
-  as the alternative to premixed forming gas; the University of Illinois
-  example meters "10% by volume hydrogen in nitrogen" for a hydrogen
-  anneal.[^pat-deuterium-uiuc]
-* **Deuterium mixtures.** Deuterium in nitrogen for hot-carrier-resistant
-  sinters.[^lyding-1996][^pat-deuterium-uiuc]
-* **Inert, oxidising and nitriding ambients.** Nitrogen and argon;
-  oxygen additions; ammonia in rapid thermal nitridation — described with
-  their rows in the {ref}`materials index <materials-table>`.
+:::{table} Representative anneal-ambient mixtures, as public sources describe them
+:widths: 26 14 60
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Premixed forming gas | — | "Typical forming gas formulations (5% H2 in N2)";[^wiki-fg] the anneal category page gives 4–10 % H₂ in N₂ ({ref}`category-anneal`), and an Iridia asher's gas lines include "4 percent H2/N2"[^semistar-iridia] |
+| Hydrogen and nitrogen mixed at the tool | — | The ALLY pages name this as the alternative to premixed forming gas; the University of Illinois example meters "10% by volume hydrogen in nitrogen" for a hydrogen anneal[^pat-deuterium-uiuc] |
+| Deuterium mixtures | — | Deuterium in nitrogen for hot-carrier-resistant sinters[^lyding-1996][^pat-deuterium-uiuc] |
+| Inert, oxidising and nitriding ambients | — | Nitrogen and argon; oxygen additions; ammonia in rapid thermal nitridation — described with their rows in the {ref}`materials index <materials-table>` |
+:::
 
 ## At SkyWater
 
@@ -148,19 +157,29 @@ and under "Resist removal/cleans":
 >
 > "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"
 
-Read term by term, the furnaces run argon and nitrogen anneals and an
-alloy in hydrogen and in forming gas; the Heatpulse lists no hydrogen or
-forming gas; and two of the three ashers list a hydrogen–nitrogen
-mixture, written "H2/N2" on the Iridia and "H2>N2" on the Aspen, which
-the {ref}`asher page <machine-downstream-plasma-asher>` reads as hydrogen
-in nitrogen; SkyWater does not explain the notation. The page gives no
+Read term by term:
+
+* the furnaces run argon and nitrogen anneals and an
+  alloy in hydrogen and in forming gas;
+* the Heatpulse lists no hydrogen or
+  forming gas; and
+* two of the three ashers list a hydrogen–nitrogen
+  mixture, written "H2/N2" on the Iridia and "H2>N2" on the Aspen, which
+  the {ref}`asher page <machine-downstream-plasma-asher>` reads as hydrogen
+  in nitrogen.
+
+SkyWater does not explain the notation. The page gives no
 hydrogen fraction.[^skw-01] The filings name gas suppliers but not the
 gases each supplies:[^sec-01][^sec-02]
+
+:::{table} Gas suppliers as SkyWater's filings name them
+:widths: 30 70
 
 | Filing | Gas suppliers as named |
 |--------|------------------------|
 | S-1 (2021)[^sec-01] | "Air Products & Chemicals, Inc. (bulk and specialty gases, chemicals)"; "Praxair, Inc. (bulk and specialty gases)" |
 | 10-K for fiscal 2023[^sec-02] | "Linde, Inc. (bulk and specialty gases)"; "Airgas USA LLC (specialty gases)"; "EMD Performance Materials Corp (Versum) (specialty chemicals and gases)" |
+:::
 
 Neither filing names forming gas, hydrogen or deuterium, and neither says
 whether hydrogen mixtures are bought premixed or blended on site.
@@ -170,8 +189,8 @@ whether hydrogen mixtures are bought premixed or blended on site.
 The furnace, RTA and asher entries are SkyWater statements and rank as
 **strong** evidence that hydrogen and forming-gas alloys, argon and
 nitrogen anneals, and hydrogen–nitrogen ash chemistries exist at the fab,
-on the scale of the {ref}`machines index <machines-reading-evidence>`;
-they tie no ambient to a step.[^skw-01] The supplier lists are strong as
+on the scale of the {ref}`machines index <machines-reading-evidence>`.
+They tie no ambient to a step.[^skw-01] The supplier lists are strong as
 statements but name no gas or mixture.[^sec-01][^sec-02] The mixture
 fractions on this page — 2 %, 4 %, 5 % and 10 % — come from Wikipedia, a
 dealer listing and a patent, not from SkyWater.[^wiki-fg][^wiki-ash][^semistar-iridia][^pat-deuterium-uiuc]
@@ -251,7 +270,9 @@ temperatures are not public.
 * **Hydrogen and the SONOS cells.** In Maes, Usmani and Heyns's MNOS
   transistors, a high-temperature post-nitridation hydrogen anneal
   improved retention at 125 °C by removing hole back-tunnelling to
-  interface states;[^maes-1981] how the much cooler final alloy, which
+  interface states.[^maes-1981]
+
+  How the much cooler final alloy, which
   reaches the {term}`SONOS` stack of {ref}`ONO <step-040>` through the
   whole back end, affects SONOS retention is not public. The ALLY pages
   treat time and hydrogen content as the recipe's bounds (their
@@ -271,16 +292,16 @@ temperatures are not public.
 
 ## Related pages
 
-* {ref}`category-anneal` — anneal types, the alloy anneals and their
-  ambients.
-* {ref}`machine-vertical-furnace-anneal` — the anneal and alloy furnace.
-* {ref}`machine-downstream-plasma-asher` — the ashers that use forming gas.
-* {ref}`machine-rapid-thermal-processor` — the lamp anneals and their
-  gases.
-* {ref}`material-process-gases` — nitrogen, argon and oxygen.
-* {ref}`material-precursors` — ammonia.
-* {ref}`materials-index` — nitrogen, argon, oxygen and ammonia rows and
-  all consumable classes.
+* **Category.** {ref}`category-anneal` — anneal types, the alloy anneals
+  and their ambients.
+* **Machines.** {ref}`machine-vertical-furnace-anneal` — the anneal and
+  alloy furnace. {ref}`machine-downstream-plasma-asher` — the ashers
+  that use forming gas. {ref}`machine-rapid-thermal-processor` — the
+  lamp anneals and their gases.
+* **Materials.** {ref}`material-process-gases` — nitrogen, argon and
+  oxygen. {ref}`material-precursors` — ammonia.
+* **Indexes.** {ref}`materials-index` — nitrogen, argon, oxygen and
+  ammonia rows and all consumable classes.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
