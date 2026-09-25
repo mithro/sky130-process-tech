@@ -2420,3 +2420,264 @@ documents:
     fabricate a device family in L28 Technology. Confirms qtp-011503''s Fab2/L28 process-description
     figures verbatim (0.65 µm, 2 metal layers, 145 Å gate oxide, identical metal composition and
     passivation).'
+- id: qtp-099034
+  doc_type: QTP
+  number: '99034'
+  cypress_document_number: null
+  title: 5V, 8/10 Bit FCT-T, L28EPD Technology, Fab 2
+  version: '1.0'
+  date_printed: March 1999
+  url: https://www.cypress.com/file/94156/download
+  archive_url: https://web.archive.org/web/20210507224233/https://www.cypress.com/file/94156/download
+  retrieved: '2026-09-25'
+  sha256: 4595a4f3d085db7d66a6be08172b734053841b34cf30b4d5eb7bb100eaf12e33
+  technology_codes:
+  - L28EPD
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY54/74FCT543T
+  die_ids:
+  - 7C7112A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/1,200A TiW/6,000A Al/1,200A TiW; Metal 2: 1,500A TiW/10,000A
+      Al/150A Ti'
+    passivation: 3,000A TEOS + 15,000A Si2N4
+    free_phosphorus_percent: n/a
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor – Round Rock, Texas
+    die_fab_line_id: Fab2/L28EPD
+  qualification_history: []
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - L28EPD
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28EPD'
+    location: p.2, Technology/Fab Process Description
+  notes: 'No Product/Technology Qualification History table is printed (early-style, Mar 1999, matching
+    qtp-096091/qtp-096182/qtp-096411/qtp-098333). L28EPD''s process-description figures (0.65 µm, 2 metal
+    layers, 145 Å gate oxide, identical metal composition and passivation) are byte-for-byte the same as
+    plain "L28" at the same Fab 2 (qtp-011503, qtp-098333) -- L28EPD reads as an EPD-suffixed variant of
+    the same Fab 2 process rather than a differently built technology; no report in this corpus explains
+    what "EPD" stands for. A separate page in the coordinator''s archived-library map, "Fab 2 - L28EPD
+    Technology Qualification" (cypress.com file id 94001), looked like it might be the dedicated
+    "New Technology" report for L28EPD itself, but its PDF was not archived by the Wayback Machine and so
+    could not be retrieved in this pass.'
+- id: qtp-032003
+  doc_type: QTP
+  number: '032003'
+  cypress_document_number: 001-81773 Rev. *C
+  title: 36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4
+  version: '*C'
+  date_printed: August 2014
+  url: https://www.infineon.com/dgdl/Infineon-QTP_032003_36_Meg_Synchronous_SRAM_Family_Technology_R9T-3R_Fab4-ProductQualificationReport-v04_00-EN.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 937619d5820a6ce961198d2d94322c02b82fb6c1cde5886b0c550f8a15505651
+  technology_codes:
+  - R9T-3R
+  - R9FT-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1440AV25
+  - CY7C1442AV25
+  - CY7C1446AV25
+  - CY7C1441AV25
+  - CY7C1443AV25
+  - CY7C1447AV25
+  - CY7C1444AV25
+  - CY7C1445AV25
+  - CY7C1460AV25
+  - CY7C1462AV25
+  - CY7C1464AV25
+  - CY7C1461AV25
+  - CY7C1463AV25
+  - CY7C1465AV25
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 150Å Ti /3200Å Al / 300Å TiW; Metal 2: 150Å Ti /6000 Å Al / 300Å TiW;
+      Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    design_rule: CMOS, Triple Metal, 90 nm
+    gate_oxide: Nitridized SiO2, Thin GOX 22A, Thick GOx (value truncated in the source)
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R9T-3R
+  qualification_history:
+  - number: '044403'
+    description: New Device CY7C147*/7C148* AC (72Meg) Device Family, R9T-3R Technology @ Fab4
+    date: Nov 04
+  - number: '032003'
+    description: New Device CY7C144*/7C146* AC, (36Meg) device family, R9T-3R Technology fabricated at
+      Fab4
+    date: Nov 04
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – R9T-3R
+    location: p.4, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R9T-3R'
+    location: p.4, Technology/Fab Process Description
+  - text: Qualify CY7C144*A/146*A Synchronous product family in qualified technology R9FT-
+    location: p.4, Qualification Purpose (the source wraps '3R, Fab 4' onto the next physical line)
+  notes: 'This is the standalone R9T-3R report that an earlier search pass in this corpus (see
+    docs/plans/progress-cyhist-qtp.md) tried and found only as a 404 (QTP 042205); the same technology is
+    independently confirmed here under a different QTP number (032003). Unlike qtp-051207 (R9Q-3R, the QDR
+    variant, which has an internal 4-metal-layers-table vs "Triple Metal"-text mismatch), this R9T-3R
+    report''s own Number of Metal Layers field (3) and its Design Rule text ("Triple Metal") agree with
+    each other -- R9T-3R itself is a true 3-metal-layer, 90 nm process, distinct from R9Q-3R''s 4-layer
+    variant despite the shared "R9" family name. The Qualification Purpose sentence names the technology
+    "R9FT-3R" (an extra "F") where every other reference in the document says "R9T-3R" -- another one-off
+    spelling variant in this corpus, similar to R7FTW-3R/R7FT-3R.'
+- id: qtp-098021
+  doc_type: QTP
+  number: '98021'
+  cypress_document_number: null
+  title: 1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices
+  version: '1.0'
+  date_printed: July 1998
+  url: https://www.cypress.com/file/93501/download
+  archive_url: https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download
+  retrieved: '2026-09-25'
+  sha256: 0c0d0c8467c0ca31e3f6395dcb331219052c55cc4d28bfb16e969a4a7e36e84d
+  technology_codes:
+  - R32D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C109/1009-LMB/DMB
+  die_ids:
+  - 7C1009A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Al-Cu/TiW; Metal 2: TiW/Al-Cu/TiW'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32D
+  qualification_history: []
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R32D
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32D'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'No Product/Technology Qualification History table is printed (early-style, Jul 1998). The
+    title itself calls this a "5% Shrink" of R32D. R32D has 2 metal layers ("Single Local Interconnect,
+    Double Metal") against plain R32''s 1 metal layer (qtp-097132, "Double Poly, Single Metal") -- both
+    0.5 µm and both Fab4/Bloomington -- consistent with a "D" suffix meaning a double-metal derivative of
+    the base single-metal code, the same pattern the corpus already shows for R42/R42D and R52/R52D-family
+    codes.'
+- id: qtp-062509
+  doc_type: QTP
+  number: '062509'
+  cypress_document_number: 001-88313 Rev. *A
+  title: Neutron Device Family, S4AD-5 Technology, GSMC
+  version: '*A'
+  date_printed: July 2014
+  url: https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 54332dde6f883ed0bdda1f3c2d6cf137d1a6b9d46c8523c8ef4d70cf44796c05
+  technology_codes:
+  - S4AD-5
+  - S4D-5
+  fab: GSMC / Grace Semiconductor Manufacturing Corp., Shanghai, China (transferred from Fab 4/CMI)
+  products:
+  - CY8C21234
+  - CY8C21334
+  - CY8C21434
+  - CY8C21534
+  - CY8C21634
+  - CY8C9520
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 250A TiN/5,800A Al/700A TiN; Metal 2: 500A TiN/8,000A Al/250A TiN'
+    passivation: 7,000A TeOs /6,000A Si3N4
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110A
+    fab_location: GSMC/Shanghai-China
+    die_fab_line_id: S4AD-5 GSMC SONOS
+  qualification_history:
+  - number: '060605'
+    description: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
+    date: Aug 06
+  - number: '062509'
+    description: Neutron Device Product Family on S4AD-5 Technology transfer to GSMC
+    date: Aug 06
+  - number: '071504'
+    description: 14 Layer Mask Change on Neutron Device Family, S4AD-5 Technology, Fab4
+    date: Aug 07
+  - number: '073401'
+    description: Minor Changes to Poly (P1M) and Metal 2 (MM2) masks on Neutron (8C21005AK), S4AD-5
+    date: Dec 07
+  quotes:
+  - text: Transfer Neutron Device Product Family in S4D-5 Technology at GSMC Foundry
+    location: p.3, Qualification Purpose
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION S4AD-5
+    location: p.3, section heading
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'A third foundry site for S4AD-5, alongside Fab 2 (qtp-021507, qtp-042806) and HHGrace
+    (qtp-151005): here transferred to GSMC (Grace Semiconductor, Shanghai). The Qualification Purpose
+    sentence misprints the code as "S4D-5" (dropping the "A", the same slip seen in qtp-051005''s
+    "S4D-5CTI"); the process-description heading correctly says "S4AD-5". Design rule 0.35 µm and gate
+    oxide 110 Å match qtp-151005 (HHGrace) and qtp-042806/qtp-051005 (Fab 2) exactly -- now four
+    independent reports giving S4AD-5 as 0.35 µm against the lone 0.5 µm figure in qtp-021507.'
+- id: qtp-098462
+  doc_type: QTP
+  number: '98462'
+  cypress_document_number: 001-87920 Rev. *B
+  title: Fast Asynchronous SRAM Family, R5D-5R Technology, Skywater
+  version: '*B'
+  date_printed: March 2019
+  url: https://www.infineon.cn/assets/row/public/documents/10/316/infineon-qtp-98462-fast-asynchronous-sram-family--cy7c106b-cy7c1006b-cy7c194b-cy7c195b-cy7c199c--r52d-5r-technology-skywater-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 03bbd7cf13273ef09dca6172393e5305681e386f44ce946cdd8fd2adcc85136b
+  technology_codes:
+  - R52D-5R
+  - R5D-5R
+  fab: Skywater -- Bloomington, MN (originally Cypress Fab 4)
+  products:
+  - CY7C106B
+  - CY7C1006B
+  - CY7C109B
+  - CY7C1009B
+  - CY7C194B
+  - CY7C195B
+  - CY7C197B
+  - CY7C199C
+  die_ids: []
+  process_description:
+    number_of_metal_layers: Proprietary
+    metal_composition: Proprietary
+    passivation: Proprietary
+    free_phosphorus_percent: Proprietary
+    design_rule: Proprietary
+    gate_oxide: Proprietary
+    fab_location: Skywater -- Bloomington, MN
+    die_fab_line_id: Skywater/R52D-5R
+  qualification_history:
+  - number: '000301'
+    description: New Technology Derivative R52D-5R / New CY7C149B, 4Meg Async SRAM Product.
+    date: Apr 00
+  - number: '98462'
+    description: New CY7C109B, 1Meg Asynchronous SRAM Product and its product family.
+    date: Apr 00
+  quotes:
+  - text: FAST ASYNCHRONOUS SRAM FAMILY                       R5D-5R TECHNOLOGY, Skywater
+    location: p.1, title
+  - text: New Technology Derivative R52D-5R / New CY7C149B, 4Meg Async SRAM Product.
+    location: p.2, Product Qualification History, row 000301
+  - text: 'Die Fab Line ID/Wafer Process ID: Skywater/R52D-5R'
+    location: p.3, Technology/Fab Process Description
+  notes: 'This 2019 reissue (Rev *B) redacts every numeric process field as "Proprietary" and names the
+    die fab "Skywater -- Bloomington, MN" for a QTP 000301/98462 event dated Apr 00 -- the same
+    retroactive fab-owner substitution pattern noted for qtp-041406 and qtp-098462''s sibling RAM8NLD-1.8
+    reissue (SkyWater did not exist until 2017). The title itself prints the code as "R5D-5R" (dropping
+    the "2"), while the qualification history and process-description heading both say "R52D-5R" -- a
+    further variant of the R52-family suffix pattern (R52D, R52D-3, R52D-5R), and weak evidence that "R5"
+    is understood internally as a valid abbreviation for the "R52" family root, alongside the plain "R5"
+    naming already implied by "R52", "R5D" and "R59" -- style codes throughout this corpus.'
