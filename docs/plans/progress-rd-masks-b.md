@@ -485,3 +485,46 @@ The sibling of nsdm; the same treatment throughout.
   the two-quotation "The site says …" sentence (52); the quick-facts Polarity cell. Before → after:
   paragraphs 8 → 0, items 1 → 0, sentences 10 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 11. rpm — done
+
+* **Rules applied.** R-INTRO (171 → 43 words); R-PARAMS (three columns: the `POLYRCD` description passes
+  five lines at 400 px with four); R-CAPTION (rule table, parameter table, and the renders' per-run
+  frame table); R-PARA, R-SENTENCE; R-LIST (the two precision-resistor devices, the step page's three
+  inferences, the Table F2b marks); R-RELATED (the base's second bullet named steps and masks, so RRPM
+  and URPM went under **Steps.** and their mask pages under **Masks.**); R-H3 (Exposure class, Resist
+  and tone, Resist edges, Overlay and alignment, Pattern transfer).
+* **Moved passage (canonical order), done the other way round.** The base order was Exposure, Resist,
+  Pattern transfer, Resist edges, Overlay. Resist edges ends "(below)", which may point at the overlay
+  passage that reads rpm.3 as the overlay budget; moving the overlay passage above it would falsify
+  that. So the *pattern-transfer* passage moved, unchanged, to the end of the H2, below Resist edges and
+  Overlay and alignment; it refers to no other passage by position.
+* **Intro.** Kept the first sentence up to its colon and "On the RPM page's reading, the resist … stays as
+  islands over the future precision-resistor bodies." Moved with the hedge repeated ("On the RPM page's
+  reading, the heavy n-type gate implant P1I dopes …"); "It is the only one of the three resistor
+  masks" → "The mask is …".
+* **R-PARAMS.** Five parameters (Tables 2 and 4). "the values of poly.3 and poly.9" went into the two
+  Value cells as "the value of poly.3" / "the value of poly.9", each with the `pdk-periph` marker the
+  base put on the sentence; the shared description of `POLYRCD` and `POLYRSPC` is repeated on both rows
+  (one ADDED quote). The base's two `[^pdk-03]` became one on the lead-in (`LOST markers: 'pdk-03'` ×1,
+  one source, as on pwbm).
+* **Declared additions** (`--allow-added markers,numbers,quotes,refs`): markers `mask-renders` (render
+  sentence), `pdk-errors` ×3 (the "describes" sentence; the `urpm` sentence split twice at its
+  semicolon and after "(our comparison)"), `pdk-periph` (the second Value cell), `steps-sheet` ("Plate
+  number" split); numbers `2` ×2, `4` ×3 (table column), `3` and `15` (rpm.3 and x.15a in the rule-table
+  caption), `39` (a tool artefact: the base line began "39.[^pdk-06]", which the tool's numbered-label
+  masking skips; the list item now reads "in the other 39"); quote — the repeated description; refs
+  `step-049` (hedge repeated).
+* **LOST lines that are not losses:** the two `number_order` lines are the parameter table (1.27, 0.84,
+  0.33, 0.48, 2.03 in the base order, with poly.3, poly.9 and "6 contacts" as in the base).
+* **Marker coverage.** Flags read: every flagged sentence had no marker of its own in the base, or its
+  marker sits on a list lead-in.
+* **Other edits.** "It lists messages for rpm.3 …" → "The page lists …" (new paragraph); the
+  `urpm.1a`… sentence split into three ("It has no message …", "Under the names … it lists …", "They sit
+  …"); Overlay: "…infers alignment to the trench marks of FOM and reads the 0.200 µm enclosure …" →
+  "… FOM. It reads the 0.200 µm enclosure …".
+* **Over the caps after the pass:** "The page lists messages for rpm.3 …" (53 by the script, three
+  quotations) and the resist sentence (49; its "with anti-reflective coating optional because …"
+  clause is part of the step page's reading and has no subject of its own); three quick-facts cells.
+  Before → after: paragraphs 11 → 0, items 0 → 0, sentences 15 → 2, cells 3 → 3.
+* **Content problems for the owner:** none found.

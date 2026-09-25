@@ -2,20 +2,10 @@
 # RPM — Resistor Protect
 
 The resistor protect mask is the first of SKY130's three poly-resistor
-{term}`reticles <reticle>` and the first mask printed on the gate film:
-on the {ref}`RPM <step-049>` page's reading, the resist printed through
+{term}`reticles <reticle>` and the first mask printed on the gate film.
+On the {ref}`RPM <step-049>` page's reading, the resist printed through
 it at step 49 stays as islands over the future precision-resistor
-bodies, the heavy n-type gate implant {ref}`P1I <step-050>` dopes all the
-rest of the undoped film, and the resist is stripped at
-{ref}`P1IS <step-051>`. It is the only one of the three resistor masks
-that `masks.csv` lists. The public renders of the MPW tape-out layouts
-show its drawn layer on few dies — between none and five of the 40 on
-each run — although the process-steps sheet records a plate for it on
-every run. This page gathers what public sources say about the mask
-itself — its PDK entry and layers, the plates the process-steps sheet
-records, what the public renders show, the lithography it needs and the
-rules that constrain it. How the step is performed is on the step page;
-every mask is indexed on the {ref}`masks index <masks-index>`.
+bodies.
 
 | | RPM — Resistor Protect |
 |---|---|
@@ -32,7 +22,20 @@ every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 1, 5, 0, 3, 4, 2, 3, 2[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-rpm-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page;
+every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`RPM <step-049>` page's reading, the heavy n-type gate implant {ref}`P1I <step-050>` dopes all the
+rest of the undoped film, and the resist is stripped at
+{ref}`P1IS <step-051>`. The mask is the only one of the three resistor masks
+that `masks.csv` lists. The public renders of the MPW tape-out layouts
+show its drawn layer on few dies — between none and five of the 40 on
+each run — although the process-steps sheet records a plate for it on
+every run.
 
 The PDK names the layer's purpose in three places: `masks.csv` lists
 "Resistor Protect", `gds_layers.csv` describes `rpm` as "300 ohms/square
@@ -40,12 +43,19 @@ polysilicon resistor implant", and the rule set's function line reads
 "Defines p+ poly resistors".[^pdk-05][^pdk-06][^pdk-periph] Table C3 of
 the *Layers Reference* defines the device the rules call
 `prec_resistor` as "rpm AND (poly overlapping poly.rs) AND
-psdm".[^pdk-06] The devices are the "P+ poly precision resistors", which
-"have 5 different fixed widths, plus a variable W/L option", each end
-"contacted using a slot licon", and the "P- poly precision resistors",
-for which "a separate implant is used to set the sheet resistance to
-2000 ohm/sq" and which "have the same layout footprints as their P+ poly
-counterparts".[^pdk-07] The extraction table, in a column headed
+psdm".[^pdk-06]
+
+The devices are:[^pdk-07]
+
+* the "P+ poly precision resistors", which
+  "have 5 different fixed widths, plus a variable W/L option", each end
+  "contacted using a slot licon"
+* the "P- poly precision resistors",
+  for which "a separate implant is used to set the sheet resistance to
+  2000 ohm/sq" and which "have the same layout footprints as their P+ poly
+  counterparts"
+
+The extraction table, in a column headed
 "Resistivity (mohms/sq)", gives 319800 for the "XHR poly resistor",
 2000000 for the "UHR poly resistor" and 48200 for "Poly", that is
 319.8 Ω/sq, 2000 Ω/sq and 48.2 Ω/sq (our conversion).[^pdk-08]
@@ -53,23 +63,37 @@ counterparts".[^pdk-07] The extraction table, in a column headed
 The {ref}`RPM <step-049>` page reads the mask from the doping these
 figures imply. The generic poly resistor is "N+ doped gate
 poly",[^pdk-07] while both precision flavours are p-type, so the step
-page infers that `RPM` protects the resistor bodies from the n-type gate
-implant, that the p-type doping comes later through
-{ref}`RRPM <step-052>` and {ref}`URPM <step-055>`, and that the resist
-covers the `urpm` bodies as well as the `rpm` ones; it leaves open
+page infers that:
+
+* `RPM` protects the resistor bodies from the n-type gate
+  implant
+* the p-type doping comes later through
+  {ref}`RRPM <step-052>` and {ref}`URPM <step-055>`
+* the resist
+  covers the `urpm` bodies as well as the `rpm` ones
+
+The step page leaves open
 whether the `urpm` regions are on this plate or only on their own later
 mask. Lu et al. modelled how grain structure and doping set the
 resistance of monolithic poly resistors,[^lu-1981] and Lane and Wrixon
 set out the design of poly resistors for analogue ICs.[^lane-1989]
 
-The PDK's mask generation table, Table F2b, marks the `RPM` column `C`
-("CREATED") in one of its 80 device rows, "p+ poly resistor" (model
-`xhrpoly_*_*`), `-` ("Layer not created for the device") in 40 rows —
-among them the "n+ poly resistor" and every transistor, varactor and
-SONOS row — and `+` ("Layer allowed to overlap") in the other
-39.[^pdk-06] The table has no row for the 2000 Ω/sq resistor and no
+The PDK's mask generation table, Table F2b, marks the `RPM` column:[^pdk-06]
+
+* `C`
+  ("CREATED") in one of its 80 device rows, "p+ poly resistor" (model
+  `xhrpoly_*_*`)
+* `-` ("Layer not created for the device") in 40 rows —
+  among them the "n+ poly resistor" and every transistor, varactor and
+  SONOS row
+* `+` ("Layer allowed to overlap") in the other
+  39
+
+The table has no row for the 2000 Ω/sq resistor and no
 `URPM` column, so it does not show whether `urpm` bodies receive created
-`RPM` data (our reading of the table). What the mask does not define is
+`RPM` data (our reading of the table).
+
+What the mask does not define is
 the resistor's outline: on the step pages' readings the body is cut from
 the poly at {ref}`P1M <step-061>`, and its ends are opened through the
 nitride cut of {ref}`NPCM <step-078>` and contacted by the slot contacts
@@ -81,32 +105,38 @@ of {ref}`LICM1 <step-093>`.
 
 `gds_layers.csv` has one mask-level layer for this mask, `crpm` with
 purpose `mask` at 96:0 ("Resistor Protect mask"), and no `drawing`,
-`mask add`, `mask drop` or `waffle drop` purpose; layer number 96 also
+`mask add`, `mask drop` or `waffle drop` purpose. Layer number 96 also
 carries the `cncm` drawing purpose, 96:44 ({ref}`masks-index`). The drawn
 layers are `rpm` at 86:20 and `urpm` at 79:20.[^pdk-06] The pairing with
 `rpm` rests on the names and descriptions, and the pairing with `urpm`
 on the step page's reading above; the PDK publishes no operation that
-turns either layer into the plate. Rule x.15a confines "Drawn compatible,
+turns either layer into the plate.
+
+Rule x.15a confines "Drawn compatible,
 mask, and waffle-drop layers" to test modules, the seal ring and the
 frame, with the exception "FOM/P1M/Metal waffle drop are allowed inside
-the die" (flag P),[^pdk-periph] so a design inside the die draws `rpm`,
+the die" (flag P).[^pdk-periph] So a design inside the die draws `rpm`,
 not `crpm` (our reading of x.15a).
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", has the generic grid, octagonal-edge and x.15a
+criteria for GDS data".[^pdk-errors] It has the generic grid, octagonal-edge and x.15a
 checks for a mask-data layer `RPMmk` and a "nikon cross" check,
 `crpm.nikon`: "RPMmk in the nikon cross has the wrong polarity" and
-"RPMmk is missing from the nikon cross in the layout".[^pdk-errors] It
+"RPMmk is missing from the nikon cross in the layout".[^pdk-errors]
+
+The page
 lists messages for rpm.3 to rpm.10 with the periphery rules' values
 where those give one — "0.11 min. enclosure of precResistor by psdm",
 "0.185 min. spacing of precResistor & hvntm" — and adds a value for
 rpm.10, "2 min. spacing of rpmNotXmt & pwbm", which the periphery rules
 give as "N/A".[^pdk-errors][^pdk-periph] It has no message under the names
-rpm.1a or rpm.2; under the names urpm.1a, urpm.2 and urpm.3 it lists
+rpm.1a or rpm.2.[^pdk-errors]
+
+Under the names urpm.1a, urpm.2 and urpm.3 it lists
 "1.27 min. width of urpm", "0.84 min. spacing/notch of urpm" and "0.2
 min. enclosure of precResistor by rpm", the values of rpm.1a, rpm.2 and
-rpm.3 (our comparison), and they sit, in the page's numbering,
+rpm.3 (our comparison).[^pdk-errors] They sit, in the page's numbering,
 immediately before the rpm.3 message, so they may be the missing `rpm`
 checks filed under `urpm` names or checks applying the same geometry to
 `urpm` (our reading).[^pdk-errors] The periphery rules have no `urpm`
@@ -119,7 +149,7 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `RPM` the site renders layer 86:20 (`rpm`)
 alone, with no Boolean expression, no fill layer and no note, on all
-eight runs; its mask record gives the mask-level layer
+eight runs.[^mask-renders] Its mask record gives the mask-level layer
 96:0.[^mask-renders] The render has no `urpm` term, unlike the index's
 and the step page's pairing ({ref}`masks-derivations`). The choice of
 layer is one public derivation from the drawn data, not SkyWater's
@@ -128,6 +158,7 @@ mask-generation recipe, and neither source settles which is right.
 Few dies draw `rpm`, and on the runs that have any they are these
 frames:[^mask-renders]
 
+:::{table} Dies that draw `rpm` on each run, from the renders: frame and shape count
 | Run | Dies with `rpm` shapes (frame and shape count) |
 |-----|-----------------------------------------------|
 | MPW-1 | F4 (2) |
@@ -138,11 +169,14 @@ frames:[^mask-renders]
 | MPW-6 | B2 (32), B7 (1) |
 | MPW-7 | B5 (82), C2 (1), F3 (80) |
 | MPW-8 | B1 (480), C7 (55) |
+:::
 
 The site renders `URPM` from `urpm` 79:20 and shows shapes on every die
 of every run ({ref}`masks-renders`),[^mask-renders] so on the step page's
 reading, in which this plate also covers the `urpm` bodies, a render of
-`rpm` alone would understate what the plate carries (inference). The
+`rpm` alone would understate what the plate carries (inference).
+
+The
 site states the limits of its images: "These are renders of *drawn*
 data, not photomask artwork: reticle pitch, 4x reduction, mirroring and
 the frame features the fab adds are not modelled. Empty images are real
@@ -180,7 +214,7 @@ the reticle set is the heading of the run's columns in the tab
 * **Plate number.** The three resistor masks carry close numbers — `175`
   for `RPM`, `177` for `RRPM` and `178` for `URPM` — but the numbers do
   not follow process order elsewhere (`LVOM`, step 44, is `125`; `TUNM`,
-  step 35, `190`), and the sheet does not say what they encode, so no
+  step 35, `190`).[^steps-sheet] The sheet does not say what they encode, so no
   process position or grouping is read from them
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type and magnification.** The sheet's "Sheet4" tab gives no
@@ -193,31 +227,63 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`RPM <step-049>` page reads the 1.27 µm /
+### Exposure class
+
+The {ref}`RPM <step-049>` page reads the 1.27 µm /
 0.84 µm pattern as far above the i-line resolution limit and infers an
 i-line level, naming a KrF tool as the option for a fab that keeps all
-layers on one platform; the {ref}`i-line stepper <machine-i-line-stepper>`
+layers on one platform. The {ref}`i-line stepper <machine-i-line-stepper>`
 page lists it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
+
 At NA 0.48, the low end of ASML's PAS 5500/275D,[^asml-pas5500-275d] the
-0.84 µm space has {math}`k_1 \approx 1.1` (our arithmetic), and Wong et
+0.84 µm space has {math}`k_1 \approx 1.1` (our arithmetic). Wong et
 al.'s mask error factor "is unity for large features",[^wong-1998] so a
 CD error on this plate would print at about its own size (inference).
 
-**Resist.** On the step page's reading the resist is coated on bare
+### Resist and tone
+
+On the step page's reading the resist is coated on bare
 amorphous silicon. The
 {ref}`RPM <step-049>` page reads a conventional positive i-line resist of
 about 1 µm, the PDK's generic "Photoresist thickness" being
 1.14 µm,[^pdk-03] as ample for a shallow poly-doping implant of tens of
 keV (industry-typical on the {ref}`P1I <step-050>` page), with
 anti-reflective coating optional because amorphous silicon absorbs
-strongly at 365 nm. The implant is heavy: the {ref}`P1IS <step-051>` page
+strongly at 365 nm.
+
+The implant is heavy: the {ref}`P1IS <step-051>` page
 reads it as leaving a fully developed carbonised crust, the layer Orvek
 and Huffman studied on ion-implanted resist masks.[^orvek-1985]
 SkyWater's resist is not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** Nothing is etched through this resist. On the step
+### Resist edges
+
+Hook et al. found that ions scattered out of the edge
+of an implant resist are implanted in the silicon near the mask edge,
+with threshold shifts "of up to 100 mV … over a lateral distance on the
+order of a micrometer".[^hook-2003] The {ref}`P1I <step-050>` page cites
+the study for shadowing at the edges of the `RPM` islands if the implant
+were tilted. The PDK does not say what the 0.200 µm of rpm.3 and rpm.7
+allow for (below).
+
+### Overlay and alignment
+
+The poly has not been patterned, so the
+{ref}`RPM <step-049>` page infers alignment to the trench marks of
+{ref}`FOM <step-004>`. It reads the 0.200 µm enclosure of the precision
+resistor by `rpm` (rpm.3) as the overlay budget between this layer and
+{ref}`P1M <step-061>`, both registered to the same reference.[^pdk-periph]
+ASML specifies "≤ 40 nm" single-machine overlay for the /275D
+stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
+public). A line that crossed the `rpm` edge would be doped n⁺ on one side
+and p on the other, which the step page gives as the reason for rpm.8,
+"poly must not straddle rpm".
+
+### Pattern transfer
+
+Nothing is etched through this resist. On the step
 pages' readings the pattern is transferred into the gate film as dopant
 by {ref}`P1I <step-050>`, on the
 {ref}`high-current implanter <machine-high-current-implanter>` class, and
@@ -227,30 +293,13 @@ the resist is removed at {ref}`P1IS <step-051>` on the
 only as sheet resistances — 48.2 Ω/sq for "Poly", 319.8 Ω/sq for the
 "XHR poly resistor" and 2000 Ω/sq for the "UHR poly resistor"[^pdk-08] —
 which the step pages read as the gate-implanted film and the two
-protected, later-implanted bodies. Liu et al. separate a poly resistor's value into an
+protected, later-implanted bodies.
+
+Liu et al. separate a poly resistor's value into an
 electrical width reduction, an interface resistance at its ends and a
-"pure sheet resistance";[^liu-2001] the {ref}`RRPM <step-052>` page reads
+"pure sheet resistance".[^liu-2001] The {ref}`RRPM <step-052>` page reads
 part of the SKY130 resistor's end resistance as set where the doped body
 meets the n⁺ poly, that is, by the `rpm` edge (inference on that page).
-
-**Resist edges.** Hook et al. found that ions scattered out of the edge
-of an implant resist are implanted in the silicon near the mask edge,
-with threshold shifts "of up to 100 mV … over a lateral distance on the
-order of a micrometer";[^hook-2003] the {ref}`P1I <step-050>` page cites
-the study for shadowing at the edges of the `RPM` islands if the implant
-were tilted. The PDK does not say what the 0.200 µm of rpm.3 and rpm.7
-allow for (below).
-
-**Overlay.** The poly has not been patterned, so the
-{ref}`RPM <step-049>` page infers alignment to the trench marks of
-{ref}`FOM <step-004>` and reads the 0.200 µm enclosure of the precision
-resistor by `rpm` (rpm.3) as the overlay budget between this layer and
-{ref}`P1M <step-061>`, both registered to the same reference.[^pdk-periph]
-ASML specifies "≤ 40 nm" single-machine overlay for the /275D
-stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
-public). A line that crossed the `rpm` edge would be doped n⁺ on one side
-and p on the other, which the step page gives as the reason for rpm.8,
-"poly must not straddle rpm".
 
 (mask-rpm-steps)=
 ## Steps that use this mask
@@ -285,6 +334,8 @@ applies to periphery only (outside areaid.ce). A corresponding core rule
 may or may not exist.". The unit column of rpm.3 is blank in the
 published table.[^pdk-periph]
 
+:::{table} The `rpm` rules, with the `licon` rules for contacts inside the precision resistor and rule x.15a, as published; the unit column of rpm.3 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | rpm.1a | "Min width of rpm" | 1.270 µm |
@@ -304,36 +355,43 @@ published table.[^pdk-periph]
 | licon.1c | "Min and max length of licon inside prec_resistor" | 2.000 µm |
 | licon.9 | "Spacing, no overlap, between poly_licon and psdm; In SKY130DIA/SKY130TMA/SKY130PIR-10 flows, the rule is checked only between (poly_licon outside rpm) and psdm" (P) | 0.110 µm |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
-Table 2 of *Criteria & Assumptions* repeats the width and space as
-`RPMCD` 1.27 and `RPMCDSP` 0.84.[^pdk-03] In the block of Table 4 headed
-"Other", whose value column is headed "Value", it gives "Poly resistor
-width and spacing to reduce CD variation (um)" as 0.33 (`POLYRCD`) and
-0.48 (`POLYRSPC`), the values of poly.3 and poly.9, and "Precision
-resistor width to accommodate 6 contacts across" as 2.03
-(`PRECRESW`).[^pdk-03][^pdk-periph] For the plate the decisive figures
+*Criteria & Assumptions* repeats the width and space in Table 2, and in the block of Table 4 headed
+"Other", whose value column is headed "Value", it gives the following:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask
+| Parameter (table) | Published description | Value |
+|---|---|---|
+| `RPMCD` (Table 2) | width | 1.27 |
+| `RPMCDSP` (Table 2) | space | 0.84 |
+| `POLYRCD` (Table 4) | "Poly resistor width and spacing to reduce CD variation (um)" | 0.33, the value of poly.3[^pdk-periph] |
+| `POLYRSPC` (Table 4) | "Poly resistor width and spacing to reduce CD variation (um)" | 0.48, the value of poly.9[^pdk-periph] |
+| `PRECRESW` (Table 4) | "Precision resistor width to accommodate 6 contacts across" | 2.03 |
+:::
+
+For the plate the decisive figures
 are the 1.270 µm width and 0.840 µm space of `rpm`; the resistor widths
 of rpm.1b to rpm.1f belong to the poly pattern inside the islands, not
 to this plate.
 
 ## Related pages
 
-* {ref}`RPM <step-049>`, {ref}`P1I <step-050>` and
+* **Steps.** {ref}`RPM <step-049>`, {ref}`P1I <step-050>` and
   {ref}`P1IS <step-051>` — the mask step, the gate implant and the strip.
-* {ref}`RRPM <step-052>` and {ref}`URPM <step-055>` — the reverse and
-  ultra-high resistor masks that follow; {ref}`mask-rrpm` and
-  {ref}`mask-urpm` — their mask pages.
-* {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the derivations the renders use.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-high-current-implanter` — the implant class that uses the
-  pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+  {ref}`RRPM <step-052>` and {ref}`URPM <step-055>` — the reverse and
+  ultra-high resistor masks that follow.
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-high-current-implanter` — the implant class that uses the
+  pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-rrpm` and
+  {ref}`mask-urpm` — their mask pages. {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the derivations the renders use.
 
 ## References
 
