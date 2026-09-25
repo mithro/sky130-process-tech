@@ -84,11 +84,10 @@ cannot:
    etch".[^thung-2016]
 2. **Rounds the corners.** A sharp convex corner is consumed from two
    sides at once, and above about 1000 °C the oxide flows viscously
-   enough to relieve the stress that non-planar growth builds up.
-
-   The sharp top corner of the trench is thereby rounded, reducing the
-   field crowding that causes the sub-threshold "double hump" and
-   gate-oxide thinning at the active edge.[^itrs-01][^rev-01][^txt-01]
+   enough to relieve the stress that non-planar growth builds up, so
+   the sharp top corner of the trench is rounded — reducing the field
+   crowding that causes the sub-threshold "double hump" and gate-oxide
+   thinning at the active edge.[^itrs-01][^rev-01][^txt-01]
    Oxidation on curved surfaces is in fact *retarded* relative to
    planar silicon: Kao et al. found the retardation strongest "at low
    temperatures and sharp curvatures" and "more severe on concave than
