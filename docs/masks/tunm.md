@@ -114,7 +114,7 @@ and `LDNTM` as the SONOS masks of SKY130 (inference from the mask table).
 
 `gds_layers.csv` has one mask-level layer for this mask, `ctunm` with
 purpose `mask` at 20:0 ("Tunnel mask"), and no `drawing`, `mask add`,
-`mask drop` or `waffle drop` purpose for it. The drawn layer is `tunm`
+`mask drop` or `waffle drop` purpose for it.[^pdk-06] The drawn layer is `tunm`
 at 80:20.[^pdk-06] The pairing rests on those names and descriptions, as
 for every mask on the {ref}`masks index <masks-index>`; the PDK publishes
 no operation that turns `tunm` into the plate.
@@ -205,6 +205,7 @@ the renders site calls the run's reticle set
 * **Plates on runs with no drawn `tunm`.** A plate is recorded on MPW-2,
   MPW-3, MPW-4, MPW-6, MPW-7 and MPW-8, on which no rendered die draws
   `tunm`, as well as on MPW-1 and MPW-5.[^steps-sheet][^mask-renders]
+
   Because the renders leave out whatever the fab adds to a plate, they
   cannot show what those six plates carry, and no public source says.
   For MPW-4 the renders and the plates also belong to different reticle
