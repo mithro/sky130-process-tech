@@ -16,6 +16,20 @@
  * the marker, and the marker carries aria-expanded/aria-describedby
  * while the card is open, but nothing moves focus into the card and
  * nothing traps it there — Tab continues past it as normal.
+ *
+ * C10 / R-ANCHOR: the card also appends a small "Inventory entry" link
+ * to the footnote's "own" entry in the public sources inventory
+ * (docs/references/public-sources.md), which tools/fix_inventory_entries.py
+ * gives an anchor `(src-<key-lowercased>)=` above every `**KEY** —` entry.
+ * On this site the footnote label already equals the inventory key
+ * (verified script-side, case-folded, across every written page: see
+ * docs/plans/progress-rd-site.md), so the footnote's own id -- the same
+ * "label" this script already reads off the marker's href -- is also the
+ * inventory anchor's suffix. One exception exists (WHS-T4; see the
+ * progress file): its entry has no anchor, so this link is added for it
+ * too but lands on the inventory page without scrolling to an entry --
+ * graceful degradation, not a broken link, and worth accepting rather
+ * than special-casing one label in a site-wide, static script.
  */
 (function () {
   "use strict";
@@ -48,6 +62,21 @@
   function hideSoon() {
     clearTimeout(hideTimer);
     hideTimer = setTimeout(hide, 250);
+  }
+
+  /* Appends a small "Inventory entry" link to `card` for the footnote
+     label `id` (== the inventory key, lower-cased; see the file comment
+     above). `data-content_root`, on <html>, is the relative path Sphinx
+     itself gives every page back to the site root (e.g. "../" one level
+     down, "./" at the root) -- the standard, template-provided way to
+     link to a fixed page regardless of how deep the current page sits. */
+  function appendInventoryLink(card, id) {
+    var root = document.documentElement.getAttribute("data-content_root") || "./";
+    var link = document.createElement("a");
+    link.className = "fn-popover-inventory-link";
+    link.href = root + "references/public-sources.html#src-" + id;
+    link.textContent = "Inventory entry";
+    card.appendChild(link);
   }
 
   function keep() {
@@ -84,6 +113,7 @@
     content.forEach(function (node) {
       card.appendChild(node.cloneNode(true));
     });
+    appendInventoryLink(card, id);
     marker.insertAdjacentElement("afterend", card);
     marker.setAttribute("aria-expanded", "true");
     marker.setAttribute("aria-describedby", card.id);

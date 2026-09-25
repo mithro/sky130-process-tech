@@ -60,6 +60,18 @@ aside.footnote {
   margin-bottom: 0;
 }
 
+/* The "Inventory entry" link footnote-popover.js appends (C10 /
+   R-ANCHOR): a small, visually secondary line under the citation text,
+   never the card's last-child margin reset above (it is always the
+   true last child once added). */
+.fn-popover-inventory-link {
+  display: block;
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--color-background-border);
+  font-size: var(--font-size--small--2);
+}
+
 /* A slightly larger hit area on the marker itself. This does not stop a
    marker splitting from the word before it onto the next line ("fab.
    ⏎ [1][2]" — report-C C12 records that case as not fixable in CSS);
