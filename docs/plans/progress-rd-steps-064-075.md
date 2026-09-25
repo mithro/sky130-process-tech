@@ -855,3 +855,9 @@ One commit each.
   word in the progress file."
 * **Guide rulings applied in this branch** (one commit each, wording as the review gives it): D1
   R-DERIVATION step 1; D2 the §4.1 lead footnote; D5 R-TOOLS step 2; D6 R-OPENQ step 2; D7 R-PARA step 2.
+
+**Checks after the round.** main's `check_preserved.py` (byte-identical to the worktree's; main's own copy
+resolves paths from the main checkout, so the in-tree copy was run, as in the review) with
+`--allow-regrouped` only, all 12 pages: the same three LOST `number_order` (066, 068, 071) and no
+`{dropdown}` line; the only new ADDED line is 069's declared `hu-1985-hci`. Invariants unchanged.
+Sentences > 45 words: 10 → 9. All checkers and generator `--check`s pass; `sphinx-build -W -E` exit 0.
