@@ -1,0 +1,192 @@
+# Technical public-record evidence for Cypress Semiconductor process
+# technologies from before S8 (roughly 1983-2009): papers, patents, a
+# teardown report, an app note and web pages that describe device
+# structure, stackup, gate oxides, SONOS/ONO stacks, isolation schemes
+# and lineage.
+#
+# Schema: see docs/plans/cypress-history-plan.md. Fields: id, kind
+# (paper/patent/app-note/teardown/datasheet/web), origin (a short
+# publisher/author key: "patent-record" for patents, "cypress" for
+# anything Cypress or Infineon wrote, otherwise the publisher), source
+# (bibliographic), url, archive_url, retrieved, cache (path relative to
+# tmp/cyhist-cache/), sha256 (of the original cached file), quotes
+# ({text, location}), claims ({technology, attribute, value}), notes
+# (what the source shows, and how it agrees or conflicts with other
+# records).
+#
+# Cache: tmp/cyhist-cache/web/ and tmp/cyhist-cache/patents/ in the main
+# checkout hold every fetched document and its extracted text
+# (<name>.txt). Quotes are checked verbatim against the cached text by
+# tools/check_history_quotes.py (uv run tools/check_history_quotes.py).
+#
+# Patents already indexed in data/patents.yaml are cross-referenced here
+# by family id; each record repeats that file's family id,
+# representative number, priority date and expiry/status, and adds its
+# own quote from a fresh fetch of the Google Patents page (abstract).
+# Where that fresh fetch's own legal-status field disagrees with the
+# status data/patents.yaml records, the disagreement is noted rather
+# than resolved here. Patents whose expired is not true are RESTRICTED
+# under tools/check_inforce.py and must stay inside a collapsed block
+# wherever any page quotes their content, title or number outside
+# docs/references/patents/.
+schema_version: 1
+retrieved: '2026-09-25'
+records:
+
+# --- Web / app-note / teardown sources ---------------------------------
+
+- id: web-techinsights-cy8ctma301e-pna
+  kind: datasheet
+  origin: techinsights
+  source: >-
+    TechInsights (formerly Chipworks), "Cypress CY8CTMA301EES-3 130 nm CMOS
+    Touch Screen Controller - Process Node Assessment", product page
+    PNA-1106-901 (the report itself is a paid product; only the public
+    landing-page title and description were retrieved).
+  url: https://www.techinsights.com/products/pna-1106-901
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/techinsights-cy8ctma301e.html.txt
+  sha256: 0e4e59479836876d8ce4c780ce99a639413e67da747dc19b1a0233550a0537c2
+  quotes:
+  - text: "Cypress CY8CTMA301EES-3 130 nm CMOS Touch Screen Controller - Process Node Assessment"
+    location: "page title"
+  - text: >-
+      Chipworks Process Node Assessment Reports provide clients with
+      fundamental but essential device information, such as process design
+      and technology node determined by cross section.
+    location: "product description paragraph"
+  claims:
+  - {technology: "Cypress CY8CTMA301EES-3 (TrueTouch touchscreen controller)", attribute: "process node", value: "130 nm CMOS, per a TechInsights/Chipworks cross-section"}
+  notes: >-
+    Confirms the part's title and marketing description ("130 nm CMOS Touch
+    Screen Controller"); the cross-section report itself is paywalled and
+    was not retrieved, so this is an abstract/metadata-only citation, not
+    independent verification of the cross-section result. Corroborates in
+    kind (not in the specific part) the 130 nm node that
+    teardown-siliconpr0n-cy8c4245axi finds by its own SEM cross-section for
+    a different Cypress mixed-signal part.
+
+- id: teardown-siliconpr0n-cy8c4245axi
+  kind: teardown
+  origin: siliconpr0n
+  source: >-
+    Azonenberg (siliconpr0n.org / Silicon Prawn wiki), teardown page
+    "azonenberg:cypress:cy8c4245axi" for the Cypress CY8C4245AXI (PSoC 4200
+    series), last modified 2025-08-04.
+  url: https://siliconpr0n.org/archive/doku.php?id=azonenberg:cypress:cy8c4245axi
+  archive_url: http://web.archive.org/web/20251016214945/https://siliconpr0n.org/archive/doku.php?id=azonenberg:cypress:cy8c4245axi
+  retrieved: '2026-09-25'
+  cache: web/siliconpr0n-cy8c4245axi-wayback.html.txt
+  sha256: 0a7f7042d3e0899792f3311be237a3a372c3c802db363570b229ac6a126d8ec2
+  quotes:
+  - text: >-
+      PSoC 4200 series device originally made on Cypress's S8 SONOS process
+      in the Minnesota fab (Fab 4, S8DIN-5R). GSMC in China has also
+      licensed the S8 process technology; traceability markings presumably
+      tell where the device came from but this isn't known yet.
+    location: "page body, first paragraph after the infobox"
+  - text: "Confirmed by SEM imaging to be 130nm tech, layer count not measured."
+    location: "page body, second paragraph"
+  - text: >-
+      Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN for metallization in fab 4 (except
+      for top layers) Metal 1: 150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A
+      TiN Metal 2: 150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN Metal
+      3: 500A TiW/21,250A Al 0.5% Cu/300A TiW
+    location: "'Stackup from change notice 145273' section"
+  - text: "Passivation: 1000A TEOS/9000A Si3N4"
+    location: "'Stackup from change notice 145273' section"
+  - text: "Gate stack: SiO2 / 110A & SiO2 / 32A"
+    location: "'Stackup from change notice 145273' section"
+  - text: >-
+      Looks like >= 4 metal layers (thick top metal, at least one
+      vertical-horizontal routing pair, then M1).
+    location: "page body, second paragraph"
+  claims:
+  - {technology: "S8 (Cypress/PSoC 4200, Fab 4)", attribute: "process node", value: "130 nm, confirmed by SEM cross-section"}
+  - {technology: "S8 (Cypress/PSoC 4200, Fab 4)", attribute: "internal technology code", value: "S8DIN-5R"}
+  - {technology: "S8 (Cypress/PSoC 4200, Fab 4)", attribute: "metal layer count", value: ">=4 metal layers observed; a 3-layer metallisation recipe is separately given from a change-notice stackup table, so the die may use a later/different metal stack than that specific change notice"}
+  - {technology: "S8", attribute: "second-source manufacturer", value: "GSMC (China) also licensed the S8 process"}
+  - {technology: "S8", attribute: "gate oxide", value: "two thicknesses recorded: SiO2/110 Å and SiO2/32 Å (dual gate oxide, consistent with a SONOS charge-trap plus low-voltage logic transistor split)"}
+  notes: >-
+    This is the clearest public technical source for what "S8" itself is: a
+    130 nm SONOS process run at Cypress's Minnesota Fab 4 under the
+    internal code S8DIN-5R, second-sourced at foundry GSMC. The "S8DIN-5R"
+    code shows the same family-letter/mnemonic/suffix naming pattern the
+    S4AD-5 records in data/history/qtp.yaml show for the 0.35 µm SONOS
+    generation. The "confirmed 130nm" line and the ">=4 metal layers" line
+    are the author's own SEM-based readings, not a formal foundry
+    disclosure; the metal-composition table is sourced from a "change
+    notice" the author cites but does not reproduce.
+
+- id: web-design-reuse-innopower-2011
+  kind: web
+  origin: cypress
+  source: >-
+    Cypress Semiconductor Corp., press release "Cypress Signs Innopower to
+    Enable SONOS-Based Embedded Flash Solutions for 130-nm and 65-nm
+    Technology Nodes", San Jose, Calif., 2011-02-17 (mirrored by
+    Design&Reuse; original also distributed by Business Wire).
+  url: https://www.design-reuse.com/news/25684/65-nm-sonos-embedded-nonvolatile-memory-ip.html
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/design-reuse-innopower.html.txt
+  sha256: 8c5622010f4676ec1576578999f360a1bbf6592a05a63efd9ca3c57b4c396bcd
+  quotes:
+  - text: >-
+      Cypress Semiconductor Corp. (Nasdaq: CY) today announced that it has
+      licensed 130-nm and 65-nm SONOS (Silicon Oxide Nitride Oxide Silicon)
+      embedded nonvolatile memory technology IP to Innopower Technology
+      Corporation.
+    location: "paragraph 1"
+  - text: >-
+      Cypressâ€™s embedded flash IP has been shipping in high volumes at
+      130-nm at several foundries. It has also been verified on a 65-nm LL
+      process.
+    location: "'Availability' paragraph (the cached page's own HTML is double-encoded UTF-8 for its curly apostrophes -- 'Cypressâ€™s' for 'Cypress's' -- reproduced verbatim as served)"
+  claims:
+  - {technology: "Cypress SONOS embedded NVM IP", attribute: "licensed nodes, as of Feb 2011", value: "130 nm and 65 nm"}
+  - {technology: "Cypress SONOS embedded NVM IP", attribute: "130 nm manufacturing status", value: "shipping in high volume at several foundries by 2011"}
+  - {technology: "Cypress SONOS embedded NVM IP", attribute: "65 nm manufacturing status", value: "verified on a 65-nm 'LL' (low-leakage) process by 2011, not yet volume shipping"}
+  notes: >-
+    The original Business Wire URL could not be fetched (connection reset
+    on every attempt, no Wayback snapshot); this Design&Reuse mirror
+    reproduces the same press-release text in full and is used instead.
+    Extends the 130 nm/S8 volume-production timeline that
+    web-infineon-sonos-eflash-brief-2018 in data/history/extra.yaml gives
+    (2007): by 2011 the 130 nm SONOS IP was licensed to a third party
+    (Innopower/Faraday) and the 65 nm node was in bring-up, matching the
+    2012 65 nm qualification date that same brief gives.
+
+- id: web-semidigest-honeywell-150nm-2005
+  kind: web
+  origin: semidigest
+  source: >-
+    "New Honeywell foundry to produce 150nm radiation-hardened
+    semiconductors", Semiconductor Digest, 2005-04-28.
+  url: https://sst.semiconductor-digest.com/2005/04/new-honeywell-foundry-to-produce-150nm-radiation-hardened-semiconductors/
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: web/semidigest-honeywell-150nm.html.txt
+  sha256: ab082c266679f152c67ca294f7260b6607d41bab62385197d216656744ffa10c
+  quotes:
+  - text: >-
+      Honeywell has announced the opening of a new semiconductor foundry in
+      Plymouth, MN, where it says the industry's first radiation-hardened,
+      150nm ASICs will be produced.
+    location: "paragraph 1"
+  - text: >-
+      Honeywell's radiation-hardened ICs are produced using SOI technology
+      and can withstand the extreme operating environments of space.
+    location: "paragraph 2"
+  claims:
+  - {technology: "Honeywell 150 nm rad-hard SOI process", attribute: "fab location", value: "Plymouth, Minnesota"}
+  - {technology: "Honeywell 150 nm rad-hard SOI process", attribute: "date announced", value: "2005-04-28"}
+  notes: >-
+    Does not name Cypress. Gives the same node (150 nm) and substrate (SOI)
+    as data/history/extra.yaml's cyx-edn-2005-honeywell-soi record, which
+    does name the Cypress partnership; that record also notes that
+    Cypress's own FY2002/FY2003 annual reports (data/history/corporate.yaml)
+    instead call the joint programme a "0.13-micron Silicon-On-Insulator"
+    process, a conflict between Cypress's own corporate description and the
+    150 nm figure both trade-press articles give.
