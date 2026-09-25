@@ -678,19 +678,21 @@ inserted last; "Public numbers" is "none published for SKY130", since the page's
 SKY130-specific numbers belong to the native/zero-Vt comparison devices, not `DEPI`
 itself).
 
-**Two sentences deliberately left over the 45-word cap, not a miss.** The
+**Known over-cap item, deferred (not fixed in this pass).** The
 "**Measured thresholds.**" sentence (121 words) and the "**Body-effect
 coefficients.**" sentence (70 words) each carry a single "(our extraction from the
 published measurements)"-type hedge that covers threshold or body-effect values for
-*three different device families* named later in the same sentence. Splitting either
-sentence at any of its internal semicolons would separate at least one device's
-number from the hedge that supports it — exactly the mistake the task brief warns
-against twice over (marker/hedge must travel with every resulting clause, and this
-project's own precedent, batch 2's pages 022–024, treats this "which value belongs to
-which device" pairing risk as a reason to keep dense measured-comparison prose intact
-rather than force a split or a table). Both sentences were left as originally
-written; only the paragraph around them was split. Recorded here per §7's "write it in
-the progress file, do not force a fix" instruction.
+*three different device families* named later in the same sentence. Both are over
+§1's caps (paragraph hard cap 100, "≥120 must split"). Splitting either sentence at
+any of its internal semicolons would separate at least one device's number from the
+hedge that supports it, so a plain sentence split is not safe here; R-TABLE's own
+worked example (Device · Threshold · Body-effect coefficient · Basis, with one "our
+extraction" note under it) is the correct fix and was not attempted in this batch.
+Left as originally written, with only the surrounding paragraph split, and listed here
+as a known miss for a future pass — **correction, 2026-09-25 verify round:** this was
+previously written as "deliberately left … not a miss"; the review asked for it to be
+written as a known over-cap item instead, since §1 does not treat "the split would
+separate a hedge" as an exemption from the ≥120-word split requirement.
 
 **One checker-parsing artifact found and avoided, not a real preservation issue.**
 Reformatting "Native devices: see {ref}`LVTNM <step-014>` for the `lvtn` block layer."
@@ -883,3 +885,92 @@ scroll), the Step-category bullets, the three bold-labelled "Why this step exist
 paragraphs, the R-TOOLS recap table and sub-bullets, and the Related/Open-questions sections
 all render without overflow. The generated in-force dropdown (2 families) is untouched and
 collapsed as before.
+
+## Fix round (review response, 2026-09-25)
+
+The independent review of this branch, `tmp/reviews/rd-steps-035-047.md`, verdict "reject as
+it stands; approve with fixes after one local round", found the red flag above (dropdown
+bodies edited) plus a batch of repeated mistakes. Fixed in nine commits, `37cc3cfe..f413c4c7`
+on top of `e4d11f88`, one commit per finding group; a tenth commit, `fcd57ae9`, followed a
+verification pass that caught one miss. In order:
+
+* **H1 (`37cc3cfe`).** Reverted all 15 in-force dropdown-body edits on 039–047 (9 pages) to
+  `4a4ed3cf` byte for byte, matched by title and position (a script paired the Nth
+  same-titled dropdown in the edited file with the Nth in the base, since several titles
+  repeat on one page). Verified idempotent. Corrected the three false "note untouched"/"no
+  word … was changed" statements in this file (the batch-summary paragraph above, and the
+  039 and 040 per-page entries).
+* **H2/M1 (`c32ac8cd`).** 043's glance box: "Why" no longer gives the in-force integration
+  patent's own reoxidation reason; "Does" no longer states "cleared at ONOME" as fact. Both
+  now read exactly as the review's fix text.
+* **H3 (`efc6f4ca`).** Restored the dropped hedge in the 036, 037, 044 and 045 glance boxes
+  ("on this reference's reading", "(inference)", "what we read as").
+* **H4/M6 (`ae37be16`).** Restored the footnote marker and "our extraction"/inference hedge
+  on every sentence a split had left uncovered: 043's and 047's capacitance-extraction
+  sentences (split only at the original semicolon, both halves keep the hedge and marker);
+  037's punch-through-stop paragraph (hedge moved after both clauses it covers, "Both are
+  inferences …"); 037's "It is short." bullet (rejoined into one paragraph so the PDK
+  geometry sentence keeps its marker); 045's "(Both measured values are the mean …" so the
+  hedge cannot be read as covering the PDK's own limits. 039's "It reads this class of etch
+  as wet" (wrongly attributing an inference to the category page) restored to the base's "It
+  gives the same reason it gives for GOXETCH and SACETCH … for reading this class of etch as
+  wet", split only at "and".
+* **M2 (`632554a4`).** 037's and 038's first Open-questions bullet: label added, base
+  question text otherwise unchanged, including 037's "(boron or indium)" parenthetical.
+* **M3 (`9116c2f4`, plus `fcd57ae9` below).** Restored the base's plain, unlabelled gloss
+  wherever an R-RELATED label was untrue of the link: 036 (FOM), 037 (RTAI, and the
+  Previous:/mask: bullet unsplit), 038 (LDNTM, LVTNM, and Previous:/mask: unsplit), 043
+  ("Depends on:" the wrong way round), 044 ("devices" is not a step category), 047 ("Feeds:"
+  naming no step it feeds). **`9116c2f4` missed 040's `ISONIT` line** (its commit message
+  claimed the page but the commit touched no file under `docs/steps/040-*`); a verification
+  pass caught this and `fcd57ae9` restores `040`'s line to the base's "Generic nitride
+  deposition: `ISONIT`; generic thin oxidation: `category-oxidation`.", with no label.
+* **M4/M5 (`54800a4a`).** Moved every non-SkyWater sentence out of a "*SkyWater says:*"
+  sub-bullet into a plain continuation paragraph (036, 040, 042: a university clean-room's or
+  dealer's description; 037: our own gloss on a dose-range entry; 047: an RTP-capability
+  inference and a non-verb-first SkyWater statement). Deleted the untrue "Four/Five tools are
+  named at SkyWater for this step:" line above the recap table on 035, 039, 042 and 046.
+* **M7 (`ac703ed3`).** Rejoined the leads split into 3–5 paragraphs (035–037, 040, 043, 045,
+  046) back to one paragraph each, keeping the sentence-level splits already made; 039's lead
+  reverted byte for byte to the base (no fitting R-H3 title for a mid-lead split). The
+  over-120-word leads that remain (036, 039, 040, 045, 046) are the same length as in the
+  base and are not fixed here, since cutting them would remove real content against the
+  presentation-only mandate.
+* **Guide (`f413c4c7`).** R-DROPDOWN rule 2 and §2 rule 5 now say plainly: no edit at all
+  inside an in-force note during a readability pass (not a split, a re-wrap, or a repeated
+  marker); a note over a cap is listed here for the owner instead. A "For the tool branch"
+  section (above, under "Guide problems") records the review's rulings on Guide problems 15
+  and 16 for whoever maintains `tools/check_preserved.py` — the tool itself was not edited
+  from this content branch (§2 rule 15).
+* **038's "45-word cap" note corrected.** The "Measured thresholds"/"Body-effect
+  coefficients" write-up above used to say the two over-cap sentences were "deliberately …
+  not a miss"; it now says plainly that they are a **known, deferred over-cap item** (§1's
+  "≥120 must split" has no exemption for "the split would separate a hedge"), with R-TABLE's
+  own worked example named as the correct fix for a future pass.
+
+**Final check, this round.** Every page re-run with main's `check_preserved.py` (byte for
+byte identical to this worktree's copy — `diff` confirmed), `--base 4a4ed3cf
+--allow-regrouped` and **no other flag** (no `--allow-added`, no `--allow-dropdown-edits`,
+correcting §7 step 4's earlier, over-broad invocation). Every page exits 1 on ADDED lines
+only — glance-box, recap-table and R-TOOLS repeats of markers/numbers/hedges/identifiers
+already on the page, explained page by page above — and prints no `{dropdown}` line. Four
+LOST lines remain, all previously named by the review and re-verified after the revert:
+
+* `035` `LOST number_order`: the `tunm` rule table puts the rule id before the value
+  (Guide problem 11's pattern); every digit is present, row by row.
+* `044` `LOST number_order`: the `hvi` rule table, the same pattern.
+* `045` `LOST number_order`: the Monitoring hedge sits in its own parenthetical sentence now
+  ("Both measured values are the mean …"); all eleven values are present.
+* `042` `LOST quotes`: Guide problem 16's 400-character cap artefact from the note's
+  437-character quotation (only the note's own text moved, in the revert; the quotation
+  pairing shift is unrelated to that and was already documented). Hand-checked: no quotation
+  changed.
+
+`check_inforce.py`: 295 pages, 0 problems, after every commit in this round. All of
+`check_steps.py`, `check_refs.py`, `check_machines.py`, `check_materials.py`,
+`check_masks.py`, `check_papers.py`, `check_patents.py`, `check_filings.py`, and
+`gen_steps.py`/`gen_index_links.py`/`gen_figures.py`/`gen_papers.py`/`gen_patents.py`/
+`gen_filings.py`/`gen_step_tables.py`/`gen_history_sources.py`/`gen_history_stackups.py
+--check` pass with 0 problems/differences. `sphinx-build -W -b html` exits 0. Screenshots of
+040, 043 and 045 at desktop and 400 px widths show the corrected glance boxes, one-paragraph
+leads, and the Related-steps section rendering cleanly with no horizontal overflow.
