@@ -1,0 +1,28 @@
+id: mol-096-ally1
+kind: xsection
+page: docs/steps/096-ally1.md
+series: series-mol.yaml
+crop_depth: 60
+no_drawn_change: true
+alt: >-
+  One cross-section of the wafer. Three holes with sloping walls go down through a thin flat
+  oxide and a dotted glass: two to the silicon of the active areas and a shallower one in the
+  middle to the top of the wide stack. Nothing is in the holes. The drawing is the same as the
+  state before the step.
+caption: >-
+  The slice at the alloy anneal: the contact holes open, their bottoms freshly cleaned, and no
+  metal yet on the wafer. Nothing is deposited or removed, and nothing the drawing shows moves.
+  The page reads the anneal as a hydrogen anneal that passivates interface damage and drives
+  water out of the glass and the cap oxide before the liner seals them, both inferred; SkyWater
+  lists "H2 and forming gas alloy" among its furnace processes[^skw-01] but does not say where it
+  is used. The ambient, temperature and time are not public. The colours mark the type of the
+  doping, not a depth profile. The transistors' films (the spacers, the caps, the gate oxides,
+  the gate film, the re-oxidation oxide and the spacer oxide), the tips and the halo, and the
+  field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to
+  scale.
+panels:
+  - state_after: "096"
+    title: "State at this step (no drawn change)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, nsd]
+    dim_layers: [liner]

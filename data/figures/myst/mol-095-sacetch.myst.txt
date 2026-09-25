@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/mol-095-sacetch.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step three holes with sloping walls go down through a thin flat oxide and a dotted glass, two to the silicon and a shallower one in the middle to the top of the wide stack, with resist still on the surface. After it the resist is gone and the holes are unchanged.
+:width: 560px
+:name: fig-mol-095-sacetch
+
+Before, the etched holes under the contact resist; after, the resist gone and the holes clean. What this etch removes is not public: the page sets out three readings, all inferred: the thin oxide left at the bottoms of the diffusion holes, a deliberately formed oxide, or the resist and its anti-reflective coating with a clean. The figure draws the third, as the LICM1E page places the strip. The thin oxide of the first reading is already drawn cleared by the contact etch, as the LICM1E page describes it; whatever a dilute-HF dip takes from the walls is not drawn. The holes' bottoms are about 0.08 µm across in the PDK ("Standard Licon bottom CD"),[^pdk-03] not drawn to scale. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the upper panel the doped regions are not labelled either. Not to scale.
+:::
