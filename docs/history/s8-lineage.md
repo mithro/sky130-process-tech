@@ -11,7 +11,8 @@ where it came from. The processes themselves are on {ref}`history-technologies` 
 * **A 0.13 µm SONOS process.** Cypress's October 2007 announcement of its first S8 products, 4 Mbit nvSRAMs,
   calls S8 "Cypress's S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile
   memory technology". EE Times called it "0.13-micron S8 embedded-flash technology" the same
-  year.[^ew-2007-s8][^eet-2007-fablite]
+  year.[^ew-2007-s8][^eet-2007-fablite] A teardown of a PSoC 4200 chip made on S8 found it "by SEM imaging
+  to be 130nm tech".[^siliconpr0n-psoc4]
 * **Qualified at Fab 4 in 2008.** Cypress's report history dates "To qualify S8 SONOS technology and 4M
   nvSRAM devices" to November 2008, at "Cypress Minnesota CMI (Fab4)" (single source).[^qtp-113005]
 * **The PSoC process.** Cypress's 2010 report calls S8 "our 0.13-micron, nonvolatile PSoC wafer
@@ -230,3 +231,6 @@ source).[^pat-us8093128]
 [^pat-us8093128]: W. W. C. Koutny Jr. et al. (Cypress Semiconductor), US 8,093,128 B2, priority 2007-05-25.
     Shown as in force; estimated expiry 2028-10-22 (estimate from public records, not legal advice).
     <https://patents.google.com/patent/US8093128B2/en>
+[^siliconpr0n-psoc4]: Silicon Prawn wiki, *azonenberg:cypress:cy8c4245axi* (teardown of the Cypress
+    CY8C4245AXI, PSoC 4200), last modified 2025-08-04.
+    <https://siliconpr0n.org/archive/doku.php?id=azonenberg:cypress:cy8c4245axi>

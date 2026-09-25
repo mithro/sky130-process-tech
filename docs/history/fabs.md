@@ -174,8 +174,9 @@ technology (single source).[^ar-fy1998] The foundries the sources name before S8
 **Honeywell.** Cypress's 2002 and 2003 reports call the joint programme a "0.13-micron
 Silicon-On-Insulator" process in Fab 4.[^ar-fy2002][^ar-fy2003] EDN calls the resulting process
 "SOI-based, 150-nm technology" co-developed with Cypress, which "evolved from Honeywell's
-previous-generation, 0.25-micron technology".[^edn-2005-honeywell] The node therefore differs between the
-sources.
+previous-generation, 0.25-micron technology".[^edn-2005-honeywell] Semiconductor Digest reported the
+same month that Honeywell's new Minnesota foundry would make "radiation-hardened, 150nm ASICs" on SOI,
+without naming Cypress.[^sd-2005-honeywell] The node therefore differs between the sources.
 
 **Grace.** The December 2005 deal covered Cypress's PSoC, image-sensor, wireless USB and PC clock
 processes, and production was to start with "the PSoC mixed-signal array on Cypress's proprietary S4
@@ -396,3 +397,6 @@ names of the sites. Read them with these points in mind:
 [^qtp-030310]: Cypress Semiconductor, Product Qualification Report QTP 030310: *ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology*, June 2003;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download>
+[^sd-2005-honeywell]: Semiconductor Digest, *New Honeywell foundry to produce 150nm radiation-hardened
+    semiconductors*, 2005-04-28.
+    <https://sst.semiconductor-digest.com/2005/04/new-honeywell-foundry-to-produce-150nm-radiation-hardened-semiconductors/>

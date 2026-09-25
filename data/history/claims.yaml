@@ -422,11 +422,12 @@ claims:
   anchor: The node therefore differs between
   grade: conflict
   hedge: differs between
-  footnotes: [ar-fy2002, ar-fy2003, edn-2005-honeywell]
+  footnotes: [ar-fy2002, ar-fy2003, edn-2005-honeywell, sd-2005-honeywell]
   sources:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyhist-corp-2003-ar-soi-90nm, origin: cypress}
   - {id: cyx-edn-2005-honeywell-soi, origin: edn}
+  - {id: web-semidigest-honeywell-150nm-2005, origin: semidigest}
 - id: grace-deal-s4
   page: docs/history/fabs.md
   anchor: the PSoC mixed-signal array on Cypress's proprietary S4
@@ -1240,10 +1241,19 @@ claims:
 - id: s4-nv-cmos-1998
   page: docs/history/sonos-s4.md
   anchor: 'on a single die or chip'
-  grade: single-source
-  footnotes: [pat-us6207991]
+  grade: attributed
+  attribution: (patent records)
+  footnotes: [pat-us6207991, pat-us6114724]
   sources:
   - {id: pat-us6207991b1-integrated-nv-cmos-1998, origin: patent-record}
+  - {id: pat-us6114724a-nvmemory-selectgate-1998, origin: patent-record}
+- id: s4-nvsram-patent-1997
+  page: docs/history/sonos-s4.md
+  anchor: 'A non-volatile RAM cell that pairs'
+  grade: single-source
+  footnotes: [pat-us5914895]
+  sources:
+  - {id: pat-us5914895a-nvsram-1997, origin: patent-record}
 - id: s4-sonos-retention-2000
   page: docs/history/sonos-s4.md
   anchor: 'A 2000 paper by Cypress and Lehigh'
@@ -1256,10 +1266,11 @@ claims:
   page: docs/history/s8-lineage.md
   anchor: A 0.13 µm SONOS process.
   grade: corroborated
-  footnotes: [ew-2007-s8, eet-2007-fablite]
+  footnotes: [ew-2007-s8, eet-2007-fablite, siliconpr0n-psoc4]
   sources:
   - {id: cyx-ew-2007-s8-nvsram, origin: cypress}
   - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
+  - {id: teardown-siliconpr0n-cy8c4245axi, origin: siliconpr0n}
 - id: s8-qualified-2008
   page: docs/history/s8-lineage.md
   anchor: To qualify S8 SONOS technology and 4M

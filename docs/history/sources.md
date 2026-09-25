@@ -165,6 +165,10 @@ Used on {ref}`history-sonos-s4`.
 **PAT-US5844271** — R. Sethi et al. (Cypress Semiconductor), *Single layer polycrystalline silicon split-gate EEPROM cell having a buried control gate*, US 5,844,271 A, priority 1995-08-21. <https://patents.google.com/patent/US5844271A/en>
 Used on {ref}`history-sonos-s4`.
 
+(hsrc-pat-us5914895)=
+**PAT-US5914895** — F. B. Jenne (Cypress Semiconductor), *Non-volatile random access memory and methods for making and configuring same*, US 5,914,895 A, priority 1997-09-10. <https://patents.google.com/patent/US5914895A/en>
+Used on {ref}`history-sonos-s4`.
+
 (hsrc-pat-us6033991)=
 **PAT-US6033991** — K. Ramkumar et al. (Cypress Semiconductor), *Isolation scheme based on recessed LOCOS using a sloped Si etch and dry field oxidation*, US 6,033,991 A, priority 1997-09-29. <https://patents.google.com/patent/US6033991A/en>
 Used on {ref}`history-technologies`.
@@ -172,6 +176,10 @@ Used on {ref}`history-technologies`.
 (hsrc-pat-us6091129)=
 **PAT-US6091129** — J. M. Cleeves (Cypress Semiconductor), *Self-aligned trench isolated structure*, US 6,091,129 A, priority 1996-06-19. <https://patents.google.com/patent/US6091129A/en>
 Used on {ref}`history-technologies`.
+
+(hsrc-pat-us6114724)=
+**PAT-US6114724** — K. N. Ratnakumar (Cypress Semiconductor), *Nonvolatile semiconductor memory cell with select gate*, US 6,114,724 A, priority 1998-03-31. <https://patents.google.com/patent/US6114724A/en>
+Used on {ref}`history-sonos-s4`.
 
 (hsrc-pat-us6207991)=
 **PAT-US6207991** — I. Rahim (Cypress Semiconductor), *Integrated non-volatile and CMOS memories having substantially the same thickness gates and methods of forming the same*, US 6,207,991 B1, priority 1998-03-20. <https://patents.google.com/patent/US6207991B1/en>
@@ -509,9 +517,17 @@ Used on {ref}`history-fabs`, {ref}`history-products`.
 **QTP-S050001** — Cypress Semiconductor, Product Qualification Report QTP S050001: *TSMC Fab 3, 0.35um -- SMaL Camera ASIC*, June 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201028064815/https://www.cypress.com/file/94406/download>
 Used on {ref}`history-fabs`, {ref}`history-products`.
 
+(hsrc-sd-2005-honeywell)=
+**SD-2005-HONEYWELL** — Semiconductor Digest, *New Honeywell foundry to produce 150nm radiation-hardened semiconductors*, 2005-04-28. <https://sst.semiconductor-digest.com/2005/04/new-honeywell-foundry-to-produce-150nm-radiation-hardened-semiconductors/>
+Used on {ref}`history-fabs`.
+
 (hsrc-sd-2007-fab2)=
 **SD-2007-FAB2** — Semiconductor Digest, *Cypress getting rid of Round Rock, TX fab*, 2007-12-19. <https://sst.semiconductor-digest.com/2007/12/cypress-getting-rid-of-round-rock-tx-fab/>
 Used on {ref}`history-fabs`, {ref}`history-index`.
+
+(hsrc-siliconpr0n-psoc4)=
+**SILICONPR0N-PSOC4** — Silicon Prawn wiki, *azonenberg:cypress:cy8c4245axi* (teardown of the Cypress CY8C4245AXI, PSoC 4200), last modified 2025-08-04. <https://siliconpr0n.org/archive/doku.php?id=azonenberg:cypress:cy8c4245axi>
+Used on {ref}`history-s8-lineage`.
 
 (hsrc-strib-2017)=
 **STRIB-2017** — Alex Van Abbema, *Twin Cities tech executives form new company, buy Cypress chip plant in Bloomington*, Star Tribune, 2017-03-31. <https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063>

@@ -123,8 +123,11 @@ not what a production process used.
 
 * **1995.** A "fast, fieldless flash memory cell" and a single-poly split-gate EEPROM cell
   (patent records).[^pat-us5648669][^pat-us5844271]
+* **1997.** A non-volatile RAM cell that pairs "non-volatile and volatile storage elements", an nvSRAM
+  built on floating gates, years before Cypress bought Simtek (single source).[^pat-us5914895]
 * **1998.** A method to form non-volatile memory and a CMOS device "on a single die or chip" with gates
-  of the same thickness (single source).[^pat-us6207991]
+  of the same thickness, and an EEPROM cell with "a floating gate transistor and a select transistor"
+  (patent records).[^pat-us6207991][^pat-us6114724]
 
 The first Cypress SONOS cell patent found was filed in 1999 (below). A 2000 paper by Cypress and Lehigh
 University authors studies the "charge retention of scaled SONOS nonvolatile memory devices at elevated
@@ -248,3 +251,8 @@ details, and what changed, are on {ref}`history-s8-lineage`.
 [^yang-2000]: Y. Yang and M. H. White (Cypress Semiconductor and Lehigh University), *Charge retention
     of scaled SONOS nonvolatile memory devices at elevated temperatures*, Solid-State Electronics 44 (6),
     pp. 949–958, 2000, DOI 10.1016/S0038-1101(00)00012-5. <https://doi.org/10.1016/s0038-1101(00)00012-5>
+[^pat-us5914895]: F. B. Jenne (Cypress Semiconductor), *Non-volatile random access memory and methods
+    for making and configuring same*, US 5,914,895 A, priority 1997-09-10.
+    <https://patents.google.com/patent/US5914895A/en>
+[^pat-us6114724]: K. N. Ratnakumar (Cypress Semiconductor), *Nonvolatile semiconductor memory cell with
+    select gate*, US 6,114,724 A, priority 1998-03-31. <https://patents.google.com/patent/US6114724A/en>
