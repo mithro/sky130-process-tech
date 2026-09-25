@@ -105,7 +105,7 @@ generation table, has no via columns.[^pdk-06]
 
 `gds_layers.csv` gives `cviam3` a `mask` purpose at 50:0 ("Via 3
 mask") and a `drawing` purpose at 112:20, a layer number
-that also carries the `cmm4` waffle drop at 112:4. The drawn layer is
+that also carries the `cmm4` waffle drop at 112:4.[^pdk-06] The drawn layer is
 `via3` at 70:44, "Contact from metal 3 to metal 4".[^pdk-06] The pairing
 rests on the names and descriptions, as on the
 {ref}`masks index <masks-index>`, and the PDK publishes no operation from
