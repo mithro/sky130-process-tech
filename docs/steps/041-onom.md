@@ -134,8 +134,8 @@ the nitride sidewall, so the edge must lie on field oxide or on
 silicon that becomes part of the select transistor's structure, never
 inside a logic channel. The "(poly and diff) may not straddle
 tunm" rule (tunm.5)[^pdk-periph] already guarantees this for the window.
-The Cypress integration patent makes the same point about its own
-window, in the collapsed note below.
+The Cypress integration patent, which may still be in force, is cited
+here too; the passage is in the collapsed note below.
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 The ONO is formed and patterned, then "the logic MOS gate insulator" is
