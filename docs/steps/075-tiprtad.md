@@ -10,6 +10,21 @@
 | **Previous step** | {ref}`LDASTIS <step-074>` |
 | **Next step** | {ref}`SPNIT <step-076>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** anneals the module's five tip and halo implants, regrowing
+  the amorphised silicon and activating the dopants with little junction
+  movement.
+* **Why:** unannealed tips and halos would diffuse most in the slow, warm
+  spacer deposition that follows.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** AG Associates Heatpulse 8808 — strong (tool);
+  inference (assignment).[^skw-01]
+* **Not public:** the temperature, the time (soak or spike) and the
+  ambient (→ Open questions).
+:::
+
 ## What this step is
 
 `TIPRTAD` is the rapid thermal anneal that closes the tip module. Five
@@ -18,18 +33,20 @@ standard arsenic tip {ref}`ASTI <step-065>` and its boron {term}`halo`
 {ref}`BHI <step-066>`, the tilted high-voltage tip
 {ref}`HVASTI <step-069>`, and the lightly doped {term}`SONOS` tip
 {ref}`LDASTI <step-072>` with its halo {ref}`LDBHI <step-073>` — and
-none has been annealed. `TIPRTAD` heats the wafer — in an inert
-ambient for seconds on the industry-typical recipe described below;
-SKY130's own conditions are not public — to a temperature high enough
-to regrow the arsenic-amorphised silicon, put the arsenic and boron
-onto lattice sites, and dissolve the implant damage, while moving the
-junctions as little as possible. This reference describes it as a
-rapid thermal anneal for tip activation, as it does the later
-{ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>`; the public
-evidence for an RTA is set out below (SkyWater lists a single-wafer
-lamp RTA,[^skw-01] and shallow extensions call for one[^stolk-1997]).
-After it the {term}`spacer` nitride is deposited at
-{ref}`SPNIT <step-076>`.
+none has been annealed.
+
+`TIPRTAD` heats the wafer to a temperature high enough to regrow the
+arsenic-amorphised silicon, put the arsenic and boron onto lattice
+sites, and dissolve the implant damage, while moving the junctions as
+little as possible. It does so in an inert ambient for seconds on the
+industry-typical recipe described below; SKY130's own conditions are
+not public.
+
+This reference describes it as a rapid thermal anneal for tip activation, as
+it does the later {ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>`; the
+public evidence for an RTA is set out below (SkyWater lists a single-wafer
+lamp RTA,[^skw-01] and shallow extensions call for one[^stolk-1997]). After
+it the {term}`spacer` nitride is deposited at {ref}`SPNIT <step-076>`.
 
 :::{figure} /_static/figures/sd-075-tiprtad.svg
 :alt: One enlarged cross-section of one transistor edge. A capped gate stands on a thin oxide over the silicon; beside it a shallow doped layer lies in the silicon, and a hatched region lies under that layer and reaches a short way under the gate edge. The drawing is the same as the state before the step.
@@ -49,14 +66,14 @@ the one with the shallowest, most abrupt profiles to preserve.
 `TIPRTAD` is an {ref}`Anneal / thermal processing <category-anneal>`
 step of the *implant activation* type — a single-wafer, lamp-heated
 {term}`RTA` — in its most demanding form: an {term}`extension` anneal, in
-which the target is maximum activation with minimum diffusion. The
-category page sets out the compromise: "the highest activation is
+which the target is maximum activation with minimum diffusion.
+
+The category page sets out the compromise: "the highest activation is
 obtained by annealing hot and fast",[^gibbons-1972][^nobili-1983] and
-transient enhanced diffusion
-"is worst for slow, low-temperature anneals because the damage
-dissolves while the dopant is still mobile"; the resolution "is the
-RTA: seconds at 1000–1100 °C, or a 'spike' anneal with essentially
-zero soak time".[^stolk-1997]
+transient enhanced diffusion "is worst for slow, low-temperature anneals
+because the damage dissolves while the dopant is still mobile".[^stolk-1997]
+The resolution "is the RTA: seconds at 1000–1100 °C, or a 'spike' anneal
+with essentially zero soak time".[^stolk-1997]
 
 ## Why this step exists
 
@@ -64,41 +81,45 @@ Three things depend on annealing the tips now, before the spacer, and
 on doing it fast:
 
 * **Activation and regrowth.** Implanted dopant is inactive until the
-  lattice is restored;[^gibbons-1972][^txt-01] the arsenic tip, at a
-  dose that amorphises the surface (typical),[^wiki-implant] regrows by
-  {term}`solid-phase epitaxy` from the undamaged substrate at 500–600 °C with
-  the arsenic incorporated substitutionally,[^csepregi-1978] and the
-  boron halos in crystalline or regrown silicon need 800–1000 °C-class
-  temperatures to dissolve their defect clusters.[^gibbons-1972] Above
-  its solubility arsenic clusters and deactivates on
-  cooling,[^nobili-1983] so the anneal is designed to activate as much
-  as possible and then quench.
+  lattice is restored.[^gibbons-1972][^txt-01]
+
+  The arsenic tip, at a dose that amorphises the surface
+  (typical),[^wiki-implant] regrows by {term}`solid-phase epitaxy` from the
+  undamaged substrate at 500–600 °C with the arsenic incorporated
+  substitutionally.[^csepregi-1978] The boron halos in crystalline or
+  regrown silicon need 800–1000 °C-class temperatures to dissolve their
+  defect clusters.[^gibbons-1972] Above its solubility arsenic clusters and
+  deactivates on cooling,[^nobili-1983] so the anneal is designed to
+  activate as much as possible and then quench.
 * **Junction position.** ITRS 2001 asks for a 27–45 nm extension
   junction with 7.2 nm/decade lateral abruptness for a 2001-year MPU
-  whose physical gate length is 65 nm; its rule Xj = 0.55 × physical
-  gate length would put SKY130's tip nearer 80 nm for its 0.15 µm drawn
-  gate (our reading; SKY130's physical gate length is not
-  published).[^itrs-01] The PDK publishes no depth for the tip, only the
-  0.01 µm in the "Vertical Space" column of its "N Tip (As)" row, which
-  we read as the lateral extent.[^pdk-03] The halo boron is the mobile species: the
-  interstitials released as damage anneals[^eaglesham-1994] and as
-  arsenic deactivates[^rousseau-1994] drive its transient enhanced
-  diffusion,[^michel-1987][^stolk-1997] and the boron then smears
-  into the channel and the tip. Agarwal and co-workers showed that
-  faster ramps and shorter soaks — the *spike* anneal — give shallower
-  boron junctions at equal activation,[^agarwal-1999][^agarwal-1998]
-  and Shishiguchi's group demonstrated 400 °C/s ramps for the same
-  purpose.[^shishiguchi-1997] Jones and Ishida's review covers the
-  whole trade.[^rev-05]
+  whose physical gate length is 65 nm.[^itrs-01]
+
+  Its rule Xj = 0.55 × physical gate length would put SKY130's tip nearer 80
+  nm for its 0.15 µm drawn gate (our reading; SKY130's physical gate length
+  is not published).[^itrs-01] The PDK publishes no depth for the tip, only
+  the 0.01 µm in the "Vertical Space" column of its "N Tip (As)" row, which
+  we read as the lateral extent.[^pdk-03]
+
+  The halo boron is the mobile species: the interstitials released as damage
+  anneals[^eaglesham-1994] and as arsenic deactivates[^rousseau-1994] drive
+  its transient enhanced diffusion,[^michel-1987][^stolk-1997] and the boron
+  then smears into the channel and the tip. Agarwal and co-workers showed
+  that faster ramps and shorter soaks — the *spike* anneal — give shallower
+  boron junctions at equal activation,[^agarwal-1999][^agarwal-1998] and
+  Shishiguchi's group demonstrated 400 °C/s ramps for the same
+  purpose.[^shishiguchi-1997] Jones and Ishida's review covers the whole
+  trade.[^rev-05]
 * **Before the spacer.** The spacer film of {ref}`SPNIT <step-076>` is
   deposited hot for tens of minutes (a furnace {term}`LPCVD` nitride is
-  typical of the era).[^txt-01] Unannealed tips and halos would spend
-  that time in exactly the slow, warm regime where {term}`TED` is
-  worst;[^stolk-1997] annealing first removes the damage so that the
-  spacer deposition moves nothing. IBM's {term}`spike-anneal <spike anneal>` patent describes
-  the same logic — extensions activated, then halos "implanted and
-  activated preferably using spike annealing to prevent their
-  diffusion".[^pat-spike-ibm]
+  typical of the era).[^txt-01]
+
+  Unannealed tips and halos would spend that time in exactly the slow, warm
+  regime where {term}`TED` is worst;[^stolk-1997] annealing first removes
+  the damage so that the spacer deposition moves nothing. IBM's
+  {term}`spike-anneal <spike anneal>` patent describes the same logic —
+  extensions activated, then halos "implanted and activated preferably using
+  spike annealing to prevent their diffusion".[^pat-spike-ibm]
 
 Without `TIPRTAD` the tips would be annealed only at
 {ref}`RTAD <step-088>` after a spacer deposition, with deeper, less
@@ -107,25 +128,28 @@ short-channel control and drive current.
 
 ## How it is typically performed
 
-An industry-generic extension anneal for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic extension anneal for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
-  argon; {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C
-  for not more than a few seconds" with "in situ pyrometry to effect
-  real time control".[^wiki-rtp] A small oxygen addition is sometimes
-  used to suppress dopant loss and surface pitting; Applied Materials
-  patented an "optimal spike anneal ambient" for exactly this
-  question.[^pat-spike-amat-ambient] The {term}`screen oxide` from
-  {ref}`IOX45 <step-063>`, if retained through
+  argon.
+
+  {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C for
+  not more than a few seconds" with "in situ pyrometry to effect real time
+  control".[^wiki-rtp] A small oxygen addition is sometimes used to suppress
+  dopant loss and surface pitting; Applied Materials patented an "optimal
+  spike anneal ambient" for exactly this question.[^pat-spike-amat-ambient]
+  The {term}`screen oxide` from {ref}`IOX45 <step-063>`, if retained through
   {ref}`LDASTIS <step-074>`, caps the surface.
 * **Temperature and time.** 950–1050 °C for seconds, or a spike to
   about 1000–1100 °C with no soak, is the 130 nm-era
-  choice;[^txt-05][^txt-10][^fiory-2002] Agarwal's spike-anneal study
-  used ramp-up rates from a few tens to hundreds of degrees per
-  second,[^agarwal-1998] and Applied Materials' later patent describes
-  sharpening the spike by faster cool-down.[^pat-spike-amat] The
-  Heatpulse 8800-class tools ramp at "1 – 180°C per second".[^ag-8800]
+  choice.[^txt-05][^txt-10][^fiory-2002]
+
+  Agarwal's spike-anneal study used ramp-up rates from a few tens to
+  hundreds of degrees per second,[^agarwal-1998] and Applied Materials'
+  later patent describes sharpening the spike by faster
+  cool-down.[^pat-spike-amat] The Heatpulse 8800-class tools ramp at
+  "1 – 180°C per second".[^ag-8800]
 * **Sequence.** Pre-anneal clean at {ref}`LDASTIS <step-074>`; load;
   purge; ramp; soak or spike; ramp-down under lamp control; unload.
 * **Control.** Pyrometer emissivity calibration against
@@ -146,25 +170,30 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **AG Associates Heatpulse 8808.** SkyWater's facilities page lists
-  under RTA "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] —
-  a single-wafer lamp RTA with the inert ambients and the temperature
-  reach an extension anneal needs. Strength: **strong** for the tool
-  (SkyWater statement); the assignment to `TIPRTAD` is an
-  **inference** from the shallow-junction anneal this step needs and
-  from the tool being the only
-  RTA on the list. Reseller documentation for the Heatpulse 8800/8808
-  family gives a "Recommended steady-state temperature range: 400 –
-  1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
-  14 lamps" with "10-zone lamp control", and "Implant annealing" among
-  the applications;[^ag-8800] the family specification PDF's Heatpulse
-  8108 section gives the same 400–1200 °C range, a programmable
-  1–180 °C/s ramp-up and a maximum ramp-down of 150 °C/s (its Heatpulse
-  4100 section differs: 400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
+* **AG Associates Heatpulse 8808**
+  - *SkyWater says:* facilities page lists under RTA "Ag Heatpulse 8808
+    NH3, Ar, N2, O2, up to 1200C".[^skw-01]
+  - *Tool exists:* **strong** for the tool (SkyWater statement).
+  - *Runs this step:* the assignment to `TIPRTAD` is an **inference**
+    from the shallow-junction anneal this step needs and from the tool
+    being the only RTA on the list.
+
+  It is a single-wafer lamp RTA with the inert ambients and the
+  temperature reach an extension anneal needs.
+
+  Reseller documentation for the Heatpulse 8800/8808 family gives a
+  "Recommended steady-state temperature range: 400 –
+  1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of 14
+  lamps" with "10-zone lamp control", and "Implant annealing" among the applications.[^ag-8800]
+  The family specification PDF's Heatpulse 8108 section gives the same
+  400–1200 °C range, a programmable 1–180 °C/s ramp-up and a maximum
+  ramp-down of 150 °C/s (its Heatpulse 4100 section differs: 400–1300 °C,
+  10–200 °C/s ramp-up).[^ag-8108]
 * **Aviza furnaces** ("Ar anneal to 1150C", "N2 anneal to
   1150C")[^skw-01] exist on site but are, for the reasons above, an
-  unlikely home for a tip anneal. Strength: strong for existence; weak
-  for assignment.
+  unlikely home for a tip anneal.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak for assignment.
 
 ## Resources required
 
@@ -187,8 +216,8 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 * Anneals the tips and halos of {ref}`ASTI <step-065>`,
   {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`,
   {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>`.
-* Other RTAs: {ref}`RTAI <step-034>` before, {ref}`RTAD <step-088>`
-  and {ref}`RTAD2 <step-092>` after.
+* Same category: other RTAs, {ref}`RTAI <step-034>` before,
+  {ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>` after.
 * Category page: {ref}`Anneal / thermal processing <category-anneal>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -273,16 +302,17 @@ An industry-generic extension anneal for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* The SKY130 anneal temperature, time (soak or spike) and ambient are
-  not public.
-* Whether the Heatpulse 8808 runs this step is inferred from the
-  shallow-junction anneal this step needs and the tool being the only
-  RTA on SkyWater's list.[^skw-01]
-* Whether the screen oxide is present during the anneal depends on the
-  clean at {ref}`LDASTIS <step-074>`, which is not public.
-* The reseller PDF cited for the Heatpulse family[^ag-8108] documents
-  the Heatpulse 4100 and 8108, not the 8808 itself; the 8808's own
-  figures come from the reseller's product page.[^ag-8800]
+* **Anneal conditions.** The SKY130 anneal temperature, time (soak or spike)
+  and ambient are not public.
+* **Heatpulse 8808 assignment.** Whether the Heatpulse 8808 runs this step
+  is inferred from the shallow-junction anneal this step needs and the tool
+  being the only RTA on SkyWater's list.[^skw-01]
+* **Screen oxide.** Whether the screen oxide is present during the anneal
+  depends on the clean at {ref}`LDASTIS <step-074>`, which is not public.
+* **Heatpulse 8808 figures.** The reseller PDF cited for the Heatpulse
+  family[^ag-8108] documents the Heatpulse 4100 and 8108, not the 8808
+  itself; the 8808's own figures come from the reseller's product
+  page.[^ag-8800]
 
 <!-- footnotes -->
 

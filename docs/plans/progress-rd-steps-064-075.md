@@ -620,7 +620,7 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
 
 ### 074 LDASTIS — done
 
-* **Lead.** First sentence (32 w) split before ", and cleans the wafer" ("It cleans the wafer."); now 25
+* **Lead.** First sentence (32 w) split before ", and cleans the wafer" ("It cleans the wafer."); now 27
   words. Lead 83 words.
 * **R-SENTENCE.** After the figure: the 47-word resist sentence split at ", and it has received" ("It has
   received a moderate arsenic dose …"); "we infer" governed the first clause only. No H3 (72 words).
@@ -656,3 +656,58 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   dose; the anneal / metal contamination, which had no marker of its own in the base; the ash pieces;
   SC-1/SC-2 / DNS); glance and labels.
 * **Caps**: para > 100 0 → 0; item > 60 2 → 0; sentence > 45 3 → 0.
+
+### 075 TIPRTAD — done
+
+* **Lead.** The 162-word one-paragraph lead: its 55-word sentence "`TIPRTAD` heats the wafer — in an
+  inert ambient for seconds on the industry-typical recipe described below; SKY130's own conditions are
+  not public — to a temperature high enough to …" becomes "`TIPRTAD` heats the wafer to a temperature
+  high enough to …, while moving the junctions as little as possible. It does so in an inert ambient for
+  seconds on the industry-typical recipe described below; SKY130's own conditions are not public."
+  (R-SENTENCE step 1; "It does so" is the added subject and verb; the hedge moves with its clause, word
+  for word). The lead is split into **three** paragraphs (what arrives; what the anneal does, with its
+  hedge; the RTA evidence and what follows). Two paragraphs would leave one at 107–114 words, over the
+  100-word paragraph cap; the base lead is 162 words, over §1's 120, so the two-paragraph target cannot
+  be met without dropping words (see Guide problems). First sentence 11 words.
+* **R-H3 not applied.** The passage after the figure is 30 words.
+* **R-CATEGORY.** Classification sentence (35 w, its dash pair kept) alone; the category page's account
+  (general, not specific to this step) as a plain second paragraph, its 55-word sentence split at the
+  semicolon ("The resolution "is the RTA: …"".[^stolk-1997]); `[^stolk-1997]` **repeated** after the TED
+  quotation, which it covered in the base (declared).
+* **R-PARA step 4 (Why items).** "Activation and regrowth" (81 w): lead split at the semicolon; the arsenic
+  sentence split before ", and the boron halos" ("The boron halos … need 800–1000 °C-class
+  temperatures …[^gibbons-1972]"), each piece with its own marker. "Junction position" (163 w): lead =
+  the ITRS values with `[^itrs-01]` **repeated** (split at the semicolon; declared); continuation 1 "Its
+  rule Xj = 0.55 × physical gate length would put SKY130's tip nearer 80 nm … (our reading; …)" (a
+  single-operation estimate, inline, R-DERIVATION step 6; the hedge stays with it) and the PDK sentence;
+  continuation 2 the halo-boron TED, Agarwal, Shishiguchi and Jones/Ishida. "Before the spacer" (78 w):
+  continuation from "Unannealed tips and halos …".
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4 (How items).** "Tool and ambient" (73 w): split at the semicolon; continuation from
+  "RTP "heats …"". "Temperature and time" (62 w): split at the semicolon; continuation from "Agarwal's
+  spike-anneal study …". Two lines re-wrapped as in the base ("1 – 180°C" on one line; "400 –" at a line
+  end) because `check_preserved` reads an en-dash range on one line as one token and reported a LOST /
+  ADDED number pair for the same text.
+* **R-TOOLS.** Heatpulse 8808: *SkyWater says:* "facilities page lists under RTA "…"" (the 034 form);
+  *Tool exists:*, *Runs this step:* (the reason refers to "the only RTA on the list", which is above it);
+  the gloss "— a single-wafer lamp RTA with the inert ambients and the temperature reach an extension
+  anneal needs" as the continuation "It is a single-wafer lamp RTA …" ("It is" added); the reseller
+  sentence (73 w) split at its semicolon into two continuation sentences, each with its own marker.
+  Aviza: pilot form (the head's quotations and our "an unlikely home for a tip anneal" are one sentence).
+  Two tools: no recap table.
+* **R-RELATED.** "Other RTAs:" → "Same category: other RTAs, …" (Anneal category). "Anneals the tips and
+  halos of …" keeps its wording.
+* **R-OPENQ.** Labels "Anneal conditions", "Heatpulse 8808 assignment", "Screen oxide", "Heatpulse 8808
+  figures"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and "Before the spacer"; Public numbers "none published for
+  SKY130" (the lead and Open questions say the conditions are not public); tool line; Not public from
+  Open questions 1.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `itrs-01`, `stolk-1997` (repeats above),
+  `skw-01` (glance); numbers 8808 (glance and the two OQ labels, the bullets' own words); hedges
+  "inference", "not public" and identifier SKY130 (glance). Declared
+  `--allow-added markers,numbers,hedges,identifiers`: clean.
+* **Marker coverage.** 18 flags, all read: split pieces each keeping their own markers (the category
+  quotations; the activation pieces; ITRS / the rule; the ambient / RTP quotation, where the first
+  clause is the industry-generic description under the italic scope sentence; temperature / Agarwal; the
+  two reseller sentences); glance and labels.
+* **Caps**: para > 100 1 → 0; item > 60 6 → 0; sentence > 45 6 → 0.
