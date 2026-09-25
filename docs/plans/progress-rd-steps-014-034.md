@@ -64,6 +64,32 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 020-lvtpi.md — done (two in-force patent dropdowns; content untouched)
+
+Rules applied: R-PARA (lead paragraph split, first sentence trimmed to satisfy the ≤25-word
+first-sentence rule; the "Why this step exists" text split into three paragraphs at its
+mechanism/ITRS-illustration/HVTPM-reading seams; the Species and Energy/dose items → lead +
+indented continuation, moving each long parenthetical hedge to its own sentence per §1's
+"≥12-word parenthetical becomes its own sentence" rule), R-SENTENCE (em-dash/semicolon splits
+throughout, including the test-tile threshold paragraph), R-HEDGE step 1 (italic lead-in),
+R-TOOLS (2 "Strength:" bullets split, no recap table), R-RELATED (`Previous:`/`Next:` split;
+`Same category:`, `Feeds:` labels), R-OPENQ (bold labels on all four bullets), R-GLANCE (box
+last; "Public numbers" uses the measured SKY130 test-tile PMOS thresholds).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 3 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 2 → 0; sentences > 45 words 6 → 0; table cells > 25
+words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/020-lvtpi.md`:
+`quotes`, `hedges` and the plain `numbers` category (condition (a)) all show no LOST. The only
+failure is `LOST number_order (not a clean regroup)` for four tuples — spot-checked as the
+familiar Guide-problem-11 pattern (single-number strandings: one of two "8250" mentions after
+the R-TOOLS bullet-head/sub-bullet split, the lone "−0.1" in "V_DS = −0.1 V" once split into its
+own sentence, several lone "⁺" superscripts) plus clean multi-way regroups of the Species and
+Energy/dose sentences. All other checkers pass; `-W` build clean. Screenshots (desktop + 400
+px) read cleanly top to bottom, including both in-force dropdown summary lines and every
+R-TOOLS/R-OPENQ block.
+
 ### 019-nwi2.md — done (lightest page in the batch so far)
 
 Rules applied: R-PARA (lead paragraph split at its inference-vs-mechanism seam), R-SENTENCE

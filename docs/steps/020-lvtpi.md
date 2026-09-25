@@ -10,16 +10,34 @@
 | **Previous step** | {ref}`NWI2 <step-019>` |
 | **Next step** | {ref}`LVTPIS <step-021>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants the PMOS channel through the reused `NWM` resist,
+  right after the two N-well implants.
+* **Why:** sets the PMOS threshold independently of the N-well's
+  buried profile.
+* **Public numbers:** measured standard-PMOS threshold magnitude
+  1.065 V at 7/8 µm, 0.798 V at 7/0.15 µm (our
+  extraction).[^raw-data-lv-mosfets]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** the actual species, energy and dose (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `LVTPI` is, in the sequence this reference describes, the third and last implant
-placed through the N-well resist of {ref}`NWM <step-017>`, after the two
-well implants {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>`. Where
-those set the buried profile of the N-well, `LVTPI` is a low-energy
+placed through the N-well resist of {ref}`NWM <step-017>`. It follows
+the two well implants {ref}`NWI <step-018>` and {ref}`NWI2 <step-019>`.
+Where those set the buried profile of the N-well, `LVTPI` is a low-energy
 *channel* implant that sets the surface doping under the future PMOS
 gates — that is, the PMOS threshold voltage (inference, on the
 arrangement of the IBM patent below). In this reference it is labelled
-"Low V P-channel implant". Because it shares the
+"Low V P-channel implant".
+
+Because it shares the
 N-well window, it reaches every N-well region on the wafer: the 1.8 V
 PMOS, the 5 V PMOS, the N-well rings and the drain extensions alike,
 unless the {term}`reticle` is generated differently for some of them (not
@@ -55,16 +73,20 @@ The PMOS threshold must be set independently of the well profile. The
 buried N-well peak of {ref}`NWI <step-018>` is placed deep for latch-up
 and {term}`punch-through` reasons and leaves the surface only lightly doped, so
 a shallow channel implant sets the surface concentration to the value
-that gives the wanted |{term}`Vt`| — an n-type dose that raises it under a p⁺
+that gives the wanted |{term}`Vt`|.
+
+This is an n-type dose that raises it under a p⁺
 gate, or, under the n⁺ gate the gate pages infer for SKY130
 ({ref}`P1I <step-050>`), a p-type dose that {term}`counter-dopes <counter-doping>` the surface of
 a {term}`buried-channel device <buried-channel PMOS>`. In the body-effect expression γ ∝ √N,[^wiki-vt]
 and multi-Vt CMOS is made by "altering the concentration of dopant atoms
-in the channel region beneath the gate oxide".[^wiki-mtcmos] The 2001
+in the channel region beneath the gate oxide".[^wiki-mtcmos]
+
+The 2001
 ITRS FEP table gives, as illustration of the magnitudes involved, a
 "Uniform channel concentration … for Vt=0.4" of 0.8–1.5 × 10¹⁸ cm⁻³ for
 the 2001 high-performance node and a "Retrograde channel depth" of
-21–30 nm[^itrs-01] — SKY130's 1.8 V devices are a low-power,
+21–30 nm.[^itrs-01] SKY130's 1.8 V devices are a low-power,
 longer-channel design and will not match those numbers, but the order of
 magnitude is the same.
 
@@ -74,43 +96,49 @@ from it — `pfet_01v8_hvt` by the additional implants of
 {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>` under
 {ref}`HVTPM <step-022>`, and `pfet_01v8_lvt` through the `lvtn` blocking
 layer[^pdk-07][^pdk-periph] (see {ref}`LVTNM <step-014>`). This is one
-reading of the `HVTPM` opening; the {ref}`HVTPM <step-022>` page sets
+reading of the `HVTPM` opening. The {ref}`HVTPM <step-022>` page sets
 out a second reading of the `chvtpm` checks and of the public render
 derivation, under which that opening instead covers low-voltage N-well
 outside `lvtn`, `PCHI`/`PNCHI` reach every standard PMOS, and they —
-not `LVTPI` — would be the baseline; which is right is not
+not `LVTPI` — would be the baseline. Which is right is not
 public.[^pdk-errors]
 
 In the published test-tile measurements the standard PMOS has a
-threshold magnitude of 1.065 V at 7/8 µm and 0.798 V at 7/0.15 µm
-(maximum-transconductance extrapolation at V_DS = −0.1 V, less half
-the drain bias; our extraction from the published measurements),
+threshold magnitude of 1.065 V at 7/8 µm and 0.798 V at 7/0.15 µm,
 within 0.02 V of the PDK's e-test nominals of −1.050 V and
-−0.781 V.[^raw-data-lv-mosfets][^pdk-07] The measurements show where
+−0.781 V.[^raw-data-lv-mosfets][^pdk-07] This is by
+maximum-transconductance extrapolation at V_DS = −0.1 V, less half
+the drain bias (our extraction from the published measurements). The
+measurements show where
 the baseline threshold lies, not which implant sets it.
 
 ## How it is typically performed
 
-An industry-generic PMOS threshold implant for a 200 mm, 130 nm-era
-fab (SKY130 values are not public):
+*An industry-generic PMOS threshold implant for a 200 mm, 130 nm-era
+fab (SKY130 values are not public):*
 
 * **Species.** If, as the gate pages infer ({ref}`P1I <step-050>`),
   SKY130 uses n⁺ poly on the PMOS, the baseline threshold implant is a
-  *p-type* counter-doping (boron or BF₂) that brings a buried-channel
-  PMOS from the roughly −1.2 V that an uncompensated n⁺-gate PMOS of
-  this oxide thickness and well doping would show (our estimate from
-  the n⁺-gate work-function shift of about one band gap; not a
-  published SKY130 value)[^taur-2009] towards the
-  PDK's −1.05 V long-channel value;[^pdk-07] if the gate were p⁺, an
-  *n-type* species (arsenic or phosphorus) would set the threshold
-  instead — the Round Rock/Micron patent uses "an implant of
-  Arsenic",[^pat-vt-rrr] IBM 50 keV phosphorus at
+  *p-type* counter-doping (boron or BF₂).
+
+  That brings a buried-channel PMOS from the roughly −1.2 V that an
+  uncompensated n⁺-gate PMOS of this oxide thickness and well doping
+  would show towards the PDK's −1.05 V long-channel
+  value.[^pdk-07] This is our estimate from the n⁺-gate work-function
+  shift of about one band gap; it is not a published SKY130
+  value.[^taur-2009]
+
+  If the gate were p⁺, an *n-type* species (arsenic or phosphorus)
+  would set the threshold instead. The Round Rock/Micron patent uses
+  "an implant of Arsenic",[^pat-vt-rrr] IBM 50 keV phosphorus at
   5 × 10¹¹ cm⁻².[^pat-well-ibm] Which SKY130 uses is not public.
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻² are typical for
-  threshold adjusts (category page; an LSI Logic patent gives 1 × 10¹²–1
-  × 10¹³ cm⁻² for the boron equivalent,[^pat-vt-lsi] an AMD patent
-  1.0–2.5 × 10¹³ cm⁻² for a laterally doped channel implant made after
-  gate formation, self-aligned to the gate pillars[^pat-vt-amd]).
+  threshold adjusts (category page).
+
+  An LSI Logic patent gives 1 × 10¹²–1
+  × 10¹³ cm⁻² for the boron equivalent,[^pat-vt-lsi] and an AMD patent
+  gives 1.0–2.5 × 10¹³ cm⁻² for a laterally doped channel implant made
+  after gate formation, self-aligned to the gate pillars.[^pat-vt-amd]
 * **Tilt and twist.** 7° with twist;[^wiki-implant][^txt-02] the implant
   is symmetric, so no rotation is needed.
 * **{term}`Screen oxide <screen oxide>`.** Through the pad oxide that a Cypress patent,
@@ -143,16 +171,18 @@ it.[^pat-03]
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current** — "B11, BF2, As, ESC chuck, E shower,
-  1e11 to 1e14, 0-60 deg tilt":[^skw-01] boron and BF₂ (the species of
-  the n⁺-gate reading) and arsenic (of the p⁺-gate reading) are all
-  available and the dose window fits. Strength: **strong** for the tool;
-  assignment is an **inference**. Note that phosphorus is *not* in the
-  8250's public species list.
-* **Axcelis GSD high-current/high-energy implanter** — "B11, BF2, P,
-  As, 10-3000kev"[^skw-01] (the entry whose dose range starts below the
-  Hi dose entry's 5e12) could run either species. Strength: strong for
-  existence.
+* **Axcelis 8250 medium-current**
+  - *SkyWater says:* lists "B11, BF2, As, ESC chuck, E shower, 1e11 to
+    1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* strong — boron and BF₂ (the species of the n⁺-gate
+    reading) and arsenic (of the p⁺-gate reading) are all available
+    and the dose window fits. Note that phosphorus is *not* in the
+    8250's public species list.
+  - *Runs this step:* inference.
+* **Axcelis GSD high-current/high-energy implanter**
+  - *SkyWater says:* lists "B11, BF2, P, As, 10-3000kev" (the entry
+    whose dose range starts below the Hi dose entry's 5e12).[^skw-01]
+  - *Tool exists:* strong for existence; could run either species.
 
 ## Resources required
 
@@ -165,13 +195,13 @@ it.[^pat-03]
 
 ## Related steps and cross-references
 
-* Previous: {ref}`NWI2 <step-019>`; next: {ref}`LVTPIS <step-021>`
-  (strip of the N-well resist).
-* Threshold companions: {ref}`LVTNI <step-015>` (NMOS low-Vt),
-  {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>` (PMOS high-Vt),
-  {ref}`NCHI <step-045>` (N-channel baseline).
-* Activated at {ref}`RTAI <step-034>`; the PMOS gate oxide grows at
-  {ref}`GOX100 <step-043>`/{ref}`LVGOX <step-047>`.
+* Previous: {ref}`NWI2 <step-019>`.
+* Next: {ref}`LVTPIS <step-021>` (strip of the N-well resist).
+* Same category: threshold companions — {ref}`LVTNI <step-015>` (NMOS
+  low-Vt), {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>` (PMOS
+  high-Vt), {ref}`NCHI <step-045>` (N-channel baseline).
+* Feeds: activated at {ref}`RTAI <step-034>`; the PMOS gate oxide
+  grows at {ref}`GOX100 <step-043>`/{ref}`LVGOX <step-047>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -263,22 +293,23 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The step list used in this reference does not explain "Low V"; we
-  read the step as the baseline PMOS channel implant for all N-wells,
-  following the arrangement of the IBM retrograde-well
-  patent.[^pat-well-ibm] Whether the implant also reaches the 5 V PMOS
-  regions is not stated publicly.
-* Species (boron or BF₂ versus arsenic or phosphorus), energy and dose
-  are not public.
-* SKY130's PMOS gate is read on the gate pages as n⁺ poly
-  (buried-channel PMOS), inferred from the PDK's "N+ doped gate poly",
-  the absence of a P⁺ poly mask, the capped gate and the −1.05 V
-  long-channel threshold; the species reading above follows from that
-  inference.
-* Whether `PCHI`/`PNCHI` reach only the `hvtp` devices or every
-  low-voltage N-well outside `lvtn` — and hence whether `LVTPI` is the
-  baseline PMOS implant or an increment over it — turns on the reading
-  of the `chvtpm` checks discussed on {ref}`HVTPM <step-022>`.[^pdk-errors]
+* **"Low V" naming.** The step list used in this reference does not
+  explain "Low V"; we read the step as the baseline PMOS channel
+  implant for all N-wells, following the arrangement of the IBM
+  retrograde-well patent.[^pat-well-ibm] Whether the implant also
+  reaches the 5 V PMOS regions is not stated publicly.
+* **Species, energy and dose.** Species (boron or BF₂ versus arsenic
+  or phosphorus), energy and dose are not public.
+* **Gate polarity inference.** SKY130's PMOS gate is read on the gate
+  pages as n⁺ poly (buried-channel PMOS), inferred from the PDK's "N+
+  doped gate poly", the absence of a P⁺ poly mask, the capped gate and
+  the −1.05 V long-channel threshold. The species reading above
+  follows from that inference.
+* **Baseline vs. increment.** Whether `PCHI`/`PNCHI` reach only the
+  `hvtp` devices or every low-voltage N-well outside `lvtn` — and
+  hence whether `LVTPI` is the baseline PMOS implant or an increment
+  over it — turns on the reading of the `chvtpm` checks discussed on
+  {ref}`HVTPM <step-022>`.[^pdk-errors]
 
 <!-- footnotes -->
 
