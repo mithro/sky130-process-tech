@@ -15,8 +15,8 @@ caption: >-
   oversizing the tunnel layer; the margin is not public, its width here is illustrative, and the
   island runs on past the right-hand edge of the drawing. Its left-hand edge is drawn on the memory
   transistor's active area, which the page allows ("on silicon that becomes part of the select
-  transistor's structure"). The pad oxide (which the page infers), the tunnel oxide in the window,
-  the fill oxide and the deep N-well are drawn but not labelled; the punch-through stop and the
+  transistor's structure"). The pad oxide (which the page infers), the fill oxide, the P-well and
+  the deep N-well are drawn but not labelled; the punch-through stop and the
   depletion implant (the bands of PTSI and DEPI) and the liner oxide are drawn faded. Not to scale.
 arrow:
   title: "ONOM, step 041"
@@ -25,9 +25,9 @@ panels:
   - state_after: "040"
     title: "Before: the ONO stack over the whole wafer (step 040)"
     dim_layers: [liner, ptsi, depi]
-    hide_labels: [sub, dnw, fox, padox, tunox]
+    hide_labels: [sub, dnw, fox, padox, pwell]
   - state_after: "041"
     title: "After: a resist island over the memory transistor; the stack bare elsewhere"
     dim_layers: [liner, ptsi, depi]
-    hide_labels: [sub, dnw, fox, padox, tunox]
+    hide_labels: [sub, dnw, fox, padox, pwell]
     highlight: {where: [[136, 268]]}

@@ -10,8 +10,10 @@ alt: >-
   the filled trench is unchanged.
 caption: >-
   Before, bare silicon on both active areas; after, the thick gate oxide on both. The slice runs
-  through logic: a 5 V NMOS area (left) and a 1.8 V NMOS area (right), both in the P-well. The
-  silicon is drawn bare because this page has the logic silicon cleared at ONOME. The PDK gives the
+  through logic: a 5 V NMOS area (left) and a 1.8 V NMOS area (right), both in the P-well. This is not the wells figures' NMOS/PMOS pair: both areas here are NMOS, so
+  that the two gate oxides sit side by side. The silicon is drawn bare because this page has the
+  logic silicon cleared at ONOME; ONOME's page leaves open whether that last oxide goes there or at
+  this step's pre-clean. The PDK gives the
   finished thick oxide as 110 Å;[^pdk-hv] the oxide grown here is thinner than that by an amount
   that is not public, and neither is drawn to scale. The memory cells and their ONO islands are not
   in this slice; what this oxidation does to the islands is not public. The channel implants of

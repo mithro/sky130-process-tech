@@ -1,7 +1,7 @@
 :::{figure} /_static/figures/gates-047-lvgox.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step a thick oxide film covers the left-hand active area and the right-hand active silicon is bare. After it a thin oxide film covers the right-hand active area, about half as thick in the drawing as the film on the left, which is unchanged.
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thick oxide film covers the left-hand active area and the right-hand active silicon is bare. After it a thin oxide film covers the right-hand active area, drawn thinner than the film on the left, which is drawn unchanged.
 :width: 560px
 :name: fig-gates-047-lvgox
 
-Before, the thick oxide on the 5 V area and bare silicon on the 1.8 V area; after, the thin gate oxide on the 1.8 V area. The models carry electrical oxide thicknesses of 4.148 nm for the 1.8 V NMOS[^pdk-model-nfet01v8] and 11.6 nm for the 5 V device;[^pdk-model-nfet5v] the two films are drawn thinner and thicker, not in that ratio. The thick oxide grows a little during this step, by an amount that is not public, and that increment is not drawn; nor is any nitridation, which is inferred. The memory cells and their ONO islands are not in this slice. The liner oxide is drawn faded. Not to scale.
+Before, the thick oxide on the 5 V area and bare silicon on the 1.8 V area; after, the thin gate oxide on the 1.8 V area. The models carry electrical oxide thicknesses of 4.148 nm for the 1.8 V NMOS[^pdk-model-nfet01v8] and 11.6 nm for the 5 V device;[^pdk-model-nfet5v] the two films are drawn thinner and thicker, not in that ratio. The thick oxide grows a little during this step, by an amount that is not public, and that increment is not drawn; nor is any nitridation, which is inferred. The memory cells and their ONO islands are not in this slice. The P-well is labelled in the upper panel only, and the liner oxide is drawn faded. Not to scale.
 :::

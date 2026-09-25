@@ -15,7 +15,7 @@ caption: >-
   away down to the oxide beneath them, which the page infers to be the pad oxide; that oxide is then
   drawn cleared as well, and the resist stripped, because this page treats the resist strip and the
   pre-gate-oxide clean as part of this step, although whether the last oxide goes here or at the
-  GOX100 pre-clean is not stated publicly. The loss of fill oxide in the etches is not drawn, and the pad oxide left under the edge of the island is drawn but not labelled. The punch-through stop and the depletion implant (the bands of PTSI and DEPI) and the liner oxide are drawn faded; the deep N-well is drawn but not labelled. Not to
+  GOX100 pre-clean is not stated publicly. The loss of fill oxide in the etches is not drawn; the fill oxide and the pad oxide left under the edge of the island are drawn but not labelled. The punch-through stop and the depletion implant (the bands of PTSI and DEPI) and the liner oxide are drawn faded; the P-well and the deep N-well are drawn but not labelled. Not to
   scale.
 arrow:
   title: "ONOME, step 042"
@@ -24,9 +24,9 @@ panels:
   - state_after: "041"
     title: "Before: the resist island from ONOM (step 041)"
     dim_layers: [liner, ptsi, depi]
-    hide_labels: [sub, dnw, fox, padox, tunox]
+    hide_labels: [sub, dnw, fox, padox, pwell]
   - state_after: "042"
     title: "After: an ONO island over the memory transistor; bare silicon elsewhere"
     dim_layers: [liner, ptsi, depi]
-    hide_labels: [sub, dnw, padox]
-    highlight: {where: [[0, 136]]}
+    hide_labels: [sub, dnw, fox, padox, pwell]
+    highlight: {where: [[0, 60], [116, 136]]}

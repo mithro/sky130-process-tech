@@ -25,11 +25,16 @@ panels:
     title: "Before: the tunnel window from TUNM (step 035), its bottom still coated"
     dim_layers: [liner]
     hide_labels: [sub, dnw, fox]
+    labels:
+      arc:
+        title: "ARC"
+        note: "anti-reflective coating; its type is not public"
+        basis: reading
   - state_after: "036"
     title: "After: the coating cleared from the window; oxide bare at its bottom"
     dim_layers: [liner]
     hide_labels: [sub, dnw, fox]
-    highlight: {where: [[148, 256]]}
+    highlight: {where: [[148, 268]]}
     labels:
       arc:
         title: "ARC"

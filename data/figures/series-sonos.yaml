@@ -21,8 +21,8 @@
 # device"), a filled trench 60-116, and the memory transistor's active area 116-268 (right,
 # so that the leaders of the thin bands under its window reach the label column without
 # crossing the trench).
-# The slice is read along the memory transistor's channel, so the tunnel window (148-256) lies
-# inside its active area, as the rule tunm.3 (the window extends a fixed distance beyond the
+# The slice is read along the memory transistor's channel, so the tunnel window (148 onwards, running on past the right-hand edge of the
+# drawing, so that no sliver of resist or oxide is left at the edge) lies inside its active area, as the rule tunm.3 (the window extends a fixed distance beyond the
 # gate) implies, and the ONO island (136-268, running on past the edge of the drawing) encloses the window with a
 # margin, as the ONOM page infers (the margin is not public; 12 u is illustrative). Its edge
 # stays on the memory transistor's active area: the ONOM page puts the island edge "on field oxide or
@@ -174,7 +174,7 @@ ops:
     id: tunres
     material: resist
     t: 38
-    where: [[0, 148], [256, 268]]
+    where: [[0, 148]]
     route: top
     label:
       title: "Photoresist"
@@ -245,7 +245,6 @@ ops:
     material: oxide-thermal
     t: 5
     only_on: [si-sub]
-    route: over
     label:
       title: "Tunnel oxide"
       note: "grown on the bare silicon of the window"
@@ -264,9 +263,10 @@ ops:
     id: onotop
     material: oxide-dep
     t: 5
+    route: top
     label:
       title: "Top oxide"
-      note: "the blocking oxide; how it is formed is not public"
+      note: "how it is formed is not public"
       basis: public
 
   # ---- the ONO mask: a resist island over each cell

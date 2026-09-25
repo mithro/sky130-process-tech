@@ -15,8 +15,8 @@ caption: >-
   through. On this page's reading, which is an inference, this dose sets the threshold of the 1.8 V
   NMOS; the band is hatched with no colour of its own, and the species, energy, dose and
   depth are not public. The page assumes the textbook 7° tilt, but SKY130's tilt is not public, so
-  the arrows are drawn vertical. This is the only channel implant drawn in this slice. The fill oxide is labelled in the upper
-  panel only, and the liner oxide is drawn faded. Not to scale.
+  the arrows are drawn vertical. This is the only channel implant drawn in this slice. The fill oxide and the P-well are labelled in
+  the upper panel only, and the liner oxide is drawn faded. Not to scale.
 arrow:
   title: "NCHI, step 045"
   note: "Ions are implanted through the LVOM window and the thick oxide into the low-voltage NMOS channel; the resist stops them elsewhere."
@@ -28,4 +28,4 @@ panels:
   - state_after: "045"
     title: "After: an implanted band at the surface of the 1.8 V area"
     dim_layers: [liner]
-    hide_labels: [sub, fox]
+    hide_labels: [sub, fox, pwell]

@@ -31,7 +31,7 @@ etch to strip it from the low-voltage active areas".
 :width: 560px
 :name: fig-gates-046-goxetch
 
-Before, the LVOM resist with the thick oxide still in its window; after, the oxide gone from the 1.8 V area down to the silicon, the resist gone, and the thick oxide kept on the 5 V area. The etch is drawn as stopping at the silicon and leaving the trench oxide as it is; the undercut at the resist edge and any loss of trench oxide are not public and are not drawn. The resist is drawn stripped because this page treats the strip and clean as part of this step. The NMOS channel implant of NCHI is unchanged. The liner oxide is drawn faded. Not to scale.
+Before, the LVOM resist with the thick oxide still in its window; after, the oxide gone from the 1.8 V area down to the silicon, the resist gone, and the thick oxide kept on the 5 V area. The etch is drawn as stopping at the silicon and leaving the trench oxide as it is; the undercut at the resist edge and any loss of trench oxide are not public and are not drawn. The resist is drawn stripped because this page treats the strip and clean as part of this step. The NMOS channel implant of NCHI is unchanged. The P-well is drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
 :::
 
 Both Cypress flows describe the operation, and both patents are shown as

@@ -14,7 +14,8 @@ caption: >-
   etch is drawn as stopping at the silicon and leaving the trench oxide as it is; the undercut at
   the resist edge and any loss of trench oxide are not public and are not drawn. The resist is
   drawn stripped because this page treats the strip and clean as part of this step. The NMOS
-  channel implant of NCHI is unchanged. The liner oxide is drawn faded. Not to scale.
+  channel implant of NCHI is unchanged. The P-well is drawn but not labelled, and the liner oxide is
+  drawn faded. Not to scale.
 arrow:
   title: "GOXETCH, step 046"
   note: "The thick oxide is etched out of the LVOM window to bare silicon; then the resist is stripped and the wafer cleaned."
@@ -22,10 +23,10 @@ panels:
   - state_after: "045"
     title: "Before: the implanted LVOM window (step 045)"
     dim_layers: [liner]
-    hide_labels: [sub]
+    hide_labels: [sub, pwell]
     show_ions: false
   - state_after: "046"
     title: "After: bare silicon on the 1.8 V area, thick oxide kept on the 5 V area"
     dim_layers: [liner]
-    hide_labels: [sub]
+    hide_labels: [sub, pwell]
     highlight: {where: [[188, 268]]}

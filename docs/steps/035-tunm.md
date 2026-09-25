@@ -27,7 +27,7 @@ that the {term}`tunnel oxide` of the {term}`ONO` stack can be grown on bare
 silicon at {ref}`ONO <step-040>`.
 
 :::{figure} /_static/figures/sonos-035-tunm.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step thin pad oxide covers two active areas either side of an oxide-filled trench, over a P-well that lies on a buried deep N-well. After it a thin anti-reflective film covers the whole surface and photoresist covers everything except a narrow window over the middle of the right-hand active area, where the film lies bare.
+:alt: Two cross-sections of the wafer, one above the other. Before the step thin pad oxide covers two active areas either side of an oxide-filled trench, over a P-well that lies on a buried deep N-well. After it a thin anti-reflective film covers the whole surface and photoresist covers everything except a wide window over most of the right-hand active area, running on past the right-hand edge of the drawing, where the film lies bare.
 :width: 560px
 :name: fig-sonos-035-tunm
 

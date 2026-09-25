@@ -6,27 +6,27 @@ crop_depth: 90
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the step photoresist and a thin
   anti-reflective film cover the surface except for a window over the right-hand active area, whose
-  bottom is thin oxide over two hatched bands. After it the resist and the film are gone, the thin
-  oxide is gone from the window so that bare silicon shows there, and the oxide remains everywhere
-  else.
+  bottom is thin oxide over two bands drawn as dashed outlines. After it the resist and the film are
+  gone, the thin oxide is gone from the window so that bare silicon shows there, and the oxide
+  remains on the left-hand active area and to the left of the window.
 caption: >-
   Before, the tunnel-mask resist over its window; after, the oxide gone from the window down to the
   silicon, and the resist and the anti-reflective coating gone from the whole wafer. The etch is
   drawn only inside the window, as this page describes a masked etch; whether the oxide is also
   removed elsewhere after the strip is an open question. The oxide is drawn as the pad oxide, which the page
   infers. The resist is drawn stripped, with the coating under it, because this page treats the
-  strip as the tail of this step; how the coating comes off is not stated. The two implanted bands of PTSI and DEPI are unchanged. The deep N-well is drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
+  strip as the tail of this step; how the coating comes off is not stated. The punch-through stop and the depletion implant (the bands of PTSI and DEPI) are unchanged: the first is drawn faded in both panels, the second is not labelled in the upper panel and is faded in the lower, and the liner oxide is drawn faded; the anti-reflective coating (upper panel), the P-well and the deep N-well are drawn but not labelled. Not to scale.
 arrow:
   title: "TUNME, step 039"
   note: "The oxide in the tunnel window is etched away to the silicon; then the resist is stripped and the wafer cleaned."
 panels:
   - state_after: "038"
     title: "Before: the tunnel window after both implants (step 038)"
-    dim_layers: [liner]
-    hide_labels: [sub, dnw, fox]
+    dim_layers: [liner, ptsi]
+    hide_labels: [sub, dnw, fox, pwell, arc, depi]
     show_ions: false
   - state_after: "039"
     title: "After: bare silicon in the window, resist and coating removed"
-    dim_layers: [liner]
-    hide_labels: [sub, dnw]
-    highlight: {where: [[148, 256]]}
+    dim_layers: [liner, ptsi, depi]
+    hide_labels: [sub, dnw, pwell]
+    highlight: {where: [[148, 268]]}

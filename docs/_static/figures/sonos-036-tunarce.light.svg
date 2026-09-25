@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 619" width="480" height="619" role="img" data-kind="xsection" data-theme="light">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 634" width="480" height="634" role="img" data-kind="xsection" data-theme="light">
 <title>Two cross-sections of the wafer, one above the other. Before the step photoresist covers the surface except for a window over the right-hand active area, and a thin anti-reflective film runs under the resist and across the bottom of the window. After it the film is gone from the bottom of the window, leaving the thin pad oxide bare there, and is unchanged under the resist.</title>
 <desc>Two cross-sections of the wafer, one above the other. Before the step photoresist covers the surface except for a window over the right-hand active area, and a thin anti-reflective film runs under the resist and across the bottom of the window. After it the film is gone from the bottom of the window, leaving the thin pad oxide bare there, and is unchanged under the resist.</desc>
 <style>
-:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#5a4a3a;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -21,7 +21,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hlines" width="6" height="5" patternUnits="userSpaceOnUse"><line class="pat" x1="0" y1="2.5" x2="6" y2="2.5"/></pattern><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="619"/>
+<rect class="ground" x="0" y="0" width="480" height="634"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the tunnel window from TUNM</text>
 <text x="12.0" y="44.0" class="t-panel-title">(step 035), its bottom still coated</text>
 <clipPath id="clip1"><rect x="12" y="97.0" width="268" height="166.0"/></clipPath>
@@ -34,73 +34,70 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-arc" data-layer="arc" points="9.00,163.00 66.50,163.00 67.00,139.00 133.00,139.00 133.50,163.00 283.00,163.00 283.00,168.00 128.50,168.00 128.00,144.00 72.00,144.00 71.50,168.00 9.00,168.00"/>
 <polygon class="mat m-resist" data-layer="tunres" points="9.00,101.00 160.25,101.00 160.25,163.00 133.50,163.00 133.00,139.00 67.00,139.00 66.50,163.00 9.00,163.00"/>
 <polygon fill="url(#p-dots)" points="9.00,101.00 160.25,101.00 160.25,163.00 133.50,163.00 133.00,139.00 67.00,139.00 66.50,163.00 9.00,163.00"/>
-<polygon class="mat m-resist" data-layer="tunres" points="267.75,125.00 283.00,125.00 283.00,163.00 267.75,163.00"/>
-<polygon fill="url(#p-dots)" points="267.75,125.00 283.00,125.00 283.00,163.00 267.75,163.00"/>
 <polygon class="mat m-well-dn" data-layer="dnw" points="9.00,249.00 283.00,249.00 283.00,293.00 9.00,293.00"/>
 <polygon fill="url(#p-hlines)" points="9.00,249.00 283.00,249.00 283.00,293.00 9.00,293.00"/>
 <polygon class="mat m-well-p" data-layer="pwell" points="9.00,173.00 72.00,173.00 79.00,217.20 79.50,221.00 80.00,223.11 80.50,224.23 81.00,225.06 81.50,225.73 82.00,226.28 82.50,226.76 83.00,227.17 84.00,227.83 85.00,228.31 86.00,228.66 87.00,228.88 88.00,228.99 112.00,228.99 113.00,228.88 114.00,228.66 115.00,228.31 116.00,227.83 117.00,227.17 117.50,226.76 118.00,226.28 118.50,225.73 119.00,225.06 119.50,224.23 120.00,223.11 120.50,221.00 121.00,217.20 128.00,173.00 283.00,173.00 283.00,249.00 9.00,249.00"/>
 <polygon fill="url(#p-plus)" points="9.00,173.00 72.00,173.00 79.00,217.20 79.50,221.00 80.00,223.11 80.50,224.23 81.00,225.06 81.50,225.73 82.00,226.28 82.50,226.76 83.00,227.17 84.00,227.83 85.00,228.31 86.00,228.66 87.00,228.88 88.00,228.99 112.00,228.99 113.00,228.88 114.00,228.66 115.00,228.31 116.00,227.83 117.00,227.17 117.50,226.76 118.00,226.28 118.50,225.73 119.00,225.06 119.50,224.23 120.00,223.11 120.50,221.00 121.00,217.20 128.00,173.00 283.00,173.00 283.00,249.00 9.00,249.00"/>
 </g>
-<text x="328.0" y="206.6" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="328.0" y="222.6" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M267.0 170.5H291.0V201.7H324.0"/>
+<text x="328.0" y="211.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="227.9" class="t-label-note tag" data-owner="padox">inferred</text>
+<path class="leader" data-owner="padox" d="M267.0 170.5H291.0V207.0H324.0"/>
 <circle class="dot" data-owner="padox" cx="267.0" cy="170.5" r="1.9"/>
-<text x="328.0" y="246.6" class="t-label-title" data-owner="pwell">P-well</text>
-<text x="328.0" y="262.6" class="t-label-note muted" data-owner="pwell">PWI, step 027</text>
-<path class="leader" data-owner="pwell" d="M276.0 237.0H285.0V241.7H324.0"/>
+<text x="328.0" y="251.9" class="t-label-title" data-owner="pwell">P-well</text>
+<text x="328.0" y="267.9" class="t-label-note muted" data-owner="pwell">PWI, step 027</text>
+<path class="leader" data-owner="pwell" d="M276.0 237.0H285.0V247.0H324.0"/>
 <circle class="dot" data-owner="pwell" cx="276.0" cy="237.0" r="1.9"/>
-<text x="328.0" y="134.6" class="t-label-title" data-owner="arc">ARC</text>
-<text x="328.0" y="150.6" class="t-label-note muted" data-owner="arc">anti-reflective; its</text>
-<text x="328.0" y="166.6" class="t-label-note muted" data-owner="arc">type is not public</text>
-<text x="328.0" y="182.6" class="t-label-note tag" data-owner="arc">inferred</text>
-<path class="leader" data-owner="arc" d="M276.0 165.5H297.0V129.7H324.0"/>
+<text x="328.0" y="123.9" class="t-label-title" data-owner="arc">ARC</text>
+<text x="328.0" y="139.9" class="t-label-note muted" data-owner="arc">anti-reflective</text>
+<text x="328.0" y="155.9" class="t-label-note muted" data-owner="arc">coating; its type</text>
+<text x="328.0" y="171.9" class="t-label-note muted" data-owner="arc">is not public</text>
+<text x="328.0" y="187.9" class="t-label-note tag" data-owner="arc">our reading</text>
+<path class="leader" data-owner="arc" d="M276.0 165.5H297.0V119.0H324.0"/>
 <circle class="dot" data-owner="arc" cx="276.0" cy="165.5" r="1.9"/>
 <text x="95.0" y="67.9" class="t-label-title" data-owner="tunres">Photoresist</text>
 <text x="95.0" y="83.9" class="t-label-note muted" data-owner="tunres">tunnel mask, TUNM, step 035</text>
 <path class="leader" data-owner="tunres" d="M86.0 109.0V63.0H91.0"/>
 <circle class="dot" data-owner="tunres" cx="86.0" cy="109.0" r="1.9"/>
-<path class="parrow" d="M34 286.7V324.7"/>
-<path class="pahead" d="M34 332.7l-5.5 -9h11.0z"/>
-<text x="50.0" y="297.7" class="t-label-title acc">TUNARCE, step 036</text>
-<text x="50.0" y="312.7" class="t-label-note muted">The anti-reflective coating is etched out of the bottom</text>
-<text x="50.0" y="327.7" class="t-label-note muted">of the tunnel windows, stopping on the oxide beneath.</text>
-<text x="12.0" y="360.7" class="t-panel-title">After: the coating cleared from the</text>
-<text x="12.0" y="378.7" class="t-panel-title">window; oxide bare at its bottom</text>
-<clipPath id="clip2"><rect x="12" y="415.7" width="268" height="166.0"/></clipPath>
-<g class="drawing" data-rect="12,415.7,268,166.0" clip-path="url(#clip2)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,491.67 72.00,491.67 79.00,535.86 79.50,539.67 80.00,541.78 80.50,542.90 81.00,543.72 81.50,544.39 82.00,544.95 82.50,545.42 83.00,545.83 84.00,546.49 85.00,546.98 86.00,547.33 87.00,547.55 88.00,547.66 112.00,547.66 113.00,547.55 114.00,547.33 115.00,546.98 116.00,546.49 117.00,545.83 117.50,545.42 118.00,544.95 118.50,544.39 119.00,543.72 119.50,542.90 120.00,541.78 120.50,539.67 121.00,535.86 128.00,491.67 283.00,491.67 283.00,655.67 9.00,655.67"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,486.67 71.75,486.67 71.75,491.67 9.00,491.67"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="128.25,486.67 283.00,486.67 283.00,491.67 128.25,491.67"/>
-<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="71.75,486.67 72.00,486.67 72.50,489.82 73.00,491.67 77.00,491.67 84.00,535.86 84.50,539.67 85.00,541.78 85.50,542.17 86.50,542.45 87.50,542.62 112.00,542.66 113.00,542.55 114.00,542.33 114.50,542.17 115.00,541.78 115.50,539.67 116.00,535.86 123.00,491.67 127.00,491.67 127.50,489.82 128.00,486.67 128.25,486.67 128.25,491.67 128.00,491.67 121.00,535.86 120.50,539.67 120.00,541.78 119.50,542.90 119.00,543.72 118.50,544.39 118.00,544.95 117.50,545.42 117.00,545.83 116.00,546.49 115.00,546.98 114.00,547.33 113.00,547.55 112.00,547.66 88.00,547.66 87.00,547.55 86.00,547.33 85.00,546.98 84.00,546.49 83.00,545.83 82.50,545.42 82.00,544.95 81.50,544.39 81.00,543.72 80.50,542.90 80.00,541.78 79.50,539.67 79.00,535.86 72.00,491.67 71.75,491.67"/>
-<polygon class="mat m-oxide-dep" data-layer="fox" points="71.75,462.67 128.25,462.67 128.25,486.67 128.00,486.67 127.50,489.82 127.00,491.67 123.00,491.67 116.00,535.86 115.50,539.67 115.00,541.78 114.50,542.17 114.00,542.33 113.00,542.55 112.00,542.66 87.50,542.62 86.50,542.45 85.50,542.17 85.00,541.78 84.50,539.67 84.00,535.86 77.00,491.67 73.00,491.67 72.50,489.82 72.00,486.67 71.75,486.67"/>
-<polygon class="mat m-arc" data-layer="arc" points="9.00,481.67 66.50,481.67 67.00,457.67 133.00,457.67 133.50,481.67 160.25,481.67 160.25,486.67 128.50,486.67 128.00,462.67 72.00,462.67 71.50,486.67 9.00,486.67"/>
-<polygon class="mat m-arc" data-layer="arc" points="267.75,481.67 283.00,481.67 283.00,486.67 267.75,486.67"/>
-<polygon class="mat m-resist" data-layer="tunres" points="9.00,419.67 160.25,419.67 160.25,481.67 133.50,481.67 133.00,457.67 67.00,457.67 66.50,481.67 9.00,481.67"/>
-<polygon fill="url(#p-dots)" points="9.00,419.67 160.25,419.67 160.25,481.67 133.50,481.67 133.00,457.67 67.00,457.67 66.50,481.67 9.00,481.67"/>
-<polygon class="mat m-resist" data-layer="tunres" points="267.75,443.67 283.00,443.67 283.00,481.67 267.75,481.67"/>
-<polygon fill="url(#p-dots)" points="267.75,443.67 283.00,443.67 283.00,481.67 267.75,481.67"/>
-<polygon class="mat m-well-dn" data-layer="dnw" points="9.00,567.67 283.00,567.67 283.00,611.67 9.00,611.67"/>
-<polygon fill="url(#p-hlines)" points="9.00,567.67 283.00,567.67 283.00,611.67 9.00,611.67"/>
-<polygon class="mat m-well-p" data-layer="pwell" points="9.00,491.67 72.00,491.67 79.00,535.86 79.50,539.67 80.00,541.78 80.50,542.90 81.00,543.72 81.50,544.39 82.00,544.95 82.50,545.42 83.00,545.83 84.00,546.49 85.00,546.98 86.00,547.33 87.00,547.55 88.00,547.66 112.00,547.66 113.00,547.55 114.00,547.33 115.00,546.98 116.00,546.49 117.00,545.83 117.50,545.42 118.00,544.95 118.50,544.39 119.00,543.72 119.50,542.90 120.00,541.78 120.50,539.67 121.00,535.86 128.00,491.67 283.00,491.67 283.00,567.67 9.00,567.67"/>
-<polygon fill="url(#p-plus)" points="9.00,491.67 72.00,491.67 79.00,535.86 79.50,539.67 80.00,541.78 80.50,542.90 81.00,543.72 81.50,544.39 82.00,544.95 82.50,545.42 83.00,545.83 84.00,546.49 85.00,546.98 86.00,547.33 87.00,547.55 88.00,547.66 112.00,547.66 113.00,547.55 114.00,547.33 115.00,546.98 116.00,546.49 117.00,545.83 117.50,545.42 118.00,544.95 118.50,544.39 119.00,543.72 119.50,542.90 120.00,541.78 120.50,539.67 121.00,535.86 128.00,491.67 283.00,491.67 283.00,567.67 9.00,567.67"/>
-<polyline class="hl" points="160.00,416.67 160.50,483.67 267.50,483.67 268.00,440.67"/>
+<path class="parrow" d="M34 292.0V330.0"/>
+<path class="pahead" d="M34 338.0l-5.5 -9h11.0z"/>
+<text x="50.0" y="303.0" class="t-label-title acc">TUNARCE, step 036</text>
+<text x="50.0" y="318.0" class="t-label-note muted">The anti-reflective coating is etched out of the bottom</text>
+<text x="50.0" y="333.0" class="t-label-note muted">of the tunnel windows, stopping on the oxide beneath.</text>
+<text x="12.0" y="366.0" class="t-panel-title">After: the coating cleared from the</text>
+<text x="12.0" y="384.0" class="t-panel-title">window; oxide bare at its bottom</text>
+<clipPath id="clip2"><rect x="12" y="421.0" width="268" height="177.0"/></clipPath>
+<g class="drawing" data-rect="12,421.0,268,177.0" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,508.00 72.00,508.00 79.00,552.20 79.50,556.00 80.00,558.11 80.50,559.23 81.00,560.06 81.50,560.73 82.00,561.28 82.50,561.76 83.00,562.17 84.00,562.83 85.00,563.31 86.00,563.66 87.00,563.88 88.00,563.99 112.00,563.99 113.00,563.88 114.00,563.66 115.00,563.31 116.00,562.83 117.00,562.17 117.50,561.76 118.00,561.28 118.50,560.73 119.00,560.06 119.50,559.23 120.00,558.11 120.50,556.00 121.00,552.20 128.00,508.00 283.00,508.00 283.00,672.00 9.00,672.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,503.00 71.75,503.00 71.75,508.00 9.00,508.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="128.25,503.00 283.00,503.00 283.00,508.00 128.25,508.00"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="71.75,503.00 72.00,503.00 72.50,506.16 73.00,508.00 77.00,508.00 84.00,552.20 84.50,556.00 85.00,558.11 85.50,558.50 86.50,558.79 87.50,558.95 112.00,558.99 113.00,558.88 114.00,558.66 114.50,558.50 115.00,558.11 115.50,556.00 116.00,552.20 123.00,508.00 127.00,508.00 127.50,506.16 128.00,503.00 128.25,503.00 128.25,508.00 128.00,508.00 121.00,552.20 120.50,556.00 120.00,558.11 119.50,559.23 119.00,560.06 118.50,560.73 118.00,561.28 117.50,561.76 117.00,562.17 116.00,562.83 115.00,563.31 114.00,563.66 113.00,563.88 112.00,563.99 88.00,563.99 87.00,563.88 86.00,563.66 85.00,563.31 84.00,562.83 83.00,562.17 82.50,561.76 82.00,561.28 81.50,560.73 81.00,560.06 80.50,559.23 80.00,558.11 79.50,556.00 79.00,552.20 72.00,508.00 71.75,508.00"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="71.75,479.00 128.25,479.00 128.25,503.00 128.00,503.00 127.50,506.16 127.00,508.00 123.00,508.00 116.00,552.20 115.50,556.00 115.00,558.11 114.50,558.50 114.00,558.66 113.00,558.88 112.00,558.99 87.50,558.95 86.50,558.79 85.50,558.50 85.00,558.11 84.50,556.00 84.00,552.20 77.00,508.00 73.00,508.00 72.50,506.16 72.00,503.00 71.75,503.00"/>
+<polygon class="mat m-arc" data-layer="arc" points="9.00,498.00 66.50,498.00 67.00,474.00 133.00,474.00 133.50,498.00 160.25,498.00 160.25,503.00 128.50,503.00 128.00,479.00 72.00,479.00 71.50,503.00 9.00,503.00"/>
+<polygon class="mat m-resist" data-layer="tunres" points="9.00,436.00 160.25,436.00 160.25,498.00 133.50,498.00 133.00,474.00 67.00,474.00 66.50,498.00 9.00,498.00"/>
+<polygon fill="url(#p-dots)" points="9.00,436.00 160.25,436.00 160.25,498.00 133.50,498.00 133.00,474.00 67.00,474.00 66.50,498.00 9.00,498.00"/>
+<polygon class="mat m-well-dn" data-layer="dnw" points="9.00,584.00 283.00,584.00 283.00,628.00 9.00,628.00"/>
+<polygon fill="url(#p-hlines)" points="9.00,584.00 283.00,584.00 283.00,628.00 9.00,628.00"/>
+<polygon class="mat m-well-p" data-layer="pwell" points="9.00,508.00 72.00,508.00 79.00,552.20 79.50,556.00 80.00,558.11 80.50,559.23 81.00,560.06 81.50,560.73 82.00,561.28 82.50,561.76 83.00,562.17 84.00,562.83 85.00,563.31 86.00,563.66 87.00,563.88 88.00,563.99 112.00,563.99 113.00,563.88 114.00,563.66 115.00,563.31 116.00,562.83 117.00,562.17 117.50,561.76 118.00,561.28 118.50,560.73 119.00,560.06 119.50,559.23 120.00,558.11 120.50,556.00 121.00,552.20 128.00,508.00 283.00,508.00 283.00,584.00 9.00,584.00"/>
+<polygon fill="url(#p-plus)" points="9.00,508.00 72.00,508.00 79.00,552.20 79.50,556.00 80.00,558.11 80.50,559.23 81.00,560.06 81.50,560.73 82.00,561.28 82.50,561.76 83.00,562.17 84.00,562.83 85.00,563.31 86.00,563.66 87.00,563.88 88.00,563.99 112.00,563.99 113.00,563.88 114.00,563.66 115.00,563.31 116.00,562.83 117.00,562.17 117.50,561.76 118.00,561.28 118.50,560.73 119.00,560.06 119.50,559.23 120.00,558.11 120.50,556.00 121.00,552.20 128.00,508.00 283.00,508.00 283.00,584.00 9.00,584.00"/>
+<polyline class="hl" points="160.00,436.00 160.50,500.00 280.00,500.00"/>
 </g>
-<text x="328.0" y="530.6" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="328.0" y="546.6" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M267.0 489.2H291.0V525.7H324.0"/>
-<circle class="dot" data-owner="padox" cx="267.0" cy="489.2" r="1.9"/>
-<text x="328.0" y="570.6" class="t-label-title" data-owner="pwell">P-well</text>
-<path class="leader" data-owner="pwell" d="M276.0 555.7H285.0V565.7H324.0"/>
-<circle class="dot" data-owner="pwell" cx="276.0" cy="555.7" r="1.9"/>
-<text x="328.0" y="442.6" class="t-label-title" data-owner="arc">ARC</text>
-<text x="328.0" y="458.6" class="t-label-note muted" data-owner="arc">anti-reflective</text>
-<text x="328.0" y="474.6" class="t-label-note muted" data-owner="arc">coating, left</text>
-<text x="328.0" y="490.6" class="t-label-note muted" data-owner="arc">under the resist</text>
-<text x="328.0" y="506.6" class="t-label-note tag" data-owner="arc">our reading</text>
-<path class="leader" data-owner="arc" d="M276.0 484.2H297.0V437.7H324.0"/>
-<circle class="dot" data-owner="arc" cx="276.0" cy="484.2" r="1.9"/>
-<text x="95.0" y="402.6" class="t-label-title" data-owner="tunres">Photoresist</text>
-<path class="leader" data-owner="tunres" d="M86.0 427.7V397.7H91.0"/>
-<circle class="dot" data-owner="tunres" cx="86.0" cy="427.7" r="1.9"/>
-<text x="12.0" y="606.7" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="328.0" y="520.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="536.9" class="t-label-note tag" data-owner="padox">inferred</text>
+<path class="leader" data-owner="padox" d="M276.0 505.5H291.0V516.0H324.0"/>
+<circle class="dot" data-owner="padox" cx="276.0" cy="505.5" r="1.9"/>
+<text x="328.0" y="576.9" class="t-label-title" data-owner="pwell">P-well</text>
+<path class="leader" data-owner="pwell" d="M276.0 572.0H285.0H324.0"/>
+<circle class="dot" data-owner="pwell" cx="276.0" cy="572.0" r="1.9"/>
+<text x="328.0" y="432.9" class="t-label-title" data-owner="arc">ARC</text>
+<text x="328.0" y="448.9" class="t-label-note muted" data-owner="arc">anti-reflective</text>
+<text x="328.0" y="464.9" class="t-label-note muted" data-owner="arc">coating, left</text>
+<text x="328.0" y="480.9" class="t-label-note muted" data-owner="arc">under the resist</text>
+<text x="328.0" y="496.9" class="t-label-note tag" data-owner="arc">our reading</text>
+<path class="halo" d="M124.0 473.5L124.0 436.0"/>
+<path class="leader" data-owner="arc" d="M124.0 476.5V425.0H297.0V428.0H324.0"/>
+<circle class="dot" data-owner="arc" cx="124.0" cy="476.5" r="1.9"/>
+<text x="95.0" y="407.9" class="t-label-title" data-owner="tunres">Photoresist</text>
+<path class="leader" data-owner="tunres" d="M86.0 444.0V403.0H91.0"/>
+<circle class="dot" data-owner="tunres" cx="86.0" cy="444.0" r="1.9"/>
+<text x="12.0" y="622.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

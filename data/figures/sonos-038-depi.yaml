@@ -15,7 +15,7 @@ caption: >-
   depletion implant, but the species (arsenic is this page's inference), the energy and the dose
   are not public, and so are its depth and profile. The arrows are drawn vertical because the tilt
   is not public (7° is only the textbook convention). The oxide the ions pass is drawn as the pad
-  oxide, which the page infers. The fill oxide and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
+  oxide, which the page infers. The anti-reflective coating under the resist, the fill oxide, the P-well and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
 arrow:
   title: "DEPI, step 038"
   note: "A second implant through the same window dopes the surface of the memory channel, making the transistor a depletion-mode device."
@@ -23,9 +23,9 @@ panels:
   - state_after: "037"
     title: "Before: the punch-through stop from PTSI (step 037) under the window"
     dim_layers: [liner]
-    hide_labels: [sub, dnw, fox]
+    hide_labels: [sub, dnw, fox, pwell, arc]
     show_ions: false
   - state_after: "038"
     title: "After: a second band, at the surface of the memory channel"
     dim_layers: [liner]
-    hide_labels: [sub, dnw, fox]
+    hide_labels: [sub, dnw, fox, pwell, arc]
