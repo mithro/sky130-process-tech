@@ -24,79 +24,52 @@ sheet records for the MPW runs ({ref}`masks-mpw-runs`), and to what
 public renders of those runs' tape-out layouts show
 ({ref}`masks-renders`).
 
-## What the PDK publishes
+## Find a mask
 
-Four parts of the PDK documentation describe masks.
+One row per mask step, built from the checked table below and each mask page's own quick-facts row (exposure class): the step's code, its mask page, the exposure class the step page infers for it (linked to the machine-class page; no public source names the tool for any of the 36), the minimum feature/space CD, and the steps that use the resist pattern.
 
-* **The mask table.** The *Masks* page renders `masks.csv`, a
-  three-column table (`Mask`, `Acronym`, `Used in SKY130`) of 51 mask
-  entries "found on 130nm processes at SkyWater"; "The masks which are
-  used on the SKY130 technology node (that this PDK supports) are
-  marked", with an `X`.[^pdk-05] Thirty-four entries carry the mark.
-  Some acronyms appear more than once, as variants: `VIM2` three times
-  ("Via 2-TNV", "Via 2-S8TM", "Via 2-PLM"), `MM3` three times
-  ("Metal 3-TLM", "Metal 3-S8TM", "Metal 3-PLM") and `PDM` twice
-  ("Pad (scribe protect)", "Pad (scribe unprotect)"), each with only
-  one variant marked.[^pdk-05]
-* **The GDS layer table.** The *Layers Reference* renders
-  `gds_layers.csv`, which gives each layer's name, purpose, GDS
-  layer:datatype and description.[^pdk-06] It has two kinds of entry
-  that matter here. *Drawn* layers are what a designer draws — `nwell`
-  64:20 "N-well region", `met1` 68:20 "Metal 1", and so on. Under the
-  heading "Mask level data" it then lists 32 *mask-level* layers with
-  purpose `mask` and datatype 0, whose names start with `c` and whose
-  descriptions name a mask (`cfom` 23:0 "Field oxide mask", `cviam`
-  40:0 "Via mask", …), followed by `drawing`, `mask add`, `mask drop`
-  and `waffle drop` purposes for some of them.[^pdk-06] The periphery
-  rules restrict these layers in a layout: "Shapes on maskAdd or
-  maskDrop layers ("serifs") are allowed in core only" (x.9), and
-  "Drawn compatible, mask, and waffle-drop layers are allowed only
-  inside areaid:mt (i.e., etest modules)", the seal ring or the frame,
-  with the exception that "FOM/P1M/Metal waffle drop are allowed
-  inside the die" (x.15a).[^pdk-periph] The same page carries Table
-  F2b, a "Mask Generation table" that marks device by device which
-  mask levels are "CREATED" (`C`).[^pdk-06]
-* **The minimum-CD table.** Table 2 of *Criteria & Assumptions*,
-  "Minimum CDs in Design or on Wafer, required by Technology (Core or
-  Periphery)", repeats most of the mask names of `masks.csv` with a
-  feature size, a space size and a variable name for each (`VIMCD`,
-  `VIMCDSP`, …).[^pdk-03] The table has no unit column; this page
-  quotes the numbers as printed, which the step pages read as µm (the
-  periphery rules give the same 0.150 µm and 0.170 µm for via 1 as
-  `VIMCD` and `VIMCDSP`[^pdk-periph]). The pad documentation of the
-  SKY130 {term}`test tile` uses several of the values: gate-oxide
-  capacitors drawn at "FOM w/s = 0.14/0.27" (`FOMCD` / `FOMCDSP`),
-  N-well isolation structures that include "Nwell to Nwell Space =
-  1.27um" (`NWMCDSP`), and metal-5 test lines 1.6 µm wide labelled
-  "S8PIR/PF" (the "S8PF\*/S8PIR\*" row of `MM5CD` /
-  `MM5CDSP`).[^raw-data-testtile-pads] The table does not give a resist
-  tone for any mask.
-* **The design rules.** Each drawn layer's rule set in the periphery
-  rules opens with a "Function" line, and a few notes name masks
-  directly — for example "For SP8P\*/SKY130P\* (PLM) CADflow use MM4
-  for Metal Fuse".[^pdk-periph]
+:::{table} The 36 mask steps, for finding a mask: step/mask page, exposure class, minimum CD and patterned steps
+:widths: 16 28 26 30
 
-What the PDK does *not* publish is a table that says which drawn
-layers, combined by which operations, generate each mask. The pairing
-of masks with drawn layers below is therefore made by correspondence
-of names and descriptions across the files, and where it needs more
-reasoning than that it is marked *(inference)* and explained on the
-step page. The one operation the PDK does state is for `hvntm`: "Drawn
-layer will be OR-ed with the CL and rechecked for CLDRC".[^pdk-periph]
-The PDK does not expand "CL" or "CLDRC". The periphery rules use the
-abbreviation again in their flag legend, where A means "Rule documents
-a functionality implemented in CL algorithms and may not be checked by
-DRC." and AD "Rule documents a functionality implemented in CL
-algorithms and checked by DRC.";[^pdk-periph] that fits a reading of CL
-as the mask-generation computation (our reading), and the
-{ref}`HVNTM <step-068>` page reads it as a computed layer. The PDK's *Error Messages* page lists checks on
-layers it calls `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM` without
-defining them; for `CLHVTPM`, `CLLVTNM` and `CLHVNTM` the mask pages
-read them as created mask data (inference from the names), while for
-`CLNTM` the LDNTM page reads the checks only as constraints on the
-layer without saying how it is made. Either way, the checks say what
-those layers must cover or avoid, not how they are made
-({ref}`masks-derivations`).[^pdk-errors]
+| Step no. / mask page | Exposure class | Min. CD | Steps patterned |
+|---|---|---|---|
+| {ref}`FOM <step-004>` / {ref}`FOM <mask-fom>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `FOMCD` 0.14 / `FOMCDSP` 0.27 | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` |
+| {ref}`DNM <step-007>` / {ref}`DNM <mask-dnm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `DNMCD` 3 / `DNMCDSP` 6.3 | {ref}`DNI <step-008>`; strip {ref}`DNIS <step-009>` |
+| {ref}`LVTNM <step-014>` / {ref}`LVTNM <mask-lvtnm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LVTNMCD` 0.38 / `LVTNMCDSP` 0.38 | {ref}`LVTNI <step-015>`; strip {ref}`LVTNIS <step-016>` |
+| {ref}`NWM <step-017>` / {ref}`NWM <mask-nwm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NWMCD` 0.84 / `NWMCDSP` 1.27 | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`; strip {ref}`LVTPIS <step-021>` |
+| {ref}`HVTPM <step-022>` / {ref}`HVTPM <mask-hvtpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `HVTPMCD` 0.38 / `HVTPMCDSP` 0.38 | {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; strip {ref}`PCHIS <step-025>` |
+| {ref}`PWBM <step-026>` / {ref}`PWBM <mask-pwbm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PWBMCD` 0.84 / `PWBMCDSP` 1.27 | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`; strip {ref}`PWIS <step-029>` |
+| {ref}`PWDEM <step-030>` / {ref}`PWDEM <mask-pwdem>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PWDEMCD` 0.84 / `PWDEMCDSP` 1.27 | {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; strip {ref}`PWDEIS <step-033>` |
+| {ref}`TUNM <step-035>` / {ref}`TUNM <mask-tunm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `TUNMCD` 0.41 / `TUNMCDSP` 0.5 | {ref}`TUNARCE <step-036>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`TUNME <step-039>` |
+| {ref}`ONOM <step-041>` / {ref}`ONOM <mask-onom>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `ONOMCD` 0.41 / `ONOMCDSP` 0.5 | {ref}`ONOME <step-042>` |
+| {ref}`LVOM <step-044>` / {ref}`LVOM <mask-lvom>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LVOMCD` 0.6 / `LVOMCDSPCSMC` 0.7 | {ref}`NCHI <step-045>`, {ref}`GOXETCH <step-046>` |
+| {ref}`RPM <step-049>` / {ref}`RPM <mask-rpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `RPMCD` 1.27 / `RPMCDSP` 0.84 | {ref}`P1I <step-050>`; strip {ref}`P1IS <step-051>` |
+| {ref}`RRPM <step-052>` / {ref}`RRPM <mask-rrpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`PRI <step-053>`; strip {ref}`PRIS <step-054>` |
+| {ref}`URPM <step-055>` / {ref}`URPM <mask-urpm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`UPRI <step-056>`; strip {ref}`UPRIS <step-057>` |
+| {ref}`P1M <step-061>` / {ref}`P1M <mask-p1m>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `P1MCD` N/A / `P1MCDSP` 0.14; "Endcap/Gap" `P1G` 0.15 / 0.21 | {ref}`P1ME <step-062>` |
+| {ref}`NTM <step-064>` / {ref}`NTM <mask-ntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NTMCD` 0.84 / `NTMCDSP` 0.7 | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`; strip {ref}`ASTIS <step-067>` |
+| {ref}`HVNTM <step-068>` / {ref}`HVNTM <mask-hvntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `HVNTMCD` 0.7 / `HVNTMCDSP` 0.7 | {ref}`HVASTI <step-069>`; strip {ref}`HVASTIS <step-070>` |
+| {ref}`LDNTM <step-071>` / {ref}`LDNTM <mask-ldntm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `LDNTMCD` 0.7 / `LDNTMCDSP` 0.7 | {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`; strip {ref}`LDASTIS <step-074>` |
+| {ref}`NPCM <step-078>` / {ref}`NPCM <mask-npcm>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `NPCMCD` 0.27 / `NPCMCDSP` 0.27 | {ref}`NPCME <step-079>` |
+| {ref}`PSDM <step-081>` / {ref}`PSDM <mask-psdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `PSDMCD` 0.38 / `PSDMCDSP` 0.38 | {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`; strip {ref}`PDIS <step-084>` |
+| {ref}`NSDM <step-085>` / {ref}`NSDM <mask-nsdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NSDMCD` 0.38 / `NSDMCDSP` 0.38 | {ref}`NSDI <step-086>`; strip {ref}`NSDIS <step-087>` |
+| {ref}`LICM1 <step-093>` / {ref}`LICM1 <mask-licm1>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | "Core" `LICM1CD` 0.19 / `LICM1CDSP` 0.35; "Slotted" `LICM1SLCD` 0.17 / `LICM1SLCDSP` 0.17 | {ref}`LICM1E <step-094>`, followed by {ref}`SACETCH <step-095>` |
+| {ref}`LI1M <step-102>` / {ref}`LI1M <mask-li1m>` | {ref}`KrF (248 nm) with OPC <machine-duv-krf-stepper>` (inference) | `LI1MCD` 0.17 / `LI1MCDSP` 0.17; "Core" 0.14 / 0.14 | {ref}`LI1ME <step-103>` |
+| {ref}`CTM1 <step-107>` / {ref}`CTM1 <mask-ctm1>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `CTM1CD` 0.17 / `CTM1CDSP` 0.19 | {ref}`CTME <step-108>` |
+| {ref}`MM1 <step-113>` / {ref}`MM1 <mask-mm1>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | `MM1CD` 0.14 / `MM1CDSP` 0.14 | {ref}`MM1E <step-114>` |
+| {ref}`VIM <step-118>` / {ref}`VIM <mask-vim>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIMCD` 0.15 / `VIMCDSP` 0.17 | {ref}`VIME <step-119>` |
+| {ref}`MM2 <step-124>` / {ref}`MM2 <mask-mm2>` | {ref}`KrF (248 nm) with resolution enhancement <machine-duv-krf-stepper>` (inference) | `MM2CD` 0.14 / `MM2CDSP` 0.14 | {ref}`MM2E <step-125>` |
+| {ref}`VIM2 <step-129>` / {ref}`VIM2 <mask-vim2>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM2CD` / `VIM2CDSP`: "Via 2-PLM" 0.2 / 0.2; "Via 2-TNV" 0.28 / 0.28; "Via 2-S8TM" 0.8 / 0.8 | {ref}`VIM2E <step-130>` |
+| {ref}`CAPM <step-137>` / {ref}`CAPM <mask-capm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `CAPMCD` 2 / `CAPMCDSP` 0.84 | {ref}`CAPME <step-138>` |
+| {ref}`MM3 <step-139>` / {ref}`MM3 <mask-mm3>` | {ref}`i-line <machine-i-line-stepper>` or {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (open) | `MM3CD` / `MM3CDSP`: "Metal 3-PLM" 0.3 / 0.3; "Metal 3-TLM" 0.36 / 0.36; "Metal 3-S8TM" 0.8 / 0.8 | {ref}`MM3E <step-140>` |
+| {ref}`VIM3 <step-144>` / {ref}`VIM3 <mask-vim3>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM3CD` 0.2 / `VIM3CDSP` 0.2 | {ref}`VIM3E <step-145>` |
+| {ref}`CAP2M <step-152>` / {ref}`CAP2M <mask-cap2m>` | {ref}`i-line <machine-i-line-stepper>` (inference) | none listed | {ref}`CAP2ME <step-153>` |
+| {ref}`MM4 <step-154>` / {ref}`MM4 <mask-mm4>` | {ref}`i-line <machine-i-line-stepper>` or {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (open) | `MM4CD` 0.3 / `MM4CDSP` 0.3 | {ref}`MM4E <step-155>` |
+| {ref}`VIM4 <step-159>` / {ref}`VIM4 <mask-vim4>` | {ref}`KrF (248 nm) <machine-duv-krf-stepper>` (inference) | `VIM4CD` 0.8 / `VIM4CDSP` 0.8 | {ref}`VIM4E <step-160>` |
+| {ref}`MM5 <step-162>` / {ref}`MM5 <mask-mm5>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `MM5CD` / `MM5CDSP`: "All flows except S8PF\*/S8PIR\*" 0.8 / 0.8; "S8PF\*/S8PIR\*" 1.6 / 1.6 | {ref}`MM5E <step-163>` |
+| {ref}`NSM <step-165>` / {ref}`NSM <mask-nsm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | `NSMCD` 3 / `NSMCDSP` 4 | {ref}`NSME <step-166>` |
+| {ref}`PDM <step-168>` / {ref}`PDM <mask-pdm>` | {ref}`i-line <machine-i-line-stepper>` (inference) | "Pad (scribe protect)" `PDMCD` 2 / `PDMCDSP` 1.27 | {ref}`PDME <step-169>` |
+:::
 
 ## Mask steps in this reference
 
@@ -175,6 +148,9 @@ In the table:
 * **Minimum CD** gives the feature and space values and their variable
   names from Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>).[^pdk-03]
 
+:::{table} The 36 mask steps: PDK mask entry, mask-level and drawn layers, patterned steps and minimum CD
+:widths: 8 20 20 16 20 16
+
 | Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |
 |------|------------------------|--------------------------------------|---------------------------------|----------|-----------------------------|
 | {ref}`FOM <step-004>` | Field Oxide, {ref}`FOM <mask-fom>` — `X` | `cfom` mask 23:0; `cfom` drawing 22:20, mask add 22:21, mask drop 22:22, waffle drop 22:24; `fom` dummy 22:23 | `diff` 65:20 and `tap` 65:44 *(inference)* | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>` | `FOMCD` 0.14 / `FOMCDSP` 0.27 |
@@ -213,6 +189,7 @@ In the table:
 | {ref}`MM5 <step-162>` | Metal 5, {ref}`MM5 <mask-mm5>` — `X` | `cmm5` mask 59:0; waffle drop 117:4 | `met5` 72:20 | {ref}`MM5E <step-163>` | `MM5CD` / `MM5CDSP`: "All flows except S8PF\*/S8PIR\*" 0.8 / 0.8; "S8PF\*/S8PIR\*" 1.6 / 1.6 |
 | {ref}`NSM <step-165>` | Nitride Seal Mask, {ref}`NSM <mask-nsm>` — `X` | `cnsm` mask 22:0 | `nsm` 61:20 | {ref}`NSME <step-166>` | `NSMCD` 3 / `NSMCDSP` 4 |
 | {ref}`PDM <step-168>` | Pad (scribe protect), {ref}`PDM <mask-pdm>` — `X`; Pad (scribe unprotect), PDM — *blank* | `cpdm` mask 37:0 | `pad` 76:20 | {ref}`PDME <step-169>` | "Pad (scribe protect)" `PDMCD` 2 / `PDMCDSP` 1.27 |
+:::
 
 Notes on the table:
 
@@ -733,6 +710,172 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
   met1");[^mask-renders] as noted in {ref}`masks-mpw-reticle-sets`, the
   numbers do not follow process order.
 
+## What the PDK publishes
+
+Four parts of the PDK documentation describe masks.
+
+* **The mask table.** The *Masks* page renders `masks.csv`, a
+  three-column table (`Mask`, `Acronym`, `Used in SKY130`) of 51 mask
+  entries "found on 130nm processes at SkyWater"; "The masks which are
+  used on the SKY130 technology node (that this PDK supports) are
+  marked", with an `X`.[^pdk-05] Thirty-four entries carry the mark.
+  Some acronyms appear more than once, as variants: `VIM2` three times
+  ("Via 2-TNV", "Via 2-S8TM", "Via 2-PLM"), `MM3` three times
+  ("Metal 3-TLM", "Metal 3-S8TM", "Metal 3-PLM") and `PDM` twice
+  ("Pad (scribe protect)", "Pad (scribe unprotect)"), each with only
+  one variant marked.[^pdk-05]
+* **The GDS layer table.** The *Layers Reference* renders
+  `gds_layers.csv`, which gives each layer's name, purpose, GDS
+  layer:datatype and description.[^pdk-06] It has two kinds of entry
+  that matter here. *Drawn* layers are what a designer draws — `nwell`
+  64:20 "N-well region", `met1` 68:20 "Metal 1", and so on. Under the
+  heading "Mask level data" it then lists 32 *mask-level* layers with
+  purpose `mask` and datatype 0, whose names start with `c` and whose
+  descriptions name a mask (`cfom` 23:0 "Field oxide mask", `cviam`
+  40:0 "Via mask", …), followed by `drawing`, `mask add`, `mask drop`
+  and `waffle drop` purposes for some of them.[^pdk-06] The periphery
+  rules restrict these layers in a layout: "Shapes on maskAdd or
+  maskDrop layers ("serifs") are allowed in core only" (x.9), and
+  "Drawn compatible, mask, and waffle-drop layers are allowed only
+  inside areaid:mt (i.e., etest modules)", the seal ring or the frame,
+  with the exception that "FOM/P1M/Metal waffle drop are allowed
+  inside the die" (x.15a).[^pdk-periph] The same page carries Table
+  F2b, a "Mask Generation table" that marks device by device which
+  mask levels are "CREATED" (`C`).[^pdk-06]
+* **The minimum-CD table.** Table 2 of *Criteria & Assumptions*,
+  "Minimum CDs in Design or on Wafer, required by Technology (Core or
+  Periphery)", repeats most of the mask names of `masks.csv` with a
+  feature size, a space size and a variable name for each (`VIMCD`,
+  `VIMCDSP`, …).[^pdk-03] The table has no unit column; this page
+  quotes the numbers as printed, which the step pages read as µm (the
+  periphery rules give the same 0.150 µm and 0.170 µm for via 1 as
+  `VIMCD` and `VIMCDSP`[^pdk-periph]). The pad documentation of the
+  SKY130 {term}`test tile` uses several of the values: gate-oxide
+  capacitors drawn at "FOM w/s = 0.14/0.27" (`FOMCD` / `FOMCDSP`),
+  N-well isolation structures that include "Nwell to Nwell Space =
+  1.27um" (`NWMCDSP`), and metal-5 test lines 1.6 µm wide labelled
+  "S8PIR/PF" (the "S8PF\*/S8PIR\*" row of `MM5CD` /
+  `MM5CDSP`).[^raw-data-testtile-pads] The table does not give a resist
+  tone for any mask.
+* **The design rules.** Each drawn layer's rule set in the periphery
+  rules opens with a "Function" line, and a few notes name masks
+  directly — for example "For SP8P\*/SKY130P\* (PLM) CADflow use MM4
+  for Metal Fuse".[^pdk-periph]
+
+What the PDK does *not* publish is a table that says which drawn
+layers, combined by which operations, generate each mask. The pairing
+of masks with drawn layers below is therefore made by correspondence
+of names and descriptions across the files, and where it needs more
+reasoning than that it is marked *(inference)* and explained on the
+step page. The one operation the PDK does state is for `hvntm`: "Drawn
+layer will be OR-ed with the CL and rechecked for CLDRC".[^pdk-periph]
+The PDK does not expand "CL" or "CLDRC". The periphery rules use the
+abbreviation again in their flag legend, where A means "Rule documents
+a functionality implemented in CL algorithms and may not be checked by
+DRC." and AD "Rule documents a functionality implemented in CL
+algorithms and checked by DRC.";[^pdk-periph] that fits a reading of CL
+as the mask-generation computation (our reading), and the
+{ref}`HVNTM <step-068>` page reads it as a computed layer. The PDK's *Error Messages* page lists checks on
+layers it calls `CLHVTPM`, `CLLVTNM`, `CLNTM` and `CLHVNTM` without
+defining them; for `CLHVTPM`, `CLLVTNM` and `CLHVNTM` the mask pages
+read them as created mask data (inference from the names), while for
+`CLNTM` the LDNTM page reads the checks only as constraints on the
+layer without saying how it is made. Either way, the checks say what
+those layers must cover or avoid, not how they are made
+({ref}`masks-derivations`).[^pdk-errors]
+
+## Open questions
+
+* The PDK does not publish the operations that generate each mask from
+  the drawn layers (apart from the `hvntm` note); the Error Messages
+  page's checks on the undefined `CLHVTPM`, `CLLVTNM`, `CLNTM` and
+  `CLHVNTM` layers give widths, spacings and what those layers must
+  enclose or avoid, not the operations.[^pdk-errors] Nor does it
+  publish what the
+  `drawing`, `mask add`, `mask drop` and `waffle drop` purposes
+  contribute when they sit on a different layer number from the `mask`
+  purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The
+  pairings marked *(inference)* rest on the step pages' readings. The
+  public renders use one derivation that differs from several of them,
+  and from the `HVTPM` and `LVTNM` pairings, and cite no source for it
+  ({ref}`masks-derivations`);[^mask-renders] which reading matches the
+  plates is not public.
+* `masks.csv` leaves the `Used in SKY130` field blank for `PWBM`,
+  `PWDEM` and `CAPM` and has no entry matching the
+  {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` and
+  {ref}`CAP2M <step-152>` mask steps of this reference, although the
+  layers their step pages pair them with (`rpm`, `urpm`, `cap2m`) exist
+  and, for `PWBM`, `PWDEM` and `CAPM`, rule sets and Table F2b columns
+  exist too.[^pdk-05][^pdk-06][^pdk-periph] The PDK does not explain
+  the difference. The process-steps sheet records plates for `RRPM`,
+  `URPM`, `CAPM` and `CAP2M` on all eight MPW runs, but for `PWBM` only
+  on MPW-6 and MPW-8 and for `PWDEM` only on MPW-6;[^steps-sheet] it
+  does not say why plates for the two P-well masks are recorded for
+  only some runs. No rendered die on any run draws `pwbm` or
+  `pwde`,[^mask-renders] so the renders do not show what those plates
+  carry.
+* `HVTRM` is marked, with a mask-level layer, a drawn layer and a
+  minimum CD, but has no mask step here; the PDK's layer description
+  ("High-Vt RF transistor implant") and rule-set function line ("Define
+  low VT adjust implant region for pmedlvtrf") do not settle what the
+  implant does.[^pdk-06][^pdk-periph] The process-steps sheet records
+  no `HVTRM` plate for any of MPW-1 to MPW-8,[^steps-sheet] and no
+  rendered die on those runs draws `hvtr`.[^mask-renders]
+* The PDK does not say at which stage, or where, the marked `PBO`,
+  `CU1M` and `PMM2` masks are used; their rules are published with the
+  WLCSP and redistribution rules,[^pdk-wlcsp][^pdk-periph] and the
+  process-steps sheet records no plate for any of them on MPW-1 to
+  MPW-8.[^steps-sheet]
+* The variant suffixes of `masks.csv` ("TNV", "S8TM", "PLM", "TLM")
+  are not defined on the *Masks* page;[^pdk-05] the
+  {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` pages give
+  readings.
+* Table 2 of *Criteria & Assumptions* has no unit column;[^pdk-03] the
+  µm reading rests on agreement with the periphery rules and the test
+  tile's pad documentation.[^pdk-periph][^raw-data-testtile-pads]
+* No PDK document gives the resist tone, reticle type (binary or
+  phase-shift) or exposure tool for any mask. The process-steps sheet
+  gives a coded reticle type for three masks only, which we read as
+  embedded attenuated phase-shift masks for via 2 and via 3 and a
+  binary mask for via 4, all for 248 nm exposure and, less certainly,
+  4×.[^steps-sheet][^photronics-abr] It names no resist tone or
+  exposure tool, and no type for the other masks. The
+  {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>` and
+  {ref}`VIM4 <step-159>` pages take up this reading; that the three
+  levels are exposed on KrF tools, via 4 included despite its 0.8 µm
+  size, remains an inference from the reticle types.
+  `gds_layers.csv` has an
+  `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
+  fab blocks and lithocal structures)"), which implies that automatic
+  OPC is applied;[^pdk-06] rule x.1a sets a grid of 0.001 (unit printed
+  as "mm") for "p1m.md (OPC)", among other layers, and for the "mask
+  data for p1m, met1, via, met2", against 0.005 for all other layers
+  (x.1b), but the PDK does not describe the correction
+  ({ref}`mask-p1m`);[^pdk-periph] the step pages and
+  the {ref}`lithography category page <category-lithography>` give
+  industry-generic readings.
+* The process-steps sheet records no plates for `CTM1`, `MM1`, `VIM`,
+  `VIM4` and `PDM` on MPW-5, and a different plate number for `NSM` on
+  MPW-6 ({ref}`masks-mpw-reticle-sets`);[^steps-sheet] it does not say
+  whether these are gaps in the record or differences between the
+  runs. It does not say what the three-digit plate numbers encode.
+* The sheet records plates for masks whose layers no rendered die of the
+  run draws — `TUNM`, `ONOM` and `LDNTM` on six runs, `RPM` on MPW-3,
+  `RRM` and `VIMC` on the runs without ReRAM layouts — and no public
+  source says what those plates carry (the renders omit whatever the
+  fab adds to a plate).[^steps-sheet][^mask-renders] The site renders no
+  `RRPM` image although a plate is recorded on every run.
+* Neither the renders site nor the sheet explains why they disagree on
+  which sets carry an `RRM` plate
+  ({ref}`masks-renders-sheet-notes`).[^mask-renders][^steps-sheet]
+* No public source lists the plates of the original MPW-4 set
+  `5CS8010AC`, whose layouts the renders show, or says how it differs
+  from `5CS8018AC`, whose plates the sheet records
+  ({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
+* The site's project counts for the shuttles (37 to 144) differ from
+  the 40 dies it renders for every run, and it does not explain the
+  difference.[^mask-renders]
+
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
 
@@ -835,100 +978,7 @@ not in that file, and the {ref}`overview-sky130b-reram` page reads
 * [Bruning, *Proc. SPIE* 2007](<https://doi.org/10.1117/12.720631>) — forty years of optical lithography
   tools that print masks onto wafers.[^bruning-2007]
 
-## Open questions
-
-* The PDK does not publish the operations that generate each mask from
-  the drawn layers (apart from the `hvntm` note); the Error Messages
-  page's checks on the undefined `CLHVTPM`, `CLLVTNM`, `CLNTM` and
-  `CLHVNTM` layers give widths, spacings and what those layers must
-  enclose or avoid, not the operations.[^pdk-errors] Nor does it
-  publish what the
-  `drawing`, `mask add`, `mask drop` and `waffle drop` purposes
-  contribute when they sit on a different layer number from the `mask`
-  purpose (`cp1m` 28:0 against 33:42–33:43, for example).[^pdk-06] The
-  pairings marked *(inference)* rest on the step pages' readings. The
-  public renders use one derivation that differs from several of them,
-  and from the `HVTPM` and `LVTNM` pairings, and cite no source for it
-  ({ref}`masks-derivations`);[^mask-renders] which reading matches the
-  plates is not public.
-* `masks.csv` leaves the `Used in SKY130` field blank for `PWBM`,
-  `PWDEM` and `CAPM` and has no entry matching the
-  {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` and
-  {ref}`CAP2M <step-152>` mask steps of this reference, although the
-  layers their step pages pair them with (`rpm`, `urpm`, `cap2m`) exist
-  and, for `PWBM`, `PWDEM` and `CAPM`, rule sets and Table F2b columns
-  exist too.[^pdk-05][^pdk-06][^pdk-periph] The PDK does not explain
-  the difference. The process-steps sheet records plates for `RRPM`,
-  `URPM`, `CAPM` and `CAP2M` on all eight MPW runs, but for `PWBM` only
-  on MPW-6 and MPW-8 and for `PWDEM` only on MPW-6;[^steps-sheet] it
-  does not say why plates for the two P-well masks are recorded for
-  only some runs. No rendered die on any run draws `pwbm` or
-  `pwde`,[^mask-renders] so the renders do not show what those plates
-  carry.
-* `HVTRM` is marked, with a mask-level layer, a drawn layer and a
-  minimum CD, but has no mask step here; the PDK's layer description
-  ("High-Vt RF transistor implant") and rule-set function line ("Define
-  low VT adjust implant region for pmedlvtrf") do not settle what the
-  implant does.[^pdk-06][^pdk-periph] The process-steps sheet records
-  no `HVTRM` plate for any of MPW-1 to MPW-8,[^steps-sheet] and no
-  rendered die on those runs draws `hvtr`.[^mask-renders]
-* The PDK does not say at which stage, or where, the marked `PBO`,
-  `CU1M` and `PMM2` masks are used; their rules are published with the
-  WLCSP and redistribution rules,[^pdk-wlcsp][^pdk-periph] and the
-  process-steps sheet records no plate for any of them on MPW-1 to
-  MPW-8.[^steps-sheet]
-* The variant suffixes of `masks.csv` ("TNV", "S8TM", "PLM", "TLM")
-  are not defined on the *Masks* page;[^pdk-05] the
-  {ref}`VIM2 <step-129>` and {ref}`MM3 <step-139>` pages give
-  readings.
-* Table 2 of *Criteria & Assumptions* has no unit column;[^pdk-03] the
-  µm reading rests on agreement with the periphery rules and the test
-  tile's pad documentation.[^pdk-periph][^raw-data-testtile-pads]
-* No PDK document gives the resist tone, reticle type (binary or
-  phase-shift) or exposure tool for any mask. The process-steps sheet
-  gives a coded reticle type for three masks only, which we read as
-  embedded attenuated phase-shift masks for via 2 and via 3 and a
-  binary mask for via 4, all for 248 nm exposure and, less certainly,
-  4×.[^steps-sheet][^photronics-abr] It names no resist tone or
-  exposure tool, and no type for the other masks. The
-  {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>` and
-  {ref}`VIM4 <step-159>` pages take up this reading; that the three
-  levels are exposed on KrF tools, via 4 included despite its 0.8 µm
-  size, remains an inference from the reticle types.
-  `gds_layers.csv` has an
-  `areaid.op` identifier (81:54, "OPC drop. Block automatic OPC (for
-  fab blocks and lithocal structures)"), which implies that automatic
-  OPC is applied;[^pdk-06] rule x.1a sets a grid of 0.001 (unit printed
-  as "mm") for "p1m.md (OPC)", among other layers, and for the "mask
-  data for p1m, met1, via, met2", against 0.005 for all other layers
-  (x.1b), but the PDK does not describe the correction
-  ({ref}`mask-p1m`);[^pdk-periph] the step pages and
-  the {ref}`lithography category page <category-lithography>` give
-  industry-generic readings.
-* The process-steps sheet records no plates for `CTM1`, `MM1`, `VIM`,
-  `VIM4` and `PDM` on MPW-5, and a different plate number for `NSM` on
-  MPW-6 ({ref}`masks-mpw-reticle-sets`);[^steps-sheet] it does not say
-  whether these are gaps in the record or differences between the
-  runs. It does not say what the three-digit plate numbers encode.
-* The sheet records plates for masks whose layers no rendered die of the
-  run draws — `TUNM`, `ONOM` and `LDNTM` on six runs, `RPM` on MPW-3,
-  `RRM` and `VIMC` on the runs without ReRAM layouts — and no public
-  source says what those plates carry (the renders omit whatever the
-  fab adds to a plate).[^steps-sheet][^mask-renders] The site renders no
-  `RRPM` image although a plate is recorded on every run.
-* Neither the renders site nor the sheet explains why they disagree on
-  which sets carry an `RRM` plate
-  ({ref}`masks-renders-sheet-notes`).[^mask-renders][^steps-sheet]
-* No public source lists the plates of the original MPW-4 set
-  `5CS8010AC`, whose layouts the renders show, or says how it differs
-  from `5CS8018AC`, whose plates the sheet records
-  ({ref}`masks-mpw-reticle-sets`).[^mask-renders][^steps-sheet]
-* The site's project counts for the shuttles (37 to 144) differ from
-  the 40 dies it renders for every run, and it does not explain the
-  difference.[^mask-renders]
-
 <!-- footnotes -->
-
 [^wiki-mask]: Wikipedia, *Photomask*.
     <https://en.wikipedia.org/wiki/Photomask>
 [^itrs-03]: International Technology Roadmap for Semiconductors, *2001

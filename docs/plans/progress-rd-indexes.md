@@ -235,7 +235,112 @@ design, present in both) — same expected repetition as the `markers` and
 `quotes` categories already declared for the machines index, not a new or
 upgraded hedge.
 
-## 3. Masks index — not started
+## 3. Masks index (`docs/masks/index.md`) — done
+
+**New order:** intro (unchanged; already short) → navigation (new `## Find a
+mask` H2, own heading, placed above the checked section per R-INDEX rule 3)
+→ detail (`## Mask steps in this reference` — the six checked columns
+untouched, wrapped in `:::{table}` with a caption; `## PDK masks and mask
+steps that do not correspond`; `## Plates recorded for the MPW runs`;
+`## What the mask-layer renders show`, all unchanged) → how-to-read
+(`## What the PDK publishes`, moved below, unchanged) → open questions
+(moved before references, was last on the source page) → references
+(generated block + `## References`, glued, unchanged) → footnote
+definitions (kept as the true last block on the page — see the bug below).
+
+**Navigation table** (`## Find a mask`): one row per of the 36 mask steps,
+built from two sources, no new facts: `Step no.`/`Mask page` (merged into one
+column — see below), `Min. CD` and `Steps patterned` reused verbatim from the
+checked table's own `Minimum CD` and `Patterns` cells; `Exposure class` is
+new to this page but sourced from each of the 36 mask pages' own
+`Exposure class` quick-facts row — the primary class name (text up to its
+first comma) as a link to the machine page already named in that same
+sentence, with a uniform `(inference)` (all 36 are hedged this way; none of
+them names a public source for the tool) except `MM3`/`MM4`, whose step
+pages explicitly leave the class open between i-line and KrF, shown as
+`i-line or KrF (248 nm) (open)` linking both.
+
+**Column budget fix.** The task's named columns (`Step no. | Mask page |
+Exposure class | Min. CD | Steps patterned`, 5 columns) overflowed
+horizontally at 400 px — confirmed by rendering, not assumed; wrapping in
+`:::{table}` with `:widths:` did not fix it by itself. Since `Step no.` and
+`Mask page` are, by construction, always the same code (the mask page link
+is literally built from the step's own code), they were merged into one
+column `Step no. / mask page` with the two links side by side; the resulting
+4-column table fits at 400 px with no horizontal scroll. **Guide problem to
+flag:** the guide's phone-width column budget (§1: "≤ 3 if any column holds
+prose; ≤ 5 if every cell is a number, code or ≤ 3 words") did not predict
+this — every cell here is short (a code, a class name, a CD pair, a short
+step-link list) and the table still overflowed at 5 columns; the budget
+table needs a caveat, or the "pass the phone test" instruction needs to be
+weighted above the column count for a table whose cells carry several
+`{ref}` links each (as `Steps patterned` does).
+
+**Bug found and fixed: footnote-definitions block must stay last.**
+Moving `## Open questions` above `## References`/the generated block (as
+R-INDEX orders them) also moved its **trailing footnote-definitions block**
+with it, since on this page (like every page in the project) the
+`<!-- footnotes -->` comment and all `[^label]:` definitions sit at the very
+end, physically after whatever heading happens to be last. Doing this
+produced `check_preserved.py --allow-added markers,numbers,quotes,identifiers,number_order`
+output that looked like near-total content loss — dozens of `LOST markers`,
+`LOST footnotes`, `LOST urls`, `LOST refs`, matching almost every citation in
+the References section. Root-caused before accepting anything: definition
+count was unchanged (39 `^\[\^` lines before and after), so nothing was
+actually deleted; the real effect is that `check_preserved.py`'s footnote
+scanner reads from the **first** `[^label]:` line to end-of-file as one
+continuous definitions region (this is how every page's own last footnote
+definition + trailing whitespace is meant to work), and once the References
+section and the generated block were relocated to sit **after** the first
+definition line, their citation bullets were swallowed into that region and
+read as (nonsensical, multi-KB) continuations of the last definition instead
+of body content — hence "added" one giant garbled footnote and "lost"
+everything that used to be separately-scanned body text. **Fix:** split
+`## Open questions` from the `<!-- footnotes -->` marker and definitions
+that trailed it; move only the open-questions prose, and re-append the
+footnote-definitions block, unchanged, as the page's true final block (after
+references, as on every other page). After the fix, `check_preserved.py`
+(coordinator's updated copy, run against this worktree, reverted after, not
+committed here) reports 0 undeclared differences with `markers, numbers,
+quotes, identifiers, number_order, refs, hedges` declared: `refs` for the 36
+new `mask-*`/`step-*` targets the nav table duplicates from the checked
+table below it; `hedges` for `inference` (this page never used that word
+before; the Exposure class column is new here, and every occurrence
+faithfully copies its source mask page's own hedge, never upgrading it).
+**Guide problem to flag:** this is a second, independent case (after the
+machines-index caption bug) of an R-INDEX reorder silently producing
+`check_preserved.py` results so large they look like a broken edit rather
+than a heuristic artifact; §7's instructions to "read the printout" are
+right, but the guide should warn explicitly that moving a page's *last*
+section moves its footnote-definitions block along with it unless split out
+by hand, since nothing in the checkers or the build catches this (only
+`check_preserved.py`'s own report, and only if actually read rather than
+skimmed for a pass/fail count).
+
+**Checkers:** `check_masks.py` 0 problems (one intermediate run, before the
+footnote fix, still reported 0 — the checker does not depend on footnote
+position at all, which is exactly why this bug was invisible to it).
+`check_steps.py`, `check_refs.py`, `check_machines.py`, `check_materials.py`,
+`check_inforce.py`, `gen_index_links.py --check`, `gen_step_tables.py
+--check`: all 0 problems throughout. `-W` build clean (no warnings at any
+point for this page — the header-level bug from the materials index did not
+recur here since no new heading level was introduced). Rendered
+`masks/index.html` at desktop and 400 px: the checked six-column table and
+its new caption render correctly at both widths (this table's own phone
+rendering was not re-tested at 400 px beyond the nav-table fix above; its
+column count and content are unchanged from `main`, so its phone behaviour,
+whatever it is, is pre-existing and out of this branch's scope — see the
+open point below).
+
+**Pre-existing site issue noticed, not touched:** the checked six-column
+table (`Mask steps in this reference`) itself appears to overflow
+horizontally at 400 px in a full-page phone capture (only 4 of 6 columns
+visible in the tile). Its columns and cell content are untouched by this
+branch (rule 15/R-INDEX: none of the six checked columns may move); this is
+almost certainly a pre-existing condition, not a regression, since nothing
+about the table's shape changed, only a caption was added above it. Flagged
+for the coordinator rather than fixed, since fixing it would mean touching
+checker-fixed columns, out of scope here.
 
 ## 4. Remaining captions and prose limits — not started
 
