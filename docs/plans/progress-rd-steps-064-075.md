@@ -769,6 +769,13 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
   ("so the sidewalls facing the beam are implanted through their whole height (inference)"). Kept
   verbatim (they were one sentence in the base; the split at ", and we read" left each clause with its
   own wording).
+* `072-ldasti.md` against `071-ldntm.md` (review C2): 072's *Why this step exists* states the
+  leakage argument unhedged ("So a heavily doped abrupt tip at the gate edge would leak by band-to-band
+  tunnelling and inject unwanted charge into the nitride, …"), while 071's Open questions calls the same
+  junction-leakage and disturb argument "our reading of the cell's published operating voltages; no
+  public source states why the SONOS tip is lightly doped". 071's glance box carries the hedge; 072's
+  body does not. Both kept verbatim; the owner should decide whether 072's Why wants "on this
+  reference's reading".
 * Figure captions (generated) were not touched. Of the S6 figure agent's other points (field-oxide step,
   halo colour, 079 lead, no PMOS in the slice) none concerns a page in this batch.
 * Arithmetic re-checked while copying, all consistent: 064 k₁ = 0.7 × 0.6 / 0.365 ≈ 1.15 ("≈ 1.2"); 065
@@ -831,3 +838,20 @@ One commit each.
   exposure once gates exist.", where it stands, and not the over-ashing sentence; repeating it there would
   attribute to Wikipedia a claim it does not make. The over-ashing sentence is this reference's own
   reasoning and had no separate marker in the base either.
+
+## For the tool branch (review D3, D4; the tool is not edited here)
+
+* **D3, `check_preserved.py` and line wrapping.** "Flatten whitespace (newlines and runs of spaces to one
+  space) before the number tokenizer runs, so that `400 –\n1200°C` and `400 – 1200°C` yield the same
+  tokens. Add a self-test pair that differs only in where the line breaks. G15 (a role and a code span on
+  one line) is still open from batch 3; the same flattening test should cover it." Guide §7 step 4, once
+  the coordinator adds it: "A LOST/ADDED pair whose text is identical once wrapping is ignored is the
+  tool's; re-wrap as the base did and say so in the progress file."
+* **D4, `check_preserved.py` does not see dropped words.** "Add `--words`: a multiset diff of word tokens
+  outside the glance box, recap table, References and footnote definitions. Print every lost word with
+  40 characters of base context. Accept an allowlist file of structural words (`Strength`, `Mask page`,
+  joining `and`/`which`, case changes at a split)." Guide §8 and §7 step 4, once the coordinator adds it:
+  "Run `check_preserved.py --words` (until it exists, a word-multiset diff) and account for every lost
+  word in the progress file."
+* **Guide rulings applied in this branch** (one commit each, wording as the review gives it): D1
+  R-DERIVATION step 1; D2 the §4.1 lead footnote; D5 R-TOOLS step 2; D6 R-OPENQ step 2; D7 R-PARA step 2.
