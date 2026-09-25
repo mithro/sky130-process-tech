@@ -259,3 +259,45 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   "result" sentence) and the Steps-section sentence above; the quick-facts Polarity cell. Before →
   after: paragraphs 10 → 0, items 0 → 0, sentences 22 → 6, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 5. onom — done (page with four in-force notes)
+
+* **Rules applied.** R-INTRO (171 → 50 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST (the
+  Cypress stack figures, the Table F2b marks, the generic Error Messages checks — markers on the
+  lead-ins); R-RELATED; R-H3 (Exposure class, Resist and tone, Overlay and alignment, Pattern
+  transfer).
+* **R-PARAMS not applied:** the design-rules paragraph names two parameters (`ONOMCD`, `ONOMCDSP`).
+* **In-force notes.** All four `{dropdown}` blocks byte-identical (diff of the fenced blocks against the
+  base). Each of the three in the body still follows the paragraph whose pointer sentence ("… in the
+  collapsed note below this paragraph") names it: the island paragraph was split before "Cypress's
+  integration patent …", the pattern-transfer paragraph before "The Cypress integration patent …", so
+  the pointer and the sentence after it stay in the last paragraph above each note; the resist pointer
+  was split from the sentence before it at its semicolon only. No heading, table or figure sits between
+  a pointer paragraph and its note.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer": it now
+  follows the resist note and precedes the pattern-transfer paragraphs and their note. The
+  pattern-transfer passage's "(above)" points at the first note, in `## What the mask defines`, which is
+  still above it.
+* **Intro.** Kept the first sentence up to its colon and the whole reading ("On the ONOM page's
+  reading, the resist … before the logic gate oxides are grown.", 38 words). "The PDK lists the mask
+  …" and "Like the tunnel mask, it has a plate recorded …" moved unchanged to the top of the body.
+* **Declared additions** (`--allow-added markers,numbers`): markers `mask-renders` (render sentence),
+  `pdk-errors` (Error Messages "describes"), `pdk-06` (first Open question split at its semicolon; its
+  first half names the `conom` drawing purpose 87:44 of `gds_layers.csv`); numbers `15`, `3` (x.15a and
+  tunm.3 in the rule-table caption, copied from the lead-in).
+* **Marker coverage.** Flags read: list items under lead-in markers, "The site gives no source for
+  either statement." and "So a design inside the die …" (no marker of their own in the base), the
+  second "On the step pages' readings …" sentence (the hedge repeated; "(inference on the step page)"
+  stays with the island clause it closed).
+* **Over the caps after the pass:** "We read the identical columns as consistent …" (47; its closing
+  12-word parenthetical is the hedge, and a split would separate "since the table gives …" from what it
+  supports); the first sentence of the "Plates on runs with no drawn `tunm`" bullet (46, six run names
+  counted as words); two quick-facts cells. Before → after: paragraphs 10 → 0, items 1 → 0, sentences
+  14 → 2, cells 2 → 2.
+* **Content problem for the owner (not changed):** outside the collapsed notes, the base already
+  paraphrases their content — "says the same of its own flow", "describes the same combination and
+  notes what the wet step does to the masked region", "The undercut it describes shrinks the island's
+  overlap of the window, which is why the patent calls the dimensions and alignment of the two
+  important (above)". `check_inforce.py` passes (no number, title or listed phrase), but §2.5 forbids
+  paraphrasing a collapsed note outside it. Left word for word; the owner may want those sentences
+  looked at.

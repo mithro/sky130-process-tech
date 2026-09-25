@@ -2,20 +2,11 @@
 # ONOM — ONO Mask
 
 The ONO mask is the second {term}`reticle` of SKY130's {term}`SONOS`
-memory module: on the {ref}`ONOM <step-041>` page's reading, the resist
+memory module. On the {ref}`ONOM <step-041>` page's reading, the resist
 printed through it at step 41 leaves islands over the memory transistors,
 and {ref}`ONOME <step-042>` etches the oxide–nitride–oxide stack grown at
 {ref}`ONO <step-040>` away from everywhere else before the logic gate
-oxides are grown. The PDK lists the mask and a mask-level layer but no
-drawn layer and no rules for it, so what the plate carries is a reading
-from the tunnel-mask layer it must enclose. Like the
-{ref}`tunnel mask <mask-tunm>`, it has a plate recorded on all eight MPW
-runs while the public renders show its layer on one die of MPW-1 and one
-of MPW-5 only. This page gathers what public sources say about the mask
-itself — its PDK entry and layers, the plates the process-steps sheet
-records, what the public renders show, the lithography it needs and the
-rules that constrain it. How the step is performed is on the step page;
-every mask is indexed on the {ref}`masks index <masks-index>`.
+oxides are grown.
 
 | | ONOM — ONO Mask |
 |---|---|
@@ -32,27 +23,52 @@ every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 1, 0, 0, 0, 1, 0, 0, 0[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-onom-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page;
+every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The PDK lists the mask and a mask-level layer but no
+drawn layer and no rules for it, so what the plate carries is a reading
+from the tunnel-mask layer it must enclose. Like the
+{ref}`tunnel mask <mask-tunm>`, it has a plate recorded on all eight MPW
+runs while the public renders show its layer on one die of MPW-1 and one
+of MPW-5 only.
 
 The mask defines where the charge-trapping stack survives. On the step
 pages' readings the {ref}`ONO <step-040>` step coats the whole wafer
 with a tunnel oxide, a nitride or oxynitride trapping layer and a
-blocking oxide, and the {ref}`ONOM <step-041>` resist keeps that stack
+blocking oxide. On the step
+pages' readings the {ref}`ONOM <step-041>` resist keeps that stack
 only as islands over the memory transistors, each enclosing a tunnel
 window opened at {ref}`TUNM <step-035>` (inference on the step page).
-A Cypress patent gives the order of magnitude of such a stack: in one
-embodiment a tunnel dielectric of "less than about 25 Å" and a charge
-storing layer of "less than about 200 Å, preferably less than about
-150 Å, more preferably less than about 100 Å", and in another a top
-insulating layer of "about 100 Å, preferably less than about
-50 Å";[^pat-01] SKY130's thicknesses are not public.
+
+A Cypress patent gives the order of magnitude of such a stack:[^pat-01]
+
+* in one
+  embodiment a tunnel dielectric of "less than about 25 Å" and a charge
+  storing layer of "less than about 200 Å, preferably less than about
+  150 Å, more preferably less than about 100 Å"
+* in another a top
+  insulating layer of "about 100 Å, preferably less than about
+  50 Å"
+
+SKY130's thicknesses are not public.
 
 The PDK's mask generation table, Table F2b, marks the `ONOM` column
-exactly as it marks `TUNM`: `C` ("CREATED") in the two "SONOS fet" rows,
-the two "NV SONOS fet" rows and the "NV SONOS Diode" row, `-` ("Layer
-not created for the device") in 44 rows including every 1.8 V, 5 V and
-high-voltage transistor row and the two "Flash npass" rows, and `+` in
-the other 31.[^pdk-06] We read the identical columns as consistent with
+exactly as it marks `TUNM`:[^pdk-06]
+
+* `C` ("CREATED") in the two "SONOS fet" rows,
+  the two "NV SONOS fet" rows and the "NV SONOS Diode" row
+* `-` ("Layer
+  not created for the device") in 44 rows including every 1.8 V, 5 V and
+  high-voltage transistor row and the two "Flash npass" rows
+* `+` in
+  the other 31
+
+We read the identical columns as consistent with
 the step page's derivation of the island from the tunnel window, since
 the table gives no device a created `ONOM` shape without a created
 `TUNM` shape (our reading of the table, which does not say how either
@@ -63,7 +79,9 @@ The island has two jobs on the step pages' readings. It must enclose the
 window with margin, because inside the window the silicon carries only
 the tunnel oxide; and it must keep the stack off every logic channel,
 whose gate oxide is grown afterwards at {ref}`GOX100 <step-043>` and
-{ref}`LVGOX <step-047>`. Cypress's integration patent, which may still
+{ref}`LVGOX <step-047>`.
+
+Cypress's integration patent, which may still
 be in force, says the same of its own flow; the passage is in the
 collapsed note below this paragraph. What the mask does not define is the gate of the
 memory transistor: the {ref}`ONOME <step-042>` page reads the islands as
@@ -85,26 +103,33 @@ charge trapping dielectric stack 306 are important."[^pat-03]
 `gds_layers.csv` gives the mask-level layer `conom` two purposes: `mask`
 at 88:0 ("ONO Mask") and `drawing` at 87:44, which has no
 description.[^pdk-06] Layer number 88 also carries the `chvtpm` drawing
-purpose, 88:44 ({ref}`masks-index`). There is no drawn layer named
+purpose, 88:44 ({ref}`masks-index`).
+
+There is no drawn layer named
 `onom`, the periphery rules have no `onom` or `conom` rule set, and no
 rule names the mask.[^pdk-06][^pdk-periph] The
 {ref}`ONOM <step-041>` page therefore infers that the plate is generated
 from `tunm` by oversizing, so that the island always encloses the
 window, and the masks index records the pairing with `tunm` as an
 inference; the PDK publishes neither the operation nor the oversize.
+
 Rule x.15a confines "Drawn compatible, mask, and waffle-drop layers" to
 test modules, the seal ring and the frame, with the exception
 "FOM/P1M/Metal waffle drop are allowed inside the die" (flag
-P),[^pdk-periph] so a design inside the die cannot use the `conom`
+P).[^pdk-periph] So a design inside the die cannot use the `conom`
 drawing purpose to shape the islands (our reading of x.15a).
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", names the layer only in generic checks: "off
-0.005 grid conom vertex" and "off 0.005 grid ONOMmk vertex" (x.1b),
-"non-octagonal conom edge" and "non-octagonal ONOMmk edge" (x.3a), and
-"X.15a: layer conom allowed inside areaid:mt or inside areaid.sl or
-inside areaid.ft" with the same message for `ONOMmk`.[^pdk-errors] It
+criteria for GDS data".[^pdk-errors] It names the layer only in generic checks:[^pdk-errors]
+
+* "off
+  0.005 grid conom vertex" and "off 0.005 grid ONOMmk vertex" (x.1b)
+* "non-octagonal conom edge" and "non-octagonal ONOMmk edge" (x.3a)
+* "X.15a: layer conom allowed inside areaid:mt or inside areaid.sl or
+  inside areaid.ft" with the same message for `ONOMmk`
+
+The page
 lists no width, spacing or enclosure check for `conom` or `ONOMmk`, and
 no "nikon cross" check for it.[^pdk-errors] Apart from `ONOMCD` and
 `ONOMCDSP` in Table 2, no row of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) names the
@@ -115,25 +140,31 @@ mask.[^pdk-03]
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `ONOM` the site renders layer 80:20 (`tunm`)
-alone, with no Boolean expression and no fill layer, on all eight runs;
-its mask record gives the mask-level layer 88:0 and the note "ONOM =
+alone, with no Boolean expression and no fill layer, on all eight runs.[^mask-renders]
+Its mask record gives the mask-level layer 88:0 and the note "ONOM =
 tunm sized by clonom.3 (conom 87:44 is the fab's precomputed layer, not
-drawn)".[^mask-renders] Neither the periphery rules nor the Error
+drawn)".[^mask-renders]
+
+Neither the periphery rules nor the Error
 Messages page contains a rule named `clonom.3`, and `gds_layers.csv`
 lists 87:44 as a `conom` drawing purpose without saying what it
-holds;[^pdk-periph][^pdk-errors][^pdk-06] the site gives no source for
+holds.[^pdk-periph][^pdk-errors][^pdk-06] The site gives no source for
 either statement. The render jobs list only the drawn layer, with no
 sizing step, so, as the {ref}`masks index <masks-renders>` reads the
-site in general, the images are unsized `tunm`. The note and the choice
+site in general, the images are unsized `tunm`.
+
+The note and the choice
 of layer are one public derivation from the drawn data, not SkyWater's
-mask-generation recipe; they agree with the step page's derivation from
+mask-generation recipe. They agree with the step page's derivation from
 `tunm`, but both start from the same public PDK files, so the agreement
 is not independent.
 
 Because the layer is the tunnel mask's, the `ONOM` renders show exactly
 the `TUNM` renders: MPW-1, frame A4, with 4 shapes, and MPW-5, frame D7,
 with 16, and no shapes on any die of the other six runs.[^mask-renders]
-They carry no information about the islands beyond that. The site
+They carry no information about the islands beyond that.
+
+The site
 states the limits of its images: "These are renders of *drawn* data, not
 photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
 features the fab adds are not modelled. Empty images are real results -
@@ -164,7 +195,9 @@ the reticle set is the heading of the run's columns in the tab
 * **Plates on runs with no drawn `tunm`.** A plate is recorded on MPW-2,
   MPW-3, MPW-4, MPW-6, MPW-7 and MPW-8, on which no rendered die draws
   `tunm`, the layer the renders and the step page use for this mask, as
-  well as on MPW-1 and MPW-5.[^steps-sheet][^mask-renders] The renders
+  well as on MPW-1 and MPW-5.[^steps-sheet][^mask-renders]
+
+  The renders
   leave out whatever the fab adds to a plate, so they cannot show what
   those six plates carry, and no public source says ({ref}`masks-renders`).
 * **Plate number.** `230` is higher than `210` for `P1M` (step 61) and
@@ -181,25 +214,30 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`ONOM <step-041>` page reads the islands as
+### Exposure class
+
+The {ref}`ONOM <step-041>` page reads the islands as
 the 0.410 µm tunnel windows grown by a margin that is not public, a
 relaxed layer, and infers an i-line exposure as for
 {ref}`TUNM <step-035>`; the {ref}`i-line stepper <machine-i-line-stepper>`
 page lists it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
+
 Table 2's `ONOMCD` of 0.41 would put the smallest island at
 {math}`k_1 \approx 0.54` at NA 0.48, the low end of ASML's
-PAS 5500/275D[^asml-pas5500-275d] (our arithmetic), and Wong et al.'s
+PAS 5500/275D[^asml-pas5500-275d] (our arithmetic). Wong et al.'s
 mask error factor, which "increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
 patterns",[^wong-1998] would stay near unity down to about 0.38 µm at
 that NA (our arithmetic).
 
-**Resist.** The {ref}`ONOM <step-041>` page reads a positive i-line
+### Resist and tone
+
+The {ref}`ONOM <step-041>` page reads a positive i-line
 resist of about 1 µm, the PDK's generic "Photoresist thickness" being
 1.14 µm,[^pdk-03] with etch selectivity rather than implant stopping
 setting the thickness, and leaves open whether an anti-reflective coating
-is used; what the Cypress integration patent, which may still be in
+is used. What the Cypress integration patent, which may still be in
 force, uses is in the collapsed note below this paragraph. The surface
 under the resist is the blocking oxide of the stack. SkyWater's resist
 and any ARC are not public; the consumables are on the
@@ -211,16 +249,32 @@ anti-reflective coating (ARC)" that is dry-etched with the
 stack.[^pat-03]
 :::
 
-**Pattern transfer.** On the step pages' readings the pattern is
+### Overlay and alignment
+
+The {ref}`ONOM <step-041>` page infers that the critical
+overlay of this mask is to the tunnel mask rather than to active, which
+is unusual in the flow, and that overlay would be measured to the `TUNM`
+layer. The PDK publishes no enclosure of the window by the island, so
+the overlay budget is not public; ASML specifies "≤ 40 nm" single-machine
+overlay for the /275D stepper.[^asml-pas5500-275d] Starikov analysed the
+accuracy of overlay measurements,[^starikov-1992] and van Haren et al.
+show how alignment-mark placement accuracy limits layer-to-layer
+overlay.[^van-haren-2019]
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
 transferred by {ref}`ONOME <step-042>`: a plasma etch of the top oxide
 and the nitride that stops on the oxide beneath, on the
 {ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
 or {ref}`dielectric and nitride plasma etcher <machine-plasma-etcher-dielectric>`
-class, followed by a wet clearing of the remaining oxide on the
+class. On the step pages' readings it is followed by a wet clearing of the remaining oxide on the
 {ref}`wet bench <machine-wet-bench>` class, with the resist strip and
 pre-gate-oxide clean treated as part of that step. Regis et al. report a
 nitride etch "with high selectivity to oxide" of the kind such a stop
-needs.[^regis-1997] The Cypress integration patent, which may still be
+needs.[^regis-1997]
+
+The Cypress integration patent, which may still be
 in force, describes the same combination and notes what the wet step
 does to the masked region; the passage is in the collapsed note below
 this paragraph. The undercut it describes shrinks the island's overlap
@@ -235,16 +289,6 @@ layer 303. In a subsequent wet etch operation, an etchant, such as BOE,
 is employed to clear sacrificial dielectric layer 303" — and notes that
 "the isotropic wet etch may undercut the masked region".[^pat-03]
 :::
-
-**Overlay.** The {ref}`ONOM <step-041>` page infers that the critical
-overlay of this mask is to the tunnel mask rather than to active, which
-is unusual in the flow, and that overlay would be measured to the `TUNM`
-layer. The PDK publishes no enclosure of the window by the island, so
-the overlay budget is not public; ASML specifies "≤ 40 nm" single-machine
-overlay for the /275D stepper.[^asml-pas5500-275d] Starikov analysed the
-accuracy of overlay measurements,[^starikov-1992] and van Haren et al.
-show how alignment-mark placement accuracy limits layer-to-layer
-overlay.[^van-haren-2019]
 
 (mask-onom-steps)=
 ## Steps that use this mask
@@ -279,6 +323,8 @@ name “\*_tech_CD_top\*”", and flag P "Rule applies to periphery only
 (outside areaid.ce). A corresponding core rule may or may not exist.".
 The unit column of tunm.3 is blank in the published table.[^pdk-periph]
 
+:::{table} The `tunm` rules the step page derives the islands from, with rule x.15a, as published; the unit column of tunm.3 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | tunm.1 | "Min width of tunm" | 0.410 µm |
@@ -288,6 +334,7 @@ The unit column of tunm.3 is blank in the published table.[^pdk-periph]
 | tunm.6a | "Tunm outside deep n-well is not allowed" (TC) | — |
 | tunm.8 | "tunm must be enclosed by areaid.ce" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* gives `ONOMCD` 0.41 and `ONOMCDSP`
 0.5, the same values as `TUNMCD` and `TUNMCDSP` and as rules tunm.1 and
@@ -295,28 +342,26 @@ tunm.2.[^pdk-03][^pdk-periph] The table does not say whether these are
 the island's own minima or carried over from the tunnel layer. On the
 step page's reading the islands are larger than the windows by an
 undisclosed margin, so the plate's smallest features would be the
-windows' minima plus that margin (inference), and the step page reads
+windows' minima plus that margin (inference). The step page reads
 tunm.8 as confining the islands, like the windows, to the memory blocks
 marked `areaid.ce`.
 
 ## Related pages
 
-* {ref}`ONOM <step-041>` and {ref}`ONOME <step-042>` — the mask step and
+* **Steps.** {ref}`ONOM <step-041>` and {ref}`ONOME <step-042>` — the mask step and
   the stack etch; {ref}`ONO <step-040>` — the stack patterned.
-* {ref}`mask-tunm` — the tunnel mask, whose windows the islands enclose
-  and whose layer the step page and the renders use for this mask.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the runs whose plates have no drawn shapes.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-silicon` and
-  {ref}`machine-plasma-etcher-dielectric` — the etch classes that
-  transfer the pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — overlay to the tunnel mask.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-silicon` and
+  {ref}`machine-plasma-etcher-dielectric` — the etch classes that
+  transfer the pattern. {ref}`machine-cd-sem-overlay-metrology` — overlay to the tunnel mask.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-tunm` — the tunnel mask, whose windows the islands enclose
+  and whose layer the step page and the renders use for this mask.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the runs whose plates have no drawn shapes.
 
 ## References
 
@@ -390,7 +435,7 @@ marked `areaid.ce`.
 
 * The operation that makes the `conom` plate data, the oversize of the
   islands over the windows and what the `conom` drawing purpose 87:44
-  holds are not published; the renders site's note names a "clonom.3"
+  holds are not published.[^pdk-06] The renders site's note names a "clonom.3"
   that neither the periphery rules nor the Error Messages page contains,
   and calls 87:44 a precomputed layer without a
   source.[^pdk-06][^pdk-periph][^pdk-errors][^mask-renders]
