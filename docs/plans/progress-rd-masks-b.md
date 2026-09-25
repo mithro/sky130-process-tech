@@ -337,3 +337,43 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   marker); the quoted x.1a rule cell. Before → after: paragraphs 9 → 0, items 0 → 0, sentences 9 → 2,
   cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 7. pdm — done (page with two in-force notes)
+
+* **Rules applied.** R-INTRO (207 → 53 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST
+  (the `gds_layers.csv` layers beside `pad`, the Error Messages pad checks, the e-test pad checks, the
+  Table 9 "CD" criteria — markers on the lead-ins); R-RELATED; R-H3 (Exposure class, The plate and its
+  tolerance, Resist and tone, Overlay and alignment, Pattern transfer). The bold run-ins under
+  `## What the mask defines` (Test pads and the scribe, Polyimide …, Fuses, Variants) stay bold.
+* **R-PARAMS not applied:** the design-rules paragraph gives values for three parameters (`PDMCD`,
+  `PDMCDSP`, `PdmCD_tol`) and names two more without values; the Table 9 criteria sit in
+  `## What the mask defines` and became a list there.
+* **In-force notes.** Both byte-identical (diff against the base). The scribe paragraph was split so
+  that its last paragraph ("Lee found … A TSMC patent that may still be in force is cited here too, in
+  the collapsed note below this paragraph.") is still the one directly above the note.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **Intro.** Kept the first sentence up to its colon and the whole reading (43 words). The `masks.csv`
+  sentence (split at ", and the process-steps sheet") and "The features are large — … —" (its dash pair
+  became a colon and a full stop) moved to the top of the body.
+* **Error Messages list.** The base sentence ran "It requires …; it gives a bond pad chamfered corners
+  — … — a "150.0um Max Width/Length …" …; and it words pad.3 as …". The items keep their own "it
+  requires / it gives / it words"; the second "it gives" item repeats the verb for the size checks that
+  followed the dash pair.
+* **Declared additions** (`--allow-added markers,numbers,hedges`): markers `caravel-sealring` and hedge
+  `our reading` (the sub-cell sentence's dash clause "— the opposite form from the cross it draws on
+  `cnsm` … —" became "That is the opposite form …", the hedge and marker repeated), `mask-renders` ×3
+  (render sentence; the per-die counts split at their semicolons), `pdk-03` ×2 (Table 9 "space" and Table
+  7 sentences), `pdk-06` (the Table C3 / `gds_layers.csv` sentence split), `pdk-errors` ×2 (Error
+  Messages "describes"; `PDMmk` / "It also checks" split); number `9` ("In its column headed "space"
+  Table 9 gives", the pronoun after the list given its noun back).
+* **LOST lines that are not losses:** `number_order` ('9', '0.5', '4.5', '7.5', '87', '0', '0.5',
+  '19.16', '10', '7', '0') is the Table 9 list with the repeated "Table 9"; same values, same order.
+* **Wording at splits.** "; scribe.21, which keeps …" → ". Rule scribe.21, which keeps …" (a rule id is
+  not capitalised); "It also notes that this is the only mask printed after the passivation nitride" →
+  "The page also notes …" (after the dark-field sentence split off).
+* **Over the caps after the pass:** four sentences the script over-counts (the Table F4 and WLCSP
+  sentences, mostly quotations; the sub-cell sentence at 49 with its numbers; the Exposure-class formula)
+  and the second Open question (50, its three markers cover the renders note and the unpublished
+  operation together, so it was not split); the quick-facts Polarity cell and the quoted x.9 cell.
+  Before → after: paragraphs 12 → 0, items 1 → 0, sentences 24 → 5, cells 2 → 2.
+* **Content problems for the owner:** none found.
