@@ -53,20 +53,22 @@ and silica tubes "serve as chemically pure reaction chambers, as gas or
 liquid inlets or as transportation pipes", and offers grades up to
 synthetic silica of "parts per billion class purity".[^heraeus-tubes]
 
-The design of the ware is process-critical: a Tokyo Electron boat
-supports wafers on rings so that "a surface defect called a slip
-generated when the wafer is heat treated can be eliminated";[^pat-boat-tel]
-a Tokyo Electron furnace stands the boat on "thin heat insulation plates"
-above the furnace throat;[^pat-vf-insulation-tel] and a Kokusai patent
-adds a boat cover inside the inner and outer tubes of an LPCVD furnace
-so that the film "is improved in uniformity and
-homogeneity".[^pat-lpcvd-kokusai]
+The design of the ware is process-critical:
+
+* A Tokyo Electron boat supports wafers on rings so that "a surface
+  defect called a slip generated when the wafer is heat treated can be
+  eliminated".[^pat-boat-tel]
+* A Tokyo Electron furnace stands the boat on "thin heat insulation
+  plates" above the furnace throat.[^pat-vf-insulation-tel]
+* A Kokusai patent adds a boat cover inside the inner and outer tubes of
+  an LPCVD furnace so that the film "is improved in uniformity and
+  homogeneity".[^pat-lpcvd-kokusai]
 
 Sodium diffuses through quartz: Eisele and
 Ruthardt described stabilised fused-quartz tubes with reduced sodium
 diffusion.[^eisele-1978] Heat also limits the ware's life: Heraeus offers
 stabilised tubes for high-temperature use "to reduce the possibility of
-sagging at elevated working temperatures",[^heraeus-tubes] and silica
+sagging at elevated working temperatures".[^heraeus-tubes] Silica
 glass can crystallise (devitrify) where it is contaminated — Horii et al.
 heated silica glasses in contact with a NaCl grain and found a
 crystallised region whose depth grew with the square root of the heating
@@ -88,14 +90,16 @@ the etch process",[^joubert-2004] and Cunge et al. found that in HBr/Cl₂
 gate-etch plasmas the walls stay clean without oxygen but grow a silicon
 oxychloride layer as oxygen is added.[^cunge-2005]
 
-Parts shed
-contamination: Bell and Joubert traced sidewall oxide to sputtering of
-"the quartz tube of the helicon source";[^bell-1996] Ito et al. found
-AlF₃ particles from the "coating material Al2O3 on the etching chamber
-wall" and suppressed them by dehydrating the chamber parts;[^ito-2008]
-and an Applied Materials HDP-CVD patent attributes sodium to the quartz
-dome and alumina nozzles and deposits a seasoning film after each clean
-to hold it back.[^pat-seasoning-amat]
+Parts shed contamination:
+
+* Bell and Joubert traced sidewall oxide to sputtering of "the quartz
+  tube of the helicon source".[^bell-1996]
+* Ito et al. found AlF₃ particles from the "coating material Al2O3 on
+  the etching chamber wall" and suppressed them by dehydrating the
+  chamber parts.[^ito-2008]
+* An Applied Materials HDP-CVD patent attributes sodium to the quartz
+  dome and alumina nozzles and deposits a seasoning film after each
+  clean to hold it back.[^pat-seasoning-amat]
 
 Coatings resist attack: a patent
 by Sun et al. adds "a ceramic-based surface coating, high purity yttrium
@@ -115,7 +119,7 @@ kits are changed with the targets ({ref}`material-sputter-targets`).
 A lamp-heated RTP chamber consumes its light source and its window. The
 Heatpulse 8800/8808 page describes "Tungsten halogen lamps and cold
 process-chamber walls which allow fast wafer heating and cooling rates",
-with lamps "arranged in 2 banks of 14 lamps each";[^ag-8800] the same
+with lamps "arranged in 2 banks of 14 lamps each".[^ag-8800] The same
 reseller's specifications list cooling water, CDA or nitrogen for tube
 cooling and exhausts among the facilities.[^ag-8108] Temperature is
 sensed by pyrometer or thermocouple,[^ag-8800] and its calibration depends
@@ -136,18 +140,20 @@ Fluorinated gases are potent
 greenhouse gases — in the IPCC Fourth Assessment Report values that
 Wikipedia tabulates, NF₃ has a 100-year global warming potential (GWP)
 of 17,200 and C₂F₆ one of 12,200[^wiki-gwp] — and are destroyed by
-combustion, electric heating or plasma: Fiala et al.
-modelled point-of-use plasma abatement between the turbomolecular and
-backing pumps;[^fiala-1999] Hu et al. studied NF₃ decomposition in
-point-of-use "wet-thermal-wet abatement" of PECVD chamber
-cleaning;[^hu-2018] and Mangyou et al. reported an atmospheric plasma
-system treating "up to 80 L/min of CF4 exhaust with 95% of
-DRE".[^mangyou-2005]
+combustion, electric heating or plasma:
+
+* Fiala et al. modelled point-of-use plasma abatement between the
+  turbomolecular and backing pumps.[^fiala-1999]
+* Hu et al. studied NF₃ decomposition in point-of-use "wet-thermal-wet
+  abatement" of PECVD chamber cleaning.[^hu-2018]
+* Mangyou et al. reported an atmospheric plasma system treating "up to
+  80 L/min of CF4 exhaust with 95% of DRE".[^mangyou-2005]
 
 Hydrides can also be taken up at ambient
 temperature by solid adsorbents: Hsu et al. found that copper, zinc and
 cerium oxides on alumina removed silane with an efficiency above 99.9 %
-before breakthrough,[^hsu-2007] and tested copper on sol-gel alumina for
+before breakthrough.[^hsu-2007] Hsu et al. also
+tested copper on sol-gel alumina for
 phosphine, which "local scrubbers must immediately abate" because of its
 toxicity.[^hsu-2010] Johnson, Ridgeway and Maroulis describe process
 changes in CVD cleaning and etch that reduce PFC emissions at
@@ -166,13 +172,13 @@ PdCuAg".[^wiki-probecard] "contamination builds up on the
 tips as a result of successive touchdown events", which harms contact
 resistance.[^wiki-probecard]
 
-Broz and Rincon measured the contact
-resistance of tungsten, tungsten–rhenium, beryllium–copper and alloy
-probes on aluminium pads at elevated temperature;[^broz-1999] Roggei and
-Seshan addressed "resistance increase between probes and pads during the
-probing process" through the fab process;[^roggei-1999] and Electroglas
-described how a prober connects the wafer to a parametric or functional
-tester through the card.[^electroglas-1999]
+* Broz and Rincon measured the contact resistance of tungsten,
+  tungsten–rhenium, beryllium–copper and alloy probes on aluminium pads
+  at elevated temperature.[^broz-1999]
+* Roggei and Seshan addressed "resistance increase between probes and
+  pads during the probing process" through the fab process.[^roggei-1999]
+* Electroglas described how a prober connects the wafer to a parametric
+  or functional tester through the card.[^electroglas-1999]
 
 ## Representative materials and grades
 
