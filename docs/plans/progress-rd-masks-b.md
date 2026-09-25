@@ -60,6 +60,10 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   four-column table has no cell for those clauses without new wording. The paragraph became a
   three-item list by table (bold `Table N` labels, every word and marker kept) instead. If the owner
   wants the table, the clauses need a `Note` column, which breaks the §1 column budget.
+* **G2 (vim).** R-RELATED's class-page labels have none for a link to an overview section
+  (`overview-sky130b-reram`, "the ReRAM tier that splits via 1 in sky130B"). It went under **Masks.**,
+  since the section it links describes the via masks the tier adds; a label such as **Overview.** would
+  need the guide's approval.
 
 ## Pages
 
@@ -639,4 +643,39 @@ The sibling of nsdm; the same treatment throughout.
   15 words by §1's count), the test-tile sentence (47, quotations) and the rule-table lead-in (47, a
   single argument about which rules apply); two quick-facts cells. Before → after: paragraphs 11 → 0,
   items 0 → 0, sentences 15 → 3, cells 2 → 2.
+* **Content problems for the owner:** none found.
+
+### 15. vim — done
+
+* **Rules applied.** R-INTRO (181 → 47 words); R-PARAMS (four Table 2 parameters; the table column
+  dropped because every row is Table 2 — R-TABLE 10 — and named in the caption); R-CAPTION (rule
+  table, parameter table); R-PARA, R-SENTENCE; R-RELATED (guide problem G2); R-H3 (Exposure class, Mask
+  errors, Side lobes, Proximity and size, Substrate and tone, Overlay and alignment, Pattern transfer —
+  "Substrate and tone" keeps its own words; it is not a checker synonym).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **Intro.** Kept the first sentence up to its colon and the whole reading (32 words). "At 0.150 µm its
+  holes are …" → "At 0.150 µm the mask's holes are …" (top of the body); the sky130B sentence moved
+  unchanged.
+* **R-PARAMS.** "the values of the copper rules via.11 and via.12" → "the value of the copper rule via.11"
+  / "… via.12" in the two Value cells, each with the `pdk-periph` marker; "for a back end SKY130's
+  aluminium flow does not use" stays with the "Via - Cu" row in the lead-in.
+* **Declared additions** (`--allow-added markers,numbers,quotes,refs,identifiers`): markers
+  `mask-renders` ×2 (render sentence split; the "Info" notes sentence split at its semicolon, both
+  halves keeping `[^steps-sheet][^mask-renders]` — the ADDED `steps-sheet` is that repeat),
+  `pdk-periph` (second Value cell); numbers `2001` ("which lists" → "ITRS 2001 lists", as on ctm1),
+  `2` (Table 2 in the caption); quotes "Via - Cu" ×2 (the table rows) and a pairing artefact
+  (`'Info'`); refs `overview-sky130b-reram` ("On the reading of the overview-sky130b-reram page"
+  repeated when the ReRAM sentence was split at its semicolon) and a backtick artefact; identifier
+  `metal-2` (the rule-table caption, from the lead-in).
+* **LOST lines that are not losses:** the Exposure-class `number_order` (the repeated "ITRS 2001"), and
+  the parameter table (0.15, 0.17, 0.18, 0.13 in the base order; via.11 and via.12 with their values).
+* **Marker coverage.** Flags read: each flagged sentence had no marker of its own in the base.
+* **Other edits.** MPW-5 and Mask type bullets: lead sentence plus continuation paragraph; "; for via 1
+  it is not on public record" → ". For via 1 it is not on public record."; Proximity: "an inference;
+  Toyoshima et al." → "an inference. Toyoshima et al."; the rule-table lead-in split before "Flag P
+  means".
+* **Over the caps after the pass:** "The mask does not define …" (48 by the script, four roles); the
+  Ma and Andersson sentence (59, two long quotations); the flag legend (60, quotations); three table
+  cells (quick facts and two quoted rule cells). Before → after: paragraphs 12 → 0, items 2 → 0,
+  sentences 15 → 3, cells 3 → 3.
 * **Content problems for the owner:** none found.
