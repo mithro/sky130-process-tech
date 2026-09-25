@@ -11,12 +11,13 @@
 | **Next step** | {ref}`STIE <step-006>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** plasma-etches the resist-open field down through the BARC,
   nitride and pad oxide, stopping on bare silicon.
 * **Why:** opens a clean, vertical hard-mask window that the silicon
   trench etch and liner oxidation both depend on.
-* **Public numbers:** fluorocarbon nitride etch rates of the order of
-  100–300 nm/min; selectivity to resist roughly 1–2:1.[^txt-02][^txt-05]
+* **Public numbers:** none for SKY130; typical fluorocarbon nitride
+  etch rates of the order of 100–300 nm/min.[^txt-02][^txt-05]
 * **Likely SkyWater tool:** Lam 9400 TCP — strong (existence);
   inference (assignment).[^skw-01]
 * **Not public:** whether STINITE and STIE run as one chamber recipe
@@ -53,10 +54,8 @@ note that the hand-off is not public.
 dielectric etch of nitride and oxide, distinct from the halogen
 silicon etch at {ref}`STIE <step-006>`.
 
-**Specific to this step:**
-
-* Similar nitride-opening etches occur later at {ref}`SPE <step-077>`
-  ({term}`spacer`) and {ref}`NPCME <step-079>`.
+Similar nitride-opening etches occur later at {ref}`SPE <step-077>`
+({term}`spacer`) and {ref}`NPCME <step-079>`.
 
 ## Why this step exists
 
@@ -78,7 +77,7 @@ clean, vertical profile. The nitride-etch profile matters because:
 
 ## How it is typically performed
 
-An industry-generic recipe for a 200 mm, 130 nm-era fab:
+*An industry-generic recipe for a 200 mm, 130 nm-era fab:*
 
 1. **BARC open.** A short O₂- or N₂/O₂-based (sometimes CF₄/O₂) step
    removes the organic anti-reflective layer in the open areas.
@@ -162,7 +161,7 @@ Which of the three carries the isolation nitride etch is not public.
   opening).
 * Depends on: films etched — {ref}`ISONIT <step-003>` nitride and
   {ref}`BOX <step-002>` pad oxide.
-* Same module: other nitride etches — {ref}`SPE <step-077>`,
+* Same category: other nitride etches — {ref}`SPE <step-077>`,
   {ref}`NPCME <step-079>`, {ref}`NSME <step-166>`.
 * Category page: {ref}`Etch <category-etch>`.
 
