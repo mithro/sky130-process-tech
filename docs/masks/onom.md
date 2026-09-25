@@ -141,11 +141,10 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `ONOM` the site renders layer 80:20 (`tunm`)
 alone, with no Boolean expression and no fill layer, on all eight runs.[^mask-renders]
+
 Its mask record gives the mask-level layer 88:0 and the note "ONOM =
 tunm sized by clonom.3 (conom 87:44 is the fab's precomputed layer, not
-drawn)".[^mask-renders]
-
-Neither the periphery rules nor the Error
+drawn)".[^mask-renders] Neither the periphery rules nor the Error
 Messages page contains a rule named `clonom.3`, and `gds_layers.csv`
 lists 87:44 as a `conom` drawing purpose without saying what it
 holds.[^pdk-periph][^pdk-errors][^pdk-06] The site gives no source for
