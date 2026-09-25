@@ -64,6 +64,41 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 030-pwdem.md — done (the densest page in the batch: a 340-word paragraph with a
+144-word sentence; no in-force dropdown in the body)
+
+Rules applied: R-H3 (`### What the public record shows` before the drawn-layer/rules
+discussion), R-LIST (the "They fix the geometry:" sentence, three semicolon-joined rule facts →
+bullets), R-PARA/R-SENTENCE extensively — the lead paragraph, the multi-voltage/DE-MOSFET
+paragraph, the two "why the mask exists" paragraphs, and above all the 340-word measured-data
+paragraph, which was split into six shorter paragraphs at its own semicolon/comma seams
+(including breaking one 144-word sentence into five), always keeping every number, quote,
+marker and hedge attached to the same claim and in the same order — never tabulated, since the
+"which figure belongs to which device" pairings were judged too easy to get wrong in a table
+(the same caution as pages 022–024/026), R-HEDGE step 1 (italic lead-in), R-TOOLS (3
+"Strength:" bullets split, no recap table), R-RELATED (`Depends on:` label covering three
+forward/backward links with the same relationship type; `Mask:` bullet merged per the pilot's
+M6 convention), R-OPENQ (bold labels on all three bullets, the first split into lead + indented
+continuation), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 8 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 2 → 0; sentences > 45 words 12 → 0 (including the
+144-word sentence); table cells > 25 words 0 → 0. Two follow-up fixes were needed after the
+first edit pass (a leftover 46–52-word sentence in the new "What the public record shows"
+section, and one paragraph still at 102 words in "Why this step exists") — caught by re-running
+`measure5.py`, the same "measure again after editing" discipline as page 027.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/030-pwdem.md`:
+`quotes` and `hedges` show no LOST; plain `numbers` (condition (a)) shows no LOST either — every
+number in the 144-word sentence and the rest of the dense paragraph survived the split, spot
+checked by eye against the rendered tiles below. The only failure is `LOST number_order (not a
+clean regroup)` for four tuples, accounted for by the glance box's declared re-mentions of
+"16 V"/"20 V"/"470 Ω" and the usual single-number-stranding pattern. All other checkers pass;
+`-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom: the new H3, the
+rule-facts bullet list, and — most importantly — the six-paragraph measured-data section reads
+as a coherent, followable argument rather than a wall of numbers, with every figure still
+attached to its device and bias condition.
+
 ### 029-pwis.md — done (no in-force dropdown on this page)
 
 Rules applied: R-PARA/R-SENTENCE (the resist-description paragraph split at its crust/block-mask
