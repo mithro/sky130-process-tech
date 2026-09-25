@@ -458,6 +458,52 @@ wraps cleanly at 400 px with the 4-column shape.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 8. `docs/machines/film-thickness-metrology.md` — done
+
+Rules applied: R-INTRO (kept 3 of 4 clauses of the gauge-family sentence, splitting a semicolon
+chain into separate sentences to fit 63 words; moved the "stress gauges" clause and the
+monitor-wafer sentence into the H2 lead; template deleted; pointer moved to `{seealso}`).
+R-MODELS (originally 16 rows across 5 vendors; see the phone-width fix below for why it ended at
+15 with a merged Vendor/model column). R-ENTRIES (2-row table for the "On board metrology"/"R.I."
+term-by-term gloss under `## At SkyWater`). R-QUICKFACTS: all 6 dense cells left as the page wrote
+them (method note 3 — none had an easy safe cut without either duplicating a number that only
+appears once, per the page-5 lesson, or reopening a paragraph-cap problem). R-PARA (8 of 9 H3s
+needed splitting). R-SENTENCE (about 12 sentences over 45 words split). R-RELATED (9
+sentence-bullets → 4 grouped bullets). R-CAPTION (both new tables). R-PARA step 4 (one 64-word
+list item, "Metal films", fixed with a continuation paragraph).
+
+**Second phone-width fix, a new variant.** The first draft of the Representative-models table (16
+rows, 4 columns: Vendor, Model, Year, Published figures — same shape used successfully on pages
+1, 3, 4, 5 and 7) overflowed at 400 px even after shortening "Rudolph Technologies" → "Rudolph"
+and "Prometrix (Tencor)" → "Prometrix" (the page-2-style fix). Unlike page 2, dropping a column
+was not an option here — Year carries real, undeclarable-if-lost information and there was no
+redundant column to remove. Fixed instead by merging `Vendor` and `Model` into one `Vendor /
+model` column (`Therma-Wave Opti-Probe 3260, 3260DUV`), taking the table from 4 columns to 3 and
+freeing enough width for `Published figures` to wrap without a horizontal scrollbar; re-shot at
+400 px to confirm. Recorded as a second, independent way to fix the same class of failure the
+guide problem below already names: sometimes the redundant-column trick (page 2) applies,
+sometimes a merge-two-identifying-columns trick is the one that fits, and the only way to know
+which is needed is to shoot the page.
+
+Over-cap counts (before → after): paragraphs > 100 words: 8 → 0; sentences > 45 words: ~13 → 0;
+list items > 60 words: 1 → 0; quick-facts cells > 20 words: 5 of 7 → 5 (unchanged by design);
+tables with no caption: 2 new → 0.
+
+`check_preserved.py --base 01aec313 --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: one real bug caught and fixed —
+shrinking the R-ENTRIES "On board metrology" row initially dropped the short quotation "On board
+metrology" itself (kept only the longer "...with feed forward and backward" as the Entry
+column's own text), losing the short form the original gloss paragraph actually quoted; restored
+by adding the short quotation back into the "What it names" cell. After that fix, and after the
+table restructuring, the check is clean except `LOST identifiers: SKY130` (method note 4; this
+page's template sentence did not use "about", so no `LOST hedges` line this time).
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 5 (15-row Representative-models table,
+after the merge fix) and 6 (2-row entries table) read; both wrap cleanly at 400 px with no
+horizontal scroll.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
@@ -480,6 +526,11 @@ Content problems for the owner: none found while re-presenting this page.
    count is not a substitute for actually shooting the page at 400 px, which I did for every
    R-MODELS table in this batch from page 2 onward after finding this. Recommend the guide say
    so explicitly next to the R-MODELS worked example, since a 5-column table reads as "the
-   template" otherwise.
+   template" otherwise. Two independent fixes were needed across the batch, and which one
+   applies is page-specific: dropping a redundant `Type` column (page 2, `cmp-polisher.md`) when
+   one exists, or merging `Vendor`/`Model` into one column (page 8, `film-thickness-metrology.md`)
+   when every column carries distinct, undeclarable-if-lost information and there is nothing
+   redundant to drop. Shortening long vendor names alone (`cmp-polisher.md`'s "Rudolph
+   Technologies" → "Rudolph") fixed page 2 but was not sufficient on its own for page 8.
 
 (to be continued — pages 3–15)

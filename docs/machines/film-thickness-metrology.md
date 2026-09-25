@@ -4,17 +4,9 @@
 Almost every film in the flow is measured after it is grown, deposited,
 etched back or polished. Optical gauges — ellipsometers, reflectometers
 and instruments that combine both — measure the thickness and refractive
-index of oxides, nitrides and polysilicon; infrared spectrometers measure
-the dopant or hydrogen content of dielectric films; X-ray fluorescence and
-laser-acoustic gauges measure metal films that light cannot pass through;
-and stress gauges measure how much a film bends the wafer. Most of these
-instruments run on monitor wafers beside the product, some on test pads
-of product wafers, and some are built into the process tool itself. This
-page describes the classes, lists representative 200 mm-era models, and
-then says what SkyWater has published and which SKY130 steps this
-reference assigns to the class. Film growth and deposition are on the
-{ref}`oxidation <category-oxidation>` and
-{ref}`deposition <category-deposition>` category pages.
+index of oxides, nitrides and polysilicon. Infrared spectrometers measure
+the dopant or hydrogen content of dielectric films. X-ray fluorescence and
+laser-acoustic gauges measure metal films that light cannot pass through.
 
 | | Film thickness and stress metrology |
 |---|---|
@@ -28,12 +20,23 @@ reference assigns to the class. Film growth and deposition are on the
 | SkyWater-listed tool | None named apart from the Mirra's "On board metrology with feed forward and backward"[^skw-01] |
 | SKY130 steps | 67 steps; see {ref}`SKY130 steps assigned to this class <machine-film-thickness-metrology-steps>` |
 
+:::{seealso}
+Film growth and deposition are on the
+{ref}`oxidation <category-oxidation>` and
+{ref}`deposition <category-deposition>` category pages.
+:::
+
 ## What the machine class is and how it works
+
+Stress gauges measure how much a film bends the wafer.
+Most of these
+instruments run on monitor wafers beside the product, some on test pads
+of product wafers, and some are built into the process tool itself.
 
 The gauges share a pattern: a beam of light, X-rays or sound probes a
 small spot; a model of the film stack with known or fitted optical,
 X-ray or acoustic constants turns the signal into thicknesses and
-properties; and a wafer handler and pattern recognition place the spot on
+properties. A wafer handler and pattern recognition place the spot on
 a monitor wafer or a test pad. What differs is the probe, and therefore
 which films a gauge can see.
 
@@ -44,7 +47,9 @@ transmission and compares it to a model", and can yield thickness,
 composition and other properties of a thin film.[^wiki-ellipsometry]
 Rudolph dates the production instrument to 1977, "when we introduced our
 AutoEL, the industry's first production-oriented, microprocessor-based
-ellipsometer".[^rudolph-1999] Two refinements followed. Multiple angles of
+ellipsometer".[^rudolph-1999]
+
+**Two refinements.** Two refinements followed. Multiple angles of
 incidence: a Rudolph patent focuses one beam so that it strikes the
 sample over "a whole range of angles of incidence" at once, collected on
 a detector array "without scanning",[^pat-maiwl-rudolph] and Rudolph's
@@ -53,7 +58,9 @@ ellipsometry.[^rudolph-1999] Multiple wavelengths: Tencor's Prometrix
 UV-1250SE and UV-1270SE combined spectroscopic ellipsometry with
 ultraviolet spectrophotometry to "Simultaneously and independently
 determine parameters such as refractive index and extinction coefficient"
-of films and film stacks.[^tencor-thinfilm-1997] The price is model
+of films and film stacks.[^tencor-thinfilm-1997]
+
+**The price of the model.** The price is model
 dependence. For very thin oxides Chandler-Horowitz found that
 instrument-to-instrument and lab-to-lab deviations must be addressed
 because "the derived film thickness is dependent on many factors",
@@ -68,27 +75,35 @@ ellipsometry.[^semi-mf576]
 A reflectometer measures how much light a film stack reflects. Rudolph
 explained that reflectometry "uses white light", and that it is "often
 more suitable for measuring thicker films, whereas ellipsometry is often
-more suitable for measuring very thin films";[^rudolph-1999] Nanometrics
+more suitable for measuring very thin films".[^rudolph-1999] Nanometrics
 built its thickness systems on "microscope-based, non-contact
 spectroscopic reflectometry", with spectroscopic ellipsometry and FTIR
 options.[^nanometrics-2000] Tencor's SpectraMap SM300 mapped "most
 dielectric films from 200 Angstroms to 4 microns in thickness on monitor
-wafers".[^tencor-thinfilm-1997] Therma-Wave took a different route. Its
+wafers".[^tencor-thinfilm-1997]
+
+**Beam profile reflectometry.** Therma-Wave took a different route. Its
 patent focuses a probe beam through a high-numerical-aperture lens, so
 that the rays arrive over a spread of angles, measures the reflected
 intensity across the beam as a function of angle, and solves the
-thickness from the Fresnel equations; the method is "particularly
+thickness from the Fresnel equations.[^pat-bpr-thermawave] The method is "particularly
 suitable for measuring thin films, such as oxide layers, on silicon
-semiconductor samples".[^pat-bpr-thermawave] Rosencwaig et al. called it
+semiconductor samples".[^pat-bpr-thermawave]
+
+Rosencwaig et al. called it
 beam profile reflectometry, performed "with a submicron spot
 size",[^rosencwaig-1992] and Fanton et al. showed how the profiles can
 yield "as many as three unknown film parameters
-simultaneously".[^fanton-1993] The Opti-Probe combined beam profile
-ellipsometry, beam profile reflectometry and spectrometry in one tool, and
+simultaneously".[^fanton-1993]
+
+The Opti-Probe combined beam profile
+ellipsometry, beam profile reflectometry and spectrometry in one tool.
 Therma-Wave claimed it could "accurately measure thin oxide on nitride on
 oxide (ONO) and oxide on poly on oxide (OPO)" and measure "thickness and
 refractive index for monitoring PECVD nitride and oxynitride
-processes".[^tw-op3260] Gauges of different makes must also agree. Kaiser
+processes".[^tw-op3260]
+
+**Matching gauges.** Gauges of different makes must also agree. Kaiser
 found that the common "fudge factor" offset between tools fails because
 the relation between reference and measured thicknesses is not a fixed
 constant, and proposed tuning the instruments' internal optical constants
@@ -98,10 +113,12 @@ instead.[^kaiser-1991]
 
 Some film properties are chemical. In doped glasses the phosphorus "is
 normally detected by measuring the band centered at about 1335 cm-1" and
-the boron from the band "centered at about 1420 cm-1"; Stout and Krishnan
+the boron from the band "centered at about 1420 cm-1".[^stout-1989] Stout and Krishnan
 note that such infrared measurements need substrates above 10 Ω·cm and
 must be calibrated against a primary technique such as wet chemistry or
-SIMS.[^stout-1989] Metal films are opaque to light, and for them X-rays
+SIMS.[^stout-1989]
+
+**X-ray fluorescence.** Metal films are opaque to light, and for them X-rays
 serve. In X-ray fluorescence the intensity of the characteristic X-rays
 from the coating and from the substrate depends on the coating thickness;
 Shiraiwa and Fujino derived the formulas, including the enhancement
@@ -116,8 +133,10 @@ A laser pulse can also launch sound. Thomsen et al. used picosecond light
 pulses "to generate and detect very short stress pulses", detected
 "through a measurement of the changes they induce in the optical
 reflectivity of the sample surface";[^thomsen-1986] the Brown University
-patent covers the pump-and-probe system.[^pat-picosecond-brown] Rudolph
-commercialised the method: its MetaPULSE systems "use ultra-fast lasers
+patent covers the pump-and-probe system.[^pat-picosecond-brown]
+
+**MetaPULSE.** Rudolph
+commercialised the method. Its MetaPULSE systems "use ultra-fast lasers
 to generate sound waves that pass down through a stack of metal or opaque
 films such as copper and aluminum, sending back to the surface an echo
 which is detected and analyzed", on product wafers in spots of ten
@@ -131,16 +150,17 @@ stacks".[^stoner-1998]
 A film under stress bends its substrate. Flinn, Gardner and Nix describe
 "a measurement technique based on the determination of wafer curvature
 with a laser scanning device", and interpret the changes of stress in
-aluminium films over thermal cycles;[^flinn-1987] the curvature is
+aluminium films over thermal cycles.[^flinn-1987] The curvature is
 converted to stress with the relation named after Stoney, whose 1909
 paper dealt with the tension of electrodeposited metal films (industry
 practice).[^stoney-1909] Hu reviews why the numbers matter: CVD silicon
 nitride, silicon dioxide and polysilicon "exhibit intrinsic stresses",
 and "Large localized stresses are induced in the silicon substrate near
-the edges and corners of such structural elements".[^hu-1991] Of Tencor's FLX
-gauges, the FLX-2320's dual-wavelength technology switches wavelength "Whenever destructive
+the edges and corners of such structural elements".[^hu-1991]
+
+**Tencor's FLX gauges.** The FLX-2320's dual-wavelength technology switches wavelength "Whenever destructive
 interference from a transparent film such as silicon nitride cancels one
-of the wavelengths",[^kla-flx2320] the FLX-5400 mapped radial stress in
+of the wavelengths".[^kla-flx2320] The FLX-5400 mapped radial stress in
 two and three dimensions, and the FLX-2900 heated to 900 °C for in-situ
 measurements.[^tencor-stress-1997] KLA-Tencor aimed the FLX-2320 at
 "production monitoring of critical reliability problems caused by metal
@@ -152,10 +172,12 @@ formation".[^kla-flx2320]
 Most of these gauges stood alone in the fab, but by 2000 some had moved
 into the process tools. Nanometrics described integrated systems that
 "can be attached to film deposition, CMP, CVD, etch and other process
-tools", recorded an "OEM agreement to supply metrology systems for
+tools".[^nanometrics-2000] It recorded an "OEM agreement to supply metrology systems for
 Applied Materials' Mirra Mesa(TM) CMP system" in September 1998 and a
 metrology system for the Producer QA CVD system in July
-1999.[^nanometrics-2000] ITRS 2001 described integrated metrology as "the
+1999.[^nanometrics-2000]
+
+**In situ measurement.** ITRS 2001 described integrated metrology as "the
 slow migration from offline to inline and in situ measurements" and noted
 that "many of the inline measurements for interconnect structures are
 made on simplified structures or monitor wafers and are often
@@ -166,28 +188,32 @@ wafers".[^tw-op3260]
 
 ## Representative 200 mm-era models
 
-* **Therma-Wave.** The Opti-Probe, introduced in 1992;[^tw-history] the
-  Opti-Probe 3260 and 3260DUV, measuring TiN thickness and optical
-  constants "in the UV range down to 190 nm";[^tw-op3260] and the
-  Opti-Probe 5240 of the 5000 family, adding deep-UV spectroscopic and
-  absolute ellipsometry.[^tw-op5000]
-* **Prometrix, a Tencor division.** The UV-1250SE and its successor the
-  UV-1270SE (1996, with an integrated SMIF minienvironment), the UV-1050
-  broadband reflectometer for resists and anti-reflective coatings, the FT-750
-  spectrophotometer for films "typically down to 150 Angstrom", and the
-  SpectraMap SM300 mapper.[^tencor-thinfilm-1997][^tencor-uv1270se-1996]
-* **Rudolph Technologies.** The AutoEL (1977), the SpectraLASER
-  multiple-angle, multiple-wavelength ellipsometers, the MatrixMetrology
-  line configured for CMP, diffusion or etch (1999), and the MetaPULSE
-  optical-acoustic metal gauges, all on the Vanguard automation
-  platform.[^rudolph-1999]
-* **Nanometrics.** The NanoSpec 8000X and 9100 automated systems for 75 to
-  200 mm wafers, the 9000i integrated system, and tabletop
-  models.[^nanometrics-2000]
-* **Tencor, then KLA-Tencor, stress gauges.** The FLX-2320, FLX-5400 and
-  FLX-2900, described on a 1997 capture,[^tencor-stress-1997] and the
-  FLX-2320 still listed in 2002 beside the ASET-F5x thin-film and Quantox gate-monitoring
-  systems.[^kla-flx2320]
+:::{table} Representative film thickness and stress gauges of the 200 mm era (figures as each source gives them)
+:widths: 30 8 62
+
+| Vendor / model | Year | Published figures |
+|---|---:|---|
+| Therma-Wave Opti-Probe | 1992 | introduced this year[^tw-history] |
+| Therma-Wave Opti-Probe 3260, 3260DUV | — | measuring TiN thickness and optical constants "in the UV range down to 190 nm"[^tw-op3260] |
+| Therma-Wave Opti-Probe 5240 | — | of the 5000 family, adding deep-UV spectroscopic and absolute ellipsometry[^tw-op5000] |
+| Prometrix UV-1250SE | — | — |
+| Prometrix UV-1270SE | 1996 | successor to the UV-1250SE, with an integrated SMIF minienvironment[^tencor-uv1270se-1996] |
+| Prometrix UV-1050 | — | broadband reflectometer for resists and anti-reflective coatings[^tencor-thinfilm-1997] |
+| Prometrix FT-750 | — | spectrophotometer for films "typically down to 150 Angstrom"[^tencor-thinfilm-1997] |
+| Prometrix SpectraMap SM300 | — | mapper[^tencor-thinfilm-1997] |
+| Rudolph AutoEL | 1977 | — |
+| Rudolph SpectraLASER | — | multiple-angle, multiple-wavelength ellipsometer[^rudolph-1999] |
+| Rudolph MatrixMetrology | 1999 | configured for CMP, diffusion or etch[^rudolph-1999] |
+| Rudolph MetaPULSE | — | optical-acoustic metal gauge[^rudolph-1999] |
+| Nanometrics NanoSpec 8000X, 9100 | — | automated systems for 75 to 200 mm wafers[^nanometrics-2000] |
+| Nanometrics NanoSpec 9000i | — | integrated system[^nanometrics-2000] |
+| Tencor FLX-2320, FLX-5400, FLX-2900 | 1997 | described on this capture[^tencor-stress-1997] |
+| KLA-Tencor FLX-2320 | 2002 | still listed beside the ASET-F5x thin-film and Quantox gate-monitoring systems[^kla-flx2320] |
+:::
+
+Rudolph's SpectraLASER, MatrixMetrology and MetaPULSE lines were all on
+the Vanguard automation platform.[^rudolph-1999] Nanometrics also sold
+tabletop models.[^nanometrics-2000]
 
 ## At SkyWater
 
@@ -206,13 +232,18 @@ in other tool groups:[^skw-01]
 
 The first is a line of the CMP entry, the second a line of the "Photo
 Metrology" group, and the third two PECVD entries of the "Film
-Deposition" group.[^skw-01] Read term by term, on our reading: "On board
-metrology" is a gauge integrated into the polisher, of the kind
-Nanometrics supplied for the Mirra Mesa,[^nanometrics-2000] but SkyWater
-names neither the gauge nor what it measures; "R.I." is refractive index,
-a property the ellipsometers and reflectometers above
-measure,[^tw-op3260][^tencor-thinfilm-1997] but the entry describes a
-deposition capability, not a gauge. The {ref}`machines index
+Deposition" group.[^skw-01]
+
+:::{table} How this reference reads two terms in the entries above
+:widths: 20 56 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "On board metrology with feed forward and backward" | "On board metrology" is a gauge integrated into the polisher, of the kind Nanometrics supplied for the Mirra Mesa,[^nanometrics-2000] but SkyWater names neither the gauge nor what it measures | our reading |
+| "R.I." | refractive index, a property the ellipsometers and reflectometers above measure,[^tw-op3260][^tencor-thinfilm-1997] but the entry describes a deposition capability, not a gauge | our reading |
+:::
+
+The {ref}`machines index
 <machines-skywater-published>` notes that the S-1 names Rudolph
 Technologies, Nanometrics and Onto Innovation only in executive and
 director biographies, which is not evidence of their tools.
@@ -311,9 +342,12 @@ targets, limits and sampling plans are not public.
 * **Doped glass.** {ref}`PSG <step-089>` names ellipsometry and FTIR for
   thickness and phosphorus content, the infrared band method Stout and
   Krishnan describe.[^stout-1989]
-* **Metal films.** The liner, TiN, TiW and Ti/Al–Cu stack pages ({ref}`overview-metal-cap` sets out which cap the metal stacks carry) and the
-  first tungsten fill ({ref}`WDEP <step-099>`) name XRF, a four-point
-  probe and a stress gauge; the later tungsten-fill pages
+* **Metal films.** The liner, TiN, TiW and Ti/Al–Cu stack pages
+  ({ref}`overview-metal-cap` sets out which cap the metal stacks carry)
+  and the first tungsten fill ({ref}`WDEP <step-099>`) name XRF, a
+  four-point probe and a stress gauge.
+
+  The later tungsten-fill pages
   ({ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`,
   {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>`) name a four-point
   probe and a stress gauge. For opaque liners and stacks, picosecond
@@ -326,21 +360,21 @@ targets, limits and sampling plans are not public.
 
 ## Related pages
 
-* {ref}`category-deposition` and {ref}`category-oxidation` — the films
-  measured.
-* {ref}`category-cmp` — the polishes, their endpoint and their metrology.
-* {ref}`category-test` — in-line metrology and the electrical monitors at
-  the end of the flow.
-* {ref}`machine-defect-inspection` — the particle scans run on the same
-  monitor wafers.
-* {ref}`machine-sheet-resistance-metrology` — the four-point probe beside XRF on metal monitors.
-* {ref}`machine-cross-section-sem-profilers` — cross-sections and profilers for what a thickness gauge
-  cannot see.
-* {ref}`machine-parametric-tester` — the C–V monitors beside the ellipsometer.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`material-substrates` — monitor and test wafers, their grades
-  and reuse.
+* **Category.** {ref}`category-deposition` and {ref}`category-oxidation`
+  — the films measured. {ref}`category-cmp` — the polishes, their
+  endpoint and their metrology. {ref}`category-test` — in-line metrology
+  and the electrical monitors at the end of the flow.
+* **Machines.** {ref}`machine-defect-inspection` — the particle scans
+  run on the same monitor wafers.
+  {ref}`machine-sheet-resistance-metrology` — the four-point probe
+  beside XRF on metal monitors. {ref}`machine-cross-section-sem-profilers`
+  — cross-sections and profilers for what a thickness gauge cannot see.
+  {ref}`machine-parametric-tester` — the C–V monitors beside the
+  ellipsometer.
+* **Materials.** {ref}`material-substrates` — monitor and test wafers,
+  their grades and reuse.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
