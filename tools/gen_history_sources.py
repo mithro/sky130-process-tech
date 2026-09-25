@@ -27,6 +27,7 @@ HISTORY = ROOT / "docs" / "history"
 OUT = HISTORY / "sources.md"
 DEF_START = re.compile(r"^\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\]:\s?(.*)$")
 LABEL_RE = re.compile(r"^\(([a-z0-9-]+)\)=\s*$", re.M)
+FLAG_RE = re.compile(r"Shown as in force; estimated expiry|Status shown as unknown; estimated expiry")
 
 HEADER = """(history-sources)=
 # Sources for the Cypress history
@@ -75,9 +76,19 @@ def build() -> tuple[str, list[str]]:
             entries.setdefault(label, definition)
             used_on.setdefault(label, []).append(ref)
     parts = [HEADER]
+    restricted: list[str] = []
     for label in sorted(entries):
         pages = ", ".join(f"{{ref}}`{r}`" for r in used_on[label])
-        parts.append(f"(hsrc-{label})=\n**{label.upper()}** — {entries[label]}\nUsed on {pages}.\n")
+        entry = f"(hsrc-{label})=\n**{label.upper()}** — {entries[label]}\nUsed on {pages}.\n"
+        # A patent not certainly expired stays behind a collapsed block
+        # (tools/check_inforce.py); its footnote carries the flag sentence.
+        if FLAG_RE.search(entries[label]):
+            restricted.append(entry)
+        else:
+            parts.append(entry)
+    if restricted:
+        parts.append(":::{dropdown} Patents shown as in force or of unknown status — open to read\n\n"
+                     + "\n".join(restricted) + ":::\n")
     return "\n".join(parts), errors
 
 

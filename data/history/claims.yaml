@@ -687,3 +687,144 @@ claims:
   - {id: qtp-032301, origin: cypress}
   - {id: qtp-051501, origin: cypress}
   - {id: qtp-i000005, origin: cypress}
+
+# ---- docs/history/sonos-s4.md -----------------------------------------------
+- id: s4-derivative
+  page: docs/history/sonos-s4.md
+  anchor: R42D-5 derivative w/ 6 additional mask" (single source)
+  grade: single-source
+  footnotes: [qtp-021507]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+- id: s4-same-metal-as-r42d
+  page: docs/history/sonos-s4.md
+  anchor: The metal layers support this
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-003907]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-003907, origin: cypress}
+  - {id: qtp-102101, origin: cypress}
+- id: s4-masks-three-ways
+  page: docs/history/sonos-s4.md
+  anchor: The three sources describe different generations
+  grade: conflict
+  hedge: do not necessarily conflict
+  footnotes: [qtp-021507, chipest-2008, eflash-brief]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: cyx-chipestimate-sonos-2008, origin: cypress}
+  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+- id: s4-first-2001
+  page: docs/history/sonos-s4.md
+  anchor: date "New Technology S4AD-5" to April 2001
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-042806, eflash-brief]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-042806, origin: cypress}
+  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+- id: s4-late-1980s-conflict
+  page: docs/history/sonos-s4.md
+  anchor: in the late 1980s
+  grade: conflict
+  hedge: conflicts with the 2001 dates above
+  footnotes: [psoc-history, ar-fy1993]
+  sources:
+  - {id: cyx-infineon-psoc-history, origin: infineon}
+  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+  - {id: cyhist-corp-1993-10k, origin: cypress}
+- id: s4-fab2-sonos-0.35
+  page: docs/history/sonos-s4.md
+  anchor: our SONOS process in Fab 2
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy2002, ar-fy2003, ar-fy2006]
+  sources:
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+  - {id: cyhist-corp-2003-ar-soi-90nm, origin: cypress}
+  - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
+- id: s4-fab4-neutron
+  page: docs/history/sonos-s4.md
+  anchor: was made on S4AD-5 at Fab 4
+  grade: single-source
+  hedge: (Cypress's reports)
+  footnotes: [qtp-062509]
+  sources:
+  - {id: qtp-062509, origin: cypress}
+- id: s4-grace
+  page: docs/history/sonos-s4.md
+  anchor: Cypress's proprietary S4 technology
+  grade: corroborated
+  footnotes: [eet-2005-grace, qtp-062509, qtp-151005, ar-fy2006]
+  sources:
+  - {id: cyhist-corp-pr-2005-grace-deal, origin: eetimes}
+  - {id: qtp-062509, origin: cypress}
+  - {id: qtp-151005, origin: cypress}
+  - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
+- id: s4-design-rule-conflict
+  page: docs/history/sonos-s4.md
+  anchor: so the sources are not reconciled
+  grade: conflict
+  hedge: so the sources are not reconciled
+  footnotes: [qtp-021507, qtp-042806, qtp-051005, qtp-062509, qtp-151005, eet-2007-fablite, ar-fy2002]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-042806, origin: cypress}
+  - {id: qtp-051005, origin: cypress}
+  - {id: qtp-062509, origin: cypress}
+  - {id: qtp-151005, origin: cypress}
+  - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+- id: s4-two-stacks
+  page: docs/history/sonos-s4.md
+  anchor: The two sites used different metal stacks for the same process name
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-051005, qtp-062509, qtp-151005]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-042806, origin: cypress}
+  - {id: qtp-051005, origin: cypress}
+  - {id: qtp-062509, origin: cypress}
+  - {id: qtp-151005, origin: cypress}
+- id: s4-7a-oxide
+  page: docs/history/sonos-s4.md
+  anchor: which reads as a truncated
+  grade: single-source
+  hedge: reads as
+  footnotes: [qtp-042806]
+  sources:
+  - {id: qtp-042806, origin: cypress}
+- id: s4-products
+  page: docs/history/sonos-s4.md
+  anchor: The S4AD-5 reports name these products
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-042806, qtp-051005, qtp-062509, qtp-151005]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-042806, origin: cypress}
+  - {id: qtp-051005, origin: cypress}
+  - {id: qtp-062509, origin: cypress}
+  - {id: qtp-151005, origin: cypress}
+- id: s4-psoc1-sonos
+  page: docs/history/sonos-s4.md
+  anchor: used the SONOS process technology", which agrees with the
+  grade: corroborated
+  footnotes: [psoc-history]
+  sources:
+  - {id: cyx-infineon-psoc-history, origin: infineon}
+  - {id: qtp-062509, origin: cypress}
+- id: s4-patents-expired
+  page: docs/history/sonos-s4.md
+  anchor: These families are shown as expired
+  grade: corroborated
+  footnotes: [pat-us6818558, pat-us6677213, pat-us6969689]
+  sources:
+  - {id: GP31979047, origin: patent-office}
+  - {id: GP29778448, origin: patent-office}
+  - {id: GP35405131, origin: patent-office}
+  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}

@@ -435,3 +435,79 @@ records:
   claims:
   - {subject: SiGe BiCMOS, attribute: node, value: 0.20 µm, date: 2002}
   notes: null
+- id: cyx-infineon-psoc-history
+  source:
+    publisher: Infineon Technologies
+    title: 20 years of PSoC, "How it started"
+    date: null
+    form: web page
+  url: https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/
+  archive_url: http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/
+  retrieved: 2026-09-25
+  cache: web/infineon-psoc-history-wayback.html.txt
+  quotes:
+  - text: >-
+      In the late 1980s, Cypress Semiconductor had a range of complex programmable logic devices
+      (CPLDs) based on its SONOS (silicon oxide and nitride oxide silicon) process technology.
+    location: page body, first section
+  - text: >-
+      The initial programmable system-on-chip product, PSoC™ 1, used the SONOS process technology to
+      construct an 8-bit Harvard architecture 24 MHz M8C microcontroller core and a programmable
+      mixed-signal array.
+    location: page body, PSoC 1
+  - text: >-
+      We decided not to continue with the development of PSoC™ 2 but to commence PSoC™ 3 development
+      using a 130 nm 5 V process.
+    location: page body, "why there isn't a PSoC 2"
+  claims:
+  - {subject: PSoC 1, attribute: process, value: SONOS, date: null}
+  - {subject: PSoC 3, attribute: process, value: 130 nm 5 V, date: null}
+  - {subject: SONOS CPLDs, attribute: date, value: late 1980s, date: null}
+  notes: >-
+    The live URL now redirects to an unrelated page; the cached text is the Wayback Machine copy.
+    The "late 1980s" SONOS CPLD claim conflicts with Cypress's own statements that SONOS eFlash has
+    been in production since 2001 (cyx-infineon-sonos-eflash-brief) and with the first S4AD-5
+    qualification in April 2001 (qtp-021507).
+- id: cyx-chipestimate-sonos-2008
+  source:
+    publisher: ChipEstimate.com (article by Cypress Semiconductor)
+    title: Cypress SONOS - A Scalable Embedded Flash Technology
+    date: 2008-10-21
+    form: technical article
+  url: https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chipestimate-sonos-scalable.html.txt
+  quotes:
+  - text: >-
+      The Cypress SONOS module can easily be embedded into a logic process flow or an SRAM process flow
+      with the addition of three to five masking layers as compared to about ten in the case of
+      floating gate flash.
+    location: section "SONOS Integration"
+  - text: >-
+      This technology is qualified in Cypress manufacturing plants and in a foundry.
+    location: section "Cypress SONOS Technology"
+  claims:
+  - {subject: SONOS module, attribute: extra masks, value: three to five, date: 2008}
+  notes: Written by Cypress; published on ChipEstimate's "Tech Talks".
+- id: cyx-infineon-sonos-eflash-brief
+  source:
+    publisher: Cypress Semiconductor (an Infineon company)
+    title: SONOS eFlash product overview (product brief)
+    date: null
+    form: product brief
+  url: https://www.infineon.com/dgdl/Infineon-SONOS_eFlash_Product_Overview-ProductBrief-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d715307cf2069
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/infineon-sonos-eflash-brief.txt
+  quotes:
+  - text: >-
+      Cypress’s SONOS eFlash has been in production since 2001 and is now available on advanced nodes.
+    location: page 1
+  - text: >-
+      Requires only ﬁve extra masks beyond the standard CMOS process
+    location: page 1, Features
+  claims:
+  - {subject: SONOS eFlash, attribute: in production since, value: '2001', date: null}
+  - {subject: SONOS eFlash, attribute: extra masks, value: five, date: null}
+  notes: The brief is undated; it lists 65 nm, 55 nm and 40 nm products, so it post-dates S8.
