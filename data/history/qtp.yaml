@@ -4316,3 +4316,318 @@ documents:
     (qtp-097476, "256K STATIC RAM ... R28 PROCESS, FAB 2 QUALIFICATION"), but qtp-098252 instead cites the
     same QTP 97476 as "32K x 8 SRAM, R28 Technology, Fab2 qualification" -- one QTP number described two
     different ways across independently-issued reports.
+- id: qtp-097044
+  origin: cypress
+  doc_type: QTP
+  number: '97044'
+  cypress_document_number: null
+  title: 32K x 16 SRAM, R3 Technology, Fab 4 Qualification
+  version: '1.1'
+  date_printed: November, 2002
+  url: https://www.cypress.com/file/93606/download
+  archive_url: https://web.archive.org/web/20210507195824/https://www.cypress.com/file/93606/download
+  retrieved: '2026-09-25'
+  sha256: b6ce5d11e873084d22d281f22f6048445ebc6e09b6d380d07680e50a19fc820f
+  technology_codes:
+  - R3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1020
+  - CY7C1020V33
+  die_ids:
+  - 7C1020A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW, 6,000Å Al/0.5%Cu 1,200Å TiW; Metal 2: 500Å TiW, 9,000Å Al/0.5%Cu
+      1,200Å TiW'
+    passivation: 7,000A TEOS + 6,000A Si2N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Poly, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R3
+    transistors: 3,243,096
+    gates: 32,456
+  qualification_history:
+  - number: '97044'
+    description: 32K x 16 SRAM, R3 Technology, Fab 4 Qualification
+    date: null
+  quotes:
+  - text: 32K x 16 SRAM, R3 Technology, Fab 4 Qualification
+    location: p.1, cover title
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R3'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Single Poly, Double Metal /0.5 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R3 is a technology code new to this corpus. 2 metal layers, CMOS Single Poly Double Metal, 0.5 µm
+    design rule, 145 Å gate oxide, at Fab 4 (Bloomington, MN) -- the same figures this corpus already has
+    for R28 (Fab 2/Fab 3) and, separately, for L31 (see qtp-097461, also Fab 4). No qualification-history
+    table is printed in this 2002 report and no other report in this corpus cites R3.
+- id: qtp-012005
+  origin: cypress
+  doc_type: QTP
+  number: '012005'
+  cypress_document_number: null
+  title: MoBL and Micropower-Low Power Asynchronous SRAM, Technology Derivative R7LD-3, Fab4
+  version: '1.3'
+  date_printed: November, 2002
+  url: https://www.cypress.com/file/91666/download
+  archive_url: https://web.archive.org/web/20201025120945/https://www.cypress.com/file/91666/download
+  retrieved: '2026-09-25'
+  sha256: 7d422d2739de125baa6d5cc9f035df55f12c1a19081641d144b6cfe097ed1e80
+  technology_codes:
+  - R7LD-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62155CV
+  - CY62157CV25LL
+  - CY62157CV30LL
+  - CY62157CV33LL
+  - CY62158CV25LL
+  - CY62158CV30LL
+  - CY62158CV33LL
+  die_ids:
+  - 7C62155C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 100Å Ti / 300Å TiN / 6,000Å Al / 300Å TiW; Metal 2: 8,000Å TiAl / 300Å TiN'
+    passivation: 1000Å TEOS / 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.16 µm
+    gate_oxide: SiO2, 32Å / 70Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R7LD-3R
+    transistors: 50 million
+    gates: 50 million
+  qualification_history:
+  - number: '014502'
+    description: New Technology Derivative R7LD-3 / New 4Meg, Low power Asynchronous SRAM CY62147CV33LL
+      and its bond option
+    date: Dec 01
+  - number: '012005'
+    description: New 8Meg, Low power Asynchronous SRAM CY62155CV* and its bond option
+    date: Dec 01
+  quotes:
+  - text: New Technology Derivative R7LD-3 / New 4Meg, Low power Asynchronous SRAM CY62147CV33LL and its
+      bond option
+    location: p.2, Product Qualification History, row 014502
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R7LD-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.16 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R7LD-3 is a technology code new to this corpus. Its Die Fab Line ID is printed as "Fab4/R7LD-3R"
+    (with a trailing R not in the title or the technology code as named elsewhere in this document),
+    quoted verbatim. This report gives the technology's own origin as QTP 014502 (Dec 01), a New Technology
+    Derivative event for a 4 Meg part, one QTP number before the 8 Meg part this report itself qualifies.
+- id: qtp-004405
+  origin: cypress
+  doc_type: QTP
+  number: '004405'
+  cypress_document_number: null
+  title: Micro Power Asynchronous, R52LD-5R Technology Fab 4 Cypress
+  version: '1.2'
+  date_printed: December, 2002
+  url: https://www.cypress.com/file/91836/download
+  archive_url: https://web.archive.org/web/20211207081647/https://www.cypress.com/file/91836/download
+  retrieved: '2026-09-25'
+  sha256: 3f3e7dc6ff89da35e93f1141d0fe349b231a15b4b34725b3257f88ba0bbe0bc2
+  technology_codes:
+  - R52LD-5R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62148B
+  die_ids:
+  - 7C62148
+  - 7C11483
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500 Å TiW/6000 Å Al-.5%Cu/300 Å TiW; Metal 2: 300Å CoTi /8000Å Al-.5%Cu/300Å
+      TiW'
+    passivation: 1000Å PECVD Oxide, 9000Å PECVD Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal , 0.25 µm/0.3 FETS
+    gate_oxide: 70Å (core) 110Å Regulator
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52LD-5R
+    transistors: 25million
+    gates: 10 million
+  qualification_history:
+  - number: '99396'
+    description: New R52LD-5R Technology Derivative /New CY62128B,1Meg SRAM Product
+    date: Sep 00
+  - number: '004405'
+    description: New CY62148B, 4Meg Product, R52LD-5R Technology Derivative
+    date: Jan 01
+  quotes:
+  - text: New R52LD-5R Technology Derivative /New CY62128B,1Meg SRAM Product
+    location: p.2, Product Qualification History, row 99396
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52LD-5R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal , 0.25 µm/0.3 FETS
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R52LD-5R is a technology code new to this corpus (previously referenced only, not independently
+    retrieved). This report's own origin is QTP 99396 (Sep 00, a New Technology Derivative event for a
+    1 Meg part). The document's cover page is dated "December, 2002" but its running headers on every
+    interior page still read "April, 2001" -- an unresolved reissue-template inconsistency, quoted here
+    rather than picked between.
+- id: qtp-012407
+  origin: cypress
+  doc_type: QTP
+  number: '012407'
+  cypress_document_number: null
+  title: Synchronous SRAM Family, R63D-25 Technology, Fab4
+  version: '1.2'
+  date_printed: November 2002
+  url: https://www.cypress.com/file/91686/download
+  archive_url: https://web.archive.org/web/20210517162336/https://www.cypress.com/file/91686/download
+  retrieved: '2026-09-25'
+  sha256: b54056f9bf8c5ae06f3041e3fe0f16b25dd062924644b399c7266571676f9e5d
+  technology_codes:
+  - R63D-25
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1354V25
+  - CY7C1356V25
+  die_ids:
+  - 7C1354A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6,000Å AlCu/300Å TiW; Metal 2: 500Å TiW/8,000Å AlCu/300Å TiW'
+    passivation: 1000Å PECVD oxide / 9000Å PECVD
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.27 µm
+    gate_oxide: SiO2, 55 Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R63D-25
+    transistors: 60 million
+    gates: 20 million
+  qualification_history:
+  - number: '011308'
+    description: New Technology R63D-25 / New Product, 8Meg, Pipelined SRAM with NoBL Architecture CY7C1354V25.
+      Production Qualification, not full Qualification
+    date: Apr 01
+  - number: '012407'
+    description: New Technology R63D-25 / New Product, 8Meg, Pipelined SRAM with NoBL Architecture CY7C1354V25.
+      Full Qualification
+    date: Jun 01
+  quotes:
+  - text: New Technology R63D-25 / New Product, 8Meg, Pipelined SRAM with NoBL
+    location: p.2, Product Qualification History, row 011308
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R63D-25'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.27 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R63D-25 is a technology code new to this corpus. This report is R63D-25's own origin, QTP 011308
+    (Apr 01, "New Technology R63D-25"). The printed design rule is 0.27 µm, matching the other R63D-25
+    report in this corpus (qtp-011805) exactly; neither report's own printed figure is 0.25 µm despite the
+    "-25" in the technology code's name.
+- id: qtp-011805
+  origin: cypress
+  doc_type: QTP
+  number: '011805'
+  cypress_document_number: null
+  title: Unidirectional Synchronous FIFO with Bus Matching, R63D-25 Technology, Fab4
+  version: '1.1'
+  date_printed: February, 2003
+  url: https://www.cypress.com/file/91656/download
+  archive_url: https://web.archive.org/web/20211206073612/https://www.cypress.com/file/91656/download
+  retrieved: '2026-09-25'
+  sha256: fe808d61b9713afe4c8f71a9a81dab1c8af71cf0c2073f12110a337e6e132dc7
+  technology_codes:
+  - R63D-25
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C4804V25
+  - CY7C4806V25
+  - CY7C4808V25
+  die_ids:
+  - 7C4808A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6,000Å AlCu/300Å TiW; Metal 2: 500Å TiW/8,000Å AlCu/300Å TiW'
+    passivation: 1000Å PECVD oxide / 9000Å PECVD
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.27 µm
+    gate_oxide: SiO2, 55 Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R63D-25
+    transistors: 38 million
+    gates: 10 million
+  qualification_history:
+  - number: '011308'
+    description: New Technology R63D-25 / New Product, 8Meg, Pipelined SRAM with NoBL Architecture CY7C1354V25.
+      Production Qualification, not full Qualification
+    date: Apr 01
+  - number: '012407'
+    description: New Technology R63D-25 / New Product, 8Meg, Pipelined SRAM with NoBL Architecture CY7C1354V25.
+      Full Qualification
+    date: Jun 01
+  - number: '011805'
+    description: New Synchronous FIFO with Bus Matching, CY7C4804V25, CY7C4806V25, CY7C4808V25
+    date: Aug 02
+  quotes:
+  - text: New Synchronous FIFO with Bus Matching, CY7C4804V25, CY7C4806V25, CY7C4808V25
+    location: p.2, Product Qualification History, row 011805
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R63D-25'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.27 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This report independently repeats R63D-25's origin row (QTP 011308, Apr 01) verbatim, matching
+    qtp-012407. Its own process figures (2 metal layers, 0.27 µm, 55 Å gate oxide) also match qtp-012407
+    exactly, with 38 million transistors here against 60 million there for the different product.
+- id: qtp-097461
+  origin: cypress
+  doc_type: QTP
+  number: '97461'
+  cypress_document_number: null
+  title: 3.3V, Light Device 16-Bit FCT Family
+  version: '1.0'
+  date_printed: April, 1998
+  url: https://www.cypress.com/file/93881/download
+  archive_url: https://web.archive.org/web/20210517162807/https://www.cypress.com/file/93881/download
+  retrieved: '2026-09-25'
+  sha256: 41e7073df47c63de1746c8f82aa7ed55cee6e266ab9f1d2349453e8f8ddc5020
+  technology_codes:
+  - L31
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY74FCT163LD*
+  - CY74FCT163LDH*
+  die_ids:
+  - 7C73590B
+  - 7C73690B
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW, 6,000Å Al/0.5%Cu 1,200Å TiW; Metal 2: 500Å TiW, 9,000Å Al/0.5%Cu
+      1,200Å TiW'
+    passivation: 7,000A TEOS + 6,000A Si2N4
+    free_phosphorus_percent: 4-5%
+    design_rule: CMOS, Single Poly, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/L31
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '97461'
+    description: FCT 16-Bit, 3.3V, L31 Technology
+    date: null
+  quotes:
+  - text: FCT 16-Bit, 3.3V, L31 Technology
+    location: p.2, Product Description, Device Description
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/L31'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Single Poly, Double Metal /0.5 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  - text: Failure rate is based on 16-bit FCT product family qualified in R30 technology (L31 technolgy is
+      a subset of R30 technology)
+    location: p.5, Reliability Failure Rate Summary, footnote 4
+  notes: 'L31 is a technology code new to this corpus. Its process figures (2 metal layers, CMOS Single
+    Poly Double Metal, 0.5 µm, 145 Å gate oxide, Fab4/L31) are identical to R3''s (qtp-097044), also at Fab
+    4. This one report names the technology three different ways: the running header on every interior
+    page reads "R3 Technology, Fab 4" (matching qtp-097044''s own code), the Technology/Fab Process
+    Description block header reads "L31" (the code used throughout the process-description fields and Die
+    Fab Line ID), and a reliability footnote instead calls it "R30 technology" ("L31 technolgy is a subset
+    of R30 technology", their spelling). All three readings are quoted verbatim above rather than
+    reconciled; this document also records a known ESD-HBM failure below Cypress''s own 2,200V standard,
+    with a stated corrective transfer of the product family to R42 technology in Q2 1998.'

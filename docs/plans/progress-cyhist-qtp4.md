@@ -47,23 +47,71 @@ number already has a record from an earlier file id -- no new record added):
   with `gen_history_stackups.py`, `--sync`, and `gen_history_sources.py`.
 - `uv run tools/check_history.py`: 9 pages, 177 claims checked, 0 problems.
 
+## Second batch: the five new process codes (Group C)
+
+All 40 outstanding fetches (94056/94076/92076/92601 retries plus group C's 36
+file ids) completed with no errors this session; see `tmp/fetch_retry_c.log`.
+94076 remains unusable (see above). All 37 usable files were extracted with
+`tmp/extract.py` into `tmp/extracted/`; none of their QTP numbers duplicate an
+existing record.
+
+Six records added for the five new codes:
+
+| id | technology_codes | fab | source file id | notes |
+|---|---|---|---|---|
+| qtp-097044 | R3 | Fab 4 (Bloomington, MN) | 93606 | 0.5 µm, matches R28's and L31's figures |
+| qtp-012005 | R7LD-3 | Fab 4 (Bloomington, MN) | 91666 | 0.16 µm; Die Fab Line ID printed "R7LD-3R" |
+| qtp-004405 | R52LD-5R | Fab 4 (Bloomington, MN) | 91836 | 0.25 µm/0.3 FETS; cover date and running-header date disagree (Dec 2002 vs Apr 2001) |
+| qtp-012407 | R63D-25 | Fab 4 (Bloomington, MN) | 91686 | technology's own origin report (QTP 011308); 0.27 µm |
+| qtp-011805 | R63D-25 | Fab 4 (Bloomington, MN) | 91656 | independently repeats the same 0.27 µm figure |
+| qtp-097461 | L31 | Fab 4 (Bloomington, MN) | 93881 | same figures as R3; names the technology three different ways in one document (see notes) |
+
+**Stackup generator gap:** `uv run tools/gen_history_stackups.py --check` (and
+plain `gen_history_stackups.py`) now stops with `no design-rule band for
+['qtp-011805', 'qtp-012407']`. Both R63D-25 reports print "0.27 µm", which
+falls in the gap between the generator's "0.25 µm" band (0.24-0.26) and its
+"0.42 µm and 0.35 µm" band (0.33-0.45); no existing band covers 0.27. Left
+for the tool's owner rather than editing `tools/`. Because of this, this
+session's `docs/history/stackups.md`, `products.md` and `sources.md` were
+**not** regenerated after the second batch and are now stale (they still
+reflect the state after the first batch only); `check_history.py` still
+passes (177 claims, 0 problems) since it does not depend on those pages being
+current relative to the newest `qtp.yaml` additions.
+
+## Checks after the second batch
+
+- `uv run tools/check_history_quotes.py`: 376 quotes checked, 0 problems (one
+  quote for qtp-012407 had to stop at "...with NoBL" rather than continue
+  into "Architecture": the cached PDF text has an unmapped private-use-area
+  glyph, distinct from the three micron-sign PUA codepoints
+  `check_history_quotes.py` already maps, standing in for a trademark symbol
+  between "NoBL" and "Architecture" everywhere that phrase appears in this
+  one document -- not fixed here since it means editing `tools/`).
+- `uv run tools/check_history.py`: 9 pages, 177 claims checked, 0 problems.
+- `uv run tools/gen_history_stackups.py --check`: blocked, see above.
+
 ## Still to do
 
-- Group B: 46 more staged-but-unprocessed file ids (all of `tmp/priority_order_b.txt`
-  except the 2 duplicates and the one now recorded as qtp-098296/qtp-060201/qtp-070505/qtp-071104
-  handled above) -- R52T-3 clocks (many), R52FFD-3, B55SGT, C8Q-3R, R9Q-3R,
+- Group B: 46 more staged-and-extracted file ids not yet turned into records
+  (all of `tmp/priority_order_b.txt` except the 2 duplicates and the 4 now
+  recorded) -- R52T-3 clocks (many), R52FFD-3, B55SGT, C8Q-3R, R9Q-3R,
   R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
-  quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`;
-  extracted text for all of them is at `tmp/extracted/<fid>.txt` (done this
-  session via `tmp/extract.py`).
-- Group C: fetch was started this session (`tmp/priority_order_retry_c.txt`,
-  running in the background); check `tmp/fetch_retry_c.log` and
-  `tmp/fetch_log.jsonl` for its outcome before re-fetching. Includes the five
-  new codes R3 (93606), R7LD-3 (91666), R52LD-5R (91836), R63D-25 (91686,
-  91656) and L31 (93881); these are new process codes for `qtp.yaml` and
-  need careful records.
-- Cross-check every new QTP number against the existing 73+ records (now 77)
-  before writing a record, the way qtp-072002/qtp-061806 duplicates were
-  caught here: `grep -oP "^  number: '?\K[0-9]+" data/history/qtp.yaml | sort -u`,
-  compared numerically (leading zeros vary between the printed field and the
-  padded `id`).
+  quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
+  extracted text at `tmp/extracted/<fid>.txt` (both done).
+- Group C: 31 more fetched-and-extracted file ids not yet turned into records
+  (all of `tmp/priority_order_c.txt` except the 5 codes handled above) --
+  further R7FT-3R, R42HD, R32, R42D, R32D, R52D-3, R52LD-3, B53D-3 Fab 4
+  reports, plus two foundry reports (TSMC 0.25 µm "L000004", WaferTech 0.35 µm
+  "G990003", the latter a "Technology Qualification Report" rather than
+  "Product Qualification Report" -- keep `doc_type: QTP` for consistency with
+  the rest of this corpus, per the existing convention of not adding new
+  `doc_type` values). QTP-number identification for all of them (via `grep
+  -om1 -E "QTP#?\s*:?\s*[0-9]{4,6}"`) is in this session's scrollback only, not
+  saved to a file -- rerun it against `tmp/extracted/*.txt` before resuming.
+- Once the stackup generator's new-band gap is resolved upstream, regenerate
+  `docs/history/stackups.md`, `products.md` and `sources.md` and commit them.
+- Cross-check every new QTP number against the existing (now 83) records
+  before writing one, the way the qtp-072002/qtp-061806 duplicates were
+  caught: `grep -oP "^  number: '?\K[0-9]+" data/history/qtp.yaml | sed
+  's/^0*//' | sort -u`, comparing numerically since leading zeros vary
+  between the printed field and the padded `id`.
