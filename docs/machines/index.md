@@ -649,156 +649,156 @@ corroboration on a deposition page) are listed with that wording.
 
 ### Thermal processing
 
-:::{table} Thermal processing tools SkyWater lists, one row per step-assignment grade
+:::{table} Thermal processing tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | strong | {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>` |
-| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | inference | {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
-| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | strong for existence (batch alternative) | {ref}`FILOX <step-011>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>` |
-| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | weak | {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`LINIT <step-104>` |
-| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | excluded on thermal grounds (inference) | {ref}`NTSD <step-167>` |
+| ″ (same tool) | inference | {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
+| ″ (same tool) | strong for existence (batch alternative) | {ref}`FILOX <step-011>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>` |
+| ″ (same tool) | weak | {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`LINIT <step-104>` |
+| ″ (same tool) | excluded on thermal grounds (inference) | {ref}`NTSD <step-167>` |
 | "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" — strong[^skw-01] | inference | {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>` |
-| "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" — strong[^skw-01] | weak | {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
+| ″ (same tool) | weak | {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
 | Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug dual damascene" — strong for the capability[^skw-01] | inference for use in SKY130 (nitrided oxide) | {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>` |
-| Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug dual damascene" — strong for the capability[^skw-01] | strong for the capability (silicide, W plug) | {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>` |
+| ″ (same tool) | strong for the capability (silicide, W plug) | {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>` |
 :::
 
 ### Thin-film deposition
 
-:::{table} Thin-film deposition tools SkyWater lists, one row per step-assignment grade
+:::{table} Thin-film deposition tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | inference | {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>` |
-| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | medium (as the whole film) | {ref}`NILD2 <step-105>` |
-| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | medium (as the liner or overburden) | {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
-| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | not public which of the candidates | {ref}`POC <step-059>` |
-| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | weak | {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>` |
+| ″ (same tool) | medium (as the whole film) | {ref}`NILD2 <step-105>` |
+| ″ (same tool) | medium (as the liner or overburden) | {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| ″ (same tool) | not public which of the candidates | {ref}`POC <step-059>` |
+| ″ (same tool) | weak | {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>` |
 | "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | inference | {ref}`LINIT <step-104>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`, {ref}`NTSD <step-167>` |
-| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | medium | {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>` |
-| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | not public which of the candidates | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>` |
-| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | strong for existence | {ref}`SPOX <step-080>` |
-| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | weak | {ref}`SPNIT <step-076>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| ″ (same tool) | medium | {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>` |
+| ″ (same tool) | not public which of the candidates | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>` |
+| ″ (same tool) | strong for existence | {ref}`SPOX <step-080>` |
+| ″ (same tool) | weak | {ref}`SPNIT <step-076>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
 | "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" — strong[^skw-01][^skw-07] | strong (two SkyWater statements) | {ref}`FILOX <step-011>` |
-| "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" — strong[^skw-01][^skw-07] | inference | {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| ″ (same tool) | inference | {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
 | "Lam/Novellus PECVD Tungsten" — strong (model inferred)[^skw-01] | inference | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>` |
 | "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "Imp TiN" and "Collimated Ti" | {ref}`TI/TIN1 <step-097>` |
-| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "ESC TiN" | {ref}`LITIN <step-101>` |
-| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "Imp TiN" | {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`, {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>` |
-| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: aluminium, "TiW" and the underlayer | {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>` |
-| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "TiW" | {ref}`CAPTIW1 <step-136>`, {ref}`CAPTIW2 <step-151>` |
+| ″ (same tool) | inference: "ESC TiN" | {ref}`LITIN <step-101>` |
+| ″ (same tool) | inference: "Imp TiN" | {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`, {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>` |
+| ″ (same tool) | inference: aluminium, "TiW" and the underlayer | {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>` |
+| ″ (same tool) | inference: "TiW" | {ref}`CAPTIW1 <step-136>`, {ref}`CAPTIW2 <step-151>` |
 :::
 
 ### Lithography
 
-:::{table} Lithography tools SkyWater lists, one row per step-assignment grade
+:::{table} Lithography tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | inference | {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
-| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | listed, not assigned | {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>` |
+| ″ (same tool) | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
+| ″ (same tool) | listed, not assigned | {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>` |
 | "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | inference | {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>` |
-| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
+| ″ (same tool) | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
 | "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" — strong[^skw-01] | not evidence for the 130 nm gate (a later addition) | {ref}`P1M <step-061>` |
 | "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track" — strong[^skw-01] | strong, or strong for existence (some pages add that which track serves which exposure tool is not public) | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
 | "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use after this etch is an inference | {ref}`P1ME <step-062>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| ″ (same tool) | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
+| ″ (same tool) | strong for existence (SkyWater statement); use after this etch is an inference | {ref}`P1ME <step-062>` |
+| ″ (same tool) | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
 | "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
-| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
-| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| ″ (same tool) | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
+| ″ (same tool) | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
 :::
 
 ### Etch
 
-:::{table} Etch tools SkyWater lists, one row per step-assignment grade
+:::{table} Etch tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | inference | {ref}`LI1ME <step-103>` |
-| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | not public which of the two (the page leans to one, by inference) | {ref}`MM1E <step-114>`, {ref}`MM2E <step-125>`, {ref}`MM3E <step-140>` |
-| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | not public which of the two | {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`MM5E <step-163>` |
-| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | weak | {ref}`PDME <step-169>` |
-| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | named as corroboration only | {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
+| ″ (same tool) | not public which of the two (the page leans to one, by inference) | {ref}`MM1E <step-114>`, {ref}`MM2E <step-125>`, {ref}`MM3E <step-140>` |
+| ″ (same tool) | not public which of the two | {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`MM5E <step-163>` |
+| ″ (same tool) | weak | {ref}`PDME <step-169>` |
+| ″ (same tool) | named as corroboration only | {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
 | "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" — strong[^skw-01] | inference | {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`P1ME <step-062>` |
-| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" — strong[^skw-01] | medium | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LI1ME <step-103>`, {ref}`PDME <step-169>` |
-| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" — strong[^skw-01] | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
+| ″ (same tool) | medium | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LI1ME <step-103>`, {ref}`PDME <step-169>` |
+| ″ (same tool) | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
 | "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | inference | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDME <step-169>` |
-| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | medium | {ref}`P1ME <step-062>` |
-| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
+| ″ (same tool) | medium | {ref}`P1ME <step-062>` |
+| ″ (same tool) | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
 | "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — strong[^skw-01] | inference | {ref}`STIE <step-006>` |
-| "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — strong[^skw-01] | weak | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+| ″ (same tool) | weak | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
 :::
 
 ### Ion implantation
 
-:::{table} Ion implantation tools SkyWater lists, one row per step-assignment grade
+:::{table} Ion implantation tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "Axcelis 8250 Mid current …" — strong[^skw-01] | inference | {ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`UPRI <step-056>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | weak | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | strong for existence; unlikely, no phosphorus | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | named only as below the required dose | {ref}`P1I <step-050>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
+| ″ (same tool) | not stated which of two | {ref}`PRI <step-053>` |
+| ″ (same tool) | weak | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
+| ″ (same tool) | strong for existence; unlikely, no phosphorus | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>` |
+| ″ (same tool) | named only as below the required dose | {ref}`P1I <step-050>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
 | "Axcelis GSD High current/energy …" — strong[^skw-01] | inference | {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
-| "Axcelis GSD High current/energy …" — strong[^skw-01] | strong for existence | {ref}`LVTPI <step-020>`, {ref}`PWDEI1 <step-031>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
-| "Axcelis GSD High current/energy …" — strong[^skw-01] | weak | {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
+| ″ (same tool) | strong for existence | {ref}`LVTPI <step-020>`, {ref}`PWDEI1 <step-031>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
+| ″ (same tool) | weak | {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
 | "Axcelis GSD Hi dose …" — strong[^skw-01] | inference | {ref}`P1I <step-050>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | the alternative (no grade) | {ref}`UPRI <step-056>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | weak | {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
+| ″ (same tool) | not stated which of two | {ref}`PRI <step-053>` |
+| ″ (same tool) | the alternative (no grade) | {ref}`UPRI <step-056>` |
+| ″ (same tool) | weak | {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
 | "Axcelis GSD High current/energy …" or "Axcelis GSD Hi dose …", either entry — strong[^skw-01] | weak (which entry would serve not stated) | {ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>` |
 :::
 
 ### Resist strip and clean
 
-:::{table} Resist strip and clean tools SkyWater lists, one row per step-assignment grade
+:::{table} Resist strip and clean tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | inference (which of the three not stated) | {ref}`DNIS <step-009>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>` |
-| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | inference, the Iridia fitting a crust step best | {ref}`P1IS <step-051>`, {ref}`ASTIS <step-067>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>` |
-| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | weak | {ref}`TUNARCE <step-036>` |
-| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | strong (strip after an etch) | {ref}`STIE <step-006>` |
-| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | strong for existence (strip after an etch) | {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`P1ME <step-062>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+| ″ (same tool) | inference, the Iridia fitting a crust step best | {ref}`P1IS <step-051>`, {ref}`ASTIS <step-067>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>` |
+| ″ (same tool) | weak | {ref}`TUNARCE <step-036>` |
+| ″ (same tool) | strong (strip after an etch) | {ref}`STIE <step-006>` |
+| ″ (same tool) | strong for existence (strip after an etch) | {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`P1ME <step-062>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
 | "Akrion Gamma Batch Wet Bench" — strong[^skw-01] | strong ("the only phosphoric tank listed") | {ref}`NS19 <step-013>` |
-| "Akrion Gamma Batch Wet Bench" — strong[^skw-01] | inference | {ref}`DNIS <step-009>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>` |
-| "Akrion Gamma Batch Wet Bench" — strong[^skw-01] | strong for existence | {ref}`STIE <step-006>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`ONOME <step-042>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>` |
+| ″ (same tool) | inference | {ref}`DNIS <step-009>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>` |
+| ″ (same tool) | strong for existence | {ref}`STIE <step-006>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`ONOME <step-042>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>` |
 | "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | inference (the pre-furnace or pre-anneal clean; SC-2 is listed only for these two benches) | {ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`PWDEIS <step-033>`, {ref}`LDASTIS <step-074>`, {ref}`NSDIS <step-087>` |
-| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | inference | {ref}`SACETCH <step-095>` |
-| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | inference for the DNS bench, strong for existence for FSI Mercury | {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>` |
-| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | strong for existence | {ref}`STIE <step-006>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`LICM1E <step-094>` |
+| ″ (same tool) | inference | {ref}`SACETCH <step-095>` |
+| ″ (same tool) | inference for the DNS bench, strong for existence for FSI Mercury | {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>` |
+| ″ (same tool) | strong for existence | {ref}`STIE <step-006>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`LICM1E <step-094>` |
 | "Batch Rotational", "EKS265, EKC270 solvents" — strong[^skw-01] | strong for existence (some pages add that the assignment is an inference) | {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
 | "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | inference (SEZ 223) | {ref}`BFR <step-060>` |
-| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | medium | {ref}`SACETCH <step-095>` |
-| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | strong for existence | {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>` |
-| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | named as the post-CMP clean; no brush scrubber named | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
+| ″ (same tool) | medium | {ref}`SACETCH <step-095>` |
+| ″ (same tool) | strong for existence | {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>` |
+| ″ (same tool) | named as the post-CMP clean; no brush scrubber named | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
 :::
 
 ### Planarisation
 
-:::{table} Planarisation tools SkyWater lists, one row per step-assignment grade
+:::{table} Planarisation tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
 |---|---|---|
 | "AMAT Mirra CMP" — strong[^skw-01] | inference from the film | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`, {ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`, {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>` |
-| "AMAT Mirra CMP" — strong[^skw-01] | inference from the film; which of the two tungsten processes not public | {ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` |
+| ″ (same tool) | inference from the film; which of the two tungsten processes not public | {ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` |
 :::
 
 ### Metrology, inspection and test
 
-:::{table} Metrology, inspection and test tools SkyWater lists, one row per step-assignment grade
+:::{table} Metrology, inspection and test tools SkyWater lists, one row per step-assignment grade (″ repeats the tool above it)
 :widths: 40 20 40
 
 | Tool as listed | Grade in the step pages' words | Steps |
