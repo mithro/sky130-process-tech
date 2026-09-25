@@ -58,6 +58,66 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 044-lvom.md — done (1 hand-written in-force note in the body plus its copy under
+References; content untouched — the last page in the 037–044 in-force-sweep range)
+
+Rules applied: R-TABLE (the `hvi.1`–`hvi.5` design-rule sentence → Rule|Constrains|Value,
+wrapped in `{table}` with `:widths:`, keeping the `"between hvi and nwell (exclude
+coincident edges)"` quotation intact in the Value cell rather than paraphrasing it out —
+an early draft dropped the quotation marks and was caught by `check_preserved.py`'s
+`LOST quotes`, fixed by restoring the exact quoted phrase in the cell), R-PARA/R-SENTENCE
+throughout (the PDK-quote paragraph split at its rule-table/inference/methodology seams;
+the em-dash-plus-parenthetical "high-voltage methodology" sentence split into three; the
+"Why this step exists" ITRS/thickness paragraph and the dual-gate-oxide paragraph each
+split; both flagged "How it is typically performed" items split into lead + indented
+continuation), R-SENTENCE **inside two `{dropdown}` notes** (one dense sentence, 49
+words, is a single indivisible patent quotation and was left whole, the same accepted
+exception as earlier pages), R-CATEGORY on "Step category" (kept the classification
+sentence and its immediately following "minimum feature" sentence together, rather than
+moving the second sentence into a bullet — see the tokeniser note below — then
+`**Specific to this step:**` and 2 bullets for the two sentences that remained),
+R-HEDGE step 1, R-TOOLS (3 "Strength:" bullets → SkyWater-says/Tool-exists/Runs-this-step
+form; no recap table), R-RELATED (`Previous:`, `Next:`, `Same category:`, `Depends on:`,
+`Mask:`, `Category page:`), R-OPENQ (bold labels on all three bullets), R-GLANCE (box
+inserted last; checked against `check_inforce.py` before commit — clean).
+
+**A second instance of the check_preserved.py ref/code-span tokeniser quirk (Guide
+problem 15, from 038), avoided by *not* restructuring, not by reformatting.** The first
+R-CATEGORY draft split the classification sentence and the very next sentence
+("Its minimum feature, the 0.600 µm `hvi` width…") into separate bullets, inserting
+`**Specific to this step:**` and blank lines between `{ref}`TUNM <step-035>`` and the
+later `` `hvi` `` code span. `check_preserved.py` reported `LOST refs: 'TUNM <step-035>.
+Its minimum feature, the 0.600 µm hvi'` / `ADDED refs: 'step-035'` — the same
+"a role's closing backtick, wrongly treated as an inline-code opening backtick by
+`_CODE_SPAN_SINGLE_RE`, bridges to the next unrelated code span" mechanism as 038's
+finding, confirmed by checking that the *base* file already has this exact bogus-span
+bridging between these same two backtick spans (unchanged prose on both sides). Unlike
+038, the fix here could not be "keep the same line-wrap" — the whole point of this edit
+was to insert new structure between those two points — so instead the classification
+sentence was left running through "…and we infer an i-line exposure." (both original
+sentences, unsplit, exactly as in the source) and the bullet list starts only after that,
+where no ref/code-span pair spans the new break. `check_refs`/`check_preserved` are both
+clean after this change; recorded here as a second occurrence of Guide problem 15's
+underlying mechanism, this time worked around by not disturbing the adjacency rather
+than by controlling a line-wrap.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 0; list items > 60
+words 1 → 0; sentences > 45 words 6 → 1 (the accepted indivisible dropdown quotation);
+table cells > 25 words 0 → 0. This page has no `{figure}` caption long enough to trip the
+usual figure-caption exception, so the measurement is otherwise completely clean.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order --allow-regrouped --allow-dropdown-edits
+docs/steps/044-lvom.md`: **0 undeclared differences** after the two fixes above. The
+design-rule table produces one `LOST number_order (not a clean regroup)` finding,
+hand-verified as the same "table puts the rule id before the value, source text put the
+value before the id" reordering already documented for page 035's `tunm` table — every
+digit checked present in the new table, nothing actually lost. All other checkers,
+`check_inforce.py` included, pass; `-W` build clean. Screenshots (desktop + 400 px) read
+cleanly top to bottom, including the new design-rule table (holds at 400 px, no
+horizontal scroll) and both in-force dropdowns (collapsed, untouched).
+
+
 ### 043-gox100.md — done (1 hand-written in-force note in the body plus its copy under
 References; content untouched — inside the 037–044 in-force-sweep range). See "Content
 problems for the owner" above for the pad-oxide contradiction between this page's

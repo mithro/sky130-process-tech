@@ -10,6 +10,21 @@
 | **Previous step** | {ref}`GOX100 <step-043>` |
 | **Next step** | {ref}`NCHI <step-045>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** opens resist windows over the 1.8 V transistors so the
+  thick oxide can be implanted and stripped there.
+* **Why:** a single gate oxide cannot serve both the 1.8 V core and
+  the 5 V/high-voltage devices, so the wafer needs two thicknesses.
+* **Public numbers:** minimum `hvi` width 0.600 µm, spacing
+  0.700 µm.[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (tool class); inference (assignment).[^skw-01]
+* **Not public:** the mask's enclosure of active by `hvi`, and
+  whether it excludes the ONO islands (→ Open questions).
+:::
+
 ## What this step is
 
 `LVOM` is the mask of the {term}`dual-gate-oxide <dual gate oxide>` process. After the first,
@@ -32,21 +47,35 @@ Before, the thick oxide on both active areas; after, resist over the 5 V area an
 
 The PDK lists "Low Voltage Oxide, LVOM" as used in SKY130,[^pdk-05]
 with the generated mask layer `clvom` (GDS 46:0, "Low Voltage oxide
-mask") and a drawing purpose at 45:20.[^pdk-06] In the published rule
+mask") and a drawing purpose at 45:20.[^pdk-06]
+
+In the published rule
 set designers do not draw `lvom`; they draw its complement, `hvi`
 (GDS 75:20, "High voltage (5.0V) thick oxide gate regions"),[^pdk-06]
 whose rule set is headed
-"Defines thick oxide for high voltage devices": minimum width
-0.600 µm (hvi.1), minimum spacing 0.700 µm (hvi.2a, with "Manual merge
-if space is below minimum", hvi.2b), "Hvi must not overlap tunm"
-(hvi.4), and a minimum space of 0.700 µm "between hvi and nwell
-(exclude coincident edges)" (hvi.5).[^pdk-periph] We infer that the
+"Defines thick oxide for high voltage devices":[^pdk-periph]
+
+:::{table} The `hvi` design rules, as published
+:widths: 14 46 40
+
+| Rule | Constrains | Value |
+|---|---|---|
+| hvi.1 | minimum width | 0.600 µm |
+| hvi.2a | minimum spacing | 0.700 µm |
+| hvi.2b | — | "Manual merge if space is below minimum" |
+| hvi.4 | — | "Hvi must not overlap tunm" |
+| hvi.5 | minimum space | 0.700 µm "between hvi and nwell (exclude coincident edges)" |
+:::
+
+We infer that the
 LVOM {term}`reticle` is essentially NOT `hvi`: everything outside the drawn
-thick-oxide regions is opened. The PDK's high-voltage methodology
+thick-oxide regions is opened.
+
+The PDK's high-voltage methodology
 confirms which devices sit inside `hvi`: "All high voltage devices use
 110A gate oxide thickness just like low voltage (0 to Vcc)
-devices"[^pdk-hv] — where, we read, "low voltage (0 to Vcc)" means
-the 5 V `g5v0d10v5` family — and "All VHV devices use 110A gate oxide
+devices".[^pdk-hv] Here, we read, "low voltage (0 to Vcc)" means
+the 5 V `g5v0d10v5` family. And "All VHV devices use 110A gate oxide
 thickness just like standard 5.0V Vcc devices".[^pdk-hv]
 
 One subtlety follows from hvi.4. Because `hvi` must not overlap the
@@ -73,14 +102,19 @@ this time".[^pat-03]
 step of the *implant and wet-etch window* type — the same double duty
 as {ref}`TUNM <step-035>`. Its minimum feature, the 0.600 µm `hvi`
 width,[^pdk-periph] places it among the relaxed layers, and we infer
-an i-line exposure. What is special about it is where its edges must
-fall: the boundary between thick and thin oxide has to lie on field
-oxide, never across an active area, because an oxide step inside a
-channel would be a transistor with two thicknesses. The rule that
-`hvi` keeps 0.700 µm from an N-well edge (hvi.5)[^pdk-periph] and the
-PDK's photoresist thickness of 1.14 µm[^pdk-03] are the public
-constraints; the enclosure of active by `hvi` that must exist inside
-the generated mask is not published.
+an i-line exposure.
+
+**Specific to this step:**
+
+* What is special about it is where its edges must
+  fall: the boundary between thick and thin oxide has to lie on field
+  oxide, never across an active area, because an oxide step inside a
+  channel would be a transistor with two thicknesses.
+* The rule that
+  `hvi` keeps 0.700 µm from an N-well edge (hvi.5)[^pdk-periph] and the
+  PDK's photoresist thickness of 1.14 µm[^pdk-03] are the public
+  constraints; the enclosure of active by `hvi` that must exist inside
+  the generated mask is not published.
 
 ## Why this step exists
 
@@ -88,9 +122,11 @@ SKY130 supports "internal 1.8V with 5.0V I/Os",[^pdk-10] plus 10–20 V
 {term}`drain-extended <DEMOS>` devices that share the 5 V oxide.[^pdk-hv] A gate oxide
 cannot serve both: ITRS 2001 puts the equivalent oxide thickness of
 2001-era low-operating-power logic at 2.0–2.4 nm and of low-standby
-logic at 2.4–2.8 nm,[^itrs-01] whereas an oxide that must sit under 5 V
+logic at 2.4–2.8 nm.[^itrs-01]
+
+An oxide that must sit under 5 V
 (and, in the PDK's HV rules, survive "7.3 V @ 25C" gate stress without
-failure[^pdk-hv]) needs roughly 11 nm — the PDK's 110 Å.[^pdk-hv] The
+failure[^pdk-hv]) needs roughly 11 nm, the PDK's 110 Å.[^pdk-hv] The
 public SPICE models carry the two numbers: an electrical oxide
 thickness (`toxe`) of 4.148 nm for `nfet_01v8`[^pdk-model-nfet01v8]
 and 11.6 nm for `nfet_g5v0d10v5`.[^pdk-model-nfet5v]
@@ -99,7 +135,9 @@ A dual gate oxide is made by growing the thick oxide first, masking
 the thick-oxide regions, stripping the oxide from the thin-oxide
 regions and growing the thin oxide second ({ref}`category-oxidation`,
 *Dual gate oxide processes*); the mask that does the masking is
-`LVOM`. Multiple-thickness gate-oxide integration was worked out in
+`LVOM`.
+
+Multiple-thickness gate-oxide integration was worked out in
 the late 1990s for logic-embedded DRAM,[^togo-1998] and the pairing of
 the resist with the wet etch it must survive — the "'Resist / Wet
 Etch' Couple for Dual Gate Oxide" — has its own literature.[^beverina-2003]
@@ -110,7 +148,7 @@ force and their wording is in the collapsed note below.
 Cypress's flows describe the same mask: "a photoresist layer 318 …
 patterned to have an opening 319 formed over a region of the substrate
 302 that is to have the next insulator material and/or insulator layer
-thickness",[^pat-03] and "a patterned mask layer 242 … includes at
+thickness".[^pat-03] And "a patterned mask layer 242 … includes at
 least one opening 244 over a channel 218 in the second region
 208".[^pat-04]
 :::
@@ -124,14 +162,16 @@ wrong.
 
 ## How it is typically performed
 
-An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
-1. **Surface.** Fresh thermal oxide — thinner than the 110 Å the PDK
+1. **Surface.** Fresh thermal oxide, thinner than the 110 Å the PDK
    gives for the finished thick oxide,[^pdk-hv] by an increment that
-   is not public (see {ref}`GOX100 <step-043>`) — over all active
+   is not public (see {ref}`GOX100 <step-043>`), over all active
    areas and trench oxide over the field; the ONO islands over the
-   memory cells. Dehydration bake and {term}`HMDS` prime. Resist
+   memory cells.
+
+   Dehydration bake and {term}`HMDS` prime. Resist
    adhesion to a fresh, clean thermal oxide is good, which matters
    because the resist edge will be undercut by HF at
    {ref}`GOXETCH <step-046>`.
@@ -142,7 +182,9 @@ An industry-generic sequence for a dual-gate-oxide mask in a 200 mm,
 3. **Exposure** through the LVOM reticle on an i-line {term}`stepper` (our
    inference from the 0.6 µm rule; ASML describes older exposure tools
    that "migrate to the lithography of choice for less critical
-   layers"[^asml-30]), aligned to the {term}`STI` pattern; the
+   layers"[^asml-30]), aligned to the {term}`STI` pattern.
+
+   The
    thick/thin boundary must land on field oxide, so {term}`overlay` to active
    is the controlled quantity.
 4. **Post-exposure bake, develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse.
@@ -166,13 +208,15 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / scanner.**[^skw-01] Strength: **strong** for
-  the tool class; **inference** for the assignment.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
-  Strength: strong for existence.
-* **KLA 5200/5300/Archer overlay; AMAT Verity/VeraSEM CD.**[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / scanner**
+  - *SkyWater says:* lists it.[^skw-01]
+  - *Tool exists:* **strong** for the tool class.
+  - *Runs this step:* **inference**, for the assignment.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **KLA 5200/5300/Archer overlay; AMAT Verity/VeraSEM CD**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -187,10 +231,11 @@ reference treats the strip as part of {ref}`GOXETCH <step-046>`).
 * Next: {ref}`NCHI <step-045>` (implant through the window), then
   {ref}`GOXETCH <step-046>` (thick oxide stripped in the window) and
   {ref}`LVGOX <step-047>` (thin oxide grown).
-* Devices inside `hvi`: the 5 V family and the 10–20 V drain-extended
-  devices ({ref}`PWDEM <step-030>`).
-* The memory cells' relationship to `hvi` (hvi.4): {ref}`TUNM <step-035>`.
-* Mask page: {ref}`LVOM <mask-lvom>` — the mask's layers, plates,
+* Same category: devices inside `hvi` — the 5 V family and the
+  10–20 V drain-extended devices ({ref}`PWDEM <step-030>`).
+* Depends on: the memory cells' relationship to `hvi` (hvi.4),
+  {ref}`TUNM <step-035>`.
+* Mask: {ref}`LVOM <mask-lvom>` — the mask's layers, plates,
   renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`;
   dual-oxide background: {ref}`category-oxidation`.
@@ -264,14 +309,14 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The derivation of the LVOM reticle from `hvi` (and whether it
-  excludes the ONO islands) is not public; the NOT-`hvi` reading and
-  the protection of the ONO are inferences, the latter from a Cypress
-  patent.
-* Whether the layer is exposed on i-line or {term}`DUV` tools is inferred from
-  the 0.6 µm rule.
-* The enclosure of active regions by the generated mask, resist type
-  and hard-bake conditions are not public.
+* **Mask derivation.** The derivation of the LVOM reticle from `hvi`
+  (and whether it excludes the ONO islands) is not public; the
+  NOT-`hvi` reading and the protection of the ONO are inferences, the
+  latter from a Cypress patent.
+* **Exposure tool.** Whether the layer is exposed on i-line or
+  {term}`DUV` tools is inferred from the 0.6 µm rule.
+* **Enclosure and resist.** The enclosure of active regions by the
+  generated mask, resist type and hard-bake conditions are not public.
 
 <!-- footnotes -->
 
