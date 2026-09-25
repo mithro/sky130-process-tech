@@ -4898,3 +4898,211 @@ documents:
     drops the "D" that R32D's carries, and R32's process description prints only one metal layer against
     R32D's two -- read together, R32D appears to be a dual-metal derivative of single-metal R32, not a
     misprint of the same process.
+- id: qtp-098437
+  origin: cypress
+  doc_type: QTP
+  number: '98437'
+  cypress_document_number: null
+  title: 1 Meg SRAM, R42HD Technology, Fab 4 Qualification
+  version: '1.2'
+  date_printed: November, 1998
+  url: https://www.cypress.com/file/94121/download
+  archive_url: https://web.archive.org/web/20210507202024/https://www.cypress.com/file/94121/download
+  retrieved: '2026-09-25'
+  sha256: eec039932d0142103e29f269115fff646882859e7bc3774272b6e87f1273eb73
+  technology_codes:
+  - R42HD
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1031
+  - CY7C1032
+  die_ids:
+  - 7C1031A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: null
+    design_rule: CMOS, Double Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42HD
+    transistors: 6,489,591
+    gates: null
+  qualification_history:
+  - number: '98437'
+    description: qualify 7C1031/1032 Rev F in Fab 4 with R42HD, Hot Aluminum Technology
+    date: null
+  quotes:
+  - text: qualify 7C1031/1032 Rev F in Fab 4 with R42HD, Hot Aluminum Technology
+    location: p.2, Product Description, Qualification Purpose
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42HD'
+    location: p.2, Technology/Fab Process Description
+  - text: 'Failure Rate is based on 1Meg SRAM(CY7C109/1009), R42HD Technology, Fab 4 qualification (QTP #98064)'
+    location: p.4, Reliability Failure Rate Summary, footnote 5
+  notes: This report's running headers print "R42DH Technology" (letters transposed) on every interior page,
+    while the cover title, process-description section header and Die Fab Line ID all say "R42HD" -- quoted
+    verbatim rather than corrected. Its reliability-failure-rate footnote cites QTP 98064 (1 Meg SRAM,
+    CY7C109/1009) as a baseline; qtp-001605 (this session) dates that QTP 98064 to "New Technology
+    R42HD / 1Meg CY7C109 and device family, Apr 98", resolving the reference-only gap other reports in this
+    corpus (e.g. qtp-098115, qtp-098313, this session) left open.
+- id: qtp-003906
+  origin: cypress
+  doc_type: QTP
+  number: '003906'
+  cypress_document_number: null
+  title: 4 Meg MoBL2 SRAM, R52D-3 Technology, Fab 4
+  version: '1.2'
+  date_printed: December, 2002
+  url: https://www.cypress.com/file/91811/download
+  archive_url: https://web.archive.org/web/20210506140210/https://www.cypress.com/file/91811/download
+  retrieved: '2026-09-25'
+  sha256: d69db88c7d27b559a0c4d4af59bd6ad5434fe459f7fdaefab7a8c420a506df1b
+  technology_codes:
+  - R52D-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62146BV18
+  - CY62147BV18
+  die_ids:
+  - 7C62345
+  - 7C62346
+  - 7C62347
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6,000Å Al -0.5% Cu/300Å TiW; Metal 2: 300Å CoTi/8,000A Al -0.5%
+      Cu /300 TiW'
+    passivation: 1000Å Oxide + 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.25 µm
+    gate_oxide: SiO2 / 55 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R52D-3
+    transistors: 25,2 million
+    gates: 4.8 million
+  qualification_history:
+  - number: '99311'
+    description: New Technology R52D-3 , 2Meg CY7C1329
+    date: Aug 99
+  - number: '99245'
+    description: New Device , 4Meg Sync with MoBL Architecture CY7C1350B, R52D-3
+    date: Apr 00
+  - number: '003906'
+    description: New Device , 4Meg, MoBL2 CY62147BV18, R52D-3
+    date: May 01
+  quotes:
+  - text: New Technology R52D-3 , 2Meg CY7C1329
+    location: p.2, Product Qualification History, row 99311
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52D-3'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.25 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R52D-3's own origin is dated here as QTP 99311 (Aug 99, "New Technology R52D-3"). 0.25 µm, 55 Å
+    gate oxide, 2 metal layers -- the same figures this corpus already has for other -D-3 family processes
+    at Fab 4 in this period (e.g. R52LD-5R, qtp-004405, this session).
+- id: qtp-098313
+  origin: cypress
+  doc_type: QTP
+  number: '98313'
+  cypress_document_number: null
+  title: 2 Meg SRAM, R42HD Technology (5V operation)
+  version: '1.0'
+  date_printed: September, 1998
+  url: https://www.cypress.com/file/94066/download
+  archive_url: https://web.archive.org/web/20201205094935/https://www.cypress.com/file/94066/download
+  retrieved: '2026-09-25'
+  sha256: 859e51f4cab135a1b9869e75673a3911a74dbbd5cb7b0c3b0f379ae232cfec72
+  technology_codes:
+  - R42HD
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1011
+  die_ids:
+  - 7C1011A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R4HD
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98313'
+    description: qualify 2 Meg SRAM in qualified technology R42HD
+    date: null
+  quotes:
+  - text: qualify 2 Meg SRAM in qualified technology R42HD
+    location: p.2, Product Description
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R4HD'
+    location: p.2, Technology/Fab Process Description
+  - text: QTP 98248, 4 MEG SRAM, R42H Technology qualified in Fab 4.
+    location: p.6, footnote 1
+  notes: Die Fab Line ID again printed "Fab4/R4HD" (as in qtp-098115, this session). References "QTP 98248"
+    as "4 MEG SRAM, R42H Technology" (dropping the D a third way) -- not independently retrieved in this
+    corpus.
+- id: qtp-001605
+  origin: cypress
+  doc_type: QTP
+  number: '001605'
+  cypress_document_number: null
+  title: 256K Fast Asynchronous SRAM, R42HDHA Technology, Fab 4
+  version: '1.1'
+  date_printed: December, 2002
+  url: https://www.cypress.com/file/92016/download
+  archive_url: https://web.archive.org/web/20211203231803/https://www.cypress.com/file/92016/download
+  retrieved: '2026-09-25'
+  sha256: 95c5d881d459dec3081e568999d0ef47f5df36e6339c3b9144250ca5c3692282
+  technology_codes:
+  - R42HDHA
+  - R42HD
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C194
+  - CY7C195
+  - CY7C197
+  - CY7C198
+  - CY7C199
+  die_ids:
+  - 7C1599C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42HDHA
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98064'
+    description: New Technology R42HD / 1Meg CY7C109and device family
+    date: Apr 98
+  - number: '98085'
+    description: New R42HD Hot Aluminum / 1Meg CY7C109 and device family
+    date: May 98
+  - number: '98424'
+    description: New Commercial 32K X 8 Static RAM, CY7C199 and device family
+    date: Dec 98
+  - number: '001605'
+    description: New Military Product Qualification
+    date: Aug 00
+  quotes:
+  - text: New Technology R42HD / 1Meg CY7C109and device family
+    location: p.2, Product Qualification History, row 98064
+  - text: New R42HD Hot Aluminum / 1Meg CY7C109 and device family
+    location: p.2, Product Qualification History, row 98085
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42HDHA'
+    location: p.3, Technology/Fab Process Description
+  notes: This report dates R42HD's own origin to QTP 98064 (Apr 98, "New Technology R42HD"), and separately
+    dates a "R42HD Hot Aluminum" variant to QTP 98085 (May 98) -- both previously only referenced by other
+    reports in this corpus (qtp-098115, qtp-098313, qtp-098437, this session), never independently
+    retrieved before now. R42HDHA here carries the same 0.42 µm/110 Å figures as plain R42HD.

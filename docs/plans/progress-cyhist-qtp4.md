@@ -90,6 +90,29 @@ current relative to the newest `qtp.yaml` additions.
 - `uv run tools/check_history.py`: 9 pages, 177 claims checked, 0 problems.
 - `uv run tools/gen_history_stackups.py --check`: blocked, see above.
 
+## Third and fourth batches: further Fab 4 R7FT-3R/R42HD/R32/R32D/R42D reports
+
+Ten more records added, all Fab 4 (Bloomington, MN):
+
+| id | technology_codes | source file id | notes |
+|---|---|---|---|
+| qtp-024903 | R7FT-3R | 91731 | independently repeats and extends qtp-014807's history table |
+| qtp-098115 | R42HD | 93971 | Die Fab Line ID printed "R4HD" |
+| qtp-097201 | R32D | 93716 | process-description header printed "R32" |
+| qtp-097517 | R42D | 93496 | |
+| qtp-097195 | R32 | 93711 | single metal layer, distinct from double-metal R32D |
+| qtp-098437 | R42HD | 94121 | running headers print "R42DH" (letters transposed) |
+| qtp-003906 | R52D-3 | 91811 | dates R52D-3's own origin (QTP 99311, Aug 99) |
+| qtp-098313 | R42HD | 94066 | Die Fab Line ID "R4HD" again; footnote calls a referenced QTP "R42H" |
+| qtp-001605 | R42HDHA, R42HD | 92016 | **dates R42HD's own origin (QTP 98064, Apr 98)**, closing a reference-only gap qtp-098115/qtp-098313/qtp-098437 all left open |
+
+**94146 (group C, "3.3v-synchronous-fifos-r42d-technology-w-hot-al") fetched
+but unusable**, the same way as 94076: the cover and process-description
+pages have no extractable text (only two reliability-data pages, for device
+CY7C43684V, have selectable text). The QTP number (98517) and date (February
+1999) are legible, but no title, technology code or process figures could be
+confirmed without OCR, so no record was added.
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
@@ -98,20 +121,42 @@ current relative to the newest `qtp.yaml` additions.
   R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
   quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
   extracted text at `tmp/extracted/<fid>.txt` (both done).
-- Group C: 31 more fetched-and-extracted file ids not yet turned into records
-  (all of `tmp/priority_order_c.txt` except the 5 codes handled above) --
-  further R7FT-3R, R42HD, R32, R42D, R32D, R52D-3, R52LD-3, B53D-3 Fab 4
-  reports, plus two foundry reports (TSMC 0.25 µm "L000004", WaferTech 0.35 µm
-  "G990003", the latter a "Technology Qualification Report" rather than
-  "Product Qualification Report" -- keep `doc_type: QTP` for consistency with
-  the rest of this corpus, per the existing convention of not adding new
-  `doc_type` values). QTP-number identification for all of them (via `grep
-  -om1 -E "QTP#?\s*:?\s*[0-9]{4,6}"`) is in this session's scrollback only, not
-  saved to a file -- rerun it against `tmp/extracted/*.txt` before resuming.
+- Group C: 22 more fetched-and-extracted file ids not yet turned into records
+  (all of `tmp/priority_order_c.txt` except the 5 codes and 9 further reports
+  handled above, and 94146 which is unusable): 94146 (unusable, above),
+  94096 (QTP 98357), 93956 (QTP 98111), 93936 (QTP 98086), 94336 (QTP 99503),
+  92046 (QTP 002603), 93646 (QTP 97118 -- referenced by qtp-097201 above),
+  94266 (QTP 99325), 93731 (QTP 97211), 93746 (QTP 97222), 93801 (QTP 97344),
+  93896 (QTP 97506), 93831 (QTP 97396 -- referenced by qtp-097517 above),
+  93926 (QTP 98081), 94401 (QTP L000004, TSMC 0.25 µm foundry report),
+  91736 (QTP 024907), 91621 (QTP 011103), 94381 (no "QTP#" prefix at all --
+  numbered "G990003", a WaferTech 0.35 µm "Technology Qualification Report";
+  keep `doc_type: QTP` for consistency with the rest of this corpus rather
+  than adding a new `doc_type` value), 91526 (QTP 002703), 135526
+  (QTP 002202), 121666 (QTP 005004). None of these QTP numbers duplicate an
+  existing record (checked against the numeric set as of this session's third
+  batch). QTP-number identification for all of them was done with `grep -om1
+  -E "QTP#?\s*:?\s*[0-9]{4,6}" tmp/extracted/<fid>.txt`.
+- Group B: 46 staged-and-extracted file ids not yet turned into records (all
+  of `tmp/priority_order_b.txt` except the 2 duplicates and the 4 now
+  recorded) -- R52T-3 clocks (many), R52FFD-3, B55SGT, C8Q-3R, R9Q-3R,
+  R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
+  quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
+  extracted text at `tmp/extracted/<fid>.txt` (both done).
 - Once the stackup generator's new-band gap is resolved upstream, regenerate
   `docs/history/stackups.md`, `products.md` and `sources.md` and commit them.
-- Cross-check every new QTP number against the existing (now 83) records
+- Cross-check every new QTP number against the existing (now 87) records
   before writing one, the way the qtp-072002/qtp-061806 duplicates were
   caught: `grep -oP "^  number: '?\K[0-9]+" data/history/qtp.yaml | sed
   's/^0*//' | sort -u`, comparing numerically since leading zeros vary
   between the printed field and the padded `id`.
+- **YAML gotcha found this session:** a plain (unquoted) scalar in this file
+  breaks the parser if it contains a colon followed by a space (reads as a
+  new mapping key) or a space followed by `#` (reads as a comment) anywhere
+  in the middle of the value -- both appear in verbatim report text (e.g.
+  "QTP #98064", "Architecture:"). Wrap the `text:` value in single quotes
+  whenever a quote itself contains " #"; for `notes:` (not verbatim-checked)
+  it is simplest to reword around the colon or drop the "#". Always re-run
+  `uv run tools/check_history_quotes.py` after appending records, since a
+  YAML syntax error surfaces there as a Python traceback, not as a normal
+  "problem" line.
