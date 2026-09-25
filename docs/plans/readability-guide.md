@@ -2027,6 +2027,17 @@ page whose sections were reordered or rebuilt from a script, for exactly this re
   | Harris[^a] | 500 |
 ```
 
+**A line must never start with a bare `>`.** CommonMark/MyST reads a `>` at the start of a source
+line as a blockquote, even mid-paragraph with no blank line before it and with no intent to quote
+anything — found on `pecvd.md`, where a hard-wrapped "`...capability at\n>550°C", for "BPSG...`"
+rendered as a boxed blockquote around "550°C", for "BPSG and STI applications"."". A `grep -rnE
+'^\s*>[0-9<=~ ]' docs` sweep of the built tree found no other case in page content (only genuine
+quote blocks under `docs/plans/`), but any wrapped sentence containing a literal `>`, `<`, `=`,
+`~`, `#`, `-` or `*` figure ("`>550°C`", "`<0.1 µm`") is at the same risk. Fix by moving a word
+across the line break so the character is no longer first on its line — never by changing the
+figure's own wording. Re-run the sweep and a 400 px screenshot of anything you rewrap near such a
+figure.
+
 **Admonition with a title** (use for "At a glance"; `:class: at-a-glance` is required, see R-GLANCE
 step 1 and W0a):
 
