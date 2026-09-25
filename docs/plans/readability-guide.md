@@ -2188,6 +2188,13 @@ source text next to the ADDED units that cover it. Read that printout, confirm b
 regrouping — and any "respectively" pairing — is the same digits, and put the printout, or your
 own confirmation of it, in the progress file. **Any other loss is a bug in your edit.**
 
+R-INTRO step 3 deletes a sentence, so the tool reports `LOST identifiers: SKY130` and often
+`LOST hedges: about` (the preposition). Paste the deleted sentence into the progress file. The
+reviewer confirms it lists only the page's sections. Any other clause in it is kept. (A tool flag,
+if one is wanted: `--allow-template-intro`, which matches only
+`^This page describes the (class|classes|two classes)[^.]*\.$` after whitespace flattening, and
+prints it, rather than requiring this by-hand confirmation each time.)
+
 **5. Checkers**, from §4 for your page type, then always these:
 
 ```
