@@ -72,7 +72,7 @@ has no via columns, so it says nothing about which devices create
 
 `gds_layers.csv` gives `cviam4` a `mask` purpose at 58:0 ("Via 4 mask")
 and a `drawing` purpose at 117:20, a layer number that also carries the
-`cmm5` waffle drop at 117:4. The drawn layer is `via4` at 71:44,
+`cmm5` waffle drop at 117:4.[^pdk-06] The drawn layer is `via4` at 71:44,
 "Contact from metal 4 to metal 5".[^pdk-06] The pairing rests on the
 names and descriptions, as on the {ref}`masks index <masks-index>`, and
 the PDK publishes no operation from `via4` to the plate.
@@ -307,8 +307,8 @@ Table 2 of *Criteria & Assumptions* repeats the size and space, and gives the un
 |---|---|---:|
 | `VIM4CD` | size | 0.8 |
 | `VIM4CDSP` | space | 0.8 |
-| `VIPDMCD` | the unmarked pad via | 1.2 |
-| `VIPDMCDSP` | the unmarked pad via | 1.27 |
+| `VIPDMCD` | — | 1.2 |
+| `VIPDMCDSP` | — | 1.27 |
 :::
 
 The irdrop rules, flagged
