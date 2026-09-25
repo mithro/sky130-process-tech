@@ -8,7 +8,7 @@ argon) or mildly reducing.
 
 | | Anneal / thermal processing |
 |---|---|
-| What it does | Heats the wafer to repair implant damage, diffuse dopants, form a silicide, or sinter and passivate contacts. |
+| What it does | Heats the wafer to repair implant damage, diffuse dopants, form a silicide, or sinter contacts and passivate oxide interfaces. |
 | Steps in SKY130 | 7 |
 | Tool classes | {ref}`Rapid thermal processors <machine-rapid-thermal-processor>`, {ref}`Vertical furnaces <machine-vertical-furnace-anneal>` |
 | Consumable classes | {ref}`Anneal ambients <material-anneal-ambients>`, {ref}`Hardware consumables <material-hardware-consumables>` |
@@ -16,21 +16,14 @@ argon) or mildly reducing.
 
 ## What this class of step does
 
-An anneal heats the wafer, in a controlled ambient, to make something
-happen that only heat can do:
-
-* **Repair crystal damage** — repair the crystal damage left by an ion
+* **Repair the crystal damage** left by an ion
   implant and put the dopant atoms onto lattice sites where they are
   electrically active.
-* **Diffuse dopants** — diffuse dopants to a designed depth.
-* **React a silicide** — react a metal with silicon to form a
+* **Diffuse dopants** to a designed depth.
+* **React a metal with silicon** to form a
   low-resistance silicide.
 * **Sinter and passivate** — at the very end of the flow, sinter the
   metal contacts and passivate the oxide interfaces with hydrogen.
-
-Unlike oxidation ({ref}`category-oxidation`) nothing is
-meant to grow, so the ambient is usually inert (nitrogen or argon) or
-mildly reducing.
 
 Precisely, the seven thermal steps in the SKY130 flow fall into four
 types:
@@ -108,7 +101,7 @@ A single-wafer RTA chamber uses banks of
 tungsten-halogen lamps above (and sometimes below) the wafer, a quartz
 window, gas flow of N₂, Ar or O₂, and an optical pyrometer whose reading
 must be corrected for the wafer's temperature- and film-dependent
-emissivity. Ramp rates of 50–250 °C/s are typical industry
+emissivity.[^wiki-rtp] Ramp rates of 50–250 °C/s are typical industry
 values,[^roozeboom-1990] and the trade-offs are "temperature and process
 uniformity, temperature measurement and control, and wafer
 stress".[^wiki-rtp] Wafers that are heated non-uniformly slip on {111}
@@ -133,7 +126,7 @@ the selective etch:
 * **Titanium**: a first RTA at roughly 600–700 °C in N₂ forms the
   metastable C49 TiSi₂ (and TiN on top), the unreacted Ti/TiN is
   stripped in {term}`SC-1` or {term}`SPM`, and a second RTA at roughly 800–900 °C
-  converts C49 to the low-resistivity C54 phase.
+  converts C49 to the low-resistivity C54 phase.[^maex-1993][^osburn-1993]
 
   On narrow lines the
   C49→C54 transformation becomes nucleation-limited, the "narrow-line
@@ -206,7 +199,7 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 
 ## Steps in this category
 
-:::{table} The seven anneal steps of the flow
+:::{table} The seven anneal steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
