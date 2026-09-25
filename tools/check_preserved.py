@@ -127,6 +127,21 @@ URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
 BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
 QUOTE_RE = re.compile(r'"([^"\n]{1,400})"|“([^”\n]{1,400})”')
 
+# An inch mark: a straight double quote right after a digit, immediately
+# followed (optionally after a closing bracket) by another straight quote,
+# as in 8"" or (8")". Left unmasked, QUOTE_RE reads the inch mark as a quote
+# delimiter and the pairing then runs off by one for the rest of the page
+# (checkers review of rd-steps-001-013, "check_preserved.py quote finding",
+# reproduced on docs/machines/starting-material.md:188 and
+# docs/machines/single-wafer-spin-processor.md:153). The mechanism is not
+# "zero characters between the marks": in (8")", a ")" sits between the two
+# marks, so the lookahead allows one optional closing bracket there. The
+# digit must follow "(" or "<non-letter><space>", so a nested quotation
+# ending in a number ("Fab 4")" is left alone — a bare "8" wide" with no
+# second quote nearby is also left alone, since the lookahead requires a
+# real closing quote to actually be there.
+INCH_RE = re.compile(r'(?:(?<=\(\d)|(?<=[^A-Za-z\s] \d))"(?=[)\]]?")')
+
 _SIGN = r"[+\-−±]"
 _SUP_DIGITS = "⁰¹²³⁴⁵⁶⁷⁸⁹"
 _SUP_CLASS = rf"[{_SUP_DIGITS}⁻⁺]"
@@ -347,6 +362,7 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
 
 def extract_quotes(text: str) -> Counter:
     out = []
+    text = INCH_RE.sub("″", text)  # ″, so QUOTE_RE never pairs it
     for m in QUOTE_RE.finditer(text):
         inner = m.group(1) if m.group(1) is not None else m.group(2)
         out.append(normalize_ws(inner))
@@ -902,6 +918,34 @@ def selftest() -> int:
         "2. **Step.** No digits appear in this sentence at all.",
     )
     assert_has_number("0.18µm still yields 0.18", "The gap is 0.18µm wide.", "0.18")
+
+    # -- inch marks (checkers review, "check_preserved.py quote finding"):
+    # a straight-quote inch mark right before a real closing quote used to
+    # be read as a quote delimiter itself, which mis-paired every
+    # quotation after it on the page. Checked directly against
+    # extract_quotes/INCH_RE, since these are single-text assertions.
+    def assert_quotes(name: str, text: str, expected: set[str]) -> None:
+        got = set(extract_quotes(text).elements())
+        if got != expected:
+            problems.append(f"{name}: expected quotes {expected!r}, got {got!r}")
+
+    assert_quotes(
+        'an inch mark inside a quotation ("a, 8"" b "c"")',
+        '"a, 8"" b "c"',
+        {"a, 8″", "c"},
+    )
+    assert_quotes(
+        'an inch mark behind a closing bracket ("(8")" x "y"")',
+        '"(8")" x "y"',
+        {"(8″)", "y"},
+    )
+    if INCH_RE.sub("″", '("Fab 4")"') != '("Fab 4")"':
+        problems.append('a nested quotation ending in a number ("Fab 4")" is changed by INCH_RE')
+    assert_quotes(
+        "a standalone inch-mark measurement outside any quotation is untouched",
+        'The die is 8" across, with no quotation anywhere in this sentence.',
+        set(),
+    )
 
     # -- --allow-added lets a declared addition through, but never a loss -
     case(
