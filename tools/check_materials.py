@@ -33,6 +33,20 @@ assigns every key to exactly one class page.  The checker verifies:
      consistency check below still runs. A row naming more than one
      material link this way is possible and is not specially detected;
      see the class-cell check below.
+
+  Either shape's table may be **split into groups under H3s** (review
+  M3, report-B B2 table rule 7, ">40 rows: split by group"): every table
+  block under "## Materials index" whose header equals the first
+  block's is read as more of the same table, wherever it sits, not only
+  the first block. In shape 2, every *other* table block is read the
+  same way as the second "Material \\| Steps" table (also possibly
+  split into groups); a block matching neither header is reported, not
+  silently dropped or merged.
+
+  The second table, when present, is checked as strictly as the main
+  one (review M1): a row with fewer than two cells, a row with no key,
+  a key used twice, and a key that names a material absent from the
+  main table are all reported.
 * **Class-page table.** Each Page cell is either a link
   ``{ref}`slug <material-slug>``` to a page that exists, or
   `` `slug` (not yet written)`` for a page that does not; each slug
@@ -195,19 +209,67 @@ def find_key(cells: list[str]) -> str | None:
     return None
 
 
-def read_steps_table(rows: list[list[str]]) -> dict[str, str]:
+def read_steps_table(rows: list[list[str]]) -> tuple[dict[str, str], list[str]]:
     """key -> Steps cell, from a second ``Material | Steps``-shaped table
     (W0e, report-B B2), used when the main table has no Steps column.
     The key is found the same way as the main table's (``find_key``); the
-    Steps cell is the row's own last cell. ``rows`` excludes the header."""
+    Steps cell is the row's own last cell. ``rows`` excludes the header.
+
+    Also returns problems (review M1: the old code checked none of
+    this): a row with fewer than 2 cells or with no key at all, and a key
+    used twice (the *last* such row's Steps cell is kept, same as the
+    main table's "used twice" handling, but it is now reported)."""
     out: dict[str, str] = {}
+    problems: list[str] = []
     for cells in rows:
         if len(cells) < 2:
+            problems.append(f"steps-table row has fewer than 2 cells: {cells!r}")
             continue
         key = find_key(cells)
-        if key:
-            out[key] = cells[-1]
-    return out
+        if key is None:
+            problems.append(f"steps-table row without a key: {cells[0]!r}")
+            continue
+        if key in out:
+            problems.append(f"steps-table key {key!r} used twice")
+        out[key] = cells[-1]
+    return out, problems
+
+
+def _table_blocks_by_header(blocks: list[list[list[str]]],
+                            main_header: list[str]) -> tuple[list[list[str]], list[list[str]], list[str]]:
+    """Split ``blocks`` into (main rows, steps-table rows, problems).
+
+    Every block whose header equals ``main_header`` contributes its rows
+    to the main rows — not only the first block (review M3: a materials
+    index split into groups under H3s, as B2 table rule 7 asks for tables
+    over 40 rows, must still be read as one table). Every other block is
+    assumed to be part of the second "Material | Steps" table (also
+    possibly split into groups the same way); all such blocks must share
+    one header, or the extra one is reported rather than silently
+    ignored or silently merged.
+    """
+    main_rows: list[list[str]] = []
+    steps_rows: list[list[str]] = []
+    steps_header: list[str] | None = None
+    problems: list[str] = []
+    for header, *rows in blocks:
+        if header == main_header:
+            main_rows.extend(rows)
+            continue
+        if steps_header is None:
+            steps_header = header
+            if "steps" not in (header[-1].lower() if header else ""):
+                problems.append(
+                    f"second table under '## {TABLE_H2}' has header {header}, "
+                    "whose last cell does not mention 'steps'"
+                )
+        if header != steps_header:
+            problems.append(
+                f"unexpected table under '## {TABLE_H2}' with header {header}"
+            )
+            continue
+        steps_rows.extend(rows)
+    return main_rows, steps_rows, problems
 
 
 class Index:
@@ -220,28 +282,38 @@ class Index:
         blocks = table_blocks(body.get(TABLE_H2, ""))
         if not blocks:
             self.problems.append(f"no table found under '## {TABLE_H2}'")
-        main_header, main_rows = (blocks[0][0], blocks[0][1:]) if blocks else ([], [])
+        main_header = blocks[0][0] if blocks else []
         # A Steps column is recognised by its header wording, not its
         # position, so a reader-facing reordering of the other columns
         # (report-B B2) does not itself require this check to change.
         has_steps_column = bool(main_header) and "steps" in main_header[-1].lower()
+        main_rows, other_rows, block_problems = _table_blocks_by_header(blocks, main_header)
+        self.problems += block_problems
         steps_by_key: dict[str, str] = {}
         if not has_steps_column:
-            if len(blocks) > 1:
-                steps_by_key = read_steps_table(blocks[1][1:])
+            if other_rows:
+                steps_by_key, steps_problems = read_steps_table(other_rows)
+                self.problems += steps_problems
             else:
                 self.problems.append(
                     f"main table under '## {TABLE_H2}' has no Steps column, and "
                     "there is no second 'Material | Steps' table to read it from"
                 )
+        elif other_rows:
+            self.problems.append(
+                f"main table under '## {TABLE_H2}' has a Steps column, but an extra "
+                "table block is also present"
+            )
 
         # key -> (Class cell or row text to search for one, Steps cell)
         self.rows: dict[str, tuple[str, str]] = {}
+        main_keys: set[str] = set()
         for cells in main_rows:
             key = find_key(cells)
             if key is None:
                 self.problems.append(f"main-table row without a key: {cells[0]!r}")
                 continue
+            main_keys.add(key)
             if key in self.rows:
                 self.problems.append(f"main-table key {key!r} used twice")
             if has_steps_column:
@@ -266,6 +338,14 @@ class Index:
                     f"main-table row {key!r}: Steps cell starts with neither "
                     "'all except' nor a step link"
                 )
+
+        # Review M1: a steps-table key naming a material absent from the
+        # main table (e.g. a typo, or a leftover row for a deleted
+        # material) must be reported, not silently ignored.
+        for key in sorted(set(steps_by_key) - main_keys):
+            self.problems.append(
+                f"steps table names key {key!r}, which is not in the main table"
+            )
 
         # slug -> (written, keys)
         self.pages: dict[str, tuple[bool, list[str]]] = {}
@@ -473,6 +553,89 @@ NEW_INDEX = """\
 """
 
 
+EXTRA_KEY_INDEX = NEW_INDEX.replace(
+    "| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |",
+    "| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |\n"
+    "| Unobtainium (`unob`) | {ref}`SMAT <step-001>` |",
+)
+
+DUPLICATE_KEY_INDEX = NEW_INDEX.replace(
+    "| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |",
+    "| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |\n"
+    "| Nitrogen again (`n2`) | {ref}`BOX <step-002>` |",
+)
+
+NO_KEY_ROW_INDEX = NEW_INDEX.replace(
+    "| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |",
+    "| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |\n"
+    "| Mystery material | {ref}`BOX <step-002>` |",
+)
+
+# Review M3: the main table (old, key-first shape) split into two groups
+# under H3s, as report-B B2 table rule 7 ("> 40 rows: split by group")
+# asks for -- `main` accepted this; the un-fixed checker did not.
+GROUPED_MAIN_INDEX = """\
+(materials-table)=
+## Materials index
+
+### Group one
+
+| Key | Material | Class | Role in SKY130 steps | Public SkyWater evidence | Steps whose Resources section names it |
+|---|---|---|---|---|---|
+| `n2` | Nitrogen (N2) | {ref}`Bulk gas <material-widgets>` | Purge gas. | typical | {ref}`SMAT <step-001>` |
+
+### Group two
+
+| Key | Material | Class | Role in SKY130 steps | Public SkyWater evidence | Steps whose Resources section names it |
+|---|---|---|---|---|---|
+| `o2` | Oxygen (O2) | {ref}`Bulk gas <material-widgets>` | Oxidant. | typical | {ref}`BOX <step-002>` |
+
+(how-to-read-the-index)=
+## How to read the index
+
+| Consumable class | Page | Rows owned (keys) |
+|---|---|---|
+| Widgets | {ref}`widgets <material-widgets>` | `n2`, `o2` |
+"""
+
+# The no-Steps-column shape, both tables split into two groups each.
+GROUPED_NEW_INDEX = """\
+(materials-table)=
+## Materials index
+
+### Group one
+
+| Material | Class | Role | Public SkyWater evidence |
+|---|---|---|---|
+| Nitrogen (`n2`) | {ref}`Bulk gas <material-widgets>` | Purge gas. | typical |
+
+### Group two
+
+| Material | Class | Role | Public SkyWater evidence |
+|---|---|---|---|
+| Oxygen (`o2`) | {ref}`Bulk gas <material-widgets>` | Oxidant. | typical |
+
+### Steps, group one
+
+| Material | Steps |
+|---|---|
+| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |
+
+### Steps, group two
+
+| Material | Steps |
+|---|---|
+| Oxygen (`o2`) | {ref}`BOX <step-002>` |
+
+(how-to-read-the-index)=
+## How to read the index
+
+| Consumable class | Page | Rows owned (keys) |
+|---|---|---|
+| Widgets | {ref}`widgets <material-widgets>` | `n2`, `o2` |
+"""
+
+
 def _write_index_fixture(tmp: Path, name: str, text: str) -> Path:
     materials = tmp / name / "materials"
     materials.mkdir(parents=True)
@@ -532,6 +695,42 @@ def selftest() -> int:
             problems.append(
                 f"a missing-Steps-table fixture was not reported: {missing.problems}"
             )
+
+        # Review M1: the second table is now checked as strictly as the
+        # main one -- an extra key, a duplicated key and a keyless row
+        # must all be reported, not pass silently.
+        extra_dir = _write_index_fixture(tmp, "extra", EXTRA_KEY_INDEX)
+        extra = Index(extra_dir)
+        if not any("unob" in p and "not in the main table" in p for p in extra.problems):
+            problems.append(f"an extra steps-table key was not reported: {extra.problems}")
+
+        dup_dir = _write_index_fixture(tmp, "dup", DUPLICATE_KEY_INDEX)
+        dup = Index(dup_dir)
+        if not any("n2" in p and "used twice" in p for p in dup.problems):
+            problems.append(f"a duplicated steps-table key was not reported: {dup.problems}")
+
+        nokey_dir = _write_index_fixture(tmp, "nokey", NO_KEY_ROW_INDEX)
+        nokey = Index(nokey_dir)
+        if not any("without a key" in p for p in nokey.problems):
+            problems.append(f"a keyless steps-table row was not reported: {nokey.problems}")
+
+        # Review M3: a main table split into groups under H3s (B2 table
+        # rule 7) is read as one table, in both main-table shapes.
+        grouped_main_dir = _write_index_fixture(tmp, "grouped-main", GROUPED_MAIN_INDEX)
+        grouped_main = Index(grouped_main_dir)
+        if grouped_main.problems:
+            problems.append(f"grouped main-table fixture reported problems: {grouped_main.problems}")
+        if set(grouped_main.rows) != {"n2", "o2"}:
+            problems.append(f"grouped main-table fixture: rows {grouped_main.rows!r}")
+
+        grouped_new_dir = _write_index_fixture(tmp, "grouped-new", GROUPED_NEW_INDEX)
+        grouped_new = Index(grouped_new_dir)
+        if grouped_new.problems:
+            problems.append(f"grouped no-Steps-column fixture reported problems: {grouped_new.problems}")
+        if set(grouped_new.rows) != {"n2", "o2"}:
+            problems.append(f"grouped no-Steps-column fixture: rows {grouped_new.rows!r}")
+        elif grouped_new.rows["o2"][1] != "{ref}`BOX <step-002>`":
+            problems.append(f"grouped no-Steps-column fixture: 'o2' Steps cell {grouped_new.rows['o2'][1]!r}")
 
     if problems:
         for p in problems:
