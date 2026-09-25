@@ -652,3 +652,49 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   cells (37, 29; not in the body) and four quoted rule cells. Before → after: paragraphs 16 → 0, items
   1 → 0, sentences 23 → 6, cells 6 → 6.
 * **Content problems for the owner:** none found.
+
+### 16. mm4 — done
+
+* **Rules applied.** R-INTRO (176 → 62 words; first sentence split at its colon; "Its lines are metal 3's
+  0.3 µm, the step pages leave open …, and it is the one metal mask …" moved to the top of
+  `## What the mask defines` as three sentences, "Its lines" → "The mask's lines"); R-PARAMS (the seven
+  laser-fuse criteria of Tables 5 and 9); R-CAPTION; R-PARA, R-SENTENCE; R-LIST (what the mask carries;
+  the four metal-4 fuse checks of the *Error Messages* page); R-RELATED; R-H3 (Exposure class, Mask errors,
+  Thick metal, capacitors and the resist, Fill and the polish above, Overlay and alignment ← "Overlay",
+  Pattern transfer). `**Fuses.**` and `**Variants and flows.**` stay bold (under `## What the mask
+  defines`).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS.** "It lists in a column headed "Value (um)" a "Max. width …" of 0.8 (`FSW`), the width of
+  mf.1; a "Min. L …" of 6.605 (`FSLE`), below the 7.200 µm of mf.2; … (`LASSPT`); … (`LASMA`); and …
+  (`MELTRAD`); Table 9 gives … (`PimFuseEnc`) and … (`PimLaserEnc`).[^pdk-03]" → "It lists the first five
+  rows below in a column headed "Value (um)", and Table 9 gives the last two:[^pdk-03]" and a seven-row
+  table; the base's comparisons ("the width of mf.1", "below the 7.200 µm of mf.2") stay with their
+  values. The closing design-rules paragraph ("Table 2 … Table 4 …; Table 5 gives the laser-fuse criteria
+  quoted above; Table 7 …; and Table 9 …") refers back to these and was split into one sentence per table
+  instead, each keeping `pdk-03` (R-SENTENCE 5; "Table 7 a …" → "Table 7 gives a …").
+* **Hedges repeated on splits:** "(our comparison)" ("Plate number"); "On the step pages' readings"
+  (Pattern transfer), as on mm3.
+* **Markers moved to their own clause:** the Table 2 / Table 4 / Table C3 sentence under "Variants and
+  flows" (`pdk-03`, `pdk-03`, `pdk-06`); the "other fuse rules" sentence (`pdk-periph` to the rules,
+  `pdk-errors` to the Error Messages spacings).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,identifiers`): markers `pdk-periph` ×5 (list
+  lead-in; fuse-note / x.11 split; m4.pd.1 split; Overlay split; first Open question), `pdk-06` ×4 (Table C3
+  / `gds_layers.csv` fuse sentence; `gds_layers.csv` purposes; first and second Open questions),
+  `pdk-errors` ×3 ("SkyWater's published DRC checks name the level." — its colon became a full stop, so it
+  keeps the marker; the page description; "It gives target spacings …" — the base marker is on the list
+  lead-in), `pdk-03` ×6 (the per-table sentences above; the Variants Table 2 sentence; the second Open
+  question), `mask-renders` (render sentence); numbers — the PDK-table column (`5`, `9`) and "Table 9" in
+  the lead-in, `4` of "metal 4" in the rule caption; identifiers `m4`, `via-4` (rule caption).
+* **LOST `number_order` ('6.605', '7.200', '2', '3.5', '3', '0.3', '3.6', '9', '12', '30'), read by hand:**
+  the laser-fuse table; values 0.8, 6.605 (with 7.200 and mf.2), 3.5, 0.3 (with "(3 s)"), 3.6, 12, 30 in the
+  base's order, on the base's tables.
+* **Marker coverage.** Flags read: lists and table rows under lead-in markers; clauses without a marker of
+  their own in the base. One real case fixed: "SkyWater's published DRC checks name the level." (above).
+* **Over the caps after the pass:** the same kinds as on mm3 — "The rule set's first entry …" (48), the
+  two-formula Exposure-class sentence (55 by the script), "That threshold is about 0.18 µm … so …" (52),
+  "On the step pages' readings the resist is coated over the 0.845 µm metal-4 stack, which carries …"
+  (58), the Pattern transfer sentence (47), the flag legend (73, quotations); two quick-facts cells and
+  three rule cells. Before → after: paragraphs 14 → 0, items 2 → 0, sentences 29 → 6, cells 5 → 5.
+* **Content problems for the owner:** none found.

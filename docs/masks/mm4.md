@@ -3,19 +3,10 @@
 
 The metal-4 mask is the {term}`reticle` that draws SKY130's fourth
 aluminium wiring level, the bottom plates of the second
-{term}`MiM capacitor` and, on the PDK's fuse note, the metal fuses: on the
+{term}`MiM capacitor` and, on the PDK's fuse note, the metal fuses. On the
 {ref}`MM4 <step-154>` page's reading, the resist printed through it at
 step 154 stays wherever `met4` is drawn, and the {ref}`MM4E <step-155>`
 etch removes the capacitor dielectric and the metal stack everywhere else.
-Its lines are metal 3's 0.3 µm, the step pages leave open whether it is
-printed on an i-line or a KrF tool, and it is the one metal mask whose
-public renders use a layer set that differs from this reference's
-pairing, since they leave out the `met4` fuse purpose. This page gathers
-what public sources say about the mask itself — its PDK entry and layers,
-the plates the process-steps sheet records for the MPW runs, what the
-public renders of those runs show, the lithography it needs and the rules
-that constrain it. How the step is performed is on the step page; every
-mask is indexed on the {ref}`masks index <masks-index>`.
 
 | | MM4 — Metal 4 |
 |---|---|
@@ -32,17 +23,34 @@ mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-mm4-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page; every
+mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask's lines are metal 3's 0.3 µm. The step pages leave open whether it is
+printed on an i-line or a KrF tool. It is the one metal mask whose
+public renders use a layer set that differs from this reference's
+pairing, since they leave out the `met4` fuse purpose.
 
 The periphery rules give the function of the `m4` rule set as "Defines
 Fourth level of metal interconnects;", and the PDK's Table F4 shows metal
 4 joined to metal 3 by "Via3" and to metal 5 by
-"Via4".[^pdk-periph][^pdk-summary] The mask carries lines at the
-0.300 µm minimum width and space (m4.1, m4.2), pads that enclose the
-via-3 plugs below by 0.065 µm (m4.3) and the 0.800 µm via-4 openings
-above by 0.190 µm (via4.4), wide "huge_met4" features that need 0.400 µm
-of space (m4.5a, m4.5b), and, on our reading of the waffle-drop rules
-below, dummy fill; its smallest island is 0.240 µm² (m4.4a), with probe
+"Via4".[^pdk-periph][^pdk-summary] The mask carries:[^pdk-periph]
+
+* lines at the
+  0.300 µm minimum width and space (m4.1, m4.2)
+* pads that enclose the
+  via-3 plugs below by 0.065 µm (m4.3) and the 0.800 µm via-4 openings
+  above by 0.190 µm (via4.4)
+* wide "huge_met4" features that need 0.400 µm
+  of space (m4.5a, m4.5b)
+* on our reading of the waffle-drop rules
+  below, dummy fill
+
+The mask's smallest island is 0.240 µm² (m4.4a), with probe
 pads of exactly 1.42 µm × 1.42 µm exempted from the area rule
 m4.4.[^pdk-periph] The PDK's extraction table gives metal 4, like metal
 3, a sheet resistance of 47 in a column headed "Resistivity
@@ -54,7 +62,7 @@ thick.[^pdk-04] A via-4 landing therefore needs a metal-4 pad at least
 The same pattern makes the second capacitor's bottom plates. On the step
 pages' readings the metal-4 stack stays blanket through the second
 capacitor module and every `cap2m` plate must end up inside a metal-4
-shape; the PDK's cross-section of the stacked capacitor labels a "M4
+shape. The PDK's cross-section of the stacked capacitor labels a "M4
 (plate 2)" and a "M4 (plate 1)", which the step page reads as the plate
 under "CAP2M" and a separate shape linking "M3 (plate 1)" to "M5 (plate
 1)".[^pdk-07] The PDK publishes no `cap2m` rules, so the enclosure of the
@@ -62,69 +70,93 @@ plates by metal 4 has no value.[^pdk-periph]
 
 **Fuses.** The note above the metal-fuse rules reads "For SKY130D\* and
 SKY130TM\* CADflow use MM2 for Metal Fuse" and "For SP8P\*/SKY130P\* (PLM)
-CADflow use MM4 for Metal Fuse"; one row of rule x.11 reads "Metal fuses
+CADflow use MM4 for Metal Fuse".[^pdk-periph] One row of rule x.11 reads "Metal fuses
 are drawn in met4" (flag LVS, no value), beside rows naming met2 and
-met3.[^pdk-periph] Table C3 of the *Layers Reference* defines "fuse:dg"
+met3.[^pdk-periph]
+
+Table C3 of the *Layers Reference* defines "fuse:dg"
 as "met2:fe for S8D\*/S8TM\*, met3.fe for S8TEE\*/S8TNV/S8Q\*/SP8TEE-5R/SP8Q\*,
 met4.fe for S8P\*/SP8P\*" and "fuse_metal" as "met3 for
 S8TEE\*/S8TNV/S8Q\*/SP8TEE-5R/SP8Q\*; met2 for S8D\*/S8TM\*, met4 for
-S8P\*/SP8P\*", and `gds_layers.csv` has a `met4` fuse purpose at 71:17
+S8P\*/SP8P\*".[^pdk-06] `gds_layers.csv` has a `met4` fuse purpose at 71:17
 and a `target` drawing layer at 76:44, "Metal fuse target".[^pdk-06] The
 fuse rules give a fuse a width of 0.800 µm, "Min. and max width of
 fuse" (mf.1), and a length of 7.200 µm (mf.2), on centres 2.760 µm apart
 (mf.3), with "Only one fuse per metal line allowed"
-(mf.20).[^pdk-periph] SkyWater's published DRC checks name the level:
-the PDK's *Error Messages* page, which describes "many of the automated
+(mf.20).[^pdk-periph]
+
+SkyWater's published DRC checks name the level.[^pdk-errors]
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance criteria
-for GDS data", lists "metal4 fuse should be rectangular", "0.8 min. width
-of metal4 fuse", "7.2 min. length of metal4 fuse" and "0.83 max extension
-of met4 beyond fuse boundary" (mf.5, whose periphery-rule value is printed
-without a unit), with target spacings of 2.75 (mf.3) and 3.295 (mf.4)
-against the periphery tables' 2.760 and 3.300.[^pdk-errors] The
+for GDS data".[^pdk-errors] It lists:[^pdk-errors]
+
+* "metal4 fuse should be rectangular"
+* "0.8 min. width
+  of metal4 fuse"
+* "7.2 min. length of metal4 fuse"
+* "0.83 max extension
+  of met4 beyond fuse boundary" (mf.5, whose periphery-rule value is printed
+  without a unit)
+
+It gives target spacings of 2.75 (mf.3) and 3.295 (mf.4)
+against the periphery tables' 2.760 and 3.300.[^pdk-errors]
+
+The
 {ref}`MM4 <step-154>` page reads the fuse links as printed by this mask
 with the wiring (inference from the note, supported by the metal-4 fuse
 checks), and PLM as the label of the
 flow this reference follows (inference). Table F2b, the mask generation
 table, has columns for `MM1`, `MM2`, `MM3` and `MM5` but none for `MM4`,
 and marks its two "metal fuse" rows `C` in the `MM2` and `MM3`
-columns;[^pdk-06] the PDK does not explain the missing column.
+columns.[^pdk-06] The PDK does not explain the missing column.
 
 Table 5 of *Criteria & Assumptions*, "Laser Fuse Criteria", bears on how
-such fuses may be opened. It lists in a column headed
-"Value (um)" a "Max. width of a metal fuse line that can be removed
-reliably" of 0.8 (`FSW`), the width of mf.1; a "Min. L of met. fuse at
-which damage doesn't extend beyond ends" of 6.605 (`FSLE`), below the
-7.200 µm of mf.2; a "Nominal effective laser spot diameter" of 3.5
-(`LASSPT`); a "Positioning tolerance of laser spot (3 s)" of 0.3
-(`LASMA`); and a "Fuse melting radius" of 3.6 (`MELTRAD`); Table 9 gives
-an "Enclosure of fuses by polyimide" of 12 (`PimFuseEnc`) and an
-"Enclosure of laser targets in the die by polyimide" of 30
-(`PimLaserEnc`).[^pdk-03] Table 5 also gives a "Max. extension of met2
+such fuses may be opened. It lists the first five rows below in a column headed
+"Value (um)", and Table 9 gives the last two:[^pdk-03]
+
+:::{table} Laser-fuse criteria of Tables 5 and 9 of *Criteria & Assumptions*
+
+| Parameter | PDK table | Published description | Value |
+|---|---:|---|---|
+| `FSW` | 5 | "Max. width of a metal fuse line that can be removed reliably" | 0.8, the width of mf.1 |
+| `FSLE` | 5 | "Min. L of met. fuse at which damage doesn't extend beyond ends" | 6.605, below the 7.200 µm of mf.2 |
+| `LASSPT` | 5 | "Nominal effective laser spot diameter" | 3.5 |
+| `LASMA` | 5 | "Positioning tolerance of laser spot (3 s)" | 0.3 |
+| `MELTRAD` | 5 | "Fuse melting radius" | 3.6 |
+| `PimFuseEnc` | 9 | "Enclosure of fuses by polyimide" | 12 |
+| `PimLaserEnc` | 9 | "Enclosure of laser targets in the die by polyimide" | 30 |
+:::
+
+Table 5 also gives a "Max. extension of met2
 beyond fuse boundary" of 0.005 (`FEXT`), which names metal 2, where rule
 mf.5 allows 0.830 of fuse metal and the Error Messages page checks "0.83
 max extension of met4 beyond fuse boundary".[^pdk-03][^pdk-periph][^pdk-errors]
 We read the metal-4 fuses as laser-opened links whose drawn width this
 mask fixes (inference from Table 5's title, the equal 0.8 widths, the
-laser-target criterion and the mf rules' "target"); Table 5's one
+laser-target criterion and the mf rules' "target"). Table 5's one
 metal-named row is for metal 2, so its criteria may describe a metal-2
-fuse flow. Smith et al. described the
+fuse flow.
+
+Smith et al. described the
 laser-programmed redundancy of a 64K DRAM, whose polysilicon links were
 blown by laser pulses, "in relation to the target geometry, laser spot
 size and targeting accuracy".[^smith-1981]
 
 **Variants and flows.** `masks.csv` lists "Metal 4" once and marks
 it.[^pdk-05] Table 2 of *Criteria & Assumptions* gives `MM4CD` and
-`MM4CDSP` 0.3 and a separate "Metal 4-Cu" row; Table 4 gives metal-4
+`MM4CDSP` 0.3 and a separate "Metal 4-Cu" row.[^pdk-03] Table 4 gives metal-4
 thicknesses "for antenna ratio calculation" of 0.8 for "(S8P\*/SP8P\*)"
-(`Met4Thick_p`) and 2 for "(S8Q\*/SP8Q)" (`Met4Thick_q`), and Table C3
+(`Met4Thick_p`) and 2 for "(S8Q\*/SP8Q)" (`Met4Thick_q`).[^pdk-03] Table C3
 defines "top_metal" as "met4.dg OR mm4.mk" for "SP8Q/S8Q\*" and "met5.dg
-OR mm5.mk" for "SP8P\*/S8P\*".[^pdk-03][^pdk-06] The
+OR mm5.mk" for "SP8P\*/S8P\*".[^pdk-06] The
 {ref}`VIM3 <step-144>` page reads the 2 µm entry as a thick-metal-4
-variant (inference). The mask does not define the metal stack it
+variant (inference).
+
+The mask does not define the metal stack it
 patterns, which {ref}`WTIAL4 <step-149>` deposits, the second capacitor's
 films and plates ({ref}`CAPILD2 <step-150>`, {ref}`CAPTIW2 <step-151>`,
 {ref}`mask-cap2m`), the via-3 plugs beneath ({ref}`mask-vim3`) or the via
-4 above ({ref}`mask-vim4`); on the step pages' readings the dielectric that
+4 above ({ref}`mask-vim4`). On the step pages' readings the dielectric that
 fills its spaces is deposited by {ref}`NILD6 <step-156>` and polished by
 {ref}`CMPM4 <step-157>`.
 
@@ -134,32 +166,40 @@ fills its spaces is deposited by {ref}`NILD6 <step-156>` and polished by
 
 `gds_layers.csv` gives the mask-level layer `cmm4` two purposes: `mask`
 at 51:0 ("Metal 4 mask") and `waffle drop` at 112:4, on a layer number
-that also carries the `cviam3` drawing purpose at 112:20; the drawn layer
+that also carries the `cviam3` drawing purpose at 112:20.[^pdk-06] The drawn layer
 is `met4` at 71:20, with a `fuse` purpose at 71:17 among its
 others.[^pdk-06] The pairing of the mask with `met4` rests on those names
 and descriptions, and that with the fuse purpose on rule x.11 and the
-fuse note, as on the {ref}`masks index <masks-index>`; the PDK publishes
-no operation from the drawn layers to the plate. Rule x.15a confines
+fuse note, as on the {ref}`masks index <masks-index>`. The PDK publishes
+no operation from the drawn layers to the plate.
+
+Rule x.15a confines
 "Drawn compatible, mask, and waffle-drop layers" to test modules, seal
 ring and frame, "Exception: FOM/P1M/Metal waffle drop are allowed inside
 the die" (flag P, periphery only),[^pdk-periph] so a die may carry `cmm4`
-waffle-drop shapes as well as `met4` (our reading); with no add or drop
-purpose, rule x.9's "serifs" have no `cmm4` layer to sit on. The rule
+waffle-drop shapes as well as `met4` (our reading). With no add or drop
+purpose, rule x.9's "serifs" have no `cmm4` layer to sit on.
+
+The rule
 set's first entry, flagged RC, flags a 700 × 700 window "covered by cmm4
 waffleDrop" when the metal pattern density of the same window is below a
 limit that falls from 70 % for a fully covered window to 30 % for one
-30–40 % covered, and rule m4.pd.1 sets a minimum
+30–40 % covered.[^pdk-periph] Rule m4.pd.1 sets a minimum
 "MM4_oxide_Pattern_density" of 0.7, checked in 700 µm regions stepped by
-70 (m4.pd.2a, m4.pd.2b, flag A).[^pdk-periph] The PDK does not say
+70 (m4.pd.2a, m4.pd.2b, flag A).[^pdk-periph]
+
+The PDK does not say
 whether a waffle-drop shape places fill or keeps it out; the
 {ref}`MM4 <step-154>` page reads the `cmm4` fill and the 0.7 density rule
 as existing for the {ref}`CMPM4 <step-157>` polish. Metal 4 falls under
 the 0.005 grid of rule x.1b, and rule nsm.3 lists "metX.dg (X=1 to 5)
 and cmmX.mk (X=1 to 5)" among the layers kept 1.000 µm from the
-nitride-seal keep-out (flag AL).[^pdk-periph] The *Error Messages* page
+nitride-seal keep-out (flag AL).[^pdk-periph]
+
+The *Error Messages* page
 lists two checks named `cmm4.nikon`, "MM4mk in the nikon cross has the
 wrong polarity" and "MM4mk is missing from the nikon cross in the
-layout";[^pdk-errors] it does not say what the "nikon cross" is, and we
+layout".[^pdk-errors] It does not say what the "nikon cross" is, and we
 read the checks as concerning a structure on the mask layer whose data
 must have the right polarity (inference from the message wording), not
 as stating the plate's tone.
@@ -170,24 +210,30 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `MM4` the site renders layers 71:20 (`met4`)
 and 51:28, which it lists as a fill layer, with no Boolean expression and
-no note, on all eight runs; its mask record gives the mask-level layer
-51:0 and the info text "Metal 4".[^mask-renders] That layer set differs
+no note, on all eight runs.[^mask-renders] Its mask record gives the mask-level layer
+51:0 and the info text "Metal 4".[^mask-renders]
+
+That layer set differs
 from this reference's pairing: the masks index records the render as
 "`met4` and the fill layer 51:28; no fuse purpose", so the images leave
 out `met4` fuse 71:17 ({ref}`masks-derivations`).[^mask-renders][^pdk-06]
 Layer 51:28 is not in `gds_layers.csv`, whose `cmm4` waffle-drop purpose
 is 112:4, so the site's choice of it is one public reading of the
-tape-out files, not a PDK definition, and like the site's other layer
-choices it is not SkyWater's mask-generation recipe. The info text is
+tape-out files, not a PDK definition. Like the site's other layer
+choices, it is not SkyWater's mask-generation recipe.
+
+The info text is
 identical to the "Info" note of the `MM4` row in the process-steps sheet,
 so neither is cited as corroborating the other
 ({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders]
 
 Every rendered die of every run carries shapes on these layers — at least
 3 070 106 on each die, fill included[^mask-renders] — so the count of 40
-dies says only that every layout has metal 4; because the fuse purpose is
+dies says only that every layout has metal 4. Because the fuse purpose is
 not rendered, the images do not show whether any layout draws a metal-4
-fuse. The site states the limits of its images: "These are renders of
+fuse.
+
+The site states the limits of its images: "These are renders of
 *drawn* data, not photomask artwork: reticle pitch, 4x reduction,
 mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] Its metadata carries no plate ID, so a render is
@@ -218,10 +264,12 @@ is the heading of the run's columns in the tab
   recorded for MPW-5; the masks index reads the MPW-5 gap of `VIM4` as
   more likely a gap in the record than in the run
   ({ref}`masks-mpw-runs`).[^steps-sheet]
-* **Plate number.** The sheet does not say what `580` encodes. From
+* **Plate number.** The sheet does not say what `580` encodes.
+
+  From
   `500` to `590` the via and metal numbers rise in step order, but each
-  capacitor mask is numbered 2 above the metal mask that follows it:
-  `CAP2M` (step 152) is `582` against `MM4` (step 154) `580`, as `CAPM`
+  capacitor mask is numbered 2 above the metal mask that follows it (our
+  comparison). `CAP2M` (step 152) is `582` against `MM4` (step 154) `580`, as `CAPM`
   (step 137) is `572` against `MM3` (step 139) `570` (our comparison).
   Elsewhere the numbers do not follow process order, and no process
   position is read from them
@@ -235,82 +283,103 @@ is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`MM4 <step-154>` page gives
+### Exposure class
+
+The {ref}`MM4 <step-154>` page gives
 {math}`k_1 = 0.30 \times 0.70 / 0.248 \approx 0.85` on a KrF lens of NA
 0.70 and about 0.49 on an i-line lens of NA 0.6, finds either class
 plausible and leaves the choice open, quoting ASML's statement that older
 systems "migrate to the lithography of choice for less critical
-layers";[^asml-30] the {ref}`i-line stepper <machine-i-line-stepper>` and
+layers".[^asml-30] The {ref}`i-line stepper <machine-i-line-stepper>` and
 {ref}`KrF stepper <machine-duv-krf-stepper>` pages both list it as "not
 public which class (i-line or DUV)". SkyWater lists "ASML I-line
 stepper", "ASML I-line scanner", "ASML DUV stepper" and "ASML DUV scanner"
 but assigns no layer to any of them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
-patterns";[^wong-1998] that threshold is about 0.18 µm at 248 nm and NA
+patterns".[^wong-1998] That threshold is about 0.18 µm at 248 nm and NA
 0.7 but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic), so plate CD
 errors on dense metal-4 lines would print at their own size on a KrF tool
-and begin to be magnified on an i-line tool (inference); the 0.800 µm
-fuses are well above either threshold. Hochmuth, Ruhl and Coleman found
-that with chrome dry etch "the deviation of the CD from the target value
-is a function of the chrome loading on the plate";[^hochmuth-1999]
-whether the `MM4` plate is dry-etched is not public.
+and begin to be magnified on an i-line tool (inference). The 0.800 µm
+fuses are well above either threshold.
 
-**Thick metal, capacitors and the resist.** On the step pages' readings
+Hochmuth, Ruhl and Coleman found
+that with chrome dry etch "the deviation of the CD from the target value
+is a function of the chrome loading on the plate".[^hochmuth-1999]
+Whether the `MM4` plate is dry-etched is not public.
+
+### Thick metal, capacitors and the resist
+
+On the step pages' readings
 the resist is coated over the 0.845 µm metal-4 stack,[^pdk-04] which
 carries the thin capacitor dielectric and, over each second-level
 capacitor, a plate island of the order of 0.1 µm high (the
 {ref}`MM4 <step-154>` page's reading at {ref}`CAPTIW2 <step-151>`), so it
 sees two
 thin-film stacks of different reflectivity and a step at every plate
-edge. Brunner showed that the swing ratio scales with the square root of
+edge.
+
+Brunner showed that the swing ratio scales with the square root of
 the substrate reflectivity, which an anti-reflective coating
-reduces,[^brunner-1991] and Rocke and Schneegans used titanium nitride on
-aluminium as an anti-reflection layer.[^rocke-1988] The step page reads
+reduces.[^brunner-1991] Rocke and Schneegans used titanium nitride on
+aluminium as an anti-reflection layer.[^rocke-1988]
+
+The step page reads
 an organic {term}`BARC` and a resist thick enough to survive the etch of
-the stack; with the resist left where `met4` is drawn, the plate would be
+the stack. With the resist left where `met4` is drawn, the plate would be
 clear-field (inference). None of this is published. The consumables are
 on the {ref}`lithography materials <material-lithography-materials>`
 page.
 
-**Fill and the polish above.** Kahng et al. formulate fill as meeting
+### Fill and the polish above
+
+Kahng et al. formulate fill as meeting
 density bounds "in all windows of given size",[^kahng-1999] the form of
-the m4.pd rules; Tian, Wong and Boone added a multiple-layer formulation
+the m4.pd rules. Tian, Wong and Boone added a multiple-layer formulation
 of dummy-feature placement "avoiding cumulative effect" across
 levels,[^tian-2001] a concern for a fourth level of fill over three
 filled levels below (our reading). Kahng and Samadi note that "Post-CMP
 wafer topography varies according to pattern density",[^kahng-2008] and
 Stine et al. found pattern density "a strongly dominant factor" in
-interlevel-dielectric polishing.[^stine-1998] The PDK's "Oxide Bias for
+interlevel-dielectric polishing.[^stine-1998]
+
+The PDK's "Oxide Bias for
 MM4" of 1.15 (`BiasMM4`), the same as `MM3` and against 0.6 for `MM1` and
 `MM2`, sits in Table 4's first block, headed "Material Thicknesses" with a
 column headed "Value (um)", not with its "Waffling / Pattern Density"
-criteria;[^pdk-03] the {term}`oxide bias` glossary entry records the step
+criteria.[^pdk-03] The {term}`oxide bias` glossary entry records the step
 pages' reading of it.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
-transferred by {ref}`MM4E <step-155>`, which first breaks through the
-capacitor dielectric outside the plates and then etches the metal stack
-in a chlorine chemistry, stopping on the via-3 cap oxide and plug tops,
-on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class,
-with passivation, resist strip and clean treated as part of that step.
-The Newport Fab patent likewise patterns its bottom-plate metal after the
-top plate is defined,[^pat-mim-newportfab] and Ng et al. review MiM
-integration in Al–Cu and copper back ends.[^ng-2005] Bohr argued that
-interconnect limits performance[^bohr-1995] and Stamper, Fuselier and
-Tian treated the RC delay of aluminium wiring below 0.25 µm;[^stamper-1998]
-the step page cites both for why the upper levels are thick and wide.
+### Overlay and alignment
 
-**Overlay.** Metal 4 must enclose each via 3 by 0.065 µm (m4.3) and each
-via 4 by 0.190 µm (via4.4); the enclosure of the `cap2m` plates has no
+Metal 4 must enclose each via 3 by 0.065 µm (m4.3) and each
+via 4 by 0.190 µm (via4.4).[^pdk-periph] The enclosure of the `cap2m` plates has no
 published value, and the fuse rules keep a fuse centre 3.300 µm from
 fuse metal, metal 1, local interconnect and metal 2 (mf.4, mf.6, mf.7,
 mf.19).[^pdk-periph] The {ref}`MM4 <step-154>` page reads the alignment
 tree — to via-3 targets under the metal, to the `cap2m` plates, or
 both — as deciding which enclosure carries the larger error, and leaves
 it open.
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
+transferred by {ref}`MM4E <step-155>`, which first breaks through the
+capacitor dielectric outside the plates and then etches the metal stack
+in a chlorine chemistry, stopping on the via-3 cap oxide and plug tops,
+on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings
+passivation, resist strip and clean are treated as part of that step.
+
+The Newport Fab patent likewise patterns its bottom-plate metal after the
+top plate is defined,[^pat-mim-newportfab] and Ng et al. review MiM
+integration in Al–Cu and copper back ends.[^ng-2005] Bohr argued that
+interconnect limits performance[^bohr-1995] and Stamper, Fuselier and
+Tian treated the RC delay of aluminium wiring below 0.25 µm.[^stamper-1998]
+The step page cites both for why the upper levels are thick and wide.
 
 (mask-mm4-steps)=
 ## Steps that use this mask
@@ -340,7 +409,9 @@ for this mask.
 
 The `m4` rules of the periphery rules, with the via-4 enclosure by metal
 4, the metal-fuse rules that fix the fuse shape, and the mask-data rules
-x.1b, x.7, x.11 and x.15a. Flag P means "Rule applies to periphery only
+x.1b, x.7, x.11 and x.15a.
+
+Flag P means "Rule applies to periphery only
 (outside areaid.ce). A corresponding core rule may or may not exist.", AL
 "Rules applicable only to Al BE flows", CU "Rules applicable only to Cu
 BE flows", A "Rule documents a functionality implemented in CL algorithms
@@ -348,6 +419,8 @@ and may not be checked by DRC.", RR "Recommended rule at any IP level",
 RC "Recommended rule at the chip level, required rule at the IP level.",
 LVS "Rule handled by LVS" and NC "Rule not checked by DRC. It should be
 used as a guideline only."[^pdk-periph]
+
+:::{table} The `m4` rules, the via-4 enclosure by metal 4, the metal-fuse rules that fix the fuse shape and the mask-data rules, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -377,23 +450,30 @@ used as a guideline only."[^pdk-periph]
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.11 | "Metal fuses are drawn in met4" (LVS) | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 The other fuse rules, mf.6 to mf.19, mf.21, mf.22 and mf.24, set the
 spacings of a fuse centre to other layers and the size, placement and
-spacing of fuse shields and fuse contacts; the Error Messages page gives
+spacing of fuse shields and fuse contacts.[^pdk-periph] The Error Messages page gives
 their target spacings slightly below the periphery values (for example
-3.295 for mf.6, mf.7, mf.19 and mf.24, against 3.300).[^pdk-periph][^pdk-errors]
+3.295 for mf.6, mf.7, mf.19 and mf.24, against 3.300).[^pdk-errors]
 Rule mf.5 is printed without a unit, and mf.23, the spacing to metal 4, has the
 value "N/A" (our reading: the fuse is itself metal 4 in this
-flow).[^pdk-periph] Table 2 of *Criteria & Assumptions* gives `MM4CD` and
+flow).[^pdk-periph]
+
+Table 2 of *Criteria & Assumptions* gives `MM4CD` and
 `MM4CDSP` as 0.3 and 0.3, and the same for a "Metal 4-Cu" row
 (`MM4_CuCD`, `MM4_CuCDSP`), a copper back end that SKY130's aluminium
-flow does not use; Table 4 adds, in its "Material Thicknesses" block,
+flow does not use.[^pdk-03]
+
+Table 4 adds, in its "Material Thicknesses" block,
 the "Oxide Bias for MM4" of 1.15 (`BiasMM4`) and the metal-4 antenna
-thicknesses of 0.8 and 2; Table 5 gives the laser-fuse criteria quoted
-above; Table 7 a "Huge metal X min. W and L" of 3 (`HugeM`), in its column
-headed "CD"; and Table 9 the 12 of polyimide around fuses and the 30
-around laser targets.[^pdk-03] For
+thicknesses of 0.8 and 2.[^pdk-03] Table 5 gives the laser-fuse criteria quoted
+above.[^pdk-03] Table 7 gives a "Huge metal X min. W and L" of 3 (`HugeM`), in its column
+headed "CD".[^pdk-03] Table 9 gives the 12 of polyimide around fuses and the 30
+around laser targets.[^pdk-03]
+
+For
 the plate the decisive figures are 0.300 µm lines on a 0.6 µm pitch (our
 arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 
@@ -401,22 +481,21 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 
 * {ref}`MM4 <step-154>` and {ref}`MM4E <step-155>` — the mask step and
   the metal etch; {ref}`WTIAL4 <step-149>` — the stack patterned.
-* {ref}`mask-cap2m` — the capacitor mask whose plates metal 4 must
+* **Category.** {ref}`category-lithography`, {ref}`category-etch` and
+  {ref}`category-cmp` — the mask step, etch and polish categories.
+* **Machines.** {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
+  two exposure classes the step page leaves open.
+  {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-cap2m` — the capacitor mask whose plates metal 4 must
   enclose; {ref}`mask-vim3` and {ref}`mask-vim4` — the via masks below and
   above; {ref}`mask-mm3` and {ref}`mask-mm5` — the metal masks one level
   down and up.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   derivation table that records the `MM4` render's layers.
-* {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
-  two exposure classes the step page leaves open.
-* {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography`, {ref}`category-etch` and
-  {ref}`category-cmp` — the mask step, etch and polish categories.
 
 ## References
 
@@ -492,13 +571,15 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 
 * The operation that makes the `cmm4` plate data from `met4`, its fuse
   purpose and the waffle-drop purpose is not published, nor whether a
-  waffle-drop shape places fill or keeps it out; the renders' fill layer
+  waffle-drop shape places fill or keeps it out.[^pdk-06][^pdk-periph] The renders' fill layer
   51:28 is not in `gds_layers.csv`, and the renders leave out the fuse
   purpose.[^pdk-06][^pdk-periph][^mask-renders]
-* Table F2b has no `MM4` column; Table 5 names metal 2 in its `FEXT` row,
+* Table F2b has no `MM4` column.[^pdk-06] Table 5 names metal 2 in its `FEXT` row,
   and whether its laser-fuse criteria apply to the metal-4 fuses of the
-  PLM flow is not stated; that those fuses are laser-opened links printed
-  by this mask is an inference.[^pdk-06][^pdk-03][^pdk-periph] The Error
+  PLM flow is not stated.[^pdk-03] That those fuses are laser-opened links printed
+  by this mask is an inference.[^pdk-06][^pdk-03][^pdk-periph]
+
+  The Error
   Messages page's target spacings differ from the periphery tables by
   0.005 to 0.010 without explanation, and it does not explain its "nikon cross"
   checks.[^pdk-errors]
