@@ -310,10 +310,30 @@ horizontal scroll) and both in-force dropdowns (collapsed, untouched).
 
 
 ### 043-gox100.md — done (1 hand-written in-force note in the body plus its copy under
-References; content untouched — inside the 037–044 in-force-sweep range). See "Content
+References; **correction, 2026-09-25 fix round:** this page in fact has two dropdown
+notes and both had sentences split (pronoun substitutions — ", which" → ".[^pat-03]
+This", ", and it therefore grows" → ".[^pat-ono-thick-cyp] It therefore grows", and
+similarly in the second note — "Together with it goes" and "This takes" as new clauses),
+so "content untouched" was false; both reverted byte for byte to `4a4ed3cf` in the fix
+round (see H1 above) — inside the 037–044 in-force-sweep range). See "Content
 problems for the owner" above for the pad-oxide contradiction between this page's
 lead/Related-steps text and its own figure caption (the figure caption is off limits and
 kept verbatim, exactly as the contradiction requires).
+
+**Correction (2026-09-25 fix round, review H2/M1).** The glance box's **Why** bullet
+("growing it first also reoxidises the ONO blocking oxide") paraphrased the in-force
+integration patent's own wording quoted in the note above it ("additionally serving to
+reoxidize the ONO charge trapping dielectric stack", a restricted phrase for that
+family per `check_inforce.py`'s phrase list) — a breach of R-GLANCE step 7/§2.6, even
+though `check_inforce.py` cannot itself detect a paraphrase. The **Does** bullet's
+"on the logic silicon cleared at `ONOME`" stated as settled fact the same point 042's
+own glance box calls not public (R-GLANCE step 5; see the 042/043 contradiction above).
+Both bullets are now: "**Does:** grows the thick gate oxide over every active area."
+and "**Why:** the 5 V and high-voltage transistors need a thick gate dielectric." —
+the reoxidation reason and the ONOME-clearing claim are dropped from the box entirely;
+the page's own hedged wording on both points is left untouched in the body, lead and
+Related-steps bullet (a content issue for the owner, not fixed by this presentation-only
+pass — see "Content problems for the owner").
 
 The densest page after 040: a 278-word paragraph mixing PDK quotes, measured
 capacitances and a derivation, plus a 201-word dropdown paragraph with three
