@@ -9,15 +9,13 @@ stopping layer, and wherever it is covered, the film stays.
 |---|---|
 | What it does | removes material selectively: the exposed film is eaten away, the covered film stays |
 | Steps in SKY130 | 27 |
-| Tool classes | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>`, {ref}`Dielectric etch <machine-plasma-etcher-dielectric>`, {ref}`Metal etch <machine-plasma-etcher-metal>` |
-| Consumable classes | {ref}`Etch and chamber-clean gases <material-etch-gases>` |
-| Governing relation | ion-enhanced etch-yield law (Steinbrüchel) |
+| Tool classes | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>`, {ref}`Dielectric etch <machine-plasma-etcher-dielectric>`, {ref}`Metal etch <machine-plasma-etcher-metal>`, {ref}`Wet bench <machine-wet-bench>`, {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` |
+| Consumable classes | {ref}`Etch and chamber-clean gases <material-etch-gases>`, {ref}`Wet chemicals <material-wet-chemicals>`, {ref}`Hardware consumables <material-hardware-consumables>` |
+| Governing relation | Ion-enhanced etch yield (Steinbrüchel) |
 
 ## What this class of step does
 
-An etch step removes material selectively: wherever the photoresist
-(or a {term}`hard mask`) is open, the exposed film is eaten away down to a
-stopping layer, and wherever it is covered, the film stays. Etching is
+Etching is
 how the pattern drawn by lithography ({ref}`category-lithography`) is
 transferred into the real materials of the chip — nitride, silicon,
 oxide, polysilicon, aluminium, titanium nitride. Some etches have no
@@ -105,12 +103,12 @@ as Lam's Exelan and Applied's eMxP+.[^donnelly-2013][^nojiri-2015]
 
 | Material | SKY130 steps | Typical chemistry |
 |---|---|---|
-| Silicon and polysilicon | {ref}`STIE <step-006>`, {ref}`P1ME <step-062>` | HBr/Cl₂ with a little O₂ |
-| Silicon dioxide | {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, oxide hard masks, {ref}`NSME <step-166>` | fluorocarbons — CF₄, CHF₃, C₄F₈, C₂F₆ — with Ar and O₂ |
-| Silicon nitride | {ref}`STINITE <step-005>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDME <step-169>` | CF₄/CHF₃/O₂ or SF₆-based |
-| Aluminium–copper with Ti/TiN or Ti:W caps | {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>` | Cl₂/BCl₃ with N₂ or CHF₃ for sidewall passivation |
-| Ti:W and TiN | {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>` | fluorine (SF₆, CF₄) or chlorine, high selectivity to the {term}`oxynitride` dielectric beneath |
-| Anti-reflective coatings | {ref}`TUNARCE <step-036>` | organic {term}`BARC`: O₂/N₂ or HBr/O₂; inorganic SiON: CF₄-based |
+| Silicon and polysilicon | STI trench {ref}`STIE <step-006>`, gate {ref}`P1ME <step-062>` | HBr/Cl₂ with a little O₂ |
+| Silicon dioxide | contacts {ref}`CTME <step-108>`, vias {ref}`VIME <step-119>`, oxide hard masks, the seal-ring opening {ref}`NSME <step-166>` (mainly oxide on the reading of that page) | fluorocarbons — CF₄, CHF₃, C₄F₈, C₂F₆ — with Ar and O₂ |
+| Silicon nitride | STI hard mask {ref}`STINITE <step-005>`, spacer {ref}`SPE <step-077>`, nitride cut {ref}`NPCME <step-079>`, pad opening {ref}`PDME <step-169>` | CF₄/CHF₃/O₂ or SF₆-based |
+| Aluminium–copper with Ti/TiN or Ti:W caps | metal 1–5, {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>` | Cl₂/BCl₃ with N₂ or CHF₃ for sidewall passivation |
+| Ti:W and TiN | capacitor top plates {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>` | fluorine (SF₆, CF₄) or chlorine chemistries, with high selectivity to the {term}`oxynitride` dielectric beneath |
+| Anti-reflective coatings | {ref}`TUNARCE <step-036>` | organic {term}`BARC` opens in O₂/N₂ or HBr/O₂; inorganic SiON in CF₄-based plasmas |
 | Tungsten etch-back (alternative to {term}`CMP` for plugs) | — | SF₆/Ar |
 :::
 
@@ -123,9 +121,7 @@ as Lam's Exelan and Applied's eMxP+.[^donnelly-2013][^nojiri-2015]
   commonly used for etching silicon" where isotropy is
   acceptable.[^wiki-rie]
 
-**Silicon dioxide.** (Contacts, vias, oxide hard masks and the seal-ring
-  opening {ref}`NSME <step-166>` are mainly oxide on the reading of that page.)
-  Fluorine etches oxide as SiF₄ only under ion
+**Silicon dioxide.** Fluorine etches oxide as SiF₄ only under ion
   bombardment, while the carbon forms a polymer that deposits on silicon
   and nitride, giving selectivity to the underlying silicon or to a
   nitride etch-stop; the fluorine-to-carbon ratio is the master
@@ -247,7 +243,7 @@ oxidation or clean must remove.
 
 ## Steps in this category
 
-:::{table} The twenty-seven etch steps of the flow
+:::{table} The twenty-seven etch steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
