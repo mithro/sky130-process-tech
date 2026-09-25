@@ -434,6 +434,20 @@ lines (a range like "5 × 10¹²–2 × 10¹³" can still wrap at its en dash, w
 The corrected page content is in the git commits titled "Review fix H3: restore Open-questions
 bullet moved across H2s" and "Review fix M2: one row per implant in the two energy tables".
 
+**Follow-up (verify fix Low, 2026-09-25).** Tried to close the remaining en-dash wrap two ways.
+(1) Widening the Dose column's `:widths:` share, up to 70 %, made no visible difference at
+400 px — inspecting the built HTML shows `:widths:` on a `{table}` block produces **no**
+`<colgroup>`/column-width styling at all in this build, for this table or for any other
+`{table}`-wrapped page in the corpus checked (`docs/machines/plasma-etcher-dielectric.md`'s
+generated table included). The directive is accepted but currently inert; recorded as
+**Guide problem 16** below. (2) Replacing the range's en dash (U+2013) with a non-breaking
+hyphen (U+2011) does stop the wrap, but `check_preserved.py`'s number tokeniser does not
+recognise U+2011 as a range join, so the combined token "5 × 10¹²–2 × 10¹³" reads as genuinely
+**lost** — confirmed against the tool's own self-test ("a loss is never allowed by
+`--allow-added`"), which is unconditional and not overridable by any flag. Reverted. Left as an
+accepted exception: the range's own two numbers are each intact and un-broken; only the
+join between them can still wrap, onto two otherwise-correct lines.
+
 ### 017-nwm.md — done (no in-force patent note on this page; index-links dropdown only)
 
 Rules applied: R-SENTENCE (the em-dash/colon sentences throughout), R-PARA (the lead paragraph
@@ -853,6 +867,19 @@ larger scale (034 in particular).
     `measure5.py` limitation, not a real over-length sentence. Guide wording, alongside G10:
     "A `|`-prefixed table row is not measured as sentence text, whether or not it sits inside a
     list item's continuation block."
+
+16. **The `:widths:` option on a `{table}` directive produces no column-width styling in the
+    built HTML.** Found while trying to close the residual en-dash wrap on 018-nwi.md's Energy
+    table (verify fix Low). Tested at `:widths:` ratios from 46/24/30 up to 15/15/70 for the
+    same table: no visible change at 400 px, and the built HTML has no `<colgroup>`/`<col
+    style="width:...">` at all. The same is true of an existing, unrelated generated table
+    (`docs/machines/plasma-etcher-dielectric.md`'s step-tables block, also `{table}` +
+    `:widths:`), so this is not specific to a hand-written table or to this batch's edits — it
+    looks like a site-wide rendering gap that predates this readability work. Every prior claim
+    in this and other progress files that a table "holds at 400 px because of its `:widths:`"
+    should be read as "holds because its content happens to fit", not because the directive did
+    anything. *Guide/tooling note:* either fix the build so `:widths:` is honoured, or stop
+    recommending it in R-TABLE step 10's phone-test guidance until it is.
 
 ## Boundary compliance note
 
