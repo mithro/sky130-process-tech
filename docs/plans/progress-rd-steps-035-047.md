@@ -58,6 +58,54 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 043-gox100.md — done (1 hand-written in-force note in the body plus its copy under
+References; content untouched — inside the 037–044 in-force-sweep range). See "Content
+problems for the owner" above for the pad-oxide contradiction between this page's
+lead/Related-steps text and its own figure caption (the figure caption is off limits and
+kept verbatim, exactly as the contradiction requires).
+
+The densest page after 040: a 278-word paragraph mixing PDK quotes, measured
+capacitances and a derivation, plus a 201-word dropdown paragraph with three
+patent-quote sentences.
+
+Rules applied: R-PARA/R-SENTENCE extensively (the lead split at its
+consequence/exception seam; the 278-word "What this step is" evidence paragraph split
+into four paragraphs at its PDK-quote/measurement/derivation seams, with a ≥12-word
+parenthetical hedge converted to its own bracketed sentence per §1; the
+"Three Cypress patents" lead-in split; R-CATEGORY on "Step category" — 30-word
+classification + `**Specific to this step:**` and 3 bullets; the "Why this step exists"
+opening paragraph and its Thermal-budget/Additive-growth bullets all split at their
+em-dashes and semicolons; all four numbered "How it is typically performed" items and
+the two dropdown paragraph splits; the last Open-questions bullet split with its
+`(our extraction …)`-style hedge moved to its own sentence), R-SENTENCE **inside two
+`{dropdown}` notes** (patent quotations, split only before/after complete quotations —
+two sentences (52 and 46 words) are single, indivisible patent quotations spanning two
+original sentences under one quotation-mark pair and were left whole, the same accepted
+exception as earlier pages), R-HEDGE step 1 (italic lead-in), R-TOOLS (2 "Strength:"
+bullets → SkyWater-says/Tool-exists/Runs-this-step form; no recap table), R-RELATED
+(`Previous:`, `Next:`, `Feeds:`, `Depends on:`, `Same category:`, `Category page:`),
+R-OPENQ (bold labels on all five bullets, the last split into lead + indented
+continuation), R-GLANCE (box inserted last; "Public numbers" uses the PDK's own 110 Å
+finished-thickness figure, checked against `check_inforce.py` before commit — none of
+this page's in-force-patent content went into it).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 5 → 1 (figure caption, off
+limits — holds the pad-oxide contradiction's own wording, untouched); list items > 60
+words 2 → 0; sentences > 45 words 16 → 2 (both hand-verified indivisible patent
+quotations, documented above; the figure caption is not separately counted this time).
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order,quotes --allow-regrouped
+--allow-dropdown-edits docs/steps/043-gox100.md`: **0 undeclared differences**. (This
+page's longest single quotation is 342 characters — under `QUOTE_RE`'s 400-character
+cap — so it does not trigger the Guide-problem-16 tokeniser artifact found on 042; a
+length scan of every quotation on 043–047 confirmed none exceeds 400 characters.) The one
+`ADDED quotes`/`ADDED identifiers` finding is the R-OPENQ bold label `**"GOX55"
+label.**`, which repeats a quotation already on the page (declared). All `number_order`
+findings are clean `REGROUPED` matches. All other checkers, `check_inforce.py` included,
+pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom.
+
+
 ### 042-onome.md — done (2 hand-written in-force notes in the body plus their copies
 under References; content untouched — inside the 037–044 in-force-sweep range). See
 "Content problems for the owner" above for the pad-oxide contradiction the figure review
