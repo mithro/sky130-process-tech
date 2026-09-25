@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`HVTPM <step-022>` |
 | **Next step** | {ref}`PNCHI <step-024>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** adds a high-Vt channel dose through the `HVTPM` resist, on
+  top of the baseline PMOS implant.
+* **Why:** raises |Vt| for low-leakage PMOS; split into two implants
+  (with `PNCHI`) to shape the channel profile without hurting
+  mobility.
+* **Public numbers:** measured threshold 1.124 V (`pfet_01v8_hvt`)
+  against 1.065 V (`pfet_01v8`) at 7/8 µm (our
+  extraction).[^raw-data-lv-mosfets]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** the actual species, energy and dose (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `PCHI` is the first of two channel implants placed through the resist
@@ -17,11 +34,13 @@ windows of {ref}`HVTPM <step-022>`, the high-Vt P-channel mask. On this
 page's reading it adds dopant to the surface of the N-well under the
 future gates of the PMOS transistors drawn with the `hvtp` layer, on
 top of the baseline PMOS channel doping that, we infer, every N-well
-received at {ref}`LVTPI <step-020>`. The {ref}`HVTPM <step-022>` page
+received at {ref}`LVTPI <step-020>`.
+
+The {ref}`HVTPM <step-022>` page
 sets out a second reading of the `chvtpm` checks and of the public
 render derivation, under which the opening covers low-voltage N-well
-outside `lvtn` and this implant reaches every standard PMOS as well;
-which is right is not public. Its companion, {ref}`PNCHI <step-024>`, is
+outside `lvtn` and this implant reaches every standard PMOS as well.
+Which is right is not public. Its companion, {ref}`PNCHI <step-024>`, is
 described in this reference as a BF₂ implant (an inference, set out on
 that page); the species of `PCHI` is discussed below. The resist is stripped at
 {ref}`PCHIS <step-025>`.
@@ -65,8 +84,9 @@ The published test-tile measurements include both devices at the PDK's
 e-test geometries. By maximum-transconductance extrapolation at
 V_DS = −0.1 V, less half the drain bias, we extract threshold magnitudes
 of 1.124 V for `pfet_01v8_hvt` against 1.065 V for `pfet_01v8` at
-7/8 µm (+0.059 V) and 0.917 V against 0.798 V at 7/0.15 µm (+0.119 V);
-at 7/0.15 µm the drain current at V_GS = V_DS = −1.8 V falls from
+7/8 µm (+0.059 V) and 0.917 V against 0.798 V at 7/0.15 µm (+0.119 V).
+
+At 7/0.15 µm the drain current at V_GS = V_DS = −1.8 V falls from
 1.28 mA to 0.94 mA (our extraction from the published measurements).
 The PDK's e-test nominals differ by +0.057 V and +0.107 V, and their
 currents fall from 1.347 mA to 1.003 mA.[^raw-data-lv-mosfets][^pdk-07]
@@ -74,43 +94,53 @@ currents fall from 1.347 mA to 1.003 mA.[^raw-data-lv-mosfets][^pdk-07]
 A second, more physical reason to split the high-Vt adjust into two
 implants is profile shaping. A single shallow implant that raises the
 surface concentration enough to move the threshold also raises the body
-effect and degrades mobility; pairing a deeper implant that controls
+effect and degrades mobility.
+
+Pairing a deeper implant that controls
 short-channel behaviour with a shallower one that sets Vt is the
 "retrograde channel" approach that ITRS 2001 tabulates ("Retrograde
 channel depth (nm)" 21–30 nm for the 2001 high- performance
-node)[^itrs-01] and that Thompson, Packan and Bohr analysed for its
-drive-current trade-offs.[^thompson-1996] We infer, without public
+node).[^itrs-01] Thompson, Packan and Bohr analysed the same approach
+for its drive-current trade-offs.[^thompson-1996] We infer, without public
 confirmation, that `PCHI` and `PNCHI` divide these roles between them.
 
 The high-Vt varactor shows the two implants from another side.
 {ref}`HVTPM <step-022>` sets the published capacitance–voltage sweeps
 of the test tile's two varactor options, which the pad list maps to
-`cap_var_lvt` and `cap_var_hvt`, beside each other: for 98 devices of
+`cap_var_lvt` and `cap_var_hvt`, beside each other.
+
+For 98 devices of
 5 × 5 µm the high-Vt option measures 4.60 pF against 2.41 pF at
 −1.8 V, on the low-capacitance side, and 21.04 pF against 21.14 pF at
-1.8 V, into accumulation (our extraction from the published
+1.8 V, into accumulation. This is our extraction from the published
 measurements; the files record no measurement frequency, temperature,
-date or wafer).[^raw-data-passives][^raw-data-testtile-pads] We read the
+date or wafer.[^raw-data-passives][^raw-data-testtile-pads]
+
+We read the
 larger depletion capacitance as a higher net donor concentration near
-the well surface under the high-Vt implants taken together; the data
+the well surface under the high-Vt implants taken together. The data
 do not show how `PCHI` and `PNCHI` divide it (inference).
 
 ## How it is typically performed
 
-An industry-generic high-Vt PMOS channel implant for a 200 mm,
-130 nm-era fab. SKY130's species, energy and dose are not public.
+*An industry-generic high-Vt PMOS channel implant for a 200 mm,
+130 nm-era fab.* SKY130's species, energy and dose are not public.
 
 * **Species.** To raise |Vt| of a surface-channel PMOS the added dopant
   is n-type — arsenic (shallow, slow-diffusing) or phosphorus (deeper
-  for a given energy).[^txt-04] The Round Rock/Micron multi-Vt patent
+  for a given energy).[^txt-04]
+
+  The Round Rock/Micron multi-Vt patent
   uses "an implant of Arsenic" for exactly this purpose.[^pat-vt-rrr] An
   indium implant, which is p-type, is used for *NMOS* retrograde
   channels[^shahidi-1993] and is not a candidate here. Arsenic is the
   more plausible species, and is on the public species list of
   SkyWater's medium-current tool.[^skw-01]
 * **Energy and dose.** Tens of keV; of order 10¹²–10¹³ cm⁻² (category
-  page; the boron-side analogues in an LSI Logic patent are "doses
-  between 1×10¹² and 1×10¹³ atoms/cm²" at 50–100 keV[^pat-vt-lsi]). A
+  page).
+
+  The boron-side analogues in an LSI Logic patent are "doses
+  between 1×10¹² and 1×10¹³ atoms/cm²" at 50–100 keV.[^pat-vt-lsi] A
   high-Vt adjust is by definition a *small* increment over the baseline,
   so its dose is at the low end of the range — a few 10¹² cm⁻² is
   illustrative.
@@ -138,14 +168,17 @@ The Cypress {term}`SONOS` patent gives the pad oxide as
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current** — "B11, BF2, As, ESC chuck, E shower,
-  1e11 to 1e14, 0-60 deg tilt".[^skw-01] Arsenic and the dose window
-  match. Strength: **strong** for the tool; assignment is an
-  **inference**.
-* **Axcelis GSD implanters** — either GSD entry, "High current/energy"
-  or "Hi dose",[^skw-01] is capable, but these are the well and
-  source/drain workhorses; which entry would serve is not stated.
-  Strength: strong for existence, weak for assignment.
+* **Axcelis 8250 medium-current**
+  - *SkyWater says:* lists "B11, BF2, As, ESC chuck, E shower, 1e11 to
+    1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* strong — arsenic and the dose window match.
+  - *Runs this step:* inference.
+* **Axcelis GSD implanters**
+  - *SkyWater says:* lists either GSD entry, "High current/energy" or
+    "Hi dose".[^skw-01]
+  - *Tool exists:* strong for existence; is capable, but these are the
+    well and source/drain workhorses.
+  - *Runs this step:* weak — which entry would serve is not stated.
 
 ## Resources required
 
@@ -157,12 +190,12 @@ The Cypress {term}`SONOS` patent gives the pad oxide as
 
 ## Related steps and cross-references
 
-* Previous: {ref}`HVTPM <step-022>` (mask); next:
-  {ref}`PNCHI <step-024>` (second implant through the same resist),
-  then {ref}`PCHIS <step-025>` (strip).
-* Baseline PMOS channel: {ref}`LVTPI <step-020>`; low-Vt option via
-  {ref}`LVTNM <step-014>`.
-* Activated at {ref}`RTAI <step-034>`.
+* Previous: {ref}`HVTPM <step-022>` (mask).
+* Next: {ref}`PNCHI <step-024>` (second implant through the same
+  resist), then {ref}`PCHIS <step-025>` (strip).
+* Same category: baseline PMOS channel — {ref}`LVTPI <step-020>`;
+  low-Vt option via {ref}`LVTNM <step-014>`.
+* Feeds: activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -248,16 +281,18 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The species (arsenic versus phosphorus), energy and dose of `PCHI`
-  are not public.
-* How the two implants `PCHI` and `PNCHI` divide the job of raising
-  the PMOS threshold — and why one of them is a BF₂ (p-type) implant
-  in a module that raises a PMOS threshold — is discussed on the
-  {ref}`PNCHI <step-024>` page and remains open.
-* Whether `PCHI` reaches only the `hvtp` devices or every low-voltage
-  N-well outside `lvtn` — and hence whether it is an increment over
-  {ref}`LVTPI <step-020>` or the baseline itself — turns on the reading
-  of the `chvtpm` checks discussed on {ref}`HVTPM <step-022>`.[^pdk-errors]
+* **Species, energy and dose.** The species (arsenic versus
+  phosphorus), energy and dose of `PCHI` are not public.
+* **Division of roles.** How the two implants `PCHI` and `PNCHI`
+  divide the job of raising the PMOS threshold is discussed on the
+  {ref}`PNCHI <step-024>` page and remains open. The same page
+  discusses why one of them is a BF₂ (p-type) implant in a module that
+  raises a PMOS threshold.
+* **Baseline vs. increment.** Whether `PCHI` reaches only the `hvtp`
+  devices or every low-voltage N-well outside `lvtn` — and hence
+  whether it is an increment over {ref}`LVTPI <step-020>` or the
+  baseline itself — turns on the reading of the `chvtpm` checks
+  discussed on {ref}`HVTPM <step-022>`.[^pdk-errors]
 
 <!-- footnotes -->
 

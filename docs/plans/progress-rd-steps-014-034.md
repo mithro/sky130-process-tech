@@ -64,6 +64,29 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 023-pchi.md — done (one in-force dropdown, content untouched)
+
+Rules applied: R-PARA/R-SENTENCE throughout (lead paragraph; the e-test threshold, retrograde-
+channel and varactor-capacitance paragraphs, each split at its own seams rather than forced
+into a table — same reasoning as 022, the pairing of which number belongs to which device was
+judged too easy to transpose; the Species and Energy/dose items → lead + indented
+continuation), R-HEDGE step 1 (italic lead-in on the scope sentence only), R-TOOLS (2
+"Strength:" bullets split, no recap table), R-RELATED (`Previous:`/`Next:` split;
+`Same category:`, `Feeds:` labels), R-OPENQ (bold labels on all three bullets; the "Division of
+roles" bullet needed a second pass to get its own sentence under the 45-word cap without an
+em-dash aside), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 2 → 0; sentences > 45 words 8 → 1 (same figure
+caption); table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/023-pchi.md`:
+`quotes`, `hedges` and plain `numbers` (condition (a)) show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for three tuples, all the familiar Guide-problem-11 pattern
+(one of two "8250" mentions stranded after the R-TOOLS split) or clean regroups of the
+e-test/patent sentences. All other checkers pass; `-W` build clean. Screenshots (desktop + 400
+px) read cleanly top to bottom.
+
 ### 022-hvtpm.md — done (the densest page in the batch so far; no in-force dropdown in the body)
 
 Rules applied: R-H3 (three new H3s under "What this step is" — `### What the public record
