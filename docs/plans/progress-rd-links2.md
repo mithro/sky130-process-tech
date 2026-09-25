@@ -75,12 +75,11 @@ four tokens dead on their first check (2026-09-20) needed a second check
 
 ## Left / next
 
-* Write `docs/plans/link-check-2026-09c.md` (counts, per-token evidence and
-  decisions, updated "Needs a human with a browser" list).
-* Run `tools/fix_reading_list_links.py --refresh` and
-  `tools/link_named_titles.py --refresh` for real (dry run showed 0 changes
-  — no hand-written page cites the OSTI/Zenodo/wayback tokens touched here).
-* Final full checker/generator/-W sweep, commit, push.
+All done. `docs/plans/link-check-2026-09c.md` written; full checker suite,
+all three generators' `--check`, and the `-W` build all pass (re-run after
+the report was written); `fix_reading_list_links.py --refresh` and
+`link_named_titles.py --refresh` both ran for real, 0 files changed by
+either. Ready to push.
 
 ## Notes / oddities
 
