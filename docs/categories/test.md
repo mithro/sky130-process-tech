@@ -21,8 +21,7 @@ resistors, capacitors, diodes and interconnect chains one by one. The
 results say whether the wafer was built to specification — whether the
 threshold voltages, drive currents, sheet resistances and contact
 resistances are inside their limits — and therefore whether it may be
-shipped, reworked or scrapped. This is the {term}`e-test` or wafer
-acceptance test ({term}`WAT`); it is the single {ref}`HPETEST
+shipped, reworked or scrapped. It is the single {ref}`HPETEST
 <step-171>` step at the end of the SKY130 flow.
 
 In the general description, "wafer testing is a step performed during
