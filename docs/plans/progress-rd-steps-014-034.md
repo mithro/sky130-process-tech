@@ -64,6 +64,25 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 029-pwis.md — done (no in-force dropdown on this page)
+
+Rules applied: R-PARA/R-SENTENCE (the resist-description paragraph split at its crust/block-mask
+seams, with the em-dash aside about boron's energy deposition rewritten into the main clause;
+the "Why this step exists" paragraph split at its coating/removal-mechanism seams; the
+"Two-stage plasma ash" item → lead + continuation), R-HEDGE step 1 (italic lead-in), R-TOOLS (4
+"Strength:" bullets → Tool|Evidence recap table), R-RELATED (`Same category:` label for the
+comparable-strips bullet), R-OPENQ (bold labels on both bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 0; list items > 60 words 0 → 0;
+sentences > 45 words 2 → 0; table cells > 25 words 0 → 0. Clean measurement, no figure-caption
+issue on this page (short caption).
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/029-pwis.md`:
+**exit 0, no undeclared differences** — a clean pass on the first try, no `number_order`
+involvement since no dense multi-number sentence was split on this page. All other checkers
+pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom, including the
+new recap table.
+
 ### 028-pwi2.md — done (one in-force dropdown, content untouched)
 
 Rules applied: R-SENTENCE (the "characterised in the PDK" sentence; the two "Why this step
