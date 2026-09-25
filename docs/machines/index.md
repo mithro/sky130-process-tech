@@ -11,8 +11,9 @@ about its own tools of that class, and lists the steps that use it.
 Some classes have a page of their own, describing how the machines work,
 representative 200 mm-era models, what SkyWater lists, the steps
 assigned to the class, consumables and process-integration notes. They
-are grouped below by unit process, in the order the SKY130 flow uses
-them; a card's title links the class page, its body is what the
+are grouped below by unit process, in the order of the list under
+*Equipment classes* below; within a group, in flow order. A card's
+title links the class page, its body is what the
 "Machines typically used" section says the class does in SKY130, and
 its footer is what SkyWater publicly lists for it (footnotes as on the
 class pages).
@@ -499,119 +500,6 @@ class. The classes follow the unit processes of the category pages:
   wafer inspection belongs with the starting material
   ({ref}`category-substrate`).
 
-(machines-reading-evidence)=
-## Reading the SkyWater evidence
-
-The index is compiled from the two machine sections that every step page
-carries, "Machines typically used" and "Machines likely used at
-SkyWater", read on all 171 pages; it adds no evidence of its own about
-SkyWater's tools. Where the step pages differ from each other or from
-the sources they quote, the differences are listed under
-{ref}`Open questions and inconsistencies <machines-inconsistencies>`
-rather than resolved here.
-
-Each machine-class page quotes SkyWater's *Facilities & Capabilities*
-entries for its class, grades them on the inventory's strength scale
-({ref}`below <machines-typically-vs-skywater>`) and adds only what is
-specific to the class. Four caveats apply to every class page and are
-not repeated there:
-
-* A listed tool shows what is on the Minnesota floor now, not what built
-  the first S8 wafers ({ref}`below <machines-skywater-published>`).[^skw-01]
-* SkyWater's maintenance-technician profile shows technicians reviewing
-  equipment schematics "to troubleshoot complex equipment, like an
-  implanter", and has captions naming "a Novellus high density plasma
-  tool" and "a SEZ etcher tool"; it corroborates in-house maintenance
-  of those tools but names no model; this index groups the SEZ tool
-  with the single-wafer spin processors, not the plasma
-  etchers.[^skw-07]
-* The S-1 names semiconductor-equipment companies, Axcelis Technologies
-  among them, only in executive and director biographies, not as
-  suppliers, and names no etch, strip or wet-bench vendor.[^sec-01]
-* The capabilities page names no process step, so every assignment of
-  a SKY130 step to a listed tool is this reference's reading, graded on
-  the step page.
-
-(machines-skywater-published)=
-## What SkyWater has published about its tools
-
-The public basis for naming SkyWater's tools is narrow, and almost all
-of it is one page.
-
-* **The *Facilities & Capabilities* page.** Under the heading "SkyWater
-  Process Integration Tools & Capabilities" SkyWater lists its tools by
-  area — "Lithography", "Photo Metrology", "Film Deposition", "Etch",
-  "Resist removal/cleans", "Diffusion, Anneal & Implant", "CMP" and
-  "Wafer Sort/Test", among others — usually with a vendor, often with a
-  model, and often with the gases, films, species, dose ranges or
-  temperatures of the tool: "Axcelis GSD Hi dose B11, BF2, P, As
-  2-180kev, 5e12 to 5e16, tilt/twist", for example, or "Furnaces are
-  all made by Aviza".[^skw-01] Some entries give only a vendor and a
-  chamber list ("AMAT PVD Metal") or an abbreviation ("PECVD TEOS, C2
-  and Producer"), and no entry names a process step.[^skw-01] The page
-  describes the Minnesota site as "Recently expanded in 2020 to enable
-  additional capacity and Cu back end of line", with "90 nm + feature
-  geometries", and its list includes tools that no step page assigns to
-  SKY130, such as "ASML 193nm twin stage scanner – sub 65nm CD" and
-  "AMAT Raider single wafer Cu plating".[^skw-01] A listed tool
-  therefore shows what is on the floor now, not what built the first S8
-  wafers at Cypress; the {ref}`public-sources inventory
-  <references-public-sources>` makes the same caveat. The step pages
-  quote the page as accessed on 2026-08-30; the tool names quoted on
-  this page were checked against it again on 2026-09-13.
-* **A maintenance-technician profile.** SkyWater's *A Day in the Life
-  of a SkyWater Maintenance Technician* has photo captions naming "a
-  Novellus high density plasma tool" and "a SEZ etcher tool" (the
-  second in a longer caption: "In the photo above, he replaces a motor
-  for a robot on a SEZ etcher tool"), and a third about troubleshooting
-  "complex equipment, like an implanter".[^skw-07]
-* **A job posting.** A *Defect Technician 2* posting, first retrieved
-  from Indeed on 2026-08-30 and no longer retrievable there, but still
-  live as a LinkedIn repost retrieved 2026-09-19, asks for "General
-  operation of semiconductor defect metrology tools:
-  SEM/AIT/KLA/SP1/EV300/1X", which the step pages read as KLA-Tencor
-  AIT (patterned-wafer) and SP1 (unpatterned-wafer) inspection.[^job-06]
-* **SEC filings.** The S-1 names suppliers of raw materials — among them
-  "GlobalWafers Singapore Pte. Ltd. (silicon wafers)", "Honeywell
-  Electronic Materials, Inc. (metal sputter targets)", "Tokyo Ohka Kogyo
-  America, Inc. (photoresist)" and "Air Products & Chemicals, Inc.,
-  Moses Lake (developer)" — and the step pages cite it for wafers,
-  targets and resist.[^sec-01] Neither the S-1 nor the 2023 annual
-  report names a process-tool vendor as a supplier;[^sec-01][^sec-02]
-  the semiconductor-equipment company names in the S-1 (Axcelis
-  Technologies, "a semiconductor capital equipment company"; Rudolph
-  Technologies, Nanometrics and Onto Innovation) appear only in executive
-  and director biographies.[^sec-01] The annual report records one change to
-  the tool set: "In 2020, we added deep-trench etching
-  capability".[^sec-02]
-
-(machines-typically-vs-skywater)=
-## "Machines typically used" and "Machines likely used at SkyWater"
-
-Every step page separates two questions, and this page keeps them
-apart.
-
-* **Machines typically used** names the tool classes, with
-  representative 130 nm-era models from any vendor, that a 200 mm fab
-  of this vintage would use for the step. These are industry
-  statements, sourced to textbooks, vendor documents, patents and
-  papers; they say nothing about SkyWater. The *Steps* column of the
-  main table below is built from these sections.
-* **Machines likely used at SkyWater** names only tools for which there
-  is public evidence at SkyWater, with the strength of that evidence.
-  The inventory's scale is: **strong**, a SkyWater or tool-vendor
-  statement; **medium**, a SkyWater job posting or an interview with a
-  named SkyWater employee; **weak**, indirect evidence
-  ({ref}`references-public-sources`, section 9). Because SkyWater's
-  list never names a step, the step pages also grade a second question
-  — whether the tool runs *this* step. The usual wording is "strong for
-  the tool; inference for the assignment" or a close variant; where a
-  page weighs several candidate tools, it grades the assignment itself
-  as medium or weak, and where it grades only the tool it writes
-  "strong for existence". An assignment graded this way is this reference's
-  reading, not a SkyWater statement. The second table below is built
-  from these sections.
-
 ## Machine classes and the steps that use them
 
 In the table:
@@ -619,12 +507,12 @@ In the table:
 * **Machine class** links to the machine-class page for the classes
   that have one, and otherwise to the category page that describes the
   class and its physics.
-* Each card's **body** ("What it does in SKY130" above) summarises the
-  step pages; the films and purposes are as the step pages describe
-  them, including the readings they mark as inferences.
-* Each card's **footer** ("Tools SkyWater lists publicly" above) quotes
-  the capabilities page exactly (sub-entries after a colon or in
-  parentheses), or the profile or posting where marked; these are the
+* Each card's **body** summarises the step pages; the films and
+  purposes are as the step pages describe them, including the readings
+  they mark as inferences.
+* Each card's **footer** quotes the capabilities page exactly
+  (sub-entries after a colon or in parentheses), or the profile or
+  posting where marked; these are the
   entries the step pages quote. A listed tool is not evidence that a
   particular step runs on it; the second table gives the step pages'
   assignments.
@@ -755,32 +643,9 @@ the page uses for the *assignment* of the step to the tool:
 
 The source and strength of the listing itself, on the inventory's
 scale, is given in the first column, after the tool's name. The tool names are as SkyWater writes them;
-"…" shortens an entry quoted in full in the main table. Steps that name
+"…" shortens an entry quoted in full on the cards above. Steps that name
 a tool only in passing (for example a metal etcher named as
 corroboration on a deposition page) are listed with that wording.
-
-### Lithography
-
-:::{table} Lithography tools SkyWater lists, one row per step-assignment grade
-:widths: 40 20 40
-
-| Tool as listed | Grade in the step pages' words | Steps |
-|---|---|---|
-| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | inference | {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
-| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | listed, not assigned | {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>` |
-| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | inference | {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>` |
-| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
-| "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" — strong[^skw-01] | not evidence for the 130 nm gate (a later addition) | {ref}`P1M <step-061>` |
-| "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track" — strong[^skw-01] | strong, or strong for existence (some pages add that which track serves which exposure tool is not public) | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use after this etch is an inference | {ref}`P1ME <step-062>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
-| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
-| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-:::
 
 ### Thermal processing
 
@@ -827,6 +692,29 @@ corroboration on a deposition page) are listed with that wording.
 | "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "TiW" | {ref}`CAPTIW1 <step-136>`, {ref}`CAPTIW2 <step-151>` |
 :::
 
+### Lithography
+
+:::{table} Lithography tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | inference | {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
+| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | listed, not assigned | {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>` |
+| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | inference | {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>` |
+| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
+| "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" — strong[^skw-01] | not evidence for the 130 nm gate (a later addition) | {ref}`P1M <step-061>` |
+| "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track" — strong[^skw-01] | strong, or strong for existence (some pages add that which track serves which exposure tool is not public) | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use after this etch is an inference | {ref}`P1ME <step-062>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
+| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
+| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+:::
+
 ### Etch
 
 :::{table} Etch tools SkyWater lists, one row per step-assignment grade
@@ -847,6 +735,28 @@ corroboration on a deposition page) are listed with that wording.
 | "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
 | "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — strong[^skw-01] | inference | {ref}`STIE <step-006>` |
 | "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — strong[^skw-01] | weak | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+:::
+
+### Ion implantation
+
+:::{table} Ion implantation tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | inference | {ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`UPRI <step-056>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | weak | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | strong for existence; unlikely, no phosphorus | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | named only as below the required dose | {ref}`P1I <step-050>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
+| "Axcelis GSD High current/energy …" — strong[^skw-01] | inference | {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
+| "Axcelis GSD High current/energy …" — strong[^skw-01] | strong for existence | {ref}`LVTPI <step-020>`, {ref}`PWDEI1 <step-031>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
+| "Axcelis GSD High current/energy …" — strong[^skw-01] | weak | {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | inference | {ref}`P1I <step-050>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | the alternative (no grade) | {ref}`UPRI <step-056>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | weak | {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
+| "Axcelis GSD High current/energy …" or "Axcelis GSD Hi dose …", either entry — strong[^skw-01] | weak (which entry would serve not stated) | {ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>` |
 :::
 
 ### Resist strip and clean
@@ -873,28 +783,6 @@ corroboration on a deposition page) are listed with that wording.
 | "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | medium | {ref}`SACETCH <step-095>` |
 | "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | strong for existence | {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>` |
 | "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | named as the post-CMP clean; no brush scrubber named | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
-:::
-
-### Ion implantation
-
-:::{table} Ion implantation tools SkyWater lists, one row per step-assignment grade
-:widths: 40 20 40
-
-| Tool as listed | Grade in the step pages' words | Steps |
-|---|---|---|
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | inference | {ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`UPRI <step-056>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | weak | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | strong for existence; unlikely, no phosphorus | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>` |
-| "Axcelis 8250 Mid current …" — strong[^skw-01] | named only as below the required dose | {ref}`P1I <step-050>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
-| "Axcelis GSD High current/energy …" — strong[^skw-01] | inference | {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
-| "Axcelis GSD High current/energy …" — strong[^skw-01] | strong for existence | {ref}`LVTPI <step-020>`, {ref}`PWDEI1 <step-031>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
-| "Axcelis GSD High current/energy …" — strong[^skw-01] | weak | {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | inference | {ref}`P1I <step-050>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | the alternative (no grade) | {ref}`UPRI <step-056>` |
-| "Axcelis GSD Hi dose …" — strong[^skw-01] | weak | {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
-| "Axcelis GSD High current/energy …" or "Axcelis GSD Hi dose …", either entry — strong[^skw-01] | weak (which entry would serve not stated) | {ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>` |
 :::
 
 ### Planarisation
@@ -945,6 +833,119 @@ Notes on the table:
   Akrion bench, and, among the etchers, TiN only on the two metal
   etchers.[^skw-01] The pages that rely on these say so; the list itself
   still names no step.
+
+(machines-reading-evidence)=
+## Reading the SkyWater evidence
+
+The index is compiled from the two machine sections that every step page
+carries, "Machines typically used" and "Machines likely used at
+SkyWater", read on all 171 pages; it adds no evidence of its own about
+SkyWater's tools. Where the step pages differ from each other or from
+the sources they quote, the differences are listed under
+{ref}`Open questions and inconsistencies <machines-inconsistencies>`
+rather than resolved here.
+
+Each machine-class page quotes SkyWater's *Facilities & Capabilities*
+entries for its class, grades them on the inventory's strength scale
+({ref}`below <machines-typically-vs-skywater>`) and adds only what is
+specific to the class. Four caveats apply to every class page and are
+not repeated there:
+
+* A listed tool shows what is on the Minnesota floor now, not what built
+  the first S8 wafers ({ref}`below <machines-skywater-published>`).[^skw-01]
+* SkyWater's maintenance-technician profile shows technicians reviewing
+  equipment schematics "to troubleshoot complex equipment, like an
+  implanter", and has captions naming "a Novellus high density plasma
+  tool" and "a SEZ etcher tool"; it corroborates in-house maintenance
+  of those tools but names no model; this index groups the SEZ tool
+  with the single-wafer spin processors, not the plasma
+  etchers.[^skw-07]
+* The S-1 names semiconductor-equipment companies, Axcelis Technologies
+  among them, only in executive and director biographies, not as
+  suppliers, and names no etch, strip or wet-bench vendor.[^sec-01]
+* The capabilities page names no process step, so every assignment of
+  a SKY130 step to a listed tool is this reference's reading, graded on
+  the step page.
+
+(machines-skywater-published)=
+## What SkyWater has published about its tools
+
+The public basis for naming SkyWater's tools is narrow, and almost all
+of it is one page.
+
+* **The *Facilities & Capabilities* page.** Under the heading "SkyWater
+  Process Integration Tools & Capabilities" SkyWater lists its tools by
+  area — "Lithography", "Photo Metrology", "Film Deposition", "Etch",
+  "Resist removal/cleans", "Diffusion, Anneal & Implant", "CMP" and
+  "Wafer Sort/Test", among others — usually with a vendor, often with a
+  model, and often with the gases, films, species, dose ranges or
+  temperatures of the tool: "Axcelis GSD Hi dose B11, BF2, P, As
+  2-180kev, 5e12 to 5e16, tilt/twist", for example, or "Furnaces are
+  all made by Aviza".[^skw-01] Some entries give only a vendor and a
+  chamber list ("AMAT PVD Metal") or an abbreviation ("PECVD TEOS, C2
+  and Producer"), and no entry names a process step.[^skw-01] The page
+  describes the Minnesota site as "Recently expanded in 2020 to enable
+  additional capacity and Cu back end of line", with "90 nm + feature
+  geometries", and its list includes tools that no step page assigns to
+  SKY130, such as "ASML 193nm twin stage scanner – sub 65nm CD" and
+  "AMAT Raider single wafer Cu plating".[^skw-01] A listed tool
+  therefore shows what is on the floor now, not what built the first S8
+  wafers at Cypress; the {ref}`public-sources inventory
+  <references-public-sources>` makes the same caveat. The step pages
+  quote the page as accessed on 2026-08-30; the tool names quoted on
+  this page were checked against it again on 2026-09-13.
+* **A maintenance-technician profile.** SkyWater's *A Day in the Life
+  of a SkyWater Maintenance Technician* has photo captions naming "a
+  Novellus high density plasma tool" and "a SEZ etcher tool" (the
+  second in a longer caption: "In the photo above, he replaces a motor
+  for a robot on a SEZ etcher tool"), and a third about troubleshooting
+  "complex equipment, like an implanter".[^skw-07]
+* **A job posting.** A *Defect Technician 2* posting, first retrieved
+  from Indeed on 2026-08-30 and no longer retrievable there, but still
+  live as a LinkedIn repost retrieved 2026-09-19, asks for "General
+  operation of semiconductor defect metrology tools:
+  SEM/AIT/KLA/SP1/EV300/1X", which the step pages read as KLA-Tencor
+  AIT (patterned-wafer) and SP1 (unpatterned-wafer) inspection.[^job-06]
+* **SEC filings.** The S-1 names suppliers of raw materials — among them
+  "GlobalWafers Singapore Pte. Ltd. (silicon wafers)", "Honeywell
+  Electronic Materials, Inc. (metal sputter targets)", "Tokyo Ohka Kogyo
+  America, Inc. (photoresist)" and "Air Products & Chemicals, Inc.,
+  Moses Lake (developer)" — and the step pages cite it for wafers,
+  targets and resist.[^sec-01] Neither the S-1 nor the 2023 annual
+  report names a process-tool vendor as a supplier;[^sec-01][^sec-02]
+  the semiconductor-equipment company names in the S-1 (Axcelis
+  Technologies, "a semiconductor capital equipment company"; Rudolph
+  Technologies, Nanometrics and Onto Innovation) appear only in executive
+  and director biographies.[^sec-01] The annual report records one change to
+  the tool set: "In 2020, we added deep-trench etching
+  capability".[^sec-02]
+
+(machines-typically-vs-skywater)=
+## "Machines typically used" and "Machines likely used at SkyWater"
+
+Every step page separates two questions, and this page keeps them
+apart.
+
+* **Machines typically used** names the tool classes, with
+  representative 130 nm-era models from any vendor, that a 200 mm fab
+  of this vintage would use for the step. These are industry
+  statements, sourced to textbooks, vendor documents, patents and
+  papers; they say nothing about SkyWater. The *Steps* column of the
+  main table above is built from these sections.
+* **Machines likely used at SkyWater** names only tools for which there
+  is public evidence at SkyWater, with the strength of that evidence.
+  The inventory's scale is: **strong**, a SkyWater or tool-vendor
+  statement; **medium**, a SkyWater job posting or an interview with a
+  named SkyWater employee; **weak**, indirect evidence
+  ({ref}`references-public-sources`, section 9). Because SkyWater's
+  list never names a step, the step pages also grade a second question
+  — whether the tool runs *this* step. The usual wording is "strong for
+  the tool; inference for the assignment" or a close variant; where a
+  page weighs several candidate tools, it grades the assignment itself
+  as medium or weak, and where it grades only the tool it writes
+  "strong for existence". An assignment graded this way is this reference's
+  reading, not a SkyWater statement. The second table above is built
+  from these sections.
 
 (machines-inconsistencies)=
 ## Open questions and inconsistencies
