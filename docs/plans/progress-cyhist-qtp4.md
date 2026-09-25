@@ -125,6 +125,18 @@ Five more records, all Fab 4 (Bloomington, MN):
 | qtp-099503 | R52D-3 | 94336 | repeats qtp-003906's origin row with different wording; gate oxide printed 50 Å here vs 55 Å in qtp-003906 |
 | qtp-002603 | R52LD-3 | 92046 | new code; dates its own origin to QTP 99075 (Apr 99) |
 
+## Sixth batch: R32D and R42D/R42HDHA reports
+
+Five more records, all Fab 4 (Bloomington, MN):
+
+| id | technology_codes | source file id | notes |
+|---|---|---|---|
+| qtp-097118 | R32D | 93646 | this is QTP 97118 itself, cited by qtp-097201 as its baseline; figures agree exactly |
+| qtp-099325 | R42HDHA | 94266 | names the technology four different ways in one document |
+| qtp-097211 | R42D | 93731 | running header drops the D ("R42 Technology") |
+| qtp-097222 | R32D | 93746 | cover prints "R3.2D" with a decimal point, elsewhere "R32D" |
+| qtp-097344 | R32D | 93801 | a mask-change qualification (tungsten plug to Hot Aluminum on Metal 2), not a new product |
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
@@ -133,11 +145,9 @@ Five more records, all Fab 4 (Bloomington, MN):
   R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
   quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
   extracted text at `tmp/extracted/<fid>.txt` (both done).
-- Group C: 17 more fetched-and-extracted file ids not yet turned into records
-  (all of `tmp/priority_order_c.txt` except the 5 codes, 14 further reports
+- Group C: 12 more fetched-and-extracted file ids not yet turned into records
+  (all of `tmp/priority_order_c.txt` except the 5 codes, 19 further reports
   handled above, and 94146 which is unusable):
-  93646 (QTP 97118 -- referenced by qtp-097201 above),
-  94266 (QTP 99325), 93731 (QTP 97211), 93746 (QTP 97222), 93801 (QTP 97344),
   93896 (QTP 97506), 93831 (QTP 97396 -- referenced by qtp-097517 above),
   93926 (QTP 98081), 94401 (QTP L000004, TSMC 0.25 µm foundry report),
   91736 (QTP 024907), 91621 (QTP 011103), 94381 (no "QTP#" prefix at all --

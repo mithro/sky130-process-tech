@@ -5361,3 +5361,236 @@ documents:
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
   notes: R52LD-3 is a technology code not previously recorded in this corpus (distinct from R52LD-5R,
     qtp-004405, this session). Its own origin is dated here as QTP 99075 (Apr 99, "New Technology R52LD-3").
+- id: qtp-097118
+  origin: cypress
+  doc_type: QTP
+  number: '97118'
+  cypress_document_number: null
+  title: 512K x 8 SRAM - R32D Technology - Fab4
+  version: '2.0'
+  date_printed: July, 2003
+  url: https://www.cypress.com/file/93646/download
+  archive_url: https://web.archive.org/web/20210415083340/https://www.cypress.com/file/93646/download
+  retrieved: '2026-09-25'
+  sha256: 13167eae0f07c8eec604d7a5dd31799ee871bc91b7ed5ddea4c46cf7cab1d40e
+  technology_codes:
+  - R32D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1048
+  - CY7C1049
+  - CY62148
+  die_ids:
+  - 7C1048A
+  - 7C1049A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Al-Cu/TiW; Metal 2: TiW/Al-Cu/TiW'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32D
+    transistors: 26,239,686
+    gates: 6,500,000
+  qualification_history:
+  - number: '97118'
+    description: 512K x 8 SRAM - R32D Technology - Fab4
+    date: null
+  quotes:
+  - text: 512K x 8 SRAM - R32D Technology - Fab4
+    location: p.1, cover title
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32D'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This is QTP 97118 itself, already cited by qtp-097201 (this session) as its reliability baseline
+    ("QTP 97118, 512K x 8 SRAM, R32D Technology, Fab 4 qualification"); figures agree exactly (2 metal
+    layers, 0.5 µm, 145 Å gate oxide, 26,239,686 transistors both places). This report's own running header
+    drops the "D" ("R32 Technology") on every interior page while its cover title keeps "R32D" -- the same
+    pattern as qtp-097201.
+- id: qtp-099325
+  origin: cypress
+  doc_type: QTP
+  number: '99325'
+  cypress_document_number: null
+  title: 5V Synchronous FIFOs, R42HDHA Technology, Fab 4
+  version: '1.0'
+  date_printed: January, 2000
+  url: https://www.cypress.com/file/94266/download
+  archive_url: https://web.archive.org/web/20210507133537/https://www.cypress.com/file/94266/download
+  retrieved: '2026-09-25'
+  sha256: fe7729cdb1f87108df3e5a41c58a24e14bb7f2125ce548a735496203b35c1ca4
+  technology_codes:
+  - R42HDHA
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C43683
+  - CY7C43684
+  - CY7C43686
+  die_ids:
+  - 7C43684A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al -5%Cu - / 1200Å TiW; Metal 2: 500Å TiW / 6000Å Al -5%Cu
+      / 1200Å TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal 0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN (fab 4)
+    die_fab_line_id: Cypress Semiconductor-Bloomington, MN / R42HDHA
+    transistors: 6417696
+    gates: 163,119
+  qualification_history:
+  - number: '99325'
+    description: To qualify 7C43684, 1 Meg Sync. FIFO, R42HDHA Technology, Fab 4.
+    date: null
+  quotes:
+  - text: To qualify 7C43684, 1 Meg Sync. FIFO, R42HDHA Technology, Fab 4.
+    location: p.6, Product Description, Qualification Purpose
+  - text: 16K x 36 x 2, Sync FIFO, RAM42HDHA Technology
+    location: p.6, Product Description, Device Description
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R42D w/ Hot Al
+    location: p.6, section heading
+  notes: This one document names the technology four different ways -- the cover title and running header
+    say "R42HDHA", the Device Description field says "RAM42HDHA" (with a RAM prefix), the process-description
+    section header says "R42D w/ Hot Al", and the Die Fab Line ID says plain "R42HDHA" again -- all quoted
+    verbatim rather than reconciled. Process figures (2 metal layers, 0.42 µm, 110 Å gate oxide) match this
+    corpus's other R42HD-family reports.
+- id: qtp-097211
+  origin: cypress
+  doc_type: QTP
+  number: '97211'
+  cypress_document_number: null
+  title: 1 Meg SRAM, R42D Technology, Fab 4 Qualification
+  version: '2.0'
+  date_printed: July, 2003
+  url: https://www.cypress.com/file/93731/download
+  archive_url: https://web.archive.org/web/20210517162842/https://www.cypress.com/file/93731/download
+  retrieved: '2026-09-25'
+  sha256: 09a9f64ac071276fb1c96bde292af957325f8aa711094e16224559ce936266ca
+  technology_codes:
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1021V33
+  die_ids:
+  - 7C1321C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiW,AlCu,TiW/500Å,6000Å,300Å; Metal 2: TiW,AlCu,TiW/500Å,8000Å,300Å'
+    passivation: 7,000 Å TEOS + 6,000 Å SiN
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Single Poly, Double Metal /0.35µm
+    gate_oxide: SiO2 / 70 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42D
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '97211'
+    description: 1 Meg SRAM, R42D Technology, Fab 4 Qualification
+    date: null
+  quotes:
+  - text: 1 Meg SRAM, R42D Technology, Fab 4 Qualification
+    location: p.1, cover title
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42D'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Single Poly, Double Metal /0.35µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: Running header prints "R42 Technology" (dropping the D) while the cover title, device description
+    and process-description block all say "R42D" -- the same drop-the-suffix pattern seen elsewhere in this
+    corpus's running headers. Figures (0.35 µm, 70 Å gate oxide, 2 metal layers) match this corpus's other
+    R42D reports.
+- id: qtp-097222
+  origin: cypress
+  doc_type: QTP
+  number: '97222'
+  cypress_document_number: null
+  title: Asynchronous FIFOs - R3.2D Technology
+  version: '1.0'
+  date_printed: December, 1997
+  url: https://www.cypress.com/file/93746/download
+  archive_url: https://web.archive.org/web/20210731180045/https://www.cypress.com/file/93746/download
+  retrieved: '2026-09-25'
+  sha256: d55cc68e4e940d33eb80f261f5b374518c7cb1e0e2981162b449397e98a217bf
+  technology_codes:
+  - R32D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C466A
+  - CY7C464A
+  - CY7C462A
+  - CY7C460A
+  die_ids:
+  - 7C466B
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Al-Cu/TiW; Metal 2: TiW/Al-Cu/TiW'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32D
+    transistors: 4,000,000
+    gates: 125,000
+  qualification_history:
+  - number: '97222'
+    description: Asynchronous FIFOs - R3.2D Technology
+    date: null
+  quotes:
+  - text: ASYNCHRONOUS FIFOs - R3.2D TECHNOLOGY
+    location: p.1, cover title
+  - text: Die Fab Line ID/Wafer Process ID
+    location: p.2, Technology/Fab Process Description (field label; printed without a trailing colon here)
+  - text: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: The cover page prints the technology code with a decimal point, "R3.2D", where every other mention
+    in this document (and every other report in this corpus) prints "R32D" without one -- quoted verbatim
+    as a printed variant, not corrected or read as evidence of how the code is structured. Process figures
+    match qtp-097118 and qtp-097201 (this session) exactly.
+- id: qtp-097344
+  origin: cypress
+  doc_type: QTP
+  number: '97344'
+  cypress_document_number: null
+  title: R32D Technology - Metal 2 Hot Aluminum
+  version: '1.0'
+  date_printed: March, 1998
+  url: https://www.cypress.com/file/93801/download
+  archive_url: https://web.archive.org/web/20211025140555/https://www.cypress.com/file/93801/download
+  retrieved: '2026-09-25'
+  sha256: 7b4534df51c5cba0f92bc047d8646a390ab17f2ed51ec8838a40f85518c77cbe
+  technology_codes:
+  - R32D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1049
+  die_ids:
+  - 7C1049A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Al-Cu/TiW; Metal 2: TiW/Al-Cu/TiW'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32D
+    transistors: 26,239,686
+    gates: 6,500,000
+  qualification_history:
+  - number: '97344'
+    description: Replace Tungsten plug with Hot Aluminum on Metal 2
+    date: null
+  quotes:
+  - text: Replace Tungsten plug with Hot Aluminum on Metal 2
+    location: p.2, Product Description, Qualification Purpose
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32D'
+    location: p.2, Technology/Fab Process Description
+  notes: This qualification is for a mask/process change (replacing a tungsten plug with Hot Aluminum on
+    Metal 2) rather than a new product; its process-description figures otherwise match qtp-097118's
+    exactly, including the same transistor and gate counts for the same die (CY7C1049).
