@@ -11,7 +11,7 @@ caption: >-
   Before, the bare gate film; after, resist everywhere except a window over the resistor body,
   the complement of the RPM island. That a reverse-tone reticle of the `rpm` layer makes this
   window is the page's inference; the PDK's mask table lists no reverse mask.[^pdk-05] The window
-  is drawn the same width as the RPM island. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and
+  is drawn the same width as the RPM island. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and
   channel implants made earlier are not drawn. Not to scale.
 arrow:
   title: "RRPM, step 052"
@@ -24,12 +24,17 @@ panels:
     dim_layers: [liner]
     labels:
       poly:
-        title: "Gate film"
-        note: "n-type outside the resistor body"
-        basis: public
+        title: "Undoped gate film"
+        note: "the future resistor body, kept from the gate implant"
+        basis: inferred
   - state_after: "052"
     title: "After: resist everywhere but a window over the resistor body"
     hide_layers: [nwell, pwell, chn, chp]
     hide_labels: [fox]
     dim_layers: [liner]
+    labels:
+      poly:
+        title: "Undoped gate film"
+        note: "the future resistor body, kept from the gate implant"
+        basis: inferred
     highlight: {where: [[0, 100], [168, 268]]}

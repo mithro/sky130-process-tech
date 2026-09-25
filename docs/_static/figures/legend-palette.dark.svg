@@ -37,11 +37,11 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="68.0" y="146.9" class="t-label-title">Deep N-well</text>
 <text x="68.0" y="163.9" class="t-label-note muted">horizontal lines</text>
 <polygon class="mat m-sd-n" data-layer="sd-n" points="12.0,183.0 58.0,183.0 58.0,202.0 12.0,202.0"/>
-<text x="68.0" y="187.9" class="t-label-title">N+ source/drain, n-tip</text>
+<text x="68.0" y="187.9" class="t-label-title">N+ source/drain, n-tip, N+ gate poly</text>
 <text x="68.0" y="204.9" class="t-label-note muted">plain colour, no pattern</text>
 <polygon class="mat m-sd-p" data-layer="sd-p" points="12.0,224.0 58.0,224.0 58.0,243.0 12.0,243.0"/>
 <polygon fill="url(#p-plus)" points="12.0,224.0 58.0,224.0 58.0,243.0 12.0,243.0"/>
-<text x="68.0" y="228.9" class="t-label-title">P+ source/drain</text>
+<text x="68.0" y="228.9" class="t-label-title">P+ source/drain, p-type poly resistor body</text>
 <text x="68.0" y="245.9" class="t-label-note muted">small crosses</text>
 <polygon class="mat m-implant" data-layer="implant" points="12.0,273.5 58.0,273.5 58.0,292.5 12.0,292.5"/>
 <polygon fill="url(#p-vlines-ink)" points="12.0,273.5 58.0,273.5 58.0,292.5 12.0,292.5"/>

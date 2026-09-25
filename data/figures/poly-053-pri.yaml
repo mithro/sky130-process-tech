@@ -3,27 +3,37 @@ kind: xsection
 page: docs/steps/053-pri.md
 series: series-poly.yaml
 crop_depth: 72
-no_drawn_change: true
 alt: >-
-  One cross-section of the wafer. Resist covers a continuous film everywhere except one window
-  over the middle of the oxide-filled trench. Arrows come down on the whole slice; only those in
-  the window reach the film. The drawing is the same as the state before the step.
+  Two cross-sections of the wafer, one above the other. Before the step resist covers a film
+  everywhere except one window over the middle of the oxide-filled trench; the film under the
+  resist is already drawn in the colour of one doping type and the film in the window is not.
+  After it arrows come down on the whole slice, and the film in the window is drawn in a second
+  colour through its whole thickness.
 caption: >-
-  At PRI a p-type dose goes through the RRPM window into the resistor body, the film this slice
-  reads as a 300 Ω/sq P+ poly resistor (`res_high_po`);[^pdk-07] the resist keeps it off the n⁺
-  gate film. The doping is not drawn, because its depth in the film is not public, so the
-  drawing is the same as before the step. Species, energy, dose and tilt are not public, and
-  whether the resistor doping is one implant or several is not stated; the arrows are drawn
-  vertical. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the
-  wells and channel implants made earlier are not drawn. Not to scale.
+  Before, the RRPM window over the still-undoped resistor body in an n-type gate film; after, the
+  body p-type, the film this slice reads as a 300 Ω/sq P+ poly resistor (`res_high_po`),[^pdk-07]
+  while the resist keeps the dose off the n⁺ gate film. The colour fills the whole thickness of
+  the body because it marks the type of the doping; its depth in the film is not public, and
+  whether the resistor doping is one implant or several is not stated. Species, energy, dose and
+  tilt are not public; the arrows are drawn vertical. The field oxide (the oxide-filled trench in
+  the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel
+  implants made earlier are not drawn. Not to scale.
+arrow:
+  title: "PRI, step 053"
+  note: "A p-type dose goes through the window into the resistor body; the resist stops it everywhere else."
 panels:
-  - state_after: "053"
-    title: "State at this step (no drawn change)"
+  - state_after: "052"
+    title: "Before: the RRPM window over the resistor body (step 052)"
     hide_layers: [nwell, pwell, chn, chp]
     hide_labels: [fox]
     dim_layers: [liner]
     labels:
       poly:
-        title: "Gate film"
-        note: "n-type, and p-type in the window; the doping is not drawn"
-        basis: public
+        title: "Undoped gate film"
+        note: "the resistor body, kept from the gate implant"
+        basis: inferred
+  - state_after: "053"
+    title: "After: the resistor body p-type"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox, poly]
+    dim_layers: [liner]

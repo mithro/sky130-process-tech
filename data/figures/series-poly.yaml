@@ -31,10 +31,11 @@
 # here. The RPM island and the RRPM window (x 100-168) are drawn wider than the body,
 # because `rpm` encloses the resistor (rule rpm.3, cited on the pages).
 #
-# Doping of the gate film. The generator draws a doped region only in single-crystal
-# silicon, and none of P1I, PRI or UPRI has a public depth, so the three implants into the
-# film (steps 050, 053, 056) change no geometry and their figures are one panel each, with
-# the beam; the captions say so.
+# Doping of the gate film. P1I (step 050) and PRI (step 053) are drawn as doped overlays
+# confined to the gate film (`dope` with `host: poly`): the n-type gate film in the N+
+# source/drain colour and the p-type resistor body in the P+ one. An overlay fills the whole
+# thickness of the film, because it marks the type of the doping, not a depth profile, which
+# is not public; the captions say so. UPRI (step 056) reaches nothing in this slice.
 #
 # Thicknesses drawn: gate oxide 5 u, gate film 20 u, nitride cap 10 u, oxide cap 8 u,
 # implant-mask resist 38 u, gate-mask resist 30 u (P1M infers a thinner resist than the
@@ -383,6 +384,16 @@ ops:
       note: "RPM, step 049; over the future resistor body"
       basis: inferred
   - step: "050"
+    op: dope
+    id: polyn
+    material: sd-n
+    host: poly
+    where_open: rpmres
+    label:
+      title: "n-type gate film"
+      note: "gate implant, step 050; the PDK's \"N+ doped gate poly\""
+      basis: public
+  - step: "050"
     op: ions
     where_open: rpmres
     tilt_deg: 0
@@ -406,9 +417,20 @@ ops:
       note: "RRPM, step 052; open over the resistor body"
       basis: inferred
   - step: "053"
+    op: dope
+    id: polyp
+    material: sd-p
+    host: poly
+    where_open: rrpmres
+    label:
+      title: "p-type resistor body"
+      note: "resistor implant, step 053; a P+ poly resistor"
+      basis: public
+  - step: "053"
     op: ions
     where_open: rrpmres
     tilt_deg: 0
+    label_x: 60
     label:
       title: "PRI implant"
       note: "p-type; species, energy and dose are not public"

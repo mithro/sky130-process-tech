@@ -571,9 +571,14 @@ class XSection:
 
     # ---- doped overlays
     def overlay_band(self, ov, i) -> tuple[float, float] | None:
-        """(bottom, top) of a doped overlay in column i, clipped to the silicon."""
+        """(bottom, top) of a doped overlay in column i, clipped to the silicon, or, with
+        `host:`, to that deposited film (the whole of its thickness: an overlay in a film
+        marks the type of the doping, not a depth profile)."""
         if not any(a <= self.x(i) <= b for a, b in (ov.get("where") or [[0, DRAW_W]])):
             return None
+        if ov.get("host"):
+            s = self.seg(i, ov["host"])
+            return (s[1], s[2]) if s and s[2] - s[1] > 1e-6 else None
         st = self.silicon_top(i)
         if st is None:
             return None
@@ -648,12 +653,27 @@ class Label:
         self.height = TY["label-title"]["line"] + TY["label-note"]["line"] * (len(self.lines) - 1)
 
 
+def _own_columns(xs: XSection, lid: str, pres: list[int]) -> list[int]:
+    """A film that carries doped overlays (`dope` with `host:`) is drawn as the overlay
+    where it is doped, so its own dot belongs where no overlay covers it, if anywhere does."""
+    hosted = [ov for ov in xs.overlays if ov.get("host") == lid]
+    if not hosted:
+        return pres
+
+    def covered(i):
+        s = xs.seg(i, lid)
+        m = (s[1] + s[2]) / 2
+        return any((b := xs.overlay_band(ov, i)) and b[0] <= m <= b[1] for ov in hosted)
+    return [i for i in pres if not covered(i)] or pres
+
+
 def choose_anchor(xs: XSection, lid: str, prefer: str | None, floor_y: float | None = None):
     """Return (route, x, y_lo, y_hi, crossings, x_min) in drawing coordinates (y up).
 
     ``x_min`` is how far left the anchor dot may be staggered inside its own layer, which is
     what keeps the dots of two thin films that sit a few units apart distinguishable."""
     pres = xs.present(lid)
+    pres = _own_columns(xs, lid, pres)
     i0, i1 = xs.runs(pres)[-1]
     inset = min(4.0, (i1 - i0) * xs.dx / 2)
     ir = xs.idx(xs.x(i1) - inset)
@@ -795,7 +815,7 @@ def _plan_over(xs: XSection, lid: str, hidden: set, ion_xs, ion_tail, ion_cx, to
     materials: the column of the layer with the least material above it, clear of walls,
     ion arrows and the risers of labels above the drawing.  Returns (x, dot y, over height)."""
     ov = xs.layers[lid] if xs.layers[lid].get("op") == "dope" else None
-    cols = xs.overlay_columns(ov) if ov else xs.present(lid)
+    cols = xs.overlay_columns(ov) if ov else _own_columns(xs, lid, xs.present(lid))
     if not cols:
         return None
     colset = set(cols)
@@ -2248,6 +2268,24 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
             elif sa > max(steps):
                 errs.append(f"state_after {sa!r} is beyond the last step of the series "
                             f"({max(steps)})")
+        # A doped overlay in a film (`host:`) needs that film to exist where it is made.
+        made: set[str] = set()
+        host_states = None
+        for op in series["ops"]:
+            if op["op"] == "dope" and op.get("host"):
+                if op["host"] not in made:
+                    errs.append(f"operation dope at step {op.get('step')}: host {op['host']!r} names no "
+                                "film deposited earlier in this series")
+                else:
+                    if host_states is None:
+                        host_states = series_states(series)[0]
+                    st_h = host_states.get(str(op.get("step")))
+                    lay = st_h.layers.get(op.get("id")) if st_h else None
+                    if lay is not None and not st_h.overlay_columns(lay):
+                        errs.append(f"operation dope at step {op.get('step')}: host "
+                                    f"{op['host']!r} is absent everywhere the overlay is made")
+            if op["op"] in ("deposit", "react") and op.get("id"):
+                made.add(op["id"])
         # A faded layer carries no label, so the caption has to tell the reader what the
         # quiet shapes are, by name, as it must for a hidden layer.
         titles = {"sub": (series["substrate"].get("label") or {}).get("title", "")}
@@ -2352,7 +2390,7 @@ OPS = {
     "planarise": {"to", "stop_on"},
     "react": {"id", "material", "consumes", "under", "t", "where", "label", "route"},
     "dope": {"id", "material", "where", "from_surface", "thickness", "follow", "y_top",
-             "y_bot", "anchor_x", "anchor_y", "label", "route", "z"},
+             "y_bot", "anchor_x", "anchor_y", "label", "route", "z", "host"},
     "ions": {"where", "tilt_deg", "pitch", "label", "label_x"},
     "anneal": set(),
 }
@@ -3021,11 +3059,31 @@ def selftest() -> int:
             (lambda r: r["ops"][0].update(colour="blue"), "unknown field"),
             (lambda r: r["ops"][0].update(only_on=["unobtainium"]), "unknown material or group"),
             (lambda r: r["ops"][0].update(where_open="nosuchlayer"), "where_open names no layer"),
-            (lambda r: r["ops"][0].update(step="3"), "is not three digits")):
+            (lambda r: r["ops"][0].update(step="3"), "is not three digits"),
+            (lambda r: r["ops"].append({"step": "003", "op": "dope", "id": "pn", "material": "sd-n",
+                                        "host": "nosuchfilm"}), "names no film deposited earlier"),
+            (lambda r: r["ops"].append({"step": "003", "op": "dope", "id": "pn", "material": "sd-n",
+                                        "host": "padox", "where": [[300, 400]]}),
+             "is absent everywhere the overlay is made")):
         ser = json.loads(json.dumps(_SERIES_OK))
         mutate(ser)
         if not any(needle in e for e in lint_spec(_spec_ok(), ser)):
             print(f"SELFTEST FAIL: {needle!r} was not reported")
+            bad += 1
+    # A doped overlay in a film (host:) fills that film, and nothing else, and follows it when a
+    # later etch removes part of the film.
+    ser_h = json.loads(json.dumps(_SERIES_OK))
+    ser_h["ops"] += [
+        {"step": "003", "op": "dope", "id": "pn", "material": "sd-n", "host": "padox", "where": [[0, 100]]},
+        {"step": "004", "op": "etch", "materials": ["oxide-thermal"], "where": [[50, 268]]}]
+    st_h = series_states(ser_h)[0]
+    for key, xmax in (("003", 100), ("004", 50)):
+        xs_h = st_h[key]
+        ov_h = xs_h.layers["pn"]
+        cols_h = xs_h.overlay_columns(ov_h)
+        if (not cols_h or max(xs_h.x(i) for i in cols_h) > xmax
+                or any(xs_h.overlay_band(ov_h, i) != tuple(xs_h.seg(i, "padox")[1:]) for i in cols_h)):
+            print(f"SELFTEST FAIL: a hosted overlay does not fill its film only (state {key})")
             bad += 1
     # A bad y expression is a lint line, not a traceback.
     sp = _spec_ok()

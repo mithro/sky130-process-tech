@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-poly-051-p1is
 
-Before, the implanted resist island of RPM; after, the island gone and the gate film bare everywhere, the resistor body still undoped and the rest carrying the gate implant (neither doping is drawn). The thin chemical oxide the clean leaves on the film is not drawn. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+Before, the implanted resist island of RPM; after, the island gone and the gate film bare everywhere, the resistor body still undoped and the rest of the film n-type. The thin chemical oxide the clean leaves on the film is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. In the upper panel the undoped film under the island is not labelled, because its leader would have to rise through the resist. In the upper panel the undoped film under the island is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
 :::

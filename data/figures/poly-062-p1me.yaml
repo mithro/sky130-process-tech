@@ -16,7 +16,7 @@ caption: >-
   this step. Whether the resist stays on through the poly etch or the caps serve as a hard mask
   after an early strip is not public, and the drawing shows only the result. The walls are drawn
   vertical, and the gate oxide is drawn intact; how much of it the over-etch removes is not
-  public. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells
+  public. The colours of the gate film mark the type of its doping, not a depth profile. The p-type resistor body is not labelled in the upper panel, because its leader would have to rise through the resist line, and in the lower panel the n-type gate film is named by the "Gate" callout rather than a label of its own. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells
   and channel implants made earlier are not drawn. Not to scale.
 arrow:
   title: "P1ME, step 062"
@@ -25,17 +25,12 @@ panels:
   - state_after: "061"
     title: "Before: the P1M resist lines on the gate stack (step 061)"
     hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox]
+    hide_labels: [fox, poly, polyp]
     dim_layers: [liner]
-    labels:
-      poly:
-        title: "Gate film"
-        note: "n-type gate film, p-type resistor body"
-        basis: public
   - state_after: "062"
     title: "After: a gate stack on the NMOS and a resistor stack on the field"
     hide_layers: [nwell, pwell, chn, chp]
-    hide_labels: [fox]
+    hide_labels: [fox, poly, polyn]
     dim_layers: [liner]
     highlight: {where: [[0, 268]]}
     callouts:

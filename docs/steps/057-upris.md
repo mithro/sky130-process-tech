@@ -27,7 +27,7 @@ changes what "clean" has to mean.
 :width: 560px
 :name: fig-poly-057-upris
 
-Before, the URPM resist over the whole slice; after, the resist gone and the gate film bare and clean, ready for the cap. The chemical oxide the clean leaves on the film, which the page infers is kept, is not drawn. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+Before, the URPM resist over the whole slice; after, the resist gone and the gate film bare and clean, ready for the cap. The chemical oxide the clean leaves on the film, which the page infers is kept, is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
 :::
 
 
