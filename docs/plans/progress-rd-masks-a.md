@@ -341,3 +341,35 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   (52, mostly one quotation); the Polarity and tone cell (48; not in the body). Before → after:
   paragraphs 10 → 0, items 2 → 0, sentences 16 → 3, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 8. ldntm — done
+
+* **Rules applied.** R-INTRO (208 → 61 words; first sentence split at its colon; "It is an implant block
+  mask … a mask of contrasts: …" moved to the top of `## What the mask defines`, "It" → "The mask", its
+  colon a full stop and its two contrasts two sentences); R-CAPTION; R-PARA, R-SENTENCE; R-LIST (the six
+  `ldntm.c*` checks; the other Error Messages checks; the two parts of the rule table; the tip criteria
+  that name no mask); R-RELATED (`TIPRTAD` joins the step bullet, as on hvntm); R-H3 (Exposure class,
+  Mask errors, Resist and tone ← "Resist", Resist edges and shadowing, Overlay and alignment ← "Overlay",
+  Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS as a list** (as on hvntm): the design-rules paragraph sorts the tip criteria into those that
+  name no mask and those that name the HV tip and the other tip masks; a single parameter table would
+  lose that grouping, so the first group is a list under the base's lead-in and the second stays a
+  sentence.
+* **Hedge repeated on splits:** "On the step pages' readings" on the NSDM clause (the hvi/P1M sentence
+  split at its semicolon) and on the resist-removal clause of Pattern transfer (split after the LDBHI
+  clause); both halves were inside that hedge in the base.
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers`): `pdk-06` (Table F2b `-` / `+` sentence split),
+  `pdk-errors` (*Error Messages* description; the two list lead-ins carry the base's two markers),
+  `pdk-03` (lead-in of the tip-criteria list; the base marker stays on the sentence it ended). The two
+  repeated "On the step pages' readings" are not counted by the tool.
+* **Marker coverage.** Flags read: lists under lead-in markers; clauses with no marker of their own in
+  the base.
+* **Over the caps after the pass:** "On our reading the checks confine the layer … (inference from the
+  check wording).[^pdk-errors][^pdk-06][^pdk-periph]" (55: two hedges, "On our reading" at the start and
+  "(inference …)" at the end, each covering the whole; a split would leave each half with one of them);
+  "It lies between `230` …" (46); the Polarity and tone cell (33; not in the body). Before → after:
+  paragraphs 10 → 0, items 1 → 0, sentences 14 → 2, cells 1 → 1.
+* **Content problems for the owner:** none found.

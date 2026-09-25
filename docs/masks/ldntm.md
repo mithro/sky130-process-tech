@@ -2,23 +2,12 @@
 # LDNTM — Lightly Doped N-tip
 
 The lightly doped N-tip mask is the {term}`reticle` of the third and last
-tip implant of SKY130: on the {ref}`LDNTM <step-071>` page's reading, the
+tip implant of SKY130. On the {ref}`LDNTM <step-071>` page's reading, the
 resist printed through it at step 71 exposes the {term}`SONOS` memory
 transistors and covers everything else, the lightly doped arsenic tip
 {ref}`LDASTI <step-072>` and the boron {term}`halo` {ref}`LDBHI <step-073>`
 pass through the same openings, and the resist is stripped at
-{ref}`LDASTIS <step-074>`. It is an implant {term}`block mask` for the
-memory module, and in the public record it is a mask of contrasts: the
-process-steps sheet records an `LDNTM` plate on all eight MPW runs, while
-the public renders of those runs find its drawn layer on one die of
-MPW-1 and one of MPW-5 and on no die of the other six, and the PDK's
-periphery rules have no rule set for it while its Error Messages page
-checks it as a core layer. This page gathers what public sources say about
-the mask itself — its PDK entry and layers, the plates the process-steps
-sheet records for the MPW runs, what the public renders of those runs
-show, the lithography it needs and the rules that constrain it. How the
-step is performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+{ref}`LDASTIS <step-074>`.
 
 | | LDNTM — Lightly Doped N-tip |
 |---|---|
@@ -35,7 +24,21 @@ step is performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 1, 0, 0, 0, 1, 0, 0, 0[^mask-renders] |
 | Steps that use the pattern | 4 steps; see {ref}`Steps that use this mask <mask-ldntm-steps>` |
 
+:::{seealso}
+How the
+step is performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is an implant {term}`block mask` for the
+memory module, and in the public record it is a mask of contrasts. The
+process-steps sheet records an `LDNTM` plate on all eight MPW runs, while
+the public renders of those runs find its drawn layer on one die of
+MPW-1 and one of MPW-5 and on no die of the other six. The PDK's
+periphery rules have no rule set for it while its Error Messages page
+checks it as a core layer.
 
 `masks.csv` lists "Lightly Doped N-tip, LDNTM" as used in SKY130, and
 `gds_layers.csv` describes the drawn layer `ldntm` as "N-tip implant on
@@ -43,13 +46,17 @@ SONOS devices" and the mask-level layer `cldntm` as "Lightly-doped N-tip
 implant mask".[^pdk-05][^pdk-06] The devices are the memory cells: "The
 SKY130 process currently supports two SONOS flash memory cells", an
 "original cell" and a "star" cell about 25 % smaller, and the device page
-describes the "2-T SONOS memory cell".[^pdk-07] The {ref}`LDNTM <step-071>`
+describes the "2-T SONOS memory cell".[^pdk-07]
+
+The {ref}`LDNTM <step-071>`
 page reads the lighter tip as serving a transistor whose junctions sit at
 several volts during programme, erase and inhibit, where a heavily doped,
-abrupt tip would raise the field at the gate edge; the lightly doped
+abrupt tip would raise the field at the gate edge. The lightly doped
 drain of Ogura et al. is the classical answer to that
 field,[^ogura-1980] and a Micron patent masks a second, lighter LDD onto
-selected transistors to cut junction leakage.[^pat-ldd-micron] White,
+selected transistors to cut junction leakage.[^pat-ldd-micron]
+
+White,
 Adams and Bu review scaled SONOS memory,[^pap-01] and Eitan et al.'s
 NROM, a localised-trapping two-bit cell, is the step page's example of a
 cell that exploits the drain-edge injection this one
@@ -60,8 +67,10 @@ The PDK's mask generation table, Table F2b, marks the `LDNTM` column `C`
 `nmos_core NV` rows, both flash pass-gate ("Flash npass") rows and the
 "NV SONOS Diode".[^pdk-06] It marks `-`, "Layer not created for the
 device", in 39 rows, among them the 1.8 V NMOS and PMOS, the `pmos_core`
-rows, the varactors and every 110 Å row other than the flash pass gates,
-and `+`, "Layer allowed to overlap", in the remaining 32.[^pdk-06] On our
+rows, the varactors and every 110 Å row other than the flash pass gates.[^pdk-06]
+It marks `+`, "Layer allowed to overlap", in the remaining 32.[^pdk-06]
+
+On our
 reading the created shapes follow the non-volatile memory devices,
 including a 110 Å pass gate and a core NMOS marked "NV", not the SONOS transistor alone; the table does not say what
 the implant through the openings does. The four SONOS rows and the two
@@ -74,7 +83,7 @@ step pages' readings the tunnel window is opened at
 {ref}`TUNM <step-035>`, the channel is set by {ref}`PTSI <step-037>` and
 {ref}`DEPI <step-038>`, the {term}`ONO` stack is patterned at
 {ref}`ONOM <step-041>`, and the tip self-aligns to the gates of the
-{ref}`P1M <mask-p1m>` pattern; the source and drain are implanted later
+{ref}`P1M <mask-p1m>` pattern. On the step pages' readings the source and drain are implanted later
 through {ref}`NSDM <step-085>`. Codella and Ogura's halo, which the
 {ref}`LDBHI <step-073>` implant provides for these transistors, is the
 same pairing of tip and pocket as in the logic flow.[^codella-1985]
@@ -87,29 +96,45 @@ same pairing of tip and pocket as in the logic flow.[^codella-1985]
 same layer number as the drawn `ldntm` at 11:44, and no `drawing`,
 `mask add`, `mask drop` or `waffle drop` purpose.[^pdk-06] The pairing of
 the mask with `ldntm` rests on those names and descriptions, and the PDK
-publishes no operation from the drawn layer to the plate. Rule x.15a
+publishes no operation from the drawn layer to the plate.
+
+Rule x.15a
 confines "Drawn compatible, mask, and waffle-drop layers" to test
 modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design draws
 `ldntm` (our reading of x.15a). The periphery rules have no `ldntm` rule
 set, as the {ref}`LDNTM <step-071>` page notes.[^pdk-periph]
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", does list checks on the layer, all with core
-names: `ldntm.c1`, "0.7 min. width of ldntmCore"; `ldntm.c2`, "0.7 min.
-spacing/notch of ldntmCore"; `ldntm.c3`, "enclosure of ndiff by ldntm
-must be more than  0.180"; `ldntm.c4`, "0.125 min. enclosure of nFet by
-ldntmCore"; `ldntm.c5`, "ldntm not allowed outside areaid.ce"; and
-`ldntm.c6`, "0.18 min. spacing of ldntmCoreExempt & pdiff".[^pdk-errors]
-It also has two `cldntm.nikon` checks ("LDNTMmk in the nikon cross has the
-wrong polarity" and "LDNTMmk is missing from the nikon cross in the
-layout"), module-cut checks "0.35 min. spacing of moduleCutAREA &
-q0ldntmnotBuildSpace" (x.12a) and "0.35 min. enclosure of
-q0ldntmnotBuildSpace by moduleCutAREA" (x.12b), "ldntm drawn layer cannot
-straddle areaid:ModuleCut" (scribe.7), an x.15a message for `LDNTMmk`,
-and, among the `NTM` checks, `cntm.7`, "ldntm must be enclosed by
-CLNTM".[^pdk-errors] The page defines none of `ldntmCore`,
+criteria for GDS data".[^pdk-errors] It does list checks on the layer, all with core
+names:[^pdk-errors]
+
+* `ldntm.c1`, "0.7 min. width of ldntmCore"
+* `ldntm.c2`, "0.7 min.
+  spacing/notch of ldntmCore"
+* `ldntm.c3`, "enclosure of ndiff by ldntm
+  must be more than  0.180"
+* `ldntm.c4`, "0.125 min. enclosure of nFet by
+  ldntmCore"
+* `ldntm.c5`, "ldntm not allowed outside areaid.ce"
+* `ldntm.c6`, "0.18 min. spacing of ldntmCoreExempt & pdiff"
+
+It also has:[^pdk-errors]
+
+* two `cldntm.nikon` checks ("LDNTMmk in the nikon cross has the
+  wrong polarity" and "LDNTMmk is missing from the nikon cross in the
+  layout")
+* module-cut checks "0.35 min. spacing of moduleCutAREA &
+  q0ldntmnotBuildSpace" (x.12a) and "0.35 min. enclosure of
+  q0ldntmnotBuildSpace by moduleCutAREA" (x.12b)
+* "ldntm drawn layer cannot
+  straddle areaid:ModuleCut" (scribe.7)
+* an x.15a message for `LDNTMmk`
+* among the `NTM` checks, `cntm.7`, "ldntm must be enclosed by
+  CLNTM"
+
+The page defines none of `ldntmCore`,
 `ldntmCoreExempt` or `CLNTM`. On our reading the checks confine the layer
 to the core identifier `areaid.ce`, "Memory (SRAM) core cell identifier",
 as the tunnel rule tunm.8 confines `tunm` ("tunm must be enclosed by
@@ -133,7 +158,9 @@ The layer is drawn on one die of MPW-1 (frame A4, 4 shapes) and one die of
 MPW-5 (frame D7, 42 shapes), and on no die of MPW-2, MPW-3, MPW-4, MPW-6,
 MPW-7 or MPW-8.[^mask-renders] The
 {ref}`masks index <masks-renders>` records the same two frames for `tunm`,
-the layer from which the site renders `TUNM` and `ONOM`. The site states
+the layer from which the site renders `TUNM` and `ONOM`.
+
+The site states
 the limits of its images: "These are renders of *drawn* data, not
 photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
 features the fab adds are not modelled. Empty images are real results -
@@ -165,7 +192,9 @@ the reticle set is the heading of the run's columns in the tab
 * **Plates on runs without drawn shapes.** The sheet records an `LDNTM`
   plate on MPW-2, MPW-3, MPW-4, MPW-6, MPW-7 and MPW-8, on which no
   rendered die draws `ldntm`, as it does for `TUNM` and `ONOM`
-  ({ref}`masks-renders`).[^steps-sheet][^mask-renders] Because the
+  ({ref}`masks-renders`).[^steps-sheet][^mask-renders]
+
+  Because the
   renders leave out whatever the fab adds to a plate, they cannot show
   what those plates carry, and no public source says; for MPW-4 the
   renders and the plates also belong to different reticle sets.
@@ -184,70 +213,86 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`LDNTM <step-071>` page reads the openings
+### Exposure class
+
+The {ref}`LDNTM <step-071>` page reads the openings
 as memory-array sized and "far above i-line resolution", quotes ASML's
 statement that older exposure tools "migrate to the lithography of
-choice for less critical layers",[^asml-30] and infers an i-line level;
-the {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
+choice for less critical layers",[^asml-30] and infers an i-line level.
+The {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 Table 2 gives 0.7 for both `LDNTMCD` and `LDNTMCDSP`,[^pdk-03] and at the
 NA 0.48 low end of ASML's PAS 5500/275D[^asml-pas5500-275d] a 0.7 µm
 feature has {math}`k_1 = 0.7 \times 0.48 / 0.365 \approx 0.92` (our
 arithmetic). SkyWater lists "ASML I-line stepper" and "ASML I-line
 scanner" among its tools but assigns no layer to them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
-at 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
+At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
 about half the `LDNTM` minimum, so a CD error on the plate would be
 expected to print at its own size (inference).
 
-**Resist.** Nothing is etched through this resist; it only has to stop
+### Resist and tone
+
+Nothing is etched through this resist; it only has to stop
 the tip and halo wherever the plate leaves it. The step page notes that
 the PDK publishes a thin resist only "for HV Tip Implants" — 0.3 in
 Table 4's column headed "Value (um)" (`PrThickImplant`) — and infers the
 standard film of about 1 µm, the generic "Photoresist thickness" of
-1.14.[^pdk-03] The {ref}`LDASTI <step-072>` page reads the tip as an
+1.14.[^pdk-03]
+
+The {ref}`LDASTI <step-072>` page reads the tip as an
 LDD-class dose from the PDK's description of the mask, and the step page
 the halo as tens of keV, both stopped with a
-wide margin; the ion range in resist that sets the margin is what SRIM
+wide margin. The ion range in resist that sets the margin is what SRIM
 computes.[^ziegler-2010] Ross et al. stabilised i-line implant resists
 with a flood electron beam, reducing shrinkage and CD variation and
 eliminating popping.[^ross-1996] SkyWater's resist, its thickness and any
 hardening are not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Resist edges and shadowing.** The PDK publishes shadowing allowances
+### Resist edges and shadowing
+
+The PDK publishes shadowing allowances
 for `NTM` (0.16) and `HVNTM` (0.232) but none for `LDNTM`, and a single
 "Angle for tip implant" of 7° that the step page takes to apply to this
 tip as well (inference).[^pdk-03] The step page reads the array
 boundary as the edge that matters: the resist must stand back from the
-outermost gates of a dense array by the tip's shadowing allowance. Chen
+outermost gates of a dense array by the tip's shadowing allowance.
+
+Chen
 et al. studied ion-beam shadowing in submicrometre LATID MOSFETs
 (title),[^chen-1995] and Hook et al. the threshold shifts of devices
-near a resist edge from ions scattered out of it;[^hook-2003] the
+near a resist edge from ions scattered out of it.[^hook-2003] The
 {ref}`LDBHI <step-073>` page notes that the halo's tilt is not public.
 
-**Pattern transfer.** On the step pages' readings the pattern is
+### Overlay and alignment
+
+The {ref}`LDNTM <step-071>` page reads the mask as aligned
+to poly. The `ldntm.c4` check's 0.125 enclosure of an n-type transistor
+and `ldntm.c6`'s 0.18 spacing to p-type diffusion[^pdk-errors] are the
+published distances that the plate's placement must respect (our
+reading). ASML specifies "≤ 40 nm" single-machine overlay for the /275D
+stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
+margin is not public).
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
 transferred into the memory transistors' silicon as dopant by
 {ref}`LDASTI <step-072>`, on the
 {ref}`medium-current implanter <machine-medium-current-implanter>` class
 or, as the alternative, the
 {ref}`high-current implanter <machine-high-current-implanter>` class,
-and by {ref}`LDBHI <step-073>` on the medium-current class, and the
+and by {ref}`LDBHI <step-073>` on the medium-current class. On the step pages' readings the
 resist is removed at {ref}`LDASTIS <step-074>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes. The PDK's "N Tip (As)" row
 gives arsenic for N tips in general; the energies, doses, and the halo's
 species beyond boron, tilt and rotation are not public.[^pdk-03]
-
-**Overlay.** The {ref}`LDNTM <step-071>` page reads the mask as aligned
-to poly. The `ldntm.c4` check's 0.125 enclosure of an n-type transistor
-and `ldntm.c6`'s 0.18 spacing to p-type diffusion[^pdk-errors] are the
-published distances that the plate's placement must respect (our
-reading); ASML specifies "≤ 40 nm" single-machine overlay for the /275D
-stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
-margin is not public).
 
 (mask-ldntm-steps)=
 ## Steps that use this mask
@@ -278,14 +323,21 @@ exception to the rule for this mask.
 
 ## Design rules and critical dimensions
 
-The periphery rules have no `ldntm` rule set. The table gives the rules
-that bear on the mask there — the tunnel-layer rule that confines `tunm`
-to the core identifier and the mask-data rules x.7 and x.15a — and then,
-in its last six rows, the Error Messages page's `ldntm` checks, whose
-values are in their wording and which carry no flags; flag P means "Rule applies to periphery only
+The periphery rules have no `ldntm` rule set. The table gives:
+
+* the rules
+  that bear on the mask there — the tunnel-layer rule that confines `tunm`
+  to the core identifier and the mask-data rules x.7 and x.15a
+* then,
+  in its last six rows, the Error Messages page's `ldntm` checks, whose
+  values are in their wording and which carry no flags
+
+Flag P means "Rule applies to periphery only
 (outside areaid.ce). A corresponding core rule may or may not exist." and
 NC "Rule not checked by DRC. It should be used as a guideline
 only."[^pdk-periph][^pdk-errors]
+
+:::{table} Periphery rules that bear on the mask, then the Error Messages page's `ldntm` checks, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -298,38 +350,47 @@ only."[^pdk-periph][^pdk-errors]
 | ldntm.c4 | "0.125 min. enclosure of nFet by ldntmCore" | 0.125 |
 | ldntm.c5 | "ldntm not allowed outside areaid.ce" | — |
 | ldntm.c6 | "0.18 min. spacing of ldntmCoreExempt & pdiff" | 0.18 |
+:::
 
 Table 2 of *Criteria & Assumptions* gives `LDNTMCD` 0.7 and `LDNTMCDSP`
 0.7, the values of `ldntm.c1` and `ldntm.c2`, and no other criterion
-names the mask.[^pdk-03][^pdk-errors] The tip criteria that do not name a
-mask are Table 3b's "N Tip (As)" (0.01, `LDNTIP`), Table 3f's 7° "Angle
-for tip implant" and Table 4's "Min width of tip implant opening" (0.1)
-and "pseudo-shadowing" (0.045); Table 4's "Photoresist thickness for HV
+names the mask.[^pdk-03][^pdk-errors]
+
+The tip criteria that do not name a
+mask are:[^pdk-03]
+
+* Table 3b's "N Tip (As)" (0.01, `LDNTIP`)
+* Table 3f's 7° "Angle
+  for tip implant"
+* Table 4's "Min width of tip implant opening" (0.1)
+  and "pseudo-shadowing" (0.045)
+
+Table 4's "Photoresist thickness for HV
 Tip Implants" (0.3, `PrThickImplant`), "NTM shadowing" (0.16,
 `ntmShadowing`) and "HVNTM shadowing" (0.232, `hvntmShadowing`) name the
-HV tip and the other two tip masks.[^pdk-03] For the plate the published figures are a
+HV tip and the other two tip masks.[^pdk-03]
+
+For the plate the published figures are a
 0.7 µm feature on a 0.7 µm space.
 
 ## Related pages
 
 * {ref}`LDNTM <step-071>`, {ref}`LDASTI <step-072>`,
   {ref}`LDBHI <step-073>` and {ref}`LDASTIS <step-074>` — the mask step,
-  the tip and halo implants and the strip.
-* {ref}`mask-ntm` and {ref}`mask-hvntm` — the two other tip masks of the
-  module; {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
-* {ref}`mask-tunm` and {ref}`mask-onom` — the other memory
-  masks, whose layer the renders find on the same two dies.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the runs with plates but no drawn shapes.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` and
+  the tip and halo implants and the strip; {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
+  step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` and
   {ref}`machine-high-current-implanter` — the implant classes that use
   the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
   reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
-  step and implant categories.
+* **Masks.** {ref}`mask-ntm` and {ref}`mask-hvntm` — the two other tip masks of the
+  module. {ref}`mask-tunm` and {ref}`mask-onom` — the other memory
+  masks, whose layer the renders find on the same two dies.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the runs with plates but no drawn shapes.
 
 ## References
 
