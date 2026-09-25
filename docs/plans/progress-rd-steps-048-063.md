@@ -397,6 +397,67 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Caps**: para > 100 5 → 0; item > 60 0 → 0; sentence > 45 7 → 3 (47 w: the measurement sentence
   with its repeated hedge; 46 w: the Tsang/Lane sentence; 46 w: the "Alignment" item, base text).
 
+### 056 UPRI — done
+
+* **R-H3.** `### What the public record shows` after the figure caption (the PDK target and the
+  illustrative estimate); in `## Why this step exists`, `### How the sheet resistance is estimated`
+  over the 332-word test-tile passage (the same title and reason as on 053).
+* **R-LIST.** "The target is public and unusually explicit: the PDK says …,[^pdk-07] the extraction
+  table gives …,[^pdk-08] and the drawn layer `urpm` is described as …[^pdk-06]" → three plain
+  bullets, each keeping its own marker ("and" dropped). The test-tile structures → lead-in with
+  `[^raw-data-testtile-pads]` before the colon and two plain bullets (as on 053; the double space
+  inside "P-  POLY" kept).
+* **R-TABLE (measured against the same geometry elsewhere).** The 150-word sentence listing the five
+  high-reading short structures → lead-in "The short structures scatter … : among the half- and
+  one-square resistors, five read from about twice to more than sixty times the value of the same
+  geometry elsewhere on the tile (our extraction from the published measurements; the files are named
+  by module and pad in the repository):[^raw-data-passives]" (the base's words, the em-dash
+  enumeration moved into the table, the hedge and marker kept whole on the lead-in), then a
+  three-column `:::{table}` (`Structures (width, squares) | Reading | Same geometry elsewhere`;
+  `:widths:` because the first column is prose). Cells keep the base's words: "0.59 kΩ for the same
+  geometry in module 6215" → "0.59 kΩ in module 6215" under the "Same geometry elsewhere" header;
+  "against" is carried by the header. The closing "as in the 300 Ω/sq set, the 2.85 µm pair of module
+  6224 …" is the paragraph after the table, with its two markers and "(our extraction)". Every
+  pairing checked by hand: 6222 pads 1-2/1-3 (0.69 µm, half) 2.8–3.0 kΩ ↔ 0.59 kΩ (6215); 6219 pad
+  10-12 and "D2" pad 10-11 (1.41 µm, one) 4.1 and 56.2 kΩ ↔ 1.9 kΩ (6215); 6222 pad 7-9 (2.85 µm,
+  half) 64.8 kΩ ↔ about 1 kΩ elsewhere on the tile; five structures in all.
+  At 1280 px the pad label "10-11" wraps at its hyphen (a pad-pair label, not a value; at 400 px it
+  does not wrap); `:widths:` did not change the rendered column split.
+* **R-SENTENCE / R-PARA.** The 72-word estimate sentence split at "— and to a dose": "The target
+  corresponds to a dose … (an illustrative estimate — … — not a SkyWater number)." (the hedge belongs
+  to the dose; the resistivity half keeps `[^seto-1975][^kamins-1998]`). The 92-word extraction
+  sentence split at ", and the 20-square resistors" with **"(our extraction from the published
+  measurements)" and `[^raw-data-passives]` repeated** on the first half. "Why" paragraph 1 (158 w)
+  → three paragraphs, the Seto/Mandurah sentence split at its semicolon. "Both are consequences …"
+  split from the Chen/Tsang sentence at its semicolon.
+* **R-CATEGORY.** Classification sentence split at ", and the most precision-critical" (14 w); the
+  two remaining sentences describe this step → "**Specific to this step:**" and two bullets ("It is"
+  added to the first; the second keeps "we infer").
+* **R-HEDGE, R-TOOLS** (*SkyWater says:* "lists the 8250 with …" — the tool named instead of "it";
+  the GSD sentence is the continuation paragraph), **R-OPENQ** (labels "Species, energy, dose and
+  tilt", "What the `urpm` bodies receive", "Which implanter", "Process option").
+* **R-RELATED.** Previous/Next split; "The companion resistor implant is PRI; the gate implant is
+  P1I." → `Same module:`; the capped/cut/contacted bullet unlabelled (mixed modules).
+* **R-GLANCE.** Why is the page's sentence "A dedicated implant lets the dose be tuned for this
+  device on its own"; Public numbers the 2000 Ω/sq target only.
+* **Left over the caps (known items).** The extraction-method sentence (67 w with the repeated
+  hedge; one method, no seam). The table's lead-in (53 w): splitting at its colon would leave "The
+  short structures scatter more than their 300 Ω/sq counterparts." without the extraction hedge that
+  covers it.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07`, `pdk-08`, `skw-01` (glance),
+  `raw-data-passives` (the repeated hedge); numbers 2000 (glance), 8250 ×2 (glance tool name, and
+  "lists the 8250"); hedges "inference", "not public" (glance), "our extraction" (the repeat).
+  REGROUPED: every split and every table row, same digits in the same order. **LOST number_order**
+  ('300', '6222', …, '300', '2.85', '6224'): the lead-in keeps "300" alone in its sentence ("The short
+  structures scatter more than their 300 Ω/sq counterparts: …") — the G11 case (a number left alone
+  drops out of the regroup check); `numbers` has no LOST, and the rest of the tuple is the table rows
+  and the closing sentence in the base order. Declared `markers,numbers,hedges`; the LOST line
+  remains and is explained here.
+* **Marker coverage.** 13 flags, all read (list lead-ins by rule; split pieces whose base marker
+  belonged to another clause; "Both are consequences …" is the page's own conclusion, unmarked in the
+  base too).
+* **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 7 → 2 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph

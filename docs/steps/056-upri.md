@@ -10,6 +10,20 @@
 | **Previous step** | {ref}`URPM <step-055>` |
 | **Next step** | {ref}`UPRIS <step-057>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** places a light p-type dose into the bodies of the
+  ultra-high-resistance poly resistors through the `URPM` windows.
+* **Why:** a dedicated implant lets the dose be tuned for this device on
+  its own.
+* **Public numbers:** the 2000 Ω/sq target.[^pdk-07][^pdk-08]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** species, energy, dose and tilt, and which implanter
+  runs it (→ Open questions).
+:::
+
 ## What this step is
 
 `UPRI` is the implant that sets the {term}`sheet resistance` of the SKY130
@@ -28,44 +42,60 @@ poly doping of the process is complete and the film can be capped.
 At UPRI a light p-type dose goes through the URPM windows into the bodies of the 2000 Ω/sq resistors.[^pdk-07] None lies in this slice, which carries a 300 Ω/sq resistor,[^pdk-07] so here the resist stops the whole beam and nothing changes. Species, energy, dose and tilt are not public; the arrows are drawn vertical. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
 
-The target is public and unusually explicit: the PDK says of the
-"P- poly precision resistors" that "a separate implant is used to set
-the sheet resistance to 2000 ohm/sq",[^pdk-07] the extraction table
-gives 2000 Ω/sq for the "UHR poly resistor",[^pdk-08] and the drawn
-layer `urpm` is described as the "2000 ohms/square polysilicon
-resistor implant".[^pdk-06] Species, energy and dose are not public.
+The target is public and unusually explicit:
+
+* the PDK says of the
+  "P- poly precision resistors" that "a separate implant is used to set
+  the sheet resistance to 2000 ohm/sq";[^pdk-07]
+* the extraction table
+  gives 2000 Ω/sq for the "UHR poly resistor";[^pdk-08]
+* the drawn
+  layer `urpm` is described as the "2000 ohms/square polysilicon
+  resistor implant".[^pdk-06]
+
+Species, energy and dose are not public.
 For a 0.18 µm film[^pdk-03] the target corresponds to a resistivity of
 about 36 mΩ·cm, which on the published resistivity-versus-doping
 curves for boron-doped poly lies in the region just above the
 grain-boundary trap-filling threshold — the steepest part of the
-curve[^seto-1975][^kamins-1998] — and to a dose of order 10¹⁴ cm⁻² or
+curve.[^seto-1975][^kamins-1998] The target corresponds to a dose of order 10¹⁴ cm⁻² or
 somewhat below (an illustrative estimate — the average concentration
 multiplied by the 0.18 µm film thickness — not a SkyWater number).
 
 ## Step category
 
 `UPRI` is an {ref}`Ion implantation <category-implant>` step of the
-*poly and resistor implant* class, and the most precision-critical
-implant in the module: a smaller dose than {ref}`PRI <step-053>`,
-placed on the part of the resistance curve where a few percent of
-dose error is tens of percent of resistance. It is also, we infer, the
-last implant the resistor bodies receive before the film is capped and
-patterned.
+*poly and resistor implant* class.
+
+**Specific to this step:**
+
+* It is the most precision-critical
+  implant in the module: a smaller dose than {ref}`PRI <step-053>`,
+  placed on the part of the resistance curve where a few percent of
+  dose error is tens of percent of resistance.
+* It is also, we infer, the
+  last implant the resistor bodies receive before the film is capped and
+  patterned.
 
 ## Why this step exists
 
 The reason for a 2000 Ω/sq film is given on {ref}`URPM <step-055>`:
 megohm-class resistors in small area for bias and reference circuits.
 The reason it is a *separate* implant rather than a lower dose of the
-300 Ω/sq recipe is control. In Seto's model the conductivity of doped
+300 Ω/sq recipe is control.
+
+In Seto's model the conductivity of doped
 poly rises by orders of magnitude as the doping passes the level at
-which the grain-boundary traps are filled;[^seto-1975] Mandurah,
+which the grain-boundary traps are filled.[^seto-1975] Mandurah,
 Saraswat and Kamins add the segregation of dopant to the boundaries,
 which removes part of the dose from conduction
 altogether.[^mandurah-1981] A 2000 Ω/sq resistor sits where both
 effects are strong, so its value is set by the *net* active dose after
-segregation and by the grain size after all later anneals. A dedicated
+segregation and by the grain size after all later anneals.
+
+A dedicated
 implant lets the dose be tuned for this device on its own, and lets its
 TCR be brought toward zero — the trade-off Lu et al. and Lane and
 Wrixon describe[^lu-1981][^lane-1989] and that co-implantation studies
@@ -76,15 +106,21 @@ written, gave the P− resistor's electrical specifications as
 "TBD".[^pdk-07] Chen et al. show that the voltage coefficient of a
 lightly doped poly resistor is large and can be improved by
 stress,[^chen-2000] and Tsang et al. analyse the variation of
-high-value resistor banks;[^tsang-2014] both are consequences of the
+high-value resistor banks.[^tsang-2014] Both are consequences of the
 same barrier-limited conduction that this implant sets up.
 
+### How the sheet resistance is estimated
+
 The published SKY130 {term}`test tile` carries the structures such a
-film is characterised with: eleven modules of "2K ohm/sq P-  POLY
-RESISTOR" (spacing as printed in the CSV) at the same five widths as
-the 300 Ω/sq set, from 0.5 to 20
-squares and many as "Mismatch" pairs, and a van der Pauw "RSRP - 2K
-ohm/sq poly resistor sheet resistance: VDP".[^raw-data-testtile-pads]
+film is characterised with:[^raw-data-testtile-pads]
+
+* eleven modules of "2K ohm/sq P-  POLY
+  RESISTOR" (spacing as printed in the CSV) at the same five widths as
+  the 300 Ω/sq set, from 0.5 to 20
+  squares and many as "Mismatch" pairs;
+* a van der Pauw "RSRP - 2K
+  ohm/sq poly resistor sheet resistance: VDP".
+
 Measurements of 88 of those resistors are public: the SKY130 raw-data
 repository publishes their two-terminal current–voltage
 sweeps.[^raw-data-passives] The arithmetic used on
@@ -92,30 +128,41 @@ sweeps.[^raw-data-passives] The arithmetic used on
 4-square resistances at each drawn width taken as 16 squares of body,
 then fitted against width — gives a sheet resistance of about
 1 940–1 970 Ω/sq, with an electrical width within about 0.05 µm of
-drawn (the fit depends on whether the 0.33 µm set is included),
-and the 20-square resistors 1.41 µm and wider read 39.1–40.2 kΩ (our
+drawn (the fit depends on whether the 0.33 µm set is included) (our
+extraction from the published measurements).[^raw-data-passives]
+
+The 20-square resistors 1.41 µm and wider read 39.1–40.2 kΩ (our
 extraction from the published measurements; the files record no
 temperature, date or wafer, so they give no temperature
 coefficient).[^raw-data-passives] The PDK still gives no e-test values
-to compare them with.[^pdk-07] The short structures scatter more than
+to compare them with.[^pdk-07]
+
+The short structures scatter more than
 their 300 Ω/sq counterparts: among the half- and one-square resistors,
-five — module 6222 pads 1-2 and 1-3 (0.69 µm, half square, 2.8–3.0 kΩ
-against 0.59 kΩ for the same geometry in module 6215), module 6219
-pad 10-12 and its "D2" device at pad 10-11 (1.41 µm, one square,
-4.1 kΩ and 56.2 kΩ against 1.9 kΩ in module 6215), and module 6222
-pad 7-9 (2.85 µm, half square, 64.8 kΩ against about 1 kΩ elsewhere on
-the tile) — read from about twice to more than sixty times the value
+five read from about twice to more than sixty times the value
 of the same geometry elsewhere on the tile (our extraction from the
 published measurements; the files are named by module and pad in the
-repository),[^raw-data-passives] and, as in the 300 Ω/sq set, the
+repository):[^raw-data-passives]
+
+:::{table} The half- and one-square structures that read high, against the same geometry elsewhere on the tile
+:widths: 60 16 24
+
+| Structures (width, squares) | Reading | Same geometry elsewhere |
+|---|---|---|
+| module 6222 pads 1-2 and 1-3 (0.69 µm, half square) | 2.8–3.0 kΩ | 0.59 kΩ in module 6215 |
+| module 6219 pad 10-12 and its "D2" device at pad 10-11 (1.41 µm, one square) | 4.1 kΩ and 56.2 kΩ | 1.9 kΩ in module 6215 |
+| module 6222 pad 7-9 (2.85 µm, half square) | 64.8 kΩ | about 1 kΩ elsewhere on the tile |
+:::
+
+As in the 300 Ω/sq set, the
 2.85 µm pair of module 6224, which the pad list gives four squares,
 measures about one square's resistance (our
 extraction).[^raw-data-passives][^raw-data-testtile-pads]
 
 ## How it is typically performed
 
-An industry-generic light poly-resistor implant for a 200 mm,
-130 nm-era fab (SKY130 values are not public):
+*An industry-generic light poly-resistor implant for a 200 mm,
+130 nm-era fab (SKY130 values are not public):*
 
 * **Species.** Boron (¹¹B⁺ or BF₂⁺ from BF₃[^wiki-bf3]); SkyWater's
   implanters offer both "B11" and "BF2".[^skw-01] For a light dose,
@@ -152,10 +199,14 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter.** SkyWater lists it with
-  B11 and BF2 species and a dose range of 10¹¹–10¹⁴ cm⁻².[^skw-01]
-  Strength: **strong** for the tool; the assignment to this implant
-  is an inference from the estimated dose. The GSD high-dose tool
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists the 8250 with
+    B11 and BF2 species and a dose range of 10¹¹–10¹⁴ cm⁻².[^skw-01]
+  - *Tool exists:* **strong** for the tool.
+  - *Runs this step:* the assignment to this implant
+    is an inference from the estimated dose.
+
+  The GSD high-dose tool
   ("5e12 to 5e16"[^skw-01]) overlaps the range and is the
   alternative.
 
@@ -167,8 +218,9 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 ## Related steps and cross-references
 
-* Previous: {ref}`URPM <step-055>`. Next: {ref}`UPRIS <step-057>`.
-* The companion resistor implant is {ref}`PRI <step-053>`; the gate
+* Previous: {ref}`URPM <step-055>`.
+* Next: {ref}`UPRIS <step-057>`.
+* Same module: the companion resistor implant is {ref}`PRI <step-053>`; the gate
   implant is {ref}`P1I <step-050>`.
 * The resistor bodies are capped at {ref}`GATENIT <step-058>`, cut at
   {ref}`P1ME <step-062>`, and contacted through
@@ -239,13 +291,13 @@ An industry-generic light poly-resistor implant for a 200 mm,
 
 ## Open questions
 
-* Species, energy, dose and tilt are not public; the 10¹⁴ cm⁻²-class
+* **Species, energy, dose and tilt.** Species, energy, dose and tilt are not public; the 10¹⁴ cm⁻²-class
   estimate is illustrative.
-* Whether the `urpm` bodies receive only this implant (the reading
+* **What the `urpm` bodies receive.** Whether the `urpm` bodies receive only this implant (the reading
   used here) is inferred from the resistance values, not stated.
-* Whether the implant is run on the medium-current or the high-dose
+* **Which implanter.** Whether the implant is run on the medium-current or the high-dose
   tool is not public.
-* Whether the ultra-high resistor is a process option that some flows
+* **Process option.** Whether the ultra-high resistor is a process option that some flows
   omit (the *Background* page's `r` suffix) is not stated.
 
 <!-- footnotes -->
