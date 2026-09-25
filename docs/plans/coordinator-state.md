@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s6` | W1c series S6 tips/halos/spacers/S-D (064–088): reviewed, fix round running (ion arrowheads — a generator bug on main; halo dots; close-up footer) | Opus | in review |
+| `topic/rd-figures-s7` | W1c series S7 MOL (089–106) | Opus | running since 2026-09-25 |
 | `topic/rd-steps-035-047` | W2 batch 3 (SONOS + gate oxides) | Sonnet | running since 2026-09-25 |
 | `topic/rd-materials` | W3 batch 3: the twelve material class pages | Sonnet | running since 2026-09-25 |
 | `topic/rd-machines-a` | W3 batch 2: machine class pages 1–15 (alphabetical) | Sonnet | running since 2026-09-25 |
