@@ -9,9 +9,18 @@ For every ``**KEY** — ...`` entry in ``docs/references/public-sources.md``:
    site; see ``tools/link_popover_check.py``-style verification below).
 2. Move the entry's ``Tier: ...`` sentence and every ``Used on ...`` /
    ``Also used on ...`` sentence to the end of the entry, each on its own
-   line, in their original relative order (Tier first when present).
+   *rendered* line (a MyST/CommonMark hard break, two trailing spaces --
+   review M3: a bare "\\n" inside one paragraph is only a soft wrap in the
+   built HTML, so "each on its own line" was true in the source but
+   invisible to a reader; not a trailing backslash, the other CommonMark
+   hard-break spelling, because that confuses tools/check_preserved.py's
+   own sentence splitter into reading a whole entry as one sentence --
+   see ``LINE_BREAK`` below), in their original relative order (this is a
+   relocation of a set of sentences, not a re-sort that puts Tier first).
    Whole-sentence reordering only: no sentence is reworded, and no other
-   text in the entry changes.
+   text in the entry changes. A sentence's terminating "." is never one
+   that follows a citation abbreviation or a name's initial (review H1:
+   "(A. Hiraki)" is not a sentence end) -- see ``SENTENCE_END`` below.
 
 An entry's span is found the robust way, not by "one entry = one
 blank-line block" (18 entries, `SKW-01` among them, carry an internal
@@ -20,6 +29,12 @@ several blank-line-separated blocks): it runs from its own ``**KEY** —``
 line to just before the *next* entry's ``**KEY** —`` line or the next
 heading, whichever comes first, so a following section's heading and
 intro prose are never swept into the last entry of a section.
+
+Idempotent: an entry that already has its anchor is not given a second
+one, and its trailing sentences (wherever they are) are still found and
+reformatted -- running this twice in a row, or once over a file an
+earlier version of this script already anchored, converges to the same
+text and changes nothing on the second run (verified in the selftest).
 
 Run with ``--check`` for a dry run (prints a diff-less summary and exits
 1 if anything would change); ``--selftest`` for the offline unit tests.
@@ -35,7 +50,7 @@ ROOT = Path(__file__).resolve().parent.parent
 INVENTORY = ROOT / "docs" / "references" / "public-sources.md"
 
 KEY_DASH_RE = re.compile(r"^\*\*([A-Za-z0-9][A-Za-z0-9_-]*)\*\* — ", re.MULTILINE)
-HEADING_AFTER_RE = re.compile(r"\n\n+#{1,6} ")
+HEADING_AFTER_RE = re.compile(r"\n\n+(?:#{1,6} |\(src-[a-z0-9_-]+\)=\n)")
 ANCHOR_RE = re.compile(r"^\(src-[a-z0-9_-]+\)=\n", re.MULTILINE)
 
 # One pre-existing pair in this file (verified with
@@ -108,15 +123,81 @@ SKIP_ANCHOR_KEYS = {
 # annotation exactly where it was, on the same conservative principle as
 # the rest of this branch: if a rule cannot tell where a sentence safely
 # ends, it does not guess.
-TIER_RE = re.compile(r"Tier:(?:[^\n<]|\n(?!\n))*?\.")
-USED_ON_RE = re.compile(r"(?:Also used on|Used on)(?:[^\n<]|\n(?!\n))*?\.")
+#
+# A terminating "." must not be an abbreviation's own period (review H1):
+# PAT-TIW-HITACHI's "...adds the inventor\n(A. Hiraki) and the filing
+# date..." was cut at "(A." because a single-capital-letter initial's
+# period looks exactly like a sentence end to a naive pattern -- the real
+# end, "...barrier film.", was several lines later, so the sentence was
+# split in two and a fragment ("Hiraki) and the filing date...") was left
+# stranded mid-entry (check_preserved's word multiset does not catch this:
+# no word is lost, only misplaced). Each of these, immediately before the
+# candidate ".", refuses the match: a single capital letter preceded by
+# whitespace or "(" (any name initial, not just "A."), and the known
+# abbreviations below in their usual citation casing. All are fixed-width
+# lookbehinds (Python's `re` requires that), chained so each is checked
+# independently at the same position.
+_ABBREVIATIONS = (
+    "al", "Al", "Inc", "inc", "Vol", "vol", "No", "no", "pp", "Pp",
+    "Fig", "fig", "etc", "Etc",
+)
+_NOT_ABBREVIATION = "".join(f"(?<![\\s(]{a})" for a in _ABBREVIATIONS)
+_NOT_INITIAL = r"(?<![\s(][A-Z])"
+SENTENCE_END = _NOT_ABBREVIATION + _NOT_INITIAL + r"\."
+
+TIER_RE = re.compile(rf"Tier:(?:[^\n<]|\n(?!\n))*?{SENTENCE_END}")
+USED_ON_RE = re.compile(rf"(?:Also used on|Used on)(?:[^\n<]|\n(?!\n))*?{SENTENCE_END}")
+
+# M3 (review): each relocated sentence gets a MyST/CommonMark hard line
+# break before it -- a bare "\n" inside one paragraph renders as a soft
+# wrap (a space) in the built HTML, not a new line, so "each on its own
+# line" was true only in the source before this fix. CommonMark gives two
+# ways to spell a hard break: a trailing backslash, or two-or-more
+# trailing spaces, both followed by "\n". This uses the trailing-space
+# form, not backslash, because of a second-order effect the backslash
+# form has on tools/check_preserved.py (not on the built page): that
+# checker's own sentence splitter is `(?<=[.!?])\s+(?=[A-Z0-9"])`, a
+# lookbehind for the character *immediately* before the whitespace run a
+# sentence break sits in. A trailing backslash sits between the period
+# and that whitespace ("...targets.\\\nTier: ..."), so the lookbehind
+# never matches there and check_preserved reads the whole entry -- every
+# sentence in it -- as *one* "unit" for its number_order check, instead of
+# one unit per sentence as before this fix; verified directly (a scratch
+# comparison showed number_order tuples with 20+ elements appearing only
+# with the backslash form). Trailing spaces do not have this problem: the
+# period is still immediately followed by the whitespace run's start, so
+# the checker's own sentence boundaries are unaffected, verified the same
+# way. Rendering was verified with a scratch Sphinx build either way:
+# both spellings produce an identical "<br />" in the built HTML.
+LINE_BREAK = "  \n"
+
+# An anchor already sitting directly above an entry (a previous run) is
+# left alone, not duplicated -- what makes a second run safe to make
+# regardless of anything else it changes (M3's own reformatting needs a
+# second run over an already-anchored file to reach every entry).
+ANCHOR_BEFORE_RE = re.compile(r"\(src-([a-z0-9_-]+)\)=\n\n\Z")
+
+
+def existing_anchor_key(text: str, start: int) -> str | None:
+    """The key of an anchor already directly above position `start`, if
+    any (checked in a small window, not the whole preceding file, for
+    speed -- an anchor line plus its blank line is always well under 100
+    characters)."""
+    window = text[max(0, start - 100) : start]
+    m = ANCHOR_BEFORE_RE.search(window)
+    return m.group(1) if m else None
 
 
 def entry_spans(text: str) -> list[tuple[str, int, int]]:
     """[(key, start, end), ...] for every entry, in file order. ``end`` is
     just past the entry's own last character; text[start:end] never
-    includes a trailing blank line, a following heading, or another
-    entry.
+    includes a trailing blank line, a following heading, a following
+    entry, or (on a second run over an already-anchored file) the next
+    entry's own anchor line -- found the hard way, by running this
+    function on its own first-run output: without stopping at an anchor
+    too, the *next* entry's "(src-...)=  " line was swept into the
+    *previous* entry's own trailing text on a second pass, corrupting
+    both.
     """
     starts = [(m.group(1), m.start()) for m in KEY_DASH_RE.finditer(text)]
     spans = []
@@ -160,23 +241,46 @@ def reorder_entry(entry_text: str) -> str:
             groups.append([m])
 
     # A group sits either inline (preceded by a space, e.g. "... entry.
-    # Tier: cross-check.") or alone on its own line (preceded *and*
-    # followed by "\n", as most are). Removing only the matched text
-    # itself in the second case would leave the newline before it and the
-    # newline after it adjacent -- a blank line the file never had (found
-    # when this collapsed a bibliographic paragraph and its in-force flag
-    # sentence, which must stay in the same paragraph as each other, onto
-    # two paragraphs separated by a blank line; check_inforce.py's flag
-    # check follows the entry's *paragraph* text, so it silently stopped
-    # seeing the flag on several entries -- see the progress file). So the
-    # removal span is widened by one adjacent character: the following
-    # newline when the group is on its own line(s), the preceding space
-    # when it is inline.
+    # Tier: cross-check.") or alone on its own line (preceded by "\n", as
+    # most are, or -- on a second run over an already-migrated file, M3 --
+    # by a hard break, "  \n"). Removing only the matched text itself would
+    # leave the boundary before it and whatever follows adjacent -- a
+    # blank line the file never had (found when this collapsed a
+    # bibliographic paragraph and its in-force flag sentence, which must
+    # stay in the same paragraph as each other, onto two paragraphs
+    # separated by a blank line; check_inforce.py's flag check follows the
+    # entry's *paragraph* text, so it silently stopped seeing the flag on
+    # several entries -- see the progress file). The fix is to always
+    # consume the group's own *leading* boundary (its preceding hard
+    # break, "\n", or inline " ") rather than trying to decide whether to
+    # widen forward instead: whatever separator already exists right after
+    # the group (if anything does) is untouched and left to do its job, so
+    # exactly one separator survives between the text before and after the
+    # removed group either way. This also makes reorder_entry() idempotent
+    # on text it has already reformatted with hard breaks (a hard break
+    # before a group is recognised and fully consumed, not left as
+    # dangling trailing spaces for LINE_BREAK to double up on next time).
+    def _leading_boundary_width(pos: int) -> int:
+        # A plain "\n" (width 1) or a hard break -- LINE_BREAK's own
+        # trailing-space-then-"\n" form, of whatever length actually
+        # precedes it (2, from this script, but counted rather than
+        # assumed so a differently-spaced hard break already in the file
+        # is still recognised on a re-run).
+        if pos > 0 and entry_text[pos - 1] == "\n":
+            width = 1
+            i = pos - 2
+            while i >= 0 and entry_text[i] == " ":
+                width += 1
+                i -= 1
+            return width
+        return 0
+
     removals: list[tuple[int, int]] = []
     for group in groups:
         s, e = group[0].start(), group[-1].end()
-        if s > 0 and entry_text[s - 1] == "\n" and e < len(entry_text) and entry_text[e] == "\n":
-            e += 1
+        width = _leading_boundary_width(s) if s > 0 else 0
+        if width:
+            s -= width
         elif s > 0 and entry_text[s - 1] == " ":
             s -= 1
         removals.append((s, e))
@@ -198,7 +302,7 @@ def reorder_entry(entry_text: str) -> str:
     remaining = re.sub(r"\n{3,}", "\n\n", remaining)
     remaining = remaining.rstrip("\n")
 
-    return remaining + "\n" + "\n".join(sentences)
+    return remaining + LINE_BREAK + LINE_BREAK.join(sentences)
 
 
 def process(text: str) -> tuple[str, int]:
@@ -224,7 +328,18 @@ def process(text: str) -> tuple[str, int]:
         # of 12; see the progress file). A blank line keeps the anchor as
         # its own paragraph and leaves the entry's paragraph starting
         # exactly as before.
-        anchor = "" if key in SKIP_ANCHOR_KEYS else f"(src-{key.lower()})=\n\n"
+        #
+        # Idempotent: an anchor already directly above this entry (a
+        # previous run) is kept as-is, not duplicated -- this is what lets
+        # a second run reformat every entry's trailing sentences (M3)
+        # without re-running main()'s old "already anchored" all-or-
+        # nothing guard, which could never reach an already-anchored file
+        # again for any reason, including a formatting-only fix.
+        already = existing_anchor_key(text, start)
+        if key in SKIP_ANCHOR_KEYS or already == key.lower():
+            anchor = ""
+        else:
+            anchor = f"(src-{key.lower()})=\n\n"
         if new_entry != entry_text:
             changed += 1
         pieces.append(anchor + new_entry)
@@ -238,16 +353,23 @@ def main(argv: list[str]) -> int:
         return selftest()
     check = "--check" in argv
     text = INVENTORY.read_text()
-    if ANCHOR_RE.search(text):
-        print("public-sources.md already has anchor lines; nothing to do.")
-        return 0
+    # No file-level "already anchored, nothing to do" guard: process() is
+    # idempotent per entry (existing_anchor_key() above), so a second run
+    # is always safe, and is exactly what applying a formatting-only fix
+    # (M3) to an already-anchored file needs.
     new_text, changed = process(text)
     n_entries = len(entry_spans(text))
-    n_anchored = n_entries - len(SKIP_ANCHOR_KEYS)
+    n_anchored = sum(
+        1 for key, start, _ in entry_spans(text)
+        if key not in SKIP_ANCHOR_KEYS
+    )
+    if new_text == text:
+        print(f"no change: {n_anchored} of {n_entries} entries already anchored and formatted.")
+        return 0
     print(
         f"{n_anchored} of {n_entries} entries anchored "
         f"({len(SKIP_ANCHOR_KEYS)} skipped: {sorted(SKIP_ANCHOR_KEYS)}); "
-        f"{changed} reordered (Tier/used-on moved)."
+        f"{changed} entries' trailing sentences (re)written."
     )
     if check:
         return 0
@@ -267,23 +389,25 @@ def selftest() -> int:
     if "(src-pdk-01)=\n\n**PDK-01**" not in new or "(src-pdk-02)=\n\n**PDK-02**" not in new:
         fail(f"anchors missing: {new!r}")
 
-    # 2. Tier sentence moves to the end, whole-sentence, nothing reworded.
+    # 2. Tier sentence moves to the end, whole-sentence, nothing reworded,
+    #    with a hard break (M3) so it renders on its own line.
     text = "**PDK-01** — Foo. Tier: cross-check (SkyWater statement). Bar baz.\n"
     new, _ = process(text)
-    expected_tail = "Foo. Bar baz.\nTier: cross-check (SkyWater statement).\n"
+    expected_tail = "Foo. Bar baz.  \nTier: cross-check (SkyWater statement).\n"
     if expected_tail not in new:
         fail(f"Tier sentence not moved cleanly: {new!r}")
 
     # 3. "Also used on" and "Used on" sentences move too, and the group as
     #    a whole keeps its *original* relative order (this is a relocation
     #    of a set of sentences, not a re-sort of Tier-before-used-on: the
-    #    rule says "move to the end", not "put Tier first").
+    #    rule says "move to the end", not "put Tier first"). Each gets its
+    #    own hard break.
     text = (
         "**PDK-01** — Foo bar. Also used on the X page. Tier: cross-check. "
         "Used on the Y page.\n"
     )
     new, _ = process(text)
-    if "Foo bar.\nAlso used on the X page.\nTier: cross-check.\nUsed on the Y page." not in new:
+    if "Foo bar.  \nAlso used on the X page.  \nTier: cross-check.  \nUsed on the Y page." not in new:
         fail(f"reordering did not preserve original relative order: {new!r}")
 
     # 4. A line-wrapped "Also used on" sentence (this file hard-wraps) is
@@ -322,9 +446,9 @@ def selftest() -> int:
     if '* *Lithography* — "ASML I-line stepper".' not in new:
         fail(f"bulleted content altered: {new!r}")
     if (
-        "Caveats: this is a capability list.\n"
-        "Also used on the wet-bench page.\n"
-        "Tier: cross-check (SkyWater statement).\n"
+        "Caveats: this is a capability list.  \n"
+        "Also used on the wet-bench page.  \n"
+        "Tier: cross-check (SkyWater statement).  \n"
         "Also used on the CMP page."
     ) not in new:
         fail(f"multi-block reordering failed: {new!r}")
@@ -467,8 +591,71 @@ def selftest() -> int:
         fail(f"the skip-reorder entry was reordered anyway, or lost its own anchor: {new!r}")
     if "(src-whs-t4)=" in new:
         fail(f"the skip-anchor entry was anchored anyway: {new!r}")
-    if "(src-pdk-01)=\n\n**PDK-01** — Baz.\nTier: cross-check." not in new:
+    if "(src-pdk-01)=\n\n**PDK-01** — Baz.  \nTier: cross-check." not in new:
         fail(f"a normal entry after the skipped pair was not handled normally: {new!r}")
+
+    # 14. H1 regression test, built on the exact PAT-TIW-HITACHI text the
+    # review found corrupted: a name's initial ("A.") and the abbreviation
+    # "wt.%" must not be read as a sentence end, so the "Also used on the
+    # PVD cluster tool page..." annotation is captured whole, up to its
+    # real end ("...barrier film."), not cut off at "(A.".
+    text = (
+        "**PAT-TIW-HITACHI** — Hitachi Metals, *Titanium-tungsten target material\n"
+        "for sputtering and manufacturing method therefor*, US 5,160,534 A,\n"
+        "granted 1992-11-03. <https://patents.google.com/patent/US5160534A/en>\n"
+        "The 10 wt.% Ti composition of Ti:W sputter targets. Used on the\n"
+        "deposition category page. Tier: cross-check.\n"
+        "Also used on the PVD cluster tool page, whose footnote adds the inventor\n"
+        "(A. Hiraki) and the filing date (1991-05-31) from Google Patents; the\n"
+        "patent gives the 10 wt% titanium as the composition of the barrier film.\n"
+        "Also used on the sputter targets material page.\n"
+    )
+    new, _ = process(text)
+    # The old bug's exact signature: "(A." stranded alone at the end of a
+    # line (the sentence cut there), and "Hiraki)" starting a new one.
+    if "(A.\n" in new or "\nHiraki)" in new or " Hiraki)" in new.replace("(A. Hiraki)", ""):
+        fail(f"the abbreviation/initial still split the sentence: {new!r}")
+    if new.count("(A. Hiraki)") != 1:
+        fail(f"the inventor's initial was duplicated or lost: {new!r}")
+    if (
+        "targets.  \n"
+        "Used on the\ndeposition category page.  \n"
+        "Tier: cross-check.  \n"
+        "Also used on the PVD cluster tool page, whose footnote adds the inventor\n"
+        "(A. Hiraki) and the filing date (1991-05-31) from Google Patents; the\n"
+        "patent gives the 10 wt% titanium as the composition of the barrier film.  \n"
+        "Also used on the sputter targets material page."
+    ) not in new:
+        fail(f"PAT-TIW-HITACHI was not reconstructed in its original sentence order: {new!r}")
+
+    # 15. M3, confirmed at the unit level: the boundary between the
+    # entry's own text and its first relocated sentence, and between two
+    # relocated sentences, is a hard break (two trailing spaces then
+    # "\n"), not a bare "\n" (a bare "\n" inside one MyST/CommonMark
+    # paragraph renders as a soft wrap -- a space -- not a new line;
+    # confirmed separately with a scratch Sphinx build, see the progress
+    # file). A line-wrap *inside* one sentence (this file is hard-wrapped)
+    # stays a bare "\n": it is not a break between two things, just where
+    # the source happens to wrap.
+    text = "**PDK-01** — Foo. Used on the\ndeposition category page. Tier: cross-check.\n"
+    new, _ = process(text)
+    if "Foo.  \nUsed on the\ndeposition category page.  \nTier: cross-check." not in new:
+        fail(f"hard breaks are missing or in the wrong place: {new!r}")
+
+    # 16. Idempotence on a re-run: process() applied to its own output a
+    # second time changes nothing and does not duplicate an anchor -- what
+    # lets a formatting-only fix (M3) reach a file an earlier run already
+    # anchored, without a bespoke migration path.
+    text = (
+        "**PDK-01** — Foo. Used on the X page. Tier: cross-check.\n\n"
+        "**PDK-02** — Bar. Also used on the Y page.\n"
+    )
+    once, changed1 = process(text)
+    twice, changed2 = process(once)
+    if twice != once:
+        fail(f"process() is not idempotent on its own output: {once!r} -> {twice!r}")
+    if once.count("(src-pdk-01)=") != 1 or once.count("(src-pdk-02)=") != 1:
+        fail(f"a second run duplicated an anchor: {once!r}")
 
     if problems:
         for p in problems:
