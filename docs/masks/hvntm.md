@@ -2,22 +2,12 @@
 # HVNTM — High Volt. N-tip
 
 The high-voltage N-tip mask is the {term}`reticle` of the second tip
-implant of SKY130: on the {ref}`HVNTM <step-068>` page's reading, the
+implant of SKY130. On the {ref}`HVNTM <step-068>` page's reading, the
 thin resist printed through it at step 68 exposes the high-voltage NMOS
 transistors on the thick gate oxide and covers everything else, the
 arsenic implant {ref}`HVASTI <step-069>` arrives through the openings at
 a steep tilt to form their graded drain {term}`extension`, and the resist
-is stripped at {ref}`HVASTIS <step-070>`. It is an implant
-{term}`block mask`, and the only mask for which the PDK both states an
-operation — the drawn layer "will be OR-ed with the CL" — and publishes a
-resist thickness, 0.3 µm, well below the generic figure. Because the beam
-arrives at 40°, the resist wall's shadow is as much a design parameter as
-the openings themselves. This page gathers what public sources say about
-the mask itself — its PDK entry and layers, the plates the process-steps
-sheet records for the MPW runs, what the public renders of those runs
-show, the lithography it needs and the rules that constrain it. How the
-step is performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+is stripped at {ref}`HVASTIS <step-070>`.
 
 | | HVNTM — High Volt. N-tip |
 |---|---|
@@ -34,16 +24,35 @@ step is performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-hvntm-steps>` |
 
+:::{seealso}
+How the
+step is performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is an implant
+{term}`block mask`, and the only mask for which the PDK both states an
+operation — the drawn layer "will be OR-ed with the CL" — and publishes a
+resist thickness, 0.3 µm, well below the generic figure. Because the beam
+arrives at 40°, the resist wall's shadow is as much a design parameter as
+the openings themselves.
 
 The periphery rules head the `hvntm` rule set with its function,
 "Defines tip implants for the HV NMOS", and the layer table describes
 `hvntm` as "High voltage N-tip implant".[^pdk-periph][^pdk-06] The rules
 tie it to the thick-oxide layer `hvi`, "High voltage (5.0V) thick oxide
-gate regions": "Hvntm must overlap hvi" (hvntm.10), n+ diffusion inside
-`hvi` must be enclosed by it (hvntm.3), and n+ diffusion outside `hvi`,
-p+ diffusion and p+ taps must stay 0.185 µm clear (hvntm.4 to
-hvntm.6a).[^pdk-periph][^pdk-06] It is kept out of the SRAM core ("Hvntm
+gate regions":[^pdk-periph][^pdk-06]
+
+* "Hvntm must overlap hvi" (hvntm.10)
+* n+ diffusion inside
+  `hvi` must be enclosed by it (hvntm.3)
+* n+ diffusion outside `hvi`,
+  p+ diffusion and p+ taps must stay 0.185 µm clear (hvntm.4 to
+  hvntm.6a)
+
+`hvntm` is kept out of the SRAM core ("Hvntm
 must not overlap areaid.ce", hvntm.9) and must enclose an
 `ESD_nwell_tap` inside `hvi` (hvntm.7).[^pdk-periph] The
 {ref}`HVNTM <step-068>` page reads the devices as the 5 V NMOS family on
@@ -51,10 +60,19 @@ the 110 Å oxide, which the PDK's [*High Voltage Methodology*](<https://skywater
 VHV devices share with the "standard 5.0V Vcc devices".[^pdk-hv]
 
 The PDK's mask generation table, Table F2b, marks the `HVNTM` column `C`
-("CREATED") in 12 of its 80 device rows: the HV n-diffusion resistor,
-the HV varactor, the 5/10.5 V NMOS, the 5 V and 3 V native NMOS, the
-16 V drain-extended NMOS, the HV, RF ESD HV, RF ESD deep-N-well and
-native n-type diodes, and the HV and HV native ESD NMOS.[^pdk-06] It marks
+("CREATED") in 12 of its 80 device rows:[^pdk-06]
+
+* the HV n-diffusion resistor
+* the HV varactor
+* the 5/10.5 V NMOS
+* the 5 V and 3 V native NMOS
+* the
+  16 V drain-extended NMOS
+* the HV, RF ESD HV, RF ESD deep-N-well and
+  native n-type diodes
+* the HV and HV native ESD NMOS
+
+The table marks
 `-`, "Layer not created for the device", in 68 rows, among them every
 1.8 V row, the SONOS and flash pass-gate rows, the 5/10.5 V and 16 V
 PMOS and the five UHV 5/20 V drain-extended rows.[^pdk-06] On our reading
@@ -64,22 +82,24 @@ out. The two `C` rows for native NMOS match the step page's reading that
 the native 5 V device takes this tip.
 
 The step page reads the implant as a large-angle-tilt implanted drain
-({term}`LATID`) from the 40° angle: Hori demonstrated the quarter-micron
+({term}`LATID`) from the 40° angle. Hori demonstrated the quarter-micron
 LATID transistor for 3.3 V operation and gave the full account of the
-technology,[^hori-1989-latid][^hori-1992] Rafí and Campabadal compared
-the hot-carrier degradation of LDD and LATID NMOS,[^rafi-2001] and the
+technology.[^hori-1989-latid][^hori-1992] Rafí and Campabadal compared
+the hot-carrier degradation of LDD and LATID NMOS.[^rafi-2001] The
 lightly doped drain[^ogura-1980] and Takeda et al.'s drain structures
 for minimising hot-carrier generation[^takeda-1982] are the older
-answers to the degradation Hu et al. modelled.[^hu-1985-hci] A Cypress
+answers to the degradation Hu et al. modelled.[^hu-1985-hci]
+
+A Cypress
 patent describes a high-voltage device with self-aligned graded
-junctions in a CMOS flow;[^pat-hv-graded-cyp] the step page treats it
+junctions in a CMOS flow.[^pat-hv-graded-cyp] The step page treats it
 as circumstantial evidence of lineage and no more.
 
 What the mask does not define is the thick oxide or the tip's edge. On
 the step pages' readings the `hvi` regions are set at
 {ref}`LVOM <step-044>` and oxidised at {ref}`GOX100 <step-043>`, and the
 implant is self-aligned to the gates of the {ref}`P1M <mask-p1m>`
-pattern; the
+pattern. On the step pages' readings the
 standard tip over the other NMOS is placed by {ref}`mask-ntm`, whose
 created data, on that page's reading, cover `hvi` rather than open it.
 
@@ -89,42 +109,59 @@ created data, on that page's reading, cover `hvi` rather than open it.
 
 `gds_layers.csv` gives `chvntm` a `mask` purpose at 39:0 ("High voltage
 N-tip implant mask") and a `drawing` purpose at 38:20, without a
-description and with no `mask add` or `mask drop` purpose; the drawn
+description and with no `mask add` or `mask drop` purpose.[^pdk-06] The drawn
 layer is `hvntm` at 125:20, a layer number it shares with `lvtn`
 125:44.[^pdk-06] This is the one mask for which the PDK states an
 operation. Rule X.1 of the `hvntm` set reads "Hvntm can be drawn inside
 HVI. Drawn layer will be OR-ed with the CL and rechecked for
-CLDRC".[^pdk-periph] The PDK does not expand "CL" or "CLDRC". The
+CLDRC".[^pdk-periph] The PDK does not expand "CL" or "CLDRC".
+
+The
 periphery rules use the abbreviation again in their flag legend, where
 A means "Rule documents a functionality implemented in CL
 algorithms and may not be checked by DRC." and AD "Rule documents a
 functionality implemented in CL algorithms and checked by
-DRC.";[^pdk-periph] that fits a reading of CL as the mask-generation
+DRC.".[^pdk-periph] That fits a reading of CL as the mask-generation
 computation (our reading). The {ref}`HVNTM <step-068>` page reads the
-reticle as the union of what the designer draws and a computed layer. Rule x.15a confines mask layers to
+reticle as the union of what the designer draws and a computed layer.
+
+Rule x.15a confines mask layers to
 test modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design inside the
 die draws `hvntm` (our reading of x.15a).
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", lists checks on a layer it calls `CLHVNTM` under
+criteria for GDS data".[^pdk-errors] It lists checks on a layer it calls `CLHVNTM` under
 the rule names `chvntm.1`, `chvntm.2a`, `chvntm.3`, `chvntm.4`,
-`chvntm.5`, `chvntm.6a`, `chvntm.6b` and `chvntm.7`: "0.7 min. width of
-CLHVNTM", "0.7 min. spacing/notch of CLHVNTM" (`chvntm.2a`), "0.185 Min Enclosure
-of ndiff inside hvi by chvntm" (`chvntm.3`), "CLHVNTM must not overlap
-NDIFFnoHV" and "CLHVNTM must not overlap PDIFF_noENID", each with a
-0.185 spacing (`chvntm.4`, `chvntm.5`), "CLHVNTM must not overlap ptap"
-(`chvntm.6a`), "CLHVNTM must not overlap p+diff along diff butting edge
-(ESDnWellTap excluded)" (`chvntm.6b`) and "ESDnWellTapHV must be enclosed
-by CLHVNTM" (`chvntm.7`); and two `chvntm.nikon` checks, "HVNTMmk in the
-nikon cross has the wrong polarity" and "HVNTMmk is missing from the
-nikon cross in the layout".[^pdk-errors] It does not define `CLHVNTM`.
+`chvntm.5`, `chvntm.6a`, `chvntm.6b` and `chvntm.7`:[^pdk-errors]
+
+* "0.7 min. width of
+  CLHVNTM"
+* "0.7 min. spacing/notch of CLHVNTM" (`chvntm.2a`)
+* "0.185 Min Enclosure
+  of ndiff inside hvi by chvntm" (`chvntm.3`)
+* "CLHVNTM must not overlap
+  NDIFFnoHV" and "CLHVNTM must not overlap PDIFF_noENID", each with a
+  0.185 spacing (`chvntm.4`, `chvntm.5`)
+* "CLHVNTM must not overlap ptap"
+  (`chvntm.6a`)
+* "CLHVNTM must not overlap p+diff along diff butting edge
+  (ESDnWellTap excluded)" (`chvntm.6b`)
+* "ESDnWellTapHV must be enclosed
+  by CLHVNTM" (`chvntm.7`)
+* two `chvntm.nikon` checks, "HVNTMmk in the
+  nikon cross has the wrong polarity" and "HVNTMmk is missing from the
+  nikon cross in the layout"
+
+The page does not define `CLHVNTM`.
 We read `CLHVNTM` as the mask data after the drawn layer has been OR-ed
 with the computed part, and its checks as the "CLDRC" of rule X.1
-(inference from the names): the checks mirror the drawn-layer rules
+(inference from the names). The checks mirror the drawn-layer rules
 hvntm.1 to hvntm.7 on the combined layer, and they describe openings
-over n+ diffusion in `hvi`, not the operation that makes them. The same page has its own versions of the drawn-layer rules, in
+over n+ diffusion in `hvi`, not the operation that makes them.
+
+The same page has its own versions of the drawn-layer rules, in
 which X.1 reads "hvntm must be drawn inside hvi" (`hvntm.x.1`) where the
 periphery rules say "can be drawn", and a module-cut check, "0.19 min.
 spacing of moduleCutAREA & q0hvntmnotBuildSpace" (x.12a).[^pdk-errors]
@@ -134,14 +171,17 @@ spacing of moduleCutAREA & q0hvntmnotBuildSpace" (x.12a).[^pdk-errors]
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. `HVNTM` is one of the masks the site's README calls
-"fab-derived" and evaluates "as a boolean expression over drawn layers":
-on all eight runs the expression is
+"fab-derived" and evaluates "as a boolean expression over drawn layers".[^mask-renders]
+
+On all eight runs the expression is
 `125:20 OR ((65:20 AND 93:44 AND 75:20) NOT 81:2)`, which in the layer
 names of `gds_layers.csv` is `hvntm` OR ((`diff` AND `nsdm` AND `hvi`)
 NOT `areaid.ce`).[^mask-renders][^pdk-06] Its mask record lists the drawn
 layer 125:20 and the mask-level layer 39:0, with the note "drawn hvntm
 merged with a created part (ndiff AND hvi, outside areaid.ce); only the
-drawn part is rendered".[^mask-renders] The note contradicts the
+drawn part is rendered".[^mask-renders]
+
+The note contradicts the
 expression, as the {ref}`masks index <masks-derivations>` records: the
 expression renders the created part as well. The site gives no source for
 either. The expression and note are one public derivation from the drawn
@@ -158,14 +198,22 @@ Since the site names no source, the agreement may only mean that both
 start from the same public PDK pages.
 
 All 40 rendered dies of every run carry shapes, but that is not 40
-designs with 5 V NMOS: every die carries at least 11 483 shapes; 14 551
-shapes appear on 26 to 33 dies of each of MPW-2 to MPW-8 and 14 560 on 37
-dies of MPW-1; 11 483 on two to eight dies of each of MPW-2 to MPW-7; and
-on MPW-1 one die accounts for 99 % of the run's shapes.[^mask-renders] We
+designs with 5 V NMOS:[^mask-renders]
+
+* every die carries at least 11 483 shapes
+* 14 551
+  shapes appear on 26 to 33 dies of each of MPW-2 to MPW-8 and 14 560 on 37
+  dies of MPW-1
+* 11 483 on two to eight dies of each of MPW-2 to MPW-7
+* on MPW-1 one die accounts for 99 % of the run's shapes
+
+We
 read the repeated counts as shapes common to the dies rather than to the
 projects (inference); the site does not say what they are, and with the
 expression they may be created shapes over n+ diffusion in `hvi` as well
-as drawn `hvntm`. The site states the limits of its images: "These are
+as drawn `hvntm`.
+
+The site states the limits of its images: "These are
 renders of *drawn* data, not photomask artwork: reticle pitch, 4x
 reduction, mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] Its metadata carries no plate ID, so a render
@@ -208,60 +256,92 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`HVNTM <step-068>` page puts the 0.700 µm
+### Exposure class
+
+The {ref}`HVNTM <step-068>` page puts the 0.700 µm
 width and space at {math}`k_1 \approx 1.2` on an i-line lens of NA 0.6,
 quotes ASML's statement that older exposure tools "migrate to the
 lithography of choice for less critical layers",[^asml-30] and infers an
-i-line level; the {ref}`i-line stepper <machine-i-line-stepper>` page
+i-line level. The {ref}`i-line stepper <machine-i-line-stepper>` page
 lists it there. At the NA 0.48 low end of ASML's
 PAS 5500/275D[^asml-pas5500-275d] the same feature has
 {math}`k_1 = 0.7 \times 0.48 / 0.365 \approx 0.92` (our arithmetic).
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
-at 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
+At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
 about half the `HVNTM` minimum, so a CD error on the plate would be
-expected to print at its own size (inference). Table 8 of [*Criteria &
+expected to print at its own size (inference).
+
+Table 8 of [*Criteria &
 Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) nevertheless gives an "Extra CD tol for HVNTM to match Ram7
 process" of 0.015 (`HVNTMExtraCdTol`) in its column headed "CD"; the PDK
 does not say what "Ram7" is or whether the tolerance applies to the plate
 or the wafer.[^pdk-03]
 
-**Resist.** Nothing is etched through this resist; it only has to stop
+### Resist and tone
+
+Nothing is etched through this resist; it only has to stop
 the arsenic of {ref}`HVASTI <step-069>` wherever the plate leaves it.
 Table 4 gives a "Photoresist thickness for HV Tip Implants" of 0.3
 (`PrThickImplant`) against the generic "Photoresist thickness" of 1.14
-(`PRTHICKN`), both in its column headed "Value (um)".[^pdk-03] The step
+(`PRTHICKN`), both in its column headed "Value (um)".[^pdk-03]
+
+The step
 page reads the thin film as ample for an LDD-type arsenic implant of tens
 of keV, whose projected range in resist-like materials is a few tens of
-nanometres, and points to pinholes as the risk a 0.3 µm film carries; the
+nanometres, and points to pinholes as the risk a 0.3 µm film carries. The
 ion range that sets the margin is what SRIM computes.[^ziegler-2010]
 SkyWater's resist and any hardening are not public; the consumables are
 on the {ref}`lithography materials <material-lithography-materials>`
 page.
 
-**Resist edges and shadowing.** The thin resist exists for the tilt:
-Table 3f gives an "Angle for HV tip implant" of 40° (`HvTipAngle`) and a
-"Twist angle for HV Tip" of 23° (`HvTipTwist`), Table 4 an "HVNTM
-shadowing" of 0.232 (`hvntmShadowing`) and a "Min width of tip implant
-opening" of 0.1, and Table 8, in its column headed "CD", a "Photoresist
-tilted implant penetration" of 0.02 (`HVPrPenetration`), a "Photoresist
-tilted implant blocking distance" of 0.013 (`HVPrBlocking`) and a "Min
-size of HVTip" of 0.1 (`HVTipMinSize`).[^pdk-03] The
+### Resist edges and shadowing
+
+The thin resist exists for the tilt:[^pdk-03]
+
+* Table 3f gives an "Angle for HV tip implant" of 40° (`HvTipAngle`) and a
+  "Twist angle for HV Tip" of 23° (`HvTipTwist`)
+* Table 4 gives an "HVNTM
+  shadowing" of 0.232 (`hvntmShadowing`) and a "Min width of tip implant
+  opening" of 0.1
+* Table 8 gives, in its column headed "CD", a "Photoresist
+  tilted implant penetration" of 0.02 (`HVPrPenetration`), a "Photoresist
+  tilted implant blocking distance" of 0.013 (`HVPrBlocking`) and a "Min
+  size of HVTip" of 0.1 (`HVTipMinSize`)
+
+The
 {ref}`HVNTM <step-068>` page finds them consistent: a 0.3 µm wall
 shadows a 40° beam for 0.3 µm × tan 40° ≈ 0.25 µm, which less the 0.02 µm
 penetration gives the 0.232 µm allowance. The PDK does not say how the
-0.013 blocking distance enters. Chen et al. studied ion-beam shadowing
+0.013 blocking distance enters.
+
+Chen et al. studied ion-beam shadowing
 in submicrometre LATID MOSFETs (title),[^chen-1995] a Taiwan
 Semiconductor patent splits tilted LDD implants into several wafer
 rotations,[^pat-quad-tsmc] and the {ref}`HVASTI <step-069>` page infers
-rotations here; ions scattered out of a resist edge also alter nearby
+rotations here. Ions scattered out of a resist edge also alter nearby
 thresholds, as Hook et al. found for a thick well resist.[^hook-2003]
 
-**Pattern transfer.** On the step pages' readings the pattern is
+### Overlay and alignment
+
+The {ref}`HVNTM <step-068>` page reads the mask as aligned
+to poly (inference) and the 0.232 µm shadowing allowance and 0.1 µm
+minimum opening as fixing how far a resist edge must stand from a gate.
+The 0.185 µm rules against n+ diffusion outside `hvi` and against p+
+diffusion (hvntm.4, hvntm.5) set the edges relative to the active
+pattern.[^pdk-periph] ASML specifies "≤ 40 nm" single-machine overlay for
+the /275D stepper[^asml-pas5500-275d] (our comparison; how SkyWater
+budgets the margin is not public).
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
 transferred into the silicon as dopant by {ref}`HVASTI <step-069>` on
 the {ref}`medium-current implanter <machine-medium-current-implanter>`
 class, reaching under the gate edges of the selected transistors, and
@@ -270,15 +350,6 @@ the resist is removed at {ref}`HVASTIS <step-070>` on the
 {ref}`wet bench <machine-wet-bench>` classes. The PDK gives the angles;
 the species rests on its general "N Tip (As)" row, and the energy and
 dose are not public.[^pdk-03]
-
-**Overlay.** The {ref}`HVNTM <step-068>` page reads the mask as aligned
-to poly (inference) and the 0.232 µm shadowing allowance and 0.1 µm
-minimum opening as fixing how far a resist edge must stand from a gate;
-the 0.185 µm rules against n+ diffusion outside `hvi` and against p+
-diffusion (hvntm.4, hvntm.5) set the edges relative to the active
-pattern.[^pdk-periph] ASML specifies "≤ 40 nm" single-machine overlay for
-the /275D stepper[^asml-pas5500-275d] (our comparison; how SkyWater
-budgets the margin is not public).
 
 (mask-hvntm-steps)=
 ## Steps that use this mask
@@ -315,6 +386,8 @@ source of Drain Extended device" and NC "Rule not checked by DRC. It
 should be used as a guideline only."; the unit column of hvntm.7 is
 blank in the published table.[^pdk-periph]
 
+:::{table} The `hvntm` rules, the precision-resistor rule that refers to the layer and the mask-data rules x.7 and x.15a, as published; the unit column of hvntm.7 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | hvntm.X.1 | "Hvntm can be drawn inside HVI. Drawn layer will be OR-ed with the CL and rechecked for CLDRC" | — |
@@ -331,22 +404,32 @@ blank in the published table.[^pdk-periph]
 | rpm.9 | "Min space, no overlap, between prec_resistor and hvntm" | 0.185 µm |
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* repeats the width and space as
 `HVNTMCD` 0.7 and `HVNTMCDSP` 0.7, and the Error Messages page checks the
 combined mask layer at the same pair (`chvntm.1`,
 `chvntm.2a`).[^pdk-03][^pdk-errors]
+
 The other criteria that name the mask or its implant are those quoted
-above: Table 3f's 40° tilt and 23° twist; Table 4's "Photoresist
-thickness for HV Tip Implants" (0.3), "HVNTM shadowing" (0.232) and "Min
-width of tip implant opening" (0.1); and Table 8's "Photoresist tilted
-implant penetration" (0.02), "Photoresist tilted implant blocking
-distance" (0.013), "Min size of HVTip" (0.1) and "Extra CD tol for HVNTM
-to match Ram7 process" (0.015); Table 4 gives the standard tip's "NTM
+above:[^pdk-03]
+
+* Table 3f's 40° tilt and 23° twist
+* Table 4's "Photoresist
+  thickness for HV Tip Implants" (0.3), "HVNTM shadowing" (0.232) and "Min
+  width of tip implant opening" (0.1)
+* Table 8's "Photoresist tilted
+  implant penetration" (0.02), "Photoresist tilted implant blocking
+  distance" (0.013), "Min size of HVTip" (0.1) and "Extra CD tol for HVNTM
+  to match Ram7 process" (0.015)
+
+Table 4 gives the standard tip's "NTM
 shadowing" as 0.16 (`ntmShadowing`) beside this mask's 0.232
 (`hvntmShadowing`) ({ref}`mask-ntm`).[^pdk-03] Table 8 also gives an "HV MOSFET
 channel length" of 0.5 (`HVPCD`), which the {ref}`HVASTI <step-069>`
-page reads as long enough not to need a halo.[^pdk-03] For the plate,
+page reads as long enough not to need a halo.[^pdk-03]
+
+For the plate,
 hvntm.1 and hvntm.2 set the smallest features, 0.700 µm lines and
 spaces, and the 0.185 µm rules set where its edges fall against the
 active pattern.
@@ -355,22 +438,20 @@ active pattern.
 
 * {ref}`HVNTM <step-068>`, {ref}`HVASTI <step-069>` and
   {ref}`HVASTIS <step-070>` — the mask step, the tilted implant and the
-  strip.
-* {ref}`mask-ntm` — the standard tip mask before it;
-  {ref}`mask-ldntm` — the SONOS tip mask after it;
-  {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
-* {ref}`mask-lvom` and {ref}`GOX100 <step-043>` — where the `hvi`
-  thick oxide the mask follows is defined and grown.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the derivations the renders use.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` — the implant class that uses
-  the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+  strip; {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` — the implant class that uses
+  the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-ntm` — the standard tip mask before it;
+  {ref}`mask-ldntm` — the SONOS tip mask after it.
+  {ref}`mask-lvom` and {ref}`GOX100 <step-043>` — where the `hvi`
+  thick oxide the mask follows is defined and grown.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the derivations the renders use.
 
 ## References
 
@@ -449,7 +530,7 @@ active pattern.
 ## Open questions
 
 * What "CL" and "CLDRC" mean, and the operation that makes the created
-  part of the plate, are not published; the Error Messages page checks a
+  part of the plate, are not published. The Error Messages page checks a
   `CLHVNTM` layer it does not define,[^pdk-periph][^pdk-errors] and the
   renders' expression for the created part has no sizing and a note that
   contradicts it.[^mask-renders]

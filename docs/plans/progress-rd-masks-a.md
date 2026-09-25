@@ -271,3 +271,39 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   quick-facts cells (Drawn layer 38 — checker-compared; Polarity and tone 41 and Exposure class 34, not in
   the body). Before → after: paragraphs 11 → 0, items 0 → 0, sentences 16 → 1, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 6. hvntm — done
+
+* **Rules applied.** R-INTRO (191 → 67 words; first sentence split at its colon; "It is an implant block
+  mask … the openings themselves." moved to the top of `## What the mask defines`, "It" → "The mask");
+  R-CAPTION (rule table, with the page's unit caveat for hvntm.7); R-PARA, R-SENTENCE; R-LIST (the
+  three `hvi` rules, marker pair moved to the lead-in; Table F2b's 12 `C` rows as seven fragment bullets,
+  1 + 1 + 1 + 2 + 1 + 4 + 2 = 12; the eight `chvntm` checks plus the `chvntm.nikon` pair; the per-die
+  counts; the Table 3f/4/8 tilt criteria; the "other criteria … quoted above"); R-RELATED; R-H3 (Exposure
+  class, Mask errors, Resist and tone ← "Resist", Resist edges and shadowing, Overlay and alignment ←
+  "Overlay", Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS as a list, not a table.** The design-rules paragraph names two parameters with identifiers
+  (`HVNTMCD`, `HVNTMCDSP`) and then re-lists, by table and description, eight criteria "quoted above"
+  without their identifiers. A `Parameter` column would have to copy the identifiers from above (or be
+  `—` in most rows), and "those quoted above" would be lost, so the enumeration became an R-LIST under
+  the base's own lead-in; the "NTM shadowing" and "HV MOSFET channel length" sentences stay prose.
+* **Wording added (all subject/verb or noun-for-pronoun):** "Table 4 gives", "Table 8 gives" in the
+  tilt-criteria list (the base elided the verb); "It is kept out of the SRAM core" → "`hvntm` is kept out
+  …", "It marks" → "The table marks", "It does not define" → "The page does not define" (each after a
+  new list, where "It" would point at the list); "On the step pages' readings" repeated on the NTM
+  sentence split off the `hvi`/P1M sentence (the base hedge covered both halves).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers`): markers `pdk-06` (`gds_layers.csv` sentence),
+  `pdk-errors` (*Error Messages* description), `mask-renders` (README / expression sentence split at its
+  colon), `pdk-03` (the "quoted above" lead-in; the base's one `pdk-03` stays on the "NTM shadowing"
+  sentence it ended); numbers `7` ×2 and `15` (x.7, hvntm.7, x.15a in the rule-table caption).
+* **Marker coverage.** Flags read: list items under lead-in markers; clauses that had no marker of their
+  own in the base (the LATID reading, "The step page treats it …", "That fits a reading of CL …", the
+  thin-film reading, the alignment reading, the first Open question's first half).
+* **Over the caps after the pass:** the intro's second sentence (53: its three clauses all sit inside
+  "On the HVNTM page's reading"; a split would drop the hedge from two of them); the Pattern transfer
+  sentence (46, one hedge over the whole); the Polarity and tone cell (60; not in the body). Before →
+  after: paragraphs 11 → 0, items 0 → 0, sentences 20 → 2, cells 1 → 1.
+* **Content problems for the owner:** none found.
