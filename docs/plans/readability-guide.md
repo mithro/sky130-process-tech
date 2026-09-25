@@ -2136,36 +2136,21 @@ git show HEAD:docs/steps/006-stie.md > tmp/preserve/before.md
 **3. Apply the rules in the order your page type gives** (§4). One rule at a time over the whole page,
 not one paragraph at a time over all rules. Commit after each rule, or at least every 15 minutes.
 
-**4. Preservation check.** `tools/check_preserved.py` is being written on another branch (W0b). When it
-exists, run it as `uv run python tools/check_preserved.py docs/steps/006-stie.md` against the committed
-version, and declare additions (step numbers and step names added by a new table) the way its help
-says. Until then, run the same comparison by hand:
+**4. Preservation check.** Run `tools/check_preserved.py` against the committed "before" version:
 
 ```
-python3 - tmp/preserve/before.md docs/steps/006-stie.md <<'PY'
-import re, sys, collections
-MARK = re.compile(r"\[\^[A-Za-z0-9_-]+\]")
-NUM  = re.compile(r"(?<![\w.])\d[\d   ,.]*\d(?![\w])|(?<![\w.])\d(?![\w.])")
-QUOT = re.compile(r'"[^"\n]{1,400}"')
-def bag(p):
-    t = open(p).read()
-    markers = collections.Counter(MARK.findall(t))
-    t = MARK.sub("", t)
-    return (markers,
-            collections.Counter(n.strip() for n in NUM.findall(t)),
-            collections.Counter(QUOT.findall(re.sub(r"\s+", " ", t))))
-a, b = bag(sys.argv[1]), bag(sys.argv[2])
-for name, x, y in zip(("markers", "numbers", "quotations"), a, b):
-    if x != y:
-        print(f"{name}: lost {dict(x - y)}")
-        print(f"{name}: gained {dict(y - x)}")
-print("identical" if a == b else "DIFFERENT")
-PY
+uv run python tools/check_preserved.py --base <commit-before-this-page> docs/steps/006-stie.md
 ```
 
-The only acceptable gains are step numbers and step names that a new table introduces, and an em dash
-`—` where a cell has no value. **Any loss is a bug in your edit.** (Tested: an unchanged page prints
-`identical`; a page with one marker deleted and one digit changed prints exactly what was lost.)
+Declare additions the way its help says (`--allow-added markers,numbers,hedges,identifiers,quotes,…`,
+comma-separated, per category) — the categories a template like R-GLANCE or R-TOOLS is expected to
+repeat. A `number_order` LOST is failed by default; when R-TABLE, R-DERIVATION or R-LIST regroups one
+prose unit's numbers into several smaller units (a table's rows, a numbered list's steps), re-run with
+`--allow-regrouped`, which downgrades that LOST to a warning once its four conditions hold (see the
+tool's own docstring on `check_regrouped`) and prints each LOST unit's source text next to the ADDED
+units that cover it. Read that printout, confirm by hand that every regrouping — and any "respectively"
+pairing — is the same digits, and put the printout, or your own confirmation of it, in the progress
+file. **Any other loss is a bug in your edit.**
 
 **5. Checkers**, from §4 for your page type, then always these:
 
@@ -2204,6 +2189,9 @@ caption that wraps badly, a bullet list that lost its indentation.
 * [ ] Every new table has a caption (R-CAPTION): on a step page its lead-in sentence ending in a
       colon; a `:::{table}` wrapper and `:widths:` only when it has a prose column. It obeys the §1
       column budget (≤ 3 prose, ≤ 5 short-cell), tested at 400 px.
+* [ ] `grep -n 'industry-generic\|industry-typical'` on the page: every scope sentence under
+      `## How it is typically performed` has the italic lead-in (R-HEDGE step 1), not a
+      `:::{note}` box.
 * [ ] Every checker and the `-W` build pass.
 * [ ] The phone tiles show no horizontal scrolling outside a table.
 * [ ] Anything doubtful — an arithmetic slip, a number that looks wrong, a source that contradicts the
