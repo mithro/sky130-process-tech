@@ -423,6 +423,19 @@ class XSection:
                 return seg[2]
         return None
 
+    def surface_ref(self, i) -> float | None:
+        """The silicon surface a doped region is measured from: the silicon top, or, where a
+        ``react`` product (a contact silicide) has replaced the top of the silicon, the top of
+        that product.  The silicide consumes silicon; it does not push the junction down."""
+        col = self.cols[i]
+        for k in range(len(col) - 1, -1, -1):
+            if self.mat(col[k][0]) in SILICON:
+                return col[k][2]
+            if (self.layers[col[k][0]].get("op") == "react" and k > 0
+                    and self.mat(col[k - 1][0]) in SILICON):
+                return col[k][2]
+        return None
+
     def open_ranges(self, lid: str) -> list[list[float]]:
         """The x ranges in which layer ``lid`` is absent: the opening a patterned film makes.
         Deriving an implant's extent from this keeps the mask the single source of truth."""
@@ -663,7 +676,7 @@ class XSection:
         if ov.get("follow", "surface") == "flat":
             hi, lo = float(ov["y_top"]), float(ov["y_bot"])
         else:
-            hi = st - float(ov.get("from_surface", 0))
+            hi = self.surface_ref(i) - float(ov.get("from_surface", 0))
             lo = hi - float(ov["thickness"])
         hi = min(hi, st)
         lo = max(lo, -float(self.layers["sub"]["depth"]) - 4)
@@ -3691,6 +3704,21 @@ def selftest() -> int:
                "where": [[40, 120]]})
     if not (xs1.top(xs1.idx(70)) == 26 and xs1.top(xs1.idx(100)) == 6 and xs1.top(xs1.idx(20)) == 0):
         print("SELFTEST FAIL: a conformal patterned film (flat: false, where) is wrong")
+        bad += 1
+    # a contact silicide replaces the top of the silicon under the liner, only where the liner
+    # touches silicon, and a doped region under it keeps its depth from the original surface
+    xs2 = XSection({"material": "si-sub", "depth": 60})
+    xs2.apply({"op": "deposit", "id": "ox", "material": "oxide-dep", "t": 20, "where": [[0, 100]]})
+    xs2.apply({"op": "deposit", "id": "m", "material": "barrier", "t": 5})
+    xs2.apply({"op": "dope", "id": "sd", "material": "sd-n", "follow": "surface",
+               "from_surface": 0, "thickness": 14})
+    xs2.apply({"op": "react", "id": "s", "material": "silicide", "consumes": ["si-sub"],
+               "under": ["barrier"], "t": 5})
+    i_on, i_off = xs2.idx(200), xs2.idx(50)
+    band = xs2.overlay_band(xs2.layers["sd"], i_on)
+    if not (xs2.seg(i_on, "s") == ["s", -5.0, 0.0] and xs2.seg(i_off, "s") is None
+            and band == (-14.0, -5.0) and xs2.overlay_band(xs2.layers["sd"], i_off) == (-14.0, 0.0)):
+        print("SELFTEST FAIL: react (a contact silicide) or the doped region under it is wrong")
         bad += 1
     # a clean spec must lint clean
     clean = _spec_ok()

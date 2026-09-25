@@ -1,0 +1,805 @@
+# S7 — pre-metal dielectric, contact, silicide and local interconnect, steps 089-106.
+#
+# One geometry for the whole module; a figure is "the state after step N". Thicknesses are
+# DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# STARTING STATE. The module continues from the exact end state of the tips and source/drain
+# series (series-tips-sd.yaml, S6): its operations for steps 002-088 are repeated below
+# unchanged, ids and label text included, so the wafer at step 088 is the same drawing in both
+# series. The slice: a 5 V NMOS area on the left (x 0-80) with its N+ source/drain and no gate;
+# the field oxide (x 80-188) with the P+ poly resistor (x 108-160), the slice read through one
+# of its contact heads (S6's illustrative choice: its cap is cut away); the 1.8 V NMOS on the
+# right (x 188-268) with one capped gate (x 236-260), its spacers and its N+ source/drain on the
+# left of the gate (x 188-218). The spacer oxide covers everything. The P-well and the NCHI
+# channel implant stay in the geometry but every figure hides them, as S5's and S6's do.
+#
+# The module, as the pages describe it:
+# * PSG (089) is drawn as a conformal film thick enough to bury everything: it copies the
+#   topography, higher over the resistor and the gate than over the active areas (the CMPP
+#   page's "stands roughly 0.4 um higher over every capped gate line and resistor body").
+# * CMPP (090) polishes it flat. The pages read the polish as stopping on the nitride caps of
+#   the poly lines (inferred). The tallest capped poly is a line on the field oxide; none is in
+#   this slice, whose resistor head has no cap, and in this drawing (as in the PDK's heights)
+#   that head stands higher than the capped 1.8 V gate. So the polished surface is drawn at the
+#   height a nitride-capped poly line on the field oxide would have here (field-oxide top 29 +
+#   poly 20 + nitride cap 10 = 59 u), which leaves a thin layer of glass over the resistor head
+#   and more over the gate. That is the page's reading made concrete; how much glass is left
+#   anywhere is not public, and every figure that shows the polished surface says so.
+# * NCAPOX (091) is a flat blanket oxide on the polished glass.
+# * LICM1/LICM1E (093, 094): three contact holes, one on each landing surface of the slice:
+#   the 5 V source/drain (x 24-56), the resistor head inside the nitride cut (x 118-150) and the
+#   1.8 V source/drain beside the gate (x 189-221). The walls taper at the PDK's 10 deg "Licon1
+#   etch angle"; the drawn width is not to scale (the PDK's 0.17 um drawn opening and 0.08 um
+#   bottom do not reconcile with 10 deg over the full ILD, as the LICM1E page says). The etch
+#   clears the oxides at the bottom of the diffusion holes (the LICM1E page: "which the etch must
+#   also clear") and stops on the silicon and on the resistor's poly; the hole over the poly is
+#   shallower (the page's cap-stop consequence). The resist stays on at 094: the LICM1E page
+#   puts the strip in SACETCH or at the head of ALLY1, so 095 strips it.
+# * TI/TIN1 (097): Ti then TiN, drawn as ONE conformal film (both are the barrier material; the
+#   thicknesses are not public). CSIL (098) reacts it with the silicon and the poly at the hole
+#   bottoms only: a silicide disc under the liner in each hole and nowhere else (the CSIL page's
+#   contact-only reading, an inference from the PDK's sheet resistances). The disc replaces the
+#   top of the silicon; the doped regions are measured from the original surface.
+# * WDEP (099) is conformal and thick enough to close every hole; WCMPLI (100) polishes the
+#   tungsten and the liner off the field down to the cap oxide, leaving flush plugs.
+# * LITIN (101) is a flat TiN film; LI1M (102) leaves resist over one pad on each plug, enclosing
+#   it (licon.4, li.5); where li runs in a real layout is not drawn. LI1ME (103) etches the TiN
+#   to the cap oxide and the resist is stripped (the page: "The resist is stripped afterwards").
+# * LINIT (104) is a thin conformal nitride; NILD2 (105) a conformal oxide over it; CMPL (106)
+#   polishes it flat, leaving oxide over the LI nitride (a fixed removal; not public how much).
+#
+# Thicknesses drawn: PSG 46 u as deposited, polished to 59 u above the silicon; cap oxide 10 u;
+# contact resist 30 u; liner 5 u; silicide 5 u; tungsten 14 u; LI TiN 8 u; LI resist 30 u; LINT
+# 5 u; NILD2 30 u as deposited, polished to 98 u. Series labels carry no numbers.
+note_order: newest
+substrate:
+  material: si-sub
+  depth: 160
+  label:
+    title: "Silicon wafer"
+    basis: public
+ops:
+  # ================================================================ steps 002-088, as in series-tips-sd.yaml
+  # ---- steps 002-063, as in series-poly.yaml
+  # ---- steps 002-013, as in series-isolation.yaml
+  - step: "002"
+    op: deposit
+    id: padox
+    material: oxide-thermal
+    t: 5
+    label:
+      title: "Pad oxide"
+      note: "from BOX, step 002; still in place, we infer"
+      basis: inferred
+  - step: "003"
+    op: deposit
+    id: isonit
+    material: nitride
+    t: 24
+    label:
+      title: "Nitride hard mask"
+      basis: public
+  - step: "004"
+    op: deposit
+    id: fomres
+    material: resist
+    t: 38
+    where: [[0, 79.5], [188.5, 268]]
+    label:
+      title: "Photoresist"
+      basis: public
+  - step: "005"
+    op: etch
+    materials: [nitride, oxide-thermal]
+    where_open: fomres
+  - step: "006"
+    op: etch
+    materials: [si-sub]
+    where_open: fomres
+    depth: 56
+    taper_deg: 9
+    corner_r: 9
+  - step: "006"
+    op: strip
+    materials: [resist]
+  - step: "010"
+    op: deposit
+    id: liner
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Liner oxide"
+      basis: public
+  - step: "011"
+    op: deposit
+    id: fox
+    material: oxide-dep
+    fill_to: 60
+    route: over
+    label:
+      title: "Field oxide"
+      basis: public
+  - step: "012"
+    op: planarise
+    stop_on: nitride
+  - step: "013"
+    op: strip
+    materials: [nitride]
+  # ---- the P-well under both logic areas (PWI, step 027), without its mask
+  - step: "027"
+    op: dope
+    id: pwell
+    material: well-p
+    where: [[0, 268]]
+    follow: flat
+    y_top: 0
+    y_bot: -76
+    anchor_y: -64
+    label:
+      title: "P-well"
+      note: "PWI, step 027"
+      basis: public
+  - step: "034"
+    op: anneal
+  # ---- the logic silicon cleared at ONOME (step 042): the oxide over the active areas goes
+  - step: "042"
+    op: etch
+    materials: [oxide-thermal]
+    where: [[0, 80], [188, 268]]
+
+  # ---- the thick gate oxide, grown on every active area
+  - step: "043"
+    op: deposit
+    id: gox
+    material: oxide-thermal
+    t: 10
+    only_on: [si-sub]
+    label:
+      title: "Thick gate oxide"
+      note: "grown on every active area at step 043"
+      basis: public
+
+  # ---- the low-voltage oxide mask: resist over the 5 V area, a window over the 1.8 V area
+  - step: "044"
+    op: deposit
+    id: lvores
+    material: resist
+    t: 38
+    where: [[0, 134]]
+    route: top
+    label:
+      title: "Photoresist"
+      note: "low-voltage oxide mask, LVOM, step 044"
+      basis: public
+
+  # ---- the 1.8 V NMOS channel implant through the window
+  - step: "045"
+    op: dope
+    id: nchi
+    material: implant
+    where: [[190, 268]]
+    follow: surface
+    from_surface: 0
+    thickness: 9
+    z: 1
+    label:
+      title: "NMOS channel implant"
+      note: "NCHI, step 045; its species and depth are not public"
+      basis: public
+  - step: "045"
+    op: ions
+    where_open: lvores
+    tilt_deg: 0
+    label:
+      title: "NCHI implant"
+      note: "species, energy, dose not public"
+      basis: public
+
+  # ---- the thick oxide is etched out of the window; the resist is stripped
+  - step: "046"
+    op: etch
+    materials: [oxide-thermal]
+    where_open: lvores
+  - step: "046"
+    op: strip
+    materials: [resist]
+
+  # ---- the thin gate oxide, grown on the silicon GOXETCH cleared
+  - step: "047"
+    op: deposit
+    id: thinox
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Thin gate oxide"
+      note: "LVGOX, step 047"
+      basis: public
+
+  # ---- the gate film
+  - step: "048"
+    op: deposit
+    id: poly
+    material: poly
+    t: 20
+    route: over
+    label:
+      title: "Gate film"
+      note: "deposited at SAGD, step 048"
+      basis: public
+
+  # ---- the resistor-protect mask and the gate implant
+  - step: "049"
+    op: deposit
+    id: rpmres
+    material: resist
+    t: 38
+    where: [[100, 168]]
+    label:
+      title: "Photoresist"
+      note: "RPM, step 049; over the future resistor body"
+      basis: inferred
+  - step: "050"
+    op: dope
+    id: polyn
+    material: sd-n
+    host: poly
+    where_open: rpmres
+    label:
+      title: "n-type gate film"
+      note: "gate implant, step 050"
+      basis: public
+  - step: "050"
+    op: ions
+    where_open: rpmres
+    tilt_deg: 0
+    label:
+      title: "P1I implant"
+      note: "n-type; species, energy and dose are not public"
+      basis: public
+  - step: "051"
+    op: strip
+    materials: [resist]
+
+  # ---- the reverse resistor mask and the P+ resistor implant
+  - step: "052"
+    op: deposit
+    id: rrpmres
+    material: resist
+    t: 38
+    where: [[0, 100], [168, 268]]
+    label:
+      title: "Photoresist"
+      note: "RRPM, step 052; open over the resistor body"
+      basis: inferred
+  - step: "053"
+    op: dope
+    id: polyp
+    material: sd-p
+    host: poly
+    where_open: rrpmres
+    label:
+      title: "p-type resistor body"
+      note: "resistor implant, step 053"
+      basis: public
+  - step: "053"
+    op: ions
+    where_open: rrpmres
+    tilt_deg: 0
+    label_x: 60
+    label:
+      title: "PRI implant"
+      note: "p-type; species, energy and dose are not public"
+      basis: public
+  - step: "054"
+    op: strip
+    materials: [resist]
+
+  # ---- the ultra-high-resistor mask: its windows lie outside this slice
+  - step: "055"
+    op: deposit
+    id: urpmres
+    material: resist
+    t: 38
+    where: [[0, 268]]
+    label:
+      title: "Photoresist"
+      note: "URPM, step 055; it opens only over the ultra-high-value resistors"
+      basis: public
+  - step: "056"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label_x: 10
+    label:
+      title: "UPRI implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "057"
+    op: strip
+    materials: [resist]
+
+  # ---- the caps
+  - step: "058"
+    op: deposit
+    id: nit
+    material: nitride
+    t: 10
+    label:
+      title: "Nitride cap"
+      note: "GATENIT, step 058"
+      basis: public
+  - step: "059"
+    op: deposit
+    id: capox
+    material: oxide-dep
+    t: 8
+    label:
+      title: "Oxide cap"
+      note: "POC, step 059"
+      basis: public
+
+  # ---- the backside film removal: nothing on the front changes (see the header)
+  - step: "060"
+    op: etch
+    materials: [oxide-dep]
+    depth: 0
+
+  # ---- the gate mask and the gate etch
+  - step: "061"
+    op: deposit
+    id: p1mres
+    material: resist
+    t: 30
+    where: [[236, 260], [108, 160]]
+    label:
+      title: "Photoresist"
+      note: "gate mask, step 061; a line wherever poly is to remain"
+      basis: public
+  - step: "062"
+    op: etch
+    materials: [oxide-dep]
+    where_open: p1mres
+  - step: "062"
+    op: etch
+    materials: [nitride]
+    where_open: p1mres
+  - step: "062"
+    op: etch
+    materials: [poly]
+    where_open: p1mres
+  - step: "062"
+    op: strip
+    materials: [resist]
+
+  # ---- the re-oxidation: silicon and the poly sidewalls; the capped poly top does not grow.
+  # The thinner oxide on the resistor's sidewalls cannot be drawn by this operation (the
+  # resistor stands on field oxide) and is left out; the IOX45 caption says so.
+  - step: "063"
+    op: deposit
+    id: iox
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub, oxide-thermal, poly]
+    label:
+      title: "Re-oxidation oxide"
+      note: "grown at step 063; thin, we infer"
+      basis: inferred
+
+  # ================================================================ S6: tips and halos
+  # ---- the N-tip mask: open over the 1.8 V NMOS; resist over the 5 V area and the field
+  - step: "064"
+    op: deposit
+    id: ntmres
+    material: resist
+    t: 38
+    where: [[0, 176]]
+    label:
+      title: "Photoresist"
+      note: "NTM, step 064; open over the standard NMOS"
+      basis: public
+
+  # ---- the arsenic tip, self-aligned to the gate
+  - step: "065"
+    op: dope
+    id: tipn
+    material: tip-n
+    where: [[188, 236], [260, 268]]
+    follow: surface
+    from_surface: 0
+    thickness: 6
+    z: 2
+    label:
+      title: "n-type tip"
+      note: "ASTI, step 065"
+      basis: public
+  - step: "065"
+    op: ions
+    where_open: ntmres
+    tilt_deg: 7
+    label:
+      title: "ASTI implant"
+      note: "arsenic; energy and dose are not public"
+      basis: public
+
+  # ---- the boron halo through the same resist
+  - step: "066"
+    op: dope
+    id: halo
+    material: implant
+    where: [[188, 241], [255, 268]]
+    follow: surface
+    from_surface: 0
+    thickness: 10
+    z: 1
+    label:
+      title: "Halo"
+      note: "BHI, step 066; a p-type pocket"
+      basis: typical
+  - step: "066"
+    op: ions
+    where_open: ntmres
+    tilt_deg: 0
+    label:
+      title: "BHI implant"
+      note: "species, energy, dose and tilt are not public"
+      basis: public
+  - step: "067"
+    op: strip
+    materials: [resist]
+
+  # ---- the HV N-tip mask: a thin resist, open over the 5 V NMOS
+  - step: "068"
+    op: deposit
+    id: hvntmres
+    material: resist
+    t: 10
+    flat: false
+    where: [[92, 268]]
+    label:
+      title: "Thin photoresist"
+      note: "HVNTM, step 068; open over the high-voltage NMOS"
+      basis: public
+
+  # ---- the 5 V tip, at a large tilt; no gate in the 5 V area of this slice
+  - step: "069"
+    op: dope
+    id: hvtip
+    material: tip-n
+    where: [[0, 80]]
+    follow: surface
+    from_surface: 0
+    thickness: 9
+    z: 2
+    label:
+      title: "High-voltage n-type tip"
+      note: "HVASTI, step 069"
+      basis: public
+  - step: "069"
+    op: ions
+    where_open: hvntmres
+    tilt_deg: 40
+    label:
+      title: "HVASTI implant"
+      note: "arsenic; energy and dose are not public"
+      basis: public
+  - step: "070"
+    op: strip
+    materials: [resist]
+
+  # ---- the SONOS tip mask: its windows lie outside this slice
+  - step: "071"
+    op: deposit
+    id: ldntmres
+    material: resist
+    t: 38
+    where: [[0, 268]]
+    label:
+      title: "Photoresist"
+      note: "LDNTM, step 071; open only over SONOS transistors"
+      basis: public
+  - step: "072"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label_x: 10
+    label:
+      title: "LDASTI implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "073"
+    op: ions
+    where: [[0, 268]]
+    tilt_deg: 0
+    label_x: 10
+    label:
+      title: "LDBHI implant"
+      note: "stopped here by the resist"
+      basis: public
+  - step: "074"
+    op: strip
+    materials: [resist]
+
+  # ---- the tip anneal: nothing the drawing shows moves
+  - step: "075"
+    op: anneal
+
+  # ================================================================ S6: spacers
+  - step: "076"
+    op: deposit
+    id: spnit
+    material: nitride
+    t: 8
+    label:
+      title: "Spacer nitride"
+      note: "SPNIT, step 076"
+      basis: public
+
+  # ---- the unmasked etch-back: the film's own thickness off every horizontal surface ...
+  - step: "077"
+    op: etch
+    materials: [nitride]
+    depth: 8
+  # ---- ... and the over-etch clears the stringers at the field-oxide shoulders (see header)
+  - step: "077"
+    op: etch
+    materials: [nitride]
+    where: [[64, 90], [178, 204]]
+
+  # ---- the nitride cut: a window over the resistor (the slice read through its contact head)
+  - step: "078"
+    op: deposit
+    id: npcres
+    material: resist
+    t: 30
+    where: [[0, 96], [172, 268]]
+    label:
+      title: "Photoresist"
+      note: "NPCM, step 078; a cut over the resistor head"
+      basis: public
+  - step: "079"
+    op: etch
+    materials: [oxide-dep]
+    where: [[108, 160]]
+  - step: "079"
+    op: etch
+    materials: [nitride]
+    where_open: npcres
+    depth: 18
+  - step: "079"
+    op: strip
+    materials: [resist]
+
+  # ---- the spacer oxide, conformal and blanket
+  - step: "080"
+    op: deposit
+    id: spox
+    material: oxide-dep
+    t: 5
+    label:
+      title: "Spacer oxide"
+      note: "SPOX, step 080; read as the PDK's oxide spacer"
+      basis: inferred
+
+  # ================================================================ S6: source/drain
+  # ---- the P+ mask: open over the resistor (rpm.4); resist over both NMOS areas
+  - step: "081"
+    op: deposit
+    id: psdres
+    material: resist
+    t: 38
+    where: [[0, 96], [172, 268]]
+    label:
+      title: "Photoresist"
+      note: "PSDM, step 081; open over the resistor"
+      basis: public
+  - step: "082"
+    op: ions
+    where_open: psdres
+    tilt_deg: 0
+    pitch: 16
+    label:
+      title: "PSDI implant"
+      note: "p-type; species, energy and dose are not public"
+      basis: public
+  - step: "083"
+    op: ions
+    where_open: psdres
+    tilt_deg: 0
+    pitch: 16
+    label:
+      title: "2PSDI implant"
+      note: "p-type; what it adds is not public"
+      basis: public
+  - step: "084"
+    op: strip
+    materials: [resist]
+
+  # ---- the N+ mask: open over both NMOS areas; resist over the field and the resistor (rpm.6)
+  - step: "085"
+    op: deposit
+    id: nsdres
+    material: resist
+    t: 38
+    where: [[84, 184]]
+    label:
+      title: "Photoresist"
+      note: "NSDM, step 085; open over every NMOS"
+      basis: public
+  - step: "086"
+    op: dope
+    id: nsd
+    material: sd-n
+    where: [[0, 80], [188, 218]]
+    follow: surface
+    from_surface: 0
+    thickness: 14
+    z: 3
+    route: over
+    label:
+      title: "N+ source/drain"
+      note: "NSDI, step 086"
+      basis: public
+  - step: "086"
+    op: ions
+    where_open: nsdres
+    tilt_deg: 0
+    label_x: 199
+    label:
+      title: "NSDI implant"
+      note: "species, energy, dose not public"
+      basis: public
+  - step: "087"
+    op: strip
+    materials: [resist]
+
+  # ---- the source/drain anneal: nothing the drawing shows moves
+  - step: "088"
+    op: anneal
+
+  # ================================================================ S7: pre-metal dielectric
+  # ---- the phosphosilicate glass, thick enough to bury everything; it copies the topography
+  - step: "089"
+    op: deposit
+    id: psg
+    material: psg
+    t: 46
+    label:
+      title: "Phosphosilicate glass"
+      note: "PSG, step 089"
+      basis: public
+  # ---- the polish: flat, at the height of a nitride-capped poly line on the field (header)
+  - step: "090"
+    op: planarise
+    to: 59
+  # ---- the cap oxide, a flat blanket
+  - step: "091"
+    op: deposit
+    id: ncap
+    material: oxide-dep
+    t: 10
+    label:
+      title: "Cap oxide"
+      note: "NCAPOX, step 091"
+      basis: public
+  # ---- the second rapid thermal anneal: nothing the drawing shows moves
+  - step: "092"
+    op: anneal
+
+  # ================================================================ S7: the contacts
+  # ---- the contact mask: three holes, one on each landing surface of the slice
+  - step: "093"
+    op: deposit
+    id: licres
+    material: resist
+    t: 30
+    where: [[0, 24], [56, 118], [150, 189], [221, 268]]
+    label:
+      title: "Photoresist"
+      note: "contact mask, step 093"
+      basis: public
+  # ---- the contact etch: tapered holes through every oxide, stopping on silicon and poly
+  - step: "094"
+    op: etch
+    materials: [oxide]
+    where_open: licres
+    depth: 80
+    taper_deg: 10
+  # ---- the resist comes off at SACETCH (the LICM1E page's reading)
+  - step: "095"
+    op: strip
+    materials: [resist]
+  # ---- the alloy anneal: nothing the drawing shows moves
+  - step: "096"
+    op: anneal
+  # ---- the liner: titanium, then titanium nitride, drawn as one conformal film
+  - step: "097"
+    op: deposit
+    id: ctliner
+    material: barrier
+    t: 5
+    label:
+      title: "Ti/TiN liner"
+      note: "step 097; titanium, then titanium nitride, drawn as one film"
+      basis: public
+  # ---- the contact silicide: only where the liner touches silicon or poly, in the holes
+  - step: "098"
+    op: react
+    id: sil
+    material: silicide
+    consumes: [si-sub, poly]
+    under: [barrier]
+    t: 5
+    where: [[24, 56], [118, 150], [189, 221]]
+    label:
+      title: "Titanium silicide"
+      note: "CSIL, step 098; only in the contact holes, we infer"
+      basis: inferred
+  # ---- the tungsten: conformal, thick enough to close every hole
+  - step: "099"
+    op: deposit
+    id: wfill
+    material: tungsten
+    t: 14
+    label:
+      title: "Tungsten"
+      note: "WDEP, step 099"
+      basis: public
+  # ---- the tungsten polish, down to the cap oxide: flush plugs
+  - step: "100"
+    op: planarise
+    to: 69
+
+  # ================================================================ S7: the local interconnect
+  - step: "101"
+    op: deposit
+    id: li
+    material: barrier
+    t: 8
+    label:
+      title: "Local interconnect"
+      note: "titanium nitride, LITIN, step 101"
+      basis: public
+  # ---- the LI mask: a pad over each plug, enclosing it
+  - step: "102"
+    op: deposit
+    id: li1mres
+    material: resist
+    t: 30
+    where: [[18, 62], [112, 156], [183, 227]]
+    label:
+      title: "Photoresist"
+      note: "local-interconnect mask, step 102"
+      basis: public
+  # ---- the LI etch, stopping on the cap oxide; the resist is stripped afterwards
+  - step: "103"
+    op: etch
+    materials: [barrier]
+    where_open: li1mres
+  - step: "103"
+    op: strip
+    materials: [resist]
+  # ---- the LI nitride cap
+  - step: "104"
+    op: deposit
+    id: lint
+    material: nitride
+    t: 5
+    label:
+      title: "LI nitride cap"
+      note: "LINT in the PDK; LINIT, step 104"
+      basis: public
+  # ---- the inter-level oxide over the LI, and its polish
+  - step: "105"
+    op: deposit
+    id: nild2
+    material: oxide-dep
+    t: 30
+    label:
+      title: "Inter-level oxide"
+      note: "deposited at step 105"
+      basis: public
+  - step: "106"
+    op: planarise
+    to: 98
