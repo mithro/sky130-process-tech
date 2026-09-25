@@ -28,7 +28,7 @@
 
 `PRIS` removes the reverse resistor-protect resist printed at
 {ref}`RRPM <step-052>` after it has masked the resistor implant
-{ref}`PRI <step-053>`, and cleans the wafer for the next mask,
+{ref}`PRI <step-053>`. It cleans the wafer for the next mask,
 {ref}`URPM <step-055>`. It is the second of the three strips in the
 gate module, sitting between {ref}`P1IS <step-051>` and
 {ref}`UPRIS <step-057>`, and like them it works on a bare
