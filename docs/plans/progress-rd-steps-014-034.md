@@ -179,3 +179,31 @@ several shorter ones. The `numbers` category itself (condition (a)) shows no los
 nothing actually disappeared. All other checkers pass; `-W` build clean. Screenshots (desktop
 + 400 px) read cleanly top to bottom, including the dropdown summary line, the Resources and
 Related-steps sections, and the reference lists.
+
+### 016-lvtnis.md — done (no in-force dropdown on this page)
+
+Rules applied: R-CATEGORY (classification sentence + plain background paragraph + a "specific
+to this step" paragraph left unlabelled, since it is a single remaining unit once the generic
+background sentence is set aside — Guide problem 3 convention), R-PARA (the "Why this step
+exists" paragraph split at its consequence seam; the 183-word "Plasma ash" item → lead + three
+indented continuation paragraphs; the 66-word "Wet strip and clean" item → lead +
+continuation), R-SENTENCE (the em-dash/semicolon sentences throughout, including the
+oxide-last sentence after "How it is typically performed"), R-HEDGE step 1 (italic lead-in),
+R-TOOLS (4 "Strength:" bullets → Tool|Evidence recap table, since 4 meets the rule 5
+threshold, plus the SkyWater says/Tool exists/Runs this step split), R-RELATED (`Previous:`
+and `Mask:` split onto separate bullets; `Same category:` for the companion-strips bullet),
+R-OPENQ (bold labels added to all three bullets), R-GLANCE (box last; "Public numbers" is
+"none published for SKY130" since no SKY130-specific measured value appears on this page).
+R-TABLE/R-DERIVATION: no candidate.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 0; list items > 60 words 2 →
+0; sentences > 45 words 4 → 0; table cells > 25 words 0 → 0. This page has no `{figure}`
+caption long enough to trip Guide problem 10 and no dense multi-number sentence, so the
+measurement comes back completely clean, unlike 014/015.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/016-lvtnis.md`:
+0 LOST outside `number_order`; the one `number_order` LOST/ADDED mismatch is "75–80" (the
+SC-1 temperature) stranded alone in its own sentence after the split — the same Guide-problem-11
+pattern, confirmed present and unchanged on the page. `quotes` and `hedges` show no LOST at
+all. All other checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly
+top to bottom, including the new recap table and all four R-TOOLS sub-bullet blocks.

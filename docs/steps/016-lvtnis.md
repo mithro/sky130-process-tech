@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`LVTNI <step-015>` |
 | **Next step** | {ref}`NWM <step-017>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the implanted resist from `LVTNI` and cleans the
+  wafer for the next mask.
+* **Why:** photoresist must be gone before recoating, and implant
+  residue must be removed before the next implant and the RTAI
+  anneal.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP / Iridia RF microwave /
+  Mattson Aspen II ashers — strong (existence); inference
+  (assignment).[^skw-01]
+* **Not public:** the SKY130 ash recipe and wet sequence (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `LVTNIS` removes the photoresist that was patterned at
@@ -41,11 +57,15 @@ clean sequence can be used without restriction.
 ## Step category
 
 `LVTNIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type. The category page explains why implant strips are
+*post-implant* type.
+
+The category page explains why implant strips are
 "longer and more carefully engineered than etch strips": the ion beam
 carbonises the top of the resist into a {term}`crust <implant crust>` that {term}`ashes <ash>` slowly and can
-{term}`pop <popping>`. For this particular strip the crust is thin, because the dose is
-low and the energy modest; the strips after the well masks
+{term}`pop <popping>`.
+
+For this particular strip the crust is thin, because the dose is
+low and the energy modest. The strips after the well masks
 ({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`), which have seen
 hundreds of keV to MeV ions and summed doses near 10¹³ cm⁻², and above
 all the source/drain strips ({ref}`PDIS <step-084>`,
@@ -60,7 +80,9 @@ resist cannot be spun over an old one, and any organic residue under the
 well implant locally. The resist also carries the implanted species in
 its crust and whatever metals the implanter's beam-line has sputtered
 onto it; both must be removed before the wafer sees the next implant
-and, eventually, the {ref}`RTAI <step-034>` anneal. A poorly stripped
+and, eventually, the {ref}`RTAI <step-034>` anneal.
+
+A poorly stripped
 implant resist shows up as popped flakes — the patent literature notes
 that "the popping problem … causes the photoresist to become even
 harder"[^pat-strip-mosel] and as threshold-voltage outliers where
@@ -68,22 +90,27 @@ residue {term}`shadowed <shadowing>` a later implant.
 
 ## How it is typically performed
 
-An industry-generic implant-strip sequence for a 200 mm, 130 nm-era
-fab:
+*An industry-generic implant-strip sequence for a 200 mm, 130 nm-era
+fab:*
 
 1. **Plasma ash.** Downstream (remote) microwave or RF oxygen plasma.
+
    The problem specific to implanted resist is that "the top portion of
    the photoresist layer is transformed into a carbonized crust that is
-   difficult to remove"[^pat-strip-tsmc] and that during a conventional
+   difficult to remove".[^pat-strip-tsmc] During a conventional
    "high temperature (>200° C.) dry ashing" the volatile bulk resist can
    "build up pressure beneath the implant-hardened surface layer" until
-   it pops.[^pat-strip-mosel] The standard countermeasure is a two-step
+   it pops.[^pat-strip-mosel]
+
+   The standard countermeasure is a two-step
    recipe: a first step at low temperature — "removed by oxygen and
    nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — until the crust is gone, then a
    hotter bulk step. For a low-dose channel implant like `LVTNI` many
    fabs use a single-step recipe, because the crust is thin (industry
-   practice).[^txt-05] SkyWater's list describes ashers with exactly
+   practice).[^txt-05]
+
+   SkyWater's list describes ashers with exactly
    this gas set and temperature range: "Gasonic PEP, remote microwave
    plasma, N2, O2, 120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4,
    NH3, H2/N2, 40C-270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2,
@@ -91,9 +118,11 @@ fab:
    "monatomic oxygen is electrically neutral" and the remote plasma
    "prevents damage to the wafer surface".[^wiki-ash]
 2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide ({term}`SPM`,
-   "piranha") to dissolve the last organics — "a typical mixture is 3
+   "piranha") to dissolve the last organics.
+
+   The category page, citing Wikipedia, gives "a typical mixture is 3
    parts of concentrated sulfuric acid and 1 part of 30 wt. % hydrogen
-   peroxide solution" (category page, citing Wikipedia) — followed by
+   peroxide solution". This is followed by
    {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and, optionally, {term}`SC-2`
    (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's Akrion Gamma bench
    lists "Sulfuric, SC1" among its chemistries.[^skw-01]
@@ -104,8 +133,8 @@ fab:
 
 We infer that the pad oxide is left in place: a dilute-HF "oxide-last"
 step is avoided here because the same oxide must still screen the three
-implants that follow ({ref}`NWI <step-018>` to {ref}`LVTPI <step-020>`);
-some flows accept a small oxide loss in SC-1 as the price of
+implants that follow ({ref}`NWI <step-018>` to {ref}`LVTPI <step-020>`).
+Some flows accept a small oxide loss in SC-1 as the price of
 cleanliness.[^txt-02]
 
 ## Machines typically used
@@ -119,20 +148,29 @@ cleanliness.[^txt-02]
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** — all
-  named on SkyWater's facilities page with their gases and
-  temperatures.[^skw-01] Strength: **strong** for existence; the
-  assignment of this particular strip to any one of them is an
-  inference.
-* **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE")[^skw-01] for the SPM/SC-1 sequence. Strength: strong for
-  existence.
-* **DNS wet bench and FSI Mercury** ("industry standard
-  HF/SC1/SC2")[^skw-01] as alternative clean tools. Strength: strong for
-  existence.
-* **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave, Mattson Aspen II | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench and FSI Mercury | strong (existence) |
+| KLA-Tencor AIT | medium |
+
+* **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers**
+  - *SkyWater says:* all named on SkyWater's facilities page with
+    their gases and temperatures.[^skw-01]
+  - *Tool exists:* strong.
+  - *Runs this step:* the assignment of this particular strip to any
+    one of them is an inference.
+* **Akrion Gamma batch wet bench**
+  - *SkyWater says:* lists "Sulfuric, SC1, phosphoric, BOE".[^skw-01]
+  - *Tool exists:* strong for existence, for the SPM/SC-1 sequence.
+* **DNS wet bench and FSI Mercury**
+  - *SkyWater says:* lists "industry standard HF/SC1/SC2".[^skw-01]
+  - *Tool exists:* strong for existence, as alternative clean tools.
+* **KLA-Tencor AIT** (patterned-wafer inspection)
+  - *SkyWater says:* our reading of "AIT" in a SkyWater job posting's
+    "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -151,13 +189,14 @@ cleanliness.[^txt-02]
 ## Related steps and cross-references
 
 * Previous: {ref}`LVTNI <step-015>` (the implant whose resist is
-  stripped); mask: {ref}`LVTNM <step-014>`.
+  stripped).
 * Next: {ref}`NWM <step-017>` (the N-well mask coated on the cleaned
   surface).
-* Companion strips in this module: {ref}`LVTPIS <step-021>`,
-  {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`,
-  {ref}`PWDEIS <step-033>`; the earlier {ref}`DNIS <step-009>`
-  stripped an MeV-implanted resist.
+* Mask: {ref}`LVTNM <step-014>`.
+* Same category: companion strips in this module —
+  {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`,
+  {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`; the earlier
+  {ref}`DNIS <step-009>` stripped an MeV-implanted resist.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -228,12 +267,12 @@ cleanliness.[^txt-02]
 
 ## Open questions
 
-* The SKY130 ash recipe (single- or two-step, temperatures, gases) and
-  wet sequence are not public.
-* Whether the clean includes an SC-2 step, and whether any oxide
-  thinning is budgeted here, is unknown.
-* Which of the three ashers on SkyWater's public tool list[^skw-01] runs
-  implant strips is not stated publicly.
+* **Ash and wet-sequence recipe.** The SKY130 ash recipe (single- or
+  two-step, temperatures, gases) and wet sequence are not public.
+* **SC-2 and oxide budget.** Whether the clean includes an SC-2 step,
+  and whether any oxide thinning is budgeted here, is unknown.
+* **Asher assignment.** Which of the three ashers on SkyWater's public
+  tool list[^skw-01] runs implant strips is not stated publicly.
 
 <!-- footnotes -->
 
