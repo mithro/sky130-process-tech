@@ -9,8 +9,8 @@ alt: >-
   the tops and sides of the pads and the oxide between them.
 caption: >-
   Before, the TiN pads on the cap oxide; after, a thin nitride over everything, following the
-  pads' tops and sides. The PDK's stack diagram labels this film "LINT K=7.3" and dimensions it
-  0.075 µm;[^pdk-04] its thickness is not drawn to scale, and that it is a plasma-deposited
+  pads' tops and sides. The PDK's stack diagram names the film "LINT K=7.3", 0.075 µm
+  thick;[^pdk-04] its thickness is not drawn to scale, and that it is a plasma-deposited
   nitride is the page's inference. The glass, the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the transistors'
   films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the
   spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle)

@@ -23,6 +23,14 @@ of silicon nitride (7–7.5; the {ref}`SPNIT <step-076>` {term}`spacer` nitride
 is labelled 7.5), so the film's identity is public even though its
 deposition method is not.
 
+:::{figure} /_static/figures/mol-104-linit.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step three thin dark pads, one on each metal plug, sit on a flat oxide. After it a thin hatched film of even thickness covers the tops and sides of the pads and the oxide between them.
+:width: 560px
+:name: fig-mol-104-linit
+
+Before, the TiN pads on the cap oxide; after, a thin nitride over everything, following the pads' tops and sides. The PDK's stack diagram names the film "LINT K=7.3", 0.075 µm thick;[^pdk-04] its thickness is not drawn to scale, and that it is a plasma-deposited nitride is the page's inference. The glass, the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 Three things the nitride does are visible from the PDK's own
 structure. It sits between the 0.1 µm `li` conductor and the
 "NILD2" oxide[^pdk-04] that {ref}`NILD2 <step-105>` will deposit, so

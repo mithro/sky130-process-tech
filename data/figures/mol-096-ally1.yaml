@@ -14,8 +14,7 @@ caption: >-
   metal yet on the wafer. Nothing is deposited or removed, and nothing the drawing shows moves.
   The page reads the anneal as a hydrogen anneal that passivates interface damage and drives
   water out of the glass and the cap oxide before the liner seals them, both inferred; SkyWater
-  lists "H2 and forming gas alloy" among its furnace processes[^skw-01] but does not say where it
-  is used. The ambient, temperature and time are not public. The colours mark the type of the
+  lists a "H2 and forming gas alloy" process,[^skw-01] without naming the step. The ambient, temperature and time are not public. The colours mark the type of the
   doping, not a depth profile. The transistors' films (the spacers, the caps, the gate oxides,
   the gate film, the re-oxidation oxide and the spacer oxide), the doped regions, and the
   field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to

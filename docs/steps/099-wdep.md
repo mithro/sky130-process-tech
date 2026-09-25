@@ -25,6 +25,14 @@ of the order of 0.2–0.3 µm for a 0.17 µm contact[^pdk-periph] with
 polishing margin — is the industry-typical target for a plug fill
 (category page[^txt-01]).
 
+:::{figure} /_static/figures/mol-099-wdep.svg
+:alt: Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other. Before the step a thin dark film lines the hole, with a teal disc under it at the bottom. After it a cross-hatched grey metal fills the hole completely and covers the whole flat top in an even layer.
+:width: 560px
+:name: fig-mol-099-wdep
+
+A close-up of the 1.8 V source/drain contact, beside the gate. Before, the lined hole with its silicide; after, tungsten grown from every surface has closed the hole and covers the field. The film thickness is not public; the page gives 0.2–0.3 µm as an industry-typical plug-fill target,[^txt-01] and it is not drawn to scale. The thin nucleation layer and the seam where the growth from the walls meets are not drawn. The other two holes are filled in the same way, outside this view. The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers, the thin oxides, the silicon and its doped regions, the silicide and the field oxide at the left edge are drawn but not labelled, as is the contact liner in the lower panel, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 Two public facts anchor the step. SkyWater lists "Lam/Novellus PECVD
 Tungsten" with the sub-bullets "plug fill" and "PNL option for high
 aspect ratio (up to 10:1)" among its deposition tools,[^skw-01] and

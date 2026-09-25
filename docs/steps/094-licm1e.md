@@ -33,6 +33,14 @@ resist is stripped and the wafer cleaned (the
 {ref}`SACETCH <step-095>` and the head of {ref}`ALLY1 <step-096>`,
 on our reading), and the holes are lined, silicided and filled.
 
+:::{figure} /_static/figures/mol-094-licm1e.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist with three openings lies on a thin flat oxide over a dotted glass. After it three holes with sloping walls go down through the oxide and the glass: two deep ones to the silicon of the two active areas, and a shallower one in the middle to the top of the wide stack. The resist is still on.
+:width: 560px
+:name: fig-mol-094-licm1e
+
+Before, the contact resist; after, the three holes etched through the cap oxide and the glass, and at the two diffusion holes through the thin oxides on the silicon as well, which the etch must also clear. The resist is still on: the page places its strip at SACETCH or the start of ALLY1. The walls are drawn sloping at the PDK's 10° "Licon1 etch angle";[^pdk-03] the page notes that this angle, the 0.17 µm drawn opening[^pdk-periph] and the 0.08 µm "Standard Licon bottom CD"[^pdk-03] do not reconcile over the full 0.5 µm of dielectric, and the drawn widths are not to scale. The hole over the resistor's poly is shallower than those over the silicon, which follows from the cap-stop reading of the polish; whether it is so is not public. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The doped regions are not labelled either, and in the lower panel the resist is not labelled. Not to scale.
+:::
+
 Three landing surfaces make this etch unusual. A diffusion or tap
 contact lands on silicon between two nitride {term}`spacers <spacer>` and, where the
 0.055 µm licon.11 margin[^pdk-periph] is used up by {term}`overlay`, on the

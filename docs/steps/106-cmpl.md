@@ -29,6 +29,14 @@ middle-of-line module: the surface it leaves is the one on which the
 step recurs, as `CMPM`, over every metal level
 ({ref}`CMPM <step-116>` and later).
 
+:::{figure} /_static/figures/mol-106-cmpl.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thick pale oxide, lower near the right-hand edge, covers three thin dark pads under a thin hatched film. After it the oxide is polished flat and thinner, leaving a layer of it over the pads.
+:width: 560px
+:name: fig-mol-106-cmpl
+
+Before, the oxide as deposited; after, polished flat to a set thickness over the local interconnect, the surface on which the metal-1 contacts are printed. The page reads the PDK's 0.265 µm "NILD2" interval[^pdk-04] as the thickness left over the LI nitride after the polish (our reading); the removal is not public, and nothing is drawn to scale. The glass, the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 Unlike {ref}`CMPP <step-090>`, this polish has no nitride stop and no
 "sacrificial" film: it is a fixed-removal oxide planarisation whose
 target is a thickness, not a surface. The removal is not public; on

@@ -23,6 +23,14 @@ result is a {term}`silicide` contact *only inside the contact holes*:
 a small disc of TiSi₂ under each tungsten plug, and no silicide
 anywhere else.
 
+:::{figure} /_static/figures/mol-098-csil.svg
+:alt: Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other. Before the step a thin dark film lines the hole and covers the flat top. After it a thin teal disc lies under that film at the bottom of the hole, sunk into the top of the doped silicon; nothing else changes.
+:width: 560px
+:name: fig-mol-098-csil
+
+A close-up of the 1.8 V source/drain contact, beside the gate. Before, the liner in the cleaned hole; after the anneal, a disc of titanium silicide where the titanium touched the silicon at the bottom of the hole, and nowhere else: on the walls and the field the liner lies on oxide and does not react. That the silicide forms only inside the contact holes is this reference's inference from the PDK's sheet resistances, which are those of unsilicided poly and diffusion (poly 48 200 mΩ/sq, N-diffusion 120 000 mΩ/sq).[^pdk-08] The resistor head's hole gets a disc in its poly in the same way, outside this view. The disc's thickness, and how much of the 0.1 µm junction[^pdk-03] it consumes, are not public; it is drawn at the minimum film thickness, sunk into the silicon it consumed, with the doped region left where it was. The anneal's temperature, time and ambient are not public, and any titanium that nitrides is not drawn. The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers, the thin oxides, the silicon and its doped regions, and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 That is the distinctive feature of this module, and the public
 evidence for it is the PDK's own numbers. In a self-aligned silicide
 ({term}`salicide`) process the metal is deposited on the bare gates

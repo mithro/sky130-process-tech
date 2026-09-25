@@ -26,6 +26,14 @@ deposited and patterned; the later tungsten polishes {ref}`WCMP2 <step-111>` to
 {ref}`WCMP5 <step-148>` do the same for the contact and {term}`via` plugs
 under each metal level.
 
+:::{figure} /_static/figures/mol-100-wcmpli.svg
+:alt: Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other. Before the step a cross-hatched grey metal fills the hole and covers the flat top. After it the metal and the thin dark film under it are gone from the top: the metal is left only in the hole, its top flush with the flat oxide around it.
+:width: 560px
+:name: fig-mol-100-wcmpli
+
+A close-up of the 1.8 V source/drain contact, beside the gate. Before, the tungsten blanket; after, the polish has removed the tungsten and the liner from the field down to the cap oxide, leaving a plug flush with it. The plug recess and the oxide erosion the polish leaves are not public and are not drawn. The other two holes become plugs in the same way, outside this view; the local interconnect that lands on them must cover each one (licon.4, li.5).[^pdk-periph] The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers, the thin oxides, the silicon and its doped regions, the silicide, the contact liner and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The PDK does not describe the polish, but its consequences are in
 the rules: the local interconnect must enclose a licon by 0.080 µm
 on one of two adjacent sides (li.5),[^pdk-periph] and "Licon1 must
