@@ -136,6 +136,48 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Caps**: para > 100 5 → 0; item > 60 2 → 1 (Resist coat, above); sentence > 45 2 → 0 (1 at
   45 + bullet marker).
 
+### 050 P1I — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the PDK polarity/sheet-
+  resistance evidence and the implant-physics paragraph (≈ 230 words).
+* **R-PARA / R-SENTENCE.** The 149-word evidence paragraph: its 62-word sentence split at the
+  semicolon after "48.2 Ω/sq" (each half keeps its own markers); paragraph split before "For a
+  0.18 µm film". The split needs R-PARA step 5: "that is a resistivity" → "that sheet resistance is a
+  resistivity" (the pronoun gets its noun back; no number added). "Why" closing paragraph (117 w,
+  one 77-word sentence) split at the colon after "follows, we infer, from the gate cap" (the hedge
+  stays in its sentence; "The PDK keeps …" keeps `[^pdk-periph][^pdk-03]`), and the paragraph split
+  before "We infer that a capped gate …".
+* **R-CATEGORY.** Classification sentence (42 w) split at its em dash: "`P1I` is … *high-dose,
+  low-energy* class." (14 w) alone; "The category page groups it …" second paragraph (a category-page
+  statement, not specific to the step); the two "It is the first … / It is also the first …"
+  sentences under "**Specific to this step:**".
+* **R-PARA step 4.** "Be a good conductor" (68 w): lead "We infer that SKY130 does not silicide its
+  gates." (split at the colon; the hedge stays with the claim), evidence as continuation paragraph.
+  "Not deplete" (75 w): lead + continuation at "Schuegraf, King and Hu …".
+* **R-HEDGE.** Italic scope lead-in (including "(SKY130 values are not public)").
+* **R-TOOLS.** Axcelis GSD: *SkyWater says:* holds only the two quotations with `[^skw-01]`; the gloss
+  "the two tools on its public list whose dose ranges reach 10¹⁵ cm⁻²; the medium-current 8250 is
+  listed only to 1e14.[^skw-01]" is ours, so it is the continuation paragraph ("These are" added
+  as subject + verb), followed by the Axcelis vendor sentence. Grades unchanged.
+* **R-OPENQ.** The 94-word "n⁺ or p⁺ PMOS gates?" bullet (55-word first sentence): its four PDK facts
+  become sub-bullets under "The PDK:", each with its own marker and every word and comma kept; the
+  conclusion "We therefore read …" and "No public source states this …" follow as a continuation
+  paragraph in the same order (question, evidence, reading). Labels added to the other three,
+  text unchanged.
+* **R-RELATED.** Previous/Next split; "Film: …; resistor implants: …" and "Cap and pattern: …" (all
+  in the module) → one `Same module:` bullet keeping the three glosses; "Activation:" (IOX45,
+  TIPRTAD, RTAD — later steps that activate this implant) → `Feeds: activation at …`. The
+  channel-implant bullet (LVTPI, PNCHI, earlier steps) keeps its own gloss and no label.
+* **R-GLANCE.** Does/Why from the lead and the "three jobs" sentence; Public numbers 48.2 Ω/sq
+  `[^pdk-08]` and the e-test limits `[^pdk-07]`; Not public from Open questions.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07`, `pdk-08`, `skw-01`, numbers
+  48.2, 42.2–55.8, hedges "inference", "not public" — glance box. REGROUPED: the evidence sentence
+  (48.2 | 42.2–55.8, 0.094, 0.15), the SkyWater quotations/gloss (same digits, same order), the
+  Open-questions PDK facts (npc.4/0.2; −1.05/+0.54). Declared `markers,numbers,hedges`: clean.
+* **Marker coverage.** 8 flags, all explained above (splits at seams where each piece keeps the
+  markers of its own clause; labels).
+* **Caps**: para > 100 3 → 0; item > 60 4 → 0; sentence > 45 4 → 0.
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
