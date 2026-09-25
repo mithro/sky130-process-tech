@@ -180,9 +180,10 @@ it.[^pat-03]
     8250's public species list.
   - *Runs this step:* inference.
 * **Axcelis GSD high-current/high-energy implanter**
-  - *SkyWater says:* lists "B11, BF2, P, As, 10-3000kev" (the entry
-    whose dose range starts below the Hi dose entry's 5e12).[^skw-01]
+  - *SkyWater says:* lists "B11, BF2, P, As, 10-3000kev".[^skw-01]
   - *Tool exists:* strong for existence; could run either species.
+    This is the entry whose dose range starts below the Hi dose
+    entry's 5e12 (our reading).
 
 ## Resources required
 

@@ -210,11 +210,11 @@ oxide is the 10–20 nm pad oxide.[^pat-04]
 * **Axcelis 8250 medium-current implanter**
   - *SkyWater says:* lists "Axcelis 8250 Mid current B11, BF2, As, ESC
     chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
-  - *Tool exists:* strong — the species (B, BF₂, As), the dose window
+  - *Tool exists:* strong.
+  - *Runs this step:* assignment to `LVTNI` is an inference from
+    capability — the species (B, BF₂, As), the dose window
     (10¹¹–10¹⁴ cm⁻²) and the tilt capability are exactly those of a
     threshold-adjust implant.
-  - *Runs this step:* assignment to `LVTNI` is an inference from
-    capability.
 * **Axcelis GSD implanters**
   - *SkyWater says:* lists either GSD entry, "High current/energy" or
     "Hi dose".[^skw-01]

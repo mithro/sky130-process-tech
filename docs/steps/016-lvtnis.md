@@ -168,9 +168,11 @@ cleanliness.[^txt-02]
   - *SkyWater says:* lists "industry standard HF/SC1/SC2".[^skw-01]
   - *Tool exists:* strong for existence, as alternative clean tools.
 * **KLA-Tencor AIT** (patterned-wafer inspection)
-  - *SkyWater says:* our reading of "AIT" in a SkyWater job posting's
-    "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *SkyWater says:* lists "SEM/AIT/KLA/SP1/EV300/1X" in a job
+    posting.[^job-06]
   - *Tool exists:* medium.
+  - *Runs this step:* "AIT" is our reading of that list, for this
+    inspection role.
 
 ## Resources required
 

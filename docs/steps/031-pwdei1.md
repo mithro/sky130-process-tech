@@ -144,8 +144,8 @@ illustrative.
   - *Runs this step:* inference.
 * **Axcelis GSD high-current/high-energy implanter**
   - *SkyWater says:* lists it ("B11 … 10-3000kev").[^skw-01]
-  - *Tool exists:* strong for existence, if the energy is above the
-    8250's reach.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* only if the energy is above the 8250's reach.
 
 ## Resources required
 

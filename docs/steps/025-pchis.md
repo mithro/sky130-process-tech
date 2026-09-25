@@ -141,9 +141,10 @@ carried into the {ref}`RTAI <step-034>` anneal.
   - *SkyWater says:* lists them.[^skw-01]
   - *Tool exists:* strong for existence.
 * **KLA-Tencor SP1** (unpatterned surface scanner)
-  - *SkyWater says:* our reading of "SP1" in a SkyWater job posting's
-    "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *SkyWater says:* lists "SEM/AIT/KLA/SP1/EV300/1X" in a job
+    posting.[^job-06]
   - *Tool exists:* medium.
+  - *Runs this step:* "SP1" is our reading of that list.
 
 ## Resources required
 

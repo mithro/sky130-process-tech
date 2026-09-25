@@ -159,9 +159,10 @@ crust stage cannot be hurried.
   - *SkyWater says:* lists them for HF/SC1/SC2.[^skw-01]
   - *Tool exists:* strong for existence.
 * **KLA-Tencor SP1 and AIT** (particle and residue inspection)
-  - *SkyWater says:* our reading of "SP1" and "AIT" in a SkyWater job
-    posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *SkyWater says:* lists "SEM/AIT/KLA/SP1/EV300/1X" in a job
+    posting.[^job-06]
   - *Tool exists:* medium.
+  - *Runs this step:* "SP1" and "AIT" are our reading of that list.
 
 ## Resources required
 

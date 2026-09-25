@@ -196,9 +196,9 @@ performed after implanting both the n-well and p-well".[^pat-03]
 * **Aviza furnaces**
   - *SkyWater says:* facilities page states "Furnaces are all made by
     Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal to
-    1150C" — the batch alternative if the fab chose a furnace well
-    anneal.
-  - *Tool exists:* strong for existence.
+    1150C".
+  - *Tool exists:* strong for existence — the batch alternative if the
+    fab chose a furnace well anneal.
   - *Runs this step:* weak inference for assignment, since the Cypress
     integration patent, which may still be in force, bears on it
     (collapsed note below this list).
