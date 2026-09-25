@@ -181,9 +181,9 @@ page lists three plasma strip tools before its wet benches:[^skw-01]
 
 | Entry as listed | What it names | Status |
 |---|---|---|
-| "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C" | a remote microwave plasma with N₂ and O₂ from 120 °C to 270 °C[^skw-01] | our reading |
-| "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" | adds H₂, CF₄, NH₃ and H₂/N₂ and reaches down to 40 °C[^skw-01] | our reading |
-| "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C" | an RF plasma with O₂, CF₄ and hydrogen in nitrogen, to 250 °C[^skw-01] | our reading |
+| "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C" | a remote microwave plasma with N₂ and O₂ from 120 °C to 270 °C[^skw-01] | — |
+| "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" | adds H₂, CF₄, NH₃ and H₂/N₂ and reaches down to 40 °C[^skw-01] | — |
+| "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C" | an RF plasma with O₂, CF₄ and hydrogen in nitrogen, to 250 °C[^skw-01] | — |
 :::
 
 SkyWater spells the

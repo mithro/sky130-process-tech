@@ -252,7 +252,7 @@ three undashed lines as part of the Mirra entry.
 | "niobium", "aluminum", "copper" | no SKY130 step page reads these as a polish | our reading |
 | "high selectivity tungsten" | — | not stated |
 | "Track ammonia clean", "IPA clean" | which tool performs them is not stated, nor whether the Mirra is a Mirra Mesa with an integrated cleaner | not stated |
-| "On board metrology with feed forward and backward" | resembles the integrated metrology described above, but no model is given | our reading |
+| "On board metrology with feed forward and backward" | resembles the integrated metrology described above, but no model is given | — |
 :::
 
 For copper, the page describes the Minnesota site as "Recently expanded
