@@ -183,7 +183,7 @@ fab (SKY130's values are not public):*
   In the published test-tile measurements that threshold is 0.534 V at
   7/8 µm and 0.707 V at 7/0.15 µm, inside the PDK's e-test
   limits of 0.515–0.567 V and 0.661–0.739 V.[^raw-data-lv-mosfets][^pdk-07]
-  (This is the mean of the module 8008 and 8392
+  (Both measured values are the mean of the module 8008 and 8392
   sweeps at each geometry, by maximum-transconductance
   extrapolation at V_DS = 0.1 V, less half the drain bias; our
   extraction from the published measurements.)

@@ -31,13 +31,13 @@ into the channel region of the {term}`SONOS` memory transistors.
 
 This
 reference describes it as a p-type doping peak *below* the surface of
-the memory channel — a "punch-through stop". This is
-an inference from the n-channel SONOS cell and from the standard cure
-for punch-through described below.[^pat-vt-lsi] It keeps
+the memory channel — a "punch-through stop". It keeps
 the depletion region of the drain from reaching the source in a
 transistor whose gate is only a few tenths of a micrometre long and
 which must withstand several volts on its drain and body during
-programme, erase and inhibit operations.
+programme, erase and inhibit operations. Both are inferences from
+the n-channel SONOS cell and from the standard cure for punch-through
+described below.[^pat-vt-lsi]
 
 The surface doping, which sets
 the threshold, is left for the next implant, {ref}`DEPI <step-038>`.
@@ -108,9 +108,7 @@ Three things make the SONOS transistor need its own barrier:
 
 * **It is short.** The PDK's {term}`e-test` parameters are defined on memory
   transistors of drawn W/L 0.45/0.22 µm and 0.35/0.15 µm, for "both
-  original and star cells".
-
-  The PDK does not say which geometry
+  original and star cells". The PDK does not say which geometry
   belongs to which cell, and we read 0.35/0.15 µm as the "star" cell
   because the PDK says it "is approximately 25% smaller than the
   original cell" (inference).[^pdk-07] Either way, both are gate

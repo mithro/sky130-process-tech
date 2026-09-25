@@ -69,14 +69,18 @@ dimensions the pad list gives.[^raw-data-testtile-pads][^raw-data-passives]
 
 Splitting the accumulation capacitance at 1.8 V into an
 area and an edge term gives 8.52 fF/µm² (low-Vt; raw-data module
-3320, as the pad list names it). It gives 8.40 fF/µm² for the
-high-Vt device (raw-data module 3316). For a
+3320, as the pad list names it) and 8.40 fF/µm² (high-Vt; raw-data
+module 3316) (our extraction from the published
+measurements, without corrections for gate depletion, the thickness of
+the accumulation layer or pad and wiring capacitance, so not a
+physical thickness; the files record neither the measurement frequency
+nor the temperature).[^raw-data-passives] For a
 relative permittivity of 3.9 these correspond to an electrical
-thickness of about 4.06 nm and 4.11 nm.[^raw-data-passives] (This is our extraction from the
-published measurements, without corrections for gate depletion, the
-thickness of the accumulation layer or pad and wiring capacitance, so
-not a physical thickness; the files record neither the measurement
-frequency nor the temperature.)
+thickness of about 4.06 nm and 4.11 nm (our extraction from
+the published measurements, without corrections for gate depletion,
+the thickness of the accumulation layer or pad and wiring capacitance,
+so not a physical thickness; the files record neither the measurement
+frequency nor the temperature).[^raw-data-passives]
 
 For comparison,
 ITRS 2001 lists an

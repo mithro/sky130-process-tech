@@ -78,9 +78,10 @@ oxide etch* type — the same class as {ref}`GOXETCH <step-046>` and
 
 * The category page describes wet chemical
   etching generally as used where a film "must be removed cleanly and
-  gently with very high selectivity". It reads this class of etch as
-  wet for the same reason it gives for `GOXETCH` and `SACETCH`: that a
-  plasma would damage the exposed silicon ({ref}`category-etch`).
+  gently with very high selectivity". It gives the same reason it
+  gives for `GOXETCH` and `SACETCH` — that a plasma would damage the
+  exposed silicon — for reading this class of etch as wet
+  ({ref}`category-etch`).
 * Here the silicon being exposed will carry a tunnel oxide only a few
   nanometres thick (the Cypress ranges are in the collapsed note above and
   in the one below) whose quality decides the memory's endurance and
