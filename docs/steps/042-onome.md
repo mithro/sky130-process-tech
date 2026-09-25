@@ -35,13 +35,14 @@ nitride or {term}`oxynitride` trapping layer are removed by a plasma etch that
 stops on the underlying oxide — we infer the pad oxide from
 {ref}`BOX <step-002>`, still present outside the tunnel
 windows — and the last oxide is then cleared, either here or at the
-gate-oxide pre-clean, by a wet etch. The Cypress integration patent
-describes exactly this two-stage approach, and the other Cypress flow
-the same patterning; both patents are shown as in force and their
-wording is in the collapsed note below.
+gate-oxide pre-clean, by a wet etch. Both patents are shown as in
+force; their own wording on their etch sequences is in the collapsed
+note below.
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
-The Cypress integration patent: "a combination of dry and wet etch is
+The Cypress integration patent describes exactly this two-stage
+approach, and the other Cypress flow the same patterning. The Cypress
+integration patent: "a combination of dry and wet etch is
 performed to achieve a good stack sidewall profile. In one such
 embodiment, an inorganic spin-on anti-reflective coating (ARC), the
 blocking layer 304C, and the dielectric layers 304A and 304B are dry
@@ -66,8 +67,8 @@ etch* type: a nitride etch with an oxide etch above it and a very thin
 oxide stop below it, on the Lam 9400 / DPS "poly/nitride" class of tool
 (the assignment is inferred — see below). Its distinctive difficulty is
 the stop layer: the oxide beneath the nitride — the pad oxide, we infer,
-only tens of nanometres thick in the Cypress patent (collapsed note
-below this section) — and the silicon under it will become the channel
+of the order of 10–20 nm on the era-typical range {ref}`BOX <step-002>`
+gives — and the silicon under it will become the channel
 of every logic transistor. The etch is therefore run like a
 {term}`spacer` etch — a nitride etch with "selectivity to oxide" that
 must "stop on a thin oxide without trenching the silicon"
@@ -139,10 +140,8 @@ memory (SKY130's recipe is not public):
    patent names (collapsed note below this list) — exposing the logic
    silicon for gate oxidation. Whether this happens here or as the
    {ref}`GOX100 <step-043>` pre-clean is not stated publicly; the
-   Cypress flows differ on it (see {ref}`GOX100 <step-043>`). One of
-   them warns about what an HF-based pre-clean would do to an exposed
-   stack, and the other protects the blocking oxide with a sacrificial
-   cap; both passages are in that note.
+   Cypress flows differ on it (see {ref}`GOX100 <step-043>`), and their
+   own wording is in that note.
 6. **All-wet alternative.** The stack could in principle be removed
    entirely wet — BOE for the top oxide, hot phosphoric acid for the
    nitride, whose selectivity to oxide was established by van Gelder
@@ -297,8 +296,8 @@ Status and expiry are estimates from public records and are not legal advice.
 * That the oxide under the resist/nitride is the pad oxide from
   {ref}`BOX <step-002>` rather than a later sacrificial oxide is
   inferred; its retention after {ref}`NS19 <step-013>` is not public.
-* Whether the nitride is removed dry (as the Cypress patents describe)
-  or wet, and on which tool, is inferred.
+* Whether the nitride is removed dry or wet, and on which tool, is
+  inferred.
 * Whether the bottom oxide is cleared here or at the
   {ref}`GOX100 <step-043>` pre-clean is not stated publicly.
 * Whether an ARC is used on the ONO mask and opened in this etch is
