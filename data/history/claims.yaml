@@ -279,13 +279,14 @@ claims:
   - {id: cypress-annual-report-fy1993, origin: cypress}
 - id: fab4-4b-4c
   page: docs/history/fabs.md
-  anchor: In 1998 Cypress built out "Fab 4b"
-  grade: attributed
-  attribution: (Cypress's reports)
-  footnotes: [ar-fy1997, ar-fy1999]
+  anchor: planned to use Fab 3's upgraded tools
+  grade: conflict
+  hedge: The reports disagree
+  footnotes: [ar-fy1997, ar-fy1998, ar-fy1999]
   sources:
   - {id: cyx-ar-fy1997-fab-plan, origin: cypress}
-  - {id: cypress-annual-report-fy1999, origin: cypress}
+  - {id: cyx-ar-fy1998-restructure, origin: cypress}
+  - {id: cyx-ar-fy1999-016um, origin: cypress}
 - id: fab4-r42
   page: docs/history/fabs.md
   anchor: '"New R42D Technology Qualification" is dated October 1997'
@@ -844,9 +845,41 @@ claims:
   - {id: qtp-011503, origin: cypress}
   - {id: qtp-031101, origin: cypress}
   - {id: qtp-000901, origin: cypress}
+- id: fab2-p20-dates
+  page: docs/history/fabs.md
+  anchor: suggest 1991 and 1993
+  grade: inference
+  hedge: (our reading)
+  footnotes: [qtp-091216, qtp-093332]
+  sources:
+  - {id: qtp-091216, origin: cypress}
+  - {id: qtp-093332, origin: cypress}
+- id: tech-p20-mil-date
+  page: docs/history/technologies.md
+  anchor: the QTP number, 93321, suggests 1993
+  grade: inference
+  hedge: (our reading)
+  footnotes: [qtp-091216]
+  sources:
+  - {id: qtp-091216, origin: cypress}
+- id: tech-p26-magnachip
+  page: docs/history/technologies.md
+  anchor: P26 was moved to Magnachip
+  grade: single-source
+  footnotes: [qtp-054605]
+  sources:
+  - {id: qtp-054605, origin: cypress}
+- id: fab-magnachip
+  page: docs/history/fabs.md
+  anchor: P26 moved from Fab 2 as a three-metal
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-054605]
+  sources:
+  - {id: qtp-054605, origin: cypress}
 - id: fab2-p20
   page: docs/history/fabs.md
-  anchor: P20, for MAX EPLDs, by 1993
+  anchor: P20, for MAX EPLDs (Cypress's reports)
   grade: attributed
   attribution: (Cypress's reports)
   footnotes: [qtp-091216, qtp-093332]

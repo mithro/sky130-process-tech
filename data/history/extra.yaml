@@ -51,7 +51,14 @@ records:
     location: Management's Discussion and Analysis, restructuring (first bullet)
   - text: The discontinuance of the 0.6 micron 256k SRAM production in Fab 2 located in Texas.
     location: Management's Discussion and Analysis, restructuring (second bullet)
+  - text: Fab 3 assets, which were upgradable to 8-inch capability, were transferred to Fab 4 production
+      during the third quarter of 1998.
+    location: Notes to the financial statements, restructuring
   claims:
+  - subject: Fab 3 equipment
+    attribute: upgradable tools moved to
+    value: Fab 4 production (Fab 4b not named), third quarter of 1998
+    date: 1998
   - subject: Fab 3
     attribute: shut down
     value: '1998'
@@ -486,7 +493,14 @@ records:
   quotes:
   - text: in 1999, started develop- ment of 0.16-micron process technologies.
     location: Management's Discussion and Analysis, research and development
+  - text: by purchasing more equipment for Fab 4a and by constructing Fab 4b and Fab 4c, located on the
+      same site as Fab 4a in Minnesota.
+    location: Management's Discussion and Analysis, capital expenditures expected in 2000
   claims:
+  - subject: Fab 4b and Fab 4c
+    attribute: status early 2000
+    value: still to be constructed in 2000
+    date: 2000
   - subject: 0.16 µm
     attribute: development started
     value: '1999'

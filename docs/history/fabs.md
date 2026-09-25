@@ -11,7 +11,7 @@ fab ran what, and when, as far as public sources show. The processes themselves 
 | Fab | Where and wafer size | Cypress years | Processes the sources place there |
 |---|---|---|---|
 | Fab 1 | San Jose, California; 6-inch by 1993, 8-inch from 2000 | first fab; production to 1996, then R&D to 2007 | development of RAM3, 0.13 µm and 90 nm |
-| Fab 2 ("Cypress Texas", CTI) | Round Rock, Texas; 6-inch (150 mm) | 1986–2008 | P20 (0.8 µm); R28, L28, L28EPD, P26 (0.65 µm); S4AD-5 (SONOS) |
+| Fab 2 ("Cypress Texas", CTI) | Round Rock, Texas; 6-inch (150 mm) | 1986–2008 | P20 (0.8 µm, reports undated); R28, L28, L28EPD, P26 (0.65 µm); S4AD-5 (SONOS) |
 | Fab 3 ("Cypress Minnesota", CMI) | Bloomington, Minnesota; 6-inch | 1991–1998 | R28 and L28 (0.65 µm), about 0.6 µm |
 | Fab 4 (later "Fab 4a") | Bloomington, beside Fab 3; 8-inch (200 mm) | 1995–2017 | R32, R42, RAM42, R52, B53D-3, B55SGT, R7, R8, C8, 90 nm, S8 |
 
@@ -59,9 +59,10 @@ the sources disagree on this point.[^ar-fy2008][^ccre-roundrock]
 1997 Cypress said Fabs 2 and 3 produced six-inch wafers "primarily with 0.6-micron" processes (single
 source).[^ar-fy1997] Cypress's qualification reports show:
 
-* **0.8 µm.** P20, for MAX EPLDs, by 1993 (Cypress's reports).[^qtp-091216][^qtp-093332]
+* **0.8 µm.** P20, for MAX EPLDs (Cypress's reports). The reports are undated; their QTP numbers,
+  91216 and 93321, suggest 1991 and 1993 (our reading).[^qtp-091216][^qtp-093332]
 * **0.65 µm.** The R28 SRAM process qualified at Fab 2 in November 1997, with a further R28 product moved
-  from Fab 3 in March 1999; the L28 clock and logic process, moved from Fab 3 in April 1998; and P26
+  from Fab 3 in 1998 (the report's number; its version 1.3 is dated March 1999); the L28 clock and logic process, moved from Fab 3 in April 1998; and P26
   for PROMs (Cypress's reports).[^qtp-097476][^qtp-098393][^qtp-031101][^qtp-096411]
 * **S4AD-5.** "New Technology S4AD-5" was qualified in April 2001 with a clock generator (Cypress's
   reports).[^qtp-021507][^qtp-042806]
@@ -72,8 +73,8 @@ on {ref}`history-sonos-s4`.
 
 **SRAMs.** In March 1998 Cypress said Fab 2 would "stop making SRAMs" and keep to "data communication
 ICs, programmable logic, and chips for its Computer Products divisions".[^eet-1998-restructure][^ar-fy1997]
-Its reports, though, record an R28 dual-port SRAM moved into Fab 2 in March 1999; the plan and the
-reports disagree (Cypress's reports).[^qtp-098393][^ar-fy1997]
+Its reports, though, record an R28 dual-port SRAM moved from Fab 3 into Fab 2, in 1998 by the report's
+number; the plan and the reports disagree (Cypress's reports).[^qtp-098393][^ar-fy1997]
 
 **Other work.** Cypress's CEO later wrote that during the 1998 downturn Fab 2 made micro-mechanical
 optical chips for Silicon Light Machines as foundry work, "using only standard CMOS" (single
@@ -103,7 +104,7 @@ third wafer fab (Cypress's reports).[^ar-fy1993][^proxy-1994] Fab 3 ran six-inch
 that 0.65 µm process at Fab 3 (single source).[^qtp-096091]
 
 **Closure.** Cypress shut Fab 3 down in 1998 and moved its SRAM production to the eight-inch Fab 4 next
-door. Much of Fab 3's equipment was upgraded to eight-inch and used to build out "Fab 4b".[^ar-fy1998][^eet-1998-restructure][^ar-fy1997]
+door. The Fab 3 tools that could be upgraded to eight-inch were moved to Fab 4.[^ar-fy1998][^eet-1998-restructure][^ar-fy1997]
 
 ## Fab 4, Bloomington, Minnesota
 
@@ -117,10 +118,11 @@ Both descriptions fit the reports: the site bought in 1991 held Fab 3, and Fab 4
 1994–95. We read the Star Tribune's "under Cypress, the size of the cleanroom at SkyWater's plant more than
 doubled" as the Fab 4 addition (our reading).[^strib-2019]
 
-**Fab 4a, 4b and 4c.** In 1998 Cypress built out "Fab 4b" with Fab 3's upgraded equipment instead of
-buying new tools. Its 1999 report speaks of "constructing Fab 4b and Fab 4c, located on the same site as
-Fab 4a" (Cypress's reports).[^ar-fy1997][^ar-fy1999] No later source found says whether Fab 4c was
-completed.
+**Fab 4a, 4b and 4c.** Cypress's 1997 report planned to use Fab 3's upgraded tools "to build out Fab
+4b". Its 1998 report says only that they "were transferred to Fab 4 production". Its 1999 report still
+plans to spend 2000 "constructing Fab 4b and Fab 4c". The reports disagree on whether Fab 4b was built
+in 1998, unless the 1998 move was into Fab 4a.[^ar-fy1997][^ar-fy1998][^ar-fy1999] No later source found
+says whether Fab 4b or Fab 4c was completed.
 
 **Processes.** Fab 4 ran every Cypress SRAM and logic generation from 0.5 µm to 90 nm:
 
@@ -146,9 +148,9 @@ the project:
 * **1998.** Fab 5 "can now be deferred until late 1999", and 0.25 µm technology would go into "Fab 5, an
   8-inch facility that will be built in the second half of 1999".[^ar-fy1997][^eet-1998-restructure]
 
-No later report found mentions Fab 5, and Semiconductor Digest says only that Fab 2 was "expanded in
-1999". Whether anything was built after 1999 is not in the public record found (single
-source).[^sd-2007-fab2]
+No later report found mentions Fab 5. Semiconductor Digest says only that Fab 2 was "expanded in
+1999" (single source).[^sd-2007-fab2] Whether anything was built after 1999 is not in the public record
+found.
 
 In the qualification reports, "Fab 5" means something else: the Grace foundry in Shanghai (see below).
 The reports use that name from 2009 onwards (Cypress's reports).[^qtp-091302][^qtp-151005]
@@ -160,6 +162,7 @@ technology (single source).[^ar-fy1998] The foundries the sources name before S8
 
 | Partner | What the sources say | Sources |
 |---|---|---|
+| Magnachip, Cheong-Ju, Korea | P26 moved from Fab 2 as a three-metal "P26 TLM", qualified March 2006 | single source[^qtp-054605] |
 | Hyundai Electronics ("Fab HME"), Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000 | single source[^qtp-001004] |
 | Tower, IBM and Chartered | foundries of IMI, which Cypress bought in February 2001 | single source[^qtp-i000006] |
 | TSMC, Taiwan | L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^qtp-080608][^qtp-s050001] |
@@ -203,7 +206,7 @@ names of the sites. Read them with these points in mind:
 
 * **Fab 2's opening year.** 1986 or about 1988?
 * **Fab 5.** Was anything built on the Round Rock site after 1999?
-* **Fab 4c.** Was it built?
+* **Fab 4b and Fab 4c.** Were they built, and when?
 * **The Honeywell SOI node.** Was it 0.13 µm or 150 nm?
 * **The builder of the Bloomington plant.** Control Data or VTC?
 
@@ -383,3 +386,6 @@ names of the sites. Read them with these points in mind:
 [^qtp-093332]: Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>
+[^qtp-054605]: Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
