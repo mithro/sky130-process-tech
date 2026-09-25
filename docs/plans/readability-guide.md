@@ -290,11 +290,15 @@ of 12 words or more, or a semicolon joining two separately cited facts.
 5. Markers travel with their clause. A trailing parenthetical hedge or marker that covers the
    whole sentence ("(our extraction …)[^x]") must cover every sentence the split makes. Either
    repeat it ("These are our extractions …"), or do not split.
-6. Never split inside a quotation: split before it or after it.
+6. Never split inside a quotation: split before it or after it, including at a full stop the
+   quotation itself contains; never add or remove a quotation mark or change its case. A sentence
+   whose only split points lie inside a quotation stays whole and is listed in the progress file.
 7. A split may add a subject and a verb ("It is", "This is"). It may not add a clause ("This holds
    even though"): that states a relationship the original sentence did not, in different words. A
    hedge in parentheses that ends up alone at a split may be capitalised and closed as its own
-   sentence — "(our extraction …)" → "(Our extraction ….)" — do nothing else to it.
+   sentence — "(our extraction …)" → "(Our extraction ….)" — do nothing else to it. A lead-in
+   added to avoid starting a sentence with a lowercase quotation must be neutral ("The patent
+   adds:"), never a relation ("Its consequence:", "Similarly,").
 
 **Example** — `docs/steps/066-bhi.md:16`.
 
