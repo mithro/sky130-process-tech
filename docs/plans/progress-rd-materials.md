@@ -114,9 +114,14 @@ after counts are the working tree):
 `check_preserved.py --base main --allow-regrouped
 --allow-added markers,quotes,hedges,identifiers`: 0 undeclared differences.
 Declared additions, all hand-confirmed:
-* markers — `pat-tiw-hitachi`, `astm-f1512` region markers repeated across
-  an R-SENTENCE split that had one trailing marker for a compound
-  sentence (rule 5: "repeat it").
+* markers — `jx-semi-targets`×2, `pat-tiw-hitachi`, `skw-01`×2,
+  `solstice-targets`×2 repeated across R-SENTENCE splits and R-MODELS-row
+  splits that had one trailing marker for a compound sentence or a
+  multi-clause bullet (rule 5: "repeat it"). **Correction (review M5):**
+  this bullet previously named `astm-f1512` here, which is wrong —
+  `astm-f1512` is not an addition (its quick-facts copy was deleted, net
+  zero) — and omitted `jx-semi-targets`, `skw-01` and `solstice-targets`,
+  which are the real declared additions on this page.
 * quotes — the R-ENTRIES table re-quotes each SkyWater PVD entry
   ("Aluminum both pure and Cu doped", "TiW", "ESC TiN", "Imp TiN",
   "Cobalt", "Niobium", "WN", plus the entry heading "AMAT PVD Metal")
@@ -258,8 +263,11 @@ body) and were not reworked given the batch's time budget — flagged here
 rather than silently dropped.
 
 Over-cap counts, before → after: paragraphs > 100 words 9 → 1 (R-INTRO
-lead); list items > 60 words 1 → 0; sentences > 45 words (real, not
-blockquote/measurement artefacts) 10 → 0; tables with no caption 1 → 0.
+lead); list items > 60 words 1 → 0; tables with no caption 1 → 0.
+**Correction (review M5):** this entry previously claimed "sentences
+> 45 words 10 → 0"; `measure_materials.py --list` run against `main` and
+the working tree gives 12 → 6, not 10 → 0 — 6 real over-45-word sentences
+remain on this page, not eliminated as claimed.
 
 `check_preserved.py --allow-regrouped --allow-added markers`: 0
 undeclared differences (markers `ham-2017`, `wiki-implant` each repeated
@@ -315,8 +323,11 @@ attached per clause, so nothing needed relocating or repeating. This is
 the cleanest page in the batch so far.
 
 Over-cap counts, before → after: paragraphs > 100 words 4 → 1 (R-INTRO
-lead); list items > 60 words 1 → 0; sentences > 45 words (real) 6 → 0;
-tables with no caption 1 → 0.
+lead); list items > 60 words 1 → 0; tables with no caption 1 → 0.
+**Correction (review M5):** this entry previously claimed "sentences
+> 45 words 6 → 0"; `measure_materials.py --list` run against `main` and
+the working tree gives 6 → 2, not 6 → 0 — 2 real over-45-word sentences
+remain on this page.
 
 `check_materials.py`, `check_refs.py`, `check_inforce.py`,
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
@@ -534,10 +545,16 @@ order across the new two-row split.
 Over-cap counts, before -> after (measured with
 `tmp/readability/a-tools/measure_materials.py --list`): paragraphs
 > 100 words 7 -> 1 (the R-INTRO lead, out of scope); paragraphs
-> 150 words 3 -> 0; paragraphs with >= 3 semicolons 2 -> 0; sentences
-> 45 words 6 -> 0; list items > 60 words 1 -> 0; table cells > 40 words
-3 -> 3 (all quick-facts cells, skipped per the recurring finding);
-tables with no caption 1 -> 0.
+> 150 words 3 -> 0; paragraphs with >= 3 semicolons 2 -> 0; list items
+> 60 words 1 -> 0; table cells > 40 words 3 -> 3 (all quick-facts cells,
+skipped per the recurring finding); tables with no caption 1 -> 0.
+**Correction (review M5):** this entry previously claimed "sentences
+> 45 words 6 -> 0"; `measure_materials.py --list` run against `main` and
+the working tree gives 6 -> 6 -- none of this page's over-45-word
+sentences were eliminated by the edits made at the time, contrary to the
+claim. (The subsequent hardware-consumables-style paragraph splits
+applied to this page in the same pass targeted `para>100w`, not
+`sentence>45w`, and did not incidentally fix these.)
 
 `check_preserved.py --base main --allow-regrouped --allow-added
 markers`: 0 undeclared differences. `check_materials.py`,
@@ -581,3 +598,52 @@ Content problems for the owner: none found beyond the recurring
 R-QUICKFACTS/`check_preserved.py` tension above; no factual, arithmetic
 or citation discrepancies were noticed while reading any of the twelve
 pages in full.
+
+## Review round (2026-09-25)
+
+Independent review (`tmp/reviews/rd-materials.md`, Opus) returned
+"approve with fixes": one deleted clause changing a sourced claim (H1),
+five wordings not true of their text (M1), two attribution verbs
+dropped in a prose-to-cell move (M2), several rows crediting a standard
+to the supplier named beside it (M3), four split sentences that lost
+marker cover on one half (M4), and a misdeclared/inaccurate progress
+file (M5, this file). All required fixes applied, one commit each:
+`42d645c5` (H1), `5942087f` (M1), `1a254f70` (M2), `a36349d2` (M4),
+`fa816076` (D2/M3 — the coordinator's ruling superseded a hand patch of
+M3 by changing the table shape guide-wide), `5bbd3d1c` (the review's
+recommended hardware-consumables sentence splits), and this commit
+(M5). The R-MODELS guide-problem note above (4/5-column shape
+overflowing) is superseded by the D2 fix below; the coordinator's D2
+ruling adopted a `Material | Source | What the source says` shape
+instead of this batch's ad hoc 3-column `Material | As supplied |
+Specification`, applied to all 12 pages in `fa816076`.
+
+**For the tool branch (D1 — do not edit `tools/check_preserved.py` in
+this worktree; recorded here for whoever owns that tool):**
+
+The reviewer's patch for the R-QUICKFACTS/`check_preserved.py` multiset
+tension (guide problem D1 in the review, ruling: keep R-QUICKFACTS,
+fix the tool). Proposed new flag `--allow-deduplicated`:
+
+> A LOST in `quotes`, `markers` or `numbers` is downgraded to a printed
+> warning only when all of these hold:
+> (a) the item's count in the text before the first `\n## ` (the summary
+>     table) decreased;
+> (b) its count in the rest of the page is unchanged, and >= 1 after the
+>     edit;
+> (c) the page is a class page (`docs/{machines,materials}/*.md`).
+>
+> Print each such item with the old cell text.
+
+Guide wording for R-QUICKFACTS step 2, replacing its first sentence:
+
+> **Before deleting anything from a cell, find the same words in the
+> body.** If they are there, delete the cell's copy and run
+> `check_preserved.py` with `--allow-deduplicated`. Paste its warnings
+> into the progress file; each one must name a string that still
+> appears below the first H2. If they are not there, move them …
+
+Implementation note from the review: split `before`/`after` at the
+first `\n## `, count per half, and apply (a) and (b). Until the flag
+exists, executors should leave duplicated cells alone, as this batch
+did — the review calls that "the correct conservative call".
