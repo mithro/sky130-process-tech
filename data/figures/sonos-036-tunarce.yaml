@@ -1,0 +1,37 @@
+id: sonos-036-tunarce
+kind: xsection
+page: docs/steps/036-tunarce.md
+series: series-sonos.yaml
+crop_depth: 90
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step photoresist covers the
+  surface except for a window over the right-hand active area, and a thin anti-reflective film runs
+  under the resist and across the bottom of the window. After it the film is gone from the bottom of
+  the window, leaving the thin pad oxide bare there, and is unchanged under the resist.
+caption: >-
+  Before, the tunnel-mask window with the anti-reflective coating still across its bottom; after,
+  the coating cleared from the window only, down to the oxide, and left in place under the resist.
+  The step list gives only the step's name; that it is an etch of the coating in the windows,
+  stopping on the oxide, is this page's reading.[^steps-sheet] Whether the coating is organic or
+  inorganic, how thick it is and how much resist the etch consumes are not public, so the resist is
+  drawn unchanged. The oxide in the window is drawn as the pad oxide, which the page infers; the
+  fill oxide and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded.
+  Not to scale.
+arrow:
+  title: "TUNARCE, step 036"
+  note: "The anti-reflective coating is etched out of the bottom of the tunnel windows, stopping on the oxide beneath."
+panels:
+  - state_after: "035"
+    title: "Before: the tunnel window from TUNM (step 035), its bottom still coated"
+    dim_layers: [liner]
+    hide_labels: [sub, dnw, fox]
+  - state_after: "036"
+    title: "After: the coating cleared from the window; oxide bare at its bottom"
+    dim_layers: [liner]
+    hide_labels: [sub, dnw, fox]
+    highlight: {where: [[148, 256]]}
+    labels:
+      arc:
+        title: "ARC"
+        note: "anti-reflective coating, left under the resist"
+        basis: reading

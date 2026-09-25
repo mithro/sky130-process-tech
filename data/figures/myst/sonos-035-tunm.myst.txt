@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/sonos-035-tunm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step thin pad oxide covers two active areas either side of an oxide-filled trench, over a P-well that lies on a buried deep N-well. After it a thin anti-reflective film covers the whole surface and photoresist covers everything except a narrow window over the middle of the right-hand active area, where the film lies bare.
+:width: 560px
+:name: fig-sonos-035-tunm
+
+Before, the wafer as the wells module leaves it, on a slice through a SONOS memory transistor (right) and an active area that stands for any other transistor (left); after, the tunnel-mask resist with one window over the memory transistor's channel, and the anti-reflective coating still covering the bottom of that window. This slice is not the one the wells figures show: a tunnel window may only lie inside a deep N-well ("Tunm outside deep n-well is not allowed", tunm.6a),[^pdk-periph] so the slice is drawn inside one deep-N-well tub, and the channel implants of the wells module are not drawn. The window's width and place are illustrative; no layout is being shown. That the layer carries an anti-reflective coating is inferred from the ARC etch that follows. The pad oxide is drawn as still in place, which the page infers, and the liner oxide in the trench is drawn faded. Not to scale.
+:::

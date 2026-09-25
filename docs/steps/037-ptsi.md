@@ -24,6 +24,14 @@ which must withstand several volts on its drain and body during
 programme, erase and inhibit operations. The surface doping, which sets
 the threshold, is left for the next implant, {ref}`DEPI <step-038>`.
 
+:::{figure} /_static/figures/sonos-037-ptsi.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step photoresist covers the surface except for a window over the right-hand active area, whose bottom is thin oxide. After it arrows come straight down into the window, and a hatched band lies a short way below the silicon surface under the window only; the silicon under the resist is untouched.
+:width: 560px
+:name: fig-sonos-037-ptsi
+
+Before, the opened tunnel window; after, a beam into the window and, under it only, the implanted dose drawn as a band a short way below the silicon surface. The band sits below the surface because this page describes the implant as a p-type punch-through stop under the memory transistor's channel, which is an inference; it is hatched with no colour of its own, and its depth and profile are not public. The species, energy and dose are not public, and the arrows are drawn vertical because the tilt is not public (7° is only the textbook convention). The oxide the ions pass is drawn as the pad oxide, which the page infers. The fill oxide and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
+:::
+
 The wafer at this point carries the {ref}`TUNM <step-035>` resist,
 opened through its {term}`ARC` at {ref}`TUNARCE <step-036>`, so the implant
 enters only the tunnel windows (`tunm`, GDS 80:20, described by the PDK

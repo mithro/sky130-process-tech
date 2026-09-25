@@ -25,6 +25,14 @@ by the resist from {ref}`TUNM <step-035>`, opened at
 {ref}`TUNARCE <step-036>`, and passes through the (inferred) pad oxide
 like `PTSI`.
 
+:::{figure} /_static/figures/sonos-038-depi.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step photoresist covers the surface except for a window over the right-hand active area, and a hatched band lies a short way below the silicon surface in the window. After it arrows come straight down into the window and a second, thinner hatched band lies at the silicon surface, above the first.
+:width: 560px
+:name: fig-sonos-038-depi
+
+Before, the tunnel window with the punch-through stop of PTSI beneath it; after, a beam into the same window and the implanted dose drawn as a thin band at the silicon surface, above the earlier band. The surface band is hatched with no colour of its own: the page gives the n-type dose of a depletion implant, but the species (arsenic is this page's inference), the energy and the dose are not public, and so are its depth and profile. The arrows are drawn vertical because the tilt is not public (7° is only the textbook convention). The oxide the ions pass is drawn as the pad oxide, which the page infers. The fill oxide and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
+:::
+
 For an n-channel transistor a depletion implant is an n-type dose
 (arsenic or phosphorus) placed in the top few tens of nanometres of
 the channel, enough to over-compensate the p-well and leave a thin

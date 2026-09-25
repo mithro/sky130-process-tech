@@ -27,6 +27,14 @@ two implants that follow ({ref}`PTSI <step-037>`,
 only, and so that the wet etch at {ref}`TUNME <step-039>` can reach and
 remove that oxide.
 
+:::{figure} /_static/figures/sonos-036-tunarce.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step photoresist covers the surface except for a window over the right-hand active area, and a thin anti-reflective film runs under the resist and across the bottom of the window. After it the film is gone from the bottom of the window, leaving the thin pad oxide bare there, and is unchanged under the resist.
+:width: 560px
+:name: fig-sonos-036-tunarce
+
+Before, the tunnel-mask window with the anti-reflective coating still across its bottom; after, the coating cleared from the window only, down to the oxide, and left in place under the resist. The step list gives only the step's name; that it is an etch of the coating in the windows, stopping on the oxide, is this page's reading.[^steps-sheet] Whether the coating is organic or inorganic, how thick it is and how much resist the etch consumes are not public, so the resist is drawn unchanged. The oxide in the window is drawn as the pad oxide, which the page infers; the fill oxide and the deep N-well are drawn but not labelled, and the liner oxide is drawn faded. Not to scale.
+:::
+
 In its industry-generic form (SKY130's recipe is not public): with the
 tunnel-mask resist in place, the wafer is exposed to an oxygen-based
 plasma, we infer, that {term}`ashes <ash>` the organic ARC in the open windows (the
