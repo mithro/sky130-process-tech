@@ -554,18 +554,55 @@ def check_steps(body: str, code: str, index: Index,
     return problems, len(steps)
 
 
+# Review M4: headings B8 asks pages to merge into a canonical one of the
+# five (the run-in "**Resist.**"/"**Overlay.**"/"**Alignment.**" labels a
+# scripted conversion might carry over unchanged) are rejected, not
+# silently accepted as "free extras".
+FORBIDDEN_H3_SYNONYMS = {
+    "Resist": "Resist and tone",
+    "Overlay": "Overlay and alignment",
+    "Alignment": "Overlay and alignment",
+}
+
+
 def check_h3(body: dict[str, str]) -> list[str]:
     """H3 headings under every H2, against ``H3`` (exact), ``OPTIONAL_H3``
     (a closed list, extra headings forbidden) and ``OPEN_H3_H2`` (a floor:
-    ``OPTIONAL_H3``'s list for that H2, plus any further heading)."""
+    ``OPTIONAL_H3``'s list for that H2, plus any further heading -- but
+    review M4: not literally *any* heading. A synonym B8 says to merge
+    (``FORBIDDEN_H3_SYNONYMS``) is rejected with the canonical name to
+    use instead; a heading that is one of another section's *mandatory*
+    H3s (say ``### Deep dive`` copied into the wrong place) is rejected
+    too, unless it is itself one of this H2's own named headings; and the
+    named headings that are present must appear in their canonical
+    order)."""
     problems = []
+    all_mandatory_h3 = {h for wanted in H3.values() for h in wanted}
     for parent in H2:
         h3 = re.findall(r"^### (.+)$", body.get(parent, ""), flags=re.MULTILINE)
         if parent in H3:
             if h3 != H3[parent]:
                 problems.append(f"H3 under '{parent}' {h3} differ from {H3[parent]}")
         elif parent in OPEN_H3_H2:
-            continue
+            allowed = OPTIONAL_H3.get(parent, [])
+            for h in h3:
+                if h in FORBIDDEN_H3_SYNONYMS:
+                    problems.append(
+                        f"H3 under '{parent}' uses {h!r}; use "
+                        f"{FORBIDDEN_H3_SYNONYMS[h]!r} instead"
+                    )
+                elif h in all_mandatory_h3 and h not in allowed:
+                    problems.append(
+                        f"H3 under '{parent}' reuses {h!r}, a mandatory heading of "
+                        "another section"
+                    )
+            present = [h for h in h3 if h in allowed]
+            canonical_order = sorted(present, key=allowed.index)
+            if present != canonical_order:
+                problems.append(
+                    f"H3 under '{parent}' {present} are not in the canonical order "
+                    f"{allowed}"
+                )
         elif any(h not in OPTIONAL_H3.get(parent, []) for h in h3):
             problems.append(f"H3 under '{parent}' {h3} are not among {OPTIONAL_H3.get(parent, [])}")
     return problems
@@ -686,12 +723,19 @@ def selftest() -> int:
         )},
         True,
     )
-    # A subset of the five, in a different order, also passes -- OPTIONAL_H3
+    # A subset of the five, still in canonical order, passes -- OPTIONAL_H3
     # is not an exact-match template there, unlike H3's entries.
     case(
-        "a subset, reordered, passes",
-        {"Lithography and pattern transfer": "\n### Pattern transfer\n\ntext\n\n### Exposure class\n\ntext\n"},
+        "a subset, in canonical order, passes",
+        {"Lithography and pattern transfer": "\n### Exposure class\n\ntext\n\n### Pattern transfer\n\ntext\n"},
         True,
+    )
+    # Review M4: the same subset, reordered, is now a problem -- the named
+    # five must appear in their canonical order when present.
+    case(
+        "the same subset, reordered, is now a problem (M4)",
+        {"Lithography and pattern transfer": "\n### Pattern transfer\n\ntext\n\n### Exposure class\n\ntext\n"},
+        False,
     )
     # A further heading the report did not name also passes (the "then free
     # extras" rule) -- this is what distinguishes OPEN_H3_H2 from a normal
@@ -705,6 +749,20 @@ def selftest() -> int:
         "no H3 at all still passes (unconverted mask pages, W3)",
         {"Lithography and pattern transfer": "\nplain prose, no H3.\n"},
         True,
+    )
+    # Review M4: a synonym B8 says to merge into a canonical heading is
+    # rejected, with the canonical name named in the message.
+    for synonym, canonical in FORBIDDEN_H3_SYNONYMS.items():
+        found = check_h3({**required, "Lithography and pattern transfer": f"\n### {synonym}\n\ntext\n"})
+        if not any(synonym in p and canonical in p for p in found):
+            problems.append(f"synonym {synonym!r} was not rejected in favour of {canonical!r}: {found}")
+    # Review M4: reusing another section's mandatory heading (here
+    # "### Deep dive", which belongs under "References") is rejected, even
+    # though "Lithography and pattern transfer" is otherwise open-ended.
+    case(
+        "reusing another section's mandatory heading is a problem (M4)",
+        {"Lithography and pattern transfer": "\n### Exposure class\n\ntext\n\n### Deep dive\n\ntext\n"},
+        False,
     )
     # The other two OPTIONAL_H3 entries stay closed lists: an unlisted H3
     # under them is still a problem.
