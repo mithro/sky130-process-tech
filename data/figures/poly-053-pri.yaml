@@ -1,0 +1,29 @@
+id: poly-053-pri
+kind: xsection
+page: docs/steps/053-pri.md
+series: series-poly.yaml
+crop_depth: 72
+no_drawn_change: true
+alt: >-
+  One cross-section of the wafer. Resist covers a continuous film everywhere except one window
+  over the middle of the oxide-filled trench. Arrows come down on the whole slice; only those in
+  the window reach the film. The drawing is the same as the state before the step.
+caption: >-
+  At PRI a p-type dose goes through the RRPM window into the resistor body, the film this slice
+  reads as a 300 Ω/sq P+ poly resistor (`res_high_po`);[^pdk-07] the resist keeps it off the n⁺
+  gate film. The doping is not drawn, because its depth in the film is not public, so the
+  drawing is the same as before the step. Species, energy, dose and tilt are not public, and
+  whether the resistor doping is one implant or several is not stated; the arrows are drawn
+  vertical. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the
+  wells and channel implants made earlier are not drawn. Not to scale.
+panels:
+  - state_after: "053"
+    title: "State at this step (no drawn change)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    labels:
+      poly:
+        title: "Gate film"
+        note: "n-type, and p-type in the window; the doping is not drawn"
+        basis: public

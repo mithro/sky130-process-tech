@@ -20,6 +20,15 @@ bodies, so that the p-type resistor implant {ref}`PRI <step-053>` goes
 only where the gate implant did not. The resist is stripped at
 {ref}`PRIS <step-054>`.
 
+:::{figure} /_static/figures/poly-052-rrpm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a continuous film covers the whole slice. After it resist covers that film everywhere except one window over the middle of the oxide-filled trench, where the film is bare.
+:width: 560px
+:name: fig-poly-052-rrpm
+
+Before, the bare gate film; after, resist everywhere except a window over the resistor body, the complement of the RPM island. That a reverse-tone reticle of the `rpm` layer makes this window is the page's inference; the PDK's mask table lists no reverse mask.[^pdk-05] The window is drawn the same width as the RPM island. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
+
+
 Unlike `RPM`, this mask is not in the PDK's public mask table, which
 lists "Resistor Protect, RPM" but no reverse mask.[^pdk-05] That is not
 surprising if, as we infer, the two {term}`reticles <reticle>` are generated from the same

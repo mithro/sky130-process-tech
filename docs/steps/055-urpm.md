@@ -18,6 +18,15 @@ implant, {ref}`UPRI <step-056>`. Everything else — the n⁺ gate film and
 the 300 Ω/sq resistor bodies doped at {ref}`PRI <step-053>` — stays
 under resist. The resist is stripped at {ref}`UPRIS <step-057>`.
 
+:::{figure} /_static/figures/poly-055-urpm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a continuous film covers the whole slice. After it resist covers the whole slice without any opening.
+:width: 560px
+:name: fig-poly-055-urpm
+
+Before, the bare gate film; after, resist over the whole slice. URPM opens only over the bodies of the ultra-high-value (`res_xhigh_po`) resistors,[^pdk-07] and the resistor drawn in this slice is read as a 300 Ω/sq one,[^pdk-07] so here the resist has no window. That the URPM reticle is made from `urpm` in the window tone is the page's inference; the PDK's mask table does not list it.[^pdk-05] The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
+
+
 The device it serves is public. The PDK lists "P- poly precision
 resistors" (`res_xhigh_po`) with the same five fixed widths and layout
 footprints as the 300 Ω/sq family, and states that "a separate implant

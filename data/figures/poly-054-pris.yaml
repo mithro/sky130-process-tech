@@ -1,0 +1,31 @@
+id: poly-054-pris
+kind: xsection
+page: docs/steps/054-pris.md
+series: series-poly.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step resist covers a
+  continuous film everywhere except one window over the middle of the oxide-filled trench. After
+  it the resist is gone and the film is bare across the whole slice.
+caption: >-
+  Before, the implanted RRPM resist with its window over the resistor body; after, the resist
+  gone and the gate film bare, now carrying two doping levels that are not drawn: n⁺ gate film
+  and a p-type resistor body. The thin chemical oxide of the clean is not drawn. The field oxide
+  is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants
+  made earlier are not drawn. Not to scale.
+arrow:
+  title: "PRIS, step 054"
+  note: "The implanted resist is ashed and stripped, and the bare film is cleaned for the next mask."
+panels:
+  - state_after: "053"
+    title: "Before: the RRPM resist after the resistor implant PRI (step 053)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    show_ions: false
+  - state_after: "054"
+    title: "After: resist removed; the gate film bare"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    highlight: {where: [[0, 100], [168, 268]]}

@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/poly-054-pris.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers a continuous film everywhere except one window over the middle of the oxide-filled trench. After it the resist is gone and the film is bare across the whole slice.
+:width: 560px
+:name: fig-poly-054-pris
+
+Before, the implanted RRPM resist with its window over the resistor body; after, the resist gone and the gate film bare, now carrying two doping levels that are not drawn: n⁺ gate film and a p-type resistor body. The thin chemical oxide of the clean is not drawn. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::

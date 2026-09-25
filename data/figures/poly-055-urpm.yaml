@@ -1,0 +1,30 @@
+id: poly-055-urpm
+kind: xsection
+page: docs/steps/055-urpm.md
+series: series-poly.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a continuous film covers
+  the whole slice. After it resist covers the whole slice without any opening.
+caption: >-
+  Before, the bare gate film; after, resist over the whole slice. URPM opens only over the bodies
+  of the ultra-high-value (`res_xhigh_po`) resistors,[^pdk-07] and the resistor drawn in this
+  slice is read as a 300 Ω/sq one,[^pdk-07] so here the resist has no window. That the URPM
+  reticle is made from `urpm` in the window tone is the page's inference; the PDK's mask table
+  does not list it.[^pdk-05] The field oxide is drawn but not labelled, and the liner oxide is
+  drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+arrow:
+  title: "URPM, step 055"
+  note: "Resist is coated, exposed through the ultra-high-resistor reticle and developed; its windows lie outside this slice."
+panels:
+  - state_after: "054"
+    title: "Before: the bare gate film after PRIS (step 054)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+  - state_after: "055"
+    title: "After: resist over the whole slice"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
