@@ -7365,3 +7365,286 @@ documents:
     location: p.3, Technology/Fab Process Description
   notes: Extends R9Q-3R's history with five later rows (063206 through 082702) not seen in qtp-044201 or
     qtp-051207; process figures match qtp-044201 exactly.
+- id: qtp-051901
+  origin: cypress
+  doc_type: QTP
+  number: '051901'
+  cypress_document_number: null
+  title: 72 Meg QDR Synchronous SRAM Family, R9Q-3R Technology, Fab4
+  version: '3.2'
+  date_printed: May 2008
+  url: https://www.cypress.com/file/92721/download
+  archive_url: https://web.archive.org/web/20211203232112/https://www.cypress.com/file/92721/download
+  retrieved: '2026-09-25'
+  sha256: ee33c1eb863fe1ccbf733d7bab38431b66995f0f7f55507d7d53d29b7f7a24fc
+  technology_codes:
+  - R9Q-3R
+  - R9T-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1510V18
+  - CY7C1512V18
+  - CY7C1514V18
+  - CY7C1525V18
+  - CY7C1511V18
+  - CY7C1513V18
+  - CY7C1515V18
+  - CY7C1526V18
+  - CY7C1516V18
+  - CY7C1518V18
+  - CY7C1520V18
+  - CY7C1527V18
+  - CY7C1517V18
+  - CY7C1519V18
+  - CY7C1521V18
+  - CY7C1528V18
+  - CY7C1522V18
+  - CY7C1523V18
+  - CY7C1524V18
+  - CY7C1529V18
+  die_ids:
+  - 7C1513A
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 150Å Ti /3200Å Al / 300Å TiW; Metal 2: 150Å Ti /6000 Å Al / 300Å TiW; Metal
+      3: 150Å Ti / 6000Å Al / 300Å TiW; Metal 4: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Quad Metal, 90 nm
+    gate_oxide: null
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R9Q-3R
+    transistors: ~504M
+    gates: ~72M
+  qualification_history:
+  - number: '033302'
+    description: New Technology R9T-3R, Fab 4, and New Device CY7C137*/138*E (18Meg) Synchronous product family
+    date: Sept 04
+  - number: '051207'
+    description: R9 18 Meg QDR, 7C1313D 4 Metal Layer Process
+    date: Mar 05
+  - number: '051901'
+    description: New Device CY7C151*/7C152* AC (72Meg QDR/DDR/LW) Device Family, R9Q-3R Technology fabricated
+      at Fab4
+    date: May 05
+  quotes:
+  - text: New Device CY7C151*/7C152* AC (72Meg QDR/DDR/LW) Device Family, R9Q-3R Technology fabricated at
+      Fab4
+    location: p.2, Product Qualification History, row 051901
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R9Q-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Quad Metal, 90 nm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This is QTP 051901 itself, already cited by qtp-044201 and qtp-060908 (this session) as a history
+    row; process figures (Quad Metal, 90 nm) match those two reports exactly.
+- id: qtp-053103
+  origin: cypress
+  doc_type: QTP
+  number: '053103'
+  cypress_document_number: null
+  title: Nitride Seal Mask (NSM) Qualification, R9T and R9Q Technology, Fab 4
+  version: '1.0'
+  date_printed: November 2005
+  url: https://www.cypress.com/file/92796/download
+  archive_url: https://web.archive.org/web/20210517163643/https://www.cypress.com/file/92796/download
+  retrieved: '2026-09-25'
+  sha256: 4cad89f1de6bff00fc5888453140390e84c9cbdb20ca0567bb9343ea7903d723
+  technology_codes:
+  - R9T-3R
+  - R9Q-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products: []
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 3 or 4
+    metal_composition: 'Three metal layers Process: Metal 1: 150Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å
+      Ti / 6000Å Al / 300Å TiW; Metal 3: 150Å Ti / 8000Å Al / 300Å TiW. Four Metal Layers Process: Metal 1:
+      150Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 6000Å Al / 300Å TiW; Metal 2: 150Å Ti / 6000Å Al /
+      300Å TiW; Metal 4: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS 90 nm
+    gate_oxide: Nitridized SiO2, 23Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R9 Technology
+    transistors: N/A
+    gates: N/A
+  qualification_history:
+  - number: '033302'
+    description: New Technology R9T-3R, Fab 4, and New Device CY7C137*/138*E (18Meg) Synchronous product family
+    date: Sept 04
+  - number: '053103'
+    description: R9T Technology, Nitride Seal Mask Process at Fab 4 for Die Edge Delamination Fix
+    date: Nov 05
+  quotes:
+  - text: R9T Technology, Nitride Seal Mask Process at Fab 4 for Die Edge Delamination Fix
+    location: p.2, Product Qualification History, row 053103
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R9 Technology'
+    location: p.3, Technology/Fab Process Description
+  notes: A single mask-change qualification covering "All R9 Devices" (both R9T-3R and R9Q-3R families)
+    rather than one product; its own Marketing Part field reads "ALL R9 DEVICES" and its Overall Die Rev
+    and Die-marking fields both read "N/A". The printed Four-Metal-Layers composition list repeats "Metal
+    2" twice and omits a "Metal 3" line -- quoted verbatim rather than corrected.
+- id: qtp-071302
+  origin: cypress
+  doc_type: QTP
+  number: '071302'
+  cypress_document_number: null
+  title: 16 Meg MoBL SRAM Family, Technology R95LD-3R, Fab4
+  version: '1.0'
+  date_printed: April 2007
+  url: https://www.cypress.com/file/93006/download
+  archive_url: https://web.archive.org/web/20211130000623/https://www.cypress.com/file/93006/download
+  retrieved: '2026-09-25'
+  sha256: 0b8f4c656a5dd66f804a6668d48a0e77f7ad6ab3e0250d9cf0456748a5386650
+  technology_codes:
+  - R95LD-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62167EV18
+  - CY62167EV30
+  - CY62168EV30
+  - CY62165E
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 100Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    free_phosphorus_percent: null
+    design_rule: CMOS, Double Metal, 0.09µm
+    gate_oxide: 28Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R95LD-3R
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '054302'
+    description: R95LD-3R, Fab 4 and New Device CY7C62xxx (4Meg) MoBL Product Family
+    date: Dec 05
+  - number: '071302'
+    description: 16Meg Rev. B MoBL Product Family, R95LD-R Technology at Fab4
+    date: Mar 07
+  quotes:
+  - text: R95LD-3R, Fab 4 and New Device CY7C62xxx (4Meg) MoBL Product Family
+    location: p.2, Product Qualification History, row 054302
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R95LD-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal, 0.09µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: Dates R95LD-3R's own origin to QTP 054302 (Dec 05); this report's own history row for its own QTP
+    number spells the code "R95LD-R" (dropping the "3"), quoted verbatim. 0.09 µm here is a Cypress-fabricated
+    (Bloomington, MN) figure for the same technology this corpus also has fabricated at HHGrace (see
+    qtp-091206, this session).
+- id: qtp-062206
+  origin: cypress
+  doc_type: QTP
+  number: '062206'
+  cypress_document_number: 001-84624 Rev. *C
+  title: 2 Meg MoBL SRAM Family, Technology R95LD-3R, Fab 4
+  version: '*C'
+  date_printed: February 2019
+  url: https://www.cypress.com/file/136266/download
+  archive_url: https://web.archive.org/web/20200920214550/https://www.cypress.com/file/136266/download
+  retrieved: '2026-09-25'
+  sha256: 7a60bd48f449a0f961bb0d24cacd6dcf562c8eb007537abc9c5884af11d880d4
+  technology_codes:
+  - R95LD-3R
+  fab: Fab 4 (SkyWater, Minnesota)
+  products:
+  - CY62135
+  - CY62136FV30
+  - CY62137FV30
+  - CY62137FV18
+  - CY62138F
+  die_ids: []
+  process_description:
+    number_of_metal_layers: Proprietary
+    metal_composition: Proprietary
+    passivation: Proprietary
+    free_phosphorus_percent: null
+    design_rule: Proprietary
+    gate_oxide: Proprietary
+    fab_location: SkyWater, Minnesota
+    die_fab_line_id: R95LD-3R
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '054302'
+    description: New Technology R95LD-3R, Fab 4, and New Device CY7C62xxx (4Meg) MoBL Product Family.
+    date: Dec. 05
+  - number: '062206'
+    description: Qualify 2Meg Device Family, R95LD-3R Technology, Fab4
+    date: Feb. 07
+  - number: '070905'
+    description: MM1 (450B) Mask Change on R95 2Meg Device Family, Fab4
+    date: Mar. 07
+  - number: '134511'
+    description: Qualify polyimide mask to qualified Industrial 2 Meg MoBL SRAM, R95LD-3R Technology at Fab
+      4
+    date: Nov. 13
+  quotes:
+  - text: New Technology R95LD-3R, Fab 4, and New Device CY7C62xxx (4Meg) MoBL Product Family.
+    location: p.2, Product Qualification History, row 054302
+  - text: 'Name/Location of Die Fab (prime) Facility: SkyWater, Minnesota'
+    location: p.3, Technology/Fab Process Description
+  notes: A 2019 SkyWater reissue -- every process-description field except the die fab name is printed
+    "Proprietary", the same redaction pattern this corpus already shows for other post-acquisition reissues.
+    Independently confirms R95LD-3R's origin as QTP 054302 (Dec 05, here spelled out in full as "New
+    Technology R95LD-3R, Fab 4"), matching qtp-071302's row for the same QTP number exactly.
+- id: qtp-091206
+  origin: cypress
+  doc_type: QTP
+  number: '091206'
+  cypress_document_number: 001-66101 Rev. *B
+  title: 16 Meg MoBL SRAM Family, Technology R95LD-3R, HHGrace Fab 3
+  version: '*B'
+  date_printed: January, 2015
+  url: https://www.cypress.com/file/138641/download
+  archive_url: https://web.archive.org/web/20201001021848/https://www.cypress.com/file/138641/download
+  retrieved: '2026-09-25'
+  sha256: 2320e827239aa84c4dc3941d333060643ef91e93532232ef9c8f8ee32a2f99ae
+  technology_codes:
+  - R95LD-3R
+  - LL65P-18R
+  fab: HHGrace Fab 3 (Shanghai, China)
+  products:
+  - CY62165E
+  - CY62167ELL
+  - CY62167EV30LL
+  - CY62168EV30LL
+  - CY62167EV18LL
+  die_ids:
+  - 7C62165F
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiN/Al/Ti/TiN: 150/250/3200/90/500 Å; Metal2: TiN/Al/TiN: 500/6500/250Å'
+    passivation: 1000A TEOS/ 9000A Nitride
+    free_phosphorus_percent: 9%
+    design_rule: CMOS, Double Metal, 0.09µm
+    gate_oxide: SiO2 /28A
+    fab_location: HHGrace Fab 3, Shanghai, China
+    die_fab_line_id: HHGrace Fab 3/R95LD-3R
+    transistors: ~98 million
+    gates: ~19 million
+  qualification_history:
+  - number: '091206'
+    description: R95LD-3R Technology and 16M Micro Power Asynchronous SRAM Family Product Transfer from CMI
+      to GSMC Qualification
+    date: Dec 2010
+  quotes:
+  - text: Technology R95LD-3R, HHGrace Fab 3
+    location: p.1, cover title
+  - text: R95LD-3R Technology and 16M Micro Power Asynchronous SRAM Family Product Transfer from CMI to GSMC
+      Qualification
+    location: p.2, Qualification History, row 091206
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – LL65P-18R
+    location: p.3, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: HHGrace Fab 3/R95LD-3R'
+    location: p.3, Technology/Fab Process Description
+  notes: This report's own history row describes the qualified event as a "Product Transfer from CMI to
+    GSMC" while its cover title and process-description Die Fab Line ID both instead name the fab "HHGrace
+    Fab 3" -- three different foundry names (CMI, GSMC, HHGrace) appear in one document for what its
+    process-description section header calls "LL65P-18R", a code not used anywhere else in this corpus and
+    unrelated by name to "R95LD-3R", "R95LD-R" or "R9" (all quoted verbatim rather than reconciled). Figures
+    (0.09 µm, 2 metal layers) match qtp-071302's Cypress-fabricated R95LD-3R exactly despite the different
+    process-code name.

@@ -231,6 +231,18 @@ variants).
 
 15 more Group B file ids remain (further R9Q-3R, R95LD-3R, S4AD-5 variants).
 
+## Fourteenth batch: R9Q-3R origin report, an R9-family mask fix, and R95LD-3R at three fabs
+
+| id | technology_codes | fab | notes |
+|---|---|---|---|
+| qtp-051901 | R9Q-3R, R9T-3R | Fab 4 | this is QTP 051901 itself, already cited by two other records |
+| qtp-053103 | R9T-3R, R9Q-3R | Fab 4 | one mask qualification covering "ALL R9 DEVICES"; printed metal list repeats "Metal 2" and omits "Metal 3" |
+| qtp-071302 | R95LD-3R | Fab 4 (Bloomington, MN) | dates R95LD-3R's own origin to QTP 054302 |
+| qtp-062206 | R95LD-3R | Fab 4 (SkyWater, Minnesota) | 2019 reissue, process fields redacted "Proprietary"; independently confirms QTP 054302 as origin |
+| qtp-091206 | R95LD-3R, LL65P-18R | HHGrace Fab 3 (Shanghai, China) | names three different foundries (CMI, GSMC, HHGrace) in one document; process-description header uses an unrelated code, "LL65P-18R" |
+
+10 more Group B file ids remain (all S4AD-5 variants).
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
