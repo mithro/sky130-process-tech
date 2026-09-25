@@ -179,7 +179,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
   The
   {ref}`VIM <step-118>` page reads the plate as an
   {term}`attenuated phase-shift mask <attenuated PSM>` with OPC, the type
-  the masks index reads in the via-2 and via-3 codes. For via 1 it is not
+  the masks index reads in the via-2 and via-3 codes. For via 1 the type is not
   on public record. 4× is the ITRS 2001 mask magnification for the
   130 nm generation.[^itrs-03]
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
