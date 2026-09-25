@@ -22,6 +22,7 @@ build:
       - python tools/check_filings.py
       - python tools/check_inforce.py
       - python tools/check_history.py
+      - python tools/gen_history_stackups.py --check
       - python tools/gen_history_sources.py --check
       - python tools/gen_steps.py --check
       - python tools/gen_papers.py --check
