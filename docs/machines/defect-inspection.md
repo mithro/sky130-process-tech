@@ -75,7 +75,7 @@ be rotated and translated along a radius".[^tencor-sp1-tech] It used
 axi-symmetric collection
 optics that collect scattered light "independent of the defect's
 orientation on the wafer".[^tencor-sp1-tech] This was important for scratches, which scatter
-preferentially in one direction. An optional
+preferentially in one direction.[^tencor-sp1-tech] An optional
 bright-field channel, based on Nomarski phase contrast, found
 "difficult-to-detect defects—such as mounds and dimples" by "measuring the
 phase difference between two laser beams".[^tencor-sp1-tech]

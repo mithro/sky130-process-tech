@@ -28,9 +28,9 @@ The physics of implantation is on the
 ## What the machine class is and how it works
 
 A high-energy implanter has the source, analysing magnet, scanning,
-dosimetry and end station of every beam-line implanter, described in
+dosimetry and end station of every beam-line implanter,[^wiki-implant] described in
 more detail on the {ref}`medium-current page
-<machine-medium-current-implanter>`.[^wiki-implant] What distinguishes
+<machine-medium-current-implanter>`. What distinguishes
 it is the accelerator after the magnet and the consequences of MeV
 beams for energy purity, dosimetry and resist. In Wikipedia's words the beam
 "passes through an analysis magnet to select the ions that will be
@@ -184,8 +184,8 @@ doses of 10¹¹–5 × 10¹⁵ cm⁻² and tilt and twist, with no tilt range
 stated.[^skw-01]
 
 SkyWater does not give a model. Its 3000 keV ceiling matches the 3 MeV
-that Axcelis gives for the GSD/HE, so we read the entry as a
-GSD/HE-class batch tool.[^axcelis-gsd-page] That is an inference.
+that Axcelis gives for the GSD/HE,[^axcelis-gsd-page] so we read the entry as a
+GSD/HE-class batch tool. That is an inference.
 Whether the two GSD entries are two machines or two configurations is
 not stated.
 

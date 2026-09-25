@@ -380,8 +380,8 @@ not public.
 
   The
   {ref}`HVASTI <step-069>` page reads the implant as split into rotations
-  so that source and drain are symmetric, with the
-  resist and neighbouring gates shadowing the beam.[^pat-quad-tsmc][^chen-1995] The
+  so that source and drain are symmetric,[^pat-quad-tsmc] with the
+  resist and neighbouring gates shadowing the beam.[^chen-1995] The
   {ref}`BHI <step-066>` and {ref}`LDBHI <step-073>` halo pages describe
   the same geometry.
 

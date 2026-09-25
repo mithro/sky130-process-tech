@@ -182,10 +182,10 @@ probing down to 8-Kelvin".[^skw-01] Read term by term, on our reading:
 "HP 4062UX" is the high-end system of HP's 4062 parametric test family
 described in the dealer listing.[^brltest-4062] Its sub-entries name a
 DC, capacitance, pulse and frequency capability and a data path to SPC and
-disposition. "Summit 200 Prober/Tester" and "PMC200 Cryo Probe" match the
+disposition (our reading). "Summit 200 Prober/Tester" and "PMC200 Cryo Probe" match the
 names of FormFactor's Cascade SUMMIT200 and PMC200 probe
-systems, which SkyWater does not
-spell out.[^formfactor-summit200][^formfactor-pmc200]
+systems,[^formfactor-summit200][^formfactor-pmc200] which SkyWater does not
+spell out (our reading).
 
 The sort testers are functional testers for product sort, a
 different step from parametric test (our reading).[^wiki-test] No
@@ -253,9 +253,9 @@ likely used at SkyWater"), as collected on the machines index:
 repository does not describe SkyWater's own production test or name its
 tester. It states that its
 initial data "was collected under contract by CoolCAD Electronics LLC
-using the manufacturing test tile created by SkyWater", of which "each of
+using the manufacturing test tile created by SkyWater",[^raw-data-readme] of which "each of
 the Google MPW runs includes two
-copies".[^raw-data-readme][^raw-data-testtile-prop] The pad documentation lists the
+copies".[^raw-data-testtile-prop] The pad documentation lists the
 structures,[^raw-data-testtile-pads] and the IC-CAP files record sweeps,
 compliance and source-measurement-unit channels.[^raw-data-mdm]
 

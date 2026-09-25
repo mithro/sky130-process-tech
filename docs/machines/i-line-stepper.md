@@ -347,8 +347,8 @@ implants.[^pdk-03]
 * **Metal 3, metal 4 and via 4.** The {ref}`MM3 <step-139>` page gives
   {math}`k_1 \approx 0.49` for the 0.3 µm line on an i-line tool of NA 0.6
   and leaves the class open. ASML's /450F i-line scanner is specified to
-  220 nm, so geometry alone does not exclude i-line
-  for the 0.3 µm metals.[^asml-pas5500-450f]
+  220 nm,[^asml-pas5500-450f] so geometry alone does not exclude i-line
+  for the 0.3 µm metals.
 
   The 0.8 µm via 4 ({ref}`VIM4 <step-159>`)
   would be an i-line level on geometry alone, but the process-steps

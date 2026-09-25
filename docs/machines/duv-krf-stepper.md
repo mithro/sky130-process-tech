@@ -69,8 +69,8 @@ laser".[^asml-750e]
 
 The PAS 5500/750F's laser is "Type: Cymer ELS6600,
 Gigaphoton KES-G2OK", "Power: 20 W", "Frequency: Continuously variable up
-to 2 kHz", against "Type: Cymer 5610", "Power: 10 W", "Frequency: 1 kHz"
-on the /350C stepper.[^asml-pas5500-750f][^asml-pas5500-350c]
+to 2 kHz",[^asml-pas5500-750f] against "Type: Cymer 5610", "Power: 10 W", "Frequency: 1 kHz"
+on the /350C stepper.[^asml-pas5500-350c]
 
 ### Projection lens and resolution
 

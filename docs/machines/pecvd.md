@@ -223,7 +223,7 @@ temperature".[^cheung-2000]
 | Applied Materials — SACVD (sub-atmospheric process) | 1994 | —[^amat-1997] |
 | Applied Materials — Giga-Fill SACVD Centura | 1997 | —[^amat-1997] |
 | Applied Materials — "DxZ(TM)Optima(TM)" | — | of fiscal 1997[^amat-1997] |
-| Applied Materials — Producer | 1998 | by 2002 included TEOS and silane oxides, TEOS and silane PSG, and nitrides[^amat-producer-se-2001][^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002] |
+| Applied Materials — Producer | 1998 | —[^amat-producer-se-2001]; by 2002 included TEOS and silane oxides, TEOS and silane PSG, and nitrides[^amat-pecvd-teos-2002][^amat-pecvd-psg-2002][^amat-pecvd-sin-2002] |
 :::
 
 The company history records a

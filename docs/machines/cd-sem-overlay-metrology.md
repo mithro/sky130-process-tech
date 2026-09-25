@@ -11,7 +11,7 @@ etched features again after etch.
 | | CD-SEM and overlay metrology |
 |---|---|
 | What it does | CD-SEMs measure line width and hole diameter; an overlay tool measures multilayer registration.[^hitachi-2011][^kla-5200xp] See *CD-SEM column* and *Overlay tools*. |
-| CD-SEM beam | Low-energy electrons, "non-invasive measurements that did not require preparatory steps"; 0.4–1.5 kV, Schottky source on the 8100XP.[^hitachi-2011][^gce-kla8100] |
+| CD-SEM beam | Low-energy electrons, "non-invasive measurements that did not require preparatory steps";[^hitachi-2011] 0.4–1.5 kV, Schottky source on the 8100XP.[^gce-kla8100] |
 | CD-SEM resolution and repeatability | 3 nm and 3 nm on the S-9200 (1998); 15 nm and 15 nm on the S-6000 (1984).[^hitachi-2011] 4 nm on the KLA-Tencor 8100XP.[^gce-kla8100] |
 | Overlay measurement | Optical box-in-box imaging on a KLA-Tencor 5200XP; see *Overlay tools* for the reseller's quotes.[^classone-kla5200xp] |
 | Throughput | "45 (automatic operation)" wafers per hour, 8-inch, at five points, S-9200;[^hitachi-2011] 50 wafers per hour, 8-inch, 8100XP;[^gce-kla8100] "a 30 percent increase in throughput over previous generation tools" (Archer 10).[^kla-archer10] |
@@ -192,7 +192,7 @@ database across several overlay tools.[^demoor-2000]
 | Applied Materials | VeritySEM | 2004 | CD-SEM | 65–45 nm, "less than 5 angstrom precision"[^amat-veritysem-2004] |
 | KLA-Tencor | 8100XP | — | CD-SEM | 0.4–1.5 kV, 4 nm resolution[^gce-kla8100] |
 | KLA-Tencor | 5200XP | — | overlay | for 0.18 µm[^kla-5200xp] |
-| KLA-Tencor | Archer 10 | — | overlay | (2003 capture) "for 300 mm manufacturing at the sub-0.13-micron node"; listed in the product menu by 2001[^kla-archer10][^kla-5200xp] |
+| KLA-Tencor | Archer 10 | — | overlay | (2003 capture) "for 300 mm manufacturing at the sub-0.13-micron node";[^kla-archer10] listed in the product menu by 2001[^kla-5200xp] |
 | KLA-Tencor | Archer 300 LCM | 2010 | overlay | succeeding "the widely-adopted Archer 200"[^kla-archer300-2010] |
 :::
 
