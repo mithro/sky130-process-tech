@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 370" width="480" height="370" role="img" data-kind="xsection" data-theme="light">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 322" width="480" height="322" role="img" data-kind="xsection" data-theme="light">
 <title>One cross-section of the front of the wafer: a continuous film under a hatched film and a thin top film, across the whole slice. The drawing is the same as the state before the step.</title>
 <desc>One cross-section of the front of the wafer: a continuous film under a hatched film and a thin top film, across the whole slice. The drawing is the same as the state before the step.</desc>
 <style>
@@ -21,7 +21,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="370"/>
+<rect class="ground" x="0" y="0" width="480" height="322"/>
 <text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
 <clipPath id="clip1"><rect x="12" y="38.0" width="268" height="126.0"/></clipPath>
 <g class="drawing" data-rect="12,38.0,268,126.0" clip-path="url(#clip1)">
@@ -35,18 +35,15 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-hatch)" points="9.00,57.00 61.50,57.00 62.00,50.00 230.00,50.00 230.50,57.00 283.00,57.00 283.00,67.00 220.50,67.00 220.00,60.00 72.00,60.00 71.50,67.00 9.00,67.00"/>
 <polygon class="mat m-oxide-dep" data-layer="capox" points="9.00,49.00 53.50,49.00 54.00,42.00 238.00,42.00 238.50,49.00 283.00,49.00 283.00,57.00 230.50,57.00 230.00,50.00 62.00,50.00 61.50,57.00 9.00,57.00"/>
 </g>
-<text x="328.0" y="321.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 156.0H285.0V317.0H324.0"/>
+<text x="328.0" y="273.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 156.0H285.0V269.0H324.0"/>
 <circle class="dot" data-owner="sub" cx="276.0" cy="156.0" r="1.9"/>
-<text x="328.0" y="297.9" class="t-label-title" data-owner="gox">Gate oxide</text>
-<path class="leader" data-owner="gox" d="M267.0 89.5H291.0V293.0H324.0"/>
+<text x="328.0" y="249.9" class="t-label-title" data-owner="gox">Gate oxide</text>
+<path class="leader" data-owner="gox" d="M267.0 89.5H291.0V245.0H324.0"/>
 <circle class="dot" data-owner="gox" cx="267.0" cy="89.5" r="1.9"/>
 <text x="328.0" y="193.9" class="t-label-title" data-owner="poly">Gate film</text>
-<text x="328.0" y="209.9" class="t-label-note muted" data-owner="poly">amorphous</text>
-<text x="328.0" y="225.9" class="t-label-note muted" data-owner="poly">silicon, undoped</text>
-<text x="328.0" y="241.9" class="t-label-note muted" data-owner="poly">as deposited</text>
-<text x="328.0" y="257.9" class="t-label-note muted" data-owner="poly">(SAGD, step 048)</text>
-<text x="328.0" y="273.9" class="t-label-note tag" data-owner="poly">inferred</text>
+<text x="328.0" y="209.9" class="t-label-note muted" data-owner="poly">n-type gate film,</text>
+<text x="328.0" y="225.9" class="t-label-note muted" data-owner="poly">p-type resistor body</text>
 <path class="leader" data-owner="poly" d="M276.0 83.5H297.0V189.0H324.0"/>
 <circle class="dot" data-owner="poly" cx="276.0" cy="83.5" r="1.9"/>
 <text x="328.0" y="121.9" class="t-label-title" data-owner="nit">Nitride cap</text>
@@ -61,5 +58,5 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="97.9" class="t-label-note muted" data-owner="capox">method not public</text>
 <path class="leader" data-owner="capox" d="M276.0 53.0H309.0V45.0H324.0"/>
 <circle class="dot" data-owner="capox" cx="276.0" cy="53.0" r="1.9"/>
-<text x="12.0" y="358.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="12.0" y="310.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

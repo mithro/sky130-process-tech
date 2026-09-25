@@ -22,6 +22,11 @@ panels:
     hide_layers: [nwell, pwell, chn, chp]
     hide_labels: [fox]
     dim_layers: [liner]
+    labels:
+      poly:
+        title: "Gate film"
+        note: "n-type outside the resistor body"
+        basis: public
   - state_after: "052"
     title: "After: resist everywhere but a window over the resistor body"
     hide_layers: [nwell, pwell, chn, chp]

@@ -24,6 +24,11 @@ panels:
     hide_layers: [nwell, pwell, chn, chp]
     hide_labels: [fox]
     dim_layers: [liner]
+    labels:
+      poly:
+        title: "Gate film"
+        note: "n-type gate film, p-type resistor body"
+        basis: public
   - state_after: "058"
     title: "After: a blanket nitride cap on the gate film"
     hide_layers: [nwell, pwell, chn, chp]

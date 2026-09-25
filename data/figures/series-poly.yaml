@@ -368,8 +368,8 @@ ops:
     t: 20
     label:
       title: "Gate film"
-      note: "amorphous silicon, undoped as deposited (SAGD, step 048)"
-      basis: inferred
+      note: "deposited at SAGD, step 048"
+      basis: public
 
   # ---- the resistor-protect mask and the gate implant
   - step: "049"

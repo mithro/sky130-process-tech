@@ -21,6 +21,11 @@ panels:
     hide_labels: [fox]
     dim_layers: [liner]
     show_ions: false
+    labels:
+      poly:
+        title: "Gate film"
+        note: "n-type gate film, p-type resistor body"
+        basis: public
   - state_after: "057"
     title: "After: resist removed; the fully doped gate film bare"
     hide_layers: [nwell, pwell, chn, chp]

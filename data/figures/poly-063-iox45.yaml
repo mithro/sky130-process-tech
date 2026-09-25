@@ -26,6 +26,11 @@ panels:
     hide_layers: [nwell, pwell, chn, chp]
     hide_labels: [fox, sub]
     dim_layers: [liner]
+    labels:
+      poly:
+        title: "Gate film"
+        note: "n-type gate film, p-type resistor body"
+        basis: public
   - state_after: "063"
     title: "After: a thin oxide on the gate sidewalls and the active areas"
     hide_layers: [nwell, pwell, chn, chp]

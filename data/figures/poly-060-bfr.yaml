@@ -20,3 +20,8 @@ panels:
     hide_layers: [nwell, pwell, chn, chp]
     hide_labels: [fox]
     dim_layers: [liner]
+    labels:
+      poly:
+        title: "Gate film"
+        note: "n-type gate film, p-type resistor body"
+        basis: public
