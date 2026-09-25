@@ -1,6 +1,19 @@
 (category-deposition)=
 # Thin-film deposition
 
+Deposition steps *add* a layer of material onto the wafer surface,
+covering everything that is there. Almost every other step in the flow
+either patterns a deposited film, implants through one, or polishes one
+back.
+
+| | Thin-film deposition |
+|---|---|
+| What it does | adds a layer of material onto the wafer surface, covering everything that is there |
+| Steps in SKY130 | 41 |
+| Tool classes | {ref}`LPCVD furnaces <machine-vertical-furnace-lpcvd>`, {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>`, {ref}`PVD <machine-pvd-cluster-tool>`, {ref}`CVD tungsten <machine-tungsten-cvd>` |
+| Consumable classes | {ref}`Precursors <material-precursors>`, {ref}`Sputter targets <material-sputter-targets>` |
+| Governing relation | Arrhenius growth-rate law |
+
 ## What this class of step does
 
 Deposition steps *add* a layer of material onto the wafer surface,
@@ -26,7 +39,7 @@ deposition* ({term}`PVD`) knocks atoms off a solid target with argon
 ions from a magnetron plasma and lets them condense on the
 wafer.[^wiki-sputter] The choice between them is set by the material
 (metals are sputtered; dielectrics, silicon and tungsten are grown by
-CVD), by the temperature the wafer can tolerate at that point in the
+CVD). It is also set by the temperature the wafer can tolerate at that point in the
 flow (typically below about 450 °C once aluminium is present)[^txt-02],
 and by how conformally the film must coat holes and steps.
 
@@ -42,7 +55,7 @@ e^{-E_A/kT}`; at high temperature transport limits the rate and it
 becomes nearly temperature-independent. Films deposited in the
 surface-reaction-limited regime are conformal, because reactants reach
 every surface at the same concentration and have time to migrate before
-reacting; films deposited in the transport-limited regime are thicker on
+reacting.[^txt-01][^ohring-2002] Films deposited in the transport-limited regime are thicker on
 exposed corners and thinner in recesses, and can pinch off narrow gaps
 leaving voids.[^txt-01][^ohring-2002] Conformality is quantified as
 {term}`step coverage`, and the {term}`aspect ratio` of the feature being
@@ -59,8 +72,17 @@ because the low pressure makes the gas-phase diffusion length long
 compared with the wafer spacing.[^txt-01] The
 standard LPCVD films and their typical industry conditions are:
 
-* **Polysilicon or amorphous silicon** from silane, SiH₄ → Si + 2H₂, at
-  roughly 580–650 °C. At low temperature and a deposition rate above a
+:::{table} LPCVD films, their reactions and typical industry conditions
+
+| Film | SKY130 steps | Composition and conditions |
+|---|---|---|
+| Polysilicon or amorphous silicon | {ref}`SAGD <step-048>` | SiH₄ → Si + 2H₂, roughly 580–650 °C |
+| Silicon nitride | {ref}`ISONIT <step-003>`, {ref}`GATENIT <step-058>`, {ref}`SPNIT <step-076>` | 3SiH₂Cl₂ + 4NH₃ → Si₃N₄ + 6HCl + 6H₂, roughly 700–800 °C; dense, conformal, tensile stress of order 1 GPa |
+| TEOS oxide | — | Si(OC₂H₅)₄ → SiO₂ + by-products, roughly 650–750 °C |
+| {term}`HTO` (high-temperature oxide) | — | SiH₂Cl₂ + N₂O, roughly 800–900 °C |
+:::
+
+**Polysilicon or amorphous silicon.** At low temperature and a deposition rate above a
   critical value the film deposits amorphous and crystallises during
   later anneals, giving a smoother surface and finer grain, which
   helps gate etch and {term}`CD` control; SKY130's gate is deposited
@@ -68,16 +90,15 @@ standard LPCVD films and their typical industry conditions are:
   ({ref}`SAGD <step-048>`). Phosphine or diborane
   can be co-flowed for in-situ doping, but gates in a dual-work-function
   CMOS process are usually implanted instead.[^wiki-poly][^txt-01]
-* **Silicon nitride** from dichlorosilane and ammonia, 3SiH₂Cl₂ + 4NH₃ →
-  Si₃N₄ + 6HCl + 6H₂, at roughly 700–800 °C. The film is dense, highly
-  conformal and under tensile stress of order 1 GPa, which limits its
+
+**Silicon nitride.** The tensile stress limits its
   thickness before cracking or wafer bowing.[^wiki-sin][^txt-02] Used
   for the STI polish-stop/hard mask ({ref}`ISONIT <step-003>`), the gate
   cap ({ref}`GATENIT <step-058>`) and the spacer ({ref}`SPNIT
   <step-076>`).
-* **TEOS oxide**, Si(OC₂H₅)₄ → SiO₂ + by-products, at roughly 650–750
-  °C; and **{term}`HTO`** (high-temperature oxide) from SiH₂Cl₂ + N₂O at 800–900
-  °C, both temperatures being typical industry values.[^txt-01][^txt-02]
+
+**TEOS oxide and HTO.** Both temperatures
+  are typical industry values.[^txt-01][^txt-02]
   Both are conformal and are used for spacers and liners.[^wiki-teos]
 
 ### PECVD
@@ -87,21 +108,15 @@ component) capacitive discharge to dissociate the precursors so that
 deposition proceeds at 250–400 °C, low enough for wafers that already
 carry aluminium.[^wiki-pecvd] Typical films:
 
-* **Oxide** from SiH₄ + N₂O, or from TEOS + O₂ (better conformality and
-  lower particle count). PECVD TEOS oxide is the workhorse inter-level
-  dielectric and capping oxide of an aluminium {term}`BEOL`; the ITRS 2001
-  notes that fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in
-  production since the 250 nm node".[^itrs-02]
-* **Nitride** from SiH₄ + NH₃ + N₂, hydrogen-rich (typically 10–25 at.%
-  H)[^txt-02], used as an etch stop and as the final scratch- and
-  moisture-resistant passivation ({ref}`NTSD <step-167>`).
-* **Silicon oxynitride** SiOₓNᵧ from SiH₄ + N₂O + NH₃, whose
-  refractive index can be tuned between oxide and nitride; used as a
-  dielectric anti-reflective coating under photoresist and as the
-  dielectric of MiM capacitors ({ref}`CAPILD <step-135>`).
-* **PSG** by adding PH₃ to an oxide deposition, typically 4–8 wt.% P
-  (a typical industry range),[^txt-02] which getters
-  sodium and, in older flows, could be reflowed.[^wiki-psg]
+:::{table} PECVD films, their composition and use
+
+| Film | SKY130 steps | Composition, conditions and use |
+|---|---|---|
+| Oxide | — | SiH₄ + N₂O, or TEOS + O₂ (better conformality and lower particle count); the workhorse inter-level dielectric and capping oxide of an aluminium {term}`BEOL`; ITRS 2001: fluorinated versions ("Low κ FSG (κ = 3.7)") had "been in production since the 250 nm node".[^itrs-02] |
+| Nitride | {ref}`NTSD <step-167>` | SiH₄ + NH₃ + N₂, hydrogen-rich (typically 10–25 at.% H)[^txt-02]; an etch stop and the final scratch- and moisture-resistant passivation |
+| Silicon oxynitride | {ref}`CAPILD <step-135>` | SiOₓNᵧ from SiH₄ + N₂O + NH₃, refractive index tunable between oxide and nitride; a dielectric anti-reflective coating under photoresist and the dielectric of MiM capacitors |
+| PSG | — | oxide + PH₃, typically 4–8 wt.% P (a typical industry range)[^txt-02]; getters sodium and, in older flows, could be reflowed[^wiki-psg] |
+:::
 
 The ion bombardment inherent in PECVD lets film stress be tuned from
 compressive to tensile by adjusting the low-frequency power, a
@@ -137,7 +152,9 @@ aluminium BEOL are:
   improves electromigration lifetime relative to pure
   aluminium.[^wiki-em][^txt-02]
 * **Titanium** as an adhesion/contact layer and **titanium nitride** by
-  reactive sputtering of Ti in Ar/N₂. It was on Al stripes over TiN
+  reactive sputtering of Ti in Ar/N₂.
+
+  It was on Al stripes over TiN
   that Blech measured the threshold current density below which no
   electromigration is seen — the critical-length ("Blech length")
   effect;[^blech-1976] on top of Al it serves as an anti-reflective
@@ -145,7 +162,9 @@ aluminium BEOL are:
 * **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of titanium
   and the balance of tungsten"),[^pat-tiw-hitachi] a barrier and
   anti-reflective cap used in some aluminium stacks and as a capacitor
-  electrode. Whether SKY130's aluminium levels are capped with Ti:W or
+  electrode.
+
+  Whether SKY130's aluminium levels are capped with Ti:W or
   with titanium nitride is not public; the evidence is set out under
   {ref}`overview-metal-cap`.
 * **Cobalt or titanium** for {term}`salicide` formation
@@ -178,11 +197,22 @@ etch oxide. The blanket film is then removed from the field by CMP
 ### Film thicknesses in SKY130
 
 The SKY130 PDK's design-rule assumptions page publishes the nominal
-thicknesses used for antenna-ratio calculations: poly 0.18 µm, local
-interconnect (LI1) 0.1 µm, metal 1 and metal 2 0.35 µm, metal 3 and
-metal 4 0.8 µm (2 µm in the thick-metal flow options), metal 5 1.2 µm or
-2 µm depending on the flow option, an oxide spacer of 0.05 µm and a
-pre-LI {term}`ILD` of 0.5 µm.[^pdk-03] These are the antenna-rule assumptions;
+thicknesses used for antenna-ratio calculations:[^pdk-03]
+
+:::{table} Nominal deposited-film thicknesses from the SKY130 PDK's antenna-ratio assumptions
+
+| Layer | Thickness |
+|---|---|
+| Poly | 0.18 µm |
+| Local interconnect (LI1) | 0.1 µm |
+| Metal 1 and metal 2 | 0.35 µm |
+| Metal 3 and metal 4 | 0.8 µm (2 µm in the thick-metal flow options) |
+| Metal 5 | 1.2 µm or 2 µm depending on the flow option |
+| Oxide spacer | 0.05 µm |
+| Pre-LI {term}`ILD` | 0.5 µm |
+:::
+
+These are the antenna-rule assumptions;
 the PDK's process stack diagram labels the same conductors 0.36, 0.845
 and 1.26 µm.[^pdk-04] We take these as the approximate deposited (and,
 for the dielectrics, post-CMP) targets that the deposition steps below
@@ -223,67 +253,70 @@ must hit.
 
 ## Typical consumables
 
-* **Silicon precursors**: silane (SiH₄), dichlorosilane (SiH₂Cl₂),
+* **{ref}`Silicon precursors <material-precursors>`**: silane (SiH₄), dichlorosilane (SiH₂Cl₂),
   TEOS (liquid, vaporised).
-* **Reactants**: ammonia (NH₃), nitrous oxide (N₂O), oxygen (O₂),
+* **{ref}`Reactants <material-process-gases>`**: ammonia (NH₃), nitrous oxide (N₂O), oxygen (O₂),
   nitrogen (N₂), hydrogen (H₂), argon (Ar), helium (He, backside
   cooling and dilution).
-* **Dopant gases**: phosphine (PH₃) for PSG and doped poly; diborane
+* **{ref}`Dopant gases <material-dopant-sources>`**: phosphine (PH₃) for PSG and doped poly; diborane
   (B₂H₆).
-* **Tungsten**: tungsten hexafluoride (WF₆); silane for nucleation;
+* **{ref}`Tungsten <material-precursors>`**: tungsten hexafluoride (WF₆); silane for nucleation;
   H₂.
-* **Chamber cleaning**: NF₃ or C₂F₆/O₂ plasma cleans for PECVD and
+* **{ref}`Chamber cleaning <material-etch-gases>`**: NF₃ or C₂F₆/O₂ plasma cleans for PECVD and
   HDP chambers; in-situ NF₃ cleans for LPCVD tubes.
-* **Sputter targets**: Al–Cu (0.5–1 wt.% Cu), Ti, Ti:W (10 wt.% Ti), Co;
+* **{ref}`Sputter targets <material-sputter-targets>`**: Al–Cu (0.5–1 wt.% Cu), Ti, Ti:W (10 wt.% Ti), Co;
   argon and nitrogen process gases; target lifetime is tracked in kWh.
-* **Hardware**: quartz tubes and boats, showerheads, shields and
+* **{ref}`Hardware <material-hardware-consumables>`**: quartz tubes and boats, showerheads, shields and
   clamp rings, electrostatic chucks, and vacuum-pump oil or dry pumps.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 3 | {ref}`ISONIT <step-003>` | Iso nitride deposition |
-| 11 | {ref}`FILOX <step-011>` | Fill oxide deposition |
-| 48 | {ref}`SAGD <step-048>` | Single a-Si gate deposition |
-| 58 | {ref}`GATENIT <step-058>` | Gate poly nitride deposition |
-| 59 | {ref}`POC <step-059>` | Protective oxide cap |
-| 76 | {ref}`SPNIT <step-076>` | Spacer nitride deposition |
-| 80 | {ref}`SPOX <step-080>` | Spacer oxide deposition |
-| 89 | {ref}`PSG <step-089>` | Sacrificial PSG deposition |
-| 91 | {ref}`NCAPOX <step-091>` | Cap oxide deposition |
-| 97 | {ref}`TI/TIN1 <step-097>` | IMP Ti/TiN deposition |
-| 99 | {ref}`WDEP <step-099>` | Blanket CVD W deposition |
-| 101 | {ref}`LITIN <step-101>` | TiN deposition |
-| 104 | {ref}`LINIT <step-104>` | Nitride cap deposition |
-| 105 | {ref}`NILD2 <step-105>` | ILD oxide deposition |
-| 109 | {ref}`TIN2 <step-109>` | IMP TiN deposition |
-| 110 | {ref}`WDEP2 <step-110>` | Blanket CVD W deposition |
-| 112 | {ref}`TIAL6 <step-112>` | CoTi/AlCu/TiW deposition |
-| 115 | {ref}`NILD3 <step-115>` | ILD oxide deposition |
-| 117 | {ref}`NCAPOX3 <step-117>` | CAPOX deposition |
-| 120 | {ref}`TIN3 <step-120>` | IMP TiN deposition |
-| 121 | {ref}`WDEP3 <step-121>` | Blanket CVD W deposition |
-| 123 | {ref}`TIAL12 <step-123>` | AlCu 2/TiW deposition |
-| 126 | {ref}`NILD4 <step-126>` | ILD oxide deposition |
-| 128 | {ref}`NCAPOX4 <step-128>` | CAPOX deposition |
-| 131 | {ref}`TIN4 <step-131>` | IMP TiN deposition |
-| 132 | {ref}`WDEP4 <step-132>` | Blanket CVD W deposition |
-| 134 | {ref}`WTIAL3 <step-134>` | AlCu 2/TiW deposition |
-| 135 | {ref}`CAPILD <step-135>` | Capacitor ILD oxynitride deposition |
-| 136 | {ref}`CAPTIW1 <step-136>` | Capacitor TiW deposition |
-| 141 | {ref}`NILD5 <step-141>` | ILD oxide deposition |
-| 143 | {ref}`NCAPOX5 <step-143>` | CAPOX deposition |
-| 146 | {ref}`TIN5 <step-146>` | IMP TiN deposition |
-| 147 | {ref}`WDEP5 <step-147>` | Blanket CVD W deposition |
-| 149 | {ref}`WTIAL4 <step-149>` | AlCu 2/TiW deposition |
-| 150 | {ref}`CAPILD2 <step-150>` | Capacitor ILD oxynitride deposition |
-| 151 | {ref}`CAPTIW2 <step-151>` | Capacitor TiW deposition |
-| 156 | {ref}`NILD6 <step-156>` | ILD oxide deposition |
-| 158 | {ref}`NCAPOX6 <step-158>` | CAPOX deposition |
-| 161 | {ref}`WTIAL5 <step-161>` | AlCu 2/TiW deposition |
-| 164 | {ref}`NFUSOX <step-164>` | Fuse oxide deposition |
-| 167 | {ref}`NTSD <step-167>` | Nitride topside deposition |
+:::{table} The forty-one deposition steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 3 | {ref}`ISONIT <step-003>` | Iso nitride deposition | {ref}`LPCVD furnace <machine-vertical-furnace-lpcvd>` |
+| 11 | {ref}`FILOX <step-011>` | Fill oxide deposition | {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 48 | {ref}`SAGD <step-048>` | Single a-Si gate deposition | {ref}`LPCVD furnace <machine-vertical-furnace-lpcvd>` |
+| 58 | {ref}`GATENIT <step-058>` | Gate poly nitride deposition | {ref}`LPCVD furnace <machine-vertical-furnace-lpcvd>`, {ref}`PECVD <machine-pecvd>` |
+| 59 | {ref}`POC <step-059>` | Protective oxide cap | {ref}`LPCVD furnace <machine-vertical-furnace-lpcvd>`, {ref}`PECVD <machine-pecvd>` |
+| 76 | {ref}`SPNIT <step-076>` | Spacer nitride deposition | {ref}`LPCVD furnace <machine-vertical-furnace-lpcvd>` |
+| 80 | {ref}`SPOX <step-080>` | Spacer oxide deposition | {ref}`PECVD <machine-pecvd>` |
+| 89 | {ref}`PSG <step-089>` | Sacrificial PSG deposition | {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 91 | {ref}`NCAPOX <step-091>` | Cap oxide deposition | {ref}`PECVD <machine-pecvd>` |
+| 97 | {ref}`TI/TIN1 <step-097>` | IMP Ti/TiN deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 99 | {ref}`WDEP <step-099>` | Blanket CVD W deposition | {ref}`CVD tungsten <machine-tungsten-cvd>` |
+| 101 | {ref}`LITIN <step-101>` | TiN deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 104 | {ref}`LINIT <step-104>` | Nitride cap deposition | {ref}`PECVD <machine-pecvd>` |
+| 105 | {ref}`NILD2 <step-105>` | ILD oxide deposition | {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 109 | {ref}`TIN2 <step-109>` | IMP TiN deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 110 | {ref}`WDEP2 <step-110>` | Blanket CVD W deposition | {ref}`CVD tungsten <machine-tungsten-cvd>` |
+| 112 | {ref}`TIAL6 <step-112>` | CoTi/AlCu/TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 115 | {ref}`NILD3 <step-115>` | ILD oxide deposition | {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 117 | {ref}`NCAPOX3 <step-117>` | CAPOX deposition | {ref}`PECVD <machine-pecvd>` |
+| 120 | {ref}`TIN3 <step-120>` | IMP TiN deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 121 | {ref}`WDEP3 <step-121>` | Blanket CVD W deposition | {ref}`CVD tungsten <machine-tungsten-cvd>` |
+| 123 | {ref}`TIAL12 <step-123>` | AlCu 2/TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 126 | {ref}`NILD4 <step-126>` | ILD oxide deposition | {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 128 | {ref}`NCAPOX4 <step-128>` | CAPOX deposition | {ref}`PECVD <machine-pecvd>` |
+| 131 | {ref}`TIN4 <step-131>` | IMP TiN deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 132 | {ref}`WDEP4 <step-132>` | Blanket CVD W deposition | {ref}`CVD tungsten <machine-tungsten-cvd>` |
+| 134 | {ref}`WTIAL3 <step-134>` | AlCu 2/TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 135 | {ref}`CAPILD <step-135>` | Capacitor ILD oxynitride deposition | {ref}`PECVD <machine-pecvd>` |
+| 136 | {ref}`CAPTIW1 <step-136>` | Capacitor TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 141 | {ref}`NILD5 <step-141>` | ILD oxide deposition | {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 143 | {ref}`NCAPOX5 <step-143>` | CAPOX deposition | {ref}`PECVD <machine-pecvd>` |
+| 146 | {ref}`TIN5 <step-146>` | IMP TiN deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 147 | {ref}`WDEP5 <step-147>` | Blanket CVD W deposition | {ref}`CVD tungsten <machine-tungsten-cvd>` |
+| 149 | {ref}`WTIAL4 <step-149>` | AlCu 2/TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 150 | {ref}`CAPILD2 <step-150>` | Capacitor ILD oxynitride deposition | {ref}`PECVD <machine-pecvd>` |
+| 151 | {ref}`CAPTIW2 <step-151>` | Capacitor TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 156 | {ref}`NILD6 <step-156>` | ILD oxide deposition | {ref}`PECVD <machine-pecvd>`, {ref}`HDP-CVD <machine-hdp-cvd>` |
+| 158 | {ref}`NCAPOX6 <step-158>` | CAPOX deposition | {ref}`PECVD <machine-pecvd>` |
+| 161 | {ref}`WTIAL5 <step-161>` | AlCu 2/TiW deposition | {ref}`PVD <machine-pvd-cluster-tool>` |
+| 164 | {ref}`NFUSOX <step-164>` | Fuse oxide deposition | {ref}`PECVD <machine-pecvd>` |
+| 167 | {ref}`NTSD <step-167>` | Nitride topside deposition | {ref}`PECVD <machine-pecvd>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings

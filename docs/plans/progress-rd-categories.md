@@ -42,9 +42,62 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 - strip.md — done
 - implant.md — done
 - etch.md — done
-- (remaining two to do: deposition, lithography)
+- deposition.md — done
+- (remaining one to do: lithography)
 
 ## Pages
+
+### deposition.md — done
+
+The biggest page in the batch (532 lines, 41 steps, four separate technique sections each with its own
+film list). Rules applied: intro + quick-facts table (Governing relation "Arrhenius growth-rate law",
+from the page's own {math} formula in "Growth regimes and conformality"); three R-COMPARE-style tables
+(LPCVD films: 3 rows + a 4th for HTO split out of a combined bullet; PECVD films: 4 rows, all short
+enough to keep their explanation in the table itself — none over 40 words — so no separate prose was
+needed; a film-thickness table built from the "Film thicknesses in SKY130" number-dense sentence, not a
+material/chemistry comparison but the same "numeric list announced by a colon" shape, converted the same
+way); R-PARA on two PVD/metallisation bullets (Titanium/TiN, Titanium–tungsten) — kept as labelled
+paragraphs rather than a fourth table, since this list is about layer history/function (Blech length,
+the metal-cap open question) rather than a clean chemistry comparison, matching the same judgement as
+anneal.md's silicide bullets and etch.md's aluminium-cap paragraph; R-SENTENCE splits (the "choice
+between them" sentence, the conformality-regime sentence); R-COMPARE step 2 (seven consumables lead-ins
+linked across `precursors`/`process-gases`/`dopant-sources`/`etch-gases`/`sputter-targets`/
+`hardware-consumables`); R-COMPARE step 3 (Machine class column on the 41-row steps table, generated with
+a script from the machines-index lookup rather than typed by hand, given the size — several rows carry
+two co-primary classes, e.g. PECVD+HDP-CVD for the ILD oxide steps); R-CAPTION on all four new tables.
+
+Applied the etch.md lesson throughout: every row's own numbers were kept inside that row's own cells
+(e.g. the silicon-nitride row's "tensile stress of order 1 GPa" stayed in the composition cell rather
+than moving to prose after the table), so no number ever had to cross other rows to reach a same-bullet
+number placed in prose. This produced **zero LOST or bare-unregrouped number_order entries** on the first
+checker run — the only page in this batch where that was true without a second pass.
+
+`check_preserved.py --base 0e980ba7 --allow-regrouped --allow-added markers,numbers,refs,hedges,
+identifiers` → exit 0. Three `--allow-regrouped` groups, all confirmed by hand: the silicon-nitride
+bullet's digits reappearing (with the added "1" GPa figure) in the same row; the TEOS/HTO bullet's two
+temperature pairs, now in two separate rows but each internally intact; the 14-number film-thickness run,
+now one table with one row per figure, same digits, same order read top to bottom.
+
+* **ADDED markers:** `txt-01`, `ohring-2002` (one extra occurrence each) — R-SENTENCE rule 5 repeats.
+* **ADDED numbers:** `41` — Steps-in-SKY130 count.
+* **ADDED refs:** the five machine-class targets across quick facts and the 41-row Machine class column
+  (`machine-pecvd` ×20, `machine-pvd-cluster-tool` ×14, `machine-hdp-cvd` ×8, `machine-tungsten-cvd` ×6,
+  `machine-vertical-furnace-lpcvd` ×6); the six material-class targets from the consumables links and
+  quick facts; `step-003`/`step-048`/`step-058`/`step-076` ×1 each (kept in both the LPCVD table's Steps
+  cells and the "used for..." prose that names the same steps by their bold labels).
+* **ADDED hedges:** `typical` ×1 — the LPCVD table's caption echoes the page's own "typical industry
+  conditions" phrase from the sentence directly above it (unchanged, still on the page).
+* **ADDED identifiers:** `SKY130` ×4.
+
+Quick-facts derivation: What it does = verbatim fragment of the opening sentence. Steps in SKY130 = 41
+(steps table, generated and cross-checked against the source table's own row count). Tool classes = the
+five `{ref}` targets in Typical equipment. Consumable classes = `precursors` and `sputter-targets`, the
+two classes that between them own most of this page's named consumables (gases and dopant sources were
+left out of the summary cell for brevity, as elsewhere in this batch). Governing relation = the Arrhenius
+growth-rate law named in "Growth regimes and conformality".
+
+Checkers and `-W` build pass. Screenshots (desktop, 400 px) reviewed: all four new tables and the 41-row
+steps table wrap cleanly at 400 px, no horizontal scroll.
 
 ### etch.md — done
 
