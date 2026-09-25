@@ -47,9 +47,18 @@ or **ADDED** in nine categories:
    undeclarable loss. A genuine swap — within a unit, between table rows,
    or between list items — breaks the contiguous run and still fails.
 4. ``quotes`` — the multiset of quoted strings (straight ``"..."`` and
-   curly “...”), matched against the whitespace-*flattened* page so a
-   quotation that spans a hard-wrapped source line is still seen as one
-   run, then whitespace-normalised for comparison like everything else.
+   curly “...”), matched and paired one PARAGRAPH at a time (split on a
+   blank line, then whitespace-*flattened*), so a quotation that spans a
+   hard-wrapped source line is still seen as one run, then whitespace-
+   normalised for comparison like everything else. A quotation is capped
+   at 800 characters (Guide problem 16, raised from 400: a longer
+   quotation used to desynchronise the open/close pairing of every later
+   quotation on the *whole page*, since matching once ran over the entire
+   flattened text; scoping to one paragraph limits any remaining mismatch
+   to that paragraph). A paragraph whose own quote-mark count is odd (a
+   quotation still over the cap, or a stray unmatched mark) is printed as
+   a ``WARN`` naming the page, rather than silently resolved by whatever
+   the regex pairs next.
 5. ``refs`` — the multiset of ``{ref}``/``{term}``/``{doc}`` targets, and
    ``urls`` — the multiset of URLs written anywhere on the page. A role is
    matched and removed from the text as one atomic unit *before* inline
@@ -74,13 +83,42 @@ or **ADDED** in nine categories:
    "EV300", "SC-1", `` `pfet_01v8` ``, "1X") that ``numbers`` masks out
    before counting, tracked separately as whole tokens so a change like
    "SKY130" -> "SKY 130" is still caught, just not as a number.
+9. ``words`` — a case-folded word-multiset of the page's "open text":
+   everything outside a ``{dropdown}`` body, a ``{figure}`` fence, a
+   generated ``<!-- name:begin -->``...``<!-- name:end -->`` block, and a
+   footnote definition. Unlike the eight categories above, this one has
+   no notion of a number, quotation, marker, hedge, role or identifier to
+   latch onto, so it is the only category that can see an ordinary word
+   quietly dropped (rd-steps-064-075.md guide problem 4: a first draft of
+   step 074 lost "removing step:" through an overlapping replacement, and
+   every other check passed). Always printed (``WORDS LOST``/``WORDS
+   ADDED``), never itself a failure, unless ``--strict-words`` is given,
+   which fails on a LOST word that is not in the small ``WORDS_STOPLIST``
+   of common function words (routine rewording otherwise shifts their
+   counts too often to be usable as a strict gate).
 
-A **loss** in any category is always an error. An **addition** is an error
-unless its category is named in ``--allow-added`` (comma-separated); every
-addition is printed either way (a declared one tagged "(declared)"), so
-the coordinator can see what changed even when it was permitted. Exit
-status is 1 if any undeclared difference (a loss, or an addition outside
-``--allow-added``, or a changed dropdown) was found on any checked page.
+A **loss** in categories 1-8 is always an error. An **addition** is an
+error unless its category is named in ``--allow-added`` (comma-separated);
+every addition is printed either way (a declared one tagged "(declared)"),
+so the coordinator can see what changed even when it was permitted.
+``--allow-deduplicated`` narrowly downgrades a LOST ``quotes``/``markers``/
+``numbers`` item to a warning on a class page (``docs/machines/*.md``,
+``docs/materials/*.md`` only) when it disappeared from the quick-facts
+table (before the first H2) but is unchanged, and still present, in the
+body (rd-materials.md review "D1": R-QUICKFACTS asks writers to delete a
+quick-facts cell's copy of a value the body already states, which the
+multiset check cannot otherwise tell apart from a real deletion). Exit
+status is 1 if any undeclared difference (a loss, an addition outside
+``--allow-added``, a changed dropdown, or a ``--strict-words`` failure)
+was found on any checked page.
+
+Two further checks are informational only and never affect the exit
+status: every "At a glance" admonition bullet's numbers and footnote
+markers must recur somewhere in the body below it, and every "*SkyWater
+says:*" line must contain a quotation mark or a ``skw-``/``cyp-``
+footnote marker; each runs once against the CURRENT page text (not a
+before/after diff) and prints a ``WARN`` with the page and line when it
+does not.
 
 **This check is necessary, not sufficient.** It cannot see a number moved
 between two table cells or two claims (only reordered *within* one unit,
@@ -99,7 +137,8 @@ Usage::
 
     uv run python tools/check_preserved.py [--base main] \\
         [--allow-added markers,footnotes,numbers,number_order,quotes,refs,urls,hedges,identifiers] \\
-        [--allow-dropdown-edits] [--allow-regrouped] [paths ...]
+        [--allow-dropdown-edits] [--allow-regrouped] [--allow-deduplicated] \\
+        [--strict-words] [paths ...]
 
 With no ``paths``, every ``docs/**/*.md`` file outside ``docs/plans`` that
 differs between ``--base`` and the working tree (tracked changes and new,
@@ -120,15 +159,26 @@ pair (the caption's own numbers are kept, the fence and ``:widths:``
 line are not), "SKY130"/"SC-1"/"1X"/a numbered-item marker never counting
 as numbers, a role shown as a literal inline-code example never counting
 as a real role, a bare number directly before a year-like number not
-mis-tokenising into a bogus grouped number, and (with ``--allow-regrouped``)
-a prose sentence turned into a table, and a numeric sequence regrouped
-into one-number-per-row table or list rows, all pass; a dropped footnote
-marker, a changed number, two numbers swapped in place ("6 of 171" to
-"171 of 6"), a dropped hedge, an altered quotation (including one that
-spans a source line break), an identifier changed ("SKY130" to "SKY 130"),
-the same table split *without* ``--allow-regrouped``, a regroup with a
-genuinely missing number or a genuine swap between rows even *with*
-``--allow-regrouped``, and text moved out of a dropdown all fail.
+mis-tokenising into a bogus grouped number, a role followed on the same
+line by an unrelated inline code span no longer losing the ref or the
+hedge between them (G15/T-new-1), a >400-char quotation elsewhere on the
+page no longer masking a real wording change in a later quotation (Guide
+problem 16), the new hedge words, a quick-facts deletion downgraded by
+``--allow-deduplicated`` under its three conditions, a dropped word
+reported informationally without failing the run, and (with
+``--allow-regrouped``) a prose sentence turned into a table, and a numeric
+sequence regrouped into one-number-per-row table or list rows, all pass;
+a dropped footnote marker, a changed number, two numbers swapped in place
+("6 of 171" to "171 of 6"), a dropped hedge, an altered quotation
+(including one that spans a source line break), an identifier changed
+("SKY130" to "SKY 130"), the same table split *without*
+``--allow-regrouped``, a regroup with a genuinely missing number or a
+genuine swap between rows even *with* ``--allow-regrouped``, text moved
+out of a dropdown, a quick-facts deletion that is not actually
+deduplicated (still present in the body under different terms), and a
+dropped content word under ``--strict-words`` all fail. The glance-box
+and "*SkyWater says:*" checks, and the plain (non-strict) ``words`` diff,
+are exercised too, confirming they warn without failing.
 """
 
 from __future__ import annotations
