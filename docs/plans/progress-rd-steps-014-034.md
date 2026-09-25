@@ -429,8 +429,10 @@ lines at both 1280 px and 400 px (e.g. "5 × 10¹¹" splitting at the space arou
 "What the public record shows" H3 was itself removed under review fix H3 (an Open-questions
 bullet had been moved into it, breaching R-H3 step 2). The table has since been rebuilt one row
 per implant with non-breaking spaces around every "×10ⁿ" value and wrapped in a `{table}`
-directive with explicit `:widths:`; re-screenshotted at 400 px, no value now breaks across
-lines. See review fixes H3 and M2 above for the corrected page content.
+directive with explicit `:widths:`; re-screenshotted at 400 px, no ×10ⁿ value now breaks across
+lines (a range like "5 × 10¹²–2 × 10¹³" can still wrap at its en dash, with each side intact).
+The corrected page content is in the git commits titled "Review fix H3: restore Open-questions
+bullet moved across H2s" and "Review fix M2: one row per implant in the two energy tables".
 
 ### 017-nwm.md — done (no in-force patent note on this page; index-links dropdown only)
 
@@ -877,8 +879,8 @@ correctly flagged this as unverifiable from the record alone. From the review-fi
 tool prints is read and, where it is a genuine, declarable addition (a glance-box repeat of a
 value already on the page, an R-TOOLS head reusing an existing `{ref}` target, and so on), it is
 recorded in that fix's own commit message and/or progress-file note rather than pre-declared on
-the command line. See the "Review fix H1"–"Review fix M7" sections of this file (and their
-commits) for the per-fix verification detail.
+the command line. See the git commits titled "Review fix H1: ..." through "Review fix M8: ..."
+(and the later "Verify fix ..." commits) on this branch for the per-fix verification detail.
 
 ## For the tool branch
 
