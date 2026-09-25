@@ -322,6 +322,40 @@ table cells > 25: 0. After: see the batch summary at the end.
   covered a different clause.
 * **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 6 → 4 (above).
 
+### 054 PRIS — done
+
+* **R-H3.** Not applied (as on 051: the passage after the figure is generic reasoning; no step-page H3
+  title is true of it). R-LIST structures it.
+* **R-LIST.** "The resist being removed differs from the one at `P1IS` in two ways. It is …; and it
+  has taken …" → lead-in with a colon and two plain bullets ("; and it has" → "It has"; nothing else
+  changed); the BF₂/residue sentences follow as a paragraph, split at their semicolon. "Two points
+  are specific to this strip. First, … Second, …" → lead-in and two bullets keeping "First," /
+  "Second,"; the first item's 60-word sentence split at its colon ("… treat them differently. An
+  SC-1 step …", `[^lee-kt-1999]` stays on the SC-1 clause) with the second half as the item's
+  continuation paragraph.
+* **R-CATEGORY.** Classification sentence alone; the one remaining sentence as the second paragraph.
+* **R-SENTENCE / R-PARA step 4.** "Plasma ash" (162 w, one 83-word sentence): split at the semicolon
+  after "finishing hot for the bulk"; the em-dash pair holding the Fujimura measurement becomes its
+  own sentence after the claim (R-SENTENCE step 1, as in the guide's 066 example), and
+  **`[^fujimura-1991]` is repeated on the claim "Water-vapour-containing chemistries ash faster than
+  dry oxygen,"** so the claim keeps its source (declared addition); "which is why a fab … reaches for
+  them" stays after it, unmarked, as in the base. Lead (27 w) + two continuation paragraphs.
+* **R-HEDGE, R-TOOLS** (three tools: grades verbatim; AIT as on 051 — *SkyWater says:* holds the
+  posting quotation with the page's verb "reads", our reading "We read "AIT" as …" is the continuation
+  paragraph), **R-OPENQ** (labels "Ash and wet recipes", "Protection of the resistor bodies", "Which
+  asher").
+* **R-RELATED.** "Companion strips: P1IS, UPRIS; the strip after PNCHI is PCHIS." names two
+  relationships → `Same module:` companion strips; the PNCHI/PCHIS clause as its own bullet with no
+  label (it links an implant as context, so "Same category:" would not be true of every link in it).
+* **R-GLANCE.** Public numbers "none published for SKY130"; tool line with the page's grades.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `fujimura-1991` (the repeat above),
+  `skw-01` (glance); hedges "inference" (glance), "not public" (glance label); identifier `SKY130`
+  (glance). No LOST, no REGROUPED. Declared `markers,hedges,identifiers`: clean.
+* **Marker coverage.** 10 flags, all read: list items and split pieces whose base marker belonged to
+  a different clause; "We read "AIT"…" (base marker on the quotation); labels.
+* **Caps**: para > 100 2 → 0; item > 60 1 → 0; sentence > 45 4 → 1 (the "Second, …" bullet, 45 words
+  plus the bullet marker).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph

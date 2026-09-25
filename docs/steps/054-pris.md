@@ -10,6 +10,20 @@
 | **Previous step** | {ref}`PRI <step-053>` |
 | **Next step** | {ref}`URPM <step-055>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** removes the `RRPM` resist after the resistor implant `PRI`
+  and cleans the wafer for the next mask.
+* **Why:** the next resist cannot be coated over this one, and residue
+  would be sealed under the nitride cap.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP, Iridia or Mattson Aspen II
+  asher — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** the ash and wet recipes, and which asher runs the
+  strip (→ Open questions).
+:::
+
 ## What this step is
 
 `PRIS` removes the reverse resistor-protect resist printed at
@@ -29,14 +43,19 @@ Before, the implanted RRPM resist with its window over the resistor body; after,
 :::
 
 
-The resist being removed differs from the one at `P1IS` in two ways. It is a
-*field* of resist with small windows rather than small islands, so there is far
-more of it to remove per wafer and the {term}`crust <implant crust>` is
-continuous; and it has taken a p-type implant — boron or BF₂ at a dose of order
-10¹⁴–10¹⁵ cm⁻² (illustrative, {ref}`PRI <step-053>`) — which is lighter than
-the gate implant but still in the range where a carbonised crust
-forms.[^orvek-1985] If BF₂ is the species, the crust also contains
-fluorine; Fujimura et al. found that O₂ ashing leaves residues that
+The resist being removed differs from the one at `P1IS` in two ways:
+
+* It is a
+  *field* of resist with small windows rather than small islands, so there is far
+  more of it to remove per wafer and the {term}`crust <implant crust>` is
+  continuous.
+* It has taken a p-type implant — boron or BF₂ at a dose of order
+  10¹⁴–10¹⁵ cm⁻² (illustrative, {ref}`PRI <step-053>`) — which is lighter than
+  the gate implant but still in the range where a carbonised crust
+  forms.[^orvek-1985]
+
+If BF₂ is the species, the crust also contains
+fluorine. Fujimura et al. found that O₂ ashing leaves residues that
 are mainly the oxide of the implanted species,[^fujimura-1989] but no
 public source describes the SKY130 case, or compares the residue
 burden between species (as
@@ -46,7 +65,9 @@ implant is also BF₂).
 ## Step category
 
 `PRIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type. On the category page's scale it lies between the
+*post-implant* type.
+
+On the category page's scale it lies between the
 light channel-implant strips and the heavy source/drain strips: the
 dose is high enough to need the crust-first ash sequence, but not so
 high that {term}`popping` is a serious risk if the first step is kept cool.
@@ -55,35 +76,46 @@ high that {term}`popping` is a serious risk if the first step is kept cool.
 
 Every argument on {ref}`P1IS <step-051>` applies: the next resist cannot
 be coated over this one, residue would be sealed under the nitride cap,
-and the implanted crust must be removed without particles. Two points
-are specific to this strip. First, the surface now carries *two* doping
-levels — n⁺ poly and the p-type resistor bodies — and the clean must not
-treat them differently: an {term}`SC-1` step etches silicon at a measurable
-rate,[^lee-kt-1999] and a differential loss of even a few nanometres
-between body and surroundings would change the resistor's effective
-thickness, on which its {term}`sheet resistance` depends linearly. Second, the
-resistor bodies are the most dose-sensitive structures on the wafer, so
-nothing in the strip may add or remove dopant — a constraint that
-excludes, for example, any hot step long enough to matter, and any
-chemistry that leaches boron from the surface.
+and the implanted crust must be removed without particles.
+
+Two points
+are specific to this strip:
+
+* First, the surface now carries *two* doping
+  levels — n⁺ poly and the p-type resistor bodies — and the clean must not
+  treat them differently.
+
+  An {term}`SC-1` step etches silicon at a measurable
+  rate,[^lee-kt-1999] and a differential loss of even a few nanometres
+  between body and surroundings would change the resistor's effective
+  thickness, on which its {term}`sheet resistance` depends linearly.
+* Second, the
+  resistor bodies are the most dose-sensitive structures on the wafer, so
+  nothing in the strip may add or remove dopant — a constraint that
+  excludes, for example, any hot step long enough to matter, and any
+  chemistry that leaches boron from the surface.
 
 ## How it is typically performed
 
-An industry-generic post-implant strip on a bare poly surface, for a
-200 mm, 130 nm-era fab:
+*An industry-generic post-implant strip on a bare poly surface, for a
+200 mm, 130 nm-era fab:*
 
 1. **Plasma ash.** Downstream O₂ plasma with N₂ or {term}`forming gas`,
    beginning at low temperature to remove the crust without
    popping[^pat-strip-mosel] and finishing hot for the
-   bulk; water-vapour-containing chemistries ash faster than dry
-   oxygen — Fujimura et al. measured roughly double the atomic-oxygen
+   bulk.
+
+   Water-vapour-containing chemistries ash faster than dry
+   oxygen,[^fujimura-1991] which is why a
+   fab with a crust to remove reaches for them. Fujimura et al. measured roughly double the atomic-oxygen
    concentration with 10 % H₂O added, and a fall in the ashing
    activation energy from about 0.5 to 0.39 eV with more than 1 % H₂O
-   added[^fujimura-1991] — which is why a
-   fab with a crust to remove reaches for them. Fujimura et al. also showed
+   added.[^fujimura-1991] Fujimura et al. also showed
    that O₂ + H₂O downstream ashing is free of the sodium contamination
    that some older ashers introduced,[^fujimura-1994] which matters when
-   the next film to be deposited is a gate cap. SkyWater's three ashers
+   the next film to be deposited is a gate cap.
+
+   SkyWater's three ashers
    cover this range — the Iridia and Mattson Aspen II list H₂ or H₂/N₂
    additions and the GaSonics PEP N₂/O₂ only, at 40–270 °C between
    them.[^skw-01] A "cold" process for stripping implanted resist is
@@ -111,17 +143,22 @@ chemical oxide is thin and will be buried under the
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP, Iridia and Mattson Aspen II ashers.**[^skw-01]
-  Strength: **strong** for existence; the assignment of this strip to
-  any one of them is an inference.
-* **Akrion Gamma batch bench; DNS bench; FSI Mercury.**[^skw-01]
-  Strength: strong for existence.
-* **Patterned-wafer inspection — KLA-Tencor AIT (our reading).** A
-  SkyWater *Defect Technician 2* posting reads "General operation of
-  semiconductor defect metrology tools:
-  SEM/AIT/KLA/SP1/EV300/1X";[^job-06] we read "AIT" as KLA-Tencor's
+* **GaSonics PEP, Iridia and Mattson Aspen II ashers**[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to
+    any one of them is an inference.
+* **Akrion Gamma batch bench; DNS bench; FSI Mercury**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Patterned-wafer inspection — KLA-Tencor AIT (our reading)**
+  - *SkyWater says:* reads "General operation of
+    semiconductor defect metrology tools:
+    SEM/AIT/KLA/SP1/EV300/1X" in a *Defect Technician 2*
+    posting.[^job-06]
+  - *Tool exists:* medium.
+
+  We read "AIT" as KLA-Tencor's
   Surfscan AIT patterned inspector, and the posting expands none of the
-  abbreviations. Strength: medium.
+  abbreviations.
 
 ## Resources required
 
@@ -140,8 +177,8 @@ chemical oxide is thin and will be buried under the
 
 * Previous: {ref}`PRI <step-053>`; mask: {ref}`RRPM <step-052>`.
 * Next: {ref}`URPM <step-055>`.
-* Companion strips: {ref}`P1IS <step-051>`, {ref}`UPRIS <step-057>`;
-  the strip after {ref}`PNCHI <step-024>` is {ref}`PCHIS <step-025>`.
+* Same module: companion strips {ref}`P1IS <step-051>`, {ref}`UPRIS <step-057>`.
+* The strip after {ref}`PNCHI <step-024>` is {ref}`PCHIS <step-025>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -204,10 +241,10 @@ chemical oxide is thin and will be buried under the
 
 ## Open questions
 
-* The SKY130 ash and wet recipes are not public.
-* Whether the resistor bodies are given any protection (for example a
+* **Ash and wet recipes.** The SKY130 ash and wet recipes are not public.
+* **Protection of the resistor bodies.** Whether the resistor bodies are given any protection (for example a
   shorter SC-1) to limit differential silicon loss is unknown.
-* Which asher runs this strip is not stated.
+* **Which asher.** Which asher runs this strip is not stated.
 
 <!-- footnotes -->
 
