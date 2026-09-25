@@ -2148,7 +2148,11 @@ caption that wraps badly, a bullet list that lost its indentation.
 * [ ] The mandatory headings of §2.9 are untouched, and any new H3 is allowed on this page type.
 * [ ] The generated index-links block is untouched and `## References` occurs once.
 * [ ] Paragraphs ≤ 100 words, list items ≤ 60, sentences ≤ 45, cells ≤ 25 (quick facts ≤ 20).
-* [ ] Every new table has a caption and `:widths:` if it has a prose column, and ≤ 4 columns if it has.
+      Measure against these §1 caps, never against looser "flag" thresholds. After the last page
+      of a batch, run the measurement over the whole batch again and put the counts at the §1 caps
+      in the progress file.
+* [ ] Every new table has a caption and `:widths:` if it has a prose column, and obeys the §1
+      column budget (≤ 3 prose, ≤ 5 short-cell), tested at 400 px.
 * [ ] Every checker and the `-W` build pass.
 * [ ] The phone tiles show no horizontal scrolling outside a table.
 * [ ] Anything doubtful — an arithmetic slip, a number that looks wrong, a source that contradicts the
