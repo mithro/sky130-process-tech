@@ -170,7 +170,9 @@ wherever a description goes further — naming a film, a species or the
 purpose of a step — it is the reading of the step page linked, which
 gives its public basis and marks what is inferred.
 
-**Starting material, isolation and deep N-well.** The wafer enters as
+### Starting material, isolation and deep N-well
+
+The wafer enters as
 bare p-type silicon — the stack diagram labels the bottom
 "p-substrate"[^pdk-04] — and the first module builds
 {term}`shallow trench isolation <STI>`: a pad oxide and a nitride
@@ -189,7 +191,9 @@ chosen, as inferences. No trench depth is public; the {ref}`STIE <step-006>`
 page reads the stack diagram as consistent with roughly 0.3 µm and
 explains why the drawing cannot fix it.
 
-**Wells and threshold implants.** Five masks carry ten implants. The
+### Wells and threshold implants
+
+Five masks carry ten implants. The
 module opens with the low-threshold NMOS implant
 ({ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>`), then prints the
 N-well, through whose resist this reference describes two well implants
@@ -205,7 +209,9 @@ before any gate dielectric is grown. The PDK publishes the resulting well profil
 so the two-implant wells are read as chained {term}`retrograde wells
 <retrograde well>` (inference).
 
-**SONOS tunnel window and ONO stack.** The tunnel mask opens windows
+### SONOS tunnel window and ONO stack
+
+The tunnel mask opens windows
 over the channels of the memory transistors ({ref}`TUNM <step-035>`);
 two implants set their channel doping ({ref}`PTSI <step-037>`,
 {ref}`DEPI <step-038>`), the oxide in the windows is removed
@@ -224,7 +230,9 @@ advantage of additionally serving to reoxidize the ONO charge trapping
 dielectric stack".[^pat-03]
 :::
 
-**Gate oxides.** SKY130 is a {term}`dual gate oxide` process. The thick
+### Gate oxides
+
+SKY130 is a {term}`dual gate oxide` process. The thick
 oxide is grown over every active area ({ref}`GOX100 <step-043>`); the
 low-voltage oxide mask opens the 1.8 V regions ({ref}`LVOM <step-044>`),
 the 1.8 V NMOS channel implant, on this reference's reading, goes in
@@ -234,7 +242,9 @@ thickening the thick oxide slightly at the same time.
 SkyWater lists "Nitrided gate oxide" among its special
 modules;[^skw-01] whether SKY130 uses it is not stated.
 
-**Poly gate and poly resistors.** One silicon film, read on the {ref}`SAGD <step-048>`
+### Poly gate and poly resistors
+
+One silicon film, read on the {ref}`SAGD <step-048>`
 page as undoped amorphous silicon (inference), is deposited and doped *before* it is patterned:
 an n-type gate implant everywhere except the resistor bodies
 ({ref}`RPM <step-049>`, {ref}`P1I <step-050>`), then p-type implants
@@ -250,7 +260,9 @@ P⁺ poly mask, is the basis for reading SKY130 as a
 {term}`single-work-function gate <single-work-function gate>` process
 (inference, {ref}`P1I <step-050>`).
 
-**Tips and halos.** Three masks each open one transistor family for its
+### Tips and halos
+
+Three masks each open one transistor family for its
 source/drain {term}`extension`: the 1.8 V NMOS, with an arsenic tip and a
 boron {term}`halo` ({ref}`NTM <step-064>` to {ref}`ASTIS <step-067>`);
 the 5 V-class NMOS, with a steeply tilted arsenic tip
@@ -262,7 +274,9 @@ memory transistors, with a lightly doped tip and a halo
 list has no P-tip mask or implant; where the PMOS extension is formed is
 one of the open questions below.
 
-**Spacers and source/drain.** A nitride film is deposited and etched
+### Spacers and source/drain
+
+A nitride film is deposited and etched
 back into {term}`spacers <spacer>` ({ref}`SPNIT <step-076>`,
 {ref}`SPE <step-077>`); the gate cap is opened where contacts will land
 on poly ({ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`, the
@@ -273,7 +287,9 @@ reference's reading, two implants and the N⁺ mask one ({ref}`PSDM <step-081>` 
 ({ref}`RTAD <step-088>`). Here the front end, as this reference divides
 the flow, ends.
 
-**Pre-metal dielectric, contact silicide and local interconnect.** This
+### Pre-metal dielectric, contact silicide and local interconnect
+
+This
 is the {term}`MOL` of this reference. A
 {term}`phosphosilicate glass <PSG>` is
 deposited, polished and capped ({ref}`PSG <step-089>` to
@@ -293,7 +309,9 @@ list does not explain the purposes of the second anneal, the
 "sacrificial" etch or the alloy before metal; the step pages give
 readings.
 
-**Metal contact and metal 1.** The first back-end level repeats a
+### Metal contact and metal 1
+
+The first back-end level repeats a
 pattern that recurs up the stack. Contact holes are printed, etched,
 lined with TiN, filled with tungsten and polished ({ref}`CTM1 <step-107>`
 to {ref}`WCMP2 <step-111>`); the metal stack is sputtered, printed and
@@ -306,7 +324,8 @@ Ti/TiN/AlCu/Ti/TiN";[^cyp-qtp-113005][^cyp-qtp-123907] which of the two
 SKY130 carries at any level is not public, and the evidence is set out
 under {ref}`overview-metal-cap`.
 
-**Via 1, metal 2 and via 2.** Via 1 and via 2 each take the five steps
+### Via 1, metal 2 and via 2
+Via 1 and via 2 each take the five steps
 of mask, etch, TiN liner, tungsten fill and tungsten polish
 ({ref}`VIM <step-118>` to {ref}`WCMP3 <step-122>`,
 {ref}`VIM2 <step-129>` to {ref}`WCMP4 <step-133>`), and metal 2 the
@@ -316,7 +335,9 @@ module ends with the deposition of the metal-3 stack
 ({ref}`WTIAL3 <step-134>`), which stays unpatterned while the first
 capacitor is built on it.
 
-**First MiM capacitor, metal 3 and via 3.** The PDK describes the
+### First MiM capacitor, metal 3 and via 3
+
+The PDK describes the
 capacitor as "constructed using a thin dielectric over metal, followed
 by a thin conductor layer on top of the dielectric".[^pdk-07] The
 dielectric and the top-plate film are deposited on the blanket metal 3
@@ -330,7 +351,8 @@ dielectric, polish, cap and via-3 module follow
 ({ref}`NILD5 <step-141>` to {ref}`WCMP5 <step-148>`), with vias landing
 both on metal 3 and on capacitor plates.
 
-**Metal 4, second MiM capacitor, via 4 and metal 5.** The second
+### Metal 4, second MiM capacitor, via 4 and metal 5
+The second
 capacitor repeats the first on metal 4 ({ref}`WTIAL4 <step-149>` to
 {ref}`MM4E <step-155>`); the PDK says "The constructions are identical,
 and the capacitors may be stacked to maximize total
@@ -343,7 +365,9 @@ between;[^steps-sheet] the step pages read the 0.8 µm vias as filled
 by the metal-5 aluminium (inference). Metal 5 is then printed and
 etched ({ref}`MM5 <step-162>`, {ref}`MM5E <step-163>`).
 
-**Passivation, pads, alloy and test.** A thin oxide is deposited over
+### Passivation, pads, alloy and test
+
+A thin oxide is deposited over
 metal 5 ({ref}`NFUSOX <step-164>`, read as the diagram's TOPOX), a ring
 along each die edge is opened ({ref}`NSM <step-165>`,
 {ref}`NSME <step-166>`, read as a {term}`seal-ring <seal ring>` opening for the nitride), the
