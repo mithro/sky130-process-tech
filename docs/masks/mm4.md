@@ -98,7 +98,7 @@ for GDS data".[^pdk-errors] It lists:[^pdk-errors]
   of met4 beyond fuse boundary" (mf.5, whose periphery-rule value is printed
   without a unit)
 
-It gives target spacings of 2.75 (mf.3) and 3.295 (mf.4)
+The page gives target spacings of 2.75 (mf.3) and 3.295 (mf.4)
 against the periphery tables' 2.760 and 3.300.[^pdk-errors]
 
 The
@@ -114,7 +114,7 @@ Table 5 of *Criteria & Assumptions*, "Laser Fuse Criteria", bears on how
 such fuses may be opened. It lists the first five rows below in a column headed
 "Value (um)", and Table 9 gives the last two:[^pdk-03]
 
-:::{table} Laser-fuse criteria of Tables 5 and 9 of *Criteria & Assumptions*
+:::{table} Parameters of *Criteria & Assumptions* for the mask: the laser-fuse criteria of Tables 5 and 9
 
 | Parameter | PDK table | Published description | Value |
 |---|---:|---|---|
@@ -479,7 +479,7 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 
 ## Related pages
 
-* {ref}`MM4 <step-154>` and {ref}`MM4E <step-155>` — the mask step and
+* **Steps.** {ref}`MM4 <step-154>` and {ref}`MM4E <step-155>` — the mask step and
   the metal etch; {ref}`WTIAL4 <step-149>` — the stack patterned.
 * **Category.** {ref}`category-lithography`, {ref}`category-etch` and
   {ref}`category-cmp` — the mask step, etch and polish categories.

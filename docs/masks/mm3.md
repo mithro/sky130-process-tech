@@ -446,7 +446,7 @@ For the plate the decisive figures are 0.300 µm lines on a
 
 ## Related pages
 
-* {ref}`MM3 <step-139>` and {ref}`MM3E <step-140>` — the mask step and
+* **Steps.** {ref}`MM3 <step-139>` and {ref}`MM3E <step-140>` — the mask step and
   the metal etch; {ref}`WTIAL3 <step-134>` — the stack patterned.
 * **Category.** {ref}`category-lithography`, {ref}`category-etch` and
   {ref}`category-cmp` — the mask step, etch and polish categories.

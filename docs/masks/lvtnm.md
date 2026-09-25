@@ -385,12 +385,12 @@ gives two criteria in Table 4:[^pdk-03]
 
 :::{table} Parameters of *Criteria & Assumptions* for the mask
 
-| Parameter | PDK table | Published description | Value |
-|---|---:|---|---|
-| `LVTNMCD` | 2 | width | 0.38 |
-| `LVTNMCDSP` | 2 | space | 0.38 |
-| `lvtpmos_poly` | 4 | "Channel length for low Vt PMOS" | 0.35, matching poly.1b[^pdk-periph] |
-| `LvtEnc_forPowerRail` | 4 | "Width of the Low Leakage gate on each side of LowVt Pmos connected to power rails (requirement based on exp data)" | 0.28 |
+| Parameter (table) | Published description | Value |
+|---|---|---|
+| `LVTNMCD` (Table 2) | width | 0.38 |
+| `LVTNMCDSP` (Table 2) | space | 0.38 |
+| `lvtpmos_poly` (Table 4) | "Channel length for low Vt PMOS" | 0.35, matching poly.1b[^pdk-periph] |
+| `LvtEnc_forPowerRail` (Table 4) | "Width of the Low Leakage gate on each side of LowVt Pmos connected to power rails (requirement based on exp data)" | 0.28 |
 :::
 
 The Error Messages page
@@ -402,7 +402,7 @@ where its edges may fall relative to the active and poly patterns.
 
 ## Related pages
 
-* {ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>` and
+* **Steps.** {ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>` and
   {ref}`LVTNIS <step-016>` — the mask step, the implant and the strip.
 * **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.

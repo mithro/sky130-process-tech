@@ -323,7 +323,7 @@ the plate is placed against other layers.
 
 ## Related pages
 
-* {ref}`DNM <step-007>`, {ref}`DNI <step-008>` and
+* **Steps.** {ref}`DNM <step-007>`, {ref}`DNI <step-008>` and
   {ref}`DNIS <step-009>` — the mask step, the implant and the strip.
 * **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.

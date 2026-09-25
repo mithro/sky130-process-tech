@@ -374,7 +374,7 @@ Table 2 of *Criteria & Assumptions* repeats the width and space as
 aluminium flow does not use.[^pdk-03] Table 4 adds the pattern-density criteria it
 shares with metal 1, and Tables 4, 5 and 7 give the following:[^pdk-03]
 
-:::{table} Criteria of *Criteria & Assumptions* that bear on the mask; Table 5 holds the laser-fuse criteria
+:::{table} Parameters of *Criteria & Assumptions* for the mask; Table 5 holds the laser-fuse criteria
 
 | Parameter | PDK table | Published description | Value |
 |---|---:|---|---:|
@@ -393,7 +393,7 @@ from m2.1 and m2.2).
 
 ## Related pages
 
-* {ref}`MM2 <step-124>` and {ref}`MM2E <step-125>` — the mask step and
+* **Steps.** {ref}`MM2 <step-124>` and {ref}`MM2E <step-125>` — the mask step and
   the metal etch; {ref}`TIAL12 <step-123>` — the stack patterned.
 * **Category.** {ref}`category-lithography`, {ref}`category-etch` and
   {ref}`category-cmp` — the mask step, etch and polish categories.

@@ -353,7 +353,7 @@ Table 2 of *Criteria & Assumptions* repeats the width and space as
 SKY130's aluminium flow does not use.[^pdk-03] Tables 4 and 7 add the
 following:[^pdk-03]
 
-:::{table} Criteria of Tables 4 and 7 of *Criteria & Assumptions* that bear on the mask; `OxideMinPD`, `MMPDrange`, `SMALLPDBOX` and `PD_FrameWP` are among Table 4's pattern-density criteria
+:::{table} Parameters of *Criteria & Assumptions* for the mask, from Tables 4 and 7; `OxideMinPD`, `MMPDrange`, `SMALLPDBOX` and `PD_FrameWP` are among Table 4's pattern-density criteria
 
 | Parameter | PDK table | Published description | Value |
 |---|---:|---|---:|
@@ -374,7 +374,7 @@ m1.2).
 
 ## Related pages
 
-* {ref}`MM1 <step-113>` and {ref}`MM1E <step-114>` — the mask step and
+* **Steps.** {ref}`MM1 <step-113>` and {ref}`MM1E <step-114>` — the mask step and
   the metal etch; {ref}`TIAL6 <step-112>` — the stack patterned.
 * **Category.** {ref}`category-lithography`, {ref}`category-etch` and
   {ref}`category-cmp` — the mask step, etch and polish categories.

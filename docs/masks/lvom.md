@@ -375,7 +375,7 @@ from any active area.
 
 ## Related pages
 
-* {ref}`LVOM <step-044>`, {ref}`NCHI <step-045>` and
+* **Steps.** {ref}`LVOM <step-044>`, {ref}`NCHI <step-045>` and
   {ref}`GOXETCH <step-046>` — the mask step, the channel implant and the
   oxide etch; {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>` — the
   thick and thin gate oxidations.

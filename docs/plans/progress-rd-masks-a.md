@@ -814,3 +814,41 @@ predicts; nothing changed.
 * **licm1.md:178** — "It falls" deleted, per the ruling: a leftover of review fix `8788b70d`
   (2026-09-14), which replaced "It falls between `260` … and `370` …" with the "Its neighbours"
   sentence but kept the first two words. Two words, no claim. Own commit.
+* **M1 hvtpm** — "It uses both." → "It uses both `LVnwell` and `Var_channel`." (identifiers already on the
+  page, in code, so the tool reports nothing).
+* **M2 hvntm, mm5, npcm intros** — split as on fom and lvom, the page's-reading hedge repeated at the
+  top of `## What the mask defines` (ADDED refs `step-068`, `step-162`, `step-078`). hvntm: "their graded
+  drain extension" → "the transistors' graded drain extension" (the pronoun's noun is now above the
+  quick facts). mm5: the split is after the dash list of what `met5` draws; `LOST number_order ('162',
+  '4', '1.26')` is that split (step 162 and via 4 stay in the intro, 1.26 µm moves with the etch clause,
+  and the repeated `step-162` ref sits between them).
+* **M3** — npcm:236 split into three sentences, "(our arithmetic)" repeated, "So a plate CD error …"
+  (ADDED hedge `our arithmetic`); mm5:307 split before Krogh et al. and before "So the MM5 page reads …";
+  capm:252 ends at "(our reading)." with the evidence sentence directly after; npcm:366 split at "and
+  gives the enclosure" with "(our reading of the columns)" repeated (ADDED hedge `our reading`, marker
+  `pdk-summary`).
+* **M4 fom** — the two `[^pdk-03]` in the `FOMSESC` and `DEFC` value cells become one marker on the
+  lead-in, as on the other five tables: `LOST markers: 'pdk-03'` ×1 is this merge, per the ruling (one
+  source for all rows).
+* **L1** — "It also has" / "It gives" / "It adds" after a list → "The page …" on hvtpm, ldntm, mm4, npcm.
+  **L2** hvtpm "It is one of the examples" → "`317` is one of the examples" (ADDED number `317`). **L3**
+  cap2m: "…module-cut checks), and the drawn layer `cap2m` is paired …" as one sentence again. **L4**
+  lvtnm:85: the repeated "(our reading of the rows)" on "The high-Vt PMOS and `pmos_core` rows are not
+  devices the `lvtn` function line names" is a scope judgement: the base end-hedge could be read as
+  covering only the second clause; the first is also a comparison of rows, so the hedge was repeated.
+  **L5** fom rule-table caption: "The `diff` and `tap` rules, with the angle and mask-data rules that
+  name the layers, as published; …". **L6** every parameter-table caption now starts "Parameters of
+  *Criteria & Assumptions* for the mask" plus the page's qualifier (ctm1, fom, mm1, mm2, mm4). **L7**
+  alignment rule written into R-PARAMS step 1.
+* **G1–G3 rulings** applied to the guide as worded (R-H3 step 2, R-RELATED step 2, R-PARAMS step 1).
+  **G2** `**Steps.**` added to the first Related-pages item on all 18 pages; fom's two step items joined
+  into one. **G3** lvtnm's parameter table is now `Parameter (table) | Published description | Value`;
+  at 400 px the `LvtEnc_forPowerRail` description runs to 9 lines instead of 12. **G4** no change.
+* Gates after the round: all checkers, `check_masks --selftest`, every generator `--check` and a fresh
+  `-W -E` build pass.
+
+## For the theme branch
+
+* **W0a request (review G3):** code in table cells should wrap — `td code { overflow-wrap: anywhere; }`.
+  A long identifier (`LvtEnc_forPowerRail` on lvtnm) cannot break today and fixes the Parameter column's
+  width, which squeezes the description column on a phone.

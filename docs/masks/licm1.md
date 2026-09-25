@@ -398,7 +398,7 @@ licon.2).
 
 ## Related pages
 
-* {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>` and
+* **Steps.** {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>` and
   {ref}`SACETCH <step-095>` — the mask step, the contact etch and the
   clean that follows.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step

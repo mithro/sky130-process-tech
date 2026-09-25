@@ -341,7 +341,7 @@ by DRC. It should be used as a guideline only."[^pdk-periph]
 *Criteria & Assumptions* repeats the size and space in Table 2 and adds
 contact criteria in Tables 4 and 5:[^pdk-03]
 
-:::{table} Parameters of *Criteria & Assumptions* for the contact, values as printed
+:::{table} Parameters of *Criteria & Assumptions* for the mask, values as printed
 
 | Parameter | PDK table | Published description | Value |
 |---|---:|---|---:|
@@ -364,7 +364,7 @@ with the flag warning that neither is the final size.
 
 ## Related pages
 
-* {ref}`CTM1 <step-107>` and {ref}`CTME <step-108>` — the mask step and
+* **Steps.** {ref}`CTM1 <step-107>` and {ref}`CTME <step-108>` — the mask step and
   the contact etch; {ref}`TIN2 <step-109>` — the liner that follows.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.

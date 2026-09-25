@@ -364,7 +364,7 @@ pitch, and elsewhere 0.170 µm on a 0.34 µm pitch (our arithmetic).
 
 ## Related pages
 
-* {ref}`LI1M <step-102>` and {ref}`LI1ME <step-103>` — the mask step and
+* **Steps.** {ref}`LI1M <step-102>` and {ref}`LI1ME <step-103>` — the mask step and
   the TiN etch; {ref}`LITIN <step-101>` — the film patterned.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.

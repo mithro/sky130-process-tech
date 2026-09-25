@@ -34,7 +34,7 @@ is performed is on the step page; every mask is indexed on the
 Less is public about the mask than about any of its neighbours:
 `masks.csv` has no entry for it, the minimum-CD table no row and the
 periphery rules no rule set (the PDK's published DRC checks name it only
-in two module-cut checks). The drawn layer `cap2m` is paired with the
+in two module-cut checks), and the drawn layer `cap2m` is paired with the
 mask only on the step page's reading. The process-steps sheet
 nevertheless lists it, as "Capacitor MiM 2", with a plate on every MPW
 run, and the public renders show `cap2m` shapes on 39 or 40 dies of every
@@ -372,7 +372,7 @@ width.[^raw-data-testtile-pads]
 
 ## Related pages
 
-* {ref}`CAP2M <step-152>` and {ref}`CAP2ME <step-153>` — the mask step and
+* **Steps.** {ref}`CAP2M <step-152>` and {ref}`CAP2ME <step-153>` — the mask step and
   the plate etch; {ref}`CAPILD2 <step-150>` and
   {ref}`CAPTIW2 <step-151>` — the dielectric and plate film.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step

@@ -120,7 +120,7 @@ names:[^pdk-errors]
 * `ldntm.c5`, "ldntm not allowed outside areaid.ce"
 * `ldntm.c6`, "0.18 min. spacing of ldntmCoreExempt & pdiff"
 
-It also has:[^pdk-errors]
+The page also has:[^pdk-errors]
 
 * two `cldntm.nikon` checks ("LDNTMmk in the nikon cross has the
   wrong polarity" and "LDNTMmk is missing from the nikon cross in the
@@ -375,7 +375,7 @@ For the plate the published figures are a
 
 ## Related pages
 
-* {ref}`LDNTM <step-071>`, {ref}`LDASTI <step-072>`,
+* **Steps.** {ref}`LDNTM <step-071>`, {ref}`LDASTI <step-072>`,
   {ref}`LDBHI <step-073>` and {ref}`LDASTIS <step-074>` — the mask step,
   the tip and halo implants and the strip; {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
 * **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
