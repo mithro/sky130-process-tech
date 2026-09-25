@@ -41,7 +41,14 @@ check list of `agent-briefs.md`, one worktree and branch each, and a progress fi
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-steps-001-013` | W2 pilot: readability rules on steps 001–013; its progress file lists guide problems | Sonnet | 12 of 13 pages committed (one commit per page) as of 2026-09-20; next: finish 013 and the batch measurements, then an Opus review (rendered pages, `check_preserved.py`, spot-check table cells against the old prose), fixes, then correct `readability-guide.md` from the "Guide problems" list before starting further batches |
+| `topic/rd-steps-001-013` | W2 pilot, written; Opus review resumed 2026-09-25 (`tmp/reviews/rd-steps-001-013.md`) | Sonnet / Opus | in review |
+| `topic/rd-checkers` | W0e checker changes + `tools/gen_step_tables.py` (B1) | Sonnet | running since 2026-09-25 |
+| `topic/rd-site` | W4: landing page cards, references index table, glossary by letter, first-use `{term}` links, inventory anchors | Sonnet | running since 2026-09-25 |
+| `topic/rd-figures-s2` | W1c series S2 wells (steps 014–034) | Opus | running since 2026-09-25 |
+
+Order after these: apply the pilot review's guide corrections, merge the pilot, then W2 batches module by
+module, each module's figures landing before its readability batch. Quota week now runs 2026-09-24 → 2026-10-01
+10:00 UTC (75-point cap by 2026-09-30 10:00 UTC).
 
 Merged 2026-09-20: W0c citation links (all Wikipedia reading-list bullets are direct links; `--refresh` re-points
 inline links after a definition's first URL changes — run both link tools with `--refresh` after any Wayback conversion).
