@@ -2828,6 +2828,16 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
         if spec.get("close_up") is not None and "close-up" not in cap_l:
             errs.append("the figure draws a close-up (close_up:) but the caption does not say "
                         "so ('close-up of …')")
+        # A negative crop_depth starts the drawing above the original silicon surface: only a
+        # close-up of the upper films may do that, and the caption says the rest is cut off.
+        cd = spec.get("crop_depth")
+        if isinstance(cd, (int, float)) and cd < 0:
+            if spec.get("close_up") is None:
+                errs.append("crop_depth is negative (the drawing starts above the silicon); only "
+                            "a close-up may cut off the lower part of the slice")
+            elif "cut off" not in cap_l:
+                errs.append("crop_depth is negative but the caption does not say that the lower "
+                            "part of the slice is cut off")
         # A step that changes nothing the drawing can show gets one panel, not two copies.
         if spec.get("no_drawn_change"):
             if len(spec.get("panels", [])) != 1:
@@ -3456,6 +3466,12 @@ def selftest() -> int:
     case("unknown kind", lambda s, r: s.update(kind="doodle"), "unknown kind")
     case("a close-up the caption does not declare",
          lambda s, r: s.update(close_up=[100, 200]), "does not say so ('close-up of")
+    case("a negative crop outside a close-up",
+         lambda s, r: s.update(crop_depth=-20), "only a close-up may cut off")
+    case("a close-up cut off at the bottom the caption does not declare",
+         lambda s, r: s.update(close_up=[100, 200], crop_depth=-20,
+                               caption="A close-up of part of the slice. Not to scale."),
+         "does not say that the lower part")
     case("unknown basis",
          lambda s, r: r["ops"][0]["label"].update(basis="guess"), "unknown basis")
     case("a number without a cite",

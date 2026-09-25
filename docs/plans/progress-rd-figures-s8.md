@@ -1,6 +1,6 @@
 # Progress — rd-figures-s8 (W1c: emulator improvements, then series S8: contact and metal 1, steps 107–117)
 
-Status: **part 1 (emulator) done and committed**; part 2 (S8 figures) in progress.
+Status: **complete** (part 1 emulator, part 2 series S8, 11 figures); awaiting review.
 
 ## Part 1 — emulator improvements before the metal levels
 
@@ -66,6 +66,115 @@ sd-076, sd-077, sd-080, sd-086, mol-089, 090, 094, 097, 098, 100, 105) and shot 
 sonos-042, poly-059 in light desktop. No label, leader or highlight regression seen; the lint
 reported nothing.
 
-## Part 2 — series S8
+## Part 2 — series S8 "Contact and metal 1" (steps 107–117)
 
-(in progress)
+### What was done
+
+* **Series** `data/figures/series-metal1.yaml`: ops 002–106 copied verbatim from `series-mol.yaml`
+  (same ids and label text, the new PSG `profile: gapfill` included), so the wafer at step 106 is
+  the S7 end state; then the module. The header records every choice.
+* **11 specs** `data/figures/m1-107-ctm1.yaml` … `m1-117-ncapox3.yaml`, SVGs, paste blocks, each
+  block pasted after the first paragraph of "What this step is" (no page in 107–117 has a
+  `{dropdown}` there). `git diff main -- docs/steps/1{07..17}*`: 8 lines added per page, 0 deleted;
+  `check_preserved`: 0 LOST, only ADDED (the blocks' own numbers, quotes, hedges, markers, ids).
+* **Generator** (with a selftest each): a negative `crop_depth` is allowed only in a close-up and
+  only if the caption says the lower part of the slice is cut off (lint; documented in
+  figure-authoring.md). Needed because the metal contact sits 94 u up in the series: a 2.7×
+  close-up of it with the substrate would be over the 800 u height budget.
+* Label notes avoid step codes with digits (TIN2, WDEP2, NILD3 …): the number lint reads any digit
+  outside "step NNN" as a number. Notes say "deposited at step 109" etc.
+
+### Geometry and reading choices (all declared in the captions)
+
+* **Contacts (107, 108).** Two windows, over the left and the right local-interconnect pads, each
+  above the local-contact plug below (x 28–52 and 192–216, illustrative); the middle pad has none.
+  CTME etches the NILD2 oxide and the LINT nitride to the TiN (the page's reading: stop on the
+  nitride, then open it) and strips the resist in the step (the page treats the strip as part of
+  it). Walls tapered at 12°, bottom about 0.7 of the top: drawn tapered because the CTM1/CTME pages
+  read the PDK's 0.09 µm "Standard contact bottom CD" against the 0.170 µm square as a markedly
+  tapered hole; the angle is not public (caption says so). The hole is only 17 u deep in the series
+  (NILD2 12 u + LINT 5 u over the pads, fixed by S7's end state), so its aspect ratio is well below
+  the page's ~2:1; not to scale.
+* **Liner, fill, polish (109–111)** as close-ups of the right-hand contact, window x 170–268
+  (≈2.7×), `crop_depth: -130` (cut off at about 48 u of series height; declared). TiN liner 5 u
+  conformal (the barrier colour, the same as the TiN local interconnect it lands on: TiN-on-TiN, as
+  the TIN2 page reads it; said so); tungsten 12 u conformal, closing the lined hole with a shallow
+  dimple; WCMP2 polishes to the NILD2 top (94 u): flush plug, liner off the field.
+* **Metal-1 stack (112)**, close-up, three films in one step: bottom 5 u, aluminium–copper 18 u,
+  cap 5 u. **The bottom and the cap are not identified**: both are drawn in the barrier colour and
+  labelled "Bottom film / Ti, or Ti/TiN — see the overview" and "Cap film / TiW or Ti/TiN — see the
+  overview", basis `inferred`. The caption quotes both public stacks with their keys
+  (cyp-qtp-113005, cyp-qtp-123907), says which one SKY130 uses is not public and that the figure
+  does not choose, and gives the PDK's 0.36 µm for metal 1 (pdk-04). The aluminium label is
+  "Aluminium alloy / aluminium–copper, the conductor; step 112" ("Aluminium–copper" as a title is
+  one unbreakable word too wide for the label column).
+* **Metal 1 pattern and etch (113, 114).** Three resist lines: one over each contact, enclosing it
+  (m1.4), and one over the middle; the right-hand one runs on past the slice edge (so its label
+  leader is a straight run and no oxide sliver is left at the edge). Etch removes the whole stack,
+  stopping on the NILD2 and the plug tops, vertical walls (profile not drawn to scale); resist
+  stripped in the step (the MM1E page). Cap film labelled in both, bottom film unlabelled at
+  full-slice scale (declared).
+* **NILD3 (115)** `profile: gapfill`, `smooth: 16`, 44 u: bottom-up fill, faceted peaks over the
+  lines, softened. The page leaves HDP-CVD or PECVD TEOS open, and the CMPM page describes the
+  surface as the metal step "reproduced, softened"; the caption says the drawn profile only
+  illustrates a gap-filling deposit. NILD3_C (0.030 µm, liner/cap/neither not public) not drawn,
+  said so. **CMPM (116)** flat at 132 u (10 u over the metal; removal not public). **NCAPOX3 (117)**
+  8 u flat.
+* **Labels hidden** (each declared in its caption): all front-end films and doped regions, the S7
+  plugs, silicide, liner and glass throughout; the local interconnect (107, 108: a riser from it
+  would cross the resist or read as a contact); the LI nitride cap and NILD2 from 113 on where the
+  leaders would pair; the new liner under the tungsten (110 after, 111); NILD2 in 112 after and 114
+  before.
+
+### Per-figure record
+
+Every figure: built with no LINT line, `--check` clean, harness shot at desktop and 400 px in light
+and dark, every tile opened (round r2 all eleven; round r3 after the 111/112 changes, all dark and
+phone tiles plus the light desktop tiles with 109–113). Checked: labels readable at 400 px and beside
+their layers, no leader through a film or along an edge, no label below its drawing, highlight on the
+changed surface only, dark boundaries visible, panels aligned, picture agreeing with the lead.
+
+| Figure | View | Notes / compromises |
+|---|---|---|
+| 107 CTM1 | full | Windows illustrative; ct.1 0.170 µm, ct.4 (pdk-periph); LI label hidden (riser would cross the resist) |
+| 108 CTME | full | Callout "Metal-contact hole / a 0.170 µm square in the PDK's rules" (pdk-periph); 0.09 µm "Standard contact bottom CD" (pdk-03), about 0.34 µm (pdk-04, our reading) in the caption; taper declared |
+| 109 TIN2 | close-up, cut off | Of the order of 10–30 nm (txt-05, industry-typical); 0.09 µm bottom (pdk-03); IMP reading and TiN-on-TiN attributed to the page |
+| 110 WDEP2 | close-up, cut off | "a few hundred nanometres" (txt-05); nucleation layer and seam not drawn |
+| 111 WCMP2 | close-up, cut off | 0.17 µm tungsten squares (pdk-periph); slurry choice not public; recess/erosion not drawn; plug label rises from the plug (route auto) |
+| 112 TIAL6 | close-up, cut off | Both stacks quoted verbatim, none chosen; 0.36 µm (pdk-04); bottom and cap labelled with both readings, `inferred` |
+| 113 MM1 | full | m1.1, m1.2 0.140 µm, m1.4 0.030 µm (pdk-periph); layout illustrative |
+| 114 MM1E | full | 0.140 µm (pdk-periph); vertical walls; the page defines no pdk-04 key, so no 0.36 µm in this caption |
+| 115 NILD3 | full | "NILD3" permittivity 4.5, NILD3_C 0.030 µm (pdk-04); profile illustrative |
+| 116 CMPM | full | 0.27 µm via-1 height (pdk-04); removal not public; pattern-density steps not drawn |
+| 117 NCAPOX3 | full | 0.27 µm (pdk-04); cap of the order of 0.05–0.15 µm (txt-05, industry-typical); the cap setting the final thickness is the page's inference |
+
+Built pages 108, 112, 114 and 115 shot at 1280 and 400 px: the figure follows the lead paragraph,
+the caption's footnote markers render and link, prose follows.
+
+### Gates
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce`: rc 0. `gen_papers`, `gen_patents`, `gen_filings`,
+`gen_index_links`, `gen_steps`, `gen_step_tables` `--check`: rc 0. `gen_figures --check`: 484 files,
+0 problems; `--selftest` OK; `palette` 0 confusable pairs. `sphinx-build -W`: rc 0. No figure cites a
+patent key; no spec text carries patent wording (the S8 pages' patent keys — pat-imp-amat,
+pat-tiw-hitachi and others — are not used).
+
+### Page points for the readability batch (page prose not changed)
+
+* **112 lead vs the owner's rule for figures.** The TIAL6 page "describes the Ti/Al–Cu/TiW stack
+  because the PDK's thickness matches it" (marked an inference) and its recipe gives "Cap, 300 Å" on
+  that reading; the figure, per the undecided-stack rule, draws neither and labels both. 113's lead
+  likewise opens with the TiW stack ("per the 2013 Cypress report …") before the TiN alternative.
+* **114 cites no source for 0.36 µm.** "the spaces it opens — 0.14 µm wide and 0.36 µm deep" has
+  no marker and the page defines no `pdk-04`; the number is pdk-04's metal-1 thickness.
+* **Hole aspect ratio.** 107/108 give about 0.34 µm deep for a 0.17 µm hole (about 2:1); the drawing
+  inherits S7's thin NILD2 and cannot show it (declared "not to scale").
+* **"Standard contact bottom CD" sits in the PDK's laser-fuse table** (108 says so); 107–110 all
+  read it as the general mcon bottom. Not a contradiction, but the whole taper reading rests on it.
+
+### For the generator (not done here)
+
+* The number lint counts the digit in a step code ("NILD3", "TIN2", "metal-1") as a number; S9's
+  via levels will hit it on every label. Exempting all-caps step codes from the sheet (or
+  hyphenated level names) would let notes name them.
