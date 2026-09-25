@@ -197,3 +197,34 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   quick-facts Exposure class cell (43; not in the body) and the ct.irdrop rule cell (31, quoted rule
   text). Before → after: paragraphs 10 → 0, items 0 → 0, sentences 14 → 3, cells 2 → 2.
 * **Content problems for the owner:** none found.
+
+### 4. dnm — done
+
+* **Rules applied.** R-INTRO (137 → 51 words; first sentence split at its colon; "It is an implant block
+  mask …[^pdk-03]" moved to the top of `## What the mask defines`, "It" → "The mask"); R-CAPTION (rule
+  table); R-PARA, R-SENTENCE; R-LIST (the device pages' three uses of the isolation, marker on the
+  lead-in; the 19 Table F2b rows as seven fragment bullets, marker on the lead-in — 1 + 1 + 2 + 1 + 5 +
+  8 + 1 = 19, as the lead-in says); R-RELATED; R-H3 (Exposure class, Mask errors, Resist and tone ←
+  "Resist", Overlay and alignment ← "Overlay", Pattern transfer).
+* **Moved passage (G1):** the Overlay passage now precedes Pattern transfer, unchanged apart from the
+  split below.
+* **Overlay sentence (70 words) split at its em-dash pair (R-SENTENCE 1):** "The enclosures that depend on
+  its placement are large — 0.400 µm … (nwell.6)[^pdk-periph] — against the "≤ 40 nm" …" → "The
+  enclosures that depend on its placement are 0.400 µm … (nwell.6).[^pdk-periph] They are large against
+  the "≤ 40 nm" …[^asml-pas5500-275d] (our comparison; …)." The values keep their marker, and "large …
+  against" keeps the comparison and its hedge.
+* **R-PARAMS not applied:** the design-rules paragraph names three parameters (`DNMCD`, `DNMCDSP`,
+  `nwellDnwellSpc`); the "Three criteria" paragraph under In the PDK names three too.
+* **Deleted template sentence:** "This page gathers what public sources say about the mask itself — its
+  PDK entry and layers, the plates the process-steps sheet records for the MPW runs, what the public
+  renders of those runs show, the lithography it needs and the rules that constrain it."
+  (`LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers`): `mask-renders` ("… not 40 designs using the module.",
+  split at its colon), `pdk-03` ×2 (Table 4 / Table 7 sentence; Table 2 / Table 4 sentence), `wong-1998`
+  (the Wong sentence split before "and that dark-field spaces …", which becomes "Wong et al. found that
+  dark-field spaces …": subject and verb repeated).
+* **Marker coverage.** Only the two lists under lead-in markers were flagged.
+* **Over the caps after the pass:** the x.15a sentence (46 by the script; two quotations) and the Wong
+  sentence (46; one long quotation); the Polarity and tone cell (26; not in the body). Before → after:
+  paragraphs 10 → 0, items 0 → 0, sentences 10 → 2, cells 1 → 1.
+* **Content problems for the owner:** none found.

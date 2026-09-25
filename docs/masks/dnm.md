@@ -2,18 +2,11 @@
 # DNM — Deep N-Well
 
 The deep N-well mask is the {term}`reticle` whose pattern decides where
-SKY130's buried N-type layer goes: on this reference's reading, the
+SKY130's buried N-type layer goes. On this reference's reading, the
 resist printed through it at the {ref}`DNM <step-007>` step is opened
 over every region that is to receive the high-energy phosphorus implant
 of {ref}`DNI <step-008>`, and stripped again at
-{ref}`DNIS <step-009>`. It is an implant {term}`block mask` rather than
-an etch mask, with the largest minimum feature of any front-end mask in
-the PDK's minimum-CD table.[^pdk-03] This page gathers what public
-sources say about the mask itself — its PDK entry and layers, the plates
-the process-steps sheet records for the MPW runs, what the public
-renders of those runs show, the lithography it needs and the rules that
-constrain it. How the step is performed is on the step page; every mask
-is indexed on the {ref}`masks index <masks-index>`.
+{ref}`DNIS <step-009>`.
 
 | | DNM — Deep N-Well |
 |---|---|
@@ -30,7 +23,16 @@ is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-dnm-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page; every mask
+is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is an implant {term}`block mask` rather than
+an etch mask, with the largest minimum feature of any front-end mask in
+the PDK's minimum-CD table.[^pdk-03]
 
 The mask defines the lateral extent of the deep N-well: a buried N-type
 plate that, closed at its edges by a ring of ordinary N-well, isolates
@@ -38,21 +40,36 @@ a P-well from the p-type substrate (the reading of the
 {ref}`DNM <step-007>` page, from rules nwell.5 and nwell.6
 below).[^pdk-periph] The periphery rules give the layer's function as
 "Define deep nwell for isolating pwell and noise immunity".[^pdk-periph]
-The PDK's device pages describe what the isolation is used for: the
-1.8 V NMOS "can be made either with or without the DNW under the
-p-well"; the 20 V isolated NMOS "has the same construction as the 20V
-NMOS FET, but is built over a Deep N-well. This permits the p-well to
-be isolated from the substrate and permit “high-side” usage (where the
-PW body is held above ground)"; and "The NPN uses the deep n-well as
-the collector".[^pdk-07] Rule dnwell.6 requires RF NMOS devices to be
+
+The PDK's device pages describe what the isolation is used for:[^pdk-07]
+
+* the
+  1.8 V NMOS "can be made either with or without the DNW under the
+  p-well"
+* the 20 V isolated NMOS "has the same construction as the 20V
+  NMOS FET, but is built over a Deep N-well. This permits the p-well to
+  be isolated from the substrate and permit “high-side” usage (where the
+  PW body is held above ground)"
+* "The NPN uses the deep n-well as
+  the collector"
+
+Rule dnwell.6 requires RF NMOS devices to be
 enclosed by deep N-well.[^pdk-periph]
 
 The PDK's mask generation table, Table F2b, marks the `DNM` column `C`
-("CREATED") in 19 of its 80 device rows: the isolated P-well resistor,
-the HV varactor, two SONOS FET rows, the 5/16 V drain-extended PMOS,
-the five 5/20 V drain-extended device rows, eight diode rows (seven
-named for the deep N-well, and the photodiode) and the parasitic
-NPN.[^pdk-06] The 1.8 V NMOS row marks it `+`, "Layer allowed to
+("CREATED") in 19 of its 80 device rows:[^pdk-06]
+
+* the isolated P-well resistor
+* the HV varactor
+* two SONOS FET rows
+* the 5/16 V drain-extended PMOS
+* the five 5/20 V drain-extended device rows
+* eight diode rows (seven
+  named for the deep N-well, and the photodiode)
+* the parasitic
+  NPN
+
+The 1.8 V NMOS row marks it `+`, "Layer allowed to
 overlap", rather than `C`, which fits the device page's "with or
 without" (our reading of the two tables together).[^pdk-06][^pdk-07]
 The deep N-well is therefore a module that designers opt into rather
@@ -62,7 +79,9 @@ whether every wafer receives it.
 What the mask does not define is also worth stating. The N-well ring
 that closes the tub is printed by {ref}`NWM <step-017>`, and the P-well
 inside it is set by the P-well implants that follow; on the step pages'
-readings `DNM` only places the buried plate. Stolmeijer's 1986 twin-well
+readings `DNM` only places the buried plate.
+
+Stolmeijer's 1986 twin-well
 process, built with implants of up to 1 MeV, already included "an n-type
 isolation well in a p-p+substrate and retrograde wells"; the abstract
 does not describe the well's geometry.[^stolmeijer-1986]
@@ -81,7 +100,9 @@ purpose `mask` at 48:0 ("Deep nwell mask"), and no `drawing`,
 is `dnwell` at 64:18, "Deep n-well region".[^pdk-06] The pairing of
 `cdnm` with `dnwell` rests on those names and descriptions, as for every
 mask on the {ref}`masks index <masks-index>`; the PDK publishes no
-operation that turns the drawn layer into the mask.[^pdk-06] Rule
+operation that turns the drawn layer into the mask.[^pdk-06]
+
+Rule
 x.15a restricts where a designer may draw mask layers: "Drawn
 compatible, mask, and waffle-drop layers are allowed only inside
 areaid:mt (i.e., etest modules)", the seal ring or the frame, with the
@@ -94,10 +115,12 @@ does not say what applies in the core).
 Three criteria in two tables hint that the plate is not the drawn layer
 copied unchanged, without saying how it differs. Table 4 of [*Criteria &
 Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives a "Min spacing for created dnwell to pnp.dg (more
-restrictive than dnwell.4 rule)" of 5 (`cdnwPnpSpc`), and Table 7 a
+restrictive than dnwell.4 rule)" of 5 (`cdnwPnpSpc`).[^pdk-03] Table 7 gives a
 "spacing of p-well outside deep n-well to deep n-well mask edge" of
 0.12 (`NWDNWENCL`) and a "p-well in deep n-well to p-sub" of 1.2
-(`NWDNWOL`).[^pdk-03] "Created" is the word Table F2b uses for the
+(`NWDNWOL`).[^pdk-03]
+
+"Created" is the word Table F2b uses for the
 mask levels a device generates,[^pdk-06] and a "mask edge" distinct from
 the drawn edge suggests a sizing between the two (inference); the PDK
 gives neither the sizing nor the created shapes.
@@ -109,7 +132,9 @@ shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `DNM` the site renders layer 64:18 alone, with
 no Boolean expression and no fill layer, on all eight runs, and its mask
 record gives the mask-level layer 48:0 and the note "DNM = dnwell sized
-by cdnm.3".[^mask-renders] The periphery rules contain no rule set for
+by cdnm.3".[^mask-renders]
+
+The periphery rules contain no rule set for
 `cdnm` and no rule of that name,[^pdk-periph] and the site gives no
 source for the note. The render jobs list only the drawn layer, with no
 sizing step, so, as the {ref}`masks index <masks-derivations>` reads
@@ -118,11 +143,13 @@ the choice of layer are one public derivation from the drawn data, not
 SkyWater's mask-generation recipe.[^mask-renders]
 
 All 40 rendered dies of every run carry `dnwell` shapes, but that is not
-40 designs using the module: every die carries at least 423 shapes on
+40 designs using the module.[^mask-renders] Every die carries at least 423 shapes on
 the layer, and on each run 24 to 36 of the 40 dies carry exactly 423,
 424, 533 or 534.[^mask-renders] We read the repeated counts as shapes
 common to the dies rather than to the projects (inference); the site
-does not say what they are. The site
+does not say what they are.
+
+The site
 states the limits of all its images: "These are renders of *drawn*
 data, not photomask artwork: reticle pitch, 4x reduction, mirroring and
 the frame features the fab adds are not modelled."[^mask-renders] Its
@@ -166,7 +193,9 @@ the renders site calls the run's reticle set
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`DNM <step-007>` page reads the mask as an
+### Exposure class
+
+The {ref}`DNM <step-007>` page reads the mask as an
 i-line level with a KrF tool as the alternative, an inference from the
 3 µm minimum width; the {ref}`i-line stepper <machine-i-line-stepper>`
 and {ref}`KrF stepper <machine-duv-krf-stepper>` pages carry the same
@@ -177,36 +206,58 @@ PAS 5500/275D runs at NA 0.48–0.60,[^asml-pas5500-275d] at which a
 3 µm feature has {math}`k_1 = 3.0 \times 0.48 / 0.365 \approx 3.9`
 (our arithmetic).
 
-**Mask errors.** Wong et al. found that the mask error factor — how much
+### Mask errors
+
+Wong et al. found that the mask error factor — how much
 a CD error on the plate is magnified on the wafer — "is unity for large
 features, but increases rapidly when the critical dimension (CD) is
-less than 0.5 (lambda) /NA for line-space patterns", and that
+less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998] Wong et al. found that
 dark-field spaces are more sensitive than light-field lines.[^wong-1998]
+
 At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
 an eighth of the `DNM` minimum, so a CD error on this plate would be
 expected to print at its own size (inference). That puts the
 demands of this mask on its resist, placement and cleanliness rather
 than on its CD.
 
-**Resist.** The implant must be stopped by resist wherever the plate is
+### Resist and tone
+
+The implant must be stopped by resist wherever the plate is
 opaque (on the positive-resist reading). A Zilog patent on masking for
 MeV well implants says such resists "may need to be 3-4 μm or thicker"
-and uses a minimum of 3.4 µm after stabilisation;[^pat-resist-zilog] the
+and uses a minimum of 3.4 µm after stabilisation.[^pat-resist-zilog] The
 ion range in resist that sets the thickness is what SRIM
-computes.[^ziegler-2010] Thick resist under MeV ions outgasses: Lee et
+computes.[^ziegler-2010]
+
+Thick resist under MeV ions outgasses: Lee et
 al. measured the chamber-pressure rise and dose shift it causes, for
-resists up to 4.5 µm thick,[^lee-1996] and Ross et al. stabilised three
+resists up to 4.5 µm thick.[^lee-1996] Ross et al. stabilised three
 i-line resists for implant with a flood electron beam, which reduced
 post-implant shrinkage and CD variation and eliminated popping during
 removal.[^ross-1996] Tsukamoto et al. review high-energy implantation
 for ULSI.[^tsukamoto-1991]
+
 The step pages read a thick i-line resist; SkyWater's resist, its
 thickness and any stabilisation are not public. The PDK's generic
 "Photoresist thickness" is 1.14 µm,[^pdk-03] which the step page does
 not take as this level's resist. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** Nothing is etched through this resist. On the step
+### Overlay and alignment
+
+The {ref}`DNM <step-007>` page reads the mask as aligned to
+the trenches etched at {ref}`STIE <step-006>`. The enclosures that
+depend on its placement are 0.400 µm of N-well around the deep
+N-well (nwell.5) and 1.030 µm of deep N-well around an N-well hole
+(nwell.6).[^pdk-periph] They are large against the "≤ 40 nm" single-machine overlay
+ASML specifies for the /275D stepper[^asml-pas5500-275d] (our
+comparison; the enclosures must also absorb the lateral spread of the
+implant, which is not published, so the overlay share of them is not
+known).
+
+### Pattern transfer
+
+Nothing is etched through this resist. On the step
 pages' readings the pattern is transferred into the silicon as dopant
 by the {ref}`DNI <step-008>` implant, on the
 {ref}`high-energy implanter <machine-high-energy-implanter>` class, and
@@ -214,16 +265,6 @@ the resist is removed at {ref}`DNIS <step-009>`. A deep N-well implant
 of the same era uses phosphorus at about 0.6–1.6 MeV and
 5×10¹²–1.5×10¹³ cm⁻² in a Hynix triple-well patent;[^pat-dnw-hynix] the
 SKY130 conditions are not public.
-
-**Overlay.** The {ref}`DNM <step-007>` page reads the mask as aligned to
-the trenches etched at {ref}`STIE <step-006>`. The enclosures that
-depend on its placement are large — 0.400 µm of N-well around the deep
-N-well (nwell.5) and 1.030 µm of deep N-well around an N-well hole
-(nwell.6)[^pdk-periph] — against the "≤ 40 nm" single-machine overlay
-ASML specifies for the /275D stepper[^asml-pas5500-275d] (our
-comparison; the enclosures must also absorb the lateral spread of the
-implant, which is not published, so the overlay share of them is not
-known).
 
 (mask-dnm-steps)=
 ## Steps that use this mask
@@ -255,6 +296,8 @@ The `dnwell` rules of the periphery rules, with the N-well rules that
 refer to it; flag TC means "Rule not checked for cell name
 “\*_tech_CD_top\*”".[^pdk-periph]
 
+:::{table} The `dnwell` rules and the N-well rules that refer to it, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | dnwell.2 | "Min width of deep nwell" | 3.000 µm |
@@ -267,9 +310,10 @@ refer to it; flag TC means "Rule not checked for cell name
 | nwell.5 | "Deep nwell must be enclosed by nwell by atleast... […]" (TC) | 0.400 µm |
 | nwell.6 | "Min enclosure of nwell hole by deep nwell outside UHVI" (TC) | 1.030 µm |
 | nwell.7 | "Min spacing between nwell and deep nwell on separate nets […]" (TC) | 4.500 µm |
+:::
 
 Table 2 of *Criteria & Assumptions* repeats the width and space as
-`DNMCD` 3 and `DNMCDSP` 6.3, and Table 4 gives a "Min spacing between
+`DNMCD` 3 and `DNMCDSP` 6.3.[^pdk-03] Table 4 gives a "Min spacing between
 nwell and deep nwell on separate nets" of 6 (`nwellDnwellSpc`), noted
 as "Taken from dnwell.3 from S4* TDR *N plus rounded up", beside the
 4.500 µm of rule nwell.7.[^pdk-03][^pdk-periph] The PDK does not
@@ -281,16 +325,15 @@ the plate is placed against other layers.
 
 * {ref}`DNM <step-007>`, {ref}`DNI <step-008>` and
   {ref}`DNIS <step-009>` — the mask step, the implant and the strip.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
-  exposure classes the step page names.
-* {ref}`machine-high-energy-implanter` — the implant class that uses the
-  pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
+  exposure classes the step page names. {ref}`machine-high-energy-implanter` — the implant class that uses the
+  pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
