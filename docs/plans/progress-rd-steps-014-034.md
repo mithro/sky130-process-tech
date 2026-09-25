@@ -64,6 +64,27 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 021-lvtpis.md — done (no in-force dropdown on this page)
+
+Rules applied: R-SENTENCE/R-PARA throughout (lead paragraph, the "hardest strip" paragraph, the
+crust-mechanism paragraph split at quote boundaries — never inside a quotation — and the
+"Two-stage plasma ash" item, 126 words, split into a lead plus three indented continuation
+paragraphs), R-HEDGE step 1 (italic lead-in), R-TOOLS (4 "Strength:" bullets → Tool|Evidence
+recap table, since 4 meets the threshold), R-RELATED (`Same category:` label; `Previous:` kept
+as one bullet with its elaboration split into two sentences, since it is a single relationship),
+R-OPENQ (bold labels on all three bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 0; list items > 60 words 1 → 0;
+sentences > 45 words 4 → 0; table cells > 25 words 0 → 0. This page has no `{figure}` caption
+long enough to trip Guide problem 10, so the measurement is completely clean.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/021-lvtpis.md`:
+`quotes`, `hedges` and `numbers` (condition (a)) all show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for one tuple — "2–3" stranded alone after the resist-class
+sentence was split, the familiar Guide-problem-11 pattern. All other checkers pass; `-W` build
+clean. Screenshots (desktop + 400 px) read cleanly top to bottom, including the recap table and
+all four R-TOOLS blocks.
+
 ### 020-lvtpi.md — done (two in-force patent dropdowns; content untouched)
 
 Rules applied: R-PARA (lead paragraph split, first sentence trimmed to satisfy the ≤25-word

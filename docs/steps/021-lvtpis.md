@@ -10,14 +10,30 @@
 | **Previous step** | {ref}`LVTPI <step-020>` |
 | **Next step** | {ref}`HVTPM <step-022>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the thick N-well resist after three implants
+  (`NWI`, `NWI2`, `LVTPI`) and cleans the wafer for `HVTPM`.
+* **Why:** residue would block the next implant (`PCHI`) and shift
+  its threshold; this is the hardest strip in the module because of
+  the resist's thickness and total absorbed dose.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP / Iridia RF microwave /
+  Mattson Aspen II ashers — strong (existence); inference
+  (assignment).[^skw-01]
+* **Not public:** the SKY130 ash recipe and wet sequence (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `LVTPIS` removes the thick N-well photoresist that was patterned at
-{ref}`NWM <step-017>` and has since masked three implants — the two well
-implants (MeV-class phosphorus, we infer) {ref}`NWI <step-018>` and
-{ref}`NWI2 <step-019>` and the keV P-channel threshold implant
-{ref}`LVTPI <step-020>` — and then cleans the wafer for the next
-lithography, {ref}`HVTPM <step-022>`. The step list used in this
+{ref}`NWM <step-017>` and has since masked three implants. These are
+the two well implants (MeV-class phosphorus, we infer)
+{ref}`NWI <step-018>` and {ref}`NWI2 <step-019>` and the keV P-channel
+threshold implant {ref}`LVTPI <step-020>`. It then cleans the wafer for
+the next lithography, {ref}`HVTPM <step-022>`. The step list used in this
 reference names it after the last implant it follows ("P-channel implant
 strip"); the resist it removes is, we infer, the N-well resist.
 
@@ -30,12 +46,14 @@ Before, the N-well resist after its three implants; after, the resist gone and t
 :::
 
 This is the hardest strip of the module. The resist is as thick as any
-in the flow so far — the same 2–3 µm class inferred for the deep N-well
+in the flow so far, the same 2–3 µm class inferred for the deep N-well
 resist at {ref}`DNM <step-007>` and for this one at
-{ref}`NWM <step-017>` — and, unlike that one, it has masked three
-implants rather than one; it has, we infer, absorbed more total dose
+{ref}`NWM <step-017>`. Unlike that one, it has masked three
+implants rather than one. It has, we infer, absorbed more total dose
 than any earlier implant resist as a result, with a summed dose of
-order 10¹³ cm⁻² (illustrative; {ref}`NWI <step-018>`). Both conditions
+order 10¹³ cm⁻² (illustrative; {ref}`NWI <step-018>`).
+
+Both conditions
 thicken the carbonised {term}`crust <implant crust>` and raise the risk of {term}`popping`. The wafer
 surface under the resist is, we infer, still all oxide (pad oxide and trench
 oxide), which allows the full {term}`SPM`/{term}`SC-1` sequence.
@@ -53,15 +71,19 @@ The resist has to go before the next coat, and it has to go completely:
 residue over a future high-Vt PMOS region would block the
 {ref}`PCHI <step-023>` implant locally and produce a transistor with the
 wrong threshold. The crust of an MeV-implanted resist is the obstacle.
+
 Ion bombardment turns "the top portion of the photoresist layer … into a
 carbonized crust that is difficult to remove because of its low
-solubility in wet strippers";[^pat-strip-tsmc] beneath it the
+solubility in wet strippers".[^pat-strip-tsmc] Beneath it the
 "subsurface resist generally contains more volatile, shorter molecular
 weight polymer" whose vapours "build up pressure beneath the
-implant-hardened surface layer" until "this pressure can violently
+implant-hardened surface layer". This continues
+until "this pressure can violently
 rupture the skin, an event that spreads particles of the
 implant-hardened cross-link hydrogen deficient surface layer material
-throughout the stripping chamber".[^pat-strip-mosel] Wikipedia's summary
+throughout the stripping chamber".[^pat-strip-mosel]
+
+Wikipedia's summary
 is that problems arise "when this photoresist has undergone an implant
 step previously and heavy metal are embedded in the photoresist and it
 has experienced high temperatures causing it to be resistant to
@@ -69,19 +91,24 @@ oxidizing".[^wiki-ash]
 
 ## How it is typically performed
 
-An industry-generic MeV-implant-resist strip for a 200 mm, 130 nm-era
-fab:
+*An industry-generic MeV-implant-resist strip for a 200 mm, 130 nm-era
+fab:*
 
 1. **Two-stage plasma {term}`ash`.** A first stage below the popping threshold —
    "removed by oxygen and nitrogen/hydrogen plasma in a low-temperature
    (<220° C.) environment", preferably 150–220 °C[^pat-strip-mosel] —
    until the crust is consumed, then a hotter oxygen stage for the bulk
-   of the 2–3 µm film. The forming-gas addition helps because hydrogen
+   of the 2–3 µm film.
+
+   The forming-gas addition helps because hydrogen
    penetrates and reduces the carbonised layer (category page).
+
    SkyWater's ashers offer exactly this: "Gasonic PEP, remote microwave
    plasma, N2, O2, 120C – 270C"; "Iridia RF microwave, N2, O2, H2, CF4,
    NH3, H2/N2, 40C-270C"; "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up
-   to 250C".[^skw-01] Downstream plasma is used so that the neutral
+   to 250C".[^skw-01]
+
+   Downstream plasma is used so that the neutral
    atomic oxygen does the work and charged species recombine before
    reaching the wafer.[^wiki-ash] {term}`Endpoint <endpoint>` on the CO emission line, then
    a timed over-ash.
@@ -111,18 +138,29 @@ crust stage cannot be hurried.
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**[^skw-01] — the
-  Iridia's "H2/N2" and the Mattson's "H2>N2" options are the forming-gas
-  chemistries used for implant crusts. Strength: **strong** for
-  existence; assignment is an inference.
-* **Akrion Gamma batch wet bench** ("Sulfuric, SC1").[^skw-01] Strength:
-  strong for existence.
-* **DNS wet bench / FSI Mercury** for HF/SC1/SC2.[^skw-01] Strength:
-  strong for existence.
-* **KLA-Tencor SP1 and AIT** for particle and residue inspection,
-  our reading of "SP1" and "AIT"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave, Mattson Aspen II | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench / FSI Mercury | strong (existence) |
+| KLA-Tencor SP1 and AIT | medium |
+
+* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**
+  - *SkyWater says:* lists them.[^skw-01] The Iridia's "H2/N2" and the
+    Mattson's "H2>N2" options are the forming-gas chemistries used for
+    implant crusts.
+  - *Tool exists:* strong.
+  - *Runs this step:* assignment is an inference.
+* **Akrion Gamma batch wet bench**
+  - *SkyWater says:* lists "Sulfuric, SC1".[^skw-01]
+  - *Tool exists:* strong for existence.
+* **DNS wet bench / FSI Mercury**
+  - *SkyWater says:* lists them for HF/SC1/SC2.[^skw-01]
+  - *Tool exists:* strong for existence.
+* **KLA-Tencor SP1 and AIT** (particle and residue inspection)
+  - *SkyWater says:* our reading of "SP1" and "AIT" in a SkyWater job
+    posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -137,12 +175,12 @@ crust stage cannot be hurried.
 
 ## Related steps and cross-references
 
-* Previous: {ref}`LVTPI <step-020>`; the resist came from
+* Previous: {ref}`LVTPI <step-020>`. The resist came from
   {ref}`NWM <step-017>` and masked {ref}`NWI <step-018>` and
   {ref}`NWI2 <step-019>` as well.
 * Next: {ref}`HVTPM <step-022>`.
-* The comparable heavy-implant-resist strips are {ref}`DNIS <step-009>` and
-  {ref}`PWIS <step-029>`.
+* Same category: the comparable heavy-implant-resist strips are
+  {ref}`DNIS <step-009>` and {ref}`PWIS <step-029>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -218,15 +256,16 @@ crust stage cannot be hurried.
 
 ## Open questions
 
-* The ash recipe (stages, temperatures, gases) and wet sequence are
-  not public.
-* Whether the three implants really share one resist, and hence
-  whether this is the strip of the N-well resist, is this reference's
-  reading, following the usual single-mask retrograde-well practice
-  (see {ref}`NWM <step-017>`).
-* How much pad oxide is lost per strip/clean cycle, and whether that
-  loss is budgeted against a later sacrificial-oxide step, is unknown
-  (see the open question on {ref}`NS19 <step-013>`).
+* **Ash and wet-sequence recipe.** The ash recipe (stages,
+  temperatures, gases) and wet sequence are not public.
+* **Shared resist.** Whether the three implants really share one
+  resist, and hence whether this is the strip of the N-well resist, is
+  this reference's reading, following the usual single-mask
+  retrograde-well practice (see {ref}`NWM <step-017>`).
+* **Pad-oxide budget.** How much pad oxide is lost per strip/clean
+  cycle, and whether that loss is budgeted against a later
+  sacrificial-oxide step, is unknown (see the open question on
+  {ref}`NS19 <step-013>`).
 
 <!-- footnotes -->
 
