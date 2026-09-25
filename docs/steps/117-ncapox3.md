@@ -29,6 +29,14 @@ described at {ref}`NCAPOX <step-091>` over the
 {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>` and
 {ref}`NCAPOX6 <step-158>` above each polished metal level.
 
+:::{figure} /_static/figures/m1-117-ncapox3.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a flat pale oxide buries three metal lines. After it a thin flat layer of the same pale oxide covers the whole top.
+:width: 560px
+:name: fig-m1-117-ncapox3
+
+Before, the polished inter-metal oxide; after, a thin cap oxide over it, which with the oxide left by the polish makes up the dielectric over metal 1 on which the via-1 mask is printed. The PDK's stack diagram gives that finished height as 0.27 µm;[^pdk-04] the cap's own thickness is not public (the page gives of the order of 0.05–0.15 µm as industry-typical[^txt-05]), and that it sets the final thickness is the page's inference. Whether the thin "NILD3_C" film of the diagram is this cap is not public. Nothing is drawn to scale. The bottom and cap films of the metal lines, the inter-level oxide under them, the metal contacts, the local interconnect, the glass, the cap oxide under the local interconnect, the lower tungsten plugs, the silicide discs, the contact liners and the transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The stack diagram offers one further public hint. Beside "NILD3
 K=4.5" it draws a "NILD3_C" of permittivity 3.5 and thickness
 0.030 µm,[^pdk-04] and the same pairing recurs as NILD4/NILD4_C at the

@@ -22,7 +22,7 @@ caption: >-
   colour of the titanium films and labelled with both readings. The PDK's stack diagram labels
   metal 1 0.36 µm;[^pdk-04] nothing is drawn to scale. The tungsten plug, its liner, the LI nitride cap, the local
   interconnect, the local-contact plug, the glass and the cap oxide below are drawn but not
-  labelled. Not to scale.
+  labelled, nor, in the lower panel, is the inter-level oxide. Not to scale.
 arrow:
   title: "TIAL6, step 112"
   note: "A bottom film, the aluminium–copper and a cap are sputtered over the whole wafer."
@@ -34,5 +34,5 @@ panels:
   - state_after: "112"
     title: "After: the three-film metal-1 stack"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner, mcw, lint]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner, mcw, lint, nild2]
     highlight: {where: [[170, 268]]}

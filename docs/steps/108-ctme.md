@@ -22,6 +22,14 @@ from local interconnect to metal1".[^pdk-06] The resist is stripped
 afterwards; this reference treats the strip and post-etch clean as
 part of this step.
 
+:::{figure} /_static/figures/m1-108-ctme.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a violet resist with two narrow windows lies on a flat pale oxide that buries three thin purple pads. After it the resist is gone and under each window a small hole with sloping walls goes down through the oxide and a thin hatched film to the top of a purple pad.
+:width: 560px
+:name: fig-m1-108-ctme
+
+Before, the contact resist; after, two holes etched through the inter-level oxide and the LI nitride cap to the titanium nitride of the local interconnect, and the resist stripped, which the page treats as part of this step. That the etch first stops on the nitride cap and then opens it is the page's reading of the stack diagram. The holes are drawn tapered, the bottom about half the top, as the pages read the PDK's 0.09 µm "Standard contact bottom CD"[^pdk-03] against the 0.170 µm drawn square (ct.1);[^pdk-periph] the wall angle is not public. The depth, about 0.34 µm on the page's reading of the stack diagram,[^pdk-04] is not drawn to scale. The local interconnect (the thin purple pads, titanium nitride), the glass, the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The public dimensions are those of the mask: a 0.170 µm square
 (ct.1) on a 0.190 µm space (ct.2),[^pdk-periph] a "min. etch and fill
 capability for mcon" of 0.14 µm, and a "Standard contact bottom CD"
