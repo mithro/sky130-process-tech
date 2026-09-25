@@ -29,7 +29,7 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 ## What the mask defines
 
 On the {ref}`URPM <step-055>` page's reading, the light p-type implant
-{ref}`UPRI <step-056>` sets the resistors' sheet resistance through those windows,
+{ref}`UPRI <step-056>` sets the resistors' sheet resistance through the windows,
 and the resist is stripped at {ref}`UPRIS <step-057>`, after which the
 poly doping of the process is complete. Like {ref}`RRPM <mask-rrpm>`, `URPM`
 has no entry in the PDK's mask table and no mask-level layer, and the
