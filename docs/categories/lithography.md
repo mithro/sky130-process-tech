@@ -1,6 +1,17 @@
 (category-lithography)=
 # Photolithography (mask step)
 
+A lithography step draws the pattern of one mask onto the wafer in
+photoresist.
+
+| | Photolithography (mask step) |
+|---|---|
+| What it does | draws the pattern of one mask onto the wafer in photoresist |
+| Steps in SKY130 | 36 |
+| Tool classes | {ref}`KrF step-and-scan systems <machine-duv-krf-stepper>`, {ref}`i-line steppers <machine-i-line-stepper>`, {ref}`Coater/developer tracks <machine-coat-develop-track>` |
+| Consumable classes | {ref}`Lithography materials <material-lithography-materials>` |
+| Governing relation | Rayleigh resolution equation (k1) |
+
 ## What this class of step does
 
 A lithography step draws the pattern of one mask onto the wafer in
@@ -52,11 +63,12 @@ CD = k_1 \frac{\lambda}{NA}, \qquad DOF = k_2 \frac{\lambda}{NA^2},
 where {math}`\lambda` is the exposure wavelength, {term}`NA` the
 numerical aperture of the projection lens and {term}`k1` a process
 factor that "typically equals 0.4 for production". The physical limit
-(Rayleigh's criterion for two-beam imaging) is {math}`k_1 = 0.25`;
-values between 0.25 and 0.4 need resolution-enhancement
+(Rayleigh's criterion for two-beam imaging) is {math}`k_1 = 0.25`.[^mack-2007][^lin-2002]
+Values between 0.25 and 0.4 need resolution-enhancement
 techniques.[^mack-2007][^lin-2002] For a KrF scanner at {math}`\lambda =
 248` nm and {math}`NA = 0.68` (the Nikon NSR-S204B, for
-example),[^nikon-s204b] {math}`\lambda/NA = 365` nm, so a 130 nm
+example),[^nikon-s204b] {math}`\lambda/NA = 365` nm.
+A 130 nm
 half-pitch is {math}`k_1 \approx 0.36` and the 90 nm printed gate of a
 high-performance 130 nm node is {math}`k_1 \approx 0.25` — hence the
 need for phase-shift masks and optical proximity correction on the gate
@@ -66,12 +78,21 @@ usable focus window is only a few hundred nanometres, which is why
 
 The 130 nm node was the first at which the printed gate was
 deliberately narrower than the half-pitch and then trimmed further in
-the etch: ITRS 2001 lists, for 2001, a DRAM half-pitch of 130 nm, an
-MPU gate of 90 nm in resist and 65 nm after etch, an ASIC/low-power
-gate of 130 nm in resist and 90 nm after etch, a contact of 165 nm in
-resist, an overlay requirement of 45–46 nm, CD control of 15.9 nm
-(3σ) on the half-pitch and 5.3 nm (3σ) on the MPU gate, and a mask
-magnification of 4×.[^itrs-03]
+the etch. ITRS 2001 lists, for 2001:[^itrs-03]
+
+:::{table} ITRS targets for this node's introduction year, as listed in the paragraph above
+
+| Parameter | Value |
+|---|---|
+| DRAM half-pitch | 130 nm |
+| MPU gate, in resist / after etch | 90 nm / 65 nm |
+| ASIC/low-power gate, in resist / after etch | 130 nm / 90 nm |
+| Contact, in resist | 165 nm |
+| Overlay requirement | 45–46 nm |
+| CD control on the half-pitch | 15.9 nm (3σ) |
+| CD control on the MPU gate | 5.3 nm (3σ) |
+| Mask magnification | 4× |
+:::
 
 ### Wavelengths and light sources
 
@@ -81,7 +102,7 @@ through the 1980s and early 1990s; excimer lasers then took over, KrF at
 typically runs a *mixed* line, with older tools moved to the less
 critical layers (industry practice: ASML describes older systems that
 "migrate to the lithography of choice for less critical
-layers"[^asml-30]): KrF tools for the critical layers and i-line tools
+layers"[^asml-30]). KrF tools are used for the critical layers and i-line tools
 for non-critical layers whose features are a few hundred nanometres or
 larger. On the step pages' readings, for example, active, poly, local
 interconnect, contact, metals 1 and 2 and vias 1 to 4 are KrF layers,
@@ -90,14 +111,14 @@ i-line layers. Which of SKY130's 36 masks are on which
 tool is not public. The process-steps sheet records a mask type for
 three plates only, which we read as embedded attenuated phase-shift
 masks for vias 2 and 3 and a binary mask for via 4, all for 248 nm
-exposure ({ref}`masks-index`);[^steps-sheet] it names no exposure
+exposure ({ref}`masks-index`).[^steps-sheet] It names no exposure
 tool, so the step pages' reading that these vias, the 0.8 µm via 4
 included, are printed on KrF tools remains an inference.
 
 ### Steppers and scanners
 
 A stepper images the whole reticle field at once and steps the wafer
-between exposures; a scanner illuminates a slit and moves reticle and
+between exposures. A scanner illuminates a slit and moves reticle and
 wafer in opposite directions (at 4:1 speed ratio) through it, so the
 field can be longer than the lens's well-corrected image circle and lens
 aberrations average along the scan.[^wiki-stepper] ITRS 2001 describes
@@ -116,7 +137,9 @@ and per field and prints to it.
 * **Deep-UV resists** are chemically amplified ({term}`CAR`): a
   photo-acid generator releases an acid that, during the PEB,
   catalytically removes protecting groups from a poly(hydroxystyrene)
-  backbone, so one photon converts many sites. Ito and Willson
+  backbone, so one photon converts many sites.
+
+  Ito and Willson
   introduced the concept in 1984.[^ito-1984] CARs are sensitive to
   airborne amines (which neutralise the acid and form a "T-top") and to
   the delay between exposure and PEB.
@@ -146,7 +169,7 @@ focus.[^wiki-mask] Two enhancements push {math}`k_1` below 0.4:
   giving alternate apertures a 180° phase difference cancels the light
   between them and sharpens the image.[^levenson-1982] Manufacturing at
   130 nm mostly used attenuated (embedded, MoSi) PSMs for contacts and
-  gates; ITRS 2001 notes that "primary PSM choices are attenuated
+  gates.[^itrs-03][^wiki-psm] ITRS 2001 notes that "primary PSM choices are attenuated
   shifter and alternating aperture".[^itrs-03][^wiki-psm]
 * **Optical proximity correction** ({term}`OPC`). Line ends shorten,
   corners round and isolated lines print differently from dense ones;
@@ -173,7 +196,9 @@ alignment corrections.
   (announced 2000-04-04: "130 nm resolution while using standard 248 nm
   light", NA 0.7, "120 200 mm wafer per hour")[^asml-750e] and PAS
   5500/800 (announced 2001-01-31: NA 0.80, "120 nm resolution", "115 200
-  mm wafers per hour");[^asml-800] Nikon NSR-S204B (248 nm, 4:1, 25 × 33
+  mm wafers per hour").[^asml-800]
+
+  Nikon NSR-S204B (248 nm, 4:1, 25 × 33
   mm field, NA 0.55–0.68; the cited specification sheet describes a 300
   mm-configured unit built in 2002);[^nikon-s204b] Canon FPA-3000EX4
   (248 nm, 5×, NA 0.6).[^tolpygo-2014] The PAS 5500 platform, first
@@ -186,7 +211,9 @@ alignment corrections.
   90S and Dainippon Screen (DNS) tracks.
 * **{ref}`Metrology <machine-cd-sem-overlay-metrology>`**: KLA-Tencor 8100/8100XP CD-SEM (accelerating voltage
   0.4–1.5 kV, resolution below 4 nm)[^gce-kla8100] and Hitachi
-  S-9200 CD-SEMs (released 1998; for 150 mm and 200 mm wafers, given as 6 and 8 inch);[^hitachi-2011] KLA-Tencor 5xxx/Archer
+  S-9200 CD-SEMs (released 1998; for 150 mm and 200 mm wafers, given as 6 and 8 inch).[^hitachi-2011]
+
+  KLA-Tencor 5xxx/Archer
   optical overlay tools; {ref}`after-develop inspection <machine-defect-inspection>` on KLA-Tencor 2xxx
   bright-field inspectors.[^wiki-kla]
 * **Reticles** are made at a mask shop (Photronics, DNP, Toppan, or a
@@ -195,62 +222,65 @@ alignment corrections.
 
 ## Typical consumables
 
-* **Photoresists**: i-line DNQ/novolac positive resists (Shipley/Rohm
+* **{ref}`Photoresists <material-lithography-materials>`**: i-line DNQ/novolac positive resists (Shipley/Rohm
   and Haas, TOK, JSR, Sumitomo, Clariant/AZ); KrF chemically amplified
   positive resists (Shipley UV-series, TOK, JSR, Shin-Etsu).
-* **BARC**: organic bottom anti-reflective coatings (Brewer Science
+* **{ref}`BARC <material-lithography-materials>`**: organic bottom anti-reflective coatings (Brewer Science
   DUV-series, Shipley AR-series); {term}`TARC` where used.
-* **Adhesion promoter**: HMDS, delivered as vapour.
-* **Solvents**: PGMEA (propylene glycol methyl ether acetate) and
+* **{ref}`Adhesion promoter <material-lithography-materials>`**: HMDS, delivered as vapour.
+* **{ref}`Solvents <material-lithography-materials>`**: PGMEA (propylene glycol methyl ether acetate) and
   ethyl lactate as resist casting solvents and for EBR; cyclohexanone.
-* **Developer**: aqueous tetramethylammonium hydroxide (TMAH), the
+* **{ref}`Developer <material-lithography-materials>`**: aqueous tetramethylammonium hydroxide (TMAH), the
   industry-standard strength being 2.38 % (0.26 N), metal-ion-free,
   with surfactant.[^mack-2007][^wiki-tmah][^microchemicals-dev]
-* **Excimer laser gases**: krypton, fluorine (in neon) premixes for KrF
+* **{ref}`Excimer laser gases <material-lithography-materials>`**: krypton, fluorine (in neon) premixes for KrF
   lasers; laser chambers and optics are periodic replacements.
-* **Reticles and pellicles**: the mask set itself, cleaned and
+* **{ref}`Reticles and pellicles <material-lithography-materials>`**: the mask set itself, cleaned and
   re-pelliclised periodically.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 4 | {ref}`FOM <step-004>` | Field oxide mask |
-| 7 | {ref}`DNM <step-007>` | Deep N-well mask |
-| 14 | {ref}`LVTNM <step-014>` | Low Vt NMOS mask |
-| 17 | {ref}`NWM <step-017>` | N-well mask |
-| 22 | {ref}`HVTPM <step-022>` | High V P-channel implant mask |
-| 26 | {ref}`PWBM <step-026>` | P-well block mask |
-| 30 | {ref}`PWDEM <step-030>` | P-well drain extended mask |
-| 35 | {ref}`TUNM <step-035>` | Tunnel mask |
-| 41 | {ref}`ONOM <step-041>` | ONO mask |
-| 44 | {ref}`LVOM <step-044>` | Low voltage oxide mask |
-| 49 | {ref}`RPM <step-049>` | Resistor protect mask |
-| 52 | {ref}`RRPM <step-052>` | Rev resistor protect mask |
-| 55 | {ref}`URPM <step-055>` | Ultra-high resistor poly mask |
-| 61 | {ref}`P1M <step-061>` | Poly mask |
-| 64 | {ref}`NTM <step-064>` | NTM mask (tip formation) |
-| 68 | {ref}`HVNTM <step-068>` | HV N-tip mask formation |
-| 71 | {ref}`LDNTM <step-071>` | LD tip layer mask |
-| 78 | {ref}`NPCM <step-078>` | Nitride poly cut mask |
-| 81 | {ref}`PSDM <step-081>` | P+ source drain implant mask |
-| 85 | {ref}`NSDM <step-085>` | N+ source drain implant mask |
-| 93 | {ref}`LICM1 <step-093>` | Local interconnect contact mask |
-| 102 | {ref}`LI1M <step-102>` | Local interconnect 1 mask |
-| 107 | {ref}`CTM1 <step-107>` | Metal contact mask |
-| 113 | {ref}`MM1 <step-113>` | Metal1 mask |
-| 118 | {ref}`VIM <step-118>` | Via1 mask |
-| 124 | {ref}`MM2 <step-124>` | Metal2 mask |
-| 129 | {ref}`VIM2 <step-129>` | Via2 mask |
-| 137 | {ref}`CAPM <step-137>` | Capacitor mask |
-| 139 | {ref}`MM3 <step-139>` | Metal3 mask |
-| 144 | {ref}`VIM3 <step-144>` | Via3 mask |
-| 152 | {ref}`CAP2M <step-152>` | Capacitor 2 mask |
-| 154 | {ref}`MM4 <step-154>` | Metal4 mask |
-| 159 | {ref}`VIM4 <step-159>` | Via4 (pad via) mask |
-| 162 | {ref}`MM5 <step-162>` | Metal5 mask |
-| 165 | {ref}`NSM <step-165>` | Nitride seal mask |
-| 168 | {ref}`PDM <step-168>` | Pad mask |
+:::{table} The thirty-six lithography (mask) steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 4 | {ref}`FOM <step-004>` | Field oxide mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 7 | {ref}`DNM <step-007>` | Deep N-well mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 14 | {ref}`LVTNM <step-014>` | Low Vt NMOS mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 17 | {ref}`NWM <step-017>` | N-well mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 22 | {ref}`HVTPM <step-022>` | High V P-channel implant mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 26 | {ref}`PWBM <step-026>` | P-well block mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 30 | {ref}`PWDEM <step-030>` | P-well drain extended mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 35 | {ref}`TUNM <step-035>` | Tunnel mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 41 | {ref}`ONOM <step-041>` | ONO mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 44 | {ref}`LVOM <step-044>` | Low voltage oxide mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 49 | {ref}`RPM <step-049>` | Resistor protect mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 52 | {ref}`RRPM <step-052>` | Rev resistor protect mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 55 | {ref}`URPM <step-055>` | Ultra-high resistor poly mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 61 | {ref}`P1M <step-061>` | Poly mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 64 | {ref}`NTM <step-064>` | NTM mask (tip formation) | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 68 | {ref}`HVNTM <step-068>` | HV N-tip mask formation | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 71 | {ref}`LDNTM <step-071>` | LD tip layer mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 78 | {ref}`NPCM <step-078>` | Nitride poly cut mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 81 | {ref}`PSDM <step-081>` | P+ source drain implant mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 85 | {ref}`NSDM <step-085>` | N+ source drain implant mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 93 | {ref}`LICM1 <step-093>` | Local interconnect contact mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 102 | {ref}`LI1M <step-102>` | Local interconnect 1 mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 107 | {ref}`CTM1 <step-107>` | Metal contact mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 113 | {ref}`MM1 <step-113>` | Metal1 mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 118 | {ref}`VIM <step-118>` | Via1 mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 124 | {ref}`MM2 <step-124>` | Metal2 mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 129 | {ref}`VIM2 <step-129>` | Via2 mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 137 | {ref}`CAPM <step-137>` | Capacitor mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 139 | {ref}`MM3 <step-139>` | Metal3 mask | {ref}`i-line stepper <machine-i-line-stepper>`, {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 144 | {ref}`VIM3 <step-144>` | Via3 mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 152 | {ref}`CAP2M <step-152>` | Capacitor 2 mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 154 | {ref}`MM4 <step-154>` | Metal4 mask | {ref}`i-line stepper <machine-i-line-stepper>`, {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 159 | {ref}`VIM4 <step-159>` | Via4 (pad via) mask | {ref}`KrF stepper <machine-duv-krf-stepper>` |
+| 162 | {ref}`MM5 <step-162>` | Metal5 mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 165 | {ref}`NSM <step-165>` | Nitride seal mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+| 168 | {ref}`PDM <step-168>` | Pad mask | {ref}`i-line stepper <machine-i-line-stepper>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
