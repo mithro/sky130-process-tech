@@ -1,0 +1,51 @@
+id: beol-119-vime
+kind: xsection
+page: docs/steps/119-vime.md
+series: series-beol.yaml
+close_up: [59, 150]
+close_up_name: "the middle via"
+routes: {m1cap: right, m1al: right}
+crop_depth: -265
+alt: >-
+  Two enlarged cross-sections of one metal line, a thick silver film between two thin purple
+  ones, buried in a flat pale oxide. Before the step a violet resist with a narrow window lies
+  on the oxide above the line. After it the resist is gone and under the window a hole with
+  vertical walls goes down through the oxide to the thin purple film on top of the line.
+caption: >-
+  A close-up of the middle via, over the middle metal-1 line; the lower part of the slice is cut
+  off, and the drawing starts inside the inter-level oxide under metal 1. Before, the via resist;
+  after, the hole etched through the cap oxide and the inter-metal oxide (together 0.27 µm thick
+  in the PDK's stack diagram[^pdk-04]) to the cap film on top of the metal-1 line, and the resist
+  stripped, which the page treats as part of this step. Which refractory film that cap is is
+  not public: the overview of the metal cap sets out the TiW and the TiN readings, and the
+  figure does not choose. The hole is drawn much shallower than it is: the PDK's via is a
+  0.150 µm square (via.1a),[^pdk-periph] about 1.8 times as deep as it is wide on the page's
+  reckoning, and it is drawn about 1.1 times as deep as it is wide. The walls are drawn
+  vertical, and the PDK's "Via1 slope" of 0.02[^pdk-03] is not drawn. The right-hand via is
+  etched in the same way, outside this view. The bottom film of the line and the inter-level
+  oxide under it are drawn but not labelled, nor, in the upper panel, are the metal-1 line and
+  the inter-metal oxide.
+  Not to scale.
+arrow:
+  title: "VIME, step 119"
+  note: "A fluorocarbon plasma etches the via holes through the oxide to the cap of the metal lines below; the resist is stripped."
+panels:
+  - state_after: "118"
+    title: "Before: the via resist (step 118)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m1al, m1cap, nild3, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, nild2]
+  - state_after: "119"
+    title: "After: a via hole down to the metal-1 cap"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, nild2]
+    labels:
+      m1cap: {title: "Cap film", note: "TiW or Ti/TiN — see the overview"}
+    callouts:
+      - x: 125
+        y: "top@125"
+        label:
+          title: "Via hole"
+          note: "a 0.150 µm square in the PDK's rules"
+          basis: public
+          cite: pdk-periph
+    highlight: {where: [[117, 133]]}

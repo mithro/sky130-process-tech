@@ -1,0 +1,34 @@
+id: beol-118-vim
+kind: xsection
+page: docs/steps/118-vim.md
+series: series-beol.yaml
+crop_depth: -84
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step three metal lines, each a thick silver film between two thin purple ones, lie buried in a
+  flat pale oxide. After it a violet resist covers the oxide except for two narrow windows, one
+  over the middle line and one over the right-hand line.
+caption: >-
+  Before, the cap oxide over the polished inter-metal oxide that buries the three metal-1 lines;
+  after, the resist with a window over the middle line and one over the right-hand line, where
+  a via is to go. The PDK gives the via as a 0.150 µm square (via.1a) that metal 1 must enclose
+  by 0.055 µm (via.4a);[^pdk-periph] where the windows fall is an illustrative choice. The
+  windows are not drawn to scale, and neither is the resist; the page reads the PDK's 1.14 µm
+  resist[^pdk-03] as an antenna-rule assumption that need not describe this layer. The lower
+  part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1.
+  The bottom film of each metal-1 line, that inter-level oxide and the tungsten metal-contact
+  plugs with their liners are drawn but not labelled, nor, in the upper panel, are the metal-1
+  lines. Not to scale.
+arrow:
+  title: "VIM, step 118"
+  note: "Resist is coated, exposed through the via reticle and developed, opening the via windows."
+panels:
+  - state_after: "117"
+    title: "Before: the cap oxide over metal 1 (step 117)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m1al, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1cap, nild2]
+  - state_after: "118"
+    title: "After: resist with two via windows"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1cap, nild2]
+    highlight: {where: [[0, 117], [133, 236], [252, 268]]}

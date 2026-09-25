@@ -26,7 +26,21 @@ one figure per step for 118–134.
 
 ## Figures (118–134)
 
-(per-figure record below as they are built)
+* **118 VIM** (full slice, cut at 84 u): resist with windows over the middle and right-hand
+  metal-1 lines. Checked light/dark, desktop/phone. The before panel labels only the two
+  oxides (the label column was taller than the 56 u drawing); the metal-1 lines are labelled
+  in the after panel. The cut metal-contact plugs show as short stubs under the outer lines
+  (declared). Compromise: a flat, wide drawing; the windows are narrow slits at phone width.
+* **119 VIME** (close-up [59, 150], 2.9×, middle via): the hole to the metal-1 cap. The window
+  starts just right of the left metal-1 line (no sliver) and ends at the middle line's right
+  end, so the line's films reach the edge and their labels run straight right (`routes`).
+  The cap-film note is given by a panel override (the note budget had dropped it). Caption
+  states drawn 1.1:1 against the page's 1.8:1, vertical walls, the "Via1 slope" not drawn.
+* **120 TIN3**, **121 WDEP3**, **122 WCMP3** (same close-up): the 5 u minimum liner fills most
+  of a 16 u hole; the captions say the liner is drawn far thicker in proportion than it is.
+  122 labels the plug from above (`routes: {v1w: top}`; a right route ran 50 u inside NILD3).
+  121's dip over the hole is small (alt: "a dip"). Two captions reworded after the
+  caption-echo lint (119, 120). check_preserved: ADDED only on all five.
 
 ## Left
 

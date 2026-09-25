@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 727" width="480" height="727" role="img" data-kind="xsection" data-theme="light">
+<title>Two enlarged cross-sections of one metal line, a thick silver film between two thin purple ones, buried in a flat pale oxide. Before the step a violet resist with a narrow window lies on the oxide above the line. After it the resist is gone and under the window a hole with vertical walls goes down through the oxide to the thin purple film on top of the line.</title>
+<desc>Two enlarged cross-sections of one metal line, a thick silver film between two thin purple ones, buried in a flat pale oxide. Before the step a violet resist with a narrow window lies on the oxide above the line. After it the resist is gone and under the window a hole with vertical walls goes down through the oxide to the thin purple film on top of the line.</desc>
+<style>
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-tip-n:#8cc3f2;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.mat.faded{fill:none;stroke:var(--ink-muted);stroke-dasharray:3 2}
+.cutfill{fill:var(--bg)}.cutline{stroke:var(--ink-muted);stroke-width:0.75;fill:none;stroke-linejoin:round}
+.patink{stroke:var(--ink);stroke-width:0.8;opacity:0.8;fill:none}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch-back" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line class="pat" x1="0" y1="0" x2="0" y2="7"/></pattern></defs>
+<rect class="ground" x="0" y="0" width="480" height="727"/>
+<text x="12.0" y="26.0" class="t-panel-title">Before: the via resist (step 118)</text>
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="239.7"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,239.7" clip-path="url(#clip1)">
+<polygon class="mat m-oxide-dep" data-layer="nild2" points="9.00,265.82 283.00,265.82 283.00,301.16 155.83,301.17 152.83,301.58 149.50,302.83 147.00,304.48 145.00,306.46 143.50,308.63 142.67,310.37 142.07,312.12 141.58,315.89 141.09,324.73 47.83,324.73 47.33,315.83 46.85,312.12 46.33,310.54 45.83,309.41 45.33,308.47 44.00,306.56 42.33,304.83 40.00,303.15 37.50,302.00 34.50,301.29 9.00,301.16"/>
+<polygon class="mat m-barrier" data-layer="m1bot" points="132.58,251.10 283.00,251.10 283.00,265.82 132.58,265.82"/>
+<polygon class="mat m-aluminium" data-layer="m1al" points="132.58,198.09 283.00,198.09 283.00,251.10 132.58,251.10"/>
+<polygon fill="url(#p-hatch-back)" points="132.58,198.09 283.00,198.09 283.00,251.10 132.58,251.10"/>
+<polygon class="mat m-barrier" data-layer="m1cap" points="132.58,183.36 283.00,183.36 283.00,198.09 132.58,198.09"/>
+<polygon class="mat m-oxide-dep" data-layer="nild3" points="9.00,153.91 283.00,153.91 283.00,183.36 132.67,183.36 132.50,265.82 9.00,265.82"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap3" points="9.00,130.35 283.00,130.35 283.00,153.91 9.00,153.91"/>
+<polygon class="mat m-resist" data-layer="vimres" points="9.00,42.00 183.08,42.00 183.08,130.35 9.00,130.35"/>
+<polygon fill="url(#p-dots)" points="9.00,42.00 183.08,42.00 183.08,130.35 9.00,130.35"/>
+<polygon class="mat m-resist" data-layer="vimres" points="229.75,42.00 283.00,42.00 283.00,130.35 229.75,130.35"/>
+<polygon fill="url(#p-dots)" points="229.75,42.00 283.00,42.00 283.00,130.35 229.75,130.35"/>
+<polygon class="cutfill" points="12.00,276.66 16.00,274.16 20.00,276.66 24.00,274.16 28.00,276.66 32.00,274.16 36.00,276.66 40.00,274.16 44.00,276.66 48.00,274.16 52.00,276.66 56.00,274.16 60.00,276.66 64.00,274.16 68.00,276.66 72.00,274.16 76.00,276.66 80.00,274.16 84.00,276.66 88.00,274.16 92.00,276.66 96.00,274.16 100.00,276.66 104.00,274.16 108.00,276.66 112.00,274.16 116.00,276.66 120.00,274.16 124.00,276.66 128.00,274.16 132.00,276.66 136.00,274.16 140.00,276.66 144.00,274.16 148.00,276.66 152.00,274.16 156.00,276.66 160.00,274.16 164.00,276.66 168.00,274.16 172.00,276.66 176.00,274.16 180.00,276.66 184.00,274.16 188.00,276.66 192.00,274.16 196.00,276.66 200.00,274.16 204.00,276.66 208.00,274.16 212.00,276.66 216.00,274.16 220.00,276.66 224.00,274.16 228.00,276.66 232.00,274.16 236.00,276.66 240.00,274.16 244.00,276.66 248.00,274.16 252.00,276.66 256.00,274.16 260.00,276.66 264.00,274.16 268.00,276.66 272.00,274.16 276.00,276.66 280.00,274.16 280.00,281.66 12.00,281.66"/>
+<polyline class="cutline" points="12.00,276.66 16.00,274.16 20.00,276.66 24.00,274.16 28.00,276.66 32.00,274.16 36.00,276.66 40.00,274.16 44.00,276.66 48.00,274.16 52.00,276.66 56.00,274.16 60.00,276.66 64.00,274.16 68.00,276.66 72.00,274.16 76.00,276.66 80.00,274.16 84.00,276.66 88.00,274.16 92.00,276.66 96.00,274.16 100.00,276.66 104.00,274.16 108.00,276.66 112.00,274.16 116.00,276.66 120.00,274.16 124.00,276.66 128.00,274.16 132.00,276.66 136.00,274.16 140.00,276.66 144.00,274.16 148.00,276.66 152.00,274.16 156.00,276.66 160.00,274.16 164.00,276.66 168.00,274.16 172.00,276.66 176.00,274.16 180.00,276.66 184.00,274.16 188.00,276.66 192.00,274.16 196.00,276.66 200.00,274.16 204.00,276.66 208.00,274.16 212.00,276.66 216.00,274.16 220.00,276.66 224.00,274.16 228.00,276.66 232.00,274.16 236.00,276.66 240.00,274.16 244.00,276.66 248.00,274.16 252.00,276.66 256.00,274.16 260.00,276.66 264.00,274.16 268.00,276.66 272.00,274.16 276.00,276.66 280.00,274.16"/>
+</g>
+<text x="328.0" y="145.3" class="t-label-title" data-owner="ncap3">Cap oxide</text>
+<text x="328.0" y="161.3" class="t-label-note muted" data-owner="ncap3">deposited</text>
+<text x="328.0" y="177.3" class="t-label-note muted" data-owner="ncap3">at step 117</text>
+<path class="leader" data-owner="ncap3" d="M276.0 140.4H285.0H324.0"/>
+<circle class="dot" data-owner="ncap3" cx="276.0" cy="140.4" r="1.9"/>
+<text x="328.0" y="56.8" class="t-label-title" data-owner="vimres">Photoresist</text>
+<text x="328.0" y="72.8" class="t-label-note muted" data-owner="vimres">VIM mask, step 118</text>
+<path class="leader" data-owner="vimres" d="M276.0 51.9H291.0H324.0"/>
+<circle class="dot" data-owner="vimres" cx="276.0" cy="51.9" r="1.9"/>
+<path class="parrow" d="M34 289.7V327.7"/>
+<path class="pahead" d="M34 335.7l-5.5 -9h11.0z"/>
+<text x="50.0" y="300.7" class="t-label-title acc">VIME, step 119</text>
+<text x="50.0" y="315.7" class="t-label-note muted">A fluorocarbon plasma etches the via holes through the oxide</text>
+<text x="50.0" y="330.7" class="t-label-note muted">to the cap of the metal lines below; the resist is stripped.</text>
+<text x="12.0" y="363.7" class="t-panel-title">After: a via hole down to the metal-1 cap</text>
+<clipPath id="clip2"><rect x="12" y="432.7" width="268" height="151.3"/></clipPath>
+<g class="drawing" data-rect="12,432.7,268,151.3" clip-path="url(#clip2)">
+<polygon class="mat m-oxide-dep" data-layer="nild2" points="9.00,572.13 283.00,572.13 283.00,607.47 155.83,607.48 152.83,607.89 149.50,609.14 147.00,610.79 145.00,612.77 143.50,614.94 142.67,616.67 142.07,618.43 141.58,622.20 141.09,631.03 47.83,631.03 47.33,622.14 46.85,618.43 46.33,616.85 45.83,615.71 45.33,614.78 44.00,612.86 42.33,611.14 40.00,609.46 37.50,608.31 34.50,607.59 9.00,607.47"/>
+<polygon class="mat m-barrier" data-layer="m1bot" points="132.58,557.41 283.00,557.41 283.00,572.13 132.58,572.13"/>
+<polygon class="mat m-aluminium" data-layer="m1al" points="132.58,504.40 283.00,504.40 283.00,557.41 132.58,557.41"/>
+<polygon fill="url(#p-hatch-back)" points="132.58,504.40 283.00,504.40 283.00,557.41 132.58,557.41"/>
+<polygon class="mat m-barrier" data-layer="m1cap" points="132.58,489.67 283.00,489.67 283.00,504.40 132.58,504.40"/>
+<polygon class="mat m-oxide-dep" data-layer="nild3" points="9.00,460.22 183.08,460.22 183.08,489.67 132.67,489.67 132.50,572.13 9.00,572.13"/>
+<polygon class="mat m-oxide-dep" data-layer="nild3" points="229.75,460.22 283.00,460.22 283.00,489.67 229.75,489.67"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap3" points="9.00,436.66 183.08,436.66 183.08,460.22 9.00,460.22"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap3" points="229.75,436.66 283.00,436.66 283.00,460.22 229.75,460.22"/>
+<polygon class="cutfill" points="12.00,582.97 16.00,580.47 20.00,582.97 24.00,580.47 28.00,582.97 32.00,580.47 36.00,582.97 40.00,580.47 44.00,582.97 48.00,580.47 52.00,582.97 56.00,580.47 60.00,582.97 64.00,580.47 68.00,582.97 72.00,580.47 76.00,582.97 80.00,580.47 84.00,582.97 88.00,580.47 92.00,582.97 96.00,580.47 100.00,582.97 104.00,580.47 108.00,582.97 112.00,580.47 116.00,582.97 120.00,580.47 124.00,582.97 128.00,580.47 132.00,582.97 136.00,580.47 140.00,582.97 144.00,580.47 148.00,582.97 152.00,580.47 156.00,582.97 160.00,580.47 164.00,582.97 168.00,580.47 172.00,582.97 176.00,580.47 180.00,582.97 184.00,580.47 188.00,582.97 192.00,580.47 196.00,582.97 200.00,580.47 204.00,582.97 208.00,580.47 212.00,582.97 216.00,580.47 220.00,582.97 224.00,580.47 228.00,582.97 232.00,580.47 236.00,582.97 240.00,580.47 244.00,582.97 248.00,580.47 252.00,582.97 256.00,580.47 260.00,582.97 264.00,580.47 268.00,582.97 272.00,580.47 276.00,582.97 280.00,580.47 280.00,587.97 12.00,587.97"/>
+<polyline class="cutline" points="12.00,582.97 16.00,580.47 20.00,582.97 24.00,580.47 28.00,582.97 32.00,580.47 36.00,582.97 40.00,580.47 44.00,582.97 48.00,580.47 52.00,582.97 56.00,580.47 60.00,582.97 64.00,580.47 68.00,582.97 72.00,580.47 76.00,582.97 80.00,580.47 84.00,582.97 88.00,580.47 92.00,582.97 96.00,580.47 100.00,582.97 104.00,580.47 108.00,582.97 112.00,580.47 116.00,582.97 120.00,580.47 124.00,582.97 128.00,580.47 132.00,582.97 136.00,580.47 140.00,582.97 144.00,580.47 148.00,582.97 152.00,580.47 156.00,582.97 160.00,580.47 164.00,582.97 168.00,580.47 172.00,582.97 176.00,580.47 180.00,582.97 184.00,580.47 188.00,582.97 192.00,580.47 196.00,582.97 200.00,580.47 204.00,582.97 208.00,580.47 212.00,582.97 216.00,580.47 220.00,582.97 224.00,580.47 228.00,582.97 232.00,580.47 236.00,582.97 240.00,580.47 244.00,582.97 248.00,580.47 252.00,582.97 256.00,580.47 260.00,582.97 264.00,580.47 268.00,582.97 272.00,580.47 276.00,582.97 280.00,580.47"/>
+<polyline class="hl" points="182.83,433.66 183.00,433.66 183.17,486.67 229.67,486.67 229.83,433.66 230.00,433.66"/>
+</g>
+<text x="328.0" y="596.6" class="t-label-title" data-owner="m1al">Aluminium alloy</text>
+<text x="328.0" y="612.6" class="t-label-note muted" data-owner="m1al">aluminium–copper,</text>
+<text x="328.0" y="628.6" class="t-label-note muted" data-owner="m1al">the conductor;</text>
+<text x="328.0" y="644.6" class="t-label-note muted" data-owner="m1al">step 112</text>
+<path class="leader" data-owner="m1al" d="M276.0 530.9H285.0V591.7H324.0"/>
+<circle class="dot" data-owner="m1al" cx="276.0" cy="530.9" r="1.9"/>
+<text x="328.0" y="524.6" class="t-label-title" data-owner="m1cap">Cap film</text>
+<text x="328.0" y="540.6" class="t-label-note muted" data-owner="m1cap">TiW or Ti/TiN —</text>
+<text x="328.0" y="556.6" class="t-label-note muted" data-owner="m1cap">see the overview</text>
+<text x="328.0" y="572.6" class="t-label-note tag" data-owner="m1cap">inferred</text>
+<path class="leader" data-owner="m1cap" d="M276.0 500.9H291.0V519.7H324.0"/>
+<circle class="dot" data-owner="m1cap" cx="276.0" cy="500.9" r="1.9"/>
+<text x="328.0" y="468.6" class="t-label-title" data-owner="nild3">Inter-metal oxide</text>
+<text x="328.0" y="484.6" class="t-label-note muted" data-owner="nild3">deposited</text>
+<text x="328.0" y="500.6" class="t-label-note muted" data-owner="nild3">at step 115</text>
+<path class="leader" data-owner="nild3" d="M276.0 464.2H297.0V463.7H324.0"/>
+<circle class="dot" data-owner="nild3" cx="276.0" cy="464.2" r="1.9"/>
+<text x="328.0" y="444.6" class="t-label-title" data-owner="ncap3">Cap oxide</text>
+<path class="leader" data-owner="ncap3" d="M276.0 440.7H303.0V439.7H324.0"/>
+<circle class="dot" data-owner="ncap3" cx="276.0" cy="440.7" r="1.9"/>
+<text x="197.4" y="387.6" class="t-label-title" text-anchor="end" data-owner="callout0">Via hole</text>
+<text x="197.4" y="403.6" class="t-label-note muted" text-anchor="end" data-owner="callout0">a 0.150 µm square</text>
+<text x="197.4" y="419.6" class="t-label-note muted" text-anchor="end" data-owner="callout0">in the PDK&#x27;s rules</text>
+<path class="leader" data-owner="callout0" d="M206.4 489.7V382.7H201.4"/>
+<circle class="dot" data-owner="callout0" cx="206.4" cy="489.7" r="1.9"/>
+<text x="12.0" y="680.7" class="t-label-title">Close-up of the middle via, enlarged about</text>
+<text x="12.0" y="697.7" class="t-label-title">2.9×; the lower part of the slice is not drawn.</text>
+<text x="12.0" y="714.7" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+</svg>

@@ -1,0 +1,37 @@
+id: beol-122-wcmp3
+kind: xsection
+page: docs/steps/122-wcmp3.md
+series: series-beol.yaml
+close_up: [59, 150]
+close_up_name: "the middle via"
+routes: {m1cap: right, m1al: right, v1w: top}
+crop_depth: -265
+alt: >-
+  Two enlarged cross-sections of a filled hole in a flat pale oxide over a metal line. Before
+  the step a thick grey tungsten film over a thin purple liner covers the whole top and fills the
+  hole. After it the top is flat oxide again, with the tungsten and its liner left only inside the
+  hole, their tops level with the oxide.
+caption: >-
+  A close-up of the middle via; the lower part of the slice is cut off, and the drawing starts
+  inside the inter-level oxide under metal 1. Before, the tungsten and its liner over the whole
+  wafer; after, both polished off the field down to the cap oxide, leaving the via plug: a
+  0.15 µm square in the PDK's rules,[^pdk-periph] drawn here flush with the oxide. How far the
+  polish recesses the plug and thins the oxide is not public, and neither is drawn. The oxide
+  over the metal-1 line is 0.27 µm in the PDK's stack diagram;[^pdk-04] the plug is drawn about
+  1.1 times as tall as it is wide. The right-hand via is polished in the same way, outside this
+  view. The liner, the metal-1 line and the inter-level oxide under it are drawn but not
+  labelled, nor, in
+  the upper panel, are the oxides. Not to scale.
+arrow:
+  title: "WCMP3, step 122"
+  note: "The tungsten and the liner are polished off the field, down to the cap oxide, leaving flush plugs."
+panels:
+  - state_after: "121"
+    title: "Before: tungsten over the whole top (step 121)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, nild2, ncap3, nild3, m1al, m1cap, v1liner]
+  - state_after: "122"
+    title: "After: a flush via plug"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, nild2, m1al, m1cap, v1liner]
+    highlight: {where: [[59, 150]]}
