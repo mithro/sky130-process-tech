@@ -480,8 +480,6 @@ the pad oxide as "from about 10 nanometers (nm) to about
 
 ## Safety and abatement
 
-## Safety and abatement
-
 Several consumables of the flow are hazardous in ways that shape how
 they are delivered and exhausted. Silane is "a colorless, pyrophoric
 gas";[^wiki-silane] phosphine is "a highly toxic respiratory
@@ -595,8 +593,6 @@ processes, steps or abatement systems.[^epa-ghgrp-skywater] The
 {ref}`process gases <material-process-gases>` and
 {ref}`etch and chamber-clean gases <material-etch-gases>` pages discuss
 what the record shows for their classes.
-
-## How to read the index
 
 ## How to read the index
 
