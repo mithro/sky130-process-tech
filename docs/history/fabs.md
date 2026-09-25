@@ -179,7 +179,7 @@ sources.
 
 **Grace.** The December 2005 deal covered Cypress's PSoC, image-sensor, wireless USB and PC clock
 processes, and production was to start with "the PSoC mixed-signal array on Cypress's proprietary S4
-technology".[^eet-2005-grace][^ar-fy2005] Cypress completed the transfer of its "0.35-micron SONOS process"
+technology".[^eet-2005-grace][^ar-fy2005] Cypress completed the transfer of its "[0].35-micron SONOS process"
 during 2006 (Cypress's reports).[^ar-fy2006][^tenk-fy2007] In July 2006 it announced it would begin moving
 "its 0.13-micron C8 process technology" to Grace in the third quarter, for USB and clock chips (single
 source).[^eet-2006-c8] In 2009 an older SRAM process, RAM42, followed (single source).[^qtp-091302]

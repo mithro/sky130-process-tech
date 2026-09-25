@@ -70,7 +70,7 @@ The PDK is not independent of the Cypress reports: SkyWater runs the fab it boug
 
 ## What does the "8" mean?
 
-The SKY130 PDK says `s8` "stood for the "8th generation" of the SONOS technology developed originally by
+The SKY130 PDK says `s8` "stood for the '8th generation' of the SONOS technology developed originally by
 Cypress" (single source).[^pdk-previous] The Cypress sources point elsewhere:
 
 * **One SONOS process before S8 in the reports.** The only earlier SONOS process in the reports is S4AD-5.
@@ -85,7 +85,7 @@ We read the "8" as the process generation Cypress numbered 8, the 0.13 µm one, 
 was the SONOS process of generation 4 (our reading). The numbering is Cypress's, not a count: no
 generation 6 was found, and generation 2 covers 0.8 µm and 0.65 µm. SkyWater's "8th generation of the
 SONOS technology" and this reading agree that S8 is a SONOS process; they differ on what the 8 counts, and
-no Cypress source found says. The naming is set out on {ref}`history-naming`.
+no Cypress source found says.[^pdk-previous] The naming is set out on {ref}`history-naming`.
 
 ## Open questions
 

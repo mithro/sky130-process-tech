@@ -46,7 +46,7 @@ clock generator, the CY2414ZC, at Fab 2. Cypress's product brief says its SONOS 
 production since 2001" (Cypress's reports).[^qtp-021507][^qtp-042806][^eflash-brief]
 
 **Earlier SONOS?** Infineon's history of PSoC, written after it bought Cypress, says Cypress had CPLDs
-"based on its SONOS process technology" in the late 1980s. No other source found supports this, and it
+"based on its SONOS … process technology" in the late 1980s. No other source found supports this, and it
 conflicts with the 2001 dates above. Cypress's 1993 10-K lists "0.65-micron Flash technologies" but does
 not say they were SONOS.[^psoc-history][^eflash-brief][^ar-fy1993]
 
@@ -57,7 +57,7 @@ from November 2004 (single source).[^qtp-051005]
 
 **Grace.** The December 2005 foundry deal was to start with "the PSoC mixed-signal array on Cypress's
 proprietary S4 technology". Grace was qualified with a PSoC family in August 2006, and Cypress completed
-the transfer of its "0.35-micron SONOS process" to Grace during 2006.[^eet-2005-grace][^qtp-062509][^ar-fy2006]
+the transfer of its "[0].35-micron SONOS process" to Grace during 2006.[^eet-2005-grace][^qtp-062509][^ar-fy2006]
 Later reissues name the foundry HHGrace (single source).[^qtp-151005]
 
 **Fab 4.** One report has a history row of August 2007 for a "14 Layer Mask Change on Neutron Device
@@ -97,7 +97,7 @@ The two sites used different metal stacks for the same process name (Cypress's r
 
 The same split between a TiW-capped stack and a TiN-capped stack appears in the Cypress reports on S8;
 the SKY130 overview discusses it in {ref}`overview-metal-cap`. One Fab 2 report prints the gate oxide as
-"7A", which we read as a truncated "110A" (our reading).[^qtp-042806] The full tables are on
+"7A", which we read as a truncated 110 Å (our reading).[^qtp-042806] The full tables are on
 {ref}`history-stackups`.
 
 ## Products
