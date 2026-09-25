@@ -64,8 +64,18 @@ every free full-text link and reports results that differ from the
 recorded ``checked`` status.  Both send only the project user agent and
 never any contact details, and back off on HTTP 429.
 
+A ``free_full_text`` entry may additionally carry ``dead_since`` (a link the
+checker found no longer resolving, with no Wayback snapshot anywhere --
+R-WAYBACK / rule 11 of ``docs/plans/agent-briefs.md``) or, when a snapshot was
+found and verified, ``archive_url``/``archive_date``/``dead_since`` together
+(R-WAYBACK's archive-first form; ``tools/gen_papers.py`` renders it). A DOI is
+never given an archive form, so this only applies to a plain URL.
+
+``--selftest`` runs the (offline) free_full_text schema unit tests above and
+exits; no network access, no cache file is touched.
+
 Prints "N papers checked, M problems" and exits non-zero on problems.
-Run with ``uv run tools/check_papers.py [--online] [--links]``.
+Run with ``uv run tools/check_papers.py [--online] [--links] [--selftest]``.
 """
 
 from __future__ import annotations
@@ -140,6 +150,14 @@ KEYS = [
     "discovery", "notes", "verified",
 ]
 LINK_KEYS = ["url", "host", "oa_type", "located_via", "checked"]
+# R-WAYBACK (docs/plans/readability-guide.md), for a free_full_text link that
+# stopped resolving: LINK_DEAD_KEYS marks it dead with no replacement found
+# anywhere (rule 11 of docs/plans/agent-briefs.md); LINK_ARCHIVE_KEYS records
+# a verified Wayback snapshot instead. A DOI is never given an archive form
+# (R-WAYBACK step 5); these only ever apply to a free_full_text entry, which
+# is always a plain URL.
+LINK_DEAD_KEYS = LINK_KEYS + ["dead_since"]
+LINK_ARCHIVE_KEYS = LINK_KEYS + ["archive_url", "archive_date", "dead_since"]
 EXCLUDED_KEYS = ["id", "title", "authors", "year", "venue", "status", "names_process", "reason", "decided"]
 LABEL_KEYS = ["label", "id", "previous_ids", "published"]
 
@@ -168,6 +186,8 @@ ARXIV_RE = re.compile(r"^\d{4}\.\d{4,5}$")
 WEB_ID_RE = re.compile(r"^web:[a-z0-9][a-z0-9-]*$")
 LABEL_ID_RE = re.compile(r"^paper-[a-z0-9-]+-(\d{4})[a-z]$")
 DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})( \S|$)")
+PLAIN_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+WAYBACK_RE = re.compile(r"^https://web\.archive\.org/web/(\d{14})/(https?://.+)$")
 LABEL_RE = re.compile(r"^\(([A-Za-z0-9_-]+)\)=\s*$", re.MULTILINE)
 INV_KEY_RE = re.compile(r"^\*\*([A-Za-z0-9][A-Za-z0-9_-]*)\*\*", re.MULTILINE)
 
@@ -208,6 +228,26 @@ def date_ok(value: object, today: dt.date) -> bool:
         return dt.date.fromisoformat(m.group(1)) <= today
     except ValueError:
         return False
+
+
+def plain_date_ok(value: object, today: dt.date) -> bool:
+    """Like ``date_ok``, but the whole string must be the date, nothing else
+    (``archive_date``/``dead_since``: a bare capture or dead-since date, not
+    a ``'<date> <source>'`` field like ``verified``/``checked``)."""
+    if not isinstance(value, str) or not PLAIN_DATE_RE.match(value):
+        return False
+    try:
+        return dt.date.fromisoformat(value) <= today
+    except ValueError:
+        return False
+
+
+def norm_url(u: str) -> str:
+    """Loosely normalise a URL for the archive_url/url embedding comparison
+    (scheme, ``www.`` and a trailing slash do not distinguish a citation)."""
+    u = re.sub(r"^https?://", "", u)
+    u = re.sub(r"^www\.", "", u)
+    return u.rstrip("/")
 
 
 def fetch(url: str) -> tuple[int, bytes]:
@@ -321,8 +361,12 @@ def check_record(i: int, r: object, labels: set[str], inv_keys: set[str], today:
         links = []
     for j, link in enumerate(links):
         lw = f"{where}: free_full_text[{j}]"
-        if not isinstance(link, dict) or list(link.keys()) != LINK_KEYS:
-            probs.append(f"{lw}: keys must be {LINK_KEYS}")
+        keys = list(link.keys()) if isinstance(link, dict) else None
+        if keys not in (LINK_KEYS, LINK_DEAD_KEYS, LINK_ARCHIVE_KEYS):
+            probs.append(
+                f"{lw}: keys must be {LINK_KEYS}, optionally with a trailing dead_since, "
+                f"or with archive_url/archive_date/dead_since (R-WAYBACK)"
+            )
             continue
         if not is_url(link["url"]):
             probs.append(f"{lw}: url must be https")
@@ -337,6 +381,17 @@ def check_record(i: int, r: object, labels: set[str], inv_keys: set[str], today:
         for fld in ("oa_type", "located_via"):
             if not isinstance(link[fld], str) or not link[fld].strip():
                 probs.append(f"{lw}: {fld} missing")
+        if "dead_since" in link and not plain_date_ok(link["dead_since"], today):
+            probs.append(f"{lw}: dead_since must be a plain ISO date, not in the future")
+        if "archive_url" in link:
+            au = link["archive_url"]
+            m = WAYBACK_RE.match(au) if isinstance(au, str) else None
+            if not m:
+                probs.append(f"{lw}: archive_url must be a https://web.archive.org/web/<timestamp>/<url> link")
+            elif is_url(link.get("url")) and norm_url(m.group(2)) != norm_url(link["url"]):
+                probs.append(f"{lw}: archive_url does not embed url")
+            if not plain_date_ok(link.get("archive_date"), today):
+                probs.append(f"{lw}: archive_date must be a plain ISO date, not in the future")
     publisher_free = any(
         isinstance(l, dict) and re.match(r"(gold|diamond|hybrid|bronze|conference open-access)", str(l.get("oa_type")))
         for l in links
@@ -642,14 +697,127 @@ def load(path: Path) -> tuple[list | None, str | None]:
     return data, None
 
 
+def _base_record() -> dict:
+    """A minimal, otherwise-valid record for the free_full_text selftest below."""
+    return {
+        "id": "doi:10.1000/xyz123",
+        "label": "paper-example-2026a",
+        "title": "Example title",
+        "title_display": "Example title",
+        "authors": ["A. Example"],
+        "year": 2026,
+        "venue": "Example Venue",
+        "venue_series": "Example Venue",
+        "venue_type": "journal",
+        "volume": None,
+        "issue": None,
+        "pages": None,
+        "article_number": None,
+        "doi": "10.1000/xyz123",
+        "landing_url": "https://doi.org/10.1000/xyz123",
+        "arxiv": None,
+        "paywalled": True,
+        "free_full_text": [],
+        "topics": ["pdk-models"],
+        "basis": "named-process",
+        "institutions": ["Example University"],
+        "fabrication": None,
+        "related_docs": [],
+        "inventory_key": None,
+        "discovery": ["test"],
+        "notes": None,
+        "verified": "2026-01-01 test",
+    }
+
+
+def selftest() -> int:
+    """Offline unit tests for the R-WAYBACK free_full_text schema (dead_since /
+    archive_url / archive_date). Touches no files, makes no network request."""
+    problems: list[str] = []
+
+    def fail(msg: str) -> None:
+        problems.append(msg)
+
+    today = dt.date(2026, 9, 25)
+    labels: set[str] = set()
+    inv_keys: set[str] = set()
+
+    def probs_for(link: dict) -> list[str]:
+        r = _base_record()
+        r["free_full_text"] = [link]
+        return check_record(0, r, labels, inv_keys, today)
+
+    plain = {
+        "url": "https://www.osti.gov/servlets/purl/1", "host": "www.osti.gov",
+        "oa_type": "repository copy (OSTI)", "located_via": "OSTI API", "checked": "2026-09-14 HTTP 200",
+    }
+    if probs_for(plain):
+        fail(f"a plain (pre-existing-shape) free_full_text link was rejected: {probs_for(plain)}")
+
+    dead = dict(plain, dead_since="2026-09-25")
+    if probs_for(dead):
+        fail(f"a link with only dead_since (no snapshot found, rule 11) was rejected: {probs_for(dead)}")
+
+    dead_future = dict(plain, dead_since="2099-01-01")
+    if not probs_for(dead_future):
+        fail("a dead_since date in the future was not rejected")
+
+    archived = dict(
+        plain,
+        archive_url="https://web.archive.org/web/20260830000000/https://www.osti.gov/servlets/purl/1",
+        archive_date="2026-08-30",
+        dead_since="2026-09-25",
+    )
+    if probs_for(archived):
+        fail(f"a correctly-embedding archive_url/archive_date/dead_since link was rejected: {probs_for(archived)}")
+
+    wrong_embed = dict(
+        plain,
+        archive_url="https://web.archive.org/web/20260830000000/https://example.org/somewhere-else",
+        archive_date="2026-08-30",
+        dead_since="2026-09-25",
+    )
+    if not probs_for(wrong_embed):
+        fail("an archive_url that does not embed the link's own url was not rejected")
+
+    bad_shape = dict(
+        plain,
+        archive_url="https://web.archive.org/web/2026/https://www.osti.gov/servlets/purl/1",
+        archive_date="2026-08-30",
+        dead_since="2026-09-25",
+    )
+    if not probs_for(bad_shape):
+        fail("a malformed (non-14-digit timestamp) archive_url was not rejected")
+
+    missing_archive_date = {k: v for k, v in archived.items() if k != "archive_date"}
+    if not probs_for(missing_archive_date):
+        fail("archive_url without archive_date was not rejected (keys must match one of the three fixed shapes)")
+
+    extra_key = dict(plain, made_up_field="x")
+    if not probs_for(extra_key):
+        fail("an unrecognised extra key on a free_full_text link was not rejected")
+
+    if problems:
+        for p in problems:
+            print("SELFTEST FAIL:", p)
+        print(f"{len(problems)} selftest problem(s)")
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--selftest", action="store_true", help="run offline unit tests and exit")
     ap.add_argument("--online", action="store_true", help="re-verify metadata and quotes over the network")
     ap.add_argument("--links", action="store_true", help="re-fetch free full-text links")
     ap.add_argument("--file", type=Path, default=DATA)
     ap.add_argument("--excluded", type=Path, default=EXCLUDED)
     ap.add_argument("--labels", type=Path, default=LABELS)
     args = ap.parse_args()
+
+    if args.selftest:
+        return selftest()
 
     data, err = load(args.file)
     if err:

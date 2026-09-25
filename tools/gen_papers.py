@@ -205,6 +205,27 @@ def checked_text(r: dict) -> str:
     return f"{date} against {src}"
 
 
+def free_copy_text(c: dict, base_text: str) -> str:
+    """Render one ``free_full_text`` entry, honouring R-WAYBACK's archive-first
+    citation form (``archive_url`` present -- archive URL first, original in
+    backticks, "dead since", "Wayback Machine capture of YYYY-MM-DD") or a
+    plain dead notice (``dead_since`` only, no snapshot found anywhere -- rule
+    11 of ``docs/plans/agent-briefs.md``). ``base_text`` (the pre-existing
+    rendering) is used unchanged for a copy that is neither."""
+    if c.get("archive_url"):
+        return (
+            f"{link(host_name(c['url']), c['archive_url'])} "
+            f"(Wayback Machine capture of {c['archive_date']}) — {esc(c['oa_type'])}; "
+            f"original dead since {c['dead_since']}: `{c['url']}`"
+        )
+    if c.get("dead_since"):
+        return (
+            f"{esc(host_name(c['url']))} copy, `{c['url']}` — {esc(c['oa_type'])}; no longer retrievable "
+            f"as of {c['dead_since']} (no Wayback or archive.today copy found)"
+        )
+    return base_text
+
+
 def entry(r: dict) -> list[str]:
     out = [f"({r['label']})=", f"### {esc(r['title_display'])}", "", citation(r), ""]
     is_arxiv_only = bool(r.get("arxiv")) and r["landing_url"] == r["arxiv"]["url"]
@@ -223,11 +244,11 @@ def entry(r: dict) -> list[str]:
     for c in r["free_full_text"]:
         if r.get("arxiv") and c["url"] == r["arxiv"]["url"]:
             if not is_arxiv_only:
-                copies.append(f"arXiv preprint — {esc(c['oa_type'])}")
+                copies.append(free_copy_text(c, f"arXiv preprint — {esc(c['oa_type'])}"))
         elif c["url"] == r["landing_url"]:
-            copies.append(f"the {esc(host_name(c['url']))} page above — {esc(c['oa_type'])}")
+            copies.append(free_copy_text(c, f"the {esc(host_name(c['url']))} page above — {esc(c['oa_type'])}"))
         else:
-            copies.append(f"{link(host_name(c['url']), c['url'])} — {esc(c['oa_type'])}")
+            copies.append(free_copy_text(c, f"{link(host_name(c['url']), c['url'])} — {esc(c['oa_type'])}"))
     if copies:
         out.append("* **Free copies:** " + "; ".join(copies))
     elif not is_arxiv_only:

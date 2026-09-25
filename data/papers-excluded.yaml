@@ -1813,9 +1813,12 @@
   venue: Zenodo (CERN European Organization for Nuclear Research)
   status: excluded
   names_process: true
-  reason: Self-published Zenodo article; verifies its multi-terminal device concept only "in SPICE DC
-    sweep simulation using SkyWater 130 nm compatible LEVEL=1 MOSFET models" (generic compatible models,
-    not fabricated devices), and reports a filed provisional patent rather than measured silicon.
+  reason: Self-published Zenodo article; verifies its multi-terminal device concept only in a SPICE
+    DC-sweep simulation said to use SkyWater 130 nm-compatible LEVEL=1 MOSFET models (generic compatible
+    models, not fabricated devices), and reports a filed provisional patent rather than measured silicon.
+    No longer retrievable as of 2026-09-25 (confirmed dead on both the 2026-09-20 and 2026-09-25 checks);
+    no Wayback or archive.today snapshot found anywhere; evidence for this description is now weak,
+    resting only on the record as it read before it went offline.
   decided: '2026-09-19'
 - id: doi:10.5281/zenodo.18821107
   title: Advancements in Open Source RTL-to-GDSII Toolchains and the Integration of Artificial Intelligence
@@ -1839,8 +1842,10 @@
   status: excluded
   names_process: true
   reason: Self-published Zenodo EDA-methodology article; evaluates an LLM timing-closure flow on OpenROAD
-    benchmark designs "using the SkyWater 130nm PDK", measuring only synthesis/STA metrics (WNS), with
-    no fabrication.
+    benchmark designs said to use the SkyWater 130nm PDK, measuring only synthesis/STA metrics (WNS),
+    with no fabrication. No longer retrievable as of 2026-09-25 (confirmed dead on both the 2026-09-20
+    and 2026-09-25 checks); no Wayback or archive.today snapshot found anywhere; evidence for this
+    description is now weak, resting only on the record as it read before it went offline.
   decided: '2026-09-19'
 - id: doi:10.5281/zenodo.18008574
   title: Silicon-Proven Learning With OpenPDKs and MPW Access for IC Education

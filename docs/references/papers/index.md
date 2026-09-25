@@ -156,7 +156,7 @@ Emilio Isaac Baungarten-Leon, Susana Ortega Cisneros, Mohamed Abdelmoneum, Ruth 
 F. Beall, A. Rimal, O. Seidel, Y. Mei, A. D. McDonald, I. Parmaksiz, V. A. Chirayath, J. Asaadi, D. Braga and J. B. R. Battat. "DC Cryogenic Modeling of Open-Source SkyWater 130 nm MOSFETs at 77 K Using BSIM4." *arXiv*, 2026.
 
 * **Publication:** arXiv [2604.21625](https://arxiv.org/abs/2604.21625) (preprint, free)
-* **Free copies:** [OSTI](https://www.osti.gov/servlets/purl/3363571) — repository copy (OSTI)
+* **Free copies:** OSTI copy, `https://www.osti.gov/servlets/purl/3363571` — repository copy (OSTI); no longer retrievable as of 2026-09-25 (no Wayback or archive.today copy found)
 * **Basis:** process named (see {ref}`Scope <papers-scope>`).
 * **Topics:** {ref}`Cryogenic operation <papers-topic-cryogenic>`, {ref}`PDK models and parameter extraction <papers-topic-pdk-models>`, {ref}`Device characterisation <papers-topic-device-characterisation>`
 * **Institutions:** University of Texas at Arlington; Rice University; Fermi National Accelerator Laboratory; Wellesley College
