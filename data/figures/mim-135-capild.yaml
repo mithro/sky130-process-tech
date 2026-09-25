@@ -20,9 +20,9 @@ caption: >-
   is not public: the stack diagram gives none,[^pdk-04] and 18–33 nm is the page's own
   arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an assumed permittivity. It is drawn much
   thicker in proportion than that, and metal 3 is not drawn to scale either. Which refractory
-  film caps metal 3, TiW or TiN, is not public (the overview of the metal cap sets out the
+  film caps metal 3, TiW or Ti/TiN, is not public (the overview of the metal cap sets out the
   evidence); the figure draws every Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the
-  stack is drawn but not labelled. Not to scale.
+  stack are drawn but not labelled. Not to scale.
 arrow:
   title: "CAPILD, step 135"
   note: "A thin dielectric is deposited by PECVD over the whole blanket metal stack, before the metal is patterned."
@@ -30,9 +30,13 @@ panels:
   - state_after: "134"
     title: "Before: the blanket metal-3 stack (step 134)"
     hide_layers: [pwell, nchi]
+    labels:
+      m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
     hide_labels: &hl [m3bot, ncap4, nild4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
   - state_after: "135"
     title: "After: the capacitor dielectric over the whole wafer"
     hide_layers: [pwell, nchi]
+    labels:
+      m3cap: {title: "Metal cap film", note: ""}
     hide_labels: *hl
     highlight: {where: [[0, 268]]}

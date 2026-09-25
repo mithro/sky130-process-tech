@@ -23,7 +23,8 @@ caption: >-
   thicker than the metal cap and than the dielectric, but none of the films is drawn to scale.
   Which refractory film caps metal 3 is not public (the overview of the metal cap); the figure
   draws the plate, the cap and every other Ti, TiN and TiW film in one colour. The two oxides and
-  the bottom film of the stack are drawn but not labelled. Not to scale.
+  the bottom film of the stack are drawn but not labelled, nor, in the upper panel, is the
+  aluminium–copper. Not to scale.
 arrow:
   title: "CAPTIW1, step 136"
   note: "A thin conductor film for the top plate is sputtered over the whole dielectric."
@@ -31,9 +32,13 @@ panels:
   - state_after: "135"
     title: "Before: the dielectric on the blanket metal (step 135)"
     hide_layers: [pwell, nchi]
+    labels:
+      m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
     hide_labels: [m3al, m3bot, ncap4, nild4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
   - state_after: "136"
     title: "After: the top-plate film over the whole wafer"
     hide_layers: [pwell, nchi]
+    labels:
+      m3cap: {title: "Metal cap film", note: ""}
     hide_labels: [m3bot, ncap4, nild4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
     highlight: {where: [[0, 268]]}

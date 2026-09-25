@@ -5,7 +5,7 @@ series: series-beol.yaml
 close_up: [76, 176]
 close_up_name: "part of the metal-4 level"
 routes: {m4bot: right, m4al: right, m4cap: right, ncap5: right}
-crop_depth: -675
+crop_depth: -670
 alt: >-
   Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a flat
   pale oxide carries a blanket of three metal films, a thick silver one between two thin purple
@@ -30,9 +30,13 @@ panels:
   - state_after: "149"
     title: "Before: the blanket metal-4 stack (step 149)"
     hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
     hide_labels: &hl [m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
   - state_after: "150"
     title: "After: the second dielectric over the whole wafer"
     hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: ""}
     hide_labels: *hl
     highlight: {where: [[0, 268]]}

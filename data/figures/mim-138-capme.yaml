@@ -17,11 +17,12 @@ caption: >-
   blanket plate film; after, the plate etched away outside the resist, stopping on the thin
   dielectric, which is left on the whole blanket metal-3 stack, and the resist stripped (the
   page treats the strip and clean as part of this step). Whether the etch stops on the
-  dielectric or cuts through it is not public; the page describes the stop, while the PDK's
+  dielectric or cuts through it is not public; the page reads the stop as the more plausible (inference), while the PDK's
   schematic cross-section draws the dielectric only under the plate.[^pdk-07] Any small loss
   into the dielectric is not drawn, and the plate edge is drawn vertical. The plate (of the
   order of 0.1 µm, the page's reading), the dielectric and the metal are not drawn to scale. The
-  two oxides and the bottom film of the metal stack are drawn but not labelled. Not to scale.
+  two oxides and the bottom film of the metal stack are drawn but not labelled, nor, in the upper panel, is the
+  aluminium–copper. Not to scale.
 arrow:
   title: "CAPME, step 138"
   note: "A plasma etches the plate film outside the resist and stops on the dielectric; the resist is stripped."
@@ -29,11 +30,13 @@ panels:
   - state_after: "137"
     title: "Before: the resist block on the plate film (step 137)"
     hide_layers: [pwell, nchi]
+    labels:
+      m3cap: {title: "Metal cap film", note: ""}
     hide_labels: [m3al, m3bot, ncap4, nild4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
   - state_after: "138"
     title: "After: a top plate on the dielectric"
     hide_layers: [pwell, nchi]
+    labels:
+      m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
     hide_labels: [m3bot, ncap4, nild4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
     highlight: {where: [[0, 130]]}
-    labels:
-      m3cap: {title: "Cap film", note: "TiW or Ti/TiN — see the overview"}

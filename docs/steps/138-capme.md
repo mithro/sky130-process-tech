@@ -22,14 +22,6 @@ leaving TiW only where the layout draws `capm`, "MiM capacitor plate
 over metal 3".[^pdk-06] The resist is then stripped; this reference
 treats the strip and post-etch clean as part of this step.
 
-:::{figure} /_static/figures/mim-138-capme.svg
-:alt: Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a violet resist block stands on a purple film over the right-hand part of the width. After it the resist is gone and the purple film remains only where the resist was, as a raised plate with a vertical edge; to its left the very thin striped film is bare on the blanket metal stack.
-:width: 560px
-:name: fig-mim-138-capme
-
-A close-up of the left edge of a capacitor top plate; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 3. Before, the resist block on the blanket plate film; after, the plate etched away outside the resist, stopping on the thin dielectric, which is left on the whole blanket metal-3 stack, and the resist stripped (the page treats the strip and clean as part of this step). Whether the etch stops on the dielectric or cuts through it is not public; the page describes the stop, while the PDK's schematic cross-section draws the dielectric only under the plate.[^pdk-07] Any small loss into the dielectric is not drawn, and the plate edge is drawn vertical. The plate (of the order of 0.1 µm, the page's reading), the dielectric and the metal are not drawn to scale. The two oxides and the bottom film of the metal stack are drawn but not labelled. Not to scale.
-:::
-
 What makes this etch unlike any other in the process is what lies
 under the film being removed. Beneath the TiW is a dielectric some
 20–30 nm thick (our estimate at {ref}`CAPILD <step-135>`), and beneath

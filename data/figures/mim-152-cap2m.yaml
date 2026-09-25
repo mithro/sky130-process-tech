@@ -5,7 +5,7 @@ series: series-beol.yaml
 close_up: [76, 176]
 close_up_name: "part of the metal-4 level"
 routes: {m4bot: right, m4al: right, m4cap: right, ncap5: right}
-crop_depth: -675
+crop_depth: -670
 alt: >-
   Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a
   purple film lies on a very thin striped film over a blanket metal stack. After it a violet
@@ -21,7 +21,8 @@ caption: >-
   space[^pdk-03] (inference). Where the plate edge falls is an illustrative choice, and neither
   the plate nor the resist is drawn to scale; the dielectric, some 20–30 nm on the estimate of
   the CAPILD2 page, and the plate film are drawn thicker in proportion than they are. The two
-  oxides and the bottom film of the metal stack are drawn but not labelled. Not to scale.
+  oxides and the bottom film of the metal stack are drawn but not labelled, nor, in the upper panel, is the
+  aluminium–copper. Not to scale.
 arrow:
   title: "CAP2M, step 152"
   note: "Resist is coated, exposed and developed, leaving it only where a top plate is to remain."
@@ -29,9 +30,13 @@ panels:
   - state_after: "151"
     title: "Before: the blanket top-plate film (step 151)"
     hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
     hide_labels: [m4al, m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
   - state_after: "152"
     title: "After: a resist block over the future plate"
     hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: ""}
     hide_labels: [m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
     highlight: {where: [[130, 268]]}
