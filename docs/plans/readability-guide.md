@@ -844,15 +844,24 @@ numbers and ≥ 2 semicolons) and `measure4.py` (blocks citing ≥ 3 design-rule
 #### R-DERIVATION — arithmetic buried in prose
 *(report A F5)*
 
-**Applies when** a passage performs two or more arithmetic operations, or takes two or more inputs to
-reach a number; or contains "our arithmetic", "our extraction", an inline `=` chain or "≈".
+**Applies when** a passage writes out at least one arithmetic operation (`−`, `+`, `×`, `÷`, `=`) and
+either performs two or more of them or takes two or more inputs to reach a number; or contains "our
+arithmetic", an inline `=` chain or "≈" with an operation shown. Not when the page only names its
+inputs and states a result with no operation shown, even if it also says "our extraction" or takes
+"two or more inputs" in prose — that is a reading or a model inversion, not a derivation, and
+forcing it into this template invents working the page never showed (see 001-smat.md's
+body-doping estimate, where "step 1" had no operation at all). A derivation in `## Open questions`
+is never moved out of that H2 (see R-PARA step 4 instead: it stays there as sub-bullets, one per
+indirect figure).
 
 **Do.**
 1. Give it an H3: `### How <the quantity> is estimated`.
 2. Input table first: one row per input, each with its own footnote marker and the source's own wording
    for the quantity.
 3. Numbered list: **one operation per line**, the arithmetic written out, the result of that line in
-   bold.
+   bold. A reason line (a line with no operation, only a comparison or a judgement, such as the
+   trench-depth example's step 3) uses the page's own comparison, word for word where possible —
+   never a new comparison the page did not make.
 4. A bold result line.
 5. Then every hedge the original carried, word for word, in the original order.
 6. A single-operation estimate stays inline as its own sentence — no table.
