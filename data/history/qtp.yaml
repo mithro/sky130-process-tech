@@ -4631,3 +4631,270 @@ documents:
     of R30 technology", their spelling). All three readings are quoted verbatim above rather than
     reconciled; this document also records a known ESD-HBM failure below Cypress''s own 2,200V standard,
     with a stated corrective transfer of the product family to R42 technology in Q2 1998.'
+- id: qtp-024903
+  origin: cypress
+  doc_type: QTP
+  number: '024903'
+  cypress_document_number: null
+  title: Synchronous SRAM Family, Technology Derivative R7FT-3R, Fab4
+  version: '4.0'
+  date_printed: January 2005
+  url: https://www.cypress.com/file/91731/download
+  archive_url: https://web.archive.org/web/20210302233052/https://www.cypress.com/file/91731/download
+  retrieved: '2026-09-25'
+  sha256: 13b98405fa4bc35d1c3e4fef7a77b0064284b27a82d4ce627e0470456a8fde77
+  technology_codes:
+  - R7FT-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1354B
+  - CY7C1354BV25
+  - CG6306BF
+  - CY7C1356B
+  - CY7C1356BV25
+  - CY7C1355B
+  - CY7C1357B
+  - CY7C1360B
+  - CY7C1361B
+  - CY7C1362B
+  - CY7C1363B
+  - CY7C1366B
+  - CY7C1367B
+  die_ids:
+  - 7C13562B
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW; Metal 2: 150Å Ti /4,200 Å Al / 300Å TiW;
+      Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW'
+    passivation: 1000Å TEOS / 9000Å PECVD Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Triple Metal /0.15 µm
+    gate_oxide: SiO2, 32Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R7FT-3R
+    transistors: 60 million
+    gates: 20 million
+  qualification_history:
+  - number: '014807'
+    description: New Technology Derivative R7FT-3R / Synchronous Dual-Port RAM CY7C0852V, product family
+      and package option.
+    date: Feb 02
+  - number: '012502'
+    description: Device CY7C1360B and CY7C1354BV25 in Technology Derivative R7FT-3R, Fab 4
+    date: Apr 02
+  - number: '022610'
+    description: Metal Mask change to enhance functionality to CY7C1360B/CY7C1361b/CY7C1366B
+    date: Oct 02
+  - number: '024605'
+    description: New device CY7C1354B
+    date: Dec 02
+  - number: '024903'
+    description: New device CY7C1356BV25, CY7C1356B and all the others of CY7C136*B RAM7
+    date: Dec 02
+  - number: '042305'
+    description: R7FT-3R, 9 Meg Mask Fix for Glitch
+    date: Jul 04
+  quotes:
+  - text: New Technology Derivative R7FT-3R / Synchronous Dual-Port RAM CY7C0852V, product family and package
+      option.
+    location: p.2, Product Qualification History, row 014807
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R7FT-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Triple Metal /0.15 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This report independently repeats R7FT-3R's origin row (QTP 014807, Feb 02) already in this corpus
+    as qtp-014807, and adds five later history rows through Jul 04 not previously recorded. Process figures
+    (3 metal layers, 0.15 µm, 32 Å gate oxide) agree with qtp-014807.
+- id: qtp-098115
+  origin: cypress
+  doc_type: QTP
+  number: '98115'
+  cypress_document_number: null
+  title: 1 Meg SRAM, R42HD Technology (5V operation)
+  version: '1.0'
+  date_printed: July, 1998
+  url: https://www.cypress.com/file/93971/download
+  archive_url: https://web.archive.org/web/20211130182828/https://www.cypress.com/file/93971/download
+  retrieved: '2026-09-25'
+  sha256: 68a093d370f7108337d1925b1d84b2e80535cd7883ba36967bce46f36fd9d199
+  technology_codes:
+  - R42HD
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1021
+  - CY7C1019
+  die_ids:
+  - 7C1021A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R4HD
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98115'
+    description: Qualify 1Meg SRAM in qualified technology R42HD
+    date: null
+  quotes:
+  - text: Qualify 1Meg SRAM in qualified technology R42HD
+    location: p.2, Product Description, Qualification Purpose
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R4HD'
+    location: p.2, Technology/Fab Process Description
+  - text: QTP 98248, 4 Meg SRAM, R42HD, Fab 4 qualification.
+    location: p.7, footnote 1
+  notes: 'Die Fab Line ID here is printed "Fab4/R4HD" (dropping the "2" from R42HD) even though the title,
+    running headers and process-description section header all say "R42HD" -- quoted verbatim rather than
+    corrected. References two earlier R42HD qualifications not independently retrieved in this corpus:
+    "QTP 98064" (1 Meg SRAM, cited in the Reliability Failure Rate Summary) and "QTP 98248" (4 Meg SRAM,
+    footnote 1). Design rule 0.42 µm matches this corpus''s other R42HD reports.'
+- id: qtp-097201
+  origin: cypress
+  doc_type: QTP
+  number: '97201'
+  cypress_document_number: null
+  title: 1 Meg SRAM, R32D Technology, Fab 4 Qualification
+  version: '2.0'
+  date_printed: February, 1998
+  url: https://www.cypress.com/file/93716/download
+  archive_url: https://web.archive.org/web/20211021091010/https://www.cypress.com/file/93716/download
+  retrieved: '2026-09-25'
+  sha256: c91733dfa90a7e31f0e7918908615cf862b24cd0f03a4683bbf8eea23a535a11
+  technology_codes:
+  - R32D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C109
+  - CY7C1009
+  - CY7C109V33
+  - CY7C1009V33
+  die_ids:
+  - 7C109A
+  - 7C1309A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Al-Cu/TiW; Metal 2: TiW/Al-Cu/TiW'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Local Interconnect, Double Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32D
+    transistors: 6,489,591
+    gates: 1,622,397
+  qualification_history:
+  - number: '97201'
+    description: 128K x 8 Static RAM, R32D Technology
+    date: null
+  quotes:
+  - text: 128K x 8 Static RAM, R32D Technology
+    location: p.2, Product Description, Device Description
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32D'
+    location: p.2, Technology/Fab Process Description
+  - text: QTP 97118, 512K x 8 SRAM, R32D Technology, Fab 4 qualification
+    location: p.7, footnote 1
+  notes: The Technology/Fab Process Description section header here reads "TECHNOLOGY/FAB PROCESS
+    DESCRIPTION - R32" (dropping the D) even though the title, device description and Die Fab Line ID all
+    say "R32D" -- quoted verbatim. References "QTP 97118, 512K x 8 SRAM, R32D Technology, Fab 4
+    qualification" as its reliability baseline; see qtp-097118 (this session) for that report itself. This
+    2-metal-layer, 0.5 µm R32D is a distinct, later process from the 1-metal-layer, 0.5 µm "R32" recorded
+    in qtp-097195 (this session) for the same die fab (Fab 4).
+- id: qtp-097517
+  origin: cypress
+  doc_type: QTP
+  number: '97517'
+  cypress_document_number: null
+  title: 1/2 Meg SRAM, R42D Technology, Fab 4 Qualification
+  version: '1.0'
+  date_printed: August, 1998
+  url: https://www.cypress.com/file/93496/download
+  archive_url: https://web.archive.org/web/20210506115548/https://www.cypress.com/file/93496/download
+  retrieved: '2026-09-25'
+  sha256: 37d1897e5b89694ca7d97a4e9618bbe4544ddc401fdd6b4c3dbcb0a8e79c4a12
+  technology_codes:
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1020V
+  - CY7C1022V
+  die_ids:
+  - 7C1320B
+  - 7C1322B
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiW,AlCu,TiW/500Å,6000Å,1200Å; Metal 2: TiW,AlCu,TiW/500Å,8000Å,300Å'
+    passivation: 3000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.35 µm
+    gate_oxide: SiO2 / 70 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42D
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '97517'
+    description: 1/2 Meg SRAM, R42D Technology, Fab 4 Qualification
+    date: null
+  quotes:
+  - text: 1/2 Meg SRAM, R42D Technology, Fab 4 Qualification
+    location: p.1, cover title
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42D'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.35 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R42D here (0.35 µm, 70 Å gate oxide, Fab4/R42D) matches the R42D figures already established in
+    this corpus. Its reliability test data reuses data attributed to "QTP 97396" (CY7C1049V33/CY7C1041V33
+    devices, page 7); see qtp-097396 (this session) for that report itself.
+- id: qtp-097195
+  origin: cypress
+  doc_type: QTP
+  number: '97195'
+  cypress_document_number: null
+  title: 128K x 8 SRAM - R32 Technology - Fab4 Qualification
+  version: '2.0'
+  date_printed: July, 2003
+  url: http://www.cypress.com:80/file/93711/download
+  archive_url: https://web.archive.org/web/20180711105406/http://www.cypress.com:80/file/93711/download
+  retrieved: '2026-09-25'
+  sha256: 75d13035a10b57c2592b9f4a89a1fc5b9cb5b9ab20c69e62a6cf6b5cf185521c
+  technology_codes:
+  - R32
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62128
+  - CY62128V
+  die_ids:
+  - 7C1128
+  - 7C1129
+  process_description:
+    number_of_metal_layers: 1
+    metal_composition: 'Metal 1: TiW/Al, 500Å/8,000Å'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Local Interconnect, Single Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32
+    transistors: 6,655,000
+    gates: 2,200,000 (Logic Gates)
+  qualification_history:
+  - number: '97195'
+    description: 128K x 8 SRAM - R32 Technology - Fab4 Qualification
+    date: null
+  quotes:
+  - text: 128K x 8 SRAM - R32 Technology - Fab4 Qualification
+    location: p.1, cover title
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32'
+    location: p.2, Technology/Fab Process Description
+  - text: CMOS, Single Local Interconnect, Single Metal /0.5 µm
+    location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R32 (single metal layer) is distinct from R32D (double metal layer, qtp-097201, this session).
+    Both are printed as 0.5 µm/145 Å gate oxide at the same die fab (Fab 4), but R32's own Die Fab Line ID
+    drops the "D" that R32D's carries, and R32's process description prints only one metal layer against
+    R32D's two -- read together, R32D appears to be a dual-metal derivative of single-metal R32, not a
+    misprint of the same process.
