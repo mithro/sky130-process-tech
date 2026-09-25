@@ -87,7 +87,7 @@ def duplicates(steps: list[str]) -> list[str]:
     return sorted({s for s in steps if steps.count(s) > 1})
 
 
-def index_rows_from_lines(lines: list[str]) -> dict[str, str]:
+def index_rows_from_lines(lines: list[str]) -> tuple[dict[str, str], set[str]]:
     """Map a machine label to the Steps cell of its main-table row.
 
     A matching line is any ``| `` row whose first cell links a
@@ -95,23 +95,33 @@ def index_rows_from_lines(lines: list[str]) -> dict[str, str]:
     the column count in between (report-B B2: the index may shrink from
     the current four columns to just ``Machine class | Steps``, moving
     the descriptive columns to cards). At least two cells are required,
-    so a one-column line cannot be mistaken for a row. As before, the
-    **last** matching line wins, so a differently-shaped table placed
-    after the main one can still silently override a checked row —
-    see R-INDEX rule 4 in readability-guide.md.
+    so a one-column line cannot be mistaken for a row.
+
+    Returns ``(rows, duplicates)``: ``rows`` maps each label to its
+    **last** matching line's Steps cell (kept so a caller can still see
+    a value), and ``duplicates`` names every label that was the first
+    cell of more than one matching line (review L2: widening the match
+    to any width >= 2 also widened the "a later differently-shaped table
+    silently overrides a checked row" hazard R-INDEX rule 4 already
+    documents, so this is now reported as a problem instead of silently
+    letting the last line win).
     """
-    rows = {}
+    rows: dict[str, str] = {}
+    duplicates: set[str] = set()
     for line in lines:
         if not line.startswith("| "):
             continue
         cells = line.split(" | ")
         m = re.search(r"<(machine-[a-z0-9-]+)>", cells[0])
         if m and len(cells) >= 2:
-            rows[m.group(1)] = cells[-1]
-    return rows
+            label = m.group(1)
+            if label in rows:
+                duplicates.add(label)
+            rows[label] = cells[-1]
+    return rows, duplicates
 
 
-def index_rows() -> dict[str, str]:
+def index_rows() -> tuple[dict[str, str], set[str]]:
     """Map a machine label to the Steps cell of its main-table row."""
     return index_rows_from_lines((MACHINES / "index.md").read_text().splitlines())
 
@@ -167,52 +177,105 @@ def selftest() -> int:
         "| {ref}`wet bench <machine-wet-bench>` | What it does | Tools | "
         "{ref}`NS19 <step-013>` |"
     ]
-    got = index_rows_from_lines(old)
-    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |":
-        problems.append(f"old 4-column form: {got!r}")
+    got, dup = index_rows_from_lines(old)
+    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |" or dup:
+        problems.append(f"old 4-column form: {got!r} dup={dup!r}")
 
     # 2. The new, two-column form (Machine class | Steps) is read the same
     #    way: first cell links the label, last cell is Steps.
     new = ["| {ref}`wet bench <machine-wet-bench>` | {ref}`NS19 <step-013>` |"]
-    got = index_rows_from_lines(new)
-    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |":
-        problems.append(f"new 2-column form: {got!r}")
+    got, dup = index_rows_from_lines(new)
+    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |" or dup:
+        problems.append(f"new 2-column form: {got!r} dup={dup!r}")
 
     # 3. A shape with columns in between (more than two, fewer than four)
     #    also works: only the position of the first and last cell matters.
     mid = ["| {ref}`wet bench <machine-wet-bench>` | grouping | "
            "{ref}`NS19 <step-013>` |"]
-    got = index_rows_from_lines(mid)
-    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |":
-        problems.append(f"3-column form: {got!r}")
+    got, dup = index_rows_from_lines(mid)
+    if got.get("machine-wet-bench") != "{ref}`NS19 <step-013>` |" or dup:
+        problems.append(f"3-column form: {got!r} dup={dup!r}")
 
     # 4. A one-column line (no room for a separate Steps cell) is not
     #    mistaken for a row.
     one = ["| {ref}`wet bench <machine-wet-bench>` |"]
-    got = index_rows_from_lines(one)
-    if got:
+    got, dup = index_rows_from_lines(one)
+    if got or dup:
         problems.append(f"a one-column line was wrongly read as a row: {got!r}")
 
-    # 5. The last matching line still wins, in both the old and new shapes.
+    # 5. A repeated label is reported as a duplicate (review L2), not
+    #    silently let the last line win, in both the old and new shapes;
+    #    the returned row still carries the *last* line's value (so a
+    #    caller printing it sees something, even though the page is now
+    #    flagged).
     two_old = [
         "| {ref}`wet bench <machine-wet-bench>` | a | b | {ref}`NS19 <step-013>` |",
         "| {ref}`wet bench <machine-wet-bench>` | a | b | {ref}`FOM <step-004>` |",
     ]
-    got = index_rows_from_lines(two_old)
-    if got.get("machine-wet-bench") != "{ref}`FOM <step-004>` |":
-        problems.append(f"last-line-wins (old shape): {got!r}")
+    got, dup = index_rows_from_lines(two_old)
+    if got.get("machine-wet-bench") != "{ref}`FOM <step-004>` |" or dup != {"machine-wet-bench"}:
+        problems.append(f"duplicate label (old shape): rows={got!r} dup={dup!r}")
     two_new = [
         "| {ref}`wet bench <machine-wet-bench>` | {ref}`NS19 <step-013>` |",
         "| {ref}`wet bench <machine-wet-bench>` | {ref}`FOM <step-004>` |",
     ]
-    got = index_rows_from_lines(two_new)
-    if got.get("machine-wet-bench") != "{ref}`FOM <step-004>` |":
-        problems.append(f"last-line-wins (new shape): {got!r}")
+    got, dup = index_rows_from_lines(two_new)
+    if got.get("machine-wet-bench") != "{ref}`FOM <step-004>` |" or dup != {"machine-wet-bench"}:
+        problems.append(f"duplicate label (new shape): rows={got!r} dup={dup!r}")
+    # A single matching line for a label is not a false-positive duplicate.
+    one_line = ["| {ref}`wet bench <machine-wet-bench>` | {ref}`NS19 <step-013>` |"]
+    _, dup = index_rows_from_lines(one_line)
+    if dup:
+        problems.append(f"a single matching line was wrongly flagged as a duplicate: {dup!r}")
 
     # 6. A line whose first cell links no machine label is not a row.
     unrelated = ["| Something else | {ref}`NS19 <step-013>` |"]
-    if index_rows_from_lines(unrelated):
+    got, dup = index_rows_from_lines(unrelated)
+    if got or dup:
         problems.append("a line with no machine link in its first cell was read as a row")
+
+    # 7. End-to-end through check() itself (review L6: the earlier tests
+    #    only exercised index_rows_from_lines), on a temporary page file:
+    #    a matching page/index pair reports nothing, and a "Steps not
+    #    last" index row -- a malformed row whose real Steps content sits
+    #    in an earlier cell, not the last one -- is caught as a mismatch
+    #    rather than silently accepted.
+    import tempfile
+
+    def page_text(paragraph: str) -> str:
+        return (
+            "(machine-x)=\n# X\n\n"
+            "## What the machine class is and how it works\n\ntext\n\n"
+            "## Representative 200 mm-era models\n\ntext\n\n"
+            "## At SkyWater\n\n"
+            "### What SkyWater lists\n\ntext\n\n"
+            "### Strength of the evidence\n\ntext\n\n"
+            f"### {STEPS_H3}\n\nIntro.\n\n{paragraph}\n\n"
+            "## Consumables and facilities\n\ntext\n\n"
+            "## Process-integration notes for SKY130\n\ntext\n\n"
+            "## Related pages\n\ntext\n\n"
+            "## References\n\n### Cross-check\n\ntext\n\n"
+            "### High-level understanding\n\ntext\n\n### Deep dive\n\ntext\n\n"
+            "## Open questions\n\ntext\n"
+        )
+
+    with tempfile.TemporaryDirectory() as tmp:
+        page_path = Path(tmp) / "x.md"
+        paragraph = "{ref}`NS19 <step-013>`, {ref}`FOM <step-004>`"
+        page_path.write_text(page_text(paragraph))
+        matching_row = {"machine-x": paragraph + " |"}
+        found = check(page_path, matching_row)
+        if found:
+            problems.append(f"a matching page/index pair was wrongly reported: {found}")
+
+        # A malformed index row: the real Steps content is in an earlier
+        # cell (as if a column were inserted), so the Steps cell -- always
+        # taken as the row's *last* cell -- is something else entirely,
+        # and the page/index comparison must catch the resulting mismatch.
+        steps_not_last_row = {"machine-x": "a different cell entirely |"}
+        found = check(page_path, steps_not_last_row)
+        if not found:
+            problems.append("a 'Steps not last' malformed index row was not caught as a mismatch")
 
     if problems:
         for p in problems:
@@ -226,9 +289,12 @@ def selftest() -> int:
 def main() -> int:
     if "--selftest" in sys.argv[1:]:
         return selftest()
-    rows = index_rows()
+    rows, dup_labels = index_rows()
     pages = sorted(p for p in MACHINES.glob("*.md") if p.name != "index.md")
     bad = 0
+    for label in sorted(dup_labels):
+        bad += 1
+        print(f"index.md: {label} is the first cell of more than one main-table row")
     for page in pages:
         for problem in check(page, rows):
             bad += 1
