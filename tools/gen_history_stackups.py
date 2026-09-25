@@ -49,9 +49,12 @@ MONTHS = {"Jan": "January", "Feb": "February", "Mar": "March", "Apr": "April", "
           "Nov": "November", "Dec": "December"}
 
 # Title misprints that the evidence notes identify, folded into the process they name.
-ALIASES = {"R7FTW-3R": "R7FT-3R"}
+ALIASES = {"R7FTW-3R": "R7FT-3R", "RAM42HHA": "RAM42", "RAM42HNHA": "RAM42", "RAM42HA": "RAM42"}
+# Reports that summarise several processes at once; their products are not assigned to one process.
+SUMMARY_REPORTS = {"qtp-i000006"}
 
 GROUPS = [
+    ("0.8 µm", 0.75, 0.85),
     ("0.65 µm", 0.6, 0.7),
     ("0.5 µm", 0.45, 0.55),
     ("0.42 µm and 0.35 µm", 0.33, 0.45),
@@ -128,9 +131,16 @@ def total(films: str) -> str:
         angstrom += v * (1000 if (m.group(2) or m.group(3)) else 1)
         found = True
     if not found:
+        # a list of bare numbers after the films: "(23/800/28nm)" in nm, "500/6000/300" in Å
+        m = re.search(r"\(?(\d[\d.]*(?:/\d[\d.]*)+)\s*(nm)?\)?", films)
+        if m:
+            unit = Decimal(10) if m.group(2) else Decimal(1)
+            angstrom = sum(Decimal(x) * unit for x in m.group(1).split("/"))
+            found = True
+    if not found:
         return "—"
     um = (angstrom / Decimal(10000)).quantize(Decimal("0.001"), rounding=ROUND_HALF_UP)
-    note = " (implausibly thin; probably misprinted)" if um < Decimal("0.1") else ""
+    note = " (implausibly thin for a metal layer; the report may omit a film or misprint a unit)" if um < Decimal("0.2") else ""
     return f"{um} µm{note}"
 
 
@@ -141,7 +151,7 @@ def rule_text(pd: dict) -> str:
     shown = cell(raw)
     if re.search(r"Private-Use-Area glyph", raw):
         shown += " (the report prints µ with a non-standard font glyph)"
-    elif re.search(r"micron sign", raw):
+    elif re.search(r"micron sign", raw) or re.search(r"\d\s*m\b", clean(raw)):
         shown += " (the µ is not printed in the report)"
     return shown
 
@@ -184,6 +194,10 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
 * **Reissues.** Some reports are reissues with the process block replaced by "Proprietary"; those are
   left out here. See {ref}`history-fabs` for how reissues rename sites.
 """)
+    placed = {d["id"] for d in usable for _n, lo, hi in GROUPS if lo <= rule_um(d["process_description"]) <= hi}
+    unplaced = sorted(d["id"] for d in usable if d["id"] not in placed)
+    if unplaced:
+        raise SystemExit(f"gen_history_stackups: no design-rule band for {unplaced}; add one to GROUPS")
     out.append("## Summary by design rule\n")
     for name, lo, hi in GROUPS:
         rows = [d for d in usable if lo <= rule_um(d["process_description"]) <= hi]
@@ -191,13 +205,13 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
             continue
         rows.sort(key=lambda d: (str((d.get("technology_codes") or [""])[0]), d["id"]))
         out.append(f"### {name}\n")
-        out.append("| Code | Fab as printed | Metal layers | Gate oxide | Report |")
-        out.append("|---|---|---|---|---|")
+        out.append("| Code and report | Fab as printed | Metal layers | Gate oxide |")
+        out.append("|---|---|---|---|")
         for d in rows:
             pd = d["process_description"]
-            out.append(f"| {cell((d.get('technology_codes') or ['—'])[0])} | {cell(pd.get('fab_location'))} | "
-                       f"{cell(pd.get('number_of_metal_layers'))} | {cell(pd.get('gate_oxide'))} | "
-                       f"QTP {d.get('number')}[^{label(d)}] |")
+            out.append(f"| {cell((d.get('technology_codes') or ['—'])[0])}, QTP {d.get('number')}[^{label(d)}] | "
+                       f"{cell(pd.get('fab_location'))} | {cell(pd.get('number_of_metal_layers'))} | "
+                       f"{cell(pd.get('gate_oxide'))} |")
             used.append(d)
         out.append("")
     out.append("## Film by film\n")
@@ -259,7 +273,7 @@ def build_products() -> str:
         if not codes or not prods:
             continue
         code = ALIASES.get(str(codes[0]), str(codes[0]))
-        if len(codes) > 3:
+        if d["id"] in SUMMARY_REPORTS:
             code = "several foundry processes (one summary report)"
         pd = d.get("process_description") if isinstance(d.get("process_description"), dict) else {}
         r = rows.setdefault(code, {"fabs": [], "products": [], "docs": [], "rules": []})

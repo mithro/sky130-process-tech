@@ -20,104 +20,131 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
 
 ## Summary by design rule
 
+### 0.8 µm
+
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| P20, QTP 91216[^qtp-091216] | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 195 Å |
+| P20, QTP 93332[^qtp-093332] | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 195 Å |
+
 ### 0.65 µm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å | QTP 000901[^qtp-000901] |
-| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å | QTP 004604[^qtp-004604] |
-| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 A | QTP 011503[^qtp-011503] |
-| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å | QTP 012204[^qtp-012204] |
-| L28 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 145 Å | QTP 031101[^qtp-031101] |
-| L28 | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å | QTP 080608[^qtp-080608] |
-| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 A | QTP 98333[^qtp-098333] |
-| L28 | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å | QTP 99285[^qtp-099285] |
-| L28 | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å | QTP 110605[^qtp-110605] |
-| L28EPD | Cypress Semiconductor – Round Rock, Texas | 2 | SiO2 / 145 Å | QTP 99034[^qtp-099034] |
-| P26 | Magnachip/Cheong-Ju-Korea | 3 | SiO2, 165Å | QTP 054605[^qtp-054605] |
-| P26 | Cypress Semiconductor – Round Rock, Tx (Fab2) | 2 | SiO2, 165Å | QTP 95075[^qtp-095075] |
-| P26 | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 165A | QTP 96411[^qtp-096411] |
-| P26 | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 165 Å | QTP 99092[^qtp-099092] |
-| R28 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 165 Å | QTP 95515[^qtp-095515] |
-| R28 | Cypress Semiconductor, Bloomington, MN | 2 | SiO2 / 165 A | QTP 96091[^qtp-096091] |
-| R28 | Cypress Semiconductor, Bloomington, MN | 2 | SiO2 / 165 A | QTP 96182[^qtp-096182] |
-| R28 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 165 Å | QTP 96361[^qtp-096361] |
-| R28 | Cypress Semiconductor -- Round Rock, TX | 2 | SiO2 / 165 Å | QTP 97476[^qtp-097476] |
-| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 98236[^qtp-098236] |
-| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 98252[^qtp-098252] |
-| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 98393[^qtp-098393] |
-| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 99083[^qtp-099083] |
-| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 99175[^qtp-099175] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| L28, QTP 000901[^qtp-000901] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å |
+| L28, QTP 004604[^qtp-004604] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å |
+| L28, QTP 011503[^qtp-011503] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 A |
+| L28, QTP 012204[^qtp-012204] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å |
+| L28, QTP 031101[^qtp-031101] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 145 Å |
+| L28, QTP 080608[^qtp-080608] | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å |
+| L28, QTP 98333[^qtp-098333] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 A |
+| L28, QTP 99285[^qtp-099285] | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å |
+| L28, QTP 110605[^qtp-110605] | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å |
+| L28EPD, QTP 99034[^qtp-099034] | Cypress Semiconductor – Round Rock, Texas | 2 | SiO2 / 145 Å |
+| P26, QTP 054605[^qtp-054605] | Magnachip/Cheong-Ju-Korea | 3 | SiO2, 165Å |
+| P26, QTP 95075[^qtp-095075] | Cypress Semiconductor – Round Rock, Tx (Fab2) | 2 | SiO2, 165Å |
+| P26, QTP 96411[^qtp-096411] | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 165A |
+| P26, QTP 99092[^qtp-099092] | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 165 Å |
+| R28, QTP 95515[^qtp-095515] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 165 Å |
+| R28, QTP 96091[^qtp-096091] | Cypress Semiconductor, Bloomington, MN | 2 | SiO2 / 165 A |
+| R28, QTP 96182[^qtp-096182] | Cypress Semiconductor, Bloomington, MN | 2 | SiO2 / 165 A |
+| R28, QTP 96361[^qtp-096361] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 165 Å |
+| R28, QTP 97476[^qtp-097476] | Cypress Semiconductor -- Round Rock, TX | 2 | SiO2 / 165 Å |
+| R28, QTP 98236[^qtp-098236] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
+| R28, QTP 98252[^qtp-098252] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
+| R28, QTP 98393[^qtp-098393] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
+| R28, QTP 99083[^qtp-099083] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
+| R28, QTP 99175[^qtp-099175] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å |
 
 ### 0.5 µm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| 0.5um TLM | Hyundai / Cheong Ju, Korea | 3 | SiO2 / 95 A | QTP 001004[^qtp-001004] |
-| R32 | Cypress Semiconductor - Bloomington, MN | 1 | SiO2 / 145Å | QTP 97132[^qtp-097132] |
-| R32D | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 145Å | QTP 98021[^qtp-098021] |
-| S4AD-5 | Cypress Semiconductor -- CTI Round Rock, TX | 2 | SiO2 / 110Å | QTP 021507[^qtp-021507] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| 0.5um TLM, QTP 001004[^qtp-001004] | Hyundai / Cheong Ju, Korea | 3 | SiO2 / 95 A |
+| R32, QTP 97132[^qtp-097132] | Cypress Semiconductor - Bloomington, MN | 1 | SiO2 / 145Å |
+| R32D, QTP 98021[^qtp-098021] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 145Å |
+| S4AD-5, QTP 021507[^qtp-021507] | Cypress Semiconductor -- CTI Round Rock, TX | 2 | SiO2 / 110Å |
 
 ### 0.42 µm and 0.35 µm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| CSM 0.35um | Chartered Semiconductor Singapore | 3 | SiO2 / 65Å | QTP I000005[^qtp-i000005] |
-| R42HD | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 110Å | QTP 98368[^qtp-098368] |
-| R42HD | Fab 4 / CMI - Bloomington, MN | 2 | SiO2 / 110Å | QTP 102101[^qtp-102101] |
-| R42LDHA | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 70Å | QTP 003907[^qtp-003907] |
-| RAM42HA | Cypress Semiconductor -- Bloomington, MN | 1 | SiO2 /70A | QTP 030204[^qtp-030204] |
-| RAM42HHA | Cypress Semiconductor -- Bloomington, MN | 1 | SiO2 /110A | QTP 030206[^qtp-030206] |
-| RAM42HNHA | Grace Semiconductor, Shanghai, China | 1 | SiO2 /110A | QTP 091302[^qtp-091302] |
-| S4AD-5 | GSMC/Shanghai-China | 2 | SiO2 / 110A | QTP 062509[^qtp-062509] |
-| S4AD-5 | HHGrace /Shanghai-China | 2 | SiO2 / 110A | QTP 151005[^qtp-151005] |
-| S4AD-5CTI | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 110A | QTP 051005[^qtp-051005] |
-| S4ADLatch | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 7A | QTP 042806[^qtp-042806] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| CSM 0.35um, QTP I000005[^qtp-i000005] | Chartered Semiconductor Singapore | 3 | SiO2 / 65Å |
+| R42HD, QTP 98368[^qtp-098368] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 110Å |
+| R42HD, QTP 102101[^qtp-102101] | Fab 4 / CMI - Bloomington, MN | 2 | SiO2 / 110Å |
+| R42LDHA, QTP 003907[^qtp-003907] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 70Å |
+| RAM42HA, QTP 030204[^qtp-030204] | Cypress Semiconductor -- Bloomington, MN | 1 | SiO2 /70A |
+| RAM42HHA, QTP 030206[^qtp-030206] | Cypress Semiconductor -- Bloomington, MN | 1 | SiO2 /110A |
+| RAM42HNHA, QTP 091302[^qtp-091302] | Grace Semiconductor, Shanghai, China | 1 | SiO2 /110A |
+| S4AD-5, QTP 062509[^qtp-062509] | GSMC/Shanghai-China | 2 | SiO2 / 110A |
+| S4AD-5, QTP 151005[^qtp-151005] | HHGrace /Shanghai-China | 2 | SiO2 / 110A |
+| S4AD-5CTI, QTP 051005[^qtp-051005] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 110A |
+| S4ADLatch, QTP 042806[^qtp-042806] | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 7A |
 
 ### 0.25 µm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| B53D-3RF | Cypress Minnesota, Fab4 | 2 | SiO2 / 55Å | QTP 032005[^qtp-032005] |
-| R52D-3 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 50 Å | QTP 99202[^qtp-099202] |
-| R52FFD-3 | Cypress Semiconductor – Bloomington, MN | 2 | SiO2 55Å | QTP 012705[^qtp-012705] |
-| R52LD-3 | Cypress Semiconductor – Bloomington Minnesota | 2 | 55Å | QTP 062201[^qtp-062201] |
-| R52T-3 | Cypress Semiconductor - Bloomington, MN | 3 | SiO2, 55Å | QTP 082506[^qtp-082506] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| B53D-3RF, QTP 032005[^qtp-032005] | Cypress Minnesota, Fab4 | 2 | SiO2 / 55Å |
+| R52D-3, QTP 99202[^qtp-099202] | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 50 Å |
+| R52FFD-3, QTP 012705[^qtp-012705] | Cypress Semiconductor – Bloomington, MN | 2 | SiO2 55Å |
+| R52LD-3, QTP 062201[^qtp-062201] | Cypress Semiconductor – Bloomington Minnesota | 2 | 55Å |
+| R52T-3, QTP 082506[^qtp-082506] | Cypress Semiconductor - Bloomington, MN | 3 | SiO2, 55Å |
 
 ### 0.21 µm to 0.15 µm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| B55SGT | Cypress Semiconductor – Bloomington, MN (CMI) | 3 | SiO2, 45Å | QTP 051101[^qtp-051101] |
-| PowerChip 0.165um | Powerchip Semiconductor Corp, HsinChu, Taiwan | 2 | SiO2 / 72A | QTP 051501[^qtp-051501] |
-| R7FD | Cypress Semiconductor -- Bloomington, MN | 2 | SiO2, 32Å | QTP 011908[^qtp-011908] |
-| R7FT-3R | Cypress Semiconductor -- Bloomington, MN | 3 | SiO2, 32Å | QTP 014807[^qtp-014807] |
-| R7FTW-3R | Cypress Semiconductor -- Bloomington Minnesota | 3 | SiO2 32Å | QTP 023101[^qtp-023101] |
-| R7LD-1.8 | Cypress Semiconductor -- Bloomington, MN | 2 | SiO2, 32Å | QTP 012801[^qtp-012801] |
-| S17 | Promos (Taiwan) | 2 | SiO2, 62Å | QTP 032301[^qtp-032301] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| B55SGT, QTP 051101[^qtp-051101] | Cypress Semiconductor – Bloomington, MN (CMI) | 3 | SiO2, 45Å |
+| PowerChip 0.165um, QTP 051501[^qtp-051501] | Powerchip Semiconductor Corp, HsinChu, Taiwan | 2 | SiO2 / 72A |
+| R7FD, QTP 011908[^qtp-011908] | Cypress Semiconductor -- Bloomington, MN | 2 | SiO2, 32Å |
+| R7FT-3R, QTP 014807[^qtp-014807] | Cypress Semiconductor -- Bloomington, MN | 3 | SiO2, 32Å |
+| R7FTW-3R, QTP 023101[^qtp-023101] | Cypress Semiconductor -- Bloomington Minnesota | 3 | SiO2 32Å |
+| R7LD-1.8, QTP 012801[^qtp-012801] | Cypress Semiconductor -- Bloomington, MN | 2 | SiO2, 32Å |
+| S17, QTP 032301[^qtp-032301] | Promos (Taiwan) | 2 | SiO2, 62Å |
 
 ### 0.13 µm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| C8Q-3R | CMI/Bloomington MN | 4 | SiO2 DGOX 32/55A | QTP 043004[^qtp-043004] |
-| L8C-3R | CMI / Bloomington MN | 4 | SiO2 DGOX 32/55A | QTP 053301[^qtp-053301] |
-| RAM8NLD-1.8 | Cypress Semiconductor -- Bloomington, MN | 2 | 26Å | QTP 024110[^qtp-024110] |
-| S8 | Cypress Semiconductor -- Bloomington, MN | 3 | SiO2 /110A & SiO2/32A | QTP 113005[^qtp-113005] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| C8Q-3R, QTP 043004[^qtp-043004] | CMI/Bloomington MN | 4 | SiO2 DGOX 32/55A |
+| L8C-3R, QTP 053301[^qtp-053301] | CMI / Bloomington MN | 4 | SiO2 DGOX 32/55A |
+| RAM8NLD-1.8, QTP 024110[^qtp-024110] | Cypress Semiconductor -- Bloomington, MN | 2 | 26Å |
+| S8, QTP 113005[^qtp-113005] | Cypress Semiconductor -- Bloomington, MN | 3 | SiO2 /110A & SiO2/32A |
 
 ### 90 nm
 
-| Code | Fab as printed | Metal layers | Gate oxide | Report |
-|---|---|---|---|---|
-| C9FD-3R | Cypress Semiconductor -- Bloomington, MN | 2 | 23Å | QTP 063807[^qtp-063807] |
-| R95LD-3R | Cypress Semiconductor -- Bloomington, MN | 2 | 28Å | QTP 061806[^qtp-061806] |
-| R95LD-3R | Cypress Semiconductor -- Bloomington, MN | 2 | 28Å | QTP 072002[^qtp-072002] |
-| R9Q-3R | Cypress Semiconductor - Bloomington, MN | 4 | Nitridized SiO2, 22Å | QTP 051207[^qtp-051207] |
-| R9T-3R | Cypress Semiconductor -- Bloomington, MN | 3 | Nitridized SiO2, Thin GOX 22A, Thick GOx | QTP 032003[^qtp-032003] |
+| Code and report | Fab as printed | Metal layers | Gate oxide |
+|---|---|---|---|
+| C9FD-3R, QTP 063807[^qtp-063807] | Cypress Semiconductor -- Bloomington, MN | 2 | 23Å |
+| R95LD-3R, QTP 061806[^qtp-061806] | Cypress Semiconductor -- Bloomington, MN | 2 | 28Å |
+| R95LD-3R, QTP 072002[^qtp-072002] | Cypress Semiconductor -- Bloomington, MN | 2 | 28Å |
+| R9Q-3R, QTP 051207[^qtp-051207] | Cypress Semiconductor - Bloomington, MN | 4 | Nitridized SiO2, 22Å |
+| R9T-3R, QTP 032003[^qtp-032003] | Cypress Semiconductor -- Bloomington, MN | 3 | Nitridized SiO2, Thin GOX 22A, Thick GOx |
 
 ## Film by film
 
 Each table gives one report's metal layers and passivation, with its design rule and the earliest dated row of its qualification history.
+
+### QTP 91216: Fab2/P20
+
+*MAX EPLD, P20 Technology, Fab 2.* Design rule: CMOS, Double Metal /0.8 µm. Earliest dated history row: the history table gives no dates.[^qtp-091216]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500Å Ti/ 1200Å TiW/6000Å Al/500Å Ti | 0.820 µm |
+| Metal 2 | 1minRF/1500Å Ti/9000Å Al | 1.050 µm |
+| Passivation | Oxide/Oxynitride | — |
+
+### QTP 93332: Fab2/P20
+
+*MAX EPLD, P20 Technology, Fab 2.* Design rule: CMOS, Double Metal /0.8 µm. Earliest dated history row: the history table gives no dates.[^qtp-093332]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500 Ti/ 1200TiW6K Al/500Ti | 0.600 µm |
+| Metal 2 | 1minRF/1500Ti/9KAl | 0.900 µm |
+| Passivation | Oxide | — |
 
 ### QTP 000901: Fab2/L28
 
@@ -252,7 +279,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 97476: Fab2/R28
 
-*256K STATIC RAM "CY7C194/CY7195/CY7C199" R28 PROCESS, FAB 2 QUALIFICATION.* Design rule: CMOS, Double Poly, Double Metal /0.65 m. Earliest dated history row: Nov. 1997 (QTP 97476).[^qtp-097476]
+*256K STATIC RAM "CY7C194/CY7195/CY7C199" R28 PROCESS, FAB 2 QUALIFICATION.* Design rule: CMOS, Double Poly, Double Metal /0.65 m (the µ is not printed in the report). Earliest dated history row: Nov. 1997 (QTP 97476).[^qtp-097476]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
@@ -429,7 +456,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 98368: Fab4/R42HD
 
-*SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4.* Design rule: CMOS, Double Metal /0.42 m. Earliest dated history row: the history table gives no dates.[^qtp-098368]
+*SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4.* Design rule: CMOS, Double Metal /0.42 m (the µ is not printed in the report). Earliest dated history row: the history table gives no dates.[^qtp-098368]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
@@ -449,7 +476,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 003907: Fab4/R42D (with Hot AL)
 
-*High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4.* Design rule: CMOS, Double Metal /0.35 m. Earliest dated history row: Sep 98 (QTP 98357).[^qtp-003907]
+*High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4.* Design rule: CMOS, Double Metal /0.35 m (the µ is not printed in the report). Earliest dated history row: Sep 98 (QTP 98357).[^qtp-003907]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
@@ -503,9 +530,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC | 0.125 µm |
-| Metal 2 | 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC | 0.125 µm |
-| Metal 3 | 300Å IMPTi /300Å TiN/.8K AlCu/350Å TiN ARC | 0.175 µm |
+| Metal 1 | 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC | 0.125 µm (implausibly thin for a metal layer; the report may omit a film or misprint a unit) |
+| Metal 2 | 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC | 0.125 µm (implausibly thin for a metal layer; the report may omit a film or misprint a unit) |
+| Metal 3 | 300Å IMPTi /300Å TiN/.8K AlCu/350Å TiN ARC | 0.175 µm (implausibly thin for a metal layer; the report may omit a film or misprint a unit) |
 | Passivation | 350Å TiN/2K PSG/7K Si3N4 | — |
 
 ### QTP 012705: Fab4/R52FFD-3
@@ -524,8 +551,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500/6000/300 [Å] | — |
-| Metal 2 | 500/6000/300 [Å] | — |
+| Metal 1 | 500/6000/300 [Å] | 0.680 µm |
+| Metal 2 | 500/6000/300 [Å] | 0.680 µm |
 | Passivation | 1,000A TEOS + 9,000A Si2N4 | — |
 
 ### QTP 062201: 7C02638A
@@ -618,8 +645,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | TiN/Ti (18/8.5nm) | — |
-| Metal 2 | TiN/Alcu/TiN (23/800/28nm) | — |
+| Metal 1 | TiN/Ti (18/8.5nm) | 0.027 µm (implausibly thin for a metal layer; the report may omit a film or misprint a unit) |
+| Metal 2 | TiN/Alcu/TiN (23/800/28nm) | 0.851 µm |
 | Passivation | Si3N4 & Polyimide | — |
 
 ### QTP 011908: Fab4/R7FD-3R
@@ -634,11 +661,11 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 024110: Fab4/RAM8NLD-1.8V
 
-*1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4.* Design rule: 0.13 m. Earliest dated history row: Mar 03 (QTP 031102).[^qtp-024110]
+*1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4.* Design rule: 0.13 m (the µ is not printed in the report). Earliest dated history row: Mar 03 (QTP 031102).[^qtp-024110]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150 Å Ti / 300 Å Al / 300 Å Cu | 0.075 µm (implausibly thin; probably misprinted) |
+| Metal 1 | 150 Å Ti / 300 Å Al / 300 Å Cu | 0.075 µm (implausibly thin for a metal layer; the report may omit a film or misprint a unit) |
 | Metal 2 | 300 Å Ti / 8000 Å Al | 0.830 µm |
 | Passivation | 1000Å TEOS / 9000Å Si3N4 | — |
 
@@ -772,7 +799,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 * [Cypress, QTP 072002](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-072002-2-meg-mobl-sram-cy62136-7fv30-r95ld-3rfab4-aec-q100-productqualificationreport-en.pdf>) — 2 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.[^qtp-072002]
 * [Cypress, QTP 080608](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>) — High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A.[^qtp-080608]
 * [Cypress, QTP 082506](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>) — PCI-E Clock Family, R52T-3 Technology, Fab 4.[^qtp-082506]
+* [Cypress, QTP 91216](<https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>) — MAX EPLD, P20 Technology, Fab 2.[^qtp-091216]
 * [Cypress, QTP 091302](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>) — MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC.[^qtp-091302]
+* [Cypress, QTP 93332](<https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>) — MAX EPLD, P20 Technology, Fab 2.[^qtp-093332]
 * [Cypress, QTP 95075](<https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>) — CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2.[^qtp-095075]
 * [Cypress, QTP 95515](<https://web.archive.org/web/20201026132608/https://www.cypress.com/file/93461/download>) — 64K SRAM, RAM28 TECHNOLOGY.[^qtp-095515]
 * [Cypress, QTP 96091](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-96091-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148ab080847>) — Dual Port SRAM - R28 Technology, 6% Shrink.[^qtp-096091]
@@ -883,8 +912,14 @@ Each table gives one report's metal layers and passivation, with its design rule
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
 [^qtp-082506]: Cypress Semiconductor, Product Qualification Report QTP 082506: *PCI-E Clock Family, R52T-3 Technology, Fab 4*, September 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>
+[^qtp-091216]: Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
 [^qtp-091302]: Cypress Semiconductor, Product Qualification Report QTP 091302: *MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC*, February 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>
+[^qtp-093332]: Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>
 [^qtp-095075]: Cypress Semiconductor, Product Qualification Report QTP 95075: *CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2*, November 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>

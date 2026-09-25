@@ -9,6 +9,12 @@ described on {ref}`history-technologies`.
 
 ## Products by process
 
+### 0.8 µm
+
+| Process | Fab as printed | Products named in the reports | Reports |
+|---|---|---|---|
+| P20 | Cypress Semiconductor - Round Rock, TX (Fab2) | CY7C344, CY7C346 | 2[^qtp-091216][^qtp-093332] |
+
 ### 0.65 µm
 
 | Process | Fab as printed | Products named in the reports | Reports |
@@ -31,9 +37,7 @@ described on {ref}`history-technologies`.
 | Process | Fab as printed | Products named in the reports | Reports |
 |---|---|---|---|
 | R42HD | Fab 4 / CMI - Bloomington, MN; Cypress Semiconductor - Bloomington, MN | CY7C024E, CY7C0241E, CY7C025E, CY7C0251E, CY7C09079(V), CY7C09179(V), CY7C09089(V), CY7C09189(V), CY7C09099(V), CY7C09199(V) and 14 more | 2[^qtp-102101][^qtp-098368] |
-| RAM42HA | Cypress Semiconductor -- Bloomington, MN | CY62256V | 1[^qtp-030204] |
-| RAM42HHA | Cypress Semiconductor -- Bloomington, MN | CY62256 | 1[^qtp-030206] |
-| several foundry processes (one summary report) | Tower Semiconductor (Israel, TS60D/RX11/KB14/RF06 base dice), IBM/NY (ZB15/ZB17 base dice), Chartered Semiconductor Manufacturing/Singapore ('CSM', A35C-G35C base dice); Grace Semiconductor, Shanghai, China | CY2LL843*, CY2SSTV16859*, CY2AVC16835*, CY7C827042AR, CY25561, CY25562, CY2SSTV855, CY62256* | 2[^qtp-i000006][^qtp-091302] |
+| RAM42 | Grace Semiconductor, Shanghai, China; Cypress Semiconductor -- Bloomington, MN | CY62256*, CY62256, CY62256V | 3[^qtp-091302][^qtp-030206][^qtp-030204] |
 | CSM 0.35um | Chartered Semiconductor Singapore | CY7B9950, CY2DP818*, CY28346, CY29946, CY29947, CY29948, CY29972, CY29973 | 1[^qtp-i000005] |
 | R42LDHA | Cypress Semiconductor - Bloomington, MN | CY2213ZC-1 | 1[^qtp-003907] |
 | S4AD-5 | Cypress Semiconductor -- CTI Round Rock, TX; HHGrace /Shanghai-China; GSMC/Shanghai-China | CY26049-1/3/4/5, CY26049-36, CY23FP12, CY23FS04, CY23FS08, CY8C24794, CY8C24894, CY8C21234, CY8C21334, CY8C21434 and 3 more | 3[^qtp-021507][^qtp-151005][^qtp-062509] |
@@ -86,6 +90,7 @@ described on {ref}`history-technologies`.
 | R42D | Cypress Semiconductor -- Bloomington, MN | CY7C4255V, CY7C4265V, CY7C4275V, CY7C4285V, CY7C4261V, CY7C4271V, CY7C4281V, CY7C4291V, CY7C4282V, CY7C4292V | 1[^qtp-097483] |
 | R52D-5R | Skywater -- Bloomington, MN | CY7C106B, CY7C1006B, CY7C109B, CY7C1009B, CY7C194B, CY7C195B, CY7C197B, CY7C199C | 1[^qtp-098462] |
 | TSMC 0.35um | TSMC | ASIC (SMaL Camera ASIC, TSMC part TMK212B) | 1[^qtp-s050001] |
+| several foundry processes (one summary report) | Tower Semiconductor (Israel, TS60D/RX11/KB14/RF06 base dice), IBM/NY (ZB15/ZB17 base dice), Chartered Semiconductor Manufacturing/Singapore ('CSM', A35C-G35C base dice) | CY2LL843*, CY2SSTV16859*, CY2AVC16835*, CY7C827042AR, CY25561, CY25562, CY2SSTV855 | 1[^qtp-i000006] |
 
 ## References
 
@@ -130,7 +135,9 @@ described on {ref}`history-technologies`.
 * [Cypress, QTP 072002](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-072002-2-meg-mobl-sram-cy62136-7fv30-r95ld-3rfab4-aec-q100-productqualificationreport-en.pdf>) — 2 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.[^qtp-072002]
 * [Cypress, QTP 080608](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>) — High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A.[^qtp-080608]
 * [Cypress, QTP 082506](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>) — PCI-E Clock Family, R52T-3 Technology, Fab 4.[^qtp-082506]
+* [Cypress, QTP 91216](<https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>) — MAX EPLD, P20 Technology, Fab 2.[^qtp-091216]
 * [Cypress, QTP 091302](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>) — MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC.[^qtp-091302]
+* [Cypress, QTP 93332](<https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>) — MAX EPLD, P20 Technology, Fab 2.[^qtp-093332]
 * [Cypress, QTP 95075](<https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>) — CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2.[^qtp-095075]
 * [Cypress, QTP 95515](<https://web.archive.org/web/20201026132608/https://www.cypress.com/file/93461/download>) — 64K SRAM, RAM28 TECHNOLOGY.[^qtp-095515]
 * [Cypress, QTP 96091](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-96091-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148ab080847>) — Dual Port SRAM - R28 Technology, 6% Shrink.[^qtp-096091]
@@ -247,8 +254,14 @@ described on {ref}`history-technologies`.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
 [^qtp-082506]: Cypress Semiconductor, Product Qualification Report QTP 082506: *PCI-E Clock Family, R52T-3 Technology, Fab 4*, September 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>
+[^qtp-091216]: Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
 [^qtp-091302]: Cypress Semiconductor, Product Qualification Report QTP 091302: *MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC*, February 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>
+[^qtp-093332]: Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>
 [^qtp-095075]: Cypress Semiconductor, Product Qualification Report QTP 95075: *CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2*, November 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>

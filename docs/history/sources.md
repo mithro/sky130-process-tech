@@ -311,7 +311,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 
 (hsrc-qtp-091216)=
 **QTP-091216** — Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-091302)=
 **QTP-091302** — Cypress Semiconductor, Product Qualification Report QTP 091302: *MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC*, February 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>
@@ -319,7 +319,7 @@ Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {re
 
 (hsrc-qtp-093332)=
 **QTP-093332** — Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>
-Used on {ref}`history-fabs`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-095075)=
 **QTP-095075** — Cypress Semiconductor, Product Qualification Report QTP 95075: *CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2*, November 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>
