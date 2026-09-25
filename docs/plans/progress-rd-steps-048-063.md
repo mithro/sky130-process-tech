@@ -741,6 +741,63 @@ table cells > 25: 0. After: see the batch summary at the end.
   marker.
 * **Caps**: para > 100 4 → 0; item > 60 6 → 0; sentence > 45 14 → 1 (above).
 
+### 063 IOX45 — done
+
+* **R-H3.** Not applied. The passage after the figure (≈ 135 words) is this reference's description
+  and inference of the oxide's role plus the list of industry names; none of the four step-page H3
+  titles is true of it ("What the public record shows" would head an inference).
+* **Lead.** Its 47-word second sentence split: "… gate lines whose poly sidewalls are bare and whose
+  tops are still covered by … POC. Their source/drain regions are covered only by …" ("Their" added;
+  the comma before "whose tops" became "and"). The 59-word third sentence → lead-in "… on every exposed
+  silicon surface:" and four plain bullets, the base's words and order kept ("and — if it is a furnace
+  step — on the wafer back" stays whole in the last bullet). **The lead's "on every exposed silicon
+  surface" is unchanged** (the S5 figure agent's note: not a contradiction with the "less" of How-step
+  3). The lead stays at 126 words (base 126).
+* **R-SENTENCE.** Screen-oxide sentence (60 w) split at "— an inference from its place …" → "This
+  is an inference from …" (the hedge becomes its own sentence directly after the claim it qualifies;
+  `[^txt-01]` stays on it). Industry-names sentence (51 w) split at "— and the reading that follows".
+* **R-CATEGORY.** Classification sentence (42 w, with its em-dash pair and two markers) kept whole as
+  the first paragraph (a shorter one would need rewording); "What distinguishes it from every other
+  oxidation in the flow is the surface it oxidises" is its own label (the step-3 form): split at its
+  colon ("It is not bare single crystal but a mixture of …", "It is" added) and kept with the
+  following "It is also the first furnace or RTP step …" as the second paragraph.
+* **R-PARA step 4 / R-LIST.** "It repairs the etch" (74 w): lead + continuation (split at "and can
+  thin" → "It can thin …", "It" added; each clause keeps its marker). "It seals the gate and rounds its
+  foot" (230 w): lead sentence (split at ", and grows oxide" → "It grows oxide …"); the Kao sentence
+  split at ", so the corner" → "So the corner …" (the Kao markers stay on the Kao clause); the four
+  gate-edge studies (Chan; Pan; Lai; Doyle) and the two nitrided-oxide studies (Hori; Joshi) →
+  sub-bullets under the page's own lead-in sentences ending in colons, each with its marker. "It
+  screens the tip implants" (118 w): lead + two continuation paragraphs. "It contributes thermal
+  budget" (56 w, one sentence): split at ", and it acts on" → "It acts on …".
+* **R-HEDGE** (italic lead-in). How steps: "Pre-clean" split at its semicolon (the "(inference)" stays on
+  the HF reasoning); "Ambient and temperature" split at "— the rapid thermal route is attractive …";
+  "What grows where" (134 w) split at "— so the n⁺ gate sidewalls …" → "So the n⁺ gate sidewalls …"
+  (the four doped-poly markers stay on the effect they support); "Post-oxidation anneal" split at "—
+  Deal's standard …".
+* **R-TOOLS.** Aviza furnaces and Heatpulse 8808: *SkyWater says:* the quoted capability entries
+  ("lists" added for verb-first); grades verbatim under *Tool exists:* / *Runs this step:*; the
+  Heatpulse reseller-documentation sentence is the continuation paragraph. "Nitrided gate oxide" is not
+  a tool and keeps its form.
+* **R-OPENQ.** Labels "Thickness, ambient and tool", "Intended function", "SONOS cell edge",
+  "Protection of the poly top", "Backside oxide".
+* **R-RELATED.** Previous/Next split; "The poly it oxidises and anneals: …; the cap that protects the
+  poly top: GATENIT" → `Same module:` (moved up to the label order); the gate-oxide/ONO, spacer/TIPRTAD
+  and earlier-screen-oxide bullets keep their glosses and no label (each mixes modules or names a
+  relationship no label states exactly).
+* **R-GLANCE.** Does keeps "(thin, we infer)"; Why is the page's "we infer that `IOX45` is there for
+  some combination of them" with the four roles; Public numbers "none published for SKY130".
+* **Left over the caps.** "It is not bare single crystal but a mixture of …" (46 w); the "Intended
+  function" Open question (48 w of base text after its label). ("Dry O₂ at roughly 800–900 °C … in a
+  single-wafer RTP chamber." is 45 w after the split, at the cap.)
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, hedges "inference", "not public",
+  "we infer" ×2, identifiers `IOX45`, `SKY130` — glance box. **LOST/ADDED refs** 'over-etch. IOX45' /
+  'over-etch': the tool bug G15 (in the base, the `IOX45` code span followed the `{term}` role on the
+  same line; the paragraph break now separates them); the role is unchanged. Declared
+  `markers,hedges,identifiers`; only that refs pair remains.
+* **Marker coverage.** 16 flags, all read (pieces whose base marker belonged to a neighbouring clause;
+  list lead-ins over cited items; labels).
+* **Caps**: para > 100 2 → 0; item > 60 6 → 0; sentence > 45 16 → 2 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
