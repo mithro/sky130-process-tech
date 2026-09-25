@@ -183,7 +183,8 @@ MARKER_RE = re.compile(r"\[\^([A-Za-z0-9][A-Za-z0-9_-]*)\](?!:)")
 ROLE_RE = re.compile(r"\{(?:ref|term|doc)\}`([^`]+)`(?!`)")
 URL_RE = re.compile(r"https?://[^\s<>\)\]\"'`]+")
 BRACKETED_URL_RE = re.compile(r"<(https?://[^<>\s]+)>")
-QUOTE_RE = re.compile(r'"([^"\n]{1,400})"|“([^”\n]{1,400})”')
+QUOTE_RE = re.compile(r'"([^"\n]{1,800})"|“([^”\n]{1,800})”')
+_PARA_SPLIT_RE = re.compile(r"\n[ \t]*\n")
 
 # An inline code span (`` ``...`` `` or `` `...` ``), run AFTER roles are
 # already extracted and removed (see ROLE_RE above): masking here only
@@ -502,13 +503,48 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
     return Counter(tuples), samples
 
 
-def extract_quotes(text: str) -> Counter:
-    out = []
+def extract_quotes(text: str, page_label: str = "") -> tuple[Counter, list[str]]:
+    """Quoted strings in ``text``, matched and paired one PARAGRAPH at a
+    time (Guide problem 16, rd-steps-035-047.md review section D; rd-
+    steps-014-034.md review). ``QUOTE_RE`` caps a matched quotation at 800
+    characters (raised from 400): a real quotation longer than the cap
+    used to desynchronise the tool's open/close pairing for every
+    following quotation on the *whole page*, since matching ran once over
+    the entire flattened text — the regex, unable to find a real closing
+    mark within the cap, backtracked onto some quote mark inside the
+    quotation's own true (longer) text, then read the quotation's real
+    closing mark as the *opening* mark of the next match, and so on,
+    which could mask a real wording change anywhere in the shifted zone
+    (042-onome.md's 437-character quotation did exactly this). Splitting
+    on a blank line first and flattening (whitespace-normalising) each
+    paragraph independently, before matching, means a mismatch can now
+    span at most one paragraph, and a paragraph whose own quote marks
+    still don't pair up (an odd count of them: the shape of a quotation
+    still longer than 800 characters, or a stray unmatched mark) is
+    reported as a printed ``WARN`` naming the page and the paragraph,
+    rather than silently resolved by whatever the regex pairs next.
+
+    Returns ``(quote counts, warning lines)``.
+    """
     text = INCH_RE.sub("″", text)  # ″, so QUOTE_RE never pairs it
-    for m in QUOTE_RE.finditer(text):
-        inner = m.group(1) if m.group(1) is not None else m.group(2)
-        out.append(normalize_ws(inner))
-    return Counter(q for q in out if q)
+    counts: Counter = Counter()
+    warnings: list[str] = []
+    for para in _PARA_SPLIT_RE.split(text):
+        flat = normalize_ws(para)
+        if not flat:
+            continue
+        n_marks = len(re.findall(r'["“”]', flat))
+        if n_marks % 2:
+            warnings.append(
+                f"{page_label}: WARN odd number of quote marks ({n_marks}) "
+                f"in a paragraph starting {flat[:70]!r}"
+            )
+        for m in QUOTE_RE.finditer(flat):
+            inner = m.group(1) if m.group(1) is not None else m.group(2)
+            inner = normalize_ws(inner)
+            if inner:
+                counts[inner] += 1
+    return counts, warnings
 
 
 def extract_hedges(text: str) -> Counter:
@@ -559,8 +595,8 @@ def extract_urls_masked(text: str) -> tuple[Counter, str]:
 
 
 def extract_all(
-    text: str,
-) -> tuple[dict[str, Counter], dict[tuple[str, ...], list[str]], list[str]]:
+    text: str, page_label: str = "",
+) -> tuple[dict[str, Counter], dict[tuple[str, ...], list[str]], list[str], list[str]]:
     defs: dict[str, str] = {}
     for label, body in DEF_RE.findall(text):
         defs[label] = normalize_ws(body)
@@ -595,17 +631,23 @@ def extract_all(
     # captioned table's own layout metadata can never be misread as prose.
     masked = _LAYOUT_OPTION_RE.sub(" ", masked)
 
-    # Flatten before matching (review finding H1): the repository's
+    # Flatten before matching, per PARAGRAPH (review finding H1; Guide
+    # problem 16, rd-steps-035-047.md review section D): the repository's
     # markdown is hard-wrapped, so a quotation frequently spans a source
     # line break. QUOTE_RE forbids "\n" inside a match, so applied to the
     # raw text it silently misses every such quotation (measured: ~29% of
     # all quotations on this repository's pages) — invisible to a wording
     # change inside one, and it flags a false LOST/ADDED pair whenever a
     # harmless re-wrap moves where a quotation happens to cross a line.
-    # Flattening first (as the hand recipe in readability-guide.md §7
-    # already does) fixes both: a wrapped quotation is matched as one
-    # run, and re-wrapping it changes no character of that run.
-    quotes = extract_quotes(normalize_ws(masked))
+    # Flattening fixes both: a wrapped quotation is matched as one run,
+    # and re-wrapping it changes no character of that run. Flattening
+    # scoped to one paragraph at a time (rather than the whole page)
+    # keeps a quotation over the (now 800-char) cap from desynchronising
+    # every later quote on the page: a mismatch can now span at most one
+    # paragraph, and an odd quote-mark count within it is printed as a
+    # WARN rather than silently resolved by whatever the regex happens
+    # to pair next.
+    quotes, quote_warnings = extract_quotes(masked, page_label)
     # Same flattening for hedges (review T3/D7): "our extraction" re-wrapped
     # across a source line break (one word ending a line, the next starting
     # the following one) used to be invisible to `\b our extraction \b`,
@@ -651,7 +693,7 @@ def extract_all(
         "hedges": hedges,
         "number_order": number_order,
         "identifiers": identifiers,
-    }, number_order_samples, stream
+    }, number_order_samples, stream, quote_warnings
 
 
 # ---------------------------------------------------------------------------
@@ -798,11 +840,14 @@ def diff_page(
     allowed: frozenset[str] = frozenset(),
     allow_dropdown_edits: bool = False,
     allow_regrouped: bool = False,
+    page_path: str = "",
 ) -> list[tuple[bool, str]]:
     """Return (is_failure, message) pairs; does not print anything."""
     results: list[tuple[bool, str]] = []
-    old, old_samples, old_stream = extract_all(old_text)
-    new, new_samples, new_stream = extract_all(new_text)
+    old, old_samples, old_stream, old_quote_warnings = extract_all(old_text, f"{page_path} (before)")
+    new, new_samples, new_stream, new_quote_warnings = extract_all(new_text, f"{page_path} (after)")
+    for w in old_quote_warnings + new_quote_warnings:
+        results.append((False, w))
     for cat in CATEGORIES:
         lost = old[cat] - new[cat]
         added = new[cat] - old[cat]
@@ -1121,12 +1166,12 @@ def selftest() -> int:
     # extract_all rather than through diff_page, since these are single-
     # text assertions, not before/after comparisons.
     def assert_no_numbers(name: str, body: str) -> None:
-        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _, _ = extract_all(f"# P\n\n{body}\n")
         if extracted["numbers"]:
             problems.append(f"{name}: expected no numbers, got {dict(extracted['numbers'])}")
 
     def assert_has_number(name: str, body: str, expected: str) -> None:
-        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _, _ = extract_all(f"# P\n\n{body}\n")
         if extracted["numbers"].get(expected, 0) < 1:
             problems.append(f"{name}: expected {expected!r} in {dict(extracted['numbers'])}")
 
@@ -1140,7 +1185,7 @@ def selftest() -> int:
     assert_has_number("0.18µm still yields 0.18", "The gap is 0.18µm wide.", "0.18")
 
     def assert_numbers(name: str, body: str, expected: set[str]) -> None:
-        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _, _ = extract_all(f"# P\n\n{body}\n")
         got = set(extracted["numbers"].elements())
         if got != expected:
             problems.append(f"{name}: expected numbers {expected!r}, got {got!r}")
@@ -1163,7 +1208,7 @@ def selftest() -> int:
     )
 
     def assert_refs(name: str, body: str, expected: set[str]) -> None:
-        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _, _ = extract_all(f"# P\n\n{body}\n")
         got = set(extracted["refs"].elements())
         if got != expected:
             problems.append(f"{name}: expected refs {expected!r}, got {got!r}")
@@ -1209,7 +1254,7 @@ def selftest() -> int:
     def assert_refs_and_hedges(
         name: str, body: str, expected_refs: set[str], expected_hedges: set[str]
     ) -> None:
-        extracted, _, _ = extract_all(f"# P\n\n{body}\n")
+        extracted, _, _, _ = extract_all(f"# P\n\n{body}\n")
         got_refs = set(extracted["refs"].elements())
         got_hedges = set(extracted["hedges"].elements())
         if got_refs != expected_refs:
@@ -1247,7 +1292,7 @@ def selftest() -> int:
     # quotation after it on the page. Checked directly against
     # extract_quotes/INCH_RE, since these are single-text assertions.
     def assert_quotes(name: str, text: str, expected: set[str]) -> None:
-        got = set(extract_quotes(text).elements())
+        got = set(extract_quotes(text)[0].elements())
         if got != expected:
             problems.append(f"{name}: expected quotes {expected!r}, got {got!r}")
 
@@ -1267,6 +1312,55 @@ def selftest() -> int:
         "a standalone inch-mark measurement outside any quotation is untouched",
         'The die is 8" across, with no quotation anywhere in this sentence.',
         set(),
+    )
+
+    # -- Guide problem 16 (rd-steps-035-047.md review section D; rd-steps-
+    # 014-034.md review): a quotation over the old 400-char cap used to
+    # desynchronise the whole page's quote pairing. Reproduced against
+    # main's copy of the tool by hand before this fix (a 479-character
+    # quotation, well under the new 800 cap, made a real wording change in
+    # a *later*, unrelated quotation invisible -- diff_page reported no
+    # failure at all). Cap raised to 800 and matching scoped to one
+    # paragraph at a time fixes both.
+    _long_quote_filler = ("filler word " * 40).strip()  # 479 chars: > 400, <= 800
+    case(
+        "a >400-char quotation elsewhere on the page no longer masks a "
+        "real wording change in a later quotation (Guide problem 16)",
+        f'# P\n\nA source says "{_long_quote_filler}" here.[^a]\n\n'
+        'Another source says "original wording" too.[^b]\n\n'
+        "[^a]: Source A. <https://example.com/a>\n"
+        "[^b]: Source B. <https://example.com/b>\n",
+        f'# P\n\nA source says "{_long_quote_filler}" here.[^a]\n\n'
+        'Another source says "changed wording" too.[^b]\n\n'
+        "[^a]: Source A. <https://example.com/a>\n"
+        "[^b]: Source B. <https://example.com/b>\n",
+        False,
+    )
+
+    def assert_quote_warning(name: str, text: str, expect_substr: str, expect_any: bool) -> None:
+        _, warns = extract_quotes(text, "test-page.md")
+        found = any(expect_substr in w for w in warns)
+        if found != expect_any:
+            problems.append(
+                f"{name}: expected a warning containing {expect_substr!r}"
+                f"{'' if expect_any else ' to be absent'}, got {warns!r}"
+            )
+
+    assert_quote_warning(
+        "an odd number of quote marks in one paragraph (an unpaired "
+        "quotation, e.g. still longer than the cap) is reported as a "
+        "WARN naming the page, not silently resolved",
+        'A source says "an unterminated quotation with no closing mark '
+        "at all here.",
+        "odd number of quote marks",
+        True,
+    )
+    assert_quote_warning(
+        "a normal, evenly-paired paragraph raises no odd-quote-count warning",
+        'A source says "a normal quotation" here.\n\n'
+        'Another source says "another normal one" too.',
+        "odd number of quote marks",
+        False,
     )
 
     # -- --allow-added lets a declared addition through, but never a loss -
@@ -1366,7 +1460,10 @@ def main() -> int:
             continue
         new_text = page.read_text()
         checked += 1
-        results = diff_page(old_text, new_text, allowed, args.allow_dropdown_edits, args.allow_regrouped)
+        results = diff_page(
+            old_text, new_text, allowed, args.allow_dropdown_edits, args.allow_regrouped,
+            page_path=rel,
+        )
         page_failed = False
         for is_fail, msg in results:
             print(f"{rel}: {msg}")

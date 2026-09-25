@@ -55,6 +55,16 @@ task (`docs/plans/agent-briefs.md`, `docs/plans/readability-guide.md` §7) — n
    in the body below it; (b) every "*SkyWater says:*" line/bullet must contain a quotation mark or
    a `skw-`/`cyp-` footnote marker. Both print `WARN` with page and line; neither fails the run.
 
+## Verification notes (manual, per item, before landing)
+
+* Item 1 (G15/T-new-1): reproduced against `main`'s copy of the tool on the exact three lines
+  the batch progress files named (`017-nwm.md:227`, `022-hvtpm.md:227`, `014-lvtnm.md:315`);
+  confirmed fixed.
+* Item 2 (Guide problem 16): reproduced against `main`'s copy with a 479-character quotation
+  (over the old 400 cap, under the new 800 cap) elsewhere on the page — `diff_page` reported
+  **no failure at all** for a real wording change in a later, unrelated quotation (the exact
+  desync/masking bug). Confirmed the fixed tool detects it (`LOST`/`ADDED quotes`).
+
 ## Selftest
 
 Every item above has a dedicated selftest case reproducing the bug (checked against `main`'s copy
