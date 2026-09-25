@@ -11,6 +11,7 @@
 | **Next step** | {ref}`LINOX <step-010>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** strips the implanted resist from `DNI` and cleans the
   wafer for the liner-oxidation furnace.
 * **Why:** photoresist and its implant crust cannot survive a furnace,
@@ -84,8 +85,8 @@ active edge much later in the flow.
 
 ## How it is typically performed
 
-An industry-generic implant-strip sequence for a 200 mm, 130 nm-era
-fab:
+*An industry-generic implant-strip sequence for a 200 mm, 130 nm-era
+fab:*
 
 1. **Plasma ash.** Downstream (remote) microwave or RF O₂ plasma at
    150–270 °C.
@@ -174,7 +175,7 @@ fab:
 * Next: {ref}`LINOX <step-010>` (liner oxidation — the reason the
   clean must be furnace-grade).
 * Depends on: mask {ref}`DNM <step-007>`.
-* Same module: the next implant strips in the flow —
+* Same category: the next implant strips in the flow —
   {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`,
   {ref}`PCHIS <step-025>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
