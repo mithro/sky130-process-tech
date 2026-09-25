@@ -125,14 +125,14 @@ specifications and mixed at the tool or supplied premixed; SKY130's
 mixtures and purities are not public.
 
 :::{table} Representative anneal-ambient mixtures, as public sources describe them
-:widths: 26 14 60
+:widths: 30 70
 
-| Material | As supplied | Specification |
-|---|---|---|
-| Premixed forming gas | — | "Typical forming gas formulations (5% H2 in N2)";[^wiki-fg] the anneal category page gives 4–10 % H₂ in N₂ ({ref}`category-anneal`), and an Iridia asher's gas lines include "4 percent H2/N2"[^semistar-iridia] |
-| Hydrogen and nitrogen mixed at the tool | — | The ALLY pages name this as the alternative to premixed forming gas; the University of Illinois example meters "10% by volume hydrogen in nitrogen" for a hydrogen anneal[^pat-deuterium-uiuc] |
-| Deuterium mixtures | — | Deuterium in nitrogen for hot-carrier-resistant sinters[^lyding-1996][^pat-deuterium-uiuc] |
-| Inert, oxidising and nitriding ambients | — | Nitrogen and argon; oxygen additions; ammonia in rapid thermal nitridation — described with their rows in the {ref}`materials index <materials-table>` |
+| Material | What the sources say |
+|---|---|
+| Premixed forming gas | "Typical forming gas formulations (5% H2 in N2)";[^wiki-fg] the anneal category page gives 4–10 % H₂ in N₂ ({ref}`category-anneal`), and an Iridia asher's gas lines include "4 percent H2/N2"[^semistar-iridia] |
+| Hydrogen and nitrogen mixed at the tool | The ALLY pages name this as the alternative to premixed forming gas; the University of Illinois example meters "10% by volume hydrogen in nitrogen" for a hydrogen anneal[^pat-deuterium-uiuc] |
+| Deuterium mixtures | Deuterium in nitrogen for hot-carrier-resistant sinters[^lyding-1996][^pat-deuterium-uiuc] |
+| Inert, oxidising and nitriding ambients | Nitrogen and argon; oxygen additions; ammonia in rapid thermal nitridation — described with their rows in the {ref}`materials index <materials-table>` |
 :::
 
 ## At SkyWater

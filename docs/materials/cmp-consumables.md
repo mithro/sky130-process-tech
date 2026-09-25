@@ -141,7 +141,7 @@ named in SkyWater's filings.
 :::{table} Representative CMP consumables, as public and current supplier documents describe them
 :widths: 22 22 56
 
-| Material | As supplied | Specification |
+| Material | Source | What the source says |
 |---|---|---|
 | Oxide slurries | — | Fumed or colloidal silica in KOH or ammonia at pH 10–11 (typical industry values);[^steigerwald-1997][^zantye-2004] the category page names the Cabot Semi-Sperse SS-12 and Klebosol classes ({ref}`category-cmp`) |
 | Oxide slurries (STI) | — | Ceria slurries with additives for STI selectivity[^america-2004][^kim-2002-ceria] |

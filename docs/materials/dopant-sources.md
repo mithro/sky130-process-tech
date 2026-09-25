@@ -177,7 +177,7 @@ is named in SkyWater's filings.
 :::{table} Representative dopant sources and packages, as standards and current supplier documents describe them
 :widths: 22 24 54
 
-| Material | As supplied | Specification |
+| Material | Source | What the source says |
 |---|---|---|
 | Boron trifluoride | — | SEMI C3.27 "provide[s] a specification for boron trifluoride (BF3) used in the semiconductor industry";[^semi-c3-27] NIOSH describes a gas "Shipped as a nonliquefied compressed gas"[^niosh-bf3] |
 | Boron trifluoride | EMD Electronics ION-X package | "Isotopically Enriched BF3"; the package "can selectively adsorb, store and safely deliver ultra-high purity gases at sub-atmospheric pressures"[^emd-ion-x] |

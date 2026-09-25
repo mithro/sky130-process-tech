@@ -181,17 +181,17 @@ and process specifications; the supplier statements describe their
 catalogues, not the parts SkyWater buys.
 
 :::{table} Representative hardware consumables and abatement parts, as public and current supplier documents describe them
-:widths: 22 10 68
+:widths: 26 74
 
-| Material | As supplied | Specification |
-|---|---|---|
-| Quartz tubes and ware | — | Electrically fused quartz tubes in grades from "HSQ®100" to "HSQ®330S", stabilised "HSQ®400" for high temperature, and synthetic "HSQ®900" silica[^heraeus-tubes] |
-| Silicon-carbide ware | — | Horizontal-furnace carriers, "baffle assemblies", "LTO cages" and dummy wafers of converted SiC[^entegris-supersic] |
-| Heaters and insulation | — | Multi-zone heaters, rated "600-1200° C (Up to 1250° C for > 4 Hours)" on one vertical reactor;[^expertech-vtr] insulation plates at the furnace throat[^pat-vf-insulation-tel] |
-| Chamber kits | — | Quartz, ceramic, silicon or coated aluminium domes, liners, focus and edge rings, showerheads and nozzles, electrostatic chucks, shields, coils and collimators, as the machine pages describe them;[^pat-hdp-reactor-amat][^pat-yttria][^amat-ism-2000] exclusion rings on tungsten CVD pedestals[^novellus-wcvd-2002] |
-| RTP parts | — | Tungsten-halogen lamps, quartz isolation tubes or windows, and pyrometer and thermocouple calibration hardware[^ag-8800][^chen-2002-rtp] |
-| Abatement | — | Heated traps for condensable by-products,[^pat-nh4cl-vlsi] thermal or plasma point-of-use abatement for fluorinated gases,[^hu-2018][^mangyou-2005][^fiala-1999] adsorbent beds for hydrides such as silane and phosphine,[^hsu-2007][^hsu-2010] and central wet scrubbers[^sherer-2005] |
-| Probe cards and cleaning | — | Needle, vertical and MEMS cards;[^wiki-probecard] Entegris lists, among CMC Materials' products, "Highly engineered cleaning materials for advanced probe cards, test socket applications, and chuck-cleaning"[^entegris-cmc-2022] |
+| Material | What the sources say |
+|---|---|
+| Quartz tubes and ware | Electrically fused quartz tubes in grades from "HSQ®100" to "HSQ®330S", stabilised "HSQ®400" for high temperature, and synthetic "HSQ®900" silica[^heraeus-tubes] |
+| Silicon-carbide ware | Horizontal-furnace carriers, "baffle assemblies", "LTO cages" and dummy wafers of converted SiC[^entegris-supersic] |
+| Heaters and insulation | Multi-zone heaters, rated "600-1200° C (Up to 1250° C for > 4 Hours)" on one vertical reactor;[^expertech-vtr] insulation plates at the furnace throat[^pat-vf-insulation-tel] |
+| Chamber kits | Quartz, ceramic, silicon or coated aluminium domes, liners, focus and edge rings, showerheads and nozzles, electrostatic chucks, shields, coils and collimators, as the machine pages describe them;[^pat-hdp-reactor-amat][^pat-yttria][^amat-ism-2000] exclusion rings on tungsten CVD pedestals[^novellus-wcvd-2002] |
+| RTP parts | Tungsten-halogen lamps, quartz isolation tubes or windows, and pyrometer and thermocouple calibration hardware[^ag-8800][^chen-2002-rtp] |
+| Abatement | Heated traps for condensable by-products,[^pat-nh4cl-vlsi] thermal or plasma point-of-use abatement for fluorinated gases,[^hu-2018][^mangyou-2005][^fiala-1999] adsorbent beds for hydrides such as silane and phosphine,[^hsu-2007][^hsu-2010] and central wet scrubbers[^sherer-2005] |
+| Probe cards and cleaning | Needle, vertical and MEMS cards;[^wiki-probecard] Entegris lists, among CMC Materials' products, "Highly engineered cleaning materials for advanced probe cards, test socket applications, and chuck-cleaning"[^entegris-cmc-2022] |
 :::
 
 ## At SkyWater

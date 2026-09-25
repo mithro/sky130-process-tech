@@ -177,10 +177,10 @@ specification for titanium targets (for through-silicon vias) lists
 among its requirements.[^astm-f3166] The examples below are current
 supplier statements, not the targets SkyWater buys.
 
-:::{table} Representative sputter-target materials and grades, as current supplier and patent documents describe them
+:::{table} Representative sputter-target materials and grades, as supplier, patent and fab documents describe them
 :widths: 24 26 50
 
-| Material | As supplied | Specification |
+| Material | Source | What the source says |
 |---|---|---|
 | Titanium | JX Advanced Metals | "4N5 (Ti 99.995% or above) 5N 5N5" titanium;[^jx-semi-targets] "SFG (Super Fine Grain)" and "SR (Sputter Ready) Finish" as standard, "To minimize particle levels and shorten burn-in time"[^jx-semi-targets] |
 | Titanium | Solstice | 4N5, 5N and 5N5;[^solstice-targets] monolithic and diffusion-bonded designs |
@@ -189,7 +189,8 @@ supplier statements, not the targets SkyWater buys.
 | Titanium–tungsten | Solstice, powder-metallurgy WTi | "3N~4N8" purity, density "Above 99%";[^solstice-targets] diffusion, "Nano" or indium bonding |
 | Titanium–tungsten | Hitachi Metals patent | 10 wt.% titanium[^pat-tiw-hitachi] |
 | Coils and process kits | Solstice titanium coils | 4N5 and 5N purity, for 200 mm and 300 mm chambers;[^solstice-targets] "that support ion metal plasma sputtering technology for PVD processing"[^solstice-targets] |
-| Coils and process kits | JX titanium parts sets | "200 mm parts sets (coils, pins, caps)";[^jx-semi-targets] "an officially authorized supplier" for Applied Materials;[^jx-semi-targets] Applied Materials called its IMP chamber's planar target and coil "low cost consumable items"[^amat-ism-2000] |
+| Coils and process kits | JX titanium parts sets | "200 mm parts sets (coils, pins, caps)";[^jx-semi-targets] "an officially authorized supplier" for Applied Materials[^jx-semi-targets] |
+| Coils and process kits | Applied Materials | called its IMP chamber's planar target and coil "low cost consumable items"[^amat-ism-2000] |
 :::
 
 ## At SkyWater

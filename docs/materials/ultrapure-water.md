@@ -107,15 +107,15 @@ specification the fab sets for its UPW system, usually framed by the
 standards below. SKY130's water specification is not public.
 
 :::{table} Representative UPW standards and grades, as public sources describe them
-:widths: 22 10 68
+:widths: 24 76
 
-| Material | As supplied | Specification |
-|---|---|---|
-| SEMI F63 | — | (F63-1224, current) — a guide that may be used "To establish quality expectations for the supplied UPW" and "To set the process control parameters for UPW-system operation", written for facilities making semiconductors "with line widths of 32 nm and smaller", a scope far below 130 nm, and developed with input from the IRDS UPW committee[^semi-f63] |
-| SEMI F61 | — | (F61-0521, current) — "the engineering and component requirements for a UPW system used in semiconductor manufacturing", including hot UPW[^semi-f61] |
-| ASTM D5127 | — | (D5127-13, reapproved 2018) — recommends "the water quality required for the electronics and microelectronics industries"; "The types of ultra-pure water are defined with respect to device line width", and the recommendations "apply at the point of distribution"[^astm-d5127] |
-| ITRS 2001 yield tables | — | TOC, bacteria, total silica, particles and critical ions and metals for UPW, measured at the point of distribution or connection by the methods of its figure 56 (online resistivity cells, TOC by resistivity or CO₂, ICP-MS, ion chromatography and light scattering)[^itrs-2001-yield] |
-| Carbonated DI water | — | CO₂-dissolved water for rinsing where charging matters; the patent describing it may still be in force, and is in the collapsed note below this list |
+| Material | What the sources say |
+|---|---|
+| SEMI F63 | (F63-1224, current) — a guide that may be used "To establish quality expectations for the supplied UPW" and "To set the process control parameters for UPW-system operation", written for facilities making semiconductors "with line widths of 32 nm and smaller", a scope far below 130 nm, and developed with input from the IRDS UPW committee[^semi-f63] |
+| SEMI F61 | (F61-0521, current) — "the engineering and component requirements for a UPW system used in semiconductor manufacturing", including hot UPW[^semi-f61] |
+| ASTM D5127 | (D5127-13, reapproved 2018) — recommends "the water quality required for the electronics and microelectronics industries"; "The types of ultra-pure water are defined with respect to device line width", and the recommendations "apply at the point of distribution"[^astm-d5127] |
+| ITRS 2001 yield tables | TOC, bacteria, total silica, particles and critical ions and metals for UPW, measured at the point of distribution or connection by the methods of its figure 56 (online resistivity cells, TOC by resistivity or CO₂, ICP-MS, ion chromatography and light scattering)[^itrs-2001-yield] |
+| Carbonated DI water | CO₂-dissolved water for rinsing where charging matters; the patent describing it may still be in force, and is in the collapsed note below this list |
 :::
 
 :::{dropdown} From a patent shown as in force (EP 2 104 648; estimated expiry 2028-05-14) — open to read

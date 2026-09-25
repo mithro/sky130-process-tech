@@ -142,12 +142,12 @@ SKY130's etch recipes are not public.
 :::{table} Representative etch and chamber-clean gases, as standards and public sources describe them
 :widths: 26 20 54
 
-| Material | As supplied | Specification |
+| Material | Source | What the source says |
 |---|---|---|
 | Carbon tetrafluoride | SEMI C3.40 | a "specification for carbon tetrafluoride (CF4) that is used in the semiconductor industry"[^semi-c3-40] |
 | Sulphur hexafluoride | SEMI C3.24 | "specifications for sulfur hexafluoride (SF6) that is used in the semiconductor industry";[^semi-c3-24] "colorless, odorless, non-flammable, and non-toxic"[^wiki-sf6] |
 | Nitrogen trifluoride | — | "a colorless, non-flammable, toxic gas with a slightly musty odor";[^wiki-nf3] "Shipped as a nonliquefied compressed gas"[^niosh-nf3] |
-| Hydrofluorocarbons and perfluorocarbons | CHF₃, CH₃F, C₂F₆ and c-C₄F₈ | CH₃F is "non-toxic, liquefiable, and flammable";[^wiki-ch3f] c-C₄F₈ has also been investigated "as a possible replacement for sulfur hexafluoride as a dielectric gas"[^wiki-c4f8] |
+| Hydrofluorocarbons and perfluorocarbons | — | CHF₃, CH₃F, C₂F₆ and c-C₄F₈; CH₃F is "non-toxic, liquefiable, and flammable";[^wiki-ch3f] c-C₄F₈ has also been investigated "as a possible replacement for sulfur hexafluoride as a dielectric gas"[^wiki-c4f8] |
 | Chlorine | — | a "Greenish-yellow gas with a pungent, irritating odor", "Shipped as a liquefied compressed gas"[^niosh-cl2] |
 | Boron trichloride | — | Wikipedia's article links it to its list of highly toxic gases[^wiki-bcl3] |
 | Hydrogen bromide | — | "Colorless gas with a sharp, irritating odor", "Shipped as a liquefied compressed gas"[^niosh-hbr] |

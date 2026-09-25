@@ -179,20 +179,20 @@ as supplied or of textbook mixtures; SKY130's concentrations and
 temperatures are not public.
 
 :::{table} Representative wet chemicals and grades, as public and current supplier documents describe them
-:widths: 26 8 66
+:widths: 24 76
 
-| Material | As supplied | Specification |
-|---|---|---|
-| Hydrofluoric acid | — | Supplied at "49% (48–52%)" and diluted at the point of use;[^wiki-hf] SEMI C28 standardises "requirements for hydrofluoric acid used in the semiconductor industry"[^semi-c28] |
-| Buffered oxide etch | — | A mixture of 40 % NH₄F and 49 % HF, 6:1 by volume in Wikipedia's example, which etches thermal oxide "at approximately 2 nanometres per second at 25 degrees Celsius";[^wiki-boe] SEMI C23 covers "grades of buffered oxide etchants used in the semiconductor industry";[^semi-c23] surfactant-bearing buffered etchants are described in patents such as Hashimoto's and Daikin's[^pat-bhf-hashimoto][^pat-bhf-daikin] |
-| Hydrogen peroxide | — | 30 % in the RCA and piranha recipes;[^wiki-rca][^wiki-piranha] SEMI C30 covers "five Grades and one Tier of hydrogen peroxide used in the semiconductor industry";[^semi-c30] it "is typically stored with a stabilizer in a weakly acidic solution in an opaque bottle"[^wiki-h2o2] |
-| Ammonium hydroxide | — | "ammonia water, (29% by weight of NH3)" for SC-1 in Wikipedia's recipe[^wiki-rca] |
-| Hydrochloric acid | — | "aqueous HCl (hydrochloric acid, 37% by weight)" for SC-2 in Wikipedia's recipe[^wiki-rca] |
-| Sulphuric acid | — | SEMI C44 covers "two Grades and three Tiers of sulfuric acid used in the semiconductor industry";[^semi-c44] "When sulfuric acid is added to water, a considerable amount of heat is released"[^wiki-h2so4] |
-| Phosphoric acid | — | "commonly encountered as an 85% aqueous solution"; "Fractional crystallization can achieve higher purities typically used for semiconductor applications"[^wiki-h3po4] |
-| Nitric acid | — | Commercially 68 % in water[^wiki-hno3] |
-| Isopropanol (2-propanol) | — | SEMI C41 "covers all grades of 2-propanol used in the semiconductor industry", and "The VLSI grade purity level is typically required by semiconductor devices with geometries of 0.8 to 1.2 microns", a grade defined for much larger geometries than 130 nm; the listing describes no other grade;[^semi-c41] it "is a colorless, flammable, organic compound"[^wiki-ipa] |
-| Post-etch residue removers | — | Proprietary solvent blends; the step pages write them as the EKC265/EKC270 class, and EKC Technology's patent gives the hydroxylamine–alkanolamine chemistry;[^pat-ekc-hydroxylamine] Chen et al. studied EKC265[^chen-2003-ekc] |
+| Material | What the sources say |
+|---|---|
+| Hydrofluoric acid | Supplied at "49% (48–52%)" and diluted at the point of use;[^wiki-hf] SEMI C28 standardises "requirements for hydrofluoric acid used in the semiconductor industry"[^semi-c28] |
+| Buffered oxide etch | A mixture of 40 % NH₄F and 49 % HF, 6:1 by volume in Wikipedia's example, which etches thermal oxide "at approximately 2 nanometres per second at 25 degrees Celsius";[^wiki-boe] SEMI C23 covers "grades of buffered oxide etchants used in the semiconductor industry";[^semi-c23] surfactant-bearing buffered etchants are described in patents such as Hashimoto's and Daikin's[^pat-bhf-hashimoto][^pat-bhf-daikin] |
+| Hydrogen peroxide | 30 % in the RCA and piranha recipes;[^wiki-rca][^wiki-piranha] SEMI C30 covers "five Grades and one Tier of hydrogen peroxide used in the semiconductor industry";[^semi-c30] it "is typically stored with a stabilizer in a weakly acidic solution in an opaque bottle"[^wiki-h2o2] |
+| Ammonium hydroxide | "ammonia water, (29% by weight of NH3)" for SC-1 in Wikipedia's recipe[^wiki-rca] |
+| Hydrochloric acid | "aqueous HCl (hydrochloric acid, 37% by weight)" for SC-2 in Wikipedia's recipe[^wiki-rca] |
+| Sulphuric acid | SEMI C44 covers "two Grades and three Tiers of sulfuric acid used in the semiconductor industry";[^semi-c44] "When sulfuric acid is added to water, a considerable amount of heat is released"[^wiki-h2so4] |
+| Phosphoric acid | "commonly encountered as an 85% aqueous solution"; "Fractional crystallization can achieve higher purities typically used for semiconductor applications"[^wiki-h3po4] |
+| Nitric acid | Commercially 68 % in water[^wiki-hno3] |
+| Isopropanol (2-propanol) | SEMI C41 "covers all grades of 2-propanol used in the semiconductor industry", and "The VLSI grade purity level is typically required by semiconductor devices with geometries of 0.8 to 1.2 microns", a grade defined for much larger geometries than 130 nm; the listing describes no other grade;[^semi-c41] it "is a colorless, flammable, organic compound"[^wiki-ipa] |
+| Post-etch residue removers | Proprietary solvent blends; the step pages write them as the EKC265/EKC270 class, and EKC Technology's patent gives the hydroxylamine–alkanolamine chemistry;[^pat-ekc-hydroxylamine] Chen et al. studied EKC265[^chen-2003-ekc] |
 :::
 
 ## At SkyWater

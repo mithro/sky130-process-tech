@@ -186,7 +186,7 @@ not what SkyWater buys; the purity of SKY130's gases is not public.
 :::{table} Representative process gases and grades, as standards and current supplier documents describe them
 :widths: 14 30 56
 
-| Material | As supplied | Specification |
+| Material | Source | What the source says |
 |---|---|---|
 | Nitrogen | — | SEMI C59 provides "a series of specifications for different grades of nitrogen (N2)" and covers "all grades of nitrogen used in the semiconductor industry"[^semi-c59] |
 | Nitrogen | Linde Engineering SPECTRA / NITRON E on-site plants | SPECTRA plants "deliver ultra-pure gaseous and liquid N2 and O2 with less than 1 part per billion (ppb) impurities"; NITRON E plants suit "customers with less exacting purity requirements (100 ppb)"[^linde-eng-electronics] |

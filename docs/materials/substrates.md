@@ -138,15 +138,17 @@ named in SkyWater's filings (see *At SkyWater*).
 :::{table} Representative wafer grades, as public standards and current supplier documents describe them
 :widths: 20 16 64
 
-| Material | As supplied | Specification |
+| Material | Source | What the source says |
 |---|---|---|
 | Prime polished wafers | — | SEMI M1 (current revision M1-0924) gives "Standardized dimensional requirements" for "a large number of categories of standardized polished wafers"[^semi-m1] |
 | Prime polished wafers | SEH America | polished wafers "can be produced in orientations <100>, <111>, and <110>" with boron or phosphorus for all diameters, and its 200 mm range includes "standard CZ polished wafers, COP free polished wafers, epi wafers of all types, argon annealed wafers"[^seh-products] |
 | Prime polished wafers | GlobalWafers | calls its principal product "the prime polished wafer"[^gw-products] |
 | Annealed and gettering wafers | GlobalWafers | Argon-annealed wafers with a "COP-free surface zone" and an oxygen-denuded zone[^gw-products] |
 | Annealed and gettering wafers | SEH | uses "nitrogen doping in the CZ crystal and optimized annealing recipes"[^seh-products] |
-| Epitaxial wafers | SEH | "P/P-, P/P+, N/N-, and N/N+ wafers" in SEH's list;[^seh-products] SEMI M62[^semi-m62] |
-| Virgin test wafers | GlobalWafers | SEMI M8 (M8-0312, reapproved 1023, current), with classes by diameter;[^semi-m8] GlobalWafers' "Test and Monitor Wafers"[^gw-products] |
+| Epitaxial wafers | SEH | "P/P-, P/P+, N/N-, and N/N+ wafers" in SEH's list[^seh-products] |
+| Epitaxial wafers | SEMI M62 | specifies epitaxial wafers[^semi-m62] |
+| Virgin test wafers | SEMI M8 | (M8-0312, reapproved 1023, current), with classes by diameter[^semi-m8] |
+| Virgin test wafers | GlobalWafers | "Test and Monitor Wafers"[^gw-products] |
 | Premium wafers | — | SEMI M24 (M24-0612, inactive) for particle counting, metal contamination and lithography resolution, with "tighter specification values in some specific items for the specific usage"[^semi-m24] |
 | Reclaimed wafers | — | SEMI M38 (M38-0312, reapproved 1023, current) "divides reclaimed wafers into four application categories: Mechanical, Furnace, Particle, and Lithography" and includes requirements for "devices in the 180 and 130 nm technology generations"[^semi-m38] |
 | Non-silicon dummy wafers | — | Silicon-carbide dummy and baffle wafers for furnaces, which "can be cleaned and reused indefinitely in LPCVD or diffusion processes", including a 200 mm size of "0.724 mm" thickness[^entegris-supersic] |

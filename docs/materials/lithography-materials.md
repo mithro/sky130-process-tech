@@ -190,18 +190,18 @@ SkyWater buys, although Tokyo Ohka Kogyo, JSR and Moses Lake Industries
 are among the suppliers SkyWater's filings name.[^sec-01][^sec-02]
 
 :::{table} Representative lithography materials and grades, as public and current supplier documents describe them
-:widths: 20 12 68
+:widths: 26 74
 
-| Material | As supplied | Specification |
-|---|---|---|
-| i-line positive resists | — | DNQ/novolac, including thick grades for implant masks;[^wiki-resist] Tokyo Ohka Kogyo lists "g/i-Line photoresists" among its semiconductor products,[^tok-products] and JSR a lineup "compatible with various exposure sources, including EUV (MOR), EUV (CAR), ArF, KrF, i-line, and g-line"[^jsr-em] |
-| KrF positive resists | — | Chemically amplified hydroxystyrene resists;[^ito-2005] TOK lists "KrF excimer laser photoresists"[^tok-products] |
-| Anti-reflective coatings | — | Organic dyed polymers of the kind Brewer Science patented;[^pat-arc-brewer] JSR sells "underlayers and topcoats" as "multilayer materials"[^jsr-em] |
-| Adhesion promoter | — | HMDS, bis(trimethylsilyl)amine, applied as vapour;[^wiki-hmds] TOK lists "Adhesion Enhancing Materials"[^tok-products] |
-| Developer | — | TMAH in water, commonly 2.38 % (0.26 N), with or without surfactant;[^microchemicals-dev][^wiki-resist] SEMI C46 is a "guide for a grade of 25% tetramethylammonium hydroxide", the concentrate,[^semi-c46] and Moses Lake Industries sells TMAH "at concentrations of choice (in water) up to 25%, and with or without surfactants", with "metallic impurity levels of <1000 ppt"[^mli-tmah] |
-| Edge-bead and rinse solvents | — | PGMEA and ethyl lactate blends;[^wiki-pgmea][^pat-ebr-clariant][^pat-thinner-samsung] TOK lists "Thinners"[^tok-products] |
-| Reticles and pellicles | — | Chrome or attenuated phase-shift absorbers on quartz blanks to SEMI P1, protected by pellicles to SEMI P5[^semi-p1][^semi-p5][^photronics-abr] |
-| Exposure-tool consumables | — | KrF laser gas, a noble gas with a reactive halogen[^wiki-excimer] (krypton with a fluorine–neon premix, as the step pages list it), and mercury arc lamps[^ushio-uv-lamps] |
+| Material | What the sources say |
+|---|---|
+| i-line positive resists | DNQ/novolac, including thick grades for implant masks;[^wiki-resist] Tokyo Ohka Kogyo lists "g/i-Line photoresists" among its semiconductor products,[^tok-products] and JSR a lineup "compatible with various exposure sources, including EUV (MOR), EUV (CAR), ArF, KrF, i-line, and g-line"[^jsr-em] |
+| KrF positive resists | Chemically amplified hydroxystyrene resists;[^ito-2005] TOK lists "KrF excimer laser photoresists"[^tok-products] |
+| Anti-reflective coatings | Organic dyed polymers of the kind Brewer Science patented;[^pat-arc-brewer] JSR sells "underlayers and topcoats" as "multilayer materials"[^jsr-em] |
+| Adhesion promoter | HMDS, bis(trimethylsilyl)amine, applied as vapour;[^wiki-hmds] TOK lists "Adhesion Enhancing Materials"[^tok-products] |
+| Developer | TMAH in water, commonly 2.38 % (0.26 N), with or without surfactant;[^microchemicals-dev][^wiki-resist] SEMI C46 is a "guide for a grade of 25% tetramethylammonium hydroxide", the concentrate,[^semi-c46] and Moses Lake Industries sells TMAH "at concentrations of choice (in water) up to 25%, and with or without surfactants", with "metallic impurity levels of <1000 ppt"[^mli-tmah] |
+| Edge-bead and rinse solvents | PGMEA and ethyl lactate blends;[^wiki-pgmea][^pat-ebr-clariant][^pat-thinner-samsung] TOK lists "Thinners"[^tok-products] |
+| Reticles and pellicles | Chrome or attenuated phase-shift absorbers on quartz blanks to SEMI P1, protected by pellicles to SEMI P5[^semi-p1][^semi-p5][^photronics-abr] |
+| Exposure-tool consumables | KrF laser gas, a noble gas with a reactive halogen[^wiki-excimer] (krypton with a fluorine–neon premix, as the step pages list it), and mercury arc lamps[^ushio-uv-lamps] |
 :::
 
 ## At SkyWater

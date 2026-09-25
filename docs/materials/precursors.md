@@ -147,19 +147,19 @@ standards and general properties, not what SkyWater buys; SKY130's
 precursor grades and flows are not public.
 
 :::{table} Representative precursors and grades, as public and current supplier documents describe them
-:widths: 20 12 68
+:widths: 22 78
 
-| Material | As supplied | Specification |
-|---|---|---|
-| Silane | — | SEMI C3.55 provides "specifications for silane (SiH4)" and covers "requirements for bulk silane (SiH4) used in the semiconductor industry";[^semi-c3-55] silane is "slightly toxic", with an LC50 for rats of "0.96% (9,600 ppm) over a 4-hour exposure"[^wiki-silane] |
-| Dichlorosilane | — | "Dichlorosilane must be ultrapurified and concentrated in order to be used for the manufacturing of semiconducting epitaxial silicon layers"; it "is also very toxic"[^wiki-dcs] |
-| Ammonia | — | SEMI C3.12 is a "specification for ammonia (NH3) that is used in the semiconductor industry", first published in 1983 and reapproved in 2022 as C3.12-0116 (Reapproved 0922)[^semi-c3-12] |
-| TEOS | — | A liquid precursor to silicon dioxide[^wiki-teos] |
-| BTBAS | — | A liquid aminosilane for 550–600 °C LPCVD nitride[^gumpher-2004] |
-| Silicon tetrafluoride | — | A "toxic, corrosive" gas[^wiki-sif4] |
-| Tungsten hexafluoride | — | SEMI C70 provides "specifications for tungsten hexafluoride (WF6) that are used in the semiconductor industry" (revision C70-0924);[^semi-c70] the gas is "roughly 11 times heavier than air"[^wiki-wf6] |
-| Ozone | — | Generated at the tool from oxygen by corona discharge;[^wiki-ozone] Applied's SACVD chamber used "TEOS (tetraethylorthosilicate) and ozone"[^amat-sacvd-2000] |
-| Diborane | — | Diluted in hydrogen, argon, nitrogen or helium[^niosh-diborane] |
+| Material | What the sources say |
+|---|---|
+| Silane | SEMI C3.55 provides "specifications for silane (SiH4)" and covers "requirements for bulk silane (SiH4) used in the semiconductor industry";[^semi-c3-55] silane is "slightly toxic", with an LC50 for rats of "0.96% (9,600 ppm) over a 4-hour exposure"[^wiki-silane] |
+| Dichlorosilane | "Dichlorosilane must be ultrapurified and concentrated in order to be used for the manufacturing of semiconducting epitaxial silicon layers"; it "is also very toxic"[^wiki-dcs] |
+| Ammonia | SEMI C3.12 is a "specification for ammonia (NH3) that is used in the semiconductor industry", first published in 1983 and reapproved in 2022 as C3.12-0116 (Reapproved 0922)[^semi-c3-12] |
+| TEOS | A liquid precursor to silicon dioxide[^wiki-teos] |
+| BTBAS | A liquid aminosilane for 550–600 °C LPCVD nitride[^gumpher-2004] |
+| Silicon tetrafluoride | A "toxic, corrosive" gas[^wiki-sif4] |
+| Tungsten hexafluoride | SEMI C70 provides "specifications for tungsten hexafluoride (WF6) that are used in the semiconductor industry" (revision C70-0924);[^semi-c70] the gas is "roughly 11 times heavier than air"[^wiki-wf6] |
+| Ozone | Generated at the tool from oxygen by corona discharge;[^wiki-ozone] Applied's SACVD chamber used "TEOS (tetraethylorthosilicate) and ozone"[^amat-sacvd-2000] |
+| Diborane | Diluted in hydrogen, argon, nitrogen or helium[^niosh-diborane] |
 :::
 
 ## At SkyWater
