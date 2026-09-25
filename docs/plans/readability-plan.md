@@ -16,7 +16,8 @@ is the order of work and its status.
   `tools/check_preserved.py` (W0) compares a page before and after: the multisets of footnote markers,
   numbers and quoted strings must match (apart from declared additions such as step names in new tables).
 * All checkers, generator `--check`s and the `-W` build pass before review.
-* Writers and fixers: Sonnet. Reviewers: Opus, looking at the rendered result with `tools/shoot.py` as well
+* Writers: Opus for content batches from 2026-09-26 (see `model-comparison.md`); Sonnet for scripted and
+  tool work. Reviewers: Opus, looking at the rendered result with `tools/shoot.py` as well
   as the diff. One worktree and branch per task; small commits; a progress file per branch; no rebase or
   force-push by agents; the coordinator merges fast-forward.
 * A model that finds an arithmetic slip or factual doubt while re-presenting text reports it; it does not
