@@ -206,6 +206,19 @@ where the Marketing Part field and history row both say plain "CY28547".
 **All 20 R52T-3 file ids are now records.** 20 more Group B file ids remain
 (R52FFD-3, B55SGT, C8Q-3R, R9Q-3R, R95LD-3R, S4AD-5 variants).
 
+## Twelfth batch: R52FFD-3, B55SGT (x2), C8Q-3R (x2)
+
+| id | technology_codes | source file id | notes |
+|---|---|---|---|
+| qtp-005105 | R52FFD-3 | 91571 | derived from R52D-3 via a named "Technology derivative" event, QTP 011205 |
+| qtp-051102 | B55SGT | 92681 | a BiCMOS process (SiGe Bipolar + CMOS); named five different ways in one document |
+| qtp-043001 | B55SGT | 92146 | repeats B55SGT's origin rows with near-identical but not exact wording |
+| qtp-042106 | C8Q-3R | 92096 | new code, 0.13 µm; this is its own origin report |
+| qtp-042105 | C8Q-3R | 92091 | repeats the origin row; Metal 1 Ti thickness printed differently from qtp-042106 (300A vs 100A) |
+
+15 more Group B file ids remain (R9Q-3R, R95LD-3R, further C8Q-3R, S4AD-5
+variants).
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records

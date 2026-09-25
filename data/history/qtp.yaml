@@ -6791,3 +6791,269 @@ documents:
     location: p.3, Technology/Fab Process Description
   notes: Adds a further B30M history row (062307, Dec 06) alongside its own (063606, also Dec 06) for a
     sibling part.
+- id: qtp-005105
+  origin: cypress
+  doc_type: QTP
+  number: '005105'
+  cypress_document_number: null
+  title: CY7C65640A TetraHub High Speed USB Hub Controller, R52FFD-3 Technology, Fab 4
+  version: '5.0'
+  date_printed: June 2005
+  url: https://www.cypress.com/file/91571/download
+  archive_url: https://web.archive.org/web/20210507215953/https://www.cypress.com/file/91571/download
+  retrieved: '2026-09-25'
+  sha256: 9d83b0825bbb27fd3dd7aa3c24b02ca81f45224d196ef3a8af5f5b49e85d6d81
+  technology_codes:
+  - R52FFD-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C65640A
+  die_ids:
+  - 7C65640C
+  - 7C65641D
+  - 7C65642E
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6,000Å Al-0.5%Cu/300Å TiW; Metal 2: 300Å Ti/8,000Å Al-0.5%Cu/300Å
+      TiW'
+    passivation: 1,000Å Oxide / 9,000 Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal, 0.25 µm
+    gate_oxide: SiO2 55Å
+    fab_location: Cypress Semiconductor – Bloomington, MN
+    die_fab_line_id: Fab4/R52FFD-3
+    transistors: '500,000'
+    gates: '100,000'
+  qualification_history:
+  - number: '99311'
+    description: New R52D-3 Technology /New 2Meg,CY7C1329 SRAM device
+    date: Aug 99
+  - number: '011205'
+    description: New Technology derivative R52FFD-3, Fab 4 / New 1Meg, GB/s Quad Port Switch CY7C04312BV/
+      CY7C04314BV
+    date: June 01
+  - number: '005105'
+    description: New TetraHub High Speed USB Hub Controller CY7C65640
+    date: Oct 02
+  - number: '040601'
+    description: HX2 Rev D CY7C65640/4 Mask change (CTM1, MM1, V1M, MM2) Fix TT
+    date: Mar 04
+  - number: '044401'
+    description: HX2 Rev E CY7C65640A Mask change (CTM1, MM1, V1M, MM2)
+    date: Nov 04
+  quotes:
+  - text: New Technology derivative R52FFD-3, Fab 4 / New 1Meg, GB/s Quad Port Switch CY7C04312BV/ CY7C04314BV
+    location: p.2, Technology Qualification History, row 011205
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52FFD-3'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal, 0.25 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R52FFD-3 is derived from R52D-3 (origin QTP 99311, already in this corpus as qtp-003906's history)
+    via a named "Technology derivative" event, QTP 011205 (June 01) -- the same R52D-3-to-R52xxx-3 derivative
+    pattern this corpus already shows for R52LD-5R and R52LD-3.
+- id: qtp-051102
+  origin: cypress
+  doc_type: QTP
+  number: '051102'
+  cypress_document_number: null
+  title: FastEdge Series, B55SGT Technology, Fab 4
+  version: '1.0'
+  date_printed: May 2005
+  url: https://www.cypress.com/file/92681/download
+  archive_url: https://web.archive.org/web/20201130144548/https://www.cypress.com/file/92681/download
+  retrieved: '2026-09-25'
+  sha256: ad2bae15f12d0f9faaf38a23de5dfae53b7bdeb3fe7d386d572096e6c276cccd
+  technology_codes:
+  - B55SGT
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN, CMI)
+  products:
+  - CY2PP3115
+  die_ids:
+  - 7B83115A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'M1: 500Å TiW / 6000Å Al / 500Å TiW; M2: 500Å TiW / 8000Å Al / 500Å TiW; M3: 500Å
+      TiW / 40,000Å Al / 300Å TiW'
+    passivation: 4000Å TEOS / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS (0.21 – 0.35 µm), SiGe Bipolar
+    gate_oxide: SiO2, 45Å
+    fab_location: Cypress Semiconductor – Bloomington, MN (CMI)
+    die_fab_line_id: Fab 4/ B55SGT
+    transistors: 'Maximum Available in Base: 100,000 Transistors; Average Design: 60,000 transistors'
+    gates: 'Maximum Available: 25,000; Average design: 15,000'
+  qualification_history:
+  - number: '015104'
+    description: New Technology B55SGT18A using New Device, CY2DP3110A1 HF Buffer Family
+    date: May 03
+  - number: '024307'
+    description: 7B8P3110AC HF Buffer Family, 55SGT18A , Fab4
+    date: Nov 03
+  - number: '051102'
+    description: 7B83115BC Mask Option using B55SG Technology
+    date: Apr 05
+  quotes:
+  - text: New Technology B55SGT18A using New Device, CY2DP3110A1 HF Buffer Family
+    location: p.2, Package Qualification History, row 015104
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – B55STG
+    location: p.3, section heading
+  - text: CMOS (0.21 – 0.35 µm), SiGe Bipolar
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: B55SGT is a BiCMOS process (SiGe Bipolar plus CMOS, "STI" bipolar isolation, "SiGe / N+ Poly"
+    base/emitter) -- the only process described this way in this corpus. It is named five different ways
+    across this one document alone -- "B55SGT" (title, Die Fab Line ID), "B55SGT18A" and "55SGT18A" (history
+    rows), "B55STG" (process-description section heading), and "B55SG" (history row and Qualification
+    Purpose) -- all quoted verbatim rather than reconciled. Its own history table calls its origin
+    "PACKAGE QUALIFICATION HISTORY" rather than the "PRODUCT QUALIFICATION HISTORY" heading used by most
+    other reports in this corpus, and gives the design rule as a range, "0.21 – 0.35 µm", rather than a
+    single figure.
+- id: qtp-043001
+  origin: cypress
+  doc_type: QTP
+  number: '043001'
+  cypress_document_number: null
+  title: FastEdge Series, B55SGT Technology, Fab 4
+  version: '1.0'
+  date_printed: July 2005
+  url: https://www.cypress.com/file/92146/download
+  archive_url: https://web.archive.org/web/20210422152204/https://www.cypress.com/file/92146/download
+  retrieved: '2026-09-25'
+  sha256: cc30295fc77a73d0ac19f5b80652b45e8fc4ff59300ed06754c7268d83c3db82
+  technology_codes:
+  - B55SGT
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN, CMI)
+  products:
+  - CY2PP318
+  die_ids:
+  - 7B8318A
+  - 7B83118B
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'M1: 500Å TiW / 6000Å Al / 500Å TiW; M2: 500Å TiW / 8000Å Al / 500Å TiW; M3: 500Å
+      TiW / 40,000Å Al / 300Å TiW'
+    passivation: 4000Å TEOS / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS (0.21 – 0.35 µm), SiGe Bipolar
+    gate_oxide: SiO2, 45Å
+    fab_location: Cypress Semiconductor – Bloomington, MN (CMI)
+    die_fab_line_id: Fab 4/ B55SGT
+    transistors: 'Maximum Available in Base: 100,000 Transistors; Average Design: 60,000 Transistors'
+    gates: 'Maximum Available: 25,000; Average design: 15,000'
+  qualification_history:
+  - number: '015104'
+    description: New Technology B55SGT18A using New Device, CY2DP3110A1 HF Buffer Family
+    date: May 03
+  - number: '024307'
+    description: 7B8P3110AC HF Buffer Family, 55SGT18A from Fab4
+    date: Nov 03
+  - number: '043001'
+    description: (CY2PP318) New Mask Option from 7B83110 using B55SG Technology from Fab4
+    date: Apr 05
+  quotes:
+  - text: (CY2PP318) New Mask Option from 7B83110 using B55SG Technology from Fab4
+    location: p.2, Package Qualification History, row 043001
+  - text: 'Die Fab Line ID/ Wafer Process ID: Fab 4/ B55SGT'
+    location: p.3, Technology/Fab Process Description
+  notes: Independently repeats B55SGT's origin rows (015104, 024307) with wording that matches qtp-051102's
+    closely but not exactly (e.g. "55SGT18A from Fab4" here vs "55SGT18A , Fab4" there); process figures
+    agree exactly.
+- id: qtp-042106
+  origin: cypress
+  doc_type: QTP
+  number: '042106'
+  cypress_document_number: null
+  title: DDR2 PLL Device Family, C8Q-3R Technology, Fab 4
+  version: '3.0'
+  date_printed: March 2007
+  url: https://www.cypress.com/file/92096/download
+  archive_url: https://web.archive.org/web/20210419230227/https://www.cypress.com/file/92096/download
+  retrieved: '2026-09-25'
+  sha256: 296e828e60181dc183e01d16d3a0254bed1941b446b837057e611ef52158b0d0
+  technology_codes:
+  - C8Q-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN, CMI)
+  products:
+  - CY2SSTU877
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 100A Ti/3,200A Al 0.5% Cu /300A TiW; Metal 2: 150A Ti/4,230A Al 0.5% Cu/300A
+      TiW; Metal 3: 150A Ti/4,230A Al 0.5% Cu/300A TiW; Metal 4: 150A Ti/8,000A Al 0.5% Cu/300A TiW'
+    passivation: 1,000A TeOs / 9,000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: CMOS, 0.13 µm
+    gate_oxide: SiO2 DGOX 32/55A
+    fab_location: CMI/Bloomington MN
+    die_fab_line_id: Fab4, C8Q-3R
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '042106'
+    description: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    date: Jan 05
+  - number: '050305'
+    description: 7C82877B DDR2 PLL All Layer Independent mask set on C8Q-3RQ Technology, Fab4
+    date: Mar 05
+  quotes:
+  - text: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    location: p.2, Product Qualification History, row 042106
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4, C8Q-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, 0.13 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: This is C8Q-3R's own origin report (QTP 042106 itself, "New C8Q-3R Technology", Jan 05), a code new
+    to this corpus at 0.13 µm with a dual gate oxide ("DGOX 32/55A"). Its own later history row spells the
+    code "C8Q-3RQ" (an extra Q) for a mask-set change.
+- id: qtp-042105
+  origin: cypress
+  doc_type: QTP
+  number: '042105'
+  cypress_document_number: null
+  title: DDR2 Register Device Family, C8Q-3R Technology, Fab 4
+  version: '2.0'
+  date_printed: July 2005
+  url: https://www.cypress.com/file/92091/download
+  archive_url: https://web.archive.org/web/20210509141440/https://www.cypress.com/file/92091/download
+  retrieved: '2026-09-25'
+  sha256: 83341ca283743945ac84871b91861e0d660b933f9088c4f0dcbf192d95ebfb27
+  technology_codes:
+  - C8Q-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN, CMI)
+  products:
+  - CY2SSTU32864
+  - CY2SSTU32866
+  die_ids:
+  - 7C83864A
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 300A Ti/3,200A Al 0.5% Cu /300A TiW; Metal 2: 150A Ti/4,000A Al 0.5% Cu/300A
+      TiW; Metal 3: 150A Ti/4,000A Al 0.5% Cu/300A TiW; Metal 4: 150A Ti/4,000A Al 0.5% Cu/300A TiW'
+    passivation: 1,000A TeOs / 9,000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, 0.13 µm
+    gate_oxide: SiO2 DGOX 32/55A
+    fab_location: CMI/Fab4
+    die_fab_line_id: Fab4, C8Q-3R
+    transistors: '9,147'
+    gates: '2,199'
+  qualification_history:
+  - number: '042106'
+    description: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    date: Jan 05
+  - number: '042105'
+    description: 7C83864/6A New Device Family on C8Q-3R Technology, Fab4
+    date: Mar 05
+  - number: '052209'
+    description: 6 Mask Layer (M1 to V1A3) change to improve VOH, VOL and fix parity bug
+    date: Jun 05
+  quotes:
+  - text: 7C83864/6A New Device Family on C8Q-3R Technology, Fab4
+    location: p.2, Product Qualification History, row 042105
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4, C8Q-3R'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, 0.13 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: Independently repeats C8Q-3R's origin row (QTP 042106) verbatim, matching qtp-042106. This report's
+    Metal 1 is printed "300A Ti/3,200A Al 0.5% Cu /300A TiW" against qtp-042106's "100A Ti/3,200A Al 0.5%
+    Cu /300A TiW" (Ti thickness 300A here vs 100A there) for the same technology code and fab -- both quoted
+    verbatim rather than reconciled.
