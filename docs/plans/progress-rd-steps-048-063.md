@@ -84,6 +84,58 @@ table cells > 25: 0. After: see the batch summary at the end.
   clause); four labels; "we infer" correctly in the second sentence of the lead with "from silane".
 * **Caps** (open text): para > 100 3 → 0; item > 60 5 → 0; sentence > 45 6 → 0.
 
+### 049 RPM — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the PDK mask/layer and
+  resistor-family evidence and the "Two facts" argument (≈ 270 words).
+* **R-PARA.** The 124-word PDK paragraph split at the change of subject, labels "**Mask and
+  layers.**" / "**Resistor families.**" (evidence sequence). "Why this step exists" paragraph 1
+  (155 w) split into three at its seams (the need; the literature; the PDK's device), no labels
+  (narrative).
+* **R-LIST.** "Two facts fix what the mask must do. First, … Second, …" → lead-in with a colon and two
+  plain bullets that keep "First," and "Second," and every word; the conclusion "We therefore
+  infer …" is the paragraph after the list. No bold labels: the only labels available would be new
+  wording (batch-3 review, Low item on invented labels). The rpm rules (rpm.3, .8, .7, .6, .4; one
+  61-word sentence) → a four-bullet list, `[^pdk-periph]` on the lead-in before the colon, every
+  word kept except the list-joining "and" before the rpm.6 clause; "but" kept before rpm.4. A list,
+  not an R-TABLE `Rule | Constrains | Value` table: the rules are clauses ("must not straddle …
+  and must keep 0.200 µm from it") that do not fit those columns without new wording; 030's rule
+  list (merged) is the precedent.
+* **R-SENTENCE.** "If the resistor bodies received … let alone 2000 Ω/sq, because counter-doping …"
+  (49 w) split: "This is because counter-doping …" (subject + verb added; no marker in the base
+  sentence).
+* **R-CATEGORY.** Classification sentence (34 w) alone; the rest is one sentence ("Its minimum
+  feature …", second paragraph, no label) and one "What is specific to this instance is …" sentence
+  (its own label, step 3), so no "Specific to this step:" list.
+* **R-PARA step 4.** "Exposure" (73 w): lead "i-line step-and-repeat exposure." + two indented
+  continuation paragraphs at the resolution/reflectivity seam.
+* **R-HEDGE.** Italic scope lead-in. **R-TOOLS.** Three tools (no recap table): i-line stepper
+  (*SkyWater says:* verb-first); Tracks and Overlay/CD keep their `[^skw-01]` on the head (their
+  bullets quote nothing, as on 030); "Which track serves which tool is not public." becomes the
+  Tracks continuation paragraph (it is not a grade).
+* **R-OPENQ.** Labels "Regions covered", "Tone, resist and tool", "Alignment marks", "Other
+  resistor bodies"; text after each unchanged.
+* **R-RELATED.** Previous/Next split (one bullet, two relationships); "Reverse-tone partner:" →
+  "Same module: reverse-tone partner RRPM …" (RRPM/URPM are in the module); the "Previous mask step
+  …; next mask step …" bullet and the "Mask page:" bullet → one `Mask:` bullet keeping both glosses.
+  The resistor-body bullet (P1M/P1ME, NPCM, LICM1, PSDM) keeps no label: it mixes modules and no
+  single label is true of it.
+* **R-GLANCE.** Does carries "we infer" (the page's "We therefore infer that `RPM` protects the
+  resistor bodies"); Public numbers are the RPM geometry (RPMCD/RPMCDSP `[^pdk-03]`, rpm.3
+  `[^pdk-periph]`); Not public from Open questions 1–2.
+* **Skipped / left over the cap.** "Resist coat" item (65 w): its only seam is before "Because the
+  implant it masks …", and R-PARA step 2 forbids a paragraph that opens with a connective. The
+  "Second, …" bullet is 45 words (46 counting the `*`).
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `pdk-periph`, `skw-01`,
+  numbers 1.27, 0.84, 0.200, 3 (rpm.3), hedges "we infer", "inference", "not public", identifier
+  `P1I`, number_order (1.27, 0.84, 0.200, 3) — all the glance box. REGROUPED: the rpm rules sentence
+  → the four bullets, same digits in the same order (0.200/3; 8/0.200/7; 0.200/6; 0.110/4).
+  Final run declared `--allow-added markers,numbers,hedges,number_order,identifiers`: clean.
+* **Marker coverage.** 4 flags: the rules lead-in/list (marker on the lead-in by rule; "may" is in
+  the rpm.6 bullet); two Open-questions labels. Nothing lost.
+* **Caps**: para > 100 5 → 0; item > 60 2 → 1 (Resist coat, above); sentence > 45 2 → 0 (1 at
+  45 + bullet marker).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
