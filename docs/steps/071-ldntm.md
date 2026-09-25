@@ -20,6 +20,14 @@ the {term}`SONOS` memory transistors and covers everything else, so that the
 The resist is removed at {ref}`LDASTIS <step-074>`, after which every
 tip in the flow is annealed at {ref}`TIPRTAD <step-075>`.
 
+:::{figure} /_static/figures/sd-071-ldntm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step two capped stacks stand on the wafer, a wide one on the oxide-filled trench and a narrow one on the right-hand active area, with doped layers in the silicon of both active areas. After it one flat-topped block of resist covers the whole slice.
+:width: 560px
+:name: fig-sd-071-ldntm
+
+Before, the wafer cleaned at HVASTIS; after, the LDNTM resist. The mask opens only over the SONOS memory transistors, which the PDK's layer table names as the layer's devices,[^pdk-06] and the slice holds none, so here the resist has no window. The resist is drawn at the thickness of the other standard implant resists; the page infers the PDK's nominal 1.14 µm,[^pdk-03] and the actual thickness is not public. The tips' colour and the halo's hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Under the resist in the lower panel the high-voltage tip on the left is not labelled, because its leader would have to rise through the resist. Not to scale.
+:::
+
 Which devices this mask serves is public. The PDK lists "Lightly Doped
 N-tip, LDNTM" as a mask used in SKY130,[^pdk-05] and its layer table
 describes the drawn layer `ldntm` (GDS 11:44) as "N-tip implant on

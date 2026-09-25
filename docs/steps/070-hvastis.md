@@ -18,6 +18,14 @@ and cleans the wafer for the third and last tip mask,
 {ref}`LDNTM <step-071>`. It is the second of the three strips in the tip
 module.
 
+:::{figure} /_static/figures/sd-070-hvastis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thin resist film covers everything but the left-hand active area, where a doped layer lies in the silicon. After it the resist is gone and the rest of the drawing is unchanged.
+:width: 560px
+:name: fig-sd-070-hvastis
+
+Before, the thin HVNTM resist after the tilted tip implant; after, the resist stripped and the wafer cleaned, down to the thin oxide the page infers over the silicon and the capped gates, which stays for the next tip implants (no HF step is drawn, as the page infers). The resist's implanted crust and its implanted sidewalls are not drawn. The tips' colour marks where the implants are, not their profiles. The halo, the caps, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 Two things distinguish it from {ref}`ASTIS <step-067>`. The resist is thin —
 the PDK's "Photoresist thickness for HV Tip Implants" is 0.3 µm, against
 1.14 µm for the standard resist[^pdk-03] — and the implant it has absorbed is,

@@ -1,0 +1,34 @@
+id: sd-070-hvastis
+kind: xsection
+page: docs/steps/070-hvastis.md
+series: series-tips-sd.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thin resist film
+  covers everything but the left-hand active area, where a doped layer lies in the silicon.
+  After it the resist is gone and the rest of the drawing is unchanged.
+caption: >-
+  Before, the thin HVNTM resist after the tilted tip implant; after, the resist stripped and the
+  wafer cleaned, down to the thin oxide the page infers over the silicon and the capped gates,
+  which stays for the next tip implants (no HF step is drawn, as the page infers). The resist's
+  implanted crust and its implanted sidewalls are not drawn. The tips' colour marks where the
+  implants are, not their profiles. The halo, the caps, the gate oxides, the re-oxidation oxide
+  and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the
+  liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn.
+  Not to scale.
+arrow:
+  title: "HVASTIS, step 070"
+  note: "The thin implanted resist is ashed and the wafer cleaned, sparing the oxide."
+panels:
+  - state_after: "069"
+    title: "Before: the thin HVNTM resist after HVASTI (step 069)"
+    show_ions: false
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, polyp, tipn]
+    dim_layers: [liner]
+  - state_after: "070"
+    title: "After: the resist stripped"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo]
+    dim_layers: [liner]
+    highlight: {where: [[92, 268]]}

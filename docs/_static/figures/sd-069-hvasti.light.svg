@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 575" width="480" height="575" role="img" data-kind="xsection" data-theme="light">
+<title>Two enlarged cross-sections of the left-hand end of the slice, one above the other: an active area under a thick oxide, and the edge of the oxide-filled trench on the right. Before the step the active area is bare. After it steeply slanted arrows come down on it, and a doped layer lies in the silicon under the whole active area.</title>
+<desc>Two enlarged cross-sections of the left-hand end of the slice, one above the other: an active area under a thick oxide, and the edge of the oxide-filled trench on the right. Before the step the active area is bare. After it steeply slanted arrows come down on it, and a doped layer lies in the silicon under the whole active area.</desc>
+<style>
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-tip-n:#8cc3f2;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.mat.faded{fill:none;stroke:var(--ink-muted);stroke-dasharray:3 2}
+.patink{stroke:var(--ink);stroke-width:0.8;opacity:0.8;fill:none}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
+<rect class="ground" x="0" y="0" width="480" height="575"/>
+<text x="12.0" y="26.0" class="t-panel-title">Before: the 5 V NMOS area in</text>
+<text x="12.0" y="44.0" class="t-panel-title">the HVNTM window (step 068)</text>
+<clipPath id="clip1"><rect x="12" y="56.0" width="268" height="142.3"/></clipPath>
+<g class="drawing" data-rect="12,56.0,268,142.3" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,148.32 255.50,148.32 256.00,150.61 277.00,283.26 278.50,294.60 280.00,300.94 283.00,300.94 283.00,312.32 9.00,312.32"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="254.75,133.09 255.50,133.09 256.00,135.39 257.00,141.70 257.50,143.96 258.50,147.65 259.00,148.32 270.50,148.32 271.00,149.18 280.00,206.00 283.00,206.00 283.00,300.94 280.00,300.94 278.50,294.60 277.00,283.26 256.00,150.61 255.50,148.32 254.75,148.32"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="254.75,60.00 283.00,60.00 283.00,206.00 280.00,206.00 271.00,149.18 270.50,148.32 259.00,148.32 258.50,147.65 257.50,143.96 257.00,141.70 256.00,135.39 255.50,133.09 254.75,133.09"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="9.00,117.86 254.75,117.86 254.75,148.32 9.00,148.32"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,102.64 254.75,102.64 254.75,117.86 9.00,117.86"/>
+</g>
+<text x="328.0" y="132.7" class="t-label-title" data-owner="gox">Thick gate oxide</text>
+<text x="328.0" y="148.7" class="t-label-note muted" data-owner="gox">grown on every</text>
+<text x="328.0" y="164.7" class="t-label-note muted" data-owner="gox">active area at</text>
+<text x="328.0" y="180.7" class="t-label-note muted" data-owner="gox">step 043</text>
+<path class="halo" d="M255.0 127.8L280.0 127.8"/>
+<path class="leader" data-owner="gox" d="M250.5 127.8H285.0H324.0"/>
+<circle class="dot" data-owner="gox" cx="250.5" cy="127.8" r="1.9"/>
+<path class="parrow" d="M34 210.3V248.3"/>
+<path class="pahead" d="M34 256.3l-5.5 -9h11.0z"/>
+<text x="50.0" y="221.3" class="t-label-title acc">HVASTI, step 069</text>
+<text x="50.0" y="236.3" class="t-label-note muted">Arsenic is implanted at a large tilt</text>
+<text x="50.0" y="251.3" class="t-label-note muted">through the thin resist&#x27;s window.</text>
+<text x="12.0" y="284.3" class="t-panel-title">After: a high-voltage n-type tip across the 5 V area</text>
+<clipPath id="clip2"><rect x="12" y="353.3" width="268" height="175.9"/></clipPath>
+<g class="drawing" data-rect="12,353.3,268,175.9" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,479.21 255.50,479.21 256.00,481.51 277.00,614.16 278.50,625.50 280.00,631.83 283.00,631.83 283.00,643.21 9.00,643.21"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="254.75,463.99 255.50,463.99 256.00,466.28 257.00,472.60 257.50,474.86 258.50,478.54 259.00,479.21 270.50,479.21 271.00,480.07 280.00,536.90 283.00,536.90 283.00,631.83 280.00,631.83 278.50,625.50 277.00,614.16 256.00,481.51 255.50,479.21 254.75,479.21"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="254.75,390.90 283.00,390.90 283.00,536.90 280.00,536.90 271.00,480.07 270.50,479.21 259.00,479.21 258.50,478.54 257.50,474.86 257.00,472.60 256.00,466.28 255.50,463.99 254.75,463.99"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="9.00,448.76 254.75,448.76 254.75,479.21 9.00,479.21"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,433.53 254.75,433.53 254.75,448.76 9.00,448.76"/>
+<polygon class="mat m-tip-n" data-layer="hvtip" points="9.00,479.21 255.75,479.21 255.75,506.62 9.00,506.62"/>
+<polygon fill="url(#p-xhatch)" points="9.00,479.21 255.75,479.21 255.75,506.62 9.00,506.62"/>
+<path class="ion" d="M85.8 357.3L29.8 424.1"/>
+<path class="ionhead" d="M26.9 427.5L25.3 434.1L20.7 430.2Z"/>
+<path class="ion" d="M115.6 357.3L59.6 424.1"/>
+<path class="ionhead" d="M56.7 427.5L55.1 434.1L50.5 430.2Z"/>
+<path class="ion" d="M145.4 357.3L89.3 424.1"/>
+<path class="ionhead" d="M86.4 427.5L84.9 434.1L80.3 430.2Z"/>
+<path class="ion" d="M175.1 357.3L119.1 424.1"/>
+<path class="ionhead" d="M116.2 427.5L114.7 434.1L110.1 430.2Z"/>
+<path class="ion" d="M204.9 357.3L148.9 424.1"/>
+<path class="ionhead" d="M146.0 427.5L144.4 434.1L139.8 430.2Z"/>
+<path class="ion" d="M234.7 357.3L178.7 424.1"/>
+<path class="ionhead" d="M175.8 427.5L174.2 434.1L169.6 430.2Z"/>
+<path class="ion" d="M264.5 357.3L208.4 424.1"/>
+<path class="ionhead" d="M205.6 427.5L204.0 434.1L199.4 430.2Z"/>
+<path class="ion" d="M294.2 357.3L238.2 424.1"/>
+<path class="ionhead" d="M235.3 427.5L233.8 434.1L229.2 430.2Z"/>
+<path class="ion" d="M288.3 357.3L268.0 381.4"/>
+<path class="ionhead" d="M265.1 384.9L263.6 391.4L259.0 387.6Z"/>
+</g>
+<text x="328.0" y="494.0" class="t-label-title" data-owner="hvtip">High-voltage</text>
+<text x="328.0" y="510.0" class="t-label-title" data-owner="hvtip">n-type tip</text>
+<text x="328.0" y="526.0" class="t-label-note muted" data-owner="hvtip">HVASTI, step 069</text>
+<path class="halo" d="M256.0 489.1L280.0 489.1"/>
+<path class="leader" data-owner="hvtip" d="M251.5 489.1H285.0H324.0"/>
+<circle class="dot" data-owner="hvtip" cx="251.5" cy="489.1" r="1.9"/>
+<text x="155.0" y="308.2" class="t-label-title" data-owner="ions">HVASTI implant</text>
+<text x="155.0" y="324.2" class="t-label-note muted" data-owner="ions">arsenic; energy and</text>
+<text x="155.0" y="340.2" class="t-label-note muted" data-owner="ions">dose are not public</text>
+<path class="leader" data-owner="ions" d="M146.0 357.3V303.3H151.0"/>
+<circle class="dot" data-owner="ions" cx="146.0" cy="357.3" r="1.9"/>
+<text x="12.0" y="562.1" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+</svg>

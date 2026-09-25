@@ -1,0 +1,35 @@
+id: sd-071-ldntm
+kind: xsection
+page: docs/steps/071-ldntm.md
+series: series-tips-sd.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step two capped stacks stand
+  on the wafer, a wide one on the oxide-filled trench and a narrow one on the right-hand active
+  area, with doped layers in the silicon of both active areas. After it one flat-topped block of
+  resist covers the whole slice.
+caption: >-
+  Before, the wafer cleaned at HVASTIS; after, the LDNTM resist. The mask opens only over the
+  SONOS memory transistors, which the PDK's layer table names as the layer's devices,[^pdk-06]
+  and the slice holds none, so here the resist has no window. The resist is drawn at the
+  thickness of the other standard implant resists; the page infers the PDK's nominal
+  1.14 µm,[^pdk-03] and the actual thickness is not public. The tips' colour and the halo's
+  hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides,
+  the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but
+  not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made
+  earlier are not drawn. Under the resist in the lower panel the high-voltage tip on the left is not labelled, because its leader would have to rise through the resist. Not to scale.
+arrow:
+  title: "LDNTM, step 071"
+  note: "Resist is coated, exposed through the LD N-tip reticle and developed; it opens only over memory cells."
+panels:
+  - state_after: "070"
+    title: "Before: the wafer cleaned after HVASTIS (step 070)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo]
+    dim_layers: [liner]
+  - state_after: "071"
+    title: "After: resist over the whole slice"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, polyp, polyn, hvtip]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}

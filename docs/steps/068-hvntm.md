@@ -20,6 +20,14 @@ so that the arsenic implant {ref}`HVASTI <step-069>` forms their
 lightly doped, graded drain {term}`extension`. The resist is removed at
 {ref}`HVASTIS <step-070>`.
 
+:::{figure} /_static/figures/sd-068-hvntm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the left-hand active area is bare oxide, a wide capped stack stands on the oxide-filled trench and a narrow capped gate on the right-hand active area, with doped layers beside it. After it a thin resist film follows the surface over the trench, both stacks and the right-hand area, and leaves the left-hand area open.
+:width: 560px
+:name: fig-sd-068-hvntm
+
+Before, the wafer cleaned at ASTIS; after, the thin HVNTM resist, open over the 5 V NMOS area on the left (the thick-oxide devices) and covering the field, the resistor and the 1.8 V NMOS. The resist is drawn as a thin film that follows the gate and resistor stacks, because the PDK's "Photoresist thickness for HV Tip Implants" is 0.3 µm, against 1.14 µm for the standard resist,[^pdk-03] less than the stacks it covers; neither thickness is drawn to scale. The 5 V area has no gate in this slice. The resist edge is drawn on the field oxide; the 0.232 µm "HVNTM shadowing" allowance[^pdk-03] is not drawn to scale. The tip's colour marks where the implant is, not its profile. The halo, the caps, the gate oxides and the re-oxidation oxide are drawn but not labelled, nor is the field oxide (the oxide-filled trench in the middle); the liner oxide is drawn faded, and the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The PDK lists "High Volt. N-tip, HVNTM" as a mask used in
 SKY130.[^pdk-05] Unlike the standard tip, this one has a designer-drawn
 layer, `hvntm` (GDS 125:20, "High voltage N-tip implant"), and a
