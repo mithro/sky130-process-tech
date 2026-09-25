@@ -1,0 +1,32 @@
+id: poly-059-poc
+kind: xsection
+page: docs/steps/059-poc.md
+series: series-poly.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a hatched film lies on a
+  continuous film across the whole slice. After it a third, thin film lies on top of the hatched
+  one, again across the whole slice.
+caption: >-
+  Before, the gate film under its nitride cap; after, the thin oxide cap on top, which completes
+  the stack that the gate mask will pattern. The cap's thickness and deposition method are not
+  public, and its thinness is the page's inference; the PDK's "poly cap after SPE" of
+  0.2 µm[^pdk-03] is read on the page as the whole cap stack after the spacer etch, so the two
+  caps are not drawn in any ratio to the gate film or to each other. The field oxide is drawn but
+  not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier
+  are not drawn. Not to scale.
+arrow:
+  title: "POC, step 059"
+  note: "A silicon dioxide film is deposited on the gate nitride."
+panels:
+  - state_after: "058"
+    title: "Before: the nitride cap from GATENIT (step 058)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+  - state_after: "059"
+    title: "After: an oxide cap on the nitride; the gate stack complete"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}

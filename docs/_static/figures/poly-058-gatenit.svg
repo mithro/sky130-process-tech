@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 501" width="480" height="501" role="img" data-kind="xsection" data-theme="auto">
+<title>Two cross-sections of the wafer, one above the other. Before the step a continuous film covers the whole slice. After it a second, hatched film lies on top of the first across the whole slice, following the same small steps.</title>
+<desc>Two cross-sections of the wafer, one above the other. Before the step a continuous film covers the whole slice. After it a second, hatched film lies on top of the first across the whole slice, following the same small steps.</desc>
+<style>
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+@media (prefers-color-scheme: dark){:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-sd-p:#e57db4;--m-implant:#e4e6e9;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#bdb391;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#d4ae5c;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.mat.faded{fill:none;stroke:var(--ink-muted);stroke-dasharray:3 2}
+.patink{stroke:var(--ink);stroke-width:0.8;opacity:0.8;fill:none}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern></defs>
+<rect class="ground" x="0" y="0" width="480" height="501"/>
+<text x="12.0" y="26.0" class="t-panel-title">Before: the doped gate film after UPRIS (step 057)</text>
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="108.0"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,108.0" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,74.00 92.00,74.00 99.00,118.20 99.50,122.00 100.00,124.11 100.50,125.23 101.00,126.06 101.50,126.73 102.00,127.28 102.50,127.76 103.00,128.17 104.00,128.83 105.00,129.31 106.00,129.66 107.00,129.88 108.00,129.99 184.00,129.99 185.00,129.88 186.00,129.66 187.00,129.31 188.00,128.83 189.00,128.17 189.50,127.76 190.00,127.28 190.50,126.73 191.00,126.06 191.50,125.23 192.00,124.11 192.50,122.00 193.00,118.20 200.00,74.00 283.00,74.00 283.00,238.00 9.00,238.00"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="91.75,69.00 92.00,69.00 92.50,72.16 93.00,74.00 97.00,74.00 104.00,118.20 104.50,122.00 105.00,124.11 105.50,124.50 106.50,124.79 107.50,124.95 184.00,124.99 185.00,124.88 186.00,124.66 186.50,124.50 187.00,124.11 187.50,122.00 188.00,118.20 195.00,74.00 199.00,74.00 199.50,72.16 200.00,69.00 200.25,69.00 200.25,74.00 200.00,74.00 193.00,118.20 192.50,122.00 192.00,124.11 191.50,125.23 191.00,126.06 190.50,126.73 190.00,127.28 189.50,127.76 189.00,128.17 188.00,128.83 187.00,129.31 186.00,129.66 185.00,129.88 184.00,129.99 108.00,129.99 107.00,129.88 106.00,129.66 105.00,129.31 104.00,128.83 103.00,128.17 102.50,127.76 102.00,127.28 101.50,126.73 101.00,126.06 100.50,125.23 100.00,124.11 99.50,122.00 99.00,118.20 92.00,74.00 91.75,74.00"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,62.00 200.25,62.00 200.25,69.00 200.00,69.00 199.50,72.16 199.00,74.00 195.00,74.00 188.00,118.20 187.50,122.00 187.00,124.11 186.50,124.50 186.00,124.66 185.00,124.88 184.00,124.99 107.50,124.95 106.50,124.79 105.50,124.50 105.00,124.11 104.50,122.00 104.00,118.20 97.00,74.00 93.00,74.00 92.50,72.16 92.00,69.00 91.75,69.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="9.00,69.00 91.75,69.00 91.75,74.00 9.00,74.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="200.25,69.00 283.00,69.00 283.00,74.00 200.25,74.00"/>
+<polygon class="mat m-poly" data-layer="poly" points="9.00,49.00 71.50,49.00 72.00,42.00 220.00,42.00 220.50,49.00 283.00,49.00 283.00,69.00 200.50,69.00 200.00,62.00 92.00,62.00 91.50,69.00 9.00,69.00"/>
+</g>
+<text x="328.0" y="209.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 138.0H285.0V205.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="138.0" r="1.9"/>
+<text x="328.0" y="153.9" class="t-label-title" data-owner="gox">Gate oxide</text>
+<text x="328.0" y="169.9" class="t-label-note muted" data-owner="gox">grown at</text>
+<text x="328.0" y="185.9" class="t-label-note muted" data-owner="gox">LVGOX, step 047</text>
+<path class="leader" data-owner="gox" d="M276.0 71.5H291.0V149.0H324.0"/>
+<circle class="dot" data-owner="gox" cx="276.0" cy="71.5" r="1.9"/>
+<text x="328.0" y="49.9" class="t-label-title" data-owner="poly">Gate film</text>
+<text x="328.0" y="65.9" class="t-label-note muted" data-owner="poly">amorphous</text>
+<text x="328.0" y="81.9" class="t-label-note muted" data-owner="poly">silicon, undoped</text>
+<text x="328.0" y="97.9" class="t-label-note muted" data-owner="poly">as deposited</text>
+<text x="328.0" y="113.9" class="t-label-note muted" data-owner="poly">(SAGD, step 048)</text>
+<text x="328.0" y="129.9" class="t-label-note tag" data-owner="poly">inferred</text>
+<path class="leader" data-owner="poly" d="M276.0 52.5H297.0V45.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="276.0" cy="52.5" r="1.9"/>
+<path class="parrow" d="M34 234.0V257.0"/>
+<path class="pahead" d="M34 265.0l-5.5 -9h11.0z"/>
+<text x="50.0" y="245.0" class="t-label-title acc">GATENIT, step 058</text>
+<text x="50.0" y="260.0" class="t-label-note muted">A blanket silicon nitride is deposited on the doped gate film.</text>
+<text x="12.0" y="293.0" class="t-panel-title">After: a blanket nitride cap on the gate film</text>
+<clipPath id="clip2"><rect x="12" y="305.0" width="268" height="118.0"/></clipPath>
+<g class="drawing" data-rect="12,305.0,268,118.0" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,351.00 92.00,351.00 99.00,395.20 99.50,399.00 100.00,401.11 100.50,402.23 101.00,403.06 101.50,403.73 102.00,404.28 102.50,404.76 103.00,405.17 104.00,405.83 105.00,406.31 106.00,406.66 107.00,406.88 108.00,406.99 184.00,406.99 185.00,406.88 186.00,406.66 187.00,406.31 188.00,405.83 189.00,405.17 189.50,404.76 190.00,404.28 190.50,403.73 191.00,403.06 191.50,402.23 192.00,401.11 192.50,399.00 193.00,395.20 200.00,351.00 283.00,351.00 283.00,515.00 9.00,515.00"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="91.75,346.00 92.00,346.00 92.50,349.16 93.00,351.00 97.00,351.00 104.00,395.20 104.50,399.00 105.00,401.11 105.50,401.50 106.50,401.79 107.50,401.95 184.00,401.99 185.00,401.88 186.00,401.66 186.50,401.50 187.00,401.11 187.50,399.00 188.00,395.20 195.00,351.00 199.00,351.00 199.50,349.16 200.00,346.00 200.25,346.00 200.25,351.00 200.00,351.00 193.00,395.20 192.50,399.00 192.00,401.11 191.50,402.23 191.00,403.06 190.50,403.73 190.00,404.28 189.50,404.76 189.00,405.17 188.00,405.83 187.00,406.31 186.00,406.66 185.00,406.88 184.00,406.99 108.00,406.99 107.00,406.88 106.00,406.66 105.00,406.31 104.00,405.83 103.00,405.17 102.50,404.76 102.00,404.28 101.50,403.73 101.00,403.06 100.50,402.23 100.00,401.11 99.50,399.00 99.00,395.20 92.00,351.00 91.75,351.00"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,339.00 200.25,339.00 200.25,346.00 200.00,346.00 199.50,349.16 199.00,351.00 195.00,351.00 188.00,395.20 187.50,399.00 187.00,401.11 186.50,401.50 186.00,401.66 185.00,401.88 184.00,401.99 107.50,401.95 106.50,401.79 105.50,401.50 105.00,401.11 104.50,399.00 104.00,395.20 97.00,351.00 93.00,351.00 92.50,349.16 92.00,346.00 91.75,346.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="9.00,346.00 91.75,346.00 91.75,351.00 9.00,351.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="gox" points="200.25,346.00 283.00,346.00 283.00,351.00 200.25,351.00"/>
+<polygon class="mat m-poly" data-layer="poly" points="9.00,326.00 71.50,326.00 72.00,319.00 220.00,319.00 220.50,326.00 283.00,326.00 283.00,346.00 200.50,346.00 200.00,339.00 92.00,339.00 91.50,346.00 9.00,346.00"/>
+<polygon class="mat m-nitride" data-layer="nit" points="9.00,316.00 61.50,316.00 62.00,309.00 230.00,309.00 230.50,316.00 283.00,316.00 283.00,326.00 220.50,326.00 220.00,319.00 72.00,319.00 71.50,326.00 9.00,326.00"/>
+<polygon fill="url(#p-hatch)" points="9.00,316.00 61.50,316.00 62.00,309.00 230.00,309.00 230.50,316.00 283.00,316.00 283.00,326.00 220.50,326.00 220.00,319.00 72.00,319.00 71.50,326.00 9.00,326.00"/>
+<polyline class="hl" points="12.00,313.00 61.50,313.00 62.00,306.00 230.00,306.00 230.50,313.00 280.00,313.00"/>
+</g>
+<text x="328.0" y="452.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 415.0H285.0V448.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="415.0" r="1.9"/>
+<text x="328.0" y="428.9" class="t-label-title" data-owner="gox">Gate oxide</text>
+<path class="leader" data-owner="gox" d="M267.0 348.5H291.0V424.0H324.0"/>
+<circle class="dot" data-owner="gox" cx="267.0" cy="348.5" r="1.9"/>
+<text x="328.0" y="388.9" class="t-label-title" data-owner="poly">Gate film</text>
+<text x="328.0" y="404.9" class="t-label-note tag" data-owner="poly">inferred</text>
+<path class="leader" data-owner="poly" d="M276.0 342.5H297.0V384.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="276.0" cy="342.5" r="1.9"/>
+<text x="328.0" y="316.9" class="t-label-title" data-owner="nit">Nitride cap</text>
+<text x="328.0" y="332.9" class="t-label-note muted" data-owner="nit">GATENIT, step</text>
+<text x="328.0" y="348.9" class="t-label-note muted" data-owner="nit">058; thickness and</text>
+<text x="328.0" y="364.9" class="t-label-note muted" data-owner="nit">method not public</text>
+<path class="leader" data-owner="nit" d="M276.0 319.5H303.0V312.0H324.0"/>
+<circle class="dot" data-owner="nit" cx="276.0" cy="319.5" r="1.9"/>
+<text x="12.0" y="489.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+</svg>

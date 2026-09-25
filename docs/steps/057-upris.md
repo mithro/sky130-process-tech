@@ -22,6 +22,15 @@ chemistry before it is sealed under nitride and oxide. The next step
 is a furnace or {term}`PECVD` deposition rather than another mask, which
 changes what "clean" has to mean.
 
+:::{figure} /_static/figures/poly-057-upris.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the whole slice. After it the resist is gone and a continuous film is bare across the whole slice.
+:width: 560px
+:name: fig-poly-057-upris
+
+Before, the URPM resist over the whole slice; after, the resist gone and the gate film bare and clean, ready for the cap. The chemical oxide the clean leaves on the film, which the page infers is kept, is not drawn. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
+
+
 The resist being removed has taken the lightest implant of the module
 — a p-type dose of order 10¹⁴ cm⁻² or less (illustrative,
 {ref}`UPRI <step-056>`) — so its {term}`crust <implant crust>` is thin, in the same class as

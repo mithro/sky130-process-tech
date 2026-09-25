@@ -20,6 +20,15 @@ n⁺ gate film and the 300 Ω/sq bodies doped at {ref}`PRI <step-053>`.
 The resist is stripped at {ref}`UPRIS <step-057>`, after which the
 poly doping of the process is complete and the film can be capped.
 
+:::{figure} /_static/figures/poly-056-upri.svg
+:alt: One cross-section of the wafer. Resist covers a continuous film over the whole slice, and arrows come down on the resist everywhere. The drawing is the same as the state before the step.
+:width: 560px
+:name: fig-poly-056-upri
+
+At UPRI a light p-type dose goes through the URPM windows into the bodies of the 2000 Ω/sq resistors.[^pdk-07] None lies in this slice, which carries a 300 Ω/sq resistor,[^pdk-07] so here the resist stops the whole beam and nothing changes. Species, energy, dose and tilt are not public; the arrows are drawn vertical. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
+
+
 The target is public and unusually explicit: the PDK says of the
 "P- poly precision resistors" that "a separate implant is used to set
 the sheet resistance to 2000 ohm/sq",[^pdk-07] the extraction table

@@ -1,0 +1,23 @@
+id: poly-056-upri
+kind: xsection
+page: docs/steps/056-upri.md
+series: series-poly.yaml
+crop_depth: 72
+no_drawn_change: true
+alt: >-
+  One cross-section of the wafer. Resist covers a continuous film over the whole slice, and
+  arrows come down on the resist everywhere. The drawing is the same as the state before the
+  step.
+caption: >-
+  At UPRI a light p-type dose goes through the URPM windows into the bodies of the 2000 Ω/sq
+  resistors.[^pdk-07] None lies in this slice, which carries a 300 Ω/sq resistor,[^pdk-07] so here the
+  resist stops the whole beam and nothing changes. Species, energy, dose and tilt are not
+  public; the arrows are drawn vertical. The field oxide is drawn but not labelled, and the
+  liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to
+  scale.
+panels:
+  - state_after: "056"
+    title: "State at this step (no drawn change)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]

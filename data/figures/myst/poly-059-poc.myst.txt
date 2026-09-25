@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/poly-059-poc.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a hatched film lies on a continuous film across the whole slice. After it a third, thin film lies on top of the hatched one, again across the whole slice.
+:width: 560px
+:name: fig-poly-059-poc
+
+Before, the gate film under its nitride cap; after, the thin oxide cap on top, which completes the stack that the gate mask will pattern. The cap's thickness and deposition method are not public, and its thinness is the page's inference; the PDK's "poly cap after SPE" of 0.2 µm[^pdk-03] is read on the page as the whole cap stack after the spacer etch, so the two caps are not drawn in any ratio to the gate film or to each other. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
