@@ -518,3 +518,350 @@ records:
     and of Simtek Corporation as the source of Cypress's nvSRAM line: the
     co-authorship (Cypress + Simtek) is the direct public evidence for
     that connection.
+
+# --- Patents (Cypress process-flow patents; cross-referenced with data/patents.yaml) --
+
+- id: pat-us4764248a-locos-1987
+  kind: patent
+  origin: patent-record
+  source: >-
+    US4764248A, "Rapid thermal nitridized oxide LOCOS process", Cypress
+    Semiconductor Corporation (assignee, original and current), priority/
+    filing 1987-04-13, granted 1988-08-16. Family GP21893791 in
+    data/patents.yaml.
+  url: https://patents.google.com/patent/US4764248A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US4764248A.html.txt
+  sha256: 04b48e7fa2924389d35cc10daac375a651421e6a66e979a96f20a36d128b754e
+  quotes:
+  - text: >-
+      A process for minimizing bird's beak in local oxidation of silicon
+      which is compatible with high density (VLSI) semiconductor devices
+      is disclosed. A pad oxide is nitridized using rapid thermal
+      nitridization, which works quickly with minimal thermal cycling of
+      the wafer. A silicon nitride film is then deposited over the
+      nitridized oxide. Both films are exposed to dry plasma etching which
+      gives more consistent results than wet methods. The field oxide is
+      then grown and finally the masking films of the nitridized oxide and
+      silicon nitride are removed, whereby field oxides are grown with
+      minimal bird's beak, and minimal damage to the wafer with a small
+      number of steps.
+    location: "Google Patents page (patents.google.com/patent/US4764248A/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "early Cypress CMOS isolation (1987)", attribute: "isolation scheme, per this patent's abstract", value: "a LOCOS variant using rapid-thermal-nitridised pad oxide, a silicon-nitride masking film, dry plasma etching and dry-grown field oxide, to minimise bird's-beak encroachment"}
+  - {technology: "US4764248A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1987-04-13; expired: true (estimated expiry 2008-04-13)"}
+  notes: >-
+    The earliest Cypress process patent identified and the clearest patent
+    evidence that Cypress's earliest CMOS generations used a LOCOS
+    isolation scheme, consistent with paper-cicc1994-altera-eprom (LOCOS
+    still used at 0.65 µm in 1994) and paper-jin-1999-locos-cop-025um-sram
+    in data/history/extra.yaml (LOCOS still in production at 0.25 µm in
+    1999). This fresh fetch's own legal-status field reads "Expired -
+    Lifetime", agreeing with data/patents.yaml. EXPIRED -- no in-force
+    restriction applies.
+
+- id: pat-us5648669a-flash-cell-1995
+  kind: patent
+  origin: patent-record
+  source: >-
+    US5648669A, "High speed flash memory cell structure and method",
+    Cypress Semiconductor, priority/filing 1995-05-26, granted 1997-07-15.
+    Family GP23795580 in data/patents.yaml.
+  url: https://patents.google.com/patent/US5648669A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US5648669A.html.txt
+  sha256: b5b4bc1ea03cfedd0ae44503530b18ef1da85263c8a07d678221bb64a017ca27
+  quotes:
+  - text: >-
+      A fast, fieldless flash memory cell includes an erase node having a
+      control gate and a floating gate, both formed of polycrystalline
+      silicon, a program transistor sharing the floating gate and control
+      gate with the erase node, and a read transistor sharing the floating
+      gate and control gate with the erase node and program transistor.
+      The inventive memory cell is suitable for use in fast Programmable
+      Logic Devices (PLDs) in the sub 5 nS range (2-5 nS), and other logic
+      and memory parts.
+    location: "Google Patents page (patents.google.com/patent/US5648669A/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress floating-gate flash (pre-SONOS, mid-1990s)", attribute: "cell structure, per this patent's abstract", value: "a 3-transistor 'fieldless' flash cell (separate erase, program and read transistors sharing a floating gate and an ONO control-gate dielectric), targeted at sub-5 ns PLD and memory parts"}
+  - {technology: "US5648669A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1995-05-26; expired: true (estimated expiry 2016-05-26)"}
+  notes: >-
+    Evidence that Cypress was developing its own floating-gate flash cell
+    technology in the mid-1990s, before the SONOS patents begin in 1999.
+    This fresh fetch's own legal-status field reads "Expired - Lifetime",
+    agreeing with data/patents.yaml. EXPIRED -- no in-force restriction
+    applies.
+
+- id: pat-us5844271a-splitgate-eeprom-1995
+  kind: patent
+  origin: patent-record
+  source: >-
+    US5844271A, "Single layer polycrystalline silicon split-gate EEPROM
+    cell having a buried control gate", Cypress Semiconductor Corp,
+    priority/filing 1995-08-21, granted 1998-12-01. Family GP24060050 in
+    data/patents.yaml.
+  url: https://patents.google.com/patent/US5844271A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US5844271A.html.txt
+  sha256: 73f772064e3ad581711a6fca24fad627b0ab0b2a3bca8b2676b695a266d048f2
+  quotes:
+  - text: >-
+      An electrically-erasable programmable read-only memory (EEPROM) cell
+      includes a split-gate read transistor and a buried N-plate control
+      gate.
+    location: "Google Patents page (patents.google.com/patent/US5844271A/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      The voltages applied to the N-plate region are capacitively coupled
+      to the floating gate. The potential on the floating gate in turn
+      causes activation of the transistors formed by the split-gate
+      structure, depending on the existing charge on the floating gate.
+    location: "Google Patents page (patents.google.com/patent/US5844271A/en, fetched 2026-09-25), Abstract, final two sentences"
+  claims:
+  - {technology: "Cypress EEPROM (pre-SONOS, mid-1990s)", attribute: "cell structure, per this patent's abstract", value: "a single-poly split-gate EEPROM cell with a buried N-plate control gate, capacitively coupled to the floating gate"}
+  - {technology: "US5844271A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1995-08-21; expired: true (estimated expiry 2016-08-21)"}
+  notes: >-
+    A second, distinct (from US5648669A) floating-gate-family nonvolatile
+    cell under development at Cypress in 1995: a split-gate EEPROM rather
+    than a stacked-gate flash cell. This fresh fetch's own legal-status
+    field reads "Expired - Lifetime", agreeing with data/patents.yaml.
+    EXPIRED -- no in-force restriction applies.
+
+- id: pat-us6091129a-sti-1996
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6091129A, "Self-aligned trench isolated structure", Cypress
+    Semiconductor Corporation, priority/filing 1996-06-19, granted
+    2000-07-18. Family GP24675318 in data/patents.yaml.
+  url: https://patents.google.com/patent/US6091129A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6091129A.html.txt
+  sha256: 330b88f872cb8e3e306595cd011c8de68a289dc82997a6244ed1c98310ab90d0
+  quotes:
+  - text: >-
+      A trench-isolated active device and a method of forming a
+      trench-isolated active device on a semiconductor substrate wherein
+      the conductive layer of the device is self-aligned with an isolation
+      trench is disclosed.
+    location: "Google Patents page (patents.google.com/patent/US6091129A/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      The conductive material layer is self-aligned to the isolation
+      trench, so there is no overlap of the conductive material and the
+      isolation trench, and the isolation trench may be a minimum width
+      necessary to isolate the device.
+    location: "Google Patents page (patents.google.com/patent/US6091129A/en, fetched 2026-09-25), Abstract, final sentence"
+  claims:
+  - {technology: "Cypress isolation, transition from LOCOS to STI", attribute: "shallow trench isolation development, per this patent's abstract", value: "a self-aligned trench-isolation process in which the conductive gate layer is self-aligned to the trench, allowing a minimum-width isolation trench, filed 1996"}
+  - {technology: "US6091129A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1996-06-19; expired: true (estimated expiry 2017-06-19)"}
+  notes: >-
+    Marks the start of Cypress's public STI patenting (1996), about three
+    years before paper-jin-1999-locos-cop-025um-sram (in
+    data/history/extra.yaml) shows LOCOS still in production use at 0.25
+    µm -- LOCOS and STI development overlapped for several years rather
+    than switching over cleanly at a single node; see also
+    pat-us6033991a-locos-sti-transition-1997, a still-LOCOS-based isolation
+    patent filed a year after this one. This fresh fetch's own
+    legal-status field reads "Expired - Lifetime", agreeing with
+    data/patents.yaml. EXPIRED -- no in-force restriction applies.
+
+- id: pat-us6033991a-locos-sti-transition-1997
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6033991A, "Isolation scheme based on recessed LOCOS using a sloped Si
+    etch and dry field oxidation", Cypress Semiconductor Corp, priority/
+    filing 1997-09-29, granted 2000-03-07. Family GP25473825 in
+    data/patents.yaml.
+  url: https://patents.google.com/patent/US6033991A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6033991A.html.txt
+  sha256: db75674e34055fdf33ef5b55a805e9dfeceec0208b64eebabc9bd8a9a6000071
+  quotes:
+  - text: "A method of forming a field oxide or an isolation region in a semiconductor die."
+    location: "Google Patents page (patents.google.com/patent/US6033991A/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      The oxide layer and the substrate in the isolation region are etched
+      to form a recess in the substrate having a sloped surface with
+      respect to the sidewall of the oxidation mask layer. A field oxide
+      is then grown in the recess using a dry oxidizing atmosphere.
+    location: "Google Patents page (patents.google.com/patent/US6033991A/en, fetched 2026-09-25), Abstract, middle sentences"
+  - text: >-
+      The preferred range of slopes for the substrate sidewall is from
+      approximately 10° to 40° with respect to the oxidation mask layer
+      sidewall.
+    location: "Google Patents page (patents.google.com/patent/US6033991A/en, fetched 2026-09-25), Abstract, final sentence"
+  claims:
+  - {technology: "Cypress isolation, LOCOS refinement (1997)", attribute: "isolation scheme, per this patent's abstract", value: "a recessed-LOCOS variant using a sloped (10-40°) silicon-recess etch and dry field oxidation, to reduce oxide encroachment and field-oxide thinning"}
+  - {technology: "US6033991A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1997-09-29; expired: true (estimated expiry 2018-09-29)"}
+  notes: >-
+    Filed by the same inventor as paper-jin-1999-locos-cop-025um-sram (in
+    data/history/extra.yaml, the 1999 LOCOS/COPs paper) and as the SONOS
+    dielectric-manufacturing patents below -- one identifiable engineer's
+    public work runs from LOCOS isolation refinement (1997) through 0.25
+    µm LOCOS defect physics (1999) to SONOS dielectric manufacturing
+    (2001-2002 patents below), a real thread of technical continuity
+    across the isolation-scheme and memory-technology transitions. This
+    fresh fetch's own legal-status field reads "Expired - Lifetime",
+    agreeing with data/patents.yaml. EXPIRED -- no in-force restriction
+    applies.
+
+- id: pat-us5914895a-nvsram-1997
+  kind: patent
+  origin: patent-record
+  source: >-
+    US5914895A, "Non-volatile random access memory and methods for making
+    and configuring same", Cypress Semiconductor Corp, priority/filing
+    1997-09-10, granted 1999-06-22. Family GP25453449 in data/patents.yaml.
+  url: https://patents.google.com/patent/US5914895A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US5914895A.html.txt
+  sha256: a5131184a51d2823eeefca390095c2a33bdf76ad537e2501c374f65c2c421653
+  quotes:
+  - text: >-
+      A memory cell includes non-volatile and volatile storage elements
+      and is configured to dynamically alter threshold voltages of the
+      non-volatile storage elements to store states of the volatile
+      storage elements.
+    location: "Google Patents page (patents.google.com/patent/US5914895A/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      In a further embodiment, a memory cell includes non-volatile storage
+      elements configured to power up so that a first of the non-volatile
+      storage element undergoes band-to-band tunneling induced hot
+      electron injection onto its floating gate while a second of the
+      non-volatile storage elements undergoes Fowler-Nordheim tunneling of
+      electrons off its floating gate.
+    location: "Google Patents page (patents.google.com/patent/US5914895A/en, fetched 2026-09-25), Abstract, later sentence"
+  claims:
+  - {technology: "Cypress nvSRAM (earliest patent found)", attribute: "cell mechanism, per this patent's abstract", value: "a memory cell combining volatile (stacked-gate PMOS/NMOS) and non-volatile (floating-gate) storage elements, using band-to-band-tunnelling hot-electron injection and Fowler-Nordheim tunnelling on power-up to restore state; filed 1997, two years before the first SONOS memory-cell patent below"}
+  - {technology: "US5914895A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1997-09-10; expired: true (estimated expiry 2018-09-10)"}
+  notes: >-
+    Filed by the same inventor as pat-us6172907b1-sonos-jenne-1999, the
+    first Cypress SONOS memory-cell patent found (filed two years later,
+    1999) -- consistent with a path from an early floating-gate-backed
+    nvSRAM concept to the SONOS memory cell that Cypress and Simtek later
+    used in nvSRAM products (see paper-fliesler-2008-nvsram-013u-sonos).
+    This fresh fetch's own legal-status field reads "Expired - Lifetime",
+    agreeing with data/patents.yaml. EXPIRED -- no in-force restriction
+    applies.
+
+- id: pat-us6114724a-nvmemory-selectgate-1998
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6114724A, "Nonvolatile semiconductor memory cell with select gate",
+    Cypress Semiconductor Corporation, priority/filing 1998-03-31, granted
+    2000-09-05. Family GP21979781 in data/patents.yaml.
+  url: https://patents.google.com/patent/US6114724A/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6114724A.html.txt
+  sha256: 443578dc0fce4efbdca3802226cec10105cf2b34954c6e082fbdcbf353ade812
+  quotes:
+  - text: >-
+      An electrically erasable programmable read only memory (EEPROM) cell
+      including a tunnel dielectric layer formed over a semiconductor
+      substrate. The EEPROM cell may have a floating gate transistor and a
+      select transistor. The floating gate transistor may have a floating
+      gate formed over the tunnel dielectric and a control gate formed
+      over the floating gate. The select transistor may have a first gate
+      formed over the tunnel dielectric and a second gate formed over the
+      first gate. The second gate may be electrically connected to the
+      first gate.
+    location: "Google Patents page (patents.google.com/patent/US6114724A/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress nonvolatile memory (pre-SONOS, 1998 cluster)", attribute: "cell structure, per this patent's abstract", value: "a split-gate-style floating-gate EEPROM cell whose select-transistor gates are electrically tied together"}
+  - {technology: "US6114724A", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1998-03-31; expired: true (estimated expiry 2019-03-31)"}
+  notes: >-
+    One of a cluster of similarly dated (1998) Cypress nonvolatile-memory-
+    cell patents (see also pat-us6207991b1-integrated-nv-cmos-1998 and, in
+    data/patents.yaml but not separately reused here, US6069382A, US6162682A
+    and US6124157A) that together show active, parallel floating-gate/
+    select-gate cell development at Cypress in 1998, immediately before the
+    shift to SONOS cell patents from 1999. This fresh fetch's own
+    legal-status field reads "Expired - Lifetime", agreeing with
+    data/patents.yaml. EXPIRED -- no in-force restriction applies.
+
+- id: pat-us6207991b1-integrated-nv-cmos-1998
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6207991B1, "Integrated non-volatile and CMOS memories having
+    substantially the same thickness gates and methods of forming the
+    same", Cypress Semiconductor Corp, priority/filing 1998-03-20, granted
+    2001-03-27. Family GP21936928 in data/patents.yaml.
+  url: https://patents.google.com/patent/US6207991B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6207991B1.html.txt
+  sha256: 89ad2efbd35a35102245380a1b163604c6aa937b74c317ac69a4c666636212f7
+  quotes:
+  - text: >-
+      A method of forming non-volatile memory (e.g., an EEPROM device) and
+      a CMOS device (e.g., a RAM), on a single die or chip, and a structure
+      formed by the method. In one embodiment, the control gate of the
+      storage transistor as well as the isolation gate of the isolation
+      transistor may be formed during the same manufacturing process step,
+      and thus may be formed of the same gate poly material and may have
+      similar thickness.
+    location: "Google Patents page (patents.google.com/patent/US6207991B1/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress embedded nonvolatile memory (pre-SONOS, 1998)", attribute: "integration goal, per this patent's abstract", value: "forming a non-volatile memory's control gate and a CMOS logic transistor's gate in the same process step, from the same poly material and thickness -- the same low-disturbance integration goal the later SONOS patents state explicitly"}
+  - {technology: "US6207991B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1998-03-20; expired: true (estimated expiry 2019-03-20)"}
+  notes: >-
+    Shows that the "embed nonvolatile memory into a logic flow with
+    minimal disturbance to the logic transistors" goal that
+    data/history/extra.yaml's ChipEstimate SONOS article and the SONOS
+    patents state explicitly was already an explicit engineering target at
+    Cypress for floating-gate-family cells in 1998, a year before the
+    first SONOS cell patent. This fresh fetch's own legal-status field
+    reads "Expired - Lifetime", agreeing with data/patents.yaml. EXPIRED --
+    no in-force restriction applies.
+
+- id: pat-us6172907b1-sonos-jenne-1999
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6172907B1, "Silicon-oxide-nitride-oxide-semiconductor (SONOS) type
+    memory cell and method for retaining data in the same", Cypress
+    Semiconductor Corp, priority/filing 1999-10-22, granted 2001-01-09.
+    Family GP23689290 in data/patents.yaml.
+  url: https://patents.google.com/patent/US6172907B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6172907B1.html.txt
+  sha256: 4b33db6d0afd11ed14e0ce998117d12f2b3c999bfa1fea1f179f1961496693d2
+  quotes:
+  - text: >-
+      According to one embodiment, a nonvolatile storage circuit (100) can
+      include a volatile portion (102) that includes p-channel
+      metal-oxide-semiconductor (MOS) transistors (106-0 and 106-1) and
+      n-channel MOS (NMOS) transistors (108-0 and 108-1) arranged in a
+      complementary MOS (CMOS) latch configuration. Also included are
+      nonvolatile devices (116-0 and 116-1) disposed between PMOS
+      transistor 106-0 and NMOS transistor 108-0, and between PMOS
+      transistor 106-1 and NMOS transistor 108-1. Nonvolatile devices
+      (116-0 and 116-1) can include silicon-oxide-nitride-semiconductor
+      (SONOS) transistors that can be programmed to opposite states to
+      recall a logic value when power is applied to the nonvolatile
+      storage circuit (100).
+    location: "Google Patents page (patents.google.com/patent/US6172907B1/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress SONOS (first patent found)", attribute: "cell mechanism, per this patent's abstract", value: "a CMOS latch (cross-coupled PMOS/NMOS) with a SONOS nonvolatile transistor placed between the PMOS and NMOS device of each half-latch, programmed to opposite states so the latch recalls its logic value on power-up; the earliest Cypress SONOS memory-cell patent identified, filed 1999-10-22"}
+  - {technology: "US6172907B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 1999-10-22; data/patents.yaml (verified 2026-09-14) records expired: unknown, no legal status found by USPTO Patent Public Search at that time"}
+  notes: >-
+    Priority date (1999-10-22) is consistent with data/history/extra.yaml's
+    SONOS-eFlash-brief record, which gives SONOS eFlash production starting
+    in 2001 -- filed roughly 14 months before that stated start of
+    production, a plausible development-to-production gap. This fresh
+    fetch's own legal-status field now reads "Expired - Lifetime", where
+    data/patents.yaml (verified 2026-09-14) recorded no determinable
+    status for this same page -- a disagreement between the two dates'
+    fetches of the same field, not resolved here. This record is kept
+    collapsed per tools/check_inforce.py, using data/patents.yaml's
+    still-current "expired: unknown" value.
