@@ -125,3 +125,57 @@ All other checkers (`check_steps`, `check_refs`, `check_machines`, `check_materi
 to bottom cleanly: the glance box, the design-rule table (holds at 400 px, including the
 "0.380 µm spacing" cell), the R-TOOLS sub-bullets and the Related/Open-questions sections all
 render without overflow; no further issues seen on a top-to-bottom read.
+
+### 015-lvtni.md — done
+
+Rules applied: R-PARA (the lead paragraph split at its `NS19`/screen-oxide seam; the 185-word
+"published test-tile measurements" block split into 3 paragraphs, no table — see note below;
+the "Why this step exists" opening paragraph split; the Species and Energy/dose list items
+split into lead + indented continuation, the latter further split into two continuation
+paragraphs), R-SENTENCE (the em-dash/semicolon sentences in the same passages; one sentence
+inside the in-force dropdown, per §2 rule 5, which allows R-SENTENCE inside a dropdown to text
+already there — done with `--allow-dropdown-edits`, no word changed, only a semicolon/`and`
+became two sentences), R-HEDGE step 1 (italic lead-in), R-TOOLS (both "Strength:" bullets
+split; 2 tools, no recap table), R-RELATED (`Previous:`/`Next:` split onto separate lines per
+the model pages; `Same category:` for the threshold-setting-companions bullet; `Feeds:` for
+the RTAI-activation bullet), R-OPENQ (bold labels added to all three bullets), R-GLANCE (box
+last, using the measured SKY130 threshold numbers as "Public numbers" since they are real
+SKY130 test-tile values, not the not-public species/energy/dose).
+
+**Reverted an R-TABLE attempt.** The "Energy and dose" item's LSI Logic and AMD figures are
+each given as **one continuous quotation covering both energy and dose** (e.g. "implanted
+... in doses between 1×10¹² and 1×10¹³ atoms/cm² … at implant energies between 50 and 100
+keV"). A first draft split each quotation into separate Energy/Dose table cells, which
+`check_preserved.py` correctly caught as `LOST quotes` (three quotations lost, one carrying
+the word "approximately" that vanished with it — `LOST hedges: 'approximately'`): splitting a
+single quotation across two cells changes what is quoted, which R-TABLE's own step 6 forbids
+implicitly ("quoted values stay quoted, inside the cell" — one cell, not two). Reverted to
+prose (lead sentence + indented continuation, each full quotation kept intact and only the
+surrounding prose split into shorter sentences); this is a case where the mechanical R-TABLE
+trigger (≥5 numbers, ≥2 semicolons) fires but the rule cannot be applied without breaking a
+quotation, so prose stays prose per the guide's own principle (§0: "if you cannot re-present a
+passage without changing what it claims, leave it exactly as it is"). Recorded as **Guide
+problem 12**: R-TABLE gives no explicit guard for a single quotation spanning two of the
+template's columns; a future guide revision could add one.
+
+Similarly the 185-word "published test-tile measurements" block was **not** table-ised: its
+markers ([^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]) sit only at the end of the
+third (caveat) sentence in the source, not after the first two comparison sentences, so moving
+the threshold/current values into table rows without inventing a marker distribution seemed
+higher-risk than a plain paragraph/sentence split; used R-PARA/R-SENTENCE instead.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 2 → 0; sentences > 45 words 7 → 2 (figure caption,
+and one table-markdown-misread-as-a-sentence artifact — same tool limitation as Guide problem
+10/pilot Guide problem 9, confirmed by screenshot that the table itself renders correctly).
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/015-lvtni.md`:
+after the table-to-prose revert, `quotes` and `hedges` show no LOST at all (both categories
+clean); the only failure is `LOST number_order (not a clean regroup)` for six tuples, all
+following the same pattern as Guide problem 11 (a number stranded alone in its own sentence
+after a split — confirmed here for "200–500" Å and for one of the two "8250" mentions in the
+R-TOOLS bullet-head/sub-bullet split) or a clean multi-way regroup of a dense sentence into
+several shorter ones. The `numbers` category itself (condition (a)) shows no loss, confirming
+nothing actually disappeared. All other checkers pass; `-W` build clean. Screenshots (desktop
++ 400 px) read cleanly top to bottom, including the dropdown summary line, the Resources and
+Related-steps sections, and the reference lists.

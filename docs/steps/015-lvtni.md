@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`LVTNM <step-014>` |
 | **Next step** | {ref}`LVTNIS <step-016>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants the low-Vt channel dopant through the
+  {ref}`LVTNM <step-014>` resist windows.
+* **Why:** sets the threshold-voltage difference between low-Vt and
+  standard NMOS (and, via the shared mask, PMOS/native/SONOS
+  channels).
+* **Public numbers:** measured threshold 0.432 V (`nfet_01v8_lvt`)
+  against 0.534 V (`nfet_01v8`) at 7/8 µm (our
+  extraction).[^raw-data-lv-mosfets]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** the actual species, energy, dose and reticle
+  polarity (→ Open questions).
+:::
+
 ## What this step is
 
 `LVTNI` is a channel-type ion implant performed through the resist
@@ -19,10 +36,12 @@ N-well and P-well implants that follow at
 {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>` and
 {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`. Its job is to set the
 difference in threshold voltage between the low-Vt N-channel devices of
-the PDK and the standard ones. The dopant enters the active silicon
+the PDK and the standard ones.
+
+The dopant enters the active silicon
 through what we infer to be the pad oxide left by
 {ref}`NS19 <step-013>`, acting as the {term}`screen oxide` (see the open
-question there); a Cypress {term}`SONOS` patent from the same lineage,
+question there). A Cypress {term}`SONOS` patent from the same lineage,
 which may still be in force, describes exactly this arrangement, in the
 collapsed note below.
 
@@ -73,10 +92,12 @@ medium-current implanter (category page).[^txt-01]
 ## Why this step exists
 
 The threshold voltage of a MOSFET rises with the doping of the channel
-region: in the standard body-effect expression the parameter γ contains
+region. In the standard body-effect expression the parameter γ contains
 the doping concentration N_A,[^wiki-vt] and multi-threshold CMOS is
 built by "altering the concentration of dopant atoms in the channel
-region beneath the gate oxide".[^wiki-mtcmos] The 1.8 V NMOS family of
+region beneath the gate oxide".[^wiki-mtcmos]
+
+The 1.8 V NMOS family of
 SKY130 comprises `nfet_01v8` and `nfet_01v8_lvt`;[^pdk-07] `LVTNI`,
 together with the N-channel implant {ref}`NCHI <step-045>` that all
 1.8 V devices receive under the low-voltage oxide mask, is what
@@ -88,15 +109,18 @@ designers is a threshold near 0 V.
 The published test-tile measurements show the size of the separation.
 By maximum-transconductance extrapolation at V_DS = 0.1 V, less half
 the drain bias, we extract 0.432 V for `nfet_01v8_lvt` against 0.534 V
-for `nfet_01v8` at 7/8 µm, and 0.612 V against 0.707 V at 7/0.15 µm —
-differences of 0.102 V and 0.095 V, against 0.101 V and 0.089 V between
-the PDK's e-test nominals. For two 7/0.15 µm structures with the same
+for `nfet_01v8` at 7/8 µm, and 0.612 V against 0.707 V at 7/0.15 µm.
+These are differences of 0.102 V and 0.095 V, against 0.101 V and
+0.089 V between the PDK's e-test nominals.
+
+For two 7/0.15 µm structures with the same
 source/drain extent (2.5 µm) the low-Vt device carries 3.84 mA against
-3.39 mA at V_GS = V_DS = 1.8 V, 13 % more; the PDK's nominal currents
+3.39 mA at V_GS = V_DS = 1.8 V, 13 % more. The PDK's nominal currents
 differ by 14 %. In the modules that hold the e-test geometries, however,
 the 7/0.15 µm low-Vt device carries 3.30 mA against 3.40 mA (our
 extraction from the published measurements; see
 {ref}`HPETEST <step-171>`).[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
+
 The low-Vt device also shows the smaller body effect: its threshold
 rises by 0.245 V for 1.8 V of reverse body bias at 7/8 µm, against
 0.299 V (our extraction).[^raw-data-lv-mosfets] Lower net channel
@@ -109,12 +133,14 @@ The trade is leakage: "Typical high Vth devices reduce static leakage by
 
 ## How it is typically performed
 
-An industry-generic threshold-adjust implant for a 200 mm, 130 nm-era
+*An industry-generic threshold-adjust implant for a 200 mm, 130 nm-era
 fab. The SKY130 species, energy and dose are not public; the values
-below are typical or taken from contemporaneous patents.
+below are typical or taken from contemporaneous patents.*
 
 * **Species.** For an implant that *raises* an NMOS threshold the
-  species is p-type: boron (¹¹B⁺), BF₂⁺ for a shallower boron placement
+  species is p-type.
+
+  Options are boron (¹¹B⁺), BF₂⁺ for a shallower boron placement
   (only 11/49 of the beam energy is carried by the boron atom; category
   page), or indium, a heavy p-type dopant used for steep retrograde
   channels.[^shahidi-1993][^huang-2000] Cypress's own patent, which may
@@ -122,23 +148,26 @@ below are typical or taken from contemporaneous patents.
   and for an indium-doped memory-transistor channel; those sentences are
   in the collapsed note below this list. A 2020 Cypress article
   describes "use of deeper channel implants with heavier species such as
-  Indium" for the SONOS cell.[^cyp-25] For an implant that *lowers* the
+  Indium" for the SONOS cell.[^cyp-25]
+
+  For an implant that *lowers* the
   threshold by counter-doping, the species is n-type — arsenic or
   phosphorus — at similar doses.[^pat-vt-rrr]
 * **Energy and dose.** Tens of keV — up to about 100 keV in published
-  examples — and 10¹²–10¹³ cm⁻²: an LSI Logic patent has the
-  threshold-adjust boron "implanted through the sacrificial gate oxide
-  in doses between 1×10¹² and 1×10¹³ atoms/cm² … at implant energies
-  between 50 and 100 keV" (that implant is made after the well anneal,
+  examples — and 10¹²–10¹³ cm⁻².
+
+  An LSI Logic patent has the threshold-adjust boron "implanted through
+  the sacrificial gate oxide in doses between 1×10¹² and 1×10¹³
+  atoms/cm² … at implant energies between 50 and 100
+  keV".[^pat-vt-lsi] That implant is made after the well anneal,
   through a newly grown 200–500 Å sacrificial oxide, not through a pad
-  oxide).[^pat-vt-lsi] An AMD
-  patent gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂
-  at a concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a laterally
-  doped channel implant made after gate formation with the gate pillars
-  as a self-aligned mask — a different placement from this pre-gate
-  implant — and describes a prior-art threshold adjust implant at "about
-  5-to-15 KeV at a concentration of about 8×10¹²
-  ions/cm²".[^pat-vt-amd]
+  oxide. An AMD patent gives "approximately 10-20 KeV for boron or
+  45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
+  ions/cm²" for a laterally doped channel implant made after gate
+  formation with the gate pillars as a self-aligned mask.[^pat-vt-amd]
+  It is a different placement from this pre-gate implant. AMD also
+  describes a prior-art threshold adjust implant at "about 5-to-15 KeV
+  at a concentration of about 8×10¹² ions/cm²".[^pat-vt-amd]
 * **Tilt and twist.** A few degrees of tilt with twist to suppress
   {term}`channelling` — "most implantation is carried out a few degrees
   off-axis";[^wiki-implant] the PDK's assumptions table records 7° as
@@ -159,11 +188,11 @@ below are typical or taken from contemporaneous patents.
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 Cypress's own patents describe BF₂ "at an energy of from about 10 to
 about 100 kilo-electron volts (keV), and a dose of from about 1e12 cm⁻²
-to about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel, and
-an indium-doped channel "implanted with Indium (In) at an energy of from
-about 50 to about 500 kilo-electron volts (keV), and a dose of from
-about 5e11 … to about 5e12 cm⁻²" for the memory transistor; the screen
-oxide is the 10–20 nm pad oxide.[^pat-04]
+to about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel.
+They also describe an indium-doped channel "implanted with Indium (In)
+at an energy of from about 50 to about 500 kilo-electron volts (keV),
+and a dose of from about 5e11 … to about 5e12 cm⁻²" for the memory
+transistor. The screen oxide is the 10–20 nm pad oxide.[^pat-04]
 :::
 
 ## Machines typically used
@@ -178,17 +207,21 @@ oxide is the 10–20 nm pad oxide.[^pat-04]
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter.** SkyWater's facilities page
-  lists "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower,
-  1e11 to 1e14, 0-60 deg tilt".[^skw-01] The species (B, BF₂, As), the
-  dose window (10¹¹–10¹⁴ cm⁻²) and the tilt capability are exactly those
-  of a threshold-adjust implant. Strength: **strong** for the tool;
-  assignment to `LVTNI` is an **inference** from capability.
-* **Axcelis GSD implanters** — either GSD entry, "High current/energy"
-  or "Hi dose",[^skw-01] could equally run a keV boron implant, but these
-  batch tools are normally reserved for wells and source/drains; which
-  entry would serve is not stated. Strength: strong for existence, weak
-  for assignment.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "Axcelis 8250 Mid current B11, BF2, As, ESC
+    chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* strong — the species (B, BF₂, As), the dose window
+    (10¹¹–10¹⁴ cm⁻²) and the tilt capability are exactly those of a
+    threshold-adjust implant.
+  - *Runs this step:* assignment to `LVTNI` is an inference from
+    capability.
+* **Axcelis GSD implanters**
+  - *SkyWater says:* lists either GSD entry, "High current/energy" or
+    "Hi dose".[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak — either could equally run a keV boron
+    implant, but these batch tools are normally reserved for wells and
+    source/drains; which entry would serve is not stated.
 * A SkyWater maintenance profile mentions implanter robotics and vacuum
   work[^skw-07] — corroboration that implanters are maintained in house,
   not tool evidence.
@@ -210,13 +243,13 @@ oxide is the 10–20 nm pad oxide.[^pat-04]
 
 ## Related steps and cross-references
 
-* Previous: {ref}`LVTNM <step-014>` (the mask); next:
-  {ref}`LVTNIS <step-016>` (strip).
-* Threshold-setting companions: {ref}`LVTPI <step-020>` (PMOS, under
-  the N-well mask), {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>`
-  (high-Vt PMOS) and {ref}`NCHI <step-045>` (N-channel, under the
-  low-voltage oxide mask).
-* Activated at {ref}`RTAI <step-034>`.
+* Previous: {ref}`LVTNM <step-014>` (the mask).
+* Next: {ref}`LVTNIS <step-016>` (strip).
+* Same category: threshold-setting companions —
+  {ref}`LVTPI <step-020>` (PMOS, under the N-well mask),
+  {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>` (high-Vt PMOS) and
+  {ref}`NCHI <step-045>` (N-channel, under the low-voltage oxide mask).
+* Feeds: activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -311,15 +344,16 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The species, energy, dose and tilt of `LVTNI` are not public; so is
-  its polarity (p-type baseline implant that low-Vt devices skip, or
-  n-type counter-dope into low-Vt devices).
-* Why this channel implant precedes the well implants — rather than
-  following them as in most published flows — is not documented; a
-  plausible reason is simply that it shares the full
-  {ref}`RTAI <step-034>` anneal with the wells either way.
-* Whether the pad oxide from {ref}`BOX <step-002>` is still present
-  as the screen oxide (see the open question on
+* **Species, energy, dose, tilt and polarity.** The species, energy,
+  dose and tilt of `LVTNI` are not public; so is its polarity (p-type
+  baseline implant that low-Vt devices skip, or n-type counter-dope
+  into low-Vt devices).
+* **Implant ordering.** Why this channel implant precedes the well
+  implants — rather than following them as in most published flows —
+  is not documented; a plausible reason is simply that it shares the
+  full {ref}`RTAI <step-034>` anneal with the wells either way.
+* **Screen oxide.** Whether the pad oxide from {ref}`BOX <step-002>`
+  is still present as the screen oxide (see the open question on
   {ref}`NS19 <step-013>`) is inferred, not stated.
 
 <!-- footnotes -->
