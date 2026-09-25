@@ -111,3 +111,61 @@ pages: 066, 068, 072. One commit per page.
   category sentence split (the markers belong to the 0.38 µm clause); two tokenizer mismatches.
 * **Caps**: para > 100 5 → 0; item > 60 5 → 0; sentence > 45 11 → 1 (the 46-word "The film must
   coat …", above).
+
+### 077 SPE — done
+
+* **Lead.** The 59-word second sentence split at the closing dash of its dash pair: "… every
+  horizontal surface — the tops of the gate caps, the source/drain silicon, the field oxide. It
+  remains only where …" ("and remains" → "It remains", step 7). Lead split into two paragraphs
+  before "Their width"; "Their" → "The spacers'" (R-PARA step 5, so the new paragraph does not open
+  on a pronoun). 113 words as in the base, first sentence 5.
+* **After the figure.** The 131-word paragraph split before "The etch must clear" (the PDK entry
+  and its reading / what the constraint means for the etch); the 66-word sentence split at
+  ", while over the gates" ("Over the gates it eats …"; "while" dropped). "(on our reading)" stays
+  on the stop-on-oxide clause it governed. No H3: the passage is mostly this reference's reading.
+* **R-CATEGORY.** Classification sentence (29 w) alone; the two remaining sentences both describe this
+  step → `**Specific to this step:**` and two bullets, text unchanged.
+* **Why.** "Spacer profile" (71 w) split at its semicolon: lead = the dash-pair sentence (the label is
+  its subject, so it cannot be shortened), continuation from "Krieger et al."; "Residual damage"
+  split at ", and Om et al." (each half keeps its marker).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How.** Main etch: lead = the gas sentence; continuation 1 = the mechanism sentence (split only
+  at its second semicolon, after `[^flamm-1981][^winters-1992]`, so the SiF₄/N₂ clause keeps those
+  markers — masks-b H1), Lee and Chen split from Kastenmeier at ", and"; the 17-word parenthetical
+  closed as its own sentence "(Both in downstream, ion-free reactors: … used here.)" (R-SENTENCE
+  step 7, capitalised and closed, nothing else changed); continuation 2 = "The bias is set …".
+  Endpoint (55 w): the dash pair holding the TEL quotation moved after the sentence with the
+  neutral lead-in "The patent adds:" (step 7); both pieces keep their own `[^pat-cn-tel]` as in
+  the base. Over-etch (80 w): lead = the chemistry clause with its `[^regis-1997]`; continuation
+  "It is long enough to remove nitride stringers … survives.[^regis-1997]" ("It is" added; the
+  marker **repeated**, declared, because in the base that clause ran on through a colon into the
+  Regis sentence and was covered by its marker).
+* **R-TOOLS.** Four tool bullets → recap table `Tool | Evidence` above the list (grades in the page's
+  words). Lam 9400: *SkyWater says:* "lists "…"" (verb-first), *Tool exists:*, *Runs this step:*.
+  DPS II: its head sentence mixes SkyWater's quotation with this reference's gloss ("carries CF₄ and
+  CHF₃ and could run a nitride etch-back") with no seam → pilot form, the grade as *Runs this step:*
+  (the page grades only the step). Lam 4400: *Runs this step:* **weak** (as on 062). Wet clean:
+  *Tool exists:*.
+* **R-RELATED.** Previous/Next split into two bullets. "The extensions it protects" → `Same module:`
+  (ASTI, HVASTI, LDASTI carry this module's Phase cell); "The oxide it stops on … the cap it thins"
+  → `Depends on:`; "The implants the spacer masks" → `Feeds:`; "Other nitride etches … the gate
+  etch whose profile the spacer follows" → `Same category:` (STINITE, ONOME, NPCME, P1ME are all
+  Etch steps). Every gloss and link kept.
+* **R-OPENQ.** Labels "Chemistry and spacer width", "What the etch stops on", "POC oxide cap",
+  "Which etcher"; text unchanged except the stop-layer bullet (47 w with its label) split at its
+  semicolon ("… is not public. Our reading is that an oxide survives …"; the hedge keeps its own
+  sentence).
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers: the 0.2 µm "poly cap after SPE" with
+  its "(inference)" reading; tool line with both grades named; Not public from Open questions 1–2.
+* **Skipped.** R-H3, R-TABLE, R-DERIVATION (nothing qualifies); R-REPEAT (no repeat).
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03` (glance), `regis-1997`
+  (repeat), `skw-01` (glance); numbers 0.2 (glance), 4400, 9400×2 (recap table and glance); quotes
+  "nitride", "poly cap after SPE" (glance); ref `step-076` (glance); hedges "inference"×3 (glance ×2,
+  recap table), "likely", "not public" (glance). REGROUPED: the 387 nm sentence (387 | 387), the
+  quotation moved after its sentence. WORDS LOST: "strength"×4 (R-TOOLS), "their" ("The spacers'"),
+  "while" (split).
+* **Marker coverage.** 13 flags, all read: glance lines; split halves whose base marker belonged to
+  the other clause (Reinhardt/Om, Lee and Chen/Kastenmeier, the Kastenmeier caveat, the over-etch
+  clause now carrying its repeated marker); the "(on our reading)" clause kept with the source/drain
+  half; the Tool-exists/Runs-this-step split; OQ label lines.
+* **Caps**: para > 100 2 → 0; item > 60 3 → 0; sentence > 45 7 → 0. Lead 113 words (base 113).
