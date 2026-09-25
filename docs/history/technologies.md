@@ -102,7 +102,9 @@ reports show four processes of this generation at Fab 4 (Cypress's reports):[^qt
   with Hot Al" prints two metal layers, 0.35 µm and 70 Å of gate oxide.
 * **R42HD**, November 1997: two metal layers, 0.42 µm, 110 Å of gate oxide; 3.3 V and 5 V dual-port SRAMs.
 * **RAM42HA and RAM42HHA**, single-metal 0.42 µm versions for the CY62256 256K SRAM: 70 Å of gate oxide
-  for the 3 V part, 110 Å for the 5 V part. RAM42 moved to Grace in 2009 (single source).[^qtp-091302]
+  for the 3 V part, 110 Å for the 5 V part. The metals differ too: 6000 Å of aluminium–copper between TiW
+  layers for the 3 V part, 8000 Å of aluminium under "500A Cu-Ti" for the 5 V part (Cypress's
+  reports).[^qtp-030204][^qtp-030206] RAM42 moved to Grace in 2009 (single source).[^qtp-091302]
 
 **Metal.** The two-metal R42 stacks are TiW, aluminium–copper and TiW: "500Å TiW/6000Å Al -5%Cu/1200Å TiW"
 for metal 1 (Cypress's reports).[^qtp-003907][^qtp-102101] The reports print "-5%Cu"; other reports of the
@@ -189,7 +191,9 @@ reports):[^qtp-024110][^qtp-043004][^qtp-053301]
   and PLL parts.
 
 In 2006 Cypress announced it would move "its 0.13-micron C8 process technology" to Grace, for USB and
-clock chips. A 2015 notice lists "130nm C8/R8/S8/L8" as the 0.13 µm families at Fab 4.[^eet-2006-c8][^pin-152804]
+clock chips; its 2010 report says the transfer of its "0.13-micron SRAM and LOGIC processes" was completed
+in 2006 and 2007.[^eet-2006-c8][^ar-fy2010] A 2015 notice lists "130nm C8/R8/S8/L8" as the 0.13 µm families
+at Fab 4 (single source).[^pin-152804]
 S8 is the fourth of these; how it relates to the other three is on {ref}`history-s8-lineage`.
 
 (history-tech-90nm)=
@@ -417,3 +421,7 @@ reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
 [^qtp-054605]: Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
+
+[^ar-fy2010]: Cypress Semiconductor Corp., *2010 Annual Report* with Form 10-K, fiscal year ended
+    2011-01-02: "Manufacturing" section.
+    <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf>

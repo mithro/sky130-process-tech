@@ -61,9 +61,9 @@ source).[^ar-fy1997] Cypress's qualification reports show:
 
 * **0.8 µm.** P20, for MAX EPLDs (Cypress's reports). The reports are undated; their QTP numbers,
   91216 and 93321, suggest 1991 and 1993 (our reading).[^qtp-091216][^qtp-093332]
-* **0.65 µm.** The R28 SRAM process qualified at Fab 2 in November 1997, with a further R28 product moved
-  from Fab 3 in 1998 (the report's number; its version 1.3 is dated March 1999); the L28 clock and logic process, moved from Fab 3 in April 1998; and P26
-  for PROMs (Cypress's reports).[^qtp-097476][^qtp-098393][^qtp-031101][^qtp-096411]
+* **0.65 µm.** The R28 SRAM process qualified at Fab 2 in November 1997. A further R28 product moved from
+  Fab 3 in 1998 (the report's number; its version 1.3 is dated March 1999). The L28 clock and logic
+  process moved from Fab 3 in April 1998, and P26 ran there for PROMs (Cypress's reports).[^qtp-097476][^qtp-098393][^qtp-031101][^qtp-096411]
 * **S4AD-5.** "New Technology S4AD-5" was qualified in April 2001 with a clock generator (Cypress's
   reports).[^qtp-021507][^qtp-042806]
 
@@ -142,7 +142,7 @@ Cypress planned a second, eight-inch fab in Round Rock, called "Fab V" or "Fab 5
 the project:
 
 * **1995–1996.** Cypress bought 110 more acres in Round Rock and "broken ground on Fab V", to be "almost
-  identical" to Fab IV.[^ar-fy1995][^ar-fy1996]
+  identical" to Fab IV. The Gale history dates the start of building to April 1996.[^ar-fy1995][^ar-fy1996][^fu-cypress]
 * **1996.** "In the third quarter, the Company decided to put on hold construction of Fab V due to market
   conditions." (single source)[^ar-fy1996]
 * **1998.** Fab 5 "can now be deferred until late 1999", and 0.25 µm technology would go into "Fab 5, an
@@ -165,7 +165,7 @@ technology (single source).[^ar-fy1998] The foundries the sources name before S8
 | Magnachip, Cheong-Ju, Korea | P26 moved from Fab 2 as a three-metal "P26 TLM", qualified March 2006 | single source[^qtp-054605] |
 | Hyundai Electronics ("Fab HME"), Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000 | single source[^qtp-001004] |
 | Tower, IBM and Chartered | foundries of IMI, which Cypress bought in February 2001 | single source[^qtp-i000006] |
-| TSMC, Taiwan | L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^qtp-080608][^qtp-s050001] |
+| TSMC, Taiwan | process development for CPLDs in 1998; L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^ar-fy1998][^qtp-080608][^qtp-s050001] |
 | ProMOS and Powerchip, Taiwan | memory processes: ProMOS S17 (0.17 µm, 2003), Powerchip 0.16 µm | Cypress's reports[^qtp-032301][^qtp-051501] |
 | Honeywell, Minnesota | a joint silicon-on-insulator process from 2002 | conflict on the node[^ar-fy2002][^edn-2005-honeywell] |
 | Grace (GSMC, later HHGrace), Shanghai | foundry deal of December 2005; S4 PSoC first; 0.35 µm SONOS and C8 moved from 2006 | Cypress and EE Times[^ar-fy2005][^eet-2005-grace][^ar-fy2006][^eet-2006-c8] |
@@ -183,6 +183,10 @@ technology".[^eet-2005-grace][^ar-fy2005] Cypress completed the transfer of its 
 during 2006 (Cypress's reports).[^ar-fy2006][^tenk-fy2007] In July 2006 it announced it would begin moving
 "its 0.13-micron C8 process technology" to Grace in the third quarter, for USB and clock chips (single
 source).[^eet-2006-c8] In 2009 an older SRAM process, RAM42, followed (single source).[^qtp-091302]
+
+**Grace and 65 nm.** In 2007 the press disagreed about Grace. Electronics Weekly wrote that "Cypress
+currently uses its own 65nm technology" there; EE Times wrote that Grace "isn't capable of 65-nm
+manufacturing".[^ew-2007-umc][^eet-2007-fablite]
 
 **UMC and S8.** In 2007 EE Times reported a plan to "shift its 0.13-micron S8 embedded-flash technology"
 to UMC (single source).[^eet-2007-fablite]

@@ -781,6 +781,8 @@ records:
   retrieved: 2026-09-25
   cache: filings/ar-fy1998.txt
   quotes:
+  - text: partnering with the T SMC foundry to do process development
+    location: Letter to shareholders, Programmable Products Division
   - text: >-
       We have also begun to use w afer foundries to stretch our R&D dollars: Our Programmable Products
       Division (PPD) needed a 0.18-micron logic technology to develop its

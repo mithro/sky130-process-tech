@@ -710,6 +710,8 @@ records:
   - text: Cypress recently signed off on a 0.4-micron process for its mixed-signal programmable system-on-chip
       (PSoC) and is in the midst of shifting its 0.13-micron process to Grace.
     location: article body, fifth paragraph
+  - text: But the foundry isn't capable of 65-nm manufacturing, so Cypress had to look elsewhere.
+    location: article body, fifth paragraph
   - text: Cypress also plans to shift its 0.13-micron S8 embedded-flash technology and two future generations
       of embedded-flash technology to UMC in order to produce other Cypress products, including its PSoC
       and USB devices.

@@ -43,7 +43,7 @@ Used on {ref}`history-fabs`, {ref}`history-sonos-s4`, {ref}`history-technologies
 
 (hsrc-ar-fy2004)=
 **AR-FY2004** — Cypress Semiconductor Corp., *2004 Annual Report* with Form 10-K, fiscal year ended 2005-01-02: Item 1, Research and development. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf>
-Used on {ref}`history-technologies`.
+Used on {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-ar-fy2005)=
 **AR-FY2005** — Cypress Semiconductor Corp., *2005 Annual Report* with Form 10-K, fiscal year ended 2006-01-01: Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf>
@@ -63,7 +63,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-ar-fy2010)=
 **AR-FY2010** — Cypress Semiconductor Corp., *2010 Annual Report* with Form 10-K, fiscal year ended 2011-01-02: "Manufacturing" section. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf>
-Used on {ref}`history-fabs`, {ref}`history-s8-lineage`.
+Used on {ref}`history-fabs`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
 
 (hsrc-ar-fy2013)=
 **AR-FY2013** — Cypress Semiconductor Corp., *2013 Annual Report* with Form 10-K: Item 7, Management's Discussion and Analysis. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2013.pdf>
@@ -167,7 +167,7 @@ Used on {ref}`history-fabs`.
 
 (hsrc-psoc-history)=
 **PSOC-HISTORY** — Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of 2025-07-13 (the live page now redirects elsewhere). <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
-Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
+Used on {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-qtp-000901)=
 **QTP-000901** — Cypress Semiconductor, Product Qualification Report QTP 000901: *Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology*, May 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>
@@ -279,7 +279,7 @@ Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage
 
 (hsrc-qtp-054605)=
 **QTP-054605** — Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
-Used on {ref}`history-products`, {ref}`history-stackups`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-061806)=
 **QTP-061806** — Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>
@@ -443,7 +443,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-strib-2017)=
 **STRIB-2017** — Alex Van Abbema, *Twin Cities tech executives form new company, buy Cypress chip plant in Bloomington*, Star Tribune, 2017-03-31. <https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063>
-Used on {ref}`history-fabs`, {ref}`history-index`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-s8-lineage`.
 
 (hsrc-strib-2019)=
 **STRIB-2019** — Evan Ramstad, *Why computer-chip factories from the 1980s are still going strong in Bloomington*, Star Tribune, 2019-06-09. <https://www.startribune.com/why-computer-chip-factories-from-the-1980s-are-still-going-strong-in-bloomington/510984342>
@@ -459,7 +459,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-tenq-2017q1)=
 **TENQ-2017Q1** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed 2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-s8-lineage`.
 
 :::{dropdown} Patents shown as in force or of unknown status — open to read
 

@@ -65,6 +65,9 @@ For SKY130, the PDK gives a 110 Å oxide for its 5 V devices and draws `met1` 0.
 S8's first metal adds up to 0.36 µm (our arithmetic). The same recipe is used in two of Cypress's 90 nm
 processes of 2006 and 2007 (Cypress's reports).[^qtp-113005][^qtp-063807][^qtp-061806]
 
+The PDK is not independent of the Cypress reports: SkyWater runs the fab it bought from Cypress in
+2017.[^tenq-2017q1][^strib-2017]
+
 ## What does the "8" mean?
 
 The SKY130 PDK says `s8` "stood for the "8th generation" of the SONOS technology developed originally by
@@ -180,3 +183,11 @@ no Cypress source found says. The naming is set out on {ref}`history-naming`.
 [^ar-fy2008]: Cypress Semiconductor Corp., *2008 Annual Report* with Form 10-K, fiscal year ended
     2008-12-28: shareholder letter and Item 1, Manufacturing.
     <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf>
+
+[^strib-2017]: Alex Van Abbema, *Twin Cities tech executives form new company, buy Cypress chip
+    plant in Bloomington*, Star Tribune, 2017-03-31.
+    <https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063>
+
+[^tenq-2017q1]: Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed
+    2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing.
+    <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>

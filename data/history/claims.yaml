@@ -323,7 +323,7 @@ claims:
   page: docs/history/fabs.md
   anchor: Cypress bought 110 more acres in Round Rock
   grade: corroborated
-  footnotes: [ar-fy1995, ar-fy1996]
+  footnotes: [ar-fy1995, ar-fy1996, fu-cypress]
   sources:
   - {id: cyx-ar-fy1995-fabv, origin: cypress}
   - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
@@ -386,11 +386,21 @@ claims:
   anchor: '| TSMC, Taiwan |'
   grade: attributed
   attribution: Cypress's reports
-  footnotes: [qtp-080608, qtp-s050001]
+  footnotes: [ar-fy1998, qtp-080608, qtp-s050001]
   sources:
+  - {id: cyx-ar-fy1998-foundries, origin: cypress}
   - {id: qtp-080608, origin: cypress}
   - {id: qtp-110605, origin: cypress}
   - {id: qtp-s050001, origin: cypress}
+- id: fab-grace-65nm-conflict
+  page: docs/history/fabs.md
+  anchor: In 2007 the press disagreed about Grace
+  grade: conflict
+  hedge: disagreed
+  footnotes: [ew-2007-umc, eet-2007-fablite]
+  sources:
+  - {id: cyhist-corp-pr-2007-sram-foundry-ew, origin: ew}
+  - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
 - id: foundry-promos-powerchip
   page: docs/history/fabs.md
   anchor: '| ProMOS and Powerchip, Taiwan |'
@@ -790,10 +800,26 @@ claims:
   page: docs/history/technologies.md
   anchor: its 0.13-micron C8 process technology
   grade: corroborated
-  footnotes: [eet-2006-c8, pin-152804]
+  footnotes: [eet-2006-c8, ar-fy2010]
   sources:
   - {id: cyhist-corp-pr-2006-grace-c8-130nm, origin: eetimes}
+  - {id: cyx-ar-fy2010-grace-013, origin: cypress}
+- id: tech-pin-013-families
+  page: docs/history/technologies.md
+  anchor: A 2015 notice lists "130nm C8/R8/S8/L8"
+  grade: single-source
+  footnotes: [pin-152804]
+  sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}
+- id: tech-ram42-metals
+  page: docs/history/technologies.md
+  anchor: The metals differ too
+  grade: attributed
+  attribution: (Cypress's
+  footnotes: [qtp-030204, qtp-030206]
+  sources:
+  - {id: qtp-030204, origin: cypress}
+  - {id: qtp-030206, origin: cypress}
 - id: tech-90nm
   page: docs/history/technologies.md
   anchor: now in production at our Minnesota facility
@@ -1195,6 +1221,14 @@ claims:
   footnotes: [pdk-previous]
   sources:
   - {id: cyx-pdk-previous, origin: skywater}
+- id: s8-pdk-not-independent
+  page: docs/history/s8-lineage.md
+  anchor: The PDK is not
+  grade: corroborated
+  footnotes: [tenq-2017q1, strib-2017]
+  sources:
+  - {id: cypress-10-q-2017-05-02, origin: cypress}
+  - {id: cyx-startribune-2017-plant, origin: startribune}
 - id: s8-pdk-and-m1
   page: docs/history/s8-lineage.md
   anchor: S8's first metal adds up to 0.36 µm (our arithmetic)
