@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s8` | W1c: emulator improvements + series S8 (107–117): written; Opus review running | Opus | in review |
+| `topic/rd-figures-s9a` | W1c series S9 first group: via 1 to metal 3 (118–134) | Opus | running since 2026-09-26 |
 | `topic/rd-steps-048-063` | W2 batch 4 (poly module) — first OPUS writer on a step batch, to test whether it passes review first time | Opus | running since 2026-09-25 |
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
