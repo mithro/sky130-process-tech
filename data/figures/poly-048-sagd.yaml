@@ -1,0 +1,42 @@
+id: poly-048-sagd
+kind: xsection
+page: docs/steps/048-sagd.md
+series: series-poly.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step two active areas, each
+  covered by a thin oxide, lie either side of an oxide-filled trench whose top stands a little
+  above them. After it one continuous film covers the whole slice, following the small step at
+  each edge of the trench.
+caption: >-
+  Before, the wafer as this series takes it from the gate-oxide module: a thin gate oxide on
+  both active areas (the slice is read as two low-voltage transistors, so the thick oxide of GOX100 and
+  the ONO islands of the memory cells lie outside it) and the field oxide standing a little above
+  them. After, the blanket gate film over the whole slice; it is drawn as one layer, which the page
+  infers (the PDK's stack drawing shows a single poly layer[^pdk-04]), and its thickness is the PDK's 0.18 µm,[^pdk-03] drawn far
+  thicker than it is. That the film is undoped and amorphous as deposited is the page's
+  inference from SkyWater's capability list.[^skw-01] The liner oxide is drawn faded; the wells
+  and channel implants made earlier are not drawn. Not to scale.
+arrow:
+  title: "SAGD, step 048"
+  note: "LPCVD lays one blanket film of amorphous silicon over gate oxide and field oxide alike."
+panels:
+  - state_after: "047"
+    title: "Before: the gate oxides grown, up to LVGOX (step 047); NMOS left, PMOS right"
+    hide_layers: [nwell, pwell, chn, chp]
+    dim_layers: [liner]
+  - state_after: "048"
+    title: "After: one blanket gate film over the whole wafer"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
+    dims:
+      - x: 40
+        y0: "top@40"
+        y1: 5
+        label:
+          title: "Gate film thickness"
+          note: "0.18 µm in the PDK"
+          basis: public
+          cite: pdk-03

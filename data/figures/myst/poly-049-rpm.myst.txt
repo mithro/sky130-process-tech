@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/poly-049-rpm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a continuous film covers the whole slice. After it a single block of resist sits on that film over the middle of the oxide-filled trench, wider than the part of the film that will later become a resistor; the film over both active areas is bare.
+:width: 560px
+:name: fig-poly-049-rpm
+
+Before, the bare gate film; after, one resist island over the middle of the field oxide, where this slice places a poly resistor. That the island covers the resistor body, so that the gate implant cannot reach it, is the page's inference from the PDK's p-type resistors and n-type gate poly.[^pdk-07] The island is drawn wider than the body because `rpm` must enclose the resistor (rpm.3).[^pdk-periph] Whether this reticle also covers the 2000 Ω/sq bodies[^pdk-07] is not public; none lies in this slice. The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::

@@ -26,6 +26,15 @@ follow ({ref}`P1I <step-050>` for the gates, {ref}`PRI <step-053>` and
 amorphous, the film crystallises into polysilicon during the thermal
 steps that follow, which is why the PDK calls the layer simply "poly".
 
+:::{figure} /_static/figures/poly-048-sagd.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step two active areas, each covered by a thin oxide, lie either side of an oxide-filled trench whose top stands a little above them. After it one continuous film covers the whole slice, following the small step at each edge of the trench.
+:width: 560px
+:name: fig-poly-048-sagd
+
+Before, the wafer as this series takes it from the gate-oxide module: a thin gate oxide on both active areas (the slice is read as two low-voltage transistors, so the thick oxide of GOX100 and the ONO islands of the memory cells lie outside it) and the field oxide standing a little above them. After, the blanket gate film over the whole slice; it is drawn as one layer, which the page infers (the PDK's stack drawing shows a single poly layer[^pdk-04]), and its thickness is the PDK's 0.18 µm,[^pdk-03] drawn far thicker than it is. That the film is undoped and amorphous as deposited is the page's inference from SkyWater's capability list.[^skw-01] The liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
+
+
 The public numbers are few but firm. The PDK's assumptions table gives
 a "poly thickness" of 0.18 µm,[^pdk-03] and the process stack diagram
 labels the poly with the same 0.18 µm.[^pdk-04] The drawn layer is

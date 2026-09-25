@@ -1,0 +1,31 @@
+id: poly-051-p1is
+kind: xsection
+page: docs/steps/051-p1is.md
+series: series-poly.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a single block of resist
+  sits on a continuous film over the middle of the oxide-filled trench. After it the resist is
+  gone and the film is bare across the whole slice.
+caption: >-
+  Before, the implanted resist island of RPM; after, the island gone and the gate film bare
+  everywhere, the resistor body still undoped and the rest carrying the gate implant (neither
+  doping is drawn). The thin chemical oxide the clean leaves on the film is not drawn. The liner
+  oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to
+  scale.
+arrow:
+  title: "P1IS, step 051"
+  note: "The crusted resist is ashed and stripped, and the bare film is cleaned for the next mask."
+panels:
+  - state_after: "050"
+    title: "Before: the RPM resist after the gate implant P1I (step 050)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    show_ions: false
+  - state_after: "051"
+    title: "After: resist removed; the gate film bare"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]
+    highlight: {where: [[100, 168]]}
