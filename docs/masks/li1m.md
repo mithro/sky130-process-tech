@@ -4,18 +4,10 @@
 The local-interconnect mask is the {term}`reticle` that draws SKY130's
 lowest wiring level, the {term}`local interconnect` (titanium nitride on
 the {ref}`LITIN <step-101>` page's reading) that joins transistors, taps
-and poly below metal 1: on the
+and poly below metal 1. On the
 {ref}`LI1M <step-102>` page's reading, the resist printed through it at
 step 102 stays wherever `li1` is drawn and protects the TiN that the
-{ref}`LI1ME <step-103>` etch leaves standing as lines and pads. It prints
-lines rather than holes, at the same 0.17 µm as the contacts beneath it
-and at 0.14 µm in one family of cells, and the PDK publishes a "Li1
-proximity correction" criterion for it. This page
-gathers what public sources say about the mask itself — its PDK entry
-and layers, the plates the process-steps sheet records for the MPW runs,
-what the public renders of those runs show, the lithography it needs and
-the rules that constrain it. How the step is performed is on the step
-page; every mask is indexed on the {ref}`masks index <masks-index>`.
+{ref}`LI1ME <step-103>` etch leaves standing as lines and pads.
 
 | | LI1M — Local Intrcnct 1 |
 |---|---|
@@ -32,27 +24,43 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-li1m-steps>` |
 
+:::{seealso}
+How the step is performed is on the step
+page; every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask prints
+lines rather than holes, at the same 0.17 µm as the contacts beneath it
+and at 0.14 µm in one family of cells, and the PDK publishes a "Li1
+proximity correction" criterion for it.
 
 The periphery rules give the function of the `li` rule set as "Defines
 local interconnect to diff/tap and poly".[^pdk-periph] The PDK's Table
 F4, "Connectivity of Drawn and Mask Layers", shows the level in the
 middle of the contact stack: `li1` reaches diff and tap through "Licon1"
 and poly through "Licon1 AND Npc", and metal 1 reaches `li1` through
-"Mcon".[^pdk-summary] The mask therefore carries three kinds of shape:
-lines that wire devices together inside a cell, pads that cover the
-contacts below ({ref}`mask-licm1`) and receive the contacts above, and
-LI resistor bodies, at least 0.290 µm wide (li.7).[^pdk-periph] In the
+"Mcon".[^pdk-summary] The mask therefore carries three kinds of shape:[^pdk-periph]
+
+* lines that wire devices together inside a cell
+* pads that cover the
+  contacts below ({ref}`mask-licm1`) and receive the contacts above
+* LI resistor bodies, at least 0.290 µm wide (li.7)
+
+In the
 TiN local-interconnect process of Tang et al., "the 0.1-µm-thick TiN
 layer is patterned and etched to provide local connections between
-polysilicon gates and n+ and p+ junctions";[^tang-1987] the PDK's stack
+polysilicon gates and n+ and p+ junctions".[^tang-1987] The PDK's stack
 diagram gives SKY130's `li` as 0.10 µm thick.[^pdk-04]
 
 The PDK's mask generation table, Table F2b, marks the `LI1M` column `C`
-("CREATED") in three of its 80 device rows — the LI resistor and the two
-VPP capacitor rows ("VPP" and "VPP (with met3 shield)") — `+`, "Layer
+("CREATED") in three of its 80 device rows: the LI resistor and the two
+VPP capacitor rows ("VPP" and "VPP (with met3 shield)").[^pdk-06] It marks `+`, "Layer
 allowed to overlap", in 75, and `-`, "Layer not created for the device",
-only for the two metal fuses.[^pdk-06] The narrowest `li` rules belong to
+only for the two metal fuses.[^pdk-06]
+
+The narrowest `li` rules belong to
 one of those devices: li.1a and li.3a allow 0.140 µm width and space
 "inside of cells with name s8rf2_xcmvpp_hd5_\*", against 0.170 µm
 elsewhere (li.1, li.3).[^pdk-periph] We read the cell name as a VPP
@@ -62,7 +70,7 @@ capacitor cell and Table 2's 0.14 "Core" row as those cells' values
 The mask does not define the TiN film it patterns, which
 {ref}`LITIN <step-101>` deposits, nor the nitride cap that
 {ref}`LINIT <step-104>` lays over the etched lines, on the step pages'
-readings; the contacts it covers and the contacts that land on it are
+readings. The contacts it covers and the contacts that land on it are
 the {ref}`LICM1 <step-093>` and {ref}`CTM1 <step-107>` masks.
 
 ## Drawn layers and derivation
@@ -72,16 +80,20 @@ the {ref}`LICM1 <step-093>` and {ref}`CTM1 <step-107>` masks.
 `gds_layers.csv` gives the mask-level layer `cli1m` four purposes:
 `mask` at 56:0 ("Local interconnect mask"), and `drawing` 115:44,
 `mask add` 115:43 and `mask drop` 115:42 on a different layer number,
-the last three without a description; the drawn layer is `li1` at 67:20,
+the last three without a description.[^pdk-06] The drawn layer is `li1` at 67:20,
 "Local interconnect".[^pdk-06] The pairing rests on those names and
 descriptions, as on the {ref}`masks index <masks-index>`, and the PDK
-publishes no operation from `li1` to the plate. Rule x.9 reads "Shapes on
+publishes no operation from `li1` to the plate.
+
+Rule x.9 reads "Shapes on
 maskAdd or maskDrop layers ("serifs") are allowed in core only", with the
-exemptions it lists, and rule x.15a confines "Drawn compatible, mask, and
+exemptions it lists.[^pdk-periph] Rule x.15a confines "Drawn compatible, mask, and
 waffle-drop layers" to test modules, seal ring and frame, with the
 exception that "FOM/P1M/Metal waffle drop are allowed inside the die"
 (flag P, periphery only).[^pdk-periph] A design inside the die therefore
-draws `li1` (our reading of x.9 and x.15a). The `nsm` rules name the
+draws `li1` (our reading of x.9 and x.15a).
+
+The `nsm` rules name the
 mask-level shapes directly: nsm.3 sets 1.000 µm between the nitride-seal
 keep-out and a list of drawn and mask layers that includes "li1.dg" and
 "cli1m.mk".[^pdk-periph] We read ".mk" as the mask purpose; the PDK does
@@ -95,7 +107,9 @@ column, and no variable name, and a row "Li1 proximity correction" with
 {ref}`LI1M <step-102>` page reads the second as public evidence that the
 `cli1m` data carry an {term}`OPC` applied to lines closer than 0.25 µm,
 and the {ref}`LI1ME <step-103>` page reads the first as the mask sizing
-that compensates the {term}`etch bias`; the PDK says neither. The
+that compensates the {term}`etch bias`; the PDK says neither.
+
+The
 `LI1M` data are not among those rule x.1a names for the 0.001 grid
 ("mask data for p1m, met1, via, met2"), so they fall under x.1b's 0.005
 (our reading; both values are printed with the unit "mm").[^pdk-periph]
@@ -106,13 +120,16 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `LI1M` the site renders layer 67:20 (`li1`)
 together with 56:28, which it lists as a fill layer, with no Boolean
-expression and no note, on all eight runs; its mask record gives the
+expression and no note, on all eight runs.[^mask-renders] Its mask record gives the
 mask-level layer 56:0 and the info text "LI (Metal 0)".[^mask-renders]
+
 Layer 56:28 is not in `gds_layers.csv`,[^pdk-06] although it shares its
 layer number with the `cli1m` mask purpose 56:0 (our observation), so
 the site's choice of it is one public reading of the tape-out files,
-not a PDK definition, and like the site's other layer choices it is not
-SkyWater's mask-generation recipe ({ref}`masks-derivations`). The info
+not a PDK definition. Like the site's other layer choices, it is not
+SkyWater's mask-generation recipe ({ref}`masks-derivations`).
+
+The info
 text is identical to the "Info" note of the `LI1M` row in the
 process-steps sheet, one of the level names the two sources share, so
 neither is cited as corroborating the other
@@ -120,7 +137,9 @@ neither is cited as corroborating the other
 
 Every rendered die of every run carries shapes on these layers — at
 least 3 562 112 on each die, fill included[^mask-renders] — so the count
-of 40 dies says only that every layout has local interconnect. The site
+of 40 dies says only that every layout has local interconnect.
+
+The site
 states the limits of its images: "These are renders of *drawn* data, not
 photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
 features the fab adds are not modelled."[^mask-renders] They therefore
@@ -165,12 +184,16 @@ set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`LI1M <step-102>` page puts 0.17 µm lines
+### Exposure class
+
+The {ref}`LI1M <step-102>` page puts 0.17 µm lines
 and spaces at {math}`k_1 \approx 0.28` on an i-line tool of NA 0.6,
 which it excludes, and at {math}`k_1 \approx 0.41–0.48` on a KrF lens of
 NA 0.6–0.7, "workable for lines with OPC and, for the 0.14 µm cells,
-off-axis illumination", and infers a 248 nm level; the
-{ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there. ITRS
+off-axis illumination", and infers a 248 nm level. The
+{ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there.
+
+ITRS
 2001 lists "248 nm + PSM" and "193 nm" as the exposure options for the
 130 nm node, and says that "only 248 nm lithography has a mature
 infrastructure".[^itrs-03] ASML's PAS 5500/750E "achieves 130 nm
@@ -178,14 +201,18 @@ resolution while using standard 248 nm light".[^asml-750e] SkyWater
 lists "ASML DUV stepper" and "ASML DUV scanner" but assigns no layer to
 them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns", and that
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998] Wong et al. found that
 "dense lines and spaces exhibit markedly higher MEF values than isolated
-features";[^wong-1998] at 248 nm and NA 0.7 the threshold is about
+features".[^wong-1998] At 248 nm and NA 0.7 the threshold is about
 0.18 µm (our arithmetic), just above the 0.17 µm lines and further above
 the 0.14 µm lines of li.1a, so plate CD errors on the dense parts of this
-mask would print magnified (inference). Arthur and Martin carried the
+mask would print magnified (inference).
+
+Arthur and Martin carried the
 mask error factor, with pitch, OPC and focus, through process windows
 and CD budgets to "the impact on reticle procurement
 specifications".[^arthur-1999] ITRS 2001's optical mask requirements,
@@ -194,53 +221,69 @@ which are "for critical layers", ask in 2001 for a mask CD uniformity of
 binary mask, at 4× magnification.[^itrs-03] How tightly SkyWater
 specifies the `LI1M` plate is not public.
 
-**Proximity and line ends.** The PDK's 0.25 "Li1 proximity correction"
+### Proximity and line ends
+
+The PDK's 0.25 "Li1 proximity correction"
 space[^pdk-03] fits a correction that treats lines closer than 0.25 µm
 differently from wider-spaced ones (the step page's reading). Otto et al.
 describe such a rules-based correction, whose "edge rules and corner
 rules" bias feature edges and add sub-resolution assist
-features;[^otto-1994] Rieger and Stirniman generate behaviour models
-that serve as the correction rules;[^rieger-1994] and Cobb and Zakhor
+features.[^otto-1994] Rieger and Stirniman generate behaviour models
+that serve as the correction rules.[^rieger-1994] Cobb and Zakhor
 made aerial-image calculation fast for the mask perturbations OPC
-produces.[^cobb-1995] Shi et al. showed that the "forbidden pitch" lies
+produces.[^cobb-1995]
+
+Shi et al. showed that the "forbidden pitch" lies
 where the fields of neighbouring features interfere destructively with
 the main feature's, which illumination design can suppress, with
-scattering bars placed for best performance.[^shi-2002] Line ends matter on a wiring level:
+scattering bars placed for best performance.[^shi-2002]
+
+Line ends matter on a wiring level:
 Garofalo et al. found that line-end shortening "reduces the wafer process
 latitude and in some cases even eliminates the level-to-level overlay
-margin",[^garofalo-1995] and the `li` rules need 0.080 µm of LI beyond a
+margin".[^garofalo-1995] The `li` rules need 0.080 µm of LI beyond a
 licon on one of two adjacent sides (li.5).[^pdk-periph]
 
-**Substrate and tone.** On the step pages' readings the resist is
+### Substrate and tone
+
+On the step pages' readings the resist is
 coated on TiN. Sturtevant et al.
 examined DUV resists on substrates including titanium nitride and found a
 "substrate contamination" effect "which results in distorted photoresist
 profiles at the substrate/resist interface", with organic
 anti-reflective films acting "as effective barrier layers in some
-cases";[^sturtevant-1994] He et al. developed a silicon oxynitride ARC
+cases".[^sturtevant-1994]
+
+He et al. developed a silicon oxynitride ARC
 that "can not only function as an ARC layer, but also serve as a
-hardmask";[^he-1998] and Sekiguchi et al. found the effect of underlayer
+hardmask".[^he-1998] Sekiguchi et al. found the effect of underlayer
 reflection on the isolated–dense CD bias significant for a negative
-resist and small for a positive one.[^sekiguchi-1998] The step page reads a chemically
+resist and small for a positive one.[^sekiguchi-1998]
+
+The step page reads a chemically
 amplified positive KrF resist over an organic or inorganic ARC; with the
 resist left where `li1` is drawn, the plate would be clear-field:
 opaque lines in a clear field (inference). Neither the resist nor the
 tone is published. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
-transferred by {ref}`LI1ME <step-103>`, a chlorine-based etch of the
-0.1 µm TiN that stops on the cap oxide and on any plug top the overlay
-leaves uncovered, on the
-{ref}`metal plasma etcher <machine-plasma-etcher-metal>` class, and the
-resist is stripped and the wafer cleaned before the nitride cap.
+### Overlay and alignment
 
-**Overlay.** The {ref}`LI1M <step-102>` page reads the mask as aligned to
+The {ref}`LI1M <step-102>` page reads the mask as aligned to
 the contact layer and calls li.5 "the tightest overlay-driven rule on the
 layer". Above it, `mcon` needs no enclosure by LI at all (ct.4, 0.000 µm;
 Table 4's "Mcon enclosure by Li", 0), but Table 4 also gives a "Minimum
 mcon overlap onto LI for reproducible contact resistance" of 0.12
 (`TCONOVLP`).[^pdk-periph][^pdk-03]
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
+transferred by {ref}`LI1ME <step-103>`, a chlorine-based etch of the
+0.1 µm TiN that stops on the cap oxide and on any plug top the overlay
+leaves uncovered, on the
+{ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings the
+resist is stripped and the wafer cleaned before the nitride cap.
 
 (mask-li1m-steps)=
 ## Steps that use this mask
@@ -270,12 +313,14 @@ pattern is that the strip has no step of its own.
 
 The `li` rules of the periphery rules, with the rules of other sets that
 refer to `li1` or `cli1m` shapes and the mask-data rules x.2, x.7, x.9
-and x.15a; the published table prints the `li` rule names with a
+and x.15a. The published table prints the `li` rule names with a
 trailing ".-" (for example "li.1.-"), shortened here. Flag P means "Rule
 applies to periphery only (outside areaid.ce). A corresponding core rule
 may or may not exist.", NC "Rule not checked by DRC. It should be used as
 a guideline only." and AL "Rules applicable only to Al BE
 flows".[^pdk-periph]
+
+:::{table} The `li` rules, the rules of other sets that refer to `li1` or `cli1m` shapes and the mask-data rules, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -295,16 +340,21 @@ flows".[^pdk-periph]
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. Exempted are: […]" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* gives two "Local Intrcnct 1" rows
 under the same variable names: a "Core" row with 0.14 and 0.14, and a
 row with no label with 0.17 and 0.17, under `LI1MCD` and
-`LI1MCDSP`.[^pdk-03] Table 4 gives the "LI1 thickness for antenna ratio
+`LI1MCDSP`.[^pdk-03]
+
+Table 4 gives the "LI1 thickness for antenna ratio
 calculations" as 0.1 (`LiThick`) and a "Li resistor width (to drop one
-Licon w/o dogbones)" of 0.29 (`LIRESCD`), the value of li.7; Table 7
+Licon w/o dogbones)" of 0.29 (`LIRESCD`), the value of li.7.[^pdk-03] Table 7
 gives, besides the add/drop and proximity rows, a "Keepout of active,
 poly, li and metal to NSM (TCS-2253)" of 1 (`NSMKeepout`), the value of
-nsm.3.[^pdk-03] The summary Table F3c, "Back end layers for S8D\*
+nsm.3.[^pdk-03]
+
+The summary Table F3c, "Back end layers for S8D\*
 flow", repeats li1 width and spacing as
 0.170 and 0.170 with 0.000 for its enclosure of licon, noting that "All
 enclosures in tables are nominal and do not apply to butting edges or
@@ -316,19 +366,17 @@ pitch, and elsewhere 0.170 µm on a 0.34 µm pitch (our arithmetic).
 
 * {ref}`LI1M <step-102>` and {ref}`LI1ME <step-103>` — the mask step and
   the TiN etch; {ref}`LITIN <step-101>` — the film patterned.
-* {ref}`mask-licm1` — the contact mask whose holes this pattern covers.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-duv-krf-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-licm1` — the contact mask whose holes this pattern covers.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 ## References
 

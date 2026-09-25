@@ -371,5 +371,36 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   check wording).[^pdk-errors][^pdk-06][^pdk-periph]" (55: two hedges, "On our reading" at the start and
   "(inference …)" at the end, each covering the whole; a split would leave each half with one of them);
   "It lies between `230` …" (46); the Polarity and tone cell (33; not in the body). Before → after:
-  paragraphs 10 → 0, items 1 → 0, sentences 14 → 2, cells 1 → 1.
+  paragraphs 9 → 0, items 1 → 0, sentences 15 → 2, cells 1 → 1.
+* **Content problems for the owner:** none found.
+
+### 9. li1m — done
+
+* **Rules applied.** R-INTRO (162 → 58 words; first sentence split at its colon; "It prints lines rather
+  than holes …" moved to the top of `## What the mask defines`, "It" → "The mask"); R-CAPTION; R-PARA,
+  R-SENTENCE; R-LIST (the three kinds of shape, the base's end marker `pdk-periph` moved to the lead-in
+  per R-TABLE 3 / R-LIST 1); R-RELATED; R-H3 (Exposure class, Mask errors, Proximity and line ends,
+  Substrate and tone, Overlay and alignment ← "Overlay", Pattern transfer). "Substrate and tone" keeps its
+  own words: it is not one of the checker's synonyms.
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS not applied.** The design-rules paragraph names five parameters, but each carries the
+  page's own commentary ("two "Local Intrcnct 1" rows under the same variable names", "the value of
+  li.7", "besides the add/drop and proximity rows", "the value of nsm.3"). A four-column table would have
+  to reword those clauses into cells or drop them; the sentences were split at their semicolons instead.
+  A reviewer who prefers the table can add it with a Value cell such as "0.29, the value of li.7".
+* **Hedge repeated on a split:** "On the step pages' readings" on the resist-strip clause of Pattern
+  transfer (as on ldntm).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,identifiers`): markers `pdk-06` ×2 (`gds_layers.csv`
+  sentence; Table F2b sentence split at its dash pair, "— `+` …" → "It marks `+` …"), `pdk-periph` (x.9 /
+  x.15a sentence), `mask-renders` (render sentence), `wong-1998` (the second Wong finding, "Wong et al.
+  found that "dense lines …""), `pdk-03` (Table 4 / Table 7 sentence); identifiers `li1`, `cli1m` (the
+  rule-table caption, copied from the sentence above the table).
+* **Marker coverage.** Flags read: the shape list (lead-in marker), "Like the site's other layer choices
+  …" and the arithmetic sentence after the Wong quotation (no marker of their own in the base).
+* **Over the caps after the pass:** the Exposure-class sentence with two formulas (54 by the script,
+  about 35 with each formula as one word); the Exposure class quick-facts cell (31; not in the body) and
+  the nsm.3 rule cell (27, a quotation). Before → after: paragraphs 12 → 0, items 0 → 0, sentences
+  13 → 1, cells 2 → 2.
 * **Content problems for the owner:** none found.
