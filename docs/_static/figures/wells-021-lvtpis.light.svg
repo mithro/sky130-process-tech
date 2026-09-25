@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 723" width="480" height="723" role="img" data-kind="xsection" data-theme="light">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 725" width="480" height="725" role="img" data-kind="xsection" data-theme="light">
 <title>Two cross-sections of the wafer, one above the other. Before the step the thick implanted resist covers the left-hand part of the drawing. After it the resist is gone and the oxide surface is bare across the slice; the N-well and the implanted surface bands are unchanged.</title>
 <desc>Two cross-sections of the wafer, one above the other. Before the step the thick implanted resist covers the left-hand part of the drawing. After it the resist is gone and the oxide surface is bare across the slice; the N-well and the implanted surface bands are unchanged.</desc>
 <style>
@@ -21,7 +21,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="723"/>
+<rect class="ground" x="0" y="0" width="480" height="725"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the N-well resist after LVTPI</text>
 <text x="12.0" y="44.0" class="t-panel-title">(step 020); NMOS left, PMOS right</text>
 <clipPath id="clip1"><rect x="12" y="129.0" width="268" height="213.0"/></clipPath>
@@ -38,15 +38,15 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-implant" data-layer="chp" points="201.75,214.00 283.00,214.00 283.00,224.00 201.75,224.00"/>
 <polygon fill="url(#p-vlines-ink)" points="201.75,214.00 283.00,214.00 283.00,224.00 201.75,224.00"/>
 </g>
-<text x="328.0" y="362.1" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 334.0H285.0V357.2H324.0"/>
+<text x="328.0" y="361.5" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 334.0H285.0V356.6H324.0"/>
 <circle class="dot" data-owner="sub" cx="276.0" cy="334.0" r="1.9"/>
-<text x="328.0" y="194.1" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="328.0" y="210.1" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M276.0 211.5H303.0V189.2H324.0"/>
+<text x="328.0" y="193.5" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="209.5" class="t-label-note tag" data-owner="padox">inferred</text>
+<path class="leader" data-owner="padox" d="M276.0 211.5H303.0V188.6H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="211.5" r="1.9"/>
-<text x="328.0" y="170.1" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 188.5V174.0H309.0V165.2H324.0"/>
+<text x="328.0" y="169.5" class="t-label-title" data-owner="fox">Fill oxide</text>
+<path class="leader" data-owner="fox" d="M192.0 188.5V171.0H309.0V164.6H324.0"/>
 <circle class="dot" data-owner="fox" cx="192.0" cy="188.5" r="1.9"/>
 <text x="88.0" y="67.9" class="t-label-title" data-owner="nwres">Thick photoresist</text>
 <text x="88.0" y="83.9" class="t-label-note muted" data-owner="nwres">N-well mask, NWM, step</text>
@@ -54,53 +54,53 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="88.0" y="115.9" class="t-label-note tag" data-owner="nwres">inferred</text>
 <path class="leader" data-owner="nwres" d="M79.0 141.0V63.0H84.0"/>
 <circle class="dot" data-owner="nwres" cx="79.0" cy="141.0" r="1.9"/>
-<text x="328.0" y="306.1" class="t-label-title" data-owner="nwell">N-well</text>
-<text x="328.0" y="322.1" class="t-label-note muted" data-owner="nwell">retrograde</text>
-<text x="328.0" y="338.1" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
-<path class="leader" data-owner="nwell" d="M276.0 302.0H291.0V301.2H324.0"/>
+<text x="328.0" y="305.5" class="t-label-title" data-owner="nwell">N-well</text>
+<text x="328.0" y="321.5" class="t-label-note muted" data-owner="nwell">retrograde</text>
+<text x="328.0" y="337.5" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
+<path class="leader" data-owner="nwell" d="M276.0 302.0H291.0V300.6H324.0"/>
 <circle class="dot" data-owner="nwell" cx="276.0" cy="302.0" r="1.9"/>
-<text x="328.0" y="234.1" class="t-label-title" data-owner="chp">PMOS channel</text>
-<text x="328.0" y="250.1" class="t-label-title" data-owner="chp">implant</text>
-<text x="328.0" y="266.1" class="t-label-note muted" data-owner="chp">LVTPI, step 020; its</text>
-<text x="328.0" y="282.1" class="t-label-note muted" data-owner="chp">type is not public</text>
-<path class="leader" data-owner="chp" d="M267.0 220.5H297.0V229.2H324.0"/>
+<text x="328.0" y="233.5" class="t-label-title" data-owner="chp">PMOS channel</text>
+<text x="328.0" y="249.5" class="t-label-title" data-owner="chp">implant</text>
+<text x="328.0" y="265.5" class="t-label-note muted" data-owner="chp">LVTPI, step 020; its</text>
+<text x="328.0" y="281.5" class="t-label-note muted" data-owner="chp">type is not public</text>
+<path class="leader" data-owner="chp" d="M267.0 220.5H297.0V228.6H324.0"/>
 <circle class="dot" data-owner="chp" cx="267.0" cy="220.5" r="1.9"/>
-<path class="parrow" d="M34 386.2V439.2"/>
-<path class="pahead" d="M34 447.2l-5.5 -9h11.0z"/>
-<text x="50.0" y="397.2" class="t-label-title acc">LVTPIS, step 021</text>
-<text x="50.0" y="412.2" class="t-label-note muted">The implanted resist, thick on this</text>
-<text x="50.0" y="427.2" class="t-label-note muted">reference&#x27;s inference, is ashed and stripped,</text>
-<text x="50.0" y="442.2" class="t-label-note muted">and the wafer is cleaned for the next mask.</text>
-<text x="12.0" y="475.2" class="t-panel-title">After: resist removed; the N-well</text>
-<text x="12.0" y="493.2" class="t-panel-title">and the channel bands stay</text>
-<clipPath id="clip2"><rect x="12" y="505.2" width="268" height="172.0"/></clipPath>
-<g class="drawing" data-rect="12,505.2,268,172.0" clip-path="url(#clip2)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,549.20 92.00,549.20 99.00,593.40 99.50,597.20 100.00,599.31 100.50,600.43 101.00,601.26 101.50,601.93 102.00,602.48 102.50,602.96 103.00,603.37 104.00,604.03 105.00,604.51 106.00,604.86 107.00,605.08 108.00,605.19 184.00,605.19 185.00,605.08 186.00,604.86 187.00,604.51 188.00,604.03 189.00,603.37 189.50,602.96 190.00,602.48 190.50,601.93 191.00,601.26 191.50,600.43 192.00,599.31 192.50,597.20 193.00,593.40 200.00,549.20 283.00,549.20 283.00,713.20 9.00,713.20"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,544.20 91.75,544.20 91.75,549.20 9.00,549.20"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,544.20 283.00,544.20 283.00,549.20 200.25,549.20"/>
-<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="91.75,544.20 92.00,544.20 92.50,547.36 93.00,549.20 97.00,549.20 104.00,593.40 104.50,597.20 105.00,599.31 105.50,599.70 106.50,599.99 107.50,600.15 184.00,600.19 185.00,600.08 186.00,599.86 186.50,599.70 187.00,599.31 187.50,597.20 188.00,593.40 195.00,549.20 199.00,549.20 199.50,547.36 200.00,544.20 200.25,544.20 200.25,549.20 200.00,549.20 193.00,593.40 192.50,597.20 192.00,599.31 191.50,600.43 191.00,601.26 190.50,601.93 190.00,602.48 189.50,602.96 189.00,603.37 188.00,604.03 187.00,604.51 186.00,604.86 185.00,605.08 184.00,605.19 108.00,605.19 107.00,605.08 106.00,604.86 105.00,604.51 104.00,604.03 103.00,603.37 102.50,602.96 102.00,602.48 101.50,601.93 101.00,601.26 100.50,600.43 100.00,599.31 99.50,597.20 99.00,593.40 92.00,549.20 91.75,549.20"/>
-<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,520.20 200.25,520.20 200.25,544.20 200.00,544.20 199.50,547.36 199.00,549.20 195.00,549.20 188.00,593.40 187.50,597.20 187.00,599.31 186.50,599.70 186.00,599.86 185.00,600.08 184.00,600.19 107.50,600.15 106.50,599.99 105.50,599.70 105.00,599.31 104.50,597.20 104.00,593.40 97.00,549.20 93.00,549.20 92.50,547.36 92.00,544.20 91.75,544.20"/>
-<polygon class="mat m-well-n" data-layer="nwell" points="146.25,605.20 184.00,605.19 185.00,605.08 186.00,604.86 187.00,604.51 188.00,604.03 189.00,603.37 189.50,602.96 190.00,602.48 190.50,601.93 191.00,601.26 191.50,600.43 192.00,599.31 192.50,597.20 193.00,593.40 200.00,549.20 283.00,549.20 283.00,661.20 146.25,661.20"/>
-<polygon class="mat m-implant faded" data-layer="chn" points="9.00,549.20 90.25,549.20 90.25,559.20 9.00,559.20"/>
-<polygon class="mat m-implant" data-layer="chp" points="201.75,549.20 283.00,549.20 283.00,559.20 201.75,559.20"/>
-<polygon fill="url(#p-vlines-ink)" points="201.75,549.20 283.00,549.20 283.00,559.20 201.75,559.20"/>
+<path class="parrow" d="M34 385.6V438.6"/>
+<path class="pahead" d="M34 446.6l-5.5 -9h11.0z"/>
+<text x="50.0" y="396.6" class="t-label-title acc">LVTPIS, step 021</text>
+<text x="50.0" y="411.6" class="t-label-note muted">The implanted resist, thick on this</text>
+<text x="50.0" y="426.6" class="t-label-note muted">reference&#x27;s inference, is ashed and stripped,</text>
+<text x="50.0" y="441.6" class="t-label-note muted">and the wafer is cleaned for the next mask.</text>
+<text x="12.0" y="474.6" class="t-panel-title">After: resist removed; the N-well</text>
+<text x="12.0" y="492.6" class="t-panel-title">and the channel bands stay</text>
+<clipPath id="clip2"><rect x="12" y="504.6" width="268" height="175.0"/></clipPath>
+<g class="drawing" data-rect="12,504.6,268,175.0" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,551.60 92.00,551.60 99.00,595.80 99.50,599.60 100.00,601.71 100.50,602.83 101.00,603.66 101.50,604.33 102.00,604.88 102.50,605.36 103.00,605.77 104.00,606.43 105.00,606.91 106.00,607.26 107.00,607.48 108.00,607.59 184.00,607.59 185.00,607.48 186.00,607.26 187.00,606.91 188.00,606.43 189.00,605.77 189.50,605.36 190.00,604.88 190.50,604.33 191.00,603.66 191.50,602.83 192.00,601.71 192.50,599.60 193.00,595.80 200.00,551.60 283.00,551.60 283.00,715.60 9.00,715.60"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,546.60 91.75,546.60 91.75,551.60 9.00,551.60"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,546.60 283.00,546.60 283.00,551.60 200.25,551.60"/>
+<polygon class="mat m-oxide-thermal faded" data-layer="liner" points="91.75,546.60 92.00,546.60 92.50,549.76 93.00,551.60 97.00,551.60 104.00,595.80 104.50,599.60 105.00,601.71 105.50,602.10 106.50,602.39 107.50,602.55 184.00,602.59 185.00,602.48 186.00,602.26 186.50,602.10 187.00,601.71 187.50,599.60 188.00,595.80 195.00,551.60 199.00,551.60 199.50,549.76 200.00,546.60 200.25,546.60 200.25,551.60 200.00,551.60 193.00,595.80 192.50,599.60 192.00,601.71 191.50,602.83 191.00,603.66 190.50,604.33 190.00,604.88 189.50,605.36 189.00,605.77 188.00,606.43 187.00,606.91 186.00,607.26 185.00,607.48 184.00,607.59 108.00,607.59 107.00,607.48 106.00,607.26 105.00,606.91 104.00,606.43 103.00,605.77 102.50,605.36 102.00,604.88 101.50,604.33 101.00,603.66 100.50,602.83 100.00,601.71 99.50,599.60 99.00,595.80 92.00,551.60 91.75,551.60"/>
+<polygon class="mat m-oxide-dep" data-layer="fox" points="91.75,522.60 200.25,522.60 200.25,546.60 200.00,546.60 199.50,549.76 199.00,551.60 195.00,551.60 188.00,595.80 187.50,599.60 187.00,601.71 186.50,602.10 186.00,602.26 185.00,602.48 184.00,602.59 107.50,602.55 106.50,602.39 105.50,602.10 105.00,601.71 104.50,599.60 104.00,595.80 97.00,551.60 93.00,551.60 92.50,549.76 92.00,546.60 91.75,546.60"/>
+<polygon class="mat m-well-n" data-layer="nwell" points="146.25,607.60 184.00,607.59 185.00,607.48 186.00,607.26 187.00,606.91 188.00,606.43 189.00,605.77 189.50,605.36 190.00,604.88 190.50,604.33 191.00,603.66 191.50,602.83 192.00,601.71 192.50,599.60 193.00,595.80 200.00,551.60 283.00,551.60 283.00,663.60 146.25,663.60"/>
+<polygon class="mat m-implant faded" data-layer="chn" points="9.00,551.60 90.25,551.60 90.25,561.60 9.00,561.60"/>
+<polygon class="mat m-implant" data-layer="chp" points="201.75,551.60 283.00,551.60 283.00,561.60 201.75,561.60"/>
+<polygon fill="url(#p-vlines-ink)" points="201.75,551.60 283.00,551.60 283.00,561.60 201.75,561.60"/>
 </g>
-<text x="328.0" y="674.1" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 669.2H285.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="669.2" r="1.9"/>
-<text x="328.0" y="541.1" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="328.0" y="557.1" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M276.0 546.7H303.0V536.2H324.0"/>
-<circle class="dot" data-owner="padox" cx="276.0" cy="546.7" r="1.9"/>
-<text x="328.0" y="517.1" class="t-label-title" data-owner="fox">Fill oxide</text>
-<path class="leader" data-owner="fox" d="M192.0 523.7V509.2H309.0V512.2H324.0"/>
-<circle class="dot" data-owner="fox" cx="192.0" cy="523.7" r="1.9"/>
-<text x="328.0" y="642.1" class="t-label-title" data-owner="nwell">N-well</text>
-<path class="leader" data-owner="nwell" d="M276.0 637.2H291.0H324.0"/>
-<circle class="dot" data-owner="nwell" cx="276.0" cy="637.2" r="1.9"/>
-<text x="328.0" y="581.1" class="t-label-title" data-owner="chp">PMOS channel</text>
-<text x="328.0" y="597.1" class="t-label-title" data-owner="chp">implant</text>
-<path class="leader" data-owner="chp" d="M267.0 555.7H297.0V576.2H324.0"/>
-<circle class="dot" data-owner="chp" cx="267.0" cy="555.7" r="1.9"/>
-<text x="12.0" y="710.2" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="328.0" y="676.5" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 671.6H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="671.6" r="1.9"/>
+<text x="328.0" y="540.5" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="556.5" class="t-label-note tag" data-owner="padox">inferred</text>
+<path class="leader" data-owner="padox" d="M276.0 549.1H303.0V535.6H324.0"/>
+<circle class="dot" data-owner="padox" cx="276.0" cy="549.1" r="1.9"/>
+<text x="328.0" y="516.5" class="t-label-title" data-owner="fox">Fill oxide</text>
+<path class="leader" data-owner="fox" d="M192.0 526.1V508.6H309.0V511.6H324.0"/>
+<circle class="dot" data-owner="fox" cx="192.0" cy="526.1" r="1.9"/>
+<text x="328.0" y="644.5" class="t-label-title" data-owner="nwell">N-well</text>
+<path class="leader" data-owner="nwell" d="M276.0 639.6H291.0H324.0"/>
+<circle class="dot" data-owner="nwell" cx="276.0" cy="639.6" r="1.9"/>
+<text x="328.0" y="580.5" class="t-label-title" data-owner="chp">PMOS channel</text>
+<text x="328.0" y="596.5" class="t-label-title" data-owner="chp">implant</text>
+<path class="leader" data-owner="chp" d="M267.0 558.1H297.0V575.6H324.0"/>
+<circle class="dot" data-owner="chp" cx="267.0" cy="558.1" r="1.9"/>
+<text x="12.0" y="712.6" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

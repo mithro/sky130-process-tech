@@ -37,8 +37,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-oxide-dep" data-layer="capox" points="9.00,91.00 53.50,91.00 54.00,72.00 238.00,72.00 238.50,96.00 283.00,96.00 283.00,104.00 230.50,104.00 230.00,80.00 62.00,80.00 61.50,99.00 9.00,99.00"/>
 <polygon class="mat m-resist" data-layer="p1mres" points="119.75,42.00 172.25,42.00 172.25,72.00 119.75,72.00"/>
 <polygon fill="url(#p-dots)" points="119.75,42.00 172.25,42.00 172.25,72.00 119.75,72.00"/>
-<polygon class="mat m-resist" data-layer="p1mres" points="247.75,66.00 272.25,66.00 272.25,96.00 247.75,96.00"/>
-<polygon fill="url(#p-dots)" points="247.75,66.00 272.25,66.00 272.25,96.00 247.75,96.00"/>
+<polygon class="mat m-resist" data-layer="p1mres" points="247.75,42.00 272.25,42.00 272.25,96.00 247.75,96.00"/>
+<polygon fill="url(#p-dots)" points="247.75,42.00 272.25,42.00 272.25,96.00 247.75,96.00"/>
 <polygon class="mat m-sd-n" data-layer="polyn" points="9.00,109.00 71.50,109.00 72.00,90.00 111.75,90.00 111.75,110.00 92.00,110.00 91.50,129.00 9.00,129.00"/>
 <polygon class="mat m-sd-n" data-layer="polyn" points="180.25,90.00 220.00,90.00 220.50,114.00 283.00,114.00 283.00,134.00 200.50,134.00 200.00,110.00 180.25,110.00"/>
 <polygon class="mat m-sd-p" data-layer="polyp" points="112.25,90.00 179.75,90.00 179.75,110.00 112.25,110.00"/>
@@ -62,8 +62,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="65.9" class="t-label-note muted" data-owner="p1mres">gate mask, step</text>
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="p1mres">061; a line wherever</text>
 <text x="328.0" y="97.9" class="t-label-note muted" data-owner="p1mres">poly is to remain</text>
-<path class="leader" data-owner="p1mres" d="M268.0 69.5H309.0V45.0H324.0"/>
-<circle class="dot" data-owner="p1mres" cx="268.0" cy="69.5" r="1.9"/>
+<path class="leader" data-owner="p1mres" d="M268.0 45.5H309.0V45.0H324.0"/>
+<circle class="dot" data-owner="p1mres" cx="268.0" cy="45.5" r="1.9"/>
 <path class="parrow" d="M34 250.0V288.0"/>
 <path class="pahead" d="M34 296.0l-5.5 -9h11.0z"/>
 <text x="50.0" y="261.0" class="t-label-title acc">P1ME, step 062</text>

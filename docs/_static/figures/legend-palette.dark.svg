@@ -49,7 +49,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="68.0" y="286.9" class="t-label-note muted">small crosses</text>
 <polygon class="mat m-implant" data-layer="implant" points="12.0,314.5 58.0,314.5 58.0,333.5 12.0,333.5"/>
 <polygon fill="url(#p-vlines-ink)" points="12.0,314.5 58.0,314.5 58.0,333.5 12.0,333.5"/>
-<text x="68.0" y="310.9" class="t-label-title">Channel implant (n- or p-type not shown:</text>
+<text x="68.0" y="310.9" class="t-label-title">Channel or halo implant (n- or p-type not shown:</text>
 <text x="68.0" y="327.9" class="t-label-title">ink hatching over the silicon&#x27;s own colour)</text>
 <text x="68.0" y="344.9" class="t-label-note muted">vertical ink hatching, no fill of its own</text>
 <polygon class="mat m-oxide-thermal" data-layer="oxide-thermal" points="12.0,364.0 58.0,364.0 58.0,383.0 12.0,383.0"/>

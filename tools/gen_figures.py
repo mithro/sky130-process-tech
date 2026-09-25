@@ -449,9 +449,11 @@ class XSection:
         if "fill_to" in op:                                   # planarising fill
             new = [max(tp, float(op["fill_to"])) for tp in tops]
         elif where and op.get("flat", True):                   # patterned, flat-topped film (resist)
-            for a, b in where:
-                ii = [i for i in range(self.n) if a <= self.x(i) <= b]
-                lvl = max(tops[i] for i in ii) + t
+            # One coat: every block of it levels to the same top, set by the highest point
+            # it covers anywhere.
+            blocks = [[i for i in range(self.n) if a <= self.x(i) <= b] for a, b in where]
+            lvl = max((tops[i] for ii in blocks for i in ii), default=0.0) + t
+            for ii in blocks:
                 for i in ii:
                     new[i] = lvl
         else:                                                  # conformal film
@@ -909,7 +911,10 @@ def _edge_run(xs: XSection, lid: str, x: float, y: float, hidden: set, step: int
     for i in range(xs.idx(x) + 1, xs.n, step):
         edges = [xs.top(i)]
         if any(a <= xs.x(i) <= b for a, b in highlight):
-            edges.append(xs.top(i) + SP["highlight-offset"])
+            hl = xs.top(i) + SP["highlight-offset"]
+            if abs(hl - y) < (SP["highlight-clearance"] if y > hl else SP["edge-clearance"]):
+                total += step * xs.dx
+                continue
         edges += [e for s in xs.cols[i] if s[0] not in hidden for e in (s[1], s[2])]
         for ov in xs.overlays:
             if ov["id"] in hidden:
@@ -1224,6 +1229,27 @@ def eval_y(xs: XSection, expr, errs: list[str] | None = None):
     return 0.0
 
 
+def _ion_tails(xs: XSection, ion_xs, tail_y: float, tilt: float) -> list[float]:
+    """The x (drawing units) at which each arrow of a beam starts, at the beam's tail height."""
+    return sorted(xv + (tail_y - xs.top(xs.idx(xv)) - SP["ion-arrow-gap"]) * math.tan(tilt)
+                  for xv in ion_xs)
+
+
+def _snap_to_gap(cx: float, tails: list[float]) -> float:
+    """Move a beam label's riser to the middle of the gap between the two arrow tails it
+    falls between, so that the riser and an arrow never read as one line."""
+    if not tails:
+        return cx
+    if cx < tails[0]:
+        return cx if tails[0] - cx >= 6 else max(2.0, tails[0] - 8)
+    if cx > tails[-1]:
+        return cx if cx - tails[-1] >= 6 else tails[-1] + 8
+    for a, b in zip(tails, tails[1:]):
+        if a <= cx <= b:
+            return (a + b) / 2
+    return cx
+
+
 def ion_arrow(hx: float, hy: float, rise: float, tilt: float) -> tuple[str, str]:
     """One implant arrow in SVG coordinates: its tip at (hx, hy) on the surface, its tail
     ``rise`` drawing units higher and, for a tilted beam, to the right.  The head's base sits
@@ -1454,6 +1480,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             elif lab is ion_label:
                 mid = max(ion_windows, key=lambda w: w[1] - w[0])
                 cx = float(ions[0].get("label_x", (mid[0] + mid[1]) / 2))
+                cx = _snap_to_gap(cx, _ion_tails(st, ion_xs, ion_tail_y, ion_tilt))
                 geo[lab.key] = ("top", cx, ion_tail_y, ion_tail_y, 0, cx)
             elif st.layers[lab.key].get("op") == "dope":
                 geo[lab.key] = overlay_anchor(st, st.layers[lab.key], floor_y)
@@ -1504,8 +1531,24 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             overs.append((lab, plan))
         # Over-runs: the leftmost crosses highest, so it passes above the risers of the others.
         h_prev = None
+        # A riser that has to climb through an ion beam gets a lane: the arrows within
+        # three quarters of a pitch of it are left out, so it cannot be read as one more arrow.
+        if ion_xs and overs:
+            pitch_eff = min((b - a for a, b in zip(sorted(ion_xs), sorted(ion_xs)[1:])),
+                            default=SP["ion-arrow-pitch"])
+            lane = 0.75 * pitch_eff
+            keep = []
+            for xv in ion_xs:
+                x_tail = xv + (ion_tail_y - st.top(st.idx(xv)) - SP["ion-arrow-gap"]) * math.tan(ion_tilt)
+                lo_x, hi_x = min(xv, x_tail), max(xv, x_tail)
+                if any(lo_x - lane < ox < hi_x + lane for _l, (ox, _oy, _b) in overs):
+                    continue
+                keep.append(xv)
+            ion_xs = keep
+        # Over-runs: the leftmost crosses highest, so it passes above the risers of the others;
+        # two of them stay a clear 11 u apart, so they never read as a pair of lines.
         for lab, (ox, oy, base) in sorted(overs, key=lambda t: -t[1][0]):
-            h = base if h_prev is None else max(base, h_prev + SP["lane-pitch"] + 1)
+            h = base if h_prev is None else max(base, h_prev + 11)
             h_prev = h
             lab.route = "over"
             lab.dot_y = oy
@@ -1647,6 +1690,15 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             halo = []
             if lab.route in ("right", "over"):
                 halo = _halo_runs(st, lab, hidden, sx, sy, y0)
+            # A riser that climbs across the accent trace cuts it: the trace is broken for
+            # the leader's width, so the two never read as one bent line.
+            if lab.route == "over":
+                xd = lab.ax - M
+                for a, b in (p.get("highlight") or {}).get("where", []):
+                    if a <= xd <= b:
+                        yh = sy(st.top(st.idx(xd)) + SP["highlight-offset"])
+                        if min(lab.dot_svg, lab.ay) < yh < max(lab.dot_svg, lab.ay):
+                            halo.append((lab.ax, yh - 3.0, lab.ax, yh + 3.0))
             draw_label(svg, lab, x_right, halo)
         y = max(y_draw_top + draw_h, bottom - SP["label-gap"]) + 6
         # ---- process arrow between panels
@@ -1681,6 +1733,13 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                     "(say whether the page gives one)")
     films = any(lid != "sub" for pnl in panels for lid in state(pnl["state_after"])[0].layers
                 if state(pnl["state_after"])[0].present(lid) and lid != "sub")
+    if close:
+        # A close-up says so on the figure itself, not only in the caption below it.
+        what = spec.get("close_up_name", "part of the slice")
+        for ln in wrap(f"Close-up of {what}, enlarged about {zoom:.1f}\u00d7.",
+                       TY["label-title"]["size"], W - 2 * M, bold=True):
+            svg.text(M, y + 10, ln, "t-label-title")
+            y += TY["label-title"]["line"]
     svg.text(M, y + 10, NOT_TO_SCALE if films else NOT_TO_SCALE.split(".")[0] + ".",
              "t-label-note muted")
     svg.h = y + 10 + M
@@ -2135,6 +2194,43 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 errs.append(f"the anchors of {oa!r} and {ob!r} are "
                             f"{math.hypot(ax - bx, ay - by):.1f} u apart; "
                             "stagger one of them inside its own layer")
+    # 18b: a leader may not climb inside an ion beam beside the arrows (it reads as one more
+    # arrow), and a beam label's riser may not start on an arrow's tail.
+    shafts = [_segments(pth.get("d"))[0] for pth in root.iter("{http://www.w3.org/2000/svg}path")
+              if pth.get("class") == "ion" and _segments(pth.get("d"))]
+    for owner, segs in leaders:
+        for (a, b) in segs:
+            if abs(a[0] - b[0]) > 0.05 or abs(a[1] - b[1]) < 10:
+                continue
+            ylo, yhi = sorted((a[1], b[1]))
+            for (s0, s1) in shafts:
+                olo, ohi = max(ylo, min(s0[1], s1[1])), min(yhi, max(s0[1], s1[1]))
+                if ohi - olo < 10:
+                    continue
+                ym = (olo + ohi) / 2
+                t = (ym - s0[1]) / ((s1[1] - s0[1]) or 1e-9)
+                xs_at = s0[0] + (s1[0] - s0[0]) * t
+                if owner != "ions" and abs(xs_at - a[0]) < 12:
+                    errs.append(f"the leader of {owner!r} rises inside the ion beam, "
+                                f"{abs(xs_at - a[0]):.0f} u from an arrow; open a lane or route it clear")
+                    break
+    for owner, cx, cy in dots:
+        if owner != "ions":
+            continue
+        for (s0, s1) in shafts:
+            tail = s0 if s0[1] < s1[1] else s1
+            if math.hypot(tail[0] - cx, tail[1] - cy) < 3.0:
+                errs.append(f"the beam label's dot sits on an arrow's tail ({math.hypot(tail[0] - cx, tail[1] - cy):.1f} u)")
+    # 18c: two horizontal leader runs closer than 10 u for more than 40 u read as a pair.
+    hruns = [(owner, min(a[0], b[0]), max(a[0], b[0]), a[1]) for owner, segs in leaders
+             for (a, b) in segs if abs(a[1] - b[1]) < 0.05 and abs(a[0] - b[0]) > 40]
+    for i in range(len(hruns)):
+        for j in range(i + 1, len(hruns)):
+            oa, a0, a1, ay = hruns[i]
+            ob, b0, b1, by = hruns[j]
+            if oa != ob and 0 < abs(ay - by) < 10 and min(a1, b1) - max(a0, b0) > 40:
+                errs.append(f"the leaders of {oa!r} and {ob!r} run {abs(ay - by):.1f} u apart for "
+                            f"{min(a1, b1) - max(a0, b0):.0f} u; at least 10 u apart")
     # 15b: a label's dot must sit on the material it names, as a reader sees it: the last
     # (top-most) polygon painted at the dot, inside the dot's own drawing, faded ghosts aside.
     painted = []
@@ -2214,7 +2310,7 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
     for _lid, pts in layered:
         for a, b in zip(pts, pts[1:] + pts[:1]):
             if abs(a[1] - b[1]) < 0.3 and abs(a[0] - b[0]) > 0.5:
-                hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1]))
+                hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1], SP["edge-clearance"]))
     # The accent trace of a highlight is a line on the drawing too: a leader beside it reads
     # as one more film edge.
     for pl in root.iter("{http://www.w3.org/2000/svg}polyline"):
@@ -2223,7 +2319,7 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
         pts = [tuple(float(v) for v in q.split(",")) for q in pl.get("points").split()]
         for a, b in zip(pts, pts[1:]):
             if abs(a[1] - b[1]) < 0.3 and abs(a[0] - b[0]) > 0.5:
-                hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1]))
+                hedges.append((min(a[0], b[0]), max(a[0], b[0]), a[1], "hl"))
 
     def in_rect(q):
         return any(rx <= q[0] <= rx + rw and ry <= q[1] <= ry + rh for rx, ry, rw, rh in rects)
@@ -2246,7 +2342,11 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                         vis = lid
                 if vis is not None and vis != owner:
                     through += 1
-                if any(e0 <= q[0] <= e1 and abs(ey - q[1]) < SP["edge-clearance"] for e0, e1, ey in hedges):
+                # Above a highlight (in the air over the new surface) a run needs the larger
+                # clearance; below it, inside the film the trace marks, the material one.
+                if any(e0 <= q[0] <= e1 and abs(ey - q[1]) < (
+                        (SP["highlight-clearance"] if q[1] < ey else SP["edge-clearance"])
+                        if clr == "hl" else clr) for e0, e1, ey, clr in hedges):
                     along.add(k)
         if through > SP["max-leader-traverse"]:
             errs.append(f"leader of {owner!r} runs {through} u through other materials; at most "
@@ -3520,6 +3620,17 @@ def selftest() -> int:
          '<polygon class="mat m-si-sub" data-layer="sub" points="12,60 280,60 280,380 12,380"/></g>'
          '<path class="leader" data-owner="ions" d="M150 90V70"/></svg>',
          "the ion-beam label's leader runs through"),
+    ]
+    svg_cases += [
+        ("a leader rising inside an ion beam",
+         hdr + '<path class="ion" d="M100 20L100 90"/><path class="ion" d="M130 20L130 90"/>'
+         '<path class="leader" data-owner="x" d="M108 95V15H300"/></svg>', "rises inside the ion beam"),
+        ("a beam label's dot on an arrow tail",
+         hdr + '<path class="ion" d="M100 20L100 90"/>'
+         '<circle class="dot" data-owner="ions" cx="100" cy="20" r="1.9"/></svg>', "sits on an arrow's tail"),
+        ("two over-runs a pair of lines apart",
+         hdr + '<path class="leader" data-owner="a" d="M40 90V30H300"/>'
+         '<path class="leader" data-owner="b" d="M60 90V37H300"/></svg>', "at least 10 u apart"),
     ]
     # ... but not through the part of a polygon that runs on below its drawing's clip
     clipped = (hdr + '<g class="drawing" data-rect="12,20,268,100">'

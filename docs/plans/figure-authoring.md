@@ -81,7 +81,7 @@ A cross-section spec (`kind: xsection`) has these fields:
 | `panels` | two of them: "before" and "after" (one, where there is no "before") |
 | `crop_depth` | how much substrate to draw below the surface, for the **whole figure**; presentation only, it changes no geometry |
 | `three_panels_allowed` | only for a deposit → pattern → etch summary on a category page |
-| `close_up` | `[x0, x1]`, at least 40 u wide: draw only that window of the series state, enlarged by the same factor in both directions to fill the drawing width (a transistor close-up, where the full slice is too wide to show a tip, halo or spacer at a readable size). Both panels use the same window, so they still line up. Everything else in the spec — `highlight`, `callouts`, `dims`, `top@x` — is written in the series' own x and moved by the generator; `crop_depth` is in the enlarged units. The series geometry is not touched. The caption must say "close-up of …" (lint) and name what the window shows |
+| `close_up` | `[x0, x1]`, at least 40 u wide: draw only that window of the series state, enlarged by the same factor in both directions to fill the drawing width (a transistor close-up, where the full slice is too wide to show a tip, halo or spacer at a readable size). Both panels use the same window, so they still line up. Everything else in the spec — `highlight`, `callouts`, `dims`, `top@x` — is written in the series' own x and moved by the generator; `crop_depth` is in the enlarged units. The series geometry is not touched. The caption must say "close-up of …" (lint) and name what the window shows; the figure itself prints "Close-up of `close_up_name`, enlarged about N×." above its "Not to scale" line (`close_up_name` defaults to "part of the slice") |
 | `no_drawn_change` | `true` for a step that changes nothing the drawing can show (an implant into a region already drawn, whose depth is not public; an anneal): **one** panel, `state_after` the step itself, titled exactly `State at this step (no drawn change)`, no `arrow` — what the step does goes into the caption. The lint refuses it if the state differs from the step before, and refuses a two-panel figure whose panels are identical |
 
 Each panel has:
@@ -165,7 +165,7 @@ this is left to the canvas edge; `max-leader-traverse`, `max-edge-run`, `edge-cl
 `over-gap` — the leader-routing limits above and the clearance of an over-run above the
 surface. `edge-clearance` (6 u) is how close a horizontal leader may run to a horizontal
 material edge **or to the accent trace of a highlight** before it counts as running along it;
-the trace is a line on the drawing, and a leader beside it reads as one more film.
+the trace is a line on the drawing, and a leader beside it reads as one more film. Above the trace (in the air over the new surface) the clearance is `highlight-clearance` (10 u), and an over-run clears the top by `over-gap` (14 u); a riser that crosses the trace breaks it for its own width.
 Every series field is type-checked, and an unknown field or value is a lint line.
 
 A silicon layer's dot is kept off any doped overlay drawn over it, so the substrate's label
@@ -214,6 +214,10 @@ The lint is not advisory. Common ones and what they mean:
 | `the figure draws an ion beam but the caption says nothing about the tilt` | add the page's tilt, or say it is not public and the arrows are drawn vertical |
 | `… sits between a paragraph and the {dropdown} that follows it` | move the block below the dropdown (§7) |
 | `leaders of … and … descend side by side for N u` | two gutter legs a lane apart run down together for more than `max-parallel-leg` (48 u): their labels have been pushed far below their dots. Stop labelling unchanged context (`hide_labels`, say so in the caption) or fade it |
+| `the top-most material painted at the dot of X is Y` | the dot sits where another material is painted over X (a tip over a halo): the generator anchors an overlay on its visible part; if this still fires, fade or hide what covers it |
+| `the leader of X rises inside the ion beam` | an over-route riser climbs between arrows; the generator leaves the arrows within ¾ of a pitch of a riser out (a lane) — if this fires, move the beam's `label_x` or hide the label |
+| `the beam label's dot sits on an arrow's tail` | the generator puts the beam label in the gap between two tails; set `label_x` clear of the beam's ends |
+| `the leaders of X and Y run N u apart …; at least 10 u apart` | two over-runs read as a pair: hide one label or give it `route: right` |
 | `panel N: the label … sits N u below the bottom of its drawing` | the label column is taller than the drawing. The generator already shows more substrate to meet it where the series has substrate to show; when it cannot, drop a label of unchanged context as above |
 
 ## 6. Look at it
