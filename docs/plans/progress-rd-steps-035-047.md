@@ -34,8 +34,21 @@ across a `{dropdown}` boundary or into a glance box, table or caption.
 
 ## Content problems for the owner
 
-(none found yet on 035; see per-page log for 042/043's pad-oxide-clearance contradiction
-once reached.)
+* **042-onome.md / 043-gox100.md: pad-oxide-clearing contradiction (found by the figure
+  review, kept, not fixed).** `042-onome.md`'s Open Questions says plainly that whether
+  the last (bottom) oxide is cleared during `ONOME` or during `GOX100`'s pre-clean "is
+  not stated publicly". But `043-gox100.md`'s own lead sentence and its "Related steps"
+  bullet both state it as settled fact: "With the ONO stack now confined to the memory
+  cells and the logic silicon cleared at ONOME, the wafer is oxidised…" (043:15-17) and
+  "Previous: ONOME (logic silicon cleared)." (043:228) — while 043's *own figure caption*
+  immediately hedges the same point again: "the silicon is drawn bare because this page
+  has the logic silicon cleared at ONOME; ONOME's page leaves open whether that last
+  oxide goes there or at this step's pre-clean." So within 043 itself, the lead prose and
+  the Related-steps bullet assert the clearing happens at `ONOME` as fact, while the
+  figure caption two sections later says the question is open. This is a pre-existing
+  factual inconsistency across (and within) the two pages, not something a
+  presentation-only pass may resolve; both wordings are kept verbatim, unchanged, in
+  their original sections.
 
 ## Guide problems
 
@@ -44,6 +57,67 @@ for this batch are added below, continuing the numbering — batch 2 ended at 14
 items here start at 15, only if genuinely new.)
 
 ## Per-page log
+
+### 042-onome.md — done (2 hand-written in-force notes in the body plus their copies
+under References; content untouched — inside the 037–044 in-force-sweep range). See
+"Content problems for the owner" above for the pad-oxide contradiction the figure review
+found between this page's Open Questions and 043's lead/Related-steps text.
+
+Rules applied: R-PARA/R-SENTENCE throughout (lead split at its enumeration/consequence
+seam; the "Precisely:" paragraph split at its em-dash/parenthetical, converting a
+2-parenthetical sentence to 0; R-CATEGORY on "Step category" — 28-word classification +
+`**Specific to this step:**` and 3 bullets; the "Why this step exists" ONO-edge bullet
+split; all seven "How it is typically performed" items split at their em-dashes and
+semicolons, several converting an em-dash-plus-parenthetical combination down to the
+0–1 cap), R-SENTENCE **inside two `{dropdown}` notes** (splitting only before/after
+complete quotations, one split needing an added "They are" bridge to keep both original
+quotations intact without reordering their words), R-TOOLS (5 "Strength:" bullets →
+SkyWater-says/Tool-exists/Runs-this-step form + a `Tool | Evidence` recap table, since 5
+meets the threshold), R-RELATED (`Previous:`, `Next:`, `Depends on:`, `Same category:`,
+`Feeds:`, `Category page:`), R-OPENQ (bold labels on all six bullets), R-GLANCE (box
+inserted last; checked against `check_inforce.py` — clean).
+
+**A pre-existing `check_preserved.py` limitation found and hand-verified, not a real
+content change (recorded as Guide problem 16).** `tools/check_preserved.py`'s
+`QUOTE_RE = r'"([^"\n]{1,400})"'` caps a single quotation's content at 400 characters.
+The first in-force dropdown on this page already quotes a **437-character** passage from
+the Cypress integration patent (`"a combination of dry and wet etch is performed…is
+employed to clear sacrificial dielectric layer 303."`), unchanged by this branch. Because
+that quotation exceeds the cap, `QUOTE_RE` cannot match it as a single pair *in the
+base commit either* — the regex engine skips its true opening quote entirely and instead
+starts pairing from its *closing* quote mark, cascading a one-quote-mark shift through the
+next few quotation marks in the document before coincidentally re-synchronising five
+quote-pairs later (verified directly: extracting every `QUOTE_RE` match against a
+flattened copy of both the base and edited page shows the two files' matches are
+byte-identical from pair index 5 onward, and a parallel extraction with the 400-character
+cap removed shows the *true* quoted phrases are identical between base and edited page at
+every position — proving no quotation's wording changed). Any wording change inside this
+already-shifted 5-quote zone — including the R-CATEGORY and R-SENTENCE splits this page's
+own edits made there — necessarily prints as an unconditional, undeclarable `LOST quotes`
+/ `ADDED quotes` pair, because "quotes" has no `--allow-regrouped`-style escape and a LOST
+finding is never suppressible. Checking the other pages in this batch
+(`grep`-style length scan of every quotation on 043–047) found no other quotation over
+400 characters, so this is a one-page, one-quotation issue, not a batch-wide risk. Since
+`tools/check_preserved.py` is off limits to edit (§2 rule 15) and the quoted text itself
+must not be shortened or reworded (it is patent language inside a dropdown), this page's
+final `check_preserved.py` run **necessarily** reports one undeclarable `LOST quotes` /
+`ADDED quotes` pair; every other category is clean, and the specific LOST/ADDED text was
+hand-verified above to represent no real change to any quotation.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption,
+off limits — this is also where the pad-oxide contradiction's figure-caption wording
+lives, untouched); list items > 60 words 0 → 0; sentences > 45 words 10 → 2 (the figure
+caption's own alt text and caption sentences).
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order,quotes --allow-regrouped
+--allow-dropdown-edits docs/steps/042-onome.md`: **1 undeclared difference** — the
+`LOST quotes` finding documented above as Guide problem 16, hand-verified as not a real
+loss. Every other category (`markers`, `numbers`, `hedges`, `identifiers`, `number_order`,
+`refs`, `dropdown`) shows no LOST. All other checkers, `check_inforce.py` included, pass;
+`-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom, including the
+new recap table and both dropdowns (collapsed, untouched).
+
 
 ### 041-onom.md — done (3 hand-written in-force notes in the body plus their copies
 under References; content untouched, sentences split inside them under R-DROPDOWN
