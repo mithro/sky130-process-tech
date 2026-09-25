@@ -648,3 +648,33 @@ as every prior page. No LOST quotes, hedges, or plain numbers. All other checker
 `-W` sphinx build clean. Screenshots (desktop + 400 px) read cleanly top to bottom: the glance
 box, the R-TOOLS sub-bullet blocks, and the Open-questions bold labels all render correctly at
 both widths.
+
+### 032-pwdei2.md — done (no in-force dropdown on this page)
+
+Rules applied: R-PARA (168-word "Why this step exists" paragraph split into two at its
+implant-count seam), R-SENTENCE (the 72-word "classic design" sentence split into three at its
+em-dash/semicolon clauses; the 46-word Wikipedia-quote sentence split at its colon), R-HEDGE
+step 1 (italic scope lead-in on "How it is typically performed"), R-TOOLS (both "Machines
+likely used at SkyWater" bullets converted to SkyWater-says/Tool-exists/Runs-this-step form;
+the second bullet keeps only two sub-lines since the source text never separated a distinct
+"runs this step" claim from "strong for existence"), R-RELATED (relabelled with
+`Previous:`/`Next:`/`Depends on:`/`Feeds:`/`Category page:`, folding the former unlabelled
+"main-well pairs" bullet into `Depends on:` without losing either {ref} pair), R-OPENQ (bold
+labels added to both bullets), R-GLANCE (box inserted last, after the quick-facts table;
+"Public numbers" reuses the page's own PDK quote and both its footnote markers; "Likely
+SkyWater tool" and "Not public" mirror the Machines-likely-used and Open-questions sections).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 1 (the one remaining is the
+generated `{figure}` caption, off-limits, same Guide problem 10 pattern as every other page);
+sentences > 45 words 3 → 1 (the same figure-caption sentence); list items > 60 words 0 → 0;
+table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/032-pwdei2.md`:
+exit 1, but the only finding is `LOST number_order (not a clean regroup)` for one benign
+stranded-number case — "8250" isolated from the "1e11 to 1e14, 0-60 deg tilt" numbers after the
+R-TOOLS bullet-head/sub-bullet split (the same Guide-problem-11 pattern). No LOST quotes,
+hedges, or plain numbers. All other checkers (`check_steps.py`, `check_refs.py`,
+`check_inforce.py`, `gen_index_links.py --check`) pass; `-W` sphinx build clean. Screenshots
+(desktop + 400 px) read cleanly top to bottom: the glance box, the drift-region paragraph
+split, the R-TOOLS sub-bullets, and the relabelled Related-steps/Open-questions bullets all
+render correctly at both widths.

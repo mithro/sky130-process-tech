@@ -10,6 +10,24 @@
 | **Previous step** | {ref}`PWDEI1 <step-031>` |
 | **Next step** | {ref}`PWDEIS <step-033>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants the second, lower-energy boron dose that completes
+  the two-member drift-well profile in the 20 V device regions opened
+  by `PWDEM`.
+* **Why:** a single implant cannot grade the drift-region doping the
+  way two implants at different energies can, and SKY130's 20 V devices
+  need that graded profile to fully deplete at rated voltage.
+* **Public numbers:** SKY130's 20 V devices are specified with a
+  "Longer drift region" than the 16 V ones and the same 110 Å gate
+  oxide.[^pdk-07][^pdk-hv]
+* **Likely SkyWater tool:** Axcelis 8250 — strong (tool); inference
+  (assignment).[^skw-01]
+* **Not public:** the energy, dose and depth ordering of
+  `PWDEI1`/`PWDEI2` (→ Open questions).
+:::
+
 ## What this step is
 
 `PWDEI2` is the second boron implant into the `pwde` regions of the 20 V
@@ -40,21 +58,23 @@ At PWDEI2 a second implant goes through the same PWDEM windows, outside this sli
 
 ## Why this step exists
 
-A {term}`drift region` is not a uniform slab. The classic design has doping that
-is heaviest under the drain contact — to keep on-resistance low and to
-make an ohmic transition to the n⁺ or p⁺ drain — and lightest next to
+A {term}`drift region` is not a uniform slab. The classic design has doping
+that is heaviest under the drain contact, to keep on-resistance low and
+make an ohmic transition to the n⁺ or p⁺ drain. It is lightest next to
 the channel, where the peak electric field occurs at the gate edge and
-where the region must deplete first; and it needs a defined depth so
-that the depletion spreads vertically as well as laterally (a
-RESURF-type balance).[^txt-04] Two implants at different energies and
-doses are the minimum that can approximate this: Wikipedia's description
-of LDMOS drift regions "fabricated using up to three ion implantation
-sequences in order to achieve the appropriate doping profile needed to
-withstand high electric fields"[^wiki-ldmos] is the general statement.
-The 20 V devices of SKY130 are specified with a "Longer drift region"
-than the 16 V ones[^pdk-07] and the same 110 Å gate oxide,[^pdk-hv] so
-the drift doping and depth are doing all the work of holding off the
-extra voltage.
+the region must deplete first. It also needs a defined depth so that
+the depletion spreads vertically as well as laterally (a RESURF-type
+balance).[^txt-04]
+
+Two implants at different energies and doses are the minimum that can
+approximate this. Wikipedia's description of LDMOS drift regions
+"fabricated using up to three ion implantation sequences in order to
+achieve the appropriate doping profile needed to withstand high
+electric fields"[^wiki-ldmos] is the general statement. The 20 V
+devices of SKY130 are specified with a "Longer drift region" than the
+16 V ones[^pdk-07] and the same 110 Å gate oxide,[^pdk-hv] so the drift
+doping and depth are doing all the work of holding off the extra
+voltage.
 
 There is also a coupling with the standard wells. Where `pwde` sits
 inside a deep-N-well tub (pwdem.5),[^pdk-periph] the lightly doped
@@ -64,8 +84,8 @@ sets that junction.
 
 ## How it is typically performed
 
-An industry-generic second drift-well implant for a 200 mm,
-130 nm-era fab (illustrative values only):
+*An industry-generic second drift-well implant for a 200 mm,
+130 nm-era fab (illustrative values only):*
 
 * **Species.** Boron (¹¹B⁺) from BF₃.[^wiki-implant]
 * **Energy.** Different from `PWDEI1` — one member at a few hundred keV
@@ -93,12 +113,15 @@ An industry-generic second drift-well implant for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250** ("B11, BF2, As … 1e11 to 1e14, 0-60 deg
-  tilt").[^skw-01] Strength: **strong** for the tool; assignment is an
-  **inference**.
-* **Axcelis GSD high-current/high-energy implanter** ("B11 …
-  10-3000kev").[^skw-01] Strength: strong for existence, weak for
-  assignment.
+* **Axcelis 8250**
+  - *SkyWater says:* lists it ("B11, BF2, As … 1e11 to 1e14, 0-60 deg
+    tilt").[^skw-01]
+  - *Tool exists:* strong for the tool.
+  - *Runs this step:* inference for the assignment.
+* **Axcelis GSD high-current/high-energy implanter**
+  - *SkyWater says:* lists it ("B11 … 10-3000kev").[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak inference for the assignment.
 
 ## Resources required
 
@@ -108,12 +131,13 @@ An industry-generic second drift-well implant for a 200 mm,
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PWDEI1 <step-031>`; next: {ref}`PWDEIS <step-033>`
-  (strip); mask: {ref}`PWDEM <step-030>`.
-* The main-well pairs: {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>`,
+* Previous: {ref}`PWDEI1 <step-031>`.
+* Next: {ref}`PWDEIS <step-033>` (strip); mask: {ref}`PWDEM <step-030>`.
+* Depends on: the main-well pairs it extends —
+  {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>`,
   {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>`.
-* Activated at {ref}`RTAI <step-034>`; the gate oxide of the 20 V
-  devices is grown at {ref}`GOX100 <step-043>`.
+* Feeds: activated at {ref}`RTAI <step-034>`; the gate oxide of the
+  20 V devices is grown at {ref}`GOX100 <step-043>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -182,12 +206,12 @@ An industry-generic second drift-well implant for a 200 mm,
 
 ## Open questions
 
-* Energy, dose and the depth ordering of `PWDEI1`/`PWDEI2` are not
-  public; that they form a chained pair is our inference (see
-  {ref}`PWDEI1 <step-031>`).
-* Whether the `pwde` well also carries a threshold-setting component
-  for the 20 V NMOS channel, or whether that comes from later channel
-  implants, is unknown.
+* **Energy, dose and depth ordering.** Energy, dose and the depth
+  ordering of `PWDEI1`/`PWDEI2` are not public; that they form a
+  chained pair is our inference (see {ref}`PWDEI1 <step-031>`).
+* **Threshold-setting role.** Whether the `pwde` well also carries a
+  threshold-setting component for the 20 V NMOS channel, or whether
+  that comes from later channel implants, is unknown.
 
 <!-- footnotes -->
 
