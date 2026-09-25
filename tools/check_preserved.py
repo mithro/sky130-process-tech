@@ -6,7 +6,7 @@ report-B.md section 3 item 4).
 
 Compares each page under ``docs/`` (outside ``docs/plans``) between a base
 git revision and the working tree, and reports, per page, anything **LOST**
-or **ADDED** in eight categories:
+or **ADDED** in nine categories:
 
 1. ``markers`` — the multiset of footnote markers (``[^label]``) in the
    body, and ``footnotes`` — the set of footnote definitions, each with its
@@ -15,6 +15,9 @@ or **ADDED** in eight categories:
    points, thin-space/normal-space/comma thousands separators, ``x10``
    exponents and Unicode superscripts, signs and ranges. Only whitespace is
    normalised; nothing else about a number is touched or interpreted.
+   Digits that are part of an identifier (see 9) are masked out first, so
+   "SKY130" does not count as the number 130, and so is a leading ordered-
+   list marker ("3. "), so a numbered item's own "3." is never the number 3.
 3. ``number_order`` — per table row, list item or (heuristically split)
    sentence that contains two or more numbers, the *ordered* tuple of
    those numbers. ``numbers`` alone is a multiset and cannot tell
@@ -23,7 +26,10 @@ or **ADDED** in eight categories:
    swap. It cannot catch a swap *between* two units (a number moved from
    one table row or claim to another): see ``extract_number_order``'s
    docstring and "Checking a readability edit" in agent-briefs.md for
-   that and other limitations.
+   that and other limitations. A LOST tuple is always an error *unless*
+   ``--allow-regrouped`` is given and ``check_regrouped`` finds it is a
+   clean regroup of the same digits (review T1) — the deliberate result of
+   R-TABLE/R-DERIVATION/R-LIST turning one dense unit into several.
 4. ``quotes`` — the multiset of quoted strings (straight ``"..."`` and
    curly “...”), matched against the whitespace-*flattened* page so a
    quotation that spans a hard-wrapped source line is still seen as one
@@ -31,12 +37,18 @@ or **ADDED** in eight categories:
 5. ``refs`` — the multiset of ``{ref}``/``{term}``/``{doc}`` targets, and
    ``urls`` — the multiset of URLs written anywhere on the page.
 6. ``hedges`` — counts of the hedge phrases in HEDGES below (e.g. "about",
-   "typical", "our reading", "~").
+   "typical", "our reading", "~"), matched against the same whitespace-
+   flattened text as quotes, for the same reason (a hedge phrase can span a
+   hard-wrapped source line too).
 7. The text inside every ``{dropdown}`` block, which must be unchanged
    apart from whitespace and list/table markup, unless
-   ``--allow-dropdown-edits`` is given. This is not one of the eight
+   ``--allow-dropdown-edits`` is given. This is not one of the nine
    categories above and has no ``--allow-added`` equivalent: a dropdown
    either passes unedited, or the whole check is disabled for the run.
+8. ``identifiers`` — the multiset of whole identifier tokens ("SKY130",
+   "EV300", "SC-1", `` `pfet_01v8` ``, "1X") that ``numbers`` masks out
+   before counting, tracked separately as whole tokens so a change like
+   "SKY130" -> "SKY 130" is still caught, just not as a number.
 
 A **loss** in any category is always an error. An **addition** is an error
 unless its category is named in ``--allow-added`` (comma-separated); every
@@ -61,8 +73,8 @@ progress file, since it is exactly where an unnoticed bad addition (a
 Usage::
 
     uv run python tools/check_preserved.py [--base main] \\
-        [--allow-added markers,footnotes,numbers,number_order,quotes,refs,urls,hedges] \\
-        [--allow-dropdown-edits] [paths ...]
+        [--allow-added markers,footnotes,numbers,number_order,quotes,refs,urls,hedges,identifiers] \\
+        [--allow-dropdown-edits] [--allow-regrouped] [paths ...]
 
 With no ``paths``, every ``docs/**/*.md`` file outside ``docs/plans`` that
 differs between ``--base`` and the working tree (tracked changes and new,
@@ -74,11 +86,17 @@ has nothing to compare against.
 Run ``uv run python tools/check_preserved.py --selftest`` to run the
 built-in self-tests (touches no files, needs no git history):
 paragraph splits, a sentence moved between sections, a re-wrapped
-paragraph whose quotation now crosses a different line break, and prose
-turned into a table with the same values all pass; a dropped footnote
-marker, a changed number, two numbers swapped in place ("6 of 171" to
-"171 of 6"), a dropped hedge, an altered quotation (including one that
-spans a source line break), and text moved out of a dropdown all fail.
+paragraph whose quotation now crosses a different line break, a re-wrapped
+paragraph whose hedge now crosses a different line break, prose turned
+into a table with the same values, "SKY130"/"SC-1"/"1X"/a numbered-item
+marker never counting as numbers, and (with ``--allow-regrouped``) a
+prose sentence turned into a table all pass; a dropped footnote marker, a
+changed number, two numbers swapped in place ("6 of 171" to "171 of 6"),
+a dropped hedge, an altered quotation (including one that spans a source
+line break), an identifier changed ("SKY130" to "SKY 130"), the same
+table split *without* ``--allow-regrouped``, a regroup with a genuinely
+missing number even *with* ``--allow-regrouped``, and text moved out of a
+dropdown all fail.
 """
 
 from __future__ import annotations
@@ -132,6 +150,41 @@ _DASH = r"\s?[-–]\s?"
 NUMBER_RE = re.compile(rf"{_CORE}(?:{_DASH}{_CORE})*")
 SUP_STANDALONE_RE = re.compile(rf"{_SUP_CLASS}+")
 
+# Identifier tokens whose digits are not measurements (review T2, finding D6):
+# "SKY130", "EV300", "SC-1", "pfet_01v8", "P316", "C8" (from "C8/R8/S8/L8"),
+# and a bare digit-run immediately followed by a single uppercase letter with
+# nothing word-like after it ("1X" from "EV300/1X", the placeholder "00N" in
+# "mpw-00N.html"). The second branch is deliberately narrow (uppercase only,
+# nothing following) so it does not eat a real measurement: this project's
+# house style always puts a space before a unit ("5 V", "130 nm"), so a
+# genuine number is never directly followed by a bare uppercase letter with
+# no space — checked against every step page (`grep -onE '[0-9]+[A-Z]\b'`),
+# which found exactly one hit, the "00N" placeholder above, not a number.
+IDENT_RE = re.compile(
+    r"(?<![\w.])(?:[A-Za-z_][A-Za-z_]*[-/]?\d[\w-]*|\d+[A-Z](?![\w-]))"
+)
+# A leading ordered-list marker ("3. ", "12) "): NUMBER_RE has no notion of
+# markup, so a numbered list's own "3." was being counted as the number 3
+# (review T2: found on 004-fom.md, where an R-PARA split changed a numbered
+# item's position). Masked before number extraction only, never before the
+# list/table structure detection in extract_number_order (which needs the
+# marker to know a new item started).
+#
+# Deliberately narrow: no leading whitespace allowed, and at most two
+# digits. A genuine top-level ordered-list marker in this repository always
+# starts at column 0 with 1-2 digits (checked: every `docs/steps/*.md` page
+# in this batch; grep found zero indented numbered items). Without the
+# column-0 restriction, a wrapped continuation line that happens to *start*
+# with a real number — "...suppliers.\n    2015. Cypress issued..." wraps
+# the year "2015." onto its own indented line — is indistinguishable from a
+# genuine marker and would wrongly swallow a real number (found while
+# testing this fix, against docs/steps/001-smat.md: an indented "2015."
+# line was masked, LOSING the number 2015). The 1-2 digit limit is the same
+# safety margin: no page in the site nests a nested numbered nested list
+# past a two-digit item count, but a four-digit year ("2015") must never be
+# treated as a marker regardless of indentation.
+_LEADING_LIST_MARKER_RE = re.compile(r"^\d{1,2}[.)]\s+", re.MULTILINE)
+
 # Hedge phrases (docs/plans/readability-plan.md W0b / report-A "hedges").
 HEDGES = [
     "not public", "we infer", "inference", "our reading", "our arithmetic",
@@ -151,7 +204,7 @@ HEDGE_PATTERNS = [(h, _hedge_pattern(h)) for h in HEDGES]
 
 CATEGORIES = [
     "markers", "footnotes", "numbers", "quotes", "refs", "urls", "hedges",
-    "number_order",
+    "number_order", "identifiers",
 ]
 
 # A line that opens a list item ("* ", "- ", "1. ") or a table row ("| ").
@@ -194,10 +247,13 @@ def extract_numbers(text: str) -> Counter:
     return Counter(_number_tokens_ordered(text))
 
 
-def extract_number_order(text: str) -> Counter:
+def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list[str]]]:
     """Counter of ordered numeric-token tuples, one per "unit" (a table
     row, a list item, or a rough sentence) that carries two or more
-    numbers.
+    numbers; and, alongside it, up to three short samples of the source
+    text that produced each tuple (review T1: printed next to a
+    ``--allow-regrouped`` warning so the reviewer can read the actual
+    pairing, not just the digits).
 
     This is the check report-B.md section 3 item 4 and the coordinator's
     2026-09-20 follow-up review both asked for: the plain multiset in
@@ -222,14 +278,25 @@ def extract_number_order(text: str) -> Counter:
       see "Checking a readability edit" in agent-briefs.md.
     """
     tuples: list[tuple[str, ...]] = []
+    samples: dict[tuple[str, ...], list[str]] = {}
     paragraph: list[str] = []
 
     def add_unit(unit_text: str) -> None:
         nums = _number_tokens_ordered(unit_text)
         if len(nums) >= 2:
-            tuples.append(tuple(nums))
+            key = tuple(nums)
+            tuples.append(key)
+            bucket = samples.setdefault(key, [])
+            if len(bucket) < 3:
+                bucket.append(normalize_ws(unit_text)[:160])
 
     def add_prose(text_block: str) -> None:
+        # A leading ordered-list marker ("3. ") is not part of the prose;
+        # strip the one at the very start of this unit (there is at most
+        # one — a table row never reaches here) before splitting into
+        # sentences, so a numbered item's own marker digit is never
+        # counted as part of its first sentence's number tuple (T2).
+        text_block = _LEADING_LIST_MARKER_RE.sub(" ", text_block.strip(), count=1)
         # A list item can itself hold several sentences (e.g. a reading-
         # list bullet); split it the same way a paragraph is, so a
         # number in one sentence is not lumped together with a number
@@ -275,7 +342,7 @@ def extract_number_order(text: str) -> Counter:
         paragraph.append(line)
         i += 1
     flush_paragraph()
-    return Counter(tuples)
+    return Counter(tuples), samples
 
 
 def extract_quotes(text: str) -> Counter:
@@ -287,6 +354,12 @@ def extract_quotes(text: str) -> Counter:
 
 
 def extract_hedges(text: str) -> Counter:
+    # Note (review T3): "typical" also matches inside "industry-typical", so
+    # a page using the latter counts both phrases once each for the same
+    # words. Harmless — the same double-count happens identically on both
+    # sides of a diff, so it never causes a false LOST or ADDED — and left
+    # alone rather than adding a phrase-priority rule that would complicate
+    # this for no behavioural gain.
     c: Counter = Counter()
     for phrase, pat in HEDGE_PATTERNS:
         n = len(pat.findall(text))
@@ -327,7 +400,7 @@ def extract_urls_masked(text: str) -> tuple[Counter, str]:
     return counts, text
 
 
-def extract_all(text: str) -> dict[str, Counter]:
+def extract_all(text: str) -> tuple[dict[str, Counter], dict[tuple[str, ...], list[str]]]:
     defs: dict[str, str] = {}
     for label, body in DEF_RE.findall(text):
         defs[label] = normalize_ws(body)
@@ -345,7 +418,6 @@ def extract_all(text: str) -> dict[str, Counter]:
     urls, masked = extract_urls_masked(masked)
     masked = MARKER_RE.sub(" ", masked)
 
-    numbers = extract_numbers(masked)
     # Flatten before matching (review finding H1): the repository's
     # markdown is hard-wrapped, so a quotation frequently spans a source
     # line break. QUOTE_RE forbids "\n" inside a match, so applied to the
@@ -357,8 +429,28 @@ def extract_all(text: str) -> dict[str, Counter]:
     # already does) fixes both: a wrapped quotation is matched as one
     # run, and re-wrapping it changes no character of that run.
     quotes = extract_quotes(normalize_ws(masked))
-    hedges = extract_hedges(masked)
-    number_order = extract_number_order(masked)
+    # Same flattening for hedges (review T3/D7): "our extraction" re-wrapped
+    # across a source line break (one word ending a line, the next starting
+    # the following one) used to be invisible to `\b our extraction \b`,
+    # which matches literal text, not markdown-soft-wrapped text — a false
+    # LOST hedge with no content change at all. Fixed the same way as quotes.
+    hedges = extract_hedges(normalize_ws(masked))
+
+    # Mask identifier tokens — "SKY130", "EV300", "SC-1", "pfet_01v8", "1X"
+    # — before extracting numbers, so a digit that is part of a name is
+    # never counted as a measurement (review T2/D6). This must not touch
+    # the `masked` text used above for quotes/hedges: masking would blank
+    # out an identifier that happens to sit inside a quotation, corrupting
+    # the very wording being checked.
+    identifiers: Counter = Counter()
+
+    def _ident_sub(m: re.Match) -> str:
+        identifiers[m.group(0)] += 1
+        return " "
+
+    masked_for_numbers = IDENT_RE.sub(_ident_sub, masked)
+    numbers = extract_numbers(_LEADING_LIST_MARKER_RE.sub(" ", masked_for_numbers))
+    number_order, number_order_samples = extract_number_order(masked_for_numbers)
     footnotes = Counter(f"[^{label}]: {text}" for label, text in defs.items())
 
     return {
@@ -370,7 +462,8 @@ def extract_all(text: str) -> dict[str, Counter]:
         "urls": urls,
         "hedges": hedges,
         "number_order": number_order,
-    }
+        "identifiers": identifiers,
+    }, number_order_samples
 
 
 # ---------------------------------------------------------------------------
@@ -435,20 +528,121 @@ def format_counter(c: Counter, limit: int = 100) -> str:
     return "; ".join(parts)
 
 
+def _is_subsequence(sub: tuple[str, ...], full: tuple[str, ...]) -> bool:
+    it = iter(full)
+    for x in sub:
+        for y in it:
+            if y == x:
+                break
+        else:
+            return False
+    return True
+
+
+def _flatten(tuples_counter: Counter) -> Counter:
+    flat: Counter = Counter()
+    for t, n in tuples_counter.items():
+        for v in t:
+            flat[v] += n
+    return flat
+
+
+def check_regrouped(
+    lost_no: Counter,
+    added_no: Counter,
+    old_numbers: Counter,
+    new_numbers: Counter,
+    numbers_allowed: bool,
+    old_samples: dict[tuple[str, ...], list[str]],
+    new_samples: dict[tuple[str, ...], list[str]],
+) -> tuple[bool, list[str]]:
+    """``--allow-regrouped`` (review T1): downgrade a ``number_order`` LOST
+    to a warning when all four hold:
+
+    (a) ``numbers`` itself has no LOST — nothing actually disappeared, only
+        the grouping changed;
+    (b) the flattened multiset of numbers across the LOST tuples equals
+        that of the ADDED tuples, once numbers separately declared with
+        ``--allow-added numbers`` are removed from the ADDED side (a
+        deliberate new number — an "At a glance" box repeating one — is
+        not required to also balance the regrouping arithmetic);
+    (c) every ADDED tuple is an ordered subsequence of some one LOST
+        tuple. This is what actually catches a same-unit transposition; it
+        cannot catch a *wrong* "respectively" pairing, because both the
+        right and the wrong pairing are equally valid subsequences of the
+        same lost tuple — that is what (d) is for;
+    (d) print each LOST unit's source text next to the ADDED units that,
+        per (c), cover it, so the reviewer reads the actual pairing rather
+        than trusting the digits alone.
+
+    Returns ``(all four hold, extra message lines including the (d)
+    printout)``. When any of (a)-(c) fails, the extra lines say which.
+    """
+    lines: list[str] = []
+    if old_numbers - new_numbers:
+        return False, ["condition (a) failed: `numbers` itself lost a value"]
+    declared_added_numbers = (new_numbers - old_numbers) if numbers_allowed else Counter()
+    lost_flat = _flatten(lost_no)
+    added_flat = _flatten(added_no) - declared_added_numbers
+    if lost_flat != added_flat:
+        return False, [
+            "condition (b) failed: flattened numbers differ - lost "
+            f"{dict(lost_flat)} vs added (after declared) {dict(added_flat)}"
+        ]
+    lost_units = list(lost_no)
+    for added_tuple in added_no:
+        if not any(_is_subsequence(added_tuple, t) for t in lost_units):
+            return False, [
+                f"condition (c) failed: added tuple {added_tuple} is not an "
+                "ordered subsequence of any lost tuple"
+            ]
+    for lost_tuple in lost_units:
+        covering = [t for t in added_no if _is_subsequence(t, lost_tuple)]
+        lines.append(f"regrouped: {lost_tuple} -> {covering}")
+        for sample in old_samples.get(lost_tuple, [])[:1]:
+            lines.append(f"    was: {sample!r}")
+        for t in covering:
+            for sample in new_samples.get(t, [])[:1]:
+                lines.append(f"    now {t}: {sample!r}")
+    return True, lines
+
+
 def diff_page(
     old_text: str,
     new_text: str,
     allowed: frozenset[str] = frozenset(),
     allow_dropdown_edits: bool = False,
+    allow_regrouped: bool = False,
 ) -> list[tuple[bool, str]]:
     """Return (is_failure, message) pairs; does not print anything."""
     results: list[tuple[bool, str]] = []
-    old = extract_all(old_text)
-    new = extract_all(new_text)
+    old, old_samples = extract_all(old_text)
+    new, new_samples = extract_all(new_text)
     for cat in CATEGORIES:
         lost = old[cat] - new[cat]
         added = new[cat] - old[cat]
         limit = _DISPLAY_LIMIT.get(cat, 100)
+        if cat == "number_order" and allow_regrouped and lost:
+            ok, extra = check_regrouped(
+                lost, added, old["numbers"], new["numbers"],
+                "numbers" in allowed, old_samples, new_samples,
+            )
+            if ok:
+                results.append(
+                    (False, f"REGROUPED (--allow-regrouped) number_order: "
+                            f"{format_counter(lost, limit)} -> {format_counter(added, limit)}")
+                )
+                for line in extra:
+                    results.append((False, line))
+                continue
+            results.append((True, f"LOST number_order (not a clean regroup): {format_counter(lost, limit)}"))
+            for line in extra:
+                results.append((True, line))
+            if added:
+                is_fail = cat not in allowed
+                tag = "ADDED" if is_fail else "ADDED (declared)"
+                results.append((is_fail, f"{tag} {cat}: {format_counter(added, limit)}"))
+            continue
         if lost:
             results.append((True, f"LOST {cat}: {format_counter(lost, limit)}"))
         if added:
@@ -596,6 +790,38 @@ def selftest() -> int:
         "\n[^kato-2007]: Kato, *KrF steppers*. <https://example.com/kato>\n",
         True,
     )
+    case(
+        "a re-wrapped paragraph whose hedge crosses a different line break (T3)",
+        "# P\n\nA value (our\nextraction from data).[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nA value (our extraction\nfrom data).[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        True,
+    )
+
+    # -- T1: --allow-regrouped -------------------------------------------
+    _regroup_old = (
+        "# P\n\nThe values are 5 and 6, or 7 and 8.[^a]\n"
+        "\n[^a]: Source. <https://example.com/a>\n"
+    )
+    _regroup_new = (
+        "# P\n\n| A | B |\n|---|---|\n| 5 | 6 |\n| 7 | 8[^a] |\n"
+        "\n[^a]: Source. <https://example.com/a>\n"
+    )
+    case(
+        "a clean regroup is a warning, not a failure, with --allow-regrouped",
+        _regroup_old, _regroup_new, True, allow_regrouped=True,
+    )
+    case(
+        "the same regroup fails without --allow-regrouped",
+        _regroup_old, _regroup_new, False,
+    )
+    case(
+        "a regroup that actually drops a number still fails, even with --allow-regrouped",
+        _regroup_old,
+        "# P\n\n| A | B |\n|---|---|\n| 5 | 6 |\n| 7 | 9[^a] |\n"
+        "\n[^a]: Source. <https://example.com/a>\n",
+        False,
+        allow_regrouped=True,
+    )
 
     # -- fail cases -------------------------------------------------------
     case(
@@ -647,6 +873,35 @@ def selftest() -> int:
         "::::\n\nUS 8,796,098 B1 is in force.\n",
         False,
     )
+    case(
+        "an identifier changed is still caught (T2/D6: SKY130 -> SKY 130)",
+        "# P\n\nBuilt for SKY130.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nBuilt for SKY 130.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+    )
+
+    # -- T2: identifiers are masked before numbers are counted, and a
+    # numbered list's own marker is not a number. Checked directly against
+    # extract_all rather than through diff_page, since these are single-
+    # text assertions, not before/after comparisons.
+    def assert_no_numbers(name: str, body: str) -> None:
+        extracted, _ = extract_all(f"# P\n\n{body}\n")
+        if extracted["numbers"]:
+            problems.append(f"{name}: expected no numbers, got {dict(extracted['numbers'])}")
+
+    def assert_has_number(name: str, body: str, expected: str) -> None:
+        extracted, _ = extract_all(f"# P\n\n{body}\n")
+        if extracted["numbers"].get(expected, 0) < 1:
+            problems.append(f"{name}: expected {expected!r} in {dict(extracted['numbers'])}")
+
+    for token in ("SKY130", "SC-1", "`nfet_01v8`", "1X"):
+        assert_no_numbers(f"identifier {token!r} yields no number", f"Built with {token} here.")
+    assert_no_numbers("C8/R8/S8/L8 yields no numbers", "Covers the C8/R8/S8/L8 families.")
+    assert_no_numbers(
+        "a numbered-item marker yields no number",
+        "2. **Step.** No digits appear in this sentence at all.",
+    )
+    assert_has_number("0.18µm still yields 0.18", "The gap is 0.18µm wide.", "0.18")
 
     # -- --allow-added lets a declared addition through, but never a loss -
     case(
@@ -704,6 +959,14 @@ def main() -> int:
         action="store_true",
         help="skip the {dropdown} unchanged-text check",
     )
+    ap.add_argument(
+        "--allow-regrouped",
+        action="store_true",
+        help=(
+            "downgrade a number_order LOST to a warning when it is a clean regroup of the "
+            "same digits (review T1); see check_regrouped's docstring for the four conditions"
+        ),
+    )
     ap.add_argument("--selftest", action="store_true", help="run the offline self-test and exit")
     ap.add_argument("paths", nargs="*", help="pages to check (default: every changed docs/**/*.md)")
     args = ap.parse_args()
@@ -737,7 +1000,7 @@ def main() -> int:
             continue
         new_text = page.read_text()
         checked += 1
-        results = diff_page(old_text, new_text, allowed, args.allow_dropdown_edits)
+        results = diff_page(old_text, new_text, allowed, args.allow_dropdown_edits, args.allow_regrouped)
         page_failed = False
         for is_fail, msg in results:
             print(f"{rel}: {msg}")
