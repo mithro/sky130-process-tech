@@ -635,6 +635,53 @@ and 7 (Process-integration bullets and grouped Related pages) read well.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 12. `docs/machines/i-line-stepper.md` — done
+
+Larger, mask-heavy page (its `### SKY130 steps assigned to this class` uses a `{dropdown}` for 27
+steps, not left as an inline run like the smaller implanter pages; left untouched, nothing moved
+across the boundary). Rules applied: R-INTRO (template sentence dropped, pointer moved to
+`{seealso}`). R-MODELS: a 4-column, 11-row table for the models with a *dedicated per-model
+citation* (ASML /100D, /275D, /450F data sheets; Nikon's three; Canon's three; the one "Others"
+model). R-ENTRIES: the "Read term by term" paragraph decodes shared vocabulary across the SkyWater
+page's two i-line entries ("ASML", "I-line", "stepper"/"scanner") rather than giving each entry its
+own status, so it does not fit the Entry-as-listed/What-it-names/Status shape; left as prose, only
+split for length. R-QUICKFACTS: left as written (method note 3). R-PARA (about 9 paragraphs over
+100 words split, several by breaking one dense semicolon- or "and"/"that"-joined sentence at each
+join and adding a paragraph break). R-SENTENCE (about 16 sentences over 45 words split, including a
+three-quote "that … that … and that …" ASML sentence rewritten as three short sentences each
+keeping the marker). R-RELATED (added Category/Machines/Materials/Indexes labels to the generic
+bullets at the top and bottom of the section; left the eight detailed per-mask-family bullets in
+the middle exactly as grouped, since they are already a considered grouping by mask family, not a
+flat list). R-CAPTION (the one new table).
+
+**A number_order loss that table conversion could not avoid, resolved by leaving a narrative
+sentence as prose instead of forcing it into rows.** The ASML history bullet's middle stretch —
+"The PAS 5500 platform followed in 1991 … PAS 5500/200 … in 1996 … 0.35 µm … the /275 … 0.28 µm …
+100 wafers per hour" — is one continuous narrative from a single retrospective source
+(`asml-30`), not a set of separately specified models. Converting it into rows still required a
+`Model` cell to name each variant, which meant restating "PAS 5500/200" that the adjoining quoted
+figure column *also* names verbatim (the quote cannot be altered to elide it), producing a
+duplicate 5500/200 pair the checker's contiguous-regroup logic would not match back to the
+original single mention. Fixed by leaving that whole narrative as prose above the table (matching
+how `duv-krf-stepper.md`'s guide-authored example and this batch's earlier pages already leave a
+vendor-history sentence as prose after a models table) and tabulating only the four models with
+their own dedicated data-sheet or vendor citation. Also shortened two Model cells from "PAS
+5500/275D" and "PAS 5500/275" to the source's own shorthand "/275D" and "/275" — the original
+bullet never repeats "PAS 5500" for those two mentions, so restating it in the table was an
+avoidable extra number, not a formatting choice.
+
+`check_preserved.py --base b9f26b4d --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 (`about`, `SKY130`); all `number_order` differences resolved to REGROUPED or were
+eliminated by the fix above.
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 2 (intro/quick-facts and `{seealso}`, no
+overflow), 4 (11-row Representative-models table, wraps cleanly), 5 (the `{dropdown}` step-table
+renders as a collapsed toggle, undisturbed) and 8 (grouped Related pages, mask bullets read well)
+checked.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but

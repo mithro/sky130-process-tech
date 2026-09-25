@@ -9,12 +9,7 @@ the pad opening. It images a reticle onto resist-coated wafers with the
 {term}`stepper`) or through a scanned slit (a step-and-scan system, or
 scanner). In a 200 mm, 130 nm-era fab it shares the line with
 {ref}`KrF tools <machine-duv-krf-stepper>`, which print the critical
-levels, and the two must overlay each other. This page describes the
-class in general, lists representative 200 mm-era models, and then says
-what SkyWater has published about its own tools of this class and which
-SKY130 steps this reference assigns to them. The optics, resists and
-overlay of lithography in general are on the
-{ref}`category page <category-lithography>`.
+levels, and the two must overlay each other.
 
 | | i-line stepper or scanner |
 |---|---|
@@ -28,14 +23,21 @@ overlay of lithography in general are on the
 | SkyWater-listed tool | "ASML I-line stepper", "ASML I-line scanner"[^skw-01] |
 | SKY130 steps | 24 steps, plus 3 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-i-line-stepper-steps>` |
 
+:::{seealso}
+The optics, resists and overlay of lithography in general are on the
+{ref}`category page <category-lithography>`.
+:::
+
 ## What the machine class is and how it works
 
 Every optical exposure tool has the same chain: an illuminator, a
 reticle stage, a reduction lens, a wafer stage, an alignment system and
 a focus system, sealed in a temperature-controlled chamber because the
-wafer and the machine expand with temperature.[^wiki-stepper] What makes
+wafer and the machine expand with temperature.[^wiki-stepper]
+
+What makes
 a machine an *i-line* tool is its light source and the lens and resist
-designed for it; what keeps it in a mixed 200 mm line is that it prints
+designed for it. What keeps it in a mixed 200 mm line is that it prints
 the many levels with features of a few hundred nanometres or more on
 older, cheaper tools while overlaying the KrF levels closely
 enough.[^asml-30][^wise-1992] Bruning reviews how these machines
@@ -51,11 +53,13 @@ super-high-pressure mercury lamps; Ushio describes its lithography lamps as "hig
 light sources with stable irradiance and long lifespan" whose arc is
 "nearly that of a point light source".[^ushio-uv-lamps] Kato's chronology
 calls Ushio "the leading supplier of Mercury arc lamps for g- and i-line
-steppers".[^kato-2007] The illuminator shapes the lamp light into a
+steppers".[^kato-2007]
+
+The illuminator shapes the lamp light into a
 uniform field at the reticle and sets the partial coherence: on ASML's
 PAS 5500/100D the "Variable coherence range" is "σ = 0.3—0.7" with an
 "Intensity: ≥ 900 mW/cm²" and "Uniformity: ≤ 1.5%" at the
-wafer,[^asml-pas5500-100d] and the /275D adds annular illumination
+wafer.[^asml-pas5500-100d] The /275D adds annular illumination
 "in both conventional and off-axis illumination modes", set by
 software for each layer.[^asml-pas5500-275d]
 
@@ -66,22 +70,24 @@ Its numerical aperture is variable, so that each layer can trade
 resolution against depth of focus: ASML's i-line steppers run at NA
 0.48–0.60, Canon's FPA-3000i5+ at 0.45–0.63, and ASML's /450F scanner at
 0.48–0.65.[^asml-pas5500-275d][^canon-fpa3000i5plus-1998][^asml-pas5500-450f]
-At a wavelength of 365 nm and NA 0.6, λ/NA is about 610 nm; the
+At a wavelength of 365 nm and NA 0.6, λ/NA is about 610 nm. The
 0.35 µm resolution Canon quotes at NA 0.63 corresponds to a process
 factor {term}`k1` of about 0.60, and ASML's 0.28 µm at NA 0.60 to about
 0.46 (our arithmetic with the relation on the
-{ref}`category page <category-lithography>`). The high-NA i-line lenses
-came in the late 1980s: Suwa, Ushida and Lin described a high-NA
-i-line lens resolving "better than 0.65 μm" with a field-by-field
-levelling system,[^suwa-1988] and Katz et al. a high-NA i-line stepper
-with phase grating alignment supporting 0.5 µm "with good process
-latitude and CD control without adverse effects due to lens heating",
-extended to 0.41 µm.[^katz-1990]
+{ref}`category page <category-lithography>`).
+
+The high-NA i-line lenses came in the late 1980s: Suwa, Ushida and Lin
+described a high-NA i-line lens resolving "better than 0.65 μm" with a
+field-by-field levelling system.[^suwa-1988] Katz et al. described a
+high-NA i-line stepper with phase grating alignment supporting 0.5 µm
+"with good process latitude and CD control without adverse effects due
+to lens heating", extended to 0.41 µm.[^katz-1990]
+
 Depth of focus is the price of NA: ASML specifies "Usable depth of
 focus: ≥ 1.1 µm" at 0.40 µm on the /100D and "≥ 0.8 µm" at 0.28 µm with
-annular illumination on the /275D,[^asml-pas5500-100d][^asml-pas5500-275d]
-and Levinson and Arnold modelled linewidth variation against exposure
-and defocus to define the process window of submicron
+annular illumination on the /275D.[^asml-pas5500-100d][^asml-pas5500-275d]
+Levinson and Arnold modelled linewidth variation against exposure and
+defocus to define the process window of submicron
 lithography.[^levinson-1987] Each field is
 therefore levelled before exposure: the /100D has a "Broadband
 Field-by-field Focus Leveling System".[^asml-pas5500-100d]
@@ -94,14 +100,16 @@ of its i-line steppers as 31.1 mm in diameter, with a maximum of
 field.[^asml-pas5500-275d][^wiki-stepper] A
 step-and-scan system illuminates a slit and moves reticle and wafer
 through it on separate stages "driven at different but precisely
-synchronized velocities";[^buckley-1989] the concept "enables very
-large field sizes and high system productivity",[^buckley-karatzas-1989] and
+synchronized velocities".[^buckley-1989] The concept "enables very
+large field sizes and high system productivity".[^buckley-karatzas-1989]
 ASML's /450F i-line scanner prints 26.0 mm × 33.0 mm fields at "≥ 150
-wph".[^asml-pas5500-450f] Nikon's NSR-S102B used an i-line source "and a
+wph".[^asml-pas5500-450f]
+
+Nikon's NSR-S102B used an i-line source "and a
 lens scanning system" to reach "0.35 micron or better resolution" over a
 25 by 33 mm field for "less critical layers".[^nikon-s202a-s102b] The
 larger field matters where one field must match a KrF scanner's field
-on the same wafer; a 1992 i-line stepper with a 22 mm × 44 mm field was
+on the same wafer. A 1992 i-line stepper with a 22 mm × 44 mm field was
 designed so that it "comfortably fits two 22-mm*22-mm fields from the
 most advanced reduction steppers" and could image "a majority of process
 levels (noncritical levels)".[^wise-1992]
@@ -111,19 +119,22 @@ levels (noncritical levels)".[^wise-1992]
 Before exposure the tool measures alignment marks printed by an earlier
 level and places the new image on them. ASML's PAS 5500 steppers use
 "Direct Reticle-Referenced, Through-The-Lens (TTL) Phase-Grating
-Alignment",[^asml-pas5500-100d] and Wittekoek et al. described alignment
+Alignment".[^asml-pas5500-100d] Wittekoek et al. described alignment
 and metrology with diffraction gratings and laser interferometry on the
-ASM Lithography stepper in 1986;[^wittekoek-1986] the /275D adds "phase
+ASM Lithography stepper in 1986.[^wittekoek-1986] The /275D adds "phase
 modulation".[^asml-pas5500-275d]
+
 Canon's FPA-3000i5+ uses an "improved advanced global alignment (AGA)
-scheme";[^canon-fpa3000i5plus-1998] global alignment in general
+scheme".[^canon-fpa3000i5plus-1998] Global alignment in general
 measures marks in a sample of fields and fits the wafer grid to them
 ({ref}`category-lithography`). Overlay is specified two ways: on one
 machine, and between machines. The /275D gives "≤ 40 nm" single-machine
-and "≤ 80 nm" matched to another /275.[^asml-pas5500-275d] DeMoor et al.
+and "≤ 80 nm" matched to another /275.[^asml-pas5500-275d]
+
+DeMoor et al.
 trace the difference between tools to lens distortion signatures
 combined with stepping and scanning repeatability, captured in "mix
-and match" matrices,[^demoor-2004] and Chu, Hsu and Hwang found that
+and match" matrices.[^demoor-2004] Chu, Hsu and Hwang found that
 lens aberration "might cause over 15 nm overlay
 displacement".[^chu-1999] Process layers disturb the marks:
 Prasad et al. qualified ASML's ATHENA alignment "on I-line steppers for
@@ -133,9 +144,9 @@ W-CMP processes" at 0.35 µm.[^prasad-2001]
 
 The class persists largely on cost. ASML notes that an
 exposure tool may give "10 to 15 years of service" to a leading-edge
-customer "at different layers of criticality", that older systems
-"migrate to the lithography of choice for less critical layers", and
-that it has "refurbished and resold well over 500 PAS 5500
+customer "at different layers of criticality".[^asml-30] Older systems
+"migrate to the lithography of choice for less critical layers".[^asml-30]
+It has "refurbished and resold well over 500 PAS 5500
 systems".[^asml-30] Wise, Mahany and Wang argued the same for a
 large-field i-line tool with cost-of-ownership models.[^wise-1992]
 Vendors still sell 200 mm i-line steppers: Canon's FPA-3030i5+
@@ -145,33 +156,33 @@ existing steppers".[^nikon-2205il1]
 
 ## Representative 200 mm-era models
 
-* **ASML.** Its first i-line stepper, the PAS 2500/40 of 1987, had "0.4NA,
-  0.7µm resolution, 70wph (on 150mm wafers)".[^kato-2007] The PAS 5500
-  platform followed in 1991;[^asml-30] ASML sold "some of the first PAS
-  5500/200 systems with an 'i-line' light source" in 1996, a tool of
-  "0.35 µm" resolution, and the /275 "is still an i-line stepper, but now
-  offers resolutions down to 0.28 µm and throughput of up to 100 wafers
-  per hour".[^asml-30] Its refurbished-product data sheets describe the
-  PAS 5500/100D ("designed for mass production at 0.4 µm") and /275D
-  steppers and the /450F "i-Line Step-and-Scan", "the successor of the
-  PAS 5500/400 for non-critical applications" and "Optimized for
-  mix-and-matching" with the PAS 5500 DUV
-  tools.[^asml-pas5500-100d][^asml-pas5500-275d][^asml-pas5500-450f] In
-  2001 ASML said its KrF PAS 5500/800 "matches seamlessly with the PAS
-  5500/400C i-line scanner".[^asml-800]
-* **Nikon.** Nikon's first i-line stepper, the NSR-1010i3, shipped in
-  1984.[^kato-2007] Its NSR-S102B i-line scanning stepper was introduced
-  alongside the KrF NSR-S202A, the two designed so that "mix-and-match
-  strategies are easily accommodated".[^nikon-s202a-s102b] The current
-  NSR-2205iL1 is a "5x Reduction i-line Stepper" with NA 0.45 and a
-  22 mm × 22 mm field.[^nikon-2205il1]
-* **Canon.** Canon's first i-line stepper, the FPA-2000i1, shipped in
-  1990.[^kato-2007] The FPA-3000i5+ of 1998 was "a mix-and-match companion
-  for its FPA-3000EX5 DUV stepper", both at 5:1;[^canon-fpa3000i5plus-1998]
-  the FPA-3030i5+ continues the line.[^canon-fpa3030i5plus]
-* **Others.** The Model 2244i described by Wise, Mahany and Wang, a
-  large-field i-line stepper with "production resolution of 0.8 mu m",
-  was aimed at non-critical levels.[^wise-1992]
+ASML's first i-line stepper, the PAS 2500/40 of 1987, had "0.4NA,
+0.7µm resolution, 70wph (on 150mm wafers)".[^kato-2007] The PAS 5500
+platform followed in 1991.[^asml-30] ASML sold "some of the first PAS
+5500/200 systems with an 'i-line' light source" in 1996, a tool of
+"0.35 µm" resolution.[^asml-30] The /275 "is still an i-line stepper,
+but now offers resolutions down to 0.28 µm and throughput of up to 100
+wafers per hour".[^asml-30]
+
+:::{table} Representative i-line steppers and scanners of the 200 mm era with a dedicated data sheet (figures as each source gives them)
+:widths: 12 24 8 56
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| ASML | PAS 5500/100D | — | "designed for mass production at 0.4 µm"[^asml-pas5500-100d] |
+| ASML | /275D | — | —[^asml-pas5500-275d] |
+| ASML | /450F | — | "i-Line Step-and-Scan", "the successor of the PAS 5500/400 for non-critical applications", "Optimized for mix-and-matching" with the PAS 5500 DUV tools[^asml-pas5500-450f] |
+| Nikon | NSR-1010i3 | 1984 | —[^kato-2007] |
+| Nikon | NSR-S102B | — | "mix-and-match strategies are easily accommodated" (with the KrF NSR-S202A)[^nikon-s202a-s102b] |
+| Nikon | NSR-2205iL1 | — | "5x Reduction i-line Stepper" with NA 0.45 and a 22 mm × 22 mm field[^nikon-2205il1] |
+| Canon | FPA-2000i1 | 1990 | —[^kato-2007] |
+| Canon | FPA-3000i5+ | 1998 | "a mix-and-match companion for its FPA-3000EX5 DUV stepper", both at 5:1[^canon-fpa3000i5plus-1998] |
+| Canon | FPA-3030i5+ | — | —[^canon-fpa3030i5plus] |
+| Other | Model 2244i | — | "production resolution of 0.8 mu m"[^wise-1992] |
+:::
+
+In 2001 ASML said its KrF PAS 5500/800 "matches seamlessly with the
+PAS 5500/400C i-line scanner".[^asml-800]
 
 ## At SkyWater
 
@@ -186,10 +197,12 @@ six exposure tools, two of them i-line:[^skw-01]
 
 The other four entries are "ASML DUV stepper", "ASML DUV scanner", "ASML
 193nm single stage scanner – 90nm CD" and "ASML 193nm twin stage scanner
-– sub 65nm CD"; the group continues with "Overlay down to single digit
+– sub 65nm CD".[^skw-01] The group continues with "Overlay down to single digit
 nm", "Max field size 26mm x 32mm" and the three tracks, and the "Special
 Modules" group lists "Photo stitching in both X and Y directions, sub-20nm
-stitching errors".[^skw-01] Read term by term: the vendor is ASML; "I-line"
+stitching errors".[^skw-01]
+
+Read term by term: the vendor is ASML; "I-line"
 is the 365 nm mercury line;[^wiki-litho] "stepper" and "scanner" are the
 two exposure modes described above. The entries give no model, NA,
 field, reduction ratio or tool count. ASML's own PAS 5500 i-line family
@@ -232,10 +245,10 @@ likely used at SkyWater"), as collected on the machines index:
 The inferences rest on the design rules, not on any SkyWater statement:
 in Table 2 of the PDK's *Criteria & Assumptions*, the smallest minimum
 feature among the masks assigned to this class, apart from metal 3 and
-metal 4, is 0.38 µm (`LVTNMCD`, `HVTPMCD`, `PSDMCD`, `NSDMCD`), and
-many are 0.7 µm or larger, up to 3 µm for the deep N-well and
-nitride-seal masks ({ref}`masks-index`).[^pdk-03] Metal 3 and metal 4,
-at 0.3 µm, are left open between this class and the KrF class.
+metal 4, is 0.38 µm (`LVTNMCD`, `HVTPMCD`, `PSDMCD`,
+`NSDMCD`).[^pdk-03] Many are 0.7 µm or larger, up to 3 µm for the deep
+N-well and nitride-seal masks ({ref}`masks-index`).[^pdk-03] Metal 3 and
+metal 4, at 0.3 µm, are left open between this class and the KrF class.
 
 ## Consumables and facilities
 
@@ -301,7 +314,7 @@ implants.[^pdk-03]
   implant masks the gate printed at {ref}`P1M <step-061>`, for example —
   so where the two levels are printed on different tools the
   matched-machine rather than the single-machine overlay
-  applies,[^asml-pas5500-275d] with lens distortion among the
+  applies.[^asml-pas5500-275d] Lens distortion is among the
   contributors (inference from the cited
   studies).[^demoor-2004][^chu-1999] ASML, Canon and Nikon each sold
   i-line tools designed to match their KrF
@@ -310,7 +323,7 @@ implants.[^pdk-03]
 * **Alignment on polished and metal levels.** The upper i-line levels
   from {ref}`CAPM <step-137>` to {ref}`MM4 <step-154>` are printed over
   polished oxide and tungsten-plug levels (our reading;
-  {ref}`category-cmp`); Prasad et al. qualified
+  {ref}`category-cmp`). Prasad et al. qualified
   alignment on i-line steppers over tungsten CMP, where marks are hard
   to read.[^prasad-2001] {ref}`MM5 <step-162>` is printed over via 4 and
   the metal-5 stack, and {ref}`NSM <step-165>` and {ref}`PDM <step-168>`
@@ -323,7 +336,7 @@ implants.[^pdk-03]
   for the 0.3 µm metals. The 0.8 µm via 4 ({ref}`VIM4 <step-159>`)
   would be an i-line level on geometry alone, but the process-steps
   sheet records for its plate a mask type that we read as a binary mask
-  for 248 nm exposure,[^steps-sheet] so the step page assigns it to the
+  for 248 nm exposure.[^steps-sheet] So the step page assigns it to the
   KrF class as an inference ({ref}`masks-index`).
 * **Tunnel mask resist.** On the step pages' reading
   ({ref}`masks-index`, *Patterns*), the {ref}`TUNM <step-035>` resist is
@@ -334,17 +347,16 @@ implants.[^pdk-03]
 
 ## Related pages
 
-* {ref}`category-lithography` — optics, resists, masks and overlay, and
-  the 36 mask steps of SKY130.
-* {ref}`machine-duv-krf-stepper` — the exposure class for the critical
-  levels, and the other side of the mix-and-match.
-* {ref}`machine-coat-develop-track` — the coat, bake and develop around
-  each exposure.
-* {ref}`machine-cd-sem-overlay-metrology` — the CD and overlay
-  measurements after develop.
-* {ref}`masks-index` — each mask's PDK entry, minimum CD, plates and the
-  mask-type record for vias 2–4.
-* {ref}`mask-dnm` and {ref}`mask-vim4` — per-mask pages for the deep
+* **Category.** {ref}`category-lithography` — optics, resists, masks and
+  overlay, and the 36 mask steps of SKY130. {ref}`category-implant` and
+  {ref}`category-strip` — the implants these masks block and the resist
+  strip that follows.
+* **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class for
+  the critical levels, and the other side of the mix-and-match.
+  {ref}`machine-coat-develop-track` — the coat, bake and develop around
+  each exposure. {ref}`machine-cd-sem-overlay-metrology` — the CD and
+  overlay measurements after develop.
+* **Masks.** {ref}`mask-dnm` and {ref}`mask-vim4` — per-mask pages for the deep
   N-well mask, assigned to this class, and the via-4 mask, for which it
   is the alternative.
 * {ref}`mask-lvtnm`, {ref}`mask-nwm`, {ref}`mask-hvtpm`,
@@ -368,14 +380,14 @@ implants.[^pdk-03]
   class, with KrF as the alternative for the three resistor masks.
 * {ref}`mask-mm5`, {ref}`mask-nsm` and {ref}`mask-pdm` — per-mask pages
   for the metal-5, nitride seal and pad masks, all assigned to this class.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — resists, developer and exposure-tool
+* **Materials.** {ref}`materials-index` — resists, developer and
+  exposure-tool consumables. {ref}`material-lithography-materials` —
+  resists, coatings, developer, solvents, reticles and light-source
   consumables.
-* {ref}`material-lithography-materials` — resists, coatings, developer,
-  solvents, reticles and light-source consumables.
-* {ref}`category-implant` and {ref}`category-strip` — the implants these
-  masks block and the resist strip that follows.
+* **Indexes.** {ref}`masks-index` — each mask's PDK entry, minimum CD,
+  plates and the mask-type record for vias 2–4.
+  {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
