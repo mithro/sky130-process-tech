@@ -577,9 +577,8 @@ checks every R-REPEAT edit.
 2. Four to six bullets, each ≤ 25 words, each condensing a sentence that is already on the page, with
    that sentence's marker and its hedge tag.
 3. **Public numbers:** SKY130 values only — the PDK, a SkyWater statement, or the published test
-   tile — with their marker. If there are none, write "none published for SKY130" and stop there;
-   never file a generic, era-typical or textbook figure under this label. Such a value may appear
-   elsewhere in the box, but only with the page's own qualifier ("typical", "era-typical",
+   tile — with their marker. If there are none, write "none published for SKY130". A generic or
+   literature value may appear only with the page's own qualifier ("typical", "era-typical",
    "Wikipedia's standard") and marker, never presented as a SKY130 number.
 4. **Likely SkyWater tool:** a tool named in `## Machines likely used at SkyWater`, with its grades,
    or "none assignable". Never a supplier or a material — if the page's only graded item there is a
