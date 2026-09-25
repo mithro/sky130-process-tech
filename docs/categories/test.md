@@ -9,13 +9,12 @@ changed. This is the {term}`e-test` or wafer acceptance test ({term}`WAT`).
 | What it does | the finished wafer is measured rather than changed |
 | Steps in SKY130 | 1 |
 | Tool classes | {ref}`Parametric testers <machine-parametric-tester>` |
-| Consumable classes | {ref}`Hardware consumables <material-hardware-consumables>` |
+| Consumable classes | {ref}`Hardware consumables <material-hardware-consumables>`, {ref}`Substrates and test wafers <material-substrates>` |
 | Governing relation | Van der Pauw's theorem |
 
 ## What this class of step does
 
-Electrical test is where the finished wafer is measured rather than
-changed. After the final {term}`alloy anneal` ({ref}`ALLY <step-170>`) the
+After the final {term}`alloy anneal` ({ref}`ALLY <step-170>`) the
 wafer is placed on a prober, a card of fine needles is lowered onto
 special test structures, and a parametric tester measures transistors,
 resistors, capacitors, diodes and interconnect chains one by one. The
@@ -30,7 +29,7 @@ In the general description, "wafer testing is a step performed during
 semiconductor device fabrication after back end of line (BEOL) and
 before IC packaging"; this reference, whose phase table ends the back
 end with the final alloy and test, files {ref}`HPETEST <step-171>`
-itself under BEOL. Wafer testing comes in two kinds:
+itself under BEOL. Wafer testing comes in two kinds:[^wiki-test]
 
 * **Wafer parametric tests** — performed
   at "a few locations on each wafer" to verify that fabrication succeeded.
@@ -211,7 +210,7 @@ device.
 
 ## Steps in this category
 
-:::{table} The one electrical-test step of the flow
+:::{table} The one electrical-test step of the flow; Machine class is the class the step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
