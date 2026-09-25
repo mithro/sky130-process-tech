@@ -839,9 +839,69 @@ Content problems for the owner: none found while re-presenting this page.
 ## Batch summary (pages 1-15, all done)
 
 All 15 assigned pages are edited, checked and pushed. Per-page rule application, over-cap counts
-and content notes are in entries 1-15 above. Batch-wide before/after word-count measurements with
-`measure.py`/`measure2.py`/`measure3.py`/`measure4.py`/`measure_b.py` and a consolidated
-guide-problems/content-problems summary follow this section once run.
+and content notes are in entries 1-15 above.
+
+### Batch-wide measurement (measure5.py, the guide's own §1 caps)
+
+`measure.py`/`measure2.py`/`measure3.py`/`measure4.py` are hard-coded to `docs/steps/*.md` and do
+not apply to machine pages; `measure_b.py` scans the whole `docs/{machines,materials,masks,
+categories}` corpus with no per-file filter. `measure5.py` is the one script in
+`tmp/readability/a-tools/` built to take an explicit page list and check the guide's actual §1
+caps (paragraph > 100 words, list item outside References > 60 words, sentence > 45 words, table
+cell > 25 words), so it is the one used here, run against the pre-batch state (commit `3a2e33cd`,
+the parent of this batch's first commit) and the final state (commit `402dae34`):
+
+| Cap | Before (all 15) | After (all 15) |
+|---|---:|---:|
+| paragraphs > 100 words | 109 | 0 |
+| list items > 60 words | 56 | 9 |
+| sentences > 45 words | 191 | 42 |
+| table cells > 25 words | 78 | 75 |
+
+Every one of the 9 residual list items and 42 residual sentences was individually inspected (not
+just counted); none is a silent miss on pages 11-15 (this session's own work — confirmed 0 residual
+list items and only 4 documented-exception sentences on those 5 pages alone). All residuals are one
+of four known, already-documented categories:
+
+1. **The step-link grading bullets** under "SKY130 steps assigned to this class" ("Machines likely
+   used at SkyWater" bullets), which `check_machines.py` parses positionally and which method note
+   5 says must never be hand-edited (no generator exists for them; see guide problem 2). Accounts
+   for most of the residual sentence and list-item counts on both this session's pages and pages
+   1-10.
+2. **Quotations the source itself gives as one long block** with no split point outside the
+   quotation (R-SENTENCE rule 6, read literally after the page-15 correction — see guide problem 5)
+   — the parametric-tester.md SkyWater blockquote, and one or two similar cases elsewhere.
+3. **A measurement-tool artifact**: `measure.py`'s `clean()` reduces `{ref}`text`` to bare lowercase
+   `text`, so its sentence-boundary regex (which requires an uppercase letter, digit or a small set
+   of punctuation after the whitespace) never recognises a new sentence that starts with a `{ref}`
+   role — which is exactly the shape of every R-RELATED "**Category.** {ref}`x` — ... {ref}`y` —
+   ..." bullet this batch introduced. Confirmed by hand on `pecvd.md:493` and
+   `duv-krf-stepper.md:388` (the latter, from page 7, reads as a single 181-word "sentence" for
+   this reason, not because it is actually one). See guide problem 7.
+4. **Genuine pre-compaction misses on pages 1-10** not re-opened in this session: `cd-sem-overlay-
+   metrology.md:312,318`, `duv-krf-stepper.md:351` and `high-current-implanter.md:312` (one
+   Process-integration bullet apiece, each somewhat over 60 words with no obvious {ref}-adjacency
+   or grading-bullet explanation). These pages were completed and their progress-file entries
+   written before this compaction; re-opening committed work from a different session context was
+   judged out of scope for this batch's remaining budget, but they are flagged here by exact
+   location for a follow-up pass — this executor did **not** verify whether they are real content
+   problems or a further tool artifact, only that they are not on the list above.
+
+### What this measurement caught that this executor's own per-page checking did not
+
+The per-page `scan2.py` heuristic built and reused throughout this batch had two blind spots that
+`measure5.py` (built into the actual toolchain, reusing `measure.py`'s own `blocks()`/`clean()`/
+`words()`) does not share: it measured sentence length within a list item but never the *item's*
+total word count separately, so several bullets whose individual sentences were each under 45
+words still totalled well over the 60-word list-item cap; and its own ad-hoc sentence splitter had
+the same {ref}-adjacency blind spot as measure.py's, but in the *opposite* direction — it
+sometimes fused unrelated sentences into a false "over 45 words" report (chased and correctly
+dismissed as artifacts throughout this progress file) while never flagging the genuine list-item
+overruns at all. Running this batch's own authoritative measurement script before declaring the
+batch complete — rather than relying solely on the hand-rolled per-page scanner — caught and fixed
+11 genuine over-length sentences and 9 genuine over-length list items across pages 11-15 that would
+otherwise have shipped uncaught (commit `402dae34`). Recommend this become a standing final step
+for every future readability batch, not just this one.
 
 ## Guide problems found so far
 
@@ -906,5 +966,20 @@ guide-problems/content-problems summary follow this section once run.
    repo-wide `grep -rn "^>[^:]"` (or similar) sweep across `docs/` outside this batch's scope, and
    a note in the guide's checker-contract or MyST crib section warning that literal `>`, `#`, `-`,
    `*` or numbered-list-like text must never be allowed to fall at column 1 of a source line.
+
+7. **`measure.py`'s (and this batch's own `scan2.py`'s) sentence-boundary detection cannot see a
+   sentence that starts with a `{ref}` role**, because `clean()` reduces `` {ref}`text <target>` ``
+   to bare lowercase `text` before the sentence splitter runs, and the splitter requires an
+   uppercase letter (or a small set of punctuation) after the whitespace to recognise a new
+   sentence. Every R-RELATED "**Category.** {ref}`x` — ... {ref}`y` — ..." bullet this whole
+   readability project has written or will write is built from sentences that start exactly this
+   way, so every one of them is at permanent risk of being mis-measured as a single very long
+   "sentence" (found on `pecvd.md:493`, a 48-word false positive, and `duv-krf-stepper.md:388`, a
+   181-word false positive covering an entire well-formed Masks bullet from page 7). This makes
+   `measure5.py`'s sentence count on any batch that has done R-RELATED an overcount, not just on
+   this one. Recommend the sentence splitter's start-of-sentence character class include a case
+   allowing a `{ref}`/`{term}`/`{doc}` role marker directly (checking the *un-cleaned* text for a
+   preceding `{` before `clean()` strips it), so future batches do not have to hand-verify every
+   Related-pages flag the way this one did.
 
 (to be continued — pages 3–15)
