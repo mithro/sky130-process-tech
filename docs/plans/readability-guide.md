@@ -1650,8 +1650,9 @@ intro ≤ 70 words                                                     R-INTRO
 ## At SkyWater
 ### What SkyWater lists                 blockquote, then an entry table   R-ENTRIES
 ### Strength of the evidence            grade in bold in the first sentence, ≤ 80 words
-### SKY130 steps assigned to this class dropdown holding the run FIRST, then the steps table,
-                                        then the grade table Tool | Grade | Steps   R-STEPRUN
+### SKY130 steps assigned to this class run first (byte-identical), then the generated block, then
+                                        the grading bullets unchanged; the grade table is on the
+                                        machines index   R-STEPRUN
 ## Consumables and facilities           bullets whose lead-ins link material pages   R-COMPARE step 2
 ## Process-integration notes for SKY130 bullets ≤ 60 words, lead-in names the steps
 ## Related pages                        grouped under bold labels                    R-RELATED
