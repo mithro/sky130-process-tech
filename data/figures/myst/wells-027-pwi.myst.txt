@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/wells-027-pwi.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step thick resist covers the N-well on the right. After it arrows come down on the open left-hand part of the drawing, and a P-type region reaches from the silicon surface to a flat bottom, shallower than the N-well, under the left-hand active area and the left half of the trench; it meets the N-well in the middle of the trench.
+:width: 560px
+:name: fig-wells-027-pwi
+
+Before, the block resist over the N-well; after, a beam on the open part of the slice and the P-well under it, drawn from the silicon surface to a flat bottom. The PDK's process assumptions give a P-well peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm and a vertical dimension of 0.75 µm;[^pdk-03] the well is drawn shallower than the N-well in the ratio of the PDK's two depths, but not to scale against anything else, and no doping profile is drawn. Boron is inferred; the energy, dose and tilt are not public, and the arrows are drawn vertical. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+:::

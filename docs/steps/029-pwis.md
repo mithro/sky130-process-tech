@@ -17,6 +17,14 @@
 {ref}`PWI <step-027>` and {ref}`PWI2 <step-028>`, and cleans the wafer
 for the last mask of the module, {ref}`PWDEM <step-030>`.
 
+:::{figure} /_static/figures/wells-029-pwis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step thick implanted resist covers the N-well on the right. After it the resist is gone and the oxide surface is bare across the slice, over a P-well on the left and an N-well on the right that meet under the middle of the trench.
+:width: 560px
+:name: fig-wells-029-pwis
+
+Before, the block resist after its two implants; after, the resist gone and the oxide bare over both wells. The pad oxide is drawn as still in place, which the page infers: it still has to screen the two drain-extended implants. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+:::
+
 The resist is a thick (about 2 µm class, inferred on the
 {ref}`PWBM <step-026>` page) implant resist that has absorbed boron at a
 few hundred keV and a summed dose of order 10¹³ cm⁻² (both illustrative;

@@ -106,6 +106,11 @@ numbers, quotes, hedges of the caption) and `git diff` no deleted line.
 | `wells-024-pnchi` | as 023; the band label names PNCHI in the after panel; BF₂ renders with its subscript | as 023 |
 | `wells-025-pchis` | resist gone; band label keeps the three implants, title only in the after panel (an empty `note` override stops the series note coming back) | — |
 
+| `wells-026-pwbm` | block resist over the N-well, NMOS side open; both channel bands faded from here on (their labels would break the six-label budget) | — |
+| `wells-027-pwi` | beam on the open side only; P-well from the surface to a flat bottom shallower than the N-well, meeting it under the middle of the trench; P-well dot moved to the middle of its thin part under the trench (`anchor_y: -66`) after the first render put the leader 6 u above, and in line with, the well's own bottom edge | the P-well under the trench is only 20 u deep in the drawing; not to scale, said in the caption |
+| `wells-028-pwi2` | second beam, well unchanged | — |
+| `wells-029-pwis` | resist gone; both wells | — |
+
 Tool change made while doing 018: when two labels sit above the drawing and the left
 one's riser is within 110 u of the canvas edge (`min-hang-width`), it now hangs right, in
 the gap before the second riser, instead of being squeezed into a one-word column. The

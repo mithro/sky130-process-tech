@@ -1,0 +1,25 @@
+id: wells-029-pwis
+kind: xsection
+page: docs/steps/029-pwis.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step thick implanted resist covers
+  the N-well on the right. After it the resist is gone and the oxide surface is bare across the slice,
+  over a P-well on the left and an N-well on the right that meet under the middle of the trench.
+caption: >-
+  Before, the block resist after its two implants; after, the resist gone and the oxide bare over both
+  wells. The pad oxide is drawn as still in place, which the page infers: it still has to screen the
+  two drain-extended implants. The two channel-implant bands and the liner oxide are drawn faded. Not
+  to scale.
+arrow:
+  title: "PWIS, step 029"
+  note: "The thick implanted resist is ashed and stripped, and the wafer is cleaned for the last mask of the module."
+panels:
+  - state_after: "028"
+    title: "Before: the block resist after PWI2 (step 028); NMOS left, PMOS right"
+    dim_layers: [liner, chn, chp]
+    show_ions: false
+  - state_after: "029"
+    title: "After: resist removed; both wells in place"
+    dim_layers: [liner, chn, chp]

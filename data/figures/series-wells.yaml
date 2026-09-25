@@ -272,7 +272,7 @@ ops:
     y_top: 0
     y_bot: -76
     anchor_x: 126
-    anchor_y: -70
+    anchor_y: -66
     label:
       title: "P-well"
       note: "retrograde (PWI, step 027)"

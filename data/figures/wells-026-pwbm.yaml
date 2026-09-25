@@ -1,0 +1,29 @@
+id: wells-026-pwbm
+kind: xsection
+page: docs/steps/026-pwbm.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the oxide surface is bare,
+  with an N-well on the right. After it a thick block of photoresist covers the right-hand part of the
+  drawing over the N-well, and the left-hand active area and the left half of the trench lie in an
+  open window.
+caption: >-
+  Before, the bare wafer with its N-well; after, a thick resist left over the N-well and the rest of
+  the slice open. This is a block mask: the resist stays wherever the P-well must not go. That the
+  plate is generated from `nwell` together with `pwbm`, and so covers the N-wells, is this
+  reference's inference from the absence of a drawn P-well layer,[^pdk-06] and the resist thickness
+  is inferred. The PDK's mask table lists "P-Well Block Mask, PWBM" but leaves its "Used in SKY130"
+  column blank, which this reference treats as a documentation inconsistency.[^pdk-05] The two
+  channel-implant bands and the liner oxide are drawn faded. Not to scale.
+arrow:
+  title: "PWBM, step 026"
+  note: "A thick resist is coated, exposed through the P-well block mask and developed, so that resist stays where no P-well is to go."
+panels:
+  - state_after: "025"
+    title: "Before: the cleaned wafer after PCHIS (step 025); NMOS left, PMOS right"
+    dim_layers: [liner, chn, chp]
+  - state_after: "026"
+    title: "After: thick resist over the N-well, the NMOS side open"
+    dim_layers: [liner, chn, chp]
+    highlight: {where: [[134, 268]]}
