@@ -86,7 +86,7 @@ its 20 V PMOS structures `p20vhv1`, with cell names such as
 "N-body" pin;[^raw-data-testtile-pads] the pad list does not explain the
 names, and a name is not evidence of the process. The PDK's 20 V PMOS
 page, model `sky130_fd_pr__pfet_20v0`, lists operating voltages of
-V_DS = 0 to −22 V, and its details text repeats the NMOS wording, "The
+V_DS = 0 to −22 V.[^pdk-07] Its details text repeats the NMOS wording, "The
 20V NMOS FET has similar construction to the 11V/16V NMOS FET, with
 several differences", among them a "Longer drift region".[^pdk-07]
 
