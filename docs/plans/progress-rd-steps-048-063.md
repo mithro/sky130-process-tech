@@ -610,6 +610,75 @@ table cells > 25: 0. After: see the batch summary at the end.
   keeps it; the other pieces were uncited in the base; labels).
 * **Caps**: para > 100 1 → 0; item > 60 4 → 0; sentence > 45 5 → 1 (above).
 
+### 061 P1M — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the PDK mask/layer
+  record, the poly rules and the topography paragraph (≈ 300 words).
+* **R-TABLE (the guide's worked case, R-TABLE "A second worked case").** The six poly rules →
+  `Rule | Constrains | Value (µm)`, `[^pdk-periph]` in the first header cell (it ended both
+  enumerating sentences), units in the header (R-TABLE step 4; "0.150 µm" wrapped between number and
+  unit at 400 px when the unit was in the cells). Lead-in: the page's own sentence "The geometry that
+  makes this the most demanding lithography of the process is public:". Row text taken from the
+  base's clauses in noun form: poly.1a "minimum poly width", poly.2 "minimum poly-to-poly spacing"
+  (verbatim); poly.8 "the endcap: extension of the gate beyond the active area" ("the gate must
+  extend beyond the active area by … (poly.8, the endcap)"); poly.7 "the minimum drain: extension of
+  the active beyond the gate"; poly.4 "spacing of poly on field from active" ("poly on field must
+  keep … from active"); poly.3 "minimum width of a poly resistor" ("must be at least … wide"). Values
+  checked cell by cell: 0.150, 0.210, 0.130, 0.250, 0.075, 0.330. The P1G sentence stays as prose
+  after the table; "the same pair" needed its referent back once the pair became two table rows, so
+  it reads "the same pair (poly.1a, poly.2)" (R-PARA step 5; declared: identifiers → numbers 1, 2).
+  The closing drawn-gate-length sentence stays as prose, unchanged.
+* **Lead.** Its 70-word sentence split at "— and `P1M` coats it" (the em dash that closed the stack
+  list becomes a full stop); first sentence "`P1M` prints the gate." (4 w).
+* **R-CATEGORY.** Classification sentence alone; the two sentences about this layer's CD →
+  "**Specific to this step:**" and two bullets (the second: its 65-word sentence split at "— but those
+  layers" → "But those layers …", kept in the same bullet: a separate paragraph may not open with
+  "But", R-PARA step 2, so the item stays at 65 words). The k₁ argument and "We infer that `P1M` is a
+  248 nm (KrF) layer …" stay as the paragraph after the bullets; its first sentence split at the
+  semicolon ("The category page gives the resolution relation …. At 248 nm …", 47 → 10 + 46 w; the
+  "whereas" contrast kept inside the second).
+* **R-LIST.** Line-edge-roughness studies (Lin; Gallatin; Asenov) → three bullets under "The random
+  part — line-edge roughness — is set largely by the resist and its processing:", each with its
+  marker. ITRS 2001's targets → three bullets under "ITRS 2001 gives the era's targets for this layer
+  at the 130 nm node:[^itrs-03]" (marker on the lead-in, by rule; the in-item parenthetical on the MPU
+  rows kept whole). Inside "Exposure": "Two resolution enhancements … choice here:" → two
+  sub-bullets (attenuated PSM with its three citations; OPC with its two). Inside "Resist trim": the
+  three sources → sub-bullets, each with its marker, under the item's own sentence ending in a colon.
+* **R-PARA / R-SENTENCE.** "Why" paragraph 1 (161 w) split before "Orshansky, Milor and Hu"; the
+  Orshansky/Zhang sentence split at its semicolon. "Overlay matters here as much as CD" paragraph (121
+  w) split before "The later self-aligned steps". "Resist coat": the 63-word sentence split at its
+  semicolon ("… near 8:1. We infer that the gate level uses a thinner resist …" — the hedge stays on
+  its claim). Items "Anti-reflective coating", "Resist coat", "Exposure", "Resist trim", "Metrology":
+  lead + continuation paragraphs.
+* **R-HEDGE** (italic lead-in with its "(SKY130's recipe, tool, resist and reticle technology are not
+  public)"), **R-TOOLS** (ASML: the head keeps the SkyWater sentence as written — it contains "as later
+  additions", our gloss, so it is not moved under *SkyWater says:*; grades split into *Tool exists:*
+  / *Runs this step:*; the 193 nm paragraph is the continuation. Tracks, CD/overlay: grades verbatim;
+  "Which track serves the DUV tools is not public." as continuation. Reticle and resist supply are not
+  tools and keep their form), **R-OPENQ** (seven labels, text unchanged).
+* **R-RELATED.** Previous/Next split; "The stack being patterned: …" → `Depends on:` (the gate oxides,
+  poly, caps and dopings this step patterns); "Steps that self-align to the etched gate: …" → `Feeds:`;
+  the reference-layer/RPM bullet and the ARC-precedent bullet keep their glosses and no label; mask
+  bullets → one `Mask:` bullet.
+* **R-GLANCE.** Public numbers are poly.1a/poly.2; the tool line keeps "inference (assignment to
+  248 nm)"; Not public says the 248 nm wavelength is inferred.
+* **Left over the caps.** The "Its 0.150 µm minimum line …" bullet (65 w, above). "At 248 nm … whereas
+  … (…)" (46 w). "DUV (KrF, 248 nm) stepper or scanner" (48 w, base text of Machines typically used).
+  The ASML head sentence (52 w, base text kept whole for the reason above).
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, numbers 0.150, 0.210, 248 ×2,
+  1 ×3 and 2 ×2 (glance: poly.1a/poly.2 and 248 nm; "(poly.1a, poly.2)" in the P1G sentence), quote
+  "Poly 1" (Open-questions label), hedges "inference", "not public" (glance). **LOST number_order**
+  ('0.130', '8', …) and ('1', '0.150', '2', '0.210', …): the rule table puts the rule id before its value
+  (the rule-table pattern accepted in batches 2 and 3); every value checked against its rule above.
+  **LOST/ADDED refs** 'POC <step-059> — and P1M' / 'POC <step-059>. P1M': the known tool bug G15 (the
+  refs pattern runs from a role's closing backtick into the next code span on the same line); the
+  role `{ref}`POC <step-059>`` is unchanged. Final run with `--allow-added
+  markers,numbers,quotes,hedges,number_order,identifiers`: only these two explained LOST lines remain.
+* **Marker coverage.** 21 flags, all read: list and table lead-ins (markers on the lead-in or the
+  header cell, by rule; cited items follow); split pieces whose base marker belonged to another clause;
+  labels.
+* **Caps**: para > 100 5 → 0; item > 60 6 → 1; sentence > 45 13 → 3 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
@@ -625,6 +694,11 @@ table cells > 25: 0. After: see the batch summary at the end.
   questions); `055-urpm.md` uses the reading that it does not, and the figures follow 055 (the S5
   figure agent's note). Both pages already say so; both statements kept verbatim, and 052's glance
   box lists the question under "Not public".
+
+* `061-p1m.md` ("What the public record shows"): "The layer prints on a smooth, planar surface: … the
+  only topography is the small field-oxide step (0.07 µm above the silicon surface under poly) at
+  every active edge." The isolation and well figures draw the field oxide standing well proud through
+  013–034, and no page says where it comes down (the S5 figure agent's note). Kept verbatim.
 
 ## Guide problems
 
