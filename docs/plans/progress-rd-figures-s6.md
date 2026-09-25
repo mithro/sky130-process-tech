@@ -75,8 +75,9 @@ Status: **complete**, awaiting review. 25 figures, one per step, on `topic/rd-fi
 ## Per-figure checks
 
 All 25 build with no LINT line; `--check` 368 files, 0 problems. Every figure was looked at in the
-harness at desktop and 400 px in light, and at 400 px in dark; the close-ups and 064/069/079/081
-also at desktop in dark. Checked for each: labels beside their layers, no leader through a film
+harness at desktop and at 400 px in light. Dark was sampled: desktop for 064–066, 069, 076, 077,
+079, 080, 081, 086 and 088, 400 px for 076–080 (the dark 400 px tiles of the rest were shot but
+not all opened). Checked for each: labels beside their layers, no leader through a film
 or along an edge, the highlight on the changed surface only, dark boundaries visible, panels
 aligned.
 
