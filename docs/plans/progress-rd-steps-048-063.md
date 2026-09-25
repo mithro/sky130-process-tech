@@ -570,6 +570,46 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Marker coverage.** 8 flags, all read (the uncited pieces were uncited in the base; labels).
 * **Caps**: para > 100 0 → 0; item > 60 3 → 0; sentence > 45 3 → 0.
 
+### 060 BFR — done
+
+* **R-H3.** Not applied: the passage after the figure is 99 words (an H3 needs ≥ 120).
+* **R-LIST (lead).** "Every furnace step coats both faces of a wafer: [oxidations], [ISONIT nitride …
+  (… — inferred on those pages)], and [the SAGD film — plus … — now covers the backside too]" (a
+  91-word sentence) → lead-in and three plain bullets, every word kept but the list-joining "and"; the
+  hedge "inferred on those pages" stays inside its own item. The lead stays over 120 words (138, as in
+  the base: nothing can be dropped).
+* **R-CATEGORY.** Classification sentence (18 w) alone; the two remaining sentences both describe this
+  step → "**Specific to this step:**" and two bullets.
+* **R-SENTENCE / R-PARA step 4.** "Tool" (102 w, a 75-word sentence): split into "A spin processor
+  holds the wafer … and spins it." / "It dispenses chemistry onto the back … from the gate stack." ("It"
+  added as the subject; the list "holds …, spins it, and dispenses" becomes two sentences) / "The SEZ
+  223 is a dual-chamber tool …[^sez-223-pr]" (split at the semicolon; the quotation and its marker
+  unchanged). "Chemistry" (174 w): lead "The stack is removed from the top down." + two
+  continuation paragraphs; the 55-word Broussous sentence: its first em dash becomes a colon (the
+  recipe stays in the cited sentence with `[^broussous-2005]`) and its closing appositive becomes "It
+  is a public example of the tool class and chemistry SkyWater's list implies, not SkyWater's own
+  recipe." ("It is" added; the page's hedge "not SkyWater's own recipe" kept word for word).
+  "Flatness and focus" (99 w): lead + continuation.
+* **R-HEDGE, R-TOOLS** (SEZ 223: *SkyWater says:* "names the SEZ 223 on its capability list with its
+  chemistries ("…") and, as "a SEZ etcher tool", in a SkyWater staff profile" — verb-first with the
+  tool named, from "Named on SkyWater's capability list …"; Da Vinci: head gloss kept; SP1: posting
+  quotation under *SkyWater says:*, our reading as the continuation paragraph), **R-OPENQ** (labels
+  "Chemistry and sequence", "Backside nitride", "SEZ 223 or Da Vinci", "Other backside strips").
+* **R-RELATED.** Previous/Next split; "The front-side stack is etched at P1ME." → `Same module:`; the
+  backside-film-sources bullet (SAGD, GATENIT/POC and NS19 — mixed modules) and the SMAT bullet keep no
+  label.
+* **R-GLANCE.** Why is the page's own sentence ("A film on the wafer back does harm in four ways, all
+  of which bear on the gate lithography that follows"); Public numbers "none published for SKY130".
+* **Left over the caps.** "The step's position — … — is the earliest point … still benefits." (46 w,
+  base text; its only split point is inside the em-dash pair).
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, numbers 223 ×3 (glance tool
+  line, "names the SEZ 223", the Open-questions label), hedges "inference", "not public", identifier
+  `SKY130` — glance box, R-TOOLS and one label. No LOST. Declared
+  `markers,numbers,hedges,identifiers`: clean.
+* **Marker coverage.** 8 flags, all read (the SEZ press-release marker covers the quotation, which
+  keeps it; the other pieces were uncited in the base; labels).
+* **Caps**: para > 100 1 → 0; item > 60 4 → 0; sentence > 45 5 → 1 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
