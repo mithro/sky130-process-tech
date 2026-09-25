@@ -116,14 +116,14 @@ rule text, the native and {term}`SONOS`) channels from the standard ones. The
 PDK's `lvtn` rule heading says the layer *blocks* a Vt-adjust implant.
 
 That wording, and the fact that the same layer serves low-Vt NMOS,
-low-Vt PMOS and native NMOS, lead us to infer that the physical reticle
-is generated so resist *covers* the drawn `lvtn` regions while the
-{ref}`LVTNI <step-015>` implant goes into the rest of the wafer. These
-are devices whose thresholds could not all be lowered by a single
-dopant species implanted *into* them. We infer, alternatively, that
-Boolean combinations with `nwell` and other layers produce separate
-NMOS and PMOS variants of the opening. Which reading is right is not
-public; see *Open questions*.
+low-Vt PMOS and native NMOS — devices whose thresholds could not all be
+lowered by a single dopant species implanted *into* them — point to
+one of two readings. We infer that the physical reticle is generated
+so that resist *covers* the drawn `lvtn` regions while the
+{ref}`LVTNI <step-015>` implant goes into the rest of the wafer, or
+that Boolean combinations with `nwell` and other layers produce
+separate NMOS and PMOS variants of the opening. Which reading is right
+is not public; see *Open questions*.
 
 Without this mask every 1.8 V NMOS would have the same threshold, and
 the low-Vt, native and SONOS device options in the PDK would not exist.

@@ -109,7 +109,7 @@ under the gate oxides grown at {ref}`GOX100 <step-043>` and
    and avoids dopant out-diffusion; removing it now would require a
    fresh sacrificial oxide before gate oxidation.
 
-   The page describes no sacrificial oxidation before
+   This reference describes no sacrificial oxidation before
    {ref}`GOX100 <step-043>` and so treats the pad oxide as *kept*
    through the anneal (an assumption; see the open question on
    {ref}`NS19 <step-013>`).

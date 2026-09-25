@@ -228,9 +228,8 @@ rather than a furnace anneal at this point.[^pat-03]
 * Next: {ref}`TUNM <step-035>` (start of the SONOS module); gate
   oxidation at {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`.
 * Depends on: every implant from {ref}`LVTNI <step-015>` to
-  {ref}`PWDEI2 <step-032>`, none of which has yet been annealed; the
-  deep N-well ({ref}`DNI <step-008>`) was annealed earlier by
-  {ref}`LINOX <step-010>`.
+  {ref}`PWDEI2 <step-032>`; the deep N-well ({ref}`DNI <step-008>`)
+  was annealed earlier by {ref}`LINOX <step-010>`.
 * Same category: the later RTAs {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`.
 * Category page: {ref}`Anneal / thermal processing <category-anneal>`.
