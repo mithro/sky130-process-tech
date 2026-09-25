@@ -134,5 +134,6 @@ was never used, and no note gained an appended sentence.
       check_patents, check_filings, check_inforce (0 problems each);
       gen_papers, gen_patents, gen_filings, gen_index_links --check
       (0 problems each)
-- [ ] `sphinx-build -W -q -b html docs tmp/_build/html`
-- [ ] Push
+- [x] `sphinx-build -W -q -b html docs tmp/_build/html` — exit 0, no
+      warnings
+- [x] Push
