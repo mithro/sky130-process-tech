@@ -54,7 +54,42 @@ across a `{dropdown}` boundary or into a glance box, table or caption.
 
 (carried references to the pilot's and batch 2's numbered lists apply here too; new ones
 for this batch are added below, continuing the numbering — batch 2 ended at 14, so new
-items here start at 15, only if genuinely new.)
+items here start at 15, only if genuinely new.) Full write-ups of Guide problems 15 and
+16 are in the 038/044 and 042 per-page log entries below. The independent review of this
+branch (`tmp/reviews/rd-steps-035-047.md`, section D) rules on both; its ruling is
+recorded here **for the tool branch**, since an executor on a content branch must never
+edit `tools/check_preserved.py` itself (§2 rule 15).
+
+### For the tool branch (do not edit the checker from a content branch)
+
+**Guide problem 15 (ref/code-span masking). Ruling: a real tool bug**, same family as
+batch 2's T-new-1. `_CODE_SPAN_SINGLE_RE` refuses to start a code span at a role's
+*opening* backtick but not at its *closing* one, so a line such as
+"{ref}`LVTNM <step-014>` for the `lvtn`" gets its trailing code span masked from the
+role's closing backtick onward, and a re-wrap of the line changes the result — a false
+`LOST`/`ADDED refs` pair. Tool-branch fix: mask roles and code spans in one pass so a
+role is consumed whole before any code span can start inside it, and run the check on
+whitespace-flattened text so a re-wrap cannot matter. Until fixed, treat a `LOST`/`ADDED
+refs` pair whose texts differ only by words following a role's closing backtick on the
+same line as this bug: list it in the progress file, never change line wrapping or
+structure to work around it.
+
+**Guide problem 16 (400-character quotation cap). Ruling: raise it, and stop it
+resynchronising silently.** `check_preserved.py`'s `QUOTE_RE` caps a matched quotation at
+400 characters; a page holding a real quotation longer than that (042-onome.md's is 437)
+desynchronises the tool's quote pairing for the next several quotations until it
+happens to resync, which can mask a real wording change inside the shifted zone (as it
+did for 042's own dropdown edit, since reverted). Tool-branch fix: match quotations
+per paragraph (split on blank lines first, so a stray quote can never pair across a
+paragraph boundary), then raise the cap to 800, and print a `WARN` naming the page and
+offset for an odd quote count instead of silently shifting later pairs. Until fixed, a
+`LOST`/`ADDED quotes` pair on a page holding a quotation over 400 characters is this bug:
+report it, and diff the changed text by hand, since the tool's pairing may be hiding a
+real change there.
+
+**Neither problem is fixed on this branch.** Both are documented for whoever maintains
+`tools/check_preserved.py`; no change was made to the tool itself from this content
+branch.
 
 ## Per-page log
 

@@ -66,8 +66,9 @@ These are absolute. A reviewer who finds one of them rejects the whole page.
 4. **Never fill an empty cell from memory.** A value the page does not give is `—` (em dash), or the
    page's own words ("not public", "not stated", "no vendor description was retrieved").
 5. **Never move text across a `{dropdown}` boundary**, in or out, and never paraphrase, summarise or
-   quote the content of a collapsed in-force note outside it. Rules R-PARA, R-TABLE, R-LIST and
-   R-SENTENCE apply *inside* a dropdown, to the text that is already there.
+   quote the content of a collapsed in-force note outside it. Inside an in-force note, **no edit** is
+   made in a readability pass: not a split, not a re-wrap, not a repeated marker. A note over a cap is
+   listed in the progress file for the owner.
 6. **Never mention an in-force patent's content, number or title in the open.** What
    `tools/check_inforce.py` enforces, from the code:
    * every family in `data/patents.yaml` whose `expired` is not `true` is *restricted*: its members'
@@ -1442,8 +1443,13 @@ URL stay first; anything after them that begins "Tier:" or "Also used on" moves 
 **Do.**
 1. **Leave the dropdown title exactly as it is** (§2.7). The shortened title of report A F12 is an owner
    decision and is **blocked**.
-2. Leave the body of the note in place. R-PARA, R-LIST, R-SENTENCE and R-TABLE may be applied *inside*
-   it; nothing crosses the fence.
+2. Leave the body of the note in place, byte for byte. Inside an in-force note, **no edit** is made in
+   a readability pass: not a split, not a re-wrap, not a repeated marker; nothing crosses the fence
+   either. A note over a cap is listed in the progress file for the owner. (Batch 3's review, 2026-09-25:
+   R-PARA/R-LIST/R-SENTENCE/R-TABLE splits inside a note were tried under this rule's earlier wording and
+   found to go beyond a pure boundary change in 10 of 15 cases — a dropped word, a moved verb, a lost
+   paragraph label. The owner's risk tolerance for an in-force note is nil; this rule no longer permits
+   any in-place editing of one.)
 3. Pointer prose in the body text ("which, the collapsed note above sets out", 107 occurrences on 35
    pages) may be shortened to one end-of-sentence clause — "(details in the in-force patent note
    below)" — **only** when the sentence keeps its own meaning without it and no content of the note
