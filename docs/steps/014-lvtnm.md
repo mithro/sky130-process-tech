@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`NS19 <step-013>` |
 | **Next step** | {ref}`LVTNI <step-015>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** coats the wafer with resist and opens windows for the
+  {ref}`LVTNI <step-015>` implant.
+* **Why:** separates the low-Vt (and native/SONOS) channels from the
+  standard ones, giving SKY130 its multiple threshold-voltage options.
+* **Public numbers:** minimum `lvtn` width and space 0.380 µm (lvtn.1a,
+  lvtn.2); minimum enclosure of a gate 0.180 µm
+  (lvtn.4b).[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (existence); inference (assignment).[^skw-01]
+* **Not public:** which of the two competing reticle-polarity readings
+  is correct (→ Open questions).
+:::
+
 ## What this step is
 
 `LVTNM` is the third mask of the flow and the first of the well and
@@ -38,27 +54,38 @@ purposes.[^pdk-06] The existence of add/drop purposes shows that the
 reticle is *derived* from the drawn layer by Boolean operations in the
 mask-generation flow rather than being a copy of it.
 
+### Key numbers
+
 The periphery design rules state the layer's function directly: `lvtn`
 rules "Define regions to block Vt adjust implant for low Vt LV
 PMOS/NMOS, SONOS FETs and Native NMOS".[^pdk-periph] The rule values are
-coarse for a 130 nm process: minimum width 0.380 µm (lvtn.1a), minimum
-space 0.380 µm (lvtn.2), minimum enclosure of a gate by `lvtn` 0.180 µm
-(lvtn.4b), minimum spacing to a gate 0.180 µm (lvtn.3a), spacing to a
-PMOS along the source/drain direction 0.235 µm (lvtn.3b), no overlap
-with `hvtp` with 0.380 µm spacing (lvtn.9), enclosure by `nwell`
-0.380 µm when the layer is used inside an N-well (lvtn.10), and minimum
-area 0.265 µm² (lvtn.13).[^pdk-periph] A separate poly rule sets the
-minimum channel length of a PMOS overlapping `lvtn` at 0.350 µm
-(poly.1b) — much longer than the 0.150 µm baseline — which is consistent
-with a device whose channel doping has been reduced and which therefore
-needs more length to control short-channel effects.[^pdk-periph]
+coarse for a 130 nm process:
+
+| Rule[^pdk-periph] | Constrains | Value |
+|---|---|---:|
+| lvtn.1a | minimum width | 0.380 µm |
+| lvtn.2 | minimum space | 0.380 µm |
+| lvtn.4b | minimum enclosure of a gate by `lvtn` | 0.180 µm |
+| lvtn.3a | minimum spacing to a gate | 0.180 µm |
+| lvtn.3b | spacing to a PMOS along the source/drain direction | 0.235 µm |
+| lvtn.9 | no overlap with `hvtp` | 0.380 µm spacing |
+| lvtn.10 | enclosure by `nwell` when used inside an N-well | 0.380 µm |
+| lvtn.13 | minimum area | 0.265 µm² |
+
+A separate poly rule sets the minimum channel length of a PMOS
+overlapping `lvtn` at 0.350 µm (poly.1b). This is much longer than the
+0.150 µm baseline, which is consistent with a device whose channel
+doping has been reduced and which therefore needs more length to
+control short-channel effects.[^pdk-periph]
 
 ## Step category
 
 `LVTNM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type: the image quality that matters is
 placement relative to the active pattern and adequate resist thickness,
-not minimum feature size. It aligns to the {term}`STI`/active pattern printed at
+not minimum feature size.
+
+It aligns to the {term}`STI`/active pattern printed at
 {ref}`FOM <step-004>` and etched at {ref}`STIE <step-006>`, which at
 this point is, we infer, the only pattern on the wafer.
 
@@ -69,13 +96,17 @@ standard NMOS (`nfet_01v8`), a low-Vt NMOS (`nfet_01v8_lvt`), a standard
 PMOS, a low-Vt PMOS (`pfet_01v8_lvt`) and a high-Vt PMOS
 (`pfet_01v8_hvt`), together with native NMOS devices (`nfet_03v3_nvt`,
 `nfet_05v0_nvt`) that are "constructed by blocking out all VT
-implants".[^pdk-07] The reason for offering several thresholds is the
+implants".[^pdk-07]
+
+The reason for offering several thresholds is the
 familiar speed/leakage trade: "Low Vth devices switch faster, and are
 therefore useful on critical delay paths to minimize clock periods. The
 penalty is that low Vth devices have substantially higher static leakage
 power", and the threshold "is adjusted by altering the concentration of
 dopant atoms in the channel region beneath the gate
-oxide".[^wiki-mtcmos] The 2001 ITRS states that "multiple
+oxide".[^wiki-mtcmos]
+
+The 2001 ITRS states that "multiple
 threshold-voltage and multiple-oxide-thickness devices also need to be
 available in order to enable more comprehensive circuit/system-level
 power/performance optimization".[^itrs-04]
@@ -83,14 +114,16 @@ power/performance optimization".[^itrs-04]
 `LVTNM` is the mask that distinguishes the low-threshold (and, per the
 rule text, the native and {term}`SONOS`) channels from the standard ones. The
 PDK's `lvtn` rule heading says the layer *blocks* a Vt-adjust implant.
+
 That wording, and the fact that the same layer serves low-Vt NMOS,
-low-Vt PMOS and native NMOS — devices whose thresholds could not all be
-lowered by a single dopant species implanted *into* them — lead us to
-infer that the physical reticle is generated so that resist *covers*
-the drawn `lvtn` regions while the {ref}`LVTNI <step-015>` implant goes
-into the rest of the wafer, or that Boolean combinations with `nwell`
-and other layers produce separate NMOS and PMOS variants of the
-opening. Which reading is right is not public; see *Open questions*.
+low-Vt PMOS and native NMOS, lead us to infer that the physical reticle
+is generated so resist *covers* the drawn `lvtn` regions while the
+{ref}`LVTNI <step-015>` implant goes into the rest of the wafer. These
+are devices whose thresholds could not all be lowered by a single
+dopant species implanted *into* them. We infer, alternatively, that
+Boolean combinations with `nwell` and other layers produce separate
+NMOS and PMOS variants of the opening. Which reading is right is not
+public; see *Open questions*.
 
 Without this mask every 1.8 V NMOS would have the same threshold, and
 the low-Vt, native and SONOS device options in the PDK would not exist.
@@ -109,27 +142,29 @@ many implants produce the two shifts.
 
 ## How it is typically performed
 
-An industry-generic implant-block lithography sequence for a 200 mm,
-130 nm-era fab:
+*An industry-generic implant-block lithography sequence for a 200 mm,
+130 nm-era fab:*
 
 1. **Surface preparation.** Dehydration bake and vapour {term}`HMDS` prime on
    the track; the surface is oxide everywhere (pad oxide on active,
    trench oxide on field), which primes well.
-2. **Resist coat.** A single-layer positive resist. The
-   {ref}`LVTNI <step-015>` implant is a channel-type implant at tens of
-   keV, which a resist of about 1 µm stops with a wide margin
+2. **Resist coat.** A single-layer positive resist.
+
+   The {ref}`LVTNI <step-015>` implant is a channel-type implant at
+   tens of keV, which a resist of about 1 µm stops with a wide margin
    (industry-typical).[^txt-02] The PDK's own assumptions table gives a
    nominal "Photoresist thickness" of 1.14 µm,[^pdk-03] so we take that
    as the plausible order of thickness. No {term}`BARC` is needed for
    0.38 µm features at i-line (inference).[^wiki-litho]
 3. **Exposure.** The 0.380 µm minimum width and space[^pdk-periph] are
-   comfortably within reach of an i-line (365 nm) {term}`stepper`: at {term}`NA` 0.6 the
-   process factor is {term}`k₁ <k1>` = 0.38 × 0.6 / 0.365 ≈ 0.62, well above the "0.4
-   for production" level.[^wiki-litho] ASML describes older exposure
-   tools that "migrate to the lithography of choice for less critical
-   layers".[^asml-30] We therefore infer that
-   `LVTNM` is an **i-line layer**, like the other implant-block masks of
-   this module and unlike {ref}`FOM <step-004>`.
+   comfortably within reach of an i-line (365 nm) {term}`stepper`.
+
+   At {term}`NA` 0.6 the process factor is {term}`k₁ <k1>` = 0.38 × 0.6
+   / 0.365 ≈ 0.62, well above the "0.4 for production"
+   level.[^wiki-litho] ASML describes older exposure tools that "migrate
+   to the lithography of choice for less critical layers".[^asml-30] We
+   therefore infer that `LVTNM` is an **i-line layer**, like the other
+   implant-block masks of this module and unlike {ref}`FOM <step-004>`.
 4. **Alignment.** To the STI pattern. The tightest coupling of this
    layer is to the *future* gate: the 0.180 µm enclosure of gate by
    `lvtn` (lvtn.4b) means both this mask and the later poly mask must
@@ -152,17 +187,20 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / i-line scanner.** SkyWater's facilities page
-  lists "ASML I-line stepper" and "ASML I-line scanner".[^skw-01]
-  Strength: **strong** for the existence of the tools; the assignment of
-  `LVTNM` to the i-line tools is an **inference** from the 0.380 µm
-  design rules, not a SkyWater statement.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01] Strength:
-  strong for existence; which track serves which exposure tool is not
-  public.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this mask
-  is an inference.
+* **ASML i-line stepper / i-line scanner**
+  - *SkyWater says:* lists "ASML I-line stepper" and "ASML I-line
+    scanner".[^skw-01]
+  - *Tool exists:* strong for the existence of the tools.
+  - *Runs this step:* the assignment of `LVTNM` to the i-line tools is
+    an inference from the 0.380 µm design rules, not a SkyWater
+    statement.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* which track serves which exposure tool is not
+    public.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -182,16 +220,16 @@ An industry-generic implant-block lithography sequence for a 200 mm,
   oxide that this module's implants pass through).
 * Next: {ref}`LVTNI <step-015>` (the implant through this mask), then
   {ref}`LVTNIS <step-016>` (resist strip).
-* The other Vt-flavour mask of the module is {ref}`HVTPM <step-022>`
+* Same module: the other Vt-flavour mask is {ref}`HVTPM <step-022>`
   (`hvtp`, which must not overlap `lvtn`, rule lvtn.9).
-* The baseline N-channel implant of the 1.8 V devices is
-  {ref}`NCHI <step-045>`, placed later under the low-voltage oxide
-  mask {ref}`LVOM <step-044>`; all of this module's implants are
-  activated at {ref}`RTAI <step-034>`.
-* Previous mask: {ref}`DNM <step-007>`; next mask:
-  {ref}`NWM <step-017>`.
-* Mask page: {ref}`LVTNM <mask-lvtnm>` — the mask's layers, plates,
-  renders and design rules.
+* Same category: {ref}`NCHI <step-045>` — the baseline N-channel
+  implant of the 1.8 V devices, placed later under the low-voltage
+  oxide mask {ref}`LVOM <step-044>`.
+* Feeds: all of this module's implants are activated at
+  {ref}`RTAI <step-034>`.
+* Mask: {ref}`LVTNM <mask-lvtnm>` — the mask's layers, plates, renders
+  and design rules; the previous mask is {ref}`DNM <step-007>`, the
+  next mask {ref}`NWM <step-017>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -272,21 +310,23 @@ An industry-generic implant-block lithography sequence for a 200 mm,
 
 * **Reticle polarity.** The PDK says `lvtn` *blocks* a Vt-adjust
   implant, while this reference describes an implant through the
-  `LVTNM` resist ({ref}`LVTNI <step-015>`). Whether the reticle opens *over*
-  `lvtn` (and `LVTNI` is a {term}`counter-doping` implant) or *everywhere
-  except* `lvtn` (and `LVTNI` is the baseline Vt-adjust implant that
-  low-Vt devices skip) cannot be settled from public data; the "mask
-  add/drop" purposes show only that the reticle is generated, not how.
-  One public derivation from the drawn tape-out data renders the plate
-  as `lvtn` OR (`nwell` AND (`hvtp` OR `areaid.ce`)), with `lvtn`
-  appearing positively, but its note contradicts the expression and it
-  settles nothing; see {ref}`LVTNM <mask-lvtnm>` and
-  {ref}`masks-derivations`.[^mask-renders]
-* Whether separate NMOS and PMOS reticles are derived from the one
-  drawn layer, or whether `nfet_01v8_lvt` and `pfet_01v8_lvt` share a
-  single physical mask, is not public.
-* Resist thickness, exposure tool and the use of a resist-hardening
-  step are inferred from the design rules and general practice.
+  `LVTNM` resist ({ref}`LVTNI <step-015>`).
+
+  Whether the reticle opens *over* `lvtn` (and `LVTNI` is a
+  {term}`counter-doping` implant) or *everywhere except* `lvtn` (and
+  `LVTNI` is the baseline Vt-adjust implant that low-Vt devices skip)
+  cannot be settled from public data. The "mask add/drop" purposes show
+  only that the reticle is generated, not how. One public derivation
+  from the drawn tape-out data renders the plate as `lvtn` OR (`nwell`
+  AND (`hvtp` OR `areaid.ce`)), with `lvtn` appearing positively, but
+  its note contradicts the expression and it settles nothing; see
+  {ref}`LVTNM <mask-lvtnm>` and {ref}`masks-derivations`.[^mask-renders]
+* **Reticle count.** Whether separate NMOS and PMOS reticles are
+  derived from the one drawn layer, or whether `nfet_01v8_lvt` and
+  `pfet_01v8_lvt` share a single physical mask, is not public.
+* **Resist and exposure details.** Resist thickness, exposure tool and
+  the use of a resist-hardening step are inferred from the design
+  rules and general practice.
 
 <!-- footnotes -->
 

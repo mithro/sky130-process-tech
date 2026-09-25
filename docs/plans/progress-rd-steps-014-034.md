@@ -1,0 +1,127 @@
+# Progress — W2 batch 2, step pages 014–034 (wells and threshold-implants module)
+
+Branch `topic/rd-steps-014-034`, worktree `.worktrees/rd-steps-014-034`, branched from
+`main` at `05e7a3ba` (which already carries W0e — the checker relaxations and
+`tools/gen_step_tables.py`). Applying `docs/plans/readability-guide.md` to
+`docs/steps/014-lvtnm.md` … `034-rtai.md`, following the corrected guide and the
+`docs/steps/006-stie.md`/`007-dnm.md`/`008-dni.md` pilot pages as the model of the
+finished form. One commit per page. This file is updated as I go.
+
+Setup done: `tmp/readability/a-tools/measure*.py` copied per §3; `tmp/preserve/`,
+`tmp/shots/` created. Baseline `-W` build done once at the start (clean, 0 warnings).
+`check_preserved.py` is run throughout with `--base 05e7a3ba` (this branch's own start
+point == merge-base with `main`), per the pilot's lesson about upstream `main` churn
+appearing as false preservation failures.
+
+Boundaries observed throughout (per task and guide §2): `## References` reading lists and
+footnote definitions, the generated `<!-- index-links:begin … end -->` block, `{figure}`
+blocks (left exactly where `gen_figures.py` already placed them, inside `## What this step
+is`, after the lead — see pilot Guide problem 1), the quick-facts table, the 13 mandatory H2
+headings, and `{dropdown}` titles/boundaries/contents are never touched.
+
+## Baseline measurement (§1 caps, `measure5.py`, before editing)
+
+21 pages (`docs/steps/014-lvtnm.md` … `034-rtai.md`):
+
+* paragraphs > 100 words: 58
+* list items > 60 words (outside References): 43
+* sentences > 45 words: 108
+* table cells > 25 words: 0
+
+(Full worklist: `tmp/measure5-before.txt`, not committed — `tmp/` is git-ignored.)
+
+## Content problems for the owner
+
+* **034-rtai.md: "inert ambient" vs. "not public" self-contradiction.** Per
+  `docs/plans/progress-rd-figures-s2.md` ("Noticed, not fixed"): 034's first paragraph says
+  RTAI heats the wafer "in an inert ambient" while its Open questions section says the
+  "anneal temperature, time and ambient are not public". This is a pre-existing factual
+  inconsistency, not something this presentation-only pass may resolve. Both statements are
+  kept, verbatim, in their original sections and original wording; recorded here for the
+  owner, not fixed.
+
+## Guide problems
+
+(carried references to the pilot's numbered list in `docs/plans/progress-rd-steps-001-013.md`
+apply here too; new ones for this batch are added below, numbered continuing from that file's
+9, i.e. starting at 10, only if genuinely new.)
+
+10. **`measure.py`/`measure5.py` count text inside a `{figure}` directive as ordinary prose.**
+    The `blocks()` parser's `infence` flag is computed but never used to skip lines, so a
+    figure's alt text and caption are scanned as if they were a page paragraph. Since
+    `{figure}` blocks are generated and out of scope for a hand-edit batch, any "PARA"/"SENT"
+    hit whose line falls inside a `{figure}` directive is not actionable and is left in the
+    "after" measurement. Seen on 014-lvtnm.md (a 116-word caption) and expected on other pages
+    in this batch with long captions; recorded per page rather than repeated here.
+11. **A `number_order` unit with only one number produces no tuple**, so a number that ends up
+    alone in its own sentence after a split (e.g. "a 130 nm process", "the 0.150 µm baseline")
+    disappears from `--allow-regrouped`'s condition (b) accounting even though the number
+    itself is untouched and the `numbers` category shows no loss. This is the same family as
+    the pilot's Guide problem 2 (the tool can never show a fully clean run on a page that
+    splits a dense numeric sentence) but with a different trigger (an orphaned single number,
+    not a genuine regroup mismatch); hand-verified per page as before, not treated as a real
+    loss.
+
+## Per-page log
+
+### 014-lvtnm.md — done
+
+Rules applied, in order: R-H3 (`### Key numbers` before the design-rule table),
+R-TABLE (the 8-value `lvtn`/poly design-rule paragraph → Rule|Constrains|Value, marker moved
+to the table's header cell per M2), R-SENTENCE (the poly.1b em-dash sentence split at the
+dash; the 82-word reticle-polarity inference sentence split at its em-dash and its "or that"
+alternative), R-PARA (the 133-word device-list paragraph → 3 paragraphs at its source seams;
+the 126-word reticle-polarity paragraph → 2 paragraphs; the "Resist coat" and "Exposure" list
+items → lead sentence + indented continuation, with an internal split at "stepper:" for the
+Exposure item), R-CATEGORY (35-word classification paragraph + one remaining sentence, no
+bullet, per the pilot's Guide problem 3 convention), R-HEDGE step 1 (the "industry-generic
+implant-block lithography sequence" opener → italic lead-in), R-TOOLS (all three
+"Machines likely used at SkyWater" bullets had "Strength:"; split into SkyWater
+says/Tool exists/Runs this step; 3 tools, under the four-tool threshold, so no recap table),
+R-RELATED (`Same module:` for the HVTPM sibling-mask bullet — literal same Phase cell, not a
+Guide-problem-5 case; the NCHI/RTAI bullet split into `Same category:` and `Feeds:`, since it
+named two relationships per R-RELATED rule 1; the `Previous mask:`/`Mask page:` bullets
+merged into one `Mask:` bullet per the pilot's M6 fix), R-OPENQ (bold labels added to the two
+previously unlabelled bullets; the already-labelled "Reticle polarity." bullet split into
+lead + indented continuation, with an internal semicolon split for its own 46-word sentence),
+R-GLANCE (box added last). R-CODE: no candidate. R-DERIVATION: no candidate (no arithmetic
+operation is shown; the k1 calculation stays inline as its own sentence per rule 6, single
+operation). R-REPEAT: no ≥10-word repeated run found.
+
+Caps before → after (this page, `measure5.py`): paragraphs > 100 words 4 → 1 (the remaining
+one is the generated `{figure}` caption at line 46, off limits — see below); list items > 60
+words 3 → 0; sentences > 45 words 4 → 1 (same figure caption); table cells > 25 words 0 → 0.
+
+**Figure-caption paragraphs count against the guide's own §1 caps but are out of scope.**
+`measure5.py` (like `measure.py`) does not exclude the text inside a `{figure}` directive from
+its paragraph/sentence scan (confirmed by reading `blocks()`: the `infence` flag is computed
+but never used to skip lines). The figure's alt text and caption are generated content the
+task boundary forbids touching, so the "PARA 116w :46"/"SENT 56w :46" hits on this page (and
+expected on every other page in this batch with a long caption) are left as reported and
+noted here rather than edited. This is a new observation, not exactly the pilot's Guide
+problem 1 (figure placement) — recorded as **Guide problem 10** below.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/014-lvtnm.md`:
+the only failure is `LOST number_order (not a clean regroup)` for three tuples. Hand-verified
+against the diff:
+* `('0.350', '1', '0.150')` (the poly.1b sentence) and the giant `('130', '0.380', ..., '13')`
+  tuple (the design-rule paragraph) both fail condition (b) only because the number "130"
+  (in "a 130 nm process") and the number "0.150" (in "the 0.150 µm baseline") each ended up
+  alone in a single-number sentence after the split, and a unit with only one number does not
+  produce a `number_order` tuple at all — so the number itself is not lost (confirmed: the
+  `numbers` category shows no loss, and both figures are visibly still on the page,
+  unchanged), it just cannot appear in any ADDED tuple for the regroup check to match against.
+  Every other number in both tuples matches a table row or the glance-box tuple exactly, in
+  the same order.
+* `('0.380', '365', '0.6', '0.38', '0.6', '0.365', '0.62', '0.4')` (the Exposure sentence) is a
+  clean 2-way split: `('0.380', '365')` (new lead sentence) and
+  `('0.6', '0.38', '0.6', '0.365', '0.62', '0.4')` (continuation) — both present in ADDED,
+  same order, same digits.
+
+All other checkers (`check_steps`, `check_refs`, `check_machines`, `check_materials`,
+`check_masks`, `check_inforce`, `check_papers`, `check_patents`, `check_filings`,
+`gen_papers.py --check`, `gen_patents.py --check`, `gen_filings.py --check`,
+`gen_index_links.py --check`) pass; `-W` build clean. Screenshots (desktop + 400 px) read top
+to bottom cleanly: the glance box, the design-rule table (holds at 400 px, including the
+"0.380 µm spacing" cell), the R-TOOLS sub-bullets and the Related/Open-questions sections all
+render without overflow; no further issues seen on a top-to-bottom read.
