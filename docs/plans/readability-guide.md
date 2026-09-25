@@ -894,7 +894,10 @@ is never moved out of that H2 (see R-PARA step 4 instead: it stays there as sub-
 indirect figure).
 
 **Do.**
-1. Give it an H3: `### How <the quantity> is estimated`.
+1. Give it an H3 `### How <the quantity> is estimated` when the derivation passage is ≥ 120 words (R-H3
+   step 6). A shorter derivation, or one inside a passage that already has an H3, takes the numbered list
+   and the hedge line with no H3 of its own. When its inputs are already in a table directly above, do
+   not repeat them in a second input table.
 2. Input table first: one row per input, each with its own footnote marker and the source's own wording
    for the quantity.
 3. Numbered list: **one operation per line**, the arithmetic written out, the result of that line in
