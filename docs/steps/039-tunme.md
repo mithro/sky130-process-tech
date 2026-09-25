@@ -10,17 +10,33 @@
 | **Previous step** | {ref}`DEPI <step-038>` |
 | **Next step** | {ref}`ONO <step-040>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** removes the (inferred) pad oxide from the tunnel windows
+  down to bare silicon, so the tunnel oxide can be grown clean.
+* **Why:** a tunnel oxide grown over leftover pad oxide would be far
+  too thick to tunnel through at the read/programme/erase voltages.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** Akrion Gamma batch wet bench — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** HF dilution, etch time and final surface state (→
+  Open questions).
+:::
+
 ## What this step is
 
 `TUNME` removes the oxide — we infer the pad oxide from
 {ref}`BOX <step-002>` — from the tunnel windows so that the {term}`tunnel oxide`
 of the {term}`SONOS` memory transistor can be grown on bare silicon at the next
-step, {ref}`ONO <step-040>`. The resist patterned at
-{ref}`TUNM <step-035>` — opened through its {term}`ARC` at
+step, {ref}`ONO <step-040>`.
+
+The resist patterned at
+{ref}`TUNM <step-035>`, opened through its {term}`ARC` at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
-{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now serves
-a third time, as the mask for an oxide etch that we infer to be wet: a
-plasma would damage the silicon. Inside each window the oxide —
+{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants, now serves
+a third time, as the mask for an oxide etch that we infer to be wet.
+A plasma would damage the silicon. Inside each window the oxide —
 the pad oxide, we infer — is dissolved in dilute hydrofluoric acid or
 buffered HF down to the silicon; outside the windows the resist keeps
 the oxide intact. The patent's own chemistries, its pad-oxide thickness
@@ -29,13 +45,17 @@ and its strip are in the collapsed note below.
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 The Cypress embedded-SONOS patent describes exactly this operation on
 the way to its tunnel dielectric: a "patterned tunnel mask 220 is
-formed on or overlying the pad oxide 209", the memory-transistor channel
-is implanted "through a window or opening in the tunnel mask", and then
+formed on or overlying the pad oxide 209".
+
+The memory-transistor channel
+is implanted "through a window or opening in the tunnel mask". Then,
 "The pad oxide 209 is removed, for example in a wet clean process using
 a 10:1 buffered oxide etch (BOE) containing a surfactant.
 Alternatively, the wet clean process can be performed using a 20:1 BOE
 wet etch, a 50:1 hydrofluoric (HF) wet etch, a pad etch, or any other
-similar hydrofluoric-based wet etching chemistry." The same patent notes
+similar hydrofluoric-based wet etching chemistry."
+
+The same patent notes
 that "A photoresist tunnel mask 220 can be ashed or stripped using
 oxygen plasma", and puts the pad oxide at 10–20 nm.[^pat-04]
 :::
@@ -56,23 +76,28 @@ could equally be the head of the next. The sequence below includes them.
 
 `TUNME` is an {ref}`Etch <category-etch>` step of the (inferred) *wet
 oxide etch* type — the same class as {ref}`GOXETCH <step-046>` and
-{ref}`SACETCH <step-095>`. The category page describes wet chemical
-etching generally as used where a film "must be removed cleanly and
-gently with very high selectivity", and gives the same reason it gives
-for `GOXETCH` and `SACETCH` — that a plasma would damage the exposed
-silicon — for reading this class of etch as wet ({ref}`category-etch`).
-Here the silicon being exposed will carry a tunnel oxide only a few
-nanometres thick (the Cypress ranges are in the collapsed note above and
-in the one below) whose quality decides the memory's endurance and
-retention, so the etch is the gentlest available.
+{ref}`SACETCH <step-095>`.
+
+**Specific to this step:**
+
+* The category page describes wet chemical
+  etching generally as used where a film "must be removed cleanly and
+  gently with very high selectivity". It reads this class of etch as
+  wet for the same reason it gives for `GOXETCH` and `SACETCH`: that a
+  plasma would damage the exposed silicon ({ref}`category-etch`).
+* Here the silicon being exposed will carry a tunnel oxide only a few
+  nanometres thick (the Cypress ranges are in the collapsed note above and
+  in the one below) whose quality decides the memory's endurance and
+  retention, so the etch is the gentlest available.
 
 ## Why this step exists
 
 The tunnel oxide is the thinnest and most critical film in the SONOS
 cell: one embodiment of a Cypress patent puts it at "less than about
 25 Å" (another embodiment of the same patent at "less than about
-50 Å"),[^pat-01] a later Cypress patent that may still be in force gives
-a tighter range of its own (collapsed note below this section), and it
+50 Å").[^pat-01] A later Cypress patent that may still be in force
+gives a tighter range of its own (collapsed note below this section).
+It
 has to pass
 programming current by {term}`Fowler–Nordheim tunnelling` for 100 000 cycles
 (the PDK guarantees "100K cycles")[^pdk-07] while blocking leakage for
@@ -81,25 +106,29 @@ years. Three things follow:
 * **It must be grown, not left over.** A pad oxide that has been
   implanted through several times, plasma-exposed at
   {ref}`TUNARCE <step-036>`, and thinned by successive resist strips is
-  not a tunnel oxide. Cypress's integration patent, which may still be
+  not a tunnel oxide.
+
+  Cypress's integration patent, which may still be
   in force, quantifies how much oxide those strips take; the figures are
   in the collapsed note below this section. The pad oxide must go, and a
   fresh oxide must be grown on clean crystal.
 * **It must be removed only where the cells are.** Elsewhere the
   (inferred) pad oxide would continue to serve as the base on which the
-  nitride of the {term}`ONO` stack will sit and be removed again
-  ({ref}`ONOME <step-042>`), and as a protective layer over the logic
-  silicon until the gate-oxide pre-clean. A masked etch does this; a
-  blanket strip would not.
+  nitride of the {term}`ONO` stack will sit; it is removed again at
+  {ref}`ONOME <step-042>`.
+
+  It would also serve as a protective layer
+  over the logic silicon until the gate-oxide pre-clean. A masked etch
+  does this; a blanket strip would not.
 * **The surface must be perfect.** HF etching leaves silicon
   hydrogen-terminated and smooth;[^cerofolini-1998][^kern-1990] a
   plasma etch would leave a damaged, roughened surface that the tunnel
   oxide would inherit.
 
 Without `TUNME` the tunnel oxide would be grown on top of the pad oxide,
-giving a "tunnel" dielectric an order of magnitude too thick — the
+giving a "tunnel" dielectric an order of magnitude too thick. The
 arithmetic, which uses the patent's ranges, is in the collapsed note
-below — through which nothing would tunnel at the PDK's ±10.5 V
+below. Nothing would tunnel through it at the PDK's ±10.5 V
 programme/erase conditions[^pdk-07] (on the reading of the published
 table's programme source bias set out on {ref}`PTSI <step-037>`).
 
@@ -110,36 +139,42 @@ tunnel oxide 1–3 nm, so a tunnel oxide grown on top of the pad oxide
 would be 11–23 nm.[^pat-04] Cypress's integration patent quantifies the
 strip damage: "approximately 0.5 nm of silicon dioxide may be removed
 during a conventional post-implant resist strip process", more "if the
-silicon dioxide received an implant", so that "between 1.5 nm and 2.5 nm
+silicon dioxide received an implant". So that "between 1.5 nm and 2.5 nm
 of silicon dioxide may be removed" over a flow's worth of
 implants.[^pat-03]
 :::
 
 ## How it is typically performed
 
-An industry-generic masked pad-oxide removal for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic masked pad-oxide removal for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 1. **Wet etch with resist in place.** Dilute HF — the dilutions the
    Cypress patent names are in the collapsed note above — or
    surfactant-containing BOE in a wet bench or single-wafer spray tool.
+
    A 6:1 BOE etches thermal oxide at "approximately 2 nanometres per
-   second at 25 degrees Celsius"[^wiki-boe] — far too fast to control
-   for a pad oxide of the order of 10–20 nm (the era-typical range on
-   {ref}`BOX <step-002>`) — so more dilute chemistries with rates of
-   typically a few nanometres per minute are used;[^kikuyama-1994] the
-   etch rate scales with the HF and HF₂⁻ concentrations,[^judge-1971]
-   and at very low concentrations the dissociation state of the acid
-   controls the rate and the surface left behind.[^kikuyama-1994] A
-   surfactant helps the liquid wet 0.4 µm windows in hydrophobic resist,
-   which is what the Cypress patent specifies (collapsed note above).
-   The resist is not attacked by HF.
+   second at 25 degrees Celsius".[^wiki-boe] This is far too fast to
+   control for a pad oxide of the order of 10–20 nm (the era-typical
+   range on {ref}`BOX <step-002>`), so more dilute chemistries with
+   rates of typically a few nanometres per minute are
+   used.[^kikuyama-1994] The etch rate scales with the HF and HF₂⁻
+   concentrations,[^judge-1971] and at very low concentrations the
+   dissociation state of the acid controls the rate and the surface
+   left behind.[^kikuyama-1994]
+
+   A surfactant helps the liquid wet
+   0.4 µm windows in hydrophobic resist, which is what the Cypress
+   patent specifies (collapsed note above). The resist is not attacked
+   by HF.
 2. **{term}`Over-etch <over-etch>` and undercut.** The etch is timed for the oxide
-   thickness plus an over-etch to clear thickness variation; being
+   thickness plus an over-etch to clear thickness variation.
+
+   Being
    isotropic, it undercuts the resist edge by roughly the oxide
    thickness plus over-etch — tens of nanometres, small against the
    0.095 µm `tunm`
-   extension beyond the gate (tunm.3).[^pdk-periph] Etch-rate test
+   extension beyond the gate, tunm.3.[^pdk-periph] Etch-rate test
    wafers track bath ageing ({ref}`category-etch`).
 3. **Rinse and dry.** DI-water rinse; the freshly exposed silicon is
    hydrophobic.
@@ -150,7 +185,9 @@ fab (SKY130's recipe is not public):
    silicon, which the next clean removes.
 5. **Pre-oxidation clean.** An RCA-type sequence — {term}`SC-1` for particles
    and organics, {term}`SC-2` for metals[^wiki-rca] — with an HF-last or a
-   deliberately grown chemical oxide as the final surface. (HF is free
+   deliberately grown chemical oxide as the final surface.
+
+   (HF is free
    to be used here because the {term}`ONO` stack does not yet exist; see
    {ref}`GOX100 <step-043>` for why the later pre-clean avoids HF.) The
    choice matters for a tunnel oxide only a few nanometres thick; the
@@ -167,7 +204,7 @@ The tunnel dielectric is 1.0–3.0 nm in the thermal-oxidation embodiment
 and 1.0–4.0 nm in the radical-oxidation one;[^pat-04] another patent
 gives 15–22 Å.[^pat-02] The Cypress patents describe SC-1 at "50 to
 80° C. for about 10 minutes" and SC-2 as "a 1:1:10 solution of HCl,
-H₂O₂ and H₂O at about 50 to 80° C.",[^pat-04] and one of them replaces
+H₂O₂ and H₂O at about 50 to 80° C.".[^pat-04] One of them replaces
 SC-1 with "an ozonated water cleaning regime" in places where the ONO
 stack is exposed, its later pre-clean being "substantially free of
 HF".[^pat-03]
@@ -184,19 +221,35 @@ HF".[^pat-03]
 
 ## Machines likely used at SkyWater
 
-* **Akrion Gamma batch wet bench** — listed with "Sulfuric, SC1,
-  phosphoric, BOE, spin or IPA dry".[^skw-01] BOE is the chemistry the
-  Cypress patent names for this etch (the collapsed notes above).
-  Strength: **strong** for the tool; **inference** for the assignment.
-* **DNS wet bench** — "industry standard HF/SC1/SC2" and "dilute
-  HF-last with IPA dry"[^skw-01] — the natural home of the pre-oxidation clean.
-  Strength: strong for existence; inference for assignment.
-* **FSI Mercury** ("HF/SC1/SC2 rotational") and **SEZ 223 / Da Vinci
-  single-wafer** ("HF, DSP+HF, titration controlled").[^skw-01]
-  Strength: strong for existence; a SkyWater technician profile names
-  the "SEZ etcher tool".[^skw-07]
-* **GaSonics PEP, Iridia and Mattson Aspen II ashers**[^skw-01] for the
-  strip. Strength: strong for existence.
+Four tools are named at SkyWater for this step:
+
+| Tool | Evidence |
+|---|---|
+| Akrion Gamma batch wet bench | strong (tool); inference (assignment) |
+| DNS wet bench | strong (existence); inference (assignment) |
+| FSI Mercury / SEZ 223 / Da Vinci single-wafer | strong (existence) |
+| GaSonics PEP / Iridia / Mattson Aspen II ashers | strong (existence) |
+
+* **Akrion Gamma batch wet bench**
+  - *SkyWater says:* lists it with "Sulfuric, SC1,
+    phosphoric, BOE, spin or IPA dry".[^skw-01]
+  - *Tool exists:* **strong** — BOE is the chemistry the
+    Cypress patent names for this etch (the collapsed notes above).
+  - *Runs this step:* **inference**.
+* **DNS wet bench**
+  - *SkyWater says:* lists "industry standard HF/SC1/SC2" and "dilute
+    HF-last with IPA dry".[^skw-01]
+  - *Tool exists:* strong for existence — the natural home of the
+    pre-oxidation clean.
+  - *Runs this step:* inference.
+* **FSI Mercury and SEZ 223 / Da Vinci single-wafer**
+  - *SkyWater says:* lists "HF/SC1/SC2 rotational" and "HF, DSP+HF,
+    titration controlled".[^skw-01] A SkyWater technician profile
+    names the "SEZ etcher tool".[^skw-07]
+  - *Tool exists:* strong for existence.
+* **GaSonics PEP, Iridia and Mattson Aspen II ashers**
+  - *SkyWater says:* lists them.[^skw-01]
+  - *Tool exists:* strong for existence — for the strip.
 
 ## Resources required
 
@@ -214,15 +267,15 @@ HF".[^pat-03]
 
 ## Related steps and cross-references
 
-* Previous: {ref}`DEPI <step-038>` (last implant through the window);
-  mask: {ref}`TUNM <step-035>`; ARC open: {ref}`TUNARCE <step-036>`.
+* Previous: {ref}`DEPI <step-038>` (last implant through the window).
 * Next: {ref}`ONO <step-040>` grows the tunnel oxide on the cleared
   silicon.
-* The same wet chemistry later strips the thick gate oxide from the
-  1.8 V regions ({ref}`GOXETCH <step-046>`) and the sacrificial oxide
-  before silicidation ({ref}`SACETCH <step-095>`).
-* The oxide being removed is, we infer, the pad oxide grown at
-  {ref}`BOX <step-002>`.
+* Same category: the same wet chemistry later strips the thick gate
+  oxide from the 1.8 V regions ({ref}`GOXETCH <step-046>`) and the
+  sacrificial oxide before silicidation ({ref}`SACETCH <step-095>`).
+* Depends on: the oxide being removed is, we infer, the pad oxide
+  grown at {ref}`BOX <step-002>`.
+* Mask: {ref}`TUNM <step-035>`; ARC open: {ref}`TUNARCE <step-036>`.
 * Category pages: {ref}`Etch <category-etch>`,
   {ref}`Resist strip / clean <category-strip>`.
 
@@ -303,18 +356,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* That the oxide under the resist/nitride is the pad oxide from
-  {ref}`BOX <step-002>` rather than a later sacrificial oxide is
-  inferred; its retention after {ref}`NS19 <step-013>` is not public.
-* Whether the pad oxide is removed only inside the tunnel windows or
-  everywhere after the resist is stripped is an open question; this
-  page describes a masked etch, and the Cypress patent text quoted in
-  the collapsed notes above can be read either way.
-* Where the resist strip and the pre-oxidation clean sit — in this
-  step or in {ref}`ONO <step-040>` — is not stated publicly; this page
-  treats them as part of this step.
-* The HF dilution, etch time, over-etch and final surface state
-  (HF-last or chemical oxide) are not public.
+* **Oxide identity.** That the oxide under the resist/nitride is the
+  pad oxide from {ref}`BOX <step-002>` rather than a later sacrificial
+  oxide is inferred; its retention after {ref}`NS19 <step-013>` is not
+  public.
+* **Etch extent.** Whether the pad oxide is removed only inside the
+  tunnel windows or everywhere after the resist is stripped is an open
+  question. This page describes a masked etch, and the Cypress patent
+  text quoted in the collapsed notes above can be read either way.
+* **Where the strip and clean sit.** Where the resist strip and the
+  pre-oxidation clean sit — in this step or in {ref}`ONO <step-040>` —
+  is not stated publicly; this page treats them as part of this step.
+* **Chemistry details.** The HF dilution, etch time, over-etch and
+  final surface state (HF-last or chemical oxide) are not public.
 
 <!-- footnotes -->
 

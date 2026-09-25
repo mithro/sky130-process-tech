@@ -45,6 +45,64 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 039-tunme.md — done (3 hand-written in-force notes in the body, plus their copies
+under References; content untouched, sentences split inside them under R-DROPDOWN
+rule 2 — inside the 037–044 in-force-sweep range)
+
+Rules applied: R-PARA/R-SENTENCE throughout the open prose (lead split into 2
+paragraphs; the "Step category" classification sentence + `**Specific to this
+step:**` and 2 bullets; the "Three things follow" intro sentence split into 3; both
+long "Why this step exists" bullets split into lead + continuation; the "Without
+`TUNME`..." sentence split at its em-dash into 3 shorter sentences; both dense
+"How it is typically performed" items (1 and 5) split into lead + continuation, with
+item 2's internal semicolon split and its `(tunm.3)` parenthetical folded into plain
+text to keep the em-dash-aside sentence at one parenthetical), R-SENTENCE **inside
+three `{dropdown}` notes** (R-DROPDOWN rule 2 explicitly allows this): each dense,
+quotation-heavy sentence was split only *before or after* a quotation, never inside
+one, and no word or quotation mark was changed — see the "dropdown edits" list below
+for the exact before/after text of each. R-HEDGE step 1 (italic lead-in), R-TOOLS (4
+"Strength:" bullets → SkyWater-says/Tool-exists/Runs-this-step form + a `Tool |
+Evidence` recap table, since 4 meets the rule 5 threshold), R-RELATED (labelled and
+reordered: `Previous:`, `Next:`, `Same category:`, `Depends on:`, `Mask:`, `Category
+pages:`), R-OPENQ (bold labels on all four bullets), R-GLANCE (box inserted last;
+"Public numbers" is "none published for SKY130" since every number on the page either
+belongs to a patent inside a dropdown or to a comparison step).
+
+**Dropdown edits (`--allow-dropdown-edits`), named per §7 step 4:**
+
+1. Body dropdown "From a patent shown as in force (US 8,796,098; estimated expiry
+   2034-02-26) — open to read" (the one right after the lead). Old: one 68-word
+   sentence running "The Cypress embedded-SONOS patent describes exactly this
+   operation on the way to its tunnel dielectric: a "...209", the memory-transistor
+   channel is implanted "...tunnel mask", and then "The pad oxide 209 is
+   removed,...chemistry."" New: the same clauses and quotations, split into three
+   sentences at the two points between quotations ("...pad oxide 209"." /
+   "...tunnel mask". Then, "The pad oxide..." /  the "and then" connective replaced
+   by "Then,"). No quotation altered; no word added or removed.
+2. Body dropdown "From patents shown as in force (US 2009/0179253 …) — open to read"
+   under "Why this step exists". Old: "...so that "between 1.5 nm and 2.5 nm of
+   silicon dioxide may be removed" over a flow's worth of implants." joined to the
+   previous quotations by "so that". New: split into two sentences at "so that" →
+   "so that" capitalised to "So that", nothing else changed.
+3. The same dropdown, repeated under "How it is typically performed": old "...H₂O at
+   about 50 to 80° C.", and one of them replaces SC-1 with..."; new: split at "and
+   one of them replaces" into two sentences ("...80° C.[^pat-04] One of them
+   replaces...").
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption,
+off limits); list items > 60 words 3 → 0; sentences > 45 words 11 → 1 (same figure
+caption); table cells > 25 words 0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers --allow-regrouped --allow-dropdown-edits
+docs/steps/039-tunme.md`: **0 undeclared differences**. Every `number_order` finding
+is a clean `REGROUPED` match, including the three dropdown splits above (each
+quotation's own digits stayed in their original relative order). All other checkers
+(including `check_inforce.py`, run explicitly given the patent-sensitive dropdowns)
+pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom,
+including all three dropdowns (collapsed, title unchanged) and the new recap table.
+
+
 ### 038-depi.md — done (1 hand-written in-force note under "How it is typically
 performed" and its copy under References; both untouched — inside the 037–044
 in-force-sweep range)
