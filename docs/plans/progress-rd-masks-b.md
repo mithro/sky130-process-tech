@@ -458,3 +458,30 @@ The sibling of nsdm; the same treatment throughout.
   and cannot stand alone), the two-quotation "The site says …" sentence (52 by the script); three
   quick-facts cells. Before → after: paragraphs 9 → 0, items 1 → 0, sentences 15 → 3, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 10. pwdem — done
+
+* **Rules applied.** R-INTRO (180 → 43 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST
+  (the three signs of the sparse record; where the periphery rules put the layer); R-RELATED; R-H3
+  (Exposure class, Resist and tone, Overlay and alignment, Pattern transfer).
+* **R-PARAMS not applied:** two parameters (`PWDEMCD`, `PWDEMCDSP`).
+* **Template sentence with an extra clause:** as on pwbm, "and reports the gaps without drawing
+  conclusions from them" kept as "This page reports the gaps without drawing conclusions from them."
+* **Intro.** Kept the first sentence up to its colon and "On the PWDEM page's reading, the resist …
+  is opened over the `pwde` regions of the 20 V devices." Moved with the hedge repeated: "On the PWDEM
+  page's reading, the two implants … put a lighter, purpose-built P-well into the `pwde` regions — …
+  —" ("into them" → "into the `pwde` regions"); "Like `PWBM`, it is a mask …:" → "Like `PWBM`,
+  `PWDEM` is a mask …:" with its three clauses as a list.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **Declared additions** (`--allow-added markers,refs`): markers `mask-renders` ("No drawn shapes"
+  split), `pdk-errors` (Error Messages "describes"), `steps-sheet` ("Partial record" lead split off);
+  refs `step-030` (hedge repeated; the other refs lines are the backtick-pairing artefact around "Like
+  `PWBM`, `PWDEM`").
+* **Marker coverage.** Flags read: every flagged sentence had no marker of its own in the base (the
+  marker belonged to the clause before its semicolon).
+* **Other edits.** "has a long history:" → "has a long history." (the two studies that followed stay
+  one sentence); "Partial record" and "No drawn shapes" split as on pwbm.
+* **Over the caps after the pass:** the 20 V PMOS page sentence (47 by the script, a long quotation) and
+  the two-quotation "The site says …" sentence (52); the quick-facts Polarity cell. Before → after:
+  paragraphs 8 → 0, items 1 → 0, sentences 10 → 2, cells 1 → 1.
+* **Content problems for the owner:** none found.

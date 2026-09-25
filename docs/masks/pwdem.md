@@ -2,22 +2,9 @@
 # PWDEM — P-Well Drain Extended
 
 The P-well drain-extended mask is the {term}`reticle` of the last
-lithography of SKY130's well and channel module: on the
+lithography of SKY130's well and channel module. On the
 {ref}`PWDEM <step-030>` page's reading, the resist printed through it at
-step 30 is opened over the `pwde` regions of the 20 V devices, the two
-implants {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>` put a
-lighter, purpose-built P-well into them — inside the areas from which
-{ref}`PWBM <step-026>` kept the standard P-well — and the resist is
-stripped at {ref}`PWDEIS <step-033>`. Like `PWBM`, it is a mask whose
-public record is sparse: `masks.csv` does not mark it as used, the
-process-steps sheet records a plate for it on one MPW run only, and no
-rendered die of any run draws its layer. This page gathers what public
-sources say about the mask itself — its PDK entry and layer, the plate
-the process-steps sheet records, what the public renders show, the
-lithography it needs and the rules that constrain it — and reports the
-gaps without drawing conclusions from them. How the step is performed is
-on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+step 30 is opened over the `pwde` regions of the 20 V devices.
 
 | | PWDEM — P-Well Drain Extended |
 |---|---|
@@ -34,34 +21,66 @@ on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 0 on every run[^mask-renders] |
 | Steps that use the pattern | 4 steps; see {ref}`Steps that use this mask <mask-pwdem-steps>` |
 
+:::{seealso}
+How the step is performed is
+on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`PWDEM <step-030>` page's reading, the two
+implants {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>` put a
+lighter, purpose-built P-well into the `pwde` regions — inside the areas from which
+{ref}`PWBM <step-026>` kept the standard P-well — and the resist is
+stripped at {ref}`PWDEIS <step-033>`. Like `PWBM`, `PWDEM` is a mask whose
+public record is sparse:
+
+* `masks.csv` does not mark it as used
+* the
+  process-steps sheet records a plate for it on one MPW run only
+* no
+  rendered die of any run draws its layer
+
+This page reports the
+gaps without drawing conclusions from them.
 
 `gds_layers.csv` describes the drawn layer `pwde` as "Regions to receive
 p-well drain-extended implants", and the rule set's function line reads,
 as published, "Defines Pwdem (FIXME)".[^pdk-06][^pdk-periph] The
-periphery rules give no values but fix where the layer may be: `pwde`
-"must be enclosed by UHVI" (pwdem.4), the 20 V node identifier; inside
-UHVI it "must be enclosed by deep nwell" (pwdem.5); and it has a minimum
-enclosure by `pwbm` (pwdem.3).[^pdk-periph] The {ref}`PWDEM <step-030>`
+periphery rules give no values but fix where the layer may be:[^pdk-periph]
+
+* `pwde`
+  "must be enclosed by UHVI" (pwdem.4), the 20 V node identifier
+* inside
+  UHVI it "must be enclosed by deep nwell" (pwdem.5)
+* it has a minimum
+  enclosure by `pwbm` (pwdem.3)
+
+The {ref}`PWDEM <step-030>`
 page reads these together with the `pwbm` description: the standard
 P-well is kept out of the 20 V device area at {ref}`PWBM <step-026>`,
 and `PWDEM` puts a different, lighter P-well back into part of it,
 inside a deep-N-well tub. The PDK's high-voltage methodology says that
 its very-high-voltage devices, the 16 V class, "need to be designed with
 drain extentions (DE) fabricated by lightly doped Nwells" and
-P-wells;[^pdk-hv] it does not describe the 20 V devices, and the step
+P-wells.[^pdk-hv] It does not describe the 20 V devices, and the step
 page applies the statement to them by analogy.
 
 Which device the lighter P-well serves is an open question on the step
 pages, which read it as the drift region of the 20 V PMOS and, less
-certainly, the body of the 20 V NMOS. The PDK's mask generation table,
+certainly, the body of the 20 V NMOS.
+
+The PDK's mask generation table,
 Table F2b, marks the `PWDEM` column `C` ("CREATED") in one of its 80
 device rows, "UHV pmos 5/20V DE", and `-` in every other row, including
 the four 20 V NMOS rows (plain, isolated, native and isolated
 native).[^pdk-06] On the table, then, the plate is created for the 20 V
 PMOS only, which supports the PMOS reading and not the NMOS one (our
 reading of the table; it does not say which region of the device the
-layer forms). The SKY130 {term}`test tile`'s pad documentation names
+layer forms).
+
+The SKY130 {term}`test tile`'s pad documentation names
 its 20 V PMOS structures `p20vhv1`, with cell names such as
 `s8tet_s_hvp_pwde_stdnw_sti_1p5_2f_60um_IP_LVS`, and gives them an
 "N-body" pin;[^raw-data-testtile-pads] the pad list does not explain the
@@ -71,7 +90,7 @@ V_DS = 0 to −22 V, and its details text repeats the NMOS wording, "The
 20V NMOS FET has similar construction to the 11V/16V NMOS FET, with
 several differences", among them a "Longer drift region".[^pdk-07]
 
-A p-type drift region for a high-voltage PMOS has a long history:
+A p-type drift region for a high-voltage PMOS has a long history.
 Ludikhuize's 1982 lateral DMOS used a p− top layer that "can be used in
 the extended drain of a 280 V PMOST",[^ludikhuize-1982] and Mei et al.
 built both N- and P-channel extended-drain RESURF devices, rated 30 V,
@@ -87,13 +106,17 @@ transistors to a 0.18 µm logic process.[^mitros-2001]
 layer is `pwde` at 124:20.[^pdk-06] `masks.csv` lists "P-Well Drain
 Extended, PWDEM" with the `Used in SKY130` field blank,[^pdk-05] which the
 {ref}`PWDEM <step-030>` page treats as a documentation inconsistency,
-since the layer and its rules exist. Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
+since the layer and its rules exist.
+
+Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives `PWDEMCD` 0.84 and `PWDEMCDSP` 1.27, the same values as the
 N-well and P-well block rows,[^pdk-03] while the `pwdem` rules
-themselves give "N/A" for every value;[^pdk-periph] the PDK does not say
-which of the two applies to the plate. The PDK's *Error Messages* page,
-which describes "many of the automated DRC rules that are checked by
-SkyWater as part of the acceptance criteria for GDS data", gives one
+themselves give "N/A" for every value.[^pdk-periph] The PDK does not say
+which of the two applies to the plate.
+
+The PDK's *Error Messages* page
+describes "many of the automated DRC rules that are checked by
+SkyWater as part of the acceptance criteria for GDS data".[^pdk-errors] It gives one
 value, under the rule name `pwde.6`: "1.00 min. enclosure of pwde_uhvi
 by dnwell_uhvi".[^pdk-errors] No periphery rule outside the
 `pwdem` set, and no criterion of *Criteria & Assumptions* besides Table
@@ -108,7 +131,9 @@ shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `PWDEM` the site renders layer 124:20 (`pwde`)
 alone, with no Boolean expression, no fill layer and no mask-level
 layer, with the note "pwde drawing", and records the mask as not used in
-SKY130.[^mask-renders] The choice of layer agrees with the index's
+SKY130.[^mask-renders]
+
+The choice of layer agrees with the index's
 pairing, but both start from the same public files, so the agreement is
 not independent confirmation; it is one public derivation from the
 drawn data, not SkyWater's mask-generation recipe.
@@ -120,7 +145,9 @@ real results - several masks are used by no project on a given
 shuttle", and states the limits of its images: "These are renders of
 *drawn* data, not photomask artwork: reticle pitch, 4x reduction,
 mirroring and the frame features the fab adds are not
-modelled."[^mask-renders] The renders therefore cannot show what the
+modelled."[^mask-renders]
+
+The renders therefore cannot show what the
 MPW-6 plate carries, since they leave out whatever the fab adds. The
 site's metadata carries no plate ID, and the MPW-4 renders come from a
 different reticle set from the one whose plates the sheet records
@@ -145,15 +172,16 @@ run's columns in the tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 | MPW-7 | `5CS8016AC` | none recorded |
 | MPW-8 | `5CS8017AC` | none recorded |
 
-* **Partial record.** The sheet records a `PWDEM` plate for MPW-6 only
-  and does not say why the plates for the two P-well masks are recorded
+* **Partial record.** The sheet records a `PWDEM` plate for MPW-6 only.[^steps-sheet]
+
+  The sheet does not say why the plates for the two P-well masks are recorded
   for only some runs; MPW-8 has a `PWBM` plate but no `PWDEM` plate
   ({ref}`masks-mpw-runs`).[^steps-sheet] This page reports what is
   recorded and does not conclude that the mask was absent from the other
-  seven runs: the gap may be in the record rather than in the runs.
+  seven runs. The gap may be in the record rather than in the runs.
 * **No drawn shapes.** No rendered die on any run draws `pwde`, so the
   renders neither show use of the mask on MPW-6 nor its absence
-  elsewhere, and this page does not read the recorded plate as evidence
+  elsewhere.[^mask-renders] This page does not read the recorded plate as evidence
   that any project on MPW-6 used the 20 V
   devices.[^mask-renders][^steps-sheet]
 * **Plate number.** `026` follows `024` for `PWBM`, as step 30 follows
@@ -167,44 +195,40 @@ run's columns in the tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`PWDEM <step-030>` page reads the layer's
+### Exposure class
+
+The {ref}`PWDEM <step-030>` page reads the layer's
 features as micrometre-scale, with overlay requirements set by the
 drift-region length rather than by a sub-micrometre CD, and infers an
-i-line level; the {ref}`i-line stepper <machine-i-line-stepper>` page
+i-line level. The {ref}`i-line stepper <machine-i-line-stepper>` page
 lists it there. SkyWater lists "ASML I-line stepper" and "ASML I-line
-scanner" among its tools but assigns no layer to them.[^skw-01] Taking
+scanner" among its tools but assigns no layer to them.[^skw-01]
+
+Taking
 Table 2's 0.84 µm as the smallest feature, Wong et al.'s threshold for a
 rising mask error factor, 0.5 λ/NA for lines and spaces,[^wong-1998] is
 about 0.38 µm at 365 nm and NA 0.48 (our arithmetic), well below it.
 
-**Resist.** The resist must stop the drain-extension boron wherever the
+### Resist and tone
+
+The resist must stop the drain-extension boron wherever the
 plate leaves it. The {ref}`PWDEM <step-030>` page reads a 2 µm-class
 implant resist like that of `PWBM`, on the grounds that a drift well is
 lighter but not necessarily shallower than the main well. An IBM
 retrograde-well patent uses resist "typically 1800–2500 nm in thickness"
 for its 150 keV and 45 keV P-well boron, while its 550 keV boron goes
-through a 200 nm polysilicon mask;[^pat-well-ibm] the ion range that
+through a 200 nm polysilicon mask.[^pat-well-ibm]
+
+The ion range that
 sets the thickness is what SRIM computes,[^ziegler-2010] and Lee et al.
 measured the outgassing of thick resists under MeV
 implantation.[^lee-1996] SkyWater's resist and its thickness are not
 public. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** Nothing is etched through this resist. On the
-step pages' readings the pattern is transferred into the silicon as
-dopant by {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>`, a
-two-energy boron pair on their pages' reading, on the
-{ref}`medium-current implanter <machine-medium-current-implanter>` or
-{ref}`high-energy implanter <machine-high-energy-implanter>` class, and
-the resist is removed at {ref}`PWDEIS <step-033>` on the
-{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
-{ref}`wet bench <machine-wet-bench>` classes, before the
-{ref}`RTAI <step-034>` anneal. A Texas Instruments drain-extension patent
-gives boron "at doses of 2×10¹² cm² to 7×10¹³ cm² at energies of about
-40 keV" for its p-type well;[^pat-demos-ti] the SKY130 conditions are not
-public.
+### Overlay and alignment
 
-**Overlay.** The {ref}`PWDEM <step-030>` page reads the drift-well edge
+The {ref}`PWDEM <step-030>` page reads the drift-well edge
 against the trench and, later, the poly as reliability-critical, citing
 the PDK's instruction that "Under no circumstances the poly/extended
 drain overlap and field oxide length should be changed" (said of the
@@ -213,6 +237,22 @@ drain overlap and field oxide length should be changed" (said of the
 its one published `pwde` value, in the Error Messages page, is the
 1.00 enclosure by deep N-well.[^pdk-errors] Ludikhuize reviews RESURF
 technology, including breakdown and on-resistance.[^ludikhuize-2000]
+
+### Pattern transfer
+
+Nothing is etched through this resist. On the
+step pages' readings the pattern is transferred into the silicon as
+dopant by {ref}`PWDEI1 <step-031>` and {ref}`PWDEI2 <step-032>`, a
+two-energy boron pair on their pages' reading, on the
+{ref}`medium-current implanter <machine-medium-current-implanter>` or
+{ref}`high-energy implanter <machine-high-energy-implanter>` class. On the step pages' readings
+the resist is removed at {ref}`PWDEIS <step-033>` on the
+{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
+{ref}`wet bench <machine-wet-bench>` classes, before the
+{ref}`RTAI <step-034>` anneal. A Texas Instruments drain-extension patent
+gives boron "at doses of 2×10¹² cm² to 7×10¹³ cm² at energies of about
+40 keV" for its p-type well;[^pat-demos-ti] the SKY130 conditions are not
+public.
 
 (mask-pwdem-steps)=
 ## Steps that use this mask
@@ -245,6 +285,8 @@ ambient, with the resist already gone. The next mask step is
 The `pwdem` rules of the periphery rules, which give no values
 ("N/A").[^pdk-periph]
 
+:::{table} The `pwdem` rules, as published; the periphery rules give no values
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | pwdem.1 | "Min width of pwdem.dg" | N/A |
@@ -253,18 +295,22 @@ The `pwdem` rules of the periphery rules, which give no values
 | pwdem.4 | "pwdem.dg must be enclosed by UHVI" | N/A |
 | pwdem.5 | "pwdem.dg inside UHVI must be enclosed by deep nwell" | N/A |
 | pwdem.6 | "Min enclosure of pwdem:dg by deep nwell inside UHVI" | N/A |
+:::
 
 The Error Messages page gives a value for the last of them, under the
 name `pwde.6`: "1.00 min. enclosure of pwde_uhvi by
 dnwell_uhvi".[^pdk-errors] Table 2 of *Criteria & Assumptions* gives
 `PWDEMCD` 0.84 and `PWDEMCDSP` 1.27, under the layer name "P-Well Drain
 Extended".[^pdk-03]
+
 The published drain-extended PMOS rules (`depmos`) are headed "Defines
 rules for the 16V Drain extended NMOS devices" and place the drain in an
 N-well hole — for example "Min enclosure of de_pFet_drain by nwell hole"
-(depmos.10), 0.860 µm — without naming `pwde`;[^pdk-periph] we read them
+(depmos.10), 0.860 µm — without naming `pwde`.[^pdk-periph] We read them
 as rules for the 16 V PMOS, not the 20 V device that Table F2b ties to
-this mask (inference from the rule wording). The uhvi rules require that
+this mask (inference from the rule wording).
+
+The uhvi rules require that
 "UHVI must enclose dnwell" (uhvi.6.-), the tub that pwdem.5 puts the
 layer in.[^pdk-periph] For the plate, then, the PDK publishes Table 2's
 pair and the 1.00 enclosure by deep N-well; it gives no minimum width or
@@ -272,22 +318,20 @@ spacing for `pwde` itself.
 
 ## Related pages
 
-* {ref}`PWDEM <step-030>`, {ref}`PWDEI1 <step-031>`,
+* **Steps.** {ref}`PWDEM <step-030>`, {ref}`PWDEI1 <step-031>`,
   {ref}`PWDEI2 <step-032>` and {ref}`PWDEIS <step-033>` — the mask step,
   the two implants and the strip.
-* {ref}`mask-pwbm` — the P-well block mask whose regions this mask
-  partly re-dopes.
-* {ref}`mask-dnm` — the deep N-well mask whose tubs enclose `pwde`.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the partial plate record of the two P-well masks.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` — an implant class that uses
-  the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` — an implant class that uses
+  the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-pwbm` — the P-well block mask whose regions this mask
+  partly re-dopes. {ref}`mask-dnm` — the deep N-well mask whose tubs enclose `pwde`.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the partial plate record of the two P-well masks.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
