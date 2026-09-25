@@ -31,6 +31,33 @@ check_steps/refs/machines/materials/masks/papers/patents/filings/inforce,
 gen_papers/gen_patents/gen_filings/gen_index_links/gen_figures --check, and a
 `-W` sphinx build — all pass, 0 problems.
 
+## Step 2 — "On this page" list (commit 2)
+
+Added a five-bullet "On this page" list of `{ref}` links directly after the
+opening paragraph, before the `{toctree}` block. Neither C7 nor guide §4.7
+says which five of the page's seven H2 sections to pick. Chose the
+"guided tour" spine: How to read this reference, The flow by module, A
+simplified cross-section, Front end/middle-of-line/back end, Key open
+questions. Left out "What SKY130 is" (corporate-history background) and
+"The metal cap and barrier question" (report-C7 itself calls this a
+"250-line argument that interrupts the tour") as the two sections a
+newcomer is least likely to need a jump link for; both stay reachable from
+the module narrative's own links.
+
+"How to read this reference" had no `(label)=` of its own (only the four
+other picked sections did), so added `(overview-how-to-read)=` above it,
+matching the existing anchor style used elsewhere on the page (e.g.
+`(overview-modules)=`). This is a new anchor, not a heading change.
+
+`check_preserved.py` flags the five new `{ref}` targets as added refs; ran
+with `--allow-added refs` (declared: five new on-page navigation links to
+existing/newly-labelled sections on the same page, no fact added).
+Checkers, generators and `-W` build all pass; screenshot at
+`tmp/shots/02-onthispage-desktop-*.png` confirms the block renders as a
+5-item bulleted list right under the opening paragraph.
+
 ## Open items / guide ambiguities to record
 
-(filled in as work proceeds)
+* Guide §4.7 / report-C7 do not say which five of the overview's seven H2
+  sections belong in the "On this page" list. Resolved as above; flagging
+  for the reviewer in case a different five was intended.
