@@ -241,7 +241,7 @@ The species lists are SkyWater statements and rank as **strong** evidence,
 on the scale of the {ref}`machines index <machines-reading-evidence>`,
 that boron, BF₂, arsenic and (on the GSD tools) phosphorus are implanted
 at the fab, and that a phosphorus-doped HDP oxide is deposited.[^skw-01]
-They tie no species to a step.
+They tie no species to a step.[^skw-01]
 
 That the species come from BF₃, PH₃ and
 AsH₃ is industry practice, and sub-atmospheric packages were one delivery

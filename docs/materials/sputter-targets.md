@@ -79,7 +79,7 @@ Rossnagel et al.'s lift-off system, "Atoms whose trajectory is more than
 collimators".[^rossnagel-1991]
 
 Ionised-metal-plasma
-chambers add a coil of the target metal inside the chamber. One supplier
+chambers add a coil of the target metal inside the chamber: one supplier
 states that in Applied Materials' 200 mm and 300 mm equipment "coils and
 parts sets of the same material as the target are used inside the
 chamber".[^jx-semi-targets] An Applied Materials patent pastes the

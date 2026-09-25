@@ -189,7 +189,7 @@ whether hydrogen mixtures are bought premixed or blended on site.
 The furnace, RTA and asher entries are SkyWater statements and rank as
 **strong** evidence that hydrogen and forming-gas alloys, argon and
 nitrogen anneals, and hydrogen–nitrogen ash chemistries exist at the fab,
-on the scale of the {ref}`machines index <machines-reading-evidence>`.
+on the scale of the {ref}`machines index <machines-reading-evidence>`.[^skw-01]
 They tie no ambient to a step.[^skw-01] The supplier lists are strong as
 statements but name no gas or mixture.[^sec-01][^sec-02] The mixture
 fractions on this page — 2 %, 4 %, 5 % and 10 % — come from Wikipedia, a

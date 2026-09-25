@@ -220,7 +220,7 @@ that a gas of that group is supplied to a tool.
 The etcher and asher entries are SkyWater statements and rank as
 **strong** evidence, on the scale of the
 {ref}`machines index <machines-reading-evidence>`, that HBr, Cl₂, NF₃,
-CF₄, CHF₃, SF₆ and C₂F₆ are used at the fab. They describe the whole fab
+CF₄, CHF₃, SF₆ and C₂F₆ are used at the fab.[^skw-01] They describe the whole fab
 in the 2020s and tie no gas to a step, and they come from silicon and
 poly etchers, not from the tools the step pages assign to the contact,
 via and metal etches.[^skw-01]
