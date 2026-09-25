@@ -176,3 +176,76 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   its dash pair holds the reading and marker), "Without `ASTI` …" (47 w; the colon introduces the two
   consequences), "For SKY130's 0.15 µm drawn gate …" (47 w; a split at ", so" would leave half the
   claim outside "(our reading of the roadmap)").
+
+### 066 BHI — done
+
+* **Lead.** The guide's own R-SENTENCE example (`:16`) applied as written: the dash pair "— we infer
+  that the two share the `NTM` resist, since … (see below) —" becomes the following sentence "We infer
+  that the two share …", hedge first. The lead then splits into two paragraphs before "After the anneal
+  at `TIPRTAD`" (what is done / what results). Lead 122 words, as in the base; first sentence 16 words.
+* **R-H3 not applied.** The passage after the figure is 75 words.
+* **R-CATEGORY.** The 63-word classification sentence is split at its opening dash: "`BHI` is an Ion
+  implantation step of the *channel-engineering* class." alone; the dash material becomes "It is a
+  low-dose (10¹²–10¹³ cm⁻², typical)[^txt-01] boron implant at tens of keV, like …, but placed by
+  geometry rather than by a mask." ("It is" added, R-SENTENCE step 7), then its colon clause as its own
+  sentence ("The tilt puts it …"). The second sentence (dash before "the PDK publishes angles only …")
+  is split at the dash, `[^pdk-03]` **repeated** on "… one whose SKY130 angle is not published" (the
+  base marker covered the whole sentence; declared). Two statements about this step →
+  `**Specific to this step:**` with two bullets.
+* **R-PARA step 4 (Why items).** "Punch-through and threshold roll-off" (83 w): lead = the Wikipedia
+  sentence, continuation from "Raising the doping uniformly …". "Reverse short-channel effect" (88 w):
+  split at the semicolon after Rafferty; continuation "Machala et al. … A deliberately implanted halo
+  …". "Lower channel doping elsewhere" (63 w): continuation from "Taur, Wann and Frank's …".
+* **R-TABLE (measured against nominal).** The 155-word threshold paragraph: the test-tile values
+  (7/8 µm, 7/0.15 µm, and W = 0.42 µm at L = 8–25, 0.5 and 0.15 µm) and the PDK's e-test nominals
+  (7/8, 7/0.15 µm) become a `W/L (µm) | Test tile (V) | PDK e-test nominal (V)` table; the lead-in
+  keeps "In the published test-tile measurements it is as below, and the PDK's e-test nominals rise the
+  same way:" with both markers before the colon (R-TABLE step 3; new words "as below", as 053's
+  "at the values below"); e-test cells the page does not give are `—`. The extraction hedge covered
+  the test-tile values only; it goes directly under the table, word for word, as "(Test tile:
+  maximum-transconductance … our extraction from the published measurements.)" (R-TABLE step 5; the
+  two words "Test tile:" name the column it covers). The PMOS sentence and "A halo is one mechanism …"
+  stay prose after the table, unchanged. The W/L notation is the page's own ("7/8 µm"); units moved to
+  the headers after the first 400 px shot broke "0.53–0.54 V" and "8–25 µm" across lines. Pairings
+  checked against the base: 7/8 ↔ 0.534 ↔ 0.541; 7/0.15 ↔ 0.707 ↔ 0.700; 0.42/8–25 ↔ 0.53–0.54;
+  0.42/0.5 ↔ 0.60–0.64; 0.42/0.15 ↔ 0.72; the hedge keeps 0.1 and 100.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4 (How items).** "Species and source" (87 w): continuation from "Indium is the heavier
+  alternative"; its 51-word sentence split before ", so the absence" ("So the absence …", R-PARA step
+  2). "Energy and dose" (83 w): split at the semicolon ("An AMD multi-threshold patent …"), and ", and a
+  halo sits in the same range (inference)" becomes "A halo sits in the same range (inference)." so the
+  hedge stays with its claim. "Tilt and rotation" (159 w): lead "Large tilts — 20–45° are typical — push
+  the pocket under the gate edge."; continuation 1 from "The beam is shadowed …" (to Chen); continuation 2
+  the "NTM shadowing" argument, its 82-word sentence split at the semicolon ("A halo at a much larger
+  tilt …"); the single-operation estimate "(1.14 µm × tan 7° ≈ 0.14 µm)" stays inline (R-DERIVATION
+  step 6). "Order relative to the tip" (78 w): lead "This reference describes the arsenic first.",
+  the rest as the continuation.
+* **R-TOOLS.** 8250: *SkyWater says:* the quotation; grades; the gloss "Boron and BF₂, … everything a
+  halo needs." as the continuation paragraph. GSD: the head mixes SkyWater's quoted ranges with this
+  reference's gloss ("batch tools that SkyWater lists with tilt and twist capability, so …") and cannot be
+  separated at a seam (the quotations sit in parentheses on the tool name), so the pilot form: head kept
+  whole, grades as sub-bullets, nothing under *SkyWater says:* (R-TOOLS step 2).
+* **R-RELATED.** "The other halo:" → "Same module: the other halo, `LDBHI`; …" (colon → comma). The
+  "Earlier channel engineering …; activation of the halo: …" bullet keeps its own wording (two
+  relationships; neither is exactly an R-RELATED label).
+* **R-OPENQ.** Labels "Species, energy, dose and tilt", "The "NTM shadowing" allowance", "Halo on the
+  5 V NMOS", "PMOS halo"; text unchanged.
+* **R-GLANCE.** Does keeps "our inference" for the shared resist and says "p-type pocket", not "boron"
+  (the page calls boron this reference's description, industry-typical); Public numbers "none
+  published for the halo" plus the e-test threshold rise `[^pdk-07]`; tool line the 8250's grades; Not
+  public from Open questions 1.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03` (the category repeat), `pdk-07`,
+  `skw-01` (glance); numbers 0.42×2 (the W/L cells repeat W = 0.42 µm on each of its three rows),
+  0.541, 0.700, 8250 (glance), 5 (the OQ label "Halo on the 5 V NMOS", from the bullet's words); quote
+  "NTM shadowing" (the OQ label, from the bullet's words); hedges "inference"×2, "not public" (glance).
+  **LOST `number_order`** — the base's one test-tile sentence (0.534, 7, 8, 0.707, …, 0.1, 100) is
+  now five table rows that put W/L first, plus the hedge line; pairings checked above. ADDED
+  number_order: the five rows. Declared `--allow-added markers,numbers,quotes,hedges,number_order`;
+  the LOST line is the only one left and is this table's transposition.
+* **Marker coverage.** 17 flags, all read: the dash-pair move ("infer" now in the next sentence, as in
+  the guide's example); the category repeat; split halves whose base marker belonged to the other clause
+  (Lu/Rafferty – Machala; txt-01 – AMD patent; Large tilts – the beam; the NTM-shadowing estimate – the
+  larger-tilt reasoning); "So the absence …" (our conclusion, no marker in the base); glance and label
+  lines.
+* **Caps**: para > 100 3 → 0; item > 60 8 → 0; sentence > 45 9 → 1. Left: the GSD head (48 w with the
+  tool name; the pilot form keeps it whole).
