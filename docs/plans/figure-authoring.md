@@ -214,18 +214,35 @@ them all and run `--check`.
 
 #### Drawing the next groups (141–149, 154–163)
 
-1. **Metal 3 is patterned only at 139–140, inside the MiM steps.** Steps 134–140 are WTIAL3
-   (the blanket metal-3 stack, drawn here), then CAPILD, CAPTIW1, CAPM, CAPME (the first MiM
-   capacitor, built on the *blanket* metal 3) and only then MM3 and MM3E. NILD5 (141) is
-   deposited on *patterned* metal 3. So S10 must draw 135–140 **before** S9b continues, in
-   `series-beol.yaml` itself (plain ops for 135–138, then `use: metal-pattern` for 139–140) or
-   in a series based on it that S9b then bases on. Decide explicitly whether the slice holds a
-   MiM capacitor. If it does: the plate film is `barrier` like the metal caps, and
-   `metal-pattern`'s etch removes every `barrier` film that is not under resist, so the MM3
-   resist must cover the plate (on the 140 page the metal-3 etch also clears what is left of
-   the capacitor dielectric outside the plates: give it its own `etch` op, since the template
-   etches only `barrier` and `aluminium`). The same holds for the second MiM (150–153) before
-   MM4/MM4E (154–155).
+1. **The MiM steps are drawn (S10), and 141–149 are already in the series.** Metal 3 is
+   patterned only at 139–140, after the first MiM capacitor is built on the *blanket* metal 3
+   (135–138). S10 put all of it in `series-beol.yaml` itself: plain ops for 135–138 and
+   150–153, `use: metal-pattern` for 139–140, and — so that 150–153 have a state to draw —
+   `use:` of `imd`, `via-hole`, `via-plug` and `metal-stack` for 141–149 (heights and
+   positions in the series header). The slice holds a capacitor: metal 3 is a wiring line
+   (x 14–76) and a bottom plate (x 100 on), the top plate runs from x 130; the second
+   capacitor's plate is over the first. What S9b needs to know:
+   * **141–149 are S9b's to change.** They were instantiated as context, not drawn; the S10
+     figures 150–153 show only the window x 76–176 above 252 u (the top of NCAPOX5 and up),
+     so a change to 141–148 that keeps the metal-4 heights changes nothing there. If the
+     heights move, rebuild 150–153 and move their `crop_depth` (−(start height) × 2.68).
+   * **Two template parameters**, both defaulting to the old behaviour:
+     `metal-pattern.etch_materials` (MM3E passes `[mim-diel, barrier, aluminium]`: the
+     etch first removes the capacitor dielectric left on the metal outside the resist) and
+     `via-hole.etch_materials` (VIM3E passes `[oxide-dep, mim-diel]`: a via onto a metal-3
+     line etches through the dielectric to the cap; a via onto a top plate stops on the plate,
+     a `barrier` film). MM4E (155) needs the same as MM3E, and VIM4E (160) the same as VIM3E.
+   * **Under the resist the dielectric stays on the metal.** CAPME stops on the dielectric
+     (the 138 page's reading), so after MM3E every metal-3 shape carries the thin dielectric;
+     the pages do not discuss it (it is said in the 140 caption). Keep that in mind for the
+     VIM3E floors and for 154–155 (MM4 must cover the second plate, as MM3 covers the
+     first).
+   * **Close-up recipe for the MiM figures**: window `[66, 166]` (135–140) or `[76, 176]`
+     (150–153; the via-3 plug at x 52–72 would leave a sliver at the left edge of
+     `[66, 166]`), enlarged 2.68×; `crop_depth` −461 (the drawing starts at 172 u, inside
+     NILD4) and −675 (252 u, inside NILD5). With a shallower cut the label column (three
+     notes of three lines each) ran below the drawing. The dielectric is 3 u (`thin_ok`), the
+     plate 8 u.
 2. **The height budget.** Full slices here are cut 84 u above the silicon (`crop_depth: -84`,
    "the drawing starts inside the inter-level oxide under metal 1") and reach 238 u at metal 3:
    417–521 u per figure. Every level adds about 70–100 u per panel, so at a fixed cut the 800 u

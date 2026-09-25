@@ -61,6 +61,24 @@
 # * Metal 3 (the stack only; it is patterned at 139-140, after the MiM steps): 5 + 32 + 5 u
 #   (42 u, half as thick again as metal 2; in the PDK 0.845 um against 0.36 um, which is not
 #   drawn). Top at 238 u.
+#
+# THE MiM STEPS AND THE CONTEXT FOR THE SECOND CAPACITOR (135-153, S10):
+# * First capacitor (135-138), on the blanket metal 3: dielectric 3 u (`mim-diel`,
+#   `thin_ok`), plate 8 u (`barrier`), plate from x 130 on; the CAPME etch stops on the
+#   dielectric (the pages' reading), so the dielectric stays on the whole metal.
+# * Metal 3 patterned (139-140): a wiring line x 14-76 over the via-2 plug and the
+#   capacitor's bottom plate from x 100 on; the MM3 resist covers the top plate; the etch
+#   (`etch_materials`) removes the dielectric outside the resist, then the stack. Under the
+#   resist the dielectric stays on the metal (the pages do not discuss it).
+# * 141-149 (S9b's steps, instantiated here so that 150-153 have a state): NILD5 gap-fill,
+#   polished at 256, cap to 264 (26 u over the metal-3 tops, as 0.39 um is to via 2's
+#   0.42 um and 28 u; 15 u over the plate); via 3 holes of 20 u on the wiring line (x 52-72,
+#   etched through the dielectric) and on the top plate (x 196-216); the metal-4 stack
+#   5 + 32 + 5 u (as metal 3: the PDK gives both 0.845 um), top at 306 u. S9b may change
+#   these; 150-153 draw only the window x 76-176 above 252 u, so they depend only on the
+#   metal-4 heights (then move their `crop_depth`).
+# * Second capacitor (150-153): the same films on the blanket metal 4, plate from x 130 on,
+#   over the first plate. MM4 (154) must cover it, as MM3 covers the first.
 # Series labels carry no numbers; step numbers and level codes (VIM2, NILD4) are free.
 base: series-metal1.yaml
 templates:
