@@ -2,7 +2,7 @@
 <title>Two cross-sections of the wafer, one above the other. Before the step the silicon surface is bare. After it a thin, even layer of thermal oxide covers the whole surface from edge to edge of the drawing.</title>
 <desc>Two cross-sections of the wafer, one above the other. Before the step the silicon surface is bare. After it a thin, even layer of thermal oxide covers the whole surface from edge to edge of the drawing.</desc>
 <style>
-:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#7a4fb0;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -12,12 +12,13 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
 .ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
 .pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
-.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.faded{opacity:0.35}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.mat.faded{fill:none;stroke:var(--ink-muted);stroke-dasharray:3 2}
+.patink{stroke:var(--ink);stroke-width:0.8;opacity:0.8;fill:none}
 .dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
 .rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
 .ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
 .cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
-.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:var(--m-implant)}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs></defs>
 <rect class="ground" x="0" y="0" width="480" height="347"/>
@@ -26,32 +27,32 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <g class="drawing" data-rect="12,38.0,268,60.0" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,42.00 283.00,42.00 283.00,206.00 9.00,206.00"/>
 </g>
-<text x="328.0" y="56.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<text x="328.0" y="72.4" class="t-label-note muted" data-owner="sub">the starting wafer</text>
-<text x="328.0" y="88.4" class="t-label-note muted" data-owner="sub">(SMAT, step 001)</text>
-<path class="leader" data-owner="sub" d="M276.0 51.5H285.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="51.5" r="1.9"/>
-<path class="parrow" d="M34 112.5V150.5"/>
-<path class="pahead" d="M34 158.5l-5.5 -9h11.0z"/>
-<text x="50.0" y="123.5" class="t-label-title acc">BOX, step 002</text>
-<text x="50.0" y="138.5" class="t-label-note muted">The cleaned wafer is oxidised in a furnace, growing</text>
-<text x="50.0" y="153.5" class="t-label-note muted">a thin thermal oxide over the whole surface.</text>
-<text x="12.0" y="186.5" class="t-panel-title">After: a thermal pad oxide over the whole wafer</text>
-<clipPath id="clip2"><rect x="12" y="198.5" width="268" height="65.0"/></clipPath>
-<g class="drawing" data-rect="12,198.5,268,65.0" clip-path="url(#clip2)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,207.50 283.00,207.50 283.00,371.50 9.00,371.50"/>
-<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,202.50 283.00,202.50 283.00,207.50 9.00,207.50"/>
-<polyline class="hl" points="12.00,199.50 280.00,199.50"/>
+<text x="328.0" y="56.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<text x="328.0" y="72.9" class="t-label-note muted" data-owner="sub">the starting wafer</text>
+<text x="328.0" y="88.9" class="t-label-note muted" data-owner="sub">(SMAT, step 001)</text>
+<path class="leader" data-owner="sub" d="M276.0 52.0H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="52.0" r="1.9"/>
+<path class="parrow" d="M34 113.0V151.0"/>
+<path class="pahead" d="M34 159.0l-5.5 -9h11.0z"/>
+<text x="50.0" y="124.0" class="t-label-title acc">BOX, step 002</text>
+<text x="50.0" y="139.0" class="t-label-note muted">The cleaned wafer is oxidised in a furnace, growing</text>
+<text x="50.0" y="154.0" class="t-label-note muted">a thin thermal oxide over the whole surface.</text>
+<text x="12.0" y="187.0" class="t-panel-title">After: a thermal pad oxide over the whole wafer</text>
+<clipPath id="clip2"><rect x="12" y="199.0" width="268" height="65.0"/></clipPath>
+<g class="drawing" data-rect="12,199.0,268,65.0" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,208.00 283.00,208.00 283.00,372.00 9.00,372.00"/>
+<polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,203.00 283.00,203.00 283.00,208.00 9.00,208.00"/>
+<polyline class="hl" points="12.00,200.00 280.00,200.00"/>
 </g>
-<text x="328.0" y="298.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 255.5H285.0V293.5H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="255.5" r="1.9"/>
-<text x="328.0" y="210.4" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="328.0" y="226.4" class="t-label-note muted" data-owner="padox">thermal silicon</text>
-<text x="328.0" y="242.4" class="t-label-note muted" data-owner="padox">dioxide grown over</text>
-<text x="328.0" y="258.4" class="t-label-note muted" data-owner="padox">the whole surface</text>
-<text x="328.0" y="274.4" class="t-label-note muted" data-owner="padox">at BOX, step 002</text>
-<path class="leader" data-owner="padox" d="M276.0 205.0H291.0V205.5H324.0"/>
-<circle class="dot" data-owner="padox" cx="276.0" cy="205.0" r="1.9"/>
-<text x="12.0" y="334.5" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="328.0" y="298.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 256.0H285.0V294.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="256.0" r="1.9"/>
+<text x="328.0" y="210.9" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="226.9" class="t-label-note muted" data-owner="padox">thermal silicon</text>
+<text x="328.0" y="242.9" class="t-label-note muted" data-owner="padox">dioxide grown over</text>
+<text x="328.0" y="258.9" class="t-label-note muted" data-owner="padox">the whole surface</text>
+<text x="328.0" y="274.9" class="t-label-note muted" data-owner="padox">at BOX, step 002</text>
+<path class="leader" data-owner="padox" d="M276.0 205.5H291.0V206.0H324.0"/>
+<circle class="dot" data-owner="padox" cx="276.0" cy="205.5" r="1.9"/>
+<text x="12.0" y="335.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

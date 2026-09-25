@@ -12,7 +12,8 @@ caption: >-
   Before, the masked wafer; after, a beam of phosphorus and, under the open window only, a buried
   N-type band: the `dnwell` layer of the PDK.[^pdk-06] The band steps down under the trench, because
   the ions entered at the trench floor there; the buried layer is not flat, and no public source
-  gives the SKY130 profile. Not to scale.
+  gives the SKY130 profile. The arrows are drawn vertical because the tilt is not public. Not to
+  scale.
 arrow:
   title: "DNI, step 008"
   note: "Phosphorus is implanted at high energy through the open window; the masked area is untouched."

@@ -33,8 +33,6 @@ cp data/figures/iso-006-stie.yaml data/figures/<series>-<step>-<code>.yaml
 The name is the figure's `id` and must match the file name: `<series>-<step>-<code>` for a
 cross-section (`iso-006-stie`), `flow-*`, `tool-*`, `mask-*` or `chart-*` otherwise.
 
-## 3. Fill in the fields
-
 ## 2a. The budgets
 
 Layout is where an unassisted model fails, so the limits are numbers, not adjectives, and
@@ -83,6 +81,7 @@ A cross-section spec (`kind: xsection`) has these fields:
 | `panels` | two of them: "before" and "after" (one, where there is no "before") |
 | `crop_depth` | how much substrate to draw below the surface, for the **whole figure**; presentation only, it changes no geometry |
 | `three_panels_allowed` | only for a deposit → pattern → etch summary on a category page |
+| `no_drawn_change` | `true` for a step that changes nothing the drawing can show (an implant into a region already drawn, whose depth is not public; an anneal): **one** panel, `state_after` the step itself, titled exactly `State at this step (no drawn change)`, no `arrow` — what the step does goes into the caption. The lint refuses it if the state differs from the step before, and refuses a two-panel figure whose panels are identical |
 
 Each panel has:
 
@@ -97,7 +96,7 @@ Each panel has:
 | `dims` | at most a couple: a dimension line with a label |
 | `callouts` | a label on a feature that is open at the top (a trench, a hole, a polished surface) |
 | `show_ions` | `false` to suppress the implant arrows of the step in this panel |
-| `dim_layers` | layers drawn **faded and unlabelled**: context this step does not touch. They do not count against the six-label budget. The layer the panel's step made may never be faded, and the caption must say which layers are drawn faded (both are lint rules) |
+| `dim_layers` | layers drawn **faded and unlabelled**: context this step does not touch, drawn as a dashed grey outline with no fill and no pattern, so they add no colour to whatever lies beneath. They do not count against the six-label budget. The layer the panel's step made may never be faded, and the caption must say "faded" and name every faded layer by its series title (lint rules) |
 
 `dims` and `callouts` are labelled from **above**, in a band over the drawing, and there may
 be **at most two of them per panel** (an ion label takes one of the two). Everything else is
@@ -151,8 +150,17 @@ Fields a series may need for a module with many doped regions (added for S2, the
 |---|---|---|
 | `op: anneal` | operation | a thermal step that changes nothing the drawing can show; it gives the step a state of its own, so its figure can say so |
 | `z` | `dope` | painting order of overlays (default 0): a thin channel implant made before a well is still drawn over it |
-| `anchor_x`, `anchor_y` | `deposit`, `dope` | where the label's dot sits inside the layer, when the default (the right-hand end, sliding to the label's height) would run the leader along another film |
-| `note_order: newest` | top of the series | the noted-label budget keeps the notes of the newest layers (after the step's own layer and any per-panel override) instead of the oldest |
+| `anchor_x`, `anchor_y` | `deposit`, `dope` | where the label's dot sits inside the layer. Numbers; each must fall at least 3 u inside the layer, or it is a lint line. Rarely needed now that the generator routes around other materials itself |
+| `route` | `deposit`, `dope` | `top` (label it from the band above the drawing, only for a layer that is top-most in every panel), `right` (the label column, straight across) or `over` (the label column, but the leader first rises out of the layer and crosses above the surface). Left out, the generator chooses: `right` where a leader can reach the column without running more than `max-leader-traverse` (40 u) through other materials or more than `max-edge-run` (20 u) along a material edge, otherwise `over` |
+| `tilt_deg` | `ions` | the tilt of the arrows. Draw a tilt only when the page gives the SKY130 one; the caption must mention the tilt either way (lint) |
+| `label_x` | `ions` | where the beam's label rises, when the middle of the window would sit in the way of other leaders |
+| `note_order: newest` | top of the series | the noted-label budget keeps the notes of the newest layers (after the step's own layer and any per-panel override) instead of the oldest; the other value is `oldest`, the default |
+
+Tokens that shape the layout (in `tokens.json`, `space`): `min-hang-width` (110 u) — the left
+one of two labels above the drawing hangs right of its riser instead of left when less than
+this is left to the canvas edge; `max-leader-traverse`, `max-edge-run`, `edge-clearance` and
+`over-gap` — the leader-routing limits above and the clearance of an over-run above the
+surface. Every series field is type-checked, and an unknown field or value is a lint line.
 
 A silicon layer's dot is kept off any doped overlay drawn over it, so the substrate's label
 never points at a well.
@@ -194,6 +202,11 @@ The lint is not advisory. Common ones and what they mean:
 | `the caption repeats the paragraph it sits under` | the caption shares eight consecutive words with the paragraph above the figure; say what the *picture* shows instead |
 | `state_after … is not a three-digit step number` | write `"005"`, not `"5"` |
 | `… belongs to patent family …, which is not shown as certainly expired` | remove it; a figure can never sit inside a collapsed note |
+| `leader of … runs N u through other materials` / `… alongside a material edge` | the generator could find no clean route: fade a context layer the page does not discuss, or move the beam's label (`label_x`) out of the way |
+| `leader of … cuts through the ion beam` | as above; a label's leader may never cross the arrows |
+| `the two panels have identical geometry` | use `no_drawn_change: true` and one panel |
+| `the figure draws an ion beam but the caption says nothing about the tilt` | add the page's tilt, or say it is not public and the arrows are drawn vertical |
+| `… sits between a paragraph and the {dropdown} that follows it` | move the block below the dropdown (§7) |
 
 ## 6. Look at it
 
@@ -226,7 +239,12 @@ checked and any compromise you accepted.
 
 Paste `data/figures/myst/<id>.myst.txt` **whole and unchanged** after the first paragraph
 of "What this step is" (a step page), or, on the overview, directly above the table the
-figure redraws. Never edit the block in the page: `--check` fails if the block is missing,
+figure redraws. **A `{dropdown}` that immediately follows that paragraph belongs to it**: the
+figure goes after that dropdown (and after any dropdowns that immediately follow it), never
+between a paragraph and the note it points to, and never inside a dropdown (`--check` refuses a
+block followed directly by a dropdown). If nothing but the lead and its dropdowns is left in
+the section, the figure closes the section and the next heading may follow its caption; a
+figure is never the last element of a page. Never edit the block in the page: `--check` fails if the block is missing,
 if its `:name:` was changed, or if a single character of its alt text or caption differs
 from the generated one.
 

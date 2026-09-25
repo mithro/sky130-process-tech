@@ -10,9 +10,11 @@ away from what you see.
 
 A cross-section is a slice through the wafer, drawn as the wafer would look if it were cut
 and you looked at the cut face. Usually two panels are shown, one above the other: the state
-before the step, then the state after it. (A step with nothing before it, such as the arrival
-of the wafer, gets one panel.) The blue arrow between them names the step and says in one
-sentence what it does.
+before the step, then the state after it. The blue arrow between them names the step and says
+in one sentence what it does. A step with nothing before it, such as the arrival of the wafer,
+gets one panel; so does a step that changes nothing the drawing can show (an implant whose
+depth is not public, an anneal), titled "State at this step (no drawn change)", with what the step does in
+the caption.
 
 The panels of one module are all cut at the same place, so a feature keeps its position from
 one step page to the next.
@@ -47,7 +49,7 @@ The palette used by every cross-section on this site. Colour is never the only c
 | Deep N-well | horizontal lines |
 | N+ source/drain, n-tip | plain colour, no pattern |
 | P+ source/drain | small crosses |
-| Channel implant (its n- or p-type is not shown by the colour) | vertical lines |
+| Channel implant (n- or p-type not shown: ink hatching over the silicon's own colour) | vertical ink hatching, no fill of its own |
 | Thermal oxide (pad, liner, gate, screen) | plain colour, no pattern |
 | Deposited oxide (field oxide, inter-level dielectric, cap oxide, TOPOX) | plain colour, no pattern |
 | Phosphosilicate glass (PSG) | small dots |
@@ -111,9 +113,9 @@ boundary.
 | A thin line with an arrowhead at each end | a dimension: the distance between the two surfaces it touches |
 | A dashed line running sideways from a dimension | a witness line, marking the surface the dimension is measured to |
 | A short line ending in a dot | a label leader; the dot sits on the material the label names |
-| Blue arrows pointing at the surface | an implant; the arrows lean if the page gives a tilt |
+| Blue arrows pointing at the surface | an implant; the arrows lean only if the page gives a SKY130 tilt, and the caption says which |
 | A blue trace just above a surface | the surface this step made |
-| A material drawn faded, with no label | present but untouched by this step; it is named on the figure of the step that made it, and the caption says which it is |
+| A dashed grey outline with no fill and no label | a layer that is present but untouched by this step, drawn faded; it is named on the figure of the step that made it, and the caption names it |
 
 A label with no tag is a plain public fact. A label in amber carries one of the three tags in
 the table above, and the figure's caption repeats the same hedge in words.
