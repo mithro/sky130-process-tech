@@ -1,0 +1,300 @@
+# S3 — the SONOS tunnel window and ONO stack, steps 035-042.
+#
+# One geometry for the whole module; a figure is "the state after step N". Thicknesses are
+# DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# The slice. The wells series (series-wells.yaml) is drawn outside a deep N-well region, and
+# a SONOS memory transistor cannot lie there: "Tunm outside deep n-well is not allowed"
+# (tunm.6a, cited on the TUNM page). So this module is drawn on a slice of its own, inside
+# one deep-N-well tub, in the state the wells module leaves every region of the wafer in:
+# pad oxide over the active areas (inferred, as on every page of both modules), the filled
+# trench standing proud, the P-well over the deep N-well, resist off, annealed at RTAI.
+# The earlier steps are reduced to their end result: the deep N-well (DNI, step 008) and the
+# P-well (PWI, step 027) are placed without their masks, because no figure of this module
+# shows a state before step 034. The channel implants of the wells module are not drawn:
+# on the block reading the TUNM, PTSI and LVTNI pages prefer, the memory transistor skips the
+# standard NMOS channel implants, and nothing on these pages says which of them the other
+# area of the slice received. Each figure's caption says so where it matters.
+#
+# x runs 0..268: an active area 0-60 (left) that stands for any transistor outside the
+# memory cells (the TUNM page's "every logic transistor, every 5 V and high-voltage
+# device"), a filled trench 60-116, and the memory transistor's active area 116-268 (right,
+# so that the leaders of the thin bands under its window reach the label column without
+# crossing the trench).
+# The slice is read along the memory transistor's channel, so the tunnel window (148-256) lies
+# inside its active area, as the rule tunm.3 (the window extends a fixed distance beyond the
+# gate) implies, and the ONO island (136-268, running on past the edge of the drawing) encloses the window with a
+# margin, as the ONOM page infers (the margin is not public; 12 u is illustrative). Its edge
+# stays on the memory transistor's active area: the ONOM page puts the island edge "on field oxide or
+# on silicon that becomes part of the select transistor's structure".
+#
+# The anti-reflective coating of TUNM is its own material (arc): the step list's "Tunnel
+# mask ARC etch" makes it the subject of step 036. Whether it is organic or inorganic is
+# not public.
+#
+# The two memory-channel implants use the "implant" material (ink hatching, no colour of its
+# own), as the wells series does, because neither dose's type is drawn as a public fact:
+# PTSI is drawn as a band BELOW the surface and DEPI as a band AT the surface, which is what
+# the two pages say about them (PTSI "a p-type doping peak below the surface", an inference;
+# DEPI "dopes the channel surface"). Neither depth is public; the bands are not to scale.
+#
+# The ONO stack is three thin films named by material, all drawn at the minimum thickness:
+# no thickness of any of them is public for SKY130, and the published ranges on the pages
+# come from patents, some shown as in force, which a figure never carries in any form. The
+# top oxide is drawn in the deposited-oxide colour only so that it can be told apart from
+# the tunnel oxide; how it is formed is not public. The tunnel oxide grows only on the bare
+# silicon of the window; the fraction of a nanometre the same step adds to the pad oxide
+# elsewhere is not drawn.
+#
+# ONOME: the top oxide and the nitride are etched away outside the island, and the oxide
+# under them (the pad oxide, inferred) is cleared; the page leaves open whether that last
+# clear happens in this step or at the GOX100 pre-clean, and treats the pre-gate clean as
+# part of this step, so the figure draws the logic silicon bare after it.
+#
+# Implant tilt is drawn as 0: no page gives the SKY130 tilt, only typical practice.
+#
+# Series labels carry no numbers; numbers live in the per-figure label overrides, where each
+# can carry a footnote key defined on its own page.
+note_order: newest
+substrate:
+  material: si-sub
+  depth: 160
+  label:
+    title: "Silicon wafer"
+    basis: public
+ops:
+  # ---- steps 002-013, as in series-isolation.yaml, with this slice's active areas
+  - step: "002"
+    op: deposit
+    id: padox
+    material: oxide-thermal
+    t: 5
+    label:
+      title: "Pad oxide"
+      note: "from BOX, step 002; still in place, we infer"
+      basis: inferred
+  - step: "003"
+    op: deposit
+    id: isonit
+    material: nitride
+    t: 24
+    label:
+      title: "Nitride hard mask"
+      basis: public
+  - step: "004"
+    op: deposit
+    id: fomres
+    material: resist
+    t: 38
+    where: [[0, 59.5], [116.5, 268]]
+    label:
+      title: "Photoresist"
+      basis: public
+  - step: "005"
+    op: etch
+    materials: [nitride, oxide-thermal]
+    where_open: fomres
+  - step: "006"
+    op: etch
+    materials: [si-sub]
+    where_open: fomres
+    depth: 56
+    taper_deg: 9
+    corner_r: 9
+  - step: "006"
+    op: strip
+    materials: [resist]
+  # ---- the deep-N-well tub this slice lies in (DNI, step 008), without its mask
+  - step: "008"
+    op: dope
+    id: dnw
+    material: well-dn
+    where: [[0, 268]]
+    follow: flat
+    y_top: -76
+    y_bot: -120
+    anchor_y: -88
+    label:
+      title: "Deep N-well"
+      note: "the tub the memory cells sit in (DNI, step 008)"
+      basis: public
+  - step: "010"
+    op: deposit
+    id: liner
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Liner oxide"
+      basis: public
+  - step: "011"
+    op: deposit
+    id: fox
+    material: oxide-dep
+    fill_to: 60
+    route: over
+    label:
+      title: "Fill oxide"
+      basis: public
+  - step: "012"
+    op: planarise
+    stop_on: nitride
+  - step: "013"
+    op: strip
+    materials: [nitride]
+  # ---- the P-well over the tub (PWI, step 027), without its mask
+  - step: "027"
+    op: dope
+    id: pwell
+    material: well-p
+    where: [[0, 268]]
+    follow: flat
+    y_top: 0
+    y_bot: -76
+    anchor_y: -64
+    label:
+      title: "P-well"
+      note: "PWI, step 027"
+      basis: public
+  - step: "034"
+    op: anneal
+
+  # ---- the tunnel mask: an anti-reflective coating and resist with a window over the cell
+  - step: "035"
+    op: deposit
+    id: arc
+    material: arc
+    t: 5
+    label:
+      title: "ARC"
+      note: "anti-reflective; its type is not public"
+      basis: inferred
+  - step: "035"
+    op: deposit
+    id: tunres
+    material: resist
+    t: 38
+    where: [[0, 148], [256, 268]]
+    route: top
+    label:
+      title: "Photoresist"
+      note: "tunnel mask, TUNM, step 035"
+      basis: public
+  - step: "036"
+    op: etch
+    materials: [arc]
+    where_open: tunres
+
+  # ---- two implants through the window
+  - step: "037"
+    op: dope
+    id: ptsi
+    material: implant
+    where_open: tunres
+    follow: surface
+    from_surface: 12
+    thickness: 9
+    z: 1
+    label:
+      title: "Punch-through stop"
+      note: "p-type, below the surface (PTSI, step 037)"
+      basis: inferred
+  - step: "037"
+    op: ions
+    where_open: tunres
+    tilt_deg: 0
+    label:
+      title: "PTSI implant"
+      note: "species, energy, dose not public"
+      basis: public
+  - step: "038"
+    op: dope
+    id: depi
+    material: implant
+    where_open: tunres
+    follow: surface
+    from_surface: 0
+    thickness: 9
+    z: 1
+    label:
+      title: "Depletion implant"
+      note: "n-type, at the channel surface (DEPI, step 038)"
+      basis: public
+  - step: "038"
+    op: ions
+    where_open: tunres
+    tilt_deg: 0
+    label:
+      title: "DEPI implant"
+      note: "species, energy, dose not public"
+      basis: public
+
+  # ---- the oxide in the window is etched away; the resist and ARC are stripped
+  - step: "039"
+    op: etch
+    materials: [oxide-thermal]
+    where_open: tunres
+  - step: "039"
+    op: strip
+    materials: [resist, arc]
+
+  # ---- the ONO stack, over the whole wafer
+  - step: "040"
+    op: deposit
+    id: tunox
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    route: over
+    label:
+      title: "Tunnel oxide"
+      note: "grown on the bare silicon of the window"
+      basis: public
+  - step: "040"
+    op: deposit
+    id: ononit
+    material: nitride
+    t: 5
+    label:
+      title: "Nitride"
+      note: "the charge-trapping layer, deposited by LPCVD"
+      basis: public
+  - step: "040"
+    op: deposit
+    id: onotop
+    material: oxide-dep
+    t: 5
+    label:
+      title: "Top oxide"
+      note: "the blocking oxide; how it is formed is not public"
+      basis: public
+
+  # ---- the ONO mask: a resist island over each cell
+  - step: "041"
+    op: deposit
+    id: onomres
+    material: resist
+    t: 38
+    where: [[136, 268]]
+    route: top
+    label:
+      title: "Photoresist"
+      note: "ONOM, step 041; an island over the cell"
+      basis: public
+
+  # ---- the ONO etch: top oxide, nitride, then the oxide under them, outside the island
+  - step: "042"
+    op: etch
+    materials: [oxide-dep]
+    where_open: onomres
+  - step: "042"
+    op: etch
+    materials: [nitride]
+    where_open: onomres
+  - step: "042"
+    op: etch
+    materials: [oxide-thermal]
+    where_open: onomres
+  - step: "042"
+    op: strip
+    materials: [resist]

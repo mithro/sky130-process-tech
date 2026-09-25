@@ -57,6 +57,7 @@ The palette used by every cross-section on this site. Colour is never the only c
 | ONO charge-trap stack | horizontal lines |
 | Polysilicon | plain colour, no pattern |
 | Photoresist | small dots |
+| Anti-reflective coating (ARC) under a resist | plain colour, no pattern |
 | Titanium silicide | plain colour, no pattern |
 | Ti / TiN / TiW (liner, barrier, cap, local interconnect, MiM plate) | plain colour, no pattern |
 | Tungsten plug | crossed diagonal lines |

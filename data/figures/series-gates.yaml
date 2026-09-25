@@ -1,0 +1,202 @@
+# S4 — the gate oxides, steps 043-047.
+#
+# One geometry for the whole module; a figure is "the state after step N". Thicknesses are
+# DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# The slice. The two gate oxidations are about the logic transistors, so this module is
+# drawn on a slice through logic, away from the memory arrays: a 5 V NMOS area (left, which
+# keeps the thick oxide) and a 1.8 V NMOS area (right, which LVOM opens), both in the P-well,
+# outside any deep N-well, with the x layout of the isolation and wells series (active 0-80,
+# filled trench 80-188, active 188-268). Every mask edge is at x = 134, the middle of the
+# field: the LVOM page says the thick/thin boundary "has to lie on field oxide, never across
+# an active area".
+#
+# Why the memory cells are not in this slice. The SONOS series (series-sonos.yaml) ends with
+# ONO islands over the memory transistors. Whether the LVOM resist covers those islands
+# during NCHI and GOXETCH is not public (LVOM, GOXETCH), and the one reason the pages give
+# for thinking it does comes from a patent that is shown as in force, which a figure may not
+# carry in any form. A slice that holds an ONO island would have to draw the resist either
+# over it or not, so the islands are left out; the captions of the figures where it matters
+# say so.
+#
+# The state the module starts from is the one the SONOS series leaves in the logic areas:
+# ONOME (step 042) etched the stack away from them and, on the account the ONOME and GOX100
+# pages give, the oxide under it too, leaving the logic silicon bare. The earlier steps are
+# reduced to their result: the isolation steps 002-013 as in series-isolation.yaml, the
+# P-well (PWI, step 027) without its mask, and the pad oxide removed at 042. The channel
+# implants of the wells module are not drawn, as in the SONOS series; NCHI (step 045) is the
+# only channel implant in this slice.
+#
+# Oxide thicknesses. The PDK gives 110 Å for the finished thick oxide, and the public SPICE
+# models carry toxe 11.6 nm (5 V) and 4.148 nm (1.8 V) as electrical thicknesses (cited on
+# the pages). The thick oxide is drawn 10 u and the thin one 5 u: thicker and thinner, not in
+# any ratio. How much the thick oxide grows at LVGOX is not public, so that increment is not
+# drawn; the pages that matter say so.
+#
+# Implant tilt is drawn as 0: no page gives the SKY130 tilt, only typical practice.
+#
+# Series labels carry no numbers; numbers live in the per-figure label overrides, where each
+# can carry a footnote key defined on its own page.
+note_order: newest
+substrate:
+  material: si-sub
+  depth: 160
+  label:
+    title: "Silicon wafer"
+    basis: public
+ops:
+  # ---- steps 002-013, as in series-isolation.yaml
+  - step: "002"
+    op: deposit
+    id: padox
+    material: oxide-thermal
+    t: 5
+    label:
+      title: "Pad oxide"
+      note: "from BOX, step 002; still in place, we infer"
+      basis: inferred
+  - step: "003"
+    op: deposit
+    id: isonit
+    material: nitride
+    t: 24
+    label:
+      title: "Nitride hard mask"
+      basis: public
+  - step: "004"
+    op: deposit
+    id: fomres
+    material: resist
+    t: 38
+    where: [[0, 79.5], [188.5, 268]]
+    label:
+      title: "Photoresist"
+      basis: public
+  - step: "005"
+    op: etch
+    materials: [nitride, oxide-thermal]
+    where_open: fomres
+  - step: "006"
+    op: etch
+    materials: [si-sub]
+    where_open: fomres
+    depth: 56
+    taper_deg: 9
+    corner_r: 9
+  - step: "006"
+    op: strip
+    materials: [resist]
+  - step: "010"
+    op: deposit
+    id: liner
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Liner oxide"
+      basis: public
+  - step: "011"
+    op: deposit
+    id: fox
+    material: oxide-dep
+    fill_to: 60
+    route: over
+    label:
+      title: "Fill oxide"
+      basis: public
+  - step: "012"
+    op: planarise
+    stop_on: nitride
+  - step: "013"
+    op: strip
+    materials: [nitride]
+  # ---- the P-well under both logic areas (PWI, step 027), without its mask
+  - step: "027"
+    op: dope
+    id: pwell
+    material: well-p
+    where: [[0, 268]]
+    follow: flat
+    y_top: 0
+    y_bot: -76
+    anchor_y: -64
+    label:
+      title: "P-well"
+      note: "PWI, step 027"
+      basis: public
+  - step: "034"
+    op: anneal
+  # ---- the logic silicon cleared at ONOME (step 042): the oxide over the active areas goes
+  - step: "042"
+    op: etch
+    materials: [oxide-thermal]
+    where: [[0, 80], [188, 268]]
+
+  # ---- the thick gate oxide, grown on every active area
+  - step: "043"
+    op: deposit
+    id: gox
+    material: oxide-thermal
+    t: 10
+    only_on: [si-sub]
+    label:
+      title: "Thick gate oxide"
+      note: "grown on every active area at step 043"
+      basis: public
+
+  # ---- the low-voltage oxide mask: resist over the 5 V area, a window over the 1.8 V area
+  - step: "044"
+    op: deposit
+    id: lvores
+    material: resist
+    t: 38
+    where: [[0, 134]]
+    route: top
+    label:
+      title: "Photoresist"
+      note: "low-voltage oxide mask, LVOM, step 044"
+      basis: public
+
+  # ---- the 1.8 V NMOS channel implant through the window
+  - step: "045"
+    op: dope
+    id: nchi
+    material: implant
+    where: [[190, 268]]
+    follow: surface
+    from_surface: 0
+    thickness: 9
+    z: 1
+    label:
+      title: "NMOS channel implant"
+      note: "NCHI, step 045; its species and depth are not public"
+      basis: public
+  - step: "045"
+    op: ions
+    where_open: lvores
+    tilt_deg: 0
+    label:
+      title: "NCHI implant"
+      note: "species, energy, dose not public"
+      basis: public
+
+  # ---- the thick oxide is etched out of the window; the resist is stripped
+  - step: "046"
+    op: etch
+    materials: [oxide-thermal]
+    where_open: lvores
+  - step: "046"
+    op: strip
+    materials: [resist]
+
+  # ---- the thin gate oxide, grown on the silicon GOXETCH cleared
+  - step: "047"
+    op: deposit
+    id: thinox
+    material: oxide-thermal
+    t: 5
+    only_on: [si-sub]
+    label:
+      title: "Thin gate oxide"
+      note: "grown at LVGOX, step 047, on the low-voltage area"
+      basis: public
