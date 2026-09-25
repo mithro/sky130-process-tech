@@ -528,7 +528,7 @@ records:
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
   sha256: e464d9584e1d2517b2f03093bb21595579a7727378bc19ecdd063f44cc199454
-  archive_url: https://web.archive.org/web/20240618112715/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
+  archive_url: https://web.archive.org/web/20240428174518/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2002.txt
   quotes:
@@ -868,6 +868,7 @@ records:
     date: 1999-05-05
     form: journal paper (abstract)
   url: https://iopscience.iop.org/article/10.1149/1.1390832
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1149/1.1390832
   sha256: b6b158b65c9df7fe4dfa550e7f1209ada2323ce9e7e9472886bb9cfc2c64dc7e
   archive_url: null
   retrieved: 2026-09-25
@@ -877,6 +878,8 @@ records:
       Crystal originated pits (COPs) were observed on patterned silicon wafers after local oxidation of
       silicon (LOCOS) process in 0.25 μ m static random access memory (SRAM) technology.
     location: abstract
+  - text: The Modulation of Crystal Originated Pits by the LOCOS Process in 0.25 μm SRAM Technology
+    location: title (the title, unlike the abstract, also keeps "0.25 μm" in the OpenAlex record)
   claims:
   - {subject: 0.25 µm SRAM technology, attribute: isolation, value: LOCOS, date: 1999}
   notes: Authors from Cypress Semiconductor's research and development department, San Jose; abstract only.

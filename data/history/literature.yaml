@@ -202,6 +202,7 @@ records:
     random access memory devices", Journal of Vacuum Science & Technology
     B, vol. 17, issue 5, published 1999-09-01. DOI: 10.1116/1.590921.
   url: https://doi.org/10.1116/1.590921
+  fetched_from: https://api.crossref.org/works/10.1116/1.590921
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/crossref-10_1116_1_590921.json.txt
@@ -239,6 +240,7 @@ records:
     Technology Digest of Technical Papers, pp. 42-43. DOI:
     10.1109/vlsit.1992.200637.
   url: https://doi.org/10.1109/vlsit.1992.200637
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/vlsit.1992.200637
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_vlsit_1992_200637.json.txt
@@ -276,6 +278,7 @@ records:
     four-transistor cell and differential design techniques", IEEE Journal
     of Solid-State Circuits, 1985, DOI: 10.1109/jssc.1985.1052422.
   url: https://doi.org/10.1109/jssc.1985.1052422
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/jssc.1985.1052422
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_jssc_1985_1052422.json.txt
@@ -308,6 +311,7 @@ records:
     memory applications", Proceedings of the IEEE 1994 Custom Integrated
     Circuits Conference (CICC), DOI: 10.1109/cicc.1994.379676.
   url: https://doi.org/10.1109/cicc.1994.379676
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/cicc.1994.379676
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_cicc_1994_379676.json.txt
@@ -344,6 +348,7 @@ records:
     Custom Integrated Circuits Conference (CICC), pp. 135-138. DOI:
     10.1109/cicc.2000.852634.
   url: https://doi.org/10.1109/cicc.2000.852634
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/cicc.2000.852634
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_cicc_2000_852634.json.txt
@@ -374,6 +379,7 @@ records:
     Electron Devices, vol. 48, issue 5, pp. 1017-1018, May 2001. DOI:
     10.1109/16.918257.
   url: https://doi.org/10.1109/16.918257
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/16.918257
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_16_918257.json.txt
@@ -405,6 +411,7 @@ records:
     devices at elevated temperatures", Solid-State Electronics, vol. 44,
     issue 6, pp. 949-958, June 2000. DOI: 10.1016/s0038-1101(00)00012-5.
   url: https://doi.org/10.1016/s0038-1101(00)00012-5
+  fetched_from: https://api.crossref.org/works/10.1016/s0038-1101(00)00012-5
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/crossref-10_1016_s0038-1101_00_00012-5.json.txt
@@ -430,6 +437,7 @@ records:
     technology SRAM device", IEEE Transactions on Nuclear Science, vol.
     52, issue 6, pp. 2433-2437, December 2005. DOI: 10.1109/tns.2005.860675.
   url: https://doi.org/10.1109/tns.2005.860675
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/tns.2005.860675
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_tns_2005_860675.json.txt
@@ -464,6 +472,7 @@ records:
     Integrated Circuits and Systems (MIXDES), pp. 151-158. DOI:
     10.1109/mixdes.2006.1706557.
   url: https://doi.org/10.1109/mixdes.2006.1706557
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/mixdes.2006.1706557
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_mixdes_2006_1706557.json.txt
@@ -493,6 +502,7 @@ records:
     10.1109/nvsmw.2008.30. Also indexed in data/papers.yaml as label
     paper-fliesler-2008a.
   url: https://ieeexplore.ieee.org/document/4531830/
+  fetched_from: https://api.openalex.org/works/https://doi.org/10.1109/nvsmw.2008.30
   archive_url: null
   retrieved: '2026-09-25'
   cache: web/openalex-10_1109_nvsmw_2008_30.json.txt

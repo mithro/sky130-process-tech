@@ -422,7 +422,7 @@ records:
     date: 2003-03-07
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
-  archive_url: https://web.archive.org/web/20240618112715/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
+  archive_url: https://web.archive.org/web/20240428174518/https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
   retrieved: 2026-09-25
   cache: filings/ar-fy2002.txt
   sha256: e464d9584e1d2517b2f03093bb21595579a7727378bc19ecdd063f44cc199454

@@ -225,6 +225,173 @@ def cmd_hash(args: argparse.Namespace) -> int:
     return 0
 
 
+def html_text(data: bytes) -> str:
+    from html.parser import HTMLParser
+
+    class P(HTMLParser):
+        def __init__(self) -> None:
+            super().__init__(convert_charrefs=True)
+            self.out: list[str] = []
+            self.skip = 0
+
+        def handle_starttag(self, tag, attrs):
+            if tag in ("script", "style", "noscript"):
+                self.skip += 1
+            if tag in ("p", "br", "div", "li", "tr", "h1", "h2", "h3", "h4"):
+                self.out.append("\n")
+
+        def handle_endtag(self, tag):
+            if tag in ("script", "style", "noscript") and self.skip:
+                self.skip -= 1
+
+        def handle_data(self, d):
+            if not self.skip:
+                self.out.append(d)
+
+    p = P()
+    p.feed(data.decode("utf-8", errors="replace"))
+    return "".join(p.out)
+
+
+def json_strings(x: object) -> list[str]:
+    """Every string in a JSON document, and an OpenAlex abstract rebuilt from its word index."""
+    out: list[str] = []
+    if isinstance(x, dict):
+        inv = x.get("abstract_inverted_index")
+        if isinstance(inv, dict):
+            words = sorted((pos, w) for w, ps in inv.items() for pos in ps)
+            out.append(" ".join(w for _, w in words))
+        for v in x.values():
+            out += json_strings(v)
+    elif isinstance(x, list):
+        for v in x:
+            out += json_strings(v)
+    elif isinstance(x, str):
+        out.append(re.sub(r"<[^>]+>", " ", x))
+    return out
+
+
+def extractions(data: bytes, glyph_offset: int | None = None) -> list[str]:
+    """The document's text in each of the ways the cache was made: pymupdf and pdftotext for a PDF
+    (and pypdf with the glyph decoding tools/check_filings.py uses, for the one report set in an
+    unmapped font), the strings of a JSON API response, the text of an HTML page."""
+    if data[:5] == b"%PDF-":
+        import pymupdf
+        with pymupdf.open(stream=data, filetype="pdf") as doc:
+            texts = ["\n".join(page.get_text() for page in doc)]
+        try:
+            texts.append(subprocess.run(["pdftotext", "-layout", "-", "-"], input=data, capture_output=True,
+                                        timeout=300, check=True).stdout.decode("utf-8", errors="replace"))
+        except (OSError, subprocess.SubprocessError):
+            pass
+        if glyph_offset is not None:
+            import io
+            import pypdf
+            import check_filings
+            raw = "\n".join(page.extract_text() or "" for page in pypdf.PdfReader(io.BytesIO(data)).pages)
+            texts.append(check_filings.decode_glyph_font(raw, glyph_offset))
+        return texts
+    head = data.lstrip()[:1]
+    if head in (b"{", b"["):
+        try:
+            return ["\n".join(json_strings(json.loads(data)))]
+        except json.JSONDecodeError:
+            pass
+    return [html_text(data)]
+
+
+def match_key(t: str) -> str:
+    """Whitespace-, case-, entity- and quotation-mark-insensitive, as the page-quote check compares."""
+    import html
+    return chq.page_key(html.unescape(t))
+
+
+class Refused(Exception):
+    """The archive or site keeps refusing; stop the run rather than hammer it."""
+
+
+_errors_in_a_row = 0
+
+
+def fetch_politely(url: str, where: str) -> bytes | None:
+    """Fetch with the project's rules: a pause between requests; on a refused connection, a 503 or a
+    429, one 15-minute pause and one retry; after 3 such errors in a row, stop the run."""
+    global _errors_in_a_row
+    archive = "web.archive.org" in url
+    for attempt in (1, 2):
+        try:
+            data = get(url)
+            _errors_in_a_row = 0
+            return data
+        except urllib.error.HTTPError as e:
+            print(f"{where}: fetch failed {url}: {e}")
+            if e.code not in (429, 503) or not archive:
+                return None
+        except (urllib.error.URLError, TimeoutError) as e:
+            print(f"{where}: fetch failed {url}: {e}")
+            if not archive:
+                # a live site that refuses scripted fetches (several news sites do); recorded, not retried
+                return None
+        finally:
+            time.sleep(PAUSE)
+        _errors_in_a_row += 1
+        if _errors_in_a_row >= 3:
+            raise Refused(f"3 refusals in a row, last {url}")
+        if attempt == 1:
+            print(f"{where}: pausing 15 minutes before one retry")
+            time.sleep(900)
+    return None
+
+
+def cmd_rebuild(args: argparse.Namespace) -> int:
+    out = Path(args.dir)
+    out.mkdir(parents=True, exist_ok=True)
+    bad = ok = 0
+    for path in evidence_files():
+        for rec in records(path):
+            rid = str(rec["id"])
+            if args.ids and rid not in args.ids:
+                continue
+            quotes = [q.get("text") for q in rec.get("quotes") or [] if isinstance(q, dict) and q.get("text")]
+            urls = ([rec["fetched_from"]] if rec.get("fetched_from") else []) + (
+                [raw_wayback(rec["archive_url"])] if rec.get("archive_url") else []) + (
+                [rec["url"]] if rec.get("url") else [])
+            offset = 29 if ".decoded." in str(rec.get("cache") or "") else None
+            # try each copy in turn (an archived copy can be truncated, a live page can be a bot check),
+            # keeping the downloads under DIR so a re-run fetches nothing twice
+            result = None
+            for n, url in enumerate(urls):
+                target = out / f"{rid}.{n}.bin"
+                if not target.exists():
+                    data = fetch_politely(url, f"{path.name}:{rid}")
+                    if data is None:
+                        continue
+                    target.write_bytes(data)
+                data = target.read_bytes()
+                fresh = [match_key(t) for t in extractions(data, offset)]
+                missing = [q for q in quotes if not any(match_key(q) in t for t in fresh)]
+                changed = bool(rec.get("sha256")) and hashlib.sha256(data).hexdigest() != rec["sha256"]
+                result = (url, missing, changed)
+                if not missing:
+                    break
+            if result is None:
+                print(f"{path.name}:{rid}: NOT REBUILT (no copy could be fetched)")
+                bad += 1
+                continue
+            url, missing, changed = result
+            note = " (sha256 differs from the record: the served copy has changed)" if changed else ""
+            if missing:
+                bad += 1
+                print(f"{path.name}:{rid}: {len(missing)}/{len(quotes)} quote(s) not found in any fresh copy{note}; "
+                      f"first: {missing[0][:80]!r}")
+            else:
+                ok += 1
+                if note:
+                    print(f"{path.name}:{rid}: quotes found in {url}{note}")
+    print(f"{ok} record(s) re-verified from fresh copies, {bad} not")
+    return 1 if bad else 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -232,11 +399,15 @@ def main() -> int:
     for name in ("archive", "hash"):
         p = sub.add_parser(name)
         p.add_argument("--write", action="store_true")
+    p = sub.add_parser("rebuild")
+    p.add_argument("dir")
+    p.add_argument("--ids", nargs="*")
     args = ap.parse_args()
     try:
-        return {"status": cmd_status, "archive": cmd_archive, "hash": cmd_hash}[args.cmd](args)
-    finally:
-        pass
+        return {"status": cmd_status, "archive": cmd_archive, "hash": cmd_hash, "rebuild": cmd_rebuild}[args.cmd](args)
+    except Refused as e:
+        print(f"stopped: {e}; run again later (already fetched copies are kept)")
+        return 2
 
 
 if __name__ == "__main__":
