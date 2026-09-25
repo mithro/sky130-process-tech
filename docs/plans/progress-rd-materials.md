@@ -348,3 +348,44 @@ lead); list items > 60 words 2 -> 0; tables with no caption 1 -> 0.
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
 Incremental `-W` build: clean. Screenshots at 400 px: table and lists
 wrap cleanly.
+
+### `hardware-consumables.md`
+
+Rules applied: R-MODELS (7-row 3-column table), R-PARA (9 over-100-word
+paragraphs split at seams -- this page's prose was the densest yet, with
+several paragraphs holding 3-4 citations each), R-SENTENCE (one
+four-part sentence over 45 words split into three sentences with the
+trailing marker repeated per clause, per rule 5), R-PARA (the one
+over-60-word list item split into lead + continuation), R-RELATED
+(Related pages grouped under bold labels).
+
+One preservation bug caught and fixed before committing: the R-SENTENCE
+split accidentally capitalised a quotation's first letter
+("contamination" -> "Contamination") to read naturally at a new
+sentence's start -- `check_preserved.py` flagged this as a LOST/ADDED
+quote pair (the exact-case string changed). Fixed by restoring the
+quote's original lower-case "c", leaving the sentence grammatically odd
+(a capital-less quotation opening a sentence) exactly as the guide
+requires -- presentation must never touch quoted wording, including its
+case.
+
+Skipped, with reasons: R-INTRO (out of scope). Ten sentences remain over
+45 words after the paragraph splits -- each is a single sentence
+listing two or three citations joined by semicolons ("X:
+quote1[^a]; quote2[^b]; and quote3[^c]"), the same shape converted to
+R-LIST on other pages in this batch, but not converted here given the
+batch's time budget; flagged honestly rather than converted
+inconsistently under time pressure. This is the first page in the batch
+with a real residual sentence-cap gap.
+
+Over-cap counts, before -> after: paragraphs > 100 words 9 -> 1 (R-INTRO
+lead); list items > 60 words 1 -> 0; sentences > 45 words (real) 13 ->
+10; tables with no caption 0 -> 0 (page had none pre-existing besides
+the quick-facts table).
+
+`check_preserved.py --allow-regrouped --allow-added markers`: 0
+undeclared differences (`wiki-probecard` repeated twice, rule-5 marker
+copies). `check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: table and
+paragraphs wrap cleanly.

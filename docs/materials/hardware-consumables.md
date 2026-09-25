@@ -36,7 +36,9 @@ worn parts, film thickness drift as a chamber wall coats, temperature
 error as a lamp ages, contact resistance as a probe tip loads, and the
 emissions a fab is permitted to release. They are replaced on schedules
 tied to wafer counts, RF hours or kilowatt-hours, cleaned and requalified,
-and bought from tool makers and specialist part suppliers. SkyWater's S-1
+and bought from tool makers and specialist part suppliers.
+
+SkyWater's S-1
 names the category among its risks: "availability concerns with respect
 to some of our essential materials, tools and maintenance parts could
 also prompt a lengthy and expensive search for alternative sources which
@@ -50,6 +52,7 @@ boat inside a process tube. Heraeus Covantics states that fused quartz
 and silica tubes "serve as chemically pure reaction chambers, as gas or
 liquid inlets or as transportation pipes", and offers grades up to
 synthetic silica of "parts per billion class purity".[^heraeus-tubes]
+
 The design of the ware is process-critical: a Tokyo Electron boat
 supports wafers on rings so that "a surface defect called a slip
 generated when the wafer is heat treated can be eliminated";[^pat-boat-tel]
@@ -57,7 +60,9 @@ a Tokyo Electron furnace stands the boat on "thin heat insulation plates"
 above the furnace throat;[^pat-vf-insulation-tel] and a Kokusai patent
 adds a boat cover inside the inner and outer tubes of an LPCVD furnace
 so that the film "is improved in uniformity and
-homogeneity".[^pat-lpcvd-kokusai] Sodium diffuses through quartz: Eisele and
+homogeneity".[^pat-lpcvd-kokusai]
+
+Sodium diffuses through quartz: Eisele and
 Ruthardt described stabilised fused-quartz tubes with reduced sodium
 diffusion.[^eisele-1978] Heat also limits the ware's life: Heraeus offers
 stabilised tubes for high-temperature use "to reduce the possibility of
@@ -65,7 +70,9 @@ sagging at elevated working temperatures",[^heraeus-tubes] and silica
 glass can crystallise (devitrify) where it is contaminated — Horii et al.
 heated silica glasses in contact with a NaCl grain and found a
 crystallised region whose depth grew with the square root of the heating
-time.[^horii-2010] Silicon carbide is the alternative: Entegris
+time.[^horii-2010]
+
+Silicon carbide is the alternative: Entegris
 describes converted SiC with contamination "typically below 5 ppm" and
 states that its dummy wafers "can be cleaned and reused indefinitely in
 LPCVD or diffusion processes".[^entegris-supersic] Deposition furnaces
@@ -79,20 +86,26 @@ Plasma chambers erode and coat their own walls. Joubert et al. wrote that
 layers deposited on reactor walls "cause large and uncontrolled shifts in
 the etch process",[^joubert-2004] and Cunge et al. found that in HBr/Cl₂
 gate-etch plasmas the walls stay clean without oxygen but grow a silicon
-oxychloride layer as oxygen is added.[^cunge-2005] Parts shed
+oxychloride layer as oxygen is added.[^cunge-2005]
+
+Parts shed
 contamination: Bell and Joubert traced sidewall oxide to sputtering of
 "the quartz tube of the helicon source";[^bell-1996] Ito et al. found
 AlF₃ particles from the "coating material Al2O3 on the etching chamber
 wall" and suppressed them by dehydrating the chamber parts;[^ito-2008]
 and an Applied Materials HDP-CVD patent attributes sodium to the quartz
 dome and alumina nozzles and deposits a seasoning film after each clean
-to hold it back.[^pat-seasoning-amat] Coatings resist attack: a patent
+to hold it back.[^pat-seasoning-amat]
+
+Coatings resist attack: a patent
 by Sun et al. adds "a ceramic-based surface coating, high purity yttrium
 oxide coating" on anodised aluminium parts "against fluorine and oxygen
 plasma attack".[^pat-yttria] Tool makers design against consumable cost;
 Lam's 9600DFM release claimed design advances that "virtually eliminate
 the cost of consumables", with a customer reporting a mean time between
-cleans of "more than 300 RF hours".[^lam-9600dfm-2001] In sputtering
+cleans of "more than 300 RF hours".[^lam-9600dfm-2001]
+
+In sputtering
 chambers, collimators capture off-normal metal[^rossnagel-1991] and IMP
 coils are pasted with target material;[^pat-imp-coil-amat] shields and
 kits are changed with the targets ({ref}`material-sputter-targets`).
@@ -117,7 +130,9 @@ trapped, destroyed or scrubbed before release. Some condense: ammonium
 chloride from nitride furnaces "forms a solid condensate at temperatures
 below about 125° C." in exhaust lines and pumps,[^pat-nh4cl-vlsi] and a
 TSMC patent describes it as "a fine powder" that "may be syphoned back
-into the furnace".[^pat-nh4cl-tsmc] Fluorinated gases are potent
+into the furnace".[^pat-nh4cl-tsmc]
+
+Fluorinated gases are potent
 greenhouse gases — in the IPCC Fourth Assessment Report values that
 Wikipedia tabulates, NF₃ has a 100-year global warming potential (GWP)
 of 17,200 and C₂F₆ one of 12,200[^wiki-gwp] — and are destroyed by
@@ -127,7 +142,9 @@ backing pumps;[^fiala-1999] Hu et al. studied NF₃ decomposition in
 point-of-use "wet-thermal-wet abatement" of PECVD chamber
 cleaning;[^hu-2018] and Mangyou et al. reported an atmospheric plasma
 system treating "up to 80 L/min of CF4 exhaust with 95% of
-DRE".[^mangyou-2005] Hydrides can also be taken up at ambient
+DRE".[^mangyou-2005]
+
+Hydrides can also be taken up at ambient
 temperature by solid adsorbents: Hsu et al. found that copper, zinc and
 cerium oxides on alumina removed silane with an efficiency above 99.9 %
 before breakthrough,[^hsu-2007] and tested copper on sol-gel alumina for
@@ -142,11 +159,14 @@ system.[^sherer-2005]
 
 A probe card connects the tester to the pads of the structures under
 test. "Normally a probe card is inserted into a wafer prober", and cards
-are "broadly classified into needle type, vertical type, and MEMS";
-needles "are made of tungsten or tungsten/rhenium alloys or advanced
-palladium based alloys like PdCuAg", and "contamination builds up on the
+are "broadly classified into needle type, vertical type, and
+MEMS".[^wiki-probecard] Needles "are made of tungsten or
+tungsten/rhenium alloys or advanced palladium based alloys like
+PdCuAg".[^wiki-probecard] "contamination builds up on the
 tips as a result of successive touchdown events", which harms contact
-resistance.[^wiki-probecard] Broz and Rincon measured the contact
+resistance.[^wiki-probecard]
+
+Broz and Rincon measured the contact
 resistance of tungsten, tungsten–rhenium, beryllium–copper and alloy
 probes on aluminium pads at elevated temperature;[^broz-1999] Roggei and
 Seshan addressed "resistance increase between probes and pads during the
@@ -160,31 +180,19 @@ The parts below are sold by tool makers and specialist suppliers to tool
 and process specifications; the supplier statements describe their
 catalogues, not the parts SkyWater buys.
 
-* **Quartz tubes and ware.** Electrically fused quartz tubes in grades
-  from "HSQ®100" to "HSQ®330S", stabilised "HSQ®400" for high temperature,
-  and synthetic "HSQ®900" silica.[^heraeus-tubes]
-* **Silicon-carbide ware.** Horizontal-furnace carriers, "baffle
-  assemblies", "LTO cages" and dummy wafers of converted SiC.[^entegris-supersic]
-* **Heaters and insulation.** Multi-zone heaters, rated "600-1200° C (Up
-  to 1250° C for > 4 Hours)" on one vertical reactor;[^expertech-vtr]
-  insulation plates at the furnace throat.[^pat-vf-insulation-tel]
-* **Chamber kits.** Quartz, ceramic, silicon or coated aluminium domes,
-  liners, focus and edge rings, showerheads and nozzles, electrostatic
-  chucks, shields, coils and collimators, as the machine pages describe
-  them;[^pat-hdp-reactor-amat][^pat-yttria][^amat-ism-2000] exclusion
-  rings on tungsten CVD pedestals.[^novellus-wcvd-2002]
-* **RTP parts.** Tungsten-halogen lamps, quartz isolation tubes or
-  windows, and pyrometer and thermocouple calibration
-  hardware.[^ag-8800][^chen-2002-rtp]
-* **Abatement.** Heated traps for condensable by-products,[^pat-nh4cl-vlsi]
-  thermal or plasma point-of-use abatement for fluorinated
-  gases,[^hu-2018][^mangyou-2005][^fiala-1999] adsorbent beds for
-  hydrides such as silane and phosphine,[^hsu-2007][^hsu-2010] and central
-  wet scrubbers.[^sherer-2005]
-* **Probe cards and cleaning.** Needle, vertical and MEMS
-  cards;[^wiki-probecard] Entegris lists, among CMC Materials' products,
-  "Highly engineered cleaning materials for advanced probe cards, test
-  socket applications, and chuck-cleaning".[^entegris-cmc-2022]
+:::{table} Representative hardware consumables and abatement parts, as public and current supplier documents describe them
+:widths: 22 10 68
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Quartz tubes and ware | — | Electrically fused quartz tubes in grades from "HSQ®100" to "HSQ®330S", stabilised "HSQ®400" for high temperature, and synthetic "HSQ®900" silica[^heraeus-tubes] |
+| Silicon-carbide ware | — | Horizontal-furnace carriers, "baffle assemblies", "LTO cages" and dummy wafers of converted SiC[^entegris-supersic] |
+| Heaters and insulation | — | Multi-zone heaters, rated "600-1200° C (Up to 1250° C for > 4 Hours)" on one vertical reactor;[^expertech-vtr] insulation plates at the furnace throat[^pat-vf-insulation-tel] |
+| Chamber kits | — | Quartz, ceramic, silicon or coated aluminium domes, liners, focus and edge rings, showerheads and nozzles, electrostatic chucks, shields, coils and collimators, as the machine pages describe them;[^pat-hdp-reactor-amat][^pat-yttria][^amat-ism-2000] exclusion rings on tungsten CVD pedestals[^novellus-wcvd-2002] |
+| RTP parts | — | Tungsten-halogen lamps, quartz isolation tubes or windows, and pyrometer and thermocouple calibration hardware[^ag-8800][^chen-2002-rtp] |
+| Abatement | — | Heated traps for condensable by-products,[^pat-nh4cl-vlsi] thermal or plasma point-of-use abatement for fluorinated gases,[^hu-2018][^mangyou-2005][^fiala-1999] adsorbent beds for hydrides such as silane and phosphine,[^hsu-2007][^hsu-2010] and central wet scrubbers[^sherer-2005] |
+| Probe cards and cleaning | — | Needle, vertical and MEMS cards;[^wiki-probecard] Entegris lists, among CMC Materials' products, "Highly engineered cleaning materials for advanced probe cards, test socket applications, and chuck-cleaning"[^entegris-cmc-2022] |
+:::
 
 ## At SkyWater
 
@@ -203,11 +211,13 @@ machine pages; and, under "Wafer Sort/Test":
 with "Summit 200 Prober/Tester" and "PMC200 Cryo Probe" in the
 reliability laboratory and "Cryogenic probing down to 8-Kelvin" under
 "Other Services".[^skw-01] The page names no quartzware, chamber kit,
-lamp, probe card, trap or abatement system. The S-1 includes "maintenance
+lamp, probe card, trap or abatement system.
+
+The S-1 includes "maintenance
 parts" among essential items (quoted above), states that "We use,
 generate and discharge hazardous chemicals and waste in our research and
 development and manufacturing activities", and states that "our
-facilities are ISO 14001 certified",[^sec-01] and the annual report for
+facilities are ISO 14001 certified".[^sec-01] The annual report for
 fiscal 2023 lists "ISO 14001:2015" among the certifications "for our
 Minnesota facility".[^sec-02] SkyWater's certifications
 page lists for SkyWater Minnesota "ISO14004 Environmental Management
@@ -218,12 +228,14 @@ controls of a vacuum system".[^skw-07]
 Two public regulator sources bear on emissions at the Bloomington site.
 The EPA's Greenhouse Gas Reporting Program lists the facility at
 2401 E. 86th St., Bloomington, as reporting under subparts "C,I" in each
-year from 2011 to 2023;[^epa-ghgrp-skywater] subpart I covers electronics
+year from 2011 to 2023.[^epa-ghgrp-skywater] Subpart I covers electronics
 manufacturing, whose reports include "Controlled emissions of GHGs from
 abatement systems, if applicable" and an "Inventory and description of
 all abatement systems through which fluorinated GHGs or N2O flow at the
 facility and for which destruction or removal efficiency is
-claimed".[^epa-ghgrp-subpart-i] The Minnesota Pollution Control Agency's
+claimed".[^epa-ghgrp-subpart-i]
+
+The Minnesota Pollution Control Agency's
 enforcement release of 2025-02-04 on SkyWater's air permit lists, among
 its findings, "Taking credit for greenhouse gas emissions control
 equipment that was not allowed in permit", and records that SkyWater
@@ -235,10 +247,14 @@ application".[^mpca-2025]
 The tool entries are SkyWater statements and rank as **strong** evidence
 for the tools whose parts this page describes, on the scale of the
 {ref}`machines index <machines-reading-evidence>`, but they name no
-part.[^skw-01] The EPA record is **strong** that the site reported as an
+part.[^skw-01]
+
+The EPA record is **strong** that the site reported as an
 electronics-manufacturing facility under subpart I; the record retrieved
 names no abatement system, so that the site claims abatement is not shown
-by it.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i] The MPCA release refers to
+by it.[^epa-ghgrp-skywater][^epa-ghgrp-subpart-i]
+
+The MPCA release refers to
 greenhouse-gas "emissions control equipment" in a permit context; it
 does not say what the equipment is, which gases or tools it serves, or
 whether it is in service (our reading).[^mpca-2025] Quartzware, chamber
@@ -353,25 +369,29 @@ cards are not public.
   "consists of a grid of probe points",[^raw-data-testtile-prop] and the
   replacement open test tile, a Google, NIST and University of Michigan
   OpenFASoC design, documents its own test interface with an image whose
-  alternative text is "Probing Card";[^raw-data-testtile-open] neither
+  alternative text is "Probing Card".[^raw-data-testtile-open]
+
+  Neither
   document describes SkyWater's production e-test probe cards. The
   {ref}`HPETEST <step-171>` page names probe cards laid out for the e-test
   modules. SkyWater lists no production prober.[^skw-01]
 
 ## Related pages
 
-* {ref}`machine-vertical-furnace-oxidation`,
+* **Machines.** {ref}`machine-vertical-furnace-oxidation`,
   {ref}`machine-vertical-furnace-lpcvd` and
   {ref}`machine-vertical-furnace-anneal` — furnace ware.
-* {ref}`machine-plasma-etcher-silicon`,
+  {ref}`machine-plasma-etcher-silicon`,
   {ref}`machine-plasma-etcher-dielectric`,
   {ref}`machine-plasma-etcher-metal`, {ref}`machine-pecvd`,
   {ref}`machine-hdp-cvd`, {ref}`machine-tungsten-cvd` and
   {ref}`machine-pvd-cluster-tool` — chamber parts.
-* {ref}`machine-rapid-thermal-processor` — lamps and quartz.
-* {ref}`machine-parametric-tester` — probe cards.
-* {ref}`material-substrates` — monitor, dummy and calibration wafers.
-* {ref}`materials-index` — the gases whose exhaust is abated.
+  {ref}`machine-rapid-thermal-processor` — lamps and quartz.
+  {ref}`machine-parametric-tester` — probe cards.
+* **Materials.** {ref}`material-substrates` — monitor, dummy and
+  calibration wafers.
+* **Indexes.** {ref}`materials-index` — the gases whose exhaust is
+  abated.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
