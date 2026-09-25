@@ -307,3 +307,37 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   sentence (46, one hedge over the whole); the Polarity and tone cell (60; not in the body). Before →
   after: paragraphs 11 → 0, items 0 → 0, sentences 20 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 7. hvtpm — done
+
+* **Rules applied.** R-INTRO (186 → 70 words; first sentence split at its colon; "The public record
+  disagrees …" moved to the top of `## What the mask defines`, its colon made a full stop); R-CAPTION;
+  R-PARA, R-SENTENCE; R-LIST (Table F2b's `C` rows; the four `chvtpm` checks; the per-die counts);
+  R-RELATED; R-H3 (Exposure class, Mask errors, Resist and tone ← "Resist", Resist edges, Overlay and
+  alignment ← "Overlay", Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS not applied:** the design-rules paragraph names two parameters.
+* **Hedge repeated on a split (R-SENTENCE 5):** "On the table, then, the standard 1.8 V PMOS receives
+  created `HVTPM` shapes and the low-Vt PMOS does not, and the three … flavours differ … (… our reading
+  of the rows).[^pdk-06]" — the hedge and marker ended the whole sentence, so both halves now carry
+  "(our reading of the rows)" and `pdk-06` (ADDED hedge `our reading`, ADDED marker `pdk-06`).
+* **Markers moved to their own clause:** the `HVTRM` sentence ended `[^pdk-05][^pdk-06][^pdk-periph]`
+  after "… folded into this mask". Split at its semicolon, the three markers stay with the half that
+  holds the `masks.csv`, `gds_layers.csv` and hvtr.2 facts; the second half ("The step list used in this
+  reference has no mask step for it, and the HVTPM page leaves open …") names none of those sources and
+  is left without a marker, rather than citing the PDK for the step list. The reviewer may prefer the
+  markers repeated on both halves; that is a one-line change.
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,hedges`): `pdk-06` and `our reading` (above);
+  `pdk-errors` ×2 (*Error Messages* description; the lead-in of the four-check list — the base's marker
+  stays on the `hvtp.c1` / nikon sentence it ended); `mask-renders` (README sentence split at its colon);
+  `steps-sheet` ("Plate number" lead, split at its dash pair).
+* **Marker coverage.** Flags read: lists under lead-in markers; clauses without a marker of their own in
+  the base; the `HVTRM` second half (above).
+* **Over the caps after the pass:** "Kao and Chandrakasan … (our reading)" (54: the trailing "— the kind
+  of trade … (our reading)" may qualify both studies, so a split could narrow the hedge to one); "On that
+  reading the PDK requires …" (48: one hedged reading ending in a dash clause); the AMD-patent sentence
+  (52, mostly one quotation); the Polarity and tone cell (48; not in the body). Before → after:
+  paragraphs 10 → 0, items 2 → 0, sentences 16 → 3, cells 1 → 1.
+* **Content problems for the owner:** none found.

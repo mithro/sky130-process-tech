@@ -2,22 +2,12 @@
 # HVTPM — High Vt PCh\*
 
 The high-Vt P-channel mask is the {term}`reticle` of the second
-threshold implant of SKY130's 1.8 V PMOS: on the {ref}`HVTPM <step-022>`
+threshold implant of SKY130's 1.8 V PMOS. On the {ref}`HVTPM <step-022>`
 page's reading, the resist printed through it at step 22 is opened over
 the PMOS channels that are to have a raised threshold, the implants
 {ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` pass through the same
 openings, and the resist is stripped at {ref}`PCHIS <step-025>`. The "V"
-in its name is a threshold, not a voltage class. The public record
-disagrees about what the plate carries: the step page follows the PDK's
-description of the drawn layer `hvtp`, while, on our reading, the PDK's
-mask generation table, its DRC error messages and one public derivation
-from the drawn tape-out data all point to openings over most low-voltage
-N-well. This page gathers what public sources say about the mask itself
-— its PDK entry and layers, the plates the process-steps sheet records
-for the MPW runs, what the public renders of those runs show, the
-lithography it needs and the rules that constrain it. How the step is
-performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+in its name is a threshold, not a voltage class.
 
 | | HVTPM — High Vt PCh\* |
 |---|---|
@@ -34,7 +24,20 @@ performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 4 steps; see {ref}`Steps that use this mask <mask-hvtpm-steps>` |
 
+:::{seealso}
+How the step is
+performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The public record
+disagrees about what the plate carries. The step page follows the PDK's
+description of the drawn layer `hvtp`, while, on our reading, the PDK's
+mask generation table, its DRC error messages and one public derivation
+from the drawn tape-out data all point to openings over most low-voltage
+N-well.
 
 The PDK names the layer's purpose three times. `masks.csv` lists "High
 Vt PCh\*"; `gds_layers.csv` describes `hvtp` as "High-Vt LVPMOS
@@ -43,7 +46,9 @@ implant region for high Vt LV PMOS;".[^pdk-05][^pdk-06][^pdk-periph] The
 devices are the "1.8V high-VT PMOS FET", whose cross-section "is
 identical to the std PMOS FET except for the VT adjust implants (to
 achieve the higher VT)", and the varactor option `cap_var_hvt`, the
-"high VT PMOS device option".[^pdk-07] Unlike `lvtn`, whose function
+"high VT PMOS device option".[^pdk-07]
+
+Unlike `lvtn`, whose function
 line speaks of blocking an implant, `hvtp` is described as the region
 that receives one, and the {ref}`HVTPM <step-022>` page reads the
 reticle polarity from that: resist removed over `hvtp`.
@@ -54,22 +59,37 @@ Andreani and Mattisson compared inversion-mode and accumulation-mode MOS
 varactors for tuning CMOS oscillators.[^andreani-2000]
 
 The PDK's mask generation table, Table F2b, reads differently. It marks
-the `HVTPM` column `C` ("CREATED") in 15 of its 80 device rows: the two
-p-diffusion resistor rows, the standard 1.8 V PMOS rows, the high-Vt
-PMOS rows, the `pmos_core` rows, the high-Vt varactor, the `pDiode`,
-high-Vt `pDiode` and photodiode rows and the parasitic PNP.[^pdk-06] It
+the `HVTPM` column `C` ("CREATED") in 15 of its 80 device rows:[^pdk-06]
+
+* the two
+  p-diffusion resistor rows
+* the standard 1.8 V PMOS rows
+* the high-Vt
+  PMOS rows
+* the `pmos_core` rows
+* the high-Vt varactor
+* the `pDiode`,
+  high-Vt `pDiode` and photodiode rows
+* the parasitic PNP
+
+The table
 marks `-`, "Layer not created for the device", in, among others, the
 rows of the low-Vt PMOS, the low-Vt and HV varactors, the 5/10.5 V,
 16 V and 20 V PMOS and the HV p-diffusion resistor, and in every NMOS
-row.[^pdk-06] On the table, then, the standard 1.8 V PMOS receives
-created `HVTPM` shapes and the low-Vt PMOS does not, and the three
+row.[^pdk-06]
+
+On the table, then, the standard 1.8 V PMOS receives
+created `HVTPM` shapes and the low-Vt PMOS does not (our reading of the
+rows).[^pdk-06] The three
 1.8 V PMOS flavours differ in which of the two threshold masks they
 receive: the standard PMOS `HVTPM` only, the low-Vt
 PMOS `LVTNM` only and the high-Vt PMOS both
-({ref}`mask-lvtnm`; our reading of the rows).[^pdk-06] That pattern
+({ref}`mask-lvtnm`; our reading of the rows).[^pdk-06]
+
+That pattern
 is hard to square with a plate opened over drawn `hvtp` alone, and it
 fits a plate opened over low-voltage N-well outside the low-Vt devices
-(our reading); the table does not say what the implants do, and the
+(our reading). The table does not say what the implants do, and the
 step pages' reading of the implants' species (the
 {ref}`PNCHI <step-024>` page reads BF₂) does not by itself decide
 between the two.
@@ -93,7 +113,9 @@ mask"), `mask add` 97:43 and `mask drop` 97:42 on the same layer number,
 and a `drawing` purpose at 88:44, a layer number it shares with
 `conom` 88:0; 97 also carries `cap2m` 97:44.[^pdk-06] The drawn layer is
 `hvtp` at 78:44. The PDK publishes no operation from `hvtp` to the
-plate. Rule x.9 allows "Shapes on maskAdd or maskDrop layers
+plate.
+
+Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines mask layers to test
 modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] Table C3 of the
@@ -101,18 +123,27 @@ modules, seal ring and frame, with an exception that names only
 `Var_channel` as "poly AND tap AND (nwell NOT hvi) NOT
 areaid.ce";[^pdk-06] it uses neither to define the plate.
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", uses both. It lists four checks on a layer it
+criteria for GDS data".[^pdk-errors] It uses both. It lists four checks on a layer it
 calls `CLHVTPM`, under the rule names `chvtpm.1`, `chvtpm.2a`,
-`chvtpm.3` and `chvtpm.4`: "0.38
-min. width of CLHVTPM", "0.38 min. spacing/notch of CLHVTPM", "0 min.
-enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by
-CLHVTPM" and "0 min. enclosure of ((LVnwell overlapping Var_channel)
-AND hvtp) by CLHVTPM"; it also has a check `hvtp.c1`, "Min/Max
+`chvtpm.3` and `chvtpm.4`:[^pdk-errors]
+
+* "0.38
+  min. width of CLHVTPM"
+* "0.38 min. spacing/notch of CLHVTPM"
+* "0 min.
+  enclosure of ((LVnwell not overlapping Var_channel) NOT lvtn) by
+  CLHVTPM"
+* "0 min. enclosure of ((LVnwell overlapping Var_channel)
+  AND hvtp) by CLHVTPM"
+
+It also has a check `hvtp.c1`, "Min/Max
 enclosure of nwell by hvtp", with no value, and two `chvtpm.nikon`
-checks.[^pdk-errors] The page does not define `CLHVTPM`. We read it as
-the created `HVTPM` data (inference from the rule names); on that
+checks.[^pdk-errors]
+
+The page does not define `CLHVTPM`. We read it as
+the created `HVTPM` data (inference from the rule names). On that
 reading the PDK requires the created layer to cover low-voltage N-well
 that does not overlap a varactor channel, outside `lvtn`, and `hvtp`
 within low-voltage N-well that does — openings over most low-voltage
@@ -123,10 +154,10 @@ operation that makes it.
 `masks.csv` also marks "HLow VT PCh Radio\*, HVTRM" as used in SKY130,
 with a mask-level layer `chvtrm` 98:0 and a drawn layer `hvtr` 18:20,
 "High-Vt RF transistor implant", whose one spacing rule to this layer is
-"Min spacing between hvtp to hvtr" (hvtr.2), 0.380 µm; the step list
+"Min spacing between hvtp to hvtr" (hvtr.2), 0.380 µm.[^pdk-05][^pdk-06][^pdk-periph] The step list
 used in this reference has no mask step for it, and the
 {ref}`HVTPM <step-022>` page leaves open whether it is absent from the
-flow or folded into this mask.[^pdk-05][^pdk-06][^pdk-periph]
+flow or folded into this mask.
 
 ### In the public renders
 
@@ -134,14 +165,18 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. `HVTPM` is one of the masks the site's README
 calls "fab-derived" and evaluates "as a boolean expression over drawn
-layers": on all eight runs the expression is
+layers".[^mask-renders]
+
+On all eight runs the expression is
 `(64:20 NOT 75:20) NOT 125:44`, which in the layer names of
 `gds_layers.csv` is (`nwell` NOT `hvi`) NOT `lvtn`, with no `hvtp`
 term.[^mask-renders][^pdk-06] Its mask record lists the drawn layer 64:20
 and the mask-level layer 97:0, with the note "created over (LV nwell =
 nwell NOT hvi) NOT lvtn, plus hvtp only where nwell overlaps a varactor;
 the fab algorithm says do NOT OR hvtp in. Rendered as nwell = a
-superset".[^mask-renders] The note contradicts the expression twice, as
+superset".[^mask-renders]
+
+The note contradicts the expression twice, as
 the {ref}`masks index <masks-derivations>` records: it ends "Rendered as
 nwell = a superset", but the expression subtracts `hvi` and `lvtn`; and
 it describes a varactor term that the expression does not include. It
@@ -156,7 +191,9 @@ PMOS in, low-Vt and 5 V PMOS out (our comparison).[^pdk-06][^mask-renders]
 The note's wording, "(LV nwell = nwell NOT hvi) NOT lvtn, plus hvtp only
 where nwell overlaps a varactor", matches the two enclosure checks of the
 Error Messages page, which the expression implements only in part (it
-has no varactor term).[^pdk-errors][^mask-renders] Since the site names
+has no varactor term).[^pdk-errors][^mask-renders]
+
+Since the site names
 no source, the agreement may only mean that both start from the same
 public PDK pages; neither source says what the implants
 through the openings do, and neither settles which reading matches the
@@ -165,14 +202,21 @@ site's `NCM` render, an expression that includes this one, has the same
 die-by-die counts as `HVTPM` on every run.
 
 All 40 rendered dies of every run carry shapes, but that is not 40
-designs with high-Vt devices: every die carries at least 1 583 shapes,
-the minimum on each run lies between 1 583 (MPW-7 and MPW-8) and 2 200
-(MPW-1), and on each run 5 to 20 of the 40 dies carry a count that
-another die of the run shares — 2 046 on eight dies of MPW-3 and 1 982
-on nine dies of MPW-8.[^mask-renders] We read the repeated counts as
+designs with high-Vt devices:[^mask-renders]
+
+* every die carries at least 1 583 shapes
+* the minimum on each run lies between 1 583 (MPW-7 and MPW-8) and 2 200
+  (MPW-1)
+* on each run 5 to 20 of the 40 dies carry a count that
+  another die of the run shares — 2 046 on eight dies of MPW-3 and 1 982
+  on nine dies of MPW-8
+
+We read the repeated counts as
 shapes common to the dies rather than to the projects (inference); since
 the expression renders most low-voltage N-well, the counts follow N-well
-use rather than `hvtp`. The site states the limits of its images: "These
+use rather than `hvtp`.
+
+The site states the limits of its images: "These
 are renders of *drawn* data, not photomask artwork: reticle pitch, 4x
 reduction, mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] Its metadata carries no plate ID, so a render
@@ -201,9 +245,11 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 | MPW-8 | `5CS8017AC` | `S8017AA317A` |
 
 * **Plate number.** `317` is higher than the numbers of masks many steps
-  later in the flow — `P1M` (step 61) is `210` and `NSDM` (step 85)
-  `250` — and it is one of the examples the masks index gives of plate
-  numbers that do not follow process order; the sheet does not say what
+  later in the flow: `P1M` (step 61) is `210` and `NSDM` (step 85)
+  `250`.[^steps-sheet]
+
+  It is one of the examples the masks index gives of plate
+  numbers that do not follow process order. The sheet does not say what
   they encode, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type and magnification.** The sheet's "Sheet4" tab gives no
@@ -218,63 +264,79 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`HVTPM <step-022>` page puts the 0.38 µm
+### Exposure class
+
+The {ref}`HVTPM <step-022>` page puts the 0.38 µm
 width and space at {math}`k_1 \approx 0.62` on an i-line lens of NA 0.6
-and infers an i-line level; the
+and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01] At the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the same feature has
 {math}`k_1 \approx 0.50` (our arithmetic).
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
-at 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
+At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic), so the smallest features lie at or just above
 it and a plate CD error would print at about its own size (inference).
 
-**Resist.** Nothing is etched through this resist; it only has to stop
+### Resist and tone
+
+Nothing is etched through this resist; it only has to stop
 the two channel implants wherever the plate leaves it. The step page
 reads a conventional positive resist of roughly 1 µm, citing the PDK's
 generic "Photoresist thickness" of 1.14 µm, as ample for keV channel
-implants;[^pdk-03] the ion range in resist that sets the margin is what
-SRIM computes.[^ziegler-2010] Ross et al. stabilised i-line implant
+implants.[^pdk-03] The ion range in resist that sets the margin is what
+SRIM computes.[^ziegler-2010]
+
+Ross et al. stabilised i-line implant
 resists with a flood electron beam, reducing shrinkage and CD variation
 and eliminating popping.[^ross-1996] The {ref}`PCHIS <step-025>` page
 notes that a BF₂ implant leaves fluorine in the resist crust. SkyWater's
 resist and any hardening are not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Resist edges.** Ions scattered out of an implant resist edge alter
+### Resist edges
+
+Ions scattered out of an implant resist edge alter
 the threshold of nearby transistors, with shifts "of up to 100 mV …
 over a lateral distance on the order of a micrometer" in Hook et al.'s
-work on well implants;[^hook-2003] Sheu et al. model the effect and
+work on well implants.[^hook-2003] Sheu et al. model the effect and
 Drennan, Kniffin and Locascio set out its consequences for analogue
 layout.[^sheu-2006][^drennan-2006] The PDK does not say whether the
 0.180 µm rules hvtp.3 and hvtp.4 allow for it; we read them as placement
 margins against the active and gate patterns (inference).
 
-**Pattern transfer.** On the step pages' readings the pattern is
-transferred into the N-well surface as dopant by
-{ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` on the
-{ref}`medium-current implanter <machine-medium-current-implanter>`
-class, and the resist is removed at {ref}`PCHIS <step-025>` on the
-{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
-{ref}`wet bench <machine-wet-bench>` classes. The species, energies and
-doses are not public; an AMD multi-threshold patent gives a laterally
-doped channel implant, made after gate formation with the gate pillars
-as a self-aligned mask, of "approximately 10-20 KeV for boron or 45-90
-KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
-ions/cm²"[^pat-vt-amd] — a different placement from the pre-gate
-implants read here.
+### Overlay and alignment
 
-**Overlay.** The {ref}`HVTPM <step-022>` page reads the mask as aligned
+The {ref}`HVTPM <step-022>` page reads the mask as aligned
 to the trench pattern and names the 0.180 µm enclosure of a PMOS by
 `hvtp` (hvtp.3) and spacing from other PMOS (hvtp.4) as its overlay
 budget against the active pattern.[^pdk-periph] ASML specifies "≤ 40 nm"
 single-machine overlay for the /275D stepper[^asml-pas5500-275d] (our
 comparison; how SkyWater budgets the margin is not public).
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
+transferred into the N-well surface as dopant by
+{ref}`PCHI <step-023>` and {ref}`PNCHI <step-024>` on the
+{ref}`medium-current implanter <machine-medium-current-implanter>`
+class, and the resist is removed at {ref}`PCHIS <step-025>` on the
+{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
+{ref}`wet bench <machine-wet-bench>` classes.
+
+The species, energies and
+doses are not public. An AMD multi-threshold patent gives a laterally
+doped channel implant, made after gate formation with the gate pillars
+as a self-aligned mask, of "approximately 10-20 KeV for boron or 45-90
+KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
+ions/cm²"[^pat-vt-amd] — a different placement from the pre-gate
+implants read here.
 
 (mask-hvtpm-steps)=
 ## Steps that use this mask
@@ -308,6 +370,8 @@ The `hvtp` rules of the periphery rules, with the `lvtn`, varactor and
 periphery only (outside areaid.ce). A corresponding core rule may or may
 not exist.".[^pdk-periph]
 
+:::{table} The `hvtp` rules and the `lvtn`, varactor and `hvtr` rules that refer to the layer, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | hvtp.1 | "Min width of hvtp" | 0.380 µm |
@@ -320,6 +384,7 @@ not exist.".[^pdk-periph]
 | varac.3 | "Min spacing between hvtp to Var_channel" | 0.180 µm |
 | varac.8 | "Min enclosure of Var_channel by hvtp" | 0.255 µm |
 | hvtr.2 | "Min spacing between hvtp to hvtr" | 0.380 µm |
+:::
 
 Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) repeats the width and space as
 `HVTPMCD` 0.38 and `HVTPMCDSP` 0.38;[^pdk-03] no other criterion of
@@ -336,20 +401,18 @@ created layer the same 0.38 width and spacing (`chvtpm.1`,
 * {ref}`HVTPM <step-022>`, {ref}`PCHI <step-023>`,
   {ref}`PNCHI <step-024>` and {ref}`PCHIS <step-025>` — the mask step,
   the two implants and the strip.
-* {ref}`mask-lvtnm` — the other threshold mask of the module, which the
-  high-Vt PMOS rows of Table F2b pair with this one.
-* {ref}`mask-nwm` — the N-well mask, whose resist carries the baseline
-  PMOS threshold implant.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the derivations the renders use.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` — the implant class that uses
-  the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` — the implant class that uses
+  the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-lvtnm` — the other threshold mask of the module, which the
+  high-Vt PMOS rows of Table F2b pair with this one. {ref}`mask-nwm` — the N-well mask, whose resist carries the baseline
+  PMOS threshold implant.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the derivations the renders use.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
@@ -436,7 +499,9 @@ created layer the same 0.38 width and spacing (`chvtpm.1`,
 * Whether the plate is opened over drawn `hvtp`, as the step page reads
   it, or over low-voltage N-well outside the low-Vt devices, as Table
   F2b's rows, the `chvtpm` checks and the renders' expression suggest,
-  is not stated in the PDK;[^pdk-06][^pdk-errors][^mask-renders] the
+  is not stated in the PDK.[^pdk-06][^pdk-errors][^mask-renders]
+
+  The
   Error Messages page does not define `CLHVTPM`, and the renders' note
   contradicts its own expression and names no source for its "fab
   algorithm".
