@@ -2236,6 +2236,10 @@ Review the diff **and** the rendered tiles. The executor cannot see what it did 
 9. **Read the progress file.** Anything the executor flagged as doubtful is a finding for the
    coordinator, not something the reviewer fixes in the readability branch.
 10. **Reject the page if any item of the Never list (§2) was broken**, however good the rest is.
+11. **Read every new bold label, H3 and Related-steps label as a claim. Is it true of the text it
+    heads?** A checker cannot see this: "Tightest isolation width" over a bullet that says the rule
+    is *not* the tightest, and "Same module:" over a list that spans the whole flow, both passed
+    every checker and were only found by reading the label against its own text.
 
 ## 9. Blocked rules
 
