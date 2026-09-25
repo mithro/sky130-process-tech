@@ -81,6 +81,14 @@ The pages are drafted once the evidence exists. The provisional list:
   `readability-guide.md` marks inferences. It has a `--selftest`, sits in
   the `pre_build` list of `.readthedocs.yaml`, and appears in both check
   lists of `agent-briefs.md`.
+* The same tool checks that the footnotes and the evidence are the same
+  documents. Every footnote on a history page must carry the `url` or
+  `archive_url` of an evidence record (a filing's `urls`, a patent's
+  number). In every claim, each source must be a document one of the
+  claim's footnotes points at, and each footnote must have a source.
+  So a reader who follows a footnote reaches exactly the evidence the
+  claims matrix counted, and the quotes in that record are checked
+  against a cached copy by `tools/check_history_quotes.py`.
 * `tools/check_links.py` must pick up the history pages' URLs, and
   `tools/fix_reading_list_links.py` must convert their reading-list
   bullets. Run both on the pages and confirm it.

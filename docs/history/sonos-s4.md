@@ -48,7 +48,7 @@ production since 2001" (Cypress's reports).[^qtp-021507][^qtp-042806][^eflash-br
 **Earlier SONOS?** Infineon's history of PSoC, written after it bought Cypress, says Cypress had CPLDs
 "based on its SONOS process technology" in the late 1980s. No other source found supports this, and it
 conflicts with the 2001 dates above. Cypress's 1993 10-K lists "0.65-micron Flash technologies" but does
-not say they were SONOS.[^psoc-history][^ar-fy1993]
+not say they were SONOS.[^psoc-history][^eflash-brief][^ar-fy1993]
 
 **Fab 2.** Cypress's 2002 report says "our SONOS process in Fab 2" was ramping. From 2002 to 2006 the 10-Ks
 list "0.35-micron Silicon Nitride Oxide Silicon (SONOS)" among Cypress's processes (Cypress's
@@ -110,8 +110,7 @@ The S4AD-5 reports name these products (Cypress's reports):[^qtp-021507][^qtp-04
   buffers, the CY23FP12, the Failsafe CY26049 and CY23FS04/CY23FS08, and the CY5048WAF WLAN clock
   generator on the "S4ADLatch" variant.
 
-Infineon's history of PSoC says "PSoC™ 1, used the SONOS process technology", which agrees with the
-reports.[^psoc-history]
+Infineon's history of PSoC says "PSoC™ 1, used the SONOS process technology", which agrees with the reports.[^psoc-history][^qtp-062509]
 
 ## The patents
 

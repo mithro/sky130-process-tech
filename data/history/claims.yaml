@@ -272,7 +272,7 @@ claims:
   anchor: Both descriptions fit the reports
   grade: inference
   hedge: (our reading)
-  footnotes: [strib-2017, strib-2019]
+  footnotes: [strib-2017, strib-2019, ar-fy1993]
   sources:
   - {id: cyx-startribune-2017-plant, origin: startribune}
   - {id: cyx-startribune-2019-plant-history, origin: startribune}
@@ -296,7 +296,6 @@ claims:
   sources:
   - {id: qtp-097483, origin: cypress}
   - {id: qtp-102101, origin: cypress}
-  - {id: qtp-098368, origin: cypress}
 - id: fab4-pin-families
   page: docs/history/fabs.md
   anchor: 90nm C9/R9/R95 technology products at Cypress Fab 4
@@ -326,6 +325,7 @@ claims:
   footnotes: [ar-fy1995, ar-fy1996, fu-cypress]
   sources:
   - {id: cyx-ar-fy1995-fabv, origin: cypress}
+  - {id: cyx-ar-fy1996-fabv-hold, origin: cypress}
   - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
 - id: fab5-hold
   page: docs/history/fabs.md
@@ -390,7 +390,6 @@ claims:
   sources:
   - {id: cyx-ar-fy1998-foundries, origin: cypress}
   - {id: qtp-080608, origin: cypress}
-  - {id: qtp-110605, origin: cypress}
   - {id: qtp-s050001, origin: cypress}
 - id: fab-grace-65nm-conflict
   page: docs/history/fabs.md
@@ -415,7 +414,7 @@ claims:
   anchor: The node therefore differs between
   grade: conflict
   hedge: differs between
-  footnotes: [edn-2005-honeywell]
+  footnotes: [ar-fy2002, ar-fy2003, edn-2005-honeywell]
   sources:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyhist-corp-2003-ar-soi-90nm, origin: cypress}
@@ -648,7 +647,6 @@ claims:
   sources:
   - {id: qtp-003907, origin: cypress}
   - {id: qtp-102101, origin: cypress}
-  - {id: qtp-098368, origin: cypress}
 - id: tech-s4ad5-derivative
   page: docs/history/technologies.md
   anchor: an "R42D-5 derivative w/ 6 additional mask" (single source)
@@ -760,7 +758,6 @@ claims:
   sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}
   - {id: qtp-011908, origin: cypress}
-  - {id: qtp-014807, origin: cypress}
 - id: tech-r7-metal-vs-s8
   page: docs/history/technologies.md
   anchor: The R7 stacks put 150 Å of titanium under the aluminium
@@ -835,9 +832,11 @@ claims:
   anchor: before and alongside the first S8 products
   grade: inference
   hedge: our reading
-  footnotes: []
+  footnotes: [qtp-063807, qtp-061806, qtp-032003, qtp-113005]
   sources:
-  - {id: cyhist-corp-2004-ar-90nm-prod, origin: cypress}
+  - {id: qtp-063807, origin: cypress}
+  - {id: qtp-061806, origin: cypress}
+  - {id: qtp-032003, origin: cypress}
   - {id: qtp-113005, origin: cypress}
 - id: tech-r9q-metal-conflict
   page: docs/history/technologies.md
@@ -981,7 +980,7 @@ claims:
   anchor: in the late 1980s
   grade: conflict
   hedge: conflicts with the 2001 dates above
-  footnotes: [psoc-history, ar-fy1993]
+  footnotes: [psoc-history, eflash-brief, ar-fy1993]
   sources:
   - {id: cyx-infineon-psoc-history, origin: cypress}
   - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
@@ -1098,7 +1097,7 @@ claims:
   anchor: used the SONOS process technology", which agrees with the
   grade: attributed
   attribution: Infineon
-  footnotes: [psoc-history]
+  footnotes: [psoc-history, qtp-062509]
   sources:
   - {id: cyx-infineon-psoc-history, origin: cypress}
   - {id: qtp-062509, origin: cypress}
@@ -1191,12 +1190,10 @@ claims:
 - id: s8-pdk-110a
   page: docs/history/s8-lineage.md
   anchor: The SKY130 PDK, from SkyWater, says its high-voltage devices
-  grade: attributed
-  attribution: SkyWater
+  grade: single-source
   footnotes: [pdk-hv]
   sources:
   - {id: cyx-pdk-hv, origin: skywater}
-  - {id: qtp-113005, origin: cypress}
 - id: s8-grace-013
   page: docs/history/s8-lineage.md
   anchor: 0.13-micron SRAM and LOGIC

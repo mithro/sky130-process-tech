@@ -35,6 +35,19 @@ with the organisation it comes from (``origin``). The rules:
   paragraph must carry the claim's ``hedge``, "our reading", "our arithmetic"
   or "our inference".
 
+**Links between footnotes and evidence.** A claim is only as good as the
+reader's ability to find its sources, so the footnotes the reader sees and
+the evidence records the matrix counts must be the same documents:
+
+* every footnote defined on a history page must point at an evidence
+  record: its definition must carry the record's ``url`` or
+  ``archive_url`` (for a filing, one of its ``urls``; for a patent family,
+  one of its patent numbers);
+* in every claim, each source must be one of the documents the claim's
+  footnotes point at, and each of the claim's footnotes must point at one
+  of its sources. A source the paragraph does not cite, or a footnote no
+  source stands behind, is an error.
+
 Run ``uv run tools/check_history.py``; ``--selftest`` runs the offline tests.
 """
 
@@ -89,6 +102,101 @@ def evidence_ids() -> dict[str, str]:
                           "patents.yaml": "patent-record", "papers.yaml": f"paper:{rec['id']}"}[name]
                 ids[str(rec["id"])] = origin
     return ids
+
+
+DEF_RE = re.compile(r"(?m)^\[\^([^\]\s]+)\]:(.*(?:\n    .*)*)")
+URL_RE = re.compile(r"https?://[^\s<>)\]]+")
+PATENT_RE = re.compile(r"\b(US\d{7,8}[AB]\d?)\b", re.I)
+
+
+def link_keys(text: str) -> set[str]:
+    """The documents a piece of text points at: URLs with the scheme and any Wayback prefix
+    removed, and US patent numbers."""
+    keys: set[str] = set()
+    for url in URL_RE.findall(text):
+        u = url.strip().rstrip(".,;'\"")
+        for _ in range(2):
+            u = re.sub(r"^https?://", "", u)
+            u = re.sub(r"^web\.archive\.org/web/\d+(?:id_)?/", "", u)
+        keys.add(u.rstrip("/").lower())
+    keys |= {"patent:" + p.upper() for p in PATENT_RE.findall(text)}
+    return keys
+
+
+def _strings(x: object):
+    if isinstance(x, str):
+        yield x
+    elif isinstance(x, dict):
+        for v in x.values():
+            yield from _strings(v)
+    elif isinstance(x, list):
+        for v in x:
+            yield from _strings(v)
+
+
+def evidence_links() -> dict[str, set[str]]:
+    """Evidence record id -> the documents it is about (see ``link_keys``)."""
+    links: dict[str, set[str]] = {}
+    for path in sorted(DATA.glob("*.yaml")):
+        if path == CLAIMS:
+            continue
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for key in ("documents", "records"):
+            for rec in doc.get(key, []) or []:
+                if isinstance(rec, dict) and rec.get("id"):
+                    links[str(rec["id"])] = set().union(
+                        *(link_keys(str(rec[k])) for k in ("url", "archive_url") if rec.get(k)))
+    for name, key in (("filings.yaml", "filings"), ("patents.yaml", "families")):
+        path = ROOT / "data" / name
+        if not path.exists():
+            continue
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for rec in (doc if isinstance(doc, list) else doc.get(key, []) or []):
+            if not isinstance(rec, dict) or not rec.get("id"):
+                continue
+            if name == "patents.yaml":
+                nums = [rec.get("representative") or ""] + [
+                    (m.get("number") or "") if isinstance(m, dict) else str(m) for m in rec.get("members") or []]
+                links[str(rec["id"])] = {"patent:" + n.upper() for n in nums if n}
+            else:
+                links[str(rec["id"])] = set().union(*(link_keys(s) for s in _strings(rec.get("urls"))))
+    return links
+
+
+def footnote_links(pages: dict[str, str]) -> dict[str, set[str]]:
+    """Footnote label -> the documents its definitions point at, over all history pages."""
+    out: dict[str, set[str]] = {}
+    for rel, text in pages.items():
+        if rel.endswith("/sources.md"):
+            continue
+        for m in DEF_RE.finditer(text):
+            out.setdefault(m.group(1), set()).update(link_keys(m.group(2)))
+    return out
+
+
+def check_links(claims: list[dict], pages: dict[str, str], links: dict[str, set[str]]) -> list[str]:
+    problems: list[str] = []
+    labels = footnote_links(pages)
+    for label in sorted(labels):
+        if not any(labels[label] & keys for keys in links.values()):
+            problems.append(f"footnote [^{label}] points at no evidence record in data/history/ or "
+                            f"data/{{filings,patents}}.yaml")
+    for c in claims:
+        where = f"claims.yaml:{c.get('id', '?')}"
+        footnotes = c.get("footnotes") or []
+        covered: set[str] = set()
+        for s in c.get("sources") or []:
+            if not isinstance(s, dict) or s.get("id") not in links:
+                continue
+            hits = [fn for fn in footnotes if labels.get(fn, set()) & links[s["id"]]]
+            if not hits:
+                problems.append(f"{where}: source {s['id']!r} is not the document of any of the claim's "
+                                f"footnotes {footnotes}; cite it in the paragraph or drop it")
+            covered.update(hits)
+        for fn in footnotes:
+            if fn in labels and fn not in covered:
+                problems.append(f"{where}: footnote [^{fn}] has no source in the claim; add its evidence record")
+    return problems
 
 
 ITEM_RE = re.compile(r"^\s*(?:[*-]|\d+\.)\s")
@@ -176,7 +284,7 @@ def check_claims(claims: list[dict], pages: dict[str, str], ids: dict[str, str])
             problems.append(f"{where}: anchor {c.get('anchor')!r} not found on {page}")
             continue
         footnotes = c.get("footnotes") or []
-        if not footnotes and grade != "inference":
+        if not footnotes:
             problems.append(f"{where}: no footnotes listed")
         in_para = set(check_refs.REF_RE.findall(para))
         for fn in footnotes:
@@ -282,6 +390,24 @@ def selftest() -> int:
                         ("b6", "has origin"), ("b7", "does not name")]:
         if not any(f":{cid}:" in x and needle in x for x in p):
             fails.append(f"{cid}: expected a problem containing {needle!r}; got {p}")
+    links = {"r1": {"a.example"}, "r2": {"b.example"}, "r3": {"c.example"}}
+    if (p := check_links(ok, pages, links)):
+        fails.append(f"valid links reported: {p}")
+    linkbad = [
+        {"id": "l1", "page": "p.md", "anchor": "0.35 µm", "grade": "single-source", "footnotes": ["a"],
+         "sources": [{"id": "r3", "origin": "cypress"}]},
+        {"id": "l2", "page": "p.md", "anchor": "Fab 2 ran S4AD-5", "grade": "corroborated", "footnotes": ["a", "b"],
+         "sources": [{"id": "r1", "origin": "cypress"}]},
+    ]
+    p = check_links(linkbad, pages, links)
+    for cid, needle in [("l1", "'r3' is not the document"), ("l1", "[^a] has no source"), ("l2", "[^b] has no source")]:
+        if not any(f":{cid}:" in x and needle in x for x in p):
+            fails.append(f"{cid}: expected a link problem containing {needle!r}; got {p}")
+    p = check_links([], {"p.md": page + "[^d]: D. <https://d.example/>\n"}, links)
+    if not any("[^d] points at no evidence record" in x for x in p):
+        fails.append(f"orphan footnote not reported: {p}")
+    if link_keys("x <https://web.archive.org/web/2020id_/https://A.example/f/>") != {"a.example/f"}:
+        fails.append("link_keys does not strip the Wayback prefix")
     for f in fails:
         print("FAIL:", f)
     if not fails:
@@ -299,6 +425,7 @@ def main() -> int:
     pages, problems = check_pages(keys)
     claims = (yaml.safe_load(CLAIMS.read_text(encoding="utf-8")) or {}).get("claims", []) if CLAIMS.exists() else []
     problems += check_claims(claims, pages, evidence_ids())
+    problems += check_links(claims, pages, evidence_links())
     for p in problems:
         print(p)
     print(f"{len(pages)} history pages, {len(claims)} claims checked, {len(problems)} problem(s)")

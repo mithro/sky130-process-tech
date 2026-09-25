@@ -114,8 +114,7 @@ Cypress's first eight-inch fab.[^ar-fy1995][^ar-fy1997][^sd-2007-fab2]
 
 **One site, two fabs.** SkyWater's plant is described in the press as the plant Cypress bought in 1991,
 and the SKY130 reference counts Cypress's time there as 26 years, 1991 to 2017 (see {ref}`filings-index`).[^strib-2017]
-Both descriptions fit the reports: the site bought in 1991 held Fab 3, and Fab 4 was added to it in
-1994–95. We read the Star Tribune's "under Cypress, the size of the cleanroom at SkyWater's plant more than
+Both descriptions fit the reports: the site bought in 1991 held Fab 3, and Fab 4 was added to it in 1994–95.[^ar-fy1993] We read the Star Tribune's "under Cypress, the size of the cleanroom at SkyWater's plant more than
 doubled" as the Fab 4 addition (our reading).[^strib-2019]
 
 **Fab 4a, 4b and 4c.** Cypress's 1997 report planned to use Fab 3's upgraded tools "to build out Fab
