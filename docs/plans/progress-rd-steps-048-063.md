@@ -262,6 +262,66 @@ table cells > 25: 0. After: see the batch summary at the end.
   the one uncited piece is the pointer "Beyond the step list, one public document names the mask."
 * **Caps**: para > 100 5 → 0; item > 60 1 → 0; sentence > 45 7 → 0.
 
+### 053 PRI — done
+
+* **R-H3.** `### What the public record shows` after the figure caption (the PDK target — the page's
+  own "The target is public" — and the illustrative estimate); in `## Why this step exists`, over the
+  313-word test-tile passage, `### How the sheet resistance is estimated` (the passage extracts a
+  sheet resistance from the published sweeps and compares it with the PDK's values; titles must be
+  unique on the page, so the first title could not be reused there). "**Single or multiple
+  implants.**" labels one paragraph and stays bold.
+* **R-LIST.** The test-tile structures ("carries the structures …: eleven modules of "…" … pairs, and
+  a van der Pauw structure measures "…"") → lead-in with `[^raw-data-testtile-pads]` before the colon
+  and two plain bullets (only "and" dropped; the double space inside the quoted "P+  POLY" kept).
+* **R-TABLE (inside an Open-questions bullet, R-OPENQ step 2).** "Resistor ends" (81 w, a 67-word
+  "respectively" sentence): the three measured/nominal pairs → an indented `Width (µm) | Measured
+  ends (Ω) | E-test nominal ends (Ω)` table; the lead-in keeps every hedge ("(the median 4-square
+  resistance less four squares of body; our extraction)", "(our arithmetic)") and both markers before
+  its colon; the question "How that divides … is not public." stays last, unchanged. Wording added
+  by the conversion: "at the values below", "against those that" (for "against the 68, 256 and
+  392 Ω that"). Pairing checked by hand: 5.73 µm ↔ about 70 ↔ 68; 1.41 µm ↔ 190 ↔ 256; 0.69 µm ↔
+  390 ↔ 392 ("about" stays on the first value, where the base wrote it).
+* **R-PARA / R-SENTENCE.** Target paragraph (123 w) split before "For a 0.18 µm film". Test-tile
+  passage: the 93-word extraction sentence split at its semicolon, **the whole hedge "(our extraction
+  from the published measurements; the files record no temperature, date or wafer)" repeated** on
+  the first half with its marker (R-SENTENCE step 5); the e-test sentence split at "— and the same
+  arithmetic" (`[^pdk-07]` repeated so both halves keep it); the 58-word measured sentence split at
+  ", and every measured structure" with "(our extraction)" and `[^raw-data-passives]` repeated on the
+  first half. "Why" paragraph 1 (171 w) → three paragraphs; the 73-word literature sentence split at
+  ", and Wright et al." (the em dash before "Lu et al." kept, so the claim and its first two studies
+  stay in one cited sentence).
+* **R-CATEGORY.** Classification sentence (15 w) alone; the one remaining sentence as the second
+  paragraph, split at its colon (53 → 9 + 44 w; `[^seto-1975]` stays on the steepness clause).
+* **R-PARA step 4.** "Dose" (66 w): lead + continuation at "Dose control is the whole point".
+* **R-HEDGE, R-TOOLS** (*SkyWater says:* the two quotations; the Semiconductor Online sentence about
+  the 8250HT is a vendor description, so it is the continuation paragraph), **R-OPENQ** (labels
+  "Species, energy, dose and tilt", "The `urpm` bodies", "Which implanter", "How much is set
+  here", "Resistor ends").
+* **R-RELATED.** Previous/Next split; "Protected from the gate implant at RPM / P1I; … UPRI" →
+  `Same module:` (all three in the module); the "Later steps that touch the resistor" bullet (mixed
+  modules) keeps its own gloss and no label.
+* **R-GLANCE.** Public numbers are the PDK's 300 Ω/sq and 319.8 Ω/sq; the extracted values are not
+  in the box. Tool line keeps "which one is not stated".
+* **Left over the caps (known items).** "For a 0.18 µm film, 300 Ω/sq corresponds to … — an
+  illustrative estimate, not a SkyWater number." (51 w): its closing hedge covers the whole chain, so
+  a split would leave part of it unhedged. The extraction-method sentence "Taking the difference …
+  narrower than drawn (our extraction …; the files record no temperature, date or wafer)." (64 w with
+  the repeated hedge): one method, no seam. "Every measured structure 0.69 µm or wider … (our
+  extraction)." (46 w). The "Resistor ends" lead-in (49 w including its two hedges).
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07` ×2 (glance; the e-test split),
+  `pdk-08`, `skw-01` (glance), `raw-data-passives` ×2 (the two repeated extraction hedges); numbers
+  300, 319.8 (glance), 8250 (glance tool name); hedges "not public" (glance label), "our extraction"
+  ×2 (the repeats). REGROUPED: all sentence splits, same digits in the same order. **LOST
+  number_order** ('70', '5.73', '190', '1.41', '390', '0.69', '4', '68', '256', '392'): the
+  resistor-ends table puts the width first in each row (the rule-table pattern the batch-2 and
+  batch-3 reviews accepted); every pairing checked by hand above; "4" (4-square) stays in the
+  lead-in. Final run declared `markers,numbers,hedges,number_order`; the LOST line remains and is
+  explained here.
+* **Marker coverage.** 12 flags, all read: labels; the colon split in Step category (the marker's
+  clause keeps it); the test-tile list (marker on the lead-in, by rule); pieces whose base marker
+  covered a different clause.
+* **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 6 → 4 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
