@@ -14,9 +14,10 @@
 # channel implant stay in the geometry but every figure hides them, as S5's and S6's do.
 #
 # The module, as the pages describe it:
-# * PSG (089) is drawn as a conformal film thick enough to bury everything: it copies the
-#   topography, higher over the resistor and the gate than over the active areas (the CMPP
-#   page's "stands roughly 0.4 um higher over every capped gate line and resistor body").
+# * PSG (089) is drawn as a gap-filling deposit (`profile: gapfill`, the HDP route the PSG page
+#   reads) thick enough to bury everything: filled from the bottom, higher over the resistor
+#   and the gate than over the active areas, with sloped facets over them (the CMPP page's
+#   "stands roughly 0.4 um higher over every capped gate line and resistor body").
 # * CMPP (090) polishes it flat. The pages read the polish as stopping on the nitride caps of
 #   the poly lines (inferred). The tallest capped poly is a line on the field oxide; none is in
 #   this slice, whose resistor head has no cap, and in this drawing (as in the PDK's heights)
@@ -666,6 +667,7 @@ ops:
     id: psg
     material: psg
     t: 46
+    profile: gapfill
     label:
       title: "Phosphosilicate glass"
       note: "PSG, step 089"

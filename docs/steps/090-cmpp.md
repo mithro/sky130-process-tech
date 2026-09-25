@@ -24,7 +24,7 @@ and the surface is flat to within the depth of focus of the contact
 lithography that follows.
 
 :::{figure} /_static/figures/mol-090-cmpp.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step a thick dotted glass with a stepped top buries two active areas, an oxide-filled trench with a wide stack on it, and a narrow capped gate. After it the glass is polished flat: a thin layer of it is left over the wide stack and a thicker one over the gate and the active areas.
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thick dotted glass with a faceted top buries two active areas, an oxide-filled trench with a wide stack on it, and a narrow capped gate. After it the glass is polished flat: a thin layer of it is left over the wide stack and a thicker one over the gate and the active areas.
 :width: 560px
 :name: fig-mol-090-cmpp
 

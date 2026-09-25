@@ -31,8 +31,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-nitride" data-layer="nit" points="158.94,72.20 250.06,72.20 250.06,109.94 158.94,109.94"/>
 <polygon fill="url(#p-hatch)" points="158.94,72.20 250.06,72.20 250.06,109.94 158.94,109.94"/>
 <polygon class="mat m-oxide-dep" data-layer="capox" points="158.94,42.00 250.06,42.00 250.06,72.20 158.94,72.20"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,166.56 139.75,166.56 139.88,165.51 140.25,120.51 140.38,109.94 158.94,109.94 158.94,185.44 9.00,185.44"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,109.94 268.62,109.94 268.75,118.82 269.12,163.82 269.25,166.56 283.00,166.56 283.00,185.44 250.06,185.44"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,166.56 139.87,166.56 140.34,109.94 158.94,109.94 158.94,185.44 9.00,185.44"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,109.94 268.68,109.94 269.15,166.56 283.00,166.56 283.00,185.44 250.06,185.44"/>
 <polygon class="mat m-sd-n" data-layer="polyn" points="158.94,109.94 250.06,109.94 250.06,185.44 158.94,185.44"/>
 <polygon class="mat m-implant" data-layer="halo" points="9.00,204.31 178.06,204.31 178.06,242.06 9.00,242.06"/>
 <polygon fill="url(#p-vlines-ink)" points="9.00,204.31 178.06,204.31 178.06,242.06 9.00,242.06"/>

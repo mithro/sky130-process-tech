@@ -4,8 +4,7 @@ page: docs/steps/090-cmpp.md
 series: series-mol.yaml
 crop_depth: 60
 alt: >-
-  Two cross-sections of the wafer, one above the other. Before the step a thick dotted glass with
-  a stepped top buries two active areas, an oxide-filled trench with a wide stack on it, and a
+  Two cross-sections of the wafer, one above the other. Before the step a thick dotted glass with a faceted top buries two active areas, an oxide-filled trench with a wide stack on it, and a
   narrow capped gate. After it the glass is polished flat: a thin layer of it is left over the
   wide stack and a thicker one over the gate and the active areas.
 caption: >-

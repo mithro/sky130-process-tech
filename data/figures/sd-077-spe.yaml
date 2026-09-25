@@ -15,8 +15,8 @@ caption: >-
   deposited; after, the unmasked etch-back has taken the film's own thickness off every
   horizontal surface, and what is left against the gate's sidewalls is the spacer. The etch is
   drawn stopping on the oxide over the silicon, which is this reference's reading; whether it
-  stops there, on a separate liner, or on silicon is not public. The spacer is drawn with a flat
-  top and a vertical outer wall; its profile and width are not public. The cap is drawn as it
+  stops there, on a separate liner, or on silicon is not public. The spacer is drawn with a rounded top and a vertical outer wall, as a conformal film leaves it
+  when its own thickness is etched straight down; its real profile and width are not public. The cap is drawn as it
   was: the page reads the PDK's 0.2 µm "poly cap after SPE" as what is left of the cap stack
   when this etch is done,[^pdk-03] and how much the etch takes, or whether the oxide cap
   survives, is not public. Outside this view the same etch leaves spacers on the resistor's

@@ -31,8 +31,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-nitride" data-layer="nit" points="158.94,72.20 250.06,72.20 250.06,109.94 158.94,109.94"/>
 <polygon fill="url(#p-hatch)" points="158.94,72.20 250.06,72.20 250.06,109.94 158.94,109.94"/>
 <polygon class="mat m-oxide-dep" data-layer="capox" points="158.94,42.00 250.06,42.00 250.06,72.20 158.94,72.20"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,166.56 139.75,166.56 139.88,165.51 140.25,120.51 140.38,109.94 158.94,109.94 158.94,185.44 9.00,185.44"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,109.94 268.62,109.94 268.75,118.82 269.12,163.82 269.25,166.56 283.00,166.56 283.00,185.44 250.06,185.44"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,166.56 139.87,166.56 140.34,109.94 158.94,109.94 158.94,185.44 9.00,185.44"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,109.94 268.68,109.94 269.15,166.56 283.00,166.56 283.00,185.44 250.06,185.44"/>
 <polygon class="mat m-sd-n" data-layer="polyn" points="158.94,109.94 250.06,109.94 250.06,185.44 158.94,185.44"/>
 </g>
 <text x="328.0" y="219.2" class="t-label-title" data-owner="sub">Silicon wafer</text>
@@ -58,8 +58,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-nitride" data-layer="nit" points="158.94,485.24 250.06,485.24 250.06,522.99 158.94,522.99"/>
 <polygon fill="url(#p-hatch)" points="158.94,485.24 250.06,485.24 250.06,522.99 158.94,522.99"/>
 <polygon class="mat m-oxide-dep" data-layer="capox" points="158.94,455.04 250.06,455.04 250.06,485.24 158.94,485.24"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,579.60 139.75,579.60 139.88,578.55 140.25,533.55 140.38,522.99 158.94,522.99 158.94,598.48 9.00,598.48"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,522.99 268.62,522.99 268.75,531.86 269.12,576.86 269.25,579.60 283.00,579.60 283.00,598.48 250.06,598.48"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,579.60 139.87,579.60 140.34,522.99 158.94,522.99 158.94,598.48 9.00,598.48"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,522.99 268.68,522.99 269.15,579.60 283.00,579.60 283.00,598.48 250.06,598.48"/>
 <polygon class="mat m-sd-n" data-layer="polyn" points="158.94,522.99 250.06,522.99 250.06,598.48 158.94,598.48"/>
 <polygon class="mat m-tip-n" data-layer="tipn" points="9.00,617.35 159.19,617.35 159.19,640.00 9.00,640.00"/>
 <polygon fill="url(#p-xhatch)" points="9.00,617.35 159.19,617.35 159.19,640.00 9.00,640.00"/>

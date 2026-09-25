@@ -26,7 +26,7 @@ polishing margin — is the industry-typical target for a plug fill
 (category page[^txt-01]).
 
 :::{figure} /_static/figures/mol-099-wdep.svg
-:alt: Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other. Before the step a thin purple film lines the hole, with a teal disc under it at the bottom. After it a cross-hatched grey metal fills the hole completely and covers the whole flat top in an even layer.
+:alt: Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other. Before the step a thin purple film lines the hole, with a teal disc under it at the bottom. After it a cross-hatched grey metal fills the hole completely and covers the whole flat top in an even layer, with a shallow dip over the hole.
 :width: 560px
 :name: fig-mol-099-wdep
 

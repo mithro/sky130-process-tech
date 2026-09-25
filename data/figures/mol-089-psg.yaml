@@ -6,16 +6,16 @@ crop_depth: 110
 alt: >-
   Two cross-sections of the wafer, one above the other. Before the step a thin oxide covers two
   active areas, an oxide-filled trench between them with a wide stack on it, and a narrow capped
-  gate on the right. After it a thick dotted glass buries everything; its top steps up from the
-  left-hand active area to a plateau over the wide stack and stays high over the gate.
+  gate on the right. After it a thick dotted glass buries everything; its top rises in sloped facets from the left-hand active area to a plateau over the wide stack,
+  dips between the stack and the gate and rises again over the gate.
 caption: >-
   Before, the slice after the source/drain anneal; after, the phosphosilicate glass over
-  everything; its top copies the steps beneath it in broad terraces, lowest over the 5 V area on
-  the left. The PDK's stack diagram
+  everything; its top is drawn as a gap-filling deposit would leave it, filled from the bottom between the
+  raised features and rising over them in sloped facets, lowest over the 5 V area on the left. The PDK's stack diagram
   labels this dielectric "PSG K=3.9".[^pdk-04] Its as-deposited thickness is not public: the
   page infers a film of the order of 0.6–0.9 µm, a typical industry figure,[^txt-05] and it is
-  not drawn to scale. Its real profile, how it fills the gaps between lines and any undoped liner under it are not
-  drawn. The
+  not drawn to scale. The drawn profile only illustrates such a deposit; the real profile, how the glass fills the
+  gaps between lines and any undoped liner under it are not drawn. The
   colours mark the type of the doping, not a depth profile. The spacers, the caps, the gate
   oxides, the gate film, the re-oxidation oxide, the spacer oxide, the tips and the halo, and the field oxide (the
   oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel
