@@ -1,0 +1,38 @@
+id: m1-112-tial6
+kind: xsection
+page: docs/steps/112-tial6.md
+series: series-metal1.yaml
+close_up: [170, 268]
+close_up_name: "the right-hand metal contact"
+routes: {m1bot: right, m1al: right, m1cap: right}
+crop_depth: -130
+alt: >-
+  Two enlarged cross-sections of a small tungsten plug set flush in a flat pale oxide over a thin
+  purple pad. Before the step the top is flat oxide with the plug's top showing. After it three
+  blanket films cover the whole top: a thin purple film, a thick silver film with diagonal lines,
+  and another thin purple film.
+caption: >-
+  A close-up of the right-hand metal contact; the lower part of the slice is cut off. Before, the
+  flush plug; after, the metal-1 stack over the whole wafer: a thin bottom film, the
+  aluminium–copper alloy and a thin cap. Which refractory films the bottom and the cap are is not
+  public for SKY130. A 2013 Cypress report for the fab's S8TNV-5R technology gives "Metal 1: 100A
+  Ti / 3200A Al -0.5%Cu / 300A TiW",[^cyp-qtp-113005] and a 2014 report records a change to
+  "150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN";[^cyp-qtp-123907] the overview of the metal
+  cap sets out both, and this figure does not choose: the bottom and the cap are drawn in the one
+  colour of the titanium films and labelled with both readings. The PDK's stack diagram labels
+  metal 1 0.36 µm;[^pdk-04] nothing is drawn to scale. The tungsten plug, its liner, the LI nitride cap, the local
+  interconnect, the local-contact plug, the glass and the cap oxide below are drawn but not
+  labelled. Not to scale.
+arrow:
+  title: "TIAL6, step 112"
+  note: "A bottom film, the aluminium–copper and a cap are sputtered over the whole wafer."
+panels:
+  - state_after: "111"
+    title: "Before: the flush plug (step 111)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner, mcw, lint]
+  - state_after: "112"
+    title: "After: the three-film metal-1 stack"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner, mcw, lint]
+    highlight: {where: [[170, 268]]}

@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/m1-116-cmpm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thick pale oxide buries three metal lines, its top higher over the lines than over the gaps. After it the oxide is polished flat, leaving a layer of it over the tops of the lines.
+:width: 560px
+:name: fig-m1-116-cmpm
+
+Before, the inter-metal oxide as deposited; after, polished flat until the topography is gone, at a height above the metal-1 tops. The polish is stopped by the removal amount, not by a stop layer, and how much it removes is not public. The PDK's stack diagram gives the finished dielectric over metal 1, after the cap still to come, as the 0.27 µm via-1 height;[^pdk-04] nothing is drawn to scale, and the pattern-density steps the page describes are not drawn. The bottom and cap films of the metal lines, the inter-level oxide under them, the metal contacts, the local interconnect, the glass, the cap oxide, the lower tungsten plugs, the silicide discs, the contact liners and the transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::

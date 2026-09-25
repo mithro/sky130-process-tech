@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/m1-109-tin2.svg
+:alt: Two enlarged cross-sections of one small hole through a flat pale oxide and a thin hatched film down to a thin purple pad, which stands on the top of a larger tungsten plug. Before the step the hole is open, with sloping walls. After it a thin purple film of even thickness covers the flat top, the walls and the floor of the hole.
+:width: 560px
+:name: fig-m1-109-tin2
+
+A close-up of the right-hand metal contact, over the local-contact plug beside the gate; the lower part of the slice is cut off. Before, the etched hole down to the titanium nitride local interconnect; after, the titanium nitride liner over everything, on the field, the walls and the floor. The page describes it as ionised-metal-plasma TiN (SkyWater lists "Imp TiN"[^skw-01]; that this step uses it is an inference), landing on the TiN of the local interconnect, a TiN-on-TiN contact on the reading of the previous two steps; the two are drawn in the same colour. The liner thickness is not public (the page gives of the order of 10–30 nm on the field as an industry-typical value[^txt-05]); it is drawn of even thickness, and the thinner coverage at the bottom of the hole that the page expects is not drawn. The hole's bottom is 0.09 µm across in the PDK's assumptions ("Standard contact bottom CD"),[^pdk-03] not drawn to scale. The left-hand hole is lined in the same way, outside this view. The local interconnect, the local-contact plug and its liner, the glass and the cap oxide below are drawn but not labelled. Not to scale.
+:::

@@ -1,0 +1,38 @@
+id: m1-107-ctm1
+kind: xsection
+page: docs/steps/107-ctm1.md
+series: series-metal1.yaml
+crop_depth: 40
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a flat pale oxide buries
+  three thin purple pads, each capped by a thin hatched film and standing on a tungsten plug.
+  After it a violet resist covers the oxide except for two narrow windows, one over the left
+  pad and one over the right pad.
+caption: >-
+  Before, the polished inter-level oxide over the nitride-capped local interconnect; after, the
+  resist with a window over each of the two outer pads, where a metal contact is to go. The PDK
+  gives the contact as a 0.170 µm square (ct.1) with no enclosure required by the local
+  interconnect (ct.4);[^pdk-periph] where the windows fall is an illustrative choice, drawn over
+  the local-contact plugs below, and the middle pad has none in this slice. The windows are not
+  drawn to scale, and neither is the resist, whose thickness for this layer is not public. The
+  local interconnect (the thin purple pads, titanium nitride), the
+  glass, the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the
+  transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation
+  oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in
+  the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the
+  NCHI channel implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "CTM1, step 107"
+  note: "Resist is coated, exposed through the contact reticle and developed, opening the contact windows."
+panels:
+  - state_after: "106"
+    title: "Before: the polished oxide over the local interconnect (step 106)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li]
+    dim_layers: [liner]
+  - state_after: "107"
+    title: "After: resist with two contact windows"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li]
+    dim_layers: [liner]
+    highlight: {where: [[0, 28], [52, 192], [216, 268]]}

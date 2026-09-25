@@ -1,0 +1,40 @@
+id: m1-111-wcmp2
+kind: xsection
+page: docs/steps/111-wcmp2.md
+series: series-metal1.yaml
+close_up: [170, 268]
+close_up_name: "the right-hand metal contact"
+routes: {mcw: over}
+crop_depth: -130
+alt: >-
+  Two enlarged cross-sections of one small filled hole through a flat pale oxide down to a thin
+  purple pad. Before the step a cross-hatched grey metal fills the hole and covers the whole top.
+  After it the metal and its thin purple lining are gone from the top, which is flat oxide, and
+  the metal remains only in the hole as a plug flush with the oxide.
+caption: >-
+  A close-up of the right-hand metal contact, over the local-contact plug beside the gate; the
+  lower part of the slice is cut off. Before, the tungsten blanket; after, the polish has removed
+  the tungsten and the liner from the field and landed on the inter-level oxide, leaving a
+  tungsten plug flush with it. The PDK draws the plug as a 0.170 µm square (ct.1),[^pdk-periph]
+  not drawn to scale. Whether a conventional or a high-selectivity tungsten slurry is used is not public, and
+  the plug recess and oxide erosion the page describes are not drawn. The left-hand plug is
+  polished in the same way, outside this view. The local interconnect, the local-contact plug
+  and its liner, the glass and the cap oxide below are drawn but not labelled, as is the plug's
+  liner. Not to scale.
+arrow:
+  title: "WCMP2, step 111"
+  note: "The tungsten and the liner are polished off the field, down to the oxide."
+panels:
+  - state_after: "110"
+    title: "Before: the tungsten blanket (step 110)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner]
+    labels:
+      mcw: {title: "Tungsten"}
+  - state_after: "111"
+    title: "After: a tungsten plug, flush with the oxide"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner]
+    labels:
+      mcw: {title: "Tungsten plug", note: "deposited at step 110; polished at step 111"}
+    highlight: {where: [[170, 268]]}

@@ -1,0 +1,35 @@
+id: m1-110-wdep2
+kind: xsection
+page: docs/steps/110-wdep2.md
+series: series-metal1.yaml
+close_up: [170, 268]
+close_up_name: "the right-hand metal contact"
+routes: {mcliner: right, mcw: right}
+crop_depth: -130
+alt: >-
+  Two enlarged cross-sections of one small lined hole through a flat pale oxide and a thin hatched
+  film down to a thin purple pad. Before the step a thin purple film lines the hole and covers
+  the flat top. After it a cross-hatched grey metal fills the hole and covers the whole top in
+  an even layer, with a shallow dip over the hole.
+caption: >-
+  A close-up of the right-hand metal contact, over the local-contact plug beside the gate; the
+  lower part of the slice is cut off. Before, the lined hole; after, tungsten grown from every
+  surface has closed it and covers the field. The deposited thickness is not public (the page
+  gives a few hundred nanometres as the industry norm for a hole of this size[^txt-05]), and it
+  is not drawn to scale. The nucleation layer and any seam where the growth from the walls meets
+  are not drawn. The left-hand hole is filled in the same way, outside this view. The local
+  interconnect, the local-contact plug and its liner, the glass and the cap oxide below are
+  drawn but not labelled, as is the new liner in the lower panel. Not to scale.
+arrow:
+  title: "WDEP2, step 110"
+  note: "Tungsten is grown by CVD over the whole wafer until every lined hole is closed."
+panels:
+  - state_after: "109"
+    title: "Before: the lined hole (step 109)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner]
+  - state_after: "110"
+    title: "After: tungsten fills the hole and covers the field"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, liner, mcliner]
+    highlight: {where: [[170, 268]]}

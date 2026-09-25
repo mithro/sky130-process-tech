@@ -1,0 +1,39 @@
+id: m1-114-mm1e
+kind: xsection
+page: docs/steps/114-mm1e.md
+series: series-metal1.yaml
+crop_depth: 40
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step three violet resist lines
+  stand on three flat blanket films over a flat pale oxide with two small tungsten plugs in it.
+  After it the resist is gone and the films remain only as three separate lines, one over each
+  plug and one in the middle, with bare oxide between them.
+caption: >-
+  Before, the resist lines on the blanket stack; after, the chlorine etch has removed the whole
+  stack between the lines, stopping on the inter-level oxide and on the plug tops, and the resist
+  has been stripped; the page treats the passivation, the strip and the clean as part of this
+  step. The lines are drawn with vertical walls; their profile is not drawn to scale, and neither
+  are the 0.140 µm widths and spaces of the PDK's rules.[^pdk-periph] Which refractory films the
+  bottom and the cap of each line are is not public (the overview of the metal cap sets out the
+  two readings, and the figure does not choose). The bottom film of each line, the metal contacts, the local
+  interconnect, the glass, the cap oxide, the lower tungsten plugs, the silicide discs, the contact liners and the
+  transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation
+  oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in
+  the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the
+  NCHI channel implant made earlier are not drawn. In the upper panel the inter-level oxide is
+  not labelled. Not to scale.
+arrow:
+  title: "MM1E, step 114"
+  note: "A chlorine plasma etches the stack between the resist lines; the resist is stripped."
+panels:
+  - state_after: "113"
+    title: "Before: the metal-1 resist lines (step 113)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot, nild2]
+    dim_layers: [liner]
+  - state_after: "114"
+    title: "After: three metal-1 lines"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot]
+    dim_layers: [liner]
+    highlight: {where: [[0, 22], [58, 100], [150, 186]]}

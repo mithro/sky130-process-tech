@@ -1,0 +1,36 @@
+id: m1-117-ncapox3
+kind: xsection
+page: docs/steps/117-ncapox3.md
+series: series-metal1.yaml
+crop_depth: 40
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a flat pale oxide buries
+  three metal lines. After it a thin flat layer of the same pale oxide covers the whole top.
+caption: >-
+  Before, the polished inter-metal oxide; after, a thin cap oxide over it, which with the oxide
+  left by the polish makes up the dielectric over metal 1 on which the via-1 mask is printed.
+  The PDK's stack diagram gives that finished height as 0.27 µm;[^pdk-04] the cap's own thickness
+  is not public (the page gives of the order of 0.05–0.15 µm as industry-typical[^txt-05]), and
+  that it sets the final thickness is the page's inference. Whether the thin "NILD3_C" film of
+  the diagram is this cap is not public. Nothing is drawn to scale. The bottom and cap films of the metal lines, the inter-level oxide under them, the metal contacts, the local
+  interconnect, the glass, the cap oxide under the local interconnect, the lower tungsten plugs,
+  the silicide discs, the contact liners and the transistors' films (the spacers, the caps, the
+  gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and
+  the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the
+  liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn.
+  Not to scale.
+arrow:
+  title: "NCAPOX3, step 117"
+  note: "A thin plasma oxide is deposited on the polished surface."
+panels:
+  - state_after: "116"
+    title: "Before: the polished inter-metal oxide (step 116)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot, m1cap, nild2]
+    dim_layers: [liner]
+  - state_after: "117"
+    title: "After: a thin cap oxide on top"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, mcliner, mcw, m1bot, m1cap, nild2]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
