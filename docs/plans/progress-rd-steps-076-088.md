@@ -236,3 +236,68 @@ pages: 066, 068, 072. One commit per page.
   unchanged); split halves whose base marker belonged to the other clause (Tang/abstracts, resist/PDK
   thickness, k₁/248 nm); glance and label lines.
 * **Caps**: para > 100 1 → 0; item > 60 4 → 0; sentence > 45 6 → 0. Lead 100 words (base 98).
+
+### 079 NPCME — done
+
+* **Lead.** The 59-word second sentence split at its dash pair without reordering: "… it removes the
+  dielectric cap standing on the poly. The cap is whatever remains of the POC oxide and the GATENIT
+  nitride, about 0.2 µm of it … "poly cap after SPE".[^pdk-03] It stops on the poly, leaving bare
+  polysilicon exactly "under licon1 areas".[^pdk-06]" ("The cap is" and "It" added, step 7; each
+  piece keeps its own marker and "on our reading" stays with the 0.2 µm). Two paragraphs, split
+  before "Inside a window". 136 words (base 135, over 120 already), first sentence 6.
+* **R-LIST.** "The structures being opened are of two kinds." → colon and two plain bullets ("The
+  first are …", "The second are …", R-LIST step 3: always plain for first/second items), each with
+  its own marker.
+* **R-CATEGORY.** Classification sentence (18 w) alone; "Its nearest relatives …" (a sentence that
+  only lists other steps, step 2) as its own paragraph with its noun back ("`NPCME`'s nearest
+  relatives", R-PARA step 5, so the paragraph does not open on a pronoun); "What is specific here is
+  the stop: …" is its own label (step 3), split at ", and the selectivity" ("The selectivity that
+  makes …").
+* **Why.** Paragraph 1 (134 w) split before "Tang et al. built"; the `licon1` sentence split at its
+  semicolon ("If the nitride cap were still under it, …"); Tang split at the semicolon after its
+  markers. The 51-word "The order relative to the source/drain implants is deliberate on our reading
+  (…): the opened poly is doped …" is **left whole**: every split point would put the doping clause
+  outside the "on our reading" that governs it. "Two failure modes make the recipe demanding." →
+  colon and two bullets bolded in place ("Incomplete clearing", "Over-etching" were already bold
+  run-ins in the base); the npc.4 inference and the two studies stay as the paragraph after the list
+  (R-LIST step 4), the studies split at ", and Tuda" (each keeps its marker).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** "Nitride main etch" (106 w): lead = the chemistry sentence to Kastenmeier's markers
+  (split at the semicolon); continuation = Staffa and the endpoint sentence, split after the TEL
+  quotation (the quotation keeps its place and marker): "Because the open area is small, …"
+  ("and, because" → "Because"; "Because X, Y" is not a connective opener). "Stop on poly" (173 w; a 64-word first sentence with two dash pairs):
+  split after the Lee and Chen dash material ("… the CF₄/O₂ silicon etch.[^lee-chen-1983] So the last
+  part of the etch uses …"; a sentence, not a paragraph, may open "So"), so the claim and its marker stay
+  in one sentence; the second dash pair became its own sentence at the head of continuation 1: "The
+  chemistry is a fluorine-lean, polymerising fluorocarbon step in an RIE tool (industry practice,
+  category page[^txt-01])." ("The chemistry is" added, step 7). Continuation 1 continues with Kastenmeier, Matsuo and
+  Oehrlein, split at ", giving": "This gives nitride-to-poly etch-rate ratios …" ("This gives" added,
+  step 7) with `[^kastenmeier-1999]` **repeated** on the first half, since the base's single marker
+  covered the whole sentence (R-SENTENCE step 5, declared). Continuation 2 = "A few nanometres of
+  poly loss … we infer …". "Strip and clean": split at its semicolon ("We infer no HF, …").
+* **R-TOOLS.** Four tools → recap table `Tool | Evidence` (062's rows for the same four tools).
+  Lam 9400: *SkyWater says:* the quotation (the base sentence has no subject or verb to drop),
+  *Tool exists:*, *Runs this step:*. DPS II: pilot-form head (quotation plus this reference's gloss
+  "being the gate etcher, has the poly-stop chemistries in hand", no seam), *Runs this step:*
+  **medium**. Lam 4400: *Runs this step:* **weak** (062's form). Ashers and wet benches: *Tool
+  exists:*.
+* **R-RELATED.** Previous and Next split; "The stack being cut … the spacer beside it" and "the
+  resistors whose heads are opened" → one `Depends on:` bullet; "The implants that dope the opened
+  poly" and "The contacts that land in the opening" → one `Feeds:` bullet; "Other nitride etches" →
+  `Same category:` (STINITE, ONOME, SPE are Etch steps). Every gloss and link kept.
+* **R-OPENQ.** Labels "Chemistry and adjacent spacer", "POC oxide", "The opened poly", "Which
+  etcher"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers npc.4's 0.090 µm `[^pdk-periph]` and
+  "about 0.2 µm … on our reading" of "poly cap after SPE" `[^pdk-03]`; tool line with both grades;
+  Not public from Open questions 1 in its own words ("is allowed to remove").
+* **Preservation** (`--allow-regrouped` only): ADDED markers `kastenmeier-1999` (repeat), `pdk-03`,
+  `pdk-periph`, `skw-01` (glance); numbers 0.090, 0.2, 4 (glance), 4400, 9400×2 (recap table and
+  glance); quotes "nitride", "poly cap after SPE" (glance); ref `step-078` (glance); hedges "about",
+  "inference"×2, "likely", "not public", "our reading" (glance and recap table); `number_order`
+  (4, 0.090, 0.2) — the glance. REGROUPED: Kastenmeier (10 | 40, 100, 70), same digits, same order.
+  WORDS LOST: "giving" ("This gives"), "its" ("`NPCME`'s"), "strength"×4.
+* **Marker coverage.** 19 flags, all read: split halves whose base marker belonged to the other
+  clause (cap/stop/licon1, `licon1`/0.17 µm hole, Tang/abstracts, Joubert/Tuda, Kastenmeier/Staffa,
+  TEL quotation/"Because …", asher/wet bench/"We infer no HF"); glance and label lines.
+* **Caps**: para > 100 4 → 0; item > 60 2 → 0; sentence > 45 10 → 1 (the
+  51-word "order … on our reading" sentence, above).

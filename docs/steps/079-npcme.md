@@ -10,15 +10,33 @@
 | **Previous step** | {ref}`NPCM <step-078>` |
 | **Next step** | {ref}`SPOX <step-080>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the dielectric cap off the poly through the
+  {ref}`NPCM <step-078>` resist windows, stopping on the poly.
+* **Why:** everything a poly line will ever connect to passes through
+  this opening.
+* **Public numbers:** npc.4 keeps the cut 0.090 µm from any
+  gate;[^pdk-periph] about 0.2 µm of cap, on our reading of the PDK's
+  "poly cap after SPE".[^pdk-03]
+* **Likely SkyWater tool:** Lam 9400 TCP — strong (tool, "nitride"
+  label); inference (assignment).[^skw-01]
+* **Not public:** the chemistry, endpoint and over-etch, and how much of
+  the adjacent spacer the cut is allowed to remove (→ Open questions).
+:::
+
 ## What this step is
 
 `NPCME` etches the {term}`nitride poly cut <nitride cut>`. Through the resist windows printed
 at {ref}`NPCM <step-078>`, it removes the dielectric cap standing on
-the poly — whatever remains of the {ref}`POC <step-059>` oxide and the
+the poly. The cap is whatever remains of the {ref}`POC <step-059>` oxide and the
 {ref}`GATENIT <step-058>` nitride, about 0.2 µm of it after the spacer
-etch on our reading of the PDK's "poly cap after SPE"[^pdk-03] — and
+etch on our reading of the PDK's "poly cap after SPE".[^pdk-03] It
 stops on the poly, leaving bare polysilicon exactly "under licon1
-areas".[^pdk-06] Inside a window the etch also meets the nitride
+areas".[^pdk-06]
+
+Inside a window the etch also meets the nitride
 spacers on the poly sidewalls and whatever spacer nitride lies on the
 field oxide beside them; how much of the spacer it is allowed to take
 is a recipe choice discussed below. The resist is stripped and the
@@ -34,25 +52,31 @@ as part of this step. The next step is an oxide deposition
 Before, the NPCM resist with its window over the resistor's contact head (an illustrative choice; see NPCM); after, the cap stack cut through inside the window, down to the poly, and the resist stripped, as this reference counts the strip in this step. Whatever is left of the oxide cap and the nitride cap, about 0.2 µm as the page reads the PDK's "poly cap after SPE" entry,[^pdk-03] is removed, and the etch is drawn stopping on the poly; the few nanometres of poly the page expects it to take are not drawn. The spacers inside the window are drawn cut down to the top of the poly; how much of them the etch may take is not public. The field oxide beside the stack is drawn untouched. The colours of the gate film mark the type of its doping, not a depth profile. The caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the upper panel the n-type gate film under the resist is not labelled. Not to scale.
 :::
 
-The structures being opened are of two kinds. The first are the
-contact heads of poly interconnect and gate leads, kept at least
-0.090 µm from any gate by npc.4.[^pdk-periph] The second are the ends
-of the precision resistors, which rpm.5 requires to be enclosed by
-`npc` by 0.095 µm[^pdk-periph] and which, on the reading set out on
-the {ref}`NPCM <step-078>` page, are doped through this opening by the
-P⁺ source/drain implant that follows.
+The structures being opened are of two kinds:
+
+* The first are the
+  contact heads of poly interconnect and gate leads, kept at least
+  0.090 µm from any gate by npc.4.[^pdk-periph]
+* The second are the ends
+  of the precision resistors, which rpm.5 requires to be enclosed by
+  `npc` by 0.095 µm[^pdk-periph] and which, on the reading set out on
+  the {ref}`NPCM <step-078>` page, are doped through this opening by the
+  P⁺ source/drain implant that follows.
 
 ## Step category
 
 `NPCME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorine-chemistry* class, masked, with a hard stop on polysilicon.
-Its nearest relatives are the spacer etch {ref}`SPE <step-077>` (same
+
+`NPCME`'s nearest relatives are the spacer etch {ref}`SPE <step-077>` (same
 films, no mask, stops on oxide) and the STI hard-mask etch
 {ref}`STINITE <step-005>` (masked nitride etch that continues into
-silicon). What is specific here is the stop: a nitride-over-oxide
+silicon).
+
+What is specific here is the stop: a nitride-over-oxide
 stack must be cleared *completely* — a residue of nitride under a
-contact is an open circuit — without etching the doped poly beneath,
-and the selectivity that makes a fluorocarbon etch stop on oxide is
+contact is an open circuit — without etching the doped poly beneath.
+The selectivity that makes a fluorocarbon etch stop on oxide is
 of little help, because the last film before the poly is nitride.
 
 ## Why this step exists
@@ -60,15 +84,17 @@ of little help, because the last film before the poly is nitride.
 Everything a poly line will ever connect to passes through this
 opening. The local-interconnect contact `licon1` is etched later
 ({ref}`LICM1E <step-094>`) through the sacrificial PSG and {term}`cap oxide`
-({ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`); if the nitride cap
+({ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`). If the nitride cap
 were still under it, the contact etch would have to change chemistry
 at the bottom of a 0.17 µm hole[^pdk-periph] and would stop unevenly
 on gates, resistor ends and interconnect. Cutting the nitride now, on
 a flat, resist-defined pattern, is easier to control and lets the
-contact etch stop on a uniform surface. Tang et al. built a
+contact etch stop on a uniform surface.
+
+Tang et al. built a
 titanium-nitride {term}`local interconnect` at Texas Instruments from the
 TiN layer that forms during self-aligned silicidation, patterned to join
-gates and junctions;[^tang-1985][^tang-1987] their abstracts do not
+gates and junctions.[^tang-1985][^tang-1987] Their abstracts do not
 describe a nitride cap over poly removed at contact sites, and the
 papers' full text was not checked.
 
@@ -81,18 +107,23 @@ an extra n⁺ dose. A bare-poly surface also receives the
 {ref}`SPOX <step-080>` oxide that follows, which protects it through
 the implant lithography and acts as the implant screen.
 
-Two failure modes make the recipe demanding. **Incomplete clearing**
-leaves nitride stringers at the foot of the spacer, where the cap
-nitride and the spacer nitride meet at a re-entrant corner; a contact
-that lands on a stringer is high-resistance or open. **Over-etching**
-consumes the spacer inside the window, erodes the poly and its doped
-surface, and — where the window is close to a gate — thins the cap
-whose job is to keep the gate sealed. The npc.4 gate margin of
+Two failure modes make the recipe demanding:
+
+* **Incomplete clearing**
+  leaves nitride stringers at the foot of the spacer, where the cap
+  nitride and the spacer nitride meet at a re-entrant corner; a contact
+  that lands on a stringer is high-resistance or open.
+* **Over-etching**
+  consumes the spacer inside the window, erodes the poly and its doped
+  surface, and — where the window is close to a gate — thins the cap
+  whose job is to keep the gate sealed.
+
+The npc.4 gate margin of
 0.090 µm[^pdk-periph] is, we infer, sized partly to keep the etch's
 lateral effects away from the gate edge. Joubert and Bell compared
 oxide-hard-mask and resist-mask gate etching, which is the same
-resist-on-cap-on-poly system seen from the other side,[^joubert-1997]
-and Tuda, Shintani and Tanimura describe removing oxide hard masks and
+resist-on-cap-on-poly system seen from the other side.[^joubert-1997]
+Tuda, Shintani and Tanimura describe removing oxide hard masks and
 residues from poly gates selectively.[^tuda-2004]
 
 Without `NPCME` the poly would remain capped and un-contactable; the
@@ -102,8 +133,8 @@ bottom of every poly contact.
 
 ## How it is typically performed
 
-An industry-generic nitride/oxide cut etch for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic nitride/oxide cut etch for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 1. **Chamber.** Single-wafer fluorocarbon etcher (TCP/ICP or
    medium-density RIE) with optical emission endpoint and helium
@@ -117,28 +148,34 @@ fab (SKY130's recipe is not public):
 4. **Nitride main etch.** CF₄/O₂ or CHF₃/O₂ with N₂ or Ar at a few
    tens of mTorr and moderate bias — the same family as the spacer
    etch — whose rates and selectivities Kastenmeier et al.
-   measured;[^kastenmeier-1996][^kastenmeier-1999] a remote NF₃/Cl₂
+   measured.[^kastenmeier-1996][^kastenmeier-1999]
+
+   A remote NF₃/Cl₂
    chemistry of the kind Staffa et al. characterised is the
    low-damage alternative.[^staffa-1995] The etch is run to an
    {term}`endpoint` on the 387 nm CN emission — "a strong peak at 387
    nm indicates that CN is present in the plasma, usually indicating
-   that nitride is being etched"[^pat-cn-tel] — and, because the
+   that nitride is being etched".[^pat-cn-tel] Because the
    open area is small, the signal is weak and often supplemented by
    a timed component.
 5. **Stop on poly.** Fluorine etches silicon faster than nitride
    unless the chemistry is arranged otherwise — Lee and Chen describe
-   the CF₄/O₂ silicon etch[^lee-chen-1983] — so the last part of the
-   etch uses a chemistry with selectivity to silicon — a
+   the CF₄/O₂ silicon etch.[^lee-chen-1983] So the last part of the
+   etch uses a chemistry with selectivity to silicon and a low bias, and
+   the over-etch is kept short.
+
+   The chemistry is a
    fluorine-lean, polymerising fluorocarbon step in an RIE tool
-   (industry practice, category page[^txt-01]) — and a low bias, and
-   the over-etch is kept short. Kastenmeier, Matsuo and Oehrlein
+   (industry practice, category page[^txt-01]). Kastenmeier, Matsuo and Oehrlein
    obtained the same end by a different route in a downstream
    reactor: a remote O₂/N₂ discharge with much smaller CF₄ or NF₃
    flows grows an approximately 10 nm oxidised layer on the
-   polysilicon that suppresses its etching, giving nitride-to-poly
+   polysilicon that suppresses its etching.[^kastenmeier-1999] This
+   gives nitride-to-poly
    etch-rate ratios of about 40 with CF₄ and about 100 with NF₃, with
    the oxide not etched at all in the CF₄ process and a
    nitride-to-oxide ratio of about 70 with NF₃.[^kastenmeier-1999]
+
    A few nanometres
    of poly loss and a damaged layer of the kind Oehrlein
    reviewed[^oehrlein-1989] are unavoidable and are, we infer, part
@@ -149,7 +186,7 @@ fab (SKY130's recipe is not public):
    Jurgensen and Vitkavage analysed.[^gottscho-1992]
 7. **Strip and clean.** In-situ O₂ plasma or a downstream asher
    (SkyWater lists GaSonics PEP, Iridia and Mattson Aspen II[^skw-01])
-   for the resist, then SPM/SC-1 on a wet bench;[^wiki-rca] we infer
+   for the resist, then SPM/SC-1 on a wet bench.[^wiki-rca] We infer
    no HF, because the thin oxide over the source/drain is still needed
    as the implant screen and the PSG/CMP module has not yet begun.
 8. **Metrology.** Cross-section SEM of cut windows on monitors for
@@ -169,19 +206,29 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Lam 9400 TCP.** "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6,
-  O2".[^skw-01] Strength: **strong** for the tool and the "nitride"
-  label with CF₄/O₂; assignment to this step is an **inference**.
+| Tool | Evidence |
+|---|---|
+| Lam 9400 TCP | strong (tool); inference (assignment) |
+| AMAT DPS II | medium (this step) |
+| Lam 4400 | weak |
+| Ashers and wet benches | strong (existence) |
+
+* **Lam 9400 TCP**
+  - *SkyWater says:* "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6,
+    O2".[^skw-01]
+  - *Tool exists:* **strong** for the tool and the "nitride" label with
+    CF₄/O₂.
+  - *Runs this step:* assignment to this step is an **inference**.
 * **AMAT DPS II** ("HBR, Cl2, NF3, CF4, CHF3, O2 – gate, trench,
   W/WN"[^skw-01]) — carries CF₄/CHF₃ and, being the gate etcher, has
-  the poly-stop chemistries in hand. Strength: **medium** for this
-  step, since its CF₄ and CHF₃ etch nitride although the entry names no
-  nitride application.
-* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01]). Strength:
-  **weak**, as the entry names no application.
+  the poly-stop chemistries in hand.
+  - *Runs this step:* **medium** for this step, since its CF₄ and CHF₃
+    etch nitride although the entry names no nitride application.
+* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01])
+  - *Runs this step:* **weak**, as the entry names no application.
 * **Ashers — GaSonics PEP, Iridia, Mattson Aspen II; wet benches —
-  Akrion Gamma, DNS, FSI Mercury.**[^skw-01] Strength: strong for
-  existence.
+  Akrion Gamma, DNS, FSI Mercury**[^skw-01]
+  - *Tool exists:* strong for existence.
 
 ## Resources required
 
@@ -195,16 +242,17 @@ fab (SKY130's recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`NPCM <step-078>` (the resist pattern). Next:
-  {ref}`SPOX <step-080>` (oxide over the opened poly).
-* The stack being cut: {ref}`POC <step-059>`, {ref}`GATENIT <step-058>`;
-  the spacer beside it: {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`.
-* The implants that dope the opened poly: {ref}`PSDI <step-082>`,
-  {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; the resistors whose
-  heads are opened: {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`.
-* The contacts that land in the opening: {ref}`LICM1 <step-093>`,
+* Previous: {ref}`NPCM <step-078>` (the resist pattern).
+* Next: {ref}`SPOX <step-080>` (oxide over the opened poly).
+* Depends on: the stack being cut, {ref}`POC <step-059>`,
+  {ref}`GATENIT <step-058>`; the spacer beside it,
+  {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`; the resistors whose
+  heads are opened, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`.
+* Feeds: the implants that dope the opened poly, {ref}`PSDI <step-082>`,
+  {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; the contacts that
+  land in the opening, {ref}`LICM1 <step-093>`,
   {ref}`LICM1E <step-094>`.
-* Other nitride etches: {ref}`STINITE <step-005>`,
+* Same category: other nitride etches, {ref}`STINITE <step-005>`,
   {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`.
 * Category page: {ref}`Etch <category-etch>`.
 
@@ -272,14 +320,14 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* The chemistry, endpoint and over-etch of the cut, and how much of
+* **Chemistry and adjacent spacer.** The chemistry, endpoint and over-etch of the cut, and how much of
   the adjacent spacer it is allowed to remove, are not public.
-* Whether any {ref}`POC <step-059>` oxide is still present at the
+* **POC oxide.** Whether any {ref}`POC <step-059>` oxide is still present at the
   start of the etch is not public.
-* The reading that the opened poly is deliberately doped by the
+* **The opened poly.** The reading that the opened poly is deliberately doped by the
   source/drain implants is an inference from the PDK rules
   ({ref}`NPCM <step-078>`).
-* Which etcher on SkyWater's list runs the step is inferred from the
+* **Which etcher.** Which etcher on SkyWater's list runs the step is inferred from the
   "poly/nitride" label.[^skw-01]
 
 <!-- footnotes -->
