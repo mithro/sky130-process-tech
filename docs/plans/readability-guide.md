@@ -795,8 +795,9 @@ identifiers in one block.
 6. Quoted values stay quoted, inside the cell. A value the page does not give is `—`.
 7. Numbers, step numbers and years are right-aligned (`---:`); everything else left; never centred.
 8. The sentence that draws the conclusion stays as prose after the table.
-9. A row whose only source is a patent shown as in force belongs **inside that patent's dropdown**, in a
-   table of its own (§2.5, §2.6).
+9. A row whose only source is a patent shown as in force is **never built into a table**: no edit is
+   made inside an in-force note in a readability pass, not even turning its prose into a table (§2.5,
+   §2.6). List the row's content and the note it belongs to in the progress file for the owner instead.
 10. Obey the column budget of §1: ≤ 3 columns if any column holds prose, ≤ 5 if every cell is a
     number, a code or ≤ 3 words. Beyond the count, the table must pass the phone test: no
     horizontal scroll at 400 px, and no number broken across lines. A column whose value is the
@@ -1154,7 +1155,8 @@ link, **or** prose names a source by its italic title in the same sentence as th
 6. Leave alone: vendor model names in "Representative …" and "Machines typically used" sections (the
    footnote is the evidence); short "name + marker" bullets outside the reading lists (22 site-wide);
    the generated index pages (already inline).
-7. Bullets inside a `{dropdown}` may be converted, **in place** (§2.5).
+7. Bullets inside a `{dropdown}` are **never** converted: no edit is made inside an in-force note in a
+   readability pass, not even a link conversion (§2.5).
 8. Rules 1/1b wrap the *whole* head, including the publisher ("**Wikipedia, Shallow trench
    isolation**"); rules 3/3b/3c wrap only the title, leaving the publisher plain ("Wikipedia,
    **Silane**, **Tetraethyl orthosilicate** …"). This is deliberate, not an inconsistency to fix: a
@@ -2169,8 +2171,10 @@ uv run python tools/check_preserved.py --base <commit-before-this-page> docs/ste
 
 Run first with `--allow-regrouped` only. Then add `--allow-added` categories one at a time, only
 for additions you can name (glance box, R-TOOLS head), and list them in the progress file.
-`--allow-dropdown-edits` only when you edited a note under §2.5, and then name the note and paste
-its old and new text.
+`--allow-dropdown-edits` is **never** used: §2.5 and R-DROPDOWN rule 2 permit no edit at all inside
+an in-force note, so a `{dropdown}` line from this check is always a bug in your edit, to be
+reverted, not declared away. If the tool reports one anyway, list the note and its old/new text in
+the progress file and revert it before moving on.
 
 A `number_order` LOST is failed by default. `--allow-regrouped` downgrades that LOST to a warning
 once its four conditions hold (see the tool's own docstring on `check_regrouped`) — the
