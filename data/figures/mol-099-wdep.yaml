@@ -18,8 +18,7 @@ caption: >-
   not drawn to scale. The thin nucleation layer and the seam where the growth from the walls
   meets are not drawn. The other two holes are filled in the same way, outside this view. The
   colours mark the type of the doping, not a depth profile. The gate, its caps and spacers, the
-  thin oxides, the tip and the halo, and the field oxide at the left edge are drawn but not
-  labelled, and the liner oxide is drawn faded; the P-well and the NCHI
+  thin oxides, the silicon and its doped regions, the silicide and the field oxide at the left edge are drawn but not labelled, as is the contact liner in the lower panel, and the liner oxide is drawn faded; the P-well and the NCHI
   channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "WDEP, step 099"
@@ -33,6 +32,6 @@ panels:
   - state_after: "099"
     title: "After: tungsten fills the hole and covers the field"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, sub]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, sub, ctliner]
     dim_layers: [liner]
     highlight: {where: [[170, 268]]}

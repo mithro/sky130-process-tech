@@ -17,8 +17,7 @@ caption: >-
   public and are not drawn. The other two holes become plugs in the same way, outside this view;
   the local interconnect that lands on them must cover each one (licon.4, li.5).[^pdk-periph]
   The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers,
-  the thin oxides, the tip and the halo, and the field oxide at the left edge are drawn but not
-  labelled, and the liner oxide is drawn faded; the P-well and the NCHI
+  the thin oxides, the silicon and its doped regions, the silicide, the contact liner and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI
   channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "WCMPLI, step 100"
@@ -27,7 +26,7 @@ panels:
   - state_after: "099"
     title: "Before: the tungsten blanket (step 099)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, sub]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, sub, ctliner]
     dim_layers: [liner]
   - state_after: "100"
     title: "After: a tungsten plug, flush with the cap oxide"

@@ -20,8 +20,7 @@ caption: >-
   hole; the real coverage of an ionised deposition is not drawn. The hole's bottom is 0.08 µm
   across in the PDK ("Standard Licon bottom CD"),[^pdk-03] not drawn to scale. The other two
   holes are lined in the same way, outside this view. The colours mark the type of the doping,
-  not a depth profile. The gate, its caps and spacers, the thin oxides, the tip and the halo, and
-  the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not
+  not a depth profile. The gate, its caps and spacers, the thin oxides, the silicon and its doped regions, and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not
   to scale.
 arrow:
   title: "TI/TIN1, step 097"

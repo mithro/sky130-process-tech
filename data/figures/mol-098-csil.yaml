@@ -22,8 +22,7 @@ caption: >-
   film thickness, sunk into the silicon it consumed, with the doped region left where it was.
   The anneal's temperature, time and ambient are not public, and any titanium that nitrides is
   not drawn. The colours mark the type of the doping, not a depth profile. The gate, its caps and
-  spacers, the thin oxides, the tip and the halo, and the field oxide at the left edge are drawn
-  but not labelled, and the liner oxide is drawn faded; the P-well and the
+  spacers, the thin oxides, the silicon and its doped regions, and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the
   NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "CSIL, step 098"

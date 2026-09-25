@@ -28,6 +28,11 @@ panels:
     hide_layers: [pwell, nchi]
     hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, polyn]
     dim_layers: [liner]
+    labels:
+      spox:
+        title: "Spacer oxide"
+        note: "SPOX, step 080"
+        basis: public
   - state_after: "089"
     title: "After: a thick glass buries everything"
     hide_layers: [pwell, nchi]

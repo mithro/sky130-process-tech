@@ -17,8 +17,7 @@ caption: >-
   not public, and any anti-reflective coating under it is not drawn. The transistors' films (the
   spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are
   drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel
-  implant made earlier are not drawn. In the lower panel the doped regions are not labelled
-  either. Not to scale.
+  implant made earlier are not drawn. The doped regions are not labelled either. Not to scale.
 arrow:
   title: "LICM1, step 093"
   note: "Resist is coated, exposed through the contact reticle and developed, opening the contact holes."
@@ -26,7 +25,7 @@ panels:
   - state_after: "092"
     title: "Before: the flat, capped glass (step 092)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
     dim_layers: [liner]
   - state_after: "093"
     title: "After: resist with three contact openings"

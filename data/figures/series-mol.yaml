@@ -50,7 +50,7 @@
 #
 # Thicknesses drawn: PSG 46 u as deposited, polished to 59 u above the silicon; cap oxide 10 u;
 # contact resist 30 u; liner 5 u; silicide 5 u; tungsten 14 u; LI TiN 8 u; LI resist 30 u; LINT
-# 5 u; NILD2 30 u as deposited, polished to 98 u. Series labels carry no numbers.
+# 5 u; NILD2 24 u as deposited, polished to 94 u. Series labels carry no numbers.
 note_order: newest
 substrate:
   material: si-sub
@@ -797,11 +797,11 @@ ops:
     op: deposit
     id: nild2
     material: oxide-dep
-    t: 30
+    t: 24
     label:
       title: "Inter-level oxide"
       note: "deposited at step 105"
       basis: public
   - step: "106"
     op: planarise
-    to: 98
+    to: 94

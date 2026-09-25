@@ -198,8 +198,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <circle class="dot" data-owner="ncap" cx="276.0" cy="301.5" r="1.9"/>
 <text x="328.0" y="294.9" class="t-label-title" data-owner="li">Local</text>
 <text x="328.0" y="310.9" class="t-label-title" data-owner="li">interconnect</text>
-<text x="328.0" y="326.9" class="t-label-note muted" data-owner="li">titanium nitride, 0.1</text>
-<text x="328.0" y="342.9" class="t-label-note muted" data-owner="li">µm thick in the PDK</text>
+<text x="328.0" y="326.9" class="t-label-note muted" data-owner="li">0.1 µm thick in the</text>
+<text x="328.0" y="342.9" class="t-label-note muted" data-owner="li">PDK; titanium nitride</text>
 <path class="leader" data-owner="li" d="M276.0 291.0H297.0V290.0H324.0"/>
 <circle class="dot" data-owner="li" cx="276.0" cy="291.0" r="1.9"/>
 <text x="12.0" y="448.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>

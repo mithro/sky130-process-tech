@@ -41,6 +41,6 @@ panels:
     labels:
       li:
         title: "Local interconnect"
-        note: "titanium nitride, 0.1 µm thick in the PDK"
+        note: "0.1 µm thick in the PDK; titanium nitride"
         basis: public
         cite: pdk-04
