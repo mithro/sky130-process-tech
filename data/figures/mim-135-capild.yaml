@@ -1,0 +1,38 @@
+id: mim-135-capild
+kind: xsection
+page: docs/steps/135-capild.md
+series: series-beol.yaml
+close_up: [66, 166]
+close_up_name: "part of the metal-3 level"
+routes: {m3bot: right, m3al: right, m3cap: right, ncap4: right}
+crop_depth: -461
+alt: >-
+  Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a flat
+  pale oxide carries a blanket of three metal films, a thick silver one between two thin purple
+  ones. After it a very thin film with fine vertical stripes covers the top purple film across
+  the whole width.
+caption: >-
+  A close-up of part of the metal-3 level, where a capacitor is built in the next steps; the
+  lower part of the slice is cut off, and the drawing starts inside the oxide under metal 3.
+  Before, the blanket metal-3 stack; after, the thin capacitor dielectric over all of it, the
+  film that becomes the dielectric between metal 3 and the top plate. The PDK does not name the
+  material, and this page describes it as a PECVD silicon oxynitride (inference). Its thickness
+  is not public: the stack diagram gives none,[^pdk-04] and 18–33 nm is the page's own
+  arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an assumed permittivity. It is drawn much
+  thicker in proportion than that, and metal 3 is not drawn to scale either. Which refractory
+  film caps metal 3, TiW or TiN, is not public (the overview of the metal cap sets out the
+  evidence); the figure draws every Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the
+  stack is drawn but not labelled. Not to scale.
+arrow:
+  title: "CAPILD, step 135"
+  note: "A thin dielectric is deposited by PECVD over the whole blanket metal stack, before the metal is patterned."
+panels:
+  - state_after: "134"
+    title: "Before: the blanket metal-3 stack (step 134)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [m3bot, ncap4, nild4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
+  - state_after: "135"
+    title: "After: the capacitor dielectric over the whole wafer"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 268]]}

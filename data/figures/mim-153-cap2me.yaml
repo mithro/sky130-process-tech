@@ -1,0 +1,40 @@
+id: mim-153-cap2me
+kind: xsection
+page: docs/steps/153-cap2me.md
+series: series-beol.yaml
+close_up: [76, 176]
+close_up_name: "the edge of a second-capacitor top plate"
+routes: {m4bot: right, m4al: right, m4cap: right, ncap5: right}
+crop_depth: -675
+alt: >-
+  Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a violet
+  resist block stands on a purple film over the right-hand part of the width. After it the resist
+  is gone and the purple film remains only where the resist was, as a raised plate with a
+  vertical edge; to its left the very thin striped film is bare on the blanket metal stack.
+caption: >-
+  A close-up of the left edge of a top plate of the second capacitor; the lower part of the
+  slice is cut off, and the drawing starts inside the oxide under metal 4. Before, the
+  resist block on the blanket plate film; after, the plate film etched away outside the resist,
+  stopping on the thin dielectric, which is left on the whole blanket metal-4 stack, and the
+  resist stripped (the page treats the strip and clean as part of this step). Whether the etch
+  stops on the dielectric or cuts through it is not public; the page describes the stop, while
+  the PDK's schematic cross-section draws the dielectric only under the plate.[^pdk-07] Any
+  small loss into the dielectric is not drawn, and the plate edge is drawn vertical. The
+  dielectric, the plate, of the order of 0.1 µm by the page's inference, and the metal are not
+  drawn to scale. The two oxides and the bottom film of the metal stack are drawn but not
+  labelled. Not to scale.
+arrow:
+  title: "CAP2ME, step 153"
+  note: "A plasma etches the plate film outside the resist and stops on the dielectric; the resist is stripped."
+panels:
+  - state_after: "152"
+    title: "Before: the resist block on the plate film (step 152)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m4al, m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
+  - state_after: "153"
+    title: "After: a top plate on the dielectric"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
+    highlight: {where: [[0, 130]]}
+    labels:
+      m4cap: {title: "Cap film", note: "TiW or Ti/TiN — see the overview"}

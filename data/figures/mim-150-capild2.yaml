@@ -1,0 +1,38 @@
+id: mim-150-capild2
+kind: xsection
+page: docs/steps/150-capild2.md
+series: series-beol.yaml
+close_up: [76, 176]
+close_up_name: "part of the metal-4 level"
+routes: {m4bot: right, m4al: right, m4cap: right, ncap5: right}
+crop_depth: -675
+alt: >-
+  Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a flat
+  pale oxide carries a blanket of three metal films, a thick silver one between two thin purple
+  ones. After it a very thin film with fine vertical stripes covers the top purple film across
+  the whole width.
+caption: >-
+  A close-up of part of the metal-4 level, where the second capacitor is built in the next
+  steps; the lower part of the slice is cut off, and the drawing starts inside the oxide
+  under metal 4. Before, the blanket metal-4 stack; after, the thin dielectric of the second
+  capacitor over all of it. No public source describes the film: the step list names an
+  oxynitride,[^steps-sheet] which is not evidence of a chemistry, and this page reads it as a
+  PECVD silicon oxynitride, the same deposition as at CAPILD (inference). Its thickness is not
+  public; 18–33 nm is the page's own arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an
+  assumed permittivity. It is drawn much thicker in proportion than that, and metal 4 is not
+  drawn to scale either. Which refractory films clad metal 4 is not public (the overview of the
+  metal cap sets out the evidence); the figure draws every Ti, TiN and TiW film in one colour.
+  The two oxides and the bottom film of the stack are drawn but not labelled. Not to scale.
+arrow:
+  title: "CAPILD2, step 150"
+  note: "A thin dielectric is deposited by PECVD over the whole blanket metal stack, before the metal is patterned."
+panels:
+  - state_after: "149"
+    title: "Before: the blanket metal-4 stack (step 149)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
+  - state_after: "150"
+    title: "After: the second dielectric over the whole wafer"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 268]]}
