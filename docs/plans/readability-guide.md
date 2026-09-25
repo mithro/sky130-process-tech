@@ -1014,7 +1014,10 @@ with the markers in the cells and the concluding sentence left as prose.
    pointer: "see *Excimer laser source*".
 2. **Before deleting anything from a cell, find the same words in the body.** If they are not there,
    move them into the right section *with their markers and quotation marks first*, in a separate step,
-   and only then shorten the cell.
+   and only then shorten the cell. Deleting a quick-facts copy of text that stays in the body gives
+   `LOST quotes`/`numbers`/`markers` (`check_preserved.py`'s exact multiset does not know the words
+   survive elsewhere). List each one in the progress file with the body `file:line` that keeps it.
+   The reviewer checks it.
 3. Keep every row label. Keep the row order.
 4. **Mask pages:** do not touch the cells the checker compares with the index — `Mask step`,
    `PDK mask (`masks.csv`)`, `Mask-level layer (`gds_layers.csv`)`, `Drawn layer (`gds_layers.csv`)`,
