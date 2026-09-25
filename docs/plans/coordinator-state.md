@@ -44,7 +44,6 @@ Running (4):
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
 | `topic/rd-site` | W4 site pages: fix round (inventory entry, link_terms.py improvements, term-link commits reverted from the branch) | Sonnet | fixing |
-| `topic/rd-figures-s3s4` | W1c S3+S4 figures: fix round (labels below the drawing, lint for vertical gutter legs, ARC colour) | Opus | fixing |
 | `topic/rd-steps-014-034` | W2 batch 2 (wells module) | Sonnet | writing |
 | `topic/rd-overview` | W4 overview: Opus review running (`tmp/reviews/rd-overview.md`) | Opus | in review |
 
