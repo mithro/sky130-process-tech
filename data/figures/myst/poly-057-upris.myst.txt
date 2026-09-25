@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-poly-057-upris
 
-Before, the URPM resist over the whole slice; after, the resist gone and the gate film bare and clean, ready for the cap. The chemical oxide the clean leaves on the film, which the page infers is kept, is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+Before, the URPM resist over the whole slice; after, the resist gone and the gate film bare and clean, ready for the cap. The chemical oxide the clean leaves on the film, which the page infers is kept, is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::

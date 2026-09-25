@@ -12,9 +12,10 @@
 # its oxide standing proud as the earlier modules leave it. P1M (step 061) describes the
 # surface the gate is printed on as nearly planar, with only a 0.07 um field-oxide step
 # (pdk-03); no page says where the larger step drawn here comes down, so none is drawn, and
-# the 048 caption says so. The one change to the repeated operations is the title of the
-# trench oxide's label: "Field oxide" here, as the pages of this module call it, for "Fill
-# oxide" in the isolation, wells and gates series.
+# the 048 caption says so. The only changes to the repeated operations are label text: the trench oxide is titled
+# "Field oxide" here, as the pages of this module call it (for "Fill oxide" in the
+# isolation, wells and gates series), and the thin oxide's note is shortened to keep the
+# label column within the drawing's height.
 #
 # Module geometry. One gate line is drawn over the 1.8 V NMOS area (x 236-260, clear of the
 # steps that the conformal films make near the field edge; the 0.150 um minimum poly width
@@ -206,7 +207,7 @@ ops:
     only_on: [si-sub]
     label:
       title: "Thin gate oxide"
-      note: "grown at LVGOX, step 047, on the low-voltage area"
+      note: "LVGOX, step 047"
       basis: public
 
   # ---- the gate film
@@ -238,10 +239,9 @@ ops:
     material: sd-n
     host: poly
     where_open: rpmres
-    anchor_y: 20
     label:
       title: "n-type gate film"
-      note: "gate implant, step 050; the PDK's \"N+ doped gate poly\""
+      note: "gate implant, step 050"
       basis: public
   - step: "050"
     op: ions
@@ -274,7 +274,7 @@ ops:
     where_open: rrpmres
     label:
       title: "p-type resistor body"
-      note: "resistor implant, step 053; a P+ poly resistor"
+      note: "resistor implant, step 053"
       basis: public
   - step: "053"
     op: ions
@@ -321,7 +321,7 @@ ops:
     t: 10
     label:
       title: "Nitride cap"
-      note: "GATENIT, step 058; thickness and method not public"
+      note: "GATENIT, step 058"
       basis: public
   - step: "059"
     op: deposit
@@ -330,7 +330,7 @@ ops:
     t: 8
     label:
       title: "Oxide cap"
-      note: "POC, step 059; thickness and method not public"
+      note: "POC, step 059"
       basis: public
 
   # ---- the backside film removal: nothing on the front changes (see the header)

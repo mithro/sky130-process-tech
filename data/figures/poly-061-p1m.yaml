@@ -13,7 +13,7 @@ caption: >-
   oxide. The gate line's drawn minimum width is 0.150 µm (poly.1a), and a resistor body is at
   least 0.330 µm wide (poly.3);[^pdk-periph] neither width is drawn to scale. The gate-level
   resist is drawn thinner than the implant-mask resists, following the page's inference that it
-  is thinner than the PDK's generic 1.14 µm;[^pdk-03] its thickness is not public. The colours of the gate film mark the type of its doping, not a depth profile. In the lower panel the p-type resistor body is not labelled, because its leader would have to rise through the resist line. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner
+  is thinner than the PDK's generic 1.14 µm;[^pdk-03] its thickness is not public. The colours of the gate film mark the type of its doping, not a depth profile. In the lower panel the p-type resistor body is not labelled, because its leader would have to rise through the resist line. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner
   oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "P1M, step 061"
@@ -22,12 +22,12 @@ panels:
   - state_after: "060"
     title: "Before: the complete gate stack after BFR (step 060)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox]
+    hide_labels: [fox, poly, gox, thinox]
     dim_layers: [liner]
   - state_after: "061"
     title: "After: resist lines over the gate and the resistor body"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, polyp, gox]
+    hide_labels: [fox, poly, polyp, gox, thinox]
     dim_layers: [liner]
     highlight: {where: [[236, 260], [108, 160]]}
     callouts:

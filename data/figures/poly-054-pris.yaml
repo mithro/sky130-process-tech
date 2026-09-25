@@ -9,7 +9,7 @@ alt: >-
   it the resist is gone and the film is bare across the whole slice.
 caption: >-
   Before, the implanted RRPM resist with its window over the resistor body; after, the resist
-  gone and the gate film bare, now carrying two doping types: the n⁺ gate film and the p-type resistor body. The thin chemical oxide of the clean is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+  gone and the gate film bare, now carrying two doping types: the n⁺ gate film and the p-type resistor body. The thin chemical oxide of the clean is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "PRIS, step 054"
   note: "The implanted resist is ashed and stripped, and the bare film is cleaned for the next mask."
@@ -17,12 +17,12 @@ panels:
   - state_after: "053"
     title: "Before: the RRPM resist after the resistor implant PRI (step 053)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox]
+    hide_labels: [fox, poly, gox, thinox]
     dim_layers: [liner]
     show_ions: false
   - state_after: "054"
     title: "After: resist removed; the gate film bare"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox]
+    hide_labels: [fox, poly, gox, thinox]
     dim_layers: [liner]
     highlight: {where: [[0, 100], [168, 268]]}

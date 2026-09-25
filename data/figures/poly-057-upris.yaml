@@ -9,7 +9,7 @@ alt: >-
 caption: >-
   Before, the URPM resist over the whole slice; after, the resist gone and the gate film bare
   and clean, ready for the cap. The chemical oxide the clean leaves on the film, which the page
-  infers is kept, is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide
+  infers is kept, is not drawn. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide
   is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "UPRIS, step 057"
@@ -18,12 +18,12 @@ panels:
   - state_after: "056"
     title: "Before: the URPM resist after UPRI (step 056)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox, polyp]
+    hide_labels: [fox, poly, gox, polyp, thinox]
     dim_layers: [liner]
     show_ions: false
   - state_after: "057"
     title: "After: resist removed; the fully doped gate film bare"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox]
+    hide_labels: [fox, poly, gox, thinox]
     dim_layers: [liner]
     highlight: {where: [[0, 268]]}

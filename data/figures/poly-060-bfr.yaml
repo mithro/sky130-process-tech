@@ -12,10 +12,10 @@ caption: >-
   the front, drawn here, is kept away from the chemistry. The back of the wafer is not part of
   any cross-section on this site, so the drawing is the same as before the step. Which films
   the back carries depends on whether the caps were deposited in a furnace, which is not public.
-  The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+  The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 panels:
   - state_after: "060"
     title: "State at this step (no drawn change)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox]
+    hide_labels: [fox, poly, gox, thinox]
     dim_layers: [liner]

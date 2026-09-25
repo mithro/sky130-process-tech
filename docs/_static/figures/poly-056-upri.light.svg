@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 371" width="480" height="371" role="img" data-kind="xsection" data-theme="light">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320" role="img" data-kind="xsection" data-theme="light">
 <title>One cross-section of the wafer. Resist covers a continuous film over the whole slice, and arrows come down on the resist everywhere. The drawing is the same as the state before the step.</title>
 <desc>One cross-section of the wafer. Resist covers a continuous film over the whole slice, and arrows come down on the resist everywhere. The drawing is the same as the state before the step.</desc>
 <style>
-:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -18,10 +18,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
 .ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
 .cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
-.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="371"/>
+<rect class="ground" x="0" y="0" width="480" height="320"/>
 <text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
 <clipPath id="clip1"><rect x="12" y="79.0" width="268" height="205.0"/></clipPath>
 <g class="drawing" data-rect="12,79.0,268,205.0" clip-path="url(#clip1)">
@@ -56,31 +56,24 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="ion" d="M265.1 83.0L265.1 114.5"/>
 <path class="ionhead" d="M265.1 119.0L268.1 125.0L262.1 125.0Z"/>
 </g>
-<text x="328.0" y="322.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 276.0H285.0V318.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="276.0" r="1.9"/>
-<text x="328.0" y="250.9" class="t-label-title" data-owner="thinox">Thin gate oxide</text>
-<text x="328.0" y="266.9" class="t-label-note muted" data-owner="thinox">grown at LVGOX,</text>
-<text x="328.0" y="282.9" class="t-label-note muted" data-owner="thinox">step 047, on the</text>
-<text x="328.0" y="298.9" class="t-label-note muted" data-owner="thinox">low-voltage area</text>
-<path class="leader" data-owner="thinox" d="M276.0 209.5H291.0V246.0H324.0"/>
-<circle class="dot" data-owner="thinox" cx="276.0" cy="209.5" r="1.9"/>
-<text x="328.0" y="178.9" class="t-label-title" data-owner="polyn">n-type gate film</text>
-<text x="328.0" y="194.9" class="t-label-note muted" data-owner="polyn">gate implant, step</text>
-<text x="328.0" y="210.9" class="t-label-note muted" data-owner="polyn">050; the PDK&#x27;s &quot;N+</text>
-<text x="328.0" y="226.9" class="t-label-note muted" data-owner="polyn">doped gate poly&quot;</text>
-<path class="leader" data-owner="polyn" d="M276.0 192.0H297.0V174.0H324.0"/>
-<circle class="dot" data-owner="polyn" cx="276.0" cy="192.0" r="1.9"/>
-<text x="328.0" y="90.9" class="t-label-title" data-owner="urpmres">Photoresist</text>
-<text x="328.0" y="106.9" class="t-label-note muted" data-owner="urpmres">URPM, step 055; it</text>
-<text x="328.0" y="122.9" class="t-label-note muted" data-owner="urpmres">opens only over</text>
-<text x="328.0" y="138.9" class="t-label-note muted" data-owner="urpmres">the ultra-high-value</text>
-<text x="328.0" y="154.9" class="t-label-note muted" data-owner="urpmres">resistors</text>
-<path class="leader" data-owner="urpmres" d="M276.0 128.5H303.0V86.0H324.0"/>
+<text x="328.0" y="270.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 266.0H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="266.0" r="1.9"/>
+<text x="328.0" y="214.9" class="t-label-title" data-owner="polyn">n-type gate film</text>
+<text x="328.0" y="230.9" class="t-label-note muted" data-owner="polyn">gate implant,</text>
+<text x="328.0" y="246.9" class="t-label-note muted" data-owner="polyn">step 050</text>
+<path class="leader" data-owner="polyn" d="M276.0 203.5H291.0V210.0H324.0"/>
+<circle class="dot" data-owner="polyn" cx="276.0" cy="203.5" r="1.9"/>
+<text x="328.0" y="126.9" class="t-label-title" data-owner="urpmres">Photoresist</text>
+<text x="328.0" y="142.9" class="t-label-note muted" data-owner="urpmres">URPM, step 055; it</text>
+<text x="328.0" y="158.9" class="t-label-note muted" data-owner="urpmres">opens only over</text>
+<text x="328.0" y="174.9" class="t-label-note muted" data-owner="urpmres">the ultra-high-value</text>
+<text x="328.0" y="190.9" class="t-label-note muted" data-owner="urpmres">resistors</text>
+<path class="leader" data-owner="urpmres" d="M276.0 128.5H297.0V122.0H324.0"/>
 <circle class="dot" data-owner="urpmres" cx="276.0" cy="128.5" r="1.9"/>
 <text x="31.0" y="49.9" class="t-label-title" data-owner="ions">UPRI implant</text>
 <text x="31.0" y="65.9" class="t-label-note muted" data-owner="ions">stopped here by the resist</text>
 <path class="leader" data-owner="ions" d="M22.0 83.0V45.0H27.0"/>
 <circle class="dot" data-owner="ions" cx="22.0" cy="83.0" r="1.9"/>
-<text x="12.0" y="359.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="12.0" y="308.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

@@ -16,7 +16,7 @@ caption: >-
   this step. Whether the resist stays on through the poly etch or the caps serve as a hard mask
   after an early strip is not public, and the drawing shows only the result. The walls are drawn
   vertical, and the gate oxide is drawn intact; how much of it the over-etch removes is not
-  public. The colours of the gate film mark the type of its doping, not a depth profile. The p-type resistor body is not labelled from the right in either panel, because its leader would have to cross the resist line or the gate stack; in the lower panel a label above the drawing names it. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+  public. The colours of the gate film mark the type of its doping, not a depth profile. The p-type resistor body is not labelled from the right in either panel, because its leader would have to cross the resist line or the gate stack; in the lower panel a label above the drawing names it. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
   title: "P1ME, step 062"
   note: "A plasma etch cuts the caps and the gate film down to the gate oxide; the resist is then stripped."
@@ -24,12 +24,12 @@ panels:
   - state_after: "061"
     title: "Before: the P1M resist lines on the gate stack (step 061)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, polyp, gox]
+    hide_labels: [fox, poly, polyp, gox, thinox]
     dim_layers: [liner]
   - state_after: "062"
     title: "After: a gate stack on the thin-oxide NMOS and a resistor stack on the field"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, polyp, gox]
+    hide_labels: [fox, poly, polyp, gox, thinox]
     dim_layers: [liner]
     highlight: {where: [[0, 268]]}
     callouts:

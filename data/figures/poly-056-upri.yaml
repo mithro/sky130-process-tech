@@ -12,12 +12,12 @@ caption: >-
   At UPRI a light p-type dose goes through the URPM windows into the bodies of the 2000 Ω/sq
   resistors.[^pdk-07] None lies in this slice, which carries a 300 Ω/sq resistor,[^pdk-07] so here the
   resist stops the whole beam and nothing changes. Species, energy, dose and tilt are not
-  public; the arrows are drawn vertical. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and the thick gate oxide on the left are drawn but not labelled, and the
+  public; the arrows are drawn vertical. The colours of the gate film mark the type of its doping, not a depth profile. Under the resist the p-type resistor body is not labelled, because its leader would have to rise through the resist. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the
   liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to
   scale.
 panels:
   - state_after: "056"
     title: "State at this step (no drawn change)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, poly, gox, polyp]
+    hide_labels: [fox, poly, gox, polyp, thinox]
     dim_layers: [liner]
