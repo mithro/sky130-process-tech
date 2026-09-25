@@ -1,0 +1,38 @@
+id: sd-074-ldastis
+kind: xsection
+page: docs/steps/074-ldastis.md
+series: series-tips-sd.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a flat-topped block of
+  resist covers the whole slice. After it the resist is gone, uncovering a wide capped stack on
+  the oxide-filled trench, a narrow capped gate on the right-hand active area and doped layers in
+  the silicon of both active areas.
+caption: >-
+  Before, the LDNTM resist after the two SONOS implants, which it stopped everywhere in this
+  slice; after, the resist stripped and the wafer cleaned before the tip anneal, with every tip
+  and halo of the module in place and not yet annealed. The thin oxide over the silicon and the
+  capped gates is drawn unchanged: the page infers that no HF step, or only a very dilute one,
+  is used, so that it stays as a cap for the anneal. The resist's implanted crust is not drawn.
+  The tips' colour and the halo's hatching mark where the implants are, not their profiles. The
+  halo, the caps, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled
+  trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the
+  P-well and the NCHI channel implant made earlier are not drawn. Under the resist in the upper
+  panel the high-voltage tip on the left is not labelled, because its leader would have to rise
+  through the resist. Not to scale.
+arrow:
+  title: "LDASTIS, step 074"
+  note: "The implanted resist is ashed and the wafer given a pre-anneal clean that removes metals."
+panels:
+  - state_after: "073"
+    title: "Before: the LDNTM resist after the SONOS implants (step 073)"
+    show_ions: false
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, polyp, polyn, hvtip]
+    dim_layers: [liner]
+  - state_after: "074"
+    title: "After: the resist stripped, every tip and halo in place"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}

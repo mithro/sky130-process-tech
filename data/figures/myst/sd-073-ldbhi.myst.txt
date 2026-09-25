@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/sd-073-ldbhi.svg
+:alt: One cross-section of the wafer. A flat-topped block of resist covers the whole slice, over two capped stacks and doped layers in the silicon, and arrows come down on the resist everywhere. The drawing is the same as the state before the step.
+:width: 560px
+:name: fig-sd-073-ldbhi
+
+At LDBHI a boron halo goes through the LDNTM windows into the SONOS memory transistors, around their tips. None lies in this slice, so here the resist stops the whole beam and nothing changes. Species beyond boron, energy, dose, tilt and rotation are not public; the arrows are drawn vertical, although a halo is made at a large tilt, 20–45° being typical.[^txt-04] The tips' colour and the halo's hatching mark where the earlier implants are, not their profiles. The halo, the caps, the gate films, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Under the resist the high-voltage tip on the left is not labelled, because its leader would have to rise through the resist. Not to scale.
+:::

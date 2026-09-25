@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 324" width="480" height="324" role="img" data-kind="xsection" data-theme="dark">
+<title>One enlarged cross-section of one transistor edge. A capped gate stands on a thin oxide over the silicon; beside it a shallow doped layer lies in the silicon, and a hatched region lies under that layer and reaches a short way under the gate edge. The drawing is the same as the state before the step.</title>
+<desc>One enlarged cross-section of one transistor edge. A capped gate stands on a thin oxide over the silicon; beside it a shallow doped layer lies in the silicon, and a hatched region lies under that layer and reaches a short way under the gate edge. The drawing is the same as the state before the step.</desc>
+<style>
+:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-tip-n:#3b78b8;--m-sd-p:#e57db4;--m-implant:#e4e6e9;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#bdb391;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-arc:#8f6a55;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#d4ae5c;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.mat.faded{fill:none;stroke:var(--ink-muted);stroke-dasharray:3 2}
+.patink{stroke:var(--ink);stroke-width:0.8;opacity:0.8;fill:none}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
+<rect class="ground" x="0" y="0" width="480" height="324"/>
+<text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="215.0"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,215.0" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,187.87 283.00,187.87 283.00,351.87 9.00,351.87"/>
+<polygon class="mat m-oxide-thermal" data-layer="thinox" points="9.00,170.91 283.00,170.91 283.00,187.87 9.00,187.87"/>
+<polygon class="mat m-poly" data-layer="poly" points="170.75,103.06 253.75,103.06 253.75,170.91 170.75,170.91"/>
+<polygon class="mat m-nitride" data-layer="nit" points="170.75,69.14 253.75,69.14 253.75,103.06 170.75,103.06"/>
+<polygon fill="url(#p-hatch)" points="170.75,69.14 253.75,69.14 253.75,103.06 170.75,103.06"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="170.75,42.00 253.75,42.00 253.75,69.14 170.75,69.14"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,153.95 152.50,153.95 153.00,147.49 154.50,103.06 170.75,103.06 170.75,170.91 9.00,170.91"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="253.75,103.06 269.50,103.06 270.00,108.38 271.50,153.38 272.00,153.95 283.00,153.95 283.00,170.91 253.75,170.91"/>
+<polygon class="mat m-sd-n" data-layer="polyn" points="170.75,103.06 253.75,103.06 253.75,170.91 170.75,170.91"/>
+<polygon class="mat m-implant" data-layer="halo" points="9.00,187.87 188.25,187.87 188.25,221.80 9.00,221.80"/>
+<polygon fill="url(#p-vlines-ink)" points="9.00,187.87 188.25,187.87 188.25,221.80 9.00,221.80"/>
+<polygon class="mat m-implant" data-layer="halo" points="235.75,187.87 283.00,187.87 283.00,221.80 235.75,221.80"/>
+<polygon fill="url(#p-vlines-ink)" points="235.75,187.87 283.00,187.87 283.00,221.80 235.75,221.80"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,187.87 171.25,187.87 171.25,208.23 9.00,208.23"/>
+<polygon fill="url(#p-xhatch)" points="9.00,187.87 171.25,187.87 171.25,208.23 9.00,208.23"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="252.75,187.87 283.00,187.87 283.00,208.23 252.75,208.23"/>
+<polygon fill="url(#p-xhatch)" points="252.75,187.87 283.00,187.87 283.00,208.23 252.75,208.23"/>
+</g>
+<text x="328.0" y="275.2" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 229.9H285.0V270.3H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="229.9" r="1.9"/>
+<text x="328.0" y="107.2" class="t-label-title" data-owner="polyn">n-type gate film</text>
+<text x="328.0" y="123.2" class="t-label-note muted" data-owner="polyn">gate implant,</text>
+<text x="328.0" y="139.2" class="t-label-note muted" data-owner="polyn">step 050</text>
+<path class="halo" d="M254.0 109.4L270.0 109.4"/>
+<path class="leader" data-owner="polyn" d="M249.5 109.4H303.0V102.3H324.0"/>
+<circle class="dot" data-owner="polyn" cx="249.5" cy="109.4" r="1.9"/>
+<text x="328.0" y="163.2" class="t-label-title" data-owner="tipn">n-type tip</text>
+<text x="328.0" y="179.2" class="t-label-note muted" data-owner="tipn">ASTI, step 065</text>
+<path class="leader" data-owner="tipn" d="M276.0 191.7H297.0V158.3H324.0"/>
+<circle class="dot" data-owner="tipn" cx="276.0" cy="191.7" r="1.9"/>
+<text x="328.0" y="203.2" class="t-label-title" data-owner="halo">Halo</text>
+<text x="328.0" y="219.2" class="t-label-note muted" data-owner="halo">BHI, step 066;</text>
+<text x="328.0" y="235.2" class="t-label-note muted" data-owner="halo">a p-type pocket</text>
+<text x="328.0" y="251.2" class="t-label-note tag" data-owner="halo">typical practice</text>
+<path class="halo" d="M267.5 198.3L280.0 198.3"/>
+<path class="leader" data-owner="halo" d="M267.0 198.3H291.0H324.0"/>
+<circle class="dot" data-owner="halo" cx="267.0" cy="198.3" r="1.9"/>
+<text x="12.0" y="311.3" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+</svg>

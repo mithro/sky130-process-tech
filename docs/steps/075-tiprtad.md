@@ -31,6 +31,14 @@ lamp RTA,[^skw-01] and shallow extensions call for one[^stolk-1997]).
 After it the {term}`spacer` nitride is deposited at
 {ref}`SPNIT <step-076>`.
 
+:::{figure} /_static/figures/sd-075-tiprtad.svg
+:alt: One enlarged cross-section of one transistor edge. A capped gate stands on a thin oxide over the silicon; beside it a shallow doped layer lies in the silicon, and a hatched region lies under that layer and reaches a short way under the gate edge. The drawing is the same as the state before the step.
+:width: 560px
+:name: fig-sd-075-tiprtad
+
+A close-up of the 1.8 V NMOS gate edge, as for ASTI and BHI, at the tip anneal. The anneal activates the tip and halo drawn here, and the 5 V tip outside this view, but nothing the drawing shows moves: no depth is public for the tip (the page reads the PDK's 0.01 µm "N Tip (As)" entry as its lateral extent),[^pdk-03] and how far the anneal moves the halo boron is not public either. The ambient, the temperature and the time are not public; the page describes an industry-typical rapid thermal anneal. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 It is the second of the four activation anneals in the flow, after
 {ref}`RTAI <step-034>` (wells and channels) and before
 {ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>` (source/drain), and

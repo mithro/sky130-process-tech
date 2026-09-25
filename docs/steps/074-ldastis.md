@@ -20,6 +20,14 @@ module and — because the next step is the activation anneal
 {ref}`TIPRTAD <step-075>` — it is also the *pre-anneal clean* for every
 tip and halo implanted since {ref}`NTM <step-064>`.
 
+:::{figure} /_static/figures/sd-074-ldastis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a flat-topped block of resist covers the whole slice. After it the resist is gone, uncovering a wide capped stack on the oxide-filled trench, a narrow capped gate on the right-hand active area and doped layers in the silicon of both active areas.
+:width: 560px
+:name: fig-sd-074-ldastis
+
+Before, the LDNTM resist after the two SONOS implants, which it stopped everywhere in this slice; after, the resist stripped and the wafer cleaned before the tip anneal, with every tip and halo of the module in place and not yet annealed. The thin oxide over the silicon and the capped gates is drawn unchanged: the page infers that no HF step, or only a very dilute one, is used, so that it stays as a cap for the anneal. The resist's implanted crust is not drawn. The tips' colour and the halo's hatching mark where the implants are, not their profiles. The halo, the caps, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Under the resist in the upper panel the high-voltage tip on the left is not labelled, because its leader would have to rise through the resist. Not to scale.
+:::
+
 The resist is, we infer, the standard ~1 µm film (the PDK's nominal
 1.14 µm),[^pdk-03] and it has received a moderate arsenic dose (of order 10¹³
 cm⁻², typical of an {term}`LDD`)[^txt-04] plus a light, tilted boron dose: a

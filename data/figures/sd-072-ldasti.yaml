@@ -1,0 +1,26 @@
+id: sd-072-ldasti
+kind: xsection
+page: docs/steps/072-ldasti.md
+series: series-tips-sd.yaml
+crop_depth: 72
+no_drawn_change: true
+alt: >-
+  One cross-section of the wafer. A flat-topped block of resist covers the whole slice, over two
+  capped stacks and doped layers in the silicon, and arrows come down on the resist everywhere.
+  The drawing is the same as the state before the step.
+caption: >-
+  At LDASTI a lightly doped arsenic tip goes through the LDNTM windows into the SONOS memory
+  transistors. None lies in this slice, so here the resist stops the whole beam and nothing
+  changes. The energy and dose are not public. The page infers that the PDK's 7° tip angle
+  applies,[^pdk-03] but whether the implant is tilted or made at 0° is not public, so the arrows
+  are drawn vertical. The tips' colour and the halo's hatching mark where the earlier implants
+  are, not their profiles. The halo, the caps, the gate films, the gate oxides, the re-oxidation
+  oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled,
+  and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are
+  not drawn. Under the resist in this panel the high-voltage tip on the left is not labelled, because its leader would have to rise through the resist. Not to scale.
+panels:
+  - state_after: "072"
+    title: "State at this step (no drawn change)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, polyp, polyn, hvtip]
+    dim_layers: [liner]
