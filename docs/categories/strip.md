@@ -1,6 +1,18 @@
 (category-strip)=
 # Resist strip / clean
 
+A strip step takes off the photoresist once it has done its job as an
+implant or etch mask, and then cleans the wafer so that the next step
+starts from a bare, chemically defined surface.
+
+| | Resist strip / clean |
+|---|---|
+| What it does | takes off the photoresist and cleans the wafer for the next step |
+| Steps in SKY130 | 15 |
+| Tool classes | {ref}`Ashers <machine-downstream-plasma-asher>`, {ref}`Wet benches <machine-wet-bench>` |
+| Consumable classes | {ref}`Wet chemicals <material-wet-chemicals>` |
+| Governing relation | — |
+
 ## What this class of step does
 
 A strip step takes off the photoresist once it has done its job as an
@@ -80,13 +92,17 @@ engineered than etch strips.[^kern-handbook]
 * **SPM (piranha)**: "a typical mixture is 3 parts of concentrated
   sulfuric acid and 1 part of 30 wt. % hydrogen peroxide solution", with
   4:1 and 7:1 also used, and the exothermic mixing "can easily bring the
-  solution temperature above 100 °C".[^wiki-piranha] It dissolves
+  solution temperature above 100 °C".[^wiki-piranha]
+
+  It dissolves
   organics by oxidation and leaves the silicon surface hydroxylated and
   hydrophilic with a thin chemical oxide. It is incompatible with
   exposed aluminium and titanium nitride.
 * **SC-1 (APM)**: "5 parts of deionized water, 1 part of ammonia water
   (29% by weight of NH3), 1 part of aqueous H2O2 (hydrogen peroxide,
-  30%) at 75 or 80 °C typically for 10 minutes".[^wiki-rca] It removes
+  30%) at 75 or 80 °C typically for 10 minutes".[^wiki-rca]
+
+  It removes
   particles by continuously growing and under-cutting a chemical oxide,
   and organics by oxidation; dilute variants (1:1:50 and weaker) with
   megasonic agitation were standard by the 130 nm node to limit silicon
@@ -94,7 +110,9 @@ engineered than etch strips.[^kern-handbook]
 * **SC-2 (HPM)**: "6 parts of deionized water, 1 part of aqueous HCl
   (hydrochloric acid, 37% by weight), 1 part of aqueous H2O2 (hydrogen
   peroxide, 30%) at 75 or 80 °C",[^wiki-rca] which dissolves metallic
-  contamination as chlorides. Werner Kern "developed the basic procedure
+  contamination as chlorides.
+
+  Werner Kern "developed the basic procedure
   in 1965 while working for RCA".[^wiki-rca][^kern-1990]
 * **Dilute HF**: a short dip removes the chemical oxide left by SC-1 or
   SPM and leaves a hydrogen-terminated, hydrophobic surface; used as
@@ -110,7 +128,7 @@ engineered than etch strips.[^kern-handbook]
 The STI nitride ({ref}`ISONIT <step-003>`) is removed after the oxide
 {term}`CMP` in hot phosphoric acid — 85 % H₃PO₄ at 150–180 °C — which etches
 Si₃N₄ at a few nanometres per minute with a {term}`selectivity` to SiO₂ of the
-order of 30:1 or better; the pad oxide underneath protects the silicon
+order of 30:1 or better.[^txt-02][^wiki-h3po4] The pad oxide underneath protects the silicon
 and is later removed in HF.[^txt-02][^wiki-h3po4] The bath temperature
 and its water content (which the etch consumes) must be controlled, and
 the bath is usually run with a reflux condenser and water spiking.
@@ -122,7 +140,7 @@ drying for batch cassettes, or IPA-vapour (Marangoni) drying, which
 draws the water off the wafer without leaving water marks. The state
 in which the surface is left — hydrophilic chemical oxide or
 hydrophobic H-terminated silicon — must match what the next step
-expects: gate oxidation wants an HF-last surface with a re-grown
+expects. Gate oxidation wants an HF-last surface with a re-grown
 chemical oxide of controlled thickness, while resist coating wants a
 hydrophobic surface obtained with {term}`HMDS` ({ref}`category-lithography`).
 The ITRS 2001 front-end chapter treats surface preparation, particles
@@ -132,7 +150,8 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 * **{ref}`Ashers <machine-downstream-plasma-asher>`**: downstream microwave strippers such as the GaSonics L3510
   (a "production-proven downstream plasma photoresist ashing system" for
-  75–200 mm wafers)[^gasonics-l3510] and the GaSonics Aura series;
+  75–200 mm wafers)[^gasonics-l3510] and the GaSonics Aura series.
+
   Mattson Aspen (ICP-based strip); Axcelis/Fusion ES and RadiantStrip;
   single-wafer RF ashers integrated onto etch platforms (Applied
   Materials ASP and Lam). University clean-room guides describe the
@@ -151,13 +170,13 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ## Typical consumables
 
-* **Gases**: O₂, N₂, {term}`forming gas` (H₂/N₂), CF₄, water vapour.
-* **Acids and bases**: concentrated sulphuric acid[^wiki-piranha] and
+* **{ref}`Gases <material-process-gases>`**: O₂, N₂, {term}`forming gas` (H₂/N₂), CF₄, water vapour.
+* **{ref}`Acids and bases <material-wet-chemicals>`**: concentrated sulphuric acid[^wiki-piranha] and
   30 % hydrogen peroxide,[^wiki-piranha] 29 % ammonium hydroxide and
   30 % hydrogen peroxide,[^wiki-rca] 37 % hydrochloric acid, 49 % HF,
   85 % phosphoric acid; all semiconductor-grade (parts-per-trillion
   metals).
-* **Solvents**: NMP, DMSO, hydroxylamine-based strippers, isopropanol
+* **{ref}`Solvents <material-wet-chemicals>`**: NMP, DMSO, hydroxylamine-based strippers, isopropanol
   for drying.
 * **Water**: ultrapure de-ionised water at 18 MΩ·cm with sub-ppb
   TOC,[^reinhardt-2010] in very large volumes (thousands of litres per
@@ -167,23 +186,26 @@ and metals as a critical-dimension issue in its own right.[^itrs-01]
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 9 | {ref}`DNIS <step-009>` | High V deep N-well implant strip |
-| 13 | {ref}`NS19 <step-013>` | Nitride strip |
-| 16 | {ref}`LVTNIS <step-016>` | Low Vt NMOS implant strip |
-| 21 | {ref}`LVTPIS <step-021>` | P-channel implant strip |
-| 25 | {ref}`PCHIS <step-025>` | P-channel BF2 implant strip |
-| 29 | {ref}`PWIS <step-029>` | P-well implant strip |
-| 33 | {ref}`PWDEIS <step-033>` | PWDEIS implant strip |
-| 51 | {ref}`P1IS <step-051>` | P1IS implant resist strip |
-| 54 | {ref}`PRIS <step-054>` | PRI implant resist strip |
-| 57 | {ref}`UPRIS <step-057>` | UPRIS implant resist strip |
-| 67 | {ref}`ASTIS <step-067>` | As tip implant strip |
-| 70 | {ref}`HVASTIS <step-070>` | HV As N-tip implant strip |
-| 74 | {ref}`LDASTIS <step-074>` | LD ASTI implant strip |
-| 84 | {ref}`PDIS <step-084>` | P+ source drain implant strip |
-| 87 | {ref}`NSDIS <step-087>` | N+ source drain implant strip |
+:::{table} The fifteen strip steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 9 | {ref}`DNIS <step-009>` | High V deep N-well implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 13 | {ref}`NS19 <step-013>` | Nitride strip | {ref}`Wet bench <machine-wet-bench>` |
+| 16 | {ref}`LVTNIS <step-016>` | Low Vt NMOS implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 21 | {ref}`LVTPIS <step-021>` | P-channel implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 25 | {ref}`PCHIS <step-025>` | P-channel BF2 implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 29 | {ref}`PWIS <step-029>` | P-well implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 33 | {ref}`PWDEIS <step-033>` | PWDEIS implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 51 | {ref}`P1IS <step-051>` | P1IS implant resist strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 54 | {ref}`PRIS <step-054>` | PRI implant resist strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 57 | {ref}`UPRIS <step-057>` | UPRIS implant resist strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 67 | {ref}`ASTIS <step-067>` | As tip implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 70 | {ref}`HVASTIS <step-070>` | HV As N-tip implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 74 | {ref}`LDASTIS <step-074>` | LD ASTI implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 84 | {ref}`PDIS <step-084>` | P+ source drain implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+| 87 | {ref}`NSDIS <step-087>` | N+ source drain implant strip | {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings

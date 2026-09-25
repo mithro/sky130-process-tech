@@ -39,9 +39,46 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 - anneal.md — done
 - oxidation.md — done
 - test.md — done
-- (remaining five to do: deposition, etch, implant, lithography, strip)
+- strip.md — done
+- (remaining four to do: deposition, etch, implant, lithography)
 
 ## Pages
+
+### strip.md — done
+
+Rules applied: intro + quick-facts table (Governing relation "—", no named law on this page); R-PARA on
+the SPM/SC-1/SC-2 and Ashers list items (each already had 2-3 sentences; split into a lead sentence plus
+an indented continuation, wording unchanged) — the "Wet strip and clean chemistry" 5-bullet list was
+**not** put through R-COMPARE: it has no `(steps)` per item (these are general chemistries, not tied to
+numbered steps), so the rule's own trigger shape does not match, matching the same judgement made for
+anneal.md's Titanium/Cobalt bullets; R-SENTENCE splits (the nitride-strip hot-phosphoric sentence, the
+surface-state sentence), each a semicolon/colon joining two claims; R-COMPARE step 2 (five consumables
+lead-ins linked: Gases → `process-gases`, Acids and bases/Solvents → `wet-chemicals`); R-COMPARE step 3
+(Machine class column on the 15-row steps table — 14 rows get `Downstream plasma asher`, the primary
+class for every implant-mask strip; `NS19` (the wet nitride strip) gets `Wet bench`, its own primary
+class per the machines index); R-CAPTION on the new steps table.
+
+`check_preserved.py --base bd8ab46d --allow-regrouped --allow-added markers,numbers,refs,identifiers` →
+exit 0, no LOST or REGROUPED entries at all (every split landed on a sentence boundary with no digit
+runs to preserve).
+
+* **ADDED markers:** `txt-02`, `wiki-h3po4` (one extra occurrence each) — R-SENTENCE rule 5 repeats.
+* **ADDED numbers:** `15` — Steps-in-SKY130 count.
+* **ADDED refs:** `machine-downstream-plasma-asher` ×15, `machine-wet-bench` ×2 (quick facts + Machine
+  class column), `material-process-gases` ×1, `material-wet-chemicals` ×3 (quick facts + the three
+  linked consumables lead-ins).
+* **ADDED identifiers:** `SKY130` ×1.
+
+Quick-facts derivation: What it does = trimmed from the page's own opening sentence. Steps in SKY130 =
+15 (steps table). Tool classes = the two dominant `{ref}` targets in Typical equipment (Ashers, Wet
+benches — Spray processors and single-wafer spin processors share the `machine-wet-bench`/
+`machine-single-wafer-spin-processor` targets already and were left out of the summary cell). Consumable
+classes = `wet-chemicals`, the class page owning every acid/base/solvent row this page names. Governing
+relation = `—` (no named law on this page — plasma ashing and RCA-clean chemistry are described only
+qualitatively).
+
+Checkers and `-W` build pass. Screenshots (desktop, 400 px) reviewed: no horizontal scroll; the 15-row,
+4-column steps table wraps cleanly on the phone tile.
 
 ### test.md — done
 
