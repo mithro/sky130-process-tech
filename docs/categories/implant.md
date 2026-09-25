@@ -14,8 +14,7 @@ the wafer as a beam of ions.
 
 ## What this class of step does
 
-Ion implantation puts dopant atoms into the silicon by firing them at
-the wafer as a beam of ions. A gas such as boron trifluoride, phosphine
+A gas such as boron trifluoride, phosphine
 or arsine is ionised, the wanted ion is picked out by a magnet
 according to its mass, accelerated to a chosen energy and scanned across
 the wafer. Wherever the wafer is bare (or covered only by a thin screen
@@ -84,7 +83,7 @@ N(x) = \frac{\Phi}{\sqrt{2\pi}\,\Delta R_p}
 ```
 
 with peak concentration {math}`N_{\max} \approx 0.4\,\Phi/\Delta R_p`
-for dose {math}`\Phi`. Real profiles are skewed (light ions such as
+for dose {math}`\Phi`.[^srim][^ziegler-2010] Real profiles are skewed (light ions such as
 boron back-scatter and have a deep tail; heavy ions such as arsenic are
 skewed towards the surface) and are fitted with Pearson IV distributions
 or computed by Monte Carlo codes such as
@@ -147,20 +146,17 @@ low-dose implants, and periodically by SIMS profiling.[^txt-01][^current-2017]
 
 :::{table} Implant classes named on this page; energies and doses are typical industry values for the node, and SKY130's own recipes are not public[^txt-01][^txt-02]
 
-| Implant class | SKY130 steps | Species, energy and dose | Note |
-|---|---|---|---|
-| Wells and deep wells | {ref}`NWI <step-018>`, {ref}`PWI <step-027>`, {ref}`DNI <step-008>` | phosphorus or boron, hundreds of keV to over 1 MeV, 10¹²–10¹³ cm⁻², from a high-energy implanter | ITRS 2001: "the retrograde well profile must be less than 0.5 times the drain extension depth to improve short channel effects".[^itrs-01] |
-| Threshold-adjust and channel | — | BF₂, B, As or P, tens of keV, 10¹²–10¹³ cm⁻², from a medium-current implanter | placed just under the gate oxide to set {term}`Vt` |
-| Poly and resistor | {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>` | gate: degenerately doped, high 10¹⁵ cm⁻²; resistors: lower, split doses | avoid {term}`poly depletion`; hit a target sheet resistance |
-| Extensions ("tips") and halos | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>` | arsenic, a few keV, about 10¹⁴–10¹⁵ cm⁻² (extension); boron or indium at a large tilt (halo) | ITRS 2001 gives extension junction depths for the 130 nm node in its Table 51 and treats the p-type boron extension as the most challenging junction.[^itrs-01] |
-| Source/drain | {ref}`NSDI <step-086>`, {ref}`PSDI <step-082>` | arsenic and boron/BF₂, several 10¹⁵ cm⁻², tens of keV, after the {term}`spacer`, from a high-current implanter | amorphise the surface and set the contact resistance |
+| Implant class | SKY130 steps | Species, energy and dose |
+|---|---|---|
+| Wells and deep wells | n-well {ref}`NWI <step-018>`, p-well {ref}`PWI <step-027>`, deep n-well {ref}`DNI <step-008>` | phosphorus or boron at hundreds of keV to over 1 MeV, doses of order 10¹²–10¹³ cm⁻², from a high-energy implanter. A "retrograde" well whose peak lies below the channel gives latch-up immunity and {term}`punch-through` control; ITRS 2001 notes that "the retrograde well profile must be less than 0.5 times the drain extension depth to improve short channel effects".[^itrs-01] |
+| Threshold-adjust and channel implants (low-Vt, high-Vt, channel, punch-through-stop) | — | light doses of order 10¹²–10¹³ cm⁻² of BF₂, B, As or P at tens of keV, placed just under the gate oxide to set {term}`Vt`, from a medium-current implanter |
+| Poly and resistor implants | {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>` | the gate must be degenerately doped (high 10¹⁵ cm⁻²) to avoid {term}`poly depletion`, whereas precision resistors need lower, carefully split doses to hit a target sheet resistance |
+| Extensions ("tips") and halos | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>` | arsenic at a few keV and about 10¹⁴–10¹⁵ cm⁻² self-aligned to the gate edge forms the shallow n-type {term}`extension`; boron (or indium) at a large tilt forms the halo around it. ITRS 2001 gives extension junction depths for the 130 nm node in its Table 51 and treats the p-type boron extension as the most challenging junction.[^itrs-01] |
+| Source/drain | {ref}`NSDI <step-086>`, {ref}`PSDI <step-082>` | arsenic and boron/BF₂ at several 10¹⁵ cm⁻² and tens of keV, after the {term}`spacer`, from a high-current implanter; these amorphise the surface and set the contact resistance |
 :::
 
-A "retrograde" well whose peak lies below the channel gives latch-up
-immunity and {term}`punch-through` control. We infer that multiple energies
-are chained (the "NWI2" and "PWI2" steps) to shape the well profile;
-the extension and halo implants form the shallow n-type
-{term}`extension`, self-aligned to the gate edge, with the halo around it.
+We infer that multiple energies
+are chained (the "NWI2" and "PWI2" steps) to shape the profile.
 
 ### Typical implanter classes
 
@@ -221,7 +217,7 @@ commercial implanters is given by Current.[^current-2017]
 
 ## Steps in this category
 
-:::{table} The twenty-five implant steps of the flow
+:::{table} The twenty-five implant steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
