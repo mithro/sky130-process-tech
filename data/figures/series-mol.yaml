@@ -43,13 +43,14 @@
 # * WDEP (099) is conformal and thick enough to close every hole; WCMPLI (100) polishes the
 #   tungsten and the liner off the field down to the cap oxide, leaving flush plugs.
 # * LITIN (101) is a flat TiN film; LI1M (102) leaves resist over one pad on each plug, enclosing
-#   it (licon.4, li.5); where li runs in a real layout is not drawn. LI1ME (103) etches the TiN
+#   it (licon.4, li.5); the right-hand pad runs on over the gate (x 178-250), which li may do
+#   and which keeps the NILD2 above it flat to the slice's edge; the layout is illustrative. LI1ME (103) etches the TiN
 #   to the cap oxide and the resist is stripped (the page: "The resist is stripped afterwards").
 # * LINIT (104) is a thin conformal nitride; NILD2 (105) a conformal oxide over it; CMPL (106)
 #   polishes it flat, leaving oxide over the LI nitride (a fixed removal; not public how much).
 #
 # Thicknesses drawn: PSG 46 u as deposited, polished to 59 u above the silicon; cap oxide 10 u;
-# contact resist 30 u; liner 5 u; silicide 5 u; tungsten 14 u; LI TiN 8 u; LI resist 30 u; LINT
+# contact resist 30 u; liner 5 u; silicide 5 u; tungsten 16 u; LI TiN 8 u; LI resist 30 u; LINT
 # 5 u; NILD2 24 u as deposited, polished to 94 u. Series labels carry no numbers.
 note_order: newest
 substrate:
@@ -735,7 +736,7 @@ ops:
     where: [[20, 60], [114, 154], [184, 224]]
     label:
       title: "Titanium silicide"
-      note: "CSIL, step 098; only in the contact holes, we infer"
+      note: "CSIL, step 098; only in the contact holes"
       basis: inferred
   # ---- the tungsten: conformal, thick enough to close every hole
   - step: "099"
@@ -769,7 +770,7 @@ ops:
     id: li1mres
     material: resist
     t: 30
-    where: [[14, 66], [108, 160], [178, 230]]
+    where: [[14, 66], [108, 160], [178, 250]]
     label:
       title: "Photoresist"
       note: "local-interconnect mask, step 102"

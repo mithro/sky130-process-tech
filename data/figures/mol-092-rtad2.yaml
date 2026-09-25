@@ -15,12 +15,11 @@ caption: >-
   and a densification of the glass and the cap that drives out the water they took up. The
   temperature, time and ambient are not public. The junctions are already at their 0.1 µm
   design depth in the PDK,[^pdk-03] not drawn to scale. The colours mark the type of the doping,
-  not a depth profile. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the p-type resistor body, the tips and the
-  halo, and the field oxide
+  not a depth profile. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide
   (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 panels:
   - state_after: "092"
     title: "State at this step (no drawn change)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd]
     dim_layers: [liner]

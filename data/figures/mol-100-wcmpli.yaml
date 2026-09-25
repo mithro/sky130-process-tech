@@ -4,16 +4,17 @@ page: docs/steps/100-wcmpli.md
 series: series-mol.yaml
 close_up: [170, 268]
 close_up_name: "the 1.8 V source/drain contact"
+routes: {wfill: auto}
 crop_depth: 24
 alt: >-
   Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other.
   Before the step a cross-hatched grey metal fills the hole and covers the flat top. After it the
-  metal and the thin dark film under it are gone from the top: the metal is left only in the
+  metal and the thin purple film under it are gone from the top: the metal is left only in the
   hole, its top flush with the flat oxide around it.
 caption: >-
   A close-up of the 1.8 V source/drain contact, beside the gate. Before, the tungsten blanket;
   after, the polish has removed the tungsten and the liner from the field down to the cap oxide,
-  leaving a plug flush with it. The plug recess and the oxide erosion the polish leaves are not
+  leaving a plug flush with it. The polish was drawn at the height of a nitride-capped poly line on the field oxide, as on the CMPP figure, so glass stays over this slice's gate, which stands lower, on the active area. The plug recess and the oxide erosion the polish leaves are not
   public and are not drawn. The other two holes become plugs in the same way, outside this view;
   the local interconnect that lands on them must cover each one (licon.4, li.5).[^pdk-periph]
   The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers,

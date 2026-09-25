@@ -179,8 +179,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="422.4" class="t-label-title" data-owner="ncap">Cap oxide</text>
 <path class="leader" data-owner="ncap" d="M276.0 422.5H297.0V417.5H324.0"/>
 <circle class="dot" data-owner="ncap" cx="276.0" cy="422.5" r="1.9"/>
-<text x="137.0" y="323.9" class="t-label-title" text-anchor="end" data-owner="callout0">Hole to</text>
-<text x="137.0" y="339.9" class="t-label-title" text-anchor="end" data-owner="callout0">the poly</text>
+<text x="137.0" y="323.9" class="t-label-title" text-anchor="end" data-owner="callout0">Poly contact</text>
+<text x="137.0" y="339.9" class="t-label-title" text-anchor="end" data-owner="callout0">hole</text>
 <text x="137.0" y="355.9" class="t-label-note muted" text-anchor="end" data-owner="callout0">on the</text>
 <text x="137.0" y="371.9" class="t-label-note muted" text-anchor="end" data-owner="callout0">resistor head</text>
 <path class="leader" data-owner="callout0" d="M146.0 439.0V319.0H141.0"/>

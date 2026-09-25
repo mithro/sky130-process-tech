@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 484" width="480" height="484" role="img" data-kind="xsection" data-theme="light">
-<title>Two cross-sections of the wafer, one above the other. Before the step a thin dark film covers a flat surface with three metal plugs under it. After it three blocks of resist stand on the film, one centred over each plug and wider than the plug&#x27;s top.</title>
-<desc>Two cross-sections of the wafer, one above the other. Before the step a thin dark film covers a flat surface with three metal plugs under it. After it three blocks of resist stand on the film, one centred over each plug and wider than the plug&#x27;s top.</desc>
+<title>Two cross-sections of the wafer, one above the other. Before the step a thin purple film covers a flat surface with three metal plugs under it. After it three blocks of resist stand on the film, one over each plug and wider than the plug&#x27;s top; the right-hand one runs on over the gate.</title>
+<desc>Two cross-sections of the wafer, one above the other. Before the step a thin purple film covers a flat surface with three metal plugs under it. After it three blocks of resist stand on the film, one over each plug and wider than the plug&#x27;s top; the right-hand one runs on over the gate.</desc>
 <style>
 :root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-tip-n:#8cc3f2;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
@@ -174,8 +174,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-dots)" points="25.75,281.00 78.25,281.00 78.25,311.00 25.75,311.00"/>
 <polygon class="mat m-resist" data-layer="li1mres" points="119.75,281.00 172.25,281.00 172.25,311.00 119.75,311.00"/>
 <polygon fill="url(#p-dots)" points="119.75,281.00 172.25,281.00 172.25,311.00 119.75,311.00"/>
-<polygon class="mat m-resist" data-layer="li1mres" points="189.75,281.00 242.25,281.00 242.25,311.00 189.75,311.00"/>
-<polygon fill="url(#p-dots)" points="189.75,281.00 242.25,281.00 242.25,311.00 189.75,311.00"/>
+<polygon class="mat m-resist" data-layer="li1mres" points="189.75,281.00 262.25,281.00 262.25,311.00 189.75,311.00"/>
+<polygon fill="url(#p-dots)" points="189.75,281.00 262.25,281.00 262.25,311.00 189.75,311.00"/>
 <polygon class="mat m-sd-n" data-layer="polyn" points="247.75,363.00 272.25,363.00 272.25,383.00 247.75,383.00"/>
 <polygon class="mat m-sd-p" data-layer="polyp" points="119.75,339.00 130.00,339.00 130.50,344.00 161.50,344.00 162.00,339.00 172.25,339.00 172.25,359.00 119.75,359.00"/>
 <polygon fill="url(#p-plus)" points="119.75,339.00 130.00,339.00 130.50,344.00 161.50,344.00 162.00,339.00 172.25,339.00 172.25,359.00 119.75,359.00"/>
@@ -193,7 +193,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-sd-n" data-layer="nsd" points="199.75,388.00 208.50,388.00 209.00,393.00 223.00,393.00 223.50,388.00 230.25,388.00 230.25,402.00 199.75,402.00"/>
 <polyline class="hl" points="26.00,278.00 78.00,278.00"/>
 <polyline class="hl" points="120.00,278.00 172.00,278.00"/>
-<polyline class="hl" points="190.00,278.00 242.00,278.00"/>
+<polyline class="hl" points="190.00,278.00 262.00,278.00"/>
 </g>
 <text x="328.0" y="412.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 408.0H285.0H324.0"/>
@@ -205,7 +205,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="288.9" class="t-label-title" data-owner="li1mres">Photoresist</text>
 <text x="328.0" y="304.9" class="t-label-note muted" data-owner="li1mres">local-interconnect</text>
 <text x="328.0" y="320.9" class="t-label-note muted" data-owner="li1mres">mask, step 102</text>
-<path class="leader" data-owner="li1mres" d="M238.0 284.5H297.0V284.0H324.0"/>
-<circle class="dot" data-owner="li1mres" cx="238.0" cy="284.5" r="1.9"/>
+<path class="leader" data-owner="li1mres" d="M258.0 284.5H297.0V284.0H324.0"/>
+<circle class="dot" data-owner="li1mres" cx="258.0" cy="284.5" r="1.9"/>
 <text x="12.0" y="472.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

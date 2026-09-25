@@ -17,7 +17,7 @@ caption: >-
   not drawn to scale. Its real profile, how it fills the gaps between lines and any undoped liner under it are not
   drawn. The
   colours mark the type of the doping, not a depth profile. The spacers, the caps, the gate
-  oxides, the gate film, the re-oxidation oxide, the tips and the halo, and the field oxide (the
+  oxides, the gate film, the re-oxidation oxide, the spacer oxide, the tips and the halo, and the field oxide (the
   oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel
   only the new glass and the silicon are labelled. Not to scale.
 arrow:
@@ -27,12 +27,12 @@ panels:
   - state_after: "088"
     title: "Before: the finished transistors under the spacer oxide (step 088)"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, polyn]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn]
     dim_layers: [liner]
     labels:
-      spox:
-        title: "Spacer oxide"
-        note: "SPOX, step 080"
+      polyp:
+        title: "p-type poly, resistor head"
+        note: "resistor implant, step 053"
         basis: public
   - state_after: "089"
     title: "After: a thick glass buries everything"

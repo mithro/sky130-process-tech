@@ -64,24 +64,20 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-sd-n" data-layer="nsd" points="9.00,133.00 92.25,133.00 92.25,147.00 9.00,147.00"/>
 <polygon class="mat m-sd-n" data-layer="nsd" points="199.75,133.00 230.25,133.00 230.25,147.00 199.75,147.00"/>
 </g>
-<text x="328.0" y="219.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 215.0H285.0H324.0"/>
-<circle class="dot" data-owner="sub" cx="276.0" cy="215.0" r="1.9"/>
-<text x="328.0" y="67.9" class="t-label-title" data-owner="polyp">p-type</text>
-<text x="328.0" y="83.9" class="t-label-title" data-owner="polyp">resistor body</text>
+<text x="328.0" y="179.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 175.0H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="175.0" r="1.9"/>
+<text x="328.0" y="67.9" class="t-label-title" data-owner="polyp">p-type poly,</text>
+<text x="328.0" y="83.9" class="t-label-title" data-owner="polyp">resistor head</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="polyp">resistor implant,</text>
 <text x="328.0" y="115.9" class="t-label-note muted" data-owner="polyp">step 053</text>
 <path class="halo" d="M160.0 83.5L160.0 79.0"/>
-<path class="leader" data-owner="polyp" d="M160.0 87.5V60.0H303.0V63.0H324.0"/>
+<path class="leader" data-owner="polyp" d="M160.0 87.5V60.0H297.0V63.0H324.0"/>
 <circle class="dot" data-owner="polyp" cx="160.0" cy="87.5" r="1.9"/>
-<text x="328.0" y="179.9" class="t-label-title" data-owner="spox">Spacer oxide</text>
-<text x="328.0" y="195.9" class="t-label-note muted" data-owner="spox">SPOX, step 080</text>
-<path class="leader" data-owner="spox" d="M276.0 87.5H291.0V175.0H324.0"/>
-<circle class="dot" data-owner="spox" cx="276.0" cy="87.5" r="1.9"/>
 <text x="328.0" y="139.9" class="t-label-title" data-owner="nsd">N+ source/drain</text>
 <text x="328.0" y="155.9" class="t-label-note muted" data-owner="nsd">NSDI, step 086</text>
 <path class="halo" d="M217.5 132.5L217.5 118.0"/>
-<path class="leader" data-owner="nsd" d="M217.5 136.5V71.0H297.0V135.0H324.0"/>
+<path class="leader" data-owner="nsd" d="M217.5 136.5V71.0H291.0V135.0H324.0"/>
 <circle class="dot" data-owner="nsd" cx="217.5" cy="136.5" r="1.9"/>
 <path class="parrow" d="M34 255.0V293.0"/>
 <path class="pahead" d="M34 301.0l-5.5 -9h11.0z"/>

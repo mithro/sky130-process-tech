@@ -4,10 +4,11 @@ page: docs/steps/098-csil.md
 series: series-mol.yaml
 close_up: [170, 268]
 close_up_name: "the 1.8 V source/drain contact"
+routes: {ctliner: right, wfill: right}
 crop_depth: 24
 alt: >-
   Two enlarged cross-sections of one contact hole beside a transistor gate, one above the other.
-  Before the step a thin dark film lines the hole and covers the flat top. After it a thin
+  Before the step a thin purple film lines the hole and covers the flat top. After it a thin
   teal disc lies under that film at the bottom of the hole, sunk into the top of the doped
   silicon; nothing else changes.
 caption: >-
@@ -21,7 +22,7 @@ caption: >-
   much of the 0.1 µm junction[^pdk-03] it consumes, are not public; it is drawn at the minimum
   film thickness, sunk into the silicon it consumed, with the doped region left where it was.
   The anneal's temperature, time and ambient are not public, and any titanium that nitrides is
-  not drawn. The colours mark the type of the doping, not a depth profile. The gate, its caps and
+  not drawn. No surface changes at this step, so nothing is traced in the accent colour. The colours mark the type of the doping, not a depth profile. The gate, its caps and
   spacers, the thin oxides, the silicon and its doped regions, and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the
   NCHI channel implant made earlier are not drawn. Not to scale.
 arrow:
@@ -42,6 +43,6 @@ panels:
         y: -2.5
         label:
           title: "Titanium silicide"
-          note: "only in the contact holes, we infer"
+          note: "only in the contact holes"
           basis: inferred
     dim_layers: [liner]

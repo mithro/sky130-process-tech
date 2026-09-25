@@ -4,7 +4,7 @@ page: docs/steps/104-linit.md
 series: series-mol.yaml
 crop_depth: 60
 alt: >-
-  Two cross-sections of the wafer, one above the other. Before the step three thin dark pads, one
+  Two cross-sections of the wafer, one above the other. Before the step three thin purple pads, one
   on each metal plug, sit on a flat oxide. After it a thin hatched film of even thickness covers
   the tops and sides of the pads and the oxide between them.
 caption: >-
@@ -15,7 +15,8 @@ caption: >-
   films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the
   spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle)
   are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel
-  implant made earlier are not drawn. Not to scale.
+  implant made earlier are not drawn. In the lower panel the local interconnect is not labelled.
+  Not to scale.
 arrow:
   title: "LINIT, step 104"
   note: "A thin silicon nitride is deposited over the local interconnect and the oxide between."
@@ -28,7 +29,7 @@ panels:
   - state_after: "104"
     title: "After: a thin nitride cap over the local interconnect"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, ncap, wfill]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, ncap, wfill, li]
     dim_layers: [liner]
     highlight: {where: [[0, 268]]}
     labels:

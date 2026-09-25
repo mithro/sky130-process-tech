@@ -15,11 +15,12 @@ caption: >-
   its anti-reflective coating with a clean. The figure draws the third, as the LICM1E page places
   the strip. The thin oxide of the first reading is already drawn cleared by the contact etch, as
   the LICM1E page describes it; whatever a dilute-HF dip takes from the walls is not drawn. The
-  holes' bottoms are about 0.08 µm across in the PDK ("Standard Licon bottom CD"),[^pdk-03] not
+  holes' bottoms are 0.08 µm across in the PDK ("Standard Licon bottom CD"),[^pdk-03] not
   drawn to scale. The transistors' films (the spacers, the caps, the gate oxides, the gate film,
   the re-oxidation oxide and the spacer oxide), the tips and the halo, and the field oxide (the
-  oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the upper panel
-  the doped regions are not labelled either. Not to scale.
+  oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The N⁺ source/drains
+  are not labelled either, nor the resistor head in the upper panel and the glass in the lower
+  one. Not to scale.
 arrow:
   title: "SACETCH, step 095"
   note: "The last clean before metal: on this reference's reading, the resist is stripped and the holes are cleaned."
@@ -32,6 +33,11 @@ panels:
   - state_after: "095"
     title: "After: the resist stripped, the holes open and clean"
     hide_layers: [pwell, nchi]
-    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, nsd]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, nsd, psg]
     dim_layers: [liner]
     highlight: {where: [[0, 20], [60, 114], [154, 184], [224, 268]]}
+    labels:
+      polyp:
+        title: "p-type poly, resistor head"
+        note: "resistor implant, step 053"
+        basis: public

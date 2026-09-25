@@ -30,7 +30,7 @@ step recurs, as `CMPM`, over every metal level
 ({ref}`CMPM <step-116>` and later).
 
 :::{figure} /_static/figures/mol-106-cmpl.svg
-:alt: Two cross-sections of the wafer, one above the other. Before the step a thick pale oxide, lower near the right-hand edge, covers three thin dark pads under a thin hatched film. After it the oxide is polished flat and thinner, leaving a layer of it over the pads.
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thick pale oxide with a flat top covers three thin purple pads under a thin hatched film. After it the oxide is polished flat and thinner, leaving a layer of it over the pads.
 :width: 560px
 :name: fig-mol-106-cmpl
 
