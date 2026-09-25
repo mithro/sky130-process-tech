@@ -3315,7 +3315,7 @@ documents:
   - text: Long Term Failure Rate are based on R28 Technology qualified in Fab2, QTP 97476 and 98302
     location: p.5, footnote 5
   notes: Another explicit R28 Fab3-to-Fab2 transfer statement ("R28 technology from Fab 3 to Fab2"), corroborating
-    qtp-098393's Fab3-to-Fab2 transfer (round 1) for a different device family (Low Voltage Synchronous
+    qtp-098393's Fab3-to-Fab2 transfer for a different device family (Low Voltage Synchronous
     FIFOs rather than Dual Port SRAM). Process figures (2 metal layers, 0.65 µm, 165 Å gate oxide) match
     every other R28 report in this corpus. Names two more unretrieved Fab 2 R28 qualifications, QTP 97476
     (also referenced by qtp-098252 and qtp-098236) and QTP 98302.
@@ -3698,3 +3698,394 @@ documents:
     technology, not resolved here. This document''s Die Fab Line ID is also printed "TSMC-2A /L28-TSMC"
     (hyphenated) where qtp-080608/qtp-110605 print "TSMC-2A/L28 TSMC" (no hyphen) -- a minor spelling
     variant of the same code.'
+- id: qtp-000505
+  doc_type: QTP
+  number: '000505'
+  cypress_document_number: null
+  title: 1 Meg Fast Asynchronous SRAM, R52FD-3 Technology, Fab 4
+  version: '1.2'
+  date_printed: December 2002
+  url: https://www.cypress.com/file/91326/download
+  archive_url: https://web.archive.org/web/20210517171315/https://www.cypress.com/file/91326/download
+  retrieved: '2026-09-25'
+  sha256: b8d73d548c8b54f4e23fa5aad5f19f54aafb536c0617103105649e993f8dba49
+  technology_codes:
+  - R52FD-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1021BV33
+  - CY7C1019BV33
+  die_ids:
+  - 7C1321F
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6,000Å Al-0.5%Cu/300Å TiW; Metal 2: 300Å CoTi/8,000Å
+      Al-0.5%Cu/300Å TiW'
+    passivation: Oxide - Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.25 µm/0.3 FETS
+    gate_oxide: SiO2 / 55 Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52FD-3
+    transistors: 25.2 million
+    gates: 8.4 million
+  qualification_history:
+  - number: '001603'
+    description: New Technology Derivative R52FD-3 / 4Meg MoBL , CY62145V18
+    date: Jul 00
+  - number: '001208'
+    description: New 2Meg FCP MoBL2, CY62136V18, R52FD-3
+    date: Jul 00
+  - number: '000505'
+    description: New 1Meg Asynchronous, CY7C1021BV33, R52FD-3
+    date: Oct 00
+  quotes:
+  - text: New Technology Derivative R52FD-3 / 4Meg MoBL
+    location: p.2, Product Qualification History, row 001603 (the printed trademark glyph after 'MoBL' is
+      a broken font codepoint, omitted from the quote)
+  - text: New 1Meg Asynchronous, CY7C1021BV33, R52FD-3
+    location: p.2, Product Qualification History, row 000505
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52FD-3'
+    location: p.2, Technology/Fab Process Description
+  notes: 'This report itself was otherwise known in this corpus only by reference: qtp-012705
+    quotes its own row "New 1Meg Asynchronous, CY7C1021BV33, R52FD-3" (QTP 000505) without independently
+    retrieving this document. It is now retrieved directly and dates R52FD-3''s own origin: "New Technology
+    Derivative R52FD-3 / 4Meg MoBL, CY62145V18", QTP 001603, Jul 00 -- explicitly a "Technology Derivative"
+    (of an unnamed base, presumably a plain R52D/R52 code, matching the corpus-wide pattern of R52-family
+    suffixes named as derivatives of each other). Process figures (2 metal layers, CMOS Double Metal, 0.25
+    µm, 55 Å gate oxide, Fab4/R52FD-3) match R52FFD-3 (qtp-012705) exactly, consistent with
+    the finding of a single shared 0.25 µm R52-family design rule.'
+- id: qtp-032105
+  doc_type: QTP
+  number: '032105'
+  cypress_document_number: null
+  title: 18 Meg QDR/DDR Synchronous SRAM, R7FFT-18, Fab 4
+  version: '5.0'
+  date_printed: May 2004
+  url: https://www.cypress.com/file/92306/download
+  archive_url: https://web.archive.org/web/20211207080356/https://www.cypress.com/file/92306/download
+  retrieved: '2026-09-25'
+  sha256: 0bce17dc2b8ee12ad12995d3034a52abfb74ade8702413aa044119c0bf965c8a
+  technology_codes:
+  - R7FFT-18
+  - R7FFT-1.8
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1303AV18
+  - CY7C1306AV18
+  - CY7C1305AV18
+  - CY7C1307AV18
+  - CY7C1302BV25
+  - CY7C1304BV25
+  - CY7C1308BV25
+  - CY7C1322V25
+  - CY7C1397V25
+  - CY7C1310V18
+  - CY7C1312V18
+  - CY7C1314V18
+  - CY7C1311V18
+  - CY7C1313V18
+  - CY7C1315V18
+  - CY7C1316V18
+  - CY7C1318V18
+  - CY7C1320V18
+  - CY7C1317V18
+  - CY7C1319V18
+  - CY7C1321V18
+  - CY7C1392V18
+  - CY7C1393V18
+  - CY7C1394V18
+  - CY7C1303V25
+  - CY7C1306V25
+  - CY7C1305V25
+  - CY7C1307V25
+  - CY7C1323V25
+  - CY7C1398V25
+  die_ids:
+  - 7C1305A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 150Å Ti/4,230Å Al/300Å TiW; Metal 2: 150Å Ti/4,230Å Al/300Å TiW; Metal 3:
+      150Å Ti/8,000Å Al/300Å TiW'
+    passivation: 700Å TEOS over M3 / 7,000Å Nitride over Oxide
+    free_phosphorus_percent: 0%
+    design_rule: 0.15 µm
+    gate_oxide: SiO2, 32 Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R7FFT-1.8
+    transistors: approx. 115 million
+    gates: approx. 30 million
+  qualification_history:
+  - number: '032105'
+    description: Qualify 18 Meg QDR/DDR Synchronous SRAM device qual, CY7C1313V18 family and options on
+      R7FFT-18 Technology
+    date: Aug 03
+  - number: '034209'
+    description: 7C1313 165 FBGA (13 x 15 x 1.4mm) 4 Layer Substrate with NSMD & 0.55mm Solder Ball and
+      7mil Die Thickness
+    date: Feb 04
+  - number: '040604'
+    description: R7 QDR Family Design Change – M1/VIA/M2 Mask Change
+    date: Feb 04
+  - number: '041305'
+    description: Device Name change for R7 QDR Family (M1/VIA/M2) Mask Change
+    date: Mar 04
+  quotes:
+  - text: Qualify 18 Meg QDR/DDR Synchronous SRAM device qual, CY7C1313V18 family and options on R7FFT-18
+      Technology
+    location: p.2, Product Qualification History, row 032105
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R7FFT-1.8'
+    location: p.3, Technology/Fab Process Description
+  - text: R7 QDR Family Design Change – M1/VIA/M2 Mask Change
+    location: p.2, Product Qualification History, row 040604
+  notes: 'This corpus''s first independently retrieved R7FFT-18 report. Its own Die Fab Line ID prints
+    "Fab4/R7FFT-1.8" (with a decimal point) even though the title banner, Qualification Purpose and every
+    history-table row spell the code "R7FFT-18" (no decimal) throughout -- the same kind of
+    decimal-dropping/adding naming inconsistency already documented for R7LD-1.8 (where the Die
+    Fab Line ID instead drops to plain "R7-1.8"). Process figures: 3 metal layers, 0.15 µm design rule, 32
+    Å gate oxide, Fab 4 (Bloomington, MN) -- finer than R7FT-3R (0.18 µm) and close to R7FD-3R/R7LD-1.8
+    (0.15/0.16 µm) already in this corpus, consistent with R7FFT-18 being a QDR/DDR-II-generation sibling
+    in the same R7 family.'
+- id: qtp-041005
+  doc_type: QTP
+  number: '041005'
+  cypress_document_number: null
+  title: 8-Meg Super TSRAM Device, 0.165um Technology, Power Chip in Taiwan
+  version: '1.0'
+  date_printed: March 2004
+  url: https://www.cypress.com/file/92446/download
+  archive_url: https://web.archive.org/web/20210517162948/https://www.cypress.com/file/92446/download
+  retrieved: '2026-09-25'
+  sha256: 742cb08bdc74d9370a54e205682d542e26656d196771d08b51727a4183f538dd
+  technology_codes:
+  - PowerChip 0.165um
+  fab: Power Chip (Foundry), Taiwan; assembled at ChipMOS, Taiwan
+  products:
+  - CYK512K16SCCAU
+  - K512KSC9A
+  - GC8016V5A
+  - GC8016V9A
+  die_ids:
+  - WCMP081611M
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiN/Ti (18/8.5nm); Metal 2: TiN/AlCu/TiN (23/800/28nm)'
+    passivation: Si3N4 and Polyimide
+    free_phosphorus_percent: 0%
+    design_rule: 0.165 µm
+    gate_oxide: SiO2, 7.2nm
+    fab_location: Power Chip (Foundry) - Taiwan
+    die_fab_line_id: BF009S1
+    transistors: 19 million
+    gates: 1 million
+  qualification_history:
+  - number: '040504'
+    description: New Device, 16-Meg, Super TSRAM using 0.165um Technology, Power Chip (Foundry),
+      Chipmos-Taiwan Assembly
+    date: Jan 04
+  - number: '041005'
+    description: New Device, 8-Meg, Super TSRAM using 0.165um Technology, Power Chip (Foundry),
+      Chipmos-Taiwan Assembly
+    date: Mar 04
+  quotes:
+  - text: New Device, 8-Meg, Super  TSRAM  using  0.165um Technology, Power Chip (Foundry),  Chipmos-Taiwan
+      Assembly
+    location: p.2, Technology Qualification History, row 041005
+  - text: New Device, 16-Meg, Super  TSRAM  using  0.165um Technology, Power Chip (Foundry),  Chipmos-Taiwan
+      Assembly
+    location: p.2, Technology Qualification History, row 040504
+  - text: 'Die Fab Line ID/Wafer Process ID: BF009S1'
+    location: p.3, Technology/Fab Process Description
+  notes: 'This is the "8 Meg PSRAM" companion report named next to qtp-051501
+    (the PowerChip CMI sort-site qualification), which another note had guessed to be "QTP 92626" -- that
+    number was actually the cypress.com file id, not the QTP number; the document''s real QTP number is
+    041005. This report prints the design rule as a plain "0.165 µm" (not "0.16um + Stack Capacitor" as
+    qtp-051501''s Design Rule field has it) and the gate oxide as "7.2nm" (= 72 Å, matching qtp-051501''s
+    "72 Å" reading exactly). It gives a different Die Fab Line ID, "BF009S1", from qtp-051501''s "BF04301"
+    -- apparently a per-product/mask-set code rather than a single fixed line ID for the whole PowerChip
+    0.165um technology. It also independently references an unretrieved sibling "16-Meg Super TSRAM"
+    qualification, QTP 040504, Jan 04 -- earlier than this report''s own March 2004 date, making Jan 04 the
+    earliest dated PowerChip 0.165um reference in this corpus so far (predating qtp-051501''s Mar 05
+    sort-site extension by over a year).'
+- id: qtp-030310
+  doc_type: QTP
+  number: '030310'
+  cypress_document_number: null
+  title: ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology
+  version: '1.0'
+  date_printed: June 2003
+  url: https://www.cypress.com/file/92226/download
+  archive_url: https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download
+  retrieved: '2026-09-25'
+  sha256: 7dfdb14c4bc014e5213066bc08498f52a41b242daee744a42581715ce1e4153c
+  technology_codes:
+  - NEC 0.25um
+  fab: NEC Electronics America, Roseville, CA (foundry)
+  products:
+  - CY7C68310
+  die_ids:
+  - NECD 84705
+  process_description:
+    number_of_metal_layers: 5
+    metal_composition: AlCu
+    passivation: P-SiON (1um) / Polymide (5um)
+    free_phosphorus_percent: 0%
+    design_rule: CMOS 0.25um
+    gate_oxide: SiO2 / 60 Å
+    fab_location: NEC Electronics America (Roseville)
+    die_fab_line_id: NEC Roseville M-Line/DSY8-USB84705M611
+    transistors: 1.6M
+    gates: 80K gate User Logic + USB2.0
+  qualification_history:
+  - number: '030310'
+    description: Qualify CY7C68310 Device in NEC 0.25um Technology
+    date: June 03
+  quotes:
+  - text: Qualify CY7C68310 Device in NEC 0.25um Technology
+    location: p.2, Product Qualification History, row 030310
+  - text: 'Die Fab Line ID/Wafer Process ID: NEC Roseville M-Line/DSY8-USB84705M611'
+    location: p.3, Technology/Fab Process Description
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – NEC 0.25um
+    location: p.3, section heading
+  notes: This corpus's only NEC-foundry technology report -- NEC Electronics America's Roseville, CA fab, 5
+    metal layers (AlCu), CMOS 0.25 µm, 60 Å gate oxide, a foundry not named in any other report in this
+    corpus (the existing foundry list otherwise covers TSMC, Chartered/CSM, ProMOS, PowerChip, HHGrace,
+    GSMC, Tower and IBM). No prior or later NEC 0.25um history row is printed; this document's own row (QTP
+    030310, June 03) is the only qualification-history entry, so NEC 0.25um's coverage in this corpus
+    begins and ends with this single report.
+- id: qtp-022505
+  doc_type: QTP
+  number: '022505'
+  cypress_document_number: null
+  title: PSoC Microcontrollers Family, S4AD-5 Technology, Fab 2
+  version: '2.0'
+  date_printed: June 2003
+  url: https://www.cypress.com/file/91396/download
+  archive_url: https://web.archive.org/web/20211025133341/https://www.cypress.com/file/91396/download
+  retrieved: '2026-09-25'
+  sha256: 09bc431f90f969ded0036c7396ecee60793300286ebd86a519cd3724a44e2ff9
+  technology_codes:
+  - S4AD-5
+  - S4D-5
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY8C25122
+  - CY8C26233
+  - CY8C26443
+  - CY8C26643
+  die_ids:
+  - 8C25001A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/6,000Å Al 0.5% Cu/1,200Å TiW; Metal 2: 500Å Ti/8,000Å Al 0.5%
+      Cu/300Å TiW'
+    passivation: 3,000Å TeOs / 6,000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5
+    transistors: 300,000
+    gates: 50,000
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product
+      family and bond option.
+    date: Apr 01
+  - number: '003605'
+    description: Technology Derivative S4D-5 /New Neuron Devices, CY7C53150 and CY7C53120
+    date: Jul 01
+  - number: '013507'
+    description: New PSoC CY8C25xxx/26xxx device and its product family
+    date: Sept 01
+  - number: '022505'
+    description: Three layer mask change to enhance functionality
+    date: Jul 02
+  quotes:
+  - text: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product family
+      and bond option.
+    location: p.2, Product Qualification History, row 010702
+  - text: CY8C25xxx/26xxx device and its product family
+    location: p.2, Product Qualification History, row 013507 (row reads 'New PSoC' plus a broken
+      trademark-glyph codepoint, then this text)
+  - text: Technology Derivative S4D-5 /New Neuron Devices, CY7C53150 and CY7C53120
+    location: p.2, Product Qualification History, row 003605
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-5'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Independently confirms qtp-021507''s S4AD-5 origin row ("New Technology S4AD-5 / New Product,
+    Programmable Clock Generator, CY2414ZC", QTP 010702, Apr 01) verbatim, and this report''s own design
+    rule (0.35 µm, 110 Å gate oxide) matches the four other reports that give 0.35 µm, not
+    qtp-021507''s outlier "0.5 m" reading -- a fifth independent report giving 0.35 µm for the same Die Fab
+    Line ID ("Fab2, S4AD-5"), making qtp-021507''s figure look even more like a misprint. This report also
+    dates the origin of PSoC on S4AD-5 directly: "New PSoC CY8C25xxx/26xxx device and its product family",
+    QTP 013507, Sept 01. A further row, "Technology
+    Derivative S4D-5 /New Neuron Devices, CY7C53150 and CY7C53120" (QTP 003605, Jul 01), independently
+    corroborates the dropped-"A" "S4D-5" spelling in running prose with a
+    second example, and also calls S4D-5/S4AD-5 a "Technology Derivative" explicitly (of an unstated base).'
+- id: qtp-020305
+  doc_type: QTP
+  number: '020305'
+  cypress_document_number: null
+  title: Two-PLL Clock Generator, S4AD-5 Technology, Fab 2 / R42LDHA, Fab 4
+  version: '2.0'
+  date_printed: August 2003
+  url: https://www.cypress.com/file/91946/download
+  archive_url: https://web.archive.org/web/20211203215015/https://www.cypress.com/file/91946/download
+  retrieved: '2026-09-25'
+  sha256: da9153ba9422149407cafb53218b8c742191dd00e63805859712185484db5aae
+  technology_codes:
+  - S4AD-5
+  - R42LDHA
+  - R42D
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX) / Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY22312ZC
+  die_ids:
+  - 7C83910A
+  - 7C80803A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/6,000Å Al 0.5% Cu/1,200Å TiW; Metal 2: 500Å Ti/8,000Å Al 0.5%
+      Cu/300Å TiW'
+    passivation: 3,000Å TeOs / 6,000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5
+    transistors: 50,000
+    gates: 2,500
+  qualification_history:
+  - number: '98357'
+    description: R42 with Hot Aluminum / 4 Meg, 128K x 36 Pipelined SRAM CY1350
+    date: Sep 98
+  - number: '010702'
+    description: New Technology S4AD-5 / New Programmable Clock Generator CY2414ZC and Bond Option
+    date: Apr 01
+  - number: '021011'
+    description: New Two-PLL Clock Generator with Direct Rambus (Lite) Support CY22312ZC
+    date: Apr 02
+  - number: '020305'
+    description: Metal Change to 7C83900
+    date: May 02
+  quotes:
+  - text: New Technology S4AD-5 / New Programmable Clock Generator CY2414ZC
+    location: p.2, Product Qualification History, row 010702
+  - text: R42 with Hot Aluminum / 4 Meg, 128K x 36  Pipelined SRAM CY1350
+    location: p.2, Product Qualification History, row 98357
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-5'
+    location: p.3, Technology/Fab Process Description (S4AD-5 block)
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42LDHA'
+    location: p.3, Technology/Fab Process Description (R42LDHA block)
+  notes: 'This report documents two technologies for one product family: S4AD-5 at Fab 2 (Round Rock, TX)
+    and R42LDHA at Fab 4 (Bloomington, MN); the process_description field above records only the S4AD-5
+    block (the technology named first in the title). The S4AD-5 block gives 0.35 µm, 110 Å gate oxide,
+    Fab2/S4AD-5 -- a sixth independent report giving 0.35 µm for this Die Fab Line ID, further corroborating
+    the reading that qtp-021507''s "0.5 m" figure is a misprint. The separate R42LDHA block (2
+    metal layers, CMOS Double Metal, 0.35 µm, 70 Å gate oxide, 8,000 transistors, 1,400 gates, Fab4/R42LDHA)
+    matches qtp-003907''s R42LDHA figures exactly. The history table''s row for QTP 98357 here reads "R42
+    with Hot Aluminum / 4 Meg, 128K x 36 Pipelined SRAM CY1350" (Sep 98) -- the same QTP number and date as
+    qtp-003907''s own row for 98357 ("New Technology R42D with Hot Al / 1Meg with NoBL Architecture,
+    CY7C1350/CY7C1352"), but with different device-size wording ("4 Meg, 128K x 36" here vs "1Meg" there)
+    for what is presumably the same historical qualification event -- another example of the same QTP
+    number being summarised differently across independently-issued reports.'
