@@ -10,13 +10,30 @@
 | **Previous step** | {ref}`GOXETCH <step-046>` |
 | **Next step** | {ref}`SAGD <step-048>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** grows the thin gate oxide of the 1.8 V transistors, the
+  last film before the gate electrode.
+* **Why:** the 1.8 V core needs an oxide thin enough for drive current
+  and short-channel control, but thick enough not to leak or break.
+* **Public numbers:** electrical oxide thickness (`toxe`) 4.148 nm for
+  `nfet_01v8`.[^pdk-model-nfet01v8]
+* **Likely SkyWater tool:** Aviza vertical furnace — strong (tool);
+  inference (assignment).[^skw-01]
+* **Not public:** the physical thickness, and whether the oxide is
+  nitrided (→ Open questions).
+:::
+
 ## What this step is
 
 `LVGOX` grows the thin gate oxide of the 1.8 V transistors — the
 *low-voltage gate oxide* — on the silicon that
 {ref}`GOXETCH <step-046>` cleared. It is the last step before the gate
 electrode is deposited at {ref}`SAGD <step-048>`, and the film it grows
-is the one every `nfet_01v8` and `pfet_01v8` switches through. At the
+is the one every `nfet_01v8` and `pfet_01v8` switches through.
+
+At the
 same time the thick oxide left over the 5 V and high-voltage regions
 grows a little thicker, and the {term}`ONO` islands of the memory cells see
 the same ambient. If the oxide is nitrided — which SkyWater's
@@ -34,58 +51,78 @@ Before, the thick oxide on the 5 V area and bare silicon on the 1.8 V area; afte
 The public numbers: the 1.8 V NMOS model carries `toxe = 4.148e-9`
 (4.148 nm) as its oxide thickness for electrical
 purposes,[^pdk-model-nfet01v8] against 11.6 nm for the 5 V
-device;[^pdk-model-nfet5v] the PDK rates the 1.8 V models to
+device.[^pdk-model-nfet5v]
+
+The PDK rates the 1.8 V models to
 V<sub>GS</sub> of 1.95 V.[^pdk-07] Measured capacitance gives a
-consistent figure. The PDK's varactors are "1.8V accumulation-mode
+consistent figure.
+
+The PDK's varactors are "1.8V accumulation-mode
 MOS varactors", with "no equivalent varactor for 5V
-operation",[^pdk-07] so we read them as built on this oxide. The
+operation",[^pdk-07] so we read them as built on this oxide.
+
+The
 SKY130 raw-data repository publishes capacitance–voltage sweeps of the
 test tile's `cap_var_lvt` and `cap_var_hvt` structures, five sizes of
 each from one 40 × 40 µm device to 462 devices of 5 × 0.5 µm, whose
 dimensions the pad list gives.[^raw-data-testtile-pads][^raw-data-passives]
-Splitting the accumulation capacitance at 1.8 V into an area and an
-edge term gives 8.52 fF/µm² (low-Vt; raw-data module 3320, as the pad
-list names it) and 8.40 fF/µm² (high-Vt; raw-data module 3316); for a
+
+Splitting the accumulation capacitance at 1.8 V into an
+area and an edge term gives 8.52 fF/µm² (low-Vt; raw-data module
+3320, as the pad list names it). It gives 8.40 fF/µm² for the
+high-Vt device (raw-data module 3316). For a
 relative permittivity of 3.9 these correspond to an electrical
-thickness of about 4.06 nm and 4.11 nm (our extraction from the
+thickness of about 4.06 nm and 4.11 nm.[^raw-data-passives] (This is our extraction from the
 published measurements, without corrections for gate depletion, the
 thickness of the accumulation layer or pad and wiring capacitance, so
 not a physical thickness; the files record neither the measurement
-frequency nor the temperature).[^raw-data-passives] For comparison,
+frequency nor the temperature.)
+
+For comparison,
 ITRS 2001 lists an
 equivalent oxide thickness of 2.0–2.4 nm for low-operating-power and
 2.4–2.8 nm for low-standby-power logic in 2001, with a thickness
-control requirement of "<± 4" % 3σ;[^itrs-01] SKY130's oxide is
+control requirement of "<± 4" % 3σ.[^itrs-01] SKY130's oxide is
 thicker because its core runs at 1.8 V rather than the roadmap's
-scaled supply. Two Cypress patents shown as in force give thin- and
+scaled supply.
+
+Two Cypress patents shown as in force give thin- and
 thick-gate thickness ranges of their own; they are in the collapsed note
 below, the second for a more advanced node than SKY130.
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 Cypress's integration patent puts its thin gate insulator at "between
 approximately 3.0 nm and 8.0 nm" against 5–15 nm for the thick
-one,[^pat-03] and its later cell patent grows "a thin, second gate oxide
+one.[^pat-03] Its later cell patent grows "a thin, second gate oxide
 246 having a thickness from about 1 nm to about 3 nm".[^pat-04]
 :::
 
 ## Step category
 
 `LVGOX` is a {ref}`Thermal oxidation <category-oxidation>` step of
-the *thin gate oxide* class, grown in the regime where "very thin
-oxides (less than about 25 nanometres) grow much more quickly in O₂
-than the model predicts"[^wiki-dg] and where recipes are calibrated on
-the tool rather than from {term}`Deal–Grove <Deal–Grove model>`.[^massoud-1985] It is the second
-pass of the {term}`dual-gate-oxide <dual gate oxide>` process and, in a 130 nm flow, generally
-the most tightly controlled oxidation (ITRS 2001 asks for EOT control
-of "<± 4" % 3σ on the gate dielectric[^itrs-01]; SKY130 publishes no
-control data). The category page's *Nitrided oxides and ONO
-stacks* section gives the background on nitridation.
+the *thin gate oxide* class.
+
+**Specific to this step:**
+
+* It is grown in the regime where "very thin
+  oxides (less than about 25 nanometres) grow much more quickly in O₂
+  than the model predicts"[^wiki-dg] and where recipes are calibrated on
+  the tool rather than from {term}`Deal–Grove <Deal–Grove model>`.[^massoud-1985]
+* It is the second
+  pass of the {term}`dual-gate-oxide <dual gate oxide>` process and, in a 130 nm flow, generally
+  the most tightly controlled oxidation (ITRS 2001 asks for EOT control
+  of "<± 4" % 3σ on the gate dielectric[^itrs-01]; SKY130 publishes no
+  control data).
+* The category page's *Nitrided oxides and ONO
+  stacks* section gives the background on nitridation.
 
 ## Why this step exists
 
 The 1.8 V core needs a gate oxide thin enough for drive current and
 short-channel control at a 0.15 µm gate length[^pdk-periph] and thick
-enough not to leak or break: a gate oxide "serves as the dielectric
+enough not to leak or break.
+
+A gate oxide "serves as the dielectric
 layer so that the gate can sustain as high as 1 to 5 MV/cm transverse
 electric field in order to strongly modulate the conductance of the
 channel".[^wiki-gate-oxide] At 4 nm the direct-tunnelling gate leakage
@@ -96,11 +133,15 @@ dielectric,[^buchanan-1999] and Green et al. the processing and physical
 limits of sub-4 nm SiO₂ and Si–O–N films.[^green-2001]
 
 **Why thin second.** In general, a thin gate oxide tolerates subsequent
-processing worse than a thick one: every furnace step thickens it
+processing worse than a thick one.
+
+Every furnace step thickens it
 proportionally more, every HF exposure thins it by a larger fraction,
 every implant through it damages it more severely (a generality about
 dual-gate-oxide flows; SKY130 publishes no process-sensitivity data of
-its own). Growing it
+its own).
+
+Growing it
 last in the gate-dielectric module, on freshly cleaned silicon, after
 the thick oxide has absorbed the long oxidation and the masked etch,
 gives it the smallest thermal and chemical history
@@ -114,10 +155,12 @@ nitrided" ({ref}`category-oxidation`), and ITRS 2001 expected the
 "evolution of the oxynitride gate dielectric materials" to continue
 until high-κ matured.[^itrs-01] Nitrogen near the top of the oxide
 blocks boron from a p⁺ polysilicon gate from diffusing through into
-the channel — "the effects of boron penetration on p⁺ polysilicon
+the channel: "the effects of boron penetration on p⁺ polysilicon
 gated PMOS devices" were quantified by Pfiester et al.[^pfiester-1990]
-and modelled for N₂O {term}`oxynitrides <oxynitride>` by Hwang et al.[^hwang-1991] — and
-nitrogen also reduces hot-carrier degradation and raises the dielectric
+It was also
+modelled for N₂O {term}`oxynitrides <oxynitride>` by Hwang et al.[^hwang-1991]
+
+Nitrogen also reduces hot-carrier degradation and raises the dielectric
 constant slightly.[^hori-1997][^hori-1989] SkyWater lists "Nitrided gate
 oxide" among its special modules,[^skw-01] and Cypress's integration
 patent, which may still be in force, bears on the question; what it
@@ -134,8 +177,8 @@ incorporate "approximately 4-10 wt % nitrogen".[^pat-03]
 
 ## How it is typically performed
 
-An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 1. **Load.** Straight from the pre-gate clean ({ref}`GOXETCH <step-046>`)
    into a vertical furnace under nitrogen, or into a single-wafer {term}`RTP`
@@ -143,21 +186,28 @@ An industry-generic thin gate oxidation for a 200 mm, 130 nm-era fab
 2. **Oxidation.** Dry O₂ at 750–900 °C to about 4 nm (industry-typical
    range),[^txt-01] often with a dilute-oxygen or reduced-pressure
    ambient to slow the growth to a controllable rate in the thin
-   regime;[^massoud-1985] alternatives are N₂O or NO ambients, which
+   regime.[^massoud-1985]
+
+   Alternatives are N₂O or NO ambients, which
    grow and nitride at once, and rapid thermal oxidation, whose early
    demonstration for thin gate dielectrics is Nulman's,[^nulman-1985] or
    in-situ steam generation.[^yu-1999][^roze-2017] How Cypress describes
    the two oxidations is in the collapsed note below this list, from
    patents that may still be in force.
-3. **Nitridation** (inferred). Three public routes: thermal
-   nitridation in NH₃, the original direct-nitridation technique
-   (Ito, Nozaki and Ishikawa),[^ito-1980] which incorporates hydrogen
-   and needs a reoxidation;[^hori-1989] rapid thermal nitridation in NO
-   or N₂O, which places nitrogen at the interface;[^kuehne-1997] or
-   plasma nitridation, which puts nitrogen at the *top* surface where
-   it blocks boron without degrading the interface — the remote-plasma
-   method of Hattangady et al.[^hattangady-1995] and the high-density
-   plasma surface nitridation of Kraft et al.[^kraft-1997] The nitriding
+3. **Nitridation** (inferred). Three public routes:
+
+   * **Thermal nitridation in NH₃** — the original direct-nitridation
+     technique (Ito, Nozaki and Ishikawa),[^ito-1980] which incorporates
+     hydrogen and needs a reoxidation.[^hori-1989]
+   * **Rapid thermal nitridation in NO or N₂O** — places nitrogen at
+     the interface.[^kuehne-1997]
+   * **Plasma nitridation** — puts nitrogen at the *top* surface where
+     it blocks boron without degrading the interface: the
+     remote-plasma method of Hattangady et al.[^hattangady-1995] and
+     the high-density plasma surface nitridation of Kraft
+     et al.[^kraft-1997]
+
+   The nitriding
    atmospheres Cypress's patent lists are in the collapsed note below
    this list.
 4. **Post-oxidation anneal.** Inert N₂ or Ar anneal to reduce fixed
@@ -192,19 +242,26 @@ oxide (N₂O), nitrogen dioxide (NO₂), nitric oxide (NO) and ammonia
 
 ## Machines likely used at SkyWater
 
-* **Aviza vertical furnaces** — "wet oxidation to 1150C", "dry
-  oxidation to 1150C".[^skw-01] Strength: **strong** for the tool;
-  **inference** for the assignment to `LVGOX`.
-* **AG Associates Heatpulse 8808** — "NH3, Ar, N2, O2, up to
-  1200C".[^skw-01] An RTP with ammonia and oxygen is a rapid thermal
-  oxidation/nitridation tool; its NH₃ capability is one public route
-  by which a nitrided gate oxide could be produced in this fab.
-  Strength: strong for existence; **weak** for assignment.
+* **Aviza vertical furnaces**
+  - *SkyWater says:* states "wet oxidation to 1150C", "dry
+    oxidation to 1150C".[^skw-01]
+  - *Tool exists:* **strong** for the tool.
+  - *Runs this step:* **inference**, for the assignment to `LVGOX`.
+* **AG Associates Heatpulse 8808**
+  - *SkyWater says:* lists "NH3, Ar, N2, O2, up to 1200C".[^skw-01]
+
+    An RTP with ammonia and oxygen is a rapid thermal
+    oxidation/nitridation tool; its NH₃ capability is one public route
+    by which a nitrided gate oxide could be produced in this fab.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* **weak**.
 * **"Nitrided gate oxide"** is listed by SkyWater as a special
-  module.[^skw-01] The listing shows that SkyWater offers nitrided
-  gate oxide as a capability; it does not say which process or which
-  product uses it. Strength: strong for the capability; inference for
-  its use on SKY130's 1.8 V oxide.
+  module.[^skw-01]
+  - *SkyWater says:* the listing shows that SkyWater offers nitrided
+    gate oxide as a capability; it does not say which process or
+    which product uses it.
+  - *Tool exists:* strong for the capability.
+  - *Runs this step:* inference, for its use on SKY130's 1.8 V oxide.
 
 ## Resources required
 
@@ -221,12 +278,13 @@ oxide (N₂O), nitrogen dioxide (NO₂), nitric oxide (NO) and ammonia
 
 * Previous: {ref}`GOXETCH <step-046>` (silicon cleared and cleaned).
 * Next: {ref}`SAGD <step-048>` (amorphous-silicon gate deposition).
-* The thick oxide that grows further here: {ref}`GOX100 <step-043>`;
-  the mask that decided which is which: {ref}`LVOM <step-044>`.
-* The ONO islands, nitrided or reoxidised alongside:
-  {ref}`ONO <step-040>`.
-* The channel implants this oxidation anneals: {ref}`NCHI <step-045>`,
-  {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`.
+* Depends on: the thick oxide that grows further here,
+  {ref}`GOX100 <step-043>`; the mask that decided which is which,
+  {ref}`LVOM <step-044>`.
+* Feeds: the ONO islands, nitrided or reoxidised alongside,
+  {ref}`ONO <step-040>`; the channel implants this oxidation anneals,
+  {ref}`NCHI <step-045>`, {ref}`PTSI <step-037>`,
+  {ref}`DEPI <step-038>`.
 * Category page: {ref}`Thermal oxidation <category-oxidation>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -322,18 +380,22 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The physical thickness of the 1.8 V gate oxide is not public; the
-  model's 4.148 nm `toxe` is an electrical-model parameter, and the
-  4.06–4.11 nm from the published varactor measurements is an
-  uncorrected electrical figure.[^raw-data-passives]
-* Whether the oxide is nitrided, and by which method (NH₃, N₂O/NO,
-  or plasma), is inferred from SkyWater's special-module listing and
-  the Cypress lineage, not stated.
-* Furnace versus RTO, temperature, ambient and time are not public.
-* How much the thick oxide grows during this step, and hence the
-  {ref}`GOX100 <step-043>` target, is not public.
-* Whether the ONO {term}`blocking oxide` is nitrided together with the gate
-  oxides, as in the Cypress patent, is not public.
+* **Physical thickness.** The physical thickness of the 1.8 V gate
+  oxide is not public; the model's 4.148 nm `toxe` is an
+  electrical-model parameter, and the 4.06–4.11 nm from the published
+  varactor measurements is an uncorrected electrical
+  figure.[^raw-data-passives]
+* **Whether and how nitrided.** Whether the oxide is nitrided, and by
+  which method (NH₃, N₂O/NO, or plasma), is inferred from SkyWater's
+  special-module listing and the Cypress lineage, not stated.
+* **Oxidation method.** Furnace versus RTO, temperature, ambient and
+  time are not public.
+* **Thick-oxide growth here.** How much the thick oxide grows during
+  this step, and hence the {ref}`GOX100 <step-043>` target, is not
+  public.
+* **ONO nitridation.** Whether the ONO {term}`blocking oxide` is
+  nitrided together with the gate oxides, as in the Cypress patent, is
+  not public.
 
 <!-- footnotes -->
 

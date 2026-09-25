@@ -58,6 +58,116 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 047-lvgox.md — done (the last page of the batch; 3 hand-written in-force notes in
+the body plus their copies under References; content untouched — outside the 037–044
+sweep range but still citing in-force Cypress patents `pat-03`/`pat-04`)
+
+Rules applied: R-PARA/R-SENTENCE extensively (the lead split in two; the dense
+measured-varactor paragraph split into six shorter paragraphs at its
+PDK-value/varactor-identity/repository/split-capacitance/ITRS-comparison/patent-mention
+seams, with the long "(our extraction …)" hedge moved to its own bracketed sentence and
+the low-Vt/high-Vt capacitance values kept in their *original left-to-right order* rather
+than regrouped into one trailing parenthetical — an earlier draft reordered them and was
+caught by `check_preserved.py`'s `LOST number_order` as a genuine transposition, not a
+regroup; fixed by giving each value its own sentence in source order); R-CATEGORY on
+"Step category" (14-word classification + `**Specific to this step:**` and 3 bullets);
+all three "Why this step exists" sub-sections split at their colons/em-dashes; R-LIST on
+the "Nitridation" numbered item's three-route enumeration, converted to a nested bulleted
+sub-list (thermal / rapid-thermal / plasma nitridation), the first genuinely nested list
+in this batch; the "Oxidation" item split into lead + continuation; R-HEDGE step 1;
+R-TOOLS (3 "Strength:" bullets → SkyWater-says/Tool-exists/Runs-this-step form; no recap
+table); R-RELATED (`Previous:`, `Next:`, `Depends on:`, `Feeds:`, `Category page:`);
+R-OPENQ (bold labels on all five bullets); R-GLANCE (box inserted last; checked against
+`check_inforce.py` — clean).
+
+**A real quotation-case mistake caught by `check_preserved.py`, fixed before commit.**
+An early split of the boron-penetration sentence turned the mid-sentence quotation "the
+effects of boron penetration…" into a sentence-initial "The effects…", capitalising a
+word that the source quotes in lower case. `check_preserved.py` reported `LOST quotes` /
+no matching `ADDED` for the exact original casing. Fixed by keeping the quotation
+attached to its lead-in with a colon instead of turning it into a new sentence, so the
+quoted "the" never needs recapitalising — the same principle as the guide's own
+"(our extraction …)" → "(Our extraction ….)" example, applied in the opposite direction:
+a *real* source quotation's internal capitalisation is content and must never change,
+even when a split would otherwise put it at a sentence boundary.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 7 → 1 (figure caption, off
+limits); list items > 60 words 2 → 0; sentences > 45 words 9 → 0; table cells > 25 words
+0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order --allow-regrouped --allow-dropdown-edits
+docs/steps/047-lvgox.md`: **0 undeclared differences** after the two fixes above (the
+quotation-casing slip and the number-order transposition). All `number_order` findings
+are clean `REGROUPED` matches. All other checkers, `check_inforce.py` included, pass;
+`-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom, including
+the new nested nitridation-route bullet list and all three dropdowns (collapsed,
+untouched).
+
+## Batch summary
+
+All 13 pages (`docs/steps/035-tunm.md` … `047-lvgox.md`) done, one commit each, all
+merge-ready per the branch's own final measurement below.
+
+**Batch measurement, before → after (`measure5.py`, §1 caps, line numbers post-strip;
+`tmp/measure5-before.txt` and `tmp/measure5-after.txt`, both git-ignored):**
+
+| Metric | Before | After |
+|---|---:|---:|
+| Paragraphs > 100 words | 59 | 14 — 12 are generated `{figure}` captions (off limits, Guide problem 10); the other 2 are 038-depi.md's deliberately-unsplit "Measured thresholds"/"Body-effect coefficients" sentences (see that page's log: splitting either would separate a shared hedge from one of three devices' numbers) |
+| List items > 60 words | 37 | 0 |
+| Sentences > 45 words | 117 | 12 — 6 are figure-caption sentences (off limits); the other 6 are hand-verified, indivisible single-quotation patent sentences (038 ×2, 041, 043 ×2, 044), each documented in its own page's log as a quotation that cannot be split without breaking a quotation mid-string |
+| Table cells > 25 words | 0 | 0 |
+
+**Guide problems found in this batch** (continuing the numbering from the pilot and
+batch 2, which ended at 14):
+
+15. A `{ref}`X`` role followed later on the *same source line* by an unrelated inline-code
+    span, with nothing between them but the role's own closing backtick and plain words,
+    can be mis-tokenised by `check_preserved.py`'s `_CODE_SPAN_SINGLE_RE` code-span
+    masker (it only guards a role's *opening* backtick, not its closing one). Rewrapping
+    the line, even with no wording change, can silently change which mis-parse happens
+    and show up as a false `LOST`/`ADDED refs` pair. Found on 038 (fixed by keeping the
+    line unwrapped) and again on 044 (fixed by not restructuring across the affected
+    span, since the unwrap fix wasn't available there). Not a real content difference;
+    `check_preserved.py` is off limits to edit (§2 rule 15).
+16. `check_preserved.py`'s `QUOTE_RE = r'"([^"\n]{1,400})"'` caps a single quotation's
+    content at 400 characters. Found on 042, where a pre-existing (base-committed)
+    437-character patent quotation causes the regex to skip its own opening quote and
+    resynchronise on its closing quote instead, cascading a one-quote-mark shift through
+    the next several quotation marks before resynchronising five quote-pairs later. Any
+    wording change inside that already-shifted zone — even a pure presentational split —
+    prints as an unconditional, undeclarable `LOST quotes`/`ADDED quotes` pair, since
+    "quotes" has no `--allow-regrouped`-style escape. Hand-verified with a flattened,
+    uncapped re-extraction that no quotation's actual wording changed. A length scan of
+    every quotation on 043–047 found none over 400 characters, so this is a one-page
+    issue in this batch, not a systemic one; still open for any future page with a
+    single quotation over 400 characters.
+
+Both are genuine tool limitations, verified by hand on the affected pages and left
+unfixed per §2 rule 15 (never touch a checker); each page's own log above gives the
+full derivation.
+
+**Content problems for the owner** (see the dedicated section above for full detail):
+one pre-existing factual inconsistency, found by the figure review, about where the
+pad oxide is cleared — `042-onome.md`'s Open Questions says the question of whether the
+last oxide is cleared at `ONOME` or at `GOX100`'s pre-clean "is not stated publicly",
+while `043-gox100.md`'s lead sentence and Related-steps bullet both state flatly that the
+logic silicon *was* "cleared at `ONOME`" — and 043's own figure caption then hedges the
+same point again ("ONOME's page leaves open whether that last oxide goes there or at
+this step's pre-clean"). Both wordings are kept verbatim in their original locations;
+not fixed, per the presentation-only mandate.
+
+**Patent-sensitivity notes.** This module (035–047) sits inside or adjacent to the
+037–044 in-force-patent sweep. `tools/check_inforce.py` was run after every single page,
+not just at the end, and every glance box was checked against it before commit (040 and
+043's early glance-box drafts each nearly cited an in-force patent's own figures — caught
+and fixed before commit, see those pages' logs). No `{dropdown}` was ever opened,
+paraphrased, or had text moved across its fence; every sentence split inside a dropdown
+was verified to touch only prose around already-existing quotation marks, never the
+quoted words themselves.
+
+
 ### 046-goxetch.md — done (2 hand-written in-force notes in the body plus their copies
 under References; content untouched — outside the 037–044 sweep range but still citing
 in-force Cypress patents `pat-03`/`pat-04`)
