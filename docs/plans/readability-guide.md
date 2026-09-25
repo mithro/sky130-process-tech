@@ -223,7 +223,10 @@ Its keys are the triggers used below: `para>100w`, `para>150w`, `para>=3semicolo
 2. Split at a seam. Keep every sentence, in its original order and wording. Never start a new
    paragraph with a connective (So, This, But, Which, Because): it means the seam was not real, and
    the reader is left inferring a cause the split removed. If the only split point is before one, do
-   not split. A split that leaves a block over the cap is no split.
+   not split. A split that leaves a block over the cap is no split. This applies to indented
+   continuation paragraphs inside a list item too. An item whose only seam is before a connective
+   stays over the 60-word cap and is listed in the progress file. A sentence (not a paragraph) may
+   begin "So" where a split at ", so" requires it.
 3. Give each new paragraph a bold run-in label of 2–4 words followed by a full stop
    (`**PDK thickness.** …`) when the block is part of an evidence sequence; a narrative passage takes no
    label.
