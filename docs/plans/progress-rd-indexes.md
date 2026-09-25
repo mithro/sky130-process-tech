@@ -119,6 +119,29 @@ for a table row splitting into a table row *plus* prose (the R-INDEX case
 here), so this kind of split will always need a hand-verified note like this
 one rather than a clean `--allow-regrouped` pass.
 
+**Update after the coordinator's main-branch merge of an improved
+`check_preserved.py`** (run from
+`/home/admin/github/mithro/sky130-process-tech/tools/check_preserved.py`,
+copied temporarily into this worktree's `tools/` for the correct repo root,
+then reverted — never committed here): `--base 05e7a3ba --allow-added
+markers,numbers,quotes,identifiers,number_order --allow-regrouped
+docs/machines/index.md` now cleanly downgrades **4 of the 5** number_order
+LOSTs to `REGROUPED (--allow-regrouped)` (the card-body/footer split cases).
+One genuine `LOST number_order: ('5200', '5300', '36')` remains, hand-checked
+and confirmed harmless: originally one main-table row's raw line held "KLA
+5200/5300/Archer overlay" *and* "all 36 mask steps" together (one unit for
+this heuristic); the restructuring moves the tool name into the separate,
+now-split SkyWater-tools table and keeps "all 36 mask steps" in the shrunk
+main table — two different tables, so the two never co-occur in one "unit"
+again. Verified no digit is missing: `grep -c "all 36 mask steps"` is **2**
+in both the `main` version and this branch's (unchanged: it also appears on
+the coat/develop-track row); `grep -c "5200/5300"` is **4** here versus 2 on
+`main`, exactly the declared `numbers`/`quotes` ADDED count from the tool
+row being split into several (tool, grade) rows. Not a content loss, and not
+fixable by `--allow-regrouped`'s current design (the same gap noted above:
+no accommodation for a unit splitting across two *different* checked
+tables).
+
 **Checkers:** `check_machines.py`, `check_steps.py`, `check_refs.py`,
 `check_materials.py`, `check_masks.py`, `check_inforce.py`,
 `gen_index_links.py --check`, `gen_step_tables.py --check` — all 0 problems.
@@ -137,9 +160,80 @@ doc); kept anyway since the order is still correct and harmless, but the
 visual grouping benefit the task asked for is not actually delivered by furo
 here.
 
-## 2. Materials index — in progress
+## 2. Materials index (`docs/materials/index.md`) — done
 
-(to be written up after the page-step)
+**New order:** purpose (65 words, was one 139-word paragraph; the second half,
+methodology, moved below) → navigation (`## Consumable classes in a 200 mm,
+130 nm fab`, unchanged, already in the right place) → detail (`## Materials
+index`, restructured — see below; `## The sky130B ReRAM module`,
+`## Films and stacks deposited`, `## Safety and abatement`, all unchanged and
+kept adjacent) → how-to-read-this-index (`## The public basis for
+SkyWater-specific materials` with the leftover purpose sentences prepended,
+pronoun-fixed "It gathers…" → "The index gathers…"; `## How to read the
+index`, exact heading kept as the checker requires, moved down whole —
+methodology text, the class-page table and its toctree all untouched inside
+it) → open questions (moved before references) → references.
+
+**The two tables (B2).** Per class (the same 12, same order, as `## How to
+read the index`'s own class-page table), one H3 holding **both** tables in
+turn — not two separate passes of 12 H3s each, which would repeat every H3
+title and break the "H3 titles unique on the page" rule (R-H3 rule 5).
+`check_materials.Index` classifies each table block by its **header text**,
+not by the heading before it, so this interleaving is transparent to it
+(verified: 0 problems). Table (a) `Material | Class page | Role | SkyWater
+evidence`; table (b) `Material | Steps`. Material cell = `Name (\`key\`)` —
+the reader-facing name with the tooling key embedded in parentheses, exactly
+the shape the checker's own fixtures use (`find_key()` reads the backtick
+token from the first cell when it isn't the bare key alone). Both wrapped in
+`:::{table}` with a one-line caption and `:widths:` (learned from the
+machines-index bug: **the caption must be a single line**, checked directly
+this time).
+
+**Not done, and flagged as a checker/task conflict, not a judgement call:**
+B2 and the task both ask for "any cell over 25 links replaced by a count plus
+a link to the class page's steps section" in table (b). This is **not safe**
+with the current `check_materials.py`: `check()` builds each class page's
+required step set as the union of `cell_steps()` over its owned rows, and
+`cell_steps()` only recognises a cell that starts with "all except" or a
+`{ref}` step link — a prose "N steps — see …" cell would parse to an empty
+step set, so the page's own (unchanged) steps paragraph would immediately
+fail as "page only […all its real steps…]". 19 of the 65 rows have over 25
+step links (`test-wafers` 105, `chamber-parts` 63, `ar` 69, `upw` 84, and 15
+others); all 19 were left with their full link lists, unabridged, verbatim.
+**Guide problem to flag:** this collapsing rule needs a `check_materials.py`
+change (a delegating form the checker recognises, parallel to what
+`gen_step_tables.py`'s dropdown-wrap already does for machine/material class
+pages) before it can be done on this index; until then the rule as written
+cannot be executed without breaking the checker.
+
+**Checkers:** `check_materials.py` 0 problems on the first run after the
+restructuring (no iteration needed, unlike machines). `check_steps.py`,
+`check_refs.py`, `check_machines.py`, `check_masks.py`, `check_inforce.py`,
+`gen_index_links.py --check`, `gen_step_tables.py --check` all 0 problems.
+`-W` build: one warning on the first attempt (`Non-consecutive header level
+increase; H2 to H4`, from an initial `#### Material, class...` sub-heading
+under the two-tables-then-two-tables layout before it was redesigned into the
+per-class interleaved H3s above) — fixed by the redesign, not by demoting the
+heading; rebuild clean. Rendered `materials/index.html` at desktop and 400 px
+(`tools/shoot.py`, `--max-height 40000` for the phone full-page capture): the
+4-column table wraps to a stacked one-column-per-cell layout at 400 px with
+no horizontal scroll (same responsive behaviour as the existing quick-facts
+tables); the unabridged long-link `Steps` cells (up to 105 links) render as
+plain wrapped text, tall but not overflowing.
+
+**`check_preserved.py`** (run from the coordinator-updated copy at
+`/home/admin/github/mithro/sky130-process-tech/tools/check_preserved.py`,
+temporarily copied into this worktree's `tools/` to get the right repo root,
+then reverted — never committed here — per the coordinator's note that main's
+copy now handles table regroups and directive lines):
+`--base 05e7a3ba --allow-added markers,numbers,quotes,identifiers,number_order,hedges
+--allow-regrouped docs/materials/index.md` → **0 undeclared differences**.
+`hedges` needed declaring: the TMAH row's Material cell embeds a hedge
+("our arithmetic…taking the solution's density as about 1 g/mL") that is now
+repeated once in each of tables (a) and (b) (the Material/key cell is, by
+design, present in both) — same expected repetition as the `markers` and
+`quotes` categories already declared for the machines index, not a new or
+upgraded hedge.
 
 ## 3. Masks index — not started
 
