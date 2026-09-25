@@ -7,15 +7,15 @@ The SKY130 reference keeps its own list, {ref}`references-index`.
 
 (hsrc-ar-fy1993)=
 **AR-FY1993** — Cypress Semiconductor Corp., Form 10-K for the fiscal year ended 1994-01-03, filed 1994-03-16, Item 1, Manufacturing and Research and development. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1994.pdf>
-Used on {ref}`history-fabs`, {ref}`history-sonos-s4`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-sonos-s4`, {ref}`history-technologies`.
 
 (hsrc-ar-fy1995)=
 **AR-FY1995** — Cypress Semiconductor Corp., *1995 Annual Report*, fiscal year ended 1996-01-01: shareholder letter, highlights timeline and notes on commitments and subsidiaries. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
 
 (hsrc-ar-fy1996)=
 **AR-FY1996** — Cypress Semiconductor Corp., *1996 Annual Report*, fiscal year ended 1996-12-29: Business Highlights timeline (Q1 and Q3) and restructuring note. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf>
-Used on {ref}`history-fabs`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-ar-fy1997)=
 **AR-FY1997** — Cypress Semiconductor Corp., *1997 Annual Report*, fiscal year ended 1997-12-28: manufacturing section and restructuring note. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf>
@@ -23,7 +23,7 @@ Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-technologies`.
 
 (hsrc-ar-fy1998)=
 **AR-FY1998** — Cypress Semiconductor Corp., *1998 Annual Report*, fiscal year ended 1999-01-03: president's letter and restructuring discussion. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
 
 (hsrc-ar-fy1999)=
 **AR-FY1999** — Cypress Semiconductor Corp., *1999 Annual Report*, fiscal year ended 2000-01-02: Liquidity and Capital Resources. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf>
@@ -35,7 +35,7 @@ Used on {ref}`history-fabs`, {ref}`history-technologies`.
 
 (hsrc-ar-fy2002)=
 **AR-FY2002** — Cypress Semiconductor Corp., *2002 Annual Report* with Form 10-K, fiscal year ended 2002-12-29: Item 1, Research and development and Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-technologies`.
 
 (hsrc-ar-fy2003)=
 **AR-FY2003** — Cypress Semiconductor Corp., *2003 Annual Report* with Form 10-K, fiscal year ended 2003-12-28: Item 1, Research and development. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf>
@@ -47,19 +47,19 @@ Used on {ref}`history-technologies`.
 
 (hsrc-ar-fy2005)=
 **AR-FY2005** — Cypress Semiconductor Corp., *2005 Annual Report* with Form 10-K, fiscal year ended 2006-01-01: Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-ar-fy2006)=
 **AR-FY2006** — Cypress Semiconductor Corp., *2006 Annual Report* with Form 10-K, fiscal year ended 2006-12-31: Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf>
-Used on {ref}`history-fabs`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-ar-fy2008)=
 **AR-FY2008** — Cypress Semiconductor Corp., *2008 Annual Report* with Form 10-K, fiscal year ended 2008-12-28: shareholder letter and Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-ar-fy2009)=
 **AR-FY2009** — Cypress Semiconductor Corp., *2009 Annual Report* with Form 10-K, fiscal year ended 2010-01-03: shareholder letter. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-ar-fy2010)=
 **AR-FY2010** — Cypress Semiconductor Corp., *2010 Annual Report* with Form 10-K, fiscal year ended 2011-01-02: "Manufacturing" section. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf>
@@ -87,7 +87,7 @@ Used on {ref}`history-fabs`, {ref}`history-technologies`.
 
 (hsrc-eet-1997-sram035)=
 **EET-1997-SRAM035** — EE Times, *Cypress Introduces its First 0.35-µm SRAM*, 1997-11-19. <https://www.eetimes.com/cypress-introduces-its-first-0-35-m-sram/>
-Used on {ref}`history-technologies`.
+Used on {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-eet-1998-restructure)=
 **EET-1998-RESTRUCTURE** — EE Times staff, *Cypress Restructures Manufacturing Operations*, EE Times, 1998-03-09. <https://www.eetimes.com/cypress-restructures-manufacturing-operations/>
@@ -103,7 +103,7 @@ Used on {ref}`history-fabs`, {ref}`history-sonos-s4`.
 
 (hsrc-eet-2006-c8)=
 **EET-2006-C8** — Mark LaPedus, *Cypress transfers 130-nm process to Grace*, EE Times, 2006-07-19. <https://www.eetimes.com/cypress-transfers-130-nm-process-to-grace/>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-technologies`.
 
 (hsrc-eet-2007-fablite)=
 **EET-2007-FABLITE** — EE Times, *Cypress furthers 'fab lite'*, 2007-03-05. <https://www.eetimes.com/cypress-furthers-fab-lite/>
@@ -115,7 +115,7 @@ Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-ew-2007-s8)=
 **EW-2007-S8** — Electronics Weekly, *Cypress 4-Mbit non-volatile static random access memory*, 2007-10-18. <https://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/>
-Used on {ref}`history-naming`, {ref}`history-s8-lineage`.
+Used on {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`.
 
 (hsrc-ew-2007-umc)=
 **EW-2007-UMC** — Electronics Weekly, *Cypress moves SRAM production to foundry*, February 2007. <https://www.electronicsweekly.com/news/business/manufacturing/cypress-moves-sram-production-to-foundry-2007-02/>
@@ -123,7 +123,7 @@ Used on {ref}`history-fabs`.
 
 (hsrc-fu-cypress)=
 **FU-CYPRESS** — FundingUniverse (from the *International Directory of Company Histories*), *History of Cypress Semiconductor Corporation*, retrieved 2026-09-25. <https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/>
-Used on {ref}`history-fabs`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-pat-us6677213)=
 **PAT-US6677213** — K. Ramkumar and F. B. Jenne (Cypress Semiconductor), *SONOS structure including a deuterated oxide-silicon interface and method for making the same*, US 6,677,213 B1, priority 2002-03-08. <https://patents.google.com/patent/US6677213B1/en>
@@ -147,11 +147,11 @@ Used on {ref}`history-s8-lineage`.
 
 (hsrc-pdk-previous)=
 **PDK-PREVIOUS** — SkyWater PDK Authors, *Previous Nomenclature*, SkyWater SKY130 PDK documentation, retrieved 2026-09-25. <https://skywater-pdk.readthedocs.io/en/main/previous.html>
-Used on {ref}`history-s8-lineage`.
+Used on {ref}`history-index`, {ref}`history-s8-lineage`.
 
 (hsrc-pin-152804)=
 **PIN-152804** — Cypress Semiconductor, Product Information Notification PIN152804, *Qualification of GlobalWafer Silicon Wafers for 250nm, 130nm and 90nm Technology Products at Cypress Fab 4*, 2015-07-12 (copy hosted by Future Electronics). <https://media.futureelectronics.com/PCN/45887_SPCN.PDF>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
 
 (hsrc-proxy-1994)=
 **PROXY-1994** — Cypress Semiconductor Corp., definitive proxy statement (Schedule 14A), filed 1994-03-15; Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170224082226/https://www.sec.gov/Archives/edgar/data/791915/0000791915-94-000010.txt>
@@ -183,7 +183,7 @@ Used on {ref}`history-naming`, {ref}`history-stackups`, {ref}`history-technologi
 
 (hsrc-qtp-012801)=
 **QTP-012801** — Cypress Semiconductor, Product Qualification Report QTP 012801: *4 Meg SRAM Device R7LD-1.8 Technology, Fab4*, October 2004; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210302225236/https://www.cypress.com/file/91706/download>
-Used on {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-index`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-014807)=
 **QTP-014807** — Cypress Semiconductor, Product Qualification Report QTP 014807: *Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV*, June 2005. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>
@@ -191,7 +191,7 @@ Used on {ref}`history-naming`, {ref}`history-stackups`, {ref}`history-technologi
 
 (hsrc-qtp-021507)=
 **QTP-021507** — Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015. <https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-023101)=
 **QTP-023101** — Cypress Semiconductor, Product Qualification Report QTP 023101: *Synchronous Dual Port RAM Family CY7C083xV / CY7C085xV, R7FTW-3R Technology Fab4*, June 2005. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf>
@@ -227,7 +227,7 @@ Used on {ref}`history-sonos-s4`, {ref}`history-stackups`.
 
 (hsrc-qtp-043004)=
 **QTP-043004** — Cypress Semiconductor, Product Qualification Report QTP 043004: *DDR2-PLL Device Family, C8Q-3R, Fab 4*, March 2007; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>
-Used on {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-051005)=
 **QTP-051005** — Cypress Semiconductor, Product Qualification Report QTP 051005: *Automotive PSoC Mixed Signal Array Family, S4AD-5CTI Technology, Fab 2*, March 2007; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211130190834/https://www.cypress.com/file/92671/download>
@@ -303,7 +303,7 @@ Used on {ref}`history-fabs`, {ref}`history-stackups`, {ref}`history-technologies
 
 (hsrc-qtp-097483)=
 **QTP-097483** — Cypress Semiconductor, Product Qualification Report QTP 97483: *Low Voltage Deep Synchronous FIFO High Speed 100-MHZ Operation, R42D -- Fab 4*, May 2017. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97483-low-voltage-deep-sync-fifos-r42d-technology-fab4-device-cy7c42-v-productqualificationreport-en.pdf>
-Used on {ref}`history-technologies`.
+Used on {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-qtp-098021)=
 **QTP-098021** — Cypress Semiconductor, Product Qualification Report QTP 98021: *1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices*, July 1998; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>
@@ -343,7 +343,7 @@ Used on {ref}`history-naming`, {ref}`history-stackups`.
 
 (hsrc-qtp-113005)=
 **QTP-113005** — Cypress Semiconductor, Product Qualification Report QTP 113005: *64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4)*, January 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-151005)=
 **QTP-151005** — Cypress Semiconductor, Product Qualification Report QTP 151005: *PSoC RADON Device Family, S4AD-5 Technology, HHGrace FAB5*, October 2015. <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-151005-psoc24x94-hhgrace-productqualificationreport-en.pdf>
@@ -359,11 +359,11 @@ Used on {ref}`history-fabs`.
 
 (hsrc-sd-2007-fab2)=
 **SD-2007-FAB2** — Semiconductor Digest, *Cypress getting rid of Round Rock, TX fab*, 2007-12-19. <https://sst.semiconductor-digest.com/2007/12/cypress-getting-rid-of-round-rock-tx-fab/>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-strib-2017)=
 **STRIB-2017** — Alex Van Abbema, *Twin Cities tech executives form new company, buy Cypress chip plant in Bloomington*, Star Tribune, 2017-03-31. <https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-strib-2019)=
 **STRIB-2019** — Evan Ramstad, *Why computer-chip factories from the 1980s are still going strong in Bloomington*, Star Tribune, 2019-06-09. <https://www.startribune.com/why-computer-chip-factories-from-the-1980s-are-still-going-strong-in-bloomington/510984342>
@@ -375,7 +375,7 @@ Used on {ref}`history-fabs`.
 
 (hsrc-tenq-1996q3)=
 **TENQ-1996Q3** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 1996-09-30, filed 1996-11-14, Notes to financial statements (restructuring); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170530145033/https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000013.txt>
-Used on {ref}`history-fabs`.
+Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-tenq-2017q1)=
 **TENQ-2017Q1** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed 2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>

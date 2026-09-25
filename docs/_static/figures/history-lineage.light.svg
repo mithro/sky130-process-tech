@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 378" width="480" height="378" role="img" data-kind="chain" data-theme="light">
+<title>Four boxes one above the other joined by downward arrows: R42D in 1997, S4AD-5 in 2001, S8 in 2007 to 2008, and SKY130. A side box, C8 in 2005, points into the S8 box.</title>
+<desc>Four boxes one above the other joined by downward arrows: R42D in 1997, S4AD-5 in 2001, S8 in 2007 to 2008, and SKY130. A side box, C8 in 2005, points into the S8 box.</desc>
+<style>
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs></defs>
+<rect class="ground" x="0" y="0" width="480" height="378"/>
+<text x="12.0" y="26.0" class="t-panel-title">From R42D to SKY130</text>
+<rect class="cbox" x="12.0" y="38.0" width="277.8" height="47.0" rx="3"/>
+<text x="19.0" y="56.9" class="t-label-title">R42D, 1997</text>
+<text x="19.0" y="73.9" class="t-label-note muted">0.35 µm SRAM and logic process, Fab 4</text>
+<path class="carrow" d="M150.9 87.0V95.0"/>
+<path class="cahead" d="M150.9 101.0l-3.8 -7h7.6z"/>
+<rect class="cbox" x="12.0" y="101.0" width="277.8" height="79.0" rx="3"/>
+<text x="19.0" y="119.9" class="t-label-title">S4AD-5, 2001</text>
+<text x="19.0" y="136.9" class="t-label-note muted">0.35 µm SONOS process built</text>
+<text x="19.0" y="152.9" class="t-label-note muted">on R42D with six more masks;</text>
+<text x="19.0" y="168.9" class="t-label-note muted">Fab 2, later Fab 4 and Grace</text>
+<path class="carrow" d="M150.9 182.0V190.0"/>
+<path class="cahead" d="M150.9 196.0l-3.8 -7h7.6z"/>
+<rect class="cbox" x="12.0" y="196.0" width="277.8" height="47.0" rx="3"/>
+<text x="19.0" y="214.9" class="t-label-title">S8, 2007–2008</text>
+<text x="19.0" y="231.9" class="t-label-note muted">0.13 µm SONOS process, Fab 4</text>
+<rect class="cbox" x="303.8" y="196.0" width="164.2" height="79.0" rx="3"/>
+<text x="310.8" y="214.9" class="t-label-title">C8, 2005</text>
+<text x="310.8" y="231.9" class="t-label-note muted">0.13 µm logic process,</text>
+<text x="310.8" y="247.9" class="t-label-note muted">Fab 4, with the same</text>
+<text x="310.8" y="263.9" class="t-label-note muted">first metal as S8</text>
+<path class="carrow" d="M301.8 219.5H294.8"/>
+<path class="cahead" d="M289.8 219.5l6 -3.4v6.8z"/>
+<path class="carrow" d="M150.9 277.0V285.0"/>
+<path class="cahead" d="M150.9 291.0l-3.8 -7h7.6z"/>
+<rect class="cbox" x="12.0" y="291.0" width="277.8" height="47.0" rx="3"/>
+<text x="19.0" y="309.9" class="t-label-title">SKY130</text>
+<text x="19.0" y="326.9" class="t-label-note muted">SkyWater&#x27;s name for S8</text>
+<text x="12.0" y="350.0" class="t-label-note muted">Only the processes the pages of this section cite. The</text>
+<text x="12.0" y="366.0" class="t-label-note muted">C8 branch is a reading, not a statement in the sources.</text>
+</svg>

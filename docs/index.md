@@ -145,6 +145,13 @@ figure-conventions
 references/index
 ```
 
+```{toctree}
+:maxdepth: 1
+:caption: History
+
+history/index
+```
+
 <!-- footnotes -->
 
 [^pdk-01]: SkyWater PDK Authors, *SkyWater SKY130 PDK documentation*.

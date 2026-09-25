@@ -1,0 +1,34 @@
+id: history-lineage
+kind: chain
+page: docs/history/index.md
+title: "From R42D to SKY130"
+nodes:
+  - title: "R42D, 1997"
+    note: "0.35 µm SRAM and logic process, Fab 4"
+    basis: public
+    cite: qtp-097483
+  - title: "S4AD-5, 2001"
+    note: "0.35 µm SONOS process built on R42D with six more masks; Fab 2, later Fab 4 and Grace"
+    basis: public
+    cite: qtp-021507
+  - title: "S8, 2007–2008"
+    note: "0.13 µm SONOS process, Fab 4"
+    basis: public
+    cite: qtp-113005
+    branch:
+      title: "C8, 2005"
+      note: "0.13 µm logic process, Fab 4, with the same first metal as S8"
+      basis: public
+      cite: qtp-043004
+  - title: "SKY130"
+    note: "SkyWater's name for S8"
+    basis: public
+    cite: pdk-previous
+footer: "Only the processes the pages of this section cite. The C8 branch is a reading, not a statement in the sources."
+alt: >-
+  Four boxes one above the other joined by downward arrows: R42D in 1997, S4AD-5 in 2001, S8 in
+  2007 to 2008, and SKY130. A side box, C8 in 2005, points into the S8 box.
+caption: >-
+  How S8 descends from the earlier Cypress processes. S4AD-5 was built on R42D, and S8 carries the SONOS
+  of S4AD-5 into the 0.13 µm generation.[^qtp-021507][^qtp-113005] The link from C8 is our reading of
+  the shared first metal and the common generation; no source states it.[^qtp-043004]

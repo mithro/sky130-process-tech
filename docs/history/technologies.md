@@ -11,17 +11,18 @@ stackups are copied in full on {ref}`history-stackups`; the naming is explained 
 
 | Design rule | Cypress names | Main fabs | First dated in the sources | Section |
 |---|---|---|---|---|
-| 1.2–0.65 µm | CMOS, BiCMOS, Flash; R28, L28, P26 | Fab 1, Fab 2, Fab 3 | 1984 | [Before 0.5 µm](#before-0-5-um) |
-| 0.5 µm | RAM3: R32, R32D | Fab 1, Fab 4 | 1995 | [RAM3](#ram3-0-5-um) |
-| 0.42–0.35 µm | RAM4: R42D, R42HD, RAM42; S4AD-5 | Fab 4, Fab 2 | 1997 | [RAM4](#ram4-0-42-and-0-35-um) |
-| 0.25 µm | RAM5: R52 variants; B53D-3 | Fab 4 | 1998 | [RAM5](#ram5-0-25-um) |
-| 0.18–0.15 µm | RAM7: R7FT-3R, R7LD-1.8, R7FD-3R; B55SGT | Fab 4 | 2001 | [RAM7](#ram7-0-18-to-0-15-um) |
-| 0.13 µm | RAM8: R8LD-1.8; C8: C8Q-3R, L8C-3R; S8 | Fab 4 | 2002 | [RAM8 and C8](#ram8-and-c8-0-13-um) |
-| 90 nm | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R | Fab 4 | 2004 | [90 nm](#the-90-nm-generation) |
+| 1.2–0.65 µm | CMOS, BiCMOS, Flash; R28, L28, P26 | Fab 1, Fab 2, Fab 3 | 1984 | {ref}`Before 0.5 µm <history-tech-early>` |
+| 0.5 µm | RAM3: R32, R32D | Fab 1, Fab 4 | 1995 | {ref}`RAM3 <history-tech-ram3>` |
+| 0.42–0.35 µm | RAM4: R42D, R42HD, RAM42; S4AD-5 | Fab 4, Fab 2 | 1997 | {ref}`RAM4 <history-tech-ram4>` |
+| 0.25 µm | RAM5: R52 variants; B53D-3 | Fab 4 | 1998 | {ref}`RAM5 <history-tech-ram5>` |
+| 0.18–0.15 µm | RAM7: R7FT-3R, R7LD-1.8, R7FD-3R; B55SGT | Fab 4 | 2001 | {ref}`RAM7 <history-tech-ram7>` |
+| 0.13 µm | RAM8: R8LD-1.8; C8: C8Q-3R, L8C-3R; S8 | Fab 4 | 2002 | {ref}`RAM8 and C8 <history-tech-ram8>` |
+| 90 nm | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R | Fab 4 | 2004 | {ref}`90 nm <history-tech-90nm>` |
 
 The SONOS process S4AD-5 has its own page, {ref}`history-sonos-s4`. The dates in the table are the
 earliest found in the sources for each generation, not necessarily its first use.
 
+(history-tech-early)=
 ## Before 0.5 µm
 
 **The first processes.** Cypress's first product, early in 1984, was a CMOS memory made with
@@ -47,6 +48,7 @@ stack, passivation and 125 Å gate oxide differ from the Fab 2 version (Cypress'
 The metal of these processes is aluminium–silicon between TiW layers: R28's first metal is
 "Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A" (Cypress's reports).[^qtp-096091][^qtp-097476]
 
+(history-tech-ram3)=
 ## RAM3, 0.5 µm
 
 Cypress's own name for its 0.5 µm SRAM process was RAM3. The 1995 annual report defines it as a
@@ -60,6 +62,7 @@ layers, with local interconnect), both with 145 Å of gate oxide and both at Fab
 reports).[^qtp-097132][^qtp-098021] That R32 is RAM3 is our reading of the matching name and design
 rule; no report says so.
 
+(history-tech-ram4)=
 ## RAM4, 0.42 and 0.35 µm
 
 EE Times reported Cypress's "first SRAM built in a 0.35-µm feature size", the CY7C1021, on
@@ -81,6 +84,7 @@ reports of the time print "0.5% Cu".
 an "R42D-5 derivative w/ 6 additional mask" (single source).[^qtp-021507] It is covered on
 {ref}`history-sonos-s4`.
 
+(history-tech-ram5)=
 ## RAM5, 0.25 µm
 
 Cypress's 1998 report defines RAM5 as a process "with 0.25-micron feature geometry" and says it
@@ -105,6 +109,7 @@ B53D-3" in August 2000 and printed as 0.25 µm CMOS, was used for WirelessUSB ra
 clock parts. That B53D-3 is the BiCMOS process is our reading: the report does not say
 "BiCMOS".[^qtp-032005]
 
+(history-tech-ram7)=
 ## RAM7, 0.18 to 0.15 µm
 
 Cypress began developing 0.18 µm in 1998 and 0.16 µm in 1999.[^ar-fy1998][^ar-fy1999] Its 2001 report
@@ -131,6 +136,7 @@ qualification report, B55SGT ("New Technology B55SGT18A", May 2003), prints the 
 (0.21 – 0.35 µm), SiGe Bipolar", with three metal layers.[^qtp-051101] The two sources give different
 figures.
 
+(history-tech-ram8)=
 ## RAM8 and C8, 0.13 µm
 
 Cypress and Mosel Vitelic agreed in 2000 to develop 0.13 µm together in Fab 1
@@ -149,6 +155,7 @@ In 2006 Cypress began moving "its 0.13-micron C8 process technology" to Grace fo
 chips.[^eet-2006-c8] A 2015 notice lists "130nm C8/R8/S8/L8" as the 0.13 µm families at Fab 4.[^pin-152804]
 S8 is the fourth of these; how it relates to the other three is on {ref}`history-s8-lineage`.
 
+(history-tech-90nm)=
 ## The 90 nm generation
 
 Cypress's 90 nm process was developed in Fab 1 and moved to Fab 4 from 2002; its 2004 report says it

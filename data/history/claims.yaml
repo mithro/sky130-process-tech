@@ -996,3 +996,152 @@ claims:
   - {id: qtp-051005, origin: cypress}
   - {id: qtp-098462, origin: cypress}
   - {id: qtp-110605, origin: cypress}
+
+# ---- docs/history/index.md --------------------------------------------------
+- id: idx-generations
+  page: docs/history/index.md
+  anchor: Cypress made its own processes, one generation at a time.
+  grade: corroborated
+  footnotes: [fu-cypress, ar-fy1995, ar-fy1998, ar-fy2002]
+  sources:
+  - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
+  - {id: cyx-ar-fy1995-ram3, origin: cypress}
+  - {id: cyx-ar-fy1998-ram5, origin: cypress}
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+- id: idx-four-fabs
+  page: docs/history/index.md
+  anchor: Four fabs of its own.
+  grade: corroborated
+  footnotes: [ar-fy1993, ar-fy1995]
+  sources:
+  - {id: cyhist-corp-1993-10k, origin: cypress}
+  - {id: cyhist-corp-1995-ar-cti, origin: cypress}
+  - {id: cyx-startribune-2017-plant, origin: startribune}
+- id: idx-sonos-2001
+  page: docs/history/index.md
+  anchor: SONOS arrived in 2001.
+  grade: attributed
+  attribution: See
+  footnotes: [qtp-021507]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+  - {id: qtp-062509, origin: cypress}
+- id: idx-s8-joined
+  page: docs/history/index.md
+  anchor: S8 joined the two lines.
+  grade: attributed
+  attribution: See
+  footnotes: [pin-152804, qtp-113005]
+  sources:
+  - {id: cyx-pin152804-fab4-families, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+  - {id: qtp-021507, origin: cypress}
+- id: idx-t-1984
+  page: docs/history/index.md
+  anchor: '| 1984 |'
+  grade: single-source
+  footnotes: [fu-cypress]
+  sources:
+  - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
+- id: idx-t-1986
+  page: docs/history/index.md
+  anchor: '| 1986 |'
+  grade: corroborated
+  footnotes: [ar-fy2008, sd-2007-fab2]
+  sources:
+  - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
+  - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
+- id: idx-t-1991
+  page: docs/history/index.md
+  anchor: '| 1991 |'
+  grade: corroborated
+  footnotes: [ar-fy1993, strib-2017]
+  sources:
+  - {id: cyhist-corp-1993-10k, origin: cypress}
+  - {id: cyx-startribune-2017-plant, origin: startribune}
+- id: idx-t-1995
+  page: docs/history/index.md
+  anchor: '| 1995 |'
+  grade: corroborated
+  footnotes: [ar-fy1995, ar-fy1996]
+  sources:
+  - {id: cypress-annual-report-fy1995, origin: cypress}
+  - {id: cyx-ar-fy1996-ram3, origin: cypress}
+  - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
+- id: idx-t-1996
+  page: docs/history/index.md
+  anchor: '| 1996 |'
+  grade: corroborated
+  footnotes: [tenq-1996q3]
+  sources:
+  - {id: cyhist-corp-1996-10q-q3-fab1-rd, origin: cypress}
+  - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
+- id: idx-t-1997
+  page: docs/history/index.md
+  anchor: '| 1997 |'
+  grade: corroborated
+  footnotes: [eet-1997-sram035, qtp-097483]
+  sources:
+  - {id: cyx-eetimes-1997-first-035um-sram, origin: eetimes}
+  - {id: qtp-097483, origin: cypress}
+- id: idx-t-1998
+  page: docs/history/index.md
+  anchor: '| 1998 |'
+  grade: corroborated
+  footnotes: [ar-fy1998]
+  sources:
+  - {id: cyx-ar-fy1998-restructure, origin: cypress}
+  - {id: cyhist-corp-pr-1998-restructure, origin: eetimes}
+- id: idx-t-2001
+  page: docs/history/index.md
+  anchor: '| 2001 |'
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-012801]
+  sources:
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-012801, origin: cypress}
+  - {id: qtp-011908, origin: cypress}
+- id: idx-t-2002
+  page: docs/history/index.md
+  anchor: '| 2002 |'
+  grade: single-source
+  footnotes: [ar-fy2002]
+  sources:
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+- id: idx-t-2005
+  page: docs/history/index.md
+  anchor: '| 2005 |'
+  grade: corroborated
+  footnotes: [qtp-043004, ar-fy2005]
+  sources:
+  - {id: qtp-043004, origin: cypress}
+  - {id: cyhist-corp-2005-ar-grace-flexmfg, origin: cypress}
+  - {id: cyhist-corp-pr-2005-grace-deal, origin: eetimes}
+- id: idx-t-2006
+  page: docs/history/index.md
+  anchor: '| 2006 |'
+  grade: corroborated
+  footnotes: [ar-fy2006, eet-2006-c8]
+  sources:
+  - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
+  - {id: cyhist-corp-pr-2006-grace-c8-130nm, origin: eetimes}
+- id: idx-t-2007
+  page: docs/history/index.md
+  anchor: '| 2007 |'
+  grade: corroborated
+  footnotes: [ew-2007-s8, ar-fy2009]
+  sources:
+  - {id: cyx-ew-2007-s8-nvsram, origin: ew}
+  - {id: cyx-ar-fy2009-fab1-sold, origin: cypress}
+  - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
+- id: idx-t-2008
+  page: docs/history/index.md
+  anchor: '| 2008 |'
+  grade: corroborated
+  footnotes: [qtp-113005, ar-fy2008]
+  sources:
+  - {id: qtp-113005, origin: cypress}
+  - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
+  - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}

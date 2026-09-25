@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/history-lineage.svg
+:alt: Four boxes one above the other joined by downward arrows: R42D in 1997, S4AD-5 in 2001, S8 in 2007 to 2008, and SKY130. A side box, C8 in 2005, points into the S8 box.
+:width: 560px
+:name: fig-history-lineage
+
+How S8 descends from the earlier Cypress processes. S4AD-5 was built on R42D, and S8 carries the SONOS of S4AD-5 into the 0.13 µm generation.[^qtp-021507][^qtp-113005] The link from C8 is our reading of the shared first metal and the common generation; no source states it.[^qtp-043004]
+:::
