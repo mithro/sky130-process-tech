@@ -1994,8 +1994,6 @@ A caption may carry a footnote marker (`… blank in the PDK[^pdk-periph]`) — 
   | Source | Energy (keV) |
   |---|---:|
   | Harris[^a] | 500 |
-
-  For a 1.1 µm well depth the deepest energy is plausibly 500 keV–1 MeV (our reading).
 ```
 
 **Admonition with a title** (use for "At a glance"; `:class: at-a-glance` is required, see R-GLANCE
@@ -2159,13 +2157,13 @@ for additions you can name (glance box, R-TOOLS head), and list them in the prog
 `--allow-dropdown-edits` only when you edited a note under §2.5, and then name the note and paste
 its old and new text.
 
-A `number_order` LOST is failed by default; when R-TABLE, R-DERIVATION or R-LIST regroups one
-prose unit's numbers into several smaller units (a table's rows, a numbered list's steps), re-run with
-`--allow-regrouped`, which downgrades that LOST to a warning once its four conditions hold (see the
-tool's own docstring on `check_regrouped`) and prints each LOST unit's source text next to the ADDED
-units that cover it. Read that printout, confirm by hand that every regrouping — and any "respectively"
-pairing — is the same digits, and put the printout, or your own confirmation of it, in the progress
-file. **Any other loss is a bug in your edit.**
+A `number_order` LOST is failed by default. `--allow-regrouped` downgrades that LOST to a warning
+once its four conditions hold (see the tool's own docstring on `check_regrouped`) — the
+deliberate result of R-TABLE, R-DERIVATION or R-LIST turning one dense prose unit's numbers into
+several smaller units (a table's rows, a numbered list's steps) — and prints each LOST unit's
+source text next to the ADDED units that cover it. Read that printout, confirm by hand that every
+regrouping — and any "respectively" pairing — is the same digits, and put the printout, or your
+own confirmation of it, in the progress file. **Any other loss is a bug in your edit.**
 
 **5. Checkers**, from §4 for your page type, then always these:
 
