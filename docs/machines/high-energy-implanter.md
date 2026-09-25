@@ -7,11 +7,7 @@ buried layers, at energies from a few hundred keV to several MeV. It
 adds a second accelerator — a radio-frequency linear accelerator or a
 DC tandem — to the chain of an ordinary implanter, and in the 200 mm
 era it was built either on a batch spinning-disc end station or as a
-single-wafer machine. This page describes the class in general, lists
-representative 200 mm-era models, and then says what SkyWater has
-published about its own tool of this class and which SKY130 steps this
-reference assigns to it. The physics of implantation is on the
-{ref}`category page <category-implant>`.
+single-wafer machine.
 
 | | High-energy ion implanter |
 |---|---|
@@ -24,14 +20,19 @@ reference assigns to it. The physics of implantation is on the
 | SkyWater-listed tool | "Axcelis GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15, tilt/twist"[^skw-01] |
 | SKY130 steps | 7 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-high-energy-implanter-steps>` |
 
+:::{seealso}
+The physics of implantation is on the
+{ref}`category page <category-implant>`.
+:::
+
 ## What the machine class is and how it works
 
 A high-energy implanter has the source, analysing magnet, scanning,
-dosimetry and end station of every beam-line implanter,[^wiki-implant]
-described in more detail on the {ref}`medium-current page
-<machine-medium-current-implanter>`; what distinguishes it is the
-accelerator after the magnet and the consequences of MeV beams for
-energy purity, dosimetry and resist. In Wikipedia's words the beam
+dosimetry and end station of every beam-line implanter, described in
+more detail on the {ref}`medium-current page
+<machine-medium-current-implanter>`.[^wiki-implant] What distinguishes
+it is the accelerator after the magnet and the consequences of MeV
+beams for energy purity, dosimetry and resist. In Wikipedia's words the beam
 "passes through an analysis magnet to select the ions that will be
 implanted and then passes through one or two linear accelerators
 (linacs) that accelerate the ions before they reach the
@@ -44,19 +45,23 @@ Eaton brought "LINAC based acceleration to commercial semiconductor
 manufacturing" with the NV-1000 of 1986.[^axcelis-history] Glavish and
 Denholm's patent describes the principle: "The accelerator is
 constructed from multiple stages or cells with each cell including an
-accelerating electrode coupled to an rf resonant tank circuit", the
-phase of each cell is set for "the mass, charge, and initial velocity of
-the ion", and ions leave "in focused packets or bunches" with "energies
-on the order of 1 mev per charge state".[^pat-linac-eaton] A later
-Axcelis patent, which names the "Eaton GSD/HE and GSD/VHE ion
-implanters", describes a typical high-energy beam line as "a mass analysis magnet
-… and a radio frequency (RF) linear accelerator (linac)" made of "a series
-of resonator modules …, each of which further accelerates ions beyond
-the energies they achieve from prior modules".[^pat-linac-axcelis] An RF
-linac does not fix the energy by a voltage: "the beam energy from the RF
-system cannot be determined so easily as the electro-static systems",
-so on the NV-GSD-HE "the Final Energy Magnet is used for energy
-analysis, measuring its magnetic field strength by a
+accelerating electrode coupled to an rf resonant tank
+circuit".[^pat-linac-eaton] The phase of each cell is set for "the
+mass, charge, and initial velocity of the ion", and ions leave "in
+focused packets or bunches" with "energies on the order of 1 mev per
+charge state".[^pat-linac-eaton]
+
+A later Axcelis patent, which names the "Eaton GSD/HE and GSD/VHE ion
+implanters", describes a typical high-energy beam line as "a mass
+analysis magnet … and a radio frequency (RF) linear accelerator
+(linac)".[^pat-linac-axcelis] It is made of "a series of resonator
+modules …, each of which further accelerates ions beyond the energies
+they achieve from prior modules".[^pat-linac-axcelis]
+
+An RF linac does not fix the energy by a voltage: "the beam energy from
+the RF system cannot be determined so easily as the electro-static
+systems".[^suetsugu-2000] So on the NV-GSD-HE "the Final Energy Magnet
+is used for energy analysis, measuring its magnetic field strength by a
 Hall-probe".[^suetsugu-2000]
 
 ### DC tandem accelerators
@@ -76,7 +81,7 @@ interlocks the final implant energy".[^varian-viista3000]
 
 Multiply charged ions reach higher energies on the same accelerator:
 the NV-GSD/VHE reaches "B⁺⁺ to energies approaching 3 MeV and
-P⁺⁺⁺ energies approaching 5 MeV",[^wilson-1996] and Spinelli et al.
+P⁺⁺⁺ energies approaching 5 MeV".[^wilson-1996] Spinelli et al.
 described the problems of "multicharged phosphorous ions in an
 industrial context" for MeV n-wells as early as
 1985.[^spinelli-1985] Sources with indirectly heated cathodes give
@@ -92,14 +97,16 @@ the high-current tools; the concept "was carried forward successfully
 for many generations of NV-10, GSD, HE, HE3" and later
 machines.[^axcelis-history] At MeV energies residual gas does more than
 neutralise the beam: "at higher energies stripping of electrons from
-ions within the beam becomes more likely than charge neutralization",
-and stripped ions make the Faraday cup (with the electron suppression
-described on the {ref}`medium-current page
-<machine-medium-current-implanter>`) read high, so Eaton's dose
-controller compensates for both effects; its examples include "P⁺¹
-850 keV at 550 µA".[^pat-dose-eaton] Single-wafer machines scan the beam:
-the VIISta 3000's electrostatic scan sweeps the beam "about 10 times
-more often than alternative (magnetic scan) approaches".[^varian-viista3000]
+ions within the beam becomes more likely than charge
+neutralization".[^pat-dose-eaton] Stripped ions make the Faraday cup
+(with the electron suppression described on the {ref}`medium-current
+page <machine-medium-current-implanter>`) read high, so Eaton's dose
+controller compensates for both effects.[^pat-dose-eaton] Its examples
+include "P⁺¹ 850 keV at 550 µA".[^pat-dose-eaton]
+
+Single-wafer machines scan the beam: the VIISta 3000's electrostatic
+scan sweeps the beam "about 10 times more often than alternative
+(magnetic scan) approaches".[^varian-viista3000]
 
 ### Resist outgassing, angle and charge at the end station
 
@@ -107,41 +114,52 @@ Well implants run through thick resist and deposit their energy deep
 in it. O'Connor and Tokoro note that "special attention needs to be paid
 to photoresist outgassing during high energy implantation because the
 range of the dopant is much deeper (resulting in dramatically more
-outgassing)", and that "for low energy implants, neutralization is
-dominant. This is not necessarily the case for higher energy
-implants."[^oconnor-1996] Lee et al. measured chamber pressures rising
-into "the E-4 torr range" with resists up to 4.5 µm thick, and "if the
-chamber pressure is kept below 3.0 E-5 torr no observable dose shift
-could be detected".[^lee-1996] In high-energy implants "up to 50% of
-the evolved gas consists of species other than hydrogen".[^horsky-1998]
-End stations are therefore designed around the gas load.[^oconnor-1996]
+outgassing)".[^oconnor-1996] They also note that "for low energy
+implants, neutralization is dominant. This is not necessarily the case
+for higher energy implants."[^oconnor-1996]
+
+Lee et al. measured chamber pressures rising into "the E-4 torr range"
+with resists up to 4.5 µm thick, and "if the chamber pressure is kept
+below 3.0 E-5 torr no observable dose shift could be
+detected".[^lee-1996] In high-energy implants "up to 50% of the evolved
+gas consists of species other than hydrogen".[^horsky-1998] End
+stations are therefore designed around the gas load.[^oconnor-1996]
 
 The end stations themselves come from other implanter lines. The batch
 NV-GSD-HE combined "the GSD end station and the LINAC
-technology";[^axcelis-history] the NV-GSD/VHE uses the "source,
+technology".[^axcelis-history] The NV-GSD/VHE uses the "source,
 injector and end station" of the NV-GSD/HE, and Eaton claimed for both
-"excellent control over differential channeling";[^wilson-1996] the
+"excellent control over differential channeling".[^wilson-1996] The
 single-wafer VIISta 3000 uses "the common endstation and control system
-developed for VIISta series ion implanters".[^tokoro-2000] None of the high-energy sources cited here
-describes a charge-control system. Charge-up damage grows with beam
-current,[^tanjyo-2011] and well implants run at "less than a few hundred
-particle micro-amperes",[^oconnor-1996] so we infer that charging is a
-smaller concern here than on high-current tools.
+developed for VIISta series ion implanters".[^tokoro-2000]
+
+None of the high-energy sources cited here describes a charge-control
+system. Charge-up damage grows with beam current,[^tanjyo-2011] and
+well implants run at "less than a few hundred particle
+micro-amperes",[^oconnor-1996] so we infer that charging is a smaller
+concern here than on high-current tools.
 
 ## Representative 200 mm-era models
 
-* **Eaton / Axcelis.** The NV-1000 (1986) and NV-1002 (1990), the NV-GSD-HE
-  (1994), and the HE3 for 300 mm (1998);[^axcelis-history] the
-  NV-GSD/VHE, "an evolutionary step from the NV-GSD/HE" using the same
-  "source, injector and end station".[^wilson-1996] The line continues as
-  the GSD/HE and GSD/VHE Ovation.[^axcelis-gsd-page][^axcelis-gsd]
-* **Genus.** The G1500, G1510 and Tandetron 1520 MeV
-  implanters.[^tokoro-1996]
-* **Varian.** The single-wafer VIISta 3000, which Varian presented as
-  spanning energies to "greater than 3.75 MeV"[^varian-viista3000] and
-  "developed … to meet requirements of advanced 200 and 300 mm wafer
-  processes".[^tokoro-2000] Varian Semiconductor was acquired by Applied
-  Materials in 2011.[^wiki-varian]
+:::{table} Representative high-energy implanters of the 200 mm era (figures as each source gives them)
+:widths: 16 26 8 50
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Eaton | NV-1000 | 1986 | —[^axcelis-history] |
+| Eaton | NV-1002 | 1990 | —[^axcelis-history] |
+| Eaton | NV-GSD-HE | 1994 | —[^axcelis-history] |
+| Axcelis | HE3 (300 mm) | 1998 | —[^axcelis-history] |
+| Axcelis | NV-GSD/VHE | — | "an evolutionary step from the NV-GSD/HE" using the same "source, injector and end station"[^wilson-1996] |
+| Axcelis | GSD/HE and GSD/VHE Ovation | — | —[^axcelis-gsd-page][^axcelis-gsd] |
+| Genus | G1500 | — | —[^tokoro-1996] |
+| Genus | G1510 | — | —[^tokoro-1996] |
+| Genus | Tandetron 1520 | — | MeV implanter[^tokoro-1996] |
+| Varian | VIISta 3000 (single-wafer) | — | "greater than 3.75 MeV"[^varian-viista3000]; "developed … to meet requirements of advanced 200 and 300 mm wafer processes"[^tokoro-2000] |
+:::
+
+Varian Semiconductor was acquired by Applied Materials in
+2011.[^wiki-varian]
 
 Eaton spun its implanter business off as Axcelis Technologies in
 2000.[^wiki-axcelis] The {ref}`category page <category-implant>` lists
@@ -158,14 +176,16 @@ SkyWater's *Facilities & Capabilities* page lists:[^skw-01]
 > 5e15, tilt/twist"
 
 It is the only listed implanter that reaches MeV energies, and the
-{ref}`machines index <machines-index>` places it in this class; the
+{ref}`machines index <machines-index>` places it in this class. The
 other GSD entry, "Axcelis GSD Hi dose", is on the
 {ref}`high-current page <machine-high-current-implanter>`. Read term by
 term, the entry offers ¹¹B⁺, BF₂⁺, P⁺ and As⁺, energies of 10–3000 keV,
 doses of 10¹¹–5 × 10¹⁵ cm⁻² and tilt and twist, with no tilt range
-stated.[^skw-01] SkyWater does not give a model. Its 3000 keV ceiling
-matches the 3 MeV that Axcelis gives for the GSD/HE,[^axcelis-gsd-page]
-so we read the entry as a GSD/HE-class batch tool; that is an inference.
+stated.[^skw-01]
+
+SkyWater does not give a model. Its 3000 keV ceiling matches the 3 MeV
+that Axcelis gives for the GSD/HE, so we read the entry as a
+GSD/HE-class batch tool.[^axcelis-gsd-page] That is an inference.
 Whether the two GSD entries are two machines or two configurations is
 not stated.
 
@@ -274,9 +294,11 @@ not public.
 * **Several energies on one tool.** The {ref}`NWI2 <step-019>` and
   {ref}`PWI2 <step-028>` pages note that both implants of each well pair
   fall within the listed 10–3000 keV range, so one tool could run both
-  (inference). Where a second implant is shallow enough, the same pages
-  offer a medium-current tool; Morris and Rubin found that for multiple
-  well implants batch high-energy implanters "have a lower total capital
+  (inference).
+
+  Where a second implant is shallow enough, the same pages offer a
+  medium-current tool. Morris and Rubin found that for multiple well
+  implants batch high-energy implanters "have a lower total capital
   cost, footprint, and cost per wafer out than serial medium current
   implanters", with "no significant difference" in transistors from the
   beam-angle variation of a batch end station.[^morris-2000]
@@ -288,11 +310,12 @@ not public.
   machine-side risk that final-energy analysis addresses.[^kubo-1996][^suetsugu-2000]
 * **Tilt, channelling and shadowing of wells.** "Zero degree implants
   avoid shadowing effects from resist features but can reduce process
-  robustness due to channeling-induced profile variations", and "low
-  angle quad implants for retrograde wells eliminate shadowing effects
-  while delivering superior process robustness as compared to 0° well
-  implants";[^rubin-2002] lateral straggle from the resist edge also
-  shifts the threshold voltage of devices near a well
+  robustness due to channeling-induced profile variations".[^rubin-2002]
+
+  Similarly, "low angle quad implants for retrograde wells eliminate
+  shadowing effects while delivering superior process robustness as
+  compared to 0° well implants".[^rubin-2002] Lateral straggle from the
+  resist edge also shifts the threshold voltage of devices near a well
   edge.[^hook-2003] SKY130's well tilt is not public; the SkyWater entry
   lists "tilt/twist" without a range.[^skw-01]
 * **Resist crust and outgassing.** The {ref}`DNIS <step-009>` and
@@ -303,19 +326,18 @@ not public.
 
 ## Related pages
 
-* {ref}`category-implant` — implantation physics and the 25 implant
-  steps of SKY130.
-* {ref}`machine-medium-current-implanter` — the beam-line chain in
-  detail, and the alternative for the shallower well implants.
-* {ref}`machine-high-current-implanter` — the other GSD entry.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — dopant gases, ion-source parts and their
-  hazards.
-* {ref}`category-strip` — removal of the thick well-implant resist.
-* {ref}`material-substrates` — monitor wafers.
-* {ref}`material-dopant-sources` — dopant gases, solid sources,
+* **Category.** {ref}`category-implant` — implantation physics and the
+  25 implant steps of SKY130. {ref}`category-strip` — removal of the
+  thick well-implant resist.
+* **Machines.** {ref}`machine-medium-current-implanter` — the beam-line
+  chain in detail, and the alternative for the shallower well implants.
+  {ref}`machine-high-current-implanter` — the other GSD entry.
+* **Materials.** {ref}`material-substrates` — monitor wafers.
+  {ref}`material-dopant-sources` — dopant gases, solid sources,
   sub-atmospheric packages and ion-source parts.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  dopant gases, ion-source parts and their hazards.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

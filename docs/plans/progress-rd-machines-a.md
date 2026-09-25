@@ -591,6 +591,50 @@ wraps cleanly at 400 px.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 11. `docs/machines/high-energy-implanter.md` — done
+
+Sibling page to #10 (same implanter-class family, same footnote-key style). Rules applied:
+R-INTRO (template sentence dropped, pointer moved to `{seealso}`, remaining two sentences kept as
+the intro). R-MODELS (10-row table across Eaton/Axcelis, Genus and Varian). R-ENTRIES: same shape
+as page 10's "Read term by term" paragraph — a single quoted SkyWater spec line decoded field by
+field, not several distinct named entries — left as prose per the same reasoning, only its
+sentences were checked against the caps. R-QUICKFACTS: left as written (method note 3; all 7
+rows keep 2+ quotations, none had a safe cut). R-PARA (7 H3/body paragraphs over 100 words split,
+mostly by breaking a semicolon-joined or "and"-joined compound sentence into two, then adding a
+paragraph break). R-SENTENCE (about 10 sentences over 45 words split; one 37-word sentence that
+is entirely a single quotation, `docs/machines/high-energy-implanter.md`'s "In Wikipedia's
+words…", was left whole — no split point exists outside the quote). R-LIST/R-PARA step 4 (two
+Process-integration bullets, "Several energies on one tool" and "Tilt, channelling and shadowing
+of wells", were over the per-chunk word budget; each fixed with a continuation paragraph inside
+the same bullet, matching page 10's "Zero tilt for source/drain" pattern). R-RELATED (8
+ungrouped bullets → 4 grouped: Category/Machines/Materials/Indexes). R-CAPTION (the one new
+table).
+
+**A second quote-capitalisation near-miss, avoided.** The "Tilt, channelling…" bullet originally
+joined two quotations with "and", the second beginning lowercase ("low angle quad implants…").
+Rather than promote it to sentence-initial position (which would force a capital letter and
+trigger `LOST quotes`), it was split off with the lead-in "Similarly, " before the still-lowercase
+quote — the same fix pattern used on page 9 (`hdp-cvd.md`), applied proactively this time.
+
+**A number_order regroup fixed by moving a bare number into the Model cell.** The R-MODELS
+conversion initially produced `LOST number_order: ('1986', '1990', '1994', '300', '1998')` because
+the source's "...the HE3 for 300 mm (1998)" has 300 before 1998, but the table's fixed column
+order (Model, Year, Published figures) put the Year 1998 before the Published-figures text "for
+300 mm". Fixed by moving "(300 mm)" into the Model cell itself (`HE3 (300 mm)`), so the row now
+emits 300 before 1998, and `--allow-regrouped` downgrades it to an informational REGROUPED with
+the full digit run confirmed contiguous elsewhere in the table.
+
+`check_preserved.py --base 85f781e5 --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 (`about`, `SKY130`) and the one REGROUPED number_order tuple above (verified by hand
+as the same five digits in the same order, split across the table).
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 1 (intro/quick-facts, no overflow), 4
+(10-row Representative-models table, wraps cleanly including the two-line "HE3 (300 mm)" cell)
+and 7 (Process-integration bullets and grouped Related pages) read well.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
