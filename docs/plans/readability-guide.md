@@ -924,8 +924,9 @@ uses on 42 pages).
 `## Representative materials and grades` (material pages) section contains no line starting with `| `.
 
 **Do.**
-1. One row per model or grade. Machine pages: `Vendor | Model | Year | Type | Published figures`.
-   Material pages: `Material | Source | What the source says` — Source is the supplier, standard,
+1. One row per model or grade. Machine pages: `Vendor | Model | Year | Published figures`. Allow a
+   `Type` column only when the page states the type for every row. Material pages:
+   `Material | Source | What the source says` — Source is the supplier, standard,
    patent or paper the page names for that clause, `—` when the prose names none. When every Source
    cell would be `—`, drop the column (`Material | What the sources say`). Note text joins the last
    cell after a semicolon, with its own marker. One source per row: a standard and a supplier named in
@@ -935,6 +936,7 @@ uses on 42 pages).
 4. Sentences that fit no column — litigation, "still used in 2014", "no vendor description was
    retrieved" — stay as a short paragraph under the table, unchanged.
 5. Wrap the table per R-CAPTION.
+6. Shoot at 400 px. If it scrolls, merge Vendor and Model into one column joined by a space.
 
 **Example** — `docs/machines/duv-krf-stepper.md:144`.
 
@@ -952,13 +954,13 @@ After:
 
 ```
 :::{table} Representative KrF exposure tools of the 200 mm era (figures as each source gives them)
-:widths: 12 20 8 12 48
+:widths: 16 18 8 58
 
-| Vendor | Model | Year | Type | Published figures |
-|---|---|---:|---|---|
-| ASML | PAS 5000/70 | 1991 | stepper | NA 0.42[^kato-2007] |
-| ASML | PAS 5500/500 | 1997 | scanner | "a resolution of 0.22µm, with 96wph throughput (200mm)"[^kato-2007] |
-| ASML | PAS 5500/350C | — | stepper | "a Deep UV stepper for 0.15-µm applications and beyond"[^asml-pas5500-350c] |
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| ASML | PAS 5000/70 | 1991 | its first KrF stepper, NA 0.42[^kato-2007] |
+| ASML | PAS 5500/500 | 1997 | its first step-and-scan tool, "a resolution of 0.22µm, with 96wph throughput (200mm)"[^kato-2007] |
+| ASML | PAS 5500/350C | — | "a Deep UV stepper for 0.15-µm applications and beyond"[^asml-pas5500-350c] |
 :::
 ```
 
