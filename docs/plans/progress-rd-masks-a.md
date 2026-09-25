@@ -108,7 +108,37 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   the formula as several words; about 35 with it as one); "Plates of this size …" (49; see above); the
   quick-facts Exposure class cell (26 words; its words are not in the body, so R-QUICKFACTS 2 cannot
   shorten it). Before → after: paragraphs > 100 words 11 → 0, list items > 60 1 → 0, sentences > 45
-  17 → 2, cells > 25 1 → 1.
+  22 → 2, cells > 25 1 → 1.
 * **Open question 1** keeps its markers where the base had them: the split is at its semicolon only, so
   `pdk-05`, `pdk-03`, `pdk-periph` and `pdk-07` stay after "construction" as before.
+* **Content problems for the owner:** none found.
+
+### 2. capm — done
+
+* **Rules applied.** R-INTRO (intro 195 → 54 words; first sentence split at its colon; "It is a device
+  mask …" and "Its public record is uneven …" moved to the top of `## What the mask defines`, "It" →
+  "The mask"); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST (test-tile structures, five fragment
+  bullets, closing marker on the lead-in); R-RELATED; R-H3 (Exposure class, Mask errors and the plate,
+  Why the plate CD matters, Reflective substrate, Pattern transfer, Overlay and charging — no canonical
+  order conflict).
+* **R-PARAMS not applied:** three parameters (`CAPMCD`, `CAPMCDSP`, `MiM_AR`).
+* **Deleted template sentence:** the same "This page gathers what public sources say about the mask
+  itself — …" sentence as on cap2m, word for word. `LOST hedges: 'about'` is its preposition.
+* **Declared additions** (`--allow-added markers`), all repeats on split sentences: `pdk-periph` (the
+  function / twelve-rules sentence; "and publish" → "They publish"), `pdk-errors` (*Error Messages*
+  sentence), `pdk-07` (*Device Details* sentence; "it gives" → "The page gives"), `pdk-06` ×3 (Table C3 /
+  C4b / F2b / "In that row" — the base sentence carried one `pdk-06` at its end), `mask-renders` (render
+  sentence), `pdk-05` and `steps-sheet` ("A plate for an unmarked entry" split at its semicolon), a
+  second `steps-sheet` with "(our comparison)" ("Plate number"), `pdk-03` (Table 2 / Table 7 sentence
+  split at its semicolon).
+* **Marker coverage.** Flags read; all are clauses that had no marker of their own in the base, or the
+  test-tile items under a lead-in marker.
+* **Over the caps after the pass (5):** the formula sentence under Exposure class (50 by the script);
+  "At 4× a 2 µm plate is 8 µm on the reticle … sizing the data" (63: the reading and its evidence are
+  one sentence joined by a colon; a split would strand the reading, as on cap2m); "The step page puts a
+  0.1 µm bias …" (46, the script counts "40 µm × 40 µm" as five words); "For the plate the decisive
+  published figures …" (47; splitting it would need "The plate is", which turns a figure into a claim
+  about the plate); the quick-facts Exposure class cell (34; its words are not in the body) and the
+  x.22 rule-text cell (26, a quotation). Before → after: paragraphs 12 → 0, items 2 → 0, sentences
+  20 → 4, cells 2 → 2.
 * **Content problems for the owner:** none found.
