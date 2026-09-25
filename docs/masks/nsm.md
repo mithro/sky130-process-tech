@@ -3,20 +3,9 @@
 
 The nitride seal mask is the {term}`reticle` of the one opening in
 SKY130's step list that is etched after the last metal and before the
-passivation nitride: on the {ref}`NSM <step-165>` page's reading, the
+passivation nitride. On the {ref}`NSM <step-165>` page's reading, the
 resist printed through it at step 165 is opened in a ring at least 3 µm
-wide along the edge of every die, the {ref}`NSME <step-166>` etch cuts
-the dielectric there, and the nitride of {ref}`NTSD <step-167>` then
-lines the opening. The PDK names the mask and its layer but describes
-its function only as "Defines Nitride Seal Mask (FIXME)", so what the
-opening is for, and how deep it goes, are readings of the step pages. Its
-plate record has one anomaly: the process-steps sheet gives the MPW-6
-plate a number different from that of the other seven runs. This page
-gathers what public sources say about the mask itself — its PDK entry and
-layers, the plates the process-steps sheet records for the MPW runs,
-what the public renders of those runs show, the lithography it needs and
-the rules that constrain it. How the step is performed is on the step
-page; every mask is indexed on the {ref}`masks index <masks-index>`.
+wide along the edge of every die.
 
 | | NSM — Nitride Seal Mask |
 |---|---|
@@ -33,21 +22,41 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 39, 40, 40, 40, 40, 40, 40, 40[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-nsm-steps>` |
 
+:::{seealso}
+How the step is performed is on the step
+page; every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`NSM <step-165>` page's reading, the {ref}`NSME <step-166>` etch cuts
+the dielectric in the ring, and the nitride of {ref}`NTSD <step-167>` then
+lines the opening. The PDK names the mask and its layer but describes
+its function only as "Defines Nitride Seal Mask (FIXME)", so what the
+opening is for, and how deep it goes, are readings of the step pages. Its
+plate record has one anomaly: the process-steps sheet gives the MPW-6
+plate a number different from that of the other seven runs.
 
 The PDK names the mask three times — "Nitride Seal Mask, NSM" in
 `masks.csv`, "Nitride seal mask" for both `cnsm` and `nsm` in
 `gds_layers.csv`, and the function line of the `nsm` rule set, "Defines
 Nitride Seal Mask (FIXME)" — and describes it nowhere.[^pdk-05][^pdk-06][^pdk-periph]
-The rules place the layer. Its minimum width is 3.000 µm (nsm.1) and
-spacing 4.000 µm (nsm.2); an `NSM_keepout`, which Table C3 of the
-*Layers Reference* defines as "nsm.dg OR nsm.mk", must be 1.000 µm from
-diffusion, tap, poly, local interconnect, metals 1 to 5 and their mask
-layers, with cells named "nikon\*" and the "diff ring inside
-areaid.sl" exempted (nsm.3); and the same device and wiring layers must
-be enclosed by the frame boundary `areaid.ft` by 3.000 µm and kept
-3.000 µm from the die area `areaid.dt` (nsm.3a,
-nsm.3b).[^pdk-periph][^pdk-06] Table 7 of *Criteria & Assumptions* gives
+
+The rules place the layer:[^pdk-periph]
+
+* its minimum width is 3.000 µm (nsm.1) and
+  spacing 4.000 µm (nsm.2)
+* an `NSM_keepout`, which Table C3 of the
+  *Layers Reference* defines as "nsm.dg OR nsm.mk",[^pdk-06] must be 1.000 µm from
+  diffusion, tap, poly, local interconnect, metals 1 to 5 and their mask
+  layers, with cells named "nikon\*" and the "diff ring inside
+  areaid.sl" exempted (nsm.3)
+* the same device and wiring layers must
+  be enclosed by the frame boundary `areaid.ft` by 3.000 µm and kept
+  3.000 µm from the die area `areaid.dt` (nsm.3a,
+  nsm.3b)
+
+Table 7 of *Criteria & Assumptions* gives
 the two keep-outs as criteria, "Keepout of active, poly, li and metal to
 NSM (TCS-2253)" of 1 (`NSMKeepout`) and "3 um keepout of active, poly, li
 and metal to areaid.dt/areaid.ft (TCS-2253)" of 3 (`NSMKeepout_3um`), in
@@ -60,17 +69,24 @@ The {ref}`NSM <step-165>` page reads the published seal-ring cell
 `advSeal_6um_gen` of Efabless's caravel repository, which draws a 6 µm
 `areaid.sl` band and inside it a 5 µm `nsm` band over four 0.3 µm
 diffusion rings, with no poly, local interconnect or metal
-rings.[^caravel-sealring] From the rules and that layout it reads `NSM`
+rings.[^caravel-sealring]
+
+From the rules and that layout the page reads `NSM`
 as a continuous ring-shaped opening along the die edge, in a band whose
-only drawn device layer is the seal ring's diffusion, and the purpose of
+only drawn device layer is the seal ring's diffusion (inferences on those
+pages). It reads the purpose of
 the opening as a path for the passivation nitride to seal the edge of
-the dielectric stack; the {ref}`NSME <step-166>` page describes a deep
+the dielectric stack (inferences on those pages).
+
+The {ref}`NSME <step-166>` page describes a deep
 etch towards the seal ring's silicon and a stop on the local-interconnect
 nitride as two readings, and leaves the depth open (inferences on those
 pages). The step pages compare the construction with a Siemens and IBM
 patent on crack stops in the dicing channel and a Zeevo seal-ring patent
 that shows a moisture path through a passivation
-oxide,[^pat-crackstop-ibm][^pat-sealring-zeevo] and with a
+oxide.[^pat-crackstop-ibm][^pat-sealring-zeevo]
+
+The step pages compare the construction with a
 GlobalFoundries patent that may still be in force, in the collapsed note
 below this paragraph. Comizzoli et al. reviewed the corrosion of
 electronic materials and devices,[^comizzoli-1986] and Peck gave a model
@@ -85,11 +101,17 @@ patent on chip edge seals etched through the
 dielectrics.[^pat-edgeseal-gf]
 :::
 
-The PDK's general rules add what a seal ring is allowed to be: `areaid.sl`
-"must not overlap tap, poly, li1 and metX" (x.23c), and "areaid:sl must
-not overlap li1 and metX for pcell "advSeal_6um"" (x.23e); the
-""advSeal_6um" pcell must overlap diff" (x.26); and "Lower left corner of
-the seal ring should be at origin i.e (0,0)" (x.19).[^pdk-periph] Table
+The PDK's general rules add what a seal ring is allowed to be:[^pdk-periph]
+
+* `areaid.sl`
+  "must not overlap tap, poly, li1 and metX" (x.23c), and "areaid:sl must
+  not overlap li1 and metX for pcell "advSeal_6um"" (x.23e)
+* the
+  ""advSeal_6um" pcell must overlap diff" (x.26)
+* "Lower left corner of
+  the seal ring should be at origin i.e (0,0)" (x.19)
+
+Table
 F2b, the mask generation table, has no `NSM` column, and Table F4 of the
 *Summary of Key Periphery Rules* no `nsm` row, so the PDK ties the mask to
 no device.[^pdk-06][^pdk-summary] The mask does not define the films it
@@ -104,41 +126,50 @@ dielectrics beneath), the nitride that lines the opening
 
 `gds_layers.csv` has one mask-level layer for this mask, `cnsm` with
 purpose `mask` at 22:0 ("Nitride seal mask"), and no `drawing`, `mask
-add`, `mask drop` or `waffle drop` purpose; layer number 22 also carries
+add`, `mask drop` or `waffle drop` purpose. Layer number 22 also carries
 the `cfom` drawing, mask add, mask drop and waffle drop purposes and the
 `fom` dummy purpose ({ref}`masks-index`). The drawn layer is `nsm` at
 61:20.[^pdk-06] The pairing rests on the identical descriptions, as on the
 {ref}`masks index <masks-index>`, and the PDK publishes no operation that
-turns `nsm` into the plate. Rule x.15a confines "Drawn compatible, mask,
+turns `nsm` into the plate.
+
+Rule x.15a confines "Drawn compatible, mask,
 and waffle-drop layers" to test modules, the space "inside areaid:sl
 (i.e., between the outer and inner areaid:sl edges, but not in the die)"
-and the frame (flag P),[^pdk-periph] so `cnsm` shapes may sit in the seal
-ring itself, and a design draws `nsm` (our reading of x.15a); with no add
+and the frame (flag P).[^pdk-periph] So `cnsm` shapes may sit in the seal
+ring itself, and a design draws `nsm` (our reading of x.15a). With no add
 or drop purpose, rule x.9's "serifs" have no `cnsm` layer to sit on; the
 first x.9 row exempts the seal-ring cell's `cfom` mask-drop shapes and
 0.3 µm die-edge diffusion rings, the rings the caravel cell draws under
 its `nsm` band (our reading).
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance criteria
-for GDS data", repeats nsm.1 and nsm.2 ("3 min. width of nsm", "4 min.
+for GDS data".[^pdk-errors] It repeats nsm.1 and nsm.2 ("3 min. width of nsm", "4 min.
 spacing/notch of nsm") and expands nsm.3 into a pair of checks per layer,
 for example "1 min. spacing of met5_not_NSM3_exempt & nsm OR NSMmk" and
 "met5_not_NSM3_exempt must not overlap nsm OR NSMmk", and nsm.3a and nsm.3b
-into checks against "frameBndr" and "dieCut".[^pdk-errors] It also checks
+into checks against "frameBndr" and "dieCut".[^pdk-errors]
+
+The page also checks
 "2 min. spacing of moduleCutAREA & q0nsmnotBuildSpace" (x.12a), "nsm
 drawn layer cannot straddle areaid:ModuleCut" (scribe.7) and "6 min.
-width of SEALID" (x.28, which the periphery rules give as "N/A"), and it
+width of SEALID" (x.28, which the periphery rules give as "N/A").[^pdk-errors][^pdk-periph] It
 names a mask-data layer `NSMmk` in the grid, octagonal-edge and x.15a
 checks and in two checks named `cnsm.nikon`, "NSMmk in the nikon cross
 has the wrong polarity" and "NSMmk is missing from the nikon cross in the
-layout".[^pdk-errors][^pdk-periph] The page does not say what the "nikon
+layout".[^pdk-errors]
+
+The page does not say what the "nikon
 cross" is. In the caravel seal-ring cell a sub-cell named
 `nikon_sealring_shape`, placed in each corner, draws inside a 4 µm square
 a cross of three rectangles, 2.4 µm across with 0.5 µm arms, on `cnsm`
-22:0 and 23 other mask-level layers, and the square, with its corners
+22:0 and 23 other mask-level layers (our reading of the GDS
+file).[^caravel-sealring] It draws the square, with its corners
 cut at 45°, less the cross on seven more, among them `cpdm` 37:0 (our reading of the GDS
-file).[^caravel-sealring] We read that sub-cell as a "nikon cross" of the
+file).[^caravel-sealring]
+
+We read that sub-cell as a "nikon cross" of the
 kind the checks name (inference from the names); the exemption of cells
 named "nikon\*" in nsm.3 fits that reading. None of this states the tone
 of the plate ({ref}`mask-mm5`).
@@ -149,9 +180,11 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `NSM` the site renders layer 61:20 (`nsm`)
 alone, with no Boolean expression, no fill layer, no info text and no
-note, on all eight runs; its mask record gives the mask-level layer
-22:0.[^mask-renders] The layer is the one this reference pairs with the
-mask; both choices derive from the same public files, so the agreement is
+note, on all eight runs.[^mask-renders] Its mask record gives the mask-level layer
+22:0.[^mask-renders]
+
+The layer is the one this reference pairs with the
+mask. Both choices derive from the same public files, so the agreement is
 no independent confirmation, and the site's choice is one public
 derivation from the drawn data, not SkyWater's mask-generation recipe
 ({ref}`masks-derivations`). The sheet's "Run Mask IDs" row for `NSM` has
@@ -163,11 +196,15 @@ do. Every die that carries any carries exactly 36
 shapes.[^mask-renders] We read the 36 shapes as a layout common to the
 dies rather than to the projects (inference), as the
 {ref}`DNM mask page <mask-dnm>` reads its repeated counts; the site does
-not say what they are. The number equals our count of polygons on
+not say what they are.
+
+The number equals our count of polygons on
 `nsm` 61:20 in the caravel seal-ring cell, nine in each of its four
 corner sub-cells,[^caravel-sealring] which fits, but does not show, a
 seal ring common to the dies (our comparison). The `nikon_sealring_shape`
-crosses sit on 22:0, which the site does not render. The site states the
+crosses sit on 22:0, which the site does not render.
+
+The site states the
 limits of its images: "These are renders of *drawn* data, not photomask
 artwork: reticle pitch, 4x reduction, mirroring and the frame features
 the fab adds are not modelled."[^mask-renders] The frame outside the
@@ -197,7 +234,9 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 | MPW-8 | `5CS8017AC` | `S8017AA007A` |
 
 * **MPW-6.** The MPW-6 plate ID is `S8014AA616A`, where every other run
-  has `007`; the sheet does not explain the difference. `616` is higher
+  has `007`; the sheet does not explain the difference.
+
+  `616` is higher
   than any other plate number in the tab and `007` lower, and no other
   mask has more than one number ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
   The MPW-6 renders show the same 36 `nsm` shapes on all 40 dies as the
@@ -217,36 +256,45 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`NSM <step-165>` page gives
+### Exposure class
+
+The {ref}`NSM <step-165>` page gives
 {math}`k_1 = 3 \times 0.6 / 0.365 \approx 4.9` on an i-line tool with an
 assumed NA of 0.6, "far above any resolution limit", and infers an i-line
 exposure, quoting ASML's statement that older systems "migrate to the
-lithography of choice for less critical layers";[^asml-30] the
+lithography of choice for less critical layers".[^asml-30] The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" but
 assigns no layer to them.[^skw-01]
 
-**The plate.** Wong et al. found that the mask error factor "is unity for
+### The plate
+
+Wong et al. found that the mask error factor "is unity for
 large features, but increases rapidly when the critical dimension (CD) is
-less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998] at
+less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998] At
 365 nm and NA 0.6 that is about 0.30 µm (our arithmetic), a tenth of the
 3 µm ring, so plate CD errors would print at their own size (inference).
+
 At 4× a 3 µm ring is 12 µm wide on the plate (our arithmetic), a feature
 within reach of the laser writers and wet-etched chrome that the CAPM
-and VIM4 mask pages discuss: a laser writer of the ALTA family addressed
+and VIM4 mask pages discuss. A laser writer of the ALTA family addressed
 "the needs of maskmakers in the 180 nm and 150 nm technology
 nodes",[^morgante-2000] and chrome masks "have traditionally been wet
-etched".[^buck-1994] On the {ref}`NSME <step-166>` page's estimate the
+etched".[^buck-1994]
+
+On the {ref}`NSME <step-166>` page's estimate the
 ring is about 0.5 % of a die, so on the dark-field reading the plate is
 almost entirely chrome (inference). Hochmuth, Ruhl and Coleman found that
 with chrome dry etch "the deviation of the CD from the target value is a
 function of the chrome loading on the plate";[^hochmuth-1999] whether
 that applies to this plate is not public.
 
-**Resist.** The {ref}`NSM <step-165>` page reads a positive DNQ/novolac
+### Resist and tone
+
+The {ref}`NSM <step-165>` page reads a positive DNQ/novolac
 i-line resist, the chemistry of Dammel's text,[^dammel-1993] thick enough
 to cover the 1.26 µm metal-5 steps[^pdk-04] and to survive a dielectric
-etch that may be several micrometres deep, and cites a TSMC patent on
+etch that may be several micrometres deep. It cites a TSMC patent on
 etching fuse windows through a passivation and several inter-metal
 dielectrics.[^pat-fusewin-tsmc] The resist is coated over the thin
 {ref}`NFUSOX <step-164>` oxide and the full metal-5 topography, so coating
@@ -254,7 +302,16 @@ uniformity and swing effects over topography matter (the step page's
 reading). SkyWater's resist is not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
+### Overlay and alignment
+
+The 1.000 µm keep-out of nsm.3 is, on the
+{ref}`NSM <step-165>` page's reading, the alignment budget, and it reads
+the alignment as to the metal-5 or earlier frame marks; the PDK does not
+say what the keep-out allows for.[^pdk-periph]
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
 transferred by {ref}`NSME <step-166>`, a fluorocarbon dielectric etch of
 unknown depth on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
@@ -262,11 +319,6 @@ with the resist strip and clean treated as part of that step. The open
 area is small, which the NSME page reads as making optical-emission
 endpoint weak; Wodecki describes endpoint detection on low-open-area
 dielectric etches.[^wodecki-1999]
-
-**Overlay.** The 1.000 µm keep-out of nsm.3 is, on the
-{ref}`NSM <step-165>` page's reading, the alignment budget, and it reads
-the alignment as to the metal-5 or earlier frame marks; the PDK does not
-say what the keep-out allows for.[^pdk-periph]
 
 (mask-nsm-steps)=
 ## Steps that use this mask
@@ -299,6 +351,8 @@ flows", P "Rule applies to periphery only (outside areaid.ce). A
 corresponding core rule may or may not exist." and NC "Rule not checked by
 DRC. It should be used as a guideline only."[^pdk-periph]
 
+:::{table} The `nsm` rules and the general rules on the seal ring and on mask data, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | nsm.1 | "Min. width of nsm" | 3.000 µm |
@@ -316,14 +370,23 @@ DRC. It should be used as a guideline only."[^pdk-periph]
 | x.23e | "areaid:sl must not overlap li1 and metX for pcell "advSeal_6um"" | N/A |
 | x.26 | ""advSeal_6um" pcell must overlap diff" | — |
 | x.28 | "Min width of areaid.sl" | N/A |
+:::
 
-Table 2 of *Criteria & Assumptions* repeats the width and space as
-`NSMCD` 3 and `NSMCDSP` 4, and Table 7 gives `NSMKeepout` 1 and
-`NSMKeepout_3um` 3, in its column headed "space", and a "Minimum scribe
-width" of 50 (`scribew`) in its column headed "CD"; Table 4's "Minimum
-Space and Overlap" block, headed "Value (um)", gives a "Bowing of
-rectangular contact (per edge) -- seal ring sizing" of 0.015
-(`TBOWINGSEAL`).[^pdk-03] The Error Messages page gives the seal-ring
+*Criteria & Assumptions* repeats the width and space in Table 2 and gives
+the following in Tables 7 and 4:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask
+| Parameter (table) | Published description | Value |
+|---|---|---:|
+| `NSMCD` (Table 2) | width | 3 |
+| `NSMCDSP` (Table 2) | space | 4 |
+| `NSMKeepout` (Table 7) | "Keepout of active, poly, li and metal to NSM (TCS-2253)", in its column headed "space" | 1 |
+| `NSMKeepout_3um` (Table 7) | "3 um keepout of active, poly, li and metal to areaid.dt/areaid.ft (TCS-2253)", in its column headed "space" | 3 |
+| `scribew` (Table 7) | "Minimum scribe width", in its column headed "CD" | 50 |
+| `TBOWINGSEAL` (Table 4) | "Bowing of rectangular contact (per edge) -- seal ring sizing", in its "Minimum Space and Overlap" block, headed "Value (um)" | 0.015 |
+:::
+
+The Error Messages page gives the seal-ring
 identifier a width of 6 (x.28), where the periphery rules print
 "N/A".[^pdk-errors][^pdk-periph] For the plate the decisive figures are a
 3.000 µm minimum ring on 4.000 µm spaces, a 7 µm pitch (our arithmetic
@@ -331,23 +394,22 @@ from nsm.1 and nsm.2), kept 1.000 µm from all wiring.
 
 ## Related pages
 
-* {ref}`NSM <step-165>` and {ref}`NSME <step-166>` — the mask step and
+* **Steps.** {ref}`NSM <step-165>` and {ref}`NSME <step-166>` — the mask step and
   the ring etch; {ref}`NFUSOX <step-164>` — the oxide it is printed on;
   {ref}`NTSD <step-167>` — the nitride that lines the opening.
-* {ref}`mask-mm5` — the metal mask printed before it, whose `cmm5.nikon`
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
+  and etch categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that
+  transfers the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-mm5` — the metal mask printed before it, whose `cmm5.nikon`
   checks match this mask's; {ref}`mask-pdm` — the pad mask printed after
   the nitride; {ref}`mask-dnm` — the repeated-count reading of the
   renders.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders, and the
   plate-number anomaly of MPW-6.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-dielectric` — the etch class that
-  transfers the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
-  and etch categories.
 
 ## References
 

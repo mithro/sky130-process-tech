@@ -110,3 +110,55 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   as several words); the quick-facts Polarity cell (41; mask quick facts are left alone, R-QUICKFACTS 4). Before →
   after: paragraphs 10 → 0, items 1 → 0, sentences 21 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 2. nsm — done (page with two in-force notes)
+
+* **Rules applied.** R-INTRO (194 → 56 words); R-PARAMS (three columns); R-CAPTION (rule table,
+  parameter table); R-PARA, R-SENTENCE; R-LIST (the `nsm` rules under "The rules place the layer:", the
+  general seal-ring rules — markers on the lead-ins); R-RELATED; R-H3 (Exposure class, The plate,
+  Resist and tone, Overlay and alignment, Pattern transfer).
+* **In-force notes.** Both `{dropdown}` blocks byte-identical (checked with a diff of the fenced blocks
+  against the base). The paragraph carrying the pointer ("… in the collapsed note below this paragraph")
+  still sits directly above its note: the 230-word paragraph was split *before* the pointer sentence,
+  and the pointer sentence ("The step pages compare the construction with a Siemens and IBM patent …,
+  and with a GlobalFoundries patent that may still be in force, …") was split at its comma, the second
+  half given its subject back ("The step pages compare the construction with a GlobalFoundries patent
+  …") and opening the last paragraph before the note. Nothing crossed a fence.
+* **Moved passage (canonical order):** "**Overlay.** The 1.000 µm keep-out of nsm.3 is …" moved, unchanged,
+  above "Pattern transfer" as `### Overlay and alignment`. Neither refers to the other by position.
+* **Intro.** Kept the first sentence up to its colon and "On the NSM page's reading, the resist … along
+  the edge of every die." The rest moved to the top of the body with the hedge repeated ("On the NSM
+  page's reading, the NSME etch cuts the dielectric in the ring, and …"): "there" → "in the ring", the
+  pro-adverb given its noun back, because its antecedent is now above the quick facts.
+* **R-PARAMS.** Six parameters (Tables 2, 7, 4). Descriptions of `NSMKeepout` and `NSMKeepout_3um` are
+  the page's own quotations of them in `## What the mask defines` (two ADDED quotes, shown by the tool
+  as `ADDED identifiers: 'TCS-2253'×2`); "in its column headed "space"/"CD"" and "in its "Minimum Space
+  and Overlap" block, headed "Value (um)"" stay with their rows. Three columns from the start: the
+  `TBOWINGSEAL` description would pass five lines at 400 px with four.
+* **Declared additions** (`--allow-added markers,numbers,refs,hedges,quotes,identifiers`):
+  * markers — `caravel-sealring` (the GDS-reading sentence split at ", and the square"; "(our reading of
+    the GDS file)" repeated with it), `mask-renders` (render sentence), `pdk-errors` ×2 (the Error
+    Messages "describes" sentence; the `NSMmk` sentence split from the x.12a/x.28 one — `pdk-periph`
+    stays with "which the periphery rules give as "N/A"");
+  * numbers — `2` ×2, `3`, `4`, `7` ×3: table numbers in the parameter table and its lead-in;
+  * refs — `step-165` (hedge repeated at the top of the body);
+  * hedge — `our reading` ("(our reading of the GDS file)" repeated);
+  * "(inferences on those pages)" repeated twice more (not a tracked hedge): the base sentence ran from
+    the NSM page's reading of the ring to the NSME page's two depth readings under one closing hedge;
+    it is now three sentences, each ending with it;
+  * quotes — the LOST/ADDED quote pairs `'(x.23e); the'` → `'(x.23e) * the'`, `'(x.26); and'` → `'(x.26) *'`
+    and the table rows are the tool re-pairing quotation marks around the nested `""advSeal_6um"`
+    quotation and the table cells; read by hand, no quotation changed.
+* **LOST lines that are not losses:** `number_order` ('2', '3', '4', '7', '1', '3', '50', '4', '0.015') is
+  the parameter table: values 3, 4, 1, 3, 50, 0.015 in the base order with the base's table numbers.
+* **Marker coverage.** Flags read: list items under lead-in markers, clauses with no marker of their own
+  in the base (the "So `cnsm` shapes …" reading, "It names a mask-data layer …" without `pdk-periph`,
+  the ALTA sentence), and the Table 3 "respectively" pairing of markers after the "Wong" split.
+* **Other edits.** "It also checks" → "The page also checks" (paragraph after a split); "From the rules
+  and that layout it reads" → "… the page reads" (new paragraph); "and the purpose of the opening as"
+  → ". It reads the purpose of the opening as" (subject and verb added at the split).
+* **Over the caps after the pass:** three sentences the script over-counts (the Table 7 keep-out
+  sentence and "It repeats nsm.1 and nsm.2 …", mostly quotations; the Exposure-class formula); five
+  quoted rule-table cells and the quick-facts Polarity cell. Before → after: paragraphs 10 → 0, items
+  1 → 0, sentences 16 → 3, cells 6 → 6.
+* **Content problems for the owner:** none found.
