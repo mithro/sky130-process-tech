@@ -11,13 +11,14 @@
 | **Next step** | {ref}`FILOX <step-011>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** grows a thin thermal oxide lining the trench floor and
   walls before the HDP fill.
 * **Why:** removes etch damage, rounds the trench corners, gives a
   low-defect interface, and doubles as the deep N-well's first
   anneal.
-* **Public numbers:** none published for SKY130; comparable flows use
-  10–30 nm at 900–1100 °C (see Open questions).
+* **Public numbers:** none published for SKY130; figures from
+  third-party patents, 10–30 nm / 900–1100 °C (see Open questions).
 * **Likely SkyWater tool:** Aviza furnace — strong (fleet); inference
   (assignment vs RTP).[^skw-01]
 * **Not public:** the actual SKY130 liner thickness, ambient and
@@ -85,7 +86,7 @@ cannot:
    sides at once, and above about 1000 °C the oxide flows viscously
    enough to relieve the stress that non-planar growth builds up.
 
-   So the sharp top corner of the trench is rounded, reducing the
+   The sharp top corner of the trench is thereby rounded, reducing the
    field crowding that causes the sub-threshold "double hump" and
    gate-oxide thinning at the active edge.[^itrs-01][^rev-01][^txt-01]
    Oxidation on curved surfaces is in fact *retarded* relative to
@@ -108,9 +109,7 @@ cannot:
 
 ## How it is typically performed
 
-:::{note}
-An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:
-:::
+*An industry-generic liner oxidation for a 200 mm, 130 nm-era fab:*
 
 1. **Pre-oxidation clean.** After the resist strip
    ({ref}`DNIS <step-009>`), an {term}`SC-1`/{term}`SC-2` clean and a *short* dilute-HF
