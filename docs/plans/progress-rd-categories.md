@@ -40,9 +40,66 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 - oxidation.md — done
 - test.md — done
 - strip.md — done
-- (remaining four to do: deposition, etch, implant, lithography)
+- implant.md — done
+- (remaining three to do: deposition, etch, lithography)
 
 ## Pages
+
+### implant.md — done
+
+The first page in this batch with a genuine, literal R-COMPARE match: "Implant classes in a 130 nm CMOS
+flow" is 5 bullets of exactly the shape *class (steps): values; explanation*, so it became the named
+`Material | SKY130 steps | Typical chemistry | Why` shape (columns renamed `Implant class | SKY130 steps
+| Species, energy and dose | Note`, per R-COMPARE step 1). Rules applied: intro + quick-facts table
+(Governing relation "LSS theory", the page's own H3 name); R-COMPARE table (5 rows; one row,
+Threshold-adjust, has no step refs in the source, so its steps cell is `—`, not invented); R-LIST four
+times (the "25 implants, in order" sentence; the "two mechanisms" nuclear/electronic stopping sentence;
+the "classified by current and energy" implanter-class sentence — all zero-marker or single-trailing-
+marker passages, safe reformats); R-SENTENCE (the Gaussian peak-concentration sentence); R-COMPARE step 2
+(four consumables lead-ins linked to `dopant-sources`/`hardware-consumables`); R-COMPARE step 3 (Machine
+class column on the 25-row steps table, from the machines index, several rows carrying two classes where
+the index lists both as `primary`); R-CAPTION on the new tables.
+
+**Numeric-preservation design for the R-COMPARE table** (worth recording as a pattern for any later
+review): the guide's four-column shape puts short parallel facts in "Species, energy and dose" and any
+longer explanation in "Note" — and two of the five source bullets carry a quoted or nearly-as-long ITRS
+sentence with its own numbers (`2001`, `0.5`; `2001`, `130`, `51`). Putting a row's dose numbers and its
+own explanation numbers in the **same row** (dose cell, then note cell, left to right) keeps them exactly
+as `check_preserved.py`'s contiguous-run check expects — the tool treats a whole table row as one
+left-to-right sequence. Splitting a bullet's numbers across a table (for the dose) and separate prose
+placed *elsewhere* on the page (for the explanation) — my first attempt — breaks contiguity as soon as
+another row's numbers fall in between; fixed by keeping each row's own explanation with its own row
+(quoted in full in the Note cell) and moving only the number-free connective sentences ("we infer...",
+"the extension and halo implants form...") to a shared paragraph after the table.
+
+Also caught before running any checker: the new table's own header row read "Typical species, energy and
+dose", which would have been a real, undeclarable ADDED hedge (`typical`, matching `HEDGES` in
+`check_preserved.py`) purely from a header label, not a hedge on any fact. Renamed to "Species, energy
+and dose" to avoid manufacturing a hedge out of new UI chrome. Reviewers of the remaining pages: check
+new column headers for this word before running the checker.
+
+`check_preserved.py --base 77f42034 --allow-regrouped --allow-added markers,numbers,refs,identifiers` →
+exit 0. Six `--allow-regrouped` groups confirmed by hand, including the two multi-number table rows
+above; all read back correctly as the same digits, same order.
+
+* **ADDED markers:** `wiki-implant`, `current-2017` (one extra occurrence each) — R-LIST rule 1 repeats
+  (lead-in colon plus the original trailing position).
+* **ADDED numbers:** `25` — Steps-in-SKY130 count (cross-checks the page's own "the SKY130 flow has 25
+  implants" sentence).
+* **ADDED refs:** `machine-high-current-implanter` ×7, `machine-high-energy-implanter` ×8,
+  `machine-medium-current-implanter` ×21 (quick facts + the Machine class column, several rows carrying
+  two classes), `material-dopant-sources` ×4, `material-hardware-consumables` ×1.
+* **ADDED identifiers:** `SKY130` ×2.
+
+Quick-facts derivation: What it does = verbatim fragment of the opening sentence. Steps in SKY130 = 25
+(steps table; matches the page's own count). Tool classes = the three `{ref}` targets in Typical
+equipment. Consumable classes = `dopant-sources` (owns every row this page's "Source gases"/"Solid
+sources"/"Ion-source parts" bullets name). Governing relation = "LSS theory" (the page's own H3 title and
+`{term}`).
+
+Checkers and `-W` build pass. Screenshots (desktop, 400 px) reviewed: the 4-column R-COMPARE table and
+the 4-column steps table both wrap cleanly at 400 px with no horizontal scroll (cells stack tall but stay
+within the column width).
 
 ### strip.md — done
 

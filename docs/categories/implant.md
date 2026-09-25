@@ -1,6 +1,17 @@
 (category-implant)=
 # Ion implantation
 
+Ion implantation puts dopant atoms into the silicon by firing them at
+the wafer as a beam of ions.
+
+| | Ion implantation |
+|---|---|
+| What it does | puts dopant atoms into the silicon by firing them at the wafer as a beam of ions |
+| Steps in SKY130 | 25 |
+| Tool classes | {ref}`High-current <machine-high-current-implanter>`, {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
+| Consumable classes | {ref}`Dopant gases and implant sources <material-dopant-sources>` |
+| Governing relation | LSS theory |
+
 ## What this class of step does
 
 Ion implantation puts dopant atoms into the silicon by firing them at
@@ -25,24 +36,33 @@ is always followed, sooner or later, by an anneal
 ({ref}`category-anneal`) that repairs the lattice damage and moves the
 dopant onto substitutional sites where it is electrically active.
 
-The SKY130 flow has 25 implants. In order: the deep n-well; the
-threshold-adjust, well and drain-extension implants of the various
-transistor flavours; the punch-through-stop and depletion implants
-(which sit among the {term}`SONOS` steps); the n-channel implant; the poly gate
-and {term}`poly resistor` implants; the arsenic tips and boron halos for the
-1.8 V, high-voltage and lightly-doped transistors; and finally the p⁺
-and n⁺ source/drain implants.
+The SKY130 flow has 25 implants, in order:
+
+* the deep n-well;
+* the threshold-adjust, well and drain-extension implants of the
+  various transistor flavours;
+* the punch-through-stop and depletion implants (which sit among the
+  {term}`SONOS` steps);
+* the n-channel implant;
+* the poly gate and {term}`poly resistor` implants;
+* the arsenic tips and boron halos for the 1.8 V, high-voltage and
+  lightly-doped transistors; and
+* finally the p⁺ and n⁺ source/drain implants.
 
 ## Physics and engineering background
 
 ### Stopping and range: LSS theory
 
-An ion entering silicon loses energy by two mechanisms: elastic
-collisions with nuclei (nuclear stopping, {math}`S_n`), which dominate
-at low energy and for heavy ions and which displace lattice atoms; and
-inelastic interaction with electrons (electronic stopping,
-{math}`S_e`), which dominates at high energy and behaves like viscous
-drag, {math}`S_e \propto \sqrt{E}` in the {term}`LSS <LSS theory>` regime. The total range
+An ion entering silicon loses energy by two mechanisms:
+
+* **Nuclear stopping** ({math}`S_n`) — elastic
+  collisions with nuclei, which dominate
+  at low energy and for heavy ions and which displace lattice atoms.
+* **Electronic stopping** ({math}`S_e`) — inelastic interaction with electrons,
+  which dominates at high energy and behaves like viscous
+  drag, {math}`S_e \propto \sqrt{E}` in the {term}`LSS <LSS theory>` regime.
+
+The total range
 is
 
 ```{math}
@@ -64,7 +84,7 @@ N(x) = \frac{\Phi}{\sqrt{2\pi}\,\Delta R_p}
 ```
 
 with peak concentration {math}`N_{\max} \approx 0.4\,\Phi/\Delta R_p`
-for dose {math}`\Phi`; real profiles are skewed (light ions such as
+for dose {math}`\Phi`. Real profiles are skewed (light ions such as
 boron back-scatter and have a deep tail; heavy ions such as arsenic are
 skewed towards the surface) and are fitted with Pearson IV distributions
 or computed by Monte Carlo codes such as
@@ -125,50 +145,35 @@ low-dose implants, and periodically by SIMS profiling.[^txt-01][^current-2017]
 
 ### Implant classes in a 130 nm CMOS flow
 
-The energies and doses given below are typical industry values for the
-node;[^txt-01][^txt-02]
-SKY130's own implant recipes are not public.
+:::{table} Implant classes named on this page; energies and doses are typical industry values for the node, and SKY130's own recipes are not public[^txt-01][^txt-02]
 
-* **Wells and deep wells** (n-well {ref}`NWI <step-018>`, p-well
-  {ref}`PWI <step-027>`, deep n-well {ref}`DNI <step-008>`): phosphorus
-  or boron at hundreds of keV to over 1 MeV, doses of order 10¹²–10¹³
-  cm⁻², from a high-energy implanter. A "retrograde" well whose peak
-  lies below the channel gives latch-up immunity and {term}`punch-through`
-  control; ITRS 2001 notes that "the retrograde well profile must be
-  less than 0.5 times the drain extension depth to improve short channel
-  effects".[^itrs-01] We infer that multiple energies are chained (the
-  "NWI2" and "PWI2" steps) to shape the profile.
-* **Threshold-adjust and channel implants** (low-Vt, high-Vt, channel,
-  punch-through-stop): light doses of order 10¹²–10¹³ cm⁻² of BF₂, B, As
-  or P at tens of keV, placed just under the gate oxide to set
-  {term}`Vt`, from a medium-current implanter.
-* **Poly and resistor implants** ({ref}`P1I <step-050>`, {ref}`PRI
-  <step-053>`, {ref}`UPRI <step-056>`): the gate must be degenerately
-  doped (high 10¹⁵ cm⁻²) to avoid {term}`poly depletion`, whereas precision
-  resistors need lower, carefully split doses to hit a target sheet
-  resistance.
-* **Extensions ("tips") and halos** ({ref}`ASTI <step-065>`, {ref}`BHI
-  <step-066>`): arsenic at a few keV and about 10¹⁴–10¹⁵ cm⁻²
-  self-aligned to the gate edge forms the shallow n-type
-  {term}`extension`; boron (or indium) at a large tilt forms the halo
-  around it. ITRS 2001 gives extension junction depths for the 130 nm
-  node in its Table 51 and treats the p-type boron extension as the most
-  challenging junction.[^itrs-01]
-* **Source/drain** ({ref}`NSDI <step-086>`, {ref}`PSDI <step-082>`):
-  arsenic and boron/BF₂ at several 10¹⁵ cm⁻² and tens of keV, after the
-  {term}`spacer`, from a high-current implanter; these amorphise the surface and
-  set the contact resistance.
+| Implant class | SKY130 steps | Species, energy and dose | Note |
+|---|---|---|---|
+| Wells and deep wells | {ref}`NWI <step-018>`, {ref}`PWI <step-027>`, {ref}`DNI <step-008>` | phosphorus or boron, hundreds of keV to over 1 MeV, 10¹²–10¹³ cm⁻², from a high-energy implanter | ITRS 2001: "the retrograde well profile must be less than 0.5 times the drain extension depth to improve short channel effects".[^itrs-01] |
+| Threshold-adjust and channel | — | BF₂, B, As or P, tens of keV, 10¹²–10¹³ cm⁻², from a medium-current implanter | placed just under the gate oxide to set {term}`Vt` |
+| Poly and resistor | {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>` | gate: degenerately doped, high 10¹⁵ cm⁻²; resistors: lower, split doses | avoid {term}`poly depletion`; hit a target sheet resistance |
+| Extensions ("tips") and halos | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>` | arsenic, a few keV, about 10¹⁴–10¹⁵ cm⁻² (extension); boron or indium at a large tilt (halo) | ITRS 2001 gives extension junction depths for the 130 nm node in its Table 51 and treats the p-type boron extension as the most challenging junction.[^itrs-01] |
+| Source/drain | {ref}`NSDI <step-086>`, {ref}`PSDI <step-082>` | arsenic and boron/BF₂, several 10¹⁵ cm⁻², tens of keV, after the {term}`spacer`, from a high-current implanter | amorphise the surface and set the contact resistance |
+:::
+
+A "retrograde" well whose peak lies below the channel gives latch-up
+immunity and {term}`punch-through` control. We infer that multiple energies
+are chained (the "NWI2" and "PWI2" steps) to shape the well profile;
+the extension and halo implants form the shallow n-type
+{term}`extension`, self-aligned to the gate edge, with the halo around it.
 
 ### Typical implanter classes
 
-Beam-line implanters are classified by current and energy:
-"medium current" tools deliver beam currents between about 10 µA and
-2 mA with serial (one-wafer) end stations and are used for the
-low-dose, tilt-sensitive channel and halo implants; "high current"
-tools deliver up to about 30 mA with batch spinning-disc end stations
-for source/drain and poly implants; and "high energy" tools use a
-radio-frequency linear accelerator or tandem stage to reach 200 keV to
-several MeV for wells.[^wiki-implant][^current-2017]
+Beam-line implanters are classified by current and energy:[^wiki-implant][^current-2017]
+
+* "medium current" tools deliver beam currents between about 10 µA and
+  2 mA with serial (one-wafer) end stations and are used for the
+  low-dose, tilt-sensitive channel and halo implants;
+* "high current" tools deliver up to about 30 mA with batch
+  spinning-disc end stations for source/drain and poly implants; and
+* "high energy" tools use a radio-frequency linear accelerator or
+  tandem stage to reach 200 keV to several MeV for
+  wells.[^wiki-implant][^current-2017]
 
 ## Typical equipment
 
@@ -196,17 +201,17 @@ commercial implanters is given by Current.[^current-2017]
 
 ## Typical consumables
 
-* **Source gases**, supplied in sub-atmospheric (SDS) or dilute
+* **{ref}`Source gases <material-dopant-sources>`**, supplied in sub-atmospheric (SDS) or dilute
   cylinders for safety: boron trifluoride (BF₃) for B⁺ and BF₂⁺,
   phosphine (PH₃) for P⁺, arsine (AsH₃) for As⁺, germane (GeH₄) for
   {term}`pre-amorphisation <pre-amorphisation implant>`, and hydrogen or xenon as
   co-gases.[^wiki-bf3][^wiki-ph3][^wiki-ash3]
-* **Solid sources**: elemental arsenic, phosphorus, antimony or indium
+* **{ref}`Solid sources <material-dopant-sources>`**: elemental arsenic, phosphorus, antimony or indium
   in vaporiser ovens, for species without a convenient gas.
-* **Ion-source parts**: tungsten filaments or indirectly heated
+* **{ref}`Ion-source parts <material-dopant-sources>`**: tungsten filaments or indirectly heated
   cathodes, arc chambers, extraction electrodes and insulators, all
   eroded by the plasma and replaced every few hundred hours.
-* **Beam-line and end-station parts**: graphite or silicon apertures and
+* **{ref}`Beam-line and end-station parts <material-hardware-consumables>`**: graphite or silicon apertures and
   beam stops, Faraday-cup liners, disc pads, clamp rings, and
   wafer-cooling backside gas.
 * **Photoresist** thick enough to stop the ions (a 1 µm resist stops MeV
@@ -216,33 +221,36 @@ commercial implanters is given by Current.[^current-2017]
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 8 | {ref}`DNI <step-008>` | Deep N+ implant |
-| 15 | {ref}`LVTNI <step-015>` | Low Vt NMOS implantation |
-| 18 | {ref}`NWI <step-018>` | N-well implant |
-| 19 | {ref}`NWI2 <step-019>` | NWI2 implant |
-| 20 | {ref}`LVTPI <step-020>` | Low V P-channel implant |
-| 23 | {ref}`PCHI <step-023>` | P-channel implant |
-| 24 | {ref}`PNCHI <step-024>` | P-channel BF2 implant |
-| 27 | {ref}`PWI <step-027>` | P-well implant |
-| 28 | {ref}`PWI2 <step-028>` | PWI2 implant |
-| 31 | {ref}`PWDEI1 <step-031>` | PWDEI1 implant |
-| 32 | {ref}`PWDEI2 <step-032>` | PWDEI2 implant |
-| 37 | {ref}`PTSI <step-037>` | Punch-through stop implant |
-| 38 | {ref}`DEPI <step-038>` | Depletion implant |
-| 45 | {ref}`NCHI <step-045>` | N-channel implant |
-| 50 | {ref}`P1I <step-050>` | Poly1 implant |
-| 53 | {ref}`PRI <step-053>` | PRI implant splits |
-| 56 | {ref}`UPRI <step-056>` | UPRI implant |
-| 65 | {ref}`ASTI <step-065>` | As tip implant |
-| 66 | {ref}`BHI <step-066>` | B halo implant |
-| 69 | {ref}`HVASTI <step-069>` | HV As N-tip implant |
-| 72 | {ref}`LDASTI <step-072>` | LD ASTI implant |
-| 73 | {ref}`LDBHI <step-073>` | LD B halo implant |
-| 82 | {ref}`PSDI <step-082>` | P+ source drain implant |
-| 83 | {ref}`2PSDI <step-083>` | 2nd P+ source drain implant |
-| 86 | {ref}`NSDI <step-086>` | N+ source drain implant |
+:::{table} The twenty-five implant steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 8 | {ref}`DNI <step-008>` | Deep N+ implant | {ref}`High-energy <machine-high-energy-implanter>` |
+| 15 | {ref}`LVTNI <step-015>` | Low Vt NMOS implantation | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 18 | {ref}`NWI <step-018>` | N-well implant | {ref}`High-energy <machine-high-energy-implanter>` |
+| 19 | {ref}`NWI2 <step-019>` | NWI2 implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
+| 20 | {ref}`LVTPI <step-020>` | Low V P-channel implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 23 | {ref}`PCHI <step-023>` | P-channel implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 24 | {ref}`PNCHI <step-024>` | P-channel BF2 implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 27 | {ref}`PWI <step-027>` | P-well implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
+| 28 | {ref}`PWI2 <step-028>` | PWI2 implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
+| 31 | {ref}`PWDEI1 <step-031>` | PWDEI1 implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
+| 32 | {ref}`PWDEI2 <step-032>` | PWDEI2 implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
+| 37 | {ref}`PTSI <step-037>` | Punch-through stop implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 38 | {ref}`DEPI <step-038>` | Depletion implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 45 | {ref}`NCHI <step-045>` | N-channel implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 50 | {ref}`P1I <step-050>` | Poly1 implant | {ref}`High-current <machine-high-current-implanter>` |
+| 53 | {ref}`PRI <step-053>` | PRI implant splits | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-current <machine-high-current-implanter>` |
+| 56 | {ref}`UPRI <step-056>` | UPRI implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 65 | {ref}`ASTI <step-065>` | As tip implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-current <machine-high-current-implanter>` |
+| 66 | {ref}`BHI <step-066>` | B halo implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 69 | {ref}`HVASTI <step-069>` | HV As N-tip implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 72 | {ref}`LDASTI <step-072>` | LD ASTI implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 73 | {ref}`LDBHI <step-073>` | LD B halo implant | {ref}`Medium-current <machine-medium-current-implanter>` |
+| 82 | {ref}`PSDI <step-082>` | P+ source drain implant | {ref}`High-current <machine-high-current-implanter>` |
+| 83 | {ref}`2PSDI <step-083>` | 2nd P+ source drain implant | {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-current <machine-high-current-implanter>` |
+| 86 | {ref}`NSDI <step-086>` | N+ source drain implant | {ref}`High-current <machine-high-current-implanter>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
