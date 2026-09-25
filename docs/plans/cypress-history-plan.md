@@ -68,6 +68,25 @@ The pages are drafted once the evidence exists. The provisional list:
 | `stackups.md` | Stackups of all the technologies side by side |
 | `s8-lineage.md` | How the earlier technologies led to S8 and SKY130, with evidence and open questions |
 
+## Checks (agreed with the readability coordinator, 2026-09-25)
+
+* `tools/check_history.py` imports `check_refs.check()` and
+  `inline_link_problems()` and runs them on `docs/history/*.md` against a
+  history-only inventory, `docs/history/sources.md` (same entry layout as
+  `public-sources.md`: anchor line, bibliographic sentence, URL, what it
+  gives, then Tier and used-on). It also checks the claims matrix
+  `data/history/claims.yaml`: every claim needs two independent sources,
+  or is marked single-source in the prose the way
+  `readability-guide.md` marks inferences. It has a `--selftest`, sits in
+  the `pre_build` list of `.readthedocs.yaml`, and appears in both check
+  lists of `agent-briefs.md`.
+* `tools/check_links.py` must pick up the history pages' URLs, and
+  `tools/fix_reading_list_links.py` must convert their reading-list
+  bullets. Run both on the pages and confirm it.
+* `tools/check_inforce.py` scans all of `docs/`. Any patent it does not
+  treat as certainly expired goes in a collapsed note, as on the other
+  pages.
+
 ## Workflow
 
 1. Three research agents (Sonnet), one worktree and branch each
