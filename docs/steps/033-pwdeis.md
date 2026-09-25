@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`PWDEI2 <step-032>` |
 | **Next step** | {ref}`RTAI <step-034>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the thick `PWDEM` resist after the two
+  drain-extended P-well implants and cleans the wafer for the
+  {ref}`RTAI <step-034>` anneal.
+* **Why:** photoresist and metal residue cannot go into an anneal
+  chamber; the clean must reach the "pre-furnace" level of
+  {ref}`DNIS <step-009>`.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP / Iridia RF microwave /
+  Mattson Aspen II ashers — strong (existence); inference
+  (assignment).[^skw-01]
+* **Not public:** the strip and pre-anneal-clean recipe, and whether
+  the pad oxide is kept through the anneal (→ Open questions).
+:::
+
 ## What this step is
 
 `PWDEIS` removes the thick photoresist patterned at
@@ -49,7 +66,7 @@ organic or metallic residue would be baked into the silicon.
 
 ## Why this step exists
 
-Photoresist cannot go into an anneal chamber: at the ~1000 °C of a
+Photoresist cannot go into an anneal chamber. At the ~1000 °C of a
 typical activation anneal it would carbonise, contaminate the chamber
 and leave the wafer covered in particles, and the mobile-ion and organic
 contamination it carries would be driven into the channels that every
@@ -57,24 +74,28 @@ implant of this module has just defined. The strip must therefore remove
 all resist and its crust — "transformed into a carbonized crust that is
 difficult to remove"[^pat-strip-tsmc] — without
 {term}`popping`,[^pat-strip-mosel] and the clean must take off the metals
-sputtered onto the wafer over ten implants. ITRS 2001 treats front-end
-surface preparation as a first-order concern for exactly this
-reason.[^itrs-01] A residue left here would be sealed under the gate
-oxides grown at {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`.
+sputtered onto the wafer over ten implants.
+
+ITRS 2001 treats front-end surface preparation as a first-order concern
+for exactly this reason.[^itrs-01] A residue left here would be sealed
+under the gate oxides grown at {ref}`GOX100 <step-043>` and
+{ref}`LVGOX <step-047>`.
 
 ## How it is typically performed
 
-An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
-130 nm-era fab:
+*An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
+130 nm-era fab:*
 
 1. **Plasma {term}`ash`.** Downstream oxygen plasma with a forming-gas addition;
    a two-stage recipe if the fab runs one for all implant strips — first
    stage "in a low-temperature (<220° C.) environment" with "oxygen and
    nitrogen/hydrogen plasma" until the crust is gone,[^pat-strip-mosel]
-   then a hotter bulk stage. SkyWater's ashers cover this range:
-   "Gasonic PEP … N2, O2, 120C – 270C", "Iridia … H2/N2, 40C-270C",
-   "Mattson Aspen2 … O2, CF4, H2>N2, up to 250C".[^skw-01] The remote
-   plasma keeps charged species off the wafer.[^wiki-ash]
+   then a hotter bulk stage.
+
+   SkyWater's ashers cover this range: "Gasonic PEP … N2, O2, 120C –
+   270C", "Iridia … H2/N2, 40C-270C", "Mattson Aspen2 … O2, CF4,
+   H2>N2, up to 250C".[^skw-01] The remote plasma keeps charged species
+   off the wafer.[^wiki-ash]
 2. **Wet strip.** {term}`SPM` (H₂SO₄:H₂O₂) for residual organics (category page;
    "Sulfuric" on the Akrion Gamma[^skw-01]).
 3. **Full RCA-type clean.** {term}`SC-1` (NH₄OH/H₂O₂/H₂O, 75–80 °C) for
@@ -86,10 +107,12 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 4. **HF or not?** Whether the pad oxide is removed before the anneal is
    a real choice. Keeping it protects the silicon surface during the RTA
    and avoids dopant out-diffusion; removing it now would require a
-   fresh sacrificial oxide before gate oxidation. This reference
-   describes no sacrificial oxidation before {ref}`GOX100 <step-043>`
-   and so treats the pad oxide as *kept* through the anneal (an
-   assumption; see the open question on {ref}`NS19 <step-013>`).
+   fresh sacrificial oxide before gate oxidation.
+
+   The page describes no sacrificial oxidation before
+   {ref}`GOX100 <step-043>` and so treats the pad oxide as *kept*
+   through the anneal (an assumption; see the open question on
+   {ref}`NS19 <step-013>`).
 5. **Rinse, dry, inspect.** Cascade rinse, IPA (Marangoni) or spin dry;
    laser surface scan for particles.
 
@@ -103,17 +126,26 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Machines likely used at SkyWater
 
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave, Mattson Aspen II | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench / FSI Mercury | strong (existence); inference (assignment) |
+| KLA-Tencor SP1 | medium |
+
 * **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**.[^skw-01]
-  Strength: **strong** for existence; assignment is an inference.
-* **Akrion Gamma batch wet bench** ("Sulfuric, SC1")[^skw-01] for the
-  SPM/SC-1 steps. Strength: strong for existence.
-* **DNS wet bench / FSI Mercury** ("HF/SC1/SC2")[^skw-01] for the
-  pre-anneal RCA clean. Strength: strong for existence; the SC-2
-  capability is explicitly listed only for these two tools, which makes
-  them the natural pre-anneal clean stations (inference).
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* inference for the assignment.
+* **Akrion Gamma batch wet bench** ("Sulfuric, SC1")[^skw-01]
+  - *Tool exists:* strong for existence, for the SPM/SC-1 steps.
+* **DNS wet bench / FSI Mercury** ("HF/SC1/SC2")[^skw-01]
+  - *Tool exists:* strong for existence, for the pre-anneal RCA clean.
+  - *Runs this step:* the SC-2 capability is explicitly listed only for
+    these two tools, which makes them the natural pre-anneal clean
+    stations (inference).
 * **KLA-Tencor SP1** surface scanner, our reading of "SP1"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -129,13 +161,14 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PWDEI2 <step-032>`; the resist came from
-  {ref}`PWDEM <step-030>` and also masked {ref}`PWDEI1 <step-031>`.
+* Previous: {ref}`PWDEI2 <step-032>`.
 * Next: {ref}`RTAI <step-034>` (the anneal this clean prepares for).
-* Earlier module strips: {ref}`LVTNIS <step-016>`,
-  {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`,
-  {ref}`PWIS <step-029>`; the analogous pre-furnace strip in the
-  isolation module is {ref}`DNIS <step-009>`.
+* Depends on: the resist came from {ref}`PWDEM <step-030>` and also
+  masked {ref}`PWDEI1 <step-031>`.
+* Same category: the earlier module strips
+  {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`,
+  {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`; the analogous
+  pre-furnace strip in the isolation module is {ref}`DNIS <step-009>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -204,12 +237,12 @@ An industry-generic strip-and-pre-anneal-clean sequence for a 200 mm,
 
 ## Open questions
 
-* Whether the pad oxide is retained through {ref}`RTAI <step-034>` or
-  removed here is not stated publicly; this page assumes it is
-  retained.
-* Whether the pre-anneal clean is part of this step or belongs to
-  {ref}`RTAI <step-034>` is unknown.
-* The strip recipe is not public.
+* **Pad oxide retention.** Whether the pad oxide is retained through
+  {ref}`RTAI <step-034>` or removed here is not stated publicly; this
+  page assumes it is retained.
+* **Which step owns the clean.** Whether the pre-anneal clean is part
+  of this step or belongs to {ref}`RTAI <step-034>` is unknown.
+* **Strip recipe.** The strip recipe is not public.
 
 <!-- footnotes -->
 

@@ -678,3 +678,30 @@ hedges, or plain numbers. All other checkers (`check_steps.py`, `check_refs.py`,
 (desktop + 400 px) read cleanly top to bottom: the glance box, the drift-region paragraph
 split, the R-TOOLS sub-bullets, and the relabelled Related-steps/Open-questions bullets all
 render correctly at both widths.
+
+### 033-pwdeis.md — done (no in-force dropdown on this page)
+
+Rules applied: R-PARA/R-SENTENCE (121-word "Why this step exists" paragraph split into two at
+its ITRS/residue seam; its 52-word first sentence split at the colon, landing exactly at the
+45-word cap), R-LIST (the 81-word "Plasma ash" item and 69-word "HF or not?" item each split
+into lead + indented continuation), R-HEDGE step 1 (italic scope lead-in on "How it is
+typically performed"), R-TOOLS (the four "Strength:" bullets under "Machines likely used at
+SkyWater" promoted to a Tool|Evidence recap table plus SkyWater-says/Tool-exists/Runs-this-step
+bullets, since four bullets meets the rule-5 table threshold established on page 016 — the
+first item's inline "[^skw-01]" citation was already page-level so no `SkyWater says:` sub-line
+was needed beyond what the recap table states, matching the model page's own economy), R-RELATED
+(relabelled with `Previous:`/`Next:`/`Depends on:`/`Same category:`/`Category page:`),
+R-OPENQ (bold labels added to all three bullets), R-GLANCE (box inserted last, after the
+quick-facts table, following the pilot's own "strip step" pattern of "Public numbers: none
+published for SKY130" — this page states no SKY130-specific measured number, only generic
+industry ranges and equipment capability quotes).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 1 → 0; list items > 60 words 2 →
+0; sentences > 45 words 1 → 0; table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/033-pwdeis.md`:
+0 undeclared differences — the cleanest pass of the batch so far, no `number_order` stranding
+at all. All other checkers (`check_steps.py`, `check_refs.py`, `check_machines.py`,
+`check_inforce.py`, `gen_index_links.py --check`) pass; `-W` sphinx build clean. Screenshots
+(desktop + 400 px) read cleanly top to bottom, including the new recap table, the R-TOOLS
+sub-bullets, and the relabelled Related-steps/Open-questions sections.
