@@ -136,7 +136,12 @@ def check_file(path: Path, problems: list[str], checked: list[str], missing_cach
         quotes = record["quotes"]
         if not isinstance(quotes, list) or not quotes:
             continue
-        cache_file = find_cache_text(str(rid))
+        cache_file = None
+        if record.get("cache"):
+            candidate = CACHE_ROOT / str(record["cache"])
+            cache_file = candidate if candidate.is_file() else None
+        if cache_file is None:
+            cache_file = find_cache_text(str(rid))
         if cache_file is None:
             missing_cache.append(f"{path.name}:{rid}: no cached text found under {CACHE_ROOT} (looked for */{rid}.txt)")
             continue

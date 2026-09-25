@@ -50,7 +50,7 @@ records:
       CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron Flash technologies.
     location: Item 1, Business, Manufacturing
   - text: >-
-      the Company has converted the focus of its San Jose wafer fabrication
+      The Company has converted the focus of its San Jose wafer fabrication
       plant to research and development. Primary process efforts are
       directed towards developing or enhancing three generations of
       Cypress's core CMOS SRAM technologies, including the Company's
@@ -419,7 +419,7 @@ records:
   sha256: e464d9584e1d2517b2f03093bb21595579a7727378bc19ecdd063f44cc199454
   quotes:
   - text: >-
-      we are simultaneously transferring our 90-nanometer (0.9-micron) technology from
+      We are simultaneously transferring our 90-nanometer (0.9-micron) technology from
       our eight-inch R&D facility in San Jose, California (“Fab 1”) to our eight-inch manufacturing Fab 4 in Minnesota.
     location: "Item 1, Business, Research and development"
   - text: >-
