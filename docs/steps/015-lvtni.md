@@ -159,7 +159,7 @@ below are typical or taken from contemporaneous patents.*
   An LSI Logic patent has the threshold-adjust boron "implanted through
   the sacrificial gate oxide in doses between 1×10¹² and 1×10¹³
   atoms/cm² … at implant energies between 50 and 100
-  keV". That implant is made after the well anneal,
+  keV".[^pat-vt-lsi] That implant is made after the well anneal,
   through a newly grown 200–500 Å sacrificial oxide, not through a pad
   oxide.[^pat-vt-lsi]
 
