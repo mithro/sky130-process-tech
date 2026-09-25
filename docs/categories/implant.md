@@ -9,7 +9,7 @@ the wafer as a beam of ions.
 | What it does | puts dopant atoms into the silicon by firing them at the wafer as a beam of ions |
 | Steps in SKY130 | 25 |
 | Tool classes | {ref}`High-current <machine-high-current-implanter>`, {ref}`Medium-current <machine-medium-current-implanter>`, {ref}`High-energy <machine-high-energy-implanter>` |
-| Consumable classes | {ref}`Dopant gases and implant sources <material-dopant-sources>` |
+| Consumable classes | {ref}`Dopant gases and implant sources <material-dopant-sources>`, {ref}`Hardware consumables <material-hardware-consumables>` |
 | Governing relation | LSS theory |
 
 ## What this class of step does
@@ -148,8 +148,8 @@ low-dose implants, and periodically by SIMS profiling.[^txt-01][^current-2017]
 
 | Implant class | SKY130 steps | Species, energy and dose |
 |---|---|---|
-| Wells and deep wells | n-well {ref}`NWI <step-018>`, p-well {ref}`PWI <step-027>`, deep n-well {ref}`DNI <step-008>` | phosphorus or boron at hundreds of keV to over 1 MeV, doses of order 10¹²–10¹³ cm⁻², from a high-energy implanter. A "retrograde" well whose peak lies below the channel gives latch-up immunity and {term}`punch-through` control; ITRS 2001 notes that "the retrograde well profile must be less than 0.5 times the drain extension depth to improve short channel effects".[^itrs-01] |
-| Threshold-adjust and channel implants (low-Vt, high-Vt, channel, punch-through-stop) | — | light doses of order 10¹²–10¹³ cm⁻² of BF₂, B, As or P at tens of keV, placed just under the gate oxide to set {term}`Vt`, from a medium-current implanter |
+| Wells and deep wells | n-well {ref}`NWI <step-018>`, p-well {ref}`PWI <step-027>`, deep n-well {ref}`DNI <step-008>` | phosphorus or boron at hundreds of keV to over 1 MeV, doses of order 10¹²–⁠10¹³ cm⁻², from a high-energy implanter. A "retrograde" well whose peak lies below the channel gives latch-up immunity and {term}`punch-through` control; ITRS 2001 notes that "the retrograde well profile must be less than 0.5 times the drain extension depth to improve short channel effects".[^itrs-01] |
+| Threshold-adjust and channel implants (low-Vt, high-Vt, channel, punch-through-stop) | — | light doses of order 10¹²–⁠10¹³ cm⁻² of BF₂, B, As or P at tens of keV, placed just under the gate oxide to set {term}`Vt`, from a medium-current implanter |
 | Poly and resistor implants | {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>` | the gate must be degenerately doped (high 10¹⁵ cm⁻²) to avoid {term}`poly depletion`, whereas precision resistors need lower, carefully split doses to hit a target sheet resistance |
 | Extensions ("tips") and halos | {ref}`ASTI <step-065>`, {ref}`BHI <step-066>` | arsenic at a few keV and about 10¹⁴–10¹⁵ cm⁻² self-aligned to the gate edge forms the shallow n-type {term}`extension`; boron (or indium) at a large tilt forms the halo around it. ITRS 2001 gives extension junction depths for the 130 nm node in its Table 51 and treats the p-type boron extension as the most challenging junction.[^itrs-01] |
 | Source/drain | {ref}`NSDI <step-086>`, {ref}`PSDI <step-082>` | arsenic and boron/BF₂ at several 10¹⁵ cm⁻² and tens of keV, after the {term}`spacer`, from a high-current implanter; these amorphise the surface and set the contact resistance |
