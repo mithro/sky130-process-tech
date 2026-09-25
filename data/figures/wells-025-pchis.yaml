@@ -1,0 +1,34 @@
+id: wells-025-pchis
+kind: xsection
+page: docs/steps/025-pchis.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand
+  part of the drawing. After it the resist is gone and the oxide surface is bare across the slice; the
+  N-well and the implanted surface bands are unchanged.
+caption: >-
+  Before, the HVTPM resist after its two implants; after, the resist gone and the oxide bare, with the
+  well and the bands untouched. The page infers that the pad oxide is still present and has to survive
+  as the screen for the implants still to come, so it is drawn in place. The LVTNI band and the liner
+  oxide are drawn faded. Not to scale.
+arrow:
+  title: "PCHIS, step 025"
+  note: "The implanted resist is ashed and stripped, and the wafer is cleaned for the P-well block mask."
+panels:
+  - state_after: "024"
+    title: "Before: the HVTPM resist after PNCHI (step 024); NMOS left, PMOS right"
+    dim_layers: [liner, chn]
+    show_ions: false
+    labels:
+      chp:
+        title: "PMOS channel implants"
+        note: "LVTPI, PCHI and PNCHI (steps 020, 023, 024); not drawn apart"
+        basis: public
+  - state_after: "025"
+    title: "After: resist removed; the N-well and the channel bands stay"
+    dim_layers: [liner, chn]
+    labels:
+      chp:
+        title: "PMOS channel implants"
+        note: ""

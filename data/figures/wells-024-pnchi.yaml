@@ -1,0 +1,36 @@
+id: wells-024-pnchi
+kind: xsection
+page: docs/steps/024-pnchi.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand
+  part of the drawing and the PMOS active area lies in a window. After it a second set of arrows comes
+  down on the same window; the thin surface band of the PMOS area is drawn unchanged.
+caption: >-
+  Before, the HVTPM window after PCHI; after, the second beam on the same window and the PMOS channel
+  band drawn unchanged. The species, BF₂, is this reference's inference; the energy and dose are not
+  public, and no public source gives the depth of either high-Vt implant, so the drawing does not
+  separate them. The arrows are drawn vertical because the tilt is not public. The LVTNI band and the
+  liner oxide are drawn faded. Not to scale.
+arrow:
+  title: "PNCHI, step 024"
+  note: "A second implant, boron difluoride on this reference's inference, goes through the same HVTPM window."
+panels:
+  - state_after: "023"
+    title: "Before: the HVTPM window after PCHI (step 023); NMOS left, PMOS right"
+    dim_layers: [liner, chn]
+    show_ions: false
+    labels:
+      chp:
+        title: "PMOS channel implants"
+        note: "LVTPI and PCHI (steps 020, 023); not drawn apart"
+        basis: public
+  - state_after: "024"
+    title: "After: a third dose into the PMOS channel band, drawn as one band"
+    dim_layers: [liner, chn]
+    labels:
+      chp:
+        title: "PMOS channel implants"
+        note: "and now PNCHI (step 024)"
+        basis: public

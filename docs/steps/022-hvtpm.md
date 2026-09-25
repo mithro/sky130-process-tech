@@ -22,6 +22,14 @@ second P-channel implant {ref}`PNCHI <step-024>` (BF₂ on this
 reference's reading) — and the resist is
 stripped at {ref}`PCHIS <step-025>`.
 
+:::{figure} /_static/figures/wells-022-hvtpm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the oxide surface is bare over an N-well on the right. After it a block of photoresist covers the left-hand part of the drawing up to the middle of the trench, and the right-hand active area, with its implanted surface band, lies in an open window.
+:width: 560px
+:name: fig-wells-022-hvtpm
+
+Before, the bare wafer with its N-well; after, resist over the NMOS side and a window over the PMOS. The PDK's mask table lists "High Vt PCh*, HVTPM".[^pdk-05] The page sets out two readings of the opening — over the drawn `hvtp` devices only, or over most low-voltage N-well outside `lvtn` — and the PMOS area drawn here lies in the window on either; which matches the plate is not public.[^pdk-errors] The resist edge in the trench is illustrative. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+:::
+
 A note on the name. The step list used in this reference gives the name
 "High V P-channel implant mask", which could be read as *high-voltage*.
 The PDK is unambiguous that the "V" is a threshold: the mask table lists

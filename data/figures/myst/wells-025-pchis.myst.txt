@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/wells-025-pchis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand part of the drawing. After it the resist is gone and the oxide surface is bare across the slice; the N-well and the implanted surface bands are unchanged.
+:width: 560px
+:name: fig-wells-025-pchis
+
+Before, the HVTPM resist after its two implants; after, the resist gone and the oxide bare, with the well and the bands untouched. The page infers that the pad oxide is still present and has to survive as the screen for the implants still to come, so it is drawn in place. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+:::

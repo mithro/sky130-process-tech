@@ -27,6 +27,14 @@ energy the tool can control well produces a shallow boron profile
 (category page).[^txt-01] The resist is stripped at
 {ref}`PCHIS <step-025>`.
 
+:::{figure} /_static/figures/wells-024-pnchi.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand part of the drawing and the PMOS active area lies in a window. After it a second set of arrows comes down on the same window; the thin surface band of the PMOS area is drawn unchanged.
+:width: 560px
+:name: fig-wells-024-pnchi
+
+Before, the HVTPM window after PCHI; after, the second beam on the same window and the PMOS channel band drawn unchanged. The species, BF₂, is this reference's inference; the energy and dose are not public, and no public source gives the depth of either high-Vt implant, so the drawing does not separate them. The arrows are drawn vertical because the tilt is not public. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+:::
+
 Boron is p-type. In an N-well channel it *{term}`counter-dopes <counter-doping>`* the surface
 and, on its own, would lower the magnitude of a PMOS threshold, not
 raise it. Its appearance inside the "high Vt LV PMOS"

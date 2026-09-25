@@ -101,6 +101,11 @@ numbers, quotes, hedges of the caption) and `git diff` no deleted line.
 | `wells-020-lvtpi` | PMOS band in the right active silicon only, inside the N-well; LVTNI band faded; band dot staggered left of the pad-oxide dot | the band's leader crosses its own band with a halo, drawn as a short white edge on the band (tool behaviour for every overlay) |
 | `wells-021-lvtpis` | resist gone, well and band unchanged | — |
 
+| `wells-022-hvtpm` | window over the PMOS (true on both readings of the opening, caption says so); resist from above; highlight on the resist top | — |
+| `wells-023-pchi` | beam on the PMOS window; band relabelled "PMOS channel implants" with the steps it now holds | the band does not grow or split: no depth is public for either implant (caption); caption reworded once after the echo lint caught eight words of the first paragraph |
+| `wells-024-pnchi` | as 023; the band label names PNCHI in the after panel; BF₂ renders with its subscript | as 023 |
+| `wells-025-pchis` | resist gone; band label keeps the three implants, title only in the after panel (an empty `note` override stops the series note coming back) | — |
+
 Tool change made while doing 018: when two labels sit above the drawing and the left
 one's riser is within 110 u of the canvas edge (`min-hang-width`), it now hangs right, in
 the gap before the second riser, instead of being squeezed into a one-word column. The

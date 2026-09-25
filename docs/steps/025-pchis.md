@@ -19,6 +19,14 @@ for the P-well {term}`block mask` {ref}`PWBM <step-026>`. The step list used in
 this reference names it after the last implant ("P-channel BF2 implant
 strip").
 
+:::{figure} /_static/figures/wells-025-pchis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand part of the drawing. After it the resist is gone and the oxide surface is bare across the slice; the N-well and the implanted surface bands are unchanged.
+:width: 560px
+:name: fig-wells-025-pchis
+
+Before, the HVTPM resist after its two implants; after, the resist gone and the oxide bare, with the well and the bands untouched. The page infers that the pad oxide is still present and has to survive as the screen for the implants still to come, so it is drawn in place. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+:::
+
 The resist is the i-line implant-block resist (roughly 1 µm, inferred on
 the {ref}`HVTPM <step-022>` page). It has received two keV-class channel
 implants at light doses (of order 10¹²–10¹³ cm⁻² each, illustrative;
