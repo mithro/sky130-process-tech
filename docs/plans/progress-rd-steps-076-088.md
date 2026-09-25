@@ -353,3 +353,59 @@ pages: 066, 068, 072. One commit per page.
   clause (PDK entry/inference, the moved 0° sentence, Park/Lim, the three dose-loss studies, the
   inventory reading); the list lead-in; glance and label lines.
 * **Caps**: para > 100 1 → 0; item > 60 3 → 0; sentence > 45 7 → 0.
+
+### 081 PSDM — done
+
+* **Lead.** The 50-word second sentence split at ", leaving": "… and develops it. It leaves resist
+  windows over every region … (on our reading)." ("It leaves", step 7). A first draft split at the
+  dash pair instead ("The wafer is now carrying spacers, …") and was reverted: it moved the SPOX clause
+  out of the sentence whose trailing "(on our reading)" may cover it. One paragraph, 81 words; first
+  sentence 7.
+* **R-H3.** `### What the public record shows` after the figure caption, over the 173-word PDK
+  paragraph (mask table, layers and their add/drop purposes, the psd rules, minimum CD).
+* **R-SENTENCE.** The 61-word layer sentence split at its semicolon (`[^pdk-05]` on the mask table,
+  the rest keeps `[^pdk-06]`) and at its dash: "… purposes.[^pdk-06] That is evidence that the reticle
+  is derived … not copied from it.[^pdk-06]" ("That is" added, step 7; `[^pdk-06]` **repeated** on the
+  first half because the base's single marker covered the whole sentence — masks-b H1 — declared).
+* **R-TABLE.** The ten psd rules → `Rule | Constrains | Value (µm)`, one row per rule in the base order,
+  `[^pdk-periph]` on the lead-in "… give:[^pdk-periph]". The two area rows keep their own unit, "0.255 µm²"
+  and "0.265 µm²", joined by a non-breaking space (as on 018) so the unit does not wrap away from the
+  number at 1280 px or 400 px — a first try with the unit in the header lost a `²` token in
+  `check_preserved` and was not kept; psd.6's "zero enclosure at a diff/tap butting edge" → "enclosure at a
+  diff/tap butting edge | zero"; psd.8 and psd.9 have no value (`—`), psd.9's quotation is in its cell
+  unchanged. LOST `number_order` checked by hand against the base: psd.1 0.380, psd.2 0.380, psd.5a
+  0.125, psd.5b 0.125, psd.6 zero, psd.7 0.130, psd.8 —, psd.9 —, psd.10b 0.255 µm², psd.11 0.265 µm².
+  WORDS LOST "by"×2 ("enclosure of diffusion by 0.125 µm" → the cell without its value).
+* **R-CATEGORY / R-LIST.** The classification sentence ends "but with two differences." → colon and
+  two plain bullets, the second opening "It is printed …" (joining "and" dropped; "it" is the resist,
+  the subject of the first bullet).
+* **Why.** The 68-word proximity sentence: the "which is why …" clause moved up to follow the claim it
+  explains, and the three studies follow as their own sentence: "Ions scattered laterally … shift the
+  threshold of transistors placed near it,[^hook-2003] which is why the layer carries … rather than
+  zero. Hook et al. measured …,[^hook-2003] Sheu et al. …,[^sheu-2006] and Drennan … layout.[^drennan-2006]"
+  `[^hook-2003]` **repeated** on the claim, which in the base carried the studies' markers in its dash
+  material (batch-4 M2, declared).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** "Resist coat" (111 w): lead = the 1 µm / PDK 1.14 µm sentence (kept whole, so the
+  1 µm claim keeps its PDK support in the same sentence); continuation = "The thickness is set …
+  10¹⁵ cm⁻² beam." and the Smith/Romig sentence (split at the colon). "Exposure" split at its
+  semicolon. "Develop" split at its dash ("… reduce outgassing. Lee et al. measured …").
+* **R-TOOLS.** i-line: *SkyWater says:* "lists both.[^skw-01]" (verb-first, the guide's own example),
+  *Tool exists:*, *Runs this step:*. Tracks, overlay/CD in 068's form. Three tools, no recap table.
+* **R-RELATED.** Previous/Next split; "Complementary mask: NSDM" → `Same module: the complementary
+  mask, NSDM`; "Structures it dopes …" unlabelled; "Mask page:" and "Previous mask: …; next mask: …" →
+  one `Mask:` bullet.
+* **R-OPENQ.** Labels "Resist and exposure tool", "How `cpsdm` is generated", "Intermediate step";
+  text unchanged.
+* **R-GLANCE.** Does from the lead with its "(on our reading)"; Why from the Why lead; Public numbers
+  psd.1/psd.2 0.380 µm and psd.5a/psd.5b 0.125 µm `[^pdk-periph]`; tool line with both grades; Not
+  public from Open questions 1.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `hook-2003`, `pdk-06` (repeats),
+  `pdk-periph`, `skw-01` (glance); numbers 0.125, 0.380, 1, 2, 5×2, ⁺ (glance); refs `step-082`,
+  `step-083` (glance); hedges "inference", "likely", "not public", "our reading" (glance). LOST
+  `number_order` for the psd table, checked above. WORDS LOST: "by"×2, "m"×2 (table: "µm" moved to the header), "leaving" ("It
+  leaves"), "page" ("Mask page:" → "Mask:"), "strength"×3.
+* **Marker coverage.** 11 flags, all read: the table's lead-in; split halves whose base marker
+  belonged to the other clause (mask table/layers, the category bullets, Develop/studies); the
+  proximity claim now carrying `[^hook-2003]`; glance and label lines.
+* **Caps**: para > 100 1 → 0; item > 60 1 → 0; sentence > 45 8 → 0.

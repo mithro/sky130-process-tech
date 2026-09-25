@@ -10,12 +10,30 @@
 | **Previous step** | {ref}`SPOX <step-080>` |
 | **Next step** | {ref}`PSDI <step-082>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** prints the resist whose windows admit the heavy p-type
+  implants of {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>` (on
+  our reading).
+* **Why:** the P⁺ implant must reach some regions and be kept out of
+  others, and the difference is drawn on this layer.
+* **Public numbers:** width and space 0.380 µm (psd.1, psd.2);
+  enclosure of diffusion and of tap 0.125 µm (psd.5a,
+  psd.5b).[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (existence); inference (assignment of `PSDM` to i-line).[^skw-01]
+* **Not public:** the resist, thickness, exposure tool and hardening
+  step, inferred from the design rules and general practice
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `PSDM` is the P⁺ source/drain implant mask. It coats the wafer — now
 carrying spacers, the {term}`nitride cut` and the fresh {ref}`SPOX <step-080>`
 oxide — with photoresist, exposes it through the P⁺ implant reticle
-and develops it, leaving resist windows over every region that is to
+and develops it. It leaves resist windows over every region that is to
 receive the heavy p-type implants of {ref}`PSDI <step-082>` and
 {ref}`2PSDI <step-083>` (on our reading). The resist is stripped at
 {ref}`PDIS <step-084>`. It is the first of the two source/drain masks;
@@ -29,21 +47,32 @@ its complement, {ref}`NSDM <step-085>`, follows with the N⁺ implant.
 Before, the spacer oxide over the whole slice; after, the PSDM resist. The slice holds no PMOS and no p⁺ tap, so its only P⁺ region is the resistor: the precision-resistor rules require `psdm` to enclose the resistor (rpm.4),[^pdk-periph] and the page reads that as putting its contact heads, opened by the nitride cut, inside the P⁺ window. Both NMOS areas are kept out (psd.8).[^pdk-periph] The window is drawn the same as the cut's. The resist is drawn at the thickness of the other implant resists; the PDK's nominal photoresist thickness is 1.14 µm,[^pdk-03] and this mask's is not public. The colours of the gate film mark the type of its doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel the n-type gate film under the resist is not labelled. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK documents the layer thoroughly. The mask table lists "P+
-Implant, PSDM" as used in SKY130;[^pdk-05] the drawn layer is `psdm`
+Implant, PSDM" as used in SKY130.[^pdk-05] The drawn layer is `psdm`
 (GDS 94:20, "P+ source/drain implant") and the generated mask layer is
 `cpsdm` (32:0, "P+ Implant mask"), which also carries "mask add"
-(31:21) and "mask drop" (31:22) purposes — evidence that the reticle
-is derived from the drawn layer by Boolean operations, not copied
-from it.[^pdk-06] The rules (shared with `nsdm` under the heading
-"Defines opening for N+/P+ implants") give: width 0.380 µm (psd.1),
-space 0.380 µm (psd.2), enclosure of diffusion by 0.125 µm (psd.5a),
-enclosure of tap by 0.125 µm (psd.5b), zero enclosure at a diff/tap
-butting edge (psd.6), 0.130 µm spacing to diffusion or tap of the
-opposite implant (psd.7), no overlap with diffusion or tap of the
-opposite doping (psd.8), the requirement that "Diff and tap must be
-enclosed by their corresponding implant layers" (psd.9), minimum area
-0.255 µm² (psd.10b) and minimum hole area 0.265 µm² (psd.11).[^pdk-periph]
+(31:21) and "mask drop" (31:22) purposes.[^pdk-06] That is evidence
+that the reticle is derived from the drawn layer by Boolean operations,
+not copied from it.[^pdk-06]
+
+The rules (shared with `nsdm` under the heading
+"Defines opening for N+/P+ implants") give:[^pdk-periph]
+
+| Rule | Constrains | Value (µm) |
+|---|---|---:|
+| psd.1 | width | 0.380 |
+| psd.2 | space | 0.380 |
+| psd.5a | enclosure of diffusion | 0.125 |
+| psd.5b | enclosure of tap | 0.125 |
+| psd.6 | enclosure at a diff/tap butting edge | zero |
+| psd.7 | spacing to diffusion or tap of the opposite implant | 0.130 |
+| psd.8 | no overlap with diffusion or tap of the opposite doping | — |
+| psd.9 | the requirement that "Diff and tap must be enclosed by their corresponding implant layers" | — |
+| psd.10b | minimum area | 0.255 µm² |
+| psd.11 | minimum hole area | 0.265 µm² |
+
 The minimum-CD table repeats 0.38 µm for feature and space
 (`PSDMCD`, `PSDMCDSP`).[^pdk-03]
 
@@ -52,13 +81,16 @@ The minimum-CD table repeats 0.38 µm for feature and space
 `PSDM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type, like the well and channel masks of
 the earlier module ({ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`),
-but with two differences. The resist must stop a *high-dose*,
-high-current implant of the order of 10¹⁵ cm⁻² (industry-typical for
-a source/drain, category page[^txt-01]) rather than a light channel
-dose, and it is printed over the tallest topography the front end has
-yet seen — capped gates with spacers — so its coverage at the foot
-of a gate line, where an implant edge often lies, has to be
-reliable.
+but with two differences:
+
+* The resist must stop a *high-dose*,
+  high-current implant of the order of 10¹⁵ cm⁻² (industry-typical for
+  a source/drain, category page[^txt-01]) rather than a light channel
+  dose.
+* It is printed over the tallest topography the front end has
+  yet seen — capped gates with spacers — so its coverage at the foot
+  of a gate line, where an implant edge often lies, has to be
+  reliable.
 
 ## Why this step exists
 
@@ -100,20 +132,21 @@ implants" CMOS source/drain scheme.
 
 Two proximity effects follow from a high-dose implant edge in resist.
 Ions scattered laterally from the resist edge shift the threshold of
-transistors placed near it — Hook et al. measured the lateral
+transistors placed near it,[^hook-2003] which is why the layer carries
+enclosure and spacing rules of 0.125–0.130 µm rather than zero. Hook
+et al. measured the lateral
 straggle and {term}`mask-proximity effect` at IBM,[^hook-2003] Sheu et al.
 built a compact model of the well-edge version,[^sheu-2006] and
 Drennan, Kniffin and Locascio explained what it means for analogue
-layout[^drennan-2006] — which is why the layer carries enclosure and
-spacing rules of 0.125–0.130 µm rather than zero.
+layout.[^drennan-2006]
 
 Without `PSDM` no p-type source/drain, tap, emitter, resistor or
 diode could be made without also doping the NMOS.
 
 ## How it is typically performed
 
-An industry-generic high-dose implant-block lithography sequence for
-a 200 mm, 130 nm-era fab (SKY130's is not public):
+*An industry-generic high-dose implant-block lithography sequence for
+a 200 mm, 130 nm-era fab (SKY130's is not public):*
 
 1. **Surface preparation.** Dehydration bake and HMDS prime on the
    track; the surface is the fresh CVD oxide of
@@ -122,15 +155,18 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    1 µm: the PDK's nominal "Photoresist thickness" is 1.14 µm,[^pdk-03]
    and the deep source/drain implants (BF₂ or boron at tens of keV,
    typical industry values[^txt-02]) are stopped by a small fraction
-   of that. The thickness is set less by stopping power than by
-   coverage over roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gates and by the resist's need to
-   survive a 10¹⁵ cm⁻² beam: Smith's early treatment of wafer
+   of that.
+
+   The thickness is set less by stopping power than by
+   coverage over roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm
+   cap[^pdk-03]) capped gates and by the resist's need to
+   survive a 10¹⁵ cm⁻² beam. Smith's early treatment of wafer
    cooling and resist masking in implantation,[^smith-1983] and
    Romig et al.'s study of resist burning in a high-current
    implanter,[^romig-1996] describe what goes wrong when it does not.
 3. **Exposure.** At 0.380 µm minimum width and space,[^pdk-periph] an
    i-line stepper at NA 0.6 works at k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62,
-   well above the "0.4 for production" limit;[^wiki-litho] ASML
+   well above the "0.4 for production" limit.[^wiki-litho] ASML
    describes older exposure tools that "migrate to the lithography of
    choice for less critical layers".[^asml-30] We infer an
    **i-line** exposure, as for the earlier implant-block masks.
@@ -140,7 +176,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
    overlay.[^levinson-2005]
 5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; then a hard bake
    or UV cure to harden the resist against the implant and reduce
-   outgassing — Lee et al. measured thick-resist outgassing during
+   outgassing. Lee et al. measured thick-resist outgassing during
    implantation,[^lee-1996] Horsky the outgassing in high-energy and
    high-current tools,[^horsky-1998] and Carpenter and Fecteau the
    productivity measures for high-pressure outgassing.[^carpenter-2002]
@@ -159,14 +195,16 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / i-line scanner.** SkyWater lists both.[^skw-01]
-  Strength: **strong** for existence; assignment of `PSDM` to i-line
-  is an **inference** from the 0.38 µm rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01]
-  Strength: strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / i-line scanner**
+  - *SkyWater says:* lists both.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* assignment of `PSDM` to i-line is an **inference**
+    from the 0.38 µm rules.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -181,17 +219,17 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`SPOX <step-080>` (the oxide the resist is coated
-  on). Next: {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>` (the
+  on).
+* Next: {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>` (the
   implants through this mask), then {ref}`PDIS <step-084>` (strip).
-* Complementary mask: {ref}`NSDM <step-085>`.
+* Same module: the complementary mask, {ref}`NSDM <step-085>`.
 * Structures it dopes: PMOS source/drain, p⁺ taps, PNP
   emitter/collector, NPN base, P⁺ diffusion resistors, p-diodes, and
   the precision-resistor heads of {ref}`RPM <step-049>` opened at
   {ref}`NPCM <step-078>`.
-* Previous mask: {ref}`NPCM <step-078>`; next mask:
-  {ref}`NSDM <step-085>`.
-* Mask page: {ref}`PSDM <mask-psdm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`PSDM <mask-psdm>` — the mask's layers, plates,
+  renders and design rules. Previous mask: {ref}`NPCM <step-078>`;
+  next mask: {ref}`NSDM <step-085>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -258,13 +296,13 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Open questions
 
-* The resist, thickness, exposure tool and hardening step for `PSDM`
+* **Resist and exposure tool.** The resist, thickness, exposure tool and hardening step for `PSDM`
   are inferred from the design rules and general practice.
-* How the `cpsdm` reticle is generated from `psdm` — in particular
+* **How `cpsdm` is generated.** How the `cpsdm` reticle is generated from `psdm` — in particular
   whether resistor heads, taps or other structures are added by
   Boolean operations — is not public beyond the existence of the
   add/drop purposes.[^pdk-06]
-* Whether both {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>`
+* **Intermediate step.** Whether both {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>`
   use this resist without any intermediate step is inferred from the
   PDK's single "P+ Implant, PSDM" mask.[^pdk-05]
 
