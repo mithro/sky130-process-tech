@@ -39,7 +39,7 @@ One table. It applies to every page type unless a page-type section in §4 narro
 | Table cell | ≤ 25 words | 25 | words in the cell, markers removed | B §2.3 |
 | Quick-facts cell | ≤ 20 words, ≤ 1 quotation | 20 | same | B5 |
 | Links in one table cell | ≤ 8 | 8; more becomes "N steps — see §…" | count of `{ref}` | B §2.3 |
-| Table columns | ≤ 4 when any column holds prose (at most 2 prose columns); ≤ 6 when every cell is a number, a code or ≤ 3 words | — | header row | A F3 (≤ 5) vs B §2.1 → **B's rule**; it is measured against furo's ~740 px column |
+| Table columns | ≤ 3 if any column holds prose; ≤ 5 if every cell is a number, a code or ≤ 3 words | must pass the phone test: no horizontal scroll at 400 px, no number broken across lines (a thousands-space number such as "1 825" wraps at the space, so a cell holding one must be ≤ 12 characters) | header row, then rendered at 400 px | A F3 (≤ 5) vs B §2.1 vs review D8 (tested, not counted) |
 | Table rows | ≤ 40 | 40; more → split by group under H3s | — | B §2.7 |
 | Footnote markers per paragraph | ≤ 4 | **6**; at 5 or more, ask whether the paragraph is a table | count of `[^…]` | A F2/F3 (≤ 6) vs C7 (consider at > 4) → target 4, cap 6 |
 | H3s per step page | 3–6 | — | — | A F2 |
@@ -756,7 +756,13 @@ identifiers in one block.
 8. The sentence that draws the conclusion stays as prose after the table.
 9. A row whose only source is a patent shown as in force belongs **inside that patent's dropdown**, in a
    table of its own (§2.5, §2.6).
-10. Obey the column budget of §1. If the data needs more columns, split the table by key or transpose it.
+10. Obey the column budget of §1: ≤ 3 columns if any column holds prose, ≤ 5 if every cell is a
+    number, a code or ≤ 3 words. Beyond the count, the table must pass the phone test: no
+    horizontal scroll at 400 px, and no number broken across lines. A column whose value is the
+    same in every row is not a column: put it in the lead-in sentence. If the table still fails
+    (too many columns, or a column-count table that fails the phone test anyway), transpose it:
+    conditions (currents, extents) across the columns, quantities (gain, V_BE, measured, nominal)
+    down the rows.
 
 **Example** — `docs/steps/018-nwi.md:94`.
 
