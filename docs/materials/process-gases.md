@@ -38,7 +38,9 @@ Most process gases do not end up in the wafer. Nitrogen and argon keep
 air and moisture out of chambers, carry reactive gases to the wafer and
 fill the chamber when it is vented; helium carries heat from the wafer to
 a cooled chuck; oxygen, hydrogen and the oxidation additives react with
-silicon to grow oxide. What the class shares is the requirement that
+silicon to grow oxide.
+
+What the class shares is the requirement that
 nothing else comes with the gas: moisture, oxygen, hydrocarbons and
 particles in a purge or carrier gas reach every wafer the tool
 processes. Ohmi's programme of "ultraclean technology" named an
@@ -58,7 +60,9 @@ wafers after wet processing and blankets wafers in transfer (industry
 practice); vertical
 furnaces "allow the use of load locks to purge the wafers with nitrogen
 before oxidation to limit the growth of native oxide on the Si
-surface".[^wiki-thox] It is also a reactant: added to argon in a
+surface".[^wiki-thox]
+
+It is also a reactant: added to argon in a
 titanium sputtering chamber it makes titanium nitride, a process whose
 hysteresis Berg and Nyberg model,[^berg-2005] and it is the carrier of
 {term}`forming gas`, which in typical formulations of "5% H2 in N2" is
@@ -72,12 +76,16 @@ furnaces make by burning hydrogen in oxygen in a torch ahead of the tube
 in both oxidants.[^deal-1965] Wet oxidation "is preferred to dry oxidation
 for growing thick oxides, because of the higher growth rate", and thick
 oxides are often grown "with a long wet oxidation bracketed by short dry
-ones".[^wiki-thox] Hydrogen and oxygen can also react at the wafer in a
+ones".[^wiki-thox]
+
+Hydrogen and oxygen can also react at the wafer in a
 rapid thermal chamber, in-situ steam generation ({term}`ISSG`), which Yu
 et al. applied to ultrathin gate oxide.[^yu-1999] Oxygen is also the
 reactive gas of resist ashing, where "Oxygen or fluorine are the most
 common reactive species",[^wiki-ash] and the oxidant of silane and TEOS
-oxides in {term}`HDP-CVD` and {term}`PECVD`. Hydrogen further reduces
+oxides in {term}`HDP-CVD` and {term}`PECVD`.
+
+Hydrogen further reduces
 tungsten hexafluoride in the tungsten fill ({ref}`category-deposition`)
 and is a co-gas in implanter ion sources, where "Hydrogen or hydrogen
 with xenon, krypton or argon may be added to the plasma to delay the
@@ -91,7 +99,9 @@ deposition of thin films as in microelectronics and for wafer cleaning in
 microfabrication".[^wiki-argon] It also dilutes etch and HDP plasmas and
 serves as an inert anneal ambient. It is "readily obtained as a byproduct
 of cryogenic air separation in the production of liquid oxygen and liquid
-nitrogen".[^wiki-argon] Helium is used for its high thermal
+nitrogen".[^wiki-argon]
+
+Helium is used for its high thermal
 conductivity and inertness: as the backside gas between a wafer and an
 {term}`electrostatic chuck`, and as a carrier and diluent in CVD.
 Goodman describes how "Electrostatic chucks (ESCs) are used in the
@@ -113,7 +123,9 @@ that "The addition of a few mole per cent of HCl or Cl 2 to the oxidizing
 atmosphere has been found to significantly improve the electrical
 stability of dry‐grown SiO 2 films", that the oxidation rate "is
 considerably increased", and that HCl in dry oxygen was "very effective
-for the “cleaning” of quartz furnace tubes".[^kriegler-1972] Chlorine
+for the “cleaning” of quartz furnace tubes".[^kriegler-1972]
+
+Chlorine
 "is often introduced by adding hydrogen chloride or trichloroethylene to
 the oxidizing medium";[^wiki-thox] Yoneda et al. qualified "trans 1,2‐dichloroethylene added
 oxidation as a substitution for 1,1,1‐trichloroethane", with "lower ozone
@@ -130,14 +142,18 @@ oxygen".[^wiki-n2o] Hwang et al. grew "high quality ultrathin (∼60 Å)
 gate dielectrics using N2O (nitrous oxide) gas" by rapid thermal
 oxidation, and found "a nitrogen-rich layer at the Si/SiO2
 interface";[^hwang-1990] their later model explained the resistance of
-such films to boron penetration.[^hwang-1991] In a furnace, Tobin et al.
+such films to boron penetration.[^hwang-1991]
+
+In a furnace, Tobin et al.
 showed that "for a 950 °C oxynitridation process, N2O decomposes into N2,
 O2, and NO before reaching the wafer load", and that the nitrogen
-concentration follows the NO concentration;[^tobin-1994] Okada et al.
+concentration follows the NO concentration.[^tobin-1994] Okada et al.
 then grew gate oxynitride in NO directly and found that "Much lower
 thermal budget is required for an NO process than for an N/sub 2/O
 process".[^okada-1994] Kuehne et al. applied NO to rapid thermal
-nitridation of thin gate oxides.[^kuehne-1997] N₂O is also the usual
+nitridation of thin gate oxides.[^kuehne-1997]
+
+N₂O is also the usual
 oxidant of silane-based PECVD oxide and, with ammonia, of oxynitride
 ({ref}`category-deposition`). Nitric oxide is classed as "Very toxic,
 corrosive, oxidizer".[^wiki-no]
@@ -167,36 +183,25 @@ devices and circuits";[^semi-c3] later documents gather the grades of
 one gas. The listings below describe standards and supplier catalogues,
 not what SkyWater buys; the purity of SKY130's gases is not public.
 
-* **Nitrogen.** SEMI C59 provides "a series of specifications for
-  different grades of nitrogen (N2)" and covers "all grades of nitrogen
-  used in the semiconductor industry".[^semi-c59] Linde Engineering
-  states that its SPECTRA on-site plants "deliver ultra-pure gaseous and
-  liquid N2 and O2 with less than 1 part per billion (ppb) impurities",
-  while its NITRON E plants suit "customers with less exacting purity
-  requirements (100 ppb)".[^linde-eng-electronics]
-* **Oxygen.** SEMI C54 "provides a series of specifications for
-  different grades of oxygen (O2)" and cites among its references a
-  "Standard for Oxygen (O2), Bulk, 99.9998% Quality".[^semi-c54]
-* **Hydrogen.** SEMI C58 "covers requirements for two grades of hydrogen
-  used in the semiconductor industry".[^semi-c58] Linde notes that
-  "High-purity hydrogen (H2) is often supplied in liquid form for
-  low-volume electronics applications".[^linde-eng-electronics]
-* **Argon.** Co-produced with nitrogen and oxygen by cryogenic air
-  separation;[^wiki-argon] Linde lists "ultra-high-purity nitrogen (N₂),
-  oxygen (O₂), argon (Ar), hydrogen (H₂), helium (He), and carbon dioxide
-  (CO₂)" among the bulk gases it supplies to wafer fabs.[^linde-semi]
-* **Helium.** SEMI C3.20 provides "specifications for helium (He) that is
-  used in the semiconductor industry".[^semi-c3-20]
-* **HCl and DCE.** Anhydrous hydrogen chloride "Shipped as a liquefied
-  compressed gas";[^niosh-hcl] trans-1,2-dichloroethylene is a liquid
-  with "applications including electronics cleaning, precision cleaning,
-  and certain metal cleaning applications",[^wiki-dce] delivered to a
-  furnace as vapour (industry practice); Yoneda et al. added it to gate
-  oxidation.[^yoneda-1995]
-* **N₂O and NO.** Nitrous oxide in cylinders; nitric oxide, a "Colorless
-  gas" "Shipped as a nonliquefied compressed gas".[^niosh-no]
-* **Water vapour.** Generated at the tool from ultrapure water or, in a
-  furnace, by burning hydrogen in oxygen ({ref}`category-oxidation`).
+:::{table} Representative process gases and grades, as standards and current supplier documents describe them
+:widths: 14 30 56
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Nitrogen | — | SEMI C59 provides "a series of specifications for different grades of nitrogen (N2)" and covers "all grades of nitrogen used in the semiconductor industry"[^semi-c59] |
+| Nitrogen | Linde Engineering SPECTRA / NITRON E on-site plants | SPECTRA plants "deliver ultra-pure gaseous and liquid N2 and O2 with less than 1 part per billion (ppb) impurities"; NITRON E plants suit "customers with less exacting purity requirements (100 ppb)"[^linde-eng-electronics] |
+| Oxygen | — | SEMI C54 "provides a series of specifications for different grades of oxygen (O2)" and cites among its references a "Standard for Oxygen (O2), Bulk, 99.9998% Quality"[^semi-c54] |
+| Hydrogen | — | SEMI C58 "covers requirements for two grades of hydrogen used in the semiconductor industry"[^semi-c58] |
+| Hydrogen | Linde | "High-purity hydrogen (H2) is often supplied in liquid form for low-volume electronics applications"[^linde-eng-electronics] |
+| Argon | — | Co-produced with nitrogen and oxygen by cryogenic air separation[^wiki-argon] |
+| Argon | Linde | lists "ultra-high-purity nitrogen (N₂), oxygen (O₂), argon (Ar), hydrogen (H₂), helium (He), and carbon dioxide (CO₂)" among the bulk gases it supplies to wafer fabs[^linde-semi] |
+| Helium | — | SEMI C3.20 provides "specifications for helium (He) that is used in the semiconductor industry"[^semi-c3-20] |
+| HCl | — | Anhydrous hydrogen chloride "Shipped as a liquefied compressed gas"[^niosh-hcl] |
+| DCE | — | trans-1,2-dichloroethylene is a liquid with "applications including electronics cleaning, precision cleaning, and certain metal cleaning applications",[^wiki-dce] delivered to a furnace as vapour (industry practice); Yoneda et al. added it to gate oxidation[^yoneda-1995] |
+| N₂O | — | Nitrous oxide in cylinders |
+| NO | — | nitric oxide, a "Colorless gas" "Shipped as a nonliquefied compressed gas"[^niosh-no] |
+| Water vapour | — | Generated at the tool from ultrapure water or, in a furnace, by burning hydrogen in oxygen ({ref}`category-oxidation`) |
+:::
 
 ## At SkyWater
 
@@ -235,10 +240,14 @@ SkyWater's registration statement of 2021 and its annual report for
 fiscal 2023 describe the raw materials as including "high-purity
 compressed gases" and name gas suppliers:[^sec-01][^sec-02]
 
+:::{table} Gas suppliers as SkyWater's filings name them
+:widths: 30 70
+
 | Filing | Gas suppliers as named |
 |--------|------------------------|
 | S-1 (2021)[^sec-01] | "Air Products & Chemicals, Inc. (bulk and specialty gases, chemicals)"; "Praxair, Inc. (bulk and specialty gases)" |
 | 10-K for fiscal 2023[^sec-02] | "Linde, Inc. (bulk and specialty gases)"; "Airgas USA LLC (specialty gases)"; "EMD Performance Materials Corp (Versum) (specialty chemicals and gases)" |
+:::
 
 Neither filing says which gases, grades or delivery modes each supplier
 provides. Wikipedia records that Praxair "merged with Linde AG to form
@@ -258,7 +267,9 @@ TECHNOLOGY INC" from 2014 — reporting under subparts C and I in each
 year from 2011 to 2023, with "CYPRESS SEMICONDUCTOR CORP (100%)" as
 parent company in the years to 2016; its
 subpart I entries include N₂O emissions in every one of those
-years.[^epa-ghgrp-skywater] Subpart I is the electronics-manufacturing
+years.[^epa-ghgrp-skywater]
+
+Subpart I is the electronics-manufacturing
 category, under which facilities report "N2O emissions from CVD and other
 production processes".[^epa-ghgrp-subpart-i] We read this as evidence
 that nitrous oxide is used at the fab; the public tables do not say in
@@ -272,7 +283,9 @@ The furnace, RTA and asher entries are SkyWater statements and rank as
 (by an unstated method), argon, nitrogen and hydrogen are used at the
 fab; that the steam is pyrogenic is industry practice, not a SkyWater
 statement. As for the tools, the list describes the whole fab in the 2020s and ties no gas
-to a step.[^skw-01] The EPA record is a regulatory filing about the
+to a step.[^skw-01]
+
+The EPA record is a regulatory filing about the
 Bloomington facility and is strong for the use of N₂O somewhere in its
 processes, weak for any SKY130 step.[^epa-ghgrp-skywater] The supplier
 statements are strong as statements but name no gas, and the suppliers
@@ -323,8 +336,9 @@ The steps fall into groups, as the index rows describe them:
   {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`,
   {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>` and
   {ref}`IOX45 <step-063>`, with hydrogen (steam or radical oxidation),
-  the chlorine additions or N₂O or NO at various of them (see the rows);
-  argon and nitrogen as the likely RTA ambients
+  the chlorine additions or N₂O or NO at various of them (see the rows).
+
+  Argon and nitrogen as the likely RTA ambients
   at {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>` and
   {ref}`CSIL <step-098>` (inference on those pages).
@@ -392,6 +406,7 @@ not public.
   O2",[^skw-01] and reports N₂O emissions for the
   fab;[^epa-ghgrp-skywater] the {ref}`LVGOX <step-047>` page reads the
   nitridation route as open among NH₃, N₂O or NO and plasma nitrogen.
+
   An N₂O furnace process delivers its nitrogen through the NO it forms in
   the tube,[^tobin-1994] and an NO process needs less thermal
   budget,[^okada-1994] which matters for the {ref}`ONO <step-040>` stack
@@ -424,19 +439,18 @@ not public.
 
 ## Related pages
 
-* {ref}`category-oxidation` — dry, wet and chlorinated oxidation and
-  nitrided oxides.
-* {ref}`machine-vertical-furnace-oxidation`,
+* **Category.** {ref}`category-oxidation` — dry, wet and chlorinated
+  oxidation and nitrided oxides.
+* **Machines.** {ref}`machine-vertical-furnace-oxidation`,
   {ref}`machine-rapid-thermal-processor` and
   {ref}`machine-plasma-nitridation-chamber` — the tools that oxidise and
-  nitride with these gases.
-* {ref}`machine-pvd-cluster-tool` and {ref}`machine-downstream-plasma-asher`
-  — argon and nitrogen for sputtering; oxygen, nitrogen and water vapour
-  for ashing.
-* {ref}`material-dopant-sources`, {ref}`material-precursors` and
-  {ref}`material-etch-gases` — the toxic and reactive gas classes.
-* {ref}`materials-index` — all consumable classes, including forming
-  gas.
+  nitride with these gases. {ref}`machine-pvd-cluster-tool` and
+  {ref}`machine-downstream-plasma-asher` — argon and nitrogen for
+  sputtering; oxygen, nitrogen and water vapour for ashing.
+* **Materials.** {ref}`material-dopant-sources`, {ref}`material-precursors`
+  and {ref}`material-etch-gases` — the toxic and reactive gas classes.
+* **Indexes.** {ref}`materials-index` — all consumable classes, including
+  forming gas.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

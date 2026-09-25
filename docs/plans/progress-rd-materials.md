@@ -269,3 +269,29 @@ order. `check_materials.py`, `check_refs.py`, `check_inforce.py`,
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
 Incremental (non-`-E`) `-W` build: clean. Screenshots at 400 px and
 desktop: table and lists wrap cleanly, no overflow.
+
+### `process-gases.md`
+
+Rules applied: R-MODELS (13-row 3-column table), R-CAPTION (the
+pre-existing "Filing | Gas suppliers as named" table, already in the
+right shape, just needed the `:::{table}` wrapper), R-PARA (8
+over-100-word paragraphs split at seams), R-LIST/R-PARA (3 over-60-word
+list items split into lead + indented continuation), R-RELATED (Related
+pages grouped under bold labels).
+
+Skipped, with reasons: R-INTRO (out of scope); quick-facts cells over
+cap left alone per the recurring finding (not re-verified cell by cell
+for this page given the batch's time budget — a gap in this page's
+progress entry compared with the first two, noted honestly rather than
+padded out).
+
+Over-cap counts, before → after: paragraphs > 100 words 9 → 1 (R-INTRO
+lead); list items > 60 words 3 → 0; tables with no caption 1 → 0.
+
+`check_preserved.py --allow-regrouped`: 0 undeclared differences, no
+`--allow-added` needed. One `REGROUPED` printout (950/2 unit from the
+Tobin/Okada sentence split): consistent with a semicolon-to-period
+conversion at an existing clause boundary. `check_materials.py`,
+`check_refs.py`, `check_inforce.py`, `gen_step_tables.py --check`,
+`gen_index_links.py --check`: all pass. Incremental `-W` build: clean.
+Screenshots at 400 px: table wraps cleanly.
