@@ -286,7 +286,9 @@ of 12 words or more, or a semicolon joining two separately cited facts.
    its own sentence.
 3. Keep at most one em-dash pair or one parenthetical per sentence.
 4. Put the subject and the verb in the first 12 words.
-5. Markers travel with their clause.
+5. Markers travel with their clause. A trailing parenthetical hedge or marker that covers the
+   whole sentence ("(our extraction …)[^x]") must cover every sentence the split makes. Either
+   repeat it ("These are our extractions …"), or do not split.
 6. Never split inside a quotation: split before it or after it.
 7. A split may add a subject and a verb ("It is", "This is"). It may not add a clause ("This holds
    even though"): that states a relationship the original sentence did not, in different words. A
