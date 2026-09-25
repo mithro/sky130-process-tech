@@ -76,6 +76,40 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   it" (hvntm, ldntm) or "(on the positive-resist reading)" (dnm), so "Resist and tone" slightly
   overstates the passage (§8 item 11). Followed B8 and the checker.
 
+## Status
+
+All eighteen pages done, one commit each (plus the progress-file corrections folded into the next
+page's commit). Final gates on the branch: check_steps, check_refs, check_machines, check_materials,
+check_masks, check_papers, check_patents, check_filings, check_inforce — 0 problems; gen_papers,
+gen_patents, gen_filings, gen_index_links, gen_figures, gen_step_tables `--check` — 0 differences;
+`sphinx-build -W -E` into a fresh directory — exit 0.
+
+**Batch measurement** (`measure5.py` over the 18 pages, §1 caps), before → after:
+
+| Measure | Before | After |
+|---|---:|---:|
+| Paragraphs > 100 words | 202 | 2 |
+| List items > 60 words | 15 | 0 |
+| Sentences > 45 words | 322 | 60 |
+| Table cells > 25 words | 38 | 38 |
+
+The two paragraphs left are on lvom (each carries the pointer to the in-force note that follows it and
+cannot be split, see the lvom entry). The 60 sentences are listed per page with the reason each was
+left; most are one of: a sentence the script over-counts (formulas, several quotations, "40 µm × 40
+µm"), a flag legend made of quotations, a sentence under one hedge whose split would strand part of it
+(or need the hedge repeated mid-argument), a "so …" conclusion that rests on two premises, or a sentence
+inside an in-force note (two, on lvom, not editable). The 38 cells are quick-facts cells (checker-compared
+or not in the body) and quoted rule-table cells; none was touched.
+
+**Preservation summary** (`check_preserved.py --base c79af95b --allow-regrouped`, plus the categories
+declared per page): every page reports `LOST hedges: 'about'` (the preposition of the deleted template
+sentence) and nothing else lost except the `number_order` regroups explained per page (ctm1, fom, lvom,
+lvtnm, mm1, mm2, mm4) and the ctm1 `refs` artefact. No `{dropdown}` changed.
+
+**R-CODE.** Checked with a scan for identifiers written both with and without backticks on a page: the
+hits are quotations, design-rule identifiers and ordinary words ("mask", "reticle"), as the guide
+predicts; nothing changed.
+
 ## Pages
 
 ### 1. cap2m — done
@@ -144,7 +178,7 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   split at its semicolon).
 * **Marker coverage.** Flags read; all are clauses that had no marker of their own in the base, or the
   test-tile items under a lead-in marker.
-* **Over the caps after the pass (5):** the formula sentence under Exposure class (50 by the script);
+* **Over the caps after the pass (four sentences, two cells):** the formula sentence under Exposure class (50 by the script);
   "At 4× a 2 µm plate is 8 µm on the reticle … sizing the data" (63: the reading and its evidence are
   one sentence joined by a colon; a split would strand the reading, as on cap2m); "The step page puts a
   0.1 µm bias …" (46, the script counts "40 µm × 40 µm" as five words); "For the plate the decisive
@@ -563,7 +597,9 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
 * **LOST `number_order`, read by hand:** the Exposure-class sentence (the repeated "ITRS 2001", as on
   ctm1); the Table 4 / Table 7 sentence (the parameter table: values 0.15, 0.6, 0.35, 0.75, 0.3, 700,
   0.55, 3, 7.2 in the base's order, each on the base's table; the "1" of "Metal 1 thickness" and the "4"
-  of "divisible by 4" are inside the quoted descriptions as before).
+  of "divisible by 4" are inside the quoted descriptions as before); and ('3', '4', '7.2'), the Table 7
+  half of the same sentence, now the `HugeM` and `waffle_large` rows (3, then "divisible by 4", then 7.2,
+  with the PDK-table cell "7" between them).
 * **Marker coverage.** Flags read: the shape list (lead-in marker); clauses with no marker of their own in
   the base. (`markcov`'s NEWHEDGE "assum" is "Criteria & Assumptions" in the caption, not a hedge.)
 * **Over the caps after the pass:** the flag-legend sentence (68 by the script, seven quotations); the
