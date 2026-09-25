@@ -82,7 +82,7 @@ whose gate oxide is grown afterwards at {ref}`GOX100 <step-043>` and
 {ref}`LVGOX <step-047>`.
 
 Cypress's integration patent, which may still
-be in force, says the same of its own flow; the passage is in the
+be in force, is cited here too; the passage is in the
 collapsed note below this paragraph. What the mask does not define is the gate of the
 memory transistor: the {ref}`ONOME <step-042>` page reads the islands as
 etched again, self-aligned to the poly, at {ref}`P1ME <step-062>`.
@@ -274,11 +274,8 @@ nitride etch "with high selectivity to oxide" of the kind such a stop
 needs.[^regis-1997]
 
 The Cypress integration patent, which may still be
-in force, describes the same combination and notes what the wet step
-does to the masked region; the passage is in the collapsed note below
-this paragraph. The undercut it describes shrinks the island's overlap
-of the window, which is why the patent calls the dimensions and
-alignment of the two important (above).
+in force, is cited here too; the passage is in the collapsed note below
+this paragraph.
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 The Cypress integration patent describes the same combination — "the
