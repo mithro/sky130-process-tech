@@ -201,11 +201,10 @@ records:
     value: ten-year operating lease entered December 1994; ground broken August 1994; a further lease
       financing for "Fab IVb" entered October 1995
     date: 1994-1995
-  notes: 'Directly supports the seed claim "Fab 2 is CTI, Round Rock, Texas": CTI is Cypress''s own name
-    for the entity, confirmed again in the FY1994/1995 proxy statements'' "CMI" analogue for Minnesota.
-    The Altera part-ownership of CTI is a new fact not in any seed and not repeated in later annual reports
-    checked so far -- flagged SINGLE-SOURCE in the timeline until a second source is found (e.g. an Altera
-    filing, not yet searched). "Fab IVb" as a name distinct from "Fab IV" is also SINGLE-SOURCE so far.'
+  notes: CTI is Cypress's own name for the Texas wafer-fab subsidiary; the 1994 and 1995 proxy statements
+    use the Minnesota counterpart, CMI. The Altera part-ownership of CTI is not repeated in the later
+    annual reports read (single source). "Fab IVb" as a name distinct from "Fab IV" is also single-source
+    here.
 - id: cyhist-corp-1996-ar-fabv-fab1rd
   source:
     publisher: Cypress Semiconductor Corporation
@@ -245,17 +244,11 @@ records:
     attribute: line width, FY1996
     value: down to 0.35 microns
     date: '1996'
-  notes: '"Fab V"/"Fab 5" here is a NEW eight-inch Round Rock facility (ground broken 1996), distinct
-    from the original six-inch Fab 2. This is a CONFLICT with the Gale/FundingUniverse-and-Encyclopedia.com
-    secondary account (cyhist-corp-sec-fundinguniverse), which describes only "a second wafer fab in Round
-    Rock" begun April 1996 without a distinct fab number, and with the 1998-era EE Times restructuring
-    story (cyhist-corp-pr-1998-restructure), which describes a still-unbuilt "Fab 5... second half of
-    1999" -- i.e. groundbreaking (1996) and completion/technology-install (1999) are ~3 years apart and
-    different sources catch different ends of that span. No later Cypress filing checked so far (FY1997-2010
-    annual reports) refers again to "Fab 5" or "Fab V" by that name -- the Round Rock facility is called
-    "Fab 2" in FY1997-2010 reports (see cyhist-corp-1997-ar and later), so either the Fab V/5 project
-    was folded into/renamed Fab 2, or cancelled and its site later reused; this is an open question, noted
-    in the progress file.'
+  notes: '"Fab V"/"Fab 5" is a new eight-inch Round Rock fab. Its history in Cypress''s own reports: ground
+    broken on 110 acres (FY1995 report, cyx-ar-fy1995-fabv); construction put on hold in the third quarter
+    of 1996 (FY1996 report, cyx-ar-fy1996-fabv-hold); deferred until late 1999 (FY1997 report, cyx-ar-fy1997-fab-plan);
+    restated in March 1998 as "an 8-inch facility that will be built in the second half of 1999" (cyhist-corp-pr-1998-restructure).
+    No later report found says it was built.'
 - id: cyhist-corp-1997-ar-fabs
   source:
     publisher: Cypress Semiconductor Corporation
@@ -377,8 +370,7 @@ records:
     date: 1998-03, planned for 1999
   notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
-    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
-    below was re-taken from the browser capture.
+    every quote is verbatim in that capture.
 - id: cyhist-corp-2001-ar-transfer
   source:
     publisher: Cypress Semiconductor Corporation
@@ -461,14 +453,9 @@ records:
     value: run in Fab 2; reduced Fab 2's line width from 0.5 µm to 0.35 µm, for embedded non-volatile
       programmable products
     date: '2002'
-  notes: 'This is the earliest occurrence of "SONOS" found in this corpus and ties it explicitly to a
-    0.35-micron process running in Fab 2 -- relevant to (but not a full match for) the seed claim "S4
-    = 0.35 µm SONOS": this document names the process by technology (SONOS) and node (0.35 µm) but does
-    NOT use the label "S4" anywhere; no annual report checked so far (FY1993, FY1995-2010) ever uses "S4".
-    "S4" is UNSUPPORTED as a name for this 0.35 µm SONOS process in Cypress''s own record -- it comes
-    only from the EE Times 2005-12-12 trade-press account (cyhist-corp-pr-2005-grace-deal), which ties
-    "S4" to the PSoC mixed-signal array without stating its node. Flag in the timeline as SINGLE-SOURCE
-    / not confirmed to be 0.35 µm.'
+  notes: The earliest annual report found to name a SONOS process; it places a 0.35-micron SONOS process
+    in Fab 2. No annual report read (FY1993, FY1995-2010) uses the name "S4"; that name comes from the
+    EE Times 2005-12-12 article (cyhist-corp-pr-2005-grace-deal) and from the qualification reports ("S4AD-5").
 - id: cyhist-corp-2003-ar-soi-90nm
   source:
     publisher: Cypress Semiconductor Corporation
@@ -656,18 +643,9 @@ records:
     value: 130-nm logic process, planned for first half of 2006 (article notes Grace was already behind
       its own original schedule)
     date: 2006 H1 (planned)
-  claims_verdict:
-    seed_claim: S4 = 0.35 µm SONOS and S8 = 130 nm SONOS ran in high volume in multiple fabs
-    verdict: PARTIALLY SUPPORTED
-    detail: S8 = 0.13-micron (130 nm) is directly confirmed by Cypress's own FY2010 annual report as a
-      "nonvolatile PSoC wafer fabrication process" (cyhist-corp-2010-ar-s8), and this article independently
-      confirms S4 is the process used for the (predecessor) PSoC mixed-signal array -- but no source found
-      in this project (Cypress filings or trade press) states S4's node as 0.35 µm, or calls S4 a SONOS
-      process by name; that part of the seed remains UNSUPPORTED, not refuted.
   notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
-    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
-    below was re-taken from the browser capture.
+    every quote is verbatim in that capture.
 - id: cyhist-corp-pr-2006-grace-c8-130nm
   source:
     publisher: EE Times
@@ -694,15 +672,9 @@ records:
     value: transferred to Grace Semiconductor, Shanghai, in Q3 2006, to make USB and clock chips starting
       early Q2 2007
     date: 2006-Q3 transfer, 2007-Q2 production
-  claims_verdict:
-    seed_claim: in 2006 Cypress began transferring its 0.13-micron C8 process technology to Grace Semiconductor
-      (Shanghai), for USB and clock chips from Q2 2007 (EE Times 2006-07-19)
-    verdict: SUPPORTED
-    detail: The article, dated exactly 2006-07-19 as the seed states, matches the claim almost verbatim.
   notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
-    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
-    below was re-taken from the browser capture.
+    every quote is verbatim in that capture.
 - id: cyhist-corp-pr-2007-fablite-umc
   source:
     publisher: EE Times
@@ -740,18 +712,9 @@ records:
     value: to produce advanced 65 nm SRAMs, and PSoC and USB devices, transfer starting second half 2007,
       production later 2008
     date: '2007'
-  claims_verdict:
-    seed_claim: Cypress Fab 2 is CTI Round Rock, Texas and was later converted to warehouses
-    verdict: SUPPORTED
-    detail: '"CTI" and "Round Rock, Texas" are directly confirmed as the same facility by Cypress''s own
-      FY1995 annual report (cyhist-corp-1995-ar-cti); the later conversion to warehouses is confirmed
-      by cyhist-corp-pr-2008-roundrock-warehouse (ConnectCRE, reporting the Provident Realty Advisors
-      "Round Rock Eagles Nest Industrial" project). Two independent, non-Cypress sources for the warehouse
-      conversion -- not single-source.'
   notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
-    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
-    below was re-taken from the browser capture.
+    every quote is verbatim in that capture.
 - id: cyhist-corp-pr-2007-sram-foundry-ew
   source:
     publisher: Electronics Weekly
@@ -774,11 +737,6 @@ records:
   - text: Cypress also had a deal with UMC for flash products at 130nm. That deal will be expanded to
       include new flash products at smaller lithography nodes.
     location: article body
-  - text: Cypress expects to save $100m in R&D costs annually from the move, according to Shahin Sharifzadeh,
-      executive v-p of wafer fabs and technology at Cypress. “We’ve been running R&D at about 24 per cent
-      of revenue,” said Sharifzadez. “Our model is for 16 per cent to 17 per cent. By Q4 we expect to
-      achieve that goal.”
-    location: article body
   claims:
   - subject: UMC
     attribute: role change, 2007
@@ -790,10 +748,9 @@ records:
     value: manufacturing Cypress's own 65 nm technology under a manufacturing agreement (before the UMC
       65nm-and-below shift)
     date: '2007'
-  notes: 'Directly fetchable (no retrieval caveat). Nuances the seed claim about Grace/C8: by early 2007
-    Grace was already running some Cypress 65 nm product, not only the 130 nm C8 line from the 2006 transfer
-    -- the Grace relationship widened over 2005-2007 before UMC took the leading edge (65 nm and below)
-    from both Cypress and Grace.'
+  notes: Fetched directly. By early 2007 Grace was running some Cypress 65 nm product, not only the 130
+    nm C8 line; EE Times the same month says Grace "isn't capable of 65-nm manufacturing" (cyhist-corp-pr-2007-fablite-umc),
+    a conflict between the two articles.
 - id: cyhist-corp-pr-2007-fab2exit-semidigest
   source:
     publisher: Semiconductor Digest (semiconductor-digest.com)
@@ -867,11 +824,6 @@ records:
       site converted to a light-industrial/warehouse park ("Round Rock Eagles Nest Industrial", ~$23M,
       ~292,995 sq ft, three buildings) by Provident Realty Advisors, citing Austin Business Journal
     date: 2008 closure; conversion project reported 2026 (retrieval date)
-  claims_verdict:
-    seed_claim: Fab 2 is CTI Round Rock, Texas and was later converted to warehouses
-    verdict: SUPPORTED
-    detail: This article is the direct evidence for the "converted to warehouses" half of the claim; the
-      CTI/Round Rock identity is established by cyhist-corp-1995-ar-cti.
   notes: The article is itself undated on the page as fetched and reports a project "expected to wrap
     up in May 2026" as still upcoming, so it was evidently published not long before this retrieval; it
     cites Austin Business Journal as its source but that article was not independently fetched (not searched).
@@ -900,12 +852,9 @@ records:
     attribute: acquisition
     value: acquired by Cypress in 2008; brought nvSRAM (nonvolatile SRAM) products and the AgigaTech subsidiary
     date: '2008'
-  notes: Reuses/extends data/filings.yaml's cypress-annual-report-fy2008 record (which quotes the Texas-fab-exit
-    passage; this record adds the Simtek acquisition passage, on a different page of the same document).
-    Simtek is one of the acquisitions named in this task's brief as bringing process technology (nvSRAM/SONOS);
-    the FY2008 report frames it as a product-line and subsidiary acquisition and does not itself say Simtek
-    brought a fab or a distinct process technology -- see cyhist-corp-2009-ar-nvsram-umc for the nvSRAM/UMC
-    follow-up.
+  notes: Extends data/filings.yaml's cypress-annual-report-fy2008 record with the Simtek acquisition passage.
+    The report presents Simtek as a product line and subsidiary acquisition; it does not say that Simtek
+    brought a fab or a process technology. See cyhist-corp-2009-ar-nvsram-umc for the nvSRAM/UMC follow-up.
 - id: cyhist-corp-2009-ar-nvsram-umc
   source:
     publisher: Cypress Semiconductor Corporation
@@ -970,18 +919,6 @@ records:
     value: planned to triple relative to Q4 2010, via added Fab 4 Minnesota capacity (kept at ~50-50 internal/external)
       and a second China foundry, already running first PSoC wafers, in production Q4 2011
     date: 2010-2011
-  claims_verdict:
-    seed_claim: S4 = 0.35 µm SONOS and S8 = 130 nm SONOS ran in high volume in multiple fabs
-    verdict: PARTIALLY SUPPORTED
-    detail: S8 = 0.13-micron nonvolatile PSoC process is directly confirmed by Cypress itself, and "ran
-      in ... multiple fabs" is confirmed (Fab 4 Minnesota plus at least one, soon two, China foundries).
-      This report does not use the word "SONOS" next to "S8"; the SONOS identity of the PSoC nonvolatile
-      process is stated generically for Cypress's fabs in FY2002-2006 reports (0.35-micron SONOS in Fab
-      2) but the 0.13-micron generation is called "S8" and "CMOS" in the fab-process list (cyhist-corp-2005-ar-grace-flexmfg,
-      cyhist-corp-2006-ar-history-grace-complete) without pairing "S8" and "SONOS" in the same sentence
-      in any source checked -- treat "S8 = SONOS" as a plausible but UNSUPPORTED inference pending a source
-      that states it directly (a QTP or literature-agent source may do so; see the plan's other two evidence
-      files).
   notes: Second China foundry (2010-2011) is additional to Grace and is not named in this report; not
     yet cross-checked against trade press (open item).
 - id: cyhist-corp-pr-2011-innopower-sonos
@@ -1007,9 +944,6 @@ records:
       genuine mojibake artifact of the source page, not this project's fetch -- other apostrophes on the
       page, e.g. in "Innopower's" and "Cypress's" in later paragraphs, show the same artifact, and it
       is preserved verbatim here rather than silently corrected)
-  - text: '"The agreement with Innopower will be mutually beneficial" said Babak Taheri, Vice President
-      of Corporate Third-Party IP at Cypress.'
-    location: press release body
   claims:
   - subject: Cypress SONOS embedded NVM IP
     attribute: Innopower licence
@@ -1021,11 +955,6 @@ records:
     value: shipping in high volumes at 130-nm at several foundries; verified (not yet high-volume) on
       a 65-nm "LL" process
     date: '2011'
-  claims_verdict:
-    seed_claim: Cypress licensed 130 nm and 65 nm SONOS embedded NVM IP to Innopower in 2011
-    verdict: SUPPORTED
-    detail: The Business Wire release, mirrored verbatim by Design & Reuse and independently found via
-      web search, confirms the claim exactly, including the date.
   notes: BusinessWire's own page could not be fetched directly (HTTP 403 to an automated fetch) and has
     no Wayback capture found; design-reuse.com's verbatim republication was fetched directly (no caveat)
     and is used as the cached copy of record here -- the archive_url field points to it (a mirror), not
@@ -1071,7 +1000,7 @@ records:
   claims:
   - subject: Cypress Semiconductor Corporation
     attribute: founding and first product
-    value: T.J. Rodgers formed Cypress in 1982; debuted a 1.2 µm CMOS memory chip by early 1984
+    value: Cypress formed in 1982; debuted a 1.2 µm CMOS memory chip by early 1984
     date: 1982-1984
   - subject: Fab 2 (Round Rock, Texas)
     attribute: opening
@@ -1119,9 +1048,8 @@ records:
       the company ’ s original manufacturing facility in San Jose , was converted exclusively to research
       and development activities in late 1996.
     location: company overview paragraph
-  - text: '1982: TJ. Rodgers forms Cypress Semiconductor. 1984: Debut of the company ’ s first product
-      — a CMOS chip. 1986: The company ’ s IPO raises $73 million. 1988: Cypress lists on the New York
-      Stock Exchange.'
+  - text: '1984: Debut of the company ’ s first product — a CMOS chip. 1986: The company ’ s IPO raises
+      $73 million. 1988: Cypress lists on the New York Stock Exchange.'
     location: Key Dates list
   claims:
   - subject: Cypress Semiconductor Corporation
@@ -1171,39 +1099,7 @@ records:
     date: 1998 (foundry start), 2000 (acquisition)
   notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
-    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
-    below was re-taken from the browser capture.
-- id: cyhist-corp-sec-ramtron-fabless
-  source:
-    publisher: Yahoo Finance / Nasdaq (Zacks Analyst Blog), web search summary
-    title: Cypress Finally Acquires Ramtron / Cypress Closes Ramtron Buyout
-    date: 2012-11-23
-    form: secondary financial-news summary (not independently fetched; see notes)
-  url: https://www.nasdaq.com/articles/cypress-closes-ramtron-buyout-analyst-blog-2012-11-23
-  archive_url: null
-  retrieved: 2026-09-25
-  cache: null
-  sha256: null
-  quotes: []
-  claims:
-  - subject: Ramtron International Corporation
-    attribute: acquisition and fab status
-    value: acquired by Cypress; merger completed 2012-11-20; Ramtron was a FABLESS F-RAM (ferroelectric
-      RAM) company using Texas Instruments and Toshiba as manufacturing/foundry partners -- it did not
-      bring an owned fab to Cypress
-    date: 2012-09 (agreement) to 2012-11-20 (completed)
-  notes: 'NOT INDEPENDENTLY VERIFIED -- this record has no cached document and no verbatim quote (deliberately
-    left `quotes: []` so the checker does not need to find text that was never fetched); it records only
-    a WebSearch tool summary, used here to flag an IMPORTANT CORRECTION to this task''s brief, which lists
-    Ramtron among "acquisitions that brought process technology or fabs": multiple secondary sources found
-    by search (Yahoo Finance, Nasdaq/Zacks, Wikipedia''s Ramtron International page) describe Ramtron
-    as fabless, manufacturing through Texas Instruments and Toshiba, not as an owner of a fab Cypress
-    inherited. Ramtron''s F-RAM is a process *technology* (brought via IP/product line, not a fab) and
-    is also outside this task''s core 1982-2010 window (deal announced 2012-09-19, completed 2012-11-20).
-    Recommend the coordinator or a later pass fetch a primary source (Cypress''s FY2012 10-K, or the Ramtron
-    press release at https://www.sec.gov/Archives/edgar/data/849502/000119312512269032/d366157dex992.htm,
-    via a Wayback copy, not sec.gov directly) before relying on this record for anything beyond the fabless
-    correction.'
+    every quote is verbatim in that capture.
 - id: cyhist-corp-sec-wikipedia
   source:
     publisher: Wikipedia

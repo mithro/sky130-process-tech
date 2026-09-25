@@ -570,3 +570,67 @@ records:
     The cached text is the diagram's text labels in document order; the thickness labels are not
     tied to their layers in the text, so which label belongs to which layer rests on the drawing
     (as read on the SKY130 overview, footnote pdk-04).
+- id: cyx-ar-fy1995-fabv
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01
+    date: 1996-01-19
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1995.txt
+  quotes:
+  - text: >-
+      Cypress has purchased an additional 110 acres in Round Rock, Texas, and broken ground on Fab V ,
+      which will be almost identical in its state-of-the-art features and output to Fab IV in Minnesota.
+    location: Business review, "Capacity to Grow"
+  claims:
+  - {subject: Fab V, attribute: ground broken, value: '1995-1996, Round Rock', date: 1996}
+  notes: null
+- id: cyx-ar-fy1996-fabv-hold
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-29
+    date: 1997-02-25
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1996.txt
+  quotes:
+  - text: >-
+      The Company also began construction of a new fab in Texas (“Fab V”). However, in the third quarter,
+      the Company decided to put on hold construction of Fab V due to market conditions.
+    location: Management's Discussion and Analysis
+  - text: >-
+      The advanced 256K SRAMs shown in the top photo, manufactured on 0.5-micron and 0.35-micron
+      technologies, also command a price premium.
+    location: Business review, SRAMs
+  claims:
+  - {subject: Fab V, attribute: construction, value: put on hold in Q3 1996, date: 1996}
+  - {subject: 0.35 µm, attribute: 256K SRAMs in production, value: by early 1997, date: 1997}
+  notes: null
+- id: cyx-ar-fy1997-fab-plan
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-28
+    date: 1998-03-06
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1997.txt
+  quotes:
+  - text: >-
+      Instead of buying new equipment and hiring new people to ramp up Fab 4b, we will upgrade existing
+      6-inch equipment in Fab 3 to 8-inch and use much of it to build out Fab 4b.
+    location: Business review, "New Fab Plan"
+  - text: Fab 5 can now be de ferred until late 1999.
+    location: Business review, "New Fab Plan"
+  - text: Fab 2 will stop makin g SRAMs.
+    location: Business review, "New Fab Plan" list
+  claims:
+  - {subject: Fab 4b, attribute: built out with, value: Fab 3 equipment upgraded to 8-inch, date: 1998}
+  - {subject: Fab 5, attribute: deferred, value: until late 1999, date: 1998}
+  notes: The broken words ("de ferred", "makin g") are the cached text's; the checker ignores spaces.

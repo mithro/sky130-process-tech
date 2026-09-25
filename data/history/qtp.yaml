@@ -44,8 +44,8 @@ documents:
       Cu/300Å TiW'
     passivation: 3,000Å TeOs / 6,000Å Si3N4
     free_phosphorus_percent: 0%
-    design_rule: CMOS, Single Poly, Double Metal, 0.5 m (printed with the micron sign dropped; other S4AD-5
-      reports print '0.5 µm')
+    design_rule: CMOS, Single Poly, Double Metal, 0.5 m (printed with the micron sign dropped; the other
+      S4AD-5 reports print 0.35 µm)
     gate_oxide: SiO2 / 110Å
     fab_location: Cypress Semiconductor -- CTI Round Rock, TX
     die_fab_line_id: Fab2, S4AD-5 (SONOS), R42D-5 derivative w/ 6 additional mask
@@ -456,10 +456,6 @@ documents:
     location: p.4, Reliability Test Data heading (cross-references the near-identical qtp-096091 report)
   notes: Essentially a sibling report to qtp-096091 -- same date (Sep 1996), same technology block verbatim
     (R28, Fab3, 0.65 µm), a different but overlapping product list, and no Qualification History table.
-    A WebSearch AI-generated summary for this document's search result claimed it documents 'a technology
-    conversion from BiCMOS to CMOS for CY7C13*/CY7C14* products'; the fetched PDF text contains no mention
-    of BiCMOS at all -- that summary was inaccurate and is not used as a source (recorded here only as
-    a caution about verifying search-engine summaries against the actual document).
 - id: qtp-097476
   doc_type: QTP
   number: '97476'
@@ -2027,10 +2023,7 @@ documents:
   notes: 'This report is a test/sort-site qualification (adding CMI Bloomington as a second sort site for
     a die already fabricated at Powerchip, HsinChu, Taiwan), not a from-scratch technology qualification,
     so it gives no "New Technology" history row for the PowerChip process itself. The Design Rule field
-    prints "0.16um + Stack Capacitor", not "0.165um" as the brief''s working name has it -- the process
-    figures (72 Å gate oxide, 2 metal layers) are otherwise as given. A companion report for the same
-    PowerChip line (8 Meg PSRAM device, QTP 92626/CYK512K16SCCA per the coordinator''s page map) was not
-    independently fetched in this pass.'
+    prints "0.16um + Stack Capacitor"; the report''s title says "0.165µm".'
 - id: qtp-032005
   doc_type: QTP
   number: '032005'
@@ -2459,10 +2452,7 @@ documents:
     layers, 145 Å gate oxide, identical metal composition and passivation) are byte-for-byte the same as
     plain "L28" at the same Fab 2 (qtp-011503, qtp-098333) -- L28EPD reads as an EPD-suffixed variant of
     the same Fab 2 process rather than a differently built technology; no report in this corpus explains
-    what "EPD" stands for. A separate page in the coordinator''s archived-library map, "Fab 2 - L28EPD
-    Technology Qualification" (cypress.com file id 94001), looked like it might be the dedicated
-    "New Technology" report for L28EPD itself, but its PDF was not archived by the Wayback Machine and so
-    could not be retrieved in this pass.'
+    what "EPD" stands for.'
 - id: qtp-032003
   doc_type: QTP
   number: '032003'
@@ -2582,7 +2572,7 @@ documents:
   technology_codes:
   - S4AD-5
   - S4D-5
-  fab: GSMC / Grace Semiconductor Manufacturing Corp., Shanghai, China (transferred from Fab 4/CMI)
+  fab: GSMC / Grace Semiconductor Manufacturing Corp., Shanghai, China
   products:
   - CY8C21234
   - CY8C21334
@@ -2620,7 +2610,8 @@ documents:
   - text: Single Poly, Double Metal, 0.35 µm
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
   notes: 'A third foundry site for S4AD-5, alongside Fab 2 (qtp-021507, qtp-042806) and HHGrace
-    (qtp-151005): here transferred to GSMC (Grace Semiconductor, Shanghai). The Qualification Purpose
+    (qtp-151005): here transferred to GSMC (Grace Semiconductor, Shanghai); the report does not say from
+    which fab. Its only Fab 4 row (071504, Aug 07) is dated a year after the transfer. The Qualification Purpose
     sentence misprints the code as "S4D-5" (dropping the "A", the same slip seen in qtp-051005''s
     "S4D-5CTI"); the process-description heading correctly says "S4AD-5". Design rule 0.35 µm and gate
     oxide 110 Å match qtp-151005 (HHGrace) and qtp-042806/qtp-051005 (Fab 2) exactly -- now four
