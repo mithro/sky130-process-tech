@@ -4,81 +4,460 @@
 This page indexes the manufacturing equipment named on the step pages of
 this reference. It groups the equipment into machine classes, says what
 each class does in the SKY130 flow, quotes what SkyWater has published
-about its own tools of that class, and lists the steps that use it. It
-is compiled from the two machine sections that every step page carries,
-"Machines typically used" and "Machines likely used at SkyWater", read
-on all 171 pages; it adds no evidence of its own about SkyWater's
-tools. Where the step pages
-differ from each other or from the sources they quote, the differences
-are listed under
-{ref}`Open questions and inconsistencies <machines-inconsistencies>`
-rather than resolved here.
+about its own tools of that class, and lists the steps that use it.
 
 ## Machine-class pages
 
 Some classes have a page of their own, describing how the machines work,
 representative 200 mm-era models, what SkyWater lists, the steps
-assigned to the class, consumables and process-integration notes:
+assigned to the class, consumables and process-integration notes. They
+are grouped below by unit process, in the order the SKY130 flow uses
+them; a card's title links the class page, its body is what the
+"Machines typically used" section says the class does in SKY130, and
+its footer is what SkyWater publicly lists for it (footnotes as on the
+class pages).
+
+### Thermal processing
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} Vertical batch furnace: oxidation
+:link: machine-vertical-furnace-oxidation
+:link-type: ref
+
+Thermal oxides: the pad (base) oxide, the trench liner, the oxides of the ONO sequence, the thick and thin gate oxides and the oxidation after the gate etch.
+
++++
+"Furnaces are all made by Aviza": "wet oxidation to 1150C", "dry oxidation to 1150C"[^skw-01]
+:::
+
+:::{grid-item-card} Vertical batch furnace: LPCVD
+:link: machine-vertical-furnace-lpcvd
+:link-type: ref
+
+Isolation nitride, the ONO nitride, the amorphous-silicon gate film and the spacer nitride; one of two options for the gate nitride and the oxide cap; the batch alternative for the spacer oxide and the local-interconnect nitride cap.
+
++++
+"LPCVD nitride, with NH3 and also DH3", "LPCVD polysilicon (undoped), both amorphous and crystalline", "LPCVD silane oxide", "LPCVD oxide/nitride/oxide", "LPCVD BTBAS low temp nitride" (Aviza)[^skw-01]
+:::
+
+:::{grid-item-card} Vertical batch furnace: anneal and alloy
+:link: machine-vertical-furnace-anneal
+:link-type: ref
+
+The hydrogen or forming-gas alloy anneals; the batch alternative for the pre-gate implant anneal and for densifying the fill oxide.
+
++++
+"Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and forming gas alloy" (Aviza)[^skw-01]
+:::
+
+:::{grid-item-card} Rapid thermal processor (RTA, RTO)
+:link: machine-rapid-thermal-processor
+:link-type: ref
+
+Single-wafer lamp-heated anneals: the pre-gate implant anneal, tip and source/drain activation and contact silicidation; one of two routes for the thin gate oxide and the post-gate-etch oxidation; the single-wafer alternative for the liner, ONO and thick gate oxidations, densification and alloy.
+
++++
+"Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01]
+:::
+
+:::{grid-item-card} Plasma nitridation chamber
+:link: machine-plasma-nitridation-chamber
+:link-type: ref
+
+Nitridation of the thin gate oxide, if it is plasma-nitrided.
+
++++
+None named; SkyWater lists "Nitrided gate oxide" as a special module without a tool[^skw-01]
+:::
+
+::::
+
+### Thin-film deposition
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} PECVD (and SACVD)
+:link: machine-pecvd
+:link-type: ref
+
+Low-temperature oxides, nitrides and oxynitrides: gate nitride and oxide cap (one of two options), spacer oxide, the cap oxides, the local-interconnect nitride cap, the ILD overburden option, the MiM capacitor dielectrics, the fuse oxide and the passivation nitride; TEOS-based doped oxide as a PSG option.
+
++++
+"Lam/Novellus/AMAT": "PECVD TEOS, C2 and Producer" ("low temp options"), "PECVD silane oxide/nitride/oxynitride, C1" ("low temp, range of R.I. options"), "PECVD nitride C1"[^skw-01]
+:::
+
+:::{grid-item-card} HDP-CVD
+:link: machine-hdp-cvd
+:link-type: ref
+
+Gap fill: the shallow-trench fill oxide, the phosphorus-doped pre-metal dielectric and the inter-level oxides between local interconnect and metal 4.
+
++++
+"Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" ("high aspect (5:1) fill capability")[^skw-01]; a caption naming "a Novellus high density plasma tool"[^skw-07]
+:::
+
+:::{grid-item-card} Tungsten CVD
+:link: machine-tungsten-cvd
+:link-type: ref
+
+Blanket tungsten fill of the local-interconnect contacts, the metal contacts and vias 1–3, polished back afterwards.
+
++++
+"Lam/Novellus PECVD Tungsten" ("plug fill", "{term}`PNL` option for high aspect ratio (up to 10:1)")[^skw-01]
+:::
+
+:::{grid-item-card} PVD (sputtering) cluster tool
+:link: machine-pvd-cluster-tool
+:link-type: ref
+
+The Ti/TiN contact liner and {term}`IMP` TiN via liners (this reference's reading; see {ref}`TI/TIN1 <step-097>`), the TiN local interconnect, the Ti/Al–Cu/TiW metal stacks (the stack of Cypress's 2013 report; a 2014 report records a qualified change away from it, see {ref}`TIAL6 <step-112>` and {ref}`overview-metal-cap`) and the capacitor top plates (TiW on this reference's reading; see {ref}`CAPTIW1 <step-136>`).
+
++++
+"AMAT PVD Metal": "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW", "{term}`ESC` TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt", "Niobium", "SiO2"[^skw-01]
+:::
+
+::::
+
+### Lithography
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} i-line stepper or scanner
+:link: machine-i-line-stepper
+:link-type: ref
+
+Exposure of the non-critical levels: implant blocks, the memory, oxide and resistor masks, the capacitor masks, metal 5, the nitride seal and the pad mask; either class for metals 3 and 4.
+
++++
+"ASML I-line stepper", "ASML I-line scanner"[^skw-01]
+:::
+
+:::{grid-item-card} DUV (KrF, 248 nm) stepper or scanner
+:link: machine-duv-krf-stepper
+:link-type: ref
+
+Exposure of the critical levels: active, poly gate, nitride poly cut, local-interconnect contact and local interconnect, metal contact, metals 1–2 and vias 1–3; also via 4, after the 248 nm mask type the process-steps sheet records for its plate (our reading; see the notes);[^steps-sheet] either class for metals 3 and 4.
+
++++
+"ASML DUV stepper", "ASML DUV scanner"; also "ASML 193nm single stage scanner – 90nm CD" and "ASML 193nm twin stage scanner – sub 65nm CD"[^skw-01]
+:::
+
+:::{grid-item-card} Coat/develop track
+:link: machine-coat-develop-track
+:link-type: ref
+
+Resist coat, bake and develop, linked to the exposure tool.
+
++++
+"DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track"[^skw-01]
+:::
+
+:::{grid-item-card} CD-SEM and overlay metrology
+:link: machine-cd-sem-overlay-metrology
+:link-type: ref
+
+Linewidth after develop and after etch ({term}`CD-SEM`); layer-to-layer registration.
+
++++
+"AMAT Verity (multiple versions) CD", "AMAT VeraSEM", "KLA 5200/5300/Archer overlay"[^skw-01]
+:::
+
+::::
+
+### Etch
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} Plasma etcher: silicon and polysilicon
+:link: machine-plasma-etcher-silicon
+:link-type: ref
+
+High-density etching of the shallow trenches, the tunnel-mask ARC, the ONO stack (one of two options) and the poly gate.
+
++++
+Under "Poly/Silicon Etch": "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" ("gate, trench, W/WN"), "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01]
+:::
+
+:::{grid-item-card} Plasma etcher: dielectric and nitride
+:link: machine-plasma-etcher-dielectric
+:link-type: ref
+
+Etching of the isolation nitride, the spacer nitride, the nitride poly cut, the contact and via holes, the ONO stack (one of two options), the nitride seal and the pad opening; an option for an inorganic tunnel-mask ARC.
+
++++
+None: the local-interconnect contact, contact, via and nitride-seal etch pages state that no dielectric etcher is named[^skw-01] and, like the pad etch page, weigh the three poly/silicon etchers above instead (second table)
+:::
+
+:::{grid-item-card} Plasma etcher: metal
+:link: machine-plasma-etcher-metal
+:link-type: ref
+
+Etching of the TiN local interconnect, the metal 1–5 stacks and the capacitor top plates (TiW on this reference's reading; see {ref}`CAPTIW1 <step-136>`).
+
++++
+Under "Metal Etch": "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt"[^skw-01]
+:::
+
+::::
+
+### Ion implantation
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} Medium-current ion implanter
+:link: machine-medium-current-implanter
+:link-type: ref
+
+Low- and medium-dose implants, with tilt: channel and threshold implants, punch-through and depletion implants, drift-well implants, resistor implants, tips and halos.
+
++++
+"Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt"[^skw-01]
+:::
+
+:::{grid-item-card} High-current ion implanter
+:link: machine-high-current-implanter
+:link-type: ref
+
+High-dose implants: poly gate doping, the arsenic tip and the source/drain implants; one option for the resistor and lightly doped tip implants.
+
++++
+"Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12 to 5e16, tilt/twist"[^skw-01]
+:::
+
+:::{grid-item-card} High-energy ion implanter
+:link: machine-high-energy-implanter
+:link-type: ref
+
+Deep implants: the deep N-well, N-well and P-well implants and (one of two options) the drift-well implants.
+
++++
+"Axcelis GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15, tilt/twist"[^skw-01]
+:::
+
+::::
+
+### Resist strip and clean
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} Downstream plasma asher
+:link: machine-downstream-plasma-asher
+:link-type: ref
+
+Removal of implanted resist after the implant masks, and of resist after etches.
+
++++
+"Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C", "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"[^skw-01]
+:::
+
+:::{grid-item-card} Wet bench and spray processor
+:link: machine-wet-bench
+:link-type: ref
+
+Hot-phosphoric nitride strip; HF or BOE etches of the tunnel windows and the thick gate oxide and the sacrificial etch; SPM, SC-1 and SC-2 cleans; solvent strips.
+
++++
+"Akrion Gamma Batch Wet Bench" ("Sulfuric, SC1, phosphoric, BOE, spin or IPA dry"), "DNS wet bench industry standard HF/SC1/SC2" ("dilute HF-last with IPA dry"), "FSI Mercury industry standard HF/SC1/SC2 rotational", "Batch Rotational" ("EKS265, EKC270 solvents, CO2 injected DI")[^skw-01]
+:::
+
+:::{grid-item-card} Single-wafer spin processor
+:link: machine-single-wafer-spin-processor
+:link-type: ref
+
+Backside film removal; an option for the HF etches and for cleans; the post-CMP clean candidate on the CMP pages.
+
++++
+"Single Wafer": "SEZ223, Davinci, HF, DSP+HF, titration controlled"[^skw-01]; a caption naming "a SEZ etcher tool"[^skw-07]
+:::
+
+::::
+
+### Planarisation
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} CMP polisher
+:link: machine-cmp-polisher
+:link-type: ref
+
+Planarisation of the trench fill to the nitride, the PSG over the poly and the inter-level oxides over local interconnect and metals 1–4; removal of the tungsten overburden at the contact and via levels (this reference's readings; see {ref}`category-cmp`).
+
++++
+"AMAT Mirra CMP": "oxide", "nitride", "niobium", "aluminum", "tungsten", "high selectivity tungsten", "copper"; "On board metrology with feed forward and backward"[^skw-01]
+:::
+
+:::{grid-item-card} Post-CMP cleaner
+:link: machine-post-cmp-cleaner
+:link-type: ref
+
+Brush-scrub and chemical clean of slurry residue after each polish.
+
++++
+No brush scrubber named; the CMP pages point to "SEZ223, Davinci", and the Mirra entry lists "Track ammonia clean" and "IPA clean"[^skw-01]
+:::
+
+::::
+
+### Metrology, inspection and test
+
+::::{grid} 1 2 2 2
+:gutter: 2
+
+:::{grid-item-card} Starting material: incoming inspection, marking and sorting
+:link: machine-starting-material
+:link-type: ref
+
+Crystal growth, slicing and polishing are done at the wafer vendor; in the fab the SMAT page lists a surface scanner, a laser marker, a wafer sorter and a batch wet bench for the incoming wafers.
+
++++
+"Scribe: Lumonics Superclean"[^skw-01]
+:::
+
+:::{grid-item-card} Defect and particle inspection
+:link: machine-defect-inspection
+:link-type: ref
+
+Unpatterned-wafer particle scans and patterned-wafer defect inspection.
+
++++
+None on the capabilities page; a job posting reads "SEM/AIT/KLA/SP1/EV300/1X"[^job-06]
+:::
+
+:::{grid-item-card} Film thickness and stress metrology
+:link: machine-film-thickness-metrology
+:link-type: ref
+
+Ellipsometers, reflectometers, FTIR and XRF gauges, and wafer-bow stress gauges on product or monitor wafers.
+
++++
+None named apart from the Mirra's "On board metrology"[^skw-01]
+:::
+
+:::{grid-item-card} Sheet-resistance and dose metrology
+:link: machine-sheet-resistance-metrology
+:link-type: ref
+
+Four-point probe and thermal-wave (modulated reflectance) monitors.
+
++++
+None named
+:::
+
+:::{grid-item-card} Cross-section SEM and profilers
+:link: machine-cross-section-sem-profilers
+:link-type: ref
+
+Trench, spacer, gap-fill and etch profiles; step height and dishing after CMP.
+
++++
+None assigned by a step page; the physical-analysis list includes "FEI Dual Beam FIB/SEM" and "Hitachi S-4800"[^skw-01]
+:::
+
+:::{grid-item-card} Parametric tester and prober
+:link: machine-parametric-tester
+:link-type: ref
+
+Electrical test of the scribe-line structures at the end of the flow; C–V, leakage and chain structures as electrical monitors.
+
++++
+"HP 4062UX" ("DC, capacitance, pulse generator, frequency counter"), "Engineering manual Probe Station"; no production prober[^skw-01]
+:::
+
+::::
 
 ```{toctree}
 :maxdepth: 1
+:hidden:
+:caption: Thermal processing
 
-medium-current-implanter
-high-current-implanter
-high-energy-implanter
 vertical-furnace-oxidation
 vertical-furnace-lpcvd
 vertical-furnace-anneal
 rapid-thermal-processor
 plasma-nitridation-chamber
-plasma-etcher-silicon
-plasma-etcher-dielectric
-plasma-etcher-metal
-downstream-plasma-asher
-wet-bench
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Thin-film deposition
+
 pecvd
 hdp-cvd
 tungsten-cvd
 pvd-cluster-tool
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Lithography
+
 i-line-stepper
 duv-krf-stepper
 coat-develop-track
 cd-sem-overlay-metrology
-starting-material
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Etch
+
+plasma-etcher-silicon
+plasma-etcher-dielectric
+plasma-etcher-metal
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Ion implantation
+
+medium-current-implanter
+high-current-implanter
+high-energy-implanter
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Resist strip and clean
+
+downstream-plasma-asher
+wet-bench
 single-wafer-spin-processor
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Planarisation
+
 cmp-polisher
 post-cmp-cleaner
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Metrology, inspection and test
+
+starting-material
 defect-inspection
 film-thickness-metrology
 sheet-resistance-metrology
 cross-section-sem-profilers
 parametric-tester
 ```
-
-(machines-reading-evidence)=
-### Reading the SkyWater evidence
-
-Each machine-class page quotes SkyWater's *Facilities & Capabilities*
-entries for its class, grades them on the inventory's strength scale
-({ref}`below <machines-typically-vs-skywater>`) and adds only what is
-specific to the class. Four caveats apply to every class page and are
-not repeated there:
-
-* A listed tool shows what is on the Minnesota floor now, not what built
-  the first S8 wafers ({ref}`below <machines-skywater-published>`).[^skw-01]
-* SkyWater's maintenance-technician profile shows technicians reviewing
-  equipment schematics "to troubleshoot complex equipment, like an
-  implanter", and has captions naming "a Novellus high density plasma
-  tool" and "a SEZ etcher tool"; it corroborates in-house maintenance
-  of those tools but names no model; this index groups the SEZ tool
-  with the single-wafer spin processors, not the plasma
-  etchers.[^skw-07]
-* The S-1 names semiconductor-equipment companies, Axcelis Technologies
-  among them, only in executive and director biographies, not as
-  suppliers, and names no etch, strip or wet-bench vendor.[^sec-01]
-* The capabilities page names no process step, so every assignment of
-  a SKY130 step to a listed tool is this reference's reading, graded on
-  the step page.
 
 ## Equipment classes in a 200 mm, 130 nm fab
 
@@ -119,6 +498,39 @@ class. The classes follow the unit processes of the category pages:
   and prober at the end of the flow ({ref}`category-test`); incoming
   wafer inspection belongs with the starting material
   ({ref}`category-substrate`).
+
+(machines-reading-evidence)=
+## Reading the SkyWater evidence
+
+The index is compiled from the two machine sections that every step page
+carries, "Machines typically used" and "Machines likely used at
+SkyWater", read on all 171 pages; it adds no evidence of its own about
+SkyWater's tools. Where the step pages differ from each other or from
+the sources they quote, the differences are listed under
+{ref}`Open questions and inconsistencies <machines-inconsistencies>`
+rather than resolved here.
+
+Each machine-class page quotes SkyWater's *Facilities & Capabilities*
+entries for its class, grades them on the inventory's strength scale
+({ref}`below <machines-typically-vs-skywater>`) and adds only what is
+specific to the class. Four caveats apply to every class page and are
+not repeated there:
+
+* A listed tool shows what is on the Minnesota floor now, not what built
+  the first S8 wafers ({ref}`below <machines-skywater-published>`).[^skw-01]
+* SkyWater's maintenance-technician profile shows technicians reviewing
+  equipment schematics "to troubleshoot complex equipment, like an
+  implanter", and has captions naming "a Novellus high density plasma
+  tool" and "a SEZ etcher tool"; it corroborates in-house maintenance
+  of those tools but names no model; this index groups the SEZ tool
+  with the single-wafer spin processors, not the plasma
+  etchers.[^skw-07]
+* The S-1 names semiconductor-equipment companies, Axcelis Technologies
+  among them, only in executive and director biographies, not as
+  suppliers, and names no etch, strip or wet-bench vendor.[^sec-01]
+* The capabilities page names no process step, so every assignment of
+  a SKY130 step to a listed tool is this reference's reading, graded on
+  the step page.
 
 (machines-skywater-published)=
 ## What SkyWater has published about its tools
@@ -207,14 +619,15 @@ In the table:
 * **Machine class** links to the machine-class page for the classes
   that have one, and otherwise to the category page that describes the
   class and its physics.
-* **What it does in SKY130** summarises the step pages; the films and
-  purposes are as the step pages describe them, including the readings
-  they mark as inferences.
-* **Tools SkyWater lists publicly** quotes the capabilities page exactly
-  (sub-entries after a colon or in parentheses), or the profile or
-  posting where marked; these are the entries the step pages quote. A listed tool is
-  not evidence that a particular step runs on it; the second table
-  gives the step pages' assignments.
+* Each card's **body** ("What it does in SKY130" above) summarises the
+  step pages; the films and purposes are as the step pages describe
+  them, including the readings they mark as inferences.
+* Each card's **footer** ("Tools SkyWater lists publicly" above) quotes
+  the capabilities page exactly (sub-entries after a colon or in
+  parentheses), or the profile or posting where marked; these are the
+  entries the step pages quote. A listed tool is not evidence that a
+  particular step runs on it; the second table gives the step pages'
+  assignments.
 * **Steps** gives, by code, the steps whose "Machines typically used"
   section names the class as the process tool or as one of two options,
   and after *alternative:* the steps where it is named only as an
@@ -229,38 +642,42 @@ lists) finds all 171 steps in at least one row, and, outside the
 *alternative:* lists, 25 steps in two, where a page offers two tool
 classes as equal options.
 
-| Machine class | What it does in SKY130 | Tools SkyWater lists publicly | Steps |
-|---------------|------------------------|-------------------------------|-------|
-| {ref}`Starting material <machine-starting-material>`: incoming inspection, marking and sorting | Crystal growth, slicing and polishing are done at the wafer vendor; in the fab the SMAT page lists a surface scanner, a laser marker, a wafer sorter and a batch wet bench for the incoming wafers. | "Scribe: Lumonics Superclean"[^skw-01] | {ref}`SMAT <step-001>` |
-| {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>`: oxidation | Thermal oxides: the pad (base) oxide, the trench liner, the oxides of the ONO sequence, the thick and thin gate oxides and the oxidation after the gate etch. | "Furnaces are all made by Aviza": "wet oxidation to 1150C", "dry oxidation to 1150C"[^skw-01] | {ref}`BOX <step-002>`, {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>` |
-| {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>`: LPCVD | Isolation nitride, the ONO nitride, the amorphous-silicon gate film and the spacer nitride; one of two options for the gate nitride and the oxide cap; the batch alternative for the spacer oxide and the local-interconnect nitride cap. | "LPCVD nitride, with NH3 and also DH3", "LPCVD polysilicon (undoped), both amorphous and crystalline", "LPCVD silane oxide", "LPCVD oxide/nitride/oxide", "LPCVD BTBAS low temp nitride" (Aviza)[^skw-01] | {ref}`ISONIT <step-003>`, {ref}`ONO <step-040>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPNIT <step-076>`; *alternative:* {ref}`SPOX <step-080>`, {ref}`LINIT <step-104>` |
-| {ref}`Vertical batch furnace <machine-vertical-furnace-anneal>`: anneal and alloy | The hydrogen or forming-gas alloy anneals; the batch alternative for the pre-gate implant anneal and for densifying the fill oxide. | "Ar anneal to 1150C", "N2 anneal to 1150C", "H2 and forming gas alloy" (Aviza)[^skw-01] | {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; *alternative:* {ref}`FILOX <step-011>`, {ref}`RTAI <step-034>` |
-| {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` (RTA, RTO) | Single-wafer lamp-heated anneals: the pre-gate implant anneal, tip and source/drain activation and contact silicidation; one of two routes for the thin gate oxide and the post-gate-etch oxidation; the single-wafer alternative for the liner, ONO and thick gate oxidations, densification and alloy. | "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] | {ref}`RTAI <step-034>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>`; *alternative:* {ref}`LINOX <step-010>`, {ref}`FILOX <step-011>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
-| {ref}`Plasma nitridation chamber <machine-plasma-nitridation-chamber>` | Nitridation of the thin gate oxide, if it is plasma-nitrided. | None named; SkyWater lists "Nitrided gate oxide" as a special module without a tool[^skw-01] | *alternative:* {ref}`LVGOX <step-047>` |
-| {ref}`PECVD <machine-pecvd>` (and SACVD) | Low-temperature oxides, nitrides and oxynitrides: gate nitride and oxide cap (one of two options), spacer oxide, the cap oxides, the local-interconnect nitride cap, the ILD overburden option, the MiM capacitor dielectrics, the fuse oxide and the passivation nitride; TEOS-based doped oxide as a PSG option. | "Lam/Novellus/AMAT": "PECVD TEOS, C2 and Producer" ("low temp options"), "PECVD silane oxide/nitride/oxynitride, C1" ("low temp, range of R.I. options"), "PECVD nitride C1"[^skw-01] | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`, {ref}`LINIT <step-104>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NCAPOX3 <step-117>`, {ref}`NILD4 <step-126>`, {ref}`NCAPOX4 <step-128>`, {ref}`CAPILD <step-135>`, {ref}`NILD5 <step-141>`, {ref}`NCAPOX5 <step-143>`, {ref}`CAPILD2 <step-150>`, {ref}`NILD6 <step-156>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`, {ref}`NTSD <step-167>`; *alternative:* {ref}`SPNIT <step-076>` |
-| {ref}`HDP-CVD <machine-hdp-cvd>` | Gap fill: the shallow-trench fill oxide, the phosphorus-doped pre-metal dielectric and the inter-level oxides between local interconnect and metal 4. | "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" ("high aspect (5:1) fill capability")[^skw-01]; a caption naming "a Novellus high density plasma tool"[^skw-07] | {ref}`FILOX <step-011>`, {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
-| {ref}`Tungsten CVD <machine-tungsten-cvd>` | Blanket tungsten fill of the local-interconnect contacts, the metal contacts and vias 1–3, polished back afterwards. | "Lam/Novellus PECVD Tungsten" ("plug fill", "{term}`PNL` option for high aspect ratio (up to 10:1)")[^skw-01] | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>` |
-| {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | The Ti/TiN contact liner and {term}`IMP` TiN via liners (this reference's reading; see {ref}`TI/TIN1 <step-097>`), the TiN local interconnect, the Ti/Al–Cu/TiW metal stacks (the stack of Cypress's 2013 report; a 2014 report records a qualified change away from it, see {ref}`TIAL6 <step-112>` and {ref}`overview-metal-cap`) and the capacitor top plates (TiW on this reference's reading; see {ref}`CAPTIW1 <step-136>`). | "AMAT PVD Metal": "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW", "{term}`ESC` TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt", "Niobium", "SiO2"[^skw-01] | {ref}`TI/TIN1 <step-097>`, {ref}`LITIN <step-101>`, {ref}`TIN2 <step-109>`, {ref}`TIAL6 <step-112>`, {ref}`TIN3 <step-120>`, {ref}`TIAL12 <step-123>`, {ref}`TIN4 <step-131>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`TIN5 <step-146>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
-| {ref}`i-line stepper or scanner <machine-i-line-stepper>` | Exposure of the non-critical levels: implant blocks, the memory, oxide and resistor masks, the capacitor masks, metal 5, the nitride seal and the pad mask; either class for metals 3 and 4. | "ASML I-line stepper", "ASML I-line scanner"[^skw-01] | {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`; *alternative:* {ref}`FOM <step-004>`, {ref}`NPCM <step-078>`, {ref}`VIM4 <step-159>` |
-| {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | Exposure of the critical levels: active, poly gate, nitride poly cut, local-interconnect contact and local interconnect, metal contact, metals 1–2 and vias 1–3; also via 4, after the 248 nm mask type the process-steps sheet records for its plate (our reading; see the notes);[^steps-sheet] either class for metals 3 and 4. | "ASML DUV stepper", "ASML DUV scanner"; also "ASML 193nm single stage scanner – 90nm CD" and "ASML 193nm twin stage scanner – sub 65nm CD"[^skw-01] | {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`; *alternative:* {ref}`DNM <step-007>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` |
-| {ref}`Coat/develop track <machine-coat-develop-track>` | Resist coat, bake and develop, linked to the exposure tool. | "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track"[^skw-01] | all 36 mask steps, {ref}`FOM <step-004>` to {ref}`PDM <step-168>` ({ref}`masks-index`) |
-| {ref}`CD-SEM and overlay metrology <machine-cd-sem-overlay-metrology>` | Linewidth after develop and after etch ({term}`CD-SEM`); layer-to-layer registration. | "AMAT Verity (multiple versions) CD", "AMAT VeraSEM", "KLA 5200/5300/Archer overlay"[^skw-01] | *overlay:* all 36 mask steps; *CD-SEM:* {ref}`FOM <step-004>`–{ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`TUNARCE <step-036>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`P1ME <step-062>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`, {ref}`LI1M <step-102>`, {ref}`LI1ME <step-103>`, {ref}`CTM1 <step-107>`, {ref}`CTME <step-108>`, {ref}`MM1 <step-113>`, {ref}`MM1E <step-114>`, {ref}`VIM <step-118>`, {ref}`VIME <step-119>`, {ref}`MM2 <step-124>`, {ref}`MM2E <step-125>`, {ref}`VIM2 <step-129>`, {ref}`VIM2E <step-130>`, {ref}`CAPM <step-137>`–{ref}`MM3E <step-140>`, {ref}`VIM3 <step-144>`, {ref}`VIM3E <step-145>`, {ref}`CAP2M <step-152>`–{ref}`MM4E <step-155>`, {ref}`VIM4 <step-159>`, {ref}`VIM4E <step-160>`, {ref}`MM5 <step-162>`, {ref}`MM5E <step-163>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` | High-density etching of the shallow trenches, the tunnel-mask ARC, the ONO stack (one of two options) and the poly gate. | Under "Poly/Silicon Etch": "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" ("gate, trench, W/WN"), "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01] | {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>` |
-| {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | Etching of the isolation nitride, the spacer nitride, the nitride poly cut, the contact and via holes, the ONO stack (one of two options), the nitride seal and the pad opening; an option for an inorganic tunnel-mask ARC. | None: the local-interconnect contact, contact, via and nitride-seal etch pages state that no dielectric etcher is named[^skw-01] and, like the pad etch page, weigh the three poly/silicon etchers above instead (second table) | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>`; *alternative:* {ref}`TUNARCE <step-036>` |
-| {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | Etching of the TiN local interconnect, the metal 1–5 stacks and the capacitor top plates (TiW on this reference's reading; see {ref}`CAPTIW1 <step-136>`). | Under "Metal Etch": "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt"[^skw-01] | {ref}`LI1ME <step-103>`, {ref}`MM1E <step-114>`, {ref}`MM2E <step-125>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`MM5E <step-163>` |
-| {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | Removal of implanted resist after the implant masks, and of resist after etches. | "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C", "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C"[^skw-01] | {ref}`DNIS <step-009>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`; *alternative:* {ref}`TUNARCE <step-036>`; *also for the strip after an etch:* {ref}`STIE <step-006>`, {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`P1ME <step-062>`, {ref}`NPCME <step-079>`, {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
-| {ref}`Wet bench and spray processor <machine-wet-bench>` | Hot-phosphoric nitride strip; HF or BOE etches of the tunnel windows and the thick gate oxide and the sacrificial etch; SPM, SC-1 and SC-2 cleans; solvent strips. | "Akrion Gamma Batch Wet Bench" ("Sulfuric, SC1, phosphoric, BOE, spin or IPA dry"), "DNS wet bench industry standard HF/SC1/SC2" ("dilute HF-last with IPA dry"), "FSI Mercury industry standard HF/SC1/SC2 rotational", "Batch Rotational" ("EKS265, EKC270 solvents, CO2 injected DI")[^skw-01] | {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`SACETCH <step-095>`; *also for a clean or strip:* {ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`STIE <step-006>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`ONOME <step-042>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
-| {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` | Backside film removal; an option for the HF etches and for cleans; the post-CMP clean candidate on the CMP pages. | "Single Wafer": "SEZ223, Davinci, HF, DSP+HF, titration controlled"[^skw-01]; a caption naming "a SEZ etcher tool"[^skw-07] | {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`, {ref}`SACETCH <step-095>`; *also for a clean:* {ref}`CMPNIT <step-012>`, {ref}`PWDEIS <step-033>`, {ref}`CTME <step-108>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`VIME <step-119>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`VIM2E <step-130>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`VIM3E <step-145>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
-| {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | Low- and medium-dose implants, with tilt: channel and threshold implants, punch-through and depletion implants, drift-well implants, resistor implants, tips and halos. | "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14, 0-60 deg tilt"[^skw-01] | {ref}`LVTNI <step-015>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`, {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>`; *alternative:* {ref}`NWI <step-018>` |
-| {ref}`High-current ion implanter <machine-high-current-implanter>` | High-dose implants: poly gate doping, the arsenic tip and the source/drain implants; one option for the resistor and lightly doped tip implants. | "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev, 5e12 to 5e16, tilt/twist"[^skw-01] | {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; *alternative:* {ref}`LDASTI <step-072>` |
-| {ref}`High-energy ion implanter <machine-high-energy-implanter>` | Deep implants: the deep N-well, N-well and P-well implants and (one of two options) the drift-well implants. | "Axcelis GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15, tilt/twist"[^skw-01] | {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; *alternative:* {ref}`LVTPI <step-020>` |
-| {ref}`CMP polisher <machine-cmp-polisher>` | Planarisation of the trench fill to the nitride, the PSG over the poly and the inter-level oxides over local interconnect and metals 1–4; removal of the tungsten overburden at the contact and via levels (this reference's readings; see {ref}`category-cmp`). | "AMAT Mirra CMP": "oxide", "nitride", "niobium", "aluminum", "tungsten", "high selectivity tungsten", "copper"; "On board metrology with feed forward and backward"[^skw-01] | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
-| {ref}`Post-CMP cleaner <machine-post-cmp-cleaner>` | Brush-scrub and chemical clean of slurry residue after each polish. | No brush scrubber named; the CMP pages point to "SEZ223, Davinci", and the Mirra entry lists "Track ammonia clean" and "IPA clean"[^skw-01] | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
-| {ref}`Defect and particle inspection <machine-defect-inspection>` | Unpatterned-wafer particle scans and patterned-wafer defect inspection. | None on the capabilities page; a job posting reads "SEM/AIT/KLA/SP1/EV300/1X"[^job-06] | {ref}`SMAT <step-001>`, {ref}`STINITE <step-005>`, {ref}`DNIS <step-009>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`SAGD <step-048>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`P1M <step-061>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PSDI <step-082>`, {ref}`PDIS <step-084>`, {ref}`NSDI <step-086>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`NCAPOX <step-091>`, {ref}`SACETCH <step-095>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`CTM1 <step-107>`, {ref}`WDEP2 <step-110>`, {ref}`WCMP2 <step-111>`, {ref}`MM1 <step-113>`, {ref}`CMPM <step-116>`–{ref}`VIM <step-118>`, {ref}`WDEP3 <step-121>`, {ref}`WCMP3 <step-122>`, {ref}`MM2 <step-124>`, {ref}`CMPM2 <step-127>`–{ref}`VIM2 <step-129>`, {ref}`WDEP4 <step-132>`, {ref}`WCMP4 <step-133>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`CMPM3 <step-142>`–{ref}`VIM3 <step-144>`, {ref}`WDEP5 <step-147>`, {ref}`WCMP5 <step-148>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`CMPM4 <step-157>`–{ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NFUSOX <step-164>`, {ref}`NSM <step-165>`, {ref}`NTSD <step-167>`–{ref}`PDME <step-169>` |
-| {ref}`Film thickness and stress metrology <machine-film-thickness-metrology>` | Ellipsometers, reflectometers, FTIR and XRF gauges, and wafer-bow stress gauges on product or monitor wafers. | None named apart from the Mirra's "On board metrology"[^skw-01] | {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`, {ref}`LINOX <step-010>`–{ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`GOXETCH <step-046>`–{ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`, {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`–{ref}`RTAD2 <step-092>`, {ref}`SACETCH <step-095>`, {ref}`TI/TIN1 <step-097>`, {ref}`WDEP <step-099>`–{ref}`LITIN <step-101>`, {ref}`LINIT <step-104>`–{ref}`CMPL <step-106>`, {ref}`TIN2 <step-109>`–{ref}`TIAL6 <step-112>`, {ref}`NILD3 <step-115>`–{ref}`NCAPOX3 <step-117>`, {ref}`TIN3 <step-120>`–{ref}`TIAL12 <step-123>`, {ref}`NILD4 <step-126>`–{ref}`NCAPOX4 <step-128>`, {ref}`TIN4 <step-131>`–{ref}`CAPTIW1 <step-136>`, {ref}`CAPME <step-138>`, {ref}`NILD5 <step-141>`–{ref}`NCAPOX5 <step-143>`, {ref}`TIN5 <step-146>`–{ref}`CAPTIW2 <step-151>`, {ref}`CAP2ME <step-153>`, {ref}`NILD6 <step-156>`–{ref}`NCAPOX6 <step-158>`, {ref}`WTIAL5 <step-161>`, {ref}`NFUSOX <step-164>`, {ref}`NTSD <step-167>` |
-| {ref}`Sheet-resistance and dose metrology <machine-sheet-resistance-metrology>` | Four-point probe and thermal-wave (modulated reflectance) monitors. | None named | {ref}`DNI <step-008>`, {ref}`LVTNI <step-015>`, {ref}`NWI <step-018>`–{ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`RTAI <step-034>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`, {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`TIPRTAD <step-075>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`TI/TIN1 <step-097>`–{ref}`WDEP <step-099>`, {ref}`LITIN <step-101>`, {ref}`TIN2 <step-109>`, {ref}`WDEP2 <step-110>`, {ref}`TIAL6 <step-112>`, {ref}`TIN3 <step-120>`, {ref}`WDEP3 <step-121>`, {ref}`TIAL12 <step-123>`, {ref}`TIN4 <step-131>`, {ref}`WDEP4 <step-132>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
-| {ref}`Cross-section SEM and profilers <machine-cross-section-sem-profilers>` | Trench, spacer, gap-fill and etch profiles; step height and dishing after CMP. | None assigned by a step page; the physical-analysis list includes "FEI Dual Beam FIB/SEM" and "Hitachi S-4800"[^skw-01] | *cross-section SEM:* {ref}`STIE <step-006>`, {ref}`LINOX <step-010>`, {ref}`FILOX <step-011>`, {ref}`P1ME <step-062>`, {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PSG <step-089>`, {ref}`LICM1E <step-094>`, {ref}`TI/TIN1 <step-097>`, {ref}`WDEP <step-099>`, {ref}`LI1ME <step-103>`–{ref}`NILD2 <step-105>`, {ref}`CTME <step-108>`–{ref}`WDEP2 <step-110>`, {ref}`MM1E <step-114>`, {ref}`NILD3 <step-115>`, {ref}`VIME <step-119>`–{ref}`WDEP3 <step-121>`, {ref}`MM2E <step-125>`, {ref}`NILD4 <step-126>`, {ref}`VIM2E <step-130>`–{ref}`WDEP4 <step-132>`, {ref}`MM3E <step-140>`, {ref}`NILD5 <step-141>`, {ref}`VIM3E <step-145>`–{ref}`WDEP5 <step-147>`, {ref}`MM4E <step-155>`, {ref}`NILD6 <step-156>`, {ref}`VIM4E <step-160>`, {ref}`WTIAL5 <step-161>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`; *profiler or AFM:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` |
-| {ref}`Parametric tester and prober <machine-parametric-tester>` | Electrical test of the scribe-line structures at the end of the flow; C–V, leakage and chain structures as electrical monitors. | "HP 4062UX" ("DC, capacitance, pulse generator, frequency counter"), "Engineering manual Probe Station"; no production prober[^skw-01] | {ref}`HPETEST <step-171>`; *electrical monitor named:* {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`ALLY1 <step-096>`, {ref}`CSIL <step-098>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAPILD2 <step-150>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`ALLY <step-170>` |
+:::{table} SKY130 machine classes and the steps whose "Machines typically used" section names them
+:widths: 30 70
+
+| Machine class | Steps |
+|---|---|
+| {ref}`Starting material <machine-starting-material>`: incoming inspection, marking and sorting | {ref}`SMAT <step-001>` |
+| {ref}`Vertical batch furnace <machine-vertical-furnace-oxidation>`: oxidation | {ref}`BOX <step-002>`, {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>` |
+| {ref}`Vertical batch furnace <machine-vertical-furnace-lpcvd>`: LPCVD | {ref}`ISONIT <step-003>`, {ref}`ONO <step-040>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPNIT <step-076>`; *alternative:* {ref}`SPOX <step-080>`, {ref}`LINIT <step-104>` |
+| {ref}`Vertical batch furnace <machine-vertical-furnace-anneal>`: anneal and alloy | {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; *alternative:* {ref}`FILOX <step-011>`, {ref}`RTAI <step-034>` |
+| {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` (RTA, RTO) | {ref}`RTAI <step-034>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>`; *alternative:* {ref}`LINOX <step-010>`, {ref}`FILOX <step-011>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
+| {ref}`Plasma nitridation chamber <machine-plasma-nitridation-chamber>` | *alternative:* {ref}`LVGOX <step-047>` |
+| {ref}`PECVD <machine-pecvd>` (and SACVD) | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`, {ref}`LINIT <step-104>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NCAPOX3 <step-117>`, {ref}`NILD4 <step-126>`, {ref}`NCAPOX4 <step-128>`, {ref}`CAPILD <step-135>`, {ref}`NILD5 <step-141>`, {ref}`NCAPOX5 <step-143>`, {ref}`CAPILD2 <step-150>`, {ref}`NILD6 <step-156>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`, {ref}`NTSD <step-167>`; *alternative:* {ref}`SPNIT <step-076>` |
+| {ref}`HDP-CVD <machine-hdp-cvd>` | {ref}`FILOX <step-011>`, {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| {ref}`Tungsten CVD <machine-tungsten-cvd>` | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>` |
+| {ref}`PVD (sputtering) cluster tool <machine-pvd-cluster-tool>` | {ref}`TI/TIN1 <step-097>`, {ref}`LITIN <step-101>`, {ref}`TIN2 <step-109>`, {ref}`TIAL6 <step-112>`, {ref}`TIN3 <step-120>`, {ref}`TIAL12 <step-123>`, {ref}`TIN4 <step-131>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`TIN5 <step-146>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
+| {ref}`i-line stepper or scanner <machine-i-line-stepper>` | {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`; *alternative:* {ref}`FOM <step-004>`, {ref}`NPCM <step-078>`, {ref}`VIM4 <step-159>` |
+| {ref}`DUV (KrF, 248 nm) stepper or scanner <machine-duv-krf-stepper>` | {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`; *alternative:* {ref}`DNM <step-007>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>` |
+| {ref}`Coat/develop track <machine-coat-develop-track>` | all 36 mask steps, {ref}`FOM <step-004>` to {ref}`PDM <step-168>` ({ref}`masks-index`) |
+| {ref}`CD-SEM and overlay metrology <machine-cd-sem-overlay-metrology>` | *overlay:* all 36 mask steps; *CD-SEM:* {ref}`FOM <step-004>`–{ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`TUNARCE <step-036>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`P1ME <step-062>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`, {ref}`LI1M <step-102>`, {ref}`LI1ME <step-103>`, {ref}`CTM1 <step-107>`, {ref}`CTME <step-108>`, {ref}`MM1 <step-113>`, {ref}`MM1E <step-114>`, {ref}`VIM <step-118>`, {ref}`VIME <step-119>`, {ref}`MM2 <step-124>`, {ref}`MM2E <step-125>`, {ref}`VIM2 <step-129>`, {ref}`VIM2E <step-130>`, {ref}`CAPM <step-137>`–{ref}`MM3E <step-140>`, {ref}`VIM3 <step-144>`, {ref}`VIM3E <step-145>`, {ref}`CAP2M <step-152>`–{ref}`MM4E <step-155>`, {ref}`VIM4 <step-159>`, {ref}`VIM4E <step-160>`, {ref}`MM5 <step-162>`, {ref}`MM5E <step-163>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| {ref}`Plasma etcher: silicon and polysilicon <machine-plasma-etcher-silicon>` | {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>` |
+| {ref}`Plasma etcher: dielectric and nitride <machine-plasma-etcher-dielectric>` | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>`; *alternative:* {ref}`TUNARCE <step-036>` |
+| {ref}`Plasma etcher: metal <machine-plasma-etcher-metal>` | {ref}`LI1ME <step-103>`, {ref}`MM1E <step-114>`, {ref}`MM2E <step-125>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`MM5E <step-163>` |
+| {ref}`Downstream plasma asher <machine-downstream-plasma-asher>` | {ref}`DNIS <step-009>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`; *alternative:* {ref}`TUNARCE <step-036>`; *also for the strip after an etch:* {ref}`STIE <step-006>`, {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`P1ME <step-062>`, {ref}`NPCME <step-079>`, {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+| {ref}`Wet bench and spray processor <machine-wet-bench>` | {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`SACETCH <step-095>`; *also for a clean or strip:* {ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`STIE <step-006>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`ONOME <step-042>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+| {ref}`Single-wafer spin processor <machine-single-wafer-spin-processor>` | {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`BFR <step-060>`, {ref}`SACETCH <step-095>`; *also for a clean:* {ref}`CMPNIT <step-012>`, {ref}`PWDEIS <step-033>`, {ref}`CTME <step-108>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`VIME <step-119>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`VIM2E <step-130>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`VIM3E <step-145>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
+| {ref}`Medium-current ion implanter <machine-medium-current-implanter>` | {ref}`LVTNI <step-015>`, {ref}`NWI2 <step-019>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`, {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>`; *alternative:* {ref}`NWI <step-018>` |
+| {ref}`High-current ion implanter <machine-high-current-implanter>` | {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; *alternative:* {ref}`LDASTI <step-072>` |
+| {ref}`High-energy ion implanter <machine-high-energy-implanter>` | {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`; *alternative:* {ref}`LVTPI <step-020>` |
+| {ref}`CMP polisher <machine-cmp-polisher>` | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
+| {ref}`Post-CMP cleaner <machine-post-cmp-cleaner>` | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
+| {ref}`Defect and particle inspection <machine-defect-inspection>` | {ref}`SMAT <step-001>`, {ref}`STINITE <step-005>`, {ref}`DNIS <step-009>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`SAGD <step-048>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`P1M <step-061>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PSDI <step-082>`, {ref}`PDIS <step-084>`, {ref}`NSDI <step-086>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`NCAPOX <step-091>`, {ref}`SACETCH <step-095>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`CTM1 <step-107>`, {ref}`WDEP2 <step-110>`, {ref}`WCMP2 <step-111>`, {ref}`MM1 <step-113>`, {ref}`CMPM <step-116>`–{ref}`VIM <step-118>`, {ref}`WDEP3 <step-121>`, {ref}`WCMP3 <step-122>`, {ref}`MM2 <step-124>`, {ref}`CMPM2 <step-127>`–{ref}`VIM2 <step-129>`, {ref}`WDEP4 <step-132>`, {ref}`WCMP4 <step-133>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`CMPM3 <step-142>`–{ref}`VIM3 <step-144>`, {ref}`WDEP5 <step-147>`, {ref}`WCMP5 <step-148>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`CMPM4 <step-157>`–{ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NFUSOX <step-164>`, {ref}`NSM <step-165>`, {ref}`NTSD <step-167>`–{ref}`PDME <step-169>` |
+| {ref}`Film thickness and stress metrology <machine-film-thickness-metrology>` | {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`, {ref}`LINOX <step-010>`–{ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`GOXETCH <step-046>`–{ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`, {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`–{ref}`RTAD2 <step-092>`, {ref}`SACETCH <step-095>`, {ref}`TI/TIN1 <step-097>`, {ref}`WDEP <step-099>`–{ref}`LITIN <step-101>`, {ref}`LINIT <step-104>`–{ref}`CMPL <step-106>`, {ref}`TIN2 <step-109>`–{ref}`TIAL6 <step-112>`, {ref}`NILD3 <step-115>`–{ref}`NCAPOX3 <step-117>`, {ref}`TIN3 <step-120>`–{ref}`TIAL12 <step-123>`, {ref}`NILD4 <step-126>`–{ref}`NCAPOX4 <step-128>`, {ref}`TIN4 <step-131>`–{ref}`CAPTIW1 <step-136>`, {ref}`CAPME <step-138>`, {ref}`NILD5 <step-141>`–{ref}`NCAPOX5 <step-143>`, {ref}`TIN5 <step-146>`–{ref}`CAPTIW2 <step-151>`, {ref}`CAP2ME <step-153>`, {ref}`NILD6 <step-156>`–{ref}`NCAPOX6 <step-158>`, {ref}`WTIAL5 <step-161>`, {ref}`NFUSOX <step-164>`, {ref}`NTSD <step-167>` |
+| {ref}`Sheet-resistance and dose metrology <machine-sheet-resistance-metrology>` | {ref}`DNI <step-008>`, {ref}`LVTNI <step-015>`, {ref}`NWI <step-018>`–{ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`RTAI <step-034>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`P1I <step-050>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`, {ref}`ASTI <step-065>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`TIPRTAD <step-075>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`TI/TIN1 <step-097>`–{ref}`WDEP <step-099>`, {ref}`LITIN <step-101>`, {ref}`TIN2 <step-109>`, {ref}`WDEP2 <step-110>`, {ref}`TIAL6 <step-112>`, {ref}`TIN3 <step-120>`, {ref}`WDEP3 <step-121>`, {ref}`TIAL12 <step-123>`, {ref}`TIN4 <step-131>`, {ref}`WDEP4 <step-132>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
+| {ref}`Cross-section SEM and profilers <machine-cross-section-sem-profilers>` | *cross-section SEM:* {ref}`STIE <step-006>`, {ref}`LINOX <step-010>`, {ref}`FILOX <step-011>`, {ref}`P1ME <step-062>`, {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PSG <step-089>`, {ref}`LICM1E <step-094>`, {ref}`TI/TIN1 <step-097>`, {ref}`WDEP <step-099>`, {ref}`LI1ME <step-103>`–{ref}`NILD2 <step-105>`, {ref}`CTME <step-108>`–{ref}`WDEP2 <step-110>`, {ref}`MM1E <step-114>`, {ref}`NILD3 <step-115>`, {ref}`VIME <step-119>`–{ref}`WDEP3 <step-121>`, {ref}`MM2E <step-125>`, {ref}`NILD4 <step-126>`, {ref}`VIM2E <step-130>`–{ref}`WDEP4 <step-132>`, {ref}`MM3E <step-140>`, {ref}`NILD5 <step-141>`, {ref}`VIM3E <step-145>`–{ref}`WDEP5 <step-147>`, {ref}`MM4E <step-155>`, {ref}`NILD6 <step-156>`, {ref}`VIM4E <step-160>`, {ref}`WTIAL5 <step-161>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`; *profiler or AFM:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` |
+| {ref}`Parametric tester and prober <machine-parametric-tester>` | {ref}`HPETEST <step-171>`; *electrical monitor named:* {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`ALLY1 <step-096>`, {ref}`CSIL <step-098>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAPILD2 <step-150>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`ALLY <step-170>` |
+:::
 
 Notes on the table:
 
@@ -336,46 +753,173 @@ the page uses for the *assignment* of the step to the tool:
   an alternative or for a clean or strip after the main operation;
 * other wording is quoted or paraphrased as the page gives it.
 
-The second column gives the source and strength of the listing itself
-on the inventory's scale. The tool names are as SkyWater writes them;
+The source and strength of the listing itself, on the inventory's
+scale, is given in the first column, after the tool's name. The tool names are as SkyWater writes them;
 "…" shortens an entry quoted in full in the main table. Steps that name
 a tool only in passing (for example a metal etcher named as
 corroboration on a deposition page) are listed with that wording.
 
-| Tool as SkyWater lists it | Source; strength of the listing | Steps whose pages assign it, by the page's wording |
-|---------------------------|-----------------------------------|----------------------------------------------------|
-| "ASML I-line stepper", "ASML I-line scanner" | strong[^skw-01] | *inference:* {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`; *not public which class (i-line or DUV):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>`; *listed, not assigned:* {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>` |
-| "ASML DUV stepper", "ASML DUV scanner" | strong[^skw-01] | *inference:* {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>`; *not public which class (i-line or DUV):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
-| "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" | strong[^skw-01] | *not evidence for the 130 nm gate (a later addition):* {ref}`P1M <step-061>` |
-| "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track" | strong[^skw-01] | *strong, or strong for existence (some pages add that which track serves which exposure tool is not public):* {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" | strong[^skw-01] | *strong for existence (SkyWater statement); use at this mask is an inference:* {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`; *strong for existence; that the gate level is measured on them is an inference:* {ref}`P1M <step-061>`; *strong for existence (SkyWater statement); use after this etch is an inference:* {ref}`P1ME <step-062>`; *strong for existence:* {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "KLA 5200/5300/Archer overlay" | strong[^skw-01] | *strong for existence (SkyWater statement); use at this mask is an inference:* {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`; *strong for existence; that the gate level is measured on them is an inference:* {ref}`P1M <step-061>`; *strong for existence:* {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
-| "SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT and SP1) | medium[^job-06] | *medium:* {ref}`SMAT <step-001>`, {ref}`DNIS <step-009>`, {ref}`CMPNIT <step-012>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
-| "Furnaces are all made by Aviza" (with the process lines quoted above) | strong[^skw-01] | *strong:* {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>`; *inference:* {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>`; *strong for existence (batch alternative):* {ref}`FILOX <step-011>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>`; *weak:* {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`LINIT <step-104>`; *excluded on thermal grounds (inference):* {ref}`NTSD <step-167>` |
-| "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" | strong[^skw-01] | *inference:* {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>`; *weak:* {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
-| "PECVD TEOS, C2 and Producer" | strong (models inferred)[^skw-01] | *inference:* {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`; *medium (as the whole film):* {ref}`NILD2 <step-105>`; *medium (as the liner or overburden):* {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>`; *not public which of the candidates:* {ref}`POC <step-059>`; *weak:* {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>` |
-| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" | strong (model inferred)[^skw-01] | *inference:* {ref}`LINIT <step-104>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`, {ref}`NTSD <step-167>`; *medium:* {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`; *not public which of the candidates:* {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; *strong for existence:* {ref}`SPOX <step-080>`; *weak:* {ref}`SPNIT <step-076>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
-| "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" | strong[^skw-01][^skw-07] | *strong (two SkyWater statements):* {ref}`FILOX <step-011>`; *inference:* {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
-| "Lam/Novellus PECVD Tungsten" | strong (model inferred)[^skw-01] | *inference:* {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>` |
-| "AMAT PVD Metal" | strong for vendor and films (platform inferred)[^skw-01] | *inference: "Imp TiN" and "Collimated Ti":* {ref}`TI/TIN1 <step-097>`; *inference: "ESC TiN":* {ref}`LITIN <step-101>`; *inference: "Imp TiN":* {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`, {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>`; *inference: aluminium, "TiW" and the underlayer:* {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`; *inference: "TiW":* {ref}`CAPTIW1 <step-136>`, {ref}`CAPTIW2 <step-151>` |
-| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" | strong[^skw-01] | *inference:* {ref}`LI1ME <step-103>`; *not public which of the two (the page leans to one, by inference):* {ref}`MM1E <step-114>`, {ref}`MM2E <step-125>`, {ref}`MM3E <step-140>`; *not public which of the two:* {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`MM5E <step-163>`; *weak:* {ref}`PDME <step-169>`; *named as corroboration only:* {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
-| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" | strong[^skw-01] | *inference:* {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`P1ME <step-062>`; *medium:* {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LI1ME <step-103>`, {ref}`PDME <step-169>`; *weak:* {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
-| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" | strong[^skw-01] | *inference:* {ref}`STINITE <step-005>`, {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDME <step-169>`; *medium:* {ref}`P1ME <step-062>`; *weak:* {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
-| "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" | strong[^skw-01] | *inference:* {ref}`STIE <step-006>`; *weak:* {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
-| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" | strong[^skw-01] | *inference (which of the three not stated):* {ref}`DNIS <step-009>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`; *inference, the Iridia fitting a crust step best:* {ref}`P1IS <step-051>`, {ref}`ASTIS <step-067>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`; *weak:* {ref}`TUNARCE <step-036>`; *strong (strip after an etch):* {ref}`STIE <step-006>`; *strong for existence (strip after an etch):* {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`P1ME <step-062>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
-| "Akrion Gamma Batch Wet Bench" | strong[^skw-01] | *strong ("the only phosphoric tank listed"):* {ref}`NS19 <step-013>`; *inference:* {ref}`DNIS <step-009>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`; *strong for existence:* {ref}`STIE <step-006>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`ONOME <step-042>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>` |
-| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" | strong[^skw-01] | *inference (the pre-furnace or pre-anneal clean; SC-2 is listed only for these two benches):* {ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`PWDEIS <step-033>`, {ref}`LDASTIS <step-074>`, {ref}`NSDIS <step-087>`; *inference:* {ref}`SACETCH <step-095>`; *inference for the DNS bench, strong for existence for FSI Mercury:* {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`; *strong for existence:* {ref}`STIE <step-006>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`LICM1E <step-094>` |
-| "Batch Rotational", "EKS265, EKC270 solvents" | strong[^skw-01] | *strong for existence (some pages add that the assignment is an inference):* {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
-| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" | strong[^skw-01][^skw-07] | *inference (SEZ 223):* {ref}`BFR <step-060>`; *medium:* {ref}`SACETCH <step-095>`; *strong for existence:* {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`; *named as the post-CMP clean; no brush scrubber named:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
-| "Axcelis 8250 Mid current …" | strong[^skw-01] | *inference:* {ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`UPRI <step-056>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>`; *not stated which of two:* {ref}`PRI <step-053>`; *weak:* {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>`; *strong for existence; unlikely, no phosphorus:* {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`; *named only as below the required dose:* {ref}`P1I <step-050>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
-| "Axcelis GSD High current/energy …" | strong[^skw-01] | *inference:* {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>`; *strong for existence:* {ref}`LVTPI <step-020>`, {ref}`PWDEI1 <step-031>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`; *weak:* {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
-| "Axcelis GSD Hi dose …" | strong[^skw-01] | *inference:* {ref}`P1I <step-050>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; *not stated which of two:* {ref}`PRI <step-053>`; *the alternative (no grade):* {ref}`UPRI <step-056>`; *weak:* {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
-| "Axcelis GSD High current/energy …" or "Axcelis GSD Hi dose …", either entry | strong[^skw-01] | *weak (which entry would serve not stated):* {ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>` |
-| "AMAT Mirra CMP" | strong[^skw-01] | *inference from the film:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`, {ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`, {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>`; *inference from the film; which of the two tungsten processes not public:* {ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` |
-| "HP 4062UX" | strong[^skw-01] | *inference:* {ref}`CAPILD2 <step-150>`, {ref}`HPETEST <step-171>` |
-| "Engineering manual Probe Station"; sort and reliability-lab tools | strong[^skw-01] | *named; no production prober, and the sort and reliability tools serve other purposes (inference):* {ref}`HPETEST <step-171>` |
-| "Scribe: Lumonics Superclean" | strong[^skw-01] | *strong; the step is not stated:* {ref}`SMAT <step-001>` |
-| Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug dual damascene" | strong for the capability[^skw-01] | *inference for use in SKY130 (nitrided oxide):* {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`; *strong for the capability (silicide, W plug):* {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>` |
+### Lithography
+
+:::{table} Lithography tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | inference | {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
+| "ASML I-line stepper", "ASML I-line scanner" — strong[^skw-01] | listed, not assigned | {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>` |
+| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | inference | {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>` |
+| "ASML DUV stepper", "ASML DUV scanner" — strong[^skw-01] | not public which class (i-line or DUV) | {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>` |
+| "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" — strong[^skw-01] | not evidence for the 130 nm gate (a later addition) | {ref}`P1M <step-061>` |
+| "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track" — strong[^skw-01] | strong, or strong for existence (some pages add that which track serves which exposure tool is not public) | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`P1M <step-061>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence (SkyWater statement); use after this etch is an inference | {ref}`P1ME <step-062>` |
+| "AMAT Verity (multiple versions) CD", "AMAT VeraSEM" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence (SkyWater statement); use at this mask is an inference | {ref}`FOM <step-004>`, {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`NPCM <step-078>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`CAPM <step-137>`, {ref}`MM3 <step-139>`, {ref}`VIM3 <step-144>`, {ref}`CAP2M <step-152>`, {ref}`MM4 <step-154>`, {ref}`VIM4 <step-159>`, {ref}`MM5 <step-162>` |
+| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence; that the gate level is measured on them is an inference | {ref}`P1M <step-061>` |
+| "KLA 5200/5300/Archer overlay" — strong[^skw-01] | strong for existence | {ref}`NSM <step-165>`, {ref}`PDM <step-168>` |
+:::
+
+### Thermal processing
+
+:::{table} Thermal processing tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | strong | {ref}`BOX <step-002>`, {ref}`ISONIT <step-003>` |
+| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | inference | {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`, {ref}`IOX45 <step-063>`, {ref}`SPNIT <step-076>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
+| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | strong for existence (batch alternative) | {ref}`FILOX <step-011>`, {ref}`POC <step-059>`, {ref}`SPOX <step-080>` |
+| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | weak | {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`LINIT <step-104>` |
+| "Furnaces are all made by Aviza" (with the process lines quoted above) — strong[^skw-01] | excluded on thermal grounds (inference) | {ref}`NTSD <step-167>` |
+| "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" — strong[^skw-01] | inference | {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>` |
+| "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" — strong[^skw-01] | weak | {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`, {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`, {ref}`ALLY1 <step-096>`, {ref}`ALLY <step-170>` |
+| Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug dual damascene" — strong for the capability[^skw-01] | inference for use in SKY130 (nitrided oxide) | {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>` |
+| Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug dual damascene" — strong for the capability[^skw-01] | strong for the capability (silicide, W plug) | {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>` |
+:::
+
+### Thin-film deposition
+
+:::{table} Thin-film deposition tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | inference | {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>` |
+| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | medium (as the whole film) | {ref}`NILD2 <step-105>` |
+| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | medium (as the liner or overburden) | {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | not public which of the candidates | {ref}`POC <step-059>` |
+| "PECVD TEOS, C2 and Producer" — strong (models inferred)[^skw-01] | weak | {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>` |
+| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | inference | {ref}`LINIT <step-104>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`, {ref}`NTSD <step-167>` |
+| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | medium | {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>` |
+| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | not public which of the candidates | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>` |
+| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | strong for existence | {ref}`SPOX <step-080>` |
+| "PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1" — strong (model inferred)[^skw-01] | weak | {ref}`SPNIT <step-076>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" — strong[^skw-01][^skw-07] | strong (two SkyWater statements) | {ref}`FILOX <step-011>` |
+| "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" — strong[^skw-01][^skw-07] | inference | {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>` |
+| "Lam/Novellus PECVD Tungsten" — strong (model inferred)[^skw-01] | inference | {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>` |
+| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "Imp TiN" and "Collimated Ti" | {ref}`TI/TIN1 <step-097>` |
+| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "ESC TiN" | {ref}`LITIN <step-101>` |
+| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "Imp TiN" | {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`, {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>` |
+| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: aluminium, "TiW" and the underlayer | {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>` |
+| "AMAT PVD Metal" — strong for vendor and films (platform inferred)[^skw-01] | inference: "TiW" | {ref}`CAPTIW1 <step-136>`, {ref}`CAPTIW2 <step-151>` |
+:::
+
+### Etch
+
+:::{table} Etch tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | inference | {ref}`LI1ME <step-103>` |
+| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | not public which of the two (the page leans to one, by inference) | {ref}`MM1E <step-114>`, {ref}`MM2E <step-125>`, {ref}`MM3E <step-140>` |
+| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | not public which of the two | {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`MM5E <step-163>` |
+| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | weak | {ref}`PDME <step-169>` |
+| "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt" — strong[^skw-01] | named as corroboration only | {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>`, {ref}`CAPTIW1 <step-136>`, {ref}`WTIAL4 <step-149>`, {ref}`CAPTIW2 <step-151>`, {ref}`WTIAL5 <step-161>` |
+| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" — strong[^skw-01] | inference | {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`P1ME <step-062>` |
+| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" — strong[^skw-01] | medium | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LI1ME <step-103>`, {ref}`PDME <step-169>` |
+| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" — strong[^skw-01] | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
+| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | inference | {ref}`STINITE <step-005>`, {ref}`STIE <step-006>`, {ref}`TUNARCE <step-036>`, {ref}`ONOME <step-042>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDME <step-169>` |
+| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | medium | {ref}`P1ME <step-062>` |
+| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" — strong[^skw-01] | weak | {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>` |
+| "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — strong[^skw-01] | inference | {ref}`STIE <step-006>` |
+| "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — strong[^skw-01] | weak | {ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`, {ref}`P1ME <step-062>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`, {ref}`VIM4E <step-160>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+:::
+
+### Resist strip and clean
+
+:::{table} Resist strip and clean tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | inference (which of the three not stated) | {ref}`DNIS <step-009>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>` |
+| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | inference, the Iridia fitting a crust step best | {ref}`P1IS <step-051>`, {ref}`ASTIS <step-067>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>` |
+| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | weak | {ref}`TUNARCE <step-036>` |
+| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | strong (strip after an etch) | {ref}`STIE <step-006>` |
+| "Gasonic PEP …", "Iridia RF microwave …", "Mattson Aspen2 …" — strong[^skw-01] | strong for existence (strip after an etch) | {ref}`TUNME <step-039>`, {ref}`ONOME <step-042>`, {ref}`GOXETCH <step-046>`, {ref}`P1ME <step-062>`, {ref}`NPCME <step-079>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+| "Akrion Gamma Batch Wet Bench" — strong[^skw-01] | strong ("the only phosphoric tank listed") | {ref}`NS19 <step-013>` |
+| "Akrion Gamma Batch Wet Bench" — strong[^skw-01] | inference | {ref}`DNIS <step-009>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>` |
+| "Akrion Gamma Batch Wet Bench" — strong[^skw-01] | strong for existence | {ref}`STIE <step-006>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`ONOME <step-042>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`LICM1E <step-094>`, {ref}`SACETCH <step-095>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>` |
+| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | inference (the pre-furnace or pre-anneal clean; SC-2 is listed only for these two benches) | {ref}`SMAT <step-001>`, {ref}`BOX <step-002>`, {ref}`DNIS <step-009>`, {ref}`LINOX <step-010>`, {ref}`PWDEIS <step-033>`, {ref}`LDASTIS <step-074>`, {ref}`NSDIS <step-087>` |
+| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | inference | {ref}`SACETCH <step-095>` |
+| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | inference for the DNS bench, strong for existence for FSI Mercury | {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>` |
+| "DNS wet bench industry standard HF/SC1/SC2", "FSI Mercury industry standard HF/SC1/SC2 rotational" — strong[^skw-01] | strong for existence | {ref}`STIE <step-006>`, {ref}`NS19 <step-013>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`P1ME <step-062>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDIS <step-084>`, {ref}`LICM1E <step-094>` |
+| "Batch Rotational", "EKS265, EKC270 solvents" — strong[^skw-01] | strong for existence (some pages add that the assignment is an inference) | {ref}`SACETCH <step-095>`, {ref}`LI1ME <step-103>`, {ref}`CTME <step-108>`, {ref}`MM1E <step-114>`, {ref}`VIME <step-119>`, {ref}`MM2E <step-125>`, {ref}`VIM2E <step-130>`, {ref}`CAPME <step-138>`, {ref}`MM3E <step-140>`, {ref}`VIM3E <step-145>`, {ref}`CAP2ME <step-153>`, {ref}`MM4E <step-155>`, {ref}`VIM4E <step-160>`, {ref}`MM5E <step-163>`, {ref}`NSME <step-166>`, {ref}`PDME <step-169>` |
+| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | inference (SEZ 223) | {ref}`BFR <step-060>` |
+| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | medium | {ref}`SACETCH <step-095>` |
+| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | strong for existence | {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>` |
+| "Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled" — strong[^skw-01][^skw-07] | named as the post-CMP clean; no brush scrubber named | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
+:::
+
+### Ion implantation
+
+:::{table} Ion implantation tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | inference | {ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`PWDEI1 <step-031>`, {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`UPRI <step-056>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>`, {ref}`2PSDI <step-083>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | weak | {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | strong for existence; unlikely, no phosphorus | {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>` |
+| "Axcelis 8250 Mid current …" — strong[^skw-01] | named only as below the required dose | {ref}`P1I <step-050>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
+| "Axcelis GSD High current/energy …" — strong[^skw-01] | inference | {ref}`DNI <step-008>`, {ref}`NWI <step-018>`, {ref}`NWI2 <step-019>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`, {ref}`ASTI <step-065>` |
+| "Axcelis GSD High current/energy …" — strong[^skw-01] | strong for existence | {ref}`LVTPI <step-020>`, {ref}`PWDEI1 <step-031>`, {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>` |
+| "Axcelis GSD High current/energy …" — strong[^skw-01] | weak | {ref}`PWDEI2 <step-032>`, {ref}`PTSI <step-037>`, {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | inference | {ref}`P1I <step-050>`, {ref}`ASTI <step-065>`, {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | not stated which of two | {ref}`PRI <step-053>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | the alternative (no grade) | {ref}`UPRI <step-056>` |
+| "Axcelis GSD Hi dose …" — strong[^skw-01] | weak | {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`, {ref}`LDBHI <step-073>` |
+| "Axcelis GSD High current/energy …" or "Axcelis GSD Hi dose …", either entry — strong[^skw-01] | weak (which entry would serve not stated) | {ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`, {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>` |
+:::
+
+### Planarisation
+
+:::{table} Planarisation tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "AMAT Mirra CMP" — strong[^skw-01] | inference from the film | {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`, {ref}`CMPM <step-116>`, {ref}`CMPM2 <step-127>`, {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>` |
+| "AMAT Mirra CMP" — strong[^skw-01] | inference from the film; which of the two tungsten processes not public | {ref}`WCMPLI <step-100>`, {ref}`WCMP2 <step-111>`, {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`, {ref}`WCMP5 <step-148>` |
+:::
+
+### Metrology, inspection and test
+
+:::{table} Metrology, inspection and test tools SkyWater lists, one row per step-assignment grade
+:widths: 40 20 40
+
+| Tool as listed | Grade in the step pages' words | Steps |
+|---|---|---|
+| "SEM/AIT/KLA/SP1/EV300/1X" (read as KLA-Tencor AIT and SP1) — medium[^job-06] | medium | {ref}`SMAT <step-001>`, {ref}`DNIS <step-009>`, {ref}`CMPNIT <step-012>`, {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`, {ref}`PCHIS <step-025>`, {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`, {ref}`TUNM <step-035>`, {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`, {ref}`UPRIS <step-057>`, {ref}`BFR <step-060>`, {ref}`ASTIS <step-067>`, {ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`, {ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>` |
+| "HP 4062UX" — strong[^skw-01] | inference | {ref}`CAPILD2 <step-150>`, {ref}`HPETEST <step-171>` |
+| "Engineering manual Probe Station"; sort and reliability-lab tools — strong[^skw-01] | named; no production prober, and the sort and reliability tools serve other purposes (inference) | {ref}`HPETEST <step-171>` |
+| "Scribe: Lumonics Superclean" — strong[^skw-01] | strong; the step is not stated | {ref}`SMAT <step-001>` |
+:::
 
 Notes on the table:
 
@@ -401,124 +945,6 @@ Notes on the table:
   Akrion bench, and, among the etchers, TiN only on the two metal
   etchers.[^skw-01] The pages that rely on these say so; the list itself
   still names no step.
-
-<!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
-## Related patents, papers and filings
-
-**Related patents.**
-
-* {ref}`Method and apparatus for producing magnetically-coupled planar plasma <patent-gp23554962>` — US 4,948,458 A (1989)
-* {ref}`Rapid thermal heating apparatus and method <patent-gp27042189>` — US 5,155,336 A (1990)
-* {ref}`Plasma asher with microwave trap <patent-gp22748832>` — US 5,498,308 A (1994)
-* {ref}`Plasma reactor with multi-section RF coil and isolated conducting lid <patent-gp23061269>` — US 5,540,824 A (1994)
-* {ref}`Continuous processing system for chemical mechanical polishing <patent-gp24192580>` — US 5,738,574 A (1995)
-* {ref}`Apparatus and method for controlling plasma uniformity across a substrate <patent-gp26812562>` — US 6,179,973 B1 (1999)
-* {ref}`Alternate steps of IMP and sputtering process to improve sidewall coverage <patent-gp23783296>` — US 6,350,353 B2 (1999)
-* {ref}`HDP-CVD deposition process for filling high aspect ratio gaps <patent-gp25317682>` — US 6,914,016 B2 (2001)
-* {ref}`Method for producing ultra-thin tungsten layers with improved step coverage <patent-gp46204269>` — US 6,635,965 B1 (2001)
-
-**Related filings.**
-
-* SkyWater Technology, Inc., S-1, filed 2021-03-22: Form S-1 registration statement (initial public offering), Registration No. 333-254580 ({ref}`full entry <filing-skywater-s-1-2021-03-22>`)
-* SkyWater Technology, Inc., S-1/A, filed 2021-04-12: Amendment No. 1 to Form S-1 registration statement, Registration No. 333-254580 ({ref}`full entry <filing-skywater-s-1-a-2021-04-12>`)
-* SkyWater Technology, Inc., 8-K, filed 2023-08-04: Current report, item 1.01: Consulting Agreement with Oxbow Industries ({ref}`full entry <filing-skywater-8-k-2023-08-04>`)
-* SkyWater Technology, Inc., 10-K, filed 2024-03-15: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-skywater-10-k-2024-03-15>`)
-<!-- index-links:end -->
-
-## References
-
-### Cross-check
-
-* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — every SkyWater tool
-  name, chemistry, dose range and capability quoted on this
-  page.[^skw-01]
-* [SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
-  Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — the captions naming a Novellus high density plasma tool
-  and a SEZ etcher tool.[^skw-07]
-* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology
-  tool list read as KLA-Tencor AIT and SP1.[^job-06]
-* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — tool count, capacity and
-  raw-material suppliers; no process-tool supplier named.[^sec-01]
-* [SkyWater Technology, Form 10-K for 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — the 90–350 nm flows in the
-  Minnesota fab and the 2020 deep-trench etch addition.[^sec-02]
-* [Lam Research, Form 10-K for fiscal 2003](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the {term}`TCP` 9400, 2300 and
-  Exelan product lines named on the etch pages.[^lam-10k]
-* [Axcelis Technologies, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — the GSD
-  high-current and high-energy batch implanter family.[^axcelis-gsd-page]
-* [Applied Materials, *Endura PVD* product page](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>) — the platform the PVD
-  pages read "AMAT PVD Metal" as.[^amat-endura]
-
-### High-level understanding
-
-* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — a
-  fab-floor view of each tool class, written around a 200 mm fab of the
-  period.[^txt-07]
-* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
-  unit processes the tool classes perform.[^txt-02]
-* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — STI, CMP,
-  tungsten plugs, DUV lithography and RTP for the 0.25–0.13 µm
-  generations.[^txt-05]
-* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
-  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapter-per-process reference with equipment
-  detail.[^txt-09]
-* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the history of the
-  Concept One and Two, Sequel, SPEED and Altus product lines the
-  deposition pages refer to.[^novellus-history]
-* Wikipedia, [*Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>) and [*KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the
-  implanter and inspection vendors behind several listed
-  tools.[^wiki-axcelis][^wiki-kla]
-
-### Deep dive
-
-* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — the
-  lamp-heated rapid thermal processing chamber.[^pat-rtp-amat]
-* [Nulman, Krusius and Gat, *IEEE EDL* 1985](<https://doi.org/10.1109/EDL.1985.26099>) — rapid thermal oxidation of
-  thin gate dielectrics, the single-wafer alternative to the
-  furnace.[^nulman-1985]
-* [SemiStar, *AG Associates Heatpulse 8800 / 8808*](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) — reseller
-  specification of the RTP family SkyWater lists.[^ag-8800]
-* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the vendor's 200 mm
-  vertical batch furnace.[^aviza-avp]
-* [Tan, Li and Zygmunt (Applied Materials), US 6,914,016](<https://patents.google.com/patent/US6914016B2/en>) — HDP-CVD gap
-  fill of high-aspect-ratio gaps.[^pat-hdp-amat]
-* [Lee and Collins (Novellus), US 6,635,965](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6635965>) — the pulsed nucleation
-  layer behind SkyWater's "PNL option".[^pat-pnl-novellus]
-* [Gopalraja et al. (Applied Materials), US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — ionised-metal
-  plasma (IMP) sputtering for liner step coverage.[^pat-imp-amat]
-* [Lai et al. (Novellus), US 6,179,973](<https://patents.google.com/patent/US6179973B1/en>) — the hollow-cathode-magnetron
-  ionised PVD source, the Novellus counterpart to IMP.[^pat-hcm-novellus]
-* [ASML, PAS 5500/750E press release, 2000](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF step-and-scan system
-  aimed at 130 nm.[^asml-750e]
-* [Tokyo Electron, *Coater/Developer ACT Series*](<https://www.tel.com/product/act.html>) — the track class linked
-  to the exposure tools.[^tel-act]
-* [GCE Market, *KLA-Tencor 8100XP CD-SEM*](<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>) — specification of a CD-SEM of
-  the period.[^gce-kla8100]
-* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the transformer-coupled planar
-  plasma source of the TCP etchers.[^pat-tcp-lam]
-* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the decoupled-source
-  plasma reactor of the DPS etchers.[^pat-dps-amat]
-* [Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
-  Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — a university guide to the etcher SkyWater lists.[^snf-9400]
-* [Lam Research, Exelan High Performance press release, 2001](<https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>) — the
-  dielectric etcher class the contact and via pages cite.[^lam-exelan]
-* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — the microwave
-  downstream asher.[^pat-asher-fusion]
-* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer cleaning
-  that the wet benches carry out.[^kern-1990]
-* [SEZ, Spin-Processor 223 press release, 1999](<https://www.surfacefinishing.com/doc/sez-doubles-wafer-processing-capabilities-wit-0001>) — a dual-chamber spin
-  processor for cleaning and film removal.[^sez-223-pr]
-* [Current, *J. Vac. Sci. Technol. A* 1996](<https://doi.org/10.1116/1.580279>) — production ion implanters
-  from a vacuum perspective.[^current-1996]
-* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
-  energy and beam-current range of the medium-current class.[^axcelis-8250]
-* [Mezack et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924180>) — a single-wafer high-current implanter of the
-  period.[^mezack-2000]
-* [Tolles et al. (Applied Materials), US 5,738,574](<https://patents.google.com/patent/US5738574A/en>) — the continuous
-  multi-station CMP system of the Mirra.[^pat-cmp-mirra]
-* [Keithley Instruments, *Series S600 Parametric Test Systems*](<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>) — the
-  parametric tester class used for electrical test.[^keithley-s600]
-* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
-  critical layers.[^itrs-03]
 
 (machines-inconsistencies)=
 ## Open questions and inconsistencies
@@ -640,6 +1066,124 @@ state:
   fab that also runs 90 nm and other flows and was expanded in
   2020;[^skw-01][^sec-02] which of the listed tools, if any, were used
   when the S8 process was set up at Cypress is not public.
+
+<!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
+## Related patents, papers and filings
+
+**Related patents.**
+
+* {ref}`Method and apparatus for producing magnetically-coupled planar plasma <patent-gp23554962>` — US 4,948,458 A (1989)
+* {ref}`Rapid thermal heating apparatus and method <patent-gp27042189>` — US 5,155,336 A (1990)
+* {ref}`Plasma asher with microwave trap <patent-gp22748832>` — US 5,498,308 A (1994)
+* {ref}`Plasma reactor with multi-section RF coil and isolated conducting lid <patent-gp23061269>` — US 5,540,824 A (1994)
+* {ref}`Continuous processing system for chemical mechanical polishing <patent-gp24192580>` — US 5,738,574 A (1995)
+* {ref}`Apparatus and method for controlling plasma uniformity across a substrate <patent-gp26812562>` — US 6,179,973 B1 (1999)
+* {ref}`Alternate steps of IMP and sputtering process to improve sidewall coverage <patent-gp23783296>` — US 6,350,353 B2 (1999)
+* {ref}`HDP-CVD deposition process for filling high aspect ratio gaps <patent-gp25317682>` — US 6,914,016 B2 (2001)
+* {ref}`Method for producing ultra-thin tungsten layers with improved step coverage <patent-gp46204269>` — US 6,635,965 B1 (2001)
+
+**Related filings.**
+
+* SkyWater Technology, Inc., S-1, filed 2021-03-22: Form S-1 registration statement (initial public offering), Registration No. 333-254580 ({ref}`full entry <filing-skywater-s-1-2021-03-22>`)
+* SkyWater Technology, Inc., S-1/A, filed 2021-04-12: Amendment No. 1 to Form S-1 registration statement, Registration No. 333-254580 ({ref}`full entry <filing-skywater-s-1-a-2021-04-12>`)
+* SkyWater Technology, Inc., 8-K, filed 2023-08-04: Current report, item 1.01: Consulting Agreement with Oxbow Industries ({ref}`full entry <filing-skywater-8-k-2023-08-04>`)
+* SkyWater Technology, Inc., 10-K, filed 2024-03-15: Annual report on Form 10-K for the fiscal year ended 2023-12-31 ({ref}`full entry <filing-skywater-10-k-2024-03-15>`)
+<!-- index-links:end -->
+
+## References
+
+### Cross-check
+
+* [SkyWater Technology, *Facilities & Capabilities*](<https://www.skywatertechnology.com/manufacturing/facilities-capabilities/>) — every SkyWater tool
+  name, chemistry, dose range and capability quoted on this
+  page.[^skw-01]
+* [SkyWater Technology, *A Day in the Life of a SkyWater Maintenance
+  Technician*](<https://www.skywatertechnology.com/a-day-in-the-life-of-a-skywater-maintenance-technician/>) — the captions naming a Novellus high density plasma tool
+  and a SEZ etcher tool.[^skw-07]
+* [LinkedIn, SkyWater *Defect Technician 2* posting](<https://www.linkedin.com/jobs/view/defect-technician-2-at-skywater-technology-4434994342>) — the defect-metrology
+  tool list read as KLA-Tencor AIT and SP1.[^job-06]
+* [SkyWater Technology, Form S-1 (2021)](<https://www.sec.gov/Archives/edgar/data/1819974/000119312521089687/d26688ds1.htm>) — tool count, capacity and
+  raw-material suppliers; no process-tool supplier named.[^sec-01]
+* [SkyWater Technology, Form 10-K for 2023](<https://www.sec.gov/Archives/edgar/data/1819974/000181997424000008/skyt-20231231.htm>) — the 90–350 nm flows in the
+  Minnesota fab and the 2020 deep-trench etch addition.[^sec-02]
+* [Lam Research, Form 10-K for fiscal 2003](<https://www.sec.gov/Archives/edgar/data/707549/000089161803004913/f93126e10vk.htm>) — the {term}`TCP` 9400, 2300 and
+  Exelan product lines named on the etch pages.[^lam-10k]
+* [Axcelis Technologies, *GSD Ovation* product page](<https://www.axcelis.com/products/gsd-ovation/>) — the GSD
+  high-current and high-energy batch implanter family.[^axcelis-gsd-page]
+* [Applied Materials, *Endura PVD* product page](<https://www.appliedmaterials.com/us/en/product-library/endura-pvd.html>) — the platform the PVD
+  pages read "AMAT PVD Metal" as.[^amat-endura]
+
+### High-level understanding
+
+* [Quirk and Serda, *Semiconductor Manufacturing Technology*](<https://openlibrary.org/isbn/9780130815200>) — a
+  fab-floor view of each tool class, written around a 200 mm fab of the
+  period.[^txt-07]
+* [Wolf and Tauber, *Silicon Processing for the VLSI Era*, vol. 1](<https://openlibrary.org/isbn/9780961672164>) — the
+  unit processes the tool classes perform.[^txt-02]
+* [Wolf, *Silicon Processing for the VLSI Era*, vol. 4](<https://openlibrary.org/isbn/9780961672171>) — STI, CMP,
+  tungsten plugs, DUV lithography and RTP for the 0.25–0.13 µm
+  generations.[^txt-05]
+* [Nishi and Doering (eds.), *Handbook of Semiconductor Manufacturing
+  Technology*](<https://openlibrary.org/isbn/9781574446753>) — chapter-per-process reference with equipment
+  detail.[^txt-09]
+* [Encyclopedia.com, *Novellus Systems, Inc.*](<https://www.encyclopedia.com/books/politics-and-business-magazines/novellus-systems-inc>) — the history of the
+  Concept One and Two, Sequel, SPEED and Altus product lines the
+  deposition pages refer to.[^novellus-history]
+* Wikipedia, [*Axcelis Technologies*](<https://en.wikipedia.org/wiki/Axcelis_Technologies>) and [*KLA Corporation*](<https://en.wikipedia.org/wiki/KLA_Corporation>) — the
+  implanter and inspection vendors behind several listed
+  tools.[^wiki-axcelis][^wiki-kla]
+
+### Deep dive
+
+* [Gronet and Gibbons (Applied Materials), US 5,155,336](<https://patents.google.com/patent/US5155336A/en>) — the
+  lamp-heated rapid thermal processing chamber.[^pat-rtp-amat]
+* [Nulman, Krusius and Gat, *IEEE EDL* 1985](<https://doi.org/10.1109/EDL.1985.26099>) — rapid thermal oxidation of
+  thin gate dielectrics, the single-wafer alternative to the
+  furnace.[^nulman-1985]
+* [SemiStar, *AG Associates Heatpulse 8800 / 8808*](<https://www.semistarcorp.com/product/ag-associates-heatpulse-8800-8808/>) — reseller
+  specification of the RTP family SkyWater lists.[^ag-8800]
+* [Moov, *Aviza / SVG / Thermco AVP 8000* listing](<https://moov.co/marketplace/furnaces-diffusion/aviza-svg/aviza-asml-svg-watkinsjohnson-avp-8000>) — the vendor's 200 mm
+  vertical batch furnace.[^aviza-avp]
+* [Tan, Li and Zygmunt (Applied Materials), US 6,914,016](<https://patents.google.com/patent/US6914016B2/en>) — HDP-CVD gap
+  fill of high-aspect-ratio gaps.[^pat-hdp-amat]
+* [Lee and Collins (Novellus), US 6,635,965](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6635965>) — the pulsed nucleation
+  layer behind SkyWater's "PNL option".[^pat-pnl-novellus]
+* [Gopalraja et al. (Applied Materials), US 6,350,353](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6350353>) — ionised-metal
+  plasma (IMP) sputtering for liner step coverage.[^pat-imp-amat]
+* [Lai et al. (Novellus), US 6,179,973](<https://patents.google.com/patent/US6179973B1/en>) — the hollow-cathode-magnetron
+  ionised PVD source, the Novellus counterpart to IMP.[^pat-hcm-novellus]
+* [ASML, PAS 5500/750E press release, 2000](<https://www.asml.com/en/news/press-releases/2000/asml-introduces-krf-lithography-scanner-optimized-for>) — a KrF step-and-scan system
+  aimed at 130 nm.[^asml-750e]
+* [Tokyo Electron, *Coater/Developer ACT Series*](<https://www.tel.com/product/act.html>) — the track class linked
+  to the exposure tools.[^tel-act]
+* [GCE Market, *KLA-Tencor 8100XP CD-SEM*](<https://www.gcemarket.com/equipment/kla-tencor-8100-cd-sem-d2c9j>) — specification of a CD-SEM of
+  the period.[^gce-kla8100]
+* [Ogle (Lam Research), US 4,948,458](<https://patents.google.com/patent/US4948458A/en>) — the transformer-coupled planar
+  plasma source of the TCP etchers.[^pat-tcp-lam]
+* [Yin et al. (Applied Materials), US 5,540,824](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5540824>) — the decoupled-source
+  plasma reactor of the DPS etchers.[^pat-dps-amat]
+* [Stanford Nanofabrication Facility, *Lam Research TCP 9400 Poly
+  Etcher*](<https://snfguide.stanford.edu/guide/equipment/lam-research-tcp-9400-poly-etcher-lampoly>) — a university guide to the etcher SkyWater lists.[^snf-9400]
+* [Lam Research, Exelan High Performance press release, 2001](<https://newsroom.lamresearch.com/2001-07-09-Lam-Research-Corporation-Advances-Dielectric-Etch-Capabilities-With-Launch-Of-Exelan-R-High-Performance>) — the
+  dielectric etcher class the contact and via pages cite.[^lam-exelan]
+* [Kamarehi and Simpson (Fusion Systems), US 5,498,308](<https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5498308>) — the microwave
+  downstream asher.[^pat-asher-fusion]
+* [Kern, *J. Electrochem. Soc.* 1990](<https://doi.org/10.1149/1.2086825>) — the evolution of wafer cleaning
+  that the wet benches carry out.[^kern-1990]
+* [SEZ, Spin-Processor 223 press release, 1999](<https://www.surfacefinishing.com/doc/sez-doubles-wafer-processing-capabilities-wit-0001>) — a dual-chamber spin
+  processor for cleaning and film removal.[^sez-223-pr]
+* [Current, *J. Vac. Sci. Technol. A* 1996](<https://doi.org/10.1116/1.580279>) — production ion implanters
+  from a vacuum perspective.[^current-1996]
+* [Semiconductor Online, *8250HT Medium Current Ion Implanter*](<https://www.semiconductoronline.com/doc/8250ht-medium-current-ion-implanter-0001>) — the
+  energy and beam-current range of the medium-current class.[^axcelis-8250]
+* [Mezack et al., IIT 2000](<https://doi.org/10.1109/IIT.2000.924180>) — a single-wafer high-current implanter of the
+  period.[^mezack-2000]
+* [Tolles et al. (Applied Materials), US 5,738,574](<https://patents.google.com/patent/US5738574A/en>) — the continuous
+  multi-station CMP system of the Mirra.[^pat-cmp-mirra]
+* [Keithley Instruments, *Series S600 Parametric Test Systems*](<https://download.tek.com/datasheet/SeriesS600_DataSht.pdf>) — the
+  parametric tester class used for electrical test.[^keithley-s600]
+* [ITRS 2001, *Lithography*](<https://www.semiconductors.org/wp-content/uploads/2018/08/2001Litho.pdf>) — the exposure options it lists by node for
+  critical layers.[^itrs-03]
 
 <!-- footnotes -->
 
