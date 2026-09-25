@@ -97,24 +97,24 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-tip-n" data-layer="tipn" points="249.75,683.94 283.00,683.94 283.00,706.59 249.75,706.59"/>
 <polygon fill="url(#p-xhatch)" points="249.75,683.94 283.00,683.94 283.00,706.59 249.75,706.59"/>
 <polygon class="mat m-sd-n" data-layer="nsd" points="9.00,683.94 91.25,683.94 91.25,736.78 9.00,736.78"/>
-<path class="ion" d="M26.9 460.8L26.9 616.8"/>
-<path class="ionhead" d="M26.9 621.3L29.9 627.3L23.9 627.3Z"/>
-<path class="ion" d="M56.7 460.8L56.7 616.8"/>
-<path class="ionhead" d="M56.7 621.3L59.7 627.3L53.7 627.3Z"/>
-<path class="ion" d="M86.4 460.8L86.4 616.8"/>
-<path class="ionhead" d="M86.4 621.3L89.4 627.3L83.4 627.3Z"/>
-<path class="ion" d="M116.2 460.8L116.2 492.3"/>
-<path class="ionhead" d="M116.2 496.8L119.2 502.8L113.2 502.8Z"/>
-<path class="ion" d="M146.0 460.8L146.0 492.3"/>
-<path class="ionhead" d="M146.0 496.8L149.0 502.8L143.0 502.8Z"/>
-<path class="ion" d="M175.8 460.8L175.8 492.3"/>
-<path class="ionhead" d="M175.8 496.8L178.8 502.8L172.8 502.8Z"/>
-<path class="ion" d="M205.6 460.8L205.6 492.3"/>
-<path class="ionhead" d="M205.6 496.8L208.6 502.8L202.6 502.8Z"/>
-<path class="ion" d="M235.3 460.8L235.3 492.3"/>
-<path class="ionhead" d="M235.3 496.8L238.3 502.8L232.3 502.8Z"/>
-<path class="ion" d="M265.1 460.8L265.1 492.3"/>
-<path class="ionhead" d="M265.1 496.8L268.1 502.8L262.1 502.8Z"/>
+<path class="ion" d="M26.9 460.8L26.9 615.3"/>
+<path class="ionhead" d="M26.9 621.3L29.9 615.3L23.9 615.3Z"/>
+<path class="ion" d="M56.7 460.8L56.7 615.3"/>
+<path class="ionhead" d="M56.7 621.3L59.7 615.3L53.7 615.3Z"/>
+<path class="ion" d="M86.4 460.8L86.4 615.3"/>
+<path class="ionhead" d="M86.4 621.3L89.4 615.3L83.4 615.3Z"/>
+<path class="ion" d="M116.2 460.8L116.2 490.8"/>
+<path class="ionhead" d="M116.2 496.8L119.2 490.8L113.2 490.8Z"/>
+<path class="ion" d="M146.0 460.8L146.0 490.8"/>
+<path class="ionhead" d="M146.0 496.8L149.0 490.8L143.0 490.8Z"/>
+<path class="ion" d="M175.8 460.8L175.8 490.8"/>
+<path class="ionhead" d="M175.8 496.8L178.8 490.8L172.8 490.8Z"/>
+<path class="ion" d="M205.6 460.8L205.6 490.8"/>
+<path class="ionhead" d="M205.6 496.8L208.6 490.8L202.6 490.8Z"/>
+<path class="ion" d="M235.3 460.8L235.3 490.8"/>
+<path class="ionhead" d="M235.3 496.8L238.3 490.8L232.3 490.8Z"/>
+<path class="ion" d="M265.1 460.8L265.1 490.8"/>
+<path class="ionhead" d="M265.1 496.8L268.1 490.8L262.1 490.8Z"/>
 </g>
 <text x="328.0" y="746.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 730.9H285.0V741.5H324.0"/>

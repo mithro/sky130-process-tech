@@ -85,10 +85,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-sd-n" data-layer="polyn" points="180.25,540.00 220.00,540.00 220.50,564.00 283.00,564.00 283.00,584.00 200.50,584.00 200.00,560.00 180.25,560.00"/>
 <polygon class="mat m-sd-p" data-layer="polyp" points="112.25,540.00 179.75,540.00 179.75,560.00 112.25,560.00"/>
 <polygon fill="url(#p-plus)" points="112.25,540.00 179.75,540.00 179.75,560.00 112.25,560.00"/>
-<path class="ion" d="M129.2 498.0L129.2 529.5"/>
-<path class="ionhead" d="M129.2 534.0L132.2 540.0L126.2 540.0Z"/>
-<path class="ion" d="M162.8 498.0L162.8 529.5"/>
-<path class="ionhead" d="M162.8 534.0L165.8 540.0L159.8 540.0Z"/>
+<path class="ion" d="M129.2 498.0L129.2 528.0"/>
+<path class="ionhead" d="M129.2 534.0L132.2 528.0L126.2 528.0Z"/>
+<path class="ion" d="M162.8 498.0L162.8 528.0"/>
+<path class="ionhead" d="M162.8 534.0L165.8 528.0L159.8 528.0Z"/>
 </g>
 <text x="328.0" y="630.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 626.0H285.0H324.0"/>

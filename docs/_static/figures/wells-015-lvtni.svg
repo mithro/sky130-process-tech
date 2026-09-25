@@ -70,14 +70,14 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-dots)" points="145.75,429.00 283.00,429.00 283.00,491.00 200.50,491.00 200.00,467.00 145.75,467.00"/>
 <polygon class="mat m-implant" data-layer="chn" points="9.00,496.00 90.25,496.00 90.25,506.00 9.00,506.00"/>
 <polygon fill="url(#p-vlines-ink)" points="9.00,496.00 90.25,496.00 90.25,506.00 9.00,506.00"/>
-<path class="ion" d="M28.7 425.0L28.7 480.5"/>
-<path class="ionhead" d="M28.7 485.0L31.7 491.0L25.7 491.0Z"/>
-<path class="ion" d="M62.1 425.0L62.1 480.5"/>
-<path class="ionhead" d="M62.1 485.0L65.1 491.0L59.1 491.0Z"/>
-<path class="ion" d="M95.4 425.0L95.4 456.5"/>
-<path class="ionhead" d="M95.4 461.0L98.4 467.0L92.4 467.0Z"/>
-<path class="ion" d="M128.8 425.0L128.8 456.5"/>
-<path class="ionhead" d="M128.8 461.0L131.8 467.0L125.8 467.0Z"/>
+<path class="ion" d="M28.7 425.0L28.7 479.0"/>
+<path class="ionhead" d="M28.7 485.0L31.7 479.0L25.7 479.0Z"/>
+<path class="ion" d="M62.1 425.0L62.1 479.0"/>
+<path class="ionhead" d="M62.1 485.0L65.1 479.0L59.1 479.0Z"/>
+<path class="ion" d="M95.4 425.0L95.4 455.0"/>
+<path class="ionhead" d="M95.4 461.0L98.4 455.0L92.4 455.0Z"/>
+<path class="ion" d="M128.8 425.0L128.8 455.0"/>
+<path class="ionhead" d="M128.8 461.0L131.8 455.0L125.8 455.0Z"/>
 </g>
 <text x="328.0" y="590.9" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 572.0H285.0V586.0H324.0"/>

@@ -1188,6 +1188,22 @@ def eval_y(xs: XSection, expr, errs: list[str] | None = None):
     return 0.0
 
 
+def ion_arrow(hx: float, hy: float, rise: float, tilt: float) -> tuple[str, str]:
+    """One implant arrow in SVG coordinates: its tip at (hx, hy) on the surface, its tail
+    ``rise`` drawing units higher and, for a tilted beam, to the right.  The head's base sits
+    on the tail side of the tip, so the arrow points the way the ions travel, and the shaft
+    ends at that base."""
+    ux, uy = math.sin(tilt), -math.cos(tilt)        # screen direction from the tip to the tail
+    run = rise / max(math.cos(tilt), 1e-6)
+    tail = (hx + run * ux, hy + run * uy)
+    bx, by = hx + 6.0 * ux, hy + 6.0 * uy           # centre of the head's base
+    px, py = -uy, ux
+    shaft = f"M{f1(tail[0])} {f1(tail[1])}L{f1(bx)} {f1(by)}"
+    head = (f"M{f1(hx)} {f1(hy)}L{f1(bx + 3.0 * px)} {f1(by + 3.0 * py)}"
+            f"L{f1(bx - 3.0 * px)} {f1(by - 3.0 * py)}Z")
+    return shaft, head
+
+
 def _zoom_panel(p: dict, a: float, z: float) -> dict:
     """A panel's positions moved into a close-up's coordinates: x -> (x - a) * z, a height
     -> y * z, and ``top@x`` / ``si@x`` re-aimed at the moved x."""
@@ -1550,16 +1566,9 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             gap, tilt = SP["ion-arrow-gap"], ion_tilt
             for xv in ion_xs:
                 tipy = st.top(st.idx(xv)) + gap
-                run = (ion_tail_y - tipy) / max(math.cos(tilt), 1e-6)
-                tx0, ty0 = xv + run * math.sin(tilt), ion_tail_y
-                svg.add(f'<path class="ion" d="M{f1(sx(tx0))} {f1(sy(ty0))}'
-                        f'L{f1(sx(xv + 4.5 * math.sin(tilt)))} {f1(sy(tipy + 4.5 * math.cos(tilt)))}"/>')
-                hx, hy = sx(xv), sy(tipy)
-                dx, dy = math.sin(tilt), -math.cos(tilt)
-                px, py = -dy, dx
-                svg.add(f'<path class="ionhead" d="M{f1(hx)} {f1(hy)}'
-                        f'L{f1(hx - 6.0 * dx + 3.0 * px)} {f1(hy - 6.0 * dy + 3.0 * py)}'
-                        f'L{f1(hx - 6.0 * dx - 3.0 * px)} {f1(hy - 6.0 * dy - 3.0 * py)}Z"/>')
+                shaft, head = ion_arrow(sx(xv), sy(tipy), ion_tail_y - tipy, tilt)
+                svg.add(f'<path class="ion" d="{shaft}"/>')
+                svg.add(f'<path class="ionhead" d="{head}"/>')
         svg.add("</g>")
         for k, dm in enumerate(dims):
             ya, yb, xd = eval_y(st, dm["y0"], errs), eval_y(st, dm["y1"], errs), sx(dm["x"])
@@ -3451,6 +3460,15 @@ def selftest() -> int:
     if abs(zx.overlays[0]["where"][0][0] - (120 - 94) * zf) > 1e-6 or xs0.overlays[0]["where"] != [[120, 200]]:
         print("SELFTEST FAIL: a close-up must move a doped region's extent and leave the series' own alone")
         bad += 1
+    # an ion arrow points the way the ions travel: down, and for a tilted beam to the left
+    for tilt_deg in (0.0, 7.0, 40.0):
+        shaft, head = ion_arrow(100.0, 200.0, 40.0, math.radians(tilt_deg))
+        hp = [float(v) for v in re.findall(r"-?[\d.]+", head)]
+        cx, cy = (hp[0] + hp[2] + hp[4]) / 3, (hp[1] + hp[3] + hp[5]) / 3
+        tail = [float(v) for v in re.findall(r"-?[\d.]+", shaft)][:2]
+        if not (cy < hp[1] and (tail[0] - hp[0]) * (cx - hp[0]) + (tail[1] - hp[1]) * (cy - hp[1]) > 0):
+            print(f"SELFTEST FAIL: the ion arrowhead at {tilt_deg} degrees points back up the beam")
+            bad += 1
     # a thin patterned film follows the surface only inside its ranges
     xs1 = XSection({"material": "si-sub", "depth": 40})
     xs1.apply({"op": "deposit", "id": "g", "material": "poly", "t": 20, "where": [[60, 80]]})

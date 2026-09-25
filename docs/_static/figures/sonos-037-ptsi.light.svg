@@ -77,14 +77,14 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon fill="url(#p-plus)" points="9.00,520.75 72.00,520.75 79.00,564.95 79.50,568.75 80.00,570.86 80.50,571.98 81.00,572.81 81.50,573.48 82.00,574.03 82.50,574.51 83.00,574.92 84.00,575.58 85.00,576.06 86.00,576.41 87.00,576.63 88.00,576.74 112.00,576.74 113.00,576.63 114.00,576.41 115.00,576.06 116.00,575.58 117.00,574.92 117.50,574.51 118.00,574.03 118.50,573.48 119.00,572.81 119.50,571.98 120.00,570.86 120.50,568.75 121.00,564.95 128.00,520.75 283.00,520.75 283.00,596.75 9.00,596.75"/>
 <polygon class="mat m-implant" data-layer="ptsi" points="160.25,532.75 283.00,532.75 283.00,541.75 160.25,541.75"/>
 <polygon fill="url(#p-vlines-ink)" points="160.25,532.75 283.00,532.75 283.00,541.75 160.25,541.75"/>
-<path class="ion" d="M175.4 473.8L175.4 505.2"/>
-<path class="ionhead" d="M175.4 509.8L178.4 515.8L172.4 515.8Z"/>
-<path class="ion" d="M205.3 473.8L205.3 505.2"/>
-<path class="ionhead" d="M205.3 509.8L208.3 515.8L202.3 515.8Z"/>
-<path class="ion" d="M235.2 473.8L235.2 505.2"/>
-<path class="ionhead" d="M235.2 509.8L238.2 515.8L232.2 515.8Z"/>
-<path class="ion" d="M265.1 473.8L265.1 505.2"/>
-<path class="ionhead" d="M265.1 509.8L268.1 515.8L262.1 515.8Z"/>
+<path class="ion" d="M175.4 473.8L175.4 503.8"/>
+<path class="ionhead" d="M175.4 509.8L178.4 503.8L172.4 503.8Z"/>
+<path class="ion" d="M205.3 473.8L205.3 503.8"/>
+<path class="ionhead" d="M205.3 509.8L208.3 503.8L202.3 503.8Z"/>
+<path class="ion" d="M235.2 473.8L235.2 503.8"/>
+<path class="ionhead" d="M235.2 509.8L238.2 503.8L232.2 503.8Z"/>
+<path class="ion" d="M265.1 473.8L265.1 503.8"/>
+<path class="ionhead" d="M265.1 509.8L268.1 503.8L262.1 503.8Z"/>
 </g>
 <text x="328.0" y="512.6" class="t-label-title" data-owner="padox">Pad oxide</text>
 <text x="328.0" y="528.6" class="t-label-note tag" data-owner="padox">inferred</text>
