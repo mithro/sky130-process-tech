@@ -313,13 +313,17 @@ sampling plans are not public.
 * **Overlay at every level, CD where it matters.** The step pages name
   overlay metrology at all 36 masks and a CD-SEM at every mask and at the
   isolation-nitride, trench, tunnel-mask ARC, gate, local-interconnect,
-  contact, via, metal and capacitor etches. For scale, ITRS 2001 put the
+  contact, via, metal and capacitor etches.
+
+  For scale, ITRS 2001 put the
   overlay requirement at 46 nm in the year it set the DRAM half-pitch at
   130 nm.[^itrs-03]
 * **Mixed exposure classes.** The i-line and KrF levels
   ({ref}`machine-i-line-stepper`, {ref}`machine-duv-krf-stepper`) share
   one overlay entry in SkyWater's list, which does not say whether
-  separate tools serve the two classes. Where a level is printed on a
+  separate tools serve the two classes.
+
+  Where a level is printed on a
   different tool from its reference, the tool corrections the
   measurements feed back must cover matched-machine errors (inference
   from the exposure-tool specifications on those pages). SkyWater lists

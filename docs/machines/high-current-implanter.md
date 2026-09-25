@@ -303,14 +303,18 @@ not public.
   tip runs on the "Hi dose" GSD or on the 8250 depends on a dose that is
   not public.[^skw-01]
 * **Charging.** The source/drain, tip and gate implants run through
-  resist over thin gate oxide. The {ref}`ASTI <step-065>`,
+  resist over thin gate oxide.
+
+  The {ref}`ASTI <step-065>`,
   {ref}`PSDI <step-082>` and {ref}`NSDI <step-086>` pages cite charging
   studies of high-current implants through resist, among them those
   above;[^lukaszek-1996][^dixon-1996][^mehta-1996] the SkyWater entry does not describe the charge-control
   system.[^skw-01]
 * **Resist heating, outgassing and dose.** The {ref}`P1I <step-050>`
   page notes that a 10¹⁵–10¹⁶ cm⁻² implant "deposits enough energy to
-  flow an uncooled resist". Resist burning,[^romig-1996] outgassing
+  flow an uncooled resist".
+
+  Resist burning,[^romig-1996] outgassing
   whose composition changes abruptly at a "critical dose of 4.5E14" in
   a 150 kV phosphorus source/drain implant,[^horsky-1998] and the
   pressure compensation of the dose[^kraupner-2002] are the machine-side

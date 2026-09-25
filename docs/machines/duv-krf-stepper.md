@@ -350,13 +350,17 @@ settings and resists per layer are not public.
   built for that regime.[^asml-750e]
 * **Active and nitride cut.** {ref}`FOM <step-004>` and
   {ref}`NPCM <step-078>` are assigned to this class with an i-line
-  alternative ("if the layer were relaxed", in the FOM page's words). The
+  alternative ("if the layer were relaxed", in the FOM page's words).
+
+  The
   later implant masks, most of them i-line levels, must overlay the
   active and gate patterns, so the KrF levels set the grid the i-line
   tools align to (inference; the alignment tree is not public;
   {ref}`machine-i-line-stepper`).
 * **Contacts and vias.** The local-interconnect contact, contact and via
-  masks print isolated holes, the hardest KrF pattern; the
+  masks print isolated holes, the hardest KrF pattern.
+
+  The
   {ref}`VIM2 <step-129>` page finds {math}`k_1 \approx 0.56` for the 0.2 µm
   via 2, and the process-steps sheet's mask types for vias 2 and 3 read as
   embedded attenuated phase-shift masks.[^steps-sheet][^lin-1993]
