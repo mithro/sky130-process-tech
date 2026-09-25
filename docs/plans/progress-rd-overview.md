@@ -346,3 +346,143 @@ Only `docs/overview/index.md` and this progress file
 (`docs/plans/progress-rd-overview.md`) — confirmed with
 `git diff --stat main...topic/rd-overview`. `docs/overview/sky130b-reram.md`
 and every other page are untouched.
+
+## Step 6 — review fixes (independent Opus review, `tmp/reviews/rd-overview.md`)
+
+Verdict "approve with fixes" on `cb46d872`. Coordinator approved M1 and L3 as
+one-phrase/one-sentence text exceptions and directed the rest. All fixed in
+this worktree, one more commit.
+
+**M1 (approved exception).** `:751` "the module table below shows where" was
+navigation text made stale by the reorder (the table is now ~590 lines
+above, not below). Added `(overview-module-table)=` directly above the
+module table's header row (a MyST target attaches to the next block; no
+heading is needed) and changed the sentence to "the
+{ref}`module table <overview-module-table>` shows where". No fact changed;
+recorded here as the reviewer/coordinator-approved exception to "reorder
+text unchanged".
+
+**M2.** Re-measured with the guide's own `clean()` word count (role wrappers
+resolved to their link text, markers stripped). Found 8 prose paragraphs
+over 100 words and 21 list items over 60 (the review's own counts, confirmed
+independently). Split all of them by R-PARA/R-SENTENCE (lead sentence +
+one or two blank-line-separated indented continuations for list items,
+per §3.1 step 4); none needed a label (see L1). Every split landed on an
+existing sentence or semicolon boundary; four semicolons became full stops
+(`R-SENTENCE` rule 1) and one em-dash aside became its own sentence
+(`R-SENTENCE` "material inside the dashes becomes its own sentence"), each
+time keeping every word, marker, quotation, hedge and number. No item
+needed to be left over-length or recorded as "unsplittable due to meaning
+change" — a seam existed in all 29. The one place a pronoun needed its noun
+back (R-PARA step 5): "The only line in the public record that speaks
+about S8P says…" (the em-dash aside used to carry the antecedent). After
+the split: 0 paragraphs > 100 words (max 96, the untouched opening
+paragraph), 0 list items > 60 words (max 59).
+
+**M3.** Replaced `overview-how-to-read` in the "On this page" list with a
+new `(overview-what-sky130-is)=` label on `## What SKY130 is` (no label
+existed there before). New order, as the review specified: Flow by module,
+Cross-section, Phases, What SKY130 is, Open questions.
+
+**M4.** Added `:caption: Companion page` to the `{toctree}` directive so it
+no longer reads as an unlabelled sixth bullet under "On this page".
+
+**L1.** Removed the four narrative-passage labels (Trench formation / Deep
+N-well timing / Trench depth in the first module; Where each phase ends in
+the phases H2) per R-PARA step 3 ("a narrative passage takes no label");
+kept every paragraph break.
+
+**L2.**
+* `**Metal 1 and up.**` moved off "Most of the labels are consistent with
+  one another." (a lead sentence for all three sub-arguments) onto its own
+  arithmetic sentence ("From metal 1 upwards…"), which it actually
+  describes.
+* `**Reading adopted.**` split so the closing sentence ("The public values
+  for some films also disagree…") is its own, unlabelled paragraph instead
+  of trailing under a label about the LINT/`li` reading.
+* `**No salicide**` renamed to `**Silicide**` — a neutral label, since the
+  bullet's own claim is hedged "(…; inference)" and the bold label
+  shouldn't assert more than the sentence does.
+
+**L3 (approved exception).** The opening paragraph's second sentence listed
+the page's sections in the pre-reorder order. Reordered the sentence's
+clauses only (same words, same markers — there are none in this sentence —
+just resequenced) to match the page's actual order: how to read, flow by
+module, cross-section, phases, what SKY130 is, open questions. Recorded
+here as the coordinator-approved exception to "reorder text unchanged",
+alongside M1.
+
+**L4.** Restored the blank line after `### Via 1, metal 2 and via 2` and
+after `### Metal 4, second MiM capacitor, via 4 and metal 5` (the two
+headings whose source had omitted it only to satisfy `check_preserved.py`).
+Both now match the other 11 module headings' source form exactly.
+
+**Follow-ups (left for the tool-fix branch, not done here, per the
+coordinator):**
+* The older-process-names quotes (`s8pfhd`, `s8phirs`, `s8phrc`,
+  `s8pfn-20`) stay as prose. The review's redo (`tmp/rev/cp/redo.md`)
+  confirms a 2-column `Name | PDK description` table, captioned with
+  `:widths: 20 80`, is the right shape once `check_preserved.py`'s fix
+  lands (it currently fails this exact conversion undeclarably — see
+  below, case 3a's twin).
+* The step-per-category counts (`:44`) stay as prose too, per the review's
+  own recommendation (B, "no, or optional") — it already reads well on the
+  first screen and a 10-row table would push the guided tour down.
+
+### `check_preserved.py`: 11 confirmed false-positive LOST `number_order` tuples (documented, not fixable here)
+
+`check_preserved.py --allow-added numbers,number_order,refs docs/overview/index.md`
+now reports **only declared additions** in `numbers` (`1`, `8`, `12`, `16`,
+`20`, `24`, `28`, `130` — every one traced: `:widths:` values on the two
+captioned tables, one duplicated `metal 1` in its own label, one duplicated
+`SKY130`/`sky130` substring between a new `(label)=` and the heading it
+sits above, and one duplicated `S8P` needed to give the split sentence its
+own subject) and `refs` (the six new nav/M1 targets), plus **11 LOST
+`number_order` tuples that the tool cannot be told to accept**
+(`--allow-added` never clears a loss; `check_preserved.py`'s own docstring:
+"A loss in any category is always an error"). Every one of the 11 is a
+direct instance of the reviewer's Section C findings (cases 1a, 1b, 1c, 3a
+and 3b; fixes C1–C3, prototyped on the tool branch, not touched here).
+Verified each is a false positive two ways, independent of the reviewer's
+own prototype:
+
+1. The plain `numbers` multiset (every digit on the page, unordered) shows
+   **zero losses**, only the eight declared additions above — so no
+   number's value disappeared anywhere on the page.
+2. For each of the 11 LOST tuples, its exact sequence still occurs as a
+   **contiguous run in the new page's flattened number stream** — i.e. it
+   is "REGROUPED" in the fixed tool's terms (Fix C3), not lost: the same
+   digits, in the same left-to-right order, now split across two or more
+   smaller units instead of one. Checked by script (kept at
+   `tmp/cp-verify.py` in this worktree, not committed — a one-off check,
+   not a new tool) against every LOST tuple; 10 of 11 are byte-for-byte
+   contiguous. The 11th (the S8P bullet, M2) is contiguous **except for
+   one extra `8`**, from restoring "S8P" as the second sentence's subject
+   in place of "its" (already declared under `numbers`); the two halves
+   (`(8,130,5,-3,3,3,4,130,130,8,8)` and `(8,2014,130)`) were positioned so
+   the concatenation matches the original clause order (aside first, main
+   clause second) rather than the split I first tried (main clause first),
+   specifically to keep this as close to the original order as possible.
+
+Root causes, matching the review's Section C exactly:
+* Two are the R-H3 heading case (`Via 1, metal 2 and via 2`;
+  `Metal 4, second MiM capacitor…`), reintroduced deliberately by L4
+  restoring the blank line the checker's current sentence-boundary regex
+  cannot see through (Fix C1, first part).
+* One is case 1b exactly (`**Metal 1 and up.**` immediately before a
+  number-bearing sentence — the L2 fix required this ordering for the
+  label to fit its paragraph; Fix C1 covers it too).
+* The rest are the numbered/bulleted-list-item split case: a list marker
+  digit (`6.`, `7.`, `8.`) or a mask/step count (`34`, `130`) that used to
+  be merged with the rest of a long item is now the whole content of a
+  short first unit, with the remainder in a new indented-continuation unit
+  (Fix C2/C3 — the tool has no notion that a blank-line-separated
+  continuation is still "the same list item").
+
+No further action is possible here without editing the checker, which
+`docs/plans/readability-guide.md` §2.15 and this branch's rules forbid.
+`check_preserved.py` exits 1 on this page for exactly these 11 lines;
+everything else (`numbers`, `refs` declared-only; `quotes`, `hedges`,
+`markers`, `urls`, `footnotes`, dropdown text: all equal to `main`) passes
+clean. Flagging for the coordinator to confirm this satisfies "make
+check_preserved pass" for this branch, as it did for the L4 case.

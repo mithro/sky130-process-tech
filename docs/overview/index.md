@@ -2,25 +2,26 @@
 # Overview
 
 This section introduces the SKY130 process technology as a whole before
-the step-by-step pages. It says where the process came from and what it
-offers, explains how this reference is organised and how it marks what
-is known and what is inferred, groups the 171 steps into process
-modules, walks up a simplified cross-section of the finished wafer,
-sets out how the flow divides into front end, middle of line and back
-end, and collects the most important questions the public record leaves
+the step-by-step pages. It explains how this reference is organised and
+how it marks what is known and what is inferred, groups the 171 steps
+into process modules, walks up a simplified cross-section of the
+finished wafer, sets out how the flow divides into front end, middle of
+line and back end, says where the process came from and what it offers,
+and collects the most important questions the public record leaves
 open. A companion page describes the optional resistive-memory tier of
 the `sky130B` variant.
 
 **On this page:**
 
-* {ref}`overview-how-to-read`
 * {ref}`overview-modules`
 * {ref}`overview-cross-section`
 * {ref}`overview-phases`
+* {ref}`overview-what-sky130-is`
 * {ref}`overview-open-questions`
 
 ```{toctree}
 :maxdepth: 1
+:caption: Companion page
 
 sky130b-reram
 ```
@@ -33,7 +34,9 @@ sky130b-reram
 The flow is documented as 171 numbered steps, from
 {ref}`SMAT <step-001>` (starting material) to
 {ref}`HPETEST <step-171>` (electrical test), in the order in which a
-wafer experiences them ({ref}`steps-index`). The step numbers, codes,
+wafer experiences them ({ref}`steps-index`).
+
+The step numbers, codes,
 names and order are those of the public *S8 / SKY130 Process Steps*
 sheet.[^steps-sheet] The sheet records what it calls each step and
 nothing about how the step is done: a step name is not evidence of a
@@ -118,7 +121,9 @@ The pages use a fixed vocabulary to separate kinds of statement.
 * **Evidence strength** for tools at SkyWater follows the inventory's
   scale: **strong**, a SkyWater or tool-vendor statement; **medium**, a
   SkyWater job posting or an interview with a named employee; **weak**,
-  indirect evidence. Because SkyWater's tool list never names a step,
+  indirect evidence.
+
+  Because SkyWater's tool list never names a step,
   the pages grade the tool and its assignment to the step separately,
   typically as "strong for the tool; inference for the assignment"
   ({ref}`machines-index`).
@@ -147,6 +152,7 @@ steps and 36 masks.
 The 171 steps by module. The strip on the left is to scale by number of steps; each row gives the module's step range and its masks, as in the table below.[^steps-sheet] The phase boundaries are this reference's ({ref}`overview-phases`).
 :::
 
+(overview-module-table)=
 | Module | Steps | Number of steps | Mask steps | Key public facts |
 |--------|-------|-----------------|------------|------------------|
 | Starting material, isolation and deep N-well | {ref}`SMAT <step-001>` – {ref}`NS19 <step-013>` | 13 | 2 (`FOM`, `DNM`) | "Bulk" substrate;[^skw-02] "FOX K=3.9" field oxide, top at 0.3262 µm on the stack diagram,[^pdk-04] 0.07 µm above the silicon under poly[^pdk-03] |
@@ -176,7 +182,7 @@ gives its public basis and marks what is inferred.
 
 ### Starting material, isolation and deep N-well
 
-**Trench formation.** The wafer enters as
+The wafer enters as
 bare p-type silicon — the stack diagram labels the bottom
 "p-substrate"[^pdk-04] — and the first module builds
 {term}`shallow trench isolation <STI>`: a pad oxide and a nitride
@@ -187,7 +193,7 @@ silicon trench etch, a liner oxidation, an oxide fill, a polish that
 stops on the nitride, and the nitride strip ({ref}`STINITE <step-005>`
 to {ref}`NS19 <step-013>`).
 
-**Deep N-well timing.** The step list places the deep N-well mask,
+The step list places the deep N-well mask,
 implant and strip ({ref}`DNM <step-007>` to {ref}`DNIS <step-009>`)
 between the trench etch and the liner oxidation. On the {ref}`DNM <step-007>`
 page's reading, the implant therefore enters through open trenches and is
@@ -195,7 +201,7 @@ driven by the heat of the isolation module (inference); that page also sets
 out why that order may have been
 chosen, as inferences.
 
-**Trench depth.** No trench depth is public; the {ref}`STIE <step-006>`
+No trench depth is public; the {ref}`STIE <step-006>`
 page reads the stack diagram as consistent with roughly 0.3 µm and
 explains why the drawing cannot fix it.
 
@@ -211,7 +217,9 @@ and the PMOS channel implant ({ref}`NWM <step-017>` to
 a {term}`block mask` (the PDK has no drawn P-well layer)
 ({ref}`PWBM <step-026>` to {ref}`PWIS <step-029>`), and the lightly
 doped P-well of the 20 V drain-extended devices
-({ref}`PWDEM <step-030>` to {ref}`PWDEIS <step-033>`). A single anneal,
+({ref}`PWDEM <step-030>` to {ref}`PWDEIS <step-033>`).
+
+A single anneal,
 {ref}`RTAI <step-034>`, read on its page as activating all ten, comes
 before any gate dielectric is grown. The PDK publishes the resulting well profiles, not the implants,
 so the two-implant wells are read as chained {term}`retrograde wells
@@ -257,7 +265,9 @@ page as undoped amorphous silicon (inference), is deposited and doped *before* i
 an n-type gate implant everywhere except the resistor bodies
 ({ref}`RPM <step-049>`, {ref}`P1I <step-050>`), then p-type implants
 into the 300 Ω/sq and 2000 Ω/sq resistor bodies through two further
-masks ({ref}`RRPM <step-052>` to {ref}`UPRIS <step-057>`). The film is
+masks ({ref}`RRPM <step-052>` to {ref}`UPRIS <step-057>`).
+
+The film is
 capped with nitride and oxide ({ref}`GATENIT <step-058>`,
 {ref}`POC <step-059>`), the wafer backside is cleared
 ({ref}`BFR <step-060>`), the gate is printed and etched
@@ -308,7 +318,9 @@ and annealed ({ref}`SACETCH <step-095>`, {ref}`ALLY1 <step-096>`), lined
 with Ti/TiN and silicided at their bottoms ({ref}`TI/TIN1 <step-097>`,
 {ref}`CSIL <step-098>`), and filled with tungsten that is polished back
 into {term}`plugs <W plug>` ({ref}`WDEP <step-099>`,
-{ref}`WCMPLI <step-100>`). A titanium-nitride film is deposited and
+{ref}`WCMPLI <step-100>`).
+
+A titanium-nitride film is deposited and
 patterned into the {term}`local interconnect` ({ref}`LITIN <step-101>`
 to {ref}`LI1ME <step-103>`), sealed with nitride
 ({ref}`LINIT <step-104>`) and buried in an oxide that is polished to
@@ -333,6 +345,7 @@ SKY130 carries at any level is not public, and the evidence is set out
 under {ref}`overview-metal-cap`.
 
 ### Via 1, metal 2 and via 2
+
 Via 1 and via 2 each take the five steps
 of mask, etch, TiN liner, tungsten fill and tungsten polish
 ({ref}`VIM <step-118>` to {ref}`WCMP3 <step-122>`,
@@ -352,7 +365,9 @@ dielectric and the top-plate film are deposited on the blanket metal 3
 ({ref}`CAPILD <step-135>`, {ref}`CAPTIW1 <step-136>`), the plates are
 printed and etched ({ref}`CAPM <step-137>`, {ref}`CAPME <step-138>`), and
 only then is metal 3 patterned, cutting the bottom plates with the
-wiring ({ref}`MM3 <step-139>`, {ref}`MM3E <step-140>`). The dielectric's
+wiring ({ref}`MM3 <step-139>`, {ref}`MM3E <step-140>`).
+
+The dielectric's
 material and thickness and the plate's material are not public; the
 step pages read a {term}`PECVD` {term}`oxynitride` and a TiW plate (inference). The
 dielectric, polish, cap and via-3 module follow
@@ -360,6 +375,7 @@ dielectric, polish, cap and via-3 module follow
 both on metal 3 and on capacitor plates.
 
 ### Metal 4, second MiM capacitor, via 4 and metal 5
+
 The second
 capacitor repeats the first on metal 4 ({ref}`WTIAL4 <step-149>` to
 {ref}`MM4E <step-155>`); the PDK says "The constructions are identical,
@@ -457,7 +473,9 @@ The back end drawn to scale from the heights the PDK's process stack diagram lab
 | Polyimide | "PI1 K=2.94"[^pdk-04] | — | top 11.8834[^pdk-04] | no step in the step list |
 :::
 
-**Metal 1 and up.** Most of the labels are consistent with one another. From metal 1
+Most of the labels are consistent with one another.
+
+**Metal 1 and up.** From metal 1
 upwards each metal bottom equals the one below plus that metal's
 thickness plus the via height (1.3761 + 0.36 + 0.27 = 2.0061 µm, and so
 on to 4.0211 + 0.845 + 0.505 = 5.3711 µm), and the PSG labels equal the
@@ -481,7 +499,9 @@ read 1.0111 µm as the top of the LINT beside `li` (0.9361 + 0.075 µm),
 which fits every other label and leaves 0.34 µm from the `li` top to
 metal 1 (our reading of the drawing[^pdk-04]; the
 {ref}`LITIN <step-101>`, {ref}`NILD2 <step-105>`, {ref}`CTM1 <step-107>`
-and {ref}`CTME <step-108>` pages follow it). The public values for some films also disagree with other public
+and {ref}`CTME <step-108>` pages follow it).
+
+The public values for some films also disagree with other public
 sources; those differences are among the open questions below.
 
 (overview-phases)=
@@ -497,7 +517,7 @@ changes:
 | {term}`MOL` | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | silicide and local interconnect |
 | {term}`BEOL` | {ref}`CTM1 <step-107>` – {ref}`HPETEST <step-171>` | 65 | contact and metal 1; via 1, metal 2, via 2; MiM capacitors, metal 3–5, via 3–4; passivation, pads, alloy, test |
 
-**Where each phase ends.** The front end ends with the last source/drain anneal, when every
+The front end ends with the last source/drain anneal, when every
 junction is in place. The middle of line runs from the pre-metal glass
 to the polished dielectric over the local interconnect, so it contains
 the first contacts (`licon`) and the local interconnect itself. The back
@@ -534,7 +554,9 @@ sources, in the order in which the thermal steps occur.
    at 800–1200 °C[^wiki-thox] and {term}`LPCVD` nitride at roughly
    700–800 °C (typical value),[^txt-02] a tube-furnace process that
    Wikipedia describes as working "at rather high
-   temperature".[^wiki-sin] On the
+   temperature".[^wiki-sin]
+
+   On the
    {ref}`DNM <step-007>` page's reading, this heat also drives the deep
    N-well implanted just before the liner oxidation.
 2. **Well anneal.** {ref}`RTAI <step-034>` activates the ten well and
@@ -554,7 +576,9 @@ sources, in the order in which the thermal steps occur.
    temperature);[^voutsas-1992] the
    {ref}`SAGD <step-048>` page reads
    SKY130's gate film as amorphous from SkyWater's "LPCVD polysilicon
-   (undoped), both amorphous and crystalline"[^skw-01] (inference); the caps and the post-etch re-oxidation
+   (undoped), both amorphous and crystalline"[^skw-01] (inference);
+
+   the caps and the post-etch re-oxidation
    ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`,
    {ref}`IOX45 <step-063>`) follow, at conditions that are not public.
 6. **Junction anneals.** Rapid thermal anneals follow the tip and
@@ -562,15 +586,21 @@ sources, in the order in which the thermal steps occur.
    {ref}`RTAD <step-088>`), and a second one follows the polished glass
    ({ref}`RTAD2 <step-092>`, whose two possible purposes — a final
    source/drain anneal or a dielectric anneal — the step page
-   discusses as inferences); a soak of
+   discusses as inferences).
+
+   A soak of
    1000–1050 °C for a few seconds, or a spike, is the typical 130 nm-era
-   choice.[^txt-05][^txt-10] After them the junctions — 0.1 µm deep in
+   choice.[^txt-05][^txt-10]
+
+   After them the junctions — 0.1 µm deep in
    the PDK's assumptions[^pdk-03] — must not move, and every later step
    is cooler (inference from the order).
 7. **Contact module.** An anneal that the step page reads as a
    hydrogen-bearing alloy anneal, typically 350–450 °C,[^txt-02] precedes
    the contact liner ({ref}`ALLY1 <step-096>`), and the anneal read as the
-   contact silicidation follows it ({ref}`CSIL <step-098>`); titanium disilicide is typically formed by a
+   contact silicidation follows it ({ref}`CSIL <step-098>`).
+
+   Titanium disilicide is typically formed by a
    first anneal at roughly 600–700 °C and converted to its
    low-resistance phase at roughly 800–900 °C.[^maex-1993] How SKY130's
    silicidation is done is not public.
@@ -579,7 +609,9 @@ sources, in the order in which the thermal steps occur.
    about 450 °C;[^txt-02] tungsten CVD for the plugs runs at roughly
    400–450 °C (typical value),[^txt-01] the low end of the "300 and
    800 °C" that Wikipedia gives for hydrogen reduction of
-   WF₆.[^wiki-wf6] The oxide, nitride and
+   WF₆.[^wiki-wf6]
+
+   The oxide, nitride and
    capacitor films of the back end are described on their step pages as
    low-temperature plasma depositions (inference).
 9. **Final alloy.** The last heat is the alloy anneal
@@ -589,6 +621,7 @@ sources, in the order in which the thermal steps occur.
    seen by its 5 nm switching oxide (0.005 µm in the ReRAM tech file,
    {ref}`overview-sky130b-reram`).
 
+(overview-what-sky130-is)=
 ## What SKY130 is
 
 ### A Cypress process in a former Cypress fab
@@ -600,7 +633,9 @@ through SkyWater Technology Foundry", and as "the 8th generation SONOS
 technology node (130nm)".[^pdk-02] The PDK's *Previous Nomenclature*
 page gives the older name: `s8` is "The old Cypress and SkyWater name
 for the SKY130 process. It stood for the "8th generation" of the SONOS
-technology developed originally by Cypress."[^pdk-previous] Cypress used
+technology developed originally by Cypress."[^pdk-previous]
+
+Cypress used
 the same name in public: a 2007 Electronics Weekly article calls it "Cypress's
 S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded
 nonvolatile memory technology",[^cyp-20] and a 2011 release still
@@ -748,7 +783,7 @@ precision resistors "2000Ω/□ 300Ω/□ (Both P-poly)" and a "Bulk"
 substrate.[^skw-02]
 
 Each of these features has a visible cost in the step list, and the
-module table below shows where:
+{ref}`module table <overview-module-table>` shows where:
 
 * **Gate oxides** — the two gate-oxide thicknesses need a
   mask of their own ({ref}`LVOM <step-044>`).
@@ -779,7 +814,7 @@ processes of leading-edge 130 nm logic (our characterisation):
   {term}`subtractively <subtractive metallisation>` over tungsten plugs
   rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
   {ref}`MM1E <step-114>`).
-* **No salicide** — its gates and diffusions carry, on the step
+* **Silicide** — its gates and diffusions carry, on the step
   pages' reading of the unsilicided poly and diffusion
   {term}`sheet resistances <sheet resistance>`,[^pdk-08] no
   {term}`salicide`, only a {term}`silicide` at the bottom
@@ -871,7 +906,9 @@ The report's only process description is the S8DI one ("Die Fab Line
 ID/Wafer Process ID: S8DIN-5R", "1P3M, 0.15 um"), and it gives
 "Metal 1: 150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN", the same
 for metal 2, and "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A
-TiW".[^cyp-qtp-123907] The customer notification that carries the report
+TiW".[^cyp-qtp-123907]
+
+The customer notification that carries the report
 puts the change in plain words: it "aligns our internal Cypress
 Minnesota process, Titanium Tungsten (TiW) based metal stack, with the
 industry-wide Best Known Method Titanium Nitride (TiN) based metal
@@ -886,30 +923,38 @@ Three things follow from the reports themselves.
   away from TiW in July 2013, six months after the report was
   issued.[^cyp-qtp-113005][^cyp-qtp-123907] It is a description of the
   fab's metallisation as it stood before the change, not of SKY130's.
-* The only line in the public record that speaks about **S8P** — the
+* **S8P** is the
   family this reference reads SKY130 as, since the PDK's [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
   page lists "5 levels of metal (p - penta)" and its via-3 rules are
   headed "Via3 connects met3 to met4 in the
-  SKY130Q\*/SKY130P\*/SP8Q/SP8P\* flow"[^pdk-02][^pdk-periph] — says
+  SKY130Q\*/SKY130P\*/SP8Q/SP8P\* flow"[^pdk-02][^pdk-periph].
+
+  The only line in the public record that speaks about S8P says
   that its metal stack changed in February 2014, six years before the
   first SKY130 MPW wafers, with an exclusion for "top metal
   layers".[^cyp-qtp-123907]
 * The one worked example of that exclusion, in the same document, is
   S8DI's metal 3: the two thin levels take the five-film TiN stack while
   the 2.125 µm top level keeps TiW **both** under and over the
-  aluminium.[^cyp-qtp-123907] Note also that the aluminium is 3 200 Å in
+  aluminium.[^cyp-qtp-123907]
+
+  Note also that the aluminium is 3 200 Å in
   the 2013 S8TNV-5R metal-1 recipe and in the 2014 S8DI one, so across
   the two reports the film total differs — 3 600 Å against 4 190 Å (our
   arithmetic) — while the conductor thickness does not; that is what
   "no electrical changes"[^cyp-pin145273] would require. The 2014 report
   does not print S8DI's pre-change stack, so this is a comparison across
   two technologies and not a before-and-after within
-  one.[^cyp-qtp-113005][^cyp-qtp-123907] Note further that the S8DI
+  one.[^cyp-qtp-113005][^cyp-qtp-123907]
+
+  Note further that the S8DI
   qualification line carries **no** exclusion clause — it reads simply
   "Qualification of S8DI Technology Metal Stack Change from Ti/AlCu/TiW
   to Ti/TiN/AlCu/Ti/TiN in CMI Fab 4" — and yet that technology's top
   metal still stands at "500A TiW/21,250A Al 0.5% Cu/300A
-  TiW".[^cyp-qtp-123907] Keeping TiW on a thick top level was therefore
+  TiW".[^cyp-qtp-123907]
+
+  Keeping TiW on a thick top level was therefore
   the fab's practice even where the wording of the qualification does
   not say so. That cuts both ways for this reference, and strengthens
   both of its readings: it makes it more likely that the S8P exclusion
@@ -945,7 +990,9 @@ What it publishes are thicknesses, and two of them are suggestive.
 * **The totals.** The stack diagram labels `metal1` and `metal2`
   0.36 µm.[^pdk-04] The 2013 Ti/Al–Cu/TiW recipe sums to exactly
   3 600 Å; the 2014 Ti/TiN/AlCu/Ti/TiN recipe sums to 4 190 Å (our
-  arithmetic).[^cyp-qtp-113005][^cyp-qtp-123907] Likewise `metal3` and
+  arithmetic).[^cyp-qtp-113005][^cyp-qtp-123907]
+
+  Likewise `metal3` and
   `metal4` are 0.845 µm,[^pdk-04] which is exactly the 8 450 Å of the
   0.18 µm Fab 4 derivative's "150Å Ti / 8,000Å Al / 300Å TiW" metal
   3.[^cyp-qtp-014807]
@@ -953,7 +1000,9 @@ What it publishes are thicknesses, and two of them are suggestive.
   ratio calculation" is 0.8 µm for metal 3 and for metal 4 in the
   S8P\*/SP8P\* flows,[^pdk-03] against the diagram's 0.845 µm — a
   difference of 450 Å, exactly the 150 Å of titanium plus 300 Å of TiW
-  that clad those Cypress stacks.[^cyp-qtp-014807] The 2014 stack's
+  that clad those Cypress stacks.[^cyp-qtp-014807]
+
+  The 2014 stack's
   cladding is 150 + 250 + 90 + 500 = 990 Å, more than twice as much, and
   cannot be reconciled with a 450 Å difference at any aluminium
   thickness (our arithmetic).[^cyp-qtp-123907]
@@ -977,7 +1026,9 @@ A stronger objection runs the other way. That same 0.85 entry, read
 against the 2013 report's S8TNV-5R metal 3 of 150 Å Ti + 7 200 Å Al +
 300 Å TiW = 7 650 Å (our arithmetic), *exceeds* that stack's whole
 thickness by about a tenth — on the reading, itself ours, that S8TNV
-falls under "S8T\*".[^pdk-03][^cyp-qtp-113005] An antenna entry larger
+falls under "S8T\*".[^pdk-03][^cyp-qtp-113005]
+
+An antenna entry larger
 than the film it describes is not derived from film thicknesses at all,
 so the 450 Å coincidence at metals 3 and 4 may be exactly that. It is
 recorded here as the strongest argument against the inference this
@@ -1034,22 +1085,30 @@ are the places where it changes the answer.
 * **What the capacitor-plate etch can stop on.** The MiM top plate sits
   on a thin dielectric on the unpatterned metal below. If that metal's
   cap is the same refractory film as the plate, an etch that cleared the
-  dielectric would have no selective layer left to stop on; if the cap
-  and the plate are different films, a through-etch has a stop — which is
-  what the Philips process does, where "the etch is controlled to stop in
+  dielectric would have no selective layer left to stop on.
+
+  If the cap
+  and the plate are different films, a through-etch has a stop.
+
+  The Philips process does
+  that, where "the etch is controlled to stop in
   the TiN ARC film that coats the M5 layer and forms the bottom
   electrode"[^pat-mim-philips] ({ref}`CAPME <step-138>`,
   {ref}`CAP2ME <step-153>`).
 * **The via landing layer.** Vias 1 to 4 land on the cap of the metal
   below. Both films etch in fluorine to volatile fluorides, so a
   fluorine-rich over-etch thins either; but it is a TiN floor that the
-  contemporaneous patents describe and measure. Texas Instruments'
+  contemporaneous patents describe and measure.
+
+  Texas Instruments'
   etch-stop patent says that "TiN may be used as the via etch stop and
   ARC layer over the interconnect conductor or the top electrode in
   memory cells, but its etch selectivity to oxide is only 30:1", and
   measures 28.4:1 for an Ar/CF₄/CHF₃ etch; nothing public gives the
-  corresponding figure for TiW.[^pat-etchstop-ti] So on a TiN cap the
-  margin is the one that patent calls insufficient for long over-etches,
+  corresponding figure for TiW.[^pat-etchstop-ti]
+
+  On a TiN cap the
+  margin is therefore the one that patent calls insufficient for long over-etches,
   and on a TiW cap it is not public at all ({ref}`VIME <step-119>`,
   {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`,
   {ref}`VIM4E <step-160>`).
@@ -1057,11 +1116,15 @@ are the places where it changes the answer.
   first open the cap. Liu and Kuo etched TiW in CF₄/O₂, CF₄/Cl₂ and
   CF₄/HCl and report that "Both F and Cl are effective etchants for the
   titanium tungsten film";[^liu-2007-tiw] Min et al. characterise TiN
-  removal in a Cl₂/Ar plasma.[^min-2008] (The selectivity figures the
+  removal in a Cl₂/Ar plasma.[^min-2008]
+
+  (The selectivity figures the
   two literatures publish are not directly comparable — TiW against
   nitride in a CF₄-based plasma, TiN against oxide in a
   chlorine-majority one — so they bear on the chemistry, not on which
-  cap is present.) Either cap can therefore be
+  cap is present.)
+
+  Either cap can therefore be
   opened on the same etcher, but a TiW cap is usually opened with a
   fluorine step and a TiN cap can be cleared in the chlorine chemistry
   that follows it ({ref}`MM1E <step-114>`, {ref}`MM3E <step-140>`,
@@ -1112,6 +1175,7 @@ public.
   its assumptions list an "HVPTM shadowing" of 0.089 µm[^pdk-03] and its
   high-voltage page says hv p-channel devices "get the extra junction
   grading implant into the ringed gate with the HVPDM mask".[^pdk-hv]
+
   Where the PMOS extension is formed — by the second P⁺ implant, by
   diffusion under the spacer or by a step not in the list — is open
   ({ref}`NTM <step-064>`, {ref}`PSDI <step-082>`,
@@ -1128,23 +1192,31 @@ public.
   is polished, the "sacrificial" etch after the contact etch, or an alloy
   anneal before any metal is on the wafer; the step pages give readings
   ({ref}`RTAD2 <step-092>`, {ref}`SACETCH <step-095>`,
-  {ref}`ALLY1 <step-096>`). That the only silicide is at the contact
+  {ref}`ALLY1 <step-096>`).
+
+  The only silicide being at the contact
   bottoms is itself an inference from the PDK's sheet
   resistances ({ref}`CSIL <step-098>`).
 * **Metal cap and barrier composition.** Cypress reports for the S8
   technologies at the same fab describe a Ti/Al–Cu/TiW stack and a
   change "from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN" qualified in
   2013–2014, for S8P "excluding top metal
-  layers";[^cyp-qtp-113005][^cyp-qtp-123907] which stack SKY130 lots
+  layers".[^cyp-qtp-113005][^cyp-qtp-123907]
+
+  Which stack SKY130 lots
   receive at any level is not public, nor is it public which levels of a
-  five-metal S8P flow the exclusion covers. The whole of the evidence,
+  five-metal S8P flow the exclusion covers.
+
+  The whole of the evidence,
   the reading taken at each level and the statements that depend on it
   are set out under {ref}`overview-metal-cap`
   ({ref}`TIAL6 <step-112>`, {ref}`WTIAL3 <step-134>`,
   {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`).
 * **Metal-3 and metal-4 thickness.** The stack diagram labels both
   0.845 µm;[^pdk-04] the antenna table gives 0.8 µm for the S8P flows and
-  0.85 µm for "S8T\* other than S8TM\*";[^pdk-03] Cypress's S8TNV report
+  0.85 µm for "S8T\* other than S8TM\*".[^pdk-03]
+
+  Cypress's S8TNV report
   gives "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW", which sums to
   0.765 µm;[^cyp-qtp-113005] and a 0.18 µm Fab 4 derivative's
   "150Å Ti / 8,000Å Al / 300Å TiW" metal 3 sums to exactly
@@ -1153,30 +1225,39 @@ public.
 * **Metal-5 thickness and via-4 fill.** Metal 5 is 1.26 µm on the stack
   diagram and in Edwards's slides,[^pdk-04][^ann-16] 1.2 µm or 2 µm by
   flow in the antenna table,[^pdk-03] and "1.2 µm" as top metal in
-  SkyWater's S130 table.[^skw-02] No liner, tungsten or polish step
+  SkyWater's S130 table.[^skw-02]
+
+  No liner, tungsten or polish step
   follows the via-4 etch in the step list,[^steps-sheet] so the step
   pages read the 0.8 µm vias as filled by the metal-5 aluminium; no
   public source says how they are filled ({ref}`VIM4 <step-159>`,
   {ref}`WTIAL5 <step-161>`, {ref}`MM5E <step-163>`).
 * **MiM capacitors.** The dielectric's material and thickness, the
   top-plate material and whether the plate etch stops on the dielectric
-  are not public. The PDK is not self-consistent about the capacitors'
+  are not public.
+
+  The PDK is not self-consistent about the capacitors'
   level: its device page, layer table and stack diagram put `capm` over
   metal 3,[^pdk-07][^pdk-06][^pdk-04] while its `capm` rules and
   extraction entries name metal 2 and via 2,[^pdk-periph][^pdk-08] and
   `cap2m` has no rules and no mask-table entry.[^pdk-periph][^pdk-05]
+
   The test tile's pad documentation describes "CAPM on M3" and "CAP2M
   over M4" MiM capacitors with via-3 and via-4 chains to the
   plates,[^raw-data-testtile-pads] which agrees with the device page; see
   {ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>` and
   {ref}`CAPILD2 <step-150>`.
 * **Passivation thickness.** The stack diagram gives 0.09 µm of TOPOX
-  and 0.54 µm of TOPNIT, 0.63 µm together;[^pdk-04] the two Cypress
+  and 0.54 µm of TOPNIT, 0.63 µm together.[^pdk-04]
+
+  The two Cypress
   reports that give both films report 1.0 µm (1000 Å TEOS plus 9000 Å
   nitride) for the S8DI variant of S8 and, at the same fab, the 0.18 µm
   R7FT-3R technology,[^cyp-qtp-123907][^cyp-qtp-014807] and a third
   report gives 0.7 ± 0.2 µm of nitride with no oxide stated for the
-  S8TNV-5R variant.[^cyp-qtp-113005] Which applies to SKY130 is
+  S8TNV-5R variant.[^cyp-qtp-113005]
+
+  Which applies to SKY130 is
   not public, and with it the thickness the pad etch must clear
   ({ref}`NTSD <step-167>`, {ref}`PDME <step-169>`); how deep the
   nitride-seal opening goes is not public either
@@ -1192,7 +1273,9 @@ public.
   mask table marks 34 masks as used in SKY130, four of which (`HVTRM`,
   `PBO`, `CU1M`, `PMM2`) have no step, leaves `PWBM`, `PWDEM` and `CAPM`
   unmarked, and does not list `RRPM`, `URPM` or `CAP2M`
-  ({ref}`masks-index`);[^pdk-05] SkyWater's S130 table gives "30 – 34"
+  ({ref}`masks-index`).[^pdk-05]
+
+  SkyWater's S130 table gives "30 – 34"
   mask steps and gives inductor "No", where the PDK README says the
   process "Is inductor-capable".[^skw-02][^pdk-10] Which optional masks
   — MiM capacitors, drain-extended wells, ultra-high-value resistors —
