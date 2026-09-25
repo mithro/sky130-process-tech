@@ -53,12 +53,12 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-oxide-dep" data-layer="ncap3" points="9.00,98.00 129.25,98.00 129.25,106.00 9.00,106.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap3" points="144.75,98.00 248.25,98.00 248.25,106.00 144.75,106.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap3" points="263.75,98.00 283.00,98.00 283.00,106.00 263.75,106.00"/>
-<polygon class="mat m-barrier" data-layer="v1liner" points="129.25,98.00 134.00,98.00 134.50,111.00 139.50,111.00 140.00,98.00 144.75,98.00 144.75,116.00 129.25,116.00"/>
-<polygon class="mat m-barrier" data-layer="v1liner" points="248.25,98.00 253.00,98.00 253.50,111.00 258.50,111.00 259.00,98.00 263.75,98.00 263.75,116.00 248.25,116.00"/>
-<polygon class="mat m-tungsten" data-layer="v1w" points="134.25,98.00 139.75,98.00 139.75,111.00 134.25,111.00"/>
-<polygon fill="url(#p-xhatch)" points="134.25,98.00 139.75,98.00 139.75,111.00 134.25,111.00"/>
-<polygon class="mat m-tungsten" data-layer="v1w" points="253.25,98.00 258.75,98.00 258.75,111.00 253.25,111.00"/>
-<polygon fill="url(#p-xhatch)" points="253.25,98.00 258.75,98.00 258.75,111.00 253.25,111.00"/>
+<polygon class="mat m-barrier" data-layer="v1liner" points="129.25,98.00 132.00,98.00 132.50,113.00 141.50,113.00 142.00,98.00 144.75,98.00 144.75,116.00 129.25,116.00"/>
+<polygon class="mat m-barrier" data-layer="v1liner" points="248.25,98.00 251.00,98.00 251.50,113.00 260.50,113.00 261.00,98.00 263.75,98.00 263.75,116.00 248.25,116.00"/>
+<polygon class="mat m-tungsten" data-layer="v1w" points="132.25,98.00 141.75,98.00 141.75,113.00 132.25,113.00"/>
+<polygon fill="url(#p-xhatch)" points="132.25,98.00 141.75,98.00 141.75,113.00 132.25,113.00"/>
+<polygon class="mat m-tungsten" data-layer="v1w" points="251.25,98.00 260.75,98.00 260.75,113.00 251.25,113.00"/>
+<polygon fill="url(#p-xhatch)" points="251.25,98.00 260.75,98.00 260.75,113.00 251.25,113.00"/>
 <polygon class="mat m-barrier" data-layer="m2bot" points="25.75,93.00 76.25,93.00 76.25,98.00 25.75,98.00"/>
 <polygon class="mat m-barrier" data-layer="m2bot" points="117.75,93.00 156.25,93.00 156.25,98.00 117.75,98.00"/>
 <polygon class="mat m-barrier" data-layer="m2bot" points="237.75,93.00 283.00,93.00 283.00,98.00 237.75,98.00"/>
@@ -75,12 +75,13 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-oxide-dep" data-layer="nild4" points="60.75,50.00 283.00,50.00 283.00,70.00 238.00,70.00 237.50,98.00 156.50,98.00 156.00,70.00 118.00,70.00 117.50,98.00 76.50,98.00 76.00,70.00 60.75,70.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap4" points="9.00,42.00 41.25,42.00 41.25,50.00 9.00,50.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap4" points="60.75,42.00 283.00,42.00 283.00,50.00 60.75,50.00"/>
-<polygon class="mat m-barrier" data-layer="v2liner" points="41.25,42.00 46.00,42.00 46.50,65.00 55.50,65.00 56.00,42.00 60.75,42.00 60.75,70.00 41.25,70.00"/>
-<polygon class="mat m-tungsten" data-layer="v2w" points="46.25,42.00 55.75,42.00 55.75,65.00 46.25,65.00"/>
-<polygon fill="url(#p-xhatch)" points="46.25,42.00 55.75,42.00 55.75,65.00 46.25,65.00"/>
+<polygon class="mat m-barrier" data-layer="v2liner" points="41.25,42.00 44.00,42.00 44.50,67.00 57.50,67.00 58.00,42.00 60.75,42.00 60.75,70.00 41.25,70.00"/>
+<polygon class="mat m-tungsten" data-layer="v2w" points="44.25,42.00 57.75,42.00 57.75,67.00 44.25,67.00"/>
+<polygon fill="url(#p-xhatch)" points="44.25,42.00 57.75,42.00 57.75,67.00 44.25,67.00"/>
 <polygon class="cutfill" points="12.00,153.00 16.00,150.50 20.00,153.00 24.00,150.50 28.00,153.00 32.00,150.50 36.00,153.00 40.00,150.50 44.00,153.00 48.00,150.50 52.00,153.00 56.00,150.50 60.00,153.00 64.00,150.50 68.00,153.00 72.00,150.50 76.00,153.00 80.00,150.50 84.00,153.00 88.00,150.50 92.00,153.00 96.00,150.50 100.00,153.00 104.00,150.50 108.00,153.00 112.00,150.50 116.00,153.00 120.00,150.50 124.00,153.00 128.00,150.50 132.00,153.00 136.00,150.50 140.00,153.00 144.00,150.50 148.00,153.00 152.00,150.50 156.00,153.00 160.00,150.50 164.00,153.00 168.00,150.50 172.00,153.00 176.00,150.50 180.00,153.00 184.00,150.50 188.00,153.00 192.00,150.50 196.00,153.00 200.00,150.50 204.00,153.00 208.00,150.50 212.00,153.00 216.00,150.50 220.00,153.00 224.00,150.50 228.00,153.00 232.00,150.50 236.00,153.00 240.00,150.50 244.00,153.00 248.00,150.50 252.00,153.00 256.00,150.50 260.00,153.00 264.00,150.50 268.00,153.00 272.00,150.50 276.00,153.00 280.00,150.50 280.00,158.00 12.00,158.00"/>
 <polyline class="cutline" points="12.00,153.00 16.00,150.50 20.00,153.00 24.00,150.50 28.00,153.00 32.00,150.50 36.00,153.00 40.00,150.50 44.00,153.00 48.00,150.50 52.00,153.00 56.00,150.50 60.00,153.00 64.00,150.50 68.00,153.00 72.00,150.50 76.00,153.00 80.00,150.50 84.00,153.00 88.00,150.50 92.00,153.00 96.00,150.50 100.00,153.00 104.00,150.50 108.00,153.00 112.00,150.50 116.00,153.00 120.00,150.50 124.00,153.00 128.00,150.50 132.00,153.00 136.00,150.50 140.00,153.00 144.00,150.50 148.00,153.00 152.00,150.50 156.00,153.00 160.00,150.50 164.00,153.00 168.00,150.50 172.00,153.00 176.00,150.50 180.00,153.00 184.00,150.50 188.00,153.00 192.00,150.50 196.00,153.00 200.00,150.50 204.00,153.00 208.00,150.50 212.00,153.00 216.00,150.50 220.00,153.00 224.00,150.50 228.00,153.00 232.00,150.50 236.00,153.00 240.00,150.50 244.00,153.00 248.00,150.50 252.00,153.00 256.00,150.50 260.00,153.00 264.00,150.50 268.00,153.00 272.00,150.50 276.00,153.00 280.00,150.50"/>
 </g>
+<rect class="cutfill" x="12.0" y="153.40" width="268" height="2.60"/>
 <text x="328.0" y="50.9" class="t-label-title" data-owner="ncap4">Cap oxide</text>
 <text x="328.0" y="66.9" class="t-label-note muted" data-owner="ncap4">deposited</text>
 <text x="328.0" y="82.9" class="t-label-note muted" data-owner="ncap4">at step 128</text>
@@ -121,12 +122,12 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-oxide-dep" data-layer="ncap3" points="9.00,354.00 129.25,354.00 129.25,362.00 9.00,362.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap3" points="144.75,354.00 248.25,354.00 248.25,362.00 144.75,362.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap3" points="263.75,354.00 283.00,354.00 283.00,362.00 263.75,362.00"/>
-<polygon class="mat m-barrier" data-layer="v1liner" points="129.25,354.00 134.00,354.00 134.50,367.00 139.50,367.00 140.00,354.00 144.75,354.00 144.75,372.00 129.25,372.00"/>
-<polygon class="mat m-barrier" data-layer="v1liner" points="248.25,354.00 253.00,354.00 253.50,367.00 258.50,367.00 259.00,354.00 263.75,354.00 263.75,372.00 248.25,372.00"/>
-<polygon class="mat m-tungsten" data-layer="v1w" points="134.25,354.00 139.75,354.00 139.75,367.00 134.25,367.00"/>
-<polygon fill="url(#p-xhatch)" points="134.25,354.00 139.75,354.00 139.75,367.00 134.25,367.00"/>
-<polygon class="mat m-tungsten" data-layer="v1w" points="253.25,354.00 258.75,354.00 258.75,367.00 253.25,367.00"/>
-<polygon fill="url(#p-xhatch)" points="253.25,354.00 258.75,354.00 258.75,367.00 253.25,367.00"/>
+<polygon class="mat m-barrier" data-layer="v1liner" points="129.25,354.00 132.00,354.00 132.50,369.00 141.50,369.00 142.00,354.00 144.75,354.00 144.75,372.00 129.25,372.00"/>
+<polygon class="mat m-barrier" data-layer="v1liner" points="248.25,354.00 251.00,354.00 251.50,369.00 260.50,369.00 261.00,354.00 263.75,354.00 263.75,372.00 248.25,372.00"/>
+<polygon class="mat m-tungsten" data-layer="v1w" points="132.25,354.00 141.75,354.00 141.75,369.00 132.25,369.00"/>
+<polygon fill="url(#p-xhatch)" points="132.25,354.00 141.75,354.00 141.75,369.00 132.25,369.00"/>
+<polygon class="mat m-tungsten" data-layer="v1w" points="251.25,354.00 260.75,354.00 260.75,369.00 251.25,369.00"/>
+<polygon fill="url(#p-xhatch)" points="251.25,354.00 260.75,354.00 260.75,369.00 251.25,369.00"/>
 <polygon class="mat m-barrier" data-layer="m2bot" points="25.75,349.00 76.25,349.00 76.25,354.00 25.75,354.00"/>
 <polygon class="mat m-barrier" data-layer="m2bot" points="117.75,349.00 156.25,349.00 156.25,354.00 117.75,354.00"/>
 <polygon class="mat m-barrier" data-layer="m2bot" points="237.75,349.00 283.00,349.00 283.00,354.00 237.75,354.00"/>
@@ -143,9 +144,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-oxide-dep" data-layer="nild4" points="60.75,306.00 283.00,306.00 283.00,326.00 238.00,326.00 237.50,354.00 156.50,354.00 156.00,326.00 118.00,326.00 117.50,354.00 76.50,354.00 76.00,326.00 60.75,326.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap4" points="9.00,298.00 41.25,298.00 41.25,306.00 9.00,306.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap4" points="60.75,298.00 283.00,298.00 283.00,306.00 60.75,306.00"/>
-<polygon class="mat m-barrier" data-layer="v2liner" points="41.25,298.00 46.00,298.00 46.50,321.00 55.50,321.00 56.00,298.00 60.75,298.00 60.75,326.00 41.25,326.00"/>
-<polygon class="mat m-tungsten" data-layer="v2w" points="46.25,298.00 55.75,298.00 55.75,321.00 46.25,321.00"/>
-<polygon fill="url(#p-xhatch)" points="46.25,298.00 55.75,298.00 55.75,321.00 46.25,321.00"/>
+<polygon class="mat m-barrier" data-layer="v2liner" points="41.25,298.00 44.00,298.00 44.50,323.00 57.50,323.00 58.00,298.00 60.75,298.00 60.75,326.00 41.25,326.00"/>
+<polygon class="mat m-tungsten" data-layer="v2w" points="44.25,298.00 57.75,298.00 57.75,323.00 44.25,323.00"/>
+<polygon fill="url(#p-xhatch)" points="44.25,298.00 57.75,298.00 57.75,323.00 44.25,323.00"/>
 <polygon class="mat m-barrier" data-layer="m3bot" points="9.00,293.00 283.00,293.00 283.00,298.00 9.00,298.00"/>
 <polygon class="mat m-aluminium" data-layer="m3al" points="9.00,261.00 283.00,261.00 283.00,293.00 9.00,293.00"/>
 <polygon fill="url(#p-hatch-back)" points="9.00,261.00 283.00,261.00 283.00,293.00 9.00,293.00"/>
@@ -154,6 +155,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polyline class="cutline" points="12.00,409.00 16.00,406.50 20.00,409.00 24.00,406.50 28.00,409.00 32.00,406.50 36.00,409.00 40.00,406.50 44.00,409.00 48.00,406.50 52.00,409.00 56.00,406.50 60.00,409.00 64.00,406.50 68.00,409.00 72.00,406.50 76.00,409.00 80.00,406.50 84.00,409.00 88.00,406.50 92.00,409.00 96.00,406.50 100.00,409.00 104.00,406.50 108.00,409.00 112.00,406.50 116.00,409.00 120.00,406.50 124.00,409.00 128.00,406.50 132.00,409.00 136.00,406.50 140.00,409.00 144.00,406.50 148.00,409.00 152.00,406.50 156.00,409.00 160.00,406.50 164.00,409.00 168.00,406.50 172.00,409.00 176.00,406.50 180.00,409.00 184.00,406.50 188.00,409.00 192.00,406.50 196.00,409.00 200.00,406.50 204.00,409.00 208.00,406.50 212.00,409.00 216.00,406.50 220.00,409.00 224.00,406.50 228.00,409.00 232.00,406.50 236.00,409.00 240.00,406.50 244.00,409.00 248.00,406.50 252.00,409.00 256.00,406.50 260.00,409.00 264.00,406.50 268.00,409.00 272.00,406.50 276.00,409.00 280.00,406.50"/>
 <polyline class="hl" points="12.00,253.00 280.00,253.00"/>
 </g>
+<rect class="cutfill" x="12.0" y="409.40" width="268" height="2.60"/>
 <text x="328.0" y="407.9" class="t-label-title" data-owner="m3bot">Bottom film</text>
 <text x="328.0" y="423.9" class="t-label-note muted" data-owner="m3bot">Ti or TiW — see</text>
 <text x="328.0" y="439.9" class="t-label-note muted" data-owner="m3bot">the overview</text>
@@ -167,8 +169,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="leader" data-owner="m3al" d="M276.0 277.0H291.0V331.0H324.0"/>
 <circle class="dot" data-owner="m3al" cx="276.0" cy="277.0" r="1.9"/>
 <text x="328.0" y="263.9" class="t-label-title" data-owner="m3cap">Cap film</text>
-<text x="328.0" y="279.9" class="t-label-note muted" data-owner="m3cap">TiW or TiN — see</text>
-<text x="328.0" y="295.9" class="t-label-note muted" data-owner="m3cap">the overview</text>
+<text x="328.0" y="279.9" class="t-label-note muted" data-owner="m3cap">TiW or Ti/TiN —</text>
+<text x="328.0" y="295.9" class="t-label-note muted" data-owner="m3cap">see the overview</text>
 <text x="328.0" y="311.9" class="t-label-note tag" data-owner="m3cap">inferred</text>
 <path class="leader" data-owner="m3cap" d="M276.0 258.5H297.0V259.0H324.0"/>
 <circle class="dot" data-owner="m3cap" cx="276.0" cy="258.5" r="1.9"/>
