@@ -1,0 +1,33 @@
+id: beol-128-ncapox4
+kind: xsection
+page: docs/steps/128-ncapox4.md
+series: series-beol.yaml
+crop_depth: -84
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a flat pale oxide buries three metal lines. After it a thin flat layer of the same pale
+  oxide covers the whole top.
+caption: >-
+  Before, the polished NILD4 oxide; after, a thin cap oxide over it, which with the oxide left
+  by the polish makes up the dielectric over metal 2 on which the via-2 mask is printed. In the
+  PDK's stack diagram that finished height is 0.42 µm;[^pdk-04] how thick the cap itself is is
+  not public (the page gives of the order of 0.05–0.15 µm as industry-typical[^txt-05]), and
+  that it brings the dielectric to its final thickness is the page's inference. Whether the thin
+  "NILD4_C" film of the diagram is this cap is not public. Nothing is drawn to scale. The lower
+  part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1.
+  The bottom and cap films of the metal-2 lines, the via plugs and their liners, the oxides of
+  the via level and the metal-1 lines with their contact plugs are drawn but not labelled. Not
+  to scale.
+arrow:
+  title: "NCAPOX4, step 128"
+  note: "A thin plasma oxide is deposited on the polished surface."
+panels:
+  - state_after: "127"
+    title: "Before: the polished NILD4 oxide (step 127)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot, m2cap]
+  - state_after: "128"
+    title: "After: a thin cap oxide on top"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 268]]}

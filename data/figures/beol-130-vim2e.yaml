@@ -1,0 +1,48 @@
+id: beol-130-vim2e
+kind: xsection
+page: docs/steps/130-vim2e.md
+series: series-beol.yaml
+close_up: [0, 64]
+close_up_name: "the via 2"
+routes: {m2cap: right, m2al: right}
+crop_depth: -662
+alt: >-
+  Two enlarged cross-sections of the top of a metal line, a silver film under a thin purple one,
+  buried in a flat pale oxide. Before the step a violet resist with a window lies on the oxide
+  above the line. After it the resist is gone and under the window a hole with vertical walls
+  goes down through the oxide to the thin purple film on top of the line.
+caption: >-
+  A close-up of the via 2, over the left-hand metal-2 line; the lower part of the slice is cut
+  off, and the drawing starts inside the aluminium of that line. Before, the via-2 resist;
+  after, the hole etched through the cap oxide and the NILD4 oxide, 0.42 µm together in the
+  PDK's stack diagram,[^pdk-04] to the cap film on top of the metal-2 line, and the resist
+  stripped, which the page treats as part of this step. Which refractory film the cap is is not
+  public: the overview of the metal cap sets out the TiW and the TiN readings, and the figure does
+  not choose. The hole is drawn much shallower than it is: the PDK's via 2 is a 0.200 µm square
+  (via2.1a),[^pdk-periph] about 2.1 times as deep as it is wide on the page's reckoning, and it is
+  drawn about 1.4 times as deep as it is wide, deeper and wider than the via-1 hole as it is in
+  the PDK. The walls are drawn vertical; their profile is not public. The oxides are drawn but
+  not labelled in the lower panel, and the metal-2 line not in the upper. Not to scale.
+arrow:
+  title: "VIM2E, step 130"
+  note: "A fluorocarbon plasma etches the via holes through the oxide to the cap of the metal lines below; the resist is stripped."
+panels:
+  - state_after: "129"
+    title: "Before: the via-2 resist (step 129)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m2al, m2cap, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
+  - state_after: "130"
+    title: "After: a via-2 hole down to the metal-2 cap"
+    hide_layers: [pwell, nchi]
+    hide_labels: [nild4, ncap4, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot]
+    labels:
+      m2cap: {title: "Cap film", note: "TiW or Ti/TiN — see the overview"}
+    callouts:
+      - x: 39
+        y: "top@39"
+        label:
+          title: "Via-2 hole"
+          note: "a 0.200 µm square in the PDK's rules"
+          basis: public
+          cite: pdk-periph
+    highlight: {where: [[29, 49]]}

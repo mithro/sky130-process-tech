@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/beol-127-cmpm2.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a thick pale oxide buries three metal lines, its top higher over the lines than over the gaps. After it the oxide is polished flat, leaving a layer of it over the tops of the lines.
+:width: 560px
+:name: fig-beol-127-cmpm2
+
+Before, the NILD4 oxide as deposited; after, polished flat until the topography is gone, at a height above the metal-2 tops. The polish is stopped by the removal amount, not by a stop layer, and how much it removes is not public. On the page's reading, the polished oxide and the cap still to come make up the PDK's via-2 height of 0.42 µm over metal 2;[^pdk-04] with the cap, the oxide over metal 2 is drawn about one and a half times as thick as the oxide over metal 1, as 0.42 µm is to the 0.27 µm of via 1 in the same diagram.[^pdk-04] Nothing else is drawn to scale, and the pattern-density steps the page describes are not drawn. The lower part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1. The bottom and cap films of the metal-2 lines, the via plugs and their liners, the oxides of the via level and the metal-1 lines with their contact plugs are drawn but not labelled. Not to scale.
+:::

@@ -51,6 +51,13 @@ one figure per step for 118–134.
   oxide surface, so it is hidden and declared; the cap keeps its note by override. A first
   window [59, 150] left slivers of the neighbouring metal-2 line and a 6 u gap at the edges.
 * **126 NILD4** (full slice, cut): gap-fill profile as at NILD3; NILD4_C not drawn (declared).
+* **127 CMPM2**, **128 NCAPOX4** (full slice, cut): as 116/117; the 127 caption states the one
+  drawn ratio it can check (oxide over metal 2 with the cap : over metal 1 = 28 : 18 u, as
+  0.42 : 0.27 µm).
+* **129 VIM2** (full slice, cut): one window over the left metal-2 line, off the via-1 plugs.
+* **130 VIM2E** (close-up [0, 64], 4.2×, starting inside the metal-2 aluminium): 20 u × 28 u
+  hole, drawn 1.4:1 against the page's 2.1:1 (caption). The first crop made the figure 805 u
+  tall; the drawing now starts 5 u under the cap (793 u).
 
 ## Left
 

@@ -1,0 +1,32 @@
+id: beol-129-vim2
+kind: xsection
+page: docs/steps/129-vim2.md
+series: series-beol.yaml
+crop_depth: -84
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step two levels of metal lines lie buried in a flat pale oxide. After it a violet resist covers
+  the oxide except for one window over the left-hand line of the upper level.
+caption: >-
+  Before, the cap oxide over the polished dielectric that buries the three metal-2 lines; after,
+  the resist with a window over the left-hand metal-2 line, where a via 2 is to go. The PDK
+  gives the via 2 as a 0.200 µm square (via2.1a) that metal 2 must enclose by 0.040 µm
+  (via2.4);[^pdk-periph] one window in this slice, off the via-1 plugs below, is an illustrative
+  choice. The window is not drawn to scale, and neither is the resist; the page reads the PDK's
+  1.14 µm resist[^pdk-03] as an antenna-rule assumption. The lower part of the slice is cut off:
+  the drawing starts inside the inter-level oxide under metal 1. The metal-2 and metal-1 lines
+  with their films, the via-1 and contact plugs and the oxides between the levels are drawn but
+  not labelled, nor, in the upper panel, is the inter-metal oxide. Not to scale.
+arrow:
+  title: "VIM2, step 129"
+  note: "Resist is coated, exposed through the VIM2 reticle and developed, opening the via windows."
+panels:
+  - state_after: "128"
+    title: "Before: the cap oxide over metal 2 (step 128)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [nild4, m2al, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot, m2cap]
+  - state_after: "129"
+    title: "After: resist with a via-2 window"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m2al, fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap, sub, li, lint, liner, mcliner, mcw, m1bot, m1al, m1cap, nild2, ncap3, nild3, v1liner, v1w, m2bot, m2cap]
+    highlight: {where: [[0, 29], [49, 268]]}
