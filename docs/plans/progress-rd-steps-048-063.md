@@ -679,6 +679,68 @@ table cells > 25: 0. After: see the batch summary at the end.
   labels.
 * **Caps**: para > 100 5 → 0; item > 60 6 → 1; sentence > 45 13 → 3 (above).
 
+### 062 P1ME — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the stop-layer and
+  line-width record and the doping-dependence reading (≈ 300 words; the passage rests on the PDK
+  models and rules and on the cited literature, and its reading is marked "(inference)").
+* **Lead.** Its 64-word sentence split at "— and stops on the gate dielectric" → "It stops on …" ("It"
+  added; the two stack markers stay on the stack).
+* **R-PARA / R-SENTENCE.** Stop-layer paragraph (145 w) split before "The lines being cut …".
+  Doping paragraph (154 w): split at "depend on doping:" and into two paragraphs; the 59-word sentence
+  split at its semicolon ("… not settled in the public literature. We therefore read … (inference)."
+  — the hedge stays on the reading).
+* **R-CATEGORY.** The 77-word classification sentence split at its second em dash: the class and the
+  "we infer from SkyWater's DPS II gas list[^skw-01]" chemistry stay together (27 w); the two remaining
+  statements about this etch → "**Specific to this step:**" and two bullets (the first split at its
+  colon into "It is the same family as … STIE but with the opposite priorities." and "`STIE` is a timed
+  etch …, `P1ME` is an endpointed etch … (…[^nojiri-2015][^txt-01])." — "It is" added).
+* **R-LIST.** "The etched gate is the master reference for the transistor. Its width …; its sidewall
+  angle …; its foot …" → lead-in (full stop → colon) and three plain bullets, semicolons kept. The five
+  gate-etch studies (Tuda; Detter; Joubert; Kim; Bell and Joubert) → bullets under the page's own
+  lead-in sentence ending in a colon, each with its marker (the gapped verbs "Joubert et al. how
+  linewidth …" are the base's words). "Two failure modes are specific to stopping on a thin gate oxide.
+  **Punch-through and recess**: … **Charging**: …" → lead-in and two bullets that keep their existing
+  bold labels; each split into a lead sentence and a continuation paragraph at its em dash (the
+  studies with their markers); the Noguchi sentence split at ", which is the same mechanism" → "This
+  is the same mechanism … (inference)." and the final clause "It is one reason gate etches end with a
+  low-bias over-etch." at its semicolon. Inside "Metrology": the test-tile structures → two
+  sub-bullets under "The published SKY130 test tile carries:[^raw-data-testtile-pads]".
+* **R-PARA step 4.** "ARC and cap open" (113 w, two long sentences split at their semicolon and
+  colon), "Main etch" (138 w, split at its semicolon), "Over-etch" (80 w: "A timed HBr/O₂ step … (industry-
+  typical;[^nojiri-2015]). It is long enough to remove … — the 0.07 µm step of the PDK's assumptions
+  table[^pdk-03] — …", "It is" added), "Resist strip", "Metrology": lead + continuation paragraphs.
+* **R-HEDGE** (italic lead-in). **R-TOOLS.** Five tools → recap table `Tool | Evidence` (grades as
+  the page writes them). DPS II: *SkyWater says:* the listed entry; *Tool exists:* "strong — the tool,
+  the HBr/Cl₂/O₂ chemistry and the word "gate" are all SkyWater's"; *Runs this step:* "that this step
+  runs on it is nevertheless an inference, …". Lam 9400: the head keeps "(…[^skw-01]) is a poly etcher of
+  the same generation on the same list" (our description, so not under *SkyWater says:*); its grade
+  "**medium** — capable and explicitly a gate etcher in that lab, …" is a grade of the assignment, so it
+  is *Runs this step:*; the Stanford user-guide sentence is the continuation paragraph. Lam 4400 "weak;
+  an older-generation tool" is likewise an assignment grade. Ashers/benches and CD metrology: grades
+  verbatim.
+* **R-OPENQ.** Six labels, text unchanged.
+* **R-RELATED.** Previous/Next split; "The doping levels that make the etch non-uniform: P1I, PRI, UPRI"
+  → `Same module:` (moved up to the label order); "The stack being etched: …; the oxides it stops on: …"
+  → `Depends on:`; "Steps that self-align to the etched gate: …" → `Feeds:`; "The same chemistry on bulk
+  silicon: STIE; the other etches through the caps: NPCME, SPE; the ARC etch precedent: TUNARCE" →
+  `Same category:` (all four are Etch steps in `docs/steps/index.md`). Every gloss and link kept.
+* **R-GLANCE.** Public numbers: the 1.8 V `toxe` and poly.1a (PDK); tool line keeps "inference
+  (assignment)".
+* **Left over the caps.** "its foot decides whether the gate edge is sharp (…) or notched (…)" (46 w,
+  base clause, now a list item).
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-model-nfet01v8`, `pdk-periph`,
+  `skw-01`, numbers 4.148, 1.8, 0.150, 1 (poly.1a) — glance; 9400, 4400 — recap-table rows; quote
+  "gate" (glance); hedges "inference" ×3 (glance, recap table), "not public" (glance); identifier
+  `P1M` (glance). **LOST/ADDED refs** 'STIE <step-006> but with the opposite priorities: STIE' / '… .
+  STIE': the tool bug G15 again (the `STIE` code span after the role on the same line); the role is
+  unchanged. Declared `markers,numbers,quotes,hedges,number_order,identifiers`; only that refs pair
+  remains.
+* **Marker coverage.** 29 flags, all read: list lead-ins over cited items; split pieces whose base
+  marker belonged to a different clause; the recap/tool bullets; labels. No sourced claim lost its
+  marker.
+* **Caps**: para > 100 4 → 0; item > 60 6 → 0; sentence > 45 14 → 1 (above).
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
