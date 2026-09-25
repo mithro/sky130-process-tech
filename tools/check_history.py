@@ -115,9 +115,16 @@ def paragraph_of(text: str, anchor: str) -> str | None:
     """The paragraph, list item or table row that contains ``anchor``, whitespace-normalised;
     None if absent."""
     flat_anchor = " ".join(anchor.split())
-    for block in blocks(text):
+    bl = blocks(text)
+    for i, block in enumerate(bl):
         flat = " ".join(block.split())
         if flat_anchor in flat:
+            if flat.endswith(":"):
+                # a lead-in and the list it introduces are one statement
+                for nxt in bl[i + 1:]:
+                    if not ITEM_RE.match(nxt):
+                        break
+                    flat += " " + " ".join(nxt.split())
             return flat
     return None
 
@@ -125,8 +132,8 @@ def paragraph_of(text: str, anchor: str) -> str | None:
 # What may count as an attribution (it must name who says it) and as a single-source or
 # conflict hedge (it must say so), so that a phrase such as "See" cannot pass.
 ATTRIBUTIONS = ("Cypress", "EE Times", "EDN", "Electronics Weekly", "Semiconductor Digest", "Star Tribune",
-                "SkyWater", "Infineon", "Gale", "FundingUniverse", "Connect CRE", "Wikipedia", "reports", "our reading")
-SINGLE_HEDGES = ("(single source)", "single source", "our reading", "one report", "only public")
+                "SkyWater", "Infineon", "Gale", "FundingUniverse", "Connect CRE", "Wikipedia", "reports", "our reading", "patent records")
+SINGLE_HEDGES = ("(single source)", "single source", "our reading", "one report", "one article", "only public")
 CONFLICT_HEDGES = ("disagree", "conflict", "differ", "not reconciled", "not necessarily")
 
 

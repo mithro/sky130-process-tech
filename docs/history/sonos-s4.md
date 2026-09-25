@@ -1,10 +1,10 @@
 (history-sonos-s4)=
 # S4AD-5: Cypress's SONOS process before S8
 
-S8 is a 0.13 µm process with SONOS non-volatile memory. Its predecessor, and Cypress's first SONOS
-process in production, was a 0.35 µm process that the qualification reports call S4AD-5 and the
-press calls S4. It made the first PSoC microcontrollers and a line of clock chips. This page
-collects what the public sources say about it.
+S8 is a 0.13 µm process with SONOS non-volatile memory. Before it came a 0.35 µm SONOS process that the
+qualification reports call S4AD-5 and the press calls S4, the earliest SONOS process in the reports. It
+made PSoC 1 mixed-signal arrays and a line of clock chips. This page collects what the public sources
+say about it.
 
 ## At a glance
 
@@ -14,66 +14,75 @@ collects what the public sources say about it.
 | Built on | "R42D-5 derivative w/ 6 additional mask" | single source |
 | Design rule | 0.35 µm in four reports, 0.5 µm in one; 0.4 µm in one article | conflict |
 | First qualified | "New Technology S4AD-5", April 2001, at Fab 2 | Cypress's reports |
-| Fabs | Fab 2 (Round Rock), Fab 4 (Bloomington), Grace (GSMC, later HHGrace) in Shanghai | Cypress's reports, EE Times |
+| Fabs | Fab 2 (Round Rock); Grace (GSMC, later HHGrace) in Shanghai; Fab 4 in one 2007 report | Cypress's reports, EE Times |
 | Stack | single poly, two metal layers, 110 Å gate oxide | Cypress's reports |
-| Products | PSoC 1 mixed-signal arrays, clock generators and buffers | Cypress's reports, Infineon |
+| Products | PSoC 1 mixed-signal arrays, clock generators and buffers | Cypress's reports |
 
 The rows are explained, with their sources, below.
 
-## A derivative of the 0.35 µm SRAM process
+## Built on the 0.35 µm SRAM process
 
 The earliest S4AD-5 report describes the process as "Fab2, S4AD-5 (SONOS), R42D-5 derivative w/ 6
-additional mask" (single source).[^qtp-021507] R42D is the 0.35 µm SRAM and logic process of 1997
-(see {ref}`history-technologies`). The metal layers support this: the Fab 2 S4AD-5 stack and the
-Fab 4 R42D stack use the same films in the same thicknesses, 6000 Å and 8000 Å of aluminium–copper
-between titanium or TiW layers (Cypress's reports).[^qtp-021507][^qtp-003907]
+additional mask" (single source).[^qtp-021507] R42D is the 0.35 µm SRAM and logic process of 1997 (see
+{ref}`history-technologies`).
+
+The metal layers fit this. The Fab 2 S4AD-5 stack and the Fab 4 R42D stack have the same thicknesses:
+500 Å under the aluminium–copper, 6000 Å and 8000 Å of aluminium–copper, and 1200 Å and 300 Å of TiW on
+top. Only the under-layer differs, titanium in S4AD-5 and TiW in R42D (Cypress's reports).[^qtp-021507][^qtp-003907]
 
 How many masks SONOS added is given three ways:
 
-* **Six** in the S4AD-5 report.[^qtp-021507]
-* **Three to five** "as compared to about ten in the case of floating gate flash", in a 2008 article
-  by Cypress.[^chipest-2008]
+* **Six** in the S4AD-5 report (single source).[^qtp-021507]
+* **Three to five** "as compared to about ten in the case of floating gate flash", in a 2008 article by
+  Cypress.[^chipest-2008]
 * **Five** "beyond the standard CMOS process", in a later Cypress product brief.[^eflash-brief]
 
-The three sources describe different generations and do not necessarily conflict.
+The three are all Cypress's, describe different generations, and do not necessarily conflict.[^qtp-021507][^chipest-2008][^eflash-brief]
 
 ## Dates and fabs
 
-**First qualification.** The S4AD-5 reports date "New Technology S4AD-5" to April 2001, with a
-programmable clock generator, the CY2414ZC, at Fab 2 (Cypress's reports).[^qtp-021507][^qtp-042806]
-Cypress's product brief says its SONOS embedded flash "has been in production since 2001".[^eflash-brief]
+**First qualification.** The S4AD-5 reports date "New Technology S4AD-5" to April 2001, with a programmable
+clock generator, the CY2414ZC, at Fab 2. Cypress's product brief says its SONOS embedded flash "has been in
+production since 2001" (Cypress's reports).[^qtp-021507][^qtp-042806][^eflash-brief]
 
-**Earlier SONOS?** An Infineon history of PSoC says Cypress had CPLDs "based on its SONOS
-process technology" in the late 1980s.[^psoc-history] No other source found supports this, and it
-conflicts with the 2001 dates above. Cypress's 1993 10-K lists "0.65-micron Flash technologies", but
-does not say they were SONOS.[^ar-fy1993]
+**Earlier SONOS?** Infineon's history of PSoC, written after it bought Cypress, says Cypress had CPLDs
+"based on its SONOS process technology" in the late 1980s. No other source found supports this, and it
+conflicts with the 2001 dates above. Cypress's 1993 10-K lists "0.65-micron Flash technologies" but does
+not say they were SONOS.[^psoc-history][^ar-fy1993]
 
-**Fab 2.** Cypress's 2002 report says "our SONOS process in Fab 2" was ramping, and that it "reduced
-our Fab 2 line width from 0.5-micron to 0.35-micron".[^ar-fy2002] From 2002 to 2006 the 10-Ks list
-"0.35-micron Silicon Nitride Oxide Silicon (SONOS)" among Cypress's processes (Cypress's
-reports).[^ar-fy2003][^ar-fy2006]
+**Fab 2.** Cypress's 2002 report says "our SONOS process in Fab 2" was ramping. From 2002 to 2006 the 10-Ks
+list "0.35-micron Silicon Nitride Oxide Silicon (SONOS)" among Cypress's processes (Cypress's
+reports).[^ar-fy2002][^ar-fy2003][^ar-fy2006] The automotive PSoC parts were qualified on S4AD-5CTI at Fab 2
+from November 2004 (single source).[^qtp-051005]
 
-**Fab 4.** The PSoC "Neutron" family, the CY8C21x34 parts, was made on S4AD-5 at Fab 4 before part of
-it moved to Grace (Cypress's reports).[^qtp-062509]
+**Grace.** The December 2005 foundry deal was to start with "the PSoC mixed-signal array on Cypress's
+proprietary S4 technology". Grace was qualified with a PSoC family in August 2006, and Cypress completed
+the transfer of its "0.35-micron SONOS process" to Grace during 2006.[^eet-2005-grace][^qtp-062509][^ar-fy2006]
+Later reissues name the foundry HHGrace (single source).[^qtp-151005]
 
-**Grace.** The December 2005 foundry deal was to start with "the PSoC mixed-signal array on
-Cypress's proprietary S4 technology".[^eet-2005-grace] The Grace qualification with a PSoC family is
-dated August 2006, and Cypress completed the transfer of its "0.35-micron SONOS process" to Grace
-during 2006.[^qtp-062509][^qtp-151005][^ar-fy2006] Later reissues name the foundry HHGrace.[^qtp-151005]
+**Fab 4.** One report has a history row of August 2007 for a "14 Layer Mask Change on Neutron Device
+Family, S4AD-5 Technology, Fab4" (single source).[^qtp-062509] No report found says where the Neutron
+family, the CY8C21x34 parts, was made before its August 2006 transfer to GSMC.
 
 ## The design rule
 
-The sources give three different design rules for the same process:
+The sources give three design rules for the same process:
 
-| Design rule | Where | Source |
+| Design rule | Where, and the report's print date | Source |
 |---|---|---|
-| 0.5 µm | Fab 2, a report of January 2003 | one report[^qtp-021507] |
-| 0.35 µm | Fab 2 (2005, 2007), Grace (2006), HHGrace (2015) | four reports[^qtp-042806][^qtp-051005][^qtp-062509][^qtp-151005] |
-| 0.4 µm | Grace, 2007 | EE Times: "a 0.4-micron process for its mixed-signal programmable system-on-chip (PSoC)"[^eet-2007-fablite] |
+| 0.5 µm | Fab 2, 2015 reissue of a 2003 report | one report[^qtp-021507] |
+| 0.35 µm | Fab 2 (2005, 2007), GSMC (2014), HHGrace (2015) | four reports[^qtp-042806][^qtp-051005][^qtp-062509][^qtp-151005] |
+| 0.4 µm | Grace, 2007 | one article, EE Times: "a 0.4-micron process for its mixed-signal programmable system-on-chip (PSoC)"[^eet-2007-fablite] |
 
-Cypress's own 2002 sentence, that the SONOS process "reduced our Fab 2 line width from 0.5-micron to
-0.35-micron", suggests the process started at 0.5 µm and was shrunk.[^ar-fy2002] The 0.5 µm report
-is dated after that shrink, though, so the sources are not reconciled.
+Cypress wrote in 2002 that the SONOS process "reduced our Fab 2 line width from 0.5-micron to
+0.35-micron".[^ar-fy2002] We see two readings (our reading):
+
+* **A shrink.** S4AD-5 started at 0.5 µm and was shrunk to 0.35 µm; the 0.5 µm report would then keep
+  the original figure.
+* **A new finest process.** Fab 2's finest process had been 0.5 µm, and the new SONOS process brought
+  0.35 µm to it; the 0.5 µm report would then be a misprint.
+
+Neither reading is confirmed; the sources are not reconciled.[^qtp-021507][^ar-fy2002]
 
 ## Stackup
 
@@ -86,9 +95,9 @@ The two sites used different metal stacks for the same process name (Cypress's r
 | Passivation | 3000 Å TEOS / 6000 Å Si3N4 | 7000 Å TEOS / 6000 Å Si3N4 |
 | Gate oxide | 110 Å SiO2 | 110 Å SiO2 |
 
-The same split between a TiW-capped stack and a TiN-capped stack appears in the Cypress reports on
-S8; the SKY130 overview discusses it in {ref}`overview-metal-cap`. One Fab 2 report prints the gate
-oxide as "7A", which reads as a truncated "110A".[^qtp-042806] The full tables are on
+The same split between a TiW-capped stack and a TiN-capped stack appears in the Cypress reports on S8;
+the SKY130 overview discusses it in {ref}`overview-metal-cap`. One Fab 2 report prints the gate oxide as
+"7A", which we read as a truncated "110A" (our reading).[^qtp-042806] The full tables are on
 {ref}`history-stackups`.
 
 ## Products
@@ -106,7 +115,7 @@ reports.[^psoc-history]
 
 ## The patents
 
-Cypress patented its SONOS dielectrics in the early 2000s. These families are shown as expired:
+Cypress patented its SONOS dielectrics in the early 2000s. The patent records show these families as expired:
 
 * **The ONO dielectric.** A method for the SONOS dielectric layer, with a 2001 priority date.[^pat-us6818558]
 * **A deuterated interface.** A SONOS structure with a deuterated oxide–silicon interface, filed in
@@ -139,7 +148,7 @@ details, and what changed, are on {ref}`history-s8-lineage`.
 
 ### High-level understanding
 
-* [Infineon, *20 years of PSoC*](<http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>) — PSoC 1 on SONOS.[^psoc-history]
+* [Infineon, *20 years of PSoC*](<https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>) — PSoC 1 on SONOS.[^psoc-history]
 * [Cypress, *Cypress SONOS - A Scalable Embedded Flash Technology*](<https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>) — how SONOS fits into a CMOS flow.[^chipest-2008]
 
 ### Deep dive
@@ -177,7 +186,7 @@ details, and what changed, are on {ref}`history-s8-lineage`.
     <https://www.eetimes.com/cypress-furthers-fab-lite/>
 [^psoc-history]: Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of
     2025-07-13 (the live page now redirects elsewhere).
-    <http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
+    <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
 [^chipest-2008]: Cypress Semiconductor, *Cypress SONOS - A Scalable Embedded Flash Technology*,
     ChipEstimate.com Tech Talks, 2008-10-21.
     <https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>

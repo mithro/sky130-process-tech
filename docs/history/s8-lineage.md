@@ -90,7 +90,7 @@ disagree; no Cypress source found explains the name directly. The naming is set 
 ### High-level understanding
 
 * [Electronics Weekly, *Cypress 4-Mbit non-volatile static random access memory*](<https://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/>) — the first S8 products.[^ew-2007-s8]
-* [Infineon, *20 years of PSoC*](<http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>) — PSoC 1 and PSoC 3 processes.[^psoc-history]
+* [Infineon, *20 years of PSoC*](<https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>) — PSoC 1 and PSoC 3 processes.[^psoc-history]
 
 ### Deep dive
 
@@ -135,7 +135,7 @@ disagree; no Cypress source found explains the name directly. The naming is set 
     <https://media.futureelectronics.com/PCN/45887_SPCN.PDF>
 [^psoc-history]: Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of
     2025-07-13 (the live page now redirects elsewhere).
-    <http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
+    <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
 [^chipest-2008]: Cypress Semiconductor, *Cypress SONOS - A Scalable Embedded Flash Technology*,
     ChipEstimate.com Tech Talks, 2008-10-21.
     <https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>

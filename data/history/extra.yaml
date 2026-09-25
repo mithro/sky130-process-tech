@@ -523,7 +523,7 @@ records:
     date: null
     form: web page
   url: https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/
-  archive_url: http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/
+  archive_url: https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/
   retrieved: 2026-09-25
   cache: web/infineon-psoc-history-wayback.html.txt
   quotes:

@@ -166,7 +166,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`
 Used on {ref}`history-fabs`.
 
 (hsrc-psoc-history)=
-**PSOC-HISTORY** — Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of 2025-07-13 (the live page now redirects elsewhere). <http://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
+**PSOC-HISTORY** — Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of 2025-07-13 (the live page now redirects elsewhere). <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
 Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-qtp-001004)=
