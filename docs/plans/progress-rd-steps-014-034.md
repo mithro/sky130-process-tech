@@ -64,6 +64,39 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 027-pwi.md — done (one in-force dropdown, content untouched)
+
+Rules applied: R-PARA/R-SENTENCE throughout (lead paragraph — the first sentence needed a
+second split pass, caught by re-measuring after the first edit, to satisfy both the 45-word
+sentence cap and the ≤25-word first-sentence rule; the "Isolated wells" bullet, 201 words →
+lead + three indented continuation paragraphs), R-TABLE (twice: the process-assumptions
+"outcome" sentence → Quantity|Value; the Energy item's five published sources →
+Source|Energy|Dose, matching the shape of the `018-nwi.md`/`020-lvtpi.md` precedent), R-HEDGE
+step 1 (italic lead-in on the scope sentence only), R-TOOLS (2 "Strength:" bullets split, no
+recap table), R-RELATED (`Previous:`/`Next:` split; `Same category:`, `Feeds:` labels, with two
+forward-pointing facts folded into one `Feeds:` bullet since both use the same label), R-OPENQ
+(bold labels on all four bullets), R-GLANCE (box last).
+
+**One missed sentence caught by a second measurement pass**: the lead paragraph's first
+sentence (47 words, with an embedded parenthetical and an em-dash clause) was not touched in
+the first edit pass since the flagged line number pointed slightly past it; a second
+`measure5.py` run after the rest of the page's fixes caught it, and it was split into three
+short sentences (moving the "boron is the only practical choice" parenthetical to its own
+sentence, per the ≥12-word-parenthetical rule) — this is the same "measure the whole page again
+after finishing" lesson the pilot recorded as its Guide problem 9.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 1 → 0; sentences > 45 words 11 → 3 (figure caption
+alt+caption, plus the table-markdown-misread artifact); table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/027-pwi.md`:
+`quotes` and `hedges` show no LOST; plain `numbers` (condition (a)) shows no LOST either. The
+only failure is `LOST number_order (not a clean regroup)` for seven tuples, all either clean
+regroups of the new tables/lists or single-number strandings (one of two "8250" mentions after
+the R-TOOLS split), the familiar Guide-problem-11 pattern. All other checkers pass; `-W` build
+clean. Screenshots (desktop + 400 px) read cleanly top to bottom, including both new tables and
+the four-paragraph "Isolated wells" bullet.
+
 ### 026-pwbm.md — done (dense mask-derivation page; no in-force dropdown)
 
 Rules applied: R-H3 (`### What the public record shows` before the "three pieces of evidence"
