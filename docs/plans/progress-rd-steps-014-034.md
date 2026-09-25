@@ -64,6 +64,57 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 017-nwm.md — done (no in-force patent note on this page; index-links dropdown only)
+
+Rules applied: R-SENTENCE (the em-dash/colon sentences throughout), R-PARA (the lead paragraph
+split at its implant-list seam; the "How it is typically performed" items restructured — see
+below), R-H3 (`### Key numbers` added after the layer-identification sentences), R-TABLE
+(twice: the `nwell` design-rule paragraph → Rule|Constrains|Value; the process-assumptions
+sentence → Quantity|Value; and a third table for the "Thick resist coat" item's three published
+resist thicknesses, mirroring the guide's own `018-nwi.md` worked example), R-CATEGORY
+(classification sentence + `**Specific to this step:**` bullets, a clean 2-sentence case),
+R-HEDGE step 1 (italic lead-in), R-TOOLS (3 "Strength:" bullets split, no recap table),
+R-RELATED (`Same category:`, `Depends on:` labels; `Mask:` merged per the pilot's M6
+convention), R-OPENQ (bold labels on all three bullets), R-GLANCE (box last).
+
+**One item split without adding a bullet.** The "Why this step exists" list is announced by
+"It also does three more jobs that the PDK documents:" — three bullets. The middle bullet's
+own sentence was 63 words (over the 45-word sentence cap and, marginally, the item cap), but
+splitting it into a new top-level bullet would silently make it "four jobs" while the lead-in
+sentence still says three. Fixed by giving that one bullet an indented continuation paragraph
+(blank line + 2-space indent) instead — same bullet, same count, two sentences.
+
+**One quote-trimming slip caught by `check_preserved.py` before running the final check**: an
+early draft of the "Well proximity effect" paragraph split rendered the "threshold voltage
+shifts of…" quotation as "up to 100 mV…", dropping "threshold voltage shifts of" from the
+front of the quoted string — restored the full quotation with a "The same source gives" lead-in
+instead.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 0; list items > 60 words 1 → 0
+(fixed via the indented-continuation approach above); sentences > 45 words 9 → 1 (the
+table-markdown-misread-as-a-sentence tool artifact, same as Guide problem 10/pilot's Guide
+problem 9); table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/017-nwm.md`:
+`quotes` and `hedges` show no LOST after the fix above. The only failure is `LOST number_order
+(not a clean regroup)` for four tuples; hand-verified with a small script calling
+`extract_number_order` directly (see method note below) — every LOST number is one of: (a) a
+number stranded alone in a single-number table row or sentence after this page's own R-TABLE/
+R-PARA splits (the `nwell.4`/`nwell.5` "—" rows, the "N-well vertical dimension" and
+"N-well/P-well junction" rows, the "2.3 µm-thick pwell mask" row, and the "2–3 µm" DUV-resist
+sentence, once it became its own continuation paragraph), or (b) part of a clean regroup whose
+matching ADDED tuple is a subsequence of the same digits (the i-line k₁ calculation, the design
+rules, the process assumptions). None is a real loss; `numbers` (condition (a)) shows none
+either. All other checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly
+top to bottom: both new "Key numbers" tables, the resist-thickness table, and the Related/
+Open-questions sections all render without overflow.
+
+**Method note, for later pages:** `python3 -c` importing `tools/check_preserved.py` directly
+and calling `extract_number_order(text)` on the page (with `sys.path.insert(0, "tools")`)
+prints each tuple's own source-text sample, which is a faster way to hand-verify a LOST/ADDED
+`number_order` mismatch than reasoning about it from the printed digit lists alone — used from
+this page onward.
+
 ### 014-lvtnm.md — done
 
 Rules applied, in order: R-H3 (`### Key numbers` before the design-rule table),
