@@ -2215,6 +2215,14 @@ file in the same commit.
 
 ## 8. Reviewer checklist (Opus)
 
+**Mandatory scripted check, before reading anything:** for every changed page, run main's
+`tools/check_preserved.py --base <merge-base> --allow-regrouped <page>` with no other allowance, and then,
+for every sentence that was split, confirm by eye that each resulting sentence carrying a claim still has
+the footnote marker and the hedge the original sentence had. Both batches so far lost markers this way
+(pilot H1/M2; batch 2 H1, N1, N2), and the tool cannot see a marker that merely moved to a neighbouring
+sentence.
+
+
 Review the diff **and** the rendered tiles. The executor cannot see what it did not think to look at.
 
 1. **Read the diff as a fact diff, not a text diff.** For every hunk: did a number, a unit, a quotation,
