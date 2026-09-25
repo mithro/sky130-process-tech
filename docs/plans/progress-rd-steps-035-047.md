@@ -58,6 +58,40 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 046-goxetch.md — done (2 hand-written in-force notes in the body plus their copies
+under References; content untouched — outside the 037–044 sweep range but still citing
+in-force Cypress patents `pat-03`/`pat-04`)
+
+Rules applied: R-PARA/R-SENTENCE extensively (the lead split into 4 short paragraphs at
+its definition/mechanism/hedge/dual-oxide seams, moving the "thinner than the PDK's
+110 Å…" em-dash aside into its own bracketed sentence; the "Why this step exists" opening
+sentence split at its parenthetical/em-dash, in original order, and the "Selective and
+gentle" bullet split into lead + continuation; both flagged numbered-list items split
+into lead + indented continuation, each internal em-dash/semicolon further split into
+plain sentences), R-SENTENCE **inside one `{dropdown}` note** (two patent paragraphs,
+each with 2–3 back-to-back quotations, split only before/after complete quotations — no
+quotation's wording touched), R-HEDGE step 1 (**this required re-adding the `## How it
+is typically performed` heading, accidentally dropped in the first edit pass along with
+the sentence it replaced — the same slip as 035/036, caught immediately by
+`check_steps.py` before any checker was declared passing**), R-TOOLS (4 "Strength:"
+bullets → SkyWater-says/Tool-exists/Runs-this-step form + a `Tool | Evidence` recap
+table, since 4 meets the threshold), R-RELATED (`Previous:`, `Next:`, `Depends on:`,
+`Same category:`, `Mask:`, `Category pages:`), R-OPENQ (bold labels on all four
+bullets), R-GLANCE (box inserted last; checked against `check_inforce.py` — clean;
+"Public numbers" is "none published for SKY130").
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 3 → 1 (figure caption, off
+limits); list items > 60 words 3 → 0; sentences > 45 words 6 → 0; table cells > 25 words
+0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order --allow-regrouped --allow-dropdown-edits
+docs/steps/046-goxetch.md`: **0 undeclared differences**, no LOST in any category. All
+other checkers, `check_inforce.py` included, pass; `-W` build clean. Screenshots
+(desktop + 400 px) read cleanly top to bottom, including the new recap table and the
+dropdown (collapsed, untouched).
+
+
 ### 045-nchi.md — done (2 hand-written in-force notes in the body plus their copies
 under References; content untouched — outside the 037–044 sweep range but still citing
 in-force Cypress patents `pat-03`/`pat-04`, so `check_inforce.py` is run after every edit

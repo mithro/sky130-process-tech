@@ -10,19 +10,39 @@
 | **Previous step** | {ref}`NCHI <step-045>` |
 | **Next step** | {ref}`LVGOX <step-047>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the thick gate oxide from the 1.8 V regions, using
+  the resist already in place from `NCHI`.
+* **Why:** a thin oxide cannot be grown on top of the thick one, so
+  the thick oxide has to be removed first.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** Akrion Gamma batch wet bench — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** HF dilution, etch time, and the resulting undercut
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `GOXETCH` strips the thick gate oxide grown at {ref}`GOX100 <step-043>`
-from the low-voltage regions. With the {ref}`LVOM <step-044>` resist
+from the low-voltage regions.
+
+With the {ref}`LVOM <step-044>` resist
 still in place — it has just served as the mask for
 {ref}`NCHI <step-045>` — the wafer is dipped in dilute hydrofluoric acid
-or buffered HF until the thick oxide — thinner than the PDK's 110 Å
-finished thick-oxide figure[^pdk-hv] by an amount that is not public
-(see {ref}`GOX100 <step-043>`) — in the windows is
-gone and bare silicon is exposed; under the resist, over the 5 V and
+or buffered HF until the thick oxide in the windows is
+gone and bare silicon is exposed.
+
+(The thick oxide is thinner than the PDK's 110 Å
+finished thick-oxide figure[^pdk-hv] by an amount that is not public;
+see {ref}`GOX100 <step-043>`.) Under the resist, over the 5 V and
 high-voltage transistors, the oxide stays. The resist is then stripped
 and the wafer cleaned for the thin gate oxidation at
-{ref}`LVGOX <step-047>`. It is the etch half of the {term}`dual-gate-oxide <dual gate oxide>`
+{ref}`LVGOX <step-047>`.
+
+It is the etch half of the {term}`dual-gate-oxide <dual gate oxide>`
 process described on the {ref}`category-oxidation` page: "a mask and wet
 etch to strip it from the low-voltage active areas".
 
@@ -43,13 +63,18 @@ the strip and clean as part of this step.
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 In one, "The thick, first gate oxide 240 is etched in the exposed
 regions by using a BOE etch … and the patterned mask layer 242 is then
-removed"; afterwards "the substrate 206 is cleaned using a wet etch that
+removed".[^pat-04]
+
+Afterwards "the substrate 206 is cleaned using a wet etch that
 does not etch oxide in order to protect the first gate oxide 240 of the
 HV MOS transistor 212, and the blocking oxide layer 238 of the gate
-stack 236".[^pat-04] In the other, "any previously formed gate insulator
+stack 236".[^pat-04]
+
+In the other, "any previously formed gate insulator
 layers, such as gate insulator layer 314 … are selectively removed to
-expose the substrate 302", a pre-clean is done "while the photoresist
-layer 318 protects the ONO charge trapping dielectric stack 306", and
+expose the substrate 302".[^pat-03] A pre-clean is done "while the photoresist
+layer 318 protects the ONO charge trapping dielectric stack 306".[^pat-03]
+And
 "the photoresist layer 318 is stripped … for example with conventional
 piranha clean and/or plasma ash operations, subsequent to the selective
 removal of the gate insulator layer(s)".[^pat-03]
@@ -71,9 +96,11 @@ the two gate oxides.
 ## Why this step exists
 
 The 1.8 V transistors need a ~4 nm gate oxide (the 1.8 V NMOS model
-carries `toxe = 4.148e-9`[^pdk-model-nfet01v8]); the thick oxide on
-their active areas — thinner than the PDK's 110 Å finished
-thick-oxide figure[^pdk-hv] by an amount that is not public — must be
+carries `toxe = 4.148e-9`[^pdk-model-nfet01v8]).
+
+The thick oxide on
+their active areas is thinner than the PDK's 110 Å finished
+thick-oxide figure[^pdk-hv] by an amount that is not public. It must be
 removed before the
 thin one can be grown. A thin oxide cannot simply be grown on top:
 oxidation adds to an existing oxide by the {term}`Deal–Grove <Deal–Grove model>` law rather than
@@ -86,7 +113,9 @@ replacing it ({ref}`category-oxidation`). The removal has to be:
   would sit exactly under the 1.8 V gate;
 * **Selective and gentle to the resist edge**, because HF creeping
   along the resist–oxide interface thins the thick oxide beside the
-  boundary. The pairing of resist and wet etch for dual gate oxide is
+  boundary.
+
+  The pairing of resist and wet etch for dual gate oxide is
   a recognised integration problem;[^beverina-2003] the thinning of the
   thick oxide at {term}`STI` edges and at the mask boundary in a dual-oxide
   process has been characterised[^lee-1999-icvc] and STI schemes
@@ -97,16 +126,18 @@ Without `GOXETCH` all transistors would carry the thick oxide and the
 
 ## How it is typically performed
 
-An industry-generic thick-oxide strip for a dual-gate-oxide process
-in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic thick-oxide strip for a dual-gate-oxide process
+in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Wet etch with resist.** Dilute HF — the dilutions the Cypress
    patent names are in the collapsed note below this list — or
    surfactant-containing BOE in a wet bench or single-wafer spray
-   tool. Rate control is the issue: 6:1 BOE etches thermal oxide at
+   tool.
+
+   Rate control is the issue: 6:1 BOE etches thermal oxide at
    "approximately 2 nanometres per second at 25 degrees
-   Celsius"[^wiki-boe] — a 10 nm film in five seconds — so dilute
-   solutions with rates of nanometres per minute are used; the rate
+   Celsius".[^wiki-boe] That is a 10 nm film in five seconds, so dilute
+   solutions with rates of nanometres per minute are used. The rate
    follows the HF and HF₂⁻ concentrations[^judge-1971] and, at very low
    concentration, the dissociation state of the acid.[^kikuyama-1994]
    Monk, Soane and Howe give the kinetics and a model for HF etching
@@ -127,10 +158,12 @@ in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 5. **Pre-gate clean.** An RCA-type clean whose final surface state
    is chosen for the thin oxide: {term}`SC-1` for particles, {term}`SC-2` for
    metals,[^wiki-rca] then either an HF-last (hydrogen-terminated
-   silicon) or a thin chemical oxide. Two constraints are public. The
+   silicon) or a thin chemical oxide.
+
+   Two constraints are public. The
    clean must not remove the thick oxide that is now exposed, and it
    must not attack the {term}`ONO` {term}`blocking oxide` of the memory
-   cells; what the two Cypress patents say about each, including an
+   cells. What the two Cypress patents say about each, including an
    etch rate and the dilution they prefer, is in the collapsed note
    below this list. Kern's
    review gives the chemistry of these cleans,[^kern-1990] Ohmi the
@@ -162,20 +195,35 @@ preferred.[^pat-03]
 
 ## Machines likely used at SkyWater
 
-* **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE, spin or IPA dry")[^skw-01] — the bench carries the chemistry the
-  Cypress patent names for this step (the collapsed note above).
-  Strength: **strong** for the tool; **inference** for the assignment.
-* **DNS wet bench** ("industry standard HF/SC1/SC2"; "dilute HF-last
-  with IPA dry")[^skw-01] — a pre-gate clean with HF-last is exactly the
-  option listed. Strength: strong for existence; inference for
-  assignment.
-* **FSI Mercury** ("HF/SC1/SC2 rotational") and **SEZ 223 /
-  Da Vinci** ("HF, DSP+HF, titration controlled").[^skw-01] Strength:
-  strong for existence; the SEZ is also named in a technician
-  profile.[^skw-07]
-* **GaSonics PEP, Iridia, Mattson Aspen II** ashers.[^skw-01]
-  Strength: strong for existence.
+Four tools are named at SkyWater for this step:
+
+| Tool | Evidence |
+|---|---|
+| Akrion Gamma batch wet bench | strong (tool); inference (assignment) |
+| DNS wet bench | strong (existence); inference (assignment) |
+| FSI Mercury / SEZ 223 / Da Vinci | strong (existence) |
+| GaSonics PEP / Iridia / Mattson Aspen II ashers | strong (existence) |
+
+* **Akrion Gamma batch wet bench**
+  - *SkyWater says:* lists "Sulfuric, SC1, phosphoric,
+    BOE, spin or IPA dry".[^skw-01]
+  - *Tool exists:* **strong** — the bench carries the chemistry the
+    Cypress patent names for this step (the collapsed note above).
+  - *Runs this step:* **inference**.
+* **DNS wet bench**
+  - *SkyWater says:* lists "industry standard HF/SC1/SC2"; "dilute HF-last
+    with IPA dry".[^skw-01]
+  - *Tool exists:* strong for existence — a pre-gate clean with
+    HF-last is exactly the option listed.
+  - *Runs this step:* inference.
+* **FSI Mercury / SEZ 223 / Da Vinci**
+  - *SkyWater says:* lists "HF/SC1/SC2 rotational" and "HF, DSP+HF,
+    titration controlled".[^skw-01] The SEZ is also named in a
+    technician profile.[^skw-07]
+  - *Tool exists:* strong for existence.
+* **GaSonics PEP, Iridia, Mattson Aspen II ashers**
+  - *SkyWater says:* lists them.[^skw-01]
+  - *Tool exists:* strong for existence.
 
 ## Resources required
 
@@ -192,12 +240,13 @@ preferred.[^pat-03]
 ## Related steps and cross-references
 
 * Previous: {ref}`NCHI <step-045>` (implant through the same
-  window); mask: {ref}`LVOM <step-044>`.
+  window).
 * Next: {ref}`LVGOX <step-047>` (thin oxide grown on the cleared
   silicon).
-* The oxide being removed: {ref}`GOX100 <step-043>`.
-* Sister wet oxide etches: {ref}`TUNME <step-039>`,
+* Depends on: the oxide being removed, {ref}`GOX100 <step-043>`.
+* Same category: sister wet oxide etches, {ref}`TUNME <step-039>`,
   {ref}`SACETCH <step-095>`.
+* Mask: {ref}`LVOM <step-044>`.
 * Category pages: {ref}`Etch <category-etch>`,
   {ref}`Resist strip / clean <category-strip>`,
   {ref}`Thermal oxidation <category-oxidation>`.
@@ -269,15 +318,18 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* HF dilution, etch time, over-etch and the resulting undercut at the
-  thick/thin boundary are not public.
-* Whether the pre-gate clean ends HF-last or with a chemical oxide is
-  not public; SkyWater's DNS bench offers "dilute HF-last".[^skw-01]
-* Where the resist is stripped is not stated publicly; this page
-  treats the strip as part of this step.
-* How the ONO blocking oxide is protected during this etch and clean
-  (resist coverage, sacrificial cap, or oxide-safe chemistry) is not
-  public; both Cypress approaches are described above.
+* **Etch chemistry.** HF dilution, etch time, over-etch and the
+  resulting undercut at the thick/thin boundary are not public.
+* **Pre-gate clean endpoint.** Whether the pre-gate clean ends
+  HF-last or with a chemical oxide is not public; SkyWater's DNS bench
+  offers "dilute HF-last".[^skw-01]
+* **Where the resist is stripped.** Where the resist is stripped is
+  not stated publicly; this page treats the strip as part of this
+  step.
+* **ONO protection.** How the ONO blocking oxide is protected during
+  this etch and clean (resist coverage, sacrificial cap, or
+  oxide-safe chemistry) is not public; both Cypress approaches are
+  described above.
 
 <!-- footnotes -->
 
