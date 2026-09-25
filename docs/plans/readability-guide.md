@@ -324,9 +324,13 @@ in the silicon *around* the tip, on the channel side of it. We infer that the tw
 number or footnote marker.
 
 **Do.**
-1. End the announcing sentence with a colon.
+1. End the announcing sentence with a colon. A marker at the end of the announcing sentence
+   supports every item that follows: keep it there, on the lead-in, before the colon — never move
+   it onto the last item only, which leaves the other items looking uncited.
 2. One bullet per item, in the original order, with the item's own clause and marker.
 3. Open each bullet with a bold label of 2–4 words taken from the item's own words, then an em dash.
+   If the item already begins with the words the label would use, bold those words in place; do not
+   repeat them as a separate label.
 4. Keep the closing sentence ("Both are controlled by …") as prose after the list.
 5. A list of four or fewer bare nouns stays inline.
 6. Numbered lists are for sequences only (a recipe, an arithmetic derivation). Nest at most two levels.
@@ -765,7 +769,9 @@ identifiers in one block.
    | Generic recipe parameters | Parameter · Typical · Public for SKY130? |
 
 2. One row per item, in the original order.
-3. Every row keeps its footnote marker, in the first or the last cell.
+3. Every row keeps its footnote marker, in the first or the last cell. A marker at the end of an
+   enumerating sentence that becomes the table supports every row: keep it in the table's first
+   header cell (`Layer[^pdk-06]`) or the lead-in sentence before the colon, not on the last row only.
 4. Units go in the header (`Energy (keV)`). Per-cell units only where the source itself is
    inconsistent, and then say so in the caption (R-CAPTION).
 5. A hedge that covers the whole table goes, word for word, in one sentence directly under it. A hedge
