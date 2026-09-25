@@ -223,7 +223,7 @@ them all and run `--check`.
    (x 14–76) and a bottom plate (x 100 on), the top plate runs from x 130; the second
    capacitor's plate is over the first. What S9b needs to know:
    * **141–149 are S9b's to change.** They were instantiated as context, not drawn; the S10
-     figures 150–153 show only the window x 76–176 above 252 u (the top of NCAPOX5 and up),
+     figures 150–153 show only the window x 76–176 above 250 u (the top of NCAPOX5 and up),
      so a change to 141–148 that keeps the metal-4 heights changes nothing there. If the
      heights move, rebuild 150–153 and move their `crop_depth` (−(start height) × 2.68).
    * **Two template parameters**, both defaulting to the old behaviour:
@@ -234,13 +234,21 @@ them all and run `--check`.
      a `barrier` film). MM4E (155) needs the same as MM3E, and VIM4E (160) the same as VIM3E.
    * **Under the resist the dielectric stays on the metal.** CAPME stops on the dielectric
      (the 138 page's reading), so after MM3E every metal-3 shape carries the thin dielectric;
-     the pages do not discuss it (it is said in the 140 caption). Keep that in mind for the
-     VIM3E floors and for 154–155 (MM4 must cover the second plate, as MM3 covers the
-     first).
+     the pages do not discuss it (it is said in the 140 caption). So the captions of **145
+     (VIM3E), 155 (MM4E) and 160 (VIM4E) must say that on this drawing the etch also clears
+     that dielectric** (on a metal-3 line, between the metal-4 shapes, on a metal-4 line),
+     since their pages give the floors as the cap and the plate and are silent on it; and
+     **MM4 (154) must cover the whole second plate**, as MM3 covers the first. The lint now
+     reports an etch through a resist that removes nothing (a forgotten `etch_materials`)
+     and a material list given as a scalar.
+   * **The MiM figures label the metal cap "Metal cap film"** (a per-figure `labels:`
+     override, so the S9a figures keep "Cap film"): beside "Capacitor dielectric" and
+     "Top-plate film", "Cap film" read as a film of the capacitor. The override prints its
+     note in every panel it is in, so the second panel carries `note: ""`.
    * **Close-up recipe for the MiM figures**: window `[66, 166]` (135–140) or `[76, 176]`
      (150–153; the via-3 plug at x 52–72 would leave a sliver at the left edge of
      `[66, 166]`), enlarged 2.68×; `crop_depth` −461 (the drawing starts at 172 u, inside
-     NILD4) and −675 (252 u, inside NILD5). With a shallower cut the label column (three
+     NILD4) and −670 (250 u, inside NILD5). With a shallower cut the label column (three
      notes of three lines each) ran below the drawing. The dielectric is 3 u (`thin_ok`), the
      plate 8 u.
 2. **The height budget.** Full slices here are cut 84 u above the silicon (`crop_depth: -84`,

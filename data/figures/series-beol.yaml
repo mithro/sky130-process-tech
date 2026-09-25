@@ -75,7 +75,7 @@
 #   0.42 um and 28 u; 15 u over the plate); via 3 holes of 20 u on the wiring line (x 52-72,
 #   etched through the dielectric) and on the top plate (x 196-216); the metal-4 stack
 #   5 + 32 + 5 u (as metal 3: the PDK gives both 0.845 um), top at 306 u. S9b may change
-#   these; 150-153 draw only the window x 76-176 above 252 u, so they depend only on the
+#   these; 150-153 draw only the window x 76-176 above 250 u, so they depend only on the
 #   metal-4 heights (then move their `crop_depth`).
 # * Second capacitor (150-153): the same films on the blanket metal 4, plate from x 130 on,
 #   over the first plate. MM4 (154) must cover it, as MM3 covers the first.

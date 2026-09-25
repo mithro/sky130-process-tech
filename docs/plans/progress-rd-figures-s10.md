@@ -27,7 +27,7 @@ series `data/figures/series-beol.yaml`.
   are in the series as unlabelled context: NILD5 polished to 26 u over the metal-3 tops with
   its cap (0.39 µm against via 2's 0.42 µm and 28 u, pdk-04 on the 141/145 pages), via 3 on
   the wiring line and on the top plate, metal 4 as thick as metal 3 (both 0.845 µm). The
-  150–153 close-ups show only x 76–176 above 252 u, so they depend on 141–148 only through
+  150–153 close-ups show only x 76–176 above 250 u, so they depend on 141–148 only through
   the metal-4 heights. S9b owns 141–149 and may change them (then rebuild 150–153 and move
   their `crop_depth`). Written in the series header and in `figure-authoring.md` ("Drawing
   the next groups", item 1).
@@ -35,7 +35,7 @@ series `data/figures/series-beol.yaml`.
   full-slice scale; every figure is a 2.68× close-up of the plate edge: window `[66, 166]`
   for 135–140 (the edge of the capacitor and, from 139, the end of the wiring line) and
   `[76, 176]` for 150–153 (the via-3 plug at x 52–72 would leave a sliver at the left of
-  `[66, 166]`). Cuts at 172 u (−461) and 252 u (−675): with shallower cuts the label column
+  `[66, 166]`). Cuts at 172 u (−461) and 250 u (−670): with shallower cuts the label column
   ran below the drawing.
 * **Labels.** The dielectric: "not public; read here as a PECVD oxynitride", `inferred`
   (135: "described in this reference as a silicon oxynitride (inference)"; 150: "no public
@@ -104,3 +104,30 @@ the caption.
 ## Left
 
 * Nothing for 135–140, 150–153. S9b: 141–149 and 154–163 (see the guide, item 1).
+
+## Review round (review file rd-figures-s10, "approve with fixes")
+
+* M1: the metal cap is labelled "Metal cap film" in all ten figures (per-figure override; S9a
+  keeps "Cap film"); the note is given in one panel, the other override has `note: ""`.
+* M2: 140's caption and arrow follow the page body: the dielectric is broken through (a
+  fluorine-containing step, on the page's account, since chlorine makes little progress on it),
+  then chlorine etches the stack.
+* M3: `gen_figures.py` reports a `materials`/`only_on`/`consumes` that is not a list (no
+  TypeError; the build draws nothing), and an etch through a resist that removes nothing;
+  four selftest cases (plain series and a template with `etch_materials` left out or given as
+  a scalar). Checked on the real series: dropping MM3E's `etch_materials` now gives the lint line.
+* Lows: 137 cut wording; 135 "are drawn", "TiW or Ti/TiN"; 138 "reads the stop as the more
+  plausible (inference)", 153 "describes the stop (inference)" (its page has no "more
+  plausible"); 140's PDK-schematic point attributed to the CAPME page; "edge" for "end" on
+  139/140 (caption, alt, close-up name); 150–153 cut at 250 u (−670); the unlabelled aluminium
+  declared in every before panel that hides it.
+* The guide's item 1 tells S9b that the 145, 155 and 160 captions must say the dielectric is
+  cleared, and that MM4 must cover the second plate.
+
+## For the readability batch (added in review)
+
+* The 140 page's lead says "a chlorine plasma removes everything … first whatever remains of
+  the CAPILD dielectric", while its body says chlorine "makes little progress" on the dielectric
+  and a fluorine-containing breakthrough removes it. The figure follows the body.
+* The 140 lead ("outside the capacitor plates") and the 145 page should say where the
+  dielectric is left (on every metal-3 shape, on the stop-on-dielectric reading).
