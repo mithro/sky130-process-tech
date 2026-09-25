@@ -45,6 +45,77 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 040-ono.md — done (the densest page in the batch: 5 hand-written in-force notes in
+the body plus their copies under References; content untouched, sentences split
+inside them under R-DROPDOWN rule 2 — inside the 037–044 in-force-sweep range)
+
+Rules applied: R-PARA/R-SENTENCE extensively throughout the open prose (the lead split
+into 2 sentences/paragraphs; the Cypress-patent-embodiments paragraph split into 3
+paragraphs, each embodiment its own sentence instead of a semicolon chain; R-CATEGORY
+on "Step category" — 30-word classification + `**Specific to this step:**` and 2
+bullets; the "Why this step exists" opening quotations split at their "and" joins
+without altering any quote's own wording; both long bulleted "layer job" items split
+into lead + indented continuation; the "formed *here*... for two reasons" sentence
+split at its em-dash; R-HEDGE step 1 on the numbered-list intro (only the true scope
+sentence italicised, not the following explanatory sentence — a mistake caught and
+fixed on this page, see below); all four numbered-list items split into lead +
+continuation), R-SENTENCE **inside five `{dropdown}` notes** (R-DROPDOWN rule 2): every
+dense, quotation-heavy sentence was split only *before or after* a quotation, several
+requiring the citing marker to be repeated on each resulting sentence since one
+citation originally covered a whole compound sentence of parallel quoted clauses (declared
+via `--allow-dropdown-edits`, `--allow-added markers`). R-TOOLS (2 "Strength:" bullets
+→ SkyWater-says/Tool-exists/Runs-this-step form; no recap table, under the 4-tool
+threshold), R-RELATED (labelled: `Previous:`, `Next:`, `Feeds:` ×2, `Same category:`),
+R-OPENQ (bold labels on all five bullets), R-GLANCE (box inserted last).
+
+**One R-HEDGE mistake caught by the measurement tool, not a reviewer.** The first edit
+pass wrapped *both* sentences of the "How it is typically performed" intro in italics
+("*An industry-generic ONO sequence…not public). The published values come from…in the
+text:*"), when R-HEDGE step 1 only calls for the true scope sentence (the first one) to
+become an italic lead-in. `measure5.py`'s sentence splitter, which requires a bare
+`.`/`!`/`?` (optionally followed by a closing quote/bracket) before whitespace, does not
+recognise a sentence boundary immediately before a closing `*`, so the over-wrapped
+version silently merged into one 57-word "sentence" in the tool's own count. Re-reading
+the source against R-HEDGE's own wording (`the existing opening scope sentence, **word
+for word**`) showed the mistake before any checker was declared passing; fixed by closing
+the italics after the first sentence only. Recorded as a caution for later pages: an
+italic lead-in must end where the *scope sentence itself* ends, never absorb the
+sentence after it.
+
+**One in-force number nearly leaked into the glance box — caught by `check_inforce.py`,
+fixed before commit.** The first glance-box draft cited `[^pat-02]` (US 2009/0179253, one
+of this page's *in-force* patents) for the tunnel/trapping/blocking-oxide ranges quoted
+inside the collapsed dropdown at the top of "What this step is" — exactly the mistake
+the task brief warns against twice over ("never put anything from those notes in a
+glance box"). `uv run python tools/check_inforce.py` failed immediately with `footnote
+reference [^pat-02] ... outside a collapsed block`. Fixed by rewriting "Public numbers"
+to cite only `[^pat-01]`, the *expired* Cypress ONO patent whose figures ("less than
+about 25 Å" tunnel, "less than about 200 Å" trapping) are already quoted in the open
+body text, not only inside a dropdown. Re-ran `check_inforce.py`: 0 problems. This is
+the clearest instance in this batch of the exact trap the task brief calls out; recorded
+in full because a future page's glance box must always be checked against
+`check_inforce.py` before considering the page done, not just against `check_preserved.py`.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption, off
+limits); list items > 60 words 0 → 0; sentences > 45 words 10 → 0; table cells > 25
+words 0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers,number_order,quotes --allow-regrouped
+--allow-dropdown-edits docs/steps/040-ono.md`: **0 undeclared differences** after two
+rounds of fixes. The first round found a real `LOST quotes` / `ADDED quotes` pair: an
+early edit had moved a sentence-ending period from *outside* a closing quotation mark to
+*inside* it ("...layer."[^cyp-25]" instead of the source's "...layer".[^cyp-25]"), which
+is a forbidden change to the quotation's own content, not punctuation around it. Grepped
+the whole batch (`grep -n '\."\[\^' docs/steps/035…047*.md`) to confirm no other page has
+the same slip, then fixed this one occurrence. `quotes` added by the glance box (repeating
+text already quoted in the body) are declared; every `number_order` finding is a clean
+`REGROUPED` match except the glance box's own declared addition. All other checkers,
+`check_inforce.py` above all, pass; `-W` build clean. Screenshots (desktop + 400 px) read
+cleanly top to bottom, all five dropdowns collapsed and untouched, the new Step-category
+bullets and the R-TOOLS blocks render correctly.
+
+
 ### 039-tunme.md — done (3 hand-written in-force notes in the body, plus their copies
 under References; content untouched, sentences split inside them under R-DROPDOWN
 rule 2 — inside the 037–044 in-force-sweep range)
