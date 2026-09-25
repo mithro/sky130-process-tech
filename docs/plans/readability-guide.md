@@ -664,8 +664,9 @@ After:
 **Do.**
 1. Add a bold label of 2–5 words naming the unknown, taken from the bullet's own words, then a full
    stop, then the existing text unchanged.
-2. A bullet over 60 words that is mostly numbers moves its numbers into a table under
-   `### What the public record shows` (R-TABLE) and keeps here the question, the hedge and a pointer.
+2. A bullet over 60 words stays in `## Open questions`. Split it per R-PARA step 4: a lead of
+   ≤ 30 words keeping the question and its hedge, then its figures as sub-bullets or an indented
+   table, **inside the bullet**. Never move it to another H2, and never rewrite it as a summary.
 3. In-force notes stay last in the section, in place.
 
 **Example** — `docs/steps/002-box.md:250`.
