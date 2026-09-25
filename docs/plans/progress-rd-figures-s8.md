@@ -56,7 +56,7 @@ rd-figures-s7 M3 and its rulings on the terraced PSG and the corner-filling line
 | S2 wells (014–034) | none | Byte-identical (no conformal film over topography) |
 | S3 SONOS (035–042) | all 8 | The ONO films and the resist over the field-oxide step have rounded outer corners |
 | S4 gate oxides (043–047) | none | Byte-identical |
-| S5 poly (048–063) | all 16 | Gate film, caps and re-oxidation over the field-oxide step: rounded shoulders instead of square ones; stacks otherwise unchanged |
+| S5 poly (048–063) | 15 of 16 (063 unchanged) | Gate film, caps and re-oxidation over the field-oxide step: rounded shoulders instead of square ones; stacks otherwise unchanged |
 | S6 tips/spacers/S-D (064–088) | 065, 066, 068–070, 075–088 | Spacer nitride deposited with rounded corners; after the etch-back the spacer has the classic rounded top (077's caption updated); spacer oxide rounded; some corners of etched films put back |
 | S7 MOL (089–106) | all 18 | PSG faceted (bottom-up fill, peaks over the stacks) instead of terraces; contact walls exact; liner of even thickness with an open, rounded bottom; tungsten blanket with a dimple over each hole; NILD2 with shallow dips over the gaps instead of a flat top |
 
@@ -90,7 +90,7 @@ reported nothing.
   above the local-contact plug below (x 28–52 and 192–216, illustrative); the middle pad has none.
   CTME etches the NILD2 oxide and the LINT nitride to the TiN (the page's reading: stop on the
   nitride, then open it) and strips the resist in the step (the page treats the strip as part of
-  it). Walls tapered at 12°, bottom about 0.7 of the top: drawn tapered because the CTM1/CTME pages
+  it). Walls tapered at 19.5° (review H1; 12° before), bottom about half the top: drawn tapered because the CTM1/CTME pages
   read the PDK's 0.09 µm "Standard contact bottom CD" against the 0.170 µm square as a markedly
   tapered hole; the angle is not public (caption says so). The hole is only 17 u deep in the series
   (NILD2 12 u + LINT 5 u over the pads, fixed by S7's end state), so its aspect ratio is well below
@@ -178,3 +178,43 @@ pat-tiw-hitachi and others — are not used).
 * The number lint counts the digit in a step code ("NILD3", "TIN2", "metal-1") as a number; S9's
   via levels will hit it on every label. Exempting all-caps step codes from the sheet (or
   hyphenated level names) would let notes name them.
+
+## Review round (tmp review rd-figures-s8: approve with fixes, both parts)
+
+* **M1** 089 caption: "lowest over the 5 V area on the left" dropped (no longer true). This removes
+  one "5" from the figure's own caption (`check_preserved --base` merge-base: LOST '5' on 089, in
+  the figure block only).
+* **M2** 099 alt: "a V-shaped notch over the hole reaching most of the way down to the liner"; the
+  caption says the deep notch comes from the drawn thickness, not from the page.
+* **M3 (generator)** new token `max-film-traverse` (24 u): a right-hand leader may not run more than
+  24 u inside ONE other film. The route chooser sends such a label over the surface
+  (`_film_run`), and lint 18 refuses it (selftest: 30 u refused, 20 u accepted). Measured on all
+  figures first: only poly-054/055/057/058 (resistor body through the gate film's rounded
+  shoulder, 35 u) exceeded 19 u; they now rise over the surface as on main. 058 was the same
+  regression, not listed in the review.
+* **Number lint**: `IDENT_RE` as the review gives it; step and level codes (NILD3, TIN2, NILD3_C)
+  are identifiers. Selftests: "polished at NILD3" needs no cite; "NILD3_C, 0.030 µm" and "TIN2
+  liner, 20 nm" still do; a `reading` note "NILD3" does not trigger "not public first".
+* **H1** CTME taper 19.5°: 12 u floor under the 24 u mouth, "bottom about half the top" is now
+  true; series header corrected.
+* **M5** 108 is now a close-up of the right-hand contact (the full-slice hole was about 5 px at
+  400 px); 108, 109, 110 captions: "The hole is drawn much shallower than it is: … about 0.34 µm
+  deep,[^pdk-04] about twice its width."
+* **M6 (generator)** a cut close-up (negative `crop_depth`) draws a zigzag break along the bottom of
+  the drawing, adds "; the lower part of the slice is not drawn" to its close-up line, and drops
+  any film showing less than 2 u above the cut; the lint now asks for the exact phrase "the lower
+  part of the slice is cut off" (selftest: "the resist is cut off" is refused). The label-column
+  extension that could show more substrate is off for a cut figure.
+* **M4, L2, L3** 112 caption: the page's TiW choice explained as the review words it (3 600 Å
+  [cyp-qtp-113005] against 0.36 µm [pdk-04], "an inference"); "the colour the figure conventions
+  use for every Ti, TiN and TiW film"; "records the change and gives the new metal 1 as".
+  113, 114: "the page's text opens with the TiW stack of the 2013 report, and the figure, like
+  the overview, draws neither".
+* **M7** `anchor_y` 108 on the aluminium (mid-film): its dot is off the bottom film in 112–117.
+  113 hides the NILD2 label in both panels (its leader paired with the aluminium's), declared.
+* **L1** "Ti or Ti/TiN"; **L4** the cap keeps its note in the lower panels of 113 and 114.
+* **114 and pdk-04**: page 114 cites the stack diagram under no key, so no citation was added; the
+  figure carries no 0.36 µm. For the readability batch: "0.14 µm wide and 0.36 µm deep" on 114
+  has no marker, and the source would need a footnote definition (pdk-04, already in the inventory).
+* QA: all 11 S8 figures, poly-054/055/057/058 and mol-099 re-shot at desktop and 400 px in light
+  and dark, every tile opened; built pages 108 and 112 at 1280 and 400 px.
