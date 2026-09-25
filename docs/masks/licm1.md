@@ -175,7 +175,7 @@ set is the heading of the run's columns in the tab
 | MPW-7 | `5CS8016AC` | `S8016AA265A` |
 | MPW-8 | `5CS8017AC` | `S8017AA265A` |
 
-* **Plate number.** The sheet does not say what `265` encodes. It falls
+* **Plate number.** The sheet does not say what `265` encodes.
   Its neighbours in the tab are `260` for `PSDM` (step 81) and `317` for
   `HVTPM` (step 22), so the numbers do not follow process order, and no
   process position is read from it

@@ -808,3 +808,9 @@ predicts; nothing changed.
   hedge covers the whole column reading); two quick-facts cells (33, 37; not in the body). Before →
   after: paragraphs 13 → 0, items 0 → 0, sentences 19 → 4, cells 2 → 2.
 * **Content problems for the owner:** none found.
+
+## Review round 1 (review `tmp/reviews/rd-masks-a.md`: approve with fixes, 0 High / 4 Medium / 7 Low)
+
+* **licm1.md:178** — "It falls" deleted, per the ruling: a leftover of review fix `8788b70d`
+  (2026-09-14), which replaced "It falls between `260` … and `370` …" with the "Its neighbours"
+  sentence but kept the first two words. Two words, no claim. Own commit.
