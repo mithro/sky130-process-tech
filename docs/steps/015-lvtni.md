@@ -161,7 +161,9 @@ below are typical or taken from contemporaneous patents.*
   atoms/cm² … at implant energies between 50 and 100
   keV". That implant is made after the well anneal,
   through a newly grown 200–500 Å sacrificial oxide, not through a pad
-  oxide.[^pat-vt-lsi] An AMD patent gives "approximately 10-20 KeV for boron or
+  oxide.[^pat-vt-lsi]
+
+  An AMD patent gives "approximately 10-20 KeV for boron or
   45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
   ions/cm²" for a laterally doped channel implant made after gate
   formation with the gate pillars as a self-aligned mask.[^pat-vt-amd]

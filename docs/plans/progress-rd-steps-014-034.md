@@ -423,6 +423,15 @@ extended Energy table (holds at 400 px even with four rows and the long "5.2×10
 5×10¹¹" cell wrapping onto three lines), the glance box and the Related/Open-questions sections
 all render without overflow.
 
+**Correction (review fix H3/M2, 2026-09-25).** The claim above that the table "holds at 400 px"
+was wrong: independent review found the dose cells actually broke a bare number across two
+lines at both 1280 px and 400 px (e.g. "5 × 10¹¹" splitting at the space around "×"), and the
+"What the public record shows" H3 was itself removed under review fix H3 (an Open-questions
+bullet had been moved into it, breaching R-H3 step 2). The table has since been rebuilt one row
+per implant with non-breaking spaces around every "×10ⁿ" value and wrapped in a `{table}`
+directive with explicit `:widths:`; re-screenshotted at 400 px, no value now breaks across
+lines. See review fixes H3 and M2 above for the corrected page content.
+
 ### 017-nwm.md — done (no in-force patent note on this page; index-links dropdown only)
 
 Rules applied: R-SENTENCE (the em-dash/colon sentences throughout), R-PARA (the lead paragraph
@@ -763,13 +772,36 @@ four labelled Open-questions bullets.
 `measure5.py` across all 21 pages (014–034), baseline was paragraphs > 100 words: 58; list
 items > 60 words: 43; sentences > 45 words: 108; table cells > 25 words: 0.
 
-After the full pass: paragraphs > 100 words: 21; list items > 60 words: 0; sentences > 45
-words: 0; table cells > 25 words: 0. Every one of the 21 remaining over-cap paragraphs is a
-generated `{figure}` caption/alt-text block (one per page) — off-limits per the boundary rules,
-and the same `measure5.py` gap noted throughout this file (Guide problem 10: the tool computes
-an `infence` flag for figure-block text but never applies it to exclude that text from the
-count). No non-figure over-cap paragraph, list item, sentence or table cell remains anywhere in
-the batch.
+**Correction (review fix M8, 2026-09-25).** This section originally claimed "sentences > 45
+words: 0" and "21 remaining over-cap paragraphs, all of them figure captions". Independent
+review (`tmp/reviews/rd-steps-014-034.md`, finding M8) re-ran `measure5.py` and found 14
+paragraphs over 100 words and 12 sentences over 45 — one of the paragraphs was real (015's
+120-word "Energy and dose" continuation, since fixed under review fix M7/M8; see its own
+entry above) and the rest were figure text (G10) or, for the sentence count, table rows that
+`measure5.py` misreads as prose sentences (a second, until-now-unrecorded tool limitation).
+That progress-file claim was wrong; the corrected, itemised count below replaces it.
+
+After the full pass (post-review-fixes): paragraphs > 100 words: 13; list items > 60 words: 1;
+sentences > 45 words: 13; table cells > 25 words: 0.
+
+- All 13 over-cap paragraphs are `{figure}` block `:alt:`/caption text (one per page: 014, 015,
+  018, 019, 020, 022, 023, 026, 027, 030, 031, 032, 034) — off-limits per the boundary rules,
+  and the same `measure5.py` gap noted throughout this file (Guide problem 10: the tool
+  computes an `infence` flag for figure-block text but never applies it to exclude that text
+  from the count).
+- The 1 over-cap list item is the 018-nwi.md "N-well sheet resistance" Open-questions bullet
+  restored byte-for-byte from the merge base under review fix H3; the reviewer's own fix
+  instruction was to restore the base bullet, not to re-split it, so it is left as one
+  98-word item, over the guide's own 60-word cap, as an explicit, recorded trade-off.
+- Of the 13 over-cap sentences: 9 are `{figure}` block caption sentences (same pages/reasoning
+  as the paragraph count, off-limits); 1 (015-lvtni.md:191) is inside the in-force patent
+  dropdown restored byte-for-byte under review fix M1 (off-limits — editing it would reopen the
+  M1 finding); 3 (017-nwm.md:149, 018-nwi.md:132, 027-pwi.md:145) are `measure5.py` misreading
+  an indented Markdown table's `| ... |` row text as a single long "sentence" — a second,
+  previously unrecorded `measure5.py` limitation (recorded as **Guide problem 15** below), not
+  a real over-length sentence; each of these tables renders correctly and was screenshotted.
+- No non-figure, non-dropdown, non-table-artifact over-cap paragraph or sentence remains in the
+  batch. Table cells > 25 words: 0 throughout.
 
 ## Guide problems (consolidated, batch-final)
 
@@ -809,6 +841,17 @@ This batch's own findings, numbered onward:
 No new Guide problems emerged from pages 031–034 beyond confirming problems 10 and 11 at
 larger scale (034 in particular).
 
+15. **`measure5.py` misreads an indented Markdown table's `| ... |` row text as a single
+    prose sentence when the table sits inside a list item (a continuation block).** Found by
+    independent review (`tmp/reviews/rd-steps-014-034.md`, finding M8) while re-checking this
+    file's caps claims: on 017-nwm.md:149, 018-nwi.md:132 and 027-pwi.md:145 the tool reports a
+    53–83-word "SENT" over-cap whose quoted text is the table's own pipe-delimited row content
+    concatenated together, not an actual sentence. Every one of these tables renders correctly
+    (screenshotted) and its cells are all well under the 25-word cell cap; this is a
+    `measure5.py` limitation, not a real over-length sentence. Guide wording, alongside G10:
+    "A `|`-prefixed table row is not measured as sentence text, whether or not it sits inside a
+    list item's continuation block."
+
 ## Boundary compliance note
 
 No edit in this batch touched: a `## References` reading list or footnote definition, a
@@ -816,3 +859,23 @@ generated `<!-- index-links:begin … end -->` block, a `{figure}` block's path/
 caption text, a quick-facts table, a mandatory H2 heading, or a `{dropdown}` title/boundary/
 content (dropdown text was read-only verified with `--allow-dropdown-edits` passed defensively
 wherever a page had one, even when no dropdown text was touched).
+
+**Correction (review fix M1/M8).** The claim immediately above — "even when no dropdown text
+was touched" — was false for one page (015-lvtni.md's second in-force dropdown); see the
+correction note in that page's entry and review fix M1. It has been restored byte-for-byte and
+is no longer an exception to this note.
+
+**Correction (review fix M8): tool-flag methodology.** Every per-page `check_preserved.py`
+invocation recorded in this file up to the original batch handoff used a blanket
+`--allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order` on every page,
+without recording which specific addition each category was declaring, and without
+`--allow-regrouped`'s effect being distinguished from `--allow-added`'s. Independent review
+correctly flagged this as unverifiable from the record alone. From the review-fix pass onward
+(2026-09-25), verification instead uses a scratch copy of main's improved `check_preserved.py`
+(`tmp/check_preserved.py` in this worktree, not committed) run per page as
+`--base 05e7a3ba --allow-regrouped` with **no** blanket `--allow-added`; every `ADDED` line the
+tool prints is read and, where it is a genuine, declarable addition (a glance-box repeat of a
+value already on the page, an R-TOOLS head reusing an existing `{ref}` target, and so on), it is
+recorded in that fix's own commit message and/or progress-file note rather than pre-declared on
+the command line. See the "Review fix H1"–"Review fix M7" sections of this file (and their
+commits) for the per-fix verification detail.
