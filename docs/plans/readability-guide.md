@@ -381,7 +381,10 @@ starts with a bold run-in label that introduces a whole passage rather than one 
    (R-PARA step 3) stays bold.
 5. H3 titles must be unique on the page (`myst_heading_anchors = 3` turns each into a slug) and must
    never be `Cross-check`, `High-level understanding`, `Deep dive`, or any mandatory heading of §2.9.
-6. Three to six H3s per step page. More than six means the H3s are labelling paragraphs, not sections.
+6. At most six H3s. An H3 is added only over a passage of ≥ 120 words with its own subject, and its
+   title says what the passage shows. Do not use `What the public record shows` over era-typical or
+   "working figure" text, and never directly after a sentence that the passage continues
+   ("Precisely: …").
 
 **Example** — `docs/steps/006-stie.md:30`.
 
