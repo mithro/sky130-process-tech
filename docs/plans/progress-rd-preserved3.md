@@ -67,6 +67,10 @@ task (`docs/plans/agent-briefs.md`, `docs/plans/readability-guide.md` §7) — n
 * Item 3 (hedge list): reproduced the exact rd-categories.md finding H against `main`'s copy —
   "light doses of order 10^12-10^13 cm^-2" -> "10^12-10^13 cm^-2" reported **no failure at all**.
   Confirmed the fixed tool reports `LOST hedges: 'light'; 'of order'`.
+* Item 4 (`--allow-deduplicated`, brand new flag): four selftest cases cover the default (fails),
+  the flag on a materials page (warns, does not fail), the flag on a non-class page (still fails
+  -- condition c), and a real body-level loss alongside the quick-facts deletion (still fails --
+  condition b).
 
 ## Selftest
 

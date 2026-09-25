@@ -748,6 +748,84 @@ def compare_dropdowns(old_text: str, new_text: str) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# --allow-deduplicated (rd-materials.md review, "D1"): R-QUICKFACTS asks a
+# writer to delete a quick-facts cell's copy of a value that the body also
+# states, once it is checked to be there. The multiset check cannot tell
+# that apart from a real deletion by itself, so a blanket "ignore lost
+# quotes/markers/numbers" would hide a genuine loss (the review's own H1
+# finding, a body clause dropped outright). The patch is narrow instead.
+
+_CLASS_PAGE_RE = re.compile(r"(?:^|/)docs/(?:machines|materials)/[^/]+\.md$")
+
+
+def is_class_page(page_path: str) -> bool:
+    return bool(_CLASS_PAGE_RE.search(page_path.replace("\\", "/")))
+
+
+def _split_summary(text: str) -> tuple[str, str]:
+    """Split ``text`` at the first ATX H2 (``^## ``): (everything before
+    it -- the quick-facts table and any short intro above it -- and
+    everything from it onward -- the body)."""
+    m = re.search(r"^## ", text, re.MULTILINE)
+    if not m:
+        return text, ""
+    return text[: m.start()], text[m.start():]
+
+
+def check_deduplicated(
+    old_text: str, new_text: str, page_path: str,
+) -> dict[str, tuple[Counter, Counter, Counter, Counter]]:
+    """For a class page (``docs/machines/*.md``, ``docs/materials/*.md``
+    only -- condition (c) of the review's patch), the per-half (quick-
+    facts summary vs. body) counts of ``quotes``/``markers``/``numbers``
+    on both revisions. ``{}`` for any other page, so callers can treat
+    "not applicable" and "no losses to excuse" the same way.
+    """
+    if not is_class_page(page_path):
+        return {}
+    old_summary, old_body = _split_summary(old_text)
+    new_summary, new_body = _split_summary(new_text)
+    old_sum_cats = extract_all(old_summary)[0]
+    new_sum_cats = extract_all(new_summary)[0]
+    old_body_cats = extract_all(old_body)[0]
+    new_body_cats = extract_all(new_body)[0]
+    return {
+        cat: (old_sum_cats[cat], new_sum_cats[cat], old_body_cats[cat], new_body_cats[cat])
+        for cat in ("quotes", "markers", "numbers")
+    }
+
+
+def apply_deduplicated(
+    cat: str,
+    lost: Counter,
+    halves: dict[str, tuple[Counter, Counter, Counter, Counter]],
+) -> tuple[Counter, list[str]]:
+    """Downgrade each item of ``lost`` to a printed ``DEDUPLICATED``
+    warning when all three of the review's conditions hold: (a) the
+    item's count in the quick-facts summary decreased; (b) its count in
+    the body is unchanged, and (c) still >= 1 there. Everything else in
+    ``lost`` stays lost (a real, undeclarable loss)."""
+    if cat not in halves or not lost:
+        return lost, []
+    old_sum, new_sum, old_body, new_body = halves[cat]
+    still_lost: Counter = Counter()
+    info: list[str] = []
+    for item, n in lost.items():
+        if (
+            old_sum[item] > new_sum[item]
+            and old_body[item] == new_body[item]
+            and new_body[item] >= 1
+        ):
+            info.append(
+                f"DEDUPLICATED (--allow-deduplicated) {cat}: {item!r} removed "
+                "from the quick-facts table, unchanged in the body"
+            )
+        else:
+            still_lost[item] = n
+    return still_lost, info
+
+
+# ---------------------------------------------------------------------------
 # Diffing and reporting.
 
 
@@ -851,6 +929,7 @@ def diff_page(
     allow_dropdown_edits: bool = False,
     allow_regrouped: bool = False,
     page_path: str = "",
+    allow_deduplicated: bool = False,
 ) -> list[tuple[bool, str]]:
     """Return (is_failure, message) pairs; does not print anything."""
     results: list[tuple[bool, str]] = []
@@ -858,6 +937,7 @@ def diff_page(
     new, new_samples, new_stream, new_quote_warnings = extract_all(new_text, f"{page_path} (after)")
     for w in old_quote_warnings + new_quote_warnings:
         results.append((False, w))
+    dedup_halves = check_deduplicated(old_text, new_text, page_path) if allow_deduplicated else {}
     for cat in CATEGORIES:
         lost = old[cat] - new[cat]
         added = new[cat] - old[cat]
@@ -867,6 +947,10 @@ def diff_page(
                 lost, added, old_stream, new_stream, old_samples, new_samples,
             )
             for line in extra:
+                results.append((False, line))
+        if allow_deduplicated and lost:
+            lost, dedup_info = apply_deduplicated(cat, lost, dedup_halves)
+            for line in dedup_info:
                 results.append((False, line))
         if lost:
             results.append((True, f"LOST {cat}: {format_counter(lost, limit)}"))
@@ -1421,6 +1505,52 @@ def selftest() -> int:
         allow_dropdown_edits=True,
     )
 
+    # -- --allow-deduplicated (rd-materials.md review, "D1") -------------
+    _dedup_old = (
+        '# Wet chemicals\n\n| | |\n|---|---|\n'
+        '| **Example** | SkyWater filings say "some substance".[^skw-01] |\n\n'
+        '## Overview\n\n'
+        'Elsewhere, the filings say "some substance".[^skw-01] More text.\n\n'
+        '[^skw-01]: Source. <https://example.com/a>\n'
+    )
+    _dedup_new = (
+        '# Wet chemicals\n\n| | |\n|---|---|\n'
+        '| **Example** | See below.[^skw-01] |\n\n'
+        '## Overview\n\n'
+        'Elsewhere, the filings say "some substance".[^skw-01] More text.\n\n'
+        '[^skw-01]: Source. <https://example.com/a>\n'
+    )
+    case(
+        "a quick-facts cell's copy of a body quotation, deleted, fails "
+        "by default",
+        _dedup_old, _dedup_new, False, page_path="docs/materials/wet-chemicals.md",
+    )
+    case(
+        "the same deletion is a DEDUPLICATED warning, not a failure, "
+        "with --allow-deduplicated on a materials page",
+        _dedup_old, _dedup_new, True,
+        page_path="docs/materials/wet-chemicals.md", allow_deduplicated=True,
+    )
+    case(
+        "the same deletion still fails with --allow-deduplicated on a "
+        "page that is not a class page (condition c)",
+        _dedup_old, _dedup_new, False,
+        page_path="docs/steps/006-stie.md", allow_deduplicated=True,
+    )
+    case(
+        "a quotation lost from BOTH the quick-facts table and the body "
+        "still fails even with --allow-deduplicated (condition b: the "
+        "body count must be unchanged)",
+        _dedup_old,
+        '# Wet chemicals\n\n| | |\n|---|---|\n'
+        '| **Example** | See below.[^skw-01] |\n\n'
+        '## Overview\n\n'
+        'Elsewhere, the filings describe it.[^skw-01] More text.\n\n'
+        '[^skw-01]: Source. <https://example.com/a>\n',
+        False,
+        page_path="docs/materials/wet-chemicals.md", allow_deduplicated=True,
+    )
+
     if problems:
         for p in problems:
             print("SELFTEST FAIL:", p)
@@ -1454,6 +1584,16 @@ def main() -> int:
         help=(
             "downgrade a number_order LOST to a warning when it is a clean regroup of the "
             "same digits (review T1); see check_regrouped's docstring for the four conditions"
+        ),
+    )
+    ap.add_argument(
+        "--allow-deduplicated",
+        action="store_true",
+        help=(
+            "on docs/machines/*.md and docs/materials/*.md only: downgrade a LOST in quotes, "
+            "markers or numbers to a warning when it disappeared from the quick-facts table "
+            "(before the first H2) but is unchanged, and still present, in the body "
+            "(rd-materials.md review D1)"
         ),
     )
     ap.add_argument("--selftest", action="store_true", help="run the offline self-test and exit")
@@ -1491,7 +1631,7 @@ def main() -> int:
         checked += 1
         results = diff_page(
             old_text, new_text, allowed, args.allow_dropdown_edits, args.allow_regrouped,
-            page_path=rel,
+            page_path=rel, allow_deduplicated=args.allow_deduplicated,
         )
         page_failed = False
         for is_fail, msg in results:
