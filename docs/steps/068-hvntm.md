@@ -10,14 +10,30 @@
 | **Previous step** | {ref}`ASTIS <step-067>` |
 | **Next step** | {ref}`HVASTI <step-069>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** patterns a thin resist that opens the high-voltage NMOS for
+  their graded-drain tip implant `HVASTI`.
+* **Why:** a 5 V NMOS cannot use the 1.8 V tip; it needs a lightly doped,
+  graded drain extension.
+* **Public numbers:** 0.3 µm resist, a 40° tip angle with a 23° twist and
+  a 0.232 µm "HVNTM shadowing".[^pdk-03]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (tools); inference (assignment).[^skw-01]
+* **Not public:** the resist chemistry, how "the CL" is derived, and the
+  exposure tool (→ Open questions).
+:::
+
 ## What this step is
 
 `HVNTM` is the second tip mask of the module. On the surface cleaned at
 {ref}`ASTIS <step-067>` it patterns a resist that exposes the
-*high-voltage* NMOS transistors — those built on the 110 Å thick gate
-oxide inside the `hvi` regions[^pdk-hv] — and covers everything else,
-so that the arsenic implant {ref}`HVASTI <step-069>` forms their
-lightly doped, graded drain {term}`extension`. The resist is removed at
+*high-voltage* NMOS transistors and covers everything else, so that the
+arsenic implant {ref}`HVASTI <step-069>` forms their lightly doped,
+graded drain {term}`extension`. These transistors are those built on
+the 110 Å thick gate oxide inside the `hvi` regions.[^pdk-hv] The
+resist is removed at
 {ref}`HVASTIS <step-070>`.
 
 :::{figure} /_static/figures/sd-068-hvntm.svg
@@ -28,84 +44,113 @@ lightly doped, graded drain {term}`extension`. The resist is removed at
 Before, the wafer cleaned at ASTIS; after, the thin HVNTM resist, open over the 5 V NMOS area on the left (the thick-oxide devices) and covering the field, the resistor and the 1.8 V NMOS. The resist is drawn as a thin film that follows the gate and resistor stacks, because the PDK's "Photoresist thickness for HV Tip Implants" is 0.3 µm, against 1.14 µm for the standard resist,[^pdk-03] less than the stacks it covers; neither thickness is drawn to scale. The 5 V area has no gate in this slice. The resist edge is drawn on the field oxide; the 0.232 µm "HVNTM shadowing" allowance[^pdk-03] is not drawn to scale. The tip's colour marks where the implant is, not its profile. The halo, the caps, the gate oxides and the re-oxidation oxide are drawn but not labelled, nor is the field oxide (the oxide-filled trench in the middle); the liner oxide is drawn faded, and the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel the p-type resistor body and the n-type tip under the thin resist are not labelled. Not to scale.
 :::
 
-The PDK lists "High Volt. N-tip, HVNTM" as a mask used in
-SKY130.[^pdk-05] Unlike the standard tip, this one has a designer-drawn
-layer, `hvntm` (GDS 125:20, "High voltage N-tip implant"), and a
-generated mask layer `chvntm` (39:0, "High voltage N-tip implant
-mask") with a drawing purpose at 38:20.[^pdk-06] Its design rules are
-headed "Defines tip implants for the HV NMOS" and begin with "Hvntm can
-be drawn inside HVI. Drawn layer will be OR-ed with the CL and
-rechecked for CLDRC" — which we read as: the {term}`reticle` is the
-union of what the designer draws and a computed layer (the PDK does not
-expand "CL").[^pdk-periph] The rules are coarse:
-width 0.700 µm (hvntm.1), spacing 0.700 µm (hvntm.2), enclosure of n⁺
-diffusion inside `hvi` by 0.185 µm (hvntm.3), a 0.185 µm space to n⁺
-diffusion outside `hvi` and to p⁺ diffusion (hvntm.4, hvntm.5), "Hvntm
-must overlap hvi" (hvntm.10) and "Hvntm must not overlap areaid.ce"
-(hvntm.9), i.e. it is kept out of the SRAM core.[^pdk-periph]
+### What the public record shows
 
-The PDK's assumptions page is unusually explicit about this mask. Its
-implant-angle table gives "Angle for HV tip implant" 40° and "Twist
-angle for HV Tip" 23°; its physical-criteria table gives "Photoresist
-thickness for HV Tip Implants" 0.3 µm (against 1.14 µm for the standard
-resist), "HVNTM shadowing" 0.232 µm and "Min width of tip implant
-opening" 0.1 µm; and its high-voltage table gives "Photoresist tilted
-implant penetration" 0.02 µm, "Photoresist tilted implant blocking
-distance" 0.013 µm, "Min size of HVTip" 0.1 µm and an "Extra CD tol for
-HVNTM" of 0.015 µm.[^pdk-03] These numbers are mutually consistent: a
-0.3 µm resist wall {term}`shadows <shadowing>` a 40° beam for 0.3 µm × tan 40° ≈ 0.25 µm,
-which less the 0.02 µm the beam penetrates at the resist edge gives
-the 0.232 µm figure (our arithmetic). We therefore read `HVNTM` as a
-*thin-resist* mask for a *large-tilt* implant.
+**Mask and layers.** The PDK lists "High Volt. N-tip, HVNTM" as a mask used
+in SKY130.[^pdk-05] Unlike the standard tip, this one has a designer-drawn
+layer, `hvntm` (GDS 125:20, "High voltage N-tip implant"), and a generated
+mask layer `chvntm` (39:0, "High voltage N-tip implant mask") with a drawing
+purpose at 38:20.[^pdk-06]
+
+**Design rules.** The layer's design rules are headed "Defines tip
+implants for the HV NMOS" and begin with "Hvntm can be drawn inside HVI.
+Drawn layer will be OR-ed with the CL and rechecked for
+CLDRC".[^pdk-periph] We read this as: the {term}`reticle` is the union
+of what the designer draws and a computed layer (the PDK does not
+expand "CL").[^pdk-periph] The rules are coarse:[^pdk-periph]
+
+| Rule | Constrains | Value (µm) |
+|---|---|---:|
+| hvntm.1 | width | 0.700 |
+| hvntm.2 | spacing | 0.700 |
+| hvntm.3 | enclosure of n⁺ diffusion inside `hvi` | 0.185 |
+| hvntm.4, hvntm.5 | space to n⁺ diffusion outside `hvi` and to p⁺ diffusion | 0.185 |
+| hvntm.10 | "Hvntm must overlap hvi" | — |
+| hvntm.9 | "Hvntm must not overlap areaid.ce", i.e. it is kept out of the SRAM core | — |
+
+**Assumptions page.** The PDK's assumptions page is unusually explicit
+about this mask. Its tables give:[^pdk-03]
+
+| Table | Entry, as quoted | Value |
+|---|---|---:|
+| implant-angle | "Angle for HV tip implant" | 40° |
+| | "Twist angle for HV Tip" | 23° |
+| physical-criteria | "Photoresist thickness for HV Tip Implants" | 0.3 µm (against 1.14 µm for the standard resist) |
+| | "HVNTM shadowing" | 0.232 µm |
+| | "Min width of tip implant opening" | 0.1 µm |
+| high-voltage | "Photoresist tilted implant penetration" | 0.02 µm |
+| | "Photoresist tilted implant blocking distance" | 0.013 µm |
+| | "Min size of HVTip" | 0.1 µm |
+| | "Extra CD tol for HVNTM" | 0.015 µm |
+
+These numbers are mutually consistent:
+
+1. A 0.3 µm resist wall {term}`shadows <shadowing>` a 40° beam for
+   0.3 µm × tan 40° ≈ **0.25 µm**.
+2. That, less the 0.02 µm the beam penetrates at the resist edge, gives
+   the **0.232 µm** figure.
+
+(Our arithmetic.) We therefore read `HVNTM` as a *thin-resist* mask for
+a *large-tilt* implant.
 
 ## Step category
 
 `HVNTM` is a {ref}`Photolithography (mask step) <category-lithography>`
-step of the *implant-block* type, with a twist: the resist is about a
-quarter of the usual thickness,[^pdk-03] because the implant it admits
-arrives at 40° and a tall resist wall would shadow the gate edges it
-is meant to reach. Thin resist is easier to image but must still stop
-the implant everywhere else; at the tens of keV of an LDD-type arsenic
-implant (typical),[^txt-04] 0.3 µm of resist is ample (the projected
-range of arsenic at such energies is a few tens of nanometres in
-resist-like materials).[^txt-01]
+step of the *implant-block* type, with a twist.
+
+**Specific to this step:**
+
+* The resist is about a quarter of the usual thickness,[^pdk-03]
+  because the implant it admits arrives at 40° and a tall resist wall
+  would shadow the gate edges it is meant to reach.
+* Thin resist is easier to image but must still stop the implant everywhere
+  else. At the tens of keV of an LDD-type arsenic implant
+  (typical),[^txt-04] 0.3 µm of resist is ample (the projected range of
+  arsenic at such energies is a few tens of nanometres in resist-like
+  materials).[^txt-01]
 
 ## Why this step exists
 
-A 5 V NMOS cannot use the 1.8 V tip. The extension of
-{ref}`ASTI <step-065>` is shallow, abrupt and heavily doped for drive
-current at 0.15 µm; at 5.5 V on the drain such a junction would put the
-peak lateral field at the gate edge and generate hot carriers at a rate
-that destroys the device in hours — the degradation Hu and co-workers
-modelled and showed how to monitor.[^hu-1985-hci] The classical remedies
-are the lightly doped drain,[^ogura-1980] the double-diffused
-drain[^takeda-1982] and, most relevant here, the *large-angle-tilt
-implanted drain* ({term}`LATID`) of Hori, in which a tilted n⁻ implant is
-driven under the gate edge so that the drain field is graded and
-overlapped by the gate;[^hori-1989-latid][^hori-1992] Rafí and Campabadal
-compared the hot-carrier behaviour of {term}`LDD` and LATID
-devices directly.[^rafi-2001] The PDK's 40° HV tip angle[^pdk-03] is
-the signature of exactly this kind of drain, and the PDK's Table F2b
-marks `HVNTM` "created" for `nfet_g5v0d10v5`, the ESD NMOS built on it,
-the 5 V and 3.3 V native NMOS, the 16 V drain-extended NMOS, four HV
-diodes, an HV n-diffusion resistor and an HV varactor,[^pdk-06] so this is where those
-devices' n-type extension is defined; how the implant is placed
-relative to a drain-extended device's drift well is not stated. The
-{term}`drain-extended <DEMOS>` 20 V
-NMOS, which shares the 110 Å oxide,[^pdk-hv] uses an N-well {term}`drift region`
-as its drain extension[^pdk-hv][^mitros-2001] and Table F2b marks it "-"
-("Layer not created for the device"), so it does not take this tip; the
-PDK's rule that `hvntm`
-"must enclose ESD_nwell_tap inside hvi" (hvntm.7)[^pdk-periph] shows
+A 5 V NMOS cannot use the 1.8 V tip. The extension of {ref}`ASTI <step-065>`
+is shallow, abrupt and heavily doped for drive current at 0.15 µm. At 5.5 V
+on the drain such a junction would put the peak lateral field at the gate
+edge and generate hot carriers at a rate that destroys the device in hours —
+the degradation Hu and co-workers modelled and showed how to
+monitor.[^hu-1985-hci]
+
+The classical remedies are:
+
+* the lightly doped drain;[^ogura-1980]
+* the double-diffused drain;[^takeda-1982]
+* most relevant here, the *large-angle-tilt implanted drain*
+  ({term}`LATID`) of Hori, in which a tilted n⁻ implant is driven under
+  the gate edge so that the drain field is graded and overlapped by the
+  gate.[^hori-1989-latid][^hori-1992]
+
+Rafí and Campabadal compared the hot-carrier behaviour of {term}`LDD`
+and LATID devices directly.[^rafi-2001]
+
+The PDK's 40° HV tip angle[^pdk-03] is the signature of exactly this
+kind of drain. The PDK's Table F2b marks `HVNTM` "created" for
+`nfet_g5v0d10v5`, the ESD NMOS built on it, the 5 V and 3.3 V native
+NMOS, the 16 V drain-extended NMOS, four HV diodes, an HV n-diffusion
+resistor and an HV varactor.[^pdk-06] So this is where those devices'
+n-type extension is defined. How the implant is placed relative to a
+drain-extended device's drift well is not stated.
+
+The {term}`drain-extended <DEMOS>` 20 V NMOS, which shares the 110 Å
+oxide,[^pdk-hv] uses an N-well {term}`drift region` as its drain
+extension[^pdk-hv][^mitros-2001] and Table F2b marks it "-" ("Layer not
+created for the device"), so it does not take this tip. The PDK's rule that
+`hvntm` "must enclose ESD_nwell_tap inside hvi" (hvntm.7)[^pdk-periph] shows
 that the layer is used on more than plain transistors.
 
 Cypress, which the PDK says developed the technology SKY130 comes
-from,[^pdk-02] patented
-a "high-voltage device with self-aligned graded junctions" in a CMOS
-flow;[^pat-hv-graded-cyp] the patent's inventor is also a named
-inventor on the embedded-SONOS patent used throughout this reference,
-which is circumstantial evidence that a graded-junction HV device of
-this kind belongs to the same process lineage — we state it as no more
+from,[^pdk-02] patented a "high-voltage device with self-aligned graded
+junctions" in a CMOS flow.[^pat-hv-graded-cyp] The patent's inventor is also
+a named inventor on the embedded-SONOS patent used throughout this
+reference, which is circumstantial evidence that a graded-junction HV device
+of this kind belongs to the same process lineage — we state it as no more
 than that.
 
 Without `HVNTM`, the 5 V transistors would either take the 1.8 V tip
@@ -114,19 +159,20 @@ under the {term}`spacer` between channel and n⁺ drain.
 
 ## How it is typically performed
 
-An industry-generic thin-resist implant-mask sequence for a 200 mm,
-130 nm-era fab:
+*An industry-generic thin-resist implant-mask sequence for a 200 mm,
+130 nm-era fab:*
 
 1. **Surface preparation.** Dehydration bake and {term}`HMDS` prime on the
    screen-oxide surface left by {ref}`ASTIS <step-067>`.
 2. **Resist coat.** A thin positive resist — the PDK's 0.3 µm
    "Photoresist thickness for HV Tip Implants"[^pdk-03] — spun at a
-   speed and dilution chosen for that thickness. A thin film conforms
-   more closely to the 0.18 µm poly steps,[^pdk-03] which reduces
-   resist pooling beside gates, but is more prone to pinholes and to
-   reflective notching; the PDK's "Photoresist tilted implant
-   penetration" of 0.02 µm[^pdk-03] acknowledges that the resist edge
-   is not a perfect wall to a 40° beam.
+   speed and dilution chosen for that thickness.
+
+   A thin film conforms more closely to the 0.18 µm poly steps,[^pdk-03]
+   which reduces resist pooling beside gates, but is more prone to pinholes
+   and to reflective notching. The PDK's "Photoresist tilted implant
+   penetration" of 0.02 µm[^pdk-03] acknowledges that the resist edge is not
+   a perfect wall to a 40° beam.
 3. **Exposure.** The 0.7 µm width and space rules[^pdk-periph] are far
    above i-line resolution ({term}`k₁ <k1>` ≈ 1.2 at {term}`NA` 0.6);[^wiki-litho] with older
    exposure tools migrating, in ASML's words, "to the lithography of
@@ -154,14 +200,16 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / i-line scanner.** SkyWater lists "ASML I-line
-  stepper" and "ASML I-line scanner".[^skw-01] Strength: **strong** for
-  the tools; **inference** for the assignment of `HVNTM` to them.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01] Strength:
-  strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / i-line scanner**
+  - *SkyWater says:* lists "ASML I-line stepper" and "ASML I-line
+    scanner".[^skw-01]
+  - *Tool exists:* **strong** for the tools.
+  - *Runs this step:* **inference** for the assignment of `HVNTM` to them.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -180,12 +228,12 @@ An industry-generic thin-resist implant-mask sequence for a 200 mm,
   (`hvi`) and oxidised at {ref}`GOX100 <step-043>`.
 * Next: {ref}`HVASTI <step-069>` (the 40° arsenic implant), then
   {ref}`HVASTIS <step-070>` (strip).
-* Sibling tip masks: {ref}`NTM <step-064>` (1.8 V NMOS),
+* Same module: sibling tip masks {ref}`NTM <step-064>` (1.8 V NMOS),
   {ref}`LDNTM <step-071>` ({term}`SONOS` transistors).
 * The drain-extended devices' N-well drift regions:
   {ref}`NWM <step-017>`, {ref}`PWDEM <step-030>`; activation:
   {ref}`TIPRTAD <step-075>`.
-* Mask page: {ref}`HVNTM <mask-hvntm>` — the mask's layers, plates,
+* Mask: {ref}`HVNTM <mask-hvntm>` — the mask's layers, plates,
   renders and design rules.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
@@ -275,27 +323,31 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* Table F2b marks `HVNTM` "C (CREATED)" on the 5/10.5 V NMOS, the 5 V
-  and 3 V native NMOS, the 16 V drain-extended NMOS, the HV and HV
-  native ESD NMOS, the HV n-diffusion resistor, the HV varactor and
-  four n-type diodes, and "-" ("Layer not created for the device") on
-  every PMOS row and on all five UHV 5/20 V rows;[^pdk-06] see the
-  {ref}`HVNTM mask page <mask-hvntm>`. What the table does not say is
+* **20 V devices excluded.** Table F2b marks `HVNTM`:[^pdk-06]
+  - "C (CREATED)" on the 5/10.5 V NMOS, the 5 V and 3 V native NMOS, the
+    16 V drain-extended NMOS, the HV and HV native ESD NMOS, the HV
+    n-diffusion resistor, the HV varactor and four n-type diodes;
+  - "-" ("Layer not created for the device") on every PMOS row and on
+    all five UHV 5/20 V rows.
+
+  See the {ref}`HVNTM mask page <mask-hvntm>`. What the table does not say is
   why the 20 V devices are excluded, or on which side of a
   drain-extended device the implant lands.
-* The resist chemistry used at 0.3 µm (an i-line resist thinned, or a
-  dedicated thin-film product) is not public.
-* Whether "the CL" (read here as a computed layer) OR-ed with the drawn
-  `hvntm`[^pdk-periph]
-  is derived from `hvi` and `nsdm`, as we assume, is not stated in the
-  periphery rules or on the Error Messages page; the latter's checks on
-  an undefined `CLHVNTM` layer, such as "0.185 Min Enclosure of ndiff
-  inside hvi by chvntm" (`chvntm.3`) and "0.7 min. width of CLHVNTM"
-  (`chvntm.1`), state what the layer must cover and its width and
-  spacing, not the operation that makes it; the
-  {ref}`HVNTM mask page <mask-hvntm>` reads them.[^pdk-errors]
-* No public source places `HVNTM` on a particular exposure tool; the
-  i-line assignment follows from the 0.7 µm rules.
+* **Resist chemistry.** The resist chemistry used at 0.3 µm (an i-line
+  resist thinned, or a dedicated thin-film product) is not public.
+* **How "the CL" is derived.** Whether "the CL" (read here as a computed
+  layer) OR-ed with the drawn `hvntm`[^pdk-periph] is derived from `hvi`
+  and `nsdm`, as we assume, is not stated in the periphery rules or on
+  the Error Messages page.
+
+  The Error Messages page's checks on an undefined `CLHVNTM` layer, such
+  as "0.185 Min Enclosure of ndiff inside hvi by chvntm" (`chvntm.3`)
+  and "0.7 min. width of CLHVNTM" (`chvntm.1`), state what the layer
+  must cover and its width and spacing, not the operation that makes
+  it.[^pdk-errors] The {ref}`HVNTM mask page <mask-hvntm>` reads
+  them.[^pdk-errors]
+* **Exposure tool.** No public source places `HVNTM` on a particular
+  exposure tool; the i-line assignment follows from the 0.7 µm rules.
 
 <!-- footnotes -->
 

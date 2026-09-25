@@ -300,3 +300,76 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   "popping" account; the flakes sentence; "The cool stage runs until …", which follows three quotation
   markers in the base and had none of its own; SPM / SC-1); glance and label lines.
 * **Caps**: para > 100 3 → 0; item > 60 2 → 0; sentence > 45 6 → 0.
+
+### 068 HVNTM — done
+
+* **Lead.** The 48-word second sentence: its dash pair "— those built on the 110 Å thick gate oxide
+  inside the `hvi` regions[^pdk-hv] —" becomes the following sentence "These transistors are those
+  built on …[^pdk-hv]" (R-SENTENCE step 1; subject + verb added), marker with its clause. Lead 72 words;
+  first sentence 9 words.
+* **R-H3.** `### What the public record shows` after the figure caption, over the PDK mask, layer,
+  rule and assumptions-page evidence (≈ 310 words, mostly public record, ending in "our arithmetic"
+  and "we therefore read", as R-H3 step 6 allows).
+* **R-PARA.** The 164-word paragraph split into "**Mask and layers.**" and "**Design rules.**" ("Its
+  design rules" → "The layer's design rules", R-PARA step 5); the assumptions paragraph labelled
+  "**Assumptions page.**" (evidence sequence, R-PARA step 3).
+* **R-SENTENCE.** "… begin with "Hvntm can be drawn … CLDRC" — which we read as: …" split at the dash:
+  "We read this as: …" ("which" → "this"); `[^pdk-periph]` **repeated** after the quotation, which it
+  covered in the base (declared).
+* **R-TABLE (design rules).** "The rules are coarse: width 0.700 µm (hvntm.1), … i.e. it is kept out of
+  the SRAM core.[^pdk-periph]" → `Rule | Constrains | Value (µm)`, six rows in the base order, rule ids
+  bare as the page writes them, the two quoted rules in the Constrains cell with `—` for the value,
+  "i.e. it is kept out of the SRAM core" kept in hvntm.9's cell; `[^pdk-periph]` on the lead-in before
+  the colon (R-TABLE step 3). Words dropped only where the cell structure replaces them ("by" before
+  0.185 µm, "a … space" → "space"). Pairings checked: hvntm.1 width 0.700; hvntm.2 spacing 0.700;
+  hvntm.3 enclosure 0.185; hvntm.4, hvntm.5 space 0.185; hvntm.10, hvntm.9 quoted.
+* **R-TABLE (assumptions page).** The 83-word sentence listing nine entries from three PDK tables →
+  `Table | Entry, as quoted | Value`, one row per entry in the base order, the table name on its first
+  row (R-TABLE step 2), units per cell because the entries mix degrees and micrometres (R-TABLE step 4),
+  "(against 1.14 µm for the standard resist)" kept in its row. Lead-in "Its tables give:[^pdk-03]"
+  (the marker, which ended the enumerating sentence, before the colon).
+* **R-DERIVATION.** "These numbers are mutually consistent: a 0.3 µm resist wall shadows a 40° beam for
+  0.3 µm × tan 40° ≈ 0.25 µm, which less the 0.02 µm … gives the 0.232 µm figure (our arithmetic)."
+  → a two-line numbered list, the page's own words per line, results in bold; "(Our arithmetic.)"
+  closed as its own sentence after the list, then "We therefore read …" unchanged. The inputs are the
+  table just above, so no second input table. No H3: the derivation is about 60 words, and R-H3 step 6
+  allows an H3 only over ≥ 120 (see Guide problems). Arithmetic checked: 0.3 × tan 40° = 0.252 ≈ 0.25;
+  0.252 − 0.02 = 0.232 ✓.
+* **R-CATEGORY.** Classification sentence (47 w) split at its colon ("… type, with a twist." / "The resist
+  is about a quarter …"); the remaining statements are about this step → `**Specific to this step:**`,
+  two bullets; the second split at its semicolon.
+* **R-PARA / R-SENTENCE / R-LIST (Why).** The 270-word paragraph split into five: the 1.8 V tip and hot
+  carriers (its 60-word sentence split at the semicolon); "The classical remedies are:" → three plain
+  bullets, each with its own marker (R-LIST; "and," dropped; no labels, batch-4 ruling); Rafí and
+  Campabadal as prose after the list; the 40° angle and Table F2b (the 80-word sentence split into
+  three: "…signature of exactly this kind of drain." / "The PDK's Table F2b marks …[^pdk-06]" / "So this
+  is where …" / "How the implant is placed … is not stated."); the 20 V NMOS and hvntm.7 (split at the
+  semicolon). The Cypress sentence (66 w) split at its semicolon.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4.** "Resist coat" (80 w): continuation from "A thin film conforms …", split at its
+  semicolon.
+* **R-TOOLS.** As 064 (*SkyWater says:* "lists …", verb-first); three tools, no recap table.
+* **R-RELATED.** "Sibling tip masks:" → "Same module: sibling tip masks …"; "Mask page:" → "Mask:".
+* **R-OPENQ.** "20 V devices excluded" (93 w): the Table F2b lists as two sub-bullets, `[^pdk-06]` on the
+  lead-in before the colon (it ended the enumeration), "See the HVNTM mask page. What the table does not
+  say …" as the continuation, in the base order. "How "the CL" is derived" (87 w): split at its first
+  semicolon; the continuation "The Error Messages page's checks …" ("the latter's" → the noun) and
+  "The HVNTM mask page reads them.", `[^pdk-errors]` **repeated** on the checks sentence (declared).
+  Labels "Resist chemistry", "Exposure tool" on the other two; text unchanged.
+* **R-REPEAT not applied.** `repeat.py` finds a 10-word run shared by Why and Open questions (the Table
+  F2b device list). The two lists are not the same sentence and differ (see Content problems: "3.3 V
+  native" in Why, "3 V native" in Open questions); both kept.
+* **R-GLANCE.** Does/Why without numbers (a number would need its marker); Public numbers 0.3 µm, 40°,
+  23°, 0.232 µm `[^pdk-03]`; tool line; Not public from Open questions 2–4.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-periph`, `pdk-errors` (repeats above),
+  `pdk-03`, `skw-01` (glance); numbers 0.232, 0.3, 23, 40, 1.8, 5 (glance), 20 (the OQ label, from the
+  bullet's "20 V devices"); quotes "HVNTM shadowing" (glance), "the CL"×2 (glance and the OQ label, the
+  bullet's own words); hedges "inference", "not public" (glance). **LOST `number_order`**: the rule
+  sentence, now six rows with the rule id first; pairings checked above. Declared
+  `--allow-added markers,numbers,quotes,hedges,number_order`; the LOST line is the only one left.
+* **Marker coverage.** 24 flags, all read: split halves whose base marker sat on another clause (the
+  1.8 V tip / Hu; the remedies / Rafí; F2b / "So this is where …" and "How the implant is placed …",
+  which had no marker of their own in the base; the 20 V NMOS / hvntm.7; Cypress / the inventor); the
+  derivation lines ("our arithmetic" now closes the list); glance and label lines.
+* **Caps**: para > 100 3 → 0; item > 60 3 → 0; sentence > 45 13 → 1. Left: "The Error Messages page's
+  checks …" in Open questions (46 w; two quoted checks).
