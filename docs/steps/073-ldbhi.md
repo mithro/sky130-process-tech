@@ -136,8 +136,8 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):*
   halo; the twist, the {term}`screen oxide` and the tilt itself are the
   countermeasures.[^wiki-implant]
 
-  Its damage is sub-amorphising point defects, the "+1" interstitials that
-  drive transient enhanced diffusion of the boron itself during the
+  The halo's damage is sub-amorphising point defects, the "+1" interstitials
+  that drive transient enhanced diffusion of the boron itself during the
   anneal,[^eaglesham-1994] which is why a fast, hot
   {ref}`TIPRTAD <step-075>` matters as much here as for the logic
   halo.[^stolk-1997][^agarwal-1999]

@@ -149,12 +149,12 @@ fab (SKY130's energy and dose are not public):*
   edge.
 
   Outgassing scales with the volume of resist exposed to the beam, so a
-  0.3 µm film outgasses less than the standard 1.14 µm one[^pdk-03]
-  (inference). Lee and co-workers characterised it for thick resist
-  under MeV implantation.[^lee-1996] Charging is likewise reduced with
-  less resist volume, but an electron shower and electrostatic chuck
-  ("ESC chuck, E shower" on SkyWater's medium-current tool) are, we
-  infer, still used.[^skw-01] Platen cooling is industry practice.
+  0.3 µm film outgasses less than the standard 1.14 µm one[^pdk-03] (inference).
+  Lee and co-workers characterised resist outgassing for thick resist under
+  MeV implantation.[^lee-1996] Charging is likewise reduced with less resist
+  volume, but an electron shower and electrostatic chuck ("ESC chuck, E
+  shower" on SkyWater's medium-current tool) are, we infer, still
+  used.[^skw-01] Platen cooling is industry practice.
 * **Anneal.** None here; activation at {ref}`TIPRTAD <step-075>`.
 * **Monitoring.** Thermal-wave measurement on monitor
   wafers;[^smith-1985] tilt-angle verification is the specific control

@@ -799,3 +799,12 @@ sentence), each checked by hand in its page entry; no `{dropdown}` line on any p
 6. **R-OPENQ step 2 when the question comes last.** The Table F2b bullets on 068/069 give the evidence
    first and the question last; the batch kept that order (label, evidence as sub-bullets, question in
    the continuation) rather than moving the question into the lead.
+
+## Review fix round (review `rd-steps-064-075`, 2026-09-26: 0 High, 1 Medium, 9 Low)
+
+One commit each.
+
+* **M1.** Pronouns given their nouns back (R-PARA step 5): 073 "Its damage" → "The halo's damage" (under
+  **Channelling.** the pronoun read as channelling's); 075 "Its rule Xj" → "The roadmap's rule Xj"; 069
+  "characterised it" → "characterised resist outgassing" (after the Lee dash pair moved, "it" pointed at
+  the resist film). Paragraphs re-wrapped; `check_preserved` output unchanged on all three pages.
