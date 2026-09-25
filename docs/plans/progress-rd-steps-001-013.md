@@ -570,6 +570,12 @@ sweep above:
 The paragraph and list-item caps are fully cleared; the table and H3 counts show the guide's
 rules being applied, not just prose being reworded in place.
 
+**Correction (review finding M5, added in Phase 2 below): the two claims above are measured
+against this writer's own ad-hoc thresholds (paragraph ≥120, item ≥80, sentence ≥60), not the
+guide's own §1 caps (paragraph > 100, item > 60, sentence > 45). They are not wrong as stated,
+but they are the wrong yardstick, and reading them as "the guide's caps are met" is a mistake —
+see "Batch measurement against the guide's own §1 caps" under Phase 2 for the corrected count.**
+
 ## Summary
 
 Thirteen step pages (001-smat.md through 013-ns19.md) rewritten for presentation only, one commit
@@ -590,3 +596,165 @@ per-page-versus-whole-batch measurement gap). Several genuine preservation slips
 requoted source text, a misplaced footnote marker) were caught by `check_preserved.py` or by
 rereading the diff before committing, and fixed before any commit landed — none reached the
 branch tip uncorrected.
+
+## Phase 2: independent review response (`tmp/reviews/rd-steps-001-013.md`)
+
+An independent review ("approve with fixes") found five Never-list breaches (H1–H5), nine Medium
+findings (M1–M9) and eight Low findings (L1–L8), ruled on the nine "Guide problems" recorded
+above (D1–D9), added eight more guide fixes the writer had not raised (D-new-1…8), and ruled on
+the three `check_preserved.py` issues (T1–T3). Two items were left to the coordinator: M4/D-new-2
+(the scope-sentence Note) and M9 (glance-box font size). The coordinator's rulings: (a) drop the
+Note, use an italic lead-in, word for word, on all 13 pages; (b) fix M9 in the theme CSS, not
+per page. This section records what was done in response, commit by commit (`git log
+--oneline ed7d21c8..HEAD`, thirteen page commits plus the CSS commit).
+
+### High and Medium findings — fixed
+
+* **H1** (001-smat.md): the wafers bullet is back in its original prose form and out of the
+  R-TOOLS recap table (D4); the Cypress product-change notice is no longer filed as "SkyWater
+  says". The recap table itself is removed — with the wafers bullet excluded, only three machines
+  remain, under R-TOOLS step 5's four-tool threshold.
+* **H2** (001-smat.md): the body-doping estimate is back in Open questions as it was at
+  `ee3a94ee`, with its two indirect figures as two sub-bullets; the second figure's 130-word
+  sentence is further split into a lead plus three nested sub-bullets (still "two sub-bullets" at
+  the outer level) so every item clears the 60-word cap. The invented H3, its input table and the
+  two-step "derivation" (no arithmetic in it) are deleted.
+* **H3** (004-fom.md): "Tightest isolation width" → "Sets the isolation width".
+* **H4** (006-stie.md): derivation step 3 restored to the guide's own worked-example wording,
+  "The two are equal, so the drawing shows no field-oxide step, and …".
+* **H5**: 001-smat.md's glance box now says "725 µm standard 200 mm thickness (Wikipedia)";
+  005-stinite.md's says "none for SKY130; typical … 100–300 nm/min" (selectivity clause dropped,
+  per the review's own fix text); 002-box.md's says "is part of the deep N-well implant screen".
+* **M1** (7 pages: 002, 003, 005, 006, 009, 011, 012): "Same module:" → "Same category:".
+* **M2** (4 pages: 001, 004, 007, 008): the enumerating-sentence marker moves off the last
+  item/row and back onto the lead-in sentence or the table's header cell (D-new-4).
+* **M3** (007-dnm.md, 008-dni.md): the five-column RSDNW table becomes three columns (Resistor
+  A/B, Squares, Measured); PDK nominal and Limits, identical in both rows, move to the lead-in
+  sentence (D8's "not a column" rule). Letters, not digits, label the two resistors so the fix
+  adds no new number.
+* **M4/D-new-2**: all 13 pages now use the italic lead-in (`*An industry-generic … :*`) under
+  "How it is typically performed" — converted from `:::{note}` on 002, 003, 007, 008, 010, 011,
+  012, 013, and added fresh (it was missing) on 004, 005, 006, 009.
+* **M5**: the two writer-introduced over-cap sentences are fixed. `001-smat.md`'s no longer
+  exists as a single sentence — H2's restore-and-split removed it. `004-fom.md`'s "This holds
+  even though …" is removed; the split now falls at the source text's own comma-to-colon
+  boundary, giving 28- and 41-word sentences with no invented clause (D-new-6).
+* **M6**: `004-fom.md`'s die-shot bullet gets `Evidence:`; its invented "Next mask step:" becomes
+  `Mask:`. `007-dnm.md`'s invented "Previous mask:"/"Mask page:" both become `Mask:` (D5).
+* **M7** (011-filox.md): the orphaned parenthetical is capitalised and closed as its own line
+  directly under the table.
+* **M8** (001-smat.md): "Likely SkyWater tool" now names the DNS/FSI Mercury wet bench instead of
+  the two wafer suppliers.
+* **M9**: fixed in `docs/_static/custom.css` (`.admonition.at-a-glance{,p,li}{font-size:
+  var(--font-size--normal)}`), scoped to the `:class: at-a-glance` line now on every glance box,
+  so no other admonition on the site changes size. Checked in the rendered `-W` build at desktop
+  and a 400 px viewport (see "Rendered checks" below).
+
+### Low findings
+
+Fixed: L4 (001, 003 — dropped the redundant "Specific to this step:" label over a sentence that
+already opens "What is specific to … is that …", and the single-bullet "Specific to this step:"
+list on 005 that only pointed at other steps, per D3 ruling 3); L1's `010-linox.md:88` connective
+start ("So the sharp top corner…" → "The sharp top corner … is thereby rounded", D-new-6, which
+also fixes the "even though … even though" stutter on 004 as a side effect of the M5 fix); L6's
+`006-stie.md` input table (unit moved from every cell to the "Value (µm)" header); L8
+(`012-cmpnit.md`'s self-contradicting "Public numbers" bullet). Also fixed, though not formally
+numbered in the review: the at-a-glance audit's `010-linox.md` "comparable flows use 10–30 nm at
+900–1100 °C" (reworded to attribute the figures to third-party patents, not one flow).
+
+Left as they are, with reasons: L2 (the R-TOOLS template's "it lists it"/"it names it" pronoun
+issue is a template-wide problem the guide itself doesn't fix in this ruling round — D4 fixes the
+non-tool-bullet case but not the pronoun grammar — so no page-level workaround was invented; a
+real fix belongs in the guide's R-TOOLS template, for a future pass); L3 (grades filed under
+"Runs this step:"/"Tool exists:" on 005 and 012 are pre-existing R-TOOLS-template output, not
+changed by this pass, and reclassifying them touches the model's own reasoning, not
+presentation); L5 (H3 titles "What the public record shows" on 003/006/011 read the same as they
+did after Phase 1 — renaming or removing them is a content judgement call the review flagged but
+did not require, and D-new-1 now governs future pages, not these three retroactively); L7 (no
+table captions — D-new-5 is a guide rule for the *next* batch; adding captions to these 13 pages'
+14 tables is new work outside "fix the findings on this batch" and was not attempted here).
+
+### Guide changes (`docs/plans/readability-guide.md`), one commit each
+
+D1, D-new-1, D3, D4, D5, D8, D9, D-new-2 (with rulings (a)/(b) folded in), D-new-3 (with the
+`:class: at-a-glance` line and the M9 CSS rule), D-new-4, D-new-5, D-new-6, D-new-7, D-new-8, and
+the §7 step-8 grep line — fourteen commits, `670c1a02`..`311b616a`. Confirmed §9 and R-STEPRUN are
+untouched: `git diff 28da0948..HEAD -- docs/plans/readability-guide.md | grep -c
+'R-STEPRUN\|^## 9\.'` returns 0.
+
+### `tools/check_preserved.py` fixes (T1–T3), one commit
+
+`--allow-regrouped` (T1: four conditions, selftested, including two "genuine drop still fails"
+cases); an `identifiers` category masking tokens like `SKY130`, `SC-1`, `` `nfet_01v8` ``, `1X`
+before number extraction, and a fix to strip a leading ordered-list marker before counting
+numbers (T2); hedge matching on whitespace-flattened text, matching how quotes are already
+handled (T3). `uv run python tools/check_preserved.py --selftest` passes. Every one of the 13
+pages was re-checked with `--base ee3a94ee --allow-regrouped --allow-added
+<markers,hedges,identifiers,numbers,quotes,number_order as needed per page>`; each page's commit
+message records that page's exact flags and result, and any remaining non-clean-regroup report
+was traced by hand and shown to be either pre-existing (unchanged by this pass, re-verified
+against the immediately preceding commit) or a genuine same-digit regroup that the tool's
+condition (c) cannot clear because an unrelated glance-box addition sits in the same comparison
+(001, 007).
+
+### Batch measurement against the guide's own §1 caps (D9)
+
+`docs/plans/readability/prototypes/measure/measure5.py` (promoted from the review's `tmp/rev/
+caps.py`, committed with the guide's D9 edit) measures paragraph > 100, item > 60, sentence > 45,
+table cell > 25 words, References and the generated block excluded. Run against all 13 pages
+after every fix above:
+
+* paragraphs > 100 words: 6 (review found 6 before this pass; unchanged — see below)
+* list items > 60 words: 15 (review found 15; unchanged)
+* sentences > 45 words: 27 (review found 29; **2 fixed** — the two writer-introduced sentences
+  M5 named, `001-smat.md:94` and `004-fom.md:148`, no longer exist in that form)
+* table cells > 25 words: 0
+
+The paragraph and item counts are unchanged from the review because, on inspection, all 6
+paragraphs and 15 items are pre-existing original prose that this branch has not touched at any
+point (Phase 1 or Phase 2) — confirmed by diffing each page against its immediately preceding
+commit and, for 001 and 004, against `ee3a94ee` directly. Splitting any of them now would mean
+rewording original sentences this pass was not asked to rewrite and that were not flagged as
+Never-list breaches; per the coordinator's instruction, each is recorded here rather than
+reworded:
+
+* Paragraphs (file:line, words): `002-box.md:47` (113w), `004-fom.md:91` (109w),
+  `006-stie.md:44` (105w), `008-dni.md:128` (108w), `013-ns19.md:46` (109w), `013-ns19.md:85`
+  (119w). All are pre-existing "Why this step exists"/"What this step is" narrative paragraphs
+  carrying several distinct citations each; each already has R-PARA applied elsewhere on its
+  page, and the guide's own R-PARA step 2 (D-new-6) forbids exactly the kind of connective-led
+  split that would be needed to shorten most of these further without changing what they say.
+* List items (file:line, words): `001-smat.md:48` (72w), `001-smat.md:72` (64w),
+  `001-smat.md:131` (76w), `001-smat.md:342` (67w), `002-box.md:87` (75w), `006-stie.md:167`
+  (71w), `006-stie.md:323` (62w), `007-dnm.md:160` (62w), `008-dni.md:73` (64w),
+  `008-dni.md:215` (72w), `010-linox.md:76` (79w), `010-linox.md:124` (66w),
+  `012-cmpnit.md:78` (79w), `013-ns19.md:66` (67w), `013-ns19.md:115` (68w). Each is one
+  citation-dense bullet (a "public record" item, an Open-questions item or a machine-evidence
+  paragraph) that predates this pass.
+* Sentences > 45 words (27, file:line): `001-smat.md:106`, `002-box.md:28`, `003-isonit.md:90`,
+  `005-stinite.md:68`, `005-stinite.md:109`, `006-stie.md:44`, `006-stie.md:77`,
+  `006-stie.md:117`, `006-stie.md:167`, `007-dnm.md:30`, `007-dnm.md:39`, `007-dnm.md:154`,
+  `008-dni.md:145`, `008-dni.md:183`, `008-dni.md:189`, `008-dni.md:194`, `009-dnis.md:52`,
+  `009-dnis.md:108`, `010-linox.md:104`, `010-linox.md:133`, `011-filox.md:29`,
+  `011-filox.md:49`, `011-filox.md:56`, `011-filox.md:149`, `012-cmpnit.md:101`,
+  `012-cmpnit.md:106`, `013-ns19.md:31`. Several of these carry a direct quotation
+  (`006-stie.md:77`'s patent quote, `012-cmpnit.md:101`/`106`'s Wikipedia descriptions,
+  `008-dni.md:183`'s table-sourced quotation) that a length-only split would have to break or
+  requote, which §2.1/§2.3 forbid; the rest are the same "one citation-dense sentence per
+  source" pattern as the list items above.
+
+None of these 48 items is a Never-list breach, a Medium finding, or a writer-introduced sentence;
+all predate this pass (spot-checked against `ee3a94ee` and the immediately preceding commit) and
+none is touched by any commit in this response. They are left over cap, by the coordinator's own
+"record per-item why" option, rather than reworded under time pressure in a way that could change
+a fact, drop a hedge, or requote a source — the risk the guide's §2 Never list exists to prevent.
+
+### Left deliberately unfixed, with reasons (recap)
+
+* L2, L3, L5, L7 — see "Low findings" above.
+* The 48 pre-existing over-cap items above (M5's "may stay if honestly reported" allowance,
+  extended here from paragraphs/items to include sentences, at the coordinator's stricter
+  instruction to record rather than silently accept).
+* `007-dnm.md`/`008-dni.md`'s pre-existing `number_order` reports predating the RSDNW table
+  redesign (glance-box tuples mixing two originally separate facts) — traced to their unedited
+  source sentences in each page's commit message.
