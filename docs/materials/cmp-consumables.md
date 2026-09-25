@@ -148,7 +148,7 @@ named in SkyWater's filings.
 | Tungsten slurries | — | Alumina or silica with a peroxide, ferric or iodate oxidiser at pH 2–4 (typical industry values)[^pat-cmp-cabot][^stein-1999][^steigerwald-1997] |
 | Pads | — | Stacked polyurethane pads of the IC1000-over-Suba IV class for primary polish and soft Politex-type pads for buffing ({ref}`category-cmp`) |
 | Pads | Qnity (the electronics business DuPont planned to separate as an independent company[^qnity-story]) | lists "IC1000™" among its pads for tungsten, STI and oxide polishing and "Politex™" for buff polishing[^qnity-cmp-pads] |
-| Conditioners, brushes and filters | Entegris (with CMC Materials) | states that, with CMC Materials, its CMP offering includes "CMP slurries and pads", "post-CMP cleaning chemistries and brushes, CMP pad conditioners" and liquid filtration[^entegris-cmc-2022] |
+| Conditioners, brushes and filters | Entegris (with CMC Materials) | states that its CMP offering includes "CMP slurries and pads", "post-CMP cleaning chemistries and brushes, CMP pad conditioners" and liquid filtration[^entegris-cmc-2022] |
 | Post-CMP clean chemistry | — | Dilute NH₄OH after oxide polishes; dilute HF, citric acid or TMAH after tungsten;[^jolley-1998] integrated cleaners used HF in brush modules and heated RCA chemistries in megasonic modules[^amat-mesa-1999] |
 | Post-CMP clean chemistry | Entegris | lists "post chemical mechanical planarization (post-CMP) cleaning solutions" that "offer excellent corrosion control"[^entegris-post-cmp] |
 :::

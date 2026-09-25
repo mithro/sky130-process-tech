@@ -218,6 +218,13 @@ time kept exact adjacency or exact wording, so no category's count
 changed). `REGROUPED` printouts (3, from the R-MODELS split and one
 R-LIST conversion of the NIOSH bullet): hand-checked, digits reappear in
 order in each case.
+**Correction (review round 2, L4):** no longer true after the review
+round — `skw-01` was repeated onto the bare half of the "Strength of the
+evidence" split (M4 fix, commit `a36349d2`), and the row-13/14 split of
+`etch-gases.md:148` (verification N1 fix, this commit) added no marker
+or quotation, only re-ordered the existing SEMI/Wikipedia clauses into
+two rows. Both declared `--allow-added markers` from `a36349d2` on, the
+first only in that commit message, not here.
 
 `check_materials.py`, `check_refs.py`, `check_inforce.py`,
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
@@ -271,7 +278,11 @@ remain on this page, not eliminated as claimed.
 
 `check_preserved.py --allow-regrouped --allow-added markers`: 0
 undeclared differences (markers `ham-2017`, `wiki-implant` each repeated
-once, both rule-5 marker copies onto a split-off sentence). `REGROUPED`
+once, both rule-5 marker copies onto a split-off sentence).
+**Correction (review round 2, L4):** the review round also added
+`skw-01`, repeated onto the bare half of the "Strength of the evidence"
+split (M4 fix, commit `a36349d2`); that addition was declared in the
+commit message only, not here. `REGROUPED`
 (1, the Versum/EMD sentence split): hand-checked, digits reappear in
 order. `check_materials.py`, `check_refs.py`, `check_inforce.py`,
 `gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
@@ -321,6 +332,10 @@ no `--allow-added` or `REGROUPED` entries at all** — every split in this
 page landed on an existing semicolon or "and" with markers already
 attached per clause, so nothing needed relocating or repeating. This is
 the cleanest page in the batch so far.
+**Correction (review round 2, L4):** no longer true after the review
+round — `skw-01` was repeated onto the bare half of the "Strength of the
+evidence" split (M4 fix, commit `a36349d2`); declared `--allow-added
+markers` from that commit on, but only in the commit message, not here.
 
 Over-cap counts, before → after: paragraphs > 100 words 4 → 1 (R-INTRO
 lead); list items > 60 words 1 → 0; tables with no caption 1 → 0.
@@ -647,3 +662,70 @@ Implementation note from the review: split `before`/`after` at the
 first `\n## `, count per half, and apply (a) and (b). Until the flag
 exists, executors should leave duplicated cells alone, as this batch
 did — the review calls that "the correct conservative call".
+
+## Verification round 2 (2026-09-26)
+
+`tmp/reviews/rd-materials-verify.md` (Opus) verified every review-round
+fix and found one new problem, N1: `etch-gases.md:148`'s Sulphur
+hexafluoride row credited both the SEMI C3.24 specification and
+Wikipedia's "colorless, odorless, non-flammable, and non-toxic"
+quotation to Source `SEMI C3.24`, breaking the new one-source-per-row
+rule (the same M3 class the review round fixed elsewhere). Fixed by
+splitting into two rows (SEMI C3.24 with the specification quote;
+`—` with the Wikipedia quote), one commit.
+
+The verification also listed 5 Lows. Fixed here, as pure presentation
+changes with no fact/source moved:
+* L4 — the M4 `skw-01` marker additions (anneal, dopant, etch) were
+  declared only in commit `a36349d2`'s message; added to this file's
+  per-page entries above.
+* L5 (cmp) — `cmp-consumables.md`'s Conditioners/brushes/filters row
+  said "with CMC Materials" twice, once in the Source cell and once in
+  the cell text; removed the duplicate from the cell text (the Source
+  cell already carries it, and the identifier still appears elsewhere
+  on the page).
+* L5 (UPW) — `ultrapure-water.md`'s Carbonated DI water row said the
+  in-force-patent dropdown is "below this list"; it is below the
+  R-MODELS table since the review round's D2 fix, not a list, so
+  reworded to "below this table". (The two other "below this list"
+  instances on the page are still inside real bulleted lists and are
+  correct as they stand.)
+
+Recorded, not fixed (each needs editorial judgement about which rows to
+touch and in which direction, not a mechanical presentation change):
+* L1 — three rows (substrates Annealed|GlobalWafers; sputter
+  Titanium–tungsten and Coils, both |Solstice) name a Source the base
+  established only through the row's marker, not in prose. Not a
+  misattribution; inconsistent with rows that leave Source `—` under
+  the same condition (see L2). Predates this round.
+* L2 — `—` sits in the Source cell of several rows whose text names a
+  standard by marker only (substrates Prime/Premium/Reclaimed; dopant
+  BF₃/Phosphine/Arsine; process-gases N₂/O₂/H₂/He), inconsistent with
+  rows where the standard was promoted into Source (etch's CF₄/SF₆;
+  substrates' Epitaxial/Virgin). The six two-column pages have the same
+  pattern page-wide. Fixing this consistently would mean re-auditing
+  every such row for one-source-per-row compliance the way N1 was
+  fixed — some rows (e.g. dopant's BF₃, which names both SEMI C3.27 and
+  NIOSH) would need splitting, which is the N1 class of fix repeated
+  at scale, not a presentation change. Left for a dedicated pass.
+* L3 — two sputter Solstice rows (Titanium, Titanium–tungsten) have a
+  trailing clause after their last marker ("monolithic and
+  diffusion-bonded designs"; "diffusion, "Nano" or indium bonding").
+  The Source column already carries the attribution, so this is not a
+  gap, but repeating the marker at the end of the cell (the M4 pattern)
+  would be a defensible alternative; left as the reviewer found it
+  pending a decision on which style to standardise on.
+* L5 (hardware) — the Broz/Roggei/Electroglas bullet list has no
+  lead-in sentence, unlike this page's other new lists. A lead-in would
+  need new wording not in the base; left unwritten rather than invent
+  one.
+* L5 (commit message) — commit `5bbd3d1c`'s message says the
+  hardware-consumables two-item splits were "split at the semicolon or
+  'and'"; three of the seven items were in fact bulleted (R-LIST), not
+  left as plain sentences. Commit messages are not rewritten after the
+  fact per the worktree's rules; recorded here as the correction.
+
+`check_preserved.py` (main's copy) `--base main --allow-regrouped`: 0
+undeclared differences on `etch-gases.md`, `cmp-consumables.md` and
+`ultrapure-water.md`. `check_materials.py`: 0 problems. Fresh `-W`
+build: clean.
