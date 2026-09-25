@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`P1IS <step-051>` |
 | **Next step** | {ref}`PRI <step-053>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** opens resist windows over the resistor bodies for the p-type
+  implant `PRI`; that it is a reverse-tone reticle of `rpm` is our
+  inference.
+* **Why:** a precision resistor needs its own implant, at its own dose,
+  into film that has received nothing else.
+* **Public numbers:** 1.27 µm features and 0.84 µm spaces, as
+  `RPM`.[^pdk-03]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (tools); inference (assignment).[^skw-01]
+* **Not public:** whether the reverse reticle opens the `urpm` bodies;
+  tone, resist and exposure tool (→ Open questions).
+:::
+
 ## What this step is
 
 `RRPM` — the *reverse* resistor protect mask — is the complement of
@@ -28,35 +44,42 @@ only where the gate implant did not. The resist is stripped at
 Before, the bare gate film; after, resist everywhere except a window over the resistor body, the complement of the RPM island. That a reverse-tone reticle of the `rpm` layer makes this window is the page's inference; the PDK's mask table lists no reverse mask.[^pdk-05] The window is drawn the same width as the RPM island. The colours of the gate film mark the type of its doping, not a depth profile. The field oxide (the oxide-filled trench in the middle) and both gate oxides are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
 
 Unlike `RPM`, this mask is not in the PDK's public mask table, which
 lists "Resistor Protect, RPM" but no reverse mask.[^pdk-05] That is not
 surprising if, as we infer, the two {term}`reticles <reticle>` are generated from the same
 drawn layer, `rpm` (GDS 86:20, "300 ohms/square polysilicon resistor
 implant"),[^pdk-06] one in each tone, and a designer never needs to know
-that two exist. That a reverse-tone mask is used is itself our
+that two exist.
+
+That a reverse-tone mask is used is itself our
 inference: the p-type resistor implant must reach the bodies that
 `rpm` protected from the gate implant, and a reticle of the opposite
-tone on the same layer does exactly that. We infer that the reverse reticle is
+tone on the same layer does exactly that.
+
+We infer that the reverse reticle is
 derived from `rpm` alone or from `rpm` less `urpm` (GDS 79:20, "2000
 ohms/square polysilicon resistor implant"[^pdk-06]), depending on
 whether the ultra-high-resistance bodies receive this implant as well as
-their own ({ref}`URPM <step-055>`, {ref}`UPRI <step-056>`); the PDK says
+their own ({ref}`URPM <step-055>`, {ref}`UPRI <step-056>`). The PDK says
 only that for the 2000 Ω/sq resistors "a separate implant is used to set
 the sheet resistance".[^pdk-07]
 
-Beyond the step list, one public document names the mask: the pad
+Beyond the step list, one public document names the mask. The pad
 documentation of the SKY130 {term}`test tile` marks its shortest
 300 Ω/sq poly resistors (W = 0.69 µm, L = 0.345 µm and W = 0.33 µm,
 L = 0.33 µm) "(will not work for any routes using RRPM
 mask)".[^raw-data-testtile-pads] It says nothing about the mask's tone
-or how it is derived. The published measurements of the marked
+or how it is derived.
+
+The published measurements of the marked
 structures read 0.49–0.54 kΩ (0.69 µm, half a square) and 0.97 kΩ
 (0.33 µm, one square) (our extraction from the published measurements,
 from the slope of the sweep within
-±0.1 V),[^raw-data-passives] inside the limits of the PDK's e-test
+±0.1 V).[^raw-data-passives] They are inside the limits of the PDK's e-test
 table for its 0.69 µm half-square and 0.35 µm one-square
-resistors[^pdk-07] — the tile's 0.33 µm structure is drawn narrower
+resistors.[^pdk-07] The tile's 0.33 µm structure is drawn narrower
 than the narrowest supported fixed width (rpm.1b, 0.350 µm) and at the
 poly.3 minimum resistor width of 0.330 µm.[^pdk-periph] The
 files do not say which process route the measured wafer
@@ -68,7 +91,9 @@ followed.
 step of the *implant-block* type, printed with the same relaxed
 geometry as `RPM` — 1.27 µm features and 0.84 µm spaces (RPMCD /
 RPMCDSP in the assumptions table)[^pdk-03] — on the same surface,
-now the doped gate film. What is specific to this instance is the
+now the doped gate film.
+
+What is specific to this instance is the
 tone: the windows are small and the resist is everywhere else, which
 is the easier case for an implant mask (resist islands can lift or
 shift; a continuous field of resist with holes in it cannot).
@@ -77,11 +102,13 @@ shift; a continuous field of resist with holes in it cannot).
 
 The two flavours of precision resistor in SKY130 are p-type films
 with sheet resistances of 300 Ω/sq and 2000 Ω/sq[^pdk-07][^pdk-08]
-inside a poly layer that is otherwise n⁺ at 48.2 Ω/sq.[^pdk-08] The
+inside a poly layer that is otherwise n⁺ at 48.2 Ω/sq.[^pdk-08]
+
+The
 resistance of a {term}`poly resistor` is a steep function of its dose:
 Seto's grain-boundary trapping model shows the resistivity falling by
 orders of magnitude over a narrow doping range once the traps at the
-boundaries are filled,[^seto-1975] and Mandurah, Saraswat and Kamins
+boundaries are filled.[^seto-1975] Mandurah, Saraswat and Kamins
 refined the model with dopant segregation to the
 boundaries.[^mandurah-1981] A precision resistor therefore needs its
 own implant, at its own dose, into film that has received nothing
@@ -90,13 +117,17 @@ else. `RRPM` provides the window for it.
 The mask also carries the resistor's matching budget. The head and tail
 of each fixed-width resistor are contacted by slot contacts, and the PDK
 models the device as an end resistance R₀ plus a body resistance R₁ =
-R_SH/W per micrometre.[^pdk-07] The PDK says R₀ is "dominated by the
+R_SH/W per micrometre.[^pdk-07]
+
+The PDK says R₀ is "dominated by the
 slot licons",[^pdk-07] but part of it is, we infer, set by where the
 doped body meets the n⁺ poly and the contact — that is, by the `rpm`
-edge — so the enclosure of the resistor by `rpm` (rpm.3, 0.200 µm) and
+edge. So the enclosure of the resistor by `rpm` (rpm.3, 0.200 µm) and
 the ban on poly straddling `rpm` (rpm.8)[^pdk-periph] are what make R₀
-reproducible. O'Dwyer and Kennedy compared the matching of different
-poly resistor films in a CMOS process,[^odwyer-2009] and Tsang et al.
+reproducible.
+
+O'Dwyer and Kennedy compared the matching of different
+poly resistor films in a CMOS process.[^odwyer-2009] Tsang et al.
 show how sensitive a high-value poly resistor bank is to its
 surroundings by a different route: hydrogen diffusing through eroded
 corners of the LPCVD nitride that caps the poly passivates
@@ -105,8 +136,8 @@ bank.[^tsang-2014]
 
 ## How it is typically performed
 
-An industry-generic implant-mask litho sequence, as on
-{ref}`RPM <step-049>`, with the differences noted:
+*An industry-generic implant-mask litho sequence, as on
+{ref}`RPM <step-049>`, with the differences noted:*
 
 1. **Surface preparation.** {term}`HMDS` prime on the track. The surface is
    the doped a-Si film with the thin chemical oxide left by
@@ -123,7 +154,9 @@ An industry-generic implant-mask litho sequence, as on
    i-line limit (category page, {term}`CD` = {term}`k₁ <k1>`·λ/{term}`NA`[^wiki-litho]).
 4. **Alignment.** To the {term}`STI`/active marks of {ref}`FOM <step-004>`,
    as for `RPM`, because the poly is still unpatterned (inferred; the
-   alignment tree is not public). Since both `RPM` and `RRPM` align to the
+   alignment tree is not public).
+
+   Since both `RPM` and `RRPM` align to the
    same reference, their mutual {term}`overlay` is the sum of two
    registrations — the reason the drawn resistor is enclosed by `rpm` with
    margin[^pdk-periph] rather than butting the n⁺ region. Any gap between the
@@ -151,13 +184,16 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper or scanner.**[^skw-01] Strength: strong for
-  the tools; **inference** for the assignment of this layer.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
-  Strength: strong.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM.**[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper or scanner**[^skw-01]
+  - *Tool exists:* strong for
+    the tools.
+  - *Runs this step:* **inference** for the assignment of this layer.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this
+    mask is an inference.
 
 ## Resources required
 
@@ -171,17 +207,17 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 ## Related steps and cross-references
 
-* Previous: {ref}`P1IS <step-051>`. Next: {ref}`PRI <step-053>` (the
+* Previous: {ref}`P1IS <step-051>`.
+* Next: {ref}`PRI <step-053>` (the
   implant through these windows); strip at {ref}`PRIS <step-054>`.
-* Complement: {ref}`RPM <step-049>`. The ultra-high-resistance
+* Same module: complement {ref}`RPM <step-049>`. The ultra-high-resistance
   flavour has its own mask and implant: {ref}`URPM <step-055>`,
   {ref}`UPRI <step-056>`.
 * The resistor is cut from the poly at {ref}`P1ME <step-062>` and
   contacted through {ref}`NPCM <step-078>` and {ref}`LICM1 <step-093>`.
-* Previous mask step: {ref}`RPM <step-049>`; next mask step:
-  {ref}`URPM <step-055>`.
-* Mask page: {ref}`RRPM <mask-rrpm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`RRPM <mask-rrpm>` — the mask's layers, plates,
+  renders and design rules. Previous mask step: {ref}`RPM <step-049>`;
+  next mask step: {ref}`URPM <step-055>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
@@ -256,11 +292,11 @@ mostly chrome. Neither tone nor resist is stated publicly.
 
 ## Open questions
 
-* Whether the reverse reticle opens the `urpm` bodies as well as the
+* **The `urpm` bodies.** Whether the reverse reticle opens the `urpm` bodies as well as the
   `rpm` bodies is not public; it decides whether the 2000 Ω/sq film
   receives one implant or two.
-* Reticle tone, resist and exposure tool are inferred, not stated.
-* Whether the fab generates `RRPM` from the same data as `RPM` with a
+* **Tone, resist and tool.** Reticle tone, resist and exposure tool are inferred, not stated.
+* **Sizing bias.** Whether the fab generates `RRPM` from the same data as `RPM` with a
   sizing bias (to guarantee overlap rather than a gap) is unknown.
 
 <!-- footnotes -->

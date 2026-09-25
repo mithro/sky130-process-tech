@@ -222,6 +222,46 @@ table cells > 25: 0. After: see the batch summary at the end.
   read "AIT" …" (the base marker `[^job-06]` stood before "; we read", on the quotation); a label.
 * **Caps**: para > 100 2 → 0; item > 60 2 → 0; sentence > 45 2 → 0.
 
+### 052 RRPM — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the mask-table
+  reading and the test-tile evidence (≈ 320 words).
+* **R-PARA / R-SENTENCE.** Mask-table paragraph (159 w) → three paragraphs at its seams (the table;
+  "That a reverse-tone mask is used is itself our inference: …"; "We infer that the reverse reticle is
+  derived …"), and the last one's 59-word sentence split at its semicolon ("… their own (URPM,
+  UPRI). The PDK says only …"; each half keeps its marker, "We infer" stays with its claim).
+  Test-tile paragraph (158 w): first sentence (51 w) split at its colon — "Beyond the step list, one
+  public document names the mask." is a pointer whose source is named and cited in the very next
+  sentence (no marker added); paragraph split before "The published measurements …"; that 83-word
+  sentence split into three: the readings with "(our extraction … ±0.1 V).[^raw-data-passives]";
+  "They are inside the limits of the PDK's e-test table …[^pdk-07]" ("They are" added; "They" is the
+  extracted readings, so the hedge still governs them); "The tile's 0.33 µm structure …[^pdk-periph]"
+  (the base's em dash).
+  "Why" paragraph 1 (108 w): split after the first sentence; its 52-word sentence split at ", and
+  Mandurah" (each study keeps its own marker). "Why" paragraph 2 (161 w) → three paragraphs; its
+  62-word sentence split at "— so the enclosure" → "edge. So the enclosure …" (the conclusion keeps
+  `[^pdk-periph]`; "we infer" stays on "part of it is … set by … the `rpm` edge", as in the base);
+  the 58-word literature sentence split at ", and Tsang et al.".
+* **R-CATEGORY.** Classification sentence (44 w, with its em-dash pair and `[^pdk-03]`) alone; the
+  "What is specific to this instance is the tone …" sentence is its own label (step 3). The
+  classification sentence stays over the 35-word target: shortening it would need rewording.
+* **R-PARA step 4.** "Alignment" (103 w): lead sentence + one continuation paragraph.
+* **R-HEDGE, R-TOOLS** (three tools, grades verbatim under *Tool exists:* / *Runs this step:*; the
+  bullets quote nothing SkyWater said, so no *SkyWater says:*), **R-OPENQ** (labels "The `urpm`
+  bodies", "Tone, resist and tool", "Sizing bias").
+* **R-RELATED.** Previous/Next split; "Complement: RPM. The ultra-high-resistance flavour …" →
+  "Same module: complement RPM. …" (RPM, URPM, UPRI are in the module); mask bullets → one `Mask:`
+  bullet keeping both glosses; the P1ME/NPCM/LICM1 bullet keeps no label (mixed modules).
+* **R-GLANCE.** Does carries the page's "our inference" on the reverse-tone reticle (the caption's
+  and the second paragraph's hedge); the open RRPM question (does it open `urpm`?) is in Not public,
+  as the page leaves it.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, numbers 1.27, 0.84,
+  hedges "inference" ×2 (glance Does and tool line), "not public" — glance box. REGROUPED: the
+  sentence splits above, same digits in the same order. Declared `markers,numbers,hedges`: clean.
+* **Marker coverage.** 14 flags, all read: every split piece keeps the markers of its own clause;
+  the one uncited piece is the pointer "Beyond the step list, one public document names the mask."
+* **Caps**: para > 100 5 → 0; item > 60 1 → 0; sentence > 45 7 → 0.
+
 ## Content problems for the owner (not fixed)
 
 * `048-sagd.md`, lead: "The film is undoped as deposited" is stated as fact; the second paragraph
@@ -232,6 +272,11 @@ table cells > 25: 0. After: see the batch summary at the end.
 * `051-p1is.md`, figure caption (generated from `data/figures/`): the sentence "In the upper panel
   the undoped film under the island is not labelled, because its leader would have to rise through
   the resist." appears twice in a row. Generated text; not touched here (§2.8).
+
+* `052-rrpm.md` leaves open whether `RRPM` opens the `urpm` bodies (What this step is, Open
+  questions); `055-urpm.md` uses the reading that it does not, and the figures follow 055 (the S5
+  figure agent's note). Both pages already say so; both statements kept verbatim, and 052's glance
+  box lists the question under "Not public".
 
 ## Guide problems
 
