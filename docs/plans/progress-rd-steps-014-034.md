@@ -64,6 +64,26 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 019-nwi2.md — done (lightest page in the batch so far)
+
+Rules applied: R-PARA (lead paragraph split at its inference-vs-mechanism seam), R-SENTENCE
+(the field-stop bullet and the GSD tool bullet), R-HEDGE step 1 (italic lead-in), R-TOOLS (2
+"Strength:" bullets split, one with an indented continuation to keep its "Runs this step"
+sub-bullet under the item cap; no recap table), R-RELATED (`Previous:`/`Next:` split;
+`Same category:`, `Feeds:` labels), R-OPENQ (bold labels on both bullets), R-GLANCE (box last;
+"Public numbers" is "none published for SKY130" — the page's only concrete numbers are either
+generic/PDK-wide, already used on 017/018, or illustrative literature values).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 1 → 0; sentences > 45 words 1 → 0; table cells > 25
+words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/019-nwi2.md`:
+**exit 0, no undeclared differences at all** — the first page in this batch to pass cleanly on
+the first try (no `number_order` involvement, since no dense multi-number sentence was split).
+All other checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to
+bottom, including the nested R-TOOLS continuation paragraph.
+
 ### 018-nwi.md — done (this is the guide's own R-TABLE worked example page)
 
 `docs/plans/readability-guide.md` quotes `docs/steps/018-nwi.md:94` (the "Energy" bullet) as
