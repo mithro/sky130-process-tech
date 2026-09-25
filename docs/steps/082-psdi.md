@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`PSDM <step-081>` |
 | **Next step** | {ref}`2PSDI <step-083>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants the heavy p-type deep source and drain of every
+  PMOS, and the other P⁺ diffusions, self-aligned to the spacer edge.
+* **Why:** the deep junction gives a low-resistance path and the heavily
+  doped surface a contact needs, a spacer-width from the gate.
+* **Public numbers:** "N+ or P+ S/D (XJ)" 0.1 µm; "High current" angle
+  0°;[^pdk-03] `RSP` 197 Ω/sq (limits 166–228).[^pdk-07]
+* **Likely SkyWater tool:** Axcelis GSD high-dose implanter — strong
+  (tools, species, dose ranges); inference (assignment).[^skw-01]
+* **Not public:** the species, energy and dose, the split with
+  {ref}`2PSDI <step-083>`, and what forms the PMOS extension
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `PSDI` is the heavy p-type implant that forms the deep source and
@@ -17,10 +33,12 @@ drain of every PMOS transistor, together with all the other P⁺
 diffusions of the process. It goes through the resist windows of
 {ref}`PSDM <step-081>`, through the thin {ref}`SPOX <step-080>` oxide
 (on our reading), and into silicon wherever the windows are not
-blocked by a gate stack or a spacer: the implant is *self-aligned* to
+blocked by a gate stack or a spacer. The implant is *self-aligned* to
 the spacer edge, so the heavy junction lands a spacer-width away from
 the gate edge while the shallow extension implanted earlier reaches
-under it. A second p-type implant, {ref}`2PSDI <step-083>`, follows in
+under it.
+
+A second p-type implant, {ref}`2PSDI <step-083>`, follows in
 the same resist; the resist is stripped at {ref}`PDIS <step-084>`, and
 the dopant is activated at {ref}`RTAD <step-088>`.
 
@@ -32,26 +50,36 @@ the dopant is activated at {ref}`RTAD <step-088>`.
 At PSDI the heavy p-type implant goes through the PSDM windows. In this slice the only window is over the resistor's contact head, where, on the reading of the NPCM page, the implant gives the p-type poly under the cut a heavy P⁺ dose; the p-type colour already there marks the type of the doping and not its level, so nothing new is drawn. The resist stops the beam over both NMOS areas, and over the field the implant stops in the oxide. The arrows are drawn vertical, with no tilt, as the PDK's "High current" implant angle of 0° gives;[^pdk-03] the species, energy and dose are not public. The spacers, the caps, the gate films, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The p-type resistor body is not labelled, because its leader would have to cross the beam. The slice has no PMOS; the P⁺ source/drain this implant makes beside the spacers of every PMOS transistor is not shown. Not to scale.
 :::
 
-What the PDK says about the result is specific, if sparse. The
+### What the public record shows
+
+What the PDK says about the result is specific, if sparse.
+
+**Junction depth and angle.** The
 junction-depth table gives "N+ or P+ S/D (XJ)" a vertical feature of
-0.1 µm and a vertical space of 0.06 µm (variables `JCTD` and `LD`),
-limits the S/D out-diffusion next to an isolation edge to 0.007 µm
+0.1 µm and a vertical space of 0.06 µm (variables `JCTD` and
+`LD`).[^pdk-03] It limits the S/D out-diffusion next to an isolation edge to 0.007 µm
 (0.05 µm for the 6 V devices), and gives the "N Tip (As)" 0.01 µm in
 the same column.[^pdk-03] The implant-angle table gives "High
 current" implants an angle of 0°, against 7° for the tip implant and
-40° with a 23° twist for the high-voltage tip.[^pdk-03] The
+40° with a 23° twist for the high-voltage tip.[^pdk-03]
+
+**Sheet resistance.** The
 extraction tables give P-diffusion a sheet resistance of
 197 000 mΩ/sq, that is 197 Ω/sq, against 120 Ω/sq for
 N-diffusion.[^pdk-08] The device page's e-test table gives the P⁺
 diffusion sheet resistance `RSP` as 197 Ω/sq (limits 166–228) and the
-high-voltage P⁺ diffusion `RSPH` as 191 Ω/sq (160–228).[^pdk-07] The
+high-voltage P⁺ diffusion `RSPH` as 191 Ω/sq (160–228).[^pdk-07]
+
+**Measured on the test tile.** The
 SKY130 raw-data repository publishes two-terminal sweeps of two
 25.05-square "p+ resistor" structures on the test tile, one of which
-the pad list's pin labels call "hv p+ res"; they measure 211.7 Ω and
+the pad list's pin labels call "hv p+ res".[^raw-data-passives][^raw-data-testtile-pads]
+They measure 211.7 Ω and
 205.5 Ω per square, contacts included — inside those limits and, like
 the nominal values, lower for the high-voltage structure (our
 extraction from the published measurements; the files record no
 temperature, date or wafer).[^raw-data-passives][^raw-data-testtile-pads]
+
 The species, energy and dose are not public; the "P+" name and the
 high-current angle entry are what the public data provide, and we
 infer the rest from industry practice.
@@ -68,7 +96,9 @@ discussed below.
 industry-typical[^txt-01]), low-to-medium-energy implant from a
 high-current tool, self-aligned to a spacer, that amorphises the
 silicon surface and sets the contact resistance
-({ref}`category-implant`). Its partner is {ref}`NSDI <step-086>`. It
+({ref}`category-implant`).
+
+`PSDI`'s partner is {ref}`NSDI <step-086>`. It
 differs from the tip implants ({ref}`ASTI <step-065>`) in dose by an
 order of magnitude and in the mask it is aligned to — the spacer
 rather than the bare gate — and from the well and channel implants
@@ -76,61 +106,79 @@ in every respect but the tool.
 
 ## Why this step exists
 
-The deep source/drain does three things the extension cannot. It
-provides a low-resistance path from the contact to the channel — Ng
-and Lynch showed how the series resistance of the un-silicided
-extension limits scaling,[^ng-1986] and the deep junction is where
-most of the current flows; it provides the heavily doped surface
-that a contact needs for a low specific contact resistance; and it
-is deep enough (the PDK's 0.1 µm[^pdk-03]) that the contact etch and
-any silicide ({ref}`CSIL <step-098>`) do not punch through it. Placing
-it a spacer-width from the gate is what keeps its depth from
+The deep source/drain does three things the extension cannot:
+
+* It provides a low-resistance path from the contact to the channel —
+  Ng and Lynch showed how the series resistance of the un-silicided
+  extension limits scaling,[^ng-1986] and the deep junction is where
+  most of the current flows.
+* It provides the heavily doped surface that a contact needs for a low
+  specific contact resistance.
+* It is deep enough (the PDK's 0.1 µm[^pdk-03]) that the contact etch
+  and any silicide ({ref}`CSIL <step-098>`) do not punch through it.
+
+Placing
+the deep source/drain a spacer-width from the gate is what keeps its depth from
 degrading short-channel control — the whole purpose of the LDD
 scheme of Ogura et al.[^ogura-1980] and the spacer of Tsang et
 al.[^tsang-1982]
 
-Beyond the PMOS, the same implant makes the p⁺ taps that tie the
-P-wells and substrate to ground, the emitter and collector of the
-vertical PNP and the base contacts of the NPN,[^pdk-07] the P⁺
-diffusion resistor,[^pdk-07] the p-side of the p-diffusion-to-N-well
-diodes,[^pdk-07] and — on the reading of the {ref}`NPCM <step-078>`
-page — the contact heads of the precision poly resistors, which
-rpm.4 requires to lie inside `psdm`.[^pdk-periph] The 0.34 µm
+Beyond the PMOS, the same implant makes:
+
+* the p⁺ taps that tie the P-wells and substrate to ground, the emitter
+  and collector of the vertical PNP and the base contacts of the
+  NPN;[^pdk-07]
+* the P⁺ diffusion resistor;[^pdk-07]
+* the p-side of the p-diffusion-to-N-well diodes;[^pdk-07]
+* on the reading of the {ref}`NPCM <step-078>` page, the contact heads
+  of the precision poly resistors, which rpm.4 requires to lie inside
+  `psdm`.[^pdk-periph]
+
+The 0.34 µm
 "min. width to open a strip of tap between two diffs" and the
 0.12 µm "min. diff/tap width for reproducible resistivity" in the
 PDK's width criteria[^pdk-03] are constraints on where this implant
 can be made to land reproducibly.
 
 Two things the implant does *not* do, on the reading used throughout
-this reference, are worth stating. It does not dope the PMOS gate:
-the gate is capped by about 0.2 µm of nitride/oxide ("poly cap after
-SPE"[^pdk-03]), the {term}`nitride cut` is kept off gates by npc.4,[^pdk-periph]
-and the gate poly was doped n-type at {ref}`P1I <step-050>` — so
-SKY130 avoids the boron-penetration problem of p⁺ gates that
-Pfiester et al. described[^pfiester-1990] at the cost of a
-single-work-function (buried-channel PMOS) design; the work-function
-dependence on poly doping that Lifshitz measured[^lifshitz-1985] is
-therefore fixed at the n⁺ value for both transistors. And it is not
-what forms the arsenic extensions of the NMOS, which are made before
-the spacer ({ref}`ASTI <step-065>`).
+this reference, are worth stating:
+
+* It does not dope the PMOS gate:
+  the gate is capped by about 0.2 µm of nitride/oxide ("poly cap after
+  SPE"[^pdk-03]), the {term}`nitride cut` is kept off gates by npc.4,[^pdk-periph]
+  and the gate poly was doped n-type at {ref}`P1I <step-050>`. So
+  SKY130 avoids the boron-penetration problem of p⁺ gates that
+  Pfiester et al. described[^pfiester-1990] at the cost of a
+  single-work-function (buried-channel PMOS) design.
+
+  The work-function
+  dependence on poly doping that Lifshitz measured[^lifshitz-1985] is
+  therefore fixed at the n⁺ value for both transistors.
+* It is not
+  what forms the arsenic extensions of the NMOS, which are made before
+  the spacer ({ref}`ASTI <step-065>`).
 
 Without `PSDI` there would be no PMOS source/drain, no substrate
 contacts, no PNP and no p-type resistors or diodes.
 
 ## How it is typically performed
 
-An industry-generic P⁺ source/drain implant for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic P⁺ source/drain implant for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 * **Species.** Boron, as B⁺ or as the molecular ion BF₂⁺, both
-  produced from boron trifluoride in the ion source.[^wiki-bf3] BF₂⁺
+  produced from boron trifluoride in the ion source.[^wiki-bf3]
+
+  BF₂⁺
   carries the boron at 11/49 of the beam energy, so a given
   implanter reaches a shallower profile, and its heavier mass
   amorphises the surface, which suppresses {term}`channelling` and
-  lets solid-phase regrowth give high activation; the fluorine it
+  lets solid-phase regrowth give high activation. The fluorine it
   brings alters boron's transient enhanced diffusion during the RTA,
   as Wang et al. showed for BF₂ implanted through
-  oxide.[^wang-1997] Bourdelle et al. compared B and BF₂ for PMOS
+  oxide.[^wang-1997]
+
+  Bourdelle et al. compared B and BF₂ for PMOS
   junctions with thin gate oxides,[^bourdelle-2000] and the
   alternative of a germanium pre-amorphisation followed by B⁺ was
   optimised by Öztürk et al.[^ozturk-1988] and applied to PMOS
@@ -139,34 +187,45 @@ fab (SKY130's recipe is not public):
   is not public.
 * **Energy and dose.** Tens of keV and a few 10¹⁵ cm⁻² are the
   industry-typical values for a deep source/drain at this
-  node;[^txt-01][^txt-02] the PDK's 0.1 µm junction depth[^pdk-03]
+  node.[^txt-01][^txt-02]
+
+  The PDK's 0.1 µm junction depth[^pdk-03]
   after {ref}`RTAD <step-088>` is consistent with them. The screen
   oxide ({ref}`SPOX <step-080>`, 0.05 µm if it is the PDK's "oxide
   spacer"[^pdk-03]) takes part of the range and, for boron, broadens
   the profile in the way Park et al. found paradoxical[^park-1991]
   and Lim et al. modelled.[^lim-1993]
 * **Tilt.** 0°, per the PDK's "High current" implant-angle entry.[^pdk-03]
-  A zero-tilt implant beside a roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gate with spacers
+
+  A zero-tilt implant beside a roughly 0.4 µm-tall (0.18 µm poly plus
+  the ~0.2 µm cap[^pdk-03]) capped gate with spacers
   avoids the shadowing of tilted source/drain implants that Krieger
-  et al. analysed,[^krieger-1989] and it needs the screen oxide and
+  et al. analysed.[^krieger-1989] It needs the screen oxide and
   the self-amorphisation of BF₂ (or a pre-amorphisation) to control
-  channelling; on a batch spinning-disc implanter the effective
+  channelling. On a batch spinning-disc implanter the effective
   angle varies across the disc, as Jones and Sinclair
   showed.[^jones-1996]
 * **Wafer handling.** Batch spinning-disc end station with wafer
   cooling — the beam power at high current heats the resist, and
   Smith's early chapter[^smith-1983] and Romig et al.'s study of
-  resist burning[^romig-1996] set out the limits. A {term}`plasma flood gun`
+  resist burning[^romig-1996] set out the limits.
+
+  A {term}`plasma flood gun`
   neutralises the positive charge that a beam on a resist-covered
-  wafer builds up: Dixon, Lukaszek and Heden showed how resist
-  enhances charging,[^dixon-1996] Mehta et al. investigated negative
-  charging with the flood gun,[^mehta-1996] and Current, Vella and
-  Lukaszek set out beam-plasma charging control.[^current-1996-iit]
+  wafer builds up:
+
+  - Dixon, Lukaszek and Heden showed how resist
+    enhances charging;[^dixon-1996]
+  - Mehta et al. investigated negative
+    charging with the flood gun;[^mehta-1996]
+  - Current, Vella and
+    Lukaszek set out beam-plasma charging control.[^current-1996-iit]
+
   The gate oxides at risk are protected here by the capped gate and
   the resist, but the spacer-edge oxide over the extensions is
   exposed.
 * **Monitoring.** Sheet resistance by {term}`four-point probe` on
-  bare monitor wafers after a monitor anneal; we infer that the dose
+  bare monitor wafers after a monitor anneal. We infer that the dose
   is beyond the sensitive range of the thermal-wave monitor that
   Smith describes for implant process control[^smith-1985] and that
   the four-point probe is used instead (inference; no public source
@@ -187,14 +246,18 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis GSD high-dose implanter.** SkyWater lists "Axcelis GSD Hi
-  dose B11, BF2, P, As 2-180kev, 5e12 to 5e16" and, separately,
-  "Axcelis GSD High current/energy B11, BF2, P, As, 10-3000kev, 1e11
-  to 5e15".[^skw-01] Strength: **strong** for the tools, their
-  species and their dose ranges; the assignment of `PSDI` to the
-  "Hi dose" tool is an **inference** from the dose it must deliver
-  (of the order of 10¹⁵ cm⁻², beyond the "Axcelis 8250 Mid current …
-  1e11 to 1e14" range[^skw-01]). Axcelis describes the GSD family as
+* **Axcelis GSD high-dose implanter**
+  - *SkyWater says:* lists "Axcelis GSD Hi dose B11, BF2, P, As
+    2-180kev, 5e12 to 5e16" and, separately, "Axcelis GSD High
+    current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15".[^skw-01]
+  - *Tool exists:* **strong** for the tools, their species and their
+    dose ranges.
+  - *Runs this step:* the assignment of `PSDI` to the "Hi dose" tool is
+    an **inference** from the dose it must deliver (of the order of
+    10¹⁵ cm⁻², beyond the "Axcelis 8250 Mid current … 1e11 to 1e14"
+    range[^skw-01]).
+
+  Axcelis describes the GSD family as
   "the industry benchmark for the longest manufactured and supported
   batch ion implanter".[^axcelis-gsd]
 
@@ -212,15 +275,15 @@ fab (SKY130's recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PSDM <step-081>` (the mask). Next:
-  {ref}`2PSDI <step-083>` (the second p-type implant in the same
+* Previous: {ref}`PSDM <step-081>` (the mask).
+* Next: {ref}`2PSDI <step-083>` (the second p-type implant in the same
   resist), then {ref}`PDIS <step-084>` (strip).
-* Complementary implant: {ref}`NSDI <step-086>`; activation:
-  {ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>`.
-* The offset it is aligned to: {ref}`SPNIT <step-076>`,
-  {ref}`SPE <step-077>`; the screen it passes through:
-  {ref}`SPOX <step-080>`; the poly it dopes through the cut:
+* Same module: the complementary implant, {ref}`NSDI <step-086>`.
+* Depends on: the offset it is aligned to, {ref}`SPNIT <step-076>`,
+  {ref}`SPE <step-077>`; the screen it passes through,
+  {ref}`SPOX <step-080>`; the poly it dopes through the cut,
   {ref}`NPCME <step-079>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`.
+* Feeds: activation, {ref}`RTAD <step-088>` and {ref}`RTAD2 <step-092>`.
 * The PMOS channel it completes: {ref}`LVTPI <step-020>`,
   {ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`; the gate it does
   not dope: {ref}`P1I <step-050>`.
@@ -305,19 +368,23 @@ fab (SKY130's recipe is not public):
 * **The PMOS extension.** The PDK's PMOS cross-section shows "P−"
   extensions,[^pdk-07] but the mask list contains only N-tip masks
   (NTM, HVNTM, LDNTM)[^pdk-05] and this reference describes no PMOS
-  tip module. The extension may be formed by
-  {ref}`2PSDI <step-083>` (a lighter or tilted component under the
-  same resist), by lateral straggle and diffusion of this implant
-  under the spacer during {ref}`RTAD <step-088>`, or by a step not
-  separately named; the PDK's "HVPTM shadowing" entry of 0.089 µm in
+  tip module. The extension may be formed:
+
+  - by {ref}`2PSDI <step-083>` (a lighter or tilted component under the
+    same resist);
+  - by lateral straggle and diffusion of this implant
+    under the spacer during {ref}`RTAD <step-088>`;
+  - or by a step not separately named.
+
+  The PDK's "HVPTM shadowing" entry of 0.089 µm in
   its physical-criteria table[^pdk-03] hints that a high-voltage P-tip
   mask exists in at least one flow variant, but no such mask appears
   in the mask list. Which of these applies
   is an open question on this page.
-* Whether the gate poly of the PMOS is entirely shielded from this
+* **Shielding of the PMOS gate.** Whether the gate poly of the PMOS is entirely shielded from this
   implant is inferred from the cap thickness and npc.4; no public
   source states it.
-* Which implanter runs the step is inferred from dose capability.
+* **Which implanter.** Which implanter runs the step is inferred from dose capability.
 
 <!-- footnotes -->
 

@@ -409,3 +409,80 @@ pages: 066, 068, 072. One commit per page.
   belonged to the other clause (mask table/layers, the category bullets, Develop/studies); the
   proximity claim now carrying `[^hook-2003]`; glance and label lines.
 * **Caps**: para > 100 1 → 0; item > 60 1 → 0; sentence > 45 8 → 0.
+
+### 082 PSDI — done
+
+* **Lead.** The 61-word second sentence split at its colon ("… or a spacer. The implant is
+  *self-aligned* …"; "(on our reading)" stays on the SPOX clause it governs). Two paragraphs, split
+  before "A second p-type implant". 111 words as in the base. **First sentence 27 words, left**: its
+  only seam (", together with all the other P⁺ diffusions") would need a new verb and object, more
+  than step 7 allows.
+* **R-H3.** `### What the public record shows` after the figure caption, over the 241-word PDK and
+  test-tile paragraph and the P⁻ paragraph after it.
+* **R-PARA (evidence sequence).** The 241-word paragraph → an opening sentence and three labelled
+  paragraphs, every sentence in its base order: **Junction depth and angle.** (the junction-depth
+  sentence split at ", limits" → "It limits …", `[^pdk-03]` **repeated** on the first half because the
+  base's single marker covered all three clauses — masks-b H1, declared), **Sheet resistance.** (the
+  extraction and e-test values), **Measured on the test tile.** (the raw-data sentence split at its
+  semicolon; both markers `[^raw-data-passives][^raw-data-testtile-pads]` **repeated** on the first
+  half, which states what the repository and the pad list publish; the "(our extraction …)" hedge
+  stays on the measured values it governs, declared). "The species, energy and dose are not public …"
+  closes the passage as its own paragraph. R-TABLE was considered for the sheet-resistance values and
+  not used: pairing 205.5 Ω/sq with the "hv p+ res" structure is an inference the page draws only
+  through "lower for the high-voltage structure", and a row would state it outright.
+* **R-CATEGORY.** Classification sentence (≈ 40 w; no semicolon or closing dash to split at, so kept
+  whole, batch-4 D3) alone; the partner sentence and the "It differs …" sentence as a second paragraph,
+  "Its partner" → "`PSDI`'s partner" (R-PARA step 5).
+* **R-LIST.** "The deep source/drain does three things the extension cannot." → colon and three plain
+  bullets (each begins "It provides"/"It is", capitalised; joining "and" dropped); the closing sentence
+  stays as prose after the list with "Placing it" → "Placing the deep source/drain" (the pronoun's noun
+  back after the list). "Beyond the PMOS, the same implant makes …" → colon and four bullets; the taps
+  and the PNP/NPN stay in one bullet because the base's first `[^pdk-07]` came after both; the
+  NPCM hedge "on the reading of the NPCM page" opens its own bullet, in front of the claim it
+  governs (the dashes became a comma). "Two things the implant does *not* do, on the reading used
+  throughout this reference, are worth stating." → colon and two bullets (the hedge on the lead-in
+  covers both). The first bullet's 82-word sentence split at "— so SKY130" ("So SKY130 avoids …", a
+  sentence) and at the semicolon (continuation "The work-function dependence …"); its lead block (the
+  gate sentence plus the "So" sentence, 63 w) is **over the 60-word item cap, listed**: its only
+  internal seam is before "So", which may not open a continuation paragraph (R-PARA step 2).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** Species (131 w): lead = the first sentence; continuation 1 = BF₂⁺, the 57-word
+  sentence split at its semicolon ("The fluorine it brings …"; `[^wang-1997]` is attached to "as Wang
+  et al. showed", which governs only the fluorine clause); continuation 2 = Bourdelle, Öztürk,
+  Adachi, SkyWater's species, "not public". Energy and dose (72 w): lead = the industry-typical
+  sentence, split at its semicolon; continuation from "The PDK's 0.1 µm junction depth". Tilt (72 w,
+  a 66-word sentence): lead "0°, per the PDK's …"; continuation split at ", and it needs" ("It needs
+  …") and at the semicolon ("On a batch spinning-disc implanter …"). Wafer handling (106 w): lead =
+  the cooling sentence; continuation = the flood-gun sentence as a lead-in with the three studies as
+  plain nested bullets (a list of studies; each keeps its marker; joining "and" dropped), then the
+  gate-oxide sentence. Monitoring split at its semicolon ("We infer that …").
+* **R-TOOLS.** GSD: *SkyWater says:* "lists "…" and, separately, "…"" (verb-first), *Tool exists:*
+  **strong** …, *Runs this step:* the **inference** with its parenthetical and the 8250 quotation (the
+  reason for the grade); the Axcelis press-release sentence (not SkyWater's) is the continuation.
+  One tool, no recap table.
+* **R-RELATED.** Previous/Next split; "Complementary implant: NSDI; activation: RTAD, RTAD2" → `Same
+  module:` (NSDI) and `Feeds:` (activation, RTAD and RTAD2); "The offset it is aligned to … the screen
+  … the poly it dopes through the cut" → one `Depends on:` bullet; "The PMOS channel it completes … the
+  gate it does not dope" keeps no label.
+* **R-OPENQ.** The 111-word "PMOS extension" bullet (label already present): lead = the cross-section
+  and mask-list sentence with its markers plus "The extension may be formed:"; the three possibilities
+  as sub-bullets, each keeping its "by" and the last its "or"; the HVPTM sentence and the question
+  ("Which of these applies is an open question on this page.") as the continuation, in the base order
+  (R-OPENQ step 2, batch-5 D6). Labels added to the other two: "Shielding of the PMOS gate",
+  "Which implanter".
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers the PDK's S/D XJ 0.1 µm and "High
+  current" 0° `[^pdk-03]` and `RSP` 197 Ω/sq with its limits `[^pdk-07]`; tool line with both grades;
+  Not public from Open questions 1–2.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `raw-data-passives`,
+  `raw-data-testtile-pads` (repeats), `pdk-07`, `skw-01` and a second `pdk-03` (glance); numbers 0,
+  0.1, 166–228, 197, ⁺, quotes "High current", "N+ or P+ S/D (XJ)", ref `step-083`, hedges
+  "inference", "likely", "not public" (glance); `number_order` (0.1, 0, 197, 166–228) — the glance.
+  REGROUPED: the test-tile sentence (25.05 | 211.7, 205.5), the "Beyond the PMOS" list and the
+  "Two things" list (same digits, same order). WORDS LOST: "it" ("Placing the deep source/drain"),
+  "its" ("`PSDI`'s partner"), "strength".
+* **Marker coverage.** 29 flags, all read: list lead-ins and bullets whose base marker belonged to
+  another item; split halves whose base marker belonged to the other clause (BF₂/Wang, Krieger/"It
+  needs"/Jones, the three flood-gun studies, the "(on our reading)" SPOX clause, the monitor
+  sentence); the repeated markers above; glance and label lines.
+* **Caps**: para > 100 5 → 0; item > 60 6 → 1 (the PMOS-gate bullet, above); sentence > 45 12 → 0.
+  First sentence 27 w (above).
