@@ -198,7 +198,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 ## Machines likely used at SkyWater
 
 * **Novellus (now Lam) HDP-CVD**
-  - *SkyWater says:* it names "Lam/Novellus High Density Plasma
+  - *SkyWater says:* names "Lam/Novellus High Density Plasma
     (HDP)" with sputter etch,[^skw-01] and the technician profile
     names "a Novellus high density plasma tool".[^skw-07]
   - *Tool exists:* strong (two SkyWater statements).

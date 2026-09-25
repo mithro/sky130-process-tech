@@ -142,7 +142,7 @@ polisher, which is what this step needs.
 ## Machines likely used at SkyWater
 
 * **Applied Materials Mirra CMP**
-  - *SkyWater says:* it names it and lists oxide and nitride among
+  - *SkyWater says:* names the tool and lists oxide and nitride among
     its applications.[^skw-01]
   - *Tool exists:* **strong** for the tool and its oxide and nitride
     polishes (SkyWater statement).

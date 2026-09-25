@@ -198,7 +198,7 @@ W/WN".[^skw-01]
 | Post-etch clean — DNS/FSI Mercury or Akrion Gamma | strong (existence) |
 
 * **AMAT DPS II**
-  - *SkyWater says:* it names the tool, the HBr/Cl₂/O₂ gases and the
+  - *SkyWater says:* names the tool, the HBr/Cl₂/O₂ gases and the
     "trench" application.[^skw-01]
   - *Tool exists:* strong for the tool and its stated application.
   - *Runs this step:* the assignment to this specific step is our

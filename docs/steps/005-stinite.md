@@ -123,7 +123,7 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
 ## Machines likely used at SkyWater
 
 * **Lam 9400 TCP**
-  - *SkyWater says:* it lists "Lam 9400 TCP, poly/nitride, HBr, CF4,
+  - *SkyWater says:* lists "Lam 9400 TCP, poly/nitride, HBr, CF4,
     SF6, O2".[^skw-01]
   - *Tool exists:* strong that a nitride-capable TCP etcher exists.
   - *Runs this step:* **inference**, the entry being the only one on
@@ -132,13 +132,13 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
     being "for selective etching of silicon and
     polysilicon".[^snf-9400]
 * **AMAT DPS II (Centura)**
-  - *SkyWater says:* it lists it with CF₄ and CHF₃ among its gases and
+  - *SkyWater says:* lists CF₄ and CHF₃ among its gases and
     "trench" among its applications.[^skw-01]
   - *Tool exists:* strong that the tool and gases exist.
   - *Runs this step:* **medium**, since its CF₄ and CHF₃ etch nitride
     although the entry names no nitride application.
 * **Lam 4400**
-  - *SkyWater says:* it lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
+  - *SkyWater says:* lists "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
     O2".[^skw-01]
   - *Tool exists:* strong for existence.
   - *Runs this step:* **weak**, as the entry names no application.

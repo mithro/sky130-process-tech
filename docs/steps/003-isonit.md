@@ -153,7 +153,7 @@ which is a different (later-generation) precursor.
 ## Machines likely used at SkyWater
 
 * **Aviza furnace running LPCVD nitride**
-  - *SkyWater says:* it states "Furnaces are all made by Aviza", with
+  - *SkyWater says:* states "Furnaces are all made by Aviza", with
     LPCVD nitride among the listed processes.[^skw-01]
   - *Tool exists:* strong.
 

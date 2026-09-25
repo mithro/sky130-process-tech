@@ -155,7 +155,7 @@ width because of the encroachment under the nitride edge.
 ## Machines likely used at SkyWater
 
 * **Aviza furnace**
-  - *SkyWater says:* it states "Furnaces are all made by Aviza", with
+  - *SkyWater says:* states "Furnaces are all made by Aviza", with
     dry and wet oxidation to 1150 °C.[^skw-01]
   - *Tool exists:* strong for the furnace fleet.
   - *Runs this step:* assignment of `LINOX` to a furnace rather than

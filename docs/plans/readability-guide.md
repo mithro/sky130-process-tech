@@ -614,9 +614,12 @@ original form and is left out of the recap table.
 2. Three sub-bullets, with the original words moved unchanged under the matching label:
    * `*SkyWater says:*` holds **only** statements SkyWater made: the capability list, a filing, a
      job posting. Drop the leading subject and write it verb-first: `*SkyWater says:* lists "Lam
-     4400, …"`, never "it lists it". A statement from any other source (Cypress, Stanford, a
-     vendor, a used-equipment listing) stays as a plain continuation paragraph under the
-     sub-bullets, in its original words.
+     4400, …"` — never `*SkyWater says:* it lists "Lam 4400, …"` (the leading pronoun) and never
+     `*SkyWater says:* it lists it with …` (a second, redundant pronoun standing in for the tool
+     or the thing SkyWater lists it under — name the thing instead, or drop the object if the
+     verb's own object already names it, as in "lists both"). A statement from any other source
+     (Cypress, Stanford, a vendor, a used-equipment listing) stays as a plain continuation
+     paragraph under the sub-bullets, in its original words.
    * `*Tool exists:*` — the grading of existence, and its reason only.
    * `*Runs this step:*` — the grading of the assignment to this step, and its reason only. Any
      other sentence stays in the continuation paragraph.

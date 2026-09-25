@@ -142,7 +142,7 @@ fab:*
   - *Runs this step:* the assignment of this strip to any one of them
     is an inference.
 * **Akrion Gamma batch wet bench**
-  - *SkyWater says:* it lists it with sulphuric, SC1, phosphoric and
+  - *SkyWater says:* lists sulphuric, SC1, phosphoric and
     {term}`BOE` chemistries and spin and IPA drying.[^skw-01]
   - *Tool exists:* strong for existence.
   - *Runs this step:* a sulphuric (SPM) + SC-1 sequence on this bench
