@@ -10,14 +10,12 @@ silicon at the surface is consumed and converted into glass.
 | What it does | grows silicon dioxide out of the silicon wafer itself, by exposing hot silicon to oxygen or steam |
 | Steps in SKY130 | 6 |
 | Tool classes | {ref}`Vertical batch furnaces <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processors <machine-rapid-thermal-processor>` |
-| Consumable classes | {ref}`Process gases <material-process-gases>` |
+| Consumable classes | {ref}`Process gases <material-process-gases>`, {ref}`Hardware consumables <material-hardware-consumables>`, {ref}`Substrates and test wafers <material-substrates>` |
 | Governing relation | Deal–Grove model |
 
 ## What this class of step does
 
-Thermal oxidation grows a film of silicon dioxide (SiO₂) *out of* the
-silicon wafer itself, by exposing hot silicon to oxygen or steam. The
-silicon at the surface is consumed and converted into glass. Because
+Because
 the oxide is grown rather than deposited, its interface with the
 underlying silicon is atomically clean and electrically almost
 perfect. This is why
@@ -27,7 +25,7 @@ why thin thermal oxides are also used wherever silicon must be
 protected, passivated or spaced from a nitride.
 
 Precisely: the wafer is heated to between 800 and 1200 °C in a furnace
-or a single-wafer rapid-thermal chamber. It is exposed to dry O₂ (dry
+or a single-wafer rapid-thermal chamber.[^wiki-thox] It is exposed to dry O₂ (dry
 oxidation, Si + O₂ → SiO₂) or to water vapour (wet oxidation,
 Si + 2H₂O → SiO₂ + 2H₂), for a time chosen from the growth kinetics to
 give the target thickness.[^wiki-thox]
@@ -224,13 +222,13 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
 
 ## Steps in this category
 
-:::{table} The six oxidation steps of the flow
+:::{table} The six oxidation steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment; "A, B" means either is named as an equal option
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
 | 2 | {ref}`BOX <step-002>` | Base oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
 | 10 | {ref}`LINOX <step-010>` | LINOX oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
-| 40 | {ref}`ONO <step-040>` | ONO stack oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
+| 40 | {ref}`ONO <step-040>` | ONO stack oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>`, {ref}`LPCVD furnace <machine-vertical-furnace-lpcvd>` |
 | 43 | {ref}`GOX100 <step-043>` | Gate oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
 | 47 | {ref}`LVGOX <step-047>` | Gate oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
 | 63 | {ref}`IOX45 <step-063>` | Implant oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
