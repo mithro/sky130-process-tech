@@ -48,8 +48,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="185.9" class="t-label-note muted" data-owner="poly">as deposited</text>
 <text x="328.0" y="201.9" class="t-label-note muted" data-owner="poly">(SAGD, step 048)</text>
 <text x="328.0" y="217.9" class="t-label-note tag" data-owner="poly">inferred</text>
-<path class="leader" data-owner="poly" d="M280.0 107.5V90.0H297.0V133.0H324.0"/>
-<circle class="dot" data-owner="poly" cx="280.0" cy="107.5" r="1.9"/>
+<path class="leader" data-owner="poly" d="M272.0 107.5V90.0H297.0V133.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="272.0" cy="107.5" r="1.9"/>
 <text x="328.0" y="49.9" class="t-label-title" data-owner="rpmres">Photoresist</text>
 <text x="328.0" y="65.9" class="t-label-note muted" data-owner="rpmres">RPM, step 049;</text>
 <text x="328.0" y="81.9" class="t-label-note muted" data-owner="rpmres">over the future</text>

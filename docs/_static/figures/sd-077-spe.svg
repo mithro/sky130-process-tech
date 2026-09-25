@@ -28,23 +28,23 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <g class="drawing" data-rect="12,38.0,268,246.5" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,234.51 283.00,234.51 283.00,398.51 9.00,398.51"/>
 <polygon class="mat m-oxide-thermal" data-layer="thinox" points="9.00,215.63 283.00,215.63 283.00,234.51 9.00,234.51"/>
-<polygon class="mat m-poly" data-layer="poly" points="158.25,140.14 250.75,140.14 250.75,215.63 158.25,215.63"/>
-<polygon class="mat m-nitride" data-layer="nit" points="158.25,102.39 250.75,102.39 250.75,140.14 158.25,140.14"/>
-<polygon fill="url(#p-hatch)" points="158.25,102.39 250.75,102.39 250.75,140.14 158.25,140.14"/>
-<polygon class="mat m-oxide-dep" data-layer="capox" points="158.25,72.20 250.75,72.20 250.75,102.39 158.25,102.39"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,196.76 138.00,196.76 138.50,195.28 140.00,150.28 140.50,140.14 158.25,140.14 158.25,215.63 9.00,215.63"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.75,140.14 268.50,140.14 269.00,149.86 270.50,194.86 271.00,196.76 283.00,196.76 283.00,215.63 250.75,215.63"/>
-<polygon class="mat m-nitride" data-layer="spnit" points="9.00,166.56 108.00,166.56 108.50,159.17 110.00,114.17 110.50,109.94 127.00,109.94 127.50,96.51 129.00,42.51 129.50,42.00 283.00,42.00 283.00,196.76 271.00,196.76 270.50,194.86 269.00,149.86 268.50,140.14 251.00,140.14 250.50,72.20 158.50,72.20 158.00,140.14 140.50,140.14 140.00,150.28 138.50,195.28 138.00,196.76 9.00,196.76"/>
-<polygon fill="url(#p-hatch)" points="9.00,166.56 108.00,166.56 108.50,159.17 110.00,114.17 110.50,109.94 127.00,109.94 127.50,96.51 129.00,42.51 129.50,42.00 283.00,42.00 283.00,196.76 271.00,196.76 270.50,194.86 269.00,149.86 268.50,140.14 251.00,140.14 250.50,72.20 158.50,72.20 158.00,140.14 140.50,140.14 140.00,150.28 138.50,195.28 138.00,196.76 9.00,196.76"/>
-<polygon class="mat m-sd-n" data-layer="polyn" points="158.25,140.14 250.75,140.14 250.75,215.63 158.25,215.63"/>
-<polygon class="mat m-implant" data-layer="halo" points="9.00,234.51 178.25,234.51 178.25,272.25 9.00,272.25"/>
-<polygon fill="url(#p-vlines-ink)" points="9.00,234.51 178.25,234.51 178.25,272.25 9.00,272.25"/>
-<polygon class="mat m-implant" data-layer="halo" points="230.75,234.51 283.00,234.51 283.00,272.25 230.75,272.25"/>
-<polygon fill="url(#p-vlines-ink)" points="230.75,234.51 283.00,234.51 283.00,272.25 230.75,272.25"/>
-<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,234.51 159.25,234.51 159.25,257.15 9.00,257.15"/>
-<polygon fill="url(#p-xhatch)" points="9.00,234.51 159.25,234.51 159.25,257.15 9.00,257.15"/>
-<polygon class="mat m-tip-n" data-layer="tipn" points="249.75,234.51 283.00,234.51 283.00,257.15 249.75,257.15"/>
-<polygon fill="url(#p-xhatch)" points="249.75,234.51 283.00,234.51 283.00,257.15 249.75,257.15"/>
+<polygon class="mat m-poly" data-layer="poly" points="158.94,140.14 250.06,140.14 250.06,215.63 158.94,215.63"/>
+<polygon class="mat m-nitride" data-layer="nit" points="158.94,102.39 250.06,102.39 250.06,140.14 158.94,140.14"/>
+<polygon fill="url(#p-hatch)" points="158.94,102.39 250.06,102.39 250.06,140.14 158.94,140.14"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="158.94,72.20 250.06,72.20 250.06,102.39 158.94,102.39"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,196.76 139.75,196.76 139.88,195.70 140.25,150.70 140.38,140.14 158.94,140.14 158.94,215.63 9.00,215.63"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,140.14 268.62,140.14 268.75,149.01 269.12,194.01 269.25,196.76 283.00,196.76 283.00,215.63 250.06,215.63"/>
+<polygon class="mat m-nitride" data-layer="spnit" points="9.00,166.56 109.62,166.56 109.75,156.85 110.12,111.85 110.25,109.94 128.50,109.94 128.62,98.03 129.00,44.03 129.12,42.00 283.00,42.00 283.00,196.76 269.25,196.76 269.12,194.01 268.75,149.01 268.62,140.14 250.12,140.14 250.00,72.20 159.00,72.20 158.88,140.14 140.38,140.14 140.25,150.70 139.88,195.70 139.75,196.76 9.00,196.76"/>
+<polygon fill="url(#p-hatch)" points="9.00,166.56 109.62,166.56 109.75,156.85 110.12,111.85 110.25,109.94 128.50,109.94 128.62,98.03 129.00,44.03 129.12,42.00 283.00,42.00 283.00,196.76 269.25,196.76 269.12,194.01 268.75,149.01 268.62,140.14 250.12,140.14 250.00,72.20 159.00,72.20 158.88,140.14 140.38,140.14 140.25,150.70 139.88,195.70 139.75,196.76 9.00,196.76"/>
+<polygon class="mat m-sd-n" data-layer="polyn" points="158.94,140.14 250.06,140.14 250.06,215.63 158.94,215.63"/>
+<polygon class="mat m-implant" data-layer="halo" points="9.00,234.51 178.06,234.51 178.06,272.25 9.00,272.25"/>
+<polygon fill="url(#p-vlines-ink)" points="9.00,234.51 178.06,234.51 178.06,272.25 9.00,272.25"/>
+<polygon class="mat m-implant" data-layer="halo" points="230.94,234.51 283.00,234.51 283.00,272.25 230.94,272.25"/>
+<polygon fill="url(#p-vlines-ink)" points="230.94,234.51 283.00,234.51 283.00,272.25 230.94,272.25"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,234.51 159.19,234.51 159.19,257.15 9.00,257.15"/>
+<polygon fill="url(#p-xhatch)" points="9.00,234.51 159.19,234.51 159.19,257.15 9.00,257.15"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="249.81,234.51 283.00,234.51 283.00,257.15 249.81,257.15"/>
+<polygon fill="url(#p-xhatch)" points="249.81,234.51 283.00,234.51 283.00,257.15 249.81,257.15"/>
 </g>
 <text x="328.0" y="282.5" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 276.5H285.0V277.6H324.0"/>
@@ -52,9 +52,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="158.0" class="t-label-title" data-owner="polyn">n-type gate film</text>
 <text x="328.0" y="174.0" class="t-label-note muted" data-owner="polyn">gate implant,</text>
 <text x="328.0" y="190.0" class="t-label-note muted" data-owner="polyn">step 050</text>
-<path class="halo" d="M251.0 153.1L280.0 153.1"/>
-<path class="leader" data-owner="polyn" d="M246.5 153.1H297.0H324.0"/>
-<circle class="dot" data-owner="polyn" cx="246.5" cy="153.1" r="1.9"/>
+<path class="halo" d="M250.1 153.1L280.0 153.1"/>
+<path class="leader" data-owner="polyn" d="M246.0 153.1H297.0H324.0"/>
+<circle class="dot" data-owner="polyn" cx="246.0" cy="153.1" r="1.9"/>
 <text x="328.0" y="242.5" class="t-label-title" data-owner="tipn">n-type tip</text>
 <text x="328.0" y="258.5" class="t-label-note muted" data-owner="tipn">ASTI, step 065</text>
 <path class="leader" data-owner="tipn" d="M276.0 238.7H291.0V237.6H324.0"/>
@@ -73,34 +73,34 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <g class="drawing" data-rect="12,392.6,268,216.3" clip-path="url(#clip2)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,558.89 283.00,558.89 283.00,722.89 9.00,722.89"/>
 <polygon class="mat m-oxide-thermal" data-layer="thinox" points="9.00,540.02 283.00,540.02 283.00,558.89 9.00,558.89"/>
-<polygon class="mat m-poly" data-layer="poly" points="158.25,464.52 250.75,464.52 250.75,540.02 158.25,540.02"/>
-<polygon class="mat m-nitride" data-layer="nit" points="158.25,426.78 250.75,426.78 250.75,464.52 158.25,464.52"/>
-<polygon fill="url(#p-hatch)" points="158.25,426.78 250.75,426.78 250.75,464.52 158.25,464.52"/>
-<polygon class="mat m-oxide-dep" data-layer="capox" points="158.25,396.58 250.75,396.58 250.75,426.78 158.25,426.78"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,521.14 138.00,521.14 138.50,519.67 140.00,474.67 140.50,464.52 158.25,464.52 158.25,540.02 9.00,540.02"/>
-<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.75,464.52 268.50,464.52 269.00,474.24 270.50,519.24 271.00,521.14 283.00,521.14 283.00,540.02 250.75,540.02"/>
-<polygon class="mat m-nitride" data-layer="spnit" points="109.25,464.52 127.00,464.52 127.50,451.09 129.00,397.09 129.50,396.58 158.25,396.58 158.25,464.52 140.50,464.52 140.00,474.67 138.50,519.67 138.00,521.14 109.25,521.14"/>
-<polygon fill="url(#p-hatch)" points="109.25,464.52 127.00,464.52 127.50,451.09 129.00,397.09 129.50,396.58 158.25,396.58 158.25,464.52 140.50,464.52 140.00,474.67 138.50,519.67 138.00,521.14 109.25,521.14"/>
-<polygon class="mat m-nitride" data-layer="spnit" points="250.75,396.58 283.00,396.58 283.00,521.14 271.00,521.14 270.50,519.24 269.00,474.24 268.50,464.52 250.75,464.52"/>
-<polygon fill="url(#p-hatch)" points="250.75,396.58 283.00,396.58 283.00,521.14 271.00,521.14 270.50,519.24 269.00,474.24 268.50,464.52 250.75,464.52"/>
-<polygon class="mat m-sd-n" data-layer="polyn" points="158.25,464.52 250.75,464.52 250.75,540.02 158.25,540.02"/>
-<polygon class="mat m-implant" data-layer="halo" points="9.00,558.89 178.25,558.89 178.25,596.64 9.00,596.64"/>
-<polygon fill="url(#p-vlines-ink)" points="9.00,558.89 178.25,558.89 178.25,596.64 9.00,596.64"/>
-<polygon class="mat m-implant" data-layer="halo" points="230.75,558.89 283.00,558.89 283.00,596.64 230.75,596.64"/>
-<polygon fill="url(#p-vlines-ink)" points="230.75,558.89 283.00,558.89 283.00,596.64 230.75,596.64"/>
-<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,558.89 159.25,558.89 159.25,581.54 9.00,581.54"/>
-<polygon fill="url(#p-xhatch)" points="9.00,558.89 159.25,558.89 159.25,581.54 9.00,581.54"/>
-<polygon class="mat m-tip-n" data-layer="tipn" points="249.75,558.89 283.00,558.89 283.00,581.54 249.75,581.54"/>
-<polygon fill="url(#p-xhatch)" points="249.75,558.89 283.00,558.89 283.00,581.54 249.75,581.54"/>
-<polyline class="hl" points="12.00,518.14 109.00,518.14 109.50,461.52 127.00,461.52 127.50,448.09 129.00,394.09 129.50,393.58 280.00,393.58"/>
+<polygon class="mat m-poly" data-layer="poly" points="158.94,464.52 250.06,464.52 250.06,540.02 158.94,540.02"/>
+<polygon class="mat m-nitride" data-layer="nit" points="158.94,426.78 250.06,426.78 250.06,464.52 158.94,464.52"/>
+<polygon fill="url(#p-hatch)" points="158.94,426.78 250.06,426.78 250.06,464.52 158.94,464.52"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="158.94,396.58 250.06,396.58 250.06,426.78 158.94,426.78"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,521.14 139.75,521.14 139.88,520.09 140.25,475.09 140.38,464.52 158.94,464.52 158.94,540.02 9.00,540.02"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.06,464.52 268.62,464.52 268.75,473.40 269.12,518.40 269.25,521.14 283.00,521.14 283.00,540.02 250.06,540.02"/>
+<polygon class="mat m-nitride" data-layer="spnit" points="109.94,464.52 128.50,464.52 128.62,452.61 129.00,398.61 129.12,396.58 158.94,396.58 158.94,464.52 140.38,464.52 140.25,475.09 139.88,520.09 139.75,521.14 109.94,521.14"/>
+<polygon fill="url(#p-hatch)" points="109.94,464.52 128.50,464.52 128.62,452.61 129.00,398.61 129.12,396.58 158.94,396.58 158.94,464.52 140.38,464.52 140.25,475.09 139.88,520.09 139.75,521.14 109.94,521.14"/>
+<polygon class="mat m-nitride" data-layer="spnit" points="250.06,396.58 283.00,396.58 283.00,521.14 269.25,521.14 269.12,518.40 268.75,473.40 268.62,464.52 250.06,464.52"/>
+<polygon fill="url(#p-hatch)" points="250.06,396.58 283.00,396.58 283.00,521.14 269.25,521.14 269.12,518.40 268.75,473.40 268.62,464.52 250.06,464.52"/>
+<polygon class="mat m-sd-n" data-layer="polyn" points="158.94,464.52 250.06,464.52 250.06,540.02 158.94,540.02"/>
+<polygon class="mat m-implant" data-layer="halo" points="9.00,558.89 178.06,558.89 178.06,596.64 9.00,596.64"/>
+<polygon fill="url(#p-vlines-ink)" points="9.00,558.89 178.06,558.89 178.06,596.64 9.00,596.64"/>
+<polygon class="mat m-implant" data-layer="halo" points="230.94,558.89 283.00,558.89 283.00,596.64 230.94,596.64"/>
+<polygon fill="url(#p-vlines-ink)" points="230.94,558.89 283.00,558.89 283.00,596.64 230.94,596.64"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,558.89 159.19,558.89 159.19,581.54 9.00,581.54"/>
+<polygon fill="url(#p-xhatch)" points="9.00,558.89 159.19,558.89 159.19,581.54 9.00,581.54"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="249.81,558.89 283.00,558.89 283.00,581.54 249.81,581.54"/>
+<polygon fill="url(#p-xhatch)" points="249.81,558.89 283.00,558.89 283.00,581.54 249.81,581.54"/>
+<polyline class="hl" points="12.00,518.14 109.88,518.14 110.00,461.52 128.50,461.52 128.62,449.61 129.00,395.61 129.12,393.58 280.00,393.58"/>
 </g>
 <text x="328.0" y="605.8" class="t-label-title" data-owner="sub">Silicon wafer</text>
 <path class="leader" data-owner="sub" d="M276.0 600.9H285.0H324.0"/>
 <circle class="dot" data-owner="sub" cx="276.0" cy="600.9" r="1.9"/>
 <text x="328.0" y="482.4" class="t-label-title" data-owner="polyn">n-type gate film</text>
-<path class="halo" d="M251.0 477.5L280.0 477.5"/>
-<path class="leader" data-owner="polyn" d="M246.5 477.5H297.0H324.0"/>
-<circle class="dot" data-owner="polyn" cx="246.5" cy="477.5" r="1.9"/>
+<path class="halo" d="M250.1 477.5L280.0 477.5"/>
+<path class="leader" data-owner="polyn" d="M246.0 477.5H297.0H324.0"/>
+<circle class="dot" data-owner="polyn" cx="246.0" cy="477.5" r="1.9"/>
 <text x="328.0" y="573.9" class="t-label-title" data-owner="tipn">n-type tip</text>
 <path class="leader" data-owner="tipn" d="M276.0 569.0H291.0H324.0"/>
 <circle class="dot" data-owner="tipn" cx="276.0" cy="569.0" r="1.9"/>

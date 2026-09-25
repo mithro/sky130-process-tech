@@ -117,7 +117,7 @@ boundary.
 | A short line ending in a dot | a label leader; the dot sits on the material the label names |
 | Blue arrows pointing at the surface | an implant; the arrows lean only if the page gives a SKY130 tilt, and the caption says which |
 | A blue trace just above a surface | the surface this step made |
-| A dashed grey outline with no fill and no label | a layer that is present but untouched by this step, drawn faded; it is named on the figure of the step that made it, and the caption names it |
+| A dashed grey outline with no fill and no label | a layer that is present but untouched by this step, drawn faded; it is named on the figure of the step that made it, and the caption names it. In a close-up it keeps its own colour inside the dashed outline, because an enlarged empty film would look like a gap |
 
 A label with no tag is a plain public fact. A label in amber carries one of the three tags in
 the table above, and the figure's caption repeats the same hedge in words.

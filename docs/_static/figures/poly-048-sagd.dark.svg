@@ -78,9 +78,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="430.9" class="t-label-note muted" data-owner="poly">as deposited</text>
 <text x="328.0" y="446.9" class="t-label-note muted" data-owner="poly">(SAGD, step 048)</text>
 <text x="328.0" y="462.9" class="t-label-note tag" data-owner="poly">inferred</text>
-<path class="halo" d="M280.0 393.0L280.0 399.0"/>
-<path class="leader" data-owner="poly" d="M280.0 402.5V385.0H297.0V378.0H324.0"/>
-<circle class="dot" data-owner="poly" cx="280.0" cy="402.5" r="1.9"/>
+<path class="halo" d="M272.0 393.0L272.0 399.0"/>
+<path class="leader" data-owner="poly" d="M272.0 402.5V385.0H297.0V378.0H324.0"/>
+<circle class="dot" data-owner="poly" cx="272.0" cy="402.5" r="1.9"/>
 <text x="63.0" y="341.9" class="t-label-title" data-owner="dim0">Gate film thickness</text>
 <text x="63.0" y="357.9" class="t-label-note muted" data-owner="dim0">0.18 µm in the PDK</text>
 <path class="leader" data-owner="dim0" d="M42.0 404.0H54.0V337.0H59.0"/>

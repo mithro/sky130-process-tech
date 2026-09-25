@@ -200,6 +200,7 @@ class Svg:
         self.body: list[str] = []
         self.h = 0.0
         self.patterns_used: set[str] = set()
+        self.ghosts = False
 
     def add(self, s: str):
         self.body.append(s)
@@ -243,6 +244,11 @@ class Svg:
         # it looks the same on every host and cannot be mistaken for any material.
         css += (f".mat.faded{{fill:none;stroke:var(--ink-muted);"
                 f"stroke-dasharray:{ST['faded-dash']}}}\n")
+        if self.ghosts:
+            # ... except in a close-up, where the enlargement would turn an empty film into a
+            # gap: there it keeps its own fill and loses only its outline and its label.
+            css += (f".mat.ghost{{stroke:var(--ink-muted);"
+                    f"stroke-dasharray:{ST['faded-dash']}}}\n")
         css += (f".patink{{stroke:var(--ink);stroke-width:{ST['ink-hatch']};"
                 f"opacity:{ST['ink-hatch-opacity']};fill:none}}\n")
         css += f".dim{{stroke:var(--ink);stroke-width:{ST['dimension']};fill:none}}.dimhead{{fill:var(--ink)}}"
@@ -287,11 +293,16 @@ class Svg:
         )
 
 
-def fill_material(svg: Svg, mat: str, points: str, layer: str = "", faded: bool = False) -> None:
+def fill_material(svg: Svg, mat: str, points: str, layer: str = "", faded: bool = False,
+                  ghost: bool = False) -> None:
     """A material polygon: the token fill, its outline, and its pattern overlay.  A faded
-    polygon is context the step does not touch: drawn, but quietly, and never labelled."""
+    polygon is context the step does not touch: drawn, but quietly, and never labelled.  In
+    a close-up (``ghost``) a faded polygon keeps its fill: enlarged, an empty film reads as a
+    void."""
     lid = f' data-layer="{layer}"' if layer else ""
-    fd = " faded" if faded else ""
+    fd = (" ghost" if ghost else " faded") if faded else ""
+    if faded and ghost:
+        svg.ghosts = True
     svg.add(f'<polygon class="mat m-{mat}{fd}"{lid} points="{points}"/>')
     pat = TOK["materials"][mat]["pattern"]
     if pat != "none" and not faded:
@@ -955,6 +966,8 @@ def _plan_over(xs: XSection, lid: str, hidden: set, ion_xs, ion_tail, ion_cx, to
         x = xs.x(i)
         if any((j not in colset) for j in range(max(0, i - k8), min(xs.n, i + k8 + 1))):
             continue                                        # too near the layer's own end
+        if x < 8 or x > DRAW_W - 8:
+            continue                                        # too near the drawing's edge
         if any(abs(x - tx) < 10 for tx in taken):
             continue                                        # another label already rises here
         if ov:
@@ -1312,11 +1325,12 @@ def _zoom_panel(p: dict, a: float, z: float) -> dict:
     return q
 
 
-def series_states(series: dict) -> tuple[dict[str, XSection], dict[str, str]]:
-    """The state after every step of a series, plus the step at which each layer appeared."""
+def series_states(series: dict, dx: float = 0.5) -> tuple[dict[str, XSection], dict[str, str]]:
+    """The state after every step of a series, plus the step at which each layer appeared.
+    ``dx`` is the sampling step (finer for a close-up)."""
     states = {}
     born: dict[str, str] = {"sub": "000"}
-    xs = XSection(series["substrate"])
+    xs = XSection(series["substrate"], dx)
     states["000"] = xs.clone()
     for op in series["ops"]:
         xs.apply(op)
@@ -1328,7 +1342,30 @@ def series_states(series: dict) -> tuple[dict[str, XSection], dict[str, str]]:
 
 def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     svg = Svg("xsection", spec["alt"], spec["alt"])
-    states, born = series_states(series)
+    # `routes`: this figure's own leader routes for some layers, over the series' (a close-up
+    # crops a film at the drawing's edge, where a series `over` route would rise up the edge).
+    if spec.get("routes"):
+        ids = {o.get("id") for o in series["ops"]}
+        series = dict(series, ops=[dict(o) for o in series["ops"]])
+        for lid, rt in spec["routes"].items():
+            if rt not in ROUTES + ("auto",) or lid not in ids:
+                errs.append(f"routes: {lid!r}: {rt!r} is not a layer of the series and a route "
+                            f"({', '.join(ROUTES)} or auto)")
+                continue
+            for o in series["ops"]:
+                if o.get("id") == lid:
+                    if rt == "auto":
+                        o.pop("route", None)        # the generator chooses, panel by panel
+                    else:
+                        o["route"] = rt
+    close = spec.get("close_up")
+    fine = 1
+    if (isinstance(close, list) and len(close) == 2
+            and all(isinstance(v, (int, float)) for v in close) and close[1] - close[0] > 0):
+        # a close-up enlarges every sample: build the series on a finer grid, so a sloped wall
+        # is still drawn at the full-slice resolution and does not turn into a staircase
+        fine = max(1, math.ceil(DRAW_W / (close[1] - close[0])))
+    states, born = series_states(series, 0.5 / fine)
     last_step = max(states)
     series_ids = {"sub"} | {o["id"] for o in series["ops"] if o.get("id")}
     newest = series.get("note_order") == "newest"
@@ -1636,7 +1673,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                 continue
             for poly in st.polygons(lid):
                 fill_material(svg, layer["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly),
-                              lid, faded=lid in faded)
+                              lid, faded=lid in faded, ghost=zoom > 1)
         # Doped overlays are painted in order of ``z`` (default 0), then of creation: a thin
         # channel implant made before a well is still drawn over that well.
         for ov in sorted(st.overlays, key=lambda o: float(o.get("z", 0))):
@@ -1644,7 +1681,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                 continue
             for poly in st.overlay_polygons(ov):
                 fill_material(svg, ov["material"], " ".join(f"{f2(sx(px))},{f2(sy(py))}" for px, py in poly),
-                              ov["id"], faded=ov["id"] in faded)
+                              ov["id"], faded=ov["id"] in faded, ghost=zoom > 1)
         # The accent traces the surface this step made, drawn just clear of it, so that it
         # marks a 5 u film instead of covering it.
         off = SP["highlight-offset"]
@@ -2258,6 +2295,17 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 pts = [tuple(float(v) for v in q.split(",")) for q in pg.get("points").split()]
                 painted.append((pg.get("data-layer"), pts, (gx, gy, gx + gw, gy + gh)))
     names = {lay for lay, _p, _r in painted}
+    # 15c: a dot on (or within 3 u of) its drawing's left or right edge is half outside the
+    # picture, and its leader climbs the edge.
+    # (a stack chart's dots sit on its bar's edge by design)
+    rects_d = {r for _l, _p, r in painted} if root.get("data-kind") == "xsection" else set()
+    for owner, cx, cy in dots:
+        if owner == "ions" or owner.startswith(("dim", "callout")):
+            continue
+        for (x0, y0, x1, y1) in rects_d:
+            if y0 <= cy <= y1 and x0 <= cx <= x1 and min(cx - x0, x1 - cx) < 3.0:
+                errs.append(f"the dot of {owner!r} sits {min(cx - x0, x1 - cx):.1f} u from its "
+                            "drawing's edge; at least 3 u inside")
     for owner, cx, cy in dots:
         if owner not in names:
             continue
@@ -2344,8 +2392,24 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
     for owner, segs in leaders:
         if owner in ("ions",) or owner.startswith(("dim", "callout")):
             continue
-        through, along = 0, set()
+        through, along, rise, rise_layers = 0, set(), 0, set()
         for (p0, p1) in segs:
+            if abs(p0[0] - p1[0]) < 0.01 and abs(p0[1] - p1[1]) > 0.01:
+                # a riser: a vertical line up through a stack of films reads as a feature
+                # (a contact, a plug), so it has a limit of its own
+                ya, yb = sorted((p0[1], p1[1]))
+                for k in range(int(ya) + 1, int(yb)):
+                    q = (p0[0], k + 0.5)
+                    if not in_rect(q):
+                        continue
+                    vis = None
+                    for lid, pts, clip in layered:
+                        if clip[0] <= q[0] <= clip[2] and clip[1] <= q[1] <= clip[3] and _point_in(q, pts):
+                            vis = lid
+                    if vis is not None and vis != owner:
+                        rise += 1
+                        rise_layers.add(vis)
+                continue
             if abs(p0[1] - p1[1]) > 0.01:
                 continue
             xa, xb = sorted((p0[0], p1[0]))
@@ -2371,6 +2435,13 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
         if len(along) > SP["max-edge-run"]:
             errs.append(f"leader of {owner!r} runs {len(along)} u alongside a material edge; at most "
                         f"{int(SP['max-edge-run'])}")
+        # A riser up through one fill or one mask reads as a leader; a long one up through a
+        # stack of films reads as a contact or a plug cut through them.
+        if rise > SP["max-riser-traverse"] and len(rise_layers) > SP["max-riser-layers"]:
+            errs.append(f"leader of {owner!r} rises {rise} u through {len(rise_layers)} other layers; "
+                        f"at most {int(SP['max-riser-traverse'])} u through more than "
+                        f"{int(SP['max-riser-layers'])} — a vertical line through a stack of films "
+                        "reads as a contact or a plug")
     # 17: two materials that are hard to tell apart may only touch when their patterns
     # differ and both are thick enough for that pattern to show.
     boxes = [(mt, min(x for x, _ in pts), min(y for _, y in pts),
@@ -3003,7 +3074,7 @@ boundary.
 | A short line ending in a dot | a label leader; the dot sits on the material the label names |
 | Blue arrows pointing at the surface | an implant; the arrows lean only if the page gives a SKY130 tilt, and the caption says which |
 | A blue trace just above a surface | the surface this step made |
-| A dashed grey outline with no fill and no label | a layer that is present but untouched by this step, drawn faded; it is named on the figure of the step that made it, and the caption names it |
+| A dashed grey outline with no fill and no label | a layer that is present but untouched by this step, drawn faded; it is named on the figure of the step that made it, and the caption names it. In a close-up it keeps its own colour inside the dashed outline, because an enlarged empty film would look like a gap |
 
 A label with no tag is a plain public fact. A label in amber carries one of the three tags in
 the table above, and the figure's caption repeats the same hedge in words.
@@ -3629,6 +3700,12 @@ def selftest() -> int:
     hdr = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} 400" data-kind="chain"><title>t</title>'
            f'<desc>d</desc>')
     svg_cases += [
+        ("a dot on its drawing's edge",
+         hdr.replace('data-kind="chain"', 'data-kind="xsection"')
+         + '<g class="drawing" data-rect="12,20,268,100">'
+         '<polygon class="mat m-barrier" data-layer="m" points="12,40 280,40 280,60 12,60"/></g>'
+         '<circle class="dot" data-owner="m" cx="280" cy="50" r="1.9"/></svg>',
+         "from its drawing's edge"),
         ("a dot on the material painted over the one it names",
          hdr + '<g class="drawing" data-rect="12,20,268,100">'
          '<polygon class="mat m-implant" data-layer="halo" points="20,40 200,40 200,80 20,80"/>'
@@ -3665,6 +3742,20 @@ def selftest() -> int:
            '<polygon class="mat m-si-sub" data-layer="sub" points="12,60 280,60 280,380 12,380"/></g>'
            '<g class="drawing" data-rect="12,250,268,100"></g>'
            '<path class="leader" data-owner="x" d="M20 {y}H270"/></svg>')
+    # rule 18, risers: a long riser up through a stack of four films is refused; the same
+    # riser up through one thick fill is not
+    stack4 = "".join(f'<polygon class="mat m-oxide-dep" data-layer="f{k}" '
+                     f'points="12,{30 + 20 * k} 280,{30 + 20 * k} 280,{50 + 20 * k} 12,{50 + 20 * k}"/>'
+                     for k in range(4))
+    fill1 = '<polygon class="mat m-oxide-dep" data-layer="f0" points="12,30 280,30 280,110 12,110"/>'
+    for body, want in ((stack4, True), (fill1, False)):
+        raw = (hdr + '<g class="drawing" data-rect="12,20,268,120">' + body
+               + '<polygon class="mat m-si-sub" data-layer="own" points="12,110 280,110 280,140 12,140"/></g>'
+               '<path class="leader" data-owner="own" d="M150 120V22H300"/></svg>')
+        got = any("reads as a contact or a plug" in e for e in lint_svg_text(raw))
+        if got != want:
+            print(f"SELFTEST FAIL: rule 18 risers: {'stack' if want else 'fill'} reported={got}")
+            bad += 1
     for y_run, want in ((300, False), (90, True)):
         got = any("runs" in e and "through other materials" in e
                   for e in lint_svg_text(two.format(y=y_run)))
