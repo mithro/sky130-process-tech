@@ -604,3 +604,39 @@ The sibling of nsdm; the same treatment throughout.
 * **Content problem for the owner (not changed):** as on onom, the open text paraphrases the notes:
   "takes the other view for tight layouts" and "describe the same sequence, the mask it uses and the
   undercut the isotropic etch leaves". `check_inforce.py` passes; §2.5 would forbid writing it now.
+
+### 14. urpm — done
+
+* **Rules applied.** R-INTRO (187 → 38 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST (the PDK
+  tables that do not name the mask, the three Error Messages `urpm` checks, the per-die counts);
+  R-RELATED; R-H3 (Exposure class, Resist and tone, Overlay and alignment, Pattern transfer).
+* **R-PARAMS not applied:** three named parameters (`POLYRCD`, `POLYRSPC`, `PRECRESW`), none of this
+  mask.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged apart from its semicolon split,
+  above "Pattern transfer".
+* **Intro.** Kept the first sentence up to its colon and the reading up to "… the 2000 Ω/sq resistors."
+  Moved with the hedge repeated ("On the URPM page's reading, the light p-type implant UPRI sets the
+  resistors' sheet resistance through those windows, …" — "their" → "the resistors'"); "Like RRPM, it
+  has no entry …" → "Like RRPM, `URPM` has no entry …".
+* **Seto passage.** "… the steepness of poly resistance against doping — Seto found … model for
+  it[^seto-1975] — so the 300 Ω/sq and 2000 Ω/sq films need separately controlled doses." → the dash
+  material became its own sentence after the reading (R-SENTENCE 1, as the guide's own example does),
+  so the "so" clause stays joined to the reading it concludes. This is the cause of `LOST number_order:
+  ('5×10¹⁷', '³', '300', '2000')`: the same numbers, the Seto quotation now after the two sheet
+  resistances.
+* **Declared additions** (`--allow-added markers,numbers,refs`): markers `mask-renders` ×2 (render
+  sentence; "Shapes on every die" split), `pdk-03` ("; none names the 2000 Ω/sq resistor" split off),
+  `pdk-06` (the `gds_layers.csv` item of the "do not name the mask" list, as on rrpm), `pdk-errors`
+  (Error Messages "describes"), `raw-data-passives` ("It extracts about 1 950 Ω/sq …" split off),
+  `steps-sheet` (the "Run Mask IDs" sentence split, `pdk-05` staying with the `masks.csv` clause);
+  number `3` (rpm.3 in the caption); refs `step-055` (hedge repeated) and the backtick-pairing artefact
+  "RRPM <mask-rrpm>, URPM".
+* **Marker move.** Exposure class: "… with a KrF tool as the option; the i-line stepper page lists it
+  there.[^pdk-periph]" → "… as the option.[^pdk-periph] The i-line stepper page lists it there." The
+  marker supports the `rpm` width and spacing in the first half, and now sits at its end.
+* **Marker coverage.** Flags read: each flagged sentence had no marker of its own in the base.
+* **Over the caps after the pass:** the P− resistor sentence (56 by the script; four quotations, about
+  15 words by §1's count), the test-tile sentence (47, quotations) and the rule-table lead-in (47, a
+  single argument about which rules apply); two quick-facts cells. Before → after: paragraphs 11 → 0,
+  items 0 → 0, sentences 15 → 3, cells 2 → 2.
+* **Content problems for the owner:** none found.

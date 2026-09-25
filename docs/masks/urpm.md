@@ -1,22 +1,10 @@
 (mask-urpm)=
 # URPM — Ultra-High Resistor Poly
 
-`URPM` is the last of SKY130's three poly-resistor masks: on the
+`URPM` is the last of SKY130's three poly-resistor masks. On the
 {ref}`URPM <step-055>` page's reading, the resist printed through it at
 step 55 covers the gate film everywhere except windows over the bodies
-of the 2000 Ω/sq resistors, the light p-type implant
-{ref}`UPRI <step-056>` sets their sheet resistance through those windows,
-and the resist is stripped at {ref}`UPRIS <step-057>`, after which the
-poly doping of the process is complete. Like {ref}`RRPM <mask-rrpm>`, it
-has no entry in the PDK's mask table and no mask-level layer, and the
-process-steps sheet records a plate for it on all eight MPW runs. Unlike
-`RRPM`, it is rendered: the public renders of the MPW tape-out layouts
-show its drawn layer on every die of every run, almost always as a single
-shape. This page gathers what public sources say about the mask — its
-place in the PDK and the drawn layer the step page pairs it with, the
-plates the sheet records, what the renders show, the lithography it needs
-and the rules that bound it. How the step is performed is on the step
-page; every mask is indexed on the {ref}`masks index <masks-index>`.
+of the 2000 Ω/sq resistors.
 
 | | URPM — Ultra-High Resistor Poly |
 |---|---|
@@ -33,7 +21,22 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-urpm-steps>` |
 
+:::{seealso}
+How the step is performed is on the step
+page; every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`URPM <step-055>` page's reading, the light p-type implant
+{ref}`UPRI <step-056>` sets the resistors' sheet resistance through those windows,
+and the resist is stripped at {ref}`UPRIS <step-057>`, after which the
+poly doping of the process is complete. Like {ref}`RRPM <mask-rrpm>`, `URPM`
+has no entry in the PDK's mask table and no mask-level layer, and the
+process-steps sheet records a plate for it on all eight MPW runs. Unlike
+`RRPM`, it is rendered: the public renders of the MPW tape-out layouts
+show its drawn layer on every die of every run, almost always as a single
+shape.
 
 The device the mask serves is public. The PDK's "P- poly precision
 resistors" "have 5 different fixed widths, plus a variable W/L option";
@@ -42,7 +45,9 @@ their fixed-value resistors "have the same layout footprints as their P+
 poly counterparts"; and "Electrical and e-test specs are still TBD, once
 sufficient silicon has been evaluated".[^pdk-07] The extraction table
 gives the "UHR poly resistor" 2000000 in a column headed "Resistivity
-(mohms/sq)", that is 2000 Ω/sq (our conversion).[^pdk-08] The drawn layer
+(mohms/sq)", that is 2000 Ω/sq (our conversion).[^pdk-08]
+
+The drawn layer
 `urpm` is described as "2000 ohms/square polysilicon resistor
 implant".[^pdk-06] The repository README says the process "Has high sheet
 rho poly resistor", the *Background* page lists "Poly resistor (`r`)"
@@ -56,32 +61,45 @@ on the PDK's separate implant and on the drawn layer. It infers that the
 reticle is generated from `urpm` in the window tone, and that the `urpm`
 bodies were covered at {ref}`RPM <step-049>` and not opened at
 {ref}`RRPM <step-052>`, so that {ref}`UPRI <step-056>` is the only implant
-they receive; it gives the alternative — one reticle for both resistor
-implants — as also consistent with the public sources. Why the film needs
+they receive. It gives the alternative — one reticle for both resistor
+implants — as also consistent with the public sources.
+
+Why the film needs
 its own mask is, on the step page's reading, the steepness of poly
-resistance against doping — Seto found the carrier concentration of
+resistance against doping, so the 300 Ω/sq and 2000 Ω/sq films need separately
+controlled doses. Seto found the carrier concentration of
 boron-implanted poly "very small at doping levels below 5×10¹⁷/cm³" and
 increasing "rapidly as the doping concentration was increased", and
-proposed a grain-boundary trapping model for it[^seto-1975] — so the 300 Ω/sq and 2000 Ω/sq films need separately
-controlled doses. Brederlow et al. found the low-frequency noise of
+proposed a grain-boundary trapping model for it.[^seto-1975]
+
+Brederlow et al. found the low-frequency noise of
 integrated poly resistors "much higher than predicted" by common
 simulation models and examined its dependence on doping and deposition
 technique,[^brederlow-2001] and Tsang et al. traced resistance variation
 across banks of high-value poly resistors.[^tsang-2014]
 
-The PDK's own tables do not name the mask. `masks.csv` has no entry for
-it;[^pdk-05] `gds_layers.csv` has no mask-level layer for it; Table F2b
-has no `URPM` column and no row for the 2000 Ω/sq resistor;[^pdk-06] the
-periphery rules have no `urpm` rule set;[^pdk-periph] and Table 2 of
-*Criteria & Assumptions* has no row for it.[^pdk-03] The test tile's pad
-documentation names the mask: among its "2K ohm/sq" poly resistor
+The PDK's own tables do not name the mask:
+
+* `masks.csv` has no entry for
+  it[^pdk-05]
+* `gds_layers.csv` has no mask-level layer for it[^pdk-06]
+* Table F2b
+  has no `URPM` column and no row for the 2000 Ω/sq resistor[^pdk-06]
+* the
+  periphery rules have no `urpm` rule set[^pdk-periph]
+* Table 2 of
+  *Criteria & Assumptions* has no row for it[^pdk-03]
+
+The test tile's pad
+documentation names the mask. Among its "2K ohm/sq" poly resistor
 structures it marks four — "W = 0.69, L = 0.345, sq = 0.5", "W= 0.33,
 l = 0.33, sq = 1" and a mismatch pair of each size — "(may not work for
 routes using URPM mask)", without saying why.[^raw-data-testtile-pads]
+
 The {ref}`URPM <step-055>` page extracts from the published measurements
 of the marked structures 1.33–1.43 kΩ at 0.33 µm and one square, 0.59 kΩ
 in one module against 2.8–3.1 kΩ in another at 0.69 µm and half a
-square, and about 1 950 Ω/sq from the longer resistors of the
+square.[^raw-data-passives] It extracts about 1 950 Ω/sq from the longer resistors of the
 family.[^raw-data-passives]
 
 ## Drawn layers and derivation
@@ -90,12 +108,17 @@ family.[^raw-data-passives]
 
 The drawn layer the step page pairs the mask with is `urpm` at 79:20;
 there is no mask-level (`c…`) layer and no drawn layer carrying the
-mask's name.[^pdk-06] The PDK's *Error Messages* page, which describes
+mask's name.[^pdk-06] The PDK's *Error Messages* page describes
 "many of the automated DRC rules that are checked by SkyWater as part of
-the acceptance criteria for GDS data", lists three checks under `urpm`
-rule names although the periphery rules have no such rule set: "1.27 min.
-width of urpm" (urpm.1a), "0.84 min. spacing/notch of urpm" (urpm.2) and
-"0.2 min. enclosure of precResistor by rpm" (urpm.3).[^pdk-errors] The
+the acceptance criteria for GDS data".[^pdk-errors] It lists three checks under `urpm`
+rule names although the periphery rules have no such rule set:[^pdk-errors]
+
+* "1.27 min.
+  width of urpm" (urpm.1a)
+* "0.84 min. spacing/notch of urpm" (urpm.2)
+* "0.2 min. enclosure of precResistor by rpm" (urpm.3)
+
+The
 first two give `urpm` the width and spacing that rules rpm.1a and rpm.2
 give `rpm`, which fits the step page's application of the `rpm` geometry
 to this layer (our comparison), and the third is worded for `rpm`. The
@@ -103,6 +126,7 @@ three checks also sit, in the page's numbering, immediately before the
 rpm.3 message, where the rpm.1a and rpm.2 messages the page lacks would
 be, so they may equally be the `rpm` checks filed under `urpm` names (our
 reading).
+
 Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines the `prec_resistor` of the
 rules as "rpm AND (poly overlapping poly.rs) AND psdm", naming `rpm`
 and not `urpm`;[^pdk-06] the PDK does not say whether a 2000 Ω/sq
@@ -114,25 +138,35 @@ operation that turns `urpm` into a plate.
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `URPM` the site renders layer 79:20 (`urpm`)
-alone, with no Boolean expression and no fill layer, on all eight runs;
-its mask record gives no mask-level layer and no note, and leaves its
-used-in-SKY130 field empty.[^mask-renders] The layer is the one the step
+alone, with no Boolean expression and no fill layer, on all eight runs.[^mask-renders]
+Its mask record gives no mask-level layer and no note, and leaves its
+used-in-SKY130 field empty.[^mask-renders]
+
+The layer is the one the step
 page pairs with the mask. The choice is one public derivation from the
-drawn data, not SkyWater's mask-generation recipe; it agrees with the
+drawn data, not SkyWater's mask-generation recipe. It agrees with the
 index's pairing, but both start from the same public PDK files, so the
 agreement is not independent ({ref}`masks-derivations`).
 
 All 40 rendered dies of every run carry `urpm` shapes, but that is not 40
-designs using the 2000 Ω/sq resistor: every die carries at least one
-shape, and on each run 33 to 38 of the 40 dies carry exactly one — 37,
-35, 36, 38, 33, 35, 36 and 37 dies on MPW-1 to MPW-8 in turn; the other
-dies of MPW-2, MPW-5 and MPW-6 include two dies with a repeated count of
-6, 2 and 2 shapes respectively.[^mask-renders] We read the single shape
+designs using the 2000 Ω/sq resistor:[^mask-renders]
+
+* every die carries at least one
+  shape
+* on each run 33 to 38 of the 40 dies carry exactly one — 37,
+  35, 36, 38, 33, 35, 36 and 37 dies on MPW-1 to MPW-8 in turn
+* the other
+  dies of MPW-2, MPW-5 and MPW-6 include two dies with a repeated count of
+  6, 2 and 2 shapes respectively
+
+We read the single shape
 as common to the dies rather than to the projects (inference), as the
 {ref}`masks index <masks-renders>` does; the site does not say what it
 is. The renders also show `urpm` without `rpm` on most dies: no die of
 MPW-3 draws `rpm`, and at most five dies of any run do
-({ref}`mask-rpm`).[^mask-renders] The site states the limits of its
+({ref}`mask-rpm`).[^mask-renders]
+
+The site states the limits of its
 images: "These are renders of *drawn* data, not photomask artwork:
 reticle pitch, 4x reduction, mirroring and the frame features the fab
 adds are not modelled."[^mask-renders] Its metadata carries no plate ID,
@@ -145,9 +179,9 @@ from the one whose plates the sheet records
 
 The "Run Mask IDs" tab of the process-steps sheet has a row "Ultra-High
 Resistor Poly, URPM", with the "Used in SKY130" field blank, one of the
-five rows it adds to the mask table of `masks.csv`; it marks a `URPM`
+five rows it adds to the mask table of `masks.csv`.[^steps-sheet][^pdk-05] It marks a `URPM`
 plate as existing on all eight MPW runs, with the plate number `178` on
-each and no "Info" note.[^steps-sheet][^pdk-05] The plate IDs below are
+each and no "Info" note.[^steps-sheet] The plate IDs below are
 the sheet's; the reticle set is the heading of the run's columns in the
 tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 
@@ -168,7 +202,7 @@ tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
   difference.[^steps-sheet][^pdk-05]
 * **Shapes on every die.** Because nearly every die carries one `urpm`
   shape, the renders do not show which runs used the 2000 Ω/sq resistor
-  in a design, and this page does not read the plates or the die count
+  in a design.[^mask-renders] This page does not read the plates or the die count
   as evidence of such use ({ref}`masks-renders`).[^mask-renders]
 * **Plate number.** `178` follows `175` for `RPM` and `177` for `RRPM`,
   but the plate numbers do not follow process order elsewhere, and the
@@ -184,18 +218,23 @@ tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`URPM <step-055>` page applies the `rpm`
+### Exposure class
+
+The {ref}`URPM <step-055>` page applies the `rpm`
 minimum width of 1.270 µm and spacing of 0.840 µm to this layer, reads
 the geometry as relaxed and infers an i-line level, with a KrF tool as
-the option; the {ref}`i-line stepper <machine-i-line-stepper>` page lists
-it there.[^pdk-periph] SkyWater lists "ASML I-line stepper" and "ASML
+the option.[^pdk-periph] The {ref}`i-line stepper <machine-i-line-stepper>` page lists
+it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
+
 At that geometry Wong et al.'s mask error factor, which "is unity for
 large features",[^wong-1998] would leave plate CD errors at about their
-own size on the wafer (inference); the step page notes that a mis-sized
+own size on the wafer (inference). The step page notes that a mis-sized
 window shows up directly as resistor value and matching error.
 
-**Resist.** The {ref}`URPM <step-055>` page reads about 1 µm of positive
+### Resist and tone
+
+The {ref}`URPM <step-055>` page reads about 1 µm of positive
 i-line resist on the doped gate film — the PDK's generic "Photoresist
 thickness" is 1.14 µm[^pdk-03] — through a dark-field reticle with clear
 windows over the `urpm` bodies. The {ref}`UPRIS <step-057>` page reads
@@ -204,34 +243,42 @@ the implant as the lightest of the module, of order 10¹⁴ cm⁻² or less
 SkyWater's resist is not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** Nothing is etched through this resist. On the step
-pages' readings the pattern is transferred into the 2000 Ω/sq bodies as
-dopant by {ref}`UPRI <step-056>`, on the
-{ref}`medium-current implanter <machine-medium-current-implanter>` class,
-and the resist is removed at
-{ref}`UPRIS <step-057>` on the
-{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
-{ref}`wet bench <machine-wet-bench>` classes, which also serves as the
-clean before the gate cap. Wright et al. describe rf-sputtered films of
-the Cr–Si–B–SiO₂/Al₂O₃ system that reach 20 kΩ/sq with a temperature
-coefficient below 200 ppm/°C, an alternative to poly for high-value
-resistors,[^wright-2010] and Chen et al. treat the voltage coefficient
-of poly resistors in a high-voltage CMOS technology.[^chen-2000]
+### Overlay and alignment
 
-**Overlay.** The {ref}`URPM <step-055>` page infers alignment to the
+The {ref}`URPM <step-055>` page infers alignment to the
 trench marks of {ref}`FOM <step-004>`, like the other two resistor masks,
 and notes that since the body is later cut from the poly by
 {ref}`P1M <step-061>` the window must enclose the drawn body with overlay
 margin on every side. The rules give that margin for `rpm` as 0.200 µm
 (rpm.3), and the Error Messages page's urpm.3 message repeats it for
 `rpm`;[^pdk-periph][^pdk-errors] no enclosure is published for `urpm`
-itself. Hook et al. found that ions scattered out of the edge of an
+itself.
+
+Hook et al. found that ions scattered out of the edge of an
 implant resist are implanted in the silicon near the mask
-edge;[^hook-2003] the {ref}`URPM <step-055>` page lists the study for
+edge.[^hook-2003] The {ref}`URPM <step-055>` page lists the study for
 straggle at resist edges. ASML specifies "≤ 40 nm"
 single-machine overlay for the PAS 5500/275D
 stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
 public).
+
+### Pattern transfer
+
+Nothing is etched through this resist. On the step
+pages' readings the pattern is transferred into the 2000 Ω/sq bodies as
+dopant by {ref}`UPRI <step-056>`, on the
+{ref}`medium-current implanter <machine-medium-current-implanter>` class.
+On the step pages' readings the resist is removed at
+{ref}`UPRIS <step-057>` on the
+{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
+{ref}`wet bench <machine-wet-bench>` classes, which also serves as the
+clean before the gate cap.
+
+Wright et al. describe rf-sputtered films of
+the Cr–Si–B–SiO₂/Al₂O₃ system that reach 20 kΩ/sq with a temperature
+coefficient below 200 ppm/°C, an alternative to poly for high-value
+resistors,[^wright-2010] and Chen et al. treat the voltage coefficient
+of poly resistors in a high-voltage CMOS technology.[^chen-2000]
 
 (mask-urpm-steps)=
 ## Steps that use this mask
@@ -267,6 +314,8 @@ to periphery only (outside areaid.ce). A corresponding core rule may or
 may not exist.", and the unit column of rpm.3 is blank in the published
 table.[^pdk-periph]
 
+:::{table} The `rpm` rules that fix the resistor footprints and whose width and spacing the step page applies to this layer, as published; the unit column of rpm.3 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | rpm.1a | "Min width of rpm" | 1.270 µm |
@@ -277,38 +326,39 @@ table.[^pdk-periph]
 | rpm.5 | "prec_resistor must be enclosed by npc by atleast" | 0.095 µm |
 | rpm.8 | "poly must not straddle rpm" | — |
 | licon.9 | "Spacing, no overlap, between poly_licon and psdm; In SKY130DIA/SKY130TMA/SKY130PIR-10 flows, the rule is checked only between (poly_licon outside rpm) and psdm" (P) | 0.110 µm |
+:::
 
 The Error Messages page's `urpm` checks give 1.27 for the width and 0.84
 for the spacing and notch of `urpm`, and 0.2 for the enclosure of the
 precision resistor by `rpm`.[^pdk-errors] Table 2 of *Criteria &
-Assumptions* has no row for `URPM`.[^pdk-03] In the block of Table 4
+Assumptions* has no row for `URPM`.[^pdk-03]
+
+In the block of Table 4
 headed "Other", whose value column is headed "Value", "Poly resistor
 width and spacing to reduce CD variation (um)" is 0.33 (`POLYRCD`) and
 0.48 (`POLYRSPC`), and "Precision resistor width to accommodate 6
-contacts across" 2.03 (`PRECRESW`); none names the 2000 Ω/sq
+contacts across" 2.03 (`PRECRESW`).[^pdk-03] None names the 2000 Ω/sq
 resistor.[^pdk-03] If the windows are the `urpm` shapes, the 1.27 width
 and 0.84 spacing of the `urpm` checks would set their smallest features
 (inference).
 
 ## Related pages
 
-* {ref}`URPM <step-055>`, {ref}`UPRI <step-056>` and
+* **Steps.** {ref}`URPM <step-055>`, {ref}`UPRI <step-056>` and
   {ref}`UPRIS <step-057>` — the mask step, the resistor implant and the
   strip.
-* {ref}`mask-rpm` and {ref}`mask-rrpm` — the other two resistor masks,
-  which on the URPM step page's reading cover the `urpm` bodies and leave
-  them closed.
-* {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the masks without a `masks.csv` entry.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` — the implant class that uses
-  the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` — the implant class that uses
+  the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-rpm` and {ref}`mask-rrpm` — the other two resistor masks,
+  which on the URPM step page's reading cover the `urpm` bodies and leave
+  them closed. {ref}`mask-p1m` — the poly mask that cuts the resistor bodies.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the masks without a `masks.csv` entry.
 
 ## References
 
