@@ -1,0 +1,35 @@
+id: mol-102-li1m
+kind: xsection
+page: docs/steps/102-li1m.md
+series: series-mol.yaml
+crop_depth: 60
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thin dark film covers
+  a flat surface with three metal plugs under it. After it three blocks of resist stand on the
+  film, one centred over each plug and wider than the plug's top.
+caption: >-
+  Before, the blanket local-interconnect film; after, the LI1M resist over one pad on each plug.
+  The rules require every licon to be overlapped by li (licon.4), enclosing it by 0.080 µm on one
+  of two adjacent sides (li.5),[^pdk-periph] so each pad is drawn wider than its plug. Where li
+  runs in a real layout is not drawn: the pads are an illustrative choice, and the drawn widths
+  are not to scale. The resist's thickness is not public, and any anti-reflective or barrier layer
+  under it is not drawn. The glass, the cap oxide, the tungsten plugs, the silicide discs, the contact liner and the transistors' films (the
+  spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide),
+  the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not
+  labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made
+  earlier are not drawn. Not to scale.
+arrow:
+  title: "LI1M, step 102"
+  note: "Resist is coated, exposed through the local-interconnect reticle and developed."
+panels:
+  - state_after: "101"
+    title: "Before: the blanket local-interconnect film (step 101)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, ncap, wfill]
+    dim_layers: [liner]
+  - state_after: "102"
+    title: "After: resist over a pad on each plug"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, ncap, wfill]
+    dim_layers: [liner]
+    highlight: {where: [[14, 66], [108, 160], [178, 230]]}

@@ -1,0 +1,46 @@
+id: mol-101-litin
+kind: xsection
+page: docs/steps/101-litin.md
+series: series-mol.yaml
+crop_depth: 60
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a flat oxide surface is
+  broken by the tops of three metal-filled holes: two reach the silicon of the active areas and
+  one, shallower, the top of the wide stack in the middle. After it a thin dark film of even
+  thickness covers the whole flat surface and the tops of the three plugs.
+caption: >-
+  Before, the polished surface with its three tungsten plugs; after, the titanium-nitride film of
+  the local interconnect over it. The PDK's stack diagram gives li a thickness of 0.1 µm,[^pdk-04]
+  and the film is not drawn to scale. That it is sputtered is the page's reading; whether a
+  titanium adhesion layer precedes it is not public, and none is drawn. The film is drawn in the
+  same dark colour as the contact liner: the figures draw titanium and titanium nitride alike. The glass, the silicide discs at
+  the bottom of the holes, the contact liner and the transistors' films (the spacers, the caps, the gate
+  oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the
+  field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner
+  oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel the plugs are not labelled. Not to scale.
+arrow:
+  title: "LITIN, step 101"
+  note: "A titanium-nitride film is deposited over the polished surface and the plug tops."
+panels:
+  - state_after: "100"
+    title: "Before: the polished surface with three plugs (step 100)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg]
+    dim_layers: [liner]
+    labels:
+      wfill:
+        title: "Tungsten plug"
+        note: "WDEP, step 099; polished at step 100"
+        basis: public
+  - state_after: "101"
+    title: "After: a blanket local-interconnect film"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, wfill]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
+    labels:
+      li:
+        title: "Local interconnect"
+        note: "titanium nitride, 0.1 µm thick in the PDK"
+        basis: public
+        cite: pdk-04

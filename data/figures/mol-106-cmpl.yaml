@@ -1,0 +1,39 @@
+id: mol-106-cmpl
+kind: xsection
+page: docs/steps/106-cmpl.md
+series: series-mol.yaml
+crop_depth: 60
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thick pale oxide with a
+  slightly stepped top covers three thin dark pads under a thin hatched film. After it the oxide
+  is polished flat, leaving a thinner layer of it over the pads.
+caption: >-
+  Before, the oxide as deposited; after, polished flat to a set thickness over the local
+  interconnect, the surface on which the metal-1 contacts are printed. The page reads the PDK's
+  0.265 µm "NILD2" interval[^pdk-04] as the thickness left over the LI nitride after the polish
+  (our reading); the removal is not public, and nothing is drawn to scale. The silicide discs,
+  the contact liner and the transistors' films (the spacers, the caps, the gate oxides, the gate
+  film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the
+  oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn
+  faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "CMPL, step 106"
+  note: "The oxide is polished flat, leaving a set thickness over the local interconnect."
+panels:
+  - state_after: "105"
+    title: "Before: the oxide as deposited (step 105)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap]
+    dim_layers: [liner]
+  - state_after: "106"
+    title: "After: the oxide polished flat"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, wfill, psg, ncap]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
+    labels:
+      nild2:
+        title: "Inter-level oxide"
+        note: "NILD2, 0.265 µm over the LI nitride in the PDK"
+        basis: public
+        cite: pdk-04

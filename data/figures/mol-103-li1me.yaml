@@ -1,0 +1,35 @@
+id: mol-103-li1me
+kind: xsection
+page: docs/steps/103-li1me.md
+series: series-mol.yaml
+crop_depth: 60
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step three blocks of resist
+  stand on a thin dark film over a flat surface with three metal plugs. After it the film is gone
+  wherever the resist was open and the resist is gone too, leaving three thin dark pads, one on
+  each plug, on the flat oxide.
+caption: >-
+  Before, the LI1M resist; after, the titanium nitride etched away wherever the resist was open,
+  down to the cap oxide, and the resist stripped, leaving a pad on each plug; the pads' 0.1 µm
+  thickness[^pdk-04] is not drawn to scale. The etch chemistry, endpoint and over-etch are not
+  public (the page infers a chlorine-based etch), and any oxide the over-etch takes from the cap
+  is not drawn. The glass, the tungsten plugs, the silicide discs, the contact liner and the transistors' films (the spacers,
+  the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the
+  doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not
+  labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made
+  earlier are not drawn. Not to scale.
+arrow:
+  title: "LI1ME, step 103"
+  note: "The titanium nitride is plasma-etched where the resist is open; the resist is then stripped."
+panels:
+  - state_after: "102"
+    title: "Before: resist over a pad on each plug (step 102)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, wfill]
+    dim_layers: [liner]
+  - state_after: "103"
+    title: "After: TiN pads on the plugs, the resist stripped"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, spox, polyn, polyp, nsd, sil, ctliner, psg, wfill]
+    dim_layers: [liner]
+    highlight: {where: [[0, 14], [66, 108], [160, 178], [230, 268]]}
