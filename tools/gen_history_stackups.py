@@ -3,7 +3,7 @@
 # requires-python = ">=3.11"
 # dependencies = ["pyyaml"]
 # ///
-"""Generate ``docs/history/stackups.md`` from ``data/history/qtp.yaml``.
+"""Generate ``docs/history/stackups.md`` and ``products.md`` from ``data/history/qtp.yaml``.
 
 Every Cypress qualification report in the evidence file that prints a
 "Technology/Fab Process Description" block becomes one row of a summary
@@ -32,6 +32,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "history" / "qtp.yaml"
 OUT = ROOT / "docs" / "history" / "stackups.md"
+PRODUCTS = ROOT / "docs" / "history" / "products.md"
 
 # Printed-value clean-up for display only: the notes the evidence file adds
 # in parentheses ("(printed with the micron sign dropped ...)") are not part
@@ -200,7 +201,7 @@ def sync_footnotes() -> int:
     docs = {d["id"].lower(): d for d in yaml.safe_load(DATA.read_text(encoding="utf-8"))["documents"]}
     changed = 0
     for page in sorted(OUT.parent.glob("*.md")):
-        if page in (OUT, OUT.parent / "sources.md"):
+        if page in (OUT, PRODUCTS, OUT.parent / "sources.md"):
             continue
         text = page.read_text(encoding="utf-8")
         def repl(m: re.Match) -> str:
@@ -214,20 +215,88 @@ def sync_footnotes() -> int:
     return changed
 
 
+def build_products() -> str:
+    """One row per process code: the fabs and the products the reports name."""
+    docs = yaml.safe_load(DATA.read_text(encoding="utf-8"))["documents"]
+    rows: dict[str, dict] = {}
+    for d in docs:
+        codes = d.get("technology_codes") or []
+        prods = [str(p) for p in (d.get("products") or []) if str(p).strip()]
+        if not codes or not prods:
+            continue
+        code = str(codes[0])
+        pd = d.get("process_description") if isinstance(d.get("process_description"), dict) else {}
+        r = rows.setdefault(code, {"fabs": [], "products": [], "docs": [], "rules": []})
+        fab = clean(pd.get("fab_location") or d.get("fab") or "")
+        if fab and fab not in r["fabs"]:
+            r["fabs"].append(fab)
+        for p_ in prods:
+            if p_ not in r["products"]:
+                r["products"].append(p_)
+        r["docs"].append(d)
+        if pd and rule_um(pd) is not None:
+            r["rules"].append(rule_um(pd))
+    for r in rows.values():
+        # the design rule most reports print (a lone misprint does not move a process)
+        r["rule"] = max(set(r["rules"]), key=lambda v: (r["rules"].count(v), -v)) if r["rules"] else None
+    out = ["""(history-products)=
+# What was made on each process
+
+The products that Cypress's qualification reports name for each process before S8, with the fabs the
+reports give. A report names only the products it qualifies, so these lists are examples, not
+complete product lines. The page is generated from `data/history/qtp.yaml` by
+`tools/gen_history_stackups.py`; edit the evidence, not this page. The processes themselves are
+described on {ref}`history-technologies`.
+""", "## Products by process\n"]
+    def key(item):
+        code, r = item
+        return (-(r["rule"] or 0), code)
+    used: list[dict] = []
+    for name, lo, hi in GROUPS + [("Design rule not printed", -1, 0)]:
+        group = [(c, r) for c, r in sorted(rows.items(), key=key)
+                 if (r["rule"] is None and lo < 0) or (r["rule"] is not None and lo <= r["rule"] <= hi)]
+        if not group:
+            continue
+        out.append(f"### {name}\n")
+        out.append("| Process | Fab as printed | Products named in the reports | Reports |")
+        out.append("|---|---|---|---|")
+        for code, r in group:
+            prods = r["products"]
+            shown = ", ".join(prods[:10]) + (f" and {len(prods) - 10} more" if len(prods) > 10 else "")
+            reps = "".join(f"[^{label(d)}]" for d in r["docs"])
+            out.append(f"| {cell(code)} | {cell('; '.join(r['fabs'][:3]))} | {cell(shown)} | "
+                       f"{len(r['docs'])}{reps} |")
+            used += r["docs"]
+        out.append("")
+    uniq = sorted({d["id"]: d for d in used}.values(), key=lambda d: d["id"])
+    out.append("## References\n")
+    out.append("### Cross-check\n")
+    out.append("* {ref}`history-stackups` — the same reports' process descriptions.\n")
+    out.append("### Deep dive\n")
+    for d in uniq:
+        out.append(f"* [Cypress, QTP {d.get('number')}](<{link(d)}>) — {cell(d.get('title'))}.[^{label(d)}]")
+    out.append("\n<!-- footnotes -->\n")
+    for d in uniq:
+        out.append(qtp_footnote(d))
+    return "\n".join(out) + "\n"
+
+
 def main() -> int:
     if "--sync" in sys.argv[1:]:
         sync_footnotes()
         return 0
-    text = build()
-    if "--check" in sys.argv[1:]:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != text:
-            print(f"{OUT.relative_to(ROOT)} is out of date; run uv run tools/gen_history_stackups.py")
-            return 1
-        print(f"{OUT.relative_to(ROOT)} is up to date")
-        return 0
-    OUT.write_text(text, encoding="utf-8")
-    print(f"wrote {OUT.relative_to(ROOT)}")
-    return 0
+    bad = 0
+    for path, text in ((OUT, build()), (PRODUCTS, build_products())):
+        if "--check" in sys.argv[1:]:
+            if not path.exists() or path.read_text(encoding="utf-8") != text:
+                print(f"{path.relative_to(ROOT)} is out of date; run uv run tools/gen_history_stackups.py")
+                bad = 1
+            else:
+                print(f"{path.relative_to(ROOT)} is up to date")
+            continue
+        path.write_text(text, encoding="utf-8")
+        print(f"wrote {path.relative_to(ROOT)}")
+    return bad
 
 
 if __name__ == "__main__":

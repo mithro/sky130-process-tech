@@ -71,6 +71,7 @@ sonos-s4
 s8-lineage
 naming
 stackups
+products
 sources
 ```
 
