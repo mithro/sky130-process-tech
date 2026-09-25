@@ -42,7 +42,7 @@ One table. It applies to every page type unless a page-type section in §4 narro
 | Table columns | ≤ 3 if any column holds prose; ≤ 5 if every cell is a number, a code or ≤ 3 words | must pass the phone test: no horizontal scroll at 400 px, no number broken across lines (a thousands-space number such as "1 825" wraps at the space, so a cell holding one must be ≤ 12 characters) | header row, then rendered at 400 px | A F3 (≤ 5) vs B §2.1 vs review D8 (tested, not counted) |
 | Table rows | ≤ 40 | 40; more → split by group under H3s | — | B §2.7 |
 | Footnote markers per paragraph | ≤ 4 | **6**; at 5 or more, ask whether the paragraph is a table | count of `[^…]` | A F2/F3 (≤ 6) vs C7 (consider at > 4) → target 4, cap 6 |
-| H3s per step page | 3–6 | — | — | A F2 |
+| H3s per step page | ≤ 6 | — | — | A F2, review D-new-1 (a ceiling, not a quota) |
 | Admonitions per page | ≤ 2 | 2 | `:::{note}`, `:::{admonition}`, `:::{seealso}` | A §2 |
 | Figure caption | what is shown · the page's hedges · the citation · "Not to scale" | — | — | D §3 |
 | Figure alt text | 60–450 characters, no citations | 450 | — | D §3 |
@@ -1565,7 +1565,8 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 + ### How <quantity> is estimated      input table, numbered arithmetic, hedged result  R-DERIVATION, R-CAPTION
 + ### Competing readings               where the page weighs two readings
 ## Step category                       one classification sentence ≤ 35 words, then
-                                       "**Specific to this step:**" and 2–4 bullets       R-CATEGORY
+                                       "**Specific to this step:**" and bullets only if
+                                       ≥ 2 sentences remain (else a plain paragraph)      R-CATEGORY
 ## Why this step exists                1–2 lead sentences; 3–5 labelled bullets ≤ 60 words;
                                        studies as sub-bullets "Author (year) — finding.[^x]";
                                        keep the closing "Without `X` …" paragraph
@@ -1575,8 +1576,7 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 ## Machines typically used             bullets ≤ 40 words: class link, then example models
 ## Machines likely used at SkyWater    three-line items                                   R-TOOLS
 ## Resources required                  bullets; the supplier sentence once, last
-## Related steps and cross-references  labelled bullets, in order Previous / Next / Same module /
-                                       Depends on / Feeds / Category                      R-RELATED
+## Related steps and cross-references  labelled bullets, R-RELATED's full label set and order
    (generated index-links block)                                       never touched      R-GENBLOCK
 ## References                          three tiers, linked heads, `* ` bullets and their count unchanged
 ## Open questions                      labelled bullets; in-force notes last               R-OPENQ
