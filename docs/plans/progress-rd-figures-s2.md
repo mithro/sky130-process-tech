@@ -11,9 +11,13 @@ steps 014–034: `data/figures/series-wells.yaml`, one figure spec per step
 * [x] Tool: the smallest additions the series needs (see "Tool changes"). Committed first,
   with the regenerated existing figures (CSS only).
 * [x] `series-wells.yaml`.
-* [ ] Figures 014–034 pasted, in groups of three or four pages.
-* [ ] QA of every figure (harness, desktop and 400 px, light and dark) and three built pages.
-* [ ] Checkers and the `-W` build.
+* [x] Figures 014–034 pasted, in five groups (014–017, 018–021, 022–025, 026–029, 030–034).
+* [x] QA of every figure (harness, desktop and 400 px, light and dark) and three built pages
+  (015, 027, 034) at both widths.
+* [x] Checkers and the `-W` build: every `check_*.py`, every generator `--check`
+  (`gen_figures.py --check`: 148 files, 0 problems), `gen_figures.py --selftest` and
+  `sphinx-build -W` pass. `check_preserved.py` over the 21 pages against `main`: only the
+  blocks' own additions (168 inserted lines, none deleted).
 
 ## Tool changes (and why)
 
@@ -131,4 +135,11 @@ figure changed.
 
 ## Noticed, not fixed
 
-(filled in as the work goes)
+* No factual or arithmetic problem was found in the 21 pages.
+* On 015 the figure sits between the first paragraph and the collapsed patent note that
+  paragraph points to ("in the collapsed note below"); the note is still below it.
+* Every overlay's leader that crosses its own overlay gets a halo, which shows as a short
+  white edge on a thin band (020–025). A tool detail; not changed here.
+* Left for the reviewer: the neutral `implant` colour and `dim_layers` are new site-wide
+  conventions (the conventions page explains both); an owner may prefer n/p colours with
+  the page's reading tagged instead.
