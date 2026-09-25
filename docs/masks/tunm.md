@@ -2,21 +2,9 @@
 # TUNM — Tunnel Mask
 
 The tunnel mask is the first {term}`reticle` of SKY130's {term}`SONOS`
-memory module: on the {ref}`TUNM <step-035>` page's reading, the resist
+memory module. On the {ref}`TUNM <step-035>` page's reading, the resist
 printed through it at step 35 is opened over the channels of the SONOS
-memory transistors and nowhere else, and the same openings serve four
-more steps — the anti-reflective-coating etch
-{ref}`TUNARCE <step-036>`, the two channel implants
-{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>`, and the oxide etch
-{ref}`TUNME <step-039>` that clears the silicon for the tunnel oxide.
-Its public record is lopsided: the process-steps sheet records a plate
-for it on all eight MPW runs, while the public renders of those runs'
-tape-out layouts show its drawn layer on one die of MPW-1 and one of
-MPW-5 only. This page gathers what public sources say about the mask
-itself — its PDK entry and layers, the plates the process-steps sheet
-records, what the public renders show, the lithography it needs and the
-rules that constrain it. How the step is performed is on the step page;
-every mask is indexed on the {ref}`masks index <masks-index>`.
+memory transistors and nowhere else.
 
 | | TUNM — Tunnel Mask |
 |---|---|
@@ -33,7 +21,27 @@ every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 1, 0, 0, 0, 1, 0, 0, 0[^mask-renders] |
 | Steps that use the pattern | 5 steps; see {ref}`Steps that use this mask <mask-tunm-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page;
+every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`TUNM <step-035>` page's reading, the same openings serve four
+more steps:
+
+* the anti-reflective-coating etch
+  {ref}`TUNARCE <step-036>`
+* the two channel implants
+  {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>`
+* the oxide etch
+  {ref}`TUNME <step-039>` that clears the silicon for the tunnel oxide
+
+The mask's public record is lopsided: the process-steps sheet records a plate
+for it on all eight MPW runs, while the public renders of those runs'
+tape-out layouts show its drawn layer on one die of MPW-1 and one of
+MPW-5 only.
 
 The PDK describes the drawn layer as "SONOS device tunnel implant" and
 gives the `tunm` rule set the function line "Defines SONOS
@@ -41,42 +49,60 @@ FETs".[^pdk-06][^pdk-periph] The devices are the memory transistors of
 the SONOS cells, of which the PDK says: "The SKY130 process currently
 supports two SONOS flash memory cells", an "original cell" and a "“star”
 cell" whose "cell size is approximately 25% smaller than the original
-cell".[^pdk-07] The rules place the windows tightly around the memory
-gates: `tunm` extends 0.095 beyond the poly-over-diffusion gate (tunm.3),
-keeps 0.095 µm from gates outside it (tunm.4), may not be straddled by a
-gate (tunm.5), must lie in deep N-well (tunm.6a) and must be enclosed by
-`areaid.ce` (tunm.8), the "Memory (SRAM) core cell identifier".[^pdk-periph][^pdk-06]
+cell".[^pdk-07]
+
+The rules place the windows tightly around the memory
+gates:[^pdk-periph]
+
+* `tunm` extends 0.095 beyond the poly-over-diffusion gate (tunm.3)
+* it keeps 0.095 µm from gates outside it (tunm.4)
+* it may not be straddled by a
+  gate (tunm.5)
+* it must lie in deep N-well (tunm.6a)
+* it must be enclosed by
+  `areaid.ce` (tunm.8), the "Memory (SRAM) core cell identifier"[^pdk-06]
+
 The {ref}`TUNM <step-035>` page reads the layer description — an
 *implant* layer — as the reason this reference places two implants under
-the mask, and the {ref}`PTSI <step-037>` page adds the `lvtn` rule set's
+the mask. The {ref}`PTSI <step-037>` page adds the `lvtn` rule set's
 function line, "Define regions to block Vt adjust implant for low Vt LV
 PMOS/NMOS, SONOS FETs and Native NMOS", as showing that the memory
 transistors do not receive the standard NMOS channel
 implants.[^pdk-periph]
 
-The PDK's mask generation table, Table F2b, marks the `TUNM` column `C`
-("CREATED") in 5 of its 80 device rows: the two "SONOS fet" rows, the
-two "NV SONOS fet" rows and the "NV SONOS Diode" row.[^pdk-06] It marks
-`-` ("Layer not created for the device") in 44 rows, among them every
-1.8 V, 5 V and high-voltage transistor row and the two "Flash npass"
-rows, and `+` ("Layer allowed to overlap") in the other 31, among them
-the poly and local-interconnect resistors, the capacitors, the inductors
-and most diode rows.[^pdk-06] We read the table as tying the plate's
+The PDK's mask generation table, Table F2b, marks the `TUNM` column:[^pdk-06]
+
+* `C`
+  ("CREATED") in 5 of its 80 device rows: the two "SONOS fet" rows, the
+  two "NV SONOS fet" rows and the "NV SONOS Diode" row
+* `-` ("Layer not created for the device") in 44 rows, among them every
+  1.8 V, 5 V and high-voltage transistor row and the two "Flash npass"
+  rows
+* `+` ("Layer allowed to overlap") in the other 31, among them
+  the poly and local-interconnect resistors, the capacitors, the inductors
+  and most diode rows
+
+We read the table as tying the plate's
 created data to the SONOS devices — the memory transistor rows and the NV
-SONOS diode — and not to the two "Flash npass" rows, which we take to be
+SONOS diode — and not to the two "Flash npass" rows (our reading of the rows; the table does not explain its marks). We take those rows to be
 the cell's pass transistor, the "NPASS gate" that the
 {ref}`DEPI <step-038>` page reads as the second transistor of the 2-T
 cell (our reading of the rows; the table does not explain its marks).
 
 What the mask does not define is also worth stating. On the step pages'
-readings the {term}`ONO` stack is confined to the cells by a separate
-mask, {ref}`ONOM <step-041>`; the memory transistor's own tip implant
-comes much later, through {ref}`LDNTM <step-071>`; and the deep N-well
-that tunm.6a requires is printed at {ref}`DNM <step-007>` ({ref}`mask-dnm`).
+readings:
+
+* the {term}`ONO` stack is confined to the cells by a separate
+  mask, {ref}`ONOM <step-041>`
+* the memory transistor's own tip implant
+  comes much later, through {ref}`LDNTM <step-071>`
+* the deep N-well
+  that tunm.6a requires is printed at {ref}`DNM <step-007>` ({ref}`mask-dnm`)
+
 How many masks a SONOS module adds is not published for SKY130. A 2011
 Cypress and UMC release says that the 65 nm S65 SONOS process "only
 requires three additional mask layers to a standard CMOS process", and
-gives no count for the 130 nm S8 process;[^cyp-22] Sun et al. describe
+gives no count for the 130 nm S8 process.[^cyp-22] Sun et al. describe
 another SONOS-based embedded flash, embedded in logic processes from
 0.35 µm to 65 nm, for which "only 3 additional non-critical masks are
 needed".[^sun-2011] The {ref}`TUNM <step-035>` page reads `TUNM`, `ONOM`
@@ -88,25 +114,31 @@ and `LDNTM` as the SONOS masks of SKY130 (inference from the mask table).
 
 `gds_layers.csv` has one mask-level layer for this mask, `ctunm` with
 purpose `mask` at 20:0 ("Tunnel mask"), and no `drawing`, `mask add`,
-`mask drop` or `waffle drop` purpose for it; the drawn layer is `tunm`
+`mask drop` or `waffle drop` purpose for it. The drawn layer is `tunm`
 at 80:20.[^pdk-06] The pairing rests on those names and descriptions, as
 for every mask on the {ref}`masks index <masks-index>`; the PDK publishes
-no operation that turns `tunm` into the plate. Rule x.15a confines
+no operation that turns `tunm` into the plate.
+
+Rule x.15a confines
 "Drawn compatible, mask, and waffle-drop layers" to test modules, the
 seal ring and the frame, with the exception "FOM/P1M/Metal waffle drop
-are allowed inside the die" (flag P),[^pdk-periph] so a design inside
+are allowed inside the die" (flag P).[^pdk-periph] So a design inside
 the die draws `tunm`, not `ctunm` (our reading of x.15a).
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", repeats the `tunm` rules with the same values
+criteria for GDS data".[^pdk-errors] It repeats the `tunm` rules with the same values
 ("0.41 min. width of tunm", "0.672 min. area of tunm") and words tunm.8
-as "tunm must be enclosed by COREID".[^pdk-errors] It names a mask-data
+as "tunm must be enclosed by COREID".[^pdk-errors]
+
+The page names a mask-data
 layer `TUNMmk` in three generic checks — "off 0.005 grid TUNMmk vertex"
 (x.1b), "non-octagonal TUNMmk edge" (x.3a) and "X.15a: layer TUNMmk
 allowed inside areaid:mt or inside areaid.sl or inside areaid.ft" — but
 it lists no rule for `ctunm` and, unlike most mask layers, no "nikon
-cross" check for it.[^pdk-errors] Table C4b of the *Layers Reference*
+cross" check for it.[^pdk-errors]
+
+Table C4b of the *Layers Reference*
 carries, in its row for `natfet.dg` {124:21}, the comment "Add TUNM for
 SONOS channel implants. See SPR 117559, SGL-529", which the PDK does not
 explain.[^pdk-06] Apart from `TUNMCD` and `TUNMCDSP` in Table 2, no row
@@ -117,16 +149,20 @@ of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `TUNM` the site renders layer 80:20 (`tunm`)
-alone, with no Boolean expression and no fill layer, on all eight runs;
-its mask record gives the mask-level layer 20:0 and the note "TUNM =
-tunm sized by ctunm.3".[^mask-renders] Neither the periphery rules nor
+alone, with no Boolean expression and no fill layer, on all eight runs.[^mask-renders]
+Its mask record gives the mask-level layer 20:0 and the note "TUNM =
+tunm sized by ctunm.3".[^mask-renders]
+
+Neither the periphery rules nor
 the Error Messages page contains a rule named `ctunm.3`,[^pdk-periph][^pdk-errors]
 and the site gives no source for the note. The render jobs list only the
 drawn layer, with no sizing step, so, as the
 {ref}`masks index <masks-renders>` reads the site in general, the images
-are unsized drawn data. The note and the choice of layer are one public
-derivation from the drawn data, not SkyWater's mask-generation recipe;
-they agree with the index's pairing, but both start from the same public
+are unsized drawn data.
+
+The note and the choice of layer are one public
+derivation from the drawn data, not SkyWater's mask-generation recipe.
+They agree with the index's pairing, but both start from the same public
 PDK files, so the agreement is not independent.
 
 Two dies of the 320 rendered draw `tunm`: MPW-1, frame A4, with 4
@@ -134,7 +170,9 @@ shapes, and MPW-5, frame D7, with 16; no die of MPW-2, MPW-3, MPW-4,
 MPW-6, MPW-7 or MPW-8 draws the layer.[^mask-renders] The site renders
 `ONOM` from the same layer, so its `ONOM` renders show the same two
 dies, and it includes 80:20 in its `LVOM` render
-({ref}`masks-derivations`).[^mask-renders] The site states the limits of
+({ref}`masks-derivations`).[^mask-renders]
+
+The site states the limits of
 its images: "These are renders of *drawn* data, not photomask artwork:
 reticle pitch, 4x reduction, mirroring and the frame features the fab
 adds are not modelled. Empty images are real results - several masks are
@@ -168,12 +206,12 @@ the renders site calls the run's reticle set
   MPW-3, MPW-4, MPW-6, MPW-7 and MPW-8, on which no rendered die draws
   `tunm`, as well as on MPW-1 and MPW-5.[^steps-sheet][^mask-renders]
   Because the renders leave out whatever the fab adds to a plate, they
-  cannot show what those six plates carry, and no public source says;
-  for MPW-4 the renders and the plates also belong to different reticle
+  cannot show what those six plates carry, and no public source says.
+  For MPW-4 the renders and the plates also belong to different reticle
   sets ({ref}`masks-renders`).
 * **Plate number.** `190` is higher than the numbers of masks printed
-  after it — `LVOM` (step 44) is `125`, `RPM` (step 49) `175` and `NPCM`
-  (step 78) `180` — and the sheet does not say what the numbers encode,
+  after it: `LVOM` (step 44) is `125`, `RPM` (step 49) `175` and `NPCM`
+  (step 78) `180`.[^steps-sheet] The sheet does not say what the numbers encode,
   so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type and magnification.** The sheet's "Sheet4" tab gives no
@@ -183,12 +221,16 @@ the renders site calls the run's reticle set
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`TUNM <step-035>` page puts the 0.410 µm
+### Exposure class
+
+The {ref}`TUNM <step-035>` page puts the 0.410 µm
 minimum feature at {math}`k_1 \approx 0.67` at the i-line with an
-illustrative NA of 0.6 and infers an i-line level; the
+illustrative NA of 0.6 and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
-tools but assigns no layer to them.[^skw-01] At the NA 0.48 low end of
+tools but assigns no layer to them.[^skw-01]
+
+At the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the same feature has
 {math}`k_1 \approx 0.54` (our arithmetic). One Cypress integration
 patent, which may still be in force, takes the other view for tight
@@ -202,24 +244,32 @@ close to an adjacent logic device, critical layer lithography tools are
 employed to reduce misregistration tolerances".[^pat-03]
 :::
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
-at 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
+At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic), so as line-space features the 0.41 µm windows
-would lie just above it. For contacts the abstract gives 0.75 (lambda)
-/NA, about 0.57 µm at NA 0.48 and 0.46 µm at NA 0.60 (our arithmetic),
-and it finds dark-field spaces more sensitive than light-field lines, so
+would lie just above it.
+
+For contacts the abstract gives 0.75 (lambda)
+/NA, about 0.57 µm at NA 0.48 and 0.46 µm at NA 0.60 (our arithmetic).
+It finds dark-field spaces more sensitive than light-field lines, so
 if the windows print like holes their mask error factor would already be
 above unity (inference).
 
-**Resist.** On the step pages' reading the resist sits on an organic
+### Resist and tone
+
+On the step pages' reading the resist sits on an organic
 anti-reflective coating — the separate ARC etch at
 {ref}`TUNARCE <step-036>` is the step page's evidence — and is about
 1 µm thick, the PDK's generic "Photoresist thickness" being
 1.14 µm.[^pdk-03] It has to survive a plasma ARC etch, two implants and
 a wet oxide etch before it is removed, and the {ref}`TUNM <step-035>`
-page includes a hard bake "to harden the resist for the implants". Baker and Capsuto studied CD
+page includes a hard bake "to harden the resist for the implants".
+
+Baker and Capsuto studied CD
 control with an anti-reflective coating on an i-line 0.35 µm
 device,[^baker-1996] and Ross et al. stabilised i-line implant resists
 with a flood electron beam, reducing shrinkage and CD variation and
@@ -227,14 +277,32 @@ eliminating popping.[^ross-1996] SkyWater's resist, ARC and bake are not
 public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the pattern is used
-four times. {ref}`TUNARCE <step-036>` opens the ARC in the windows, on
-the {ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
-class; {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant through
-them on the {ref}`medium-current implanter <machine-medium-current-implanter>`
-class; and {ref}`TUNME <step-039>` removes the oxide in them in dilute HF
-or buffered HF on the {ref}`wet bench <machine-wet-bench>` class, with
-the resist strip and pre-oxidation clean treated as part of that step.
+### Overlay and alignment
+
+The {ref}`TUNM <step-035>` page reads the mask as aligned to
+the trench pattern of {ref}`FOM <step-004>`, and the
+{ref}`ONOM <step-041>` page reads the next mask as aligned to this one,
+since the ONO island must enclose the window. ASML specifies "≤ 40 nm"
+single-machine overlay for the /275D stepper[^asml-pas5500-275d] against
+the 0.095 µm of tunm.3 and tunm.4 (our comparison; SkyWater's overlay
+budget is not public). van Haren et al. show how alignment-mark
+placement accuracy limits layer-to-layer overlay.[^van-haren-2019]
+
+### Pattern transfer
+
+On the step pages' readings the pattern is used
+four times:
+
+* {ref}`TUNARCE <step-036>` opens the ARC in the windows, on
+  the {ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
+  class
+* {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implant through
+  them on the {ref}`medium-current implanter <machine-medium-current-implanter>`
+  class
+* {ref}`TUNME <step-039>` removes the oxide in them in dilute HF
+  or buffered HF on the {ref}`wet bench <machine-wet-bench>` class, with
+  the resist strip and pre-oxidation clean treated as part of that step
+
 Two Cypress patents that may still be in force describe the same
 sequence, the mask it uses and the undercut the isotropic etch leaves;
 their wording is in the collapsed note below this paragraph. Whether
@@ -255,22 +323,15 @@ can be expected to undercut the photoresist 307" and that in its flow "a
 undercut of 0.01 um on a side".[^pat-03]
 :::
 
-**Resist edges.** Ions scattered out of an implant resist edge alter the
+### Resist edges
+
+Ions scattered out of an implant resist edge alter the
 threshold of nearby transistors, with shifts "of up to 100 mV … over a
 lateral distance on the order of a micrometer" in Hook et al.'s
-work;[^hook-2003] the {ref}`TUNM <step-035>` page cites the study for
+work.[^hook-2003] The {ref}`TUNM <step-035>` page cites the study for
 the 0.095 µm `tunm` clearances. The PDK does not say what those
 clearances allow for; we read them as placement margins against the gate
 (inference).
-
-**Overlay.** The {ref}`TUNM <step-035>` page reads the mask as aligned to
-the trench pattern of {ref}`FOM <step-004>`, and the
-{ref}`ONOM <step-041>` page reads the next mask as aligned to this one,
-since the ONO island must enclose the window. ASML specifies "≤ 40 nm"
-single-machine overlay for the /275D stepper[^asml-pas5500-275d] against
-the 0.095 µm of tunm.3 and tunm.4 (our comparison; SkyWater's overlay
-budget is not public). van Haren et al. show how alignment-mark
-placement accuracy limits layer-to-layer overlay.[^van-haren-2019]
 
 (mask-tunm-steps)=
 ## Steps that use this mask
@@ -311,6 +372,8 @@ the layer and rule x.15a; flag TC means "Rule not checked for cell name
 areaid.ce). A corresponding core rule may or may not exist.". The unit
 column of tunm.3 is blank in the published table.[^pdk-periph]
 
+:::{table} The `tunm` rules, with the `hvi` rule that names the layer and rule x.15a, as published; the unit column of tunm.3 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | tunm.1 | "Min width of tunm" | 0.410 µm |
@@ -323,10 +386,13 @@ column of tunm.3 is blank in the published table.[^pdk-periph]
 | tunm.8 | "tunm must be enclosed by areaid.ce" | — |
 | hvi.4 | "Hvi must not overlap tunm" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* repeats the width and space as
 `TUNMCD` 0.41 and `TUNMCDSP` 0.5, and the Error Messages page gives the
-same 0.41, 0.5, 0.095 and 0.672.[^pdk-03][^pdk-errors] For the plate,
+same 0.41, 0.5, 0.095 and 0.672.[^pdk-03][^pdk-errors]
+
+For the plate,
 the smallest features are therefore 0.410 µm windows on 0.500 µm spaces
 with an area of at least 0.672 µm²; hvi.4 keeps the windows out of the
 thick-oxide regions that {ref}`LVOM <step-044>` works with, on the step
@@ -337,25 +403,23 @@ a memory array cannot be derived from these rules alone (the
 
 ## Related pages
 
-* {ref}`TUNM <step-035>`, {ref}`TUNARCE <step-036>`,
+* **Steps.** {ref}`TUNM <step-035>`, {ref}`TUNARCE <step-036>`,
   {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>` and
   {ref}`TUNME <step-039>` — the mask step, the ARC etch, the two
-  implants and the oxide etch.
-* {ref}`ONO <step-040>` and {ref}`ONOM <step-041>` — the stack grown in
-  the windows and the mask that confines it; {ref}`mask-onom` — the ONO
-  mask's page.
-* {ref}`mask-dnm` — the deep N-well mask; tunm.6a keeps the windows
-  inside deep N-well.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the runs whose plates have no drawn shapes.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` and {ref}`machine-wet-bench` —
-  the implant and wet-etch classes that use the pattern.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography`, {ref}`category-implant` and
+  implants and the oxide etch. {ref}`ONO <step-040>` and {ref}`ONOM <step-041>` — the stack grown in
+  the windows and the mask that confines it.
+* **Category.** {ref}`category-lithography`, {ref}`category-implant` and
   {ref}`category-etch` — the mask step, implant and etch categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` and {ref}`machine-wet-bench` —
+  the implant and wet-etch classes that use the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-onom` — the ONO
+  mask's page; {ref}`mask-dnm` — the deep N-well mask; tunm.6a keeps the windows
+  inside deep N-well.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the runs whose plates have no drawn shapes.
 
 ## References
 

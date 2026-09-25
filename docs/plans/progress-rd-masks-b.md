@@ -564,3 +564,43 @@ The sibling of nsdm; the same treatment throughout.
   "On the step page's reading the `RRPM` data would come …" (46, eight counts); three quick-facts cells.
   Before → after: paragraphs 9 → 0, items 1 → 0, sentences 14 → 4, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 13. tunm — done (page with three in-force notes)
+
+* **Rules applied.** R-INTRO (168 → 38 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST (the
+  four more steps the openings serve; the placement rules, each item given "it" as subject; the Table
+  F2b marks; what the mask does not define; the four uses of the pattern); R-RELATED (the ONO/ONOM step
+  links under **Steps.**, the ONO mask page under **Masks.**, the base bullet naming both); R-H3
+  (Exposure class, Mask errors, Resist and tone, Overlay and alignment, Pattern transfer, Resist edges).
+* **In-force notes.** All three byte-identical (diff of the fenced blocks against the base). The
+  exposure paragraph was split before "At the NA 0.48 low end …", so the pointer ("its sentence is in
+  the collapsed note below this paragraph") is still in the paragraph directly above its note; the
+  pattern-transfer pointer paragraph follows the new four-use list and still sits directly above its
+  note.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer" (not the
+  other way round, so that no note moves); "Resist edges", a free extra, now follows the
+  pattern-transfer note. No passage refers to another by position.
+* **Intro.** Kept the first sentence up to its colon and the reading up to "… and nowhere else."
+  Moved with the hedge repeated: "On the TUNM page's reading, the same openings serve four more
+  steps:" and the dash list as bullets; "Its public record is lopsided" → "The mask's public record …"
+  (after the list).
+* **Declared additions** (`--allow-added markers,numbers,refs,hedges`): markers `mask-renders` (render
+  sentence), `pdk-errors` (Error Messages "describes"), `steps-sheet` (Plate number: the dash pair became
+  a colon and the sentence split before "The sheet does not say …"); numbers `3`, `15` (tunm.3, x.15a in
+  the rule-table caption); refs `step-035` (hedge repeated); hedge `our reading` ("(our reading of the
+  rows; the table does not explain its marks)" repeated when "which we take to be the cell's pass
+  transistor …" became "We take those rows to be …"). `LOST markers: 'pdk-06'` ×1: the two `[^pdk-06]` of
+  the Table F2b sentences became one on the list lead-in (one source). The placement-rules sentence's
+  `[^pdk-periph][^pdk-06]` split by clause: `pdk-periph` on the lead-in, `pdk-06` on the `areaid.ce`
+  item, whose description ("Memory (SRAM) core cell identifier") is the *Layers Reference*'s.
+* **Marker coverage.** Flags read: each flagged sentence had no marker of its own in the base, or keeps
+  its clause's marker on a lead-in.
+* **Over the caps after the pass:** "The page names a mask-data layer `TUNMmk` in three generic checks —
+  …" (54 by the script, three quotations); the "Plates on runs with no drawn `tunm`" bullet (73: its
+  second sentence begins "Because", so it cannot open a continuation paragraph — R-PARA 2); the
+  quick-facts Polarity cell. Inside the second in-force note (not editable, §2.5): one 126-word
+  paragraph with sentences of 66 and 60 words. Before → after: paragraphs 14 → 1 (in the note), items 1
+  → 1, sentences 15 → 3 (two in the note), cells 1 → 1.
+* **Content problem for the owner (not changed):** as on onom, the open text paraphrases the notes:
+  "takes the other view for tight layouts" and "describe the same sequence, the mask it uses and the
+  undercut the isotropic etch leaves". `check_inforce.py` passes; §2.5 would forbid writing it now.
