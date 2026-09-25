@@ -10,17 +10,38 @@
 | **Previous step** | {ref}`PWDEIS <step-033>` |
 | **Next step** | {ref}`TUNM <step-035>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** heats the wafer to repair implant damage and activate the
+  ten dopant implants of the well and channel module before gate
+  oxidation.
+* **Why:** implanted dopant is inactive until the lattice is repaired,
+  and the retrograde well and channel profiles need a short anneal to
+  stay retrograde.
+* **Public numbers:** none published for SKY130 (the anneal recipe is
+  not public — see Open questions).
+* **Likely SkyWater tool:** AG Associates Heatpulse 8808 — strong
+  (tool); inference (assignment); Aviza furnace — weak inference as an
+  alternative.[^skw-01]
+* **Not public:** the anneal temperature, time and ambient, and
+  whether it is a single RTA or an RTA plus a furnace step (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `RTAI` is the anneal that closes the well and channel module. Ten
-implants have gone into the wafer since {ref}`NS19 <step-013>` — the
-low-Vt channel implant {ref}`LVTNI <step-015>`, the N-well pair
+implants have gone into the wafer since {ref}`NS19 <step-013>`. They are
+the low-Vt channel implant {ref}`LVTNI <step-015>`, the N-well pair
 {ref}`NWI <step-018>`/{ref}`NWI2 <step-019>` and the PMOS channel
 implant {ref}`LVTPI <step-020>`, the high-Vt PMOS pair
 {ref}`PCHI <step-023>`/{ref}`PNCHI <step-024>`, the P-well pair
 {ref}`PWI <step-027>`/{ref}`PWI2 <step-028>` and the {term}`drain-extended <DEMOS>` pair
 {ref}`PWDEI1 <step-031>`/{ref}`PWDEI2 <step-032>` — and none has yet
-been annealed. `RTAI` heats the wafer, in an inert ambient, to repair
+been annealed.
+
+`RTAI` heats the wafer, in an inert ambient, to repair
 the lattice damage they left, move the dopant atoms onto substitutional
 sites where they are electrically active, and settle the well and
 channel profiles before the first gate dielectric is grown. This
@@ -72,10 +93,12 @@ rather than later:
   transistor's threshold, body effect and {term}`punch-through` margin.
   Annealing them in one defined step, before the SONOS and gate modules
   add their own thermal cycles, makes the profiles a known starting
-  point. Transient enhanced diffusion — the boost in boron and
+  point.
+
+  Transient enhanced diffusion — the boost in boron and
   phosphorus diffusivity from implant-generated interstitials
   ({term}`TED`) — is worst for slow anneals, "because the damage
-  dissolves while the dopant is still mobile"; the resolution is "the
+  dissolves while the dopant is still mobile". The resolution is "the
   RTA: seconds at 1000–1100 °C" (category page, citing Stolk et
   al.).[^stolk-1997]
 * **Retrograde profiles must stay retrograde.** The point of the MeV
@@ -99,26 +122,30 @@ performed after implanting both the n-well and p-well".[^pat-03]
 
 ## How it is typically performed
 
-An industry-generic well/channel activation anneal for a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic well/channel activation anneal for a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
   argon; {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C for
   not more than a few seconds" using "high intensity lamps" with "in
-  situ pyrometry to effect real time control".[^wiki-rtp] A small oxygen
-  addition is sometimes used to suppress boron out-diffusion from the
-  surface; a pure inert ambient avoids growing oxide (category page).
+  situ pyrometry to effect real time control".[^wiki-rtp]
+
+  A small oxygen addition is sometimes used to suppress boron
+  out-diffusion from the surface; a pure inert ambient avoids growing
+  oxide (category page).
 * **Temperature and time.** Published well anneals of the era: "an
   annealing at 1000 C for 10 sec in an RTA (Rapid Thermal Anneal)
-  apparatus", after which "the gate insulating layer … is formed on the
-  N Well and P Well regions … by a thermal oxidation or CVD (Chemical
-  Vapor Deposition) method";[^pat-well-hynix] in
-  older flows a well anneal "at approximately 900° C. in a neutral
-  ambient such as nitrogen for approximately 30 minutes" (the patent does
-  not name the tool).[^pat-vt-lsi] A
-  1000–1050 °C, 10–30 s RTA is the typical 130 nm-era
-  choice.[^txt-05][^txt-10] Ramp rates of "1 – 180°C per second" are the
-  range of the AG Associates Heatpulse 8800-class tools.[^ag-8800]
+  apparatus".[^pat-well-hynix] The patent then describes "the gate
+  insulating layer … is formed on the N Well and P Well regions … by a
+  thermal oxidation or CVD (Chemical Vapor Deposition)
+  method".[^pat-well-hynix]
+
+  In older flows, a well anneal ran "at approximately 900° C. in a
+  neutral ambient such as nitrogen for approximately 30 minutes" (the
+  patent does not name the tool).[^pat-vt-lsi] A 1000–1050 °C, 10–30 s
+  RTA is the typical 130 nm-era choice.[^txt-05][^txt-10] Ramp rates of
+  "1 – 180°C per second" are the range of the AG Associates Heatpulse
+  8800-class tools.[^ag-8800]
 * **Sequence.** Pre-anneal clean (at {ref}`PWDEIS <step-033>`); load;
   purge; ramp; soak; ramp-down; unload. The pad oxide, if retained, caps
   the surface during the soak.
@@ -128,7 +155,7 @@ An industry-generic well/channel activation anneal for a 200 mm,
   activation and uniformity (category page).[^txt-10]
 * **Furnace alternative.** A vertical furnace at 900–1000 °C for tens of
   minutes (typical)[^txt-01] gives the same activation with more
-  diffusion, and some fabs prefer it for wells precisely because a
+  diffusion. Some fabs prefer it for wells precisely because a
   little extra drive smooths the chained profiles ("Increasingly,
   furnace anneals are being supplanted by Rapid Thermal
   Anneal").[^wiki-furnace]
@@ -145,30 +172,36 @@ An industry-generic well/channel activation anneal for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **AG Associates Heatpulse 8808.** SkyWater's facilities page lists
-  under RTA "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] —
-  a single-wafer RTA with the inert ambients (Ar, N₂) and the
-  temperature reach this step needs. Strength: **strong** for the tool
-  (SkyWater statement); assignment to `RTAI` is an **inference** from
-  the Cypress integration patent, which may still be in force (collapsed
-  note below this list).
+* **AG Associates Heatpulse 8808**
+  - *SkyWater says:* facilities page lists under RTA "Ag Heatpulse
+    8808 NH3, Ar, N2, O2, up to 1200C".[^skw-01]
+  - *Tool exists:* strong — a single-wafer RTA with the inert
+    ambients (Ar, N₂) and the temperature reach this step needs.
+  - *Runs this step:* inference from the Cypress integration patent,
+    which may still be in force (collapsed note below this list).
+
   Reseller documentation for the Heatpulse 8800/8808 family gives a
   "Recommended steady-state temperature range: 400 – 1200°C", ramp-up
   "Programmable, 1 – 180°C per second", "2 banks of 14 lamps" with
-  "10-zone lamp control", pyrometer or thermocouple sensing, wafer sizes
-  to 8 inches, and "Implant annealing" among the listed
-  applications[^ag-8800] (the reseller's family specification PDF gives, in its
-  Heatpulse 8108 section, the same 400–1200 °C range, a programmable
-  1–180 °C/s ramp-up, a maximum ramp-down of 150 °C/s and ±5 °C
-  uniformity across an 8-inch (200 mm) wafer at 1150 °C; its Heatpulse
-  4100 section differs: 400–1300 °C, 10–200 °C/s ramp-up and ±5 °C
-  across a 6-inch (150 mm) wafer).[^ag-8108]
-* **Aviza furnaces.** SkyWater's facilities page states "Furnaces are
-  all made by Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal
-  to 1150C" — the batch alternative if the fab chose a furnace well
-  anneal. Strength: strong for existence; weak for assignment, since the
-  Cypress integration patent, which may still be in force, bears on it
-  (collapsed note below this list).
+  "10-zone lamp control", pyrometer or thermocouple sensing, and wafer
+  sizes to 8 inches. "Implant annealing" is among the listed
+  applications.[^ag-8800]
+
+  The reseller's family specification PDF gives, in its Heatpulse 8108
+  section, the same 400–1200 °C range, a programmable 1–180 °C/s
+  ramp-up, a maximum ramp-down of 150 °C/s and ±5 °C uniformity across
+  an 8-inch (200 mm) wafer at 1150 °C. Its Heatpulse 4100 section
+  differs: 400–1300 °C, 10–200 °C/s ramp-up and ±5 °C across a 6-inch
+  (150 mm) wafer.[^ag-8108]
+* **Aviza furnaces**
+  - *SkyWater says:* facilities page states "Furnaces are all made by
+    Aviza"[^skw-01] with "Ar anneal to 1150C" and "N2 anneal to
+    1150C" — the batch alternative if the fab chose a furnace well
+    anneal.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak inference for assignment, since the Cypress
+    integration patent, which may still be in force, bears on it
+    (collapsed note below this list).
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
 The assignment to `RTAI` follows the Cypress integration patent's rapid
@@ -194,11 +227,12 @@ rather than a furnace anneal at this point.[^pat-03]
 * Previous: {ref}`PWDEIS <step-033>` (strip and pre-anneal clean).
 * Next: {ref}`TUNM <step-035>` (start of the SONOS module); gate
   oxidation at {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`.
-* Anneals every implant from {ref}`LVTNI <step-015>` to
-  {ref}`PWDEI2 <step-032>`; the deep N-well ({ref}`DNI <step-008>`)
-  was annealed earlier by {ref}`LINOX <step-010>`.
-* Later RTAs: {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`,
-  {ref}`RTAD2 <step-092>`.
+* Depends on: every implant from {ref}`LVTNI <step-015>` to
+  {ref}`PWDEI2 <step-032>`, none of which has yet been annealed; the
+  deep N-well ({ref}`DNI <step-008>`) was annealed earlier by
+  {ref}`LINOX <step-010>`.
+* Same category: the later RTAs {ref}`TIPRTAD <step-075>`,
+  {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`.
 * Category page: {ref}`Anneal / thermal processing <category-anneal>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -279,18 +313,20 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The SKY130 anneal temperature, time and ambient are not public; the
-  1000 °C/10 s figure is from a contemporaneous third-party patent.
-* Whether `RTAI` is a single RTA or an RTA plus a short furnace step,
-  and whether the Heatpulse 8808 or an Aviza furnace runs it, is
-  inferred from the Cypress integration patent (collapsed notes above)
-  and SkyWater's tool list.[^skw-01]
-* Whether the pad oxide is present during the anneal, and where the
-  sacrificial oxide before gate oxidation is removed, is not stated
-  publicly (see {ref}`NS19 <step-013>` and {ref}`PWDEIS <step-033>`).
-* The reseller's specification PDF cited for the Heatpulse
-  family[^ag-8108] documents the Heatpulse 4100, 8108, 8800 and 8800i, not the 8808
-  itself; the two share a family but the
+* **Recipe not public.** The SKY130 anneal temperature, time and
+  ambient are not public; the 1000 °C/10 s figure is from a
+  contemporaneous third-party patent.
+* **RTA vs. furnace.** Whether `RTAI` is a single RTA
+  or an RTA plus a short furnace step, and whether the Heatpulse 8808
+  or an Aviza furnace runs it, is inferred from the Cypress integration
+  patent (collapsed notes above) and SkyWater's tool list.[^skw-01]
+* **Pad oxide presence.** Whether the pad oxide is present during the
+  anneal, and where the sacrificial oxide before gate oxidation is
+  removed, is not stated publicly (see {ref}`NS19 <step-013>` and
+  {ref}`PWDEIS <step-033>`).
+* **Datasheet mismatch.** The reseller's specification PDF cited for
+  the Heatpulse family[^ag-8108] documents the Heatpulse 4100, 8108,
+  8800 and 8800i, not the 8808 itself; the two share a family but the
   8808's own data sheet is not public.
 
 <!-- footnotes -->

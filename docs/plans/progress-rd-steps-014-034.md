@@ -705,3 +705,103 @@ at all. All other checkers (`check_steps.py`, `check_refs.py`, `check_machines.p
 `check_inforce.py`, `gen_index_links.py --check`) pass; `-W` sphinx build clean. Screenshots
 (desktop + 400 px) read cleanly top to bottom, including the new recap table, the R-TOOLS
 sub-bullets, and the relabelled Related-steps/Open-questions sections.
+
+### 034-rtai.md — done (densest page in the batch; two in-force patent dropdowns, content untouched)
+
+Rules applied: R-PARA (140-word "What this step is" lead paragraph split at the implant-list
+seam; its 46-word "Ten implants" sentence split into two), R-LIST/R-SENTENCE (the 87-word
+"Profile control" item and its 46-word TED sentence split; the 62-word "Tool and ambient" item
+split; the 111-word "Temperature and time" item split, restructuring the 81-word Hynix-patent
+sentence at its "after which" connector into two standalone sentences and the "older flows"
+LSI-patent clause into its own sentence with an added linking verb, "ran", for grammar only —
+no fact, number or quote changed; every quotation preserved verbatim); the 48-word "Furnace
+alternative" sentence split), R-TOOLS (the 174-word "AG Associates Heatpulse 8808" item and the
+61-word "Aviza furnaces" item both converted to SkyWater-says/Tool-exists/Runs-this-step form,
+with the reseller-documentation detail moved to two indented continuation paragraphs, splitting
+its own 107-word run-on sentence into four), R-HEDGE step 1 (italic scope lead-in on "How it is
+typically performed"), R-RELATED (relabelled with `Previous:`/`Next:`/`Depends on:`/`Same
+category:`/`Category page:`), R-OPENQ (bold labels added to all four bullets; one label
+shortened from a first draft that itself pushed its sentence over the 45-word cap), R-GLANCE
+(box inserted last; "Public numbers" and "Not public" both point to the Open-questions
+"not public" framing rather than repeating the "in an inert ambient" claim from the page body,
+so the box does not amplify — or attempt to resolve — the known content contradiction).
+
+**Content problem confirmed, not touched:** "What this step is" (`RTAI` heats the wafer "in an
+inert ambient") still contradicts the Open-questions "Recipe not public" bullet ("The SKY130
+anneal temperature, time and ambient are not public"). Both statements were kept verbatim, per
+instructions; already logged under "Content problems for the owner" below.
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 2 → 1 (the one remaining is the
+generated `{figure}` caption, off-limits, Guide problem 10); list items > 60 words 5 → 0;
+sentences > 45 words 5 → 0; table cells > 25 words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/034-rtai.md`
+(dropdown flag passed defensively; no dropdown text was touched): exit 1, but the only finding
+is `LOST number_order (not a clean regroup)` for three large tuples, all from splitting the
+174-word Heatpulse-8808 item into SkyWater-says/Tool-exists/Runs-this-step sub-bullets plus two
+continuation paragraphs — condition (b) fails because one bold-heading occurrence of "8808"
+moved to a different unit boundary, not because any number vanished (the plain `numbers`
+category shows no loss). No LOST quotes or hedges. All other checkers (`check_steps.py`,
+`check_refs.py`, `check_machines.py`, `check_inforce.py`, `gen_index_links.py --check`) pass;
+`-W` sphinx build clean. Screenshots (desktop + 400 px) read cleanly top to bottom, including
+both collapsed patent dropdowns (left untouched), the recap-free R-TOOLS sub-bullets, and the
+four labelled Open-questions bullets.
+
+## Batch-level after measurement
+
+`measure5.py` across all 21 pages (014–034), baseline was paragraphs > 100 words: 58; list
+items > 60 words: 43; sentences > 45 words: 108; table cells > 25 words: 0.
+
+After the full pass: paragraphs > 100 words: 21; list items > 60 words: 0; sentences > 45
+words: 0; table cells > 25 words: 0. Every one of the 21 remaining over-cap paragraphs is a
+generated `{figure}` caption/alt-text block (one per page) — off-limits per the boundary rules,
+and the same `measure5.py` gap noted throughout this file (Guide problem 10: the tool computes
+an `infence` flag for figure-block text but never applies it to exclude that text from the
+count). No non-figure over-cap paragraph, list item, sentence or table cell remains anywhere in
+the batch.
+
+## Guide problems (consolidated, batch-final)
+
+Guide problems 1–9 are inherited from the pilot (docs/plans/progress-rd-steps-001-013.md).
+This batch's own findings, numbered onward:
+
+10. `measure5.py` never excludes `{figure}` block text from its paragraph/sentence counts (an
+    `infence` flag is computed in the tool but never used to filter). Every step page in this
+    batch ends the pass with exactly one residual over-cap paragraph — the figure caption —
+    which is correctly left untouched per the `{figure}`-block boundary rule. The guide should
+    either fix the tool or state explicitly that figure-block over-cap findings are expected
+    and are not violations.
+11. `check_preserved.py`'s `number_order` category goes unconditionally LOST (regardless of
+    `--allow-regrouped`/`--allow-added`) whenever a single number that used to share a
+    two-or-more-number "unit" (sentence/list-item/table-row) with another number ends up alone
+    in its own unit after a split — even though the plain `numbers` category (condition a)
+    confirms nothing was actually lost. This happened on nearly every page in this batch
+    (014–034) as an unavoidable side effect of legitimate R-SENTENCE/R-LIST/R-TABLE splits. The
+    guide's checker contract (§5) should document this as an expected, benign finding rather
+    than leaving each sub-agent to re-derive it from first principles.
+12. (page 015) A single quotation can span what looks like two "columns" of a natural table
+    (e.g., a combined energy-and-dose sentence); converting it to a real R-TABLE splits the
+    quotation and is correctly rejected by `check_preserved.py`'s `quotes`/`hedges` categories.
+    The guide's R-TABLE section should warn explicitly that a quotation's span, not just its
+    content, constrains whether a passage may become a table.
+13. (page 018) R-TABLE's header-consolidation rule (moving a repeated unit like "cm⁻²" into a
+    single table header) can trigger a genuine, non-declarable `LOST numbers` (condition a)
+    because the count of that unit's textual occurrences drops. This page's own worked example
+    in the guide instructs exactly this transformation, creating a direct conflict between the
+    guide's own instructions and `check_preserved.py`'s strictest category. Followed the guide's
+    literal example rather than reverting, since `check_preserved.py` is off-limits to edit
+    (§2 rule 15); flagging the conflict for the guide's own maintainers to resolve.
+14. (page 018) A pre-existing line-wrap artifact ("5 ×\n  10¹¹") under-tokenizes on the
+    unedited/base side of a diff, producing a false-looking preserved-count mismatch unrelated
+    to any readability edit. Noted for anyone reviewing `check_preserved.py` diffs on this page.
+
+No new Guide problems emerged from pages 031–034 beyond confirming problems 10 and 11 at
+larger scale (034 in particular).
+
+## Boundary compliance note
+
+No edit in this batch touched: a `## References` reading list or footnote definition, a
+generated `<!-- index-links:begin … end -->` block, a `{figure}` block's path/alt/width/name or
+caption text, a quick-facts table, a mandatory H2 heading, or a `{dropdown}` title/boundary/
+content (dropdown text was read-only verified with `--allow-dropdown-edits` passed defensively
+wherever a page had one, even when no dropdown text was touched).
