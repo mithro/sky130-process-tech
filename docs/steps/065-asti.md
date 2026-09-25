@@ -21,7 +21,7 @@
   read as the tip's lateral extent (inference), and the 7° tip
   angle.[^pdk-03]
 * **Likely SkyWater tool:** Axcelis GSD implanters — strong (tools);
-  inference (assignment); Axcelis 8250 weak.[^skw-01]
+  inference (assignment); Axcelis 8250 weak (assignment).[^skw-01]
 * **Not public:** the energy, the dose and the rotation scheme (→ Open
   questions).
 :::

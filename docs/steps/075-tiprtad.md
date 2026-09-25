@@ -13,9 +13,9 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** anneals the module's five tip and halo implants, regrowing
-  the amorphised silicon and activating the dopants with little junction
-  movement.
+* **Does:** anneals the module's five tip and halo implants to regrow
+  the amorphised silicon and activate the dopants, while moving the
+  junctions as little as possible.
 * **Why:** unannealed tips and halos would diffuse most in the slow, warm
   spacer deposition that follows.
 * **Public numbers:** none published for SKY130.

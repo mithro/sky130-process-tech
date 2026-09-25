@@ -810,3 +810,7 @@ One commit each.
   the resist film). Paragraphs re-wrapped; `check_preserved` output unchanged on all three pages.
 * **L1, 067.** "The patent adds:" → "The second patent adds:" (the sentence before quotes two patents; the
   quotation is `pat-strip-mosel`'s, the second one named). `check_preserved` output unchanged.
+* **L2, glance wording.** 065 "Axcelis 8250 weak" → "Axcelis 8250 weak (assignment)" (its existence is
+  graded strong on the page); 070 "the next mask is coated here" → "coated on this surface" (the page's
+  words); 075 "with little junction movement" → "while moving the junctions as little as possible" (the
+  lead's words: an aim, not a result). All bullets ≤ 25 words; `check_preserved` output unchanged.

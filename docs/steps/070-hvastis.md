@@ -15,8 +15,8 @@
 
 * **Does:** strips the thin `HVNTM` resist after the tilted `HVASTI`
   implant and cleans the wafer for `LDNTM`.
-* **Why:** the next mask is coated here, and the arsenic-bearing resist
-  must be gone before `TIPRTAD` heats the wafer.
+* **Why:** the next mask is coated on this surface, and the
+  arsenic-bearing resist must be gone before `TIPRTAD` heats the wafer.
 * **Public numbers:** none published for this strip; the resist it
   removes is 0.3 µm thick.[^pdk-03]
 * **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
