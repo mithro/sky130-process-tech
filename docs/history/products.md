@@ -32,13 +32,12 @@ described on {ref}`history-technologies`.
 |---|---|---|---|
 | R42HD | Fab 4 / CMI - Bloomington, MN; Cypress Semiconductor - Bloomington, MN | CY7C024E, CY7C0241E, CY7C025E, CY7C0251E, CY7C09079(V), CY7C09179(V), CY7C09089(V), CY7C09189(V), CY7C09099(V), CY7C09199(V) and 14 more | 2[^qtp-102101][^qtp-098368] |
 | RAM42HHA | Cypress Semiconductor -- Bloomington, MN | CY62256 | 1[^qtp-030206] |
-| RAM42HNHA | Grace Semiconductor, Shanghai, China | CY62256* | 1[^qtp-091302] |
+| several foundry processes (one summary report) | Tower Semiconductor (Israel, TS60D/RX11/KB14/RF06 base dice), IBM/NY (ZB15/ZB17 base dice), Chartered Semiconductor Manufacturing/Singapore ('CSM', A35C-G35C base dice); Grace Semiconductor, Shanghai, China | CY2LL843*, CY2SSTV16859*, CY2AVC16835*, CY7C827042AR, CY25561, CY25562, CY2SSTV855, CY62256* | 2[^qtp-i000006][^qtp-091302] |
 | CSM 0.35um | Chartered Semiconductor Singapore | CY7B9950, CY2DP818*, CY28346, CY29946, CY29947, CY29948, CY29972, CY29973 | 1[^qtp-i000005] |
 | R42LDHA | Cypress Semiconductor - Bloomington, MN | CY2213ZC-1 | 1[^qtp-003907] |
 | S4AD-5 | Cypress Semiconductor -- CTI Round Rock, TX; HHGrace /Shanghai-China; GSMC/Shanghai-China | CY26049-1/3/4/5, CY26049-36, CY23FP12, CY23FS04, CY23FS08, CY8C24794, CY8C24894, CY8C21234, CY8C21334, CY8C21434 and 3 more | 3[^qtp-021507][^qtp-151005][^qtp-062509] |
 | S4AD-5CTI | Cypress Semiconductor - Round Rock, TX | CY8C21334, CY8C21534 | 1[^qtp-051005] |
 | S4ADLatch | Cypress Semiconductor - Round Rock, TX | CY5048WAF | 1[^qtp-042806] |
-| TSMC 0.35um | TSMC | ASIC (SMaL Camera ASIC, TSMC part TMK212B) | 1[^qtp-s050001] |
 
 ### 0.25 µm
 
@@ -55,8 +54,7 @@ described on {ref}`history-technologies`.
 | Process | Fab as printed | Products named in the reports | Reports |
 |---|---|---|---|
 | B55SGT | Cypress Semiconductor – Bloomington, MN (CMI) | CY2DP3110, CY2DP314 | 1[^qtp-051101] |
-| R7FT-3R | Cypress Semiconductor -- Bloomington, MN | CY7C0831V, CY7C0832V, CY7C0851V, CY7C0852V, CY7C0853V | 1[^qtp-014807] |
-| R7FTW-3R | Cypress Semiconductor -- Bloomington Minnesota | CY7C0831V, CY7C0832V, CY7C0851V, CY7C0852V, CY7C0853V | 1[^qtp-023101] |
+| R7FT-3R | Cypress Semiconductor -- Bloomington, MN; Cypress Semiconductor -- Bloomington Minnesota | CY7C0831V, CY7C0832V, CY7C0851V, CY7C0852V, CY7C0853V | 2[^qtp-014807][^qtp-023101] |
 | S17 | Promos (Taiwan) | CYU001M16TFFA, CYU001M16TFF1A, CYU001M16TFF3A | 1[^qtp-032301] |
 | PowerChip 0.165um | Powerchip Semiconductor Corp, HsinChu, Taiwan | K002MC5BW, GC2016V5BW, CYK128K16SCCB, CYK128K16MCCB, WCMC2016V9B, WCMC2016V7B | 1[^qtp-051501] |
 | R7LD-1.8 | Cypress Semiconductor -- Bloomington, MN | CY62146CV18, CY62147CV18 | 1[^qtp-012801] |
@@ -86,7 +84,7 @@ described on {ref}`history-technologies`.
 |---|---|---|---|
 | R42D | Cypress Semiconductor -- Bloomington, MN | CY7C4255V, CY7C4265V, CY7C4275V, CY7C4285V, CY7C4261V, CY7C4271V, CY7C4281V, CY7C4291V, CY7C4282V, CY7C4292V | 1[^qtp-097483] |
 | R52D-5R | Skywater -- Bloomington, MN | CY7C106B, CY7C1006B, CY7C109B, CY7C1009B, CY7C194B, CY7C195B, CY7C197B, CY7C199C | 1[^qtp-098462] |
-| TS60D | Tower Semiconductor (Israel, TS60D/RX11/KB14/RF06 base dice), IBM/NY (ZB15/ZB17 base dice), Chartered Semiconductor Manufacturing/Singapore ('CSM', A35C-G35C base dice) | CY2LL843*, CY2SSTV16859*, CY2AVC16835*, CY7C827042AR, CY25561, CY25562, CY2SSTV855 | 1[^qtp-i000006] |
+| TSMC 0.35um | TSMC | ASIC (SMaL Camera ASIC, TSMC part TMK212B) | 1[^qtp-s050001] |
 
 ## References
 

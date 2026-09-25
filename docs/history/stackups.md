@@ -110,8 +110,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.89 µm |
-| Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.17 µm |
+| Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.890 µm |
+| Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.165 µm |
 | Passivation | 3,000A TEOS + 15,000A Si2N4 | — |
 
 ### QTP 080608: TSMC-2A/L28 TSMC
@@ -120,8 +120,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu/ 375Å TiN | 0.65 µm |
-| Metal 2 | 1,500 Å Ti / 8,000Å AlSiCu / 375Å TiN | 0.99 µm |
+| Metal 1 | 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu/ 375Å TiN | 0.648 µm |
+| Metal 2 | 1,500 Å Ti / 8,000Å AlSiCu / 375Å TiN | 0.988 µm |
 | Passivation | 3,000Å SiN / 3,150Å SOG, 1,200Å SiN | — |
 
 ### QTP 96091: Fab3/R28
@@ -130,8 +130,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A | — |
-| Metal 2 | TiW/Al-Si/Ti 1200A/10000A/150A | — |
+| Metal 1 | Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A | 0.890 µm |
+| Metal 2 | TiW/Al-Si/Ti 1200A/10000A/150A | 1.135 µm |
 | Passivation | 7000A TEOS + 6000A Oxynitride | — |
 
 ### QTP 96182: Fab3/R28
@@ -140,8 +140,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A | — |
-| Metal 2 | TiW/Al-Si/Ti 1200A/10000A/150A | — |
+| Metal 1 | Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A | 0.890 µm |
+| Metal 2 | TiW/Al-Si/Ti 1200A/10000A/150A | 1.135 µm |
 | Passivation | 7000A TEOS + 6000A Oxynitride | — |
 
 ### QTP 96411: Fab 2/ P26
@@ -150,8 +150,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 6K Al, 1200A TiW | 0.12 µm |
-| Metal 2 | 1,500A TiW, 9K Al, 320A TiW | 0.15 µm |
+| Metal 1 | 6K Al, 1200A TiW | 0.720 µm |
+| Metal 2 | 1,500A TiW, 9K Al, 320A TiW | 1.082 µm |
 | Passivation | Oxynitride | — |
 
 ### QTP 97476: Fab2/R28
@@ -160,8 +160,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å | — |
-| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | — |
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
 | Passivation | 7000A TEOS + 6000A Si2N4 | — |
 
 ### QTP 98333: Fab2/L28
@@ -170,8 +170,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.89 µm |
-| Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.17 µm |
+| Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.890 µm |
+| Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.165 µm |
 | Passivation | 3,000A TEOS + 15,000A Si2N4 | — |
 
 ### QTP 98393: Fab2/R28
@@ -180,8 +180,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å | — |
-| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | — |
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
 | Passivation | 7000A TEOS + 6000A Si2N4 | — |
 
 ### QTP 99034: Fab2/L28EPD
@@ -190,8 +190,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.89 µm |
-| Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.17 µm |
+| Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.890 µm |
+| Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.165 µm |
 | Passivation | 3,000A TEOS + 15,000A Si2N4 | — |
 
 ### QTP 110605: TSMC-2A/L28 TSMC
@@ -200,8 +200,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu / 375Å TiN | 0.65 µm |
-| Metal 2 | 1,500 Å Ti / 8,000Å AlSiCu / 375Å TiN | 0.99 µm |
+| Metal 1 | 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu / 375Å TiN | 0.648 µm |
+| Metal 2 | 1,500 Å Ti / 8,000Å AlSiCu / 375Å TiN | 0.988 µm |
 | Passivation | 3,000Å SiN / 3,150Å SOG, 1,200Å SiN | — |
 
 ### QTP 001004: CF4 / HL50 (Hyundai)
@@ -217,12 +217,12 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 021507: Fab2, S4AD-5 (SONOS), R42D-5 derivative w/ 6 additional mask
 
-*Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal, 0.5 m. Earliest dated history row: April 01 (QTP 010702).[^qtp-021507]
+*Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal, 0.5 m (the µ is not printed in the report). Earliest dated history row: April 01 (QTP 010702).[^qtp-021507]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å Ti/6,000Å Al 0.5% Cu /1,200Å TiW | 0.77 µm |
-| Metal 2 | 500Å Ti/8,000Å Al 0.5% Cu/300Å TiW | 0.88 µm |
+| Metal 1 | 500Å Ti/6,000Å Al 0.5% Cu /1,200Å TiW | 0.770 µm |
+| Metal 2 | 500Å Ti/8,000Å Al 0.5% Cu/300Å TiW | 0.880 µm |
 | Passivation | 3,000Å TeOs / 6,000Å Si3N4 | — |
 
 ### QTP 97132: Fab4/R32
@@ -231,7 +231,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | TiW/Al, 500Å/8,000Å | — |
+| Metal 1 | TiW/Al, 500Å/8,000Å | 0.850 µm |
 | Passivation | Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å | — |
 
 ### QTP 98021: Fab4/R32D
@@ -250,7 +250,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500A Cu-Ti/8000A A1 | 0.85 µm |
+| Metal 1 | 500A Cu-Ti/8000A A1 | 0.850 µm |
 | Passivation | 3KA Oxide + 6000A Nitride (both with PECVD) | — |
 
 ### QTP 091302: Fab4/RAM42
@@ -264,12 +264,12 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 98368: Fab4/R42HD
 
-*SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4.* Design rule: CMOS, Double Metal /0.42 m. Earliest dated history row: no history table.[^qtp-098368]
+*SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4.* Design rule: CMOS, Double Metal /0.42 m. Earliest dated history row: the history table gives no dates.[^qtp-098368]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å TiW/6000Å Al -5%Cu/1200Å TiW | 0.77 µm |
-| Metal 2 | 500Å TiW/8000Å Al -5%Cu/300Å TiW | 0.88 µm |
+| Metal 1 | 500Å TiW/6000Å Al -5%Cu/1200Å TiW | 0.770 µm |
+| Metal 2 | 500Å TiW/8000Å Al -5%Cu/300Å TiW | 0.880 µm |
 | Passivation | 7000Å SiO2 + 6000Å Si3N4 | — |
 
 ### QTP 102101: R42HD
@@ -278,8 +278,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å TiW/6000Å Al -5%Cu/1200Å TiW | 0.77 µm |
-| Metal 2 | 500Å TiW/8000Å Al -5%Cu/300Å TiW | 0.88 µm |
+| Metal 1 | 500Å TiW/6000Å Al -5%Cu/1200Å TiW | 0.770 µm |
+| Metal 2 | 500Å TiW/8000Å Al -5%Cu/300Å TiW | 0.880 µm |
 | Passivation | 7000Å SiO2 + 6000Å Si3N4 | — |
 
 ### QTP 003907: Fab4/R42D (with Hot AL)
@@ -288,8 +288,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å TiW/6000Å Al -5%Cu/1200Å TiW | 0.77 µm |
-| Metal 2 | 500Å TiW/8000Å Al -5%Cu/300Å TiW | 0.88 µm |
+| Metal 1 | 500Å TiW/6000Å Al -5%Cu/1200Å TiW | 0.770 µm |
+| Metal 2 | 500Å TiW/8000Å Al -5%Cu/300Å TiW | 0.880 µm |
 | Passivation | 3,000Å SiO2 + 6000Å Si3N4 | — |
 
 ### QTP 042806: Fab2, S4AD-5
@@ -298,8 +298,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500A Ti/6,000A Al 0.5% Cu /1,200A TiW | 0.77 µm |
-| Metal 2 | 500A Ti/8,000A Al 0.5% Cu/300A TiW | 0.88 µm |
+| Metal 1 | 500A Ti/6,000A Al 0.5% Cu /1,200A TiW | 0.770 µm |
+| Metal 2 | 500A Ti/8,000A Al 0.5% Cu/300A TiW | 0.880 µm |
 | Passivation | 3,000A TeOs / 6,000A Si3N4 | — |
 
 ### QTP 051005: Fab2, S4AD-5CTI SONOS
@@ -308,8 +308,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500A Ti/6000A Al 0.5% Cu /1200A TiW | 0.77 µm |
-| Metal 2 | 500A Ti/8000A Al 0.5% Cu/300A TiW | 0.88 µm |
+| Metal 1 | 500A Ti/6000A Al 0.5% Cu /1200A TiW | 0.770 µm |
+| Metal 2 | 500A Ti/8000A Al 0.5% Cu/300A TiW | 0.880 µm |
 | Passivation | 3,000A TeOs / 6000A Si3N4 | — |
 
 ### QTP 062509: S4AD-5 GSMC SONOS
@@ -318,18 +318,18 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 250A TiN/5,800A Al/700A TiN | 0.68 µm |
-| Metal 2 | 500A TiN/8,000A Al/250A TiN | 0.88 µm |
+| Metal 1 | 250A TiN/5,800A Al/700A TiN | 0.675 µm |
+| Metal 2 | 500A TiN/8,000A Al/250A TiN | 0.875 µm |
 | Passivation | 7,000A TeOs /6,000A Si3N4 | — |
 
 ### QTP 151005: S4AD-5
 
-*PSoC RADON Device Family, S4AD-5 Technology, HHGrace FAB5.* Design rule: Single Poly, Double Metal, 0.35 µm. Earliest dated history row: Aug 06 (QTP 060605).[^qtp-151005]
+*PSoC RADON Device Family, S4AD-5 Technology, HHGrace FAB5.* Design rule: Single Poly, Double Metal, 0.35 µm (the report prints µ with a non-standard font glyph). Earliest dated history row: Aug 06 (QTP 060605).[^qtp-151005]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 250A TiN/5,800A Al/700A TiN | 0.68 µm |
-| Metal 2 | 500A TiN/8,000A Al/250A TiN | 0.88 µm |
+| Metal 1 | 250A TiN/5,800A Al/700A TiN | 0.675 µm |
+| Metal 2 | 500A TiN/8,000A Al/250A TiN | 0.875 µm |
 | Passivation | 7,000A TeOs /6,000A Si3N4 | — |
 
 ### QTP I000005: 2L313-698-CBB/CRA
@@ -338,17 +338,19 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 3 | 300Å IMPTi /300Å TiN/.8K AlCu/350Å TiN ARC | — |
+| Metal 1 | 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC | 0.125 µm |
+| Metal 2 | 100Å IMPTi/300Å TiN/.5KAlCu/350Å Tin ARC | 0.125 µm |
+| Metal 3 | 300Å IMPTi /300Å TiN/.8K AlCu/350Å TiN ARC | 0.175 µm |
 | Passivation | 350Å TiN/2K PSG/7K Si3N4 | — |
 
 ### QTP 012705: Fab4/R52FFD-3
 
-*1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4.* Design rule: CMOS, Double Metal, 0.25 m. Earliest dated history row: Oct 00 (QTP 000505).[^qtp-012705]
+*1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4.* Design rule: CMOS, Double Metal, 0.25 m (the µ is not printed in the report). Earliest dated history row: Oct 00 (QTP 000505).[^qtp-012705]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å TiW/6,000Å Al-0.5%Cu/300Å TiW | 0.68 µm |
-| Metal 2 | 300Å Ti/8,000Å Al-0.5%Cu/300Å TiW | 0.86 µm |
+| Metal 1 | 500Å TiW/6,000Å Al-0.5%Cu/300Å TiW | 0.680 µm |
+| Metal 2 | 300Å Ti/8,000Å Al-0.5%Cu/300Å TiW | 0.860 µm |
 | Passivation | 1,000Å Oxide / 9,000 Å Nitride | — |
 
 ### QTP 032005: Fab4 / B53D-3
@@ -367,8 +369,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500 Å-TiW/6000 Å Al-Cu/500 Å TiW | 0.70 µm |
-| Metal 2 | 300 Å-Ti/8000 Å Al-Cu/300 Å TiW | 0.86 µm |
+| Metal 1 | 500 Å-TiW/6000 Å Al-Cu/500 Å TiW | 0.700 µm |
+| Metal 2 | 300 Å-Ti/8000 Å Al-Cu/300 Å TiW | 0.860 µm |
 | Passivation | 1,000A TEOS + 9,000A SiN | — |
 
 ### QTP 082506: Fab4/R52T-3
@@ -377,19 +379,19 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å TiW / 6000Å Al / 500Å TiW | 0.70 µm |
-| Metal 2 | 500Å TiW / 6000Å Al / 500Å TiW | 0.70 µm |
-| Metal 3 | 300Å Ti / 8000Å Al / 300Å TiW | 0.86 µm |
+| Metal 1 | 500Å TiW / 6000Å Al / 500Å TiW | 0.700 µm |
+| Metal 2 | 500Å TiW / 6000Å Al / 500Å TiW | 0.700 µm |
+| Metal 3 | 300Å Ti / 8000Å Al / 300Å TiW | 0.860 µm |
 | Passivation | 1000Å SiO2 / 9000Å Si3N4 | — |
 
 ### QTP 99202: Fab4/R52D-3
 
-*Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4.* Design rule: CMOS, Double Metal /0.25 m. Earliest dated history row: Sep 99 (QTP 99202).[^qtp-099202]
+*Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4.* Design rule: CMOS, Double Metal /0.25 m (the µ is not printed in the report). Earliest dated history row: Sep 99 (QTP 99202).[^qtp-099202]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500 Å TiW/6000 Å Al-.5%Cu/300 Å TiW | 0.68 µm |
-| Metal 2 | 300Å CoTi/8000Å Al-.5%Cu/300Å TiW | 0.86 µm |
+| Metal 1 | 500 Å TiW/6000 Å Al-.5%Cu/300 Å TiW | 0.680 µm |
+| Metal 2 | 300Å CoTi/8000Å Al-.5%Cu/300Å TiW | 0.860 µm |
 | Passivation | 1000Å Oxide + 9000Å Nitride | — |
 
 ### QTP 051101: Fab 4/ B55SGT
@@ -398,9 +400,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 500Å TiW / 6000Å Al / 500Å TiW | 0.70 µm |
-| Metal 2 | 500Å TiW / 8000Å Al / 500Å TiW | 0.90 µm |
-| Metal 3 | 500Å TiW / 40,000Å Al / 300Å TiW | 4.08 µm |
+| Metal 1 | 500Å TiW / 6000Å Al / 500Å TiW | 0.700 µm |
+| Metal 2 | 500Å TiW / 8000Å Al / 500Å TiW | 0.900 µm |
+| Metal 3 | 500Å TiW / 40,000Å Al / 300Å TiW | 4.080 µm |
 | Passivation | 4000Å TEOS / 9000Å Si3N4 | — |
 
 ### QTP 014807: RAM7FT-3R
@@ -409,9 +411,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.47 µm |
-| Metal 2 | 150Å Ti /4,200 Å Al / 300Å TiW | 0.47 µm |
-| Metal 3 | 150Å Ti / 8,000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.465 µm |
+| Metal 2 | 150Å Ti /4,200 Å Al / 300Å TiW | 0.465 µm |
+| Metal 3 | 150Å Ti / 8,000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1000Å TEOS / 9000Å PECVD Nitride | — |
 
 ### QTP 023101: RAM7FT-3R
@@ -420,9 +422,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.47 µm |
-| Metal 2 | 150Å Ti /4,200 Å Al / 300Å TiW | 0.47 µm |
-| Metal 3 | 150Å Ti / 8,000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.465 µm |
+| Metal 2 | 150Å Ti /4,200 Å Al / 300Å TiW | 0.465 µm |
+| Metal 3 | 150Å Ti / 8,000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1,000A TEOS + 9,000A SiN | — |
 
 ### QTP 032301: U016TFF
@@ -441,8 +443,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.47 µm |
-| Metal 2 | 300Å Ti/8,000 Å Al / 300Å TiW | 0.86 µm |
+| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.465 µm |
+| Metal 2 | 300Å Ti/8,000 Å Al / 300Å TiW | 0.860 µm |
 | Passivation | 1000Å TEOS / 9000Å Nitride | — |
 
 ### QTP 051501: BF04301
@@ -461,8 +463,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.47 µm |
-| Metal 2 | 300Å Ti /8,000 Å Al / 300Å TiW | 0.86 µm |
+| Metal 1 | 150Å Ti / 4,200Å Al / 300Å TiW | 0.465 µm |
+| Metal 2 | 300Å Ti /8,000 Å Al / 300Å TiW | 0.860 µm |
 | Passivation | 1000Å TEOS / 9000Å PECVD Nitride | — |
 
 ### QTP 024110: Fab4/RAM8NLD-1.8V
@@ -471,8 +473,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150 Å Ti / 300 Å Al / 300 Å Cu | 0.07 µm |
-| Metal 2 | 300 Å Ti / 8000 Å Al | 0.83 µm |
+| Metal 1 | 150 Å Ti / 300 Å Al / 300 Å Cu | 0.075 µm (implausibly thin; probably misprinted) |
+| Metal 2 | 300 Å Ti / 8000 Å Al | 0.830 µm |
 | Passivation | 1000Å TEOS / 9000Å Si3N4 | — |
 
 ### QTP 043004: Fab4, C8Q-3R
@@ -481,10 +483,10 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100A Ti/3,200A Al 0.5% Cu /300A TiW | 0.36 µm |
-| Metal 2 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.47 µm |
-| Metal 3 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.47 µm |
-| Metal 4 | 150A Ti/8,000A Al 0.5% Cu/300A TiW | 0.84 µm |
+| Metal 1 | 100A Ti/3,200A Al 0.5% Cu /300A TiW | 0.360 µm |
+| Metal 2 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.468 µm |
+| Metal 3 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.468 µm |
+| Metal 4 | 150A Ti/8,000A Al 0.5% Cu/300A TiW | 0.845 µm |
 | Passivation | 1,000A TEOs / 9,000A Si3N4 | — |
 
 ### QTP 053301: Fab4, L8C-3R
@@ -493,21 +495,21 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100A Ti/3,200A Al 0.5% Cu /300A TiW | 0.36 µm |
-| Metal 2 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.47 µm |
-| Metal 3 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.47 µm |
-| Metal 4 | 150A Ti/8,000A Al 0.5% Cu/300A TiW | 0.84 µm |
+| Metal 1 | 100A Ti/3,200A Al 0.5% Cu /300A TiW | 0.360 µm |
+| Metal 2 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.468 µm |
+| Metal 3 | 150A Ti/4,230A Al 0.5% Cu/300A TiW | 0.468 µm |
+| Metal 4 | 150A Ti/8,000A Al 0.5% Cu/300A TiW | 0.845 µm |
 | Passivation | 1,000A TeOs / 9,000A Si3N4 | — |
 
 ### QTP 113005: Fab4 / S8TNV-5
 
-*64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4).* Design rule: S8TNV-5R/0.13µm. Earliest dated history row: Nov 2008 (QTP 071304).[^qtp-113005]
+*64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4).* Design rule: S8TNV-5R/0.13µm (the report prints µ with a non-standard font glyph). Earliest dated history row: Nov 2008 (QTP 071304).[^qtp-113005]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100A Ti / 3200A Al -0.5%Cu / 300A TiW | 0.36 µm |
-| Metal 2 | 100A Ti / 3200A Al -0.5%Cu / 300A TiW | 0.36 µm |
-| Metal 3 | 150A Ti / 7200A Al -0.5%Cu / 300A TiW | 0.77 µm |
+| Metal 1 | 100A Ti / 3200A Al -0.5%Cu / 300A TiW | 0.360 µm |
+| Metal 2 | 100A Ti / 3200A Al -0.5%Cu / 300A TiW | 0.360 µm |
+| Metal 3 | 150A Ti / 7200A Al -0.5%Cu / 300A TiW | 0.765 µm |
 | Passivation | 7000 +/- 2000A Nitride | — |
 
 ### QTP 032003: Fab4/R9T-3R
@@ -516,9 +518,9 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150Å Ti /3200Å Al / 300Å TiW | 0.36 µm |
-| Metal 2 | 150Å Ti /6000 Å Al / 300Å TiW | 0.65 µm |
-| Metal 3 | 150Å Ti / 8,000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 150Å Ti /3200Å Al / 300Å TiW | 0.365 µm |
+| Metal 2 | 150Å Ti /6000 Å Al / 300Å TiW | 0.645 µm |
+| Metal 3 | 150Å Ti / 8,000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1000Å Oxide TEOS / 9000Å Nitride | — |
 
 ### QTP 051207: Fab4/R9Q-3R
@@ -527,20 +529,20 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 150Å Ti /3200Å Al / 300Å TiW | 0.36 µm |
-| Metal 2 | 150Å Ti /6000 Å Al / 300Å TiW | 0.65 µm |
-| Metal 3 | 150Å Ti / 6000Å Al / 300Å TiW | 0.65 µm |
-| Metal 4 | 150Å Ti / 8000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 150Å Ti /3200Å Al / 300Å TiW | 0.365 µm |
+| Metal 2 | 150Å Ti /6000 Å Al / 300Å TiW | 0.645 µm |
+| Metal 3 | 150Å Ti / 6000Å Al / 300Å TiW | 0.645 µm |
+| Metal 4 | 150Å Ti / 8000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1000Å Oxide TEOS / 9000Å Nitride | — |
 
 ### QTP 061806: Fab4/R95LD-3R
 
-*4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.* Design rule: CMOS, Double Metal, 0.09µm. Earliest dated history row: Mar 07 (QTP 071103).[^qtp-061806]
+*4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.* Design rule: CMOS, Double Metal, 0.09µm (the report prints µ with a non-standard font glyph). Earliest dated history row: Mar 07 (QTP 071103).[^qtp-061806]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100Å Ti / 3200Å Al / 300Å TiW | 0.36 µm |
-| Metal 2 | 150Å Ti / 8000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 100Å Ti / 3200Å Al / 300Å TiW | 0.360 µm |
+| Metal 2 | 150Å Ti / 8000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1000Å Oxide TEOS / 9000Å Nitride | — |
 
 ### QTP 063807: Fab4/C9FD-3R
@@ -549,8 +551,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100Å Ti / 3200Å Al / 300Å TiW | 0.36 µm |
-| Metal 2 | 150Å Ti / 8000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 100Å Ti / 3200Å Al / 300Å TiW | 0.360 µm |
+| Metal 2 | 150Å Ti / 8000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1000Å Oxide TEOS / 9000Å Nitride | — |
 
 ### QTP 072002: Fab4/R95LD-3R
@@ -559,8 +561,8 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
-| Metal 1 | 100Å Ti / 3200Å Al / 300Å TiW | 0.36 µm |
-| Metal 2 | 150Å Ti / 8000Å Al / 300Å TiW | 0.84 µm |
+| Metal 1 | 100Å Ti / 3200Å Al / 300Å TiW | 0.360 µm |
+| Metal 2 | 150Å Ti / 8000Å Al / 300Å TiW | 0.845 µm |
 | Passivation | 1000Å Oxide TEOS / 9000Å Nitride | — |
 
 ## References

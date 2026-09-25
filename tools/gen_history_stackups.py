@@ -27,6 +27,8 @@ import re
 import sys
 from pathlib import Path
 
+from decimal import ROUND_HALF_UP, Decimal
+
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -38,7 +40,12 @@ PRODUCTS = ROOT / "docs" / "history" / "products.md"
 # in parentheses ("(printed with the micron sign dropped ...)") are not part
 # of the printed value.
 NOTE_RE = re.compile(r"\s*\((?:printed|the printed|decoded|as printed|value truncated)[^)]*\)")
-THICK_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?)\s*(K?)\s*(?:Å|A\b|A(?=\s|/|$))", re.I)
+# A film thickness: a number with "Å"/"A", or with "K" (kÅ) followed by a unit or a material
+# name ("6K Al", ".5KAlCu", "1.2K Å"). "0.5% Cu" and "-5%Cu" are compositions, not thicknesses.
+THICK_RE = re.compile(r"(\d[\d,]*(?:\.\d+)?|\.\d+)\s*(?:(K)\s*(?:Å|A\b)?(?=\s*[A-Za-zÅ])|(K)?\s*(?:Å|A(?=[/\s,;]|$)))")
+
+# Title misprints that the evidence notes identify, folded into the process they name.
+ALIASES = {"R7FTW-3R": "R7FT-3R"}
 
 GROUPS = [
     ("0.65 µm", 0.6, 0.7),
@@ -80,6 +87,8 @@ def clean(v) -> str:
 
 def rule_um(pd: dict) -> float | None:
     text = clean(pd.get("design_rule", ""))
+    if text.lower().startswith("not printed"):
+        return None
     m = re.search(r"(\d+)\s*nm", text)
     if m:
         return int(m.group(1)) / 1000
@@ -94,25 +103,41 @@ def layers(pd: dict) -> list[tuple[str, str]]:
     parts = re.split(r";\s*(?=(?:Metal|M)\s*\d)", comp)
     out = []
     for p in parts:
-        m = re.match(r"(?:Metal|M)\s*(\d+)\s*:\s*(.*)", p.strip())
+        m = re.match(r"(?:Metal|M)\s*([\d,\s]+?)\s*:\s*(.*)", p.strip())
         if m:
-            out.append((f"Metal {m.group(1)}", m.group(2).strip()))
+            # "Metal 1,2: ..." gives the same films for two layers
+            for n in re.findall(r"\d+", m.group(1)):
+                out.append((f"Metal {n}", m.group(2).strip()))
     return out
 
 
 def total(films: str) -> str:
-    """Sum of the film thicknesses in Å, or "—" when a film has none."""
-    pieces = [f for f in re.split(r"\s*/+\s*|\s*\+\s*", films) if f.strip()]
-    if not pieces:
+    """Sum of every film thickness printed for one layer, in µm to 0.001 µm (half up), or "—"
+    when no thickness is printed. Works for "500Å Ti/6,000Å Al/1,200Å TiW", for
+    "Ti/TiW/Al-Si/TiW, 500A/1200A/6000A/1200A" and for "6K Al, 1200A TiW" alike."""
+    angstrom = Decimal(0)
+    found = False
+    for m in THICK_RE.finditer(films):
+        v = Decimal(m.group(1).replace(",", ""))
+        angstrom += v * (1000 if (m.group(2) or m.group(3)) else 1)
+        found = True
+    if not found:
         return "—"
-    s = 0.0
-    for f in pieces:
-        m = THICK_RE.search(f)
-        if not m:
-            return "—"
-        v = float(m.group(1).replace(",", ""))
-        s += v * (1000 if m.group(2) else 1)
-    return f"{s / 10000:.2f} µm"
+    um = (angstrom / Decimal(10000)).quantize(Decimal("0.001"), rounding=ROUND_HALF_UP)
+    note = " (implausibly thin; probably misprinted)" if um < Decimal("0.1") else ""
+    return f"{um} µm{note}"
+
+
+def rule_text(pd: dict) -> str:
+    """The printed design rule; the evidence file's note is dropped, but a missing micron sign is
+    said, so that "0.5 m" does not read as metres."""
+    raw = str(pd.get("design_rule", ""))
+    shown = cell(raw)
+    if re.search(r"Private-Use-Area glyph", raw):
+        shown += " (the report prints µ with a non-standard font glyph)"
+    elif re.search(r"micron sign", raw):
+        shown += " (the µ is not printed in the report)"
+    return shown
 
 
 def cell(v) -> str:
@@ -124,7 +149,7 @@ def earliest(rec: dict) -> str:
     for r in rows:
         if r.get("date"):
             return f"{r['date']} (QTP {r.get('number')})"
-    return "no history table"
+    return "the history table gives no dates" if rows else "no history table"
 
 
 def build() -> str:
@@ -175,13 +200,16 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
     for d in sorted(used, key=lambda d: (-rule_um(d["process_description"]), d["id"])):
         pd = d["process_description"]
         out.append(f"### QTP {d.get('number')}: {cell(pd.get('die_fab_line_id'))}\n")
-        out.append(f"*{cell(d.get('title'))}.* Design rule: {cell(pd.get('design_rule'))}. "
+        out.append(f"*{cell(d.get('title'))}.* Design rule: {rule_text(pd)}. "
                    f"Earliest dated history row: {earliest(d)}.[^{label(d)}]\n")
         out.append("| Layer | Films as printed | Layer total (our arithmetic) |")
         out.append("|---|---|---|")
         for lname, films in layers(pd):
             out.append(f"| {lname} | {cell(films)} | {total(films)} |")
         out.append(f"| Passivation | {cell(pd.get('passivation'))} | — |")
+        n = pd.get("number_of_metal_layers")
+        if isinstance(n, int) and n != len(layers(pd)):
+            out.append(f"\nThe report gives {n} metal layers but lists films for {len(layers(pd))}.")
         out.append("")
     out.append("## References\n")
     out.append("### Cross-check\n")
@@ -224,7 +252,9 @@ def build_products() -> str:
         prods = [str(p) for p in (d.get("products") or []) if str(p).strip()]
         if not codes or not prods:
             continue
-        code = str(codes[0])
+        code = ALIASES.get(str(codes[0]), str(codes[0]))
+        if len(codes) > 3:
+            code = "several foundry processes (one summary report)"
         pd = d.get("process_description") if isinstance(d.get("process_description"), dict) else {}
         r = rows.setdefault(code, {"fabs": [], "products": [], "docs": [], "rules": []})
         fab = clean(pd.get("fab_location") or d.get("fab") or "")
