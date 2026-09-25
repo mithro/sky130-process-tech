@@ -98,7 +98,9 @@ def blocks(text: str) -> list[str]:
     for block in re.split(r"\n\s*\n", text):
         lines = block.splitlines()
         if block.lstrip().startswith("|"):
-            out += lines
+            # a table row is read with its header row
+            header = lines[0] if lines else ""
+            out += [lines[0]] + [f"{header}\n{ln}" for ln in lines[2:]] if len(lines) > 2 else lines
             continue
         cur: list[str] = []
         for ln in lines:
@@ -187,7 +189,7 @@ def check_claims(claims: list[dict], pages: dict[str, str], ids: dict[str, str])
             phrase = c.get("attribution") or ""
             if not phrase or phrase not in para:
                 problems.append(f"{where}: attribution {phrase!r} not in the anchor's paragraph")
-            elif not any(a in phrase for a in ATTRIBUTIONS):
+            elif not any(a.lower() in phrase.lower() for a in ATTRIBUTIONS):
                 problems.append(f"{where}: attribution {phrase!r} does not name who says it")
         if grade == "single-source":
             if len(sources) != 1:

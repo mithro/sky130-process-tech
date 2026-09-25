@@ -7,62 +7,58 @@ what they say apart from what we infer.
 
 ## The pattern
 
-A code is a family letter, a generation number and suffixes: **R** + **5** + **2FFD-3** for a fast
-0.25 µm SRAM process, **S** + **4** + **AD-5** for the 0.35 µm SONOS process. The table lists the
-generations with the design rules the reports print:
+In our reading, a code is a family letter, a generation digit and suffixes: **R** + **5** + **2FFD-3** for
+a fast 0.25 µm SRAM process, **S** + **4** + **AD-5** for the 0.35 µm SONOS process. The table lists the
+codes by their first digit, with the design rules the reports print and the names Cypress used in its
+annual reports:
 
-| Generation digit | Codes in the reports | Design rule printed | Cypress's product name |
+| Digit | Codes in the reports | Design rule printed | Name in the annual reports |
 |---|---|---|---|
-| 2 | P20, R28, L28, L28EPD, P26 | 0.8 µm (P20) and 0.65 µm | — |
-| 3 | R32, R32D | 0.5 µm | RAM3 |
-| 4 | R42D, R42HD, RAM42, S4AD-5 | 0.42 µm and 0.35 µm | RAM4 |
-| 5 | R52D-3, R52LD-3, R52FFD-3, R52T-3, R52D-5R, B53D-3, B55SGT | 0.25 µm (B55SGT: 0.21–0.35 µm) | RAM5 |
-| 7 | R7LD-1.8, R7FD-3R, R7FT-3R | 0.16, 0.15 and 0.18 µm | RAM 7 |
-| 8 | R8LD-1.8 (RAM8NLD-1.8), C8Q-3R, L8C-3R, S8TNV-5R | 0.13 µm | RAM 8 |
-| 9 | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R | 90 nm | — |
+| 2 | P20, R28, L28, L28EPD, P26[^qtp-091216][^qtp-096091][^qtp-011503] | 0.8 µm (P20) and 0.65 µm | — |
+| 3 | R32, R32D[^qtp-097132] | 0.5 µm | RAM3, "0.5-micron feature geometry"[^ar-fy1995] |
+| 4 | R42D, R42HD, RAM42, S4AD-5[^qtp-102101][^qtp-021507] | 0.42 µm and 0.35 µm | RAM4, a trademark[^ar-fy1997] |
+| 5 | R52 variants, B53D-3, B55SGT[^qtp-012705][^qtp-051101] | 0.25 µm (B55SGT: 0.21–0.35 µm) | RAM5, "0.25-micron feature geometry"[^ar-fy1998] |
+| 7 | R7LD-1.8, R7FD-3R, R7FT-3R[^qtp-011908] | 0.16, 0.15 and 0.18 µm | RAM 7[^ar-fy2002] |
+| 8 | R8LD-1.8, C8Q-3R, L8C-3R, S8TNV-5R[^qtp-043004][^qtp-113005] | 0.13 µm | RAM 8, "from 0.15-micron to 0.13-micron"[^ar-fy2002] |
+| 9 | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R[^qtp-063807] | 90 nm | — |
 
-The codes and design rules are from the qualification reports, which are all Cypress's.[^qtp-096091][^qtp-097132][^qtp-102101][^qtp-021507][^qtp-012705][^qtp-011908][^qtp-043004][^qtp-113005][^qtp-063807]
-The product names are from Cypress's annual reports: RAM3 is "0.5-micron feature geometry", RAM5
-"0.25-micron feature geometry", RAM4 is listed as a trademark, and RAM 8 took the line width "from
-0.15-micron to 0.13-micron".[^ar-fy1995][^ar-fy1998][^ar-fy1997][^ar-fy2002] A 2015 Cypress notice
-groups "130nm C8/R8/S8/L8" and "90nm C9/R9/R95".[^pin-152804]
+A 2015 Cypress notice groups "130nm C8/R8/S8/L8" and "90nm C9/R9/R95" (single source).[^pin-152804]
 
-That the digit of a code is the RAM generation number is our reading. The names match, but no source
-says that R32 is RAM3 or that R42 is RAM4. No code with the digit 6 was found, and one source conflicts:
-the 2015 notice says "250nm R7" while the R7 reports print 0.18–0.15 µm.[^pin-152804][^qtp-011908]
+That the digit is the RAM generation number is our reading. The names and design rules match, but no
+source says that R32 is RAM3 or that R42 is RAM4. No code with the digit 6 was found. One source
+conflicts: the 2015 notice says "250nm R7" while the R7 reports print 0.18–0.15 µm.[^pin-152804][^qtp-011908]
 
 ## The family letters
 
-| Letter | Codes | What the sources show | Our reading |
-|---|---|---|---|
-| R | R28 to R95 | the reports also write "RAM42", "RAM7FT-3R" and "RAM8NLD-1.8" for these codes | RAM (SRAM) process |
-| S | S4AD-5, S8 | "S4AD-5 (SONOS)"; S8 is "0.13-micron SONOS" | SONOS process |
-| C | C8Q-3R, C9FD-3R | C8 made USB and clock chips; L8C-3R is a "Technology Derivative of the C8 Technology" | CMOS logic process |
-| L | L28, L8C-3R | clock, PLL and logic products | a logic process |
-| B | B53D-3, B55SGT | B55SGT is printed "SiGe Bipolar" | BiCMOS process |
-| P | P26 | PROM and EPROM products | PROM process |
+| Letter | What the sources show | Our reading |
+|---|---|---|
+| R | the reports also write "RAM42", "RAM7FT-3R" and "RAM8NLD-1.8" for these codes[^qtp-091302][^qtp-014807][^qtp-024110] | RAM (SRAM) process |
+| S | "S4AD-5 (SONOS)"; S8 is "0.13-micron SONOS"[^qtp-021507][^ew-2007-s8] | SONOS process |
+| C | C8 made USB and clock chips; L8C-3R is a "Technology Derivative of the C8 Technology"; but C9FD-3R made fast SRAMs[^eet-2006-c8][^qtp-053301][^qtp-063807] | CMOS logic process, with exceptions |
+| L | L28 and L8C-3R made clock, PLL and logic parts[^qtp-011503][^qtp-053301] | a logic process |
+| B | B55SGT is printed "SiGe Bipolar"[^qtp-051101] | BiCMOS process |
+| P | P20 made EPLDs, P26 PROMs and EPROMs[^qtp-091216][^qtp-096411] | PROM and EPLD process |
 
-The evidence for each row is in Cypress's reports and the press.[^qtp-091302][^qtp-014807][^qtp-024110][^qtp-021507][^ew-2007-s8][^eet-2006-c8][^qtp-053301][^qtp-051101][^qtp-096411]
-Only the R and S rows rest on the sources' own words. The C, L, B and P readings are inferences from
+Only the R and S rows rest on the sources' own words. The C, L, B and P readings are our inferences from
 the products made on each process.
 
 ## The suffixes
 
-The reports use the suffixes below. None is defined in any report; the right-hand column is our
-reading from the products each suffix appears on.
+The reports use the suffixes below. None is defined in any report; the right-hand column is our reading
+from the products and the process figures each suffix appears with.
 
 | Suffix | Seen on | Our reading |
 |---|---|---|
-| D | R32D, R42D, R52D-3 | R32D has two metal layers where R32 has one; perhaps "double metal" |
-| LD | R42LDHA, R52LD-3, R7LD-1.8, R8LD-1.8, R95LD-3R | low-power ("MoBL") SRAM products |
+| -3, -5 | R52D-3 (50 Å), R7FD-3R (32 Å), R95LD-3R (28 Å); S4AD-5 (110 Å), S8TNV-5R (110 Å and 32 Å)[^qtp-099202][^qtp-011908][^qtp-061806][^qtp-021507][^qtp-113005] | the supply voltage: 3.3 V processes have thin oxides, the "-5" processes the 110 Å oxide of 5 V devices |
+| H | R42HD (110 Å) against R42D (70 Å); RAM42HHA (5 V, 110 Å) against RAM42HA (3 V, 70 Å)[^qtp-102101][^qtp-003907][^qtp-030206][^qtp-030204] | a 5 V version |
+| D | R32D, R42D, R52D-3 | R32D has two metal layers where R32 has one; perhaps "double metal"[^qtp-098021] |
+| LD | R52LD-3, R7LD-1.8, R8LD-1.8, R95LD-3R | low-power ("MoBL") SRAM products |
 | FD, FFD | R52FD-3, R52FFD-3, R7FD-3R, C9FD-3R | fast asynchronous SRAM products |
-| FT, T | R7FT-3R, R52T-3, R9T-3R | synchronous RAMs and clocks; no single meaning found |
-| Q | C8Q-3R, R9Q-3R | R9Q-3R has one more metal layer than R9T-3R |
-| -3, -3R, -5, -5R, -1.8 | most codes from R52 onwards | probably voltage or option codes; -1.8 appears on 1.8 V SRAMs |
+| FT, T, Q | R7FT-3R, R52T-3, R9T-3R; C8Q-3R, R9Q-3R | synchronous RAMs and clocks; R9Q-3R has one more metal layer than R9T-3R |
 
-Two relations between codes are stated outright. "Transfer of CY7C1021BV33 from Technology R52FD-3 to
-R52FFD-3" shows R52FFD-3 replacing R52FD-3, and "New Technology Derivative" is written of R52FFD-3,
-R52D-5R, R7FD-3R and R7FT-3R (Cypress's reports).[^qtp-012705][^qtp-098462][^qtp-011908][^qtp-014807]
+**Derivations.** Two relations between codes are stated outright. "Transfer of CY7C1021BV33 from
+Technology R52FD-3 to R52FFD-3" shows R52FFD-3 replacing R52FD-3, and "New Technology Derivative" is
+written of R52FFD-3, R52D-5R, R7FD-3R and R7FT-3R (Cypress's reports).[^qtp-012705][^qtp-098462][^qtp-011908][^qtp-014807]
 
 ## Spelling in the reports
 
@@ -76,8 +72,7 @@ Read a single code in a single report with care.
 
 * **The scheme.** Is there a Cypress document that defines the codes?
 * **The missing digits.** What were the 0.65 µm and 90 nm generations called, and was there a sixth?
-* **The suffix numbers.** What do -3, -5, -3R and -5R mean? S8's variants carry -5R, -10R and -10P as
-  well.
+* **The suffixes.** What do -3, -5, -3R and -5R mean, and is "H" really the 5 V version?
 
 ## References
 
@@ -170,3 +165,22 @@ Read a single code in a single report with care.
     <https://web.archive.org/web/20211130190834/https://www.cypress.com/file/92671/download>
 [^qtp-110605]: Cypress Semiconductor, Product Qualification Report QTP 110605: *Zero Delay Buffer, L28 Technology, TSMC-2A*, March 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-110605-zero-delay-buffer-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714b37f41005>
+[^qtp-003907]: Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
+[^qtp-011503]: Cypress Semiconductor, Product Qualification Report QTP 011503: *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2*, December 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>
+[^qtp-030204]: Cypress Semiconductor, Product Qualification Report QTP 030204: *256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4*, June 2013.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
+[^qtp-030206]: Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>
+[^qtp-061806]: Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>
+[^qtp-091216]: Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
+[^qtp-098021]: Cypress Semiconductor, Product Qualification Report QTP 98021: *1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices*, July 1998;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>
+[^qtp-099202]: Cypress Semiconductor, Product Qualification Report QTP 99202: *Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4*, May 2014.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-99202-low-voltage-synchronous-asynchronous-ram-r52d-3-technology-at-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491c270982>
