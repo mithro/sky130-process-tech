@@ -1,192 +1,217 @@
 (history-technologies)=
 # Cypress's process generations, 1984–2008
 
-Cypress developed its own processes, one generation after another, for SRAMs first and then for
-logic, programmable devices and embedded memory. This page goes through the generations before S8:
-what each was called, where it ran, what was made on it, and what its stackup looked like. The
-stackups are copied in full on {ref}`history-stackups`; the naming is explained on
-{ref}`history-naming`.
+Cypress developed its own processes, one generation after another, for SRAMs first and then for logic,
+programmable devices and embedded memory. This page goes through the generations before S8: what each
+was called, where it ran, what was made on it, and what its stackup looked like. The stackups are copied
+in full on {ref}`history-stackups`, the products on {ref}`history-products`, and the naming is discussed
+on {ref}`history-naming`.
 
 ## At a glance
 
-| Design rule | Cypress names | Main fabs | First dated in the sources | Section |
-|---|---|---|---|---|
-| 1.2–0.65 µm | CMOS, BiCMOS, Flash; R28, L28, P26 | Fab 1, Fab 2, Fab 3 | 1984 | {ref}`Before 0.5 µm <history-tech-early>` |
-| 0.5 µm | RAM3: R32, R32D | Fab 1, Fab 4 | 1995 | {ref}`RAM3 <history-tech-ram3>` |
-| 0.42–0.35 µm | RAM4: R42D, R42HD, RAM42; S4AD-5 | Fab 4, Fab 2 | 1997 | {ref}`RAM4 <history-tech-ram4>` |
-| 0.25 µm | RAM5: R52 variants; B53D-3 | Fab 4 | 1998 | {ref}`RAM5 <history-tech-ram5>` |
-| 0.18–0.15 µm | RAM7: R7FT-3R, R7LD-1.8, R7FD-3R; B55SGT | Fab 4 | 2001 | {ref}`RAM7 <history-tech-ram7>` |
-| 0.13 µm | RAM8: R8LD-1.8; C8: C8Q-3R, L8C-3R; S8 | Fab 4 | 2002 | {ref}`RAM8 and C8 <history-tech-ram8>` |
-| 90 nm | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R | Fab 4 | 2004 | {ref}`90 nm <history-tech-90nm>` |
+| Design rule | Process codes in the reports | Main fabs | Earliest date in the sources |
+|---|---|---|---|
+| 1.2 µm and 0.8 µm | none found | Fab 1, Fab 2 | 1.2 µm in 1984; 0.8 µm in production by 1988 |
+| 0.65 µm | R28, L28, P26 | Fab 2, Fab 3 | "established" in 1993 |
+| 0.5 µm | R32, R32D | Fab 1, Fab 4 | "emerging" in 1993; RAM3 released in 1995 |
+| 0.42 µm and 0.35 µm | R42D, R42HD, RAM42; S4AD-5 | Fab 4, Fab 2 | 0.35 µm SRAMs in production by early 1997 |
+| 0.25 µm | R52 variants, B53D-3, B55SGT | Fab 4 | working silicon in 1997 |
+| 0.18 µm to 0.15 µm | R7LD-1.8, R7FD-3R, R7FT-3R | Fab 4 | development from 1998 |
+| 0.13 µm | R8LD-1.8, C8Q-3R, L8C-3R; S8 | Fab 4 | development from 2000 |
+| 90 nm | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R | Fab 4 | moved to Fab 4 in 2002 |
 
-The SONOS process S4AD-5 has its own page, {ref}`history-sonos-s4`. The dates in the table are the
-earliest found in the sources for each generation, not necessarily its first use.
+The sections below give each row's sources. Which code belongs to which generation is our reading of
+the design rules the reports print (see {ref}`history-naming`). The SONOS process S4AD-5 has its own page,
+{ref}`history-sonos-s4`.
 
 (history-tech-early)=
-## Before 0.5 µm
+## 1.2 µm to 0.8 µm
 
-**The first processes.** Cypress's first product, early in 1984, was a CMOS memory made with
-"1.2 microns" transistors (single source).[^fu-cypress] By 1993 Cypress listed "proprietary 0.65,
-0.8 and 1.2-micron CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron Flash technologies" in three
-fabs.[^ar-fy1993] The same report names 0.8 µm and 0.65 µm as its "established" SRAM generations and
-0.5 µm as the next one.[^ar-fy1993] No public report found gives the stackups of these early
-processes.
+Cypress's 1988 data book describes its first process: "a 1.2 micron "N" well technology with double layer
+poly, and a single layer metal", with lightly doped source and drain extensions. The same book says a
+0.8 µm process was in production, and lists "multi-layer metal interconnections", silicides and plasma
+etching as recent innovations (single source).[^databook-1988] The Gale company history dates the first product, a
+1.2 µm CMOS memory, to early 1984.[^fu-cypress]
 
-**0.65 µm: R28, L28 and P26.** Cypress's reports show three 0.65 µm processes, all with two metal
-layers:
+The 1988 book's PROMs and programmable logic used "an EPROM programming element".[^databook-1988] By 1993
+Cypress listed "proprietary 0.65, 0.8 and 1.2-micron CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron
+Flash technologies".[^ar-fy1993] No qualification report found covers these early processes.
 
-* **R28**, an SRAM process: double poly, 165 Å of gate oxide, first at Fab 3 in 1996 and at Fab 2
-  from November 1997 (Cypress's reports).[^qtp-096091][^qtp-097476]
-* **P26**, for PROMs and EPROMs such as the CY27C256A, at Fab 2: 165 Å of gate oxide (single
-  source).[^qtp-096411]
-* **L28**, for clock and logic parts, "New Technology L28" at Fab 2 in April 1998: single poly,
-  145 Å of gate oxide (Cypress's reports).[^qtp-011503][^qtp-098333]
+(history-tech-065)=
+## 0.65 µm: R28, L28 and P26
 
-L28 was moved to TSMC in 2003. The TSMC version keeps the name and the 0.65 µm rule, but its metal
-stack, passivation and 125 Å gate oxide differ from the Fab 2 version (Cypress's reports).[^qtp-080608][^qtp-011503]
+Cypress's 1993 10-K calls 0.8 µm and 0.65 µm its "established" SRAM geometries (single
+source).[^ar-fy1993] The reports show three 0.65 µm processes, all with two metal layers (Cypress's
+reports):[^qtp-096091][^qtp-096411][^qtp-011503]
 
-The metal of these processes is aluminium–silicon between TiW layers: R28's first metal is
-"Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A" (Cypress's reports).[^qtp-096091][^qtp-097476]
+* **R28**, an SRAM process: double poly and 165 Å of gate oxide. The earliest R28 reports found are of
+  September 1996, at Fab 3; Fab 2 followed in November 1997.[^qtp-096091][^qtp-097476]
+* **P26**, for PROMs and EPROMs such as the CY27C256A, at Fab 2: 165 Å of gate oxide (single source).[^qtp-096411]
+* **L28**, for clock and logic parts: "New Technology L28" at Fab 2 in April 1998, single poly and 145 Å
+  of gate oxide (Cypress's reports).[^qtp-011503][^qtp-098333]
+
+The metals differ. R28 has aluminium–silicon between TiW layers ("Ti/TiW/AL-Si/TiW,
+500A/1200A/6000A/1200A"); P26 and the Fab 2 L28 print plain aluminium with TiW (Cypress's
+reports).[^qtp-096091][^qtp-096411][^qtp-011503]
+
+L28 was moved to TSMC in 2003. The TSMC version keeps the name and the 0.65 µm rule but uses AlSiCu with
+TiN, a different passivation and 125 Å of gate oxide (Cypress's reports).[^qtp-080608][^qtp-011503]
 
 (history-tech-ram3)=
 ## RAM3, 0.5 µm
 
-Cypress's own name for its 0.5 µm SRAM process was RAM3. The 1995 annual report defines it as a
-process "allowing the fabrication of ICs having 0.5-micron feature geometry", and the 1996 report
-says it was released "in early 1995", was developed in the Fab I R&D fab and was "already" being
-made "at a leading-edge 0.35-micron size" (Cypress's reports).[^ar-fy1995][^ar-fy1996] EE Times
-dates Cypress's first 0.5 µm products to 1996.[^eet-1997-sram035]
+Cypress's 1993 10-K calls 0.5 µm its "emerging" SRAM geometry (single source).[^ar-fy1993] Its own name
+for the 0.5 µm SRAM process was RAM3. The 1995 annual report defines it as a process "allowing the
+fabrication of ICs having 0.5-micron feature geometry". The 1996 report says it was released "in early
+1995" and developed in the Fab I R&D fab (Cypress's reports).[^ar-fy1995][^ar-fy1996]
 
-The qualification reports call the 0.5 µm SRAM process R32 (one metal layer) and R32D (two metal
+**First products.** EE Times dates Cypress's first 0.5 µm products to 1996, and Cypress's third-quarter
+1996 10-Q speaks of ramping its 0.5 µm process "to full commercial production".[^eet-1997-sram035][^tenq-1996q3]
+
+**R32.** The qualification reports call the 0.5 µm SRAM process R32 (one metal layer) and R32D (two metal
 layers, with local interconnect), both with 145 Å of gate oxide and both at Fab 4 (Cypress's
-reports).[^qtp-097132][^qtp-098021] That R32 is RAM3 is our reading of the matching name and design
-rule; no report says so.
+reports).[^qtp-097132][^qtp-098021] That R32 is RAM3 is our reading of the matching name and design rule;
+no report says so.
 
 (history-tech-ram4)=
 ## RAM4, 0.42 and 0.35 µm
 
-EE Times reported Cypress's "first SRAM built in a 0.35-µm feature size", the CY7C1021, on
-1997-11-18.[^eet-1997-sram035] Cypress's 1997 report lists RAM4 among its trademarks.[^ar-fy1997]
-The qualification reports show three processes of this generation at Fab 4:
+**The first 0.35 µm SRAM.** The sources disagree on the date. Cypress's 1996 report, published early in
+1997, shows 256K SRAMs "manufactured on 0.5-micron and 0.35-micron technologies" and says RAM3 was already
+made "at a leading-edge 0.35-micron size". EE Times called the CY7C1021, announced on 1997-11-18, Cypress's
+"first SRAM built in a 0.35-µm feature size". The two disagree; the shrunk RAM3 parts and a new 0.35 µm
+design may explain it (our reading).[^ar-fy1996][^eet-1997-sram035]
 
-* **R42D**, "New R42D Technology Qualification" in October 1997; two metal layers, 0.35 µm, 70 Å of
-  gate oxide; FIFOs, clock generators and SRAMs (Cypress's reports).[^qtp-097483][^qtp-003907]
-* **R42HD**, qualified in November 1997 with a 1 Mbit SRAM; two metal layers, 0.42 µm, 110 Å of
-  gate oxide; dual-port SRAMs (Cypress's reports).[^qtp-098368][^qtp-102101]
-* **RAM42**, a single-metal 0.42 µm version with 110 Å of gate oxide for the CY62256 256 Kbit SRAM,
-  which moved to Grace in 2009 (Cypress's reports).[^qtp-030206][^qtp-091302]
+**The R42 processes.** Cypress's 1997 report lists RAM4 among its trademarks.[^ar-fy1997] The qualification
+reports show four processes of this generation at Fab 4 (Cypress's reports):[^qtp-097483][^qtp-003907][^qtp-102101][^qtp-030204][^qtp-030206]
 
-The metal stack of R42D and R42HD is TiW, aluminium–copper and TiW: "500Å TiW/6000Å Al -5%Cu/1200Å
-TiW" for metal 1 (Cypress's reports).[^qtp-003907][^qtp-102101] The reports print "-5%Cu"; other
-reports of the time print "0.5% Cu".
+* **R42D**, "New R42D Technology Qualification" in October 1997; FIFOs, clocks and SRAMs. Its variant "R42D
+  with Hot Al" prints two metal layers, 0.35 µm and 70 Å of gate oxide.
+* **R42HD**, November 1997: two metal layers, 0.42 µm, 110 Å of gate oxide; 3.3 V and 5 V dual-port SRAMs.
+* **RAM42HA and RAM42HHA**, single-metal 0.42 µm versions for the CY62256 256K SRAM: 70 Å of gate oxide
+  for the 3 V part, 110 Å for the 5 V part. RAM42 moved to Grace in 2009 (single source).[^qtp-091302]
 
-**S4AD-5.** Cypress's first SONOS process was built on this generation. Its reports describe it as
-an "R42D-5 derivative w/ 6 additional mask" (single source).[^qtp-021507] It is covered on
+**Metal.** The two-metal R42 stacks are TiW, aluminium–copper and TiW: "500Å TiW/6000Å Al -5%Cu/1200Å TiW"
+for metal 1 (Cypress's reports).[^qtp-003907][^qtp-102101] The reports print "-5%Cu"; other reports of the
+time print "0.5% Cu".
+
+**S4AD-5.** Cypress's first SONOS process was built on this generation. Its report describes it as an
+"R42D-5 derivative w/ 6 additional mask" (single source).[^qtp-021507] It is covered on
 {ref}`history-sonos-s4`.
 
 (history-tech-ram5)=
 ## RAM5, 0.25 µm
 
-Cypress's 1998 report defines RAM5 as a process "with 0.25-micron feature geometry" and says it
-shipped "first revenue on our 0.25-micron technology" in the fourth quarter of 1998.[^ar-fy1998]
-EE Times had reported working 0.25 µm silicon in November 1997.[^eet-1997-sram035] In the
-qualification reports this generation is R52, in several variants, all at Fab 4 (Cypress's
-reports):[^qtp-062201][^qtp-099202][^qtp-012705][^qtp-082506]
+Cypress's 1998 report defines RAM5 as a process "with 0.25-micron feature geometry" and says it shipped
+"first revenue on our 0.25-micron technology" in the fourth quarter of 1998 (single
+source).[^ar-fy1998] EE Times had reported working 0.25 µm silicon in November 1997 (single
+source).[^eet-1997-sram035]
 
-| Variant | First dated row | Metal layers | Gate oxide | Products |
-|---|---|---|---|---|
-| R52LD-3 | "New Technology R52LD-3", April 1999 | 2 | 55 Å | low-power MoBL SRAMs |
-| R52D-3 | September 1999 | 2 | 50 Å | 3.3 V dual-port SRAMs |
-| R52FD-3, then R52FFD-3 | October 2000; "New Technology Derivative R52FFD-3", June 2001 | 2 | 55 Å | fast SRAMs |
-| R52T-3 | "Process Derivative Qual", May 2003 | 3 | 55 Å | PCI Express clocks |
+**Isolation.** A 1999 paper by Cypress's R&D staff describes the "local oxidation of silicon (LOCOS)
+process in 0.25 µm static random access memory (SRAM) technology" (single source).[^jin-1999] SKY130 uses
+shallow trench isolation instead; when Cypress changed is not in the sources found.
 
-Two things change in this generation. The metal stacks start using a CoTi or Ti underlayer below
-the aluminium–copper, and the gate oxide drops to 50–55 Å.[^qtp-099202][^qtp-082506]
+**The R52 processes.** In the qualification reports this generation is R52, in several variants, all at
+Fab 4 (Cypress's reports):[^qtp-062201][^qtp-099202][^qtp-012705][^qtp-098462][^qtp-082506]
 
-**BiCMOS.** Cypress's 1998 report describes "a new, 0.25-micron BiCMOS process technology" with
-bipolar transistors up to 25 GHz.[^ar-fy1998] A Fab 4 process called B53D-3, "New Technology,
-B53D-3" in August 2000 and printed as 0.25 µm CMOS, was used for WirelessUSB radio chips and
-clock parts. That B53D-3 is the BiCMOS process is our reading: the report does not say
-"BiCMOS".[^qtp-032005]
+| Variant | First dated row | Layers, gate oxide | Products |
+|---|---|---|---|
+| R52LD-3 | "New Technology R52LD-3", April 1999 | 2, 55 Å | low-power SRAMs |
+| R52D-3 | September 1999 | 2, 50 Å | 3.3 V dual-port SRAMs |
+| R52D-5R | "New Technology Derivative R52D-5R", April 2000 | not printed | fast SRAMs |
+| R52FD-3, R52FFD-3 | October 2000; June 2001 | 2, 55 Å | fast SRAMs |
+| R52T-3 | "Process Derivative Qual", May 2003 | 3, 55 Å | PCI Express clocks |
+
+The gate oxide drops to 50–55 Å in this generation. Metal 1 keeps 500 Å of TiW under the aluminium, while
+the upper metals start using CoTi or Ti (Cypress's reports).[^qtp-099202][^qtp-082506]
+
+**BiCMOS.** Cypress's 1998 report describes "a new, 0.25-micron BiCMOS process technology" with bipolar
+transistors up to 25 GHz (single source).[^ar-fy1998] B53D-3, "New Technology, B53D-3" at Fab 4 in August
+2000 and printed as 0.25 µm CMOS, made WirelessUSB radio chips and clocks. That it is the BiCMOS process is
+our reading; the report does not say "BiCMOS".[^qtp-032005]
+
+**SiGe BiCMOS.** In 2002 Cypress "completed development of 0.20-micron Silicon Germanium ("SiGe")"
+BiCMOS at Fab 4. Its qualification report, B55SGT ("New Technology B55SGT18A", May 2003), prints "CMOS
+(0.21 – 0.35 µm), SiGe Bipolar", with three metal layers. The two design rules differ.[^ar-fy2002][^qtp-051101]
 
 (history-tech-ram7)=
 ## RAM7, 0.18 to 0.15 µm
 
-Cypress began developing 0.18 µm in 1998 and 0.16 µm in 1999.[^ar-fy1998][^ar-fy1999] Its 2001 report
-says it was "ramping our latest 0.15-micron technology in manufacturing".[^ar-fy2001] Its 2002 report
-calls the process RAM 7.[^ar-fy2002] The qualification reports show three R7 processes at Fab 4,
-all with 32 Å of gate oxide (Cypress's reports):[^qtp-012801][^qtp-014807][^qtp-011908]
+Cypress began developing 0.18 µm in 1998 and 0.16 µm in 1999 (Cypress's reports).[^ar-fy1998][^ar-fy1999]
+Its 2001 report says it was "ramping our latest 0.15-micron technology in manufacturing", and its 2002
+report calls the process RAM 7 (Cypress's reports).[^ar-fy2001][^ar-fy2002]
 
-* **R7LD-1.8**, "New Technology R7LD-1.8", June 2001: 0.16 µm, two metal layers, low-power 1.8 V
-  SRAMs.
-* **R7FD-3R**, "New Technology Derivative R7FD-3R", December 2001: 0.15 µm, two metal layers, fast
-  SRAMs.
-* **R7FT-3R**, "New Technology Derivative R7FT-3R (Hot Al)", February 2002: 0.18 µm, three metal
-  layers, synchronous dual-port RAMs.
+The qualification reports show three R7 processes at Fab 4, all with 32 Å of gate oxide (Cypress's
+reports):[^qtp-012801][^qtp-011908][^qtp-014807]
 
-A 2015 Cypress notice calls R7 "250nm R7".[^pin-152804] The R7 reports print 0.18, 0.16 and 0.15 µm,
-so the sources disagree on R7's node.
+* **R7LD-1.8**, "New Technology R7LD-1.8", June 2001: 0.16 µm, two metal layers, low-power 1.8 V SRAMs.
+* **R7FD-3R**, "New Technology Derivative R7FD-3R", December 2001: 0.15 µm, two metal layers, fast SRAMs.
+* **R7FT-3R**, "New Technology Derivative R7FT-3R (Hot Al)", February 2002: 0.18 µm, three metal layers,
+  synchronous dual-port RAMs.
 
-The R7 stacks put 150 Å of titanium under the aluminium and 300 Å of TiW on top, with 1000 Å of TEOS
-and 9000 Å of nitride as passivation: the pattern S8 keeps (see {ref}`history-s8-lineage`).[^qtp-011908][^qtp-113005]
+A 2015 Cypress notice calls R7 "250nm R7", while the R7 reports print 0.18, 0.16 and 0.15 µm; the sources
+disagree on R7's node.[^pin-152804][^qtp-011908]
 
-**SiGe BiCMOS.** In 2002 Cypress "completed development of 0.20-micron Silicon Germanium ("SiGe")
-Bipolar Complementary Metal Oxide Semiconductor ("BiCMOS") technology" at Fab 4.[^ar-fy2002] Its
-qualification report, B55SGT ("New Technology B55SGT18A", May 2003), prints the design rule as "CMOS
-(0.21 – 0.35 µm), SiGe Bipolar", with three metal layers.[^qtp-051101] The two sources give different
-figures.
+**Metal.** The R7 stacks put 150 Å of titanium under the aluminium and 300 Å of TiW on top, with 1000 Å of
+TEOS and 9000 Å of nitride as passivation. S8 keeps the titanium, aluminium and TiW sandwich, with 100 Å of
+titanium on its first two metals, but its one public report prints a nitride-only passivation of
+7000 ± 2000 Å (Cypress's reports).[^qtp-011908][^qtp-113005]
 
 (history-tech-ram8)=
 ## RAM8 and C8, 0.13 µm
 
-Cypress and Mosel Vitelic agreed in 2000 to develop 0.13 µm together in Fab 1
-(single source).[^eet-2000-mosel] In
-2002 Cypress introduced "our RAM 8 manufacturing process in Fab 4", which "reduced our leading edge
-line widths from 0.15-micron to 0.13-micron".[^ar-fy2002] The qualification reports show two
-0.13 µm families at Fab 4 before S8:
+**Development.** Cypress and Mosel Vitelic agreed in 2000 to develop 0.13 µm together in Fab 1 (single
+source).[^eet-2000-mosel] Cypress's 2001 report records "0.12-micron technology" moving from Fab 1 to
+Minnesota. In 2002 it introduced "our RAM 8 manufacturing process in Fab 4", which "reduced our leading
+edge line widths from 0.15-micron to 0.13-micron" (Cypress's reports).[^ar-fy2001][^ar-fy2002] Whether the
+0.12 µm technology and RAM 8 are the same process is not said.
 
-* **R8LD-1.8**, also printed RAM8NLD-1.8: "New Technology R8LD-1.8V" in March 2003, two metal
-  layers, 26 Å of gate oxide, low-power SRAMs (Cypress's reports).[^qtp-024110][^qtp-041406]
-* **C8**, a logic process. "New C8Q-3R Technology" was qualified in January 2005, and L8C-3R is
-  called a "Technology Derivative of the C8 Technology". Both have four metal layers and a dual gate
-  oxide of 32 Å and 55 Å, and were used for clock and PLL parts (Cypress's reports).[^qtp-043004][^qtp-053301]
+**The processes.** The qualification reports show two 0.13 µm families at Fab 4 before S8 (Cypress's
+reports):[^qtp-024110][^qtp-043004][^qtp-053301]
 
-In 2006 Cypress began moving "its 0.13-micron C8 process technology" to Grace for USB and clock
-chips.[^eet-2006-c8] A 2015 notice lists "130nm C8/R8/S8/L8" as the 0.13 µm families at Fab 4.[^pin-152804]
+* **R8LD-1.8**, also printed RAM8NLD-1.8: "New Technology R8LD-1.8V" in March 2003, two metal layers, 26 Å
+  of gate oxide, low-power SRAMs.
+* **C8**, a logic process: "New C8Q-3R Technology" in January 2005, and L8C-3R is a "Technology Derivative
+  of the C8 Technology". Both have four metal layers and a dual gate oxide of 32 Å and 55 Å, for clock
+  and PLL parts.
+
+In 2006 Cypress announced it would move "its 0.13-micron C8 process technology" to Grace, for USB and
+clock chips. A 2015 notice lists "130nm C8/R8/S8/L8" as the 0.13 µm families at Fab 4.[^eet-2006-c8][^pin-152804]
 S8 is the fourth of these; how it relates to the other three is on {ref}`history-s8-lineage`.
 
 (history-tech-90nm)=
 ## The 90 nm generation
 
-Cypress's 90 nm process was developed in Fab 1 and moved to Fab 4 from 2002; its 2004 report says it
-was "now in production at our Minnesota facility".[^ar-fy2002][^ar-fy2004] The qualification
-reports show four 90 nm processes at Fab 4, qualified from 2004 to 2007 (Cypress's reports):[^qtp-032003][^qtp-051207][^qtp-063807][^qtp-061806]
+Cypress moved its 90 nm process from Fab 1 to Fab 4 from 2002, was "ramping" it in 2003, and says in its
+2004 report that it was "now in production at our Minnesota facility" (Cypress's
+reports).[^ar-fy2002][^ar-fy2003][^ar-fy2004] The qualification reports show four 90 nm processes at Fab 4,
+qualified from 2004 to 2007 (Cypress's reports):[^qtp-032003][^qtp-051207][^qtp-063807][^qtp-061806]
 
-* **R9T-3R** and **R9Q-3R**: three and four metal layers, nitrided gate oxide of 22 Å, synchronous and
-  QDR SRAMs.
+* **R9T-3R** and **R9Q-3R**: three and four metal layers, nitrided gate oxide of 22 Å, synchronous and QDR
+  SRAMs.
 * **C9FD-3R**: two metal layers, 23 Å of gate oxide, fast SRAMs.
 * **R95LD-3R**: two metal layers, 28 Å of gate oxide, low-power SRAMs.
 
-These processes were developed alongside S8, not before it. They matter here because their first
-metal layer, "100Å Ti / 3200Å Al / 300Å TiW", is the same as S8's (Cypress's reports).[^qtp-063807][^qtp-113005]
+These processes were developed alongside S8, not before it. C9FD-3R and R95LD-3R have the same first
+metal as S8, "100Å Ti / 3200Å Al / 300Å TiW"; R9T-3R and R9Q-3R use 150 Å of titanium (Cypress's
+reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
 
 ## Other processes
 
 * **Silicon on insulator.** Cypress and Honeywell developed an SOI process together from 2002; the
   sources disagree on its node (see {ref}`history-fabs`).[^ar-fy2002][^edn-2005-honeywell]
 * **Foundry processes.** Some products were made on foundry processes: Hyundai's 0.5 µm three-metal
-  process, ProMOS's 0.17 µm S17, Powerchip's 0.16 µm with a stacked capacitor, and Chartered's
-  0.35 µm (Cypress's reports).[^qtp-001004][^qtp-032301][^qtp-051501][^qtp-i000005] They are not
-  Cypress processes and are listed only for completeness.
+  process, ProMOS's 0.17 µm S17, Powerchip's 0.16 µm with a stacked capacitor, and Chartered's 0.35 µm
+  (Cypress's reports).[^qtp-001004][^qtp-032301][^qtp-051501][^qtp-i000005] They are not Cypress processes
+  and are listed only for completeness.
 
 ## Open questions
 
-* **R28, L28 and P26.** Which name did Cypress give the 0.65 µm generation (a "RAM2")? No source found
-  says.
+* **The early processes.** Which fabs ran the 1.2 µm and 0.8 µm processes, and what were their codes?
 * **RAM4 and R42.** Is R42 the process Cypress called RAM4? The names match, but no source says so.
 * **R7's node.** Is R7 the 0.25 µm process of the 2015 notice or the 0.18–0.15 µm processes of the
   reports?
-* **The early stackups.** What were the stackups of the 1.2 µm and 0.8 µm processes?
+* **STI.** When did Cypress change from LOCOS to shallow trench isolation?
 
 ## References
 
@@ -203,6 +228,8 @@ metal layer, "100Å Ti / 3200Å Al / 300Å TiW", is the same as S8's (Cypress's 
 
 ### Deep dive
 
+* [Cypress, *CMOS Data Book*, 1988](<https://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf>) — the first 1.2 µm process and the 0.8 µm one.[^databook-1988]
+* [Jin et al. (Cypress), *Electrochemical and Solid-State Letters*, 1999](<https://iopscience.iop.org/article/10.1149/1.1390832>) — LOCOS isolation in the 0.25 µm SRAM process.[^jin-1999]
 * [Cypress, 1995 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf>) — RAM3 defined.[^ar-fy1995]
 * [Cypress, 1996 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf>) — RAM3's release and shrink to 0.35 µm.[^ar-fy1996]
 * [Cypress, 1998 annual report](<https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf>) — RAM5 and the 0.25 µm BiCMOS process.[^ar-fy1998]
@@ -286,8 +313,6 @@ metal layer, "100Å Ti / 3200Å Al / 300Å TiW", is the same as S8's (Cypress's 
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97483-low-voltage-deep-sync-fifos-r42d-technology-fab4-device-cy7c42-v-productqualificationreport-en.pdf>
 [^qtp-003907]: Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
-[^qtp-098368]: Cypress Semiconductor, Product Qualification Report QTP 98368: *SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4*, June 2013.
-    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-98368-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152cc652012>
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
 [^qtp-030206]: Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014.
@@ -321,8 +346,6 @@ metal layer, "100Å Ti / 3200Å Al / 300Å TiW", is the same as S8's (Cypress's 
     <https://web.archive.org/web/20201028052046/https://www.cypress.com/file/92676/download>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
-[^qtp-041406]: Cypress Semiconductor, Product Qualification Report QTP 041406: *4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater*, February 2025.
-    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>
 [^qtp-043004]: Cypress Semiconductor, Product Qualification Report QTP 043004: *DDR2-PLL Device Family, C8Q-3R, Fab 4*, March 2007;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>
@@ -346,3 +369,21 @@ metal layer, "100Å Ti / 3200Å Al / 300Å TiW", is the same as S8's (Cypress's 
     <https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download>
 [^qtp-i000005]: Cypress Semiconductor, Product Qualification Report QTP I000005: *0.35um Technology, CSM Fab 2*, October 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-i000005-0.35um-technology-csm-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152d1a52016>
+[^qtp-030204]: Cypress Semiconductor, Product Qualification Report QTP 030204: *256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4*, June 2013.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
+[^qtp-098462]: Cypress Semiconductor, Product Qualification Report QTP 98462: *Fast Asynchronous SRAM Family, R5D-5R Technology, Skywater*, March 2019.
+    <https://www.infineon.cn/assets/row/public/documents/10/316/infineon-qtp-98462-fast-asynchronous-sram-family--cy7c106b-cy7c1006b-cy7c194b-cy7c195b-cy7c199c--r52d-5r-technology-skywater-productqualificationreport-en.pdf>
+[^ar-fy2003]: Cypress Semiconductor Corp., *2003 Annual Report* with Form 10-K, fiscal year ended
+    2003-12-28: Item 1, Research and development.
+    <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf>
+[^tenq-1996q3]: Cypress Semiconductor Corp., Form 10-Q for the quarter ended 1996-09-30, filed
+    1996-11-14, Notes to financial statements (restructuring); Wayback Machine copy of the EDGAR
+    filing.
+    <https://web.archive.org/web/20170530145033/https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000013.txt>
+[^databook-1988]: Cypress Semiconductor, *CMOS Data Book*, 1988, pages 1-1 and 1-2 (scanned copy in
+    deramp.com's archive of component documentation).
+    <https://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf>
+[^jin-1999]: B. Jin, S. Sadoughi, K. Ramkumar, P. Goplan, S. Wong and S. Sharifzadeh (Cypress
+    Semiconductor), *The Modulation of Crystal Originated Pits by the LOCOS Process in 0.25 µm SRAM
+    Technology*, Electrochemical and Solid-State Letters 2 (7), 347, 1999, DOI 10.1149/1.1390832.
+    <https://iopscience.iop.org/article/10.1149/1.1390832>

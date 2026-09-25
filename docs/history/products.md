@@ -31,6 +31,7 @@ described on {ref}`history-technologies`.
 | Process | Fab as printed | Products named in the reports | Reports |
 |---|---|---|---|
 | R42HD | Fab 4 / CMI - Bloomington, MN; Cypress Semiconductor - Bloomington, MN | CY7C024E, CY7C0241E, CY7C025E, CY7C0251E, CY7C09079(V), CY7C09179(V), CY7C09089(V), CY7C09189(V), CY7C09099(V), CY7C09199(V) and 14 more | 2[^qtp-102101][^qtp-098368] |
+| RAM42HA | Cypress Semiconductor -- Bloomington, MN | CY62256V | 1[^qtp-030204] |
 | RAM42HHA | Cypress Semiconductor -- Bloomington, MN | CY62256 | 1[^qtp-030206] |
 | several foundry processes (one summary report) | Tower Semiconductor (Israel, TS60D/RX11/KB14/RF06 base dice), IBM/NY (ZB15/ZB17 base dice), Chartered Semiconductor Manufacturing/Singapore ('CSM', A35C-G35C base dice); Grace Semiconductor, Shanghai, China | CY2LL843*, CY2SSTV16859*, CY2AVC16835*, CY7C827042AR, CY25561, CY25562, CY2SSTV855, CY62256* | 2[^qtp-i000006][^qtp-091302] |
 | CSM 0.35um | Chartered Semiconductor Singapore | CY7B9950, CY2DP818*, CY28346, CY29946, CY29947, CY29948, CY29972, CY29973 | 1[^qtp-i000005] |
@@ -104,6 +105,7 @@ described on {ref}`history-technologies`.
 * [Cypress, QTP 021507](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>) — Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2.[^qtp-021507]
 * [Cypress, QTP 023101](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf>) — Synchronous Dual Port RAM Family CY7C083xV / CY7C085xV, R7FTW-3R Technology Fab4.[^qtp-023101]
 * [Cypress, QTP 024110](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>) — 1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4.[^qtp-024110]
+* [Cypress, QTP 030204](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>) — 256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4.[^qtp-030204]
 * [Cypress, QTP 030206](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>) — 256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4.[^qtp-030206]
 * [Cypress, QTP 032003](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>) — 36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4.[^qtp-032003]
 * [Cypress, QTP 032005](<https://web.archive.org/web/20211206184334/https://www.cypress.com/file/92296/download>) — WirelessUSB Device Family, B53D-3RF Technology, Fab 4.[^qtp-032005]
@@ -169,6 +171,8 @@ described on {ref}`history-technologies`.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
+[^qtp-030204]: Cypress Semiconductor, Product Qualification Report QTP 030204: *256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4*, June 2013.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
 [^qtp-030206]: Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>
 [^qtp-032003]: Cypress Semiconductor, Product Qualification Report QTP 032003: *36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4*, August 2014.

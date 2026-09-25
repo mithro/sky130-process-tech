@@ -2778,3 +2778,50 @@ documents:
     headings already seen in qtp-082506 ("R52D-3" in an R52T-3 report) and qtp-110605 ("R9T-3R" in an
     L28 report); this is now the third such mismatched heading found in this corpus, suggesting Cypress's
     QTP template was commonly cloned from an unrelated prior report without updating this one field.
+- id: qtp-030204
+  origin: cypress
+  doc_type: QTP
+  number: '030204'
+  cypress_document_number: 001-88023 Rev. **
+  title: 256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4
+  version: '**'
+  date_printed: June 2013
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 4819509cdf1ca893b51f55834a2a760403c6086ac3ce9fef99706e799166e16e
+  technology_codes:
+  - RAM42HA
+  - RAM42
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62256V
+  die_ids:
+  - 7C1257A
+  process_description:
+    number_of_metal_layers: 1
+    metal_composition: 'Metal 1: TiW, AlCu, TiW/500A , 6000A, 300A'
+    passivation: 3KA Oxide + 6000A Nitride (both with PECVD)
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Metal / 0.42um
+    gate_oxide: SiO2 /70A
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/RAM42HA
+    transistors: 1.72 million
+    gates: 1.72 million
+  qualification_history:
+  - number: '030206'
+    description: 7C622574DC 256K, 3V Automotive Qualification
+    date: Jun 03
+  quotes:
+  - text: 'Metal 1: TiW, AlCu, TiW/500A , 6000A, 300A'
+    location: p.3, Technology/Fab Process Description
+  - text: SiO2 /70A
+    location: p.3, Technology/Fab Process Description
+  - text: 'Fab4/RAM42HA'
+    location: p.3, Die Fab Line ID
+  notes: >-
+    RAM42HA is the 3 V version (CY62256V, "2.7V-3.6V"): 70 Å gate oxide and a TiW/AlCu/TiW metal. The
+    5 V RAM42HHA (qtp-030206, "256K, 5V Automotive Qualification") prints 110 Å and "500A Cu-Ti/8000A A1".
+    The two are different variants, not a conflict. The history row prints the number 030206 against a
+    3 V qualification that qtp-030206 dates the same month for its 5 V part.

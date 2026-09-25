@@ -480,33 +480,56 @@ claims:
   - {id: qtp-091302, origin: cypress}
 
 # ---- docs/history/technologies.md ------------------------------------------
-- id: tech-first-product-1984
+- id: tech-first-process
   page: docs/history/technologies.md
-  anchor: '"1.2 microns" transistors (single source)'
+  anchor: Cypress's 1988 data book describes its first process
   grade: single-source
-  footnotes: [fu-cypress]
+  footnotes: [databook-1988]
   sources:
+  - {id: cyx-databook-1988, origin: cypress}
+- id: tech-first-process-dup
+  page: docs/history/technologies.md
+  anchor: The Gale company history dates the first product
+  grade: corroborated
+  footnotes: [databook-1988, fu-cypress]
+  sources:
+  - {id: cyx-databook-1988, origin: cypress}
   - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
 - id: tech-1993-processes
   page: docs/history/technologies.md
-  anchor: proprietary 0.65,
+  anchor: 'Flash technologies".'
   grade: attributed
   attribution: Cypress listed
+  footnotes: [databook-1988, ar-fy1993]
+  sources:
+  - {id: cyx-databook-1988, origin: cypress}
+  - {id: cyhist-corp-1993-10k, origin: cypress}
+- id: tech-065-established
+  page: docs/history/technologies.md
+  anchor: 'Cypress''s 1993 10-K calls 0.8 µm and 0.65 µm its "established"'
+  grade: single-source
   footnotes: [ar-fy1993]
   sources:
   - {id: cyhist-corp-1993-10k, origin: cypress}
-  - {id: cypress-annual-report-fy1993, origin: cypress}
+- id: tech-065-three
+  page: docs/history/technologies.md
+  anchor: The reports show three 0.65 µm processes
+  grade: attributed
+  attribution: (Cypress's
+  footnotes: [qtp-096091, qtp-096411, qtp-011503]
+  sources:
+  - {id: qtp-096091, origin: cypress}
+  - {id: qtp-096411, origin: cypress}
+  - {id: qtp-011503, origin: cypress}
 - id: tech-r28
   page: docs/history/technologies.md
-  anchor: 'an SRAM process: double poly, 165 Å of gate oxide'
+  anchor: 'an SRAM process: double poly and 165 Å'
   grade: attributed
-  attribution: Cypress's reports
+  attribution: The earliest R28 reports found
   footnotes: [qtp-096091, qtp-097476]
   sources:
   - {id: qtp-096091, origin: cypress}
-  - {id: qtp-096182, origin: cypress}
   - {id: qtp-097476, origin: cypress}
-  - {id: qtp-098393, origin: cypress}
 - id: tech-p26
   page: docs/history/technologies.md
   anchor: for PROMs and EPROMs such as the CY27C256A
@@ -518,45 +541,51 @@ claims:
   page: docs/history/technologies.md
   anchor: '"New Technology L28" at Fab 2 in April 1998'
   grade: attributed
-  attribution: Cypress's reports
+  attribution: (Cypress's reports)
   footnotes: [qtp-011503, qtp-098333]
   sources:
   - {id: qtp-011503, origin: cypress}
   - {id: qtp-098333, origin: cypress}
-  - {id: qtp-099034, origin: cypress}
+- id: tech-065-metals
+  page: docs/history/technologies.md
+  anchor: The metals differ.
+  grade: attributed
+  attribution: (Cypress's
+  footnotes: [qtp-096091, qtp-096411, qtp-011503]
+  sources:
+  - {id: qtp-096091, origin: cypress}
+  - {id: qtp-096411, origin: cypress}
+  - {id: qtp-011503, origin: cypress}
 - id: tech-l28-tsmc
   page: docs/history/technologies.md
   anchor: L28 was moved to TSMC in 2003.
   grade: attributed
-  attribution: Cypress's reports
+  attribution: (Cypress's reports)
   footnotes: [qtp-080608, qtp-011503]
   sources:
   - {id: qtp-080608, origin: cypress}
-  - {id: qtp-110605, origin: cypress}
   - {id: qtp-011503, origin: cypress}
-- id: tech-r28-metal
+- id: tech-05-emerging
   page: docs/history/technologies.md
-  anchor: aluminium–silicon between TiW layers
-  grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-096091, qtp-097476]
+  anchor: 'its "emerging" SRAM geometry (single source)'
+  grade: single-source
+  footnotes: [ar-fy1993]
   sources:
-  - {id: qtp-096091, origin: cypress}
-  - {id: qtp-097476, origin: cypress}
+  - {id: cyhist-corp-1993-10k, origin: cypress}
 - id: tech-ram3
   page: docs/history/technologies.md
-  anchor: allowing the fabrication of ICs having 0.5-micron feature geometry
+  anchor: fabrication of ICs having 0.5-micron feature geometry
   grade: attributed
-  attribution: Cypress's reports
+  attribution: (Cypress's reports)
   footnotes: [ar-fy1995, ar-fy1996]
   sources:
   - {id: cyx-ar-fy1995-ram3, origin: cypress}
   - {id: cyx-ar-fy1996-ram3, origin: cypress}
 - id: tech-05-products-1996
   page: docs/history/technologies.md
-  anchor: EE Times dates Cypress's first 0.5 µm products to 1996.
+  anchor: EE Times dates Cypress's first 0.5 µm products to 1996
   grade: corroborated
-  footnotes: [eet-1997-sram035]
+  footnotes: [eet-1997-sram035, tenq-1996q3]
   sources:
   - {id: cyx-eetimes-1997-first-035um-sram, origin: eetimes}
   - {id: cyhist-corp-1996-10q-q3-fab1-rd, origin: cypress}
@@ -564,37 +593,46 @@ claims:
   page: docs/history/technologies.md
   anchor: The qualification reports call the 0.5 µm SRAM process R32
   grade: attributed
-  attribution: Cypress's reports
+  attribution: (Cypress's
   footnotes: [qtp-097132, qtp-098021]
   sources:
   - {id: qtp-097132, origin: cypress}
   - {id: qtp-098021, origin: cypress}
-- id: tech-first-035-sram
+- id: tech-first-035-conflict
   page: docs/history/technologies.md
-  anchor: first SRAM built in a 0.35-µm feature size
-  grade: corroborated
-  footnotes: [eet-1997-sram035, ar-fy1997]
+  anchor: The sources disagree on the date.
+  grade: conflict
+  hedge: The two disagree
+  footnotes: [ar-fy1996, eet-1997-sram035]
   sources:
+  - {id: cyx-ar-fy1996-fabv-hold, origin: cypress}
+  - {id: cyx-ar-fy1996-ram3, origin: cypress}
   - {id: cyx-eetimes-1997-first-035um-sram, origin: eetimes}
-  - {id: cyx-ar-fy1997-trademarks, origin: cypress}
-- id: tech-r42-family
+- id: tech-ram4-trademark
   page: docs/history/technologies.md
-  anchor: '"New R42D Technology Qualification" in October 1997'
+  anchor: Cypress's 1997 report lists RAM4 among its trademarks.
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-097483, qtp-003907, qtp-098368, qtp-102101, qtp-030206, qtp-091302]
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy1997, qtp-097483, qtp-003907, qtp-102101, qtp-030204, qtp-030206]
   sources:
+  - {id: cyx-ar-fy1997-trademarks, origin: cypress}
   - {id: qtp-097483, origin: cypress}
   - {id: qtp-003907, origin: cypress}
-  - {id: qtp-098368, origin: cypress}
   - {id: qtp-102101, origin: cypress}
+  - {id: qtp-030204, origin: cypress}
   - {id: qtp-030206, origin: cypress}
+- id: tech-ram42-grace
+  page: docs/history/technologies.md
+  anchor: RAM42 moved to Grace in 2009
+  grade: single-source
+  footnotes: [qtp-091302]
+  sources:
   - {id: qtp-091302, origin: cypress}
 - id: tech-r42-metal
   page: docs/history/technologies.md
-  anchor: The metal stack of R42D and R42HD is TiW
+  anchor: The two-metal R42 stacks are TiW
   grade: attributed
-  attribution: Cypress's reports
+  attribution: (Cypress's reports)
   footnotes: [qtp-003907, qtp-102101]
   sources:
   - {id: qtp-003907, origin: cypress}
@@ -609,38 +647,42 @@ claims:
   - {id: qtp-021507, origin: cypress}
 - id: tech-ram5
   page: docs/history/technologies.md
-  anchor: defines RAM5 as a process "with 0.25-micron feature geometry"
-  grade: attributed
-  attribution: Cypress's 1998 report
+  anchor: 'defines RAM5 as a process "with 0.25-micron feature geometry"'
+  grade: single-source
   footnotes: [ar-fy1998]
   sources:
   - {id: cyx-ar-fy1998-ram5, origin: cypress}
-  - {id: cyhist-corp-1998-ar-fab3-close-025um, origin: cypress}
 - id: tech-025-working-1997
   page: docs/history/technologies.md
-  anchor: EE Times had reported working 0.25 µm silicon in November 1997.
+  anchor: EE Times had reported working 0.25 µm silicon in November 1997
   grade: single-source
-  hedge: EE Times had reported
   footnotes: [eet-1997-sram035]
   sources:
   - {id: cyx-eetimes-1997-first-035um-sram, origin: eetimes}
+- id: tech-locos-025
+  page: docs/history/technologies.md
+  anchor: local oxidation of silicon (LOCOS)
+  grade: single-source
+  footnotes: [jin-1999]
+  sources:
+  - {id: cyx-jin-1999-locos, origin: cypress}
 - id: tech-r52-variants
   page: docs/history/technologies.md
   anchor: In the qualification reports this generation is R52
   grade: attributed
-  attribution: (Cypress's
-    reports)
-  footnotes: [qtp-062201, qtp-099202, qtp-012705, qtp-082506]
+  attribution: (Cypress's reports)
+  footnotes: [qtp-062201, qtp-099202, qtp-012705, qtp-098462, qtp-082506]
   sources:
   - {id: qtp-062201, origin: cypress}
   - {id: qtp-099202, origin: cypress}
   - {id: qtp-012705, origin: cypress}
+  - {id: qtp-098462, origin: cypress}
   - {id: qtp-082506, origin: cypress}
 - id: tech-r52-metal-oxide
   page: docs/history/technologies.md
-  anchor: the gate oxide drops to 50–55 Å
+  anchor: The gate oxide drops to 50–55 Å in this generation.
   grade: attributed
-  attribution: Two things change in this generation
+  attribution: (Cypress's reports)
   footnotes: [qtp-099202, qtp-082506]
   sources:
   - {id: qtp-099202, origin: cypress}
@@ -649,59 +691,73 @@ claims:
   page: docs/history/technologies.md
   anchor: a new, 0.25-micron BiCMOS process technology
   grade: single-source
-  hedge: our reading
-  footnotes: [ar-fy1998, qtp-032005]
+  footnotes: [ar-fy1998]
   sources:
   - {id: cyx-ar-fy1998-ram5, origin: cypress}
+- id: tech-b53
+  page: docs/history/technologies.md
+  anchor: That it is the BiCMOS process is our reading
+  grade: single-source
+  hedge: our reading
+  footnotes: [qtp-032005]
+  sources:
+  - {id: qtp-032005, origin: cypress}
+- id: tech-sige-conflict
+  page: docs/history/technologies.md
+  anchor: The two design rules differ.
+  grade: conflict
+  hedge: differ
+  footnotes: [ar-fy2002, qtp-051101]
+  sources:
+  - {id: cyx-ar-fy2002-sige, origin: cypress}
+  - {id: qtp-051101, origin: cypress}
 - id: tech-018-016-dev
   page: docs/history/technologies.md
-  anchor: Cypress began developing 0.18 µm in 1998 and 0.16 µm in 1999.
+  anchor: Cypress began developing 0.18 µm in 1998 and 0.16 µm in 1999
   grade: attributed
-  attribution: Its 2002 report
+  attribution: (Cypress's reports)
   footnotes: [ar-fy1998, ar-fy1999]
   sources:
   - {id: cyx-ar-fy1998-ram5, origin: cypress}
   - {id: cyx-ar-fy1999-016um, origin: cypress}
+- id: tech-ram7-name
+  page: docs/history/technologies.md
+  anchor: ramping our latest 0.15-micron technology in manufacturing
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy2001, ar-fy2002]
+  sources:
+  - {id: cyhist-corp-2001-ar-transfer, origin: cypress}
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
 - id: tech-r7-processes
   page: docs/history/technologies.md
   anchor: The qualification reports show three R7 processes at Fab 4
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-012801, qtp-014807, qtp-011908]
+  attribution: (Cypress's
+  footnotes: [qtp-012801, qtp-011908, qtp-014807]
   sources:
   - {id: qtp-012801, origin: cypress}
   - {id: qtp-014807, origin: cypress}
-  - {id: qtp-023101, origin: cypress}
   - {id: qtp-011908, origin: cypress}
 - id: tech-r7-node-conflict
   page: docs/history/technologies.md
   anchor: A 2015 Cypress notice calls R7
   grade: conflict
-  hedge: so the sources disagree on R7's node
-  footnotes: [pin-152804]
+  hedge: the sources disagree on R7's node
+  footnotes: [pin-152804, qtp-011908]
   sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}
   - {id: qtp-011908, origin: cypress}
   - {id: qtp-014807, origin: cypress}
-- id: tech-r7-metal-pattern
+- id: tech-r7-metal-vs-s8
   page: docs/history/technologies.md
   anchor: The R7 stacks put 150 Å of titanium under the aluminium
   grade: attributed
-  attribution: the pattern S8 keeps
+  attribution: (Cypress's reports)
   footnotes: [qtp-011908, qtp-113005]
   sources:
   - {id: qtp-011908, origin: cypress}
-  - {id: qtp-014807, origin: cypress}
   - {id: qtp-113005, origin: cypress}
-- id: tech-sige-conflict
-  page: docs/history/technologies.md
-  anchor: The two sources give different
-  grade: conflict
-  hedge: The two sources give different
-  footnotes: [ar-fy2002, qtp-051101]
-  sources:
-  - {id: cyx-ar-fy2002-sige, origin: cypress}
-  - {id: qtp-051101, origin: cypress}
 - id: tech-mosel
   page: docs/history/technologies.md
   anchor: Cypress and Mosel Vitelic agreed in 2000
@@ -713,20 +769,19 @@ claims:
   page: docs/history/technologies.md
   anchor: our RAM 8 manufacturing process in Fab 4
   grade: attributed
-  attribution: Cypress introduced
-  footnotes: [ar-fy2002]
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy2001, ar-fy2002]
   sources:
+  - {id: cyhist-corp-2001-ar-transfer, origin: cypress}
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
-  - {id: qtp-024110, origin: cypress}
-- id: tech-r8ld-c8
+- id: tech-013-families
   page: docs/history/technologies.md
-  anchor: Technology Derivative of the C8 Technology
+  anchor: The qualification reports show two 0.13 µm families at Fab 4 before S8
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-024110, qtp-041406, qtp-043004, qtp-053301]
+  attribution: (Cypress's
+  footnotes: [qtp-024110, qtp-043004, qtp-053301]
   sources:
   - {id: qtp-024110, origin: cypress}
-  - {id: qtp-041406, origin: cypress}
   - {id: qtp-043004, origin: cypress}
   - {id: qtp-053301, origin: cypress}
 - id: tech-c8-grace
@@ -741,38 +796,28 @@ claims:
   page: docs/history/technologies.md
   anchor: now in production at our Minnesota facility
   grade: attributed
-  attribution: its 2004 report says
-  footnotes: [ar-fy2002, ar-fy2004]
+  attribution: (Cypress's
+  footnotes: [ar-fy2002, ar-fy2003, ar-fy2004]
   sources:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
+  - {id: cyhist-corp-2003-ar-soi-90nm, origin: cypress}
   - {id: cyhist-corp-2004-ar-90nm-prod, origin: cypress}
-- id: tech-90nm-processes
+- id: tech-90nm-m1
   page: docs/history/technologies.md
-  anchor: The qualification reports show four 90 nm processes at Fab 4
+  anchor: C9FD-3R and R95LD-3R have the same first
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-032003, qtp-051207, qtp-063807, qtp-061806]
+  attribution: (Cypress's
+  footnotes: [qtp-063807, qtp-061806, qtp-032003, qtp-113005]
   sources:
+  - {id: qtp-063807, origin: cypress}
+  - {id: qtp-061806, origin: cypress}
   - {id: qtp-032003, origin: cypress}
-  - {id: qtp-051207, origin: cypress}
-  - {id: qtp-063807, origin: cypress}
-  - {id: qtp-061806, origin: cypress}
-  - {id: qtp-072002, origin: cypress}
-- id: tech-90nm-m1-same-as-s8
-  page: docs/history/technologies.md
-  anchor: is the same as S8's
-  grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-063807, qtp-113005]
-  sources:
-  - {id: qtp-063807, origin: cypress}
-  - {id: qtp-061806, origin: cypress}
   - {id: qtp-113005, origin: cypress}
 - id: tech-foundry-processes
   page: docs/history/technologies.md
   anchor: Hyundai's 0.5 µm three-metal
   grade: attributed
-  attribution: Cypress's reports
+  attribution: (Cypress's reports)
   footnotes: [qtp-001004, qtp-032301, qtp-051501, qtp-i000005]
   sources:
   - {id: qtp-001004, origin: cypress}

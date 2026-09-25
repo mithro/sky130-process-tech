@@ -768,3 +768,61 @@ records:
   claims:
   - {subject: foundries, attribute: first use, value: '1998', date: 1998}
   notes: The broken word "w afer" is the cached text's; the checker ignores spaces.
+- id: cyx-databook-1988
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: CMOS Data Book, 1988 (pages 1-1 "Cypress Semiconductor Background" and 1-2 "Cypress CMOS Technology")
+    date: 1988
+    form: data book
+  url: https://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/cypress-1988-cmos-databook-p1-1-2.txt
+  quotes:
+  - text: >-
+      Cypress initially introduced a 1.2 micron "N" well technology with double layer poly, and a single
+      layer metal.
+    location: page 1-2
+  - text: >-
+      This process reduces the channel length from the current 1.2 microns to 0.8 microns.
+    location: page 1-2
+  - text: >-
+      the use of multi-layer metal interconnections, advanced metal deposition techniques, silicides,
+      exclusive use of plasma for etching and ashing process steps, and 100% stepper technology
+    location: page 1-2
+  - text: >-
+      Cypress Programmable Products consist of high speed CMOS PROMs and Eraseable Programmable Logic
+      Devices (EPLDs), both employing an EPROM programming element.
+    location: page 1-1
+  - text: Cypress Semiconductor was founded in April of 1983, became a public company in May 1986
+    location: page 1-1
+  claims:
+  - {subject: first process, attribute: stack, value: 1.2 µm N-well, double poly, single metal, date: 1988}
+  - {subject: 0.8 µm process, attribute: status, value: in production, date: 1988}
+  notes: >-
+    A scanned PDF with no text layer, hosted by deramp.com's archive of component documentation; the cache
+    file is a transcription of the two pages from their images, word for word. "Founded in April of 1983"
+    differs from the 10-K's "incorporated in California in December 1982" (cyhist-corp-2006-ar-history-grace-complete).
+- id: cyx-jin-1999-locos
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor (authors); The Electrochemical Society (publisher)
+    title: >-
+      B. Jin, S. Sadoughi, K. Ramkumar, P. Goplan, S. Wong and S. Sharifzadeh, "The Modulation of Crystal
+      Originated Pits by the LOCOS Process in 0.25 µm SRAM Technology", Electrochemical and Solid-State
+      Letters 2 (7), 347, DOI 10.1149/1.1390832
+    date: 1999-05-05
+    form: journal paper (abstract)
+  url: https://iopscience.iop.org/article/10.1149/1.1390832
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/iop-locos-cop-025um.html.txt
+  quotes:
+  - text: >-
+      Crystal originated pits (COPs) were observed on patterned silicon wafers after local oxidation of
+      silicon (LOCOS) process in 0.25 μ m static random access memory (SRAM) technology.
+    location: abstract
+  claims:
+  - {subject: 0.25 µm SRAM technology, attribute: isolation, value: LOCOS, date: 1999}
+  notes: Authors from Cypress Semiconductor's research and development department, San Jose; abstract only.

@@ -39,7 +39,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`
 
 (hsrc-ar-fy2003)=
 **AR-FY2003** — Cypress Semiconductor Corp., *2003 Annual Report* with Form 10-K, fiscal year ended 2003-12-28: Item 1, Research and development. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf>
-Used on {ref}`history-fabs`, {ref}`history-sonos-s4`.
+Used on {ref}`history-fabs`, {ref}`history-sonos-s4`, {ref}`history-technologies`.
 
 (hsrc-ar-fy2004)=
 **AR-FY2004** — Cypress Semiconductor Corp., *2004 Annual Report* with Form 10-K, fiscal year ended 2005-01-02: Item 1, Research and development. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf>
@@ -76,6 +76,10 @@ Used on {ref}`history-fabs`.
 (hsrc-chipest-2008)=
 **CHIPEST-2008** — Cypress Semiconductor, *Cypress SONOS - A Scalable Embedded Flash Technology*, ChipEstimate.com Tech Talks, 2008-10-21. <https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>
 Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
+
+(hsrc-databook-1988)=
+**DATABOOK-1988** — Cypress Semiconductor, *CMOS Data Book*, 1988, pages 1-1 and 1-2 (scanned copy in deramp.com's archive of component documentation). <https://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf>
+Used on {ref}`history-technologies`.
 
 (hsrc-edn-2000-slm)=
 **EDN-2000-SLM** — T. J. Rodgers, *Why Cypress Acquired Silicon Light Machines*, EDN, 2000-07-31. <https://www.edn.com/why-cypress-acquired-silicon-light-machines/>
@@ -125,6 +129,10 @@ Used on {ref}`history-fabs`.
 **FU-CYPRESS** — FundingUniverse (from the *International Directory of Company Histories*), *History of Cypress Semiconductor Corporation*, retrieved 2026-09-25. <https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
+(hsrc-jin-1999)=
+**JIN-1999** — B. Jin, S. Sadoughi, K. Ramkumar, P. Goplan, S. Wong and S. Sharifzadeh (Cypress Semiconductor), *The Modulation of Crystal Originated Pits by the LOCOS Process in 0.25 µm SRAM Technology*, Electrochemical and Solid-State Letters 2 (7), 347, 1999, DOI 10.1149/1.1390832. <https://iopscience.iop.org/article/10.1149/1.1390832>
+Used on {ref}`history-technologies`.
+
 (hsrc-pat-us6677213)=
 **PAT-US6677213** — K. Ramkumar and F. B. Jenne (Cypress Semiconductor), *SONOS structure including a deuterated oxide-silicon interface and method for making the same*, US 6,677,213 B1, priority 2002-03-08. <https://patents.google.com/patent/US6677213B1/en>
 Used on {ref}`history-sonos-s4`.
@@ -167,11 +175,11 @@ Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {
 
 (hsrc-qtp-003907)=
 **QTP-003907** — Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
-Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-011503)=
 **QTP-011503** — Cypress Semiconductor, Product Qualification Report QTP 011503: *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2*, December 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>
-Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-011908)=
 **QTP-011908** — Cypress Semiconductor, Product Qualification Report QTP 011908: *Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification*, August 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-011908-fast-asynchronous-sram-technology-derivative-r7fd-fab-4-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>
@@ -201,6 +209,10 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 **QTP-024110** — Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
 Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
+(hsrc-qtp-030204)=
+**QTP-030204** — Cypress Semiconductor, Product Qualification Report QTP 030204: *256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
+Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+
 (hsrc-qtp-030206)=
 **QTP-030206** — Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>
 Used on {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
@@ -215,15 +227,15 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 
 (hsrc-qtp-032301)=
 **QTP-032301** — Cypress Semiconductor, Product Qualification Report QTP 032301: *16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan*, May 2004; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>
-Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-041406)=
 **QTP-041406** — Cypress Semiconductor, Product Qualification Report QTP 041406: *4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater*, February 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>
-Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-products`.
 
 (hsrc-qtp-042806)=
 **QTP-042806** — Cypress Semiconductor, Product Qualification Report QTP 042806: *S4ADLATCH Technology, Fab 2*, January 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211025144943/https://www.cypress.com/file/92521/download>
-Used on {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`.
 
 (hsrc-qtp-043004)=
 **QTP-043004** — Cypress Semiconductor, Product Qualification Report QTP 043004: *DDR2-PLL Device Family, C8Q-3R, Fab 4*, March 2007; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>
@@ -243,7 +255,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 
 (hsrc-qtp-051501)=
 **QTP-051501** — Cypress Semiconductor, Product Qualification Report QTP 051501: *Cypress Minnesota (CMI) Sort Site Qualification -- 2 Meg, 3V PSRAM Device, PowerChip 0.165µm*, May 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download>
-Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-053301)=
 **QTP-053301** — Cypress Semiconductor, Product Qualification Report QTP 053301: *L8C-3R Technology, Fab 4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>
@@ -271,7 +283,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-080608)=
 **QTP-080608** — Cypress Semiconductor, Product Qualification Report QTP 080608: *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A*, May 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
-Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-082506)=
 **QTP-082506** — Cypress Semiconductor, Product Qualification Report QTP 082506: *PCI-E Clock Family, R52T-3 Technology, Fab 4*, September 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>
@@ -291,7 +303,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-096411)=
 **QTP-096411** — Cypress Semiconductor, Product Qualification Report QTP 96411: *256K/512K PROM - P26 Technology*, May 1997; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201026124735/https://www.cypress.com/file/93566/download>
-Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-097132)=
 **QTP-097132** — Cypress Semiconductor, Product Qualification Report QTP 97132: *32K x 8 Low Power SRAM, R32 Technology, Fab4*, June 2014. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97132-32k-x-8-low-power-sram-r32-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714947ff09f5>
@@ -303,7 +315,7 @@ Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`, {
 
 (hsrc-qtp-097483)=
 **QTP-097483** — Cypress Semiconductor, Product Qualification Report QTP 97483: *Low Voltage Deep Synchronous FIFO High Speed 100-MHZ Operation, R42D -- Fab 4*, May 2017. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97483-low-voltage-deep-sync-fifos-r42d-technology-fab4-device-cy7c42-v-productqualificationreport-en.pdf>
-Used on {ref}`history-index`, {ref}`history-products`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-products`, {ref}`history-technologies`.
 
 (hsrc-qtp-098021)=
 **QTP-098021** — Cypress Semiconductor, Product Qualification Report QTP 98021: *1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices*, July 1998; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>
@@ -315,7 +327,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 
 (hsrc-qtp-098368)=
 **QTP-098368** — Cypress Semiconductor, Product Qualification Report QTP 98368: *SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4*, June 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-98368-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152cc652012>
-Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-098393)=
 **QTP-098393** — Cypress Semiconductor, Product Qualification Report QTP 98393: *Dual Port SRAM - R28 Technology - Fab 2*, March 1999. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-98393-productqualificationreport-en.pdf>
@@ -323,7 +335,7 @@ Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-098462)=
 **QTP-098462** — Cypress Semiconductor, Product Qualification Report QTP 98462: *Fast Asynchronous SRAM Family, R5D-5R Technology, Skywater*, March 2019. <https://www.infineon.cn/assets/row/public/documents/10/316/infineon-qtp-98462-fast-asynchronous-sram-family--cy7c106b-cy7c1006b-cy7c194b-cy7c195b-cy7c199c--r52d-5r-technology-skywater-productqualificationreport-en.pdf>
-Used on {ref}`history-naming`, {ref}`history-products`.
+Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-technologies`.
 
 (hsrc-qtp-099034)=
 **QTP-099034** — Cypress Semiconductor, Product Qualification Report QTP 99034: *5V, 8/10 Bit FCT-T, L28EPD Technology, Fab 2*, March 1999; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507224233/https://www.cypress.com/file/94156/download>
@@ -359,7 +371,7 @@ Used on {ref}`history-fabs`, {ref}`history-products`.
 
 (hsrc-qtp-s050001)=
 **QTP-S050001** — Cypress Semiconductor, Product Qualification Report QTP S050001: *TSMC Fab 3, 0.35um -- SMaL Camera ASIC*, June 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201028064815/https://www.cypress.com/file/94406/download>
-Used on {ref}`history-products`.
+Used on {ref}`history-fabs`, {ref}`history-products`.
 
 (hsrc-sd-2007-fab2)=
 **SD-2007-FAB2** — Semiconductor Digest, *Cypress getting rid of Round Rock, TX fab*, 2007-12-19. <https://sst.semiconductor-digest.com/2007/12/cypress-getting-rid-of-round-rock-tx-fab/>
@@ -379,7 +391,7 @@ Used on {ref}`history-fabs`.
 
 (hsrc-tenq-1996q3)=
 **TENQ-1996Q3** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 1996-09-30, filed 1996-11-14, Notes to financial statements (restructuring); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170530145033/https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000013.txt>
-Used on {ref}`history-fabs`, {ref}`history-index`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-tenq-2017q1)=
 **TENQ-2017Q1** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed 2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>
