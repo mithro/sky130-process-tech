@@ -633,7 +633,13 @@ records:
   - text: The old Cypress and SkyWater name for the SKY130 process. It stood for the “8th generation”
       of the SONOS technology developed originally by Cypress.
     location: entry "s8"
+  - text: 5 metal layer backend stack, 16V devices
+    location: entry "s8pfhd"
   claims:
+  - subject: s8pfhd
+    attribute: metal layers
+    value: '5'
+    date: null
   - subject: s8
     attribute: meaning
     value: 8th generation of the SONOS technology

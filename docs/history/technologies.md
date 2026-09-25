@@ -117,8 +117,8 @@ time print "0.5% Cu".
 
 Cypress's 1998 report defines RAM5 as a process "with 0.25-micron feature geometry" and says it shipped
 "first revenue on our 0.25-micron technology" in the fourth quarter of 1998 (single
-source).[^ar-fy1998] EE Times had reported working 0.25 µm silicon in November 1997 (single
-source).[^eet-1997-sram035]
+source).[^ar-fy1998] EE Times had reported working 0.25 µm silicon in November 1997, and Cypress's
+1997 report had 0.25 µm processes "yielding in two different fabs".[^eet-1997-sram035][^ar-fy1997]
 
 **Isolation.** A 1999 paper by Cypress's R&D staff describes the "local oxidation of silicon (LOCOS)
 process in 0.25 µm static random access memory (SRAM) technology" (single source).[^jin-1999] SKY130 uses
@@ -167,7 +167,7 @@ disagree on R7's node.[^pin-152804][^qtp-011908]
 
 **Metal.** The R7 stacks put 150 Å of titanium under the aluminium and 300 Å of TiW on top, with 1000 Å of
 TEOS and 9000 Å of nitride as passivation. S8 keeps the titanium, aluminium and TiW sandwich, with 100 Å of
-titanium on its first two metals, but its one public report prints a nitride-only passivation of
+titanium on its first two metals, but the 2008 S8 report prints a nitride-only passivation of
 7000 ± 2000 Å (Cypress's reports).[^qtp-011908][^qtp-113005]
 
 (history-tech-ram8)=
@@ -202,12 +202,15 @@ reports).[^ar-fy2002][^ar-fy2003][^ar-fy2004]
 The qualification reports show four 90 nm processes at Fab 4,
 qualified from 2004 to 2007 (Cypress's reports):[^qtp-032003][^qtp-051207][^qtp-063807][^qtp-061806]
 
-* **R9T-3R** and **R9Q-3R**: three and four metal layers, nitrided gate oxide of 22 Å, synchronous and QDR
-  SRAMs.
+* **R9T-3R** and **R9Q-3R**: synchronous and QDR SRAMs with a nitrided 22 Å gate oxide. R9T-3R has three
+  metal layers and also prints a "Thick GOx" whose value is cut off. R9Q-3R lists four metals, but its
+  design rule says "Triple Metal"; the report disagrees with itself (Cypress's
+  reports).[^qtp-032003][^qtp-051207]
 * **C9FD-3R**: two metal layers, 23 Å of gate oxide, fast SRAMs.
 * **R95LD-3R**: two metal layers, 28 Å of gate oxide, low-power SRAMs.
 
-These processes were developed alongside S8, not before it. C9FD-3R and R95LD-3R have the same first
+These processes were qualified from 2004 to 2007, before and alongside the first S8 products (our
+reading). C9FD-3R and R95LD-3R have the same first
 metal as S8, "100Å Ti / 3200Å Al / 300Å TiW"; R9T-3R and R9Q-3R use 150 Å of titanium (Cypress's
 reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
 

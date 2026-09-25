@@ -656,10 +656,11 @@ claims:
 - id: tech-025-working-1997
   page: docs/history/technologies.md
   anchor: EE Times had reported working 0.25 µm silicon in November 1997
-  grade: single-source
-  footnotes: [eet-1997-sram035]
+  grade: corroborated
+  footnotes: [eet-1997-sram035, ar-fy1997]
   sources:
   - {id: cyx-eetimes-1997-first-035um-sram, origin: eetimes}
+  - {id: cyx-ar-fy1997-trademarks, origin: cypress}
 - id: tech-locos-025
   page: docs/history/technologies.md
   anchor: local oxidation of silicon (LOCOS)
@@ -803,6 +804,24 @@ claims:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyhist-corp-2003-ar-soi-90nm, origin: cypress}
   - {id: cyhist-corp-2004-ar-90nm-prod, origin: cypress}
+- id: tech-90nm-before-s8
+  page: docs/history/technologies.md
+  anchor: before and alongside the first S8 products
+  grade: inference
+  hedge: our reading
+  footnotes: []
+  sources:
+  - {id: cyhist-corp-2004-ar-90nm-prod, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+- id: tech-r9q-metal-conflict
+  page: docs/history/technologies.md
+  anchor: the report disagrees with itself
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-032003, qtp-051207]
+  sources:
+  - {id: qtp-032003, origin: cypress}
+  - {id: qtp-051207, origin: cypress}
 - id: tech-90nm-m1
   page: docs/history/technologies.md
   anchor: C9FD-3R and R95LD-3R have the same first
@@ -1169,6 +1188,13 @@ claims:
   - {id: qtp-021507, origin: cypress}
   - {id: qtp-043004, origin: cypress}
   - {id: qtp-113005, origin: cypress}
+- id: s8-pdk-five-metals
+  page: docs/history/s8-lineage.md
+  anchor: 5 metal layer backend stack
+  grade: single-source
+  footnotes: [pdk-previous]
+  sources:
+  - {id: cyx-pdk-previous, origin: skywater}
 - id: s8-pdk-and-m1
   page: docs/history/s8-lineage.md
   anchor: S8's first metal adds up to 0.36 µm (our arithmetic)

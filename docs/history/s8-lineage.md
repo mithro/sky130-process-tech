@@ -57,8 +57,9 @@ processes" to Grace in 2006 and 2007 (single source).[^ar-fy2010] It does not na
 | Passivation | 3000 Å TEOS / 6000 Å nitride | 1000 Å TEOS / 9000 Å nitride | 7000 ± 2000 Å nitride |
 
 Each column copies one Cypress report (Cypress's reports).[^qtp-021507][^qtp-043004][^qtp-113005] One
-S4AD-5 report prints 0.5 µm. The S8 column is the one S8 report found in public; other S8 variants
-cited on the SKY130 overview have five metal layers.
+S4AD-5 report prints 0.5 µm. The S8 column copies the 2008 S8 report; a 2014 S8 report records a later
+metal-stack change (see {ref}`overview-metal-cap`). SkyWater's PDK describes its base process, `s8pfhd`,
+as a "5 metal layer backend stack" (single source).[^pdk-previous]
 
 For SKY130, the PDK gives a 110 Å oxide for its 5 V devices and draws `met1` 0.36 µm thick.[^pdk-hv][^pdk-metal-stack]
 S8's first metal adds up to 0.36 µm (our arithmetic). The same recipe is used in two of Cypress's 90 nm
