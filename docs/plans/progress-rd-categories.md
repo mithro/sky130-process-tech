@@ -32,7 +32,56 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
   class from that map that is **also** a class already named in this page's own "Typical equipment"
   section (so no new fact — the class was already on the page). Where two apply, both are given.
 
+## Pages (index)
+
+- cmp.md — done
+- substrate.md — done
+- (remaining eight to do: anneal, deposition, etch, implant, lithography, oxidation, strip, test)
+
 ## Pages
+
+### substrate.md — done
+
+Rules applied: intro + quick-facts table (Governing relation `—`, none named on this page); R-SENTENCE
+(five semicolon-joined sentences split: SKY130-layer-set/infer sentence, the Czochralski sentence, the
+boule-slicing quote sentence, the (100)-surface/notch sentence, the Boron/resistivity sentence — each
+trailing whole-sentence marker repeated on both halves per rule 5); R-PARA (three >60-word list items in
+"What this class of step does" — Diameter/thickness, Crystal orientation, Doping type — each already
+had two sentences; turned the second sentence of each into an indented continuation paragraph, no
+wording changed at all); R-COMPARE step 2 (two "Typical consumables" bullets' lead-ins linked to
+`material-substrates`, the one class-page row-owner for `si-wafers`/`test-wafers`; "Wafer carriers" left
+unlinked, no owning row); R-COMPARE step 3 (Machine class column, one row: `Incoming inspection`);
+R-CAPTION on the new steps table. "Typical equipment" bullets were **not** restructured into a table:
+none of them are flagged over the length caps and the section's own framing sentence ("no process tool
+in the fab itself... at the wafer vendor") would be awkward to preserve in a strict three-column table
+without inventing connective text, so the rule does not clearly apply here (§0's "leave the text alone"
+default) — left as the existing bulleted list. R-H3, R-LIST, R-REPEAT, R-CODE, R-HEDGE: none found
+needed.
+
+`check_preserved.py --base bdfd706c --allow-regrouped --allow-added markers,numbers,quotes,refs,
+identifiers` → exit 0.
+
+* **ADDED markers:** `pdk-01`, `txt-01`, `wiki-cz` (one extra occurrence each) — R-SENTENCE rule 5 repeats.
+* **ADDED numbers:** `1` — Steps-in-SKY130 count (one row in the Steps table).
+* **ADDED quotes:** `starting material` ×1 — the new intro repeats the page's own quoted phrase
+  (unchanged elsewhere on the page).
+* **ADDED refs:** `machine-starting-material` ×2 (quick facts + Machine class column),
+  `material-substrates` ×3 (quick facts + two consumables lead-ins).
+* **REGROUPED number_order** (confirmed by hand): three original multi-number units, each split by an
+  R-SENTENCE edit, reappear as the same digits in the same order, split across the resulting sentences
+  (Miller-index tuple `100,111` + a lone, untracked `100`; the `200 mm wafers` pair, one per new
+  sentence; the `100,111,200,110` run, split into `100,111` and `200,110`). No digit altered or swapped.
+* **ADDED identifiers:** `SKY130` ×1 — the quick-facts row label "Steps in SKY130".
+
+Quick-facts derivation: What it does = a verbatim (trimmed) fragment of the page's own "it fixes the
+diameter..." clause. Steps in SKY130 = 1 (the Steps table). Tool classes = the one `{ref}` target
+already used for "Incoming inspection" in Typical equipment. Consumable classes = `material-substrates`,
+the class-page owner of every row this page's consumables bullets name. Governing relation = `—` (no
+named law or equation on this page).
+
+Checkers (`check_refs`, `check_inforce`, `gen_index_links --check`, plus the full suite) and `-W` build
+all pass. Screenshots reviewed at desktop and 400 px: no horizontal scroll, four-column steps table
+wraps cleanly on the phone tile.
 
 ### cmp.md — done
 

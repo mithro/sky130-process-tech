@@ -1,6 +1,19 @@
 (category-substrate)=
 # Substrate / starting material
 
+Every wafer that enters the fab begins as a bare, polished disc of
+single-crystal silicon bought from a wafer vendor. The "starting
+material" step is not a process performed in the fab so much as a
+*specification*.
+
+| | Substrate / starting material |
+|---|---|
+| What it does | fixes the diameter, thickness, crystal orientation, doping type and resistivity, oxygen content, flatness and cleanliness |
+| Steps in SKY130 | 1 |
+| Tool classes | {ref}`Incoming inspection <machine-starting-material>` |
+| Consumable classes | {ref}`Substrates and test wafers <material-substrates>` |
+| Governing relation | — |
+
 ## What this class of step does
 
 Every wafer that enters the fab begins as a bare, polished disc of
@@ -19,17 +32,22 @@ CMOS process on 200 mm wafers defines:
 * **Diameter and thickness.** 200 mm wafers are 725 µm thick and were
   introduced in 1992; wafers of 200 mm and above carry a single small
   notch, rather than flats, to indicate crystal
-  orientation.[^wiki-wafer] The ITRS 2001 front-end-processes chapter
+  orientation.[^wiki-wafer]
+
+  The ITRS 2001 front-end-processes chapter
   notes that "200 mm will still be prevalent through the 130 nm node"
   even though 300 mm was then being phased in.[^itrs-01]
 * **Crystal orientation.** Orientation is given by the Miller index,
-  "(100) or (111) faces being the most common for silicon";[^wiki-wafer]
+  "(100) or (111) faces being the most common for silicon".[^wiki-wafer]
+
   CMOS uses (100) because it gives the lowest density of interface
   states at the Si/SiO₂ interface and therefore the best gate
   oxide.[^txt-01]
 * **Doping type and resistivity.** Wafers carry "an initial impurity
   doping concentration between 10¹³ and 10¹⁶ atoms per cm³ of boron,
-  phosphorus, arsenic, or antimony".[^wiki-wafer] Bulk CMOS processes
+  phosphorus, arsenic, or antimony".[^wiki-wafer]
+
+  Bulk CMOS processes
   use lightly boron-doped p-type material, typically in the 1–20 Ω·cm
   range, or a lightly doped p-type {term}`epitaxial layer` on a heavily
   doped p⁺ substrate (a "p/p⁺ epi" wafer) to suppress
@@ -51,7 +69,7 @@ the cheaper test wafers used for tool monitoring.[^semi-m8]
 
 The SKY130 documentation shows a layer set with an n-well, a deep
 n-well and p-substrate contacts and states that the process runs on
-200 mm wafers; from this we infer that the starting material is a
+200 mm wafers.[^pdk-01] From this we infer that the starting material is a
 p-type 200 mm wafer, as is normal for a twin-well bulk CMOS process,
 but the resistivity and whether an epitaxial layer is used are not
 stated publicly.[^pdk-01]
@@ -63,7 +81,7 @@ stated publicly.[^pdk-01]
 Almost all IC wafers are cut from boules grown by the Czochralski
 method, in which a seed crystal is dipped into molten silicon (melting
 point 1414 °C)[^wiki-si] held in a quartz crucible and slowly withdrawn
-while rotating, so that the melt freezes onto the seed as one continuous
+while rotating.[^wiki-cz] The melt freezes onto the seed as one continuous
 crystal.[^wiki-cz] The dopant is added to the melt; because the
 segregation coefficient of most dopants is less than one, the crystal
 grows progressively more heavily doped from seed to tail, and the
@@ -74,8 +92,8 @@ oxygen, is used for power and detector devices but is not economical at
 
 The boule "is then sliced with a wafer saw (a type of wire saw),
 machined to improve flatness, chemically etched to remove crystal damage
-from machining steps and finally polished to form wafers";[^wiki-wafer]
-in full, the sequence is grinding to diameter, notching, slicing,
+from machining steps and finally polished to form wafers".[^wiki-wafer]
+In full, the sequence is grinding to diameter, notching, slicing,
 lapping, edge rounding, etching, single-side {term}`CMP` to a mirror
 finish with sub-nanometre roughness, cleaning and
 packing.[^txt-01][^txt-02]
@@ -83,12 +101,12 @@ packing.[^txt-01][^txt-02]
 ### Orientation, dopant and resistivity
 
 The (100) surface has the lowest interface-trap density after oxidation,
-which is why it displaced (111) for MOS devices; the notch on a 200 mm
+which is why it displaced (111) for MOS devices.[^txt-01] The notch on a 200 mm
 wafer lies along a ⟨110⟩ direction so that the die edges, and therefore
 the cleave planes, are aligned with the crystal.[^txt-01] Boron is the
 p-type dopant of choice because it has a high solid solubility and a
-segregation coefficient close to 0.8, giving a uniform axial profile;
-the resistivity is chosen as a compromise between latch-up immunity and
+segregation coefficient close to 0.8, giving a uniform axial profile.
+The resistivity is chosen as a compromise between latch-up immunity and
 well-implant dose (a lightly doped substrate is simply overwritten by
 the well implants of {ref}`category-implant`).
 
@@ -153,18 +171,21 @@ The substrate category has no process tool in the fab itself; the
 
 ## Typical consumables
 
-* Polished prime wafers to SEMI M1;[^semi-m1] epitaxial
+* {ref}`Polished prime wafers <material-substrates>` to SEMI M1;[^semi-m1] epitaxial
   wafers to SEMI M62.[^semi-m62]
-* Test and monitor wafers to SEMI M8,[^semi-m8] and
+* {ref}`Test and monitor wafers <material-substrates>` to SEMI M8,[^semi-m8] and
   reclaimed wafers to SEMI M38 for non-critical tool monitoring.
 * Wafer carriers (open cassettes or SMIF pods at 200 mm), which must
   not shed particles or outgas.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 1 | {ref}`SMAT <step-001>` | Starting material |
+:::{table} The one substrate step of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 1 | {ref}`SMAT <step-001>` | Starting material | {ref}`Incoming inspection <machine-starting-material>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
