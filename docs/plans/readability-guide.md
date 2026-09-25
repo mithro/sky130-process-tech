@@ -778,7 +778,8 @@ identifiers in one block.
    | Measured against nominal | Parameter · Geometry · Test tile · PDK nominal · Limits |
    | Generic recipe parameters | Parameter · Typical · Public for SKY130? |
 
-2. One row per item, in the original order.
+2. One row per item, in the original order. A source with several implants gets one row per
+   implant; the source name and marker go on its first row.
 3. Every row keeps its footnote marker, in the first or the last cell. A marker at the end of an
    enumerating sentence that becomes the table supports every row: keep it in the table's first
    header cell (`Layer[^pdk-06]`) or the lead-in sentence before the colon, not on the last row only.
@@ -820,15 +821,21 @@ After:
 
   | Source | Energy (keV) | Dose (cm⁻²) |
   |---|---:|---:|
-  | Harris twin-well[^pat-twin-harris] | 500, 275, 130 | — |
-  | Hynix[^pat-well-hynix] | 700 + 120 | 2.0 × 10¹³ + 2.0 × 10¹² |
-  | IBM[^pat-well-ibm] | 850 / 550 / 50 | 5.2 × 10¹³ / 1.25 × 10¹² / 5 × 10¹¹ |
+  | Harris twin-well[^pat-twin-harris] | 500, 275, 130 (phosphorus) | — |
+  | Hynix[^pat-well-hynix] | 700 | 2.0 × 10¹³ |
+  |  | 120 | 2.0 × 10¹² |
+  | IBM[^pat-well-ibm] | 850 | 5.2 × 10¹³ |
+  |  | 550 | 1.25 × 10¹² |
+  |  | 50 | 5 × 10¹¹ |
 
   For a 1.1 µm well depth[^pdk-03] the deepest `NWI` energy is plausibly
-  500 keV–1 MeV (inference from range tables).[^txt-01]
+  in the 500 keV–1 MeV band (inference from range tables).[^txt-01]
 ```
 
-(The Harris row has no published dose, so its cell is `—`, not a number from memory.)
+(The Harris row has no published dose, so its cell is `—`, not a number from memory. Hynix and
+IBM each get one row per implant, per step 2, so no cell has to join two numbers with `+` or
+`/` — a join that also breaks across lines at 400 px. "Phosphorus" and "in the … band" are the
+source's own words and must survive the rewrite like any other prose (§2).)
 
 A second worked case: `docs/steps/061-p1m.md:30-38` recites six poly rules in one paragraph
 ("the minimum poly width (poly.1a) is 0.150 µm and the minimum poly-to-poly spacing (poly.2) is
