@@ -1,0 +1,28 @@
+id: wells-014-lvtnm
+kind: xsection
+page: docs/steps/014-lvtnm.md
+series: series-wells.yaml
+crop_depth: 84
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the surface is flat: thin pad
+  oxide over two active areas and, between them, a filled trench whose oxide stands slightly proud.
+  After it a block of photoresist covers the right-hand active area and the right half of the trench,
+  and the left-hand active area lies in an open window.
+caption: >-
+  Before, the planar wafer; after, resist over the right of the slice and a window over the left. The
+  PDK's mask table lists "Low Vt Nch*, LVTNM" as used in SKY130.[^pdk-05] Which regions the plate
+  opens is not public (see *Open questions*), so the window is drawn over an NMOS area and the resist
+  over a PMOS area only so that both sides of a resist edge can be seen; no layout is being shown.
+  The pad oxide is drawn as still in place, which the page infers, and the liner oxide in the trench
+  is drawn faded. Not to scale.
+arrow:
+  title: "LVTNM, step 014"
+  note: "Resist is coated, exposed through the low-Vt NMOS mask and developed, leaving windows for the LVTNI implant."
+panels:
+  - state_after: "013"
+    title: "Before: the planar wafer left by NS19 (step 013); NMOS left, PMOS right"
+    dim_layers: [liner]
+  - state_after: "014"
+    title: "After: resist over the PMOS side, a window over the NMOS side"
+    dim_layers: [liner]
+    highlight: {where: [[134, 268]]}

@@ -1,0 +1,26 @@
+id: wells-016-lvtnis
+kind: xsection
+page: docs/steps/016-lvtnis.md
+series: series-wells.yaml
+crop_depth: 84
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step implanted photoresist covers
+  the right-hand part of the drawing and a thin implanted band lies under the left-hand active
+  surface. After it the resist is gone, the pad oxide and the trench oxide are bare across the whole
+  slice, and the band is unchanged.
+caption: >-
+  Before, the implanted LVTNM resist; after, the resist gone and the oxide surface bare across the
+  slice, with the implanted band untouched beneath it. The pad oxide is drawn as left in place, as
+  the page infers: an HF dip is avoided here because the same oxide still has to screen the implants
+  that follow. The liner oxide is drawn faded. Not to scale.
+arrow:
+  title: "LVTNIS, step 016"
+  note: "The implanted resist is ashed and stripped, and the wafer is cleaned for the next mask."
+panels:
+  - state_after: "015"
+    title: "Before: the implanted resist from LVTNI (step 015); NMOS left, PMOS right"
+    dim_layers: [liner]
+    show_ions: false
+  - state_after: "016"
+    title: "After: resist removed; the implanted band stays in the NMOS active area"
+    dim_layers: [liner]

@@ -85,7 +85,17 @@ Every existing figure was rebuilt: only the embedded CSS changed (the new token 
 
 ## Per-figure QA
 
-(filled in as the work goes)
+Every figure: built lint-clean, rendered with `gen_figures.py harness`, shot with
+`tools/shoot.py` at the 736 px column and at 400 px, light and dark, and every PNG looked
+at; `check_preserved.py` on the page shows only the block's own additions (markers,
+numbers, quotes, hedges of the caption) and `git diff` no deleted line.
+
+| Figure | What was checked | Compromise |
+|---|---|---|
+| `wells-014-lvtnm` | the flat NS19 surface matches `iso-013-ns19`; resist edge at mid-trench; highlight on the resist top only; fill-oxide dot inside the fill, leader clear of the pad oxide | the window side is illustrative (the plate's polarity is not public); said in the caption |
+| `wells-015-lvtni` | beam lands in the window only, on the pad oxide and on the proud fill oxide; the band sits in the active silicon only; ion label hangs right with room; band leader 7 u under the surface, not along the pad oxide | the block sits between the first paragraph and the collapsed patent note that paragraph points to ("in the collapsed note below"); the note is still below it |
+| `wells-016-lvtnis` | resist gone in the after panel, band unchanged, no highlight (nothing new at the surface, as `iso-009-dnis`) | — |
+| `wells-017-nwm` | thick resist on the NMOS side; resist dot at its top-right corner, leader in open air | — |
 
 ## Noticed, not fixed
 

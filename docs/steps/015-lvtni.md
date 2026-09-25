@@ -26,6 +26,14 @@ question there); a Cypress {term}`SONOS` patent from the same lineage,
 which may still be in force, describes exactly this arrangement, in the
 collapsed note below.
 
+:::{figure} /_static/figures/wells-015-lvtni.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step photoresist covers the right-hand part of the drawing and the left-hand active area lies in a window. After it arrows come straight down into the window, and a thin band just under the surface of the left-hand active silicon marks the implanted dopant; the silicon under the resist is untouched.
+:width: 560px
+:name: fig-wells-015-lvtni
+
+Before, the LVTNM window; after, the implanted dose as a thin band in the active silicon under the window. The band is drawn in the neutral implant colour because its type is not public: the PDK describes `lvtn` as blocking a Vt-adjust implant,[^pdk-periph] and the page weighs a p-type implant that low-Vt channels skip, which it favours, against an n-type counter-dope into the low-Vt channels only. The band is drawn only in the active silicon, under the oxide the page infers to be the pad oxide, and its depth is not public; the arrows are drawn vertical because the tilt is not public. The liner oxide is drawn faded. Not to scale.
+:::
+
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 The Cypress {term}`SONOS` patent has "dopants … implanted into substrate
 204 through the pad oxide 209" of "about 10 nanometers (nm) to about

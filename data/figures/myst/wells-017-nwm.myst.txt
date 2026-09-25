@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/wells-017-nwm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the oxide surface is bare, with a thin implanted band under the left-hand active area. After it a thick block of photoresist covers the left-hand part of the drawing up to the middle of the trench, and the right-hand active area and the right half of the trench lie in an open window.
+:width: 560px
+:name: fig-wells-017-nwm
+
+Before, the bare oxide surface; after, a thick resist over the NMOS side and a window over the future N-well. The PDK's mask table lists "N-Well*, NWM" as used in SKY130.[^pdk-05] The resist edge is drawn in the middle of the trench because the well edge has to fall inside the isolation between NMOS and PMOS; no layout is being shown. The resist thickness is this reference's inference, and that the three implants which follow share this one resist is its reading.[^txt-01] The liner oxide is drawn faded. Not to scale.
+:::

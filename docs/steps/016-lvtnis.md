@@ -21,6 +21,14 @@ surface. It is the second implant-resist strip of the flow (after
 module; this reference pairs every implant mask with such a strip
 step.
 
+:::{figure} /_static/figures/wells-016-lvtnis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step implanted photoresist covers the right-hand part of the drawing and a thin implanted band lies under the left-hand active surface. After it the resist is gone, the pad oxide and the trench oxide are bare across the whole slice, and the band is unchanged.
+:width: 560px
+:name: fig-wells-016-lvtnis
+
+Before, the implanted LVTNM resist; after, the resist gone and the oxide surface bare across the slice, with the implanted band untouched beneath it. The pad oxide is drawn as left in place, as the page infers: an HF dip is avoided here because the same oxide still has to screen the implants that follow. The liner oxide is drawn faded. Not to scale.
+:::
+
 The resist being removed is the roughly 1 µm i-line implant resist
 inferred on the {ref}`LVTNM <step-014>` page. It has received a
 channel-type implant — tens of keV, of order 10¹²–10¹³ cm⁻²
