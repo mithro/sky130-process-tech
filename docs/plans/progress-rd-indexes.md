@@ -417,3 +417,79 @@ though the work itself is not done.
 
 Before/after counts of paragraphs over 100 words and tables with captions,
 per page, go here.
+
+## Review round (independent review, "approve with fixes": H1–H3, M1, M2 required;
+M3–M6 and the guide crib done now on the coordinator's instruction)
+
+Review at the coordinator's `tmp/reviews/rd-indexes.md`. Every fix below was
+re-checked with the coordinator-updated `check_preserved.py` (copied
+temporarily into this worktree's `tools/`, run, then reverted with `cp` —
+never committed here, per instruction), the full checker suite, `gen_*
+--check` and a `-W` build (a fresh `-E` build for the machines and masks
+reorders, since the guide previously had no warning that an incremental
+build can miss a broken directive on an untouched-by-diff line range).
+
+* **H1** (materials, one commit): two duplicated H2s
+  (`## Safety and abatement`, `## How to read the index`) — the same
+  "heading text written twice" bug as the machines-index caption bug,
+  from the section-move script's RAW cut already including the heading it
+  was concatenated onto again. Deleted the duplicate lines; fixed the
+  script too (not committed, `tmp/`).
+* **H3 + M1 + M3** (machines, one commit): the three methodology H2s
+  actually moved below the lookup tables this time (verified: `grep -n
+  "^## "` now shows `Machine classes and the steps...` and `SkyWater's
+  listed tools...` before `Reading the SkyWater evidence` etc.); five
+  false position/label pointers fixed (`"in the main table"` →
+  `"on the cards above"`; two `"(...above)"` parentheticals dropped;
+  two `"below"` → `"above"` now that the lookup precedes the
+  methodology); the 8 SkyWater-tools H3 groups reordered to match the
+  card grid's own group order, and the cards' lead-in corrected to say
+  only the classes *within* a group are in flow order, not the group
+  order itself.
+* **H2 + M2** (masks, one commit): the "Find a mask" table's Exposure
+  class column now carries each mask page's own hedge word ("reading" for
+  DNM/CTM1/VIM, "inference" elsewhere) and the named alternative class
+  where the mask page gives one (7 rows: FOM, DNM, RPM, RRPM, URPM, NPCM,
+  VIM4, each with the source's own word — fallback/alternative/option);
+  the lead-in's blanket "no public source names the tool for any of the
+  36" replaced with a true, generic statement. The merged "Step no. /
+  mask page" column, which printed the same code twice and wrapped to two
+  lines, replaced with the step *number* linked to the step page plus the
+  mask code linked to the mask page ("4 · FOM"), header "Step · mask".
+* **M1 + M5** (materials, one commit): four false "(table above/below)"
+  pointers fixed; table (a)'s headers restored to the original wording
+  (`Class`, `Role in SKY130 steps`, `Public SkyWater evidence`) instead of
+  rewording "How to read the index" a second time, per the review's own
+  cheaper-fix suggestion — only the Keys bullet and two "*Class* cell"
+  mentions (no longer a real separate cell) were reworded. Table (a)
+  merged Material+Class into one column (checker-safe: the class-page
+  check searches the whole row, not a fixed column) to bring it to 3
+  columns and stop the 400 px overflow the progress file had wrongly
+  claimed did not happen — re-rendered and confirmed fixed this time.
+* **M6** (masks + materials, one commit): captioned the 7 remaining masks
+  tables and 3 remaining materials tables the first pass missed, including
+  two the checkers read structurally (`check_masks`'s "Plates by mask"
+  first-table rule; `check_materials`'s class-page mapping header) —
+  confirmed safe both by the passing checkers and by the same reasoning
+  R-CAPTION already relies on (directive lines do not start with `|`).
+* **M4** (machines, one commit): the split tool tables' repeated tool
+  quote (up to 5× down a tool's rows) collapsed to the quote once, then
+  `″ (same tool)` on the following rows for that tool, captions reworded
+  to say so. Confirmed as a side benefit: this also brought the page's
+  declared quote/marker/identifier repetition back down close to the
+  pre-branch count, since a tool's quote now sits in only two places
+  (its card footer and the top of its tool-table group) instead of up to
+  six.
+* **Guide crib (C2)**: added the one-line warning to §6 (a directive
+  argument, including a `{table}` caption, must be one line; a wrapped
+  one drops the table and only `-W` catches it, and only if the build
+  actually re-reads the page) and the matching note to §7 step 6 (use a
+  fresh output directory or `-E` when checking a reordered/script-rebuilt
+  page).
+
+**Not done, per the coordinator's scope** (M4's caveat "only if a
+checker-safe form exists" was satisfied, so it was done; nothing was left
+undone this round for a checker reason). L1–L5 and the two unresolved
+conflicts C1 (materials >25-link Steps cells; needs a `check_materials.py`
+change, not attempted) and the rest of C2 were left as the review and the
+coordinator's instructions describe them — not asked for this round.
