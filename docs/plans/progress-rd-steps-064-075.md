@@ -426,3 +426,40 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   — the degradation mechanism Hu and co-workers modelled …[^hu-1985-hci]" (49 w; the only seam would
   leave the physics claim without the marker that covered the whole sentence) and Hori's LATID sentence
   (50 w; no seam).
+
+### 070 HVASTIS — done
+
+* **Lead.** First sentence (31 w) split before ", and cleans the wafer" → "It cleans the wafer …" (R-GLANCE
+  step 8); now 21 words. Lead 50 words.
+* **R-LIST.** "Two things distinguish it from `ASTIS`. The resist is thin — … — and the implant it has absorbed
+  is, we infer …" → lead-in with a colon and two plain bullets (the second item offers no 2–4-word label
+  of its own; batch-4 ruling), every word kept except the joining "and"; `[^pdk-03]` ends the first
+  item, where the dash pair's closing dash stood; "we infer" and `[^txt-04]` stay in the second.
+  "The crust is correspondingly thinner and the strip easier." stays as prose after the list (R-LIST
+  step 4).
+* **R-PARA / R-SENTENCE.** The 161-word paragraph: list, then the crust/40° paragraph, then "The surface
+  under the resist is, we infer, …" as its own paragraph. The 59-word 40° sentence split at ", and we read"
+  ("We read the PDK's 0.02 µm … (inference)."); "(inference)" governed that clause only.
+* **R-CATEGORY.** Classification sentence (49 w) split at its colon ("… of medium difficulty."); the two
+  remaining statements describe this step → `**Specific to this step:**` and two bullets.
+* **R-PARA / R-SENTENCE (Why).** The 109-word paragraph split before "A thin implanted resist has its own
+  failure mode"; its 62-word sentence split at the colon ("If the ash is tuned …") and at the dash ("That
+  is one reason downstream (charge-free) ashing is preferred …[^wiki-ash]", subject + verb added); the
+  marker stays with the downstream-ashing claim it supported.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4.** "Plasma ash" (121 w): lead = the Fujimura sentence; continuation 1 the two-stage
+  sentence; continuation 2 Horsky/Roche and SkyWater's asher list. "Wet strip and clean": the 46-word
+  sentence split at its semicolon ("SkyWater's Akrion Gamma bench lists …").
+* **R-TOOLS.** As 067: recap table (four tools), pilot-form heads (the asher head "— named on SkyWater's
+  facilities page …" is our gloss), grades as sub-bullets.
+* **R-RELATED.** "Companion strips:" → "Same module: companion strips …".
+* **R-OPENQ.** Labels "Ash recipe", "HV tip dose", "Which asher and wet bench"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers "none published for this strip" plus the
+  0.3 µm resist `[^pdk-03]`; tool line the ashers' grades; Not public from Open questions 1 and 3.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 0.3, hedges
+  "inference", "not public" (glance); "inference", "our reading" (recap table). Declared
+  `--allow-added markers,numbers,hedges`: clean.
+* **Marker coverage.** 14 flags, all read: the list items (each keeps its own marker); the failure-mode
+  pieces (the base marker covered only the downstream-ashing claim, which keeps it); the SPM / Akrion
+  split; glance and labels.
+* **Caps**: para > 100 2 → 0; item > 60 1 → 0; sentence > 45 5 → 0.

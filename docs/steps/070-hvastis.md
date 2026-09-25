@@ -10,13 +10,27 @@
 | **Previous step** | {ref}`HVASTI <step-069>` |
 | **Next step** | {ref}`LDNTM <step-071>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the thin `HVNTM` resist after the tilted `HVASTI`
+  implant and cleans the wafer for `LDNTM`.
+* **Why:** the next mask is coated here, and the arsenic-bearing resist
+  must be gone before `TIPRTAD` heats the wafer.
+* **Public numbers:** none published for this strip; the resist it
+  removes is 0.3 µm thick.[^pdk-03]
+* **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
+  ashers — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** the ash recipe, and which asher and wet bench run it
+  (→ Open questions).
+:::
+
 ## What this step is
 
-`HVASTIS` removes the thin resist patterned at {ref}`HVNTM <step-068>`
-after it has masked the tilted arsenic implant {ref}`HVASTI <step-069>`,
-and cleans the wafer for the third and last tip mask,
-{ref}`LDNTM <step-071>`. It is the second of the three strips in the tip
-module.
+`HVASTIS` removes the thin resist patterned at {ref}`HVNTM <step-068>` after
+it has masked the tilted arsenic implant {ref}`HVASTI <step-069>`. It cleans
+the wafer for the third and last tip mask, {ref}`LDNTM <step-071>`. It is
+the second of the three strips in the tip module.
 
 :::{figure} /_static/figures/sd-070-hvastis.svg
 :alt: Two cross-sections of the wafer, one above the other. Before the step a thin resist film covers everything but the left-hand active area, where a doped layer lies in the silicon. After it the resist is gone and the rest of the drawing is unchanged.
@@ -26,19 +40,24 @@ module.
 Before, the thin HVNTM resist after the tilted tip implant; after, the resist stripped and the wafer cleaned, down to the thin oxide the page infers over the silicon and the capped gates, which stays for the next tip implants (no HF step is drawn, as the page infers). The resist's implanted crust and its implanted sidewalls are not drawn. The tips' colour marks where the implants are, not their profiles. The halo, the caps, the gate oxides, the re-oxidation oxide and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
-Two things distinguish it from {ref}`ASTIS <step-067>`. The resist is thin —
-the PDK's "Photoresist thickness for HV Tip Implants" is 0.3 µm, against
-1.14 µm for the standard resist[^pdk-03] — and the implant it has absorbed is,
-we infer from the LDD-type dose of the step, one to two orders of magnitude
-lighter than the 1.8 V tip (of order 10¹³ cm⁻², typical of an
-{term}`LDD`,[^txt-04] against 10¹⁴–10¹⁵ cm⁻²). The
-{term}`crust <implant crust>` is correspondingly thinner and the strip easier.
-On the other hand the ions arrived at 40°,[^pdk-03] so the resist sidewalls
-facing the beam have been implanted along their whole height, and
-we read the PDK's 0.02 µm "Photoresist tilted implant
-penetration"[^pdk-03] as saying the ions reach 0.02 µm laterally into
-the resist edge, so the sidewalls facing the beam are implanted through
-their whole height (inference).
+Two things distinguish it from {ref}`ASTIS <step-067>`:
+
+* The resist is thin — the PDK's "Photoresist thickness for HV Tip
+  Implants" is 0.3 µm, against 1.14 µm for the standard
+  resist.[^pdk-03]
+* The implant it has absorbed is, we infer from the LDD-type dose of the
+  step, one to two orders of magnitude lighter than the 1.8 V tip (of
+  order 10¹³ cm⁻², typical of an {term}`LDD`,[^txt-04] against
+  10¹⁴–10¹⁵ cm⁻²).
+
+The {term}`crust <implant crust>` is correspondingly thinner and the strip
+easier. On the other hand the ions arrived at 40°,[^pdk-03] so the resist
+sidewalls facing the beam have been implanted along their whole height. We
+read the PDK's 0.02 µm "Photoresist tilted implant penetration"[^pdk-03] as
+saying the ions reach 0.02 µm laterally into the resist edge, so the
+sidewalls facing the beam are implanted through their whole height
+(inference).
+
 The surface under the resist is, we infer, the
 {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon and poly, which
 must survive once more for {ref}`LDASTI <step-072>`.
@@ -46,50 +65,55 @@ must survive once more for {ref}`LDASTI <step-072>`.
 ## Step category
 
 `HVASTIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type, of medium difficulty: an implanted crust is
-present, so the low-temperature first {term}`ash` stage that guards against
-{term}`popping` is still prudent, but the total resist volume is a quarter of
-the usual and the dose is moderate. The category page's generic
-post-implant sequence — downstream ash, {term}`SPM`, {term}`SC-1` — applies without
-special measures.
+*post-implant* type, of medium difficulty.
+
+**Specific to this step:**
+
+* An implanted crust is present, so the low-temperature first
+  {term}`ash` stage that guards against {term}`popping` is still prudent,
+  but the total resist volume is a quarter of the usual and the dose is
+  moderate.
+* The category page's generic post-implant sequence — downstream ash,
+  {term}`SPM`, {term}`SC-1` — applies without special measures.
 
 ## Why this step exists
 
-The next mask, {ref}`LDNTM <step-071>`, is coated on this surface, and
-the arsenic-bearing resist and its crust must be gone before the wafer
-is heated at {ref}`TIPRTAD <step-075>`. A thin implanted resist has its
-own failure mode: if the ash is tuned for the thick standard film, the
-thin film is over-ashed for most of the cycle, and the exposed screen
-oxide, gate oxide edges and poly sidewalls see the plasma for longer
-than necessary — one reason downstream (charge-free) ashing is
-preferred over direct plasma exposure once gates exist.[^wiki-ash]
-Residue matters as it did after `ASTIS`: a flake left here blocks the
-{term}`SONOS` tip implant on whichever cell it lands.
+The next mask, {ref}`LDNTM <step-071>`, is coated on this surface, and the
+arsenic-bearing resist and its crust must be gone before the wafer is heated
+at {ref}`TIPRTAD <step-075>`.
+
+A thin implanted resist has its own failure mode. If the ash is tuned for
+the thick standard film, the thin film is over-ashed for most of the cycle,
+and the exposed screen oxide, gate oxide edges and poly sidewalls see the
+plasma for longer than necessary. That is one reason downstream
+(charge-free) ashing is preferred over direct plasma exposure once gates
+exist.[^wiki-ash] Residue matters as it did after `ASTIS`: a flake left here
+blocks the {term}`SONOS` tip implant on whichever cell it lands.
 
 ## How it is typically performed
 
-An industry-generic post-implant strip for a thin resist after a
-moderate-dose tilted implant, 200 mm, 130 nm era:
+*An industry-generic post-implant strip for a thin resist after a
+moderate-dose tilted implant, 200 mm, 130 nm era:*
 
 1. **Plasma ash.** Downstream microwave or RF oxygen plasma, with
    nitrogen[^fujimura-1990] or water vapour[^fujimura-1991] added as
-   Fujimura's group established for implanted resist. A short,
-   cooler first stage opens the thin crust — the "low-temperature
-   (<220° C.)" first step of the two-stage recipe[^pat-strip-mosel] —
-   and a hot stage clears the remaining film; {term}`endpoint` by optical
-   emission followed by a timed over-ash, kept short because the film
-   is thin. Horsky's and Roche's studies of resist outgassing and
-   carbonisation during implantation explain what the ash is
-   removing.[^horsky-1998][^roche-1985] SkyWater's ashers offer the
-   needed chemistries: "Gasonic PEP, remote microwave plasma, N2, O2,
-   120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2,
-   40C-270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to
-   250C".[^skw-01]
-2. **Wet strip and clean.** SPM ("3 parts of concentrated sulfuric
-   acid and 1 part of 30 wt. % hydrogen peroxide solution" is
-   typical)[^wiki-piranha] for residual organics, then SC-1
-   (NH₄OH/H₂O₂/H₂O at 75–80 °C) for particles and, optionally,
-   {term}`SC-2` for metals;[^wiki-rca] SkyWater's
+   Fujimura's group established for implanted resist.
+
+   A short, cooler first stage opens the thin crust — the "low-temperature
+   (<220° C.)" first step of the two-stage recipe[^pat-strip-mosel] — and a
+   hot stage clears the remaining film; {term}`endpoint` by optical emission
+   followed by a timed over-ash, kept short because the film is thin.
+
+   Horsky's and Roche's studies of resist outgassing and carbonisation
+   during implantation explain what the ash is
+   removing.[^horsky-1998][^roche-1985] SkyWater's ashers offer the needed
+   chemistries: "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C",
+   "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" and "Mattson
+   Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".[^skw-01]
+2. **Wet strip and clean.** SPM ("3 parts of concentrated sulfuric acid and
+   1 part of 30 wt. % hydrogen peroxide solution" is typical)[^wiki-piranha]
+   for residual organics, then SC-1 (NH₄OH/H₂O₂/H₂O at 75–80 °C) for
+   particles and, optionally, {term}`SC-2` for metals.[^wiki-rca] SkyWater's
    Akrion Gamma bench lists "Sulfuric, SC1".[^skw-01] Room-temperature
    alternatives to the hot sequence exist.[^ohmi-1996]
 3. **Rinse and dry.** Cascade DI-water rinse and spin or IPA dry.
@@ -109,17 +133,28 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ## Machines likely used at SkyWater
 
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench and FSI Mercury | strong (existence) |
+| KLA-Tencor AIT (our reading) | medium |
+
 * **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   named on SkyWater's facilities page with their gases and
-  temperatures.[^skw-01] Strength: **strong** for existence; the
-  assignment of this strip to any one of them is an inference.
+  temperatures.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to any one of them is
+    an inference.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE")[^skw-01] for SPM/SC-1. Strength: strong for existence.
+  BOE")[^skw-01] for SPM/SC-1.
+  - *Tool exists:* strong for existence.
 * **DNS wet bench and FSI Mercury** ("industry standard
-  HF/SC1/SC2").[^skw-01] Strength: strong for existence.
+  HF/SC1/SC2").[^skw-01]
+  - *Tool exists:* strong for existence.
 * **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -140,7 +175,7 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
   stripped); mask: {ref}`HVNTM <step-068>`.
 * Next: {ref}`LDNTM <step-071>` (the SONOS tip mask coated on the
   cleaned surface).
-* Companion strips: {ref}`ASTIS <step-067>` before,
+* Same module: companion strips {ref}`ASTIS <step-067>` before,
   {ref}`LDASTIS <step-074>` after.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
@@ -212,11 +247,12 @@ the {ref}`LDASTI <step-072>` and {ref}`LDBHI <step-073>` implants.
 
 ## Open questions
 
-* The ash recipe for the thin HV-tip resist, and whether it differs
-  from the standard implant strip, is not public.
-* The HV tip dose that determines the crust is an inference from
-  LDD-typical values ({ref}`HVASTI <step-069>`).
-* Which asher and wet bench run this strip is not stated publicly.
+* **Ash recipe.** The ash recipe for the thin HV-tip resist, and whether it
+  differs from the standard implant strip, is not public.
+* **HV tip dose.** The HV tip dose that determines the crust is an inference
+  from LDD-typical values ({ref}`HVASTI <step-069>`).
+* **Which asher and wet bench.** Which asher and wet bench run this strip is
+  not stated publicly.
 
 <!-- footnotes -->
 
