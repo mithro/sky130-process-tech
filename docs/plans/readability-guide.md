@@ -1625,7 +1625,7 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 + * **Likely SkyWater tool:** …[^skw-01]  * **Not public:** … (→ Open questions)
 + :::
 
-## What this step is                   lead: ≤ 2 paragraphs, ≤ 120 words, first sentence ≤ 25 words
+## What this step is                   lead: ≤ 2 paragraphs (¹), ≤ 120 words, first sentence ≤ 25 words
    (generated {figure} block)          stays where gen_figures put it: directly after the lead
 + ### …                                any new H3 goes after the figure's caption, never between
                                        the lead and the figure
@@ -1651,6 +1651,10 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 ## Open questions                      labelled bullets; in-force notes last               R-OPENQ
 <!-- footnotes -->
 ```
+
+(¹) If the base lead is over 120 words and two paragraphs would leave one over 100 words, use three at
+natural seams and list the page. Never more than three, and never a paragraph that opens on a
+connective.
 
 **Order of work.**
 
