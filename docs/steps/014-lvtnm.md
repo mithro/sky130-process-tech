@@ -222,12 +222,10 @@ many implants produce the two shifts.
   {ref}`LVTNIS <step-016>` (resist strip).
 * Same module: the other Vt-flavour mask is {ref}`HVTPM <step-022>`
   (`hvtp`, which must not overlap `lvtn`, rule lvtn.9).
-* Compare: {ref}`NCHI <step-045>` — the baseline N-channel
-  implant of the 1.8 V devices, placed later under the low-voltage
-  oxide mask {ref}`LVOM <step-044>` (a different category, in a
-  different module).
 * Feeds: all of this module's implants are activated at
-  {ref}`RTAI <step-034>`.
+  {ref}`RTAI <step-034>`. The baseline N-channel implant of the 1.8 V
+  devices is {ref}`NCHI <step-045>`, placed later under the
+  low-voltage oxide mask {ref}`LVOM <step-044>`.
 * Mask: {ref}`LVTNM <mask-lvtnm>` — the mask's layers, plates, renders
   and design rules; the previous mask is {ref}`DNM <step-007>`, the
   next mask {ref}`NWM <step-017>`.
