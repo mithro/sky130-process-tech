@@ -164,8 +164,8 @@ platform followed in 1991.[^asml-30] ASML sold "some of the first PAS
 but now offers resolutions down to 0.28 µm and throughput of up to 100
 wafers per hour".[^asml-30]
 
-Its refurbished-product data sheets and other public specifications
-describe the following:
+Its refurbished-product data sheets describe the PAS 5500/100D, /275D
+and /450F.
 
 :::{table} Representative i-line steppers and scanners of the 200 mm era with a dedicated data sheet (figures as each source gives them)
 :widths: 12 24 8 56
