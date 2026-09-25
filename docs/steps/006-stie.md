@@ -11,6 +11,7 @@
 | **Next step** | {ref}`DNM <step-007>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** the plasma etch that cuts the isolation trenches into the
   silicon.
 * **Why:** the trench depth, sidewall angle and corner shape it sets
@@ -53,20 +54,19 @@ dielectric";[^wiki-sti] `STIE` is the first of those three operations.
 No SkyWater document gives the SKY130 trench depth, and
 the PDK stack drawing does not settle it.
 
-| Quantity (PDK stack drawing[^pdk-04]) | Value |
+| Quantity (PDK stack drawing[^pdk-04]) | Value (µm) |
 |---|---:|
 | Vertical ladder start | `0.0` |
-| Next level, labelled "FOX K=3.9" | 0.3262 µm |
-| `licon` over `diffusion` | 0.6099 µm |
-| `licon` over `field poly` (0.18 µm thick) | 0.4299 µm |
-| `li` bottom | 0.9361 µm |
+| Next level, labelled "FOX K=3.9" | 0.3262 |
+| `licon` over `diffusion` | 0.6099 |
+| `licon` over `field poly` (0.18 µm thick) | 0.4299 |
+| `li` bottom | 0.9361 |
 
 1. Diffusion surface: 0.9361 − 0.6099 = **0.3262 µm**.
 2. Field-oxide top: 0.9361 − 0.4299 − 0.18 = **0.3262 µm**.
-3. Both match the drawing's own next-level value, so the drawing
-   shows no field-oxide step, and the 0.07 µm `FOXSTEP` of the
-   assumptions table[^pdk-03] cannot be combined with it to derive a
-   trench depth.
+3. The two are equal, so the drawing shows no field-oxide step, and
+   the 0.07 µm `FOXSTEP` of the assumptions table[^pdk-03] cannot be
+   combined with it to derive a trench depth.
 
 If the drawing's zero is the trench floor — our reading, not a
 documented fact, and the drawing itself says "Diagram not to scale!" —
@@ -139,7 +139,7 @@ result can be checked electrically:
 
 ## How it is typically performed
 
-An industry-generic recipe for a 200 mm, 130 nm-era fab:
+*An industry-generic recipe for a 200 mm, 130 nm-era fab:*
 
 1. **Chamber and mask.** High-density (inductively coupled or
    transformer-coupled) plasma etcher with independent bias power, so
@@ -237,7 +237,7 @@ W/WN".[^skw-01]
   the trench is lined and filled; see the discussion on that page.
 * Feeds: the trench is lined at {ref}`LINOX <step-010>`, filled at
   {ref}`FILOX <step-011>`, planarised at {ref}`CMPNIT <step-012>`.
-* Same module: related silicon/poly etches — {ref}`P1ME <step-062>`,
+* Same category: related silicon/poly etches — {ref}`P1ME <step-062>`,
   {ref}`BFR <step-060>`.
 * Category page: {ref}`Etch <category-etch>`.
 
