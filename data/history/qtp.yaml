@@ -7648,3 +7648,259 @@ documents:
     unrelated by name to "R95LD-3R", "R95LD-R" or "R9" (all quoted verbatim rather than reconciled). Figures
     (0.09 µm, 2 metal layers) match qtp-071302's Cypress-fabricated R95LD-3R exactly despite the different
     process-code name.
+- id: qtp-072105
+  origin: cypress
+  doc_type: QTP
+  number: '072105'
+  cypress_document_number: null
+  title: EZ-Color Device Family, S4AD-5 Technology, GSMC
+  version: '1.0'
+  date_printed: August 2009
+  url: https://www.cypress.com/file/95561/download
+  archive_url: https://web.archive.org/web/20201031161537/https://www.cypress.com/file/95561/download
+  retrieved: '2026-09-25'
+  sha256: 9faededd5e29e1777009a8306f1d5b72b67d6f140751ed601c9b363b2d18cccd
+  technology_codes:
+  - S4AD-5
+  fab: Fab 5 (GSMC, Shanghai, China)
+  products:
+  - CY8CLED04
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 250A TiN/5,800A Al/700A TiN; Metal 2: 500A TiN/8,000A Al/250A TiN'
+    passivation: 7,000A TeOs /6,000A Si3N4
+    free_phosphorus_percent: null
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110A
+    fab_location: GSMC/Shanghai-China
+    die_fab_line_id: S4AD-5
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '060605'
+    description: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
+    date: Aug 06
+  - number: '072105'
+    description: Qualify CY8CLED04 Device on S4AD-5 Technology, GSMC
+    date: May 07
+  quotes:
+  - text: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
+    location: p.2, Product Qualification History, row 060605
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: An EZ-Color LED-controller device on the GSMC-run S4AD-5 line, matching the 0.35 µm figures already
+    established for S4AD-5 at GSMC in this corpus (qtp-070505, qtp-071104, this session).
+- id: qtp-042505
+  origin: cypress
+  doc_type: QTP
+  number: '042505'
+  cypress_document_number: null
+  title: PSoC Mixed Signal Array (Neutron Product) Family, S4AD-5 Technology, Fab 2
+  version: '2.0'
+  date_printed: April 2006
+  url: https://www.cypress.com/file/92111/download
+  archive_url: https://web.archive.org/web/20201202160306/https://www.cypress.com/file/92111/download
+  retrieved: '2026-09-25'
+  sha256: 2bc3402c8237950853d11177bd2993da47893109c3563c153ebac02759536c3e
+  technology_codes:
+  - S4AD-5
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY8C21234
+  - CY8C21334
+  - CY8C21434
+  - CY8C21534
+  - CY8C21634
+  die_ids:
+  - 8C21001A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6,000A Al 0.5% Cu /1,200A TiW; Metal 2: 500A Ti/8,000A Al 0.5%
+      Cu/300A TiW'
+    passivation: 3,000A TEOs / 6,000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 110A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5 CTI, SONOS
+    transistors: '100,000'
+    gates: '10,000'
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product
+      family and bond option.
+    date: Apr 01
+  - number: '042505'
+    description: PSoC 8C21001A Neutron Product Family on SONOS S4AD-5 Technology, Fab2
+    date: Dec 04
+  quotes:
+  - text: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product family
+      and bond option.
+    location: p.2, Product Qualification History, row 010702
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: Independently repeats S4AD-5's origin row (QTP 010702, Apr 01) already in this corpus; 0.35 µm
+    figure agrees with the corpus norm. The title and history call the technology plain "S4AD-5", but the
+    Die Fab Line ID instead prints "Fab2, S4AD-5 CTI, SONOS", adding the "CTI" (Round Rock, TX) qualifier
+    this corpus's other Fab 2 reports sometimes fold into the code name itself (e.g. "S4AD-5CTI").
+- id: qtp-042702
+  origin: cypress
+  doc_type: QTP
+  number: '042702'
+  cypress_document_number: null
+  title: Automotive PSoC Mixed Signal Array Family, S4AD-5CTI Technology, Fab 2
+  version: '6.0'
+  date_printed: October 2006
+  url: https://www.cypress.com/file/92126/download
+  archive_url: https://web.archive.org/web/20201205134142/https://www.cypress.com/file/92126/download
+  retrieved: '2026-09-25'
+  sha256: 0571f92408ccac9d743534314cc0489a94038fe04d9f56206b177f7281953178
+  technology_codes:
+  - S4AD-5CTI
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY8C27243
+  - CY8C27443
+  - CY8C27643
+  die_ids:
+  - 8C27002
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6000A Al 0.5% Cu /1200A TiW; Metal 2: 500A Ti/8000A Al 0.5% Cu/300A
+      TiW'
+    passivation: 3,000A TeOs / 6000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 m
+    gate_oxide: SiO2 / 110A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5CTI SONOS
+    transistors: '600,000'
+    gates: '100,000'
+  qualification_history:
+  - number: '042702'
+    description: Automotive PSoC 8C27243/443/643 Rev B Device Product Family on S4AD-5CTI Technology, Fab2
+    date: Nov 04
+  quotes:
+  - text: Automotive PSoC 8C27243/443/643 Rev B Device Product Family on S4AD-5CTI Technology, Fab2
+    location: p.2, Product Qualification History, row 042702
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-5CTI SONOS'
+    location: p.3, Technology/Fab Process Description
+  notes: '"S4AD-5CTI" names the Round Rock, TX facility explicitly in the code itself ("CTI" -- the same
+    abbreviation this corpus''s qtp-021507 uses for that fab, "Cypress Semiconductor -- CTI Round Rock, TX").
+    The Qualification Purpose misprints the code as "S4D-5CTI" (dropping the A) even though the title,
+    history row and Die Fab Line ID all say "S4AD-5CTI" -- quoted verbatim.'
+- id: qtp-030702
+  origin: cypress
+  doc_type: QTP
+  number: '030702'
+  cypress_document_number: null
+  title: PSoC Mixed Signal Array Family, S4AD-5CTI Technology, Fab 2 CTI
+  version: '3.0'
+  date_printed: March 2008
+  url: https://www.cypress.com/file/92246/download
+  archive_url: https://web.archive.org/web/20211130181945/https://www.cypress.com/file/92246/download
+  retrieved: '2026-09-25'
+  sha256: dc44b9601e6c8b80921954cb608a90d474e5a7dc7166742df9aa3b17186d61e8
+  technology_codes:
+  - S4AD-5CTI
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX, CTI)
+  products:
+  - CY8C27143
+  - CY8C27243
+  - CY8C27443
+  - CY8C27543
+  - CY8C27643
+  die_ids:
+  - 8C27002
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6,000A Al 0.5% Cu /1,200A TiW; Metal 2: 500A Ti/8,000A Al 0.5%
+      Cu/300A TiW'
+    passivation: 3,000A TEOS / 6,000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: 1Poly/2Metal, 0.35 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Round Rock, TX (CTI)
+    die_fab_line_id: 'Fab2 SONOS, S4AD-5 CTI'
+    transistors: '600,000'
+    gates: '100,000'
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, product family
+      and bond option.
+    date: Apr 01
+  - number: '003605'
+    description: Technology Derivative S4D-5 /New Neuron Devices, CY7C53150 and CY7C53120
+    date: Jul 01
+  - number: '030702'
+    description: New PSoC CY8C27xxx device and product family in smaller die
+    date: Nov 03
+  - number: '043105'
+    description: 5-Layer Mask change for ALL CY8C27xxxB product family
+    date: Nov 04
+  - number: '074504'
+    description: 3 Layer Mask change (M1, Via, and M2) for PSoC Diamond Device (CY8C27x43)
+    date: Jan 08
+  quotes:
+  - text: Technology Derivative S4D-5 /New Neuron Devices, CY7C53150 and CY7C53120
+    location: p.2, Product Qualification History, row 003605
+  - text: 'Fab2 SONOS, S4AD-5 CTI'
+    location: p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  notes: 'A history row (QTP 003605, Jul 01) names a "Technology Derivative S4D-5" for "New Neuron Devices"
+    -- "S4D-5" here (dropping the A) reads as an informal shorthand for S4AD-5 rather than a separate code,
+    quoted verbatim. Design rule is printed "1Poly/2Metal, 0.35 µm" here, a different wording from most
+    other S4AD-5 reports'' "Single Poly, Double Metal" but the same figure.'
+- id: qtp-040901
+  origin: cypress
+  doc_type: QTP
+  number: '040901'
+  cypress_document_number: null
+  title: PSoC Mixed Signal Array Family, S4AD-5CTI Technology, Fab 2
+  version: '2.1'
+  date_printed: March 2008
+  url: https://www.cypress.com/file/92431/download
+  archive_url: https://web.archive.org/web/20211025144251/https://www.cypress.com/file/92431/download
+  retrieved: '2026-09-25'
+  sha256: 3cfff42933a273f39a50477af349788ae73ce4502176e6a88ca504558c997e40
+  technology_codes:
+  - S4AD-5CTI
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY8C29466
+  - CY8C29566
+  - CY8C29666
+  - CY8C29866
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6000A Al 0.5% Cu /1200A TiW; Metal 2: 500A Ti/8000A Al 0.5% Cu/300A
+      TiW'
+    passivation: 3,000A TeOs / 6000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 m
+    gate_oxide: SiO2 / 110A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: 'Fab2, S4AD-5 CTI'
+    transistors: '600,000'
+    gates: '100,000'
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5, New Product Programmable Clock Generator, CY2414ZC product family
+      and bond option.
+    date: Apr 01
+  - number: '040901'
+    description: PSoC 8C29xxxA New Device Product Family on S4AD-5CTI Technology, Fab2
+    date: Oct 04
+  - number: '073302'
+    description: Minor Changes to Metal 2 (MM2) masks on Hydra Device (8C29000AT) on S4AD-5 Technology, Fab
+      2
+    date: Jan 08
+  quotes:
+  - text: PSoC 8C29xxxA New Device Product Family on S4AD-5CTI Technology, Fab2
+    location: p.2, Product Qualification History, row 040901
+  - text: 'Fab2, S4AD-5 CTI'
+    location: p.3, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  notes: Covers the same Hydra/8C29000A device family as qtp-060201 (this session, Fab 4); this report's
+    later history row (073302, Jan 08) names a Metal 2 mask change on the "Hydra Device (8C29000AT)"
+    without naming a fab, printed under the plain "S4AD-5" name rather than "S4AD-5CTI".

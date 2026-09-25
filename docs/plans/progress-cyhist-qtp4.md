@@ -243,6 +243,17 @@ variants).
 
 10 more Group B file ids remain (all S4AD-5 variants).
 
+## Fifteenth batch: five S4AD-5 variants (GSMC, Fab 2, S4AD-5CTI)
+
+qtp-072105 (S4AD-5, GSMC, EZ-Color LED controller), qtp-042505 (S4AD-5, Fab
+2, notes the Die Fab Line ID adds a "CTI" qualifier the title omits),
+qtp-042702 and qtp-040901 (S4AD-5CTI, Fab 2, the automotive/Hydra PSoC
+families -- "CTI" names the Round Rock, TX facility explicitly in the code),
+qtp-030702 (S4AD-5CTI, adds a history row naming a "Technology Derivative
+S4D-5" for Neuron devices). 5 more Group B file ids remain, all S4AD-5
+variants: 92321 (032508), 93161 (063003), 91606 (010902), 92611 (050507),
+93021 (071502).
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
