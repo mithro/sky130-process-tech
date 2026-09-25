@@ -249,7 +249,9 @@ table lead-in (pwbm, rpm, tunm), and tool artefacts (quote and backtick re-pairi
 * **Marker coverage.** Flags read: list items under lead-in markers; clauses that had no marker of
   their own (the step page's `TipAng` reading, "The table does not say …", "At the NA 0.48 low end …"
   which keeps its own `asml-pas5500-275d`).
-* **Other edits.** "It also has two `cntm.nikon` checks" → "The page also has …" (new paragraph); the
+* **Other edits.** "Its mask record lists" → "The site's mask record lists" (new paragraph, the
+  pronoun given its noun back; self-review fix); "It also has two `cntm.nikon` checks" → "The page
+  also has …" (new paragraph); the
   dash pair "— on the step pages' readings the PMOS, the 5 V devices and the memory cells, none of which
   takes the standard tip —" became its own sentence after "… consistent with the Table F2b rows above"
   ("On the step pages' readings these are …", R-SENTENCE 1 and 7); ", puts them at" → "and puts them
