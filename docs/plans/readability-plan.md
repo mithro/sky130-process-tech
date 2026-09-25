@@ -98,3 +98,4 @@ references index table.
 |---|---|
 | 2026-09-20 | Four review reports and prototypes in; plan written. |
 | 2026-09-20 | Guide, theme + preservation checker, generators, figure tooling + first 16 figures merged, each after an Opus review and a fix round. W0c and the step-page pilot (001–013) started. |
+| 2026-09-25 | Merged: pilot 001–013 (+ guide corrections), W0e checkers + step tables, figures S2–S5, site pages, overview, checker round 2, in-force patent leaks on 037–044 (found by the S3/S4 figure review; `check_inforce.py` PHRASES extended), second dead-link check on generated pages (`archive_url`/`dead_since` in the papers dataset; report `link-check-2026-09c.md`), the Cypress history section from another session. |

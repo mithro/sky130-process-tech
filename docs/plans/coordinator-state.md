@@ -47,9 +47,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 
-2. `topic/rd-inforce-sonos` — in-force patent content in the open on steps 037–042 (Sonnet; rulings in `tmp/reviews/rd-figures-s3s4.md` "Existing pages").
 4. `topic/rd-indexes` — W3 batch 1: the three index pages (Sonnet).
-5. `topic/rd-links2` — second check of the dead generated-page links, `archive_url` in the datasets (Sonnet; cache under its worktree tmp/).
 6. Reviews as branches finish: rd-site (verify fixes), rd-figures-s3s4 (verify), rd-steps-014-034, rd-indexes, rd-links2, rd-preserved2, rd-inforce-sonos, rd-figures-s5.
 7. Next batches after those: W2 035–047 (after the S3/S4 figures merge), 048–063 (after S5), figure series S6–S11, W3 class-page batches (machines, materials, masks, categories), the final term-link pass on main.
 8. `topic/cypress-history`: merged 2026-09-25 (two review rounds by its own session; landing-page card added by the coordinator). Its two tool follow-ups: chain-layout arrow floating below a branch box and dashed hedged arrows in `gen_figures.py`; smart dashes turning `--` into an en dash in autolink text.
