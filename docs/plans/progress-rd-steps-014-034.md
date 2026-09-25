@@ -64,6 +64,26 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 025-pchis.md — done (no in-force dropdown on this page)
+
+Rules applied: R-PARA (lead paragraph split at its BF₂-specific-detail seam; the "Plasma ash"
+item, 126 words, → lead + two indented continuation paragraphs), R-CATEGORY (classification
+sentence + one-bullet "Specific to this step:", since exactly one sentence remains after the
+generic-background sentence — Guide problem 3 convention), R-HEDGE step 1 (italic lead-in),
+R-TOOLS (4 "Strength:" bullets → Tool|Evidence recap table), R-RELATED (`Same category:` label
+for the sister-strips bullet), R-OPENQ (bold labels on both bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 1 → 0; list items > 60 words 0 → 0;
+sentences > 45 words 1 → 0; table cells > 25 words 0 → 0. Clean measurement, no figure-caption
+issue on this page.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/025-pchis.md`:
+`quotes`, `hedges` and plain `numbers` (condition (a)) show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for one tuple — "200–270" (the ash temperature range)
+stranded alone after the item's own split, the familiar Guide-problem-11 pattern. All other
+checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly top to bottom,
+including the new recap table and all four R-TOOLS blocks.
+
 ### 024-pnchi.md — done (dense page: 3 competing readings + a long e-test paragraph; one
 in-force dropdown, content untouched)
 

@@ -10,6 +10,20 @@
 | **Previous step** | {ref}`PNCHI <step-024>` |
 | **Next step** | {ref}`PWBM <step-026>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the `HVTPM` resist after the two high-Vt PMOS
+  channel implants and cleans the wafer for `PWBM`.
+* **Why:** a fresh resist cannot be spun over the old one, and residue
+  would block the P-well implants and reach the RTAI anneal.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP / Iridia RF microwave /
+  Mattson Aspen II ashers — strong (existence); inference
+  (assignment).[^skw-01]
+* **Not public:** the SKY130 strip recipe (→ Open questions).
+:::
+
 ## What this step is
 
 `PCHIS` strips the photoresist patterned at {ref}`HVTPM <step-022>`
@@ -34,7 +48,9 @@ implants at light doses (of order 10¹²–10¹³ cm⁻² each, illustrative;
 this reference's reading. As at
 {ref}`LVTNIS <step-016>` this is a *light* implant strip: the {term}`crust <implant crust>` is
 thin and the {term}`popping` risk low compared with the high-energy well strips
-({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`). One detail is
+({ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`).
+
+One detail is
 specific to it: BF₂ implants leave fluorine in the resist crust, and
 fluorinated residues can be more tenacious in a pure-oxygen {term}`ash`, which
 is one reason implant-strip recipes add hydrogen or water vapour
@@ -47,11 +63,14 @@ sequence can be used without restriction.
 ## Step category
 
 `PCHIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type. The category page explains the general recipe; what
-is specific here is that the next step is a *thick-resist* well mask, so
-the surface must be free of the particles that would cause pinholes or
-coating defects in a thick (2 µm-class, inferred on the
-{ref}`PWBM <step-026>` page) film.
+*post-implant* type. The category page explains the general recipe.
+
+**Specific to this step:**
+
+* The next step is a *thick-resist* well mask, so the surface must be
+  free of the particles that would cause pinholes or coating defects
+  in a thick (2 µm-class, inferred on the {ref}`PWBM <step-026>` page)
+  film.
 
 ## Why this step exists
 
@@ -67,17 +86,20 @@ carried into the {ref}`RTAI <step-034>` anneal.
 
 ## How it is typically performed
 
-An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
+*An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:*
 
 1. **Plasma ash.** Downstream oxygen plasma with a nitrogen or
    forming-gas addition. For light doses a single-stage recipe is
    typical, at a temperature in the 200–270 °C class
-   (industry-typical);[^txt-02] SkyWater's published asher ranges
+   (industry-typical).[^txt-02]
+
+   SkyWater's published asher ranges
    (120–270 °C, 40–270 °C and up to 250 °C) span it,[^skw-01] which is
    a capability, not a recipe. Fabs that run one standard
    implant-strip recipe use the two-stage sequence anyway — a first
    stage below about 220 °C "by oxygen and nitrogen/hydrogen plasma"
    until the crust is gone, then a hotter bulk stage.[^pat-strip-mosel]
+
    The remote configuration lets "electrically charged particles time to
    recombine before they reach the wafer surface".[^wiki-ash] SkyWater's
    ashers span "120C – 270C" (GaSonics PEP), "40C-270C" (Iridia) and "up
@@ -101,15 +123,27 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**.[^skw-01]
-  Strength: **strong** for existence; assignment is an inference.
-* **Akrion Gamma batch wet bench** ("Sulfuric, SC1").[^skw-01] Strength:
-  strong for existence.
-* **DNS wet bench / FSI Mercury**.[^skw-01] Strength: strong for
-  existence.
-* **KLA-Tencor SP1** unpatterned surface scanner, our reading of "SP1"
-  in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave, Mattson Aspen II | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench / FSI Mercury | strong (existence) |
+| KLA-Tencor SP1 | medium |
+
+* **GaSonics PEP, Iridia RF microwave, Mattson Aspen II**
+  - *SkyWater says:* lists them.[^skw-01]
+  - *Tool exists:* strong.
+  - *Runs this step:* inference.
+* **Akrion Gamma batch wet bench**
+  - *SkyWater says:* lists "Sulfuric, SC1".[^skw-01]
+  - *Tool exists:* strong for existence.
+* **DNS wet bench / FSI Mercury**
+  - *SkyWater says:* lists them.[^skw-01]
+  - *Tool exists:* strong for existence.
+* **KLA-Tencor SP1** (unpatterned surface scanner)
+  - *SkyWater says:* our reading of "SP1" in a SkyWater job posting's
+    "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -124,11 +158,12 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PNCHI <step-024>`; the resist came from
+* Previous: {ref}`PNCHI <step-024>`. The resist came from
   {ref}`HVTPM <step-022>` and also masked {ref}`PCHI <step-023>`.
 * Next: {ref}`PWBM <step-026>` (thick-resist P-well block mask).
-* Sister strips: {ref}`LVTNIS <step-016>`, {ref}`LVTPIS <step-021>`,
-  {ref}`PWIS <step-029>`, {ref}`PWDEIS <step-033>`.
+* Same category: sister strips — {ref}`LVTNIS <step-016>`,
+  {ref}`LVTPIS <step-021>`, {ref}`PWIS <step-029>`,
+  {ref}`PWDEIS <step-033>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -194,9 +229,9 @@ An industry-generic light-implant strip for a 200 mm, 130 nm-era fab:
 
 ## Open questions
 
-* The SKY130 strip recipe is not public.
-* Whether the fab uses one generic implant-strip recipe for all light
-  and heavy implants, or tailors it, is unknown.
+* **Strip recipe.** The SKY130 strip recipe is not public.
+* **Recipe tailoring.** Whether the fab uses one generic implant-strip
+  recipe for all light and heavy implants, or tailors it, is unknown.
 
 <!-- footnotes -->
 
