@@ -221,3 +221,51 @@ table wraps cleanly (3 columns from the start avoided the sputter-targets
 overflow).
 
 Content/guide problems: none beyond the two recurring findings above.
+
+### `dopant-sources.md`
+
+Rules applied: R-MODELS (9-row 3-column table), R-TABLE (the S-1/10-K gas
+suppliers sentence, which named exactly the "Filing | suppliers" shape
+already used on other pages, converted to that table with a caption — the
+material section's guidance treats this shape as R-MODELS/R-CAPTION
+territory even outside "Representative materials"), R-PARA (9
+over-100-word paragraphs split at seams), R-SENTENCE (10 sentences over
+45 words split at an existing semicolon, "and", or a natural
+quote-to-quote boundary, with markers repeated where a trailing marker
+covered a whole compound sentence), R-LIST (two enumerations — the
+implant-species groupings under "SKY130 steps that use this class" and
+under "Support gases slow the wear" — converted to bulleted lists),
+R-RELATED (Related pages grouped under bold labels).
+
+Two `check_preserved.py` findings caught and fixed before committing,
+neither visible by eye:
+* The new suppliers table's row labels first read "S-1 (2021)" and "10-K
+  for fiscal 2023", adding a "2021" number and a "10" identifier that the
+  original sentence (here) never gave, even though both facts are true
+  and stated elsewhere on the page (the References section) — fixed by
+  labelling the rows "the S-1" and "the report for fiscal 2023",
+  matching this page's own original wording exactly.
+* The sub-atmospheric-packages table row labelled its "As supplied" cell
+  "Entegris SDS4", adding a third occurrence of the identifier "SDS4"
+  beyond the two already inside the quoted Specification cell — fixed by
+  shortening the label to "Entegris".
+
+Skipped, with reasons: R-INTRO (out of scope); the "What they do",
+"Species and sources", "Delivery", "Hazards" and "SkyWater evidence"
+quick-facts cells are all over cap by the same recurring-finding pattern
+(their quotations are unique but numerous, or already duplicate the
+body) and were not reworked given the batch's time budget — flagged here
+rather than silently dropped.
+
+Over-cap counts, before → after: paragraphs > 100 words 9 → 1 (R-INTRO
+lead); list items > 60 words 1 → 0; sentences > 45 words (real, not
+blockquote/measurement artefacts) 10 → 0; tables with no caption 1 → 0.
+
+`check_preserved.py --allow-regrouped --allow-added markers`: 0
+undeclared differences (markers `ham-2017`, `wiki-implant` each repeated
+once, both rule-5 marker copies onto a split-off sentence). `REGROUPED`
+(1, the Versum/EMD sentence split): hand-checked, digits reappear in
+order. `check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental (non-`-E`) `-W` build: clean. Screenshots at 400 px and
+desktop: table and lists wrap cleanly, no overflow.

@@ -38,6 +38,7 @@ needs to be volatile, to contain the dopant, and to give a useful current
 of the wanted ion. The fluorides and hydrides of the dopants do this
 well, and "Arsine gas or phosphine gas can be used in the ion source to
 provide arsenic or phosphorus respectively for implantation".[^wiki-implant]
+
 The price is toxicity: "In fabricating wafers, toxic materials such as
 arsine and phosphine are often used in the ion implanter
 process".[^wiki-implant] The same process wears the source, so ion-source
@@ -48,7 +49,9 @@ and beam-line parts are consumed with the gas.
 Boron trifluoride is the usual boron source; Wikipedia lists it as
 "applied as dopant in ion implantation" and describes a "pungent,
 colourless, and toxic gas" that "forms white fumes in moist air" and "is
-corrosive".[^wiki-bf3] From one gas the analysing magnet can select
+corrosive".[^wiki-bf3]
+
+From one gas the analysing magnet can select
 atomic boron or the molecular ion BF₂⁺, which enters the wafer with less
 energy per boron atom; SkyWater's implanter entries list the two species
 as "B11" and "BF2".[^skw-01] Boron has two stable isotopes, and a
@@ -67,7 +70,9 @@ health at 50 ppm".[^wiki-ph3] It serves the phosphorus implants and,
 diluted, is a usual phosphorus source for {term}`HDP-CVD`
 phosphosilicate glass (industry practice); Hsiao et al. studied the
 thermal behaviour of HDP PSG made from unnamed "phosphorous-related
-precursors".[^hsiao-2005] For
+precursors".[^hsiao-2005]
+
+For
 atmospheric TEOS–ozone deposition, Fujino et al. used "organic doping
 sources, trimethylphosphate for PSG films".[^fujino-1991] Solid phosphorus in a
 vaporiser oven is the alternative to the gas ({ref}`category-implant`); the ATMI patent notes
@@ -82,19 +87,21 @@ treats it as a potential occupational carcinogen, with an IDLH of
 "Ca [3 ppm]" and an OSHA limit of "TWA 0.05 ppm".[^niosh-arsine] Arsenic
 also deposits in the implanter: Ham et al. found that workers "may be
 exposed to higher levels of hazardous materials, such as arsenic, during
-preventive maintenance (PM) tasks than during the regular operation", and
-that "Arsenic was also found in the bulk samples of debris produced
+preventive maintenance (PM) tasks than during the regular
+operation".[^ham-2017] They also found that "Arsenic was also found in the bulk samples of debris produced
 during PM tasks".[^ham-2017]
 
 ### Indium
 
 Indium is a heavy p-type dopant used for steep channel profiles.
 Shahidi et al. showed an "Indium channel implant for improved
-short-channel behavior of submicrometer NMOSFETs",[^shahidi-1993] and
+short-channel behavior of submicrometer NMOSFETs".[^shahidi-1993]
 Momiyama et al. used "a tilted In implantation" for 60 nm nMOSFETs,
 citing "its steeper lateral profile" against boron, and reported "no penalties with use of In from device or reliability points
 of view".[^momiyama-1999] Indium has no convenient gas and is among the
-elements "often implanted from solid sources".[^wiki-implant] A 2020
+elements "often implanted from solid sources".[^wiki-implant]
+
+A 2020
 Cypress article recommends "deeper channel implants with heavier species
 such as Indium",[^cyp-25] and a Cypress embedded-SONOS patent that may
 still be in force gives an implant energy range, in the collapsed note
@@ -111,19 +118,23 @@ kilo-electron volts (keV)".[^pat-04]
 Dopant hydrides were once supplied as high-pressure dilute mixtures: the
 ATMI patent records that "Many ion implantation systems utilize hydride
 gas sources supplied as dilute mixtures (10-15%), in either 0.44 L or 2.3
-L cylinders at pressures of 400-1800 psig".[^pat-sds-atmi] Its
+L cylinders at pressures of 400-1800 psig".[^pat-sds-atmi]
+
+Its
 alternative adsorbs the gas on a sorbent so that the cylinder stays below
 atmospheric pressure; the patent's authors investigated "the safety
 aspects related to an accidental incursion of air into a phosphine
 storage and delivery system cylinder".[^pat-sds-atmi] "For semiconductor
 manufacturing, this method is feasible, as processes such as ion
-implantation operate under high vacuum".[^wiki-ash3] A second approach
+implantation operate under high vacuum".[^wiki-ash3]
+
+A second approach
 keeps the gas at pressure behind "an embedded pressure control device
 located inside the cylinder":
 Olander et al. describe a "Vacuum Actuated Cylinder" for "the metal
 fluorides commonly used as dopants", in which "A pre-set sub-atmospheric
 pressure must be achieved in the delivery manifold before flow is
-permitted from the cylinder",[^olander-2000] and McKee and Van Horn
+permitted from the cylinder".[^olander-2000] McKee and Van Horn
 tested such a package, "Produced by ATMI", for boron trifluoride "on an
 Axcelis GSD200E ion implanter in a production
 environment".[^mckee-2002]
@@ -136,11 +147,15 @@ point such as tungsten, tungsten doped with lanthanum oxide (lanthanated
 tungsten), molybdenum and tantalum", and "Ion sources can often last 300
 hours".[^wiki-implant] Horsky's indirectly heated cathode reached lives
 "from 70 h at the highest discharge power levels to over 500 h for
-moderate operation".[^horsky-1998-ihc] Support gases slow the wear:
+moderate operation".[^horsky-1998-ihc]
+
+Support gases slow the wear:
 "Hydrogen or hydrogen with xenon, krypton or argon may be added to the
 plasma to delay the degradation of tungsten components due to the halogen
-cycle", and "The hydrogen can come from a high pressure cylinder or from
-a hydrogen generator that uses electrolysis".[^wiki-implant] Beam-line
+cycle".[^wiki-implant] "The hydrogen can come from a high pressure cylinder or from
+a hydrogen generator that uses electrolysis".[^wiki-implant]
+
+Beam-line
 shields catch sputtered material; Swenson et al. added "graphite and
 Si-coated shields" to a medium-current beam line to cut metal
 contamination.[^swenson-1996] Cryopumps collect hydrogen and hydrides,
@@ -159,38 +174,21 @@ them in proprietary packages. The statements below describe standards
 and supplier catalogues, not what SkyWater buys, even where the supplier
 is named in SkyWater's filings.
 
-* **Boron trifluoride.** SEMI C3.27 "provide[s] a specification for boron
-  trifluoride (BF3) used in the semiconductor industry";[^semi-c3-27]
-  NIOSH describes a gas "Shipped as a nonliquefied compressed
-  gas".[^niosh-bf3] EMD Electronics offers "Isotopically Enriched BF3" in
-  its ION-X package, which "can selectively adsorb, store and safely
-  deliver ultra-high purity gases at sub-atmospheric
-  pressures".[^emd-ion-x]
-* **Phosphine.** SEMI C3.6 provides "specifications for phosphine (PH3)
-  that are used in the semiconductor industry";[^semi-c3-6] as a pure
-  gas it is "Shipped as a liquefied compressed gas".[^niosh-phosphine]
-* **Arsine.** SEMI C3.2 provides "specifications for arsine (AsH3) that
-  is used in the semiconductor industry".[^semi-c3-2]
-* **Sub-atmospheric packages.** Entegris states that it pioneered "the
-  Safe Delivery Source® (SDS®) package over 30 years ago", which
-  "provides subatmospheric gas storage and delivery for ion implant
-  dopant materials", and that its fourth generation has been qualified
-  with "SDS4 phosphine (PH3) and SDS4 arsine (AsH3)
-  cylinders".[^entegris-implant-gases] A used 1995 Varian E500 HP lists
-  "PH3 - SDS II, AsH3 - SDS II, BF3 - SDS" bottles in its gas
-  box.[^fabsurplus-e500]
-* **Solid sources.** Elemental phosphorus, arsenic, antimony and indium,
-  or their compounds, evaporated in a vaporiser
-  ({ref}`category-implant`); "Implanting antimony often requires the use
-  of a vaporizer attached to the ion source".[^wiki-implant]
-* **Doped-glass sources.** Diluted phosphine for HDP PSG, or an
-  organophosphorus liquid (TMPO) for TEOS-based PSG, as the
-  {ref}`PSG <step-089>` page reads them; Fujino et al.'s TEOS–ozone PSG
-  used trimethylphosphate.[^fujino-1991]
-* **Ion-source parts.** Tungsten or lanthanated-tungsten arc chambers,
-  cathodes and reflectors;[^wiki-implant] Axcelis names "Source Bushing
-  Shields and Extended Life Extraction Electrodes" among its source
-  upgrades.[^axcelis-gsd-page]
+:::{table} Representative dopant sources and packages, as standards and current supplier documents describe them
+:widths: 22 24 54
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Boron trifluoride | — | SEMI C3.27 "provide[s] a specification for boron trifluoride (BF3) used in the semiconductor industry";[^semi-c3-27] NIOSH describes a gas "Shipped as a nonliquefied compressed gas"[^niosh-bf3] |
+| Boron trifluoride | EMD Electronics ION-X package | "Isotopically Enriched BF3"; the package "can selectively adsorb, store and safely deliver ultra-high purity gases at sub-atmospheric pressures"[^emd-ion-x] |
+| Phosphine | — | SEMI C3.6 provides "specifications for phosphine (PH3) that are used in the semiconductor industry";[^semi-c3-6] as a pure gas it is "Shipped as a liquefied compressed gas"[^niosh-phosphine] |
+| Arsine | — | SEMI C3.2 provides "specifications for arsine (AsH3) that is used in the semiconductor industry"[^semi-c3-2] |
+| Sub-atmospheric packages | Entegris | Entegris states it pioneered "the Safe Delivery Source® (SDS®) package over 30 years ago", which "provides subatmospheric gas storage and delivery for ion implant dopant materials", qualified with "SDS4 phosphine (PH3) and SDS4 arsine (AsH3) cylinders"[^entegris-implant-gases] |
+| Sub-atmospheric packages | A used 1995 Varian E500 HP | lists "PH3 - SDS II, AsH3 - SDS II, BF3 - SDS" bottles in its gas box[^fabsurplus-e500] |
+| Solid sources | — | Elemental phosphorus, arsenic, antimony and indium, or their compounds, evaporated in a vaporiser ({ref}`category-implant`); "Implanting antimony often requires the use of a vaporizer attached to the ion source"[^wiki-implant] |
+| Doped-glass sources | — | Diluted phosphine for HDP PSG, or an organophosphorus liquid (TMPO) for TEOS-based PSG, as the {ref}`PSG <step-089>` page reads them; Fujino et al.'s TEOS–ozone PSG used trimethylphosphate[^fujino-1991] |
+| Ion-source parts | — | Tungsten or lanthanated-tungsten arc chambers, cathodes and reflectors;[^wiki-implant] Axcelis names "Source Bushing Shields and Extended Life Extraction Electrodes" among its source upgrades[^axcelis-gsd-page] |
+:::
 
 ## At SkyWater
 
@@ -216,16 +214,24 @@ from solid sources, and none names indium. The medium-current entry has
 no phosphorus. The HDP entry implies a phosphorus source for PSG without
 naming it.[^skw-01]
 
-The filings name gas suppliers in the terms quoted on the
-{ref}`process gases <material-process-gases>` page: "Air Products &
-Chemicals, Inc. (bulk and specialty gases, chemicals)" and "Praxair, Inc.
-(bulk and specialty gases)" in the S-1; "Linde, Inc. (bulk and specialty
-gases)", "Airgas USA LLC (specialty gases)" and "EMD Performance
-Materials Corp (Versum) (specialty chemicals and gases)" in the report
-for fiscal 2023.[^sec-01][^sec-02] Neither filing names a dopant gas or a
-package. Versum Materials, whose products include "delivery equipment for
+The filings name gas suppliers, in the terms quoted on the
+{ref}`process gases <material-process-gases>` page:
+
+:::{table} Gas suppliers as SkyWater's filings name them
+:widths: 30 70
+
+| Filing | Gas suppliers as named |
+|---|---|
+| the S-1[^sec-01] | "Air Products & Chemicals, Inc. (bulk and specialty gases, chemicals)"; "Praxair, Inc. (bulk and specialty gases)" |
+| the report for fiscal 2023[^sec-02] | "Linde, Inc. (bulk and specialty gases)"; "Airgas USA LLC (specialty gases)"; "EMD Performance Materials Corp (Versum) (specialty chemicals and gases)" |
+:::
+
+Neither filing names a dopant gas or a
+package.
+
+Versum Materials, whose products include "delivery equipment for
 the semiconductor industry", was spun off from Air Products in 2016 and
-acquired by the Merck Group in 2019;[^wiki-versum] EMD Electronics'
+acquired by the Merck Group in 2019.[^wiki-versum] EMD Electronics'
 ION-X page quoted above does not name SkyWater, and whether it is the
 business the 10-K names is not stated.[^emd-ion-x]
 
@@ -234,11 +240,13 @@ business the 10-K names is not stated.[^emd-ion-x]
 The species lists are SkyWater statements and rank as **strong** evidence,
 on the scale of the {ref}`machines index <machines-reading-evidence>`,
 that boron, BF₂, arsenic and (on the GSD tools) phosphorus are implanted
-at the fab, and that a phosphorus-doped HDP oxide is deposited; they tie
-no species to a step.[^skw-01] That the species come from BF₃, PH₃ and
+at the fab, and that a phosphorus-doped HDP oxide is deposited.[^skw-01]
+They tie no species to a step.
+
+That the species come from BF₃, PH₃ and
 AsH₃ is industry practice, and sub-atmospheric packages were one delivery
 route of the period: hydride sources had been supplied as dilute
-high-pressure mixtures before sorbent packages,[^pat-sds-atmi] and McKee
+high-pressure mixtures before sorbent packages.[^pat-sds-atmi] McKee
 and Van Horn tested a new sub-atmospheric BF₃ package on a GSD200E in
 production.[^mckee-2002] Neither is a SkyWater statement. Indium, solid sources,
 TMPO and the ion-source parts appear in no SkyWater source cited here.
@@ -272,10 +280,15 @@ Steps:
 <!-- step-tables:end -->
 
 These are the 25 steps the step pages read as implants, and the doped
-glass at {ref}`PSG <step-089>`. On the step pages' readings, boron trifluoride
-serves the p-well, threshold, halo, punch-through, resistor and P+
-source/drain implants; phosphine the deep N-well, N-well and poly
-implants and the PSG; arsine the tips and N+ source/drain; and several
+glass at {ref}`PSG <step-089>`. On the step pages' readings:
+
+* **Boron trifluoride** — serves the p-well, threshold, halo,
+  punch-through, resistor and P+ source/drain implants.
+* **Phosphine** — serves the deep N-well, N-well and poly implants and
+  the PSG.
+* **Arsine** — serves the tips and N+ source/drain.
+
+Several
 threshold and channel pages
 ({ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`,
 {ref}`PCHI <step-023>`, {ref}`DEPI <step-038>`) leave the species open.
@@ -333,7 +346,8 @@ public beyond the ranges SkyWater lists for its tools.[^skw-01]
   {ref}`PTSI <step-037>` pages name indium because a 2020 Cypress article
   recommends it for memory-transistor channels,[^cyp-25] as does a
   Cypress patent that may still be in force (collapsed note below this
-  list);
+  list).
+
   SkyWater lists no indium, so an indium implant would need a solid
   source on a tool whose entry does not mention one (our
   reading).[^skw-01]
@@ -354,17 +368,17 @@ channels.[^pat-04]
 
 ## Related pages
 
-* {ref}`category-implant` — species, energies, doses and implanter
-  classes.
-* {ref}`machine-medium-current-implanter`,
+* **Category.** {ref}`category-implant` — species, energies, doses and
+  implanter classes.
+* **Machines.** {ref}`machine-medium-current-implanter`,
   {ref}`machine-high-current-implanter` and
   {ref}`machine-high-energy-implanter` — the tools that consume these
-  sources.
-* {ref}`machine-hdp-cvd` — the phosphorus-doped glass.
-* {ref}`material-process-gases` — the nitrogen, helium and hydrogen
-  around the implanters.
-* {ref}`material-precursors` — the phosphorus-glass precursors.
-* {ref}`materials-index` — all consumable classes, including abatement.
+  sources. {ref}`machine-hdp-cvd` — the phosphorus-doped glass.
+* **Materials.** {ref}`material-process-gases` — the nitrogen, helium and
+  hydrogen around the implanters. {ref}`material-precursors` — the
+  phosphorus-glass precursors.
+* **Indexes.** {ref}`materials-index` — all consumable classes, including
+  abatement.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
