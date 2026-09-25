@@ -77,6 +77,10 @@ Used on {ref}`history-fabs`.
 **CHIPEST-2008** — Cypress Semiconductor, *Cypress SONOS - A Scalable Embedded Flash Technology*, ChipEstimate.com Tech Talks, 2008-10-21. <https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21>
 Used on {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
+(hsrc-cicc-1994)=
+**CICC-1994** — Cypress Semiconductor and Altera, *An advanced CMOS EPROM technology for high speed/high density programmable logic devices and memory applications*, Proceedings of the IEEE 1994 Custom Integrated Circuits Conference, DOI 10.1109/CICC.1994.379676. <https://doi.org/10.1109/cicc.1994.379676>
+Used on {ref}`history-technologies`.
+
 (hsrc-databook-1988)=
 **DATABOOK-1988** — Cypress Semiconductor, *CMOS Data Book*, 1988, pages 1-1 and 1-2 (scanned copy in deramp.com's archive of component documentation). <https://deramp.com/downloads/mfe_archive/050-Component%20Specifications/Cypress%20Semiconductor/1988_Cypress_CMOS_Data_Book.pdf>
 Used on {ref}`history-index`, {ref}`history-technologies`.
@@ -129,8 +133,32 @@ Used on {ref}`history-fabs`.
 **FU-CYPRESS** — FundingUniverse (from the *International Directory of Company Histories*), *History of Cypress Semiconductor Corporation*, retrieved 2026-09-25. <https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
+(hsrc-hu-1992)=
+**HU-1992** — G. J. Hu et al. (Cypress Semiconductor), *BiFAMOS technology for high speed mega-bit EPROMs*, 1992 Symposium on VLSI Technology, Digest of Technical Papers, pp. 42–43, DOI 10.1109/VLSIT.1992.200637. <https://doi.org/10.1109/vlsit.1992.200637>
+Used on {ref}`history-technologies`.
+
+(hsrc-isscc-1985)=
+**ISSCC-1985** — Cypress Semiconductor, *A 25-ns 16K CMOS PROM using a four-transistor cell and differential design techniques*, IEEE Journal of Solid-State Circuits, 1985 (first presented at ISSCC 1985), DOI 10.1109/JSSC.1985.1052422. <https://doi.org/10.1109/jssc.1985.1052422>
+Used on {ref}`history-technologies`.
+
 (hsrc-jin-1999)=
 **JIN-1999** — B. Jin, S. Sadoughi, K. Ramkumar, P. Goplan, S. Wong and S. Sharifzadeh (Cypress Semiconductor), *The Modulation of Crystal Originated Pits by the LOCOS Process in 0.25 µm SRAM Technology*, Electrochemical and Solid-State Letters 2 (7), 347, 1999, DOI 10.1149/1.1390832. <https://iopscience.iop.org/article/10.1149/1.1390832>
+Used on {ref}`history-technologies`.
+
+(hsrc-kitonaki-2006)=
+**KITONAKI-2006** — E. Kitonaki, A. Bazigos, M. Bucher, H. Puchner, S. Bhardwaj and Y. Papananos, *Scaling Issues In An 0.15 μm CMOS Technology With EKV3.0*, MIXDES 2006, pp. 151–158, DOI 10.1109/MIXDES.2006.1706557. <https://doi.org/10.1109/mixdes.2006.1706557>
+Used on {ref}`history-technologies`.
+
+(hsrc-pat-us4764248)=
+**PAT-US4764248** — A. Bhattacherjee et al. (Cypress Semiconductor), *Rapid thermal nitridized oxide LOCOS process*, US 4,764,248 A, priority 1987-04-13. <https://patents.google.com/patent/US4764248A/en>
+Used on {ref}`history-technologies`.
+
+(hsrc-pat-us6033991)=
+**PAT-US6033991** — K. Ramkumar et al. (Cypress Semiconductor), *Isolation scheme based on recessed LOCOS using a sloped Si etch and dry field oxidation*, US 6,033,991 A, priority 1997-09-29. <https://patents.google.com/patent/US6033991A/en>
+Used on {ref}`history-technologies`.
+
+(hsrc-pat-us6091129)=
+**PAT-US6091129** — J. M. Cleeves (Cypress Semiconductor), *Self-aligned trench isolated structure*, US 6,091,129 A, priority 1996-06-19. <https://patents.google.com/patent/US6091129A/en>
 Used on {ref}`history-technologies`.
 
 (hsrc-pat-us6677213)=
@@ -147,7 +175,7 @@ Used on {ref}`history-sonos-s4`.
 
 (hsrc-pdk-hv)=
 **PDK-HV** — SkyWater PDK Authors, *High Voltage Methodology*, SkyWater SKY130 PDK documentation, retrieved 2026-09-25. <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
-Used on {ref}`history-s8-lineage`.
+Used on {ref}`history-s8-lineage`, {ref}`history-technologies`.
 
 (hsrc-pdk-metal-stack)=
 **PDK-METAL-STACK** — SkyWater PDK Authors, *metal_stack.svg* (process stack diagram), google/skywater-pdk repository. <https://raw.githubusercontent.com/google/skywater-pdk/main/docs/_static/metal_stack.svg>
@@ -168,6 +196,10 @@ Used on {ref}`history-fabs`.
 (hsrc-psoc-history)=
 **PSOC-HISTORY** — Infineon Technologies, *20 years of PSoC: How it started*, Wayback Machine copy of 2025-07-13 (the live page now redirects elsewhere). <https://web.archive.org/web/20250713043850/https://www.infineon.com/cms/en/product/promopages/20-years-of-psoc/how-it-started/>
 Used on {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
+
+(hsrc-qiao-1999)=
+**QIAO-1999** — J. Qiao et al. (Cypress Semiconductor), *Development of self-aligned contact technology for 0.18 μm static random access memory devices*, Journal of Vacuum Science & Technology B 17 (5), 1999, DOI 10.1116/1.590921. <https://doi.org/10.1116/1.590921>
+Used on {ref}`history-technologies`.
 
 (hsrc-qtp-000505)=
 **QTP-000505** — Cypress Semiconductor, Product Qualification Report QTP 000505: *1 Meg Fast Asynchronous SRAM, R52FD-3 Technology, Fab 4*, December 2002; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210517171315/https://www.cypress.com/file/91326/download>

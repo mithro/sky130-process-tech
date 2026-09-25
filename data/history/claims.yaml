@@ -878,6 +878,107 @@ claims:
   - {id: qtp-051501, origin: cypress}
   - {id: qtp-i000005, origin: cypress}
 
+- id: tech-12um-prom-1985
+  page: docs/history/technologies.md
+  anchor: 'A 1985 Cypress paper describes a 25 ns'
+  grade: attributed
+  attribution: (Cypress's paper and
+  footnotes: [isscc-1985, databook-1988]
+  sources:
+  - {id: paper-isscc1985-cmos-prom, origin: cypress}
+  - {id: cyx-databook-1988, origin: cypress}
+- id: tech-bifamos-1992
+  page: docs/history/technologies.md
+  anchor: 'A 1992 Cypress paper describes'
+  grade: attributed
+  attribution: (Cypress's paper and 10-K)
+  footnotes: [hu-1992, ar-fy1993]
+  sources:
+  - {id: paper-hu-1992-bifamos-eprom, origin: cypress}
+  - {id: cyhist-corp-1993-10k, origin: cypress}
+- id: tech-065-eprom-1994
+  page: docs/history/technologies.md
+  anchor: 'A 1994 paper by Cypress and Altera authors'
+  grade: single-source
+  footnotes: [cicc-1994]
+  sources:
+  - {id: paper-cicc1994-altera-eprom, origin: cypress}
+- id: tech-065-eprom-is-p26
+  page: docs/history/technologies.md
+  anchor: 'That this is the process the reports call P26'
+  grade: inference
+  hedge: our reading
+  footnotes: [cicc-1994, qtp-096411]
+  sources:
+  - {id: paper-cicc1994-altera-eprom, origin: cypress}
+  - {id: qtp-096411, origin: cypress}
+- id: tech-sac-018
+  page: docs/history/technologies.md
+  anchor: 'self-aligned contacts, with tungsten plugs'
+  grade: single-source
+  footnotes: [qiao-1999]
+  sources:
+  - {id: paper-qiao-1999-sac-018um-sram, origin: cypress}
+- id: tech-015-single-poly
+  page: docs/history/technologies.md
+  anchor: 'A 2006 paper models a Cypress'
+  grade: single-source
+  footnotes: [kitonaki-2006]
+  sources:
+  - {id: paper-kitonaki-2006-015um-cmos-ekv3, origin: cypress}
+- id: iso-b55sgt-sti
+  page: docs/history/technologies.md
+  anchor: 'prints "Bipolar Isolation" as "STI"'
+  grade: single-source
+  footnotes: [qtp-051101]
+  sources:
+  - {id: qtp-051101, origin: cypress}
+- id: iso-locos-1987
+  page: docs/history/technologies.md
+  anchor: 'A Cypress patent filed in 1987'
+  grade: single-source
+  footnotes: [pat-us4764248]
+  sources:
+  - {id: pat-us4764248a-locos-1987, origin: patent-record}
+- id: iso-locos-production
+  page: docs/history/technologies.md
+  anchor: 'The 1994 EPROM paper uses poly-buffered LOCOS'
+  grade: attributed
+  attribution: (Cypress's
+  footnotes: [cicc-1994, jin-1999]
+  sources:
+  - {id: paper-cicc1994-altera-eprom, origin: cypress}
+  - {id: cyx-jin-1999-locos, origin: cypress}
+- id: iso-recessed-locos-1997
+  page: docs/history/technologies.md
+  anchor: 'A 1997 patent recesses the field oxide'
+  grade: single-source
+  footnotes: [pat-us6033991]
+  sources:
+  - {id: pat-us6033991a-locos-sti-transition-1997, origin: patent-record}
+- id: iso-trench-1996
+  page: docs/history/technologies.md
+  anchor: 'A 1996 patent describes a'
+  grade: single-source
+  footnotes: [pat-us6091129]
+  sources:
+  - {id: pat-us6091129a-sti-1996, origin: patent-record}
+- id: iso-sky130-sti
+  page: docs/history/technologies.md
+  anchor: 'SKY130 isolates its devices with shallow trenches'
+  grade: single-source
+  footnotes: [pdk-hv]
+  sources:
+  - {id: cyx-pdk-hv, origin: skywater}
+- id: iso-both-in-development
+  page: docs/history/technologies.md
+  anchor: The sources show both in development from
+  grade: inference
+  hedge: our reading
+  footnotes: [pat-us6091129, jin-1999]
+  sources:
+  - {id: pat-us6091129a-sti-1996, origin: patent-record}
+  - {id: cyx-jin-1999-locos, origin: cypress}
 - id: tech-p20
   page: docs/history/technologies.md
   anchor: The one 0.8 µm process in the qualification reports is P20

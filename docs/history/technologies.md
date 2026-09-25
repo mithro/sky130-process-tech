@@ -33,9 +33,17 @@ poly, and a single layer metal", with lightly doped source and drain extensions.
 etching as recent innovations (single source).[^databook-1988] The Gale company history dates the first product, a
 1.2 µm CMOS memory, to early 1984.[^fu-cypress]
 
+A 1985 Cypress paper describes a 25 ns, 16K PROM made in 1.2 µm n-well CMOS, with a four-transistor
+cell and an on-chip substrate bias generator. Its n-well agrees with the data book's (Cypress's paper and
+data book).[^isscc-1985][^databook-1988]
+
 The 1988 book's PROMs and programmable logic used "an EPROM programming element".[^databook-1988] By 1993
 Cypress listed "proprietary 0.65, 0.8 and 1.2-micron CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron
 Flash technologies".[^ar-fy1993]
+
+**BiFAMOS.** A 1992 Cypress paper describes "an advanced BiCMOS floating gate avalanche MOS (BiFAMOS)
+technology" for fast EPROMs, with bipolar sense amplifiers, and reports a 12 ns 1-Mb EPROM at 0.8 µm. The
+1993 list above includes 0.8 µm BiCMOS (Cypress's paper and 10-K).[^hu-1992][^ar-fy1993]
 
 **P20.** The one 0.8 µm process in the qualification reports is P20, at Fab 2, for the CY7C344 and
 CY7C346 MAX EPLDs: two metal layers and 195 Å of gate oxide (Cypress's reports).[^qtp-091216][^qtp-093332]
@@ -61,6 +69,12 @@ reports):[^qtp-096091][^qtp-096411][^qtp-011503]
 The metals differ. R28 has aluminium–silicon between TiW layers ("Ti/TiW/AL-Si/TiW,
 500A/1200A/6000A/1200A"); P26 and the Fab 2 L28 print plain aluminium with TiW (Cypress's
 reports).[^qtp-096091][^qtp-096411][^qtp-011503]
+
+**The EPROM process.** A 1994 paper by Cypress and Altera authors describes a 0.65 µm "double-level poly
+and metal UV EPROM CMOS technology" for programmable logic, with six transistor types and "poly buffer
+LOCOS (PBL) isolation". It halved the die of a MAX product compared with the 0.8 µm technology before it (single
+source).[^cicc-1994] That this is the process the reports call P26 is our reading: P26 is the
+0.65 µm EPROM process in the reports, but neither source names the other.[^cicc-1994][^qtp-096411]
 
 **L28's first fab.** Two reports describe the same April 1998 row differently: "New Technology L28/New
 Device CY227*" in one, "Qualified Technology L28 transfer from Fab 3 to Fab 2" in the other. The second, with
@@ -92,7 +106,7 @@ no report says so.
 **The first 0.35 µm SRAM.** The sources disagree on the date. Cypress's 1996 report, published early in
 1997, shows 256K SRAMs "manufactured on 0.5-micron and 0.35-micron technologies" and says RAM3 was already
 made "at a leading-edge 0.35-micron size". EE Times called the CY7C1021, announced on 1997-11-18, Cypress's
-"first SRAM built in a 0.35-µm feature size". The two disagree; the shrunk RAM3 parts and a new 0.35 µm
+"first SRAM built in a 0.35-[µ]m feature size". The two disagree; the shrunk RAM3 parts and a new 0.35 µm
 design may explain it (our reading).[^ar-fy1996][^eet-1997-sram035]
 
 **The R42 processes.** Cypress's 1997 report lists RAM4 among its trademarks.[^ar-fy1997] The qualification
@@ -107,8 +121,7 @@ reports show four processes of this generation at Fab 4 (Cypress's reports):[^qt
   reports).[^qtp-030204][^qtp-030206] RAM42 moved to Grace in 2009 (single source).[^qtp-091302]
 
 **Metal.** The two-metal R42 stacks are TiW, aluminium–copper and TiW: "500Å TiW/6000Å Al -5%Cu/1200Å TiW"
-for metal 1 (Cypress's reports).[^qtp-003907][^qtp-102101] The reports print "-5%Cu"; other reports of the
-time print "0.5% Cu".
+for metal 1 (Cypress's reports).[^qtp-003907][^qtp-102101] The reports print "-5%Cu"; other reports of the time print "0.5% Cu".[^qtp-021507]
 
 **S4AD-5.** Cypress's first SONOS process was built on this generation. Its report describes it as an
 "R42D-5 derivative w/ 6 additional mask" (single source).[^qtp-021507] It is covered on
@@ -123,8 +136,8 @@ source).[^ar-fy1998] EE Times had reported working 0.25 µm silicon in November 
 1997 report had 0.25 µm processes "yielding in two different fabs".[^eet-1997-sram035][^ar-fy1997]
 
 **Isolation.** A 1999 paper by Cypress's R&D staff describes the "local oxidation of silicon (LOCOS)
-process in 0.25 µm static random access memory (SRAM) technology" (single source).[^jin-1999] SKY130 uses
-shallow trench isolation instead; when Cypress changed is not in the sources found.
+process in 0.25 µm static random access memory (SRAM) technology" (single source).[^jin-1999] See
+{ref}`history-tech-isolation`.
 
 **The R52 processes.** In the qualification reports this generation is R52, in several variants, all at
 Fab 4 (Cypress's reports):[^qtp-062201][^qtp-099202][^qtp-012705][^qtp-098462][^qtp-082506]
@@ -166,6 +179,10 @@ reports):[^qtp-012801][^qtp-011908][^qtp-014807]
 
 A 2015 Cypress notice calls R7 "250nm R7", while the R7 reports print 0.18, 0.16 and 0.15 µm; the sources
 disagree on R7's node.[^pin-152804][^qtp-011908]
+
+**Papers.** A 1999 Cypress paper describes self-aligned contacts, with tungsten plugs in a Ti/TiN liner,
+"for 0.18 μm static random access memory cells" (single source).[^qiao-1999] A 2006 paper models a Cypress
+0.15 µm CMOS technology "with single poly, and buried channel PMOS" (single source).[^kitonaki-2006]
 
 **Metal.** The R7 stacks put 150 Å of titanium under the aluminium and 300 Å of TiW on top, with 1000 Å of
 TEOS and 9000 Å of nitride as passivation. S8 keeps the titanium, aluminium and TiW sandwich, with 100 Å of
@@ -217,6 +234,28 @@ These processes were qualified from 2004 to 2007, before and alongside the first
 reading). C9FD-3R and R95LD-3R have the same first
 metal as S8, "100Å Ti / 3200Å Al / 300Å TiW"; R9T-3R and R9Q-3R use 150 Å of titanium (Cypress's
 reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
+
+(history-tech-isolation)=
+## Isolation: LOCOS, then trenches
+
+The qualification reports do not say how devices are isolated, with one exception: the 2005 report on
+B55SGT, the SiGe process, prints "Bipolar Isolation" as "STI" (single source).[^qtp-051101] Papers and
+patents fill part of the gap. A patent shows what Cypress worked on, not what a production process used.
+
+* **LOCOS.** A Cypress patent filed in 1987 is a LOCOS process "for minimizing bird's beak" (single
+  source).[^pat-us4764248]
+* **LOCOS in production.** The 1994 EPROM paper uses poly-buffered LOCOS at 0.65 µm, and a 1999 paper
+  describes LOCOS "in 0.25 µm static random access memory (SRAM) technology" (Cypress's
+  papers).[^cicc-1994][^jin-1999]
+* **Refining LOCOS.** A 1997 patent recesses the field oxide into a sloped silicon etch (single
+  source).[^pat-us6033991]
+* **Trenches.** A 1996 patent describes a "trench-isolated active device" whose gate layer is
+  self-aligned to the trench (single source).[^pat-us6091129]
+
+SKY130 isolates its devices with shallow trenches; its PDK writes "Field Oxide (STI)" (single
+source).[^pdk-hv] When Cypress's SRAM and SONOS processes moved from LOCOS to trenches is not in the
+public record found. The sources show both in development from
+1996 to 1999 (our reading).[^pat-us6091129][^jin-1999]
 
 ## Other processes
 
@@ -425,3 +464,28 @@ reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
 [^ar-fy2010]: Cypress Semiconductor Corp., *2010 Annual Report* with Form 10-K, fiscal year ended
     2011-01-02: "Manufacturing" section.
     <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf>
+[^isscc-1985]: Cypress Semiconductor, *A 25-ns 16K CMOS PROM using a four-transistor cell and
+    differential design techniques*, IEEE Journal of Solid-State Circuits, 1985 (first presented at
+    ISSCC 1985), DOI 10.1109/JSSC.1985.1052422. <https://doi.org/10.1109/jssc.1985.1052422>
+[^hu-1992]: G. J. Hu et al. (Cypress Semiconductor), *BiFAMOS technology for high speed mega-bit
+    EPROMs*, 1992 Symposium on VLSI Technology, Digest of Technical Papers, pp. 42–43, DOI
+    10.1109/VLSIT.1992.200637. <https://doi.org/10.1109/vlsit.1992.200637>
+[^cicc-1994]: Cypress Semiconductor and Altera, *An advanced CMOS EPROM technology for high
+    speed/high density programmable logic devices and memory applications*, Proceedings of the IEEE
+    1994 Custom Integrated Circuits Conference, DOI 10.1109/CICC.1994.379676.
+    <https://doi.org/10.1109/cicc.1994.379676>
+[^qiao-1999]: J. Qiao et al. (Cypress Semiconductor), *Development of self-aligned contact technology
+    for 0.18 μm static random access memory devices*, Journal of Vacuum Science & Technology B 17 (5),
+    1999, DOI 10.1116/1.590921. <https://doi.org/10.1116/1.590921>
+[^kitonaki-2006]: E. Kitonaki, A. Bazigos, M. Bucher, H. Puchner, S. Bhardwaj and Y. Papananos,
+    *Scaling Issues In An 0.15 μm CMOS Technology With EKV3.0*, MIXDES 2006, pp. 151–158, DOI
+    10.1109/MIXDES.2006.1706557. <https://doi.org/10.1109/mixdes.2006.1706557>
+[^pat-us4764248]: A. Bhattacherjee et al. (Cypress Semiconductor), *Rapid thermal nitridized oxide
+    LOCOS process*, US 4,764,248 A, priority 1987-04-13. <https://patents.google.com/patent/US4764248A/en>
+[^pat-us6033991]: K. Ramkumar et al. (Cypress Semiconductor), *Isolation scheme based on recessed
+    LOCOS using a sloped Si etch and dry field oxidation*, US 6,033,991 A, priority 1997-09-29.
+    <https://patents.google.com/patent/US6033991A/en>
+[^pat-us6091129]: J. M. Cleeves (Cypress Semiconductor), *Self-aligned trench isolated structure*,
+    US 6,091,129 A, priority 1996-06-19. <https://patents.google.com/patent/US6091129A/en>
+[^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater SKY130 PDK documentation,
+    retrieved 2026-09-25. <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
