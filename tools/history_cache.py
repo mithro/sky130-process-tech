@@ -37,6 +37,9 @@ Subcommands:
     the records whose quotes cannot be re-found. This is the proof that the
     evidence does not depend on the local cache.
 
+A record marked ``capture: browser`` was captured from a site that refuses scripted fetches;
+``rebuild`` lists it for checking by hand instead of counting it as a failure.
+
 A record whose cached copy did not come from its ``url`` (an API response for a paper, say)
 names the URL it came from in ``fetched_from``; ``rebuild`` fetches that first.
 
@@ -346,7 +349,7 @@ def fetch_politely(url: str, where: str) -> bytes | None:
 def cmd_rebuild(args: argparse.Namespace) -> int:
     out = Path(args.dir)
     out.mkdir(parents=True, exist_ok=True)
-    bad = ok = 0
+    bad = ok = browser = 0
     for path in evidence_files():
         for rec in records(path):
             rid = str(rec["id"])
@@ -374,6 +377,11 @@ def cmd_rebuild(args: argparse.Namespace) -> int:
                 result = (url, missing, changed)
                 if not missing:
                     break
+            if result is None and rec.get("capture") == "browser":
+                print(f"{path.name}:{rid}: browser capture; the site refuses scripted fetches, so check it by "
+                      f"opening {rec.get('url')}")
+                browser += 1
+                continue
             if result is None:
                 print(f"{path.name}:{rid}: NOT REBUILT (no copy could be fetched)")
                 bad += 1
@@ -388,7 +396,7 @@ def cmd_rebuild(args: argparse.Namespace) -> int:
                 ok += 1
                 if note:
                     print(f"{path.name}:{rid}: quotes found in {url}{note}")
-    print(f"{ok} record(s) re-verified from fresh copies, {bad} not")
+    print(f"{ok} record(s) re-verified from fresh copies, {bad} not, {browser} browser capture(s) to check by hand")
     return 1 if bad else 0
 
 

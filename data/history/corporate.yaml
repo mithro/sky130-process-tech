@@ -351,6 +351,7 @@ records:
     date: 1998-03-09
     form: trade press article
   url: https://www.eetimes.com/cypress-restructures-manufacturing-operations/
+  capture: browser
   archive_url: null
   retrieved: 2026-09-25
   cache: web/chrome-eetimes-1998-03-09-cypress-restructures-manufacturing.txt
@@ -634,6 +635,7 @@ records:
     form: trade press article
     author: Mark LaPedus
   url: https://www.eetimes.com/cypress-inks-foundry-deal-with-grace/
+  capture: browser
   archive_url: null
   retrieved: 2026-09-25
   cache: web/chrome-eetimes-2005-12-12-cypress-inks-foundry-deal-grace.txt
@@ -671,6 +673,7 @@ records:
     form: trade press article
     author: Mark LaPedus
   url: https://www.eetimes.com/cypress-transfers-130-nm-process-to-grace/
+  capture: browser
   archive_url: null
   retrieved: 2026-09-25
   cache: web/chrome-eetimes-2006-07-19-cypress-transfers-130nm-grace.txt
@@ -700,6 +703,7 @@ records:
     date: 2007-03-05
     form: trade press article
   url: https://www.eetimes.com/cypress-furthers-fab-lite/
+  capture: browser
   archive_url: null
   retrieved: 2026-09-25
   cache: web/chrome-eetimes-2007-03-05-cypress-furthers-fab-lite.txt
@@ -1105,6 +1109,7 @@ records:
     date: 2000-07-31
     form: trade press article
   url: https://www.edn.com/why-cypress-acquired-silicon-light-machines/
+  capture: browser
   archive_url: null
   retrieved: 2026-09-25
   cache: web/chrome-edn-2000-07-31-why-cypress-acquired-slm.txt
