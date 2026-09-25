@@ -962,7 +962,6 @@ After:
 
 ```
 :::{table} Representative KrF exposure tools of the 200 mm era (figures as each source gives them)
-:widths: 16 18 8 58
 
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
@@ -1113,10 +1112,10 @@ link on the lead-in to the etch-gases material page. `docs/categories/cmp.md:134
 **Applies when** a table is not the page's quick-facts table and has no caption. (185 tables on the 92
 class pages today; 0 captions.) **On step pages**, the lead-in sentence ending in a colon that
 introduces the table (as R-TABLE and R-DERIVATION already require) *is* the caption; do not also
-wrap the table in `:::{table}` unless it has a prose column and needs `:widths:` set (the "measured
-against nominal" and multi-quotation tables usually do; a short numeric table usually does not). §4.1
-lists R-CAPTION for step pages for this reason, even though the class-page count above is what
-motivated the rule.
+wrap the table in `:::{table}` unless it has a prose column and needs its own `<caption>` (the
+"measured against nominal" and multi-quotation tables usually do; a short numeric table usually
+does not — and `:widths:` is never the reason, see R-CAPTION step 3). §4.1 lists R-CAPTION for step
+pages for this reason, even though the class-page count above is what motivated the rule.
 
 **Do.**
 1. Wrap it:
@@ -1375,7 +1374,7 @@ row of any width, first cell a machine link, last cell the Steps cell); material
 reads the Steps cell from a second table, keyed by key rather than by position, when the main table has
 no Steps column). The restructuring itself — actually rewriting `docs/machines/index.md` and
 `docs/materials/index.md` — is still **W3**; until it happens, the cosmetic fix remains available too:
-wrap in `{table}` with a caption and `:widths:` (R-CAPTION).
+wrap in `{table}` with a caption (R-CAPTION; not `:widths:`, which is inert — R-CAPTION step 3).
 
 **Do (blocked until W0d).** `docs/steps/index.md` — grouping into the 13 module H3s, the short sidebar
 titles, the `Machine class` and `Mask` columns. It is generated; §2.8.
@@ -1780,7 +1779,7 @@ read this index" (the evidence and grading text, moved unchanged) → open quest
 | Index | Safe now | Blocked |
 |---|---|---|
 | `machines/index.md` | reorder H2s (R-INDEX 1–2); replace the 30 bare links at `:17-57` with a table; caption the tables | two-column main table + card grid — **W0e** |
-| `materials/index.md` | reorder; caption; `{table}` + `:widths:` on the six-column table | split into two tables keyed by material — **W0e** |
+| `materials/index.md` | reorder; caption the six-column table (`{table}`, not `:widths:` — inert) | split into two tables keyed by material — **W0e** |
 | `masks/index.md` | reorder; caption; a navigation table **under its own heading** | none of the six checked columns may move |
 | `categories/index.md` | nothing needed | — |
 | `steps/index.md` | nothing by hand | grouping, columns, sidebar titles — **W0d**, generator |
