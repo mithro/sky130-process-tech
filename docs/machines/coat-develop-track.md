@@ -159,7 +159,7 @@ based on the technology from the CLEAN TRACK Mark Series".[^tel-act]
 | Tokyo Electron | LITHIUS Pro Z | — | "TEL's most advanced 300mm coater/developer for the 10nm technology node and beyond"[^tel-lithius] |
 | SCREEN (DNS) | SK-60EX/SK-80EX | — | for wafers of 50–200 mm, "Continuing the Reliability of the Long-Selling 60/80 Series" with "its large installed base"[^screen-sk80ex] |
 | SCREEN | RF-200EX | — | "Dedicated design for 200mm wafers" that "enables a small footprint and DUV process"[^screen-rf200ex] |
-| Sokudo | RF3 | 2006 | "is designed with a modular structure", sold for "65nm and 45nm node manufacturing"[^sokudo-rf3-2006] |
+| Sokudo | RF3 | — | "is designed with a modular structure", sold for "65nm and 45nm node manufacturing"[^sokudo-rf3-2006] |
 :::
 
 The ACT 8 "includes proven technologies to meet challenges in DUV and

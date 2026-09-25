@@ -203,7 +203,7 @@ performance or reliability".[^chen-2002-psg]
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
 | Novellus Systems | SPEED | 1995 | "a high-density plasma system with simpler, more cost-effective solutions for inter-metal dielectric films"[^novellus-history] |
-| Novellus Systems | SPEED | 1996 | "captured the heart of the marketplace in 1996" and "was the first-and-only-tool to successfully integrate HDP processing in high-volume production environments"[^novellus-hdp-2001] |
+| Novellus Systems | SPEED | — | "captured the heart of the marketplace in 1996" and "was the first-and-only-tool to successfully integrate HDP processing in high-volume production environments"[^novellus-hdp-2001] |
 | Novellus Systems | Concept Two SPEED/SEQUEL | — | "combines two SPEED HDP chambers with one SEQUEL chamber"[^novellus-hdp-2001] |
 | Novellus Systems | Concept Three SPEED | — | 300 mm[^novellus-hdp-2001] |
 | Novellus Systems | SPEED Max | 2009 | "extends the HDP-CVD application into the 45 and 32 nm technology nodes"[^lam-speed] |

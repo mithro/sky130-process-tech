@@ -142,8 +142,8 @@ processes" among its applications in 2000.[^gasonics-2000]
 | GaSonics | PEP Iridia | — | modules pair microwave and RF generators[^semistar-iridia] |
 | Mattson Technology | Aspen II Strip | — | on the "Aspen II platform", with ICP sources[^mattson-2001] |
 | Mattson Technology | Aspen III Strip | — | on the "Aspen III platform"[^mattson-2001] |
-| Lam Research | TCP 9600SE (microwave stripper option) | 1998 | for a metal etcher[^lam-9600se-stripper-1998] |
-| Applied Materials | ASP strip chamber | 2000 | on its metal etch systems[^amat-300-etch-2000] |
+| Lam Research | TCP 9600SE (microwave stripper option) | — | for a metal etcher[^lam-9600se-stripper-1998] |
+| Applied Materials | ASP strip chamber | — | on its metal etch systems[^amat-300-etch-2000] |
 :::
 
 Solid State Technology reported on

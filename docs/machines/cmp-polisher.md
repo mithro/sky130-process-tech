@@ -195,14 +195,14 @@ entered and left dry.
 
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
-| Applied Materials | Mirra | 1995 | "a unique three-station, four polishing head design that permits continuous processing of several wafers simultaneously"[^amat-1997] |
+| Applied Materials | Mirra | 1995 | entered CMP in December 1995 with "a unique three-station, four polishing head design that permits continuous processing of several wafers simultaneously"[^amat-1997] |
 | Applied Materials | Mirra Mesa | 1999 | added the Mesa cleaner[^amat-mesa-1999] |
-| IPEC-Planar | AVANTI 472 | 1997 | "IPEC-Planar's third generation Chemical Mechanical Planarization (CMP) product", for "both oxide and metal planarization processes"[^ipec-472-1997] |
-| IPEC-Planar | AvantGaard 676 | 1997 | "Multiple wafer polishing modules (4)"; "Integrated post CMP spray box cleaning"[^ipec-676-1997] |
-| SpeedFam-IPEC | Auriga | 2001 | — |
-| SpeedFam-IPEC | Momentum | 2001 | for "the 0.18 micron and 0.13 micron design node requirements"[^speedfam-ipec-2001] |
-| Strasbaugh | 6DS-SP | 1999 | "Dual polishing tables for 2-step processes"; "Double-sided, post-CMP scrubber integration"[^strasbaugh-6ds-1999] |
-| Strasbaugh | 6EC (lab) | 1999 | "Laboratory Planarizer" for "CMP research and small quantity production of wafers"[^strasbaugh-6ec-1999] |
+| IPEC-Planar | AVANTI 472 | — | "IPEC-Planar's third generation Chemical Mechanical Planarization (CMP) product", for "both oxide and metal planarization processes" (1997 capture)[^ipec-472-1997] |
+| IPEC-Planar | AvantGaard 676 | — | "Multiple wafer polishing modules (4)"; "Integrated post CMP spray box cleaning" (1997 capture)[^ipec-676-1997] |
+| SpeedFam-IPEC | Auriga | — | by 2001[^speedfam-ipec-2001] |
+| SpeedFam-IPEC | Momentum | — | by 2001, for "the 0.18 micron and 0.13 micron design node requirements"[^speedfam-ipec-2001] |
+| Strasbaugh | 6DS-SP | — | optional: "Dual polishing tables for 2-step processes" and "Double-sided, post-CMP scrubber integration" (1999 capture)[^strasbaugh-6ds-1999] |
+| Strasbaugh | 6EC (lab) | — | "Laboratory Planarizer" for "CMP research and small quantity production of wafers" (1999 capture)[^strasbaugh-6ec-1999] |
 | Lam Research | Teres (linear) | — | shipped with Lam's Synergy Integra cleaner[^pat-linear-lam][^lam-clean-1000-2001] |
 :::
 

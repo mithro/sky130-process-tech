@@ -216,7 +216,7 @@ temperature".[^cheung-2000]
 | Novellus — Concept One MAXUS | — | —[^novellus-pecvd-1998] |
 | Novellus — Concept Two Sequel | — | —[^novellus-pecvd-1998] |
 | Novellus — Concept Two Dual Sequel | — | —[^novellus-pecvd-1998] |
-| Novellus — Sequel Express | 2002 | —[^novellus-pecvd-2002] |
+| Novellus — Sequel Express | — | by 2002, with the VECTOR[^novellus-pecvd-2002] |
 | Novellus — VECTOR | — | "Introduced in 2000", "a 200mm/300mm bridge tool"[^novellus-pecvd-2002] |
 | Applied Materials — Precision 5000 | 1987 | —[^amat-1997] |
 | Applied Materials — Precision 5000, Centura | — | dielectric PECVD "During the 1990s"[^amat-1997] |

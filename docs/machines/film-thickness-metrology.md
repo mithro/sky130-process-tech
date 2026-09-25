@@ -207,8 +207,8 @@ wafers".[^tw-op3260]
 | Rudolph MetaPULSE | — | optical-acoustic metal gauge[^rudolph-1999] |
 | Nanometrics NanoSpec 8000X, 9100 | — | automated systems for 75 to 200 mm wafers[^nanometrics-2000] |
 | Nanometrics NanoSpec 9000i | — | integrated system[^nanometrics-2000] |
-| Tencor FLX-2320, FLX-5400, FLX-2900 | 1997 | described on this capture[^tencor-stress-1997] |
-| KLA-Tencor FLX-2320 | 2002 | still listed beside the ASET-F5x thin-film and Quantox gate-monitoring systems[^kla-flx2320] |
+| Tencor FLX-2320, FLX-5400, FLX-2900 | — | described on a 1997 capture[^tencor-stress-1997] |
+| KLA-Tencor FLX-2320 | — | still listed in 2002 beside the ASET-F5x thin-film and Quantox gate-monitoring systems[^kla-flx2320] |
 :::
 
 Rudolph's SpectraLASER, MatrixMetrology and MetaPULSE lines were all on

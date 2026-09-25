@@ -186,7 +186,7 @@ filter".[^macdonald-1991] The NSR-S204B lists "Nitrogen Purge" and
 | Nikon | NSR-1505EX | 1988 | "an R&D tool for early learning of DUV lithography" with NA 0.42[^kato-2007] |
 | Nikon | NSR-S201A | 1995 | "the first production worthy KrF scanner in the industry"[^kato-2007] |
 | Nikon | NSR-S202A | — | "sub-quarter micron resolution", "80 wafers per hour with 8 in. wafers"[^nikon-s202a-s102b] |
-| Nikon | NSR-S204B | 2002 | a unit manufactured in June 2002, configured for 300 mm wafers[^nikon-s204b] |
+| Nikon | NSR-S204B | — | a unit manufactured in June 2002, configured for 300 mm wafers[^nikon-s204b] |
 | Canon | FPA-4000ES1 | 1997 | "Canon's first KrF scanning stepper"[^kato-2007] |
 | Canon | FPA-3000EX4 | — | 5× KrF stepper of NA 0.6, still used in 2014 "for photolithography of all layers" of a 200 mm superconductor process[^tolpygo-2014] |
 | Canon | FPA-3030EX6 | — | inherits the performance of the FPA-3000EX6, "resolution (150 nm), overlay accuracy (25 nm) and productivity (throughput *121 wph)"[^canon-fpa3030ex6] |

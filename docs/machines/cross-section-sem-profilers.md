@@ -174,18 +174,18 @@ deposition and etch step pages name them for.
 
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
-| FEI | FIB 200xP | 1999 | for small specimens, "for SEM/TEM specimen cross section preparation"[^fei-fib200xp-1999] |
-| FEI | FIB 800 | 1999 | accepted "packaged parts or 8-inch wafers", could "section submicron features"[^fei-fib800-1999] |
-| FEI | Strata, Quanta, Nova, Helios (DualBeam) | 2006 | —[^fei-dualbeam-2006] |
+| FEI | FIB 200xP | — | for small specimens, "for SEM/TEM specimen cross section preparation" (1999 product page)[^fei-fib200xp-1999] |
+| FEI | FIB 800 | — | accepted "packaged parts or 8-inch wafers", could "section submicron features" (1999 product page)[^fei-fib800-1999] |
+| FEI | Strata, Quanta, Nova, Helios (DualBeam) | — | by 2006[^fei-dualbeam-2006] |
 | Hitachi | S-4800 | — | field-emission SEM, "compliments the field proven performance and reliability of the S-4700 and S-5200"[^hitachi-s4800] |
-| SELA | MC series | 1998 | automated microcleaving; the MC200 won a *Semiconductor International* Editors' Choice award[^sela-2001] |
+| SELA | MC series | — | automated microcleaving; the MC200 won a *Semiconductor International* Editors' Choice award in 1998[^sela-2001] |
 | SELA | TEMstation | — | for TEM pre-thinning[^sela-2001] |
-| Tencor | P-10, P-11, P-22, P-30 SMIF, Alpha-Step 500 | 1997 | stylus profilers[^tencor-profiling-1997] |
+| Tencor | P-10, P-11, P-22, P-30 SMIF, Alpha-Step 500 | — | stylus profilers[^tencor-profiling-1997] |
 | Tencor | HRP-200 | 1996 | combined "a Tencor stylus profiler with the high-resolution analysis and imaging capabilities of an Atomic Force Microscope (AFM)"[^tencor-hrp200-1996] |
-| KLA-Tencor | P-15 | 2002 | could "provide CMP dishing and erosion data"[^kla-p15] |
-| KLA-Tencor | HRP-240/340 | 2002 | added a "Dipping Mode" for "high aspect ratio depth monitoring of device size features"[^kla-hrp] |
-| Veeco | Dektak Series V, Dektak 3 ST | 2000 | monitored "etch and deposition uniformity thickness" on 200 mm and 300 mm wafers[^veeco-stylus-2000] |
-| Digital Instruments | Dimension 3100, 5000, 9000 | 2000 | the 3100 analysed "samples up to 200mm in diameter"; the 9000 was "The first fully automated AFM designed exclusively for in-fab semiconductor metrology"[^veeco-afm-2000] |
+| KLA-Tencor | P-15 | — | could "provide CMP dishing and erosion data" (2002 product page)[^kla-p15] |
+| KLA-Tencor | HRP-240/340 | — | added a "Dipping Mode" for "high aspect ratio depth monitoring of device size features" (2002 product page)[^kla-hrp] |
+| Veeco | Dektak Series V, Dektak 3 ST | — | monitored "etch and deposition uniformity thickness" on 200 mm and 300 mm wafers (2000 product page)[^veeco-stylus-2000] |
+| Digital Instruments | Dimension 3100, 5000, 9000 | — | the 3100 analysed "samples up to 200mm in diameter"; the 9000 was "The first fully automated AFM designed exclusively for in-fab semiconductor metrology" (2000 product page)[^veeco-afm-2000] |
 :::
 
 ## At SkyWater

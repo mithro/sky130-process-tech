@@ -195,15 +195,15 @@ Surfscan AIT".[^tencor-defectdata-1997]
 | Tencor | Surfscan 6220 | — | "Designed for detecting particles, pits and scratches on bare wafers, wafers deposited with smooth blanket films, and for measuring haze on a broad range of surfaces"[^tencor-unpatterned-1997] |
 | Tencor | Surfscan 6420 | — | for metal films and rough surfaces, "Also ideal for detecting defects on non-uniform films, a critical requirement for CMP applications"[^tencor-unpatterned-1997] |
 | Tencor | Surfscan SP1 | 1996 | for 200 mm and 300 mm wafers at 150 and 100 wafers per hour[^tencor-sp1-1996][^tencor-sp1-wp] |
-| KLA-Tencor | Surfscan SP1 DLS | 2002 | "Continues the industry-leading SP1 TBI platform"; backside module for "fully automated, non-destructive inspection of the backsides of patterned (product) wafers"[^kla-sp1dls-2002] |
+| KLA-Tencor | Surfscan SP1 DLS | — | "Continues the industry-leading SP1 TBI platform" (2002 capture); backside module for "fully automated, non-destructive inspection of the backsides of patterned (product) wafers"[^kla-sp1dls-2002] |
 | Tencor | Surfscan AIT | 1995 | developed with SEMATECH as an "in-line defect inspection system for 0.25-micron technology"[^tencor-ait-1995] |
 | Tencor | Surfscan 7700 | — | detected contaminants "below 0.20 micron" on "complex process levels such as nitride, oxide and TEOS films"[^tencor-patterned-1997] |
-| KLA-Tencor | AIT XP | 2002 | extending "the AIT II and AIT III"[^kla-aitxp] |
+| KLA-Tencor | AIT XP | — | extending "the AIT II and AIT III" (2002 capture)[^kla-aitxp] |
 | KLA | 2020 | — | used in Radin's 1988 defect-reduction work[^radin-1988] |
 | KLA-Tencor | 2350, 2351 | — | for "critical-defect detection at design rules of 0.13 µm and smaller"[^kla-2351] |
 | Tencor | CRS (CRS-1010) | — | laser confocal review station; the ADC module first offered on the CRS-1010[^tencor-crs-1997][^tencor-adc-1996] |
-| KLA-Tencor | CRS-3000 | 2002 | optical review[^kla-defect-2002] |
-| KLA-Tencor | eV300 | 2002 | e-beam review[^kla-ev300] |
+| KLA-Tencor | CRS-3000 | — | optical review, listed together with the eV300 in 2002[^kla-defect-2002][^kla-ev300] |
+| KLA-Tencor | eV300 | — | e-beam review, listed together with the CRS-3000 in 2002[^kla-defect-2002][^kla-ev300] |
 | Orbot Instruments | — | — | patterned-wafer inspection with a two-phase laser and high-resolution scheme and automatic defect classification[^pat-twophase-orbot][^sherman-1993] |
 :::
 

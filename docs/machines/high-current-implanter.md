@@ -143,12 +143,11 @@ al. present Varian's VIISta 80 for "Large Angle Tilt Implants (LATI,
 | Eaton | NV-GSD | 1990 | ">600 units shipped in total"[^axcelis-history] |
 | Eaton | NV-GSD/200 | 1993 | "designed for low energy performance, quick species change and high beam utilization"[^axcelis-history] |
 | Eaton | GSD/200E2 | 1996 | —[^axcelis-history] |
-| Axcelis | HC3 | 2001 | for 300 mm[^axcelis-history] |
+| Axcelis | HC3 (300 mm) | 2001 | —[^axcelis-history] |
 | Axcelis | GSD Ovation (GSD/E2) | — | "For general high current applications"[^axcelis-gsd-page] |
-| Applied Materials | xR80, xR LEAP | 1999 | "Nearly 100 Applied Materials implant systems using the xR80(TM) and xR LEAP … technology are currently in use"[^amat-quantum-1999] |
+| Applied Materials | xR80, xR LEAP | — | "Nearly 100 Applied Materials implant systems using the xR80(TM) and xR LEAP … technology are currently in use" (1999)[^amat-quantum-1999] |
 | Applied Materials | Quantum LEAP, Quantum 80, Quantum 120 | 1999 | announced in July[^amat-quantum-1999] |
-| Varian | VIISion 80 | 1996 | 80 keV, "autotune and implant high doses with high beam currents"[^lundquist-1996] |
-| Varian | VIISion 200 | 1996 | 200 keV, "autotune and implant high doses with high beam currents"[^lundquist-1996] |
+| Varian | VIISion 80, VIISion 200 | — | 80 keV and 200 keV machines presented at IIT 1996, "autotune and implant high doses with high beam currents"[^lundquist-1996] |
 | Varian | VIISion 80 PLUS | — | studied by Todorov et al. as a function of, among other things, its "disc tilt angle"; we read the disc as a batch end station[^todorov-1998] |
 | Varian | VIISta 80 | — | single-wafer high-current implanter[^mezack-2000] |
 :::
