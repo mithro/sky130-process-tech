@@ -10,17 +10,32 @@
 | **Previous step** | {ref}`LDASTI <step-072>` |
 | **Next step** | {ref}`LDASTIS <step-074>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** a tilted boron beam through the `LDNTM` windows places p-type
+  pockets around the SONOS memory transistors' tips.
+* **Why:** the lightly doped tip has a longer depletion tail, so the cell
+  needs a halo more than the logic NMOS does.
+* **Public numbers:** none published for the halo; the two cell variants'
+  gate lengths span 0.15–0.22 µm.[^pdk-07]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** the halo's species, energy, dose, tilt and rotations
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `LDBHI` is the boron {term}`halo` implant of the {term}`SONOS` memory
-transistors — the counterpart of {ref}`BHI <step-066>` made through the
+transistors. It is the counterpart of {ref}`BHI <step-066>` made through the
 {ref}`LDNTM <step-071>` resist after the lightly doped arsenic tip of
-{ref}`LDASTI <step-072>`. A tilted boron beam places p-type {term}`pockets <pocket>`
-around the memory transistor's tips, on the channel side of each
-junction, self-aligned to the control-gate line. In this reference a
-halo is described only with the `NTM` and `LDNTM` tips; the 5 V tip
-({ref}`HVASTI <step-069>`) is described without one. The resist is removed at
-{ref}`LDASTIS <step-074>` and every tip and halo of the module is
+{ref}`LDASTI <step-072>`. A tilted boron beam places p-type
+{term}`pockets <pocket>` around the memory transistor's tips, on the channel
+side of each junction, self-aligned to the control-gate line. In this
+reference a halo is described only with the `NTM` and `LDNTM` tips; the 5 V
+tip ({ref}`HVASTI <step-069>`) is described without one. The resist is
+removed at {ref}`LDASTIS <step-074>` and every tip and halo of the module is
 annealed at {ref}`TIPRTAD <step-075>`.
 
 :::{figure} /_static/figures/sd-073-ldbhi.svg
@@ -32,19 +47,27 @@ At LDBHI a boron halo goes through the LDNTM windows into the SONOS memory trans
 :::
 
 Species beyond "B", energy, dose, tilt and rotation are not public.
-What distinguishes this halo from the logic halo is its host: a
-transistor whose channel was set by its own {term}`punch-through stopper <punch-through>`
-({ref}`PTSI <step-037>`) and depletion implant ({ref}`DEPI <step-038>`),
-whose gate is poly over an {term}`ONO` stack, and whose tip is lightly doped
-and, we infer, non-amorphising ({ref}`LDASTI <step-072>`).
+What distinguishes this halo from the logic halo is its host, a
+transistor:
+
+* whose channel was set by its own {term}`punch-through stopper <punch-through>`
+  ({ref}`PTSI <step-037>`) and depletion implant ({ref}`DEPI <step-038>`);
+* whose gate is poly over an {term}`ONO` stack;
+* whose tip is lightly doped and, we infer, non-amorphising
+  ({ref}`LDASTI <step-072>`).
 
 ## Step category
 
 `LDBHI` is an {ref}`Ion implantation <category-implant>` step of the
-*channel-engineering* class — boron at tens of keV and 10¹²–10¹³ cm⁻²
-(typical)[^txt-01] at a tilt — placed by the gate geometry rather than
-by a mask edge. It is the second of the two halo implants in the flow
-and the last implant of the tip module.
+*channel-engineering* class, placed by the gate geometry rather than by
+a mask edge.
+
+**Specific to this step:**
+
+* It is boron at tens of keV and 10¹²–10¹³ cm⁻² (typical)[^txt-01] at a
+  tilt.
+* It is the second of the two halo implants in the flow and the last
+  implant of the tip module.
 
 ## Why this step exists
 
@@ -56,18 +79,20 @@ reasons:
 * **Its tip is lightly doped.** A graded, lightly doped {term}`extension`
   ({ref}`LDASTI <step-072>`) has a longer depletion tail into the
   channel than an abrupt logic tip, so the drain's field reaches
-  further under the gate; without a pocket the cell's threshold would
+  further under the gate. Without a pocket the cell's threshold would
   roll off steeply across the 0.15–0.22 µm gate lengths of the two cell
   variants.[^pdk-07]
 * **Its surface channel must stay lightly doped.** Cypress's account
   of scaling the cell to nodes below this one stresses "reduction of dopants in the
   surface of the channel" and "use of deeper channel implants with
   heavier species such as Indium … so as to keep surface dopant
-  concentrations low",[^cyp-25] and the cell's depletion implant
-  ({ref}`DEPI <step-038>`) makes the surface lightly doped by design.
-  A halo is the way to add short-channel control *only at the ends* of
-  the channel while leaving the middle alone — the same logic that
-  Taur, Wann and Frank formalised as the super-halo.[^taur-1998]
+  concentrations low".[^cyp-25]
+
+  The cell's depletion implant ({ref}`DEPI <step-038>`) makes the surface
+  lightly doped by design. A halo is the way to add short-channel control
+  *only at the ends* of the channel while leaving the middle alone — the
+  same logic that Taur, Wann and Frank formalised as the
+  super-halo.[^taur-1998]
 
 A halo in a non-volatile cell also sets its disturb margins: a
 programmed cell's threshold and an erased cell's leakage both depend on
@@ -84,8 +109,8 @@ the shorter cell.
 
 ## How it is typically performed
 
-An industry-generic halo implant for a lightly doped, non-amorphised
-extension, 200 mm, 130 nm era (SKY130's values are not public):
+*An industry-generic halo implant for a lightly doped, non-amorphised
+extension, 200 mm, 130 nm era (SKY130's values are not public):*
 
 * **Species and source.** ¹¹B⁺ from BF₃, or BF₂⁺ for shallower
   placement;[^wiki-bf3][^txt-01] indium is the heavy alternative for a
@@ -93,11 +118,13 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   the cell's channel at advanced nodes,[^cyp-25] but SkyWater lists no
   indium source.[^skw-01]
 * **Energy and dose.** Tens of keV and 10¹²–10¹³ cm⁻²
-  (typical);[^txt-01] an AMD multi-threshold patent of the era
-  gives "approximately 10-20 KeV for boron or 45-90 KeV for BF₂ at a
-  concentration of about 1.0 to 2.5×10¹³ ions/cm²" for a zero-tilt laterally
-  doped channel implant made with the gate pillars as a self-aligned
-  mask,[^pat-vt-amd] and a halo sits in the same range (inference).
+  (typical).[^txt-01]
+
+  An AMD multi-threshold patent of the era gives "approximately 10-20 KeV
+  for boron or 45-90 KeV for BF₂ at a concentration of about 1.0 to 2.5×10¹³
+  ions/cm²" for a zero-tilt laterally doped channel implant made with the
+  gate pillars as a self-aligned mask.[^pat-vt-amd] A halo sits in the same
+  range (inference).
 * **Tilt and rotation.** Large tilt with two or four rotations to make
   the pocket symmetric[^pat-quad-tsmc] (20–45° is typical[^txt-04]); in
   the dense memory array the neighbouring control-gate lines {term}`shadow <shadowing>` a
@@ -107,11 +134,13 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   the surface (inference from an LDD-class dose), the boron enters
   crystalline silicon and is more prone to channelling than the logic
   halo; the twist, the {term}`screen oxide` and the tilt itself are the
-  countermeasures.[^wiki-implant] Its damage is sub-amorphising point
-  defects, the "+1" interstitials that drive transient enhanced
-  diffusion of the boron itself during the anneal,[^eaglesham-1994]
-  which is why a fast, hot {ref}`TIPRTAD <step-075>` matters as much
-  here as for the logic halo.[^stolk-1997][^agarwal-1999]
+  countermeasures.[^wiki-implant]
+
+  Its damage is sub-amorphising point defects, the "+1" interstitials that
+  drive transient enhanced diffusion of the boron itself during the
+  anneal,[^eaglesham-1994] which is why a fast, hot
+  {ref}`TIPRTAD <step-075>` matters as much here as for the logic
+  halo.[^stolk-1997][^agarwal-1999]
 * **Charge control and cooling.** Electron shower and electrostatic
   chuck ("ESC chuck, E shower" on SkyWater's medium-current
   tool);[^skw-01] platen cooling is industry practice.
@@ -129,15 +158,19 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
-  8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
-  0-60 deg tilt".[^skw-01] Boron and BF₂, the halo dose window and a
-  tilt range to 60°. Strength: **strong** for the tool; **inference**
-  for the assignment to `LDBHI`, as for {ref}`BHI <step-066>`.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "Axcelis 8250 Mid current B11, BF2, As, ESC
+    chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* **strong** for the tool.
+  - *Runs this step:* **inference** for the assignment to `LDBHI`, as for
+    {ref}`BHI <step-066>`.
+
+  Boron and BF₂, the halo dose window and a tilt range to 60°.
 * **Axcelis GSD implanters (high-current/high-energy and
-  high-dose)**[^skw-01] — batch tools listed with "tilt/twist" capability;
-  possible, less natural for a low-dose halo. Strength: strong for
-  existence; weak for assignment.
+  high-dose)**[^skw-01] — batch tools listed with "tilt/twist"
+  capability; possible, less natural for a low-dose halo.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak for assignment.
 
 ## Resources required
 
@@ -156,8 +189,9 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
   surrounds); mask: {ref}`LDNTM <step-071>`.
 * Next: {ref}`LDASTIS <step-074>` (strip), then
   {ref}`TIPRTAD <step-075>` (activation of all tips and halos).
-* The logic halo: {ref}`BHI <step-066>`; the memory transistor's other
-  channel implants: {ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`.
+* Same module: the logic halo, {ref}`BHI <step-066>`.
+* The memory transistor's other channel implants: {ref}`PTSI <step-037>`,
+  {ref}`DEPI <step-038>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -240,16 +274,17 @@ extension, 200 mm, 130 nm era (SKY130's values are not public):
 
 ## Open questions
 
-* The halo species (B⁺ or BF₂⁺), energy, dose, tilt and rotations are
-  not public, as is whether they differ from the logic halo's.
-* Whether the lightly doped tip leaves the surface crystalline, and
-  hence how much channelling and TED this halo sees, is an inference
-  from LDD-typical doses.
-* Whether the select transistor of the {term}`2-T cell` receives this halo is
-  not public.
-* How the halo, the punch-through stopper and the depletion implant
-  combine to set the erased and programmed thresholds is not
-  described publicly beyond the PDK's threshold targets.[^pdk-07]
+* **Species, energy, dose and tilt.** The halo species (B⁺ or BF₂⁺), energy,
+  dose, tilt and rotations are not public, as is whether they differ from
+  the logic halo's.
+* **Crystalline surface.** Whether the lightly doped tip leaves the surface
+  crystalline, and hence how much channelling and TED this halo sees, is an
+  inference from LDD-typical doses.
+* **Select transistor.** Whether the select transistor of the
+  {term}`2-T cell` receives this halo is not public.
+* **Threshold targets.** How the halo, the punch-through stopper and the
+  depletion implant combine to set the erased and programmed thresholds is
+  not described publicly beyond the PDK's threshold targets.[^pdk-07]
 
 <!-- footnotes -->
 

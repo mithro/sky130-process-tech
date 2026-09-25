@@ -563,3 +563,45 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   the arsenic pieces; the Dose pieces — "So, unlike `ASTI`, …" had no marker of its own in the base);
   the category bullets; glance and labels.
 * **Caps**: para > 100 1 → 0; item > 60 2 → 0; sentence > 45 4 → 0.
+
+### 073 LDBHI — done
+
+* **Lead.** First sentence (30 w) split at its dash: "`LDBHI` is the boron halo implant of the SONOS
+  memory transistors." (13 w) / "It is the counterpart of `BHI` made through …" ("It is" added). Lead 95
+  words.
+* **R-LIST (after the figure).** The 46-word "What distinguishes this halo … is its host: a transistor
+  whose channel …, whose gate …, and whose tip is lightly doped and, we infer, non-amorphising (…)."
+  → lead-in "… is its host, a transistor:" and three plain "whose …" bullets, every word kept except the
+  joining "and"; "we infer" stays in its bullet. No H3 (the passage is 60 words).
+* **R-CATEGORY.** The classification sentence (37 w) split at its dash pair: "`LDBHI` is an Ion
+  implantation step of the *channel-engineering* class, placed by the gate geometry rather than by a
+  mask edge." (21 w); the dash material becomes "It is boron at tens of keV and 10¹²–10¹³ cm⁻²
+  (typical)[^txt-01] at a tilt." ("It is" added); with "It is the second of the two halo implants …" →
+  `**Specific to this step:**`, two bullets.
+* **R-PARA step 4 (Why items).** "Its tip is lightly doped" (55-word sentence): split at the semicolon
+  ("Without a pocket …[^pdk-07]"; the marker supported the gate lengths in that clause). "Its surface
+  channel must stay lightly doped" (97 w): the Cypress sentence split before ", and the cell's depletion
+  implant"; continuation from "The cell's depletion implant …". The item's lead stays one 46-word
+  sentence (a two-quotation statement with no seam outside the quotations).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4 (How items).** "Energy and dose" as on 066 (the semicolon; "A halo sits in the same range
+  (inference)."). "Channelling" (81 w): continuation from "Its damage is sub-amorphising …"; its first
+  sentence (45 w, a semicolon before a marker that covered both clauses) kept whole.
+* **R-TOOLS.** 8250: *SkyWater says:*, grades, the fragment "Boron and BF₂, the halo dose window and a
+  tilt range to 60°." as the continuation (our gloss). GSD: pilot form (the head quotes "tilt/twist"
+  inside our gloss).
+* **R-RELATED.** "The logic halo: BHI; the memory transistor's other channel implants: PTSI, DEPI" names
+  two relationships, so it becomes two bullets: "Same module: the logic halo, `BHI`." and "The memory
+  transistor's other channel implants: …" (unlabelled: PTSI/DEPI are in another module).
+* **R-OPENQ.** Labels "Species, energy, dose and tilt", "Crystalline surface", "Select transistor",
+  "Threshold targets"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and the first Why bullet; Public numbers "none published for the
+  halo" plus the cell variants' 0.15–0.22 µm gate lengths `[^pdk-07]`; tool line; Not public from Open
+  questions 1.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07`, `skw-01`, numbers 0.15–0.22,
+  8250, hedges "inference", "not public" — the glance box. Declared `--allow-added markers,numbers,hedges`:
+  clean.
+* **Marker coverage.** 12 flags, all read: split pieces whose base marker belonged to the other clause
+  (the depletion-tail physics / the gate lengths; Cypress / the depletion implant; txt-01 / the AMD
+  patent); the host list (no markers in the base); glance and labels.
+* **Caps**: para > 100 0 → 0; item > 60 3 → 0; sentence > 45 4 → 1 (the Cypress lead, above).
