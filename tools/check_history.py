@@ -20,7 +20,7 @@ the history section is kept separate from the SKY130 reference.
 claims. Each claim names its page, an ``anchor`` (a phrase that must appear
 on that page), the footnote labels that carry it (each must be cited on that
 page), and its sources: evidence record ids in ``data/history/*.yaml`` or
-``data/filings.yaml``, each
+``data/{filings,patents,papers}.yaml``, each
 with the organisation it comes from (``origin``). The rules:
 
 * every source id exists in an evidence file;
@@ -70,11 +70,14 @@ def evidence_ids() -> set[str]:
             for rec in doc.get(key, []) or []:
                 if isinstance(rec, dict) and rec.get("id"):
                     ids.add(str(rec["id"]))
-    filings = ROOT / "data" / "filings.yaml"
-    if filings.exists():
-        # the site's verified filings dataset (tools/check_filings.py) may
-        # also be cited as evidence for a history claim
-        for rec in (yaml.safe_load(filings.read_text(encoding="utf-8")) or {}).get("filings", []) or []:
+    # the site's verified datasets (tools/check_filings.py, check_patents.py,
+    # check_papers.py) may also be cited as evidence for a history claim
+    for name, key in (("filings.yaml", "filings"), ("patents.yaml", "families"), ("papers.yaml", "papers")):
+        path = ROOT / "data" / name
+        if not path.exists():
+            continue
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for rec in (doc if isinstance(doc, list) else doc.get(key, []) or []):
             if isinstance(rec, dict) and rec.get("id"):
                 ids.add(str(rec["id"]))
     return ids
