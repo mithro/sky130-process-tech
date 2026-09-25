@@ -146,3 +146,38 @@ hedges and ids); `git diff bcccad02 -- docs/steps`: 200 lines added, 0 deleted.
   tops. It would change every existing conformal film, so it was not done.
 * The resistor's sidewall re-oxidation (S5 ruling b, `beside:`) is still not drawn; S6's resistor
   spacers stand directly on the resistor sidewall.
+
+## Review round (tmp review rd-figures-s6: approve with fixes)
+
+All done; one commit per group.
+
+* **H1 (generator):** ion arrowheads pointed back up the beam (model-space direction used in
+  screen space). `ion_arrow()` builds shaft and head in screen space, the shaft ends at the head's
+  base; selftest at 0°, 7°, 40°. Every figure with a beam in every series regenerated.
+* **H2 (generator):** an overlay's dot goes where the overlay is the top-most paint (so "Halo"
+  points at the halo, not the tip); hidden overlays (P-well) leave the panel state before
+  anchoring. New SVG lint: the top-most material painted at a dot must be the one it names.
+* **H3 (generator):** a riser that climbs through a beam gets a lane (arrows within ¾ pitch left
+  out); lint "rises inside the ion beam". Over risers keep 12 u from walls (088's N⁺ riser).
+  086 is now on x 194–268 (zoom 3.6) to stay under 800 u with the footer.
+* **M1:** close-ups print "Close-up of `close_up_name`, enlarged about N×." on the figure.
+* **M2:** a beam label rises in the gap between two arrow tails; lint for a dot on a tail.
+* **M3:** `highlight-clearance` 10 u above a highlight (6 u below, inside the film it traces),
+  `over-gap` 14 u, over-runs 11 u apart (lint: two runs < 10 u apart for > 40 u), a riser that
+  crosses a highlight breaks it. A dot-near-highlight rule was tried and dropped: a film's own dot
+  always sits within 10 u of the trace of its own top, in every series.
+* **M4:** 078 keeps npc.4 and the page's contact-head reading; the resistor-body claim is gone.
+* **M5:** 082 and 083 say the slice has no PMOS (coordinator: no PMOS added).
+* **M6:** 069 on x 0–97: the trench edge and the thin resist edge read; caption and alt updated.
+* **Low:** every hidden label declared in its caption (L1); selftests for the rule-16 clip fix,
+  `_zoom_panel` and the `close_up` range check (L2); legend "Channel or halo implant" (L3); 077
+  over-etch hedged (L4); one flat resist coat levels all its blocks (L5; S1–S5 multi-block
+  resists change accordingly); 084 highlight stops short of the stack walls (L6).
+* Rulings adopted: pattern-only halo, flat spacers, field-oxide height kept, stringer etch as
+  declared.
+
+QA: all 25 re-shot in light and dark at desktop and 400 px after the last generator change
+(`tmp/shots/r4/`), every tile opened; a sample of changed S1–S5 figures looked at in light;
+built pages 066, 069, 086 at 1280 and 400 px. Gates: all checkers, generator `--check`s,
+`--selftest`, `palette`, `-W` build pass; `check_preserved` no LOST; 0 lines deleted in
+`docs/steps`.
