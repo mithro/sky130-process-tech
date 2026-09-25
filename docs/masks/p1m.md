@@ -2,18 +2,11 @@
 # P1M — Poly 1
 
 The poly mask is the {term}`reticle` that draws every polysilicon shape
-of SKY130 in one exposure: on the {ref}`P1M <step-061>` page's reading,
+of SKY130 in one exposure. On the {ref}`P1M <step-061>` page's reading,
 the resist printed through it at step 61 stays wherever poly is to
 remain — every transistor gate, poly interconnect, poly resistor body and
 {term}`SONOS` gate — and the {ref}`P1ME <step-062>` etch removes the gate
-stack everywhere else. Because the etched poly width is the transistor
-gate length, this is the mask whose {term}`CD` matters most to device
-behaviour, and the step pages read it as a critical KrF level. This page
-gathers what public sources say about the mask itself — its PDK entry
-and layers, the plates the process-steps sheet records for the MPW runs,
-what the public renders of those runs show, the lithography it needs and
-the rules that constrain it. How the step is performed is on the step
-page; every mask is indexed on the {ref}`masks index <masks-index>`.
+stack everywhere else.
 
 | | P1M — Poly 1 |
 |---|---|
@@ -30,38 +23,65 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-p1m-steps>` |
 
+:::{seealso}
+How the step is performed is on the step
+page; every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+Because the etched poly width is the transistor
+gate length, this is the mask whose {term}`CD` matters most to device
+behaviour, and the step pages read it as a critical KrF level.
 
 The periphery rules give the function of the `poly` layer as "Defines
 FET gates, interconnects and resistors".[^pdk-periph] The mask therefore
-carries three kinds of feature with different demands: gate lines,
-whose width is the channel length and whose minimum is 0.150 µm
-(poly.1a); poly wiring on the field oxide; and poly resistor bodies, at
-least 0.330 µm wide (poly.3).[^pdk-periph] [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
+carries three kinds of feature with different demands:[^pdk-periph]
+
+* gate lines,
+  whose width is the channel length and whose minimum is 0.150 µm
+  (poly.1a)
+* poly wiring on the field oxide
+* poly resistor bodies, at
+  least 0.330 µm wide (poly.3)
+
+[*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives 0.33 and 0.48 as the "Poly resistor width and spacing to reduce CD
 variation (um)" (`POLYRCD`, `POLYRSPC`), the same numbers as rules poly.3
 and poly.9, so the PDK ties the resistor rules to the CD variation of
 this level.[^pdk-03][^pdk-periph]
 
 The PDK's mask generation table, Table F2b, marks the `P1M` column `C`
-("CREATED") in 40 of its 80 device rows: the n+ and p+ poly resistors,
-the 17 rows of its "32 A CMOS" group (the 1.8 V transistors, core
-devices and varactors), the four SONOS rows, the 13 rows of its "110A
-CMOS" group (the 5/10.5 V, native, flash pass-gate, 16 V and 20 V
-devices) and the four ESD transistor rows.[^pdk-06] The rows it leaves
+("CREATED") in 40 of its 80 device rows:[^pdk-06]
+
+* the n+ and p+ poly resistors
+* the 17 rows of its "32 A CMOS" group (the 1.8 V transistors, core
+  devices and varactors)
+* the four SONOS rows
+* the 13 rows of its "110A
+  CMOS" group (the 5/10.5 V, native, flash pass-gate, 16 V and 20 V
+  devices)
+* the four ESD transistor rows
+
+The rows the table leaves
 unmarked are the diffusion, well, local-interconnect and metal-fuse
 resistors, the capacitors, inductors, diodes and bipolar
 transistors[^pdk-06] — devices without a poly gate or poly body (our
 reading of the table).
 
-Two things the mask does not define are worth separating from it. The
-gate stack it patterns — gate oxides, poly, nitride cap and oxide cap —
-is laid down by earlier steps ({ref}`LVGOX <step-047>`,
-{ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`,
-{ref}`POC <step-059>`), and the poly doping that distinguishes gates
-from resistor bodies comes from the resistor masks before it
-({ref}`RPM <step-049>`, {ref}`RRPM <step-052>`,
-{ref}`URPM <step-055>`), on the step pages' readings. On the same
+Two things the mask does not define are worth separating from it:
+
+* the
+  gate stack it patterns — gate oxides, poly, nitride cap and oxide cap —
+  is laid down by earlier steps ({ref}`LVGOX <step-047>`,
+  {ref}`SAGD <step-048>`, {ref}`GATENIT <step-058>`,
+  {ref}`POC <step-059>`), on the step pages' readings
+* the poly doping that distinguishes gates
+  from resistor bodies comes from the resistor masks before it
+  ({ref}`RPM <step-049>`, {ref}`RRPM <step-052>`,
+  {ref}`URPM <step-055>`), on the step pages' readings
+
+On the same
 readings, the tip and halo implants take the etched poly, and the
 source/drain implants the spacers formed on it, as their edge, not this
 resist.
@@ -75,12 +95,19 @@ at 28:0 ("Poly 1 mask"), and `mask add` 33:43, `mask drop` 33:42 and
 `waffle drop` 33:24 on a different layer number.[^pdk-06] The drawn
 layer is `poly` at 66:20, with `gate` (66:9) and `resistor` (66:13)
 purposes among others; the PDK does not publish how these combine into
-the plate.[^pdk-06] Two rules show what a designer may place on the mask
-layers. Rule x.9: "Shapes on maskAdd or maskDrop layers (“serifs”) are
-allowed in core only", and rule x.15a, which confines mask and
-waffle-drop layers to test modules, seal ring and frame, makes one
-exception: "FOM/P1M/Metal waffle drop are allowed inside the
-die" (flag P, periphery only).[^pdk-periph] The {ref}`FOM <step-004>`
+the plate.[^pdk-06]
+
+Two rules show what a designer may place on the mask
+layers:[^pdk-periph]
+
+* Rule x.9: "Shapes on maskAdd or maskDrop layers (“serifs”) are
+  allowed in core only"
+* rule x.15a, which confines mask and
+  waffle-drop layers to test modules, seal ring and frame, makes one
+  exception: "FOM/P1M/Metal waffle drop are allowed inside the
+  die" (flag P, periphery only)
+
+The {ref}`FOM <step-004>`
 page reads the "waffles" as dummy fill for {term}`pattern density`; the PDK does not say whether
 a waffle-drop shape places fill or keeps it out, and the purpose name
 does not settle it.
@@ -92,12 +119,14 @@ names P1M among the layers it applies to. Rule x.1a reads "p1m.md (OPC),
 DECA and AMKOR layers (pi1.dg, pmm.dg, rdl.dg, pi2.dg, ubm.dg, bump.dg)
 and mask data for p1m, met1, via, met2 must be on a grid of mm", with the
 value 0.001 (unit printed as "mm"), against 0.005 for "all layers except
-those mentioned in 1a" (x.1b).[^pdk-periph] We read "(OPC)" and the
+those mentioned in 1a" (x.1b).[^pdk-periph]
+
+We read "(OPC)" and the
 finer grid as a sign that the poly mask data are proximity-corrected
 (inference); the PDK does not expand "md" or say what the correction
 is. [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) sets a
 "Min process bias 3s tolerance for poly" of 0.02 (`PHP1TOL`), against a
-general "Min process bias 3s tolerance" of 0.032 (`PHTOL`),[^pdk-03] so
+general "Min process bias 3s tolerance" of 0.032 (`PHTOL`).[^pdk-03] So
 the PDK assumes tighter bias control for poly than for other layers; it
 does not say how the drawn-to-printed bias is set.
 
@@ -107,8 +136,10 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `P1M` the site renders layer 66:20 (`poly`)
 together with 28:28, which it lists as a fill layer, with no Boolean
-expression and no note, on all eight runs; its mask record gives the
-mask-level layer 28:0.[^mask-renders] Layer 28:28 is not in
+expression and no note, on all eight runs.[^mask-renders] Its mask record gives the
+mask-level layer 28:0.[^mask-renders]
+
+Layer 28:28 is not in
 `gds_layers.csv`,[^pdk-06] so the site's
 choice of it is one public reading of the tape-out files, not a PDK
 definition, and like the site's other layer choices it is not
@@ -159,50 +190,64 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`P1M <step-061>` page puts the 0.150 µm
+### Exposure class
+
+The {ref}`P1M <step-061>` page puts the 0.150 µm
 line at {math}`k_1 \approx 0.36–0.42` on a KrF lens of NA 0.6–0.7 and at
-{math}`k_1 \approx 0.25–0.29` at the i-line, and infers a 248 nm level;
-the {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there.
+{math}`k_1 \approx 0.25–0.29` at the i-line, and infers a 248 nm level.
+The {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there.
 ASML's PAS 5500/750E, introduced in 2000, "achieves 130 nm resolution
 while using standard 248 nm light" with overlay "less than
 30 nm".[^asml-750e] SkyWater lists "ASML DUV stepper" and "ASML DUV
 scanner" but assigns no layer to them.[^skw-01]
 
-**Mask errors.** At this {math}`k_1` a CD error on the plate prints
+### Mask errors
+
+At this {math}`k_1` a CD error on the plate prints
 larger than it is. Wong et al. found that the mask error factor "is
 unity for large features, but increases rapidly when the critical
 dimension (CD) is less than 0.5 (lambda) /NA for line-space patterns";
 the threshold at 248 nm and NA 0.7 is about 177 nm (our arithmetic),
 above the 150 nm gate. They also found dense lines more sensitive than
 isolated ones and light-field lines less sensitive than dark-field
-spaces.[^wong-1998] Kuijten, Duray and der Kinderen, on an ASML
+spaces.[^wong-1998]
+
+Kuijten, Duray and der Kinderen, on an ASML
 PAS 5500/300 at 0.25 µm, separated a reticle CD error component of
 10 nm (3σ), from 32 nm (3σ) mask CD uniformity and a reticle sensitivity
-factor of 1.3, from an exposure-tool component of 8 nm,[^kuijten-1998]
-and Arthur and Martin followed the mask error factor through CD budgets
+factor of 1.3, from an exposure-tool component of 8 nm.[^kuijten-1998]
+Arthur and Martin followed the mask error factor through CD budgets
 into reticle procurement specifications.[^arthur-1999] ITRS 2001's
 optical mask requirements, which are "for critical layers", ask in the
 130 nm year for a mask CD uniformity of 7.4 nm (3σ) on isolated MPU gate
-lines on a binary mask, at 4× magnification.[^itrs-03] How tightly
+lines on a binary mask, at 4× magnification.[^itrs-03]
+
+How tightly
 SkyWater specifies the `P1M` plate is not public; the PDK's 0.02
 `PHP1TOL` and Table 7's "P1M additional CD control" of 0.011
 (`P1MCDcontrol`) are the only published poly CD figures, and neither
 says what it is measured on (plate or wafer).[^pdk-03]
 
-**Proximity and line ends.** Gate levels suffer line-end shortening,
+### Proximity and line ends
+
+Gate levels suffer line-end shortening,
 which "reduces the wafer process latitude and in some cases even
 eliminates the level-to-level overlay margin"; Garofalo et al. reduced
 it on ASIC gate levels by mask compensation and modified
 illumination.[^garofalo-1995] At the 130 nm node Zheng et al. studied
 how well one OPC model for the gate line width holds across the field
-and across several scanners.[^zheng-2003] Rules-based
+and across several scanners.[^zheng-2003]
+
+Rules-based
 OPC,[^otto-1994] the phase-shifting mask[^levenson-1982] and its
 attenuated form[^lin-1993] are the techniques the step page names as
 likely but unconfirmed for this level; the endcap rule poly.8, 0.130
 beyond diffusion,[^pdk-periph] is the margin that line-end shortening
 would consume (our reading).
 
-**Resist and tone.** The step page reads a chemically amplified positive
+### Resist and tone
+
+The step page reads a chemically amplified positive
 KrF resist over an anti-reflective scheme, and a clear-field plate as
 the consequence of drawing poly where it remains; neither the resist nor
 the tone is published. The consumables are on the
@@ -210,7 +255,20 @@ the tone is published. The consumables are on the
 the coat and develop on the
 {ref}`coat/develop track <machine-coat-develop-track>` page.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
+### Overlay and alignment
+
+The step page infers that `P1M` aligns to the STI marks of
+{ref}`FOM <step-004>`. The placement margins against active are
+0.130 beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
+(poly.7), with poly on field kept 0.075 µm from diffusion
+(poly.4).[^pdk-periph] On the step pages' readings the tip and halo
+implants and the spacers that follow take the etched gate as their
+reference. Starikov analysed the accuracy of the overlay
+measurements on which such margins rely.[^starikov-1992]
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
 transferred by {ref}`P1ME <step-062>` through the oxide cap, the nitride
 cap and the poly, stopping on the gate oxides, on the
 {ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
@@ -218,15 +276,6 @@ class, and the resist is stripped within that step. Orshansky, Milor and
 Hu characterised spatial intrafield gate-CD variation, which they found
 "strongly dependent on the local layout patterns", and proposed a
 mask-level correction for it.[^orshansky-2004]
-
-**Overlay.** The step page infers that `P1M` aligns to the STI marks of
-{ref}`FOM <step-004>`. The placement margins against active are
-0.130 beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
-(poly.7), with poly on field kept 0.075 µm from diffusion
-(poly.4);[^pdk-periph] on the step pages' readings the tip and halo
-implants and the spacers that follow take the etched gate as their
-reference. Starikov analysed the accuracy of the overlay
-measurements on which such margins rely.[^starikov-1992]
 
 (mask-p1m-steps)=
 ## Steps that use this mask
@@ -262,6 +311,8 @@ periphery only (outside areaid.ce). A corresponding core rule may or may
 not exist.", and the unit column of poly.7 and poly.8 is blank in the
 published table.[^pdk-periph]
 
+:::{table} The `poly` rules, with the grid rules x.1a and x.1b and the poly row of x.2, as published; the unit column of poly.7 and poly.8 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | poly.1a | "Width of poly" | 0.150 µm |
@@ -279,37 +330,42 @@ published table.[^pdk-periph]
 | x.1a | "p1m.md (OPC), DECA and AMKOR layers (pi1.dg, pmm.dg, rdl.dg, pi2.dg, ubm.dg, bump.dg) and mask data for p1m, met1, via, met2 must be on a grid of mm" | 0.001 (unit "mm") |
 | x.1b | "Data for SKY130 layout and mask on all layers except those mentioned in 1a must be on a grid of mm (except inside Seal ring)" | 0.005 (unit "mm") |
 | x.2 | Angles on poly "n x 90" deg, "except for ESD flare gates or gated_npn" | — |
+:::
 
-Table 2 of *Criteria & Assumptions* gives two "Poly 1" rows: an
-"Endcap/Gap" row with 0.15 and 0.21 under `P1G`, and a row with "N/A"
-and 0.14 under `P1MCD` and `P1MCDSP`, which the table does not
-explain.[^pdk-03] Table 4 gives the poly thickness as 0.18
-(`POLYTH`) and the "Channel length for low Vt PMOS" as 0.35
-(`lvtpmos_poly`), matching poly.1b.[^pdk-03][^pdk-periph] Table 7,
-"Other criteria and parameters", has a row named for this mask, "P1M
-additional CD control", 0.011 (`P1MCDcontrol`), and the same table gives
-a "Field oxide etchback after P1ME before implants" of 0.04
-(`WFDEL`);[^pdk-03] neither row has a unit or says what the value
-applies to. The smallest
+The tables of *Criteria & Assumptions* give, table by table:
+
+* **Table 2** — two "Poly 1" rows: an
+  "Endcap/Gap" row with 0.15 and 0.21 under `P1G`, and a row with "N/A"
+  and 0.14 under `P1MCD` and `P1MCDSP`, which the table does not
+  explain.[^pdk-03]
+* **Table 4** — the poly thickness as 0.18
+  (`POLYTH`) and the "Channel length for low Vt PMOS" as 0.35
+  (`lvtpmos_poly`), matching poly.1b.[^pdk-03][^pdk-periph]
+* **Table 7**,
+  "Other criteria and parameters" — a row named for this mask, "P1M
+  additional CD control", 0.011 (`P1MCDcontrol`), and the same table gives
+  a "Field oxide etchback after P1ME before implants" of 0.04
+  (`WFDEL`).[^pdk-03] Neither row has a unit or says what the value
+  applies to.
+
+The smallest
 feature the plate must resolve is therefore the 0.150 µm gate line on a
 0.210 µm space.
 
 ## Related pages
 
-* {ref}`P1M <step-061>` and {ref}`P1ME <step-062>` — the mask step and
+* **Steps.** {ref}`P1M <step-061>` and {ref}`P1ME <step-062>` — the mask step and
   the gate etch.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-duv-krf-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-silicon` — the etch class that transfers
-  the pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — gate CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-silicon` — the etch class that transfers
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — gate CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 ## References
 

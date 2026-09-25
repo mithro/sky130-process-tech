@@ -54,7 +54,12 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
 
 ## Guide problems
 
-(none yet)
+* **G1 (p1m).** R-PARAMS assumes a paragraph of parameter/value pairs. The p1m paragraph also qualifies
+  its rows per table — "which the table does not explain" (Table 2's second "Poly 1" row), "neither row
+  has a unit or says what the value applies to" (the two Table 7 rows), Table 7's own title — and a
+  four-column table has no cell for those clauses without new wording. The paragraph became a
+  three-item list by table (bold `Table N` labels, every word and marker kept) instead. If the owner
+  wants the table, the clauses need a `Note` column, which breaks the §1 column budget.
 
 ## Pages
 
@@ -301,3 +306,34 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   important (above)". `check_inforce.py` passes (no number, title or listed phrase), but §2.5 forbids
   paraphrasing a collapsed note outside it. Left word for word; the owner may want those sentences
   looked at.
+
+### 6. p1m — done
+
+* **Rules applied.** R-INTRO (153 → 57 words; the whole reading sentence, dash list included, stays in the
+  intro at 40 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST (the three kinds of feature,
+  the Table F2b `C` rows, "Two things the mask does not define", "Two rules show …", the
+  *Criteria & Assumptions* rows by table); R-RELATED; R-H3 (Exposure class, Mask errors, Proximity and
+  line ends, Resist and tone, Overlay and alignment, Pattern transfer).
+* **R-PARAMS** applied as a list by table, not a table: see guide problem G1.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged apart from its semicolon split,
+  above "Pattern transfer".
+* **Intro.** "Because the etched poly width is the transistor gate length, this is the mask …" moved
+  unchanged to the top of the body.
+* **"Two things the mask does not define".** The base's closing ", on the step pages' readings" covered
+  both clauses of the sentence; as a two-item list, each item ends with it.
+* **Declared additions** (`--allow-added markers,numbers`): marker `mask-renders` (render sentence split
+  at its semicolon); numbers `1` ×2, `2`, `7`, `8` (x.1a, x.1b, x.2, poly.7 and poly.8 in the rule-table
+  caption, copied from the lead-in).
+* **Marker coverage.** Flags read: list items under lead-in markers; "So the PDK assumes tighter bias
+  control …" (no marker in the base; its premise keeps `pdk-03`); "On the step pages' readings the tip
+  and halo implants …" (the `pdk-periph` marker belonged to the rule values before the semicolon);
+  Kuijten / Arthur split at ", and", each with its own marker.
+* **Wording at splits.** "The rows it leaves unmarked" → "The rows the table leaves unmarked" (after a
+  list); the *Criteria & Assumptions* list opens "The tables of *Criteria & Assumptions* give, table by
+  table:" (the base's "Table 2 of *Criteria & Assumptions* gives" spread over three bold labels).
+* **Over the caps after the pass:** the x.1a quotation sentence (49 by the script, one quotation) and
+  the Wong sentence (50; its marker sits at the end of the following "They also found …" sentence, and
+  a split at the semicolon would put the arithmetic between Wong's two findings and their shared
+  marker); the quoted x.1a rule cell. Before → after: paragraphs 9 → 0, items 0 → 0, sentences 9 → 2,
+  cells 1 → 1.
+* **Content problems for the owner:** none found.
