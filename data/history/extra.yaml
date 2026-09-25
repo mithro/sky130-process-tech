@@ -1,0 +1,271 @@
+# Records added by the history coordinator to close gaps left by the
+# research agents: fab-lifecycle sentences from Cypress annual reports
+# already in the shared cache, and trade-press articles captured with the
+# Chrome browser because the sites refuse scripted fetches (the capture
+# files say so in their first lines). Same schema as corporate.yaml;
+# every quote is verbatim in the file named by `cache`, relative to
+# tmp/cyhist-cache/ in the main checkout
+# (`uv run tools/check_history_quotes.py`).
+schema_version: 1
+retrieved: 2026-09-25
+records:
+- id: cyx-ar-fy1997-fab1-8inch
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-28
+    date: 1998-03-06
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1997.txt
+  quotes:
+  - text: >-
+      The decision to centralize most of the wafer production in an eight-inch fab caused the Company to
+      make a decision to upgrade its R&D wafer fab, Fab I, located in San Jose, California, from
+      six-inch to eight-inch to ensure compatibility.
+    location: Notes to consolidated financial statements, restructuring
+  claims:
+  - {subject: Fab 1, attribute: wafer size change decided, value: six-inch to eight-inch, date: 1998}
+  notes: null
+- id: cyx-ar-fy1998-restructure
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1998 Annual Report to shareholders, for the fiscal year ended 1999-01-03
+    date: 1999-01-25
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1998.txt
+  quotes:
+  - text: >-
+      Cypress determined that a major and rapid move away from six-inch to eight-inch manufacturing
+      capability was required, as well as consolidation of its manufacturing operations.
+    location: Management's Discussion and Analysis, restructuring
+  - text: >-
+      The shutdown of Fab 3, located in Bloomington, Minnesota and consolidation of parts of Fab 3
+      operations with other operations of Cypress.
+    location: Management's Discussion and Analysis, restructuring (first bullet)
+  - text: >-
+      The discontinuance of the 0.6 micron 256k SRAM production in Fab 2 located in Texas.
+    location: Management's Discussion and Analysis, restructuring (second bullet)
+  claims:
+  - {subject: Fab 3, attribute: shut down, value: '1998', date: 1998}
+  - {subject: Fab 2, attribute: 0.6 µm 256k SRAM production discontinued, value: '1998', date: 1998}
+  notes: null
+- id: cyx-ar-fy2001-fab1-8inch
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30
+    date: 2002-02-28
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy2001.txt
+  quotes:
+  - text: >-
+      The R&D Fab, which was converted from six-inch wafer to eight-inch wafer capability in fiscal
+      2000, is now compatible with our manufacturing fab in Minnesota.
+    location: Management's Discussion and Analysis, research and development
+  claims:
+  - {subject: Fab 1, attribute: converted to eight-inch, value: fiscal 2000, date: 2000}
+  notes: null
+- id: cyx-ar-fy2008-fab2-closed
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28
+    date: 2009-02-26
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy2008.txt
+  quotes:
+  - text: >-
+      In 2008, we closed Cypress Texas, our Fab 2 wafer fabrication plant in Round Rock, Texas. Its
+      0.35-micron technology on 6-inch wafers was no longer economically viable. Fab 2 was well run
+      and reliable for all of its 22 years of operation.
+    location: Letter to shareholders
+  claims:
+  - {subject: Fab 2, attribute: closed, value: '2008', date: 2008}
+  - {subject: Fab 2, attribute: years of operation, value: '22', date: 2008}
+  - {subject: Fab 2, attribute: final technology, value: 0.35 µm on 6-inch wafers, date: 2008}
+  notes: >-
+    22 years of operation to 2008 puts the opening in 1986, as Semiconductor Digest
+    (cyhist-corp-pr-2007-fab2exit-semidigest) says; the Connect CRE article's "open for 20 years"
+    (cyhist-corp-pr-2008-roundrock-warehouse) is the outlier.
+- id: cyx-ar-fy2009-fab1-sold
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2009 Annual Report, including the Form 10-K for the fiscal year ended 2010-01-03
+    date: 2010-03-03
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy2009.txt
+  quotes:
+  - text: >-
+      While we maintained our Fab 4 facility in Bloomington, Minn., to develop and manufacture new
+      technologies, we sold our Fab 1 R&D plant in San Jose, Calif., in 2007 and closed our Fab 2
+      facility in Round Rock, Texas, in 2008.
+    location: Letter to shareholders
+  claims:
+  - {subject: Fab 1, attribute: sold, value: '2007', date: 2007}
+  - {subject: Fab 2, attribute: closed, value: '2008', date: 2008}
+  notes: null
+- id: cyx-startribune-2017-plant
+  source:
+    publisher: Star Tribune
+    title: Twin Cities tech executives form new company, buy Cypress chip plant in Bloomington
+    date: 2017-03-31
+    form: newspaper article
+  url: https://www.startribune.com/twin-cities-tech-executives-form-new-company-buy-cypress-chip-plant-in-bloomington/417672063
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chrome-startribune-2017-03-31-cypress-plant-bloomington.txt
+  quotes:
+  - text: >-
+      Cypress, which bought the plant from Control Data Corp. in January 1991 for $14.7 million, sold
+      it this month for $30 million to Sky­Water Technology Foundry
+    location: article body
+  - text: >-
+      The plant, built in the 1980s by Control Data, has 80,000 square feet of clean-room space and
+      chiefly makes wafers that are 200 millimeters in diameter.
+    location: article body
+  claims:
+  - {subject: Bloomington plant, attribute: bought by Cypress, value: January 1991 from Control Data, $14.7 million, date: 1991}
+  notes: >-
+    Captured with Chrome (the site rate-limits scripted fetches). The article treats the Bloomington
+    site as one plant; Cypress's own reports distinguish the 6-inch Fab 3 bought in 1990-91 from
+    the 8-inch Fab 4 built beside it from 1994.
+- id: cyx-startribune-2019-plant-history
+  source:
+    publisher: Star Tribune
+    title: Why computer-chip factories from the 1980s are still going strong in Bloomington
+    date: 2019-06-09
+    form: newspaper article
+  url: https://www.startribune.com/why-computer-chip-factories-from-the-1980s-are-still-going-strong-in-bloomington/510984342
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chrome-startribune-2019-06-09-chip-factories-1980s-bloomington.txt
+  quotes:
+  - text: >-
+      In 1982, Control Data sold the chip business to private investors who formed VTC Inc. and
+      continued chiefly to supply its former owner. As VTC, the business added the plant that is now
+      SkyWater's, tucked against a state park at 2401 E. 86th St.
+    location: article body, "Roots in Control Data"
+  - text: >-
+      Control Data bought the two factories back from VTC in the late 1980s, then sold them off again
+      in the 1990s. The original plant became Polar Semiconductor, a unit of Japan's Sanken Electric,
+      while the one on 86th went to Cypress.
+    location: article body, "Roots in Control Data"
+  - text: >-
+      under Cypress, the size of the cleanroom at SkyWater's plant more than doubled.
+    location: article body, "Roots in Control Data"
+  claims:
+  - {subject: Bloomington plant, attribute: built by, value: VTC Inc. (Control Data spin-off), date: 1980s}
+  - {subject: Bloomington plant, attribute: cleanroom under Cypress, value: more than doubled, date: null}
+  notes: >-
+    Captured with Chrome. Consistent with Cypress's reports: the VTC plant is Fab 3, and the
+    Cypress-era doubling of the cleanroom is the Fab 4 addition (ground broken August 1994).
+- id: cyx-ew-2007-s8-nvsram
+  source:
+    publisher: Electronics Weekly
+    title: Cypress 4-Mbit non-volatile static random access memory
+    date: 2007-10-18
+    form: trade-press article
+  url: https://www.electronicsweekly.com/news/products/memory-products/cypress-4-mbit-non-volatile-static-random-access-memory-2007-10/
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/ew-2007-10-cypress-4mbit-nvsram.txt
+  quotes:
+  - text: >-
+      The new 4-Mbit nvSRAMs are the first manufactured on Cypress’s S8(tm) 0.13-micron SONOS
+      (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile memory technology, enabling greater
+      densities and improved access times and performance.
+    location: article body
+  - text: >-
+      Cypress will use the S8 technology in next generation PSoC(r) mixed-signal arrays,
+      OvationONS(tm) laser navigation sensors, programmable clocks and other products.
+    location: article body
+  claims:
+  - {subject: S8, attribute: technology, value: 0.13 µm SONOS embedded non-volatile memory, date: 2007}
+  - {subject: S8, attribute: first product, value: 4-Mbit nvSRAM, date: 2007}
+  notes: >-
+    Fetched directly. The first S8 qualification in Cypress's reports, QTP 071304 ("To qualify S8
+    SONOS technology and 4M nvSRAM devices CY14B104L / CY14B104N"), is dated November 2008
+    (qtp-113005's history table), a year after this product announcement.
+- id: cyx-eetimes-1997-first-035um-sram
+  source:
+    publisher: EE Times
+    title: Cypress Introduces its First 0.35-µm SRAM
+    date: 1997-11-19
+    form: trade-press article
+  url: https://www.eetimes.com/cypress-introduces-its-first-0-35-m-sram/
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chrome-eetimes-1997-11-19-cypress-first-035um-sram.txt
+  quotes:
+  - text: >-
+      San Jose–Nov. 18, 1997–Cypress Semiconductor (San Jose) introduced its first SRAM built in a
+      0.35-m feature size.
+    location: article body, first paragraph (the page renders the micron sign as "m")
+  - text: >-
+      The introduction comes on the heels of Cypress's first 0.5-mproducts in 1996
+    location: article body, second paragraph
+  - text: >-
+      Cypress also announced that it has already achieved working silicon on products with 0.25-m
+      line widths.
+    location: article body, third paragraph
+  claims:
+  - {subject: 0.35 µm SRAM, attribute: first product, value: CY7C1021, date: 1997-11-18}
+  - {subject: 0.5 µm, attribute: first products, value: '1996', date: 1996}
+  notes: Captured with Chrome (EE Times refuses scripted fetches; no Wayback capture).
+- id: cyx-eetimes-2000-mosel-vitelic
+  source:
+    publisher: EE Times
+    title: Cypress, Mosel Vitelic to develop 0.13-micron process technology
+    date: 2000-07-07
+    form: trade-press article
+  url: https://www.eetimes.com/cypress-mosel-vitelic-to-develop-0-13-micron-process-technology/
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chrome-eetimes-2000-07-07-cypress-mosel-vitelic-013um.txt
+  quotes:
+  - text: >-
+      Cypress Semiconductor Corp. here and memory maker Mosel Vitelic Corp. of Taiwan today announced
+      an agreement to jointly develop 0.13-micron process technology, which will initially be deployed
+      in Cypress's Fab 1 R&D facility.
+    location: article body, first paragraph
+  claims:
+  - {subject: 0.13 µm, attribute: joint development, value: Mosel Vitelic, in Fab 1, date: 2000-07-07}
+  notes: Captured with Chrome.
+- id: cyx-edn-2005-honeywell-soi
+  source:
+    publisher: EDN
+    title: Honeywell debuts rad-hard process in new foundry fab
+    date: 2005-04-27
+    form: trade-press article
+  url: https://www.edn.com/honeywell-debuts-rad-hard-process-in-new-foundry-fab/
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chrome-edn-2005-04-27-honeywell-radhard-process.txt
+  quotes:
+  - text: >-
+      Honeywell co-developed the SOI-based, 150-nm technology with Cypress Semiconductor Corp., as part
+      of deal signed in 2002. Initially, Cypress (San Jose) provided foundry services to Honeywell. The
+      150-nm process was then ported to Honeywell's 200-mm fab, which had been under construction for
+      some time.
+    location: article body
+  - text: >-
+      The 150-nm technology and development process evolved from Honeywell's previous-generation,
+      0.25-micron technology.
+    location: article body
+  claims:
+  - {subject: Honeywell SOI, attribute: node, value: 150 nm, date: 2005}
+  notes: >-
+    Captured with Chrome. Conflicts with Cypress's FY2002 and FY2003 annual reports, which call the
+    joint Honeywell programme a "0.13-micron Silicon-On-Insulator" process.
