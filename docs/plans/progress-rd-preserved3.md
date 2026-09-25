@@ -99,6 +99,57 @@ swapped numbers, text moved out of a dropdown), all still passing.
 
 ## Batch run against the last three merged batches
 
-See the final section below (added after all six items land) for the run of the new checks
-against `rd-steps-048-063`, `rd-materials`/`rd-categories`-era pages, and machines/masks batches
-at their merge bases, and what the new checks would have flagged.
+The three most recently merged batches (by the last commit date on each progress file: materials
+00:12, machines-a 00:32, steps-048-063 02:57, masks-a 04:21, categories 05:10, all 2026-09-26) are
+`rd-steps-048-063` (16 poly-module step pages), `rd-masks-a` (18 mask pages) and `rd-categories`
+(10 category pages). Each batch's merge base is the parent, on `main`, of that batch's first
+commit: `55c0e020` (steps-048-063), `6c1a9118` (masks-a), `f629785e` (categories) — confirmed by
+`git diff --name-only <base> -- <dir>` matching each batch's page list exactly.
+
+Ran `uv run python tools/check_preserved.py --base <base> --allow-regrouped --allow-deduplicated`
+(no `--allow-added`, to see everything) over each batch's own pages. No page-specific
+`--allow-added` was replicated, so every batch reports "undeclared differences" purely from
+categories (glance boxes, R-TOOLS labels, generated blocks) the original branches already
+declared and a reviewer already checked; that count is not a new finding. The new checks:
+
+* **`--allow-deduplicated`**: 0 `DEDUPLICATED` lines on any of the 44 pages (expected — none of
+  these three batches are `docs/machines/*.md`/`docs/materials/*.md`; already exercised on
+  `docs/materials/wet-chemicals.md`-shaped selftest cases above).
+* **Glance-box / `*SkyWater says:*` WARN**: 0 lines on all 44 pages (only step pages carry a
+  glance box; the 16 steps-048-063 pages are clean on both checks).
+* **`words` (the interesting one)**:
+  * **steps-048-063**: large, expected `WORDS ADDED` on every page — the R-GLANCE "At a glance"
+    box's own vocabulary ("admonition", "glance", "public", "not", "tool", "assignment", ...),
+    since the merge base predates that box. `WORDS LOST: 'strength'` recurs on 12 of 16 pages:
+    spot-checked (048-sagd.md) — the base's inline "Strength: **strong** for ..." became the
+    R-TOOLS label `*Tool exists:* **strong** for ...`, the guide's own intended transformation,
+    not a loss of content. A handful of pages lose a small number of connectives/pronouns
+    (053's `'and'×3`, 061's `'must'×4`/`'extend'×2`/`'wide'`, 063's `'whose'`) from ordinary
+    R-SENTENCE/R-PARA splitting — not inspected line by line, but consistent with routine
+    rewording, not a dropped claim.
+  * **rd-masks-a: a genuine, previously-invisible finding.** All 18 pages report `WORDS LOST`
+    including `'gathers'`, `'renders'`, `'records'`, `'sources'`, `'constrain'`, `'mpw'`,
+    `'process'`, `'public'`, `'lithography'`, `'sheet'`. Every one of the 18 pages' own scope
+    sentence — "This page gathers what public sources say about the mask itself — its PDK entry
+    and layers, the plates the process-steps sheet records for the MPW runs, what the public
+    renders of those runs show, the lithography it needs and the rules that constrain it." — was
+    **deleted outright, with no replacement**, confirmed by reading the diff on `dnm.md` and
+    grepping the removed lines across the batch (18 matches, one per page, `git diff
+    6c1a9118 -- docs/masks | grep '^-.*gathers'`). This is exactly the class of loss `words` was
+    added to catch (rd-steps-064-075.md guide problem 4): no number, quotation, marker or hedge
+    in that sentence, so all nine other categories, and the branch's own review, passed it
+    silently. Reported here for the coordinator; not fixed on this branch (no content page is
+    touched here, and rule 3 forbids it in any case).
+  * **rd-categories**: `WORDS LOST` on all 10 pages, mostly consumable/chemistry nouns
+    ("chemicals", "gases", "sources", "hardware", "tungsten", ...). Spot-checked (etch.md): a
+    duplicate elaboration bullet ("**Ti:W and TiN**: fluorine (SF₆, CF₄) or chlorine
+    chemistries...") was consolidated into linked, generic bullets
+    (`` {ref}`Chlorine/bromine sources <material-etch-gases>` ``) that already exist verbatim
+    two lines above in the surviving prose — a legitimate R-COMPARE-style dedup matching the
+    review's own "Medium" finding about "hand-picked consumable/tool-class subsets", not a
+    fresh loss.
+
+**Conclusion**: the `words` category's single genuine catch on this run — the mask pages' deleted
+scope sentence — is precisely the kind of silent, no-number/no-quote/no-marker loss the other
+eight categories are structurally blind to, and is worth a fix-round item on `rd-masks-a` (or its
+follow-on) even though it is outside this branch's own remit.
