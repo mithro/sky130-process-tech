@@ -2,20 +2,12 @@
 # NPCM — Nitride Poly Cut
 
 The nitride poly cut mask is the {term}`reticle` that decides where
-SKY130's capped polysilicon can later be contacted: on the
+SKY130's capped polysilicon can later be contacted. On the
 {ref}`NPCM <step-078>` page's reading, the resist printed through it at
 step 78 is opened wherever `npc` is drawn, over the poly heads that
 local-interconnect contacts will land on and over the ends of the
 precision resistors, and the {ref}`NPCME <step-079>` etch removes the
-nitride and oxide cap there, stopping on the poly. It is a
-{term}`nitride cut` layer of openings whose width rules are relaxed but
-whose placement against the gates is not, and the step pages read it as
-a KrF level for that reason, with i-line as the alternative. This page
-gathers what public sources say about the mask itself — its PDK entry and
-layers, the plates the process-steps sheet records for the MPW runs, what
-the public renders of those runs show, the lithography it needs and the
-rules that constrain it. How the step is performed is on the step page;
-every mask is indexed on the {ref}`masks index <masks-index>`.
+nitride and oxide cap there, stopping on the poly.
 
 | | NPCM — Nitride Poly Cut |
 |---|---|
@@ -32,14 +24,26 @@ every mask is indexed on the {ref}`masks index <masks-index>`.
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-npcm-steps>` |
 
+:::{seealso}
+How the step is performed is on the step page;
+every mask is indexed on the {ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is a
+{term}`nitride cut` layer of openings whose width rules are relaxed but
+whose placement against the gates is not, and the step pages read it as
+a KrF level for that reason, with i-line as the alternative.
 
 The periphery rules give the function of the `npc` rule set as "Defines
 nitride openings to contact poly and Li1", and the layer table describes
 `npc` as "Nitride poly cut (under licon1 areas)".[^pdk-periph][^pdk-06]
 The PDK's Table F4, "Connectivity of Drawn and Mask Layers", names the
 layer that joins `li1` to poly as "Licon1 AND Npc", where diff and tap
-need "Licon1" alone.[^pdk-summary] The contact rules make the pairing
+need "Licon1" alone.[^pdk-summary]
+
+The contact rules make the pairing
 explicit: "Npc must enclose poly_licon" (licon.18), by 0.100 µm in the
 periphery (licon.15), while `npc` must keep 0.090 µm from a licon on
 diffusion or tap (licon.13).[^pdk-periph] So the mask carries one opening
@@ -47,15 +51,17 @@ around every poly contact, and none over diffusion contacts.
 
 The rules also put openings over the precision resistors: a
 `prec_resistor` "must be enclosed by npc by atleast" 0.095 µm (rpm.5),
-as it must be enclosed by `psdm` (rpm.4), and npc.5 sets a maximum
-enclosure, 0.095 µm, of "poly overlapping slotted_licon by npcm"; the
+as it must be enclosed by `psdm` (rpm.4).[^pdk-periph] Rule npc.5 sets a maximum
+enclosure, 0.095 µm, of "poly overlapping slotted_licon by npcm".[^pdk-periph] The
 slotted contacts are those of the resistors (our reading of licon.1b,
 which sets their width "inside prec_resistor").[^pdk-periph] The
 {ref}`NPCM <step-078>` page reads the resistor openings as letting the
 P⁺ source/drain implant dope the resistor heads, an inference from the
-rule text that no public source states. The PDK's mask generation table,
+rule text that no public source states.
+
+The PDK's mask generation table,
 Table F2b, has an `NPC` column and marks it `C` ("CREATED") in one of its
-80 device rows, the "p+ poly resistor"; it marks `-`, "Layer not created
+80 device rows, the "p+ poly resistor".[^pdk-06] It marks `-`, "Layer not created
 for the device", in 45 rows, including every transistor row and the n+
 poly resistor, and `+`, "Layer allowed to overlap", in 34.[^pdk-06] On our
 reading of the table the openings over poly contacts are drawn by the
@@ -65,18 +71,23 @@ fits rpm.5; the table does not explain its marks.
 The {ref}`NPCM <step-078>` and {ref}`NPCME <step-079>` pages set the
 cut beside the titanium-nitride local interconnect of Tang et al., a TiN
 layer formed during self-aligned silicidation and patterned to join gates
-and junctions;[^tang-1985][^tang-1987] the abstracts do not describe a
+and junctions.[^tang-1985][^tang-1987] The abstracts do not describe a
 nitride cap over poly, and the papers' full text was not checked. The
 step page also cites Cacciato et al.'s charging damage, when a contact etch met a conductive
 borderless nitride, as a reason to open the nitride before the contact
-etch.[^cacciato-2003] What the mask does not define is the cap it cuts,
-laid down, on the step pages' readings, at {ref}`GATENIT <step-058>` and
-{ref}`POC <step-059>` and, on the `SPE` page's reading, partly consumed
-at {ref}`SPE <step-077>`;
-the contact holes, which {ref}`mask-licm1` prints much later; or the
-doping of the opened poly, which on the step pages' readings comes from
-the source/drain implants through the {ref}`PSDM <mask-psdm>` and
-{ref}`NSDM <mask-nsdm>` resists.
+etch.[^cacciato-2003]
+
+What the mask does not define is:
+
+* the cap it cuts,
+  laid down, on the step pages' readings, at {ref}`GATENIT <step-058>` and
+  {ref}`POC <step-059>` and, on the `SPE` page's reading, partly consumed
+  at {ref}`SPE <step-077>`
+* the contact holes, which {ref}`mask-licm1` prints much later
+* the
+  doping of the opened poly, which on the step pages' readings comes from
+  the source/drain implants through the {ref}`PSDM <mask-psdm>` and
+  {ref}`NSDM <mask-nsdm>` resists
 
 ## Drawn layers and derivation
 
@@ -85,11 +96,13 @@ the source/drain implants through the {ref}`PSDM <mask-psdm>` and
 `gds_layers.csv` gives `cnpc` a `mask` purpose at 49:0 ("Nitride poly cut
 mask") and a `drawing` purpose at 44:20, without a description and on a
 layer number that also carries `cviam2` 44:0 and the `pwelliso` label
-44:5; there is no `mask add`, `mask drop` or `waffle drop`
+44:5.[^pdk-06] There is no `mask add`, `mask drop` or `waffle drop`
 purpose.[^pdk-06] The drawn layer is `npc` at 95:20. The pairing rests on
 those names and descriptions, as on the {ref}`masks index <masks-index>`,
 and the PDK publishes no operation from `npc` to the plate beyond the
-created resistor shapes that Table F2b implies. Rule x.15a confines
+created resistor shapes that Table F2b implies.
+
+Rule x.15a confines
 "Drawn compatible, mask, and waffle-drop layers" to test modules, seal
 ring and frame, with an exception that names only "FOM/P1M/Metal waffle
 drop" (flag P),[^pdk-periph] so a design inside the die draws `npc` (our
@@ -97,20 +110,31 @@ reading of x.15a). The `NPC` mask data fall under the 0.005 grid of rule
 x.1b, not among the layers x.1a names (our reading; both values are
 printed with the unit "mm").[^pdk-periph]
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", checks the drawn layer at the periphery values
-— "0.27 min. width of npc" (npc.1), "0.27 min. spacing/notch of npc"
-(npc.2), "0.09 min. spacing of npc & gate" and "npc must not overlap
-gate" (npc.4) — and adds a core rule the periphery tables do not have,
+criteria for GDS data".[^pdk-errors] It checks the drawn layer at the periphery
+values:[^pdk-errors]
+
+* "0.27 min. width of npc" (npc.1)
+* "0.27 min. spacing/notch of npc"
+  (npc.2)
+* "0.09 min. spacing of npc & gate" and "npc must not overlap
+  gate" (npc.4)
+
+It adds a core rule the periphery tables do not have,
 `npcon.c6`, "0.045 min. enclosure of "poly_licon1" in core by npc",
-against the 0.1 of licon.15 in the periphery.[^pdk-errors] It also lists
-two `cnpc.nikon` checks, "NPCMmk in the nikon cross has the wrong
-polarity" and "NPCMmk is missing from the nikon cross in the layout",
-module-cut checks at 0.135 ("0.135 min. spacing of moduleCutAREA &
-q0npcnotBuildSpace", x.12a), "npc drawn layer cannot straddle
-areaid:ModuleCut" (scribe.7) and x.15a messages for `cnpc` and
-`NPCMmk`.[^pdk-errors] Unlike the `NTM` and `HVNTM` checks, it names no
+against the 0.1 of licon.15 in the periphery.[^pdk-errors] It also lists:[^pdk-errors]
+
+* two `cnpc.nikon` checks, "NPCMmk in the nikon cross has the wrong
+  polarity" and "NPCMmk is missing from the nikon cross in the layout"
+* module-cut checks at 0.135 ("0.135 min. spacing of moduleCutAREA &
+  q0npcnotBuildSpace", x.12a)
+* "npc drawn layer cannot straddle
+  areaid:ModuleCut" (scribe.7)
+* x.15a messages for `cnpc` and
+  `NPCMmk`
+
+Unlike the `NTM` and `HVNTM` checks, the page names no
 created `NPC` layer ({ref}`mask-ntm`, {ref}`mask-hvntm`).
 
 ### In the public renders
@@ -119,20 +143,28 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `NPCM` the site renders layer 95:20 (`npc`)
 alone, with no Boolean expression, no fill layer and no note, on all
-eight runs; its mask record gives the mask-level layer
-49:0.[^mask-renders] That is the index's pairing; the render has no term
+eight runs.[^mask-renders] Its mask record gives the mask-level layer
+49:0.[^mask-renders] That is the index's pairing. The render has no term
 for created resistor shapes, and the choice of layer is one public
 derivation from the drawn data, not SkyWater's mask-generation recipe.
 
-Every rendered die of every run carries `npc` shapes — at least 235 574
-on each die; the minimum on each run is 235 574 (MPW-6 to MPW-8),
-280 381 (MPW-5), 281 087 to 281 104 (MPW-2 to MPW-4) or 329 255 (MPW-1);
-on MPW-1 one die accounts for 97 % of the run's shapes; and counts rarely
-repeat, on at most seven dies of a run and on none of MPW-1, MPW-4 or
-MPW-8.[^mask-renders] The count of 40 dies therefore says only that every
-layout contacts poly, as a working die must; we read the large minimum
+Every rendered die of every run carries `npc` shapes:[^mask-renders]
+
+* at least 235 574
+  on each die
+* the minimum on each run is 235 574 (MPW-6 to MPW-8),
+  280 381 (MPW-5), 281 087 to 281 104 (MPW-2 to MPW-4) or 329 255 (MPW-1)
+* on MPW-1 one die accounts for 97 % of the run's shapes
+* counts rarely
+  repeat, on at most seven dies of a run and on none of MPW-1, MPW-4 or
+  MPW-8
+
+The count of 40 dies therefore says only that every
+layout contacts poly, as a working die must. We read the large minimum
 as shapes that every die of these runs carries rather than as project
-content (inference; the site does not say what they are). The site
+content (inference; the site does not say what they are).
+
+The site
 states the limits of its images: "These are renders of *drawn* data, not
 photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
 features the fab adds are not modelled."[^mask-renders] Its metadata
@@ -175,25 +207,33 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`NPCM <step-078>` page puts the 0.27 µm
+### Exposure class
+
+The {ref}`NPCM <step-078>` page puts the 0.27 µm
 opening at {math}`k_1 = 0.27 \times 0.6 / 0.365 \approx 0.44` on an
-i-line stepper of NA 0.6 and at about 0.65 on a 248 nm tool, cites ITRS
+i-line stepper of NA 0.6 and at about 0.65 on a 248 nm tool. It cites ITRS
 2001's exposure options for the 130 nm node, which the roadmap gives for
 critical layers,[^itrs-03] and infers a DUV level "driven by its 0.09 µm
-placement tolerance to poly rather than by its CD"; the
+placement tolerance to poly rather than by its CD". The
 {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there with an
-{ref}`i-line <machine-i-line-stepper>` alternative. At NA 0.7 the KrF
+{ref}`i-line <machine-i-line-stepper>` alternative.
+
+At NA 0.7 the KrF
 figure is {math}`k_1 = 0.27 \times 0.7 / 0.248 \approx 0.76` (our
 arithmetic). ASML's PAS 5500/750E "achieves 130 nm resolution while using
 standard 248 nm light".[^asml-750e] SkyWater lists "ASML DUV stepper",
 "ASML DUV scanner", "ASML I-line stepper" and "ASML I-line scanner" but
 assigns no layer to them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns and 0.75
-(lambda) /NA for contacts", and that dark-field spaces are more sensitive
-than light-field lines.[^wong-1998] For the 0.27 µm openings the
+(lambda) /NA for contacts".[^wong-1998] Wong et al. found that dark-field spaces are more sensitive
+than light-field lines.[^wong-1998]
+
+For the 0.27 µm openings the
 line-space threshold is about 0.18 µm to 0.21 µm at 248 nm and NA 0.7 to
 0.6, but about 0.30 µm at 365 nm and NA 0.6, and the contact threshold is
 about 0.27 µm to 0.31 µm at 248 nm (our arithmetic), so a plate CD error
@@ -201,52 +241,70 @@ would print at about its own size on a KrF tool for long cuts and begin
 to be magnified for small square cuts or on an i-line tool (inference).
 How tightly SkyWater specifies the plate is not public.
 
-**Resist and tone.** The step page reads a bottom anti-reflective coating
+### Resist and tone
+
+The step page reads a bottom anti-reflective coating
 and a DUV resist of the order of 0.5–0.7 µm over the capped poly lines
 and spacers, roughly 0.4 µm tall from Table 4's "poly thickness" of 0.18
-(`POLYTH`) and "poly cap after SPE" of 0.2 (`OVGTTH`), and takes the PDK's
+(`POLYTH`) and "poly cap after SPE" of 0.2 (`OVGTTH`).[^pdk-03] It takes the PDK's
 generic "Photoresist thickness" of 1.14 as an implant-layer
-value;[^pdk-03] the resist need only survive a short nitride etch. On
+value.[^pdk-03] The resist need only survive a short nitride etch.
+
+On
 stepped, reflective topography the swing ratio matters, which Brunner
 showed scales with the square root of the substrate reflectivity and an
 anti-reflective coating reduces.[^brunner-1991] With the openings drawn
 where `npc` is, the plate would be dark-field (inference). Neither the
-resist nor the tone is published; the consumables are on the
+resist nor the tone is published. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page and
 the coat and develop on the
-{ref}`coat/develop track <machine-coat-develop-track>` page. For the
+{ref}`coat/develop track <machine-coat-develop-track>` page.
+
+For the
 process window the step page points to Bossung's projection-printing
 characterisation, the source of the focus–exposure "Bossung" plot (the
 paper's content not checked),[^bossung-1977] and Ausschnitt's separation
 of dose from defocus.[^ausschnitt-1999]
 
-**Pattern transfer.** On the step pages' readings the pattern is
-transferred by {ref}`NPCME <step-079>` through whatever remains of the
-oxide cap and the nitride cap, stopping on the poly, on the
-{ref}`dielectric and nitride plasma etcher <machine-plasma-etcher-dielectric>`
-class, and the resist strip and clean are treated as part of that step.
-The `NPCME` page names a fluorine chemistry tuned for nitride over silicon,
-of the kind Kastenmeier, Matsuo and Oehrlein studied,[^kastenmeier-1999]
-an endpoint on CN emission, since "a strong peak at 387 nm indicates that
-CN is present in the plasma, usually indicating that nitride is being
-etched",[^pat-cn-tel] and loading effects in small, sparse windows of the
-kind Gottscho, Jurgensen and Vitkavage analysed.[^gottscho-1992] On our
-reading, the small open area of a cut layer, the property that weakens
-that endpoint signal, is fixed by this mask.
+### Overlay and alignment
 
-**Overlay.** The placement rules are the tight ones: 0.090 µm from any
+The placement rules are the tight ones: 0.090 µm from any
 gate (npc.4), 0.100 µm around a periphery poly contact (licon.15) and
 0.090 µm from a diffusion contact (licon.13), with a maximum as well as a
 minimum at the slotted resistor contacts (npc.5, rpm.5).[^pdk-periph] The
 {ref}`NPCM <step-078>` page reads the mask as aligned to poly, whose
 {ref}`P1M <mask-p1m>` pattern both npc.4 and licon.15 reference, and
 notes that a cut 0.09 µm out of place over a poly line would expose the
-gate edge to the nitride etch. ASML gives the /750E an overlay of "less than
+gate edge to the nitride etch.
+
+ASML gives the /750E an overlay of "less than
 30 nm";[^asml-750e] van Haren et al. show how alignment-mark placement on
 the reticle limits layer-to-layer overlay,[^van-haren-2019] and Starikov
 analysed the accuracy of the overlay measurements on which such margins
 rely[^starikov-1992] (our comparison; how SkyWater budgets the margin is
 not public).
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
+transferred by {ref}`NPCME <step-079>` through whatever remains of the
+oxide cap and the nitride cap, stopping on the poly, on the
+{ref}`dielectric and nitride plasma etcher <machine-plasma-etcher-dielectric>`
+class. On the step pages' readings the resist strip and clean are treated as part of that step.
+
+The `NPCME` page names:
+
+* a fluorine chemistry tuned for nitride over silicon,
+  of the kind Kastenmeier, Matsuo and Oehrlein studied[^kastenmeier-1999]
+* an endpoint on CN emission, since "a strong peak at 387 nm indicates that
+  CN is present in the plasma, usually indicating that nitride is being
+  etched"[^pat-cn-tel]
+* loading effects in small, sparse windows of the
+  kind Gottscho, Jurgensen and Vitkavage analysed[^gottscho-1992]
+
+On our
+reading, the small open area of a cut layer, the property that weakens
+that endpoint signal, is fixed by this mask.
 
 (mask-npcm-steps)=
 ## Steps that use this mask
@@ -282,6 +340,8 @@ only (outside areaid.ce). A corresponding core rule may or may not
 exist." and NC "Rule not checked by DRC. It should be used as a guideline
 only."[^pdk-periph]
 
+:::{table} The `npc` rules, the contact and precision-resistor rules that place other layers against `npc`, and the mask-data rules x.7 and x.15a, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | npc.1 | "Min width of NPC" | 0.270 µm |
@@ -295,19 +355,24 @@ only."[^pdk-periph]
 | rpm.5 | "prec_resistor must be enclosed by npc by atleast" | 0.095 µm |
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* repeats the width and space as
 `NPCMCD` 0.27 and `NPCMCDSP` 0.27, and no other criterion names the
-mask; Table 4's "poly cap after SPE" of 0.2 and "poly thickness" of 0.18,
+mask.[^pdk-03] Table 4's "poly cap after SPE" of 0.2 and "poly thickness" of 0.18,
 in its column headed "Value (um)", describe the stack the cut
-opens.[^pdk-03] Table F3a of the *Summary of Key Periphery Rules* gives
+opens.[^pdk-03]
+
+Table F3a of the *Summary of Key Periphery Rules* gives
 `npc` a width of 0.270, a spacing of 0.270 to itself and 0.090 to poly
 and "Yes" in the "Manual" (merge) column, and gives the enclosure of
 `poly_licon` by `npc` as 0.100 and the spacing of `licon` to `npc` as
 0.090 (our reading of the columns, whose spacing and enclosure labels
 sit in the row below the heading).[^pdk-summary] The Error Messages page
 adds the core enclosure of
-0.045 (`npcon.c6`).[^pdk-errors] For the plate the smallest features are
+0.045 (`npcon.c6`).[^pdk-errors]
+
+For the plate the smallest features are
 0.270 µm openings on a 0.270 µm space, placed to within 0.090 µm of the
 gates.
 
@@ -316,21 +381,20 @@ gates.
 * {ref}`NPCM <step-078>` and {ref}`NPCME <step-079>` — the mask step and
   the cut etch; {ref}`SPE <step-077>` — the spacer etch that leaves the
   cap the cut opens.
-* {ref}`mask-p1m` — the poly pattern the cut is placed against;
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
+  and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
+  exposure class the step page assigns and its alternative.
+  {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — CD and overlay measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-p1m` — the poly pattern the cut is placed against;
   {ref}`mask-licm1` — the contact mask whose poly contacts land in the
   cuts; {ref}`mask-psdm` — the P+ implant mask whose implant reaches the
   opened resistor heads.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the tables this page's plate facts are taken from.
-* {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
-  exposure class the step page assigns and its alternative.
-* {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — CD and overlay measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
-  and etch categories.
 
 ## References
 

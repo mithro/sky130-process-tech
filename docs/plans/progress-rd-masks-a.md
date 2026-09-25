@@ -741,3 +741,34 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   (47, quotations); the Polarity cell (37) and two quoted rule cells. Before → after: paragraphs 11 → 0,
   items 2 → 0, sentences 24 → 7, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 18. npcm — done
+
+* **Rules applied.** R-INTRO (172 → 70 words; first sentence split at its colon; "It is a nitride cut
+  layer …" moved to the top of `## What the mask defines`, "It" → "The mask"); R-CAPTION; R-PARA,
+  R-SENTENCE; R-LIST (what the mask does not define; the *Error Messages* page's periphery-value checks
+  and its other checks; the per-die counts; the three things the `NPCME` page names); R-RELATED; R-H3
+  (Exposure class, Mask errors, Resist and tone, Overlay and alignment ← "Overlay", Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS not applied:** the design-rules paragraph names two parameters by identifier (`NPCMCD`,
+  `NPCMCDSP`); the Table F3a sentence is a column reading under one long hedge.
+* **Hedge repeated on a split:** "On the step pages' readings" on the Pattern transfer strip clause.
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m, wrapped
+  differently; `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers`): markers `pdk-periph` ×2 (the precision-resistor
+  sentence split into rpm.5 / npc.5 / slotted-contact sentences; "and npc.5 sets" → "Rule npc.5 sets"),
+  `pdk-06` ×2 (`gds_layers.csv` sentence; Table F2b sentence), `pdk-errors` ×2 (page description; the
+  periphery-values list lead-in — the base's two markers stay on "It adds a core rule …" and on the "It
+  also lists:" lead-in), `pdk-03` ×2 ("It takes the PDK's generic "Photoresist thickness" …"; the Table 2
+  sentence split at its semicolon), `mask-renders` (render sentence), `wong-1998` ("Wong et al. found
+  that dark-field spaces …", as on dnm); numbers `7`, `15` (rule caption).
+* **Marker coverage.** Flags read: lists under lead-in markers; clauses without a marker of their own in
+  the base.
+* **Over the caps after the pass:** the intro's reading sentence (52: one hedge over the whole); "For
+  the 0.27 µm openings the line-space threshold … so a plate CD error …" (83: its "so" draws on both
+  thresholds and "(our arithmetic)" covers both, so a split would need the hedge repeated and would
+  attach the conclusion to one threshold only); "ASML gives the /750E an overlay … (our comparison; …)"
+  (49: splitting at its semicolon would capitalise "van Haren"); the Table F3a sentence (68: one long
+  hedge covers the whole column reading); two quick-facts cells (33, 37; not in the body). Before →
+  after: paragraphs 13 → 0, items 0 → 0, sentences 19 → 4, cells 2 → 2.
+* **Content problems for the owner:** none found.
