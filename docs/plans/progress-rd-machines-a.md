@@ -268,6 +268,54 @@ column).
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 4. `docs/machines/cross-section-sem-profilers.md` — done
+
+This page covers two instrument families (destructive cross-section SEM/FIB, non-destructive
+profilers/AFM) in one class, so its intro (180 words) was almost all substantive definition, not
+boilerplate. Rules applied: R-INTRO (kept only the two sentences posing the cross-section
+questions and describing the method, 62 words; moved the "some questions... other questions..."
+framing sentence and the profiler/AFM description into the H2 lead, ahead of the H2's own
+existing sentence, since they are exactly the kind of "what it is and how it works" material
+that section holds; template sentence deleted; pointer moved to `{seealso}`). R-MODELS (12-row
+table across 5 vendor families; minor variants folded into one row's Model cell — "P-10, P-11,
+P-22, P-30 SMIF, Alpha-Step 500" — rather than one row each, since none of the folded models has
+its own published figure, only a shared citation). R-ENTRIES (the "Read term by term, on our
+reading" gloss of the five Physical Analysis entries → 5-row table). R-QUICKFACTS: five rows read
+already close to the cap with two essential, non-duplicated quotations apiece; trimming them
+further risked exactly the token loss this batch keeps finding (method note in page 3's entry),
+so I left them as the page wrote them rather than force a cosmetic win — recorded as a deliberate
+skip, not an oversight. R-PARA (7 H3 paragraphs split at topic seams; the largest, "Focused ion
+beams and dual-beam tools", from 210 to 3 paragraphs). R-SENTENCE (about 9 sentences over 45
+words split, including one 62-word question-pair in the intro, split at the question mark rather
+than a period). R-LIST: none triggered (no announced-count enumeration on this page).
+R-RELATED (7 sentence-bullets → 3 grouped bullets). R-CAPTION (both new tables).
+
+Over-cap counts (before → after): paragraphs > 100 words: 6 → 0; sentences > 45 words: 9 → 0;
+list items > 60 words: 1 → 0 (continuation paragraph); quick-facts cells > 20 words: 5 of 7 → 5
+(unchanged, by design — see above); tables with no caption: 2 new → 0.
+
+One real bug caught by `check_preserved.py` on the first pass: the FEI DualBeam row of the
+Representative-models table (Strata/Quanta/Nova/Helios, 2006) was drafted with no marker at all
+— the source bullet's `[^fei-dualbeam-2006]` sat at the very end of the original sentence, past
+where I cut the row, and got dropped in the table conversion (`LOST markers: fei-dualbeam-2006`).
+Fixed by attaching the marker to the row's (empty) Published-figures cell. This is exactly the
+"marker travels with its clause" failure mode `§2.3` warns about, caught only because the check
+was run and read, not assumed clean from a visual diff.
+
+`check_preserved.py --base 2d7db95a --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except `LOST identifiers: SKY130`
+(method note 4) and three more `LOST number_order` tuples of the now-familiar table-conversion
+shape (method note 1): `('200','800','8','1999','2006')` (FEI row), `('3','3100','5000','9000','2000')`
+(Veeco/Digital Instruments rows) and `('500','1996','340','2002')` (Tencor/KLA-Tencor rows) — all
+hand-checked, all the same digits in the same relative model-to-model order, broken only by the
+table's own Year cells landing between numbers that were adjacent in the source prose.
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 4 (Representative-models table) and 6
+(Physical Analysis entries table, "SKY130 steps assigned" dropdown) read; both tables wrap
+cleanly at 400 px with the 4-column Vendor/Model/Year/Published-figures shape.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
