@@ -320,7 +320,7 @@ and rpm.2 would set their smallest features (inference).
 
 * **Steps.** {ref}`RRPM <step-052>`, {ref}`PRI <step-053>` and
   {ref}`PRIS <step-054>` — the mask step, the resistor implant and the
-  strip.
+  strip; {ref}`URPM <step-055>` — the ultra-high-resistor mask that follows.
 * **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
 * **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
@@ -331,8 +331,7 @@ and rpm.2 would set their smallest features (inference).
   reticles.
 * **Masks.** {ref}`mask-rpm` — the resistor protect mask, whose drawn layer the step
   page derives this mask from and whose islands it complements.
-  {ref}`URPM <step-055>` and {ref}`mask-urpm` — the ultra-high-resistor
-  mask that follows and its page.
+  {ref}`mask-urpm` — the ultra-high-resistor mask's page.
 * **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the masks without a `masks.csv` entry and the plate that was
   never rendered.
