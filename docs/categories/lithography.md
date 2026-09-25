@@ -10,12 +10,11 @@ photoresist.
 | Steps in SKY130 | 36 |
 | Tool classes | {ref}`KrF step-and-scan systems <machine-duv-krf-stepper>`, {ref}`i-line steppers <machine-i-line-stepper>`, {ref}`Coater/developer tracks <machine-coat-develop-track>` |
 | Consumable classes | {ref}`Lithography materials <material-lithography-materials>` |
-| Governing relation | Rayleigh resolution equation (k1) |
+| Governing relation | CD = k₁λ/NA |
 
 ## What this class of step does
 
-A lithography step draws the pattern of one mask onto the wafer in
-photoresist. The wafer is coated with a thin, light-sensitive polymer
+The wafer is coated with a thin, light-sensitive polymer
 film, the image of a {term}`reticle` is projected onto it with
 ultraviolet light, one field at a time, and the exposed (positive
 resist) regions are dissolved in developer. What remains is a stencil
@@ -67,8 +66,7 @@ factor that "typically equals 0.4 for production". The physical limit
 Values between 0.25 and 0.4 need resolution-enhancement
 techniques.[^mack-2007][^lin-2002] For a KrF scanner at {math}`\lambda =
 248` nm and {math}`NA = 0.68` (the Nikon NSR-S204B, for
-example),[^nikon-s204b] {math}`\lambda/NA = 365` nm.
-A 130 nm
+example),[^nikon-s204b] {math}`\lambda/NA = 365` nm, so a 130 nm
 half-pitch is {math}`k_1 \approx 0.36` and the 90 nm printed gate of a
 high-performance 130 nm node is {math}`k_1 \approx 0.25` — hence the
 need for phase-shift masks and optical proximity correction on the gate
@@ -78,9 +76,9 @@ usable focus window is only a few hundred nanometres, which is why
 
 The 130 nm node was the first at which the printed gate was
 deliberately narrower than the half-pitch and then trimmed further in
-the etch. ITRS 2001 lists, for 2001:[^itrs-03]
+the etch.[^itrs-03] ITRS 2001 lists, for 2001:[^itrs-03]
 
-:::{table} ITRS targets for this node's introduction year, as listed in the paragraph above
+:::{table} The ITRS figures listed in the sentence above, one per row
 
 | Parameter | Value |
 |---|---|
@@ -102,7 +100,7 @@ through the 1980s and early 1990s; excimer lasers then took over, KrF at
 typically runs a *mixed* line, with older tools moved to the less
 critical layers (industry practice: ASML describes older systems that
 "migrate to the lithography of choice for less critical
-layers"[^asml-30]). KrF tools are used for the critical layers and i-line tools
+layers"[^asml-30]): KrF tools for the critical layers and i-line tools
 for non-critical layers whose features are a few hundred nanometres or
 larger. On the step pages' readings, for example, active, poly, local
 interconnect, contact, metals 1 and 2 and vias 1 to 4 are KrF layers,
@@ -118,7 +116,7 @@ included, are printed on KrF tools remains an inference.
 ### Steppers and scanners
 
 A stepper images the whole reticle field at once and steps the wafer
-between exposures. A scanner illuminates a slit and moves reticle and
+between exposures.[^wiki-stepper] A scanner illuminates a slit and moves reticle and
 wafer in opposite directions (at 4:1 speed ratio) through it, so the
 field can be longer than the lens's well-corrected image circle and lens
 aberrations average along the scan.[^wiki-stepper] ITRS 2001 describes
@@ -240,7 +238,7 @@ alignment corrections.
 
 ## Steps in this category
 
-:::{table} The thirty-six lithography (mask) steps of the flow
+:::{table} The thirty-six lithography (mask) steps of the flow; Machine class is the class each step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment -- which mask runs on which tool is not public
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
