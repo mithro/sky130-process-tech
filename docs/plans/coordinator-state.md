@@ -48,7 +48,6 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 
 2. `topic/rd-inforce-sonos` — in-force patent content in the open on steps 037–042 (Sonnet; rulings in `tmp/reviews/rd-figures-s3s4.md` "Existing pages").
-3. `topic/rd-figures-s5` — fix round except the slice rework (Opus; then, after S3/S4 merges and a rebase, redo the series start from the merged `series-gates.yaml`).
 4. `topic/rd-indexes` — W3 batch 1: the three index pages (Sonnet).
 5. `topic/rd-links2` — second check of the dead generated-page links, `archive_url` in the datasets (Sonnet; cache under its worktree tmp/).
 6. Reviews as branches finish: rd-site (verify fixes), rd-figures-s3s4 (verify), rd-steps-014-034, rd-indexes, rd-links2, rd-preserved2, rd-inforce-sonos, rd-figures-s5.
