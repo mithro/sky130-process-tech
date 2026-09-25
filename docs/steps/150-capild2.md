@@ -32,6 +32,14 @@ plates by the second capacitor mask and etch ({ref}`CAP2M <step-152>`,
 the first capacitor module one metal level higher
 ({ref}`CAPILD <step-135>` to {ref}`CAPME <step-138>`).
 
+:::{figure} /_static/figures/mim-150-capild2.svg
+:alt: Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a flat pale oxide carries a blanket of three metal films, a thick silver one between two thin purple ones. After it a very thin film with fine vertical stripes covers the top purple film across the whole width.
+:width: 560px
+:name: fig-mim-150-capild2
+
+A close-up of part of the metal-4 level, where the second capacitor is built in the next steps; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 4. Before, the blanket metal-4 stack; after, the thin dielectric of the second capacitor over all of it. No public source describes the film: the step list names an oxynitride,[^steps-sheet] which is not evidence of a chemistry, and this page reads it as a PECVD silicon oxynitride, the same deposition as at CAPILD (inference). Its thickness is not public; 18–33 nm is the page's own arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an assumed permittivity. It is drawn much thicker in proportion than that, and metal 4 is not drawn to scale either. Which refractory films clad metal 4 is not public (the overview of the metal cap sets out the evidence); the figure draws every Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the stack are drawn but not labelled. Not to scale.
+:::
+
 The PDK documents this second capacitor in several places. Its device
 page describes the MiM as "a thin dielectric over metal, followed by a
 thin conductor layer on top of the dielectric", lists "CAPM over

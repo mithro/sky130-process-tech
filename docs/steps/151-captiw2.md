@@ -34,6 +34,14 @@ not on the stack qualified in 2013–2014
 0.1 µm of it, as set out below). The step is the second-level repeat of
 {ref}`CAPTIW1 <step-136>`.
 
+:::{figure} /_static/figures/mim-151-captiw2.svg
+:alt: Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a blanket of three metal films, a thick silver one between two thin purple ones, carries a very thin film with fine vertical stripes. After it a purple film, thicker than the thin purple films of the metal stack, covers that striped film across the whole width.
+:width: 560px
+:name: fig-mim-151-captiw2
+
+A close-up of part of the metal-4 level; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 4. Before, the second capacitor's thin dielectric on the blanket metal-4 stack; after, the blanket top-plate film on it, so that metal, dielectric and plate film cover the wafer until the plate is patterned. The PDK calls the plate only a thin conductor and gives it 5.8 Ω/sq, the same as the first plate;[^pdk-07] this page describes it as sputtered TiW (inference) and reads its thickness, which is not public, as roughly 0.1 µm from that sheet resistance (our arithmetic). The plate is drawn thicker than the metal cap and than the dielectric, but none of the films is drawn to scale. Which refractory films clad metal 4 is not public (the overview of the metal cap); the figure draws the plate and every other Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the stack are drawn but not labelled, nor, in the upper panel, is the aluminium–copper. Not to scale.
+:::
+
 The PDK gives this plate a "MiM2 top plate sheet resistance" of
 5.8 Ω/sq (limits 4.8–6.8), the same as the first capacitor's
 plate.[^pdk-07] Its thickness is not public, but the sheet resistance

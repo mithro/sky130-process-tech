@@ -38,6 +38,14 @@ metal 3",[^pdk-06] and the process stack diagram draws `capm` between
 `cap2m` over metal 4, is the subject of {ref}`CAPILD2 <step-150>` to
 {ref}`CAP2ME <step-153>` and is not discussed further here.
 
+:::{figure} /_static/figures/mim-135-capild.svg
+:alt: Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step a flat pale oxide carries a blanket of three metal films, a thick silver one between two thin purple ones. After it a very thin film with fine vertical stripes covers the top purple film across the whole width.
+:width: 560px
+:name: fig-mim-135-capild
+
+A close-up of part of the metal-3 level, where a capacitor is built in the next steps; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 3. Before, the blanket metal-3 stack; after, the thin capacitor dielectric over all of it, the film that becomes the dielectric between metal 3 and the top plate. The PDK does not name the material, and this page describes it as a PECVD silicon oxynitride (inference). Its thickness is not public: the stack diagram gives none,[^pdk-04] and 18–33 nm is the page's own arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an assumed permittivity. It is drawn much thicker in proportion than that, and metal 3 is not drawn to scale either. Which refractory film caps metal 3, TiW or Ti/TiN, is not public (the overview of the metal cap sets out the evidence); the figure draws every Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the stack are drawn but not labelled. Not to scale.
+:::
+
 What is public about the film is electrical, not physical. The PDK
 gives the capacitor an area capacitance `CMIMA` of 2 fF/µm² (limits
 1.8–2.2), a periphery capacitance `CMIMP` of 0.19 fF/µm, a top-plate
