@@ -550,20 +550,36 @@ checks every R-REPEAT edit.
 
 ```
 :::{admonition} At a glance
+:class: at-a-glance
+
 * **Does:** one line.[^x]
 * **Why:** one line.
-* **Public numbers:** one to three values with their markers, or "none published".
+* **Public numbers:** one to three SKY130 values with their markers, or "none published for
+  SKY130".
 * **Likely SkyWater tool:** name — existence strong / assignment inference.[^skw-01]
 * **Not public:** the one or two biggest unknowns (→ Open questions).
 :::
 ```
 
+   The `:class: at-a-glance` line is required: it is what lets the theme give the box's text the
+   same size as body text instead of furo's default 13 px admonition size (W0a).
 2. Four to six bullets, each ≤ 25 words, each condensing a sentence that is already on the page, with
    that sentence's marker and its hedge tag.
-3. No new fact, no new number, no new source. Every marker in the box must occur again below it.
-4. Nothing from an in-force note: no patent number, no title, no value that only the collapsed note
+3. **Public numbers:** SKY130 values only — the PDK, a SkyWater statement, or the published test
+   tile — with their marker. If there are none, write "none published for SKY130" and stop there;
+   never file a generic, era-typical or textbook figure under this label. Such a value may appear
+   elsewhere in the box, but only with the page's own qualifier ("typical", "era-typical",
+   "Wikipedia's standard") and marker, never presented as a SKY130 number.
+4. **Likely SkyWater tool:** a tool named in `## Machines likely used at SkyWater`, with its grades,
+   or "none assignable". Never a supplier or a material — if the page's only graded item there is a
+   supplier, write "none assignable" rather than naming it here.
+5. Markers are required on every number and on the tool line. The Does and Why lines condense the
+   lead and need none. Every qualifier in the source sentence ("part of", "typical", "standard",
+   "our reading") must survive the condensing unchanged.
+6. No new fact, no new number, no new source. Every marker in the box must occur again below it.
+7. Nothing from an in-force note: no patent number, no title, no value that only the collapsed note
    gives (§2.6).
-5. Make the first sentence of `## What this step is` ≤ 25 words: "`CODE` <verb> <object>".
+8. Make the first sentence of `## What this step is` ≤ 25 words: "`CODE` <verb> <object>".
 
 **Example** — for `docs/steps/006-stie.md` the box is built from `:15` ("the plasma etch that cuts the
 isolation trenches into the silicon"), `:30-44` (the depth reading, "about 0.33 µm … our reading, not a
@@ -1506,7 +1522,8 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 | quick-facts table |                     unchanged; Phase cell gains a {term} link (R-TERM, W0d)
 
 + :::{admonition} At a glance                                         R-GLANCE, written last
-+ * **Does:** …[^x]  * **Why:** …  * **Public numbers:** …
++ :class: at-a-glance
++ * **Does:** …[^x]  * **Why:** …  * **Public numbers:** … (SKY130 only, or "none published")
 + * **Likely SkyWater tool:** …[^skw-01]  * **Not public:** … (→ Open questions)
 + :::
 
@@ -1939,21 +1956,21 @@ A caption may carry a footnote marker (`… blank in the PDK[^pdk-periph]`) — 
   For a 1.1 µm well depth the deepest energy is plausibly 500 keV–1 MeV (our reading).
 ```
 
-**Admonition with a title** (use for "At a glance"):
+**Admonition with a title** (use for "At a glance"; `:class: at-a-glance` is required, see R-GLANCE
+step 1 and W0a):
 
 ```
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** etches the isolation trench.[^a]
 :::
 ```
 
-**Note** (use for the "How" scope sentence) and **see-also** (use for pointer sentences moved out of an
-intro):
+**Italic lead-in** (use for the "How" scope sentence, R-HEDGE step 1 — not an admonition) and
+**see-also** (use for pointer sentences moved out of an intro):
 
 ```
-:::{note}
-An industry-generic recipe for a 200 mm, 130 nm-era fab.
-:::
+*An industry-generic recipe for a 200 mm, 130 nm-era fab.*
 
 :::{seealso}
 The mechanism is on the category page.
