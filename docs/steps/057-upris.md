@@ -10,11 +10,26 @@
 | **Previous step** | {ref}`UPRI <step-056>` |
 | **Next step** | {ref}`GATENIT <step-058>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** removes the `URPM` resist after the implant `UPRI` and
+  cleans the film for the gate cap, `GATENIT`.
+* **Why:** anything left on the film is buried under the cap and printed
+  into the gate at `P1ME`.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP, Iridia or Mattson Aspen II
+  asher — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** whether the clean before the cap includes SC-2 or an
+  HF step; the RCA sequence without HF is an inference (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `UPRIS` removes the ultra-high-resistor resist printed at
 {ref}`URPM <step-055>` after the light resistor implant
-{ref}`UPRI <step-056>`, and delivers a clean, fully doped
+{ref}`UPRI <step-056>`. It delivers a clean, fully doped
 amorphous-silicon film to the deposition that caps it,
 {ref}`GATENIT <step-058>`. It is the last of the three strips of the
 gate module and the last time the gate film is exposed to a wet
@@ -42,9 +57,11 @@ and the thin chemical oxides of two previous cleans.
 ## Step category
 
 `UPRIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type, at the light end of the range. What is specific
-to it is that it is also the *pre-deposition clean* for the gate cap:
-the category page notes that a strip before a furnace step has to
+*post-implant* type, at the light end of the range.
+
+What is specific
+to it is that it is also the *pre-deposition clean* for the gate cap.
+The category page notes that a strip before a furnace step has to
 leave the surface in a state the deposition tolerates, and here that
 surface is the top of every gate.
 
@@ -53,19 +70,26 @@ surface is the top of every gate.
 The resist must go, as always. Beyond that, the film that goes into
 {ref}`GATENIT <step-058>` must be free of organic residue and particles,
 because anything on it is buried under the cap and printed into the gate
-at {ref}`P1ME <step-062>`: a particle becomes a micro-mask that leaves a
-poly stringer, a residue becomes a local etch-rate change. The state of
+at {ref}`P1ME <step-062>`. A particle becomes a micro-mask that leaves a
+poly stringer, a residue becomes a local etch-rate change.
+
+The state of
 the surface also matters for the film that is deposited on it. A silicon
 nitride deposited by {term}`LPCVD` or PECVD on silicon nucleates and adheres
 well; on a contaminated or rough surface it can blister or deposit
-non-uniformly. A thin, uniform chemical oxide under the cap is harmless,
-and a strongly tensile film — of the order of 1 GPa for stoichiometric
+non-uniformly.
+
+A thin, uniform chemical oxide under the cap is harmless.
+A strongly tensile film is
+one of the film-stress problems Hu reviews,[^hu-1991] so the surface it
+is deposited on should at least be clean and uniform. Its stress is
+of the order of 1 GPa for stoichiometric
 LPCVD nitride (typical industry value[^txt-02]; Temple-Boyer et al.
 measured ≈600 MPa for the lowest-stress stoichiometric films in their
 silane/ammonia LPCVD process and found the NH₃/SiH₄ ratio to be the
-dominant parameter[^temple-boyer-1998]) — is
-one of the film-stress problems Hu reviews,[^hu-1991] so the surface it
-is deposited on should at least be clean and uniform. The clean here is
+dominant parameter[^temple-boyer-1998]).
+
+The clean here is
 therefore designed to leave that oxide, not remove it — an inference
 from the cap's requirements, since no public source describes the
 SKY130 surface state before the cap.
@@ -80,8 +104,8 @@ precipitate, and the gate oxide is directly beneath the film. {term}`SC-1` and
 
 ## How it is typically performed
 
-An industry-generic light-implant strip followed by a pre-deposition
-clean, for a 200 mm, 130 nm-era fab:
+*An industry-generic light-implant strip followed by a pre-deposition
+clean, for a 200 mm, 130 nm-era fab:*
 
 1. **Plasma {term}`ash`.** Downstream O₂/N₂ plasma; a single hot step often
    suffices for a light implant, though a fab that runs all implant
@@ -91,7 +115,9 @@ clean, for a 200 mm, 130 nm-era fab:
 2. **Wet strip and clean.** {term}`SPM` for organics, SC-1 for particles and,
    because a furnace step may follow, SC-2 (HCl/H₂O₂/H₂O) for
    metals[^wiki-rca] — the full RCA sequence of Kern and
-   Puotinen.[^kern-1970] The SC-1 exposure is again limited by its silicon
+   Puotinen.[^kern-1970]
+
+   The SC-1 exposure is again limited by its silicon
    etch rate,[^lee-kt-1999] and the sequence finishes without an HF step so
    that a thin chemical oxide remains (inference above). SkyWater's benches
    cover the chemistries: "Akrion Gamma Batch Wet Bench – Sulfuric, SC1,
@@ -117,19 +143,24 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ## Machines likely used at SkyWater
 
-* **GaSonics PEP, Iridia and Mattson Aspen II ashers.**[^skw-01]
-  Strength: **strong** for existence; the assignment of this strip to
-  any one of them is an inference.
+* **GaSonics PEP, Iridia and Mattson Aspen II ashers**[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to
+    any one of them is an inference.
 * **DNS wet bench or FSI Mercury** ("industry standard HF/SC1/SC2")
   for a full RCA sequence, or the **Akrion Gamma** bench.[^skw-01]
-  Strength: strong for existence.
+  - *Tool exists:* strong for existence.
 * **Particle and patterned-wafer inspection — KLA-Tencor Surfscan SP1
-  and AIT (our reading).** A SkyWater *Defect Technician 2* posting
-  reads "General operation of semiconductor defect metrology tools:
-  SEM/AIT/KLA/SP1/EV300/1X";[^job-06] we read "SP1" and "AIT" as
+  and AIT (our reading)**
+  - *SkyWater says:* reads "General operation of semiconductor defect
+    metrology tools: SEM/AIT/KLA/SP1/EV300/1X" in a *Defect Technician 2*
+    posting.[^job-06]
+  - *Tool exists:* medium.
+
+  We read "SP1" and "AIT" as
   KLA-Tencor's Surfscan SP1 unpatterned scanner and Surfscan AIT
   patterned inspector, and the posting expands none of the
-  abbreviations. Strength: medium.
+  abbreviations.
 
 ## Resources required
 
@@ -147,8 +178,8 @@ clean, for a 200 mm, 130 nm-era fab:
 * Previous: {ref}`UPRI <step-056>`; mask: {ref}`URPM <step-055>`.
 * Next: {ref}`GATENIT <step-058>` (the cap deposited on the cleaned
   film), then {ref}`POC <step-059>`.
-* Companion strips: {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`;
-  light-implant exemplar: {ref}`LVTNIS <step-016>`.
+* Same module: companion strips {ref}`P1IS <step-051>`, {ref}`PRIS <step-054>`.
+* Same category: light-implant exemplar {ref}`LVTNIS <step-016>`.
 * Another pre-furnace clean is the one before {ref}`BOX <step-002>` (see
   {ref}`SMAT <step-001>`).
 * Category page: {ref}`Resist strip / clean <category-strip>`.
@@ -218,12 +249,12 @@ clean, for a 200 mm, 130 nm-era fab:
 
 ## Open questions
 
-* Whether the clean before {ref}`GATENIT <step-058>` includes SC-2, an
+* **Pre-cap clean.** Whether the clean before {ref}`GATENIT <step-058>` includes SC-2, an
   HF step, or a dedicated pre-furnace clean separate from the strip,
   is not public; the RCA sequence without HF is an inference.
-* The queue-time limit between this clean and the cap deposition is
+* **Queue time.** The queue-time limit between this clean and the cap deposition is
   unknown.
-* Which asher and bench run this step are not stated.
+* **Which asher and bench.** Which asher and bench run this step are not stated.
 
 <!-- footnotes -->
 

@@ -447,16 +447,48 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07`, `pdk-08`, `skw-01` (glance),
   `raw-data-passives` (the repeated hedge); numbers 2000 (glance), 8250 ×2 (glance tool name, and
   "lists the 8250"); hedges "inference", "not public" (glance), "our extraction" (the repeat).
-  REGROUPED: every split and every table row, same digits in the same order. **LOST number_order**
-  ('300', '6222', …, '300', '2.85', '6224'): the lead-in keeps "300" alone in its sentence ("The short
-  structures scatter more than their 300 Ω/sq counterparts: …") — the G11 case (a number left alone
-  drops out of the regroup check); `numbers` has no LOST, and the rest of the tuple is the table rows
-  and the closing sentence in the base order. Declared `markers,numbers,hedges`; the LOST line
-  remains and is explained here.
+  REGROUPED: every split and every table row, same digits in the same order (the "300" of the
+  lead-in, the table rows and the closing sentence form one run in the base order). No LOST. (A first
+  draft caption "… 2 kΩ/sq structures …" added a number the page does not write there; the caption
+  was reworded to carry no number.) Declared `markers,numbers,hedges`: clean.
 * **Marker coverage.** 13 flags, all read (list lead-ins by rule; split pieces whose base marker
   belonged to another clause; "Both are consequences …" is the page's own conclusion, unmarked in the
   base too).
 * **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 7 → 2 (above).
+
+### 057 UPRIS — done
+
+* **R-H3.** Not applied: the passage after the figure is 71 words (an H3 needs ≥ 120).
+* **Lead.** First sentence (29 w) split at ", and delivers" → "It delivers …" (R-GLANCE step 8).
+* **R-CATEGORY.** Classification sentence alone; the "What is specific to it is that …" sentence is
+  its own label (step 3), split at its colon (49 → 17 + 32 w).
+* **R-PARA / R-SENTENCE.** "Why" paragraph 1 (206 w) → four paragraphs (the resist and what it would
+  print; the nitride's adhesion; the chemical oxide and film stress; the conclusion "The clean here
+  is therefore designed to leave that oxide … — an inference …", unchanged). Its 49-word sentence
+  split at the colon before "a particle becomes a micro-mask …". Its 78-word sentence split into
+  three: "A thin, uniform chemical oxide under the cap is harmless." / "A strongly tensile film is one
+  of the film-stress problems Hu reviews,[^hu-1991] so the surface …" / the em-dash material as its
+  own sentence after it (R-SENTENCE step 1, as in the guide's 066 example), "Its stress is of the
+  order of 1 GPa for stoichiometric LPCVD nitride (typical industry value[^txt-02]; Temple-Boyer et
+  al. …[^temple-boyer-1998])." — "Its stress is" added (subject + verb; "stress" is the page's own
+  word: "film-stress", "lowest-stress"); the hedge and both markers stay with the value.
+* **R-PARA step 4.** "Wet strip and clean" (87 w): lead + continuation paragraph.
+* **R-HEDGE, R-TOOLS** (ashers and benches: grades verbatim; SP1/AIT: *SkyWater says:* the posting
+  quotation with the page's verb "reads", our reading "We read "SP1" and "AIT" as …" as the
+  continuation paragraph), **R-OPENQ** (labels "Pre-cap clean", "Queue time", "Which asher and
+  bench").
+* **R-RELATED.** "Companion strips: P1IS, PRIS; light-implant exemplar: LVTNIS." (two relationships)
+  → `Same module:` companion strips and `Same category:` light-implant exemplar (LVTNIS is a strip
+  step in another module). The BOX/SMAT pre-furnace-clean bullet keeps no label.
+* **R-GLANCE.** Not public carries "the RCA sequence without HF is an inference", as Open questions
+  says.
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, hedges "inference" ×2, "not
+  public", identifiers `P1ME`, `SC-2`, `SKY130` — all the glance box. No LOST. Declared
+  `markers,hedges,identifiers`: clean.
+* **Marker coverage.** 6 flags, all read: the three pieces of the 78-word sentence each keep the
+  markers of their own clause ("A thin, uniform chemical oxide … is harmless." had none in the base
+  either); "We read …" (base marker on the quotation); a label.
+* **Caps**: para > 100 1 → 0; item > 60 1 → 0; sentence > 45 3 → 0.
 
 ## Content problems for the owner (not fixed)
 
