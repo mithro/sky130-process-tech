@@ -113,6 +113,18 @@ CY7C43684V, have selectable text). The QTP number (98517) and date (February
 1999) are legible, but no title, technology code or process figures could be
 confirmed without OCR, so no record was added.
 
+## Fifth batch: R42D/R42H/R42HD Hot-Aluminum reports and two more R52 codes
+
+Five more records, all Fab 4 (Bloomington, MN):
+
+| id | technology_codes | source file id | notes |
+|---|---|---|---|
+| qtp-098357 | R42D | 94096 | this is QTP 98357 itself, cited differently by qtp-003907 and qtp-020305; its own cover title ("4 Meg") and device description ("1 Meg") for the same parts disagree internally |
+| qtp-098111 | R42H, R42HHA | 93956 | cover/headers say "R42H", process block says "R42HHA" |
+| qtp-098086 | R42HD | 93936 | distinguishes itself (Hot Al) from still-unretrieved QTP 98248 (no Hot Al), same technology code |
+| qtp-099503 | R52D-3 | 94336 | repeats qtp-003906's origin row with different wording; gate oxide printed 50 Å here vs 55 Å in qtp-003906 |
+| qtp-002603 | R52LD-3 | 92046 | new code; dates its own origin to QTP 99075 (Apr 99) |
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
@@ -121,11 +133,10 @@ confirmed without OCR, so no record was added.
   R95LD-3R, further S4AD-5 variants (EZ-Color, Neutron, automotive, hydra,
   quark, Latch, nitride, ovation). Staged PDFs are at `tmp/stage/<fid>.pdf`,
   extracted text at `tmp/extracted/<fid>.txt` (both done).
-- Group C: 22 more fetched-and-extracted file ids not yet turned into records
-  (all of `tmp/priority_order_c.txt` except the 5 codes and 9 further reports
-  handled above, and 94146 which is unusable): 94146 (unusable, above),
-  94096 (QTP 98357), 93956 (QTP 98111), 93936 (QTP 98086), 94336 (QTP 99503),
-  92046 (QTP 002603), 93646 (QTP 97118 -- referenced by qtp-097201 above),
+- Group C: 17 more fetched-and-extracted file ids not yet turned into records
+  (all of `tmp/priority_order_c.txt` except the 5 codes, 14 further reports
+  handled above, and 94146 which is unusable):
+  93646 (QTP 97118 -- referenced by qtp-097201 above),
   94266 (QTP 99325), 93731 (QTP 97211), 93746 (QTP 97222), 93801 (QTP 97344),
   93896 (QTP 97506), 93831 (QTP 97396 -- referenced by qtp-097517 above),
   93926 (QTP 98081), 94401 (QTP L000004, TSMC 0.25 µm foundry report),

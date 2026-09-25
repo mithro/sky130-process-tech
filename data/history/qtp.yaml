@@ -5106,3 +5106,258 @@ documents:
     dates a "R42HD Hot Aluminum" variant to QTP 98085 (May 98) -- both previously only referenced by other
     reports in this corpus (qtp-098115, qtp-098313, qtp-098437, this session), never independently
     retrieved before now. R42HDHA here carries the same 0.42 µm/110 Å figures as plain R42HD.
+- id: qtp-098357
+  origin: cypress
+  doc_type: QTP
+  number: '98357'
+  cypress_document_number: null
+  title: 4 Meg SRAM With NoBL Architecture, R42D Technology, Hot Aluminum
+  version: '1.1'
+  date_printed: May, 1999
+  url: https://www.cypress.com/file/94096/download
+  archive_url: https://web.archive.org/web/20201205080246/https://www.cypress.com/file/94096/download
+  retrieved: '2026-09-25'
+  sha256: 76842d347a7b388dad95cb528dcf828718122c263f8fa9133d19db5787101a07
+  technology_codes:
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1350
+  - CY7C1351
+  - CY7C1352
+  - CY7C1353
+  die_ids:
+  - 7C1350A
+  - 7C1352A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.35 µm
+    gate_oxide: SiO2 / 70Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42D (with Hot AL)
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98357'
+    description: qualify 4 Meg SRAM with NoBL Architecture in R42D technology with Hot Al.
+    date: null
+  quotes:
+  - text: qualify 4 Meg SRAM with NoBL Architecture in R42D technology with Hot Al.
+    location: p.2, Product Description, Qualification Purpose
+  - text: 1 Meg SRAM with NoBL Architecture, R42D Technology with Hot Al
+    location: p.2, Product Description, Device Description
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42D (with Hot AL)'
+    location: p.2, Technology/Fab Process Description
+  notes: This is QTP 98357 itself, already cited by two other reports in this corpus with different
+    descriptions -- qtp-003907's history row calls it "New Technology R42D with Hot Al / 1Meg with NoBL
+    Architecture, CY7C1350/CY7C1352" and qtp-020305 cites it too (see that record's notes). This report's
+    own cover title calls the family "4 Meg SRAM", while its own "Device Description" field for the same
+    marketing parts (CY7C1350/CY7C1352) instead says "1 Meg SRAM" -- an internal inconsistency in the
+    primary document itself, not only a cross-report one. Process figures (0.35 µm, 70 Å gate oxide, 2
+    metal layers) match qtp-003907's R42D block exactly.
+- id: qtp-098111
+  origin: cypress
+  doc_type: QTP
+  number: '98111'
+  cypress_document_number: null
+  title: 4 Meg SRAM, R42H Technology, Hot Aluminum
+  version: '2.0'
+  date_printed: June, 1999
+  url: https://www.cypress.com/file/93956/download
+  archive_url: https://web.archive.org/web/20210418214054/https://www.cypress.com/file/93956/download
+  retrieved: '2026-09-25'
+  sha256: 2a58ef86ebfee39326ddb6a706ce91ba0427a8bb105052af35287a03484ebbea
+  technology_codes:
+  - R42H
+  - R42HHA
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62148
+  die_ids:
+  - '62148'
+  - 7C11481
+  process_description:
+    number_of_metal_layers: 1
+    metal_composition: 'Metal 1: 500Å Cu-Ti/8000Å Al'
+    passivation: 3K Å Oxide + 6,000 Å Nitride (both with PECVD)
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42HHA
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98111'
+    description: To qualify 4 Meg SRAM, CY62148 in R42H Technology w/ Hot Al.
+    date: null
+  quotes:
+  - text: To qualify 4 Meg SRAM, CY62148 in R42H Technology w/ Hot Al.
+    location: p.2, Product Description, Qualification Purposes
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42HHA'
+    location: p.2, Technology/Fab Process Description
+  - text: R42HD Technology qualified in Fab 4(1Meg SRAM)
+    location: p.7, footnote 1
+  notes: The cover title and running headers call this "R42H Technology, Hot Aluminum", while the
+    process-description section header and Die Fab Line ID instead say "R42HHA" -- quoted verbatim rather
+    than reconciled. Single metal layer, 0.42 µm, 110 Å gate oxide. References "R42HD Technology qualified
+    in Fab 4 (1Meg SRAM)" as a reliability baseline; qtp-001605 (this session) dates that qualification to
+    QTP 98064.
+- id: qtp-098086
+  origin: cypress
+  doc_type: QTP
+  number: '98086'
+  cypress_document_number: null
+  title: 4 Meg SRAM, R42HD Technology, Hot Aluminum
+  version: '1.1'
+  date_printed: January, 1999
+  url: https://www.cypress.com/file/93936/download
+  archive_url: https://web.archive.org/web/20211025143415/https://www.cypress.com/file/93936/download
+  retrieved: '2026-09-25'
+  sha256: 69b8be6282c26566deb4981ff7d420a22c925ae2b90a32ec2a9a9d44b5a42b1c
+  technology_codes:
+  - R42HD
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1049
+  - CY7C1041
+  die_ids:
+  - 7C1549A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R4HD
+    transistors: null
+    gates: null
+  qualification_history:
+  - number: '98086'
+    description: qualify 4 Meg SRAM, 5V operation with Hot Al process for the qualified R42HD technology.
+    date: null
+  quotes:
+  - text: qualify 4 Meg SRAM, 5V operation with Hot Al process for the qualified R42HD technology.
+    location: p.2, Product Description, Qualification Purpose
+  - text: QTP 98086 - 4 Meg SRAM, R42HD Technology with hot Aluminum.
+    location: p.6, footnote 1
+  - text: QTP 98248 – 4 Meg SRAM, R42HD Technology
+    location: p.7, footnote 2
+  notes: 'This is QTP 98086 itself, distinct from the still-unretrieved "QTP 98248" it cites alongside
+    itself for a combined failure-rate total ("Total device hours for 4 Meg SRAM, R42HD process, QTP 98248
+    (R42HD) and QTP 98086 (R42HD with hot Al)") -- two separate 4 Meg R42HD qualifications, with and
+    without Hot Al, distinguished by QTP number rather than by a different technology code. Die Fab Line ID
+    again printed "Fab4/R4HD" as in this corpus''s other 1998-99 R42HD reports.'
+- id: qtp-099503
+  origin: cypress
+  doc_type: QTP
+  number: '99503'
+  cypress_document_number: null
+  title: 4 Meg Synchronous Cache RAM, R52D-3 Technology at Fab 4
+  version: '1.1'
+  date_printed: December, 2002
+  url: https://www.cypress.com/file/94336/download
+  archive_url: https://web.archive.org/web/20210422145212/https://www.cypress.com/file/94336/download
+  retrieved: '2026-09-25'
+  sha256: 4143363209c23cde0f2fbe6ea093267147e954ede9c54e6ba2d9d707a5449d35
+  technology_codes:
+  - R52D-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1325B
+  - CY7C1327B
+  - CY7C1345B
+  - CY7C1347B
+  - CY7C1338B
+  - CY7C1339B
+  die_ids:
+  - 7C1325A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500 Å TiW/6000 Å Al-.5%Cu/300 Å TiW; Metal 2: 300Å CoTi/8000Å Al-.5%Cu/300Å
+      TiW'
+    passivation: 1000Å Oxide + 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.25 µm
+    gate_oxide: SiO2 / 50 Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52D-3
+    transistors: 29,066,890
+    gates: 4.8 millions
+  qualification_history:
+  - number: '99311'
+    description: New Technology R52D-3 / New Product, 2Meg SRAM, CY7C1329
+    date: Aug 99
+  - number: '99503'
+    description: New Product, 4Meg Sync ,CY7C1325B
+    date: Jan 00
+  quotes:
+  - text: New Technology R52D-3 / New Product, 2Meg SRAM, CY7C1329
+    location: p.2, Product Qualification History, row 99311
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52D-3'
+    location: p.3, Technology/Fab Process Description
+  - text: SiO2 / 50 Å
+    location: p.3, Technology/Fab Process Description, Gate Oxide Material/Thickness
+  notes: Independently repeats R52D-3's origin row (QTP 99311, Aug 99) with slightly different wording from
+    qtp-003906's own row for the same QTP number ("New Technology R52D-3 / New Product, 2Meg SRAM, CY7C1329"
+    here vs "New Technology R52D-3 , 2Meg CY7C1329" there) -- the same event, worded differently. This
+    report's printed gate oxide is 50 Å against qtp-003906's 55 Å for the same technology code and fab;
+    both are quoted verbatim above rather than reconciled.
+- id: qtp-002603
+  origin: cypress
+  doc_type: QTP
+  number: '002603'
+  cypress_document_number: null
+  title: 4 Meg FCP MoBL SRAM Family, R52LD-3 Technology, Fab 4
+  version: '1.2'
+  date_printed: December, 2002
+  url: https://www.cypress.com/file/92046/download
+  archive_url: https://web.archive.org/web/20211207090612/https://www.cypress.com/file/92046/download
+  retrieved: '2026-09-25'
+  sha256: d01d9b808683ed189330b7d0d917d1269ee827a960d78d2ceb8686ad8cfdeab7
+  technology_codes:
+  - R52LD-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62145V
+  - CY62146V
+  - CY62147V
+  die_ids:
+  - 7C62145V
+  - 7C62146V
+  - 7C62147V
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al-0.5%Cu/300Å TiW; Metal 2: 300Å CoTi/8,000Å Al-0.5%Cu/300Å
+      TiW'
+    passivation: 1000Å PECVD Oxide + 9000Å PECVD Si2N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.25 µm/0.3 FETS
+    gate_oxide: SiO2 / 70 Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R52LD-3
+    transistors: 25.2 million
+    gates: 8.4 million
+  qualification_history:
+  - number: '99075'
+    description: New Technology R52LD-3 /New SRAM MoBL, CY62137V
+    date: Apr 99
+  - number: '002603'
+    description: New Product, 4Meg, Synchronous SRAM, CY62146V, R52LD-3
+    date: Jun 00
+  quotes:
+  - text: New Technology R52LD-3 /New SRAM MoBL, CY62137V
+    location: p.2, Product Qualification History, row 99075
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52LD-3'
+    location: p.3, Technology/Fab Process Description
+  - text: CMOS, Double Metal /0.25 µm/0.3 FETS
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule
+  notes: R52LD-3 is a technology code not previously recorded in this corpus (distinct from R52LD-5R,
+    qtp-004405, this session). Its own origin is dated here as QTP 99075 (Apr 99, "New Technology R52LD-3").
