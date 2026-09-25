@@ -3,21 +3,9 @@
 
 The P-well block mask is the {term}`reticle` that, on the step pages'
 reading, keeps SKY130's P-well implant out of the places that must not
-receive it: the resist printed through it at {ref}`PWBM <step-026>`
+receive it. On the step pages' reading, the resist printed through it at {ref}`PWBM <step-026>`
 remains over the N-wells and over the special 20 V regions drawn as
-`pwbm`, the boron well implants {ref}`PWI <step-027>` and
-{ref}`PWI2 <step-028>` go into all the silicon it leaves open, and the
-resist is stripped at {ref}`PWIS <step-029>`. It is the mask of this
-reference whose public record is thinnest and most at odds with itself:
-`masks.csv` does not mark it as used, the process-steps sheet records
-plates for it on only two of the eight MPW runs, and no rendered die of
-any run draws the layer the renders use for it. This page gathers what
-public sources say about the mask itself — its PDK entry and layers, the
-plates the process-steps sheet records, what the public renders show,
-the lithography it needs and the rules that constrain it — and reports
-the gaps without drawing conclusions from them. How the step is performed
-is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+`pwbm`.
 
 | | PWBM — P-Well Block Mask |
 |---|---|
@@ -34,7 +22,27 @@ is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 0 on every run[^mask-renders] |
 | Steps that use the pattern | 4 steps; see {ref}`Steps that use this mask <mask-pwbm-steps>` |
 
+:::{seealso}
+How the step is performed
+is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the step pages' reading, the boron well implants {ref}`PWI <step-027>` and
+{ref}`PWI2 <step-028>` go into all the silicon the resist leaves open, and the
+resist is stripped at {ref}`PWIS <step-029>`. `PWBM` is the mask of this
+reference whose public record is thinnest and most at odds with itself:
+
+* `masks.csv` does not mark it as used
+* the process-steps sheet records
+  plates for it on only two of the eight MPW runs
+* no rendered die of
+  any run draws the layer the renders use for it
+
+This page reports
+the gaps without drawing conclusions from them.
 
 The PDK has no drawn P-well layer: `gds_layers.csv` lists `pwell` only
 with `resistor`, `label`, `pin` and `cut` purposes, and Table C3 of the
@@ -42,7 +50,9 @@ with `resistor`, `label`, `pin` and `cut` purposes, and Table C3 of the
 area)".[^pdk-06] The drawn layer that carries this mask's name is
 `pwbm`, "Regions (in UHVI) blocked from p-well implant (DE MOS devices
 only)", whose rule set's function line is "Define p-well
-block".[^pdk-06][^pdk-periph] The {ref}`PWBM <step-026>` page puts the
+block".[^pdk-06][^pdk-periph]
+
+The {ref}`PWBM <step-026>` page puts the
 two together and infers a plate generated from `nwell` together with
 `pwbm`, so that the P-well goes everywhere except into N-wells and the
 20 V regions; the masks index records that pairing as an inference.
@@ -61,7 +71,9 @@ native NMOS and PMOS) and one of its two "Psub-Deep Nwell Diode"
 rows.[^pdk-06] That diode appears again in rule ulvt-.2, "areaid.low_vt
 must enclose pwbm.dg for the UHV dnw-psub diode texted
 "condiodeHvPsub"", in a rule set whose function is "Identify
-dnwdiodehv_Psub(BV~60V)".[^pdk-periph] Table F2b marks `-` for `PWBM`
+dnwdiodehv_Psub(BV~60V)".[^pdk-periph]
+
+Table F2b marks `-` for `PWBM`
 in every other row, including the standard 1.8 V and 5 V NMOS whose
 P-well the block would, on the step page's reading, leave
 open.[^pdk-06] The table records created shapes, so on it the plate is
@@ -87,17 +99,21 @@ layer is `pwbm` at 19:44, and `nwell` is at 64:20.[^pdk-06] `masks.csv`
 lists "P-Well Block Mask, PWBM" with the `Used in SKY130` field
 blank,[^pdk-05] which the {ref}`PWBM <step-026>` page treats as a
 documentation inconsistency, since the layer, its rules and the 20 V
-devices that depend on it exist. Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
+devices that depend on it exist.
+
+Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>)
 gives `PWBMCD` 0.84 and `PWBMCDSP` 1.27, the same values as `NWMCD` and
-`NWMCDSP`;[^pdk-03] we read the match as consistent with a plate whose
+`NWMCDSP`.[^pdk-03] We read the match as consistent with a plate whose
 smallest features are N-well outlines (inference; the table does not
 say so), though `PWDEM`, which the step pages do not pair with `nwell`,
-has the same pair, so the values may be a common well-mask minimum. The
+has the same pair, so the values may be a common well-mask minimum.
+
+The
 periphery rules give no values for `pwbm` ("N/A"),[^pdk-periph] but the
-PDK's *Error Messages* page, which describes "many of the automated DRC
+PDK's *Error Messages* page gives `pwbm.5` as "0.84 min. spacing of pwbm_holes" and
+`rpm.10` as "2 min. spacing of rpmNotXmt & pwbm".[^pdk-errors] The page describes "many of the automated DRC
 rules that are checked by SkyWater as part of the acceptance criteria
-for GDS data", gives `pwbm.5` as "0.84 min. spacing of pwbm_holes" and
-`rpm.10` as "2 min. spacing of rpmNotXmt & pwbm".[^pdk-errors] The PDK
+for GDS data".[^pdk-errors] The PDK
 publishes no operation that combines `nwell` and `pwbm` into a
 plate.[^pdk-periph]
 
@@ -120,7 +136,9 @@ sheet records a plate.[^mask-renders][^steps-sheet] The site says that
 a given shuttle", and states the limits of its images: "These are
 renders of *drawn* data, not photomask artwork: reticle pitch, 4x
 reduction, mirroring and the frame features the fab adds are not
-modelled."[^mask-renders] The renders therefore cannot show what the
+modelled."[^mask-renders]
+
+The renders therefore cannot show what the
 MPW-6 and MPW-8 plates carry, and on the step page's reading, in which
 the plate also covers N-wells, a render of `pwbm` alone would be empty
 even for a plate with shapes (inference). The site's metadata carries no
@@ -149,19 +167,21 @@ is the heading of the run's columns in the tab
 | MPW-8 | `5CS8017AC` | `S8017AA024A` |
 
 * **Partial record.** The sheet records `PWBM` plates for MPW-6 and
-  MPW-8 only and does not say why the plates for the two P-well masks
+  MPW-8 only.[^steps-sheet]
+
+  The sheet does not say why the plates for the two P-well masks
   are recorded for only some runs ({ref}`masks-mpw-runs`).[^steps-sheet]
   This page reports what is recorded and does not conclude that the
-  mask was absent from the other six runs: the gap may be in the record
+  mask was absent from the other six runs. The gap may be in the record
   rather than in the runs (inference: on the step pages' reading the
   P-well implants of every wafer go through this mask's resist).
 * **No drawn shapes.** No rendered die on any run draws `pwbm`, the
   layer the renders use for this mask, so the renders neither show use
-  of the mask on MPW-6 and MPW-8 nor its absence elsewhere, and this
+  of the mask on MPW-6 and MPW-8 nor its absence elsewhere.[^mask-renders] This
   page does not read the two recorded plates as evidence that any
   project used the 20 V devices.[^mask-renders][^steps-sheet]
 * **Plate number.** `024` lies between `020` for `FOM` and `026` for
-  `PWDEM`, and a few numbers above `010` for `NWM`; the numbers do not
+  `PWDEM`, and a few numbers above `010` for `NWM`.[^steps-sheet] The numbers do not
   follow process order elsewhere, and the sheet does not say what they
   encode, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
@@ -172,58 +192,57 @@ is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`PWBM <step-026>` page notes that the
+### Exposure class
+
+The {ref}`PWBM <step-026>` page notes that the
 `pwbm` rules carry no minimum width and takes the N-well outlines as the
 plate's tightest features — 0.840 µm width and 1.270 µm space, with
-{math}`k_1 \approx 1.4` at NA 0.6 — and infers an i-line level; the
+{math}`k_1 \approx 1.4` at NA 0.6 — and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
-tools but assigns no layer to them.[^skw-01] Wong et al.'s mask error
+tools but assigns no layer to them.[^skw-01]
+
+Wong et al.'s mask error
 factor "is unity for large features, but increases rapidly when the
 critical dimension (CD) is less than 0.5 (lambda) /NA for line-space
-patterns";[^wong-1998] at 365 nm and NA 0.48 that is about 0.38 µm (our
+patterns".[^wong-1998] At 365 nm and NA 0.48 that is about 0.38 µm (our
 arithmetic), far below these features.
 
-**Resist.** The resist must stop the P-well boron wherever the plate
+### Resist and tone
+
+The resist must stop the P-well boron wherever the plate
 leaves it. The {ref}`PWBM <step-026>` page reads a resist of roughly
 2 µm from published examples. An IBM retrograde-well patent masks its
 phosphorus N-well implants of up to 850 keV with resist "typically
 1800–2500 nm in thickness", but implants its 550 keV P-well boron
 through a 200 nm polysilicon mask, which it says substantially
-eliminates boron scattering, and uses a resist of the same thickness
-only for its 150 keV and 45 keV boron;[^pat-well-ibm] Hook et al. model a
+eliminates boron scattering.[^pat-well-ibm] It uses a resist of the same thickness
+only for its 150 keV and 45 keV boron.[^pat-well-ibm]
+
+Hook et al. model a
 "2.3 µm-thick pwell mask",[^hook-2003] and a Zilog patent needs at least
 3.4 µm for a 600–800 keV P-well.[^pat-resist-zilog] The PDK's P-well
 peak at 0.42 µm (Table 3a) implies lower energies than the deepest of
-those examples (inference).[^pdk-03] The ion
+those examples (inference).[^pdk-03]
+
+The ion
 range that sets the thickness is what SRIM computes,[^ziegler-2010] and
 Lee et al. measured the outgassing of thick resists under MeV
 implantation.[^lee-1996] SkyWater's resist and its thickness are not
 public. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Resist edges.** Ions scattered from the resist edge shift the
+### Resist edges
+
+Ions scattered from the resist edge shift the
 threshold of transistors near the well boundary, "of up to 100 mV …
-over a lateral distance on the order of a micrometer";[^hook-2003] the
+over a lateral distance on the order of a micrometer".[^hook-2003] The
 {ref}`PWBM <step-026>` page notes that for P-well edges the shift raises
 the NMOS threshold. Sheu et al. model the effect.[^sheu-2006]
 
-**Pattern transfer.** Nothing is etched through this resist. On the
-step pages' readings the pattern is transferred into the silicon as
-dopant by {ref}`PWI <step-027>` and {ref}`PWI2 <step-028>` on the
-{ref}`high-energy implanter <machine-high-energy-implanter>` or
-{ref}`medium-current implanter <machine-medium-current-implanter>`
-class, and the resist is removed at {ref}`PWIS <step-029>` on the
-{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
-{ref}`wet bench <machine-wet-bench>` classes. The PDK gives the result:
-a "p-well peak concentration" of 4E+017 cm⁻³ at a "p-well peak
-coordinate" of 0.42 µm, a "y.char" of 0.13 µm and a "min. p-well width
-to guarantee 90 % peak concentr." of 0.33 µm (Table 3a), and a P-well
-vertical dimension of 0.75 µm (Table 3b).[^pdk-03] A Hynix twin-well
-patent gives a contemporaneous three-energy boron P-well, 350, 150 and
-80 keV.[^pat-well-hynix]
+### Overlay and alignment
 
-**Overlay.** The {ref}`PWBM <step-026>` page reads `PWBM` and
+The {ref}`PWBM <step-026>` page reads `PWBM` and
 {ref}`NWM <step-017>` as registering to the same trench marks, so that
 their mutual overlay sets the N-well/P-well junction, which Table 3b
 places 0.034 µm from the drawn edge ("N-w/P-w junction (from drawn
@@ -231,6 +250,29 @@ edge)").[^pdk-03] Rubin, Morris and Jasper describe how retrograde-well
 implant control sets the narrow n+/p+ isolation.[^rubin-2002] If the
 plate carries the N-well outlines, as the step page reads it, the two
 well masks print the same edges in opposite tone (our reading).
+
+### Pattern transfer
+
+Nothing is etched through this resist. On the
+step pages' readings the pattern is transferred into the silicon as
+dopant by {ref}`PWI <step-027>` and {ref}`PWI2 <step-028>` on the
+{ref}`high-energy implanter <machine-high-energy-implanter>` or
+{ref}`medium-current implanter <machine-medium-current-implanter>`
+class. On the step pages' readings the resist is removed at {ref}`PWIS <step-029>` on the
+{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
+{ref}`wet bench <machine-wet-bench>` classes.
+
+The PDK gives the result:[^pdk-03]
+
+* a "p-well peak concentration" of 4E+017 cm⁻³ at a "p-well peak
+  coordinate" of 0.42 µm, a "y.char" of 0.13 µm and a "min. p-well width
+  to guarantee 90 % peak concentr." of 0.33 µm (Table 3a)
+* a P-well
+  vertical dimension of 0.75 µm (Table 3b)
+
+A Hynix twin-well
+patent gives a contemporaneous three-energy boron P-well, 350, 150 and
+80 keV.[^pat-well-hynix]
 
 (mask-pwbm-steps)=
 ## Steps that use this mask
@@ -265,6 +307,8 @@ The `pwbm` rules of the periphery rules, with the rules of other layers
 that name `pwbm`; the periphery rules give no values ("N/A"), but the
 Error Messages page's messages give some (after the table).[^pdk-periph]
 
+:::{table} The `pwbm` rules and the rules of other layers that name `pwbm`, as published; the periphery rules give no values
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | pwbm.1 | "Min width of pwbm.dg" | N/A |
@@ -278,16 +322,25 @@ Error Messages page's messages give some (after the table).[^pdk-periph]
 | rpm.10 | "Min spacing of rpm to pwbm" | N/A |
 | rpm.11 | "rpm should not overlap or straddle pwbm except cells […]" | N/A |
 | ulvt-.2 | "areaid.low_vt must enclose pwbm.dg for the UHV dnw-psub diode texted "condiodeHvPsub"" | NA |
+:::
 
 The Error Messages page's messages give values for two of these rules:
 `pwbm.5`, "0.84 min. spacing of pwbm_holes", and `rpm.10`, "2 min.
 spacing of rpmNotXmt & pwbm" (with "rpmNotXmt must not overlap
-pwbm").[^pdk-errors] Table 2 of *Criteria & Assumptions* gives `PWBMCD`
-0.84 and `PWBMCDSP` 1.27.[^pdk-03] Table 3d gives punch-through spacings
-of "p+ in nwell to pwell" 0.05 µm (`PPTS`) and "n+ in pwell to nwell"
-0.15 µm (`PNPTS`), and Table 7 a "spacing of p-well outside deep n-well
-to deep n-well mask edge" of 0.12 (`NWDNWENCL`) and a "p-well in deep
-n-well to p-sub" of 1.2 (`NWDNWOL`).[^pdk-03] The test tile's pad
+pwbm").[^pdk-errors] *Criteria & Assumptions* gives the following:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask
+| Parameter | PDK table | Published description | Value |
+|---|---:|---|---|
+| `PWBMCD` | 2 | — | 0.84 |
+| `PWBMCDSP` | 2 | — | 1.27 |
+| `PPTS` | 3d | punch-through spacing of "p+ in nwell to pwell" | 0.05 µm |
+| `PNPTS` | 3d | punch-through spacing of "n+ in pwell to nwell" | 0.15 µm |
+| `NWDNWENCL` | 7 | "spacing of p-well outside deep n-well to deep n-well mask edge" | 0.12 |
+| `NWDNWOL` | 7 | "p-well in deep n-well to p-sub" | 1.2 |
+:::
+
+The test tile's pad
 documentation has "Pwell to Pwell Isolation in DNW" structures at spaces
 of 1.40, 1.20, 1.00 and 0.84 µm.[^raw-data-testtile-pads] None of these
 is stated as a rule for this mask; for the plate on the step page's
@@ -296,23 +349,21 @@ features (inference).
 
 ## Related pages
 
-* {ref}`PWBM <step-026>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`
+* **Steps.** {ref}`PWBM <step-026>`, {ref}`PWI <step-027>`, {ref}`PWI2 <step-028>`
   and {ref}`PWIS <step-029>` — the mask step, the two implants and the
   strip.
-* {ref}`mask-nwm` — the N-well mask, whose drawn layer the step page
-  pairs with this mask.
-* {ref}`mask-pwdem` — the drain-extended P-well mask, which puts a
-  lighter P-well back into part of the blocked regions.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the partial plate record of the two P-well masks.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-high-energy-implanter` — the implant class that uses
-  the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-high-energy-implanter` — the implant class that uses
+  the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-nwm` — the N-well mask, whose drawn layer the step page
+  pairs with this mask. {ref}`mask-pwdem` — the drain-extended P-well mask, which puts a
+  lighter P-well back into part of the blocked regions.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the partial plate record of the two P-well masks.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

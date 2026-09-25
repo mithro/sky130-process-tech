@@ -416,3 +416,45 @@ The sibling of nsdm; the same treatment throughout.
   Exposure-class formula sentence (49); the quick-facts Polarity cell. Before → after: paragraphs 12 →
   0, items 0 → 0, sentences 22 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 9. pwbm — done
+
+* **Rules applied.** R-INTRO (190 → 54 words); R-PARAMS; R-CAPTION (rule table, parameter table);
+  R-PARA, R-SENTENCE; R-LIST (the three signs of the thin record; the Table 3a/3b result); R-RELATED;
+  R-H3 (Exposure class, Resist and tone, Resist edges, Overlay and alignment, Pattern transfer).
+* **Template sentence with an extra clause.** This page's template sentence ends "— and reports the gaps
+  without drawing conclusions from them". The listing part was deleted as on every page; the extra
+  clause is kept, with its subject, as "This page reports the gaps without drawing conclusions from
+  them." after the list it refers to (§7 step 4: "Any other clause in it is kept").
+* **Intro.** Kept the first sentence up to its colon and "On the step pages' reading, the resist … remains
+  over the N-wells and over the special 20 V regions drawn as `pwbm`." Moved with the hedge repeated:
+  "On the step pages' reading, the boron well implants … go into all the silicon the resist leaves open
+  …" ("it" → "the resist"); "It is the mask of this reference whose public record is thinnest …:" →
+  "`PWBM` is the mask …:" followed by its three clauses as a list.
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **R-PARAMS.** Six parameters (Tables 2, 3d, 7) under "*Criteria & Assumptions* gives the
+  following:[^pdk-03]"; the two Table 2 rows have no published description on the page, so the cell
+  is `—`. The base's two `[^pdk-03]` became one on the lead-in (one source, as the fom ruling M4 did):
+  `LOST markers: 'pdk-03'` ×1.
+* **Error Messages sentence.** "The periphery rules give no values … ("N/A"),[^pdk-periph] but the PDK's
+  Error Messages page, which describes "…", gives `pwbm.5` as … and `rpm.10` as …" → the relative
+  clause became the next sentence ("The page describes "…".[^pdk-errors]") so that the "but" contrast
+  stays in one sentence.
+* **Declared additions** (`--allow-added markers,numbers,quotes,refs`): markers `pat-well-ibm` (the IBM
+  sentence split before "uses a resist of the same thickness"), `mask-renders` ("No drawn shapes"
+  split), `pdk-errors` (the "describes" sentence), `steps-sheet` ×2 ("Partial record" lead split off;
+  "Plate number" split at its semicolon); numbers `2`, `3`, `7` (parameter-table column). The
+  LOST/ADDED `quotes` and `refs` lines are the tool pairing quotation marks and backticks across the new
+  table and across "{ref}`PWIS <step-029>`. `PWBM` is …"; read by hand, no quotation and no role changed.
+* **LOST lines that are not losses:** `number_order` ('3', '0.05', '0.15', '7', '0.12', '1.2') is the
+  parameter table (0.05 µm, 0.15 µm, 0.12, 1.2 in the base order, with the base's tables).
+* **Marker coverage.** Flags read: each flagged sentence had no marker of its own in the base, or its
+  marker sits on the list lead-in.
+* **Other edits.** "Partial record" bullet: the lead sentence split at "and does not say why" ("The sheet
+  does not say why …", marker repeated), and the continuation's colon → full stop ("… the other six
+  runs. The gap may be in the record …", the parenthetical inference staying with that clause).
+* **Over the caps after the pass:** the Table F2b sentence (46 by the script, "5/20" and the device
+  list), "We read the match as consistent …" (46; its "though `PWDEM` …" clause qualifies the reading
+  and cannot stand alone), the two-quotation "The site says …" sentence (52 by the script); three
+  quick-facts cells. Before → after: paragraphs 9 → 0, items 1 → 0, sentences 15 → 3, cells 3 → 3.
+* **Content problems for the owner:** none found.
