@@ -575,14 +575,21 @@ documented fact"[^pdk-04]) and `:269` ("**Trench depth.** No SkyWater document s
 #### R-TOOLS — evidence grading buried in run-on bullets
 *(report A F4)*
 
-**Applies when** a bullet under `## Machines likely used at SkyWater` contains "Strength:".
+**Applies when** a bullet under `## Machines likely used at SkyWater` names a *machine or tool
+family* and contains "Strength:". A bullet about a material, a supplier or a wafer keeps its
+original form and is left out of the recap table.
 
 **Do.**
 1. Keep the tool name as the bullet's bold head.
 2. Three sub-bullets, with the original words moved unchanged under the matching label:
-   * `*SkyWater says:*` — what the public list or filing says, with its marker;
-   * `*Tool exists:*` — the grading of existence;
-   * `*Runs this step:*` — the grading of the assignment to this step.
+   * `*SkyWater says:*` holds **only** statements SkyWater made: the capability list, a filing, a
+     job posting. Drop the leading subject and write it verb-first: `*SkyWater says:* lists "Lam
+     4400, …"`, never "it lists it". A statement from any other source (Cypress, Stanford, a
+     vendor, a used-equipment listing) stays as a plain continuation paragraph under the
+     sub-bullets, in its original words.
+   * `*Tool exists:*` — the grading of existence, and its reason only.
+   * `*Runs this step:*` — the grading of the assignment to this step, and its reason only. Any
+     other sentence stays in the continuation paragraph.
 3. Omit the third sub-bullet when the page grades only existence.
 4. Do not normalise the grades: "strong", "**strong**", "medium", "weak", "inference" stay as the page
    writes them.
@@ -605,7 +612,7 @@ After:
 
 ```
 * **Akrion Gamma batch wet bench (phosphoric)**
-  - *SkyWater says:* it lists the bench with "phosphoric" among its chemistries.[^skw-01]
+  - *SkyWater says:* lists the bench with "phosphoric" among its chemistries.[^skw-01]
   - *Tool exists:* strong (SkyWater statement).
   - *Runs this step:* the assignment to `NS19` follows from it being the only phosphoric
     tank listed.
