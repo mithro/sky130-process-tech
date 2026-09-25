@@ -79,7 +79,7 @@ A cross-section spec (`kind: xsection`) has these fields:
 | `caption` | what is shown, the page's hedges **repeated**, the footnote keys, ending "Not to scale." |
 | `arrow` | `title` (the step code and number) and `note` (one sentence saying what the step does), shown between the two panels |
 | `panels` | two of them: "before" and "after" (one, where there is no "before") |
-| `crop_depth` | how much substrate to draw below the surface, for the **whole figure**; presentation only, it changes no geometry. In a close-up it may be negative: the drawing then starts that far (in enlarged units) above the original silicon surface, so a close-up of the upper films of a tall stack (a metal contact) does not also enlarge everything under them; the caption must say, in these words, "the lower part of the slice is cut off" (lint), and the figure marks the cut itself: a zigzag break along the bottom of the drawing, "; the lower part of the slice is not drawn" on its close-up line, and no film that shows less than 2 u above the cut |
+| `crop_depth` | how much substrate to draw below the surface, for the **whole figure**; presentation only, it changes no geometry. It may be negative: the drawing then starts that far (in enlarged units, in a close-up) above the original silicon surface, so a close-up of the upper films of a tall stack (a metal contact) does not also enlarge everything under them, and a full slice of the back end (S9 on: the via and metal levels) stays under the height budget instead of spending it on the front end; the caption must say, in these words, "the lower part of the slice is cut off" (lint), and should say where the drawing starts ("the drawing starts inside the inter-level oxide under metal 1"); the figure marks the cut itself: a zigzag break along the bottom of the drawing, "; the lower part of the slice is not drawn" on its close-up line (a full slice prints "The lower part of the slice is not drawn." as a line of its own), and no film that shows less than 2 u above the cut |
 | `three_panels_allowed` | only for a deposit → pattern → etch summary on a category page |
 | `close_up` | `[x0, x1]`, at least 40 u wide: draw only that window of the series state, enlarged by the same factor in both directions to fill the drawing width (a transistor close-up, where the full slice is too wide to show a tip, halo or spacer at a readable size). Both panels use the same window, so they still line up. Everything else in the spec — `highlight`, `callouts`, `dims`, `top@x` — is written in the series' own x and moved by the generator; `crop_depth` is in the enlarged units. The series geometry is not touched. The caption must say "close-up of …" (lint) and name what the window shows; the figure itself prints "Close-up of `close_up_name`, enlarged about N×." above its "Not to scale" line (`close_up_name` defaults to "part of the slice"). The series is emulated on a grid finer by the enlargement for a close-up, so a sloped wall (a tapered contact) stays a straight line instead of a staircase. At any scale a film that a tapered etch cuts ends on the wall's line, and the corner where a flat top meets the wall is put back, so a wall through a stack of films is drawn as one straight edge |
 | `routes` | `{layer id: right \| over \| top \| auto}`: this figure's own leader route for a layer, over the series' `route`. `auto` drops the series route, so the generator chooses panel by panel. Use it in a close-up, where a film the series routes `over` (it lies under others at full-slice scale) is cropped at the drawing's edge and is top-most there: `right` gives a straight run |
@@ -178,6 +178,46 @@ again: `where_open: <layer id>` means "wherever that patterned layer is absent",
 exactly the window the mask opens. Use it for the etch that transfers a resist pattern and
 for the implant that goes through it.
 
+### Series templates (a sequence that repeats per level)
+
+The back end repeats one sequence per level — via mask, via etch, liner, tungsten, tungsten
+polish, metal stack, metal mask, metal etch, inter-metal oxide, its polish, a cap oxide — with
+different codes, heights and positions. Such a sequence is written **once**, as a template,
+and instantiated per level (added for S9; `data/figures/series-beol.yaml` is the example).
+Three top-level fields of a series file do it:
+
+| Field | What it does |
+|---|---|
+| `base: <series file>` | the ops of that series come first, unchanged, and its `substrate` and `note_order` unless this file gives its own. Use it to continue exactly from the end state of the module below (S9 starts `base: series-metal1.yaml`) instead of copying its ops. A base may itself have a base; a loop is a lint line |
+| `templates: {name: {params, defaults, ops}}` | `params` lists the required parameters, `defaults` the optional ones with their values, `ops` the operations, in which `"${name}"` stands for a parameter (`"${steps.mask}"` reaches into a mapping parameter). A scalar that is **exactly** `"${name}"` takes the value with its type — a number (`t: "${fill_t}"`), a list of ranges (`where: "${resist_where}"`); inside longer text the value is written as text (`note: "${mask_code} mask, step ${mask_step}"`). Quote every `${…}` in YAML. Templates of a `base` are in scope too |
+| `ops:` entries `{use: <template>, with: {param: value}}` | expanded in place, in the flow's order, between ordinary ops (the MiM capacitor steps sit between two instantiations as plain ops) |
+
+The generator expands everything when it loads the series, so the emulator, the lint and the
+in-force screen see ordinary ops, and a figure spec names the series as usual. Lint lines: a
+parameter used but not declared, declared but never used, missing from a `use`, or passed but
+not declared; an unknown template, an unknown field of a series, template or `use`; a list or
+mapping inside text; a base that is not a series file or loops back; and, for every series, a
+layer id used twice (a template instantiated twice with the same ids) or an op out of step
+order. Step numbers are passed as three-digit strings (`mask_step: "118"`); every layer id is
+a parameter, so each level gets its own (`v1liner`, `v2liner`).
+
+`series-beol.yaml` defines five templates: `via-hole` (mask and etch, stopping on the cap of
+the metal line below, resist stripped in the etch step), `via-plug` (TiN liner, tungsten,
+polish to the cap-oxide top), `metal-stack` (bottom film, aluminium–copper, cap; the two
+refractory films' notes are parameters, because the level's page gives its own reading —
+metal 2 "Ti or Ti/TiN", metal 3 "Ti or TiW" underneath), `metal-pattern` (mask and etch
+through the stack) and `imd` (gap-fill oxide, polish level, cap oxide). **To draw the next
+group** (141–149, 154–163): read the header of `series-beol.yaml` for the drawn heights and
+x positions so far, append the MiM steps it needs as plain ops (or leave them to the S10
+series if that is built on this one with `base:`), then add one `use:` per template with the
+level's codes, step numbers, ids, positions and heights — keeping the heights in the same
+proportion to each other as the PDK's stack diagram gives them where the height budget allows,
+and writing in the header the drawn ratios the captions will state. Via 4 (step 160) has no
+tungsten step: its level is `via-hole` followed directly by `metal-stack`. Adding ops after
+the last step drawn so far changes no earlier figure (a state is the flow up to its step), but
+**changing a template or an earlier instantiation changes every figure built on it**: rebuild
+them all and run `--check`.
+
 ## 4. Build
 
 ```
@@ -209,6 +249,8 @@ The lint is not advisory. Common ones and what they mean:
 | `leaders … run side by side` / `anchors … are N u apart` | a layout regression: report it rather than working around it in the spec |
 | `the caption repeats the paragraph it sits under` | the caption shares eight consecutive words with the paragraph above the figure; say what the *picture* shows instead |
 | `state_after … is not a three-digit step number` | write `"005"`, not `"5"` |
+| `template …: its ops use ${x}, which is not declared …` / `use of …: required parameter … is missing` / `layer id … is used twice in the series` | a series template or its instantiation is wrong (see "Series templates"); every level needs its own ids |
+| `crop_depth is negative but the caption does not say 'the lower part of the slice is cut off'` | add the phrase, and say where the drawing starts |
 | `… belongs to patent family …, which is not shown as certainly expired` | remove it; a figure can never sit inside a collapsed note |
 | `leader of … runs N u through other materials` / `… alongside a material edge` | the generator could find no clean route: fade a context layer the page does not discuss, or move the beam's label (`label_x`) out of the way |
 | `leader of … cuts through the ion beam` | as above; a label's leader may never cross the arrows |

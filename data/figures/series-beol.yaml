@@ -1,0 +1,271 @@
+# S9 — the via and metal levels: steps 118-134 (via 1, metal 2, via 2, the metal-3 stack),
+# and later 141-149 and 154-163 (with the MiM capacitor steps between them).
+#
+# One geometry for the whole back end above metal 1; a figure is "the state after step N".
+# Thicknesses are DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# STARTING STATE. `base: series-metal1.yaml` puts the ops of the contact and metal-1 series
+# (S8, steps 002-117) first, unchanged, so the wafer at step 117 is the same drawing in both
+# series: three metal-1 lines (x 22-58 over the left metal contact, 100-150 in the middle
+# with no contact, 186-268 over the right contact and running on past the edge), each a
+# bottom film, the aluminium-copper and a cap (94-122 u), buried in the NILD3 oxide polished
+# at 132 u and the NCAPOX3 cap oxide on it (top at 140 u).
+#
+# THE TEMPLATES. Every via and metal level of this flow repeats the same few steps with
+# different codes, heights and positions, so the steps are written once, as five templates,
+# and instantiated per level below (tools/gen_figures.py expands them when the series is
+# loaded; docs/plans/figure-authoring.md, "Series templates"):
+#   via-hole       the via mask (resist with square windows) and the via etch, which cuts
+#                  every oxide under the windows and stops on the cap of the metal line
+#                  below; the resist is stripped in the etch step, as the VIME and VIM2E
+#                  pages treat it
+#   via-plug       the TiN liner (conformal), the tungsten (conformal, thick enough to close
+#                  the lined hole) and the tungsten polish down to the cap oxide: a flush plug
+#   metal-stack    the three-film metal stack: a thin bottom film, the aluminium-copper and a
+#                  thin cap. Which refractory films the bottom and the cap are is UNDECIDED
+#                  on the pages (the overview's "overview-metal-cap"); both are drawn in the
+#                  barrier material, as at metal 1, and labelled with the readings the level's
+#                  own page gives (a parameter)
+#   metal-pattern  the metal mask (resist lines) and the metal etch through the whole stack,
+#                  stopping on the cap oxide and the plug tops; the resist is stripped in the
+#                  etch step, as the MM1E and MM2E pages treat it
+#   imd            the inter-metal oxide, drawn as a gap-filling deposit (`profile: gapfill`,
+#                  softened with a flow length; the NILD pages name HDP-CVD and PECVD TEOS
+#                  and do not choose), its polish to a flat surface above the metal (a removal
+#                  amount; not public how much) and the flat blanket cap oxide on it
+# A later level (via 3, metal 4, via 4, metal 5) is one more `use:` of each, with its own
+# codes and numbers; the MiM capacitor steps (135-140, 150-153) go between them as plain
+# ops. Via 4 (VIM4E, step 160) has no tungsten step in the step list: its level uses
+# via-hole and then metal-stack directly, without via-plug.
+#
+# THE LEVELS DRAWN HERE (118-134):
+# * Via 1: two 16 u holes, one over the middle metal-1 line (x 117-133) and one over the
+#   right-hand line away from its contact (x 236-252); positions illustrative (the pages
+#   give the size, 0.150 um squares, via.1a, not where they fall). The hole is as deep as
+#   the oxide over metal 1 (18 u), so it is drawn about 1.1 times as deep as it is wide,
+#   against about 1.8:1 on the pages (0.27 um deep, pdk-04; 0.15 um wide): the captions say
+#   so. Walls vertical (the pages give a "Via1 slope" of 0.02 and read it as a taper
+#   allowance; the wall angle is not drawn). Liner 5 u; tungsten 10 u; polished at 140 u.
+# * Metal 2: 5 + 18 + 5 u (28 u, the same as metal 1: both are 0.36 um in the PDK); three
+#   lines, x 14-64 (no via under it), 106-144 (over the middle via) and 226-268 (over the
+#   right-hand via, running on past the edge); layout illustrative.
+# * NILD4: 52 u as deposited, polished at 188 u (20 u over the metal-2 tops), cap oxide 8 u:
+#   the via-2 hole is 28 u deep, about 1.5 times the via-1 depth, as 0.42 um is to 0.27 um
+#   (pdk-04).
+# * Via 2: one 20 u hole over the left-hand metal-2 line (x 29-49), not over a via 1
+#   (placement illustrative); 28 u deep, so drawn about 1.4 times as deep as it is wide,
+#   against about 2.1:1 on the pages (0.42 um deep, 0.20 um wide). Liner 5 u; tungsten 12 u;
+#   polished at 196 u.
+# * Metal 3 (the stack only; it is patterned at 139-140, after the MiM steps): 5 + 32 + 5 u
+#   (42 u, half as thick again as metal 2; in the PDK 0.845 um against 0.36 um, which is not
+#   drawn). Top at 238 u.
+# Series labels carry no numbers; step numbers and level codes (VIM2, NILD4) are free.
+base: series-metal1.yaml
+templates:
+  via-hole:
+    params: [mask_step, etch_step, mask_code, resist_id, resist_where]
+    defaults: {resist_t: 30}
+    ops:
+      - step: "${mask_step}"
+        op: deposit
+        id: "${resist_id}"
+        material: resist
+        t: "${resist_t}"
+        where: "${resist_where}"
+        label:
+          title: "Photoresist"
+          note: "${mask_code} mask, step ${mask_step}"
+          basis: public
+      # the etch cuts every oxide under the windows and stops on the metal line's cap
+      - step: "${etch_step}"
+        op: etch
+        materials: [oxide-dep]
+        where_open: "${resist_id}"
+      - step: "${etch_step}"
+        op: strip
+        materials: [resist]
+  via-plug:
+    params: [liner_step, fill_step, polish_step, liner_id, fill_id, fill_t, polish_to]
+    defaults: {liner_t: 5}
+    ops:
+      - step: "${liner_step}"
+        op: deposit
+        id: "${liner_id}"
+        material: barrier
+        t: "${liner_t}"
+        route: over
+        label:
+          title: "TiN liner"
+          note: "deposited at step ${liner_step}"
+          basis: public
+      - step: "${fill_step}"
+        op: deposit
+        id: "${fill_id}"
+        material: tungsten
+        t: "${fill_t}"
+        route: over
+        label:
+          title: "Tungsten"
+          note: "deposited at step ${fill_step}"
+          basis: public
+      # the polish takes the tungsten and the liner off the field, down to the cap oxide
+      - step: "${polish_step}"
+        op: planarise
+        to: "${polish_to}"
+  metal-stack:
+    params: [step, bot_id, al_id, cap_id, al_t, al_anchor_y, bot_note, cap_note]
+    defaults: {bot_t: 5, cap_t: 5}
+    ops:
+      - step: "${step}"
+        op: deposit
+        id: "${bot_id}"
+        material: barrier
+        t: "${bot_t}"
+        label:
+          title: "Bottom film"
+          note: "${bot_note}"
+          basis: inferred
+      - step: "${step}"
+        op: deposit
+        id: "${al_id}"
+        material: aluminium
+        t: "${al_t}"
+        anchor_y: "${al_anchor_y}"
+        label:
+          title: "Aluminium alloy"
+          note: "aluminium–copper, the conductor; step ${step}"
+          basis: public
+      - step: "${step}"
+        op: deposit
+        id: "${cap_id}"
+        material: barrier
+        t: "${cap_t}"
+        label:
+          title: "Cap film"
+          note: "${cap_note}"
+          basis: inferred
+  metal-pattern:
+    params: [mask_step, etch_step, mask_code, resist_id, resist_where]
+    defaults: {resist_t: 30}
+    ops:
+      - step: "${mask_step}"
+        op: deposit
+        id: "${resist_id}"
+        material: resist
+        t: "${resist_t}"
+        where: "${resist_where}"
+        label:
+          title: "Photoresist"
+          note: "${mask_code} mask, step ${mask_step}"
+          basis: public
+      # the etch removes the whole stack between the lines, stopping on the cap oxide and
+      # the plug tops; the resist is stripped in the same step
+      - step: "${etch_step}"
+        op: etch
+        materials: [barrier, aluminium]
+        where_open: "${resist_id}"
+      - step: "${etch_step}"
+        op: strip
+        materials: [resist]
+  imd:
+    params: [dep_step, polish_step, cap_step, imd_id, cap_id, imd_t, polish_to]
+    defaults: {smooth: 16, cap_t: 8}
+    ops:
+      - step: "${dep_step}"
+        op: deposit
+        id: "${imd_id}"
+        material: oxide-dep
+        t: "${imd_t}"
+        profile: gapfill
+        smooth: "${smooth}"
+        label:
+          title: "Inter-metal oxide"
+          note: "deposited at step ${dep_step}"
+          basis: public
+      # the polish: flat, leaving oxide over the metal tops
+      - step: "${polish_step}"
+        op: planarise
+        to: "${polish_to}"
+      - step: "${cap_step}"
+        op: deposit
+        id: "${cap_id}"
+        material: oxide-dep
+        t: "${cap_t}"
+        label:
+          title: "Cap oxide"
+          note: "deposited at step ${cap_step}"
+          basis: public
+ops:
+  # ================================================================ via 1 (118-122)
+  - use: via-hole
+    with:
+      mask_step: "118"
+      etch_step: "119"
+      mask_code: "VIM"
+      resist_id: vimres
+      resist_where: [[0, 117], [133, 236], [252, 268]]
+  - use: via-plug
+    with:
+      liner_step: "120"
+      fill_step: "121"
+      polish_step: "122"
+      liner_id: v1liner
+      fill_id: v1w
+      fill_t: 10
+      polish_to: 140
+  # ================================================================ metal 2 (123-125)
+  - use: metal-stack
+    with:
+      step: "123"
+      bot_id: m2bot
+      al_id: m2al
+      cap_id: m2cap
+      al_t: 18
+      al_anchor_y: 154
+      bot_note: "Ti or Ti/TiN — see the overview"
+      cap_note: "TiW or Ti/TiN — see the overview"
+  - use: metal-pattern
+    with:
+      mask_step: "124"
+      etch_step: "125"
+      mask_code: "MM2"
+      resist_id: mm2res
+      resist_where: [[14, 64], [106, 144], [226, 268]]
+  # ================================================================ NILD4 (126-128)
+  - use: imd
+    with:
+      dep_step: "126"
+      polish_step: "127"
+      cap_step: "128"
+      imd_id: nild4
+      cap_id: ncap4
+      imd_t: 52
+      polish_to: 188
+  # ================================================================ via 2 (129-133)
+  - use: via-hole
+    with:
+      mask_step: "129"
+      etch_step: "130"
+      mask_code: "VIM2"
+      resist_id: vim2res
+      resist_where: [[0, 29], [49, 268]]
+  - use: via-plug
+    with:
+      liner_step: "131"
+      fill_step: "132"
+      polish_step: "133"
+      liner_id: v2liner
+      fill_id: v2w
+      fill_t: 12
+      polish_to: 196
+  # ================================================================ the metal-3 stack (134)
+  - use: metal-stack
+    with:
+      step: "134"
+      bot_id: m3bot
+      al_id: m3al
+      cap_id: m3cap
+      al_t: 32
+      al_anchor_y: 217
+      bot_note: "Ti or TiW — see the overview"
+      cap_note: "TiW or Ti/TiN — see the overview"

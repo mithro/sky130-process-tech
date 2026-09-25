@@ -1539,7 +1539,9 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
     panels = [_zoom_panel(p, close[0], zoom) if close else p for p in spec["panels"]]
     sub_depth = float(series["substrate"]["depth"])
     depth = float(spec.get("crop_depth", sub_depth))
-    cut = close is not None and depth < 0          # a close-up cut off above the silicon
+    # a drawing cut off above the silicon: a close-up of the upper films, or (S9 on) a full
+    # slice of a tall back-end stack whose lower part would push the figure past its height
+    cut = depth < 0
     floor_y = -depth + 8
     X0 = M
     x_right = X0 + DRAW_W
@@ -1952,6 +1954,10 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                        TY["label-title"]["size"], W - 2 * M, bold=True):
             svg.text(M, y + 10, ln, "t-label-title")
             y += TY["label-title"]["line"]
+    elif cut:
+        # a full slice cut off above the silicon says so on the figure too
+        svg.text(M, y + 10, "The lower part of the slice is not drawn.", "t-label-title")
+        y += TY["label-title"]["line"]
     svg.text(M, y + 10, NOT_TO_SCALE if films else NOT_TO_SCALE.split(".")[0] + ".",
              "t-label-note muted")
     svg.h = y + 10 + M
@@ -2817,6 +2823,25 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
     to_scale = bool(spec.get("to_scale"))
     labs: list[tuple[str, dict]] = []
     if kind == "xsection":
+        # the series' own faults (its base and templates, resolved when it was loaded)
+        errs += series.get("_errors", [])
+        if not series.get("substrate") or not isinstance(series.get("ops"), list):
+            return errs
+        # a layer id names one layer; the flow runs forward (a template instantiated twice
+        # with the same ids, or in the wrong place, is caught here)
+        ids_seen: set[str] = set()
+        prev_step = "000"
+        for op in series["ops"]:
+            if op.get("id"):
+                if op["id"] in ids_seen:
+                    errs.append(f"layer id {op['id']!r} is used twice in the series")
+                ids_seen.add(op["id"])
+            st_op = str(op.get("step", ""))
+            if re.fullmatch(r"\d{3}", st_op):
+                if st_op < prev_step:
+                    errs.append(f"operation {op.get('op')} at step {st_op} comes after step "
+                                f"{prev_step}; the ops of a series run in step order")
+                prev_step = max(prev_step, st_op)
         labs.append(("substrate", series["substrate"].get("label")))
         if series["substrate"]["material"] not in TOK["materials"]:
             errs.append(f"unknown material {series['substrate']['material']}")
@@ -2896,16 +2921,13 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
         if spec.get("close_up") is not None and "close-up" not in cap_l:
             errs.append("the figure draws a close-up (close_up:) but the caption does not say "
                         "so ('close-up of …')")
-        # A negative crop_depth starts the drawing above the original silicon surface: only a
-        # close-up of the upper films may do that, and the caption says the rest is cut off.
+        # A negative crop_depth starts the drawing above the original silicon surface (a
+        # close-up of the upper films, or a full slice of a tall back-end stack): the caption
+        # says the rest is cut off, and the figure marks the cut itself.
         cd = spec.get("crop_depth")
-        if isinstance(cd, (int, float)) and cd < 0:
-            if spec.get("close_up") is None:
-                errs.append("crop_depth is negative (the drawing starts above the silicon); only "
-                            "a close-up may cut off the lower part of the slice")
-            elif CUT_PHRASE not in cap_l:
-                errs.append("crop_depth is negative but the caption does not say "
-                            f"'{CUT_PHRASE}'")
+        if isinstance(cd, (int, float)) and cd < 0 and CUT_PHRASE not in cap_l:
+            errs.append("crop_depth is negative but the caption does not say "
+                        f"'{CUT_PHRASE}'")
         # A step that changes nothing the drawing can show gets one panel, not two copies.
         if spec.get("no_drawn_change"):
             if len(spec.get("panels", [])) != 1:
@@ -2920,7 +2942,7 @@ def lint_spec(spec: dict, series: dict | None) -> list[str]:
             errs.append(f"series note_order {series['note_order']!r} is not one of "
                         f"{', '.join(NOTE_ORDERS)}")
         for key in series:
-            if key not in ("substrate", "ops", "note_order"):
+            if key not in ("substrate", "ops", "note_order", "_templates", "_errors"):
                 errs.append(f"series: unknown top-level field {key!r}")
         for op in series["ops"]:
             for fld in ("z", "anchor_x", "anchor_y", "tilt_deg", "label_x", "t", "depth",
@@ -3112,6 +3134,167 @@ def load_spec(path: Path) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
+# --------------------------------------------------------------------------- series templates
+# A series file may be written in three parts (added for the via and metal levels, S9, where
+# one sequence of steps repeats once per level):
+#
+#   base: series-metal1.yaml      the ops of that series come first, unchanged (and its
+#                                 substrate and note_order, unless this file gives its own)
+#   templates:                    named, parameterised lists of ops
+#     via-hole:
+#       params: [mask_step, ...]  required parameters
+#       defaults: {resist_t: 30}  optional ones, with their values
+#       ops: [...]                ops in which "${name}" (or "${name.key}" into a mapping
+#                                 parameter) stands for a parameter
+#   ops:                          plain ops, and instantiations in their place in the flow:
+#     - use: via-hole
+#       with: {mask_step: "118", ...}
+#
+# A scalar that is exactly "${name}" takes the parameter's value with its type (a number, a
+# list of ranges); inside a longer string the value is written as text ("mask, step ${step}").
+# The expansion is done when the series is loaded, so everything downstream (the emulator,
+# the lint, the in-force screen) sees ordinary ops.
+SERIES_KEYS = ("substrate", "ops", "note_order", "base", "templates")
+TEMPLATE_KEYS = ("params", "defaults", "ops")
+USE_KEYS = ("use", "with")
+PARAM_RE = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)((?:\.[A-Za-z0-9_]+)*)\}")
+
+
+def _param_refs(obj) -> set[str]:
+    """Every parameter name a template body refers to."""
+    if isinstance(obj, str):
+        return {m.group(1) for m in PARAM_RE.finditer(obj)}
+    if isinstance(obj, list):
+        return set().union(*(_param_refs(x) for x in obj)) if obj else set()
+    if isinstance(obj, dict):
+        return set().union(*(_param_refs(v) for v in obj.values())) if obj else set()
+    return set()
+
+
+def _substitute(obj, params: dict, errs: list[str], where: str):
+    import copy
+
+    def look(m):
+        name, path = m.group(1), [k for k in m.group(2).split(".") if k]
+        if name not in params:
+            errs.append(f"{where}: ${{{name}}} is not a parameter of the template")
+            return None
+        v = params[name]
+        for k in path:
+            if not isinstance(v, dict) or k not in v:
+                errs.append(f"{where}: ${{{m.group(1)}{m.group(2)}}}: the parameter has no key {k!r}")
+                return None
+            v = v[k]
+        return v
+
+    if isinstance(obj, str):
+        whole = PARAM_RE.fullmatch(obj)
+        if whole:
+            return copy.deepcopy(look(whole))
+
+        def rep(m):
+            v = look(m)
+            if isinstance(v, (dict, list)):
+                errs.append(f"{where}: {m.group(0)} is a list or mapping and cannot stand inside text")
+                return m.group(0)
+            return "" if v is None else str(v)
+        return PARAM_RE.sub(rep, obj)
+    if isinstance(obj, list):
+        return [_substitute(x, params, errs, where) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _substitute(v, params, errs, where) for k, v in obj.items()}
+    return obj
+
+
+def expand_series(raw: dict, name: str, _chain: tuple[str, ...] = ()) -> dict:
+    """A series file with its ``base`` and ``templates`` resolved into plain ops.  Faults go
+    into ``_errors`` (the lint reports them); ``_templates`` keeps the templates in scope, so
+    a series built on this one may instantiate them too."""
+    import copy
+    errs: list[str] = []
+    out: dict = {"substrate": raw.get("substrate"), "ops": []}
+    if raw.get("note_order") is not None:
+        out["note_order"] = raw["note_order"]
+    for k in raw:
+        if k not in SERIES_KEYS:
+            errs.append(f"{name}: unknown series field {k!r} (one of {', '.join(SERIES_KEYS)})")
+    templates: dict = {}
+    if raw.get("base"):
+        bname = str(raw["base"])
+        bpath = SPEC_DIR / bname
+        if bname in _chain + (name,):
+            errs.append(f"{name}: base {bname!r} loops back ({' -> '.join(_chain + (name, bname))})")
+        elif not bpath.exists() or "kind" in (load_spec(bpath) or {}):
+            errs.append(f"{name}: base {bname!r} is not a series file in {SPEC_DIR.name}/")
+        else:
+            base = expand_series(load_spec(bpath), bname, _chain + (name,))
+            errs += base.get("_errors", [])
+            out["ops"] = copy.deepcopy(base["ops"])
+            if out["substrate"] is None:
+                out["substrate"] = base["substrate"]
+            if "note_order" not in out and base.get("note_order") is not None:
+                out["note_order"] = base["note_order"]
+            templates.update(base.get("_templates", {}))
+    own = raw.get("templates") or {}
+    if not isinstance(own, dict):
+        errs.append(f"{name}: templates must be a mapping of name to template")
+        own = {}
+    for tname, tpl in own.items():
+        where = f"{name}: template {tname!r}"
+        if not isinstance(tpl, dict) or not isinstance(tpl.get("ops"), list):
+            errs.append(f"{where}: a template is a mapping with a list of ops")
+            continue
+        for k in tpl:
+            if k not in TEMPLATE_KEYS:
+                errs.append(f"{where}: unknown field {k!r} (one of {', '.join(TEMPLATE_KEYS)})")
+        req = list(tpl.get("params") or [])
+        dfl = dict(tpl.get("defaults") or {})
+        both = set(req) & set(dfl)
+        if both:
+            errs.append(f"{where}: {', '.join(sorted(both))} both required and defaulted")
+        refs = _param_refs(tpl["ops"])
+        for r in sorted(refs - set(req) - set(dfl)):
+            errs.append(f"{where}: its ops use ${{{r}}}, which is not declared in params or defaults")
+        for p in sorted((set(req) | set(dfl)) - refs):
+            errs.append(f"{where}: parameter {p!r} is declared but its ops never use it")
+        templates[tname] = tpl
+    if out["substrate"] is None:
+        errs.append(f"{name}: no substrate (give one, or a base series)")
+    for k, item in enumerate(raw.get("ops") or []):
+        if not isinstance(item, dict):
+            errs.append(f"{name}: ops entry {k + 1} is not a mapping")
+            continue
+        if "use" not in item:
+            out["ops"].append(item)
+            continue
+        where = f"{name}: use of {item.get('use')!r} (ops entry {k + 1})"
+        for f in item:
+            if f not in USE_KEYS:
+                errs.append(f"{where}: unknown field {f!r} (one of {', '.join(USE_KEYS)})")
+        tpl = templates.get(item["use"])
+        if tpl is None:
+            errs.append(f"{where}: no such template")
+            continue
+        given = dict(item.get("with") or {})
+        declared = set(tpl.get("params") or []) | set(tpl.get("defaults") or {})
+        for p in sorted(set(given) - declared):
+            errs.append(f"{where}: {p!r} is not a parameter of the template")
+        for p in tpl.get("params") or []:
+            if p not in given:
+                errs.append(f"{where}: required parameter {p!r} is missing")
+        params = dict(tpl.get("defaults") or {})
+        params.update(given)
+        out["ops"] += _substitute(tpl["ops"], params, errs, where)
+    out["_templates"] = templates
+    if errs:
+        out["_errors"] = list(dict.fromkeys(errs))
+    return out
+
+
+def load_series(name: str) -> dict:
+    return expand_series(load_spec(SPEC_DIR / name), name)
+
+
 def myst_block(spec: dict) -> str:
     cap = " ".join(spec["caption"].split())
     alt = " ".join(spec["alt"].split())
@@ -3127,7 +3310,7 @@ def render_spec(spec: dict, series_cache: dict[str, dict]) -> tuple[Svg, list[st
     if kind == "xsection":
         sp = spec["series"]
         if sp not in series_cache:
-            series_cache[sp] = load_spec(SPEC_DIR / sp)
+            series_cache[sp] = load_series(sp)
         series = series_cache[sp]
     errs = lint_spec(spec, series)
     if kind == "xsection":
@@ -3534,8 +3717,8 @@ def selftest() -> int:
     case("unknown kind", lambda s, r: s.update(kind="doodle"), "unknown kind")
     case("a close-up the caption does not declare",
          lambda s, r: s.update(close_up=[100, 200]), "does not say so ('close-up of")
-    case("a negative crop outside a close-up",
-         lambda s, r: s.update(crop_depth=-20), "only a close-up may cut off")
+    case("a full slice cut off at the bottom the caption does not declare",
+         lambda s, r: s.update(crop_depth=-20), "does not say 'the lower part")
     case("a close-up cut off at the bottom the caption does not declare",
          lambda s, r: s.update(close_up=[100, 200], crop_depth=-20,
                                caption="A close-up of part of the slice. Not to scale."),
@@ -3592,6 +3775,81 @@ def selftest() -> int:
         if not any(needle in e for e in errs):
             print(f"SELFTEST FAIL: {name!r} did not report {needle!r}; got {errs}")
             bad += 1
+    # ---- series templates and bases (S9: one via/metal sequence, instantiated per level)
+    def tpl_raw():
+        return {
+            "substrate": copy.deepcopy(_SERIES_OK["substrate"]),
+            "templates": {"film": {
+                "params": ["s", "t", "code", "steps"],
+                "defaults": {"mat": "oxide-dep"},
+                "ops": [{"step": "${s}", "op": "deposit", "id": "f${s}", "material": "${mat}",
+                         "t": "${t}", "label": {"title": "Film", "note": "${code}, step ${steps.dep}",
+                                                "basis": "public"}}]}},
+            "ops": [{"use": "film", "with": {"s": "002", "t": 6, "code": "NILD3",
+                                              "steps": {"dep": "002"}}},
+                    {"use": "film", "with": {"s": "003", "t": 7, "code": "NILD4", "mat": "nitride",
+                                              "steps": {"dep": "003"}}}],
+        }
+    ex = expand_series(tpl_raw(), "selftest.yaml")
+    want = [{"step": "002", "op": "deposit", "id": "f002", "material": "oxide-dep", "t": 6,
+             "label": {"title": "Film", "note": "NILD3, step 002", "basis": "public"}},
+            {"step": "003", "op": "deposit", "id": "f003", "material": "nitride", "t": 7,
+             "label": {"title": "Film", "note": "NILD4, step 003", "basis": "public"}}]
+    if ex.get("_errors") or ex["ops"] != want:
+        print(f"SELFTEST FAIL: a template did not expand as written: {ex.get('_errors')} {ex['ops']}")
+        bad += 1
+    elif lint_spec(_spec_ok(), ex):
+        print(f"SELFTEST FAIL: a clean templated series reported {lint_spec(_spec_ok(), ex)}")
+        bad += 1
+    iso = load_spec(SPEC_DIR / "series-isolation.yaml")
+    based = expand_series({"base": "series-isolation.yaml",
+                           "ops": [{"step": "014", "op": "strip", "materials": ["resist"]}]},
+                          "selftest.yaml")
+    if based.get("_errors") or based["ops"] != iso["ops"] + [
+            {"step": "014", "op": "strip", "materials": ["resist"]}] \
+            or based["substrate"] != iso["substrate"]:
+        print(f"SELFTEST FAIL: a base series was not prepended unchanged: {based.get('_errors')}")
+        bad += 1
+
+    def tcase(name, mutate, needle):
+        nonlocal bad
+        raw = tpl_raw()
+        mutate(raw)
+        e = lint_spec(_spec_ok(), expand_series(raw, raw.pop("_name", "selftest.yaml")))
+        if not any(needle in x for x in e):
+            print(f"SELFTEST FAIL: {name!r} did not report {needle!r}; got {e}")
+            bad += 1
+
+    tops = lambda r: r["templates"]["film"]["ops"][0]              # noqa: E731
+    tcase("a template refers to an undeclared parameter",
+          lambda r: tops(r).update(t="${thick}"), "not declared in params or defaults")
+    tcase("a template declares a parameter it never uses",
+          lambda r: r["templates"]["film"]["params"].append("spare"), "declared but its ops never use it")
+    tcase("a use leaves out a required parameter",
+          lambda r: r["ops"][0]["with"].pop("t"), "required parameter 't' is missing")
+    tcase("a use passes a parameter the template does not have",
+          lambda r: r["ops"][0]["with"].update(tt=5), "'tt' is not a parameter of the template")
+    tcase("a use names no template",
+          lambda r: r["ops"][0].update(use="flim"), "no such template")
+    tcase("a use with a stray field",
+          lambda r: r["ops"][0].update(width=3), "unknown field 'width'")
+    tcase("a dotted parameter without the key",
+          lambda r: r["ops"][0]["with"].update(steps={}), "the parameter has no key 'dep'")
+    tcase("a list parameter inside text",
+          lambda r: r["ops"][0]["with"].update(code=[[0, 1]]), "cannot stand inside text")
+    tcase("a template instantiated twice with the same ids",
+          lambda r: r["ops"][1]["with"].update(s="002"), "is used twice in the series")
+    tcase("ops out of step order",
+          lambda r: r["ops"].reverse(), "the ops of a series run in step order")
+    tcase("an unknown series field",
+          lambda r: r.update(tempaltes={}), "unknown series field 'tempaltes'")
+    tcase("an unknown template field",
+          lambda r: r["templates"]["film"].update(param=["s"]), "unknown field 'param'")
+    tcase("a base that is not a series file",
+          lambda r: r.update(base="series-nosuch.yaml"), "is not a series file")
+    tcase("a base that loops back",
+          lambda r: r.update(base="series-isolation.yaml", _name="series-isolation.yaml"),
+          "loops back")
     # cite keys are checked against the real page, and a restricted key is refused
     real = _spec_ok()
     real["page"] = "docs/steps/006-stie.md"
