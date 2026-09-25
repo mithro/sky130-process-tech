@@ -89,6 +89,17 @@ The pages are drafted once the evidence exists. The provisional list:
   So a reader who follows a footnote reaches exactly the evidence the
   claims matrix counted, and the quotes in that record are checked
   against a cached copy by `tools/check_history_quotes.py`.
+* Every evidence record must carry `origin`, `url`, `retrieved` and
+  `quotes` (`check_history.py`).
+* `tools/check_history_quotes.py` (local; it needs the fetch cache) checks
+  every evidence quote against the cached copy of its source, and every
+  phrase the pages put in double quotes against the cached copies of the
+  sources that paragraph cites. `…` splits a quotation; `[…]` marks an
+  editorial insertion.
+* `tools/history_cache.py` keeps the evidence re-checkable from what is
+  committed: `status` lists what the cache holds, `archive` and `hash` add
+  Wayback captures and SHA-256 values to the records, and `rebuild DIR`
+  fetches every source afresh and re-finds every quote without the cache.
 * `tools/check_links.py` must pick up the history pages' URLs, and
   `tools/fix_reading_list_links.py` must convert their reading-list
   bullets. Run both on the pages and confirm it.
@@ -115,12 +126,12 @@ The pages are drafted once the evidence exists. The provisional list:
 | Item | State |
 |---|---|
 | Plan | written 2026-09-25 |
-| Evidence | `qtp.yaml` 67 reports, `corporate.yaml` 29 records, `extra.yaml` 32 records; all quotes verified |
-| Claims matrix | 165 claims, checked by `tools/check_history.py` |
+| Evidence | `qtp.yaml`, `corporate.yaml`, `extra.yaml` and `literature.yaml` (papers and patents); every quote verified against a cached copy; counts in each file |
+| Claims matrix | about 200 claims, checked by `tools/check_history.py`, with every claim's sources tied to its footnotes |
 | Pages | index, fabs, technologies, sonos-s4, s8-lineage, naming; generated stackups, products, sources |
 | Review r1 (Opus) | 19 High, 22 Medium, 15 Low; fixes applied 2026-09-25 |
 | Review r2 (Opus) | 1 High, 10 Medium, 14 Low; fixes applied 2026-09-25 |
+| Evidence integration | the round-3 QTP records, the literature evidence and the link and page-quote checks, 2026-09-25, branch `topic/cyhist-evidence`; the remaining QTP groups continue on `topic/cyhist-qtp4` |
 
 Not done, for the owner: some research-branch commit messages need the owner's review under the
-history-rewrite policy (review r1, H12/H13). The literature agent's evidence file (papers, patents, teardowns) was never
-committed; two of its sources were re-verified and added to `extra.yaml`.
+history-rewrite policy (review r1, H12/H13).
