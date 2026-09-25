@@ -135,11 +135,13 @@ allowing the simultaneous processing of six wafers".[^amat-producer-2001]
   films".[^nguyen-1990]
 * **Nitride.** In silane–ammonia plasmas Smith et al. found
   aminosilanes that "are believed to be the principal" film
-  precursors;[^smith-1990] the films
+  precursors.[^smith-1990] The films
   carry much hydrogen, "about 20–25 at.% H" in Lanford and Rand's
-  measurements,[^lanford-1978] and nitrides "made in nine different
+  measurements.[^lanford-1978] Nitrides "made in nine different
   commercially available reactors" ranged "from 4% to 39%
-  (atomic)".[^chow-1982] Cotler and Chapple-Sokol found that stress
+  (atomic)".[^chow-1982]
+
+  Cotler and Chapple-Sokol found that stress
   shifts "from tensile to compressive with increasing temperature and
   power" and that "All PECVD film properties, with the exception of
   conformality, are comparable to those of LPCVD films".[^cotler-1993]
@@ -411,32 +413,42 @@ SKY130 conditions of their own. SKY130's deposition temperatures,
 pressures, thicknesses and chemistries are not public.
 
 * **Thermal budget sets the class.** Where the step pages give a
-  reason for PECVD, it is what is already on the wafer: the annealed
-  tips under the spacer oxide ({ref}`SPOX <step-080>`), TiN and tungsten
-  under the local-interconnect nitride cap ({ref}`LINIT <step-104>`),
-  and aluminium under the films from {ref}`NILD3 <step-115>` on. The category page gives the
+  reason for PECVD, it is what is already on the wafer:
+
+  * the annealed tips under the spacer oxide ({ref}`SPOX <step-080>`);
+  * TiN and tungsten under the local-interconnect nitride cap
+    ({ref}`LINIT <step-104>`); and
+  * aluminium under the films from {ref}`NILD3 <step-115>` on.
+
+  The category page gives the
   usual ceiling as "below about 450 °C once aluminium is
-  present";[^txt-02] plasma films can be made below it: silane oxide
+  present".[^txt-02] Plasma films can be made below it: silane oxide
   at 100–340 °C in Adams et al.'s work,[^adams-1981-pecvd] Applied's
   thin nitride at 400 °C.[^amat-sin-wp]
 * **Poor conformality decides the ILD split.** Plasma oxide "is not
-  conformal",[^adams-1981-pecvd] so the inter-level oxide pages
+  conformal".[^adams-1981-pecvd] So the inter-level oxide pages
   ({ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`) infer HDP-CVD
   for the gaps between metal lines and grade PECVD TEOS for a liner or
   overburden, or, on {ref}`NILD2 <step-105>`, where the gap is 1:1, for
-  the whole film. Applied described its PECVD TEOS oxides for exactly
+  the whole film.
+
+  Applied described its PECVD TEOS oxides for exactly
   those roles, "as liners or cap layers for HDP-CVD
   applications".[^amat-pecvd-teos-2002]
 * **Caps over polished oxide.** The cap-oxide pages from
   {ref}`NCAPOX3 <step-117>` on read
   the cap as a thin plasma oxide that seals the polished surface and,
   by inference, brings the dielectric to its final thickness before the
-  next contact or via mask; the PDK's stack diagram gives only the
+  next contact or via mask.
+
+  The PDK's stack diagram gives only the
   finished heights.[^pdk-04]
 * **The MiM dielectric.** The PDK describes the capacitor as "a thin
   dielectric over metal, followed by a thin conductor layer on top of the
   dielectric", with an area capacitance `CMIMA` of 2 fF/µm²;[^pdk-07]
-  it does not name the dielectric. The {ref}`CAPILD <step-135>` and
+  it does not name the dielectric.
+
+  The {ref}`CAPILD <step-135>` and
   {ref}`CAPILD2 <step-150>` pages read it as a PECVD oxynitride
   (inference, from the "range of R.I. options" of the "C1"
   entry[^skw-01]).

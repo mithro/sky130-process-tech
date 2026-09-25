@@ -284,10 +284,12 @@ not public.
 
 * **Retrograde and deep wells.** The {ref}`DNI <step-008>`,
   {ref}`NWI <step-018>` and {ref}`PWI <step-027>` pages describe MeV-class
-  well implants from published flows — for example a deep N-well
+  well implants from published flows. For example, a deep N-well is
   implanted at "about 0.6 MeV to about 1.6 MeV"[^pat-dnw-hynix] and a
   retrograde n-well with a deep implant "at an energy of 850,000
-  electron volts".[^pat-well-ibm] Tsukamoto et al. review high-energy
+  electron volts".[^pat-well-ibm]
+
+  Tsukamoto et al. review high-energy
   implantation for such wells.[^tsukamoto-1991] The GSD entry's
   10–3000 keV range covers these energies;[^skw-01] the step pages'
   assignment of the wells to it is an inference.

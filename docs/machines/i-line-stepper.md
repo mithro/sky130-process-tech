@@ -242,8 +242,8 @@ likely used at SkyWater"), as collected on the machines index:
 
 * **"ASML I-line stepper", "ASML I-line scanner"** — *inference:* {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`; *not public which class (i-line or DUV):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>`; *listed, not assigned:* {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>`
 
-The inferences rest on the design rules, not on any SkyWater statement:
-in Table 2 of the PDK's *Criteria & Assumptions*, the smallest minimum
+The inferences rest on the design rules, not on any SkyWater statement.
+In Table 2 of the PDK's *Criteria & Assumptions*, the smallest minimum
 feature among the masks assigned to this class, apart from metal 3 and
 metal 4, is 0.38 µm (`LVTNMCD`, `HVTPMCD`, `PSDMCD`,
 `NSDMCD`).[^pdk-03] Many are 0.7 µm or larger, up to 3 µm for the deep
@@ -294,8 +294,10 @@ implants.[^pdk-03]
 
 * **Most mask levels, few critical ones.** On the step pages' readings
   this class prints 24 of the 36 mask steps and the KrF class 14, with
-  metal 3 and metal 4 counted in both; the step pages name this class
-  as an alternative for three more. The mix is the one ASML describes
+  metal 3 and metal 4 counted in both. The step pages also name this
+  class as an alternative for three more.
+
+  The mix is the one ASML describes
   for older tools that move to "less critical
   layers".[^asml-30] Which physical tool prints which layer is not public.
 * **Implant blocks and thick resist.** The well, deep N-well and
@@ -303,20 +305,28 @@ implants.[^pdk-03]
   {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`) block the deep
   implants of the {ref}`high-energy implanter class <machine-high-energy-implanter>`,
   and the {ref}`NWM <step-017>` page reads a thick resist that favours
-  i-line; thick resist for high-energy implants is the subject of Buffat
+  i-line.
+
+  Thick resist for high-energy implants is the subject of Buffat
   and Adams's patent.[^pat-resist-zilog] A thick film needs depth of
   focus more than resolution, which is the trade the variable NA
-  offers.[^levinson-1987][^asml-pas5500-100d] Norton et al. found DUV
+  offers.[^levinson-1987][^asml-pas5500-100d]
+
+  Norton et al. found DUV
   resist "equivalent to I-line resist" under high-current implants, so the
   implant itself does not force the choice of class.[^norton-2000]
 * **Mix and match with KrF levels.** Many of these levels must overlay
   levels the step pages assign to KrF tools — the tip and source/drain
-  implant masks the gate printed at {ref}`P1M <step-061>`, for example —
-  so where the two levels are printed on different tools the
+  implant masks the gate printed at {ref}`P1M <step-061>`, for example.
+  So where the two levels are printed on different tools the
   matched-machine rather than the single-machine overlay
-  applies.[^asml-pas5500-275d] Lens distortion is among the
+  applies.[^asml-pas5500-275d]
+
+  Lens distortion is among the
   contributors (inference from the cited
-  studies).[^demoor-2004][^chu-1999] ASML, Canon and Nikon each sold
+  studies).[^demoor-2004][^chu-1999]
+
+  ASML, Canon and Nikon each sold
   i-line tools designed to match their KrF
   tools.[^asml-800][^canon-fpa3000i5plus-1998][^nikon-s202a-s102b] The
   alignment tree of SKY130 is not public.
@@ -325,15 +335,19 @@ implants.[^pdk-03]
   polished oxide and tungsten-plug levels (our reading;
   {ref}`category-cmp`). Prasad et al. qualified
   alignment on i-line steppers over tungsten CMP, where marks are hard
-  to read.[^prasad-2001] {ref}`MM5 <step-162>` is printed over via 4 and
+  to read.[^prasad-2001]
+
+  {ref}`MM5 <step-162>` is printed over via 4 and
   the metal-5 stack, and {ref}`NSM <step-165>` and {ref}`PDM <step-168>`
   over the films the step pages read as the fuse oxide and the
   passivation.
 * **Metal 3, metal 4 and via 4.** The {ref}`MM3 <step-139>` page gives
   {math}`k_1 \approx 0.49` for the 0.3 µm line on an i-line tool of NA 0.6
-  and leaves the class open; ASML's /450F i-line scanner is specified to
-  220 nm,[^asml-pas5500-450f] so geometry alone does not exclude i-line
-  for the 0.3 µm metals. The 0.8 µm via 4 ({ref}`VIM4 <step-159>`)
+  and leaves the class open. ASML's /450F i-line scanner is specified to
+  220 nm, so geometry alone does not exclude i-line
+  for the 0.3 µm metals.[^asml-pas5500-450f]
+
+  The 0.8 µm via 4 ({ref}`VIM4 <step-159>`)
   would be an i-line level on geometry alone, but the process-steps
   sheet records for its plate a mask type that we read as a binary mask
   for 248 nm exposure.[^steps-sheet] So the step page assigns it to the

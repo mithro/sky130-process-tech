@@ -340,6 +340,7 @@ page.
 * **Ion-source parts.** Filaments or indirectly heated cathodes, arc
   chambers, reflectors and extraction electrodes are worn by the plasma.
   Wikipedia gives source lives of "often … 300 hours".[^wiki-implant]
+
   Horsky gives IHC cathode lives "from 70 h at the highest discharge power
   levels to over 500 h for moderate operation".[^horsky-1998-ihc]
   Swenson et al. lowered arc voltages on the EHP-500 "to reduce sputter
@@ -349,14 +350,18 @@ page.
   specifies a "Type II Bernas ion source w/ tungsten arc
   chamber".[^fabsurplus-e500]
 * **Beam-line liners.** Graphite and silicon-coated shields line the
-  surfaces the beam strikes, to keep sputtered metals off the wafer:
+  surfaces the beam strikes, to keep sputtered metals off the wafer.
   Swenson et al. added "graphite and Si-coated shields" to the
-  EHP-220/500 beam line,[^swenson-1996] and Nissin fits "graphite shields
+  EHP-220/500 beam line.[^swenson-1996]
+
+  Nissin fits "graphite shields
   … of high purity and less-particle generation".[^tanjyo-2011]
 * **Vacuum.** Turbomolecular and dry pumps on the source and beam line
   and cryopumps on the end station and load locks (the E500 listing
   names CTI cryopumps, Pfeiffer turbopumps and Edwards dry
-  pumps).[^fabsurplus-e500] Cryopumps collect hydrogen and dopant
+  pumps).[^fabsurplus-e500]
+
+  Cryopumps collect hydrogen and dopant
   hydrides, and Current lists the "management of potentially explosive
   gas mixtures during regeneration of cryopumps" among implanter vacuum
   issues;[^current-1996] residues of arsenic and phosphorus are met in
@@ -371,12 +376,16 @@ SKY130 conditions of their own. SKY130's implant energies and doses are
 not public.
 
 * **Large tilts and rotations.** The PDK records an "Angle for HV tip
-  implant" of 40° and a "Twist angle for HV Tip" of 23°,[^pdk-03] and the
+  implant" of 40° and a "Twist angle for HV Tip" of 23°.[^pdk-03]
+
+  The
   {ref}`HVASTI <step-069>` page reads the implant as split into rotations
-  so that source and drain are symmetric,[^pat-quad-tsmc] with the
-  resist and neighbouring gates shadowing the beam.[^chen-1995] The
+  so that source and drain are symmetric, with the
+  resist and neighbouring gates shadowing the beam.[^pat-quad-tsmc][^chen-1995] The
   {ref}`BHI <step-066>` and {ref}`LDBHI <step-073>` halo pages describe
-  the same geometry. The step pages assign these implants to the 8250 as
+  the same geometry.
+
+  The step pages assign these implants to the 8250 as
   an inference because its "0-60 deg tilt" is the only tilt range
   SkyWater states.[^skw-01] A serial end station is what makes such
   angles routine;[^axcelis-history] its accuracy is a machine property,
@@ -393,7 +402,9 @@ not public.
   charge exchange is worst with multiply charged ions and resist
   outgassing,[^kubo-1996] and neutralisation can bias the Faraday
   reading;[^curello-1998] both are reasons for the energy filters and
-  pressure control of this class. The {ref}`NWI <step-018>` page names a
+  pressure control of this class.
+
+  The {ref}`NWI <step-018>` page names a
   medium-current tool with doubly charged phosphorus as a way to reach
   the lower end of the well energies,[^pat-umc-dc] but the SkyWater
   entry lists no phosphorus.[^skw-01]
