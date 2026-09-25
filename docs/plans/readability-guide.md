@@ -403,7 +403,11 @@ starts with a bold run-in label that introduces a whole passage rather than one 
 6. At most six H3s. An H3 is added only over a passage of ≥ 120 words with its own subject, and its
    title says what the passage shows. Do not use `What the public record shows` over era-typical or
    "working figure" text, and never directly after a sentence that the passage continues
-   ("Precisely: …").
+   ("Precisely: …"). If none of the four titles is true of the passage, add no H3 — structure it
+   with R-LIST or R-PARA instead. Never invent a title such as "What this reference infers".
+   `What the public record shows` may head a passage that is mostly public record and ends in a
+   hedged estimate; `How <quantity> is estimated` may head a prose method passage that R-DERIVATION
+   does not apply to.
 
 **Example** — `docs/steps/006-stie.md:30`.
 
