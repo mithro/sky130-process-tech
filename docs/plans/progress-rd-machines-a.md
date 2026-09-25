@@ -414,6 +414,50 @@ Checkers, `-W` build: clean. Screenshots: phone tiles 4 (7-row Representative-mo
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 7. `docs/machines/duv-krf-stepper.md` — done
+
+This is the page the guide itself uses for its R-MODELS, R-QUICKFACTS ("Light source" cell) and
+R-RELATED (masks bullets) worked examples — but the file on disk still had the *before* forms in
+every case (the guide quotes what should change, not a state already applied). Rules applied:
+R-INTRO (kept the first sentence, 29 words; moved the second — the stepper/scanner mechanism
+sentence — into the H2 lead; template deleted; pointer moved to `{seealso}`). R-MODELS (15-row
+table across ASML/Nikon/Canon/SVG Lithography, the largest in the batch; the SVGL
+discontinuation sentence kept as prose after the table). R-ENTRIES (2-row table matching the
+guide's own worked example almost verbatim: `"ASML DUV stepper", "ASML DUV scanner"` →
+`our reading (machines index)`; the two 193 nm entries grouped in a second row). R-QUICKFACTS:
+applied the guide's own worked example for "Light source" exactly — moved the /750F and /350C
+laser-spec quotations into `### Excimer laser source` as a new sentence, then shrank the cell to
+`A KrF excimer laser, "Type: Cymer ELS6600, Gigaphoton KES-G2OK", 20 W, up to 2 kHz on the PAS
+5500/750F;[^asml-pas5500-750f] see *Excimer laser source*.` (the guide's exact proposed text);
+left the other five dense cells alone (method note 3 — the H3 prose already says "(quick facts
+above)" pointing back at two of them, which is itself evidence the page's own authors intended
+these figures to live in one place only). R-PARA (7 of 8 H3s needed splitting, most twice).
+R-SENTENCE (about 14 sentences over 45 words split). R-RELATED: applied the guide's own worked
+example almost exactly — the 15 per-mask bullets grouped into one **Masks.** bullet alongside
+**Category.**/**Machines.**/**Materials.**/**Indexes.**, dropping no link. R-CAPTION (both new
+tables).
+
+Over-cap counts (before → after): paragraphs > 100 words: 7 → 0; sentences > 45 words: ~14 → 0;
+quick-facts cells > 20 words: 6 of 7 → 5 (only "Light source" fixed, per the guide's own worked
+example; the rest deliberately left, see above); tables with no caption: 2 new → 0.
+
+`check_preserved.py --base 92f4f5b8 --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 and three further `LOST number_order` tuples, all hand-checked as the same
+table-conversion artefact documented in method note 1 — including a new variant specific to this
+page: the ASML models all share the `PAS 5500/…` prefix, so the Representative-models table's own
+`Model` column repeats the digits `5500` once per row, which is enough on its own to break
+contiguous matching against a source paragraph that named `5500` only once per clause. Verified
+digit-for-digit (e.g. the largest tuple, `('5500','2000','248','130','130','248','800','2001',
+'120','110')`, reproduces exactly across the four ASML /750E–/850C rows once the repeated `5500`
+Model-column mentions are read past).
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 4 (15-row Representative-models table,
+the largest table in the batch) and 6 (2-row entries table, 18-step table) read; the 15-row table
+wraps cleanly at 400 px with the 4-column shape.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
