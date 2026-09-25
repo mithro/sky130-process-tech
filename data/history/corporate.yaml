@@ -12,15 +12,13 @@
 #
 # User agent for every fetch: "sky130-process-tech docs checker". sec.gov
 # was never fetched directly; EDGAR documents are read through Wayback
-# Machine captures. Two articles' HTML could not be retrieved with that
-# user agent at all (EE Times hangs until read-timeout for non-browser
-# clients, and no Wayback capture of the exact URL exists either); those
-# records say so in `notes` and cite Claude's WebFetch tool's extraction of
-# the live page as the cached text, which is the best copy available.
+# Machine captures. EE Times and EDN articles do not answer scripted
+# fetches with that user agent and have no Wayback captures; those records
+# cite a text capture of the article taken with the Chrome browser
+# (tmp/cyhist-cache/web/chrome-*.txt), and say so in `notes`.
 schema_version: 1
 retrieved: 2026-09-25
 records:
-
 - id: cyhist-corp-1993-10k
   source:
     publisher: Cypress Semiconductor Corporation
@@ -33,49 +31,53 @@ records:
   cache: filings/ar-fy1993.txt
   sha256: f07dc8e77da34eec184513d2449c4713214bc3d747c6496cda55603544083dc8
   quotes:
-  - text: >-
-      recently upgraded to 6-inch wafers, and is the heart of Cypress's
-      research and development operations. Cypress Texas (Fab 2) is the
-      Company's largest wafer fabrication facility. Cypress Minnesota (Fab
-      3), which commenced operations in 1991, is the Company's newest wafer
-      fabrication facility.
-    location: >-
-      Item 1, Business, Manufacturing (quote begins mid-sentence, after
-      "Cypress San Jose (Fab 1), the Com pany's first fabrication facility,"
-      -- the cached PDF extraction inserts a stray space inside "Company's"
-      there, so the quote below starts after it to stay exactly verbatim)
-  - text: >-
-      The Company manufactures its products at three sub-micron wafer
-      fabrication facilities using its proprietary 0.65, 0.8 and 1.2-micron
-      CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron Flash technologies.
+  - text: recently upgraded to 6-inch wafers, and is the heart of Cypress's research and development operations.
+      Cypress Texas (Fab 2) is the Company's largest wafer fabrication facility. Cypress Minnesota (Fab
+      3), which commenced operations in 1991, is the Company's newest wafer fabrication facility.
+    location: Item 1, Business, Manufacturing (quote begins mid-sentence, after "Cypress San Jose (Fab
+      1), the Com pany's first fabrication facility," -- the cached PDF extraction inserts a stray space
+      inside "Company's" there, so the quote below starts after it to stay exactly verbatim)
+  - text: The Company manufactures its products at three sub-micron wafer fabrication facilities using
+      its proprietary 0.65, 0.8 and 1.2-micron CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron Flash technologies.
     location: Item 1, Business, Manufacturing
-  - text: >-
-      The Company has converted the focus of its San Jose wafer fabrication
-      plant to research and development. Primary process efforts are
-      directed towards developing or enhancing three generations of
-      Cypress's core CMOS SRAM technologies, including the Company's
-      established 0.8-and 0.65-micron geometries and emerging 0.5-micron
-    location: >-
-      Item 1, Business, Research and development (quote ends before
-      "geometry", which the cached PDF extraction renders as "geom etry"
-      with a stray space)
+  - text: The Company has converted the focus of its San Jose wafer fabrication plant to research and
+      development. Primary process efforts are directed towards developing or enhancing three generations
+      of Cypress's core CMOS SRAM technologies, including the Company's established 0.8-and 0.65-micron
+      geometries and emerging 0.5-micron
+    location: Item 1, Business, Research and development (quote ends before "geometry", which the cached
+      PDF extraction renders as "geom etry" with a stray space)
   claims:
-  - {subject: "Fab 1 (San Jose)", attribute: "role as of FY1993", value: "first fabrication facility, converted to R&D focus, upgraded to 6-inch wafers", date: "1993"}
-  - {subject: "Fab 2 (Texas)", attribute: "role as of FY1993", value: "Company's largest wafer fabrication facility", date: "1993"}
-  - {subject: "Fab 3 (Minnesota)", attribute: "operations start", value: "1991", date: "1993"}
-  - {subject: "CMOS SRAM process", attribute: "geometries in use/emerging, FY1993", value: "0.8 µm and 0.65 µm established, 0.5 µm emerging", date: "1993"}
-  - {subject: "BiCMOS process", attribute: "geometries, FY1993", value: "0.8 µm and 0.5 µm", date: "1993"}
-  - {subject: "Flash process", attribute: "geometry, FY1993", value: "0.65 µm", date: "1993"}
-  notes: >-
-    Same source as data/filings.yaml's cypress-annual-report-fy1993 record
-    (reused here); this record adds the manufacturing/R&D paragraph's
-    process-generation sentence, which that record's summary paraphrases
+  - subject: Fab 1 (San Jose)
+    attribute: role as of FY1993
+    value: first fabrication facility, converted to R&D focus, upgraded to 6-inch wafers
+    date: '1993'
+  - subject: Fab 2 (Texas)
+    attribute: role as of FY1993
+    value: Company's largest wafer fabrication facility
+    date: '1993'
+  - subject: Fab 3 (Minnesota)
+    attribute: operations start
+    value: '1991'
+    date: '1993'
+  - subject: CMOS SRAM process
+    attribute: geometries in use/emerging, FY1993
+    value: 0.8 µm and 0.65 µm established, 0.5 µm emerging
+    date: '1993'
+  - subject: BiCMOS process
+    attribute: geometries, FY1993
+    value: 0.8 µm and 0.5 µm
+    date: '1993'
+  - subject: Flash process
+    attribute: geometry, FY1993
+    value: 0.65 µm
+    date: '1993'
+  notes: Same source as data/filings.yaml's cypress-annual-report-fy1993 record (reused here); this record
+    adds the manufacturing/R&D paragraph's process-generation sentence, which that record's summary paraphrases
     but does not quote in full.
-
 - id: cyhist-corp-1994-1995-proxy-cmi
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "Definitive proxy statements (Schedule 14A), 1994 and 1995 annual meetings"
+    title: Definitive proxy statements (Schedule 14A), 1994 and 1995 annual meetings
     date: 1994-03-15
     form: DEF 14A
   url: null
@@ -84,28 +86,28 @@ records:
   cache: filings/edgar-1994-000010.txt
   sha256: f098e83715a9560549e082a1fba197e0c25fc3c2a27dd008363eb27d46cf7abe
   quotes:
-  - text: >-
-      Cypress Semiconductor (Minnesota) Inc. ("CMI"), the
-      Company's third wafer fabrication facility
-    location: "Schedule 14A, director biography paragraph (name of the consulted director omitted per project rule; the fact quoted is the CMI naming, not the biography)"
+  - text: Cypress Semiconductor (Minnesota) Inc. ("CMI"), the Company's third wafer fabrication facility
+    location: Schedule 14A, director biography paragraph (name of the consulted director omitted per project
+      rule; the fact quoted is the CMI naming, not the biography)
   claims:
-  - {subject: "Fab 3 (Minnesota)", attribute: "corporate entity name", value: "Cypress Semiconductor (Minnesota) Inc. (\"CMI\")", date: "1994"}
-  - {subject: "Fab 3 (Minnesota)", attribute: "rank among Cypress fabs as of 1994", value: "the Company's third wafer fabrication facility", date: "1994"}
-  notes: >-
-    Identical wording, same context, appears in the 1995 DEF 14A (accession
-    0000791915-95-000007, Wayback capture
-    https://web.archive.org/web/20170530145027id_/https://www.sec.gov/Archives/edgar/data/791915/0000791915-95-000007.txt,
-    cached at filings/edgar-1995-000007.txt, sha256
-    56d0f52e9c31108a8e9e7349d8de1815a0c8e10645bdc27f35a0dc634cb2816c) --
-    both proxies are otherwise routine (director elections, compensation,
-    an equity plan) with no other process-technology or fab content. CMI
-    complements CTI (cyhist-corp-1995-ar-cti below): Cypress used
-    "(state) Inc." subsidiary names for its non-San-Jose fabs.
-
+  - subject: Fab 3 (Minnesota)
+    attribute: corporate entity name
+    value: Cypress Semiconductor (Minnesota) Inc. ("CMI")
+    date: '1994'
+  - subject: Fab 3 (Minnesota)
+    attribute: rank among Cypress fabs as of 1994
+    value: the Company's third wafer fabrication facility
+    date: '1994'
+  notes: 'Identical wording, same context, appears in the 1995 DEF 14A (accession 0000791915-95-000007,
+    Wayback capture https://web.archive.org/web/20170530145027id_/https://www.sec.gov/Archives/edgar/data/791915/0000791915-95-000007.txt,
+    cached at filings/edgar-1995-000007.txt, sha256 56d0f52e9c31108a8e9e7349d8de1815a0c8e10645bdc27f35a0dc634cb2816c)
+    -- both proxies are otherwise routine (director elections, compensation, an equity plan) with no other
+    process-technology or fab content. CMI complements CTI (cyhist-corp-1995-ar-cti below): Cypress used
+    "(state) Inc." subsidiary names for its non-San-Jose fabs.'
 - id: cyhist-corp-1996-10q-q1
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "Form 10-Q for the quarterly period ended 1996-04-01"
+    title: Form 10-Q for the quarterly period ended 1996-04-01
     date: 1996-05-16
     form: 10-Q
   url: null
@@ -114,24 +116,24 @@ records:
   cache: filings/edgar-1996-000006.txt
   sha256: 4f8982ba53cfbdd0fe9050920d49b513a0a8527e69d60c221a1ad3fa5b1ae1ba
   quotes:
-  - text: >-
-      a die size reduction program in the Company's domestic wafer
-      fabrication plants, and improved manufacturing efficiencies.
-    location: "Part I, Item 2, Management's Discussion and Analysis"
-  - text: >-
-      the Company acquired additional property, plant and equipment
-      totalling $71.6 million.  The additions primarily related to
-      increasing capacity in the wafer producing fabrication facilities in
-      Minnesota, Texas and San Jose.
-    location: "Part I, Item 2, Management's Discussion and Analysis, Liquidity"
+  - text: a die size reduction program in the Company's domestic wafer fabrication plants, and improved
+      manufacturing efficiencies.
+    location: Part I, Item 2, Management's Discussion and Analysis
+  - text: the Company acquired additional property, plant and equipment totalling $71.6 million.  The
+      additions primarily related to increasing capacity in the wafer producing fabrication facilities
+      in Minnesota, Texas and San Jose.
+    location: Part I, Item 2, Management's Discussion and Analysis, Liquidity
   claims:
-  - {subject: "Cypress wafer fabs", attribute: "locations operating, Q1 1996", value: "Minnesota, Texas and San Jose", date: "1996-04-01"}
-  notes: Filed by Cypress itself (CIK 0000791915); found via a Wayback CDX listing of the CIK's Archives folder, not a filing-list page.
-
+  - subject: Cypress wafer fabs
+    attribute: locations operating, Q1 1996
+    value: Minnesota, Texas and San Jose
+    date: '1996-04-01'
+  notes: Filed by Cypress itself (CIK 0000791915); found via a Wayback CDX listing of the CIK's Archives
+    folder, not a filing-list page.
 - id: cyhist-corp-1996-10q-q3-fab1-rd
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "Form 10-Q for the quarterly period ended 1996-09-30"
+    title: Form 10-Q for the quarterly period ended 1996-09-30
     date: 1996-11-14
     form: 10-Q
   url: null
@@ -140,40 +142,36 @@ records:
   cache: filings/edgar-1996-000013.txt
   sha256: 042062a4a33eb734f7503332762de7631ba6f2c386bb17b222f20521446eb70b
   quotes:
-  - text: >-
-      The Company also announced a restructuring of its San Jose wafer
-      fabrication facility ("Fab 1").  The restructuring will reduce the
-      fab's production capability and transform it into strictly a research
-      and development facility.  As a result of the restructuring, the
-      Company recorded a pretax charge of $9.1 million principally related
-      to the write-down of certain excess equipment and the transfer of
-      certain other equipment to its Texas and Minnesota production wafer
-      fabrication plants.  The Company's objective is to cease production
-      activity in this facility by December 1996.
-    location: "Part I, Item 1, Notes to financial statements (restructuring note)"
-  - text: >-
-      implement new technologies including the ramp of the Company's 0.5
-      micron process to full commercial production.
-    location: "Part I, Item 2, forward-looking-statement risk paragraph"
-  - text: >-
-      its design centers and the transformation of the San Jose wafer
-      facility into a R & D wafer facility, the rise in actual R & D
-      spending is expected to continue
-    location: "Part I, Item 2, Management's Discussion and Analysis"
+  - text: The Company also announced a restructuring of its San Jose wafer fabrication facility ("Fab
+      1").  The restructuring will reduce the fab's production capability and transform it into strictly
+      a research and development facility.  As a result of the restructuring, the Company recorded a pretax
+      charge of $9.1 million principally related to the write-down of certain excess equipment and the
+      transfer of certain other equipment to its Texas and Minnesota production wafer fabrication plants.  The
+      Company's objective is to cease production activity in this facility by December 1996.
+    location: Part I, Item 1, Notes to financial statements (restructuring note)
+  - text: implement new technologies including the ramp of the Company's 0.5 micron process to full commercial
+      production.
+    location: Part I, Item 2, forward-looking-statement risk paragraph
+  - text: its design centers and the transformation of the San Jose wafer facility into a R & D wafer
+      facility, the rise in actual R & D spending is expected to continue
+    location: Part I, Item 2, Management's Discussion and Analysis
   claims:
-  - {subject: "Fab 1 (San Jose)", attribute: "restructuring announced", value: "reduced to strictly an R&D facility; target to cease production by December 1996; $9.1M pretax charge; equipment transferred to Texas and Minnesota fabs", date: "1996-09 (Q3 1996 10-Q)"}
-  - {subject: "0.5 micron CMOS process", attribute: "status", value: "ramping to full commercial production", date: "1996-09-30"}
-  notes: >-
-    Corroborates, with a primary contemporaneous filing, the FundingUniverse/
-    encyclopedia.com secondary account that Cypress stopped manufacturing at
-    San Jose headquarters in October 1996 and converted it to R&D only (see
-    cyhist-corp-sec-fundinguniverse). Two independent sources -- SUPPORTED,
-    not single-source.
-
+  - subject: Fab 1 (San Jose)
+    attribute: restructuring announced
+    value: reduced to strictly an R&D facility; target to cease production by December 1996; $9.1M pretax
+      charge; equipment transferred to Texas and Minnesota fabs
+    date: 1996-09 (Q3 1996 10-Q)
+  - subject: 0.5 micron CMOS process
+    attribute: status
+    value: ramping to full commercial production
+    date: '1996-09-30'
+  notes: Corroborates, with a primary contemporaneous filing, the FundingUniverse/ encyclopedia.com secondary
+    account that Cypress stopped manufacturing at San Jose headquarters in October 1996 and converted
+    it to R&D only (see cyhist-corp-sec-fundinguniverse). Two independent sources -- SUPPORTED, not single-source.
 - id: cyhist-corp-1995-ar-cti
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01"
+    title: 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01
     date: 1996-01-19
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
@@ -182,41 +180,36 @@ records:
   cache: filings/ar-fy1995.txt
   sha256: c1c09b68e0845712e3ffacda5182317c335dcf87389b87dbcf6a3f151e2be739
   quotes:
-  - text: >-
-      Cypress Semiconductor (Texas),
-      Inc. (“CTI”), the Company’s wafer fabrication facility
-      in Texas, which is approximately 17% owned by
-      Altera Corporation (“Altera”).  Altera receives wafer
-      fab capacity commensurate with its investment.
-    location: "Notes to consolidated financial statements, ownership of subsidiaries"
-  - text: >-
-      In December 1994,
-      the Company entered into a ten-year operating lease
-      for its second wafer fabrication facility “Fab IV” in
-      Bloomington, Minnesota.  In October 1995, the
-      Company entered into an additional lease financing
-      agreement related to Fab IVb in Minnesota.
-    location: "Notes to consolidated financial statements, commitments"
-  - text: >-
-      wafer fabrication plant, on which we broke
-      ground in August 1994. Fab IV in Bloomington,
-    location: "Letter to shareholders / business review"
+  - text: Cypress Semiconductor (Texas), Inc. (“CTI”), the Company’s wafer fabrication facility in Texas,
+      which is approximately 17% owned by Altera Corporation (“Altera”).  Altera receives wafer fab capacity
+      commensurate with its investment.
+    location: Notes to consolidated financial statements, ownership of subsidiaries
+  - text: In December 1994, the Company entered into a ten-year operating lease for its second wafer fabrication
+      facility “Fab IV” in Bloomington, Minnesota.  In October 1995, the Company entered into an additional
+      lease financing agreement related to Fab IVb in Minnesota.
+    location: Notes to consolidated financial statements, commitments
+  - text: wafer fabrication plant, on which we broke ground in August 1994. Fab IV in Bloomington,
+    location: Letter to shareholders / business review
   claims:
-  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "corporate entity name and ownership", value: "Cypress Semiconductor (Texas), Inc. (\"CTI\"); approximately 17% owned by Altera Corporation, which receives wafer fab capacity commensurate with its investment", date: "1995 (as of 1996-01-01)"}
-  - {subject: "Fab 4 (Bloomington, Minnesota)", attribute: "construction/lease history", value: "ten-year operating lease entered December 1994; ground broken August 1994; a further lease financing for \"Fab IVb\" entered October 1995", date: "1994-1995"}
-  notes: >-
-    Directly supports the seed claim "Fab 2 is CTI, Round Rock, Texas": CTI
-    is Cypress's own name for the entity, confirmed again in the FY1994/1995
-    proxy statements' "CMI" analogue for Minnesota. The Altera part-ownership
-    of CTI is a new fact not in any seed and not repeated in later annual
-    reports checked so far -- flagged SINGLE-SOURCE in the timeline until a
-    second source is found (e.g. an Altera filing, not yet searched).
-    "Fab IVb" as a name distinct from "Fab IV" is also SINGLE-SOURCE so far.
-
+  - subject: Fab 2 (Round Rock, Texas)
+    attribute: corporate entity name and ownership
+    value: Cypress Semiconductor (Texas), Inc. ("CTI"); approximately 17% owned by Altera Corporation,
+      which receives wafer fab capacity commensurate with its investment
+    date: 1995 (as of 1996-01-01)
+  - subject: Fab 4 (Bloomington, Minnesota)
+    attribute: construction/lease history
+    value: ten-year operating lease entered December 1994; ground broken August 1994; a further lease
+      financing for "Fab IVb" entered October 1995
+    date: 1994-1995
+  notes: 'Directly supports the seed claim "Fab 2 is CTI, Round Rock, Texas": CTI is Cypress''s own name
+    for the entity, confirmed again in the FY1994/1995 proxy statements'' "CMI" analogue for Minnesota.
+    The Altera part-ownership of CTI is a new fact not in any seed and not repeated in later annual reports
+    checked so far -- flagged SINGLE-SOURCE in the timeline until a second source is found (e.g. an Altera
+    filing, not yet searched). "Fab IVb" as a name distinct from "Fab IV" is also SINGLE-SOURCE so far.'
 - id: cyhist-corp-1996-ar-fabv-fab1rd
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "1996 Annual Report to shareholders, for the fiscal year ended 1996-12-29"
+    title: 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-29
     date: 1997-02-25
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
@@ -225,49 +218,48 @@ records:
   cache: filings/ar-fy1996.txt
   sha256: 1c03f974ae1189581ac6cbc28a18f150c8d2493bd34bb87bba38f4bbb25d171a
   quotes:
-  - text: >-
-      Cypress breaks ground on Fab V in Round Rock, Texas. The eight-inch wafer fab
-      will be a 225,000-square-foot facility with a 35,000-square-foot clean room.
-    location: "Business Highlights timeline, Q1"
-  - text: >-
-      Cypress transforms its Fab I in San Jose to an R&D-only facility, reducing costs and speed -
+  - text: Cypress breaks ground on Fab V in Round Rock, Texas. The eight-inch wafer fab will be a 225,000-square-foot
+      facility with a 35,000-square-foot clean room.
+    location: Business Highlights timeline, Q1
+  - text: Cypress transforms its Fab I in San Jose to an R&D-only facility, reducing costs and speed -
       ing development of new products by providing increased fab access for R&D engineers.
-    location: "Business Highlights timeline, Q3"
-  - text: >-
-      technologies, with line widths currently down to 0.35 microns, Cypress has been
-    location: "Letter to shareholders / business review"
-  - text: >-
-      million charge to move production wafer manufacturing out of San Jose, making
-    location: "Management's Discussion and Analysis"
-  - text: >-
-      announced a restructuring of its San Jose wafer fabrication facility from a production wafer fab-
-      rication plant to predominantly a research and development wafer fabrication facility
-    location: "Notes to financial statements, restructuring note"
+    location: Business Highlights timeline, Q3
+  - text: technologies, with line widths currently down to 0.35 microns, Cypress has been
+    location: Letter to shareholders / business review
+  - text: million charge to move production wafer manufacturing out of San Jose, making
+    location: Management's Discussion and Analysis
+  - text: announced a restructuring of its San Jose wafer fabrication facility from a production wafer
+      fab- rication plant to predominantly a research and development wafer fabrication facility
+    location: Notes to financial statements, restructuring note
   claims:
-  - {subject: "Fab 5 (Round Rock, Texas)", attribute: "construction", value: "ground broken Q1 1996; planned 225,000 sq ft with a 35,000 sq ft clean room; eight-inch (200 mm) wafers", date: "1996 Q1"}
-  - {subject: "Fab 1 (San Jose)", attribute: "conversion to R&D-only", value: "completed/announced as a Q3 1996 milestone", date: "1996 Q3"}
-  - {subject: "Cypress SRAM process", attribute: "line width, FY1996", value: "down to 0.35 microns", date: "1996"}
-  notes: >-
-    "Fab V"/"Fab 5" here is a NEW eight-inch Round Rock facility (ground
-    broken 1996), distinct from the original six-inch Fab 2. This is a
-    CONFLICT with the Gale/FundingUniverse-and-Encyclopedia.com secondary
-    account (cyhist-corp-sec-fundinguniverse), which describes only "a
-    second wafer fab in Round Rock" begun April 1996 without a distinct
-    fab number, and with the 1998-era EE Times restructuring story
-    (cyhist-corp-pr-1998-restructure), which describes a still-unbuilt
-    "Fab 5... second half of 1999" -- i.e. groundbreaking (1996) and
-    completion/technology-install (1999) are ~3 years apart and different
-    sources catch different ends of that span. No later Cypress filing
-    checked so far (FY1997-2010 annual reports) refers again to "Fab 5" or
-    "Fab V" by that name -- the Round Rock facility is called "Fab 2" in
-    FY1997-2010 reports (see cyhist-corp-1997-ar and later), so either the
-    Fab V/5 project was folded into/renamed Fab 2, or cancelled and its
-    site later reused; this is an open question, noted in the progress file.
-
+  - subject: Fab 5 (Round Rock, Texas)
+    attribute: construction
+    value: ground broken Q1 1996; planned 225,000 sq ft with a 35,000 sq ft clean room; eight-inch (200
+      mm) wafers
+    date: 1996 Q1
+  - subject: Fab 1 (San Jose)
+    attribute: conversion to R&D-only
+    value: completed/announced as a Q3 1996 milestone
+    date: 1996 Q3
+  - subject: Cypress SRAM process
+    attribute: line width, FY1996
+    value: down to 0.35 microns
+    date: '1996'
+  notes: '"Fab V"/"Fab 5" here is a NEW eight-inch Round Rock facility (ground broken 1996), distinct
+    from the original six-inch Fab 2. This is a CONFLICT with the Gale/FundingUniverse-and-Encyclopedia.com
+    secondary account (cyhist-corp-sec-fundinguniverse), which describes only "a second wafer fab in Round
+    Rock" begun April 1996 without a distinct fab number, and with the 1998-era EE Times restructuring
+    story (cyhist-corp-pr-1998-restructure), which describes a still-unbuilt "Fab 5... second half of
+    1999" -- i.e. groundbreaking (1996) and completion/technology-install (1999) are ~3 years apart and
+    different sources catch different ends of that span. No later Cypress filing checked so far (FY1997-2010
+    annual reports) refers again to "Fab 5" or "Fab V" by that name -- the Round Rock facility is called
+    "Fab 2" in FY1997-2010 reports (see cyhist-corp-1997-ar and later), so either the Fab V/5 project
+    was folded into/renamed Fab 2, or cancelled and its site later reused; this is an open question, noted
+    in the progress file.'
 - id: cyhist-corp-1997-ar-fabs
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "1997 Annual Report to shareholders, for the fiscal year ended 1997-12-28"
+    title: 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-28
     date: 1998-03-06
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
@@ -276,36 +268,39 @@ records:
   cache: filings/ar-fy1997.txt
   sha256: 07f39317b4e487f1b0122f69ebdd2291f07cd399c5adde7c0dcaef6313806abd
   quotes:
-  - text: >-
-      Our newest wafer fab-
-      rication facility, Fab 4 in Bloomington, Minne-
-      sota, produces 8-inch wafers with 1.78 times
-      more chips per wa fer than the 6-inch wafers
-      manufactured in Minnesota Fab 3 and Fab 2 in
-      Round Rock, Texas.
-    location: "Business review, manufacturing section"
-  - text: >-
-      Cypress’s primary production facilities are Texas
-      Fab 2 and Minnesota Fabs 3 and 4. Fabs 2 and 3
-      produce 6-inch wafers primarily with 0.6-micron
-    location: "Business review, manufacturing section"
-  - text: >-
-      In the fourth quarter of
-      1997, only 21% of our wafers were manufactured
-      using our most advanced 0.5-micron or less tech-
-      nologies.
-    location: "Business review, manufacturing section"
+  - text: Our newest wafer fab- rication facility, Fab 4 in Bloomington, Minne- sota, produces 8-inch
+      wafers with 1.78 times more chips per wa fer than the 6-inch wafers manufactured in Minnesota Fab
+      3 and Fab 2 in Round Rock, Texas.
+    location: Business review, manufacturing section
+  - text: Cypress’s primary production facilities are Texas Fab 2 and Minnesota Fabs 3 and 4. Fabs 2 and
+      3 produce 6-inch wafers primarily with 0.6-micron
+    location: Business review, manufacturing section
+  - text: In the fourth quarter of 1997, only 21% of our wafers were manufactured using our most advanced
+      0.5-micron or less tech- nologies.
+    location: Business review, manufacturing section
   claims:
-  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "wafer size and process, FY1997", value: "6-inch wafers, primarily 0.6-micron", date: "1997"}
-  - {subject: "Fab 3 (Bloomington, Minnesota)", attribute: "wafer size and process, FY1997", value: "6-inch wafers, primarily 0.6-micron", date: "1997"}
-  - {subject: "Fab 4 (Bloomington, Minnesota)", attribute: "wafer size, FY1997", value: "8-inch (200 mm) wafers, 1.78x more chips/wafer than 6-inch fabs", date: "1997"}
-  - {subject: "Cypress advanced process", attribute: "share of wafers, Q4 1997", value: "21% at 0.5-micron or less", date: "1997 Q4"}
-  notes: No mention of "Fab 5" here -- consistent with the note on cyhist-corp-1996-ar-fabv-fab1rd that the name drops out of use after 1996-1997.
-
+  - subject: Fab 2 (Round Rock, Texas)
+    attribute: wafer size and process, FY1997
+    value: 6-inch wafers, primarily 0.6-micron
+    date: '1997'
+  - subject: Fab 3 (Bloomington, Minnesota)
+    attribute: wafer size and process, FY1997
+    value: 6-inch wafers, primarily 0.6-micron
+    date: '1997'
+  - subject: Fab 4 (Bloomington, Minnesota)
+    attribute: wafer size, FY1997
+    value: 8-inch (200 mm) wafers, 1.78x more chips/wafer than 6-inch fabs
+    date: '1997'
+  - subject: Cypress advanced process
+    attribute: share of wafers, Q4 1997
+    value: 21% at 0.5-micron or less
+    date: 1997 Q4
+  notes: No mention of "Fab 5" here -- consistent with the note on cyhist-corp-1996-ar-fabv-fab1rd that
+    the name drops out of use after 1996-1997.
 - id: cyhist-corp-1998-ar-fab3-close-025um
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "1998 Annual Report to shareholders, for the fiscal year ended 1998-12-27"
+    title: 1998 Annual Report to shareholders, for the fiscal year ended 1998-12-27
     date: 1999-01-25
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
@@ -314,77 +309,80 @@ records:
   cache: filings/ar-fy1998.txt
   sha256: efd6684a9682200288260eb9660a2d726836cd429e47ecec07e8db2ecfd8987b
   quotes:
-  - text: >-
-      Last year, when I outlined a plan to shut down Minne-
-      sota Fab 3 and ramp our new 8-inch Minnesota Fab 4,
-      the goal was to move our SRAM production onto our
-      more advanced technologies.
-    location: "President's letter"
-  - text: >-
-      In the fourth quarter, 67% of our SRAM wafer starts
-      were in 0.35-micron technologies or better, and we
-      shipped first revenue on our 0.25-micron technology
-    location: "President's letter"
-  - text: >-
-      Our Programmable Products Division (PPD)
-      needed a 0.18-micron logic technology to develop its
-    location: "President's letter, product/technology discussion"
-  - text: >-
-      we have deve loped a new,
-      0.25-micron BiCMOS process technology that fea-
-      tures special bipolar transistors that can amplify sig-
-      nals up to a frequency of 25 gigahertz.
-    location: "President's letter, HOTLink II discussion"
+  - text: Last year, when I outlined a plan to shut down Minne- sota Fab 3 and ramp our new 8-inch Minnesota
+      Fab 4, the goal was to move our SRAM production onto our more advanced technologies.
+    location: President's letter
+  - text: In the fourth quarter, 67% of our SRAM wafer starts were in 0.35-micron technologies or better,
+      and we shipped first revenue on our 0.25-micron technology
+    location: President's letter
+  - text: Our Programmable Products Division (PPD) needed a 0.18-micron logic technology to develop its
+    location: President's letter, product/technology discussion
+  - text: we have deve loped a new, 0.25-micron BiCMOS process technology that fea- tures special bipolar
+      transistors that can amplify sig- nals up to a frequency of 25 gigahertz.
+    location: President's letter, HOTLink II discussion
   claims:
-  - {subject: "Fab 3 (Bloomington, Minnesota)", attribute: "planned closure", value: "plan to shut down announced (stated retrospectively in the FY1998 letter as \"last year\", i.e. 1997)", date: "1997-1998"}
-  - {subject: "Fab 4 (Bloomington, Minnesota)", attribute: "SRAM process ramp, FY1998", value: "67% of Q4 SRAM wafer starts at 0.35-micron or better; first revenue shipped on 0.25-micron", date: "1998 Q4"}
-  - {subject: "0.18-micron logic process", attribute: "sourcing", value: "Programmable Products Division used an external wafer foundry to obtain a 0.18-micron logic technology (earliest foundry-use statement found in this corpus)", date: "1998"}
-  - {subject: "0.25-micron BiCMOS process", attribute: "description", value: "special bipolar transistors amplifying signals up to 25 GHz, developed for the HOTLink II family", date: "1998"}
-  notes: >-
-    "shut down Minnesota Fab 3" here means end production SRAM manufacturing
-    at Fab 3, consistent with data/filings.yaml's note (via the FY1993
-    record) that the original 6-inch Fab 3 plant was "shut down in 1998".
-
+  - subject: Fab 3 (Bloomington, Minnesota)
+    attribute: planned closure
+    value: plan to shut down announced (stated retrospectively in the FY1998 letter as "last year", i.e.
+      1997)
+    date: 1997-1998
+  - subject: Fab 4 (Bloomington, Minnesota)
+    attribute: SRAM process ramp, FY1998
+    value: 67% of Q4 SRAM wafer starts at 0.35-micron or better; first revenue shipped on 0.25-micron
+    date: 1998 Q4
+  - subject: 0.18-micron logic process
+    attribute: sourcing
+    value: Programmable Products Division used an external wafer foundry to obtain a 0.18-micron logic
+      technology (earliest foundry-use statement found in this corpus)
+    date: '1998'
+  - subject: 0.25-micron BiCMOS process
+    attribute: description
+    value: special bipolar transistors amplifying signals up to 25 GHz, developed for the HOTLink II family
+    date: '1998'
+  notes: '"shut down Minnesota Fab 3" here means end production SRAM manufacturing at Fab 3, consistent
+    with data/filings.yaml''s note (via the FY1993 record) that the original 6-inch Fab 3 plant was "shut
+    down in 1998".'
 - id: cyhist-corp-pr-1998-restructure
   source:
     publisher: EE Times
-    title: "Cypress Restructures Manufacturing Operations"
+    title: Cypress Restructures Manufacturing Operations
     date: 1998-03-09
     form: trade press article
   url: https://www.eetimes.com/cypress-restructures-manufacturing-operations/
   archive_url: null
   retrieved: 2026-09-25
-  cache: web/eetimes-cypress-restructures-manufacturing-1998.txt
-  sha256: d3ce4d6ddd28a2f9fbdbeffccec6d5495e4fe9e75af11cd03c9221da4ae0b82a
+  cache: web/chrome-eetimes-1998-03-09-cypress-restructures-manufacturing.txt
   quotes:
-  - text: >-
-      plans to close its aging 6-inch wafer fab, which is processing
-      integrated circuits (ICs) with 0.6-micron technology
-    location: "article body, Bloomington Minnesota section"
-  - text: >-
-      Fab 5, an 8-inch
-      facility that will be built in the second half of 1999
-    location: "article body, Round Rock Texas section"
+  - text: In Bloomington, Minn., Cypress said it plans to close its aging 6-inch wafer fab, which is processing
+      integrated circuits (ICs) with 0.6-micron technology, and move production to an 8-inch line capable
+      of 0.35-micron processing.
+    location: article body, Bloomington paragraph
+  - text: “Second, we are downsizing our 6-inch Fab 2 facility in Round Rock, Texas, to eliminate static
+      RAM production and also to reduce manufacturing costs significantly on high-margin non-SRAM products,”
+    location: article body, quoting the CEO
+  - text: “We will install that technology in Fab 5, an 8-inch facility that will be built in the second
+      half of 1999 and staffed with employees from Fab 2 as well as new hires,”
+    location: article body, quoting the CEO
+  - text: Cypress said its Fab 2 produces data communication ICs, programmable logic, and chips for its
+      Computer Products divisions
+    location: article body, Round Rock paragraph
   claims:
-  - {subject: "Fab 3 (Bloomington, Minnesota, 6-inch)", attribute: "planned closure and process", value: "aging 6-inch fab running 0.6-micron technology, to close", date: "1998-03"}
-  - {subject: "Fab 5 (Round Rock, Texas)", attribute: "plan as of March 1998", value: "8-inch facility to be built in the second half of 1999; planned 0.25-micron installation", date: "1998-03, planned for 1999"}
-  notes: >-
-    RETRIEVAL CAVEAT: this URL hung until read-timeout under a direct fetch
-    with the project user agent, and no Wayback Machine capture of it
-    exists (checked 2026-09-25); the cached text is Claude's WebFetch
-    extraction of the live page, not an independently fetchable raw HTML
-    capture -- treat with more caution than the other trade-press records
-    here, though it corroborates, and is corroborated by,
-    cyhist-corp-1996-ar-fabv-fab1rd and cyhist-corp-1998-ar-fab3-close-025um
-    (SUPPORTED by primary Cypress annual reports on both ends). See the
-    CONFLICT note on cyhist-corp-1996-ar-fabv-fab1rd about the Fab 5
-    groundbreaking-vs-completion date spread and its disappearance from
-    later annual reports.
-
+  - subject: Fab 3 (Bloomington, Minnesota, 6-inch)
+    attribute: planned closure and process
+    value: aging 6-inch fab running 0.6-micron technology, to close
+    date: 1998-03
+  - subject: Fab 5 (Round Rock, Texas)
+    attribute: plan as of March 1998
+    value: 8-inch facility to be built in the second half of 1999; planned 0.25-micron installation
+    date: 1998-03, planned for 1999
+  notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
+    the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
+    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
+    below was re-taken from the browser capture.
 - id: cyhist-corp-2001-ar-transfer
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30"
+    title: 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30
     date: 2002-02-28
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2001.pdf
@@ -393,23 +391,31 @@ records:
   cache: filings/ar-fy2001.txt
   sha256: c82e16d790c1b548eb1385af2a809f4a1773334dec2c5ce16c1e936400650688
   quotes:
-  - text: >-
-      ramping our latest 0.15-micron technology in manufacturing and simultaneously transferring our
-    location: "Item 1, Business, Research and development"
-  - text: >-
-      0.12-micron technology from our eight-inch R&D Fab in San Jose, California to our eight-inch
+  - text: ramping our latest 0.15-micron technology in manufacturing and simultaneously transferring our
+    location: Item 1, Business, Research and development
+  - text: 0.12-micron technology from our eight-inch R&D Fab in San Jose, California to our eight-inch
       manufacturing fab in Minnesota and initiating development of our 0.10-micron technology at the
-    location: "Item 1, Business, Research and development"
+    location: Item 1, Business, Research and development
   claims:
-  - {subject: "0.15-micron process", attribute: "status, FY2001", value: "ramping in manufacturing", date: "2001"}
-  - {subject: "0.12-micron process", attribute: "transfer, FY2001", value: "transferred from the eight-inch San Jose R&D fab to the eight-inch Minnesota manufacturing fab (Fab 4)", date: "2001"}
-  - {subject: "0.10-micron process", attribute: "status, FY2001", value: "development initiated at the San Jose R&D fab", date: "2001"}
-  notes: Matches data/filings.yaml's cypress-annual-report-fy2001 summary; this record adds the exact process-transfer sentence verbatim.
-
+  - subject: 0.15-micron process
+    attribute: status, FY2001
+    value: ramping in manufacturing
+    date: '2001'
+  - subject: 0.12-micron process
+    attribute: transfer, FY2001
+    value: transferred from the eight-inch San Jose R&D fab to the eight-inch Minnesota manufacturing
+      fab (Fab 4)
+    date: '2001'
+  - subject: 0.10-micron process
+    attribute: status, FY2001
+    value: development initiated at the San Jose R&D fab
+    date: '2001'
+  notes: Matches data/filings.yaml's cypress-annual-report-fy2001 summary; this record adds the exact
+    process-transfer sentence verbatim.
 - id: cyhist-corp-2002-ar-ram7-ram8-sonos
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2002 Annual Report to shareholders, for the fiscal year ended 2002-12-29"
+    title: 2002 Annual Report to shareholders, for the fiscal year ended 2002-12-29
     date: 2003-03-07
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
@@ -418,46 +424,55 @@ records:
   cache: filings/ar-fy2002.txt
   sha256: e464d9584e1d2517b2f03093bb21595579a7727378bc19ecdd063f44cc199454
   quotes:
-  - text: >-
-      We are simultaneously transferring our 90-nanometer (0.9-micron) technology from
-      our eight-inch R&D facility in San Jose, California (“Fab 1”) to our eight-inch manufacturing Fab 4 in Minnesota.
-    location: "Item 1, Business, Research and development"
-  - text: >-
-      In October 2002, we en tered into an agreement with Honeywell to jointly develop a 0 .13-micron Silicon-On-Insulator (“SOI”)
-      process technology in Fab 4.
-    location: "Item 1, Business, Research and development"
-  - text: >-
-      we r educed di e si ze b y i ntroducing our R AM 8 m anufacturing p rocess i n Fab 4 an d by  co ntinuing t he
-      production ramps of our RAM 7 process in Fab 4 and our SONOS process in Fab 2. RAM 8 reduced our leading edge line widths
-      from 0.15-micron to 0.13-micron, resulting in more die per wafer.  The SONOS process reduced our Fab 2 line width from 0.5-micron
-      to 0.35-micron enabling new embedded non-volatile programmable products and increased die per wafer.
-    location: "Item 1, Business, Manufacturing"
-  - text: >-
-      These fabrication facilities u tilize our proprietary 0.13 through 0.8-micron CMOS, 0.25  and 0.8-micron BiCMOS, and 0.35-micron
-      Silicon Nitride Ox ide Silicon (SONOS)
-    location: "Item 1, Business, Manufacturing"
+  - text: We are simultaneously transferring our 90-nanometer (0.9-micron) technology from our eight-inch
+      R&D facility in San Jose, California (“Fab 1”) to our eight-inch manufacturing Fab 4 in Minnesota.
+    location: Item 1, Business, Research and development
+  - text: In October 2002, we en tered into an agreement with Honeywell to jointly develop a 0 .13-micron
+      Silicon-On-Insulator (“SOI”) process technology in Fab 4.
+    location: Item 1, Business, Research and development
+  - text: we r educed di e si ze b y i ntroducing our R AM 8 m anufacturing p rocess i n Fab 4 an d by  co
+      ntinuing t he production ramps of our RAM 7 process in Fab 4 and our SONOS process in Fab 2. RAM
+      8 reduced our leading edge line widths from 0.15-micron to 0.13-micron, resulting in more die per
+      wafer.  The SONOS process reduced our Fab 2 line width from 0.5-micron to 0.35-micron enabling new
+      embedded non-volatile programmable products and increased die per wafer.
+    location: Item 1, Business, Manufacturing
+  - text: These fabrication facilities u tilize our proprietary 0.13 through 0.8-micron CMOS, 0.25  and
+      0.8-micron BiCMOS, and 0.35-micron Silicon Nitride Ox ide Silicon (SONOS)
+    location: Item 1, Business, Manufacturing
   claims:
-  - {subject: "90-nanometer (0.09 µm) process", attribute: "transfer, FY2002", value: "transferred from the San Jose R&D fab (Fab 1, eight-inch) to Fab 4 Minnesota (eight-inch)", date: "2002"}
-  - {subject: "0.13-micron SOI process", attribute: "joint development", value: "joint development with Honeywell, in Fab 4", date: "2002-10"}
-  - {subject: "RAM 7 process", attribute: "fab and role", value: "ramping in Fab 4, an SRAM manufacturing process", date: "2002"}
-  - {subject: "RAM 8 process", attribute: "fab, node and role", value: "introduced in Fab 4; reduced leading-edge SRAM line width from 0.15 µm to 0.13 µm", date: "2002"}
-  - {subject: "SONOS process (Fab 2 generation)", attribute: "fab and node", value: "run in Fab 2; reduced Fab 2's line width from 0.5 µm to 0.35 µm, for embedded non-volatile programmable products", date: "2002"}
-  notes: >-
-    This is the earliest occurrence of "SONOS" found in this corpus and
-    ties it explicitly to a 0.35-micron process running in Fab 2 -- relevant
-    to (but not a full match for) the seed claim "S4 = 0.35 µm SONOS": this
-    document names the process by technology (SONOS) and node (0.35 µm) but
-    does NOT use the label "S4" anywhere; no annual report checked so far
-    (FY1993, FY1995-2010) ever uses "S4". "S4" is UNSUPPORTED as a name for
-    this 0.35 µm SONOS process in Cypress's own record -- it comes only from
-    the EE Times 2005-12-12 trade-press account (cyhist-corp-pr-2005-grace-deal),
-    which ties "S4" to the PSoC mixed-signal array without stating its node.
-    Flag in the timeline as SINGLE-SOURCE / not confirmed to be 0.35 µm.
-
+  - subject: 90-nanometer (0.09 µm) process
+    attribute: transfer, FY2002
+    value: transferred from the San Jose R&D fab (Fab 1, eight-inch) to Fab 4 Minnesota (eight-inch)
+    date: '2002'
+  - subject: 0.13-micron SOI process
+    attribute: joint development
+    value: joint development with Honeywell, in Fab 4
+    date: 2002-10
+  - subject: RAM 7 process
+    attribute: fab and role
+    value: ramping in Fab 4, an SRAM manufacturing process
+    date: '2002'
+  - subject: RAM 8 process
+    attribute: fab, node and role
+    value: introduced in Fab 4; reduced leading-edge SRAM line width from 0.15 µm to 0.13 µm
+    date: '2002'
+  - subject: SONOS process (Fab 2 generation)
+    attribute: fab and node
+    value: run in Fab 2; reduced Fab 2's line width from 0.5 µm to 0.35 µm, for embedded non-volatile
+      programmable products
+    date: '2002'
+  notes: 'This is the earliest occurrence of "SONOS" found in this corpus and ties it explicitly to a
+    0.35-micron process running in Fab 2 -- relevant to (but not a full match for) the seed claim "S4
+    = 0.35 µm SONOS": this document names the process by technology (SONOS) and node (0.35 µm) but does
+    NOT use the label "S4" anywhere; no annual report checked so far (FY1993, FY1995-2010) ever uses "S4".
+    "S4" is UNSUPPORTED as a name for this 0.35 µm SONOS process in Cypress''s own record -- it comes
+    only from the EE Times 2005-12-12 trade-press account (cyhist-corp-pr-2005-grace-deal), which ties
+    "S4" to the PSoC mixed-signal array without stating its node. Flag in the timeline as SINGLE-SOURCE
+    / not confirmed to be 0.35 µm.'
 - id: cyhist-corp-2003-ar-soi-90nm
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2003 Annual Report to shareholders, for the fiscal year ended 2003-12-28"
+    title: 2003 Annual Report to shareholders, for the fiscal year ended 2003-12-28
     date: 2004-02-27
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2003.pdf
@@ -466,32 +481,37 @@ records:
   cache: filings/ar-fy2003.txt
   sha256: c60d06820b9c920335af47d06c8c3b32d92520c78fd8a0df47827cdfa47a7d40
   quotes:
-  - text: >-
-      We are ramping
-      our latest 90-nanometer technology in manufacturing. We also started
-      initial development activity on the 65-nanometer technology in our eight-inch R&D facility in San Jose, California.
-    location: "Item 1, Business, Research and development"
-  - text: >-
-      We continued our joint development program with Honeywell to  develop a 0.13-micron Silicon-On-Insulator (“SOI”) process
-    location: "Item 1, Business, Research and development"
-  - text: >-
-      These fabr ication facilities utilize our proprietary 0.13 through 0.8-micron CMOS,
-      0.25 and 0.8-micron BiCMOS, and 0.35-micron Silicon Nitride Oxide Silicon (SONOS) processes.
-    location: >-
-      Item 1, Business, Manufacturing (the cached PDF extraction renders
-      "fabrication" as "fabr ication" with a stray space, preserved verbatim
-      here; unlike the FY2004-2006 reports, this sentence has no quotation
-      marks around "SONOS")
+  - text: We are ramping our latest 90-nanometer technology in manufacturing. We also started initial
+      development activity on the 65-nanometer technology in our eight-inch R&D facility in San Jose,
+      California.
+    location: Item 1, Business, Research and development
+  - text: We continued our joint development program with Honeywell to  develop a 0.13-micron Silicon-On-Insulator
+      (“SOI”) process
+    location: Item 1, Business, Research and development
+  - text: These fabr ication facilities utilize our proprietary 0.13 through 0.8-micron CMOS, 0.25 and
+      0.8-micron BiCMOS, and 0.35-micron Silicon Nitride Oxide Silicon (SONOS) processes.
+    location: Item 1, Business, Manufacturing (the cached PDF extraction renders "fabrication" as "fabr
+      ication" with a stray space, preserved verbatim here; unlike the FY2004-2006 reports, this sentence
+      has no quotation marks around "SONOS")
   claims:
-  - {subject: "65-nanometer process", attribute: "status, FY2003", value: "initial development started, in the eight-inch San Jose R&D facility", date: "2003"}
-  - {subject: "90-nanometer process", attribute: "status, FY2003", value: "ramping in manufacturing", date: "2003"}
-  - {subject: "0.13-micron SOI process", attribute: "status, FY2003", value: "joint development with Honeywell continuing", date: "2003"}
-  notes: Corroborates cyhist-corp-2002-ar-ram7-ram8-sonos on the SOI/Honeywell programme and the fab-2/fab-4 process list one year on.
-
+  - subject: 65-nanometer process
+    attribute: status, FY2003
+    value: initial development started, in the eight-inch San Jose R&D facility
+    date: '2003'
+  - subject: 90-nanometer process
+    attribute: status, FY2003
+    value: ramping in manufacturing
+    date: '2003'
+  - subject: 0.13-micron SOI process
+    attribute: status, FY2003
+    value: joint development with Honeywell continuing
+    date: '2003'
+  notes: Corroborates cyhist-corp-2002-ar-ram7-ram8-sonos on the SOI/Honeywell programme and the fab-2/fab-4
+    process list one year on.
 - id: cyhist-corp-2004-ar-90nm-prod
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2004 Annual Report to shareholders, for the fiscal year ended 2005-01-02"
+    title: 2004 Annual Report to shareholders, for the fiscal year ended 2005-01-02
     date: 2005-03-18
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2004.pdf
@@ -500,24 +520,33 @@ records:
   cache: filings/ar-fy2004.txt
   sha256: 66ea340dcae2e8379c9f83775ae56e56f4f2f9f503e0dd73e345f569a0a7e6c8
   quotes:
-  - text: >-
-      Our 90-nanometer technology is now in production at our Minnesota facility. We are currently developing our
-      65-nanometer technology in our eight-inch research and development facility in San Jose, California.
-    location: "Item 1, Business, Research and development"
-  - text: >-
-      our proprietary 90-nanometer and 0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and
-      0.35-micron Silicon Nitride Oxide Silicon (""SONOS'') processes. Wafer foundries manufactured the balance
-    location: "Item 1, Business, Manufacturing"
+  - text: Our 90-nanometer technology is now in production at our Minnesota facility. We are currently
+      developing our 65-nanometer technology in our eight-inch research and development facility in San
+      Jose, California.
+    location: Item 1, Business, Research and development
+  - text: our proprietary 90-nanometer and 0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and
+      0.35-micron Silicon Nitride Oxide Silicon (""SONOS'') processes. Wafer foundries manufactured the
+      balance
+    location: Item 1, Business, Manufacturing
   claims:
-  - {subject: "90-nanometer process", attribute: "status, FY2004", value: "now in production at the Minnesota facility (Fab 4)", date: "2004"}
-  - {subject: "65-nanometer process", attribute: "status, FY2004", value: "in development at the San Jose R&D facility", date: "2004"}
-  - {subject: "Cypress manufacturing", attribute: "foundry use, FY2004", value: "wafer foundries manufactured a balance of Cypress's products alongside the two owned fabs", date: "2004"}
-  notes: First explicit statement in this corpus that outside wafer foundries already made part of Cypress's product volume before the December 2005 Grace agreement.
-
+  - subject: 90-nanometer process
+    attribute: status, FY2004
+    value: now in production at the Minnesota facility (Fab 4)
+    date: '2004'
+  - subject: 65-nanometer process
+    attribute: status, FY2004
+    value: in development at the San Jose R&D facility
+    date: '2004'
+  - subject: Cypress manufacturing
+    attribute: foundry use, FY2004
+    value: wafer foundries manufactured a balance of Cypress's products alongside the two owned fabs
+    date: '2004'
+  notes: First explicit statement in this corpus that outside wafer foundries already made part of Cypress's
+    product volume before the December 2005 Grace agreement.
 - id: cyhist-corp-2005-ar-grace-flexmfg
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2005 Annual Report to shareholders, for the fiscal year ended 2006-01-01"
+    title: 2005 Annual Report to shareholders, for the fiscal year ended 2006-01-01
     date: 2006-03-17
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf
@@ -526,190 +555,207 @@ records:
   cache: filings/ar-fy2005.txt
   sha256: f5444a0d6e2ac7924ca6db9a43291a7f64cc976cb1b94861bb62e8870ceae96a
   quotes:
-  - text: >-
-      we have also launched
-      a “Flexible Manufacturing” initiative; namely, to
-      outsource a significant fraction of our legacy technol-
-      ogies to manufacturing partners, starting with Grace
-      Semiconductor Manufacturing Corporation (GSMC) in
-      Shanghai, China.
-    location: "President's letter"
-  - text: >-
-      In December 2005, we entered into a strategic foundry partnership with China’s Grace Semiconductor
-      Manufacturing Corporation (“Grace”). Under the terms of the agreement, we will transfer certain of our
-      proprietary process technologies to Grace. We expect to purchase wafers from Grace that are produced using
-      these process technologies beginning in fiscal 2006.
-    location: "Item 1, Business, Manufacturing"
-  - text: >-
-      sub-micron wafer fabrication facilities in Round Rock, Texas and Bloomington, Minnesota. These fabrication
-      facilities utilize our proprietary 90-nanometer and 0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron
-      BiCMOS, and 0.35-micron Silicon Nitride Oxide Silicon (“SONOS”) processes.
-    location: "Item 1, Business, Manufacturing"
+  - text: we have also launched a “Flexible Manufacturing” initiative; namely, to outsource a significant
+      fraction of our legacy technol- ogies to manufacturing partners, starting with Grace Semiconductor
+      Manufacturing Corporation (GSMC) in Shanghai, China.
+    location: President's letter
+  - text: In December 2005, we entered into a strategic foundry partnership with China’s Grace Semiconductor
+      Manufacturing Corporation (“Grace”). Under the terms of the agreement, we will transfer certain
+      of our proprietary process technologies to Grace. We expect to purchase wafers from Grace that are
+      produced using these process technologies beginning in fiscal 2006.
+    location: Item 1, Business, Manufacturing
+  - text: sub-micron wafer fabrication facilities in Round Rock, Texas and Bloomington, Minnesota. These
+      fabrication facilities utilize our proprietary 90-nanometer and 0.13 through 0.8-micron CMOS, 0.25
+      and 0.8-micron BiCMOS, and 0.35-micron Silicon Nitride Oxide Silicon (“SONOS”) processes.
+    location: Item 1, Business, Manufacturing
   claims:
-  - {subject: "Grace Semiconductor Manufacturing Corporation (GSMC), Shanghai", attribute: "foundry agreement", value: "strategic foundry partnership entered December 2005; Cypress to transfer certain proprietary process technologies to Grace; wafer purchases expected beginning fiscal 2006", date: "2005-12"}
-  - {subject: "Cypress own fabs", attribute: "locations, FY2005", value: "Round Rock, Texas and Bloomington, Minnesota (Fab 2 and Fab 4)", date: "2005"}
-  notes: This is the primary-source origin of the Grace relationship that the EE Times 2005/2006/2007 articles report from the trade-press side (cyhist-corp-pr-2005-grace-deal, cyhist-corp-pr-2006-grace-c8-130nm, cyhist-corp-pr-2007-fablite).
-
+  - subject: Grace Semiconductor Manufacturing Corporation (GSMC), Shanghai
+    attribute: foundry agreement
+    value: strategic foundry partnership entered December 2005; Cypress to transfer certain proprietary
+      process technologies to Grace; wafer purchases expected beginning fiscal 2006
+    date: 2005-12
+  - subject: Cypress own fabs
+    attribute: locations, FY2005
+    value: Round Rock, Texas and Bloomington, Minnesota (Fab 2 and Fab 4)
+    date: '2005'
+  notes: This is the primary-source origin of the Grace relationship that the EE Times 2005/2006/2007
+    articles report from the trade-press side (cyhist-corp-pr-2005-grace-deal, cyhist-corp-pr-2006-grace-c8-130nm,
+    cyhist-corp-pr-2007-fablite).
 - id: cyhist-corp-2006-ar-history-grace-complete
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2006 Annual Report and 2007 Proxy Statement, including Form 10-K for the fiscal year ended 2006-12-31"
+    title: 2006 Annual Report and 2007 Proxy Statement, including Form 10-K for the fiscal year ended
+      2006-12-31
     date: 2007-03-28
-    form: "Annual Report (with Form 10-K and proxy statement)"
+    form: Annual Report (with Form 10-K and proxy statement)
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf
   archive_url: null
   retrieved: 2026-09-25
   cache: filings/ar-fy2006.txt
   sha256: c131fe4cbe39c5b11cebba645cabcdf12ece522ae8c1b0192cfdd57ea05aac0b
   quotes:
-  - text: >-
-      We were incorporated in California in December 1982. The initial public offering of our common stock
-      occurred in May 1986, at which time our common stock commenced trading on the Nasdaq National Market. In
-      February 1987, we were reincorporated in Delaware and in October 1988, we began listing our common stock on
-      the New York Stock Exchange under the symbol
-    location: "Item 1, Business, General"
-  - text: >-
-      During fiscal
-      2006, we completed the transfer of our .35-micron SONOS process to Grace and began purchasing products from
-      Grace that were manufactured using this process.
-    location: "Item 1, Business, Manufacturing"
-  - text: >-
-      proprietary 90-nanometer and 0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and 0.35-micron
-      Silicon Nitride Oxide Silicon (“SONOS”) processes. Wafer foundries manufactured the balance of our products.
-    location: "Item 1, Business, Manufacturing"
+  - text: We were incorporated in California in December 1982. The initial public offering of our common
+      stock occurred in May 1986, at which time our common stock commenced trading on the Nasdaq National
+      Market. In February 1987, we were reincorporated in Delaware and in October 1988, we began listing
+      our common stock on the New York Stock Exchange under the symbol
+    location: Item 1, Business, General
+  - text: During fiscal 2006, we completed the transfer of our .35-micron SONOS process to Grace and began
+      purchasing products from Grace that were manufactured using this process.
+    location: Item 1, Business, Manufacturing
+  - text: proprietary 90-nanometer and 0.13 through 0.8-micron CMOS, 0.25 and 0.8-micron BiCMOS, and 0.35-micron
+      Silicon Nitride Oxide Silicon (“SONOS”) processes. Wafer foundries manufactured the balance of our
+      products.
+    location: Item 1, Business, Manufacturing
   claims:
-  - {subject: "Cypress Semiconductor Corporation", attribute: "incorporation and public-market history", value: "incorporated in California December 1982; IPO and Nasdaq listing May 1986; reincorporated in Delaware February 1987; NYSE listing October 1988 (symbol CY)", date: "1982-1988"}
-  - {subject: "0.35-micron SONOS process", attribute: "transfer completion", value: "transfer to Grace completed in fiscal 2006; Cypress began purchasing Grace-made wafers on this process", date: "2006"}
-  notes: >-
-    This corroborates FundingUniverse/encyclopedia.com's "1982... 1986...
-    1988" corporate-history dates (cyhist-corp-sec-fundinguniverse) with a
-    primary source, and refines Cypress's own FY1993 10-K's incorporation
-    detail (which does not itself give the incorporation year). NOTE ON
-    EXTRACTION: this PDF's cover/president's-letter pages use an embedded
-    font whose text extracts as mojibake (unrelated to content, a pypdf/
-    custom-CMap issue); the Item 1 Business section quoted above extracts
-    cleanly and is what is quoted here.
-
+  - subject: Cypress Semiconductor Corporation
+    attribute: incorporation and public-market history
+    value: incorporated in California December 1982; IPO and Nasdaq listing May 1986; reincorporated in
+      Delaware February 1987; NYSE listing October 1988 (symbol CY)
+    date: 1982-1988
+  - subject: 0.35-micron SONOS process
+    attribute: transfer completion
+    value: transfer to Grace completed in fiscal 2006; Cypress began purchasing Grace-made wafers on this
+      process
+    date: '2006'
+  notes: 'This corroborates FundingUniverse/encyclopedia.com''s "1982... 1986... 1988" corporate-history
+    dates (cyhist-corp-sec-fundinguniverse) with a primary source, and refines Cypress''s own FY1993 10-K''s
+    incorporation detail (which does not itself give the incorporation year). NOTE ON EXTRACTION: this
+    PDF''s cover/president''s-letter pages use an embedded font whose text extracts as mojibake (unrelated
+    to content, a pypdf/ custom-CMap issue); the Item 1 Business section quoted above extracts cleanly
+    and is what is quoted here.'
 - id: cyhist-corp-pr-2005-grace-deal
   source:
     publisher: EE Times
-    title: "Cypress Semiconductor Foundry Deal with Grace (\"Cypress inks foundry deal with Grace\")"
+    title: Cypress Semiconductor Foundry Deal with Grace ("Cypress inks foundry deal with Grace")
     date: 2005-12-12
     form: trade press article
     author: Mark LaPedus
   url: https://www.eetimes.com/cypress-inks-foundry-deal-with-grace/
   archive_url: null
   retrieved: 2026-09-25
-  cache: web/eetimes-cypress-inks-foundry-deal-grace-2005.txt
-  sha256: bcda3bd0bd80fc403a6f2c57000dcffe7bdd5206c5941432f1249829cea05df6
+  cache: web/chrome-eetimes-2005-12-12-cypress-inks-foundry-deal-grace.txt
   quotes:
-  - text: "Grace will start production with the PSoC mixed-signal array on Cypress's proprietary S4 technology."
-    location: "article body"
-  - text: "offer its 130-nm logic process in the first half of 2006"
-    location: "article body, quoting/paraphrasing Grace"
-  - text: "increase its overall capacity by an additional 15,000 wafer starts per month by the fourth quarter of 2007"
-    location: "article body"
-  - text: "our first step in the implementation of a new flexible manufacturing strategy"
-    location: "article body, quoting CEO T.J. Rodgers"
+  - text: Under terms of the agreement, Cypress will transfer its programmable system-on-chip (PSoC) mixed
+      signal array, CMOS image sensor, wireless USB and PC clock process technologies to Chinese foundry
+      provider Grace (Shanghai).
+    location: article body, second paragraph
+  - text: Qualification of the first product is scheduled for the beginning of the third quarter of 2006
+      in Grace's 8-inch facility in Shanghai. Grace will start production with the PSoC mixed-signal array
+      on Cypress's proprietary S4 technology.
+    location: article body, fourth paragraph
+  - text: Grace recently said that it is expected to offer its 130-nm logic process in the first half
+      of 2006
+    location: article body, later paragraph
   claims:
-  - {subject: "S4 process", attribute: "product", value: "used for the PSoC mixed-signal array, first product Grace produced under the alliance", date: "2005-12"}
-  - {subject: "Grace Semiconductor Manufacturing Corporation, Shanghai (8-inch facility)", attribute: "process node offered", value: "130-nm logic process, planned for first half of 2006 (article notes Grace was already behind its own original schedule)", date: "2006 H1 (planned)"}
+  - subject: S4 process
+    attribute: product
+    value: used for the PSoC mixed-signal array, first product Grace produced under the alliance
+    date: 2005-12
+  - subject: Grace Semiconductor Manufacturing Corporation, Shanghai (8-inch facility)
+    attribute: process node offered
+    value: 130-nm logic process, planned for first half of 2006 (article notes Grace was already behind
+      its own original schedule)
+    date: 2006 H1 (planned)
   claims_verdict:
-    seed_claim: "S4 = 0.35 µm SONOS and S8 = 130 nm SONOS ran in high volume in multiple fabs"
+    seed_claim: S4 = 0.35 µm SONOS and S8 = 130 nm SONOS ran in high volume in multiple fabs
     verdict: PARTIALLY SUPPORTED
-    detail: >-
-      S8 = 0.13-micron (130 nm) is directly confirmed by Cypress's own FY2010
-      annual report as a "nonvolatile PSoC wafer fabrication process"
-      (cyhist-corp-2010-ar-s8), and this article independently confirms S4
-      is the process used for the (predecessor) PSoC mixed-signal array --
-      but no source found in this project (Cypress filings or trade press)
-      states S4's node as 0.35 µm, or calls S4 a SONOS process by name; that
-      part of the seed remains UNSUPPORTED, not refuted.
-  notes: >-
-    RETRIEVAL CAVEAT: same as cyhist-corp-pr-1998-restructure -- this EE
-    Times URL hangs under a direct fetch with the project user agent and has
-    no Wayback capture; cached text is Claude's WebFetch extraction of the
-    live page.
-
+    detail: S8 = 0.13-micron (130 nm) is directly confirmed by Cypress's own FY2010 annual report as a
+      "nonvolatile PSoC wafer fabrication process" (cyhist-corp-2010-ar-s8), and this article independently
+      confirms S4 is the process used for the (predecessor) PSoC mixed-signal array -- but no source found
+      in this project (Cypress filings or trade press) states S4's node as 0.35 µm, or calls S4 a SONOS
+      process by name; that part of the seed remains UNSUPPORTED, not refuted.
+  notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
+    the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
+    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
+    below was re-taken from the browser capture.
 - id: cyhist-corp-pr-2006-grace-c8-130nm
   source:
     publisher: EE Times
-    title: "Cypress Transfers 130-nm Process to Grace"
+    title: Cypress Transfers 130-nm Process to Grace
     date: 2006-07-19
     form: trade press article
     author: Mark LaPedus
   url: https://www.eetimes.com/cypress-transfers-130-nm-process-to-grace/
   archive_url: null
   retrieved: 2026-09-25
-  cache: web/eetimes-cypress-transfers-130nm-grace-2006.txt
-  sha256: 4e67c94201800600be181e6bee9f8d378d33c0e3aa6ddd0c72f4a4ba4ef23f16
+  cache: web/chrome-eetimes-2006-07-19-cypress-transfers-130nm-grace.txt
   quotes:
-  - text: "will transfer its 0.13-micron C8 process technology to Grace Semiconductor (Shanghai) in Q3 2006"
-    location: "article body"
-  - text: "USB and clock chips, starting early in the second quarter of 2007"
-    location: "article body"
-  - text: "To get from concept to production in under two quarters far exceeded our expectations."
-    location: "article body, quoting Shahin Sharifzadeh, EVP wafer fabs and technology"
+  - text: Cypress, based here, also announced that it will begin transferring its 0.13-micron C8 process
+      technology to Grace Semiconductor (Shanghai) in the third quarter. The C8 process technology will
+      enable the foundry to build a wide array of Cypress's low-power devices, including USB and clock
+      chips, starting early in the second quarter of 2007.
+    location: article body, second paragraph
+  - text: At present, the foundry is becoming a major supplier of Cypress's programmable system-on-chip
+      (PSoC) mixed-signal arrays.
+    location: article body, third paragraph
   claims:
-  - {subject: "C8 process (0.13-micron)", attribute: "transfer to foundry", value: "transferred to Grace Semiconductor, Shanghai, in Q3 2006, to make USB and clock chips starting early Q2 2007", date: "2006-Q3 transfer, 2007-Q2 production"}
+  - subject: C8 process (0.13-micron)
+    attribute: transfer to foundry
+    value: transferred to Grace Semiconductor, Shanghai, in Q3 2006, to make USB and clock chips starting
+      early Q2 2007
+    date: 2006-Q3 transfer, 2007-Q2 production
   claims_verdict:
-    seed_claim: "in 2006 Cypress began transferring its 0.13-micron C8 process technology to Grace Semiconductor (Shanghai), for USB and clock chips from Q2 2007 (EE Times 2006-07-19)"
+    seed_claim: in 2006 Cypress began transferring its 0.13-micron C8 process technology to Grace Semiconductor
+      (Shanghai), for USB and clock chips from Q2 2007 (EE Times 2006-07-19)
     verdict: SUPPORTED
     detail: The article, dated exactly 2006-07-19 as the seed states, matches the claim almost verbatim.
-  notes: >-
-    RETRIEVAL CAVEAT as above (EE Times hang, no Wayback capture; WebFetch
-    extraction cached). "C8" here (0.13-micron, USB/clock) is a distinct
-    named process from "S4" (PSoC) and "S8" (0.13-micron PSoC, per FY2010) --
-    Cypress used at least three different family letters (C, R/RAM, S) each
-    with their own generation numbers at the 0.13-micron node in this
-    period; none of the annual reports checked names "C8" -- SINGLE-SOURCE
-    for the "C8" label itself, though the 0.13-micron-to-Grace transfer
-    generally is corroborated by cyhist-corp-2006-ar-history-grace-complete.
-
+  notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
+    the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
+    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
+    below was re-taken from the browser capture.
 - id: cyhist-corp-pr-2007-fablite-umc
   source:
     publisher: EE Times
-    title: "Cypress Furthers 'Fab Lite'"
+    title: Cypress Furthers 'Fab Lite'
     date: 2007-03-05
     form: trade press article
   url: https://www.eetimes.com/cypress-furthers-fab-lite/
   archive_url: null
   retrieved: 2026-09-25
-  cache: web/eetimes-cypress-furthers-fab-lite-2007.txt
-  sha256: d80bfa5be3436c16f388151ac2d53abb7a0f053a23e3da806a064b0ede81f4ca
+  cache: web/chrome-eetimes-2007-03-05-cypress-furthers-fab-lite.txt
   quotes:
-  - text: "Round Rock, Texas facility: 150 mm (6-inch) wafer size"
-    location: "article summary of fab details (WebFetch extraction; see notes)"
-  - text: "Bloomington, Minnesota facility: 200 mm (8-inch) wafer size; underwent"
-    location: "article summary of fab details (WebFetch extraction; see notes)"
+  - text: would consider selling its remaining fabs in Round Rock, Texas (150 mm), and Bloomington, Minn.
+      (200 mm).
+    location: article body, third paragraph
+  - text: Cypress recently signed off on a 0.4-micron process for its mixed-signal programmable system-on-chip
+      (PSoC) and is in the midst of shifting its 0.13-micron process to Grace.
+    location: article body, fifth paragraph
+  - text: Cypress also plans to shift its 0.13-micron S8 embedded-flash technology and two future generations
+      of embedded-flash technology to UMC in order to produce other Cypress products, including its PSoC
+      and USB devices.
+    location: article body, last paragraph
+  - text: A few weeks ago, Cypress agreed to sell its R&D fab unit, the Silicon Valley Technology Center
+    location: article body, fourth paragraph
   claims:
-  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "wafer size, 2007", value: "150 mm (6-inch)", date: "2007"}
-  - {subject: "Fab 4 (Bloomington, Minnesota)", attribute: "wafer size and upgrade, 2007", value: "200 mm (8-inch); technology upgrade in 2001", date: "2001 upgrade, reported 2007"}
-  - {subject: "UMC", attribute: "new foundry role, 2007", value: "to produce advanced 65 nm SRAMs, and PSoC and USB devices, transfer starting second half 2007, production later 2008", date: "2007"}
+  - subject: Fab 2 (Round Rock, Texas)
+    attribute: wafer size, 2007
+    value: 150 mm (6-inch)
+    date: '2007'
+  - subject: Fab 4 (Bloomington, Minnesota)
+    attribute: wafer size and upgrade, 2007
+    value: 200 mm (8-inch); technology upgrade in 2001
+    date: 2001 upgrade, reported 2007
+  - subject: UMC
+    attribute: new foundry role, 2007
+    value: to produce advanced 65 nm SRAMs, and PSoC and USB devices, transfer starting second half 2007,
+      production later 2008
+    date: '2007'
   claims_verdict:
-    seed_claim: "Cypress Fab 2 is CTI Round Rock, Texas and was later converted to warehouses"
+    seed_claim: Cypress Fab 2 is CTI Round Rock, Texas and was later converted to warehouses
     verdict: SUPPORTED
-    detail: >-
-      "CTI" and "Round Rock, Texas" are directly confirmed as the same
-      facility by Cypress's own FY1995 annual report
-      (cyhist-corp-1995-ar-cti); the later conversion to warehouses is
-      confirmed by cyhist-corp-pr-2008-roundrock-warehouse (ConnectCRE,
-      reporting the Provident Realty Advisors "Round Rock Eagles Nest
-      Industrial" project). Two independent, non-Cypress sources for the
-      warehouse conversion -- not single-source.
-  notes: >-
-    RETRIEVAL CAVEAT as above (EE Times hang, no Wayback capture; WebFetch
-    extraction cached, presented here in the extraction's own summary
-    wording rather than as full running prose -- treat the two wafer-size
-    quotes as reliable factual extraction rather than the article's exact
-    sentence, since WebFetch returned this article as a structured summary,
-    unlike the two Grace articles above which returned running prose with
-    quotation marks around verbatim fragments).
-
+    detail: '"CTI" and "Round Rock, Texas" are directly confirmed as the same facility by Cypress''s own
+      FY1995 annual report (cyhist-corp-1995-ar-cti); the later conversion to warehouses is confirmed
+      by cyhist-corp-pr-2008-roundrock-warehouse (ConnectCRE, reporting the Provident Realty Advisors
+      "Round Rock Eagles Nest Industrial" project). Two independent, non-Cypress sources for the warehouse
+      conversion -- not single-source.'
+  notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
+    the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
+    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
+    below was re-taken from the browser capture.
 - id: cyhist-corp-pr-2007-sram-foundry-ew
   source:
     publisher: Electronics Weekly
-    title: "Cypress moves SRAM production to foundry"
+    title: Cypress moves SRAM production to foundry
     date: 2007-02
     form: trade press article
   url: https://www.electronicsweekly.com/news/business/manufacturing/cypress-moves-sram-production-to-foundry-2007-02/
@@ -718,32 +764,40 @@ records:
   cache: web/ew-sram-foundry-2007.txt
   sha256: 57ea7a1df20422242b6340136667e3759140c989cfedbb2b9ad9034cefb28101
   quotes:
-  - text: >-
-      Cypress Semiconductor is migrating to a “fab lite” model, turning over its next-generation process development and all manufacturing at 65nm and below for its core SRAM products  to UMC.
-    location: "article body"
-  - text: >-
-      Cypress currently uses its own 65nm technology in a manufacturing agreement it has with Grace Semiconductor. Under the new structure, UMC will do all manufacturing at 65nm and below, with manufacturing at 90nm and above to be a combination of internal manufacturing and external foundries.
-    location: "article body"
-  - text: >-
-      Cypress also had a deal with UMC for flash products at 130nm. That deal will be expanded to include new flash products at smaller lithography nodes.
-    location: "article body"
-  - text: >-
-      Cypress expects to save $100m in R&D costs annually from the move, according to Shahin Sharifzadeh, executive v-p of wafer fabs and technology at Cypress. “We’ve been running R&D at about 24 per cent of revenue,” said Sharifzadez. “Our model is for 16 per cent to 17 per cent. By Q4 we expect to achieve that goal.”
-    location: "article body"
+  - text: Cypress Semiconductor is migrating to a “fab lite” model, turning over its next-generation process
+      development and all manufacturing at 65nm and below for its core SRAM products  to UMC.
+    location: article body
+  - text: Cypress currently uses its own 65nm technology in a manufacturing agreement it has with Grace
+      Semiconductor. Under the new structure, UMC will do all manufacturing at 65nm and below, with manufacturing
+      at 90nm and above to be a combination of internal manufacturing and external foundries.
+    location: article body
+  - text: Cypress also had a deal with UMC for flash products at 130nm. That deal will be expanded to
+      include new flash products at smaller lithography nodes.
+    location: article body
+  - text: Cypress expects to save $100m in R&D costs annually from the move, according to Shahin Sharifzadeh,
+      executive v-p of wafer fabs and technology at Cypress. “We’ve been running R&D at about 24 per cent
+      of revenue,” said Sharifzadez. “Our model is for 16 per cent to 17 per cent. By Q4 we expect to
+      achieve that goal.”
+    location: article body
   claims:
-  - {subject: "UMC", attribute: "role change, 2007", value: "to take over all Cypress SRAM manufacturing at 65 nm and below; already had a 130 nm flash deal with Cypress, to expand to smaller nodes", date: "2007"}
-  - {subject: "Grace Semiconductor", attribute: "role as of early 2007", value: "manufacturing Cypress's own 65 nm technology under a manufacturing agreement (before the UMC 65nm-and-below shift)", date: "2007"}
-  notes: >-
-    Directly fetchable (no retrieval caveat). Nuances the seed claim about
-    Grace/C8: by early 2007 Grace was already running some Cypress 65 nm
-    product, not only the 130 nm C8 line from the 2006 transfer -- the
-    Grace relationship widened over 2005-2007 before UMC took the leading
-    edge (65 nm and below) from both Cypress and Grace.
-
+  - subject: UMC
+    attribute: role change, 2007
+    value: to take over all Cypress SRAM manufacturing at 65 nm and below; already had a 130 nm flash
+      deal with Cypress, to expand to smaller nodes
+    date: '2007'
+  - subject: Grace Semiconductor
+    attribute: role as of early 2007
+    value: manufacturing Cypress's own 65 nm technology under a manufacturing agreement (before the UMC
+      65nm-and-below shift)
+    date: '2007'
+  notes: 'Directly fetchable (no retrieval caveat). Nuances the seed claim about Grace/C8: by early 2007
+    Grace was already running some Cypress 65 nm product, not only the 130 nm C8 line from the 2006 transfer
+    -- the Grace relationship widened over 2005-2007 before UMC took the leading edge (65 nm and below)
+    from both Cypress and Grace.'
 - id: cyhist-corp-pr-2007-fab2exit-semidigest
   source:
     publisher: Semiconductor Digest (semiconductor-digest.com)
-    title: "Cypress getting rid of Round Rock, TX fab"
+    title: Cypress getting rid of Round Rock, TX fab
     date: 2007-12-19
     form: trade press article
   url: https://sst.semiconductor-digest.com/2007/12/cypress-getting-rid-of-round-rock-tx-fab/
@@ -752,69 +806,81 @@ records:
   cache: web/semidigest-fab2-2007.txt
   sha256: 54912ac4033adb41825d796d1bd3699d85d3cb670bd90ecb6596a047d4866c9b
   quotes:
-  - text: >-
-      Cypress Semiconductor says it will “exit” its Fab 2 chip factory in Round Rock, TX by late 2008, transitioning the production work to its newer 200mm Fab 4 in Bloomington, MN, and to external foundry partners.
-    location: "article body"
-  - text: >-
-      the mature (0.35-micron/150mm) Fab 2 “is a very efficient and well-run operation,”
-    location: "article body, quoting Shahin Sharifzadeh, EVP of manufacturing"
-  - text: >-
-      Opened in 1986 and expanded in 1999, Cypress’ Fab 2 has most recently been making legacy USB, programmable logic, timing and communications devices, employing 245 workers. Fab 4, opened in 1995 as the company’s first 200mm facility, produces the company’s SRAM products including specialty memories, as well as CMOS image sensors, employing about 400.
-    location: "article body"
+  - text: Cypress Semiconductor says it will “exit” its Fab 2 chip factory in Round Rock, TX by late 2008,
+      transitioning the production work to its newer 200mm Fab 4 in Bloomington, MN, and to external foundry
+      partners.
+    location: article body
+  - text: the mature (0.35-micron/150mm) Fab 2 “is a very efficient and well-run operation,”
+    location: article body, quoting Shahin Sharifzadeh, EVP of manufacturing
+  - text: Opened in 1986 and expanded in 1999, Cypress’ Fab 2 has most recently been making legacy USB,
+      programmable logic, timing and communications devices, employing 245 workers. Fab 4, opened in 1995
+      as the company’s first 200mm facility, produces the company’s SRAM products including specialty
+      memories, as well as CMOS image sensors, employing about 400.
+    location: article body
   claims:
-  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "exit plan and process, 2007", value: "to exit by late 2008; production shifting to Fab 4 (Bloomington, 200mm) and external foundries; described as a mature 0.35-micron/150mm (6-inch) fab; opened 1986, expanded 1999; 245 workers; making legacy USB, programmable logic, timing and communications devices", date: "2007-12, exit by 2008"}
-  - {subject: "Fab 4 (Bloomington, Minnesota)", attribute: "opening and role, 2007", value: "opened 1995 as Cypress's first 200mm (8-inch) facility; makes SRAM (including specialty memories) and CMOS image sensors; about 400 workers", date: "2007"}
-  notes: >-
-    "Opened in 1986" for Fab 2 is a CONFLICT with cyhist-corp-sec-fundinguniverse/
-    encyclopedia.com, which date the second (Round Rock) wafer fab to the
-    company's 1986 IPO year in one place ("By then, the company had added a
-    second wafer fab, in Round Rock, Texas" -- next to the 1986 IPO
-    paragraph) but is imprecise about the exact year; it is also in tension
-    with cyhist-corp-pr-2008-roundrock-warehouse (ConnectCRE), which puts
-    the Round Rock campus at "open for 20 years" when shuttered in 2008,
-    implying an ~1988 opening. All three sources put the opening within a
-    few years of each other (1986-1988) without an exact match -- flagged
-    CONFLICT (minor, 1986 vs ~1988) in the timeline rather than resolved.
-
+  - subject: Fab 2 (Round Rock, Texas)
+    attribute: exit plan and process, 2007
+    value: to exit by late 2008; production shifting to Fab 4 (Bloomington, 200mm) and external foundries;
+      described as a mature 0.35-micron/150mm (6-inch) fab; opened 1986, expanded 1999; 245 workers; making
+      legacy USB, programmable logic, timing and communications devices
+    date: 2007-12, exit by 2008
+  - subject: Fab 4 (Bloomington, Minnesota)
+    attribute: opening and role, 2007
+    value: opened 1995 as Cypress's first 200mm (8-inch) facility; makes SRAM (including specialty memories)
+      and CMOS image sensors; about 400 workers
+    date: '2007'
+  notes: '"Opened in 1986" for Fab 2 is a CONFLICT with cyhist-corp-sec-fundinguniverse/ encyclopedia.com,
+    which date the second (Round Rock) wafer fab to the company''s 1986 IPO year in one place ("By then,
+    the company had added a second wafer fab, in Round Rock, Texas" -- next to the 1986 IPO paragraph)
+    but is imprecise about the exact year; it is also in tension with cyhist-corp-pr-2008-roundrock-warehouse
+    (ConnectCRE), which puts the Round Rock campus at "open for 20 years" when shuttered in 2008, implying
+    an ~1988 opening. All three sources put the opening within a few years of each other (1986-1988) without
+    an exact match -- flagged CONFLICT (minor, 1986 vs ~1988) in the timeline rather than resolved.'
 - id: cyhist-corp-pr-2008-roundrock-warehouse
   source:
     publisher: Connect CRE (connectcre.com)
-    title: "Former Round Rock Cypress Plant Converting to Warehouses"
+    title: Former Round Rock Cypress Plant Converting to Warehouses
     date: 2026-09-25
-    form: trade/real-estate press article (undated article; retrieval date given as `date` because no publication date is shown on the page)
+    form: trade/real-estate press article (undated article; retrieval date given as `date` because no
+      publication date is shown on the page)
   url: https://www.connectcre.com/stories/former-round-rock-cypress-plant-converting-to-warehouses/
   archive_url: null
   retrieved: 2026-09-25
   cache: web/connectcre-roundrock.txt
   sha256: 4dcb7775409941705b5bf161794893174fdead7a79ca4aad78c12affdfcdf77a
   quotes:
-  - text: >-
-      Provident Realty Advisors plans to turn the former Cypress Semiconductor Corp. building in Round Rock into an industrial park.
-    location: "article body"
-  - text: >-
-      The Austin Business Journal reports the company plans to start construction in April on what it’s calling “Round Rock Eagles Nest Industrial.” The $23 million project is expected to wrap up in May 2026. The plans call for three light industrial, office or warehouse buildings totaling 292,995 square feet.
-    location: "article body"
-  - text: "The Cypress campus was shuttered in 2008. It had been open for 20 years and had 200 workers at the time."
-    location: "article body"
+  - text: Provident Realty Advisors plans to turn the former Cypress Semiconductor Corp. building in Round
+      Rock into an industrial park.
+    location: article body
+  - text: The Austin Business Journal reports the company plans to start construction in April on what
+      it’s calling “Round Rock Eagles Nest Industrial.” The $23 million project is expected to wrap up
+      in May 2026. The plans call for three light industrial, office or warehouse buildings totaling 292,995
+      square feet.
+    location: article body
+  - text: The Cypress campus was shuttered in 2008. It had been open for 20 years and had 200 workers
+      at the time.
+    location: article body
   claims:
-  - {subject: "Fab 2 / Round Rock campus", attribute: "closure and later fate", value: "shuttered 2008; had been open 20 years (implying an opening around 1988); 200 workers at closure; site converted to a light-industrial/warehouse park (\"Round Rock Eagles Nest Industrial\", ~$23M, ~292,995 sq ft, three buildings) by Provident Realty Advisors, citing Austin Business Journal", date: "2008 closure; conversion project reported 2026 (retrieval date)"}
+  - subject: Fab 2 / Round Rock campus
+    attribute: closure and later fate
+    value: shuttered 2008; had been open 20 years (implying an opening around 1988); 200 workers at closure;
+      site converted to a light-industrial/warehouse park ("Round Rock Eagles Nest Industrial", ~$23M,
+      ~292,995 sq ft, three buildings) by Provident Realty Advisors, citing Austin Business Journal
+    date: 2008 closure; conversion project reported 2026 (retrieval date)
   claims_verdict:
-    seed_claim: "Fab 2 is CTI Round Rock, Texas and was later converted to warehouses"
+    seed_claim: Fab 2 is CTI Round Rock, Texas and was later converted to warehouses
     verdict: SUPPORTED
-    detail: This article is the direct evidence for the "converted to warehouses" half of the claim; the CTI/Round Rock identity is established by cyhist-corp-1995-ar-cti.
-  notes: >-
-    The article is itself undated on the page as fetched and reports a
-    project "expected to wrap up in May 2026" as still upcoming, so it was
-    evidently published not long before this retrieval; it cites Austin
-    Business Journal as its source but that article was not independently
-    fetched (not searched). "Open for 20 years" (2008 - 20 = ~1988) is the
-    source of the minor opening-date CONFLICT noted on
+    detail: This article is the direct evidence for the "converted to warehouses" half of the claim; the
+      CTI/Round Rock identity is established by cyhist-corp-1995-ar-cti.
+  notes: The article is itself undated on the page as fetched and reports a project "expected to wrap
+    up in May 2026" as still upcoming, so it was evidently published not long before this retrieval; it
+    cites Austin Business Journal as its source but that article was not independently fetched (not searched).
+    "Open for 20 years" (2008 - 20 = ~1988) is the source of the minor opening-date CONFLICT noted on
     cyhist-corp-pr-2007-fab2exit-semidigest ("opened in 1986").
-
 - id: cyhist-corp-2008-ar-simtek
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28"
+    title: 2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28
     date: 2009-02-26
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf
@@ -823,28 +889,27 @@ records:
   cache: filings/ar-fy2008.txt
   sha256: e9cdda6bb05f28276b3251022a2396765e5e623148d4a23123459793f58d53b3
   quotes:
-  - text: >-
-      memory business designs and manufactures SRAM products and nonvolatile memories (“nvSRAMs”) which ar e
-    location: "Item 1, Business, segment description"
-  - text: >-
-      AgigaTech. In 2008, t hrough the acqu isition o f Simtek Corporation, Cypress acqu ired AgigaTech,a n
-    location: "Item 1, Business"
+  - text: memory business designs and manufactures SRAM products and nonvolatile memories (“nvSRAMs”)
+      which ar e
+    location: Item 1, Business, segment description
+  - text: AgigaTech. In 2008, t hrough the acqu isition o f Simtek Corporation, Cypress acqu ired AgigaTech,a
+      n
+    location: Item 1, Business
   claims:
-  - {subject: "Simtek Corporation", attribute: "acquisition", value: "acquired by Cypress in 2008; brought nvSRAM (nonvolatile SRAM) products and the AgigaTech subsidiary", date: "2008"}
-  notes: >-
-    Reuses/extends data/filings.yaml's cypress-annual-report-fy2008 record
-    (which quotes the Texas-fab-exit passage; this record adds the Simtek
-    acquisition passage, on a different page of the same document). Simtek
-    is one of the acquisitions named in this task's brief as bringing
-    process technology (nvSRAM/SONOS); the FY2008 report frames it as a
-    product-line and subsidiary acquisition and does not itself say Simtek
-    brought a fab or a distinct process technology -- see
-    cyhist-corp-2009-ar-nvsram-umc for the nvSRAM/UMC follow-up.
-
+  - subject: Simtek Corporation
+    attribute: acquisition
+    value: acquired by Cypress in 2008; brought nvSRAM (nonvolatile SRAM) products and the AgigaTech subsidiary
+    date: '2008'
+  notes: Reuses/extends data/filings.yaml's cypress-annual-report-fy2008 record (which quotes the Texas-fab-exit
+    passage; this record adds the Simtek acquisition passage, on a different page of the same document).
+    Simtek is one of the acquisitions named in this task's brief as bringing process technology (nvSRAM/SONOS);
+    the FY2008 report frames it as a product-line and subsidiary acquisition and does not itself say Simtek
+    brought a fab or a distinct process technology -- see cyhist-corp-2009-ar-nvsram-umc for the nvSRAM/UMC
+    follow-up.
 - id: cyhist-corp-2009-ar-nvsram-umc
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2009 Annual Report, including the Form 10-K for the fiscal year ended 2010-01-03"
+    title: 2009 Annual Report, including the Form 10-K for the fiscal year ended 2010-01-03
     date: 2010-03-03
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf
@@ -853,21 +918,28 @@ records:
   cache: filings/ar-fy2009.txt
   sha256: 4bf8d7ca7bad3f776da4f488ad62e05dca4aa3031f84dbdd5657aac7ed89077b
   quotes:
-  - text: >-
-      developed with foundry partner UMC, feature the industry’s fastest clock speeds and operate at half the power of
-    location: "Item 1, Business, product description"
-  - text: >-
-      We have a strategic foundry partnership with Grace Semiconductor Manufacturing Corporation (“Grace”),
-    location: "Item 1, Business, Manufacturing"
+  - text: developed with foundry partner UMC, feature the industry’s fastest clock speeds and operate
+      at half the power of
+    location: Item 1, Business, product description
+  - text: We have a strategic foundry partnership with Grace Semiconductor Manufacturing Corporation (“Grace”),
+    location: Item 1, Business, Manufacturing
   claims:
-  - {subject: "nvSRAM products (ex-Simtek)", attribute: "foundry", value: "some nvSRAM devices developed with foundry partner UMC", date: "2009"}
-  - {subject: "Grace Semiconductor Manufacturing Corporation", attribute: "relationship status, FY2009", value: "described as an ongoing strategic foundry partnership (continuing from the 2005 agreement)", date: "2009"}
-  notes: The nvSRAM/UMC pairing here is the closest primary-source link found between the Simtek acquisition's product line and a named foundry; no source in this corpus states which process node or whether SONOS is used for nvSRAM specifically -- UNSUPPORTED for the "Simtek brought SONOS" part of the task's acquisition list, only nvSRAM as a product line is confirmed.
-
+  - subject: nvSRAM products (ex-Simtek)
+    attribute: foundry
+    value: some nvSRAM devices developed with foundry partner UMC
+    date: '2009'
+  - subject: Grace Semiconductor Manufacturing Corporation
+    attribute: relationship status, FY2009
+    value: described as an ongoing strategic foundry partnership (continuing from the 2005 agreement)
+    date: '2009'
+  notes: The nvSRAM/UMC pairing here is the closest primary-source link found between the Simtek acquisition's
+    product line and a named foundry; no source in this corpus states which process node or whether SONOS
+    is used for nvSRAM specifically -- UNSUPPORTED for the "Simtek brought SONOS" part of the task's acquisition
+    list, only nvSRAM as a product line is confirmed.
 - id: cyhist-corp-2010-ar-s8
   source:
     publisher: Cypress Semiconductor Corporation
-    title: "2010 Annual Report, including the Form 10-K for the fiscal year ended 2011-01-02"
+    title: 2010 Annual Report, including the Form 10-K for the fiscal year ended 2011-01-02
     date: 2011-02-25
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
@@ -876,51 +948,47 @@ records:
   cache: filings/ar-fy2010.txt
   sha256: 2158a5196d2afb71e5032e177a70fdab676bd2c0389eb6382e4dee1a57fd338c
   quotes:
-  - text: >-
-      The rapid rise in demand for PSoC has filled our
-      capacity to manufacture wafers in S8, our 0.13-micron,
-      nonvolatile PSoC wafer fabr ication process. In 2011,
-      we will triple our S8 capacity relative to Q4'10 by adding
-      both internal and external capacity.
-    location: "President's letter / business review"
-  - text: >-
-      The capacity added
-      to our Fab 4 plant in Minnes ota will keep the internal-
-      external mix at approximately 50-50 in order to keep a
-      significant portion of wafer manufacturing under our
-      direct control.
-    location: "President's letter / business review"
-  - text: >-
-      we
-      are bringing on a second foundry in China, which has
-      already fabricated its first PSoC wafers and will go into
-      production in Q4’11.
-    location: "President's letter / business review"
+  - text: The rapid rise in demand for PSoC has filled our capacity to manufacture wafers in S8, our 0.13-micron,
+      nonvolatile PSoC wafer fabr ication process. In 2011, we will triple our S8 capacity relative to
+      Q4'10 by adding both internal and external capacity.
+    location: President's letter / business review
+  - text: The capacity added to our Fab 4 plant in Minnes ota will keep the internal- external mix at
+      approximately 50-50 in order to keep a significant portion of wafer manufacturing under our direct
+      control.
+    location: President's letter / business review
+  - text: we are bringing on a second foundry in China, which has already fabricated its first PSoC wafers
+      and will go into production in Q4’11.
+    location: President's letter / business review
   claims:
-  - {subject: "S8 process", attribute: "definition and node", value: "Cypress's own name, in its own annual report, for its 0.13-micron (130 nm) nonvolatile PSoC wafer fabrication process", date: "2010"}
-  - {subject: "S8 capacity plan", attribute: "2011 expansion", value: "planned to triple relative to Q4 2010, via added Fab 4 Minnesota capacity (kept at ~50-50 internal/external) and a second China foundry, already running first PSoC wafers, in production Q4 2011", date: "2010-2011"}
+  - subject: S8 process
+    attribute: definition and node
+    value: Cypress's own name, in its own annual report, for its 0.13-micron (130 nm) nonvolatile PSoC
+      wafer fabrication process
+    date: '2010'
+  - subject: S8 capacity plan
+    attribute: 2011 expansion
+    value: planned to triple relative to Q4 2010, via added Fab 4 Minnesota capacity (kept at ~50-50 internal/external)
+      and a second China foundry, already running first PSoC wafers, in production Q4 2011
+    date: 2010-2011
   claims_verdict:
-    seed_claim: "S4 = 0.35 µm SONOS and S8 = 130 nm SONOS ran in high volume in multiple fabs"
+    seed_claim: S4 = 0.35 µm SONOS and S8 = 130 nm SONOS ran in high volume in multiple fabs
     verdict: PARTIALLY SUPPORTED
-    detail: >-
-      S8 = 0.13-micron nonvolatile PSoC process is directly confirmed by
-      Cypress itself, and "ran in ... multiple fabs" is confirmed (Fab 4
-      Minnesota plus at least one, soon two, China foundries). This report
-      does not use the word "SONOS" next to "S8"; the SONOS identity of the
-      PSoC nonvolatile process is stated generically for Cypress's fabs in
-      FY2002-2006 reports (0.35-micron SONOS in Fab 2) but the 0.13-micron
-      generation is called "S8" and "CMOS" in the fab-process list
-      (cyhist-corp-2005-ar-grace-flexmfg, cyhist-corp-2006-ar-history-grace-complete)
-      without pairing "S8" and "SONOS" in the same sentence in any source
-      checked -- treat "S8 = SONOS" as a plausible but UNSUPPORTED inference
-      pending a source that states it directly (a QTP or literature-agent
-      source may do so; see the plan's other two evidence files).
-  notes: Second China foundry (2010-2011) is additional to Grace and is not named in this report; not yet cross-checked against trade press (open item).
-
+    detail: S8 = 0.13-micron nonvolatile PSoC process is directly confirmed by Cypress itself, and "ran
+      in ... multiple fabs" is confirmed (Fab 4 Minnesota plus at least one, soon two, China foundries).
+      This report does not use the word "SONOS" next to "S8"; the SONOS identity of the PSoC nonvolatile
+      process is stated generically for Cypress's fabs in FY2002-2006 reports (0.35-micron SONOS in Fab
+      2) but the 0.13-micron generation is called "S8" and "CMOS" in the fab-process list (cyhist-corp-2005-ar-grace-flexmfg,
+      cyhist-corp-2006-ar-history-grace-complete) without pairing "S8" and "SONOS" in the same sentence
+      in any source checked -- treat "S8 = SONOS" as a plausible but UNSUPPORTED inference pending a source
+      that states it directly (a QTP or literature-agent source may do so; see the plan's other two evidence
+      files).
+  notes: Second China foundry (2010-2011) is additional to Grace and is not named in this report; not
+    yet cross-checked against trade press (open item).
 - id: cyhist-corp-pr-2011-innopower-sonos
   source:
     publisher: Business Wire (republished by Design & Reuse)
-    title: "Cypress Signs Innopower to Enable SONOS-Based Embedded Flash Solutions for 130-nm and 65-nm Technology Nodes"
+    title: Cypress Signs Innopower to Enable SONOS-Based Embedded Flash Solutions for 130-nm and 65-nm
+      Technology Nodes
     date: 2011-02-17
     form: press release
   url: https://www.businesswire.com/news/home/20110217005339/en/Cypress-Signs-Innopower-to-Enable-SONOS-Based-Embedded-Flash-Solutions-for-130-nm-and-65-nm-Technology-Nodes
@@ -929,43 +997,45 @@ records:
   cache: web/designreuse-innopower-2011.txt
   sha256: 8c5622010f4676ec1576578999f360a1bbf6592a05a63efd9ca3c57b4c396bcd
   quotes:
-  - text: >-
-      Cypress Semiconductor Corp. (Nasdaq: CY) today announced that it has licensed 130-nm and 65-nm SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile memory technology IP to Innopower Technology Corporation.
-    location: "press release body"
-  - text: >-
-      Cypressâ€™s embedded flash IP has been shipping in high volumes at 130-nm at several foundries. It has also been verified on a 65-nm LL process.
-    location: >-
-      press release body (the cached page's apostrophes in "Cypress's"
-      mis-decode as "â€™"; a genuine mojibake artifact of the source page,
-      not this project's fetch -- other apostrophes on the page, e.g. in
-      "Innopower's" and "Cypress's" in later paragraphs, show the same
-      artifact, and it is preserved verbatim here rather than silently
-      corrected)
-  - text: >-
-      "The agreement with Innopower will be mutually beneficial" said Babak Taheri, Vice President of Corporate Third-Party IP at Cypress.
-    location: "press release body"
+  - text: 'Cypress Semiconductor Corp. (Nasdaq: CY) today announced that it has licensed 130-nm and 65-nm
+      SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile memory technology IP to Innopower
+      Technology Corporation.'
+    location: press release body
+  - text: Cypressâ€™s embedded flash IP has been shipping in high volumes at 130-nm at several foundries.
+      It has also been verified on a 65-nm LL process.
+    location: press release body (the cached page's apostrophes in "Cypress's" mis-decode as "â€™"; a
+      genuine mojibake artifact of the source page, not this project's fetch -- other apostrophes on the
+      page, e.g. in "Innopower's" and "Cypress's" in later paragraphs, show the same artifact, and it
+      is preserved verbatim here rather than silently corrected)
+  - text: '"The agreement with Innopower will be mutually beneficial" said Babak Taheri, Vice President
+      of Corporate Third-Party IP at Cypress.'
+    location: press release body
   claims:
-  - {subject: "Cypress SONOS embedded NVM IP", attribute: "Innopower licence", value: "licensed at 130-nm and 65-nm nodes to Innopower Technology Corporation (a Faraday Technology subsidiary), announced 2011-02-17", date: "2011-02-17"}
-  - {subject: "Cypress 130-nm SONOS embedded flash", attribute: "production status, 2011", value: "shipping in high volumes at 130-nm at several foundries; verified (not yet high-volume) on a 65-nm \"LL\" process", date: "2011"}
+  - subject: Cypress SONOS embedded NVM IP
+    attribute: Innopower licence
+    value: licensed at 130-nm and 65-nm nodes to Innopower Technology Corporation (a Faraday Technology
+      subsidiary), announced 2011-02-17
+    date: '2011-02-17'
+  - subject: Cypress 130-nm SONOS embedded flash
+    attribute: production status, 2011
+    value: shipping in high volumes at 130-nm at several foundries; verified (not yet high-volume) on
+      a 65-nm "LL" process
+    date: '2011'
   claims_verdict:
-    seed_claim: "Cypress licensed 130 nm and 65 nm SONOS embedded NVM IP to Innopower in 2011"
+    seed_claim: Cypress licensed 130 nm and 65 nm SONOS embedded NVM IP to Innopower in 2011
     verdict: SUPPORTED
-    detail: The Business Wire release, mirrored verbatim by Design & Reuse and independently found via web search, confirms the claim exactly, including the date.
-  notes: >-
-    BusinessWire's own page could not be fetched directly (HTTP 403 to an
-    automated fetch) and has no Wayback capture found; design-reuse.com's
-    verbatim republication was fetched directly (no caveat) and is used as
-    the cached copy of record here -- the archive_url field points to it
-    (a mirror), not a Wayback Machine capture, and the notes flag that
-    distinction as the plan's field description otherwise implies "Wayback
-    copy where one exists". "This project's own SONOS = high-volume at
-    130-nm" statement post-dates the FY2010 S8 report by only months and is
-    consistent with it.
-
+    detail: The Business Wire release, mirrored verbatim by Design & Reuse and independently found via
+      web search, confirms the claim exactly, including the date.
+  notes: BusinessWire's own page could not be fetched directly (HTTP 403 to an automated fetch) and has
+    no Wayback capture found; design-reuse.com's verbatim republication was fetched directly (no caveat)
+    and is used as the cached copy of record here -- the archive_url field points to it (a mirror), not
+    a Wayback Machine capture, and the notes flag that distinction as the plan's field description otherwise
+    implies "Wayback copy where one exists". "This project's own SONOS = high-volume at 130-nm" statement
+    post-dates the FY2010 S8 report by only months and is consistent with it.
 - id: cyhist-corp-sec-fundinguniverse
   source:
     publisher: FundingUniverse (International Directory of Company Histories, Gale)
-    title: "History of Cypress Semiconductor Corporation"
+    title: History of Cypress Semiconductor Corporation
     date: 2026-09-25
     form: secondary company-history reference
   url: https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/
@@ -974,52 +1044,68 @@ records:
   cache: web/fundinguniverse-cypress.txt
   sha256: 5fed6eaac380f2888176f35129c9b48bd8c9c95644e338cfe0123b5fc6252564
   quotes:
-  - text: >-
-      Cypress debuted its first product, a CMOS (complementary metal oxide silicon) memory chip, by the beginning of 1984. The chip contained the world's smallest and fastest CMOS transistors, which were 1.2 microns wide
-    location: "company history, early years"
-  - text: >-
-      the company's initial public offering raised $73 million, one of the largest public debuts for the time. By then, the company had added a second wafer fab, in Round Rock, Texas.
-    location: "company history, 1986"
-  - text: >-
-      At the end of 1990, the company bought its Bloomington, Minnesota, wafer fab from Control Data VTC, paying just $14.7 million.
-    location: "company history, 1990"
-  - text: >-
-      In April 1996, the company began building a second wafer fab in Round Rock to meet the surge in demand.
-    location: "company history, 1996"
-  - text: >-
-      In October 1996, Cypress shut down its manufacturing facilities at its San Jose headquarters, converting the facility solely to research and development activities.
-    location: "company history, 1996"
-  - text: >-
-      It stopped making memory chips at its plants in Round Rock, Texas and Bloomington, Minnesota, and also moved test operations from Thailand to the Philippines. SRAM production would continue at a second site called Fab 4 in Minnesota, where it was developing a 0.35-micron process.
-    location: "company history, 1998"
-  - text: >-
-      Cypress MicroSystems; Cypress Semiconductor (Minnesota) Inc.; Cypress Semiconductor (Texas) Inc.; Cypress Semiconductor Technology, Ltd. (Cayman Islands); Cypress Semiconductor Philippines Inc.; Silicon Light Machines Corporation; Silicon Magnetic Systems.
-    location: "Principal Subsidiaries list"
+  - text: Cypress debuted its first product, a CMOS (complementary metal oxide silicon) memory chip, by
+      the beginning of 1984. The chip contained the world's smallest and fastest CMOS transistors, which
+      were 1.2 microns wide
+    location: company history, early years
+  - text: the company's initial public offering raised $73 million, one of the largest public debuts for
+      the time. By then, the company had added a second wafer fab, in Round Rock, Texas.
+    location: company history, 1986
+  - text: At the end of 1990, the company bought its Bloomington, Minnesota, wafer fab from Control Data
+      VTC, paying just $14.7 million.
+    location: company history, 1990
+  - text: In April 1996, the company began building a second wafer fab in Round Rock to meet the surge
+      in demand.
+    location: company history, 1996
+  - text: In October 1996, Cypress shut down its manufacturing facilities at its San Jose headquarters,
+      converting the facility solely to research and development activities.
+    location: company history, 1996
+  - text: It stopped making memory chips at its plants in Round Rock, Texas and Bloomington, Minnesota,
+      and also moved test operations from Thailand to the Philippines. SRAM production would continue
+      at a second site called Fab 4 in Minnesota, where it was developing a 0.35-micron process.
+    location: company history, 1998
+  - text: Cypress MicroSystems; Cypress Semiconductor (Minnesota) Inc.; Cypress Semiconductor (Texas)
+      Inc.; Cypress Semiconductor Technology, Ltd. (Cayman Islands); Cypress Semiconductor Philippines
+      Inc.; Silicon Light Machines Corporation; Silicon Magnetic Systems.
+    location: Principal Subsidiaries list
   claims:
-  - {subject: "Cypress Semiconductor Corporation", attribute: "founding and first product", value: "T.J. Rodgers formed Cypress in 1982; debuted a 1.2 µm CMOS memory chip by early 1984", date: "1982-1984"}
-  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "opening", value: "added as a second wafer fab by 1986/1987, financed in part by the 1986 IPO ($73M raised)", date: "1986-1987"}
-  - {subject: "Fab 3 (Bloomington, Minnesota)", attribute: "acquisition", value: "bought from Control Data VTC (\"Control Data VTC\") at the end of 1990, for $14.7 million", date: "1990"}
-  - {subject: "Round Rock second fab (Fab 5)", attribute: "construction start", value: "began building April 1996, project delayed by a worldwide memory-market slump", date: "1996-04"}
-  - {subject: "Fab 1 (San Jose)", attribute: "closure to manufacturing", value: "shut down as a manufacturing facility October 1996, converted solely to R&D", date: "1996-10"}
-  - {subject: "Silicon Light Machines, Silicon Magnetic Systems", attribute: "corporate role", value: "listed as Cypress subsidiaries (Silicon Light Machines by the early 2000s; Silicon Magnetic Systems created May 2002 for MRAM, licensed from NVE Corp)", date: "2000-2002"}
-  notes: >-
-    SECONDARY SOURCE, cross-check only per project rules -- not used alone
-    for any claim in the timeline; every claim taken from this record is
-    also backed by a Cypress primary source or another independent trade
-    article in this corpus (VTC/Control Data acquisition and price are
-    SINGLE-SOURCE so far, flagged in the timeline, since no primary Cypress
-    filing checked in this project states the $14.7 million price -- the
-    FY1993 10-K only gives "commenced operations in 1991"). The same text
-    (word-for-word) is republished at encyclopedia.com
-    (cyhist-corp-sec-encyclopedia) -- both derive from the same Gale
-    "International Directory of Company Histories" entry, so they are NOT
-    independent of each other and together count as only one secondary
-    source, not two.
-
+  - subject: Cypress Semiconductor Corporation
+    attribute: founding and first product
+    value: T.J. Rodgers formed Cypress in 1982; debuted a 1.2 µm CMOS memory chip by early 1984
+    date: 1982-1984
+  - subject: Fab 2 (Round Rock, Texas)
+    attribute: opening
+    value: added as a second wafer fab by 1986/1987, financed in part by the 1986 IPO ($73M raised)
+    date: 1986-1987
+  - subject: Fab 3 (Bloomington, Minnesota)
+    attribute: acquisition
+    value: bought from Control Data VTC ("Control Data VTC") at the end of 1990, for $14.7 million
+    date: '1990'
+  - subject: Round Rock second fab (Fab 5)
+    attribute: construction start
+    value: began building April 1996, project delayed by a worldwide memory-market slump
+    date: 1996-04
+  - subject: Fab 1 (San Jose)
+    attribute: closure to manufacturing
+    value: shut down as a manufacturing facility October 1996, converted solely to R&D
+    date: 1996-10
+  - subject: Silicon Light Machines, Silicon Magnetic Systems
+    attribute: corporate role
+    value: listed as Cypress subsidiaries (Silicon Light Machines by the early 2000s; Silicon Magnetic
+      Systems created May 2002 for MRAM, licensed from NVE Corp)
+    date: 2000-2002
+  notes: SECONDARY SOURCE, cross-check only per project rules -- not used alone for any claim in the timeline;
+    every claim taken from this record is also backed by a Cypress primary source or another independent
+    trade article in this corpus (VTC/Control Data acquisition and price are SINGLE-SOURCE so far, flagged
+    in the timeline, since no primary Cypress filing checked in this project states the $14.7 million
+    price -- the FY1993 10-K only gives "commenced operations in 1991"). The same text (word-for-word)
+    is republished at encyclopedia.com (cyhist-corp-sec-encyclopedia) -- both derive from the same Gale
+    "International Directory of Company Histories" entry, so they are NOT independent of each other and
+    together count as only one secondary source, not two.
 - id: cyhist-corp-sec-encyclopedia
   source:
     publisher: Encyclopedia.com (International Directory of Company Histories, Gale)
-    title: "Cypress Semiconductor Corp"
+    title: Cypress Semiconductor Corp
     date: 2026-09-25
     form: secondary company-history reference
   url: https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/cypress-semiconductor-corp
@@ -1028,103 +1114,69 @@ records:
   cache: web/encyclopedia-cypress.txt
   sha256: f5240998d4bf0a8e7a86295cedbd5733bfca0b68de9423f030a0757daafa3245
   quotes:
-  - text: >-
-      Cypress operates three wafer fabrication facilities, one in Round Rock, Texas , and two in Bloomington, Minnesota , with a fourth Round Rock facility scheduled to come online in 1998. A fifth facility, the company ’ s original manufacturing facility in San Jose , was converted exclusively to research and development activities in late 1996.
-    location: "company overview paragraph"
-  - text: >-
-      1982: TJ. Rodgers forms Cypress Semiconductor. 1984: Debut of the company ’ s first product — a CMOS chip. 1986: The company ’ s IPO raises $73 million. 1988: Cypress lists on the New York Stock Exchange.
-    location: "Key Dates list"
+  - text: Cypress operates three wafer fabrication facilities, one in Round Rock, Texas , and two in Bloomington,
+      Minnesota , with a fourth Round Rock facility scheduled to come online in 1998. A fifth facility,
+      the company ’ s original manufacturing facility in San Jose , was converted exclusively to research
+      and development activities in late 1996.
+    location: company overview paragraph
+  - text: '1982: TJ. Rodgers forms Cypress Semiconductor. 1984: Debut of the company ’ s first product
+      — a CMOS chip. 1986: The company ’ s IPO raises $73 million. 1988: Cypress lists on the New York
+      Stock Exchange.'
+    location: Key Dates list
   claims:
-  - {subject: "Cypress Semiconductor Corporation", attribute: "key dates", value: "founded 1982; first product 1984; IPO 1986 ($73M); NYSE listing 1988", date: "1982-1988"}
-  - {subject: "Cypress wafer fabs, as of writing (~1997)", attribute: "count and locations", value: "three operating (one Round Rock, two Bloomington) plus a fourth Round Rock facility due online 1998, plus the original San Jose facility (by then R&D-only)", date: "~1997"}
-  notes: >-
-    SAME underlying Gale text as cyhist-corp-sec-fundinguniverse (see that
-    record's notes) -- treated as one secondary source, not two, for the
-    "two independent public sources" rule. The 1988 NYSE listing date here
-    matches Cypress's own FY2006 10-K (cyhist-corp-2006-ar-history-grace-complete:
-    "October 1988... New York Stock Exchange"), so that date is
-    cross-confirmed by a primary source even though this record itself is
-    secondary. Its description of "a fourth Round Rock facility scheduled
-    to come online in 1998" is the clearest secondary corroboration of the
-    "Fab 5" project (cyhist-corp-1996-ar-fabv-fab1rd,
-    cyhist-corp-pr-1998-restructure) even though it does not use that name.
-
-- id: cyhist-corp-pr-1999-anchorchips
-  source:
-    publisher: EE Times
-    title: "Cypress buys Anchor Chips to bolster USB strategy"
-    date: 1999-05-25
-    form: trade press article
-  url: https://www.eetimes.com/cypress-buys-anchor-chips-to-bolster-usb-strategy/
-  archive_url: null
-  retrieved: 2026-09-25
-  cache: web/eetimes-anchorchips-1999.txt
-  sha256: c88cfe8872e8863a33b012a94c017f774d7da225d224af2df8f6241b07a05f17
-  quotes:
-  - text: "printers, scanners, xDSL modems and digital cameras"
-    location: "article body"
-  - text: "the leading supplier of peripheral controllers in the USB market"
-    location: "article body"
-  - text: "This was Cypress's second major acquisition in 1999, following its January merger with IC Works (a PC clock-chip maker valued at $130 million)."
-    location: "article body (context paragraph)"
-  claims:
-  - {subject: "Anchor Chips Inc. (San Diego)", attribute: "acquisition", value: "acquired by Cypress for $15 million cash, effective 1999-05-21 (announced 1999-05-25); designer of high-speed USB peripheral microcontrollers", date: "1999-05"}
-  - {subject: "IC Works", attribute: "acquisition (distinct from IC Designs)", value: "PC clock-chip maker, merged with Cypress in January 1999, valued at $130 million", date: "1999-01"}
-  notes: >-
-    RETRIEVAL CAVEAT as the other EE Times records in this corpus (hangs on
-    direct fetch; cached text is a WebFetch extraction, not independently
-    checkable raw HTML; a Wayback capture was not tested for this
-    particular URL). IMPORTANT NAMING NOTE for the coordinator: this
-    "IC Works" (PC clock chips, $130M, January 1999) is a DIFFERENT company
-    from "IC Designs, Inc." (programmable clock oscillators, $16M,
-    1993-1994, per cyhist-corp-sec-fundinguniverse) despite the similar
-    line of business and near-identical name -- do not conflate them on the
-    acquisitions timeline. Neither acquisition is described here as
-    bringing a fab or a named process technology, only product lines.
-
+  - subject: Cypress Semiconductor Corporation
+    attribute: key dates
+    value: founded 1982; first product 1984; IPO 1986 ($73M); NYSE listing 1988
+    date: 1982-1988
+  - subject: Cypress wafer fabs, as of writing (~1997)
+    attribute: count and locations
+    value: three operating (one Round Rock, two Bloomington) plus a fourth Round Rock facility due online
+      1998, plus the original San Jose facility (by then R&D-only)
+    date: ~1997
+  notes: 'SAME underlying Gale text as cyhist-corp-sec-fundinguniverse (see that record''s notes) -- treated
+    as one secondary source, not two, for the "two independent public sources" rule. The 1988 NYSE listing
+    date here matches Cypress''s own FY2006 10-K (cyhist-corp-2006-ar-history-grace-complete: "October
+    1988... New York Stock Exchange"), so that date is cross-confirmed by a primary source even though
+    this record itself is secondary. Its description of "a fourth Round Rock facility scheduled to come
+    online in 1998" is the clearest secondary corroboration of the "Fab 5" project (cyhist-corp-1996-ar-fabv-fab1rd,
+    cyhist-corp-pr-1998-restructure) even though it does not use that name.'
 - id: cyhist-corp-pr-2000-silicon-light-machines
   source:
     publisher: EDN
-    title: "Why Cypress acquired Silicon Light Machines"
+    title: Why Cypress acquired Silicon Light Machines
     date: 2000-07-31
     form: trade press article
   url: https://www.edn.com/why-cypress-acquired-silicon-light-machines/
   archive_url: null
   retrieved: 2026-09-25
-  cache: web/edn-slm-acquisition.txt
-  sha256: 866d6fecb1a0b6b9053568269595b2471dda2eb3303f1da531a0da02028c4158
+  cache: web/chrome-edn-2000-07-31-why-cypress-acquired-slm.txt
   quotes:
-  - text: >-
-      During the 1998 recession, Cypress's Round Rock, Texas fabrication
-      facility took on foundry work manufacturing SLM's optical chips to
-      utilize excess capacity.
-    location: "article body"
-  - text: >-
-      The GLV chip represents a "1,080-pixel" optical switching element
-      using "tiny aluminum mirrors mounted on flexible silicon nitride
-      membranes."
-    location: "article body"
-  - text: "Cypress Round Rock, Texas manufactured all SLM optical chips using standard CMOS processes."
-    location: "article body"
+  - text: He told me about the foundry business that our Texas plant had taken on during the depths of
+      the 1998 semiconductor recession in order to stem its losses
+    location: article body, second paragraph
+  - text: The SLM chips-a category of chips known as microelectromechanical system (MEMS) chips-are dramatically
+      different from the datacom chips we make in Texas, but we made them using only standard CMOS.
+    location: article body, third paragraph
   claims:
-  - {subject: "Silicon Light Machines (SLM)", attribute: "acquisition", value: "acquired by Cypress, completed 2000-07-31 (Cypress had already taken a 5% stake, $2.25M, and a board seat earlier)", date: "2000-07-31"}
-  - {subject: "Fab 2 (Round Rock, Texas)", attribute: "foundry work for SLM", value: "ran foundry manufacturing for SLM's MEMS-based optical chips (Grating Light Valve) starting during the 1998 recession, using excess capacity; continued as Cypress's own fab after the 2000 acquisition, using standard CMOS processes", date: "1998 (foundry start), 2000 (acquisition)"}
-  notes: >-
-    RETRIEVAL CAVEAT: fetched via WebFetch, not independently verified as a
-    direct-fetch or Wayback capture (not tested either way for this URL --
-    unlike the EE Times records, this is caution rather than a confirmed
-    access failure). This is the corpus's clearest example of a fab (Fab 2)
-    running a non-Cypress-core process (MEMS/optical, not CMOS memory or
-    logic) as contract/foundry work before the technology's owner was
-    acquired -- relevant context for cyhist-corp-pr-2007-fab2exit-semidigest's
-    description of Fab 2 later making only "legacy USB, programmable logic,
-    timing and communications devices" (SLM/optical had evidently moved on
-    or wound down by 2007; not confirmed either way in this pass).
-
+  - subject: Silicon Light Machines (SLM)
+    attribute: acquisition
+    value: acquired by Cypress, completed 2000-07-31 (Cypress had already taken a 5% stake, $2.25M, and
+      a board seat earlier)
+    date: '2000-07-31'
+  - subject: Fab 2 (Round Rock, Texas)
+    attribute: foundry work for SLM
+    value: ran foundry manufacturing for SLM's MEMS-based optical chips (Grating Light Valve) starting
+      during the 1998 recession, using excess capacity; continued as Cypress's own fab after the 2000
+      acquisition, using standard CMOS processes
+    date: 1998 (foundry start), 2000 (acquisition)
+  notes: Re-captured 2026-09-25 with the Chrome browser (page text of the <article> element), because
+    the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
+    the earlier WebFetch extraction was an AI summary whose 'quotes' were not all verbatim, so every quote
+    below was re-taken from the browser capture.
 - id: cyhist-corp-sec-ramtron-fabless
   source:
-    publisher: "Yahoo Finance / Nasdaq (Zacks Analyst Blog), web search summary"
-    title: "Cypress Finally Acquires Ramtron / Cypress Closes Ramtron Buyout"
+    publisher: Yahoo Finance / Nasdaq (Zacks Analyst Blog), web search summary
+    title: Cypress Finally Acquires Ramtron / Cypress Closes Ramtron Buyout
     date: 2012-11-23
     form: secondary financial-news summary (not independently fetched; see notes)
   url: https://www.nasdaq.com/articles/cypress-closes-ramtron-buyout-analyst-blog-2012-11-23
@@ -1134,30 +1186,28 @@ records:
   sha256: null
   quotes: []
   claims:
-  - {subject: "Ramtron International Corporation", attribute: "acquisition and fab status", value: "acquired by Cypress; merger completed 2012-11-20; Ramtron was a FABLESS F-RAM (ferroelectric RAM) company using Texas Instruments and Toshiba as manufacturing/foundry partners -- it did not bring an owned fab to Cypress", date: "2012-09 (agreement) to 2012-11-20 (completed)"}
-  notes: >-
-    NOT INDEPENDENTLY VERIFIED -- this record has no cached document and no
-    verbatim quote (deliberately left `quotes: []` so the checker does not
-    need to find text that was never fetched); it records only a WebSearch
-    tool summary, used here to flag an IMPORTANT CORRECTION to this task's
-    brief, which lists Ramtron among "acquisitions that brought process
-    technology or fabs": multiple secondary sources found by search
-    (Yahoo Finance, Nasdaq/Zacks, Wikipedia's Ramtron International page)
-    describe Ramtron as fabless, manufacturing through Texas Instruments and
-    Toshiba, not as an owner of a fab Cypress inherited. Ramtron's F-RAM is
-    a process *technology* (brought via IP/product line, not a fab) and is
-    also outside this task's core 1982-2010 window (deal announced
-    2012-09-19, completed 2012-11-20). Recommend the coordinator or a later
-    pass fetch a primary source (Cypress's FY2012 10-K, or the Ramtron
-    press release at
-    https://www.sec.gov/Archives/edgar/data/849502/000119312512269032/d366157dex992.htm,
-    via a Wayback copy, not sec.gov directly) before relying on this
-    record for anything beyond the fabless correction.
-
+  - subject: Ramtron International Corporation
+    attribute: acquisition and fab status
+    value: acquired by Cypress; merger completed 2012-11-20; Ramtron was a FABLESS F-RAM (ferroelectric
+      RAM) company using Texas Instruments and Toshiba as manufacturing/foundry partners -- it did not
+      bring an owned fab to Cypress
+    date: 2012-09 (agreement) to 2012-11-20 (completed)
+  notes: 'NOT INDEPENDENTLY VERIFIED -- this record has no cached document and no verbatim quote (deliberately
+    left `quotes: []` so the checker does not need to find text that was never fetched); it records only
+    a WebSearch tool summary, used here to flag an IMPORTANT CORRECTION to this task''s brief, which lists
+    Ramtron among "acquisitions that brought process technology or fabs": multiple secondary sources found
+    by search (Yahoo Finance, Nasdaq/Zacks, Wikipedia''s Ramtron International page) describe Ramtron
+    as fabless, manufacturing through Texas Instruments and Toshiba, not as an owner of a fab Cypress
+    inherited. Ramtron''s F-RAM is a process *technology* (brought via IP/product line, not a fab) and
+    is also outside this task''s core 1982-2010 window (deal announced 2012-09-19, completed 2012-11-20).
+    Recommend the coordinator or a later pass fetch a primary source (Cypress''s FY2012 10-K, or the Ramtron
+    press release at https://www.sec.gov/Archives/edgar/data/849502/000119312512269032/d366157dex992.htm,
+    via a Wayback copy, not sec.gov directly) before relying on this record for anything beyond the fabless
+    correction.'
 - id: cyhist-corp-sec-wikipedia
   source:
     publisher: Wikipedia
-    title: "Cypress Semiconductor"
+    title: Cypress Semiconductor
     date: 2026-09-25
     form: secondary encyclopedia article
   url: https://en.wikipedia.org/wiki/Cypress_Semiconductor
@@ -1166,85 +1216,76 @@ records:
   cache: web/wikipedia-cypress.txt
   sha256: 3b376f5c936baee1dce40948d973b42e1526542d0eb1302063aceba68a163756
   quotes:
-  - text: >-
-      It was formed in 1982 with backing by Sevin Rosen , Kleiner Perkins
-      Caufield & Byers, Mayfield Fund and Sequoia Capital. The initial
-      Venture Capital investment was $7.5 million. Cypress went public on
-      the NASDAQ in 1986.
-    location: "article body, founding section"
-  - text: >-
-      Two years after going public the company switched from the NASDAQ to
-      the New York Stock Exchange .
-    location: "article body, founding section"
-  - text: >-
-      The AgigA Tech, Inc. subsidiary sells non-volatile random-access
-      memory ( RAM ). It was acquired during the Simtek purchase in August
-      2008
-    location: "article body"
-  - text: >-
-      In December 2014, Cypress Semiconductor merged with Spansion in an
-      all-stock deal worth $1.59 billion.
-    location: "article body"
-  - text: >-
-      In March 2015, Cypress and Spansion completed of the transactions of
-      the merger in an all-stock, tax-free transaction valued at
-      approximately $5 billion.
-    location: "article body"
+  - text: It was formed in 1982 with backing by Sevin Rosen , Kleiner Perkins Caufield & Byers, Mayfield
+      Fund and Sequoia Capital. The initial Venture Capital investment was $7.5 million. Cypress went
+      public on the NASDAQ in 1986.
+    location: article body, founding section
+  - text: Two years after going public the company switched from the NASDAQ to the New York Stock Exchange
+      .
+    location: article body, founding section
+  - text: The AgigA Tech, Inc. subsidiary sells non-volatile random-access memory ( RAM ). It was acquired
+      during the Simtek purchase in August 2008
+    location: article body
+  - text: In December 2014, Cypress Semiconductor merged with Spansion in an all-stock deal worth $1.59
+      billion.
+    location: article body
+  - text: In March 2015, Cypress and Spansion completed of the transactions of the merger in an all-stock,
+      tax-free transaction valued at approximately $5 billion.
+    location: article body
   claims:
-  - {subject: "Cypress Semiconductor Corporation", attribute: "founding", value: "formed 1982 with $7.5 million venture-capital backing (Sevin Rosen, Kleiner Perkins Caufield & Byers, Mayfield Fund, Sequoia Capital); went public on Nasdaq 1986; switched from Nasdaq to NYSE two years after going public (i.e. 1988)", date: "1982-1988"}
-  - {subject: "Simtek Corporation acquisition", attribute: "date", value: "August 2008 (more precise than the FY2008 annual report, which does not give a month)", date: "2008-08"}
-  - {subject: "Spansion", attribute: "merger", value: "announced December 2014 (all-stock, $1.59 billion as first announced); completed March 2015 (all-stock, tax-free, ~$5 billion); this is how Cypress acquired Spansion's Fab 25 (Austin, Texas, ex-AMD)", date: "2014-12 announced, 2015-03 completed"}
-  notes: >-
-    GENUINELY INDEPENDENT secondary source (not derived from the same Gale
-    "International Directory of Company Histories" text as
-    cyhist-corp-sec-fundinguniverse / cyhist-corp-sec-encyclopedia): this
-    corroborates, from a third source, the 1986 Nasdaq IPO and the "two
-    years later" (1988) NYSE switch that Cypress's own FY2006 10-K also
-    states (cyhist-corp-2006-ar-history-grace-complete) -- so those two
-    dates are now SUPPORTED by primary + two independent secondary sources.
-    The August 2008 Simtek date and the Spansion merger dates/values are
-    each SINGLE-SOURCE so far in this corpus (not cross-checked against a
-    primary Cypress filing in this pass -- the FY2008 annual report gives
-    only the year, "In 2008", for Simtek: cyhist-corp-2008-ar-simtek). The
-    article names Cypress's founders and a Simtek/AgigaTech/Anchor-Chips
-    connection to a specific start-up founder; those personal names are
-    omitted here per the project's no-staff-names rule (the substantive
-    facts -- formation from a group of AMD colleagues in 1982, and that the
-    same founder was behind both Anchor Chips and Simtek/AgigaTech -- are
-    kept without the names). Spansion/Fab 25 itself is outside this task's
-    1982-2010 core window and was not otherwise researched in this pass
-    (see the progress file's "not yet done" list) -- this record is the
-    only mention of it in this corpus.
-
+  - subject: Cypress Semiconductor Corporation
+    attribute: founding
+    value: formed 1982 with $7.5 million venture-capital backing (Sevin Rosen, Kleiner Perkins Caufield
+      & Byers, Mayfield Fund, Sequoia Capital); went public on Nasdaq 1986; switched from Nasdaq to NYSE
+      two years after going public (i.e. 1988)
+    date: 1982-1988
+  - subject: Simtek Corporation acquisition
+    attribute: date
+    value: August 2008 (more precise than the FY2008 annual report, which does not give a month)
+    date: 2008-08
+  - subject: Spansion
+    attribute: merger
+    value: announced December 2014 (all-stock, $1.59 billion as first announced); completed March 2015
+      (all-stock, tax-free, ~$5 billion); this is how Cypress acquired Spansion's Fab 25 (Austin, Texas,
+      ex-AMD)
+    date: 2014-12 announced, 2015-03 completed
+  notes: 'GENUINELY INDEPENDENT secondary source (not derived from the same Gale "International Directory
+    of Company Histories" text as cyhist-corp-sec-fundinguniverse / cyhist-corp-sec-encyclopedia): this
+    corroborates, from a third source, the 1986 Nasdaq IPO and the "two years later" (1988) NYSE switch
+    that Cypress''s own FY2006 10-K also states (cyhist-corp-2006-ar-history-grace-complete) -- so those
+    two dates are now SUPPORTED by primary + two independent secondary sources. The August 2008 Simtek
+    date and the Spansion merger dates/values are each SINGLE-SOURCE so far in this corpus (not cross-checked
+    against a primary Cypress filing in this pass -- the FY2008 annual report gives only the year, "In
+    2008", for Simtek: cyhist-corp-2008-ar-simtek). The article names Cypress''s founders and a Simtek/AgigaTech/Anchor-Chips
+    connection to a specific start-up founder; those personal names are omitted here per the project''s
+    no-staff-names rule (the substantive facts -- formation from a group of AMD colleagues in 1982, and
+    that the same founder was behind both Anchor Chips and Simtek/AgigaTech -- are kept without the names).
+    Spansion/Fab 25 itself is outside this task''s 1982-2010 core window and was not otherwise researched
+    in this pass (see the progress file''s "not yet done" list) -- this record is the only mention of
+    it in this corpus.'
 known_gaps:
-- description: "Cypress annual reports / 10-Ks for fiscal years 1986-1992 (the IPO year through the year before the earliest report found)"
-  reason: >-
-    annualreports.com has no copy under any NASDAQ_CY_<year> filename tried
-    for 1987-1993 (all HTTP 404; 1991-1993 already established as 404 by
-    the filings-index-design work, confirmed again here for 1987-1990,
-    1992). EDGAR mandatory electronic filing was phased in during
-    1993-1996; the earliest Cypress EDGAR full-text filings found via a
-    Wayback CDX listing of the CIK 791915 Archives folder are from 1994
-    (a DEF 14A) -- no 10-K, 10-Q or S-1 filed before 1994 was found on
-    EDGAR/Wayback. A paper-only S-1/prospectus for the May 1986 IPO may
-    exist but was not found by any means available under this project's
-    rules (no sec.gov fetch, no paid document service).
-- description: "Cypress Form 10-K for fiscal year 1994 (filed ~1995)"
-  reason: >-
-    Not on annualreports.com (the NASDAQ_CY_1994 filename slot is occupied
-    by the FY1993 report, not a separate FY1994 report -- see the note on
-    cyhist-corp-1993-10k / the existing data/filings.yaml record). A
-    Wayback CDX listing of Cypress's EDGAR CIK folder found only a DEF 14A
-    (proxy) and an S-8 (equity plan) from 1995 with a 200-status capture;
-    no 10-K or 10-Q accession from 1994-1995 was found with a non-redirect
-    Wayback snapshot in the time available -- most candidate accessions'
-    CDX entries are 301-redirect stubs only (sec.gov's own later URL
-    restructuring), and fetching each candidate's full CDX history to find
-    a genuine 200-status snapshot is slow; this is flagged as unfinished
-    work, not a confirmed absence, in the progress file.
-- description: "Cypress Form S-1 or prospectus for the May 1986 initial public offering"
-  reason: "Same as the 1986-1992 gap above: pre-EDGAR, no public copy found."
-- description: "Cypress DEFM14A / merger proxies, and most 8-Ks, for fiscal years 1997, 1999-2007 and 2009 (only the 1996 10-Qs, the 1998 EE Times restructuring story, and the 2005/2006/2007 Grace/UMC trade-press stories cover this span from the filing/press side)"
-  reason: >-
-    Not searched in the time available for this pass -- flagged as
-    unfinished work in the progress file, not as absent.
+- description: Cypress annual reports / 10-Ks for fiscal years 1986-1992 (the IPO year through the year
+    before the earliest report found)
+  reason: annualreports.com has no copy under any NASDAQ_CY_<year> filename tried for 1987-1993 (all HTTP
+    404; 1991-1993 already established as 404 by the filings-index-design work, confirmed again here for
+    1987-1990, 1992). EDGAR mandatory electronic filing was phased in during 1993-1996; the earliest Cypress
+    EDGAR full-text filings found via a Wayback CDX listing of the CIK 791915 Archives folder are from
+    1994 (a DEF 14A) -- no 10-K, 10-Q or S-1 filed before 1994 was found on EDGAR/Wayback. A paper-only
+    S-1/prospectus for the May 1986 IPO may exist but was not found by any means available under this
+    project's rules (no sec.gov fetch, no paid document service).
+- description: Cypress Form 10-K for fiscal year 1994 (filed ~1995)
+  reason: Not on annualreports.com (the NASDAQ_CY_1994 filename slot is occupied by the FY1993 report,
+    not a separate FY1994 report -- see the note on cyhist-corp-1993-10k / the existing data/filings.yaml
+    record). A Wayback CDX listing of Cypress's EDGAR CIK folder found only a DEF 14A (proxy) and an S-8
+    (equity plan) from 1995 with a 200-status capture; no 10-K or 10-Q accession from 1994-1995 was found
+    with a non-redirect Wayback snapshot in the time available -- most candidate accessions' CDX entries
+    are 301-redirect stubs only (sec.gov's own later URL restructuring), and fetching each candidate's
+    full CDX history to find a genuine 200-status snapshot is slow; this is flagged as unfinished work,
+    not a confirmed absence, in the progress file.
+- description: Cypress Form S-1 or prospectus for the May 1986 initial public offering
+  reason: 'Same as the 1986-1992 gap above: pre-EDGAR, no public copy found.'
+- description: Cypress DEFM14A / merger proxies, and most 8-Ks, for fiscal years 1997, 1999-2007 and 2009
+    (only the 1996 10-Qs, the 1998 EE Times restructuring story, and the 2005/2006/2007 Grace/UMC trade-press
+    stories cover this span from the filing/press side)
+  reason: Not searched in the time available for this pass -- flagged as unfinished work in the progress
+    file, not as absent.
