@@ -1762,3 +1762,172 @@ documents:
     compositions and gate oxide). This report''s own history table also independently confirms QTP 081704
     ("CY230X L28 Process Transfer from CTI Fab2 to TSMC-2A", Aug 2008) as a real, dated qualification event
     even though the qtp-081704 PDF itself could not be retrieved (see gaps).'
+- id: qtp-012705
+  doc_type: QTP
+  number: '012705'
+  cypress_document_number: 001-88019 Rev. *A
+  title: 1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4
+  version: '*A'
+  date_printed: June 2014
+  url: https://www.infineon.com/dgdl/Infineon-QTP_012705_1MEG_SRAM_FAST_ASYNCHRONOUS_FAMILY_R52FFD-3_TECHNOLOGY_FAB_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7148db7c0893
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 3b146101e71d80a1f3a50e5a87aed66f26f5755109768393efd28a2753bef7d9
+  technology_codes:
+  - R52FFD-3
+  - R52FD-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1021BV33
+  - CY7C1019BV33
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6,000Å Al-0.5%Cu/300Å TiW; Metal 2: 300Å Ti/8,000Å Al-0.5%Cu/300Å
+      TiW'
+    passivation: 1,000Å Oxide / 9,000 Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal, 0.25 m (printed with the micron sign dropped)
+    gate_oxide: SiO2 55Å
+    fab_location: Cypress Semiconductor – Bloomington, MN
+    die_fab_line_id: Fab4/R52FFD-3
+    transistors: 25.2 million
+    gates: 8.4 million
+  qualification_history:
+  - number: '000505'
+    description: New 1Meg Asynchronous, CY7C1021BV33, R52FD-3
+    date: Oct 00
+  - number: '011205'
+    description: New Technology Derivative R52FFD-3, Fab 4 / New 1Meg, GB/s Quad Port Switch CY7C04312BV/
+      CY7C04314BV
+    date: Jun 01
+  - number: '012705'
+    description: Transfer of CY7C1021BV33 from Technology R52FD-3 to R52FFD-3
+    date: Apr 02
+  quotes:
+  - text: New Technology Derivative R52FFD-3, Fab 4 / New 1Meg, GB/s Quad Port Switch
+    location: p.2, Product Qualification History, row 011205 (the table wraps 'CY7C04312BV/ CY7C04314BV'
+      onto the next physical line, after the interleaved QTP-number/date columns)
+  - text: New 1Meg Asynchronous, CY7C1021BV33, R52FD-3
+    location: p.2, Product Qualification History, row 000505
+  - text: Transfer of CY7C1021BV33 from Technology R52FD-3 to R52FFD-3
+    location: p.2, Product Qualification History, row 012705
+  notes: 'Explicit naming/lineage statement: this report''s own history table calls R52FFD-3 a "New
+    Technology Derivative" of a pre-existing code, and its own row 012705 says outright "Transfer of
+    CY7C1021BV33 from Technology R52FD-3 to R52FFD-3" -- i.e. R52FFD-3 is a direct derivative of R52FD-3
+    (an extra "F" suffix), and R52FD-3 itself already existed by Oct 00 ("New 1Meg Asynchronous, CY7C1021BV33,
+    R52FD-3", QTP 000505) even though no R52FD-3 report was independently retrieved in this corpus (see
+    gaps). R52FFD-3 here: 2 metal layers, 0.25 µm, 55 Å gate oxide -- matching R52D-3 (qtp-099202) and
+    R52LD-3 (qtp-062201) exactly, again consistent with a single 0.25 µm R52-family design rule shared
+    across suffixes.'
+- id: qtp-097132
+  doc_type: QTP
+  number: '97132'
+  cypress_document_number: 001-88021 Rev. *B
+  title: 32K x 8 Low Power SRAM, R32 Technology, Fab4
+  version: '*B'
+  date_printed: June 2014
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97132-32k-x-8-low-power-sram-r32-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714947ff09f5
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 0b0940cb9914c333941e31a00889a2f65e652bbd14081d742359f5e115b7335e
+  technology_codes:
+  - R32
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62256
+  - CY62256V
+  die_ids:
+  - 7C1256A
+  - 7C1257A
+  process_description:
+    number_of_metal_layers: 1
+    metal_composition: 'Metal 1: TiW/Al, 500Å/8,000Å'
+    passivation: Silicon Dioxide 7,000Å + Silicon Nitride 6,000Å
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Poly, Single Metal /0.5 µm
+    gate_oxide: SiO2 / 145Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R32
+    transistors: 1,600,000
+    gates: N/A (Not a Logic device)
+  qualification_history:
+  - number: '97132'
+    description: CY62256/CY62256V , 32K x 8 Low Power SRAM - R32 Technology Qualification
+    date: Jun 03
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R32
+    location: p.2, section heading
+  - text: CY62256/CY62256V , 32K x 8 Low Power SRAM - R32 Technology Qualification
+    location: p.2, Product Qualification History, row 97132
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32'
+    location: p.2, Technology/Fab Process Description
+  notes: 'No separate "New Technology" row is printed for R32 in this table -- the only history row is
+    this report''s own (QTP 97132, Jun 03), so the true origin date of R32 cannot be fixed from this
+    document alone. R32 (1 metal layer, double poly, 0.5 µm, 145 Å gate oxide) shares its 0.5 µm design
+    rule with S4AD-5 at Fab 2 (qtp-021507: 0.5 µm) and with the 0.5um TLM Hyundai foundry technology
+    (qtp-001004), but differs from all of them in layer count/composition -- consistent with, not
+    contradicting, a shared-generation industry design rule rather than a shared process.'
+- id: qtp-053301
+  doc_type: QTP
+  number: '053301'
+  cypress_document_number: 001-88090 Rev. **
+  title: L8C-3R Technology, Fab 4
+  version: '**'
+  date_printed: June 2013
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: badfd30407a3faecb798c5447523b4cde0b5054d3ffe3d7397e0a130464dec16
+  technology_codes:
+  - L8C-3R
+  - C8Q-3R
+  - C8
+  fab: Fab 4 / CMI (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY5077
+  - CY22M1SxxLGX
+  - CY22M1LxxLGX
+  - CY22U1SxxLGX
+  - CY22U1LxxLGX
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 100A Ti/3,200A Al 0.5% Cu /300A TiW; Metal 2: 150A Ti/4,230A Al 0.5%
+      Cu/300A TiW; Metal 3: 150A Ti/4,230A Al 0.5% Cu/300A TiW; Metal 4: 150A Ti/8,000A Al 0.5% Cu/300A
+      TiW'
+    passivation: 1,000A TeOs / 9,000A Si3N4
+    design_rule: CMOS, 0.13 µm
+    gate_oxide: SiO2 DGOX 32/55A
+    fab_location: CMI / Bloomington MN
+    die_fab_line_id: Fab4, L8C-3R
+  qualification_history:
+  - number: '042106'
+    description: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    date: Jan 05
+  - number: '053301'
+    description: Qualify L8C-3R Technology Derivative of the C8 Technology at Fab4 using CY5077 Device
+    date: Sep 06
+  - number: '063209'
+    description: 3 Layer Change to XO-LV Epson (CY5077) on L8C-3R Technology (Wafer Sales Only)
+    date: Sep 06
+  - number: '064904'
+    description: 8-Layer Improvement Change to XO LV Epson on L8C-3R Technology (Wafer Sales Only)
+    date: Mar 07
+  - number: '071303'
+    description: 1 Layer Yield Improvement Change to XO LV Epson on L8C-3R Technology (Wafer Sales Only)
+    date: May 07
+  quotes:
+  - text: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    location: p.2, Product Qualification History, row 042106
+  - text: Qualify L8C-3R Technology Derivative of the C8 Technology at Fab4 using CY5077 Device
+    location: p.2, Product Qualification History, row 053301 (repeated verbatim as the Qualification Purpose
+      on p.3)
+  notes: 'Direct naming/lineage evidence: this report''s own qualification purpose calls L8C-3R a
+    "Technology Derivative of the C8 Technology at Fab4" -- i.e. L8C-3R derives from a base "C8" technology
+    at Fab 4, and its own history table separately dates "New C8Q-3R Technology" to QTP 042106, Jan 05 (a
+    sibling C8-derived code, not independently retrieved as its own report in this corpus, but named here
+    as "New" at that date). L8C-3R itself: 4 metal layers, CMOS 0.13 µm, dual gate oxide 32/55 Å ("DGOX"),
+    CMI/Bloomington MN -- the same 0.13 µm design rule and dual-gate-oxide notation as S8TNV-5R (qtp-113005,
+    also CMI/Fab4, 110/32 Å), though L8C-3R and S8 are named as distinct technologies with no report in
+    this corpus linking them directly.'
