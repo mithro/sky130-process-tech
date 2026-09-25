@@ -155,6 +155,7 @@ Fields a series may need for a module with many doped regions (added for S2, the
 | `z` | `dope` | painting order of overlays (default 0): a thin channel implant made before a well is still drawn over it |
 | `anchor_x`, `anchor_y` | `deposit`, `dope` | where the label's dot sits inside the layer. Numbers; each must fall at least 3 u inside the layer, or it is a lint line. Rarely needed now that the generator routes around other materials itself |
 | `profile` | `deposit` | how a blanket film meets the topography. `conformal` (the default): the film grows its thickness normal to the surface everywhere, so it has the same thickness on a sloped wall as on the flat, rounds every outer corner, and leaves a hole's bottom open until the hole closes (a spacer etched back from it keeps a rounded top). `gapfill`: a gap-filling dielectric (HDP-CVD): it grows `t` upward from every surface, filling gaps from the bottom, adds nothing on a vertical wall, and rises over a raised line in facets from the line's edges — flat over a wide line, peaked over a narrow one. `facet_deg` (default 45) sets the facet angle and `smooth` (a length) relaxes the result as a flowing glass would; both only with `gapfill`. Use `gapfill` only where the page reads the film as a gap-filling deposit, and say in the caption that the drawn profile only illustrates it |
+| `thin_ok` | `deposit` | `true`: the film may be drawn as thin as 3 u instead of 5 u, because it is seen mainly in close-ups enlarged 2.5× or more (the via liners of S9). Say in the caption how its drawn proportion compares with the page's |
 | `flat: false` with `where` | `deposit` | a patterned film that follows the surface inside its ranges instead of being flat-topped: a resist thinner than the topography it is coated over (the 0.3 µm HV-tip resist over 0.38 µm gate stacks) |
 | `route` | `deposit`, `dope` | `top` (label it from the band above the drawing, only for a layer that is top-most in every panel), `right` (the label column, straight across) or `over` (the label column, but the leader first rises out of the layer and crosses above the surface). Left out, the generator chooses: `right` where a leader can reach the column without running more than `max-leader-traverse` (40 u) through other materials or more than `max-edge-run` (20 u) along a material edge, otherwise `over` |
 | `tilt_deg` | `ions` | the tilt of the arrows. Draw a tilt only when the page gives the SKY130 one; the caption must mention the tilt either way (lint) |
@@ -206,17 +207,60 @@ the metal line below, resist stripped in the etch step), `via-plug` (TiN liner, 
 polish to the cap-oxide top), `metal-stack` (bottom film, aluminium–copper, cap; the two
 refractory films' notes are parameters, because the level's page gives its own reading —
 metal 2 "Ti or Ti/TiN", metal 3 "Ti or TiW" underneath), `metal-pattern` (mask and etch
-through the stack) and `imd` (gap-fill oxide, polish level, cap oxide). **To draw the next
-group** (141–149, 154–163): read the header of `series-beol.yaml` for the drawn heights and
-x positions so far, append the MiM steps it needs as plain ops (or leave them to the S10
-series if that is built on this one with `base:`), then add one `use:` per template with the
-level's codes, step numbers, ids, positions and heights — keeping the heights in the same
-proportion to each other as the PDK's stack diagram gives them where the height budget allows,
-and writing in the header the drawn ratios the captions will state. Via 4 (step 160) has no
-tungsten step: its level is `via-hole` followed directly by `metal-stack`. Adding ops after
-the last step drawn so far changes no earlier figure (a state is the flow up to its step), but
+through the stack) and `imd` (gap-fill oxide, polish level, cap oxide). Adding ops after the
+last step drawn so far changes no earlier figure (a state is the flow up to its step), but
 **changing a template or an earlier instantiation changes every figure built on it**: rebuild
 them all and run `--check`.
+
+#### Drawing the next groups (141–149, 154–163)
+
+1. **Metal 3 is patterned only at 139–140, inside the MiM steps.** Steps 134–140 are WTIAL3
+   (the blanket metal-3 stack, drawn here), then CAPILD, CAPTIW1, CAPM, CAPME (the first MiM
+   capacitor, built on the *blanket* metal 3) and only then MM3 and MM3E. NILD5 (141) is
+   deposited on *patterned* metal 3. So S10 must draw 135–140 **before** S9b continues, in
+   `series-beol.yaml` itself (plain ops for 135–138, then `use: metal-pattern` for 139–140) or
+   in a series based on it that S9b then bases on. Decide explicitly whether the slice holds a
+   MiM capacitor. If it does: the plate film is `barrier` like the metal caps, and
+   `metal-pattern`'s etch removes every `barrier` film that is not under resist, so the MM3
+   resist must cover the plate (on the 140 page the metal-3 etch also clears what is left of
+   the capacitor dielectric outside the plates: give it its own `etch` op, since the template
+   etches only `barrier` and `aluminium`). The same holds for the second MiM (150–153) before
+   MM4/MM4E (154–155).
+2. **The height budget.** Full slices here are cut 84 u above the silicon (`crop_depth: -84`,
+   "the drawing starts inside the inter-level oxide under metal 1") and reach 238 u at metal 3:
+   417–521 u per figure. Every level adds about 70–100 u per panel, so at a fixed cut the 800 u
+   limit is reached at about metal 4. Move the cut up level by level: from 141, start inside
+   the oxide under metal 2 (about `-128`), from 154 inside the oxide under metal 3, and change
+   the caption's "the drawing starts inside …" to match. Keep the cut 2 u or more away from a
+   horizontal film boundary (a film showing less than 2 u above the cut is not drawn).
+3. **Close-up recipe.** A close-up's `crop_depth` is −(the series height where the drawing is
+   to start) × (the enlargement, 268 ÷ window width). Windows and crops that worked:
+
+   | Figures | `close_up` | enlarged | `crop_depth` | starts inside | notes |
+   |---|---|---|---|---|---|
+   | 119–123 (via 1) | `[59, 136]` | 3.5× | `-313` (90 u) | NILD2 under metal 1 | window starts just right of the left metal-1 line (no sliver) and ends 3 u right of the via, so a label run to the right stays short |
+   | 125 (metal-2 edge) | `[86, 164]` | 3.4× | `-433` (126 u) | NILD3 above metal 1 | both edges of the middle metal-2 line; empty space on both sides for right routes |
+   | 130–133 (via 2) | `[0, 64]` | 4.2× | `-662` (158 u) | the metal-2 aluminium | the left metal-2 line ends at the window's right edge; 130 is 793 u tall, so do not start lower |
+
+   `routes: {<films of the line below>: right}` where they run to the window's edge;
+   `routes: {<plug id>: top}` for a flush plug (a right route from a plug runs 50 u or more
+   inside the oxide); a panel `labels:` override to keep the cap film's note when the noted-label
+   budget drops it. The via liners are `thin_ok` 3 u films (next item).
+4. **Thin films in close-ups.** The 5 u minimum is for films seen at full-slice scale. A deposit
+   that is seen mainly in close-ups enlarged 2.5× or more may carry `thin_ok: true` and be as
+   thin as 3 u (lint). The via liners use it: at 5 u the liner was most of the plug.
+5. **Via 4 (VIM4E, 160) has no tungsten step.** Its level is `via-hole` followed directly by
+   `metal-stack` (WTIAL5, 161): the three metal-5 films are deposited conformally (the default
+   `profile`) into the open hole, lining its walls and floor, so the metal-5 stack dips into
+   each via and the via is filled by the metal itself. The hole is wide and shallow — 0.80 µm
+   openings on the 160 page, 0.505 µm deep on the stack diagram (pdk-04) — so draw it wider than
+   deep and let the caption state the drawn ratio. The etch stops on the metal-4 cap, and, where
+   a second MiM capacitor sits under a via, on its top plate (the 160 page): the via-hole
+   template etches only `oxide-dep`, which stops on any `barrier` film, so both floors come out
+   right if the plate is in the series.
+6. **Label wording per level** comes from each level's own page: the `metal-stack` notes are
+   parameters. Metals 1–3 use cap "TiW or Ti/TiN — see the overview"; the bottom film is
+   "Ti or Ti/TiN" at metals 1–2 and "Ti or TiW" at metal 3 (the 134 page's words).
 
 ## 4. Build
 

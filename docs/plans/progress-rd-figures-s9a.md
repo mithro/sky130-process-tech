@@ -83,22 +83,46 @@ the swap to the dark variant works, prose follows the caption.
 * Nothing for 118–134. Next group (141–149, 154–163): see "Series templates" in
   `docs/plans/figure-authoring.md` and the header of `series-beol.yaml`.
 
-## Page contradictions and doubts (not fixed; presentation-only branch)
+## For the readability batch (page problems, not fixed here)
 
 * `docs/steps/120-tin3.md:19` and `docs/steps/131-tin4.md:19` say the liner coats "the
-  titanium–tungsten floor" without a hedge, while the same pages, a paragraph later, give the
-  floor as TiW on the 2013 stack or TiN on the 2014 one (undecided, `overview-metal-cap`). The
-  figures follow the undecided reading.
-* The metal-3 cap: `docs/steps/134-wtial3.md` describes it as "TiW or TiN"; the metal-1 and
-  metal-2 figures (S8 and here) label the cap "TiW or Ti/TiN" (the 2014 cap is 90 Å Ti under
-  500 Å TiN). The metal-3 label follows its own page ("TiW or TiN"); the bottom film "Ti or
-  TiW" likewise. Both come from template parameters, so a later wording decision is one line.
+  titanium–tungsten floor" without a hedge, while the same pages (120:43–48, 131:48–52) give the
+  floor as TiW on the 2013 stack or TiN on the 2014 one (undecided, `overview-metal-cap`).
+  Suggested page wording (the reviewer's): "the refractory cap of metal 1 (TiW or TiN; see
+  {ref}`overview-metal-cap`)". The figures follow the undecided reading.
+* For the owner: the 134 page describes the metal-3 bottom film as "Ti or TiW" and does not
+  discuss a Ti/TiN bottom on the TiN reading; the figure uses the page's words.
+
+## Review round (review file rd-figures-s9a, "approve with fixes")
+
+* M1: a placeholder left after substitution (`${mask-code}`, `$liner_step`) is a lint line;
+  selftest cases for both.
+* M2: `lint_spec` stops after a series' own faults and `render_spec` draws nothing for a broken
+  series, so a misspelled parameter is reported, never a TypeError; selftest runs such a case
+  through `render_spec`. L7: selftest for a two-file base loop (scratch spec directory).
+* M3: the 1.5× oxide-ratio sentence moved from 127 (where the cap is not yet drawn) to 128;
+  127 now says "a little thicker" (20 u against 18 u).
+* M4: new deposit field `thin_ok: true` (a film seen mainly in close-ups enlarged 2.5× or more
+  may be 3 u; lint + two selftest cases); the S9 via liners are 3 u (template default; S8 is
+  unaffected). Tungsten is now most of each plug. Captions of 120–123 and 131–133 say the liner
+  is drawn with one thickness, thicker on the floor in proportion than it is; 122 labels the
+  liner. To keep that label's run short the via-1 close-ups (119–123) now use the window
+  [59, 136], 3.5×, crop −313 (the via is 3 u from the right edge). 123 and 134 re-checked in
+  dark mode: the purple "I-beam" is gone; the plug reads as tungsten.
+* M5: "Drawing the next groups" in `docs/plans/figure-authoring.md`: 139–140 before 141 (S10
+  first, MiM plate is `barrier`), moving the cut up per level, the close-up table, `thin_ok`,
+  via 4 filled by the metal-5 stack, label wording per level.
+* L1: 134's cap label is "TiW or Ti/TiN" like metals 1–2; the caption gives the page's "TiW or
+  TiN" with the Ti/TiN detail from its deposition sequence. L3: 118 names the metal-1 cap films.
+  L4: a ground-coloured strip is painted below the cut's zigzag, over the clip edge, so no
+  anti-aliased stroke of a cut film shows under the break (this also re-renders the S8 cut
+  close-ups 108–112; nothing else in them changes). L5: "via 2" without the article.
 
 ## Decisions
 
 * Via widths drawn 16 u (via 1) and 20 u (via 2) against depths of 18 u and 28 u: the depths
-  are set by S8's end state (via 1) and by keeping via 2 at 0.42/0.27 of via 1; a narrower hole
-  would close under the 5 u minimum liner. Drawn aspect ratios about 1.1:1 and 1.4:1 against
+  are set by S8's end state (via 1) and by keeping via 2 at 0.42/0.27 of via 1; the liners are
+  3 u (`thin_ok`, after review). Drawn aspect ratios about 1.1:1 and 1.4:1 against
   the pages' 1.8:1 and 2.1:1; the captions say so.
 * Via walls vertical: the pages give the PDK's "Via1 slope" 0.02 and read it as a taper
   allowance; no wall angle is public, and S8's contact taper came from a public top/bottom CD
