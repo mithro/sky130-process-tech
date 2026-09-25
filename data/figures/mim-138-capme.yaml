@@ -19,8 +19,8 @@ caption: >-
   page treats the strip and clean as part of this step). Whether the etch stops on the
   dielectric or cuts through it is not public; the page describes the stop, while the PDK's
   schematic cross-section draws the dielectric only under the plate.[^pdk-07] Any small loss
-  into the dielectric is not drawn, and the plate edge is drawn vertical. The dielectric, the
-  plate, of the order of 0.1 µm on the page's reading, and the metal are not drawn to scale. The
+  into the dielectric is not drawn, and the plate edge is drawn vertical. The plate (of the
+  order of 0.1 µm, the page's reading), the dielectric and the metal are not drawn to scale. The
   two oxides and the bottom film of the metal stack are drawn but not labelled. Not to scale.
 arrow:
   title: "CAPME, step 138"

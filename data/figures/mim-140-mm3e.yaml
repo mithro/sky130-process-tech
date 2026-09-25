@@ -18,8 +18,8 @@ caption: >-
   Before, the metal-3 resist over the line and over the capacitor; after, the chlorine etch has
   removed the dielectric outside the resist and then the whole metal-3 stack, stopping on the cap
   oxide, and the resist has been stripped (the page treats the passivation, strip and clean as
-  part of this step). Under the resist the stack is left whole, so the capacitor now has its own
-  bottom plate. Nothing is etched under the resist, so on this drawing the thin dielectric also
+  part of this step). Beneath the resist the whole stack remains, and the capacitor now has a
+  bottom plate of its own. Since nothing is etched there, on this drawing the thin dielectric also
   stays on the metal around the top plate and on the wiring line; the page does not discuss
   that, and the PDK's schematic cross-section draws the dielectric only under the
   plate.[^pdk-07] The edges are drawn vertical, and nothing is drawn to scale: the page uses the
