@@ -341,7 +341,7 @@ Status and expiry are estimates from public records and are not legal advice.
 
     - the raw-data repository files the measurement under the folder
       name `nfet_20v0_nvt`;
-    - the {ref}`PWBM <step-026>` page reads the pad's own
+    - but the {ref}`PWBM <step-026>` page reads the pad's own
       geometry (a "2× 30/5.5" structure with its body tied to `Psub`)
       as matching the PDK's zero-Vt e-test structure rather than the
       native device's "2× 30/1.0", and reads it as the zero-Vt
