@@ -113,10 +113,10 @@ memory transistor (SKY130's values are not public):
 * **Species.** Boron (¹¹B⁺, from BF₃) is the usual p-type barrier
   dopant; indium is the heavier alternative that gives a steeper,
   shallower-tailed profile. The Cypress embedded-SONOS patent, which may
-  still be in force, implants the memory-transistor channel with indium
-  at an energy and dose given in the collapsed note below this list, and
-  the same company's 2020 article recommends "heavier species such as
-  Indium" for the control-gate channel.[^cyp-25] Indium's advantage for a retrograde
+  still be in force, describes its own channel implant in the collapsed
+  note below this list, and the same company's 2020 article recommends
+  "heavier species such as Indium" for the control-gate
+  channel.[^cyp-25] Indium's advantage for a retrograde
   channel was shown by Shahidi et al.[^shahidi-1993] and used for
   super-steep retrograde channels at 80 nm.[^huang-2000]
 * **Energy.** Chosen to place the peak below the eventual channel,
