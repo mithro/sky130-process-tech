@@ -1038,15 +1038,15 @@ claims:
 # ---- docs/history/s8-lineage.md ---------------------------------------------
 - id: s8-013-sonos
   page: docs/history/s8-lineage.md
-  anchor: 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile memory
+  anchor: A 0.13 µm SONOS process.
   grade: corroborated
   footnotes: [ew-2007-s8, eet-2007-fablite]
   sources:
-  - {id: cyx-ew-2007-s8-nvsram, origin: ew}
+  - {id: cyx-ew-2007-s8-nvsram, origin: cypress}
   - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
 - id: s8-qualified-2008
   page: docs/history/s8-lineage.md
-  anchor: To qualify S8 SONOS technology and
+  anchor: To qualify S8 SONOS technology and 4M
   grade: single-source
   footnotes: [qtp-113005]
   sources:
@@ -1054,14 +1054,24 @@ claims:
 - id: s8-psoc-process
   page: docs/history/s8-lineage.md
   anchor: our 0.13-micron, nonvolatile PSoC wafer
-  grade: corroborated
+  grade: attributed
+  attribution: (Cypress's reports)
   footnotes: [ar-fy2010, psoc-history]
   sources:
   - {id: cyhist-corp-2010-ar-s8, origin: cypress}
-  - {id: cyx-infineon-psoc-history, origin: infineon}
+  - {id: cyx-infineon-psoc-history, origin: cypress}
+- id: s8-simtek
+  page: docs/history/s8-lineage.md
+  anchor: in 2008 Cypress bought Simtek
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ew-2007-s8, ar-fy2008]
+  sources:
+  - {id: cyx-ew-2007-s8-nvsram, origin: cypress}
+  - {id: cyhist-corp-2008-ar-simtek, origin: cypress}
 - id: s8-c8-family
   page: docs/history/s8-lineage.md
-  anchor: S8's first metal layer is the same as C8's, film for film
+  anchor: S8's first metal layer is C8's, film for film
   grade: attributed
   attribution: (Cypress's reports)
   footnotes: [pin-152804, qtp-043004, qtp-053301, qtp-113005]
@@ -1072,56 +1082,95 @@ claims:
   - {id: qtp-113005, origin: cypress}
 - id: s8-sonos-from-s4
   page: docs/history/s8-lineage.md
-  anchor: had been in production
+  anchor: had been in production since 2001
   grade: attributed
-  attribution: Cypress's earlier SONOS process
+  attribution: (Cypress's reports)
   footnotes: [eflash-brief, qtp-021507, chipest-2008]
   sources:
   - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
   - {id: qtp-021507, origin: cypress}
-- id: s8-110a-lineage
+  - {id: cyx-chipestimate-sonos-2008, origin: cypress}
+- id: s8-dual-oxide
   page: docs/history/s8-lineage.md
-  anchor: The 110 Å oxide is the
-  grade: corroborated
-  footnotes: [qtp-113005, qtp-021507, qtp-102101, qtp-030206, qtp-043004, pdk-hv]
+  anchor: S8 has two gate oxides, 110 Å and 32 Å
+  grade: attributed
+  attribution: Cypress's 2008 article
+  footnotes: [qtp-113005, chipest-2008]
   sources:
   - {id: qtp-113005, origin: cypress}
+  - {id: cyx-chipestimate-dual-oxide, origin: cypress}
+- id: s8-110a-earlier
+  page: docs/history/s8-lineage.md
+  anchor: The 110 Å oxide is
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-102101, qtp-030206, qtp-043004]
+  sources:
   - {id: qtp-021507, origin: cypress}
   - {id: qtp-102101, origin: cypress}
   - {id: qtp-030206, origin: cypress}
   - {id: qtp-043004, origin: cypress}
+- id: s8-pdk-110a
+  page: docs/history/s8-lineage.md
+  anchor: The SKY130 PDK, from SkyWater, says its high-voltage devices
+  grade: attributed
+  attribution: SkyWater
+  footnotes: [pdk-hv]
+  sources:
   - {id: cyx-pdk-hv, origin: skywater}
+  - {id: qtp-113005, origin: cypress}
+- id: s8-grace-013
+  page: docs/history/s8-lineage.md
+  anchor: 0.13-micron SRAM and LOGIC
+  grade: single-source
+  footnotes: [ar-fy2010]
+  sources:
+  - {id: cyx-ar-fy2010-grace-013, origin: cypress}
 - id: s8-side-by-side
   page: docs/history/s8-lineage.md
-  anchor: The values are as the reports and the PDK print them.
-  grade: corroborated
-  footnotes: [qtp-021507, qtp-043004, qtp-113005, pdk-hv, pdk-metal-stack]
+  anchor: Each column copies one Cypress report
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-043004, qtp-113005]
   sources:
   - {id: qtp-021507, origin: cypress}
   - {id: qtp-043004, origin: cypress}
   - {id: qtp-113005, origin: cypress}
-  - {id: cyx-pdk-hv, origin: skywater}
-  - {id: cyx-pdk-metal-stack, origin: skywater}
-- id: s8-m1-036
+- id: s8-pdk-and-m1
   page: docs/history/s8-lineage.md
   anchor: S8's first metal adds up to 0.36 µm (our arithmetic)
   grade: corroborated
-  footnotes: [qtp-113005, pdk-metal-stack, qtp-063807, qtp-061806]
+  footnotes: [pdk-hv, pdk-metal-stack, qtp-113005, qtp-063807, qtp-061806]
   sources:
-  - {id: qtp-113005, origin: cypress}
+  - {id: cyx-pdk-hv, origin: skywater}
   - {id: cyx-pdk-metal-stack, origin: skywater}
+  - {id: qtp-113005, origin: cypress}
   - {id: qtp-063807, origin: cypress}
   - {id: qtp-061806, origin: cypress}
-- id: s8-name-conflict
+- id: s8-name-skywater
   page: docs/history/s8-lineage.md
-  anchor: SkyWater's statement and this reading
-  grade: conflict
-  hedge: SkyWater's statement and this reading disagree
-  footnotes: [pdk-previous, qtp-021507, ar-fy2006, ar-fy1995, ar-fy1998, ar-fy2002, pin-152804]
+  anchor: stood for the "8th generation"
+  grade: single-source
+  footnotes: [pdk-previous]
   sources:
   - {id: cyx-pdk-previous, origin: skywater}
-  - {id: qtp-021507, origin: cypress}
+- id: s8-name-one-sonos
+  page: docs/history/s8-lineage.md
+  anchor: One SONOS process before S8 in the reports.
+  grade: conflict
+  hedge: conflicts
+  footnotes: [ar-fy2002, ar-fy2006, psoc-history]
+  sources:
+  - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
+  - {id: cyx-infineon-psoc-history, origin: cypress}
+- id: s8-name-digit
+  page: docs/history/s8-lineage.md
+  anchor: The digit follows the process generation.
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy1995, ar-fy1998, ar-fy2002, pin-152804]
+  sources:
   - {id: cyx-ar-fy1995-ram3, origin: cypress}
   - {id: cyx-ar-fy1998-ram5, origin: cypress}
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}

@@ -55,7 +55,7 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-s8-lineage`, {r
 
 (hsrc-ar-fy2008)=
 **AR-FY2008** — Cypress Semiconductor Corp., *2008 Annual Report* with Form 10-K, fiscal year ended 2008-12-28: shareholder letter and Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf>
-Used on {ref}`history-fabs`, {ref}`history-index`.
+Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-s8-lineage`.
 
 (hsrc-ar-fy2009)=
 **AR-FY2009** — Cypress Semiconductor Corp., *2009 Annual Report* with Form 10-K, fiscal year ended 2010-01-03: shareholder letter. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2009.pdf>

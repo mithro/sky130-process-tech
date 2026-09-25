@@ -1,84 +1,94 @@
 (history-s8-lineage)=
 # From the earlier processes to S8 and SKY130
 
-SKY130 is SkyWater's name for the process Cypress called S8 (see {ref}`overview-index`). This page
-sets out what S8 inherited from the Cypress processes before it, and what the sources do and do not
-say about that inheritance. The processes themselves are on {ref}`history-technologies` and
+SKY130 is SkyWater's name for the process Cypress called S8 (see {ref}`overview-index`). This page sets out
+what S8 has in common with the Cypress processes before it, and what the sources do and do not say about
+where it came from. The processes themselves are on {ref}`history-technologies` and
 {ref}`history-sonos-s4`.
 
 ## What S8 was
 
-* **A 0.13 µm SONOS process.** Electronics Weekly reported the first products "manufactured on
-  Cypress's S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile memory
-  technology" in October 2007: 4 Mbit nvSRAMs.[^ew-2007-s8] EE Times called it "0.13-micron S8
-  embedded-flash technology" the same year.[^eet-2007-fablite]
-* **Qualified at Fab 4 in 2008.** Cypress's report history dates "To qualify S8 SONOS technology and
-  4M nvSRAM devices" to November 2008, at "Cypress Minnesota CMI (Fab4)" (single source).[^qtp-113005]
+* **A 0.13 µm SONOS process.** Cypress's October 2007 announcement of its first S8 products, 4 Mbit nvSRAMs,
+  calls S8 "Cypress's S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded nonvolatile
+  memory technology". EE Times called it "0.13-micron S8 embedded-flash technology" the same
+  year.[^ew-2007-s8][^eet-2007-fablite]
+* **Qualified at Fab 4 in 2008.** Cypress's report history dates "To qualify S8 SONOS technology and 4M
+  nvSRAM devices" to November 2008, at "Cypress Minnesota CMI (Fab4)" (single source).[^qtp-113005]
 * **The PSoC process.** Cypress's 2010 report calls S8 "our 0.13-micron, nonvolatile PSoC wafer
-  fabrication process".[^ar-fy2010] Infineon's PSoC history says PSoC 3 was developed "using a 130 nm
-  5 V process".[^psoc-history]
+  fabrication process"; Infineon's history of PSoC says PSoC 3 was developed "using a 130 nm 5 V process"
+  (Cypress's reports).[^ar-fy2010][^psoc-history]
+* **nvSRAM.** The first S8 products were nvSRAMs, and in 2008 Cypress bought Simtek, whose nvSRAM line it
+  took over (Cypress's reports).[^ew-2007-s8][^ar-fy2008]
 
-## Three lines of descent
+## What S8 has in common with earlier processes
 
-The sources point to three earlier processes that S8 draws on.
+No source found says from which process S8 was derived. We see three things S8 shares with earlier
+Cypress processes (our reading):
 
-**1. The 0.13 µm generation at Fab 4.** A 2015 Cypress notice lists "130nm C8/R8/S8/L8" together, the
-0.13 µm families at Fab 4.[^pin-152804] The C8 logic process was qualified in January 2005, and L8C-3R
-is a "Technology Derivative of the C8 Technology" (Cypress's reports).[^qtp-043004][^qtp-053301] S8's
-first metal layer is the same as C8's, film for film: "100A Ti / 3200A Al -0.5%Cu / 300A TiW" against
-"100A Ti/3,200A Al 0.5% Cu /300A TiW" (Cypress's reports).[^qtp-113005][^qtp-043004] No source found
-says in words that S8 was derived from C8.
+**1. The 0.13 µm generation at Fab 4.** A 2015 Cypress notice lists "130nm C8/R8/S8/L8" together. The C8
+logic process was qualified in January 2005, and L8C-3R is a "Technology Derivative of the C8 Technology".
+S8's first metal layer is C8's, film for film: "100A Ti / 3200A Al -0.5%Cu / 300A TiW" against "100A
+Ti/3,200A Al 0.5% Cu /300A TiW" (Cypress's reports).[^pin-152804][^qtp-043004][^qtp-053301][^qtp-113005]
 
-**2. The SONOS module from S4AD-5.** Cypress's earlier SONOS process, S4AD-5, had been in production
-since 2001.[^eflash-brief][^qtp-021507] S8 carries SONOS to 0.13 µm. Cypress wrote in 2008 that its
-SONOS module can be added "into a logic process flow or an SRAM process flow with the addition of three
-to five masking layers" (single source).[^chipest-2008]
+**2. SONOS.** Cypress's earlier SONOS process, S4AD-5, had been in production since 2001. Cypress wrote in
+2008 that its SONOS module can be added "into a logic process flow or an SRAM process flow with the
+addition of three to five masking layers" (Cypress's reports).[^eflash-brief][^qtp-021507][^chipest-2008]
 
-**3. The 110 Å gate oxide.** S8 has two gate oxides, 110 Å and 32 Å.[^qtp-113005] The 110 Å oxide is the
-gate oxide of S4AD-5 and of the 0.42 µm R42HD and RAM42 processes of 1997 onwards (Cypress's
-reports).[^qtp-021507][^qtp-102101][^qtp-030206] C8 instead pairs 32 Å with 55 Å.[^qtp-043004] The SKY130
-PDK says its high-voltage devices "use 110A gate oxide thickness".[^pdk-hv]
+**3. The 110 Å gate oxide.** S8 has two gate oxides, 110 Å and 32 Å, and Cypress's 2008 article describes
+a "dual gate oxide process" for multiple supply voltages.[^qtp-113005][^chipest-2008] The 110 Å oxide is
+the gate oxide of S4AD-5 and of the 5 V versions of the 0.42 µm processes from 1997 onwards. C8 instead
+pairs 32 Å with 55 Å (Cypress's reports).[^qtp-021507][^qtp-102101][^qtp-030206][^qtp-043004]
+
+The SKY130 PDK, from SkyWater, says its high-voltage devices "use 110A gate oxide
+thickness".[^pdk-hv]
+
+**Grace.** Cypress's 2010 report says it moved its "0.35-micron SONOS, 0.13-micron SRAM and LOGIC
+processes" to Grace in 2006 and 2007 (single source).[^ar-fy2010] It does not name S8 among them.
 
 ## Side by side
 
-| | S4AD-5 (2001) | C8Q-3R (2005) | S8TNV-5R (2008) | SKY130 PDK |
-|---|---|---|---|---|
-| Design rule | 0.35 µm (one report 0.5 µm) | 0.13 µm | 0.13 µm | 130 nm |
-| Non-volatile memory | SONOS | none | SONOS | SONOS |
-| Metal layers | 2 | 4 | 3 | 5 |
-| Gate oxides | 110 Å | 32 Å and 55 Å | 110 Å and 32 Å | 110 Å for 5 V devices |
-| Metal 1 | 500 Å Ti / 6000 Å Al–Cu / 1200 Å TiW | 100 Å Ti / 3200 Å Al–Cu / 300 Å TiW | 100 Å Ti / 3200 Å Al–Cu / 300 Å TiW | 0.36 µm thick |
-| Passivation | 3000 Å TEOS / 6000 Å nitride | 1000 Å TEOS / 9000 Å nitride | 7000 ± 2000 Å nitride | — |
+| | S4AD-5 (2001) | C8Q-3R (2005) | S8TNV-5R (2008) |
+|---|---|---|---|
+| Design rule | 0.35 µm | 0.13 µm | 0.13 µm |
+| Memory | SONOS | none | SONOS |
+| Metal layers | 2 | 4 | 3 |
+| Gate oxides | 110 Å | 32 Å, 55 Å | 110 Å, 32 Å |
+| Metal 1 | 500 Å Ti / 6000 Å Al–Cu / 1200 Å TiW | 100 Å Ti / 3200 Å Al–Cu / 300 Å TiW | 100 Å Ti / 3200 Å Al–Cu / 300 Å TiW |
+| Passivation | 3000 Å TEOS / 6000 Å nitride | 1000 Å TEOS / 9000 Å nitride | 7000 ± 2000 Å nitride |
 
-The values are as the reports and the PDK print them.[^qtp-021507][^qtp-043004][^qtp-113005][^pdk-hv][^pdk-metal-stack]
-The S8 column is the one S8 report found in public; other S8 variants have more metal layers (see the
-SKY130 overview). S8's first metal adds up to 0.36 µm (our arithmetic), the thickness the PDK draws for
-`met1`.[^qtp-113005][^pdk-metal-stack] The same 0.36 µm recipe is used in Cypress's 90 nm reports of
-2006 and 2007.[^qtp-063807][^qtp-061806]
+Each column copies one Cypress report (Cypress's reports).[^qtp-021507][^qtp-043004][^qtp-113005] One
+S4AD-5 report prints 0.5 µm. The S8 column is the one S8 report found in public; other S8 variants
+cited on the SKY130 overview have five metal layers.
+
+For SKY130, the PDK gives a 110 Å oxide for its 5 V devices and draws `met1` 0.36 µm thick.[^pdk-hv][^pdk-metal-stack]
+S8's first metal adds up to 0.36 µm (our arithmetic). The same recipe is used in two of Cypress's 90 nm
+processes of 2006 and 2007 (Cypress's reports).[^qtp-113005][^qtp-063807][^qtp-061806]
 
 ## What does the "8" mean?
 
 The SKY130 PDK says `s8` "stood for the "8th generation" of the SONOS technology developed originally by
-Cypress".[^pdk-previous] The Cypress sources point elsewhere:
+Cypress" (single source).[^pdk-previous] The Cypress sources point elsewhere:
 
-* **One SONOS process before S8.** The only earlier SONOS process in the sources is S4AD-5 at 0.35 µm;
-  Cypress's own lists of processes from 2002 to 2006 name just one SONOS process.[^qtp-021507][^ar-fy2006]
+* **One SONOS process before S8 in the reports.** The only earlier SONOS process in the reports is S4AD-5.
+  Cypress's own lists of processes from 2002 to 2006 name one SONOS process (Cypress's
+  reports).[^ar-fy2002][^ar-fy2006] Infineon's history, though, claims SONOS CPLDs in the late 1980s,
+  which conflicts with the reports and would allow earlier SONOS generations (see {ref}`history-sonos-s4`).[^psoc-history]
 * **The digit follows the process generation.** Cypress named its SRAM processes RAM3 (0.5 µm), RAM5
-  (0.25 µm), RAM 7 and RAM 8 (0.13 µm).[^ar-fy1995][^ar-fy1998][^ar-fy2002] The 0.13 µm families are C8,
-  R8, S8 and L8, and the 90 nm ones C9, R9 and R95.[^pin-152804] S4 was built on the 0.35 µm R42D
-  process.[^qtp-021507]
+  (0.25 µm), RAM 7 and RAM 8 (0.13 µm), and a 2015 notice lists the 0.13 µm families as C8, R8, S8 and L8
+  (Cypress's reports).[^ar-fy1995][^ar-fy1998][^ar-fy2002][^pin-152804]
 
-We read the "8" as Cypress's eighth process generation, the 0.13 µm one, and the "S" as SONOS, just as
-S4 was the SONOS process of the fourth generation (our reading). SkyWater's statement and this reading
-disagree; no Cypress source found explains the name directly. The naming is set out on
-{ref}`history-naming`.
+We read the "8" as the process generation Cypress numbered 8, the 0.13 µm one, and the "S" as SONOS, as S4
+was the SONOS process of generation 4 (our reading). The numbering is Cypress's, not a count: no
+generation 6 was found, and generation 2 covers 0.8 µm and 0.65 µm. SkyWater's "8th generation of the
+SONOS technology" and this reading agree that S8 is a SONOS process; they differ on what the 8 counts, and
+no Cypress source found says. The naming is set out on {ref}`history-naming`.
 
 ## Open questions
 
-* **C8 and S8.** Was S8 built on C8, on R8, or on both?
-* **The medium oxide.** When and why did S8 replace C8's 55 Å oxide with the 110 Å oxide of S4AD-5?
-* **SONOS generations.** Were there SONOS processes between S4AD-5 and S8 that no public source
-  records?
+* **C8 and S8.** Was S8 built on C8, on R8, or on neither?
+* **The oxides.** When did the 110 Å oxide join the 32 Å one in a 0.13 µm process?
+* **SONOS generations.** Were there SONOS processes before S4AD-5, or between S4AD-5 and S8, that the
+  reports do not record?
 
 ## References
 
@@ -166,3 +176,6 @@ disagree; no Cypress source found explains the name directly. The naming is set 
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45>
 [^qtp-061806]: Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>
+[^ar-fy2008]: Cypress Semiconductor Corp., *2008 Annual Report* with Form 10-K, fiscal year ended
+    2008-12-28: shareholder letter and Item 1, Manufacturing.
+    <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf>

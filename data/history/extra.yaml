@@ -826,3 +826,42 @@ records:
   claims:
   - {subject: 0.25 µm SRAM technology, attribute: isolation, value: LOCOS, date: 1999}
   notes: Authors from Cypress Semiconductor's research and development department, San Jose; abstract only.
+- id: cyx-ar-fy2010-grace-013
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2010 Annual Report, including the Form 10-K for the fiscal year ended 2011-01-02
+    date: 2011-02-25
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy2010.txt
+  quotes:
+  - text: >-
+      During fiscal 2006 and 2007, we completed the transfer of our 0.35-micron SONOS, 0.13-micron SRAM
+      and LOGIC processes and began purchasing products from Grace that were manufactured using these
+      processes.
+    location: Form 10-K, Item 1, Manufacturing
+  claims:
+  - {subject: Grace, attribute: processes transferred 2006-2007, value: 0.35 µm SONOS, 0.13 µm SRAM and logic, date: 2007}
+  notes: null
+- id: cyx-chipestimate-dual-oxide
+  origin: cypress
+  source:
+    publisher: ChipEstimate.com (article by Cypress Semiconductor)
+    title: Cypress SONOS - A Scalable Embedded Flash Technology
+    date: 2008-10-21
+    form: technical article
+  url: https://www.chipestimate.com/Cypress-SONOS-A-Scalable-Embedded-Flash-Technology/Cypress-Semiconductor/Technical-Article/2008/10/21
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/chipestimate-sonos-scalable.html.txt
+  quotes:
+  - text: >-
+      The integration scheme includes a dual gate oxide process, which enables the chip to be compatible
+      with multiple supply voltages.
+    location: section "SONOS Integration"
+  claims:
+  - {subject: SONOS integration, attribute: gate oxides, value: dual gate oxide, date: 2008}
+  notes: Same article as cyx-chipestimate-sonos-2008; a second passage.
