@@ -1160,30 +1160,57 @@ that block scripts.
 **Applies when** a paragraph, bullet or table cell contains six or more `{ref}` links to step pages,
 **or** a step link's text is a three-digit number instead of the step code.
 
-**Do.**
-1. **Run of 25 links or fewer:** add a table `Step | Code | Name | Role`. `Name` comes from the step
-   page's title; `Role` only from the page's own markers and grouped bullets ("main", "alternative",
-   the `*also …:*` wording). Right-align `Step`.
-2. **Run of more than 25 links:** no table. Keep the page's grouped bullets first and put the run in a
-   `{dropdown}` titled "All N steps (links)".
-3. **The run itself stays byte-identical**, wherever it ends up.
-4. **Placement is a checker contract:**
-   * *machine pages* — the run must remain the **first block under `### SKY130 steps assigned to this
-     class` that contains a step link and does not start with `* `**. So: dropdown (with the run inside
-     it) first, new table **after** it. Verified: table after the run passes; the same table placed
-     before the run fails with "steps: page only [], index only [...]".
-   * *material pages* — the run must stay in the paragraph directly after a line reading `Steps:`.
-     Verified: moving the `Steps:` line and the run together inside a `{dropdown}` passes.
-   * *mask pages* — six steps or fewer, one bullet each; nothing to do.
-5. **Link text**: make it the step code everywhere (`{ref}`PSG <step-089>``, not `{ref}`089
-   <step-089>``). In a table with a `Step` number column, show the number in that column and the code in
-   the link. Index cells need only *start* with a link, so the checkers still pass.
+**Do.** Run `uv run tools/gen_step_tables.py` (or `--check` to verify without writing). **The
+generator owns the whole presentation; nobody hand-builds a table or a dropdown here any more** — an
+executor's job is only to run it after any edit that changes a run's step list, its markers or its
+"*also …:*" wording, and to never hand-edit the generated block. What it emits, inside one
+`<!-- step-tables:begin --> … <!-- step-tables:end -->` block, depends only on the run's own link
+count:
 
-**Example** — `docs/materials/process-gases.md:307-309`: a `Steps:` line followed by 142 links. After:
-the grouped bullets stay, then
+1. **Run of 25 links or fewer.** The run **stays in the open, exactly where it is, byte-identical** —
+   the generator does not touch it at all. Directly after it, the generated block is a table
+   `Step | Code | Name` (`Step` right-aligned; `Code`/`Name` from `tools/steps.csv`), plus a `Role on
+   this page` column *only when the run's roles are not all the same* — a column that reads "main" on
+   every row tells the reader nothing, and material-page runs, which carry no markers at all, never get
+   one. `Role`, when shown, comes only from the run's own markers ("main", "alternative", the
+   `*also …:*` wording, asterisks and the trailing colon stripped) — never invented.
+2. **Run of more than 25 links.** The generator **wraps the run itself** — on a material page, the
+   `Steps:` line and the run together — in a collapsed `{dropdown}` titled "All N steps as one line of
+   links (checked against the index)". That is the *entire* generated block: no separate table, no
+   pointer sentence, no link repeated outside the dropdown. (An earlier design pointed to the page's
+   grouped bullets from an otherwise-empty dropdown instead of moving the run; report-B review finding
+   H1 rejected that as a control that promises links and delivers none, and this rule replaced it.)
+3. **Mask pages** — six steps or fewer, one bullet each; the generator does not touch them.
+
+**Placement is a checker contract, and the generator is verified against it, both with a wrapped and
+an unwrapped run:**
+* *machine pages* — the run (wrapped or not) must remain the **first block under `### SKY130 steps
+  assigned to this class` that contains a step link and does not start with `* `**. A dropdown's
+  opening fence and title line carry no step link, so they are skipped the same way a bullet list is;
+  the run, now the fence's body, is still that first block. Verified: the table placed after an
+  unwrapped run passes; the same table placed before the run fails with "steps: page only [], index
+  only [...]"; a run wrapped in the dropdown, alone, also passes.
+* *material pages* — the run (wrapped or not) must stay in the paragraph directly after a line reading
+  `Steps:`. Verified: wrapping the `Steps:` line and the run together inside the dropdown passes.
+
+**Example (run of 40 links, machine page)** — `docs/machines/wet-bench.md`:
 
 ```
-:::{dropdown} All 142 steps (links)
+Steps whose "Machines typically used" section names a wet bench …:
+
+:::{dropdown} All 40 steps as one line of links (checked against the index)
+
+{ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, …
+:::
+
+How the step pages grade the SkyWater tools for each step …
+```
+
+**Example (run of 148 links, material page)** — `docs/materials/process-gases.md`: the `Steps:` line
+goes inside the dropdown with the run:
+
+```
+:::{dropdown} All 148 steps as one line of links (checked against the index)
 
 Steps:
 
@@ -1191,22 +1218,16 @@ Steps:
 :::
 ```
 
-`docs/machines/wet-bench.md:213` is the 40-link machine case (4 main + 36 "*also for a clean or
-strip:*").
-
 **Do not touch.** The order of the links, the `*alternative:*` and `*also …:*` markers and their
-wording, the `N steps; see …` quick-facts row.
+wording, the `N steps; see …` quick-facts row, and the generated block itself — re-run the generator
+instead of hand-editing it; it is idempotent and never nests one dropdown inside another.
 
 **Find.** `measure_b.py --list` keys `steplink-run-paragraph` (37), `bullet>=8steplinks` (41),
 `tablecell>=8steplinks` (46); `grep -rEn '\{ref\}`[0-9]{3} <step-' docs/` for the bare-number links
 (1,975 in 11 files).
 
-**Kind.** the link text is scripted; the table (or, above 25 links, the dropdown) is **generated,
-never hand-written** — `tools/gen_step_tables.py` (unblocked, `topic/rd-checkers`), fed by
-`tools/steps.csv` and the run itself, wraps the generated block in
-`<!-- step-tables:begin --> … <!-- step-tables:end -->` directly after the run on all 42 machine and
-material pages. Run `uv run tools/gen_step_tables.py` (or `--check`) after any edit that changes a
-run's step list, its markers or its "*also …:*" wording; never edit the generated block by hand.
+**Kind.** the link text is scripted; the table or dropdown is **generated, never hand-written** —
+`tools/gen_step_tables.py` (unblocked, `topic/rd-checkers`).
 
 #### R-INDEX — index pages put methodology before navigation
 *(reports B B2, B3 and C C6/C7)*
@@ -2150,7 +2171,7 @@ holds the status.
 | R-INDEX, materials main table | **unblocked** (`topic/rd-checkers`) | done: `check_materials.Index` reads the Steps cell from a second `Material \| Steps` table, keyed the same way as the main table, when the main table has no Steps column; the main-table key no longer has to be the literal first cell. Restructuring `docs/materials/index.md` itself is still **W3** |
 | R-INDEX, `docs/steps/index.md` | **W0d** | `gen_steps.py`: sync with the committed intro **first** (it is stale), then module grouping, short sidebar titles, `Machine class` and `Mask` columns, `--check` |
 | R-GENBLOCK | **W0d** | `gen_index_links.py` heading and link text, `--selftest` update, one regeneration commit |
-| R-STEPRUN, generated tables | **unblocked** (`topic/rd-checkers`) | done: `tools/gen_step_tables.py` generates the table (runs of <= 25 links) or dropdown (more) on all 42 machine and material pages; wired into `.readthedocs.yaml` and `agent-briefs.md` |
+| R-STEPRUN, generated tables | **unblocked** (`topic/rd-checkers`) | done: `tools/gen_step_tables.py` owns the whole presentation — a run of <= 25 links stays in the open and gets a table after it; a run of > 25 links is wrapped, by the generator, in a collapsed dropdown (report-B review H1: no separate empty-shell dropdown) — on all 42 machine and material pages; wired into `.readthedocs.yaml` and `agent-briefs.md` |
 | R-TERM, Phase cell | **W0d** | the stub template in `gen_steps.py` must change in the same commit |
 | R-FIGURE | **W1a** | `tools/gen_figures.py --check`, `data/figures/`, `docs/_static/figures/`, `figure-theme.js`, tokens, the "Figure conventions" page, the `check_inforce.py` hook for figure specs |
 | R-DROPDOWN, shorter titles | **owner** | the in-force title wording is the owner's; A F12 is a proposal |

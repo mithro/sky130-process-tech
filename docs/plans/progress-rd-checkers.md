@@ -255,6 +255,196 @@ harmless).
 None — all five commits of the task are done. Final full check suite and `-W` build re-run after
 commit 5 below.
 
+## Review response (independent review, verdict "approve with fixes": 1 High, 4 Medium, 7 Low)
+
+Coordinator ruling on H1: the generator owns the whole presentation. Implemented exactly as ruled;
+fixed all four Mediums; addressed every Low (one recorded as not applicable). Re-ran the full check
+suite, all four `--selftest`s, the `-W` build, and regenerated all 42 pages after every change.
+
+### H1 — the >25-link dropdown held no links; collided with R-STEPRUN
+
+Per the coordinator's ruling, `gen_step_tables.py` now owns the whole presentation:
+
+* **<= 25 links:** the run stays in the open, byte-identical, untouched — exactly as before. The
+  generated block (a table) still goes directly after it.
+* **> 25 links:** the generator now **wraps the run itself** — on a material page, the `Steps:` line
+  and the run together — in a collapsed `{dropdown}` titled "All N steps as one line of links (checked
+  against the index)". This is the *entire* generated block: no separate table, no pointer sentence, no
+  link repeated outside the dropdown.
+
+Implementation: `strip_wrap()` (new) undoes a previous wrap by matching the exact generated pattern
+(begin marker, fence-open + title, blank line, the wrapped span captured verbatim, fence-close, end
+marker) and replacing the whole thing with just the captured span — restoring the page's un-wrapped
+form before the run is re-located. This runs *before* `strip_existing()` (the old trailing-block
+stripper), which would otherwise delete the run along with the markers if it ever saw a wrap. `apply_wrap()`
+splices the new wrap in by replacing `text[wrap_start:run_end]` with the rendered wrap — no padding
+needed, since that span already sits between the same blank lines it always did.
+
+**Verified with the real checkers** (not just this script's own copy of the selection logic): after
+regenerating all 42 pages, `check_machines.py` and `check_materials.py` both report 0 problems —
+including on the 8 machine and 10 material pages whose run is now wrapped in a dropdown. This confirms
+the coordinator's/review's claim that a dropdown's opening fence+title line carries no step link, so it
+is skipped by the "first non-bullet block with a step link" rule the same way a bullet list is, and the
+run — now the fence's body — is still that first block; on material pages, wrapping `Steps:` and the run
+together keeps the run "the paragraph directly after a line reading `Steps:`".
+
+**Idempotence and no-nesting**, both unit-tested and checked end to end: `gen_step_tables.py --check`
+reports 0 pages differing immediately after a plain run; the selftest re-runs `process_text` on its own
+wrapped/tabled output for three cases (table, machine wrap, material wrap) and asserts the text is
+unchanged and the dropdown count does not change (case 5); a hand-edited wrap title is corrected back to
+the canonical form rather than accepted (case 7).
+
+Guide: R-STEPRUN's **Do** section rewritten so it describes what the generator does (run it; never
+hand-build a table or dropdown) rather than instructing a human to build one; the placement rules are
+kept (now phrased "verified with a wrapped and an unwrapped run"); the worked examples now show the
+real `wet-bench.md`/`process-gases.md` output. §9's `R-STEPRUN, generated tables` row updated to
+describe the new design and cite this review finding.
+
+### M1 — the second (Steps) table had no uniqueness/completeness check
+
+`check_materials.read_steps_table()` now reports: a row with fewer than two cells; a row with no key at
+all; a key used twice; and, after both tables are read, any steps-table key not present in the main
+table ("steps table names key 'x', which is not in the main table"). Added selftest fixtures
+`EXTRA_KEY_INDEX`, `DUPLICATE_KEY_INDEX`, `NO_KEY_ROW_INDEX`, one assertion each.
+
+### M2 — the Role column carried no information when every role was "main"
+
+`gen_step_tables.render_table()` drops the `Role on this page` column entirely (header and every row)
+when the run's roles are not all different (`len({role for role, _ in entries}) > 1`). Material-page
+tables never show it, since material runs have no markers so every role is always "main" — matching B1's
+"Role only from the page's markers", which invents nothing there. Column widths adjusted:
+`:widths: 10 16 74` (3 columns) or `10 16 58 16` (4). Verified on the real docs: `cmp-consumables.md` and
+`sputter-targets.md` (the two material table pages) both drop the column; 12 of 22 machine table pages
+also drop it (uniform "main"); `duv-krf-stepper.md` (mixed main/alternative) keeps it.
+
+### M3 — the materials `Index` rejected a main table split into groups under H3s
+
+New `_table_blocks_by_header()`: every table block under `## Materials index` whose header equals the
+first block's is read as more of the same table, not only the first block (report-B B2 table rule 7,
+"> 40 rows: split by group"); every other block is read the same way as the second "Material | Steps"
+table (also possibly split into groups), sharing one header; a block matching neither is reported.
+Selftest fixtures `GROUPED_MAIN_INDEX` (old, key-first shape, two H3 groups) and `GROUPED_NEW_INDEX`
+(no-Steps-column shape, both tables split into two groups each) both parse to the expected two-key
+`rows`/`owner` mapping with zero problems. The real, un-grouped `docs/materials/index.md` still passes
+unchanged (0 problems).
+
+### M4 — `check_masks` `OPEN_H3_H2` made the five B8 headings inert
+
+`check_h3()`'s `OPEN_H3_H2` branch now also: rejects a synonym B8 says to merge
+(`FORBIDDEN_H3_SYNONYMS = {"Resist": "Resist and tone", "Overlay": "Overlay and alignment", "Alignment":
+"Overlay and alignment"}`) with the canonical name named in the message; rejects a heading that is one
+of *another* section's mandatory H3s (e.g. `### Deep dive` copied into the wrong place) unless it is
+itself one of this H2's own named headings; and requires the named five, when present, to appear in
+canonical order (this changed one existing selftest case — "a subset, reordered, passes" — to now
+expect a problem; renamed and kept as the in-canonical-order positive case instead). Four new selftest
+cases (three synonyms plus the mandatory-heading-reuse case).
+
+### Lows
+
+* **L1 (garbled reviewer-brief text).** Fixed: `docs/plans/agent-briefs.md`'s reviewer-brief checklist
+  had a duplicated "up to date, not stale or hand-edited)," fragment (introduced when the earlier
+  commit inserted the `gen_step_tables.py --check` mention between two pre-existing fragments).
+  Rewritten to one clean sentence per the review's suggested text.
+* **L2 (a duplicate machine label silently let the last line win).** Fixed: `index_rows_from_lines()`
+  now returns `(rows, duplicates)`; `main()` reports every duplicated label as a problem. The returned
+  `rows` mapping still carries the last line's value (so a caller has *something* to compare against),
+  but the page is now flagged. New selftest cases for both the old and new table shapes, plus a
+  negative case (a single matching line is not a false-positive duplicate).
+* **L3 (silent `?` / silent empty block on failure).** Fixed: `render_table()` raises `ValueError` if a
+  step number is not in `tools/steps.csv` (was: silently emitted `"?"`); `process_text()` raises
+  `ValueError` if the located run contains no entries (was: `render_block` returned `""`, and the
+  generator would then quietly emit no block at all rather than fail loudly). Both are exercised by
+  selftest case 8.
+* **L4 (docstring overclaimed "reuses" the checkers' code).** Reworded: the module docstring's "Known
+  scope" paragraph now says plainly that `locate_machine_run`/`locate_material_run` are "two
+  implementations of the same rule, not one shared function", verified to agree with the real checkers
+  on every page as of this commit, rather than claiming they "can never disagree".
+* **L5 (caption repeats the H3; header cells render centred).** Both fixed. Caption is now
+  `"The N step(s) above: number, code and name"` (dynamic, no H3 text repeated, no page-type
+  branching needed since the table only exists for the <= 25-link, unwrapped case now). Header
+  centring: the separator row's alignment markers are now explicit (`:---` for Code/Name/Role, `---:`
+  for Step) instead of bare `---`; confirmed in the built HTML that every `<th>` now carries a
+  `text-left`/`text-right` class instead of falling back to the browser's centred default for a `<th>`
+  with no alignment class (this is a real, previously-unnoticed rendering quirk of *every* unaligned
+  column in *every* pipe table sitewide, not unique to this generator; fixing it site-wide would be a
+  CSS/theme change, out of scope here — this fix only covers this generator's own table).
+* **L6 (selftest gaps).** Fixed: `gen_step_tables.py`'s cases 6/7 (previously near-duplicates) are now
+  a genuine determinism check (two independent runs on the same fresh input) separate from the
+  idempotence check (case 5, re-running on already-generated output); a new case 9 exercises `--check`
+  semantics end to end (via `generate()`, with `MACHINES`/`MATERIALS` monkey-patched to a temporary
+  directory): 0 pages differ once written, and a source change is detected again. `check_machines.py`
+  gained an end-to-end `check()` test (case 7): a matching page/index pair reports nothing, and a
+  "Steps not last" malformed index row (the real Steps content in an earlier cell, so the always-last
+  Steps cell is something else) is caught as a mismatch. `check_materials.py` gained the M1/M3 fixture
+  cases above (were the "gap" the review named).
+* **L7 (stale W0e mentions elsewhere in the guide).** Not further addressed beyond what commit 5
+  already recorded as a deliberate scope limit (progress file, "Commit 5" section above) — the review
+  itself says this is "acceptable as flagged" and only asks that R-STEPRUN rules 2 and 4 be reconciled
+  with what the generator now emits once H1 is decided, which is done above (R-STEPRUN's **Do** section
+  and §9 row).
+
+### R4 — `check_preserved.py` quote-pairing finding
+
+**Not touched** (explicit coordinator instruction: `tools/check_preserved.py` belongs to the pilot
+branch, not this one). The review corrected the mechanism this branch's progress file had originally
+described (not "zero characters between the marks" — a `)` can sit between them, as in `(8")"`) and
+found a third affected page (`docs/references/public-sources.md:11915`). Re-verified after every
+regeneration in this branch that the same two pages (`starting-material.md`,
+`single-wafer-spin-processor.md`) are still the only ones with an undeclared `check_preserved.py`
+difference, and that it is still the same pre-existing, unrelated artifact (confirmed again: every
+changed file in this branch is a pure insertion, `git diff --numstat main -- docs/machines
+docs/materials` shows 0 deletions in all 42 files).
+
+#### For the pilot branch
+
+The review's patch (tested by the reviewer in a scratch copy of `tools/check_preserved.py`), copied
+verbatim so whoever owns that file does not have to re-derive it:
+
+> **Patch for the pilot branch** (tested in a scratch copy of `tools/check_preserved.py`):
+>
+> ```python
+> # An inch mark: a straight double quote right after a digit, immediately
+> # followed (optionally after a closing bracket) by another straight quote,
+> # as in 8"" or (8")". The digit must follow "(" or "<non-letter><space>",
+> # so a nested quotation ending in a number ("Fab 4")" is left alone.
+> INCH_RE = re.compile(r'(?:(?<=\(\d)|(?<=[^A-Za-z\s] \d))"(?=[)\]]?")')
+>
+>
+> def extract_quotes(text: str) -> Counter:
+>     out = []
+>     text = INCH_RE.sub("″", text)   # ″, so QUOTE_RE never pairs it
+>     for m in QUOTE_RE.finditer(text):
+>         ...
+> ```
+>
+> **Results of the patch:**
+>
+> - `check_preserved.py --allow-added refs,numbers,number_order --allow-dropdown-edits docs/machines/*.md
+>   docs/materials/*.md` now reports "44 page(s) checked against main, **0** with undeclared
+>   differences". Before the patch it reported 2.
+> - `--selftest` still passes.
+> - Across every `docs/**/*.md` outside `docs/plans`, the patch changes quote extraction on exactly
+>   three pages: `public-sources.md`, `starting-material.md` and `single-wafer-spin-processor.md`. On
+>   all three the real quotations are recovered, e.g. "SEZ223, Davinci, HF, DSP+HF, titration
+>   controlled" and "Laser marking system, 8″".
+> - A first, looser version (`(?<=\d)"(?=[)\]]?")`) also rewrote the nested `("Fab 4")"` in
+>   `filings/index.md` and `public-sources.md:947`. The lookbehind above avoids that.
+>
+> **Selftest cases to add:**
+>
+> - `'"a, 8"" b "c"'` → {`a, 8″`, `c`};
+> - `'"(8")" x "y"'` → {`(8″)`, `y`};
+> - `'("Fab 4")"'` is unchanged by `INCH_RE`.
+
+### Full check suite after the review fixes
+
+`check_steps/refs/machines/materials/masks/papers/patents/filings/inforce.py`, `gen_papers/patents/
+filings/index_links/step_tables.py --check`, `check_machines/materials/masks/gen_step_tables.py
+--selftest`, and `sphinx-build -W -q -b html docs tmp/_build/html`: all 0 problems / exit 0. Rendered
+`docs/machines/wet-bench.md` and `docs/materials/process-gases.md` at desktop and 400 px with
+`tools/shoot.py` and read the tiles: the collapsed dropdown sits exactly where the run used to be, its
+title wraps cleanly at 400 px, nothing looks wrong.
+
 ## Decisions and things to flag for the coordinator
 
 * The materials-index two-table/reader-name-first design (commit 3) is
