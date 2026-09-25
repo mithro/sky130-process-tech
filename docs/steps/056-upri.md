@@ -124,12 +124,13 @@ film is characterised with:[^raw-data-testtile-pads]
 Measurements of 88 of those resistors are public: the SKY130 raw-data
 repository publishes their two-terminal current–voltage
 sweeps.[^raw-data-passives] The arithmetic used on
-{ref}`PRI <step-053>` — the difference between the median 20-square and
-4-square resistances at each drawn width taken as 16 squares of body,
-then fitted against width — gives a sheet resistance of about
+{ref}`PRI <step-053>` gives a sheet resistance of about
 1 940–1 970 Ω/sq, with an electrical width within about 0.05 µm of
 drawn (the fit depends on whether the 0.33 µm set is included) (our
-extraction from the published measurements).[^raw-data-passives]
+extraction from the published measurements).[^raw-data-passives] It is
+the difference between the median 20-square and
+4-square resistances at each drawn width taken as 16 squares of body,
+then fitted against width.
 
 The 20-square resistors 1.41 µm and wider read 39.1–40.2 kΩ (our
 extraction from the published measurements; the files record no
