@@ -12,9 +12,12 @@ Branch `topic/rd-figures-s3s4`. Task W1c of `docs/plans/readability-plan.md` for
 * [x] Token change: a new material `arc` (see "Tool and token changes"); every existing
   figure regenerated (CSS only), the legend and the conventions page regenerated.
 * [x] `series-sonos.yaml`, `series-gates.yaml`.
-* [ ] Figures pasted, in groups (035–038, 039–042, 043–047).
-* [ ] QA of every figure (harness, desktop and 400 px, light and dark) and three built pages.
-* [ ] Checkers, generator `--check`s, `check_preserved.py`, the `-W` build.
+* [x] Figures pasted, in groups (035–038, 039–042, 043–047).
+* [x] QA of every figure (harness, desktop and 400 px, light and dark) and three built pages
+  (035, 039, 044).
+* [x] Checkers: every `check_*.py`, every generator `--check` (`gen_figures.py --check`: 200
+  files, 0 problems), `gen_figures.py --selftest`, `palette` (0 confusable pairs),
+  `check_preserved.py` (block additions only) and `sphinx-build -W` pass.
 
 ## Tool and token changes
 
@@ -65,8 +68,51 @@ Branch `topic/rd-figures-s3s4`. Task W1c of `docs/plans/readability-plan.md` for
 
 ## Per-figure QA
 
-(filled in as the figures are pasted)
+Every figure: built lint-clean, rendered with `gen_figures.py harness`, shot with
+`tools/shoot.py` at the 736 px column and at 400 px, light and dark, and the PNGs looked at;
+`check_preserved.py --base 785e7e4b` (the branch point; `main` has since moved) shows only
+the block's own additions (its markers, numbers, quotes and hedges, and the "560" of its
+width), and `git diff` deletes no line. Built pages 035, 039 and 044 shot at 1280 px and
+400 px: each block sits after the lead (039's after the patent dropdown that follows its
+lead), and the caption reads in place.
+
+| Figure | What was checked | Compromise |
+|---|---|---|
+| `sonos-035-tunm` | before panel matches the wells end state (pad oxide, proud fill, P-well) on the new slice; ARC under all the resist and across the window bottom; window over the memory active area only; highlight on the resist and window | the substrate never shows (P-well over deep N-well fill the crop), so its label is hidden; the fill oxide is labelled in the upper panel only (its over-route label would cross the resist) |
+| `sonos-036-tunarce` | ARC gone from the window bottom only, kept under the resist; resist unchanged (its loss is not public); highlight on the window bottom | the highlight also traces the two resist walls of the window |
+| `sonos-037-ptsi` | beam lands in the window only; the band lies below the silicon surface, under the window only; ion label and resist label are the two labels above the drawing | band thickness (9 u) chosen so its leader runs inside it without running along an edge |
+| `sonos-038-depi` | second band at the surface, above the PTSI band, same window; the DEPI dot is staggered from the PTSI dot | — |
+| `sonos-039-tunme` | pad oxide gone in the window only, bare silicon there; resist and ARC gone; both bands unchanged; highlight on the window | the strip and the etch are one figure, as the page treats the strip as part of the step |
+| `sonos-040-ono` | tunnel oxide only in the window, flush with the pad oxide around it (both at the minimum thickness); nitride and top oxide continuous over actives and the proud fill; three films labelled, all at equal thickness | pad oxide and fill oxide labelled in the upper panel only (a pad-oxide leader inside a 5 u film under two more 5 u films cannot avoid running along an edge); the tunnel oxide's leader rises through the two films above it (over route) |
+| `sonos-041-onom` | resist island over the window with a margin on the left, running on to the right-hand edge; highlight on the island | tunnel oxide, pad oxide and fill oxide not labelled (every route for the tunnel oxide would rise through the resist island); caption says so |
+| `sonos-042-onome` | the stack and the oxide under it gone outside the island; the island keeps tunnel oxide, nitride and top oxide, with pad oxide under its left margin; resist gone; highlight on the bare silicon | pad oxide under the island margin not labelled (caption says so) |
+| `gates-043-gox100` | bare logic silicon before; thick oxide on both actives only, not on the fill; label carries the PDK's 110 Å with `pdk-hv` and "not public" for the part grown here | — |
+| `gates-044-lvom` | resist over the 5 V side, edge at mid-field; window over the 1.8 V active; highlight on the resist top | — |
+| `gates-045-nchi` | beam on the window (landing on the thick oxide and the right half of the fill); band at the surface of the 1.8 V active only, under the oxide | fill oxide labelled in the upper panel only (its leader would cut the beam) |
+| `gates-046-goxetch` | thick oxide gone from the 1.8 V active only, fill unchanged, resist gone, band unchanged; the thick oxide's leader in the after panel takes the over route above the fill | — |
+| `gates-047-lvgox` | thin oxide on the 1.8 V active only; thick oxide unchanged (increment not drawn); both labels carry the model `toxe` with their keys; notes reworded so that "1.8 V" does not break across lines | — |
 
 ## For the readability batch (noticed in the pages, not fixed)
 
-(filled in as found)
+Open-text passages that seem to carry content from a patent shown as in force (the checker
+passes them, because none is a listed number or phrase):
+
+* `docs/steps/039-tunme.md:129–130` — "far too fast to control for a … film": the film
+  thickness given there is the pad-oxide range that the same page keeps in its collapsed
+  notes (a patent shown as in force).
+* `docs/steps/042-onome.md:69` — "only tens of nanometres thick in the Cypress patent" is a
+  paraphrase of the same range, outside the dropdown that holds it.
+* `docs/steps/038-depi.md:159–160` — "of order 1 nm for a tunnel oxide of the thickness a
+  Cypress patent that may still be in force gives it" derives a number from the patent's
+  tunnel-oxide range in open text.
+* `docs/steps/040-ono.md:73–76` — the tunnel oxide is called thinner than the 1.8 V gate oxide
+  "on the published patent ranges"; a comparison drawn from those ranges.
+
+Inside a page:
+
+* `docs/steps/043-gox100.md:17` (and :228) state as fact that the logic silicon was
+  "cleared at ONOME", while `042-onome.md:141` and :303 say whether the last oxide goes at
+  ONOME or at the GOX100 pre-clean "is not stated publicly", and 043's own recipe step 1
+  treats the pre-clean as where the last oxide must be gone. The figures follow 042's
+  treatment of the pre-gate clean as part of ONOME and say so in the 042 caption.
+* No arithmetic problem found in the 13 pages.
