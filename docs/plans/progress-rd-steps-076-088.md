@@ -109,7 +109,7 @@ pages: 066, 068, 072. One commit per page.
   clause (SPNIT/label, oxide spacer/inference, Ogura/Tsang, Mizuno/PDK, hydrogen lead/authors,
   poly.1a/`LD`, ITRS values/MPU, now repeated); the list lead-in carrying "On this reading"; the
   category sentence split (the markers belong to the 0.38 µm clause); two tokenizer mismatches.
-* **Caps**: para > 100 5 → 0; item > 60 5 → 0; sentence > 45 11 → 1 (the 46-word "The film must
+* **Caps**: para > 100 6 → 0; item > 60 5 → 0; sentence > 45 11 → 1 (the 46-word "The film must
   coat …", above).
 
 ### 077 SPE — done
@@ -169,3 +169,70 @@ pages: 066, 068, 072. One commit per page.
   clause now carrying its repeated marker); the "(on our reading)" clause kept with the source/drain
   half; the Tool-exists/Runs-this-step split; OQ label lines.
 * **Caps**: para > 100 2 → 0; item > 60 3 → 0; sentence > 45 7 → 0. Lead 113 words (base 113).
+
+### 078 NPCM — done
+
+* **Lead.** First sentence (31 w) split at its colon: "… for the *nitride poly cut*. It is the
+  resist pattern that tells NPCME …" ("It is" added, step 7; "(on our reading)" stays in its
+  clause). Lead in two paragraphs, split before "The wafer arriving from SPE" (what the mask is /
+  why the cap must be opened). 100 words, first sentence 10.
+* **R-H3.** `### What the public record shows` after the figure caption, over the 185-word PDK
+  paragraph (mask table, layers, periphery and contact rules, rpm.5, minimum CD): all public record.
+* **R-TABLE.** The five `npc` rules ("minimum width 0.270 µm (npc.1), …") → `Rule | Constrains |
+  Value (µm)`, one row per rule in the base order; "a manual-merge instruction below minimum" has no
+  value, so its cell is `—`; `[^pdk-periph]`, which ended the enumerating sentence, sits on the
+  lead-in "… — and give:[^pdk-periph]" (R-TABLE step 3; the form of 068). The "Constrains" cells are
+  the base clauses without their values ("spacing with no overlap to a gate", "a maximum enclosure of
+  poly overlapping a slotted `licon` by `npcm`"; the joining "of" before each value dropped). The lead-in
+  sentence is the caption (R-CAPTION on step pages). Units in the header. LOST `number_order`
+  ('0.270', '1', '0.270', '2', '3', '0.090', '4', '0.095', '5') re-paired by hand: npc.1 0.270, npc.2
+  0.270, npc.3 —, npc.4 0.090, npc.5 0.095 — the base pairs.
+* **R-LIST.** The four contact rules carry quotations and verbs, so a table would have to reword
+  them: plain bullets instead, every word kept, `[^pdk-periph]` on the lead-in "The contact rules
+  complete the picture:" (R-LIST step 1). rpm.5 and the minimum-CD sentence stay as the closing
+  paragraph.
+* **R-CATEGORY.** Classification sentence (≈ 30 w) alone; one sentence remains → a plain second
+  paragraph (step 2), split at ", so the layer's overlay" into "So the layer's overlay … is its
+  critical parameter, not its CD." (a sentence, not a paragraph, may open "So").
+* **Why items.** "Poly contacts" (129 w): lead = the `licon1` sentence; continuation 1 = the
+  nitride/Cacciato and "Opening the nitride first" sentences; continuation 2 = Tang et al., split at
+  the semicolon after its markers ("Their abstracts do not describe …"). "Doping the poly under the
+  cut" (137 w, a 91-word sentence): lead "`NPCM` comes *before* the source/drain implants.";
+  continuation 1 = "Poly exposed by the cut is therefore implanted … The rules make sense on that
+  reading." (the colon of the base sentence became a full stop); continuation 2 = "A precision
+  resistor must be enclosed … p-type body." and, split at the dash, "The PDK's rule licon.9 checks …
+  is not.", followed unchanged by "This is an inference from the rule text; no public source states
+  it." — kept in the same paragraph as both sentences of the reading, so the hedge still covers both.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** "Resist and BARC" (62 w): split at its semicolon; continuation "The PDK's nominal
+  … we infer, …" with the hedge. "Exposure" (112 w): lead = the k₁ sentence to "limit.[^wiki-litho]"
+  (split at its semicolon); continuation 1 = "A 248 nm tool gives k₁ ≈ 0.65 …" and the ITRS sentence;
+  continuation 2 = "We therefore infer a **DUV** exposure … SkyWater lists both.[^skw-01]".
+  R-DERIVATION not applied to "k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44": one formula inside a recipe step,
+  left inline as on 064 (batch-5 precedent).
+* **R-TOOLS.** ASML: *SkyWater says:* "lists … beside its i-line tools" (verb-first), *Tool exists:*,
+  *Runs this step:* the DUV inference. Tracks and overlay/CD in 068's form (bold head ending in the
+  marker, grades as sub-bullets). Three tools, no recap table.
+* **R-RELATED.** Previous and Next as two bullets (the bullet named both); "The cap being opened … the
+  spacer beside the opening" → `Depends on:`; "What the opening is for … what is implanted through
+  it" → `Feeds:`; "Resistors whose heads it defines" keeps no label (those are earlier steps the cut
+  serves, neither Depends on nor Feeds exactly). "Mask page:" and "Previous mask: …; next mask: …"
+  → one `Mask:` bullet (the mask page first, then the two neighbouring masks with their own words).
+  Every gloss and link kept.
+* **R-OPENQ.** Labels "Exposure tool and resist", "Reticle generated from `npc`", "Resistor heads",
+  "Nitride over diffusion"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead, keeping "on our reading"; Public numbers npc.1/npc.2 0.270 µm
+  and npc.4 0.090 µm `[^pdk-periph]`; tool line with both grades; Not public from Open questions 1
+  (with its "inferred … not stated").
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-periph`, `skw-01`, numbers 0.090,
+  0.270, 1, 2, 4, refs `step-058`, `step-079`, hedges "inference", "likely", "not public", "our
+  reading" — the glance box. REGROUPED: the contact rules (0.100, 15, 18, 0.090, 13, 0.110, 9 — the
+  base order, now one bullet each), the rpm/licon.9 sentence, the resist sentence, the exposure
+  sentence (same digits, same order). LOST `number_order` for the `npc` table, checked above. WORDS
+  LOST: "m" (µm moved to the header), "of" (table), "page" ("Mask page:" → "Mask:"),
+  "strength"×3.
+* **Marker coverage.** 15 flags, all read: the contact-rule bullets (their marker is on the lead-in
+  before the colon, R-LIST step 1); "So the layer's overlay …" (the base marker sat after "(npc.4)",
+  unchanged); split halves whose base marker belonged to the other clause (Tang/abstracts, resist/PDK
+  thickness, k₁/248 nm); glance and label lines.
+* **Caps**: para > 100 1 → 0; item > 60 4 → 0; sentence > 45 6 → 0. Lead 100 words (base 98).

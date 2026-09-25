@@ -10,12 +10,30 @@
 | **Previous step** | {ref}`SPE <step-077>` |
 | **Next step** | {ref}`NPCME <step-079>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** prints the openings where {ref}`NPCME <step-079>` removes
+  the nitride that, on our reading, has covered the poly since
+  {ref}`GATENIT <step-058>`.
+* **Why:** nothing can be contacted through that cap, so it must be
+  opened where the local-interconnect contacts will land on poly.
+* **Public numbers:** `npc` minimum width and space 0.270 µm (npc.1,
+  npc.2); 0.090 µm spacing to a gate (npc.4).[^pdk-periph]
+* **Likely SkyWater tool:** ASML DUV stepper or scanner — strong
+  (existence); inference (assignment of `NPCM` to DUV).[^skw-01]
+* **Not public:** the exposure tool, resist and BARC, inferred from the
+  design rules, not stated (→ Open questions).
+:::
+
 ## What this step is
 
-`NPCM` is the lithography step for the *nitride poly cut*: the resist
-pattern that tells {ref}`NPCME <step-079>` where to remove the nitride
-that (on our reading) has covered the poly since
-{ref}`GATENIT <step-058>`. The wafer arriving from
+`NPCM` is the lithography step for the *nitride poly cut*. It is the
+resist pattern that tells {ref}`NPCME <step-079>` where to remove the
+nitride that (on our reading) has covered the poly since
+{ref}`GATENIT <step-058>`.
+
+The wafer arriving from
 {ref}`SPE <step-077>` carries gates and resistor bodies that are, on
 our reading of the flow, still capped by about 0.2 µm of nitride/oxide
 ("poly cap after SPE"[^pdk-03]) and flanked by the new nitride
@@ -32,21 +50,35 @@ openings.
 Before, the gate and the resistor with their spacers after SPE; after, the NPCM resist with one window, over the resistor. The mask opens the nitride cap where a contact will land on poly, "under licon1 areas",[^pdk-06] and the precision-resistor rules require the resistor to be enclosed by the cut (rpm.5),[^pdk-periph] which the page reads as the way the resistor's contact heads receive the P⁺ implant through the cut. That this slice runs through one of those contact heads, so that the window lies in it, is an illustrative choice. The cut is kept off every gate (npc.4),[^pdk-periph] so the gate stays covered. The window is drawn wider than the resistor's stack, enclosing its spacers. The resist is drawn thinner than the implant resists, as the page infers for a DUV cut layer; its thickness is not public. The caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel the n-type gate film under the resist is not labelled. Not to scale.
 :::
 
+### What the public record shows
+
 The mask is one of the best-documented in the public PDK. The mask
 table lists "Nitride Poly Cut, NPCM" as used in SKY130,[^pdk-05] the
 drawn layer is `npc` (GDS 95:20, "Nitride poly cut (under licon1
 areas)") and the generated mask layer is `cnpc` (49:0, "Nitride poly
-cut mask").[^pdk-06] The periphery rules head the `npc` section with
+cut mask").[^pdk-06]
+
+The periphery rules head the `npc` section with
 its function — "Defines nitride openings to contact poly and Li1" —
-and give: minimum width 0.270 µm (npc.1), minimum space 0.270 µm
-(npc.2), a manual-merge instruction below minimum (npc.3), spacing
-with no overlap to a gate of 0.090 µm (npc.4), and a maximum
-enclosure of poly overlapping a slotted `licon` by `npcm` of 0.095 µm
-(npc.5).[^pdk-periph] The contact rules complete the picture: a
-`poly_licon` "must be enclosed by npc by" 0.100 µm (licon.15), "Npc
-must enclose poly_licon" (licon.18), `npc` must keep 0.090 µm from a
-`licon` on diffusion or tap (licon.13), and a `poly_licon` must keep
-0.110 µm from `psdm` (licon.9).[^pdk-periph] The precision-resistor
+and give:[^pdk-periph]
+
+| Rule | Constrains | Value (µm) |
+|---|---|---:|
+| npc.1 | minimum width | 0.270 |
+| npc.2 | minimum space | 0.270 |
+| npc.3 | a manual-merge instruction below minimum | — |
+| npc.4 | spacing with no overlap to a gate | 0.090 |
+| npc.5 | a maximum enclosure of poly overlapping a slotted `licon` by `npcm` | 0.095 |
+
+The contact rules complete the picture:[^pdk-periph]
+
+* a `poly_licon` "must be enclosed by npc by" 0.100 µm (licon.15);
+* "Npc must enclose poly_licon" (licon.18);
+* `npc` must keep 0.090 µm from a `licon` on diffusion or tap
+  (licon.13);
+* a `poly_licon` must keep 0.110 µm from `psdm` (licon.9).
+
+The precision-resistor
 rules require the resistor to be enclosed by `npc` by 0.095 µm
 (rpm.5).[^pdk-periph] The minimum-CD table repeats the 0.27 µm
 feature and space (`NPCMCD`, `NPCMCDSP`).[^pdk-03]
@@ -56,9 +88,10 @@ feature and space (`NPCMCD`, `NPCMCDSP`).[^pdk-03]
 `NPCM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *cut* type: a dark-field layer of isolated openings whose
 own dimensions are relaxed (0.27 µm) but whose *placement* is not.
+
 The 0.090 µm "spacing, no overlap" to a gate (npc.4)[^pdk-periph]
 means that an opening printed 0.09 µm out of position over a poly line
-would expose the gate edge to the nitride etch, so the layer's overlay
+would expose the gate edge to the nitride etch. So the layer's overlay
 to poly ({ref}`P1M <step-061>`) is its critical parameter, not its
 CD.
 
@@ -75,26 +108,34 @@ being a separate mask rather than part of the contact etch:
 * **Poly contacts through a nitride cap.** The local-interconnect
   contact `licon1` (66:44, "Contact to local interconnect"[^pdk-06])
   is etched at {ref}`LICM1E <step-094>` through the PSG and any cap
-  oxide. If the nitride under the contact were still present, the
+  oxide.
+
+  If the nitride under the contact were still present, the
   contact etch would need a second chemistry and would risk the
   gate-edge charging that Cacciato et al. saw when a borderless
   nitride became conductive.[^cacciato-2003] Opening the nitride
   first, with a dedicated mask, lets the contact etch stop on oxide
-  and poly alike. Local interconnect of the era was also built from
+  and poly alike.
+
+  Local interconnect of the era was also built from
   titanium nitride: Tang et al. patterned the TiN layer that forms during
   self-aligned silicidation into connections between gates and
-  junctions;[^tang-1985][^tang-1987] their abstracts do not describe a
+  junctions.[^tang-1985][^tang-1987] Their abstracts do not describe a
   nitride cap over poly opened at contacts, and the papers' full text was
   not checked.
 * **Doping the poly under the cut.** `NPCM` comes *before* the
-  source/drain implants. Poly exposed by the cut is therefore
+  source/drain implants.
+
+  Poly exposed by the cut is therefore
   implanted by {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>` where
   it lies inside `psdm`, and by {ref}`NSDI <step-086>` inside `nsdm`.
-  The rules make sense on that reading: a precision resistor must be
+  The rules make sense on that reading.
+
+  A precision resistor must be
   enclosed by `psdm` (rpm.4) *and* by `npc` (rpm.5) and kept away from
   `nsdm` (rpm.6),[^pdk-periph] so its contact heads receive the P⁺
   implant through the cut and become low-resistance ends to a lightly
-  doped p-type body — the PDK's rule licon.9 checks the
+  doped p-type body. The PDK's rule licon.9 checks the
   `poly_licon`–`psdm` spacing "only between (poly_licon outside rpm)
   and psdm" in several flows,[^pdk-periph] which is what one expects
   if the P⁺ implant into resistor heads is intended and the same
@@ -114,8 +155,8 @@ contacted at all.
 
 ## How it is typically performed
 
-An industry-generic cut-layer lithography sequence for a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic cut-layer lithography sequence for a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Surface preparation.** The wafer is topographic: roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03])
    capped poly lines with nitride spacers on a planar oxide. A
@@ -123,17 +164,23 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 2. **Resist and BARC.** A 0.27 µm opening over reflective, stepped
    topography calls for a bottom anti-reflective coating and a DUV
    resist of the order of 0.5–0.7 µm (industry-typical for a
-   248 nm cut layer[^txt-05][^mack-2007]); the PDK's nominal
+   248 nm cut layer[^txt-05][^mack-2007]).
+
+   The PDK's nominal
    "Photoresist thickness" of 1.14 µm[^pdk-03] is, we infer, the
    implant-layer value rather than this layer's. The resist need only
    withstand a short nitride etch.
 3. **Exposure.** At 0.27 µm minimum feature and space, an i-line
    stepper of NA 0.6 would work at k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44,
-   close to the "0.4 for production" limit;[^wiki-litho] a 248 nm
+   close to the "0.4 for production" limit.[^wiki-litho]
+
+   A 248 nm
    tool gives k₁ ≈ 0.65 with margin for overlay-driven proximity
    effects. ITRS 2001 lists "248 nm + PSM" and "193 nm" as the
    exposure options for the 130 nm node, and only 248 nm had "a mature
-   infrastructure".[^itrs-03] We therefore infer a **DUV** exposure for
+   infrastructure".[^itrs-03]
+
+   We therefore infer a **DUV** exposure for
    `NPCM`, driven by its 0.09 µm placement tolerance to poly rather
    than by its CD. Whether the tool is a stepper or a scanner is not
    public; SkyWater lists both.[^skw-01]
@@ -160,15 +207,17 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **ASML DUV stepper / DUV scanner.** SkyWater lists "ASML DUV
-  stepper" and "ASML DUV scanner" beside its i-line tools.[^skw-01]
-  Strength: **strong** for the existence of the tools; the assignment
-  of `NPCM` to DUV is an **inference** from the design rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01]
-  Strength: strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML DUV stepper / DUV scanner**
+  - *SkyWater says:* lists "ASML DUV stepper" and "ASML DUV scanner"
+    beside its i-line tools.[^skw-01]
+  - *Tool exists:* **strong** for the existence of the tools.
+  - *Runs this step:* the assignment of `NPCM` to DUV is an
+    **inference** from the design rules.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -182,20 +231,20 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ## Related steps and cross-references
 
-* Previous: {ref}`SPE <step-077>`; next: {ref}`NPCME <step-079>`
-  (the etch through this resist, which also strips it).
-* The cap being opened: {ref}`GATENIT <step-058>`,
-  {ref}`POC <step-059>`; the spacer beside the opening:
+* Previous: {ref}`SPE <step-077>`.
+* Next: {ref}`NPCME <step-079>` (the etch through this resist, which
+  also strips it).
+* Depends on: the cap being opened, {ref}`GATENIT <step-058>`,
+  {ref}`POC <step-059>`; the spacer beside the opening,
   {ref}`SPNIT <step-076>`.
-* What the opening is for: {ref}`LICM1 <step-093>`,
-  {ref}`LICM1E <step-094>`; what is implanted through it:
+* Feeds: what the opening is for, {ref}`LICM1 <step-093>`,
+  {ref}`LICM1E <step-094>`; what is implanted through it,
   {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`.
 * Resistors whose heads it defines: {ref}`RPM <step-049>`,
   {ref}`URPM <step-055>`, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`.
-* Previous mask: {ref}`LDNTM <step-071>`; next mask:
-  {ref}`PSDM <step-081>`.
-* Mask page: {ref}`NPCM <mask-npcm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`NPCM <mask-npcm>` — the mask's layers, plates,
+  renders and design rules. Previous mask: {ref}`LDNTM <step-071>`;
+  next mask: {ref}`PSDM <step-081>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 ## References
@@ -251,17 +300,17 @@ An industry-generic cut-layer lithography sequence for a 200 mm,
 
 ## Open questions
 
-* The exposure tool (i-line or DUV, stepper or scanner), resist and
+* **Exposure tool and resist.** The exposure tool (i-line or DUV, stepper or scanner), resist and
   BARC used for `NPCM` are inferred from the design rules, not
   stated.
-* Whether the reticle is generated from `npc` with additions for
+* **Reticle generated from `npc`.** Whether the reticle is generated from `npc` with additions for
   resistor heads and other structures, or copies the drawn layer, is
   not public; the `cnpc` mask layer exists,[^pdk-06] which shows only
   that it is generated.
-* The reading that the P⁺ source/drain implant is *intended* to dope
+* **Resistor heads.** The reading that the P⁺ source/drain implant is *intended* to dope
   the resistor heads through the cut is an inference from rpm.4,
   rpm.5 and licon.9.[^pdk-periph]
-* Whether the cut also opens nitride on top of *diffusion* anywhere
+* **Nitride over diffusion.** Whether the cut also opens nitride on top of *diffusion* anywhere
   (licon.13 keeps it 0.090 µm from diffusion contacts,[^pdk-periph]
   suggesting not) is not stated.
 
