@@ -36,9 +36,52 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 
 - cmp.md — done
 - substrate.md — done
-- (remaining eight to do: anneal, deposition, etch, implant, lithography, oxidation, strip, test)
+- anneal.md — done
+- (remaining seven to do: deposition, etch, implant, lithography, oxidation, strip, test)
 
 ## Pages
+
+### anneal.md — done
+
+Rules applied: intro + quick-facts table (Governing relation "Fick's laws of diffusion", the page's own
+named law); R-LIST twice (the opening "make something happen that only heat can do:" four-item sentence
+→ Repair/Diffuse/React/Sinter bullets; the "Two effects make the choice of anneal a compromise:" sentence
+→ Deactivation/TED bullets — both zero-marker, zero-number passages, so purely a reformat); R-SENTENCE
+splits (activation-energy sentence, RTP intro sentence, RTA-chamber sentence, Titanium and Cobalt
+silicide bullets, the alloy-anneal passivation sentence — each a semicolon joining two claims, trailing
+whole-sentence marker repeated where the original had only one); R-PARA (the "Rapid thermal processors"
+equipment bullet, >60 words, split into a lead sentence plus an indented continuation, wording
+unchanged); R-COMPARE step 2 (three consumables lead-ins — Gases, RTP hardware, Furnace hardware — linked
+to `anneal-ambients`/`hardware-consumables` per the materials index class table); R-COMPARE step 3
+(Machine class column on the 7-row steps table, from the machines index: `Rapid thermal processor` for
+five rows, `Vertical furnace` for the two alloy steps, which the machines index lists as the *primary*
+class for 96/170 with RTP only as the *alternative*); R-CAPTION on the new steps table. The "Silicidation"
+Titanium/Cobalt bullets were **not** put in an R-COMPARE table (only two items — the rule's own trigger
+is "three or more bullets"), so R-PARA was used instead.
+
+`check_preserved.py --base 7b117719 --allow-regrouped --allow-added markers,numbers,refs,identifiers` →
+exit 0. All four `--allow-regrouped` groups (the diffusion sentence, the Titanium bullet, the alloy
+sentence, the "Rapid thermal processors" equipment bullet) were confirmed by hand: each LOST tuple's
+digits reappear, same order, in the REGROUPED "now" lines the tool prints alongside it.
+
+* **ADDED markers:** `deal-1980`, `wiki-rtp` (one extra occurrence each), `txt-01` (two extra
+  occurrences, from two different R-SENTENCE splits) — rule 5 repeats.
+* **ADDED numbers:** `7` — the Steps-in-SKY130 count (matches the page's own "seven thermal steps"
+  wording, so also a cross-check).
+* **ADDED refs:** `category-oxidation` ×1 (new intro repeats the page's own "Unlike oxidation (...)"
+  sentence), `machine-rapid-thermal-processor` ×6, `machine-vertical-furnace-anneal` ×3 (quick facts,
+  steps-table Machine class column), `material-anneal-ambients` ×2, `material-hardware-consumables` ×3
+  (quick facts + the three consumables lead-ins).
+* **ADDED identifiers:** `SKY130` ×1 — the quick-facts row label.
+
+Quick-facts derivation: What it does = built from the labels the R-LIST conversion itself created
+(Repair/Diffuse/React/Sinter), each label taken from that item's own words, so still page-derived.
+Steps in SKY130 = 7 (steps table). Tool classes = the two `{ref}` targets in Typical equipment.
+Consumable classes = the two class pages the consumables bullets were linked to. Governing relation =
+"Fick's laws of diffusion" (H3 "Diffusion", `{math}` block).
+
+Checkers and `-W` build pass. Screenshots (desktop, 400 px) reviewed: no horizontal scroll, four-column
+steps table wraps cleanly on the phone tile.
 
 ### substrate.md — done
 

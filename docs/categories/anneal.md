@@ -1,15 +1,34 @@
 (category-anneal)=
 # Anneal / thermal processing
 
+An anneal heats the wafer, in a controlled ambient, to make something
+happen that only heat can do. Unlike oxidation ({ref}`category-oxidation`)
+nothing is meant to grow, so the ambient is usually inert (nitrogen or
+argon) or mildly reducing.
+
+| | Anneal / thermal processing |
+|---|---|
+| What it does | Heats the wafer to repair implant damage, diffuse dopants, form a silicide, or sinter and passivate contacts. |
+| Steps in SKY130 | 7 |
+| Tool classes | {ref}`Rapid thermal processors <machine-rapid-thermal-processor>`, {ref}`Vertical furnaces <machine-vertical-furnace-anneal>` |
+| Consumable classes | {ref}`Anneal ambients <material-anneal-ambients>`, {ref}`Hardware consumables <material-hardware-consumables>` |
+| Governing relation | Fick's laws of diffusion |
+
 ## What this class of step does
 
 An anneal heats the wafer, in a controlled ambient, to make something
-happen that only heat can do: repair the crystal damage left by an ion
-implant and put the dopant atoms onto lattice sites where they are
-electrically active; diffuse dopants to a designed depth; react a metal
-with silicon to form a low-resistance silicide; or, at the very end of
-the flow, sinter the metal contacts and passivate the oxide interfaces
-with hydrogen. Unlike oxidation ({ref}`category-oxidation`) nothing is
+happen that only heat can do:
+
+* **Repair crystal damage** — repair the crystal damage left by an ion
+  implant and put the dopant atoms onto lattice sites where they are
+  electrically active.
+* **Diffuse dopants** — diffuse dopants to a designed depth.
+* **React a silicide** — react a metal with silicon to form a
+  low-resistance silicide.
+* **Sinter and passivate** — at the very end of the flow, sinter the
+  metal contacts and passivate the oxide interfaces with hydrogen.
+
+Unlike oxidation ({ref}`category-oxidation`) nothing is
 meant to grow, so the ambient is usually inert (nitrogen or argon) or
 mildly reducing.
 
@@ -41,7 +60,7 @@ D\,\partial^2 C/\partial x^2`,[^wiki-fick] with a diffusivity that
 follows the Arrhenius law {math}`D = D_0 e^{-E_A/kT}`.[^wiki-arrhenius]
 For the common dopants in silicon the activation energies are of order
 3–4 eV, so diffusion is negligible below about 800 °C and doubles
-roughly every 20–30 °C above it; a Gaussian implanted profile broadens
+roughly every 20–30 °C above it.[^txt-01] A Gaussian implanted profile broadens
 such that its characteristic width grows as {math}`\sqrt{2Dt}`, and the
 product {math}`Dt` summed over every hot step is the process's "thermal
 budget".[^txt-01] At the concentrations used for wells and channels,
@@ -56,13 +75,20 @@ Implanted dopant is electrically inactive until the lattice is restored.
 Amorphised layers regrow by {term}`solid-phase epitaxy` at 500–600 °C with the
 dopant incorporated substitutionally up to and beyond its equilibrium
 solid solubility; partially damaged layers need 800–1000 °C to dissolve
-the defect clusters.[^gibbons-1972][^txt-01] Two effects make the choice
-of anneal a compromise. Above the solid solubility the dopant
-precipitates or clusters and deactivates, so the highest activation is
-obtained by annealing hot and fast. And the interstitials released as
-the damage anneals cause transient enhanced diffusion ({term}`TED`),
-which is worst for slow, low-temperature anneals because the damage
-dissolves while the dopant is still mobile.[^stolk-1997] The resolution
+the defect clusters.[^gibbons-1972][^txt-01]
+
+Two effects make the choice
+of anneal a compromise:
+
+* **Deactivation above solubility** — above the solid solubility the
+  dopant precipitates or clusters and deactivates, so the highest
+  activation is obtained by annealing hot and fast.
+* **Transient enhanced diffusion** — the interstitials released as
+  the damage anneals cause transient enhanced diffusion ({term}`TED`),
+  which is worst for slow, low-temperature anneals because the damage
+  dissolves while the dopant is still mobile.[^stolk-1997]
+
+The resolution
 is the RTA: seconds at 1000–1100 °C,[^stolk-1997] or a "spike" anneal
 with essentially zero soak time, which activates the dopant while the
 junction moves only a few nanometres. ITRS 2001 identifies the boron
@@ -74,17 +100,20 @@ abruptness and {term}`sheet resistance` to be met simultaneously.[^itrs-01]
 {term}`RTP` "heats silicon wafers to temperatures exceeding 1,000°C for not more
 than a few seconds" using "high intensity lamps or lasers", with "in
 situ pyrometry to effect real time control" because the chamber never
-reaches thermal equilibrium; applications include "dopant activation,
+reaches thermal equilibrium.[^wiki-rtp] Applications include "dopant activation,
 thermal oxidation, metal reflow and chemical vapor
-deposition".[^wiki-rtp] A single-wafer RTA chamber uses banks of
+deposition".[^wiki-rtp]
+
+A single-wafer RTA chamber uses banks of
 tungsten-halogen lamps above (and sometimes below) the wafer, a quartz
 window, gas flow of N₂, Ar or O₂, and an optical pyrometer whose reading
 must be corrected for the wafer's temperature- and film-dependent
-emissivity; ramp rates of 50–250 °C/s are typical industry
+emissivity. Ramp rates of 50–250 °C/s are typical industry
 values,[^roozeboom-1990] and the trade-offs are "temperature and process
 uniformity, temperature measurement and control, and wafer
 stress".[^wiki-rtp] Wafers that are heated non-uniformly slip on {111}
 planes at the edge, so edge-ring design and lamp zoning matter.
+
 Furnaces, by contrast, hold 100–150 wafers at a uniform temperature for
 tens of minutes and are still used where a large Dt is wanted, for
 example the well drive-in, or where low temperature and long time are
@@ -104,7 +133,9 @@ the selective etch:
 * **Titanium**: a first RTA at roughly 600–700 °C in N₂ forms the
   metastable C49 TiSi₂ (and TiN on top), the unreacted Ti/TiN is
   stripped in {term}`SC-1` or {term}`SPM`, and a second RTA at roughly 800–900 °C
-  converts C49 to the low-resistivity C54 phase; on narrow lines the
+  converts C49 to the low-resistivity C54 phase.
+
+  On narrow lines the
   C49→C54 transformation becomes nucleation-limited, the "narrow-line
   effect" that drove the industry to cobalt at the 180–130 nm
   nodes.[^maex-1993][^osburn-1993]
@@ -112,7 +143,9 @@ the selective etch:
   the unreacted cobalt (over a Ti or TiN cap) is stripped, and a second
   anneal at roughly 700–800 °C forms CoSi₂, the only cobalt silicide
   with "a sufficiently low resistance to form an effective electrical
-  contact".[^wiki-salicide] CoSi₂ consumes about 3.6 nm of silicon per
+  contact".[^wiki-salicide]
+
+  CoSi₂ consumes about 3.6 nm of silicon per
   nanometre of cobalt,[^maex-1993] so the junction under it must be deep
   enough; ITRS 2001 assumes a silicide thickness of half the contact
   junction depth.[^itrs-01]
@@ -130,7 +163,7 @@ forming gas assists in silicon-silicon dioxide interface
 passivation".[^wiki-fg] At 350–450 °C for 20–30 min hydrogen diffuses
 through the stack and ties up the dangling bonds (P_b centres) at the
 Si/SiO₂ interface, reducing the interface-trap density and stabilising
-the threshold voltage; the same anneal sinters the aluminium–silicon and
+the threshold voltage.[^deal-1980][^txt-01] The same anneal sinters the aluminium–silicon and
 titanium–silicide contacts and relaxes stress in the metal (Deal's
 terminology for the charges involved is given in his 1980
 paper).[^deal-1980][^txt-01] It must be the last hot step because
@@ -143,7 +176,9 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 * **{ref}`Rapid thermal processors <machine-rapid-thermal-processor>`**: AG Associates Heatpulse 8108 ("first
   shipped in October 1992" as the "flagship product targeted for volume
   production processes that utilize wafer sizes from 125 to 200
-  millimeters"),[^ag-10k] later sold by Steag and Mattson; Applied
+  millimeters"),[^ag-10k] later sold by Steag and Mattson.
+
+  Applied
   Materials RTP XE Centura (1997)[^amat-1997] and its Radiance and
   Vantage successors (named in a since-offline, unarchived vendor
   article; evidence weak);[^amat-rtp] Mattson
@@ -158,12 +193,12 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 
 ## Typical consumables
 
-* **Gases**: nitrogen, argon, forming gas (4–10 % H₂ in N₂, "5 % H₂ in
+* **{ref}`Gases <material-anneal-ambients>`**: nitrogen, argon, forming gas (4–10 % H₂ in N₂, "5 % H₂ in
   N₂" being typical),[^wiki-fg] oxygen (as a controlled minor addition
   for some anneals), ammonia for nitridation.
-* **RTP hardware**: tungsten-halogen lamps, quartz windows and chambers,
+* **{ref}`RTP hardware <material-hardware-consumables>`**: tungsten-halogen lamps, quartz windows and chambers,
   silicon carbide or quartz edge rings, pyrometer calibration wafers.
-* **Furnace hardware**: quartz tubes, boats and baffles; monitor wafers
+* **{ref}`Furnace hardware <material-hardware-consumables>`**: quartz tubes, boats and baffles; monitor wafers
   (SEMI M8) for sheet resistance.
 * **Silicide metals** (Ti, Co, with TiN caps) are consumed at the
   deposition step ({ref}`category-deposition`), and the selective strip
@@ -171,15 +206,18 @@ temperature is capped by the aluminium metallisation (Al–Si eutectic at
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 34 | {ref}`RTAI <step-034>` | Pre-gate oxide anneal |
-| 75 | {ref}`TIPRTAD <step-075>` | RTA tip activation |
-| 88 | {ref}`RTAD <step-088>` | RTA source drain implant anneal |
-| 92 | {ref}`RTAD2 <step-092>` | RTA source drain anneal |
-| 96 | {ref}`ALLY1 <step-096>` | Alloy 1 |
-| 98 | {ref}`CSIL <step-098>` | Contact silicidation |
-| 170 | {ref}`ALLY <step-170>` | Alloy |
+:::{table} The seven anneal steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 34 | {ref}`RTAI <step-034>` | Pre-gate oxide anneal | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+| 75 | {ref}`TIPRTAD <step-075>` | RTA tip activation | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+| 88 | {ref}`RTAD <step-088>` | RTA source drain implant anneal | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+| 92 | {ref}`RTAD2 <step-092>` | RTA source drain anneal | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+| 96 | {ref}`ALLY1 <step-096>` | Alloy 1 | {ref}`Vertical furnace <machine-vertical-furnace-anneal>` |
+| 98 | {ref}`CSIL <step-098>` | Contact silicidation | {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+| 170 | {ref}`ALLY <step-170>` | Alloy | {ref}`Vertical furnace <machine-vertical-furnace-anneal>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
