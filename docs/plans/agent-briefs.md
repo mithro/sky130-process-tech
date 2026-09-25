@@ -215,6 +215,7 @@ step provide:
 * **Open questions** — anything you could not confirm publicly.
 
 Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
+`uv run tools/check_history.py` (the Cypress history section and its claims matrix),
 `uv run tools/check_machines.py` (machine-page headings and step lists),
 `uv run tools/check_materials.py` (material-page headings, index row
 keys and class-page table, rows covered, step lists and summary table),
@@ -476,7 +477,7 @@ enforces the points marked *(checked)*.
     one public derivation, not SkyWater's;
   * sheet and site notes are not cited as corroborating each other.
 
-Run all the checkers (`check_steps.py`, `check_refs.py`,
+Run all the checkers (`check_steps.py`, `check_refs.py`, `check_history.py`,
 `check_machines.py`, `check_materials.py`, `check_masks.py`,
 `check_papers.py` and `gen_papers.py --check`) and the `-W` build as in
 the step-page brief.
