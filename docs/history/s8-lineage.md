@@ -84,8 +84,8 @@ Cypress" (single source).[^pdk-previous] The Cypress sources point elsewhere:
   (Cypress's reports).[^ar-fy1995][^ar-fy1998][^ar-fy2002][^pin-152804]
 
 We read the "8" as the process generation Cypress numbered 8, the 0.13 µm one, and the "S" as SONOS, as S4
-was the SONOS process of generation 4 (our reading). The numbering is Cypress's, not a count: no
-generation 6 was found, and generation 2 covers 0.8 µm and 0.65 µm. SkyWater's "8th generation of the
+was the SONOS process of generation 4 (our reading). The numbering is Cypress's, not a scale: generation 6, R63D-25, prints 0.27 µm, coarser than generation 5,
+and generation 2 covers 0.8 µm and 0.65 µm.[^qtp-012407] SkyWater's "8th generation of the
 SONOS technology" and this reading agree that S8 is a SONOS process; they differ on what the 8 counts, and
 no Cypress source found says.[^pdk-previous] The naming is set out on {ref}`history-naming`.
 
@@ -234,3 +234,6 @@ source).[^pat-us8093128]
 [^siliconpr0n-psoc4]: Silicon Prawn wiki, *azonenberg:cypress:cy8c4245axi* (teardown of the Cypress
     CY8C4245AXI, PSoC 4200), last modified 2025-08-04.
     <https://siliconpr0n.org/archive/doku.php?id=azonenberg:cypress:cy8c4245axi>
+[^qtp-012407]: Cypress Semiconductor, Product Qualification Report QTP 012407: *Synchronous SRAM Family, R63D-25 Technology, Fab4*, November 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210517162336/https://www.cypress.com/file/91686/download>

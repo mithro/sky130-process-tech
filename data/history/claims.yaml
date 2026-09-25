@@ -980,6 +980,15 @@ claims:
   sources:
   - {id: pat-us6091129a-sti-1996, origin: patent-record}
   - {id: cyx-jin-1999-locos, origin: cypress}
+- id: tech-r3-l31
+  page: docs/history/technologies.md
+  anchor: 'Two more 0.5 µm codes appear at Fab 4'
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-097044, qtp-097461]
+  sources:
+  - {id: qtp-097044, origin: cypress}
+  - {id: qtp-097461, origin: cypress}
 - id: tech-p20
   page: docs/history/technologies.md
   anchor: The one 0.8 µm process in the qualification reports is P20
@@ -1446,6 +1455,14 @@ claims:
   footnotes: [pat-us8093128]
   sources:
   - {id: pat-us8093128b2-s8-family-2007, origin: patent-record}
+- id: s8-gen6-scale
+  page: docs/history/s8-lineage.md
+  anchor: 'generation 6, R63D-25, prints 0.27 µm'
+  grade: inference
+  hedge: our reading
+  footnotes: [qtp-012407]
+  sources:
+  - {id: qtp-012407, origin: cypress}
 # ---- docs/history/naming.md -------------------------------------------------
 - id: name-table-digit-2
   page: docs/history/naming.md
@@ -1459,7 +1476,7 @@ claims:
   - {id: qtp-011503, origin: cypress}
 - id: name-ram-trademarks
   page: docs/history/naming.md
-  anchor: '| 3 | R32, R32D'
+  anchor: '| 3 | R3, R32, R32D'
   grade: attributed
   attribution: Cypress's annual reports
   footnotes: [qtp-097132, ar-fy1995]
@@ -1473,6 +1490,43 @@ claims:
   footnotes: [pin-152804]
   sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}
+- id: name-table-digit-6
+  page: docs/history/naming.md
+  anchor: '| 6 | R63D-25'
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-012407, qtp-011805]
+  sources:
+  - {id: qtp-012407, origin: cypress}
+  - {id: qtp-011805, origin: cypress}
+- id: name-table-digit-3-r3-l31
+  page: docs/history/naming.md
+  anchor: '| 3 | R3, R32, R32D; L31'
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-097044, qtp-097132, qtp-097461]
+  sources:
+  - {id: qtp-097044, origin: cypress}
+  - {id: qtp-097132, origin: cypress}
+  - {id: qtp-097461, origin: cypress}
+- id: name-gen6-dates
+  page: docs/history/naming.md
+  anchor: 'One code has the digit 6'
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-012407, qtp-011805]
+  sources:
+  - {id: qtp-012407, origin: cypress}
+  - {id: qtp-011805, origin: cypress}
+- id: name-gen6-not-a-scale
+  page: docs/history/naming.md
+  anchor: 'So the digit does not simply follow the'
+  grade: inference
+  hedge: our reading
+  footnotes: [qtp-012407, qtp-012705]
+  sources:
+  - {id: qtp-012407, origin: cypress}
+  - {id: qtp-012705, origin: cypress}
 - id: name-digit-reading
   page: docs/history/naming.md
   anchor: That the digit is the RAM generation number is our reading.

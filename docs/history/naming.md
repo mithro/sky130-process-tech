@@ -15,18 +15,23 @@ annual reports:
 | Digit | Codes in Cypress's reports | Design rule printed | Name in Cypress's annual reports |
 |---|---|---|---|
 | 2 | P20, R28, L28, L28EPD, P26[^qtp-091216][^qtp-096091][^qtp-011503] | 0.8 µm (P20) and 0.65 µm | — |
-| 3 | R32, R32D[^qtp-097132] | 0.5 µm | RAM3, "0.5-micron feature geometry"[^ar-fy1995] |
+| 3 | R3, R32, R32D; L31, "a subset of R30"[^qtp-097044][^qtp-097132][^qtp-097461] | 0.5 µm | RAM3, "0.5-micron feature geometry"[^ar-fy1995] |
 | 4 | R42D, R42HD, RAM42, S4AD-5[^qtp-102101][^qtp-021507] | 0.42 µm and 0.35 µm | RAM4, a trademark[^ar-fy1997] |
 | 5 | R52 variants, B53D-3, B55SGT[^qtp-012705][^qtp-051101] | 0.25 µm (B55SGT: 0.21–0.35 µm) | RAM5, "0.25-micron feature geometry"[^ar-fy1998] |
+| 6 | R63D-25[^qtp-012407][^qtp-011805] | 0.27 µm | — |
 | 7 | R7LD-1.8, R7FD-3R, R7FT-3R[^qtp-011908] | 0.16, 0.15 and 0.18 µm | RAM 7[^ar-fy2002] |
 | 8 | R8LD-1.8, C8Q-3R, L8C-3R, S8TNV-5R[^qtp-043004][^qtp-113005] | 0.13 µm | RAM 8, "from 0.15-micron to 0.13-micron"[^ar-fy2002] |
 | 9 | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R[^qtp-063807] | 90 nm | — |
 
+**Generation 6.** One code has the digit 6: R63D-25, a synchronous SRAM and FIFO process at Fab 4. Its
+reports print "CMOS, Double Metal /0.27 µm" and date "New Technology R63D-25" to April 2001, after the
+0.25 µm R52 processes (Cypress's reports).[^qtp-012407][^qtp-011805] So the digit does not simply follow the
+design rule: generation 6 is coarser than generation 5 (our reading).[^qtp-012407][^qtp-012705]
+
 A 2015 Cypress notice groups "130nm C8/R8/S8/L8" and "90nm C9/R9/R95" (single source).[^pin-152804]
 
 That the digit is the RAM generation number is our reading. The names and design rules match, but no
-source says that R32 is RAM3 or that R42 is RAM4. No code with the digit 6 was found. One source
-conflicts: the 2015 notice says "250nm R7" while the R7 reports print 0.18–0.15 µm.[^pin-152804][^qtp-011908]
+source says that R32 is RAM3 or that R42 is RAM4. One source conflicts: the 2015 notice says "250nm R7" while the R7 reports print 0.18–0.15 µm.[^pin-152804][^qtp-011908]
 
 ## The family letters
 
@@ -71,7 +76,7 @@ Read a single code in a single report with care.
 ## Open questions
 
 * **The scheme.** Is there a Cypress document that defines the codes?
-* **The missing digits.** What were the 0.65 µm and 90 nm generations called, and was there a sixth?
+* **The missing digits.** What were the 0.65 µm and 90 nm generations called, and why is generation 6, R63D-25, coarser than generation 5?
 * **The suffixes.** What do -3, -5, -3R and -5R mean, and is "H" really the 5 V version?
 
 ## References
@@ -184,3 +189,15 @@ Read a single code in a single report with care.
     <https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>
 [^qtp-099202]: Cypress Semiconductor, Product Qualification Report QTP 99202: *Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4*, May 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-99202-low-voltage-synchronous-asynchronous-ram-r52d-3-technology-at-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491c270982>
+[^qtp-011805]: Cypress Semiconductor, Product Qualification Report QTP 011805: *Unidirectional Synchronous FIFO with Bus Matching, R63D-25 Technology, Fab4*, February, 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211206073612/https://www.cypress.com/file/91656/download>
+[^qtp-012407]: Cypress Semiconductor, Product Qualification Report QTP 012407: *Synchronous SRAM Family, R63D-25 Technology, Fab4*, November 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210517162336/https://www.cypress.com/file/91686/download>
+[^qtp-097044]: Cypress Semiconductor, Product Qualification Report QTP 97044: *32K x 16 SRAM, R3 Technology, Fab 4 Qualification*, November, 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507195824/https://www.cypress.com/file/93606/download>
+[^qtp-097461]: Cypress Semiconductor, Product Qualification Report QTP 97461: *3.3V, Light Device 16-Bit FCT Family*, April, 1998;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210517162807/https://www.cypress.com/file/93881/download>

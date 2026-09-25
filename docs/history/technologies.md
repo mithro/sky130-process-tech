@@ -100,6 +100,10 @@ layers, with local interconnect), both with 145 Å of gate oxide and both at Fab
 reports).[^qtp-097132][^qtp-098021] That R32 is RAM3 is our reading of the matching name and design rule;
 no report says so.
 
+Two more 0.5 µm codes appear at Fab 4, both single poly, two metal layers and 145 Å of gate oxide: R3, for
+the CY7C1020 SRAM, and L31, for 3.3 V FCT logic, whose report calls it "a subset of R30 technology"
+(Cypress's reports).[^qtp-097044][^qtp-097461]
+
 (history-tech-ram4)=
 ## RAM4, 0.42 and 0.35 µm
 
@@ -489,3 +493,9 @@ public record found. The sources show both in development from
     US 6,091,129 A, priority 1996-06-19. <https://patents.google.com/patent/US6091129A/en>
 [^pdk-hv]: SkyWater PDK Authors, *High Voltage Methodology*, SkyWater SKY130 PDK documentation,
     retrieved 2026-09-25. <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>
+[^qtp-097044]: Cypress Semiconductor, Product Qualification Report QTP 97044: *32K x 16 SRAM, R3 Technology, Fab 4 Qualification*, November, 2002;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507195824/https://www.cypress.com/file/93606/download>
+[^qtp-097461]: Cypress Semiconductor, Product Qualification Report QTP 97461: *3.3V, Light Device 16-Bit FCT Family*, April, 1998;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210517162807/https://www.cypress.com/file/93881/download>
