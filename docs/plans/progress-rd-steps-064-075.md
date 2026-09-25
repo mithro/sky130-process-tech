@@ -814,3 +814,10 @@ One commit each.
   graded strong on the page); 070 "the next mask is coated here" → "coated on this surface" (the page's
   words); 075 "with little junction movement" → "while moving the junctions as little as possible" (the
   lead's words: an aim, not a result). All bullets ≤ 25 words; `check_preserved` output unchanged.
+* **L3, 069.** The 49-word Hu sentence split at its dash: "… inject hot electrons into the gate
+  oxide.[^hu-1985-hci] That is the degradation mechanism Hu and co-workers modelled, …[^hu-1985-hci]"
+  (subject + verb added; `[^hu-1985-hci]` **repeated**, declared — `check_preserved` now adds
+  `hu-1985-hci` to 069's ADDED markers, nothing else changes).
+* **069:79, Hori's LATID (50 w): left as it is**, as the review rules borderline: the only split, at ",
+  instead of under the spacer", needs a new subject and a repeated marker for a contrast that is one
+  claim.

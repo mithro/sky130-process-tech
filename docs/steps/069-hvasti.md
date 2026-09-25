@@ -72,9 +72,9 @@ implant, and the one whose geometry the PDK documents most completely
 
 At 5.5 V on the drain, an abrupt, heavily doped tip of the
 {ref}`ASTI <step-065>` kind would concentrate the lateral field at the
-gate edge and inject hot electrons into the gate oxide — the
-degradation mechanism Hu and co-workers modelled, monitored and showed
-how to reduce by drain engineering.[^hu-1985-hci]
+gate edge and inject hot electrons into the gate oxide.[^hu-1985-hci]
+That is the degradation mechanism Hu and co-workers modelled, monitored
+and showed how to reduce by drain engineering.[^hu-1985-hci]
 
 The LDD spreads the field over a lightly doped
 region.[^ogura-1980][^ogura-1981] Takeda's group compared drain structures
