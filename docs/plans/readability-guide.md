@@ -1986,6 +1986,15 @@ produce a `<caption>`. `:widths:` numbers are relative; `:class:` is optional.
 
 A caption may carry a footnote marker (`… blank in the PDK[^pdk-periph]`) — verified.
 
+**A directive argument, including a `{table}` caption, must be on one line.** Wrapping a long caption
+onto a second source line breaks the directive silently in one sense and loudly in another: the table
+does not render (`ERROR: Error parsing content block for the "table" directive: exactly one table
+expected`), no checker reads this table so nothing else catches it, and `-W` **does** report it — but
+only if the build actually re-reads the page. An incremental build (no `-E`, unchanged mtime) can leave
+a stale, warning-free result on disk while the source is already broken; the mistake was first found by
+looking at a rendered tile, not by a failing build. §7 step 6 says to force a fresh read when checking a
+page whose sections were reordered or rebuilt from a script, for exactly this reason.
+
 **Table inside a list item.** Blank line before and after; the table indented two spaces with the item.
 
 ```
@@ -2176,7 +2185,11 @@ uv run python tools/gen_index_links.py --check
 
 **6. Build with `-W`.** `uv run sphinx-build -W -q -b html docs tmp/_build/html`. A warning is a
 failure. The usual causes are a broken `{ref}` (nitpicky), an unreferenced footnote definition after a
-deletion, and `{numref}`.
+deletion, and `{numref}`. When checking a page whose sections were reordered or rebuilt from a script
+(not a small hand edit), use a fresh output directory or add `-E`: an incremental build can leave a
+stale, warning-free page on disk when the mistake is a directive Sphinx fails to parse at all (see §6's
+note on a wrapped `{table}` caption), because such a page never reaches the point of emitting the
+warning the incremental cache remembers not seeing.
 
 **7. Look at the result**, desktop and phone, with `tools/shoot.py`, and open every tile. Compare with
 the "before" tiles. Fix what looks wrong: a table that scrolls sideways, a cell that fills the screen, a
