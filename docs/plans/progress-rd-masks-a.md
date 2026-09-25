@@ -228,3 +228,46 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   sentence (46; one long quotation); the Polarity and tone cell (26; not in the body). Before → after:
   paragraphs 10 → 0, items 0 → 0, sentences 10 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
+
+### 5. fom — done
+
+* **Rules applied.** R-INTRO (164 → 48 words); R-PARAMS; R-CAPTION (rule table — the guide's own worked
+  caption, with the page's words "blank in the published table"; parameter table); R-PARA,
+  R-SENTENCE; R-LIST (Table F2b's `C` and `+` rows; the Table 4 pattern-density criteria; the two kinds
+  of placement margin); R-RELATED; R-H3 (Exposure class, Mask errors, Pattern density, Resist and tone,
+  Overlay and alignment ← "Alignment", Pattern transfer).
+* **Intro split with a repeated hedge.** "On the FOM page's reading it is the first lithography of the
+  flow: the resist printed through it stays … into the silicon." The first half stays in the intro; the
+  second half opens `## What the mask defines` with the base's hedge repeated word for word ("On the
+  {ref}`FOM <step-004>` page's reading, the resist printed through the mask stays …"; "it" → "the
+  mask"). That repeat is the ADDED ref `step-004`. "Because nothing is on the wafer before it …" moved
+  with it.
+* **Moved passage (G1):** the Alignment passage (now `### Overlay and alignment`) moved above Pattern
+  transfer. It refers to the trenches and the alignment marks, not to the pattern-transfer paragraph.
+* **R-PARAMS.** The seven parameters of "Table 2 … `FOMCD` 0.14 … (`FOMSESC`);[^pdk-03] the PDK does not
+  reconcile these … Table 3c … (`MINFWR`) … (`SDM3`), and Table 4 a … (`DEFC`).[^pdk-03]" are one table
+  (the guide's R-PARAMS example). The two markers stay at the ends of their groups (the `FOMSESC` and
+  `DEFC` value cells), so each still closes the rows its sentence covered. "the PDK does not reconcile
+  these" follows the table as "The PDK does not reconcile the Table 2 and Table 7 values …": the pronoun
+  given its noun back, so that it still means the four values it meant and not all seven rows. The
+  descriptions are the page's words: quoted where it quoted ("MOSFET width" …), unquoted where it
+  paraphrased ("minimum feature", "minimum space").
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,refs`): markers `mask-renders` ×2 (render sentence;
+  "… how many projects draw active area.", split at its colon), `pdk-errors` (*Error Messages*
+  sentence), `steps-sheet` ("Plate number": its dash pair became a colon and a full stop);
+  numbers — the PDK-table column (`2`, `7`, `3` from "3c") and "the Table 2 and Table 7 values", and `4`,
+  `5` from difftap.4/difftap.5 in the rule-table caption; ref `step-004` (the repeated hedge above).
+  Markers moved to their own clause, not added: the Table C3 / x.15a sentence ended
+  `[^pdk-06][^pdk-periph]`; split, the C3 half takes `pdk-06` and the x.15a half `pdk-periph`.
+* **LOST `number_order` (read by hand):** ('2', '0.14', '0.27', '7', '0.135', '0.075', '0.150', '1') and
+  ('3', '0.12', '0.34', '4', '0.15') — the R-PARAMS table. The values run 0.14, 0.27, 0.135, 0.075, 0.12,
+  0.34, 0.15 down the rows as in the base; each value's PDK table matches the base; the reconcile sentence
+  (0.150, difftap.1) follows the table, as R-PARAMS 3 asks.
+* **Marker coverage.** Flags read: lists and table rows under their lead-in or group-final markers; the
+  reconcile sentence had no marker of its own in the base.
+* **Over the caps after the pass:** the Exposure-class formula sentence (47 by the script); three
+  quick-facts cells (Drawn layer 38 — checker-compared; Polarity and tone 41 and Exposure class 34, not in
+  the body). Before → after: paragraphs 11 → 0, items 0 → 0, sentences 16 → 1, cells 3 → 3.
+* **Content problems for the owner:** none found.

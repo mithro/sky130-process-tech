@@ -5,17 +5,7 @@ The field-oxide mask is the {term}`reticle` that draws the active
 islands of SKY130 — every transistor source, drain and channel, every
 well and substrate tap — and, by leaving them out, every isolation
 trench between them. On the {ref}`FOM <step-004>` page's reading it is
-the first lithography of the flow: the resist printed through it stays
-over the future active areas, {ref}`STINITE <step-005>` opens the
-nitride and pad oxide around them and {ref}`STIE <step-006>` cuts the
-{term}`STI` trenches into the silicon. Because nothing is on the wafer
-before it, the step page also reads it as the level that every later
-mask aligns to. This page gathers what public sources say about the
-mask itself — its PDK entry and layers, the plates the process-steps
-sheet records for the MPW runs, what the public renders of those runs
-show, the lithography it needs and the rules that constrain it. How the
-step is performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+the first lithography of the flow.
 
 | | FOM — Field Oxide |
 |---|---|
@@ -32,7 +22,20 @@ step is performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-fom-steps>` |
 
+:::{seealso}
+How the
+step is performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`FOM <step-004>` page's reading, the resist printed through the mask stays
+over the future active areas, {ref}`STINITE <step-005>` opens the
+nitride and pad oxide around them and {ref}`STIE <step-006>` cuts the
+{term}`STI` trenches into the silicon. Because nothing is on the wafer
+before it, the step page also reads it as the level that every later
+mask aligns to.
 
 The periphery rules give the function of the `diff` and `tap` rule set
 as "Defines active regions and contacts to substrate".[^pdk-periph]
@@ -43,19 +46,26 @@ to the well/substrate underneath)", the well and substrate
 contacts.[^pdk-06] Both are silicon that the trench etch must not
 touch, so on the {ref}`FOM <step-004>` page's reading one plate carries
 them together, and what separates them later is the source/drain
-implant masks, not this one. The mask therefore sets the drawn
+implant masks, not this one.
+
+The mask therefore sets the drawn
 transistor width (difftap.1, 0.150 µm, and the minimum channel width
 difftap.2, 0.420 µm, flag P) and the narrowest isolation (difftap.3,
 0.270 µm between diff and diff, tap and tap, or non-abutting diff and
 tap).[^pdk-periph]
 
-The PDK's mask generation table, Table F2b, marks the `FOM` column `C`
-("CREATED") in 61 of its 80 device rows — the diffusion resistors and
-the isolated P-well resistor, every transistor and varactor, the diodes
-with a diffused junction, the bipolar transistors and the ESD
-transistors — and `+`, "Layer allowed to overlap", in 15 rows: the LI
-resistor, the MiM and VPP capacitors, the three inductors and eight
-diodes formed between wells, deep N-well and substrate.[^pdk-06] The
+The PDK's mask generation table, Table F2b, marks the `FOM` column:[^pdk-06]
+
+* `C`
+  ("CREATED") in 61 of its 80 device rows — the diffusion resistors and
+  the isolated P-well resistor, every transistor and varactor, the diodes
+  with a diffused junction, the bipolar transistors and the ESD
+  transistors
+* `+`, "Layer allowed to overlap", in 15 rows: the LI
+  resistor, the MiM and VPP capacitors, the three inductors and eight
+  diodes formed between wells, deep N-well and substrate
+
+The
 four rows marked `-`, "Layer not created for the device", are the n+
 and p+ poly resistors and the two metal fuses.[^pdk-06] No other column
 of the table has as many `C` marks; on the table's evidence almost every
@@ -64,12 +74,14 @@ reading of the table).
 
 The mask also carries shapes that belong to no device. Table C3 of the
 *Layers Reference* defines `fom_waffles` as "fom.mk with dimensions (um
-x um): 0.5 x 0.5, 1.5 x 1.5, 2.5 x 2.5 and 4.08 x 4.08", and rule x.15a,
+x um): 0.5 x 0.5, 1.5 x 1.5, 2.5 x 2.5 and 4.08 x 4.08".[^pdk-06] Rule x.15a,
 which confines mask and waffle-drop layers to test modules, seal ring
 and frame, makes an exception: "FOM/P1M/Metal waffle drop are allowed
-inside the die" (flag P).[^pdk-06][^pdk-periph] The
+inside the die" (flag P).[^pdk-periph] The
 {ref}`FOM <step-004>` page reads the "waffles" as dummy active squares
-that keep the {term}`CMP` of {ref}`CMPNIT <step-012>` uniform. Tian,
+that keep the {term}`CMP` of {ref}`CMPNIT <step-012>` uniform.
+
+Tian,
 Tang and Wong formulated dummy-feature placement for the STI polish,
 which removes two materials at different rates and so needs its own
 model of how topography follows {term}`pattern density`;[^tian-2002]
@@ -84,13 +96,17 @@ oxide mask") and `drawing` 22:20, `mask add` 22:21, `mask drop` 22:22
 and `waffle drop` 22:24 on a different layer number; `fom` has a
 `dummy` purpose at 22:23 with no description.[^pdk-06] The drawn layers
 are `diff` 65:20 and `tap` 65:44, with further `diff` purposes
-(`resistor` 65:13, `high voltage` 65:8 and others).[^pdk-06] The pairing
+(`resistor` 65:13, `high voltage` 65:8 and others).[^pdk-06]
+
+The pairing
 of `cfom` with `diff` and `tap` is the step page's inference; the PDK
 publishes no operation from the drawn layers to the plate. It does name
 the plate data in two definitions of Table C3: `fomDmy_keepout_1` is
 "(diff.dg OR tap.dg OR poly.dg OR pwell resistor OR pad OR cfom.dg OR
 cfom.mk OR PhotoArray OR cp1m.mk)", and `Diecut_pmm` is "areaid.dt NOT
-(cfom.wp OR cp1m.wp OR cmm1.wp OR cmm2.wp)".[^pdk-06] We read the
+(cfom.wp OR cp1m.wp OR cmm1.wp OR cmm2.wp)".[^pdk-06]
+
+We read the
 suffixes `.dg`, `.mk` and `.wp` as the drawing, mask and waffle-drop
 purposes (inference from the purpose names; the table does not expand
 them), so the fill keep-out is built from the drawn active and the
@@ -113,9 +129,11 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `FOM` the site renders layers 65:20 (`diff`)
 and 65:44 (`tap`) together with 23:28, which it lists as a fill layer,
-with no Boolean expression, on all eight runs; its mask record gives the
+with no Boolean expression, on all eight runs.[^mask-renders] Its mask record gives the
 mask-level layer 23:0 and the note "FOM = diff OR tap (OR grown pnp
-emitter)".[^mask-renders] Layer 23:28 is not in
+emitter)".[^mask-renders]
+
+Layer 23:28 is not in
 `gds_layers.csv`,[^pdk-06] the render job lists no emitter term, and
 the site gives no source for the note. The choice of layers and the
 note are one public derivation from the drawn data, not SkyWater's
@@ -124,17 +142,21 @@ step page's pairing, but both start from the same public files, so the
 agreement is not independent confirmation.
 
 All 40 rendered dies of every run carry shapes on these layers, and the
-count says nothing about how many projects draw active area: every die
+count says nothing about how many projects draw active area.[^mask-renders] Every die
 carries at least 1 438 841 shapes, and the per-die minimum on each run
 lies between 1 438 841 and 1 579 678.[^mask-renders] Unlike the `DNM`
 counts, these rarely repeat — no two dies share a count on MPW-1, MPW-4
 or MPW-8, and on no run do more than seven dies have a count that
-another die shares — so they vary with the projects. We read the large
+another die shares — so they vary with the projects.
+
+We read the large
 minimum as fill and structures that every die of these runs carries,
 which the site counts together with the drawn active (inference; the
 site does not break the count down by layer).[^mask-renders] On MPW-1
 one die accounts for 99 % of the run's `FOM` shapes, so the site's run
-totals are not comparable between runs ({ref}`masks-renders`). The site
+totals are not comparable between runs ({ref}`masks-renders`).
+
+The site
 states the limits of its images: "These are renders of *drawn* data, not
 photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
 features the fab adds are not modelled."[^mask-renders] Its metadata
@@ -164,8 +186,8 @@ the renders site calls the run's reticle set
 | MPW-8 | `5CS8017AC` | `S8017AA020A` |
 
 * **Plate number.** `020` is low, but the numbers do not follow process
-  order — `NSM` (step 165) is `007` and `NWM` (step 17) `010`, both
-  below the first mask of the flow — and the sheet does not say what
+  order: `NSM` (step 165) is `007` and `NWM` (step 17) `010`, both
+  below the first mask of the flow.[^steps-sheet] The sheet does not say what
   they encode, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type and magnification.** The sheet's "Sheet4" tab gives no
@@ -178,10 +200,12 @@ the renders site calls the run's reticle set
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`FOM <step-004>` page puts the 0.150 µm
+### Exposure class
+
+The {ref}`FOM <step-004>` page puts the 0.150 µm
 active line at {math}`k_1 \approx 0.25` on an i-line lens of NA 0.6 and
 at about 0.4 on a KrF lens of NA 0.6–0.7, and infers a 248 nm level,
-with i-line as the fallback "if the layer were relaxed"; the
+with i-line as the fallback "if the layer were relaxed". The
 {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there and
 the {ref}`i-line stepper <machine-i-line-stepper>` page as an
 alternative. ASML's PAS 5500/750E, introduced in 2000, "achieves 130 nm
@@ -189,63 +213,74 @@ resolution while using standard 248 nm light".[^asml-750e] SkyWater
 lists "ASML DUV stepper" and "ASML DUV scanner" among its tools but
 assigns no layer to them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns", and that
 dark-field spaces are more sensitive than light-field lines.[^wong-1998]
+
 At 248 nm that threshold is about 207 nm at NA 0.6 and 177 nm at NA 0.7
-(our arithmetic): the 0.150 µm active line lies below it and the 0.270
+(our arithmetic). The 0.150 µm active line lies below it and the 0.270
 µm trench space above it, so on the KrF reading a CD error on the plate
 would print enlarged on the narrowest active lines and about one to one
-on the trenches (inference). *Criteria & Assumptions* gives a general
+on the trenches (inference).
+
+*Criteria & Assumptions* gives a general
 "Min process bias 3s tolerance" of 0.032 (`PHTOL`) and no
 active-specific CD tolerance.[^pdk-03] Thung et al. evaluated
 "re-designs of the STI layout with Optical Proximity Correction (OPC)
 tagging" among the changes that removed defects when 0.13 µm STI was run
-on 0.18 µm-generation tools;[^thung-2016] rules-based correction of the
+on 0.18 µm-generation tools.[^thung-2016] Rules-based correction of the
 kind Otto et al. describe[^otto-1994] is one form of proximity
 correction, and the PDK does not say whether `FOM` data are corrected.
+
 Unlike P1M, `FOM` is not among the layers of the finer grid rule x.1a,
 whose 0.001 ("mm") grid is for "p1m.md (OPC)" and the "mask data for
 p1m, met1, via, met2"; x.1b gives 0.005 for all other
 layers.[^pdk-periph]
 
-**Pattern density.** The plate is also a density map for the polish
-that follows. Table 4 of *Criteria & Assumptions* gives an "S8 average
-FOM PD (extractions from logic device)" of 0.45 (`FOMPDAVG`), a "FOM
-700um box PD tolerance for CMP (SOI8 PCR2) for all technologies" of
-0.15 (`FOM700TOL`), extraction boxes of 700 and 2000 (`SMALLPDBOX`,
-`LARGEPDBOX`, both labelled "(um)") and a "Stepping box shift as a
-percent of box size" of 0.5 (`BOXSHIFT`).[^pdk-03] We read these as the
+### Pattern density
+
+The plate is also a density map for the polish
+that follows. Table 4 of *Criteria & Assumptions* gives:[^pdk-03]
+
+* an "S8 average
+  FOM PD (extractions from logic device)" of 0.45 (`FOMPDAVG`)
+* a "FOM
+  700um box PD tolerance for CMP (SOI8 PCR2) for all technologies" of
+  0.15 (`FOM700TOL`)
+* extraction boxes of 700 and 2000 (`SMALLPDBOX`,
+  `LARGEPDBOX`, both labelled "(um)")
+* a "Stepping box shift as a
+  percent of box size" of 0.5 (`BOXSHIFT`)
+
+We read these as the
 window over which the plate's active density, fill included, is checked
 (inference; the table does not say how the check is run). Stine et al.
 characterised and modelled such pattern-dependent CMP
-variation;[^stine-1998] Gan et al. modelled the polish of a reverse-tone
+variation.[^stine-1998] Gan et al. modelled the polish of a reverse-tone
 etchback STI flow, predicting dishing and nitride erosion from pattern
-density and step height;[^gan-2001] and a TSMC patent places dummy
+density and step height.[^gan-2001] A TSMC patent places dummy
 structures for CMP planarity while limiting the capacitance they
-add.[^pat-dummy-tsmc] `gds_layers.csv` has an `areaid.ww` identifier,
+add.[^pat-dummy-tsmc]
+
+`gds_layers.csv` has an `areaid.ww` identifier,
 "Waffle window (used to prevent waffle shifting)", and Table C3 defines
 the waffling "background" as the "Area where waffling grid is defined,
 sized to avoid waffle shift between runs".[^pdk-06]
 
-**Resist and tone.** The step page reads a chemically amplified KrF
+### Resist and tone
+
+The step page reads a chemically amplified KrF
 resist over an organic bottom anti-reflective coating or an inorganic
 anti-reflective cap on the nitride, and leaves the choice and the
 reticle tone open; neither is published. The consumables are on
 the {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
-transferred by {ref}`STINITE <step-005>` through any anti-reflective
-coating, the isolation nitride and the pad oxide on the
-{ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
-class, and by {ref}`STIE <step-006>` into the silicon on the
-{ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
-class; the {ref}`STIE <step-006>` page treats the resist strip and the
-polymer clean as part of the trench etch, and lists where the strip
-happens as an open question.
+### Overlay and alignment
 
-**Alignment.** On the {ref}`FOM <step-004>` page's reading there is no
+On the {ref}`FOM <step-004>` page's reading there is no
 earlier pattern to align to, and the plate prints the marks that later
 levels register to; the step page leaves a separate zero-mark step open.
 The implant masks that follow align to the trenches on their step pages'
@@ -253,22 +288,43 @@ readings ({ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`), and the poly
 mask to the same marks ({ref}`mask-p1m`). Edmark and Ausschnitt
 calibrated stepper overlay by aligning to a latent image,[^edmark-1985]
 and van Haren et al. show how the placement accuracy of wafer alignment
-marks limits layer-to-layer overlay.[^van-haren-2019] The margins that
-depend on the placement of this level are those of the poly rules
-against diffusion — 0.130 of poly beyond diffusion (poly.8) and 0.250 of
-diffusion beyond poly (poly.7), whose unit cells are blank in the
-published table — and of the implant and well rules against it, such as
-difftap.8's 0.180 µm N-well enclosure of p+ diffusion.[^pdk-periph] The
-PDK's *Error Messages* page, which describes "many of the automated DRC
+marks limits layer-to-layer overlay.[^van-haren-2019]
+
+The margins that
+depend on the placement of this level are:[^pdk-periph]
+
+* those of the poly rules
+  against diffusion — 0.130 of poly beyond diffusion (poly.8) and 0.250 of
+  diffusion beyond poly (poly.7), whose unit cells are blank in the
+  published table
+* those of the implant and well rules against it, such as
+  difftap.8's 0.180 µm N-well enclosure of p+ diffusion
+
+The
+PDK's *Error Messages* page describes "many of the automated DRC
 rules that are checked by SkyWater as part of the acceptance criteria
-for GDS data", lists two checks named `cfom.nikon`, "FOMmk in the nikon
+for GDS data".[^pdk-errors] It lists two checks named `cfom.nikon`, "FOMmk in the nikon
 cross has the wrong polarity" and "FOMmk is missing from the nikon cross
 in the layout", and the same pair for most other mask
-layers.[^pdk-errors] The page does not say what the "nikon cross" is or
-where it sits; we read it as a structure on these mask layers whose mask
+layers.[^pdk-errors]
+
+The page does not say what the "nikon cross" is or
+where it sits. We read it as a structure on these mask layers whose mask
 data must have the right polarity (inference from the message wording),
 which does not settle whether `FOM` carries the zero-level alignment
 marks.
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
+transferred by {ref}`STINITE <step-005>` through any anti-reflective
+coating, the isolation nitride and the pad oxide on the
+{ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
+class, and by {ref}`STIE <step-006>` into the silicon on the
+{ref}`silicon and polysilicon plasma etcher <machine-plasma-etcher-silicon>`
+class. The {ref}`STIE <step-006>` page treats the resist strip and the
+polymer clean as part of the trench etch, and lists where the strip
+happens as an open question.
 
 (mask-fom-steps)=
 ## Steps that use this mask
@@ -307,6 +363,8 @@ may not exist.", NE "Rule not checked for esd_nwell_tap. There are no
 corresponding rule for esd_nwell_tap." and DE "Rule not checked for
 source of Drain Extended device".[^pdk-periph]
 
+:::{table} Periphery design rules naming `diff` and `tap`, as published; the unit column of difftap.4 and difftap.5 is blank in the published table
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | difftap.1 | "Width of diff or tap" (P) | 0.150 µm |
@@ -326,19 +384,28 @@ source of Drain Extended device".[^pdk-periph]
 | x.2c | "45 degree angles allowed on diff, tap inside UHVI" | — |
 | x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. Exempted are: […] cfom md/mp inside […] pcell […]" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 The unit column of difftap.4 and difftap.5 is blank in the published
-table.[^pdk-periph] Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the
-minimum feature and space as `FOMCD` 0.14 and `FOMCDSP` 0.27, and Table
-7 gives a "MOSFET width" of 0.135 (`FOMSE`) and a "MOSFET width in
-standard cells" of 0.075 (`FOMSESC`);[^pdk-03] the PDK does not
-reconcile these with the 0.150 µm of difftap.1, and the smaller values
+table.[^pdk-periph] [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the following:
+
+:::{table} Parameters of *Criteria & Assumptions* that bear on this mask
+
+| Parameter | PDK table | Published description | Value |
+|---|---|---|---:|
+| `FOMCD` | Table 2 | minimum feature | 0.14 |
+| `FOMCDSP` | Table 2 | minimum space | 0.27 |
+| `FOMSE` | Table 7 | "MOSFET width" | 0.135 |
+| `FOMSESC` | Table 7 | "MOSFET width in standard cells" | 0.075[^pdk-03] |
+| `MINFWR` | Table 3c | "Min. diff/tap width for reproducible resistivity" | 0.12 µm |
+| `SDM3` | Table 3c | "Min. width to open a strip of tap between two diffs" | 0.34 µm |
+| `DEFC` | Table 4 | "min. etch and fill capability for isolation, licon, and met1" | 0.15[^pdk-03] |
+:::
+
+The PDK does not
+reconcile the Table 2 and Table 7 values with the 0.150 µm of difftap.1, and the smaller values
 may describe the printed or etched width rather than the drawn one (our
-reading; neither table says). Table 3c gives a "Min. diff/tap width for
-reproducible resistivity" of 0.12 µm (`MINFWR`) and a "Min. width to
-open a strip of tap between two diffs" of 0.34 µm (`SDM3`), and Table 4
-a "min. etch and fill capability for isolation, licon, and met1" of
-0.15 (`DEFC`).[^pdk-03] The SKY130 {term}`test tile`'s pad
+reading; neither table says). The SKY130 {term}`test tile`'s pad
 documentation draws its field-edge gate-oxide capacitors at "FOM w/s =
 0.14/0.27", the Table 2 pair, and its high-voltage ones at "FOM w/s =
 0.42/0.48".[^raw-data-testtile-pads] For the plate, difftap.1 and
@@ -352,17 +419,17 @@ space.
   trench etch.
 * {ref}`CMPNIT <step-012>` — the polish whose uniformity the fill
   shapes serve.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
+  and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` and {ref}`machine-i-line-stepper` — the
   exposure class the step page assigns and its fallback.
-* {ref}`machine-plasma-etcher-dielectric` and
+  {ref}`machine-plasma-etcher-dielectric` and
   {ref}`machine-plasma-etcher-silicon` — the etch classes that transfer
   the pattern.
-* {ref}`material-lithography-materials` — resists, anti-reflective
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
-  and etch categories.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
