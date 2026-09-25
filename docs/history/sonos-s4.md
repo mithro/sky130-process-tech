@@ -37,7 +37,7 @@ How many masks SONOS added is given three ways:
   Cypress.[^chipest-2008]
 * **Five** "beyond the standard CMOS process", in a later Cypress product brief.[^eflash-brief]
 
-The three are all Cypress's, describe different generations, and do not necessarily conflict.[^qtp-021507][^chipest-2008][^eflash-brief]
+The three are all Cypress's. They may describe different generations (our reading).[^qtp-021507][^chipest-2008][^eflash-brief]
 
 ## Dates and fabs
 
@@ -71,7 +71,7 @@ The sources give three design rules for the same process:
 | Design rule | Where, and the report's print date | Source |
 |---|---|---|
 | 0.5 µm | Fab 2, 2015 reissue of a 2003 report | one report[^qtp-021507] |
-| 0.35 µm | Fab 2 (2005, 2007), GSMC (2014), HHGrace (2015) | four reports[^qtp-042806][^qtp-051005][^qtp-062509][^qtp-151005] |
+| 0.35 µm | Fab 2 (2005, 2007), GSMC (2014), HHGrace (2015) | four Cypress reports[^qtp-042806][^qtp-051005][^qtp-062509][^qtp-151005] |
 | 0.4 µm | Grace, 2007 | one article, EE Times: "a 0.4-micron process for its mixed-signal programmable system-on-chip (PSoC)"[^eet-2007-fablite] |
 
 Cypress wrote in 2002 that the SONOS process "reduced our Fab 2 line width from 0.5-micron to

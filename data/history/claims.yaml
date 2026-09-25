@@ -270,8 +270,8 @@ claims:
 - id: fab4-one-site
   page: docs/history/fabs.md
   anchor: Both descriptions fit the reports
-  grade: attributed
-  attribution: (our reading)
+  grade: inference
+  hedge: (our reading)
   footnotes: [strib-2017, strib-2019]
   sources:
   - {id: cyx-startribune-2017-plant, origin: startribune}
@@ -525,7 +525,7 @@ claims:
   page: docs/history/technologies.md
   anchor: 'an SRAM process: double poly and 165 Å'
   grade: attributed
-  attribution: The earliest R28 reports found
+  attribution: (Cypress's reports)
   footnotes: [qtp-096091, qtp-097476]
   sources:
   - {id: qtp-096091, origin: cypress}
@@ -697,7 +697,7 @@ claims:
 - id: tech-b53
   page: docs/history/technologies.md
   anchor: That it is the BiCMOS process is our reading
-  grade: single-source
+  grade: inference
   hedge: our reading
   footnotes: [qtp-032005]
   sources:
@@ -881,8 +881,8 @@ claims:
 - id: s4-masks-three-ways
   page: docs/history/sonos-s4.md
   anchor: The three are all Cypress's
-  grade: conflict
-  hedge: do not necessarily conflict
+  grade: inference
+  hedge: (our reading)
   footnotes: [qtp-021507, chipest-2008, eflash-brief]
   sources:
   - {id: qtp-021507, origin: cypress}
@@ -952,7 +952,7 @@ claims:
   page: docs/history/sonos-s4.md
   anchor: '| 0.35 µm | Fab 2 (2005, 2007), GSMC (2014), HHGrace (2015) |'
   grade: attributed
-  attribution: four reports
+  attribution: four Cypress reports
   footnotes: [qtp-042806, qtp-051005, qtp-062509, qtp-151005]
   sources:
   - {id: qtp-042806, origin: cypress}
@@ -998,7 +998,7 @@ claims:
 - id: s4-7a-oxide
   page: docs/history/sonos-s4.md
   anchor: which we read as a truncated
-  grade: single-source
+  grade: inference
   hedge: our reading
   footnotes: [qtp-042806]
   sources:
@@ -1181,7 +1181,7 @@ claims:
   page: docs/history/naming.md
   anchor: '| 2 | P20, R28, L28, L28EPD, P26'
   grade: attributed
-  attribution: reports
+  attribution: Cypress's reports
   footnotes: [qtp-091216, qtp-096091, qtp-011503]
   sources:
   - {id: qtp-091216, origin: cypress}
@@ -1191,7 +1191,7 @@ claims:
   page: docs/history/naming.md
   anchor: '| 3 | R32, R32D'
   grade: attributed
-  attribution: Name in the annual reports
+  attribution: Cypress's annual reports
   footnotes: [qtp-097132, ar-fy1995]
   sources:
   - {id: qtp-097132, origin: cypress}
@@ -1214,9 +1214,9 @@ claims:
   - {id: qtp-011908, origin: cypress}
 - id: name-letter-r
   page: docs/history/naming.md
-  anchor: '| R | the reports also write'
+  anchor: "| R | Cypress's reports also write"
   grade: attributed
-  attribution: the reports
+  attribution: Cypress's reports
   footnotes: [qtp-091302, qtp-014807, qtp-024110]
   sources:
   - {id: qtp-091302, origin: cypress}
@@ -1225,8 +1225,8 @@ claims:
 - id: name-letter-s
   page: docs/history/naming.md
   anchor: '| S | "S4AD-5 (SONOS)"'
-  grade: attributed
-  attribution: Our reading
+  grade: inference
+  hedge: Our reading
   footnotes: [qtp-021507, ew-2007-s8]
   sources:
   - {id: qtp-021507, origin: cypress}
@@ -1234,8 +1234,8 @@ claims:
 - id: name-suffix-voltage
   page: docs/history/naming.md
   anchor: '| -3, -5 |'
-  grade: attributed
-  attribution: Our reading
+  grade: inference
+  hedge: Our reading
   footnotes: [qtp-099202, qtp-011908, qtp-061806, qtp-021507, qtp-113005]
   sources:
   - {id: qtp-099202, origin: cypress}
@@ -1299,8 +1299,8 @@ claims:
 - id: idx-s8-joined
   page: docs/history/index.md
   anchor: S8, in our reading, joined the two lines.
-  grade: attributed
-  attribution: (our reading)
+  grade: inference
+  hedge: our reading
   footnotes: [pin-152804, qtp-113005, qtp-021507]
   sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}

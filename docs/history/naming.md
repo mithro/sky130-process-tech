@@ -12,7 +12,7 @@ a fast 0.25 µm SRAM process, **S** + **4** + **AD-5** for the 0.35 µm SONOS pr
 codes by their first digit, with the design rules the reports print and the names Cypress used in its
 annual reports:
 
-| Digit | Codes in the reports | Design rule printed | Name in the annual reports |
+| Digit | Codes in Cypress's reports | Design rule printed | Name in Cypress's annual reports |
 |---|---|---|---|
 | 2 | P20, R28, L28, L28EPD, P26[^qtp-091216][^qtp-096091][^qtp-011503] | 0.8 µm (P20) and 0.65 µm | — |
 | 3 | R32, R32D[^qtp-097132] | 0.5 µm | RAM3, "0.5-micron feature geometry"[^ar-fy1995] |
@@ -32,7 +32,7 @@ conflicts: the 2015 notice says "250nm R7" while the R7 reports print 0.18–0.1
 
 | Letter | What the sources show | Our reading |
 |---|---|---|
-| R | the reports also write "RAM42", "RAM7FT-3R" and "RAM8NLD-1.8" for these codes[^qtp-091302][^qtp-014807][^qtp-024110] | RAM (SRAM) process |
+| R | Cypress's reports also write "RAM42", "RAM7FT-3R" and "RAM8NLD-1.8" for these codes[^qtp-091302][^qtp-014807][^qtp-024110] | RAM (SRAM) process |
 | S | "S4AD-5 (SONOS)"; S8 is "0.13-micron SONOS"[^qtp-021507][^ew-2007-s8] | SONOS process |
 | C | C8 made USB and clock chips; L8C-3R is a "Technology Derivative of the C8 Technology"; but C9FD-3R made fast SRAMs[^eet-2006-c8][^qtp-053301][^qtp-063807] | CMOS logic process, with exceptions |
 | L | L28 and L8C-3R made clock, PLL and logic parts[^qtp-011503][^qtp-053301] | a logic process |

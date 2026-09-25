@@ -50,7 +50,7 @@ source).[^ar-fy1993] The reports show three 0.65 µm processes, all with two met
 reports):[^qtp-096091][^qtp-096411][^qtp-011503]
 
 * **R28**, an SRAM process: double poly and 165 Å of gate oxide. The earliest R28 reports found are of
-  September 1996, at Fab 3; Fab 2 followed in November 1997.[^qtp-096091][^qtp-097476]
+  September 1996, at Fab 3; Fab 2 followed in November 1997 (Cypress's reports).[^qtp-096091][^qtp-097476]
 * **P26**, for PROMs and EPROMs such as the CY27C256A, at Fab 2: 165 Å of gate oxide (single source).[^qtp-096411]
 * **L28**, for clock and logic parts: single poly and 145 Å of gate oxide. One report dates "New
   Technology L28" to February 1996 (Cypress's reports).[^qtp-000901][^qtp-011503]

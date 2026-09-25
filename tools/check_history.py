@@ -30,7 +30,10 @@ with the organisation it comes from (``origin``). The rules:
 * ``grade: single-source`` has one source; the anchor's paragraph must
   carry the tag "(single source)" or the claim's ``hedge`` phrase;
 * ``grade: conflict`` needs at least two sources and a paragraph that
-  contains the claim's ``hedge`` phrase (how the page states the conflict).
+  contains the claim's ``hedge`` phrase (how the page states the conflict);
+* ``grade: inference`` is this reference's reading of other claims; its
+  paragraph must carry the claim's ``hedge``, "our reading", "our arithmetic"
+  or "our inference".
 
 Run ``uv run tools/check_history.py``; ``--selftest`` runs the offline tests.
 """
@@ -52,7 +55,7 @@ INVENTORY = HISTORY / "sources.md"
 DATA = ROOT / "data" / "history"
 CLAIMS = DATA / "claims.yaml"
 MIN_DEEP = 12
-GRADES = {"corroborated", "attributed", "single-source", "conflict"}
+GRADES = {"corroborated", "attributed", "single-source", "conflict", "inference"}
 SINGLE_TAG = "(single source)"
 
 
@@ -134,9 +137,10 @@ def paragraph_of(text: str, anchor: str) -> str | None:
 # What may count as an attribution (it must name who says it) and as a single-source or
 # conflict hedge (it must say so), so that a phrase such as "See" cannot pass.
 ATTRIBUTIONS = ("Cypress", "EE Times", "EDN", "Electronics Weekly", "Semiconductor Digest", "Star Tribune",
-                "SkyWater", "Infineon", "Gale", "FundingUniverse", "Connect CRE", "Wikipedia", "reports", "our reading", "patent records")
-SINGLE_HEDGES = ("(single source)", "single source", "our reading", "one report", "one article", "only public")
-CONFLICT_HEDGES = ("disagree", "conflict", "differ", "not reconciled", "not necessarily")
+                "SkyWater", "Infineon", "Gale", "FundingUniverse", "Connect CRE", "Wikipedia", "patent records")
+SINGLE_HEDGES = ("(single source)", "single source", "one report", "one article")
+CONFLICT_HEDGES = ("disagree", "conflict", "differ", "not reconciled")
+INFERENCE_HEDGES = ("our reading", "our arithmetic", "our inference")
 
 
 def check_claims(claims: list[dict], pages: dict[str, str], ids: dict[str, str]) -> list[str]:
@@ -172,7 +176,7 @@ def check_claims(claims: list[dict], pages: dict[str, str], ids: dict[str, str])
             problems.append(f"{where}: anchor {c.get('anchor')!r} not found on {page}")
             continue
         footnotes = c.get("footnotes") or []
-        if not footnotes:
+        if not footnotes and grade != "inference":
             problems.append(f"{where}: no footnotes listed")
         in_para = set(check_refs.REF_RE.findall(para))
         for fn in footnotes:
@@ -205,6 +209,12 @@ def check_claims(claims: list[dict], pages: dict[str, str], ids: dict[str, str])
                 problems.append(f"{where}: conflict hedge {hedge!r} not in the anchor's paragraph")
             elif not any(h in hedge for h in CONFLICT_HEDGES):
                 problems.append(f"{where}: conflict hedge {hedge!r} does not say the sources disagree")
+        if grade == "inference":
+            hedge = c.get("hedge") or ""
+            if not hedge or hedge not in para:
+                problems.append(f"{where}: inference hedge {hedge!r} not in the anchor's paragraph")
+            elif not any(h in hedge.lower() for h in INFERENCE_HEDGES):
+                problems.append(f"{where}: inference hedge {hedge!r} does not mark the claim as our reading")
     return problems
 
 
