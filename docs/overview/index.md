@@ -39,11 +39,15 @@ sheet.[^steps-sheet] The sheet records what it calls each step and
 nothing about how the step is done: a step name is not evidence of a
 film, chemistry, tool, dose or temperature, and where a name needs
 interpreting the pages say "the step list does not explain …; we read
-…" and base the reading on other public sources. Each step is assigned
+…" and base the reading on other public sources.
+
+Each step is assigned
 to one of ten categories; the flow has 41 deposition, 36 lithography,
 27 etch, 25 implant, 15 strip, 12 {term}`CMP`, 7 anneal and 6
 oxidation steps, one starting-material step and one test step
-({ref}`categories-index`). Resist strips that follow an *etch* mask have
+({ref}`categories-index`).
+
+Resist strips that follow an *etch* mask have
 no step of their own in the list, and the step pages treat them as part
 of the etch ({ref}`category-strip`).
 
@@ -172,7 +176,7 @@ gives its public basis and marks what is inferred.
 
 ### Starting material, isolation and deep N-well
 
-The wafer enters as
+**Trench formation.** The wafer enters as
 bare p-type silicon — the stack diagram labels the bottom
 "p-substrate"[^pdk-04] — and the first module builds
 {term}`shallow trench isolation <STI>`: a pad oxide and a nitride
@@ -181,13 +185,17 @@ first mask ({ref}`FOM <step-004>`, which on this reference's reading
 also prints the alignment marks for later levels), a nitride etch and a
 silicon trench etch, a liner oxidation, an oxide fill, a polish that
 stops on the nitride, and the nitride strip ({ref}`STINITE <step-005>`
-to {ref}`NS19 <step-013>`). The step list places the deep N-well mask,
+to {ref}`NS19 <step-013>`).
+
+**Deep N-well timing.** The step list places the deep N-well mask,
 implant and strip ({ref}`DNM <step-007>` to {ref}`DNIS <step-009>`)
 between the trench etch and the liner oxidation. On the {ref}`DNM <step-007>`
 page's reading, the implant therefore enters through open trenches and is
 driven by the heat of the isolation module (inference); that page also sets
 out why that order may have been
-chosen, as inferences. No trench depth is public; the {ref}`STIE <step-006>`
+chosen, as inferences.
+
+**Trench depth.** No trench depth is public; the {ref}`STIE <step-006>`
 page reads the stack diagram as consistent with roughly 0.3 µm and
 explains why the drawing cannot fix it.
 
@@ -419,10 +427,8 @@ the trench floor). Reading it from the bottom up, with the step pages:
 The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale and adds nothing to them, except that it follows this page's reading of the 1.0111 µm label as the top of the LINT beside li.[^pdk-04] The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
 :::
 
-The table lists the levels bottom to top with the thicknesses and
-heights the step pages quote. Dielectric heights are the diagram's
-labels for the intervals between conductors, not deposited thicknesses;
-where no number is given, none is public.
+:::{table} The table lists the levels bottom to top with the thicknesses and heights the step pages quote. Dielectric heights are the diagram's labels for the intervals between conductors, not deposited thicknesses; where no number is given, none is public.
+:widths: 16 20 28 12 24
 
 | Level (bottom to top) | PDK name or description | Thickness quoted | Level on the diagram (µm) | Built at |
 |-----------------------|-------------------------|------------------|---------------------------|----------|
@@ -449,21 +455,28 @@ where no number is given, none is public.
 | Passivation oxide | "TOPOX K=3.9"[^pdk-04] | 0.09 µm on the metal, 0.070 µm on its sidewall[^pdk-04] | — | {ref}`NFUSOX <step-164>` |
 | Passivation nitride | "TOPNIT K=7.5"[^pdk-04] | 0.54 µm on the metal, 0.4223 µm on its sidewall on the diagram;[^pdk-04] the {ref}`NTSD <step-167>` page reads 0.5–0.9 µm, the Cypress reports for this fab giving 0.7–0.9 µm[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807] | — | {ref}`NTSD <step-167>` |
 | Polyimide | "PI1 K=2.94"[^pdk-04] | — | top 11.8834[^pdk-04] | no step in the step list |
+:::
 
-Most of the labels are consistent with one another. From metal 1
+**Metal 1 and up.** Most of the labels are consistent with one another. From metal 1
 upwards each metal bottom equals the one below plus that metal's
 thickness plus the via height (1.3761 + 0.36 + 0.27 = 2.0061 µm, and so
 on to 4.0211 + 0.845 + 0.505 = 5.3711 µm), and the PSG labels equal the
 distance from the field-oxide top to the `li` bottom (0.9361 − 0.3262 =
 0.6099 µm) and that distance less the 0.18 µm poly (0.4299 µm) (our
-arithmetic from the labels[^pdk-04]). Below metal 1 the labels add up
+arithmetic from the labels[^pdk-04]).
+
+**Checking downward.** Below metal 1 the labels add up
 too: the `li` bottom (0.9361 µm) plus the 0.1 µm `li`, the 0.075 µm LINT
 and the 0.265 µm NILD2 gives exactly the 1.3761 µm metal-1 bottom (our
-arithmetic from the labels[^pdk-04]). One label does not fit that
+arithmetic from the labels[^pdk-04]).
+
+**The one exception.** One label does not fit that
 reading. The 1.0111 µm level is 0.075 µm above the `li` bottom, not
 0.1 µm; the diagram, being not to scale, draws the top of `li` and the
 top of the LINT on the glass beside it at the same height, and the
-label's leader line runs to the LINT rather than to `li`. We therefore
+label's leader line runs to the LINT rather than to `li`.
+
+**Reading adopted.** We therefore
 read 1.0111 µm as the top of the LINT beside `li` (0.9361 + 0.075 µm),
 which fits every other label and leaves 0.34 µm from the `li` top to
 metal 1 (our reading of the drawing[^pdk-04]; the
@@ -484,18 +497,24 @@ changes:
 | {term}`MOL` | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | silicide and local interconnect |
 | {term}`BEOL` | {ref}`CTM1 <step-107>` – {ref}`HPETEST <step-171>` | 65 | contact and metal 1; via 1, metal 2, via 2; MiM capacitors, metal 3–5, via 3–4; passivation, pads, alloy, test |
 
-The front end ends with the last source/drain anneal, when every
+**Where each phase ends.** The front end ends with the last source/drain anneal, when every
 junction is in place. The middle of line runs from the pre-metal glass
 to the polished dielectric over the local interconnect, so it contains
 the first contacts (`licon`) and the local interconnect itself. The back
 end starts with the metal-contact mask and, in this reference, includes
-the passivation, the final alloy and electrical test. Two consequences
+the passivation, the final alloy and electrical test.
+
+Two consequences
 of these choices are worth knowing when comparing with other sources:
-in common usage the back end runs from the first contact through the
-final passivation, whereas this reference counts the first contact
-level as middle of line; and general descriptions place wafer testing
-after the back end, whereas this reference files
-{ref}`HPETEST <step-171>` under BEOL. The {ref}`glossary` and the
+
+* **Back end start** — in common usage the back end runs from the first contact through the
+  final passivation, whereas this reference counts the first contact
+  level as middle of line.
+* **Test placement** — general descriptions place wafer testing
+  after the back end, whereas this reference files
+  {ref}`HPETEST <step-171>` under BEOL.
+
+The {ref}`glossary` and the
 {ref}`test category page <category-test>` state both. The deposition of the metal-3 stack,
 {ref}`WTIAL3 <step-134>`, is also filed with via 2 rather than with the
 capacitor and metal-3 steps that follow it.
@@ -587,12 +606,14 @@ S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded
 nonvolatile memory technology",[^cyp-20] and a 2011 release still
 referred to "the current 130-nanometer S8™ process".[^cyp-22]
 
-The process was run in Cypress's Fab 4 in Bloomington, Minnesota.
+**The Bloomington fab.** The process was run in Cypress's Fab 4 in Bloomington, Minnesota.
 Cypress described Fab 4, where it was ramping its 0.13 µm technology in
 early 2003, as an "eight-inch wafer production facility",[^cyp-07] and a 2015
 Cypress notice qualified a new wafer supplier "for the 250nm R7, 130nm
 C8/R8/S8/L8 and 90nm C9/R9/R95 technology products at Cypress Fab 4 in
-Bloomington, Minnesota".[^cyp-06] On 2017-03-01 Cypress announced that it
+Bloomington, Minnesota".[^cyp-06]
+
+**Sale to SkyWater.** On 2017-03-01 Cypress announced that it
 had sold "the subsidiary that owns its semiconductor wafer fabrication
 facility in Bloomington, Minnesota to SkyWater Technology
 Foundry",[^cyp-01] and SkyWater described what it had bought as "a 200mm
@@ -600,7 +621,9 @@ semiconductor wafer manufacturing facility in Bloomington, Minn.",
 "Originally commissioned by Control Data Corporation in the
 1980s".[^skw-10] Wikipedia summarises the company's origin the same way:
 it "was formed in 2017, when private equity firm Oxbow Industries
-acquired Cypress Foundry Solutions".[^wiki-skywater] SkyWater lists "200
+acquired Cypress Foundry Solutions".[^wiki-skywater]
+
+**Fab equipment today.** SkyWater lists "200
 mm equipment" for the Minnesota fab,[^skw-01] and its annual report for
 2023 says that the same 200 mm fab offers "CMOS process flows for a
 number of different node dimensions … ranging from 90 nm—350 nm", so
@@ -616,12 +639,14 @@ PDK).
 
 ### The open PDK
 
-The open PDK is "a collaboration between Google and SkyWater Technology
+**Release and announcement.** The open PDK is "a collaboration between Google and SkyWater Technology
 Foundry to provide a fully open source Process Design Kit", released
 "under the Apache 2.0 license".[^pdk-10] It was announced in a FOSSi
 Foundation Dial-Up talk by Tim Ansell of Google, which the foundation
 reported on 2020-06-30 as the announcement of "SkyWater PDK, the first
-manufacturable, open source process design kit".[^ann-03] Wikipedia's
+manufacturable, open source process design kit".[^ann-03]
+
+**Corroboration and the shuttle programme.** Wikipedia's
 article on the node records the same event: "In 2020, American
 semiconductor company SkyWater Technology, in conjunction with Google
 and eFabless, released their 130 nm process design kit as open-source
@@ -639,7 +664,7 @@ thicknesses are drawn or tabulated for design, extraction and antenna
 calculations — which is why the step pages read each number for what
 it is.
 
-Measured silicon data are published too, in a separate raw-data
+**The repository and the test tile.** Measured silicon data are published too, in a separate raw-data
 repository: current–voltage and capacitance–voltage measurements
 "collected under contract by CoolCAD
 Electronics LLC using the manufacturing test tile created by
@@ -648,7 +673,9 @@ SkyWater",[^raw-data-readme] and the pad documentation of that
 resistors, capacitors and transistors layer by layer and are quoted on
 the step pages as public examples of e-test-type structures; the
 repository does not say they are the structures measured at
-{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads] Among the
+{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads]
+
+**The high-voltage transistor files.** Among the
 measured files are sweeps of the 5 V, 16 V and 20 V transistors, the
 native and zero-threshold NMOS, the ESD NMOS and the thick-oxide
 gate capacitors. Thresholds, resistances, body-effect coefficients and
@@ -658,7 +685,9 @@ the substrate ({ref}`SMAT <step-001>`), the gate oxide
 depletion implant ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`,
 {ref}`DEPI <step-038>`) and electrical test ({ref}`HPETEST <step-171>`), each marked as our
 extraction rather than a published value; the files record no
-temperature, date or wafer.[^raw-data-hv-mosfets] The files for the five
+temperature, date or wafer.[^raw-data-hv-mosfets]
+
+**The remaining transistor files.** The files for the five
 1.8 V transistor types (standard, low-Vt and high-Vt) are used the same
 way: measured thresholds, drain currents and body effect are quoted
 beside the e-test values at {ref}`HPETEST <step-171>`, on the
@@ -669,7 +698,9 @@ threshold-implant pages ({ref}`LVTNM <step-014>`,
 {ref}`BHI <step-066>`, for deep N-well at {ref}`DNI <step-008>` and for
 the source/drain diffusion extent at {ref}`FILOX <step-011>`; they bear
 on the pages' readings of those steps but give no implant doses or
-depths.[^raw-data-lv-mosfets] The files for the tile's resistors, MiM
+depths.[^raw-data-lv-mosfets]
+
+**The passive-device files.** The files for the tile's resistors, MiM
 capacitors, varactors and bipolar transistors are used in the same
 way. In our extraction from the published measurements the P+ precision
 poly resistors come out at about 310 Ω/sq ({ref}`PRI <step-053>`), the
@@ -684,19 +715,21 @@ record no temperature, date or wafer.[^raw-data-passives]
 
 ### What the process offers
 
-The PDK repository summarises the technology stack as "Support for
+**The repository's summary.** The PDK repository summarises the technology stack as "Support for
 internal 1.8V with 5.0V I/Os (operable at 2.5V)", "1 level of local
 interconnect", "5 levels of metal", "Is inductor-capable", "Has high
 sheet rho poly resistor", "Optional MiM capacitors", "Includes SONOS
 shrunken cell", "Supports 10V regulated supply" and "HV extended-drain
 NMOS and PMOS", and adds that SKY130 includes "many normally optional
 features as standard (features like the local interconnect, SONOS
-functionality, MiM capacitors, and more)".[^pdk-10] The [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
+functionality, MiM capacitors, and more)".[^pdk-10]
+
+**The Background page's list.** The [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
 page lists the stack as "5 levels of metal (p - penta)", "Inductor or
 Inductor-Capable (i)", "Poly resistor (r)", "SONOS shrunken cell
 (s)" and "Supports 10V regulated supply (10R)".[^pdk-02]
 
-The PDK's device pages document 1.8 V NMOS and PMOS transistors,
+**The PDK's device pages.** The PDK's device pages document 1.8 V NMOS and PMOS transistors,
 low-threshold NMOS and PMOS and a high-threshold PMOS, 1.8 V
 accumulation-mode varactors, native NMOS at 3.0 V and 5.0 V,
 "5.0V/10.5V" NMOS and PMOS, a "10V/16V PMOS FET" and an "11V/16V NMOS
@@ -704,7 +737,9 @@ FET", 20 V NMOS and PMOS (including native, zero-threshold and isolated
 NMOS), an ESD NMOS, diodes, NPN and PNP bipolar transistors, SRAM and
 {term}`SONOS` cells, generic and precision ("P+" and "P-") {term}`poly resistors <poly resistor>`,
 {term}`MiM capacitors <MiM capacitor>` and vertical parallel-plate
-capacitors.[^pdk-07] SkyWater's S130 platform table, re-read on
+capacitors.[^pdk-07]
+
+**SkyWater's platform table.** SkyWater's S130 platform table, re-read on
 2026-09-13, gives the same process in foundry terms: metal "5: Al",
 local interconnect "1", top metal "1.2 µm", "Mask Steps" "30 – 34",
 isolation "STI", gate "Poly", core voltage "1.8V", I/O "3.3V, 5.0V",
@@ -713,30 +748,45 @@ precision resistors "2000Ω/□ 300Ω/□ (Both P-poly)" and a "Bulk"
 substrate.[^skw-02]
 
 Each of these features has a visible cost in the step list, and the
-module table below shows where: the two gate-oxide thicknesses need a
-mask of their own ({ref}`LVOM <step-044>`); the {term}`drain-extended <DEMOS>` devices
-need their own P-well mask and blocked regions in the P-well block mask
-({ref}`PWDEM <step-030>`, {ref}`PWBM <step-026>`); the SONOS cell needs a tunnel window, an ONO
-island and its own tip implant ({ref}`TUNM <step-035>`,
-{ref}`ONOM <step-041>`, {ref}`LDNTM <step-071>`); the precision
-resistors need three implant masks ({ref}`RPM <step-049>`,
-{ref}`RRPM <step-052>`, {ref}`URPM <step-055>`); the local interconnect
-needs a contact and a line mask ({ref}`LICM1 <step-093>`,
-{ref}`LI1M <step-102>`); and each MiM capacitor needs a plate mask
-({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`). These pairings
+module table below shows where:
+
+* **Gate oxides** — the two gate-oxide thicknesses need a
+  mask of their own ({ref}`LVOM <step-044>`).
+* **Drain-extended devices** — the {term}`drain-extended <DEMOS>` devices
+  need their own P-well mask and blocked regions in the P-well block mask
+  ({ref}`PWDEM <step-030>`, {ref}`PWBM <step-026>`).
+* **SONOS cell** — the SONOS cell needs a tunnel window, an ONO
+  island and its own tip implant ({ref}`TUNM <step-035>`,
+  {ref}`ONOM <step-041>`, {ref}`LDNTM <step-071>`).
+* **Precision resistors** — the precision
+  resistors need three implant masks ({ref}`RPM <step-049>`,
+  {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`).
+* **Local interconnect** — the local interconnect
+  needs a contact and a line mask ({ref}`LICM1 <step-093>`,
+  {ref}`LI1M <step-102>`).
+* **MiM capacitors** — each MiM capacitor needs a plate mask
+  ({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`).
+
+These pairings
 rest on the PDK's descriptions of the corresponding layers, as set out on
-each step page. Three further features differ from the copper, salicided
-processes of leading-edge 130 nm logic (our characterisation). Its interconnect is aluminium ("5:
-Al"[^skw-02]), which the step pages describe as patterned
-{term}`subtractively <subtractive metallisation>` over tungsten plugs
-rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
-{ref}`MM1E <step-114>`). Its gates and diffusions carry, on the step
-pages' reading of the unsilicided poly and diffusion
-{term}`sheet resistances <sheet resistance>`,[^pdk-08] no
-{term}`salicide`, only a {term}`silicide` at the bottom
-of each contact ({ref}`CSIL <step-098>`; inference). And both its NMOS
-and PMOS gates are, on the reading of the {ref}`P1I <step-050>` page,
-n⁺ poly (inference).
+each step page.
+
+Three further features differ from the copper, salicided
+processes of leading-edge 130 nm logic (our characterisation):
+
+* **Interconnect metal** — its interconnect is aluminium ("5:
+  Al"[^skw-02]), which the step pages describe as patterned
+  {term}`subtractively <subtractive metallisation>` over tungsten plugs
+  rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
+  {ref}`MM1E <step-114>`).
+* **No salicide** — its gates and diffusions carry, on the step
+  pages' reading of the unsilicided poly and diffusion
+  {term}`sheet resistances <sheet resistance>`,[^pdk-08] no
+  {term}`salicide`, only a {term}`silicide` at the bottom
+  of each contact ({ref}`CSIL <step-098>`; inference).
+* **Gate doping** — both its NMOS
+  and PMOS gates are, on the reading of the {ref}`P1I <step-050>` page,
+  n⁺ poly (inference).
 
 ### Variants and options
 
@@ -755,13 +805,16 @@ devices, deep nwell"; `s8phirs`, "The base process plus rdl layer and
 rdl metal inductors"; `s8phrc`, "The base process plus dual MiM cap
 layers on metal 3 and metal 4"; and `s8pfn-20`, "The base process plus
 UHV (ultra-high voltage) implants for 20V device support".[^pdk-previous]
-The PDK documents thicker top metals only in entries labelled with other
+
+**Other flow names.** The PDK documents thicker top metals only in entries labelled with other
 flow names. The antenna-calculation table gives
 "Metal5 thickness for antenna ratio calculation (S8P\*/SP8P\* with 2um
 thick metal)" as 2 µm beside a 1.2 µm entry "with 1.2um thick metal", a
 2 µm metal 3 for the "S8TM\* flow" and a 2 µm metal 4 for "S8Q\*/SP8Q";[^pdk-03]
 the mask table lists "Metal 3-S8TM" and "Via 2-S8TM" variants without the
-"Used in SKY130" mark.[^pdk-05] The step pages read SKY130 as the
+"Used in SKY130" mark.[^pdk-05]
+
+**The reading adopted.** The step pages read SKY130 as the
 1.2 µm-metal-5 flow and the 2 µm entries as belonging to other flows
 ({ref}`WTIAL3 <step-134>`, {ref}`WTIAL5 <step-161>`; inference), which
 agrees with the "1.2 µm" top metal in SkyWater's S130 table.[^skw-02] The
@@ -772,13 +825,15 @@ copper redistribution layers that have no step in the step list
 (overview-metal-cap)=
 ## The metal cap and barrier question
 
-Every aluminium level of this flow is described on its step page as a
+**The sandwich.** Every aluminium level of this flow is described on its step page as a
 sandwich: a thin refractory film under the aluminium–copper alloy, and a
 thin refractory film over it. The under-layer is a diffusion barrier and
 a wetting layer over the plug and via floors; the over-layer, the
 {term}`cap <anti-reflective cap>`, is the {term}`ARC` for the metal
 lithography, the {term}`hillock` suppressor, and — at every level but
-the top — the film that the via etch above it lands on. Which refractory
+the top — the film that the via etch above it lands on.
+
+**Two answers, one open question.** Which refractory
 films these are is not public for SKY130, and two different answers are
 on the public record for the fab that runs it. This section sets both
 out; the pages that depend on the choice link here rather than repeating
@@ -792,7 +847,8 @@ serial nvSRAM family describes the technology as "S8TNV-5R", the fab as
 "Fab4 / S8TNV-5" and the design rule as "S8TNV-5R/0.13m", and gives
 "Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW", the same for metal 2,
 and "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW".[^cyp-qtp-113005]
-Two reports for older technologies at the same fab show the sandwich's
+
+**Older-generation lineage.** Two reports for older technologies at the same fab show the sandwich's
 lineage: a 0.18 µm
 derivative with "Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW" and
 "Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW",[^cyp-qtp-014807] and a 0.42 µm
@@ -902,12 +958,13 @@ What it publishes are thicknesses, and two of them are suggestive.
   cannot be reconciled with a 450 Å difference at any aluminium
   thickness (our arithmetic).[^cyp-qtp-123907]
 
-Both are inferences, and both carry counter-checks that this reference
+**Answering the rounding objection.** Both are inferences, and both carry counter-checks that this reference
 records rather than suppresses. The obvious objection to the second —
 that 0.8 is only 0.845 rounded — is answerable from the same table, which
 writes "Metal 3 thickness for antenna ratio calculations (S8T\* other
 than S8TM\*)" as 0.85 and is therefore capable of two decimals.[^pdk-03]
-Against that, the same table's "Metal 1 thickness for antenna ratio
+
+**Two more counter-checks.** Against that, the same table's "Metal 1 thickness for antenna ratio
 calculations (S8D\*)" of 0.35 µm, set against a 0.36 µm metal 1, leaves
 only 100 Å, which fits no titanium-plus-cap cladding; so "antenna
 thickness = the aluminium alone" is not a uniform rule, and that entry is
@@ -926,11 +983,13 @@ so the 450 Å coincidence at metals 3 and 4 may be exactly that. It is
 recorded here as the strongest argument against the inference this
 section draws from it.
 
-What the PDK's electrical numbers do **not** do is discriminate. The
+**Electrical numbers do not discriminate.** What the PDK's electrical numbers do **not** do is discriminate. The
 published sheet resistances — 125 mΩ/sq at metals 1 and 2, 47 mΩ/sq at
 metals 3 and 4 and 29 mΩ/sq at metal 5[^pdk-08] — are set by the
 aluminium, which is 3 200 Å in both the 2013 and the 2014
-stack.[^cyp-qtp-113005][^cyp-qtp-123907] The claddings conduct in
+stack.[^cyp-qtp-113005][^cyp-qtp-123907]
+
+**The cladding's small effect.** The claddings conduct in
 parallel with it, but weakly: at 50–200 µΩ·cm for a refractory film
 (typical industry values[^txt-02]), 300 Å of TiW lowers a 0.125 Ω/sq
 sheet by 0.2–0.7 % and the 990 Å of the 2014 cladding by 0.6–2.4 %, so
@@ -938,7 +997,9 @@ the two differ from each other by 0.4–1.7 % (our arithmetic) — smaller
 than the discrepancy in the aluminium's own resistivity that
 {ref}`TIAL6 <step-112>` records, where 125 mΩ/sq over 3 200 Å implies
 about 4.0 µΩ·cm against the ≈3 µΩ·cm typical of sputtered
-Al–0.5%Cu.[^pdk-08][^txt-02] Neither does
+Al–0.5%Cu.[^pdk-08][^txt-02]
+
+**Nor does the capability list.** Neither does
 SkyWater's capability list discriminate: its {term}`PVD` films include
 "Aluminum both pure and Cu doped", "TiW", "ESC TiN", "Imp TiN" and
 "Collimated Ti", and both metal etchers are qualified for "Al, TiW,

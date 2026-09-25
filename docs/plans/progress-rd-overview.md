@@ -112,6 +112,166 @@ real headings (so they will show in the sidebar contents and are
 * Guide §4.7 / report-C7 do not say which five of the overview's seven H2
   sections belong in the "On this page" list. Resolved as above; flagging
   for the reviewer in case a different five was intended.
+
+## Step 4 — prose rules on paragraphs > 120 words; back-end stack table caption (commit 4)
+
+**The task's "13 paragraphs, longest 517" figure does not match this page,
+even before any edit.** Measured the committed `main` version of the page
+with the guide's own canonical method (§1: "word counts... `measure.py`,
+function `clean`" — markers and role wrappers stripped, replaced by their
+link text): **16** paragraphs ≥ 120 words, longest **333**, not 13/517.
+`tools/plans/readability/prototypes/measure/measure.py` itself only scans
+`docs/steps/`, and `measure_b.py` only scans
+`{machines,materials,masks,categories}` — **neither script covers the
+overview page at all** — so I wrote the same `clean()`/paragraph-block
+logic against `docs/overview/index.md` directly (kept in this progress
+note, not committed, since it's a one-off check, not a new tool). Likely
+explanation: report-C7's "13 over 120, longest 517" was a different,
+uncommitted script (`tmp/readability/c-work/`, per report-C's own
+intro) that does not strip role wrappers the same way — this page is
+extremely `{ref}`-dense, so counting raw role syntax instead of its link
+text would inflate word counts a lot. Guide §1 says this guide's own
+number (via `measure.py`'s method) governs where the two disagree, so I
+used my measurement (16 paragraphs ≥ 120 words on the pre-edit page) as
+the actual worklist, and applied R-PARA/R-SENTENCE/R-LIST/R-TABLE to all
+of them. After steps 1–3 (reorder, on-page list, H3 conversion) two of
+those 16 had already dropped under 120 words (the bold module labels
+lost a few words each), leaving 14 to fix in this step; every one is now
+under 120 (longest afterwards: 117 words). Record for the coordinator: if
+the reviewer expects exactly 13 paragraphs / 517 words, that expectation
+does not match either the committed page or `measure.py`'s own method.
+
+**What was done, paragraph by paragraph** (all hand, R-PARA unless noted):
+* "How to read this reference / The step list" (167w): split at the
+  category-count sentence; **first tried tabulating the ten category
+  counts as a two-column table (R-TABLE) and reverted it** — see the
+  `check_preserved.py` finding below. Left as prose, just split off into
+  its own paragraph.
+* "The flow by module / Starting material...": 3-way split with bold
+  labels (Trench formation / Deep N-well timing / Trench depth).
+* "A simplified cross-section" (250w, the labels-add-up arithmetic
+  paragraph): 3-way split (Metal 1 and up / Checking downward / The one
+  exception), plus one more split of the third part (131w after the
+  first pass) into "The one exception" / "Reading adopted".
+* The back-end stack table (`Level (bottom to top) | ...`): wrapped in
+  `:::{table}` using the two existing caveat sentences ("The table lists
+  the levels bottom to top..."; "Dielectric heights are...") verbatim as
+  the caption, plus `:widths: 16 20 28 12 24` (R-CAPTION; this is "the
+  finished back-end stack table" the task named).
+* "Front end, middle of line and back end" (155w): split into "Where
+  each phase ends" (prose) and an R-LIST for the "two consequences"
+  sentence (it announces a count of two).
+* "What SKY130 is / A Cypress process...": two paragraphs each split in
+  two (Fab 4 renamed **The Bloomington fab** / Sale to SkyWater /
+  Corroboration and the shuttle programme — see below — / Fab equipment
+  today).
+* "What SKY130 is / The open PDK": the announcement paragraph (128w)
+  split at "Corroboration and the shuttle programme" (see below, not at
+  the seam I first tried); the 333w raw-data paragraph split 4 ways, one
+  bold label per file group (repository and test tile / high-voltage
+  transistor files / renamed to "the remaining transistor files" /
+  passive-device files).
+* "What SKY130 is / What the process offers": the two PDK-stack-summary
+  quotes split in two; the device-pages/platform-table paragraph split
+  in two; the "visible cost" paragraph turned into two R-LIST bulleted
+  lists (six mask/feature pairings; three architectural differences —
+  both sentences literally announce a count, "the module table below
+  shows where" / "Three further features").
+* "What SKY130 is / Variants and options" (200w): the four
+  older-process-name quotes (**tried and reverted a table here too**,
+  same reason); split off "Other flow names" and "The reading adopted".
+* "The metal cap and barrier question" H2 intro (123w): split into "The
+  sandwich" / "Two answers, one open question".
+* "The two stacks / The TiW stack" (124w, an existing bold-label
+  paragraph from an earlier pass): split off "Older-generation lineage".
+* "What the PDK's own numbers do and do not settle": the
+  "Both are inferences" paragraph (143w) split into "Answering the
+  rounding objection" / "Two more counter-checks"; the "electrical
+  numbers" paragraph (206w, then still 145w after a first split) split
+  three ways ("Electrical numbers do not discriminate" / "The cladding's
+  small effect" / "Nor does the capability list").
+
+**`check_preserved.py` findings — two real gaps between this checker and
+the rules it is meant to enforce, both worth the coordinator's attention
+before more R-H3/R-TABLE work happens elsewhere:**
+
+1. **A bold run-in label containing a number, immediately followed by
+   `**` and more prose, defeats the tool's sentence-boundary regex** the
+   same way described in the W4 module-H3 commit (`_SENTENCE_SPLIT_RE`
+   needs `[.!?]` directly followed by whitespace; `.**` has `*` in
+   between). Every new bold label I added that echoed a digit already in
+   its own paragraph (`**Metal 1 and up.**`, `**Below metal 1.**`,
+   `**Fab 4.**`, `**The 1.0111 µm exception.**`, `**The 1.8 V transistor
+   files.**`) merged with the body's own first number into one inflated
+   `numbers`/`number_order` count. Fixed by wording every new label to
+   avoid repeating a number already in its paragraph (`Checking
+   downward`, `The Bloomington fab`, `The one exception`, `The remaining
+   transistor files`); kept `**Metal 1 and up.**` (only a `numbers`
+   addition, not a `number_order` one, and declarable) rather than
+   force a fourth awkward rename. **Practical rule for future R-PARA/R-H3
+   work: never give a new bold label a number that also appears in the
+   sentence right after it.**
+2. **`extract_number_order`/`extract_numbers` have no fence-skipping
+   logic at all** — unlike this branch's own throwaway `measure.py`-style
+   script, `check_preserved.py`'s real implementation does not recognise
+   `:::{table}`/`:::` lines as directive syntax; a `:::{table} <caption>`
+   line and a `:widths: N N …` line are read as ordinary paragraph text
+   and merged with whatever paragraph they sit next to (or, if isolated
+   by blank lines as here, become their own "paragraph" whose numbers are
+   the `:widths:` values). **Every new `{table}` caption with `:widths:`
+   therefore adds new `numbers` tokens and, whenever a table has 3+
+   columns, a new `number_order` tuple — with no matching loss, so it is
+   a pure, declarable addition, but it is unavoidable and will recur on
+   every future R-CAPTION table.** Declared `--allow-added numbers,
+   number_order` for this reason on this page (also `refs`, from step 2).
+3. **Converting a numeric prose sequence into a table (R-TABLE) or a
+   list is very likely to fail `check_preserved.py` unconditionally when
+   the source sentence's numbers were already one `number_order` unit.**
+   Table rows (and list items) are each their own separate unit; a
+   count-per-category or count-per-item list where every row/item has
+   only *one* number moves each number below the 2-number tracking
+   threshold, so the old multi-number unit is **lost with no replacement**
+   — and `--allow-added` cannot cover a loss (`check_preserved.py`'s own
+   docstring: "A loss in any category is always an error"). Hit this
+   twice: the ten-category step counts (41/36/27/.../1/1) and the four
+   older-process-name quotes (`s8pfhd` "5 metal... 16V...", etc. — the
+   `8` embedded in each `s8*` code name, plus the codes' own digits,
+   made every row multi-number too, compounding the same problem).
+   **Both were reverted from a table back to plain prose** (still
+   R-PARA-split into their own paragraph, which was enough to get them
+   under 120 words) rather than left broken or hand-waved past a real
+   checker failure. **This is a first-order concern for W2/W3**: any
+   future R-TABLE conversion of a numeric list is at real risk of the
+   same unconditional failure, and the fix (leave it as prose, or find a
+   split point that keeps 2+ numbers in whatever single-number units
+   remain) is not written down anywhere in the guide.
+4. Also hit, and fixed by **choosing a different, already-valid split
+   point** rather than declaring anything: a paragraph split placed
+   directly after `..."[^marker]` (period **then** closing quote **then**
+   marker) does not coincide with a checker-recognised sentence boundary
+   (the character immediately before the marker/whitespace is `"`, not
+   `.`/`!`/`?`), so a new blank line there silently re-buckets numbers on
+   either side into new units and reports as LOST+ADDED. The *same*
+   `".[^marker]` pattern (closing quote **then** period **then** marker)
+   *does* split cleanly, because masking the marker to a space leaves the
+   period immediately before the whitespace. Moved the "PDK
+   announcement" paragraph's split point from after the Wikipedia quote
+   (`...License."[^ann-17]`, bad) to after the FOSSi quote
+   (`...design kit".[^ann-03]`, good) for exactly this reason — same
+   final grouping of sentences, zero `number_order` diff.
+
+Confirmed clean end state:
+`uv run python tools/check_preserved.py --allow-added numbers,number_order,refs docs/overview/index.md`
+→ `0 with undeclared differences`. Declared additions and why: **refs**
+(the five new "On this page" nav links, step 2); **numbers** (the
+`:widths:` values of the two new/captioned tables, plus one duplicated
+"1" from the `**Metal 1 and up.**` label); **number_order** (the
+back-end-stack table's `:widths: 16 20 28 12 24`, a pure addition with
+no matching loss, per finding 2 above).
+
+All checkers, `gen_*.py --check`, and the `-W` build pass. Screenshots at
+`tmp/shots/04-full-*.png` (desktop, full page, 19 tiles) and
+`tmp/shots/04-phone-*.png` (400 px, 19 tiles) — read in full for step 5.
 * `check_preserved.py`'s `number_order` check has a real false-positive
   mode against R-H3: a bold run-in label containing digits, immediately
   followed by `**` and more text, defeats the tool's sentence-boundary
