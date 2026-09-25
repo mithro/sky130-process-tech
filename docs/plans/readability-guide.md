@@ -941,6 +941,10 @@ uses on 42 pages).
    retrieved" — stay as a short paragraph under the table, unchanged.
 5. Wrap the table per R-CAPTION.
 6. Shoot at 400 px. If it scrolls, merge Vendor and Model into one column joined by a space.
+7. Year is the year the page gives *for that model*. A capture, listing, award, statement or
+   manufacture date stays in Published figures in the page's words.
+8. Vendor is the page's own attribution for the period (write "Eaton / Axcelis" if the page groups
+   them).
 
 **Example** — `docs/machines/duv-krf-stepper.md:144`.
 
