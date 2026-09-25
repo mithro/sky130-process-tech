@@ -260,7 +260,7 @@ table cells > 25: 0. After: see the batch summary at the end.
   sentence splits above, same digits in the same order. Declared `markers,numbers,hedges`: clean.
 * **Marker coverage.** 14 flags, all read: every split piece keeps the markers of its own clause;
   the one uncited piece is the pointer "Beyond the step list, one public document names the mask."
-* **Caps**: para > 100 5 → 0; item > 60 1 → 0; sentence > 45 7 → 0.
+* **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 6 → 0.
 
 ### 053 PRI — done
 
@@ -320,7 +320,7 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Marker coverage.** 12 flags, all read: labels; the colon split in Step category (the marker's
   clause keeps it); the test-tile list (marker on the lead-in, by rule); pieces whose base marker
   covered a different clause.
-* **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 6 → 4 (above).
+* **Caps**: para > 100 3 → 0; item > 60 3 → 0; sentence > 45 8 → 4 (above).
 
 ### 054 PRIS — done
 
@@ -454,7 +454,7 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Marker coverage.** 13 flags, all read (list lead-ins by rule; split pieces whose base marker
   belonged to another clause; "Both are consequences …" is the page's own conclusion, unmarked in the
   base too).
-* **Caps**: para > 100 4 → 0; item > 60 1 → 0; sentence > 45 7 → 2 (above).
+* **Caps**: para > 100 3 → 0; item > 60 0 → 0; sentence > 45 8 → 2 (above).
 
 ### 057 UPRIS — done
 
@@ -488,7 +488,7 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Marker coverage.** 6 flags, all read: the three pieces of the 78-word sentence each keep the
   markers of their own clause ("A thin, uniform chemical oxide … is harmless." had none in the base
   either); "We read …" (base marker on the quotation); a label.
-* **Caps**: para > 100 1 → 0; item > 60 1 → 0; sentence > 45 3 → 0.
+* **Caps**: para > 100 1 → 0; item > 60 1 → 0; sentence > 45 4 → 0.
 
 ### 058 GATENIT — done
 
@@ -537,7 +537,7 @@ table cells > 25: 0. After: see the batch summary at the end.
 * **Marker coverage.** 13 flags, all read (list items and study sub-bullets keep their own markers;
   the ARC lead-in is followed directly by its four cited studies; pieces whose base marker belonged
   to another clause; labels).
-* **Caps**: para > 100 3 → 0; item > 60 6 → 0; sentence > 45 7 → 2 (above).
+* **Caps**: para > 100 2 → 0; item > 60 5 → 0; sentence > 45 7 → 2 (above).
 
 ## Content problems for the owner (not fixed)
 
