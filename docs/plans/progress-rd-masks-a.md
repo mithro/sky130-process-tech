@@ -65,6 +65,17 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
 * **G2.** R-RELATED step 2's class-page labels (Category · Machines · Materials · Masks · Indexes) have
   none for step links, which every mask page's Related pages starts with.
 
+* **G3.** R-PARAMS fixes four columns (`Parameter | PDK table | Published description | Value`), one of them
+  prose, where §1 allows at most three columns when any holds prose. At 400 px the tables do not scroll,
+  but a long code identifier (which does not wrap) widens the Parameter column and squeezes the
+  description into one-word lines (`lvtnm.md`, `LvtEnc_forPowerRail`: about 12 lines). Merging
+  "PDK table" into the Parameter cell (`` `LVTNMCD` (Table 2) ``) would fix it, but changes the rule's
+  header, so it was not done.
+* **G4.** B8 treats "Resist" and "Resist and tone" as true synonyms, and the checker rejects `### Resist`.
+  On several implant pages the "Resist" passage says little about tone beyond "wherever the plate leaves
+  it" (hvntm, ldntm) or "(on the positive-resist reading)" (dnm), so "Resist and tone" slightly
+  overstates the passage (§8 item 11). Followed B8 and the checker.
+
 ## Pages
 
 ### 1. cap2m — done
@@ -476,6 +487,47 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   paragraph no longer directly above its note (R-DROPDOWN 4), so both stay whole (their long sentences
   were split). Two sentences inside the notes (48, 84) are not edited (§2.5). Also: "The table marks `-` …"
   (47, one dash pair), the Kim et al. sentence (46), the Polarity and tone cell (53; not in the body).
-  Before → after: paragraphs 10 → 2, items 0 → 0, sentences 19 → 4 (plus the two inside notes), cells
+  Before → after: paragraphs 10 → 2, items 0 → 0, sentences 19 → 4 (two of them inside notes), cells
   1 → 1.
+* **Content problems for the owner:** none found.
+
+### 12. lvtnm — done
+
+* **Rules applied.** R-INTRO (172 → 61 words; first sentence split at its colon; "What makes it unusual
+  …" moved to the top of `## What the mask defines`, "it" → "the mask", its colon a full stop);
+  R-PARAMS (four parameters: `LVTNMCD`, `LVTNMCDSP`, `lvtpmos_poly`, `LvtEnc_forPowerRail`); R-CAPTION;
+  R-PARA, R-SENTENCE; R-LIST (the device pages' three descriptions; Table F2b's 28 `C` rows as ten
+  fragment bullets, 2 + 2 + 2 + 1 + 3 + 4 + 2 + 5 + 6 + 1 = 28; the two Table C3 definitions; the
+  `clvtnm` checks; the per-die counts); R-RELATED; R-H3 (Exposure class, Mask errors, Resist and tone ←
+  "Resist", Resist edges, Overlay and alignment ← "Overlay", Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS.** "Table 2 … repeats the width and space as `LVTNMCD` 0.38 and `LVTNMCDSP` 0.38, and Table 4
+  gives a "Channel length for low Vt PMOS" of 0.35 (`lvtpmos_poly`), matching poly.1b, and a "Width of the
+  Low Leakage gate …" of 0.28 (`LvtEnc_forPowerRail`).[^pdk-03][^pdk-periph]" → lead-in "*Criteria &
+  Assumptions* repeats the width and space in Table 2 and gives two criteria in Table 4:[^pdk-03]" and a
+  four-row table. "matching poly.1b" stays with its value in the Value cell, and `pdk-periph` (the
+  source of poly.1b) goes with it; `pdk-03` stays on the lead-in. No marker added or lost here.
+* **Hedge repeated on a split:** "The high-Vt PMOS and `pmos_core` rows are not devices the `lvtn`
+  function line names, and on the table the three … flavours differ … (…; our reading of the
+  rows).[^pdk-06]" — split at ", and on the table"; the first half now ends "(our reading of the
+  rows).[^pdk-06]" too (ADDED hedge and marker).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,hedges`): markers `pdk-06` (above),
+  `pdk-errors` (*Error Messages* description; the base marker moved to the check-list lead-in),
+  `mask-renders` (README sentence split at its colon); numbers — the PDK-table column (`2` ×2, `4` ×2);
+  hedge `our reading` (above).
+* **LOST `number_order` ('2', '0.38', '0.38', '4', '0.35', '1', '0.28'), read by hand:** the R-PARAMS table;
+  values 0.38, 0.38, 0.35 (poly.1b), 0.28 in the base's order, each on the table the base gives it.
+* **Marker coverage.** Flags read: lists and table rows under lead-in markers; "The LVTNM page takes the
+  word "block" …", "The sheet does not say what `038` encodes.", "Both register to …" and the second Open
+  question's last sentence had no marker of their own in the base.
+* **Phone check.** The parameter table does not scroll at 400 px, but the long identifier
+  `LvtEnc_forPowerRail` keeps its column wide and the description cell runs to about 12 lines (§8.6's
+  five-line question); see guide problem G3. The PDK-table cells were shortened from "Table 2" to "2"
+  (header "PDK table") on this page and on ctm1 and fom to give the description column more room, and
+  that column is right-aligned (numbers, R-TABLE 7).
+* **Over the caps after the pass:** the Hook et al. sentence (68 by the script, nearly all of it two
+  quotations); "At 365 nm that threshold …" (46); the Polarity and tone cell (45; not in the body).
+  Before → after: paragraphs 10 → 0, items 1 → 0, sentences 16 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.

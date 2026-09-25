@@ -344,14 +344,14 @@ contact criteria in Tables 4 and 5:[^pdk-03]
 :::{table} Parameters of *Criteria & Assumptions* for the contact, values as printed
 
 | Parameter | PDK table | Published description | Value |
-|---|---|---|---:|
-| `CTM1CD` | Table 2 | size | 0.17 |
-| `CTM1CDSP` | Table 2 | space | 0.19 |
-| `CEFC` | Table 4 | "min. etch and fill capability for mcon" | 0.14 |
-| `TCONOVLP` | Table 4 | "Minimum mcon overlap onto LI for reproducible contact resistance" | 0.12 |
-| `mconLiEnclosure` | Table 4 | "Mcon enclosure by Li" | 0 |
-| `TBOWINGSEAL` | Table 4 | "Bowing of rectangular contact (per edge) -- seal ring sizing" | 0.015 |
-| without a variable name | Table 5 | "Standard contact bottom CD" | 0.09 |
+|---|---:|---|---:|
+| `CTM1CD` | 2 | size | 0.17 |
+| `CTM1CDSP` | 2 | space | 0.19 |
+| `CEFC` | 4 | "min. etch and fill capability for mcon" | 0.14 |
+| `TCONOVLP` | 4 | "Minimum mcon overlap onto LI for reproducible contact resistance" | 0.12 |
+| `mconLiEnclosure` | 4 | "Mcon enclosure by Li" | 0 |
+| `TBOWINGSEAL` | 4 | "Bowing of rectangular contact (per edge) -- seal ring sizing" | 0.015 |
+| without a variable name | 5 | "Standard contact bottom CD" | 0.09 |
 :::
 
 `TBOWINGSEAL` does not say which

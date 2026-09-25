@@ -392,14 +392,14 @@ table.[^pdk-periph] [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs
 :::{table} Parameters of *Criteria & Assumptions* that bear on this mask
 
 | Parameter | PDK table | Published description | Value |
-|---|---|---|---:|
-| `FOMCD` | Table 2 | minimum feature | 0.14 |
-| `FOMCDSP` | Table 2 | minimum space | 0.27 |
-| `FOMSE` | Table 7 | "MOSFET width" | 0.135 |
-| `FOMSESC` | Table 7 | "MOSFET width in standard cells" | 0.075[^pdk-03] |
-| `MINFWR` | Table 3c | "Min. diff/tap width for reproducible resistivity" | 0.12 µm |
-| `SDM3` | Table 3c | "Min. width to open a strip of tap between two diffs" | 0.34 µm |
-| `DEFC` | Table 4 | "min. etch and fill capability for isolation, licon, and met1" | 0.15[^pdk-03] |
+|---|---:|---|---:|
+| `FOMCD` | 2 | minimum feature | 0.14 |
+| `FOMCDSP` | 2 | minimum space | 0.27 |
+| `FOMSE` | 7 | "MOSFET width" | 0.135 |
+| `FOMSESC` | 7 | "MOSFET width in standard cells" | 0.075[^pdk-03] |
+| `MINFWR` | 3c | "Min. diff/tap width for reproducible resistivity" | 0.12 µm |
+| `SDM3` | 3c | "Min. width to open a strip of tap between two diffs" | 0.34 µm |
+| `DEFC` | 4 | "min. etch and fill capability for isolation, licon, and met1" | 0.15[^pdk-03] |
 :::
 
 The PDK does not

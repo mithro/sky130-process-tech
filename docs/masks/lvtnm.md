@@ -2,22 +2,12 @@
 # LVTNM — Low Vt Nch\*
 
 The low-Vt N-channel mask is the {term}`reticle` that sorts SKY130's
-low-voltage transistors into threshold flavours: on the
+low-voltage transistors into threshold flavours. On the
 {ref}`LVTNM <step-014>` page's reading, the resist printed through it at
 step 14 decides where the {ref}`LVTNI <step-015>` channel implant goes,
 and is stripped again at {ref}`LVTNIS <step-016>`. It is an implant
 {term}`block mask` with coarse rules, and the first mask of the well and
-channel module. What makes it unusual is that the public record does not
-settle what its openings are: the PDK describes the drawn layer as
-blocking an implant, the step pages leave the polarity open, and one
-public derivation from the drawn tape-out data adds created shapes to the
-drawn layer.
-This page gathers what public sources say about the mask itself — its
-PDK entry and layers, the plates the process-steps sheet records for the
-MPW runs, what the public renders of those runs show, the lithography it
-needs and the rules that constrain it. How the step is performed is on
-the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+channel module.
 
 | | LVTNM — Low Vt Nch\* |
 |---|---|
@@ -34,43 +24,77 @@ the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-lvtnm-steps>` |
 
+:::{seealso}
+How the step is performed is on
+the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+What makes the mask unusual is that the public record does not
+settle what its openings are. The PDK describes the drawn layer as
+blocking an implant, the step pages leave the polarity open, and one
+public derivation from the drawn tape-out data adds created shapes to the
+drawn layer.
 
 The PDK describes the drawn layer in two ways. `gds_layers.csv` calls
 `lvtn` "Low-Vt NMOS device",[^pdk-06] but the function line of its rule
 set is wider: "Define regions to block Vt adjust implant for low Vt LV
 PMOS/NMOS, SONOS FETs and Native NMOS".[^pdk-periph] The device pages
-describe the transistors that result in the same terms: the low-VT NMOS
-and PMOS cross-sections are "identical to the std NMOS FET" (or PMOS
-FET) "except for the VT adjust implants (to achieve the lower VT)", the
-3.3 V and 5 V native NMOS are "constructed by blocking out all VT
-implants", and the 20 V native NMOS "has all Vt implants blocked to
-achieve a very low VT".[^pdk-07] The {ref}`LVTNM <step-014>` page takes
+describe the transistors that result in the same terms:[^pdk-07]
+
+* the low-VT NMOS
+  and PMOS cross-sections are "identical to the std NMOS FET" (or PMOS
+  FET) "except for the VT adjust implants (to achieve the lower VT)"
+* the
+  3.3 V and 5 V native NMOS are "constructed by blocking out all VT
+  implants"
+* the 20 V native NMOS "has all Vt implants blocked to
+  achieve a very low VT"
+
+The {ref}`LVTNM <step-014>` page takes
 the word "block", and the fact that one layer serves NMOS and PMOS of
 opposite channel type, as grounds for favouring a reticle that covers
-the drawn `lvtn` regions while {ref}`LVTNI <step-015>` implants the rest;
-the {ref}`LVTNI <step-015>` page sets out the counter-doping alternative
+the drawn `lvtn` regions while {ref}`LVTNI <step-015>` implants the rest.
+The {ref}`LVTNI <step-015>` page sets out the counter-doping alternative
 and cites a Round Rock patent that obtains low-Vt devices with a
 "counter-doped channel region".[^pat-vt-rrr] Neither page settles it.
 
 The PDK's mask generation table, Table F2b, marks the `LVTNM` column
-`C` ("CREATED") in 28 of its 80 device rows: the low-Vt 1.8 V NMOS and
-PMOS, both high-Vt PMOS rows, both `pmos_core` rows, the low-Vt NMOS
-core device, the low-Vt, high-Vt and HV varactors, the four SONOS
-rows, the 5 V and 3 V native NMOS, all five UHV 5/20 V drain-extended
-rows, six diode rows and the HV native ESD transistor.[^pdk-06] It
+`C` ("CREATED") in 28 of its 80 device rows:[^pdk-06]
+
+* the low-Vt 1.8 V NMOS and
+  PMOS
+* both high-Vt PMOS rows
+* both `pmos_core` rows
+* the low-Vt NMOS
+  core device
+* the low-Vt, high-Vt and HV varactors
+* the four SONOS
+  rows
+* the 5 V and 3 V native NMOS
+* all five UHV 5/20 V drain-extended
+  rows
+* six diode rows
+* the HV native ESD transistor
+
+The table
 marks `-`, "Layer not created for the device", in the standard 1.8 V
 NMOS and PMOS rows.[^pdk-06] The high-Vt PMOS and `pmos_core` rows are
-not devices the `lvtn` function line names, and on the table the three
+not devices the `lvtn` function line names (our reading of the
+rows).[^pdk-06] On the table the three
 1.8 V PMOS flavours differ in which of the two threshold masks they
 receive: the standard PMOS `HVTPM` only, the low-Vt PMOS `LVTNM` only
 and the high-Vt PMOS both ({ref}`mask-hvtpm`; our reading of the
-rows).[^pdk-06] The table does not say what the implants through the
+rows).[^pdk-06]
+
+The table does not say what the implants through the
 two masks do, so it does not settle the polarity either; on our reading,
 it shows that the plate is not the drawn `lvtn` alone.
 
 What the mask does not define is the baseline threshold of the other
-devices: on the step pages' readings the P-channel threshold implant
+devices. On the step pages' readings the P-channel threshold implant
 {ref}`LVTPI <step-020>` goes through the N-well resist, the high-Vt
 PMOS implants through the {ref}`HVTPM <step-022>` resist and the
 N-channel implant {ref}`NCHI <step-045>` through the low-voltage oxide
@@ -91,7 +115,9 @@ layer table also has an identifier `areaid.lvt` at 81:108, "Low-Vt
 identifier".[^pdk-06] The PDK publishes no operation from `lvtn` to the
 plate. The {ref}`LVTNM <step-014>` page reads the add and drop purposes
 as showing that the reticle is derived by Boolean operations rather
-than copied. Rule x.9 allows "Shapes on maskAdd or maskDrop layers
+than copied.
+
+Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines mask layers to test
 modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] A design inside the
@@ -99,21 +125,30 @@ die therefore draws `lvtn` (our reading of x.15a, which does not say
 what applies in the core).
 
 Two definitions in Table C3 of the *Layers Reference* bear on the
-layer: `LVTN_Gate`, "Gate overlapping lvtn", used by rule ncm.5; and
-`Var_channel`, "poly AND tap AND (nwell NOT hvi) NOT areaid.ce", used
-by rule lvtn.10, which requires `lvtn` to be enclosed by "(nwell not
-overlapping Var_channel)".[^pdk-06][^pdk-periph] The `C` marks of Table
+layer:[^pdk-06][^pdk-periph]
+
+* `LVTN_Gate`, "Gate overlapping lvtn", used by rule ncm.5
+* `Var_channel`, "poly AND tap AND (nwell NOT hvi) NOT areaid.ce", used
+  by rule lvtn.10, which requires `lvtn` to be enclosed by "(nwell not
+  overlapping Var_channel)"
+
+The `C` marks of Table
 F2b in rows that the `lvtn` function line does not name (above) point to
 created shapes, but the PDK does not give the operation that makes
 them.[^pdk-06]
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", names checks on the mask data that the rule
-tables do not: `clvtnm.1`, "0.38 min. width of clvtnm in periphery",
-`clvtnm.2`, "0.38 min. spacing/notch of CLLVTNM", and two `clvtnm.nikon`
-checks, "LVTNMmk in the nikon cross has the wrong polarity" and
-"LVTNMmk is missing from the nikon cross in the layout".[^pdk-errors] It
+criteria for GDS data".[^pdk-errors] It names checks on the mask data that the rule
+tables do not:[^pdk-errors]
+
+* `clvtnm.1`, "0.38 min. width of clvtnm in periphery"
+* `clvtnm.2`, "0.38 min. spacing/notch of CLLVTNM"
+* two `clvtnm.nikon`
+  checks, "LVTNMmk in the nikon cross has the wrong polarity" and
+  "LVTNMmk is missing from the nikon cross in the layout"
+
+The page
 does not define `CLLVTNM`; we read it as the created `LVTNM` data
 (inference from the rule name), so the PDK checks the created layer at
 the same 0.38 µm as the drawn one without saying how it is made. The
@@ -127,13 +162,17 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. `LVTNM` is one of the masks the site's README
 calls "fab-derived" and evaluates "as a boolean expression over drawn
-layers": on all eight runs the expression is
+layers".[^mask-renders]
+
+On all eight runs the expression is
 `125:44 OR (64:20 AND (78:44 OR 81:2))`, which in the layer names of
 `gds_layers.csv` is `lvtn` OR (`nwell` AND (`hvtp` OR
 `areaid.ce`)).[^mask-renders][^pdk-06] Its mask record lists the drawn
 layer 125:44 and the mask-level layer 25:0, with the note "drawn lvtn
 plus a created part [nwell AND (hvtp OR areaid.ce)] OR (LV nwell over
-varactors); only the drawn part is rendered".[^mask-renders] The note
+varactors); only the drawn part is rendered".[^mask-renders]
+
+The note
 contradicts the expression twice, as the
 {ref}`masks index <masks-derivations>` records: the expression renders
 the created part, not only the drawn part, and it has no term for the
@@ -152,15 +191,22 @@ from the same public table, and it says nothing about the resist
 polarity.
 
 All 40 rendered dies of every run carry shapes, but that is not 40
-designs with low-Vt devices: every die carries at least 2 194 shapes,
-the minimum on each run is 2 194 (MPW-2 to MPW-5), 2 313 (MPW-6 to
-MPW-8) or 2 809 (MPW-1), and on each run 6 to 23 of the 40 dies carry
-a count that another die of the run shares — 2 194 on five to seven dies
-of each of MPW-2 to MPW-5, and 2 973 on nine dies of
-MPW-8.[^mask-renders] We read the repeated counts as shapes common to
+designs with low-Vt devices:[^mask-renders]
+
+* every die carries at least 2 194 shapes
+* the minimum on each run is 2 194 (MPW-2 to MPW-5), 2 313 (MPW-6 to
+  MPW-8) or 2 809 (MPW-1)
+* on each run 6 to 23 of the 40 dies carry
+  a count that another die of the run shares — 2 194 on five to seven dies
+  of each of MPW-2 to MPW-5, and 2 973 on nine dies of
+  MPW-8
+
+We read the repeated counts as shapes common to
 the dies rather than to the projects (inference); the site does not say
 what they are, and with the expression they may include created shapes
-as well as drawn `lvtn`. The site states the limits of its images:
+as well as drawn `lvtn`.
+
+The site states the limits of its images:
 "These are renders of *drawn* data, not photomask artwork: reticle
 pitch, 4x reduction, mirroring and the frame features the fab adds are
 not modelled."[^mask-renders] Its metadata carries no plate ID, so a
@@ -188,7 +234,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 | MPW-7 | `5CS8016AC` | `S8016AA038A` |
 | MPW-8 | `5CS8017AC` | `S8017AA038A` |
 
-* **Plate number.** The sheet does not say what `038` encodes; it falls
+* **Plate number.** The sheet does not say what `038` encodes. It falls
   between `020` for `FOM` and `150` for `DNM`, which precede it in the
   flow, but the numbers do not follow process order elsewhere (`NWM`,
   three steps later, is `010`), so no process position is read from it
@@ -203,9 +249,11 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`LVTNM <step-014>` page puts the 0.380 µm
+### Exposure class
+
+The {ref}`LVTNM <step-014>` page puts the 0.380 µm
 width and space at {math}`k_1 \approx 0.62` on an i-line lens of NA 0.6
-and infers an i-line level; the
+and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01] ASML's PAS 5500/275D runs
@@ -213,7 +261,9 @@ at NA 0.48–0.60,[^asml-pas5500-275d] at which the same feature has
 {math}`k_1 = 0.38 \times 0.48 / 0.365 \approx 0.50` at the low end (our
 arithmetic).
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
@@ -221,34 +271,56 @@ NA 0.60 (our arithmetic), so the smallest `LVTNM` features lie at or
 just above it, and a CD error on the plate would print at about its own
 size (inference). The rules that matter more are placement rules (below).
 
-**Resist.** Nothing is etched through this resist; it only has to stop
+### Resist and tone
+
+Nothing is etched through this resist; it only has to stop
 the {ref}`LVTNI <step-015>` implant wherever the plate leaves resist.
 The step page reads a positive i-line resist of about 1 µm for a
 channel implant of tens of keV, with a wide margin, and cites the PDK's
 generic "Photoresist thickness" of 1.14 µm as the order of
-thickness;[^pdk-03] the ion range in resist that sets such a margin is
-what SRIM computes.[^ziegler-2010] Ross et al. stabilised three i-line
+thickness.[^pdk-03] The ion range in resist that sets such a margin is
+what SRIM computes.[^ziegler-2010]
+
+Ross et al. stabilised three i-line
 resists for implant with a flood electron beam, which reduced
 post-implant shrinkage and CD variation and eliminated popping during
 removal.[^ross-1996] SkyWater's resist, its thickness and any hardening
 are not public. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Resist edges.** Ions also scatter out of the resist edge: "Some of the
+### Resist edges
+
+Ions also scatter out of the resist edge: "Some of the
 ions scattered out of the edge of the photoresist are implanted in the
 silicon surface near the mask edge, altering the threshold voltage of
 those devices", with shifts "of up to 100 mV … over a lateral distance
 on the order of a micrometer", in the words of Hook et al., who model a
-thick well resist.[^hook-2003] Sheu et al. model the well-edge proximity
-effect,[^sheu-2006] Drennan, Kniffin and Locascio set out what such
-effects mean for analogue layout,[^drennan-2006] and Faricelli reviews
+thick well resist.[^hook-2003]
+
+Sheu et al. model the well-edge proximity
+effect.[^sheu-2006] Drennan, Kniffin and Locascio set out what such
+effects mean for analogue layout.[^drennan-2006] Faricelli reviews
 the process features that make device behaviour depend on its
 neighbourhood.[^faricelli-2010] A channel-implant resist is thinner than
 a well resist, and the PDK does not say whether the 0.180 µm spacing of
 `lvtn` to a gate (lvtn.3a) allows for such scattering; we read it as
 partly a placement margin (inference).
 
-**Pattern transfer.** On the step pages' readings the pattern is
+### Overlay and alignment
+
+The {ref}`LVTNM <step-014>` page reads the mask as aligned
+to the trench pattern of {ref}`FOM <step-004>` and notes that the
+0.180 µm enclosure of a gate by `lvtn` (lvtn.4b) couples this level to
+the poly mask printed much later.[^pdk-periph] Both register to the
+same active pattern on the step pages' readings ({ref}`mask-p1m`), so
+the enclosure must absorb the overlay of both against it. ASML
+specifies "≤ 40 nm" single-machine overlay for the /275D
+stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
+margin is not public).
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
 transferred into the silicon as dopant by the {ref}`LVTNI <step-015>`
 implant on the
 {ref}`medium-current implanter <machine-medium-current-implanter>`
@@ -257,16 +329,6 @@ class, through the pad oxide, and the resist is removed at
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes. The species, energy and
 dose are not public.
-
-**Overlay.** The {ref}`LVTNM <step-014>` page reads the mask as aligned
-to the trench pattern of {ref}`FOM <step-004>` and notes that the
-0.180 µm enclosure of a gate by `lvtn` (lvtn.4b) couples this level to
-the poly mask printed much later.[^pdk-periph] Both register to the
-same active pattern on the step pages' readings ({ref}`mask-p1m`), so
-the enclosure must absorb the overlay of both against it; ASML
-specifies "≤ 40 nm" single-machine overlay for the /275D
-stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
-margin is not public).
 
 (mask-lvtnm-steps)=
 ## Steps that use this mask
@@ -300,6 +362,8 @@ that refer to the layer; flag P means "Rule applies to periphery only
 (outside areaid.ce). A corresponding core rule may or may not
 exist.".[^pdk-periph]
 
+:::{table} The `lvtn` rules and the poly and `ncm` rules that refer to the layer, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | lvtn.1a | "Min width of lvtn" | 0.380 µm |
@@ -314,13 +378,22 @@ exist.".[^pdk-periph]
 | lvtn.14 | "Min area of lvtn Holes" | 0.265 µm² |
 | poly.1b | "Min channel length (poly width) for pfet overlapping lvtn […]" | 0.350 µm |
 | ncm.5 | "Min space, no overlap, between ncm and (LVTN_gate) OR (diff containing lvtn)" (P) | 0.230 µm |
+:::
 
-Table 2 of *Criteria & Assumptions* repeats the width and space as
-`LVTNMCD` 0.38 and `LVTNMCDSP` 0.38, and Table 4 gives a "Channel length
-for low Vt PMOS" of 0.35 (`lvtpmos_poly`), matching poly.1b, and a
-"Width of the Low Leakage gate on each side of LowVt Pmos connected to
-power rails (requirement based on exp data)" of 0.28
-(`LvtEnc_forPowerRail`).[^pdk-03][^pdk-periph] The Error Messages page
+*Criteria & Assumptions* repeats the width and space in Table 2 and
+gives two criteria in Table 4:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask
+
+| Parameter | PDK table | Published description | Value |
+|---|---:|---|---|
+| `LVTNMCD` | 2 | width | 0.38 |
+| `LVTNMCDSP` | 2 | space | 0.38 |
+| `lvtpmos_poly` | 4 | "Channel length for low Vt PMOS" | 0.35, matching poly.1b[^pdk-periph] |
+| `LvtEnc_forPowerRail` | 4 | "Width of the Low Leakage gate on each side of LowVt Pmos connected to power rails (requirement based on exp data)" | 0.28 |
+:::
+
+The Error Messages page
 adds `clvtnm.1` and `clvtnm.2` at 0.38 for the created layer and gives
 lvtn.3b as 0.19 (above).[^pdk-errors] For the plate, lvtn.1a, lvtn.2 and
 the two area rules set the smallest features — 0.380 µm lines, spaces
@@ -331,18 +404,17 @@ where its edges may fall relative to the active and poly patterns.
 
 * {ref}`LVTNM <step-014>`, {ref}`LVTNI <step-015>` and
   {ref}`LVTNIS <step-016>` — the mask step, the implant and the strip.
-* {ref}`mask-hvtpm` — the other threshold mask of the module,
-  which the high-Vt PMOS rows of Table F2b pair with this one.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the derivations the renders use.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` — the implant class that uses
-  the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
   step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` — the implant class that uses
+  the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-hvtpm` — the other threshold mask of the module,
+  which the high-Vt PMOS rows of Table F2b pair with this one.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the derivations the renders use.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
@@ -424,11 +496,12 @@ where its edges may fall relative to the active and poly patterns.
   else, and so whether `LVTNI` is a counter-doping or a baseline
   implant, is not public; the step pages favour the block reading.
 * The operation that makes the `clvtnm` plate data is not published.
+
   Table F2b marks created `LVTNM` shapes in rows the `lvtn` function
   line does not name,[^pdk-06] the Error Messages page checks a created
   layer it does not define,[^pdk-errors] and the renders site renders
-  one expression for them whose note contradicts it;[^mask-renders]
-  which, if either, matches the plate is not public.
+  one expression for them whose note contradicts it.[^mask-renders]
+  Which, if either, matches the plate is not public.
 * The plate's tone, blank, absorber and magnification, the resist and
   its thickness, and the exposure tool are not public; the i-line
   reading rests on the 0.380 µm rules.
