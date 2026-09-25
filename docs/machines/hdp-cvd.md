@@ -206,7 +206,7 @@ performance or reliability".[^chen-2002-psg]
 | Novellus Systems | SPEED | — | "captured the heart of the marketplace in 1996" and "was the first-and-only-tool to successfully integrate HDP processing in high-volume production environments"[^novellus-hdp-2001] |
 | Novellus Systems | Concept Two SPEED/SEQUEL | — | "combines two SPEED HDP chambers with one SEQUEL chamber"[^novellus-hdp-2001] |
 | Novellus Systems | Concept Three SPEED | — | 300 mm[^novellus-hdp-2001] |
-| Novellus Systems | SPEED Max | 2009 | "extends the HDP-CVD application into the 45 and 32 nm technology nodes"[^lam-speed] |
+| Novellus Systems | SPEED Max | — | Novellus's 2009 release says the system "extends the HDP-CVD application into the 45 and 32 nm technology nodes"[^lam-speed] |
 | Applied Materials | (first-generation HDP system) | 1996 | introduced in February[^amat-1997] |
 | Applied Materials | Ultima HDP-CVD Centura | 1996 | "Up to three Ultima chambers, or various combinations of Ultima and PECVD chambers, can be fitted onto the production-proven Centura platform"[^amat-hdp-2001] |
 | Applied Materials | Ultima X | — | "for both 200mm and 300mm advanced STI, IMD and PMD applications"[^amat-hdp-2001] |

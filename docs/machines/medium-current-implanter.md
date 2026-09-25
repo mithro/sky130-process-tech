@@ -185,7 +185,7 @@ control at an accuracy of ±0.1 degrees".[^tanjyo-2011]
 |---|---|---:|---|
 | Eaton | NV-6200AV | 1990 | —[^axcelis-history] |
 | Eaton | 8200P | 1996 | "featuring innovative parallel scanning beam"[^axcelis-history] |
-| Eaton | 8250 | 1998 | presented at IIT[^harlan-1998] |
+| Eaton | 8250 | — | presented at IIT 1998[^harlan-1998] |
 | Eaton | NV-8250HT | 2000 | —[^axcelis-history] |
 | Eaton / Axcelis | MC3 (300 mm) | 1998 | —[^axcelis-history] |
 :::
