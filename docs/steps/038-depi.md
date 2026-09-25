@@ -156,10 +156,9 @@ An industry-generic depletion-mode channel implant for a 200 mm,
 * **Energy.** Low — tens of keV for arsenic — so that the n-layer is
   confined to the top few tens of nanometres above the `PTSI` barrier;
   the {term}`tunnel oxide` grown at {ref}`ONO <step-040>` consumes 46 %
-  of its own thickness of silicon[^wiki-thox] — of order 1 nm for a
-  tunnel oxide of the thickness a Cypress patent that may still be in
-  force gives it (collapsed note below this list) — which the target
-  must allow for.
+  of its own thickness of silicon[^wiki-thox] — of order 1 nm for the
+  2 nm lower oxide of Wikipedia's generic SONOS stack[^cyp-26] — which
+  the target must allow for.
 * **Dose.** Of order 10¹² cm⁻²: enough to swing the threshold by a
   volt or two against the p-well surface doping, in line with
   {term}`threshold-adjust <threshold-adjust implant>` practice[^macpherson-1971] and with the "about 8×10¹²
