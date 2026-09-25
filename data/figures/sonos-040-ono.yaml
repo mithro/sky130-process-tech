@@ -1,0 +1,31 @@
+id: sonos-040-ono
+kind: xsection
+page: docs/steps/040-ono.md
+series: series-sonos.yaml
+crop_depth: 90
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step thin oxide covers both
+  active areas except for a window over the right-hand one, where the silicon is bare. After it a
+  thin oxide fills the window flush with the oxide around it, and two more thin films, a nitride and
+  an oxide above it, run unbroken over the whole surface, active areas and filled trench alike.
+caption: >-
+  Before, the bare silicon of the tunnel window; after, the three films of the stack: an oxide grown
+  in the window only, then a nitride and a top oxide over the whole wafer, on the pad oxide (which
+  the page infers) outside the window. No thickness of any of the three films is public for SKY130,
+  so all three are drawn at the same minimum thickness; the fraction of a nanometre the step adds to
+  the pad oxide is not drawn. The top oxide is drawn in the deposited-oxide colour only to tell it
+  apart from the tunnel oxide: how it is formed is not public. The pad oxide and the fill oxide are labelled in the upper panel only. The punch-through stop and the depletion implant (the bands of PTSI and DEPI) and the liner oxide are drawn faded; the deep N-well is drawn but not labelled. Not to
+  scale.
+arrow:
+  title: "ONO, step 040"
+  note: "A thin oxide is grown on the bare silicon, then a charge-trapping nitride and a top oxide are formed over the whole wafer."
+panels:
+  - state_after: "039"
+    title: "Before: bare silicon in the tunnel window after TUNME (step 039)"
+    dim_layers: [liner, ptsi, depi]
+    hide_labels: [sub, dnw]
+  - state_after: "040"
+    title: "After: tunnel oxide in the window; nitride and top oxide over everything"
+    dim_layers: [liner, ptsi, depi]
+    hide_labels: [sub, dnw, fox, padox]
+    highlight: {where: [[0, 268]]}

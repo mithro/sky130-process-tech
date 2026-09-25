@@ -22,6 +22,14 @@ be cleaned and oxidised to make ordinary gate oxides at
 {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`, while the
 islands keep their charge-trapping dielectric.
 
+:::{figure} /_static/figures/sonos-042-onome.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a resist island sits on the three-film stack over the right-hand active area, and the stack is bare elsewhere. After it the resist is gone and the three films survive only as an island under where the resist was; outside it the stack and the thin oxide under it are gone, and the silicon is bare on the left-hand active area and left of the island.
+:width: 560px
+:name: fig-sonos-042-onome
+
+Before, the resist island on the stack; after, the stack left as one island over the memory transistor, and the silicon bare everywhere else. The top oxide and the nitride are drawn etched away down to the oxide beneath them, which the page infers to be the pad oxide; that oxide is then drawn cleared as well, and the resist stripped, because this page treats the resist strip and the pre-gate-oxide clean as part of this step, although whether the last oxide goes here or at the GOX100 pre-clean is not stated publicly. The loss of fill oxide in the etches is not drawn, and the pad oxide left under the edge of the island is drawn but not labelled. The punch-through stop and the depletion implant (the bands of PTSI and DEPI) and the liner oxide are drawn faded; the deep N-well is drawn but not labelled. Not to scale.
+:::
+
 Precisely: the {term}`blocking oxide` (and any sacrificial cap) and the
 nitride or {term}`oxynitride` trapping layer are removed by a plasma etch that
 stops on the underlying oxide — we infer the pad oxide from
