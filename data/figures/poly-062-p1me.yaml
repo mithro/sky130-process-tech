@@ -1,0 +1,46 @@
+id: poly-062-p1me
+kind: xsection
+page: docs/steps/062-p1me.md
+series: series-poly.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step two resist lines stand on
+  three stacked films that cover the whole slice. After it the three films remain only under
+  those lines, as a narrow gate stack on the thin oxide of the left-hand active area and a wider
+  resistor stack on the oxide-filled trench; the resist is gone and the thin oxide is bare
+  elsewhere.
+caption: >-
+  Before, the P1M resist lines on the unpatterned stack; after, the oxide cap, nitride cap and
+  gate film cut through wherever the resist was open, stopping on the gate oxide over the active
+  areas and on the field oxide, and the resist stripped, as this reference counts the strip in
+  this step. Whether the resist stays on through the poly etch or the caps serve as a hard mask
+  after an early strip is not public, and the drawing shows only the result. The walls are drawn
+  vertical, and the gate oxide is drawn intact; how much of it the over-etch removes is not
+  public. The silicon is drawn but not labelled, and the liner oxide is drawn faded; the wells
+  and channel implants made earlier are not drawn. Not to scale.
+arrow:
+  title: "P1ME, step 062"
+  note: "A plasma etch cuts the caps and the gate film down to the gate oxide; the resist is then stripped."
+panels:
+  - state_after: "061"
+    title: "Before: the P1M resist lines on the gate stack (step 061)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox, sub]
+    dim_layers: [liner]
+  - state_after: "062"
+    title: "After: a gate stack on the NMOS and a resistor stack on the field"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox, sub]
+    dim_layers: [liner]
+    highlight: {where: [[0, 268]]}
+    callouts:
+      - x: 26
+        y: "top@26"
+        label:
+          title: "Gate"
+          basis: public
+      - x: 134
+        y: "top@134"
+        label:
+          title: "Resistor body"
+          basis: public

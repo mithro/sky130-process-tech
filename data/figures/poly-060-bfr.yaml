@@ -1,0 +1,22 @@
+id: poly-060-bfr
+kind: xsection
+page: docs/steps/060-bfr.md
+series: series-poly.yaml
+crop_depth: 72
+no_drawn_change: true
+alt: >-
+  One cross-section of the front of the wafer: a continuous film under a hatched film and a thin
+  top film, across the whole slice. The drawing is the same as the state before the step.
+caption: >-
+  At BFR the films that the furnace steps left on the back of the wafer are etched off, while
+  the front, drawn here, is kept away from the chemistry. The back of the wafer is not part of
+  any cross-section on this site, so the drawing is the same as before the step. Which films
+  the back carries depends on whether the caps were deposited in a furnace, which is not public.
+  The field oxide is drawn but not labelled, and the liner oxide is drawn faded; the wells and
+  channel implants made earlier are not drawn. Not to scale.
+panels:
+  - state_after: "060"
+    title: "State at this step (no drawn change)"
+    hide_layers: [nwell, pwell, chn, chp]
+    hide_labels: [fox]
+    dim_layers: [liner]

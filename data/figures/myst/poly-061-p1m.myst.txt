@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/poly-061-p1m.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step three stacked films cover the whole slice. After it two narrow resist lines stand on the stack: a narrow one over the left-hand active area and a wider one over the middle of the oxide-filled trench.
+:width: 560px
+:name: fig-poly-061-p1m
+
+Before, the complete, unpatterned gate stack; after, two resist lines on it, one where this slice places a gate over the NMOS active area and one over the resistor body on the field oxide. The gate line's drawn minimum width is 0.150 µm (poly.1a), and a resistor body is at least 0.330 µm wide (poly.3);[^pdk-periph] neither width is drawn to scale. The gate-level resist is drawn thinner than the implant-mask resists, following the page's inference that it is thinner than the PDK's generic 1.14 µm;[^pdk-03] its thickness is not public. The silicon and the field oxide are drawn but not labelled, and the liner oxide is drawn faded; the wells and channel implants made earlier are not drawn. Not to scale.
+:::
