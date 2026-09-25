@@ -9,7 +9,7 @@ silicon at the surface is consumed and converted into glass.
 |---|---|
 | What it does | grows silicon dioxide out of the silicon wafer itself, by exposing hot silicon to oxygen or steam |
 | Steps in SKY130 | 6 |
-| Tool classes | {ref}`Vertical batch furnaces <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processors <machine-rapid-thermal-processor>` |
+| Tool classes | {ref}`Vertical batch furnaces <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processors <machine-rapid-thermal-processor>`, {ref}`LPCVD furnaces <machine-vertical-furnace-lpcvd>` |
 | Consumable classes | {ref}`Process gases <material-process-gases>`, {ref}`Hardware consumables <material-hardware-consumables>`, {ref}`Substrates and test wafers <material-substrates>` |
 | Governing relation | Deal–Grove model |
 

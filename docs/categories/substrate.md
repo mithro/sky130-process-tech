@@ -16,10 +16,7 @@ material" step is not a process performed in the fab so much as a
 
 ## What this class of step does
 
-Every wafer that enters the fab begins as a bare, polished disc of
-single-crystal silicon bought from a wafer vendor. The "starting
-material" step is not a process performed in the fab so much as a
-*specification*: it fixes the diameter, thickness, crystal orientation,
+It fixes the diameter, thickness, crystal orientation,
 doping type and resistivity, oxygen content, flatness and cleanliness
 of the silicon on which every later step depends. Once the wafer lot is
 released into the line, nothing can change the bulk properties of the
@@ -81,7 +78,7 @@ stated publicly.[^pdk-01]
 Almost all IC wafers are cut from boules grown by the Czochralski
 method, in which a seed crystal is dipped into molten silicon (melting
 point 1414 °C)[^wiki-si] held in a quartz crucible and slowly withdrawn
-while rotating.[^wiki-cz] The melt freezes onto the seed as one continuous
+while rotating, so that the melt freezes onto the seed as one continuous
 crystal.[^wiki-cz] The dopant is added to the melt; because the
 segregation coefficient of most dopants is less than one, the crystal
 grows progressively more heavily doped from seed to tail, and the
@@ -180,7 +177,7 @@ The substrate category has no process tool in the fab itself; the
 
 ## Steps in this category
 
-:::{table} The one substrate step of the flow
+:::{table} The one substrate step of the flow; Machine class is the class the step page's "Machines typically used" section names (see the machines index), not a published SkyWater assignment
 
 | Step | Code | Name | Machine class |
 |------|------|------|----------------|
