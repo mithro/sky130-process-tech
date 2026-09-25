@@ -2,23 +2,9 @@
 # LVOM — Low Voltage Oxide
 
 The low-voltage oxide mask is the {term}`reticle` of SKY130's
-{term}`dual gate oxide`: on the {ref}`LVOM <step-044>` page's reading,
+{term}`dual gate oxide`. On the {ref}`LVOM <step-044>` page's reading,
 the resist printed through it at step 44 is opened over the 1.8 V
-transistors and kept over the 5 V, high-voltage and memory devices, the
-1.8 V NMOS channel implant {ref}`NCHI <step-045>` goes through the
-openings, and {ref}`GOXETCH <step-046>` strips the thick gate oxide in
-them so that the thin oxide can be grown at {ref}`LVGOX <step-047>`.
-Designers do not draw this mask; they draw its thick-oxide counterpart
-`hvi`, and the public record describes the plate from both sides: the
-step page reads it as everything outside `hvi`, while, on our reading,
-the PDK's mask generation table and one public derivation from the drawn
-tape-out data describe its data as the thick-oxide and SONOS regions.
-This page gathers what public sources say about the mask itself — its
-PDK entry and layers, the plates the process-steps sheet records for the
-MPW runs, what the public renders of those runs show, the lithography it
-needs and the rules that constrain it. How the step is performed is on
-the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+transistors and kept over the 5 V, high-voltage and memory devices.
 
 | | LVOM — Low Voltage Oxide |
 |---|---|
@@ -35,37 +21,63 @@ the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 3 steps; see {ref}`Steps that use this mask <mask-lvom-steps>` |
 
+:::{seealso}
+How the step is performed is on
+the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`LVOM <step-044>` page's reading, the
+1.8 V NMOS channel implant {ref}`NCHI <step-045>` goes through the
+openings, and {ref}`GOXETCH <step-046>` strips the thick gate oxide in
+them so that the thin oxide can be grown at {ref}`LVGOX <step-047>`.
+Designers do not draw this mask; they draw its thick-oxide counterpart
+`hvi`. The public record describes the plate from both sides: the
+step page reads it as everything outside `hvi`, while, on our reading,
+the PDK's mask generation table and one public derivation from the drawn
+tape-out data describe its data as the thick-oxide and SONOS regions.
 
 The mask divides the wafer between the two gate oxides. The PDK gives
 the thick one: "All high voltage devices use 110A gate oxide thickness
 just like low voltage (0 to Vcc) devices" and "All VHV devices use 110A
-gate oxide thickness just like standard 5.0V Vcc devices";[^pdk-hv] the
+gate oxide thickness just like standard 5.0V Vcc devices".[^pdk-hv] The
 public SPICE models carry an electrical oxide thickness (`toxe`) of
 4.148 nm for `nfet_01v8` and 11.6 nm for
-`nfet_g5v0d10v5`.[^pdk-model-nfet01v8][^pdk-model-nfet5v] The drawn layer
+`nfet_g5v0d10v5`.[^pdk-model-nfet01v8][^pdk-model-nfet5v]
+
+The drawn layer
 that marks the thick oxide is `hvi`, "High voltage (5.0V) thick oxide
 gate regions", whose rule set's function line is "Defines thick oxide
-for high voltage devices"; the `hvnwell` rule set adds that "All nwell
+for high voltage devices".[^pdk-06][^pdk-periph] The `hvnwell` rule set adds that "All nwell
 connected to voltages greater than 1.8V must be enclosed by
-hvi".[^pdk-06][^pdk-periph] The {ref}`LVOM <step-044>` page reads the
+hvi".[^pdk-periph] The {ref}`LVOM <step-044>` page reads the
 mask as essentially NOT `hvi`, opened over everything outside the drawn
 thick-oxide regions, and the masks index records that pairing as an
 inference.
 
 The PDK's mask generation table, Table F2b, reads from the other side.
-It marks the `LVOM` column `C` ("CREATED") in 30 of its 80 device rows:
-the HV n and p diffusion resistors, the "HV varactor (floating gate)",
-the four SONOS transistor rows, all 13 rows of its "110A CMOS" group (the
-5/10.5 V and native devices, the two "Flash npass" rows, and the 16 V
-and 20 V drain-extended devices), seven diode rows (the HV, RF ESD,
-native and NV SONOS diode rows) and the three HV ESD transistor
-rows.[^pdk-06]
-It marks `-` ("Layer not created for the device") in 28 rows, among
+It marks the `LVOM` column `C` ("CREATED") in 30 of its 80 device rows:[^pdk-06]
+
+* the HV n and p diffusion resistors
+* the "HV varactor (floating gate)"
+* the four SONOS transistor rows
+* all 13 rows of its "110A CMOS" group (the
+  5/10.5 V and native devices, the two "Flash npass" rows, and the 16 V
+  and 20 V drain-extended devices)
+* seven diode rows (the HV, RF ESD,
+  native and NV SONOS diode rows)
+* the three HV ESD transistor
+  rows
+
+The table marks `-` ("Layer not created for the device") in 28 rows, among
 them every row of its "32 A CMOS" group except the HV varactor — the
 1.8 V transistors, the core devices and the low- and high-Vt
-varactors — and the LV ESD transistor, and `+` in the other
-22.[^pdk-06] On the table, then, the created `LVOM` data belong to the
+varactors — and the LV ESD transistor.[^pdk-06] It marks `+` in the other
+22.[^pdk-06]
+
+On the table, then, the created `LVOM` data belong to the
 thick-oxide devices and to the memory transistors, not to the 1.8 V
 devices (our reading of the rows; the table does not say what the data
 are or in which tone they are written). Read with the step page, the
@@ -81,7 +93,7 @@ below this paragraph. Table
 F2b's `C` marks in the SONOS rows fit that inference (our reading). Diaz
 et al. describe the same kind of division in a 0.18 µm logic technology,
 where "Robust dual-gate oxides were developed to support 1.5-2 V core
-logic as well as 3.3 V periphery (I/O) circuitry",[^diaz-1999] and Togo,
+logic as well as 3.3 V periphery (I/O) circuitry".[^diaz-1999] Togo,
 Noda and Tanigawa describe multiple-thickness gate oxides for
 logic-embedded DRAM.[^togo-1998]
 
@@ -105,6 +117,7 @@ operation that turns `hvi` into the plate. Table C3 of the *Layers
 Reference* defines layers built from `hvi` — `LVnwell` as "nwell NOT
 hvi", `Hdiff` as "Diffusion AND Hvi", `HV_nwell` as "(nwell AND hvi) OR
 (nwell overlapping areaid.hl)" — but no layer for the plate.[^pdk-06]
+
 Rule x.15a confines "Drawn compatible, mask, and waffle-drop layers" to
 test modules, the seal ring and the frame, with the exception
 "FOM/P1M/Metal waffle drop are allowed inside the die" (flag
@@ -113,22 +126,33 @@ P),[^pdk-periph] so a design inside the die draws `hvi`, not `clvom`
 
 The *Summary of Key Periphery Rules* uses the mask's name for the drawn
 layer. Its Table F3b, "Front end layers (High Voltage Devices)", has a
-row for `hvi` with a width of 0.600, 0.700 under "nwell" "spc", 0.180
-under the "diff" and "tap" spacing and enclosure columns, 0.700 under
-"lvom" "spc", "X" under "lvom" "enc" and "Yes" for manual merge, and it
+row for `hvi` with:[^pdk-summary]
+
+* a width of 0.600
+* 0.700 under "nwell" "spc"
+* 0.180
+  under the "diff" and "tap" spacing and enclosure columns
+* 0.700 under
+  "lvom" "spc"
+* "X" under "lvom" "enc"
+* "Yes" for manual merge
+
+The table
 has no column headed `hvi`.[^pdk-summary] The 0.700 under "lvom" matches
 hvi.2a, "Min spacing of Hvi to Hvi", and the 0.700 under "nwell" matches
 hvi.5,[^pdk-periph] so we read the table's "lvom" column as the `hvi`
 layer itself (inference). Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) names the
 space variable `LVOMCDSPCSMC`, a suffix it does not explain.[^pdk-03]
 
-The PDK's [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page, which describes "many of the automated
+The PDK's [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", has the generic grid, octagonal-edge and x.15a
+criteria for GDS data".[^pdk-errors] It has the generic grid, octagonal-edge and x.15a
 checks for both `clvom` and a mask-data layer `LVOMmk`, and a
 "nikon cross" check, `clvom.nikon`: "LVOMmk in the nikon cross has the
 wrong polarity" and "LVOMmk is missing from the nikon cross in the
-layout".[^pdk-errors] It words the `hvi` rules as "0.6 min. width of
+layout".[^pdk-errors]
+
+The page words the `hvi` rules as "0.6 min. width of
 hvi_peri", "0.7 min. spacing/notch of hvi_peri", "hvi must not overlap
 tunm" and "0.7 min. spacing between non-butting hvi and nwell", and
 gives no width or spacing check for `clvom` itself.[^pdk-errors]
@@ -141,13 +165,15 @@ assigns to each mask. For `LVOM` the site renders layers 75:20 (`hvi`)
 and 80:20 (`tunm`) together, with no Boolean expression and no fill
 layer, on all eight runs; its mask record gives the mask-level layer
 46:0 and the note "LVOM = hvi OR tunm and the SKY130 layer
-sheet".[^mask-renders][^pdk-06] The note does not say which sheet it
+sheet".[^mask-renders][^pdk-06]
+
+The note does not say which sheet it
 means, and the site gives no other source. The layers and note are one
 public derivation from the drawn data, not SkyWater's mask-generation
 recipe. They differ from the index's and the step page's pairing, as the
 {ref}`masks index <masks-derivations>` records: the renders show `hvi`
 OR `tunm`, where the step page reads the mask as everything outside
-`hvi`; since the renders show drawn shapes, not photomask artwork, the
+`hvi`. Since the renders show drawn shapes, not photomask artwork, the
 two may describe the same plate in opposite tone (inference), but the
 renders also add `tunm`.
 
@@ -158,14 +184,21 @@ that agreement may only mean that both start from the same public PDK
 pages, and neither source says in which tone the plate is written.
 
 All 40 rendered dies of every run carry shapes, but that is not 40
-designs with 5 V devices: every die carries at least 40 348 shapes, the
-minimum on each run being 40 348 (MPW-2 to MPW-5), 40 349 (MPW-6 and
-MPW-7), 40 350 (MPW-8) or 53 374 (MPW-1), and on each run 32 to 36 of
-the 40 dies carry a count that another die of the run shares — 53 374
-on 36 dies of MPW-1 and 53 298 or 53 299 on 26 to 33 dies of each later
-run.[^mask-renders] We read the repeated counts as shapes common to the
+designs with 5 V devices:[^mask-renders]
+
+* every die carries at least 40 348 shapes, the
+  minimum on each run being 40 348 (MPW-2 to MPW-5), 40 349 (MPW-6 and
+  MPW-7), 40 350 (MPW-8) or 53 374 (MPW-1)
+* on each run 32 to 36 of
+  the 40 dies carry a count that another die of the run shares — 53 374
+  on 36 dies of MPW-1 and 53 298 or 53 299 on 26 to 33 dies of each later
+  run
+
+We read the repeated counts as shapes common to the
 dies rather than to the projects (inference); the site does not say what
-they are. The site states the limits of its images: "These are renders
+they are.
+
+The site states the limits of its images: "These are renders
 of *drawn* data, not photomask artwork: reticle pitch, 4x reduction,
 mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] Its metadata carries no plate ID, so a render
@@ -207,35 +240,58 @@ the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`LVOM <step-044>` page infers an i-line
+### Exposure class
+
+The {ref}`LVOM <step-044>` page infers an i-line
 exposure from the 0.6 µm `hvi` rule; the
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01] At NA 0.48, the low end of
 ASML's PAS 5500/275D,[^asml-pas5500-275d] the 0.600 µm width has
-{math}`k_1 \approx 0.79` (our arithmetic), and Wong et al.'s mask error
+{math}`k_1 \approx 0.79` (our arithmetic). Wong et al.'s mask error
 factor, which "increases rapidly when the critical dimension (CD) is less
 than 0.5 (lambda) /NA for line-space patterns",[^wong-1998] would stay
 near unity down to about 0.38 µm at that NA (our arithmetic).
 
-**Resist.** The resist is coated on the fresh thick gate oxide of
+### Resist and tone
+
+The resist is coated on the fresh thick gate oxide of
 {ref}`GOX100 <step-043>`. The {ref}`LVOM <step-044>` page reads about
 1 µm of positive i-line resist, the PDK's generic "Photoresist thickness"
 being 1.14 µm,[^pdk-03] thick enough to stop the channel implant and to
-survive the wet etch, with no anti-reflective coating assumed, and a
+survive the wet etch, with no anti-reflective coating assumed. It reads a
 firm hard bake to reduce HF penetration along the resist–oxide
-interface; it cites Beverina et al. on the "'Resist / Wet Etch' Couple
+interface. It cites Beverina et al. on the "'Resist / Wet Etch' Couple
 for Dual Gate Oxide".[^beverina-2003] SkyWater's resist and bake are not
 public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** Nothing is etched by plasma through this resist.
+### Overlay and alignment
+
+The {ref}`LVOM <step-044>` page reads the mask as aligned to
+the trench pattern, with the thick/thin boundary required to land on
+field oxide rather than across an active area. The rules that keep it
+there are hvdifftap.21, "Diff or tap cannot straddle Hvi", and the
+0.180 µm enclosure of HV diffusion by `hvi` and spacing of other
+diffusion from it (hvdifftap.22 and hvdifftap.23).[^pdk-periph] We read
+the 0.180 µm as the placement margin within which this mask's edge must
+fall (inference). ASML specifies "≤ 40 nm" single-machine overlay for the
+/275D stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is
+not public).
+
+### Pattern transfer
+
+Nothing is etched by plasma through this resist.
 On the step pages' readings the pattern is used twice:
-{ref}`NCHI <step-045>` implants the 1.8 V NMOS channels through the
-openings on the {ref}`medium-current implanter <machine-medium-current-implanter>`
-class, and {ref}`GOXETCH <step-046>` removes the thick oxide in them in
-dilute or buffered HF on the {ref}`wet bench <machine-wet-bench>` class,
-with the resist strip and clean treated as part of that etch. The
+
+* {ref}`NCHI <step-045>` implants the 1.8 V NMOS channels through the
+  openings on the {ref}`medium-current implanter <machine-medium-current-implanter>`
+  class
+* {ref}`GOXETCH <step-046>` removes the thick oxide in them in
+  dilute or buffered HF on the {ref}`wet bench <machine-wet-bench>` class,
+  with the resist strip and clean treated as part of that etch
+
+The
 Cypress patents, which may still be in force, describe the same mask;
 their wording is in the collapsed note below this paragraph. The
 {ref}`GOXETCH <step-046>` page names thinning of the thick oxide at
@@ -244,7 +300,7 @@ such an etch. In a dual-gate-oxide process with shallow trench
 isolation, Kim et al. found "severe GOX thinning" from 320 Å in the
 active area to 79 Å at the STI top edge, with a dent profile, and
 prevented it mainly by a thick sidewall oxide with nitride
-pullback;[^kim-2002] Lee et al. characterised the thinning at the STI
+pullback.[^kim-2002] Lee et al. characterised the thinning at the STI
 edge in the dual-gate-oxide process.[^lee-1999-icvc]
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
@@ -256,17 +312,6 @@ and/or insulator layer thickness",[^pat-03] and "a patterned mask layer
 region 208", after which "The thick, first gate oxide 240 is etched in
 the exposed regions by using a BOE etch".[^pat-04]
 :::
-
-**Overlay.** The {ref}`LVOM <step-044>` page reads the mask as aligned to
-the trench pattern, with the thick/thin boundary required to land on
-field oxide rather than across an active area. The rules that keep it
-there are hvdifftap.21, "Diff or tap cannot straddle Hvi", and the
-0.180 µm enclosure of HV diffusion by `hvi` and spacing of other
-diffusion from it (hvdifftap.22 and hvdifftap.23);[^pdk-periph] we read
-the 0.180 µm as the placement margin within which this mask's edge must
-fall (inference). ASML specifies "≤ 40 nm" single-machine overlay for the
-/275D stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is
-not public).
 
 (mask-lvom-steps)=
 ## Steps that use this mask
@@ -301,6 +346,8 @@ high-voltage diffusion, poly and N-well sets that bound `hvi` and rule
 x.15a; flag P means "Rule applies to periphery only (outside areaid.ce).
 A corresponding core rule may or may not exist.".[^pdk-periph]
 
+:::{table} The `hvi` rules, the high-voltage diffusion, poly and N-well rules that bound `hvi`, and rule x.15a, as published
+
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
 | hvi.1 | "Min width of Hvi" (P) | 0.600 µm |
@@ -314,6 +361,7 @@ A corresponding core rule may or may not exist.".[^pdk-periph]
 | hvdifftap.23 | "Space between diff or tap outside Hvi and Hvi" (P) | 0.180 µm |
 | hvpoly.14 | "(poly and diff) cannot straddle Hvi" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* gives `LVOMCD` 0.6 and
 `LVOMCDSPCSMC` 0.7, the same values as hvi.1 and hvi.2a, and Table F3b
@@ -331,20 +379,19 @@ from any active area.
   {ref}`GOXETCH <step-046>` — the mask step, the channel implant and the
   oxide etch; {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>` — the
   thick and thin gate oxidations.
-* {ref}`mask-tunm` and {ref}`mask-onom` — the SONOS masks, whose windows
-  hvi.4 keeps outside `hvi` and whose islands the resist protects on the
-  step page's reading.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the derivations the renders use.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-medium-current-implanter` and {ref}`machine-wet-bench` —
-  the implant and wet-etch classes that use the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
-  reticles.
-* {ref}`category-lithography`, {ref}`category-implant` and
+* **Category.** {ref}`category-lithography`, {ref}`category-implant` and
   {ref}`category-oxidation` — the mask step, implant and oxidation
   categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-medium-current-implanter` and {ref}`machine-wet-bench` —
+  the implant and wet-etch classes that use the pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
+  reticles.
+* **Masks.** {ref}`mask-tunm` and {ref}`mask-onom` — the SONOS masks, whose windows
+  hvi.4 keeps outside `hvi` and whose islands the resist protects on the
+  step page's reading.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the derivations the renders use.
 
 ## References
 
@@ -423,7 +470,7 @@ from any active area.
 * Whether the plate's data are the complement of `hvi`, as the step page
   reads it, or `hvi` and the SONOS regions in the opposite tone, as Table
   F2b's rows and the renders' layers suggest, is not stated in the
-  PDK;[^pdk-06][^mask-renders] the renders' note cites an unnamed "layer
+  PDK.[^pdk-06][^mask-renders] The renders' note cites an unnamed "layer
   sheet".
 * The operation that makes the `clvom` plate data, what the `clvom`
   drawing purpose 45:20 holds and how the ONO islands are treated are

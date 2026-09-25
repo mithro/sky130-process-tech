@@ -438,3 +438,44 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
 * **Content problem for the owner:** `docs/masks/licm1.md:178`, the "Plate number" bullet reads "The sheet
   does not say what `265` encodes. It falls Its neighbours in the tab are `260` …" — "It falls" is a
   broken fragment (compare "It falls between … and …" on cap2m and capm). Left as it is.
+
+### 11. lvom — done (page with three in-force notes)
+
+* **Dropdowns.** The three `{dropdown}` notes are byte-identical to the base (checked by extracting every
+  fenced block before and after, and by `check_preserved`, which reports no dropdown change). The two
+  notes in the body still follow directly the paragraph that points at them ("… in the collapsed note
+  below this paragraph"), and nothing was inserted between paragraph and note. `check_inforce` passes.
+* **Rules applied.** R-INTRO (193 → 45 words); R-CAPTION; R-PARA, R-SENTENCE; R-LIST (Table F2b's 30 `C`
+  rows, 2 + 1 + 4 + 13 + 7 + 3 = 30; Table F3b's `hvi` row; the per-die counts; the two uses of the
+  pattern, under the base's "On the step pages' readings the pattern is used twice:"); R-RELATED; R-H3
+  (Exposure class, Resist and tone ← "Resist", Overlay and alignment ← "Overlay", Pattern transfer).
+* **Intro split with a repeated hedge (as on fom).** The intro's first sentence ran on after its colon
+  through three clauses, all inside "On the LVOM page's reading". The intro keeps the reticle clause and
+  the first reading clause; the NCHI / GOXETCH / LVGOX clause opens `## What the mask defines` with the
+  base's hedge repeated ("On the {ref}`LVOM <step-044>` page's reading, the 1.8 V NMOS channel implant …"):
+  ADDED ref `step-044`. "Designers do not draw this mask …" follows it, split at its first semicolon.
+* **Moved passage (G1):** the Overlay paragraph moved above the Pattern transfer paragraph and its note;
+  the note stays attached to Pattern transfer, and no text crossed a fence.
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,refs`): markers `pdk-periph` (the `hvi` /
+  `hvnwell` sentence split at its semicolon: the first half keeps `pdk-06` and `pdk-periph`, the second,
+  a periphery rule, takes `pdk-periph`), `pdk-06` (Table F2b `-` / `+` sentence), `pdk-summary` (Table F3b
+  list lead-in; the base marker stays on "The table has no column headed `hvi`", where "and it" became
+  "The table"), `pdk-errors` (*Error Messages* description); number `15` (x.15a in the rule-table caption);
+  ref `step-044` (above).
+* **LOST `number_order` ('44', '1.8', '5', '1.8'), read by hand:** the intro sentence (step 44, 1.8 V,
+  5 V, then the 1.8 V NMOS implant) is now two pieces, the second after the quick-facts table; the digits
+  and their order are unchanged, but the quick-facts numbers sit between the pieces, which breaks the
+  tool's contiguity test.
+* **Marker coverage.** Flags read: lists under lead-in markers; "It reads a firm hard bake …", "We read
+  the 0.180 µm …" and the Open question's second half had no marker of their own in the base.
+* **Over the caps after the pass, all because of the notes:** "The SONOS rows matter for the resist …"
+  (134 words) and the Pattern transfer paragraph that points at the second note (108) each contain the
+  pointer "in the collapsed note below this paragraph"; splitting either would leave the pointer's
+  paragraph no longer directly above its note (R-DROPDOWN 4), so both stay whole (their long sentences
+  were split). Two sentences inside the notes (48, 84) are not edited (§2.5). Also: "The table marks `-` …"
+  (47, one dash pair), the Kim et al. sentence (46), the Polarity and tone cell (53; not in the body).
+  Before → after: paragraphs 10 → 2, items 0 → 0, sentences 19 → 4 (plus the two inside notes), cells
+  1 → 1.
+* **Content problems for the owner:** none found.
