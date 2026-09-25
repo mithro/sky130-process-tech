@@ -30,18 +30,14 @@
 `NCHI` is a channel implant made through the windows that
 {ref}`LVOM <step-044>` opened over the low-voltage (1.8 V) regions,
 before the thick oxide is stripped from them at
-{ref}`GOXETCH <step-046>`.
-
-This reference describes it as the baseline
+{ref}`GOXETCH <step-046>`. This reference describes it as the baseline
 threshold-setting implant of the 1.8 V NMOS: the p-type
 dose in the top of the channel that gives `nfet_01v8` its threshold.
 This is an inference from its
 place in the sequence this reference describes — under the low-voltage
 oxide mask, after the well and
 channel module was annealed at {ref}`RTAI <step-034>` — and from the
-PDK's device description below.
-
-The earlier pages of this reference treat it that way: the low-Vt
+PDK's device description below. The earlier pages of this reference treat it that way: the low-Vt
 device `nfet_01v8_lvt` is made by the separate {ref}`LVTNI <step-015>`
 implant, and the PDK says its cross-section "is identical to the std
 NMOS FET except for the VT adjust implants".[^pdk-07]

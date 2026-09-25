@@ -29,17 +29,11 @@
 The step list describes `TUNARCE` as "Tunnel mask ARC etch" and does not
 explain it.[^steps-sheet] We read it as a short plasma etch that removes
 the anti-reflective coating from the bottom of the windows that
-{ref}`TUNM <step-035>` opened in the photoresist.
-
-A bottom anti-reflective coating
-({term}`BARC`) is spun on *under* the resist and is not photosensitive.
-
-After
+{ref}`TUNM <step-035>` opened in the photoresist. A bottom anti-reflective coating
+({term}`BARC`) is spun on *under* the resist and is not photosensitive. After
 develop, the resist is gone from the tunnel windows, but the {term}`ARC`
 film still covers the oxide inside them — the pad oxide from
-{ref}`BOX <step-002>`, we infer (its retention is not public).
-
-This etch
+{ref}`BOX <step-002>`, we infer (its retention is not public). This etch
 transfers the resist pattern through the ARC and stops on that oxide, so
 that the
 two implants that follow ({ref}`PTSI <step-037>`,

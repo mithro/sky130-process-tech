@@ -33,13 +33,9 @@ at {ref}`RTAI <step-034>`. It coats the wafer with an anti-reflective
 coating and photoresist, exposes the *tunnel mask* {term}`reticle` and
 develops it, opening windows over the channel regions of the SONOS
 memory transistors and leaving everything else — every logic
-transistor, every 5 V and high-voltage device — covered.
-
-The windows
+transistor, every 5 V and high-voltage device — covered. The windows
 are used three times before the resist comes off: two implants go
-through them ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`).
-
-The
+through them ({ref}`PTSI <step-037>`, {ref}`DEPI <step-038>`). The
 oxide inside them — the pad oxide, we infer — is then etched away
 ({ref}`TUNME <step-039>`), so
 that the {term}`tunnel oxide` of the {term}`ONO` stack can be grown on bare

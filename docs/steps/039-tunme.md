@@ -29,14 +29,12 @@
 `TUNME` removes the oxide — we infer the pad oxide from
 {ref}`BOX <step-002>` — from the tunnel windows so that the {term}`tunnel oxide`
 of the {term}`SONOS` memory transistor can be grown on bare silicon at the next
-step, {ref}`ONO <step-040>`.
-
-The resist patterned at
-{ref}`TUNM <step-035>`, opened through its {term}`ARC` at
+step, {ref}`ONO <step-040>`. The resist patterned at
+{ref}`TUNM <step-035>` — opened through its {term}`ARC` at
 {ref}`TUNARCE <step-036>` and just used as the mask for the
-{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants, now serves
-a third time, as the mask for an oxide etch that we infer to be wet.
-A plasma would damage the silicon. Inside each window the oxide —
+{ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants — now serves
+a third time, as the mask for an oxide etch that we infer to be wet: a
+plasma would damage the silicon. Inside each window the oxide —
 the pad oxide, we infer — is dissolved in dilute hydrofluoric acid or
 buffered HF down to the silicon; outside the windows the resist keeps
 the oxide intact. The patent's own chemistries, its pad-oxide thickness

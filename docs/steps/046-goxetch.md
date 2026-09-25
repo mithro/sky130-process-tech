@@ -27,22 +27,16 @@
 ## What this step is
 
 `GOXETCH` strips the thick gate oxide grown at {ref}`GOX100 <step-043>`
-from the low-voltage regions.
-
-With the {ref}`LVOM <step-044>` resist
+from the low-voltage regions. With the {ref}`LVOM <step-044>` resist
 still in place — it has just served as the mask for
 {ref}`NCHI <step-045>` — the wafer is dipped in dilute hydrofluoric acid
 or buffered HF until the thick oxide in the windows is
-gone and bare silicon is exposed.
-
-(The thick oxide is thinner than the PDK's 110 Å
+gone and bare silicon is exposed. (The thick oxide is thinner than the PDK's 110 Å
 finished thick-oxide figure[^pdk-hv] by an amount that is not public;
 see {ref}`GOX100 <step-043>`.) Under the resist, over the 5 V and
 high-voltage transistors, the oxide stays. The resist is then stripped
 and the wafer cleaned for the thin gate oxidation at
-{ref}`LVGOX <step-047>`.
-
-It is the etch half of the {term}`dual-gate-oxide <dual gate oxide>`
+{ref}`LVGOX <step-047>`. It is the etch half of the {term}`dual-gate-oxide <dual gate oxide>`
 process described on the {ref}`category-oxidation` page: "a mask and wet
 etch to strip it from the low-voltage active areas".
 

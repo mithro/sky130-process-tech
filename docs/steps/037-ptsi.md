@@ -27,9 +27,7 @@
 ## What this step is
 
 `PTSI` is the first of two implants made through the tunnel-mask windows
-into the channel region of the {term}`SONOS` memory transistors.
-
-This
+into the channel region of the {term}`SONOS` memory transistors. This
 reference describes it as a p-type doping peak *below* the surface of
 the memory channel — a "punch-through stop". It keeps
 the depletion region of the drain from reaching the source in a
@@ -37,9 +35,7 @@ transistor whose gate is only a few tenths of a micrometre long and
 which must withstand several volts on its drain and body during
 programme, erase and inhibit operations. Both are inferences from
 the n-channel SONOS cell and from the standard cure for punch-through
-described below.[^pat-vt-lsi]
-
-The surface doping, which sets
+described below.[^pat-vt-lsi] The surface doping, which sets
 the threshold, is left for the next implant, {ref}`DEPI <step-038>`.
 
 :::{figure} /_static/figures/sonos-037-ptsi.svg
