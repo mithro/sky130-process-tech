@@ -152,10 +152,10 @@ concern here than on high-current tools.
 | Axcelis | HE3 (300 mm) | 1998 | —[^axcelis-history] |
 | Axcelis | NV-GSD/VHE | — | "an evolutionary step from the NV-GSD/HE" using the same "source, injector and end station"[^wilson-1996] |
 | Axcelis | GSD/HE and GSD/VHE Ovation | — | —[^axcelis-gsd-page][^axcelis-gsd] |
-| Genus | G1500 | — | —[^tokoro-1996] |
-| Genus | G1510 | — | —[^tokoro-1996] |
+| Genus | G1500 | — | MeV implanter[^tokoro-1996] |
+| Genus | G1510 | — | MeV implanter[^tokoro-1996] |
 | Genus | Tandetron 1520 | — | MeV implanter[^tokoro-1996] |
-| Varian | VIISta 3000 (single-wafer) | — | "greater than 3.75 MeV"[^varian-viista3000]; "developed … to meet requirements of advanced 200 and 300 mm wafer processes"[^tokoro-2000] |
+| Varian | VIISta 3000 (single-wafer) | — | which Varian presented as spanning energies to "greater than 3.75 MeV"[^varian-viista3000]; "developed … to meet requirements of advanced 200 and 300 mm wafer processes"[^tokoro-2000] |
 :::
 
 Varian Semiconductor was acquired by Applied Materials in

@@ -14,7 +14,7 @@ thickness or on a harder layer underneath.
 | Architecture | Rotary multi-platen: "Multiple wafer heads, at least one greater in number than the number of polishing stations", on a carousel;[^pat-cmp-mirra] linear: "a moving belt is used to linearly move the pad across the wafer surface".[^pat-linear-lam] |
 | Pad | "porous polymeric materials with a pore size between 30 and 50 μm", "must be regularly reconditioned";[^wiki-cmp] a carousel station has "a pad conditioner to recondition the polishing pad so that it retains a high polishing rate".[^pat-cmp-mirra] |
 | Endpoint | Reflectance through "a window embedded within the polishing table";[^pat-cmp-endpoint-ibm] a "substantially transparent polyurethane plug" in the pad.[^pat-cmp-window] |
-| 200 mm era | Mirra (1995), "three-station, four polishing head design";[^amat-1997] AVANTI 472, "single wafer, two-step polishing for wafers up to 200mm";[^ipec-472-1997] Strasbaugh 6DS-SP;[^strasbaugh-6ds-1999] Lam Teres.[^pat-linear-lam] |
+| 200 mm era | Mirra (December 1995), "three-station, four polishing head design";[^amat-1997] AVANTI 472, "single wafer, two-step polishing for wafers up to 200mm";[^ipec-472-1997] Strasbaugh 6DS-SP;[^strasbaugh-6ds-1999] Lam Teres.[^pat-linear-lam] |
 | SkyWater-listed tool | "AMAT Mirra CMP": "oxide", "nitride", "niobium", "aluminum", "tungsten", "high selectivity tungsten", "copper"; "On board metrology with feed forward and backward"[^skw-01] |
 | SKY130 steps | 12 steps; see {ref}`SKY130 steps assigned to this class <machine-cmp-polisher-steps>` |
 
@@ -201,7 +201,7 @@ entered and left dry.
 | IPEC-Planar | AvantGaard 676 | — | "Multiple wafer polishing modules (4)"; "Integrated post CMP spray box cleaning" (1997 capture)[^ipec-676-1997] |
 | SpeedFam-IPEC | Auriga | — | by 2001[^speedfam-ipec-2001] |
 | SpeedFam-IPEC | Momentum | — | by 2001, for "the 0.18 micron and 0.13 micron design node requirements"[^speedfam-ipec-2001] |
-| Strasbaugh | 6DS-SP | — | optional: "Dual polishing tables for 2-step processes" and "Double-sided, post-CMP scrubber integration" (1999 capture)[^strasbaugh-6ds-1999] |
+| Strasbaugh | 6DS-SP (dual-spindle production planarizer) | — | optional: "Dual polishing tables for 2-step processes" and "Double-sided, post-CMP scrubber integration" (1999 capture)[^strasbaugh-6ds-1999] |
 | Strasbaugh | 6EC (lab) | — | "Laboratory Planarizer" for "CMP research and small quantity production of wafers" (1999 capture)[^strasbaugh-6ec-1999] |
 | Lam Research | Teres (linear) | — | shipped with Lam's Synergy Integra cleaner[^pat-linear-lam][^lam-clean-1000-2001] |
 :::

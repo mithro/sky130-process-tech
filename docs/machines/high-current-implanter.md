@@ -148,7 +148,7 @@ al. present Varian's VIISta 80 for "Large Angle Tilt Implants (LATI,
 | Applied Materials | xR80, xR LEAP | — | "Nearly 100 Applied Materials implant systems using the xR80(TM) and xR LEAP … technology are currently in use" (1999)[^amat-quantum-1999] |
 | Applied Materials | Quantum LEAP, Quantum 80, Quantum 120 | 1999 | announced in July[^amat-quantum-1999] |
 | Varian | VIISion 80, VIISion 200 | — | 80 keV and 200 keV machines presented at IIT 1996, "autotune and implant high doses with high beam currents"[^lundquist-1996] |
-| Varian | VIISion 80 PLUS | — | studied by Todorov et al. as a function of, among other things, its "disc tilt angle"; we read the disc as a batch end station[^todorov-1998] |
+| Varian | VIISion 80 PLUS | — | its energy purity studied by Todorov et al. as a function of, among other things, its "disc tilt angle"; we read the disc as a batch end station[^todorov-1998] |
 | Varian | VIISta 80 | — | single-wafer high-current implanter[^mezack-2000] |
 :::
 

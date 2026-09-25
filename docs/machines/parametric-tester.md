@@ -153,7 +153,7 @@ and the same data feed model extraction.[^cheng-1999]
 |---|---:|---|
 | HP/Agilent — 4062 family (4062C, 4062UX) | — | the 4062UX "uses the same measurement hardware as the HP 4062C" with an HP-UX software environment[^brltest-4062] |
 | HP/Agilent — 4070 series (4072B, 4073B) | — | extended in 2002 by the 4072B and 4073B[^eepower-4070] |
-| Keithley — Series S600 (S680 latest) | — | —[^keithley-s600] |
+| Keithley — Series S600 (S680 latest on the data sheet) | — | —[^keithley-s600] |
 | Electroglas — Horizon 4090, 4085X (200 mm) | — | (1998 capture); the latter for "probing high-pin-count devices"[^electroglas-4090][^electroglas-4085x] |
 | Electroglas — Horizon 4090µ | — | —[^electroglas-4090u] |
 | Tokyo Electron — P-8, P-12 (refurbished as P-8XL) | — | for wafers from 100 mm to 200 mm[^tel-prober] |

@@ -155,7 +155,7 @@ based on the technology from the CLEAN TRACK Mark Series".[^tel-act]
 |---|---|---:|---|
 | Tokyo Electron | CLEAN TRACK ACT 8 | 1997 | "debuted in the coater/developer marketplace in 1997 to handle 200mm wafers", "to process geometries ranging from 350 nanometers to 180 nanometers and beyond"[^tel-act8] |
 | Tokyo Electron | CLEAN TRACK ACT 8Z | 2023 | "as a renewed version of CLEAN TRACK ACT 8"[^tel-act] |
-| Tokyo Electron | CLEAN TRACK LITHIUS | — | "is a 300/200mm coater/developer"[^tel-lithius] |
+| Tokyo Electron | CLEAN TRACK LITHIUS (original, succeeded the ACT series) | — | "is a 300/200mm coater/developer"[^tel-lithius] |
 | Tokyo Electron | LITHIUS Pro Z | — | "TEL's most advanced 300mm coater/developer for the 10nm technology node and beyond"[^tel-lithius] |
 | SCREEN (DNS) | SK-60EX/SK-80EX | — | for wafers of 50–200 mm, "Continuing the Reliability of the Long-Selling 60/80 Series" with "its large installed base"[^screen-sk80ex] |
 | SCREEN | RF-200EX | — | "Dedicated design for 200mm wafers" that "enables a small footprint and DUV process"[^screen-rf200ex] |

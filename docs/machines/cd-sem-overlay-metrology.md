@@ -14,9 +14,9 @@ etched features again after etch.
 | CD-SEM beam | Low-energy electrons, "non-invasive measurements that did not require preparatory steps"; 0.4–1.5 kV, Schottky source on the 8100XP.[^hitachi-2011][^gce-kla8100] |
 | CD-SEM resolution and repeatability | 3 nm and 3 nm on the S-9200 (1998); 15 nm and 15 nm on the S-6000 (1984).[^hitachi-2011] 4 nm on the KLA-Tencor 8100XP.[^gce-kla8100] |
 | Overlay measurement | Optical box-in-box imaging on a KLA-Tencor 5200XP; see *Overlay tools* for the reseller's quotes.[^classone-kla5200xp] |
-| Throughput | "45 (automatic operation)" wph, 8-inch, S-9200;[^hitachi-2011] 50 wph, 8-inch, 8100XP;[^gce-kla8100] "a 30 percent increase in throughput over previous generation tools" (Archer 10).[^kla-archer10] |
+| Throughput | "45 (automatic operation)" wafers per hour, 8-inch, at five points, S-9200;[^hitachi-2011] 50 wafers per hour, 8-inch, 8100XP;[^gce-kla8100] "a 30 percent increase in throughput over previous generation tools" (Archer 10).[^kla-archer10] |
 | Requirement at 130 nm | ITRS 2001: overlay 46 nm for 2001; CD control (3σ) 7.3 nm, ASIC/low-power logic; "20% measurement precision to process tolerance metric", "somewhat relaxed".[^itrs-03] |
-| 200 mm era | Hitachi S-8820 (1994), S-9200 (1998);[^hitachi-2011] Opal 7830-series (1997);[^amat-1997] Applied VeraSEM (1999);[^amat-verasem-1999] KLA-Tencor 5200XP, "0.18 micron technology".[^kla-5200xp] |
+| 200 mm era | Hitachi S-8820 (1994), S-9200 (1998);[^hitachi-2011] Opal's earlier 7830-series, acquired by Applied Materials in 1997;[^amat-1997] Applied VeraSEM (1999);[^amat-verasem-1999] KLA-Tencor 5200XP, "0.18 micron technology".[^kla-5200xp] |
 | SkyWater-listed tool | "AMAT Verity (multiple versions) CD", "AMAT VeraSEM", "KLA 5200/5300/Archer overlay"[^skw-01] |
 | SKY130 steps | Overlay at all 36 mask steps and CD-SEM at 54 steps; see {ref}`SKY130 steps assigned to this class <machine-cd-sem-overlay-metrology-steps>` |
 

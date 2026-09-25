@@ -176,7 +176,7 @@ filter".[^macdonald-1991] The NSR-S204B lists "Nitrogen Purge" and
 
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
-| ASML | PAS 5000/70 | 1991 | NA 0.42[^kato-2007] |
+| ASML | PAS 5000/70 | 1991 | its first KrF stepper, NA 0.42[^kato-2007] |
 | ASML | PAS 5500/500 | 1997 | "a resolution of 0.22µm, with 96wph throughput (200mm)"[^kato-2007] |
 | ASML | PAS 5500/350C | — | "a Deep UV stepper for 0.15-µm applications and beyond"[^asml-pas5500-350c] |
 | ASML | PAS 5500/750E | 2000 | "the semiconductor industry's first KrF (248 nm wavelength) lithography system optimized for high-volume production of ICs with 130 nm design rules"[^asml-750e] |
@@ -185,11 +185,11 @@ filter".[^macdonald-1991] The NSR-S204B lists "Nitrogen Purge" and
 | ASML | PAS 5500/850C | — | "enables 110-nm mass production"[^asml-pas5500-850c] |
 | Nikon | NSR-1505EX | 1988 | "an R&D tool for early learning of DUV lithography" with NA 0.42[^kato-2007] |
 | Nikon | NSR-S201A | 1995 | "the first production worthy KrF scanner in the industry"[^kato-2007] |
-| Nikon | NSR-S202A | — | "sub-quarter micron resolution", "80 wafers per hour with 8 in. wafers"[^nikon-s202a-s102b] |
-| Nikon | NSR-S204B | — | a unit manufactured in June 2002, configured for 300 mm wafers[^nikon-s204b] |
+| Nikon | NSR-S202A (scanning stepper) | — | "sub-quarter micron resolution", "80 wafers per hour with 8 in. wafers"[^nikon-s202a-s102b] |
+| Nikon | NSR-S204B | — | the specification summary cited here is a reseller copy, describing a unit manufactured in June 2002, configured for 300 mm wafers[^nikon-s204b] |
 | Canon | FPA-4000ES1 | 1997 | "Canon's first KrF scanning stepper"[^kato-2007] |
 | Canon | FPA-3000EX4 | — | 5× KrF stepper of NA 0.6, still used in 2014 "for photolithography of all layers" of a 200 mm superconductor process[^tolpygo-2014] |
-| Canon | FPA-3030EX6 | — | inherits the performance of the FPA-3000EX6, "resolution (150 nm), overlay accuracy (25 nm) and productivity (throughput *121 wph)"[^canon-fpa3030ex6] |
+| Canon | FPA-3030EX6 | — | Canon's current model; inherits the performance of the FPA-3000EX6, "resolution (150 nm), overlay accuracy (25 nm) and productivity (throughput *121 wph)"[^canon-fpa3030ex6] |
 | SVG Lithography | Micrascan III | 1996 | NA 0.6, 0.25 µm resolution[^kato-2007] |
 :::
 

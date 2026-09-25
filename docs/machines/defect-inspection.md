@@ -199,8 +199,8 @@ Surfscan AIT".[^tencor-defectdata-1997]
 | Tencor | Surfscan AIT | 1995 | developed with SEMATECH as an "in-line defect inspection system for 0.25-micron technology"[^tencor-ait-1995] |
 | Tencor | Surfscan 7700 | — | detected contaminants "below 0.20 micron" on "complex process levels such as nitride, oxide and TEOS films"[^tencor-patterned-1997] |
 | KLA-Tencor | AIT XP | — | extending "the AIT II and AIT III" (2002 capture)[^kla-aitxp] |
-| KLA | 2020 | — | used in Radin's 1988 defect-reduction work[^radin-1988] |
-| KLA-Tencor | 2350, 2351 | — | for "critical-defect detection at design rules of 0.13 µm and smaller"[^kla-2351] |
+| KLA | 2020 | — | imaging inspector used in Radin's 1988 defect-reduction work[^radin-1988] |
+| KLA-Tencor | 2350, 2351 (successor) | — | imaging inspectors for "critical-defect detection at design rules of 0.13 µm and smaller"[^kla-2351] |
 | Tencor | CRS (CRS-1010) | — | laser confocal review station; the ADC module first offered on the CRS-1010[^tencor-crs-1997][^tencor-adc-1996] |
 | KLA-Tencor | CRS-3000 | — | optical review, listed together with the eV300 in 2002[^kla-defect-2002][^kla-ev300] |
 | KLA-Tencor | eV300 | — | e-beam review, listed together with the CRS-3000 in 2002[^kla-defect-2002][^kla-ev300] |

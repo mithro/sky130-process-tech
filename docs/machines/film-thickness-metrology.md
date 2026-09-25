@@ -211,8 +211,8 @@ wafers".[^tw-op3260]
 | KLA-Tencor FLX-2320 | — | still listed in 2002 beside the ASET-F5x thin-film and Quantox gate-monitoring systems[^kla-flx2320] |
 :::
 
-Rudolph's SpectraLASER, MatrixMetrology and MetaPULSE lines were all on
-the Vanguard automation platform.[^rudolph-1999] Nanometrics also sold
+Rudolph's AutoEL, SpectraLASER, MatrixMetrology and MetaPULSE lines were
+all on the Vanguard automation platform.[^rudolph-1999] Nanometrics also sold
 tabletop models.[^nanometrics-2000]
 
 ## At SkyWater

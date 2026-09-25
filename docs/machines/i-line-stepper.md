@@ -164,6 +164,9 @@ platform followed in 1991.[^asml-30] ASML sold "some of the first PAS
 but now offers resolutions down to 0.28 µm and throughput of up to 100
 wafers per hour".[^asml-30]
 
+Its refurbished-product data sheets and other public specifications
+describe the following:
+
 :::{table} Representative i-line steppers and scanners of the 200 mm era with a dedicated data sheet (figures as each source gives them)
 :widths: 12 24 8 56
 
@@ -172,13 +175,13 @@ wafers per hour".[^asml-30]
 | ASML | PAS 5500/100D | — | "designed for mass production at 0.4 µm"[^asml-pas5500-100d] |
 | ASML | /275D | — | —[^asml-pas5500-275d] |
 | ASML | /450F | — | "i-Line Step-and-Scan", "the successor of the PAS 5500/400 for non-critical applications", "Optimized for mix-and-matching" with the PAS 5500 DUV tools[^asml-pas5500-450f] |
-| Nikon | NSR-1010i3 | 1984 | —[^kato-2007] |
-| Nikon | NSR-S102B | — | "mix-and-match strategies are easily accommodated" (with the KrF NSR-S202A)[^nikon-s202a-s102b] |
+| Nikon | NSR-1010i3 | 1984 | Nikon's first i-line stepper[^kato-2007] |
+| Nikon | NSR-S102B (i-line scanning stepper) | — | introduced alongside the KrF NSR-S202A, the two designed so that "mix-and-match strategies are easily accommodated"[^nikon-s202a-s102b] |
 | Nikon | NSR-2205iL1 | — | "5x Reduction i-line Stepper" with NA 0.45 and a 22 mm × 22 mm field[^nikon-2205il1] |
-| Canon | FPA-2000i1 | 1990 | —[^kato-2007] |
+| Canon | FPA-2000i1 | 1990 | Canon's first i-line stepper[^kato-2007] |
 | Canon | FPA-3000i5+ | 1998 | "a mix-and-match companion for its FPA-3000EX5 DUV stepper", both at 5:1[^canon-fpa3000i5plus-1998] |
 | Canon | FPA-3030i5+ | — | —[^canon-fpa3030i5plus] |
-| Other | Model 2244i | — | "production resolution of 0.8 mu m"[^wise-1992] |
+| Other | Model 2244i | — | large-field i-line stepper with "production resolution of 0.8 mu m", aimed at non-critical levels[^wise-1992] |
 :::
 
 In 2001 ASML said its KrF PAS 5500/800 "matches seamlessly with the
