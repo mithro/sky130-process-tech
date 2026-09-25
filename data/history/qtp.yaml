@@ -1931,3 +1931,340 @@ documents:
     CMI/Bloomington MN -- the same 0.13 µm design rule and dual-gate-oxide notation as S8TNV-5R (qtp-113005,
     also CMI/Fab4, 110/32 Å), though L8C-3R and S8 are named as distinct technologies with no report in
     this corpus linking them directly.'
+- id: qtp-s050001
+  doc_type: QTP
+  number: S050001
+  cypress_document_number: null
+  title: TSMC Fab 3, 0.35um -- SMaL Camera ASIC
+  version: '1.0'
+  date_printed: June 2005
+  url: https://www.cypress.com/file/94406/download
+  archive_url: https://web.archive.org/web/20201028064815/https://www.cypress.com/file/94406/download
+  retrieved: '2026-09-25'
+  sha256: 75be2f86fb50c11db804d4fd65204808c56b1633fa65734052f3285fe0292e36
+  technology_codes:
+  - TSMC 0.35um
+  fab: TSMC (Fab 3)
+  products:
+  - ASIC (SMaL Camera ASIC, TSMC part TMK212B)
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 5
+    metal_composition: not printed (field left blank in the source)
+    passivation: not printed (field left blank in the source)
+    free_phosphorus_percent: not printed (field left blank in the source)
+    design_rule: not printed (field left blank in the source; the report's own title and text call it
+      "TSMC 0.35um")
+    gate_oxide: not printed (field left blank in the source)
+    fab_location: TSMC
+    die_fab_line_id: Fab 3
+  qualification_history:
+  - number: S050001
+    description: New Technology, TSMC Fab 3, 0.35um ASIC
+    date: Dec 03
+  quotes:
+  - text: New Technology, TSMC Fab 3, 0.35um ASIC
+    location: p.2, Product Qualification History, row S050001
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab 3'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Earliest and only dated reference to this TSMC 0.35 µm foundry technology in this corpus: QTP
+    S050001, Dec 03, "New Technology, TSMC Fab 3, 0.35um ASIC". Unusually for this corpus, almost every
+    numeric process-description field (Metal Composition, Passivation, Free Phosphorus, Design Rule, Gate
+    Oxide) is printed blank in the source PDF, leaving only "Number of Metal Layers: 5" filled in; the
+    0.35 µm figure is known only from the title/qualification-purpose text ("TSMC 0.35um"), not from the
+    Design Rule field itself. Cypress calls this foundry line "Fab 3" in the Die Fab Line ID field, distinct
+    from Cypress''s own numbered fabs (Fab 1-4) and from the "Fab 3" used elsewhere in this corpus for
+    Cypress''s own Bloomington, MN site (e.g. qtp-096091, R28) -- the same "Fab 3" label is thus used for
+    two unrelated fabs (a Cypress-owned Bloomington line and a TSMC foundry line) in different documents.'
+- id: qtp-051501
+  doc_type: QTP
+  number: '051501'
+  cypress_document_number: null
+  title: Cypress Minnesota (CMI) Sort Site Qualification -- 2 Meg, 3V PSRAM Device, PowerChip 0.165µm
+  version: '1.0'
+  date_printed: May 2005
+  url: https://www.cypress.com/file/92636/download
+  archive_url: https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download
+  retrieved: '2026-09-25'
+  sha256: 55adf28ca0d48bd36480f7f41ac7a753cdd26650c862f54967bcccf90d846828
+  technology_codes:
+  - PowerChip 0.165um
+  fab: Powerchip Semiconductor Corp, HsinChu, Taiwan (CMI Bloomington sort site added by extension)
+  products:
+  - K002MC5BW
+  - GC2016V5BW
+  - CYK128K16SCCB
+  - CYK128K16MCCB
+  - WCMC2016V9B
+  - WCMC2016V7B
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: TiN/Ti (18/8.5nm); Metal 2: TiN/Alcu/TiN (23/800/28nm)'
+    passivation: Si3N4 & Polyimide
+    free_phosphorus_percent: 0%
+    design_rule: 0.16um + Stack Capacitor
+    gate_oxide: SiO2 / 72A
+    fab_location: Powerchip Semiconductor Corp, HsinChu, Taiwan
+    die_fab_line_id: BF04301
+    transistors: 36 Million
+    gates: 1.5 Million
+  qualification_history:
+  - number: '050707'
+    description: Qualify Cypress Minnesota (CMI) as an additional Sort Site for K008MC2AW (8 Meg) Device
+      Family
+    date: Mar 05
+  - number: '051501'
+    description: Qualify Cypress Minnesota (CMI) as an additional Sort Site for K002MC5BW (2 Meg) Device
+      Family (by extension)
+    date: May 05
+  quotes:
+  - text: 'Generic Process Technology/Design Rule (µ-drawn): 0.16um + Stack Capacitor'
+    location: p.2, Technology/Fab Process Description
+  - text: Qualify Cypress Minnesota (CMI) as an additional Sort Site for K002MC5BW (2 Meg)
+    location: p.2, Product Qualification History, row 051501 (the table wraps 'Device Family (by extension)'
+      onto the next physical line, after the interleaved QTP-number/date columns)
+  notes: 'This report is a test/sort-site qualification (adding CMI Bloomington as a second sort site for
+    a die already fabricated at Powerchip, HsinChu, Taiwan), not a from-scratch technology qualification,
+    so it gives no "New Technology" history row for the PowerChip process itself. The Design Rule field
+    prints "0.16um + Stack Capacitor", not "0.165um" as the brief''s working name has it -- the process
+    figures (72 Å gate oxide, 2 metal layers) are otherwise as given. A companion report for the same
+    PowerChip line (8 Meg PSRAM device, QTP 92626/CYK512K16SCCA per the coordinator''s page map) was not
+    independently fetched in this pass.'
+- id: qtp-032005
+  doc_type: QTP
+  number: '032005'
+  cypress_document_number: null
+  title: WirelessUSB Device Family, B53D-3RF Technology, Fab 4
+  version: '3.0'
+  date_printed: May 2005
+  url: https://www.cypress.com/file/92296/download
+  archive_url: https://web.archive.org/web/20211206184334/https://www.cypress.com/file/92296/download
+  retrieved: '2026-09-25'
+  sha256: 2a5a389d667f0ccd714519d0c215b8dab1b5ac44c8e12c09e54f0efbb6eb7cfb
+  technology_codes:
+  - B53D-3RF
+  - B53D-3
+  fab: Fab 4 (Cypress Minnesota, CMI)
+  products:
+  - CYWUSB6932
+  - CYWUSB6934
+  - CYWUSB6935
+  - CYWUSB6941
+  die_ids:
+  - CY7B6934A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500/6000/300 [Å]; Metal 2: 500/6000/300 [Å]'
+    passivation: 1,000A TEOS + 9,000A Si2N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, 0.25 µm
+    gate_oxide: SiO2 / 55Å
+    fab_location: Cypress Minnesota, Fab4
+    die_fab_line_id: Fab4 / B53D-3
+    transistors: 150K
+    gates: 30K
+  qualification_history:
+  - number: '99256'
+    description: New Technology, B53D-3, Fab 4, CY7B993V / CY7B994V
+    date: Aug 00
+  - number: '032005'
+    description: New Device, CYWUSB693*, B53D-3 Technology in Fab4
+    date: Jan 04
+  - number: '041503'
+    description: B53D-3RF 3 Layer Mask change on 7B6934A (MM1, VIM, MM2)
+    date: Jun 04
+  - number: '041605'
+    description: B53D-3RF 4 Layer Mask change on 7B6934A & 7B6963B (implementation of poly resistors in
+      gate poly)
+    date: Jun 04
+  - number: '044305'
+    description: CYWUSB6035A/B Device qualified by extension
+    date: Oct 04
+  - number: '051209'
+    description: 3 Layer Mask change on 7B6934A (450C MM1, 500C VIM, 550D MM2)
+    date: May 05
+  quotes:
+  - text: New Technology, B53D-3, Fab 4, CY7B993V / CY7B994V
+    location: p.2, Product Qualification History, row 99256
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – B53D-3
+    location: p.3, section heading (the report's own title calls the technology "B53D-3RF")
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4 / B53D-3'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Title and later history rows (041503, 041605) call the technology "B53D-3RF"; the
+    process-description heading and Die Fab Line ID both instead say plain "B53D-3" (no "RF" suffix) --
+    the same drop-the-suffix-in-running-text pattern seen elsewhere in this corpus (R7LD-1.8/R7-1.8,
+    R42D-5/R42D). Earliest dated reference to B53D-3: QTP 99256, Aug 00, "New Technology, B53D-3, Fab 4".
+    0.25 µm design rule and 55 Å gate oxide match R52D-3/R52LD-3/R52FFD-3 and L8C-3R -- another Fab
+    4/Bloomington code at the same 0.25 µm generation as the R52 family.'
+- id: qtp-051101
+  doc_type: QTP
+  number: '051101'
+  cypress_document_number: null
+  title: FastEdge Series, B55SGT Technology, Fab 4
+  version: '1.0'
+  date_printed: May 2005
+  url: https://www.cypress.com/file/92676/download
+  archive_url: https://web.archive.org/web/20201028052046/https://www.cypress.com/file/92676/download
+  retrieved: '2026-09-25'
+  sha256: eaf73db58a97c24b8ac72326778be3afe28acd58af359357d93a7416341aba63
+  technology_codes:
+  - B55SGT
+  - B55SGT18A
+  - B55SG
+  fab: Fab 4 / CMI (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY2DP3110
+  - CY2DP314
+  die_ids:
+  - 7B83110A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'M1: 500Å TiW / 6000Å Al / 500Å TiW; M2: 500Å TiW / 8000Å Al / 500Å TiW; M3: 500Å
+      TiW / 40,000Å Al / 300Å TiW'
+    passivation: 4000Å TEOS / 9000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS (0.21 – 0.35 µm), SiGe Bipolar
+    gate_oxide: SiO2, 45Å
+    fab_location: Cypress Semiconductor – Bloomington, MN (CMI)
+    die_fab_line_id: Fab 4/ B55SGT
+    transistors: Maximum Available in Base 100,000; Average Design 60,000
+    gates: Maximum Available 25,000; Average design 15,000
+  qualification_history:
+  - number: '015104'
+    description: New Technology B55SGT18A using New Device, CY2DP3110A1 HF Buffer Family
+    date: May 03
+  - number: '024307'
+    description: 7B8P3110AC HF Buffer Family, 55SGT18A , Fab4
+    date: Nov 03
+  - number: '051101'
+    description: 7B83110BC Mask Option using B55SG Technology
+    date: Apr 05
+  quotes:
+  - text: New Technology B55SGT18A using New Device, CY2DP3110A1 HF Buffer Family
+    location: p.2, Package Qualification History, row 015104
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – B55STG
+    location: p.3, section heading (transposed letters; the report's title and every other reference
+      say "B55SGT")
+  - text: CMOS (0.21 – 0.35 µm), SiGe Bipolar
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'A BiCMOS-style process, not plain CMOS: the Design Rule field itself reads "CMOS (0.21 – 0.35
+    µm), SiGe Bipolar" with separate Bipolar Isolation (STI) and Base/Emitter (SiGe / N+ Poly) fields --
+    the only SiGe-bipolar technology found in this corpus. Naming varies across the same document: title
+    "B55SGT"; earliest history row "B55SGT18A"; a later history row abbreviates "55SGT18A"; the most recent
+    history row says "B55SG"; and the process-description section heading itself misprints "B55STG"
+    (transposed letters). Earliest dated reference: QTP 015104, May 03, "New Technology B55SGT18A".'
+- id: qtp-043004
+  doc_type: QTP
+  number: '043004'
+  cypress_document_number: null
+  title: DDR2-PLL Device Family, C8Q-3R, Fab 4
+  version: '2.0'
+  date_printed: March 2007
+  url: https://www.cypress.com/file/92151/download
+  archive_url: https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download
+  retrieved: '2026-09-25'
+  sha256: c6d68f69d1e957a1f94883bab83a577ceacbb137c9904e4b772f383b2d90cb04
+  technology_codes:
+  - C8Q-3R
+  - C8Q-3RQ
+  fab: Fab 4 / CMI (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY2SSTU877
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 100A Ti/3,200A Al 0.5% Cu /300A TiW; Metal 2: 150A Ti/4,230A Al 0.5%
+      Cu/300A TiW; Metal 3: 150A Ti/4,230A Al 0.5% Cu/300A TiW; Metal 4: 150A Ti/8,000A Al 0.5% Cu/300A
+      TiW'
+    passivation: 1,000A TEOs / 9,000A Si3N4
+    design_rule: CMOS, 0.13 µm
+    gate_oxide: SiO2 DGOX 32/55A
+    fab_location: CMI/Bloomington MN
+    die_fab_line_id: Fab4, C8Q-3R
+  qualification_history:
+  - number: '042106'
+    description: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    date: Jan 05
+  - number: '050305'
+    description: 7C82877B DDR2 PLL All Layer Independent Mask Set on C8Q-3RQ Technology, Fab4
+    date: Mar 05
+  - number: '043004'
+    description: Qualify Active Under Pad (AUP) for the CMI C8Q-3R Technology using DDR2 PLL Product
+    date: Nov 05
+  quotes:
+  - text: 7C82877A DDR2 PLL New Device family on New C8Q-3R Technology, Fab4
+    location: p.2, Product Qualification History, row 042106
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION C8Q-3R
+    location: p.3, section heading
+  - text: SiO2 DGOX 32/55A
+    location: p.3, Technology/Fab Process Description, Gate Oxide Material/Thickness value
+  notes: 'Confirms qtp-053301''s (L8C-3R) cross-reference of "New C8Q-3R Technology" to QTP 042106, Jan
+    05 -- the process-description figures here (4 metal layers, 0.13 µm, dual gate oxide 32/55 Å, CMI/Bloomington
+    MN) are identical to L8C-3R''s, supporting L8C-3R''s own description of itself as a "Technology
+    Derivative of the C8 Technology": C8Q-3R and L8C-3R appear to be two closely related (possibly
+    process-identical) Fab 4 derivatives of a base "C8" technology. One history row (050305) names a third
+    sibling spelling, "C8Q-3RQ".'
+- id: qtp-042806
+  doc_type: QTP
+  number: '042806'
+  cypress_document_number: null
+  title: S4ADLATCH Technology, Fab 2
+  version: '1.0'
+  date_printed: January 2005
+  url: https://www.cypress.com/file/92521/download
+  archive_url: https://web.archive.org/web/20211025144943/https://www.cypress.com/file/92521/download
+  retrieved: '2026-09-25'
+  sha256: 7c389f9db2bbd6b14dc2ca612eb1ca5b9d79a17c05049e567a9686764409bbbb
+  technology_codes:
+  - S4ADLatch
+  - S4AD-5
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY5048WAF
+  die_ids:
+  - 7C80330A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6,000A Al 0.5% Cu /1,200A TiW; Metal 2: 500A Ti/8,000A Al 0.5%
+      Cu/300A TiW'
+    passivation: 3,000A TeOs / 6,000A Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: Single Poly, Double Metal, 0.35 µm
+    gate_oxide: SiO2 / 7A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5
+    transistors: 8,000
+    gates: 2,000
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product
+      family and bond option.
+    date: Apr 01
+  - number: '042806'
+    description: New Product, WLAN Clock Generator, CY5048WAF, S4ADLatch Technology, Fab2
+    date: Jan 05
+  quotes:
+  - text: S4ADLATCH Technology, Fab 2
+    location: p.1, title
+  - text: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC,
+    location: p.2, Product Qualification History, row 010702 (the table wraps 'its product family and
+      bond option.' onto the next physical line, after the interleaved QTP-number/date columns)
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-5'
+    location: p.3, Technology/Fab Process Description
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'This report''s own title calls the technology "S4ADLATCH" (or "S4ADLatch"), but its qualification
+    history reuses S4AD-5''s own "New Technology" row verbatim (QTP 010702, Apr 01, matching qtp-021507''s
+    identical row for the same event) and its Die Fab Line ID reads plain "Fab2, S4AD-5" -- so "S4AD-Latch"
+    reads as a device/option name layered on the S4AD-5 process, not a separate technology. Design rule
+    here is printed as "Single Poly, Double Metal, 0.35 µm" -- the same 0.35 µm figure as qtp-151005
+    (S4AD-5 at HHGrace, 2015), and in direct numeric conflict with qtp-021507 (S4AD-5, this same Fab 2,
+    2003), which for the same technology and Die Fab Line ID ("Fab2, S4AD-5") instead gives "0.5 m" (0.5
+    µm). This is now the *second* independent Fab 2 report to give S4AD-5 as 0.35 µm, versus the *one*
+    Fab 2 report (qtp-021507) giving 0.5 µm -- weakening the possibility that the 0.35 µm figure is only
+    a foundry-specific (HHGrace) shrink, and increasing the likelihood that qtp-021507''s "0.5 m" is
+    itself a misprint (e.g. a dropped "3"). The Gate Oxide field here also reads "SiO2 / 7A", implausibly
+    thin next to qtp-021507''s "110Å" for the same Die Fab Line ID -- most likely a truncated print of
+    "110A" (dropped leading digits) rather than a real value, but printed here exactly as it appears in
+    the source.'
