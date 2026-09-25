@@ -892,3 +892,42 @@ labels, a paragraph opening with "So"), the stricter review ruling was followed 
    phone-test wording ("no number broken across lines") does not say whether identifiers count.
 8. **`tools/shoot.py` stops at 10 tiles**; long step pages (053, 061–063) need `--max-height 24000` for
    the phone tiles to reach Open questions. Worth a line in §7 step 7.
+
+## Review fix round (review `rd-steps-048-063`, 2026-09-26: 0 High, 3 Medium, 9 Low)
+
+One commit each.
+
+* **M1, 063.** "It can thin or breach the gate oxide …" → "The gate etch can thin or breach …" (the
+  pronoun gets its noun back, R-PARA step 5).
+* **M2, 059.** `[^hinsberg-1992]` **repeated** after "leave an insoluble skin," so the claim keeps its
+  marker (declared addition: markers `hinsberg-1992`); the paragraph re-wrapped.
+* **M3, 062.** Lam 9400: the Stanford user-guide sentence moves into the head paragraph, above the
+  *Runs this step:* grade that refers to "that lab" (the pilot form, now guide R-TOOLS step 2).
+* **L1, 063.** "So the n⁺ gate sidewalls …" no longer opens a paragraph: it joins the "What grows where"
+  lead, and the break moves before "The poly *top* does not oxidise". The item's lead is now 77 words
+  with no other seam (a known over-cap item under the new R-PARA step 2 wording).
+* **L2, 052.** Left as it is: the base sentence has no colon to split at, and the review found no
+  narrowed hedge ("we infer" governed only the first clause in the base too).
+* **L3, 058.** Glance "Why" reworded to the review's 22-word text.
+* **L4, 051, 054.** First sentence split at ", and cleans" → "It cleans …" (32 → 16 w; 29 → 19 w).
+* **L5, 056.** The 67-word extraction sentence split at its dash pair, as the review worded it: the
+  result sentence keeps both parentheticals and `[^raw-data-passives]`; "It is the difference between …
+  then fitted against width." follows. main's `check_preserved.py` now reports this as a **LOST
+  `number_order`** ('20', '4', '16', '1 940–1 970', …): the method's numbers (20, 4, 16) now follow the
+  result's instead of preceding them. Every value and pairing is unchanged; it is the ordering change
+  the review asked for.
+* **L6, 061.** The ASML head loses its bold full stop and splits after "alongside its i-line tools"
+  → "It also lists, as later additions, …"; **`[^skw-01]` repeated** on the first sentence (declared).
+  The head stays out of *SkyWater says:* (it carries our gloss "as later additions").
+* **L7, 050.** The PDK-fact sub-bullets end in semicolons instead of commas (punctuation only).
+* **L8, L9.** Accepted by the review; no change.
+* **Guide (review §D, as worded):** D1 R-LIST step 3 (plain bullets over invented labels); D2 R-H3
+  step 6 (no new title when none of the four fits); D3 R-CATEGORY step 1 (35 words a target reached only
+  at existing seams); D4 R-PARA step 2 (the connective rule inside list items); D5 R-TOOLS step 2 (the
+  pilot form for mixed heads; a sentence the grade refers to stays above it); D6 §7 step 7
+  (`shoot.py --max-height`). D7 was not in the coordinator's list and is not applied.
+* **Checks after the round.** main's `check_preserved.py` (byte-identical to the worktree's) with
+  `--allow-regrouped` only on the nine touched pages: ADDED lines are the declared glance/R-TOOLS
+  repeats plus `hinsberg-1992` (059) and `skw-01` (061); LOST lines are 056 (above), 061 `number_order`
+  (the rule table) and the G15 `refs` pairs on 061, 062, 063. Caps over the batch: paragraphs 0,
+  items 3 (049, 061, 063), sentences 18.
