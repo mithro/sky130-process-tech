@@ -103,7 +103,76 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
 * **Marker coverage.** 19 flags, all read: the repeats above; split halves whose base marker belonged
   to the other clause (`cntm` layer / inference; openings / k₁; overlay budget / PDK distances); the
   ITRS "our reading" (see Why); glance and label lines.
-* **Caps**: para > 100 3 → 0; item > 60 6 → 2; sentence > 45 11 → 1. Left: the 5 V NMOS item (61 w; its
+* **Caps**: para > 100 5 → 0; item > 60 5 → 2; sentence > 45 11 → 1. Left: the 5 V NMOS item (61 w; its
   only seam is before "That is the HVNTM tip"), the Exposure item's lead (62 w; its only seam is before
   "That is well within"); the 46-word `ntm` inference sentence (no seam that keeps "we infer" with its
   whole claim).
+
+### 065 ASTI — done
+
+* **Lead.** Split into two paragraphs before "The gate stack itself masks the channel" (what the step
+  does / why the tip is self-aligned); its 49-word sentence split at the semicolon ("The gate poly is
+  shielded …"). Lead 129 words, as in the base; first sentence 20 words.
+* **R-H3 not applied.** The passage after the figure is 107 words, under R-H3's 120.
+* **R-SENTENCE.** The 85-word "That the tip is arsenic is stated publicly: …" sentence split at
+  ", which we read as" → "We read that value as the tip's lateral extent because … (inference),
+  beside the deeper … row …" (R-PARA step 5: the relative pronoun gets its noun back) and at the
+  semicolon ("The same page gives …"); `[^pdk-03]` **repeated** on the first piece so the "N Tip
+  (As)" claim keeps it (declared). The clause order is the base's (an earlier try moved the "beside"
+  clause forward and `check_preserved` reported a LOST `number_order`; reverted). The halo/strip
+  sentence becomes its own short paragraph.
+* **R-CATEGORY.** Classification sentence (40 w; no semicolon or closing dash) kept whole. The
+  remaining sentence (55 w, a dash pair around the category page's quotation) split per R-SENTENCE
+  step 1 into "It is the shallowest implant in the flow." + the quotation sentence, and "With the
+  deep source/drain implants (…), it is one of the implants that amorphise …" ("it is" added). Two
+  statements about this step → `**Specific to this step:**` with two bullets; the quotation stays in
+  the bullet of the claim it supports.
+* **R-PARA step 4 (Why items).** "Short-channel control" (101 w): lead split at its semicolon, the three
+  sources (Wikipedia, ITRS, Thompson) as plain sub-bullets, each with its marker (a list of studies:
+  no labels). "Series resistance" (77 w): lead split at the semicolon, the ITRS and LDD sentences as the
+  continuation paragraph. "Gate overlap": split at its semicolon ("Too much overlap adds Miller
+  capacitance.").
+* **R-PARA.** "Arsenic rather than phosphorus" (109 w) split before "Its drawbacks are electrical"
+  ("Its" → "Arsenic's", R-PARA step 5); its 50-word first sentence split at ", and it diffuses" ("It
+  diffuses slowly …"; each half keeps its marker); the Nobili sentence split at its semicolon. The bold
+  run-in labels a single paragraph, so it stays bold (R-H3 step 4).
+* **R-HEDGE.** Italic lead-in, word for word, including "(SKY130's energy and dose are not public)".
+* **R-PARA step 4 (How items).** "Energy" (96 w): lead = the first sentence; the ITRS sentence split at
+  its semicolon ("ITRS 2001 defines … length.[^itrs-01]" with the marker **repeated**, declared; "For
+  SKY130's 0.15 µm drawn gate … (our reading of the roadmap).[^itrs-01]" keeps the hedge on the
+  SKY130 application, which is all it governed). "Dose" (66 w): lead = the first sentence; the
+  amorphisation sentence split before ", so the implanted layer" ("So the implanted layer …", the
+  split R-PARA step 2 allows inside a paragraph), which keeps the lowercase Wikipedia quotation inside
+  its own sentence (R-SENTENCE step 6). "Tilt and twist" (144 w, a 104-word sentence): the dash pair
+  becomes "The stack is 0.18 µm of poly … "poly cap after SPE".[^pdk-03]" (subject + verb added;
+  `[^pdk-03]` **repeated**, declared) and "(The PDK's figure … no thinner.)[^pdk-03]", then "So a 7°
+  beam is blocked for at least about 0.38 µm × tan 7° ≈ 47 nm …" (a single-operation estimate, inline
+  per R-DERIVATION step 6); Yoneda and "rotation scheme is not public" as a second continuation
+  paragraph. Same treatment as 064's category bullet.
+* **R-TOOLS.** GSD: *SkyWater says:* holds only the two quotations with `[^skw-01]`; the gloss "both
+  offer arsenic and reach the 10¹⁵ cm⁻² decade, …" is this reference's and becomes the continuation
+  paragraph ("Both …"), as on 050. 8250: *SkyWater says:* the quotation; grades; the platform and dose
+  sentences (vendor facts and our gloss) as the continuation paragraph. Grades unchanged. Two tools:
+  no recap table.
+* **R-RELATED.** "The other tip implants:" → "Same module: the other tip implants …". "Activation: …;
+  spacer: …; deep n⁺ junction: …" keeps its own labels (three relationships, none of them one R-RELATED
+  label).
+* **R-OPENQ.** Labels "Energy and dose", "Rotation scheme", "Pre-amorphisation", "Tip and halo order";
+  text unchanged.
+* **R-GLANCE.** Does/Why from the lead and "The extension does three jobs"; Public numbers the "N Tip
+  (As)" row, its 0.01 µm entry with the page's "(inference)", the 7° angle `[^pdk-03]`; tool line with
+  both tools' grades; Not public from Open questions 1–2.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `itrs-01`, `pdk-03`×2 (the repeats above),
+  `pdk-03`, `skw-01` (glance); numbers 0.01, 1.8, 7, 8250, quote "N Tip (As)", hedges "inference"×2,
+  "not public", number_order (0.01, 7) — the glance box. REGROUPED lines: the arsenic sentence, the
+  Energy and Dose items, the tilt item — same digits, same order. Declared
+  `--allow-added markers,numbers,quotes,hedges,number_order`: clean.
+* **Marker coverage.** 23 flags, all read: the repeats; split halves whose base marker belonged to the
+  other clause (DIBL / Wikipedia; drain current / ITRS; "So the implanted layer …" after the three
+  amorphisation markers; "So a 7° beam …" after the stack markers; the GSD gloss after the quotations);
+  labels and glance lines. No claim lost its marker.
+* **Caps**: para > 100 3 → 0; item > 60 7 → 0; sentence > 45 12 → 4. Left: "We read that value …"
+  (46 w; splitting it would separate the reading from "(inference)"), "Gate overlap" (46 w + label;
+  its dash pair holds the reading and marker), "Without `ASTI` …" (47 w; the colon introduces the two
+  consequences), "For SKY130's 0.15 µm drawn gate …" (47 w; a split at ", so" would leave half the
+  claim outside "(our reading of the roadmap)").
