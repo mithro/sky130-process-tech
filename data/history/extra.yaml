@@ -295,3 +295,143 @@ records:
   notes: >-
     Copy hosted by Future Electronics (also cited on the SKY130 overview as CYP-06). The notice's
     affected-parts list has 3,049 part numbers but does not say which technology each part uses.
+- id: cyx-ar-fy1995-ram3
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01
+    date: 1996-01-19
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1995.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1995.txt
+  quotes:
+  - text: >-
+      RAM3. An advanced, Cypress-proprietary process technology allowing the fabrication of ICs having
+      0.5-micron feature geometry.
+    location: Glossary
+  - text: >-
+      The higher density of our RAM3 process allows us to pack 1800 chips on a 6-inch wafer.
+    location: Business review, 7C1399 SRAM
+  claims:
+  - {subject: RAM3, attribute: feature geometry, value: 0.5 µm, date: 1995}
+  notes: null
+- id: cyx-ar-fy1996-ram3
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-29
+    date: 1997-02-25
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1996.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1996.txt
+  quotes:
+  - text: >-
+      In early 1995, Cypress released for design and production its proprietary RAM3™ process
+      technology. Developed in a 0.5-micron feature size, this process, and its attendant SRAM and
+      logic cells, already are being produced in Cypress fabs at a leading-edge 0.35-micron size,
+      increasing die per wafer and reducing manufac - turing costs.
+    location: Business review, "SRAMs for Portable Systems"
+  - text: >-
+      Developed in Cypress’s dedicated research and development Fab I facility, RAM3
+    location: Business review, "SRAMs for Portable Systems"
+  - text: >-
+      RAM3™ An advanced, Cypress-proprietary fabrication technology with 0.5-micron feature geometry
+      and a six-transistor memory cell
+    location: Glossary
+  claims:
+  - {subject: RAM3, attribute: released, value: early 1995, date: 1995}
+  - {subject: RAM3, attribute: developed in, value: Fab 1 (R&D), date: 1995}
+  - {subject: RAM3, attribute: shrunk to, value: 0.35 µm by 1996, date: 1996}
+  notes: >-
+    The "manufac - turing" hyphenation is the cached text's; the checker ignores hyphens and spaces.
+- id: cyx-ar-fy1997-trademarks
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-28
+    date: 1998-03-06
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1997.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1997.txt
+  quotes:
+  - text: >-
+      RAM4, RAM5, ROAM, RoboClock, Ultra37000, Ultra39000, and Wa rp are trademarks of Cypress
+      Semiconductor Corporation.
+    location: Inside back cover, trademark notice
+  - text: >-
+      Although Cypress has 0.35-micron technolo gy in production now, and 0.25-micron processes
+      yielding in two different fabs
+    location: Business review, manufacturing
+  claims:
+  - {subject: RAM4 and RAM5, attribute: trademarks, value: listed, date: 1998}
+  notes: null
+- id: cyx-ar-fy1998-ram5
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1998 Annual Report to shareholders, for the fiscal year ended 1999-01-03
+    date: 1999-01-25
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1998.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1998.txt
+  quotes:
+  - text: >-
+      An advanced, Cypress-proprietary fabrication technology with 0.25-micron feature geometry and a
+      six- or 8-transistor memory cell having very low power demand, very high data integrity, and a
+      reduced die size.
+    location: Glossary, entry "RAM5™"
+  - text: >-
+      we have deve loped a new, 0.25-micron BiCMOS process technology that fea- tures special bipolar
+      transistors that can amplify sig- nals up to a frequency of 25 gigahertz.
+    location: President's letter, HOTLink II
+  - text: >-
+      During 1998, Cypress began utilizing the 0.25 micron process technology for manufacturing
+      purposes and started development of the 0.18 micron process technology.
+    location: Management's Discussion and Analysis, research and development
+  claims:
+  - {subject: RAM5, attribute: feature geometry, value: 0.25 µm, date: 1998}
+  - {subject: 0.25 µm BiCMOS, attribute: developed, value: '1998', date: 1998}
+  - {subject: 0.18 µm, attribute: development started, value: '1998', date: 1998}
+  notes: The glossary entry's head word "RAM5™" is on the line before the quoted definition.
+- id: cyx-ar-fy1999-016um
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 1999 Annual Report to shareholders, for the fiscal year ended 2000-01-02
+    date: 2000-03-02
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_1999.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy1999.decoded.txt
+  quotes:
+  - text: >-
+      in 1999, started develop- ment of 0.16-micron process technologies.
+    location: Management's Discussion and Analysis, research and development
+  claims:
+  - {subject: 0.16 µm, attribute: development started, value: '1999', date: 1999}
+  notes: >-
+    The body of this PDF is set in a font that ordinary extraction cannot read; the cached text was
+    decoded with the glyph offset that tools/check_filings.py uses for this document.
+- id: cyx-ar-fy2002-sige
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2002 Annual Report, including the Form 10-K for the fiscal year ended 2002-12-29
+    date: 2003-03-07
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2002.pdf
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: filings/ar-fy2002.txt
+  quotes:
+  - text: >-
+      In fiscal 2002, we completed development of 0.20-micron Silicon Germanium (“SiGe”) Bipolar
+      Complementary Metal Oxide Semiconductor (“BiCMOS”) technology for high speed and analog
+      applications in Minnesota (Fab 4).
+    location: Item 1, Business, Research and development
+  claims:
+  - {subject: SiGe BiCMOS, attribute: node, value: 0.20 µm, date: 2002}
+  notes: null
