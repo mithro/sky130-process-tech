@@ -45,7 +45,6 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 |---|---|---|---|
 | `topic/rd-figures-s10` | W1c series S10 MiM (135–140, 150–153): written; Opus review running | Opus | in review |
 | `topic/rd-masks-b` | W3 batch 6: mask pages 19–36 — Opus writer | Opus | writing |
-| `topic/rd-preserved3` | check_preserved.py round 3: refs/code-span masking, per-paragraph quotes, hedge list, `--allow-deduplicated`, word-multiset diff, glance/SkyWater-says warnings | Sonnet | writing |
 
 Next after these: S10 MiM figures (must precede S9b, because metal 3 is patterned inside the MiM steps),
 then S9b (141–149, 154–163) and S11 passivation; step batches 076–088 onward; machines 16–30; masks 19–36;
