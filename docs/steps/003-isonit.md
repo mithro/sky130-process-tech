@@ -11,6 +11,7 @@
 | **Next step** | {ref}`FOM <step-004>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** deposits a blanket LPCVD silicon nitride film on the pad
   oxide, the STI module's hard mask.
 * **Why:** an oxidation barrier, a CMP stop, a plasma-etch mask and
@@ -72,11 +73,9 @@ specifically a furnace LPCVD step, like the later
 {ref}`SAGD <step-048>` polysilicon and {ref}`GATENIT <step-058>`
 depositions.
 
-**Specific to this step:**
-
-* What is specific to this instance is that the film is sacrificial
-  and its mechanical properties (stress, density, polish rate,
-  wet-etch rate) matter more than its electrical ones.
+What is specific to this instance is that the film is sacrificial
+and its mechanical properties (stress, density, polish rate,
+wet-etch rate) matter more than its electrical ones.
 
 ## Why this step exists
 
@@ -109,9 +108,7 @@ states the relation.
 
 ## How it is typically performed
 
-:::{note}
-An industry-generic recipe for a 200 mm, 130 nm-era fab:
-:::
+*An industry-generic recipe for a 200 mm, 130 nm-era fab:*
 
 * **Deposition chemistry.** Dichlorosilane (SiH₂Cl₂, "DCS") and ammonia:
   3 SiCl₂H₂ + 4 NH₃ → Si₃N₄ + 6 HCl + 6 H₂.[^wiki-sin][^wiki-cvd] LPCVD
@@ -185,7 +182,7 @@ which is a different (later-generation) precursor.
 * Feeds: etched at {ref}`STINITE <step-005>`; used as the mask at
   {ref}`STIE <step-006>` and {ref}`LINOX <step-010>`; polish stop at
   {ref}`CMPNIT <step-012>`; removed at {ref}`NS19 <step-013>`.
-* Same module: other nitride depositions — {ref}`ONO <step-040>`
+* Same category: other nitride depositions — {ref}`ONO <step-040>`
   (SONOS charge-trap nitride), {ref}`GATENIT <step-058>`,
   {ref}`SPNIT <step-076>`, {ref}`LINIT <step-104>`,
   {ref}`NTSD <step-167>`.
