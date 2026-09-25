@@ -2152,9 +2152,12 @@ not one paragraph at a time over all rules. Commit after each rule, or at least 
 uv run python tools/check_preserved.py --base <commit-before-this-page> docs/steps/006-stie.md
 ```
 
-Declare additions the way its help says (`--allow-added markers,numbers,hedges,identifiers,quotes,…`,
-comma-separated, per category) — the categories a template like R-GLANCE or R-TOOLS is expected to
-repeat. A `number_order` LOST is failed by default; when R-TABLE, R-DERIVATION or R-LIST regroups one
+Run first with `--allow-regrouped` only. Then add `--allow-added` categories one at a time, only
+for additions you can name (glance box, R-TOOLS head), and list them in the progress file.
+`--allow-dropdown-edits` only when you edited a note under §2.5, and then name the note and paste
+its old and new text.
+
+A `number_order` LOST is failed by default; when R-TABLE, R-DERIVATION or R-LIST regroups one
 prose unit's numbers into several smaller units (a table's rows, a numbered list's steps), re-run with
 `--allow-regrouped`, which downgrades that LOST to a warning once its four conditions hold (see the
 tool's own docstring on `check_regrouped`) and prints each LOST unit's source text next to the ADDED
