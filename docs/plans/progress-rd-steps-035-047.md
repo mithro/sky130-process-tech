@@ -45,6 +45,42 @@ items here start at 15, only if genuinely new.)
 
 ## Per-page log
 
+### 037-ptsi.md — done (1 hand-written in-force note under "How it is typically
+performed" and its copy under References; both untouched — this page is inside the
+037–044 in-force sweep range, checked with `check_inforce.py` after every edit)
+
+Rules applied: R-PARA/R-SENTENCE throughout (the lead split into 3 short paragraphs at
+its definition/inference/mechanism seams; the mask/screen-oxide paragraph split at its
+"everywhere else"/"block reading" seam, each long sentence itself split further —
+em-dash pairs converted to plain sentence breaks or commas where a second parenthetical
+would otherwise push a sentence over the 0–1 dash-or-parenthetical cap; the
+punch-through/ITRS paragraph split in two; all three "Why this step exists" bullets
+split into lead + indented continuation, including turning one over-length
+parenthetical into its own sentence per the ≥12-word rule; both "How it is typically
+performed" items (Species, Energy) split the same way), R-CATEGORY (35-word
+classification sentence + `**Specific to this step:**` and 2 bullets, since 2 sentences
+remained), R-HEDGE step 1 (italic lead-in), R-TOOLS (2 "Strength:" bullets split into
+SkyWater-says/Tool-exists/Runs-this-step form; no recap table), R-RELATED (labelled and
+reordered: `Previous:`, `Next:`, `Same category:` ×2, `Feeds:`, `Mask:`, `Category
+page:`), R-OPENQ (bold labels on all four bullets), R-GLANCE (box inserted last; "Public
+numbers" is "none published for SKY130" since every number on the page belongs to a
+comparison device, a literature citation, or the in-force dropdown).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 0 (figure caption
+excepted, off limits); list items > 60 words 4 → 0; sentences > 45 words 8 → 0; table
+cells > 25 words 0 → 0.
+
+`uv run python tools/check_preserved.py --base 4a4ed3cf --allow-added
+markers,numbers,hedges,identifiers --allow-regrouped docs/steps/037-ptsi.md`: **0
+undeclared differences**. Every `number_order` finding is a clean `REGROUPED` match (the
+splits landed cleanly, unlike 035's table-reordering case) — spot-checked the
+programme/erase-voltage tuple and the e-test W/L tuple by eye against the diff, both
+match digit-for-digit. Declared additions are the glance box's own marker/hedge/identifier
+repeats. All other checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read
+cleanly top to bottom, including the in-force dropdown (collapsed, untouched) and the new
+Step-category bullets.
+
+
 ### 036-tunarce.md — done (1 hand-written in-force note in the body, plus its copy under
 References; both untouched)
 

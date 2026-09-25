@@ -10,18 +10,35 @@
 | **Previous step** | {ref}`TUNARCE <step-036>` |
 | **Next step** | {ref}`DEPI <step-038>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants a p-type doping peak below the surface of the
+  SONOS memory channel, before the surface implant.
+* **Why:** stops the drain's depletion region from reaching the
+  source in a short, high-voltage memory transistor.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** species, energy, dose and tilt (→ Open questions).
+:::
+
 ## What this step is
 
 `PTSI` is the first of two implants made through the tunnel-mask windows
-into the channel region of the {term}`SONOS` memory transistors. This
+into the channel region of the {term}`SONOS` memory transistors.
+
+This
 reference describes it as a p-type doping peak *below* the surface of
-the memory channel — a "punch-through stop" (inference from the
-n-channel SONOS cell and from the standard cure for punch-through
-described below[^pat-vt-lsi]) — to
-keep the depletion region of the drain from reaching the source in a
+the memory channel — a "punch-through stop". This is
+an inference from the n-channel SONOS cell and from the standard cure
+for punch-through described below.[^pat-vt-lsi] It keeps
+the depletion region of the drain from reaching the source in a
 transistor whose gate is only a few tenths of a micrometre long and
 which must withstand several volts on its drain and body during
-programme, erase and inhibit operations. The surface doping, which sets
+programme, erase and inhibit operations.
+
+The surface doping, which sets
 the threshold, is left for the next implant, {ref}`DEPI <step-038>`.
 
 :::{figure} /_static/figures/sonos-037-ptsi.svg
@@ -35,14 +52,16 @@ Before, the opened tunnel window; after, a beam into the window and, under it on
 The wafer at this point carries the {ref}`TUNM <step-035>` resist,
 opened through its {term}`ARC` at {ref}`TUNARCE <step-036>`, so the implant
 enters only the tunnel windows (`tunm`, GDS 80:20, described by the PDK
-as "SONOS device tunnel implant"[^pdk-06]) and passes through the screen
+as "SONOS device tunnel implant"[^pdk-06]). It passes through the screen
 oxide there — the pad oxide, we infer, whose thickness in the Cypress
 embedded-SONOS flow is in the collapsed note under the recipe list
-below. Everywhere else the resist stops it. On
+below. Everywhere else the resist stops it.
+
+On
 the block reading of that rule preferred on the {ref}`LVTNI <step-015>`
-page — the PDK describes `lvtn` as defining "regions to block Vt
+page, the PDK describes `lvtn` as defining "regions to block Vt
 adjust implant for low Vt LV PMOS/NMOS, SONOS FETs and Native
-NMOS"[^pdk-periph] — the memory transistors skip the standard NMOS
+NMOS".[^pdk-periph] On that reading, the memory transistors skip the standard NMOS
 channel implants, and we read `PTSI` and `DEPI` as their replacements
 (inference; the alternative counter-dope reading is set out on
 {ref}`LVTNI <step-015>`).
@@ -53,12 +72,17 @@ Cypress-published analogue and era-typical values below.
 ## Step category
 
 `PTSI` is an {ref}`Ion implantation <category-implant>` step of the
-*channel engineering* class — the same family as {ref}`LVTNI <step-015>`
-and {ref}`PCHI <step-023>` — but of the sub-surface ("punch-through
+*channel engineering* class, of the sub-surface ("punch-through
 stopper" or "anti-punch-through") type rather than the surface
-{term}`threshold-adjust <threshold-adjust implant>` type: a medium-current implant at tens to a hundred or
-so keV, of order 10¹²–10¹³ cm⁻² (industry-typical),[^txt-01] aimed at a
-peak beneath the channel.
+{term}`threshold-adjust <threshold-adjust implant>` type.
+
+**Specific to this step:**
+
+* It is in the same family as {ref}`LVTNI <step-015>` and
+  {ref}`PCHI <step-023>`.
+* It is a medium-current implant at tens to a hundred or so keV, of
+  order 10¹²–10¹³ cm⁻² (industry-typical),[^txt-01] aimed at a peak
+  beneath the channel.
 
 ## Why this step exists
 
@@ -69,11 +93,13 @@ underneath the channel", and drain-induced barrier lowering as the
 drain "lowering the source–channel barrier".[^wiki-sce] The standard
 cure is a doping peak below the channel that stops the drain depletion
 region from spreading, without raising the surface doping that sets the
-threshold and degrades mobility. An LSI Logic patent describes such a
-technique — chained low-energy "punch-through barriers", there formed
+threshold and degrades mobility.
+
+An LSI Logic patent describes such a
+technique: chained low-energy "punch-through barriers", there formed
 with boron in an n-well beneath p-channel transistors and with
 energies the patent itself calls "merely exemplary" (100, 70 and
-50 keV)[^pat-vt-lsi] — and ITRS 2001 asks for a "Retrograde
+50 keV).[^pat-vt-lsi] ITRS 2001 asks for a "Retrograde
 channel depth" of 21–30 nm for its 2001 high-performance
 device.[^itrs-01]
 
@@ -81,7 +107,9 @@ Three things make the SONOS transistor need its own barrier:
 
 * **It is short.** The PDK's {term}`e-test` parameters are defined on memory
   transistors of drawn W/L 0.45/0.22 µm and 0.35/0.15 µm, for "both
-  original and star cells"; the PDK does not say which geometry
+  original and star cells".
+
+  The PDK does not say which geometry
   belongs to which cell, and we read 0.35/0.15 µm as the "star" cell
   because the PDK says it "is approximately 25% smaller than the
   original cell" (inference).[^pdk-07] Either way, both are gate
@@ -89,14 +117,18 @@ Three things make the SONOS transistor need its own barrier:
 * **It sees high voltages.** The PDK's programme and erase table
   applies +6.7 V to the {term}`control gate` with −3.8 V on source, drain and
   body, and −3.8 V on the gate with +6.7 V on the other three
-  terminals[^pdk-07] (the published table prints the programme source
+  terminals.[^pdk-07]
+
+  (The published table prints the programme source
   bias as "-38"; we read it as −3.8 V, the mirror of the erase
-  condition), and unselected cells on shared lines see partial
-  versions of these ("program inhibit" thresholds are also
-  specified[^pdk-07]). A logic-style channel would not hold off these
+  condition.) Unselected cells on shared lines see partial
+  versions of these; "program inhibit" thresholds are also
+  specified.[^pdk-07] A logic-style channel would not hold off these
   conditions at 0.22 µm.
 * **Its surface must stay lightly doped.** The next implant makes the
-  channel {term}`depletion-mode` ({ref}`DEPI <step-038>`), and Cypress's own
+  channel {term}`depletion-mode` ({ref}`DEPI <step-038>`).
+
+  Cypress's own
   scaling paper stresses "reduction of dopants in the surface of the
   channel" of the control gate and "use of deeper channel implants
   with heavier species such as Indium … so as to keep surface dopant
@@ -107,12 +139,14 @@ programme/erase window would collapse at short channel lengths.
 
 ## How it is typically performed
 
-An industry-generic punch-through-stop implant for a 200 mm, 130 nm-era
-memory transistor (SKY130's values are not public):
+*An industry-generic punch-through-stop implant for a 200 mm, 130 nm-era
+memory transistor (SKY130's values are not public):*
 
 * **Species.** Boron (¹¹B⁺, from BF₃) is the usual p-type barrier
   dopant; indium is the heavier alternative that gives a steeper,
-  shallower-tailed profile. The Cypress embedded-SONOS patent, which may
+  shallower-tailed profile.
+
+  The Cypress embedded-SONOS patent, which may
   still be in force, describes its own channel implant in the collapsed
   note below this list, and the same company's 2020 article recommends
   "heavier species such as Indium" for the control-gate
@@ -120,7 +154,9 @@ memory transistor (SKY130's values are not public):
   channel was shown by Shahidi et al.[^shahidi-1993] and used for
   super-steep retrograde channels at 80 nm.[^huang-2000]
 * **Energy.** Chosen to place the peak below the eventual channel,
-  typically a few tens of nanometres to about 0.1 µm deep. Published
+  typically a few tens of nanometres to about 0.1 µm deep.
+
+  Published
   logic-era barriers: boron chained at 100, 70 and 50 keV;[^pat-vt-lsi]
   the Cypress indium range is in the collapsed note below. Hori and
   Kurimoto's LATIPS
@@ -170,15 +206,19 @@ formed".[^pat-03]
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
-  8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
-  0-60 deg tilt".[^skw-01] The species, dose range and tilt range cover
-  a boron punch-through stopper. Strength: **strong** for the tool;
-  **inference** for its assignment to `PTSI`.
-* **Axcelis GSD high-current/high-energy implanter** ("B11, BF2, P,
-  As, 10-3000kev, 1e11 to 5e15")[^skw-01] (the entry whose dose range
-  starts below the Hi dose entry's 5e12) — could also run it. Strength:
-  strong for existence; weak for assignment.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "Axcelis
+    8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
+    0-60 deg tilt".[^skw-01]
+  - *Tool exists:* **strong** — the species, dose range and tilt range
+    cover a boron punch-through stopper.
+  - *Runs this step:* **inference**, for its assignment to `PTSI`.
+* **Axcelis GSD high-current/high-energy implanter**
+  - *SkyWater says:* lists "B11, BF2, P,
+    As, 10-3000kev, 1e11 to 5e15"[^skw-01] (the entry whose dose range
+    starts below the Hi dose entry's 5e12).
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak — could also run it.
 * Indium is *not* among the species SkyWater lists for any
   implanter,[^skw-01] so if SKY130 used indium here it would be on a
   configuration not described publicly (see *Open questions*).
@@ -198,15 +238,16 @@ formed".[^pat-03]
 ## Related steps and cross-references
 
 * Previous: {ref}`TUNARCE <step-036>` (window cleared through the
-  ARC); mask: {ref}`TUNM <step-035>`.
+  ARC).
 * Next: {ref}`DEPI <step-038>` (the surface implant through the same
   window), then {ref}`TUNME <step-039>`.
-* The logic-transistor channels were implanted earlier
+* Same category: the logic-transistor channels were implanted earlier
   ({ref}`LVTNI <step-015>`, {ref}`PCHI <step-023>`,
-  {ref}`PNCHI <step-024>`) and annealed at {ref}`RTAI <step-034>`;
-  this implant is annealed by the furnace steps that follow.
-* The memory transistor's own tip implant comes later at
-  {ref}`LDNTM <step-071>`.
+  {ref}`PNCHI <step-024>`) and annealed at {ref}`RTAI <step-034>`.
+* Feeds: this implant is annealed by the furnace steps that follow.
+* Same category: the memory transistor's own tip implant comes later
+  at {ref}`LDNTM <step-071>`.
+* Mask: {ref}`TUNM <step-035>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -293,17 +334,19 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The species (boron or indium), energy, dose and tilt of `PTSI` are
-  not public; the values above are from a Cypress patent for a later
-  node and from era-typical logic patents.
-* Indium is absent from SkyWater's public implanter species lists; if
-  it is used, the tool configuration is not described publicly. The
-  tool class SkyWater lists is nevertheless an indium-capable one:
-  Axcelis markets the 8250HT as removing the need for "a dedicated
-  implanter for indium processes".[^axcelis-8250]
-* Whether `PTSI` is a single implant or a chain of energies is unknown.
-* Whether the implant is symmetric (7° tilt) or a large-tilt
-  asymmetric stopper of the LATIPS kind is unknown.
+* **Species, energy, dose and tilt.** These are not public; the values
+  above are from a Cypress patent for a later node and from
+  era-typical logic patents.
+* **Indium tool configuration.** Indium is absent from SkyWater's
+  public implanter species lists; if it is used, the tool
+  configuration is not described publicly. The tool class SkyWater
+  lists is nevertheless an indium-capable one: Axcelis markets the
+  8250HT as removing the need for "a dedicated implanter for indium
+  processes".[^axcelis-8250]
+* **Single implant or chain.** Whether `PTSI` is a single implant or a
+  chain of energies is unknown.
+* **Tilt symmetry.** Whether the implant is symmetric (7° tilt) or a
+  large-tilt asymmetric stopper of the LATIPS kind is unknown.
 
 <!-- footnotes -->
 
