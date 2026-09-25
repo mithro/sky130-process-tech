@@ -37,9 +37,54 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 - cmp.md — done
 - substrate.md — done
 - anneal.md — done
-- (remaining seven to do: deposition, etch, implant, lithography, oxidation, strip, test)
+- oxidation.md — done
+- (remaining six to do: deposition, etch, implant, lithography, strip, test)
 
 ## Pages
+
+### oxidation.md — done
+
+Rules applied: intro + quick-facts table (Governing relation "Deal–Grove model", the page's own named
+model); R-LIST (the "oxidation steps are" sentence, 5 items → bullets, zero markers/numbers so a pure
+reformat; the "grows its gate oxides in two passes" description → a numbered list, a genuine sequence
+per R-LIST rule 6); R-SENTENCE splits (the "Because the oxide is grown..." sentence, the "Precisely: the
+wafer is heated..." sentence — split with an added subject "It is exposed to...", the ISSG sentence);
+R-CAPTION on the Deal–Grove parameters table (previously only a colon lead-in, which is not a caption on
+a class page — see the rule's step-page-only exception) and the new steps table; R-PARA on three
+list items over the cap (Gate oxides, Field oxides in "Thin gate oxide versus thick field oxide";
+Vertical batch furnaces in Typical equipment) — each split into a lead sentence plus an indented
+continuation, wording unchanged; R-COMPARE step 2 (five consumables lead-ins linked to
+`process-gases`/`hardware-consumables`/`substrates`); R-COMPARE step 3 (Machine class column on the
+6-row steps table — two rows get both Vertical furnace and Rapid thermal processor, matching the
+machines index where both are listed as `primary` for those two steps, not one primary/one alternative).
+
+Caught and reverted during drafting: the first pass of the "Because the oxide is grown..." split
+mistakenly attached `[^wiki-thox]` to the first half — that sentence has **no** citation in the
+original at all. Fixed before running any checker (would have been a fabricated citation, forbidden by
+§2 rule 1/4). Recorded here as a caution for reviewers of the remaining pages in this batch, not as a
+live defect.
+
+`check_preserved.py --base b71c67d9 --allow-regrouped --allow-added markers,numbers,refs,identifiers` →
+exit 0. Two `--allow-regrouped` groups confirmed by hand (the 800/1200/2/2 tuple from the wafer-heating
+sentence split into two sentences' worth of digits in the same order; the 900–1000/250 tuple from the
+Field-oxides bullet split the same way).
+
+* **ADDED markers:** `txt-09` (one extra occurrence) — R-SENTENCE rule 5 repeat.
+* **ADDED numbers:** `6` — Steps-in-SKY130 count.
+* **ADDED refs:** `machine-vertical-furnace-oxidation` ×7, `machine-rapid-thermal-processor` ×3 (quick
+  facts + Machine class column), `material-process-gases` ×4, `material-hardware-consumables` ×1,
+  `material-substrates` ×1 (quick facts + the five consumables lead-ins).
+* **ADDED identifiers:** `SKY130` ×1.
+
+Quick-facts derivation: What it does = a verbatim fragment of the page's opening sentence. Steps in
+SKY130 = 6 (steps table). Tool classes = the two `{ref}` targets in Typical equipment. Consumable
+classes = `process-gases` (the class page owning every "Typical consumables" row on this page — O2, H2,
+N2, HCl/DCE, N2O/NO are all `process-gases` rows per the materials index; quartz hardware and dummy
+wafers were linked separately in the body to their own classes but left out of this summary cell to keep
+it to the one dominant class). Governing relation = "Deal–Grove model" (the page's own `{term}` and H3).
+
+Checkers and `-W` build pass. Screenshots (desktop, 400 px) reviewed: numbered list renders correctly,
+Deal–Grove table and the new equipment/steps tables fit at 400 px with no horizontal scroll.
 
 ### anneal.md — done
 

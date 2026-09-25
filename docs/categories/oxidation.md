@@ -1,20 +1,33 @@
 (category-oxidation)=
 # Thermal oxidation
 
+Thermal oxidation grows a film of silicon dioxide (SiO₂) *out of* the
+silicon wafer itself, by exposing hot silicon to oxygen or steam. The
+silicon at the surface is consumed and converted into glass.
+
+| | Thermal oxidation |
+|---|---|
+| What it does | grows silicon dioxide out of the silicon wafer itself, by exposing hot silicon to oxygen or steam |
+| Steps in SKY130 | 6 |
+| Tool classes | {ref}`Vertical batch furnaces <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processors <machine-rapid-thermal-processor>` |
+| Consumable classes | {ref}`Process gases <material-process-gases>` |
+| Governing relation | Deal–Grove model |
+
 ## What this class of step does
 
 Thermal oxidation grows a film of silicon dioxide (SiO₂) *out of* the
 silicon wafer itself, by exposing hot silicon to oxygen or steam. The
 silicon at the surface is consumed and converted into glass. Because
 the oxide is grown rather than deposited, its interface with the
-underlying silicon is atomically clean and electrically almost perfect,
-which is why the gate dielectric of every MOS transistor in a 130 nm
+underlying silicon is atomically clean and electrically almost
+perfect. This is why
+the gate dielectric of every MOS transistor in a 130 nm
 process is a thermal oxide (or a lightly nitrided thermal oxide), and
 why thin thermal oxides are also used wherever silicon must be
 protected, passivated or spaced from a nitride.
 
 Precisely: the wafer is heated to between 800 and 1200 °C in a furnace
-or a single-wafer rapid-thermal chamber and exposed to dry O₂ (dry
+or a single-wafer rapid-thermal chamber. It is exposed to dry O₂ (dry
 oxidation, Si + O₂ → SiO₂) or to water vapour (wet oxidation,
 Si + 2H₂O → SiO₂ + 2H₂), for a time chosen from the growth kinetics to
 give the target thickness.[^wiki-thox]
@@ -22,13 +35,15 @@ For every unit thickness of silicon consumed, 2.17 unit thicknesses of
 oxide appear, so "46% of the oxide thickness will lie below the
 original surface, and 54% above it".[^wiki-thox]
 
-In the SKY130 flow the oxidation steps are the pad oxide under the STI
-nitride ({ref}`BOX <step-002>`), the trench-liner oxidation
-({ref}`LINOX <step-010>`), the tunnel-oxide/{term}`ONO` stack of the
-{term}`SONOS` memory transistor ({ref}`ONO <step-040>`), the two gate oxidations
-for the thick-oxide and thin-oxide transistors
-({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`) and what we infer to
-be the post-gate-etch re-oxidation ({ref}`IOX45 <step-063>`).
+In the SKY130 flow the oxidation steps are:
+
+* the pad oxide under the STI nitride ({ref}`BOX <step-002>`);
+* the trench-liner oxidation ({ref}`LINOX <step-010>`);
+* the tunnel-oxide/{term}`ONO` stack of the {term}`SONOS` memory transistor
+  ({ref}`ONO <step-040>`);
+* the two gate oxidations for the thick-oxide and thin-oxide transistors
+  ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`); and
+* what we infer to be the post-gate-etch re-oxidation ({ref}`IOX45 <step-063>`).
 
 ## Physics and engineering background
 
@@ -57,12 +72,15 @@ Both rate constants are thermally activated, {math}`B = B_0
 e^{-E_A/kT}` and {math}`B/A = (B/A)_0 e^{-E_A/kT}`, with the
 parameters below for single-crystal silicon:[^wiki-dg]
 
+:::{table} Deal–Grove linear and parabolic rate-constant parameters for single-crystal silicon, wet and dry oxidation
+
 | Parameter | Wet (H₂O) | Dry (O₂) |
 |-----------|-----------|----------|
 | {math}`(B/A)_0` (µm/h), ⟨100⟩ / ⟨111⟩ | 9.7 × 10⁷ / 1.63 × 10⁸ | 3.71 × 10⁶ / 6.23 × 10⁶ |
 | {math}`E_A` (linear) (eV) | 2.05 | 2.00 |
 | {math}`B_0` (µm²/h) | 386 | 772 |
 | {math}`E_A` (parabolic) (eV) | 0.78 | 1.23 |
+:::
 
 Three consequences follow. Wet oxidation is far faster than dry
 because water's solubility in SiO₂ is about three orders of magnitude
@@ -122,7 +140,9 @@ Two very different thickness regimes appear in a CMOS flow:
   oxide thickness of 2.0–2.4 nm for low-operating-power and 2.4–2.8 nm
   for low-standby-power logic at the 130 nm node, and 5 nm for DRAM
   transfer devices; input/output transistors that must withstand 2.5 V,
-  3.3 V or 5 V use proportionally thicker oxides.[^itrs-01] These are
+  3.3 V or 5 V use proportionally thicker oxides.[^itrs-01]
+
+  These are
   grown dry, often with a nitridation, typically at 750–950 °C,[^txt-01]
   in a furnace or an {term}`RTP` chamber, to a thickness controlled to within a
   few per cent (ITRS 2001 asks for {term}`EOT` control of ±4 % 3σ).[^itrs-01]
@@ -131,8 +151,9 @@ Two very different thickness regimes appear in a CMOS flow:
   nitride, rounding trench corners and passivating trench sidewalls,
   or scattering implanted ions to reduce {term}`channelling`.[^txt-01]
 * **Field oxides** of hundreds of nanometres. In {term}`LOCOS` isolation
-  these were grown wet at 900–1000 °C[^txt-01] through a nitride mask;
-  at 250 nm and below the industry moved to {term}`STI`, in which the
+  these were grown wet at 900–1000 °C[^txt-01] through a nitride mask.
+
+  At 250 nm and below the industry moved to {term}`STI`, in which the
   thick isolation oxide is *deposited* ({ref}`category-deposition`) and
   only a thin liner is grown.[^wiki-sti] SKY130 uses STI
   ({ref}`STIE <step-006>`).
@@ -140,10 +161,15 @@ Two very different thickness regimes appear in a CMOS flow:
 ### Dual gate oxide processes
 
 A process with both 1.8 V and 5 V transistors grows its gate oxides in
-two passes: a first, thicker oxide everywhere; a mask and wet etch to
-strip it from the low-voltage active areas ({ref}`LVOM <step-044>`,
-{ref}`GOXETCH <step-046>`); then a second, thin oxidation that also
-adds slightly to the remaining thick oxide. The thick oxide's final
+two passes:
+
+1. A first, thicker oxide everywhere.
+2. A mask and wet etch to strip it from the low-voltage active areas
+   ({ref}`LVOM <step-044>`, {ref}`GOXETCH <step-046>`).
+3. A second, thin oxidation that also adds slightly to the remaining
+   thick oxide.
+
+The thick oxide's final
 thickness is therefore the first growth plus a Deal–Grove increment
 from the second growth, and both must be modelled together.[^txt-01]
 
@@ -155,7 +181,7 @@ single-wafer rapid-thermal oxidation (RTO) trades throughput for a
 budget of seconds and the ability to switch ambient between steps. In
 {term}`ISSG`, hydrogen and oxygen are injected into a reduced-pressure
 RTP chamber and react at the hot wafer, generating steam and atomic
-oxygen in situ; the resulting oxide is grown quickly and uniformly, and
+oxygen in situ.[^txt-09] The resulting oxide is grown quickly and uniformly, and
 the process is used for trench-liner and gate oxides where corner
 rounding or nitride re-oxidation is wanted.[^txt-09]
 
@@ -164,7 +190,9 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
 * **{ref}`Vertical batch furnaces <machine-vertical-furnace-oxidation>`** for 200 mm wafers, with quartz tube,
   quartz boat, load-lock or nitrogen-purged loading, mass-flow
   controlled O₂/H₂/N₂/HCl (or DCE) delivery and, for wet oxidation, a
-  pyrogenic torch burning H₂ in O₂ ahead of the tube. Representative
+  pyrogenic torch burning H₂ in O₂ ahead of the tube.
+
+  Representative
   tools: ASM A400 series (the original A400 has "more than 1000 reactors
   shipped" and covers "wet oxidation and anneal
   processes");[^asm-a400][^asm-vf] TEL Alpha-8 series; and the
@@ -182,28 +210,31 @@ rounding or nitride re-oxidation is wanted.[^txt-09]
 
 ## Typical consumables
 
-* Oxygen (O₂), hydrogen (H₂) for pyrogenic steam or ISSG, nitrogen
+* {ref}`Oxygen (O₂), hydrogen (H₂) <material-process-gases>` for pyrogenic steam or ISSG, nitrogen
   (N₂) for purge and anneal, all at semiconductor purity (99.9999 %
   or better).
-* Chlorine sources: anhydrous HCl, or trans-1,2-dichloroethylene (DCE,
+* {ref}`Chlorine sources <material-process-gases>`: anhydrous HCl, or trans-1,2-dichloroethylene (DCE,
   which replaced trichloroethane) for sodium {term}`gettering`.
-* N₂O or NO for {term}`oxynitride` gate dielectrics; NH₃ for nitridation.
-* Quartz (fused silica) tubes, boats, baffles and liners, which are
+* {ref}`N₂O or NO <material-process-gases>` for {term}`oxynitride` gate dielectrics; NH₃ for nitridation.
+* {ref}`Quartz (fused silica) tubes, boats, baffles and liners <material-hardware-consumables>`, which are
   periodically cleaned or replaced; silicon carbide boats for
   high-temperature use.
-* Dummy and monitor wafers (SEMI M8) to fill the boat and to measure
+* {ref}`Dummy and monitor wafers <material-substrates>` (SEMI M8) to fill the boat and to measure
   thickness by ellipsometry.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 2 | {ref}`BOX <step-002>` | Base oxidation |
-| 10 | {ref}`LINOX <step-010>` | LINOX oxidation |
-| 40 | {ref}`ONO <step-040>` | ONO stack oxidation |
-| 43 | {ref}`GOX100 <step-043>` | Gate oxidation |
-| 47 | {ref}`LVGOX <step-047>` | Gate oxidation |
-| 63 | {ref}`IOX45 <step-063>` | Implant oxidation |
+:::{table} The six oxidation steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 2 | {ref}`BOX <step-002>` | Base oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
+| 10 | {ref}`LINOX <step-010>` | LINOX oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
+| 40 | {ref}`ONO <step-040>` | ONO stack oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
+| 43 | {ref}`GOX100 <step-043>` | Gate oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>` |
+| 47 | {ref}`LVGOX <step-047>` | Gate oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+| 63 | {ref}`IOX45 <step-063>` | Implant oxidation | {ref}`Vertical furnace <machine-vertical-furnace-oxidation>`, {ref}`Rapid thermal processor <machine-rapid-thermal-processor>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
