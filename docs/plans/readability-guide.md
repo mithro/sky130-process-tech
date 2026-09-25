@@ -925,7 +925,11 @@ uses on 42 pages).
 
 **Do.**
 1. One row per model or grade. Machine pages: `Vendor | Model | Year | Type | Published figures`.
-   Material pages: `Material | As supplied | Specification | Note`.
+   Material pages: `Material | Source | What the source says` — Source is the supplier, standard,
+   patent or paper the page names for that clause, `—` when the prose names none. When every Source
+   cell would be `—`, drop the column (`Material | What the sources say`). Note text joins the last
+   cell after a semicolon, with its own marker. One source per row: a standard and a supplier named in
+   the same bullet become two rows.
 2. Quotation marks and footnote markers travel with the value into the cell.
 3. A value the page does not give is `—`.
 4. Sentences that fit no column — litigation, "still used in 2014", "no vendor description was
