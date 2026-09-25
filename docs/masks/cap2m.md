@@ -3,23 +3,10 @@
 
 The second capacitor mask is the {term}`reticle` that draws the top
 plates of SKY130's second {term}`MiM capacitor`, the one built over
-metal 4: on the {ref}`CAP2M <step-152>` page's reading, the resist
+metal 4. On the {ref}`CAP2M <step-152>` page's reading, the resist
 printed through it at step 152 stays wherever `cap2m` is drawn, on the
 blanket plate film of {ref}`CAPTIW2 <step-151>`, and the
-{ref}`CAP2ME <step-153>` etch removes the film everywhere else. Less is
-public about it than about any of its neighbours: `masks.csv` has no
-entry for it, the minimum-CD table no row and the periphery rules no rule
-set (the PDK's published DRC checks name it only in two module-cut
-checks), and the drawn layer `cap2m` is paired with the mask only on the step
-page's reading. The process-steps sheet nevertheless lists it, as
-"Capacitor MiM 2", with a plate on every MPW run, and the public renders
-show `cap2m` shapes on 39 or 40 dies of every run, most of them a single
-shape. This page gathers what public sources say about the mask
-itself — its PDK entry and layers, the plates the process-steps sheet
-records for the MPW runs, what the public renders of those runs show,
-the lithography it needs and the rules that constrain it. How the step
-is performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+{ref}`CAP2ME <step-153>` etch removes the film everywhere else.
 
 | | CAP2M — Capacitor MiM 2 |
 |---|---|
@@ -36,48 +23,79 @@ is performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 39, 40, 40, 40, 40, 40, 40, 40[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-cap2m-steps>` |
 
+:::{seealso}
+How the step
+is performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+Less is public about the mask than about any of its neighbours:
+`masks.csv` has no entry for it, the minimum-CD table no row and the
+periphery rules no rule set (the PDK's published DRC checks name it only
+in two module-cut checks). The drawn layer `cap2m` is paired with the
+mask only on the step page's reading. The process-steps sheet
+nevertheless lists it, as "Capacitor MiM 2", with a plate on every MPW
+run, and the public renders show `cap2m` shapes on 39 or 40 dies of every
+run, most of them a single shape.
 
 The PDK names the device the mask draws but not the mask. Its *Device
 Details* page lists two constructions of the MiM capacitor, "CAPM over
 Metal-3" and "CAP2M over Metal-4", and states that "The constructions are
 identical, and the capacitors may be stacked to maximize total
-capacitance"; it names the cell `sky130_fd_pr__cap_mim_m4__base` and the
-model `sky130_fd_pr__cap_mim_m4`, and gives the second capacitor its own
+capacitance".[^pdk-07] It names the cell `sky130_fd_pr__cap_mim_m4__base`
+and the model `sky130_fd_pr__cap_mim_m4`.[^pdk-07]
+
+The *Device Details* page gives the second capacitor its own
 area capacitance `CMIM2A` of 2 fF/µm² (limits 1.8–2.2) and periphery
-capacitance `CMIM2P` of 0.19 fF/µm (0.11–0.27), with a "MiM2 top plate
-sheet resistance" of 5.8 Ω/sq (4.8–6.8) listed under the name `RSCAPM`,
+capacitance `CMIM2P` of 0.19 fF/µm (0.11–0.27).[^pdk-07] Its "MiM2 top plate
+sheet resistance" of 5.8 Ω/sq (4.8–6.8) is listed under the name `RSCAPM`,
 the same name as the first capacitor's.[^pdk-07] The mask therefore sets
 the plate area and perimeter of the second capacitor (the
-{ref}`CAP2M <step-152>` page's reading of the model form). The PDK's
+{ref}`CAP2M <step-152>` page's reading of the model form).
+
+The PDK's
 cross-section of the stacked capacitor labels "CAP2M", "M4 (plate 2)",
 "Via4" and "M5 (plate 2)", and the process stack diagram includes a
 `cap2m` layer, which the step page reads as lying between `metal4` and
 `metal5`.[^pdk-07][^pdk-04]
 
-What the PDK does not publish for this mask is as telling. `masks.csv`
-has no entry for a second capacitor mask;[^pdk-05] Table 2 of [*Criteria &
-Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) has no `cap2m` row;[^pdk-03] the periphery rules have a
-`capm` rule set, every value "N/A", and no `cap2m` rule set;[^pdk-periph]
-and neither Table F2b, the mask generation table, nor the CAD definitions
-of Table C3, which define "top_plate" as "capm:dg", mention
-`cap2m`.[^pdk-06] The {ref}`CAP2M <step-152>` page therefore reads the
+What the PDK does not publish for this mask is as telling:
+
+* `masks.csv` has no entry for a second capacitor mask.[^pdk-05]
+* Table 2 of [*Criteria &
+  Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) has no `cap2m` row.[^pdk-03]
+* The periphery rules have a `capm` rule set, every value "N/A", and no
+  `cap2m` rule set.[^pdk-periph]
+* Neither Table F2b, the mask generation table, nor the CAD definitions
+  of Table C3, which define "top_plate" as "capm:dg", mention
+  `cap2m`.[^pdk-06]
+
+The {ref}`CAP2M <step-152>` page therefore reads the
 plate geometry as that of `capm` — a 2 µm minimum width and a 0.84 µm
 minimum space — and the mask as a non-critical, large-feature layer
 (inference from the "identical" construction).
 
 The published SKY130 {term}`test tile` uses the name `CAP2M` for the
-plate: a "Large MiM2 capacitor, CAP2M over M4, 11 plates, each
-40x40" with "Total expected capacitance 35.5 pF"; a "Periphery-intensive
-MiM2 cap, CAP2M over M4. 72 plates each 2x35. […]" and an "Area-intensive
-MiM2 capacitor, CAP2M over M4. 5 plates each 35x35."; "CAP2M linewidth,
-L/W = 500/2.0" and "CAP2M linewidth, L/W = 400/1.0" lines; a "CAP2M sheet
-rho, L/W = 45/4.5" structure; "CAP2M-CAP2M serp/comb" and "M4-M4
-serp/comb structure, M4 is under CAP2M at min TDR S = 1.0" structures; a
-"Via-4 chain, 1392 via-4, M5-CAP2M over M4 (min via enclosure)"; and
-"CAPM-M3 and CAP2M-M4 capacitors, stacked on top of each other and
-connected together. 11 pairs of plates, each 40x40" with "Total expected
-capacitance 71 pF".[^raw-data-testtile-pads] The metal-4 comb gives a
+plate:[^raw-data-testtile-pads]
+
+* a "Large MiM2 capacitor, CAP2M over M4, 11 plates, each 40x40" with
+  "Total expected capacitance 35.5 pF"
+* a "Periphery-intensive MiM2 cap, CAP2M over M4. 72 plates each 2x35. […]"
+  and an "Area-intensive MiM2 capacitor, CAP2M over M4. 5 plates each
+  35x35."
+* "CAP2M linewidth, L/W = 500/2.0" and "CAP2M linewidth, L/W = 400/1.0"
+  lines
+* a "CAP2M sheet rho, L/W = 45/4.5" structure
+* "CAP2M-CAP2M serp/comb" and "M4-M4 serp/comb structure, M4 is under
+  CAP2M at min TDR S = 1.0" structures
+* a "Via-4 chain, 1392 via-4, M5-CAP2M over M4 (min via enclosure)"
+* "CAPM-M3 and CAP2M-M4 capacitors, stacked on top of each other and
+  connected together. 11 pairs of plates, each 40x40" with "Total
+  expected capacitance 71 pF"
+
+The metal-4 comb gives a
 "min TDR S" of 1.0 where the metal-3 comb under `CAPM` gives 1.2 (our
 comparison); the test tile does not explain the difference. The mask does
 not define the dielectric or plate film ({ref}`CAPILD2 <step-150>`,
@@ -92,21 +110,26 @@ via-4 contacts ({ref}`mask-vim4`).
 `gds_layers.csv` lists the drawn layer `cap2m` at 97:44, "MiM capacitor
 plate over metal 4", on a layer number that also carries the `chvtpm`
 mask purpose at 97:0 and its mask-drop and mask-add purposes at 97:42 and
-97:43; it has no mask-level (`c…`) layer for a second capacitor
-mask.[^pdk-06] With no `masks.csv` entry, the pairing of the step's mask
+97:43.[^pdk-06] It has no mask-level (`c…`) layer for a second capacitor
+mask.[^pdk-06]
+
+With no `masks.csv` entry, the pairing of the step's mask
 with `cap2m` is not a match of names but the reading of the step page and
 the masks index, which the layer description, the device page's "CAP2M
 over Metal-4" and the test tile support.[^pdk-06][^pdk-07][^raw-data-testtile-pads]
+
 No periphery rule names `cap2m`: the row of rule x.2 that limits `capm`
 and other layers to "n x 90" degree angles does not list it, and rule
-x.22, which flags floating "capm", does not mention it.[^pdk-periph] The
-PDK's *Error Messages* page, which describes "many of the automated DRC
+x.22, which flags floating "capm", does not mention it.[^pdk-periph]
+
+The PDK's *Error Messages* page describes "many of the automated DRC
 rules that are checked by SkyWater as part of the acceptance criteria for
-GDS data", does name it, in two module-cut checks, "0.42 min. spacing of
+GDS data".[^pdk-errors] It does name `cap2m`, in two module-cut checks, "0.42 min. spacing of
 moduleCutAREA & cap2m" (x.18a) and "0.42 min. enclosure of cap2m by
-moduleCutAREA" (x.18b), which give no plate geometry; it lists no
+moduleCutAREA" (x.18b), which give no plate geometry.[^pdk-errors] It lists no
 "nikon cross" check for either capacitor mask, as it does for the metal
 and via masks.[^pdk-errors]
+
 Table 7's "MiM Capacitor aspect ration" of 20 (`MiM_AR`) names no
 capacitor; the step page treats it as published for the first and applies
 it to the second (inference).[^pdk-03]
@@ -116,13 +139,15 @@ it to the second (inference).[^pdk-03]
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `CAP2M` the site renders layer 97:44 (`cap2m`)
-alone, with no Boolean expression and no fill layer, on all eight runs;
-its mask record gives the description "Capacitor mask", which is the step
+alone, with no Boolean expression and no fill layer, on all eight
+runs.[^mask-renders] Its mask record gives the description "Capacitor mask", which is the step
 list's description of step 152, no mask-level layer, no info text, no
-note and no value for use in SKY130.[^mask-renders][^steps-sheet] The
+note and no value for use in SKY130.[^mask-renders][^steps-sheet]
+
+The
 layer is the one this reference pairs with the mask, and the masks index
 lists `CAP2M` among the masks for which the renders and its pairings
-agree; both derive from the same public files, so the agreement is no
+agree. Both derive from the same public files, so the agreement is no
 independent confirmation, and the site's choice is one public derivation
 from the drawn data, not SkyWater's mask-generation recipe
 ({ref}`masks-derivations`). The sheet's "Run Mask IDs" row for `CAP2M`
@@ -132,15 +157,18 @@ evidence of its own.[^steps-sheet]
 
 The die count is not a count of designs with a second MiM capacitor. On
 MPW-1, 39 dies carry `cap2m` shapes, each exactly one, and one die (frame
-D4) carries none; on the other seven runs all 40 dies carry shapes, and
+D4) carries none. On the other seven runs all 40 dies carry shapes, and
 the number carrying exactly one is 38, 39, 39, 36, 37, 36 and 36 on MPW-2
 to MPW-8 in turn. The other dies carry from 3 to 119 701
-shapes.[^mask-renders] We read the single shape as common to the dies
+shapes.[^mask-renders]
+
+We read the single shape as common to the dies
 rather than to the projects (inference), as the
 {ref}`CAPM mask page <mask-capm>` does for `capm`; the site does not say
 what it is. On MPW-1 the same frame, D4, is also the one die with no
 `capm` shape, and the one die with 119 701 shapes on MPW-7 (frame B7) and
 on MPW-8 (frame B3) carries the same count on `capm` (our comparison).
+
 The site states the limits of its images: "These are renders of *drawn*
 data, not photomask artwork: reticle pitch, 4x reduction, mirroring and
 the frame features the fab adds are not modelled."[^mask-renders] Its
@@ -170,13 +198,16 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 | MPW-8 | `5CS8017AC` | `S8017AA582A` |
 
 * **A plate without a PDK entry.** The sheet records a `CAP2M` plate on
-  every run although `masks.csv` does not list the mask; the plates show
+  every run although `masks.csv` does not list the mask.[^steps-sheet][^pdk-05] The plates show
   that a second capacitor level was recorded for each MPW set, not that
   every die uses it (see the renders above).[^steps-sheet][^pdk-05]
 * **Plate number.** The sheet does not say what `582` encodes. It falls
-  between `580` for `MM4` and `585` for `VIM4`. From `500` to `590` the
+  between `580` for `MM4` and `585` for `VIM4`.
+
+  From `500` to `590` the
   via and metal numbers rise in step order, but each capacitor mask is
-  numbered 2 above the metal mask that follows it: `CAP2M` (step 152) is
+  numbered 2 above the metal mask that follows it (our
+  comparison).[^steps-sheet] `CAP2M` (step 152) is
   `582` against `MM4` (step 154) `580`, as `CAPM` (step 137) is `572`
   against `MM3` (step 139) `570` (our comparison).[^steps-sheet]
   Elsewhere the numbers do not follow process order, and no process
@@ -192,21 +223,27 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`CAP2M <step-152>` page gives
+### Exposure class
+
+The {ref}`CAP2M <step-152>` page gives
 {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4` for the `capm` space on
 an i-line lens of NA 0.6, with the geometry assumed equal to `capm`'s, and
 infers an i-line level, quoting ASML's statement that older systems
 "migrate to the lithography of choice for less critical
-layers";[^asml-30] the {ref}`i-line stepper <machine-i-line-stepper>` page
+layers".[^asml-30] The {ref}`i-line stepper <machine-i-line-stepper>` page
 lists it there. SkyWater lists "ASML I-line stepper" and "ASML I-line
 scanner" but assigns no layer to them.[^skw-01]
 
-**Mask errors and the plate.** Wong et al. found that the mask error
+### Mask errors and the plate
+
+Wong et al. found that the mask error
 factor "is unity for large features, but increases rapidly when the
 critical dimension (CD) is less than 0.5 (lambda) /NA for line-space
-patterns";[^wong-1998] at 365 nm and NA 0.6 that is about 0.30 µm (our
+patterns".[^wong-1998] At 365 nm and NA 0.6 that is about 0.30 µm (our
 arithmetic), far below the assumed 0.84 µm space, so plate CD errors
-would print at their own size (inference). Plates of this size are well
+would print at their own size (inference).
+
+Plates of this size are well
 within what laser reticle writers of the period and wet-etched chrome
 handled (our reading): a laser writer of the ALTA family addressed "the
 needs of maskmakers in the 180 nm and 150 nm technology
@@ -215,49 +252,61 @@ etched".[^buck-1994] The handbook edited by Rizvi covers mask writers and
 conventional optical masks.[^rizvi-2005] None of this is recorded for the
 `CAP2M` plate.
 
-**Stacked plates.** If the layout stacks the two capacitors, as the device
+### Stacked plates
+
+If the layout stacks the two capacitors, as the device
 page allows, the `cap2m` plate is drawn over a `capm` plate one level down,
 and the PDK's stacked cross-section draws both plates with the same
-outline (the step page's reading of the drawing);[^pdk-07] a
+outline (the step page's reading of the drawing).[^pdk-07] A
 misregistration between the two levels would change the area over which
-their fields overlap (inference, on the step page). Kar-Roy, Racanelli and
+their fields overlap (inference, on the step page).
+
+Kar-Roy, Racanelli and
 Kempf stack an upper and a lower MiM capacitor between interconnect levels
 and join them in parallel,[^pat-mim-stack-newportfab] and Chang, Lee and
 Chen cross-connect stacked plates through filled
-vias;[^pat-mim-stack-tsmc] Shyu, Temes and Krummenacher derived how random
+vias.[^pat-mim-stack-tsmc] Shyu, Temes and Krummenacher derived how random
 errors in capacitance ratios depend on the physical dimensions and the
 process spread, for MOS capacitors.[^shyu-1984] Ng et al. review MiM
 integration in Al–Cu and copper back ends.[^ng-2005]
 
-**Reflective substrate.** On the step pages' readings the resist sits on
+### Reflective substrate
+
+On the step pages' readings the resist sits on
 a refractory plate film over some 20–30 nm of dielectric (the
 {ref}`CAPILD2 <step-150>` page's estimate) on the unpatterned metal-4
 stack. Brunner showed that the swing ratio scales with
 the square root of the substrate reflectivity;[^brunner-1991] Rocke and
 Schneegans used titanium nitride on aluminium as an anti-reflection
-layer.[^rocke-1988] The step page reads an organic {term}`BARC` or dyed
+layer.[^rocke-1988]
+
+The step page reads an organic {term}`BARC` or dyed
 resist and a positive DNQ/novolac i-line resist, the chemistry of
 Dammel's text;[^dammel-1993] with the resist left where `cap2m` is drawn,
 the plate would be clear-field (inference). Neither is published. The
 consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
 transferred by {ref}`CAP2ME <step-153>`, an etch of the plate film on the
 {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class that stops
 on, or a little way into, the capacitor dielectric, with the resist strip
-treated as part of that step; the step page repeats {ref}`CAPME <step-138>`
+treated as part of that step. The step page repeats {ref}`CAPME <step-138>`
 one level higher. The Newport Fab patent patterns its top
 plate on unpatterned interconnect metal before the bottom
 plate.[^pat-mim-newportfab]
 
-**Overlay and charging.** Each plate must lie inside a metal-4 shape
+### Overlay and charging
+
+Each plate must lie inside a metal-4 shape
 printed later and enclose the via-4 openings that contact it, by margins
 the PDK does not publish; the {ref}`CAP2M <step-152>` page reads the mask
 as aligned to the via-3 level under the unpatterned metal (inference).
 Wang, Ackaert et al. showed that plasma-charging damage of floating MiM
 capacitors depends on the antenna areas connected to each
-plate,[^wang-2004-mim] which the step page reads as making the plate area
+plate.[^wang-2004-mim] The step page reads this as making the plate area
 one term in the charging exposure of later plasma steps until via 4
 connects it.
 
@@ -288,13 +337,20 @@ mask step. The rule needs no exception for this mask.
 The periphery rules have no `cap2m` rule set, and the only published
 checks naming `cap2m` are the two module-cut checks quoted
 above.[^pdk-errors] The table gives the rules
-that bear on the mask only by analogy or in general: rule capm.7, which
-the {ref}`CAP2M <step-152>` page applies to the second capacitor
-(inference from the "identical" construction), rule capm.6, whose subject
-matches `MiM_AR` (our reading), and the mask-data rules x.7 and x.15a.
+that bear on the mask only by analogy or in general:
+
+* rule capm.7, which
+  the {ref}`CAP2M <step-152>` page applies to the second capacitor
+  (inference from the "identical" construction)
+* rule capm.6, whose subject
+  matches `MiM_AR` (our reading)
+* the mask-data rules x.7 and x.15a
+
 Flag P means "Rule applies to periphery only (outside areaid.ce). A
 corresponding core rule may or may not exist." and NC "Rule not checked
 by DRC. It should be used as a guideline only."[^pdk-periph]
+
+:::{table} Periphery rules that bear on the second capacitor mask only by analogy or in general, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -302,6 +358,7 @@ by DRC. It should be used as a guideline only."[^pdk-periph]
 | capm.7 | "Only rectangular capacitors are allowed" | N/A |
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* has no row for the second capacitor;
 its "Capacitor MiM" row gives a feature size of 2 (`CAPMCD`) and a space
@@ -318,19 +375,18 @@ width.[^raw-data-testtile-pads]
 * {ref}`CAP2M <step-152>` and {ref}`CAP2ME <step-153>` — the mask step and
   the plate etch; {ref}`CAPILD2 <step-150>` and
   {ref}`CAPTIW2 <step-151>` — the dielectric and plate film.
-* {ref}`mask-capm` — the first capacitor's mask; {ref}`mask-vim3` — the
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
+  and etch categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
+  pattern.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-capm` — the first capacitor's mask; {ref}`mask-vim3` — the
   via mask printed before it; {ref}`mask-vim4` — the via mask whose holes
   land on its plates.
-* {ref}`masks index <masks-index>` — every mask's PDK entry, plates and
+* **Indexes.** {ref}`masks index <masks-index>` — every mask's PDK entry, plates and
   renders, including the masks `masks.csv` does not list.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
-  and etch categories.
 
 ## References
 
@@ -408,12 +464,12 @@ width.[^raw-data-testtile-pads]
 
 * `masks.csv`, the minimum-CD table and the periphery rules have no entry
   or rule set for the second capacitor mask or for `cap2m`, and the
-  published checks name `cap2m` only for module cuts;[^pdk-errors] the geometry on this page
+  published checks name `cap2m` only for module cuts.[^pdk-errors] The geometry on this page
   is borrowed from `capm` on the step page's reading of the "identical"
   construction.[^pdk-05][^pdk-03][^pdk-periph][^pdk-07]
 * The sheet records a `CAP2M` plate on every MPW run, and the README
   lists "Optional MiM capacitors" but also counts MiM capacitors among the
-  "normally optional features" SKY130 includes "as standard"; whether every die or lot uses the
+  "normally optional features" SKY130 includes "as standard".[^steps-sheet][^pdk-10] Whether every die or lot uses the
   second capacitor is not public, and the renders do not say what the
   single `cap2m` shape common to most dies is.[^steps-sheet][^pdk-10][^mask-renders]
 * The *Device Details* table lists the MiM2 top-plate sheet resistance
