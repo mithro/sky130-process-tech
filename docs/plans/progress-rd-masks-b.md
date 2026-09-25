@@ -377,3 +377,42 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   operation together, so it was not split); the quick-facts Polarity cell and the quoted x.9 cell.
   Before → after: paragraphs 12 → 0, items 1 → 0, sentences 24 → 5, cells 2 → 2.
 * **Content problems for the owner:** none found.
+
+### 8. psdm — done
+
+The sibling of nsdm; the same treatment throughout.
+
+* **Rules applied.** R-INTRO (211 → 40 words); R-PARAMS (three columns, eleven parameters: the
+  `NPNWLU` description passes five lines at 400 px with four); R-CAPTION (rule table, parameter
+  table); R-PARA, R-SENTENCE; R-LIST (device-page regions, the three Table C3 definitions, the Table F2b
+  `C` rows, the core checks, the per-die counts); R-RELATED (RTAD, a second relationship in the base's
+  mask bullet, under **Steps.**); R-H3 (Exposure class, Mask errors, Resist and tone, Resist edges,
+  Overlay and alignment, Pattern transfer).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer".
+* **Intro.** As on nsdm: the regions dash list became "On the PSDM page's reading, the regions drawn in
+  `psdm` are …", then "On the PSDM page's reading, the implants PSDI and 2PSDI pass …"; "It is the first
+  of the two …" → "The mask is the first …".
+* **R-PARAMS.** As on nsdm; "matching psd.10b and psd.11" in the two Table 7 Value cells; `JCTD` /
+  `LD` from the page's Pattern transfer; "in its column headed "CD"" and "describe the junction the
+  implant forms" in the sentence after the table.
+* **Declared additions** (`--allow-added markers,numbers,refs,hedges`): markers `mask-renders` ×2
+  (render sentence; the `PSDI` render sentence split at its semicolon), `pdk-03` (resist-thickness
+  sentence split before "argues"), `pdk-errors` ×2 (Error Messages "describes"; the psd.9/licon.9
+  sentence split from the x.9 list), `pdk-summary` (Table F3a split); numbers `2`, `3` ×5, `7` ×2
+  (parameter-table table numbers and the sentence after it); refs `step-081` (hedge repeated; the
+  second refs line is the backtick-pairing artefact); hedge `our reading` (Table F3a).
+* **Marker moves by clause.** The device-pages sentence's `[^pdk-07][^pdk-08]` split as on nsdm; the first
+  Open question's `[^pdk-06][^pdk-03][^mask-renders]` split at its semicolon: `pdk-06` (the `cpsdm`
+  purposes) on the first half, `pdk-03` (Table 7) and `mask-renders` (the note) on the second.
+* **LOST lines that are not losses:** the two `number_order` lines are the parameter table, values in
+  the base order with the base's table numbers.
+* **Marker coverage.** Flags read: all list items or clauses with no marker of their own in the base.
+* **Other edits.** Resist edges: the dash pair "— Hook et al. measured …, Sheu et al. … and Drennan,
+  Kniffin and Locascio …[^drennan-2006] —" became its own sentence in place, order kept; the gapped
+  study list split in two with "treated" restored; Steps section: "The one point that needs stating is
+  PSDI:" split at its colon, and the long sentence split before "the step pages read it as …", the two
+  markers staying with the sheet and render facts they support.
+* **Over the caps after the pass:** "The page lists "PSDMdrop …"" (47, quotations) and the
+  Exposure-class formula sentence (49); the quick-facts Polarity cell. Before → after: paragraphs 12 →
+  0, items 0 → 0, sentences 22 → 2, cells 1 → 1.
+* **Content problems for the owner:** none found.

@@ -2,25 +2,9 @@
 # PSDM — P+ Implant
 
 The P+ implant mask is the {term}`reticle` that decides where SKY130's
-silicon receives the heavy p-type source/drain dose: on the
+silicon receives the heavy p-type source/drain dose. On the
 {ref}`PSDM <step-081>` page's reading, the resist printed through it at
-step 81 is opened over every region drawn in `psdm` — the PMOS sources
-and drains, the p+ taps, the PNP emitters and collectors, the P+
-diffusion resistors, the p-type diodes and the precision-resistor heads —
-the implants {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>` pass
-through the same openings, and the resist is stripped at
-{ref}`PDIS <step-084>`. It is the first of the two source/drain implant
-{term}`block masks <block mask>` and, with {ref}`NSDM <mask-nsdm>`, nearly
-the complement of the other across the active area. Its drawn layer
-also appears in the PDK's definitions of the precision resistor and the
-PNP emitter, and its public record has a quirk: the process-steps sheet
-lists the implant step after it among the mask steps, with the mask's own
-description. This page gathers what public sources say about the mask
-itself — its PDK entry and layers, the plates the process-steps sheet
-records for the MPW runs, what the public renders of those runs show, the
-lithography it needs and the rules that constrain it. How the step is
-performed is on the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+step 81 is opened over every region drawn in `psdm`.
 
 | | PSDM — P+ Implant |
 |---|---|
@@ -37,7 +21,30 @@ performed is on the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 4 steps; see {ref}`Steps that use this mask <mask-psdm-steps>` |
 
+:::{seealso}
+How the step is
+performed is on the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+On the {ref}`PSDM <step-081>` page's reading, the regions drawn in `psdm` are
+the PMOS sources
+and drains, the p+ taps, the PNP emitters and collectors, the P+
+diffusion resistors, the p-type diodes and the precision-resistor heads. On the
+{ref}`PSDM <step-081>` page's reading,
+the implants {ref}`PSDI <step-082>` and {ref}`2PSDI <step-083>` pass
+through the same openings, and the resist is stripped at
+{ref}`PDIS <step-084>`.
+
+The mask is the first of the two source/drain implant
+{term}`block masks <block mask>` and, with {ref}`NSDM <mask-nsdm>`, nearly
+the complement of the other across the active area. Its drawn layer
+also appears in the PDK's definitions of the precision resistor and the
+PNP emitter, and its public record has a quirk: the process-steps sheet
+lists the implant step after it among the mask steps, with the mask's own
+description.
 
 The periphery rules give `nsdm` and `psdm` one rule set, headed "(n/
 psd.-)", whose function is "Defines opening for N+/P+ implants", and the layer table describes `psdm` as "P+ source/drain
@@ -45,22 +52,42 @@ implant".[^pdk-periph][^pdk-06] The rules tie the layer to the active
 pattern: "Diff and tap must be enclosed by their corresponding implant
 layers" (psd.9), by 0.125 µm except at a butting edge (psd.5a, psd.5b),
 and "Nsdm and psdm cannot overlap diff/tap regions of opposite doping"
-(psd.8).[^pdk-periph] The {ref}`PSDM <step-081>` page lists the regions
-inside `psdm` from the PDK's device pages — PMOS source/drains, p+ taps,
-PNP emitters and collectors and NPN bases, the P+ diffusion resistor,
-p-type diodes and the precision poly resistors — and the PDK's
+(psd.8).[^pdk-periph]
+
+The {ref}`PSDM <step-081>` page lists the regions
+inside `psdm` from the PDK's device pages:[^pdk-07]
+
+* PMOS source/drains
+* p+ taps
+* PNP emitters and collectors and NPN bases
+* the P+ diffusion resistor
+* p-type diodes
+* the precision poly resistors
+
+The PDK's
 resistance table gives "P-diffusion" 197000 in a column headed
-"Resistivity (mohms/sq)".[^pdk-07][^pdk-08] Three of the PDK's layout
-definitions use the layer: Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines
-`prec_resistor` as "rpm AND (poly overlapping poly.rs) AND psdm",
-`pnp_emitter` as "diff AND pnp.dg AND psdm", and `psdmHoles` as "Hole(
-psdm )" for the hole-area rule.[^pdk-06]
+"Resistivity (mohms/sq)".[^pdk-08] Three of the PDK's layout
+definitions use the layer. Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines:[^pdk-06]
+
+* `prec_resistor` as "rpm AND (poly overlapping poly.rs) AND psdm"
+* `pnp_emitter` as "diff AND pnp.dg AND psdm"
+* `psdmHoles` as "Hole(
+  psdm )" for the hole-area rule
 
 The PDK's mask generation table, Table F2b, marks the `PSDM` column `C`
-("CREATED") in 24 of its 80 device rows: the four p-diffusion and p+
-poly resistor rows, the seven 1.8 V PMOS rows, the 5/10.5 V, 16 V and
-20 V PMOS, seven p-type diode rows, both parasitic bipolar rows and the
-HV PMOS ESD transistor.[^pdk-06] It marks `-`, "Layer not created for the
+("CREATED") in 24 of its 80 device rows:[^pdk-06]
+
+* the four p-diffusion and p+
+  poly resistor rows
+* the seven 1.8 V PMOS rows
+* the 5/10.5 V, 16 V and
+  20 V PMOS
+* seven p-type diode rows
+* both parasitic bipolar rows
+* the
+  HV PMOS ESD transistor
+
+The table marks `-`, "Layer not created for the
 device", in 35 rows, among them every NMOS, SONOS and varactor row and
 most of the n-type diodes.[^pdk-06] On our reading the created shapes
 follow the
@@ -74,7 +101,7 @@ What the mask does not define is the junction edge next to a gate. On
 the step pages' readings the implants are self-aligned to the spacers
 formed at {ref}`SPE <step-077>`, the gates are capped and receive
 nothing, and the poly heads that the implant reaches are those opened by
-{ref}`mask-npcm`; the shallow p-type extensions of the PMOS are an open
+{ref}`mask-npcm`. The shallow p-type extensions of the PMOS are an open
 question on the tip-mask pages ({ref}`mask-ntm`).
 
 ## Drawn layers and derivation
@@ -87,30 +114,40 @@ different layer number, the three without descriptions; the drawn layer
 is `psdm` at 94:20.[^pdk-06] The {ref}`PSDM <step-081>` page reads the
 add and drop purposes as evidence that the reticle is derived by Boolean
 operations rather than copied from the drawn layer. The PDK publishes no
-such operation. Rule x.9 allows "Shapes on maskAdd or maskDrop layers
+such operation.
+
+Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines "Drawn compatible, mask,
 and waffle-drop layers" to test modules, seal ring and frame, with an
 exception that names only "FOM/P1M/Metal waffle drop" (flag
-P);[^pdk-periph] a design inside the die therefore draws `psdm` (our
+P).[^pdk-periph] A design inside the die therefore draws `psdm` (our
 reading of x.15a). Table 7 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives a
 "pnp_emitter sizing (S8P GSMC flow)" of 0.05 (`PnpEmitterSzGSMC`) and a
 "pnp_emitter sizing (other flows)" of 0.03 (`PnpEmitterSz`), in its
 column headed "space", without saying which layer is sized.[^pdk-03]
 
-The PDK's *Error Messages* page, which describes "many of the automated
+The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data", checks the drawn layer under `psd` names and
+criteria for GDS data".[^pdk-errors] It checks the drawn layer under `psd` names and
 lists core checks the periphery rules do not give, with two values each
-for width and spacing: "0.38 min. width of psdm (opposite parallel)"
-(`psd.c1a`) and "0.29 min. width of psdm in COREID" (`psd.c1b`), "0.38
-min. spacing/notch of "psdm" in core" (`psd.c2a`) and "0.29 min.
-spacing/notch of "psdm" in core" (`psd.c2b`), and "0.12 min. enclosure
-of p+ tap in core by psdm" (`psd.c5b`).[^pdk-errors] It does not say
+for width and spacing:[^pdk-errors]
+
+* "0.38 min. width of psdm (opposite parallel)"
+  (`psd.c1a`) and "0.29 min. width of psdm in COREID" (`psd.c1b`)
+* "0.38
+  min. spacing/notch of "psdm" in core" (`psd.c2a`) and "0.29 min.
+  spacing/notch of "psdm" in core" (`psd.c2b`)
+* "0.12 min. enclosure
+  of p+ tap in core by psdm" (`psd.c5b`)
+
+The page does not say
 which of the two core values applies where, nor what "opposite parallel"
 means. It gives psd.9 as "pdiff/ptap (source of
-extendedDrain fet exempted) must be enclosed by psdmZENERID", checks
+extendedDrain fet exempted) must be enclosed by psdmZENERID" and checks
 licon.9 only against poly contacts outside `rpm` ("0.11 min. spacing of
-polyLicon1OutRpm & psdm"), and lists "PSDMdrop must be enclosed by
+polyLicon1OutRpm & psdm").[^pdk-errors]
+
+The page lists "PSDMdrop must be enclosed by
 COREID" and "PSDMadd must be enclosed by COREID" (x.9), a module-cut
 check at 0.19 (x.12a) and two `cpsdm.nikon` checks, "PSDMmk in the nikon
 cross has the wrong polarity" and "PSDMmk is missing from the nikon cross
@@ -121,9 +158,11 @@ in the layout".[^pdk-errors] It names no created `PSDM` layer.
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `PSDM` the site renders layer 94:20 (`psdm`)
-alone, with no Boolean expression and no fill layer, on all eight runs;
-its mask record gives the mask-level layer 32:0 and the note "PSDM =
-psdm OR grown psdm over pnp emitters".[^mask-renders] The render job has
+alone, with no Boolean expression and no fill layer, on all eight runs.[^mask-renders]
+Its mask record gives the mask-level layer 32:0 and the note "PSDM =
+psdm OR grown psdm over pnp emitters".[^mask-renders]
+
+The render job has
 no sizing step, so, as the {ref}`masks index <masks-renders>` reads the
 site in general, the images are unsized drawn `psdm` and do not include
 the grown shapes the note describes. The note's operation is of the kind
@@ -134,19 +173,28 @@ derivation from the drawn data, not SkyWater's mask-generation recipe.
 
 The site also renders an image it labels `PSDI`, for step 82, from the
 same layer 94:20, with the note "second P+ implant, same drawn layer as
-PSDM" and no mask-level layer; its die-by-die shape counts equal those
+PSDM" and no mask-level layer.[^mask-renders] Its die-by-die shape counts equal those
 of `PSDM` on every run, and the masks index does not count it as
 evidence of a further plate.[^mask-renders]
 
-Every rendered die of every run carries `psdm` shapes — at least 427 885
-on each die; the minimum on each run lies between 427 885 (MPW-5) and
-515 813 (MPW-8); on MPW-1 one die accounts for nearly 99 % of the run's
-shapes; and counts rarely repeat, on at most seven dies of a run and on
-none of MPW-1, MPW-4 or MPW-8.[^mask-renders] The count of 40 dies
+Every rendered die of every run carries `psdm` shapes:[^mask-renders]
+
+* at least 427 885
+  on each die
+* the minimum on each run lies between 427 885 (MPW-5) and
+  515 813 (MPW-8)
+* on MPW-1 one die accounts for nearly 99 % of the run's
+  shapes
+* counts rarely repeat, on at most seven dies of a run and on
+  none of MPW-1, MPW-4 or MPW-8
+
+The count of 40 dies
 therefore says only that every layout has p-type diffusion, as a CMOS
-die must; we read the large minimum as shapes that every die of these
+die must. We read the large minimum as shapes that every die of these
 runs carries rather than as project content (inference; the site does
-not say what they are). The site states the limits of its images:
+not say what they are).
+
+The site states the limits of its images:
 "These are renders of *drawn* data, not photomask artwork: reticle pitch,
 4x reduction, mirroring and the frame features the fab adds are not
 modelled."[^mask-renders] Its metadata carries no plate ID, so a render
@@ -189,76 +237,81 @@ run's columns in the tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`PSDM <step-081>` page puts the 0.380 µm
+### Exposure class
+
+The {ref}`PSDM <step-081>` page puts the 0.380 µm
 width and space at {math}`k_1 = 0.38 \times 0.6 / 0.365 \approx 0.62` on
 an i-line stepper of NA 0.6, quotes ASML's statement that older exposure
 tools "migrate to the lithography of choice for less critical
-layers",[^asml-30] and infers an i-line level; the
+layers",[^asml-30] and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there. At
 the NA 0.48 low end of ASML's PAS 5500/275D[^asml-pas5500-275d] the same
-feature has {math}`k_1 \approx 0.50`. If the Error Messages page's
+feature has {math}`k_1 \approx 0.50`.
+
+If the Error Messages page's
 0.29 core width and spacing apply,[^pdk-errors] those features would be
 at {math}`k_1 \approx 0.48` at NA 0.6 and 0.38 at NA 0.48 (our
-arithmetic and our reading); the step page does not discuss the core
+arithmetic and our reading). The step page does not discuss the core
 values. SkyWater lists "ASML
 I-line stepper" and "ASML I-line scanner" among its tools but assigns no
 layer to them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
-(CD) is less than 0.5 (lambda) /NA for line-space patterns";[^wong-1998]
-at 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
-NA 0.60 (our arithmetic), so the 0.38 µm periphery features lie at or
+(CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
+At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
+NA 0.60 (our arithmetic). So the 0.38 µm periphery features lie at or
 above it and would print a plate CD error at about its own size, while
 0.29 µm core features, if the 0.29 checks apply, would magnify it
 (inference).
 
-**Resist.** Nothing is etched through this resist; it must stop the
+### Resist and tone
+
+Nothing is etched through this resist; it must stop the
 high-dose p-type implants wherever the plate leaves it. The step page
 reads a positive i-line resist of about 1 µm, citing the PDK's generic
-"Photoresist thickness" of 1.14 µm, and argues that the thickness is set
+"Photoresist thickness" of 1.14 µm.[^pdk-03] It argues that the thickness is set
 less by stopping power than by coverage over the capped gates and by
 the resist's endurance under a dose of the order of
 10¹⁵ cm⁻².[^pdk-03] The ion range in resist is what SRIM
-computes.[^ziegler-2010] Smith treated wafer cooling and resist masking
-problems in implantation,[^smith-1983] Romig, Bishop and Rio resist
-burning in a high-current implanter,[^romig-1996] Lee et al., Horsky and
-Carpenter and Fecteau resist outgassing and its cost to
+computes.[^ziegler-2010]
+
+Smith treated wafer cooling and resist masking
+problems in implantation,[^smith-1983] and Romig, Bishop and Rio resist
+burning in a high-current implanter.[^romig-1996] Lee et al., Horsky and
+Carpenter and Fecteau treated resist outgassing and its cost to
 productivity,[^lee-1996][^horsky-1998][^carpenter-2002] and Rubin et al.
 UV photostabilisation of resist before high-dose, high-energy
-implants;[^rubin-2000] Fujimura et al. analysed the carbonised layer that
+implants.[^rubin-2000]
+
+Fujimura et al. analysed the carbonised layer that
 such a dose leaves for {ref}`PDIS <step-084>` to remove.[^fujimura-1989]
-SkyWater's resist, its thickness and any hardening are not public; the
+SkyWater's resist, its thickness and any hardening are not public. The
 consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Resist edges.** Ions scattered out of a resist edge implant the
-silicon near it — Hook et al. measured the lateral straggle and
+### Resist edges
+
+Ions scattered out of a resist edge implant the
+silicon near it. Hook et al. measured the lateral straggle and
 mask-proximity effect,[^hook-2003] Sheu et al. modelled the well-edge
 version[^sheu-2006] and Drennan, Kniffin and Locascio set out its
-meaning for analogue layout[^drennan-2006] — and the step page reads the
+meaning for analogue layout.[^drennan-2006] The step page reads the
 0.125–0.130 µm enclosure and spacing rules as reflecting such effects;
-the PDK does not state their purpose. Table 3f gives "High current"
+the PDK does not state their purpose.
+
+Table 3f gives "High current"
 implants an angle of 0° (`HCIMPA`),[^pdk-03] and Krieger et al. found
 that the LDD oxide sidewall spacer shadows an n+ source/drain implant at
 the commonly used 7° tilt and recommended 0° (our comparison: the PDK's
-0° fits that advice);[^krieger-1989] the step pages leave the angle of
+0° fits that advice).[^krieger-1989] The step pages leave the angle of
 {ref}`2PSDI <step-083>` open.
 
-**Pattern transfer.** On the step pages' readings the pattern is
-transferred into the silicon, and into the poly heads opened by the
-nitride cut, as dopant by {ref}`PSDI <step-082>` on the
-{ref}`high-current implanter <machine-high-current-implanter>` class and
-by {ref}`2PSDI <step-083>` on the high-current or
-{ref}`medium-current <machine-medium-current-implanter>` class, through
-the thin {ref}`SPOX <step-080>` oxide, and the resist is removed at
-{ref}`PDIS <step-084>` on the
-{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
-{ref}`wet bench <machine-wet-bench>` classes. Table 3b gives the result,
-an "N+ or P+ S/D (XJ)" with a vertical feature of 0.1 µm and a vertical
-space of 0.06 µm (`JCTD` / `LD`); the species, energies and doses are not public.[^pdk-03]
+### Overlay and alignment
 
-**Overlay.** The {ref}`PSDM <step-081>` page reads the mask as aligned
+The {ref}`PSDM <step-081>` page reads the mask as aligned
 to the active pattern for the 0.125 µm diffusion enclosure and to poly
 for the resistor and licon.9 rules.[^pdk-periph] Where `psdm` and `nsdm`
 butt at a diffusion/tap edge the enclosure is 0.000 µm (psd.6), so the
@@ -267,6 +320,23 @@ reading). ASML specifies
 "≤ 40 nm" single-machine overlay for the /275D
 stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
 margin is not public).
+
+### Pattern transfer
+
+On the step pages' readings the pattern is
+transferred into the silicon, and into the poly heads opened by the
+nitride cut, as dopant by {ref}`PSDI <step-082>` on the
+{ref}`high-current implanter <machine-high-current-implanter>` class and
+by {ref}`2PSDI <step-083>` on the high-current or
+{ref}`medium-current <machine-medium-current-implanter>` class, through
+the thin {ref}`SPOX <step-080>` oxide. On the step pages' readings the resist is removed at
+{ref}`PDIS <step-084>` on the
+{ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
+{ref}`wet bench <machine-wet-bench>` classes.
+
+Table 3b gives the result,
+an "N+ or P+ S/D (XJ)" with a vertical feature of 0.1 µm and a vertical
+space of 0.06 µm (`JCTD` / `LD`); the species, energies and doses are not public.[^pdk-03]
 
 (mask-psdm-steps)=
 ## Steps that use this mask
@@ -291,13 +361,15 @@ Steps:
 
 The next step, {ref}`NSDM <step-085>`, is itself the next mask step: on
 its step page's reading it coats the N+ resist on the surface cleaned at
-`PDIS`. No step between `PDIS` and it uses the `PSDM` resist. The one
-point that needs stating is {ref}`PSDI <step-082>`: the sheet's "Masks"
+`PDIS`. No step between `PDIS` and it uses the `PSDM` resist.
+
+The one
+point that needs stating is {ref}`PSDI <step-082>`. The sheet's "Masks"
 tab lists step 82 among the mask steps with the same description as step
 81, "P+ source drain implant mask", and the renders site renders a `PSDI`
-image from `psdm`, but the tab "Run Mask IDs" has no plate row for it and
-the step pages read it as the implant through the `PSDM`
-resist,[^steps-sheet][^mask-renders] so the rule needs no exception for
+image from `psdm`, but the tab "Run Mask IDs" has no plate row for
+it.[^steps-sheet][^mask-renders] The step pages read it as the implant through the `PSDM`
+resist, so the rule needs no exception for
 this mask.
 
 ## Design rules and critical dimensions
@@ -309,6 +381,8 @@ applies to periphery only (outside areaid.ce). A corresponding core rule
 may or may not exist.", DE "Rule not checked for source of Drain Extended
 device" and NC "Rule not checked by DRC. It should be used as a guideline
 only."[^pdk-periph]
+
+:::{table} The `nsdm`/`psdm` rules, given for `psdm`, with the contact, precision-resistor, drain-extended PMOS and mask-data rules that place the layer, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -329,52 +403,62 @@ only."[^pdk-periph]
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.9 | "Shapes on maskAdd or maskDrop layers ("serifs") are allowed in core only. Exempted are: […]" | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 The periphery rules name the shared rules "(n/ psd.1)" to "(n/
 psd.11)"; the `psd` prefix above is that of the Error Messages page,
-which has no message for rules 3 and 6.[^pdk-periph][^pdk-errors] Table 2 of *Criteria & Assumptions*
-repeats the width and space as `PSDMCD` 0.38 and `PSDMCDSP` 0.38, Table 7
-gives "Min Psdm area" as 0.255 (`MinPsdmArea`) and "Min N/Psdm hole area"
-as 0.265 (`MinNPsdmHole`) in its column headed "CD", matching psd.10b and
-psd.11, and Table 3b's "N+ or P+ S/D (XJ)" (0.1 / 0.06), "Max (N+ or P+
-S/D outdiff.) next to isol. edge" (0.007, `LDST`) and the same for "6 V
-reg. devices" (0.05, `LDST5`) describe the junction the implant
-forms.[^pdk-03] Table 3d gives punch-through spacings "n+ - n+ or p+-p+"
-of 0.23 (`DPTS`) and "p+ in nwell to pwell" of 0.05 (`PPTS`), and Table
-3e a "Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23
-(`NPNWLU`; the row the published table shows as its heading) and a
-"Max. overlap of n-well by p+ tap" of 0.06
-(`XNWPTS`).[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
+which has no message for rules 3 and 6.[^pdk-periph][^pdk-errors] *Criteria & Assumptions*
+gives the following:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the mask
+| Parameter (table) | Published description | Value |
+|---|---|---|
+| `PSDMCD` (Table 2) | width | 0.38 |
+| `PSDMCDSP` (Table 2) | space | 0.38 |
+| `MinPsdmArea` (Table 7) | "Min Psdm area" | 0.255, matching psd.10b |
+| `MinNPsdmHole` (Table 7) | "Min N/Psdm hole area" | 0.265, matching psd.11 |
+| `JCTD` / `LD` (Table 3b) | "N+ or P+ S/D (XJ)" | 0.1 / 0.06 |
+| `LDST` (Table 3b) | "Max (N+ or P+ S/D outdiff.) next to isol. edge" | 0.007 |
+| `LDST5` (Table 3b) | the same for "6 V reg. devices" | 0.05 |
+| `DPTS` (Table 3d) | punch-through spacing "n+ - n+ or p+-p+" | 0.23 |
+| `PPTS` (Table 3d) | punch-through spacing "p+ in nwell to pwell" | 0.05 |
+| `NPNWLU` (Table 3e) | "Minimum n+ or p+ - nwell spacing to prevent latch-up" (the row the published table shows as its heading) | 0.23 |
+| `XNWPTS` (Table 3e) | "Max. overlap of n-well by p+ tap" | 0.06 |
+:::
+
+Table 7 gives its two areas in its column headed "CD", and the Table 3b rows
+describe the junction the implant
+forms.[^pdk-03] Table F3a of the *Summary of Key Periphery Rules*
 gives `n/psdm` a width of 0.380, a spacing of 0.380 and "Yes" in the
-"Manual" (merge) column, and, in its diff and tap columns, spacings of 0.130 and
+"Manual" (merge) column (our reading of the columns).[^pdk-summary] In its diff and tap columns it gives spacings of 0.130 and
 enclosures of 0.130, against the 0.125 µm of psd.5a and psd.5b (our
 reading of the columns; the PDK does not reconcile
-them).[^pdk-summary][^pdk-periph] For the plate, psd.1 and psd.2 set the
+them).[^pdk-summary][^pdk-periph]
+
+For the plate, psd.1 and psd.2 set the
 smallest periphery features, 0.380 µm lines and spaces with islands of
-0.255 µm², and the Error Messages page lists both 0.38 and 0.29 core
+0.255 µm². The Error Messages page lists both 0.38 and 0.29 core
 width and spacing checks without saying which applies where (0.38
 "(opposite parallel)" and "in core", 0.29 "in COREID" and "in core").
 
 ## Related pages
 
-* {ref}`PSDM <step-081>`, {ref}`PSDI <step-082>`,
+* **Steps.** {ref}`PSDM <step-081>`, {ref}`PSDI <step-082>`,
   {ref}`2PSDI <step-083>` and {ref}`PDIS <step-084>` — the mask step, the
-  two implants and the strip.
-* {ref}`mask-nsdm` — the complementary N+ mask;
-  {ref}`RTAD <step-088>` — the source/drain anneal.
-* {ref}`mask-npcm` — the nitride cut through which the implant reaches the
-  poly heads; {ref}`mask-ntm` — the tip mask of the same module.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the `PSDI` render and the "Masks" tab.
-* {ref}`machine-i-line-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-high-current-implanter` and
+  two implants and the strip; {ref}`RTAD <step-088>` — the source/drain anneal.
+* **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
+  step and implant categories.
+* **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
+  assigns. {ref}`machine-high-current-implanter` and
   {ref}`machine-medium-current-implanter` — the implant classes that use
   the pattern.
-* {ref}`material-lithography-materials` — resists, developer and
+* **Materials.** {ref}`material-lithography-materials` — resists, developer and
   reticles.
-* {ref}`category-lithography` and {ref}`category-implant` — the mask
-  step and implant categories.
+* **Masks.** {ref}`mask-nsdm` — the complementary N+ mask;
+  {ref}`mask-npcm` — the nitride cut through which the implant reaches the
+  poly heads; {ref}`mask-ntm` — the tip mask of the same module.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the `PSDI` render and the "Masks" tab.
 
 ## References
 
@@ -461,10 +545,10 @@ width and spacing checks without saying which applies where (0.38
 ## Open questions
 
 * The operation that makes the `cpsdm` plate data from `psdm` and its
-  drawing, add and drop purposes is not published; Table 7's
+  drawing, add and drop purposes is not published.[^pdk-06] Table 7's
   `pnp_emitter` sizing rows do not name the layer they size, and the
   renders' note about "grown psdm over pnp emitters" names no
-  source.[^pdk-06][^pdk-03][^mask-renders]
+  source.[^pdk-03][^mask-renders]
 * What `2PSDI` implants through this resist is not public.
 * Table F3a's 0.130 enclosures of diffusion and tap and the periphery
   rules' 0.125 µm are not reconciled, and the Error Messages page's core
