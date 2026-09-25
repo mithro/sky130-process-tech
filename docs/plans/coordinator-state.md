@@ -43,7 +43,6 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s10` | W1c series S10 MiM (135–140, 150–153): written; Opus review running | Opus | in review |
 | `topic/rd-masks-b` | W3 batch 6: mask pages 19–36 — Opus writer | Opus | writing |
 
 Next after these: S10 MiM figures (must precede S9b, because metal 3 is patterned inside the MiM steps),
