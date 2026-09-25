@@ -610,5 +610,45 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
 * **Over the caps after the pass:** the CD-specification sub-bullet (46; one field with its numbers);
   the Hochmuth et al. sentence (46, two quotations); the flag-legend sentence (73 by the script, eight
   quotations); the quick-facts Exposure class cell (36) and two quoted rule cells (33, 27). Before →
-  after: paragraphs 10 → 0, items 2 → 0, sentences 19 → 3, cells 3 → 3.
+  after: paragraphs 11 → 0, items 2 → 0, sentences 15 → 3, cells 3 → 3.
+* **Content problems for the owner:** none found.
+
+### 15. mm3 — done
+
+* **Rules applied.** R-INTRO (178 → 59 words; first sentence split at its colon; "It is the first of the
+  thick upper metals …" and "Like `VIM2` …" moved to the top of `## What the mask defines`, "It" → "The
+  mask"); R-CAPTION; R-PARA, R-SENTENCE; R-LIST (what the mask carries; the five metal-3 thicknesses of
+  Table 4, under the base's own "metal-3 thicknesses "for antenna ratio calculation"" lead-in); R-RELATED;
+  R-H3 (Exposure class, Mask errors, Thick metal, capacitors and the resist, Fill and the polish above,
+  Overlay and alignment ← "Overlay", Pattern transfer). The `**Variants.**` run-in stays bold (it sits
+  under `## What the mask defines`, where the checker allows no H3).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **R-PARAMS as a list.** The Table 4 sentence nests its values inside two named blocks ("in its
+  "Material Thicknesses" block", "its "Waffling / Pattern Density" block has criteria not tied to one
+  level, among them …") and gives one description ("for antenna ratio calculation") for five variables.
+  A four-column table would repeat that quotation five times and lose the block structure, so the five
+  thicknesses became a list under the base's lead-in, and the block and Table 7 clauses sentences.
+* **Hedges repeated on splits:** "(our comparison)" on the capacitor-numbering sentence of "Plate
+  number" (split at its colon, as on cap2m); "On the step pages' readings" on the passivation / strip /
+  clean clause of Pattern transfer.
+* **Markers moved to their own clause:** Table C3 / capm.3 sentence (`pdk-06` to C3, `pdk-periph` to
+  capm.3); x.11 / Table C3 / fuse note sentence (`pdk-periph`, `pdk-06`, `pdk-periph`).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,identifiers`): markers `pdk-summary` ×2 (Table F4
+  sentence; Table F3c / F3d sentence), `pdk-periph` ×3 (list lead-in; the fuse-note clause; rule m3.pd.1
+  split from the fill check), `pdk-06` ×2 (`gds_layers.csv` sentence; Table F2b `+` sentence),
+  `pdk-errors` (*Error Messages* description), `mask-renders` (render sentence), `pdk-03` ×3 ("It gives
+  0.3 and 0.3 for a "Metal 3-Cu" row"; the thickness-list lead-in; the `MMPDrange` sentence); numbers
+  `3` ×2 and identifiers `m3`, `via-3` (rule caption).
+* **Marker coverage.** Flags read: the lists (lead-in markers); clauses that had no marker of their own in
+  the base (the capacitor reading, "The F3c values equal …", "It does not say what the "nikon cross" is
+  …", "Whether the `MM3` plate is dry-etched …", and similar).
+* **Over the caps after the pass:** "The rule set's first entry …" (48); the Exposure-class sentence with
+  two formulas (62 by the script); "That threshold is about 0.18 µm …, so plate CD errors …" (52: a split
+  would need "therefore" for "so"); "On the step pages' readings the resist is coated over the 0.845 µm
+  metal-3 stack, which carries …" (57: the hedge covers the whole, and a split would need it repeated
+  mid-argument); the Pattern transfer sentence (47); the flag legend (73, quotations); two quick-facts
+  cells (37, 29; not in the body) and four quoted rule cells. Before → after: paragraphs 16 → 0, items
+  1 → 0, sentences 23 → 6, cells 6 → 6.
 * **Content problems for the owner:** none found.

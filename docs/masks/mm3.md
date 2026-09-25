@@ -3,20 +3,10 @@
 
 The metal-3 mask is the {term}`reticle` that draws SKY130's third
 aluminium wiring level and, in the same pattern, the bottom plates of
-the first {term}`MiM capacitor`: on the {ref}`MM3 <step-139>` page's
+the first {term}`MiM capacitor`. On the {ref}`MM3 <step-139>` page's
 reading, the resist printed through it at step 139 stays wherever `met3`
 is drawn, and the {ref}`MM3E <step-140>` etch removes the capacitor
-dielectric and the metal stack everywhere else. It is the first of the
-thick upper metals, with 0.3 µm lines, and the step pages leave open
-whether it is printed on an i-line or a KrF tool. Like `VIM2`, it has
-three `masks.csv` variants of which only one is marked as used in
-SKY130, and the process-steps sheet records plates only for that one.
-This page gathers what public sources say about the mask itself — its
-PDK entry and layers, the plates the process-steps sheet records for the
-MPW runs, what the public renders of those runs show, the lithography it
-needs and the rules that constrain it. How the step is performed is on
-the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+dielectric and the metal stack everywhere else.
 
 | | MM3 — Metal 3-PLM |
 |---|---|
@@ -33,18 +23,37 @@ the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-mm3-steps>` |
 
+:::{seealso}
+How the step is performed is on
+the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is the first of the
+thick upper metals, with 0.3 µm lines, and the step pages leave open
+whether it is printed on an i-line or a KrF tool. Like `VIM2`, it has
+three `masks.csv` variants of which only one is marked as used in
+SKY130, and the process-steps sheet records plates only for that one.
 
 The periphery rules give the function of the `m3` rule set as "Defines
 third level of metal interconnects, buses etc", and the PDK's Table F4
-shows metal 3 joined to metal 2 by "Via2" and to metal 4 by "Via3"; its
+shows metal 3 joined to metal 2 by "Via2" and to metal 4 by "Via3".[^pdk-periph][^pdk-summary] Its
 entry joining `capm` to metal 3 by "Via2" is part of the metal-2/via-2
-wording discussed below.[^pdk-periph][^pdk-summary] The mask carries lines at the
-0.300 µm minimum width and space (m3.1, m3.2), pads that enclose the
-via-2 plugs below by 0.065 µm (m3.4) and the via-3 plugs above by
-0.060 µm (via3.4), wide "huge_met3" features that need 0.400 µm of space
-(m3.3c, m3.3d), and, on our reading of the waffle-drop rules below,
-dummy fill; its smallest island is 0.240 µm² (m3.6).[^pdk-periph] The
+wording discussed below.[^pdk-summary] The mask carries:[^pdk-periph]
+
+* lines at the
+  0.300 µm minimum width and space (m3.1, m3.2)
+* pads that enclose the
+  via-2 plugs below by 0.065 µm (m3.4) and the via-3 plugs above by
+  0.060 µm (via3.4)
+* wide "huge_met3" features that need 0.400 µm of space
+  (m3.3c, m3.3d)
+* on our reading of the waffle-drop rules below,
+  dummy fill
+
+The mask's smallest island is 0.240 µm² (m3.6).[^pdk-periph] The
 PDK's extraction table gives metal 3 a sheet resistance of 47 in a
 column headed "Resistivity (mohms/sq)", against 125 for metals 1 and
 2,[^pdk-08] and the stack diagram draws `met3` 0.845 µm thick against
@@ -52,25 +61,31 @@ column headed "Resistivity (mohms/sq)", against 125 for metals 1 and
 
 The same pattern makes the capacitors' bottom plates. On the step pages'
 readings the metal-3 stack stays blanket through the capacitor module
-and every `capm` plate must end up inside a metal-3 shape; the PDK's
+and every `capm` plate must end up inside a metal-3 shape. The PDK's
 cross-section of the stacked capacitor labels the metal under "CAPM" "M3
-(plate 1)".[^pdk-07] Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines
+(plate 1)".[^pdk-07]
+
+Table C3 of the [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines
 "bottom_plate" as "(capm:dg AND met2:dg) sized by capm.3; Exclude all
-capm sharing same metal2 plate", and rule capm.3 is a "Minimum enclosure
-of capm (top_plate) by met2" with the value "N/A";[^pdk-06][^pdk-periph]
-the {ref}`MM3 <step-139>` page reads that enclosure for metal 3 (rule
+capm sharing same metal2 plate".[^pdk-06] Rule capm.3 is a "Minimum enclosure
+of capm (top_plate) by met2" with the value "N/A".[^pdk-periph]
+The {ref}`MM3 <step-139>` page reads that enclosure for metal 3 (rule
 text: met2) in the flow described here.
 
 Table F2b, the mask generation table, marks the `MM3` column `C`
-("CREATED") in two of its 80 device rows — "metal fuse_D" and "VPP (with
-met3 shield)" — and `+`, "Layer allowed to overlap", in the other
+("CREATED") in two of its 80 device rows: "metal fuse_D" and "VPP (with
+met3 shield)".[^pdk-06] It marks `+`, "Layer allowed to overlap", in the other
 78, including the "MiM" row, whose `C` marks are in the `CAPM` and `MM2`
-columns ({ref}`mask-mm2`).[^pdk-06] One row of rule x.11 reads "Metal fuses are drawn in met3",
-with values "N/A", beside rows naming met2 and met4; Table C3 gives the
+columns ({ref}`mask-mm2`).[^pdk-06]
+
+One row of rule x.11 reads "Metal fuses are drawn in met3",
+with values "N/A", beside rows naming met2 and met4.[^pdk-periph] Table C3 gives the
 "fuse_metal" as "met3 for S8TEE\*/S8TNV/S8Q\*/SP8TEE-5R/SP8Q\*; met2 for
-S8D\*/S8TM\*, met4 for S8P\*/SP8P\*"; and the note above the fuse rules
+S8D\*/S8TM\*, met4 for S8P\*/SP8P\*".[^pdk-06] The note above the fuse rules
 reads "For SP8P\*/SKY130P\* (PLM) CADflow use MM4 for Metal
-Fuse".[^pdk-periph][^pdk-06] We read the metal-3 fuse as belonging to
+Fuse".[^pdk-periph]
+
+We read the metal-3 fuse as belonging to
 flows other than the one this reference follows, whose fuse level the
 note puts on `MM4` (inference from the note and Table C3, with PLM read
 as that flow's label as on the step page).
@@ -82,11 +97,13 @@ same variable names.[^pdk-05][^pdk-03] The {ref}`MM3 <step-139>` page
 reads "S8TM" as a 2 µm thick-metal-3 option (inference from the
 assumptions table's 2 µm "S8TM\* flow" thickness and the 0.8 µm
 `MM3CD`) and PLM as the label of the five-metal P flow (inference), and
-gives no reading of "TLM". Table F3c of the [*Summary of Key Periphery
+gives no reading of "TLM".
+
+Table F3c of the [*Summary of Key Periphery
 Rules*](<https://skywater-pdk.readthedocs.io/en/main/rules/summary.html>), "Back end layers for S8D\* flow", gives metal 3 a width and
-spacing of 0.360 and a via-2 enclosure of "0.045 / 0.07", and Table F3d,
-"Back end layers for S8T\* flow", a width and spacing of 2.500 and a via-2
-enclosure of 0.310;[^pdk-summary] the F3c values equal the "Metal 3-TLM"
+spacing of 0.360 and a via-2 enclosure of "0.045 / 0.07".[^pdk-summary] Table F3d,
+"Back end layers for S8T\* flow", gives a width and spacing of 2.500 and a via-2
+enclosure of 0.310.[^pdk-summary] The F3c values equal the "Metal 3-TLM"
 row of Table 2 (our comparison), and neither summary table has a row for
 the 0.3 µm metal. The process-steps sheet lists all three variants and
 records plates only for "Metal 3-PLM" ({ref}`masks-mpw-runs`).[^steps-sheet]
@@ -95,7 +112,7 @@ The mask does not define the metal stack it patterns, which
 {ref}`WTIAL3 <step-134>` deposits, the capacitor films on it
 ({ref}`CAPILD <step-135>`, {ref}`CAPTIW1 <step-136>`,
 {ref}`mask-capm`), the via-2 plugs beneath ({ref}`mask-vim2`) or the
-via-3 plugs above (`VIM3`), and on the step pages' readings the
+via-3 plugs above (`VIM3`). On the step pages' readings the
 dielectric that fills its spaces is deposited afterwards by
 {ref}`NILD5 <step-141>` and polished by {ref}`CMPM3 <step-142>`.
 
@@ -105,20 +122,25 @@ dielectric that fills its spaces is deposited afterwards by
 
 `gds_layers.csv` gives the mask-level layer `cmm3` two purposes: `mask`
 at 34:0 ("Metal 3 mask") and `waffle drop` at 107:24, on a different
-layer number and without a description; the drawn layer is `met3` at
+layer number and without a description.[^pdk-06] The drawn layer is `met3` at
 70:20.[^pdk-06] The pairing rests on those names and descriptions, as on
 the {ref}`masks index <masks-index>`, and the PDK publishes no operation
-from `met3` to the plate. Rule x.15a confines "Drawn compatible, mask,
+from `met3` to the plate.
+
+Rule x.15a confines "Drawn compatible, mask,
 and waffle-drop layers" to test modules, seal ring and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P, periphery
 only),[^pdk-periph] so a die may carry `cmm3` waffle-drop shapes as well
-as `met3` (our reading); with no add or drop purpose, rule x.9's "serifs"
-have no `cmm3` layer to sit on. The rule set's first entry, flagged RC,
+as `met3` (our reading). With no add or drop purpose, rule x.9's "serifs"
+have no `cmm3` layer to sit on.
+
+The rule set's first entry, flagged RC,
 flags a 700 × 700 window "covered by cmm3 waffleDrop" when the metal
 pattern density of the same window is below a limit that falls from 70 %
-for a fully covered window to 30 % for one 30–40 % covered, and rule
+for a fully covered window to 30 % for one 30–40 % covered.[^pdk-periph] Rule
 m3.pd.1 sets a minimum "MM3_oxide_Pattern_density" of 0.7, checked in
 700 µm regions stepped by 70 (m3.pd.2a, m3.pd.2b, flag A).[^pdk-periph]
+
 The PDK does not say whether a waffle-drop shape places fill or keeps it
 out; the {ref}`MM3 <step-139>` page reads the `cmm3` fill and the 0.7
 density rule as existing for the {ref}`CMPM3 <step-142>` polish.
@@ -131,11 +153,13 @@ met4.dg OR mm4.mk (for SP8Q/S8Q\*); met5.dg OR mm5.mk (for SP8P\*/S8P\*)",
 a notation (`mm3.mk`) that `gds_layers.csv` does not use for the
 mask.[^pdk-06] Rule nsm.3 lists "metX.dg (X=1 to 5) and cmmX.mk (X=1 to
 5)" among the layers kept 1.000 µm from the nitride-seal keep-out (flag
-AL).[^pdk-periph] The PDK's [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page, which describes "many
+AL).[^pdk-periph]
+
+The PDK's [*Error Messages*](<https://skywater-pdk.readthedocs.io/en/main/rules/errors.html>) page describes "many
 of the automated DRC rules that are checked by SkyWater as part of the
-acceptance criteria for GDS data", lists two checks named `cmm3.nikon`,
+acceptance criteria for GDS data".[^pdk-errors] It lists two checks named `cmm3.nikon`,
 "MM3mk in the nikon cross has the wrong polarity" and "MM3mk is missing
-from the nikon cross in the layout";[^pdk-errors] it does not say what
+from the nikon cross in the layout".[^pdk-errors] It does not say what
 the "nikon cross" is, and we read the checks as concerning a structure on
 the mask layer whose data must have the right polarity (inference from
 the message wording), not as stating the plate's tone.
@@ -146,24 +170,32 @@ The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `MM3` the site renders layer 70:20 (`met3`)
 together with 34:28, which it lists as a fill layer, with no Boolean
-expression and no note, on all eight runs; its mask record gives the
+expression and no note, on all eight runs.[^mask-renders] Its mask record gives the
 mask-level layer 34:0, the description "Metal 3-PLM" with the three
-variant names, and the info text "Metal 3".[^mask-renders] Layer 34:28 is
+variant names, and the info text "Metal 3".[^mask-renders]
+
+Layer 34:28 is
 not in `gds_layers.csv`, whose `cmm3` waffle-drop purpose is
 107:24,[^pdk-06] so the site's choice of it is one public reading of the
-tape-out files, not a PDK definition, and like the site's other layer
-choices it is not SkyWater's mask-generation recipe
-({ref}`masks-derivations`). The info text is identical to the "Info" note
+tape-out files, not a PDK definition. Like the site's other layer
+choices, it is not SkyWater's mask-generation recipe
+({ref}`masks-derivations`).
+
+The info text is identical to the "Info" note
 of the "Metal 3-PLM" row in the process-steps sheet, so neither is cited
 as corroborating the other
-({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders] The site
+({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders]
+
+The site
 also renders its `INDM` entry, "Inductor-TLM" in `masks.csv`, from the
 same `met3` layer, with the note "INDM = met3 (thick-last-metal flow, not
 SKY130)"; no plate is recorded for it ({ref}`masks-renders`).[^mask-renders][^pdk-05]
 
 Every rendered die of every run carries shapes on these layers — at
 least 3 877 082 on each die, fill included[^mask-renders] — so the count
-of 40 dies says only that every layout has metal 3. The site states the
+of 40 dies says only that every layout has metal 3.
+
+The site states the
 limits of its images: "These are renders of *drawn* data, not photomask
 artwork: reticle pitch, 4x reduction, mirroring and the frame features
 the fab adds are not modelled."[^mask-renders] Its metadata carries no
@@ -194,9 +226,11 @@ rows.[^steps-sheet]
 | MPW-8 | `5CS8017AC` | `S8017AA570A` |
 
 * **Plate number.** The sheet does not say what `570` encodes. It falls
-  between `560` for `VIM2` and `572` for `CAPM`. From `500` to `590` the
+  between `560` for `VIM2` and `572` for `CAPM`.
+
+  From `500` to `590` the
   via and metal numbers rise in step order, but each capacitor mask is
-  numbered 2 above the metal mask that follows it: `MM3` (step 139) is
+  numbered 2 above the metal mask that follows it (our comparison). `MM3` (step 139) is
   `570` against `CAPM` (step 137) `572`, as `MM4` (step 154) is `580`
   against `CAP2M` (step 152) `582` (our comparison). Elsewhere the numbers
   do not follow process order, and no process position is read from
@@ -210,84 +244,107 @@ rows.[^steps-sheet]
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`MM3 <step-139>` page gives
+### Exposure class
+
+The {ref}`MM3 <step-139>` page gives
 {math}`k_1 = 0.30 \times 0.70 / 0.248 \approx 0.85` on a KrF lens of NA
 0.70 and {math}`k_1 = 0.30 \times 0.60 / 0.365 \approx 0.49` on an i-line
 lens of NA 0.6, finds either class plausible and leaves the choice open,
 quoting ASML's statement that older systems "migrate to the lithography
-of choice for less critical layers";[^asml-30] the
+of choice for less critical layers".[^asml-30] The
 {ref}`i-line stepper <machine-i-line-stepper>` and
 {ref}`KrF stepper <machine-duv-krf-stepper>` pages both list it as "not
-public which class (i-line or DUV)". SkyWater lists "ASML I-line stepper", "ASML I-line
+public which class (i-line or DUV)".
+
+SkyWater lists "ASML I-line stepper", "ASML I-line
 scanner", "ASML DUV stepper" and "ASML DUV scanner" but assigns no layer
 to any of them.[^skw-01]
 
-**Mask errors.** Wong et al. found that the mask error factor "is unity
+### Mask errors
+
+Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
-patterns";[^wong-1998] that threshold is about 0.18 µm at 248 nm and NA
+patterns".[^wong-1998] That threshold is about 0.18 µm at 248 nm and NA
 0.7 but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic), so plate CD
 errors on dense metal-3 lines would print at their own size on a KrF tool
-and begin to be magnified on an i-line tool (inference). Hochmuth, Ruhl
+and begin to be magnified on an i-line tool (inference).
+
+Hochmuth, Ruhl
 and Coleman found that with chrome dry etch "the deviation of the CD from
 the target value is a function of the chrome loading on the
-plate";[^hochmuth-1999] whether the `MM3` plate is dry-etched, and how
+plate".[^hochmuth-1999] Whether the `MM3` plate is dry-etched, and how
 its loading is handled, is not public. How tightly SkyWater specifies the `MM3` plate is not
 public.
 
-**Thick metal, capacitors and the resist.** On the step pages' readings
+### Thick metal, capacitors and the resist
+
+On the step pages' readings
 the resist is coated over the 0.845 µm metal-3 stack,[^pdk-04] which
 carries the thin capacitor dielectric and, over each capacitor, a plate
 island of the order of 0.1 µm high (the {ref}`MM3 <step-139>` page's
 reading of {ref}`CAPTIW1 <step-136>`), so it sees two thin-film stacks of
-different reflectivity and a step at every plate edge. Brunner showed
+different reflectivity and a step at every plate edge.
+
+Brunner showed
 that the swing ratio scales with the square root of the substrate
-reflectivity, which an anti-reflective coating reduces,[^brunner-1991]
-and Rocke and Schneegans used titanium nitride on aluminium as an
-anti-reflection layer.[^rocke-1988] The step page reads an organic
+reflectivity, which an anti-reflective coating reduces.[^brunner-1991]
+Rocke and Schneegans used titanium nitride on aluminium as an
+anti-reflection layer.[^rocke-1988]
+
+The step page reads an organic
 {term}`BARC` that also part-planarises the plate edges and a resist
 thicker than at metals 1 and 2, because the thick stack must be etched
-before the resist is consumed; with the resist left where `met3` is
+before the resist is consumed. With the resist left where `met3` is
 drawn, the plate would be clear-field (inference). None of this is
 published; the {ref}`MM3E <step-140>` page sets out why the metal
 thickness itself is not settled. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
-**Fill and the polish above.** Kahng et al. formulate fill as adding
+### Fill and the polish above
+
+Kahng et al. formulate fill as adding
 features so that "feature area densities satisfy prescribed upper and
 lower bounds in all windows of given size", including a "fixed-dissection
 regime" of predetermined windows,[^kahng-1999] the form of the m3.pd
-rules' 700 µm regions stepped by 70;[^pdk-periph] Kahng and Samadi note
+rules' 700 µm regions stepped by 70.[^pdk-periph] Kahng and Samadi note
 that "Post-CMP wafer topography varies according to pattern
 density",[^kahng-2008] and Stine et al. found pattern density "a strongly
-dominant factor" in interlevel-dielectric polishing.[^stine-1998] The
+dominant factor" in interlevel-dielectric polishing.[^stine-1998]
+
+The
 PDK's "Oxide Bias for MM3" of 1.15 (`BiasMM3`), against 0.6 for `MM1`
 and `MM2`, sits in Table 4's first block, headed "Material Thicknesses"
 with a column headed "Value (um)", not with its "Waffling / Pattern
-Density" criteria;[^pdk-03] the {term}`oxide bias` glossary entry records
+Density" criteria.[^pdk-03] The {term}`oxide bias` glossary entry records
 the step pages' reading of it.
 
-**Pattern transfer.** On the step pages' readings the resist pattern is
-transferred by {ref}`MM3E <step-140>`, which first breaks through the
-capacitor dielectric outside the plates and then etches the metal stack
-in a chlorine chemistry, stopping on the via-2 cap oxide and plug tops,
-on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class,
-with passivation, resist strip and clean treated as part of that step.
-The Newport Fab patent likewise patterns its bottom-plate metal after the
-top plate is defined,[^pat-mim-newportfab] and Ng et al. review MiM
-integration in Al–Cu and copper back ends.[^ng-2005] Bohr argued that
-interconnect, not the transistor, limits performance,[^bohr-1995] and
-Stamper, Fuselier and Tian treated the RC delay of aluminium wiring at
-the sub-0.25 µm generation;[^stamper-1998] the step page cites both for
-why the upper levels are thick and wide.
+### Overlay and alignment
 
-**Overlay.** Metal 3 must enclose each via 2 below by 0.065 µm (m3.4)
+Metal 3 must enclose each via 2 below by 0.065 µm (m3.4)
 and each via 3 above by 0.060 µm (via3.4), and by 0.090 µm on one of two
 adjacent sides (via3.5); the enclosure of the capacitor plates (capm.3)
 has no published value.[^pdk-periph] The {ref}`MM3 <step-139>` page reads
 the alignment tree — to via-2 targets under the metal, to the `capm`
 pattern, or both — as deciding which enclosure carries the larger error,
 and leaves it open.
+
+### Pattern transfer
+
+On the step pages' readings the resist pattern is
+transferred by {ref}`MM3E <step-140>`, which first breaks through the
+capacitor dielectric outside the plates and then etches the metal stack
+in a chlorine chemistry, stopping on the via-2 cap oxide and plug tops,
+on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings
+passivation, resist strip and clean are treated as part of that step.
+
+The Newport Fab patent likewise patterns its bottom-plate metal after the
+top plate is defined,[^pat-mim-newportfab] and Ng et al. review MiM
+integration in Al–Cu and copper back ends.[^ng-2005] Bohr argued that
+interconnect, not the transistor, limits performance,[^bohr-1995] and
+Stamper, Fuselier and Tian treated the RC delay of aluminium wiring at
+the sub-0.25 µm generation.[^stamper-1998] The step page cites both for
+why the upper levels are thick and wide.
 
 (mask-mm3-steps)=
 ## Steps that use this mask
@@ -317,7 +374,9 @@ mask.
 
 The `m3` rules of the periphery rules, with the via-3 enclosures by metal
 3, the capacitor and fuse rules that name metal 3 or its role, and the
-mask-data rules x.1b, x.7, x.11 and x.15a. Flag P means "Rule applies to
+mask-data rules x.1b, x.7, x.11 and x.15a.
+
+Flag P means "Rule applies to
 periphery only (outside areaid.ce). A corresponding core rule may or may
 not exist.", AL "Rules applicable only to Al BE flows", CU "Rules
 applicable only to Cu BE flows", A "Rule documents a functionality
@@ -326,6 +385,8 @@ implemented in CL algorithms and may not be checked by DRC.", RR
 level, required rule at the IP level.", LVS "Rule handled by LVS" and NC
 "Rule not checked by DRC. It should be used as a guideline
 only."[^pdk-periph]
+
+:::{table} The `m3` rules, the via-3 enclosures by metal 3, the capacitor and fuse rules that name metal 3 or its role, and the mask-data rules, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -355,42 +416,52 @@ only."[^pdk-periph]
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.11 | "Metal fuses are drawn in met3" (LVS) | N/A |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
+:::
 
 Table 2 of *Criteria & Assumptions* gives `MM3CD` and `MM3CDSP` as 0.3
 and 0.3 for "Metal 3-PLM", 0.36 and 0.36 for "Metal 3-TLM" and 0.8 and
-0.8 for "Metal 3-S8TM", and 0.3 and 0.3 for a "Metal 3-Cu" row
+0.8 for "Metal 3-S8TM".[^pdk-03] It gives 0.3 and 0.3 for a "Metal 3-Cu" row
 (`MM3_CuCD`, `MM3_CuCDSP`), a copper back end that SKY130's aluminium
-flow does not use.[^pdk-03] Table 4 adds, in its "Material Thicknesses"
+flow does not use.[^pdk-03]
+
+Table 4 adds, in its "Material Thicknesses"
 block, the "Oxide Bias for MM3" of 1.15 (`BiasMM3`) and metal-3
-thicknesses "for antenna ratio calculation" of 0.8 for "(S8P\*/SP8P\*)"
-(`Met3thick_p`) and "(S8Q/SP8Q)" (`Met3thick_q`), 0.85 for "(S8T\* other
-than S8TM\*)" (`Met3_Qthick`), 2 for "(S8TM\* flow)" (`Met3_TMthick`) and
-0.8 for "(SP8T flow)" (`Met3_SP8Tthick`), and its "Waffling / Pattern Density" block has criteria not tied to one
-level, among them a "Min MM\* PD range" of 0.3 (`MMPDrange`); Table 7
+thicknesses "for antenna ratio calculation":[^pdk-03]
+
+* 0.8 for "(S8P\*/SP8P\*)"
+  (`Met3thick_p`) and "(S8Q/SP8Q)" (`Met3thick_q`)
+* 0.85 for "(S8T\* other
+  than S8TM\*)" (`Met3_Qthick`)
+* 2 for "(S8TM\* flow)" (`Met3_TMthick`)
+* 0.8 for "(SP8T flow)" (`Met3_SP8Tthick`)
+
+Its "Waffling / Pattern Density" block has criteria not tied to one
+level, among them a "Min MM\* PD range" of 0.3 (`MMPDrange`).[^pdk-03] Table 7
 gives a "Huge metal X min. W and L" of 3 (`HugeM`) and "Large waffle size
 must be divisible by 4", 7.2 (`waffle_large`), both in its column headed
-"CD".[^pdk-03] For the plate the decisive figures are 0.300 µm lines on a
+"CD".[^pdk-03]
+
+For the plate the decisive figures are 0.300 µm lines on a
 0.6 µm pitch (our arithmetic from m3.1 and m3.2).
 
 ## Related pages
 
 * {ref}`MM3 <step-139>` and {ref}`MM3E <step-140>` — the mask step and
   the metal etch; {ref}`WTIAL3 <step-134>` — the stack patterned.
-* {ref}`mask-capm` — the capacitor mask whose plates metal 3 must
+* **Category.** {ref}`category-lithography`, {ref}`category-etch` and
+  {ref}`category-cmp` — the mask step, etch and polish categories.
+* **Machines.** {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
+  two exposure classes the step page leaves open.
+  {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-capm` — the capacitor mask whose plates metal 3 must
   enclose; {ref}`mask-vim2` — the via mask whose plugs it covers;
   {ref}`mask-mm2` — the metal mask one level down.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the tables this page's plate facts are taken from.
-* {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
-  two exposure classes the step page leaves open.
-* {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography`, {ref}`category-etch` and
-  {ref}`category-cmp` — the mask step, etch and polish categories.
 
 ## References
 
