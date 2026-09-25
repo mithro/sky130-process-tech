@@ -448,11 +448,15 @@ key `para>100w`; `grep -rn "This page describes the class in general" docs/` (62
 **Applies when** the `## Step category` section is a single paragraph of more than 35 words.
 
 **Do.**
-1. First paragraph, ≤ 35 words: "`CODE` is a {ref}`<category>` step of the *<class>* class", plus the
-   one parameter that defines the class, with its markers.
-2. Then a line `**Specific to this step:**` and 2–4 bullets holding the remaining sentences, unchanged
-   except for the splitting.
-3. If a sentence here repeats a passage from another H2 on the same page, apply **R-REPEAT**: the fact
+1. First paragraph, ≤ 35 words: the classification sentence, with its markers.
+2. If **two or more** sentences remain and they describe this step, add `**Specific to this
+   step:**` and one bullet per sentence. If one sentence remains, leave it as a second paragraph
+   with no label and no bullet. A sentence that only lists other steps ("Similar etches occur
+   later at …", "Later well implants …") is not "specific to this step": leave it as a paragraph
+   after the bullets.
+3. If a remaining sentence already begins "What is specific to … is that …", it is its own label:
+   leave it as a paragraph and add nothing.
+4. If a sentence here repeats a passage from another H2 on the same page, apply **R-REPEAT**: the fact
    keeps its home section and this section gets a pointer of ≤ 12 words.
 
 **Example** — `docs/steps/138-capme.md:140`, a 276-word single paragraph that repeats the selectivity
