@@ -118,6 +118,9 @@ PHRASES: dict[str, list[str]] = {
         "between 1.5 nm and 2.5 nm of silicon dioxide may be removed",
         "may also etch a non-volatile charge trapping dielectric stack",
         "while the photoresist layer 318 protects",
+        "dimensions and alignment of",
+        "the masked region",
+        "the isotropic etch leaves",
     ],
     "US8796098B1": [
         "10:1 buffered oxide etch",
@@ -746,6 +749,30 @@ def selftest() -> int:
         ("US8796098B1", "the memory-transistor channel with indium"),
         ("US8796098B1", "only tens of nanometres thick in the cypress patent"),
         ("US9824895B1", "the blocking oxide from growing too thick"),
+    ]:
+        fam_r = Restricted(_fam(fid=rep, number=rep))
+        mr = Matcher([fam_r])
+        ps = []
+        check_page(Path("s.md"), f"# P\n\nA passage saying {fragment} here.\n\n## References\n",
+                   mr, {}, {}, Matcher([]), ps, [])
+        if not any("phrase of" in x for x in ps):
+            fail(f"the {rep} fragment {fragment!r} was not reported in the open: {ps}")
+        ps = []
+        check_page(Path("t.md"),
+                   f"# P\n\n:::{{dropdown}} t\nA passage saying {fragment} here.\n:::\n",
+                   mr, {}, {}, Matcher([]), ps, [])
+        if ps:
+            fail(f"the {rep} fragment {fragment!r} inside a dropdown was reported: {ps}")
+
+    # 3e. The PHRASES fragments added after the rd-masks-b review, section E
+    #     ("Existing pages"): onom.md and tunm.md paraphrased US8093128B2's
+    #     window-alignment and masked-region wording closely enough, with the
+    #     numerals dropped, to pass every prior fragment. Each is refused in
+    #     the open and allowed inside a dropdown.
+    for rep, fragment in [
+        ("US8093128B2", "dimensions and alignment of"),
+        ("US8093128B2", "the masked region"),
+        ("US8093128B2", "the isotropic etch leaves"),
     ]:
         fam_r = Restricted(_fam(fid=rep, number=rep))
         mr = Matcher([fam_r])

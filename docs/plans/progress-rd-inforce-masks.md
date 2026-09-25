@@ -129,5 +129,10 @@ was never used, and no note gained an appended sentence.
       cases; verified fails on pre-fix pages (3 problems), passes on fixed
       pages (0 problems), `--selftest` OK
 - [x] check_preserved.py run and recorded per page (informational)
-- [ ] Full checker suite + generator --checks + `-W` build (see below)
+- [x] Checker suite: check_steps, check_refs, check_machines,
+      check_materials, check_masks (and `--selftest`), check_papers,
+      check_patents, check_filings, check_inforce (0 problems each);
+      gen_papers, gen_patents, gen_filings, gen_index_links --check
+      (0 problems each)
+- [ ] `sphinx-build -W -q -b html docs tmp/_build/html`
 - [ ] Push
