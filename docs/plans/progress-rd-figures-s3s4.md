@@ -116,3 +116,37 @@ Inside a page:
   treats the pre-clean as where the last oxide must be gone. The figures follow 042's
   treatment of the pre-gate clean as part of ONOME and say so in the 042 caption.
 * No arithmetic problem found in the 13 pages.
+
+## Review round ("approve with fixes"; the page-prose rulings are on another branch)
+
+* **H1, specs.** P-well label hidden where it is unchanged context (037 after, 038, 039, 040
+  after, 041, 042, 045 after, 046, 047 after; captions say so). 039 fades the PTSI band in
+  both panels and the DEPI band in the lower one (the upper panel is DEPI's own state, which
+  may not be faded, so its label is hidden there instead). The ARC is labelled on 035–036
+  only; 037–039 captions say it is drawn but not labelled. *Before:* reviewer's
+  `sonos-039-tunme-light-desktop-01.png`, `page-039-tunme-d-01.png`; *after:*
+  `tmp/shots/fix-b-light-desktop-01.png`, `fix-a-light-desktop-02.png`,
+  `fixpg-039-tunme-d-01.png`.
+* **H1, generator.** Two SVG lint rules with selftests: gutter legs a lane apart that run
+  down together for more than `max-parallel-leg` (48 u; `iso-011`/`iso-012` have 46 u legs,
+  accepted in the S1 review), and a label title more than `max-label-drop` (12 u) below its
+  panel's drawing. Run on the committed SVGs from before the fix, the second rule catches
+  037, 038, 039, 040, 046 and 047 and the first catches 042. When a label column is taller
+  than the drawing, the generator now shows more substrate so that the labels start beside
+  it (presentation only); the isolation series' substrate is deepened to 220 u so there is
+  room (every isolation spec sets `crop_depth`, so nothing else moves), and `wells-022`
+  labels the substrate in its second panel only. The S1 and S2 figures that grew this way
+  were looked at in the harness (`tmp/shots/m-*`, `n-*`).
+* **Not added, for the coordinator.** A rule on a single long gutter leg (the 039 P-well
+  leg was 139 u) would catch the reviewed fault directly, but at 60 u it flags about 30 legs
+  in 18 S1/S2 figures (pad-oxide and substrate labels below noted labels). Left as a decision.
+* **M1.** The tunnel window runs off the right-hand edge; the edge sliver is gone; the top
+  oxide is labelled from above, so the column reads top oxide (above), nitride, tunnel
+  oxide. Alt texts of 035, 039 and 040 updated.
+* **M2.** ARC light value `#8a6a50` (L* about 47); `palette` clean.
+* **M3, M4.** 043's caption declares the NMOS/NMOS slice and carries 042's hedge.
+* **Lows.** Highlight ends clipped at wall tops (generator); resist-top sliver gone with M1;
+  035 and 047 alt texts; 036 tags the ARC `our reading` in both panels; 042 highlight
+  limited to the newly bared silicon.
+* Checks: every checker and generator `--check`, `--selftest`, `palette`, `-W` build pass;
+  page diffs against the branch point are still insert-only.
