@@ -36,7 +36,8 @@ and overlay background; the sections below describe the instruments.
 
 The measurements decide whether a lot goes on or is stripped and
 reworked, and are fed back to the exposure tool as dose, focus and
-alignment corrections.
+alignment corrections. Fabs buy the two classes from partly different
+vendors but run them together in the lithography area.
 
 ### CD-SEM column and low-voltage imaging
 
