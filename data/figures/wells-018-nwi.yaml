@@ -32,6 +32,6 @@ panels:
     labels:
       nwell:
         title: "N-well"
-        note: "retrograde; the PDK's baseline vertical dimension is 1.1 µm"
+        note: "retrograde; PDK baseline vertical dimension 1.1 µm"
         basis: public
         cite: pdk-03

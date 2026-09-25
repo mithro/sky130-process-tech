@@ -111,6 +111,17 @@ numbers, quotes, hedges of the caption) and `git diff` no deleted line.
 | `wells-028-pwi2` | second beam, well unchanged | — |
 | `wells-029-pwis` | resist gone; both wells | — |
 
+| `wells-030-pwdem` | thick resist over the whole slice, highlight across its top; caption says the windows are over the 20 V devices inside a deep-N-well tub, outside this slice | — |
+| `wells-031-pwdei1` | beam over the whole slice, every arrow landing on the resist top; nothing below changes | the step's own well is not drawn anywhere: this slice cannot hold it, and no public geometry of a 20 V device exists to draw one (the page says its cross-section drawings are not labelled in text form) |
+| `wells-032-pwdei2` | as 031 | as 031 |
+| `wells-033-pwdeis` | resist gone; both wells, bands faded | — |
+| `wells-034-rtai` | the two panels identical by construction (`op: anneal`); caption and after-panel title say that no public number supports any drawn diffusion | — |
+
+Late change to the series, all figures from 018 rebuilt and re-shot: the N-well's dot moved
+from the middle of the well to below the P-well's bottom (`anchor_y: -88`), because at -60
+the P-well's leader passed 6 u under it; the N-well and P-well notes in 018 and 027 were
+shortened by a line to keep 018 under 800 u.
+
 Tool change made while doing 018: when two labels sit above the drawing and the left
 one's riser is within 110 u of the canvas edge (`min-hang-width`), it now hangs right, in
 the gap before the second riser, instead of being squeezed into a one-word column. The

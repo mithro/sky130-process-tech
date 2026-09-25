@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 779" width="480" height="779" role="img" data-kind="xsection" data-theme="dark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 763" width="480" height="763" role="img" data-kind="xsection" data-theme="dark">
 <title>Two cross-sections of the wafer, one above the other. Before the step thick resist covers the N-well on the right. After it arrows come down on the open left-hand part of the drawing, and a P-type region reaches from the silicon surface to a flat bottom, shallower than the N-well, under the left-hand active area and the left half of the trench; it meets the N-well in the middle of the trench.</title>
 <desc>Two cross-sections of the wafer, one above the other. Before the step thick resist covers the N-well on the right. After it arrows come down on the open left-hand part of the drawing, and a P-type region reaches from the silicon surface to a flat bottom, shallower than the N-well, under the left-hand active area and the left half of the trench; it meets the N-well in the middle of the trench.</desc>
 <style>
@@ -20,7 +20,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:var(--m-implant)}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern><pattern id="p-vlines" width="4" height="6" patternUnits="userSpaceOnUse"><line class="pat" x1="2" y1="0" x2="2" y2="6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="779"/>
+<rect class="ground" x="0" y="0" width="480" height="763"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the P-well block resist from</text>
 <text x="12.0" y="44.0" class="t-panel-title">PWBM (step 026); NMOS left, PMOS right</text>
 <clipPath id="clip1"><rect x="12" y="56.0" width="268" height="205.0"/></clipPath>
@@ -54,9 +54,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="251.9" class="t-label-title" data-owner="nwell">N-well</text>
 <text x="328.0" y="267.9" class="t-label-note muted" data-owner="nwell">retrograde</text>
 <text x="328.0" y="283.9" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
-<path class="halo" d="M279.0 193.0H280.0"/>
-<path class="leader" data-owner="nwell" d="M276.0 193.0H291.0V247.0H324.0"/>
-<circle class="dot" data-owner="nwell" cx="276.0" cy="193.0" r="1.9"/>
+<path class="halo" d="M279.0 221.0H280.0"/>
+<path class="leader" data-owner="nwell" d="M276.0 221.0H291.0V247.0H324.0"/>
+<circle class="dot" data-owner="nwell" cx="276.0" cy="221.0" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="pwbres">Thick photoresist</text>
 <text x="328.0" y="83.9" class="t-label-note muted" data-owner="pwbres">PWBM, step 026;</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="pwbres">left over the</text>
@@ -96,37 +96,36 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="ion" d="M128.8 499.0L128.8 530.5"/>
 <path class="ionhead" d="M128.8 535.0L131.8 541.0L125.8 541.0Z"/>
 </g>
-<text x="328.0" y="730.8" class="t-label-title" data-owner="sub">Silicon wafer</text>
-<path class="leader" data-owner="sub" d="M276.0 690.0H285.0V725.9H324.0"/>
+<text x="328.0" y="714.0" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 690.0H285.0V709.1H324.0"/>
 <circle class="dot" data-owner="sub" cx="276.0" cy="690.0" r="1.9"/>
-<text x="328.0" y="554.8" class="t-label-title" data-owner="padox">Pad oxide</text>
-<text x="328.0" y="570.8" class="t-label-note tag" data-owner="padox">inferred</text>
-<path class="leader" data-owner="padox" d="M276.0 567.5H309.0V549.9H324.0"/>
+<text x="328.0" y="554.0" class="t-label-title" data-owner="padox">Pad oxide</text>
+<text x="328.0" y="570.0" class="t-label-note tag" data-owner="padox">inferred</text>
+<path class="leader" data-owner="padox" d="M276.0 567.5H309.0V549.1H324.0"/>
 <circle class="dot" data-owner="padox" cx="276.0" cy="567.5" r="1.9"/>
-<text x="328.0" y="594.8" class="t-label-title" data-owner="fox">Fill oxide</text>
+<text x="328.0" y="594.0" class="t-label-title" data-owner="fox">Fill oxide</text>
 <path class="halo" d="M179.0 594.0H280.0"/>
-<path class="leader" data-owner="fox" d="M176.0 594.0H303.0V589.9H324.0"/>
+<path class="leader" data-owner="fox" d="M176.0 594.0H303.0V589.1H324.0"/>
 <circle class="dot" data-owner="fox" cx="176.0" cy="594.0" r="1.9"/>
-<text x="328.0" y="618.8" class="t-label-title" data-owner="nwell">N-well</text>
-<path class="halo" d="M279.0 630.0H280.0"/>
-<path class="leader" data-owner="nwell" d="M276.0 630.0H297.0V613.9H324.0"/>
-<circle class="dot" data-owner="nwell" cx="276.0" cy="630.0" r="1.9"/>
+<text x="328.0" y="690.0" class="t-label-title" data-owner="nwell">N-well</text>
+<path class="halo" d="M279.0 658.0H280.0"/>
+<path class="leader" data-owner="nwell" d="M276.0 658.0H291.0V685.1H324.0"/>
+<circle class="dot" data-owner="nwell" cx="276.0" cy="658.0" r="1.9"/>
 <text x="328.0" y="511.4" class="t-label-title" data-owner="pwbres">Thick photoresist</text>
 <text x="328.0" y="527.4" class="t-label-note tag" data-owner="pwbres">inferred</text>
 <path class="leader" data-owner="pwbres" d="M276.0 506.5H315.0H324.0"/>
 <circle class="dot" data-owner="pwbres" cx="276.0" cy="506.5" r="1.9"/>
-<text x="328.0" y="642.8" class="t-label-title" data-owner="pwell">P-well</text>
-<text x="328.0" y="658.8" class="t-label-note muted" data-owner="pwell">retrograde; the</text>
-<text x="328.0" y="674.8" class="t-label-note muted" data-owner="pwell">PDK&#x27;s vertical</text>
-<text x="328.0" y="690.8" class="t-label-note muted" data-owner="pwell">dimension is</text>
-<text x="328.0" y="706.8" class="t-label-note muted" data-owner="pwell">0.75 µm</text>
-<path class="halo" d="M132.0 636.0H280.0"/>
-<path class="leader" data-owner="pwell" d="M129.0 636.0H291.0V637.9H324.0"/>
-<circle class="dot" data-owner="pwell" cx="129.0" cy="636.0" r="1.9"/>
+<text x="328.0" y="618.0" class="t-label-title" data-owner="pwell">P-well</text>
+<text x="328.0" y="634.0" class="t-label-note muted" data-owner="pwell">retrograde; PDK</text>
+<text x="328.0" y="650.0" class="t-label-note muted" data-owner="pwell">vertical dimension</text>
+<text x="328.0" y="666.0" class="t-label-note muted" data-owner="pwell">0.75 µm</text>
+<path class="halo" d="M141.0 636.0H280.0"/>
+<path class="leader" data-owner="pwell" d="M138.0 636.0H297.0V613.1H324.0"/>
+<circle class="dot" data-owner="pwell" cx="138.0" cy="636.0" r="1.9"/>
 <text x="87.8" y="447.9" class="t-label-title" data-owner="ions">P-well implant</text>
 <text x="87.8" y="463.9" class="t-label-note muted" data-owner="ions">boron, inferred</text>
 <text x="87.8" y="479.9" class="t-label-note tag" data-owner="ions">inferred</text>
 <path class="leader" data-owner="ions" d="M78.8 499.0V443.0H83.8"/>
 <circle class="dot" data-owner="ions" cx="78.8" cy="499.0" r="1.9"/>
-<text x="12.0" y="766.9" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<text x="12.0" y="750.1" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>

@@ -30,6 +30,6 @@ panels:
     labels:
       pwell:
         title: "P-well"
-        note: "retrograde; the PDK's vertical dimension is 0.75 µm"
+        note: "retrograde; PDK vertical dimension 0.75 µm"
         basis: public
         cite: pdk-03

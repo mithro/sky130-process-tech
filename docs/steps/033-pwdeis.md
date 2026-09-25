@@ -21,6 +21,14 @@ the only one that is followed not by another lithography but by a
 high-temperature step — which raises its cleanliness requirement to
 the "pre-furnace" level of {ref}`DNIS <step-009>`.
 
+:::{figure} /_static/figures/wells-033-pwdeis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole slice. After it the resist is gone and the oxide surface is bare over a P-well on the left and an N-well on the right.
+:width: 560px
+:name: fig-wells-033-pwdeis
+
+Before, the PWDEM resist over the whole slice; after, the resist gone and the oxide bare over both wells, ready for the anneal. The page assumes that the pad oxide is kept through the anneal, so it is drawn in place; whether it is kept is not stated publicly. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+:::
+
 The resist is a thick implant resist (2 µm class, inferred on the
 {ref}`PWDEM <step-030>` page) that has received two light boron implants
 — of order 10¹² cm⁻² each, illustrative ({ref}`PWDEI1 <step-031>`) — at

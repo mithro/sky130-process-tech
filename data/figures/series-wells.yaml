@@ -173,7 +173,7 @@ ops:
     follow: flat
     y_top: 0
     y_bot: -112
-    anchor_y: -60
+    anchor_y: -88
     label:
       title: "N-well"
       note: "retrograde (NWI, step 018)"

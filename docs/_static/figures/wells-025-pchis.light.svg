@@ -52,9 +52,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="328.0" y="292.9" class="t-label-title" data-owner="nwell">N-well</text>
 <text x="328.0" y="308.9" class="t-label-note muted" data-owner="nwell">retrograde</text>
 <text x="328.0" y="324.9" class="t-label-note muted" data-owner="nwell">(NWI, step 018)</text>
-<path class="halo" d="M279.0 244.0H280.0"/>
-<path class="leader" data-owner="nwell" d="M276.0 244.0H291.0V288.0H324.0"/>
-<circle class="dot" data-owner="nwell" cx="276.0" cy="244.0" r="1.9"/>
+<path class="halo" d="M279.0 272.0H280.0"/>
+<path class="leader" data-owner="nwell" d="M276.0 272.0H291.0V288.0H324.0"/>
+<circle class="dot" data-owner="nwell" cx="276.0" cy="272.0" r="1.9"/>
 <text x="328.0" y="164.9" class="t-label-title" data-owner="chp">PMOS channel</text>
 <text x="328.0" y="180.9" class="t-label-title" data-owner="chp">implants</text>
 <text x="328.0" y="196.9" class="t-label-note muted" data-owner="chp">LVTPI, PCHI and</text>
@@ -100,10 +100,10 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <path class="halo" d="M179.0 534.0H280.0"/>
 <path class="leader" data-owner="fox" d="M176.0 534.0H297.0V564.0H324.0"/>
 <circle class="dot" data-owner="fox" cx="176.0" cy="534.0" r="1.9"/>
-<text x="328.0" y="592.9" class="t-label-title" data-owner="nwell">N-well</text>
-<path class="halo" d="M279.0 570.0H280.0"/>
-<path class="leader" data-owner="nwell" d="M276.0 570.0H291.0V588.0H324.0"/>
-<circle class="dot" data-owner="nwell" cx="276.0" cy="570.0" r="1.9"/>
+<text x="328.0" y="602.9" class="t-label-title" data-owner="nwell">N-well</text>
+<path class="halo" d="M279.0 598.0H280.0"/>
+<path class="leader" data-owner="nwell" d="M276.0 598.0H291.0H324.0"/>
+<circle class="dot" data-owner="nwell" cx="276.0" cy="598.0" r="1.9"/>
 <text x="328.0" y="528.9" class="t-label-title" data-owner="chp">PMOS channel</text>
 <text x="328.0" y="544.9" class="t-label-title" data-owner="chp">implants</text>
 <path class="halo" d="M270.0 516.5H280.0"/>

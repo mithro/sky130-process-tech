@@ -24,6 +24,14 @@ second energy of the same species, completing a two-member chained
 profile for the lightly doped {term}`drain-extended <DEMOS>` P-well
 (inference).[^txt-01]
 
+:::{figure} /_static/figures/wells-032-pwdei2.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole slice. After it a second set of arrows comes down across the whole slice and stops on the resist; nothing under the resist changes.
+:width: 560px
+:name: fig-wells-032-pwdei2
+
+Before, the PWDEM resist over the whole slice; after, the second beam also stopped by it. That this is a second boron energy, completing a two-member profile for the drain-extended well, is this reference's inference;[^txt-01] its energy and dose are not public, and its windows, over the 20 V devices, lie outside this slice. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+:::
+
 ## Step category
 
 `PWDEI2` is an {ref}`Ion implantation <category-implant>` step of the

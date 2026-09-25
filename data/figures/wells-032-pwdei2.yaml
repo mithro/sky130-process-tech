@@ -1,0 +1,26 @@
+id: wells-032-pwdei2
+kind: xsection
+page: docs/steps/032-pwdei2.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole
+  slice. After it a second set of arrows comes down across the whole slice and stops on the resist;
+  nothing under the resist changes.
+caption: >-
+  Before, the PWDEM resist over the whole slice; after, the second beam also stopped by it. That this
+  is a second boron energy, completing a two-member profile for the drain-extended well, is this
+  reference's inference;[^txt-01] its energy and dose are not public, and its windows, over the 20 V
+  devices, lie outside this slice. The two channel-implant bands and the liner oxide are drawn faded.
+  Not to scale.
+arrow:
+  title: "PWDEI2, step 032"
+  note: "A second boron implant goes through the same PWDEM windows, outside this slice; here the resist stops it again."
+panels:
+  - state_after: "031"
+    title: "Before: the PWDEM resist after PWDEI1 (step 031); NMOS left, PMOS right"
+    dim_layers: [liner, chn, chp]
+    show_ions: false
+  - state_after: "032"
+    title: "After: the second beam stopped too; this slice is unchanged"
+    dim_layers: [liner, chn, chp]

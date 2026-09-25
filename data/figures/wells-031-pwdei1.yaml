@@ -1,0 +1,25 @@
+id: wells-031-pwdei1
+kind: xsection
+page: docs/steps/031-pwdei1.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole
+  slice. After it arrows come down across the whole slice and stop on the resist; nothing under the
+  resist changes.
+caption: >-
+  Before, the PWDEM resist over the whole slice; after, the beam stopped by that resist and nothing
+  changed beneath it. The implant goes only into the `pwde` regions of the 20 V devices,[^pdk-06]
+  which lie outside this slice, so the lightly doped well it builds there is not drawn. Boron is
+  inferred from the layer name; the energy and dose are not public. The two channel-implant bands and
+  the liner oxide are drawn faded. Not to scale.
+arrow:
+  title: "PWDEI1, step 031"
+  note: "Boron is implanted through the PWDEM windows, which lie outside this slice; here the resist stops the beam."
+panels:
+  - state_after: "030"
+    title: "Before: the PWDEM resist (step 030); NMOS left, PMOS right"
+    dim_layers: [liner, chn, chp]
+  - state_after: "031"
+    title: "After: the beam stopped by the resist; this slice is unchanged"
+    dim_layers: [liner, chn, chp]

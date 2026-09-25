@@ -27,6 +27,14 @@ well-building practice;[^pat-well-ibm][^pat-well-hynix] no public
 document describes the two implants. The
 resist is stripped at {ref}`PWDEIS <step-033>`.
 
+:::{figure} /_static/figures/wells-031-pwdei1.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step thick resist covers the whole slice. After it arrows come down across the whole slice and stop on the resist; nothing under the resist changes.
+:width: 560px
+:name: fig-wells-031-pwdei1
+
+Before, the PWDEM resist over the whole slice; after, the beam stopped by that resist and nothing changed beneath it. The implant goes only into the `pwde` regions of the 20 V devices,[^pdk-06] which lie outside this slice, so the lightly doped well it builds there is not drawn. Boron is inferred from the layer name; the energy and dose are not public. The two channel-implant bands and the liner oxide are drawn faded. Not to scale.
+:::
+
 ## Step category
 
 `PWDEI1` is an {ref}`Ion implantation <category-implant>` step of the

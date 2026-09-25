@@ -1,0 +1,26 @@
+id: wells-034-rtai
+kind: xsection
+page: docs/steps/034-rtai.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other and identical: pad oxide over a P-well on the
+  left and an N-well on the right, which meet under the middle of an oxide-filled trench, with a thin
+  implanted band at the surface of each active area.
+caption: >-
+  The same drawing before and after the anneal. RTAI repairs the implant damage and activates the
+  implants of the module; no public source says how far it moves any of the wells or channel bands,
+  so no diffusion is drawn and the geometry does not change. The anneal's temperature, time and
+  ambient are not public. The pad oxide is drawn in place, as the pages assume; whether it is present
+  during the anneal is not stated publicly. The two channel-implant bands and the liner oxide are drawn faded. Not
+  to scale.
+arrow:
+  title: "RTAI, step 034"
+  note: "The wafer is heated in an inert ambient to repair the implant damage and activate the dopants; no change is drawn."
+panels:
+  - state_after: "033"
+    title: "Before: the cleaned wafer after PWDEIS (step 033); NMOS left, PMOS right"
+    dim_layers: [liner, chn, chp]
+  - state_after: "034"
+    title: "After: the same geometry; no public number says how far the anneal moves the dopants"
+    dim_layers: [liner, chn, chp]

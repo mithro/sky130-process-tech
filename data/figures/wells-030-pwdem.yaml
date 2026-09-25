@@ -1,0 +1,28 @@
+id: wells-030-pwdem
+kind: xsection
+page: docs/steps/030-pwdem.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the oxide surface is bare over
+  a P-well on the left and an N-well on the right. After it a thick block of photoresist covers the
+  whole slice: the windows of this mask lie over other devices, not over this pair.
+caption: >-
+  Before, the bare wafer over both wells; after, thick resist over the whole slice. This mask opens
+  windows only over parts of the 20 V devices, whose `pwde` regions lie inside a deep-N-well
+  tub;[^pdk-periph] this slice, drawn outside a deep N-well region like the rest of the module, is an
+  ordinary NMOS and PMOS pair and stays covered. The resist thickness is inferred. The PDK's mask
+  table leaves the mask's "Used in SKY130" column blank, which this reference treats as a
+  documentation inconsistency.[^pdk-05] The two channel-implant bands and the liner oxide are drawn
+  faded. Not to scale.
+arrow:
+  title: "PWDEM, step 030"
+  note: "A thick resist is coated, exposed through the drain-extended P-well mask and developed; its windows lie over other devices."
+panels:
+  - state_after: "029"
+    title: "Before: the cleaned wafer after PWIS (step 029); NMOS left, PMOS right"
+    dim_layers: [liner, chn, chp]
+  - state_after: "030"
+    title: "After: thick resist over the whole slice; the windows are elsewhere"
+    dim_layers: [liner, chn, chp]
+    highlight: {where: [[0, 268]]}
