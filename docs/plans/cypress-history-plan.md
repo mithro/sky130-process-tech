@@ -107,7 +107,7 @@ The pages are drafted once the evidence exists. The provisional list:
 | Item | State |
 |---|---|
 | Plan | written 2026-09-25 |
-| Evidence | `qtp.yaml` 67 reports, `corporate.yaml` 29 records, `extra.yaml` 40 records; all quotes verified |
+| Evidence | `qtp.yaml` 67 reports, `corporate.yaml` 29 records, `extra.yaml` 32 records; all quotes verified |
 | Claims matrix | 165 claims, checked by `tools/check_history.py` |
 | Pages | index, fabs, technologies, sonos-s4, s8-lineage, naming; generated stackups, products, sources |
 | Review r1 (Opus) | 19 High, 22 Medium, 15 Low; fixes applied 2026-09-25 |
