@@ -44,6 +44,8 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
 | `topic/rd-figures-s9a` | W1c series S9 first group: via 1 to metal 3 (118–134) | Opus | running since 2026-09-26 |
+| `topic/rd-masks-a` | W3 batch 4: mask pages 1–18 (alphabetical) — Opus writer | Opus | running since 2026-09-26 |
+| `topic/rd-categories` | W3 batch 5: the ten category pages | Sonnet | running since 2026-09-26 |
 | `topic/rd-steps-048-063` | W2 batch 4 (poly module) — first OPUS writer on a step batch, to test whether it passes review first time | Opus | running since 2026-09-25 |
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
