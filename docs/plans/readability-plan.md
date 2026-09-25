@@ -41,7 +41,7 @@ is the order of work and its status.
 |---|---|---|
 | W1a | Productionise the prototype: `tools/gen_figures.py` (+ `--check`, embedded width table, no new dependency), `data/figures/`, `docs/_static/figures/`, `figure-theme.js`, tokens file, "Figure conventions" page, `check_inforce.py` hook for figure specs | [x] merged 2026-09-20 (reviewed; leader routing rewritten, in-force screen covers all figure text) |
 | W1b | First set for a look before scaling: isolation series S1 (steps 001–013), the module flow map on the overview, the back-end stack chart | [x] merged 2026-09-20 — 16 figures; authoring guide `docs/plans/figure-authoring.md` |
-| W1c | Remaining series S2–S11 (series files by Opus, fact-checked against their pages; per-step figure specs by Sonnet) | [ ] |
+| W1c | Remaining series S2–S11 (series files by Opus, fact-checked against their pages; per-step figure specs by Sonnet) | [~] S2 wells (014–034) merged 2026-09-25 after review: faded context layers as dashed outlines, pattern-only implant overlay, one-panel rule for steps with no drawn change, figure-after-dropdown placement rule. S3–S11 to do |
 | W1d | Machine block-chains (30), mask derivation chains (36), category mechanism sketches (10), remaining charts | [ ] |
 
 Default taken on the open point in report D: figures may show a value that the page gives as its own reading,

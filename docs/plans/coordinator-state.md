@@ -43,7 +43,6 @@ check list of `agent-briefs.md`, one worktree and branch each, and a progress fi
 |---|---|---|---|
 | `topic/rd-steps-001-013` | W2 pilot: review done, fix round done, Opus verification running (`tmp/reviews/rd-steps-001-013-verify.md`) | Sonnet / Opus | verifying |
 | `topic/rd-site` | W4: landing page cards, references index table, glossary by letter, first-use `{term}` links, inventory anchors | Sonnet | running since 2026-09-25 |
-| `topic/rd-figures-s2` | W1c series S2 wells (steps 014–034): reviewed, fix round running (faded layers as outlines, pattern-only implant overlay, one-panel rule, placement rule) | Opus | fixing |
 | `topic/cypress-history` (another session, `sky130-process-tech-54`) | History of the Cypress process technologies before S8: new top-level section `docs/history/` (plus `data/history/`, `tools/check_history_quotes.py`), one line in `docs/index.md` after `topic/rd-site` merges; research sub-branches `topic/cyhist-*` | — | running since 2026-09-25; that session merges only when told; coordinate on `docs/index.md`, `docs/references/index.md`, `docs/references/public-sources.md` with `topic/rd-site` |
 
 Order after these: apply the pilot review's guide corrections, merge the pilot, then W2 batches module by
