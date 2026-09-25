@@ -1482,3 +1482,283 @@ documents:
     At 0.16 µm this is a notably finer design rule than the contemporary R7FD-3R (0.15 µm, close) and
     R7FT-3R (0.18 µm) codes (qtp-011908, qtp-014807) -- three separate R7-family suffixes (LD, FD, FT) at
     three close-but-distinct geometries, all Fab 4/Bloomington.'
+- id: qtp-082506
+  doc_type: QTP
+  number: '082506'
+  cypress_document_number: 001-82813 Rev. *B
+  title: PCI-E Clock Family, R52T-3 Technology, Fab 4
+  version: '*B'
+  date_printed: September 2014
+  url: https://www.infineon.com/dgdl/Infineon-QTP_082506_PCI-E_Clock_Family_R52T-3_Technology_Fab_4-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 7af32cc310872d19bb8bfcbc32625205e0f2ea39d4df1f84c9ae55cb284a46b4
+  technology_codes:
+  - R52T-3
+  - R52D-3
+  fab: Fab 4 / CMI (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY28437
+  - CY24291
+  - CY24292
+  - CY24293
+  die_ids:
+  - CY7C8B049A
+  - CY7C8B050A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 500Å TiW / 6000Å Al / 500Å TiW; Metal 2: 500Å TiW / 6000Å Al / 500Å TiW;
+      Metal 3: 300Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å SiO2 / 9000Å Si3N4
+    design_rule: CMOS – Triple Metal, 0.25μm
+    gate_oxide: SiO2, 55Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R52T-3
+  qualification_history:
+  - number: '024604'
+    description: R52T-3 Technology Process Derivative Qual
+    date: May 03
+  - number: '040903'
+    description: New Device B30M (CY28437) Base Die in R52T-3 Technology
+    date: Feb 05
+  - number: '082506'
+    description: Qualification of new PCI-E Clock devices 7C8B049A and 7C8B050A - a 6-layer mask option
+      from previously qualified B30M die
+    date: Dec 08
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION R52D-3
+    location: p.3, section heading (the report is otherwise about R52T-3 technology throughout)
+  - text: R52T-3 Technology Process Derivative Qual
+    location: p.2, Product Qualification History, row 024604
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52T-3'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Naming mismatch: the Technology/Fab Process Description section heading in this R52T-3 report
+    reads "TECHNOLOGY/FAB PROCESS DESCRIPTION R52D-3" -- every other reference in the document (title,
+    qualification-history rows, Die Fab Line ID) calls the technology "R52T-3". Compare qtp-110605 (an
+    L28/TSMC-2A report), whose process-description heading instead misprints "R9T-3R" -- these report
+    templates evidently sometimes carry over a stale heading from a differently-named report rather than
+    being corrected for the technology actually being qualified. Earliest dated reference to R52T-3 in
+    this corpus: QTP 024604, May 03, "R52T-3 Technology Process Derivative Qual" (not independently
+    retrieved; "Derivative" implies R52T-3 derives from an earlier R52-family base technology). R52T-3
+    (3 metal layers, 0.25 µm, 55 Å gate oxide) shares the 0.25 µm design rule with R52D-3 (qtp-099202) and
+    R52LD-3 (qtp-062201) but has one more metal layer than either.'
+- id: qtp-099202
+  doc_type: QTP
+  number: '99202'
+  cypress_document_number: 001-87678 Rev. *B
+  title: Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4
+  version: '*B'
+  date_printed: May 2014
+  url: https://www.infineon.com/dgdl/Infineon-QTP_99202_Low_Voltage_Synchronous_Asynchronous_RAM_R52D-3_Technology_at_Fab_4-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d71491c270982
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: a370caf058bfb30193f9ab0f74e39c5d63c8fdca15b156712143ddafb2ad5f04
+  technology_codes:
+  - R52D-3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C056V
+  - CY7C057V
+  - CY7C09569V
+  - CY7C09579V
+  die_ids:
+  - 7C05793A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500 Å TiW/6000 Å Al-.5%Cu/300 Å TiW; Metal 2: 300Å CoTi/8000Å Al-.5%Cu/300Å
+      TiW'
+    passivation: 1000Å Oxide + 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.25 m (printed with the micron sign dropped)
+    gate_oxide: SiO2 / 50 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R52D-3
+    transistors: 29,066,890
+    gates: 4.8 million
+  qualification_history:
+  - number: '99202'
+    description: CY7C09569V/CY7C09579V, R52D-3 Technology
+    date: Sep 99
+  - number: '040701'
+    description: CY7C09579V GOOBI/Burn-In Reduction to 12hrs (144 TQFP)
+    date: May 04
+  - number: '042301'
+    description: CY7C09579V Burn-In Reduction to 6hrs (172 BGA)
+    date: Nov 04
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R52D-3
+    location: p.3, section heading
+  - text: CY7C09569V/CY7C09579V, R52D-3 Technology
+    location: p.2, Product Qualification History, row 99202
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R52D-3'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Earliest dated reference to R52D-3 in this corpus is this report''s own history row (QTP 99202,
+    Sep 99); unlike most other technologies in this corpus, no separate "New Technology" row is printed
+    for R52D-3 in this table. R52D-3 here has 2 metal layers, 0.25 µm design rule, 50 Å gate oxide -- close
+    to but not identical with R52T-3 (qtp-082506: 3 metal layers, 0.25 µm, 55 Å gate oxide) and R52LD-3
+    (qtp-062201: 2 metal layers, 0.25 µm per its family TDR reference, 55 Å gate oxide): three R52-family
+    suffixes (D, T, LD) sharing the same 0.25 µm baseline design rule but differing in metal-layer count
+    and gate-oxide thickness.'
+- id: qtp-062201
+  doc_type: QTP
+  number: '062201'
+  cypress_document_number: 001-88008 Rev. *A
+  title: MoBL ADM Dual Port Static RAM Family, R52LD-3 Technology, Fab4
+  version: '*A'
+  date_printed: June 2014
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-062201-mobl-adm-dual-port-static-ram-family-r52ld-3-technology-fab4-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 42d6761e8d75bda1edeeb6c0028e535fd02e94006a844ca16e2a1747954a36d3
+  technology_codes:
+  - R52LD-3
+  - R52LD3
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CYDMX256A16
+  - CYDMX128A16
+  - CYDMX064A16
+  die_ids:
+  - 7C02638A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500 Å-TiW/6000 Å Al-Cu/500 Å TiW; Metal 2: 300 Å-Ti/8000 Å Al-Cu/300 Å
+      TiW'
+    passivation: 1,000A TEOS + 9,000A SiN
+    free_phosphorus_percent: 0%
+    design_rule: R52 TDR (01-30065), 0.25um Technology
+    gate_oxide: 55Å
+    fab_location: Cypress Semiconductor – Bloomington Minnesota
+    die_fab_line_id: 7C02638A
+    transistors: 2932342
+    gates: 733086
+  qualification_history:
+  - number: '99075'
+    description: New Technology R52LD-3 / New Slow Low Power MoBL SRAM, CY62137V
+    date: Apr 99
+  - number: '052103'
+    description: Qualify 256K Dual Port (Split Voltage) Device Family, R52LD3 Technology from Fab4
+    date: Nov 05
+  - number: '062201'
+    description: Qualification of Device 7C02638A (MoBL ADM Dual Port) in R52LD-3 Technology at Fab 4
+    date: Sep 06
+  quotes:
+  - text: New Technology R52LD-3 / New Slow Low Power MoBL SRAM, CY62137V
+    location: p.2, Product Qualification History, row 99075
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – R52LD3
+    location: p.3, section heading
+  - text: R52 TDR (01-30065), 0.25um Technology
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'Earliest dated reference to R52LD-3: QTP 99075, Apr 99 ("New Technology R52LD-3"). The Design
+    Rule field cites an internal Cypress spec by number, "R52 TDR (01-30065)" (Technology Design Rule),
+    rather than repeating "R52LD-3" -- consistent with R52D-3/R52T-3/R52LD-3 sharing one family-wide 0.25
+    µm design-rule document under the plain "R52" family name. The Die Fab Line ID/Wafer Process ID field
+    is printed as the die identifier "7C02638A" rather than a wafer-process code, unlike most other reports
+    in this corpus. The cover-page product list gives "CYDMX128A16"; the Product Description block''s
+    Marketing Part # line instead gives "CYDMX128A08" for the same part family -- a digit discrepancy (16
+    vs 08) between the two listings in the same document.'
+- id: qtp-080608
+  doc_type: QTP
+  number: '080608'
+  cypress_document_number: 001-87725 Rev. **
+  title: High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A
+  version: '**'
+  date_printed: May 2013
+  url: https://www.infineon.com/dgdl/Infineon-QTP_080608_HIGH_ACCURACY_EPROM_PROGRAMMABLE_DEVICE_FAMILY_L28_TECHNOLOGY_TSMC-2A-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d714a27090cd2
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 0f431b937ee9db326c848c3581b5957aea7c402015fc613e0336c247def604c0
+  technology_codes:
+  - L28
+  - L28-TSMC
+  fab: TSMC-2A, Taiwan (transferred from Cypress CTI Fab 2)
+  products:
+  - CY2077
+  - CY5037
+  die_ids:
+  - 7C80383B
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu/ 375Å TiN; Metal 2: 1,500 Å Ti / 8,000Å
+      AlSiCu / 375Å TiN'
+    passivation: 3,000Å SiN / 3,150Å SOG, 1,200Å SiN
+    design_rule: CMOS, Single Poly, Double Metal/0.65um
+    gate_oxide: SiO2 / 125 Å
+    fab_location: TSMC-2A, Taiwan
+    die_fab_line_id: TSMC-2A/L28 TSMC
+  qualification_history:
+  - number: '99285'
+    description: To qualify L28-TSMC Technology in TMSC-2A
+    date: May 2003
+  - number: '080608'
+    description: CY5037 (7C80383B die) L28 Process Transfer from CTI Fab2 to TSMC-2A
+    date: Aug 2008
+  quotes:
+  - text: To qualify L28-TSMC Technology in TMSC-2A
+    location: p.2, Package Qualification History, row 99285
+  - text: 'Die Fab Line ID/Wafer Process ID: TSMC-2A/L28 TSMC'
+    location: p.3, Technology/Fab Process Description
+  notes: 'The document cover reads "Product Qualification Plan" rather than "Product Qualification
+    Report" (compare qtp-113005, S8TNV-5R, which shows the same "Plan" cover for similarly transfer-style
+    content); its history table is headed "PACKAGE Qualification History" rather than the usual
+    "Product/Technology Qualification History". Earliest dated reference to L28 in this corpus: QTP 99285,
+    May 2003, "To qualify L28-TSMC Technology in TMSC-2A" (the source prints "TMSC-2A", transposing two
+    letters of "TSMC-2A") -- explicitly a technology transfer/foundry qualification (Cypress CTI Fab 2 to
+    TSMC-2A) rather than a from-scratch new-technology qualification; no earlier "New Technology L28" row
+    for a Cypress-fab-only predecessor was found in this corpus.'
+- id: qtp-110605
+  doc_type: QTP
+  number: '110605'
+  cypress_document_number: null
+  title: Zero Delay Buffer, L28 Technology, TSMC-2A
+  version: '*B'
+  date_printed: March 2025
+  url: https://www.infineon.com/dgdl/Infineon-QTP_110605_Zero_Delay_Buffer_L28_Technology_TSMC-2A-ProductQualificationReport-v03_00-EN.pdf?fileId=8ac78c8c7d710014017d714b37f41005
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: fe25fbae23a0181364240774c4d51581685df7c94e7f6b2ef22447bc768b391e
+  technology_codes:
+  - L28
+  - L28-TSMC
+  - R9T-3R
+  fab: TSMC-2A, Taiwan
+  products:
+  - CY2305ES
+  - CY2305S
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu / 375Å TiN; Metal 2: 1,500 Å Ti /
+      8,000Å AlSiCu / 375Å TiN'
+    passivation: 3,000Å SiN / 3,150Å SOG, 1,200Å SiN
+    design_rule: CMOS, Single Poly, Double Metal/0.65um
+    gate_oxide: SiO2 / 125 Å
+    fab_location: TSMC-2A, Taiwan
+    die_fab_line_id: TSMC-2A/L28 TSMC
+  qualification_history:
+  - number: '99285'
+    description: To qualify L28-TSMC Technology in TMSC-2A
+    date: May 2003
+  - number: '081704'
+    description: CY230X L28 Process Transfer from CTI Fab2 to TSMC-2A
+    date: Aug 2008
+  - number: '110605'
+    description: 5 Layer Mask Change (Poly, Contact, Met1, Via, Met2) to CY2305-1X parts, L28 Process at
+      TSMC
+    date: May 2011
+  quotes:
+  - text: To qualify L28-TSMC Technology in TMSC-2A
+    location: p.2, Qualification History, row 99285
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – R9T-3R
+    location: p.3, section heading (the report is otherwise about L28/TSMC-2A technology throughout)
+  - text: 'Die Fab Line ID/Wafer Process ID: TSMC-2A/L28 TSMC'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Marked "RESTRICTED" on every page (unlike the plain "Company Confidential" marking used
+    elsewhere in this corpus). Its process-description section heading misprints "TECHNOLOGY/FAB PROCESS
+    DESCRIPTION – R9T-3R" -- a wholly different, unrelated technology code (R9T-3R is the Fab 4/Bloomington
+    QDR SRAM technology referenced in qtp-051207) -- even though every other field in the same block (Die
+    Fab Line ID, fab location, process figures) matches qtp-080608''s L28/TSMC-2A description exactly.
+    Confirms qtp-080608''s process-description figures for L28 verbatim (0.65 µm, 2 metal layers, same
+    compositions and gate oxide). This report''s own history table also independently confirms QTP 081704
+    ("CY230X L28 Process Transfer from CTI Fab2 to TSMC-2A", Aug 2008) as a real, dated qualification event
+    even though the qtp-081704 PDF itself could not be retrieved (see gaps).'
