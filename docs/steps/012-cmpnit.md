@@ -11,12 +11,13 @@
 | **Next step** | {ref}`NS19 <step-013>` |
 
 :::{admonition} At a glance
+:class: at-a-glance
 * **Does:** polishes the fill oxide flat, stopping on the nitride over
   the active areas.
 * **Why:** gives STI its flat-surface advantage over LOCOS, and
   controls dishing, erosion and defectivity going forward.
-* **Public numbers:** none published for SKY130; final field-oxide
-  step above active silicon is 0.07 µm under poly.[^pdk-03]
+* **Public numbers:** none for the polish itself; the PDK gives a
+  0.07 µm final field-oxide step under poly.[^pdk-03]
 * **Likely SkyWater tool:** Applied Materials Mirra CMP — strong
   (tool, applications); inference (assignment).[^skw-01]
 * **Not public:** whether a silica or ceria slurry is used (→ Open
@@ -87,9 +88,7 @@ simply flattening, the polish controls:
 
 ## How it is typically performed
 
-:::{note}
-An industry-generic STI polish for a 200 mm, 130 nm-era fab:
-:::
+*An industry-generic STI polish for a 200 mm, 130 nm-era fab:*
 
 1. **Tool.** Rotary multi-platen polisher with polyurethane pads; the
    pads "should be rigid in order to uniformly polish the wafer
@@ -181,7 +180,7 @@ polisher, which is what this step needs.
   silicon and leaves the oxide standing).
 * Depends on: nitride stop from {ref}`ISONIT <step-003>`;
   pattern-density "waffles" from {ref}`FOM <step-004>`.
-* Same module: other CMP steps — {ref}`CMPP <step-090>`,
+* Same category: other CMP steps — {ref}`CMPP <step-090>`,
   {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`,
   {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`.
 * Category page: {ref}`Chemical-mechanical planarisation <category-cmp>`.
