@@ -1055,7 +1055,12 @@ link on the lead-in to the etch-gases material page. `docs/categories/cmp.md:134
 *(report B B13)*
 
 **Applies when** a table is not the page's quick-facts table and has no caption. (185 tables on the 92
-class pages today; 0 captions.)
+class pages today; 0 captions.) **On step pages**, the lead-in sentence ending in a colon that
+introduces the table (as R-TABLE and R-DERIVATION already require) *is* the caption; do not also
+wrap the table in `:::{table}` unless it has a prose column and needs `:widths:` set (the "measured
+against nominal" and multi-quotation tables usually do; a short numeric table usually does not). §4.1
+lists R-CAPTION for step pages for this reason, even though the class-page count above is what
+motivated the rule.
 
 **Do.**
 1. Wrap it:
@@ -1537,9 +1542,9 @@ limits that differ from §1. `+` marks an addition; everything else already exis
    (generated {figure} block)          stays where gen_figures put it: directly after the lead
 + ### …                                any new H3 goes after the figure's caption, never between
                                        the lead and the figure
-+ ### Key numbers                      table: Quantity · Value · Source · Basis   R-TABLE
-+ ### What the public record shows     short paragraphs; measured-against-nominal tables
-+ ### How <quantity> is estimated      input table, numbered arithmetic, hedged result  R-DERIVATION
++ ### Key numbers                      table: Quantity · Value · Source · Basis   R-TABLE, R-CAPTION
++ ### What the public record shows     short paragraphs; measured-against-nominal tables  R-CAPTION
++ ### How <quantity> is estimated      input table, numbered arithmetic, hedged result  R-DERIVATION, R-CAPTION
 + ### Competing readings               where the page weighs two readings
 ## Step category                       one classification sentence ≤ 35 words, then
                                        "**Specific to this step:**" and 2–4 bullets       R-CATEGORY
@@ -1563,7 +1568,8 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 **Order of work.**
 
 1. **R-H3** — structure below H2 (do this first; everything else is easier afterwards).
-2. **R-TABLE**, **R-DERIVATION** — the numbers come out of the prose.
+2. **R-TABLE**, **R-DERIVATION** — the numbers come out of the prose. **R-CAPTION** applies to step
+   pages too: the lead-in sentence that introduces the table is its caption (see R-CAPTION).
 3. **R-LIST**, **R-CATEGORY** — enumerations and the category paragraph.
 4. **R-PARA**, **R-SENTENCE** — what is left of the prose.
 5. **R-TOOLS** — the SkyWater tool items.
@@ -2177,7 +2183,8 @@ caption that wraps badly, a bullet list that lost its indentation.
       Measure against these §1 caps, never against looser "flag" thresholds. After the last page
       of a batch, run the measurement over the whole batch again and put the counts at the §1 caps
       in the progress file.
-* [ ] Every new table has a caption and `:widths:` if it has a prose column, and obeys the §1
+* [ ] Every new table has a caption (R-CAPTION): on a step page its lead-in sentence ending in a
+      colon; a `:::{table}` wrapper and `:widths:` only when it has a prose column. It obeys the §1
       column budget (≤ 3 prose, ≤ 5 short-cell), tested at 400 px.
 * [ ] Every checker and the `-W` build pass.
 * [ ] The phone tiles show no horizontal scrolling outside a table.
