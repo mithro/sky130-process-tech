@@ -13,7 +13,7 @@ generations with the design rules the reports print:
 
 | Generation digit | Codes in the reports | Design rule printed | Cypress's product name |
 |---|---|---|---|
-| 2 | R28, L28, L28EPD, P26 | 0.65 µm | — |
+| 2 | P20, R28, L28, L28EPD, P26 | 0.8 µm (P20) and 0.65 µm | — |
 | 3 | R32, R32D | 0.5 µm | RAM3 |
 | 4 | R42D, R42HD, RAM42, S4AD-5 | 0.42 µm and 0.35 µm | RAM4 |
 | 5 | R52D-3, R52LD-3, R52FFD-3, R52T-3, R52D-5R, B53D-3, B55SGT | 0.25 µm (B55SGT: 0.21–0.35 µm) | RAM5 |

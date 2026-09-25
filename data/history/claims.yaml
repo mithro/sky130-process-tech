@@ -138,11 +138,11 @@ claims:
   anchor: The R28 SRAM process qualified at Fab 2 in November 1997
   grade: attributed
   attribution: (Cypress's reports)
-  footnotes: [qtp-097476, qtp-098393, qtp-011503, qtp-096411]
+  footnotes: [qtp-097476, qtp-098393, qtp-031101, qtp-096411]
   sources:
   - {id: qtp-097476, origin: cypress}
   - {id: qtp-098393, origin: cypress}
-  - {id: qtp-011503, origin: cypress}
+  - {id: qtp-031101, origin: cypress}
   - {id: qtp-096411, origin: cypress}
 - id: fab2-s4ad5-2001
   page: docs/history/fabs.md
@@ -539,13 +539,13 @@ claims:
   - {id: qtp-096411, origin: cypress}
 - id: tech-l28
   page: docs/history/technologies.md
-  anchor: '"New Technology L28" at Fab 2 in April 1998'
+  anchor: One report dates "New
   grade: attributed
   attribution: (Cypress's reports)
-  footnotes: [qtp-011503, qtp-098333]
+  footnotes: [qtp-000901, qtp-011503]
   sources:
+  - {id: qtp-000901, origin: cypress}
   - {id: qtp-011503, origin: cypress}
-  - {id: qtp-098333, origin: cypress}
 - id: tech-065-metals
   page: docs/history/technologies.md
   anchor: The metals differ.
@@ -824,6 +824,35 @@ claims:
   - {id: qtp-032301, origin: cypress}
   - {id: qtp-051501, origin: cypress}
   - {id: qtp-i000005, origin: cypress}
+
+- id: tech-p20
+  page: docs/history/technologies.md
+  anchor: The one 0.8 µm process in the qualification reports is P20
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-091216, qtp-093332]
+  sources:
+  - {id: qtp-091216, origin: cypress}
+  - {id: qtp-093332, origin: cypress}
+- id: tech-l28-first-fab-conflict
+  page: docs/history/technologies.md
+  anchor: Two reports describe the same April 1998 row differently
+  grade: conflict
+  hedge: the reports disagree
+  footnotes: [qtp-011503, qtp-031101, qtp-000901]
+  sources:
+  - {id: qtp-011503, origin: cypress}
+  - {id: qtp-031101, origin: cypress}
+  - {id: qtp-000901, origin: cypress}
+- id: fab2-p20
+  page: docs/history/fabs.md
+  anchor: P20, for MAX EPLDs, by 1993
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-091216, qtp-093332]
+  sources:
+  - {id: qtp-091216, origin: cypress}
+  - {id: qtp-093332, origin: cypress}
 
 # ---- docs/history/sonos-s4.md -----------------------------------------------
 - id: s4-derivative

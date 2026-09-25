@@ -11,7 +11,7 @@ on {ref}`history-naming`.
 
 | Design rule | Process codes in the reports | Main fabs | Earliest date in the sources |
 |---|---|---|---|
-| 1.2 µm and 0.8 µm | none found | Fab 1, Fab 2 | 1.2 µm in 1984; 0.8 µm in production by 1988 |
+| 1.2 µm and 0.8 µm | P20 (0.8 µm) | Fab 1, Fab 2 | 1.2 µm in 1984; 0.8 µm in production by 1988 |
 | 0.65 µm | R28, L28, P26 | Fab 2, Fab 3 | "established" in 1993 |
 | 0.5 µm | R32, R32D | Fab 1, Fab 4 | "emerging" in 1993; RAM3 released in 1995 |
 | 0.42 µm and 0.35 µm | R42D, R42HD, RAM42; S4AD-5 | Fab 4, Fab 2 | 0.35 µm SRAMs in production by early 1997 |
@@ -35,7 +35,12 @@ etching as recent innovations (single source).[^databook-1988] The Gale company 
 
 The 1988 book's PROMs and programmable logic used "an EPROM programming element".[^databook-1988] By 1993
 Cypress listed "proprietary 0.65, 0.8 and 1.2-micron CMOS, 0.8 and 0.5-micron BiCMOS and 0.65-micron
-Flash technologies".[^ar-fy1993] No qualification report found covers these early processes.
+Flash technologies".[^ar-fy1993]
+
+**P20.** The one 0.8 µm process in the qualification reports is P20, at Fab 2, for the CY7C344 and
+CY7C346 MAX EPLDs: two metal layers and 195 Å of gate oxide (Cypress's reports).[^qtp-091216][^qtp-093332]
+Its history lists a 1993 military qualification "with ONO" without saying what the ONO was for.[^qtp-091216]
+No report found covers the 1.2 µm process.
 
 (history-tech-065)=
 ## 0.65 µm: R28, L28 and P26
@@ -47,12 +52,17 @@ reports):[^qtp-096091][^qtp-096411][^qtp-011503]
 * **R28**, an SRAM process: double poly and 165 Å of gate oxide. The earliest R28 reports found are of
   September 1996, at Fab 3; Fab 2 followed in November 1997.[^qtp-096091][^qtp-097476]
 * **P26**, for PROMs and EPROMs such as the CY27C256A, at Fab 2: 165 Å of gate oxide (single source).[^qtp-096411]
-* **L28**, for clock and logic parts: "New Technology L28" at Fab 2 in April 1998, single poly and 145 Å
-  of gate oxide (Cypress's reports).[^qtp-011503][^qtp-098333]
+* **L28**, for clock and logic parts: single poly and 145 Å of gate oxide. One report dates "New
+  Technology L28" to February 1996 (Cypress's reports).[^qtp-000901][^qtp-011503]
 
 The metals differ. R28 has aluminium–silicon between TiW layers ("Ti/TiW/AL-Si/TiW,
 500A/1200A/6000A/1200A"); P26 and the Fab 2 L28 print plain aluminium with TiW (Cypress's
 reports).[^qtp-096091][^qtp-096411][^qtp-011503]
+
+**L28's first fab.** Two reports describe the same April 1998 row differently: "New Technology L28/New
+Device CY227*" in one, "Qualified Technology L28 transfer from Fab 3 to Fab 2" in the other. The second, with
+the 1996 row, suggests L28 began at Fab 3 and moved to Fab 2 in 1998; the reports disagree (Cypress's
+reports).[^qtp-011503][^qtp-031101][^qtp-000901]
 
 L28 was moved to TSMC in 2003. The TSMC version keeps the name and the 0.65 µm rule but uses AlSiCu with
 TiN, a different passivation and 125 Å of gate oxide (Cypress's reports).[^qtp-080608][^qtp-011503]
@@ -299,9 +309,6 @@ reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
 [^qtp-011503]: Cypress Semiconductor, Product Qualification Report QTP 011503: *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2*, December 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>
-[^qtp-098333]: Cypress Semiconductor, Product Qualification Report QTP 98333: *100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC), Fab2, L28 Technology*, August 2003;
-    Wayback Machine copy of the cypress.com download.
-    <https://web.archive.org/web/20201205131229/https://www.cypress.com/file/94086/download>
 [^qtp-080608]: Cypress Semiconductor, Product Qualification Report QTP 080608: *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A*, May 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
 [^qtp-097132]: Cypress Semiconductor, Product Qualification Report QTP 97132: *32K x 8 Low Power SRAM, R32 Technology, Fab4*, June 2014.
@@ -387,3 +394,15 @@ reports).[^qtp-063807][^qtp-061806][^qtp-032003][^qtp-113005]
     Semiconductor), *The Modulation of Crystal Originated Pits by the LOCOS Process in 0.25 µm SRAM
     Technology*, Electrochemical and Solid-State Letters 2 (7), 347, 1999, DOI 10.1149/1.1390832.
     <https://iopscience.iop.org/article/10.1149/1.1390832>
+[^qtp-000901]: Cypress Semiconductor, Product Qualification Report QTP 000901: *Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology*, May 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>
+[^qtp-031101]: Cypress Semiconductor, Product Qualification Report QTP 031101: *High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2*, January 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>
+[^qtp-091216]: Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
+[^qtp-093332]: Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>

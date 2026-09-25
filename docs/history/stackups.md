@@ -24,16 +24,30 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
 
 | Code | Fab as printed | Metal layers | Gate oxide | Report |
 |---|---|---|---|---|
+| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å | QTP 000901[^qtp-000901] |
+| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å | QTP 004604[^qtp-004604] |
 | L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 A | QTP 011503[^qtp-011503] |
+| L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 Å | QTP 012204[^qtp-012204] |
+| L28 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 145 Å | QTP 031101[^qtp-031101] |
 | L28 | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å | QTP 080608[^qtp-080608] |
 | L28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 145 A | QTP 98333[^qtp-098333] |
+| L28 | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å | QTP 99285[^qtp-099285] |
 | L28 | TSMC-2A, Taiwan | 2 | SiO2 / 125 Å | QTP 110605[^qtp-110605] |
 | L28EPD | Cypress Semiconductor – Round Rock, Texas | 2 | SiO2 / 145 Å | QTP 99034[^qtp-099034] |
+| P26 | Magnachip/Cheong-Ju-Korea | 3 | SiO2, 165Å | QTP 054605[^qtp-054605] |
+| P26 | Cypress Semiconductor – Round Rock, Tx (Fab2) | 2 | SiO2, 165Å | QTP 95075[^qtp-095075] |
 | P26 | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 165A | QTP 96411[^qtp-096411] |
+| P26 | Cypress Semiconductor - Round Rock, TX (Fab2) | 2 | SiO2 / 165 Å | QTP 99092[^qtp-099092] |
+| R28 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 165 Å | QTP 95515[^qtp-095515] |
 | R28 | Cypress Semiconductor, Bloomington, MN | 2 | SiO2 / 165 A | QTP 96091[^qtp-096091] |
 | R28 | Cypress Semiconductor, Bloomington, MN | 2 | SiO2 / 165 A | QTP 96182[^qtp-096182] |
+| R28 | Cypress Semiconductor - Bloomington, MN | 2 | SiO2 / 165 Å | QTP 96361[^qtp-096361] |
 | R28 | Cypress Semiconductor -- Round Rock, TX | 2 | SiO2 / 165 Å | QTP 97476[^qtp-097476] |
+| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 98236[^qtp-098236] |
+| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 98252[^qtp-098252] |
 | R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 98393[^qtp-098393] |
+| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 99083[^qtp-099083] |
+| R28 | Cypress Semiconductor - Round Rock, TX | 2 | SiO2 / 165 Å | QTP 99175[^qtp-099175] |
 
 ### 0.5 µm
 
@@ -105,6 +119,26 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
 
 Each table gives one report's metal layers and passivation, with its design rule and the earliest dated row of its qualification history.
 
+### QTP 000901: Fab2/L28
+
+*Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: Feb 96 (QTP 95197).[^qtp-000901]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW | 0.890 µm |
+| Metal 2 | 1,500Å TiW/10,000Å Al/150Å Ti | 1.165 µm |
+| Passivation | 3,000Å TEOS + 15,000Å Si2N4 | — |
+
+### QTP 004604: Fab2/L28
+
+*High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: Apr 98 (QTP 97403).[^qtp-004604]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW | 0.890 µm |
+| Metal 2 | 1,500Å TiW/10,000Å Al/150Å Ti | 1.165 µm |
+| Passivation | 3,000Å TEOS + 15,000Å Si2N4 | — |
+
 ### QTP 011503: Fab2/L28
 
 *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: Apr 98 (QTP 97403).[^qtp-011503]
@@ -115,6 +149,37 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.165 µm |
 | Passivation | 3,000A TEOS + 15,000A Si2N4 | — |
 
+### QTP 012204: Fab2/L28
+
+*High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: Apr 98 (QTP 97403).[^qtp-012204]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW | 0.890 µm |
+| Metal 2 | 1,500Å TiW/10,000Å Al/150Å Ti | 1.165 µm |
+| Passivation | 3,000Å TEOS + 15,000Å Si2N4 | — |
+
+### QTP 031101: Fab2/L28
+
+*High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: Apr 98 (QTP 97403).[^qtp-031101]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW | 0.890 µm |
+| Metal 2 | 1,500Å TiW/10,000Å Al/150Å Ti | 1.165 µm |
+| Passivation | 3,000Å TEOS + 15,000Å Si2N4 | — |
+
+### QTP 054605: Fab2/P26
+
+*P26 TLM Technology Transfer to Magnachip.* Design rule: CMOS, Double Metal/0.65µm. Earliest dated history row: Mar 06 (QTP 054605).[^qtp-054605]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 1500Å TiW / 4000Å Al / 750Å TiW | 0.625 µm |
+| Metal 2 | 1500Å TiW / 4000Å Al / 750Å TiW | 0.625 µm |
+| Metal 3 | 1500Å TiW / 8000Å Al / 750Å TiW | 1.025 µm |
+| Passivation | Oxynitride | — |
+
 ### QTP 080608: TSMC-2A/L28 TSMC
 
 *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A.* Design rule: CMOS, Single Poly, Double Metal/0.65um. Earliest dated history row: May 2003 (QTP 99285).[^qtp-080608]
@@ -124,6 +189,26 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 1 | 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu/ 375Å TiN | 0.648 µm |
 | Metal 2 | 1,500 Å Ti / 8,000Å AlSiCu / 375Å TiN | 0.988 µm |
 | Passivation | 3,000Å SiN / 3,150Å SOG, 1,200Å SiN | — |
+
+### QTP 95075: Fab2/P26
+
+*CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2.* Design rule: CMOS. Double Metal/0.65µm. Earliest dated history row: Aug 96 (QTP 95075).[^qtp-095075]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 6000Å Al / 1200Å TiW | 0.720 µm |
+| Metal 2 | 1500Å TiW / 9000Å Al / 320Å TiW | 1.082 µm |
+| Passivation | Oxynitride | — |
+
+### QTP 95515: Fab3/R28
+
+*64K SRAM, RAM28 TECHNOLOGY.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: the history table gives no dates.[^qtp-095515]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ | 0.890 µm |
+| Metal 2 | TiW/Al-Si/Ti, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
 
 ### QTP 96091: Fab3/R28
 
@@ -145,6 +230,16 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 2 | TiW/Al-Si/Ti 1200A/10000A/150A | 1.135 µm |
 | Passivation | 7000A TEOS + 6000A Oxynitride | — |
 
+### QTP 96361: Fab3/R28
+
+*Double Sync (tm) FIFO.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: June 1997 (QTP 96361).[^qtp-096361]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
+
 ### QTP 96411: Fab 2/ P26
 
 *256K/512K PROM - P26 Technology.* Design rule: CMOS, Double Metal / 0.65µm. Earliest dated history row: no history table.[^qtp-096411]
@@ -158,6 +253,26 @@ Each table gives one report's metal layers and passivation, with its design rule
 ### QTP 97476: Fab2/R28
 
 *256K STATIC RAM "CY7C194/CY7195/CY7C199" R28 PROCESS, FAB 2 QUALIFICATION.* Design rule: CMOS, Double Poly, Double Metal /0.65 m. Earliest dated history row: Nov. 1997 (QTP 97476).[^qtp-097476]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
+
+### QTP 98236: Fab2/R28
+
+*256K x 1 Static RAM, R28 Process, Fab 2 Qualification.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: the history table gives no dates.[^qtp-098236]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
+
+### QTP 98252: Fab2/R28
+
+*CY7C188 32K x 9 Static RAM – R28 Technology – Fab2.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: the history table gives no dates.[^qtp-098252]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|
@@ -194,6 +309,46 @@ Each table gives one report's metal layers and passivation, with its design rule
 | Metal 1 | 500A Ti/1,200A TiW/6,000A Al/1,200A TiW | 0.890 µm |
 | Metal 2 | 1,500A TiW/10,000A Al/150A Ti | 1.165 µm |
 | Passivation | 3,000A TEOS + 15,000A Si2N4 | — |
+
+### QTP 99083: Fab2/R28
+
+*Low Voltage Synchronous FIFO – R28 Technology – Fab2.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: the history table gives no dates.[^qtp-099083]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
+
+### QTP 99092: Fab 2/ P26
+
+*Universal Serial Bus Microcontroller - P26 Technology in Fab 2.* Design rule: CMOS, Double Poly, Double Metal / 0.65µm. Earliest dated history row: the history table gives no dates.[^qtp-099092]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | 6000Å Al, 1200 Å TiW | 0.720 µm |
+| Metal 2 | 1500Å TiW, 9000Å Al, 320Å TiW | 1.082 µm |
+| Passivation | Oxynitride | — |
+
+### QTP 99175: Fab2/R28
+
+*Military Clocked FIFOs – R28 Technology – Fab2.* Design rule: CMOS, Double Poly, Double Metal /0.65 µm. Earliest dated history row: the history table gives no dates.[^qtp-099175]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ | 0.890 µm |
+| Metal 2 | TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å | 1.135 µm |
+| Passivation | 7000A TEOS + 6000A Si2N4 | — |
+
+### QTP 99285: TSMC-2A /L28-TSMC
+
+*L28-TSMC Technology in TSMC-2A, Taiwan.* Design rule: CMOS, Single Poly, Double Metal /0.65 µm. Earliest dated history row: May 2003 (QTP 99285).[^qtp-099285]
+
+| Layer | Films as printed | Layer total (our arithmetic) |
+|---|---|---|
+| Metal 1 | Ti 400Å/TiN 1,000Å/AlSiCu 4,700Å/TiN 375Å | 0.648 µm |
+| Metal 2 | Ti 1,500Å/AlSiCu 8,000Å/TiN 375Å | 0.988 µm |
+| Passivation | SiN 3,000Å/SOG 3,150Å/SiN 12,000Å | — |
 
 ### QTP 110605: TSMC-2A/L28 TSMC
 
@@ -583,10 +738,13 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### Deep dive
 
+* [Cypress, QTP 000901](<https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>) — Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology.[^qtp-000901]
 * [Cypress, QTP 001004](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-001004-productqualificationreport-en.pdf>) — 0.5um TLM Technology, Fab HME, Dual Port SRAM with PCI Bus Controller.[^qtp-001004]
 * [Cypress, QTP 003907](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>) — High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4.[^qtp-003907]
+* [Cypress, QTP 004604](<https://web.archive.org/web/20201025122042/https://www.cypress.com/file/91846/download>) — High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2.[^qtp-004604]
 * [Cypress, QTP 011503](<https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>) — Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2.[^qtp-011503]
 * [Cypress, QTP 011908](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-011908-fast-asynchronous-sram-technology-derivative-r7fd-fab-4-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>) — Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification.[^qtp-011908]
+* [Cypress, QTP 012204](<https://web.archive.org/web/20211208062410/https://www.cypress.com/file/91681/download>) — High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2.[^qtp-012204]
 * [Cypress, QTP 012705](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>) — 1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4.[^qtp-012705]
 * [Cypress, QTP 012801](<https://web.archive.org/web/20210302225236/https://www.cypress.com/file/91706/download>) — 4 Meg SRAM Device R7LD-1.8 Technology, Fab4.[^qtp-012801]
 * [Cypress, QTP 014807](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b>) — Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV.[^qtp-014807]
@@ -595,6 +753,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 * [Cypress, QTP 024110](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>) — 1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4.[^qtp-024110]
 * [Cypress, QTP 030204](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>) — 256K Static RAM Automotive Devices, RAM42HA Technology, Fab 4.[^qtp-030204]
 * [Cypress, QTP 030206](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>) — 256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4.[^qtp-030206]
+* [Cypress, QTP 031101](<https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>) — High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2.[^qtp-031101]
 * [Cypress, QTP 032003](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>) — 36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4.[^qtp-032003]
 * [Cypress, QTP 032005](<https://web.archive.org/web/20211206184334/https://www.cypress.com/file/92296/download>) — WirelessUSB Device Family, B53D-3RF Technology, Fab 4.[^qtp-032005]
 * [Cypress, QTP 032301](<https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>) — 16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan.[^qtp-032301]
@@ -605,6 +764,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 * [Cypress, QTP 051207](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-051207-18-meg-qdr-synchronous-sram--cy7c1313d-product-family--r9q-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148e37b08a2>) — 18 MEG QDR SYNCHRONOUS SRAM FAMILY, R9Q-3R TECHNOLOGY, FAB4.[^qtp-051207]
 * [Cypress, QTP 051501](<https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download>) — Cypress Minnesota (CMI) Sort Site Qualification -- 2 Meg, 3V PSRAM Device, PowerChip 0.165µm.[^qtp-051501]
 * [Cypress, QTP 053301](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>) — L8C-3R Technology, Fab 4.[^qtp-053301]
+* [Cypress, QTP 054605](<https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>) — P26 TLM Technology Transfer to Magnachip.[^qtp-054605]
 * [Cypress, QTP 061806](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>) — 4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4.[^qtp-061806]
 * [Cypress, QTP 062201](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-062201-mobl-adm-dual-port-static-ram-family-r52ld-3-technology-fab4-productqualificationreport-en.pdf>) — MoBL ADM Dual Port Static RAM Family, R52LD-3 Technology, Fab4.[^qtp-062201]
 * [Cypress, QTP 062509](<https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>) — Neutron Device Family, S4AD-5 Technology, GSMC.[^qtp-062509]
@@ -613,17 +773,26 @@ Each table gives one report's metal layers and passivation, with its design rule
 * [Cypress, QTP 080608](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>) — High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A.[^qtp-080608]
 * [Cypress, QTP 082506](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>) — PCI-E Clock Family, R52T-3 Technology, Fab 4.[^qtp-082506]
 * [Cypress, QTP 091302](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>) — MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC.[^qtp-091302]
+* [Cypress, QTP 95075](<https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>) — CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2.[^qtp-095075]
+* [Cypress, QTP 95515](<https://web.archive.org/web/20201026132608/https://www.cypress.com/file/93461/download>) — 64K SRAM, RAM28 TECHNOLOGY.[^qtp-095515]
 * [Cypress, QTP 96091](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-96091-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148ab080847>) — Dual Port SRAM - R28 Technology, 6% Shrink.[^qtp-096091]
 * [Cypress, QTP 96182](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-96182-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148acf9084a>) — Dual Port SRAM - R28 Technology.[^qtp-096182]
+* [Cypress, QTP 96361](<https://web.archive.org/web/20210518225925/https://www.cypress.com/file/93546/download>) — Double Sync (tm) FIFO.[^qtp-096361]
 * [Cypress, QTP 96411](<https://web.archive.org/web/20201026124735/https://www.cypress.com/file/93566/download>) — 256K/512K PROM - P26 Technology.[^qtp-096411]
 * [Cypress, QTP 97132](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97132-32k-x-8-low-power-sram-r32-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714947ff09f5>) — 32K x 8 Low Power SRAM, R32 Technology, Fab4.[^qtp-097132]
 * [Cypress, QTP 97476](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97476-256k-static-ram-r28-process-fab-2-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150d8bb1af5>) — 256K STATIC RAM "CY7C194/CY7195/CY7C199" R28 PROCESS, FAB 2 QUALIFICATION.[^qtp-097476]
 * [Cypress, QTP 98021](<https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>) — 1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices.[^qtp-098021]
+* [Cypress, QTP 98236](<https://web.archive.org/web/20210507140402/https://www.cypress.com/file/94031/download>) — 256K x 1 Static RAM, R28 Process, Fab 2 Qualification.[^qtp-098236]
+* [Cypress, QTP 98252](<https://web.archive.org/web/20200810004607/https://www.cypress.com/file/94051/download>) — CY7C188 32K x 9 Static RAM – R28 Technology – Fab2.[^qtp-098252]
 * [Cypress, QTP 98333](<https://web.archive.org/web/20201205131229/https://www.cypress.com/file/94086/download>) — 100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC), Fab2, L28 Technology.[^qtp-098333]
 * [Cypress, QTP 98368](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-98368-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152cc652012>) — SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4.[^qtp-098368]
 * [Cypress, QTP 98393](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-98393-productqualificationreport-en.pdf>) — Dual Port SRAM - R28 Technology - Fab 2.[^qtp-098393]
 * [Cypress, QTP 99034](<https://web.archive.org/web/20210507224233/https://www.cypress.com/file/94156/download>) — 5V, 8/10 Bit FCT-T, L28EPD Technology, Fab 2.[^qtp-099034]
+* [Cypress, QTP 99083](<https://web.archive.org/web/20201031174241/https://www.cypress.com/file/94181/download>) — Low Voltage Synchronous FIFO – R28 Technology – Fab2.[^qtp-099083]
+* [Cypress, QTP 99092](<https://web.archive.org/web/20201202161536/https://www.cypress.com/file/94191/download>) — Universal Serial Bus Microcontroller - P26 Technology in Fab 2.[^qtp-099092]
+* [Cypress, QTP 99175](<https://web.archive.org/web/20211025130802/https://www.cypress.com/file/94216/download>) — Military Clocked FIFOs – R28 Technology – Fab2.[^qtp-099175]
 * [Cypress, QTP 99202](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-99202-low-voltage-synchronous-asynchronous-ram-r52d-3-technology-at-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491c270982>) — Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4.[^qtp-099202]
+* [Cypress, QTP 99285](<https://web.archive.org/web/20201101022945/https://www.cypress.com/file/94251/download>) — L28-TSMC Technology in TSMC-2A, Taiwan.[^qtp-099285]
 * [Cypress, QTP 102101](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>) — Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification.[^qtp-102101]
 * [Cypress, QTP 110605](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-110605-zero-delay-buffer-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714b37f41005>) — Zero Delay Buffer, L28 Technology, TSMC-2A.[^qtp-110605]
 * [Cypress, QTP 113005](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — 64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4).[^qtp-113005]
@@ -632,15 +801,24 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 <!-- footnotes -->
 
+[^qtp-000901]: Cypress Semiconductor, Product Qualification Report QTP 000901: *Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology*, May 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download>
 [^qtp-001004]: Cypress Semiconductor, Product Qualification Report QTP 001004: *0.5um TLM Technology, Fab HME, Dual Port SRAM with PCI Bus Controller*, January 2001.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-001004-productqualificationreport-en.pdf>
 [^qtp-003907]: Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
+[^qtp-004604]: Cypress Semiconductor, Product Qualification Report QTP 004604: *High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2*, May 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201025122042/https://www.cypress.com/file/91846/download>
 [^qtp-011503]: Cypress Semiconductor, Product Qualification Report QTP 011503: *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2*, December 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>
 [^qtp-011908]: Cypress Semiconductor, Product Qualification Report QTP 011908: *Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification*, August 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-011908-fast-asynchronous-sram-technology-derivative-r7fd-fab-4-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150e6271aff>
+[^qtp-012204]: Cypress Semiconductor, Product Qualification Report QTP 012204: *High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2*, September 2001;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211208062410/https://www.cypress.com/file/91681/download>
 [^qtp-012705]: Cypress Semiconductor, Product Qualification Report QTP 012705: *1MEG SRAM Fast Asynchronous Family, R52FFD-3 Technology, Fab 4*, June 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-012705-1meg-sram-fast-asynchronous-family-r52ffd-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148db7c0893>
 [^qtp-012801]: Cypress Semiconductor, Product Qualification Report QTP 012801: *4 Meg SRAM Device R7LD-1.8 Technology, Fab4*, October 2004;
@@ -658,6 +836,9 @@ Each table gives one report's metal layers and passivation, with its design rule
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030204-256k-static-ram-automotive-devices-ram42ha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714980870ac1>
 [^qtp-030206]: Cypress Semiconductor, Product Qualification Report QTP 030206: *256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4*, June 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986>
+[^qtp-031101]: Cypress Semiconductor, Product Qualification Report QTP 031101: *High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2*, January 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>
 [^qtp-032003]: Cypress Semiconductor, Product Qualification Report QTP 032003: *36 Meg Synchronous SRAM Family, Technology R9T-3R, Fab4*, August 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-032003-36-meg-synchronous-sram-family-technology-r9t-3r-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714983cb0ac5>
 [^qtp-032005]: Cypress Semiconductor, Product Qualification Report QTP 032005: *WirelessUSB Device Family, B53D-3RF Technology, Fab 4*, May 2005;
@@ -685,6 +866,9 @@ Each table gives one report's metal layers and passivation, with its design rule
     <https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download>
 [^qtp-053301]: Cypress Semiconductor, Product Qualification Report QTP 053301: *L8C-3R Technology, Fab 4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-053301-l8c-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149c4a70b8f>
+[^qtp-054605]: Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
 [^qtp-061806]: Cypress Semiconductor, Product Qualification Report QTP 061806: *4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4*, March 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db>
 [^qtp-062201]: Cypress Semiconductor, Product Qualification Report QTP 062201: *MoBL ADM Dual Port Static RAM Family, R52LD-3 Technology, Fab4*, June 2014.
@@ -701,10 +885,19 @@ Each table gives one report's metal layers and passivation, with its design rule
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-082506-pci-e-clock-family-r52t-3-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a4cbb0d39>
 [^qtp-091302]: Cypress Semiconductor, Product Qualification Report QTP 091302: *MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC*, February 2025.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>
+[^qtp-095075]: Cypress Semiconductor, Product Qualification Report QTP 95075: *CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2*, November 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download>
+[^qtp-095515]: Cypress Semiconductor, Product Qualification Report QTP 95515: *64K SRAM, RAM28 TECHNOLOGY*, July 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201026132608/https://www.cypress.com/file/93461/download>
 [^qtp-096091]: Cypress Semiconductor, Product Qualification Report QTP 96091: *Dual Port SRAM - R28 Technology, 6% Shrink*, September 1996.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-96091-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148ab080847>
 [^qtp-096182]: Cypress Semiconductor, Product Qualification Report QTP 96182: *Dual Port SRAM - R28 Technology*, September 1996.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-96182-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148acf9084a>
+[^qtp-096361]: Cypress Semiconductor, Product Qualification Report QTP 96361: *Double Sync (tm) FIFO*, June 1997;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210518225925/https://www.cypress.com/file/93546/download>
 [^qtp-096411]: Cypress Semiconductor, Product Qualification Report QTP 96411: *256K/512K PROM - P26 Technology*, May 1997;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201026124735/https://www.cypress.com/file/93566/download>
@@ -715,6 +908,12 @@ Each table gives one report's metal layers and passivation, with its design rule
 [^qtp-098021]: Cypress Semiconductor, Product Qualification Report QTP 98021: *1 Meg SRAM (5% Shrink), R32D Technology, Fab 4 -- Military Devices*, July 1998;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20210507141403/https://www.cypress.com/file/93501/download>
+[^qtp-098236]: Cypress Semiconductor, Product Qualification Report QTP 98236: *256K x 1 Static RAM, R28 Process, Fab 2 Qualification*, August 1998;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507140402/https://www.cypress.com/file/94031/download>
+[^qtp-098252]: Cypress Semiconductor, Product Qualification Report QTP 98252: *CY7C188 32K x 9 Static RAM – R28 Technology – Fab2*, November 1998;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810004607/https://www.cypress.com/file/94051/download>
 [^qtp-098333]: Cypress Semiconductor, Product Qualification Report QTP 98333: *100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC), Fab2, L28 Technology*, August 2003;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201205131229/https://www.cypress.com/file/94086/download>
@@ -725,8 +924,20 @@ Each table gives one report's metal layers and passivation, with its design rule
 [^qtp-099034]: Cypress Semiconductor, Product Qualification Report QTP 99034: *5V, 8/10 Bit FCT-T, L28EPD Technology, Fab 2*, March 1999;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20210507224233/https://www.cypress.com/file/94156/download>
+[^qtp-099083]: Cypress Semiconductor, Product Qualification Report QTP 99083: *Low Voltage Synchronous FIFO – R28 Technology – Fab2*, March 1999;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201031174241/https://www.cypress.com/file/94181/download>
+[^qtp-099092]: Cypress Semiconductor, Product Qualification Report QTP 99092: *Universal Serial Bus Microcontroller - P26 Technology in Fab 2*, August 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201202161536/https://www.cypress.com/file/94191/download>
+[^qtp-099175]: Cypress Semiconductor, Product Qualification Report QTP 99175: *Military Clocked FIFOs – R28 Technology – Fab2*, October 1999;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211025130802/https://www.cypress.com/file/94216/download>
 [^qtp-099202]: Cypress Semiconductor, Product Qualification Report QTP 99202: *Low Voltage Synchronous/Asynchronous RAM, R52D-3 Technology at Fab 4*, May 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-99202-low-voltage-synchronous-asynchronous-ram-r52d-3-technology-at-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491c270982>
+[^qtp-099285]: Cypress Semiconductor, Product Qualification Report QTP 99285: *L28-TSMC Technology in TSMC-2A, Taiwan*, November 2008;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201101022945/https://www.cypress.com/file/94251/download>
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
 [^qtp-110605]: Cypress Semiconductor, Product Qualification Report QTP 110605: *Zero Delay Buffer, L28 Technology, TSMC-2A*, March 2025.

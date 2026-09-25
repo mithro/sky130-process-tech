@@ -2818,10 +2818,880 @@ documents:
     location: p.3, Technology/Fab Process Description
   - text: SiO2 /70A
     location: p.3, Technology/Fab Process Description
-  - text: 'Fab4/RAM42HA'
+  - text: Fab4/RAM42HA
     location: p.3, Die Fab Line ID
-  notes: >-
-    RAM42HA is the 3 V version (CY62256V, "2.7V-3.6V"): 70 Å gate oxide and a TiW/AlCu/TiW metal. The
-    5 V RAM42HHA (qtp-030206, "256K, 5V Automotive Qualification") prints 110 Å and "500A Cu-Ti/8000A A1".
-    The two are different variants, not a conflict. The history row prints the number 030206 against a
-    3 V qualification that qtp-030206 dates the same month for its 5 V part.
+  notes: 'RAM42HA is the 3 V version (CY62256V, "2.7V-3.6V"): 70 Å gate oxide and a TiW/AlCu/TiW metal.
+    The 5 V RAM42HHA (qtp-030206, "256K, 5V Automotive Qualification") prints 110 Å and "500A Cu-Ti/8000A
+    A1". The two are different variants, not a conflict. The history row prints the number 030206 against
+    a 3 V qualification that qtp-030206 dates the same month for its 5 V part.'
+- id: qtp-091216
+  origin: cypress
+  doc_type: QTP
+  number: '91216'
+  cypress_document_number: null
+  title: MAX EPLD, P20 Technology, Fab 2
+  version: '1.0'
+  date_printed: March 2000
+  url: https://www.cypress.com/file/93411/download
+  archive_url: https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download
+  retrieved: '2026-09-25'
+  sha256: fbf0be83f79f526d2ad92938730f74af9d5f9936fb7cc9b36df5bf10502f40d1
+  technology_codes:
+  - P20
+  - P20DHZ
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C344
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/ 1200Å TiW/6000Å Al/500Å Ti; Metal 2: 1minRF/1500Å Ti/9000Å Al'
+    passivation: Oxide/Oxynitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.8 µm
+    gate_oxide: SiO2 / 195 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX (Fab2)
+    die_fab_line_id: Fab2/P20
+  qualification_history:
+  - number: '91216'
+    description: To qualified CY7C344 in a qualified P20 Technology
+    date: null
+  - number: '93321'
+    description: Mil Qual. (Group C) with ONO
+    date: null
+  - number: '97239'
+    description: Military Burn-In Reduction
+    date: null
+  - number: '98153'
+    description: Military Voltage Reduction
+    date: null
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – P20DHZ
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/P20'
+    location: p.2, Technology/Fab Process Description
+  - text: QTP
+    location: p.6, undated footnote list (the printed footnote marker '5' runs directly into 'QTP', no
+      space)
+  notes: 'P20 (MAX EPLD, Fab 2, licensed from Altera) is not named in qtp.yaml before this round: 2 metal
+    layers, CMOS Double Metal, 0.8 µm design rule, 195 Å gate oxide -- the coarsest design rule found
+    anywhere in this corpus so far, coarser than P26 and R28 (both 0.65 µm) and S4AD-5/R32 (0.5 µm), consistent
+    with P20 being an older Cypress technology generation. This report''s own Technology/Fab Process Description
+    section heading reads "P20DHZ" -- a suffix not seen elsewhere and not explained -- while its Die Fab
+    Line ID field plainly reads "Fab2/P20"; see qtp-093332 (same P20 technology, plain "P20" heading)
+    for the same figures without the "DHZ" suffix. The Metal 2 composition field prints an apparently
+    garbled token "1minRF" ahead of "1500Å Ti/9000Å Al", kept verbatim since its intended meaning cannot
+    be recovered from this document alone. No qualification-history row in either P20 report carries a
+    date; the four QTP numbers combined on this cover (91216/93321/97239/98153) are itemised only in an
+    undated footnote list, so P20''s own origin date cannot be fixed from this corpus.'
+- id: qtp-093332
+  origin: cypress
+  doc_type: QTP
+  number: '93332'
+  cypress_document_number: null
+  title: MAX EPLD, P20 Technology, Fab 2
+  version: '1.0'
+  date_printed: March 2000
+  url: https://www.cypress.com/file/93456/download
+  archive_url: https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download
+  retrieved: '2026-09-25'
+  sha256: 0fab14a9650352d7d306ac6e72210d0c8026bd0c58cbdc1ab1e63386db215fd3
+  technology_codes:
+  - P20
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C346
+  die_ids:
+  - Z1031
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500 Ti/ 1200TiW6K Al/500Ti; Metal 2: 1minRF/1500Ti/9KAl'
+    passivation: Oxide
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.8 µm
+    gate_oxide: SiO2 / 195 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX (Fab2)
+    die_fab_line_id: Fab2/P20
+  qualification_history:
+  - number: '93332'
+    description: (Product Qualification)
+    date: null
+  - number: '97316'
+    description: Military Burn-In reduction
+    date: null
+  - number: '99211'
+    description: Commercial Burn-In elimination
+    date: null
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – P20
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/P20'
+    location: p.2, Technology/Fab Process Description
+  - text: QTP
+    location: p.6, footnote list
+  notes: The sibling MAX EPLD report to qtp-091216 (128-macrocell CY7C346, same combined-QTP-number cover
+    style). Gives identical P20 process figures -- 2 metal layers, 0.8 µm, 195 Å gate oxide, Fab2/P20
+    -- confirming P20's figures verbatim across two independently retrieved reports; unlike qtp-091216,
+    this report's process-description heading reads plain "P20" with no "DHZ" suffix, for what is otherwise
+    the same technology at the same fab. As with qtp-091216, no qualification-history row carries a date,
+    so P20's own origin date is not fixed by either report.
+- id: qtp-095075
+  origin: cypress
+  doc_type: QTP
+  number: '95075'
+  cypress_document_number: null
+  title: CY27H010 128 x 8 High Speed CMOS EPROM, P26 Technology, Fab2
+  version: '2.0'
+  date_printed: November 2005
+  url: https://www.cypress.com/file/93301/download
+  archive_url: https://web.archive.org/web/20201028070349/https://www.cypress.com/file/93301/download
+  retrieved: '2026-09-25'
+  sha256: 098b3db8a9c5e30514645bd6d4a8a1d74919972da15030da46543cb12bce8241
+  technology_codes:
+  - P26
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY27H010
+  die_ids:
+  - 7C201A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 6000Å Al / 1200Å TiW; Metal 2: 1500Å TiW / 9000Å Al / 320Å TiW'
+    passivation: Oxynitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS. Double Metal/0.65µm
+    gate_oxide: SiO2, 165Å
+    fab_location: Cypress Semiconductor – Round Rock, Tx (Fab2)
+    die_fab_line_id: Fab2/P26
+  qualification_history:
+  - number: '95075'
+    description: Qualify New Device (CY27H010) in P26 Technology, Fab2
+    date: Aug 96
+  quotes:
+  - text: Qualify New Device (CY27H010) in P26 Technology, Fab2
+    location: p.2, Technology Qualification History, row 95075
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION  - P26
+    location: p.3, section heading (double space before the hyphen, as printed)
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/P26'
+    location: p.3, Technology/Fab Process Description
+  notes: This report's own history row dates a P26 qualification ("Qualify New Device (CY27H010) in P26
+    Technology, Fab2", QTP 95075) to Aug 96 -- earlier than round 2's previously-earliest P26 report (qtp-096411,
+    May 97) -- making Aug 96 the earliest dated P26 reference in this corpus. A companion report (qtp-099092,
+    this round) independently names 95075 as one of four QTP numbers ("96411, 96352, 95517 and 95075")
+    that together qualified P26 at Fab 2; 96352 and 95517 are named but not independently retrieved. Process
+    figures here (2 metal layers, 0.65 µm, 165 Å gate oxide) match qtp-096411 and qtp-099092 exactly.
+    This report is a reissue (V. 2.0, printed November 2005) of an originally 1996 qualification, the
+    same reissue pattern already seen throughout this corpus for older reports.
+- id: qtp-099092
+  origin: cypress
+  doc_type: QTP
+  number: '99092'
+  cypress_document_number: null
+  title: Universal Serial Bus Microcontroller - P26 Technology in Fab 2
+  version: '2.0'
+  date_printed: August 2003
+  url: https://www.cypress.com/file/94191/download
+  archive_url: https://web.archive.org/web/20201202161536/https://www.cypress.com/file/94191/download
+  retrieved: '2026-09-25'
+  sha256: 3af26bb78542c298f30a411b97dde865aa33de2bbf7f704daca53fc03db68bcb
+  technology_codes:
+  - P26
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C63000A
+  - CY7C63001A
+  - CY7C63100A
+  - CY7C63101A
+  - CY7C63200A
+  - CY7C63201A
+  die_ids:
+  - 7C6302A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 6000Å Al, 1200 Å TiW; Metal 2: 1500Å TiW, 9000Å Al, 320Å TiW'
+    passivation: Oxynitride
+    free_phosphorus_percent: None
+    design_rule: CMOS, Double Poly, Double Metal / 0.65µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX (Fab2)
+    die_fab_line_id: Fab 2/ P26
+    transistors: 50,000
+    gates: 10,000
+  qualification_history:
+  - number: '96514'
+    description: CY7C63101 Rev. A qualified in Fab2, P26 technology
+    date: null
+  - number: '99092'
+    description: Qualify CY7C63*A Rev. G, all layer mask changed on qualified device CY7C63* (7C6302A)
+      fabricated in Fab2, P26 technology.
+    date: null
+  quotes:
+  - text: Qualify CY7C63*A Rev. G, all layer mask changed on qualified device CY7C63* (7C6302A) fabricated
+      in Fab2, P26 technology.
+    location: p.2, Product Description, Qualification Purpose
+  - text: CY7C63101 Rev. A qualified in Fab2, P26 technology
+    location: p.6, footnote 1
+  - text: The P26 technology was qualified in Fab2 with a Fit Rate of 14 - 398,000 DHRs. with 0 reject
+      (QTP
+    location: p.5, Reliability Failure Rate Summary, footnote 3
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab 2/ P26'
+    location: p.2, Technology/Fab Process Description
+  notes: 'This report''s own footnote names four QTP numbers as the batch that originally qualified P26
+    at Fab 2 ("QTP # 96411, 96352, 95517 and 95075"); two of these are independently retrieved in this
+    corpus (qtp-096411, round 2; qtp-095075, this round), while 96352 and 95517 are named here but not
+    independently retrieved. Process figures here (2 metal layers, 0.65 µm, 165 Å gate oxide, CMOS Double
+    Poly Double Metal) match qtp-096411 and qtp-095075 exactly. Unlike those two reports, this document''s
+    Technology/Fab Process Description section heading is printed with no technology code at all ("TECHNOLOGY/FAB
+    PROCESS DESCRIPTION", no "- P26" suffix) -- a blank-heading variant of the mismatched/stale-heading
+    pattern already noted repeatedly for this corpus.'
+- id: qtp-054605
+  origin: cypress
+  doc_type: QTP
+  number: '054605'
+  cypress_document_number: null
+  title: P26 TLM Technology Transfer to Magnachip
+  version: '1.0'
+  date_printed: March 2006
+  url: https://www.cypress.com/file/92866/download
+  archive_url: https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download
+  retrieved: '2026-09-25'
+  sha256: f4dff30d0e0ea1cdf9fcac4d5a080a9db61f64e1ed6160fe63b6fa95133d1d9a
+  technology_codes:
+  - P26
+  - P26 TLM
+  fab: Magnachip Semiconductor, Cheong-Ju, Korea (transferred from Cypress Fab 2; "Fab2-Magnachip" in
+    Cypress's own labelling)
+  products:
+  - CY7C63722
+  - CY7C63723
+  - CY7C63743
+  die_ids:
+  - 7C6370A
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 1500Å TiW / 4000Å Al / 750Å TiW; Metal 2: 1500Å TiW / 4000Å Al / 750Å
+      TiW; Metal 3: 1500Å TiW / 8000Å Al / 750Å TiW'
+    passivation: Oxynitride
+    design_rule: CMOS, Double Metal/0.65µm
+    gate_oxide: SiO2, 165Å
+    fab_location: Magnachip/Cheong-Ju-Korea
+    die_fab_line_id: Fab2/P26
+  qualification_history:
+  - number: '054605'
+    description: P26 TLM Technology at Magnachip
+    date: Mar 06
+  quotes:
+  - text: P26 TLM Technology at Magnachip
+    location: p.2, Qualification History, row 054605
+  - text: Qualify P26 TLM Technologyat Magnachip
+    location: p.3, Product Description, Qualification Purpose (sic, printed with no space between 'Technology'
+      and 'at')
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/P26'
+    location: p.3, Technology/Fab Process Description
+  notes: 'The first dated "New Technology"-style qualification-history row found in this corpus for P26''s
+    transfer to Magnachip (Cheong-Ju, Korea): "P26 TLM Technology at Magnachip", Mar 06, QTP 054605 --
+    confirming the transfer and giving its qualification date, filling the gap left by round 2 where P26
+    was known only from Cypress''s own Fab 2 reports. Despite the fab move, the Die Fab Line ID field
+    is left unchanged as "Fab2/P26" (not renamed for Magnachip), the same pattern already seen for L28''s
+    TSMC-2A transfer (qtp-080608, round 2). Unlike the Fab 2 reports (2 metal layers), this Magnachip
+    version of P26 prints 3 metal layers, though design rule (0.65 µm) and gate oxide (165 Å) are unchanged
+    -- a genuine stackup difference between the origin fab and the transferred foundry, the same pattern
+    already documented for L28 (Fab 2 vs TSMC-2A, round 2, inconsistency 9).'
+- id: qtp-098252
+  origin: cypress
+  doc_type: QTP
+  number: '98252'
+  cypress_document_number: null
+  title: CY7C188 32K x 9 Static RAM – R28 Technology – Fab2
+  version: '1.0'
+  date_printed: November 1998
+  url: https://www.cypress.com/file/94051/download
+  archive_url: https://web.archive.org/web/20200810004607/https://www.cypress.com/file/94051/download
+  retrieved: '2026-09-25'
+  sha256: 30e171729bc40f33ea8e37e6df98faf10ae407709aa0a110e484b92f21040ed8
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C188
+  die_ids:
+  - 7C188A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history:
+  - number: '97476'
+    description: 32K x 8 SRAM, R28 Technology, Fab2 qualification.
+    date: null
+  - number: '98252'
+    description: CY7C188, Low Cost 256K SRAM, R28 Technology, Fab2
+    date: null
+  quotes:
+  - text: CY7C188, Low Cost 256K SRAM, R28 Technology, Fab2
+    location: p.2, Product Description, Qualification Purpose
+  - text: QTP 97476, 32K x 8 SRAM, R28 Technology, Fab2 qualification.
+    location: p.7, footnote 1
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/R28'
+    location: p.2, Technology/Fab Process Description
+  notes: R28 here (2 metal layers, CMOS Double Poly Double Metal, 0.65 µm, 165 Å gate oxide) matches round
+    2's established R28 figures exactly (every R28 report in this corpus agrees at 0.65 µm / 165 Å). This
+    report references a prior "QTP 97476, 32K x 8 SRAM, R28 Technology, Fab2 qualification" for its reliability-failure-rate
+    baseline, naming a still-earlier Fab 2 R28 report not independently retrieved in this corpus.
+- id: qtp-099175
+  origin: cypress
+  doc_type: QTP
+  number: '99175'
+  cypress_document_number: null
+  title: Military Clocked FIFOs – R28 Technology – Fab2
+  version: '1.0'
+  date_printed: October 1999
+  url: https://www.cypress.com/file/94216/download
+  archive_url: https://web.archive.org/web/20211025130802/https://www.cypress.com/file/94216/download
+  retrieved: '2026-09-25'
+  sha256: 79302e7d73233e2ce8a6fa6bd6875174e84b78cad79497263feef51a2d4b30a7
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C441
+  - CY7C443
+  - CY7C451
+  - CY7C453
+  - CY7C454
+  die_ids:
+  - 7C453A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history:
+  - number: '96154'
+    description: The Clocked FIFO, R28 Technology was qualified in Fab3 with a Fit rate of 28.
+    date: null
+  - number: '98312'
+    description: Commercial Clocked FIFO, R28 Technology, Fab2 qualification.
+    date: null
+  - number: '99175'
+    description: to qualify CY7C454 (Rev. B) and the options for military, R28 technology, Fab2.
+    date: null
+  quotes:
+  - text: The Clocked FIFO, R28 Technology was qualified in Fab3 with a Fit rate of 28, QTP 96154.
+    location: p.4, Reliability Failure Rate Summary, footnote 4
+  - text: QTP 98312, Commercial Clocked FIFO, R28 Technology, Fab2 qualification.
+    location: p.6, footnote 1
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/R28'
+    location: p.2, Technology/Fab Process Description
+  notes: 'Two further R28 origin references not previously in this corpus: "The Clocked FIFO, R28 Technology
+    was qualified in Fab3 with a Fit rate of 28, QTP 96154" (a Fab 3 R28 qualification, not independently
+    retrieved) and "QTP 98312, Commercial Clocked FIFO, R28 Technology, Fab2 qualification" (a Fab 2 R28
+    qualification, also not independently retrieved). Process figures here (2 metal layers, 0.65 µm, 165
+    Å gate oxide) match every other R28 report in this corpus.'
+- id: qtp-095515
+  origin: cypress
+  doc_type: QTP
+  number: '95515'
+  cypress_document_number: null
+  title: 64K SRAM, RAM28 TECHNOLOGY
+  version: '3.0'
+  date_printed: July 2003
+  url: https://www.cypress.com/file/93461/download
+  archive_url: https://web.archive.org/web/20201026132608/https://www.cypress.com/file/93461/download
+  retrieved: '2026-09-25'
+  sha256: 471491f0605850396914fefa7bf184d42a0cb3f10899ab2e5a77c1e35ca9522b
+  technology_codes:
+  - R28
+  - RAM28
+  fab: Fab 3 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C185
+  - CY7C186
+  - CY6264
+  - CY7C161
+  - CY7C162
+  - CY7C164
+  - CY7C166
+  - CY7C187
+  die_ids:
+  - 7C185C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ; Metal 2: TiW/Al-Si/Ti, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab3/R28
+  qualification_history:
+  - number: '95311'
+    description: 64K SRAM, 7C185 Rev. K, R28 process.
+    date: null
+  - number: '96024'
+    description: 64K SRAM, 7C185 Rev. L, R28 process, production burn-in elimination.
+    date: null
+  quotes:
+  - text: 64K SRAM, RAM28 TECHNOLOGY
+    location: p.1, cover title
+  - text: Qtp
+    location: p.5, footnote 1
+  - text: Qtp
+    location: p.6, footnote 2
+  - text: Fab3/R28
+    location: p.2, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  notes: The cover of this report names the technology "RAM28" rather than "R28" (the device-description
+    field below separately calls it "R28 process, 256K SRAM Chop") -- the first "RAM28" spelling found
+    in this corpus, alongside the plain "R28" used throughout every other report. Confirms R28 directly
+    at Fab 3 (Cypress Semiconductor, Bloomington, MN), with the same figures (2 metal layers, 0.65 µm,
+    165 Å gate oxide) as the Fab 2 R28 reports -- consistent with, not contradicting, round 2's finding
+    that R28's figures stayed identical across its Fab3-to-Fab2 transfer (qtp-098393).
+- id: qtp-099083
+  origin: cypress
+  doc_type: QTP
+  number: '99083'
+  cypress_document_number: null
+  title: Low Voltage Synchronous FIFO – R28 Technology – Fab2
+  version: '1.0'
+  date_printed: March 1999
+  url: https://www.cypress.com/file/94181/download
+  archive_url: https://web.archive.org/web/20201031174241/https://www.cypress.com/file/94181/download
+  retrieved: '2026-09-25'
+  sha256: f6e6a9a777e42f3bf6da8a062ae576eee7c8456a36d031f3b3ce7b0127427518
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX), transferred from Fab 3
+  products:
+  - CY7C4245V
+  - CY7C4235V
+  - CY7C4225V
+  - CY7C4215V
+  - CY7C4205V
+  - CY7C4425V
+  - CY7C4251V
+  - CY7C4241V
+  - CY7C4231V
+  - CY7C4221V
+  - CY7C4211V
+  - CY7C4201V
+  - CY7C4421V
+  die_ids:
+  - 7C4345A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history:
+  - number: '97476'
+    description: 32K x 8 SRAM, R28 Technology, Fab2 qualification.
+    date: null
+  - number: '99083'
+    description: To transfer qualified Low Voltage Synchronous FIFO products, CY7C4245V (Rev. A) and its
+      options, R28 technology from Fab 3 to Fab2.
+    date: null
+  quotes:
+  - text: To  transfer qualified Low Voltage Synchronous FIFO products, CY7C4245V (Rev. A) and its options,
+      R28 technology from Fab 3 to Fab2.
+    location: p.2, Product Description, Qualification Purpose
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/R28'
+    location: p.2, Technology/Fab Process Description
+  - text: Long Term Failure Rate are based on R28 Technology qualified in Fab2, QTP 97476 and 98302
+    location: p.5, footnote 5
+  notes: Another explicit R28 Fab3-to-Fab2 transfer statement ("R28 technology from Fab 3 to Fab2"), corroborating
+    qtp-098393's Fab3-to-Fab2 transfer (round 1) for a different device family (Low Voltage Synchronous
+    FIFOs rather than Dual Port SRAM). Process figures (2 metal layers, 0.65 µm, 165 Å gate oxide) match
+    every other R28 report in this corpus. Names two more unretrieved Fab 2 R28 qualifications, QTP 97476
+    (also referenced by qtp-098252 and qtp-098236, this round) and QTP 98302.
+- id: qtp-096361
+  origin: cypress
+  doc_type: QTP
+  number: '96361'
+  cypress_document_number: null
+  title: Double Sync (tm) FIFO
+  version: '1.0'
+  date_printed: June 1997
+  url: https://www.cypress.com/file/93546/download
+  archive_url: https://web.archive.org/web/20210518225925/https://www.cypress.com/file/93546/download
+  retrieved: '2026-09-25'
+  sha256: c261fcb0dd5d00634f6e2b9ad3b7504b9aba7d1225d9570a432d22d1a2c79db1
+  technology_codes:
+  - R28
+  fab: Fab 3 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C4081
+  - CY7C4811
+  - CY7C4821
+  - CY7C4831
+  - CY7C4841
+  - CY7C4851
+  die_ids:
+  - Double CY7C4241A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab3/R28
+  qualification_history:
+  - number: '96361'
+    description: generic qualification of the Double Sync FIFO family
+    date: June 1997
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R28
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID:'
+    location: p.2, Technology/Fab Process Description (the value 'Fab3/R28' prints on the following line)
+  - text: Fab3/R28
+    location: p.2, Technology/Fab Process Description, Die Fab Line ID/Wafer Process ID
+  notes: 'A second independent R28-at-Fab-3 confirmation this round (alongside qtp-095515): identical
+    process figures (2 metal layers, 0.65 µm, 165 Å gate oxide, Cypress Semiconductor - Bloomington, MN)
+    to every other R28 report in this corpus. No dated qualification-history table is printed in this
+    early (June 1997) report, matching the pattern already noted for other pre-1998 reports in this corpus.'
+- id: qtp-098236
+  origin: cypress
+  doc_type: QTP
+  number: '98236'
+  cypress_document_number: null
+  title: 256K x 1 Static RAM, R28 Process, Fab 2 Qualification
+  version: '1.0'
+  date_printed: August 1998
+  url: https://www.cypress.com/file/94031/download
+  archive_url: https://web.archive.org/web/20210507140402/https://www.cypress.com/file/94031/download
+  retrieved: '2026-09-25'
+  sha256: 74cf6085371175131c52bad3f198d6b04b249cb1af9cb3f26e456f1cbca2e5be
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C197
+  die_ids:
+  - 7C199C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2KÅ; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history:
+  - number: '97476'
+    description: 32K x 4 SRAM, CY7C199, R28 technology, Fab 2 qualification
+    date: null
+  - number: '98236'
+    description: Qualify Fab 2 for 256K SRAM, R28 process (CY7C197 Rev. R)
+    date: null
+  quotes:
+  - text: Qualify Fab 2 for 256K SRAM, R28 process (CY7C197 Rev. R)
+    location: p.2, Product Description, Qualification Purpose
+  - text: 32K x 4 SRAM, CY7C199, R28 technology, Fab 2 qualification
+    location: p.7, footnote 1
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/R28'
+    location: p.2, Technology/Fab Process Description
+  notes: 'This report''s own cypress.com page slug names it "fab-4-256k-x-1-sram-r28-technology" (a mislabel
+    on Cypress''s web page: every field inside the document itself -- title banner, Qualification Purpose,
+    Die Fab Line ID -- says Fab 2, not Fab 4); the corpus has no genuine R28-at-Fab-4 report, only this
+    one incorrectly-labelled web page for an otherwise ordinary Fab 2 report. Process figures (2 metal
+    layers, 0.65 µm, 165 Å gate oxide) match every other R28 report in this corpus.'
+- id: qtp-004604
+  origin: cypress
+  doc_type: QTP
+  number: '004604'
+  cypress_document_number: null
+  title: High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2
+  version: '1.2'
+  date_printed: May 2003
+  url: https://www.cypress.com/file/91846/download
+  archive_url: https://web.archive.org/web/20201025122042/https://www.cypress.com/file/91846/download
+  retrieved: '2026-09-25'
+  sha256: 55ed4ccf072878be9dffc93e66433d281d70a9f2b046f6306434cf0a999d5896
+  technology_codes:
+  - L28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY5039WAF
+  die_ids:
+  - 7C80320A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW; Metal 2: 1,500Å TiW/10,000Å
+      Al/150Å Ti'
+    passivation: 3,000Å TEOS + 15,000Å Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/L28
+    transistors: 4909
+    gates: 1227
+  qualification_history:
+  - number: '97403'
+    description: New Technology L28/New Device CY227*
+    date: Apr 98
+  - number: '98225'
+    description: New Device CY2037AWAF/CY5037AWAF, L28 Technology
+    date: Sep 98
+  - number: '004604'
+    description: New DeviceCY5039WAF (4-layer mask revision of qualified CY5037AWAF), L28 Technology
+    date: Dec 00
+  quotes:
+  - text: New Technology L28/New Device CY227*
+    location: p.2, Product Qualification History, row 97403
+  - text: New Device CY2037AWAF/CY5037AWAF, L28 Technology
+    location: p.2, Product Qualification History, row 98225
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Independently confirms round 2''s L28 origin finding: this report''s own history table repeats
+    the identical row "New Technology L28/New Device CY227*", QTP 97403, Apr 98 -- verbatim the same row
+    already found in qtp-011503 -- and adds two further dated L28 history rows not previously in this
+    corpus: "New Device CY2037AWAF/CY5037AWAF, L28 Technology" (QTP 98225, Sep 98) and this report''s
+    own "New DeviceCY5039WAF (4-layer mask revision of qualified CY5037AWAF), L28 Technology" (QTP 004604,
+    Dec 00). Process figures (2 metal layers, CMOS Single Poly Double Metal, 0.65 µm, 145 Å gate oxide,
+    Fab2/L28) match qtp-011503 and qtp-098333 exactly.'
+- id: qtp-000901
+  origin: cypress
+  doc_type: QTP
+  number: 000901
+  cypress_document_number: null
+  title: Three-PLL Programmable Clock Generator, Fab 2 – L28 Technology
+  version: '1.1'
+  date_printed: May 2003
+  url: https://www.cypress.com/file/91341/download
+  archive_url: https://web.archive.org/web/20211025142441/https://www.cypress.com/file/91341/download
+  retrieved: '2026-09-25'
+  sha256: 1dfb432ffe1904f2629b6d8538d99102aa6aba677e5000e598b349c82c34e4b2
+  technology_codes:
+  - L28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY2292AS
+  die_ids:
+  - 7C83003A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW; Metal 2: 1,500Å TiW/10,000Å
+      Al/150Å Ti'
+    passivation: 3,000Å TEOS + 15,000Å Si2N4
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/L28
+  qualification_history:
+  - number: '95197'
+    description: New Technology L28 / CY2291 (Rev A/C) Device
+    date: Feb 96
+  - number: '96061'
+    description: CY2291 (Rev D) Device family, L28 Technology
+    date: Mar 96
+  - number: 000901
+    description: Metal Mask layer change to enhance functionality to CY2292 device
+    date: Oct 00
+  quotes:
+  - text: New Technology L28 / CY2291 (Rev A/C) Device
+    location: p.2, Product Qualification History, row 95197
+  - text: CY2291 (Rev D) Device family, L28 Technology
+    location: p.2, Product Qualification History, row 96061
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
+    location: p.3, Technology/Fab Process Description
+  notes: 'A major new finding for this corpus: this report''s own history table dates "New Technology
+    L28 / CY2291 (Rev A/C) Device" to QTP 95197, Feb 96 -- more than two years earlier than round 2''s
+    previously-earliest L28 date (QTP 97403, Apr 98, from qtp-011503 and this round''s qtp-004604). Combined
+    with qtp-031101 (this round), which describes QTP 97403 as "Qualified Technology L28 transfer from
+    Fab 3 to Fab 2" rather than a from-scratch origination, the picture now reads: L28 originated Feb
+    96 (QTP 95197, fab not stated in this row), and was transferred to (or extended at) Fab 2 by Apr 98
+    (QTP 97403) -- not originated at Fab 2 in Apr 98 as round 2''s more limited evidence suggested. Process
+    figures here (2 metal layers, 0.65 µm, 145 Å gate oxide, Fab2/L28) match every other Fab 2 L28 report
+    in this corpus.'
+- id: qtp-012204
+  origin: cypress
+  doc_type: QTP
+  number: '012204'
+  cypress_document_number: null
+  title: High Accuracy EPROM Programmable Crystal Oscillator, L28 Technology, Fab 2
+  version: '1.0'
+  date_printed: September 2001
+  url: https://www.cypress.com/file/91681/download
+  archive_url: https://web.archive.org/web/20211208062410/https://www.cypress.com/file/91681/download
+  retrieved: '2026-09-25'
+  sha256: 8f056e618b8339e5771e4401efb82033d66579b010a5d1e9a5c9b6bc4d5c5d89
+  technology_codes:
+  - L28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY2039WAF
+  - CY5039WAF
+  die_ids:
+  - 7C80320A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW; Metal 2: 1,500Å TiW/10,000Å
+      Al/150Å Ti'
+    passivation: 3,000Å TEOS + 15,000Å Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/L28
+    transistors: 4909
+    gates: 1227
+  qualification_history:
+  - number: '97403'
+    description: New Technology L28/New Device CY227*
+    date: Apr 98
+  - number: '004604'
+    description: New Device, CY5039WAF
+    date: Dec 00
+  - number: '012204'
+    description: MM1 mask change to device CY5039WAF to enhance functionality
+    date: Jun 01
+  quotes:
+  - text: New Technology L28/New Device CY227*
+    location: p.2, Product Qualification History, row 97403
+  - text: New Device, CY5039WAF
+    location: p.2, Product Qualification History, row 004604
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
+    location: p.3, Technology/Fab Process Description
+  notes: 'A sibling report to qtp-004604 for the same die (CY5039WAF, die marking 7C80320A): repeats the
+    same "New Technology L28/New Device CY227*" row (QTP 97403, Apr 98) verbatim, but its own history
+    table omits the "New Device CY2037AWAF/CY5037AWAF, L28 Technology" row (QTP 98225, Sep 98) that qtp-004604
+    lists between 97403 and 004604 -- each report evidently lists only the history directly relevant to
+    its own device lineage rather than every prior L28 qualification. Process figures (2 metal layers,
+    0.65 µm, 145 Å gate oxide, 4909 transistors, 1227 gates, Fab2/L28) are identical to qtp-004604.'
+- id: qtp-031101
+  origin: cypress
+  doc_type: QTP
+  number: '031101'
+  cypress_document_number: null
+  title: High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2
+  version: '1.0'
+  date_printed: January 2005
+  url: https://www.cypress.com/file/92261/download
+  archive_url: https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download
+  retrieved: '2026-09-25'
+  sha256: b02c1bfa31afd36243f7eb9b2f0e56d7bf5da905e8a2979ef626c84a596b561c
+  technology_codes:
+  - L28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX; this report's own "Die Fab" field prints "Bloomington,
+    MN", see notes)
+  products:
+  - CY2037
+  - CY2077
+  - CY5037B
+  die_ids:
+  - 7C80383A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW; Metal 2: 1,500Å TiW/10,000Å
+      Al/150Å Ti'
+    passivation: 3,000Å TEOS + 15,000Å Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab2/L28
+  qualification_history:
+  - number: '97403'
+    description: Qualified Technology L28 transfer from Fab 3 to Fab 2 / New CY227* Product
+    date: Apr 98
+  - number: '98314'
+    description: Qualified CY5037 product transfer from Fab 3 to Fab 2, L28 Technology
+    date: Sep 98
+  - number: '98225'
+    description: Redesign of CY5037 Product, L28 Technology, Fab 2
+    date: Oct 98
+  - number: '031101'
+    description: CY5037/CY2077 Device qual, L28 Technology, Fab2
+    date: May 03
+  quotes:
+  - text: Qualified Technology L28 transfer from Fab 3 to Fab 2 / New CY227* Product
+    location: p.2, Product Qualification History, row 97403
+  - text: Qualified CY5037 product transfer from Fab 3 to Fab 2, L28 Technology
+    location: p.2, Product Qualification History, row 98314
+  - text: 'Name/Location of Die Fab (prime) Facility: Cypress Semiconductor - Bloomington, MN'
+    location: p.3, Technology/Fab Process Description (compare the Die Fab Line ID field two lines below,
+      which reads plain Fab2/L28)
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
+    location: p.3, Technology/Fab Process Description
+  notes: This report describes QTP 97403 as "Qualified Technology L28 transfer from Fab 3 to Fab 2" --
+    explicitly a transfer, not a from-scratch origination -- contradicting the wording in qtp-011503 (round
+    2) and qtp-004604 (this round), both of which give the same QTP number's own row as "New Technology
+    L28/New Device CY227*" with no mention of a transfer. Combined with qtp-000901 (this round), which
+    independently dates an actual "New Technology L28" origin to QTP 95197, Feb 96 (predating 97403 by
+    over two years), the most consistent reading is that L28 originated Feb 96 and QTP 97403 (Apr 98)
+    was its transfer/extension to Fab 2 -- with different reports summarising the same historical event
+    differently. This report also names a second, independently unretrieved Fab3-to-Fab2 L28 transfer,
+    QTP 98314 ("Qualified CY5037 product transfer from Fab 3 to Fab 2"), Sep 98. Separately, this report's
+    own "Name/Location of Die Fab (prime) Facility" field reads "Cypress Semiconductor - Bloomington,
+    MN" (the Fab 3/Fab 4 location) even though its Die Fab Line ID two lines below it plainly reads "Fab2/L28"
+    and every other field (design rule, gate oxide, metal stack) matches the other Fab 2 L28 reports exactly
+    -- almost certainly a stale/copy-pasted field from an earlier Fab 3 version of this device's qualification
+    history, not evidence that L28 ran at Bloomington under the "Fab2" label.
+- id: qtp-099285
+  origin: cypress
+  doc_type: QTP
+  number: '99285'
+  cypress_document_number: null
+  title: L28-TSMC Technology in TSMC-2A, Taiwan
+  version: '1.5'
+  date_printed: November 2008
+  url: https://www.cypress.com/file/94251/download
+  archive_url: https://web.archive.org/web/20201101022945/https://www.cypress.com/file/94251/download
+  retrieved: '2026-09-25'
+  sha256: 42f45f5ae2cf3a2878cb5fa3729a127143cca0625a8d3cf9d6bb02ea2fa9386d
+  technology_codes:
+  - L28
+  - L28-TSMC
+  fab: TSMC-2A, Taiwan
+  products:
+  - CY2280PVC
+  die_ids:
+  - 7C83760A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti 400Å/TiN 1,000Å/AlSiCu 4,700Å/TiN 375Å; Metal 2: Ti 1,500Å/AlSiCu
+      8,000Å/TiN 375Å'
+    passivation: SiN 3,000Å/SOG 3,150Å/SiN 12,000Å
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 125 Å
+    fab_location: TSMC-2A, Taiwan
+    die_fab_line_id: TSMC-2A /L28-TSMC
+  qualification_history:
+  - number: '99285'
+    description: To qualify L28-TSMC Technology in TMSC-2A
+    date: May 2003
+  quotes:
+  - text: To qualify L28-TSMC Technology in TMSC-2A
+    location: p.2, Technology Qualification History, row 99285
+  - text: 'Die Fab Line ID/Wafer Process ID: TSMC-2A /L28-TSMC'
+    location: p.3, Technology/Fab Process Description
+  - text: 'Metal 1: Ti 400A /TiN1000A /AlSiCu 4700A /TiN 375A'
+    location: p.3, Technology/Fab Process Description, Metal Composition
+  notes: 'This is the primary "New Technology" origin report for L28-TSMC itself, previously known in
+    this corpus only by reference: qtp-080608 and qtp-110605 (round 2) both cite "QTP 99285, To qualify
+    L28-TSMC Technology in TMSC-2A, May 2003" as a history row, but the qtp-099285 document had not been
+    independently retrieved before this round. This confirms the May 2003 date and wording verbatim. Process
+    figures mostly match qtp-080608/qtp-110605 (2 metal layers, 0.65 µm, same metal composition, 125 Å
+    gate oxide) but this document''s passivation reads "SiN 3,000Å/SOG 3,150Å/SiN 12,000Å" where qtp-080608
+    and qtp-110605 both give the final layer as "1,200Å SiN" -- a tenfold discrepancy in the printed final
+    passivation-nitride thickness between three otherwise near-identical reports for the same L28-TSMC
+    technology, not resolved here. This document''s Die Fab Line ID is also printed "TSMC-2A /L28-TSMC"
+    (hyphenated) where qtp-080608/qtp-110605 print "TSMC-2A/L28 TSMC" (no hyphen) -- a minor spelling
+    variant of the same code.'

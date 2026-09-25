@@ -11,8 +11,8 @@ fab ran what, and when, as far as public sources show. The processes themselves 
 | Fab | Where and wafer size | Cypress years | Processes the sources place there |
 |---|---|---|---|
 | Fab 1 | San Jose, California; 6-inch by 1993, 8-inch from 2000 | first fab; production to 1996, then R&D to 2007 | development of RAM3, 0.13 µm and 90 nm |
-| Fab 2 ("Cypress Texas", CTI) | Round Rock, Texas; 6-inch (150 mm) | 1986–2008 | R28, L28, L28EPD, P26 (0.65 µm); S4AD-5 (SONOS) |
-| Fab 3 ("Cypress Minnesota", CMI) | Bloomington, Minnesota; 6-inch | 1991–1998 | R28 (0.65 µm), about 0.6 µm |
+| Fab 2 ("Cypress Texas", CTI) | Round Rock, Texas; 6-inch (150 mm) | 1986–2008 | P20 (0.8 µm); R28, L28, L28EPD, P26 (0.65 µm); S4AD-5 (SONOS) |
+| Fab 3 ("Cypress Minnesota", CMI) | Bloomington, Minnesota; 6-inch | 1991–1998 | R28 and L28 (0.65 µm), about 0.6 µm |
 | Fab 4 (later "Fab 4a") | Bloomington, beside Fab 3; 8-inch (200 mm) | 1995–2017 | R32, R42, RAM42, R52, B53D-3, B55SGT, R7, R8, C8, 90 nm, S8 |
 
 The table summarises the sections below, where each entry carries its sources.
@@ -59,9 +59,10 @@ the sources disagree on this point.[^ar-fy2008][^ccre-roundrock]
 1997 Cypress said Fabs 2 and 3 produced six-inch wafers "primarily with 0.6-micron" processes (single
 source).[^ar-fy1997] Cypress's qualification reports show:
 
+* **0.8 µm.** P20, for MAX EPLDs, by 1993 (Cypress's reports).[^qtp-091216][^qtp-093332]
 * **0.65 µm.** The R28 SRAM process qualified at Fab 2 in November 1997, with a further R28 product moved
-  from Fab 3 in March 1999; the L28 clock and logic process ("New Technology L28", April 1998); and P26
-  for PROMs (Cypress's reports).[^qtp-097476][^qtp-098393][^qtp-011503][^qtp-096411]
+  from Fab 3 in March 1999; the L28 clock and logic process, moved from Fab 3 in April 1998; and P26
+  for PROMs (Cypress's reports).[^qtp-097476][^qtp-098393][^qtp-031101][^qtp-096411]
 * **S4AD-5.** "New Technology S4AD-5" was qualified in April 2001 with a clock generator (Cypress's
   reports).[^qtp-021507][^qtp-042806]
 
@@ -354,9 +355,6 @@ names of the sites. Read them with these points in mind:
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
-[^qtp-011503]: Cypress Semiconductor, Product Qualification Report QTP 011503: *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2*, December 2005;
-    Wayback Machine copy of the cypress.com download.
-    <https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>
 [^qtp-032301]: Cypress Semiconductor, Product Qualification Report QTP 032301: *16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan*, May 2004;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>
@@ -376,3 +374,12 @@ names of the sites. Read them with these points in mind:
 [^qtp-s050001]: Cypress Semiconductor, Product Qualification Report QTP S050001: *TSMC Fab 3, 0.35um -- SMaL Camera ASIC*, June 2005;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20201028064815/https://www.cypress.com/file/94406/download>
+[^qtp-031101]: Cypress Semiconductor, Product Qualification Report QTP 031101: *High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2*, January 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>
+[^qtp-091216]: Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
+[^qtp-093332]: Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>
