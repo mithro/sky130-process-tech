@@ -6,15 +6,7 @@ tool a fab uses to fill narrow gaps: the isolation trenches of the front
 end, the spaces between capped gates and the spaces between metal lines.
 An inductively coupled source makes a dense, low-pressure plasma of
 silane, oxygen and argon, and an RF bias on the wafer drives argon ions
-into the growing film, so that the oxide is sputtered off the corners of
-a gap while it grows, and the gap fills from the bottom before its mouth
-can close. This page describes the class in general, lists
-representative 200 mm-era models, and then says what SkyWater has
-published about its own tool of this class and which SKY130 steps this
-reference assigns to it. The growth regimes and gap-fill physics are
-summarised on the {ref}`category page <category-deposition>`; the
-capacitive plasma reactors that share the inter-level oxide steps are on
-the {ref}`PECVD page <machine-pecvd>`.
+into the growing film.
 
 | | HDP-CVD |
 |---|---|
@@ -27,18 +19,33 @@ the {ref}`PECVD page <machine-pecvd>`.
 | SkyWater-listed tool | "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" ("high aspect (5:1) fill capability")[^skw-01]; a caption naming "a Novellus high density plasma tool"[^skw-07] |
 | SKY130 steps | 7 steps; see {ref}`SKY130 steps assigned to this class <machine-hdp-cvd-steps>` |
 
+:::{seealso}
+The growth regimes and gap-fill physics are
+summarised on the {ref}`category page <category-deposition>`; the
+capacitive plasma reactors that share the inter-level oxide steps are on
+the {ref}`PECVD page <machine-pecvd>`.
+:::
+
 ## What the machine class is and how it works
+
+The oxide is sputtered off the corners of
+a gap while it grows, and the gap fills from the bottom before its mouth
+can close.
 
 A film that grows fastest at the upper corners of a gap closes the gap
 over a void (category page). HDP-CVD changes two things. The source makes a much denser plasma at much lower
 pressure, so that deposition precursors and ions arrive more
 directionally; and the wafer is biased, so that ions sputter the film as
-it grows. A Novellus and IBM patent describes the result: "RF bias is
+it grows.
+
+**What a patent says.** A Novellus and IBM patent describes the result: "RF bias is
 applied to a wafer substrate", ions "accelerate toward the wafer surface
-when the RF bias is applied", and "dielectric material deposited on the
+when the RF bias is applied".[^pat-hdp-novellus] Its consequence: "dielectric material deposited on the
 wafer surface is simultaneously sputter-etched to help keep gaps open
 during the deposition process, which allows higher aspect ratio gaps to
-be filled".[^pat-hdp-novellus] What makes a machine an HDP-CVD tool is
+be filled".[^pat-hdp-novellus]
+
+What makes a machine an HDP-CVD tool is
 the combination: a high-density source, an independently powered wafer
 bias, a temperature-controlled chuck, and a clean and
 seasoning cycle that keeps a hot plasma chamber from contaminating the
@@ -53,25 +60,30 @@ Hopwood's review of inductively coupled plasmas reports ion densities
 above 10¹² cm⁻³ at sub-millitorr pressures from RF at 0.5–28 MHz;[^hopwood-1992]
 Wikipedia contrasts a fractional ionisation of about 10⁻⁴ "in typical
 capacitive discharges" with "as high as 5–10% in high-density inductive
-plasmas".[^wiki-pecvd] Novellus's induction-source patent, filed in
+plasmas".[^wiki-pecvd]
+
+**Novellus's hemispherical coil.** Novellus's induction-source patent, filed in
 1992, has "a hemispherically shaped induction coil in an expanding spiral
 pattern"
 following "a hemispherically shaped quartz bell jar, which holds the
 vacuum", a low-frequency source power and a separate high-frequency
-bias;[^pat-icp-novellus] its description adds that "When used with
+bias.[^pat-icp-novellus] Its description adds that "When used with
 careful substrate bias control, the induction system for PECVD is
 suitable for dielectric gap filling".[^pat-icp-novellus] Novellus's
 product page describes SPEED's "patented hemispherical source" as having
 "a single excitation frequency and a single coil".[^novellus-hdp-2001]
 
-Applied Materials' HDP-CVD reactor patent, filed in 1996, uses two coils
+**Applied's dual coils.** Applied Materials' HDP-CVD reactor patent, filed in 1996, uses two coils
 instead: "a dual RF zone inductively coupled plasma source configuration
 capable of producing radially tunable ion currents across the wafer", "a
-dual zone gas distribution system", "temperature controlled surfaces",
+dual zone gas distribution system", "temperature controlled surfaces".[^pat-hdp-reactor-amat] It
+also specifies
 "a symmetrically shaped turbomolecular pumped chamber body", "a dual
 helium cooling zone electrostatic chuck", "an all ceramic/aluminum alloy
 chamber construction" and "a remote fluorine based plasma chamber
-cleaning system".[^pat-hdp-reactor-amat] The dielectric dome is
+cleaning system".[^pat-hdp-reactor-amat]
+
+The dielectric dome is
 temperature controlled because "Control of the dome temperature to
 within ±10° K improves deposition adhesion and has been found to reduce
 flake or particle counts in the chamber".[^pat-hdp-reactor-amat]
@@ -80,13 +92,17 @@ flake or particle counts in the chamber".[^pat-hdp-reactor-amat]
 
 The balance between deposition and sputtering is the central recipe
 parameter. Before HDP, gap-fill processes alternated PECVD deposition
-and argon sputter etching in separate steps;[^pat-hdp-novellus] Schwartz and Johns found that, as the gap
+and argon sputter etching in separate steps.[^pat-hdp-novellus] Schwartz and Johns found that, as the gap
 aspect ratio rose, such cycles left a fast-etching region in the gap and
-then "physical voids",[^schwartz-1992] and the Novellus–IBM patent
+then "physical voids".[^schwartz-1992]
+
+**Aspect-ratio limits.** The Novellus–IBM patent
 reports that the gap fill of low-pressure, atmospheric-pressure and
 plasma-enhanced CVD does "not extend beyond aspect ratios of 1.3:1 at
-spacing 0.45 µm" even with "dep-etch-dep" cycles, while HDP processes
-"are currently used to fill gaps having aspect ratios of about 3:1".[^pat-hdp-novellus] The same patent
+spacing 0.45 µm" even with "dep-etch-dep" cycles.[^pat-hdp-novellus] HDP processes
+"are currently used to fill gaps having aspect ratios of about 3:1".[^pat-hdp-novellus]
+
+**Etch-to-deposition steps.** The same patent
 then splits an HDP fill into steps: one with an etch-to-deposition ratio
 below one "to quickly fill the gap", interrupted "before the opening to
 the gap is closed", and one with a ratio above one "to widen the
@@ -94,7 +110,9 @@ gap".[^pat-hdp-novellus] Nishimura et al. found that "film deposition
 under an increased plasma power and low-pressure conditions is effective
 for stable gap filling", and that "the angular dependence of sputter
 yield and the ionic deposition mechanism are important
-factors".[^nishimura-2002] Novellus, in 2009, still described fill as
+factors".[^nishimura-2002]
+
+**No sidewall damage.** Novellus, in 2009, still described fill as
 "tailoring the deposition, etch, and sputter-to-deposition (S/D) ratio",
 and warned that "Too many deposition/etch cycles, or inadequate control
 of process uniformity, will result in excessive clipping or voids within
@@ -121,13 +139,17 @@ deposited HDP PSG "at a temperature ⩽550°C".[^hsiao-2005]
 The same chamber deposits undoped silicate glass (USG), phosphosilicate
 glass (PSG) and fluorinated glass (FSG): Applied's Ultima "can deposit
 both undoped and doped films for numerous processes including USG, FSG,
-PSG, SiN and low k films".[^amat-hdp-2001] For PSG at the pre-metal
+PSG, SiN and low k films".[^amat-hdp-2001]
+
+**PSG.** For PSG at the pre-metal
 level, Applied claimed that "the films provide ion-gettering properties
-as well as device isolation";[^amat-hdp-psg-2002] Vassiliev reports the
+as well as device isolation".[^amat-hdp-psg-2002] Vassiliev reports the
 properties and gap-fill capability of HDP PSG for sub-quarter-micron
 devices,[^vassiliev-1999] and Hsiao et al. found "residual inactive
 phosphorous and compounds with PO bonds" in as-deposited HDP PSG, some of
-which "became active after the thermal annealing".[^hsiao-2005] FSG
+which "became active after the thermal annealing".[^hsiao-2005]
+
+**FSG.** FSG
 lowers the permittivity: in Denison et al.'s high-density-plasma films
 "The dielectric constant decreased linearly from 4.0 at zero F to 3.55 at
 10.5 at. % F".[^denison-1996] Applied introduced its Ultima with FSG
@@ -144,11 +166,13 @@ process".[^amat-1997] A Novellus patent for an HDP system with a
 hemispherical coil notes that "Following the clean cycle, a fluorine
 residue remains on the walls and other surfaces of the reaction chamber",
 which "must be removed for safety reasons and to insure that the film
-adheres", and adds a dedicated clean-gas injector.[^pat-hdp-clean-novellus]
-An Applied patent describes contamination from the chamber itself:
+adheres".[^pat-hdp-clean-novellus] It
+adds a dedicated clean-gas injector.[^pat-hdp-clean-novellus]
+
+**Sodium and seasoning.** An Applied patent describes contamination from the chamber itself:
 "sodium is a particularly disruptive contaminant", believed to diffuse
-"through the quartz dome and alumina nozzles", and "a known method" of
-controlling it "involves depositing a 'seasoning' layer of silicon oxide
+"through the quartz dome and alumina nozzles".[^pat-seasoning-amat] It can be controlled: "a known method"
+"involves depositing a 'seasoning' layer of silicon oxide
 over the chamber's interior surface prior to processing substrate
 films".[^pat-seasoning-amat] Novellus's later SPEED Max has "an
 enlarged remote plasma source" that "allows more wafers to be processed
@@ -159,9 +183,11 @@ between plasma cleans".[^lam-speed]
 A dense plasma over metal lines tied to gates can charge the gate
 oxide. Hwang and Giapis's simulations show that "the initial conformality
 of the ILD film plays a crucial role in metal line charging and the
-subsequent degradation of the buried gate oxide", and that charging "can
+subsequent degradation of the buried gate oxide".[^hwang-1998] Charging "can
 be reduced by depositing a more conformal ILD film around the metal line
-and/or by increasing the film surface conductivity".[^hwang-1998] Roche
+and/or by increasing the film surface conductivity".[^hwang-1998]
+
+**Measured in real time.** Roche
 and McVittie measured the plasma-induced voltage in real time with a
 probe "installed on a Deep Sub Micron (DSM) 9900 CVD tool from Lam
 Research Corporation" and mapped a low-voltage process
@@ -171,32 +197,32 @@ performance or reliability".[^chen-2002-psg]
 
 ## Representative 200 mm-era models
 
-* **Novellus Systems.** SPEED, which the company history dates to 1995
-  as "a high-density plasma system with simpler, more cost-effective
-  solutions for inter-metal dielectric films";[^novellus-history]
-  Novellus's own page says it "captured the heart of the marketplace in
-  1996" and "was the first-and-only-tool to successfully integrate HDP
-  processing in high-volume production environments". The same page
-  lists the Concept Two SPEED/SEQUEL, which "combines two SPEED HDP
-  chambers with one SEQUEL chamber", and the 300 mm Concept Three
-  SPEED.[^novellus-hdp-2001] Novellus's 2009 release on the SPEED Max
-  says the system "extends the HDP-CVD application into the 45 and 32 nm
-  technology nodes".[^lam-speed]
-* **Applied Materials.** A first-generation HDP system in February 1996
-  and the Ultima HDP-CVD Centura later that year;[^amat-1997] "Up to three
-  Ultima chambers, or various combinations of Ultima and PECVD chambers,
-  can be fitted onto the production-proven Centura platform", and the
-  Ultima X followed "for both 200mm and 300mm advanced STI, IMD and PMD
-  applications".[^amat-hdp-2001]
-* **Lam Research.** The DSM 9900 CVD tool on which Roche and McVittie
-  installed their charging probe.[^roche-1996]
-* **Not HDP: the Trikon Planar 200.** The {ref}`FILOX <step-011>`,
+:::{table} Representative HDP-CVD systems of the 200 mm era (figures as each source gives them)
+:widths: 20 22 8 50
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Novellus Systems | SPEED | 1995 | "a high-density plasma system with simpler, more cost-effective solutions for inter-metal dielectric films"[^novellus-history] |
+| Novellus Systems | SPEED | 1996 | "captured the heart of the marketplace in 1996" and "was the first-and-only-tool to successfully integrate HDP processing in high-volume production environments"[^novellus-hdp-2001] |
+| Novellus Systems | Concept Two SPEED/SEQUEL | — | "combines two SPEED HDP chambers with one SEQUEL chamber"[^novellus-hdp-2001] |
+| Novellus Systems | Concept Three SPEED | — | 300 mm[^novellus-hdp-2001] |
+| Novellus Systems | SPEED Max | 2009 | "extends the HDP-CVD application into the 45 and 32 nm technology nodes"[^lam-speed] |
+| Applied Materials | (first-generation HDP system) | 1996 | introduced in February[^amat-1997] |
+| Applied Materials | Ultima HDP-CVD Centura | 1996 | "Up to three Ultima chambers, or various combinations of Ultima and PECVD chambers, can be fitted onto the production-proven Centura platform"[^amat-hdp-2001] |
+| Applied Materials | Ultima X | — | "for both 200mm and 300mm advanced STI, IMD and PMD applications"[^amat-hdp-2001] |
+| Lam Research | DSM 9900 | — | the tool on which Roche and McVittie installed their charging probe[^roche-1996] |
+:::
+
+**Not HDP: the Trikon Planar 200.** The {ref}`FILOX <step-011>`,
   {ref}`PSG <step-089>`, {ref}`NILD3 <step-115>` and {ref}`NILD4 <step-126>`
-  pages mention the Trikon Planar 200 to set it apart from HDP tools. Trikon's annual report for 1996
+  pages mention the Trikon Planar 200 to set it apart from HDP tools.
+
+  Trikon's annual report for 1996
   describes the Planar 200 Flowfill as a "multi-chambered cluster
   system" in which "The plasma CVD films are deposited in one module and
   the CVD planarizing flow layer is deposited in the Flowfill(TM)
-  module", and sets it against HDP gap fill as an alternative for
+  module".[^trikon-10k-1996] The report
+  sets it against HDP gap fill as an alternative for
   inter-metal dielectrics;[^trikon-10k-1996] it is therefore not an
   HDP-CVD system.
 
@@ -212,13 +238,17 @@ lists one HDP entry with one sub-entry:[^skw-01]
 >
 > "– high aspect (5:1) fill capability"
 
-Read term by term: an HDP process that deposits "doped" and "phos doped"
-films, "with sputter etch", with a stated fill capability of 5:1. The
-entry does not say what "doped" means beside "phos doped", does not name
-an undoped or fluorinated film, and gives no model, temperature or
-thickness. We read "with sputter etch" as the in-situ sputtering that
-defines the class, not as a separate etch tool; the page does not
-explain it.[^skw-01] SkyWater's maintenance-technician profile
+:::{table} How this reference reads the HDP entry
+:widths: 30 46 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" | an HDP process that deposits "doped" and "phos doped" films, "with sputter etch"; the entry does not say what "doped" means beside "phos doped", does not name an undoped or fluorinated film, and gives no model, temperature or thickness; "with sputter etch" is read as the in-situ sputtering that defines the class, not a separate etch tool | our reading |
+| "– high aspect (5:1) fill capability" | a stated fill capability of 5:1 | not stated |
+:::
+
+The page does not
+explain "with sputter etch".[^skw-01] SkyWater's maintenance-technician profile
 separately has a photo caption in which a technician and an engineer
 "recover a robot fault on a Novellus high density plasma
 tool".[^skw-07]
@@ -231,7 +261,9 @@ are two SkyWater statements, and the profile names the vendor as
 Novellus.[^skw-01][^skw-07] Neither names a model or a step, so the
 reading of the tool as a SPEED-class system rests on Novellus's product
 history,[^novellus-history] and the step assignments are graded on the
-step pages. "Lam/Novellus" fits a Novellus tool after Novellus became
+step pages.
+
+"Lam/Novellus" fits a Novellus tool after Novellus became
 part of Lam in 2012;[^wiki-novellus] Lam also sold an HDP CVD tool of
 its own in the 1990s,[^roche-1996] and the page does not say which is
 meant (our reading). The caveats that apply to every listed tool are
@@ -337,7 +369,9 @@ thicknesses are not public.
   isolation trenches with HDP oxide, which the PDK labels "FOX
   K=3.9";[^pdk-04] published 0.13 µm STI work filled "space width
   0.13 µm and aspect ratio 3.9",[^nishimura-2002] inside the listed
-  "high aspect (5:1) fill capability".[^skw-01] The film is then
+  "high aspect (5:1) fill capability".[^skw-01]
+
+  The film is then
   polished to the nitride ({ref}`CMPNIT <step-012>`), and the FILOX page
   names a furnace or RTP densification as optional.
 * **Glass over the gates.** The {ref}`PSG <step-089>` page describes a
@@ -350,7 +384,9 @@ thicknesses are not public.
   of about 1:1 over local interconnect ({ref}`NILD2 <step-105>`) and
   about 2.6:1 and 2.8:1 between metal lines
   ({ref}`NILD3 <step-115>`, {ref}`NILD6 <step-156>`) from the PDK
-  geometry, all below the listed 5:1.[^skw-01] Above metal 1 the
+  geometry, all below the listed 5:1.[^skw-01]
+
+  Above metal 1 the
   wafer carries aluminium; the {ref}`NILD3 <step-115>` page's
   industry-generic outline puts a PECVD liner under the HDP fill, and
   HDP tools hold the wafer temperature with a helium-cooled
@@ -367,25 +403,23 @@ thicknesses are not public.
 
 ## Related pages
 
-* {ref}`category-deposition` — HDP-CVD gap fill and the deposition steps
-  of SKY130.
-* {ref}`machine-pecvd` — the capacitive PECVD tools that share the
-  inter-level oxide steps.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — silane, phosphine and the clean gases.
-* {ref}`category-cmp` — the polishes that planarise the fill oxides.
-* {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement.
-* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
-  ammonia, SiF₄, ozone and WF₆.
-* {ref}`material-dopant-sources` — dopant gases, solid sources,
+* **Category.** {ref}`category-deposition` — HDP-CVD gap fill and the
+  deposition steps of SKY130. {ref}`category-cmp` — the polishes that
+  planarise the fill oxides.
+* **Machines.** {ref}`machine-pecvd` — the capacitive PECVD tools that
+  share the inter-level oxide steps.
+* **Materials.** {ref}`material-hardware-consumables` — chamber parts
+  and exhaust abatement. {ref}`material-precursors` — silane,
+  dichlorosilane, TEOS, BTBAS, ammonia, SiF₄, ozone and WF₆.
+  {ref}`material-dopant-sources` — dopant gases, solid sources,
   sub-atmospheric packages and ion-source parts.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
-  bromine etch and chamber-clean gases.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
-  helium and the oxidation additives, their grades and SkyWater's listed
-  gases.
+  {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases. {ref}`material-process-gases` —
+  nitrogen, oxygen, hydrogen, argon, helium and the oxidation additives,
+  their grades and SkyWater's listed gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  silane, phosphine and the clean gases.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

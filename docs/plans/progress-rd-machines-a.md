@@ -504,6 +504,48 @@ horizontal scroll.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 9. `docs/machines/hdp-cvd.md` — done
+
+Rules applied: R-INTRO (kept the class-definition sentence and the first clause of the mechanism
+sentence, 63 words; moved the "sputtered off the corners" clause into the H2 lead; template
+deleted; pointer moved to `{seealso}`). R-MODELS (9-row table across Novellus/Applied/Lam; the
+non-member Trikon Planar 200 kept entirely as prose under its own `**Not HDP: ...**` label,
+never entered in the table, since a "Representative … models" table for this class should not
+list a tool the page itself says is not one). R-ENTRIES (2-row table for the single HDP entry and
+its fill-capability sub-entry). R-QUICKFACTS: left as written (method note 3). R-PARA (9 of 10
+H3s needed splitting, several twice). R-SENTENCE (about 14 sentences over 45 words split).
+R-RELATED (10 sentence-bullets → 4 grouped bullets). R-CAPTION (both new tables). R-PARA step 4
+(two list items, "Trench fill" and "Oxide between metal lines", fixed with a continuation
+paragraph).
+
+Over-cap counts (before → after): paragraphs > 100 words: 10 → 0; sentences > 45 words: ~16 → 0;
+list items > 60 words: 2 → 0; quick-facts cells > 20 words: left unchanged (method note 3); tables
+with no caption: 2 new → 0.
+
+**Two more quote-capitalisation bugs caught by `check_preserved.py`.** Splitting a sentence at a
+quotation boundary twice produced a sentence that would have to *start* with a quotation whose
+first letter is lowercase in the source ("a known method", "dielectric material deposited..."). I
+had capitalised both ("A known method", "Dielectric material...") to read as proper sentence
+starts — exactly the wording change §2 Never rule 1 forbids, and exactly what `check_preserved.py`
+caught as `LOST quotes` (the capitalised form is a *different* string from the source). Fixed both
+by adding a short lead-in clause before the quotation instead of promoting it to the sentence's
+own first word ("Its consequence: 'dielectric material...'"; "It can be controlled: 'a known
+method' '...involves depositing...'"), so every quotation keeps its original case. Generalising
+the method note from page 3: a split must never put a quotation at the very start of a sentence
+unless the quotation's own first letter is already uppercase in the source — otherwise it needs a
+lead-in, not a capital.
+
+`check_preserved.py --base 5e8ee87c --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except the two expected losses of
+method note 4 (`about`, `SKY130`), after the two quote-capitalisation fixes above.
+
+Checkers, `-W` build: clean. Screenshots: phone tiles 4 (cleaning/seasoning prose, no overflow),
+5 (9-row Representative-models table — "Novellus Systems" wraps cleanly, unlike
+`film-thickness-metrology.md`'s "Rudolph Technologies", showing the earlier fix was genuinely
+about total row-content width, not any one vendor name) and 6 (2-row entries table) read.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
