@@ -54,6 +54,11 @@ out so the sync is a copy.
 
 ### W2 — step pages (171), hand edits in module batches
 
+Status: pilot 001–013 merged 2026-09-25 after an Opus review, a fix round and a verification round; the
+guide was corrected from it (14 rulings + 8 new rules) and `check_preserved.py` gained `--allow-regrouped`,
+an `identifiers` category, flattened hedge matching and inch-mark masking. Batches 014–034 onward follow the
+same procedure; each module's figures land first.
+
 Order per page: structure under H2 (A F2) → tables and derivations (F3, F5) → lists (F6, F7) → paragraph and
 sentence splits (F1, F8) → tool evidence items (F4) → fixed-pattern sections (F15) → hedge placement and
 repetition (F9, F10) → "At a glance" box last (F11). Batches follow the thirteen modules.
