@@ -637,7 +637,12 @@ original form and is left out of the recap table.
      or the thing SkyWater lists it under — name the thing instead, or drop the object if the
      verb's own object already names it, as in "lists both"). A statement from any other source
      (Cypress, Stanford, a vendor, a used-equipment listing) stays as a plain continuation
-     paragraph under the sub-bullets, in its original words.
+     paragraph under the sub-bullets, in its original words. If the sentence that quotes
+     SkyWater also carries this reference's own gloss ("as later additions", "all on SkyWater's
+     public list") and cannot be separated at an existing seam, keep it whole as the bullet's head
+     after the bold tool name. Give only the grades as sub-bullets, and never file it under
+     *SkyWater says:*. Any sentence the grade's reason refers to ("in that lab") stays above the
+     grade.
    * `*Tool exists:*` — the grading of existence, and its reason only.
    * `*Runs this step:*` — the grading of the assignment to this step, and its reason only. Any
      other sentence stays in the continuation paragraph.
