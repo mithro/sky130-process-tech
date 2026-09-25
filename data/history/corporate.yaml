@@ -1154,6 +1154,68 @@ records:
     via a Wayback copy, not sec.gov directly) before relying on this
     record for anything beyond the fabless correction.
 
+- id: cyhist-corp-sec-wikipedia
+  source:
+    publisher: Wikipedia
+    title: "Cypress Semiconductor"
+    date: 2026-09-25
+    form: secondary encyclopedia article
+  url: https://en.wikipedia.org/wiki/Cypress_Semiconductor
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/wikipedia-cypress.txt
+  sha256: 3b376f5c936baee1dce40948d973b42e1526542d0eb1302063aceba68a163756
+  quotes:
+  - text: >-
+      It was formed in 1982 with backing by Sevin Rosen , Kleiner Perkins
+      Caufield & Byers, Mayfield Fund and Sequoia Capital. The initial
+      Venture Capital investment was $7.5 million. Cypress went public on
+      the NASDAQ in 1986.
+    location: "article body, founding section"
+  - text: >-
+      Two years after going public the company switched from the NASDAQ to
+      the New York Stock Exchange .
+    location: "article body, founding section"
+  - text: >-
+      The AgigA Tech, Inc. subsidiary sells non-volatile random-access
+      memory ( RAM ). It was acquired during the Simtek purchase in August
+      2008
+    location: "article body"
+  - text: >-
+      In December 2014, Cypress Semiconductor merged with Spansion in an
+      all-stock deal worth $1.59 billion.
+    location: "article body"
+  - text: >-
+      In March 2015, Cypress and Spansion completed of the transactions of
+      the merger in an all-stock, tax-free transaction valued at
+      approximately $5 billion.
+    location: "article body"
+  claims:
+  - {subject: "Cypress Semiconductor Corporation", attribute: "founding", value: "formed 1982 with $7.5 million venture-capital backing (Sevin Rosen, Kleiner Perkins Caufield & Byers, Mayfield Fund, Sequoia Capital); went public on Nasdaq 1986; switched from Nasdaq to NYSE two years after going public (i.e. 1988)", date: "1982-1988"}
+  - {subject: "Simtek Corporation acquisition", attribute: "date", value: "August 2008 (more precise than the FY2008 annual report, which does not give a month)", date: "2008-08"}
+  - {subject: "Spansion", attribute: "merger", value: "announced December 2014 (all-stock, $1.59 billion as first announced); completed March 2015 (all-stock, tax-free, ~$5 billion); this is how Cypress acquired Spansion's Fab 25 (Austin, Texas, ex-AMD)", date: "2014-12 announced, 2015-03 completed"}
+  notes: >-
+    GENUINELY INDEPENDENT secondary source (not derived from the same Gale
+    "International Directory of Company Histories" text as
+    cyhist-corp-sec-fundinguniverse / cyhist-corp-sec-encyclopedia): this
+    corroborates, from a third source, the 1986 Nasdaq IPO and the "two
+    years later" (1988) NYSE switch that Cypress's own FY2006 10-K also
+    states (cyhist-corp-2006-ar-history-grace-complete) -- so those two
+    dates are now SUPPORTED by primary + two independent secondary sources.
+    The August 2008 Simtek date and the Spansion merger dates/values are
+    each SINGLE-SOURCE so far in this corpus (not cross-checked against a
+    primary Cypress filing in this pass -- the FY2008 annual report gives
+    only the year, "In 2008", for Simtek: cyhist-corp-2008-ar-simtek). The
+    article names Cypress's founders and a Simtek/AgigaTech/Anchor-Chips
+    connection to a specific start-up founder; those personal names are
+    omitted here per the project's no-staff-names rule (the substantive
+    facts -- formation from a group of AMD colleagues in 1982, and that the
+    same founder was behind both Anchor Chips and Simtek/AgigaTech -- are
+    kept without the names). Spansion/Fab 25 itself is outside this task's
+    1982-2010 core window and was not otherwise researched in this pass
+    (see the progress file's "not yet done" list) -- this record is the
+    only mention of it in this corpus.
+
 known_gaps:
 - description: "Cypress annual reports / 10-Ks for fiscal years 1986-1992 (the IPO year through the year before the earliest report found)"
   reason: >-

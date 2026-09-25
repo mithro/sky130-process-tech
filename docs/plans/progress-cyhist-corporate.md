@@ -2,11 +2,11 @@
 
 Agent: `cyhist-corporate`. Branch/worktree: `topic/cyhist-corporate` /
 `.worktrees/cyhist-corporate`. Evidence file: `data/history/corporate.yaml`
-(30 records so far). Verifier: this agent's own
+(31 records so far). Verifier: this agent's own
 `tmp/check_history_quotes.py` (not `tools/check_history_quotes.py` -- no
 such shared tool was visible on this branch; see that script's docstring).
 Run `uv run tmp/check_history_quotes.py data/history/corporate.yaml` --
-currently "30 records checked, 0 problems". Shared fetch cache:
+currently "31 records checked, 0 problems". Shared fetch cache:
 `/home/admin/github/mithro/sky130-process-tech/tmp/cyhist-cache/{filings,web}/`
 in the main checkout (not this worktree's own `tmp/`, which holds only this
 agent's scripts, per the plan's "Shared fetch cache" note).
@@ -331,6 +331,17 @@ directly. Recommend the QTP or literature agents' sources be checked for a
   primary-source follow-up before relying on it for anything beyond this
   fabless correction).
 
+## Wikipedia cross-check added (this update)
+
+`cyhist-corp-sec-wikipedia` -- genuinely independent of the Gale-derived
+FundingUniverse/Encyclopedia.com pair -- corroborates the 1986 Nasdaq IPO
+and confirms the NYSE switch was "two years after going public" (1988),
+matching Cypress's own FY2006 10-K. Also gives an August 2008 date for
+Simtek (more precise than the FY2008 annual report's bare "2008") and the
+Spansion merger's December 2014 announcement / March 2015 completion and
+dollar values -- both flagged SINGLE-SOURCE pending a primary-source
+cross-check.
+
 ## FY1994 10-K hunt: further negative results (this update)
 
 Checked two more candidate accessions from the Wayback CDX pull of CIK
@@ -490,17 +501,18 @@ confirmed still present but not extended with anything new.
 
 ## Counts
 
-* 30 records in `data/history/corporate.yaml`, covering: 1 pre-EDGAR 10-K
+* 31 records in `data/history/corporate.yaml`, covering: 1 pre-EDGAR 10-K
   (FY1993, reused from filings.yaml with new quotes added), 2 EDGAR proxy
   statements (1994, 1995 -- one record for both, same text), 2 EDGAR 10-Qs
   (Q1 and Q3 1996), 13 annual reports (FY1995-1999, 2001-2006, 2008-2010),
   9 trade-press articles (EE Times x5, Electronics Weekly, Semiconductor
   Digest, ConnectCRE, EDN), 1 press release (Innopower/SONOS, via a direct
-  mirror), 2 secondary company-history references (FundingUniverse and
-  Encyclopedia.com -- explicitly noted as one underlying Gale source, not
-  two independent ones), 1 unverified web-search summary (Ramtron fabless
-  correction, no cached document, deliberately marked as such).
-* 36 documents fetched and cached in total under
+  mirror), 3 secondary references (FundingUniverse and Encyclopedia.com --
+  explicitly noted as one underlying Gale source, not two independent
+  ones -- plus Wikipedia, genuinely independent), 1 unverified web-search
+  summary (Ramtron fabless correction, no cached document, deliberately
+  marked as such).
+* 37 documents fetched and cached in total under
   `tmp/cyhist-cache/{filings,web}/` (some not yet turned into records: the
   FY2000 annual report -- see the technical-limitation note above -- the
   FY1993 duplicate probe, several CDX/availability probe files, two
