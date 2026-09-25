@@ -23,8 +23,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <defs><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern></defs>
 <rect class="ground" x="0" y="0" width="480" height="306"/>
 <text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
-<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="179.0"/></clipPath>
-<g class="drawing" data-rect="12,38.0,268,179.0" clip-path="url(#clip1)">
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="197.7"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,197.7" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,89.00 92.00,89.00 99.00,133.20 99.50,137.00 100.00,139.11 100.50,140.23 101.00,141.06 101.50,141.73 102.00,142.28 102.50,142.76 103.00,143.17 104.00,143.83 105.00,144.31 106.00,144.66 107.00,144.88 108.00,144.99 184.00,144.99 185.00,144.88 186.00,144.66 187.00,144.31 188.00,143.83 189.00,143.17 189.50,142.76 190.00,142.28 190.50,141.73 191.00,141.06 191.50,140.23 192.00,139.11 192.50,137.00 193.00,133.20 200.00,89.00 283.00,89.00 283.00,253.00 9.00,253.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,84.00 91.75,84.00 91.75,89.00 9.00,89.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,84.00 283.00,84.00 283.00,89.00 200.25,89.00"/>

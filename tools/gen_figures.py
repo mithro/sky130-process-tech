@@ -1362,6 +1362,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
 
         # ---- drawing
         cid = f"clip{pi + 1}"
+        i_clip = len(svg.body)
         svg.add(f'<clipPath id="{cid}"><rect x="{X0}" y="{f1(y_draw_top)}" width="{DRAW_W}" height="{f1(draw_h)}"/></clipPath>')
         svg.add(f'<g class="drawing" data-rect="{X0},{f1(y_draw_top)},{DRAW_W},{f1(draw_h)}" clip-path="url(#{cid})">')
         for lid, layer in st.layers.items():
@@ -1382,7 +1383,15 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
         # marks a 5 u film instead of covering it.
         off = SP["highlight-offset"]
         for a, b in (p.get("highlight") or {}).get("where", []):
-            pts = _simplify([(sx(st.x(i)), sy(st.top(i) + off)) for i in range(st.idx(a), st.idx(b) + 1)])
+            cols = list(range(st.idx(a), st.idx(b) + 1))
+            ys = [st.top(i) + off for i in cols]
+            # A range that ends on a wall would otherwise poke the trace ``off`` past the top
+            # corner of the wall: end the wall's segment at the material's own top instead.
+            if len(cols) > 1 and abs(st.top(cols[0]) - st.top(cols[1])) > off:
+                ys[0] = st.top(cols[0]) if st.top(cols[0]) > st.top(cols[1]) else ys[0]
+            if len(cols) > 1 and abs(st.top(cols[-1]) - st.top(cols[-2])) > off:
+                ys[-1] = st.top(cols[-1]) if st.top(cols[-1]) > st.top(cols[-2]) else ys[-1]
+            pts = _simplify([(sx(st.x(i)), sy(y)) for i, y in zip(cols, ys)])
             svg.add('<polyline class="hl" points="' + " ".join(f"{f2(px)},{f2(py)}" for px, py in pts) + '"/>')
         # ---- ion arrows
         if ions and ion_xs:
@@ -1420,6 +1429,18 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             if lab.route == "over":
                 lab.dot_svg = sy(lab.dot_y)
         bottom = layout_right_labels(labels, y_draw_top + 7)
+        # A label column taller than the drawing would leave its lowest labels hanging below
+        # the picture on long leaders: show more of the substrate instead, so that every
+        # label starts beside the drawing (presentation only; no geometry moves).
+        lowest = max([l.y - TY["label-title"]["size"] * 0.45 for l in labels
+                      if l.route in ("right", "over")], default=0.0)
+        want = lowest - y_draw_top - SP["max-label-drop"] + 1
+        room = ymax + sub_depth
+        if want > draw_h + 1 and room > draw_h:
+            new_h = min(want, room)
+            for k in (i_clip, i_clip + 1):
+                svg.body[k] = svg.body[k].replace(f'{f1(draw_h)}"', f'{f1(new_h)}"', 1)
+            draw_h = new_h
         for lab in labels:
             halo = []
             if lab.route in ("right", "over"):
@@ -1871,6 +1892,37 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                 if min(a0[0], a1[0]) < max(b0[0], b1[0]) - 1 and min(b0[0], b1[0]) < max(a0[0], a1[0]) - 1:
                     errs.append(f"leaders of {oa!r} and {ob!r} run side by side "
                                 f"{abs(a0[1] - b0[1]):.1f} u apart; stagger their anchors")
+    # 14b: two gutter legs that descend side by side for a long way, a lane apart, are the
+    # same fault seen vertically: the eye cannot tell which leg leads where.
+    if root.get("data-kind") == "xsection":
+        pitch = SP["lane-pitch"] + 2.5
+        legs = [(o, (min(a[1], b[1]), max(a[1], b[1])), a[0]) for o, (a, b) in flat_segs
+                if abs(a[0] - b[0]) < 0.01 and a[0] > draw_right - 0.5]
+        for i in range(len(legs)):
+            for j in range(i + 1, len(legs)):
+                (oa, (a0, a1), ax), (ob, (b0, b1), bx) = legs[i], legs[j]
+                if oa == ob or abs(ax - bx) >= pitch:
+                    continue
+                run = min(a1, b1) - max(a0, b0)
+                if run > SP["max-parallel-leg"]:
+                    errs.append(f"leaders of {oa!r} and {ob!r} descend side by side for "
+                                f"{run:.0f} u, {abs(ax - bx):.1f} u apart; at most "
+                                f"{SP['max-parallel-leg']:.0f} u")
+    # 14c: a label belongs beside its drawing; one pushed well below the drawing's bottom
+    # edge leaves its leader hanging down the side of the picture.
+    if root.get("data-kind") == "xsection" and rects:
+        canvas_h = float(root.get("viewBox").split()[3])
+        srt = sorted(rects, key=lambda r: r[1])
+        for k, (rx, ry, rw, rh) in enumerate(srt):
+            # the right-hand column of a panel starts level with its drawing and ends
+            # before the next panel's drawing begins
+            lo, hi = ry, srt[k + 1][1] if k + 1 < len(srt) else canvas_h + 1
+            for el, b in texts:
+                if "t-label-title" not in (el.get("class") or "") or b[0] < rx + rw:
+                    continue
+                if lo <= b[1] < hi and b[1] > ry + rh + SP["max-label-drop"]:
+                    errs.append(f"panel {k + 1}: the label {el.text!r} sits {b[1] - ry - rh:.0f} u below the "
+                                f"bottom of its drawing; at most {SP['max-label-drop']:.0f} u")
     # 15: two anchor dots that sit almost on top of each other cannot be told apart.
     dots = [(c.get("data-owner", ""), float(c.get("cx")), float(c.get("cy")))
             for c in root.iter("{http://www.w3.org/2000/svg}circle") if c.get("class") == "dot"]
@@ -3092,6 +3144,12 @@ def selftest() -> int:
                 '<path class="leader" data-owner="a" d="M40 102H300"/></svg>', "alongside a material edge"),
         (base + '<path class="ion" d="M100 20L100 80"/>'
                 '<path class="leader" data-owner="a" d="M40 50H300"/></svg>', "cuts through the ion beam"),
+        (base.replace('data-kind="chain"', 'data-kind="xsection"')
+         + '<path class="leader" data-owner="a" d="M270 20H290V150H300"/>'
+           '<path class="leader" data-owner="b" d="M270 24H296V160H300"/></svg>', "descend side by side"),
+        (base.replace('data-kind="chain"', 'data-kind="xsection"').replace("12,10,268,180", "12,10,268,60")
+         + '<text x="12" y="8" class="t-panel-title">P</text>'
+           '<text x="300" y="150" class="t-label-title">Low</text></svg>', "below the bottom of its drawing"),
     ]
     for raw, needle in lint_cases:
         if not any(needle in e for e in lint_svg_text(raw)):

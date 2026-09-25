@@ -207,6 +207,8 @@ The lint is not advisory. Common ones and what they mean:
 | `the two panels have identical geometry` | use `no_drawn_change: true` and one panel |
 | `the figure draws an ion beam but the caption says nothing about the tilt` | add the page's tilt, or say it is not public and the arrows are drawn vertical |
 | `… sits between a paragraph and the {dropdown} that follows it` | move the block below the dropdown (§7) |
+| `leaders of … and … descend side by side for N u` | two gutter legs a lane apart run down together for more than `max-parallel-leg` (48 u): their labels have been pushed far below their dots. Stop labelling unchanged context (`hide_labels`, say so in the caption) or fade it |
+| `panel N: the label … sits N u below the bottom of its drawing` | the label column is taller than the drawing. The generator already shows more substrate to meet it where the series has substrate to show; when it cannot, drop a label of unchanged context as above |
 
 ## 6. Look at it
 

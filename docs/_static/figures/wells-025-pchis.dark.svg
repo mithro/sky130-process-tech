@@ -24,8 +24,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <rect class="ground" x="0" y="0" width="480" height="710"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the HVTPM resist after PNCHI</text>
 <text x="12.0" y="44.0" class="t-panel-title">(step 024); NMOS left, PMOS right</text>
-<clipPath id="clip1"><rect x="12" y="113.0" width="268" height="199.0"/></clipPath>
-<g class="drawing" data-rect="12,113.0,268,199.0" clip-path="url(#clip1)">
+<clipPath id="clip1"><rect x="12" y="113.0" width="268" height="229.7"/></clipPath>
+<g class="drawing" data-rect="12,113.0,268,229.7" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,184.00 92.00,184.00 99.00,228.20 99.50,232.00 100.00,234.11 100.50,235.23 101.00,236.06 101.50,236.73 102.00,237.28 102.50,237.76 103.00,238.17 104.00,238.83 105.00,239.31 106.00,239.66 107.00,239.88 108.00,239.99 184.00,239.99 185.00,239.88 186.00,239.66 187.00,239.31 188.00,238.83 189.00,238.17 189.50,237.76 190.00,237.28 190.50,236.73 191.00,236.06 191.50,235.23 192.00,234.11 192.50,232.00 193.00,228.20 200.00,184.00 283.00,184.00 283.00,348.00 9.00,348.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,179.00 91.75,179.00 91.75,184.00 9.00,184.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,179.00 283.00,179.00 283.00,184.00 200.25,184.00"/>

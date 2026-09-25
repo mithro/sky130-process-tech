@@ -23,9 +23,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern></defs>
 <rect class="ground" x="0" y="0" width="480" height="598"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the blanket nitride/pad-oxide stack</text>
-<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="89.0"/></clipPath>
-<g class="drawing" data-rect="12,38.0,268,89.0" clip-path="url(#clip1)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,71.00 283.00,71.00 283.00,235.00 9.00,235.00"/>
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="181.7"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,181.7" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,71.00 283.00,71.00 283.00,295.00 9.00,295.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,66.00 283.00,66.00 283.00,71.00 9.00,71.00"/>
 <polygon class="mat m-nitride" data-layer="isonit" points="9.00,42.00 283.00,42.00 283.00,66.00 9.00,66.00"/>
 <polygon fill="url(#p-hatch)" points="9.00,42.00 283.00,42.00 283.00,66.00 9.00,66.00"/>
@@ -59,7 +59,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="12.0" y="390.0" class="t-panel-title">areas, open over the future field</text>
 <clipPath id="clip2"><rect x="12" y="402.0" width="268" height="127.0"/></clipPath>
 <g class="drawing" data-rect="12,402.0,268,127.0" clip-path="url(#clip2)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,473.00 283.00,473.00 283.00,637.00 9.00,637.00"/>
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,473.00 283.00,473.00 283.00,697.00 9.00,697.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,468.00 283.00,468.00 283.00,473.00 9.00,473.00"/>
 <polygon class="mat m-nitride" data-layer="isonit" points="9.00,444.00 283.00,444.00 283.00,468.00 9.00,468.00"/>
 <polygon fill="url(#p-hatch)" points="9.00,444.00 283.00,444.00 283.00,468.00 9.00,468.00"/>

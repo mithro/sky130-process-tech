@@ -23,6 +23,7 @@ panels:
   - state_after: "021"
     title: "Before: the cleaned wafer after LVTPIS (step 021); NMOS left, PMOS right"
     dim_layers: [liner, chn]
+    hide_labels: [sub]
   - state_after: "022"
     title: "After: resist over the NMOS side, a window over the PMOS"
     dim_layers: [liner, chn]

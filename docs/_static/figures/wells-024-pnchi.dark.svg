@@ -23,8 +23,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern></defs>
 <rect class="ground" x="0" y="0" width="480" height="388"/>
 <text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
-<clipPath id="clip1"><rect x="12" y="95.0" width="268" height="203.0"/></clipPath>
-<g class="drawing" data-rect="12,95.0,268,203.0" clip-path="url(#clip1)">
+<clipPath id="clip1"><rect x="12" y="95.0" width="268" height="222.7"/></clipPath>
+<g class="drawing" data-rect="12,95.0,268,222.7" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,170.00 92.00,170.00 99.00,214.20 99.50,218.00 100.00,220.11 100.50,221.23 101.00,222.06 101.50,222.73 102.00,223.28 102.50,223.76 103.00,224.17 104.00,224.83 105.00,225.31 106.00,225.66 107.00,225.88 108.00,225.99 184.00,225.99 185.00,225.88 186.00,225.66 187.00,225.31 188.00,224.83 189.00,224.17 189.50,223.76 190.00,223.28 190.50,222.73 191.00,222.06 191.50,221.23 192.00,220.11 192.50,218.00 193.00,214.20 200.00,170.00 283.00,170.00 283.00,334.00 9.00,334.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,165.00 91.75,165.00 91.75,170.00 9.00,170.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,165.00 283.00,165.00 283.00,170.00 200.25,170.00"/>

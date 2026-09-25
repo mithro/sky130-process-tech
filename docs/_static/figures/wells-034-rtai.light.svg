@@ -2,7 +2,7 @@
 <title>One cross-section of the wafer: pad oxide over a P-well on the left and an N-well on the right, which meet under the middle of an oxide-filled trench, with a thin implanted band at the surface of each active area. The drawing is the same as the state before the step.</title>
 <desc>One cross-section of the wafer: pad oxide over a P-well on the left and an N-well on the right, which meet under the middle of an oxide-filled trench, with a thin implanted band at the surface of each active area. The drawing is the same as the state before the step.</desc>
 <style>
-:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#5a4a3a;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
+:root{--bg:#ffffff;--ink:#1b1f24;--ink-muted:#545d68;--rule:#c4cad1;--halo:#ffffff;--accent:#0a58b0;--inferred:#9a5b00;--m-si-sub:#c6cbd1;--m-well-n:#a3cdf5;--m-well-p:#f7b3cd;--m-well-dn:#7fb0e0;--m-sd-n:#2f7fd1;--m-sd-p:#c43d83;--m-implant:#1b1f24;--m-oxide-thermal:#e3b92e;--m-oxide-dep:#f7e9a8;--m-psg:#efe0b4;--m-nitride:#74c7a5;--m-ono:#2d3e6e;--m-poly:#d9662b;--m-resist:#b49ce0;--m-arc:#8a6a50;--m-silicide:#1f6f6c;--m-barrier:#3d2f5b;--m-tungsten:#5b6673;--m-aluminium:#b3c0cc;--m-mim-diel:#c69a55;--m-polyimide:#dcb98f;--ph-feol:#9cc4ea;--pht-feol:#e7f1fa;--ph-mol:#f0c060;--pht-mol:#fbf1dc;--ph-beol:#86cdb4;--pht-beol:#e4f4ee;}
 text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
 .t-panel-title{font-size:14px;font-weight:700}
 .t-label-title{font-size:14px;font-weight:600}
@@ -23,8 +23,8 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <defs><pattern id="p-plus" width="12" height="12" patternUnits="userSpaceOnUse"><path class="pat" d="M3 1V5M1 3H5M9 7V11M7 9H11"/></pattern></defs>
 <rect class="ground" x="0" y="0" width="480" height="306"/>
 <text x="12.0" y="26.0" class="t-panel-title">State at this step (no drawn change)</text>
-<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="179.0"/></clipPath>
-<g class="drawing" data-rect="12,38.0,268,179.0" clip-path="url(#clip1)">
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="197.7"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,197.7" clip-path="url(#clip1)">
 <polygon class="mat m-si-sub" data-layer="sub" points="9.00,89.00 92.00,89.00 99.00,133.20 99.50,137.00 100.00,139.11 100.50,140.23 101.00,141.06 101.50,141.73 102.00,142.28 102.50,142.76 103.00,143.17 104.00,143.83 105.00,144.31 106.00,144.66 107.00,144.88 108.00,144.99 184.00,144.99 185.00,144.88 186.00,144.66 187.00,144.31 188.00,143.83 189.00,143.17 189.50,142.76 190.00,142.28 190.50,141.73 191.00,141.06 191.50,140.23 192.00,139.11 192.50,137.00 193.00,133.20 200.00,89.00 283.00,89.00 283.00,253.00 9.00,253.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,84.00 91.75,84.00 91.75,89.00 9.00,89.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,84.00 283.00,84.00 283.00,89.00 200.25,89.00"/>

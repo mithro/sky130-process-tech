@@ -23,9 +23,9 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern></defs>
 <rect class="ground" x="0" y="0" width="480" height="675"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the wafer as STINITE (step 005) leaves it</text>
-<clipPath id="clip1"><rect x="12" y="79.0" width="268" height="155.0"/></clipPath>
-<g class="drawing" data-rect="12,79.0,268,155.0" clip-path="url(#clip1)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,150.00 283.00,150.00 283.00,314.00 9.00,314.00"/>
+<clipPath id="clip1"><rect x="12" y="79.0" width="268" height="205.7"/></clipPath>
+<g class="drawing" data-rect="12,79.0,268,205.7" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,150.00 283.00,150.00 283.00,374.00 9.00,374.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,145.00 91.75,145.00 91.75,150.00 9.00,150.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,145.00 283.00,145.00 283.00,150.00 200.25,150.00"/>
 <polygon class="mat m-nitride" data-layer="isonit" points="9.00,121.00 91.75,121.00 91.75,145.00 9.00,145.00"/>
@@ -72,14 +72,14 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="12.0" y="437.0" class="t-panel-title">After: trench etched, resist stripped</text>
 <clipPath id="clip2"><rect x="12" y="522.0" width="268" height="117.0"/></clipPath>
 <g class="drawing" data-rect="12,522.0,268,117.0" clip-path="url(#clip2)">
-<polygon class="mat m-si-sub" data-layer="sub" points="9.00,555.00 92.00,555.00 99.00,599.20 99.50,603.00 100.00,605.11 100.50,606.23 101.00,607.06 101.50,607.73 102.00,608.28 102.50,608.76 103.00,609.17 104.00,609.83 105.00,610.31 106.00,610.66 107.00,610.88 108.00,610.99 184.00,610.99 185.00,610.88 186.00,610.66 187.00,610.31 188.00,609.83 189.00,609.17 189.50,608.76 190.00,608.28 190.50,607.73 191.00,607.06 191.50,606.23 192.00,605.11 192.50,603.00 193.00,599.20 200.00,555.00 283.00,555.00 283.00,719.00 9.00,719.00"/>
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,555.00 92.00,555.00 99.00,599.20 99.50,603.00 100.00,605.11 100.50,606.23 101.00,607.06 101.50,607.73 102.00,608.28 102.50,608.76 103.00,609.17 104.00,609.83 105.00,610.31 106.00,610.66 107.00,610.88 108.00,610.99 184.00,610.99 185.00,610.88 186.00,610.66 187.00,610.31 188.00,609.83 189.00,609.17 189.50,608.76 190.00,608.28 190.50,607.73 191.00,607.06 191.50,606.23 192.00,605.11 192.50,603.00 193.00,599.20 200.00,555.00 283.00,555.00 283.00,779.00 9.00,779.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="9.00,550.00 91.75,550.00 91.75,555.00 9.00,555.00"/>
 <polygon class="mat m-oxide-thermal" data-layer="padox" points="200.25,550.00 283.00,550.00 283.00,555.00 200.25,555.00"/>
 <polygon class="mat m-nitride" data-layer="isonit" points="9.00,526.00 91.75,526.00 91.75,550.00 9.00,550.00"/>
 <polygon fill="url(#p-hatch)" points="9.00,526.00 91.75,526.00 91.75,550.00 9.00,550.00"/>
 <polygon class="mat m-nitride" data-layer="isonit" points="200.25,526.00 283.00,526.00 283.00,550.00 200.25,550.00"/>
 <polygon fill="url(#p-hatch)" points="200.25,526.00 283.00,526.00 283.00,550.00 200.25,550.00"/>
-<polyline class="hl" points="92.00,552.00 99.00,596.20 99.50,600.00 100.00,602.11 100.50,603.23 101.00,604.06 101.50,604.73 102.00,605.28 102.50,605.76 103.00,606.17 104.00,606.83 105.00,607.31 106.00,607.66 107.00,607.88 108.00,607.99 184.00,607.99 185.00,607.88 186.00,607.66 187.00,607.31 188.00,606.83 189.00,606.17 189.50,605.76 190.00,605.28 190.50,604.73 191.00,604.06 191.50,603.23 192.00,602.11 192.50,600.00 193.00,596.20 200.00,552.00"/>
+<polyline class="hl" points="92.00,555.00 92.50,555.16 99.00,596.20 99.50,600.00 100.00,602.11 100.50,603.23 101.00,604.06 101.50,604.73 102.00,605.28 102.50,605.76 103.00,606.17 104.00,606.83 105.00,607.31 106.00,607.66 107.00,607.88 108.00,607.99 184.00,607.99 185.00,607.88 186.00,607.66 187.00,607.31 188.00,606.83 189.00,606.17 189.50,605.76 190.00,605.28 190.50,604.73 191.00,604.06 191.50,603.23 192.00,602.11 192.50,600.00 193.00,596.20 199.50,555.16 200.00,555.00"/>
 </g>
 <path class="witness" d="M92.0 555.0H200.0"/>
 <path class="dim" d="M132.0 605.0V561.0"/>

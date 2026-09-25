@@ -17,7 +17,7 @@
 # that each one can carry the footnote key that is defined on its own page.
 substrate:
   material: si-sub
-  depth: 160
+  depth: 220
   label:
     title: "Silicon wafer"
     note: "the starting wafer (SMAT, step 001)"
