@@ -209,7 +209,7 @@ MASKS_INDEX = ROOT / "docs" / "masks" / "index.md"
 OVERVIEW_INDEX = ROOT / "docs" / "overview" / "index.md"
 OVERVIEW_MODULES_HEADER = "| Module | Steps | Number of steps | Mask steps | Key public facts |"
 
-MACHINES_TABLE_HEADER = "| Machine class | What it does in SKY130 | Tools SkyWater lists publicly | Steps |"
+MACHINES_TABLE_HEADER = "| Machine class | Steps |"
 MASKS_TABLE_HEADER = ("| Step | PDK mask (`masks.csv`) | Mask-level layers (`gds_layers.csv`) | "
                       "Drawn layers (`gds_layers.csv`) | Patterns | Minimum CD, feature / space |")
 
@@ -311,12 +311,20 @@ def _machine_class_map_from_text(text: str) -> dict[int, list[str]]:
     """The parsing core of ``machine_class_map()``, taking the machines
     index's own text as a parameter so ``--selftest`` can pin the role-
     marker, exclusion and ambiguous-label rules against a small
-    synthetic table instead of the real, large one (review L6)."""
+    synthetic table instead of the real, large one (review L6).
+
+    The class cell is always the row's first cell and the Steps cell
+    always its last, whatever the column count in between (W3 shrank the
+    checked table from four columns to two, ``Machine class | Steps``;
+    reading positionally by ``cells[-1]`` instead of a fixed index keeps
+    this working for either shape, the same generalisation
+    ``check_machines.index_rows_from_lines`` already made for the same
+    table)."""
     rows = []
     label_counts: dict[str, int] = {}
     for row in _table_rows(text, MACHINES_TABLE_HEADER):
         cells = _split_row(row)
-        class_cell, steps_cell = cells[0], cells[3]
+        class_cell, steps_cell = cells[0], cells[-1]
         m = MACHINE_REF_RE.search(class_cell)
         if not m or m.group(2) in SUPPORTING_EQUIPMENT_TARGETS:
             continue
@@ -677,6 +685,26 @@ def selftest() -> int:
         problems.append("machine_class_map: a supporting-equipment (metrology) row was not excluded")
     if any("Furnace <machine" in r for v in mm.values() for r in v):
         problems.append("machine_class_map: an ambiguous label was not disambiguated with its qualifier")
+
+    # machine_class_map() again, in the real two-column shape the
+    # machines index actually uses (W3 shrank it from four columns to
+    # ``Machine class | Steps``): same rules, same expected results,
+    # confirming cells[0]/cells[-1] read this shape correctly and not
+    # only the wider one above.
+    machines_text_2col = "\n".join([
+        MACHINES_TABLE_HEADER,
+        "|---|---|",
+        "| {ref}`Furnace <machine-furnace-ox>`: oxidation | {ref}`A <step-001>`, {ref}`B <step-002>`; *alternative:* {ref}`C <step-003>` |",
+        "| {ref}`Furnace <machine-furnace-lpcvd>`: LPCVD | {ref}`C <step-003>` |",
+        "| {ref}`RTP <machine-rtp>` | {ref}`C <step-003>` |",
+        "| {ref}`Metrology <machine-cd-sem-overlay-metrology>` | {ref}`A <step-001>`, {ref}`B <step-002>`, {ref}`C <step-003>` |",
+    ])
+    mm2 = _machine_class_map_from_text(machines_text_2col)
+    if mm2 != mm:
+        problems.append(
+            f"machine_class_map: two-column form gave a different result than the "
+            f"four-column form: {mm2!r} vs {mm!r}"
+        )
 
     # mask_map(): the mask step itself plus its Patterns cell map to the
     # mask; a step named in no row's Patterns cell is simply absent

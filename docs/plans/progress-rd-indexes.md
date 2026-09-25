@@ -493,3 +493,43 @@ undone this round for a checker reason). L1–L5 and the two unresolved
 conflicts C1 (materials >25-link Steps cells; needs a `check_materials.py`
 change, not attempted) and the rest of C2 were left as the review and the
 coordinator's instructions describe them — not asked for this round.
+
+## Post-rebase fix: `tools/gen_steps.py` read the old four-column machines table
+
+After the coordinator rebased this branch onto `main`, `gen_steps.py
+--check` failed: `table header not found: '| Machine class | What it does
+in SKY130 | Tools SkyWater lists publicly | Steps |'`. `gen_steps.py`
+(landed on `main` after this branch started, so it was never run against
+this branch's restructured pages before) derives the step index's
+*Machine class* and *Mask* reverse-lookup columns by reading the machines
+and masks indexes' own checked tables — the same "reverse lookup" report-B
+B2 describes. Its `MACHINES_TABLE_HEADER` constant was still the
+merge-base's four-column header text; W3 shrank that table to
+`Machine class | Steps`, so the exact-text header match never found it.
+
+Fix: updated `MACHINES_TABLE_HEADER` to the new two-column header text,
+and generalised `_machine_class_map_from_text`'s cell extraction from a
+fixed `cells[3]` to `cells[-1]` (class cell is always first, Steps cell
+always last, whatever the width in between) — the same generalisation
+`check_machines.index_rows_from_lines` already made for this exact table
+under W0e, so the two readers of this table now agree by construction, not
+by coincidence. `MASKS_TABLE_HEADER` needed no change: the masks index's
+checked six-column table keeps its exact header text (only a caption and
+a new "Find a mask" section were added above it), and `mask_map()` was
+never reached by the failing run since `machine_class_map()` raises first.
+
+Added a selftest case (`machines_text_2col`) exercising the real,
+committed two-column shape with the same role-marker, exclusion,
+ambiguous-label and multi-row-claim fixtures as the existing four-column
+case, and asserting the two shapes give an identical result — confirming
+`cells[-1]` reads either width correctly, not only one of them.
+
+Verified: `gen_steps.py --selftest` passes; `gen_steps.py --check` passes;
+running `gen_steps.py` for real and diffing shows `docs/steps/index.md`
+**byte-identical** to the committed file — the reverse-lookup data itself
+never changed (only the source table's column count did), so the
+generated page does not change either, and no explanation of a legitimate
+difference is needed. `gen_index_links.py --check` and `gen_step_tables.py
+--check` both still pass (0 differ). Full checker suite
+(`check_steps/refs/machines/materials/masks/inforce.py`) and a `-W` build:
+all clean.
