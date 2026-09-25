@@ -164,8 +164,8 @@ These are absolute. A reviewer who finds one of them rejects the whole page.
 | **R-CAPTION** | tables with no caption | all | hand | — |
 | **R-LINKS** | reading-list bullets and named titles are not links | all | scripted + hand | **W0c** |
 | **R-WAYBACK** | dead cited URLs | all | hand | W0f (tooling) |
-| **R-STEPRUN** | runs of step links; bare-number link text | machine, material, index | scripted / generated | W0d (generated tables) |
-| **R-INDEX** | methodology before navigation on index pages | the five indexes | hand (moves) | W0d, W0e (parts) |
+| **R-STEPRUN** | runs of step links; bare-number link text | machine, material, index | scripted / generated | — |
+| **R-INDEX** | methodology before navigation on index pages | the five indexes | hand (moves) | W0d (parts) |
 | **R-TERM** | missing `{term}` links; the glossary page | all, glossary | scripted proposal | W0d (Phase cell) |
 | **R-CARDS** | landing page is a bare table of contents | landing, section fronts | hand | — |
 | **R-ANCHOR** | inventory entries have no anchors | inventory | scripted | — |
@@ -1201,9 +1201,12 @@ wording, the `N steps; see …` quick-facts row.
 `tablecell>=8steplinks` (46); `grep -rEn '\{ref\}`[0-9]{3} <step-' docs/` for the bare-number links
 (1,975 in 11 files).
 
-**Kind.** the link text is scripted; the table is best generated (a `gen_step_tables.py` fed by
-`tools/steps.csv` and the index rows) — **blocked until W0d** if generated. Building it by hand is
-allowed only for a single page, and then the run must be re-checked against the index.
+**Kind.** the link text is scripted; the table (or, above 25 links, the dropdown) is **generated,
+never hand-written** — `tools/gen_step_tables.py` (unblocked, `topic/rd-checkers`), fed by
+`tools/steps.csv` and the run itself, wraps the generated block in
+`<!-- step-tables:begin --> … <!-- step-tables:end -->` directly after the run on all 42 machine and
+material pages. Run `uv run tools/gen_step_tables.py` (or `--check`) after any edit that changes a
+run's step list, its markers or its "*also …:*" wording; never edit the generated block by hand.
 
 #### R-INDEX — index pages put methodology before navigation
 *(reports B B2, B3 and C C6/C7)*
@@ -1229,12 +1232,14 @@ the page opens with evidence policy rather than with what the page is for.
    `docs/machines/index.md:17-57`) with a navigation table `class → one clause → number of steps`, and
    make the toctree `:hidden:`.
 
-**Do (blocked until W0e).** The main-table restructurings: machines index to `Machine class | Steps`
-plus a `{grid}` of cards (needs `check_machines.index_rows` to read a two-column table); materials index
-split into `Material | Class page | Role | SkyWater evidence` and `Material | Steps` (needs
-`check_materials.Index` to read the Steps cell from a second table, keyed by key rather than by
-position). Until then only the cosmetic fix is available: wrap in `{table}` with a caption and
-`:widths:` (R-CAPTION).
+**Do (unblocked, `topic/rd-checkers`).** The main-table restructurings: machines index to
+`Machine class | Steps` plus a `{grid}` of cards (`check_machines.index_rows` now reads a main-table
+row of any width, first cell a machine link, last cell the Steps cell); materials index split into
+`Material | Class page | Role | SkyWater evidence` and `Material | Steps` (`check_materials.Index` now
+reads the Steps cell from a second table, keyed by key rather than by position, when the main table has
+no Steps column). The restructuring itself — actually rewriting `docs/machines/index.md` and
+`docs/materials/index.md` — is still **W3**; until it happens, the cosmetic fix remains available too:
+wrap in `{table}` with a caption and `:widths:` (R-CAPTION).
 
 **Do (blocked until W0d).** `docs/steps/index.md` — grouping into the 13 module H3s, the short sidebar
 titles, the `Machine class` and `Mask` columns. It is generated; §2.8.
@@ -2140,12 +2145,12 @@ holds the status.
 |---|---|---|
 | R-LINKS | **W0c** | citation-style rule 5 reworded; the "inline URL must be in this page's own footnote definitions" invariant in `check_refs.py`; `tools/fix_reading_list_links.py` |
 | R-WAYBACK (tooling) | **W0f** | `check_links.py` lookup fix, `--suggest-archive`, `--include-generated`. The citation *form* is usable now |
-| R-H3 on mask pages | **W0e** | `check_masks.OPTIONAL_H3` must accept `Exposure class`, `Mask errors`, `Resist and tone`, `Overlay and alignment`, `Pattern transfer` |
-| R-INDEX, machines main table | **W0e** | `check_machines.index_rows()` must read a two-column table |
-| R-INDEX, materials main table | **W0e** | `check_materials.Index` must read the Steps cell from a second table, keyed by key |
+| R-H3 on mask pages | **unblocked** (`topic/rd-checkers`) | done: `check_masks.OPTIONAL_H3` accepts `Exposure class`, `Mask errors`, `Resist and tone`, `Overlay and alignment`, `Pattern transfer` for "Lithography and pattern transfer", plus any further H3 there. Converting the 36 mask pages' run-in `**Bold.**` labels to real H3s (B8) is unaffected by this and is still a separate **W3** batch |
+| R-INDEX, machines main table | **unblocked** (`topic/rd-checkers`) | done: `check_machines.index_rows()` reads a main-table row of any width (>= 2 cells), first cell a machine link, last cell the Steps cell — the old 4-column form still works. Restructuring `docs/machines/index.md` itself to `Machine class \| Steps` plus a card grid is still **W3** |
+| R-INDEX, materials main table | **unblocked** (`topic/rd-checkers`) | done: `check_materials.Index` reads the Steps cell from a second `Material \| Steps` table, keyed the same way as the main table, when the main table has no Steps column; the main-table key no longer has to be the literal first cell. Restructuring `docs/materials/index.md` itself is still **W3** |
 | R-INDEX, `docs/steps/index.md` | **W0d** | `gen_steps.py`: sync with the committed intro **first** (it is stale), then module grouping, short sidebar titles, `Machine class` and `Mask` columns, `--check` |
 | R-GENBLOCK | **W0d** | `gen_index_links.py` heading and link text, `--selftest` update, one regeneration commit |
-| R-STEPRUN, generated tables | **W0d** | a new `gen_step_tables.py` |
+| R-STEPRUN, generated tables | **unblocked** (`topic/rd-checkers`) | done: `tools/gen_step_tables.py` generates the table (runs of <= 25 links) or dropdown (more) on all 42 machine and material pages; wired into `.readthedocs.yaml` and `agent-briefs.md` |
 | R-TERM, Phase cell | **W0d** | the stub template in `gen_steps.py` must change in the same commit |
 | R-FIGURE | **W1a** | `tools/gen_figures.py --check`, `data/figures/`, `docs/_static/figures/`, `figure-theme.js`, tokens, the "Figure conventions" page, the `check_inforce.py` hook for figure specs |
 | R-DROPDOWN, shorter titles | **owner** | the in-force title wording is the owner's; A F12 is a proposal |

@@ -227,9 +227,33 @@ docs/materials/*.md` → "44 page(s) checked against main, 2 with
 undeclared differences" (the two pages in point 3 above, both verified
 harmless).
 
+## Commit 5 — `docs/plans/readability-guide.md` §9 and R-STEPRUN updates (done)
+
+* §9 blocked-rules table: `R-H3 on mask pages`, `R-INDEX, machines main table`, `R-INDEX, materials
+  main table` and `R-STEPRUN, generated tables` all changed from their `Wxx` blocker to
+  **unblocked** (`topic/rd-checkers`), each with a one-line "done:" note saying what actually
+  changed and, for the two `R-INDEX` rows and the `R-H3` row, an explicit reminder that the *content*
+  work (restructuring the two indexes; converting the 36 mask pages' `**Bold.**` labels to H3s) is
+  still a separate **W3** batch — this commit only unblocks the checkers, per the task brief.
+* R-STEPRUN's own section (§4): reworded **Kind** to say the table/dropdown is generated, never
+  hand-written, names `tools/gen_step_tables.py`, and tells a future hand-editor to re-run it (or
+  `--check`) after any edit that changes a run's steps or markers.
+* For internal consistency with the two edits above (avoiding a same-document contradiction one
+  paragraph away), also updated: the §3 summary table's `R-STEPRUN`/`R-INDEX` "Blocked" cells, and
+  R-INDEX's own "Do (blocked until W0e)" paragraph (§4) to "Do (unblocked, `topic/rd-checkers`)" with
+  the same W3-content-work caveat.
+* **Deliberately not touched** (out of the task's stated scope — "§9 and R-STEPRUN" only): the other
+  scattered `W0e`/mask-H3 mentions elsewhere in the guide (§2 "Never" list item 9's "until W0e";
+  §3's `R-H3` summary row; §4's `R-H3` section body; the MyST-crib mock-up annotations around line
+  1591). These are now stale in the same sense the ones above were, but re-touching every mention
+  across the whole guide was a much larger, more error-prone edit than the task asked for. Flagging
+  this for the coordinator/whoever starts the W3 mask-H3 batch (B8): read §9's `R-H3 on mask pages`
+  row (now accurate) rather than the older, now-stale mentions elsewhere.
+
 ## Remaining (this branch)
 
-* Commit 5 — `docs/plans/readability-guide.md` §9 and R-STEPRUN updates.
+None — all five commits of the task are done. Final full check suite and `-W` build re-run after
+commit 5 below.
 
 ## Decisions and things to flag for the coordinator
 
