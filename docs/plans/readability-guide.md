@@ -342,9 +342,10 @@ number or footnote marker.
    supports every item that follows: keep it there, on the lead-in, before the colon — never move
    it onto the last item only, which leaves the other items looking uncited.
 2. One bullet per item, in the original order, with the item's own clause and marker.
-3. Open each bullet with a bold label of 2–4 words taken from the item's own words, then an em dash.
-   If the item already begins with the words the label would use, bold those words in place; do not
-   repeat them as a separate label.
+3. Open each bullet with a bold label of 2–4 words taken verbatim from the item's own words, then an
+   em dash; if the item already begins with those words, bold them in place. If no such label exists
+   without repeating the item or adding words — and always for lists of studies ("X et al. showed …")
+   and for "First, … Second, …" items — use plain bullets.
 4. Keep the closing sentence ("Both are controlled by …") as prose after the list.
 5. A list of four or fewer bare nouns stays inline.
 6. Numbered lists are for sequences only (a recipe, an arithmetic derivation). Nest at most two levels.
