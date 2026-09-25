@@ -160,6 +160,7 @@ ops:
     material: resist
     t: 44
     where: [[0, 134]]
+    route: top
     label:
       title: "Thick photoresist"
       note: "N-well mask, NWM, step 017; its thickness is inferred"
@@ -226,6 +227,7 @@ ops:
     material: resist
     t: 38
     where: [[0, 134]]
+    route: top
     label:
       title: "Photoresist"
       note: "high-Vt PMOS mask, HVTPM, step 022"

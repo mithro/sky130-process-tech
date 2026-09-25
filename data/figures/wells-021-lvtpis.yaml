@@ -1,0 +1,25 @@
+id: wells-021-lvtpis
+kind: xsection
+page: docs/steps/021-lvtpis.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step the thick implanted resist
+  covers the left-hand part of the drawing. After it the resist is gone and the oxide surface is bare
+  across the slice; the N-well and the implanted surface bands are unchanged.
+caption: >-
+  Before, the N-well resist after its three implants; after, the resist gone and the oxide bare, with
+  the well and the bands untouched. That NWI, NWI2 and LVTPI share this one resist, and so that this
+  is the strip of the N-well resist, is this reference's reading. The pad oxide is drawn as still in
+  place, which the page infers. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+arrow:
+  title: "LVTPIS, step 021"
+  note: "The thick implanted resist is ashed and stripped, and the wafer is cleaned for the next mask."
+panels:
+  - state_after: "020"
+    title: "Before: the N-well resist after LVTPI (step 020); NMOS left, PMOS right"
+    dim_layers: [liner, chn]
+    show_ions: false
+  - state_after: "021"
+    title: "After: resist removed; the N-well and the channel bands stay"
+    dim_layers: [liner, chn]

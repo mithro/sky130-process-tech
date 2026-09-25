@@ -21,6 +21,14 @@ lithography, {ref}`HVTPM <step-022>`. The step list used in this
 reference names it after the last implant it follows ("P-channel implant
 strip"); the resist it removes is, we infer, the N-well resist.
 
+:::{figure} /_static/figures/wells-021-lvtpis.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the thick implanted resist covers the left-hand part of the drawing. After it the resist is gone and the oxide surface is bare across the slice; the N-well and the implanted surface bands are unchanged.
+:width: 560px
+:name: fig-wells-021-lvtpis
+
+Before, the N-well resist after its three implants; after, the resist gone and the oxide bare, with the well and the bands untouched. That NWI, NWI2 and LVTPI share this one resist, and so that this is the strip of the N-well resist, is this reference's reading. The pad oxide is drawn as still in place, which the page infers. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+:::
+
 This is the hardest strip of the module. The resist is as thick as any
 in the flow so far — the same 2–3 µm class inferred for the deep N-well
 resist at {ref}`DNM <step-007>` and for this one at

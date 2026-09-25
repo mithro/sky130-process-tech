@@ -27,6 +27,14 @@ public). It is the P-channel counterpart of {ref}`NCHI <step-045>`, the
 N-channel implant that the 1.8 V NMOS receive later under the
 low-voltage oxide mask.
 
+:::{figure} /_static/figures/wells-020-lvtpi.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step the N-well lies under the open window beside the thick resist. After it arrows come down on the window again, and a thin band just under the surface of the right-hand active silicon, inside the N-well, marks the implanted channel dose.
+:width: 560px
+:name: fig-wells-020-lvtpi
+
+Before, the N-well under its window; after, a thin implanted band at the surface of the PMOS active silicon inside the well. The band is drawn in the neutral implant colour because the implant's type is not public: under the n⁺ poly gate the gate pages infer it would be a p-type counter-dope, under a p⁺ gate an n-type dose. That it shares the N-well resist is this reference's reading. The band is drawn only in the active silicon and its depth is not public; the arrows are drawn vertical because the tilt is not public. The LVTNI band and the liner oxide are drawn faded. Not to scale.
+:::
+
 The step's position is what makes it economical: no extra lithography is
 needed because the N-well mask already outlines exactly the regions
 where PMOS channels can exist. The IBM retrograde-well patent describes

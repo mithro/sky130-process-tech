@@ -1,0 +1,37 @@
+id: wells-018-nwi
+kind: xsection
+page: docs/steps/018-nwi.md
+series: series-wells.yaml
+crop_depth: 128
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step thick resist covers the
+  left-hand part of the drawing and the right-hand part lies in an open window. After it arrows come
+  down on the window, and under the window an N-type region reaches from the silicon surface to a
+  flat bottom far below the trench floor, under the right-hand active area and the right half of the
+  trench alike; the silicon under the resist is untouched.
+caption: >-
+  Before, the N-well window; after, a beam of ions and, under the window only, the N-well, drawn from
+  the silicon surface to a flat bottom. The PDK's process assumptions give the well a peak
+  concentration of 6.0 × 10¹⁷ cm⁻³ and put its baseline vertical dimension at 1.1 µm;[^pdk-03] the
+  well is drawn deeper than the P-well of step 027 in the ratio of the PDK's two depths, but not to
+  scale against anything else, and no doping profile is drawn, because the PDK gives a peak and a
+  depth, not a shape. The species is inferred and the energy, dose and tilt are not public; the
+  arrows are drawn vertical. The earlier channel-implant band and the liner oxide are drawn faded.
+  Not to scale.
+arrow:
+  title: "NWI, step 018"
+  note: "Ions are implanted at high energy through the N-well window; the resist stops them everywhere else."
+panels:
+  - state_after: "017"
+    title: "Before: the N-well window from NWM (step 017); NMOS left, PMOS right"
+    dim_layers: [liner, chn]
+    show_ions: false
+  - state_after: "018"
+    title: "After: the N-well under the window, reaching well below the trench"
+    dim_layers: [liner, chn]
+    labels:
+      nwell:
+        title: "N-well"
+        note: "retrograde; the PDK's baseline vertical dimension is 1.1 µm"
+        basis: public
+        cite: pdk-03

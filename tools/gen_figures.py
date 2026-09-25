@@ -1058,10 +1058,18 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
                 l.route = "right"
                 routes[l.key] = "right"
             tops = tops[:max_top]
+        rxs = [X0 + geo[l.key][1] + l.stub for l in tops]
         for k, lab in enumerate(tops):
-            rx = X0 + geo[lab.key][1] + lab.stub
+            rx = rxs[k]
             lab.hang = "left" if (len(tops) == 2 and k == 0) or (len(tops) == 1 and rx > X0 + DRAW_W * 0.6) else "right"
-            lab.wrap(min(200.0, rx - 9 - M) if lab.hang == "left" else min(230.0, W - M - rx - 9))
+            width = min(200.0, rx - 9 - M) if lab.hang == "left" else min(230.0, W - M - rx - 9)
+            # The left one of two hangs left of its riser; when the riser is so close to the
+            # canvas edge that the text would be squeezed into a narrow column, it hangs right
+            # instead, in the gap before the second riser, if that gap is wider.
+            if len(tops) == 2 and k == 0 and width < SP["min-hang-width"] and rxs[1] - rx - 18 > width:
+                lab.hang = "right"
+                width = min(230.0, rxs[1] - rx - 18)
+            lab.wrap(width)
             if lab.note_lines > int(SP["max-callout-note-lines"]):
                 errs.append(f"the label above the drawing, {lab.spec['title']!r}, wraps to "
                             f"{lab.note_lines} note lines; at most "

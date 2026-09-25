@@ -95,7 +95,18 @@ numbers, quotes, hedges of the caption) and `git diff` no deleted line.
 | `wells-014-lvtnm` | the flat NS19 surface matches `iso-013-ns19`; resist edge at mid-trench; highlight on the resist top only; fill-oxide dot inside the fill, leader clear of the pad oxide | the window side is illustrative (the plate's polarity is not public); said in the caption |
 | `wells-015-lvtni` | beam lands in the window only, on the pad oxide and on the proud fill oxide; the band sits in the active silicon only; ion label hangs right with room; band leader 7 u under the surface, not along the pad oxide | the block sits between the first paragraph and the collapsed patent note that paragraph points to ("in the collapsed note below"); the note is still below it |
 | `wells-016-lvtnis` | resist gone in the after panel, band unchanged, no highlight (nothing new at the surface, as `iso-009-dnis`) | — |
-| `wells-017-nwm` | thick resist on the NMOS side; resist dot at its top-right corner, leader in open air | — |
+| `wells-017-nwm` | thick resist on the NMOS side, labelled from above (see 018); the riser crosses the accent trace on the resist top, as in `iso-006-stie` | — |
+| `wells-018-nwi` | beam on the window only; N-well from the silicon surface to a flat bottom, continuous under field and active; its dot mid-well, the substrate's dot below the well; resist labelled from above so its leader no longer cuts across the beam (it did when routed right) | "Thick photoresist" wraps to two lines between the two risers |
+| `wells-019-nwi2` | second beam, well unchanged, no highlight; before panel has no arrows | — |
+| `wells-020-lvtpi` | PMOS band in the right active silicon only, inside the N-well; LVTNI band faded; band dot staggered left of the pad-oxide dot | the band's leader crosses its own band with a halo, drawn as a short white edge on the band (tool behaviour for every overlay) |
+| `wells-021-lvtpis` | resist gone, well and band unchanged | — |
+
+Tool change made while doing 018: when two labels sit above the drawing and the left
+one's riser is within 110 u of the canvas edge (`min-hang-width`), it now hangs right, in
+the gap before the second riser, instead of being squeezed into a one-word column. The
+thick N-well and HVTPM resists are routed from above (`route: top`), because a
+right-routed resist leader on the left of a beam crossed every ion arrow. No existing
+figure changed.
 
 ## Noticed, not fixed
 
