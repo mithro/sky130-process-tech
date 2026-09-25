@@ -135,6 +135,8 @@ PHRASES: dict[str, list[str]] = {
         "between 2.0 nm and 4.0 nm",
         "the pad oxide 209",
         "a thin, second gate oxide 246",
+        "the memory-transistor channel with indium",
+        "only tens of nanometres thick in the cypress patent",
     ],
     "US8110414B2": [
         "an etch rate selectivity of the TiN to the silicon comprising",
@@ -155,6 +157,7 @@ PHRASES: dict[str, list[str]] = {
     "US9824895B1": [
         "it may be grown to be too thick",
         "whether the thick gate oxide is formed by a furnace",
+        "the blocking oxide from growing too thick",
     ],
     "US8940645B2": ["being trap dense", "substantially trap free"],
 }
@@ -734,6 +737,29 @@ def selftest() -> int:
                mp, {"pat-03": fam_p}, {}, Matcher([]), ps, [])
     if not any("phrase of" in x for x in ps):
         fail(f"a phrase in a flagged footnote definition was not reported: {ps}")
+
+    # 3d. The PHRASES fragments added after the rd-figures-s3s4 review (an
+    #     independent review found these leaked in the open, worded
+    #     differently enough from any prior phrase to pass unnoticed): each
+    #     is refused in the open and allowed inside a dropdown.
+    for rep, fragment in [
+        ("US8796098B1", "the memory-transistor channel with indium"),
+        ("US8796098B1", "only tens of nanometres thick in the cypress patent"),
+        ("US9824895B1", "the blocking oxide from growing too thick"),
+    ]:
+        fam_r = Restricted(_fam(fid=rep, number=rep))
+        mr = Matcher([fam_r])
+        ps = []
+        check_page(Path("s.md"), f"# P\n\nA passage saying {fragment} here.\n\n## References\n",
+                   mr, {}, {}, Matcher([]), ps, [])
+        if not any("phrase of" in x for x in ps):
+            fail(f"the {rep} fragment {fragment!r} was not reported in the open: {ps}")
+        ps = []
+        check_page(Path("t.md"),
+                   f"# P\n\n:::{{dropdown}} t\nA passage saying {fragment} here.\n:::\n",
+                   mr, {}, {}, Matcher([]), ps, [])
+        if ps:
+            fail(f"the {rep} fragment {fragment!r} inside a dropdown was reported: {ps}")
 
     # 4. Dropdown detection, colon and backtick fences, and nesting.
     text = ("a\n"
