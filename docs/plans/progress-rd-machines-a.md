@@ -219,6 +219,55 @@ Checkers: `check_machines.py`, `check_refs.py`, `check_inforce.py`, `gen_index_l
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 3. `docs/machines/coat-develop-track.md` — done
+
+Rules applied: R-INTRO (intro cut to one sentence, itself split at the colon since it alone was
+50 words; the "It is a cluster of spin cups..." sentence, redundant with the H2's own opening,
+kept but moved into the H2 as a second sentence rather than dropped; pointer moved to
+`{seealso}`; template sentence deleted). R-MODELS (7-row table; TEL's "Mark series came first"
+sentence and the Sokudo company/date sentence kept as prose, since neither is a model spec;
+Ebara-equivalent "Others: SVG/ASML 90S, no description retrieved" kept as prose per the same
+precedent as page 2). R-ENTRIES (3-row table for the three SkyWater-listed tracks; both
+gloss-only short quotations, "Sokudo RF3" and "TEL ProZ Lithius" — distinct strings from the
+blockquote's longer "... track" forms — kept inside the matching "What it names" cell, since
+each also already recurs once in Open Questions and dropping the gloss's own copy would have
+been a real loss, not a duplicate). R-QUICKFACTS (7 rows trimmed of connectives; numbers and
+quotations kept in place throughout, no relocations needed to hit a reasonable length this
+time). R-PARA (7 H3 paragraphs split at source/topic seams). R-SENTENCE (about 10 sentences over
+45 words split). R-PARA step 4 (2 list items over 60 words fixed with an indented continuation
+paragraph). R-RELATED (8 sentence-bullets → 4 grouped bullets). R-CAPTION (both new tables).
+
+Over-cap counts (before → after): paragraphs > 100 words: 8 → 0; sentences > 45 words: ~11 → 0;
+list items > 60 words outside References: 2 → 0; quick-facts cells > 20 words: 5 of 7 → 0 words
+not fully achieved (all 5 still exceed 20 words, each keeping 2 quotations — same method-note-3
+trade-off as page 2, no relocation attempted this time since none of the quotations were
+individually large enough to threaten a paragraph cap if left in place); tables with no caption:
+2 new → 0.
+
+`check_preserved.py --base 999896ed --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges,identifiers`: clean except `LOST hedges: about` and
+`LOST identifiers: SKY130` (method note 4) and two more `LOST number_order` tuples of the same
+table-conversion shape as page 2's (method note 1): `('3','2006','65','45')` (the Sokudo
+bullet's founding-date sentence now sits, in reading order, after its own table row rather than
+before it) and `('8','1997','200','350','180')` (the CLEAN TRACK ACT 8 quote itself says "in
+1997" a second time, right where the table's own Year column already supplies a `1997` between
+the row's `Model` number and the quote) — both hand-checked digit-for-digit against the source,
+neither a transposition. First draft of the R-ENTRIES/R-MODELS conversion actually lost six real
+quotations (dropped, not reworded, while condensing multi-quote source sentences into single
+table cells) and one `about`-adjacent duplicate; all six were restored to the exact source
+wording once `check_preserved.py` flagged them — recorded here because it is the clearest
+illustration yet of why every LOST line must be read by hand (method note in
+`agent-briefs.md`, "Checking a readability edit"): a model condensing "quote A" + "quote B" into
+one cell has an easy failure mode of keeping only the first quote and discarding the second
+silently.
+
+Checkers, `-W` build: all clean. Screenshots: phone tiles 4–5 (both new tables) read; no
+horizontal overflow with the 4-column Vendor/Model/Year/Published-figures shape (this table did
+not need the `Type`-column fix of page 2, since coat/develop tracks have no sub-type worth a
+column).
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but

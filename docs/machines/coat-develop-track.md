@@ -2,39 +2,44 @@
 # Coat/develop track
 
 A coat/develop track is the automated wafer-processing line that sits
-beside every exposure tool: it primes the wafer, spins on the
+beside every exposure tool. It primes the wafer, spins on the
 anti-reflective coating and the resist, bakes them, hands the wafer to
 the stepper or scanner, takes it back for the post-exposure bake, and
-develops, rinses and dries the pattern. It is a cluster of spin cups and
-hot and chill plates served by robots, usually linked in line to one
-exposure tool.[^wiki-litho] This page describes the class in general,
-lists representative 200 mm-era models, and then says what SkyWater has
-published about its own tools of this class and which SKY130 steps this
-reference assigns to them. The resist chemistry and the sequence of a
-mask step are on the {ref}`category page <category-lithography>`.
+develops, rinses and dries the pattern.[^wiki-litho]
 
 | | Coat/develop track |
 |---|---|
 | What it does | "Wafer track systems are also known as wafer coater/developer systems"; "The photolithography process is carried out by the wafer track and stepper/scanner", which "are usually installed side by side, and are 'linked' together".[^wiki-litho] |
-| Modules | The CLEAN TRACK ACT 8 "features spinner modules, thermal processing units, and an optical edge bead removal unit integrated with the stepper interface".[^tel-act8] |
-| Coat | Spin coating to "layers of photoresist about 1 micrometre thick", "typically spun at 20 to 80 revolutions per second for 30 to 60 seconds";[^wiki-spin-coating] the SKY130 design assumptions use a nominal photoresist thickness of 1.14 µm and a photoresist thickness for HV tip implants of 0.3 µm.[^pdk-03] |
-| Bake | Prebake "typically at 90 to 100 °C for 30 to 60 seconds on a hotplate"; a post-exposure bake before develop, to which chemically amplified resist is "much more sensitive" in "time, temperature, and delay".[^wiki-litho] |
+| Modules | The ACT 8 "features spinner modules, thermal processing units, and an optical edge bead removal unit integrated with the stepper interface".[^tel-act8] |
+| Coat | Spin coating: "layers of photoresist about 1 micrometre thick", "typically spun at 20 to 80 revolutions per second for 30 to 60 seconds";[^wiki-spin-coating] SKY130's nominal photoresist thickness 1.14 µm, HV tip implants 0.3 µm.[^pdk-03] |
+| Bake | Prebake "typically at 90 to 100 °C for 30 to 60 seconds on a hotplate"; chemically amplified resist is "much more sensitive" in "time, temperature, and delay" at the post-exposure bake.[^wiki-litho] |
 | Develop | "The develop chemistry is delivered on a spinner"; "Metal-ion-free developers such as tetramethylammonium hydroxide (TMAH) are now used".[^wiki-litho] |
 | Throughput | "as many as 120 wafers per hour" (ACT 8);[^tel-act8] "Inline: 120" wph (ACT 12 and ACT 8Z).[^tel-act] |
-| 200 mm era | TEL's CLEAN TRACK ACT 8, which "debuted in the coater/developer marketplace in 1997 to handle 200mm wafers";[^tel-act8] SCREEN's "Long-Selling 60/80 Series".[^screen-sk80ex] |
+| 200 mm era | ACT 8, "debuted in the coater/developer marketplace in 1997 to handle 200mm wafers";[^tel-act8] SCREEN's "Long-Selling 60/80 Series".[^screen-sk80ex] |
 | SkyWater-listed tool | "DNS 80B track", "Sokudo RF3 track", "TEL ProZ Lithius track"[^skw-01] |
 | SKY130 steps | all 36 mask steps; see {ref}`SKY130 steps assigned to this class <machine-coat-develop-track-steps>` |
+
+:::{seealso}
+The resist chemistry and the sequence of a
+mask step are on the {ref}`category page <category-lithography>`.
+:::
 
 ## What the machine class is and how it works
 
 A track is a set of single-wafer process stations — vapour prime, spin
 coaters, hot plates, chill plates, developers — arranged around one or
 more robots, with a cassette station at one end and an interface to the
-exposure tool at the other. The name is historical: "Wafer tracks are
+exposure tool at the other. It is a cluster of spin cups and
+hot and chill plates served by robots, usually linked in line to one
+exposure tool.[^wiki-litho]
+
+**Why "track".** The name is historical: "Wafer tracks are
 named after the 'tracks' used to carry wafers inside the machine, but
 modern machines do not use tracks".[^wiki-litho] Kato's chronology
 traces Tokyo Electron's tracks to Cobilt, which "also built wafer
-tracks" in the 1970s.[^kato-2007] What makes the class distinct from a
+tracks" in the 1970s.[^kato-2007]
+
+What makes the class distinct from a
 general wet or thermal tool is its tie to the exposure tool: the wafer
 leaves the track primed, coated and baked, and returns to it within the
 same lithography cell for the post-exposure bake and
@@ -46,13 +51,15 @@ Before coating, the wafer is dehydrated and primed: an adhesion promoter
 such as "hexamethyldisilazane", HMDS, reacts with the surface oxide "to
 form tri-methylated silicon-dioxide, a highly water repellent layer",
 which "prevents the aqueous developer from penetrating between the
-photoresist layer and the wafer's surface".[^wiki-litho] On KrF levels
+photoresist layer and the wafer's surface".[^wiki-litho]
+
+**BARC on KrF levels.** On KrF levels
 a fab typically spins and bakes an organic bottom anti-reflective
 coating ({term}`BARC`) first ({ref}`category-lithography`). Brunner
 showed why: interference in the resist film makes the dose to clear
 swing with resist thickness, with a swing ratio of about
 {math}`4\sqrt{R_1 R_2}\,e^{-\alpha D}` for the reflectivities at the top
-and bottom of the resist and its absorption, and anti-reflective coating
+and bottom of the resist and its absorption.[^brunner-1991] Anti-reflective coating
 processes "reduce S as the square root of substrate reflectivity under
 the resist".[^brunner-1991]
 
@@ -61,7 +68,9 @@ the resist".[^brunner-1991]
 Resist is dispensed on the wafer and spun off to a film. Emslie, Bonner
 and Peck showed that "centrifugation of a fluid layer that is initially
 uniform does not disturb the uniformity" and that "initially irregular
-fluid distributions tend toward uniformity".[^emslie-1958] Meyerhofer
+fluid distributions tend toward uniformity".[^emslie-1958]
+
+**Thickness scaling.** Meyerhofer
 added evaporation and found the film thickness "uniform and independent
 of the size of the substrate", scaling as
 {math}`h \propto f^{-2/3}\,\nu_0^{1/3}\,e^{1/3}` with spin speed
@@ -70,7 +79,9 @@ of the size of the substrate", scaling as
 the net dependence is {math}`h \propto f^{-1/2}`.[^meyerhofer-1978] Spin
 speed and resist viscosity therefore set the thickness the step pages
 need, from thin resist on the gate and via levels to thick resist for
-high-energy implant masks. Resist builds up at the rim: "viscous films
+high-energy implant masks.
+
+**Edge bead removal.** Resist builds up at the rim: "viscous films
 may result in large edge beads", and "Edge bead removal (EBR) is carried
 out, usually with a nozzle, to remove this extra resist as it could
 otherwise cause particulate contamination".[^wiki-litho] The ACT 8 has
@@ -78,17 +89,21 @@ otherwise cause particulate contamination".[^wiki-litho] The ACT 8 has
 
 ### Bake and chill plates
 
-After coating, a prebake drives off the casting solvent;[^wiki-litho]
-after exposure, a post-exposure bake ({term}`PEB`) drives the chemistry
+After coating, a prebake drives off the casting solvent.[^wiki-litho]
+After exposure, a post-exposure bake ({term}`PEB`) drives the chemistry
 of deep-UV resists, in which acid generated by exposure diffuses and
 reacts at once — a coupled reaction–diffusion that Smith and Mack showed
-cannot be reproduced by a decoupled model.[^smith-mack-2001] Bake-plate
-uniformity specifications tighten as features shrink, and Ramanan,
+cannot be reproduced by a decoupled model.[^smith-mack-2001]
+
+**Bake-plate uniformity.** Bake-plate
+uniformity specifications tighten as features shrink. Ramanan,
 Kozman and Sims found that wafer uniformity on a proximity bake plate
 "depends on a number of parameters in addition to the uniformity of the
-bake plate itself", among them "the lid design, the air flow
+bake plate itself".[^ramanan-2000] Among them are "the lid design, the air flow
 distribution around the bake chamber, bake plate design and flatness of
-the bake plate and wafer".[^ramanan-2000] Chill plates bring the wafer
+the bake plate and wafer".[^ramanan-2000]
+
+Chill plates bring the wafer
 back to a fixed temperature before the next coat, exposure or develop
 (industry practice). TEL's ACT 12 advertises "a high precision oven to
 support DUV processing".[^tel-act]
@@ -99,7 +114,9 @@ support DUV processing".[^tel-act]
 photoresist", and "Metal-ion-free developers such as tetramethylammonium
 hydroxide (TMAH) are now used", with developer temperature controlled
 "to within 0.2 °C".[^wiki-litho] A common ready-to-use strength is
-2.38 % TMAH.[^microchemicals-dev] A puddle develop spreads developer
+2.38 % TMAH.[^microchemicals-dev]
+
+**Puddle develop.** A puddle develop spreads developer
 over the stationary wafer; Perera found that the developer's surface
 tension "has to be lowered, by adding a surfactant, to avoid 'pullback'
 of the developer during puddling".[^perera-1989] Temperature matters
@@ -118,7 +135,8 @@ Fujiwara et al. describe the same arrangement for an ArF immersion
 scanner "connected inline with a coat/developer (C/D) ACT12", where wafer
 handling and the rinse before the post-exposure bake were optimised
 against watermarks.[^fujiwara-2006]
-For chemically amplified resists the air in the track matters: MacDonald
+
+**Airborne amines.** For chemically amplified resists the air in the track matters: MacDonald
 et al. found such a resist "severely degraded by vapor from organic
 bases" at "as little as 15 parts per billion (ppb)", and relieved it with
 "localized air filtration".[^macdonald-1991] TEL's ACT 12 "uses a chemical
@@ -126,33 +144,33 @@ filter and a high precision oven to support DUV processing".[^tel-act]
 
 ## Representative 200 mm-era models
 
-* **Tokyo Electron (TEL).** The CLEAN TRACK Mark series, followed by the
-  CLEAN TRACK ACT series, "developed as coater/developer to support
-  300/200mm wafer processes, based on the technology from the CLEAN TRACK
-  Mark Series".[^tel-act] The ACT 8 "debuted in the coater/developer
-  marketplace in 1997 to handle 200mm wafers", was used "to process
-  geometries ranging from 350 nanometers to 180 nanometers and beyond",
-  and "includes proven technologies to meet challenges in DUV and I-line
-  processing".[^tel-act8] TEL released the CLEAN TRACK ACT 8Z in 2023 "as a
-  renewed version of CLEAN TRACK ACT 8".[^tel-act] The LITHIUS series
-  succeeded the ACT series; the original CLEAN TRACK LITHIUS "is a
-  300/200mm coater/developer", while the LITHIUS Pro Z is "TEL's most
-  advanced 300mm coater/developer for the 10nm technology node and
-  beyond".[^tel-lithius]
-* **Dainippon Screen (DNS, now SCREEN).** SCREEN describes its
-  SK-60EX/SK-80EX, for wafers of 50–200 mm, as "Continuing the Reliability
-  of the Long-Selling 60/80 Series" with "its large installed
-  base",[^screen-sk80ex] and offers the RF-200EX, "Dedicated design for
-  200mm wafers" that "enables a small footprint and DUV
-  process".[^screen-rf200ex]
-* **Sokudo.** A coat/develop track company "owned by Dainippon Screen Mfg.
-  Co., Ltd. and Applied Materials, Inc.", "established on July 3, 2006";
-  its RF3 track "is designed with a modular structure" and was sold for
-  "65nm and 45nm node manufacturing".[^sokudo-rf3-2006] The release
-  concerns a site converting from 200 mm to 300 mm, so it does not show a
-  200 mm RF3 configuration.
-* **Others.** The step pages also name SVG/ASML tracks (the 90S); no
-  vendor description of that model was retrieved for this page.
+The CLEAN TRACK Mark series came first, then the CLEAN TRACK ACT series,
+"developed as coater/developer to support 300/200mm wafer processes,
+based on the technology from the CLEAN TRACK Mark Series".[^tel-act]
+
+:::{table} Representative coat/develop tracks of the 200 mm era (figures as each source gives them)
+:widths: 20 20 10 50
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Tokyo Electron | CLEAN TRACK ACT 8 | 1997 | "debuted in the coater/developer marketplace in 1997 to handle 200mm wafers", "to process geometries ranging from 350 nanometers to 180 nanometers and beyond"[^tel-act8] |
+| Tokyo Electron | CLEAN TRACK ACT 8Z | 2023 | "as a renewed version of CLEAN TRACK ACT 8"[^tel-act] |
+| Tokyo Electron | CLEAN TRACK LITHIUS | — | "is a 300/200mm coater/developer"[^tel-lithius] |
+| Tokyo Electron | LITHIUS Pro Z | — | "TEL's most advanced 300mm coater/developer for the 10nm technology node and beyond"[^tel-lithius] |
+| SCREEN (DNS) | SK-60EX/SK-80EX | — | for wafers of 50–200 mm, "Continuing the Reliability of the Long-Selling 60/80 Series" with "its large installed base"[^screen-sk80ex] |
+| SCREEN | RF-200EX | — | "Dedicated design for 200mm wafers" that "enables a small footprint and DUV process"[^screen-rf200ex] |
+| Sokudo | RF3 | 2006 | "is designed with a modular structure", sold for "65nm and 45nm node manufacturing"[^sokudo-rf3-2006] |
+:::
+
+The ACT 8 "includes proven technologies to meet challenges in DUV and
+I-line processing".[^tel-act8] Sokudo is a coat/develop track company
+"owned by Dainippon Screen Mfg. Co., Ltd. and Applied Materials, Inc.",
+"established on July 3, 2006".[^sokudo-rf3-2006] The RF3 release
+concerns a site converting from 200 mm to 300 mm, so it does not show a
+200 mm RF3 configuration.
+
+**Others.** The step pages also name SVG/ASML tracks (the 90S); no
+vendor description of that model was retrieved for this page.
 
 ## At SkyWater
 
@@ -167,14 +185,17 @@ Capabilities* page lists three tracks:[^skw-01]
 >
 > "TEL ProZ Lithius track"
 
-Read term by term: "DNS" is Dainippon Screen, a joint owner of
-Sokudo;[^sokudo-rf3-2006] we read "80B" as a member of the 60/80 series
-SCREEN still describes,[^screen-sk80ex] an inference from the model
-number. "Sokudo RF3" names Sokudo's RF3 track.[^sokudo-rf3-2006] "TEL
-ProZ Lithius" is SkyWater's word order; TEL describes its LITHIUS Pro Z
-as a 300 mm coater/developer for the 10 nm node,[^tel-lithius] so, as on
-the {ref}`machines index <machines-index>`, this reference does not
-identify the 200 mm fab's track with that model. SkyWater gives no wafer
+:::{table} How this reference reads the three track entries
+:widths: 26 50 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "DNS 80B track" | "DNS" is Dainippon Screen, a joint owner of Sokudo;[^sokudo-rf3-2006] "80B" read as a member of the 60/80 series SCREEN still describes,[^screen-sk80ex] an inference from the model number | our reading |
+| "Sokudo RF3 track" | "Sokudo RF3" names Sokudo's RF3 track[^sokudo-rf3-2006] | not stated |
+| "TEL ProZ Lithius track" | "TEL ProZ Lithius" is SkyWater's word order; TEL describes its LITHIUS Pro Z as a 300 mm coater/developer for the 10 nm node,[^tel-lithius] so, as on the {ref}`machines index <machines-index>`, this reference does not identify the 200 mm fab's track with that model | our reading |
+:::
+
+SkyWater gives no wafer
 size, module list, resist process or pairing with an exposure tool for
 any of the three.[^skw-01]
 
@@ -187,8 +208,8 @@ under {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
 For this class the S-1 adds indirect support: it names photoresist
 suppliers — "The Dow Chemical Company (photoresist)", "JSR Corporation
 (photoresist)", "Tokyo Ohka Kogyo America, Inc. (photoresist)" — and
-"Air Products & Chemicals, Inc., Moses Lake (developer)", the materials a
-track consumes, though not a track vendor.[^sec-01]
+"Air Products & Chemicals, Inc., Moses Lake (developer)".[^sec-01] These
+are the materials a track consumes, though not a track vendor.
 
 (machine-coat-develop-track-steps)=
 ### SKY130 steps assigned to this class
@@ -258,7 +279,9 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
 * **Two resist families on shared tracks.** On the step pages' readings
   the i-line levels ({ref}`machine-i-line-stepper`) use DNQ/novolac resist
   and the KrF levels ({ref}`machine-duv-krf-stepper`) chemically amplified
-  resist with BARC and a tightly controlled post-exposure bake; the
+  resist with BARC and a tightly controlled post-exposure bake.
+
+  The
   {ref}`LICM1 <step-093>` and {ref}`LI1M <step-102>` pages name "BARC and
   DUV resist modules and PEB plates". The TEL ACT 8 was built for both
   ("DUV and I-line processing").[^tel-act8] Which of SkyWater's three
@@ -269,7 +292,9 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
   ({ref}`MM5 <step-162>`) call for a track with thick-resist capability,
   and the {ref}`HVNTM <step-068>` page for a thin-resist recipe, matching
   the PDK's 0.3 µm "Photoresist thickness for HV Tip
-  Implants".[^pdk-03] With
+  Implants".[^pdk-03]
+
+  With
   Meyerhofer's scaling, a thicker film needs a slower spin or a more
   viscous resist.[^meyerhofer-1978]
 * **Implant masks and hardening.** The {ref}`PSDM <step-081>` and
@@ -294,21 +319,20 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
 
 ## Related pages
 
-* {ref}`category-lithography` — the sequence of a mask step, resists,
-  anti-reflective coatings and developer.
-* {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
-  exposure tools the tracks are linked to.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — resists, BARC, HMDS, developer and ultrapure
-  water.
-* {ref}`material-lithography-materials` — resists, coatings, developer,
-  solvents, reticles and light-source consumables.
-* {ref}`material-ultrapure-water` — the develop rinse water, its
+* **Category.** {ref}`category-lithography` — the sequence of a mask
+  step, resists, anti-reflective coatings and developer.
+* **Machines.** {ref}`machine-i-line-stepper` and
+  {ref}`machine-duv-krf-stepper` — the exposure tools the tracks are
+  linked to. {ref}`machine-cd-sem-overlay-metrology` — the CD and
+  overlay measurements after develop, and the rework they trigger.
+* **Materials.** {ref}`material-lithography-materials` — resists,
+  coatings, developer, solvents, reticles and light-source consumables.
+  {ref}`material-ultrapure-water` — the develop rinse water, its
   standards and quality.
-* {ref}`machine-cd-sem-overlay-metrology` — the CD and overlay
-  measurements after develop, and the rework they trigger.
-* {ref}`masks-index` — the 36 mask steps the tracks serve.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  resists, BARC, HMDS, developer and ultrapure water.
+  {ref}`masks-index` — the 36 mask steps the tracks serve.
 
 ## References
 
