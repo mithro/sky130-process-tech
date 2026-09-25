@@ -279,14 +279,15 @@ spacing.
 ### Overlay and alignment
 
 The {ref}`NWM <step-017>` page reads the mask as aligned to
-the trench pattern of {ref}`FOM <step-004>`, and points to Table 3b's
+the trench pattern of {ref}`FOM <step-004>`. It points to Table 3b's
 "N-w/P-w junction (from drawn edge)" of 0.034 µm and Table 3e's
 "Minimum n+ or p+ - nwell spacing to prevent latch-up" of 0.23 µm as
-showing how tightly the well edge is budgeted.[^pdk-03] The placement
+showing how tightly the well edge is budgeted.[^pdk-03]
+
+The placement
 rules against active are 0.180 µm of `nwell` around p+ diffusion
 (difftap.8) and n+ tap (difftap.10) and 0.340 µm from n+ diffusion
 (difftap.9).[^pdk-periph]
-
 ASML specifies the "≤ 40 nm" single-machine overlay
 for the /275D stepper[^asml-pas5500-275d] (our
 comparison; the rules must also absorb the lateral spread of the MeV
