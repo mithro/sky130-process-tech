@@ -617,8 +617,11 @@ per page. This section records what was done in response, commit by commit (`git
 * **H2** (001-smat.md): the body-doping estimate is back in Open questions as it was at
   `ee3a94ee`, with its two indirect figures as two sub-bullets; the second figure's 130-word
   sentence is further split into a lead plus three nested sub-bullets (still "two sub-bullets" at
-  the outer level) so every item clears the 60-word cap. The invented H3, its input table and the
-  two-step "derivation" (no arithmetic in it) are deleted.
+  the outer level) so every item clears the 60-word **item** cap. **Verification-round fix:** the
+  contrast word "but" was restored to the second sub-bullet's opening, which puts that one
+  sentence at 46 words, one over the 45-word **sentence** cap — see "Batch measurement" below for
+  why it is left there. The invented H3, its input table and the two-step "derivation" (no
+  arithmetic in it) are deleted.
 * **H3** (004-fom.md): "Tightest isolation width" → "Sets the isolation width".
 * **H4** (006-stie.md): derivation step 3 restored to the guide's own worked-example wording,
   "The two are equal, so the drawing shows no field-oxide step, and …".
@@ -630,11 +633,17 @@ per page. This section records what was done in response, commit by commit (`git
   item/row and back onto the lead-in sentence or the table's header cell (D-new-4).
 * **M3** (007-dnm.md, 008-dni.md): the five-column RSDNW table becomes three columns (Resistor
   A/B, Squares, Measured); PDK nominal and Limits, identical in both rows, move to the lead-in
-  sentence (D8's "not a column" rule). Letters, not digits, label the two resistors so the fix
-  adds no new number.
-* **M4/D-new-2**: all 13 pages now use the italic lead-in (`*An industry-generic … :*`) under
-  "How it is typically performed" — converted from `:::{note}` on 002, 003, 007, 008, 010, 011,
-  012, 013, and added fresh (it was missing) on 004, 005, 006, 009.
+  sentence (D8's "not a column" rule). **Correction, verification round:** the table first
+  shipped with a "Resistor" column labelled "A"/"B", identifiers found nowhere in the source
+  (the original prose names the two resistors only by their own squares value). Dropped the
+  column: two columns, Squares and Measured, are everything the source distinguishes them by.
+* **M4/D-new-2**: **12 of the 13 pages** (correction: an earlier draft of this section said all
+  13) now use the italic lead-in (`*An industry-generic … :*`) under "How it is typically
+  performed" — converted from `:::{note}` on 002, 003, 007, 008, 010, 011, 012, 013, and added
+  fresh (it was missing) on 004, 005, 006, 009. `001-smat.md`'s "How it is typically performed"
+  opens "For the fab, `SMAT` is a receiving and pre-processing operation…", which is not an
+  industry-generic scope sentence (it does not match the R-HEDGE trigger and was never wrapped in
+  a `:::{note}` at any point in this branch's history), so it correctly has no lead-in.
 * **M5**: the two writer-introduced over-cap sentences are fixed. `001-smat.md`'s no longer
   exists as a single sentence — H2's restore-and-split removed it. `004-fom.md`'s "This holds
   even though …" is removed; the split now falls at the source text's own comma-to-colon
@@ -662,10 +671,17 @@ also fixes the "even though … even though" stutter on 004 as a side effect of 
 numbered in the review: the at-a-glance audit's `010-linox.md` "comparable flows use 10–30 nm at
 900–1100 °C" (reworded to attribute the figures to third-party patents, not one flow).
 
-Left as they are, with reasons: L2 (the R-TOOLS template's "it lists it"/"it names it" pronoun
-issue is a template-wide problem the guide itself doesn't fix in this ruling round — D4 fixes the
-non-tool-bullet case but not the pronoun grammar — so no page-level workaround was invented; a
-real fix belongs in the guide's R-TOOLS template, for a future pass); L3 (grades filed under
+**L2 is fixed, not left** (correction: an earlier draft of this section listed it as deferred).
+Fixed in `7761d260`, after this progress-file section was first written: the guide's R-TOOLS step
+2 now names both the leading-pronoun form ("it lists") and the redundant-object form ("it lists
+it") explicitly, and the pronoun is dropped on the twelve pages that had it (001 never had the
+pattern). `7761d260` also caught check_preserved.py's inch-mark bug (a straight-quote inch mark
+before a real closing quote, e.g. `8""`, was read as a quote delimiter and mis-paired every
+quotation after it on `docs/machines/starting-material.md` and
+`docs/machines/single-wafer-spin-processor.md`) and fixed it with an `INCH_RE` mask, selftested;
+neither page is part of this batch, but the fix lives in the same tool this batch's commits use.
+
+Left as they are, with reasons: L3 (grades filed under
 "Runs this step:"/"Tool exists:" on 005 and 012 are pre-existing R-TOOLS-template output, not
 changed by this pass, and reclassifying them touches the model's own reasoning, not
 presentation); L5 (H3 titles "What the public record shows" on 003/006/011 read the same as they
@@ -701,22 +717,43 @@ condition (c) cannot clear because an unrelated glance-box addition sits in the 
 
 `docs/plans/readability/prototypes/measure/measure5.py` (promoted from the review's `tmp/rev/
 caps.py`, committed with the guide's D9 edit) measures paragraph > 100, item > 60, sentence > 45,
-table cell > 25 words, References and the generated block excluded. Run against all 13 pages
-after every fix above:
+table cell > 25 words, References and the generated block excluded. **Its line numbers are counted
+after stripping the generated `<!-- index-links:begin … end -->` block**, so they run lower than a
+plain `grep -n`/editor line count once a page is past that block (on a step page, everything from
+`## Related steps and cross-references` onward is offset by the block's length, about 15–18
+lines). This caused a real cross-reference error in an earlier verification round (see the
+`001-smat.md:342` note below) and is recorded here so it does not happen again: **file:line pairs
+below are `measure5.py`'s own numbers, not raw file line numbers.**
 
-* paragraphs > 100 words: 6 (review found 6 before this pass; unchanged — see below)
-* list items > 60 words: 15 (review found 15; unchanged)
-* sentences > 45 words: 27 (review found 29; **2 fixed** — the two writer-introduced sentences
-  M5 named, `001-smat.md:94` and `004-fom.md:148`, no longer exist in that form)
+Re-run against all 13 pages after every fix in this file, including the verification-round fixes
+below the line "Phase 2: independent review response":
+
+* paragraphs > 100 words: 6 (unchanged)
+* list items > 60 words: 16 (was 15; **+1**, see `010-linox.md:85` below)
+* sentences > 45 words: 29 (was 27; **+2**, see `001-smat.md`'s restored "but" and
+  `010-linox.md:85` below)
 * table cells > 25 words: 0
 
-The paragraph and item counts are unchanged from the review because, on inspection, all 6
-paragraphs and 15 items are pre-existing original prose that this branch has not touched at any
-point (Phase 1 or Phase 2) — confirmed by diffing each page against its immediately preceding
-commit and, for 001 and 004, against `ee3a94ee` directly. Splitting any of them now would mean
-rewording original sentences this pass was not asked to rewrite and that were not flagged as
-Never-list breaches; per the coordinator's instruction, each is recorded here rather than
-reworded:
+**Correction to an earlier draft of this section:** it said all of the over-cap items "predate
+this pass" and that H2's restore-and-split made "every item clear[] the 60-word cap". Both need a
+caveat, found by the first verification round:
+
+* The H2 restore's second sub-bullet is one *sentence* long, and that sentence is 46 words —
+  over the 45-word **sentence** cap, even though the *item* (bullet) it is the whole of clears the
+  60-word item cap (the claim was true for items, not for the sentence inside the one-sentence
+  item). The 46 words include the contrast word "but", restored by this same verification round
+  at the reviewer's request (see the H2 entry above); removing it again would satisfy the
+  sentence cap but reopen the exact problem the reviewer asked to fix, so it is left at 46 and
+  recorded here rather than resolved either way without a further ruling.
+* `010-linox.md:85` (`measure5.py`'s numbering) is **not pre-existing**: it is the paragraph this
+  same verification round rejoined to satisfy D-new-6 (see the "010: rejoin the L1 split" entry
+  above). Rejoined, it is one 133-word item containing a 61-word sentence; split, it violated
+  D-new-6 by starting a paragraph with a connective. D-new-6 itself says "a split that leaves a
+  block over the cap is no split", i.e. the rejoined, over-cap form is the rule-compliant one.
+* Every other paragraph, item and sentence below genuinely predates this pass — confirmed by
+  diffing each page against its immediately preceding commit and, for 001 and 004, against
+  `ee3a94ee` directly — and is left over cap for the reason already given: splitting it would mean
+  rewording original sentences that were not flagged as Never-list breaches.
 
 * Paragraphs (file:line, words): `002-box.md:47` (113w), `004-fom.md:91` (109w),
   `006-stie.md:44` (105w), `008-dni.md:128` (108w), `013-ns19.md:46` (109w), `013-ns19.md:85`
@@ -725,36 +762,63 @@ reworded:
   page, and the guide's own R-PARA step 2 (D-new-6) forbids exactly the kind of connective-led
   split that would be needed to shorten most of these further without changing what they say.
 * List items (file:line, words): `001-smat.md:48` (72w), `001-smat.md:72` (64w),
-  `001-smat.md:131` (76w), `001-smat.md:342` (67w), `002-box.md:87` (75w), `006-stie.md:167`
-  (71w), `006-stie.md:323` (62w), `007-dnm.md:160` (62w), `008-dni.md:73` (64w),
-  `008-dni.md:215` (72w), `010-linox.md:76` (79w), `010-linox.md:124` (66w),
-  `012-cmpnit.md:78` (79w), `013-ns19.md:66` (67w), `013-ns19.md:115` (68w). Each is one
-  citation-dense bullet (a "public record" item, an Open-questions item or a machine-evidence
+  `001-smat.md:131` (76w), `001-smat.md:342` (67w — this is the pre-existing "Bulk versus
+  epitaxial" Open-questions bullet, *not* the H2-restored text; the H2 restore's own bullets, at
+  raw file lines 338–353, all clear both the item and the sentence caps except the one sentence
+  named above), `002-box.md:87` (75w), `006-stie.md:167` (71w), `006-stie.md:323` (62w),
+  `007-dnm.md:160` (62w), `008-dni.md:73` (64w), `008-dni.md:215` (72w), `010-linox.md:76` (79w),
+  `010-linox.md:85` (133w, **not pre-existing**, see above), `010-linox.md:123` (66w),
+  `012-cmpnit.md:78` (79w), `013-ns19.md:66` (67w), `013-ns19.md:115` (68w). Every other item is
+  one citation-dense bullet (a "public record" item, an Open-questions item or a machine-evidence
   paragraph) that predates this pass.
-* Sentences > 45 words (27, file:line): `001-smat.md:106`, `002-box.md:28`, `003-isonit.md:90`,
-  `005-stinite.md:68`, `005-stinite.md:109`, `006-stie.md:44`, `006-stie.md:77`,
-  `006-stie.md:117`, `006-stie.md:167`, `007-dnm.md:30`, `007-dnm.md:39`, `007-dnm.md:154`,
-  `008-dni.md:145`, `008-dni.md:183`, `008-dni.md:189`, `008-dni.md:194`, `009-dnis.md:52`,
-  `009-dnis.md:108`, `010-linox.md:104`, `010-linox.md:133`, `011-filox.md:29`,
-  `011-filox.md:49`, `011-filox.md:56`, `011-filox.md:149`, `012-cmpnit.md:101`,
-  `012-cmpnit.md:106`, `013-ns19.md:31`. Several of these carry a direct quotation
+* Sentences > 45 words (29, file:line): `001-smat.md:106`, `001-smat.md:329` (46w, the H2
+  restore's "but" sentence, **not pre-existing**, see above), `002-box.md:28`,
+  `003-isonit.md:90`, `005-stinite.md:68`, `005-stinite.md:109`, `006-stie.md:44`,
+  `006-stie.md:77`, `006-stie.md:117`, `006-stie.md:167`, `007-dnm.md:30`, `007-dnm.md:39`,
+  `007-dnm.md:154`, `008-dni.md:145`, `008-dni.md:183`, `008-dni.md:189`, `008-dni.md:194`,
+  `009-dnis.md:52`, `009-dnis.md:108`, `010-linox.md:85` (61w, **not pre-existing**, see above),
+  `010-linox.md:103`, `010-linox.md:132`, `011-filox.md:29`, `011-filox.md:49`,
+  `011-filox.md:56`, `011-filox.md:149`, `012-cmpnit.md:101`, `012-cmpnit.md:106`,
+  `013-ns19.md:31`. Several of the pre-existing ones carry a direct quotation
   (`006-stie.md:77`'s patent quote, `012-cmpnit.md:101`/`106`'s Wikipedia descriptions,
   `008-dni.md:183`'s table-sourced quotation) that a length-only split would have to break or
   requote, which §2.1/§2.3 forbid; the rest are the same "one citation-dense sentence per
   source" pattern as the list items above.
 
-None of these 48 items is a Never-list breach, a Medium finding, or a writer-introduced sentence;
-all predate this pass (spot-checked against `ee3a94ee` and the immediately preceding commit) and
-none is touched by any commit in this response. They are left over cap, by the coordinator's own
-"record per-item why" option, rather than reworded under time pressure in a way that could change
-a fact, drop a hedge, or requote a source — the risk the guide's §2 Never list exists to prevent.
+Of these 51 items, 48 predate this pass entirely (spot-checked against `ee3a94ee` and the
+immediately preceding commit) and are left over cap by the coordinator's own "record per-item why"
+option, rather than reworded under time pressure in a way that could change a fact, drop a hedge,
+or requote a source. Three (`001-smat.md`'s restored sentence, `010-linox.md:85`'s item and
+sentence) are new results of this verification round's own required fixes (H2's "but", the
+010:88/D-new-6 rejoin) and are recorded above rather than resolved by undoing either fix.
 
 ### Left deliberately unfixed, with reasons (recap)
 
-* L2, L3, L5, L7 — see "Low findings" above.
+* L3, L5, L7 — see "Low findings" above. (**L2 is fixed**, in `7761d260`; see the correction
+  above.)
 * The 48 pre-existing over-cap items above (M5's "may stay if honestly reported" allowance,
   extended here from paragraphs/items to include sentences, at the coordinator's stricter
   instruction to record rather than silently accept).
 * `007-dnm.md`/`008-dni.md`'s pre-existing `number_order` reports predating the RSDNW table
   redesign (glance-box tuples mixing two originally separate facts) — traced to their unedited
   source sentences in each page's commit message.
+
+## Verification round 2 (`tmp/reviews/rd-steps-001-013-verify.md`)
+
+A first verification round found all 14 findings fixed and nothing lost, and held the branch back
+on four items: N1–N3 (guide self-contradictions and gaps) and N4 (a `tools/check_preserved.py`
+merge conflict with `main`, gained since this branch started — **not fixed here**, per the
+coordinator: N4 is the coordinator's own, to resolve at merge time). Fixed in this round, one
+commit each: N1 (R-GLANCE's "Public numbers" step 3 rewritten to the review's own wording, so it
+no longer contradicts the 001/005/010 fixes it was meant to describe); N2 (three superseded rules
+— §1's old "3–6" H3 quota, §4.1's old "2–4 bullets", §4.1's old six-label Related-steps line —
+deleted in favour of the rules that replaced them); N3 (the missing §7 step 8 grep checkbox added;
+§7 step 4 rewritten to describe the real `check_preserved.py` and name `--allow-regrouped`, instead
+of calling the tool unwritten). Also fixed: H2's dropped "but" restored (001); M3's invented "A"/"B"
+row labels dropped, since the source names the two resistors only by their squares value (007,
+008); M6's duplicate `Mask:` bullets merged into one each (004, 007); the `010-linox.md:88`
+paragraph rejoined to satisfy D-new-6, since the split it was in violated the very rule this branch
+added to require exactly that; and the L2 wording ambiguity on 005 ("its" → "the tool's") that the
+verifier flagged as unclear. The progress-file corrections above (L2 status, M3, M4's page count,
+M5/`001-smat.md:342`) are this round's work too. `check_preserved.py` is untouched in this round —
+N4 belongs to the coordinator.

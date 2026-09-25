@@ -132,8 +132,8 @@ page[^pdk-03] is comfortable for a ~200 nm stack).
     being "for selective etching of silicon and
     polysilicon".[^snf-9400]
 * **AMAT DPS II (Centura)**
-  - *SkyWater says:* lists CF₄ and CHF₃ among its gases and
-    "trench" among its applications.[^skw-01]
+  - *SkyWater says:* lists the tool with CF₄ and CHF₃ among its gases
+    and "trench" among its applications.[^skw-01]
   - *Tool exists:* strong that the tool and gases exist.
   - *Runs this step:* **medium**, since its CF₄ and CHF₃ etch nitride
     although the entry names no nitride application.
