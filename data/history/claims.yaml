@@ -1281,27 +1281,27 @@ claims:
   page: docs/history/index.md
   anchor: Four fabs of its own.
   grade: corroborated
-  footnotes: [ar-fy1993, ar-fy1995]
+  footnotes: [ar-fy1993, ar-fy1995, strib-2017]
   sources:
   - {id: cyhist-corp-1993-10k, origin: cypress}
   - {id: cyhist-corp-1995-ar-cti, origin: cypress}
   - {id: cyx-startribune-2017-plant, origin: startribune}
 - id: idx-sonos-2001
   page: docs/history/index.md
-  anchor: SONOS arrived in 2001.
+  anchor: SONOS in the reports from 2001.
   grade: attributed
-  attribution: See
-  footnotes: [qtp-021507]
+  attribution: (Cypress's reports)
+  footnotes: [qtp-021507, qtp-051005, qtp-062509]
   sources:
   - {id: qtp-021507, origin: cypress}
-  - {id: cyx-infineon-sonos-eflash-brief, origin: cypress}
+  - {id: qtp-051005, origin: cypress}
   - {id: qtp-062509, origin: cypress}
 - id: idx-s8-joined
   page: docs/history/index.md
-  anchor: S8 joined the two lines.
+  anchor: S8, in our reading, joined the two lines.
   grade: attributed
-  attribution: See
-  footnotes: [pin-152804, qtp-113005]
+  attribution: (our reading)
+  footnotes: [pin-152804, qtp-113005, qtp-021507]
   sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}
   - {id: qtp-113005, origin: cypress}
@@ -1309,10 +1309,11 @@ claims:
 - id: idx-t-1984
   page: docs/history/index.md
   anchor: '| 1984 |'
-  grade: single-source
-  footnotes: [fu-cypress]
+  grade: corroborated
+  footnotes: [fu-cypress, databook-1988]
   sources:
   - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
+  - {id: cyx-databook-1988, origin: cypress}
 - id: idx-t-1986
   page: docs/history/index.md
   anchor: '| 1986 |'
@@ -1329,49 +1330,64 @@ claims:
   sources:
   - {id: cyhist-corp-1993-10k, origin: cypress}
   - {id: cyx-startribune-2017-plant, origin: startribune}
-- id: idx-t-1995
+- id: idx-t-1995-fab4
   page: docs/history/index.md
-  anchor: '| 1995 |'
+  anchor: '| 1995 | Fab 4'
   grade: corroborated
-  footnotes: [ar-fy1995, ar-fy1996]
+  footnotes: [ar-fy1995, sd-2007-fab2]
   sources:
   - {id: cypress-annual-report-fy1995, origin: cypress}
-  - {id: cyx-ar-fy1996-ram3, origin: cypress}
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
+- id: idx-t-1995-ram3
+  page: docs/history/index.md
+  anchor: '| 1995 | RAM3'
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy1995, ar-fy1996]
+  sources:
+  - {id: cyx-ar-fy1995-ram3, origin: cypress}
+  - {id: cyx-ar-fy1996-ram3, origin: cypress}
 - id: idx-t-1996
   page: docs/history/index.md
   anchor: '| 1996 |'
   grade: corroborated
-  footnotes: [tenq-1996q3]
+  footnotes: [tenq-1996q3, fu-cypress]
   sources:
   - {id: cyhist-corp-1996-10q-q3-fab1-rd, origin: cypress}
   - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
 - id: idx-t-1997
   page: docs/history/index.md
   anchor: '| 1997 |'
-  grade: corroborated
-  footnotes: [eet-1997-sram035, qtp-097483]
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [qtp-097483, qtp-102101]
   sources:
-  - {id: cyx-eetimes-1997-first-035um-sram, origin: eetimes}
   - {id: qtp-097483, origin: cypress}
-- id: idx-t-1998
+  - {id: qtp-102101, origin: cypress}
+- id: idx-t-1998-fab3
   page: docs/history/index.md
-  anchor: '| 1998 |'
+  anchor: '| 1998 | Fab 3 closes'
   grade: corroborated
-  footnotes: [ar-fy1998]
+  footnotes: [ar-fy1998, eet-1998-restructure]
   sources:
   - {id: cyx-ar-fy1998-restructure, origin: cypress}
   - {id: cyhist-corp-pr-1998-restructure, origin: eetimes}
+- id: idx-t-1998-025
+  page: docs/history/index.md
+  anchor: '| 1998 | First revenue'
+  grade: single-source
+  footnotes: [ar-fy1998]
+  sources:
+  - {id: cyx-ar-fy1998-ram5, origin: cypress}
 - id: idx-t-2001
   page: docs/history/index.md
   anchor: '| 2001 |'
   grade: attributed
   attribution: (Cypress's reports)
-  footnotes: [qtp-021507, qtp-012801]
+  footnotes: [qtp-021507, qtp-042806]
   sources:
   - {id: qtp-021507, origin: cypress}
-  - {id: qtp-012801, origin: cypress}
-  - {id: qtp-011908, origin: cypress}
+  - {id: qtp-042806, origin: cypress}
 - id: idx-t-2002
   page: docs/history/index.md
   anchor: '| 2002 |'
@@ -1379,38 +1395,58 @@ claims:
   footnotes: [ar-fy2002]
   sources:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
-- id: idx-t-2005
+- id: idx-t-2005-c8
   page: docs/history/index.md
-  anchor: '| 2005 |'
-  grade: corroborated
-  footnotes: [qtp-043004, ar-fy2005]
+  anchor: '| 2005 | C8'
+  grade: single-source
+  footnotes: [qtp-043004]
   sources:
   - {id: qtp-043004, origin: cypress}
+- id: idx-t-2005-grace
+  page: docs/history/index.md
+  anchor: '| 2005 | Foundry deal'
+  grade: corroborated
+  footnotes: [ar-fy2005, eet-2005-grace]
+  sources:
   - {id: cyhist-corp-2005-ar-grace-flexmfg, origin: cypress}
   - {id: cyhist-corp-pr-2005-grace-deal, origin: eetimes}
 - id: idx-t-2006
   page: docs/history/index.md
   anchor: '| 2006 |'
-  grade: corroborated
-  footnotes: [ar-fy2006, eet-2006-c8]
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy2006, tenk-fy2007]
   sources:
   - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
-  - {id: cyhist-corp-pr-2006-grace-c8-130nm, origin: eetimes}
-- id: idx-t-2007
+  - {id: cypress-10-k-2008-03-03, origin: cypress}
+- id: idx-t-2007-s8
   page: docs/history/index.md
-  anchor: '| 2007 |'
-  grade: corroborated
-  footnotes: [ew-2007-s8, ar-fy2009]
+  anchor: '| 2007 | First S8'
+  grade: single-source
+  footnotes: [ew-2007-s8]
   sources:
-  - {id: cyx-ew-2007-s8-nvsram, origin: ew}
+  - {id: cyx-ew-2007-s8-nvsram, origin: cypress}
+- id: idx-t-2007-fab1
+  page: docs/history/index.md
+  anchor: '| 2007 | Fab 1 sold'
+  grade: corroborated
+  footnotes: [ar-fy2009, eet-2007-fablite]
+  sources:
   - {id: cyx-ar-fy2009-fab1-sold, origin: cypress}
   - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
-- id: idx-t-2008
+- id: idx-t-2008-s8
   page: docs/history/index.md
-  anchor: '| 2008 |'
-  grade: corroborated
-  footnotes: [qtp-113005, ar-fy2008]
+  anchor: '| 2008 | First S8'
+  grade: single-source
+  footnotes: [qtp-113005]
   sources:
   - {id: qtp-113005, origin: cypress}
+- id: idx-t-2008-fab2
+  page: docs/history/index.md
+  anchor: '| 2008 | Fab 2 closes'
+  grade: corroborated
+  footnotes: [ar-fy2008, sd-2007-fab2]
+  sources:
   - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
+

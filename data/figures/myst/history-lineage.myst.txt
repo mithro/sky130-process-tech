@@ -3,5 +3,5 @@
 :width: 560px
 :name: fig-history-lineage
 
-How S8 descends from the earlier Cypress processes. S4AD-5 was built on R42D, and S8 carries the SONOS of S4AD-5 into the 0.13 µm generation.[^qtp-021507][^qtp-113005] The link from C8 is our reading of the shared first metal and the common generation; no source states it.[^qtp-043004]
+The processes S8 shares most with. S4AD-5 was built on R42D, as its report says.[^qtp-021507] The arrows into S8, from S4AD-5 (SONOS and the 110 Å oxide) and from C8 (the same first metal and generation), are our reading; no source says from which process S8 was derived.[^qtp-113005][^qtp-043004]
 :::
