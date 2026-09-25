@@ -3699,6 +3699,7 @@ documents:
     (hyphenated) where qtp-080608/qtp-110605 print "TSMC-2A/L28 TSMC" (no hyphen) -- a minor spelling
     variant of the same code.'
 - id: qtp-000505
+  origin: cypress
   doc_type: QTP
   number: '000505'
   cypress_document_number: null
@@ -3756,6 +3757,7 @@ documents:
     µm, 55 Å gate oxide, Fab4/R52FD-3) match R52FFD-3 (qtp-012705) exactly, consistent with
     the finding of a single shared 0.25 µm R52-family design rule.'
 - id: qtp-032105
+  origin: cypress
   doc_type: QTP
   number: '032105'
   cypress_document_number: null
@@ -3847,6 +3849,7 @@ documents:
     (0.15/0.16 µm) already in this corpus, consistent with R7FFT-18 being a QDR/DDR-II-generation sibling
     in the same R7 family.'
 - id: qtp-041005
+  origin: cypress
   doc_type: QTP
   number: '041005'
   cypress_document_number: null
@@ -3908,6 +3911,7 @@ documents:
     earliest dated PowerChip 0.165um reference in this corpus so far (predating qtp-051501''s Mar 05
     sort-site extension by over a year).'
 - id: qtp-030310
+  origin: cypress
   doc_type: QTP
   number: '030310'
   cypress_document_number: null
@@ -3954,6 +3958,7 @@ documents:
     030310, June 03) is the only qualification-history entry, so NEC 0.25um's coverage in this corpus
     begins and ends with this single report.
 - id: qtp-022505
+  origin: cypress
   doc_type: QTP
   number: '022505'
   cypress_document_number: null
@@ -4023,6 +4028,7 @@ documents:
     corroborates the dropped-"A" "S4D-5" spelling in running prose with a
     second example, and also calls S4D-5/S4AD-5 a "Technology Derivative" explicitly (of an unstated base).'
 - id: qtp-020305
+  origin: cypress
   doc_type: QTP
   number: '020305'
   cypress_document_number: null

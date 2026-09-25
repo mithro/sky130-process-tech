@@ -400,6 +400,14 @@ claims:
   sources:
   - {id: cyhist-corp-pr-2007-sram-foundry-ew, origin: ew}
   - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
+- id: fab-nec
+  page: docs/history/fabs.md
+  anchor: '| NEC Electronics America, Roseville, California |'
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-030310]
+  sources:
+  - {id: qtp-030310, origin: cypress}
 - id: foundry-promos-powerchip
   page: docs/history/fabs.md
   anchor: '| ProMOS and Powerchip, Taiwan |'

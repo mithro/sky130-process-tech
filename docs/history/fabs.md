@@ -162,6 +162,7 @@ technology (single source).[^ar-fy1998] The foundries the sources name before S8
 | Partner | What the sources say | Sources |
 |---|---|---|
 | Magnachip, Cheong-Ju, Korea | P26 moved from Fab 2 as a three-metal "P26 TLM", qualified March 2006 | single source[^qtp-054605] |
+| NEC Electronics America, Roseville, California | a USB 2.0 bridge chip on NEC's "0.25um" process, five metal layers, qualified June 2003 | single source[^qtp-030310] |
 | Hyundai Electronics ("Fab HME"), Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000 | single source[^qtp-001004] |
 | Tower, IBM and Chartered | foundries of IMI, which Cypress bought in February 2001 | single source[^qtp-i000006] |
 | TSMC, Taiwan | process development for CPLDs in 1998; L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^ar-fy1998][^qtp-080608][^qtp-s050001] |
@@ -392,3 +393,6 @@ names of the sites. Read them with these points in mind:
 [^qtp-054605]: Cypress Semiconductor, Product Qualification Report QTP 054605: *P26 TLM Technology Transfer to Magnachip*, March 2006;
     Wayback Machine copy of the cypress.com download.
     <https://web.archive.org/web/20211206085735/https://www.cypress.com/file/92866/download>
+[^qtp-030310]: Cypress Semiconductor, Product Qualification Report QTP 030310: *ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology*, June 2003;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download>

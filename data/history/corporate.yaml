@@ -82,7 +82,7 @@ records:
     title: Definitive proxy statements (Schedule 14A), 1994 and 1995 annual meetings
     date: 1994-03-15
     form: DEF 14A
-  url: null
+  url: https://www.sec.gov/Archives/edgar/data/791915/0000791915-94-000010.txt
   archive_url: https://web.archive.org/web/20170224082226id_/https://www.sec.gov/Archives/edgar/data/791915/0000791915-94-000010.txt
   retrieved: 2026-09-25
   cache: filings/edgar-1994-000010.txt
@@ -113,7 +113,7 @@ records:
     title: Form 10-Q for the quarterly period ended 1996-04-01
     date: 1996-05-16
     form: 10-Q
-  url: null
+  url: https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000006.txt
   archive_url: https://web.archive.org/web/20170706032607id_/https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000006.txt
   retrieved: 2026-09-25
   cache: filings/edgar-1996-000006.txt
@@ -140,7 +140,7 @@ records:
     title: Form 10-Q for the quarterly period ended 1996-09-30
     date: 1996-11-14
     form: 10-Q
-  url: null
+  url: https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000013.txt
   archive_url: https://web.archive.org/web/20170530145033id_/https://www.sec.gov/Archives/edgar/data/791915/0000791915-96-000013.txt
   retrieved: 2026-09-25
   cache: filings/edgar-1996-000013.txt

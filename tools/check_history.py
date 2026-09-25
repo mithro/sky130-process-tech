@@ -163,6 +163,32 @@ def evidence_links() -> dict[str, set[str]]:
     return links
 
 
+REQUIRED_FIELDS = ("origin", "url", "retrieved", "quotes")
+
+
+def record_problems() -> list[str]:
+    """Every record in ``data/history/*.yaml`` must say where it comes from, where it can be read,
+    when it was read, and what it says."""
+    problems: list[str] = []
+    seen: dict[str, str] = {}
+    for path in sorted(DATA.glob("*.yaml")):
+        if path == CLAIMS:
+            continue
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for key in ("documents", "records"):
+            for rec in doc.get(key, []) or []:
+                if not isinstance(rec, dict) or not rec.get("id"):
+                    continue
+                rid = str(rec["id"])
+                if rid in seen:
+                    problems.append(f"{path.name}:{rid}: id also used in {seen[rid]}")
+                seen[rid] = path.name
+                for field in REQUIRED_FIELDS:
+                    if not rec.get(field):
+                        problems.append(f"{path.name}:{rid}: no {field}")
+    return problems
+
+
 def footnote_links(pages: dict[str, str]) -> dict[str, set[str]]:
     """Footnote label -> the documents its definitions point at, over all history pages."""
     out: dict[str, set[str]] = {}
@@ -426,6 +452,7 @@ def main() -> int:
     claims = (yaml.safe_load(CLAIMS.read_text(encoding="utf-8")) or {}).get("claims", []) if CLAIMS.exists() else []
     problems += check_claims(claims, pages, evidence_ids())
     problems += check_links(claims, pages, evidence_links())
+    problems += record_problems()
     for p in problems:
         print(p)
     print(f"{len(pages)} history pages, {len(claims)} claims checked, {len(problems)} problem(s)")

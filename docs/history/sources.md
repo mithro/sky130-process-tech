@@ -243,7 +243,7 @@ Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage
 
 (hsrc-qtp-030310)=
 **QTP-030310** — Cypress Semiconductor, Product Qualification Report QTP 030310: *ISD-300LP Low Power USB 2.0 to ATA/ATAPI Bridge IC, NEC 0.25um Technology*, June 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507193447/https://www.cypress.com/file/92226/download>
-Used on {ref}`history-products`.
+Used on {ref}`history-fabs`, {ref}`history-products`.
 
 (hsrc-qtp-031101)=
 **QTP-031101** — Cypress Semiconductor, Product Qualification Report QTP 031101: *High-Accuracy EPROM Programmable Device Family, L28 Technology, Fab 2*, January 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210128152257/https://www.cypress.com/file/92261/download>
