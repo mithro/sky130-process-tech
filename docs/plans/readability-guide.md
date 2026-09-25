@@ -1105,7 +1105,6 @@ motivated the rule.
 
 ```
 :::{table} What the rows are, from which source; unit note if the units are uneven
-:widths: 12 20 8 12 48
 
 | … |
 :::
@@ -1113,14 +1112,17 @@ motivated the rule.
 
 2. The caption says three things: what one row is, where the values come from, and any unit caveat
    ("values in µm where the PDK gives a unit; blank units are blank in the PDK").
-3. `:widths:` is required on any table with a prose column; the numbers are relative.
+3. `:widths:` is inert in this build (MyST marks pipe tables `colwidths-auto`, so no column widths
+   reach the page). Do not rely on it and do not add it to new tables. The browser sizes columns
+   from their content. Control the phone fit with the column count and the cell length, and prove
+   it with a 400 px tile.
 4. The pipe table inside stays exactly as it was — same rows, same cells, same order (§5).
 5. Never `{numref}`, and do not refer to tables by number in prose.
 
 **Example** — `docs/masks/fom.md:310`, the rule table `| Rule | Description (published wording, abridged
 where marked "[…]") | Value |`, gets
 `:::{table} Periphery design rules naming `diff` and `tap`, as published; the unit column of difftap.4
-and difftap.5 is blank in the PDK[^pdk-periph]` and `:widths: 14 62 24`.
+and difftap.5 is blank in the PDK[^pdk-periph]` (no `:widths:` — it would not reach the page; see step 3).
 
 **Do not touch.** Cell contents, column order, row order.
 
@@ -1986,12 +1988,13 @@ project's `conf.py` settings (`myst_parser`, `sphinx_copybutton`, `sphinx_design
 `colon_fence`, `deflist`, `fieldlist`, `substitution`, `tasklist`, `attrs_inline`,
 `myst_heading_anchors = 3`, `nitpicky = True`). Copy them; do not invent variants.
 
-**Table with a caption and widths.** The blank line after the options is optional — both build, both
-produce a `<caption>`. `:widths:` numbers are relative; `:class:` is optional.
+**Table with a caption.** The blank line after the options is optional — both build, both
+produce a `<caption>`. `:widths:` is inert in this build (MyST marks pipe tables `colwidths-auto`,
+so no column widths reach the page; see R-CAPTION step 3) — do not rely on it or add it to a new
+table; `:class:` is optional.
 
 ```
 :::{table} Published retrograde N-well implants, as each source gives them
-:widths: 24 20 20 36
 
 | Source | Energy (keV) | Dose (cm⁻²) | Basis |
 |---|---:|---:|---|
@@ -2237,8 +2240,9 @@ caption that wraps badly, a bullet list that lost its indentation.
       of a batch, run the measurement over the whole batch again and put the counts at the §1 caps
       in the progress file.
 * [ ] Every new table has a caption (R-CAPTION): on a step page its lead-in sentence ending in a
-      colon; a `:::{table}` wrapper and `:widths:` only when it has a prose column. It obeys the §1
-      column budget (≤ 3 prose, ≤ 5 short-cell), tested at 400 px.
+      colon; a `:::{table}` wrapper when it has a prose column. `:widths:` is inert in this build —
+      do not add it. It obeys the §1 column budget (≤ 3 prose, ≤ 5 short-cell), tested at 400 px;
+      if it scrolls, merge columns or shorten cells, not `:widths:`.
 * [ ] `grep -n 'industry-generic\|industry-typical'` on the page: every scope sentence under
       `## How it is typically performed` has the italic lead-in (R-HEDGE step 1), not a
       `:::{note}` box.
