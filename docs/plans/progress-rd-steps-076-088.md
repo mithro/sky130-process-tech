@@ -486,3 +486,72 @@ pages: 066, 068, 072. One commit per page.
   sentence); the repeated markers above; glance and label lines.
 * **Caps**: para > 100 5 → 0; item > 60 6 → 1 (the PMOS-gate bullet, above); sentence > 45 12 → 0.
   First sentence 27 w (above).
+
+### 083 2PSDI — done
+
+* **Lead.** First sentence (32 w) split at its colon: "… before the strip PDIS. The PDK's mask list
+  has a single "P+ Implant, PSDM".[^pdk-05]" (the marker stays on the mask-list fact; "described in
+  this reference" stays on the reading). The 61-word "On that reading, …" sentence split twice: the
+  region list after the dash became "Those are the PMOS source/drains, … opened by the nitride cut."
+  ("Those are" added, step 7), and "and differs from the first only in …" became "On that reading, it
+  differs from the first only in …" — the leading hedge **repeated** so the second sentence keeps it
+  (R-SENTENCE step 5), and "Nothing public says which." still follows it directly. Two paragraphs,
+  split before "On that reading" (the reading / what follows from it). 128 words (base 125, over 120
+  already); first sentence 22.
+* **After the figure.** "The PDK's implant-angle table lists three angles:" → R-LIST, three plain
+  bullets, `[^pdk-03]` on the lead-in (the marker ended the enumerating sentence). The next paragraph
+  opens "The PDK's physical-criteria table" ("Its" → "The PDK's", R-PARA step 5). No H3: the passage
+  is 109 words.
+* **R-CATEGORY.** Classification sentence (15 w) alone; the rest (the two-implants-one-mask pattern,
+  which lists other steps, and "This is the only source/drain implant …") as one second paragraph, so
+  that "This" keeps its sentence before it.
+* **Why items.** Profile-shaping pair (143 w): lead split at its semicolon ("… the contact needs. Or two
+  boron energies do the same."; a sentence, not a paragraph, opens "Or"); continuation 1 = Ogura, split
+  at ", and on the n-type side" (each half keeps its markers); continuation 2 = Bourdelle/Wang and
+  Josse, split at the semicolon, then "On this reading …". PMOS extension (180 w): lead = the
+  cross-section sentence; continuation 1 = the Lin sentence (kept whole: its only split would move
+  the Lin marker away from the claim) and the PDK-angles sentence; continuation 2 = the 71-word
+  shadowing sentence split at its dash pair: "Such an implant would be shadowed by … capped gates and
+  by the resist.[^krieger-1989] That is the shadowing that Krieger et al. analysed[^krieger-1989] and
+  that the PDK's shadowing allowances budget for. Such an implant would more naturally run on a
+  medium-current tool with tilt: …" (`[^krieger-1989]` **repeated** on the claim, which in the base
+  was followed by Krieger's marker in its dash material — batch-4 M2, declared; "That is" added; "and
+  would" → "Such an implant would", the noun back rather than an "It" that could be read as the
+  shadowing). Device-specific (65 w): the dash material after the claim ("That is the 5 V PMOS …,
+  the PNP emitter, or the diffusion resistor.", "That is" added); continuation from "The mask sharing
+  argues …" (split at the semicolon).
+* **R-REPEAT not applied.** The 8250 quotation appears in Why ("Axcelis 8250 Mid current B11, BF2,
+  As, ESC chuck, …") and under Machines likely used ("B11, BF2, As, ESC chuck, …"). The two copies
+  are not the same quotation (only the Why copy names the tool), and the Why argument rests on it;
+  removing it would lose a quotation, so both stay.
+* **R-HEDGE.** The scope sentence ("An industry-generic description …; the two main readings differ in
+  tool and geometry:") as the italic lead-in, word for word.
+* **How items.** Deep-junction (88 w): lead split at its semicolon; continuation from "The amorphous
+  layer …". Tilted extension (110 w, a 93-word sentence): lead = the dose/tilt clause to "every
+  orientation are reached."; continuation = "On a single-wafer medium-current tool with an
+  electrostatic chuck and electron shower." (a fragment, the style of these recipe items), "The tilt is
+  limited by the resist height.", "We read the PDK's thinner resist budget … though the PDK does not say
+  so." (split at its two semicolons; "we read" stays on its clause), then Adachi.
+* **R-TOOLS.** GSD and 8250: *SkyWater says:* the quotation (no subject in the base), *Tool exists:*,
+  *Runs this step:*; the Eaton 8250HT sentence (a vendor description) is the continuation. Two tools.
+* **R-RELATED.** Previous/Next split. "The n-type extensions that the flow *does* mask separately" →
+  `Same module:` (NTM, HVNTM, LDNTM); "activation" → `Feeds:`; "The other two-implant-one-mask pairs"
+  → `Same category:` (all Ion implantation steps); "Mask: PSDM" kept as `Mask:`; "The PMOS channel
+  and gate" unlabelled. Order per R-RELATED.
+* **R-OPENQ.** Labels "What `2PSDI` is", "Where the extension is formed", "Species, energy and
+  dose", "Which implanter"; text unchanged.
+* **R-GLANCE.** Does keeps "described in this reference"; Why names the three readings and that none
+  is stated; Public numbers "none published for `2PSDI`" plus the PDK's `HVPTM shadowing` 0.089 µm
+  `[^pdk-03]` as the page gives it; tool line GSD with both grades and "depending on the reading"; Not
+  public from Open questions 1 and 3.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `krieger-1989` (repeat), `pdk-03`,
+  `skw-01` (glance); numbers 0.089 (glance), "2"×2 (the code `2PSDI` in the glance and in an OQ
+  label); ref `step-082`, hedges "inference", "likely", "not public" (glance). REGROUPED: the angle
+  list (0 | 7 | 40, 23), the shadowing sentence (0.4, 0.18, 0.2 | 8250, 1, 11, 1, 14, 0-60), the
+  tilted-extension sentence (10¹³, 10¹⁴ | 0.3, 1.14): same digits, same order. WORDS LOST: "and"
+  (joining word at a split), "strength"×2.
+* **Marker coverage.** 25 flags, all read: the angle bullets (marker on the lead-in); split halves whose
+  base marker belonged to the other clause (mask list/description, Ogura/Lee, shadowing/"would more
+  naturally run", deep-junction/amorphous layer, the tilted-extension pieces); the region list (a
+  description of the first implant's regions, not a hedged claim); glance, grade and label lines.
+* **Caps**: para > 100 2 → 0; item > 60 5 → 0; sentence > 45 6 → 0.
