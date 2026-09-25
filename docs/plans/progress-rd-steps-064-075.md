@@ -518,3 +518,48 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   / our reading), each with its own marker; the paragraph before the note (flagged only because the
   script sees the note's markers as its neighbours); glance and labels.
 * **Caps**: para > 100 2 → 0; item > 60 3 → 0; sentence > 45 5 → 0.
+
+### 072 LDASTI — done
+
+* **In-force note.** One hand-written `{dropdown}` (in References) and one in the generated block; both
+  byte-identical (`invariants.py`), `check_inforce.py` passes, nothing from the note is used elsewhere.
+* **Lead.** First sentence (45 w) split at its first colon: "`LDASTI` is the *lightly doped* arsenic tip
+  implant of the SONOS memory transistors." (13 w) / "It is the counterpart of `ASTI` made through the
+  `LDNTM` resist, at a dose that is, we infer, lower …: the PDK calls the mask …[^pdk-06]" ("It is"
+  added; "we infer" and the marker stay in their sentence). Lead (115 w) split into two paragraphs
+  before "Arsenic ions enter …" (what the step is / what it does in the silicon).
+* **R-H3 not applied.** The passage after the figure is 45 words.
+* **R-CATEGORY.** The classification sentence (after "small tilt") split at its dash: "… of the *LDD*
+  class: low energy, moderate dose, small tilt." (17 w); the dash material "The PDK's 7° "Angle for tip
+  implant"[^pdk-03] applies, we infer, to this tip as to the standard one." and "It is the module's
+  smallest implant by area, …" describe this step → `**Specific to this step:**`, two bullets. The "we
+  infer" stays in its sentence, word for word (see Content problems: the S6 figure agent's note on this
+  sentence against Open questions).
+* **R-SENTENCE / R-PARA (Why).** The 76-word first sentence split at its colon ("The reasons are set out
+  on the `LDNTM` page. The SONOS memory transistor's junctions … (…).[^pdk-07]") and at ", so a heavily
+  doped" ("So a heavily doped abrupt tip … argument.[^ogura-1980]"); each piece keeps its own marker.
+  Paragraph split before "The trade-off is …". The 54-word arsenic sentence split at its semicolon.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4 (How items).** "Dose" (77 w, a 60-word sentence): lead "Of order 10¹³ cm⁻² (typical of an
+  LDD).[^txt-04]"; the continuation "It is below the room-temperature amorphisation threshold … (typical
+  value).[^rev-05][^txt-01]" ("It is" added to the verbless clause); the dash-pair quotation "— above
+  which "the amount … surface"[^wiki-implant] —" becomes "Above that threshold, "the amount … surface".
+  [^wiki-implant]" ("which" → "that threshold", R-PARA step 5; the quotation unchanged, still after a
+  comma); "So, unlike `ASTI`, the silicon stays crystalline …" (the split R-PARA step 2 allows at "—
+  so"). "Screen" (49-word sentence): split at its semicolon ("Which is the case is not public …").
+* **R-TOOLS.** 8250: *SkyWater says:* the quotation; grades; the gloss "An LDD-class arsenic dose sits
+  inside its quoted window, and its 3 keV floor[^axcelis-8250] covers a shallow tip." as the
+  continuation. GSD: pilot form, as 066.
+* **R-RELATED.** "The other tips:" → "Same module: the other tips …".
+* **R-OPENQ.** Labels "Energy and dose", "Dielectric over the source/drain", "Tilt and rotations",
+  "Select transistor"; text unchanged.
+* **R-GLANCE.** Does from the lead; Why from the Why section's "So a heavily doped abrupt tip …, while a
+  lightly doped, graded junction keeps the peak field low"; Public numbers "none published for SKY130"
+  plus the "N Tip (As)" species row `[^pdk-03]` (as 065); tool line; Not public from Open questions 1–3.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 8250, quote "N Tip
+  (As)", hedges "inference", "not public", identifier SKY130 — all the glance box. Declared
+  `--allow-added markers,numbers,quotes,hedges,identifiers`: clean.
+* **Marker coverage.** 21 flags, all read: split pieces each keeping their own markers (the Why pieces;
+  the arsenic pieces; the Dose pieces — "So, unlike `ASTI`, …" had no marker of its own in the base);
+  the category bullets; glance and labels.
+* **Caps**: para > 100 1 → 0; item > 60 2 → 0; sentence > 45 4 → 0.

@@ -10,14 +10,30 @@
 | **Previous step** | {ref}`LDNTM <step-071>` |
 | **Next step** | {ref}`LDBHI <step-073>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants a lightly doped arsenic tip into the SONOS memory
+  transistors through the `LDNTM` windows, self-aligned to the gate.
+* **Why:** a lightly doped, graded junction keeps the peak field low at
+  the cell's programme, erase and inhibit voltages.
+* **Public numbers:** none published for SKY130; the PDK's "N Tip (As)"
+  row gives the species.[^pdk-03]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current implanter —
+  strong (tool); inference (assignment).[^skw-01]
+* **Not public:** the energy, dose and tilt, and the dielectric over the
+  source/drain (→ Open questions).
+:::
+
 ## What this step is
 
 `LDASTI` is the *lightly doped* arsenic tip implant of the {term}`SONOS`
-memory transistors: the counterpart of {ref}`ASTI <step-065>` made
-through the {ref}`LDNTM <step-071>` resist, at a dose that is, we
-infer, lower than the standard tip's: the PDK calls the mask the
-"Lightly-doped N-tip implant mask".[^pdk-06] Arsenic
-ions enter the memory cell's active silicon on both sides of each
+memory transistors. It is the counterpart of {ref}`ASTI <step-065>` made
+through the {ref}`LDNTM <step-071>` resist, at a dose that is, we infer,
+lower than the standard tip's: the PDK calls the mask the "Lightly-doped
+N-tip implant mask".[^pdk-06]
+
+Arsenic ions enter the memory cell's active silicon on both sides of each
 control-gate line, self-aligned to the polysilicon gate, and form the
 shallow n⁻ regions that will connect the memory transistor's channel to
 the deep n⁺ source/drain implanted later at {ref}`NSDI <step-086>`.
@@ -41,21 +57,26 @@ LDD-class dose, of order
 ## Step category
 
 `LDASTI` is an {ref}`Ion implantation <category-implant>` step of the
-*LDD* class: low energy, moderate dose, small tilt — the PDK's 7°
-"Angle for tip implant"[^pdk-03] applies, we infer, to this tip as to
-the standard one. It is the module's smallest implant by area, since
-only the memory array is open.
+*LDD* class: low energy, moderate dose, small tilt.
+
+**Specific to this step:**
+
+* The PDK's 7° "Angle for tip implant"[^pdk-03] applies, we infer, to
+  this tip as to the standard one.
+* It is the module's smallest implant by area, since only the memory
+  array is open.
 
 ## Why this step exists
 
-The reasons are set out on the {ref}`LDNTM <step-071>` page: the
-SONOS memory transistor's junctions see several volts during programme,
-erase and inhibit (the PDK's cell conditions apply +6.7 V and −3.8 V
-across gate and source/drain/body),[^pdk-07] so a heavily doped abrupt
-tip at the gate edge would leak by band-to-band tunnelling and inject
-unwanted charge into the nitride, while a lightly doped, graded
-junction keeps the peak field low — the original lightly doped drain
-argument.[^ogura-1980] The trade-off is the one Thompson's group
+The reasons are set out on the {ref}`LDNTM <step-071>` page. The SONOS
+memory transistor's junctions see several volts during programme, erase and
+inhibit (the PDK's cell conditions apply +6.7 V and −3.8 V across gate and
+source/drain/body).[^pdk-07] So a heavily doped abrupt tip at the gate edge
+would leak by band-to-band tunnelling and inject unwanted charge into the
+nitride, while a lightly doped, graded junction keeps the peak field low —
+the original lightly doped drain argument.[^ogura-1980]
+
+The trade-off is the one Thompson's group
 quantified for logic: a lighter, deeper extension gives less
 short-channel control and more series resistance.[^thompson-1998] For
 a memory transistor read at low current, series resistance is
@@ -63,12 +84,12 @@ secondary; short-channel control is restored by the cell's own halo
 ({ref}`LDBHI <step-073>`) and {term}`punch-through stopper <punch-through>`
 ({ref}`PTSI <step-037>`).
 
-Arsenic is kept, rather than the phosphorus of the classic LDD,
-because its low diffusivity[^rev-05] preserves the graded profile
-through the later anneals and keeps the 0.15–0.22 µm channel[^pdk-07]
-from shortening; at LDD doses arsenic stays below the concentration
-at which it precipitates and deactivates,[^nobili-1983] so its
-activation is complete after a short anneal.
+Arsenic is kept, rather than the phosphorus of the classic LDD, because its
+low diffusivity[^rev-05] preserves the graded profile through the later
+anneals and keeps the 0.15–0.22 µm channel[^pdk-07] from shortening. At LDD
+doses arsenic stays below the concentration at which it precipitates and
+deactivates,[^nobili-1983] so its activation is complete after a short
+anneal.
 
 Without `LDASTI`, the memory transistors would have an undoped gap
 between channel and n⁺ source/drain under the {term}`spacer`, or would have to
@@ -76,8 +97,8 @@ take the logic tip with its leakage and disturb penalties.
 
 ## How it is typically performed
 
-An industry-generic lightly doped arsenic extension for a 200 mm,
-130 nm-era fab (SKY130's values are not public):
+*An industry-generic lightly doped arsenic extension for a 200 mm,
+130 nm-era fab (SKY130's values are not public):*
 
 * **Species and source.** ⁷⁵As⁺ from arsine or solid
   arsenic.[^wiki-implant][^wiki-ash3]
@@ -85,21 +106,22 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
   lighter dose, a slightly higher energy than the logic tip is often
   used so that the junction is deeper and more graded (LDD
   practice).[^txt-04]
-* **Dose.** Of order 10¹³ cm⁻² (typical of an LDD);[^txt-04] below the
-  room-temperature amorphisation threshold for arsenic, which is of
-  order 10¹⁴ cm⁻² (typical value)[^rev-05][^txt-01] — above which "the
-  amount of crystallographic damage can be enough to completely
-  amorphize the surface"[^wiki-implant] — so, unlike
-  {ref}`ASTI <step-065>`, the
-  silicon stays crystalline and the implant leaves point-defect damage
-  rather than an amorphous layer. That changes what the halo boron
-  sees ({ref}`LDBHI <step-073>`) and how much transient enhanced
-  diffusion the anneal produces.[^stolk-1997]
-* **Screen.** The implant passes through whatever dielectric remains
-  over the memory transistor's source/drain after the gate etch — the
-  {term}`screen oxide` of {ref}`IOX45 <step-063>` and, if it survived the gate
-  etch, part of the {term}`ONO` stack patterned at {ref}`ONOME <step-042>`;
-  which is the case is not public (see *Open questions*).
+* **Dose.** Of order 10¹³ cm⁻² (typical of an LDD).[^txt-04]
+
+  It is below the room-temperature amorphisation threshold for arsenic,
+  which is of order 10¹⁴ cm⁻² (typical value).[^rev-05][^txt-01] Above that
+  threshold, "the amount of crystallographic damage can be enough to
+  completely amorphize the surface".[^wiki-implant] So, unlike
+  {ref}`ASTI <step-065>`, the silicon stays crystalline and the implant
+  leaves point-defect damage rather than an amorphous layer. That changes
+  what the halo boron sees ({ref}`LDBHI <step-073>`) and how much transient
+  enhanced diffusion the anneal produces.[^stolk-1997]
+* **Screen.** The implant passes through whatever dielectric remains over
+  the memory transistor's source/drain after the gate etch — the
+  {term}`screen oxide` of {ref}`IOX45 <step-063>` and, if it survived the
+  gate etch, part of the {term}`ONO` stack patterned at
+  {ref}`ONOME <step-042>`. Which is the case is not public (see *Open
+  questions*).
 * **Tilt and rotation.** 7° (PDK tip angle),[^pdk-03] with twist; two
   or four rotations, or 0°, for symmetry — not public. In a dense
   array the neighbouring gate lines {term}`shadow <shadowing>` a tilted beam more than in
@@ -124,17 +146,22 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current implanter.** SkyWater lists "Axcelis
-  8250 Mid current B11, BF2, As, ESC chuck, E shower, 1e11 to 1e14,
-  0-60 deg tilt".[^skw-01] An LDD-class arsenic dose sits inside its
-  quoted window, and its 3 keV floor[^axcelis-8250] covers a shallow
-  tip. Strength: **strong** for the tool; **inference** for the
-  assignment, since a "lightly doped" tip is the one tip whose dose
-  plausibly fits the medium-current tool.
+* **Axcelis 8250 medium-current implanter**
+  - *SkyWater says:* lists "Axcelis 8250 Mid current B11, BF2, As, ESC
+    chuck, E shower, 1e11 to 1e14, 0-60 deg tilt".[^skw-01]
+  - *Tool exists:* **strong** for the tool.
+  - *Runs this step:* **inference** for the assignment, since a "lightly
+    doped" tip is the one tip whose dose plausibly fits the
+    medium-current tool.
+
+  An LDD-class arsenic dose sits inside its quoted window, and its 3 keV
+  floor[^axcelis-8250] covers a shallow tip.
 * **Axcelis GSD implanters (high-current/high-energy and high-dose)**
   ("10-3000kev, 1e11 to 5e15, tilt/twist" and "2-180kev, 5e12 to 5e16,
-  tilt/twist")[^skw-01] — possible; the Hi dose tool's 2 keV floor covers a
-  shallow tip. Strength: strong for existence; weak for assignment.
+  tilt/twist")[^skw-01] — possible; the Hi dose tool's 2 keV floor
+  covers a shallow tip.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak for assignment.
 
 ## Resources required
 
@@ -153,7 +180,7 @@ An industry-generic lightly doped arsenic extension for a 200 mm,
 * Previous: {ref}`LDNTM <step-071>` (the resist mask).
 * Next: {ref}`LDBHI <step-073>` (the cell's halo through the same
   resist), then {ref}`LDASTIS <step-074>` (strip).
-* The other tips: {ref}`ASTI <step-065>`, {ref}`HVASTI <step-069>`.
+* Same module: the other tips {ref}`ASTI <step-065>`, {ref}`HVASTI <step-069>`.
 * The memory transistor's channel: {ref}`PTSI <step-037>`,
   {ref}`DEPI <step-038>`; its gate stack: {ref}`ONO <step-040>`,
   {ref}`SAGD <step-048>`, {ref}`P1ME <step-062>`.
@@ -235,15 +262,16 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The energy and dose of the lightly doped tip, and how much lighter
-  than the logic tip it is, are not public.
-* What dielectric covers the memory transistor's source/drain at this
-  point — screen oxide alone, or remnants of the ONO stack — depends
-  on the gate-etch and {ref}`ONOME <step-042>` details, which are not
-  public.
-* Whether the implant is at 7° with rotations or at 0° is not public.
-* Whether the select transistor of the {term}`2-T cell` receives this tip or
-  the logic tip is not public.
+* **Energy and dose.** The energy and dose of the lightly doped tip, and how
+  much lighter than the logic tip it is, are not public.
+* **Dielectric over the source/drain.** What dielectric covers the memory
+  transistor's source/drain at this point — screen oxide alone, or remnants
+  of the ONO stack — depends on the gate-etch and {ref}`ONOME <step-042>`
+  details, which are not public.
+* **Tilt and rotations.** Whether the implant is at 7° with rotations or at
+  0° is not public.
+* **Select transistor.** Whether the select transistor of the
+  {term}`2-T cell` receives this tip or the logic tip is not public.
 
 <!-- footnotes -->
 
