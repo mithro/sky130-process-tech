@@ -9,10 +9,10 @@ thickness or on a harder layer underneath.
 
 | | CMP polisher |
 |---|---|
-| What it does | "The carrier provides a controllable load, i.e., pressure, on the substrate to press it against the polishing pad", while "A polishing slurry, including an abrasive and at least one chemically-reactive agent" is spread over the pad.[^pat-carrier-amat] |
+| What it does | Planarises films by polishing: "The carrier provides a controllable load, i.e., pressure, on the substrate to press it against the polishing pad", while "A polishing slurry, including an abrasive and at least one chemically-reactive agent" is spread over the pad.[^pat-carrier-amat] |
 | Removal rate | "The polishing rate depends upon the force pressing the substrate against the pad";[^pat-carrier-amat] rate proportional to pressure and velocity in Preston's law,[^preston-1927] with a "nonlinear down pressure dependence" in Luo and Dornfeld's model.[^luo-2001] |
-| Architecture | Rotary multi-platen: "Multiple wafer heads, at least one greater in number than the number of polishing stations", on a carousel;[^pat-cmp-mirra] linear: "a moving belt is used to linearly move the pad across the wafer surface".[^pat-linear-lam] |
-| Pad | "porous polymeric materials with a pore size between 30 and 50 μm", "must be regularly reconditioned";[^wiki-cmp] a carousel station has "a pad conditioner to recondition the polishing pad so that it retains a high polishing rate".[^pat-cmp-mirra] |
+| Architecture | Rotary multi-platen: "Multiple wafer heads, at least one greater in number than the number of polishing stations", suspended from a carousel;[^pat-cmp-mirra] linear: "a moving belt is used to linearly move the pad across the wafer surface".[^pat-linear-lam] |
+| Pad | "porous polymeric materials with a pore size between 30 and 50 μm", "must be regularly reconditioned";[^wiki-cmp] each station of Applied's carousel patent has "a pad conditioner to recondition the polishing pad so that it retains a high polishing rate".[^pat-cmp-mirra] |
 | Endpoint | Reflectance through "a window embedded within the polishing table";[^pat-cmp-endpoint-ibm] a "substantially transparent polyurethane plug" in the pad.[^pat-cmp-window] |
 | 200 mm era | Mirra (December 1995), "three-station, four polishing head design";[^amat-1997] AVANTI 472, "single wafer, two-step polishing for wafers up to 200mm";[^ipec-472-1997] Strasbaugh 6DS-SP;[^strasbaugh-6ds-1999] Lam Teres.[^pat-linear-lam] |
 | SkyWater-listed tool | "AMAT Mirra CMP": "oxide", "nitride", "niobium", "aluminum", "tungsten", "high selectivity tungsten", "copper"; "On board metrology with feed forward and backward"[^skw-01] |

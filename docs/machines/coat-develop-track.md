@@ -11,8 +11,8 @@ develops, rinses and dries the pattern.[^wiki-litho]
 |---|---|
 | What it does | "Wafer track systems are also known as wafer coater/developer systems"; "The photolithography process is carried out by the wafer track and stepper/scanner", which "are usually installed side by side, and are 'linked' together".[^wiki-litho] |
 | Modules | The ACT 8 "features spinner modules, thermal processing units, and an optical edge bead removal unit integrated with the stepper interface".[^tel-act8] |
-| Coat | Spin coating: "layers of photoresist about 1 micrometre thick", "typically spun at 20 to 80 revolutions per second for 30 to 60 seconds";[^wiki-spin-coating] SKY130's nominal photoresist thickness 1.14 µm, HV tip implants 0.3 µm.[^pdk-03] |
-| Bake | Prebake "typically at 90 to 100 °C for 30 to 60 seconds on a hotplate"; chemically amplified resist is "much more sensitive" in "time, temperature, and delay" at the post-exposure bake.[^wiki-litho] |
+| Coat | Spin coating: "layers of photoresist about 1 micrometre thick", "typically spun at 20 to 80 revolutions per second for 30 to 60 seconds";[^wiki-spin-coating] the SKY130 design assumptions use a nominal photoresist thickness of 1.14 µm and a photoresist thickness for HV tip implants of 0.3 µm.[^pdk-03] |
+| Bake | Prebake "typically at 90 to 100 °C for 30 to 60 seconds on a hotplate"; a post-exposure bake before develop, to which chemically amplified resist is "much more sensitive" in "time, temperature, and delay".[^wiki-litho] |
 | Develop | "The develop chemistry is delivered on a spinner"; "Metal-ion-free developers such as tetramethylammonium hydroxide (TMAH) are now used".[^wiki-litho] |
 | Throughput | "as many as 120 wafers per hour" (ACT 8);[^tel-act8] "Inline: 120" wph (ACT 12 and ACT 8Z).[^tel-act] |
 | 200 mm era | ACT 8, "debuted in the coater/developer marketplace in 1997 to handle 200mm wafers";[^tel-act8] SCREEN's "Long-Selling 60/80 Series".[^screen-sk80ex] |
