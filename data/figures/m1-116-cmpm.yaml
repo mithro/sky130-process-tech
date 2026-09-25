@@ -10,8 +10,8 @@ alt: >-
 caption: >-
   Before, the inter-metal oxide as deposited; after, polished flat until the topography is gone,
   at a height above the metal-1 tops. The polish is stopped by the removal amount, not by a stop
-  layer, and how much it removes is not public. The PDK's stack diagram gives the finished
-  dielectric over metal 1, after the cap still to come, as the 0.27 µm via-1 height;[^pdk-04]
+  layer, and how much it removes is not public. Polished oxide and the cap still to come together
+  make up the PDK's via-1 height of 0.27 µm over metal 1;[^pdk-04]
   nothing is drawn to scale, and the pattern-density steps the page describes are not drawn. The bottom and cap films of the metal lines, the inter-level oxide under them, the
   metal contacts, the local interconnect, the glass, the cap oxide, the lower tungsten plugs,
   the silicide discs, the contact liners and the transistors' films (the spacers, the caps, the
