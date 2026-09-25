@@ -2720,6 +2720,12 @@ def spec_strings(spec: dict, series: dict | None):
 
 
 STEP_REF_RE = re.compile(r"steps? \d{3}((, | and |–)\d{3})*")
+# Step and level codes are identifiers, not numbers: NILD3, TIN2, WDEP2, NCAPOX3, NILD3_C.
+IDENT_RE = re.compile(r"\b[A-Z]{2,}[A-Z0-9_]*\d[A-Z0-9_]*\b")
+
+
+def _has_number(note: str) -> bool:
+    return re.search(r"\d", IDENT_RE.sub("", STEP_REF_RE.sub("", note))) is not None
 
 
 def _label_errs(key: str, lab: dict, defined: set[str], restricted: set[str],
@@ -2729,7 +2735,7 @@ def _label_errs(key: str, lab: dict, defined: set[str], restricted: set[str],
     if basis not in BASIS_TAG:
         errs.append(f"{key}: unknown basis {basis!r}")
     note = lab.get("note", "")
-    if re.search(r"\d", STEP_REF_RE.sub("", note)) and not lab.get("cite"):
+    if _has_number(note) and not lab.get("cite"):
         errs.append(f"{key}: a label that states a number needs cite:")
     cite = lab.get("cite")
     if cite and page and cite not in defined:
@@ -2737,7 +2743,7 @@ def _label_errs(key: str, lab: dict, defined: set[str], restricted: set[str],
     if cite and cite in restricted:
         errs.append(f"{key}: cite key [^{cite}] is a patent shown as in force; "
                     "a figure may never carry it")
-    if basis != "public" and re.search(r"\d", STEP_REF_RE.sub("", note)):
+    if basis != "public" and _has_number(note):
         if not note.lower().startswith(NOT_PUBLIC):
             errs.append(f"{key}: a value that is not public must say "
                         f"{NOT_PUBLIC!r} first and the reading second")
@@ -3505,6 +3511,10 @@ def selftest() -> int:
          "does not say that the lower part")
     case("unknown basis",
          lambda s, r: r["ops"][0]["label"].update(basis="guess"), "unknown basis")
+    case("a number beside a step code, without a cite",
+         lambda s, r: r["ops"][0]["label"].update(note="NILD3_C, 0.030 µm"), "needs cite:")
+    case("a thickness beside a step code, without a cite",
+         lambda s, r: r["ops"][0]["label"].update(note="TIN2 liner, 20 nm"), "needs cite:")
     case("a number without a cite",
          lambda s, r: r["ops"][0]["label"].update(note="about 0.12 µm thick"),
          "needs cite:")
@@ -4084,6 +4094,14 @@ def selftest() -> int:
         got = any("where a pattern may not show" in x for x in lint_svg_text(raw))
         if got != want:
             print(f"SELFTEST FAIL: lint 17 on {t_ox} u oxide under {t_psg} u PSG: fired={got}")
+            bad += 1
+    # a step or level code is an identifier, not a number: no cite, no "not public" first
+    for note, basis in (("polished at NILD3", "public"), ("NILD3", "reading")):
+        ser = copy.deepcopy(_SERIES_OK)
+        ser["ops"][0]["label"].update(note=note, basis=basis)
+        e = [x for x in lint_spec(_spec_ok(), ser) if "needs cite" in x or "not public" in x]
+        if e:
+            print(f"SELFTEST FAIL: the note {note!r} ({basis}) was read as a number: {e}")
             bad += 1
     # a clean spec must lint clean
     clean = _spec_ok()

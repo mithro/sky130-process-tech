@@ -116,7 +116,7 @@ that x). Anything else is a lint error.
 Every label is `{title, note, basis, cite}`:
 
 * `title` — a couple of words. No numbers.
-* `note` — one short sentence. Naming a step (`step 004`, `steps 010, 011`) is free; **any
+* `note` — one short sentence. Naming a step (`step 004`, `steps 010, 011`) is free, and so is a step or level code that contains a digit (`NILD3`, `TIN2`, `NILD3_C`: two capitals, then letters, digits or underscores); **any
   other number needs `cite:`**.
 * `basis` — `public`, `reading`, `inferred` or `typical`. Anything but `public` prints its
   tag in amber under the label, so use the one the page's own wording supports.
