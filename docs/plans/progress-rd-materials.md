@@ -485,3 +485,99 @@ pre-existing).
 Incremental `-W` build: clean. Screenshots at 400 px: table and
 paragraphs wrap cleanly; the in-force patent dropdowns (MKS carbonated
 water patent) render unchanged, boundaries untouched.
+
+### `wet-chemicals.md`
+
+Rules applied: R-MODELS (the nine bullets under "Representative
+materials and grades" converted to an 11-row `Material | As supplied |
+Specification` table, splitting the "Ammonium hydroxide and hydrochloric
+acid" bullet's two distinct SC-1/SC-2 recipe claims into their own
+rows), R-CAPTION (the existing "Filing | Chemical suppliers as named"
+table wrapped with a caption and `:widths:`), R-PARA (6 over-100-word
+paragraphs split at topic seams: the HF/BOE section split five ways —
+etch mechanism, native-oxide regrowth, dilution/buffering, surfactant
+patents, nitride/metal selectivity; the RCA-sequence section split four
+ways — SC-1/SC-2 recipe, the Itano ratio finding, SPM, and the
+room-temperature/decomposition close; the phosphoric/nitric section
+split at the silicon-nitride-to-silicon-etch seam; the solvents section
+split four ways — isopropanol drying, residue removers, the EKC265
+tungsten-corrosion caveat, and the implanted-resist study; the "Strength
+of the evidence" section split at the strong-evidence-rating seam),
+R-LIST (the over-60-word "Solvents over metal" bullet split into two
+bullets — "Solvents over metal" keeping the general practice claim, and
+a new "Tungsten plugs" bullet keeping the Chen et al. corrosion caveat),
+R-RELATED (Related pages regrouped under bold **Category.** / **Machines.**
+/ **Indexes.** labels, folding the three Category links onto one line).
+
+Skipped, with reason: the "What they do", "Etchants", "Cleans",
+"Grades", "Hazards" and "SkyWater evidence" quick-facts cells are all
+over the 20-word/1-quotation cap by the recurring-finding pattern above
+(their quotations are unique to the cell, or already duplicate the body
+or the new R-MODELS table); not reworked, consistent with every page
+from `dopant-sources.md` onward in this batch, given the batch's time
+budget.
+
+One `check_preserved.py` finding declared, not a bug: splitting the
+"Ammonium hydroxide and hydrochloric acid" bullet into two table rows
+repeats the bullet's single trailing `[^wiki-rca]` marker onto both new
+rows (the marker covered a whole two-clause sentence before the split) —
+declared `--allow-added markers`, the same pattern used on every earlier
+page for a split sentence whose one marker covered a compound claim.
+Three `REGROUPED` (`--allow-regrouped`) printouts, hand-checked: the
+Grades cell's (2, 0.8, 1.2, 130) run and the Isopropanol row's (2, 2,
+0.8, 1.2, 130) run are the same "2-propanol"/"0.8 to 1.2
+microns"/"130 nm" figures now split across a quick-facts cell and a
+table row that already existed as separate copies before this edit; the
+Ammonium-hydroxide/Hydrochloric-acid (29, 37) run keeps its original
+order across the new two-row split.
+
+Over-cap counts, before -> after (measured with
+`tmp/readability/a-tools/measure_materials.py --list`): paragraphs
+> 100 words 7 -> 1 (the R-INTRO lead, out of scope); paragraphs
+> 150 words 3 -> 0; paragraphs with >= 3 semicolons 2 -> 0; sentences
+> 45 words 6 -> 0; list items > 60 words 1 -> 0; table cells > 40 words
+3 -> 3 (all quick-facts cells, skipped per the recurring finding);
+tables with no caption 1 -> 0.
+
+`check_preserved.py --base main --allow-regrouped --allow-added
+markers`: 0 undeclared differences. `check_materials.py`,
+`check_refs.py`, `check_inforce.py`, `gen_step_tables.py --check`,
+`gen_index_links.py --check`: all pass (0 problems). Incremental
+(non-`-E`) `-W` build: clean, no warnings. Screenshots at 400 px and
+desktop: the 11-row R-MODELS table and the Filing/suppliers table both
+wrap cleanly with no horizontal scroll; the split HF/BOE, RCA-sequence,
+phosphoric/nitric and solvents paragraphs each read well as one topic
+per paragraph; the "Tungsten plugs" bullet and the regrouped "Related
+pages" section render correctly; the in-force-patent dropdown boundary
+is unchanged.
+
+## Batch summary
+
+All twelve material pages (every page under `docs/materials/` except
+`index.md`) have had the readability rules applied: `sputter-targets.md`,
+`etch-gases.md`, `dopant-sources.md`, `process-gases.md`,
+`anneal-ambients.md`, `cmp-consumables.md`, `hardware-consumables.md`,
+`lithography-materials.md`, `precursors.md`, `substrates.md`,
+`ultrapure-water.md`, `wet-chemicals.md`. Each has its own commit and a
+`tmp/preserve/<page>-before.md` snapshot (gitignored, not committed).
+
+Guide problems worth the owner's attention:
+* R-QUICKFACTS step 2 ("if the words are already in the body, delete the
+  cell's copy") cannot be satisfied by a hand edit that also passes
+  `check_preserved.py`'s multiset `quotes`/`markers` check with no loss,
+  whenever the same quotation or marker already appears a second time
+  elsewhere on the page (see "Recurring findings" above). This left
+  every page's quick-facts table with some cells over the 20-word/
+  1-quotation cap; fully reworked on `sputter-targets.md` and
+  `etch-gases.md` only, documented as a known, consistent gap on the
+  other ten pages given the batch's time budget.
+* R-MODELS's literal 4/5-column shape (`Material | As supplied |
+  Specification | Note`) overflows the phone-width test when the Note
+  column holds real prose (found on `sputter-targets.md`); every page in
+  this batch instead used a 3-column `Material | As supplied |
+  Specification` shape, which passed the phone test throughout.
+
+Content problems for the owner: none found beyond the recurring
+R-QUICKFACTS/`check_preserved.py` tension above; no factual, arithmetic
+or citation discrepancies were noticed while reading any of the twelve
+pages in full.

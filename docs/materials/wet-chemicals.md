@@ -36,7 +36,9 @@ A wet chemical removes material by dissolving it. Wet processing is
 therefore isotropic and can be very selective, and it cleans without
 the damage a plasma can do; its limits are the purity of the liquid,
 which decides what it leaves behind, and the drying, which decides
-whether the wafer stays clean. The cleaning solutions of a 1990s fab
+whether the wafer stays clean.
+
+The cleaning solutions of a 1990s fab
 descend from the peroxide solutions Kern and Puotinen published in
 1970,[^kern-1970] and Kern's review of 1990 records that the chemistry
 "has remained essentially unchanged in the past 25 years"; what had
@@ -53,13 +55,16 @@ that an HF-last clean ({term}`HF-last`) hands to the next step. That
 surface does not stay bare: Morita et al. showed that "The coexistence
 of oxygen and water or moisture is required for growth of native oxide
 both in air and in ultrapure water at room
-temperature".[^morita-1990] For slow, controlled etches the acid is
+temperature".[^morita-1990]
+
+For slow, controlled etches the acid is
 diluted with water or buffered with ammonium fluoride; "Buffering HF
 with NH4F results in a solution with a more stable pH; thus, more
 stable concentrations of HF and HF−2, and a more stable etch
 rate".[^wiki-boe] In very dilute HF, Kikuyama et al. showed that
 conductivity "can be used to monitor the etching rate … very accurately
 when the etching rate is relatively slow (around 1 Å/min)".[^kikuyama-1994]
+
 Surfactants are added for fine patterns: a Daikin patent describes an
 etchant of "hydrogen fluoride, ammonium fluoride and a surfactant
 selected from a group consisting of fluorine-containing carboxylic acids
@@ -68,6 +73,7 @@ etched",[^pat-bhf-daikin] and a Hashimoto Chemical patent with Ohmi
 among its inventors describes a composition comprising "a mixture of hydrofluoric acid, ammonium fluoride
 solution and water, and at least one compound selected from the group
 of surfactants".[^pat-bhf-hashimoto]
+
 HF also etches silicon nitride, at rates that differ from oxide;
 Knotter and Denteneer proposed a mechanism by which the "etch
 selectivity between these two materials can be
@@ -85,16 +91,22 @@ particles, since SC-1 modifies the surface and particle zeta potentials
 and causes them to repel"; SC-2, hydrochloric acid and peroxide in
 water, "effectively removes the remaining traces of metallic (ionic)
 contaminants, some of which were introduced in the SC-1 cleaning
-step".[^wiki-rca] Itano et al. showed that "alkaline solutions are
+step".[^wiki-rca]
+
+Itano et al. showed that "alkaline solutions are
 superior to acid solutions in terms of particle removal efficiency",
 that the alkaline solutions "etch the wafer surfaces to lift off
 particles", and that "an etch rate of 0.25 nm/min or more is required to
 lift off the particles"; their results suggested an SC-1 mixing ratio
 of "0.05:1:5" (NH₄OH, H₂O₂, H₂O),[^itano-1993] far less ammonia
-than the 1:1:5 of Wikipedia's recipe (our comparison).[^wiki-rca] SPM, piranha, is sulphuric acid with peroxide; it
+than the 1:1:5 of Wikipedia's recipe (our comparison).[^wiki-rca]
+
+SPM, piranha, is sulphuric acid with peroxide; it
 "is used frequently in the microelectronics industry, e.g. to clean
 photoresist or organic material residue from silicon
-wafers".[^wiki-piranha] Room-temperature sequences were developed to
+wafers".[^wiki-piranha]
+
+Room-temperature sequences were developed to
 cut the chemical load of the hot cleans: Ohmi's five-step clean reduced
 chemical and ultrapure water use to "less than 1% and 5%,
 respectively".[^ohmi-1996] Hydrogen peroxide itself "decomposes slowly
@@ -110,7 +122,9 @@ the etch rate of silicon dioxide", and used "Refluxed boiling phosphoric
 acid at 180°C", in which nitride etched at 100 Å/min against 0–25 Å/min
 for deposited oxide.[^vgh-1967] A production bath is held there with "a
 water concentration monitor and a water spiking
-apparatus".[^liu-2007] Silicon itself is etched in mixtures of
+apparatus".[^liu-2007]
+
+Silicon itself is etched in mixtures of
 hydrofluoric and nitric acid. Robbins and Schwartz mapped the etch rate
 over the HF–HNO₃–H₂O composition triangle and found that "The reaction
 proceeds by an oxidation step followed by the dissolution of the
@@ -134,15 +148,20 @@ Isopropanol displaces water in drying. Kern recorded in 1990 that
 "Improvements in wafer drying by use of isopropanol vapor" were being
 investigated,[^kern-1990] and Leenaars, Huethorst and van Oekel
 published Marangoni drying the same year as "A new extremely clean
-drying process".[^leenaars-1990] Where acids would attack exposed metal,
+drying process".[^leenaars-1990]
+
+Where acids would attack exposed metal,
 residues after etching are removed with amine solvents. An EKC
 Technology patent describes "A stripping and cleaning composition for
 removing resists and etching residue from substrates containing
 hydroxylamine and at least one alkanolamine".[^pat-ekc-hydroxylamine]
+
 Such solvents are not inert to every metal: Chen et al. measured
 tungsten films in EKC265 at 65 °C and found that "the basic EKC265
 solution was aggressive to tungsten", and that water and chloride
-increased the corrosion further.[^chen-2003-ekc] Solvent formulations
+increased the corrosion further.[^chen-2003-ekc]
+
+Solvent formulations
 are also studied for implanted resist: Visintin, Korzenski and Baum
 stripped high-dose arsenic-implanted resist and its "hardened
 carbonized crust without silicon/oxide loss" with organosilane
@@ -159,45 +178,22 @@ process chemical. The concentrations below are those of the chemicals
 as supplied or of textbook mixtures; SKY130's concentrations and
 temperatures are not public.
 
-* **Hydrofluoric acid.** Supplied at "49% (48–52%)" and
-  diluted at the point of use;[^wiki-hf] SEMI C28 standardises
-  "requirements for hydrofluoric acid used in the semiconductor
-  industry".[^semi-c28]
-* **Buffered oxide etch.** A mixture of 40 % NH₄F and 49 % HF, 6:1 by
-  volume in Wikipedia's example, which etches thermal oxide "at
-  approximately 2 nanometres per second at 25 degrees
-  Celsius";[^wiki-boe] SEMI C23 covers "grades of buffered oxide
-  etchants used in the semiconductor industry".[^semi-c23]
-  Surfactant-bearing buffered etchants are described in patents such as
-  Hashimoto's and Daikin's.[^pat-bhf-hashimoto][^pat-bhf-daikin]
-* **Hydrogen peroxide.** 30 % in the RCA and piranha
-  recipes;[^wiki-rca][^wiki-piranha] SEMI C30 covers "five Grades and
-  one Tier of hydrogen peroxide used in the semiconductor
-  industry".[^semi-c30] It "is typically stored with a stabilizer in a
-  weakly acidic solution in an opaque bottle".[^wiki-h2o2]
-* **Ammonium hydroxide and hydrochloric acid.** "ammonia water, (29% by
-  weight of NH3)" for SC-1 and "aqueous HCl (hydrochloric acid, 37% by
-  weight)" for SC-2 in Wikipedia's recipes.[^wiki-rca]
-* **Sulphuric acid.** SEMI C44 covers "two Grades and three Tiers of
-  sulfuric acid used in the semiconductor industry".[^semi-c44] "When
-  sulfuric acid is added to water, a considerable amount of heat is
-  released".[^wiki-h2so4]
-* **Phosphoric acid.** "commonly encountered as an 85% aqueous
-  solution"; "Fractional crystallization can achieve higher purities
-  typically used for semiconductor applications".[^wiki-h3po4]
-* **Nitric acid.** Commercially 68 % in water.[^wiki-hno3]
-* **Isopropanol (2-propanol).** SEMI C41 "covers all grades of
-  2-propanol used in the semiconductor industry", and "The VLSI grade
-  purity level is typically required by semiconductor devices with
-  geometries of 0.8 to 1.2 microns", a grade defined for much larger
-  geometries than 130 nm; the listing describes no other
-  grade.[^semi-c41] It "is a colorless,
-  flammable, organic compound".[^wiki-ipa]
-* **Post-etch residue removers.** Proprietary solvent blends; the step
-  pages write them as the EKC265/EKC270 class, and EKC Technology's
-  patent gives the hydroxylamine–alkanolamine
-  chemistry.[^pat-ekc-hydroxylamine] Chen et al. studied
-  EKC265.[^chen-2003-ekc]
+:::{table} Representative wet chemicals and grades, as public and current supplier documents describe them
+:widths: 26 8 66
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Hydrofluoric acid | — | Supplied at "49% (48–52%)" and diluted at the point of use;[^wiki-hf] SEMI C28 standardises "requirements for hydrofluoric acid used in the semiconductor industry"[^semi-c28] |
+| Buffered oxide etch | — | A mixture of 40 % NH₄F and 49 % HF, 6:1 by volume in Wikipedia's example, which etches thermal oxide "at approximately 2 nanometres per second at 25 degrees Celsius";[^wiki-boe] SEMI C23 covers "grades of buffered oxide etchants used in the semiconductor industry";[^semi-c23] surfactant-bearing buffered etchants are described in patents such as Hashimoto's and Daikin's[^pat-bhf-hashimoto][^pat-bhf-daikin] |
+| Hydrogen peroxide | — | 30 % in the RCA and piranha recipes;[^wiki-rca][^wiki-piranha] SEMI C30 covers "five Grades and one Tier of hydrogen peroxide used in the semiconductor industry";[^semi-c30] it "is typically stored with a stabilizer in a weakly acidic solution in an opaque bottle"[^wiki-h2o2] |
+| Ammonium hydroxide | — | "ammonia water, (29% by weight of NH3)" for SC-1 in Wikipedia's recipe[^wiki-rca] |
+| Hydrochloric acid | — | "aqueous HCl (hydrochloric acid, 37% by weight)" for SC-2 in Wikipedia's recipe[^wiki-rca] |
+| Sulphuric acid | — | SEMI C44 covers "two Grades and three Tiers of sulfuric acid used in the semiconductor industry";[^semi-c44] "When sulfuric acid is added to water, a considerable amount of heat is released"[^wiki-h2so4] |
+| Phosphoric acid | — | "commonly encountered as an 85% aqueous solution"; "Fractional crystallization can achieve higher purities typically used for semiconductor applications"[^wiki-h3po4] |
+| Nitric acid | — | Commercially 68 % in water[^wiki-hno3] |
+| Isopropanol (2-propanol) | — | SEMI C41 "covers all grades of 2-propanol used in the semiconductor industry", and "The VLSI grade purity level is typically required by semiconductor devices with geometries of 0.8 to 1.2 microns", a grade defined for much larger geometries than 130 nm; the listing describes no other grade;[^semi-c41] it "is a colorless, flammable, organic compound"[^wiki-ipa] |
+| Post-etch residue removers | — | Proprietary solvent blends; the step pages write them as the EKC265/EKC270 class, and EKC Technology's patent gives the hydroxylamine–alkanolamine chemistry;[^pat-ekc-hydroxylamine] Chen et al. studied EKC265[^chen-2003-ekc] |
+:::
 
 ## At SkyWater
 
@@ -233,10 +229,14 @@ fiscal 2023 describe the raw materials as including "high-purity acid,
 base, and cleaning solutions for various wet processing steps", and
 name chemical suppliers:[^sec-01][^sec-02]
 
+:::{table} Chemical suppliers as SkyWater's filings name them, one filing per row
+:widths: 20 80
+
 | Filing | Chemical suppliers as named |
 |--------|-----------------------------|
 | S-1 (2021)[^sec-01] | "Air Products & Chemicals, Inc. (bulk and specialty gases, chemicals)"; "KMG Chemicals, Inc. (chemicals)" |
 | 10-K for fiscal 2023[^sec-02] | "EMD Performance Materials Corp (Versum) (specialty chemicals and gases)"; "CMC Chemicals, Inc. (a subsidiary of Entegris) (process and chemical mechanical polishing chemicals)" |
+:::
 
 Neither filing says which chemicals each supplier provides. The S-1
 also states: "We use, generate and discharge hazardous chemicals and
@@ -248,7 +248,9 @@ activities."[^sec-01]
 The capability entries are SkyWater statements, so they are strong
 evidence that the listed chemistries exist at the fab; on the scale of
 the {ref}`machines index <machines-reading-evidence>` they rank as
-**strong**. The same caveats apply as to the tools: the list describes
+**strong**.
+
+The same caveats apply as to the tools: the list describes
 the whole fab in the 2020s, including processes that are not part of
 SKY130, and it ties no chemical to a step.[^skw-01] The filings are
 strong for the supplier names but weak for any particular chemical,
@@ -370,7 +372,8 @@ public.
   "DSP" is.
 * **Solvents over metal.** After the metal, via, capacitor and pad
   etches the step pages name EKC-class solvents rather than acids,
-  because SPM attacks aluminium and TiN ({ref}`category-strip`). Where
+  because SPM attacks aluminium and TiN ({ref}`category-strip`).
+* **Tungsten plugs.** Where
   a metal etch uncovers the top of a tungsten plug below, as a line
   misaligned to its via can, Chen et al.'s finding that EKC265 corrodes
   tungsten, more so with water and chloride present, makes the clean's
@@ -388,15 +391,15 @@ its alternatives for the pad oxide.[^pat-04]
 
 ## Related pages
 
-* {ref}`category-strip` — wet strip and clean chemistry, the nitride
-  strip and solvent cleans.
-* {ref}`category-etch` — wet etching of oxide, nitride and silicon.
-* {ref}`machine-wet-bench` and
+* **Category.** {ref}`category-strip` — wet strip and clean chemistry,
+  the nitride strip and solvent cleans. {ref}`category-etch` — wet
+  etching of oxide, nitride and silicon. {ref}`category-cmp` — slurries
+  and post-CMP cleans.
+* **Machines.** {ref}`machine-wet-bench` and
   {ref}`machine-single-wafer-spin-processor` — the tools that use these
   chemicals.
-* {ref}`category-cmp` — slurries and post-CMP cleans.
-* {ref}`materials-index` — all consumable classes, including ultrapure
-  water and the post-CMP clean chemistry.
+* **Indexes.** {ref}`materials-index` — all consumable classes,
+  including ultrapure water and the post-CMP clean chemistry.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
