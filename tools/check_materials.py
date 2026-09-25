@@ -2,13 +2,37 @@
 """Check the material-class pages against their template and the materials index.
 
 The main table of ``docs/materials/index.md`` (under "## Materials
-index") gives every row a key in its first column (`` `hf` ``); the
-class-page table under "## How to read the index" assigns every key to
-exactly one class page.  The checker verifies:
+index") gives every row a key, normally in its first column
+(`` `hf` ``); the class-page table under "## How to read the index"
+assigns every key to exactly one class page.  The checker verifies:
 
 * **Main table.** Every row has a unique key of lower-case letters,
   digits and hyphens, and its Steps cell starts with "all except" (in
   any letter case) or with a step link.
+
+  Two row shapes are accepted (W0e, report-B B2 — the second is not
+  used by the committed index yet; restructuring it is a separate, W3
+  change, not this one):
+
+  1. **The current shape.** The first cell is exactly the key
+     (`` `hf` ``) and the row's own last cell is the Steps cell.
+  2. **A reader-facing first column.** The first cell is a name for
+     readers, not the tooling key, as long as the key still appears
+     somewhere in the row (``find_key()``): embedded in that same cell
+     (`` Nitrogen (`n2`) ``) or, failing that, in another cell. When
+     the main table's header's last cell does not mention "steps", the
+     table is read as having **no Steps column** at all, and the Steps
+     cell is instead read from a **second** table in the same section,
+     shaped ``Material | Steps`` and keyed the same way
+     (``read_steps_table()``): one row per key, the key found by
+     ``find_key()``, the Steps cell its last cell.
+
+     In this shape the Class cell is not read positionally (its column
+     is not fixed): the whole row is searched for the
+     ``{ref}`... <material-slug>``` link instead, so the class-to-page
+     consistency check below still runs. A row naming more than one
+     material link this way is possible and is not specially detected;
+     see the class-cell check below.
 * **Class-page table.** Each Page cell is either a link
   ``{ref}`slug <material-slug>``` to a page that exists, or
   `` `slug` (not yet written)`` for a page that does not; each slug
@@ -42,6 +66,9 @@ For every ``docs/materials/*.md`` page except ``index.md``:
 Exit status is non-zero on any problem.  Run with
 ``uv run tools/check_materials.py``; an optional argument names another
 ``materials`` directory to check (used to test the checker on a copy).
+Run with ``--selftest`` for the offline ``Index`` unit tests, covering
+both main-table shapes above (touches no files other than a temporary
+directory it creates and removes itself).
 """
 
 from __future__ import annotations
@@ -124,27 +151,117 @@ def step_codes() -> dict[str, str]:
     return codes
 
 
+SEPARATOR_RE = re.compile(r"^\|[-| :]+\|$")
+
+
+def table_blocks(body: str) -> list[list[list[str]]]:
+    """Every Markdown pipe table in ``body``, each as a list of row
+    cell-lists (header row included; a separator row such as ``|---|---|``
+    stays inside the table but contributes no cell-list of its own)."""
+    blocks: list[list[list[str]]] = []
+    current: list[list[str]] = []
+    for line in body.splitlines():
+        if line.startswith("| "):
+            current.append(table_cells(line))
+        elif line.startswith("|") and SEPARATOR_RE.match(line.strip()):
+            continue  # a separator row does not end the table
+        elif current:
+            blocks.append(current)
+            current = []
+    if current:
+        blocks.append(current)
+    return blocks
+
+
+def find_key(cells: list[str]) -> str | None:
+    """The tooling key of a materials-index row (W0e, report-B B2).
+
+    The original layout's first cell is exactly the key
+    (`` `hf` ``, ``KEY_CELL_RE``); that is tried first and is the only
+    thing tried for a first cell shaped that way, so an old-style row is
+    read exactly as before. Where the first cell is instead a
+    reader-facing name, a backtick key token embedded in it (say,
+    `` Nitrogen (`n2`) ``) is used; failing that, every other cell of the
+    row is searched the same way, first match wins. Returns ``None`` if
+    no cell carries one.
+    """
+    m = KEY_CELL_RE.match(cells[0])
+    if m:
+        return m.group(1)
+    for cell in cells:
+        found = KEYS_RE.findall(cell)
+        if found:
+            return found[0]
+    return None
+
+
+def read_steps_table(rows: list[list[str]]) -> dict[str, str]:
+    """key -> Steps cell, from a second ``Material | Steps``-shaped table
+    (W0e, report-B B2), used when the main table has no Steps column.
+    The key is found the same way as the main table's (``find_key``); the
+    Steps cell is the row's own last cell. ``rows`` excludes the header."""
+    out: dict[str, str] = {}
+    for cells in rows:
+        if len(cells) < 2:
+            continue
+        key = find_key(cells)
+        if key:
+            out[key] = cells[-1]
+    return out
+
+
 class Index:
     """The main table and the class-page table of ``index.md``."""
 
     def __init__(self, materials: Path) -> None:
         self.problems: list[str] = []
         body = sections((materials / "index.md").read_text(), "##")
-        # key -> (Class cell, Steps cell)
+
+        blocks = table_blocks(body.get(TABLE_H2, ""))
+        if not blocks:
+            self.problems.append(f"no table found under '## {TABLE_H2}'")
+        main_header, main_rows = (blocks[0][0], blocks[0][1:]) if blocks else ([], [])
+        # A Steps column is recognised by its header wording, not its
+        # position, so a reader-facing reordering of the other columns
+        # (report-B B2) does not itself require this check to change.
+        has_steps_column = bool(main_header) and "steps" in main_header[-1].lower()
+        steps_by_key: dict[str, str] = {}
+        if not has_steps_column:
+            if len(blocks) > 1:
+                steps_by_key = read_steps_table(blocks[1][1:])
+            else:
+                self.problems.append(
+                    f"main table under '## {TABLE_H2}' has no Steps column, and "
+                    "there is no second 'Material | Steps' table to read it from"
+                )
+
+        # key -> (Class cell or row text to search for one, Steps cell)
         self.rows: dict[str, tuple[str, str]] = {}
-        for line in body.get(TABLE_H2, "").splitlines():
-            if not line.startswith("| ") or line.startswith("| Key |"):
+        for cells in main_rows:
+            key = find_key(cells)
+            if key is None:
+                self.problems.append(f"main-table row without a key: {cells[0]!r}")
                 continue
-            cells = table_cells(line)
-            m = KEY_CELL_RE.match(cells[0])
-            if len(cells) != 6 or not m:
-                self.problems.append(f"main-table row without a key cell: {cells[0]!r}")
-                continue
-            key = m.group(1)
             if key in self.rows:
                 self.problems.append(f"main-table key {key!r} used twice")
-            self.rows[key] = (cells[2], cells[5])
-            if not (is_all_except(cells[5]) or cells[5].startswith("{ref}`")):
+            if has_steps_column:
+                if len(cells) != len(main_header):
+                    self.problems.append(
+                        f"main-table row {key!r}: {len(cells)} cells, header has "
+                        f"{len(main_header)}"
+                    )
+                    continue
+                class_cell, steps_cell = cells[2], cells[-1]
+            else:
+                class_cell = " | ".join(cells)
+                steps_cell = steps_by_key.get(key)
+                if steps_cell is None:
+                    self.problems.append(
+                        f"main-table row {key!r}: no Steps entry in the second table"
+                    )
+                    continue
+            self.rows[key] = (class_cell, steps_cell)
+            if not (is_all_except(steps_cell) or steps_cell.startswith("{ref}`")):
                 self.problems.append(
                     f"main-table row {key!r}: Steps cell starts with neither "
                     "'all except' nor a step link"
@@ -319,7 +436,115 @@ def check(page: Path, index: Index, codes: dict[str, str]) -> list[str]:
     return problems + check_summary(text, len(STEP_RE.findall(paragraph)))
 
 
+OLD_INDEX = """\
+(materials-table)=
+## Materials index
+
+| Key | Material | Class | Role in SKY130 steps | Public SkyWater evidence | Steps whose Resources section names it |
+|---|---|---|---|---|---|
+| `n2` | Nitrogen (N2) | {ref}`Bulk gas <material-widgets>` | Purge gas. | typical | {ref}`SMAT <step-001>` |
+
+(how-to-read-the-index)=
+## How to read the index
+
+| Consumable class | Page | Rows owned (keys) |
+|---|---|---|
+| Widgets | {ref}`widgets <material-widgets>` | `n2` |
+"""
+
+NEW_INDEX = """\
+(materials-table)=
+## Materials index
+
+| Material | Class | Role | Public SkyWater evidence |
+|---|---|---|---|
+| Nitrogen (`n2`) | {ref}`Bulk gas <material-widgets>` | Purge gas. | typical |
+
+| Material | Steps |
+|---|---|
+| Nitrogen (`n2`) | {ref}`SMAT <step-001>` |
+
+(how-to-read-the-index)=
+## How to read the index
+
+| Consumable class | Page | Rows owned (keys) |
+|---|---|---|
+| Widgets | {ref}`widgets <material-widgets>` | `n2` |
+"""
+
+
+def _write_index_fixture(tmp: Path, name: str, text: str) -> Path:
+    materials = tmp / name / "materials"
+    materials.mkdir(parents=True)
+    (materials / "index.md").write_text(text)
+    (materials / "widgets.md").write_text("(material-widgets)=\n# Widgets\n")
+    return materials
+
+
+def selftest() -> int:
+    """Offline unit tests for ``Index``'s two main-table shapes (W0e,
+    report-B B2). Touches only a temporary directory it creates and
+    removes itself."""
+    import tempfile
+
+    problems: list[str] = []
+
+    with tempfile.TemporaryDirectory() as tmp_str:
+        tmp = Path(tmp_str)
+
+        old_dir = _write_index_fixture(tmp, "old", OLD_INDEX)
+        old = Index(old_dir)
+        if old.problems:
+            problems.append(f"old-layout fixture reported problems: {old.problems}")
+        if old.rows.get("n2") != ("{ref}`Bulk gas <material-widgets>`", "{ref}`SMAT <step-001>`"):
+            problems.append(f"old-layout row for 'n2': {old.rows.get('n2')!r}")
+        if old.owner.get("n2") != "widgets":
+            problems.append(f"old-layout owner for 'n2': {old.owner.get('n2')!r}")
+
+        new_dir = _write_index_fixture(tmp, "new", NEW_INDEX)
+        new = Index(new_dir)
+        if new.problems:
+            problems.append(f"new-layout fixture reported problems: {new.problems}")
+        if "n2" not in new.rows:
+            problems.append(f"new-layout: key 'n2' not found in rows {new.rows!r}")
+        else:
+            cls, steps = new.rows["n2"]
+            if steps != "{ref}`SMAT <step-001>`":
+                problems.append(f"new-layout Steps cell for 'n2': {steps!r}")
+            if "<material-widgets>" not in cls:
+                problems.append(f"new-layout Class text for 'n2' has no material link: {cls!r}")
+        if new.owner.get("n2") != "widgets":
+            problems.append(f"new-layout owner for 'n2': {new.owner.get('n2')!r}")
+
+        # A main table with no Steps column and no second table is a
+        # reported problem, not a silent miss.
+        no_second = OLD_INDEX.replace(
+            "| Key | Material | Class | Role in SKY130 steps | Public SkyWater evidence | "
+            "Steps whose Resources section names it |\n|---|---|---|---|---|---|\n"
+            "| `n2` | Nitrogen (N2) | {ref}`Bulk gas <material-widgets>` | Purge gas. | "
+            "typical | {ref}`SMAT <step-001>` |",
+            "| Material | Class | Role | Public SkyWater evidence |\n|---|---|---|---|\n"
+            "| Nitrogen (`n2`) | {ref}`Bulk gas <material-widgets>` | Purge gas. | typical |",
+        )
+        missing_dir = _write_index_fixture(tmp, "missing", no_second)
+        missing = Index(missing_dir)
+        if not any("no second" in p or "no Steps entry" in p for p in missing.problems):
+            problems.append(
+                f"a missing-Steps-table fixture was not reported: {missing.problems}"
+            )
+
+    if problems:
+        for p in problems:
+            print("SELFTEST FAIL:", p)
+        print(f"{len(problems)} selftest problem(s)")
+        return 1
+    print("selftest OK")
+    return 0
+
+
 def main() -> int:
+    if "--selftest" in sys.argv[1:]:
+        return selftest()
     materials = Path(sys.argv[1]) if len(sys.argv) > 1 else MATERIALS
     index = Index(materials)
     codes = step_codes()
