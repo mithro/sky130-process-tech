@@ -699,6 +699,10 @@ After:
 2. A bullet over 60 words stays in `## Open questions`. Split it per R-PARA step 4: a lead of
    ≤ 30 words keeping the question and its hedge, then its figures as sub-bullets or an indented
    table, **inside the bullet**. Never move it to another H2, and never rewrite it as a summary.
+   If the bullet's question is its last sentence and moving it would need rewording, keep the order:
+   label, the evidence lead-in with its marker, the figures as sub-bullets, then the question as the
+   continuation, word for word. If the question is a self-contained sentence (069 "A 5 V PMOS
+   p-tip"), move it to the lead with its hedge.
 3. In-force notes stay last in the section, in place.
 
 **Example** — `docs/steps/002-box.md:250`.
