@@ -45,6 +45,7 @@ check list of `agent-briefs.md`, one worktree and branch each, and a progress fi
 | `topic/rd-checkers` | W0e checker changes + `tools/gen_step_tables.py` (B1) | Sonnet | running since 2026-09-25 |
 | `topic/rd-site` | W4: landing page cards, references index table, glossary by letter, first-use `{term}` links, inventory anchors | Sonnet | running since 2026-09-25 |
 | `topic/rd-figures-s2` | W1c series S2 wells (steps 014–034) | Opus | running since 2026-09-25 |
+| `topic/cypress-history` (another session, `sky130-process-tech-54`) | History of the Cypress process technologies before S8: new pages under `docs/overview/`, inventory entries, toctree | — | running since 2026-09-25; that session merges only when told; coordinate on `docs/index.md`, `docs/references/index.md`, `docs/references/public-sources.md` with `topic/rd-site` |
 
 Order after these: apply the pilot review's guide corrections, merge the pilot, then W2 batches module by
 module, each module's figures landing before its readability batch. Quota week now runs 2026-09-24 → 2026-10-01
