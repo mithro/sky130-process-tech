@@ -8,5 +8,4 @@ Infineon's public asset URLs.
 
 What the reports state about how the codes relate (derivatives, transfers, suffixes) is summarised on
 `docs/history/naming.md`, and the inconsistencies between reports are in each record's `notes`. Reports
-whose pages are archived but whose PDFs are not were left out. A third pass added more reports to
-`qtp.yaml`; about 80 archived reports remain unfetched.
+whose pages are archived but whose PDFs are not were left out. Round 3 is in `progress-cyhist-qtp3.md`, and the rest in `progress-cyhist-qtp4.md`.
