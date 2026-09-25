@@ -1701,11 +1701,11 @@ documents:
   notes: 'The document cover reads "Product Qualification Plan" rather than "Product Qualification
     Report" (compare qtp-113005, S8TNV-5R, which shows the same "Plan" cover for similarly transfer-style
     content); its history table is headed "PACKAGE Qualification History" rather than the usual
-    "Product/Technology Qualification History". Earliest dated reference to L28 in this corpus: QTP 99285,
-    May 2003, "To qualify L28-TSMC Technology in TMSC-2A" (the source prints "TMSC-2A", transposing two
-    letters of "TSMC-2A") -- explicitly a technology transfer/foundry qualification (Cypress CTI Fab 2 to
-    TSMC-2A) rather than a from-scratch new-technology qualification; no earlier "New Technology L28" row
-    for a Cypress-fab-only predecessor was found in this corpus.'
+    "Product/Technology Qualification History". This report frames L28 as arriving at TSMC-2A by transfer
+    ("To qualify L28-TSMC Technology in TMSC-2A", the source prints "TMSC-2A", transposing two letters of
+    "TSMC-2A") rather than from scratch, and qtp-011503 (found in a later search pass) independently dates
+    a true "New Technology L28" origin at Cypress''s own Fab 2, Round Rock, TX, to QTP 97403, Apr 98 --
+    five years before the TSMC-2A transfer qualification (QTP 99285, May 2003) recorded here.'
 - id: qtp-110605
   doc_type: QTP
   number: '110605'
@@ -2268,3 +2268,155 @@ documents:
     thin next to qtp-021507''s "110Å" for the same Die Fab Line ID -- most likely a truncated print of
     "110A" (dropped leading digits) rather than a real value, but printed here exactly as it appears in
     the source.'
+- id: qtp-051005
+  doc_type: QTP
+  number: '051005'
+  cypress_document_number: null
+  title: Automotive PSoC Mixed Signal Array Family, S4AD-5CTI Technology, Fab 2
+  version: '2.0'
+  date_printed: March 2007
+  url: https://www.cypress.com/file/92671/download
+  archive_url: https://web.archive.org/web/20211130190834/https://www.cypress.com/file/92671/download
+  retrieved: '2026-09-25'
+  sha256: 307d3f307a08812f639a121b7455e6647e216a0cb99be3e7e4bfab37c75206d1
+  technology_codes:
+  - S4AD-5CTI
+  - S4D-5CTI
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY8C21334
+  - CY8C21534
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/6000A Al 0.5% Cu /1200A TiW; Metal 2: 500A Ti/8000A Al 0.5% Cu/300A
+      TiW'
+    passivation: 3,000A TeOs / 6000A Si3N4
+    design_rule: Single Poly, Double Metal, 0.35 um
+    gate_oxide: SiO2 / 110A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5CTI SONOS
+  qualification_history:
+  - number: '042702'
+    description: Automotive PSoC 8C27243/443/643 Rev B Device Product Family on S4AD-5CTI Technology,
+      Fab2
+    date: Nov 04
+  - number: '042809'
+    description: Automotive PSoC 8C24xxx Rev B Device Product Family on S4AD-5CTI Technology, Fab2
+    date: Nov 04
+  - number: '051005'
+    description: PSoC 8C21xxx, Pb-Free Automotive Device Qual using 28 SSOP with 100% SnFinish
+    date: Aug 05
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION                                S4AD-5CTI
+    location: p.3, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2, S4AD-5CTI SONOS'
+    location: p.3, Technology/Fab Process Description
+  - text: Single Poly, Double Metal, 0.35 um
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  - text: Qualify CY8C21x34 Product Family in S4D-5CTI Technology in Fab 2 for Automotive Application
+    location: p.3, Qualification Purpose
+  notes: 'No "New Technology" row is printed for S4AD-5CTI in this table -- all three history rows are
+    derivative product qualifications, so its own origin date cannot be fixed from this document alone.
+    The Die Fab Line ID explicitly appends "SONOS" ("Fab2, S4AD-5CTI SONOS"), confirming the S4-family
+    codes as SONOS (charge-trapping non-volatile) technology, consistent with S8''s later "S8 SONOS
+    technology" naming (qtp-113005). The Qualification Purpose sentence misprints the code as "S4D-5CTI"
+    (dropping the "A"). Design rule 0.35 µm and gate oxide 110 Å here match qtp-042806 (S4ADLatch/S4AD-5,
+    same Fab 2) exactly, and add a third independent Fab 2 report giving 0.35 µm where only qtp-021507
+    (S4AD-5, also Fab 2) gives 0.5 µm -- see qtp-042806''s notes for the fuller comparison.'
+- id: qtp-011503
+  doc_type: QTP
+  number: '011503'
+  cypress_document_number: null
+  title: Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2
+  version: '1.0'
+  date_printed: December 2005
+  url: https://www.cypress.com/file/91641/download
+  archive_url: https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download
+  retrieved: '2026-09-25'
+  sha256: 3b47f53a7496945f3fabb3ecd7e58e0111403763ae357225e495a3d9511c16f5
+  technology_codes:
+  - L28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY28158
+  die_ids:
+  - 7C81500A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/1,200A TiW/6,000A Al/1,200A TiW; Metal 2: 1,500A TiW/10,000A
+      Al/150A Ti'
+    passivation: 3,000A TEOS + 15,000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/L28
+  qualification_history:
+  - number: '97403'
+    description: New Technology L28/New Device CY227*
+    date: Apr 98
+  - number: '011503'
+    description: New Device CY28158PVC, L28 Technology
+    date: Apr 01
+  quotes:
+  - text: New Technology L28/New Device CY227*
+    location: p.2, Product Qualification History, row 97403
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - L28
+    location: p.3, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28'
+    location: p.3, Technology/Fab Process Description
+  notes: 'Earliest dated reference to L28 found anywhere in this corpus: QTP 97403, Apr 98, "New Technology
+    L28/New Device CY227*", at Cypress''s own Fab 2 (Round Rock, TX) -- five years before qtp-080608''s
+    TSMC-2A transfer qualification (QTP 99285, May 2003). L28 thus originated as a Cypress-fab technology
+    and was later transferred to the TSMC-2A foundry, contrary to this corpus''s earlier working assumption
+    (see qtp-080608''s notes, now corrected). Confirmed by qtp-098333 (same Fab2/L28 process figures,
+    QTP 98333, Aug 2003, CY2287PVC). Both this Fab 2 version of L28 and the TSMC-2A version share the same
+    0.65 µm design rule, but their metal compositions, passivation and gate-oxide thickness all differ
+    (Fab 2: Metal1 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW, 3,000Å TEOS + 15,000Å Si2N4, 145 Å gate oxide;
+    TSMC-2A per qtp-080608/qtp-110605: Metal1 400Å Ti/1,000Å TiN/4,700Å AlSiCu/375Å TiN, 3,000Å SiN/3,150Å
+    SOG/1,200Å SiN, 125 Å gate oxide) -- the same technology name and design rule cover two measurably
+    different process recipes at the two sites.'
+- id: qtp-098333
+  doc_type: QTP
+  number: '98333'
+  cypress_document_number: null
+  title: 100-MHz Spread Spectrum Clock Synthesizer/Driver, USB, Hublink and SDRAM Support (CY2287PVC),
+    Fab2, L28 Technology
+  version: '2.0'
+  date_printed: August 2003
+  url: https://www.cypress.com/file/94086/download
+  archive_url: https://web.archive.org/web/20201205131229/https://www.cypress.com/file/94086/download
+  retrieved: '2026-09-25'
+  sha256: 17d9b2c72d79615fcf36c4b6118186d0b3457a121944aaf3a0e4be1206643795
+  technology_codes:
+  - L28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY2287PVC
+  die_ids:
+  - 7C81200A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500A Ti/1,200A TiW/6,000A Al/1,200A TiW; Metal 2: 1,500A TiW/10,000A
+      Al/150A Ti'
+    passivation: 3,000A TEOS + 15,000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Single Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 145 A
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/L28
+  qualification_history: []
+  quotes:
+  - text: 'Device: CY2287 (7C82871A), Fab2, L28 Technology'
+    location: p.2, page header
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - L28
+    location: p.3, section heading
+  - text: To qualify Fab2 to fabricate 7C81200A Clock Motherboard family, commercial products in L28
+      Technology.
+    location: p.3, Qualification Purpose
+  notes: 'No Product/Technology Qualification History table is printed in this report (early-style, like
+    qtp-096091/qtp-096182/qtp-096411); its qualification purpose describes qualifying Fab 2 itself to
+    fabricate a device family in L28 Technology. Confirms qtp-011503''s Fab2/L28 process-description
+    figures verbatim (0.65 µm, 2 metal layers, 145 Å gate oxide, identical metal composition and
+    passivation).'
