@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/beol-132-wdep4.svg
+:alt: Two enlarged cross-sections of a lined hole going down through a flat pale oxide to a metal line. Before the step a thin purple liner covers the oxide and the walls and floor of the hole. After it a thick grey cross-hatched tungsten film covers the liner everywhere and fills the hole completely, with a dip in its top surface over the hole.
+:width: 560px
+:name: fig-beol-132-wdep4
+
+A close-up of the via 2; the lower part of the slice is cut off, and the drawing starts inside the aluminium of the metal-2 line under it. Before, the lined via-2 hole; after, the tungsten grown over the whole wafer, closing the hole from its walls inward and continuous above it. Its thickness is not public; the page gives a film of the order of 0.25–0.35 µm as the industry norm for a via of this size,[^txt-05] thicker than at via 1, and the drawn film is not to scale, nor is the dip over the hole; the liner is drawn far thicker in proportion to the hole than it is. The hole is drawn about 1.4 times as deep as it is wide; on the page it is 0.20 µm wide and 0.42 µm deep,[^pdk-periph][^pdk-04] about 2.1:1. The oxides, the metal-2 line and, in the lower panel, the liner are drawn but not labelled. Not to scale.
+:::

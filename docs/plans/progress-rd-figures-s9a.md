@@ -58,6 +58,16 @@ one figure per step for 118–134.
 * **130 VIM2E** (close-up [0, 64], 4.2×, starting inside the metal-2 aluminium): 20 u × 28 u
   hole, drawn 1.4:1 against the page's 2.1:1 (caption). The first crop made the figure 805 u
   tall; the drawing now starts 5 u under the cap (793 u).
+* **131 TIN4**, **132 WDEP4**, **133 WCMP4** (same close-up as 130): as 120–122; the liner is
+  half the width of the 20 u hole (declared); 132 quotes the page's "of the order of
+  0.25–0.35 µm" with its industry-typical hedge; 133 labels the plug from above.
+* **134 WTIAL3** (full slice, cut): the metal-3 stack, 42 u against metal 2's 28 u (caption:
+  thicker, not in the PDK's 0.845 : 0.36 proportion; the 2 µm option not drawn). Its bottom
+  and cap notes come from the 134 page ("Ti or TiW", "TiW or TiN") through the template
+  parameters. The via-2 plug is not labelled (its riser in a 10 u tungsten core ran within
+  5 u of the walls; a right route ran 219 u inside NILD4).
+
+All 17 pages: check_preserved ADDED only (136 lines added, 0 deleted).
 
 ## Left
 

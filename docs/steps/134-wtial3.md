@@ -27,6 +27,14 @@ it, so that the `capm` plate — "MiM capacitor plate over
 metal 3"[^pdk-06] — sits on this stack's cap and the patterned
 metal 3 becomes the capacitor's bottom electrode.
 
+:::{figure} /_static/figures/beol-134-wtial3.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step two levels of metal lines lie buried in a flat pale oxide, with a small tungsten plug reaching the top over the left-hand upper line. After it three blanket films cover the whole top: a thin purple film, a thick silver film, thicker than the lines below, and another thin purple film.
+:width: 560px
+:name: fig-beol-134-wtial3
+
+Before, the flush via-2 plug in the dielectric over the metal-2 lines; after, the metal-3 stack over the whole wafer: a thin bottom film, a thicker aluminium–copper alloy and a thin cap. It stays a blanket through the MiM capacitor steps that follow and is patterned at MM3 and MM3E (steps 139 and 140). Which refractory films the bottom and the cap are is not public: the page describes the bottom as Ti or TiW and the cap as TiW or TiN, both inferences, and the overview of the metal cap sets out the evidence; the figure does not choose, and draws both in the colour the figure conventions use for every Ti, TiN and TiW film. The 2013 Cypress report gives "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW"[^cyp-qtp-113005] and the 2014 one, for another technology, "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW";[^cyp-qtp-123907] in both, metal 3 is the top level, and applying them here is the page's inference. The PDK's stack diagram gives metal 3 as 0.845 µm against 0.36 µm for metal 2;[^pdk-04] metal 3 is drawn half as thick again as metal 2, thicker but not in that proportion, and the 2 µm thick-metal option[^pdk-03] is not drawn. The lower part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1. The metal-2 and metal-1 lines, the plugs and their liners and the oxides are drawn but not labelled, except the cap oxide in the upper panel. Not to scale.
+:::
+
 The public description of the stack is again the Cypress
 qualification reports, and here they show two versions. The 2013
 report for a 64 K nvSRAM family on "S8TNV-5R" technology gives
