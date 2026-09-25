@@ -528,3 +528,39 @@ The sibling of nsdm; the same treatment throughout.
   clause is part of the step page's reading and has no subject of its own); three quick-facts cells.
   Before → after: paragraphs 11 → 0, items 0 → 0, sentences 15 → 2, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 12. rrpm — done
+
+* **Rules applied.** R-INTRO (197 → 49 words); R-CAPTION (rule table); R-PARA, R-SENTENCE; R-LIST (the
+  PDK tables that name no such mask; the three test-tile structures); R-RELATED; R-H3 (Exposure class,
+  Resist and tone, Pattern transfer, Overlay with `RPM`).
+* **No move needed.** The run-in "**Overlay with `RPM`.**" is not one of the checker's synonyms, so it
+  keeps its own words (as cap2m's "Overlay and charging" did) and stays last; the canonical H3s present
+  are already in order.
+* **R-PARAMS not applied:** the design-rules paragraph gives the `RPM` pair only as the step page's
+  borrowed geometry and three Table 4 values; the page names no parameter of this mask.
+* **Template sentence with an extra clause:** as on pwbm, "and reports the gaps without drawing
+  conclusions from them" kept as "This page reports the gaps without drawing conclusions from them."
+* **Intro.** Kept the first sentence up to its colon and the reading up to "… that RPM protected."
+  Moved with the hedge repeated ("On the RRPM page's reading, the p-type resistor implant PRI goes …");
+  "The PDK's mask table does not list it and …; the process-steps sheet …; and the public mask-layer
+  renders …" → two sentences, "it" → "`RRPM`" where the split separated it from its antecedent.
+* **Test-tile list.** "it marks three — A, B, and C — "(will not work for any routes using RRPM mask)""
+  → "it marks three "(will not work …)":" followed by the three structures as bullets; the quotation
+  and the marker are unchanged, and the dash pair became the list.
+* **Declared additions** (`--allow-added markers,numbers,refs`): markers `pdk-06` (the `gds_layers.csv`
+  item of the "no such mask" list; the base's `pdk-06` after the Table F2b clause covered it, both being
+  the *Layers Reference* source), `raw-data-passives` ("It notes that the files do not say which route
+  …", split from the extraction sentence; `pdk-07` stays with the e-test table), `steps-sheet` (the
+  "Run Mask IDs" sentence split at its semicolon; `pdk-05` stays with the `masks.csv` clause); number
+  `3` (rpm.3 in the rule-table caption); refs `step-052` (hedge repeated).
+* **Marker coverage.** Flags read: every flagged sentence had no marker of its own in the base (its
+  marker belonged to the clause before the semicolon), or keeps the marker of its clause.
+* **Kept whole.** "The RRPM page infers that `RPM` and `RRPM` both align … : a gap … and an overlap …"
+  (54): the colon's clauses are the page's inference, and a split would need the inference repeated in
+  new words.
+* **Over the caps after the pass:** that sentence; "Both precision flavours are p-type films — … —"
+  (47 by the script, mostly quotations); the Error Messages `urpm` sentence (54, three quotations);
+  "On the step page's reading the `RRPM` data would come …" (46, eight counts); three quick-facts cells.
+  Before → after: paragraphs 9 → 0, items 1 → 0, sentences 14 → 4, cells 3 → 3.
+* **Content problems for the owner:** none found.
