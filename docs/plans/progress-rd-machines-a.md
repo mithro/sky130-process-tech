@@ -150,6 +150,75 @@ filling the screen.
 
 Content problems for the owner: none found while re-presenting this page.
 
+### 2. `docs/machines/cmp-polisher.md` — done
+
+Rules applied: R-INTRO (intro cut to its one 58-word "what it is" sentence, split at the colon
+per R-SENTENCE since the sentence alone was still 58 words; the "Typical 200 mm tools ..."
+sentence moved to introduce `## Representative 200 mm-era models`, where it fits as a shared
+capability statement rather than a page intro; pointer sentence moved to `{seealso}`; template
+sentence deleted). R-MODELS (9-row table; the Applied Materials "500th Mirra"/Chip History
+Center historical claims and the Applied/article date discrepancy — none of them a model
+spec — kept as prose after the table per rule 4; Ebara kept entirely as prose, since the page's
+own words are "No 200 mm-era Ebara description was retrieved for this page", the guide's own
+example of what stays out of the table; dropped the `Type` column after drafting it, because 8
+of 9 rows read "CMP polisher" — a column whose value repeats belongs in the caption, not a
+column (R-TABLE step 10) — and its removal was also what fixed a real phone-width overflow, see
+below). R-ENTRIES (the Mirra "read term by term" gloss → 6-row table, grouping the entries the
+gloss itself groups — "oxide"/"tungsten" together, "niobium"/"aluminum"/"copper" together —
+since forcing every one of the 7 dashed materials into its own row would have invented a
+per-material reading the prose does not give). R-QUICKFACTS (8 dense rows; every one keeps 2
+quotations rather than 1, see the batch method note 3 — each pair is two distinct, unique
+quotations from the same source, and this page's quotations were too substantial to relocate
+without a further round of paragraph-cap fixes elsewhere). R-PARA (5 long H3 paragraphs split,
+each at a source/topic seam, labelled where the split serves an evidence sequence). R-SENTENCE
+(about a dozen sentences over 45 words split; two list items over 60 words fixed with an
+indented continuation paragraph per R-PARA step 4; one "announces a count" list item —
+"Three kinds of polish on one tool type" — converted to 3 labelled sub-bullets under R-LIST,
+since it names three film types each with its own step links). R-RELATED (9 sentence-bullets →
+4 grouped bullets). R-CAPTION (both new tables captioned with `:widths:`).
+
+**Phone-width fix.** The first draft of the Representative-models table (5 columns: Vendor,
+Model, Year, Type, Published figures — the same shape as page 1's table) overflowed
+horizontally at 400 px: `tools/shoot.py --width 400` showed the `Published figures` column cut
+off mid-word on two tiles. Page 1's same-shaped table did not overflow; the difference here is
+longer vendor/model strings ("SpeedFam-IPEC", "Applied Materials", "AvantGaard 676") competing
+for width against a 5th column that added little information (`Type` was "CMP polisher" on 8 of
+9 rows). Dropped `Type`, moved its two real exceptions ("linear", "the 6EC is a lab tool") into
+the model name and the caption ("all rotary unless noted"), rebalanced `:widths:` across the
+remaining 4 columns, and re-shot at 400 px to confirm the fix (no cut-off, every cell wraps).
+
+Over-cap counts (before → after): paragraphs > 100 words: 6 → 0; sentences > 45 words: ~14 → 0
+(all fixed; no leftover long sentence on this page, unlike page 1); list items > 60 words
+outside References: 3 → 0 (2 fixed with a continuation paragraph, 1 converted to sub-bullets);
+quick-facts cells > 20 words: 6 of 8 → 0 words *not* achieved — all 6 are still > 20 words with
+2 quotations each (method note 3: moving either quotation risked reopening a paragraph-cap or
+number-order problem elsewhere; the words themselves were trimmed of connectives only, every
+number and quotation kept in place); tables with no caption: 2 new → 0.
+
+`check_preserved.py --base c7201e44 --allow-regrouped --allow-added
+quotes,markers,numbers,number_order,hedges`: clean except `LOST hedges: about` (method note 4,
+the same sanctioned R-INTRO template-sentence deletion) and two `LOST number_order` tuples that
+`--allow-regrouped` could not downgrade: `('472','676','4','2001','0.18','0.13')` (the
+IPEC-Planar/SpeedFam-IPEC bullet, now table rows) and `('6','2','6')` (the Strasbaugh bullet).
+Both hand-checked: in each case the source prose names two models back-to-back with no year
+between them ("the AVANTI 472, ...; the AvantGaard 676, ..."; "The 6DS-SP ...; the 6EC, ..."),
+but the table's fixed `Vendor | Model | Year | ...` column order inserts that row's own `Year`
+between one row's `Model` number and the next row's `Model` number — the same digits, in the
+same rows, just with the table's own Year cell now sitting between two numbers that used to sit
+next to each other in prose. Not a transposition (verified: every digit is the same, in the same
+model-to-model order, just with a Year interposed); recorded as expanding method note 1's
+category of understood, unavoidable side effects of the R-MODELS table shape, not a content
+loss. Declared additions: `markers` (R-MODELS/R-PARA repeating a marker across the row/sentence
+it was split into), `numbers`/`number_order` (table conversion, hand-checked per above and per
+method note 1), `quotes` (the R-ENTRIES table restates the blockquote's own words), `hedges`
+("our reading" ×4 in the R-ENTRIES Status column).
+
+Checkers: `check_machines.py`, `check_refs.py`, `check_inforce.py`, `gen_index_links.py --check`,
+`gen_step_tables.py --check` all clean. `sphinx-build -W` clean. Screenshots: desktop tiles 1, 3,
+4 and phone tiles 4, 5 (both before and after the `Type`-column fix) read.
+
+Content problems for the owner: none found while re-presenting this page.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
@@ -164,5 +233,14 @@ Content problems for the owner: none found while re-presenting this page.
    generator). Left alone per method note 5; flagging so the skeleton and the generator are
    reconciled (either the generator grows this table, or the skeleton line is removed/reworded
    as a still-open, blocked item).
+3. **The §1 column-budget table's "≤ 5 columns" note for a `Vendor | Model | Year | Type |
+   Published figures` table (R-MODELS's own worked example shape) is not reliably safe at
+   400 px** once vendor/model names are long (`cmp-polisher.md`'s first draft overflowed;
+   `cd-sem-overlay-metrology.md`'s did not, with shorter names). The real test the guide gives
+   ("must pass the phone test: no horizontal scroll at 400 px") is the right one; the column
+   count is not a substitute for actually shooting the page at 400 px, which I did for every
+   R-MODELS table in this batch from page 2 onward after finding this. Recommend the guide say
+   so explicitly next to the R-MODELS worked example, since a 5-column table reads as "the
+   template" otherwise.
 
-(to be continued — pages 2–15)
+(to be continued — pages 3–15)

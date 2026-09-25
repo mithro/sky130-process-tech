@@ -2,30 +2,27 @@
 # CMP polisher
 
 A {term}`CMP` polisher is the machine a fab uses to make a wafer flat
-again after a deposition: it presses the wafer face down onto a
+again after a deposition. It presses the wafer face down onto a
 rotating or moving polishing pad wetted with slurry, removes the high
 points of the film faster than the low ones, and stops at a target
-thickness or on a harder layer underneath. Typical 200 mm tools of the
-130 nm era carried each wafer across more than one platen, detected the
-endpoint in situ and, increasingly, cleaned the wafer on board so that it
-entered and left dry (see the models below).
-This page describes the class in general, lists representative
-200 mm-era models, and then says what SkyWater has published about its
-own tool of this class and which SKY130 steps this reference assigns to
-it. The polishing physics, slurries and the kinds of polish in the flow
-are on the {ref}`category page <category-cmp>`; the clean after each
-polish is on the {ref}`post-CMP cleaner page <machine-post-cmp-cleaner>`.
+thickness or on a harder layer underneath.
 
 | | CMP polisher |
 |---|---|
-| What it does | Planarises films by polishing: "The carrier provides a controllable load, i.e., pressure, on the substrate to press it against the polishing pad", while "A polishing slurry, including an abrasive and at least one chemically-reactive agent" is spread over the pad.[^pat-carrier-amat] |
-| Removal rate | "The polishing rate depends upon the force pressing the substrate against the pad";[^pat-carrier-amat] rate proportional to pressure and velocity in Preston's law, with a "nonlinear down pressure dependence" in Luo and Dornfeld's model.[^preston-1927][^luo-2001] |
-| Architecture | Rotary multi-platen: "Multiple wafer heads, at least one greater in number than the number of polishing stations", suspended from a carousel;[^pat-cmp-mirra] linear: "a moving belt is used to linearly move the pad across the wafer surface".[^pat-linear-lam] |
-| Pad | "porous polymeric materials with a pore size between 30 and 50 μm", which "must be regularly reconditioned";[^wiki-cmp] each station of Applied's carousel patent has "a pad conditioner to recondition the polishing pad so that it retains a high polishing rate".[^pat-cmp-mirra] |
+| What it does | "The carrier provides a controllable load, i.e., pressure, on the substrate to press it against the polishing pad", while "A polishing slurry, including an abrasive and at least one chemically-reactive agent" is spread over the pad.[^pat-carrier-amat] |
+| Removal rate | "The polishing rate depends upon the force pressing the substrate against the pad";[^pat-carrier-amat] a "nonlinear down pressure dependence" in Luo and Dornfeld's model.[^preston-1927][^luo-2001] |
+| Architecture | Rotary multi-platen: "Multiple wafer heads, at least one greater in number than the number of polishing stations", on a carousel;[^pat-cmp-mirra] linear: "a moving belt is used to linearly move the pad across the wafer surface".[^pat-linear-lam] |
+| Pad | "porous polymeric materials with a pore size between 30 and 50 μm", "must be regularly reconditioned";[^wiki-cmp] a carousel station has "a pad conditioner to recondition the polishing pad so that it retains a high polishing rate".[^pat-cmp-mirra] |
 | Endpoint | Reflectance through "a window embedded within the polishing table";[^pat-cmp-endpoint-ibm] a "substantially transparent polyurethane plug" in the pad.[^pat-cmp-window] |
-| 200 mm era | Applied Materials Mirra, announced December 1995, "three-station, four polishing head design";[^amat-1997] IPEC-Planar AVANTI 472, "single wafer, two-step polishing for wafers up to 200mm";[^ipec-472-1997] Strasbaugh 6DS-SP;[^strasbaugh-6ds-1999] Lam Teres.[^pat-linear-lam] |
+| 200 mm era | Mirra (1995), "three-station, four polishing head design";[^amat-1997] AVANTI 472, "single wafer, two-step polishing for wafers up to 200mm";[^ipec-472-1997] Strasbaugh 6DS-SP;[^strasbaugh-6ds-1999] Lam Teres.[^pat-linear-lam] |
 | SkyWater-listed tool | "AMAT Mirra CMP": "oxide", "nitride", "niobium", "aluminum", "tungsten", "high selectivity tungsten", "copper"; "On board metrology with feed forward and backward"[^skw-01] |
 | SKY130 steps | 12 steps; see {ref}`SKY130 steps assigned to this class <machine-cmp-polisher-steps>` |
+
+:::{seealso}
+The polishing physics, slurries and the kinds of polish in the flow
+are on the {ref}`category page <category-cmp>`; the clean after each
+polish is on the {ref}`post-CMP cleaner page <machine-post-cmp-cleaner>`.
+:::
 
 ## What the machine class is and how it works
 
@@ -33,15 +30,12 @@ A CMP polisher has a few basic elements. Wikipedia's description of
 typical tools is of
 "rotating an extremely flat plate which is covered by a pad", with the
 wafer "mounted upside-down in a carrier/spindle on a backing film" and
-"The retaining ring" keeping it "in the correct horizontal position"; a
-slurry supply "deposits the slurry on the pad", plate and carrier
+"The retaining ring" keeping it "in the correct horizontal position".[^wiki-cmp]
+A slurry supply "deposits the slurry on the pad", plate and carrier
 rotate, the carrier oscillates, and "A downward pressure/down force is
-applied to the carrier".[^wiki-cmp] An Applied Materials patent states
-the design goal: the rate, finish and flatness "are determined by the
-pad and slurry combination, the relative speed between the substrate
-and pad, and the force pressing the substrate against the pad", and the
-machine "should have a carrier head which applies a substantially
-uniform load across the substrate".[^pat-carrier-amat] What makes a
+applied to the carrier".[^wiki-cmp]
+
+What makes a
 machine a production polisher is how well it holds those conditions
 from wafer to wafer — pad condition, slurry delivery, carrier pressure
 profile — and how it knows when to stop.
@@ -54,14 +48,18 @@ polishes depart from it. Luo and Dornfeld modelled removal as the number
 of active abrasives times the volume each removes, and found that "the
 nonlinear down pressure dependence of material removal rate is related
 to a probability density function of the abrasive size and the elastic
-deformation of the pad".[^luo-2001] Runnels and Eyman showed "that
+deformation of the pad".[^luo-2001]
+
+**Hydroplaning and tungsten kinetics.** Runnels and Eyman showed "that
 hydroplaning is possible for standard CMP processes", with wafer
 curvature, slurry viscosity and rotation speed setting the fluid-film
 thickness.[^runnels-1994] For tungsten, Stein et al. found that "the
 polish rate data fit a multiterm regression model better than the
 empirical Preston equation", and that the process temperature rose with
 alumina concentration mostly because of "increased shaft
-work".[^stein-1999] Nanz and Camilletti's review concluded that "as yet
+work".[^stein-1999]
+
+Nanz and Camilletti's review concluded that "as yet
 no model describes the entire available process".[^nanz-1995] The
 chemistry of oxide and tungsten polishing — hydrated oxide surfaces,
 oxidised tungsten — is on the category page.[^rev-02]
@@ -73,10 +71,12 @@ Wikipedia notes that pads "should be rigid in order to uniformly polish
 the wafer surface", that "real pads are often just stacks of soft and
 hard materials that conform to wafer topography to some extent", and
 that because they are consumed "they must be regularly
-reconditioned".[^wiki-cmp] Conditioners are built into the tool: every
+reconditioned".[^wiki-cmp]
+
+**Conditioners built in.** Conditioners are built into the tool: every
 polishing station of Applied's carousel patent, whose three-station,
 four-head layout matches the Mirra (our reading; the patent does not
-name the Mirra), carries one,[^pat-cmp-mirra][^amat-1997] and
+name the Mirra), carries one.[^pat-cmp-mirra][^amat-1997]
 IPEC's AVANTI 472 used an APP1000 conditioner whose "Pad profiling"
 "reduces removal rate variation from wafer to wafer, improves within
 wafer non-uniformity and extends pad life".[^ipec-472-1997] The same
@@ -86,13 +86,23 @@ and low pH slurries (2 - 12)".[^ipec-472-1997]
 
 ### Carrier head and uniformity
 
-The carrier sets the pressure profile across the wafer. The Applied
-patent explains why: "If the carrier head applies a non-uniform load
-… then the high pressure regions will be polished faster than the low
-pressure regions", and its answer is a head with "a flexible membrane"
+**Design goal.** An Applied Materials patent states
+the design goal: the rate, finish and flatness "are determined by the
+pad and slurry combination, the relative speed between the substrate
+and pad, and the force pressing the substrate against the pad".[^pat-carrier-amat]
+The machine "should have a carrier head which applies a substantially
+uniform load across the substrate".[^pat-carrier-amat]
+
+**How the head does it.** The carrier sets the pressure profile across
+the wafer. The Applied patent explains why: "If the carrier head
+applies a non-uniform load … then the high pressure regions will be
+polished faster than the low pressure regions".[^pat-carrier-amat]
+Its answer is a head with "a flexible membrane"
 that "extends beneath the base to define a chamber", held in "a
 retaining ring connected to the base and surrounding the flexible
-membrane".[^pat-carrier-amat] Applied announced a new head for the
+membrane".[^pat-carrier-amat]
+
+**Later heads.** Applied announced a new head for the
 Mirra in June 1997, the "Titan Head", "minimizing effects at the edge of
 the wafer, thus allowing better uniformity and a higher degree of
 planarity".[^amat-1997] Wikipedia adds that on a bowed wafer "the
@@ -107,10 +117,12 @@ The polishers of the period used four arrangements.
 
 * **Rotary, multi-platen carousel.** In the Mirra patent the heads hang
   from a carousel that "provides circumferential positioning of the heads
-  relative to the polishing pads". One head sits over "a transfer and
+  relative to the polishing pads".[^pat-cmp-mirra]
+
+  One head sits over "a transfer and
   washing station" while the others polish, so that loading and washing
-  "can be performed concurrently with wafer polishing", and "The multiple
-  polishing pads can
+  "can be performed concurrently with wafer polishing".[^pat-cmp-mirra]
+  "The multiple polishing pads can
   be used to sequentially polish a wafer held in a wafer head in a step of
   multiple steps".[^pat-cmp-mirra]
 * **Rotary, one or two heads.** The AVANTI 472 polished one wafer at a
@@ -120,7 +132,9 @@ The polishers of the period used four arrangements.
 * **Linear.** A Lam patent describes the linear polisher, in which "a
   moving belt is used to linearly move the pad across the wafer surface.
   The wafer is still rotated for averaging out the local variations, but
-  the global planarity is improved over CMP tools using rotating pads";
+  the global planarity is improved over CMP tools using rotating
+  pads".[^pat-linear-lam]
+
   "An example of a linear polisher is the TERES polisher available from
   Lam Research Corporation", which also uses a fluid platen under the
   belt.[^pat-linear-lam]
@@ -138,10 +152,12 @@ end points requires blind polishing".[^wiki-cmp] Optical endpoint looks
 at the wafer through the rotating table: IBM's patent puts "a window
 embedded within the polishing table", with a reflectance measurement in
 which "a prescribed change in the in-situ reflectance corresponds to a
-prescribed condition of the polishing process";[^pat-cmp-endpoint-ibm]
+prescribed condition of the polishing process".[^pat-cmp-endpoint-ibm]
 Applied's puts "A substantially transparent polyurethane plug" in an
 aperture through the pad.[^pat-cmp-window] Bibby and Holland's
-"Endpoint detection for CMP" (1998) covers the subject.[^bibby-1998] By 2001 tools also
+"Endpoint detection for CMP" (1998) covers the subject.[^bibby-1998]
+
+**Metrology and layout.** By 2001 tools also
 measured film thickness on board: SpeedFam-IPEC's Momentum fed
 integrated-metrology data to "predictive modeling software" that
 changes "the process for subsequent wafer polishes".[^speedfam-ipec-2001]
@@ -156,50 +172,56 @@ scratching in CMP, its dependence on process conditions and consumables,
 and the use of filtration and water jet spraying to reduce
 it.[^kwon-2013] In a tungsten damascene sequence, "μ-scratches" in the
 oxide "are filled with tungsten during the CMP process" and "can short
-the intended patterned circuitry"; Ollendorf, Cabral and Fuller removed
-the metal from them with a plasma clean after the
-polish.[^ollendorf-2004] Slurry must not dry on the wafer: Lam described
+the intended patterned circuitry".[^ollendorf-2004] Ollendorf, Cabral
+and Fuller removed the metal from them with a plasma clean after the
+polish.[^ollendorf-2004]
+
+**Keeping the slurry wet.** Slurry must not dry on the wafer: Lam described
 integrating the cleaner with the polisher as "eliminating the damage
-that can occur if polishing slurry dries on a wafer",[^lam-integra-1999]
-and Applied's Mirra Mesa of 1999 "combines state-of-the-art wafer
+that can occur if polishing slurry dries on a wafer".[^lam-integra-1999]
+Applied's Mirra Mesa of 1999 "combines state-of-the-art wafer
 polishing and cleaning capabilities on a single system" to give
 "dry-in/dry-out CMP processing".[^amat-mesa-1999]
 
 ## Representative 200 mm-era models
 
-* **Applied Materials.** The Mirra, whose entry into CMP Applied dated
-  to December 1995, with "a unique three-station, four polishing head
-  design that permits continuous processing of several wafers
-  simultaneously", and the Titan Head of 1997;[^amat-1997] Applied
-  reported its 500th Mirra in February 2000 and said the Mirra accounted
-  for "the industry's largest installed base of multi-platen CMP
-  tools".[^amat-mirra-500-2000] The Mirra Mesa of 1999 added the Mesa
-  cleaner.[^amat-mesa-1999] A Chip History Center article calls the
-  Mirra "the first CMP system that successfully integrated endpoint
-  detection and integrated cleaning"; Applied's own releases introduce
-  its integrated Mesa cleaner, "specifically developed for the Mirra",
-  with the Mirra Mesa of 1999, and the article's
-  "Announced in 1997" differs from both Applied's December 1995 and the
-  article's own "Relevant Date" of
-  1995-06-30.[^chiphistory-mirra][^amat-1997][^amat-mesa-1999]
-* **IPEC-Planar / SpeedFam-IPEC.** The AVANTI 472, "IPEC-Planar's third
-  generation Chemical Mechanical Planarization (CMP) product", for
-  "both oxide and metal planarization processes";[^ipec-472-1997] the
-  AvantGaard 676, with "Multiple wafer polishing modules (4)" and
-  "Integrated post CMP spray box cleaning";[^ipec-676-1997] and, by 2001,
-  the Auriga family and the Momentum, the latter for "the 0.18 micron and
-  0.13 micron design node requirements".[^speedfam-ipec-2001]
-* **Strasbaugh.** The 6DS-SP dual-spindle production planarizer, with
-  optional "Dual polishing tables for 2-step processes" and "Double-sided,
-  post-CMP scrubber integration";[^strasbaugh-6ds-1999] the 6EC, which
-  Strasbaugh called a "Laboratory Planarizer" for "CMP research and
-  small quantity production of wafers".[^strasbaugh-6ec-1999]
-* **Lam Research.** The Teres linear polisher,[^pat-linear-lam] shipped
-  with Lam's Synergy Integra cleaner.[^lam-clean-1000-2001]
-* **Ebara.** The step pages name the EPO-222 and F-REX; Ebara now offers
-  the F-REX200M2, which "polishes 200 mm wafers with high k-materials and
-  aluminium layers".[^ebara-frex] No 200 mm-era Ebara description was
-  retrieved for this page.
+Typical 200 mm tools of the
+130 nm era carried each wafer across more than one platen, detected the
+endpoint in situ and, increasingly, cleaned the wafer on board so that it
+entered and left dry.
+
+:::{table} Representative CMP polishers of the 200 mm era, all rotary unless noted (figures as each source gives them)
+:widths: 18 20 10 52
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Applied Materials | Mirra | 1995 | "a unique three-station, four polishing head design that permits continuous processing of several wafers simultaneously"[^amat-1997] |
+| Applied Materials | Mirra Mesa | 1999 | added the Mesa cleaner[^amat-mesa-1999] |
+| IPEC-Planar | AVANTI 472 | 1997 | "IPEC-Planar's third generation Chemical Mechanical Planarization (CMP) product", for "both oxide and metal planarization processes"[^ipec-472-1997] |
+| IPEC-Planar | AvantGaard 676 | 1997 | "Multiple wafer polishing modules (4)"; "Integrated post CMP spray box cleaning"[^ipec-676-1997] |
+| SpeedFam-IPEC | Auriga | 2001 | — |
+| SpeedFam-IPEC | Momentum | 2001 | for "the 0.18 micron and 0.13 micron design node requirements"[^speedfam-ipec-2001] |
+| Strasbaugh | 6DS-SP | 1999 | "Dual polishing tables for 2-step processes"; "Double-sided, post-CMP scrubber integration"[^strasbaugh-6ds-1999] |
+| Strasbaugh | 6EC (lab) | 1999 | "Laboratory Planarizer" for "CMP research and small quantity production of wafers"[^strasbaugh-6ec-1999] |
+| Lam Research | Teres (linear) | — | shipped with Lam's Synergy Integra cleaner[^pat-linear-lam][^lam-clean-1000-2001] |
+:::
+
+The Mirra, announced in 1995, gained the Titan Head in 1997.[^amat-1997] Applied reported
+its 500th Mirra in February 2000 and said the Mirra accounted for "the
+industry's largest installed base of multi-platen CMP
+tools".[^amat-mirra-500-2000] A Chip History Center article calls the
+Mirra "the first CMP system that successfully integrated endpoint
+detection and integrated cleaning".[^chiphistory-mirra] Applied's own
+releases introduce its integrated Mesa cleaner, "specifically developed
+for the Mirra", with the Mirra Mesa of 1999.[^amat-mesa-1999] The
+article's "Announced in 1997" differs from both Applied's December 1995
+and the article's own "Relevant Date" of
+1995-06-30.[^chiphistory-mirra][^amat-1997]
+
+**Ebara.** The step pages name the EPO-222 and F-REX; Ebara now offers
+the F-REX200M2, which "polishes 200 mm wafers with high k-materials and
+aluminium layers".[^ebara-frex] No 200 mm-era Ebara description was
+retrieved for this page.
 
 ## At SkyWater
 
@@ -217,21 +239,27 @@ lines without a dash:[^skw-01]
 > "IPA clean"
 > "On board metrology with feed forward and backward"
 
-Read term by term: an Applied Materials Mirra, with polishes for oxide
-and tungsten — the films of the SKY130 polishes on the step pages'
-readings — and for nitride, the stop layer of two of them on those readings; and
-for niobium, aluminium and copper, which no SKY130 step page reads as a
-polish; the page describes the Minnesota site as
-"Recently expanded in 2020 to enable additional capacity and Cu back end
-of line".[^skw-01] "high selectivity tungsten" is not explained. The
-step pages and the {ref}`machines index <machines-index>` read the three
-undashed lines as part of the Mirra entry; the page does not say which
-tool performs "Track ammonia clean" or "IPA clean", or whether the
-Mirra is a Mirra Mesa with an integrated cleaner. "On board metrology
-with feed forward and backward" resembles the integrated metrology
-described above, but no model is given. The
-page gives no pad, slurry, conditioner or head, and the S-1's list of
-raw-material suppliers names no slurry or pad supplier.[^skw-01][^sec-01]
+The step pages and the {ref}`machines index <machines-index>` read the
+three undashed lines as part of the Mirra entry.
+
+:::{table} How this reference reads the AMAT Mirra CMP entry
+:widths: 26 50 24
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "oxide", "tungsten" | films of the SKY130 polishes, on the step pages' readings | our reading |
+| "nitride" | the stop layer of two of the SKY130 polishes, on those readings | our reading |
+| "niobium", "aluminum", "copper" | no SKY130 step page reads these as a polish | our reading |
+| "high selectivity tungsten" | — | not stated |
+| "Track ammonia clean", "IPA clean" | which tool performs them is not stated, nor whether the Mirra is a Mirra Mesa with an integrated cleaner | not stated |
+| "On board metrology with feed forward and backward" | resembles the integrated metrology described above, but no model is given | our reading |
+:::
+
+For copper, the page describes the Minnesota site as "Recently expanded
+in 2020 to enable additional capacity and Cu back end of
+line".[^skw-01] The page gives no pad, slurry, conditioner or head, and
+the S-1's list of raw-material suppliers names no slurry or pad
+supplier.[^skw-01][^sec-01]
 
 ### Strength of the evidence
 
@@ -318,14 +346,18 @@ where each stops are this reference's readings, set out on the category
 page and the step pages.
 
 * **Three kinds of polish on one tool type.** On this reference's
-  readings, {ref}`CMPNIT <step-012>` polishes the trench fill to the
-  nitride, {ref}`CMPP <step-090>` the PSG over the poly (on a nitride-cap
-  stop, in that page's reading), {ref}`CMPL <step-106>` and
-  {ref}`CMPM <step-116>` to {ref}`CMPM4 <step-157>` the inter-level oxides
-  to a remaining thickness, and {ref}`WCMPLI <step-100>` and
-  {ref}`WCMP2 <step-111>` to {ref}`WCMP5 <step-148>` the tungsten
-  overburden ({ref}`category-cmp`). SkyWater's list covers all three film
-  types.[^skw-01]
+  readings, three film types share one tool:
+
+  * **Trench fill** — {ref}`CMPNIT <step-012>` polishes it to the
+    nitride.
+  * **Oxide** — {ref}`CMPP <step-090>` the PSG over the poly (on a
+    nitride-cap stop, in that page's reading); {ref}`CMPL <step-106>`
+    and {ref}`CMPM <step-116>` to {ref}`CMPM4 <step-157>` the
+    inter-level oxides to a remaining thickness.
+  * **Tungsten** — {ref}`WCMPLI <step-100>` and {ref}`WCMP2 <step-111>`
+    to {ref}`WCMP5 <step-148>` the overburden ({ref}`category-cmp`).
+
+  SkyWater's list covers all three film types.[^skw-01]
 * **Stopping without a stop layer.** On the step pages' readings the
   inter-level oxide polishes have no material change to detect,[^wiki-cmp] so they depend on timed
   removal or in-situ thickness measurement; the
@@ -353,23 +385,22 @@ page and the step pages.
 
 ## Related pages
 
-* {ref}`category-cmp` — polishing physics, slurries, pads and the polishes
-  of SKY130.
-* {ref}`machine-post-cmp-cleaner` — the brush scrubbers and integrated
-  cleaners that follow the polish.
-* {ref}`machine-single-wafer-spin-processor` — the listed single-wafer
+* **Category.** {ref}`category-cmp` — polishing physics, slurries, pads
+  and the polishes of SKY130.
+* **Machines.** {ref}`machine-post-cmp-cleaner` — the brush scrubbers and
+  integrated cleaners that follow the polish.
+  {ref}`machine-single-wafer-spin-processor` — the listed single-wafer
   tools the CMP pages name for the post-CMP clean.
-* {ref}`machine-hdp-cvd` and {ref}`machine-pecvd` — the oxides the polisher
-  planarises.
-* {ref}`machine-tungsten-cvd` — the tungsten fill whose overburden the
-  polisher removes.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — slurries, pads and cleaning chemicals.
-* {ref}`material-cmp-consumables` — slurries, pads, conditioners and
-  post-CMP clean chemistry.
-* {ref}`material-ultrapure-water` — rinse water, its standards and
+  {ref}`machine-hdp-cvd` and {ref}`machine-pecvd` — the oxides the
+  polisher planarises. {ref}`machine-tungsten-cvd` — the tungsten fill
+  whose overburden the polisher removes.
+* **Materials.** {ref}`material-cmp-consumables` — slurries, pads,
+  conditioners and post-CMP clean chemistry.
+  {ref}`material-ultrapure-water` — rinse water, its standards and
   quality.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
+  listed tools and the step assignments. {ref}`materials-index` —
+  slurries, pads and cleaning chemicals.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
