@@ -1,0 +1,1329 @@
+# Public Cypress Semiconductor process-technology qualification
+# reports (QTP), plus the S8 reports whose qualification-history
+# tables date S8's first qualifications. Built for the pre-S8
+# process-technology history (docs/plans/cypress-history-plan.md).
+#
+# Every document was fetched with user agent
+# "sky130-process-tech docs checker" and cached (PDF + pdftotext
+# -layout extraction) under tmp/cyhist-cache/qtp/ in the main
+# checkout; sha256 below is of the cached PDF.
+#
+# The names of report preparers, reviewers and approvers, lot
+# numbers and e-mail addresses are never copied into this file
+# (agent-briefs.md common rules); only the technical content is.
+#
+# Check with `uv run tools/check_history_quotes.py`.
+schema_version: 1
+retrieved: '2026-09-25'
+documents:
+- id: qtp-021507
+  doc_type: QTP
+  number: '021507'
+  cypress_document_number: 001-84621 Rev. *A
+  title: Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2
+  version: '*A'
+  date_printed: December 2015
+  url: https://www.infineon.com/dgdl/Infineon-QTP_021507_Failsafe_Device_Family_&_Options_S4AD-5_SONOS_Technology_Fab_2-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714961a70a2b
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 7284a2f0144db23786172a8ee364642b01e53a118ba0f6777cdfd2fc35e52671
+  technology_codes:
+  - S4AD-5
+  fab: Fab 2 (Cypress Semiconductor -- CTI Round Rock, TX)
+  products:
+  - CY26049-1/3/4/5
+  - CY26049-36
+  - CY23FP12
+  - CY23FS04
+  - CY23FS08
+  die_ids:
+  - 7C80501A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å Ti/6,000Å Al 0.5% Cu /1,200Å TiW; Metal 2: 500Å Ti/8,000Å Al 0.5%
+      Cu/300Å TiW'
+    passivation: 3,000Å TeOs / 6,000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Poly, Double Metal, 0.5 m (printed with the micron sign dropped; other S4AD-5
+      reports print '0.5 µm')
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor -- CTI Round Rock, TX
+    die_fab_line_id: Fab2, S4AD-5 (SONOS), R42D-5 derivative w/ 6 additional mask
+    transistors: 93000
+    gates: 23000
+  qualification_history:
+  - number: '010702'
+    description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, and its
+      product family.
+    date: April 01
+  - number: '021506'
+    description: New product CY2308A*, CY2309A*, CY23FP12* Programmable Zero Delay Buffer
+    date: Sept 02
+  - number: '021507'
+    description: Failsafe Device family and options Qual using S4AD-5 (SONOS), Fab2
+    date: Jan 03
+  quotes:
+  - text: Fab2, S4AD-5 (SONOS), R42D-5 derivative w/ 6 additional mask
+    location: p.3, Technology/Fab Process Description
+  - text: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, and its product
+      family.
+    location: p.2, Product Qualification History, row 010702
+  notes: 'S4AD-5 is described here as a derivative of R42D-5 with 6 additional masks ("R42D-5 derivative
+    w/ 6 additional mask"), i.e. an offshoot of the R42D lineage rather than a wholly new family. This
+    report gives S4AD-5''s design rule as 0.5 µm (the printed field drops the micron sign: "0.5 m"); qtp-151005
+    (S4AD-5, HHGrace Fab5, 2015) instead gives S4AD-5 as "Single Poly, Double Metal, 0.35 m" (0.35 µm)
+    -- the same technology code described at two different design rules in two independent reports.'
+- id: qtp-003907
+  doc_type: QTP
+  number: 003907
+  cypress_document_number: 001-88051 Rev. *A
+  title: High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4
+  version: '*A'
+  date_printed: June 2013
+  url: https://www.infineon.com/dgdl/Infineon-QTP_003907_High_Frequency_Programmable_PECL_Clock_Generator_R42LDHA_Technology_Fab_4-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d714957940a14
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 15850b60d53cf2576937d6b0a14025a4b06d9369b9ec80258eea59717bf71ce8
+  technology_codes:
+  - R42LDHA
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY2213ZC-1
+  die_ids:
+  - 7C80810A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 3,000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.35 m
+    gate_oxide: SiO2 / 70Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42D (with Hot AL)
+    transistors: 8000
+    gates: 1400
+  qualification_history:
+  - number: '98357'
+    description: New Technology R42D with Hot Al / 1Meg with NoBL Architecture, CY7C1350/CY7C1352
+    date: Sep 98
+  - number: 003907
+    description: New High Frequency Programmable PECL Clock Generator CY2213ZC-1
+    date: Apr 01
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R42D
+    location: p.3, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R42D (with Hot AL)'
+    location: p.3, Technology/Fab Process Description
+  - text: New Technology R42D with Hot Al / 1Meg with NoBL Architecture, CY7C1350/CY7C1352
+    location: p.2, Product Qualification History, row 98357
+  notes: 'The cover page and qualification purpose call the technology ''R42LDHA''; the Technology/Fab
+    Process Description section heading and the Die Fab Line ID field both instead say plain ''R42D''
+    (with Hot Al) -- the document does not use the name ''R42LDHA'' anywhere in the process-description
+    block itself, only in the title. Read together with qtp-097483 and qtp-102101, R42D (Fab 4, Bloomington
+    MN) had at least two named process descriptions: ''Proprietary'' in a later-reissued report (qtp-097483)
+    and a fully printed one here (0.35 µm, 2 metal layers) tagged ''with Hot Al''.'
+- id: qtp-024110
+  doc_type: QTP
+  number: '024110'
+  cypress_document_number: 001-87912 Rev. **
+  title: 1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4
+  version: '**'
+  date_printed: June 2013
+  url: https://www.infineon.com/dgdl/Infineon-QTP_024110_1_MEG_(3.0V)_MOBL_DEVICES_RAM8NLD-1.8V_TECHNOLOGY_FAB4-ProductQualificationReport-v01_00-EN.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: c27e14096c811fabd1fadb089953d4941bfc83e25f2808a9bd554ee195a54145
+  technology_codes:
+  - RAM8NLD-1.8
+  - R8LD-1.8V
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62126DV30
+  - CY62127DV30
+  - CY62167DV18
+  - CY62127DV20
+  - CY62128DV30
+  - CY62125DV*
+  die_ids:
+  - 7C62125D
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 150 Å Ti / 300 Å Al / 300 Å Cu; Metal 2: 300 Å Ti / 8000 Å Al'
+    passivation: 1000Å TEOS / 9000Å Si3N4
+    free_phosphorus_percent: N/A
+    design_rule: 0.13 m
+    gate_oxide: 26Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/RAM8NLD-1.8V
+    transistors: ~6.5 million
+    gates: ~6.5 million
+  qualification_history:
+  - number: '031102'
+    description: New Technology R8LD-1.8V / New Device, 8Meg, MoBL Static RAM CY62155DV* and family
+    date: Mar 03
+  - number: '024110'
+    description: New Device Qual, 1Meg, MoBL Static RAM CY62125DV* 3V and Options on RAM8NLD-1.8 Technology
+    date: Jun 03
+  - number: 032901
+    description: New Masks, PIM, MM1 and V1M for CY62125DV* 3V and Options on RAM8NLD-1.8, Fab 4 Technology
+    date: Jul 03
+  - number: 033803
+    description: New Masks, LI1M, CTM1, MM1, for CY62125DC (1Meg MoBL) using RAM8NLD-1.8 Technology, Fab4
+      Process
+    date: Oct 03
+  quotes:
+  - text: New Technology R8LD-1.8V / New Device, 8Meg, MoBL Static RAM CY62155DV* and family
+    location: p.2, Technology Qualification History, row 031102
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – RAM8NLD-1.8
+    location: p.3, section heading
+  notes: 'The technology is introduced in the qualification history as ''R8LD-1.8V'' (031102, Mar 03)
+    and this report''s own title and process-description heading instead call it ''RAM8NLD-1.8'' -- apparently
+    the same technology under two names within one document family. Compare qtp-041406, a later reissue
+    of a related RAM8NLD-1.8 report, which for the same technology name gives ''Name/Location of Die Fab:
+    Skywater -- Bloomington, MN'' where this 2013 report (predating the 2017 SkyWater divestiture) gives
+    ''Cypress Semiconductor -- Bloomington, MN''.'
+- id: qtp-097483
+  doc_type: QTP
+  number: '97483'
+  cypress_document_number: 001-87638 Rev. *C
+  title: Low Voltage Deep Synchronous FIFO High Speed 100-MHZ Operation, R42D -- Fab 4
+  version: '*C'
+  date_printed: May 2017
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97483-low-voltage-deep-sync-fifos-r42d-technology-fab4-device-cy7c42-v-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 68e0524c7bf6659e45b9c6fa0f2cb4d409e1e7185b18c7df0bf204c4007b2f5c
+  technology_codes:
+  - R42D
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C4255V
+  - CY7C4265V
+  - CY7C4275V
+  - CY7C4285V
+  - CY7C4261V
+  - CY7C4271V
+  - CY7C4281V
+  - CY7C4291V
+  - CY7C4282V
+  - CY7C4292V
+  die_ids: []
+  process_description:
+    number_of_metal_layers: Proprietary
+    metal_composition: Proprietary
+    passivation: Proprietary
+    design_rule: Proprietary
+    gate_oxide: Proprietary
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4 / R42D
+  qualification_history:
+  - number: '97211'
+    description: New R42D Technology Qualification
+    date: Oct 97
+  - number: '97396'
+    description: New 4Meg Product Qualification
+    date: May 98
+  - number: '97483'
+    description: New Synchronous FIFO Product Qualification
+    date: Apr 00
+  quotes:
+  - text: New R42D Technology Qualification
+    location: p.2, Product Qualification History, row 97211
+  - text: 'Number of Metal Layers: Proprietary Metal Composition: Proprietary'
+    location: p.3, Technology/Fab Process Description
+  notes: This 2017 reissue (Rev *C) redacts the entire process-description block as 'Proprietary', unlike
+    the earlier-style reports for the same R42D technology (e.g. qtp-003907, qtp-098393-adjacent R28 reports)
+    which print full metal/passivation/design-rule figures. The earliest dated reference to R42D found
+    in this corpus is this report's own history row, QTP 97211, 'New R42D Technology Qualification', Oct
+    97.
+- id: qtp-102101
+  doc_type: QTP
+  number: '102101'
+  cypress_document_number: 001-88136 Rev. *A
+  title: Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification
+  version: '*A'
+  date_printed: July 2014
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 7195746935044aae0ec1f1ee5dcbf2bcb3066414d6939d23a8d6b8ce4f743371
+  technology_codes:
+  - R42HD
+  - R4
+  fab: Fab 4 / CMI (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C024E
+  - CY7C0241E
+  - CY7C025E
+  - CY7C0251E
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    design_rule: CMOS, Double Metal /0.42 µm
+    gate_oxide: SiO2 / 110Å
+    fab_location: Fab 4 / CMI - Bloomington, MN
+    die_fab_line_id: R42HD
+  qualification_history:
+  - number: '98064'
+    description: R42HD Technology qualification (1Meg SRAM)
+    date: Nov 97
+  - number: '98368'
+    description: Asynchronous/Synchronous DP SRAM, R42HD Technology, Fa4 qualification
+    date: Jun 98
+  - number: '98244'
+    description: Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V) R42HD Technology, Fab 4 Qualification
+    date: Sep 98
+  - number: '102101'
+    description: Qualification for CMI R4 down bond option for 7C0268, 7C0264, 7C0368, 7C0364
+    date: Jul 10
+  quotes:
+  - text: R42HD Technology qualification (1Meg SRAM)
+    location: p.2, Product Qualification History, row 98064
+  - text: Qualification of CMI R4 down bond option for 7C0268, 7C0264, 7C0368
+    location: p.3, Product Description
+  notes: 'The qualification purpose in this 2014 reissue is a minor ''R4 down bond option'' change; it
+    calls the underlying technology plain ''R4'' where the report''s own title, history rows and process-description
+    Die Fab Line ID all say ''R42HD'' -- ''R4'' here reads as informal shorthand for R42HD rather than
+    a separate code. Earliest dated reference to R42HD in this corpus: QTP 98064, Nov 97.'
+- id: qtp-098368
+  doc_type: QTP
+  number: '98368'
+  cypress_document_number: 001-87916 Rev. **
+  title: SYNCHRONOUS/ASYNCHRONOUS DUAL PORT SRAM (3.3V AND 5V), R42HD TECHNOLOGY, FAB 4
+  version: '**'
+  date_printed: June 2013
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-98368-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152cc652012
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 979b9edd2c3f868884eccf142133513b7e2a5cbb39cb3d58dfda99b0afb8045a
+  technology_codes:
+  - R42HD
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C09079(V)
+  - CY7C09179(V)
+  - CY7C09089(V)
+  - CY7C09189(V)
+  - CY7C09099(V)
+  - CY7C09199(V)
+  - CY7C09269(V)
+  - CY7C09369(V)
+  - CY7C09279(V)
+  - CY7C09379(V)
+  - CY7C09289(V)
+  - CY7C09389(V)
+  - CY7C008(V)
+  - CY7C018(V)
+  - CY7C009(V)
+  - CY7C019(V)
+  - CY7C027(V)
+  - CY7C037(V)
+  - CY7C028(V)
+  - CY7C038(V)
+  die_ids:
+  - 7C0389A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 500Å TiW/6000Å Al -5%Cu/1200Å TiW; Metal 2: 500Å TiW/8000Å Al -5%Cu/300Å
+      TiW'
+    passivation: 7000Å SiO2 + 6000Å Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.42 m
+    gate_oxide: SiO2 / 110Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R42HD
+  qualification_history:
+  - number: '98064'
+    description: R42HD Technology qualified in Fab4 using 1 Meg SRAM product, die size 99 mils x 341mils
+    date: null
+  - number: '98248'
+    description: R42HD qualified with larger die size using 4 Meg SRAM product, die size 191 mils x 583
+      mils
+    date: null
+  quotes:
+  - text: R42HD Technology qualified in Fab4 using 1 Meg SRAM product, die size 99 mils x 341mils
+    location: p.2, Product Qualification History, row 98064
+  notes: Same technology (R42HD, Fab 4, 0.42 µm, 2 metal layers) and largely the same qualification-history
+    entry (98064) as qtp-102101, confirming the design rule and metal stack across two independently issued
+    reports. The qualification-history table here prints no 'Date' column values for its two rows (the
+    column exists but is blank in the extracted text), unlike qtp-102101's version of the same table which
+    dates 98064 to Nov 97.
+- id: qtp-096091
+  doc_type: QTP
+  number: '96091'
+  cypress_document_number: null
+  title: Dual Port SRAM - R28 Technology, 6% Shrink
+  version: '2.0'
+  date_printed: September 1996
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-96091-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148ab080847
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 981b2677a7c5dbb20e30f3b4f1c28cf23c40e94e1506c7b203b83ed0d4d68d12
+  technology_codes:
+  - R28
+  fab: Fab 3 (Cypress Semiconductor, Bloomington, MN)
+  products:
+  - CY7C0251
+  - CY7C025
+  - CY7C0241
+  - CY7C024
+  - CY7C145
+  - CY7C144
+  - CY7C139
+  - CY7C138
+  - CY7C133
+  - CY7C143
+  - CY7C016
+  - CY7C006
+  die_ids:
+  - CY7C025B
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A; Metal 2: TiW/Al-Si/Ti 1200A/10000A/150A'
+    passivation: 7000A TEOS + 6000A Oxynitride
+    free_phosphorus_percent: n/a
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 A
+    fab_location: Cypress Semiconductor, Bloomington, MN
+    die_fab_line_id: Fab3/R28
+  qualification_history: []
+  quotes:
+  - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - R28
+    location: p.2, section heading
+  - text: 'Die Fab Line ID/Wafer Process ID: Fab3/R28'
+    location: p.2, Technology/Fab Process Description
+  - text: 'QTP#: 95226'
+    location: p.4, Reliability Test Data heading (an earlier R28 qualification report number, not independently
+      retrieved)
+  notes: No Technology/Product Qualification History table is printed in this early-style (Sep 1996) report;
+    the earlier QTP number 95226 appears only as a reliability-test-data table heading and was not independently
+    retrieved. R28 is run here at Fab 3, Bloomington, MN, 0.65 µm double-poly double-metal CMOS; qtp-097476
+    and qtp-098393 (Fab 2, Round Rock, TX, same 0.65 µm R28 description) date an explicit transfer of
+    R28 products from Fab 3 to Fab 2 by 1997-1999 -- so the same technology name was run at both Cypress
+    fabs.
+- id: qtp-096182
+  doc_type: QTP
+  number: '96182'
+  cypress_document_number: null
+  title: Dual Port SRAM - R28 Technology
+  version: '2.0'
+  date_printed: September 1996
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-96182-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148acf9084a
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 59f7a9b71dc73b632bbdf9b3fa0ade4aa95283cb459c54d5f01bd4280a8ec3d4
+  technology_codes:
+  - R28
+  fab: Fab 3 (Cypress Semiconductor, Bloomington, MN)
+  products:
+  - CY7C0241
+  - CY7C024
+  - CY7C145
+  - CY7C144
+  - CY7C139
+  - CY7C134
+  - CY7C1342
+  - CY7C135
+  - CY7C138
+  - CY7C133
+  - CY7C143
+  - CY7C136
+  - CY7C146
+  - CY7C131
+  - CY7C141
+  die_ids:
+  - 7C0241A
+  - 7C1451A
+  - 7C1431A
+  - 7C1341A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/AL-Si/TiW, 500A/1200A/6000A/1200A; Metal 2: TiW/Al-Si/Ti 1200A/10000A/150A'
+    passivation: 7000A TEOS + 6000A Oxynitride
+    free_phosphorus_percent: n/a
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 A
+    fab_location: Cypress Semiconductor, Bloomington, MN
+    die_fab_line_id: Fab3/R28
+  qualification_history: []
+  quotes:
+  - text: 'QTP#: 96091'
+    location: p.4, Reliability Test Data heading (cross-references the near-identical qtp-096091 report)
+  notes: Essentially a sibling report to qtp-096091 -- same date (Sep 1996), same technology block verbatim
+    (R28, Fab3, 0.65 µm), a different but overlapping product list, and no Qualification History table.
+    A WebSearch AI-generated summary for this document's search result claimed it documents 'a technology
+    conversion from BiCMOS to CMOS for CY7C13*/CY7C14* products'; the fetched PDF text contains no mention
+    of BiCMOS at all -- that summary was inaccurate and is not used as a source (recorded here only as
+    a caution about verifying search-engine summaries against the actual document).
+- id: qtp-097476
+  doc_type: QTP
+  number: '97476'
+  cypress_document_number: 001-88642 Rev. *A
+  title: 256K STATIC RAM "CY7C194/CY7195/CY7C199" R28 PROCESS, FAB 2 QUALIFICATION
+  version: '*A'
+  date_printed: August 2016
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97476-256k-static-ram-r28-process-fab-2-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150d8bb1af5
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: a57cdc999248a17eb8dec3131193583cabbcd6e6f6d3a155c9d2c601b7a3382b
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX)
+  products:
+  - CY7C194
+  - CY7C195
+  - CY7C199
+  die_ids:
+  - 7C199C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: N/A
+    design_rule: CMOS, Double Poly, Double Metal /0.65 m
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor -- Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history:
+  - number: '97476'
+    description: Qualify Fab 2 for 256K SRAM, R28 process (Rev0. And Rev.R)
+    date: Nov. 1997
+  quotes:
+  - text: Qualify Fab 2 for 256K SRAM, R28 process ( Rev0. And Rev.R)
+    location: p.3, Product Description (for qualification)
+  - text: THIS SPEC IS OBSOLETE
+    location: cover sheet, added by Infineon's 2016 reissue
+  notes: 'This is the earliest dated Fab 2 (Round Rock, TX) qualification for R28 found in this corpus
+    (Nov 1997), just after the two Fab 3 (Bloomington, MN) R28 reports dated Sep 1996 (qtp-096091, qtp-096182)
+    -- consistent with R28 having started at Fab 3 and then also being run at Fab 2. The document is marked
+    ''THIS SPEC IS OBSOLETE / Replaced by: None'' on Infineon''s reissued cover sheet.'
+- id: qtp-098393
+  doc_type: QTP
+  number: '98393'
+  cypress_document_number: null
+  title: Dual Port SRAM - R28 Technology - Fab 2
+  version: '1.3'
+  date_printed: March 1999
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-98393-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 3e6a19012654f859306ae225dc114472259e586a469f9ac59cd6831f36597b94
+  technology_codes:
+  - R28
+  fab: Fab 2 (Cypress Semiconductor -- Round Rock, TX), transferred from Fab 3
+  products:
+  - CY7C0241
+  - CY7C024
+  - CY7C145
+  - CY7C144
+  - CY7C139
+  - CY7C1342/135/138
+  - CY7C133/143
+  die_ids:
+  - 7C0241A
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: Ti/TiW/Al-Si/TiW, 500Å/1.2KÅ/6KÅ/1.2K Å; Metal 2: TiW/Al-Si/TiW, 1.2KÅ/10KÅ/150Å'
+    passivation: 7000A TEOS + 6000A Si2N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Poly, Double Metal /0.65 µm
+    gate_oxide: SiO2 / 165 Å
+    fab_location: Cypress Semiconductor - Round Rock, TX
+    die_fab_line_id: Fab2/R28
+  qualification_history: []
+  quotes:
+  - text: Transfer CY7C0241 (Rev. C, 7C025D chop) and its options from Fab3 to Fab2
+    location: p.2, Product Description (for qualification)
+  notes: Explicit statement of an R28 product transfer from Fab 3 to Fab 2, dated March 1999 -- two years
+    after qtp-097476 already qualified Fab 2 for other R28 parts (Nov 1997), so the Fab3-to-Fab2 move
+    for the R28 product line was evidently phased over several qualifications rather than a single cut-over.
+- id: qtp-001004
+  doc_type: QTP
+  number: '001004'
+  cypress_document_number: null
+  title: 0.5um TLM Technology, Fab HME, Dual Port SRAM with PCI Bus Controller
+  version: '1.0'
+  date_printed: January 2001
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-001004-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: aecea6390dcb612b47e936f5cb001bea92a5a27f3f11c9832eba59f8e07a0441
+  technology_codes:
+  - 0.5um TLM
+  - CF4
+  - HL50
+  fab: Fab HME (Hyundai Electronics, Cheong Ju, Korea)
+  products:
+  - CY7C09449PV-AC
+  die_ids:
+  - GVS791K1
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: (Ti/TiN)/Ti/Al-1%Si-0.5%Cu/Ti/TiN; Metal 2: (Ti/TiN)/Ti/Al-1%Si-0.5%Cu/Ti/TiN;
+      Metal 3: (Ti/TiN)/Ti/Al-1%Si-0.5%Cu/TiN'
+    passivation: Silicon Nitride
+    free_phosphorus_percent: Zero
+    design_rule: CMOS / 0.5 micron
+    gate_oxide: SiO2 / 95 A
+    fab_location: Hyundai / Cheong Ju, Korea
+    die_fab_line_id: CF4 / HL50 (Hyundai)
+  qualification_history:
+  - number: '001004'
+    description: New 0.5um TLM Technology/New CY7C09449PV-AC Product Qualification
+    date: Aug 00
+  quotes:
+  - text: To qualify 0.5umTLM Technology,.Fab HME and CY7C09449PV-AC Product.
+    location: p.3, Product Description (for qualification)
+  - text: 'Name/Location of Die Fab (prime) Facility: Hyundai / Cheong Ju, Korea'
+    location: p.3, Technology/Fab Process Description
+  notes: '''Fab HME'' in Cypress''s own naming is an outsourced Hyundai Electronics (Korea) line, not
+    a Cypress-numbered fab -- a foundry-technology example alongside the GSMC, HHGrace and IMI-acquired-foundry
+    (Tower/IBM/Chartered) technologies elsewhere in this corpus, none of which are Cypress''s own San
+    Jose/Round Rock/Bloomington fabs.'
+- id: qtp-i000006
+  doc_type: QTP
+  number: I000006
+  cypress_document_number: 001-87070 Rev. **
+  title: TS60D [0.6um CMOS] -- Tower (Fab28), CMOS5SF [Micrus] -- IBM/NY (Fab32), CSM 0.35um Logic Salicide
+    -- Charter Semiconductor (Fab11)
+  version: '**'
+  date_printed: March 2007
+  url: https://www.infineon.cn/assets/row/public/documents/10/316/infineon-qtp-i000006-ts60d-0.6um-cmos-tower-fab28-cmos5sf-micrus-ibm-ny-fab32csm-0.35um-logic-salicide-charter-semiconductor-fab11-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 9f89153e175fbaf1b3276a22cc0504940426c4e5cf984937481ffd7015934907
+  technology_codes:
+  - TS60D
+  - RX11
+  - KB14
+  - RF06
+  - CMOS5SF
+  - ZB15
+  - ZB17
+  - A35C
+  - B35C
+  - D35C
+  - E35C
+  - F35C
+  - G35C
+  fab: Tower Semiconductor (Israel, TS60D/RX11/KB14/RF06 base dice), IBM/NY (ZB15/ZB17 base dice), Chartered
+    Semiconductor Manufacturing/Singapore ('CSM', A35C-G35C base dice)
+  products:
+  - CY2LL843*
+  - CY2SSTV16859*
+  - CY2AVC16835*
+  - CY7C827042AR
+  - CY25561
+  - CY25562
+  - CY2SSTV855
+  die_ids: []
+  process_description:
+    note: This 'IMI Acquisition' qualification summary has no standard Technology/Fab Process Description
+      block; base-die-platform technology is only given in the die-qualification-test-table headings.
+  qualification_history:
+  - number: I000006
+    description: Qualification Summary for Cypress Acquisition of IMI Devices and Packages (Feb. 23, 2001)
+    date: Feb 03
+  - number: I000006
+    description: Added new device data gathered, B35C qualified base die (CY2LL843*, CY2SSTV16859*, CY2AVC16835*)
+    date: May 04
+  - number: '042304'
+    description: 7C827042AR Mask Option of the D35C base die
+    date: Jul 04
+  - number: I000006
+    description: Added new device data gathered, D35C qualified base die (CY25561, CY25562)
+    date: Feb 06
+  - number: I000006
+    description: Added device CY2SSTV855
+    date: Mar 07
+  quotes:
+  - text: Qualification Summary for Cypress Acquisition of IMI Devices and Packages (Feb.
+    location: p.2, Product Qualification History (the qualification-history table wraps '23, 2001)' onto
+      the next physical line, after the interleaved QTP-number/date columns)
+  - text: RX11 base die platform (0.6um, CMOS, Tower Semiconductor, Israel)
+    location: p.3, Die Qualification Test Results
+  - text: RF06 base die platform (1.0 uM, CMOS, 2 layers metal, Tower Semiconductor, Israel)
+    location: p.4, Die Qualification Test Results
+  - text: ZB15/17 base die platform (0.35uM, CMOS, 2 layers metal, IBM-NY)
+    location: Die Qualification Test Results
+  - text: A35C/G35C base die platform (0.35 uM, 3 layers metal, CMOS, CSM - Singapore)
+    location: Die Qualification Test Results
+  notes: Documents the foundry technologies of IMI (International Microelectronic Products), acquired
+    by Cypress in February 2001 (per this report's own history row), not technologies developed at a Cypress-numbered
+    fab. The cover title calls the third foundry 'Charter Semiconductor (Fab11)'; the body text instead
+    calls it 'CSM - Singapore' (i.e. Chartered Semiconductor Manufacturing, Singapore) with no mention
+    of 'Fab11' or 'Charter' -- a naming mismatch between the cover and body for the same foundry. Similarly
+    the cover calls the second foundry 'CMOS5SF [Micrus] -- IBM/NY (Fab32)' while the body only says 'IBM-NY'
+    with no 'CMOS5SF', 'Micrus' or 'Fab32'.
+- id: qtp-011908
+  doc_type: QTP
+  number: 011908
+  cypress_document_number: 001-88746 Rev. *A
+  title: Fast Asynchronous SRAM Technology Derivative R7FD, Fab 4 Qualification
+  version: '*A'
+  date_printed: August 2014
+  url: https://www.infineon.com/dgdl/Infineon-QTP_011908_Fast_Asynchronous_SRAM_Technology_Derivative_R7FD_Fab_4_Qualification-ProductQualificationReport-v02_00-EN.pdf?fileId=8ac78c8c7d710014017d7150e6271aff
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: c9bd8d6a83558c93925e2d1d2c2dbfc0484a66be2ad2329ad514e0708ec11db0
+  technology_codes:
+  - R7FD
+  - R7FD-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1018CV33
+  - CY7C1019CV33
+  - CY7C1021CV33
+  die_ids:
+  - 7C1320C
+  - 7C1321C
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW; Metal 2: 300Å Ti /8,000 Å Al / 300Å TiW'
+    passivation: 1000Å TEOS / 9000Å PECVD Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Double Metal /0.15 um
+    gate_oxide: SiO2, 32Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R7FD-3R
+    transistors: 7.4 million
+    gates: 7.4 million
+  qualification_history:
+  - number: '011305'
+    description: New Technology Derivative R7FD-3R / 4Meg, Fast Asynchronous SRAM CY7C1041CV33 and its
+      metal option family
+    date: Dec 01
+  - number: 011908
+    description: 1Meg, Fast Asynchronous SRAM CY7C1021CV33 and its metal/package option family
+    date: Jan 02
+  quotes:
+  - text: New Technology Derivative R7FD-3R / 4Meg, Fast Asynchronous SRAM
+    location: p.2, Product Qualification History, row 011305 (the table wraps 'CY7C1041CV33 and its metal
+      option family' onto the next physical line, after the interleaved QTP-number/date columns)
+  notes: Title calls the technology 'R7FD' (no suffix); the process-description Die Fab Line ID and the
+    qualification-history rows both say 'R7FD-3R'. Distinct from the R7FT-3R family in qtp-014807/qtp-023101
+    (triple metal, 0.18 µm) even though both derive from an 'R7' base name -- R7FD-3R here is double metal,
+    0.15 µm.
+- id: qtp-014807
+  doc_type: QTP
+  number: 014807
+  cypress_document_number: null
+  title: Technology Derivative R7FT-3R, Fab4, Synchronous Dual-Port RAM CY7C085xV / CY7C083xV
+  version: '2.0'
+  date_printed: June 2005
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-014807.rev-2.0-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71486005075b
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 57a7a19271f6a88570dbe42eaed5b5a1dc82d385b511faa0e8d55b0c983f8982
+  technology_codes:
+  - R7FT-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C0831V
+  - CY7C0832V
+  - CY7C0851V
+  - CY7C0852V
+  - CY7C0853V
+  die_ids:
+  - 7C08523VA
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW; Metal 2: 150Å Ti /4,200 Å Al / 300Å TiW;
+      Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW'
+    passivation: 1000Å TEOS / 9000Å PECVD Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Triple Metal /0.18 um
+    gate_oxide: SiO2, 32Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: RAM7FT-3R
+    transistors: 62 million
+    gates: 112K
+  qualification_history:
+  - number: 014807
+    description: New Technology Derivative R7FT-3R (Hot Al) / Synchronous Dual-Port RAM CY7C0852V, product
+      family and package option.
+    date: Feb 02
+  quotes:
+  - text: New Technology Derivative R7FT-3R (Hot Al) / Synchronous Dual-Port RAM CY7C0852V,
+    location: p.2, Product Qualification History, row 014807 (the table wraps 'product family and package
+      option.' onto the next physical line, after the interleaved QTP-number/date columns)
+  notes: Die Fab Line ID is printed as 'RAM7FT-3R' (with a 'RAM' prefix) even though every other reference
+    in this document (title, history, process-description heading) calls it 'R7FT-3R' without the prefix
+    -- a one-off naming variant. This document overlaps heavily with qtp-023101 (same underlying technology
+    and product family, cover page there lists 'QTP# 014807, 020709, 023101'), but is a distinct PDF (different
+    sha256, different Document Number field, titled 'Technology Derivative Qualification Report' rather
+    than 'Product Qualification Report').
+- id: qtp-023101
+  doc_type: QTP
+  number: '023101'
+  cypress_document_number: null
+  title: Synchronous Dual Port RAM Family CY7C083xV / CY7C085xV, R7FTW-3R Technology Fab4
+  version: '2.0'
+  date_printed: June 2005
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-023101-rev2.0-sync-dual-port-family-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: a34108506be421347117eecc0f022ad4acb462ca90a924de787844a13aecc837
+  technology_codes:
+  - R7FTW-3R
+  - R7FT-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C0831V
+  - CY7C0832V
+  - CY7C0851V
+  - CY7C0852V
+  - CY7C0853V
+  die_ids:
+  - 7C08523VA
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 150Å Ti / 4,200Å Al / 300Å TiW; Metal 2: 150Å Ti /4,200 Å Al / 300Å TiW;
+      Metal 3: 150Å Ti / 8,000Å Al / 300Å TiW'
+    passivation: 1,000A TEOS + 9,000A SiN
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Triple Metal /0.18 um
+    gate_oxide: SiO2 32Å
+    fab_location: Cypress Semiconductor -- Bloomington Minnesota
+    die_fab_line_id: RAM7FT-3R
+    transistors: 62 million
+    gates: 112K
+  qualification_history:
+  - number: 014807
+    description: New Technology Derivative R7FT-3R (Hot Al) / Synchronous Dual-Port RAM CY7C0852V, product
+      family and package option.
+    date: Feb 02
+  - number: 020709
+    description: Process R7FT-3R with Via 2 W Plug (4 Meg Dual Port )
+    date: Apr 02
+  - number: '023101'
+    description: 9 Meg Sync Dual Port Stacked Die, R7FT-3R, 172-ball PBGA (15mm x 15mm x 1.25mm), ASE
+      Taiwan Assembly, MSL3
+    date: Dec 02
+  quotes:
+  - text: Process R7FT-3R with Via 2 W Plug (4 Meg Dual Port )
+    location: p.2, Product Qualification History, row 020709
+  notes: Cover title calls the technology 'R7FTW-3R'; every other place in the document (Product Qualification
+    History rows, Technology/Fab Process Description heading) calls it 'R7FT-3R' -- a title-only spelling
+    variant, most likely a typo (extra 'W'). Content otherwise matches qtp-014807 (same process-description
+    figures), but this is a separately issued PDF covering all three of QTP 014807/020709/023101.
+- id: qtp-051207
+  doc_type: QTP
+  number: '051207'
+  cypress_document_number: 001-88010 Rev. *A
+  title: 18 MEG QDR SYNCHRONOUS SRAM FAMILY, R9Q-3R TECHNOLOGY, FAB4
+  version: '*A'
+  date_printed: June 2014
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-051207-18-meg-qdr-synchronous-sram--cy7c1313d-product-family--r9q-3r-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7148e37b08a2
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 248877b082a9431ee655b537a6121d421cd17c4ff9c8267a95d35e67a6d357ea
+  technology_codes:
+  - R9Q-3R
+  - R9T-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C1302DV25
+  - CY7C1304DV25
+  - CY7C1308DV25
+  - CY7C1303BV25
+  - CY7C1306BV25
+  - CY7C1305BV25
+  - CY7C1307BV25
+  - CY7C1310BV18
+  - CY7C1312BV18
+  - CY7C1314BV18
+  - CY7C1311BV18
+  - CY7C1313BV18
+  - CY7C1315BV18
+  - CY7C1316BV18
+  - CY7C1318BV18
+  - CY7C1320BV18
+  - CY7C1317BV18
+  - CY7C1319BV18
+  - CY7C1321BV18
+  - CY7C1392BV18
+  - CY7C1393BV18
+  - CY7C1394BV18
+  - CY7C1323BV25
+  die_ids:
+  - 7C1313C
+  process_description:
+    number_of_metal_layers: 4
+    metal_composition: 'Metal 1: 150Å Ti /3200Å Al / 300Å TiW; Metal 2: 150Å Ti /6000 Å Al / 300Å TiW;
+      Metal 3: 150Å Ti / 6000Å Al / 300Å TiW; Metal 4: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Triple Metal, 90 nm
+    gate_oxide: Nitridized SiO2, 22Å
+    fab_location: Cypress Semiconductor - Bloomington, MN
+    die_fab_line_id: Fab4/R9Q-3R
+    transistors: ~120M
+    gates: ~40M (Number of Logic Gates in Device)
+  qualification_history:
+  - number: '033302'
+    description: New Technology R9T-3R, Fab 4 and New Device CY7C137*/138*E, 18 Meg Synchronous product
+      family
+    date: Sep 04
+  - number: '051207'
+    description: R9 18 Meg QDR, 7C1313D 4 Metal Layer Process
+    date: Mar 05
+  quotes:
+  - text: New Technology R9T-3R, Fab 4 and New Device CY7C137*/138*E, 18 Meg
+    location: p.2, Product Qualification History, row 033302 (the table wraps 'Synchronous product family'
+      onto the next physical line, after the interleaved QTP-number/date columns)
+  - text: R9 18 Meg QDR, 7C1313D 4 Metal Layer Process
+    location: p.2, Product Qualification History, row 051207
+  notes: 'Internal inconsistency: ''Number of Metal Layers'' is printed as 4 and the Metal Composition
+    table lists four layers (Metal 1-4), but the same field''s ''Generic Process Technology/Design Rule''
+    text calls it ''CMOS, Triple Metal, 90 nm'' -- three vs four metal layers for the same technology
+    in the same document. R9Q-3R''s own history row (051207) independently calls it a ''4 Metal Layer
+    Process'', agreeing with the metal-composition table rather than the ''Triple Metal'' design-rule
+    text. Design rule is given directly in nm here (''90 nm'') rather than µm; qtp-061806/qtp-072002 (R95LD-3R)
+    and qtp-063807 (C9FD-3R), separate but contemporary technology codes, print the equivalent value as
+    ''0.09 µm'' -- consistent with, not contradicting, this 90 nm figure, but using the other unit.'
+- id: qtp-061806
+  doc_type: QTP
+  number: 061806
+  cypress_document_number: 001-59339 Rev. *D
+  title: 4 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4
+  version: '*D'
+  date_printed: March 2025
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-061806-4-meg-mobl-sram-automotive-devices-r95ld-3r-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714fdec718db
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: d3aaff32d49d5f746a74b8fe9ca09108f06e5c53a588e255ded3f6f3dd295be7
+  technology_codes:
+  - R95LD-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62136EV18
+  - CY62137EV18
+  - CY62136EV30
+  - CY62137EV30
+  - CY62138EV30
+  - CY62146EV18
+  - CY62147EV18
+  - CY62146EV30
+  - CY62147EV30
+  - CY621472E30
+  - CY62148E
+  - CY62148EV30
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 100Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    design_rule: CMOS, Double Metal, 0.09µm (printed with a Private-Use-Area glyph standing in for the
+      micron sign)
+    gate_oxide: 28Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R95LD-3R
+  qualification_history:
+  - number: '071103'
+    description: 8 Meg MoBL SRAM Automotive Device Family & Technology (R95LD-3R) Qualification at Fab
+      4
+    date: Mar 07
+  - number: 061806
+    description: Qualify 4Meg MoBL Static RAM Automotive device and family on R95LD-3R Technology at Fab
+      4
+    date: Apr 07
+  - number: 084612
+    description: MoBL SRAM Hirel Technology Qual using 7C62167FC, R95LD-3R, 16Meg at Fab4
+    date: May 09
+  - number: '134512'
+    description: Qualify polyimide mask to qualified Automotive 4 Meg MoBL SRAM, R95LD-3R Technology at
+      Fab 4
+    date: Nov 13
+  - number: '134803'
+    description: Qualify metal mask option die part (7A62142FC) Automotive on R95LD-3R Technology at Fab4
+    date: Jul 14
+  quotes:
+  - text: Qualify 4Meg MoBL SRAM Automotive device and family, R95LD-3R Technology at Fab4
+    location: p.3, Product Description (for qualification)
+  - text: CMOS, Double Metal, 0.09µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: The design-rule field's micron sign is encoded as a Private Use Area codepoint (U+F06D) rather
+    than U+00B5 in the underlying PDF font -- a font/embedding quirk of this document, decoded here as
+    'µm' but flagged since it does not extract as plain text with common tools. 0.09 µm (90 nm) for an
+    SRAM technology at Cypress's legacy Bloomington fab by 2007 is a notably fine geometry for that fab/era;
+    qtp-072002 (same technology, different QTP number) prints the same figure with an ordinary 'µ' character,
+    and qtp-051207 (R9Q-3R, same fab, 2005) independently gives '90 nm' for a related but distinct code,
+    so the value is corroborated rather than a one-off typo.
+- id: qtp-072002
+  doc_type: QTP
+  number: '072002'
+  cypress_document_number: 001-65843 Rev. *B
+  title: 2 Meg MoBL SRAM Automotive Devices, R95LD-3R, Fab 4
+  version: '*B'
+  date_printed: March 2025 rev*B
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-072002-2-meg-mobl-sram-cy62136-7fv30-r95ld-3rfab4-aec-q100-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 9677b617335c6e57a6c3235ab48f034a067954b5f2e573452b18e316eda1b7a4
+  technology_codes:
+  - R95LD-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62136FV30
+  - CY62137FV30
+  - CY62138FV30
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 100Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    design_rule: CMOS, Double Metal, 0.09μm
+    gate_oxide: 28Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/R95LD-3R
+  qualification_history:
+  - number: '071103'
+    description: 8 Meg MoBL SRAM Automotive Device Family & Technology (R95LD-3R) Qualification at Fab
+      4
+    date: Mar 07
+  - number: '072002'
+    description: Qualify 2 Meg MoBL Static RAM Automotive device and family on R95LD-3R Technology at
+      Fab 4
+    date: Jun 07
+  - number: '134511'
+    description: Qualify polyimide mask to qualified Automotive 2 Meg MoBL SRAM, R95LD-3R Technology at
+      Fab 4
+    date: Nov 13
+  quotes:
+  - text: Qualify 2Meg MoBL SRAM Automotive device and family, R95LD-3R Technology at Fab 4
+    location: p.3, Product Description (for qualification)
+  notes: 'Confirms qtp-061806''s process-description figures for R95LD-3R verbatim (0.09 µm, 2 metal layers,
+    same compositions); the Automotive Marketing Part # line prints ''CY63136FV30, CY63137FV30, CY63138FV30''
+    (a ''CY63...'' prefix) where the cover page and every other mention use ''CY62136/7/8FV30'' -- a likely
+    typo (63 for 62) in the Product Description block only.'
+- id: qtp-091302
+  doc_type: QTP
+  number: 091302
+  cypress_document_number: 001-60308 Rev. *D
+  title: MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC
+  version: '*D'
+  date_printed: February 2025
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 4bddc7bc9c6242fad07665d2e90c7678ce94ce0fcaa10d45cd09662678a4ef47
+  technology_codes:
+  - RAM42HNHA
+  - RAM42
+  - R42
+  - GSMC R42
+  fab: GSMC / Grace Semiconductor Manufacturing Corp., Shanghai, China (transferred from CMI)
+  products:
+  - CY62256*
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 1
+    metal_composition: 'Metal 1: 500TiN/8000Al/250TiN'
+    passivation: 7000 TEOS + 6000Si3N4
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Metal / 0.42µM
+    gate_oxide: SiO2 /110A
+    fab_location: Grace Semiconductor, Shanghai, China
+    die_fab_line_id: Fab4/RAM42
+    transistors: 1.72 million
+    gates: 1.72 million
+  qualification_history:
+  - number: 091302
+    description: RAM42 Technology and 7C62256 256K Micro Power Asynchronous SRAM Product Transfer from
+      CMI to GSMC Qualification
+    date: Oct 09
+  quotes:
+  - text: Qualification of GSMC R42 technology and CY62256* 256K Micro Power Asynchronous SRAM product
+      family.
+    location: p.3, Qualification Description
+  - text: RAM42 Technology and 7C62256 256K Micro Power Asynchronous SRAM
+    location: p.2, Product Qualification History, row 091302 (the table wraps 'Product Transfer from CMI
+      to GSMC Qualification' onto the next physical line, after the interleaved QTP-number column)
+  notes: 'Four different names for what appears to be one technology inside this single document: the
+    cover title says ''RAM42HNHA''; the Qualification History table calls it ''RAM42''; the Qualification
+    Purpose sentence calls it ''GSMC R42 technology''; and the Technology/Fab Process Description heading
+    and Die Fab Line ID both just say ''RAM42'' / ''Fab4/RAM42''. The Die Fab Line ID also literally prints
+    ''Fab4/RAM42'', not ''Fab5'', even though the cover title and the qualification-history description
+    both say the product was transferred to GSMC and the fab-location field says ''Grace Semiconductor,
+    Shanghai, China'' -- ''Fab4'' in that one field looks like a leftover from the pre-transfer (CMI)
+    version of the same field rather than being updated to Fab 5/GSMC.'
+- id: qtp-030206
+  doc_type: QTP
+  number: '030206'
+  cypress_document_number: 001-88020 Rev. *A
+  title: 256K Static RAM Automotive Devices, RAM42HHA Technology, Fab 4
+  version: '*A'
+  date_printed: June 2014
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-030206-256k-static-ram-automotive-devices-ram42hha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d71491e3d0986
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 6a3caa11a3f49f6c5804b244a63ea88ad1db462c7f06af5c6de79c591236ce9d
+  technology_codes:
+  - RAM42HHA
+  - RAM42
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY62256
+  die_ids:
+  - 7C1256A
+  process_description:
+    number_of_metal_layers: 1
+    metal_composition: 'Metal 1: 500A Cu-Ti/8000A A1'
+    passivation: 3KA Oxide + 6000A Nitride (both with PECVD)
+    free_phosphorus_percent: 0%
+    design_rule: CMOS, Single Metal / 0.42UM
+    gate_oxide: SiO2 /110A
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/RAM42
+    transistors: 1.72 million
+    gates: 1.72 million
+  qualification_history:
+  - number: '030206'
+    description: 7C62256EC 256K, 5V Automotive Qualification
+    date: Jun 03
+  quotes:
+  - text: Qualify CY62256A device on RAM42HHA Technology
+    location: p.3, Product Description (for qualification)
+  notes: 'Same naming pattern as qtp-091302: cover title ''RAM42HHA'' vs process-description heading/Die
+    Fab Line ID plain ''RAM42''. Same design rule and process figures as RAM42HNHA (qtp-091302: 0.42 µm,
+    single metal, 1.72 million transistors) but a different die-fab facility (Bloomington MN here vs Grace/Shanghai
+    there) -- RAM42 appears to be a family name shared by at least two site-specific variants (RAM42HHA
+    at Fab 4, RAM42HNHA at GSMC).'
+- id: qtp-063807
+  doc_type: QTP
+  number: 063807
+  cypress_document_number: 001-76197 Rev. *D
+  title: 1 Meg Fast Asynchronous SRAM Family, C9FD-3R Technology, Fab4
+  version: '*D'
+  date_printed: Jan 2024
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-063807-1-meg-fast-asynchronous-sram-family-c9fd-3r-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7149f5380c45
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 5e364b3db3a225879e1e472733433b3eaaba9fd994685991214e7bdbe3f777bd
+  technology_codes:
+  - C9FD-3R
+  fab: Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY7C106D
+  - CY7C1006D
+  - CY7C107D
+  - CY7C1007D
+  - CY7C109D
+  - CY7C1009D
+  - CY7C1018DV33
+  - CY7C1019D
+  - CY7C1019DV33
+  - CY7C1020D
+  - CY7C1020DV33
+  - CY7C1021D
+  - CY7C1021DV33
+  - CY7C1399DV33
+  - CY7C194D
+  - CY7C197D
+  - CY7C199D
+  - CY7C185D
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 100Å Ti / 3200Å Al / 300Å TiW; Metal 2: 150Å Ti / 8000Å Al / 300Å TiW'
+    passivation: 1000Å Oxide TEOS / 9000Å Nitride
+    design_rule: CMOS, Double Metal, 0.09μm
+    gate_oxide: 23Å
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4/C9FD-3R
+  qualification_history:
+  - number: '052207'
+    description: C9FD-3R, Fab 4 New Process using CY7C104*D (4Meg Fast Synchronous SRAM) Product Family
+    date: Mar 06
+  - number: 063807
+    description: Qualify 1 Meg Fast Async Product Family in C9FD-3R Technology, Fab4
+    date: Sep 06
+  - number: '071204'
+    description: Qualify 1 Meg Fast Async Rev. B Masks (MM1, LITRM and DDLICM)
+    date: Mar 07
+  - number: 080603
+    description: Qualify 1 Meg Fast Async Rev.B Mask DDLIM Fix
+    date: Apr 08
+  - number: '114503'
+    description: Qualify PMM Mask Change for C9 1M Fast Async SRAM in C9FD- 3R Technology in Fab 4
+    date: Feb 12
+  quotes:
+  - text: C9FD-3R, Fab 4 New Process using CY7C104*D (4Meg Fast Synchronous SRAM) Product Family
+    location: p.2, Product Qualification History, row 052207
+  notes: 'Earliest dated reference to C9FD-3R in this corpus: QTP 052207, Mar 06. Design rule 0.09 µm
+    matches R95LD-3R (qtp-061806/qtp-072002) and is consistent with the 90 nm figure given for R9Q-3R
+    (qtp-051207) -- three separately named codes (C9FD-3R, R95LD-3R, R9Q-3R) at essentially the same geometry,
+    all at Fab 4/Bloomington in the mid-2000s.'
+- id: qtp-041406
+  doc_type: QTP
+  number: '041406'
+  cypress_document_number: 001-87794 Rev. *B
+  title: 4 MEG (1.8V/3.0V) MOBL DEVICES, RAM8NLD-1.8 TECHNOLOGY, Skywater
+  version: '*B'
+  date_printed: February 2025
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 5a3ab8d103a284e19c59810de297db0d99b898d71f6813bcbb7535d293f4e7a7
+  technology_codes:
+  - RAM8NLD-1.8
+  fab: Fab 4, printed as 'Skywater -- Bloomington, MN' in this reissue
+  products:
+  - CY62146DV30
+  - CY62147DV18
+  - CY62147DV30
+  - CY62148DV30
+  die_ids:
+  - 7C62145E
+  process_description:
+    number_of_metal_layers: Proprietary
+    metal_composition: Proprietary
+    passivation: Proprietary
+    free_phosphorus_percent: Proprietary
+    design_rule: Proprietary
+    gate_oxide: Proprietary
+    fab_location: Skywater -- Bloomington, MN
+    die_fab_line_id: RAM8NLD-1.8V/3.0V
+  qualification_history:
+  - number: '041406'
+    description: New Device Qual, 4 Meg (1.8V/3.0V) MoBL (7C62145EC/7C62345EC) using RAM8NLD-18 Technology
+      from Skywater
+    date: Apr 04
+  - number: '042001'
+    description: New Device Qual, Metal Mask Option, 4 Meg MoBL (7C62142EC) using RAM8NLD-1.8 Technology
+      from Skywater
+    date: May 04
+  quotes:
+  - text: 'Name/Location of Die Fab (prime) Facility: Skywater -- Bloomington, MN'
+    location: p.3, Technology/Fab Process Description
+  - text: New Device Qual, 4 Meg (1.8V/3.0V) MoBL (7C62145EC/7C62345EC) using RAM8NLD-18
+    location: p.2, Product Qualification History, row 041406 (the table wraps 'Technology from Skywater'
+      onto the next physical line, after the interleaved QTP-number/date columns)
+  notes: 'Significant retroactive relabelling: this Rev *B reissue (printed February 2025) names the die-fab
+    facility ''Skywater -- Bloomington, MN'' and even folds ''from Skywater'' into the qualification-history
+    description of the original 2004 event -- but the SkyWater Technology spin-off of Cypress''s Bloomington,
+    MN fab did not happen until 2017. Compare qtp-024110, an earlier-issued RAM8NLD-1.8V report (Rev **,
+    June 2013, i.e. before the 2017 divestiture) for the same technology family, which instead gives ''Cypress
+    Semiconductor -- Bloomington, MN''. The same historical (2004) RAM8NLD-1.8 qualification is thus described
+    with two different fab-owner names depending on which revision of the report is read -- Infineon''s
+    reissue process appears to substitute the current fab-owner name into the historical qualification-history
+    text rather than preserving the name as originally printed. All numeric process fields in this reissue
+    are redacted as ''Proprietary''.'
+- id: qtp-113005
+  doc_type: QTP
+  number: '113005'
+  cypress_document_number: 001-85611 Rev.*A
+  title: 64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4)
+  version: '*A'
+  date_printed: January 2013
+  url: https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 55f3393b1a1b81cfc1e60827bf7cb7e396a5d9c274b173b9eaf0746444138693
+  technology_codes:
+  - S8
+  - S8TNV-5R
+  - S8TNV-5
+  fab: CMI / Fab 4 (Cypress Semiconductor -- Bloomington, MN)
+  products:
+  - CY14MB064Q2B
+  - CY14MB064Q1B
+  - CY14ME064Q2B
+  - CY14ME064Q1B
+  - CY14MB064J2A
+  - CY14MB064J1A
+  - CY14ME064J2A
+  - CY14ME064J1A
+  - CY14B104L
+  - CY14B104N
+  die_ids:
+  - 7C14104AC
+  process_description:
+    number_of_metal_layers: 3
+    metal_composition: 'Metal 1: 100A Ti / 3200A Al -0.5%Cu / 300A TiW; Metal 2: 100A Ti / 3200A Al -0.5%Cu
+      / 300A TiW; Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW'
+    passivation: 7000 +/- 2000A Nitride
+    design_rule: S8TNV-5R/0.13µm (the printed field uses a Private-Use-Area glyph, U+F06D, for the micron
+      sign)
+    gate_oxide: SiO2 /110A & SiO2/32A
+    fab_location: Cypress Semiconductor -- Bloomington, MN
+    die_fab_line_id: Fab4 / S8TNV-5
+  qualification_history:
+  - number: '071304'
+    description: To qualify S8 SONOS technology and 4M nvSRAM devices CY14B104L / CY14B104N (7C14104AC
+      base die) using S8TNV-5R, fabricated at Cypress Minnesota CMI (Fab4)
+    date: Nov 2008
+  - number: '102204'
+    description: To qualify Indus 1M serial nvSRAM using S8 technology at CMI (Fab4)
+    date: June 2010
+  - number: '122802'
+    description: To qualify Indus 1M serial nvSRAM 5V device option
+    date: Sep 2012
+  - number: '113005'
+    description: To Qualify Manas, 64K Serial NVSRAM, in S8TNV-5R Technology, CMI Fab4
+    date: Nov 2012
+  quotes:
+  - text: To qualify S8 SONOS technology and 4M nvSRAM devices CY14B104L /
+    location: p.2, Qualification History, row 071304 (the table wraps 'CY14B104N (7C14104AC base die)
+      using S8TNV-5R, fabricated at Cypress Minnesota CMI (Fab4)' onto the next physical line, after the
+      interleaved QTP-number/date columns)
+  - text: S8TNV-5R/0.13µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: 'This is one of the target S8-dating documents: it dates the first S8/S8TNV-5R qualification
+    ("S8 SONOS technology") to QTP 071304, November 2008, at Cypress Minnesota CMI (Fab 4) -- the earliest
+    dated S8 reference found in this corpus. The design-rule field prints ''S8TNV-5R/0.13m'' (0.13 µm,
+    micron sign dropped) and the Die Fab Line ID prints ''S8TNV-5'' (no trailing ''R'') where every other
+    mention in the document says ''S8TNV-5R''. The document type on the cover reads ''Product Qualification
+    Plan'' rather than ''Product Qualification Report'', unlike every other document in this corpus.'
+- id: qtp-151005
+  doc_type: QTP
+  number: '151005'
+  cypress_document_number: 002-00195 Rev. *A
+  title: PSoC RADON Device Family, S4AD-5 Technology, HHGrace FAB5
+  version: '*A'
+  date_printed: October 2015
+  url: https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-151005-psoc24x94-hhgrace-productqualificationreport-en.pdf
+  archive_url: null
+  retrieved: '2026-09-25'
+  sha256: 94083064ec6eb71c1adaa0ea5c97d0a263a7494c2d0520c8a6971777ad46a50f
+  technology_codes:
+  - S4AD-5
+  fab: HHGrace / Shanghai, China (Fab 5)
+  products:
+  - CY8C24794
+  - CY8C24894
+  die_ids: []
+  process_description:
+    number_of_metal_layers: 2
+    metal_composition: 'Metal 1: 250A TiN/5,800A Al/700A TiN; Metal 2: 500A TiN/8,000A Al/250A TiN'
+    passivation: 7,000A TeOs /6,000A Si3N4
+    design_rule: Single Poly, Double Metal, 0.35 µm (the printed field uses a Private-Use-Area glyph,
+      U+F0B5, for the micron sign)
+    gate_oxide: SiO2 / 110A
+    fab_location: HHGrace /Shanghai-China
+    die_fab_line_id: S4AD-5
+  qualification_history:
+  - number: '060605'
+    description: Qualify HHGrace using PSoC Device Product Family on S4AD-5 Technology
+    date: Aug 06
+  - number: '151005'
+    description: Qualify Mask Change on Radon for Industrial on S4AD-5 Technology, HHGrace (Fab5)
+    date: July 2015
+  quotes:
+  - text: Qualify HHGrace using PSoC Device Product Family on S4AD-5 Technology
+    location: p.2, Product Qualification History, row 060605
+  - text: Single Poly, Double Metal, 0.35 µm
+    location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
+  notes: Dates the transfer of S4AD-5 to the HHGrace (Shanghai Hua Hong Grace) foundry to August 2006
+    (QTP 060605). Design rule is printed here as 'Single Poly, Double Metal, 0.35 m' (0.35 µm, micron
+    sign dropped) for S4AD-5 -- this directly conflicts with qtp-021507 (S4AD-5, Fab 2, 2003), which gives
+    the same technology code as 'CMOS, Single Poly, Double Metal, 0.5 m' (0.5 µm). Both reports otherwise
+    share the double-metal, single-poly description; only the design-rule figure differs, which may reflect
+    a real fab-to-fab (Fab 2 vs HHGrace) shrink under the same 'S4AD-5' name rather than a simple error,
+    but the two reports do not say so themselves.
