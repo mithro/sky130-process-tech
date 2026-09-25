@@ -166,3 +166,26 @@ That compromise is accepted.
 
 Follow-ups: `beside:` for the sidewall oxide (ruling b); a highlight clipped to changed
 surfaces (review L1).
+
+## After the rebase onto main (S3/S4 generator rules merged)
+
+The combined generator flagged only the S5 figures. Every other series (iso, wells, sonos,
+gates, the history chain, the overview charts) builds byte-identically and lints clean. Two
+rules from S3/S4 bit S5:
+* labels may sit at most 12 u below their drawing;
+* two gutter legs may run side by side for at most 48 u.
+
+Fixes, all in the S5 series and specs (no generator change):
+* **Shorter series notes:**
+  * "gate implant, step 050";
+  * "resistor implant, step 053";
+  * "GATENIT, step 058";
+  * "POC, step 059";
+  * the thin oxide's "LVGOX, step 047", the one label text changed in the ops copied from
+    `series-gates.yaml`, noted in the header.
+
+  The dropped words (the PDK quotation, "thickness not public") are all in the captions.
+* **Thin gate oxide label** hidden from 051 on (unchanged context). Its captions now say
+  "both gate oxides are drawn but not labelled".
+* **The n-type film's `anchor_y`** is removed. It is no longer needed now that the thin-oxide
+  label is gone.
