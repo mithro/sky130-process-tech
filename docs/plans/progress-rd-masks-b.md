@@ -153,7 +153,7 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   the parameter table: values 3, 4, 1, 3, 50, 0.015 in the base order with the base's table numbers.
 * **Marker coverage.** Flags read: list items under lead-in markers, clauses with no marker of their own
   in the base (the "So `cnsm` shapes …" reading, "It names a mask-data layer …" without `pdk-periph`,
-  the ALTA sentence), and the Table 3 "respectively" pairing of markers after the "Wong" split.
+  the ALTA sentence, "At 365 nm …" after the Wong split).
 * **Other edits.** "It also checks" → "The page also checks" (paragraph after a split); "From the rules
   and that layout it reads" → "… the page reads" (new paragraph); "and the purpose of the opening as"
   → ". It reads the purpose of the opening as" (subject and verb added at the split).
@@ -161,4 +161,53 @@ label, three-column R-PARAMS where a cell runs past five lines at 400 px, "Resis
   sentence and "It repeats nsm.1 and nsm.2 …", mostly quotations; the Exposure-class formula); five
   quoted rule-table cells and the quick-facts Polarity cell. Before → after: paragraphs 10 → 0, items
   1 → 0, sentences 16 → 3, cells 6 → 6.
+* **Content problems for the owner:** none found.
+
+### 3. ntm — done
+
+* **Rules applied.** R-INTRO (201 → 38 words); R-PARAMS; R-CAPTION (rule table, parameter table);
+  R-PARA, R-SENTENCE; R-LIST (the Table 3b/3f criteria, the Table F2b `C` rows — markers on the
+  lead-ins); R-RELATED (TIPRTAD, which the base's mask bullet named as a second relationship, now
+  under **Steps.**); R-H3 (Exposure class, Mask errors, Resist and tone, Resist edges and shadowing,
+  Overlay and alignment, Pattern transfer).
+* **Moved passage (canonical order):** "**Overlay.**" moved, unchanged, above "Pattern transfer". The
+  overlay passage names "the shadowing allowances" but not by position.
+* **Intro.** Kept the first sentence up to its colon and "On the NTM page's reading, the resist … is
+  opened over the 1.8 V NMOS transistors." Moved with the hedge repeated: "On the NTM page's reading,
+  the arsenic tip ASTI and the boron halo BHI pass through the same openings, …"; "It is the first of
+  three tip masks" → "The mask is …"; "What sets it apart is that no designer draws it:" split at its
+  colon (the "on our reading" hedge stays in the second half, which it qualifies).
+* **R-PARAMS.** The paragraph's "other criteria that name the mask or its implant" became a five-row
+  table under the lead-in "The other criteria that name the mask or its implant are these:[^pdk-03]"
+  (caption "Other parameters of *Criteria & Assumptions* that name the mask or its implant"). `TipAng`,
+  `ntmShadowing`, `minTip_impW` and `pseudoShadowing` are the page's own names for those rows (What the
+  mask defines, Resist edges and shadowing); the paragraph gave only the descriptions. The Table 2 pair
+  stays in prose (it carries the comparison with nwell.1 and hvi.2a/hvi.5), and so does "Table 4 also
+  lists …" (three entries the page does not class as naming the mask, with the `masks.csv` remark and
+  its `pdk-05` marker).
+* **Declared additions** (`--allow-added markers,numbers,refs`):
+  * markers — `mask-renders` ×3 (the README sentence split at its colon; the per-die counts split at
+    their semicolons), `pdk-03` ×2 (the resist-thickness sentence split at its semicolon, both halves
+    quoting the PDK; the parameter-table lead-in), `pdk-06` ×2 (the `masks.csv`/`gds_layers.csv`
+    sentence split at its semicolon — the second half quotes `gds_layers.csv`; the second Open question
+    split at its semicolon, its first half being the reading of Table F2b), `pdk-errors` (Error Messages
+    "describes" sentence);
+  * numbers — `4` ×2 (the parameter table's table column);
+  * refs — `step-064` (hedge repeated at the top of the body).
+* **LOST lines that are not losses:** `number_order` ('3', '0.01', '3', '7', '4', '0.16', '0.1', '0.045',
+  '4', '0.3', '0.232', '0.089') is the parameter table plus the "Table 4 also lists" sentence: 0.01,
+  7°, 0.16, 0.1, 0.045 in the base order with their tables, then 0.3, 0.232, 0.089 unchanged.
+* **Marker coverage.** Flags read: list items under lead-in markers; clauses that had no marker of
+  their own (the step page's `TipAng` reading, "The table does not say …", "At the NA 0.48 low end …"
+  which keeps its own `asml-pas5500-275d`).
+* **Other edits.** "It also has two `cntm.nikon` checks" → "The page also has …" (new paragraph); the
+  dash pair "— on the step pages' readings the PMOS, the 5 V devices and the memory cells, none of which
+  takes the standard tip —" became its own sentence after "… consistent with the Table F2b rows above"
+  ("On the step pages' readings these are …", R-SENTENCE 1 and 7); ", puts them at" → "and puts them
+  at" and ", quotes ASML's statement" → ". It quotes …" (Exposure class); "Codella and Ogura added the
+  halo," → "and Codella and Ogura added the halo." and "Horsky resist outgassing …, and Ross et al." →
+  "and Horsky … . Ross et al. …" (study lists split in two).
+* **Over the caps after the pass:** two sentences the script over-counts (the `cntm.1`/`cntm.2` list and
+  the `cntm.nikon` sentence, both mostly quotations); the quick-facts Polarity cell. Before → after:
+  paragraphs 11 → 0, items 1 → 0, sentences 21 → 2, cells 1 → 1.
 * **Content problems for the owner:** none found.
