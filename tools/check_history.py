@@ -19,7 +19,8 @@ the history section is kept separate from the SKY130 reference.
 **Claims matrix.** ``data/history/claims.yaml`` lists the history's factual
 claims. Each claim names its page, an ``anchor`` (a phrase that must appear
 on that page), the footnote labels that carry it (each must be cited on that
-page), and its sources: evidence record ids in ``data/history/*.yaml``, each
+page), and its sources: evidence record ids in ``data/history/*.yaml`` or
+``data/filings.yaml``, each
 with the organisation it comes from (``origin``). The rules:
 
 * every source id exists in an evidence file;
@@ -69,6 +70,13 @@ def evidence_ids() -> set[str]:
             for rec in doc.get(key, []) or []:
                 if isinstance(rec, dict) and rec.get("id"):
                     ids.add(str(rec["id"]))
+    filings = ROOT / "data" / "filings.yaml"
+    if filings.exists():
+        # the site's verified filings dataset (tools/check_filings.py) may
+        # also be cited as evidence for a history claim
+        for rec in (yaml.safe_load(filings.read_text(encoding="utf-8")) or {}).get("filings", []) or []:
+            if isinstance(rec, dict) and rec.get("id"):
+                ids.add(str(rec["id"]))
     return ids
 
 

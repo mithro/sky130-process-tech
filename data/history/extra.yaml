@@ -269,3 +269,29 @@ records:
   notes: >-
     Captured with Chrome. Conflicts with Cypress's FY2002 and FY2003 annual reports, which call the
     joint Honeywell programme a "0.13-micron Silicon-On-Insulator" process.
+- id: cyx-pin152804-fab4-families
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: >-
+      Product Information Notification PIN152804, Qualification of GlobalWafer Silicon Wafers for
+      250nm, 130nm and 90nm Technology Products at Cypress Fab 4
+    date: 2015-07-12
+    form: Product Information Notification
+  url: https://media.futureelectronics.com/PCN/45887_SPCN.PDF
+  archive_url: null
+  retrieved: 2026-09-25
+  cache: web/pin152804.txt
+  quotes:
+  - text: >-
+      Cypress announces the qualification of GlobalWafer silicon wafers for the 250nm R7, 130nm
+      C8/R8/S8/L8 and 90nm C9/R9/R95 technology products at Cypress Fab 4 in Bloomington,
+      Minnesota.
+    location: page 1, Product Information
+  claims:
+  - {subject: R7, attribute: node, value: 250 nm, date: 2015}
+  - {subject: C8/R8/S8/L8, attribute: node, value: 130 nm, date: 2015}
+  - {subject: C9/R9/R95, attribute: node, value: 90 nm, date: 2015}
+  - {subject: Fab 4, attribute: families run in 2015, value: R7, C8, R8, S8, L8, C9, R9, R95, date: 2015}
+  notes: >-
+    Copy hosted by Future Electronics (also cited on the SKY130 overview as CYP-06). The notice's
+    affected-parts list has 3,049 part numbers but does not say which technology each part uses.
