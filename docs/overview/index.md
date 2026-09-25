@@ -17,205 +17,6 @@ the `sky130B` variant.
 sky130b-reram
 ```
 
-## What SKY130 is
-
-### A Cypress process in a former Cypress fab
-
-The PDK's *Background* page describes SKY130 as "a mature 180nm-130nm
-hybrid technology developed by Cypress Semiconductor that has been used
-for many production parts", now "available as a foundry technology
-through SkyWater Technology Foundry", and as "the 8th generation SONOS
-technology node (130nm)".[^pdk-02] The PDK's *Previous Nomenclature*
-page gives the older name: `s8` is "The old Cypress and SkyWater name
-for the SKY130 process. It stood for the "8th generation" of the SONOS
-technology developed originally by Cypress."[^pdk-previous] Cypress used
-the same name in public: a 2007 Electronics Weekly article calls it "Cypress's
-S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded
-nonvolatile memory technology",[^cyp-20] and a 2011 release still
-referred to "the current 130-nanometer S8™ process".[^cyp-22]
-
-The process was run in Cypress's Fab 4 in Bloomington, Minnesota.
-Cypress described Fab 4, where it was ramping its 0.13 µm technology in
-early 2003, as an "eight-inch wafer production facility",[^cyp-07] and a 2015
-Cypress notice qualified a new wafer supplier "for the 250nm R7, 130nm
-C8/R8/S8/L8 and 90nm C9/R9/R95 technology products at Cypress Fab 4 in
-Bloomington, Minnesota".[^cyp-06] On 2017-03-01 Cypress announced that it
-had sold "the subsidiary that owns its semiconductor wafer fabrication
-facility in Bloomington, Minnesota to SkyWater Technology
-Foundry",[^cyp-01] and SkyWater described what it had bought as "a 200mm
-semiconductor wafer manufacturing facility in Bloomington, Minn.",
-"Originally commissioned by Control Data Corporation in the
-1980s".[^skw-10] Wikipedia summarises the company's origin the same way:
-it "was formed in 2017, when private equity firm Oxbow Industries
-acquired Cypress Foundry Solutions".[^wiki-skywater] SkyWater lists "200
-mm equipment" for the Minnesota fab,[^skw-01] and its annual report for
-2023 says that the same 200 mm fab offers "CMOS process flows for a
-number of different node dimensions … ranging from 90 nm—350 nm", so
-SKY130 shares the line with other flows.[^sec-02]
-
-SkyWater's own product name for the process is S130: its platform table
-lists S130 as "130nm CMOS" on "200mm" wafers,[^skw-02] and SkyWater
-describes the open PDK as "known as SKY130 — based on SkyWater's volume
-130 nm CMOS technology".[^ann-13] This reference, like its step pages,
-treats S130 and SKY130 as the same process (inference from those two
-statements; SkyWater does not say that every S130 option is in the open
-PDK).
-
-### The open PDK
-
-The open PDK is "a collaboration between Google and SkyWater Technology
-Foundry to provide a fully open source Process Design Kit", released
-"under the Apache 2.0 license".[^pdk-10] It was announced in a FOSSi
-Foundation Dial-Up talk by Tim Ansell of Google, which the foundation
-reported on 2020-06-30 as the announcement of "SkyWater PDK, the first
-manufacturable, open source process design kit".[^ann-03] Wikipedia's
-article on the node records the same event: "In 2020, American
-semiconductor company SkyWater Technology, in conjunction with Google
-and eFabless, released their 130 nm process design kit as open-source
-under the Apache License."[^ann-17] A free shuttle programme followed; the
-announcement of November 2020 said that "Each shuttle run will have 40
-design slots (seats) and the first run is scheduled to launch in Q4
-2020".[^ann-10]
-
-The open PDK is the main public description of the process, and most
-of the numbers in this reference come from it: its design rules, its
-layer and mask tables, its device pages and electrical specifications,
-its extraction tables and its process stack diagram.[^pdk-03][^pdk-04]
-It is not a process description — it contains no recipes, and its
-thicknesses are drawn or tabulated for design, extraction and antenna
-calculations — which is why the step pages read each number for what
-it is.
-
-Measured silicon data are published too, in a separate raw-data
-repository: current–voltage and capacitance–voltage measurements
-"collected under contract by CoolCAD
-Electronics LLC using the manufacturing test tile created by
-SkyWater",[^raw-data-readme] and the pad documentation of that
-{term}`test tile`, whose 273 modules name contact and via chains,
-resistors, capacitors and transistors layer by layer and are quoted on
-the step pages as public examples of e-test-type structures; the
-repository does not say they are the structures measured at
-{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads] Among the
-measured files are sweeps of the 5 V, 16 V and 20 V transistors, the
-native and zero-threshold NMOS, the ESD NMOS and the thick-oxide
-gate capacitors. Thresholds, resistances, body-effect coefficients and
-oxide capacitance extracted from them are quoted on the step pages for
-the substrate ({ref}`SMAT <step-001>`), the gate oxide
-({ref}`GOX100 <step-043>`), the P-well block, drain-extended wells and
-depletion implant ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`,
-{ref}`DEPI <step-038>`) and electrical test ({ref}`HPETEST <step-171>`), each marked as our
-extraction rather than a published value; the files record no
-temperature, date or wafer.[^raw-data-hv-mosfets] The files for the five
-1.8 V transistor types (standard, low-Vt and high-Vt) are used the same
-way: measured thresholds, drain currents and body effect are quoted
-beside the e-test values at {ref}`HPETEST <step-171>`, on the
-threshold-implant pages ({ref}`LVTNM <step-014>`,
-{ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`,
-{ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`,
-{ref}`NCHI <step-045>`), for the gate-length dependence at
-{ref}`BHI <step-066>`, for deep N-well at {ref}`DNI <step-008>` and for
-the source/drain diffusion extent at {ref}`FILOX <step-011>`; they bear
-on the pages' readings of those steps but give no implant doses or
-depths.[^raw-data-lv-mosfets] The files for the tile's resistors, MiM
-capacitors, varactors and bipolar transistors are used in the same
-way. In our extraction from the published measurements the P+ precision
-poly resistors come out at about 310 Ω/sq ({ref}`PRI <step-053>`), the
-P− ones at about 1 940–1 970 Ω/sq ({ref}`UPRI <step-056>`) and the
-first MiM capacitor at 1.87 fF/µm² ({ref}`CAPILD <step-135>`); diffusion
-and well resistors, the second MiM capacitor, the varactors and the NPN
-are quoted at {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`,
-{ref}`DNM <step-007>`, {ref}`DNI <step-008>`, {ref}`NWI <step-018>`,
-{ref}`PWI <step-027>`, {ref}`CAPILD2 <step-150>`,
-{ref}`HVTPM <step-022>` and {ref}`LVGOX <step-047>`. These files too
-record no temperature, date or wafer.[^raw-data-passives]
-
-### What the process offers
-
-The PDK repository summarises the technology stack as "Support for
-internal 1.8V with 5.0V I/Os (operable at 2.5V)", "1 level of local
-interconnect", "5 levels of metal", "Is inductor-capable", "Has high
-sheet rho poly resistor", "Optional MiM capacitors", "Includes SONOS
-shrunken cell", "Supports 10V regulated supply" and "HV extended-drain
-NMOS and PMOS", and adds that SKY130 includes "many normally optional
-features as standard (features like the local interconnect, SONOS
-functionality, MiM capacitors, and more)".[^pdk-10] The [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
-page lists the stack as "5 levels of metal (p - penta)", "Inductor or
-Inductor-Capable (i)", "Poly resistor (r)", "SONOS shrunken cell
-(s)" and "Supports 10V regulated supply (10R)".[^pdk-02]
-
-The PDK's device pages document 1.8 V NMOS and PMOS transistors,
-low-threshold NMOS and PMOS and a high-threshold PMOS, 1.8 V
-accumulation-mode varactors, native NMOS at 3.0 V and 5.0 V,
-"5.0V/10.5V" NMOS and PMOS, a "10V/16V PMOS FET" and an "11V/16V NMOS
-FET", 20 V NMOS and PMOS (including native, zero-threshold and isolated
-NMOS), an ESD NMOS, diodes, NPN and PNP bipolar transistors, SRAM and
-{term}`SONOS` cells, generic and precision ("P+" and "P-") {term}`poly resistors <poly resistor>`,
-{term}`MiM capacitors <MiM capacitor>` and vertical parallel-plate
-capacitors.[^pdk-07] SkyWater's S130 platform table, re-read on
-2026-09-13, gives the same process in foundry terms: metal "5: Al",
-local interconnect "1", top metal "1.2 µm", "Mask Steps" "30 – 34",
-isolation "STI", gate "Poly", core voltage "1.8V", I/O "3.3V, 5.0V",
-high voltage "20+V, Drain-Extended CMOS (16V)", MiM capacitor "Yes",
-precision resistors "2000Ω/□ 300Ω/□ (Both P-poly)" and a "Bulk"
-substrate.[^skw-02]
-
-Each of these features has a visible cost in the step list, and the
-module table below shows where: the two gate-oxide thicknesses need a
-mask of their own ({ref}`LVOM <step-044>`); the {term}`drain-extended <DEMOS>` devices
-need their own P-well mask and blocked regions in the P-well block mask
-({ref}`PWDEM <step-030>`, {ref}`PWBM <step-026>`); the SONOS cell needs a tunnel window, an ONO
-island and its own tip implant ({ref}`TUNM <step-035>`,
-{ref}`ONOM <step-041>`, {ref}`LDNTM <step-071>`); the precision
-resistors need three implant masks ({ref}`RPM <step-049>`,
-{ref}`RRPM <step-052>`, {ref}`URPM <step-055>`); the local interconnect
-needs a contact and a line mask ({ref}`LICM1 <step-093>`,
-{ref}`LI1M <step-102>`); and each MiM capacitor needs a plate mask
-({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`). These pairings
-rest on the PDK's descriptions of the corresponding layers, as set out on
-each step page. Three further features differ from the copper, salicided
-processes of leading-edge 130 nm logic (our characterisation). Its interconnect is aluminium ("5:
-Al"[^skw-02]), which the step pages describe as patterned
-{term}`subtractively <subtractive metallisation>` over tungsten plugs
-rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
-{ref}`MM1E <step-114>`). Its gates and diffusions carry, on the step
-pages' reading of the unsilicided poly and diffusion
-{term}`sheet resistances <sheet resistance>`,[^pdk-08] no
-{term}`salicide`, only a {term}`silicide` at the bottom
-of each contact ({ref}`CSIL <step-098>`; inference). And both its NMOS
-and PMOS gates are, on the reading of the {ref}`P1I <step-050>` page,
-n⁺ poly (inference).
-
-### Variants and options
-
-The open-source build scripts distribute the PDK in two variants:
-"sky130A = 5-metal backend stack with dual MiM" and "sky130B = 5-metal
-backend stack with dual MiM and ReRAM".[^opdks-makefile] The second has
-existed "From open_pdks version 1.0.269",[^opdks-readme] and SkyWater's
-documentation of the ReRAM device is marked "Initial documentation only
-release".[^reram-index] This reference describes `sky130A`; the ReRAM
-tier, which is not in the step list, has its own page,
-{ref}`overview-sky130b-reram`.
-
-The PDK's older process names show how optional modules were once
-named: `s8pfhd`, "The base process. 5 metal layer backend stack, 16V
-devices, deep nwell"; `s8phirs`, "The base process plus rdl layer and
-rdl metal inductors"; `s8phrc`, "The base process plus dual MiM cap
-layers on metal 3 and metal 4"; and `s8pfn-20`, "The base process plus
-UHV (ultra-high voltage) implants for 20V device support".[^pdk-previous]
-The PDK documents thicker top metals only in entries labelled with other
-flow names. The antenna-calculation table gives
-"Metal5 thickness for antenna ratio calculation (S8P\*/SP8P\* with 2um
-thick metal)" as 2 µm beside a 1.2 µm entry "with 1.2um thick metal", a
-2 µm metal 3 for the "S8TM\* flow" and a 2 µm metal 4 for "S8Q\*/SP8Q";[^pdk-03]
-the mask table lists "Metal 3-S8TM" and "Via 2-S8TM" variants without the
-"Used in SKY130" mark.[^pdk-05] The step pages read SKY130 as the
-1.2 µm-metal-5 flow and the 2 µm entries as belonging to other flows
-({ref}`WTIAL3 <step-134>`, {ref}`WTIAL5 <step-161>`; inference), which
-agrees with the "1.2 µm" top metal in SkyWater's S130 table.[^skw-02] The
-same mask table marks as used in SKY130 three masks for polyimide and
-copper redistribution layers that have no step in the step list
-({ref}`masks-index`).[^pdk-05]
-
 ## How to read this reference
 
 ### The step list
@@ -542,6 +343,399 @@ opened ({ref}`PDM <step-168>`, {ref}`PDME <step-169>`), the wafer
 receives a final {term}`alloy anneal` ({ref}`ALLY <step-170>`) and the
 {term}`e-test` structures are measured ({ref}`HPETEST <step-171>`).
 
+(overview-cross-section)=
+## A simplified cross-section
+
+The most complete public drawing of the SKY130 stack is the PDK's
+process stack diagram.[^pdk-04] It is marked "(Diagram not to scale!)" and labels
+each conductor with a thickness, each dielectric with a name and a
+relative permittivity ("K"), some dielectric intervals with a height,
+and some interfaces with a level above the diagram's zero, whose datum
+the drawing does not state (the {ref}`STIE <step-006>` page reads it as
+the trench floor). Reading it from the bottom up, with the step pages:
+
+* **Silicon.** A p-type bulk wafer ("p-substrate" on the
+  diagram[^pdk-04]) carries the N-wells, P-wells and deep N-wells of the
+  well module and the shallow source/drain junctions, 0.1 µm deep in the
+  PDK's assumptions.[^pdk-03] The field between active areas is the STI
+  oxide, "FOX K=3.9", which stands 0.07 µm above the silicon under
+  poly.[^pdk-04][^pdk-03]
+* **Transistors.** On the active silicon lie the gate oxides (and, in
+  the memory cells, the ONO stack, which the diagram does not draw), the
+  0.18 µm poly gate with its nitride/oxide cap, and the sidewall
+  spacers, labelled "SPNIT K=7.5".[^pdk-04]
+* **Middle of line.** A phosphosilicate glass ("PSG K=3.9") buries the
+  transistors; tungsten-filled `licon` contacts pass through it to the
+  titanium-nitride local interconnect `li`, which is capped by the
+  "LINT K=7.3" nitride and buried in "NILD2 K=4.05".[^pdk-04]
+* **Back end.** Five aluminium levels alternate with oxide dielectrics
+  "NILD3" to "NILD6", with tungsten plugs (`mcon`, `via1`–`via3`) and the
+  wider via 4 between them; the two capacitor plates `capm` and `cap2m`
+  sit in the dielectric above metal 3 and metal 4.[^pdk-04]
+* **Passivation.** A thin "TOPOX K=3.9" oxide and a thicker "TOPNIT
+  K=7.5" nitride cover metal 5, with a "glass cut" over the pad, and a
+  polyimide "PI1 K=2.94" is drawn on top.[^pdk-04] The step list has no
+  polyimide step, although SkyWater's S130 table gives polyimide
+  "Yes".[^skw-02]
+
+:::{figure} /_static/figures/chart-beol-stack.svg
+:alt: A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and finally a thin oxide under a thicker nitride.
+:width: 560px
+:name: fig-chart-beol-stack
+
+The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale and adds nothing to them, except that it follows this page's reading of the 1.0111 µm label as the top of the LINT beside li.[^pdk-04] The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
+:::
+
+The table lists the levels bottom to top with the thicknesses and
+heights the step pages quote. Dielectric heights are the diagram's
+labels for the intervals between conductors, not deposited thicknesses;
+where no number is given, none is public.
+
+| Level (bottom to top) | PDK name or description | Thickness quoted | Level on the diagram (µm) | Built at |
+|-----------------------|-------------------------|------------------|---------------------------|----------|
+| Substrate and wells | "p-substrate";[^pdk-04] "Bulk"[^skw-02] | N-well baseline vertical dimension 1.1 µm; P-well 0.75 µm; S/D junction 0.1 µm[^pdk-03] | — | {ref}`SMAT <step-001>`; {ref}`LVTNM <step-014>` – {ref}`RTAI <step-034>`; {ref}`PSDM <step-081>` – {ref}`RTAD <step-088>` |
+| Field oxide | "FOX K=3.9"[^pdk-04] | 0.07 µm above the silicon under poly[^pdk-03] | top 0.3262[^pdk-04] | {ref}`BOX <step-002>` – {ref}`NS19 <step-013>` |
+| Gate dielectrics | thin and thick gate oxide; ONO in SONOS cells | 110 Å (5 V and high-voltage devices);[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V);[^pdk-model-nfet01v8][^pdk-model-nfet5v] ONO not public | — | {ref}`ONO <step-040>`; {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` |
+| Gate and resistor poly | "polysilicon"[^pdk-04] | 0.18 µm[^pdk-03][^pdk-04] | — | {ref}`SAGD <step-048>` – {ref}`P1ME <step-062>` |
+| Gate cap and spacers | "SPNIT K=7.5"[^pdk-04] | "poly cap after SPE" 0.2 µm; "oxide spacer" 0.05 µm[^pdk-03] | — | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; {ref}`SPNIT <step-076>` – {ref}`SPOX <step-080>` |
+| Pre-metal dielectric | "PSG K=3.9"[^pdk-04] | 0.6099 µm from the field-oxide top to the `li` bottom and 0.4299 µm from the field-poly top to the `li` bottom;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | {ref}`PSG <step-089>` – {ref}`NCAPOX <step-091>` |
+| Local interconnect | `li` (TiN[^ann-16]) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
+| Local-interconnect cap | "LINT K=7.3"[^pdk-04] | 0.075 µm[^pdk-04] | 1.0111, read as its top beside `li` (see below)[^pdk-04] | {ref}`LINIT <step-104>` |
+| Dielectric to metal 1 (`mcon`) | "NILD2 K=4.05"[^pdk-04] | 0.265 µm[^pdk-04] | — | {ref}`NILD2 <step-105>` – {ref}`WCMP2 <step-111>` |
+| Metal 1 | `metal1` | 0.36 µm[^pdk-04] | bottom 1.3761[^pdk-04] | {ref}`TIAL6 <step-112>` – {ref}`MM1E <step-114>` |
+| Via 1 | "NILD3 K=4.5", "NILD3_C K=3.5"[^pdk-04] | via 0.27 µm; NILD3_C 0.030 µm[^pdk-04] | — | {ref}`NILD3 <step-115>` – {ref}`WCMP3 <step-122>` |
+| Metal 2 | `metal2` | 0.36 µm[^pdk-04] | bottom 2.0061[^pdk-04] | {ref}`TIAL12 <step-123>` – {ref}`MM2E <step-125>` |
+| Via 2 | "NILD4 K=4.2", "NILD4_C K=3.5"[^pdk-04] | via 0.42 µm; NILD4_C 0.030 µm[^pdk-04] | — | {ref}`NILD4 <step-126>` – {ref}`WCMP4 <step-133>` |
+| Metal 3 | `metal3` | 0.845 µm[^pdk-04] | bottom 2.7861[^pdk-04] | {ref}`WTIAL3 <step-134>`, {ref}`MM3 <step-139>`, {ref}`MM3E <step-140>` |
+| First MiM capacitor | `capm`[^pdk-04] | not labelled;[^pdk-04] 2 fF/µm²[^pdk-07] | — | {ref}`CAPILD <step-135>` – {ref}`CAPME <step-138>` |
+| Via 3 | "NILD5 K=4.1"[^pdk-04] | via 0.39 µm[^pdk-04] | — | {ref}`NILD5 <step-141>` – {ref}`WCMP5 <step-148>` |
+| Metal 4 | `metal4` | 0.845 µm[^pdk-04] | bottom 4.0211[^pdk-04] | {ref}`WTIAL4 <step-149>`, {ref}`MM4 <step-154>`, {ref}`MM4E <step-155>` |
+| Second MiM capacitor | `cap2m`[^pdk-04] | not labelled;[^pdk-04] 2 fF/µm²[^pdk-07] | — | {ref}`CAPILD2 <step-150>` – {ref}`CAP2ME <step-153>` |
+| Via 4 | "NILD6 K=4.0"[^pdk-04] | via 0.505 µm[^pdk-04] | — | {ref}`NILD6 <step-156>` – {ref}`VIM4E <step-160>` |
+| Metal 5 | `metal5` | 1.26 µm[^pdk-04] | bottom 5.3711[^pdk-04] | {ref}`WTIAL5 <step-161>` – {ref}`MM5E <step-163>` |
+| Passivation oxide | "TOPOX K=3.9"[^pdk-04] | 0.09 µm on the metal, 0.070 µm on its sidewall[^pdk-04] | — | {ref}`NFUSOX <step-164>` |
+| Passivation nitride | "TOPNIT K=7.5"[^pdk-04] | 0.54 µm on the metal, 0.4223 µm on its sidewall on the diagram;[^pdk-04] the {ref}`NTSD <step-167>` page reads 0.5–0.9 µm, the Cypress reports for this fab giving 0.7–0.9 µm[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807] | — | {ref}`NTSD <step-167>` |
+| Polyimide | "PI1 K=2.94"[^pdk-04] | — | top 11.8834[^pdk-04] | no step in the step list |
+
+Most of the labels are consistent with one another. From metal 1
+upwards each metal bottom equals the one below plus that metal's
+thickness plus the via height (1.3761 + 0.36 + 0.27 = 2.0061 µm, and so
+on to 4.0211 + 0.845 + 0.505 = 5.3711 µm), and the PSG labels equal the
+distance from the field-oxide top to the `li` bottom (0.9361 − 0.3262 =
+0.6099 µm) and that distance less the 0.18 µm poly (0.4299 µm) (our
+arithmetic from the labels[^pdk-04]). Below metal 1 the labels add up
+too: the `li` bottom (0.9361 µm) plus the 0.1 µm `li`, the 0.075 µm LINT
+and the 0.265 µm NILD2 gives exactly the 1.3761 µm metal-1 bottom (our
+arithmetic from the labels[^pdk-04]). One label does not fit that
+reading. The 1.0111 µm level is 0.075 µm above the `li` bottom, not
+0.1 µm; the diagram, being not to scale, draws the top of `li` and the
+top of the LINT on the glass beside it at the same height, and the
+label's leader line runs to the LINT rather than to `li`. We therefore
+read 1.0111 µm as the top of the LINT beside `li` (0.9361 + 0.075 µm),
+which fits every other label and leaves 0.34 µm from the `li` top to
+metal 1 (our reading of the drawing[^pdk-04]; the
+{ref}`LITIN <step-101>`, {ref}`NILD2 <step-105>`, {ref}`CTM1 <step-107>`
+and {ref}`CTME <step-108>` pages follow it). The public values for some films also disagree with other public
+sources; those differences are among the open questions below.
+
+(overview-phases)=
+## Front end, middle of line and back end
+
+Every step page's summary table gives the step a phase and a module
+name. The boundaries are this reference's, drawn where the kind of work
+changes:
+
+| Phase | Steps | Number of steps | Modules as named on the step pages |
+|-------|-------|-----------------|------------------------------------|
+| {term}`FEOL` | {ref}`SMAT <step-001>` – {ref}`RTAD <step-088>` | 88 | isolation; wells and channel implants; SONOS and gate dielectrics; gate and poly resistors; extensions, spacers, source/drain |
+| {term}`MOL` | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | silicide and local interconnect |
+| {term}`BEOL` | {ref}`CTM1 <step-107>` – {ref}`HPETEST <step-171>` | 65 | contact and metal 1; via 1, metal 2, via 2; MiM capacitors, metal 3–5, via 3–4; passivation, pads, alloy, test |
+
+The front end ends with the last source/drain anneal, when every
+junction is in place. The middle of line runs from the pre-metal glass
+to the polished dielectric over the local interconnect, so it contains
+the first contacts (`licon`) and the local interconnect itself. The back
+end starts with the metal-contact mask and, in this reference, includes
+the passivation, the final alloy and electrical test. Two consequences
+of these choices are worth knowing when comparing with other sources:
+in common usage the back end runs from the first contact through the
+final passivation, whereas this reference counts the first contact
+level as middle of line; and general descriptions place wafer testing
+after the back end, whereas this reference files
+{ref}`HPETEST <step-171>` under BEOL. The {ref}`glossary` and the
+{ref}`test category page <category-test>` state both. The deposition of the metal-3 stack,
+{ref}`WTIAL3 <step-134>`, is also filed with via 2 rather than with the
+capacitor and metal-3 steps that follow it.
+
+### Thermal budget
+
+The order of a CMOS flow is set largely by {term}`thermal budget`: once a
+junction or film is in place, every later step must stay within what it
+tolerates, so the hottest steps broadly come first and the flow cools
+as it goes. The step list gives no temperatures, and SKY130's are not public;
+the values below are typical ones from the category pages and their
+sources, in the order in which the thermal steps occur.
+
+1. **Isolation.** The pad and liner oxidations ({ref}`BOX <step-002>`,
+   {ref}`LINOX <step-010>`) and the nitride hard mask
+   ({ref}`ISONIT <step-003>`) are read on their step pages as furnace steps: thermal oxidation runs
+   at 800–1200 °C[^wiki-thox] and {term}`LPCVD` nitride at roughly
+   700–800 °C (typical value),[^txt-02] a tube-furnace process that
+   Wikipedia describes as working "at rather high
+   temperature".[^wiki-sin] On the
+   {ref}`DNM <step-007>` page's reading, this heat also drives the deep
+   N-well implanted just before the liner oxidation.
+2. **Well anneal.** {ref}`RTAI <step-034>` activates the ten well and
+   channel implants at once; the step page reads it as a rapid thermal
+   anneal, for which seconds at 1000–1100 °C is typical.[^stolk-1997]
+3. **SONOS stack.** One embodiment of a Cypress ONO patent forms all
+   three layers at temperatures "from about 700° C. to about 875° C."
+   ({ref}`ONO <step-040>`).[^pat-01]
+4. **Gate oxides.** Gate oxides of this era are typically grown dry at
+   750–950 °C ({ref}`GOX100 <step-043>`,
+   {ref}`LVGOX <step-047>`);[^txt-01] Cypress's integration patent, which
+   may still be in force, adds what that oxidation does for the ONO (the
+   collapsed note above).
+5. **Gate film.** Silicon deposited at low temperature and at a rate
+   above the critical value is amorphous (typical value; the
+   amorphous/polycrystalline boundary depends on rate as well as
+   temperature);[^voutsas-1992] the
+   {ref}`SAGD <step-048>` page reads
+   SKY130's gate film as amorphous from SkyWater's "LPCVD polysilicon
+   (undoped), both amorphous and crystalline"[^skw-01] (inference); the caps and the post-etch re-oxidation
+   ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`,
+   {ref}`IOX45 <step-063>`) follow, at conditions that are not public.
+6. **Junction anneals.** Rapid thermal anneals follow the tip and
+   source/drain implants ({ref}`TIPRTAD <step-075>`,
+   {ref}`RTAD <step-088>`), and a second one follows the polished glass
+   ({ref}`RTAD2 <step-092>`, whose two possible purposes — a final
+   source/drain anneal or a dielectric anneal — the step page
+   discusses as inferences); a soak of
+   1000–1050 °C for a few seconds, or a spike, is the typical 130 nm-era
+   choice.[^txt-05][^txt-10] After them the junctions — 0.1 µm deep in
+   the PDK's assumptions[^pdk-03] — must not move, and every later step
+   is cooler (inference from the order).
+7. **Contact module.** An anneal that the step page reads as a
+   hydrogen-bearing alloy anneal, typically 350–450 °C,[^txt-02] precedes
+   the contact liner ({ref}`ALLY1 <step-096>`), and the anneal read as the
+   contact silicidation follows it ({ref}`CSIL <step-098>`); titanium disilicide is typically formed by a
+   first anneal at roughly 600–700 °C and converted to its
+   low-resistance phase at roughly 800–900 °C.[^maex-1993] How SKY130's
+   silicidation is done is not public.
+8. **Back end.** Once aluminium is on the wafer, from
+   {ref}`TIAL6 <step-112>` onwards, depositions typically stay below
+   about 450 °C;[^txt-02] tungsten CVD for the plugs runs at roughly
+   400–450 °C (typical value),[^txt-01] the low end of the "300 and
+   800 °C" that Wikipedia gives for hydrogen reduction of
+   WF₆.[^wiki-wf6] The oxide, nitride and
+   capacitor films of the back end are described on their step pages as
+   low-temperature plasma depositions (inference).
+9. **Final alloy.** The last heat is the alloy anneal
+   ({ref}`ALLY <step-170>`), read as a {term}`forming-gas <forming gas>` anneal, typically
+   350–450 °C.[^txt-02] In the
+   `sky130B` variant every thermal step after the ReRAM stack is also
+   seen by its 5 nm switching oxide (0.005 µm in the ReRAM tech file,
+   {ref}`overview-sky130b-reram`).
+
+## What SKY130 is
+
+### A Cypress process in a former Cypress fab
+
+The PDK's *Background* page describes SKY130 as "a mature 180nm-130nm
+hybrid technology developed by Cypress Semiconductor that has been used
+for many production parts", now "available as a foundry technology
+through SkyWater Technology Foundry", and as "the 8th generation SONOS
+technology node (130nm)".[^pdk-02] The PDK's *Previous Nomenclature*
+page gives the older name: `s8` is "The old Cypress and SkyWater name
+for the SKY130 process. It stood for the "8th generation" of the SONOS
+technology developed originally by Cypress."[^pdk-previous] Cypress used
+the same name in public: a 2007 Electronics Weekly article calls it "Cypress's
+S8(tm) 0.13-micron SONOS (Silicon Oxide Nitride Oxide Silicon) embedded
+nonvolatile memory technology",[^cyp-20] and a 2011 release still
+referred to "the current 130-nanometer S8™ process".[^cyp-22]
+
+The process was run in Cypress's Fab 4 in Bloomington, Minnesota.
+Cypress described Fab 4, where it was ramping its 0.13 µm technology in
+early 2003, as an "eight-inch wafer production facility",[^cyp-07] and a 2015
+Cypress notice qualified a new wafer supplier "for the 250nm R7, 130nm
+C8/R8/S8/L8 and 90nm C9/R9/R95 technology products at Cypress Fab 4 in
+Bloomington, Minnesota".[^cyp-06] On 2017-03-01 Cypress announced that it
+had sold "the subsidiary that owns its semiconductor wafer fabrication
+facility in Bloomington, Minnesota to SkyWater Technology
+Foundry",[^cyp-01] and SkyWater described what it had bought as "a 200mm
+semiconductor wafer manufacturing facility in Bloomington, Minn.",
+"Originally commissioned by Control Data Corporation in the
+1980s".[^skw-10] Wikipedia summarises the company's origin the same way:
+it "was formed in 2017, when private equity firm Oxbow Industries
+acquired Cypress Foundry Solutions".[^wiki-skywater] SkyWater lists "200
+mm equipment" for the Minnesota fab,[^skw-01] and its annual report for
+2023 says that the same 200 mm fab offers "CMOS process flows for a
+number of different node dimensions … ranging from 90 nm—350 nm", so
+SKY130 shares the line with other flows.[^sec-02]
+
+SkyWater's own product name for the process is S130: its platform table
+lists S130 as "130nm CMOS" on "200mm" wafers,[^skw-02] and SkyWater
+describes the open PDK as "known as SKY130 — based on SkyWater's volume
+130 nm CMOS technology".[^ann-13] This reference, like its step pages,
+treats S130 and SKY130 as the same process (inference from those two
+statements; SkyWater does not say that every S130 option is in the open
+PDK).
+
+### The open PDK
+
+The open PDK is "a collaboration between Google and SkyWater Technology
+Foundry to provide a fully open source Process Design Kit", released
+"under the Apache 2.0 license".[^pdk-10] It was announced in a FOSSi
+Foundation Dial-Up talk by Tim Ansell of Google, which the foundation
+reported on 2020-06-30 as the announcement of "SkyWater PDK, the first
+manufacturable, open source process design kit".[^ann-03] Wikipedia's
+article on the node records the same event: "In 2020, American
+semiconductor company SkyWater Technology, in conjunction with Google
+and eFabless, released their 130 nm process design kit as open-source
+under the Apache License."[^ann-17] A free shuttle programme followed; the
+announcement of November 2020 said that "Each shuttle run will have 40
+design slots (seats) and the first run is scheduled to launch in Q4
+2020".[^ann-10]
+
+The open PDK is the main public description of the process, and most
+of the numbers in this reference come from it: its design rules, its
+layer and mask tables, its device pages and electrical specifications,
+its extraction tables and its process stack diagram.[^pdk-03][^pdk-04]
+It is not a process description — it contains no recipes, and its
+thicknesses are drawn or tabulated for design, extraction and antenna
+calculations — which is why the step pages read each number for what
+it is.
+
+Measured silicon data are published too, in a separate raw-data
+repository: current–voltage and capacitance–voltage measurements
+"collected under contract by CoolCAD
+Electronics LLC using the manufacturing test tile created by
+SkyWater",[^raw-data-readme] and the pad documentation of that
+{term}`test tile`, whose 273 modules name contact and via chains,
+resistors, capacitors and transistors layer by layer and are quoted on
+the step pages as public examples of e-test-type structures; the
+repository does not say they are the structures measured at
+{ref}`HPETEST <step-171>`.[^raw-data-testtile-pads] Among the
+measured files are sweeps of the 5 V, 16 V and 20 V transistors, the
+native and zero-threshold NMOS, the ESD NMOS and the thick-oxide
+gate capacitors. Thresholds, resistances, body-effect coefficients and
+oxide capacitance extracted from them are quoted on the step pages for
+the substrate ({ref}`SMAT <step-001>`), the gate oxide
+({ref}`GOX100 <step-043>`), the P-well block, drain-extended wells and
+depletion implant ({ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`,
+{ref}`DEPI <step-038>`) and electrical test ({ref}`HPETEST <step-171>`), each marked as our
+extraction rather than a published value; the files record no
+temperature, date or wafer.[^raw-data-hv-mosfets] The files for the five
+1.8 V transistor types (standard, low-Vt and high-Vt) are used the same
+way: measured thresholds, drain currents and body effect are quoted
+beside the e-test values at {ref}`HPETEST <step-171>`, on the
+threshold-implant pages ({ref}`LVTNM <step-014>`,
+{ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`,
+{ref}`PCHI <step-023>`, {ref}`PNCHI <step-024>`,
+{ref}`NCHI <step-045>`), for the gate-length dependence at
+{ref}`BHI <step-066>`, for deep N-well at {ref}`DNI <step-008>` and for
+the source/drain diffusion extent at {ref}`FILOX <step-011>`; they bear
+on the pages' readings of those steps but give no implant doses or
+depths.[^raw-data-lv-mosfets] The files for the tile's resistors, MiM
+capacitors, varactors and bipolar transistors are used in the same
+way. In our extraction from the published measurements the P+ precision
+poly resistors come out at about 310 Ω/sq ({ref}`PRI <step-053>`), the
+P− ones at about 1 940–1 970 Ω/sq ({ref}`UPRI <step-056>`) and the
+first MiM capacitor at 1.87 fF/µm² ({ref}`CAPILD <step-135>`); diffusion
+and well resistors, the second MiM capacitor, the varactors and the NPN
+are quoted at {ref}`PSDI <step-082>`, {ref}`NSDI <step-086>`,
+{ref}`DNM <step-007>`, {ref}`DNI <step-008>`, {ref}`NWI <step-018>`,
+{ref}`PWI <step-027>`, {ref}`CAPILD2 <step-150>`,
+{ref}`HVTPM <step-022>` and {ref}`LVGOX <step-047>`. These files too
+record no temperature, date or wafer.[^raw-data-passives]
+
+### What the process offers
+
+The PDK repository summarises the technology stack as "Support for
+internal 1.8V with 5.0V I/Os (operable at 2.5V)", "1 level of local
+interconnect", "5 levels of metal", "Is inductor-capable", "Has high
+sheet rho poly resistor", "Optional MiM capacitors", "Includes SONOS
+shrunken cell", "Supports 10V regulated supply" and "HV extended-drain
+NMOS and PMOS", and adds that SKY130 includes "many normally optional
+features as standard (features like the local interconnect, SONOS
+functionality, MiM capacitors, and more)".[^pdk-10] The [*Background*](<https://skywater-pdk.readthedocs.io/en/main/rules/background.html>)
+page lists the stack as "5 levels of metal (p - penta)", "Inductor or
+Inductor-Capable (i)", "Poly resistor (r)", "SONOS shrunken cell
+(s)" and "Supports 10V regulated supply (10R)".[^pdk-02]
+
+The PDK's device pages document 1.8 V NMOS and PMOS transistors,
+low-threshold NMOS and PMOS and a high-threshold PMOS, 1.8 V
+accumulation-mode varactors, native NMOS at 3.0 V and 5.0 V,
+"5.0V/10.5V" NMOS and PMOS, a "10V/16V PMOS FET" and an "11V/16V NMOS
+FET", 20 V NMOS and PMOS (including native, zero-threshold and isolated
+NMOS), an ESD NMOS, diodes, NPN and PNP bipolar transistors, SRAM and
+{term}`SONOS` cells, generic and precision ("P+" and "P-") {term}`poly resistors <poly resistor>`,
+{term}`MiM capacitors <MiM capacitor>` and vertical parallel-plate
+capacitors.[^pdk-07] SkyWater's S130 platform table, re-read on
+2026-09-13, gives the same process in foundry terms: metal "5: Al",
+local interconnect "1", top metal "1.2 µm", "Mask Steps" "30 – 34",
+isolation "STI", gate "Poly", core voltage "1.8V", I/O "3.3V, 5.0V",
+high voltage "20+V, Drain-Extended CMOS (16V)", MiM capacitor "Yes",
+precision resistors "2000Ω/□ 300Ω/□ (Both P-poly)" and a "Bulk"
+substrate.[^skw-02]
+
+Each of these features has a visible cost in the step list, and the
+module table below shows where: the two gate-oxide thicknesses need a
+mask of their own ({ref}`LVOM <step-044>`); the {term}`drain-extended <DEMOS>` devices
+need their own P-well mask and blocked regions in the P-well block mask
+({ref}`PWDEM <step-030>`, {ref}`PWBM <step-026>`); the SONOS cell needs a tunnel window, an ONO
+island and its own tip implant ({ref}`TUNM <step-035>`,
+{ref}`ONOM <step-041>`, {ref}`LDNTM <step-071>`); the precision
+resistors need three implant masks ({ref}`RPM <step-049>`,
+{ref}`RRPM <step-052>`, {ref}`URPM <step-055>`); the local interconnect
+needs a contact and a line mask ({ref}`LICM1 <step-093>`,
+{ref}`LI1M <step-102>`); and each MiM capacitor needs a plate mask
+({ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`). These pairings
+rest on the PDK's descriptions of the corresponding layers, as set out on
+each step page. Three further features differ from the copper, salicided
+processes of leading-edge 130 nm logic (our characterisation). Its interconnect is aluminium ("5:
+Al"[^skw-02]), which the step pages describe as patterned
+{term}`subtractively <subtractive metallisation>` over tungsten plugs
+rather than as copper {term}`damascene` ({ref}`TIAL6 <step-112>`,
+{ref}`MM1E <step-114>`). Its gates and diffusions carry, on the step
+pages' reading of the unsilicided poly and diffusion
+{term}`sheet resistances <sheet resistance>`,[^pdk-08] no
+{term}`salicide`, only a {term}`silicide` at the bottom
+of each contact ({ref}`CSIL <step-098>`; inference). And both its NMOS
+and PMOS gates are, on the reading of the {ref}`P1I <step-050>` page,
+n⁺ poly (inference).
+
+### Variants and options
+
+The open-source build scripts distribute the PDK in two variants:
+"sky130A = 5-metal backend stack with dual MiM" and "sky130B = 5-metal
+backend stack with dual MiM and ReRAM".[^opdks-makefile] The second has
+existed "From open_pdks version 1.0.269",[^opdks-readme] and SkyWater's
+documentation of the ReRAM device is marked "Initial documentation only
+release".[^reram-index] This reference describes `sky130A`; the ReRAM
+tier, which is not in the step list, has its own page,
+{ref}`overview-sky130b-reram`.
+
+The PDK's older process names show how optional modules were once
+named: `s8pfhd`, "The base process. 5 metal layer backend stack, 16V
+devices, deep nwell"; `s8phirs`, "The base process plus rdl layer and
+rdl metal inductors"; `s8phrc`, "The base process plus dual MiM cap
+layers on metal 3 and metal 4"; and `s8pfn-20`, "The base process plus
+UHV (ultra-high voltage) implants for 20V device support".[^pdk-previous]
+The PDK documents thicker top metals only in entries labelled with other
+flow names. The antenna-calculation table gives
+"Metal5 thickness for antenna ratio calculation (S8P\*/SP8P\* with 2um
+thick metal)" as 2 µm beside a 1.2 µm entry "with 1.2um thick metal", a
+2 µm metal 3 for the "S8TM\* flow" and a 2 µm metal 4 for "S8Q\*/SP8Q";[^pdk-03]
+the mask table lists "Metal 3-S8TM" and "Via 2-S8TM" variants without the
+"Used in SKY130" mark.[^pdk-05] The step pages read SKY130 as the
+1.2 µm-metal-5 flow and the 2 µm entries as belonging to other flows
+({ref}`WTIAL3 <step-134>`, {ref}`WTIAL5 <step-161>`; inference), which
+agrees with the "1.2 µm" top metal in SkyWater's S130 table.[^skw-02] The
+same mask table marks as used in SKY130 three masks for polyimide and
+copper redistribution layers that have no step in the step list
+({ref}`masks-index`).[^pdk-05]
+
 (overview-metal-cap)=
 ## The metal cap and barrier question
 
@@ -801,200 +995,6 @@ SkyWater or Cypress document that says which levels of a five-metal S8P
 flow the February 2014 exclusion covers; a published cross-section or
 materials analysis of a SKY130 die; or a PDK release that adds film
 materials to the process stack diagram. None of these is public.
-
-(overview-cross-section)=
-## A simplified cross-section
-
-The most complete public drawing of the SKY130 stack is the PDK's
-process stack diagram.[^pdk-04] It is marked "(Diagram not to scale!)" and labels
-each conductor with a thickness, each dielectric with a name and a
-relative permittivity ("K"), some dielectric intervals with a height,
-and some interfaces with a level above the diagram's zero, whose datum
-the drawing does not state (the {ref}`STIE <step-006>` page reads it as
-the trench floor). Reading it from the bottom up, with the step pages:
-
-* **Silicon.** A p-type bulk wafer ("p-substrate" on the
-  diagram[^pdk-04]) carries the N-wells, P-wells and deep N-wells of the
-  well module and the shallow source/drain junctions, 0.1 µm deep in the
-  PDK's assumptions.[^pdk-03] The field between active areas is the STI
-  oxide, "FOX K=3.9", which stands 0.07 µm above the silicon under
-  poly.[^pdk-04][^pdk-03]
-* **Transistors.** On the active silicon lie the gate oxides (and, in
-  the memory cells, the ONO stack, which the diagram does not draw), the
-  0.18 µm poly gate with its nitride/oxide cap, and the sidewall
-  spacers, labelled "SPNIT K=7.5".[^pdk-04]
-* **Middle of line.** A phosphosilicate glass ("PSG K=3.9") buries the
-  transistors; tungsten-filled `licon` contacts pass through it to the
-  titanium-nitride local interconnect `li`, which is capped by the
-  "LINT K=7.3" nitride and buried in "NILD2 K=4.05".[^pdk-04]
-* **Back end.** Five aluminium levels alternate with oxide dielectrics
-  "NILD3" to "NILD6", with tungsten plugs (`mcon`, `via1`–`via3`) and the
-  wider via 4 between them; the two capacitor plates `capm` and `cap2m`
-  sit in the dielectric above metal 3 and metal 4.[^pdk-04]
-* **Passivation.** A thin "TOPOX K=3.9" oxide and a thicker "TOPNIT
-  K=7.5" nitride cover metal 5, with a "glass cut" over the pad, and a
-  polyimide "PI1 K=2.94" is drawn on top.[^pdk-04] The step list has no
-  polyimide step, although SkyWater's S130 table gives polyimide
-  "Yes".[^skw-02]
-
-:::{figure} /_static/figures/chart-beol-stack.svg
-:alt: A single column of layers drawn to scale beside a vertical axis in micrometres, from the top of the field oxide up to the top of the passivation nitride: a thick pre-metal dielectric, the thin local interconnect and its cap, then five aluminium levels of increasing thickness separated by oxide, and finally a thin oxide under a thicker nitride.
-:width: 560px
-:name: fig-chart-beol-stack
-
-The back end drawn to scale from the heights the PDK's process stack diagram labels.[^pdk-04] The diagram itself is marked "(Diagram not to scale!)";[^pdk-04] this chart redraws its labelled levels and intervals to scale and adds nothing to them, except that it follows this page's reading of the 1.0111 µm label as the top of the LINT beside li.[^pdk-04] The datum is the field-oxide top, the level the diagram puts at 0.3262 µm.[^pdk-04] To scale.
-:::
-
-The table lists the levels bottom to top with the thicknesses and
-heights the step pages quote. Dielectric heights are the diagram's
-labels for the intervals between conductors, not deposited thicknesses;
-where no number is given, none is public.
-
-| Level (bottom to top) | PDK name or description | Thickness quoted | Level on the diagram (µm) | Built at |
-|-----------------------|-------------------------|------------------|---------------------------|----------|
-| Substrate and wells | "p-substrate";[^pdk-04] "Bulk"[^skw-02] | N-well baseline vertical dimension 1.1 µm; P-well 0.75 µm; S/D junction 0.1 µm[^pdk-03] | — | {ref}`SMAT <step-001>`; {ref}`LVTNM <step-014>` – {ref}`RTAI <step-034>`; {ref}`PSDM <step-081>` – {ref}`RTAD <step-088>` |
-| Field oxide | "FOX K=3.9"[^pdk-04] | 0.07 µm above the silicon under poly[^pdk-03] | top 0.3262[^pdk-04] | {ref}`BOX <step-002>` – {ref}`NS19 <step-013>` |
-| Gate dielectrics | thin and thick gate oxide; ONO in SONOS cells | 110 Å (5 V and high-voltage devices);[^pdk-hv] model `toxe` 4.148 nm (1.8 V) and 11.6 nm (5 V);[^pdk-model-nfet01v8][^pdk-model-nfet5v] ONO not public | — | {ref}`ONO <step-040>`; {ref}`GOX100 <step-043>` – {ref}`LVGOX <step-047>` |
-| Gate and resistor poly | "polysilicon"[^pdk-04] | 0.18 µm[^pdk-03][^pdk-04] | — | {ref}`SAGD <step-048>` – {ref}`P1ME <step-062>` |
-| Gate cap and spacers | "SPNIT K=7.5"[^pdk-04] | "poly cap after SPE" 0.2 µm; "oxide spacer" 0.05 µm[^pdk-03] | — | {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; {ref}`SPNIT <step-076>` – {ref}`SPOX <step-080>` |
-| Pre-metal dielectric | "PSG K=3.9"[^pdk-04] | 0.6099 µm from the field-oxide top to the `li` bottom and 0.4299 µm from the field-poly top to the `li` bottom;[^pdk-04] "Pre-LI ILD thickness" 0.5 µm[^pdk-03] | — | {ref}`PSG <step-089>` – {ref}`NCAPOX <step-091>` |
-| Local interconnect | `li` (TiN[^ann-16]) | 0.1 µm[^pdk-04][^pdk-03] | bottom 0.9361[^pdk-04] | {ref}`LITIN <step-101>` – {ref}`LI1ME <step-103>` |
-| Local-interconnect cap | "LINT K=7.3"[^pdk-04] | 0.075 µm[^pdk-04] | 1.0111, read as its top beside `li` (see below)[^pdk-04] | {ref}`LINIT <step-104>` |
-| Dielectric to metal 1 (`mcon`) | "NILD2 K=4.05"[^pdk-04] | 0.265 µm[^pdk-04] | — | {ref}`NILD2 <step-105>` – {ref}`WCMP2 <step-111>` |
-| Metal 1 | `metal1` | 0.36 µm[^pdk-04] | bottom 1.3761[^pdk-04] | {ref}`TIAL6 <step-112>` – {ref}`MM1E <step-114>` |
-| Via 1 | "NILD3 K=4.5", "NILD3_C K=3.5"[^pdk-04] | via 0.27 µm; NILD3_C 0.030 µm[^pdk-04] | — | {ref}`NILD3 <step-115>` – {ref}`WCMP3 <step-122>` |
-| Metal 2 | `metal2` | 0.36 µm[^pdk-04] | bottom 2.0061[^pdk-04] | {ref}`TIAL12 <step-123>` – {ref}`MM2E <step-125>` |
-| Via 2 | "NILD4 K=4.2", "NILD4_C K=3.5"[^pdk-04] | via 0.42 µm; NILD4_C 0.030 µm[^pdk-04] | — | {ref}`NILD4 <step-126>` – {ref}`WCMP4 <step-133>` |
-| Metal 3 | `metal3` | 0.845 µm[^pdk-04] | bottom 2.7861[^pdk-04] | {ref}`WTIAL3 <step-134>`, {ref}`MM3 <step-139>`, {ref}`MM3E <step-140>` |
-| First MiM capacitor | `capm`[^pdk-04] | not labelled;[^pdk-04] 2 fF/µm²[^pdk-07] | — | {ref}`CAPILD <step-135>` – {ref}`CAPME <step-138>` |
-| Via 3 | "NILD5 K=4.1"[^pdk-04] | via 0.39 µm[^pdk-04] | — | {ref}`NILD5 <step-141>` – {ref}`WCMP5 <step-148>` |
-| Metal 4 | `metal4` | 0.845 µm[^pdk-04] | bottom 4.0211[^pdk-04] | {ref}`WTIAL4 <step-149>`, {ref}`MM4 <step-154>`, {ref}`MM4E <step-155>` |
-| Second MiM capacitor | `cap2m`[^pdk-04] | not labelled;[^pdk-04] 2 fF/µm²[^pdk-07] | — | {ref}`CAPILD2 <step-150>` – {ref}`CAP2ME <step-153>` |
-| Via 4 | "NILD6 K=4.0"[^pdk-04] | via 0.505 µm[^pdk-04] | — | {ref}`NILD6 <step-156>` – {ref}`VIM4E <step-160>` |
-| Metal 5 | `metal5` | 1.26 µm[^pdk-04] | bottom 5.3711[^pdk-04] | {ref}`WTIAL5 <step-161>` – {ref}`MM5E <step-163>` |
-| Passivation oxide | "TOPOX K=3.9"[^pdk-04] | 0.09 µm on the metal, 0.070 µm on its sidewall[^pdk-04] | — | {ref}`NFUSOX <step-164>` |
-| Passivation nitride | "TOPNIT K=7.5"[^pdk-04] | 0.54 µm on the metal, 0.4223 µm on its sidewall on the diagram;[^pdk-04] the {ref}`NTSD <step-167>` page reads 0.5–0.9 µm, the Cypress reports for this fab giving 0.7–0.9 µm[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807] | — | {ref}`NTSD <step-167>` |
-| Polyimide | "PI1 K=2.94"[^pdk-04] | — | top 11.8834[^pdk-04] | no step in the step list |
-
-Most of the labels are consistent with one another. From metal 1
-upwards each metal bottom equals the one below plus that metal's
-thickness plus the via height (1.3761 + 0.36 + 0.27 = 2.0061 µm, and so
-on to 4.0211 + 0.845 + 0.505 = 5.3711 µm), and the PSG labels equal the
-distance from the field-oxide top to the `li` bottom (0.9361 − 0.3262 =
-0.6099 µm) and that distance less the 0.18 µm poly (0.4299 µm) (our
-arithmetic from the labels[^pdk-04]). Below metal 1 the labels add up
-too: the `li` bottom (0.9361 µm) plus the 0.1 µm `li`, the 0.075 µm LINT
-and the 0.265 µm NILD2 gives exactly the 1.3761 µm metal-1 bottom (our
-arithmetic from the labels[^pdk-04]). One label does not fit that
-reading. The 1.0111 µm level is 0.075 µm above the `li` bottom, not
-0.1 µm; the diagram, being not to scale, draws the top of `li` and the
-top of the LINT on the glass beside it at the same height, and the
-label's leader line runs to the LINT rather than to `li`. We therefore
-read 1.0111 µm as the top of the LINT beside `li` (0.9361 + 0.075 µm),
-which fits every other label and leaves 0.34 µm from the `li` top to
-metal 1 (our reading of the drawing[^pdk-04]; the
-{ref}`LITIN <step-101>`, {ref}`NILD2 <step-105>`, {ref}`CTM1 <step-107>`
-and {ref}`CTME <step-108>` pages follow it). The public values for some films also disagree with other public
-sources; those differences are among the open questions below.
-
-(overview-phases)=
-## Front end, middle of line and back end
-
-Every step page's summary table gives the step a phase and a module
-name. The boundaries are this reference's, drawn where the kind of work
-changes:
-
-| Phase | Steps | Number of steps | Modules as named on the step pages |
-|-------|-------|-----------------|------------------------------------|
-| {term}`FEOL` | {ref}`SMAT <step-001>` – {ref}`RTAD <step-088>` | 88 | isolation; wells and channel implants; SONOS and gate dielectrics; gate and poly resistors; extensions, spacers, source/drain |
-| {term}`MOL` | {ref}`PSG <step-089>` – {ref}`CMPL <step-106>` | 18 | silicide and local interconnect |
-| {term}`BEOL` | {ref}`CTM1 <step-107>` – {ref}`HPETEST <step-171>` | 65 | contact and metal 1; via 1, metal 2, via 2; MiM capacitors, metal 3–5, via 3–4; passivation, pads, alloy, test |
-
-The front end ends with the last source/drain anneal, when every
-junction is in place. The middle of line runs from the pre-metal glass
-to the polished dielectric over the local interconnect, so it contains
-the first contacts (`licon`) and the local interconnect itself. The back
-end starts with the metal-contact mask and, in this reference, includes
-the passivation, the final alloy and electrical test. Two consequences
-of these choices are worth knowing when comparing with other sources:
-in common usage the back end runs from the first contact through the
-final passivation, whereas this reference counts the first contact
-level as middle of line; and general descriptions place wafer testing
-after the back end, whereas this reference files
-{ref}`HPETEST <step-171>` under BEOL. The {ref}`glossary` and the
-{ref}`test category page <category-test>` state both. The deposition of the metal-3 stack,
-{ref}`WTIAL3 <step-134>`, is also filed with via 2 rather than with the
-capacitor and metal-3 steps that follow it.
-
-### Thermal budget
-
-The order of a CMOS flow is set largely by {term}`thermal budget`: once a
-junction or film is in place, every later step must stay within what it
-tolerates, so the hottest steps broadly come first and the flow cools
-as it goes. The step list gives no temperatures, and SKY130's are not public;
-the values below are typical ones from the category pages and their
-sources, in the order in which the thermal steps occur.
-
-1. **Isolation.** The pad and liner oxidations ({ref}`BOX <step-002>`,
-   {ref}`LINOX <step-010>`) and the nitride hard mask
-   ({ref}`ISONIT <step-003>`) are read on their step pages as furnace steps: thermal oxidation runs
-   at 800–1200 °C[^wiki-thox] and {term}`LPCVD` nitride at roughly
-   700–800 °C (typical value),[^txt-02] a tube-furnace process that
-   Wikipedia describes as working "at rather high
-   temperature".[^wiki-sin] On the
-   {ref}`DNM <step-007>` page's reading, this heat also drives the deep
-   N-well implanted just before the liner oxidation.
-2. **Well anneal.** {ref}`RTAI <step-034>` activates the ten well and
-   channel implants at once; the step page reads it as a rapid thermal
-   anneal, for which seconds at 1000–1100 °C is typical.[^stolk-1997]
-3. **SONOS stack.** One embodiment of a Cypress ONO patent forms all
-   three layers at temperatures "from about 700° C. to about 875° C."
-   ({ref}`ONO <step-040>`).[^pat-01]
-4. **Gate oxides.** Gate oxides of this era are typically grown dry at
-   750–950 °C ({ref}`GOX100 <step-043>`,
-   {ref}`LVGOX <step-047>`);[^txt-01] Cypress's integration patent, which
-   may still be in force, adds what that oxidation does for the ONO (the
-   collapsed note above).
-5. **Gate film.** Silicon deposited at low temperature and at a rate
-   above the critical value is amorphous (typical value; the
-   amorphous/polycrystalline boundary depends on rate as well as
-   temperature);[^voutsas-1992] the
-   {ref}`SAGD <step-048>` page reads
-   SKY130's gate film as amorphous from SkyWater's "LPCVD polysilicon
-   (undoped), both amorphous and crystalline"[^skw-01] (inference); the caps and the post-etch re-oxidation
-   ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`,
-   {ref}`IOX45 <step-063>`) follow, at conditions that are not public.
-6. **Junction anneals.** Rapid thermal anneals follow the tip and
-   source/drain implants ({ref}`TIPRTAD <step-075>`,
-   {ref}`RTAD <step-088>`), and a second one follows the polished glass
-   ({ref}`RTAD2 <step-092>`, whose two possible purposes — a final
-   source/drain anneal or a dielectric anneal — the step page
-   discusses as inferences); a soak of
-   1000–1050 °C for a few seconds, or a spike, is the typical 130 nm-era
-   choice.[^txt-05][^txt-10] After them the junctions — 0.1 µm deep in
-   the PDK's assumptions[^pdk-03] — must not move, and every later step
-   is cooler (inference from the order).
-7. **Contact module.** An anneal that the step page reads as a
-   hydrogen-bearing alloy anneal, typically 350–450 °C,[^txt-02] precedes
-   the contact liner ({ref}`ALLY1 <step-096>`), and the anneal read as the
-   contact silicidation follows it ({ref}`CSIL <step-098>`); titanium disilicide is typically formed by a
-   first anneal at roughly 600–700 °C and converted to its
-   low-resistance phase at roughly 800–900 °C.[^maex-1993] How SKY130's
-   silicidation is done is not public.
-8. **Back end.** Once aluminium is on the wafer, from
-   {ref}`TIAL6 <step-112>` onwards, depositions typically stay below
-   about 450 °C;[^txt-02] tungsten CVD for the plugs runs at roughly
-   400–450 °C (typical value),[^txt-01] the low end of the "300 and
-   800 °C" that Wikipedia gives for hydrogen reduction of
-   WF₆.[^wiki-wf6] The oxide, nitride and
-   capacitor films of the back end are described on their step pages as
-   low-temperature plasma depositions (inference).
-9. **Final alloy.** The last heat is the alloy anneal
-   ({ref}`ALLY <step-170>`), read as a {term}`forming-gas <forming gas>` anneal, typically
-   350–450 °C.[^txt-02] In the
-   `sky130B` variant every thermal step after the ReRAM stack is also
-   seen by its 5 nm switching oxide (0.005 µm in the ReRAM tech file,
-   {ref}`overview-sky130b-reram`).
 
 (overview-open-questions)=
 ## Key open questions
