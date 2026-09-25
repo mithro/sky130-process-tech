@@ -15,9 +15,9 @@
 
 * **Does:** deposits a blanket silicon nitride on top of the doped gate
   poly, the first layer of the gate cap.
-* **Why:** on our inference from the PDK's rules, a cap that seals the
-  gate until contacts are cut, and possibly the gate layer's
-  anti-reflective layer or hard mask.
+* **Why:** on our inference from the PDK's rules, a cap sealing the gate
+  until contacts are cut, possibly also the gate layer's ARC or hard
+  mask.
 * **Public numbers:** none for the nitride itself; the PDK's "poly cap
   after SPE" of 0.2 µm,[^pdk-03] read here as the whole cap stack (our
   reading).
