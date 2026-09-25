@@ -43,9 +43,14 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s9a` | W1c series S9 first group: via 1 to metal 3 (118–134) | Opus | running since 2026-09-26 |
-| `topic/rd-masks-a` | W3 batch 4: mask pages 1–18 (alphabetical) — Opus writer | Opus | running since 2026-09-26 |
-| `topic/rd-categories` | W3 batch 5: the ten category pages | Sonnet | running since 2026-09-26 |
+| `topic/rd-figures-s9a` | W1c S9 first group (118–134): reviewed, fixes done, committing in logical pieces (the megacommit hook refused the first attempt; see rd-common rule 11) | Opus | committing |
+| `topic/rd-categories` | W3 batch 5: category pages — written; Opus review running | Sonnet / Opus | in review |
+| `topic/rd-masks-a` | W3 batch 4: mask pages 1–18 — Opus writer | Opus | writing |
+| `topic/rd-steps-064-075` | W2 batch 5 (tips and halos) — Opus writer | Opus | writing |
+
+Next after these: S10 MiM figures (must precede S9b, because metal 3 is patterned inside the MiM steps),
+then S9b (141–149, 154–163) and S11 passivation; step batches 076–088 onward; machines 16–30; masks 19–36;
+the final `link_terms.py` pass on main.
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 
