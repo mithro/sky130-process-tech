@@ -570,3 +570,45 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   quick-facts Exposure class cell (36; not in the body) and two quoted rule cells (33, 27). Before →
   after: paragraphs 11 → 0, items 1 → 0, sentences 15 → 1, cells 3 → 3.
 * **Content problems for the owner:** none found.
+
+### 14. mm2 — done
+
+* **Rules applied.** As on mm1: R-INTRO (171 → 40 words; "Its rules repeat …" → "The mask's rules
+  repeat …", moved with the plate-case sentence to the top of `## What the mask defines`); R-PARAMS
+  (`BiasMM2`, `Met2Thick`, `Met2_Qthick`, `FEXT`, `HugeM`); R-CAPTION; R-PARA, R-SENTENCE; R-LIST (what the
+  mask carries; the plate-case label's five fields as sub-bullets inside its bullet); R-RELATED; R-H3
+  (Exposure class, Mask errors, Reflective substrate, Fill and the polish above, Overlay and alignment ←
+  "Overlay", Pattern transfer).
+* **Moved passage (G1):** Overlay above Pattern transfer.
+* **Rendering fix:** the base wrapped `"Metal 2` / `- Cu" row` so that a source line began with "- ",
+  which CommonMark reads as a list item interrupting the paragraph (the same trap as §6's leading `>`).
+  The words are unchanged; the line break moved so that "Metal 2 - Cu" stays on one line.
+* **Plate-case label bullet (198 words).** R-PARA 4: the lead sentence stays (≤ 30 words); the base's
+  "It gives the material …, the type …, a "Percent Clear" …, a "Level" … and a CD specification …
+  in no stated unit.[^steps-sheet]" became "It gives:[^steps-sheet]" and five sub-bullets; the reading of
+  the fields and the Hochmuth et al. passage follow as indented continuation paragraphs, each split at
+  its semicolon.
+* **R-PARAMS.** "Table 4 adds … (`BiasMM2`), … (`Met2Thick`) and the same 0.35 for "(SP8T/S8T\*)"
+  (`Met2_Qthick`), and the pattern-density criteria it shares with metal 1; Table 5, the laser-fuse
+  criteria, gives … (`FEXT`), and Table 7 a … (`HugeM`).[^pdk-03]" became "Table 4 adds the
+  pattern-density criteria it shares with metal 1, and Tables 4, 5 and 7 give the following:[^pdk-03]",
+  a five-row table ("the same, for "(SP8T/S8T\*)"" keeps the base's "the same"), and the caption note
+  "Table 5 holds the laser-fuse criteria".
+* **Hedge repeated on a split:** "On the step pages' readings" on the passivation / strip / clean clause
+  (as on mm1).
+* **Deleted template sentence:** the "This page gathers …" sentence (same wording as cap2m;
+  `LOST hedges: 'about'`).
+* **Declared additions** (`--allow-added markers,numbers,identifiers`): markers `pdk-periph` ×2 (list
+  lead-in; the fill-check sentence split at "a limit." — "The limit falls from …"), `pdk-06`, `mask-renders`,
+  `itrs-03`, `wong-1998` (the same splits as on mm1); numbers — the PDK-table column and the lead-in
+  ("Tables 4, 5 and 7"), "ITRS 2001" repeated, the `2` of "Metal 2" and "metal 2" in the caption;
+  identifiers `m2`, `via-2` (rule caption).
+* **LOST `number_order`, read by hand:** the Exposure-class sentence (repeated "ITRS 2001"); the Table 4 /
+  5 / 7 sentence (values 0.6, 0.35, 0.35, 0.005, 3 in the base's order, each on the base's table).
+* **Marker coverage.** Flags read: lists under lead-in markers; clauses with no marker of their own in the
+  base.
+* **Over the caps after the pass:** the CD-specification sub-bullet (46; one field with its numbers);
+  the Hochmuth et al. sentence (46, two quotations); the flag-legend sentence (73 by the script, eight
+  quotations); the quick-facts Exposure class cell (36) and two quoted rule cells (33, 27). Before →
+  after: paragraphs 10 → 0, items 2 → 0, sentences 19 → 3, cells 3 → 3.
+* **Content problems for the owner:** none found.
