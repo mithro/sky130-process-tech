@@ -251,7 +251,7 @@ at their own size (inference).
 
 At 4× a 2 µm plate is 8 µm on the reticle
 (our arithmetic), well within what laser reticle writers and wet-etched
-chrome handled (our reading): a laser writer of the ALTA family addressed
+chrome handled (our reading). A laser writer of the ALTA family addressed
 "the needs of maskmakers in the 180 nm and 150 nm technology
 nodes",[^morgante-2000] and chrome masks "have traditionally been wet
 etched", with an undercut compensated by sizing the data.[^buck-1994]
@@ -390,7 +390,7 @@ as it is wide (our reading of `MiM_AR` with capm.6 and capm.7).
 
 ## Related pages
 
-* {ref}`CAPM <step-137>` and {ref}`CAPME <step-138>` — the mask step and
+* **Steps.** {ref}`CAPM <step-137>` and {ref}`CAPME <step-138>` — the mask step and
   the plate etch; {ref}`CAPILD <step-135>` and
   {ref}`CAPTIW1 <step-136>` — the dielectric and plate film.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step

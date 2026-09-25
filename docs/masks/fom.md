@@ -363,7 +363,7 @@ may not exist.", NE "Rule not checked for esd_nwell_tap. There are no
 corresponding rule for esd_nwell_tap." and DE "Rule not checked for
 source of Drain Extended device".[^pdk-periph]
 
-:::{table} Periphery design rules naming `diff` and `tap`, as published; the unit column of difftap.4 and difftap.5 is blank in the published table
+:::{table} The `diff` and `tap` rules, with the angle and mask-data rules that name the layers, as published; the unit column of difftap.4 and difftap.5 is blank in the published table
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -387,19 +387,19 @@ source of Drain Extended device".[^pdk-periph]
 :::
 
 The unit column of difftap.4 and difftap.5 is blank in the published
-table.[^pdk-periph] [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the following:
+table.[^pdk-periph] [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the following:[^pdk-03]
 
-:::{table} Parameters of *Criteria & Assumptions* that bear on this mask
+:::{table} Parameters of *Criteria & Assumptions* for the mask
 
 | Parameter | PDK table | Published description | Value |
 |---|---:|---|---:|
 | `FOMCD` | 2 | minimum feature | 0.14 |
 | `FOMCDSP` | 2 | minimum space | 0.27 |
 | `FOMSE` | 7 | "MOSFET width" | 0.135 |
-| `FOMSESC` | 7 | "MOSFET width in standard cells" | 0.075[^pdk-03] |
+| `FOMSESC` | 7 | "MOSFET width in standard cells" | 0.075 |
 | `MINFWR` | 3c | "Min. diff/tap width for reproducible resistivity" | 0.12 µm |
 | `SDM3` | 3c | "Min. width to open a strip of tap between two diffs" | 0.34 µm |
-| `DEFC` | 4 | "min. etch and fill capability for isolation, licon, and met1" | 0.15[^pdk-03] |
+| `DEFC` | 4 | "min. etch and fill capability for isolation, licon, and met1" | 0.15 |
 :::
 
 The PDK does not
@@ -414,10 +414,10 @@ space.
 
 ## Related pages
 
-* {ref}`FOM <step-004>`, {ref}`STINITE <step-005>` and
+* **Steps.** {ref}`FOM <step-004>`, {ref}`STINITE <step-005>` and
   {ref}`STIE <step-006>` — the mask step, the hard-mask etch and the
   trench etch.
-* {ref}`CMPNIT <step-012>` — the polish whose uniformity the fill
+  {ref}`CMPNIT <step-012>` — the polish whose uniformity the fill
   shapes serve.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.

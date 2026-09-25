@@ -5,9 +5,7 @@ The metal-5 mask is the {term}`reticle` that draws SKY130's top metal.
 On the {ref}`MM5 <step-162>` page's reading, the resist printed through
 it at step 162 stays wherever `met5` is drawn — the top-level supply
 grid and wide buses, the bond pads that the pad mask later
-opens, inductor turns and the landings of every via 4 — and the
-{ref}`MM5E <step-163>` etch removes the 1.26 µm metal-5 stack everywhere
-else.
+opens, inductor turns and the landings of every via 4.
 
 | | MM5 — Metal 5 |
 |---|---|
@@ -31,7 +29,9 @@ on the {ref}`masks index <masks-index>`.
 
 ## What the mask defines
 
-The mask is the coarsest of the five metal masks, with 1.6 µm lines on
+On the {ref}`MM5 <step-162>` page's reading, the
+{ref}`MM5E <step-163>` etch removes the 1.26 µm metal-5 stack everywhere
+else. The mask is the coarsest of the five metal masks, with 1.6 µm lines on
 the step page's reading of the flow. With metal 2, it is one of the two
 masks for which a transcribed plate-case label is public, although the
 label is not tied to an MPW run.
@@ -306,8 +306,8 @@ at their own size (inference). At 4× a 1.6 µm line is 6.4 µm on the plate
 
 The step page's point is thickness rather
 than resolution: the resist must outlast the etch of a 1.26 µm
-stack,[^pdk-04] and Krogh et al. followed photoresist erosion in an
-aluminium etch plasma by emission spectroscopy,[^krogh-1987] so the
+stack.[^pdk-04] Krogh et al. followed photoresist erosion in an
+aluminium etch plasma by emission spectroscopy.[^krogh-1987] So the
 {ref}`MM5 <step-162>` page reads a thicker DNQ/novolac i-line resist than
 at the lower metal levels (the chemistry of Dammel's
 text[^dammel-1993]) and notes that Allen and Rickard's tapered aluminium
@@ -437,7 +437,7 @@ them.
 
 ## Related pages
 
-* {ref}`MM5 <step-162>` and {ref}`MM5E <step-163>` — the mask step and
+* **Steps.** {ref}`MM5 <step-162>` and {ref}`MM5E <step-163>` — the mask step and
   the metal etch; {ref}`WTIAL5 <step-161>` — the stack patterned.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step and
   etch categories.

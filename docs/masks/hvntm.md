@@ -4,10 +4,7 @@
 The high-voltage N-tip mask is the {term}`reticle` of the second tip
 implant of SKY130. On the {ref}`HVNTM <step-068>` page's reading, the
 thin resist printed through it at step 68 exposes the high-voltage NMOS
-transistors on the thick gate oxide and covers everything else, the
-arsenic implant {ref}`HVASTI <step-069>` arrives through the openings at
-a steep tilt to form their graded drain {term}`extension`, and the resist
-is stripped at {ref}`HVASTIS <step-070>`.
+transistors on the thick gate oxide and covers everything else.
 
 | | HVNTM — High Volt. N-tip |
 |---|---|
@@ -32,7 +29,10 @@ step is performed is on the step page; every mask is indexed on the
 
 ## What the mask defines
 
-The mask is an implant
+On the {ref}`HVNTM <step-068>` page's reading, the
+arsenic implant {ref}`HVASTI <step-069>` arrives through the openings at
+a steep tilt to form the transistors' graded drain {term}`extension`, and the resist
+is stripped at {ref}`HVASTIS <step-070>`. The mask is an implant
 {term}`block mask`, and the only mask for which the PDK both states an
 operation — the drawn layer "will be OR-ed with the CL" — and publishes a
 resist thickness, 0.3 µm, well below the generic figure. Because the beam
@@ -436,7 +436,7 @@ active pattern.
 
 ## Related pages
 
-* {ref}`HVNTM <step-068>`, {ref}`HVASTI <step-069>` and
+* **Steps.** {ref}`HVNTM <step-068>`, {ref}`HVASTI <step-069>` and
   {ref}`HVASTIS <step-070>` — the mask step, the tilted implant and the
   strip; {ref}`TIPRTAD <step-075>` — the anneal of all three tips.
 * **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask

@@ -6,8 +6,7 @@ SKY130's capped polysilicon can later be contacted. On the
 {ref}`NPCM <step-078>` page's reading, the resist printed through it at
 step 78 is opened wherever `npc` is drawn, over the poly heads that
 local-interconnect contacts will land on and over the ends of the
-precision resistors, and the {ref}`NPCME <step-079>` etch removes the
-nitride and oxide cap there, stopping on the poly.
+precision resistors.
 
 | | NPCM — Nitride Poly Cut |
 |---|---|
@@ -31,7 +30,8 @@ every mask is indexed on the {ref}`masks index <masks-index>`.
 
 ## What the mask defines
 
-The mask is a
+On the {ref}`NPCM <step-078>` page's reading, the {ref}`NPCME <step-079>` etch removes the
+nitride and oxide cap there, stopping on the poly. The mask is a
 {term}`nitride cut` layer of openings whose width rules are relaxed but
 whose placement against the gates is not, and the step pages read it as
 a KrF level for that reason, with i-line as the alternative.
@@ -121,7 +121,7 @@ values:[^pdk-errors]
 * "0.09 min. spacing of npc & gate" and "npc must not overlap
   gate" (npc.4)
 
-It adds a core rule the periphery tables do not have,
+The page adds a core rule the periphery tables do not have,
 `npcon.c6`, "0.045 min. enclosure of "poly_licon1" in core by npc",
 against the 0.1 of licon.15 in the periphery.[^pdk-errors] It also lists:[^pdk-errors]
 
@@ -235,8 +235,8 @@ than light-field lines.[^wong-1998]
 
 For the 0.27 µm openings the
 line-space threshold is about 0.18 µm to 0.21 µm at 248 nm and NA 0.7 to
-0.6, but about 0.30 µm at 365 nm and NA 0.6, and the contact threshold is
-about 0.27 µm to 0.31 µm at 248 nm (our arithmetic), so a plate CD error
+0.6, but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic). The contact threshold is
+about 0.27 µm to 0.31 µm at 248 nm (our arithmetic). So a plate CD error
 would print at about its own size on a KrF tool for long cuts and begin
 to be magnified for small square cuts or on an i-line tool (inference).
 How tightly SkyWater specifies the plate is not public.
@@ -365,7 +365,7 @@ opens.[^pdk-03]
 
 Table F3a of the *Summary of Key Periphery Rules* gives
 `npc` a width of 0.270, a spacing of 0.270 to itself and 0.090 to poly
-and "Yes" in the "Manual" (merge) column, and gives the enclosure of
+and "Yes" in the "Manual" (merge) column (our reading of the columns).[^pdk-summary] It gives the enclosure of
 `poly_licon` by `npc` as 0.100 and the spacing of `licon` to `npc` as
 0.090 (our reading of the columns, whose spacing and enclosure labels
 sit in the row below the heading).[^pdk-summary] The Error Messages page
@@ -378,7 +378,7 @@ gates.
 
 ## Related pages
 
-* {ref}`NPCM <step-078>` and {ref}`NPCME <step-079>` — the mask step and
+* **Steps.** {ref}`NPCM <step-078>` and {ref}`NPCME <step-079>` — the mask step and
   the cut etch; {ref}`SPE <step-077>` — the spacer etch that leaves the
   cap the cut opens.
 * **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step

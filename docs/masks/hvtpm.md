@@ -125,7 +125,7 @@ areaid.ce";[^pdk-06] it uses neither to define the plate.
 
 The PDK's *Error Messages* page describes "many of the automated
 DRC rules that are checked by SkyWater as part of the acceptance
-criteria for GDS data".[^pdk-errors] It uses both. It lists four checks on a layer it
+criteria for GDS data".[^pdk-errors] It uses both `LVnwell` and `Var_channel`. It lists four checks on a layer it
 calls `CLHVTPM`, under the rule names `chvtpm.1`, `chvtpm.2a`,
 `chvtpm.3` and `chvtpm.4`:[^pdk-errors]
 
@@ -138,7 +138,7 @@ calls `CLHVTPM`, under the rule names `chvtpm.1`, `chvtpm.2a`,
 * "0 min. enclosure of ((LVnwell overlapping Var_channel)
   AND hvtp) by CLHVTPM"
 
-It also has a check `hvtp.c1`, "Min/Max
+The page also has a check `hvtp.c1`, "Min/Max
 enclosure of nwell by hvtp", with no value, and two `chvtpm.nikon`
 checks.[^pdk-errors]
 
@@ -248,7 +248,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
   later in the flow: `P1M` (step 61) is `210` and `NSDM` (step 85)
   `250`.[^steps-sheet]
 
-  It is one of the examples the masks index gives of plate
+  `317` is one of the examples the masks index gives of plate
   numbers that do not follow process order. The sheet does not say what
   they encode, so no process position is read from it
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
@@ -398,7 +398,7 @@ created layer the same 0.38 width and spacing (`chvtpm.1`,
 
 ## Related pages
 
-* {ref}`HVTPM <step-022>`, {ref}`PCHI <step-023>`,
+* **Steps.** {ref}`HVTPM <step-022>`, {ref}`PCHI <step-023>`,
   {ref}`PNCHI <step-024>` and {ref}`PCHIS <step-025>` — the mask step,
   the two implants and the strip.
 * **Category.** {ref}`category-lithography` and {ref}`category-implant` — the mask
