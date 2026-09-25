@@ -249,3 +249,54 @@ R-CATEGORY step 1, R-PARA step 2 inside list items, R-TOOLS step 2 pilot form). 
   lines.
 * **Caps**: para > 100 3 → 0; item > 60 8 → 0; sentence > 45 9 → 1. Left: the GSD head (48 w with the
   tool name; the pilot form keeps it whole).
+
+### 067 ASTIS — done
+
+* **Lead.** First sentence (40 w) split before ", and cleans the wafer" → "It cleans the wafer …"
+  (R-GLANCE step 8, the form batch 4 used on 051/054); now 23 words. "…in the tip module; in this
+  reference …" split at the semicolon. Lead 95 words, one paragraph.
+* **R-H3 not applied.** The passage after the figure (136 words) is industry-typical and inferred
+  (resist thickness "inferred on the NTM page", the dose "typical", the surface "we infer"); none of
+  the four titles is true of it (R-H3 step 6). **R-PARA** split it before "The surface under the resist
+  is, we infer, …" (the resist / the surface); that sentence split at its semicolon ("No metal is
+  present, …"): "we infer" sat inside the first clause and stays there.
+* **R-CATEGORY.** Classification sentence (19 w) alone. The rest is the category page's general account
+  (implanted resist, Fujimura, "popping") and one comparison with other steps' strips: not "specific to
+  this step" (R-CATEGORY step 2), so plain paragraphs. The 58-word account sentence split at its colon
+  and before ", and, on the category page's account" ("On the category page's account, …"); each piece
+  keeps its own marker (only the Fujimura clause had one).
+* **R-PARA / R-SENTENCE (Why).** The 153-word paragraph split before "The crust also carries" (the next
+  resist / what the crust carries). The HVNTM sentence split at its dash ("It is a film that …",
+  subject + verb added). The flakes sentence: its dash pair (the patent quotation) becomes the following
+  sentence "One patent has the implant-hardened surface "…".[^pat-strip-mosel]" (R-SENTENCE step 1),
+  the marker with its quotation.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **R-PARA step 4 (How items).** "Plasma ash, two stages" (185 w): lead "Downstream (remote) microwave or RF
+  oxygen plasma."; continuation 1 the two-patent "Because …" sentence, its dash-pair quotation (a
+  lowercase quotation from the same patent) given the neutral lead-in "The patent adds:" (R-SENTENCE
+  step 7) and "until the crust is opened, after which …" as "The cool stage runs until …" (subject + verb
+  added); continuation 2 Fujimura, Yegnasubramanian and SkyWater's asher list; continuation 3 "Downstream
+  operation is used because …". "Wet strip and clean" (76 w): split at the semicolon; continuation from
+  "SC-1 …".
+* **R-TOOLS.** Four tools → `Tool | Evidence` recap table above the list (grades as the page gives them;
+  the AIT row keeps "(our reading)"). Ashers: the head "— all named on SkyWater's facilities page with
+  their gases and temperatures" is this reference's gloss of SkyWater's list, so the pilot form (as 051):
+  head kept, *Tool exists:* and *Runs this step:*, and "The Iridia's H₂/N₂ chemistry … fit a cool first
+  stage best." as the continuation paragraph. Akrion, DNS/FSI: heads keep the quotation with our
+  "for the SPM/SC-1 sequence" / "as alternative clean tools", grade as sub-bullet. AIT: head keeps "our
+  reading of "AIT" …", grade as sub-bullet (as 009).
+* **R-RELATED.** "Companion strips in this module:" → "Same module: companion strips …" (HVASTIS,
+  LDASTIS, and PDIS/NSDIS all carry this module's Phase cell).
+* **R-OPENQ.** Labels "Ash recipe and wet sequence", "Oxide-thinning budget", "Which asher", "Tip dose";
+  text unchanged.
+* **R-GLANCE.** Does/Why from the lead and the Why section (the Why line drops the 40° figure rather than
+  carry a number without its marker); Public numbers "none published for this strip" plus the next
+  resist's 0.3 µm `[^pdk-03]`; tool line the ashers' grades; Not public from Open questions 1 and 3.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 0.3, quote
+  "Photoresist thickness for HV Tip Implants", hedges "inference" (glance), "not public" (glance label),
+  "inference" and "our reading" (recap table). Declared `--allow-added markers,numbers,quotes,hedges`:
+  clean.
+* **Marker coverage.** 14 flags, all read: split halves whose base marker sat on another clause (the
+  "popping" account; the flakes sentence; "The cool stage runs until …", which follows three quotation
+  markers in the base and had none of its own; SPM / SC-1); glance and label lines.
+* **Caps**: para > 100 3 → 0; item > 60 2 → 0; sentence > 45 6 → 0.

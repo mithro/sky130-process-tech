@@ -10,17 +10,32 @@
 | **Previous step** | {ref}`BHI <step-066>` |
 | **Next step** | {ref}`HVNTM <step-068>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the implanted `NTM` resist after `ASTI` and `BHI` and
+  cleans the wafer for the next tip mask.
+* **Why:** the thin HV-tip resist that follows, and its tilted implant,
+  are easily disturbed by flakes or residue.
+* **Public numbers:** none published for this strip; the next resist is
+  0.3 µm thick ("Photoresist thickness for HV Tip Implants").[^pdk-03]
+* **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
+  ashers — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** the ash recipe, the wet sequence and which asher runs
+  them (→ Open questions).
+:::
+
 ## What this step is
 
-`ASTIS` removes the photoresist patterned at {ref}`NTM <step-064>`
-after it has masked two implants — the arsenic tip
-{ref}`ASTI <step-065>` and the boron {term}`halo` {ref}`BHI <step-066>` — and
-cleans the wafer so that the next tip mask, {ref}`HVNTM <step-068>`, can
-be coated on a bare, particle-free surface. It is the first
-stand-alone resist strip after the gate etch — the gate-etch resist is
-stripped inside {ref}`P1ME <step-062>` — and the first of the three
-strips in the tip module; in this reference each tip mask is followed
-by such a strip ({ref}`HVASTIS <step-070>`, {ref}`LDASTIS <step-074>`).
+`ASTIS` removes the photoresist patterned at {ref}`NTM <step-064>` after it
+has masked two implants — the arsenic tip {ref}`ASTI <step-065>` and the
+boron {term}`halo` {ref}`BHI <step-066>`. It cleans the wafer so that the
+next tip mask, {ref}`HVNTM <step-068>`, can be coated on a bare,
+particle-free surface. It is the first stand-alone resist strip after the
+gate etch — the gate-etch resist is stripped inside {ref}`P1ME <step-062>` —
+and the first of the three strips in the tip module. In this reference each
+tip mask is followed by such a strip ({ref}`HVASTIS <step-070>`,
+{ref}`LDASTIS <step-074>`).
 
 :::{figure} /_static/figures/sd-067-astis.svg
 :alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the left-hand active area, the oxide-filled trench and the wide capped stack on it, and doped layers lie in the silicon of the right-hand active area beside its narrow gate. After it the resist is gone and the rest of the drawing is unchanged.
@@ -38,79 +53,90 @@ implant)[^txt-01] — and a light, tilted boron dose. That makes it a
 *hard* strip by the standards of the flow: the arsenic has turned the
 top of the resist into a carbonised {term}`crust <implant crust>`,[^orvek-1985]
 the kind of carbonised layer high-dose implantation forms,[^fujimura-1989]
-and the crust contains arsenic. The surface under the resist is, we
-infer, the thin {term}`screen oxide` from {ref}`IOX45 <step-063>` over silicon
-and over the capped polysilicon gates; no metal is present, so the full
-acid–peroxide sequence is available, but the screen oxide must survive
-because two more tip implants will be made through it.
+and the crust contains arsenic.
+
+The surface under the resist is, we infer, the thin {term}`screen oxide`
+from {ref}`IOX45 <step-063>` over silicon and over the capped polysilicon
+gates. No metal is present, so the full acid–peroxide sequence is available,
+but the screen oxide must survive because two more tip implants will be made
+through it.
 
 ## Step category
 
 `ASTIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-implant* type, at the difficult end of that class. The category
-page explains that implanted resist is "a different material from
-freshly developed resist": Fujimura et al. traced the lower etching
-rate of high-dose ion-implanted resist to "carbonization of polymers of
-the resist",[^fujimura-1989] and, on the category page's account, if
-the crusted wafer is heated quickly the soft resist underneath blows
-the crust off in flakes ("popping"). The channel-implant strips of the
-well module ({ref}`LVTNIS <step-016>`) saw doses a hundred times
-smaller; only the source/drain strips ({ref}`PDIS <step-084>`,
-{ref}`NSDIS <step-087>`) are harder than this one.
+*post-implant* type, at the difficult end of that class.
+
+The category page explains that implanted resist is "a different material
+from freshly developed resist". Fujimura et al. traced the lower etching
+rate of high-dose ion-implanted resist to "carbonization of polymers of the
+resist".[^fujimura-1989] On the category page's account, if the crusted
+wafer is heated quickly the soft resist underneath blows the crust off in
+flakes ("popping").
+
+The channel-implant strips of the well module ({ref}`LVTNIS <step-016>`) saw
+doses a hundred times smaller; only the source/drain strips
+({ref}`PDIS <step-084>`, {ref}`NSDIS <step-087>`) are harder than this one.
 
 ## Why this step exists
 
-Resist must be gone before the next coat, and residue matters more here
-than after most masks. The {ref}`HVNTM <step-068>` resist that follows
-is, per the PDK's assumptions page, only 0.3 µm thick ("Photoresist
-thickness for HV Tip Implants")[^pdk-03] — a film that a flake of popped
-crust or a ridge of residue would easily disturb, and whose 40° tilted
-implant[^pdk-03] would be {term}`shadowed <shadowing>` by any particle standing on the
-surface. The crust also carries the implanted arsenic and whatever
-metals the beam line has sputtered onto it; both must leave the wafer
-before the {ref}`TIPRTAD <step-075>` anneal can drive them in. A
-poorly stripped implant resist shows up as hard-to-remove flakes — one
-patent has the implant-hardened surface "first stripped by oxygen and
-nitrogen/hydrogen plasma at a lower temperature (<220° C.) to prevent
-popping problem"[^pat-strip-mosel] — and, after this particular strip,
-as tip and halo doping missing from whichever transistors the flakes
-landed on.
+Resist must be gone before the next coat, and residue matters more here than
+after most masks. The {ref}`HVNTM <step-068>` resist that follows is, per
+the PDK's assumptions page, only 0.3 µm thick ("Photoresist thickness for HV
+Tip Implants").[^pdk-03] It is a film that a flake of popped crust or a
+ridge of residue would easily disturb, and whose 40° tilted implant[^pdk-03]
+would be {term}`shadowed <shadowing>` by any particle standing on the
+surface.
+
+The crust also carries the implanted arsenic and whatever metals the beam
+line has sputtered onto it; both must leave the wafer before the
+{ref}`TIPRTAD <step-075>` anneal can drive them in. A poorly stripped
+implant resist shows up as hard-to-remove flakes and, after this particular
+strip, as tip and halo doping missing from whichever transistors the flakes
+landed on. One patent has the implant-hardened surface "first stripped by
+oxygen and nitrogen/hydrogen plasma at a lower temperature (<220° C.) to
+prevent popping problem".[^pat-strip-mosel]
 
 ## How it is typically performed
 
-An industry-generic high-dose implant-strip sequence for a 200 mm,
-130 nm-era fab:
+*An industry-generic high-dose implant-strip sequence for a 200 mm,
+130 nm-era fab:*
 
 1. **Plasma {term}`ash`, two stages.** Downstream (remote) microwave or RF
-   oxygen plasma. Because "the top portion of the photoresist layer is
-   transformed into a carbonized crust that is difficult to
-   remove"[^pat-strip-tsmc] and a conventional "high temperature
-   (>200° C.) dry ashing" lets the volatile bulk "build up pressure
-   beneath the implant-hardened surface layer",[^pat-strip-mosel] the
-   first stage runs cool — "removed by oxygen and nitrogen/hydrogen
-   plasma in a low-temperature (<220° C.) environment"[^pat-strip-mosel]
-   — until the crust is opened, after which a hotter bulk stage
-   finishes the film. Fujimura's group showed why nitrogen[^fujimura-1990]
+   oxygen plasma.
+
+   Because "the top portion of the photoresist layer is transformed into a
+   carbonized crust that is difficult to remove"[^pat-strip-tsmc] and a
+   conventional "high temperature (>200° C.) dry ashing" lets the volatile
+   bulk "build up pressure beneath the implant-hardened surface
+   layer",[^pat-strip-mosel] the first stage runs cool. The patent adds:
+   "removed by oxygen and nitrogen/hydrogen plasma in a low-temperature
+   (<220° C.) environment".[^pat-strip-mosel] The cool stage runs until the
+   crust is opened, after which a hotter bulk stage finishes the film.
+
+   Fujimura's group showed why nitrogen[^fujimura-1990]
    and water vapour[^fujimura-1991] are added to the oxygen for
    implanted resist, and Yegnasubramanian et al. showed by TEM what is
    left when the ash is not adequate.[^yegnasubramanian-1992]
    SkyWater's ashers offer exactly these chemistries: "Gasonic PEP,
    remote microwave plasma, N2, O2, 120C – 270C", "Iridia RF microwave,
    N2, O2, H2, CF4, NH3, H2/N2, 40C-270C" and "Mattson Aspen2, RF
-   plasma, O2, CF4, H2>N2, up to 250C".[^skw-01] Downstream operation
+   plasma, O2, CF4, H2>N2, up to 250C".[^skw-01]
+
+   Downstream operation
    is used because "monatomic oxygen is electrically neutral" and the
    remote plasma "prevents damage to the wafer surface"[^wiki-ash] —
    which matters with gate oxide and gate edges now exposed.
 2. **Wet strip and clean.** Sulphuric acid–hydrogen peroxide ({term}`SPM`,
    "piranha"), "a typical mixture is 3 parts of concentrated sulfuric
    acid and 1 part of 30 wt. % hydrogen peroxide solution",[^wiki-piranha]
-   dissolves the remaining organics and the arsenic-bearing residue;
+   dissolves the remaining organics and the arsenic-bearing residue.
+
    {term}`SC-1` (NH₄OH/H₂O₂/H₂O at 75–80 °C) then removes particles, with an
-   optional {term}`SC-2` (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's Akrion
-   Gamma bench lists "Sulfuric, SC1" among its chemistries.[^skw-01]
+   optional {term}`SC-2` (HCl/H₂O₂/H₂O) for metals.[^wiki-rca] SkyWater's
+   Akrion Gamma bench lists "Sulfuric, SC1" among its chemistries.[^skw-01]
    Sulphur-trioxide[^bergman-2009] and formulated
-   solvent-based[^visintin-2006] strippers are the published
-   alternatives for high-dose implanted resist.
+   solvent-based[^visintin-2006] strippers are the published alternatives
+   for high-dose implanted resist.
 3. **Rinse and dry.** Cascade DI-water rinse, spin-rinse or IPA dry.
 4. **Inspection.** Patterned-wafer optical inspection for flakes and
    residue.
@@ -131,21 +157,31 @@ practice).[^txt-02]
 
 ## Machines likely used at SkyWater
 
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench and FSI Mercury | strong (existence) |
+| KLA-Tencor AIT (our reading) | medium |
+
 * **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   all named on SkyWater's facilities page with their gases and
-  temperatures.[^skw-01] Strength: **strong** for existence; the
-  assignment of this strip to any one of them is an inference. The
-  Iridia's H₂/N₂ chemistry and 40 °C lower limit fit a cool first
+  temperatures.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to any one of them is
+    an inference.
+
+  The Iridia's H₂/N₂ chemistry and 40 °C lower limit fit a cool first
   stage best.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE")[^skw-01] for the SPM/SC-1 sequence. Strength: strong for
-  existence.
+  BOE")[^skw-01] for the SPM/SC-1 sequence.
+  - *Tool exists:* strong for existence.
 * **DNS wet bench and FSI Mercury** ("industry standard
-  HF/SC1/SC2")[^skw-01] as alternative clean tools. Strength: strong for
-  existence.
+  HF/SC1/SC2")[^skw-01] as alternative clean tools.
+  - *Tool exists:* strong for existence.
 * **KLA-Tencor AIT** patterned-wafer inspection, our reading of "AIT"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -171,7 +207,7 @@ practice).[^txt-02]
   masked {ref}`ASTI <step-065>`.
 * Next: {ref}`HVNTM <step-068>` (the thin HV-tip resist coated on the
   cleaned surface).
-* Companion strips in this module: {ref}`HVASTIS <step-070>`,
+* Same module: companion strips {ref}`HVASTIS <step-070>`,
   {ref}`LDASTIS <step-074>`; the next high-dose strips are
   {ref}`PDIS <step-084>` and {ref}`NSDIS <step-087>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
@@ -252,15 +288,16 @@ practice).[^txt-02]
 
 ## Open questions
 
-* The SKY130 ash recipe (stage temperatures, gases, whether H₂O or
-  H₂/N₂ is used) and the wet sequence are not public.
-* Whether an oxide-thinning budget is assigned to this clean, and how
-  the screen oxide thickness is tracked across the three tip strips, is
-  not public.
-* Which of the three ashers on SkyWater's public tool list[^skw-01]
-  runs the high-dose strips is not stated publicly.
-* The tip dose that determines how hard this strip is remains an
-  inference from node-typical values ({ref}`ASTI <step-065>`).
+* **Ash recipe and wet sequence.** The SKY130 ash recipe (stage
+  temperatures, gases, whether H₂O or H₂/N₂ is used) and the wet sequence
+  are not public.
+* **Oxide-thinning budget.** Whether an oxide-thinning budget is assigned to
+  this clean, and how the screen oxide thickness is tracked across the three
+  tip strips, is not public.
+* **Which asher.** Which of the three ashers on SkyWater's public tool
+  list[^skw-01] runs the high-dose strips is not stated publicly.
+* **Tip dose.** The tip dose that determines how hard this strip is remains
+  an inference from node-typical values ({ref}`ASTI <step-065>`).
 
 <!-- footnotes -->
 
