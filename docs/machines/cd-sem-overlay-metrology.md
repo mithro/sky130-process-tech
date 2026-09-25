@@ -232,10 +232,10 @@ entry below.
 | Entry as listed | What it names | Status |
 |---|---|---|
 | "AMAT Verity (multiple versions) CD" | Applied Materials' VeritySEM CD-SEM line ("AMAT Verity"), in unstated versions[^amat-veritysem-2004] | our reading |
-| "AMAT VeraSEM" | the CD-SEM Applied introduced in 1999[^amat-verasem-1999] | not stated |
+| "AMAT VeraSEM" | the CD-SEM Applied introduced in 1999[^amat-verasem-1999] | — |
 | "KLA 5200/5300/Archer overlay" | KLA-Tencor optical overlay tools of the 5200, 5300 and Archer lines; the 5200XP and Archer 10 have public descriptions,[^kla-5200xp][^kla-archer10] no 5300 description was retrieved | our reading |
-| "Reticle storage/handler/defect inspection" | — | not stated |
-| "Advanced Process Control (APC) feed forward and backwards" | — | not stated |
+| "Reticle storage/handler/defect inspection" | — | — |
+| "Advanced Process Control (APC) feed forward and backwards" | — | — |
 :::
 
 SkyWater gives no tool counts, and does not say whether

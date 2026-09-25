@@ -265,16 +265,16 @@ sub-entry:[^skw-01]
 >
 > "PECVD nitride C1" — "– high R.I., low temp options"
 
-Read term by term, on our reading:
+Read term by term:
 
-:::{table} The three PECVD entries, term by term
+:::{table} How this reference reads the three PECVD entries
 :widths: 34 44 22
 
-| Entry as listed | What it names (our reading) | Status |
+| Entry as listed | What it names | Status |
 |---|---|---|
-| "PECVD TEOS, C2 and Producer" — "– low temp options" | a TEOS oxide process on tools called "C2" and "Producer"[^skw-01] | "C2" and "Producer" not expanded by SkyWater |
-| "PECVD silane oxide/nitride/oxynitride, C1" — "– low temp, range of R.I. options" | a silane process for oxide, nitride and oxynitride on a tool called "C1", with a choice of refractive index[^skw-01] | "C1" not expanded by SkyWater |
-| "PECVD nitride C1" — "– high R.I., low temp options" | a nitride on "C1" with a high-index option[^skw-01] | "C1" not expanded by SkyWater |
+| "PECVD TEOS, C2 and Producer" — "– low temp options"[^skw-01] | a TEOS oxide process on tools called "C2" and "Producer" | — |
+| "PECVD silane oxide/nitride/oxynitride, C1" — "– low temp, range of R.I. options"[^skw-01] | a silane process for oxide, nitride and oxynitride on a tool called "C1", with a choice of refractive index | — |
+| "PECVD nitride C1" — "– high R.I., low temp options"[^skw-01] | a nitride on "C1" with a high-index option | — |
 :::
 
 The page does not expand "C1" or "C2" or say

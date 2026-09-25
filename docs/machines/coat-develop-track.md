@@ -191,7 +191,7 @@ Capabilities* page lists three tracks:[^skw-01]
 | Entry as listed | What it names | Status |
 |---|---|---|
 | "DNS 80B track" | "DNS" is Dainippon Screen, a joint owner of Sokudo;[^sokudo-rf3-2006] "80B" read as a member of the 60/80 series SCREEN still describes,[^screen-sk80ex] an inference from the model number | our reading |
-| "Sokudo RF3 track" | "Sokudo RF3" names Sokudo's RF3 track[^sokudo-rf3-2006] | not stated |
+| "Sokudo RF3 track" | "Sokudo RF3" names Sokudo's RF3 track[^sokudo-rf3-2006] | — |
 | "TEL ProZ Lithius track" | "TEL ProZ Lithius" is SkyWater's word order; TEL describes its LITHIUS Pro Z as a 300 mm coater/developer for the 10 nm node,[^tel-lithius] so, as on the {ref}`machines index <machines-index>`, this reference does not identify the 200 mm fab's track with that model | our reading |
 :::
 

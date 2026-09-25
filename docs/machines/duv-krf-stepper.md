@@ -220,8 +220,8 @@ and Y directions, sub-20nm stitching errors".[^skw-01]
 
 | Entry as listed | What it names | Status |
 |---|---|---|
-| "ASML DUV stepper", "ASML DUV scanner" | "DUV" names no wavelength; read as 248 nm (KrF) tools, as the {ref}`machines index <machines-index>` records; that the list gives the two 193 nm scanners as separate entries is consistent with that reading | our reading (machines index) |
-| "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" | each gives a CD and distinguishes a "single stage" from a "twin stage" scanner; ASML's TWINSCAN platform was introduced in 2000,[^kato-2007] and SkyWater's engineer profile names "the ASML TWINSCAN" among "More advanced tools" that "are always arriving",[^skw-06] but that the twin-stage entry is a TWINSCAN is our inference | our reading |
+| "ASML DUV stepper", "ASML DUV scanner" | "DUV" names no wavelength; the step pages read these as 248 nm (KrF) tools, as the {ref}`machines index <machines-index>` records; that the list gives the two 193 nm scanners as separate entries is consistent with that reading | our reading (machines index) |
+| "ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD" | each gives a CD and distinguishes a "single stage" from a "twin stage" scanner; ASML's TWINSCAN platform was introduced in 2000,[^kato-2007] and SkyWater's engineer profile names "the ASML TWINSCAN" among "More advanced tools" that "are always arriving",[^skw-06] but that the twin-stage entry is a TWINSCAN is our inference | our inference |
 :::
 
 None of the entries gives a model, NA or tool count, and the

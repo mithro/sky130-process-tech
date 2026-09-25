@@ -244,7 +244,7 @@ lists one HDP entry with one sub-entry:[^skw-01]
 | Entry as listed | What it names | Status |
 |---|---|---|
 | "Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch" | an HDP process that deposits "doped" and "phos doped" films, "with sputter etch"; the entry does not say what "doped" means beside "phos doped", does not name an undoped or fluorinated film, and gives no model, temperature or thickness; "with sputter etch" is read as the in-situ sputtering that defines the class, not a separate etch tool | our reading |
-| "– high aspect (5:1) fill capability" | a stated fill capability of 5:1 | not stated |
+| "– high aspect (5:1) fill capability" | a stated fill capability of 5:1 | — |
 :::
 
 The page does not

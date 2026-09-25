@@ -237,8 +237,8 @@ for:[^job-06]
 | "AIT" | Tencor's Surfscan AIT patterned inspector[^tencor-ait-1995] | our reading |
 | "SP1" | Tencor's Surfscan SP1 unpatterned scanner[^tencor-sp1-wp] | our reading |
 | "EV300" | KLA-Tencor's eV300 e-beam review SEM[^kla-ev300] | our reading |
-| "SEM" | could denote a review or analysis SEM | not stated |
-| "KLA" | could denote other KLA inspection tools | not stated |
+| "SEM" | could denote a review or analysis SEM | our reading |
+| "KLA" | could denote other KLA inspection tools | our reading |
 | "1X" | — | not stated |
 :::
 
