@@ -1039,6 +1039,21 @@ def _traverse(xs: XSection, lid: str, x: float, y: float, hidden: set,
     return total
 
 
+def _film_run(xs: XSection, lid: str, x: float, y: float, hidden: set, step: int = 2) -> float:
+    """The longest stretch a horizontal leader from (x, y) to the right-hand edge runs inside
+    ONE other film: leaving its layer sideways into the next film and running along inside
+    it, a leader reads as that film's boundary, even where its total traverse is short."""
+    best, cur, cur_lid = 0.0, 0.0, None
+    for i in range(xs.idx(x) + 1, xs.n, step):
+        v = _visible(xs, i, y, hidden)
+        if v is not None and v != lid and v == cur_lid:
+            cur += step * xs.dx
+        else:
+            cur_lid, cur = v, (step * xs.dx if v is not None and v != lid else 0.0)
+        best = max(best, cur)
+    return best
+
+
 def _edge_run(xs: XSection, lid: str, x: float, y: float, hidden: set, step: int = 4,
               highlight=()) -> float:
     """How far a horizontal leader from (x, y) runs within the edge clearance of, and
@@ -1674,6 +1689,7 @@ def build_xsection(spec: dict, series: dict, errs: list[str]) -> Svg:
             ok = [] if layer.get("route") == "over" else [
                 yv for yv in _frange(glo, ghi, 1.0)
                 if _traverse(st, lab.key, gx, yv, hidden, ion_xs, ion_tail_y) <= SP["max-leader-traverse"]
+                and _film_run(st, lab.key, gx, yv, hidden) <= SP["max-film-traverse"]
                 and _edge_run(st, lab.key, gx, yv, hidden,
                              highlight=(p.get("highlight") or {}).get("where", []))
                 <= SP["max-edge-run"]]
@@ -2507,6 +2523,7 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
         if owner in ("ions",) or owner.startswith(("dim", "callout")):
             continue
         through, along, rise, rise_layers = 0, set(), 0, set()
+        single = (0, None)
         for (p0, p1) in segs:
             if abs(p0[0] - p1[0]) < 0.01 and abs(p0[1] - p1[1]) > 0.01:
                 # a riser: a vertical line up through a stack of films reads as a feature
@@ -2527,9 +2544,11 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
             if abs(p0[1] - p1[1]) > 0.01:
                 continue
             xa, xb = sorted((p0[0], p1[0]))
+            run_lid, run_len = None, 0
             for k in range(int(xa) + 1, int(xb)):
                 q = (k + 0.5, p0[1])
                 if not in_rect(q):
+                    run_lid, run_len = None, 0
                     continue
                 vis = None
                 for lid, pts, clip in layered:
@@ -2537,6 +2556,14 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
                         vis = lid
                 if vis is not None and vis != owner:
                     through += 1
+                # the longest stretch inside ONE other film: a leader that leaves its layer
+                # sideways and runs along inside the next film reads as that film's boundary
+                if vis is not None and vis != owner and vis == run_lid:
+                    run_len += 1
+                else:
+                    run_lid, run_len = vis, (1 if vis is not None and vis != owner else 0)
+                if run_len > single[0]:
+                    single = (run_len, run_lid)
                 # Above a highlight (in the air over the new surface) a run needs the larger
                 # clearance; below it, inside the film the trace marks, the material one.
                 if any(e0 <= q[0] <= e1 and abs(ey - q[1]) < (
@@ -2549,6 +2576,10 @@ def lint_svg_text(raw: str, name: str = "") -> list[str]:
         if len(along) > SP["max-edge-run"]:
             errs.append(f"leader of {owner!r} runs {len(along)} u alongside a material edge; at most "
                         f"{int(SP['max-edge-run'])}")
+        if single[0] > SP["max-film-traverse"]:
+            errs.append(f"leader of {owner!r} runs {single[0]} u inside {single[1]!r}; at most "
+                        f"{int(SP['max-film-traverse'])} u inside one other film — it reads as "
+                        "that film's boundary")
         # A riser up through one fill or one mask reads as a leader; a long one up through a
         # stack of films reads as a contact or a plug cut through them.
         if rise > SP["max-riser-traverse"] and len(rise_layers) > SP["max-riser-layers"]:
@@ -3892,6 +3923,17 @@ def selftest() -> int:
         got = any("reads as a contact or a plug" in e for e in lint_svg_text(raw))
         if got != want:
             print(f"SELFTEST FAIL: rule 18 risers: {'stack' if want else 'fill'} reported={got}")
+            bad += 1
+    # rule 18, one film: a leader that runs 30 u along inside one other film is refused (the
+    # rounded shoulder of a gate film beside a resistor body); 20 u across one is not
+    for width, want in ((30, True), (20, False)):
+        raw = (hdr + '<g class="drawing" data-rect="12,20,268,120">'
+               f'<polygon class="mat m-poly" data-layer="g" points="100,40 {100 + width},40 '
+               f'{100 + width},60 100,60"/></g>'
+               '<path class="leader" data-owner="own" d="M90 50H300"/></svg>')
+        got = any("inside one other film" in e for e in lint_svg_text(raw))
+        if got != want:
+            print(f"SELFTEST FAIL: rule 18 one film: a {width} u run reported={got}")
             bad += 1
     for y_run, want in ((300, False), (90, True)):
         got = any("runs" in e and "through other materials" in e
