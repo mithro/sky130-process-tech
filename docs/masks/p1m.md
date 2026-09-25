@@ -31,7 +31,7 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 ## What the mask defines
 
 Because the etched poly width is the transistor
-gate length, this is the mask whose {term}`CD` matters most to device
+gate length, the poly mask is the mask whose {term}`CD` matters most to device
 behaviour, and the step pages read it as a critical KrF level.
 
 The periphery rules give the function of the `poly` layer as "Defines
@@ -100,7 +100,7 @@ the plate.[^pdk-06]
 Two rules show what a designer may place on the mask
 layers:[^pdk-periph]
 
-* Rule x.9: "Shapes on maskAdd or maskDrop layers (“serifs”) are
+* rule x.9: "Shapes on maskAdd or maskDrop layers (“serifs”) are
   allowed in core only"
 * rule x.15a, which confines mask and
   waffle-drop layers to test modules, seal ring and frame, makes one
@@ -341,8 +341,7 @@ The tables of *Criteria & Assumptions* give, table by table:
 * **Table 4** — the poly thickness as 0.18
   (`POLYTH`) and the "Channel length for low Vt PMOS" as 0.35
   (`lvtpmos_poly`), matching poly.1b.[^pdk-03][^pdk-periph]
-* **Table 7**,
-  "Other criteria and parameters" — a row named for this mask, "P1M
+* **Table 7** ("Other criteria and parameters") — a row named for this mask, "P1M
   additional CD control", 0.011 (`P1MCDcontrol`), and the same table gives
   a "Field oxide etchback after P1ME before implants" of 0.04
   (`WFDEL`).[^pdk-03] Neither row has a unit or says what the value
