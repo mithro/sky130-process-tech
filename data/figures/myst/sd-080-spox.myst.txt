@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/sd-080-spox.svg
+:alt: Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands with a nitride block against each sidewall, on a thin oxide over doped silicon. After it a thin new film of even thickness covers everything: the flat oxide, the outer face and top of the nitride block and the top of the gate.
+:width: 560px
+:name: fig-sd-080-spox
+
+A close-up of the 1.8 V NMOS gate edge, as for the tip module. Before, the nitride spacer after SPE; after, the spacer oxide over everything. The page reads this film as the PDK's 0.05 µm "oxide spacer"[^pdk-03] and treats it as staying blanket through the source/drain implants, with no etch-back; both are inferences, and the thickness is not drawn to scale. Beside the spacer the film adds its own width to the offset a vertical implant sees, which is how it is drawn. Outside this view it also covers the poly opened in the cut, the resistor's spacers and the field oxide. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::

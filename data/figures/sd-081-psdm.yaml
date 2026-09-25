@@ -1,0 +1,37 @@
+id: sd-081-psdm
+kind: xsection
+page: docs/steps/081-psdm.md
+series: series-tips-sd.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step a thin oxide covers
+  everything: both active areas, a narrow capped gate with nitride blocks on its sidewalls, and a
+  wide stack on the oxide-filled trench whose poly top is bare under the oxide. After it resist
+  covers both active areas and leaves a window over the wide stack.
+caption: >-
+  Before, the spacer oxide over the whole slice; after, the PSDM resist. The slice holds no PMOS
+  and no p⁺ tap, so its only P⁺ region is the resistor: the precision-resistor rules require
+  `psdm` to enclose the resistor (rpm.4),[^pdk-periph] and the page reads that as putting its
+  contact heads, opened by the nitride cut, inside the P⁺ window. Both NMOS areas are kept out
+  (psd.8).[^pdk-periph] The window is drawn the same as the cut's. The resist is drawn at the
+  thickness of the other implant resists; the PDK's nominal photoresist thickness is
+  1.14 µm,[^pdk-03] and this mask's is not public. The colours of the gate film mark the type of
+  its doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation
+  oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are
+  drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel
+  implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "PSDM, step 081"
+  note: "Resist is coated over the spacer oxide, exposed through the P+ implant reticle and developed."
+panels:
+  - state_after: "080"
+    title: "Before: the spacer oxide over the whole slice (step 080)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit]
+    dim_layers: [liner]
+  - state_after: "081"
+    title: "After: resist over both NMOS areas, a window over the resistor"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, spnit, polyn]
+    dim_layers: [liner]
+    highlight: {where: [[0, 96], [172, 268]]}

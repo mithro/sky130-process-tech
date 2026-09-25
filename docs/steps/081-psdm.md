@@ -21,6 +21,14 @@ receive the heavy p-type implants of {ref}`PSDI <step-082>` and
 {ref}`PDIS <step-084>`. It is the first of the two source/drain masks;
 its complement, {ref}`NSDM <step-085>`, follows with the N⁺ implant.
 
+:::{figure} /_static/figures/sd-081-psdm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a thin oxide covers everything: both active areas, a narrow capped gate with nitride blocks on its sidewalls, and a wide stack on the oxide-filled trench whose poly top is bare under the oxide. After it resist covers both active areas and leaves a window over the wide stack.
+:width: 560px
+:name: fig-sd-081-psdm
+
+Before, the spacer oxide over the whole slice; after, the PSDM resist. The slice holds no PMOS and no p⁺ tap, so its only P⁺ region is the resistor: the precision-resistor rules require `psdm` to enclose the resistor (rpm.4),[^pdk-periph] and the page reads that as putting its contact heads, opened by the nitride cut, inside the P⁺ window. Both NMOS areas are kept out (psd.8).[^pdk-periph] The window is drawn the same as the cut's. The resist is drawn at the thickness of the other implant resists; the PDK's nominal photoresist thickness is 1.14 µm,[^pdk-03] and this mask's is not public. The colours of the gate film mark the type of its doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The PDK documents the layer thoroughly. The mask table lists "P+
 Implant, PSDM" as used in SKY130;[^pdk-05] the drawn layer is `psdm`
 (GDS 94:20, "P+ source/drain implant") and the generated mask layer is
