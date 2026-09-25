@@ -542,15 +542,26 @@ Rules applied: R-PARA (the lead paragraph split at its `NS19`/screen-oxide seam;
 "published test-tile measurements" block split into 3 paragraphs, no table — see note below;
 the "Why this step exists" opening paragraph split; the Species and Energy/dose list items
 split into lead + indented continuation, the latter further split into two continuation
-paragraphs), R-SENTENCE (the em-dash/semicolon sentences in the same passages; one sentence
-inside the in-force dropdown, per §2 rule 5, which allows R-SENTENCE inside a dropdown to text
-already there — done with `--allow-dropdown-edits`, no word changed, only a semicolon/`and`
-became two sentences), R-HEDGE step 1 (italic lead-in), R-TOOLS (both "Strength:" bullets
+paragraphs), R-SENTENCE (the em-dash/semicolon sentences in the same passages), R-HEDGE step 1 (italic lead-in), R-TOOLS (both "Strength:" bullets
 split; 2 tools, no recap table), R-RELATED (`Previous:`/`Next:` split onto separate lines per
 the model pages; `Same category:` for the threshold-setting-companions bullet; `Feeds:` for
 the RTAI-activation bullet), R-OPENQ (bold labels added to all three bullets), R-GLANCE (box
 last, using the measured SKY130 threshold numbers as "Public numbers" since they are real
 SKY130 test-tile values, not the not-public species/energy/dose).
+
+**Correction (review fix M1, 2026-09-25).** This entry originally claimed the second in-force
+dropdown ("From a patent shown as in force (US 8,796,098 …)") had one sentence split inside it
+with `--allow-dropdown-edits`, "no word changed, only a semicolon/`and` became two sentences".
+That was false: the edit had changed "; the screen oxide is" to ". The screen oxide is" and
+"and an indium-doped channel" to "They also describe an indium-doped channel" — new wording,
+not a punctuation-only split, and the progress file said twice that no dropdown text was
+touched. Independent review (`tmp/reviews/rd-steps-014-034.md`, finding M1) caught this from
+main's improved `check_preserved.py`, which reports `{dropdown} 2 ... text changed beyond
+whitespace and list/table markup` when run with `--allow-regrouped` alone (no
+`--allow-dropdown-edits`). The dropdown body has been restored byte-for-byte from the merge
+base (05e7a3ba); it was never over any §1 cap, so nothing was lost by leaving it alone. Re-run
+of `check_preserved.py --base 05e7a3ba --allow-regrouped` (main's version, no dropdown flag) on
+the corrected page shows no `{dropdown}` finding.
 
 **Reverted an R-TABLE attempt.** The "Energy and dose" item's LSI Logic and AMD figures are
 each given as **one continuous quotation covering both energy and dose** (e.g. "implanted

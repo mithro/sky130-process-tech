@@ -188,11 +188,11 @@ below are typical or taken from contemporaneous patents.*
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 Cypress's own patents describe BF₂ "at an energy of from about 10 to
 about 100 kilo-electron volts (keV), and a dose of from about 1e12 cm⁻²
-to about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel.
-They also describe an indium-doped channel "implanted with Indium (In)
-at an energy of from about 50 to about 500 kilo-electron volts (keV),
-and a dose of from about 5e11 … to about 5e12 cm⁻²" for the memory
-transistor. The screen oxide is the 10–20 nm pad oxide.[^pat-04]
+to about 1e14 cm⁻² to form an N-type MOS (NMOS) transistor" channel, and
+an indium-doped channel "implanted with Indium (In) at an energy of from
+about 50 to about 500 kilo-electron volts (keV), and a dose of from
+about 5e11 … to about 5e12 cm⁻²" for the memory transistor; the screen
+oxide is the 10–20 nm pad oxide.[^pat-04]
 :::
 
 ## Machines typically used
