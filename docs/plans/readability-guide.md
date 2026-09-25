@@ -2263,7 +2263,9 @@ warning the incremental cache remembers not seeing.
 
 **7. Look at the result**, desktop and phone, with `tools/shoot.py`, and open every tile. Compare with
 the "before" tiles. Fix what looks wrong: a table that scrolls sideways, a cell that fills the screen, a
-caption that wraps badly, a bullet list that lost its indentation.
+caption that wraps badly, a bullet list that lost its indentation. Pass `--max-height 40000`
+(desktop) and `--max-height 60000` (with `--width 400`) for step pages, and check that the last
+tile shows `## Open questions`.
 
 **8. Self-review checklist** — all of these before you commit the page:
 
