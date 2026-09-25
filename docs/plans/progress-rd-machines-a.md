@@ -79,13 +79,17 @@ that weren't already the sanctioned cross-page boilerplate (see method note 3).
    `### SKY130 steps assigned to this class` lists, after the dropdown/steps-table, "the grade
    table `Tool | Grade | Steps`" attributed to R-STEPRUN. `tools/gen_step_tables.py` (the only
    generator R-STEPRUN authorises) does not produce any such table — it only emits the
-   `Step | Code | Name` table for the link run. The long grading bullets that follow
-   (`**"Tool name"** — *strong for existence...:* {ref}...` naming dozens of steps each) are what
-   `check_machines.py` parses positionally as the page's "main"/"*alternative:*"/"*also …:*"
-   lists and diffs against the machines index; converting them to a table by hand is not
-   something any current generator does and risks breaking that positional parser. Left these
-   bullets exactly as they are on every page (including where they exceed the general 60-word
-   list-item cap — they are the required index-comparison format, not ordinary prose).
+   `Step | Code | Name` table for the link run. **Correction (review round 1, 2026-09-26): the
+   rest of this note was wrong about what `check_machines.py` parses.** Reading `check()` at
+   `tools/check_machines.py:147-150` directly: it finds "the first paragraph that links a step
+   and is not a bullet list" — its own `not re.match(r"\*\s", p.lstrip())` test explicitly
+   *excludes* any paragraph starting with `* `. That is the plain inline step-link run above the
+   grading bullets, not the bullets themselves; the long grading bullets
+   (`**"Tool name"** — *strong for existence...:* {ref}...` naming dozens of steps each) are
+   never read by this checker at all, in either direction. Left these bullets exactly as they are
+   on every page regardless (including where they exceed the general 60-word list-item cap, since
+   no generator produces them and hand-converting them was judged out of scope for a readability
+   pass), but the reason is that no generator owns them, not that a checker parses them.
 6. **Visual review.** Per page: one `-W` build, screenshots at desktop and 400 px width after the
    edit (not a full before/after tile-by-tile diff for every one of the ~9 tiles per width per
    page — with 15 pages that would be several hundred images; I read the tiles covering every
@@ -127,8 +131,12 @@ Over-cap counts, against the guide's §1 caps (before → after):
 * Sentences > 45 words: 9 → 1 (the one described above, left long).
 * List items > 60 words outside `## References`: 0 → 0 (the R-STEPRUN grading bullets are ≤ 86
   words but are the checker-format exception of method note 5, not ordinary list items).
-* Quick-facts cells > 20 words: 7 of 9 → 0 (the 2 unchanged rows, "SkyWater-listed tool" and
-  "SKY130 steps", were already short).
+* Quick-facts cells > 20 words: **correction (review round 1, 2026-09-26): this line was wrong.**
+  Measured with `measure5.py` against the guide's own 20-word cap, 3 of the 9 cells are still over
+  20 words after this page's edits ("CD-SEM resolution and repeatability", "Throughput",
+  "Requirement at 130 nm"), not the "7 of 9 → 0" this entry originally claimed. R-QUICKFACTS was
+  applied to some cells on this page but not carried through to a full trim on every cell; see the
+  review-round-1 section below and method note 3.
 * Tables with no caption: 2 new tables → 0 uncaptioned.
 
 `check_preserved.py --base <pre-edit commit> --allow-regrouped --allow-added
@@ -727,8 +735,15 @@ Content problems for the owner: none found while re-presenting this page.
 
 ### 14. `docs/machines/parametric-tester.md` — done
 
-Different page shape from the implanter/lithography run: no template sentence at all (its intro is
-bespoke prose, not the boilerplate wording other classes share), and the intro itself ran to
+**Correction (review round 1, 2026-09-26): the claim below that this page "had no template
+sentence at all" is wrong.** It had the usual one ("This page describes the classes, lists
+representative 200 mm-era models, and then says what SkyWater has published about its tools and
+which SKY130 steps this reference assigns to them."), and it was deleted the same way as on the
+other 14 pages, as method note 4 describes; this entry's own R-INTRO edit (below) shows the
+deletion happening, the summary sentence just described it wrongly. Original text otherwise
+unchanged:
+
+Different page shape from the implanter/lithography run in one other respect: the intro itself ran to
 111 words, well past the 70-word R-INTRO cap, with no marker on the two trailing sentences. Rules
 applied: R-INTRO (kept the first two sentences, 65 words; the two trailing sentences carried real
 facts — the SPC/shipping-decision statement and the manual-probe-station/electrical-monitor
@@ -903,6 +918,73 @@ batch complete — rather than relying solely on the hand-rolled per-page scanne
 otherwise have shipped uncaught (commit `402dae34`). Recommend this become a standing final step
 for every future readability batch, not just this one.
 
+## Review round 1 (2026-09-26)
+
+Independent review at `tmp/reviews/rd-machines-a.md` (merge base `3a2e33cd`, tip `c4df6c77`):
+**reject as it stands; approve with fixes after one local round.** H1-H6 were §2 Never breaches, all
+in this batch's new tables and cells. Root cause: every page's `check_preserved.py` run in this
+batch used a blanket `--allow-added quotes,markers,numbers,number_order,hedges,identifiers`, which
+hid every ADDED year, ADDED "our reading" and ADDED identifier the review then had to find by hand.
+
+**Process fix, applied first.** Copied main's `tools/check_preserved.py` (confirmed byte-identical
+to this worktree's own copy) to `tmp/check_preserved.py` and re-ran every touched page with
+`--base 3a2e33cd --allow-regrouped` only — no blanket `--allow-added`. Every `LOST` line was read;
+none was a marker, number or quotation outright lost (the pre-existing `LOST number_order` tuples
+on `cmp-polisher.md`, `coat-develop-track.md` and `duv-krf-stepper.md` were independently
+re-verified digit-for-digit against the source and are unchanged by any review-fix commit — the
+review's own audit reached the same conclusion). Every `ADDED` line was read and is one of:
+a marker repeated onto every split clause that carries a supported claim (the batch's own inherited
+rule); a quotation copied into a new R-MODELS/R-ENTRIES table cell whose original context is
+untouched; or a bare product code/date that is the source's own wording, newly visible in a table
+cell. None of these needed removing; each is the intended, reviewed effect of a table conversion,
+not a hidden fact change.
+
+**Fixes applied, one commit per finding** (commits `6e5c99e2` through `af03c2e2`, `1be7c65d`
+through `a73aa5dc`; see each commit message for the page-by-page detail — not repeated here):
+
+* **H1** (11 pages, ~30 cells): a Year cell held a capture, listing, award, statement or
+  manufacture date instead of the model's own year. Fixed to `—` with the real date moved into
+  Published figures in the page's own words (two rows needed the date moved into the Model cell
+  instead, to keep digit order matching the source).
+* **H2**: restored the cd-sem-overlay-metrology fact ("fabs buy the two classes from partly
+  different vendors...") that the R-INTRO template-sentence deletion had swept away along with the
+  actual boilerplate.
+* **H3** (10 pages): restored words dropped when a sentence became a table cell ("first KrF
+  stepper", "scanning stepper", "(a reseller copy)", "dual-spindle production planarizer", "at
+  five points", "successor", etc. — full list in commit `8b7c2dfe`).
+* **H4** (6 pages): removed invented Status hedges ("not stated" where the page states a thing
+  plainly; "our reading" where the page's own word is "our inference") and restored one dropped
+  attribution ("the step pages read").
+* **H5**: deleted the false "all rotary unless noted" clause from cmp-polisher's caption; marked
+  the AvantGaard 676 "(orbital)" per the page's own body text.
+* **H6** (2 pages, 3 rows): "Axcelis" on three 1996-98 rows corrected to "Eaton / Axcelis", since
+  Axcelis did not exist as a company until the 2000 spinoff both pages describe.
+* **A3** (9 pages): a footnote marker left attached to the wrong clause after a split or table
+  conversion, moved back onto the clause it actually supports.
+* **The four genuine list items over 60 words** (measured with the review's own method, matching
+  this batch's earlier `measure5.py` audit but at the corrected line numbers): split with a lead of
+  ≤30 words and an indented continuation, no rewording.
+* **M1** (quick facts, 4 pages): restored qualifiers/lead words dropped when a cell was trimmed
+  ("Planarises films by polishing:", "each station of Applied's carousel patent", "3 nm resolution
+  and 3 nm repeatability", "the SKY130 design assumptions use...", etc.). The broader R-QUICKFACTS
+  trim (91 cells over 20 words across the batch, only barely attempted) is **not** done this round;
+  it is deferred per the review's own fix-list item 13 and guide ruling D8 (the
+  R-QUICKFACTS-step-2/`check_preserved.py` tool-rule conflict, now named in the guide) — a full pass
+  needs each cell's quotation either confirmed already-verbatim in the body (pointer only) or moved
+  there first, one page at a time, which this round's remaining budget did not allow alongside the
+  H1-H6/A3/guide-ruling work above.
+
+**Guide rulings applied verbatim to `docs/plans/readability-guide.md`, one commit each**
+(`d08be271`, `1913a1a6`, `4b036c99`, `499a99b2`, `324564ae`, `6e937b59`, `af03c2e2` for problems
+1-7; `1be7c65d`, `8d38b566`, `1134a7df`, `a73aa5dc` for D8-D11 — the review's own numbering; D8-D11
+are problems the reviewer found that this batch's own "Guide problems found so far" list below,
+items 1-7, had not raised). See each commit message for the exact wording changed and where.
+
+**Not done this round, by explicit review/coordinator instruction:** M2-M6 and the Low findings
+(section A4/B of the review) beyond the ones folded into M1 above; the consistency rulings C1-C3;
+the remaining ~86 quick-facts cells over 20 words (R-QUICKFACTS, deferred as above). None of these
+is a §2 Never breach.
+
 ## Guide problems found so far
 
 1. **`check_preserved.py` has no way to accept a `LOST identifiers`/`LOST hedges` line, but
@@ -982,4 +1064,7 @@ for every future readability batch, not just this one.
    preceding `{` before `clean()` strips it), so future batches do not have to hand-verify every
    Related-pages flag the way this one did.
 
-(to be continued — pages 3–15)
+**Correction (review round 1, 2026-09-26): the line that used to stand here, "(to be continued —
+pages 3–15)", was stale.** All 15 pages were completed (see the "Pages" section and the batch
+summary above); this list of guide problems (1-7) plus D8-D11 below is the full, closed set this
+round addressed, not a placeholder awaiting the rest of the batch.
