@@ -865,3 +865,276 @@ records:
     fetches of the same field, not resolved here. This record is kept
     collapsed per tools/check_inforce.py, using data/patents.yaml's
     still-current "expired: unknown" value.
+
+- id: pat-us6525962b1-cpld-nvcell-2000
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6525962B1, "High current and/or high speed electrically erasable
+    memory cell for programmable logic devices", Cypress Semiconductor
+    Corporation, priority/filing 2000-04-05, granted 2003-02-25. Family
+    GP24168163 in data/patents.yaml.
+  url: https://patents.google.com/patent/US6525962B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6525962B1.html.txt
+  sha256: b83cc52a52beab28d332a13fad27f673edeb114fae1b0247fb67c326feb4d802
+  quotes:
+  - text: >-
+      An electrically erasable programmable logic device (EEPLD) cell
+      (100) is disclosed. A folded floating gate (110) and folded select
+      gate (108) can form two parallel read current paths (Isense0 and
+      Isense1).
+    location: "Google Patents page (patents.google.com/patent/US6525962B1/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress CPLD nonvolatile configuration cell", attribute: "cell structure, per this patent's abstract", value: "an electrically-erasable PLD cell with a folded floating gate and folded select gate giving two parallel read-current paths, filed 2000, the same year as the Delta39K CPLD architecture paper"}
+  - {technology: "US6525962B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2000-04-05; data/patents.yaml (verified 2026-09-14) records expired: unknown, no legal status found at that time"}
+  notes: >-
+    Filed the same year (2000) as paper-kennings-2000-delta39k-cpld; read
+    together they are the closest evidence found for how a Cypress CPLD of
+    this era (Delta39K, and by extension the "Ultra37000" family, though
+    no Ultra37000-specific document was found) stored its configuration --
+    a dedicated electrically-erasable cell, not the SONOS process used a
+    year later for the Neutron/PSoC1 family (S4AD-5, in
+    data/history/qtp.yaml). This fresh fetch's own legal-status field now
+    reads "Expired - Lifetime", where data/patents.yaml (verified
+    2026-09-14) recorded no determinable status -- a disagreement between
+    the two dates' fetches of the same field, not resolved here. Kept
+    collapsed per tools/check_inforce.py using data/patents.yaml's
+    still-current "expired: unknown" value.
+
+- id: pat-us6818558b1-sonos-dielectric-2001
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6818558B1 (and continuation-in-part US6709928B1), "Method of
+    manufacturing a dielectric layer for a silicon-oxide-nitride-oxide-silicon
+    (SONOS) type devices", Cypress Semiconductor Corp (now Monterey
+    Research LLC), priority 2001-07-31, granted 2004-11-16. Family
+    GP31979047 in data/patents.yaml.
+  url: https://patents.google.com/patent/US6818558B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6818558B1.html.txt
+  sha256: 1467a0eb877bab016519beb48a891018b117e39be11c73353117a3dc03ea9d1e
+  quotes:
+  - text: >-
+      A method of forming a charge storing layer is disclosed. According
+      to an embodiment, a method may include the steps of forming a first
+      portion of a charge storing layer with a first gas flow rate ratio
+      (step 102), forming at least a second portion of the charge storing
+      layer by changing to a second gas flow rate ratio that is different
+      than the first gas flow rate ratio (step 104), and forming at least
+      a third portion of the charge storing layer by changing to a third
+      gas flow rate ratio that is different than the second gas flow rate
+      ratio (step 106).
+    location: "Google Patents page (patents.google.com/patent/US6818558B1/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress SONOS dielectric manufacturing (2001-2002)", attribute: "process, per this patent's abstract", value: "a graded SONOS charge-storing (nitride) layer deposited in three sequential portions, each at a different gas-flow-rate ratio"}
+  - {technology: "US6818558B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2001-07-31; expired: true (estimated expiry 2021-09-18)"}
+  notes: >-
+    Priority (2001-07-31) falls just after the "in production since 2001"
+    date data/history/extra.yaml's SONOS-eFlash-brief record gives, i.e.
+    this looks like a refinement/manufacturing-method patent filed around
+    the time of first volume production, not the foundational cell patent
+    (that is US6172907B1, filed 1999). This fresh fetch's own legal-status
+    field reads "Expired - Lifetime", agreeing with data/patents.yaml.
+    EXPIRED -- no in-force restriction applies.
+
+- id: pat-us6677213b1-sonos-deuterated-2002
+  kind: patent
+  origin: patent-record
+  source: >-
+    US6677213B1 (and continuation US7042054B1), "SONOS structure including
+    a deuterated oxide-silicon interface and method for making the same",
+    Cypress Semiconductor Corp (now Longitude Flash Memory Solutions Ltd),
+    priority 2002-03-08, granted 2004-01-13. Family GP29778448 in
+    data/patents.yaml.
+  url: https://patents.google.com/patent/US6677213B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US6677213B1.html.txt
+  sha256: 4e139445552363965b569cc57a46b6c44a7c78c55fac6411026e7b430ea8fd72
+  quotes:
+  - text: >-
+      A method for processing a semiconductor topography is provided,
+      which includes diffusing deuterium across one or more interfaces of
+      a silicon-oxide-nitride-oxide-silicon (SONOS) structure.
+    location: "Google Patents page (patents.google.com/patent/US6677213B1/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      In either embodiment, a SONOS structure may be formed which includes
+      deuterium arranged within an interface of a silicon layer and an
+      oxide layer of the structure.
+    location: "Google Patents page (patents.google.com/patent/US6677213B1/en, fetched 2026-09-25), Abstract, final sentence"
+  claims:
+  - {technology: "Cypress SONOS reliability engineering (2002)", attribute: "technique, per this patent's abstract", value: "deuterium diffusion across the oxide-silicon interfaces of the SONOS stack during dielectric reflow, a known technique for reducing hot-carrier/interface-trap degradation"}
+  - {technology: "US6677213B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2002-03-08; expired: true (estimated expiry 2022-06-30)"}
+  notes: >-
+    A further SONOS dielectric-process refinement following
+    pat-us6818558b1-sonos-dielectric-2001. This fresh fetch's own
+    legal-status field reads "Expired - Lifetime", agreeing with
+    data/patents.yaml. EXPIRED -- no in-force restriction applies.
+
+- id: pat-us7371637b2-oxide-nitride-gate-2003
+  kind: patent
+  origin: patent-record
+  source: >-
+    US7371637B2, "Oxide-nitride stack gate dielectric", Cypress
+    Semiconductor Corp, priority 2003-09-26, filed 2004-09-24, granted
+    2008-05-13. Family GP34381269 in data/patents.yaml.
+  url: https://patents.google.com/patent/US7371637B2/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US7371637B2.html.txt
+  sha256: 59aded93094238b2ca5494a76c45b3a00f2229ba888bc49d74a47f031121f191
+  quotes:
+  - text: >-
+      A method of making a semiconductor structure comprises forming an
+      oxide layer on a substrate; forming a silicon nitride layer on the
+      oxide layer; annealing the layers in NO; and annealing the layers in
+      ammonia. The equivalent oxide thickness of the oxide layer and the
+      silicon nitride layer together is at most 25 Angstroms.
+    location: "Google Patents page (patents.google.com/patent/US7371637B2/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "Cypress SONOS/ONO gate dielectric (2003)", attribute: "process and thickness, per this patent's abstract", value: "an oxide-then-nitride gate stack, annealed first in NO then in ammonia, with a combined equivalent oxide thickness of at most 25 Å"}
+  - {technology: "US7371637B2", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2003-09-26; data/patents.yaml (verified 2026-09-14) records expired: unknown, no legal status found at that time"}
+  notes: >-
+    A further oxide-nitride stack gate-dielectric patent following the
+    2001-2002 SONOS dielectric work above. This fresh fetch's own
+    legal-status field now reads "Expired - Lifetime", where
+    data/patents.yaml (verified 2026-09-14) recorded no determinable
+    status -- a disagreement between the two dates' fetches of the same
+    field, not resolved here. Kept collapsed per tools/check_inforce.py
+    using data/patents.yaml's still-current "expired: unknown" value.
+
+- id: pat-us7592661b1-cmos-hv-transistor-2005
+  kind: patent
+  origin: patent-record
+  source: >-
+    US7592661B1, "CMOS embedded high voltage transistor", Cypress
+    Semiconductor Corp, priority 2005-07-29, filed 2006-07-19, granted
+    2009-09-22. Family GP41076959 in data/patents.yaml.
+  url: https://patents.google.com/patent/US7592661B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US7592661B1.html.txt
+  sha256: a5dcdd3cb2ac7fc2249e4c2788d16bb5d3947b5edc9222cc8a7cbcd4603f214a
+  quotes:
+  - text: >-
+      A circuit having a high voltage, drain-extended (DE) metal-oxide-
+      semiconductor (MOS) transistor and method for fabricating the same
+      are provided.
+    location: "Google Patents page (patents.google.com/patent/US7592661B1/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      The DNW forms a drain-extension region for the NMOS transistor
+      surrounding the drain and extending a predetermined distance into
+      the channel. The drain extension region has a doping concentration
+      lower than the source and drain to deplete during reverse biasing of
+      the transistor, thereby raising a breakdown voltage of the
+      transistor.
+    location: "Google Patents page (patents.google.com/patent/US7592661B1/en, fetched 2026-09-25), Abstract, later sentences"
+  claims:
+  - {technology: "Cypress high-voltage CMOS module (mixed-signal / PSoC-era)", attribute: "device structure, per this patent's abstract", value: "a drain-extended high-voltage NMOS/PMOS transistor pair using a deep n-well drift region to raise breakdown voltage, embedded in a standard CMOS flow, filed 2005 -- consistent with mixed-signal parts (PSoC) needing higher-voltage I/O or analog transistors alongside the SONOS/logic core"}
+  - {technology: "US7592661B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2005-07-29; data/patents.yaml (verified 2026-09-14) records expired: unknown, no legal status found at that time"}
+  notes: >-
+    This fresh fetch's own legal-status field now reads "Active", where
+    data/patents.yaml (verified 2026-09-14) recorded no determinable
+    status -- a disagreement between the two dates' fetches of the same
+    field, not resolved here; an "Active" reading is also consistent with
+    the term-arithmetic bound (2026-07-29) not yet having been reached.
+    Kept collapsed per tools/check_inforce.py using data/patents.yaml's
+    still-current "expired: unknown" value.
+
+- id: pat-us9583501b1-sonos-mos-simultaneous-2006
+  kind: patent
+  origin: patent-record
+  source: >-
+    US9583501B1 (family also includes US8222111B1, application
+    US20080150002A1), "Simultaneous formation of a top oxide layer in a
+    silicon-oxide-nitride-oxide-silicon (SONOS) transistor and a gate oxide
+    in a metal oxide semiconductor (MOS)", Cypress Semiconductor Corp (now
+    Monterey Research LLC), priority 2006-12-22. Family GP39541580 in
+    data/patents.yaml.
+  url: https://patents.google.com/patent/US9583501B1/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US9583501B1.html.txt
+  sha256: 6e40db31f3680cea9e1f3ae39df81ada2f604ff57d85f0cad89ed275f8af024c
+  quotes:
+  - text: >-
+      A semiconductor chip includes a base of a memory transistor in a
+      first region of a substrate, and a base of a metal oxide
+      semiconductor (MOS) transistor in a second region of the substrate.
+    location: "Google Patents page (patents.google.com/patent/US9583501B1/en, fetched 2026-09-25), Abstract, first sentence"
+  - text: >-
+      A plasma oxide overlying the nitride layer and the surface of the
+      substrate to form a top oxide layer over the nitride layer and a
+      gate oxide layer over the surface of substrate in the second region.
+    location: "Google Patents page (patents.google.com/patent/US9583501B1/en, fetched 2026-09-25), Abstract, final sentence"
+  claims:
+  - {technology: "Cypress SONOS-in-logic integration (2006, immediately pre-S8)", attribute: "process module, per this patent's abstract", value: "forming the SONOS top (blocking) oxide and a standard MOS gate oxide in the same plasma-oxidation step, with the memory and MOS transistors sharing a diffusion region -- a direct mask/step-sharing technique between the SONOS memory module and the surrounding logic CMOS"}
+  - {technology: "US9583501B1", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2006-12-22; family expired: false (continuation US8222111B1 shown Active in data/patents.yaml, anticipated expiry 2026-12-22); the representative member US9583501B1 itself is separately recorded there as 'Expired - Fee Related'"}
+  notes: >-
+    Priority date (2006-12-22) is five months before the S8 patent-family
+    priority date below (2007-05-25) and describes exactly the kind of
+    "few extra masks" integration that data/history/extra.yaml's
+    ChipEstimate and SONOS-eFlash-brief records describe qualitatively --
+    the most direct patent-level evidence found for how Cypress shared
+    masks between SONOS and logic immediately before S8. This fresh
+    fetch's own legal-status fields agree with data/patents.yaml: the
+    family is shown IN FORCE via continuation US8222111B1 (status
+    "Active"), while the representative US9583501B1 itself shows "Expired
+    - Fee Related". SHOWN IN FORCE per data/patents.yaml -- any page
+    quoting this patent's title, number or content outside
+    docs/references/patents/ MUST keep it inside a collapsed block, with
+    the flag sentence "Shown as in force; estimated expiry 2026-12-22
+    (estimate from public records, not legal advice)."
+
+- id: pat-us8093128b2-s8-family-2007
+  kind: patent
+  origin: patent-record
+  source: >-
+    US8093128B2 (large family, priority US20080293207A1/US20080296661A1/
+    US20080296664A1 applications, continuations US8143129B2, US8679927B2,
+    CN101606236A/B, WO2008147529A1), "Integration of non-volatile charge
+    trap memory devices and logic CMOS devices", Cypress Semiconductor Corp
+    (now Longitude Flash Memory Solutions Ltd), priority 2007-05-25, filed
+    2008-05-22, granted 2012-01-10. Family GP40072804 in data/patents.yaml.
+  url: https://patents.google.com/patent/US8093128B2/en
+  archive_url: null
+  retrieved: '2026-09-25'
+  cache: patents/US8093128B2.html.txt
+  sha256: a4b36c281dfad1829ffe596b851eaf93a951b9b03a19778deedeca5d406624b8
+  quotes:
+  - text: >-
+      A semiconductor structure and method to form the same. The
+      semiconductor structure includes a substrate having a non-volatile
+      charge trap memory device disposed on a first region and a logic
+      device disposed on a second region. A charge trap dielectric stack
+      may be formed subsequent to forming wells and channels of the logic
+      device. HF pre-cleans and SC1 cleans may be avoided to improve the
+      quality of a blocking layer of the non-volatile charge trap memory
+      device. The blocking layer may be thermally reoxidized or nitridized
+      during a thermal oxidation or nitridation of a logic MOS gate
+      insulator layer to densify the blocking layer. A multi-layered liner
+      may be utilized to first offset a source and drain implant in a high
+      voltage logic device and also block silicidation of the nonvolatile
+      charge trap memory device.
+    location: "Google Patents page (patents.google.com/patent/US8093128B2/en, fetched 2026-09-25), Abstract"
+  claims:
+  - {technology: "S8 (the introduction itself)", attribute: "patent-family priority date", value: "2007-05-25 -- the single priority date shared by a large cluster of SONOS/charge-trap patent families in data/patents.yaml (this one plus at least US8067284B1, US8283261B2, US8614124B2, US8643124B2, US8680601B2, US8940645B2 and US7880219B2, all priority 2007-05-25), which reads as the point at which Cypress filed its foundational S8 charge-trap-memory-in-logic-CMOS patent portfolio"}
+  - {technology: "S8 integration scheme, per this patent's abstract", attribute: "process sequence", value: "the SONOS charge-trap dielectric stack is formed after the logic device's wells and channels; HF and SC1 cleans are avoided to protect the SONOS blocking-layer quality; the blocking layer is densified by reusing the logic gate oxidation/nitridation thermal step; a multi-layer liner offsets the high-voltage logic device's source/drain implant and blocks silicidation of the memory device"}
+  - {technology: "US8093128B2", attribute: "family/priority/status (per data/patents.yaml)", value: "priority 2007-05-25; legal_status.status: Active; expired: false (continuation US8679927B2's anticipated expiry 2028-10-22)"}
+  notes: >-
+    The clearest single marker for "the S8 introduction" as an event: a
+    cluster of Cypress patent families all sharing the priority date
+    2007-05-25, naming the integration of non-volatile charge-trap (SONOS)
+    memory devices with logic CMOS devices, about six months before
+    data/history/extra.yaml's SONOS-eFlash-brief record gives "130-nm node
+    in 2007" as the volume-production date. This fresh fetch's own
+    legal-status field reads "Active", agreeing with data/patents.yaml.
+    SHOWN IN FORCE per data/patents.yaml (Active; expired: false) -- any
+    page quoting this patent's title, number or content outside
+    docs/references/patents/ MUST keep it inside a collapsed block, with
+    the flag sentence "Shown as in force; estimated expiry 2028-10-22
+    (estimate from public records, not legal advice)."
