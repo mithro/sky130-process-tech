@@ -10,14 +10,32 @@
 | **Previous step** | {ref}`LVGOX <step-047>` |
 | **Next step** | {ref}`RPM <step-049>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the film that becomes every transistor gate and
+  every poly resistor — one amorphous-silicon layer, on this
+  reference's reading (inference).
+* **Why:** without it there is no gate and no resistor; depositing it
+  amorphous gives a smoother, finer-grained film.
+* **Public numbers:** poly thickness 0.18 µm;[^pdk-03] poly sheet
+  resistance 48.2 Ω/sq.[^pdk-08]
+* **Likely SkyWater tool:** Aviza furnace running undoped a-Si —
+  strong (tool vendor); inference (assignment).[^skw-01]
+* **Not public:** the deposition temperature, pressure, precursor and
+  rate (→ Open questions).
+:::
+
 ## What this step is
 
 `SAGD` deposits the film that becomes every transistor gate and every
 {term}`poly resistor` in SKY130: a single blanket layer of amorphous silicon
-(a-Si), laid down by low-pressure chemical vapour deposition ({term}`LPCVD`) —
+(a-Si). It is laid down by low-pressure chemical vapour deposition ({term}`LPCVD`) —
 from silane, we infer — over the freshly grown gate oxides of
 {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>`, the {term}`ONO` stack of
-the {term}`SONOS` cells ({ref}`ONO <step-040>`) and the field oxide. The film is
+the {term}`SONOS` cells ({ref}`ONO <step-040>`) and the field oxide.
+
+The film is
 undoped as deposited; it receives its doping from the implants that
 follow ({ref}`P1I <step-050>` for the gates, {ref}`PRI <step-053>` and
 {ref}`UPRI <step-056>` for the resistors), is capped
@@ -34,12 +52,15 @@ steps that follow, which is why the PDK calls the layer simply "poly".
 Before, the wafer as the gate-oxide module leaves it: the thick oxide of GOX100 on the NMOS area on the left and the thin oxide of LVGOX on the NMOS area on the right, with the field oxide still standing proud of them as in the earlier figures. The page of the gate mask describes a nearly planar surface with only a small field-oxide step at each active edge; no page says where the larger step comes down, so none is drawn. After, the blanket gate film over the whole slice; it is drawn as one layer, which the page infers (the PDK's stack drawing shows a single poly layer[^pdk-04]), and its thickness is the PDK's 0.18 µm,[^pdk-03] drawn far thicker than it is. That the film is undoped and amorphous as deposited is the page's inference from SkyWater's capability list.[^skw-01] In the lower panel the field oxide (the oxide-filled trench in the middle) and the thick gate oxide are drawn but not labelled. The liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
 
-The public numbers are few but firm. The PDK's assumptions table gives
+**PDK figures.** The public numbers are few but firm. The PDK's assumptions table gives
 a "poly thickness" of 0.18 µm,[^pdk-03] and the process stack diagram
 labels the poly with the same 0.18 µm.[^pdk-04] The drawn layer is
 `poly` (GDS 66:20, "Polysilicon"), with a `gate` purpose (66:9) and a
-`resistor` purpose (66:13).[^pdk-06] SkyWater's own capability list is
+`resistor` purpose (66:13).[^pdk-06]
+
+**SkyWater's capability list.** SkyWater's own capability list is
 unusually specific about this film: its furnace processes include
 "LPCVD polysilicon (undoped), both amorphous and
 crystalline".[^skw-01] SkyWater's "undoped … amorphous" is the public
@@ -49,11 +70,15 @@ immediately follows is consistent with it: an in-situ-doped film would
 leave nothing for a resistor mask to protect.
 
 **One layer, not a stack.** Two other gate constructions were common at the
-130 nm node and both use more than one silicon layer: a polycide gate
-(poly under tungsten {term}`silicide`, used by DRAM makers to cut gate
-resistance) and a stacked-amorphous-silicon gate, in which two thin a-Si
-layers are deposited with an interface between them to block boron
-penetration through the gate oxide.[^wu-1993] This reference describes
+130 nm node and both use more than one silicon layer:[^wu-1993]
+
+* **A polycide gate** (poly under tungsten {term}`silicide`, used by DRAM
+  makers to cut gate resistance).
+* **A stacked-amorphous-silicon gate**, in which two thin a-Si layers are
+  deposited with an interface between them to block boron penetration
+  through the gate oxide.
+
+This reference describes
 the SKY130 gate as neither: one layer, one deposition (inference; the
 PDK's stack diagram draws a single poly layer[^pdk-04]). The PDK's {term}`sheet resistance` for poly, 48.2 Ω/sq,[^pdk-08] is
 far above the few Ω/sq of a silicided or polycide gate[^txt-05] and is
@@ -65,7 +90,9 @@ the gate as unsilicided (inference, as on {ref}`P1I <step-050>`).
 `SAGD` is a {ref}`Thin-film deposition <category-deposition>` step — a
 furnace LPCVD deposition like {ref}`ISONIT <step-003>`;
 {ref}`GATENIT <step-058>` reads the gate nitride as either furnace
-LPCVD or PECVD and does not choose between them.[^skw-01] The category
+LPCVD or PECVD and does not choose between them.[^skw-01]
+
+The category
 page explains the general
 choice between amorphous and polycrystalline deposition; what is
 specific here is that this is the only film in the flow whose grain
@@ -77,9 +104,13 @@ resistors.
 ## Why this step exists
 
 The self-aligned polysilicon gate has been the standard MOS gate since
-the early 1970s: it survives the source/drain anneals that a metal gate
-could not, it lets the source and drain be implanted with the gate as
-the mask, and its work function can be set by doping.[^wiki-poly] In
+the early 1970s:[^wiki-poly]
+
+* it survives the source/drain anneals that a metal gate could not;
+* it lets the source and drain be implanted with the gate as the mask;
+* its work function can be set by doping.
+
+In
 SKY130 the same film also forms the two precision resistor flavours
 (300 Ω/sq "P+ poly" and 2000 Ω/sq "P- poly"),[^pdk-07] the poly plate
 of the varactors and, as this reference describes the module, the gate
@@ -90,7 +121,9 @@ deliberate choice with three documented benefits:
 
 * **Smoother, finer-grained film.** LPCVD silicon deposited at low
   temperature is amorphous or polycrystalline depending on the
-  deposition *rate* as well as the temperature: Voutsas and Hatalis
+  deposition *rate* as well as the temperature:
+
+  Voutsas and Hatalis
   obtained as-deposited polycrystalline films at temperatures as low
   as 530 °C by holding the rate below a critical value, and amorphous
   films above it,[^voutsas-1992] while Kamins and Kinsbron place the
@@ -100,7 +133,9 @@ deliberate choice with three documented benefits:
   value;[^txt-01][^wiki-poly]). When it later crystallises it
   does so by solid-phase nucleation and growth, giving a smooth
   surface and a grain size controlled by the anneal rather than by the
-  deposition. Hatalis and Greve showed that low-temperature annealing
+  deposition.
+
+  Hatalis and Greve showed that low-temperature annealing
   of LPCVD a-Si yields grains much larger than as-deposited
   poly.[^hatalis-1988]
   A smooth top surface matters for the 0.15 µm gate
@@ -123,8 +158,8 @@ it.
 
 ## How it is typically performed
 
-An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
-130 nm-era fab:
+*An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
+130 nm-era fab:*
 
 * **Pre-clean.** The wafer arrives with fresh gate oxide, so only a
   light clean (or none) is used; a dilute-HF step is excluded because
@@ -139,16 +174,20 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 * **Temperature.** Roughly 520–560 °C for an amorphous film, against
   600–650 °C for polycrystalline deposition (typical industry values,
   {ref}`category-deposition`;[^txt-01][^wiki-poly] Voutsas and Hatalis
-  give the pressure-dependent transition[^voutsas-1992]). Harbeke et
+  give the pressure-dependent transition[^voutsas-1992]).
+
+  Harbeke et
   al. characterised the structure of LPCVD films across this
   range.[^harbeke-1984] Kinsbron et al. showed that films deposited
   amorphous can begin to crystallise *during* a long deposition if the
   temperature is near the transition,[^kinsbron-1983] which is why the
   set-point sits comfortably below it.
-* **Thickness.** 0.18 µm in SKY130.[^pdk-03][^pdk-04] Deposition rates
+* **Thickness.** 0.18 µm in SKY130.[^pdk-03][^pdk-04]
+
+  Deposition rates
   of a-Si at these temperatures are of the order of a few nm/min
   (typical industry value; no public source gives a rate), so a
-  0.18 µm film takes of the order of an hour; the batch furnace
+  0.18 µm film takes of the order of an hour. The batch furnace
   amortises that
   over a large load — the Aviza AVP-8000 listing quotes "up to 200
   wafer batches".[^aviza-avp]
@@ -159,11 +198,12 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
   the norm for a process with several poly doping levels (category
   page).
 * **Crystallisation.** This reference describes no dedicated anneal.
+
   Solid-phase crystallisation of a-Si on oxide runs over tens of
   minutes to hours in the 580–640 °C range that Iverson and Reif
-  studied, and much faster above it (their films were amorphised by
+  studied, and much faster above it.[^iverson-1987] (Their films were amorphised by
   implantation, and they report the growth velocity as lower than for
-  films deposited amorphous);[^iverson-1987] the later furnace and
+  films deposited amorphous.)[^iverson-1987] The later furnace and
   {term}`RTA` steps
   ({ref}`IOX45 <step-063>`, {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`) supply more than enough {term}`thermal budget`, so
@@ -186,13 +226,17 @@ An industry-generic recipe for an undoped a-Si gate film in a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnace running undoped a-Si.** SkyWater states "Furnaces are
-  all made by Aviza" and lists "LPCVD polysilicon (undoped), both
-  amorphous and crystalline" among the furnace processes.[^skw-01]
-  Strength: **strong** for the tool vendor and for the existence of an
-  undoped amorphous LPCVD silicon process; the assignment to this step
-  is an inference from that capability and the undoped amorphous gate
-  film described here. Whether the furnaces are vertical
+* **Aviza furnace running undoped a-Si**
+  - *SkyWater says:* states "Furnaces are
+    all made by Aviza" and lists "LPCVD polysilicon (undoped), both
+    amorphous and crystalline" among the furnace processes.[^skw-01]
+  - *Tool exists:* **strong** for the tool vendor and for the existence of an
+    undoped amorphous LPCVD silicon process.
+  - *Runs this step:* the assignment to this step
+    is an inference from that capability and the undoped amorphous gate
+    film described here.
+
+  Whether the furnaces are vertical
   is not stated on SkyWater's page; a used-equipment listing describes
   the Aviza/SVG/Thermco AVP-8000 as a vertical batch furnace for
   150–200 mm wafers (weak).[^aviza-avp]
@@ -217,8 +261,9 @@ them to a process.
 ## Related steps and cross-references
 
 * Previous: {ref}`LVGOX <step-047>` (the last gate oxidation; the film
-  is deposited directly on it). Next: {ref}`RPM <step-049>`.
-* Doped at {ref}`P1I <step-050>` (gates), {ref}`PRI <step-053>` and
+  is deposited directly on it).
+* Next: {ref}`RPM <step-049>`.
+* Same module: doped at {ref}`P1I <step-050>` (gates), {ref}`PRI <step-053>` and
   {ref}`UPRI <step-056>` (resistors); capped at
   {ref}`GATENIT <step-058>` and {ref}`POC <step-059>`; backside film
   removed at {ref}`BFR <step-060>`; patterned at {ref}`P1M <step-061>`
@@ -324,16 +369,16 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The deposition temperature, pressure, precursor (silane or
+* **Deposition conditions.** The deposition temperature, pressure, precursor (silane or
   disilane) and rate are not public; a 520–560 °C set-point with the
   rate held above the critical value is an era-typical choice from the
   cited literature.
-* This page describes the gate as one layer deposited in one furnace
+* **Seed or interface layer.** This page describes the gate as one layer deposited in one furnace
   run; an in-situ seed or interface layer would also be consistent
   with the public sources.
-* No public source describes a dedicated crystallisation anneal; we
+* **Crystallisation anneal.** No public source describes a dedicated crystallisation anneal; we
   assume the later thermal steps crystallise the film.
-* Whether the film is deposited in a batch furnace or a single-wafer
+* **Batch furnace or single-wafer chamber.** Whether the film is deposited in a batch furnace or a single-wafer
   chamber is not stated; SkyWater's capability list places LPCVD
   polysilicon under its Aviza furnaces.[^skw-01]
 
