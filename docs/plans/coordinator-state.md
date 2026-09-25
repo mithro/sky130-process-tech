@@ -39,13 +39,11 @@ Owner rule since 2026-09-25: at most FOUR sub-agents running at any time. Everyt
 queue below; a stopped agent is restarted by giving a fresh agent the same task text plus "read the
 progress file docs/plans/progress-<name>.md and continue from where it stops".
 
-Running (4):
+Running: rd-steps-014-034, rd-preserved2, plus the queue resumed in order
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-site` | W4 site pages: fix round (inventory entry, link_terms.py improvements, term-link commits reverted from the branch) | Sonnet | fixing |
 | `topic/rd-steps-014-034` | W2 batch 2 (wells module) | Sonnet | writing |
-| `topic/rd-overview` | W4 overview: Opus review running (`tmp/reviews/rd-overview.md`) | Opus | in review |
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 

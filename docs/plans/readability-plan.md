@@ -71,6 +71,12 @@ comparisons and links to material pages, B8 mask H3s (after W0e), B9 step-link t
 
 ### W4 — site level
 
+Status: landing page (cards, module table, hidden toctrees), references index table, glossary by letter,
+inventory anchors + entry order + hover-card link, and the overview (guided-tour order, module H3s, prose
+rules) merged 2026-09-25 after Opus reviews. The first-use `{term}` links were taken OUT of the branch: the
+tool `tools/link_terms.py` (skip list, context guards, 3 per paragraph, opt-out marker, `--report`) runs once
+on `main` as the final pass after the content batches merge.
+
 Landing page cards and module table (C6); overview reorder, H3 per module, "On this page" (C7); glossary by
 letter, Phase cell terms, first-use `{term}` links (C9); inventory anchors and sentence order (C10);
 references index table.
