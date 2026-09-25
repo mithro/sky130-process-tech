@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`PCHIS <step-025>` |
 | **Next step** | {ref}`PWI <step-027>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** leaves resist over the N-wells and the special 20 V
+  regions, opening the rest of the wafer for the P-well implants.
+* **Why:** the P-well must be kept out of N-wells (where it would
+  compensate the PMOS body) and out of 20 V regions that need no well
+  or a custom one; a block mask does both in one lithography.
+* **Public numbers:** measured zero-Vt-device threshold −0.12 to
+  −0.13 V (our extraction).[^raw-data-hv-mosfets]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (existence); inference (assignment).[^skw-01]
+* **Not public:** why the PDK's mask table leaves PWBM unticked as
+  "Used in SKY130" (→ Open questions).
+:::
+
 ## What this step is
 
 `PWBM` prints the *P-well {term}`block mask`*: a photoresist (thick, we infer)
@@ -18,7 +34,9 @@ is coated, exposed through the PWBM {term}`reticle` and developed so that resist
 removed everywhere else. The two P-well implants {ref}`PWI <step-027>`
 and {ref}`PWI2 <step-028>` follow (through the same openings in the
 sequence this reference describes), and the resist is stripped at
-{ref}`PWIS <step-029>`. The PDK's name for the mask, "P-Well Block
+{ref}`PWIS <step-029>`.
+
+The PDK's name for the mask, "P-Well Block
 Mask",[^pdk-05] says how the layer is used: this is a
 *block* mask, the negative of the {ref}`NWM <step-017>` N-well mask in
 spirit, and the P-well is implanted into all silicon that it does not
@@ -32,16 +50,24 @@ cover.
 Before, the bare wafer with its N-well; after, a thick resist left over the N-well and the rest of the slice open. This is a block mask: the resist stays wherever the P-well must not go. That the plate is generated from `nwell` together with `pwbm`, and so covers the N-wells, is this reference's inference from the absence of a drawn P-well layer,[^pdk-06] and the resist thickness is inferred. The PDK's mask table lists "P-Well Block Mask, PWBM" but leaves its "Used in SKY130" column blank, which this reference treats as a documentation inconsistency.[^pdk-05] The NMOS channel implant, the PMOS channel implant and the liner oxide are drawn faded. Not to scale.
 :::
 
-Three pieces of public evidence support that reading. First, the PDK has
-no drawn P-well layer: `gds_layers.csv` contains `nwell` as a drawing
-layer (64:20) but `pwell` only as label, pin and resistor purposes
-(64:59, 122:16, 64:13 …), so a layout defines P-well implicitly as "not
-N-well".[^pdk-06] Second, the drawn layer that does exist is `pwbm` (GDS
-19:44), described as "Regions (in UHVI) blocked from p-well implant (DE
-MOS devices only)";[^pdk-06] its rule table is headed "Function: Define
-p-well block".[^pdk-periph] Third, the device that uses it is described
-the same way: the 20 V zero-Vt NMOS "has p-well and all Vt implants
-blocked to achieve a zero VT".[^pdk-07] We therefore infer that the
+### What the public record shows
+
+Three pieces of public evidence support that reading:
+
+* the PDK has
+  no drawn P-well layer: `gds_layers.csv` contains `nwell` as a drawing
+  layer (64:20) but `pwell` only as label, pin and resistor purposes
+  (64:59, 122:16, 64:13 …), so a layout defines P-well implicitly as "not
+  N-well";[^pdk-06]
+* the drawn layer that does exist is `pwbm` (GDS
+  19:44), described as "Regions (in UHVI) blocked from p-well implant (DE
+  MOS devices only)";[^pdk-06] its rule table is headed "Function: Define
+  p-well block";[^pdk-periph]
+* the device that uses it is described
+  the same way: the 20 V zero-Vt NMOS "has p-well and all Vt implants
+  blocked to achieve a zero VT".[^pdk-07]
+
+We therefore infer that the
 physical reticle is generated from `nwell` ∪ `pwbm` (plus any
 deep-N-well-related additions), so that the P-well goes everywhere
 except into N-wells and into the special 20 V regions.
@@ -58,20 +84,25 @@ under its channel. The SKY130 raw-data repository publishes I–V sweeps
 of a {term}`test tile` structure that the pad list names `n20zvtvhv1`
 ("w/l=30/5.5; m=2", cell name
 `s8defet_ccgx_hvn_nw_dnw_native_sti_2p0_nopw_L5p0_W60`), whose only body
-connection in the pad list is `Psub`;[^raw-data-testtile-pads] the repository
+connection in the pad list is `Psub`.[^raw-data-testtile-pads] The repository
 files it under `nfet_20v0_nvt`, but its geometry is that of the PDK's
 `nfet_20v0_zvt` e-test structure ("2\* 30/5.5") rather than the
-"2\* 30/1.0" listed for `nfet_20v0_nvt`.[^pdk-07] Five instances give a
+"2\* 30/1.0" listed for `nfet_20v0_nvt`.[^pdk-07]
+
+Five instances give a
 threshold of −0.12 to −0.13 V by maximum-transconductance extrapolation
-at a drain bias of 0.1 V (less half that bias), against an e-test nominal of −0.1224 V, and a
+at a drain bias of 0.1 V (less half that bias), against an e-test nominal of −0.1224 V. They also give a
 body-effect coefficient of 0.070–0.072 √V from the threshold shift at
-substrate biases of −2.5 V and −5 V (our extraction from the published
-measurements).[^raw-data-hv-mosfets][^pdk-07] With the standard
+substrate biases of −2.5 V and −5 V. This is our extraction from the published
+measurements.[^raw-data-hv-mosfets][^pdk-07]
+
+With the standard
 uniform-doping expression and the thick-oxide capacitance measured on
 the same tile ({ref}`GOX100 <step-043>`), that coefficient corresponds
-to an effective body doping of about 1.4 × 10¹⁵ cm⁻³ — far below the
+to an effective body doping of about 1.4 × 10¹⁵ cm⁻³. This is
+far below the
 4 × 10¹⁷ cm⁻³ P-well peak and of the same order as the PDK's
-8 × 10¹⁴ cm⁻³ background concentration[^pdk-03] — whereas the same
+8 × 10¹⁴ cm⁻³ background concentration.[^pdk-03] The same
 calculation gives about 1.5 × 10¹⁷ cm⁻³ for a 5 V NMOS in the standard
 P-well (see {ref}`DEPI <step-038>`).[^raw-data-hv-mosfets] The value is
 an average over the depleted depth and says nothing about how the block
@@ -80,7 +111,9 @@ was drawn or printed.
 The `pwbm` rules (pwbm.1–pwbm.5) have no public numeric values ("N/A")
 but describe the geometry: `pwbm` regions live inside the 20 V
 identifier `uhvi`; "dnwell inside UHVI must be enclosed by pwbm (exempt
-pwbm hole inside dnwell)" (pwbm.4); and the {term}`drain-extended <DEMOS>` implant layer
+pwbm hole inside dnwell)" (pwbm.4).
+
+The {term}`drain-extended <DEMOS>` implant layer
 must be enclosed by `pwbm` ("Min enclosure of pwdem:dg by pwbm.dg
 inside UHVI", pwdem.3 — the rule set calls the layer `pwdem`, while
 `gds_layers.csv` draws it as `pwde` 124:20).[^pdk-periph][^pdk-06] In words:
@@ -92,20 +125,26 @@ it.
 ## Step category
 
 `PWBM` is a {ref}`Photolithography (mask step) <category-lithography>`
-step of the *thick-resist implant-block* kind. The resist must stop
-boron at, we infer, a few hundred keV (see {ref}`PWI <step-027>`); the
-pattern is the coarsest in the front end after the deep N-well; and the
-layer is, we infer, aligned to the {term}`STI` pattern, as is `NWM`, so that the
-two well edges meet in the isolation between NMOS and PMOS.
+step of the *thick-resist implant-block* kind.
+
+**Specific to this step:**
+
+* The resist must stop
+  boron at, we infer, a few hundred keV (see {ref}`PWI <step-027>`).
+* The
+  pattern is the coarsest in the front end after the deep N-well.
+* The layer is, we infer, aligned to the {term}`STI` pattern, as is `NWM`, so that the
+  two well edges meet in the isolation between NMOS and PMOS.
 
 ## Why this step exists
 
 CMOS needs a P-type body for its NMOS: "The N device is manufactured on
-a p-type substrate",[^wiki-cmos] but a 130 nm process cannot use the
+a p-type substrate".[^wiki-cmos] A 130 nm process cannot use the
 lightly doped substrate (the PDK lists an 8 × 10¹⁴ cm⁻³ background
 concentration among its n-well entries, without calling it the wafer
-doping)[^pdk-03] as it comes
-— it needs a *{term}`retrograde P-well <retrograde well>`* with a peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm
+doping)[^pdk-03] as it comes.
+
+It needs a *{term}`retrograde P-well <retrograde well>`* with a peak of 4 × 10¹⁷ cm⁻³ at 0.42 µm
 depth[^pdk-03] for {term}`punch-through`, isolation and latch-up control (see
 {ref}`PWI <step-027>`). That implant must be kept out of the N-wells,
 where it would compensate the PMOS body, and out of the regions where
@@ -113,29 +152,34 @@ the PDK's 20 V devices want either no well (`nfet_20v0_zvt`) or a
 lighter, purpose-built one (the drain-extended
 devices).[^pdk-07][^pdk-hv] A block mask does both with one lithography.
 
-The alternative used in older generations — a separately drawn P-well
+The alternative used in older generations is a separately drawn P-well
 mask, as in the Harris twin-well flow where "an implant blocking
 photoresist layer 18" is patterned to expose the region "adjacent to
-N-type well 17"[^pat-twin-harris] — needs a second, positively drawn
-well layer and cannot by itself define the custom 20 V regions. A drawn
+N-type well 17".[^pat-twin-harris] That approach needs a second, positively drawn
+well layer and cannot by itself define the custom 20 V regions.
+
+A drawn
 P-well mask would be equivalent to `PWBM` in effect; SKY130 simply chose
 to draw the exceptions rather than the wells.
 
 ## How it is typically performed
 
-An industry-generic P-well-block lithography for a 200 mm, 130 nm-era
-fab:
+*An industry-generic P-well-block lithography for a 200 mm, 130 nm-era
+fab:*
 
 1. **Track preparation.** {term}`HMDS` prime; no {term}`BARC` for a coarse layer
    (inference).[^wiki-litho]
 2. **Thick resist coat.** The resist must stop the deepest P-well boron.
+
    IBM's retrograde-well patent implants its deepest P-well boron, at
    550 keV, through a 200 nm polysilicon mask to avoid boron scattering,
    and masks its 150 keV and 45 keV boron with a resist "between
-   1800-2500 nm";[^pat-well-ibm] Hook's IBM
+   1800-2500 nm".[^pat-well-ibm] Hook's IBM
    study modelled a "2.3 µm-thick pwell mask" against 600 keV
    boron;[^hook-2003] Zilog's 600–800 keV p-well needed at least
-   3.4 µm.[^pat-resist-zilog] For a P-well whose peak is at 0.42 µm and
+   3.4 µm.[^pat-resist-zilog]
+
+   For a P-well whose peak is at 0.42 µm and
    whose vertical extent is 0.75 µm,[^pdk-03] boron energies are lower
    than those examples and a resist of roughly 2 µm is plausible
    (inference).[^txt-02]
@@ -169,14 +213,16 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / scanner**.[^skw-01] Strength: **strong** for
-  existence; assignment to `PWBM` is an **inference** from the coarse
-  rules and thick resist.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01] Strength:
-  strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / scanner**
+  - *SkyWater says:* lists it.[^skw-01]
+  - *Tool exists:* strong.
+  - *Runs this step:* assignment to `PWBM` is an inference from the
+    coarse rules and thick resist.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -193,15 +239,14 @@ raises NMOS {term}`Vt`.[^hook-2003]
 * Previous: {ref}`PCHIS <step-025>`.
 * Next: {ref}`PWI <step-027>` and {ref}`PWI2 <step-028>` through this
   resist; strip at {ref}`PWIS <step-029>`.
-* Complementary mask: {ref}`NWM <step-017>`. The regions blocked here
-  and re-doped later: {ref}`PWDEM <step-030>`.
-* The isolated P-well inside the deep N-well tub
+* Same category: complementary mask — {ref}`NWM <step-017>`. The
+  regions blocked here and re-doped later: {ref}`PWDEM <step-030>`.
+* Depends on: the isolated P-well inside the deep N-well tub
   ({ref}`DNM <step-007>`) is formed by this same implant, ringed by
   N-well.
-* Previous mask: {ref}`HVTPM <step-022>`; next mask:
-  {ref}`PWDEM <step-030>`.
-* Mask page: {ref}`PWBM <mask-pwbm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`PWBM <mask-pwbm>` — the mask's layers, plates, renders
+  and design rules; the previous mask is {ref}`HVTPM <step-022>`, the
+  next mask {ref}`PWDEM <step-030>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -287,16 +332,19 @@ raises NMOS {term}`Vt`.[^hook-2003]
 
 ## Open questions
 
-* The PDK mask table leaves the "Used in SKY130" column blank for PWBM
-  (and for PWDEM) although the `pwbm`/`pwde` layers and their rules
-  exist and the 20 V devices depend on them;[^pdk-07] in
-  `masks.csv` these two `pwbm`/`pwde`-backed masks are the only
-  well-module masks left blank — DNM, NWM, HVTPM and LVTNM are all
-  ticked.[^pdk-05] We treat the blank as a documentation inconsistency.
-* That the reticle is derived from `nwell` ∪ `pwbm` is our inference
-  from the absence of a drawn P-well layer; the actual Boolean
-  generation rules are not public.
-* Resist thickness and exposure tool are inferred.
+* **Blank "Used in SKY130" column.** The PDK mask table leaves that
+  column blank for PWBM (and for PWDEM) although the `pwbm`/`pwde`
+  layers and their rules exist and the 20 V devices depend on
+  them.[^pdk-07]
+
+  In `masks.csv` these two `pwbm`/`pwde`-backed masks
+  are the only well-module masks left blank — DNM, NWM, HVTPM and
+  LVTNM are all ticked.[^pdk-05] We treat the blank as a documentation
+  inconsistency.
+* **Reticle derivation.** That the reticle is derived from `nwell` ∪
+  `pwbm` is our inference from the absence of a drawn P-well layer;
+  the actual Boolean generation rules are not public.
+* **Resist thickness and exposure tool.** Both are inferred.
 
 <!-- footnotes -->
 

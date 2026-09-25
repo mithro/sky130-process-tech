@@ -64,6 +64,31 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 026-pwbm.md — done (dense mask-derivation page; no in-force dropdown)
+
+Rules applied: R-H3 (`### What the public record shows` before the "three pieces of evidence"
+paragraph), R-LIST (the First/Second/Third evidence sentence → bullets, matching the H3's own
+name), R-PARA/R-SENTENCE (throughout — the lead paragraph; the huge 227-word measured-data
+passage split into four paragraphs at its own seams, prose not a table for the same
+device-pairing-risk reason as pages 022–024; the `pwbm`-rules paragraph; the Step-category and
+Why-this-step-exists sections), R-CATEGORY (classification sentence + `**Specific to this
+step:**` bullets, one per remaining sentence), R-HEDGE step 1 (italic lead-in), R-TOOLS (3
+"Strength:" bullets split, no recap table), R-RELATED (`Same category:`, `Depends on:` labels;
+`Mask:` bullet merged per the pilot's M6 convention), R-OPENQ (bold labels on all three bullets,
+the first split into lead + indented continuation to clear the item cap), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 7 → 1 (figure caption, off limits,
+Guide problem 10); list items > 60 words 2 → 0; sentences > 45 words 11 → 0; table cells > 25
+words 0 → 0.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped docs/steps/026-pwbm.md`:
+`quotes`, `hedges` and plain `numbers` (condition (a)) show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for seven tuples — spot-checked: six are clean multi-way
+regroups of the same digits (the evidence bullets, the pwbm-rules paragraph, the resist-thickness
+patent list), and one is a single "20" stranded after a split, the familiar Guide-problem-11
+pattern. All other checkers pass; `-W` build clean. Screenshots (desktop + 400 px) read cleanly
+top to bottom through the new H3, the evidence bullets and the dense measurement paragraphs.
+
 ### 025-pchis.md — done (no in-force dropdown on this page)
 
 Rules applied: R-PARA (lead paragraph split at its BF₂-specific-detail seam; the "Plasma ash"
