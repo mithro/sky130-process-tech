@@ -161,7 +161,8 @@ V_DS = 5 V current at 2.5 V.[^raw-data-hv-mosfets]
 The thresholds of the
 16 V NMOS (0.73–0.79 V by maximum-transconductance extrapolation, less
 half the 0.1 V drain bias) are
-close to those of a 7/8 µm `nfet_g5v0d10v5` (0.79–0.82 V).
+close to those of a 7/8 µm `nfet_g5v0d10v5`
+(0.79–0.82 V).[^raw-data-hv-mosfets]
 
 Its body-effect coefficient at
 L = 2.425 µm is 0.70–0.72 √V, from a least-squares fit of the threshold
