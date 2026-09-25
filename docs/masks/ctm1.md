@@ -3,20 +3,11 @@
 
 The contact mask is the {term}`reticle` that places every connection
 from the {term}`local interconnect` (titanium nitride on the
-{ref}`LITIN <step-101>` page's reading) up to metal 1: on
+{ref}`LITIN <step-101>` page's reading) up to metal 1. On
 the {ref}`CTM1 <step-107>` page's reading, the resist printed through it
 at step 107 is opened over every drawn `mcon`, and the
 {ref}`CTME <step-108>` etch cuts the holes through the planarised oxide
-down to the local interconnect. It is the first mask of the
-{term}`BEOL` and the second of the flow's three hole layers, and its
-size and spacing rules are the only periphery rules the PDK flags as not
-reflecting "the final dimension on silicon".
-This page gathers what public sources say about the mask itself — its
-PDK entry and layers, the plates the process-steps sheet records for the
-MPW runs, what the public renders of those runs show, the lithography it
-needs and the rules that constrain it. How the step is performed is on
-the step page; every mask is indexed on the
-{ref}`masks index <masks-index>`.
+down to the local interconnect.
 
 | | CTM1 — Contact |
 |---|---|
@@ -33,7 +24,18 @@ the step page; every mask is indexed on the
 | Dies with shapes, MPW-1 to MPW-8 (renders) | 40 on every run[^mask-renders] |
 | Steps that use the pattern | 2 steps; see {ref}`Steps that use this mask <mask-ctm1-steps>` |
 
+:::{seealso}
+How the step is performed is on
+the step page; every mask is indexed on the
+{ref}`masks index <masks-index>`.
+:::
+
 ## What the mask defines
+
+The mask is the first mask of the
+{term}`BEOL` and the second of the flow's three hole layers, and its
+size and spacing rules are the only periphery rules the PDK flags as not
+reflecting "the final dimension on silicon".
 
 The periphery rules give the function of the `ct` rule set as "Defines
 contact between Li1 and met1", and the PDK's Table F4, "Connectivity of
@@ -43,9 +45,11 @@ square: "Min and max L and W of mcon" 0.170 µm (ct.1), and "Only min.
 square mcons are allowed except die seal ring" (ct.3).[^pdk-periph]
 Wide connections are therefore arrays of squares, and rule x.18, flagged
 as recommended, asks designers to "Use redundant mcon, via, via2, via3
-and via4".[^pdk-periph] The PDK's extraction table lists "MCON contact"
+and via4".[^pdk-periph]
+
+The PDK's extraction table lists "MCON contact"
 at 152000 against 15000 for "LICON contact" and 4500 for "VIA", in a
-column headed "Resistivity (mohms/sq)";[^pdk-08] the
+column headed "Resistivity (mohms/sq)".[^pdk-08] The
 {ref}`CTM1 <step-107>` page reads these as 152 Ω, 15 Ω and 4.5 Ω per
 contact, and the contact size this mask sets as one reason the figure is
 high.
@@ -64,8 +68,8 @@ the two because the other contact layer, `licon1`, belongs to
 `LICM1`.[^pdk-06] The mask does not define the local-interconnect pads
 it lands on ({ref}`mask-li1m`) or the metal-1 lines that must cover it
 (`MM1`), nor the liner and tungsten plug that fill the holes
-({ref}`TIN2 <step-109>` to {ref}`WCMP2 <step-111>`), which on the step
-pages' readings take the etched hole, not this resist, as their shape.
+({ref}`TIN2 <step-109>` to {ref}`WCMP2 <step-111>`). On the step
+pages' readings the liner and tungsten plug take the etched hole, not this resist, as their shape.
 
 ## Drawn layers and derivation
 
@@ -77,8 +81,10 @@ purpose; the drawn layer is `mcon` at 67:44.[^pdk-06] With no add or
 drop purpose, rule x.9's "serifs" have no `ctm1` layer to sit on, and
 rule x.15a confines mask layers to test modules, seal ring and frame,
 with the exception that "FOM/P1M/Metal waffle drop are allowed inside the
-die" (flag P, periphery only);[^pdk-periph] a design inside the die
-therefore draws `mcon` (our reading of x.9 and x.15a). The `CTM1` mask
+die" (flag P, periphery only).[^pdk-periph] A design inside the die
+therefore draws `mcon` (our reading of x.9 and x.15a).
+
+The `CTM1` mask
 data are not among those rule x.1a names for the 0.001 grid ("mask data
 for p1m, met1, via, met2"), so they fall under x.1b's 0.005 (our
 reading; both values are printed with the unit "mm").[^pdk-periph]
@@ -86,14 +92,16 @@ reading; both values are printed with the unit "mm").[^pdk-periph]
 The PDK says in so many words that the drawn contact is not the printed
 one. Rules ct.1 and ct.2 carry the flag DNF, "Drawn Not equal Final. The
 drawn rule does not reflect the final dimension on silicon. See table J
-for details.",[^pdk-periph] and no table J is among the files of the
-PDK's rules documentation (our search of its file list); they are the
-only rules in the periphery rules with that flag. The criteria give
+for details.".[^pdk-periph] No table J is among the files of the
+PDK's rules documentation (our search of its file list). Rules ct.1 and ct.2 are the
+only rules in the periphery rules with that flag.
+
+The criteria give
 the other end: a "Standard contact bottom CD" of 0.09 in Table 5, the
 laser-fuse criteria, and a "min. etch and fill capability for mcon" of
 0.14 (`CEFC`) in Table 4.[^pdk-03] The {ref}`CTM1 <step-107>` page reads
 the 0.09 as the generic finished profile and leaves open whether it
-applies to every `mcon`; the PDK does not say whether the plate carries
+applies to every `mcon`. The PDK does not say whether the plate carries
 a bias, or whether the difference comes from the etch taper.
 
 ### In the public renders
@@ -101,17 +109,21 @@ a bias, or whether the difference comes from the etch taper.
 The public mask-layer renders show, for each of MPW-1 to MPW-8, the
 shapes the 40 tape-out layouts of the run draw on the layers the site
 assigns to each mask. For `CTM1` the site renders layer 67:44 (`mcon`)
-alone, with no Boolean expression and no fill layer, on all eight runs;
-its mask record gives the mask-level layer 35:0, the note "CTM1 = mcon
-(li1->met1)" and the info text "Via 1 (LI/M0→M1)".[^mask-renders] The
+alone, with no Boolean expression and no fill layer, on all eight
+runs.[^mask-renders] Its mask record gives the mask-level layer 35:0, the note "CTM1 = mcon
+(li1->met1)" and the info text "Via 1 (LI/M0→M1)".[^mask-renders]
+
+The
 site uses the same drawn layer as this reference's inference, but both
 derive from the same public files, so the agreement is not independent
-confirmation ({ref}`masks-derivations`); the note and the choice of
+confirmation ({ref}`masks-derivations`). The note and the choice of
 layer are one public derivation from the drawn data, not SkyWater's
-mask-generation recipe. The info text is identical to the "Info" note of
+mask-generation recipe.
+
+The info text is identical to the "Info" note of
 the `CTM1` row in the process-steps sheet, one of the level names the two
 sources share, so neither is cited as corroborating the other
-({ref}`masks-renders-sheet-notes`); both also call the `VIM` level "Via 1
+({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders] Both also call the `VIM` level "Via 1
 (M1→M2)", and neither says why two levels share the name "Via
 1".[^steps-sheet][^mask-renders]
 
@@ -121,7 +133,9 @@ that every layout reaches metal 1, as every working die must. For MPW-5
 the renders show shapes on all 40 dies although the sheet records no
 `CTM1` plate for that run, which fits the masks index's reading of the
 gap as one in the record, but the renders show the drawn layouts, not
-the plates ({ref}`masks-mpw-runs`).[^mask-renders][^steps-sheet] The site
+the plates ({ref}`masks-mpw-runs`).[^mask-renders][^steps-sheet]
+
+The site
 states the limits of its images: "These are renders of *drawn* data, not
 photomask artwork: reticle pitch, 4x reduction, mirroring and the frame
 features the fab adds are not modelled."[^mask-renders] They therefore
@@ -171,33 +185,46 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 ## Lithography and pattern transfer
 
-**Exposure class.** The {ref}`CTM1 <step-107>` page gives
+### Exposure class
+
+The {ref}`CTM1 <step-107>` page gives
 {math}`k_1 = 0.17 \times 0.70 / 0.248 \approx 0.48` for the hole on a
 KrF lens of NA 0.7, "comfortable for lines but not for isolated holes,
 whose depth of focus is much smaller", and infers a 248 nm level from
-the rule and from ITRS 2001, which lists "248 nm + PSM" and "193 nm" as
+the rule and from ITRS 2001.[^itrs-03]
+
+ITRS 2001 lists "248 nm + PSM" and "193 nm" as
 the exposure options for the 130 nm node and says that "only 248 nm
-lithography has a mature infrastructure";[^itrs-03] the
+lithography has a mature infrastructure".[^itrs-03] The
 {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there. SkyWater
 lists "ASML DUV stepper" and "ASML DUV scanner" but assigns no layer to
-them.[^skw-01] For the era's hole-printing toolkit the step page names
-attenuated plates, contact-specific resists, assist features and
-focus-latitude techniques: Lu et al. evaluated contact-hole resists on
-an attenuated mask and found "for most of resists, the process windows
-are limited by unwanted sidelobe printing through focus";[^lu-1999]
-Fukuda et al.'s FLEX, multiple exposures "in several different focal
-planes", "is especially effective when applied to small isolated
-transparent patterns like contact holes";[^fukuda-1987] and Socha et al.
-placed assist features by interference mapping for low-{math}`k_1`
-holes.[^socha-2004]
+them.[^skw-01]
 
-**Mask errors.** Wong et al. found the mask error factor rising "rapidly
+For the era's hole-printing toolkit the step page names
+attenuated plates, contact-specific resists, assist features and
+focus-latitude techniques:
+
+* Lu et al. evaluated contact-hole resists on
+  an attenuated mask and found "for most of resists, the process windows
+  are limited by unwanted sidelobe printing through focus".[^lu-1999]
+* Fukuda et al.'s FLEX, multiple exposures "in several different focal
+  planes", "is especially effective when applied to small isolated
+  transparent patterns like contact holes".[^fukuda-1987]
+* Socha et al.
+  placed assist features by interference mapping for low-{math}`k_1`
+  holes.[^socha-2004]
+
+### Mask errors
+
+Wong et al. found the mask error factor rising "rapidly
 when the critical dimension (CD) is less than […] 0.75 (lambda) /NA for
-contacts";[^wong-1998] at 248 nm and NA 0.7 that is about 0.27 µm (our
+contacts".[^wong-1998] At 248 nm and NA 0.7 that is about 0.27 µm (our
 arithmetic), above the 0.17 µm `mcon`, so plate CD errors would print
 magnified (inference). Kim et al. found the factor rising near the
 resolution limit and larger for dense than for isolated
-contacts.[^kim-1999] ITRS 2001 notes that "contacts have very small
+contacts.[^kim-1999]
+
+ITRS 2001 notes that "contacts have very small
 process windows and large mask error factors", and asks in 2001 for a
 mask CD uniformity of 8.0 nm (3σ) on contacts and vias at 4×
 magnification, requirements that are "for critical
@@ -205,7 +232,9 @@ layers".[^itrs-03] Choo et al. printed 0.16 µm holes at
 {math}`k_1` 0.44 with a 6 % attenuated mask whose hole patterns were
 biased by 0.04 to 0.08 µm.[^choo-2000]
 
-**Defects on the plate.** A defect on a hole plate is judged by what it
+### Defects on the plate
+
+A defect on a hole plate is judged by what it
 does to the hole. Takeuchi and Miyahara found size alone a vague criterion
 for KrF halftone contact-hole reticles, proposed a defect-area-ratio
 method, and derived reticle defect specifications from the wafer CD
@@ -213,35 +242,43 @@ budget that were "too tight to be met with current reticle inspection
 machines".[^takeuchi-1999] Whether the `CTM1` plate is a halftone
 (attenuated) plate is not public.
 
-**Drawn and final size.** The DNF flag on ct.1 and ct.2 and the 0.09
+### Drawn and final size
+
+The DNF flag on ct.1 and ct.2 and the 0.09
 "Standard contact bottom CD"[^pdk-periph][^pdk-03] fit the practice ITRS
 2001 describes for the node, in which "contact hole size after etch will
-be smaller than the lithographically imaged hole";[^itrs-03] Toyoshima
+be smaller than the lithographically imaged hole".[^itrs-03] Toyoshima
 et al. shrank KrF resist holes to the 0.1 µm level with a chemical shrink
 (RELACS),[^toyoshima-1998] one route the step page names as possible but
 unconfirmed.
 
-**Resist and tone.** The step page reads a positive chemically amplified
+### Resist and tone
+
+The step page reads a positive chemically amplified
 KrF resist over an organic anti-reflective coating; with the holes
 opened where `mcon` is drawn, the plate would be dark-field: clear squares
 in an opaque field (inference). Neither is published. The consumables are
 on the {ref}`lithography materials <material-lithography-materials>`
 page.
 
-**Pattern transfer.** On the step pages' readings the holes are etched at
+### Overlay and alignment
+
+The contact needs no enclosure by the local interconnect
+(ct.4, 0.000 µm), while metal 1 must enclose it by 0.030 µm (m1.4) and
+by 0.060 µm on one of two adjacent sides (m1.5).[^pdk-periph] Table 4
+nevertheless gives a "Minimum mcon overlap onto LI for reproducible
+contact resistance" of 0.12 (`TCONOVLP`).[^pdk-03] The
+{ref}`CTM1 <step-107>` page reads alignment to the {ref}`LI1M <step-102>`
+pattern as "the critical registration of the layer".
+
+### Pattern transfer
+
+On the step pages' readings the holes are etched at
 {ref}`CTME <step-108>` through about 0.34 µm of oxide and nitride cap
 down to the local interconnect, on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
 and the resist is stripped within that step; the next step,
 {ref}`TIN2 <step-109>`, lines the holes.
-
-**Overlay.** The contact needs no enclosure by the local interconnect
-(ct.4, 0.000 µm), while metal 1 must enclose it by 0.030 µm (m1.4) and
-by 0.060 µm on one of two adjacent sides (m1.5);[^pdk-periph] Table 4
-nevertheless gives a "Minimum mcon overlap onto LI for reproducible
-contact resistance" of 0.12 (`TCONOVLP`).[^pdk-03] The
-{ref}`CTM1 <step-107>` page reads alignment to the {ref}`LI1M <step-102>`
-pattern as "the critical registration of the layer".
 
 (mask-ctm1-steps)=
 ## Steps that use this mask
@@ -270,8 +307,9 @@ resist.
 ## Design rules and critical dimensions
 
 The `ct` rules of the periphery rules, with the metal-1 enclosures of
-`mcon` and the rules of other sets that count or constrain contacts;
-flag DNF means "Drawn Not equal Final. The drawn rule does not reflect
+`mcon` and the rules of other sets that count or constrain contacts.
+
+Flag DNF means "Drawn Not equal Final. The drawn rule does not reflect
 the final dimension on silicon. See table J for details.", P "Rule
 applies to periphery only (outside areaid.ce). A corresponding core rule
 may or may not exist.", AL "Rules applicable only to Al BE flows", CU
@@ -279,6 +317,8 @@ may or may not exist.", AL "Rules applicable only to Al BE flows", CU
 database and slotted Cu database for the same product (2 gds files) must
 be clean", RR "Recommended rule at any IP level" and NC "Rule not checked
 by DRC. It should be used as a guideline only."[^pdk-periph]
+
+:::{table} The `ct` rules, the metal-1 enclosures of `mcon` and the rules of other sets that count or constrain contacts, as published
 
 | Rule | Description (published wording, abridged where marked "[…]") | Value |
 |------|--------------------------------------------------------------|-------|
@@ -296,14 +336,26 @@ by DRC. It should be used as a guideline only."[^pdk-periph]
 | x.7 | "Mask layer line and space checks must be done on all layers (checked with s.x rules)" (NC) | — |
 | x.15a | "Drawn compatible, mask, and waffle-drop layers are allowed only inside areaid:mt (i.e., etest modules), […] Exception: FOM/P1M/Metal waffle drop are allowed inside the die" (P) | — |
 | x.18 | "Use redundant mcon, via, via2, via3 and via4 […]" (RR) | — |
+:::
 
-Table 2 of *Criteria & Assumptions* repeats the size and space as
-`CTM1CD` 0.17 and `CTM1CDSP` 0.19; Table 4 adds the `CEFC` 0.14 and
-`TCONOVLP` 0.12 above, a "Mcon enclosure by Li" of 0
-(`mconLiEnclosure`) and a "Bowing of rectangular contact (per edge) --
-seal ring sizing" of 0.015 (`TBOWINGSEAL`), which does not say which
-contact layer it means; Table 5 gives the 0.09 bottom CD without a
-variable name.[^pdk-03] The summary Table F3c, "Back end layers for S8D\*
+*Criteria & Assumptions* repeats the size and space in Table 2 and adds
+contact criteria in Tables 4 and 5:[^pdk-03]
+
+:::{table} Parameters of *Criteria & Assumptions* for the contact, values as printed
+
+| Parameter | PDK table | Published description | Value |
+|---|---|---|---:|
+| `CTM1CD` | Table 2 | size | 0.17 |
+| `CTM1CDSP` | Table 2 | space | 0.19 |
+| `CEFC` | Table 4 | "min. etch and fill capability for mcon" | 0.14 |
+| `TCONOVLP` | Table 4 | "Minimum mcon overlap onto LI for reproducible contact resistance" | 0.12 |
+| `mconLiEnclosure` | Table 4 | "Mcon enclosure by Li" | 0 |
+| `TBOWINGSEAL` | Table 4 | "Bowing of rectangular contact (per edge) -- seal ring sizing" | 0.015 |
+| without a variable name | Table 5 | "Standard contact bottom CD" | 0.09 |
+:::
+
+`TBOWINGSEAL` does not say which
+contact layer it means.[^pdk-03] The summary Table F3c, "Back end layers for S8D\*
 flow", repeats `mcon` as 0.170
 wide on a 0.190 space, enclosed by `li1` by 0.000 and by metal 1 by
 "0.03/ 0.06".[^pdk-summary] For the plate the decisive figures are one
@@ -314,20 +366,18 @@ with the flag warning that neither is the final size.
 
 * {ref}`CTM1 <step-107>` and {ref}`CTME <step-108>` — the mask step and
   the contact etch; {ref}`TIN2 <step-109>` — the liner that follows.
-* {ref}`mask-li1m` — the local-interconnect mask the contacts land on;
-  {ref}`mask-licm1` — the contact mask one level down.
-* {ref}`masks-index` — every mask's PDK entry, plates and renders,
-  including the tables this page's plate facts are taken from.
-* {ref}`machine-duv-krf-stepper` — the exposure class the step page
-  assigns.
-* {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern.
-* {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
-  measurement.
-* {ref}`material-lithography-materials` — resists, anti-reflective
-  coatings, developer and reticles.
-* {ref}`category-lithography` and {ref}`category-etch` — the mask step
+* **Category.** {ref}`category-lithography` and {ref}`category-etch` — the mask step
   and etch categories.
+* **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
+  assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
+  measurement.
+* **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
+  coatings, developer and reticles.
+* **Masks.** {ref}`mask-li1m` — the local-interconnect mask the contacts land on;
+  {ref}`mask-licm1` — the contact mask one level down.
+* **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
+  including the tables this page's plate facts are taken from.
 
 ## References
 

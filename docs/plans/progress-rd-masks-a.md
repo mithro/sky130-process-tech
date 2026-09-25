@@ -142,3 +142,58 @@ R-REPEAT, R-CODE) → R-RELATED → R-H3. Base for every page: `c79af95b` (main 
   x.22 rule-text cell (26, a quotation). Before → after: paragraphs 12 → 0, items 2 → 0, sentences
   20 → 4, cells 2 → 2.
 * **Content problems for the owner:** none found.
+
+### 3. ctm1 — done
+
+* **Rules applied.** R-INTRO (162 → 57 words; first sentence split at its colon; "It is the first mask of
+  the BEOL …" moved to the top of `## What the mask defines`, "It" → "The mask"); R-PARAMS (new table
+  after the rule table, see below); R-CAPTION (rule table, parameter table); R-PARA, R-SENTENCE;
+  R-LIST (the step page's hole-printing toolkit: Lu, Fukuda, Socha as three sentence bullets under the
+  base's own lead-in); R-RELATED; R-H3 (Exposure class, Mask errors, Defects on the plate, Drawn and final
+  size, Resist and tone, Overlay and alignment, Pattern transfer).
+* **Moved passage (G1):** "**Overlay.** The contact needs no enclosure …" followed "**Pattern transfer.**";
+  it now sits, unchanged, under `### Overlay and alignment` before `### Pattern transfer`. Neither
+  passage refers to the other.
+* **R-PARAMS.** "Table 2 … repeats the size and space as `CTM1CD` 0.17 and `CTM1CDSP` 0.19; Table 4 adds the
+  `CEFC` 0.14 and `TCONOVLP` 0.12 above, a "Mcon enclosure by Li" of 0 (`mconLiEnclosure`) and a "Bowing
+  …" of 0.015 (`TBOWINGSEAL`), which does not say which contact layer it means; Table 5 gives the 0.09
+  bottom CD without a variable name.[^pdk-03]" became a lead-in ("*Criteria & Assumptions* repeats the
+  size and space in Table 2 and adds contact criteria in Tables 4 and 5:[^pdk-03]"), a seven-row
+  `Parameter | PDK table | Published description | Value` table, and the base's relative clause as its
+  own sentence ("`TBOWINGSEAL` does not say which contact layer it means.[^pdk-03]"). The descriptions of
+  `CEFC`, `TCONOVLP` and the Table 5 bottom CD are the page's own quotations of them from "In the PDK" and
+  "Overlay" (the base said "above" instead): three ADDED quotes, each a copy of a quotation already on
+  the page. The Table 2 descriptions are the base's unquoted "size" and "space"; the Table 5 parameter
+  cell is the base's "without a variable name".
+* **Deleted template sentence:** the "This page gathers what public sources say about the mask itself —
+  …" sentence (same wording as cap2m). `LOST hedges: 'about'` is its preposition.
+* **Declared additions** (`--allow-added markers,numbers,quotes,identifiers`):
+  * markers — `mask-renders` ×2 and `steps-sheet` (render sentence and the renders/sheet-notes sentence
+    split at their semicolons), `itrs-03` ("… from ITRS 2001.[^itrs-03] ITRS 2001 lists …"), `pdk-03` (the
+    `TBOWINGSEAL` sentence);
+  * numbers — `2` ×2, `4` ×4, `5` (the PDK-table column), `1` and `2` ("Rules ct.1 and ct.2 are the only
+    rules …", the pronoun "they" given its noun back), `2001` ("ITRS 2001 lists", the relative "which"
+    given its noun back);
+  * quotes — the three described above;
+  * identifier `metal-1` — the rule-table caption, copied from the sentence above the table.
+* **LOST lines that are not losses (read by hand):**
+  * `number_order` ('0.17' … '2001', '248', '193', '130', '248'): the Exposure-class sentence became two;
+    the new page reads 0.17 0.70 0.248 0.48 0.7 248 2001 | 2001 248 193 130 248 — the same digits in the
+    same order with the repeated "ITRS 2001" between them, which breaks the tool's contiguity test;
+  * `number_order` ('2', '0.17', '0.19', '4', '0.14', '0.12', '0', '0.015', '5', '0.09'): the R-PARAMS table;
+    values in row order 0.17, 0.19, 0.14, 0.12, 0, 0.015, 0.09 — the base's order — and the table numbers
+    2, 2, 4, 4, 4, 4, 5 match the base's assignment of each value;
+  * `refs` 'masks-renders-sheet-notes); both also call the VIM' → '…).[^steps-sheet][^mask-renders] Both
+    also call the VIM': a tool artefact (its inline-code stripping pairs the backtick closing the role with
+    the one opening `` `VIM` ``); the role is `{ref}`masks-renders-sheet-notes`` before and after, and the
+    nitpicky build resolves it.
+* **Marker coverage.** Flags read: every flagged piece is a clause with no marker of its own in the base,
+  a toolkit lead-in, or a parameter row under the lead-in marker; the one real case (`TBOWINGSEAL`) was
+  given its `pdk-03` back.
+* **Over the caps after the pass:** the Exposure-class formula sentence (51 by the script); "On the step
+  pages' readings the holes are etched …" (46; its second clause, "the next step, TIN2, lines the holes",
+  sits inside "On the step pages' readings", so a split would drop the hedge from it); the flag-legend
+  sentence (60 by the script, almost all of it seven quotations, which §1 counts as one word each); the
+  quick-facts Exposure class cell (43; not in the body) and the ct.irdrop rule cell (31, quoted rule
+  text). Before → after: paragraphs 10 → 0, items 0 → 0, sentences 14 → 3, cells 2 → 2.
+* **Content problems for the owner:** none found.
