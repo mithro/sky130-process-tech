@@ -66,11 +66,9 @@ embodiment, an inorganic spin-on anti-reflective coating (ARC), the
 blocking layer 304C, and the dielectric layers 304A and 304B are dry
 etched, with the dry etch process stopping on the sacrificial dielectric
 layer 303. In a subsequent wet etch operation, an etchant, such as BOE,
-is employed to clear sacrificial dielectric layer 303."[^pat-03]
-
-In the
-other Cypress flow, "sacrificial oxide, cap layer 232, and the
-charge-trapping layer 230" are the layers named. They are "etched or patterned to form a gate stack
+is employed to clear sacrificial dielectric layer 303."[^pat-03] In the
+other Cypress flow the "sacrificial oxide, cap layer 232, and the
+charge-trapping layer 230" are "etched or patterned to form a gate stack
 236 overlying the channel 224 of the NVM transistor and to remove the
 sacrificial oxide, cap layer, and the charge trapping layers 230 from
 the second region 208".[^pat-04]
@@ -190,16 +188,14 @@ memory (SKY130's recipe is not public):*
 :::{dropdown} From patents shown as in force (US 2009/0179253, estimated expiry 2027-06-17; US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 The blocking oxide is 3–5 nm and the trapping layer 9–11 nm in one
 Cypress patent;[^pat-03] another gives the trapping layer as
-70–150 Å,[^pat-02] and the sacrificial cap is 2–4 nm.[^pat-04]
-
-The
+70–150 Å,[^pat-02] and the sacrificial cap is 2–4 nm.[^pat-04] The
 bottom oxide goes in "an etchant, such as BOE, … employed to clear
 sacrificial dielectric layer 303". The same patent warns that once the
 stack is exposed, "Conventional HF-based gate insulator pre-cleans will
 etch or otherwise degrade the quality of the ONO charge trapping
 dielectric stack 306, particularly when the stack includes a CVD formed
-blocking layer".[^pat-03] This is why its pre-clean is "substantially free of
-HF".[^pat-03] The other protects the blocking oxide with a sacrificial
+blocking layer", which is why its pre-clean is "substantially free of
+HF";[^pat-03] the other protects the blocking oxide with a sacrificial
 cap that the BOE removes.[^pat-04]
 :::
 

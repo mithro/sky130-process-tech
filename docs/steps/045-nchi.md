@@ -73,7 +73,7 @@ implant in its flow; the energies and doses are in the same note.
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 Cypress notes that implanted oxide is degraded and loses more in every
 strip.[^pat-03] The Cypress embedded-SONOS patent describes the
-equivalent implant in its flow. It states, "BF₂ can be implanted at an energy of
+equivalent implant in its flow: "BF₂ can be implanted at an energy of
 from about 10 to about 100 kilo-electron volts (keV), and a dose of from
 about 1e12 cm⁻² to about 1e14 cm⁻² to form an N-type MOS (NMOS)
 transistor".[^pat-04]

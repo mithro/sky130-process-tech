@@ -93,7 +93,7 @@ below, the second for a more advanced node than SKY130.
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 Cypress's integration patent puts its thin gate insulator at "between
 approximately 3.0 nm and 8.0 nm" against 5–15 nm for the thick
-one.[^pat-03] Its later cell patent grows "a thin, second gate oxide
+one,[^pat-03] and its later cell patent grows "a thin, second gate oxide
 246 having a thickness from about 1 nm to about 3 nm".[^pat-04]
 :::
 

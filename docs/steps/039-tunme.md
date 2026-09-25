@@ -45,17 +45,13 @@ and its strip are in the collapsed note below.
 :::{dropdown} From a patent shown as in force (US 8,796,098; estimated expiry 2034-02-26) — open to read
 The Cypress embedded-SONOS patent describes exactly this operation on
 the way to its tunnel dielectric: a "patterned tunnel mask 220 is
-formed on or overlying the pad oxide 209".
-
-The memory-transistor channel
-is implanted "through a window or opening in the tunnel mask". Then,
+formed on or overlying the pad oxide 209", the memory-transistor channel
+is implanted "through a window or opening in the tunnel mask", and then
 "The pad oxide 209 is removed, for example in a wet clean process using
 a 10:1 buffered oxide etch (BOE) containing a surfactant.
 Alternatively, the wet clean process can be performed using a 20:1 BOE
 wet etch, a 50:1 hydrofluoric (HF) wet etch, a pad etch, or any other
-similar hydrofluoric-based wet etching chemistry."
-
-The same patent notes
+similar hydrofluoric-based wet etching chemistry." The same patent notes
 that "A photoresist tunnel mask 220 can be ashed or stripped using
 oxygen plasma", and puts the pad oxide at 10–20 nm.[^pat-04]
 :::
@@ -139,7 +135,7 @@ tunnel oxide 1–3 nm, so a tunnel oxide grown on top of the pad oxide
 would be 11–23 nm.[^pat-04] Cypress's integration patent quantifies the
 strip damage: "approximately 0.5 nm of silicon dioxide may be removed
 during a conventional post-implant resist strip process", more "if the
-silicon dioxide received an implant". So that "between 1.5 nm and 2.5 nm
+silicon dioxide received an implant", so that "between 1.5 nm and 2.5 nm
 of silicon dioxide may be removed" over a flow's worth of
 implants.[^pat-03]
 :::
@@ -204,7 +200,7 @@ The tunnel dielectric is 1.0–3.0 nm in the thermal-oxidation embodiment
 and 1.0–4.0 nm in the radical-oxidation one;[^pat-04] another patent
 gives 15–22 Å.[^pat-02] The Cypress patents describe SC-1 at "50 to
 80° C. for about 10 minutes" and SC-2 as "a 1:1:10 solution of HCl,
-H₂O₂ and H₂O at about 50 to 80° C.".[^pat-04] One of them replaces
+H₂O₂ and H₂O at about 50 to 80° C.",[^pat-04] and one of them replaces
 SC-1 with "an ozonated water cleaning regime" in places where the ONO
 stack is exposed, its later pre-clean being "substantially free of
 HF".[^pat-03]

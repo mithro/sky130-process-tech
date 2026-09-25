@@ -63,18 +63,13 @@ the strip and clean as part of this step.
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 In one, "The thick, first gate oxide 240 is etched in the exposed
 regions by using a BOE etch … and the patterned mask layer 242 is then
-removed".[^pat-04]
-
-Afterwards "the substrate 206 is cleaned using a wet etch that
+removed"; afterwards "the substrate 206 is cleaned using a wet etch that
 does not etch oxide in order to protect the first gate oxide 240 of the
 HV MOS transistor 212, and the blocking oxide layer 238 of the gate
-stack 236".[^pat-04]
-
-In the other, "any previously formed gate insulator
+stack 236".[^pat-04] In the other, "any previously formed gate insulator
 layers, such as gate insulator layer 314 … are selectively removed to
-expose the substrate 302".[^pat-03] A pre-clean is done "while the photoresist
-layer 318 protects the ONO charge trapping dielectric stack 306".[^pat-03]
-And
+expose the substrate 302", a pre-clean is done "while the photoresist
+layer 318 protects the ONO charge trapping dielectric stack 306", and
 "the photoresist layer 318 is stripped … for example with conventional
 piranha clean and/or plasma ash operations, subsequent to the selective
 removal of the gate insulator layer(s)".[^pat-03]

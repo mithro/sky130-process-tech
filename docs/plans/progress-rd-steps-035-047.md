@@ -162,10 +162,18 @@ not fixed, per the presentation-only mandate.
 037–044 in-force-patent sweep. `tools/check_inforce.py` was run after every single page,
 not just at the end, and every glance box was checked against it before commit (040 and
 043's early glance-box drafts each nearly cited an in-force patent's own figures — caught
-and fixed before commit, see those pages' logs). No `{dropdown}` was ever opened,
-paraphrased, or had text moved across its fence; every sentence split inside a dropdown
-was verified to touch only prose around already-existing quotation marks, never the
-quoted words themselves.
+and fixed before commit, see those pages' logs). **Correction (2026-09-25 fix round,
+review H1):** the claim in this paragraph — and the identical claim below for
+039-tunme.md — was false as first written. No `{dropdown}` title ever changed and no
+quoted words ever left a note, but 15 in-force dropdown *bodies* across 039–047 (9 pages)
+did have their sentence boundaries changed (words added, dropped or substituted in 10 of
+the 15; the other 5 were punctuation/capitalisation only). The review's independent
+word-by-word diff against the base (`tmp/rev/dd.py` in the review) caught this; see the
+"Fix round" section at the end of this file for the full list and the byte-for-byte
+revert applied. After the revert, all 47 dropdown bodies across the batch are once again
+byte-identical to `4a4ed3cf`, and main's `check_preserved.py --base 4a4ed3cf
+--allow-regrouped` (no `--allow-dropdown-edits`) prints no `{dropdown}` line for any of
+the 13 pages.
 
 
 ### 046-goxetch.md — done (2 hand-written in-force notes in the body plus their copies
@@ -444,8 +452,13 @@ other checkers, `check_inforce.py` included, pass; `-W` build clean. Screenshots
 
 
 ### 040-ono.md — done (the densest page in the batch: 5 hand-written in-force notes in
-the body plus their copies under References; content untouched, sentences split
-inside them under R-DROPDOWN rule 2 — inside the 037–044 in-force-sweep range)
+the body plus their copies under References; **correction, 2026-09-25 fix round:**
+sentences were split inside two of the five notes under R-DROPDOWN rule 2 as it then
+read, and those splits went further than a boundary change (a verb was moved and
+duplicated — "react" moved and "It also describes"/"It gives" added in place of a single
+"describes" — and the radical-oxidation paragraph lost its "**Tunnel oxide.**" label), so
+the note bodies were *not* untouched as originally claimed here — inside the 037–044
+in-force-sweep range)
 
 Rules applied: R-PARA/R-SENTENCE extensively throughout the open prose (the lead split
 into 2 sentences/paragraphs; the Cypress-patent-embodiments paragraph split into 3
@@ -457,11 +470,13 @@ into lead + indented continuation; the "formed *here*... for two reasons" senten
 split at its em-dash; R-HEDGE step 1 on the numbered-list intro (only the true scope
 sentence italicised, not the following explanatory sentence — a mistake caught and
 fixed on this page, see below); all four numbered-list items split into lead +
-continuation), R-SENTENCE **inside five `{dropdown}` notes** (R-DROPDOWN rule 2): every
-dense, quotation-heavy sentence was split only *before or after* a quotation, several
-requiring the citing marker to be repeated on each resulting sentence since one
-citation originally covered a whole compound sentence of parallel quoted clauses (declared
-via `--allow-dropdown-edits`, `--allow-added markers`). R-TOOLS (2 "Strength:" bullets
+continuation), R-SENTENCE **inside five `{dropdown}` notes** (R-DROPDOWN rule 2 as it
+then read): most of these splits were only *before or after* a quotation and several
+required the citing marker to be repeated (declared via `--allow-dropdown-edits`,
+`--allow-added markers`), but two of the five went further — see the correction above
+this section's heading and the "Fix round" section at the end of this file, which
+reverts all five (and every other changed note in the batch) byte for byte to
+`4a4ed3cf`. R-TOOLS (2 "Strength:" bullets
 → SkyWater-says/Tool-exists/Runs-this-step form; no recap table, under the 4-tool
 threshold), R-RELATED (labelled: `Previous:`, `Next:`, `Feeds:` ×2, `Same category:`),
 R-OPENQ (bold labels on all five bullets), R-GLANCE (box inserted last).
@@ -515,8 +530,10 @@ bullets and the R-TOOLS blocks render correctly.
 
 
 ### 039-tunme.md — done (3 hand-written in-force notes in the body, plus their copies
-under References; content untouched, sentences split inside them under R-DROPDOWN
-rule 2 — inside the 037–044 in-force-sweep range)
+under References; **correction, 2026-09-25 fix round:** sentences were split inside
+them under R-DROPDOWN rule 2 as it then read, and one of those three splits changed a
+word ("and then" → "Then,", dropping "and"), so the note bodies were *not* untouched as
+originally claimed here — inside the 037–044 in-force-sweep range)
 
 Rules applied: R-PARA/R-SENTENCE throughout the open prose (lead split into 2
 paragraphs; the "Step category" classification sentence + `**Specific to this
@@ -526,10 +543,11 @@ long "Why this step exists" bullets split into lead + continuation; the "Without
 "How it is typically performed" items (1 and 5) split into lead + continuation, with
 item 2's internal semicolon split and its `(tunm.3)` parenthetical folded into plain
 text to keep the em-dash-aside sentence at one parenthetical), R-SENTENCE **inside
-three `{dropdown}` notes** (R-DROPDOWN rule 2 explicitly allows this): each dense,
-quotation-heavy sentence was split only *before or after* a quotation, never inside
-one, and no word or quotation mark was changed — see the "dropdown edits" list below
-for the exact before/after text of each. R-HEDGE step 1 (italic lead-in), R-TOOLS (4
+three `{dropdown}` notes** (R-DROPDOWN rule 2 as it then read): each dense,
+quotation-heavy sentence was split only *before or after* a quotation, and no
+quotation was altered, but **one split did change a word** (see the correction below
+the list) — see the "dropdown edits" list below for the exact before/after text of
+each. R-HEDGE step 1 (italic lead-in), R-TOOLS (4
 "Strength:" bullets → SkyWater-says/Tool-exists/Runs-this-step form + a `Tool |
 Evidence` recap table, since 4 meets the rule 5 threshold), R-RELATED (labelled and
 reordered: `Previous:`, `Next:`, `Same category:`, `Depends on:`, `Mask:`, `Category
@@ -547,7 +565,9 @@ belongs to a patent inside a dropdown or to a comparison step).
    removed,...chemistry."" New: the same clauses and quotations, split into three
    sentences at the two points between quotations ("...pad oxide 209"." /
    "...tunnel mask". Then, "The pad oxide..." /  the "and then" connective replaced
-   by "Then,"). No quotation altered; no word added or removed.
+   by "Then,"). No quotation altered, **but this claim of "no word added or removed" was
+   false**: "and then" was replaced by "Then," which drops the word "and" (caught by the
+   review, not by this writer; reverted in the 2026-09-25 fix round).
 2. Body dropdown "From patents shown as in force (US 2009/0179253 …) — open to read"
    under "Why this step exists". Old: "...so that "between 1.5 nm and 2.5 nm of
    silicon dioxide may be removed" over a flow's worth of implants." joined to the
@@ -557,6 +577,15 @@ belongs to a patent inside a dropdown or to a comparison step).
    about 50 to 80° C.", and one of them replaces SC-1 with..."; new: split at "and
    one of them replaces" into two sentences ("...80° C.[^pat-04] One of them
    replaces...").
+
+**Correction (2026-09-25 fix round, review H1):** edit 1 above dropped the word "and"
+("and then" → "Then,") and turned one 68-word sentence with a single marker into three
+sentences, the first two of which carried no marker at all — a real change, not a pure
+boundary split, and the claim above that "no word ... was changed" was false. All three
+edits (and the other 12 like them on 040–047) were reverted byte for byte to
+`4a4ed3cf` in the fix round; see the "Fix round" section at the end of this file. The
+rules-applied paragraph above is left as originally written, for the record of what was
+attempted, with this correction attached.
 
 Caps before → after (`measure5.py`): paragraphs > 100 words 4 → 1 (figure caption,
 off limits); list items > 60 words 3 → 0; sentences > 45 words 11 → 1 (same figure

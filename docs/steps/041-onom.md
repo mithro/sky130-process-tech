@@ -68,11 +68,9 @@ sacrificial oxide layer 234, and the sacrificial oxide, cap layer 232,
 and the charge-trapping layer 230 etched or patterned to form a gate
 stack 236 overlying the channel 224 of the NVM transistor and to remove
 the sacrificial oxide, cap layer, and the charge trapping layers 230
-from the second region 208 of the substrate 204".[^pat-04] "The patterned mask
+from the second region 208 of the substrate 204"; "The patterned mask
 layer can include a photoresist layer patterned using standard
-lithographic techniques".[^pat-04]
-
-In another, "Conventional lithography
+lithographic techniques".[^pat-04] In another, "Conventional lithography
 and etching techniques may be employed to remove the charge trapping
 dielectric layers from other regions of the substrate, such as the HV
 MOS region 350 and MOS region 370".[^pat-03]
@@ -141,8 +139,7 @@ window, in the collapsed note below.
 
 :::{dropdown} From patents shown as in force (US 8,093,128, estimated expiry 2028-10-22; US 8,796,098, estimated expiry 2034-02-26) — open to read
 The ONO is formed and patterned, then "the logic MOS gate insulator" is
-formed by a thermal process that "additionally" reoxidises the ONO.
-The
+formed by a thermal process that "additionally" reoxidises the ONO; the
 patent notes for its window that "the dimensions and alignment of window
 305 and ONO charge trapping dielectric stack 306 are
 important".[^pat-03] The tunnel oxide inside the window is

@@ -148,7 +148,7 @@ force and their wording is in the collapsed note below.
 Cypress's flows describe the same mask: "a photoresist layer 318 …
 patterned to have an opening 319 formed over a region of the substrate
 302 that is to have the next insulator material and/or insulator layer
-thickness".[^pat-03] And "a patterned mask layer 242 … includes at
+thickness",[^pat-03] and "a patterned mask layer 242 … includes at
 least one opening 244 over a channel 218 in the second region
 208".[^pat-04]
 :::
