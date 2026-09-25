@@ -41,9 +41,76 @@ R-SENTENCE, R-LIST, R-H3, R-HEDGE, R-REPEAT, R-CODE.
 - test.md — done
 - strip.md — done
 - implant.md — done
-- (remaining three to do: deposition, etch, lithography)
+- etch.md — done
+- (remaining two to do: deposition, lithography)
 
 ## Pages
+
+### etch.md — done
+
+This is report-B7's own named example: "Chemistries by material" (7 bullets) is the exact passage the
+rule was written from (`etch.md:91` in the report text), so it became the literal
+`Material | SKY130 steps | Typical chemistry` table (dropped the fourth "Why" column — every explanation
+here is over 40 words, so per R-COMPARE step 1 it all stays as prose below the table, under the same
+material names as bold run-in labels, and a fourth column would have held nothing). Rules applied: intro
++ quick-facts table (Governing relation "ion-enhanced etch-yield law (Steinbrüchel)", from the page's own
+{math} formula and citation); R-COMPARE table (7 rows; the Tungsten row has no step ref in the source, so
+`—`); R-LIST (the "four numbers" rate/selectivity/anisotropy/uniformity sentence, zero markers, pure
+reformat); R-SENTENCE splits (the RF-plasma quote sentence, the Coburn-and-Winters sentence, the ICP
+sentence, the BOE/HF sentence, the endpoint/interferometry sentence); R-COMPARE step 2 (five consumables
+lead-ins linked to `etch-gases`/`wet-chemicals`/`hardware-consumables`); R-COMPARE step 3 (Machine class
+column on the 27-row steps table, three rows carrying two classes where the machines index lists both as
+primary); R-CAPTION on the new tables.
+
+**Two mistakes caught and fixed before the checker run, both worth flagging for whoever reviews this
+batch:**
+1. My first cut at the table left the original "Ti:W and TiN", "Anti-reflective coatings" and "Tungsten"
+   bullets in place below it (my `old_string` for the Edit call stopped short of the full original bullet
+   list), so those three materials were briefly duplicated — once in the new table, once in the leftover
+   bullets. Caught by reading the file back, not by the checker (which would have reported it as `ADDED`
+   refs/text, not a hard failure, so it is worth an explicit re-read of the diff after every multi-bullet
+   replacement, not just a green checker run).
+2. Converting "metal 1–5, {ref}`MM1E` to {ref}`MM5E`; the 2013 Cypress report..." lost the `1–5` number
+   when the table's Steps cell kept only the `{ref}` range and the "2013/2014/130" numbers moved to a
+   separate prose paragraph several table rows later — breaking `check_preserved.py`'s contiguous-run
+   check (nothing between the original `1–5` and `2013` in the source, but four other rows' numbers now
+   sat between them). Fixed by moving `1–5` into the same prose paragraph ("For metal 1–5, a 2013 Cypress
+   report…"), immediately ahead of `2013`, restoring contiguity. General lesson for the remaining page
+   (deposition) and any reviewer: when a bullet's lead clause and its explanation both carry numbers and
+   the explanation is being pushed to prose after the table, keep every number that was in the lead
+   *with* the explanation's numbers (same paragraph, correct order) rather than splitting them into the
+   table row and the prose separately.
+
+`check_preserved.py --base 2b1188ec --allow-regrouped --allow-added markers,numbers,refs,hedges,
+identifiers` → exit 0. One `--allow-regrouped` group confirmed by hand (the BOE/HF sentence's
+`6,1,40,49,2,25` run, now on its own sentence, unchanged order; the `HF₂⁻` superscript-minus token that
+was part of the same original unit is now alone in the preceding sentence, below the tracking threshold,
+consistent with a clean split).
+
+* **ADDED markers:** `wiki-rie`, `wiki-boe`, `wiki-hf` (one extra occurrence each) — R-SENTENCE rule 5
+  repeats.
+* **ADDED numbers:** `27` — Steps-in-SKY130 count (matches the page's own "27 etch steps" sentence).
+* **ADDED refs:** `hard mask` ×1 (new intro repeats the opening sentence's own `{term}` use);
+  `machine-plasma-etcher-dielectric` ×13, `machine-plasma-etcher-metal` ×9,
+  `machine-plasma-etcher-silicon` ×5, `machine-single-wafer-spin-processor` ×4, `machine-wet-bench` ×3
+  (quick facts + Machine class column, three rows with two classes); `material-etch-gases` ×4,
+  `material-hardware-consumables` ×1, `material-wet-chemicals` ×1; `step-166` ×1 (kept in both the table's
+  Steps cell and the "mainly oxide on the reading of that page" aside moved to prose).
+* **ADDED hedges:** `typical` ×1 — unavoidable: the R-COMPARE rule's own prescribed column header is
+  "Typical chemistry", literally named in the guide. Declared, not reworded, because renaming the rule's
+  own column header would be a bigger deviation than a harmless hedge-word match on UI chrome.
+* **ADDED identifiers:** `SKY130` ×2.
+
+Quick-facts derivation: What it does = verbatim fragment of the opening sentence. Steps in SKY130 = 27
+(steps table; matches the page's own count). Tool classes = the three plasma-etcher `{ref}` targets in
+Typical equipment (wet-process classes left out of the summary cell). Consumable classes = `etch-gases`
+(owns the fluorine/chlorine/additive rows this page names). Governing relation = the Steinbrüchel
+ion-enhanced etch-yield law, the page's own cited formula.
+
+Checkers, `check_inforce.py` in particular (the metal-cap paragraph touches the same topic as prior
+in-force findings on other pages; verified clean — no patent number or restricted phrase appears outside
+a dropdown here), and `-W` build all pass. Screenshots (desktop, 400 px) reviewed: the R-COMPARE table
+and the 4-column, 27-row steps table both fit at 400 px, no horizontal scroll.
 
 ### implant.md — done
 

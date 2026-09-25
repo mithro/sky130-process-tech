@@ -1,6 +1,18 @@
 (category-etch)=
 # Etch
 
+An etch step removes material selectively: wherever the photoresist
+(or a {term}`hard mask`) is open, the exposed film is eaten away down to a
+stopping layer, and wherever it is covered, the film stays.
+
+| | Etch |
+|---|---|
+| What it does | removes material selectively: the exposed film is eaten away, the covered film stays |
+| Steps in SKY130 | 27 |
+| Tool classes | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>`, {ref}`Dielectric etch <machine-plasma-etcher-dielectric>`, {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| Consumable classes | {ref}`Etch and chamber-clean gases <material-etch-gases>` |
+| Governing relation | ion-enhanced etch-yield law (Steinbrüchel) |
+
 ## What this class of step does
 
 An etch step removes material selectively: wherever the photoresist
@@ -12,14 +24,18 @@ oxide, polysilicon, aluminium, titanium nitride. Some etches have no
 mask at all and simply remove a film everywhere (a "blanket" etch or
 etch-back) or only from the wafer backside.
 
-Precisely, an etch is characterised by four numbers. Its **rate**
-(nm/min) sets the process time; its {term}`selectivity`, the ratio of
-the rate on the target film to the rate on the mask and on the
-underlying stop layer, sets how much {term}`over-etch` can be tolerated; its
-{term}`anisotropy`, the ratio of vertical to lateral rate, sets how
-faithfully the resist width becomes the etched width; and its
-**uniformity** across the wafer and between dense and isolated features
-sets how much over-etch is *needed*. A 130 nm process uses two families:
+Precisely, an etch is characterised by four numbers:
+
+* its **rate** (nm/min) sets the process time;
+* its {term}`selectivity`, the ratio of
+  the rate on the target film to the rate on the mask and on the
+  underlying stop layer, sets how much {term}`over-etch` can be tolerated;
+* its {term}`anisotropy`, the ratio of vertical to lateral rate, sets how
+  faithfully the resist width becomes the etched width; and
+* its **uniformity** across the wafer and between dense and isolated features
+  sets how much over-etch is *needed*.
+
+A 130 nm process uses two families:
 plasma ("dry") etching in a vacuum chamber, which can be highly
 anisotropic and is used for every patterned film, and wet chemical
 etching in aqueous baths, which is isotropic and is used where a film
@@ -42,8 +58,8 @@ the final nitride-seal and pad etches.
 A reactive-ion etcher holds the wafer on an RF-driven electrode in a gas
 at low pressure. "Plasma is initiated in the system by applying a strong
 RF electromagnetic field to the wafer platter. The field is typically
-set to a frequency of 13.56 Megahertz, applied at a few hundred watts",
-and because electrons are far more mobile than ions the platter charges
+set to a frequency of 13.56 Megahertz, applied at a few hundred watts".[^wiki-rie]
+Because electrons are far more mobile than ions the platter charges
 to "a large negative voltage on the platter, typically around a few
 hundred volts", which accelerates positive ions across the sheath and
 onto the wafer normal to its surface.[^wiki-rie] Pressure "is typically
@@ -54,7 +70,7 @@ Etching then proceeds by a synergy between chemistry and ion
 bombardment. Coburn and Winters described in 1979 how gas–surface
 reactions that give volatile products can be enhanced by energetic
 radiation, "primarily ions and electrons", examining "the reactions of
-Si, SiO2, and Si3N4 with XeF2, F2, and Cl2";[^coburn-1979] their
+Si, SiO2, and Si3N4 with XeF2, F2, and Cl2".[^coburn-1979] Their
 review of the same year relates the adsorption, product-formation and
 desorption steps of etching to phenomena such as etching anisotropy, and
 emphasises the role of ion and electron bombardment.[^coburn-1979b]
@@ -72,7 +88,7 @@ A conventional capacitive {term}`RIE` couples ion density and ion energy through
 the one RF supply. High-density sources decouple them: an inductively
 coupled ({term}`ICP`; Lam's {term}`TCP`; Applied's "decoupled plasma
 source", DPS) coil generates a dense plasma (typically 10¹¹–10¹²
-cm⁻³)[^lieberman-2005] at a few millitorr, while a separate
+cm⁻³)[^lieberman-2005] at a few millitorr. A separate
 low-frequency bias on the electrostatic chuck sets the ion energy, so
 that "the ICP is employed as a high density source of ions which
 increases the etch rate" while the bias controls "the energy of ions
@@ -85,11 +101,20 @@ as Lam's Exelan and Applied's eMxP+.[^donnelly-2013][^nojiri-2015]
 
 ### Chemistries by material
 
-The chemistries below are those typical of the node; SKY130's actual
-recipes are not public.
+:::{table} Etch chemistries by material, those typical of the node; SKY130's actual recipes are not public
 
-* **Silicon and polysilicon** (STI trench {ref}`STIE <step-006>`, gate
-  {ref}`P1ME <step-062>`): HBr/Cl₂ with a little O₂, which forms
+| Material | SKY130 steps | Typical chemistry |
+|---|---|---|
+| Silicon and polysilicon | {ref}`STIE <step-006>`, {ref}`P1ME <step-062>` | HBr/Cl₂ with a little O₂ |
+| Silicon dioxide | {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, oxide hard masks, {ref}`NSME <step-166>` | fluorocarbons — CF₄, CHF₃, C₄F₈, C₂F₆ — with Ar and O₂ |
+| Silicon nitride | {ref}`STINITE <step-005>`, {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`, {ref}`PDME <step-169>` | CF₄/CHF₃/O₂ or SF₆-based |
+| Aluminium–copper with Ti/TiN or Ti:W caps | {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>` | Cl₂/BCl₃ with N₂ or CHF₃ for sidewall passivation |
+| Ti:W and TiN | {ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>` | fluorine (SF₆, CF₄) or chlorine, high selectivity to the {term}`oxynitride` dielectric beneath |
+| Anti-reflective coatings | {ref}`TUNARCE <step-036>` | organic {term}`BARC`: O₂/N₂ or HBr/O₂; inorganic SiON: CF₄-based |
+| Tungsten etch-back (alternative to {term}`CMP` for plugs) | — | SF₆/Ar |
+:::
+
+**Silicon and polysilicon.** HBr/Cl₂ with a little O₂ forms
   volatile SiBrₓ/SiClₓ while a thin SiOₓBrᵧ sidewall film keeps the
   profile vertical; the O₂ also raises selectivity to the gate oxide
   underneath, and the main etch is followed by a {term}`soft-landing <soft landing>` and an
@@ -97,31 +122,28 @@ recipes are not public.
   so that a 2–4 nm gate oxide survives.[^nojiri-2015][^txt-01] SF₆ "is
   commonly used for etching silicon" where isotropy is
   acceptable.[^wiki-rie]
-* **Silicon dioxide** (contacts {ref}`CTME <step-108>`, vias {ref}`VIME
-  <step-119>`, oxide hard masks, the seal-ring opening
-  {ref}`NSME <step-166>` (mainly oxide on the reading of that page)):
-  fluorocarbons — CF₄, CHF₃, C₄F₈, C₂F₆
-  — with Ar and O₂. Fluorine etches oxide as SiF₄ only under ion
+
+**Silicon dioxide.** (Contacts, vias, oxide hard masks and the seal-ring
+  opening {ref}`NSME <step-166>` are mainly oxide on the reading of that page.)
+  Fluorine etches oxide as SiF₄ only under ion
   bombardment, while the carbon forms a polymer that deposits on silicon
   and nitride, giving selectivity to the underlying silicon or to a
   nitride etch-stop; the fluorine-to-carbon ratio is the master
   variable.[^flamm-1981][^winters-1992] High-aspect-ratio contacts show
   {term}`ARDE`, etch-stop from polymer build-up, and bowing.
-* **Silicon nitride** (STI hard mask {ref}`STINITE <step-005>`, spacer
-  {ref}`SPE <step-077>`, nitride cut {ref}`NPCME <step-079>`, pad
-  opening {ref}`PDME <step-169>`): CF₄/CHF₃/O₂ or SF₆-based, with the
-  fluorocarbon content tuned for selectivity to oxide; the spacer etch
+
+**Silicon nitride.** The
+  fluorocarbon content is tuned for selectivity to oxide; the spacer etch
   is an unmasked anisotropic etch-back that leaves nitride only on the
   vertical gate sidewalls and must stop on a thin oxide without
   trenching the silicon.[^txt-01]
-* **Aluminium–copper with Ti/TiN or Ti:W caps** (metal 1–5,
-  {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>`; the 2013 Cypress
+
+**Aluminium–copper caps.** For metal 1–5, a 2013 Cypress
   report for this fab gives a TiW cap on metals 1–3 of its
   S8TNV-5R,[^cyp-qtp-113005] a 2014 report records a qualified change of
   the fab's 130 nm stacks to a TiN cap "excluding top metal
-  layers",[^cyp-qtp-123907] and which SKY130 carries at each level is
-  not public — {ref}`overview-metal-cap`): Cl₂/BCl₃ with N₂ or CHF₃ for sidewall
-  passivation. AlCl₃ is volatile at room temperature, so aluminium
+  layers",[^cyp-qtp-123907] and which cap SKY130 carries at each level is
+  not public ({ref}`overview-metal-cap`). AlCl₃ is volatile at room temperature, so aluminium
   etches spontaneously in chlorine and anisotropy depends entirely on
   the passivation film; BCl₃ scavenges water and reduces the native
   Al₂O₃; copper chlorides are not volatile and are removed by ion
@@ -130,12 +152,6 @@ recipes are not public.
   plasma and an immediate rinse.[^nojiri-2015][^txt-02] The cap is
   opened first: a TiW cap needs a fluorine-bearing step,[^liu-2007-tiw]
   a TiN cap clears in chlorine.[^min-2008]
-* **Ti:W and TiN** (capacitor top plates {ref}`CAPME <step-138>`,
-  {ref}`CAP2ME <step-153>`): fluorine (SF₆, CF₄) or chlorine chemistries
-  with high selectivity to the {term}`oxynitride` dielectric beneath.
-* **Anti-reflective coatings** ({ref}`TUNARCE <step-036>`): organic {term}`BARC`
-  opens in O₂/N₂ or HBr/O₂; inorganic SiON in CF₄-based plasmas.
-* **Tungsten** etch-back (an alternative to {term}`CMP` for plugs): SF₆/Ar.
 
 ### Wet etching
 
@@ -143,7 +159,7 @@ Wet etches are chemical only, so they are isotropic and can be almost
 perfectly selective. Silicon dioxide is removed in dilute hydrofluoric
 acid or in {term}`BOE`, a mixture of ammonium fluoride and HF whose
 buffering gives "a more stable pH; thus, more stable concentrations of
-HF and HF₂⁻, and a more stable etch rate"; a 6:1 mixture of 40 % NH₄F
+HF and HF₂⁻, and a more stable etch rate".[^wiki-boe][^wiki-hf] A 6:1 mixture of 40 % NH₄F
 and 49 % HF etches thermally grown oxide "at approximately 2 nanometres
 per second at 25 degrees Celsius".[^wiki-boe][^wiki-hf] Dilute HF is the
 natural tool for, and we infer is used at, stripping the thick gate
@@ -167,8 +183,8 @@ spectroscopy watches a product or reactant line (for example the 387 nm
 CN band during nitride etch — "a strong peak at 387 nm indicates that CN
 is present in the plasma, usually indicating that nitride is being
 etched"[^pat-endpoint-tel] — or the aluminium or AlCl line in metal
-etch[^nojiri-2015]) and triggers a timed over-etch when it changes;
-laser interferometry on a monitoring pad follows the film thickness
+etch[^nojiri-2015]) and triggers a timed over-etch when it changes.
+Laser interferometry on a monitoring pad follows the film thickness
 directly.[^nojiri-2015] The
 {term}`loading effect` makes the rate depend on how much material is
 exposed, and micro-loading and ARDE make dense and isolated features
@@ -216,14 +232,14 @@ oxidation or clean must remove.
 
 ## Typical consumables
 
-* **Fluorine sources**: CF₄, CHF₃, C₄F₈, C₂F₆, SF₆, NF₃ (chamber clean).
-* **Chlorine/bromine sources**: Cl₂, HBr, BCl₃.
-* **Additives and carriers**: O₂, N₂, Ar, He (backside cooling), H₂,
+* **{ref}`Fluorine sources <material-etch-gases>`**: CF₄, CHF₃, C₄F₈, C₂F₆, SF₆, NF₃ (chamber clean).
+* **{ref}`Chlorine/bromine sources <material-etch-gases>`**: Cl₂, HBr, BCl₃.
+* **{ref}`Additives and carriers <material-etch-gases>`**: O₂, N₂, Ar, He (backside cooling), H₂,
   CH₂F₂ and CH₃F for nitride selectivity.
-* **Wet chemicals**: 49 % HF and dilute HF, BOE (e.g. 6:1 or 10:1
+* **{ref}`Wet chemicals <material-wet-chemicals>`**: 49 % HF and dilute HF, BOE (e.g. 6:1 or 10:1
   NH₄F:HF), 85 % phosphoric acid, nitric acid, ammonium hydroxide and
   hydrogen peroxide for post-etch cleans, isopropanol for drying.
-* **Chamber parts**: silicon or quartz focus rings, ceramic (Al₂O₃,
+* **{ref}`Chamber parts <material-hardware-consumables>`**: silicon or quartz focus rings, ceramic (Al₂O₃,
   Y₂O₃-coated) liners, electrostatic chucks, showerheads, and endpoint
   windows, all consumed on a scheduled preventive-maintenance basis.
 * **Photoresist and hard-mask films** as the pattern carrier
@@ -231,35 +247,38 @@ oxidation or clean must remove.
 
 ## Steps in this category
 
-| Step | Code | Name |
-|------|------|------|
-| 5 | {ref}`STINITE <step-005>` | Shallow trench nitride etch |
-| 6 | {ref}`STIE <step-006>` | Shallow trench etch |
-| 36 | {ref}`TUNARCE <step-036>` | Tunnel mask ARC etch |
-| 39 | {ref}`TUNME <step-039>` | Tunnel mask etch |
-| 42 | {ref}`ONOME <step-042>` | ONO mask etch |
-| 46 | {ref}`GOXETCH <step-046>` | Low V gate oxide etch |
-| 60 | {ref}`BFR <step-060>` | Backside film removal |
-| 62 | {ref}`P1ME <step-062>` | Poly mask poly etch |
-| 77 | {ref}`SPE <step-077>` | Spacer nitride etch |
-| 79 | {ref}`NPCME <step-079>` | Nitride poly cut mask etch |
-| 94 | {ref}`LICM1E <step-094>` | Local interconnect contact mask etch |
-| 95 | {ref}`SACETCH <step-095>` | Sacrificial etch |
-| 103 | {ref}`LI1ME <step-103>` | Local interconnect 1 mask etch |
-| 108 | {ref}`CTME <step-108>` | Metal contact mask etch |
-| 114 | {ref}`MM1E <step-114>` | Metal1 mask etch |
-| 119 | {ref}`VIME <step-119>` | Via1 mask etch |
-| 125 | {ref}`MM2E <step-125>` | Metal2 mask etch |
-| 130 | {ref}`VIM2E <step-130>` | Via2 mask etch |
-| 138 | {ref}`CAPME <step-138>` | Capacitor mask etch |
-| 140 | {ref}`MM3E <step-140>` | Metal3 mask etch |
-| 145 | {ref}`VIM3E <step-145>` | Via3 mask etch |
-| 153 | {ref}`CAP2ME <step-153>` | Capacitor 2 mask etch |
-| 155 | {ref}`MM4E <step-155>` | Metal4 mask etch |
-| 160 | {ref}`VIM4E <step-160>` | Via4 (pad via) mask etch |
-| 163 | {ref}`MM5E <step-163>` | Metal5 mask etch |
-| 166 | {ref}`NSME <step-166>` | Nitride seal mask etch |
-| 169 | {ref}`PDME <step-169>` | Pad mask etch |
+:::{table} The twenty-seven etch steps of the flow
+
+| Step | Code | Name | Machine class |
+|------|------|------|----------------|
+| 5 | {ref}`STINITE <step-005>` | Shallow trench nitride etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 6 | {ref}`STIE <step-006>` | Shallow trench etch | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>` |
+| 36 | {ref}`TUNARCE <step-036>` | Tunnel mask ARC etch | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>` |
+| 39 | {ref}`TUNME <step-039>` | Tunnel mask etch | {ref}`Wet bench <machine-wet-bench>`, {ref}`single-wafer spin etcher <machine-single-wafer-spin-processor>` |
+| 42 | {ref}`ONOME <step-042>` | ONO mask etch | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>`, {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 46 | {ref}`GOXETCH <step-046>` | Low V gate oxide etch | {ref}`Wet bench <machine-wet-bench>`, {ref}`single-wafer spin etcher <machine-single-wafer-spin-processor>` |
+| 60 | {ref}`BFR <step-060>` | Backside film removal | {ref}`single-wafer spin etcher <machine-single-wafer-spin-processor>` |
+| 62 | {ref}`P1ME <step-062>` | Poly mask poly etch | {ref}`Silicon and poly etch <machine-plasma-etcher-silicon>` |
+| 77 | {ref}`SPE <step-077>` | Spacer nitride etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 79 | {ref}`NPCME <step-079>` | Nitride poly cut mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 94 | {ref}`LICM1E <step-094>` | Local interconnect contact mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 95 | {ref}`SACETCH <step-095>` | Sacrificial etch | {ref}`Wet bench <machine-wet-bench>`, {ref}`single-wafer spin etcher <machine-single-wafer-spin-processor>` |
+| 103 | {ref}`LI1ME <step-103>` | Local interconnect 1 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 108 | {ref}`CTME <step-108>` | Metal contact mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 114 | {ref}`MM1E <step-114>` | Metal1 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 119 | {ref}`VIME <step-119>` | Via1 mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 125 | {ref}`MM2E <step-125>` | Metal2 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 130 | {ref}`VIM2E <step-130>` | Via2 mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 138 | {ref}`CAPME <step-138>` | Capacitor mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 140 | {ref}`MM3E <step-140>` | Metal3 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 145 | {ref}`VIM3E <step-145>` | Via3 mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 153 | {ref}`CAP2ME <step-153>` | Capacitor 2 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 155 | {ref}`MM4E <step-155>` | Metal4 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 160 | {ref}`VIM4E <step-160>` | Via4 (pad via) mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 163 | {ref}`MM5E <step-163>` | Metal5 mask etch | {ref}`Metal etch <machine-plasma-etcher-metal>` |
+| 166 | {ref}`NSME <step-166>` | Nitride seal mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+| 169 | {ref}`PDME <step-169>` | Pad mask etch | {ref}`Dielectric etch <machine-plasma-etcher-dielectric>` |
+:::
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ## Related patents, papers and filings
