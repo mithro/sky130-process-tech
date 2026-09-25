@@ -195,6 +195,17 @@ the same event a "New Mask Option".
 10 more R52T-3 file ids remain (92916, 92716, 93181, 93176, 93216, 92776,
 92136, 92921, 92926, 92236), plus 20 file ids for other Group B technologies.
 
+## Eleventh batch: five more R52T-3 reports -- all 20 R52T-3 file ids now done
+
+qtp-060703, qtp-051804, qtp-063109, qtp-063108, qtp-063606 -- all B30M-lineage
+variants. qtp-063109 and qtp-063108 omit the die-marking/free-phosphorus/
+transistor-count fields entirely (not just blank -- absent from the printed
+template). qtp-063108's Qualification Purpose calls its part "CY28547-5"
+where the Marketing Part field and history row both say plain "CY28547".
+
+**All 20 R52T-3 file ids are now records.** 20 more Group B file ids remain
+(R52FFD-3, B55SGT, C8Q-3R, R9Q-3R, R95LD-3R, S4AD-5 variants).
+
 ## Still to do
 
 - Group B: 46 more staged-and-extracted file ids not yet turned into records
