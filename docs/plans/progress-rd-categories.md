@@ -634,3 +634,41 @@ order` listed, the tool would have caught implant's two silent losses in the ori
 
 **Correction:** the earlier "191 rows total... expected double-counting" line above is wrong; the
 per-page row counts sum to 171, one row per step in the flow, with no double-counting. Fixed in place.
+
+## Fix round (verify): tmp/reviews/rd-categories-verify.md, 2026-09-26
+
+Verifier's "needs another round, short": all High items from the first fix round confirmed. Three
+Medium items still failed (M5 test intro triplication, M7 implant 400 px wrap, M9 consumable-classes
+against the materials-index set) plus one new undeclared `ADDED numbers: '1–5'` on etch, introduced by
+the first fix round's own restoring of the "metal 1–5" table label. Each fixed in its own commit:
+
+1. **test.md** — the body sentence at :24 still carried the intro's second sentence in expanded form
+   ("This is the e-test or wafer acceptance test (WAT); it is the single HPETEST step…"). Trimmed to
+   keep only the HPETEST clause, so `e-test`/`WAT` appear once, on the first screen.
+2. **implant.md** — the Wells and Threshold-adjust rows' "10¹²–10¹³" ranges wrapped mid-number at
+   400 px. Fixed with a word joiner (U+2060) after the en dash in both cells; `check_preserved.py`
+   is unaffected (the dash carries no token of its own) and the digit sequence still regroups
+   identically. Re-shot at `--width 400`: confirmed one line.
+3. **implant.md** — added `Hardware consumables` to the quick-facts Consumable classes row (the page
+   already links `material-hardware-consumables` under "Typical consumables"). The guide's §4.5 now
+   states the rule explicitly: Tool/Consumable classes are the classes the page itself already links,
+   page-derived, no new facts — not a set derived from the machines/materials index.
+
+**Note for the owner (not actioned as edits) — consumable-classes, materials-index cross-check.** The
+verifier also built, for etch/deposition/oxidation/strip/test, the union of consumable classes the
+*materials index* assigns to each category's steps, and compared it against each page's quick-facts
+cell (which lists only the classes the page's own body already links, per the rule above). Under the
+"page links" rule all five pages are consistent by construction; under an "every class the materials
+index assigns" rule they would gain rows. For the owner to decide, not applied here:
+
+| Page | Quick facts (page-derived) | Classes the materials index adds for this category's steps |
+|---|---|---|
+| etch | etch-gases, wet-chemicals, hardware | process-gases (N₂ 27/27, O₂, Ar, He, H₂O); ultrapure-water (20/27); anneal-ambients (forming gas 16/27); substrates (test wafers 22/27); lithography-materials (ARC, step 36) |
+| deposition | 6 classes | substrates (test wafers 40/41); wet-chemicals (HF, step 3) |
+| oxidation | process-gases, hardware, substrates | precursors (NH₃ on 10/40/47; DCS on 40); wet-chemicals (HF, BOE, SC-1/SC-2 pre-cleans on 2/10/43) |
+| strip | process-gases, wet-chemicals, UPW, hardware | etch-gases (CF₄, 14/15); anneal-ambients (forming gas, 14/15); precursors (NH₃, 3/15) |
+| test | hardware, substrates | none: exact match |
+
+Strip's own "Gases" bullet already names CF₄ and forming gas on the page, so strip is the case where the
+two candidate rules give different answers even on the page's own evidence — worth the owner's attention
+first if the rule is revisited.

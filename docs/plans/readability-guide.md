@@ -1778,6 +1778,9 @@ No heading checker, so this is the freest page type — and the one where `check
 + intro ≤ 60 words, assembled from the first paragraph of "What this class of step does"   R-INTRO
 + | quick facts | What it does · Steps in SKY130 (N) · Tool classes (links) ·
                   Consumable classes (links) · Governing relation
+                  (Tool/Consumable classes: the classes the page itself already links to under
+                  "Typical equipment"/"Typical consumables" — page-derived, no new facts, not a
+                  set derived from the machines/materials index)
 ## What this class of step does
 + (generic mechanism figure)                                          R-FIGURE, W1a
 ## Physics and engineering background    H3s welcome; comparisons as tables   R-COMPARE, R-CAPTION
