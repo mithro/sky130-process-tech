@@ -64,6 +64,32 @@ apply here too; new ones for this batch are added below, numbered continuing fro
 
 ## Per-page log
 
+### 024-pnchi.md — done (dense page: 3 competing readings + a long e-test paragraph; one
+in-force dropdown, content untouched)
+
+Rules applied: R-PARA/R-SENTENCE throughout (lead paragraph; the numbered three-reading list,
+each item → lead + indented continuation; the ~240-word test-tile measurement passage split
+into four paragraphs at its own seams, kept as prose rather than a table for the same
+"ambiguous device pairing" reason as pages 022/023; the Energy item → lead + continuation, one
+sentence reworded from a semicolon-joined fragment to a full sentence with the quote kept
+intact), R-HEDGE step 1 (italic lead-in), R-TOOLS (2 "Strength:" bullets split, no recap
+table), R-RELATED (`Previous:`/`Next:`/`Mask:` split onto separate bullets; `Same category:`,
+`Feeds:` labels), R-OPENQ (bold labels on all three bullets), R-GLANCE (box last).
+
+Caps before → after (`measure5.py`): paragraphs > 100 words 5 → 0; list items > 60 words 3 → 0;
+sentences > 45 words 9 → 0; table cells > 25 words 0 → 0. This page's figure caption is short
+enough that it never trips Guide problem 10, so after the fixes above the whole-page measurement
+comes back completely clean.
+
+`check_preserved.py --base 05e7a3ba --allow-added markers,numbers,hedges,identifiers,quotes,refs,number_order --allow-regrouped --allow-dropdown-edits docs/steps/024-pnchi.md`:
+`quotes`, `hedges` and plain `numbers` (condition (a)) show no LOST. The only failure is `LOST
+number_order (not a clean regroup)` for three tuples: one of two "8250" mentions stranded after
+the R-TOOLS split, a lone "n⁺" stranded in the buried-channel reading, a lone "−0.1" in the
+V_DS aside once split into its own sentence — all the familiar Guide-problem-11 pattern — plus
+a clean multi-way regroup of the big e-test sentence. All other checkers pass; `-W` build clean.
+Screenshots (desktop + 400 px) read cleanly top to bottom through the three numbered readings
+and the dense measurement paragraphs.
+
 ### 023-pchi.md — done (one in-force dropdown, content untouched)
 
 Rules applied: R-PARA/R-SENTENCE throughout (lead paragraph; the e-test threshold, retrograde-

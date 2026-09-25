@@ -10,20 +10,38 @@
 | **Previous step** | {ref}`PCHI <step-023>` |
 | **Next step** | {ref}`PCHIS <step-025>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** adds a shallow BF₂ (boron) dose through the same `HVTPM`
+  resist, right after `PCHI`.
+* **Why:** boron is p-type and would normally lower |Vt|; its role
+  here is one of three candidate profile-shaping mechanisms, none
+  confirmed publicly.
+* **Public numbers:** measured high-Vt threshold increment 0.119 V
+  (L = 0.15 µm) against 0.059 V (L = 8 µm) at W = 7 µm (our
+  extraction).[^raw-data-lv-mosfets]
+* **Likely SkyWater tool:** Axcelis 8250 medium-current — strong
+  (tool); inference (assignment).[^skw-01]
+* **Not public:** why a p-type dose appears in a threshold-raising
+  module (→ Open questions).
+:::
+
 ## What this step is
 
 `PNCHI` is the second implant through the high-Vt P-channel resist of
 {ref}`HVTPM <step-022>`, following {ref}`PCHI <step-023>` without a
 strip in between. This reference describes it as a boron difluoride
-implant; no public document states the species, and the reading is an
+implant. No public document states the species, and the reading is an
 inference from the Round Rock/Micron multi-Vt patent, which follows an
 arsenic Vt adjustment with "a boron type of implant such as
 BF2",[^pat-vt-rrr] and from SkyWater's implanter species list, which
 includes "BF2".[^skw-01]
+
 Boron difluoride (BF₂⁺) is the standard way to put boron very close to
 the silicon surface, because the molecular ion breaks up on impact and
-"only 11/49 of its energy is carried by the boron atom", so a beam
-energy the tool can control well produces a shallow boron profile
+"only 11/49 of its energy is carried by the boron atom". This means a
+beam energy the tool can control well produces a shallow boron profile
 (category page).[^txt-01] The resist is stripped at
 {ref}`PCHIS <step-025>`.
 
@@ -51,7 +69,7 @@ describes for placing boron near the surface.
 ## Why this step exists
 
 All three readings below assume that the {ref}`HVTPM <step-022>`
-opening covers only the drawn `hvtp` devices; if instead it covers
+opening covers only the drawn `hvtp` devices. If instead it covers
 every low-voltage N-well outside `lvtn`, as that page's second reading
 of the `chvtpm` checks has it, reading 2 becomes the whole story and
 this is simply the baseline PMOS counter-dope.
@@ -62,7 +80,9 @@ shallow boron dose in a high-Vt PMOS:
 1. **Surface compensation in a retrograde channel.** The deeper n-type
    implant of {ref}`PCHI <step-023>` can be made heavier than the
    threshold alone requires, so that it also controls {term}`punch-through` and
-   drain-induced barrier lowering; a shallow BF₂ dose then trims the
+   drain-induced barrier lowering.
+
+   A shallow BF₂ dose then trims the
    *surface* concentration back to the value that gives the wanted |{term}`Vt`|.
    The net result is a steeper retrograde profile — high doping a few
    tens of nanometres down, lighter at the surface — which is exactly
@@ -71,34 +91,44 @@ shallow boron dose in a high-Vt PMOS:
    is our preferred reading.
 2. **{term}`Buried-channel PMOS <buried-channel PMOS>`.** The gate pages read the PMOS gate as n⁺
    polysilicon ({ref}`P1I <step-050>`), so the baseline device already
-   has a boron counter-doping ({ref}`LVTPI <step-020>`); a *high-Vt*
+   has a boron counter-doping ({ref}`LVTPI <step-020>`).
+
+   A *high-Vt*
    variant then needs less net p-type surface doping, which a heavier
    n-type {ref}`PCHI <step-023>` supplies, with this shallow BF₂ dose
-   trimming the surface profile — which folds this reading into reading
+   trimming the surface profile. This folds this reading into reading
    1.
 3. **Junction or field engineering under the gate edge.** A light boron
    dose at the channel surface changes the source/drain extension
-   junction abruptness and the gate-edge field; some high-Vt devices are
-   tuned this way (the Round Rock/Micron patent describes a "boron type
+   junction abruptness and the gate-edge field.
+
+   Some high-Vt devices are
+   tuned this way. The Round Rock/Micron patent describes a "boron type
    of implant such as BF2, or Indium" as a second Vt adjustment applied
-   in combination with an arsenic first adjustment).[^pat-vt-rrr]
+   in combination with an arsenic first adjustment.[^pat-vt-rrr]
 
 The published test-tile measurements constrain these readings only
-loosely. The high-Vt increment over `pfet_01v8` is larger at
+loosely.
+
+The high-Vt increment over `pfet_01v8` is larger at
 L = 0.15 µm than at L = 8 µm — 0.119 V against 0.059 V at W = 7 µm
-(twice) and 0.110 V against 0.064 V at W = 0.42 µm (1.7 times) — while
-the threshold rise for 1.8 V of reverse body bias is almost the same for
+(twice) and 0.110 V against 0.064 V at W = 0.42 µm (1.7 times). The
+threshold rise for 1.8 V of reverse body bias is almost the same for
 the two devices at 7/8 µm (0.352 V against 0.341 V) but not at
-7/0.15 µm (0.233 V against 0.159 V; our extraction from the published
-measurements, by maximum-transconductance extrapolation at
-V_DS = −0.1 V).[^raw-data-lv-mosfets] The PDK's e-test nominals show the
+7/0.15 µm (0.233 V against 0.159 V). This is our extraction from the
+published measurements, by maximum-transconductance extrapolation at
+V_DS = −0.1 V.[^raw-data-lv-mosfets]
+
+The PDK's e-test nominals show the
 same doubling at W = 7 µm (0.107 V against 0.057 V) and a smaller rise
 at W = 0.42 µm (0.114 V against 0.082 V).[^pdk-07] A
 nearly unchanged long-channel body effect suggests that the extra
 high-Vt doping changes the net doping of the depleted region only
-slightly, as a dose confined close to the surface would, and a larger
+slightly, as a dose confined close to the surface would. A larger
 increment at short gate length suggests that it also acts on
-short-channel behaviour. Those are readings of electrical averages: the
+short-channel behaviour.
+
+Those are readings of electrical averages: the
 data give neither the depth nor the dose of either implant, and do not
 show which of `PCHI` and `PNCHI` does what (inference). The varactor
 capacitance–voltage data set out on {ref}`HVTPM <step-022>` fit a
@@ -112,8 +142,8 @@ that the PDK models,[^pdk-07] delivered through a single extra mask.
 
 ## How it is typically performed
 
-An industry-generic shallow BF₂ channel implant for a 200 mm,
-130 nm-era fab (SKY130 values not public):
+*An industry-generic shallow BF₂ channel implant for a 200 mm,
+130 nm-era fab (SKY130 values not public):*
 
 * **Species and source.** BF₂⁺ selected by the analysing magnet from a
   boron trifluoride (BF₃) plasma[^wiki-implant] (category page). The
@@ -121,12 +151,14 @@ An industry-generic shallow BF₂ channel implant for a 200 mm,
   amorphises the surface slightly, which helps suppress {term}`channelling`, and
   it can retard boron diffusion during the anneal.[^txt-01]
 * **Energy.** Tens of keV of BF₂ energy, corresponding to a boron energy
-  of a few keV and a {term}`projected range` of tens of nanometres. Public
+  of a few keV and a {term}`projected range` of tens of nanometres.
+
+  Public
   examples: a Cypress {term}`SONOS` patent that may still be in force gives
-  a BF₂ channel-implant energy (collapsed note below this list);
-  "45-90 KeV for BF₂" in an AMD laterally doped
-  channel implant made after gate formation with the gate pillars as a
-  self-aligned mask (a different placement).[^pat-vt-amd]
+  a BF₂ channel-implant energy (collapsed note below this list). An AMD
+  laterally doped channel implant, made after gate formation with the
+  gate pillars as a self-aligned mask (a different placement), used
+  "45-90 KeV for BF₂".[^pat-vt-amd]
 * **Dose.** Light: the Cypress example's dose range is in the same
   collapsed note; "about 1.0 to 2.5×10¹³ ions/cm²" in
   the AMD laterally doped channel implant.[^pat-vt-amd] A compensating trim in a high-Vt device
@@ -156,16 +188,18 @@ about 1e12 cm⁻² to about 1e14 cm⁻²", through the pad oxide.[^pat-04]
 
 ## Machines likely used at SkyWater
 
-* **Axcelis 8250 medium-current** — its public species list is "B11,
-  BF2, As" with "1e11 to 1e14" dose and "0-60 deg tilt":[^skw-01] BF₂ is
-  explicitly available. Strength: **strong** for the tool; assignment is
-  an **inference** from capability and from the step immediately
-  preceding it ({ref}`PCHI <step-023>`) plausibly running on the same
-  tool.
-* **Axcelis GSD implanters** — both GSD entries, "High current/energy"
-  and "Hi dose", list BF₂ too;[^skw-01] which entry would serve is not
-  stated. Strength: strong for
-  existence, weak for assignment.
+* **Axcelis 8250 medium-current**
+  - *SkyWater says:* its public species list is "B11, BF2, As" with
+    "1e11 to 1e14" dose and "0-60 deg tilt".[^skw-01]
+  - *Tool exists:* strong — BF₂ is explicitly available.
+  - *Runs this step:* inference from capability and from the step
+    immediately preceding it ({ref}`PCHI <step-023>`) plausibly
+    running on the same tool.
+* **Axcelis GSD implanters**
+  - *SkyWater says:* both GSD entries, "High current/energy" and "Hi
+    dose", list BF₂ too.[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak — which entry would serve is not stated.
 
 ## Resources required
 
@@ -179,13 +213,14 @@ about 1e12 cm⁻² to about 1e14 cm⁻²", through the pad oxide.[^pat-04]
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PCHI <step-023>`; next: {ref}`PCHIS <step-025>`
-  (strip); mask: {ref}`HVTPM <step-022>`.
-* Baseline PMOS channel: {ref}`LVTPI <step-020>`.
-* The other shallow p-type implants in the flow are the P⁺ source/drain
+* Previous: {ref}`PCHI <step-023>`.
+* Next: {ref}`PCHIS <step-025>` (strip).
+* Mask: {ref}`HVTPM <step-022>`.
+* Same category: baseline PMOS channel — {ref}`LVTPI <step-020>`; the
+  other shallow p-type implants in the flow are the P⁺ source/drain
   implants (species discussed on those pages)
   {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`.
-* Activated at {ref}`RTAI <step-034>`.
+* Feeds: activated at {ref}`RTAI <step-034>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -270,16 +305,17 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The role of a p-type (BF₂) implant inside the high-Vt PMOS module
-  is not explained by any public source; the retrograde-channel
-  compensation reading above is our inference.
-* Energy, dose and the order of `PCHI`/`PNCHI` relative to each other
-  in profile depth are not public. The varactor C–V data show a higher
-  net donor concentration near the surface under the high-Vt implants
-  taken together (inference; see {ref}`HVTPM <step-022>`); they do not
-  show how `PCHI` and `PNCHI` divide it.[^raw-data-passives]
-* This reference does not expand the acronym `PNCHI`; the BF₂ species
-  on this page is this reference's inference.
+* **BF₂ role.** The role of a p-type (BF₂) implant inside the high-Vt
+  PMOS module is not explained by any public source; the
+  retrograde-channel compensation reading above is our inference.
+* **Energy, dose and implant order.** Energy, dose and the order of
+  `PCHI`/`PNCHI` relative to each other in profile depth are not
+  public. The varactor C–V data show a higher net donor concentration
+  near the surface under the high-Vt implants taken together
+  (inference; see {ref}`HVTPM <step-022>`). They do not show how
+  `PCHI` and `PNCHI` divide it.[^raw-data-passives]
+* **PNCHI acronym.** This reference does not expand the acronym
+  `PNCHI`; the BF₂ species on this page is this reference's inference.
 
 <!-- footnotes -->
 
