@@ -479,8 +479,11 @@ selectivity sentences are replaced by a pointer to the section above, which keep
 under R-PARA/R-SENTENCE.
 
 **Do.**
-1. Wrap the existing opening scope sentence, **word for word**, in `:::{note}` … `:::`. Nothing else
-   goes inside.
+1. Render the existing opening scope sentence, **word for word**, as an italic lead-in paragraph:
+   `*An industry-generic recipe for a 200 mm, 130 nm-era fab:*`. Do not wrap it in an admonition —
+   a note box renders as a 13 px callout holding one sentence that ends in a colon, cut off from
+   the list the colon introduces, and it spends the page's admonition budget (§1). Italics is
+   presentation only and keeps every word.
 2. When splitting a sentence, move its hedge to the end of the sentence it qualifies. Four end tags are
    allowed — "(inference)", "(our reading)", "(our arithmetic)", "(industry-typical)" — and only when
    the existing hedge already means exactly that. Otherwise keep the hedge's own words.
@@ -492,9 +495,7 @@ under R-PARA/R-SENTENCE.
 becomes
 
 ```
-:::{note}
-An industry-generic recipe for a 200 mm, 130 nm-era fab:
-:::
+*An industry-generic recipe for a 200 mm, 130 nm-era fab:*
 ```
 
 immediately before the numbered list, which is unchanged. (`docs/steps/013-ns19.md:77` is the same
@@ -504,6 +505,8 @@ sentence with "nitride strip" in place of "recipe"; 166 of the 171 step pages co
 
 **Find.** `grep -rn "industry-generic\|industry-typical" docs/steps/*.md`;
 `grep -rn "we infer\|our reading\|our arithmetic\|our extraction\|not public" docs/steps/*.md`.
+Verify every hit got the treatment: `grep -n 'industry-generic\|industry-typical'` on the page;
+every scope sentence under `## How it is typically performed` has the italic lead-in (§7 step 8).
 
 **Kind.** step 1 scripted (the paragraph between the H2 and the first list item), steps 2–4 hand.
 
@@ -1520,7 +1523,7 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 ## Why this step exists                1–2 lead sentences; 3–5 labelled bullets ≤ 60 words;
                                        studies as sub-bullets "Author (year) — finding.[^x]";
                                        keep the closing "Without `X` …" paragraph
-## How it is typically performed       :::{note} the existing scope sentence, word for word :::
+## How it is typically performed       *italic lead-in*: the existing scope sentence, word for word
                                        numbered list for a sequence; parameter table or labelled
                                        bullets for a parameter set; SkyWater-specific statements last
 ## Machines typically used             bullets ≤ 40 words: class link, then example models
@@ -1554,7 +1557,7 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 | Table | any ≥ 3 × 2 parallel data: recipes, stacks, rules, measured against nominal, derivation inputs. **Not** the reference tiers |
 | Numbered list | sequences and arithmetic steps |
 | Bullets | reasons, failure modes, tools, resources, unknowns |
-| Admonition | "At a glance" and the "How" scope note; at most 2 per page |
+| Admonition | "At a glance"; at most 2 per page. The "How" scope sentence is an italic lead-in, not an admonition (R-HEDGE step 1) |
 | Dropdown | **only** in-force-patent notes |
 | Figure | module cross-section, tilt/shadow geometry, flow strip (W1a) |
 
