@@ -13,8 +13,9 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** implants the p-type dose that sets the 1.8 V NMOS
-  threshold, through the LVOM window.
+* **Does:** implants, on this reference's reading (inference), the
+  p-type dose that sets the 1.8 V NMOS threshold, through the LVOM
+  window.
 * **Why:** the well and retrograde profile only set a background; a
   dedicated surface implant is what puts the threshold where the PDK's
   models say it is.

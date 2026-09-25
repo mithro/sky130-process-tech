@@ -13,8 +13,9 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** implants a p-type doping peak below the surface of the
-  SONOS memory channel, before the surface implant.
+* **Does:** implants, on this reference's reading (inference), a
+  p-type peak below the surface of the SONOS memory channel, before
+  the surface implant.
 * **Why:** stops the drain's depletion region from reaching the
   source in a short, high-voltage memory transistor.
 * **Public numbers:** none published for SKY130.

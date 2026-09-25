@@ -13,10 +13,10 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** etches the anti-reflective coating out of the tunnel
-  windows, stopping on the oxide beneath.
+* **Does:** on this reference's reading, etches the ARC out of the
+  tunnel windows, stopping on the oxide beneath.
 * **Why:** the coating would otherwise absorb part of the following
-  implants' dose and block the later oxide etch.
+  implants' dose (inference) and block the later oxide etch.
 * **Public numbers:** none published for SKY130.
 * **Likely SkyWater tool:** Applied Materials DPS II — strong (tool);
   inference (assignment).[^skw-01]

@@ -13,8 +13,8 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** opens resist windows over the 1.8 V transistors so the
-  thick oxide can be implanted and stripped there.
+* **Does:** opens resist windows over what we read as the 1.8 V
+  transistors so the thick oxide can be implanted and stripped there.
 * **Why:** a single gate oxide cannot serve both the 1.8 V core and
   the 5 V/high-voltage devices, so the wafer needs two thicknesses.
 * **Public numbers:** minimum `hvi` width 0.600 µm, spacing
