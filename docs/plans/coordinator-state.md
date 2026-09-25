@@ -43,11 +43,13 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-steps-014-034` | W2 batch 2 (wells module) | Sonnet | writing |
+| `topic/rd-steps-014-034` | W2 batch 2 (wells module): review done, fix round running | Sonnet | fixing |
+| `topic/rd-indexes` | W3 batch 1 (machines, materials, masks indexes): Opus review running (`tmp/reviews/rd-indexes.md`) | Opus | in review |
+| `topic/rd-figures-s6` | W1c series S6 tips/halos/spacers/S-D (064–088) | Opus | running since 2026-09-25 |
+| `topic/rd-machines-a` | W3 batch 2: machine class pages 1–15 (alphabetical) | Sonnet | running since 2026-09-25 |
 
 Queue, in order (stopped 2026-09-25 to respect the four-agent rule; each has a worktree and progress file):
 
-4. `topic/rd-indexes` — W3 batch 1: the three index pages (Sonnet).
 6. Reviews as branches finish: rd-site (verify fixes), rd-figures-s3s4 (verify), rd-steps-014-034, rd-indexes, rd-links2, rd-preserved2, rd-inforce-sonos, rd-figures-s5.
 7. Next batches after those: W2 035–047 (after the S3/S4 figures merge), 048–063 (after S5), figure series S6–S11, W3 class-page batches (machines, materials, masks, categories), the final term-link pass on main.
 8. `topic/cypress-history`: merged 2026-09-25 (two review rounds by its own session; landing-page card added by the coordinator). Its two tool follow-ups: chain-layout arrow floating below a branch box and dashed hedged arrows in `gen_figures.py`; smart dashes turning `--` into an en dash in autolink text.
