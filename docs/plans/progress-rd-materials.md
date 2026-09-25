@@ -325,3 +325,26 @@ wrap cleanly; the pre-existing "P_b0"/"P_b1" underscore notation (not
 proper subscript) renders as literal text — this is the page's own
 existing wording (verified against `main`), not something this pass
 touched or should fix.
+
+### `cmp-consumables.md`
+
+Rules applied: R-MODELS (8-row 3-column table, splitting the "Oxide
+slurries" and "Post-CMP clean chemistry" bullets' two distinct claims
+into their own rows), R-CAPTION (existing Filing/suppliers table
+wrapped), R-PARA (8 over-100-word paragraphs split at seams, one into a
+5-item bulleted R-LIST -- slurry/pad/conditioner/carrier-parts/post-CMP
+clean, the sentence that opens "What the class is and what it does"),
+R-PARA (4 over-60-word list items split into lead + continuation),
+R-RELATED (Related pages grouped under bold labels).
+
+`check_preserved.py --allow-regrouped`: 0 undeclared differences, no
+`--allow-added` or `REGROUPED` needed -- every split fell on an existing
+semicolon with markers already per-clause.
+
+Over-cap counts, before -> after: paragraphs > 100 words 7 -> 1 (R-INTRO
+lead); list items > 60 words 2 -> 0; tables with no caption 1 -> 0.
+
+`check_materials.py`, `check_refs.py`, `check_inforce.py`,
+`gen_step_tables.py --check`, `gen_index_links.py --check`: all pass.
+Incremental `-W` build: clean. Screenshots at 400 px: table and lists
+wrap cleanly.

@@ -32,15 +32,21 @@ SKY130 steps name these consumables. The polishing physics is on the
 
 ## What the class is and what it does
 
-A CMP process is set as much by its consumables as by its tool. The
-slurry supplies the chemistry that softens the surface and the abrasive
-that removes it; the pad carries slurry and transmits pressure; the
-conditioner restores the pad; the carrier parts set how uniformly the
-wafer is loaded; and the post-CMP clean decides what is left behind.
+A CMP process is set as much by its consumables as by its tool:
+
+* **Slurry** — supplies the chemistry that softens the surface and the
+  abrasive that removes it.
+* **Pad** — carries slurry and transmits pressure.
+* **Conditioner** — restores the pad.
+* **Carrier parts** — set how uniformly the wafer is loaded.
+* **Post-CMP clean** — decides what is left behind.
+
 Wikipedia summarises the arrangement: "an abrasive and corrosive chemical
 slurry (commonly a colloid) in conjunction with a polishing pad and
 retaining ring", with the wafer "held in place by a plastic retaining
-ring".[^wiki-cmp] Removal roughly follows Preston's law, rate
+ring".[^wiki-cmp]
+
+Removal roughly follows Preston's law, rate
 proportional to pressure and velocity ({term}`Preston equation`), with a
 coefficient that absorbs pad, slurry and film; Luo and Dornfeld model it
 as the number of active abrasive particles times the volume each
@@ -55,7 +61,9 @@ fumed or colloidal silica in an alkaline, KOH- or ammonia-stabilised
 liquid ({ref}`category-cmp`), or ceria, whose mechanism of polishing
 silica Hoshino et al. examined.[^hoshino-2001]
 Krishnan, Nalaskowski and Cook review the slurry chemistries and
-mechanisms.[^rev-02] For the STI polish, the slurry must stop on nitride:
+mechanisms.[^rev-02]
+
+For the STI polish, the slurry must stop on nitride:
 America and Babu showed that nitride removal "occurs through tribological
 wear-induced conversion of the nitride to an oxide" and can be
 suppressed by additives, proline in particular, with ceria
@@ -75,6 +83,7 @@ Hetherington and Cecchi, polishing in potassium iodate slurries with
 alumina, found the rate "fit a multiterm regression model better than
 the empirical Preston equation" and that "the chemical and physical
 interactions between the alumina and tungsten surfaces are complex".[^stein-1999]
+
 The step pages list alumina or silica abrasive with hydrogen peroxide,
 ferric nitrate or iodate oxidiser as the industry-typical
 choice.[^rev-02][^pat-cmp-cabot]
@@ -87,13 +96,17 @@ trademark names rather than their chemical or other
 properties".[^wiki-cmp] A Rodel patent describes a pad of "a polymeric matrix impregnated with a plurality of
 polymeric microelements, each polymeric microelement having a void space
 therein", whose work surface "may be continuously regenerated" as it is
-abraded.[^pat-pad-rodel] The pad surface glazes, and conditioning cuts it
+abraded.[^pat-pad-rodel]
+
+The pad surface glazes, and conditioning cuts it
 back: Castillo-Mejia, Kelchner and Beaudoin modelled the asperity layer
 and showed that pad morphology improves removal-rate and uniformity
 prediction,[^castillo-mejia-2004] and Kakireddy et al. found that
 conditioners with uneven diamonds "exhibited high drop in pad cut rate
 and wafer removal rate", with diamonds "missing or sheared off" on some
-tested conditioners.[^kakireddy-2010] Pads for in-situ optical endpoint
+tested conditioners.[^kakireddy-2010]
+
+Pads for in-situ optical endpoint
 carry a transparent window.[^pat-cmp-window] In the carrier head, an
 Applied Materials patent explains why a non-uniform load gives
 non-uniform removal and describes a flexible membrane with a retaining
@@ -106,11 +119,13 @@ Slurry must not dry on the wafer. OnTrak's scrubber patent aims "to
 provide a semiconductor processing device that prevents semiconductor
 wafers from drying between processing steps" and states that the brushes of such scrubbers "are constantly flushed
 with deionized water to inhibit particle buildup".[^pat-scrubber-ontrak]
+
 Zhang, Raghavan and Weling call CMP "inherently a dirty process" and
 classify its defects as "particulate, metallic, organic, and
 others";[^zhang-raghavan-1999] Xu et al. showed that brush scrubbing
 removes particles by rolling them;[^xu-2004] and Philipossian and Sun
 compared the friction of PVA brush-roller designs.[^philipossian-2009]
+
 For tungsten, Jolley studied TMAH as a post-tungsten-CMP clean,[^jolley-1998]
 and Ge et al. traced metal-1 bridges to organic particles from a
 post-tungsten-contact brush station.[^ge-2006]
@@ -123,29 +138,20 @@ as it does bulk chemicals. The supplier statements below describe their
 catalogues, not SkyWater's purchases, even where the supplier's parent is
 named in SkyWater's filings.
 
-* **Oxide slurries.** Fumed or colloidal silica in KOH or ammonia at pH
-  10–11 (typical industry values);[^steigerwald-1997][^zantye-2004]
-  the category page names the Cabot Semi-Sperse SS-12 and Klebosol
-  classes ({ref}`category-cmp`). Ceria slurries with additives for STI
-  selectivity.[^america-2004][^kim-2002-ceria]
-* **Tungsten slurries.** Alumina or silica with a peroxide, ferric or
-  iodate oxidiser at pH 2–4 (typical industry
-  values).[^pat-cmp-cabot][^stein-1999][^steigerwald-1997]
-* **Pads.** Stacked polyurethane pads of the IC1000-over-Suba IV class for
-  primary polish and soft Politex-type pads for buffing
-  ({ref}`category-cmp`). Qnity (the electronics business DuPont planned to
-  separate as an independent company[^qnity-story]) lists "IC1000™" among its pads for tungsten, STI
-  and oxide polishing and "Politex™" for buff polishing.[^qnity-cmp-pads]
-* **Conditioners, brushes and filters.** Entegris states that, with CMC
-  Materials, its CMP offering includes "CMP slurries and pads",
-  "post-CMP cleaning chemistries and brushes, CMP pad conditioners" and
-  liquid filtration.[^entegris-cmc-2022]
-* **Post-CMP clean chemistry.** Dilute NH₄OH after oxide polishes; dilute
-  HF, citric acid or TMAH after tungsten;[^jolley-1998] integrated
-  cleaners used HF in brush modules and heated RCA chemistries in
-  megasonic modules.[^amat-mesa-1999] Entegris lists "post chemical
-  mechanical planarization (post-CMP) cleaning solutions" that "offer
-  excellent corrosion control".[^entegris-post-cmp]
+:::{table} Representative CMP consumables, as public and current supplier documents describe them
+:widths: 22 22 56
+
+| Material | As supplied | Specification |
+|---|---|---|
+| Oxide slurries | — | Fumed or colloidal silica in KOH or ammonia at pH 10–11 (typical industry values);[^steigerwald-1997][^zantye-2004] the category page names the Cabot Semi-Sperse SS-12 and Klebosol classes ({ref}`category-cmp`) |
+| Oxide slurries (STI) | — | Ceria slurries with additives for STI selectivity[^america-2004][^kim-2002-ceria] |
+| Tungsten slurries | — | Alumina or silica with a peroxide, ferric or iodate oxidiser at pH 2–4 (typical industry values)[^pat-cmp-cabot][^stein-1999][^steigerwald-1997] |
+| Pads | — | Stacked polyurethane pads of the IC1000-over-Suba IV class for primary polish and soft Politex-type pads for buffing ({ref}`category-cmp`) |
+| Pads | Qnity (the electronics business DuPont planned to separate as an independent company[^qnity-story]) | lists "IC1000™" among its pads for tungsten, STI and oxide polishing and "Politex™" for buff polishing[^qnity-cmp-pads] |
+| Conditioners, brushes and filters | Entegris (with CMC Materials) | offering includes "CMP slurries and pads", "post-CMP cleaning chemistries and brushes, CMP pad conditioners" and liquid filtration[^entegris-cmc-2022] |
+| Post-CMP clean chemistry | — | Dilute NH₄OH after oxide polishes; dilute HF, citric acid or TMAH after tungsten;[^jolley-1998] integrated cleaners used HF in brush modules and heated RCA chemistries in megasonic modules[^amat-mesa-1999] |
+| Post-CMP clean chemistry | Entegris | lists "post chemical mechanical planarization (post-CMP) cleaning solutions" that "offer excellent corrosion control"[^entegris-post-cmp] |
+:::
 
 ## At SkyWater
 
@@ -169,10 +175,14 @@ post-CMP clean of the Mirra entry. The page names no slurry, pad,
 conditioner or brush.[^skw-01] The filings list chemical
 suppliers:[^sec-01][^sec-02]
 
+:::{table} Chemical suppliers as SkyWater's filings name them
+:widths: 30 70
+
 | Filing | Chemical suppliers as named |
 |--------|-----------------------------|
 | S-1 (2021)[^sec-01] | "KMG Chemicals, Inc. (chemicals)"; "Air Products & Chemicals, Inc. (bulk and specialty gases, chemicals)" |
 | 10-K for fiscal 2023[^sec-02] | "CMC Chemicals, Inc. (a subsidiary of Entegris) (process and chemical mechanical polishing chemicals)"; "EMD Performance Materials Corp (Versum) (specialty chemicals and gases)" |
+:::
 
 The 10-K entry is the only statement in the sources cited here that names
 a supplier of CMP materials, and it names "chemical mechanical polishing chemicals",
@@ -192,7 +202,9 @@ The Mirra entry and its polishes are SkyWater statements and rank as
 **strong** evidence that oxide, nitride and tungsten polishing, and an
 ammonia and an IPA clean, exist at the fab, on the scale of the
 {ref}`machines index <machines-reading-evidence>`; that they imply silica,
-ceria or tungsten slurries is a reading.[^skw-01] The 10-K supplier entry
+ceria or tungsten slurries is a reading.[^skw-01]
+
+The 10-K supplier entry
 is strong as a statement that CMP chemicals are bought from CMC Chemicals,
 but it names no product and appears only in the fiscal 2023
 report.[^sec-02] Pads, conditioners, carrier parts, brushes and the
@@ -258,7 +270,9 @@ practice or supplier and literature statements.
   Bennett and Fury monitored large particles in a production fab's
   distribution loop and at the tool and found defects correlated with
   "the total particle count in the smallest (1.0-1.2μm) particle
-  bin".[^bennett-2014] Scratches from agglomerates and large particles are
+  bin".[^bennett-2014]
+
+  Scratches from agglomerates and large particles are
   reviewed by Kwon, Ramachandran and Park, who cover filtration and water
   jet spraying against them.[^kwon-2013]
 * **Consumption.** The category page gives slurry use of a few hundred
@@ -273,7 +287,9 @@ practice or supplier and literature statements.
 * **Water and waste.** The step pages cite Quirk and Serda for CMP as
   one of a fab's largest water and waste-water users, and the tungsten
   pages for a separate treatment line for metal-laden acidic
-  waste;[^txt-07] Lai and Lin treated CMP waste water from semiconductor fabrication by
+  waste.[^txt-07]
+
+  Lai and Lin treated CMP waste water from semiconductor fabrication by
   electrocoagulation.[^lai-2003] Ultrapure water and waste treatment are
   described on the {ref}`ultrapure water <material-ultrapure-water>` and
   {ref}`hardware consumables and abatement <material-hardware-consumables>`
@@ -319,15 +335,15 @@ not public.
 
 ## Related pages
 
-* {ref}`category-cmp` — polishing physics, the SKY130 polishes and their
-  failure modes.
-* {ref}`machine-cmp-polisher` — the polisher that consumes slurry, pads
-  and carrier parts.
-* {ref}`machine-post-cmp-cleaner` — brushes and post-CMP clean chemistry.
-* {ref}`material-wet-chemicals` — hydrogen peroxide, HF and ammonia as
-  bulk chemicals.
-* {ref}`material-ultrapure-water` — the water of the polish and clean.
-* {ref}`materials-index` — all consumable classes.
+* **Category.** {ref}`category-cmp` — polishing physics, the SKY130
+  polishes and their failure modes.
+* **Machines.** {ref}`machine-cmp-polisher` — the polisher that consumes
+  slurry, pads and carrier parts. {ref}`machine-post-cmp-cleaner` —
+  brushes and post-CMP clean chemistry.
+* **Materials.** {ref}`material-wet-chemicals` — hydrogen peroxide, HF
+  and ammonia as bulk chemicals. {ref}`material-ultrapure-water` — the
+  water of the polish and clean.
+* **Indexes.** {ref}`materials-index` — all consumable classes.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
