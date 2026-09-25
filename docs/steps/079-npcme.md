@@ -26,6 +26,14 @@ wafer cleaned afterwards; this reference treats the strip and clean
 as part of this step. The next step is an oxide deposition
 ({ref}`SPOX <step-080>`).
 
+:::{figure} /_static/figures/sd-079-npcme.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step resist covers the slice except a window over a wide capped stack on the oxide-filled trench. After it the resist is gone, the two cap films over that stack are gone so that its poly is bare, and the nitride blocks against its sidewalls are cut down to the height of the poly.
+:width: 560px
+:name: fig-sd-079-npcme
+
+Before, the NPCM resist with its window over the resistor's contact head (an illustrative choice; see NPCM); after, the cap stack cut through inside the window, down to the poly, and the resist stripped, as this reference counts the strip in this step. Whatever is left of the oxide cap and the nitride cap, about 0.2 µm as the page reads the PDK's "poly cap after SPE" entry,[^pdk-03] is removed, and the etch is drawn stopping on the poly; the few nanometres of poly the page expects it to take are not drawn. The spacers inside the window are drawn cut down to the top of the poly; how much of them the etch may take is not public. The field oxide beside the stack is drawn untouched. The colours of the gate film mark the type of its doping, not a depth profile. The caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The structures being opened are of two kinds. The first are the
 contact heads of poly interconnect and gate leads, kept at least
 0.090 µm from any gate by npc.4.[^pdk-periph] The second are the ends

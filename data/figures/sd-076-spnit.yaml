@@ -1,0 +1,38 @@
+id: sd-076-spnit
+kind: xsection
+page: docs/steps/076-spnit.md
+series: series-tips-sd.yaml
+close_up: [197, 268]
+crop_depth: 50
+alt: >-
+  Two enlarged cross-sections of one transistor edge, one above the other. Before the step a
+  capped gate stands on a thin oxide, with doped layers in the silicon beside it. After it a
+  new film of even thickness covers everything: the oxide beside the gate, the gate's sidewalls
+  and its top.
+caption: >-
+  A close-up of the 1.8 V NMOS gate edge, as for the tip module. Before, the gate after the tip
+  anneal; after, the spacer nitride, drawn as a film of the same thickness on the top, the
+  sidewalls and the flat oxide beside the gate, the near-perfect conformality the page asks of
+  it. Where the gate's sidewall steps in at the top of the gate film (the re-oxidation oxide
+  covers only the poly sidewall), the film steps with it. That the film is silicon nitride
+  follows the PDK's "SPNIT" dielectric of relative permittivity 7.5;[^pdk-04] its thickness, the
+  deposition route and its temperature are not public, and the page infers that no pre-spacer
+  liner is deposited, the IOX45 oxide playing that part. The tip's colour and the halo's
+  hatching mark where the implants are, not their profiles. The caps, the re-oxidation oxide
+  and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well
+  and the NCHI channel implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "SPNIT, step 076"
+  note: "A blanket silicon nitride is deposited, as even on the vertical sidewalls as on the flat."
+panels:
+  - state_after: "075"
+    title: "Before: the gate edge after the tip anneal (step 075)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox]
+    dim_layers: [liner]
+  - state_after: "076"
+    title: "After: a conformal nitride over the gate and the oxide"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, halo]
+    dim_layers: [liner]
+    highlight: {where: [[197, 268]]}

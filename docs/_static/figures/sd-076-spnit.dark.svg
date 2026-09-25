@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 682" width="480" height="682" role="img" data-kind="xsection" data-theme="dark">
+<title>Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands on a thin oxide, with doped layers in the silicon beside it. After it a new film of even thickness covers everything: the oxide beside the gate, the gate&#x27;s sidewalls and its top.</title>
+<desc>Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands on a thin oxide, with doped layers in the silicon beside it. After it a new film of even thickness covers everything: the oxide beside the gate, the gate&#x27;s sidewalls and its top.</desc>
+<style>
+:root{--bg:#131416;--ink:#e4e6e9;--ink-muted:#a9b1ba;--rule:#3a3f46;--halo:#131416;--accent:#6ab0ff;--inferred:#e0a84a;--m-si-sub:#454b54;--m-well-n:#2b6196;--m-well-p:#8f4468;--m-well-dn:#1f4d7a;--m-sd-n:#5aa5ee;--m-tip-n:#3b78b8;--m-sd-p:#e57db4;--m-implant:#e4e6e9;--m-oxide-thermal:#ecd05a;--m-oxide-dep:#9a8c52;--m-psg:#bdb391;--m-nitride:#2f8f6f;--m-ono:#aab9ea;--m-poly:#d2571f;--m-resist:#7d63bd;--m-arc:#8f6a55;--m-silicide:#46c4ba;--m-barrier:#d8cdf7;--m-tungsten:#98a3af;--m-aluminium:#6c7b8a;--m-mim-diel:#d4ae5c;--m-polyimide:#7a5f40;--ph-feol:#2f5f8d;--pht-feol:#1b2a38;--ph-mol:#8a6a1f;--pht-mol:#2e2717;--ph-beol:#2c7d65;--pht-beol:#182b25;}
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;fill:var(--ink)}
+.t-panel-title{font-size:14px;font-weight:700}
+.t-label-title{font-size:14px;font-weight:600}
+.t-label-note{font-size:13px;font-weight:400}
+.t-mono{font-size:12.5px;font-weight:400}
+.t-mono{font-family:'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace}
+.muted{fill:var(--ink-muted)}.tag{fill:var(--inferred);font-style:italic}.acc{fill:var(--accent)}
+.ground{fill:var(--bg)}.mat{stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}
+.pat{stroke:var(--ink);stroke-width:0.7;opacity:0.38;fill:none}.patdot{fill:var(--ink);opacity:0.38}
+.leader{stroke:var(--ink-muted);stroke-width:0.9;fill:none}.halo{stroke:var(--halo);stroke-width:2.6;fill:none;opacity:0.85}.dot{fill:var(--ink)}.mat.faded{fill:none;stroke:var(--ink-muted);stroke-dasharray:3 2}
+.patink{stroke:var(--ink);stroke-width:0.8;opacity:0.8;fill:none}
+.dim{stroke:var(--ink);stroke-width:0.9;fill:none}.dimhead{fill:var(--ink)}.witness{stroke:var(--ink-muted);stroke-width:0.75;stroke-dasharray:3 2.5;fill:none}
+.rule{stroke:var(--rule);stroke-width:0.75;fill:none}.hl{stroke:var(--accent);stroke-width:2.4;fill:none;stroke-linejoin:round;stroke-linecap:round}.parrow{stroke:var(--accent);stroke-width:2.0;fill:none}.pahead{fill:var(--accent)}
+.ion{stroke:var(--accent);stroke-width:1.8;fill:none}.ionhead{fill:var(--accent)}
+.cbox{fill:var(--bg);stroke:var(--ink);stroke-width:1.0;stroke-linejoin:round}.carrow{stroke:var(--ink-muted);stroke-width:1.6;fill:none}.cahead{fill:var(--ink-muted)}
+.m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
+</style>
+<defs><pattern id="p-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line class="pat" x1="0" y1="0" x2="0" y2="6"/></pattern><pattern id="p-vlines-ink" width="3" height="6" patternUnits="userSpaceOnUse"><line class="patink" x1="1.5" y1="0" x2="1.5" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
+<rect class="ground" x="0" y="0" width="480" height="682"/>
+<text x="12.0" y="26.0" class="t-panel-title">Before: the gate edge after the tip anneal (step 075)</text>
+<clipPath id="clip1"><rect x="12" y="38.0" width="268" height="228.6"/></clipPath>
+<g class="drawing" data-rect="12,38.0,268,228.6" clip-path="url(#clip1)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,204.31 283.00,204.31 283.00,368.31 9.00,368.31"/>
+<polygon class="mat m-oxide-thermal" data-layer="thinox" points="9.00,185.44 283.00,185.44 283.00,204.31 9.00,204.31"/>
+<polygon class="mat m-poly" data-layer="poly" points="158.25,109.94 250.75,109.94 250.75,185.44 158.25,185.44"/>
+<polygon class="mat m-nitride" data-layer="nit" points="158.25,72.20 250.75,72.20 250.75,109.94 158.25,109.94"/>
+<polygon fill="url(#p-hatch)" points="158.25,72.20 250.75,72.20 250.75,109.94 158.25,109.94"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="158.25,42.00 250.75,42.00 250.75,72.20 158.25,72.20"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,166.56 138.00,166.56 138.50,165.08 140.00,120.08 140.50,109.94 158.25,109.94 158.25,185.44 9.00,185.44"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.75,109.94 268.50,109.94 269.00,119.66 270.50,164.66 271.00,166.56 283.00,166.56 283.00,185.44 250.75,185.44"/>
+<polygon class="mat m-sd-n" data-layer="polyn" points="158.25,109.94 250.75,109.94 250.75,185.44 158.25,185.44"/>
+<polygon class="mat m-implant" data-layer="halo" points="9.00,204.31 178.25,204.31 178.25,242.06 9.00,242.06"/>
+<polygon fill="url(#p-vlines-ink)" points="9.00,204.31 178.25,204.31 178.25,242.06 9.00,242.06"/>
+<polygon class="mat m-implant" data-layer="halo" points="230.75,204.31 283.00,204.31 283.00,242.06 230.75,242.06"/>
+<polygon fill="url(#p-vlines-ink)" points="230.75,204.31 283.00,204.31 283.00,242.06 230.75,242.06"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,204.31 159.25,204.31 159.25,226.96 9.00,226.96"/>
+<polygon fill="url(#p-xhatch)" points="9.00,204.31 159.25,204.31 159.25,226.96 9.00,226.96"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="249.75,204.31 283.00,204.31 283.00,226.96 249.75,226.96"/>
+<polygon fill="url(#p-xhatch)" points="249.75,204.31 283.00,204.31 283.00,226.96 249.75,226.96"/>
+</g>
+<text x="328.0" y="288.8" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="leader" data-owner="sub" d="M276.0 246.3H285.0V283.9H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="246.3" r="1.9"/>
+<text x="328.0" y="120.8" class="t-label-title" data-owner="polyn">n-type gate film</text>
+<text x="328.0" y="136.8" class="t-label-note muted" data-owner="polyn">gate implant,</text>
+<text x="328.0" y="152.8" class="t-label-note muted" data-owner="polyn">step 050</text>
+<path class="halo" d="M251.0 116.9L268.5 116.9"/>
+<path class="leader" data-owner="polyn" d="M246.5 116.9H303.0V115.9H324.0"/>
+<circle class="dot" data-owner="polyn" cx="246.5" cy="116.9" r="1.9"/>
+<text x="328.0" y="176.8" class="t-label-title" data-owner="tipn">n-type tip</text>
+<text x="328.0" y="192.8" class="t-label-note muted" data-owner="tipn">ASTI, step 065</text>
+<path class="leader" data-owner="tipn" d="M276.0 208.5H291.0V171.9H324.0"/>
+<circle class="dot" data-owner="tipn" cx="276.0" cy="208.5" r="1.9"/>
+<text x="328.0" y="216.8" class="t-label-title" data-owner="halo">Halo</text>
+<text x="328.0" y="232.8" class="t-label-note muted" data-owner="halo">BHI, step 066;</text>
+<text x="328.0" y="248.8" class="t-label-note muted" data-owner="halo">a p-type pocket</text>
+<text x="328.0" y="264.8" class="t-label-note tag" data-owner="halo">typical practice</text>
+<path class="halo" d="M267.5 213.5L280.0 213.5"/>
+<path class="leader" data-owner="halo" d="M267.0 213.5H297.0V211.9H324.0"/>
+<circle class="dot" data-owner="halo" cx="267.0" cy="213.5" r="1.9"/>
+<path class="parrow" d="M34 312.9V350.9"/>
+<path class="pahead" d="M34 358.9l-5.5 -9h11.0z"/>
+<text x="50.0" y="323.9" class="t-label-title acc">SPNIT, step 076</text>
+<text x="50.0" y="338.9" class="t-label-note muted">A blanket silicon nitride is deposited, as</text>
+<text x="50.0" y="353.9" class="t-label-note muted">even on the vertical sidewalls as on the flat.</text>
+<text x="12.0" y="386.9" class="t-panel-title">After: a conformal nitride over the gate and the oxide</text>
+<clipPath id="clip2"><rect x="12" y="398.9" width="268" height="246.5"/></clipPath>
+<g class="drawing" data-rect="12,398.9,268,246.5" clip-path="url(#clip2)">
+<polygon class="mat m-si-sub" data-layer="sub" points="9.00,595.41 283.00,595.41 283.00,759.41 9.00,759.41"/>
+<polygon class="mat m-oxide-thermal" data-layer="thinox" points="9.00,576.54 283.00,576.54 283.00,595.41 9.00,595.41"/>
+<polygon class="mat m-poly" data-layer="poly" points="158.25,501.04 250.75,501.04 250.75,576.54 158.25,576.54"/>
+<polygon class="mat m-nitride" data-layer="nit" points="158.25,463.30 250.75,463.30 250.75,501.04 158.25,501.04"/>
+<polygon fill="url(#p-hatch)" points="158.25,463.30 250.75,463.30 250.75,501.04 158.25,501.04"/>
+<polygon class="mat m-oxide-dep" data-layer="capox" points="158.25,433.10 250.75,433.10 250.75,463.30 158.25,463.30"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="9.00,557.66 138.00,557.66 138.50,556.18 140.00,511.18 140.50,501.04 158.25,501.04 158.25,576.54 9.00,576.54"/>
+<polygon class="mat m-oxide-thermal" data-layer="iox" points="250.75,501.04 268.50,501.04 269.00,510.76 270.50,555.76 271.00,557.66 283.00,557.66 283.00,576.54 250.75,576.54"/>
+<polygon class="mat m-nitride" data-layer="spnit" points="9.00,527.46 108.00,527.46 108.50,520.07 110.00,475.07 110.50,470.84 127.00,470.84 127.50,457.41 129.00,403.41 129.50,402.90 283.00,402.90 283.00,557.66 271.00,557.66 270.50,555.76 269.00,510.76 268.50,501.04 251.00,501.04 250.50,433.10 158.50,433.10 158.00,501.04 140.50,501.04 140.00,511.18 138.50,556.18 138.00,557.66 9.00,557.66"/>
+<polygon fill="url(#p-hatch)" points="9.00,527.46 108.00,527.46 108.50,520.07 110.00,475.07 110.50,470.84 127.00,470.84 127.50,457.41 129.00,403.41 129.50,402.90 283.00,402.90 283.00,557.66 271.00,557.66 270.50,555.76 269.00,510.76 268.50,501.04 251.00,501.04 250.50,433.10 158.50,433.10 158.00,501.04 140.50,501.04 140.00,511.18 138.50,556.18 138.00,557.66 9.00,557.66"/>
+<polygon class="mat m-sd-n" data-layer="polyn" points="158.25,501.04 250.75,501.04 250.75,576.54 158.25,576.54"/>
+<polygon class="mat m-implant" data-layer="halo" points="9.00,595.41 178.25,595.41 178.25,633.15 9.00,633.15"/>
+<polygon fill="url(#p-vlines-ink)" points="9.00,595.41 178.25,595.41 178.25,633.15 9.00,633.15"/>
+<polygon class="mat m-implant" data-layer="halo" points="230.75,595.41 283.00,595.41 283.00,633.15 230.75,633.15"/>
+<polygon fill="url(#p-vlines-ink)" points="230.75,595.41 283.00,595.41 283.00,633.15 230.75,633.15"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="9.00,595.41 159.25,595.41 159.25,618.06 9.00,618.06"/>
+<polygon fill="url(#p-xhatch)" points="9.00,595.41 159.25,595.41 159.25,618.06 9.00,618.06"/>
+<polygon class="mat m-tip-n" data-layer="tipn" points="249.75,595.41 283.00,595.41 283.00,618.06 249.75,618.06"/>
+<polygon fill="url(#p-xhatch)" points="249.75,595.41 283.00,595.41 283.00,618.06 249.75,618.06"/>
+<polyline class="hl" points="12.00,524.46 108.00,524.46 108.50,517.07 110.00,472.07 110.50,467.84 127.00,467.84 127.50,454.41 129.00,400.41 129.50,399.90 280.00,399.90"/>
+</g>
+<text x="328.0" y="628.4" class="t-label-title" data-owner="sub">Silicon wafer</text>
+<path class="halo" d="M276.5 623.5L280.0 623.5"/>
+<path class="leader" data-owner="sub" d="M276.0 623.5H285.0H324.0"/>
+<circle class="dot" data-owner="sub" cx="276.0" cy="623.5" r="1.9"/>
+<text x="328.0" y="518.9" class="t-label-title" data-owner="polyn">n-type gate film</text>
+<path class="halo" d="M251.0 514.0L280.0 514.0"/>
+<path class="leader" data-owner="polyn" d="M246.5 514.0H297.0H324.0"/>
+<circle class="dot" data-owner="polyn" cx="246.5" cy="514.0" r="1.9"/>
+<text x="328.0" y="604.4" class="t-label-title" data-owner="tipn">n-type tip</text>
+<path class="leader" data-owner="tipn" d="M276.0 599.6H291.0H324.0"/>
+<circle class="dot" data-owner="tipn" cx="276.0" cy="599.6" r="1.9"/>
+<text x="328.0" y="418.1" class="t-label-title" data-owner="spnit">Spacer nitride</text>
+<text x="328.0" y="434.1" class="t-label-note muted" data-owner="spnit">SPNIT, step 076</text>
+<path class="leader" data-owner="spnit" d="M276.0 413.2H303.0H324.0"/>
+<circle class="dot" data-owner="spnit" cx="276.0" cy="413.2" r="1.9"/>
+<text x="12.0" y="669.4" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+</svg>

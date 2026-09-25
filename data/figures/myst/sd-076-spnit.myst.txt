@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/sd-076-spnit.svg
+:alt: Two enlarged cross-sections of one transistor edge, one above the other. Before the step a capped gate stands on a thin oxide, with doped layers in the silicon beside it. After it a new film of even thickness covers everything: the oxide beside the gate, the gate's sidewalls and its top.
+:width: 560px
+:name: fig-sd-076-spnit
+
+A close-up of the 1.8 V NMOS gate edge, as for the tip module. Before, the gate after the tip anneal; after, the spacer nitride, drawn as a film of the same thickness on the top, the sidewalls and the flat oxide beside the gate, the near-perfect conformality the page asks of it. Where the gate's sidewall steps in at the top of the gate film (the re-oxidation oxide covers only the poly sidewall), the film steps with it. That the film is silicon nitride follows the PDK's "SPNIT" dielectric of relative permittivity 7.5;[^pdk-04] its thickness, the deposition route and its temperature are not public, and the page infers that no pre-spacer liner is deposited, the IOX45 oxide playing that part. The tip's colour and the halo's hatching mark where the implants are, not their profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::

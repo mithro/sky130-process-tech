@@ -1,0 +1,41 @@
+id: sd-077-spe
+kind: xsection
+page: docs/steps/077-spe.md
+series: series-tips-sd.yaml
+close_up: [197, 268]
+crop_depth: 50
+alt: >-
+  Two enlarged cross-sections of one transistor edge, one above the other. Before the step a
+  film of even thickness covers a capped gate and the oxide beside it. After it the film is
+  gone from the top of the gate and from the flat oxide, and remains only as a block against
+  each sidewall of the gate, as tall as the gate.
+caption: >-
+  A close-up of the 1.8 V NMOS gate edge, as for the tip module. Before, the spacer nitride as
+  deposited; after, the unmasked etch-back has taken the film's own thickness off every
+  horizontal surface, and what is left against the gate's sidewalls is the spacer. The etch is
+  drawn stopping on the oxide over the silicon, which is this reference's reading; whether it
+  stops there, on a separate liner, or on silicon is not public. The spacer is drawn with a flat
+  top and a vertical outer wall; its profile and width are not public. The cap is drawn as it
+  was: the page reads the PDK's 0.2 µm "poly cap after SPE" as what is left of the cap stack
+  when this etch is done,[^pdk-03] and how much the etch takes, or whether the oxide cap
+  survives, is not public. Outside this view the same etch leaves spacers on the resistor's
+  sidewalls, and the over-etch clears the nitride from the step down from the field oxide to the
+  active areas. The tip's colour and the halo's hatching mark where the implants are, not their
+  profiles. The caps, the re-oxidation oxide and the gate oxide are drawn but not labelled, and
+  the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not
+  drawn. Not to scale.
+arrow:
+  title: "SPE, step 077"
+  note: "An anisotropic, unmasked etch clears the nitride from the flat and leaves it on the sidewalls."
+panels:
+  - state_after: "076"
+    title: "Before: the spacer nitride as deposited (step 076)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, halo]
+    dim_layers: [liner]
+  - state_after: "077"
+    title: "After: nitride spacers on the gate's sidewalls"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, thinox, poly, nit, capox, iox, halo]
+    dim_layers: [liner]
+    highlight: {where: [[197, 268]]}

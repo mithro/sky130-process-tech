@@ -1,0 +1,38 @@
+id: sd-079-npcme
+kind: xsection
+page: docs/steps/079-npcme.md
+series: series-tips-sd.yaml
+crop_depth: 72
+alt: >-
+  Two cross-sections of the wafer, one above the other. Before the step resist covers the slice
+  except a window over a wide capped stack on the oxide-filled trench. After it the resist is
+  gone, the two cap films over that stack are gone so that its poly is bare, and the nitride
+  blocks against its sidewalls are cut down to the height of the poly.
+caption: >-
+  Before, the NPCM resist with its window over the resistor's contact head (an illustrative
+  choice; see NPCM); after, the cap stack cut through inside the window, down to the poly, and the
+  resist stripped, as this reference counts the strip in this step. Whatever is left of the
+  oxide cap and the nitride cap, about 0.2 µm as the page reads the PDK's "poly cap after SPE"
+  entry,[^pdk-03] is removed, and the etch is drawn stopping on the poly; the few nanometres of poly the page
+  expects it to take are not drawn. The
+  spacers inside the window are drawn cut down to the top of the poly; how much of them the
+  etch may take is not public. The field oxide beside the stack is drawn untouched. The colours
+  of the gate film mark the type of its doping, not a depth profile. The caps, the gate oxides,
+  the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in
+  the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the
+  NCHI channel implant made earlier are not drawn. Not to scale.
+arrow:
+  title: "NPCME, step 079"
+  note: "A fluorocarbon plasma etch removes the cap inside the window and stops on the poly; the resist is stripped."
+panels:
+  - state_after: "078"
+    title: "Before: the NPCM resist window over the resistor's head (step 078)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip, polyn]
+    dim_layers: [liner]
+  - state_after: "079"
+    title: "After: bare poly in the cut; resist stripped"
+    hide_layers: [pwell, nchi]
+    hide_labels: [fox, gox, thinox, poly, nit, capox, iox, halo, tipn, hvtip]
+    dim_layers: [liner]
+    highlight: {where: [[96, 172]]}

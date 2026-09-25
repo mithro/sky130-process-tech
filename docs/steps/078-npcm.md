@@ -24,6 +24,14 @@ local-interconnect contacts ({ref}`LICM1 <step-093>`) can land on poly
 the cap must be opened where they will land. `NPCM` prints those
 openings.
 
+:::{figure} /_static/figures/sd-078-npcm.svg
+:alt: Two cross-sections of the wafer, one above the other. Before the step a wide capped stack stands on the oxide-filled trench and a narrow capped gate on the right-hand active area, each with a block of nitride against its sidewalls. After it resist covers the whole slice except a window over the wide stack and its sidewall blocks.
+:width: 560px
+:name: fig-sd-078-npcm
+
+Before, the gate and the resistor with their spacers after SPE; after, the NPCM resist with one window, over the resistor. The mask opens the nitride cap where a contact will land on poly, "under licon1 areas",[^pdk-06] and the precision-resistor rules require the resistor to be enclosed by the cut (rpm.5).[^pdk-periph] That this slice runs through one of the resistor's contact heads, so that the window lies in it, is an illustrative choice; across the body of a resistor, and over any gate (npc.4),[^pdk-periph] there would be no window. The window is drawn wider than the resistor's stack, enclosing its spacers. The resist is drawn thinner than the implant resists, as the page infers for a DUV cut layer; its thickness is not public. The caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
+:::
+
 The mask is one of the best-documented in the public PDK. The mask
 table lists "Nitride Poly Cut, NPCM" as used in SKY130,[^pdk-05] the
 drawn layer is `npc` (GDS 95:20, "Nitride poly cut (under licon1
