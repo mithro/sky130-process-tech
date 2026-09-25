@@ -14,6 +14,13 @@
 claims:
 
 # ---- docs/history/fabs.md ------------------------------------------------
+- id: fab-foundries-from-1998
+  page: docs/history/fabs.md
+  anchor: From 1998 it also used foundries
+  grade: single-source
+  footnotes: [ar-fy1998]
+  sources:
+  - {id: cyx-ar-fy1998-foundries, origin: cypress}
 - id: fab1-first-fab-6inch
   page: docs/history/fabs.md
   anchor: the Company's first fabrication facility, recently upgraded to 6-inch
@@ -24,17 +31,24 @@ claims:
 - id: fab1-rd-1996
   page: docs/history/fabs.md
   anchor: strictly a research and development
-  grade: corroborated
-  footnotes: [tenq-1996q3, ar-fy1996, fu-cypress]
+  grade: attributed
+  attribution: Cypress announced
+  footnotes: [tenq-1996q3, ar-fy1996]
   sources:
   - {id: cyhist-corp-1996-10q-q3-fab1-rd, origin: cypress}
   - {id: cyhist-corp-1996-ar-fabv-fab1rd, origin: cypress}
-  - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
-- id: fab1-8inch-decided-1998
+- id: fab1-shutdown-oct-1996
   page: docs/history/fabs.md
-  anchor: six-inch to eight-inch wafers "to ensure compatibility"
+  anchor: The Gale company history dates the shutdown
+  grade: single-source
+  footnotes: [fu-cypress]
+  sources:
+  - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
+- id: fab1-8inch
+  page: docs/history/fabs.md
+  anchor: to eight-inch wafers "to ensure compatibility"
   grade: attributed
-  attribution: Cypress's 2001 report
+  attribution: (Cypress's reports)
   footnotes: [ar-fy1997, ar-fy1998, ar-fy2001]
   sources:
   - {id: cyx-ar-fy1997-fab1-8inch, origin: cypress}
@@ -75,7 +89,7 @@ claims:
   page: docs/history/fabs.md
   anchor: The qualification reports name the fab
   grade: attributed
-  attribution: Cypress's 1995 report
+  attribution: (Cypress's reports)
   footnotes: [ar-fy1995, qtp-021507]
   sources:
   - {id: cyhist-corp-1995-ar-cti, origin: cypress}
@@ -87,15 +101,22 @@ claims:
   footnotes: [ar-fy1993]
   sources:
   - {id: cyhist-corp-1993-10k, origin: cypress}
-- id: fab2-opening-conflict
+- id: fab2-opened-1986
   page: docs/history/fabs.md
   anchor: for all of its 22 years of operation
-  grade: conflict
-  hedge: the sources disagree on this point
-  footnotes: [ar-fy2008, sd-2007-fab2, ccre-roundrock]
+  grade: corroborated
+  footnotes: [ar-fy2008, sd-2007-fab2]
   sources:
   - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
+- id: fab2-opening-conflict
+  page: docs/history/fabs.md
+  anchor: had been open for 20 years
+  grade: conflict
+  hedge: the sources disagree on this point
+  footnotes: [ar-fy2008, ccre-roundrock]
+  sources:
+  - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
   - {id: cyhist-corp-pr-2008-roundrock-warehouse, origin: connectcre}
 - id: fab2-6inch
   page: docs/history/fabs.md
@@ -105,70 +126,96 @@ claims:
   sources:
   - {id: cyhist-corp-1997-ar-fabs, origin: cypress}
   - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
-- id: fab2-r28
+- id: fab2-06um-1997
   page: docs/history/fabs.md
-  anchor: 0.65 µm SRAM products qualified at Fab 2 in November 1997
+  anchor: primarily with 0.6-micron" processes (single
+  grade: single-source
+  footnotes: [ar-fy1997]
+  sources:
+  - {id: cyhist-corp-1997-ar-fabs, origin: cypress}
+- id: fab2-065-processes
+  page: docs/history/fabs.md
+  anchor: The R28 SRAM process qualified at Fab 2 in November 1997
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-097476, qtp-098393]
+  attribution: (Cypress's reports)
+  footnotes: [qtp-097476, qtp-098393, qtp-011503, qtp-096411]
   sources:
   - {id: qtp-097476, origin: cypress}
   - {id: qtp-098393, origin: cypress}
+  - {id: qtp-011503, origin: cypress}
+  - {id: qtp-096411, origin: cypress}
 - id: fab2-s4ad5-2001
   page: docs/history/fabs.md
   anchor: '"New Technology S4AD-5" was qualified in April 2001'
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [qtp-021507]
+  attribution: (Cypress's
+  footnotes: [qtp-021507, qtp-042806]
   sources:
   - {id: qtp-021507, origin: cypress}
-  - {id: qtp-151005, origin: cypress}
+  - {id: qtp-042806, origin: cypress}
 - id: fab2-sonos-05-035
   page: docs/history/fabs.md
   anchor: SONOS process reduced our Fab 2 line width
   grade: single-source
-  hedge: the only public explanation found
   footnotes: [ar-fy2002]
   sources:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
-- id: fab2-stop-sram-1998
+- id: fab2-stop-sram-plan
   page: docs/history/fabs.md
-  anchor: it would stop making SRAMs in Fab 2
+  anchor: In March 1998 Cypress said Fab 2 would "stop making SRAMs"
   grade: corroborated
-  footnotes: [eet-1998-restructure, ar-fy1998]
+  footnotes: [eet-1998-restructure, ar-fy1997]
   sources:
   - {id: cyhist-corp-pr-1998-restructure, origin: eetimes}
-  - {id: cyx-ar-fy1998-restructure, origin: cypress}
+  - {id: cyx-ar-fy1997-fab-plan, origin: cypress}
+- id: fab2-sram-plan-conflict
+  page: docs/history/fabs.md
+  anchor: the plan and the reports disagree
+  grade: conflict
+  hedge: the plan and the reports disagree
+  footnotes: [qtp-098393, ar-fy1997]
+  sources:
+  - {id: qtp-098393, origin: cypress}
+  - {id: cyx-ar-fy1997-fab-plan, origin: cypress}
 - id: fab2-slm-mems
   page: docs/history/fabs.md
   anchor: using only standard CMOS
   grade: single-source
   footnotes: [edn-2000-slm]
   sources:
-  - {id: cyhist-corp-pr-2000-silicon-light-machines, origin: edn}
+  - {id: cyhist-corp-pr-2000-silicon-light-machines, origin: cypress}
 - id: fab2-closure-2008
   page: docs/history/fabs.md
-  anchor: Fab 2 closed in 2008
+  anchor: Fab 2 closed in
   grade: corroborated
   footnotes: [ar-fy2008, sd-2007-fab2, ar-fy2009]
   sources:
   - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
   - {id: cyx-ar-fy2009-fab1-sold, origin: cypress}
+- id: fab2-035-6inch-end
+  page: docs/history/fabs.md
+  anchor: was no longer economically viable" (single source)
+  grade: single-source
+  footnotes: [ar-fy2008]
+  sources:
+  - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
 - id: fab2-sold-2013-warehouses
   page: docs/history/fabs.md
-  anchor: completed the sale of the building in
+  anchor: Cypress completed the sale of the building in 2013.
   grade: corroborated
   footnotes: [ar-fy2013, ccre-roundrock]
   sources:
   - {id: cypress-annual-report-fy2013, origin: cypress}
   - {id: cyhist-corp-pr-2008-roundrock-warehouse, origin: connectcre}
-- id: fab3-vtc-origin
+- id: fab3-builder-conflict
   page: docs/history/fabs.md
-  anchor: built in the 1980s by VTC Inc.
-  grade: single-source
-  footnotes: [strib-2019]
+  anchor: The Star Tribune gives two builders.
+  grade: conflict
+  hedge: The two articles disagree.
+  footnotes: [strib-2017, strib-2019]
   sources:
+  - {id: cyx-startribune-2017-plant, origin: startribune}
   - {id: cyx-startribune-2019-plant-history, origin: startribune}
 - id: fab3-price-date
   page: docs/history/fabs.md
@@ -182,27 +229,35 @@ claims:
   page: docs/history/fabs.md
   anchor: commenced operations in 1991
   grade: attributed
-  attribution: Cypress named the plant Fab 3
+  attribution: (Cypress's reports)
   footnotes: [ar-fy1993, proxy-1994]
   sources:
   - {id: cyhist-corp-1993-10k, origin: cypress}
   - {id: cyhist-corp-1994-1995-proxy-cmi, origin: cypress}
 - id: fab3-6inch-06um
   page: docs/history/fabs.md
-  anchor: Fab 3 ran six-inch wafers, mostly at 0.6 µm.
+  anchor: Fab 3 ran six-inch wafers, mostly at
   grade: corroborated
   footnotes: [ar-fy1997, eet-1998-restructure]
   sources:
   - {id: cyhist-corp-1997-ar-fabs, origin: cypress}
   - {id: cyhist-corp-pr-1998-restructure, origin: eetimes}
+- id: fab3-r28-1996
+  page: docs/history/fabs.md
+  anchor: The earliest R28 SRAM reports found
+  grade: single-source
+  footnotes: [qtp-096091]
+  sources:
+  - {id: qtp-096091, origin: cypress}
 - id: fab3-shut-1998
   page: docs/history/fabs.md
   anchor: Cypress shut Fab 3 down in 1998
   grade: corroborated
-  footnotes: [ar-fy1998, eet-1998-restructure]
+  footnotes: [ar-fy1998, eet-1998-restructure, ar-fy1997]
   sources:
   - {id: cyx-ar-fy1998-restructure, origin: cypress}
   - {id: cyhist-corp-pr-1998-restructure, origin: eetimes}
+  - {id: cyx-ar-fy1997-fab-plan, origin: cypress}
 - id: fab4-built-1994-1995
   page: docs/history/fabs.md
   anchor: ground was broken in August 1994
@@ -212,49 +267,49 @@ claims:
   - {id: cyhist-corp-1995-ar-cti, origin: cypress}
   - {id: cypress-annual-report-fy1995, origin: cypress}
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
-- id: fab4-cleanroom-doubled
+- id: fab4-one-site
   page: docs/history/fabs.md
-  anchor: cleanroom at SkyWater's plant more than doubled
-  grade: single-source
-  footnotes: [strib-2019]
-  sources:
-  - {id: cyx-startribune-2019-plant-history, origin: startribune}
-- id: fab4-names-4a-4b-4c
-  page: docs/history/fabs.md
-  anchor: '"Fab 4c" planned on the same site in 2000'
+  anchor: Both descriptions fit the reports
   grade: attributed
-  attribution: Cypress's reports
-  footnotes: [ar-fy1995, ar-fy1999]
+  attribution: (our reading)
+  footnotes: [strib-2017, strib-2019]
   sources:
-  - {id: cyhist-corp-1995-ar-cti, origin: cypress}
+  - {id: cyx-startribune-2017-plant, origin: startribune}
+  - {id: cyx-startribune-2019-plant-history, origin: startribune}
+  - {id: cypress-annual-report-fy1993, origin: cypress}
+- id: fab4-4b-4c
+  page: docs/history/fabs.md
+  anchor: In 1998 Cypress built out "Fab 4b"
+  grade: attributed
+  attribution: (Cypress's reports)
+  footnotes: [ar-fy1997, ar-fy1999]
+  sources:
+  - {id: cyx-ar-fy1997-fab-plan, origin: cypress}
   - {id: cypress-annual-report-fy1999, origin: cypress}
 - id: fab4-r42
   page: docs/history/fabs.md
-  anchor: R42D and R42HD were qualified at Fab 4
+  anchor: '"New R42D Technology Qualification" is dated October 1997'
   grade: attributed
-  attribution: Cypress's
-  footnotes: [qtp-003907, qtp-102101]
+  attribution: (Cypress's
+  footnotes: [qtp-097483, qtp-102101]
   sources:
   - {id: qtp-097483, origin: cypress}
   - {id: qtp-102101, origin: cypress}
-  - {id: qtp-003907, origin: cypress}
+  - {id: qtp-098368, origin: cypress}
 - id: fab4-pin-families
   page: docs/history/fabs.md
   anchor: 90nm C9/R9/R95 technology products at Cypress Fab 4
   grade: single-source
-  hedge: A 2015 notice lists
   footnotes: [pin-152804]
   sources:
   - {id: cyx-pin152804-fab4-families, origin: cypress}
 - id: fab4-s8-first
   page: docs/history/fabs.md
   anchor: The first S8 qualification
-  grade: attributed
-  attribution: Cypress's
-  footnotes: [qtp-113005, ar-fy2010]
+  grade: single-source
+  footnotes: [qtp-113005]
   sources:
   - {id: qtp-113005, origin: cypress}
-  - {id: cyhist-corp-2010-ar-s8, origin: cypress}
 - id: fab4-sold-2017
   page: docs/history/fabs.md
   anchor: Cypress sold Fab 4 in March 2017
@@ -263,27 +318,33 @@ claims:
   sources:
   - {id: cypress-10-q-2017-05-02, origin: cypress}
   - {id: cyx-startribune-2017-plant, origin: startribune}
-- id: fab5-groundbreaking-and-plan
+- id: fab5-1996-groundbreak
   page: docs/history/fabs.md
-  anchor: breaking ground on "Fab V in Round Rock, Texas"
+  anchor: Cypress bought 110 more acres in Round Rock
+  grade: corroborated
+  footnotes: [ar-fy1995, ar-fy1996]
+  sources:
+  - {id: cyx-ar-fy1995-fabv, origin: cypress}
+  - {id: cyhist-corp-sec-fundinguniverse, origin: gale}
+- id: fab5-hold
+  page: docs/history/fabs.md
+  anchor: the Company decided to put on hold construction of Fab V
   grade: single-source
-  hedge: Cypress's 1996 report
   footnotes: [ar-fy1996]
   sources:
-  - {id: cyhist-corp-1996-ar-fabv-fab1rd, origin: cypress}
-- id: fab5-1999-plan
+  - {id: cyx-ar-fy1996-fabv-hold, origin: cypress}
+- id: fab5-deferred
   page: docs/history/fabs.md
-  anchor: 8-inch facility that will be built in the second half of 1999
-  grade: single-source
-  hedge: the CEO said
-  footnotes: [eet-1998-restructure]
+  anchor: can now be deferred until late 1999
+  grade: corroborated
+  footnotes: [ar-fy1997, eet-1998-restructure]
   sources:
+  - {id: cyx-ar-fy1997-fab-plan, origin: cypress}
   - {id: cyhist-corp-pr-1998-restructure, origin: eetimes}
-- id: fab2-expanded-1999
+- id: fab5-after-1999
   page: docs/history/fabs.md
-  anchor: Semiconductor Digest says only that Fab 2 was
+  anchor: No later report found mentions Fab 5
   grade: single-source
-  hedge: is not in the public record found
   footnotes: [sd-2007-fab2]
   sources:
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
@@ -291,14 +352,21 @@ claims:
   page: docs/history/fabs.md
   anchor: means something else
   grade: attributed
-  attribution: In the qualification reports
+  attribution: (Cypress's reports)
   footnotes: [qtp-091302, qtp-151005]
   sources:
   - {id: qtp-091302, origin: cypress}
   - {id: qtp-151005, origin: cypress}
+- id: foundry-start-1998
+  page: docs/history/fabs.md
+  anchor: we have also begun to use wafer foundries
+  grade: single-source
+  footnotes: [ar-fy1998]
+  sources:
+  - {id: cyx-ar-fy1998-foundries, origin: cypress}
 - id: foundry-hyundai
   page: docs/history/fabs.md
-  anchor: '| Hyundai Electronics ("Fab HME") |'
+  anchor: '| Hyundai Electronics ("Fab HME"), Korea |'
   grade: single-source
   hedge: single source
   footnotes: [qtp-001004]
@@ -306,18 +374,37 @@ claims:
   - {id: qtp-001004, origin: cypress}
 - id: foundry-imi
   page: docs/history/fabs.md
-  anchor: '| Tower, IBM, Chartered |'
+  anchor: '| Tower, IBM and Chartered |'
   grade: single-source
   hedge: single source
   footnotes: [qtp-i000006]
   sources:
   - {id: qtp-i000006, origin: cypress}
+- id: foundry-tsmc
+  page: docs/history/fabs.md
+  anchor: '| TSMC, Taiwan |'
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-080608, qtp-s050001]
+  sources:
+  - {id: qtp-080608, origin: cypress}
+  - {id: qtp-110605, origin: cypress}
+  - {id: qtp-s050001, origin: cypress}
+- id: foundry-promos-powerchip
+  page: docs/history/fabs.md
+  anchor: '| ProMOS and Powerchip, Taiwan |'
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-032301, qtp-051501]
+  sources:
+  - {id: qtp-032301, origin: cypress}
+  - {id: qtp-051501, origin: cypress}
 - id: honeywell-node-conflict
   page: docs/history/fabs.md
   anchor: The node therefore differs between
   grade: conflict
-  hedge: The node therefore differs between
-  footnotes: [ar-fy2002, ar-fy2003, edn-2005-honeywell]
+  hedge: differs between
+  footnotes: [edn-2005-honeywell]
   sources:
   - {id: cyhist-corp-2002-ar-ram7-ram8-sonos, origin: cypress}
   - {id: cyhist-corp-2003-ar-soi-90nm, origin: cypress}
@@ -334,7 +421,7 @@ claims:
   page: docs/history/fabs.md
   anchor: Cypress completed the transfer of its "0.35-micron SONOS process"
   grade: attributed
-  attribution: Cypress completed
+  attribution: (Cypress's reports)
   footnotes: [ar-fy2006, tenk-fy2007]
   sources:
   - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
@@ -348,9 +435,8 @@ claims:
   - {id: cyhist-corp-pr-2006-grace-c8-130nm, origin: eetimes}
 - id: grace-ram42-2009
   page: docs/history/fabs.md
-  anchor: RAM42, followed
+  anchor: RAM42, followed (single source)
   grade: single-source
-  hedge: (Cypress's reports)
   footnotes: [qtp-091302]
   sources:
   - {id: qtp-091302, origin: cypress}
@@ -371,21 +457,27 @@ claims:
   - {id: cyhist-corp-pr-2007-fablite-umc, origin: eetimes}
 - id: reissue-hhgrace
   page: docs/history/fabs.md
-  anchor: Qualify HHGrace using PSoC Device Product Family
+  anchor: Qualify
   grade: single-source
-  hedge: A 2015 reissue lists
   footnotes: [qtp-151005]
   sources:
   - {id: qtp-151005, origin: cypress}
 - id: reissue-skywater
   page: docs/history/fabs.md
-  anchor: Skywater -- Bloomington, MN
+  anchor: Skywater --
   grade: attributed
-  attribution: A 2025 reissue
+  attribution: (Cypress's reports)
   footnotes: [qtp-041406, qtp-024110]
   sources:
   - {id: qtp-041406, origin: cypress}
   - {id: qtp-024110, origin: cypress}
+- id: reissue-stale
+  page: docs/history/fabs.md
+  anchor: still prints the die fab line as
+  grade: single-source
+  footnotes: [qtp-091302]
+  sources:
+  - {id: qtp-091302, origin: cypress}
 
 # ---- docs/history/technologies.md ------------------------------------------
 - id: tech-first-product-1984

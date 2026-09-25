@@ -17,6 +17,7 @@ schema_version: 1
 retrieved: '2026-09-25'
 documents:
 - id: qtp-021507
+  origin: cypress
   doc_type: QTP
   number: '021507'
   cypress_document_number: 001-84621 Rev. *A
@@ -74,6 +75,7 @@ documents:
     (S4AD-5, HHGrace Fab5, 2015) instead gives S4AD-5 as "Single Poly, Double Metal, 0.35 m" (0.35 µm)
     -- the same technology code described at two different design rules in two independent reports.'
 - id: qtp-003907
+  origin: cypress
   doc_type: QTP
   number: 003907
   cypress_document_number: 001-88051 Rev. *A
@@ -125,6 +127,7 @@ documents:
     MN) had at least two named process descriptions: ''Proprietary'' in a later-reissued report (qtp-097483)
     and a fully printed one here (0.35 µm, 2 metal layers) tagged ''with Hot Al''.'
 - id: qtp-024110
+  origin: cypress
   doc_type: QTP
   number: '024110'
   cypress_document_number: 001-87912 Rev. **
@@ -185,6 +188,7 @@ documents:
     Skywater -- Bloomington, MN'' where this 2013 report (predating the 2017 SkyWater divestiture) gives
     ''Cypress Semiconductor -- Bloomington, MN''.'
 - id: qtp-097483
+  origin: cypress
   doc_type: QTP
   number: '97483'
   cypress_document_number: 001-87638 Rev. *C
@@ -239,6 +243,7 @@ documents:
     in this corpus is this report's own history row, QTP 97211, 'New R42D Technology Qualification', Oct
     97.
 - id: qtp-102101
+  origin: cypress
   doc_type: QTP
   number: '102101'
   cypress_document_number: 001-88136 Rev. *A
@@ -291,6 +296,7 @@ documents:
     Die Fab Line ID all say ''R42HD'' -- ''R4'' here reads as informal shorthand for R42HD rather than
     a separate code. Earliest dated reference to R42HD in this corpus: QTP 98064, Nov 97.'
 - id: qtp-098368
+  origin: cypress
   doc_type: QTP
   number: '98368'
   cypress_document_number: 001-87916 Rev. **
@@ -354,6 +360,7 @@ documents:
     column exists but is blank in the extracted text), unlike qtp-102101's version of the same table which
     dates 98064 to Nov 97.
 - id: qtp-096091
+  origin: cypress
   doc_type: QTP
   number: '96091'
   cypress_document_number: null
@@ -407,6 +414,7 @@ documents:
     R28 products from Fab 3 to Fab 2 by 1997-1999 -- so the same technology name was run at both Cypress
     fabs.
 - id: qtp-096182
+  origin: cypress
   doc_type: QTP
   number: '96182'
   cypress_document_number: null
@@ -457,6 +465,7 @@ documents:
   notes: Essentially a sibling report to qtp-096091 -- same date (Sep 1996), same technology block verbatim
     (R28, Fab3, 0.65 µm), a different but overlapping product list, and no Qualification History table.
 - id: qtp-097476
+  origin: cypress
   doc_type: QTP
   number: '97476'
   cypress_document_number: 001-88642 Rev. *A
@@ -499,6 +508,7 @@ documents:
     -- consistent with R28 having started at Fab 3 and then also being run at Fab 2. The document is marked
     ''THIS SPEC IS OBSOLETE / Replaced by: None'' on Infineon''s reissued cover sheet.'
 - id: qtp-098393
+  origin: cypress
   doc_type: QTP
   number: '98393'
   cypress_document_number: null
@@ -539,6 +549,7 @@ documents:
     after qtp-097476 already qualified Fab 2 for other R28 parts (Nov 1997), so the Fab3-to-Fab2 move
     for the R28 product line was evidently phased over several qualifications rather than a single cut-over.
 - id: qtp-001004
+  origin: cypress
   doc_type: QTP
   number: '001004'
   cypress_document_number: null
@@ -582,6 +593,7 @@ documents:
     (Tower/IBM/Chartered) technologies elsewhere in this corpus, none of which are Cypress''s own San
     Jose/Round Rock/Bloomington fabs.'
 - id: qtp-i000006
+  origin: cypress
   doc_type: QTP
   number: I000006
   cypress_document_number: 001-87070 Rev. **
@@ -657,6 +669,7 @@ documents:
     the cover calls the second foundry 'CMOS5SF [Micrus] -- IBM/NY (Fab32)' while the body only says 'IBM-NY'
     with no 'CMOS5SF', 'Micrus' or 'Fab32'.
 - id: qtp-011908
+  origin: cypress
   doc_type: QTP
   number: 011908
   cypress_document_number: 001-88746 Rev. *A
@@ -706,6 +719,7 @@ documents:
     (triple metal, 0.18 µm) even though both derive from an 'R7' base name -- R7FD-3R here is double metal,
     0.15 µm.
 - id: qtp-014807
+  origin: cypress
   doc_type: QTP
   number: 014807
   cypress_document_number: null
@@ -755,6 +769,7 @@ documents:
     sha256, different Document Number field, titled 'Technology Derivative Qualification Report' rather
     than 'Product Qualification Report').
 - id: qtp-023101
+  origin: cypress
   doc_type: QTP
   number: '023101'
   cypress_document_number: null
@@ -809,6 +824,7 @@ documents:
     variant, most likely a typo (extra 'W'). Content otherwise matches qtp-014807 (same process-description
     figures), but this is a separately issued PDF covering all three of QTP 014807/020709/023101.
 - id: qtp-051207
+  origin: cypress
   doc_type: QTP
   number: '051207'
   cypress_document_number: 001-88010 Rev. *A
@@ -884,6 +900,7 @@ documents:
     and qtp-063807 (C9FD-3R), separate but contemporary technology codes, print the equivalent value as
     ''0.09 µm'' -- consistent with, not contradicting, this 90 nm figure, but using the other unit.'
 - id: qtp-061806
+  origin: cypress
   doc_type: QTP
   number: 061806
   cypress_document_number: 001-59339 Rev. *D
@@ -952,6 +969,7 @@ documents:
     and qtp-051207 (R9Q-3R, same fab, 2005) independently gives '90 nm' for a related but distinct code,
     so the value is corroborated rather than a one-off typo.
 - id: qtp-072002
+  origin: cypress
   doc_type: QTP
   number: '072002'
   cypress_document_number: 001-65843 Rev. *B
@@ -999,6 +1017,7 @@ documents:
     (a ''CY63...'' prefix) where the cover page and every other mention use ''CY62136/7/8FV30'' -- a likely
     typo (63 for 62) in the Product Description block only.'
 - id: qtp-091302
+  origin: cypress
   doc_type: QTP
   number: 091302
   cypress_document_number: 001-60308 Rev. *D
@@ -1050,6 +1069,7 @@ documents:
     Shanghai, China'' -- ''Fab4'' in that one field looks like a leftover from the pre-transfer (CMI)
     version of the same field rather than being updated to Fab 5/GSMC.'
 - id: qtp-030206
+  origin: cypress
   doc_type: QTP
   number: '030206'
   cypress_document_number: 001-88020 Rev. *A
@@ -1092,6 +1112,7 @@ documents:
     there) -- RAM42 appears to be a family name shared by at least two site-specific variants (RAM42HHA
     at Fab 4, RAM42HNHA at GSMC).'
 - id: qtp-063807
+  origin: cypress
   doc_type: QTP
   number: 063807
   cypress_document_number: 001-76197 Rev. *D
@@ -1157,6 +1178,7 @@ documents:
     (qtp-051207) -- three separately named codes (C9FD-3R, R95LD-3R, R9Q-3R) at essentially the same geometry,
     all at Fab 4/Bloomington in the mid-2000s.'
 - id: qtp-041406
+  origin: cypress
   doc_type: QTP
   number: '041406'
   cypress_document_number: 001-87794 Rev. *B
@@ -1212,6 +1234,7 @@ documents:
     text rather than preserving the name as originally printed. All numeric process fields in this reissue
     are redacted as ''Proprietary''.'
 - id: qtp-113005
+  origin: cypress
   doc_type: QTP
   number: '113005'
   cypress_document_number: 001-85611 Rev.*A
@@ -1278,6 +1301,7 @@ documents:
     mention in the document says ''S8TNV-5R''. The document type on the cover reads ''Product Qualification
     Plan'' rather than ''Product Qualification Report'', unlike every other document in this corpus.'
 - id: qtp-151005
+  origin: cypress
   doc_type: QTP
   number: '151005'
   cypress_document_number: 002-00195 Rev. *A
@@ -1324,6 +1348,7 @@ documents:
     a real fab-to-fab (Fab 2 vs HHGrace) shrink under the same 'S4AD-5' name rather than a simple error,
     but the two reports do not say so themselves.
 - id: qtp-096411
+  origin: cypress
   doc_type: QTP
   number: '96411'
   cypress_document_number: null
@@ -1367,14 +1392,15 @@ documents:
     location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule value
   - text: 128K x 8 High Speed CMOS EPROM qualifiled in P26 technology.
     location: p.9, footnote 3
-  notes: 'No Technology/Product Qualification History table is printed in this early-style (May 1997)
-    report, matching the pattern seen in the other early (1996-97) reports in this corpus (qtp-096091,
-    qtp-096182, both R28). P26 is a single-poly(?) CMOS, double-metal, 0.65 µm process run at Fab 2, Round
-    Rock, TX -- the same 0.65 µm design rule as R28 (also 0.65 µm, but double-poly and run initially at Fab
-    3), suggesting P26 and R28 may be contemporary, similarly-geometried Cypress processes distinguished
-    by device type (PROM vs SRAM) rather than by design rule. A footnote (p.9) also names CY27H010 as
-    "qualified in P26 technology" without its own qualification-history row in this document.'
+  notes: No Technology/Product Qualification History table is printed in this early-style (May 1997) report,
+    matching the pattern seen in the other early (1996-97) reports in this corpus (qtp-096091, qtp-096182,
+    both R28). P26 is a single-poly(?) CMOS, double-metal, 0.65 µm process run at Fab 2, Round Rock, TX
+    -- the same 0.65 µm design rule as R28 (also 0.65 µm, but double-poly and run initially at Fab 3),
+    suggesting P26 and R28 may be contemporary, similarly-geometried Cypress processes distinguished by
+    device type (PROM vs SRAM) rather than by design rule. A footnote (p.9) also names CY27H010 as "qualified
+    in P26 technology" without its own qualification-history row in this document.
 - id: qtp-032301
+  origin: cypress
   doc_type: QTP
   number: '032301'
   cypress_document_number: null
@@ -1421,14 +1447,15 @@ documents:
     location: p.2, Technology Qualification History, row 020606
   - text: Promos S17/0.17 µm
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
-  notes: 'Earliest dated reference to ProMOS S17 in this corpus: QTP 020606, Feb 03 ("New Technology
-    S17"). This is a Cypress foundry technology at ProMOS Technologies, Taiwan (an outsourced line, not
-    a Cypress-numbered fab), alongside the HHGrace/Hyundai/GSMC/IMI foundries elsewhere in this corpus.
-    Design rule is given directly as "Promos S17/0.17 µm"; the Die Fab Line ID field instead reads
-    "U016TFF" (a device/mask-set code, not the technology name).'
+  notes: 'Earliest dated reference to ProMOS S17 in this corpus: QTP 020606, Feb 03 ("New Technology S17").
+    This is a Cypress foundry technology at ProMOS Technologies, Taiwan (an outsourced line, not a Cypress-numbered
+    fab), alongside the HHGrace/Hyundai/GSMC/IMI foundries elsewhere in this corpus. Design rule is given
+    directly as "Promos S17/0.17 µm"; the Die Fab Line ID field instead reads "U016TFF" (a device/mask-set
+    code, not the technology name).'
 - id: qtp-012801
+  origin: cypress
   doc_type: QTP
-  number: '012801'
+  number: 012801
   cypress_document_number: null
   title: 4 Meg SRAM Device R7LD-1.8 Technology, Fab4
   version: '1.0'
@@ -1461,7 +1488,7 @@ documents:
   - number: '012411'
     description: New Technology R7LD-1.8 / New Device, 8Meg, MoBL Static RAM CY62157CV18LL
     date: Jun 01
-  - number: '012801'
+  - number: 012801
     description: New Device 4Meg MoBL Static RAM CY62146/7CV18, R7LD-1.8 Technology
     date: Jul 01
   quotes:
@@ -1476,11 +1503,12 @@ documents:
     -- the same short-form-in-running-text pattern seen with R7FD-3R/R7FT-3R elsewhere in this corpus.
     Earliest dated reference to R7LD-1.8 in this corpus: QTP 012411, Jun 01 ("New Technology R7LD-1.8").
     At 0.16 µm this is a notably finer design rule than the contemporary R7FD-3R (0.15 µm, close) and
-    R7FT-3R (0.18 µm) codes (qtp-011908, qtp-014807) -- three separate R7-family suffixes (LD, FD, FT) at
-    three close-but-distinct geometries, all Fab 4/Bloomington.'
+    R7FT-3R (0.18 µm) codes (qtp-011908, qtp-014807) -- three separate R7-family suffixes (LD, FD, FT)
+    at three close-but-distinct geometries, all Fab 4/Bloomington.'
 - id: qtp-082506
+  origin: cypress
   doc_type: QTP
-  number: '082506'
+  number: 082506
   cypress_document_number: 001-82813 Rev. *B
   title: PCI-E Clock Family, R52T-3 Technology, Fab 4
   version: '*B'
@@ -1514,10 +1542,10 @@ documents:
   - number: '024604'
     description: R52T-3 Technology Process Derivative Qual
     date: May 03
-  - number: '040903'
+  - number: 040903
     description: New Device B30M (CY28437) Base Die in R52T-3 Technology
     date: Feb 05
-  - number: '082506'
+  - number: 082506
     description: Qualification of new PCI-E Clock devices 7C8B049A and 7C8B050A - a 6-layer mask option
       from previously qualified B30M die
     date: Dec 08
@@ -1534,11 +1562,12 @@ documents:
     L28/TSMC-2A report), whose process-description heading instead misprints "R9T-3R" -- these report
     templates evidently sometimes carry over a stale heading from a differently-named report rather than
     being corrected for the technology actually being qualified. Earliest dated reference to R52T-3 in
-    this corpus: QTP 024604, May 03, "R52T-3 Technology Process Derivative Qual" (not independently
-    retrieved; "Derivative" implies R52T-3 derives from an earlier R52-family base technology). R52T-3
-    (3 metal layers, 0.25 µm, 55 Å gate oxide) shares the 0.25 µm design rule with R52D-3 (qtp-099202) and
-    R52LD-3 (qtp-062201) but has one more metal layer than either.'
+    this corpus: QTP 024604, May 03, "R52T-3 Technology Process Derivative Qual" (not independently retrieved;
+    "Derivative" implies R52T-3 derives from an earlier R52-family base technology). R52T-3 (3 metal layers,
+    0.25 µm, 55 Å gate oxide) shares the 0.25 µm design rule with R52D-3 (qtp-099202) and R52LD-3 (qtp-062201)
+    but has one more metal layer than either.'
 - id: qtp-099202
+  origin: cypress
   doc_type: QTP
   number: '99202'
   cypress_document_number: 001-87678 Rev. *B
@@ -1590,12 +1619,13 @@ documents:
     location: p.3, Technology/Fab Process Description
   notes: 'Earliest dated reference to R52D-3 in this corpus is this report''s own history row (QTP 99202,
     Sep 99); unlike most other technologies in this corpus, no separate "New Technology" row is printed
-    for R52D-3 in this table. R52D-3 here has 2 metal layers, 0.25 µm design rule, 50 Å gate oxide -- close
-    to but not identical with R52T-3 (qtp-082506: 3 metal layers, 0.25 µm, 55 Å gate oxide) and R52LD-3
-    (qtp-062201: 2 metal layers, 0.25 µm per its family TDR reference, 55 Å gate oxide): three R52-family
-    suffixes (D, T, LD) sharing the same 0.25 µm baseline design rule but differing in metal-layer count
-    and gate-oxide thickness.'
+    for R52D-3 in this table. R52D-3 here has 2 metal layers, 0.25 µm design rule, 50 Å gate oxide --
+    close to but not identical with R52T-3 (qtp-082506: 3 metal layers, 0.25 µm, 55 Å gate oxide) and
+    R52LD-3 (qtp-062201: 2 metal layers, 0.25 µm per its family TDR reference, 55 Å gate oxide): three
+    R52-family suffixes (D, T, LD) sharing the same 0.25 µm baseline design rule but differing in metal-layer
+    count and gate-oxide thickness.'
 - id: qtp-062201
+  origin: cypress
   doc_type: QTP
   number: '062201'
   cypress_document_number: 001-88008 Rev. *A
@@ -1618,8 +1648,8 @@ documents:
   - 7C02638A
   process_description:
     number_of_metal_layers: 2
-    metal_composition: 'Metal 1: 500 Å-TiW/6000 Å Al-Cu/500 Å TiW; Metal 2: 300 Å-Ti/8000 Å Al-Cu/300 Å
-      TiW'
+    metal_composition: 'Metal 1: 500 Å-TiW/6000 Å Al-Cu/500 Å TiW; Metal 2: 300 Å-Ti/8000 Å Al-Cu/300
+      Å TiW'
     passivation: 1,000A TEOS + 9,000A SiN
     free_phosphorus_percent: 0%
     design_rule: R52 TDR (01-30065), 0.25um Technology
@@ -1651,11 +1681,12 @@ documents:
     µm design-rule document under the plain "R52" family name. The Die Fab Line ID/Wafer Process ID field
     is printed as the die identifier "7C02638A" rather than a wafer-process code, unlike most other reports
     in this corpus. The cover-page product list gives "CYDMX128A16"; the Product Description block''s
-    Marketing Part # line instead gives "CYDMX128A08" for the same part family -- a digit discrepancy (16
-    vs 08) between the two listings in the same document.'
+    Marketing Part # line instead gives "CYDMX128A08" for the same part family -- a digit discrepancy
+    (16 vs 08) between the two listings in the same document.'
 - id: qtp-080608
+  origin: cypress
   doc_type: QTP
-  number: '080608'
+  number: 080608
   cypress_document_number: 001-87725 Rev. **
   title: High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A
   version: '**'
@@ -1675,8 +1706,8 @@ documents:
   - 7C80383B
   process_description:
     number_of_metal_layers: 2
-    metal_composition: 'Metal 1: 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu/ 375Å TiN; Metal 2: 1,500 Å Ti / 8,000Å
-      AlSiCu / 375Å TiN'
+    metal_composition: 'Metal 1: 400Å Ti / 1,000Å TiN/ 4,700Å AlSiCu/ 375Å TiN; Metal 2: 1,500 Å Ti /
+      8,000Å AlSiCu / 375Å TiN'
     passivation: 3,000Å SiN / 3,150Å SOG, 1,200Å SiN
     design_rule: CMOS, Single Poly, Double Metal/0.65um
     gate_oxide: SiO2 / 125 Å
@@ -1686,7 +1717,7 @@ documents:
   - number: '99285'
     description: To qualify L28-TSMC Technology in TMSC-2A
     date: May 2003
-  - number: '080608'
+  - number: 080608
     description: CY5037 (7C80383B die) L28 Process Transfer from CTI Fab2 to TSMC-2A
     date: Aug 2008
   quotes:
@@ -1694,15 +1725,16 @@ documents:
     location: p.2, Package Qualification History, row 99285
   - text: 'Die Fab Line ID/Wafer Process ID: TSMC-2A/L28 TSMC'
     location: p.3, Technology/Fab Process Description
-  notes: 'The document cover reads "Product Qualification Plan" rather than "Product Qualification
-    Report" (compare qtp-113005, S8TNV-5R, which shows the same "Plan" cover for similarly transfer-style
-    content); its history table is headed "PACKAGE Qualification History" rather than the usual
-    "Product/Technology Qualification History". This report frames L28 as arriving at TSMC-2A by transfer
-    ("To qualify L28-TSMC Technology in TMSC-2A", the source prints "TMSC-2A", transposing two letters of
-    "TSMC-2A") rather than from scratch, and qtp-011503 (found in a later search pass) independently dates
-    a true "New Technology L28" origin at Cypress''s own Fab 2, Round Rock, TX, to QTP 97403, Apr 98 --
-    five years before the TSMC-2A transfer qualification (QTP 99285, May 2003) recorded here.'
+  notes: The document cover reads "Product Qualification Plan" rather than "Product Qualification Report"
+    (compare qtp-113005, S8TNV-5R, which shows the same "Plan" cover for similarly transfer-style content);
+    its history table is headed "PACKAGE Qualification History" rather than the usual "Product/Technology
+    Qualification History". This report frames L28 as arriving at TSMC-2A by transfer ("To qualify L28-TSMC
+    Technology in TMSC-2A", the source prints "TMSC-2A", transposing two letters of "TSMC-2A") rather
+    than from scratch, and qtp-011503 (found in a later search pass) independently dates a true "New Technology
+    L28" origin at Cypress's own Fab 2, Round Rock, TX, to QTP 97403, Apr 98 -- five years before the
+    TSMC-2A transfer qualification (QTP 99285, May 2003) recorded here.
 - id: qtp-110605
+  origin: cypress
   doc_type: QTP
   number: '110605'
   cypress_document_number: null
@@ -1735,12 +1767,12 @@ documents:
   - number: '99285'
     description: To qualify L28-TSMC Technology in TMSC-2A
     date: May 2003
-  - number: '081704'
+  - number: 081704
     description: CY230X L28 Process Transfer from CTI Fab2 to TSMC-2A
     date: Aug 2008
   - number: '110605'
-    description: 5 Layer Mask Change (Poly, Contact, Met1, Via, Met2) to CY2305-1X parts, L28 Process at
-      TSMC
+    description: 5 Layer Mask Change (Poly, Contact, Met1, Via, Met2) to CY2305-1X parts, L28 Process
+      at TSMC
     date: May 2011
   quotes:
   - text: To qualify L28-TSMC Technology in TMSC-2A
@@ -1749,16 +1781,17 @@ documents:
     location: p.3, section heading (the report is otherwise about L28/TSMC-2A technology throughout)
   - text: 'Die Fab Line ID/Wafer Process ID: TSMC-2A/L28 TSMC'
     location: p.3, Technology/Fab Process Description
-  notes: 'Marked "RESTRICTED" on every page (unlike the plain "Company Confidential" marking used
-    elsewhere in this corpus). Its process-description section heading misprints "TECHNOLOGY/FAB PROCESS
-    DESCRIPTION – R9T-3R" -- a wholly different, unrelated technology code (R9T-3R is the Fab 4/Bloomington
-    QDR SRAM technology referenced in qtp-051207) -- even though every other field in the same block (Die
-    Fab Line ID, fab location, process figures) matches qtp-080608''s L28/TSMC-2A description exactly.
-    Confirms qtp-080608''s process-description figures for L28 verbatim (0.65 µm, 2 metal layers, same
-    compositions and gate oxide). This report''s own history table also independently confirms QTP 081704
-    ("CY230X L28 Process Transfer from CTI Fab2 to TSMC-2A", Aug 2008) as a real, dated qualification event
-    even though the qtp-081704 PDF itself could not be retrieved (see gaps).'
+  notes: Marked "RESTRICTED" on every page (unlike the plain "Company Confidential" marking used elsewhere
+    in this corpus). Its process-description section heading misprints "TECHNOLOGY/FAB PROCESS DESCRIPTION
+    – R9T-3R" -- a wholly different, unrelated technology code (R9T-3R is the Fab 4/Bloomington QDR SRAM
+    technology referenced in qtp-051207) -- even though every other field in the same block (Die Fab Line
+    ID, fab location, process figures) matches qtp-080608's L28/TSMC-2A description exactly. Confirms
+    qtp-080608's process-description figures for L28 verbatim (0.65 µm, 2 metal layers, same compositions
+    and gate oxide). This report's own history table also independently confirms QTP 081704 ("CY230X L28
+    Process Transfer from CTI Fab2 to TSMC-2A", Aug 2008) as a real, dated qualification event even though
+    the qtp-081704 PDF itself could not be retrieved (see gaps).
 - id: qtp-012705
+  origin: cypress
   doc_type: QTP
   number: '012705'
   cypress_document_number: 001-88019 Rev. *A
@@ -1808,15 +1841,15 @@ documents:
     location: p.2, Product Qualification History, row 000505
   - text: Transfer of CY7C1021BV33 from Technology R52FD-3 to R52FFD-3
     location: p.2, Product Qualification History, row 012705
-  notes: 'Explicit naming/lineage statement: this report''s own history table calls R52FFD-3 a "New
-    Technology Derivative" of a pre-existing code, and its own row 012705 says outright "Transfer of
-    CY7C1021BV33 from Technology R52FD-3 to R52FFD-3" -- i.e. R52FFD-3 is a direct derivative of R52FD-3
-    (an extra "F" suffix), and R52FD-3 itself already existed by Oct 00 ("New 1Meg Asynchronous, CY7C1021BV33,
-    R52FD-3", QTP 000505) even though no R52FD-3 report was independently retrieved in this corpus (see
-    gaps). R52FFD-3 here: 2 metal layers, 0.25 µm, 55 Å gate oxide -- matching R52D-3 (qtp-099202) and
-    R52LD-3 (qtp-062201) exactly, again consistent with a single 0.25 µm R52-family design rule shared
-    across suffixes.'
+  notes: 'Explicit naming/lineage statement: this report''s own history table calls R52FFD-3 a "New Technology
+    Derivative" of a pre-existing code, and its own row 012705 says outright "Transfer of CY7C1021BV33
+    from Technology R52FD-3 to R52FFD-3" -- i.e. R52FFD-3 is a direct derivative of R52FD-3 (an extra
+    "F" suffix), and R52FD-3 itself already existed by Oct 00 ("New 1Meg Asynchronous, CY7C1021BV33, R52FD-3",
+    QTP 000505) even though no R52FD-3 report was independently retrieved in this corpus (see gaps). R52FFD-3
+    here: 2 metal layers, 0.25 µm, 55 Å gate oxide -- matching R52D-3 (qtp-099202) and R52LD-3 (qtp-062201)
+    exactly, again consistent with a single 0.25 µm R52-family design rule shared across suffixes.'
 - id: qtp-097132
+  origin: cypress
   doc_type: QTP
   number: '97132'
   cypress_document_number: 001-88021 Rev. *B
@@ -1859,12 +1892,13 @@ documents:
   - text: 'Die Fab Line ID/Wafer Process ID: Fab4/R32'
     location: p.2, Technology/Fab Process Description
   notes: 'No separate "New Technology" row is printed for R32 in this table -- the only history row is
-    this report''s own (QTP 97132, Jun 03), so the true origin date of R32 cannot be fixed from this
-    document alone. R32 (1 metal layer, double poly, 0.5 µm, 145 Å gate oxide) shares its 0.5 µm design
-    rule with S4AD-5 at Fab 2 (qtp-021507: 0.5 µm) and with the 0.5um TLM Hyundai foundry technology
-    (qtp-001004), but differs from all of them in layer count/composition -- consistent with, not
-    contradicting, a shared-generation industry design rule rather than a shared process.'
+    this report''s own (QTP 97132, Jun 03), so the true origin date of R32 cannot be fixed from this document
+    alone. R32 (1 metal layer, double poly, 0.5 µm, 145 Å gate oxide) shares its 0.5 µm design rule with
+    S4AD-5 at Fab 2 (qtp-021507: 0.5 µm) and with the 0.5um TLM Hyundai foundry technology (qtp-001004),
+    but differs from all of them in layer count/composition -- consistent with, not contradicting, a shared-generation
+    industry design rule rather than a shared process.'
 - id: qtp-053301
+  origin: cypress
   doc_type: QTP
   number: '053301'
   cypress_document_number: 001-88090 Rev. **
@@ -1904,10 +1938,10 @@ documents:
   - number: '053301'
     description: Qualify L8C-3R Technology Derivative of the C8 Technology at Fab4 using CY5077 Device
     date: Sep 06
-  - number: '063209'
+  - number: 063209
     description: 3 Layer Change to XO-LV Epson (CY5077) on L8C-3R Technology (Wafer Sales Only)
     date: Sep 06
-  - number: '064904'
+  - number: 064904
     description: 8-Layer Improvement Change to XO LV Epson on L8C-3R Technology (Wafer Sales Only)
     date: Mar 07
   - number: '071303'
@@ -1919,15 +1953,16 @@ documents:
   - text: Qualify L8C-3R Technology Derivative of the C8 Technology at Fab4 using CY5077 Device
     location: p.2, Product Qualification History, row 053301 (repeated verbatim as the Qualification Purpose
       on p.3)
-  notes: 'Direct naming/lineage evidence: this report''s own qualification purpose calls L8C-3R a
-    "Technology Derivative of the C8 Technology at Fab4" -- i.e. L8C-3R derives from a base "C8" technology
-    at Fab 4, and its own history table separately dates "New C8Q-3R Technology" to QTP 042106, Jan 05 (a
-    sibling C8-derived code, not independently retrieved as its own report in this corpus, but named here
-    as "New" at that date). L8C-3R itself: 4 metal layers, CMOS 0.13 µm, dual gate oxide 32/55 Å ("DGOX"),
-    CMI/Bloomington MN -- the same 0.13 µm design rule and dual-gate-oxide notation as S8TNV-5R (qtp-113005,
-    also CMI/Fab4, 110/32 Å), though L8C-3R and S8 are named as distinct technologies with no report in
-    this corpus linking them directly.'
+  notes: 'Direct naming/lineage evidence: this report''s own qualification purpose calls L8C-3R a "Technology
+    Derivative of the C8 Technology at Fab4" -- i.e. L8C-3R derives from a base "C8" technology at Fab
+    4, and its own history table separately dates "New C8Q-3R Technology" to QTP 042106, Jan 05 (a sibling
+    C8-derived code, not independently retrieved as its own report in this corpus, but named here as "New"
+    at that date). L8C-3R itself: 4 metal layers, CMOS 0.13 µm, dual gate oxide 32/55 Å ("DGOX"), CMI/Bloomington
+    MN -- the same 0.13 µm design rule and dual-gate-oxide notation as S8TNV-5R (qtp-113005, also CMI/Fab4,
+    110/32 Å), though L8C-3R and S8 are named as distinct technologies with no report in this corpus linking
+    them directly.'
 - id: qtp-s050001
+  origin: cypress
   doc_type: QTP
   number: S050001
   cypress_document_number: null
@@ -1970,9 +2005,10 @@ documents:
     0.35 µm figure is known only from the title/qualification-purpose text ("TSMC 0.35um"), not from the
     Design Rule field itself. Cypress calls this foundry line "Fab 3" in the Die Fab Line ID field, distinct
     from Cypress''s own numbered fabs (Fab 1-4) and from the "Fab 3" used elsewhere in this corpus for
-    Cypress''s own Bloomington, MN site (e.g. qtp-096091, R28) -- the same "Fab 3" label is thus used for
-    two unrelated fabs (a Cypress-owned Bloomington line and a TSMC foundry line) in different documents.'
+    Cypress''s own Bloomington, MN site (e.g. qtp-096091, R28) -- the same "Fab 3" label is thus used
+    for two unrelated fabs (a Cypress-owned Bloomington line and a TSMC foundry line) in different documents.'
 - id: qtp-051501
+  origin: cypress
   doc_type: QTP
   number: '051501'
   cypress_document_number: null
@@ -2020,11 +2056,12 @@ documents:
   - text: Qualify Cypress Minnesota (CMI) as an additional Sort Site for K002MC5BW (2 Meg)
     location: p.2, Product Qualification History, row 051501 (the table wraps 'Device Family (by extension)'
       onto the next physical line, after the interleaved QTP-number/date columns)
-  notes: 'This report is a test/sort-site qualification (adding CMI Bloomington as a second sort site for
+  notes: This report is a test/sort-site qualification (adding CMI Bloomington as a second sort site for
     a die already fabricated at Powerchip, HsinChu, Taiwan), not a from-scratch technology qualification,
     so it gives no "New Technology" history row for the PowerChip process itself. The Design Rule field
-    prints "0.16um + Stack Capacitor"; the report''s title says "0.165µm".'
+    prints "0.16um + Stack Capacitor"; the report's title says "0.165µm".
 - id: qtp-032005
+  origin: cypress
   doc_type: QTP
   number: '032005'
   cypress_document_number: null
@@ -2074,7 +2111,7 @@ documents:
   - number: '044305'
     description: CYWUSB6035A/B Device qualified by extension
     date: Oct 04
-  - number: '051209'
+  - number: 051209
     description: 3 Layer Mask change on 7B6934A (450C MM1, 500C VIM, 550D MM2)
     date: May 05
   quotes:
@@ -2084,13 +2121,14 @@ documents:
     location: p.3, section heading (the report's own title calls the technology "B53D-3RF")
   - text: 'Die Fab Line ID/Wafer Process ID: Fab4 / B53D-3'
     location: p.3, Technology/Fab Process Description
-  notes: 'Title and later history rows (041503, 041605) call the technology "B53D-3RF"; the
-    process-description heading and Die Fab Line ID both instead say plain "B53D-3" (no "RF" suffix) --
-    the same drop-the-suffix-in-running-text pattern seen elsewhere in this corpus (R7LD-1.8/R7-1.8,
-    R42D-5/R42D). Earliest dated reference to B53D-3: QTP 99256, Aug 00, "New Technology, B53D-3, Fab 4".
-    0.25 µm design rule and 55 Å gate oxide match R52D-3/R52LD-3/R52FFD-3 and L8C-3R -- another Fab
-    4/Bloomington code at the same 0.25 µm generation as the R52 family.'
+  notes: 'Title and later history rows (041503, 041605) call the technology "B53D-3RF"; the process-description
+    heading and Die Fab Line ID both instead say plain "B53D-3" (no "RF" suffix) -- the same drop-the-suffix-in-running-text
+    pattern seen elsewhere in this corpus (R7LD-1.8/R7-1.8, R42D-5/R42D). Earliest dated reference to
+    B53D-3: QTP 99256, Aug 00, "New Technology, B53D-3, Fab 4". 0.25 µm design rule and 55 Å gate oxide
+    match R52D-3/R52LD-3/R52FFD-3 and L8C-3R -- another Fab 4/Bloomington code at the same 0.25 µm generation
+    as the R52 family.'
 - id: qtp-051101
+  origin: cypress
   doc_type: QTP
   number: '051101'
   cypress_document_number: null
@@ -2137,17 +2175,18 @@ documents:
   - text: New Technology B55SGT18A using New Device, CY2DP3110A1 HF Buffer Family
     location: p.2, Package Qualification History, row 015104
   - text: TECHNOLOGY/FAB PROCESS DESCRIPTION – B55STG
-    location: p.3, section heading (transposed letters; the report's title and every other reference
-      say "B55SGT")
+    location: p.3, section heading (transposed letters; the report's title and every other reference say
+      "B55SGT")
   - text: CMOS (0.21 – 0.35 µm), SiGe Bipolar
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
   notes: 'A BiCMOS-style process, not plain CMOS: the Design Rule field itself reads "CMOS (0.21 – 0.35
-    µm), SiGe Bipolar" with separate Bipolar Isolation (STI) and Base/Emitter (SiGe / N+ Poly) fields --
-    the only SiGe-bipolar technology found in this corpus. Naming varies across the same document: title
-    "B55SGT"; earliest history row "B55SGT18A"; a later history row abbreviates "55SGT18A"; the most recent
-    history row says "B55SG"; and the process-description section heading itself misprints "B55STG"
-    (transposed letters). Earliest dated reference: QTP 015104, May 03, "New Technology B55SGT18A".'
+    µm), SiGe Bipolar" with separate Bipolar Isolation (STI) and Base/Emitter (SiGe / N+ Poly) fields
+    -- the only SiGe-bipolar technology found in this corpus. Naming varies across the same document:
+    title "B55SGT"; earliest history row "B55SGT18A"; a later history row abbreviates "55SGT18A"; the
+    most recent history row says "B55SG"; and the process-description section heading itself misprints
+    "B55STG" (transposed letters). Earliest dated reference: QTP 015104, May 03, "New Technology B55SGT18A".'
 - id: qtp-043004
+  origin: cypress
   doc_type: QTP
   number: '043004'
   cypress_document_number: null
@@ -2194,13 +2233,14 @@ documents:
     location: p.3, Technology/Fab Process Description, Gate Oxide Material/Thickness value
   notes: 'Confirms qtp-053301''s (L8C-3R) cross-reference of "New C8Q-3R Technology" to QTP 042106, Jan
     05 -- the process-description figures here (4 metal layers, 0.13 µm, dual gate oxide 32/55 Å, CMI/Bloomington
-    MN) are identical to L8C-3R''s, supporting L8C-3R''s own description of itself as a "Technology
-    Derivative of the C8 Technology": C8Q-3R and L8C-3R appear to be two closely related (possibly
-    process-identical) Fab 4 derivatives of a base "C8" technology. One history row (050305) names a third
-    sibling spelling, "C8Q-3RQ".'
+    MN) are identical to L8C-3R''s, supporting L8C-3R''s own description of itself as a "Technology Derivative
+    of the C8 Technology": C8Q-3R and L8C-3R appear to be two closely related (possibly process-identical)
+    Fab 4 derivatives of a base "C8" technology. One history row (050305) names a third sibling spelling,
+    "C8Q-3RQ".'
 - id: qtp-042806
+  origin: cypress
   doc_type: QTP
-  number: '042806'
+  number: 042806
   cypress_document_number: null
   title: S4ADLATCH Technology, Fab 2
   version: '1.0'
@@ -2234,7 +2274,7 @@ documents:
     description: New Technology S4AD-5 / New Product, Programmable Clock Generator, CY2414ZC, its product
       family and bond option.
     date: Apr 01
-  - number: '042806'
+  - number: 042806
     description: New Product, WLAN Clock Generator, CY5048WAF, S4ADLatch Technology, Fab2
     date: Jan 05
   quotes:
@@ -2247,21 +2287,21 @@ documents:
     location: p.3, Technology/Fab Process Description
   - text: Single Poly, Double Metal, 0.35 µm
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
-  notes: 'This report''s own title calls the technology "S4ADLATCH" (or "S4ADLatch"), but its qualification
-    history reuses S4AD-5''s own "New Technology" row verbatim (QTP 010702, Apr 01, matching qtp-021507''s
+  notes: This report's own title calls the technology "S4ADLATCH" (or "S4ADLatch"), but its qualification
+    history reuses S4AD-5's own "New Technology" row verbatim (QTP 010702, Apr 01, matching qtp-021507's
     identical row for the same event) and its Die Fab Line ID reads plain "Fab2, S4AD-5" -- so "S4AD-Latch"
     reads as a device/option name layered on the S4AD-5 process, not a separate technology. Design rule
-    here is printed as "Single Poly, Double Metal, 0.35 µm" -- the same 0.35 µm figure as qtp-151005
-    (S4AD-5 at HHGrace, 2015), and in direct numeric conflict with qtp-021507 (S4AD-5, this same Fab 2,
-    2003), which for the same technology and Die Fab Line ID ("Fab2, S4AD-5") instead gives "0.5 m" (0.5
-    µm). This is now the *second* independent Fab 2 report to give S4AD-5 as 0.35 µm, versus the *one*
-    Fab 2 report (qtp-021507) giving 0.5 µm -- weakening the possibility that the 0.35 µm figure is only
-    a foundry-specific (HHGrace) shrink, and increasing the likelihood that qtp-021507''s "0.5 m" is
-    itself a misprint (e.g. a dropped "3"). The Gate Oxide field here also reads "SiO2 / 7A", implausibly
-    thin next to qtp-021507''s "110Å" for the same Die Fab Line ID -- most likely a truncated print of
-    "110A" (dropped leading digits) rather than a real value, but printed here exactly as it appears in
-    the source.'
+    here is printed as "Single Poly, Double Metal, 0.35 µm" -- the same 0.35 µm figure as qtp-151005 (S4AD-5
+    at HHGrace, 2015), and in direct numeric conflict with qtp-021507 (S4AD-5, this same Fab 2, 2003),
+    which for the same technology and Die Fab Line ID ("Fab2, S4AD-5") instead gives "0.5 m" (0.5 µm).
+    This is now the *second* independent Fab 2 report to give S4AD-5 as 0.35 µm, versus the *one* Fab
+    2 report (qtp-021507) giving 0.5 µm -- weakening the possibility that the 0.35 µm figure is only a
+    foundry-specific (HHGrace) shrink, and increasing the likelihood that qtp-021507's "0.5 m" is itself
+    a misprint (e.g. a dropped "3"). The Gate Oxide field here also reads "SiO2 / 7A", implausibly thin
+    next to qtp-021507's "110Å" for the same Die Fab Line ID -- most likely a truncated print of "110A"
+    (dropped leading digits) rather than a real value, but printed here exactly as it appears in the source.
 - id: qtp-051005
+  origin: cypress
   doc_type: QTP
   number: '051005'
   cypress_document_number: null
@@ -2294,7 +2334,7 @@ documents:
     description: Automotive PSoC 8C27243/443/643 Rev B Device Product Family on S4AD-5CTI Technology,
       Fab2
     date: Nov 04
-  - number: '042809'
+  - number: 042809
     description: Automotive PSoC 8C24xxx Rev B Device Product Family on S4AD-5CTI Technology, Fab2
     date: Nov 04
   - number: '051005'
@@ -2309,15 +2349,16 @@ documents:
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
   - text: Qualify CY8C21x34 Product Family in S4D-5CTI Technology in Fab 2 for Automotive Application
     location: p.3, Qualification Purpose
-  notes: 'No "New Technology" row is printed for S4AD-5CTI in this table -- all three history rows are
+  notes: No "New Technology" row is printed for S4AD-5CTI in this table -- all three history rows are
     derivative product qualifications, so its own origin date cannot be fixed from this document alone.
     The Die Fab Line ID explicitly appends "SONOS" ("Fab2, S4AD-5CTI SONOS"), confirming the S4-family
-    codes as SONOS (charge-trapping non-volatile) technology, consistent with S8''s later "S8 SONOS
-    technology" naming (qtp-113005). The Qualification Purpose sentence misprints the code as "S4D-5CTI"
-    (dropping the "A"). Design rule 0.35 µm and gate oxide 110 Å here match qtp-042806 (S4ADLatch/S4AD-5,
-    same Fab 2) exactly, and add a third independent Fab 2 report giving 0.35 µm where only qtp-021507
-    (S4AD-5, also Fab 2) gives 0.5 µm -- see qtp-042806''s notes for the fuller comparison.'
+    codes as SONOS (charge-trapping non-volatile) technology, consistent with S8's later "S8 SONOS technology"
+    naming (qtp-113005). The Qualification Purpose sentence misprints the code as "S4D-5CTI" (dropping
+    the "A"). Design rule 0.35 µm and gate oxide 110 Å here match qtp-042806 (S4ADLatch/S4AD-5, same Fab
+    2) exactly, and add a third independent Fab 2 report giving 0.35 µm where only qtp-021507 (S4AD-5,
+    also Fab 2) gives 0.5 µm -- see qtp-042806's notes for the fuller comparison.
 - id: qtp-011503
+  origin: cypress
   doc_type: QTP
   number: '011503'
   cypress_document_number: null
@@ -2364,13 +2405,14 @@ documents:
     TSMC-2A transfer qualification (QTP 99285, May 2003). L28 thus originated as a Cypress-fab technology
     and was later transferred to the TSMC-2A foundry, contrary to this corpus''s earlier working assumption
     (see qtp-080608''s notes, now corrected). Confirmed by qtp-098333 (same Fab2/L28 process figures,
-    QTP 98333, Aug 2003, CY2287PVC). Both this Fab 2 version of L28 and the TSMC-2A version share the same
-    0.65 µm design rule, but their metal compositions, passivation and gate-oxide thickness all differ
+    QTP 98333, Aug 2003, CY2287PVC). Both this Fab 2 version of L28 and the TSMC-2A version share the
+    same 0.65 µm design rule, but their metal compositions, passivation and gate-oxide thickness all differ
     (Fab 2: Metal1 500Å Ti/1,200Å TiW/6,000Å Al/1,200Å TiW, 3,000Å TEOS + 15,000Å Si2N4, 145 Å gate oxide;
     TSMC-2A per qtp-080608/qtp-110605: Metal1 400Å Ti/1,000Å TiN/4,700Å AlSiCu/375Å TiN, 3,000Å SiN/3,150Å
     SOG/1,200Å SiN, 125 Å gate oxide) -- the same technology name and design rule cover two measurably
     different process recipes at the two sites.'
 - id: qtp-098333
+  origin: cypress
   doc_type: QTP
   number: '98333'
   cypress_document_number: null
@@ -2405,15 +2447,14 @@ documents:
     location: p.2, page header
   - text: TECHNOLOGY/FAB PROCESS DESCRIPTION - L28
     location: p.3, section heading
-  - text: To qualify Fab2 to fabricate 7C81200A Clock Motherboard family, commercial products in L28
-      Technology.
+  - text: To qualify Fab2 to fabricate 7C81200A Clock Motherboard family, commercial products in L28 Technology.
     location: p.3, Qualification Purpose
-  notes: 'No Product/Technology Qualification History table is printed in this report (early-style, like
+  notes: No Product/Technology Qualification History table is printed in this report (early-style, like
     qtp-096091/qtp-096182/qtp-096411); its qualification purpose describes qualifying Fab 2 itself to
-    fabricate a device family in L28 Technology. Confirms qtp-011503''s Fab2/L28 process-description
-    figures verbatim (0.65 µm, 2 metal layers, 145 Å gate oxide, identical metal composition and
-    passivation).'
+    fabricate a device family in L28 Technology. Confirms qtp-011503's Fab2/L28 process-description figures
+    verbatim (0.65 µm, 2 metal layers, 145 Å gate oxide, identical metal composition and passivation).
 - id: qtp-099034
+  origin: cypress
   doc_type: QTP
   number: '99034'
   cypress_document_number: null
@@ -2447,13 +2488,14 @@ documents:
     location: p.2, section heading
   - text: 'Die Fab Line ID/Wafer Process ID: Fab2/L28EPD'
     location: p.2, Technology/Fab Process Description
-  notes: 'No Product/Technology Qualification History table is printed (early-style, Mar 1999, matching
-    qtp-096091/qtp-096182/qtp-096411/qtp-098333). L28EPD''s process-description figures (0.65 µm, 2 metal
-    layers, 145 Å gate oxide, identical metal composition and passivation) are byte-for-byte the same as
-    plain "L28" at the same Fab 2 (qtp-011503, qtp-098333) -- L28EPD reads as an EPD-suffixed variant of
-    the same Fab 2 process rather than a differently built technology; no report in this corpus explains
-    what "EPD" stands for.'
+  notes: No Product/Technology Qualification History table is printed (early-style, Mar 1999, matching
+    qtp-096091/qtp-096182/qtp-096411/qtp-098333). L28EPD's process-description figures (0.65 µm, 2 metal
+    layers, 145 Å gate oxide, identical metal composition and passivation) are byte-for-byte the same
+    as plain "L28" at the same Fab 2 (qtp-011503, qtp-098333) -- L28EPD reads as an EPD-suffixed variant
+    of the same Fab 2 process rather than a differently built technology; no report in this corpus explains
+    what "EPD" stands for.
 - id: qtp-032003
+  origin: cypress
   doc_type: QTP
   number: '032003'
   cypress_document_number: 001-81773 Rev. *C
@@ -2508,16 +2550,17 @@ documents:
     location: p.4, Technology/Fab Process Description
   - text: Qualify CY7C144*A/146*A Synchronous product family in qualified technology R9FT-
     location: p.4, Qualification Purpose (the source wraps '3R, Fab 4' onto the next physical line)
-  notes: 'This is the standalone R9T-3R report that an earlier search pass in this corpus (see
-    docs/plans/progress-cyhist-qtp.md) tried and found only as a 404 (QTP 042205); the same technology is
-    independently confirmed here under a different QTP number (032003). Unlike qtp-051207 (R9Q-3R, the QDR
-    variant, which has an internal 4-metal-layers-table vs "Triple Metal"-text mismatch), this R9T-3R
-    report''s own Number of Metal Layers field (3) and its Design Rule text ("Triple Metal") agree with
-    each other -- R9T-3R itself is a true 3-metal-layer, 90 nm process, distinct from R9Q-3R''s 4-layer
-    variant despite the shared "R9" family name. The Qualification Purpose sentence names the technology
-    "R9FT-3R" (an extra "F") where every other reference in the document says "R9T-3R" -- another one-off
-    spelling variant in this corpus, similar to R7FTW-3R/R7FT-3R.'
+  notes: This is the standalone R9T-3R report that an earlier search pass in this corpus (see docs/plans/progress-cyhist-qtp.md)
+    tried and found only as a 404 (QTP 042205); the same technology is independently confirmed here under
+    a different QTP number (032003). Unlike qtp-051207 (R9Q-3R, the QDR variant, which has an internal
+    4-metal-layers-table vs "Triple Metal"-text mismatch), this R9T-3R report's own Number of Metal Layers
+    field (3) and its Design Rule text ("Triple Metal") agree with each other -- R9T-3R itself is a true
+    3-metal-layer, 90 nm process, distinct from R9Q-3R's 4-layer variant despite the shared "R9" family
+    name. The Qualification Purpose sentence names the technology "R9FT-3R" (an extra "F") where every
+    other reference in the document says "R9T-3R" -- another one-off spelling variant in this corpus,
+    similar to R7FTW-3R/R7FT-3R.
 - id: qtp-098021
+  origin: cypress
   doc_type: QTP
   number: '98021'
   cypress_document_number: null
@@ -2552,15 +2595,16 @@ documents:
     location: p.2, Technology/Fab Process Description
   - text: CMOS, Single Local Interconnect, Double Metal /0.5 µm
     location: p.2, Technology/Fab Process Description, Generic Process Technology/Design Rule value
-  notes: 'No Product/Technology Qualification History table is printed (early-style, Jul 1998). The
-    title itself calls this a "5% Shrink" of R32D. R32D has 2 metal layers ("Single Local Interconnect,
-    Double Metal") against plain R32''s 1 metal layer (qtp-097132, "Double Poly, Single Metal") -- both
-    0.5 µm and both Fab4/Bloomington -- consistent with a "D" suffix meaning a double-metal derivative of
-    the base single-metal code, the same pattern the corpus already shows for R42/R42D and R52/R52D-family
-    codes.'
+  notes: No Product/Technology Qualification History table is printed (early-style, Jul 1998). The title
+    itself calls this a "5% Shrink" of R32D. R32D has 2 metal layers ("Single Local Interconnect, Double
+    Metal") against plain R32's 1 metal layer (qtp-097132, "Double Poly, Single Metal") -- both 0.5 µm
+    and both Fab4/Bloomington -- consistent with a "D" suffix meaning a double-metal derivative of the
+    base single-metal code, the same pattern the corpus already shows for R42/R42D and R52/R52D-family
+    codes.
 - id: qtp-062509
+  origin: cypress
   doc_type: QTP
-  number: '062509'
+  number: 062509
   cypress_document_number: 001-88313 Rev. *A
   title: Neutron Device Family, S4AD-5 Technology, GSMC
   version: '*A'
@@ -2593,7 +2637,7 @@ documents:
   - number: '060605'
     description: Qualify GSMC using PSoC Device Product Family on S4AD-5 Technology
     date: Aug 06
-  - number: '062509'
+  - number: 062509
     description: Neutron Device Product Family on S4AD-5 Technology transfer to GSMC
     date: Aug 06
   - number: '071504'
@@ -2609,14 +2653,15 @@ documents:
     location: p.3, section heading
   - text: Single Poly, Double Metal, 0.35 µm
     location: p.3, Technology/Fab Process Description, Generic Process Technology/Design Rule value
-  notes: 'A third foundry site for S4AD-5, alongside Fab 2 (qtp-021507, qtp-042806) and HHGrace
-    (qtp-151005): here transferred to GSMC (Grace Semiconductor, Shanghai); the report does not say from
-    which fab. Its only Fab 4 row (071504, Aug 07) is dated a year after the transfer. The Qualification Purpose
-    sentence misprints the code as "S4D-5" (dropping the "A", the same slip seen in qtp-051005''s
-    "S4D-5CTI"); the process-description heading correctly says "S4AD-5". Design rule 0.35 µm and gate
-    oxide 110 Å match qtp-151005 (HHGrace) and qtp-042806/qtp-051005 (Fab 2) exactly -- now four
-    independent reports giving S4AD-5 as 0.35 µm against the lone 0.5 µm figure in qtp-021507.'
+  notes: 'A third foundry site for S4AD-5, alongside Fab 2 (qtp-021507, qtp-042806) and HHGrace (qtp-151005):
+    here transferred to GSMC (Grace Semiconductor, Shanghai); the report does not say from which fab.
+    Its only Fab 4 row (071504, Aug 07) is dated a year after the transfer. The Qualification Purpose
+    sentence misprints the code as "S4D-5" (dropping the "A", the same slip seen in qtp-051005''s "S4D-5CTI");
+    the process-description heading correctly says "S4AD-5". Design rule 0.35 µm and gate oxide 110 Å
+    match qtp-151005 (HHGrace) and qtp-042806/qtp-051005 (Fab 2) exactly -- now four independent reports
+    giving S4AD-5 as 0.35 µm against the lone 0.5 µm figure in qtp-021507.'
 - id: qtp-098462
+  origin: cypress
   doc_type: QTP
   number: '98462'
   cypress_document_number: 001-87920 Rev. *B
@@ -2664,15 +2709,16 @@ documents:
     location: p.2, Product Qualification History, row 000301
   - text: 'Die Fab Line ID/Wafer Process ID: Skywater/R52D-5R'
     location: p.3, Technology/Fab Process Description
-  notes: 'This 2019 reissue (Rev *B) redacts every numeric process field as "Proprietary" and names the
-    die fab "Skywater -- Bloomington, MN" for a QTP 000301/98462 event dated Apr 00 -- the same
-    retroactive fab-owner substitution pattern noted for qtp-041406 and qtp-098462''s sibling RAM8NLD-1.8
-    reissue (SkyWater did not exist until 2017). The title itself prints the code as "R5D-5R" (dropping
-    the "2"), while the qualification history and process-description heading both say "R52D-5R" -- a
-    further variant of the R52-family suffix pattern (R52D, R52D-3, R52D-5R), and weak evidence that "R5"
-    is understood internally as a valid abbreviation for the "R52" family root, alongside the plain "R5"
-    naming already implied by "R52", "R5D" and "R59" -- style codes throughout this corpus.'
+  notes: This 2019 reissue (Rev *B) redacts every numeric process field as "Proprietary" and names the
+    die fab "Skywater -- Bloomington, MN" for a QTP 000301/98462 event dated Apr 00 -- the same retroactive
+    fab-owner substitution pattern noted for qtp-041406 and qtp-098462's sibling RAM8NLD-1.8 reissue (SkyWater
+    did not exist until 2017). The title itself prints the code as "R5D-5R" (dropping the "2"), while
+    the qualification history and process-description heading both say "R52D-5R" -- a further variant
+    of the R52-family suffix pattern (R52D, R52D-3, R52D-5R), and weak evidence that "R5" is understood
+    internally as a valid abbreviation for the "R52" family root, alongside the plain "R5" naming already
+    implied by "R52", "R5D" and "R59" -- style codes throughout this corpus.
 - id: qtp-i000005
+  origin: cypress
   doc_type: QTP
   number: I000005
   cypress_document_number: 001-89529 Rev. **
@@ -2716,20 +2762,19 @@ documents:
     date: '2000'
   quotes:
   - text: 3.3V, 125MHz Multi-Output Zero Delay Buffer, CY29972AIT is a member of the G35C
-    location: p.2, Product Qualification History, row I000005 (the table wraps 'base wafer product,
-      0.35um Technology, Chartered Semiconductor Singapore, Fab 2' onto the next physical line)
+    location: p.2, Product Qualification History, row I000005 (the table wraps 'base wafer product, 0.35um
+      Technology, Chartered Semiconductor Singapore, Fab 2' onto the next physical line)
   - text: TECHNOLOGY/FAB PROCESS DESCRIPTION S4AD-5
-    location: p.3, section heading (this report is about the G35C/CSM 0.35 µm foundry technology
-      throughout; "S4AD-5" is an unrelated code)
-  notes: 'This is one CSM (Chartered Semiconductor Manufacturing, Singapore) foundry technology already
+    location: p.3, section heading (this report is about the G35C/CSM 0.35 µm foundry technology throughout;
+      "S4AD-5" is an unrelated code)
+  notes: This is one CSM (Chartered Semiconductor Manufacturing, Singapore) foundry technology already
     named as a base-die platform in qtp-i000006 (the IMI-acquisition summary report, "A35C/G35C base die
-    platform (0.35uM, 3 layers metal, CMOS, CSM - Singapore)"); this document gives a full
-    Technology/Fab Process Description for the G35C variant specifically, confirming 0.35 µm, 3 metal
-    layers and CMOS. Cypress calls this foundry "Fab 2" in its own numbering here (Chartered Semiconductor
-    Singapore, Fab 2) -- a third distinct usage of the "Fab 2" label in this corpus, alongside Cypress''s
-    own Round Rock, TX Fab 2 and TSMC''s "Fab 3" (qtp-s050001). The Technology/Fab Process Description
-    section heading misprints "S4AD-5" -- a wholly unrelated SONOS technology -- continuing the pattern of
-    stale/copy-pasted headings already seen in qtp-082506 ("R52D-3" in an R52T-3 report) and qtp-110605
-    ("R9T-3R" in an L28 report); this is now the third such mismatched heading found in this corpus,
-    suggesting Cypress''s QTP template was commonly cloned from an unrelated prior report without updating
-    this one field.'
+    platform (0.35uM, 3 layers metal, CMOS, CSM - Singapore)"); this document gives a full Technology/Fab
+    Process Description for the G35C variant specifically, confirming 0.35 µm, 3 metal layers and CMOS.
+    Cypress calls this foundry "Fab 2" in its own numbering here (Chartered Semiconductor Singapore, Fab
+    2) -- a third distinct usage of the "Fab 2" label in this corpus, alongside Cypress's own Round Rock,
+    TX Fab 2 and TSMC's "Fab 3" (qtp-s050001). The Technology/Fab Process Description section heading
+    misprints "S4AD-5" -- a wholly unrelated SONOS technology -- continuing the pattern of stale/copy-pasted
+    headings already seen in qtp-082506 ("R52D-3" in an R52T-3 report) and qtp-110605 ("R9T-3R" in an
+    L28 report); this is now the third such mismatched heading found in this corpus, suggesting Cypress's
+    QTP template was commonly cloned from an unrelated prior report without updating this one field.

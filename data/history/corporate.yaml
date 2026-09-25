@@ -20,6 +20,7 @@ schema_version: 1
 retrieved: 2026-09-25
 records:
 - id: cyhist-corp-1993-10k
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: Form 10-K for the fiscal year ended 1994-01-03 (fiscal year 1993)
@@ -75,6 +76,7 @@ records:
     adds the manufacturing/R&D paragraph's process-generation sentence, which that record's summary paraphrases
     but does not quote in full.
 - id: cyhist-corp-1994-1995-proxy-cmi
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: Definitive proxy statements (Schedule 14A), 1994 and 1995 annual meetings
@@ -105,6 +107,7 @@ records:
     process-technology or fab content. CMI complements CTI (cyhist-corp-1995-ar-cti below): Cypress used
     "(state) Inc." subsidiary names for its non-San-Jose fabs.'
 - id: cyhist-corp-1996-10q-q1
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: Form 10-Q for the quarterly period ended 1996-04-01
@@ -131,6 +134,7 @@ records:
   notes: Filed by Cypress itself (CIK 0000791915); found via a Wayback CDX listing of the CIK's Archives
     folder, not a filing-list page.
 - id: cyhist-corp-1996-10q-q3-fab1-rd
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: Form 10-Q for the quarterly period ended 1996-09-30
@@ -169,6 +173,7 @@ records:
     account that Cypress stopped manufacturing at San Jose headquarters in October 1996 and converted
     it to R&D only (see cyhist-corp-sec-fundinguniverse). Two independent sources -- SUPPORTED, not single-source.
 - id: cyhist-corp-1995-ar-cti
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 1995 Annual Report to shareholders, for the fiscal year ended 1996-01-01
@@ -206,6 +211,7 @@ records:
     annual reports read (single source). "Fab IVb" as a name distinct from "Fab IV" is also single-source
     here.
 - id: cyhist-corp-1996-ar-fabv-fab1rd
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 1996 Annual Report to shareholders, for the fiscal year ended 1996-12-29
@@ -250,6 +256,7 @@ records:
     restated in March 1998 as "an 8-inch facility that will be built in the second half of 1999" (cyhist-corp-pr-1998-restructure).
     No later report found says it was built.'
 - id: cyhist-corp-1997-ar-fabs
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 1997 Annual Report to shareholders, for the fiscal year ended 1997-12-28
@@ -291,6 +298,7 @@ records:
   notes: No mention of "Fab 5" here -- consistent with the note on cyhist-corp-1996-ar-fabv-fab1rd that
     the name drops out of use after 1996-1997.
 - id: cyhist-corp-1998-ar-fab3-close-025um
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 1998 Annual Report to shareholders, for the fiscal year ended 1998-12-27
@@ -336,6 +344,7 @@ records:
     with data/filings.yaml''s note (via the FY1993 record) that the original 6-inch Fab 3 plant was "shut
     down in 1998".'
 - id: cyhist-corp-pr-1998-restructure
+  origin: eetimes
   source:
     publisher: EE Times
     title: Cypress Restructures Manufacturing Operations
@@ -372,6 +381,7 @@ records:
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
     every quote is verbatim in that capture.
 - id: cyhist-corp-2001-ar-transfer
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2001 Annual Report to shareholders, for the fiscal year ended 2001-12-30
@@ -405,6 +415,7 @@ records:
   notes: Matches data/filings.yaml's cypress-annual-report-fy2001 summary; this record adds the exact
     process-transfer sentence verbatim.
 - id: cyhist-corp-2002-ar-ram7-ram8-sonos
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2002 Annual Report to shareholders, for the fiscal year ended 2002-12-29
@@ -457,6 +468,7 @@ records:
     in Fab 2. No annual report read (FY1993, FY1995-2010) uses the name "S4"; that name comes from the
     EE Times 2005-12-12 article (cyhist-corp-pr-2005-grace-deal) and from the qualification reports ("S4AD-5").
 - id: cyhist-corp-2003-ar-soi-90nm
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2003 Annual Report to shareholders, for the fiscal year ended 2003-12-28
@@ -496,6 +508,7 @@ records:
   notes: Corroborates cyhist-corp-2002-ar-ram7-ram8-sonos on the SOI/Honeywell programme and the fab-2/fab-4
     process list one year on.
 - id: cyhist-corp-2004-ar-90nm-prod
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2004 Annual Report to shareholders, for the fiscal year ended 2005-01-02
@@ -531,6 +544,7 @@ records:
   notes: First explicit statement in this corpus that outside wafer foundries already made part of Cypress's
     product volume before the December 2005 Grace agreement.
 - id: cyhist-corp-2005-ar-grace-flexmfg
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2005 Annual Report to shareholders, for the fiscal year ended 2006-01-01
@@ -569,6 +583,7 @@ records:
     articles report from the trade-press side (cyhist-corp-pr-2005-grace-deal, cyhist-corp-pr-2006-grace-c8-130nm,
     cyhist-corp-pr-2007-fablite).
 - id: cyhist-corp-2006-ar-history-grace-complete
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2006 Annual Report and 2007 Proxy Statement, including Form 10-K for the fiscal year ended
@@ -611,6 +626,7 @@ records:
     to content, a pypdf/ custom-CMap issue); the Item 1 Business section quoted above extracts cleanly
     and is what is quoted here.'
 - id: cyhist-corp-pr-2005-grace-deal
+  origin: eetimes
   source:
     publisher: EE Times
     title: Cypress Semiconductor Foundry Deal with Grace ("Cypress inks foundry deal with Grace")
@@ -647,6 +663,7 @@ records:
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
     every quote is verbatim in that capture.
 - id: cyhist-corp-pr-2006-grace-c8-130nm
+  origin: eetimes
   source:
     publisher: EE Times
     title: Cypress Transfers 130-nm Process to Grace
@@ -676,6 +693,7 @@ records:
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
     every quote is verbatim in that capture.
 - id: cyhist-corp-pr-2007-fablite-umc
+  origin: eetimes
   source:
     publisher: EE Times
     title: Cypress Furthers 'Fab Lite'
@@ -716,6 +734,7 @@ records:
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
     every quote is verbatim in that capture.
 - id: cyhist-corp-pr-2007-sram-foundry-ew
+  origin: ew
   source:
     publisher: Electronics Weekly
     title: Cypress moves SRAM production to foundry
@@ -752,6 +771,7 @@ records:
     nm C8 line; EE Times the same month says Grace "isn't capable of 65-nm manufacturing" (cyhist-corp-pr-2007-fablite-umc),
     a conflict between the two articles.
 - id: cyhist-corp-pr-2007-fab2exit-semidigest
+  origin: semidigest
   source:
     publisher: Semiconductor Digest (semiconductor-digest.com)
     title: Cypress getting rid of Round Rock, TX fab
@@ -794,6 +814,7 @@ records:
     an ~1988 opening. All three sources put the opening within a few years of each other (1986-1988) without
     an exact match -- flagged CONFLICT (minor, 1986 vs ~1988) in the timeline rather than resolved.'
 - id: cyhist-corp-pr-2008-roundrock-warehouse
+  origin: connectcre
   source:
     publisher: Connect CRE (connectcre.com)
     title: Former Round Rock Cypress Plant Converting to Warehouses
@@ -830,6 +851,7 @@ records:
     "Open for 20 years" (2008 - 20 = ~1988) is the source of the minor opening-date CONFLICT noted on
     cyhist-corp-pr-2007-fab2exit-semidigest ("opened in 1986").
 - id: cyhist-corp-2008-ar-simtek
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2008 Annual Report, including the Form 10-K for the fiscal year ended 2008-12-28
@@ -856,6 +878,7 @@ records:
     The report presents Simtek as a product line and subsidiary acquisition; it does not say that Simtek
     brought a fab or a process technology. See cyhist-corp-2009-ar-nvsram-umc for the nvSRAM/UMC follow-up.
 - id: cyhist-corp-2009-ar-nvsram-umc
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2009 Annual Report, including the Form 10-K for the fiscal year ended 2010-01-03
@@ -886,6 +909,7 @@ records:
     is used for nvSRAM specifically -- UNSUPPORTED for the "Simtek brought SONOS" part of the task's acquisition
     list, only nvSRAM as a product line is confirmed.
 - id: cyhist-corp-2010-ar-s8
+  origin: cypress
   source:
     publisher: Cypress Semiconductor Corporation
     title: 2010 Annual Report, including the Form 10-K for the fiscal year ended 2011-01-02
@@ -922,6 +946,7 @@ records:
   notes: Second China foundry (2010-2011) is additional to Grace and is not named in this report; not
     yet cross-checked against trade press (open item).
 - id: cyhist-corp-pr-2011-innopower-sonos
+  origin: cypress
   source:
     publisher: Business Wire (republished by Design & Reuse)
     title: Cypress Signs Innopower to Enable SONOS-Based Embedded Flash Solutions for 130-nm and 65-nm
@@ -962,6 +987,7 @@ records:
     implies "Wayback copy where one exists". "This project's own SONOS = high-volume at 130-nm" statement
     post-dates the FY2010 S8 report by only months and is consistent with it.
 - id: cyhist-corp-sec-fundinguniverse
+  origin: gale
   source:
     publisher: FundingUniverse (International Directory of Company Histories, Gale)
     title: History of Cypress Semiconductor Corporation
@@ -1032,6 +1058,7 @@ records:
     "International Directory of Company Histories" entry, so they are NOT independent of each other and
     together count as only one secondary source, not two.
 - id: cyhist-corp-sec-encyclopedia
+  origin: gale
   source:
     publisher: Encyclopedia.com (International Directory of Company Histories, Gale)
     title: Cypress Semiconductor Corp
@@ -1069,6 +1096,7 @@ records:
     online in 1998" is the clearest secondary corroboration of the "Fab 5" project (cyhist-corp-1996-ar-fabv-fab1rd,
     cyhist-corp-pr-1998-restructure) even though it does not use that name.'
 - id: cyhist-corp-pr-2000-silicon-light-machines
+  origin: cypress
   source:
     publisher: EDN
     title: Why Cypress acquired Silicon Light Machines
@@ -1101,6 +1129,7 @@ records:
     the site does not answer scripted fetches with the project's user agent and has no Wayback capture;
     every quote is verbatim in that capture.
 - id: cyhist-corp-sec-wikipedia
+  origin: wikipedia
   source:
     publisher: Wikipedia
     title: Cypress Semiconductor

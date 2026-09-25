@@ -1,33 +1,37 @@
 (history-fabs)=
 # Cypress's fabs and foundries, 1983–2010
 
-Before S8, Cypress made wafers in four fabs of its own: one in San Jose, one in Round Rock, Texas, and
-two on one site in Bloomington, Minnesota. From 2000 it also bought wafers from foundries. This page
-says which fab ran what, and when, as far as public sources show. The technologies themselves are
-described on {ref}`history-technologies`.
+Before S8, Cypress made wafers in fabs of its own: one in San Jose, one in Round Rock, Texas, and two on
+one site in Bloomington, Minnesota. From 1998 it also used foundries (single source).[^ar-fy1998] This page says which
+fab ran what, and when, as far as public sources show. The processes themselves are described on
+{ref}`history-technologies`.
 
 ## At a glance
 
-| Fab | Where | Wafers | Cypress years | Process families the sources place there |
-|---|---|---|---|---|
-| Fab 1 | San Jose, California | 6-inch by 1993, 8-inch from 2000 | first fab; production to 1996, then R&D to 2007 | development of 0.13 µm and 90 nm |
-| Fab 2 ("Cypress Texas", CTI) | Round Rock, Texas | 6-inch (150 mm) | 1986–2008 | R28 (0.65 µm SRAM), S4AD-5 (SONOS) |
-| Fab 3 ("Cypress Minnesota", CMI) | Bloomington, Minnesota | 6-inch | 1991–1998 | R28 (0.65 µm SRAM), about 0.6 µm |
-| Fab 4 (later "Fab 4a") | Bloomington, Minnesota, same site as Fab 3 | 8-inch (200 mm) | 1995–2017 | R42 (0.35–0.42 µm), R7 (0.25–0.15 µm), R8/C8/L8 (0.13 µm), C9/R9/R95 (90 nm), S8 |
+| Fab | Where and wafer size | Cypress years | Processes the sources place there |
+|---|---|---|---|
+| Fab 1 | San Jose, California; 6-inch by 1993, 8-inch from 2000 | first fab; production to 1996, then R&D to 2007 | development of RAM3, 0.13 µm and 90 nm |
+| Fab 2 ("Cypress Texas", CTI) | Round Rock, Texas; 6-inch (150 mm) | 1986–2008 | R28, L28, L28EPD, P26 (0.65 µm); S4AD-5 (SONOS) |
+| Fab 3 ("Cypress Minnesota", CMI) | Bloomington, Minnesota; 6-inch | 1991–1998 | R28 (0.65 µm), about 0.6 µm |
+| Fab 4 (later "Fab 4a") | Bloomington, beside Fab 3; 8-inch (200 mm) | 1995–2017 | R32, R42, RAM42, R52, B53D-3, B55SGT, R7, R8, C8, 90 nm, S8 |
 
 The table summarises the sections below, where each entry carries its sources.
 
 ## Fab 1, San Jose
 
 Cypress's 1993 10-K calls Fab 1 "the Company's first fabrication facility, recently upgraded to 6-inch
-wafers" and the heart of its research and development (single source).[^ar-fy1993] In October 1996
-Cypress announced that Fab 1 would stop production and become "strictly a research and development
-facility", with production to cease by December 1996.[^tenq-1996q3][^ar-fy1996][^fu-cypress]
+wafers" and the heart of its research and development (single source).[^ar-fy1993] Cypress developed
+its RAM3 process there (single source).[^ar-fy1996]
 
-The move of production to one eight-inch fab led Cypress to decide in 1998 to convert Fab 1 from
-six-inch to eight-inch wafers "to ensure compatibility".[^ar-fy1997][^ar-fy1998] Cypress's 2001 report
-says the conversion was done in fiscal 2000.[^ar-fy2001] Fab 1 then served as the development fab for
-the next generations:
+In the third quarter of 1996 Cypress announced that Fab 1 would stop production and become "strictly a
+research and development facility", with production to cease by December 1996.[^tenq-1996q3][^ar-fy1996]
+The Gale company history dates the shutdown of manufacturing in San Jose to October 1996 (single
+source).[^fu-cypress]
+
+The move of production to one eight-inch fab led Cypress to decide in 1998 to convert Fab 1 from six-inch
+to eight-inch wafers "to ensure compatibility". Cypress's 2001 report says the conversion was done in
+fiscal 2000 (Cypress's reports).[^ar-fy1997][^ar-fy1998][^ar-fy2001] Fab 1 then served as the development
+fab for the next generations:
 
 * **0.13 µm.** In July 2000 Cypress and Mosel Vitelic agreed to develop 0.13 µm technology together,
   "initially be deployed in Cypress's Fab 1 R&D facility" (single source).[^eet-2000-mosel]
@@ -41,135 +45,166 @@ Jose, Calif., in 2007".[^eet-2007-fablite][^ar-fy2009]
 ## Fab 2, Round Rock, Texas
 
 Fab 2 belonged to a subsidiary, Cypress Semiconductor (Texas), Inc. ("CTI"). Cypress's 1995 report says
-Altera owned about 17 % of it (single source).[^ar-fy1995] The qualification reports name the fab
-"CTI Round Rock, TX".[^qtp-021507] In 1993 it was the company's largest fab (single source).[^ar-fy1993]
+Altera owned about 17 % of it (single source).[^ar-fy1995]
 
-**Opening.** Cypress's 2008 report says Fab 2 ran "for all of its 22 years of operation" up to 2008,
-and Semiconductor Digest says it "opened in 1986".[^ar-fy2008][^sd-2007-fab2] A later property report
-says the campus "had been open for 20 years" when it closed in 2008, which would put the opening
-around 1988; the sources disagree on this point.[^ccre-roundrock]
+The qualification reports name the fab "CTI Round Rock, TX" (Cypress's reports).[^ar-fy1995][^qtp-021507]
+In 1993 it was the company's largest fab (single source).[^ar-fy1993]
 
-**Wafers and processes.** Fab 2 ran six-inch (150 mm) wafers throughout.[^ar-fy1997][^eet-2007-fablite]
-In 1997 Cypress said Fabs 2 and 3 produced six-inch wafers "primarily with 0.6-micron" processes.[^ar-fy1997]
-Cypress's qualification reports show:
+**Opening.** Cypress's 2008 report says Fab 2 ran "for all of its 22 years of operation" up to 2008, and
+Semiconductor Digest says it "opened in 1986".[^ar-fy2008][^sd-2007-fab2] A later property report says the
+campus "had been open for 20 years" when it closed in 2008, which would put the opening around 1988;
+the sources disagree on this point.[^ar-fy2008][^ccre-roundrock]
 
-* **R28.** 0.65 µm SRAM products qualified at Fab 2 in November 1997, and a further R28 product moved
-  from Fab 3 to Fab 2 in March 1999 (Cypress's reports).[^qtp-097476][^qtp-098393]
-* **S4AD-5.** "New Technology S4AD-5" was qualified in April 2001 with a clock generator; the report
-  places the process at Fab 2 (Cypress's reports).[^qtp-021507]
+**Wafers and processes.** Fab 2 ran six-inch (150 mm) wafers throughout.[^ar-fy1997][^eet-2007-fablite] In
+1997 Cypress said Fabs 2 and 3 produced six-inch wafers "primarily with 0.6-micron" processes (single
+source).[^ar-fy1997] Cypress's qualification reports show:
+
+* **0.65 µm.** The R28 SRAM process qualified at Fab 2 in November 1997, with a further R28 product moved
+  from Fab 3 in March 1999; the L28 clock and logic process ("New Technology L28", April 1998); and P26
+  for PROMs (Cypress's reports).[^qtp-097476][^qtp-098393][^qtp-011503][^qtp-096411]
+* **S4AD-5.** "New Technology S4AD-5" was qualified in April 2001 with a clock generator (Cypress's
+  reports).[^qtp-021507][^qtp-042806]
 
 In 2002 Cypress wrote that its "SONOS process reduced our Fab 2 line width from 0.5-micron to
-0.35-micron".[^ar-fy2002] That sentence is the only public explanation found for the two design rules
-the S4AD-5 reports print (see {ref}`history-sonos-s4`).
+0.35-micron" (single source).[^ar-fy2002] How that sentence bears on the S4AD-5 design rules is discussed
+on {ref}`history-sonos-s4`.
 
-**Other work.** In March 1998 Cypress said it would stop making SRAMs in Fab 2 and keep it for
-"data communication ICs, programmable logic, and chips for its Computer Products divisions".[^eet-1998-restructure][^ar-fy1998]
-Cypress's CEO later wrote that during the 1998 downturn Fab 2 made micro-mechanical optical chips for
-Silicon Light Machines as foundry work, "using only standard CMOS" (single source).[^edn-2000-slm]
+**SRAMs.** In March 1998 Cypress said Fab 2 would "stop making SRAMs" and keep to "data communication
+ICs, programmable logic, and chips for its Computer Products divisions".[^eet-1998-restructure][^ar-fy1997]
+Its reports, though, record an R28 dual-port SRAM moved into Fab 2 in March 1999; the plan and the
+reports disagree (Cypress's reports).[^qtp-098393][^ar-fy1997]
+
+**Other work.** Cypress's CEO later wrote that during the 1998 downturn Fab 2 made micro-mechanical
+optical chips for Silicon Light Machines as foundry work, "using only standard CMOS" (single
+source).[^edn-2000-slm]
 
 **Closure.** Cypress's board approved leaving the Texas fab in December 2007, and Fab 2 closed in
 2008.[^ar-fy2008][^sd-2007-fab2][^ar-fy2009] Cypress wrote that its "0.35-micron technology on 6-inch
-wafers was no longer economically viable".[^ar-fy2008] Cypress completed the sale of the building in
-2013; the site was later redeveloped as warehouses.[^ar-fy2013][^ccre-roundrock]
+wafers was no longer economically viable" (single source).[^ar-fy2008]
+
+Cypress completed the sale of the building in 2013. A property report says the site is being redeveloped
+as warehouses.[^ar-fy2013][^ccre-roundrock]
 
 ## Fab 3, Bloomington, Minnesota
 
-The Bloomington plant was built in the 1980s by VTC Inc., the chip business Control Data had sold in
-1982. Control Data bought it back in the late 1980s and then sold it to Cypress (single source).[^strib-2019]
-Cypress paid $14.7 million. The Gale company history dates the purchase to the end of 1990 and the Star
-Tribune to January 1991.[^fu-cypress][^strib-2017]
+**Who built the plant.** The Star Tribune gives two builders. In 2017 it wrote that the plant was "built
+in the 1980s by Control Data"; in 2019 it wrote that VTC Inc., the chip business Control Data sold in 1982,
+"added the plant", and that Control Data bought it back in the late 1980s. The two articles
+disagree.[^strib-2017][^strib-2019]
 
-Cypress named the plant Fab 3 and said it "commenced operations in 1991".[^ar-fy1993] A 1994 proxy
-statement names the subsidiary that ran it: Cypress Semiconductor (Minnesota) Inc., "CMI", the
-company's third wafer fab.[^proxy-1994] Fab 3 ran six-inch wafers, mostly at 0.6 µm.[^ar-fy1997][^eet-1998-restructure]
-The R28 SRAM reports of September 1996 place that 0.65 µm process at Fab 3 (Cypress's reports).[^qtp-096091]
+**The purchase.** Cypress paid $14.7 million. The Gale company history dates the purchase to the end of
+1990 and the Star Tribune to January 1991.[^fu-cypress][^strib-2017]
 
-Cypress shut Fab 3 down in 1998 and moved its SRAM production to the eight-inch Fab 4 next
-door.[^ar-fy1998][^eet-1998-restructure]
+**Fab 3.** Cypress named the plant Fab 3 and said it "commenced operations in 1991". A 1994 proxy
+statement names the subsidiary that ran it: Cypress Semiconductor (Minnesota) Inc., "CMI", the company's
+third wafer fab (Cypress's reports).[^ar-fy1993][^proxy-1994] Fab 3 ran six-inch wafers, mostly at
+0.6 µm.[^ar-fy1997][^eet-1998-restructure] The earliest R28 SRAM reports found, of September 1996, place
+that 0.65 µm process at Fab 3 (single source).[^qtp-096091]
+
+**Closure.** Cypress shut Fab 3 down in 1998 and moved its SRAM production to the eight-inch Fab 4 next
+door. Much of Fab 3's equipment was upgraded to eight-inch and used to build out "Fab 4b".[^ar-fy1998][^eet-1998-restructure][^ar-fy1997]
 
 ## Fab 4, Bloomington, Minnesota
 
-Fab 4 is the fab SkyWater runs today (see {ref}`overview-index`). Cypress built it on the Fab 3 site:
-ground was broken in August 1994, and "Fab IV" produced its first revenue wafers "in only 11 months",
-in 1995.[^ar-fy1995][^sd-2007-fab2] It was Cypress's first eight-inch fab.[^ar-fy1995][^ar-fy1997][^sd-2007-fab2]
-The Star Tribune describes the same event from the site's side: "under Cypress, the size of the
-cleanroom at SkyWater's plant more than doubled" (single source).[^strib-2019]
+**Building it.** Cypress built Fab 4 on the Fab 3 site: ground was broken in August 1994, and "Fab IV"
+produced its first revenue wafers "in only 11 months", in 1995.[^ar-fy1995][^sd-2007-fab2] It was
+Cypress's first eight-inch fab.[^ar-fy1995][^ar-fy1997][^sd-2007-fab2]
 
-Cypress's reports also use the names "Fab IVb" (a 1995 lease) and "Fab 4a", with "Fab 4b" and
-"Fab 4c" planned on the same site in 2000 (Cypress's reports).[^ar-fy1995][^ar-fy1999] No later source
-says whether Fab 4b and Fab 4c were built.
+**One site, two fabs.** SkyWater's plant is described in the press as the plant Cypress bought in 1991,
+and the SKY130 reference counts Cypress's time there as 26 years, 1991 to 2017 (see {ref}`filings-index`).[^strib-2017]
+Both descriptions fit the reports: the site bought in 1991 held Fab 3, and Fab 4 was added to it in
+1994–95. We read the Star Tribune's "under Cypress, the size of the cleanroom at SkyWater's plant more than
+doubled" as the Fab 4 addition (our reading).[^strib-2019]
 
-**Technologies.** Fab 4 ran every Cypress SRAM and logic generation from 0.35 µm to 90 nm:
+**Fab 4a, 4b and 4c.** In 1998 Cypress built out "Fab 4b" with Fab 3's upgraded equipment instead of
+buying new tools. Its 1999 report speaks of "constructing Fab 4b and Fab 4c, located on the same site as
+Fab 4a" (Cypress's reports).[^ar-fy1997][^ar-fy1999] No later source found says whether Fab 4c was
+completed.
 
-* **R42.** R42D and R42HD were qualified at Fab 4 from October and November 1997 (Cypress's
-  reports).[^qtp-003907][^qtp-102101]
-* **R7, R8, C8, L8, C9, R9, R95 and S8.** A 2015 notice lists "250nm R7, 130nm C8/R8/S8/L8 and
-  90nm C9/R9/R95 technology products at Cypress Fab 4".[^pin-152804]
+**Processes.** Fab 4 ran every Cypress SRAM and logic generation from 0.5 µm to 90 nm:
+
+* **R42.** "New R42D Technology Qualification" is dated October 1997 and R42HD November 1997 (Cypress's
+  reports).[^qtp-097483][^qtp-102101]
+* **R7, R8, C8, L8, C9, R9, R95 and S8.** A 2015 Cypress notice lists "250nm R7, 130nm C8/R8/S8/L8 and
+  90nm C9/R9/R95 technology products at Cypress Fab 4" (single source).[^pin-152804]
 * **S8.** The first S8 qualification, "S8 SONOS technology", was at "Cypress Minnesota CMI (Fab4)" in
-  November 2008 (Cypress's reports).[^qtp-113005][^ar-fy2010]
+  November 2008 (single source).[^qtp-113005] Cypress's 2010 report calls S8 its PSoC process, run in Fab 4
+  and at foundries.[^ar-fy2010]
 
 Cypress sold Fab 4 in March 2017 to the new SkyWater Technology Foundry.[^tenq-2017q1][^strib-2017]
 
 ## The "Fab 5" that was not built
 
-Cypress's 1996 report shows it breaking ground on "Fab V in Round Rock, Texas", an eight-inch fab of
-225,000 square feet.[^ar-fy1996] In March 1998 the CEO said 0.25 µm technology would go into "Fab 5, an
-8-inch facility that will be built in the second half of 1999".[^eet-1998-restructure]
+Cypress planned a second, eight-inch fab in Round Rock, called "Fab V" or "Fab 5". Its own reports trace
+the project:
 
-No later annual report mentions Fab 5. Semiconductor Digest says only that Fab 2 was "expanded in
-1999".[^sd-2007-fab2] Whether the Fab 5 project became that expansion, or was dropped, is not in the
-public record found.
+* **1995–1996.** Cypress bought 110 more acres in Round Rock and "broken ground on Fab V", to be "almost
+  identical" to Fab IV.[^ar-fy1995][^ar-fy1996]
+* **1996.** "In the third quarter, the Company decided to put on hold construction of Fab V due to market
+  conditions." (single source)[^ar-fy1996]
+* **1998.** Fab 5 "can now be deferred until late 1999", and 0.25 µm technology would go into "Fab 5, an
+  8-inch facility that will be built in the second half of 1999".[^ar-fy1997][^eet-1998-restructure]
 
-In the qualification reports, "Fab 5" means something else: the Grace foundry in Shanghai (see
-below).[^qtp-091302][^qtp-151005]
+No later report found mentions Fab 5, and Semiconductor Digest says only that Fab 2 was "expanded in
+1999". Whether anything was built after 1999 is not in the public record found (single
+source).[^sd-2007-fab2]
+
+In the qualification reports, "Fab 5" means something else: the Grace foundry in Shanghai (see below).
+The reports use that name from 2009 onwards (Cypress's reports).[^qtp-091302][^qtp-151005]
 
 ## Foundries and partners
 
-| Partner | Where | What the sources say | Sources |
-|---|---|---|---|
-| Hyundai Electronics ("Fab HME") | Cheongju, Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000 | single source[^qtp-001004] |
-| Tower, IBM, Chartered | Israel, New York, Singapore | foundries of IMI, which Cypress bought in February 2001 | single source[^qtp-i000006] |
-| Honeywell | Plymouth, Minnesota | a joint silicon-on-insulator process from 2002, in Fab 4 by Cypress's account, later moved to Honeywell's own fab | conflict on the node: 0.13 µm or 150 nm[^ar-fy2002][^edn-2005-honeywell] |
-| Grace Semiconductor (GSMC, later HHGrace) | Shanghai, China | foundry deal of December 2005; S4 PSoC first; 0.35 µm SONOS moved in 2006; C8 moved from 2006 | Cypress and EE Times[^ar-fy2005][^eet-2005-grace][^ar-fy2006][^eet-2006-c8] |
-| UMC | Taiwan | a 130 nm flash product deal by 2007; all SRAM at 65 nm and below from 2007 | Electronics Weekly and EE Times[^ew-2007-umc][^eet-2007-fablite] |
+Cypress's 1998 report says "we have also begun to use wafer foundries", for a 0.18 µm logic
+technology (single source).[^ar-fy1998] The foundries the sources name before S8:
+
+| Partner | What the sources say | Sources |
+|---|---|---|
+| Hyundai Electronics ("Fab HME"), Korea | a "0.5um TLM" (three-metal) process for a dual-port SRAM, qualified August 2000 | single source[^qtp-001004] |
+| Tower, IBM and Chartered | foundries of IMI, which Cypress bought in February 2001 | single source[^qtp-i000006] |
+| TSMC, Taiwan | L28 moved there in 2003; a 0.35 µm ASIC process qualified in December 2003 | Cypress's reports[^qtp-080608][^qtp-s050001] |
+| ProMOS and Powerchip, Taiwan | memory processes: ProMOS S17 (0.17 µm, 2003), Powerchip 0.16 µm | Cypress's reports[^qtp-032301][^qtp-051501] |
+| Honeywell, Minnesota | a joint silicon-on-insulator process from 2002 | conflict on the node[^ar-fy2002][^edn-2005-honeywell] |
+| Grace (GSMC, later HHGrace), Shanghai | foundry deal of December 2005; S4 PSoC first; 0.35 µm SONOS and C8 moved from 2006 | Cypress and EE Times[^ar-fy2005][^eet-2005-grace][^ar-fy2006][^eet-2006-c8] |
+| UMC, Taiwan | a 130 nm flash product deal by 2007; all SRAM at 65 nm and below from 2007 | Electronics Weekly and EE Times[^ew-2007-umc][^eet-2007-fablite] |
 
 **Honeywell.** Cypress's 2002 and 2003 reports call the joint programme a "0.13-micron
 Silicon-On-Insulator" process in Fab 4.[^ar-fy2002][^ar-fy2003] EDN calls the resulting process
 "SOI-based, 150-nm technology" co-developed with Cypress, which "evolved from Honeywell's
-previous-generation, 0.25-micron technology".[^edn-2005-honeywell] The node therefore differs between
-the sources.
+previous-generation, 0.25-micron technology".[^edn-2005-honeywell] The node therefore differs between the
+sources.
 
 **Grace.** The December 2005 deal covered Cypress's PSoC, image-sensor, wireless USB and PC clock
 processes, and production was to start with "the PSoC mixed-signal array on Cypress's proprietary S4
 technology".[^eet-2005-grace][^ar-fy2005] Cypress completed the transfer of its "0.35-micron SONOS process"
-during 2006.[^ar-fy2006][^tenk-fy2007] In July 2006 it began moving "its 0.13-micron C8 process technology"
-to Grace, for USB and clock chips (single source).[^eet-2006-c8] In 2009 an older SRAM process, RAM42, followed
-(Cypress's reports).[^qtp-091302]
+during 2006 (Cypress's reports).[^ar-fy2006][^tenk-fy2007] In July 2006 it announced it would begin moving
+"its 0.13-micron C8 process technology" to Grace in the third quarter, for USB and clock chips (single
+source).[^eet-2006-c8] In 2009 an older SRAM process, RAM42, followed (single source).[^qtp-091302]
 
-**UMC and S8.** In 2007 EE Times reported a plan to "shift its 0.13-micron S8 embedded-flash
-technology" to UMC (single source).[^eet-2007-fablite]
+**UMC and S8.** In 2007 EE Times reported a plan to "shift its 0.13-micron S8 embedded-flash technology"
+to UMC (single source).[^eet-2007-fablite]
 
 ## How the reports name fabs
 
 The qualification reports are reissued from time to time, and the reissues do not keep the original
 names of the sites. Read them with these points in mind:
 
-* **"Fab 5" is a foundry.** Reports from 2009 onwards call Grace in Shanghai "Fab 5" or "Fab5
-  GSMC".[^qtp-091302][^qtp-151005]
-* **GSMC becomes HHGrace.** A 2015 reissue lists the August 2006 qualification of the foundry as
-  "Qualify HHGrace using PSoC Device Product Family", under the foundry's later name.[^qtp-151005]
+* **"Fab 5" is a foundry.** Reports from 2009 onwards call Grace in Shanghai "Fab 5" or "Fab5 GSMC"
+  (Cypress's reports).[^qtp-091302][^qtp-151005]
+* **GSMC becomes HHGrace.** A 2015 reissue lists the August 2006 qualification of the foundry as "Qualify
+  HHGrace using PSoC Device Product Family", under the foundry's later name (single source).[^qtp-151005]
 * **Fab 4 becomes "Skywater".** A 2025 reissue of a 2004 report gives the fab as "Skywater --
-  Bloomington, MN" and writes "from Skywater" into the 2004 history rows. An earlier issue of a
-  report on the same process says "Cypress Semiconductor -- Bloomington, MN".[^qtp-041406][^qtp-024110]
+  Bloomington, MN" and writes "from Skywater" into the 2004 history rows. An earlier issue of a report on
+  the same process says "Cypress Semiconductor -- Bloomington, MN" (Cypress's reports).[^qtp-041406][^qtp-024110]
 * **Stale fields.** A 2009 report of the move of RAM42 to Grace still prints the die fab line as
-  "Fab4/RAM42".[^qtp-091302]
+  "Fab4/RAM42" (single source).[^qtp-091302]
 
 ## Open questions
 
 * **Fab 2's opening year.** 1986 or about 1988?
-* **Fab 5.** Did the 1996 Round Rock project become the 1999 expansion of Fab 2?
-* **Fabs 4b and 4c.** Were they built?
+* **Fab 5.** Was anything built on the Round Rock site after 1999?
+* **Fab 4c.** Was it built?
 * **The Honeywell SOI node.** Was it 0.13 µm or 150 nm?
+* **The builder of the Bloomington plant.** Control Data or VTC?
 
 ## References
 
@@ -303,8 +338,6 @@ names of the sites. Read them with these points in mind:
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97476-256k-static-ram-r28-process-fab-2-qualification-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7150d8bb1af5>
 [^qtp-098393]: Cypress Semiconductor, Product Qualification Report QTP 98393: *Dual Port SRAM - R28 Technology - Fab 2*, March 1999.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-98393-productqualificationreport-en.pdf>
-[^qtp-003907]: Cypress Semiconductor, Product Qualification Report QTP 003907: *High Frequency Programmable PECL Clock Generator R42LDHA Technology, Fab 4*, June 2013.
-    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-003907-high-frequency-programmable-pecl-clock-generator-r42ldha-technology-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714957940a14>
 [^qtp-102101]: Cypress Semiconductor, Product Qualification Report QTP 102101: *Synchronous/Asynchronous Dual Port SRAM (3.3V and 5V), R42HD Technology, Fab 4 Qualification*, July 2014.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-102101-synchronous-asynchronous-dual-port-sram-3.3v-and-5v-r42hd-technology-fab-4-qualification-productqualificationreport-en.pdf>
 [^qtp-113005]: Cypress Semiconductor, Product Qualification Report QTP 113005: *64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4)*, January 2013.
@@ -321,3 +354,25 @@ names of the sites. Read them with these points in mind:
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-041406-4-meg-1-8v-3-0v-mobl-devices-ram8nld-1-productqualificationreport-en.pdf>
 [^qtp-024110]: Cypress Semiconductor, Product Qualification Report QTP 024110: *1 MEG (3.0V) MOBL DEVICES RAM8NLD-1.8V TECHNOLOGY, FAB4*, June 2013.
     <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-024110-1-meg-3.0v-mobl-devices-ram8nld-1.8v-technology-fab4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d7152a1d61fde>
+[^qtp-011503]: Cypress Semiconductor, Product Qualification Report QTP 011503: *Spread Spectrum Timing Solution for Serverworks Chipset, L28 Technology, Fab 2*, December 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201205124212/https://www.cypress.com/file/91641/download>
+[^qtp-032301]: Cypress Semiconductor, Product Qualification Report QTP 032301: *16 MEG A/D MUX SRAM, S17 Technology, Promos Fab in Taiwan*, May 2004;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201204235131/https://www.cypress.com/file/92311/download>
+[^qtp-042806]: Cypress Semiconductor, Product Qualification Report QTP 042806: *S4ADLATCH Technology, Fab 2*, January 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20211025144943/https://www.cypress.com/file/92521/download>
+[^qtp-051501]: Cypress Semiconductor, Product Qualification Report QTP 051501: *Cypress Minnesota (CMI) Sort Site Qualification -- 2 Meg, 3V PSRAM Device, PowerChip 0.165µm*, May 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201028052812/https://www.cypress.com/file/92636/download>
+[^qtp-080608]: Cypress Semiconductor, Product Qualification Report QTP 080608: *High Accuracy EPROM Programmable Device Family, L28 Technology, TSMC-2A*, May 2013.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-080608-high-accuracy-eprom-programmable-device-family-l28-technology-tsmc-2a-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714a27090cd2>
+[^qtp-096411]: Cypress Semiconductor, Product Qualification Report QTP 96411: *256K/512K PROM - P26 Technology*, May 1997;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201026124735/https://www.cypress.com/file/93566/download>
+[^qtp-097483]: Cypress Semiconductor, Product Qualification Report QTP 97483: *Low Voltage Deep Synchronous FIFO High Speed 100-MHZ Operation, R42D -- Fab 4*, May 2017.
+    <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-97483-low-voltage-deep-sync-fifos-r42d-technology-fab4-device-cy7c42-v-productqualificationreport-en.pdf>
+[^qtp-s050001]: Cypress Semiconductor, Product Qualification Report QTP S050001: *TSMC Fab 3, 0.35um -- SMaL Camera ASIC*, June 2005;
+    Wayback Machine copy of the cypress.com download.
+    <https://web.archive.org/web/20201028064815/https://www.cypress.com/file/94406/download>
