@@ -362,7 +362,9 @@ table lead-in (pwbm, rpm, tunm), and tool artefacts (quote and backtick re-pairi
 * **Moved passage (canonical order):** "**Overlay.**" moved, unchanged apart from its semicolon split,
   above "Pattern transfer".
 * **Intro.** "Because the etched poly width is the transistor gate length, this is the mask …" moved
-  unchanged to the top of the body.
+  unchanged to the top of the body. It now opens a paragraph with "Because", but the clause is the
+  sentence's own cause ("Because …, this is the mask whose CD matters most"), not a link to the
+  paragraph before, so R-PARA 2's concern does not arise; noted for the reviewer.
 * **"Two things the mask does not define".** The base's closing ", on the step pages' readings" covered
   both clauses of the sentence; as a two-item list, each item ends with it.
 * **Declared additions** (`--allow-added markers,numbers`): marker `mask-renders` (render sentence split
@@ -806,7 +808,8 @@ The sibling of nsdm; the same treatment throughout.
   masks …, the only one of the three whose type reads as a binary mask, and that type is the reason …"
   → "The mask is one of three masks …, and the only one … . That type is the reason …" at the top of
   the body.
-* **Other splits.** "the VIM4 page therefore describes the `VIM4` level" split off after the three
+* **Other splits.** The render sentence split at its semicolon and a paragraph break before "That text is
+  identical …", which became "The info text is identical …" (the wording vim2 and vim3 use). "the VIM4 page therefore describes the `VIM4` level" split off after the three
   markers, which support the `masks.csv`, Table 2 and rule facts before it; the `BIM` dash pair (the
   TSMC patent title) made its own sentence after the reading, `photronics-abr` staying with "mask
   makers … use those abbreviations" and `pat-bim-tsmc` going with the patent; the 90-word mask-maker

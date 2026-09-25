@@ -94,7 +94,7 @@ no Boolean expression and no fill layer, on all eight runs.[^mask-renders] Its m
 record gives the mask-level layer 58:0 and the info text "Via 4
 (M4→M5)".[^mask-renders]
 
-That text is identical to the "Info" note of
+The info text is identical to the "Info" note of
 the `VIM4` row in the process-steps sheet, one of the level names the
 two sources share, so neither is cited as corroborating the other
 ({ref}`masks-renders-sheet-notes`).[^steps-sheet][^mask-renders] The

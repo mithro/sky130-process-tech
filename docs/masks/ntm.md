@@ -160,7 +160,7 @@ On all eight runs the expression is `64:20 OR 11:44 OR (75:20 NOT 81:2)`,
 which in the layer names of `gds_layers.csv` is `nwell` OR `ldntm` OR
 (`hvi` NOT `areaid.ce`).[^mask-renders][^pdk-06]
 
-Its mask record lists
+The site's mask record lists
 the drawn layers 64:20, 75:20 and 11:44 and the mask-level layer 27:0,
 with the note "created over nwell, ldntm and hvi (outside areaid.ce; rpm
 too in some flows) (cntm 26:20 is the fab's precomputed layer, not
