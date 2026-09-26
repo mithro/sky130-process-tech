@@ -587,3 +587,39 @@ per page.
   depth split, the endpoint and metrology splits, glance lines. None lost a marker or hedge.
 * **Left over the caps:** none. Item leads over 30 words: Not punching through (35), Poisoned via (41),
   Strip and clean (42) — each one sentence.
+
+### 131 TIN4 — done
+
+* **Kept verbatim** (the S9a figure agent's note): the lead's "coating the oxide sidewalls and the
+  titanium–tungsten floor" (unhedged, while the post-figure passage gives the floor as TiW or TiN) —
+  see Content problems.
+* **Lead:** base 186 words → three paragraphs (the 120 form): first sentence cut at its colon (9
+  words, "It is a thin titanium nitride film …"); the 22-word IMP parenthetical as "This is
+  ionised-metal-plasma physical vapour deposition, … bias.[^rossnagel-1998]"; the film-roles sentence
+  split at its semicolon ("It is removed from the field …").
+* **R-H3:** none (as 120).
+* **Post-figure:** two paragraphs at "The via-2 floor is the top". The floor sentence's dash material
+  (the two stacks) becomes "On the 2013 Cypress description …, the floor is 300 Å …" after the main
+  clause "The via-2 floor is the top of metal 2, so, as at TIN3, this is a TiN-on-refractory-cap
+  interface." (the 120 form; "the floor is" added).
+* **R-CATEGORY:** classification cut at its semicolon (12 words) with the TIN2/TIN3 sentence; the
+  liner-family sentence (lists other steps) as a paragraph, "it" → "`TIN4`" (the 120 form); "What is
+  specific … is the aspect ratio: …; and, on our reading, …" (80 words) split at the colon and at "; and,
+  on our reading," → "On our reading, the metal …" ("and" lost; the hedge stays on the clause it
+  scoped).
+* **R-PARA (Why):** Barrier: lead ends at "unlanded via;" ("(industry experience[^txt-05])" stays with
+  the TiN-film sentence it follows). Coverage: lead ends at the IMP markers.
+* **How:** italic scope lead-in. Sputter pre-clean: lead ends at "(industry practice[^txt-05]);" — the
+  hedge closes the first clause, which keeps it; Boumerzoug and the re-deposition inference are the
+  continuation.
+* **R-TOOLS:** the 120 form. Novellus bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; the 120 Related form; glance in the 120 form
+  (its Not-public line names only items in Open questions; the cap question is not among them here).
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box
+  (markers `pdk-04`, `pdk-periph`, `skw-01`; numbers 0.20, 0.42, 2.1, `1`; quotes "Imp TiN"×2; hedges;
+  `metal-2`, `via-1`, `via-2`×2) or `TIN4` (noun restored). REGROUPED: the floor and specific-to
+  sentences (same order). LOST word "strength" (R-TOOLS).
+* **Coverage flags read:** the floor lead (its support is the stack sentence directly after it, as on
+  120), the Rossnagel split, the specific-to split, glance lines. None lost a marker or hedge.
+* **Left over the caps:** lead 190 words in three paragraphs (base 186; "It is", "This is" added).
+  Nothing over the §1 caps.
