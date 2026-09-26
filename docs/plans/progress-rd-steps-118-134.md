@@ -187,3 +187,39 @@ per page.
   sentence (the cap markers belong to "thin the cap"). None lost a marker or hedge.
 * **Left over the caps:** lead 200 words in three paragraphs (base 196; "It is", "This is" added).
   Item leads over 30 words: Resistance (33), IMP TiN (35, an attribution dash pair).
+
+### 121 WDEP3 — done
+
+* **Kept verbatim:** Why/Nucleation "Tungsten nucleates on the TiN of TIN3,[^srinivas-1992]
+  [^mcconica-1988]" — the same McConica and Cooper misattribution as 132:87 (see Content problems);
+  only a split after its markers.
+* **R-H3:** none (as 110; the post-figure passage is 120 words of readings and an industry norm).
+* **Lead:** 99 words, one paragraph; the 45-word second sentence cut at the end of its dash material
+  ("… into every 0.15 µm via. It is thick enough …", the 110 form).
+* **Post-figure:** two paragraphs at "The deposited thickness is not public" (the 110 seam). The
+  holes sentence split at ", and their floor" → ". Their floor is …": "on our reading of `VIME` and
+  the PDK" sits inside the first clause and qualifies the dimensions; the floor clause is its own
+  claim with its own marker (`[^cyp-qtp-113005]`, `overview-metal-cap`).
+* **R-CATEGORY:** classification cut at its semicolon (11 words), the category-page sentence after it;
+  "Its product is sacrificial …" (the one remaining sentence about this step) as a paragraph with no
+  label; "What is specific to the via levels …" (its own label) split at its colon.
+* **R-PARA (Why):** Conformality: lead ends at "outside in;"; the Gn dash material becomes its own
+  sentence and ", and the selective … fill" → ". The selective … fill" ("and" lost). Nucleation: lead
+  ends at the two markers of the first clause. Resistance: lead ends at "tungsten;".
+* **How:** italic scope lead-in. Chamber: lead ends at the first semicolon; Altus and "PECVD Tungsten"
+  sentences are the continuation.
+* **R-TOOLS:** the 110 form; the PNL sentence stays after the grades (an unknown, not a grade).
+* **R-REPEAT:** the SkyWater quotation appears in the post-figure passage and under Machines likely
+  used; **not applied**, as on 110 (merged): the post-figure copy is the page's public statement next
+  to the thickness the page cannot give. The two "of the order of 0.2–0.3 µm" sentences differ (the How
+  copy adds "on the field", "typical for this size").
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Feeds
+  (TIAL12), Same category (the other fills); glance keeps "(on our reading of `VIME` and the PDK)".
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box
+  (markers `pdk-03`, `pdk-04`, `pdk-periph`, `skw-01`; numbers 0.15, 0.18, 0.27, 1.8, `1`; the
+  capability quote; hedges; `via-1`). REGROUPED: the holes and aluminium sentences (same order). LOST
+  word "strength" (R-TOOLS).
+* **Coverage flags read:** the holes/floor split (above), the Gn sentence (the attribution now
+  directly follows the claim it supported), the nucleation split, glance lines. None lost a marker or
+  hedge.
+* **Left over the caps:** none.
