@@ -10,13 +10,30 @@
 | **Previous step** | {ref}`VIM <step-118>` |
 | **Next step** | {ref}`TIN3 <step-120>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the via-1 holes through the cap oxide and the
+  {ref}`NILD3 <step-115>` oxide down to the top of the metal-1 lines.
+* **Why:** the via hole sets the resistance and reliability of every
+  connection between metal 1 and metal 2.
+* **Public numbers:** 0.150 µm squares (via.1a) that metal 1 encloses
+  by only 0.055 µm (via.4a);[^pdk-periph] 0.27 µm in all, the via-1
+  height of the PDK's stack diagram;[^pdk-04] a `via` of 4.5 Ω.[^pdk-08]
+* **Likely SkyWater tool:** none named — no dielectric etcher is on
+  SkyWater's public list; the three listed poly/silicon etchers are
+  **weak** (assignment to the via etch).[^skw-01]
+* **Not public:** the etch chemistry, chamber, endpoint scheme and
+  over-etch, the cap consumed, and which refractory film the cap is
+  (→ Open questions).
+:::
 ## What this step is
 
 `VIME` etches the via-1 holes. Through the 0.15 µm resist openings of
 {ref}`VIM <step-118>` a fluorocarbon plasma cuts the
 {ref}`NCAPOX3 <step-117>` cap and the {ref}`NILD3 <step-115>` oxide
 beneath it — 0.27 µm in all, the via-1 height of the PDK's stack
-diagram[^pdk-04] — down to the top of the metal-1 lines, producing the
+diagram[^pdk-04] — down to the top of the metal-1 lines. It produces the
 holes that {ref}`TIN3 <step-120>` will line and {ref}`WDEP3 <step-121>`
 will fill to make the `via` plug, "Contact from metal 1 to
 metal 2".[^pdk-06] The resist is stripped afterwards; this reference
@@ -33,16 +50,18 @@ A close-up of the middle via, over the middle metal-1 line; the lower part of th
 
 What the etch lands on is the difference from the contact etch. The
 floor of a `via` is not the nitride-capped titanium-nitride local
-interconnect but the top film of the metal-1 stack — on the 2013
-Cypress description of S8TNV-5R at this fab, 300 Å of
+interconnect but the top film of the metal-1 stack. On the 2013
+Cypress description of S8TNV-5R at this fab, it is 300 Å of
 titanium–tungsten over 3 200 Å of Al–0.5%Cu,[^cyp-qtp-113005] and on
 the stack qualified in 2013–2014, 500 Å of titanium nitride
-instead[^cyp-qtp-123907] ({ref}`overview-metal-cap`) — so the
+instead[^cyp-qtp-123907] ({ref}`overview-metal-cap`). So the
 {term}`selectivity` that matters is oxide-to-refractory-cap, and the
-failure to avoid is punching through the cap into the aluminium. The public dimensions are the
+failure to avoid is punching through the cap into the aluminium.
+
+The public dimensions are the
 mask's: 0.150 µm squares (via.1a) on a 0.170 µm space (via.2), with
-metal 1 required to enclose them by only 0.055 µm (via.4a);[^pdk-periph]
-the assumptions table adds a "Via1 slope" of 0.02 and a "min. etch
+metal 1 required to enclose them by only 0.055 µm (via.4a).[^pdk-periph]
+The assumptions table adds a "Via1 slope" of 0.02 and a "min. etch
 and fill capability for via" of 0.18 µm.[^pdk-03] Where the {term}`overlay`
 of {ref}`VIM <step-118>` to {ref}`MM1 <step-113>` uses up that
 0.055 µm, part of the hole floor is oxide beside the line
@@ -54,18 +73,22 @@ contact's.
 
 `VIME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorocarbon* class — the category page's "oxide and via etch" family
-of C₄F₈, CHF₃, CF₄ and C₂F₆ chemistries — and the first of the four
+of C₄F₈, CHF₃, CF₄ and C₂F₆ chemistries. It is the first of the four
 via etches ({ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`,
-{ref}`VIM4E <step-160>` follow). Fluorine removes oxide as SiF₄ only
+{ref}`VIM4E <step-160>` follow).
+
+Fluorine removes oxide as SiF₄ only
 under ion bombardment, while the carbon of the feed gas forms a
-polymer that slows the etch on non-oxide surfaces; that surface
+polymer that slows the etch on non-oxide surfaces. That surface
 chemistry, worked out by Flamm and Donnelly and by Winters and
 Coburn,[^flamm-1981][^winters-1992] is what gives the etch its
-selectivity to the stop layer. What is specific to this class within
+selectivity to the stop layer.
+
+What is specific to this class within
 the flow is that the stop layer is a *metal that fluorine can etch*:
 tungsten forms volatile WF₆ in fluorine plasmas — Petri, Henry and
 Sadeghi describe the mechanism in SF₆[^petri-1992] — and titanium
-forms TiF₄, so the etch must reach the cap in a polymerising,
+forms TiF₄. So the etch must reach the cap in a polymerising,
 fluorine-lean regime and stop on time rather than on chemistry alone
 (industry practice;[^nojiri-2015] see below).
 
@@ -76,24 +99,30 @@ between metal 1 and metal 2, and the etch decides four things:
 
 * **A clean, complete landing on the cap.** The PDK's `via` is 4 500 mΩ
   (4.5 Ω), thirty times lower than the 152 000 mΩ of an
-  `mcon`,[^pdk-08] and on our reading that gap is largely a matter of
+  `mcon`.[^pdk-08]
+
+  On our reading that gap is largely a matter of
   the landing: a narrower, shallower hole ending on a metal cap rather
   than a wider one ending on 0.10 µm of TiN.[^pdk-04] Fluorocarbon
   polymer or oxide left on the floor raises the number; Bui et al.
   showed that the anti-reflective cap a tungsten-plug via lands on
   also sets its electromigration performance.[^bui-1994]
-* **Not punching through.** If the cap — 300 Å of TiW on the 2013
-  stack, 500 Å of TiN on the 2014 one[^cyp-qtp-113005][^cyp-qtp-123907] —
+* **Not punching through.** The cap is 300 Å of TiW on the 2013
+  stack, 500 Å of TiN on the 2014 one.[^cyp-qtp-113005][^cyp-qtp-123907]
+
+  If the cap
   is consumed by the over-etch, the fluorine reaches the aluminium and
-  forms involatile AlF₃ — fluorine does not etch aluminium, which is
-  why aluminium is etched in chlorine[^hess-1982] — leaving a
+  forms involatile AlF₃, leaving a
   resistive fluoride at the via bottom and a cap too thin to serve as
   the electromigration shunt and barrier the metal-1 page describes
-  ({ref}`TIAL6 <step-112>`). How much over-etch a refractory stop can
+  ({ref}`TIAL6 <step-112>`). Fluorine does not etch aluminium, which is
+  why aluminium is etched in chlorine.[^hess-1982]
+
+  How much over-etch a refractory stop can
   absorb is the subject of Texas Instruments' via-etch-stop patent,
   which measures an Ar/CF₄/CHF₃ oxide-to-stop selectivity of 28.4:1
   on TiN and 228:1 on TiAl₃ and argues that TiN's "selectivity to
-  oxide is only 30:1 … insufficient for the long overetches"; nothing
+  oxide is only 30:1 … insufficient for the long overetches".[^pat-etchstop-ti] Nothing
   public gives the corresponding figure for TiW.[^pat-etchstop-ti] If
   the cap is TiN, that published number applies to this floor directly
   and the margin is the one the patent calls insufficient for long
@@ -106,11 +135,13 @@ between metal 1 and metal 2, and the etch decides four things:
   are budgeted together for this (inference from the rule).
 * **A via that tungsten will fill.** Fluorocarbon residue, moisture or
   outgassing from the dielectric sidewall can stop the tungsten of
-  {ref}`WDEP3 <step-121>` nucleating — the "poisoned via" that
+  {ref}`WDEP3 <step-121>` nucleating. This is the "poisoned via" that
   Kobayakawa et al. and Romero et al. traced to outgassing from
-  spin-on glass in the early 1990s[^kobayakawa-1991][^romero-1991] and
-  that a UMC patent addresses, for a dual-damascene flow, by
+  spin-on glass in the early 1990s.[^kobayakawa-1991][^romero-1991]
+
+  A UMC patent addresses it, for a dual-damascene flow, by
   densifying the exposed dielectric before the fill.[^pat-via-poison-umc]
+
   Which SKY130 dielectric is at
   risk is not public; the PDK's separately named "NILD3_C" (k 3.5,
   0.030 µm)[^pdk-04] is a candidate if it is a fluorinated film
@@ -121,9 +152,9 @@ stripped without effect and metal 2 would sit on unbroken oxide.
 
 ## How it is typically performed
 
-An industry-generic via etch for a 200 mm, 130 nm-era fab (SKY130's
+*An industry-generic via etch for a 200 mm, 130 nm-era fab (SKY130's
 recipe is not public); the shared physics is set out at
-{ref}`CTME <step-108>` and on the category page.
+{ref}`CTME <step-108>` and on the category page.*
 
 1. **Chamber.** A single-wafer dielectric etcher — a medium-density
    capacitively coupled or a high-density inductively coupled reactor
@@ -135,35 +166,40 @@ recipe is not public); the shared physics is set out at
    CF₄-containing step.
 3. **Main oxide etch.** A polymerising fluorocarbon — C₄F₈, C₂F₆ or
    CHF₃ with argon and a little O₂ or CO — at tens of mTorr and high
-   bias.[^oehrlein-1994b][^perry-2001][^standaert-1998] In a 0.15 µm
+   bias.[^oehrlein-1994b][^perry-2001][^standaert-1998]
+
+   In a 0.15 µm
    hole the conductance of the hole throttles the neutral and ion
    flux to the floor (Coburn and Winters[^coburn-1989]), so the rate
    falls with depth ({term}`ARDE`) or, under some conditions, rises
-   (Doemling et al.'s inverse RIE lag[^doemling-1996]); Gottscho,
+   (Doemling et al.'s inverse RIE lag[^doemling-1996]). Gottscho,
    Jurgensen and Vitkavage review the family of effects.[^gottscho-1992]
    The 0.27 µm depth[^pdk-04] is modest, but the {term}`loading effect`
    between isolated vias and dense arrays is not.
 4. **Endpoint and over-etch.** Via layers expose a small fraction of
-   the wafer, so the emission signal is weak — Wodecki describes
-   endpoint detection on low-open-area dielectric etches[^wodecki-1999]
-   — and the etch is usually run by time from the thickness the cap
+   the wafer, so the emission signal is weak. Wodecki describes
+   endpoint detection on low-open-area dielectric etches.[^wodecki-1999]
+
+   The etch is usually run by time from the thickness the cap
    and polish left ({ref}`CMPM <step-116>`, {ref}`NCAPOX3 <step-117>`),
    with an over-etch sized to clear the deepest vias without
    consuming the cap. The mechanism of oxide-to-nitride selectivity
    Schaepkens et al. describe — a thicker steady-state fluorocarbon
    film on the non-oxide surface[^schaepkens-1999] — is what protects
-   the cap, and it fails if the chemistry runs fluorine-rich, since
+   the cap. It fails if the chemistry runs fluorine-rich, since
    TiW then etches as WF₆ and TiF₄[^petri-1992] and TiN as TiF₄ and
    nitrogen.
-5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash` —
-   GaSonics, Iridia or Mattson class in SkyWater's list[^skw-01] —
-   then a solvent or semi-aqueous clean — SkyWater lists "EKS265,
-   EKC270 solvents, CO2 injected DI" under "Batch Rotational" in its
-   resist-removal and clean list[^skw-01] (EKC265/EKC270-class;
-   SkyWater writes "EKS265") — to remove the
+5. **Strip and clean.** Oxygen or O₂/N₂ downstream {term}`ash`,
+   then a solvent or semi-aqueous clean, to remove the
    fluorocarbon polymer and the titanium- and tungsten-fluoride
    residue from the via floor without attacking the cap or the
-   exposed aluminium of an unlanded via. No HF is used (inference:
+   exposed aluminium of an unlanded via. The ash is GaSonics, Iridia or
+   Mattson class in SkyWater's list.[^skw-01]
+
+   SkyWater lists "EKS265,
+   EKC270 solvents, CO2 injected DI" under "Batch Rotational" in its
+   resist-removal and clean list[^skw-01] (EKC265/EKC270-class;
+   SkyWater writes "EKS265"). No HF is used (inference:
    it would widen the via and attack the fluoride-bearing floor).
 6. **Queue time.** Because an open via can absorb moisture from the
    air, the time between clean and {ref}`TIN3 <step-120>` is limited,
@@ -171,7 +207,9 @@ recipe is not public); the shared physics is set out at
    poisoned-via literature above is the reason[^kobayakawa-1991]).
 7. **Metrology.** Top and bottom CD by {term}`CD-SEM`, profile and
    cap loss by cross-section SEM on monitors, via-chain resistance at
-   {term}`e-test`; the PDK's 4.5 Ω `via`[^pdk-08] is the number such
+   {term}`e-test`.
+
+   The PDK's 4.5 Ω `via`[^pdk-08] is the number such
    chains give. The published SKY130 {term}`test tile`'s via-1
    structures are an "M2 to M1 via: 0.15um (3240 vias)" string and
    "M2-M1-LI1-N+" and "M2-M1-LI1-P+" strings of 6992 contacts, each a
@@ -192,16 +230,21 @@ recipe is not public); the shared physics is set out at
 * **No dielectric etcher is named on SkyWater's public list.** The
   list gives, under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3,
   CF4, CHF3, O2", "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" and
-  "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".[^skw-01] All three carry
-  fluorine-bearing gases that can etch oxide; strength: **weak** for
-  assignment of any of them to the via etch.
+  "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".[^skw-01]
+
+  All three carry
+  fluorine-bearing gases that can etch oxide.
+
+  - *Runs this step:* **weak** for
+    assignment of any of them to the via etch.
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
-  solvents"; SEZ 223 / Da Vinci.**[^skw-01] Strength: strong for
-  existence.
+  solvents"; SEZ 223 / Da Vinci**[^skw-01]
+  - *Tool exists:* strong for
+    existence.
 
 ## Resources required
 
@@ -220,14 +263,15 @@ recipe is not public); the shared physics is set out at
 
 ## Related steps and cross-references
 
-* Previous: {ref}`VIM <step-118>` (the mask). Next:
+* Previous: {ref}`VIM <step-118>` (the mask).
+* Next:
   {ref}`TIN3 <step-120>` (the liner), then {ref}`WDEP3 <step-121>`
   and {ref}`WCMP3 <step-122>`.
-* The films it cuts: {ref}`NCAPOX3 <step-117>` and
+* Depends on: the films it cuts, {ref}`NCAPOX3 <step-117>` and
   {ref}`NILD3 <step-115>` (polished at {ref}`CMPM <step-116>`); the
-  cap it stops on: {ref}`TIAL6 <step-112>`, patterned at
+  cap it stops on, {ref}`TIAL6 <step-112>`, patterned at
   {ref}`MM1 <step-113>` / {ref}`MM1E <step-114>`.
-* The analogous hole etches: {ref}`CTME <step-108>` below,
+* Same category: the analogous hole etches, {ref}`CTME <step-108>` below,
   {ref}`VIM2E <step-130>` above.
 * Category page: {ref}`Etch <category-etch>`.
 
@@ -313,20 +357,20 @@ recipe is not public); the shared physics is set out at
 
 ## Open questions
 
-* The etch chemistry, chamber, endpoint scheme and over-etch of
+* **Etch recipe and cap loss.** The etch chemistry, chamber, endpoint scheme and over-etch of
   `VIME`, the cap consumed, and the resulting profile are not public;
   neither is which refractory film the cap is
   ({ref}`overview-metal-cap`).
-* Whether the via etch has a distinct step for the
+* **Distinct cap step.** Whether the via etch has a distinct step for the
   {ref}`NCAPOX3 <step-117>` cap and the possible "NILD3_C"
   film,[^pdk-04] or etches the whole 0.27 µm in one recipe, is not
   public.
-* Whether SKY130 vias ever land partly off metal 1 in practice, and
+* **Partly unlanded vias.** Whether SKY130 vias ever land partly off metal 1 in practice, and
   how the etch is budgeted for it, is inferred from the 0.055 µm
   enclosure rule.[^pdk-periph]
-* Which etcher runs the step is not public; SkyWater's list names no
+* **Which etcher.** Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* This page treats the resist strip and post-etch clean as part of
+* **Resist strip and post-etch clean.** This page treats the resist strip and post-etch clean as part of
   the etch step.
 
 <!-- footnotes -->

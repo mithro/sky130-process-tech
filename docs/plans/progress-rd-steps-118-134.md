@@ -91,3 +91,52 @@ per page.
   clause); the Resistance and Resist-coat splits (each half keeps its own markers and hedges); the
   toolkit sub-bullets (own markers). None lost a marker or hedge.
 * **Left over the caps:** none. Item lead over 30 words: Placement (37; one sentence).
+
+### 119 VIME — done
+
+* **R-H3:** none. As on 108, the post-figure passage mixes the public stack and dimensions with this
+  reference's readings (the unlanded-floor "(inference)"), so none of the four titles is true of it;
+  it is split into two paragraphs at "The public dimensions are the mask's" instead.
+* **Lead:** one paragraph (87 words); the 60-word second sentence split at ", producing" → ". It
+  produces" ("It" = the plasma); the dash pair (0.27 µm, `[^pdk-04]`) stays in the first half.
+* **Post-figure:** the floor sentence's dash material (the two Cypress stacks, each with its own
+  marker) becomes its own sentence, "On the 2013 Cypress description …, it is 300 Å …"
+  ("it is" added); "— so the selectivity" → ". So the selectivity" (the ", so" form, same paragraph).
+  The dimensions sentence split at its semicolon.
+* **R-CATEGORY:** classification ends at the closing em dash (25 words); "and the first of the four
+  via etches" → "It is the first …" (subject and verb added). The surface-chemistry sentences
+  describe the class, not this step, so they stay a plain paragraph (split at the semicolon). "What
+  is specific to this class …" is its own label (step 3), a paragraph; split at ", so the etch" →
+  ". So the etch …"; "(industry practice;[^nojiri-2015] see below)" stays with the practice clause it
+  qualifies.
+* **R-PARA/R-SENTENCE (Why):** Landing: lead ends at the `[^pdk-08]` clause; "and on our reading that
+  gap" → "On our reading that gap" (continuation; the hedge and `[^pdk-04]` stay with it). Not
+  punching through: the cap dash material becomes the lead "The cap is 300 Å …" (subject and verb
+  added, both Cypress markers); the Hess dash material becomes its own sentence after the AlF₃
+  sentence; the patent sentence split after the quotation, **`[^pat-etchstop-ti]` repeated** on
+  "Nothing public gives the corresponding figure for TiW." (the patent is what shows no TiW figure;
+  declared). Poisoned via: "— the "poisoned via" that …" → "This is the "poisoned via" that …";
+  "and that a UMC patent addresses" → a continuation "A UMC patent addresses it, …" ("it" for the
+  relative "that"; the only way to keep the lead block under 60 words, since a continuation may not
+  open on "This").
+* **How:** italic scope lead-in. Main oxide etch: lead + continuation, split at the semicolon.
+  Endpoint: split at the Wodecki dash pair (its marker stays with it), "and the etch" → "The etch"
+  (continuation), ", and it fails" → ". It fails" ("It" = the protecting mechanism, as before). Strip
+  and clean (a 48-word sentence with two dash pairs): the ash-class gloss becomes "The ash is
+  GaSonics, Iridia or Mattson class in SkyWater's list.[^skw-01]" (subject and verb added) directly
+  after the sentence; the SkyWater-lists dash material (a full sentence already) starts the
+  continuation with its parenthetical. Metrology: lead + continuation at the semicolon.
+* **R-TOOLS:** as 108: statement head with the quotation, gloss paragraph, *Runs this step:*
+  **weak**; strip/clean *Tool exists:* strong. Lam Exelan has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** five labels; Previous / Next split, Depends on (films cut,
+  cap it stops on), Same category (analogous hole etches); glance tool line in the 108 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED marker `pat-etchstop-ti` (the
+  repeat above); every other ADDED line is the glance box (markers `pdk-04`, `pdk-08`,
+  `pdk-periph`, `skw-01`; numbers 0.055, 0.150, 0.27, 4.5, `1`×3, `2`, `4`; ref `step-115`; hedges
+  "likely", "not public"; identifiers `metal-1`, `via-1`×2). LOST words "producing" (→ "produces"),
+  "strength"×2 (R-TOOLS). No number regrouped outside the glance.
+* **Coverage flags read:** the halves of the lead, floor, landing, cap and endpoint splits (each keeps
+  its own markers and hedges; "usually" and "on our reading" stay with their clauses); semicolon
+  artefacts in parentheticals; glance lines. None lost a marker or hedge.
+* **Left over the caps:** none. Item leads over 30 words: Strip and clean (40), poisoned via (47,
+  two sentences; the second cannot open a continuation).
