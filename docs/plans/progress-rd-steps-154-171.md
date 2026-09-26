@@ -171,3 +171,8 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   "There is", "Two things … :" colon, labels; every `number_order` change REGROUPED, read.
   `--strict-words` LOST: `strength`×2 (and `with`, `and`, `And`). cov: one flag (quick-facts pairing
   noise). inv: OK.
+* Follow-up (parenthetical scan added to `rdtools.py caps`): two parentheticals of ≥ 12 words left in
+  the first pass now stand as parenthetical sentences directly after the sentence they belong to
+  (R-SENTENCE step 7): the lead's "(The category page sets out the slurry chemistry; SKY130's is not
+  public.)" (pointer plus hedge on the slurry, which the sentence before names) and the post-figure
+  "(VIM4E, WTIAL5, where the reading of how via 4 is filled is set out.)" (a gloss). Words unchanged.
