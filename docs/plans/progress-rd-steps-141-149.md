@@ -82,6 +82,41 @@ Base `e9bbf1a6`. Caps before: 3 paragraphs, 7 items, 13 sentences over; after 0/
   qualify (see Lead and R-LIST above); two pairing noise.
 * R-REPEAT: none (only the glance repeats body text).
 
+### 142 CMPM3 — done
+
+Base `ed78ad03`. Caps before: 3 paragraphs, 4 items, 6 sentences over; after 0/0/0. Lead 142 words
+(base 142, one paragraph) in two paragraphs (90, 52) split at "As at CMPM …" (127 form).
+
+* R-LIST: "The PDK's metal-3 rules are written around it:" kept in its paragraph (so "it" still follows
+  the same sentences as in the base), the `pdk-periph` rules and the `pdk-03` assumptions as two
+  bullets, each with its own marker (127 form). "Two things are specific to this instance:" (full
+  stop → colon) and two plain bullets; "And" dropped.
+* The second category bullet (50 words) split at its colon; "(inference from the construction)"
+  repeated on the first half ("closer to a *device* than any earlier oxide polish"), which is neither
+  cited nor otherwise hedged (D1; declared ADDED hedge `inference`).
+* R-PARA/R-SENTENCE (Why): planarity item split at the semicolon, studies a continuation (127 form);
+  capacitor item split at the semicolon — the first half keeps its "On our reading", the second its
+  "(our arithmetic from estimated thicknesses)"; pattern-density item split at the semicolon, "Stine
+  et al. showed …" a continuation.
+* How: italic scope sentence; step 3 split at the first semicolon (two cited facts) and at "the
+  PDK;[^pdk-04] down-force" (two cited facts), the platen sentences a continuation; step 6 (53-word
+  sentence) as four sub-bullets at its semicolons (127 form), words unchanged. Step 2's semicolon kept
+  (127 form, 40 words).
+* R-TOOLS: Mirra three-line item; KLA "Strength: medium." → "*Tool exists:* medium." (127 form); the
+  SEZ bullet has no grade and is unchanged.
+* R-RELATED: Previous · Next · Depends on (MM3E, CAPME; MM3) · Feeds (VIM3E; MM4) · Same category
+  (CMPM, CMPM2, CMPM4) · Category page. R-OPENQ: five labels from the bullets' words.
+* R-GLANCE: numbers from the lead (`pdk-04`), the rules bullets (`pdk-periph`, `pdk-03`); tool line =
+  R-TOOLS grades; Not public = Open questions 1 and 3 (no number: the 0.2–0.3 µm estimate has no
+  marker).
+* `check_preserved --allow-regrouped`: ADDED = glance (markers `pdk-03`, `pdk-04`, `pdk-periph`,
+  `skw-01`; numbers; quote "Oxide Bias for MM3"; ref `step-141`; hedges inference, likely, not public)
+  + the repeated "inference" above + identifiers from the glance and the "Split of the via-3 height"
+  label. REGROUPED: the rules sentence into two bullets, the capacitor item split (same digits, same
+  order). WORDS LOST: `strength`×2. No DUPLICATED line.
+* `cov`: 3 flags, pairing noise (the "assumptions"/"typical"/"our reading" words are in the
+  neighbouring bullet or sentence, unchanged).
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
