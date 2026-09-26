@@ -121,27 +121,35 @@ shadowed …" (the base's own opener; "such" names the implant of the paragraph 
 
 ## Content problems for the owner
 
-None was fixed here; each is recorded as found.
+None was fixed here. Scoped as the batch review (`rd-steps-076-088`, section D) rules:
 
-1. **079 lead against step 5 (from the S6 figure notes).** The base lead: "… and stops on the poly, leaving
-   bare polysilicon exactly "under licon1 areas"" (now "`NPCME` stops on the poly, …"); step 5: "A few
-   nanometres of poly loss and a damaged layer of the kind Oehrlein reviewed are unavoidable". The
-   figure agent judged this not a contradiction (the figure draws no loss and says so); both texts are
-   kept verbatim.
-2. **081 "Two proximity effects follow from a high-dose implant edge in resist."** The paragraph then
-   describes one mechanism (lateral scatter from the resist edge, with its well-edge version and its
-   layout consequences); the second effect is not named. The owner may want to name it or say "One".
-3. **081 psd.10b against 085 nsd.10a.** 081 gives "minimum area 0.255 µm² (psd.10b)"; 085 gives "minimum
-   area 0.265 µm² (nsd.10a)", with the same 0.265 µm² for the minimum hole area on both. The rules are
-   shared under one heading; whether the rule ids (10a/10b) and the two area values are both right is
-   worth one look at the periphery rules.
-4. **083 repeats the 8250 list entry.** Why quotes "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E
-   shower, 1e11 to 1e14, 0-60 deg tilt" and Machines likely used quotes "B11, BF2, As, ESC chuck, E
-   shower, 1e11 to 1e14, 0-60 deg tilt". R-REPEAT was not applied (the copies differ and the Why
-   argument rests on its copy); the owner may prefer a pointer.
-5. **082/086 test-tile structures.** 082 describes "two 25.05-square "p+ resistor" structures", 086
-   "the test tile's 25-square "n+ resistor" structures". If both are the same drawn geometry the two
-   pages give it differently; kept as written.
+1. **079 lead against step 5** (from the S6 figure notes): "stops on the poly" and "a few nanometres
+   of poly loss … are unavoidable" are compatible. Review: not a contradiction, no change. Both kept
+   verbatim.
+2. **081 "Two proximity effects follow from a high-dose implant edge in resist."** The paragraph cites
+   Hook et al. on "the lateral straggle and mask-proximity effect", which are plausibly the two effects.
+   *Optional owner edit:* name them in the first sentence. Not a readability item.
+3. **psd.10b 0.255 µm² against nsd.10a 0.265 µm².** Resolved by the review, no change: the mask pages
+   quote "Min area of Psdm" 0.255 µm² and "Min area of Nsdm" 0.265 µm², matching the PDK's Table 7
+   `MinPsdmArea` and `MinNsdmArea`; the two layers genuinely differ.
+4. **083 repeats the 8250 list entry** (Why and Machines likely used). R-REPEAT does not apply (the
+   copies differ and the Why argument rests on its copy); no change.
+5. **082 "25.05-square" against 086 "25-square" test-tile resistors.** An owner check against the
+   raw-data pad list; possibly the same structure at two precisions. Not a readability item, low
+   priority.
+
+## Review fix round (2026-09-26)
+
+Review `rd-steps-076-088`: approve with fixes, 0 High, 1 Medium, 8 Low. One commit per fix:
+M1 (083 dash pair restored), L1 (079 resistor links unlabelled, as 078), L2 (086 full extraction hedge
+on the values; test-tile sentences their own paragraph), L3 (087 Resources bullet back as one
+sentence), L4 (088 reseller evidence directly after its grade), L5 (088 lead break after the designed
+depth, then three paragraphs), L6 (080 glance Why), L7 (083 wording), L8 (079 split with "On that
+reading" repeated). Guide rulings applied to these pages: the unit rule (081 and 085 rule tables:
+header "Value", every value cell with its unit); rulings 1, 3, 4 and 7 already matched the pages (076's
+list-closing "These are …"; no item under sub-bullets with a lead over 30 words; 083 and now 079 repeat
+a leading hedge; bare-quotation *SkyWater says:* on 079, 083, 086); rulings 5 and 6 are coordinator or
+tool items. L9 (077 `[^regis-1997]` repeat) left as the review accepts it.
 
 ## Pages
 
