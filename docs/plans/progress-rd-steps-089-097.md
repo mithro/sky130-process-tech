@@ -187,3 +187,55 @@ Model pages: 078, 083. One commit per page.
   0.2 µm gate caps …" (46). Its only seam is ", and its thickness …", and the second half would lose
   the "If the polish stops …" condition that governs it unless the condition were repeated, which adds
   a number; kept whole.
+
+### 092 RTAD2 — done
+
+* **R-H3.** `### Competing readings` after the figure caption, over the 183-word passage that weighs the
+  source/drain-anneal and dielectric-anneal readings and then says why the anneal comes here on either
+  reading. The lead is the 91-word first paragraph.
+* **R-GLANCE step 8 / R-SENTENCE.** First sentence 41 → 23 words: split before "but placed", the
+  second sentence opening "`RTAD2` is placed *after* …" — the step's name, not "It", because "It"
+  directly after "… {ref}`RTAD` four steps earlier." would read as RTAD (the pronoun-referent class).
+* **R-PARA / R-SENTENCE.** Readings: the source/drain bullet split into lead and a continuation from
+  "The RTAD page sets out …"; the dielectric bullet's 58-word first sentence loses its second
+  parenthetical, which becomes its own sentence "(Miyazaki et al. used exactly such an RTA to improve
+  PSG's passivation.[^miyazaki-1994])" (R-SENTENCE steps 3 and 7), and the studies start the
+  continuation. "On either reading …" split at its colon. Step category: "What is specific to it" →
+  "What is specific to `RTAD2`" (the preceding sentence ends on CSIL, so "it" could be read as CSIL;
+  R-PARA step 5); its colon and its dash become full stops; "It is also the anneal with the least
+  freedom" → "`RTAD2` is also …", opening a second paragraph (the paragraph was 108 words), and its
+  colon becomes a full stop. Why "Stable activation" split at its semicolon into lead and
+  continuation; "Dielectric densification" likewise.
+* **R-LIST.** How "Temperature and time": the reseller disagreement becomes "The two reseller documents
+  disagree on the 8800's ramp rate:" and one plain sub-bullet per document, each with its own marker
+  ("while" dropped); "Both put the steady-state range at 400–1200 °C." stays after the list (a plural
+  pronoun naming the two documents, review 6 D1).
+* **R-CATEGORY.** The 45-word classification sentence stays whole (35 is a target; splitting at its
+  semicolon would leave the CSIL comparison as a one-sentence paragraph directly before "What is
+  specific to …"). "What is specific to …" is its own label (step 3).
+* **R-TOOLS.** Heatpulse: *SkyWater says:* (verb-first), *Tool exists:*, *Runs this step:*; the
+  reseller evidence and the blog post follow directly as the continuation (split at its semicolon).
+  Aviza: pilot form — the head keeps the quoted entries and this reference's gloss ("the batch
+  alternative but … an unlikely one"), one sentence with no seam; grades as sub-bullets. Two tools, no
+  recap table.
+* **R-OPENQ.** "Purpose of the second anneal", "Temperature, time and ambient", "Reflow or
+  densification".
+* **R-RELATED.** Previous and Next as two bullets; "The films annealed … the polish between them"
+  (PSG, NCAPOX, CMPP; all MOL) → `Same module:`; the first source/drain anneal, the earlier RTAs and
+  the lower-temperature anneals that follow (all Anneal-category steps) → one `Same category:` bullet
+  (two bullets merged; every gloss and link kept).
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does from the lead with "described in this reference as"; Why names both readings and
+  says both are inferences; Public numbers "none for the anneal itself" plus the 0.1 µm design depth
+  `[^pdk-03]`; tool line with both grades, each named; Not public from Open questions 1–2.
+* **Skipped.** R-REPEAT (none); R-TABLE (the two reseller documents are two items, not ≥ 3 × 2).
+* **Preservation.** ADDED markers `pdk-03`, `skw-01`, numbers 0.1, 8808, hedges "inference", "likely",
+  "not public" — the glance box; identifiers `RTAD2`×4 (three pronouns given their noun back, one
+  glance). REGROUPED: the reseller-disagreement sentence (now a lead-in and two items) and the
+  Heatpulse reseller sentence (split at its semicolon) — same digits, same order. WORDS LOST: "but",
+  "while" (connectives at splits), "it"×2 (→ `RTAD2`), "strength"×2 (R-TOOLS labels).
+* **Marker coverage.** 3 flags, all read: two glance condensations; the second reseller item (the
+  `[^ag-8800]` marker belongs to the first item, which keeps it).
+* **Caps.** para > 100: 1 → 0; item > 60: 6 → 0; sentence > 45: 9 → 1 — the dielectric-anneal lead
+  (46, of which 3 are the bold label that is the sentence's subject; its only other seam would need an
+  added "also").
