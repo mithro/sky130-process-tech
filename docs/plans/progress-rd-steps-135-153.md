@@ -170,3 +170,64 @@ description of the surface, and none of the four titles is true of the whole.
   "our reading" (step 5); REGROUPED lines read (lead-in numbers, the capm.3/4/5 rules, the resist
   thickness), same digits in the same order. `--strict-words`: LOST `strength` ×3 (R-TOOLS), `page`
   ("Mask page:" → "Mask:"); `whose`, `which`, `it` non-strict (restored nouns).
+
+### 138 CAPME — done
+
+Base `4c0ea844`. Caps before: 5 paragraphs, 8 items, 17 sentences over; after: 0/0/0. Lead 93 words
+(one paragraph, as in the base). Two in-force notes in the body and one in the Deep-dive list:
+untouched, each still directly after the paragraph it belongs to ("… in the collapsed note below." and
+"The other two patents …" before the first; "… the operation this step performs." before the second);
+no pointer sentence shortened; nothing from them in the glance box. No H3 added (the post-figure
+passage argues between readings but is not laid out as two competing readings under separate heads;
+no title of the four is true of it as a whole).
+
+* Lead: the dash material (TiW, ~0.1 µm on our reading) moved to its own sentence directly after its
+  clause, "The film is TiW, as assumed there, of the order of 0.1 µm on our reading …" (restored
+  subject; hedge verbatim).
+* Post-figure: the cap identity as "… a refractory film of unknown identity:[^cyp-qtp-113005]
+  [^cyp-qtp-123907]" and two bullets (both markers on the lead-in per R-LIST step 1; "or" dropped);
+  "It is not yet patterned" → "The metal-3 stack is not yet patterned" (restored noun, new paragraph);
+  the selectivity sentence's dash pair moved after it as "For a TiW plate on an oxynitride, as assumed
+  here (see …), that is a fluorine-etchable metal over a fluorine-etchable dielectric." (subject and
+  verb added); Philips/Newport split at the semicolon; the 309-word and 204-word paragraphs split at
+  sentence seams, none opening on a connective ("Taken at that floor it is" → "the figure is",
+  restored noun); "…(inference; Liu and Kuo …, and … the collapsed note above)" (a 30-word
+  parenthetical) made the following sentence "(Inference; … above.)"; the next sentence's "It is a
+  consideration that CAPTIW1 weighs …" → "The comparison is a consideration …" (restored noun, because
+  "It" would now follow the parenthetical sentence; the base referent is the comparison of the
+  paragraph's first sentence); "If it is the Ti/TiN …" → "If the cap is the Ti/TiN …" (new paragraph).
+* R-CATEGORY: classification sentence with its dash tail (18 words); "Specific to this step:" three
+  bullets — the fluorine/WF₆ sentence split at its semicolon; the Liu–Kuo clause with the "only
+  selectivity they report" sentence in one bullet (pronoun "they"), the 83-word sentence split at the
+  closing dash ("where" dropped) and at "; and at that floor" ("(our arithmetic)" stays with the
+  arithmetic clause, which is the only arithmetic in the sentence) as a continuation of that bullet
+  (so "that floor" keeps its antecedent); the chlorine sentence's dash (Fischl and Hess) as its own
+  sentence directly after "Chlorine also etches both metals." ("and" dropped; "on our reading" stays
+  on its clause). "What is specific … is the stop" split at the colon.
+* R-REPEAT considered and not applied: the category bullet's selectivity sentence repeats the
+  post-figure passage (the guide's own R-CATEGORY example), but it carries the only `liu-2007-tiw`
+  marker for the Liu–Kuo clause before it, so deleting it would leave that clause of Step category
+  unmarked (R-REPEAT "Do not touch"). Kept, restructured.
+* Why: item 2's two dash pairs (the fluorides; the AlF₃ residue) moved to sentences after their
+  clause, "Fluorine etches TiW as WF₆ and TiF₄, TiN as TiF₄." and "AlF₃ is a residue …" (restored
+  subjects; `hess-1982` stays on the AlF₃ clause); item 3 split at the semicolons.
+* How: italic scope lead-in; step 3's dash material ("Cl₂ (or BCl₃) … in argon") as "It is …" and its
+  parenthetical hedge as the following sentence "(Industry practice …; Nojiri sets out the
+  regime.[^nojiri-2015])"; step 4 split at the semicolon; step 5: the ash-tool dash and the solvent
+  parenthetical as sentences directly after the ash/clean sentence ("The ash is the "Gasonic PEP" …"
+  — the batch-9 L1 form), "No HF and no peroxide." then the peroxide reason unparenthesised with its
+  "by inference"; step 6: the test-tile structures as five sub-bullets under "The published SKY130 test
+  tile has:[^raw-data-testtile-pads]" ("and" dropped). Arithmetic re-done: solving 17 600 a + 1 760 p =
+  35 500 fF and 5 040 a + 5 328 p = 11 100 fF gives a = 2.00 fF/µm², p = 0.194 fF/µm; the area-intensive
+  structure then gives 12.37 pF (12.4); 33.26/35.5, 10.37/11.1, 11.57/12.4 = 6.3 %, 6.6 %, 6.7 % below.
+  Correct. 0.1 µm / 2 = 50 nm, correct.
+* R-TOOLS: Lam item (existence grade; "Which runs this step is not public." as continuation); strip
+  item (existence + assignment). R-RELATED: Previous / Next / Depends on (CAPTIW1, CAPILD; WTIAL3) /
+  Feeds (VIM3E) / Same category (LI1ME; CAP2ME) / Category page. R-OPENQ labels; the first Open question
+  split into a lead (the question, 25 words), a continuation (its dash, the "greater than 2" floor,
+  moved after the sentence; "(inference)" still ends the "We describe the former because …" sentence
+  as in the base) and a second continuation (Philips).
+* Preservation: ADDED = the glance box (markers, numbers, refs, hedges) and "metal-3" ×2 (restored
+  nouns); REGROUPED lines read (cap stack list, test-tile list, selectivity arithmetic), same digits in
+  the same order. `--strict-words`: LOST `strength` ×2 (R-TOOLS), `where` (the connective at the
+  category split); `it` non-strict.
