@@ -96,7 +96,7 @@ widths in both themes, four built pages shot. Nothing left but review.
 
 ## Checks
 
-`gen_figures.py --check`: see the last line of this file's check entry below; every checker
+`gen_figures.py --check`: 668 generated files, 0 problems; every checker
 (`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`,
 `check_papers`, `check_patents`, `check_filings`, `check_inforce`) 0 problems; `gen_papers`,
 `gen_patents`, `gen_filings`, `gen_index_links` `--check` clean; `sphinx-build -W` passes;
