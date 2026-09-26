@@ -11,14 +11,14 @@ nodes:
     basis: typical
     branch:
       title: "Probe card"
-      note: "laid out to the pad pitch of the e-test modules"
+      note: "laid out to the e-test pad pitch"
       basis: typical
   - title: "Parametric tester"
     note: "measures transistors, resistors, capacitors, diodes, contact and via chains"
     basis: typical
     branch:
       title: "HP 4062UX"
-      note: "the only parametric tester SkyWater lists; its use for HPETEST is our inference"
+      note: "listed by SkyWater; its use here is our inference"
       basis: inferred
       cite: skw-01
   - title: "Results and disposition"
@@ -26,7 +26,7 @@ nodes:
     basis: typical
     branch:
       title: "PDK e-test specs"
-      note: "nominal, lower and upper limits per parameter (NOM, LSL, USL)"
+      note: "NOM, LSL and USL per parameter"
       basis: public
       cite: pdk-07
 footer: "Only the blocks this page names, in the order of its opening paragraph. SkyWater's test plan is not public beyond the PDK's parameter tables."
