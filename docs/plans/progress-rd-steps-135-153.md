@@ -84,3 +84,47 @@ Base `b285acd8`. Caps before: 4 paragraphs, 8 items, 11 sentences over; after: 0
   derivation (same digits, same order, checked by eye). With the glance box: the glance's numbers,
   markers, quote "C1", hedges. `--strict-words`: LOST `strength` only (R-TOOLS). `cov`: the flags are
   the glance box and the declared hedge cover.
+
+### 136 CAPTIW1 — done
+
+Base `63fac342`. Caps before: 3 paragraphs, 4 items, 11 sentences over; after: 0/0/0. Lead 223 words
+(base 217, the added words are "It is", "The metal-3 conductor is", "the plate") in three paragraphs; first
+sentence 10 words (base 41). The in-force note after the Why list is untouched and stays directly after
+the list; nothing of it is repeated.
+
+* Lead: first sentence split at the colon ("It is a blanket conductor film …"); the stack parenthetical
+  (over 11 words, with a dash pair inside) made its own sentence after the sandwich sentence, "The
+  metal-3 conductor is … qualified in 2013–2014 (overview-metal-cap).[^cyp-qtp-113005][^cyp-qtp-123907]"
+  (the dashes round the ref became parentheses; markers with it); the TiW sentence split at the
+  semicolon, "it" → "the plate" (restored noun), and its 40-word "(inference: …)" parenthetical kept
+  whole as the following sentence "(Inference: … see overview-metal-cap.)", directly after its claim.
+* Post-figure: "Its role is electrical (…) and mechanical: …" → "The plate's role is:" and two plain
+  bullets, "electrical — …" / "mechanical — …" (the parentheses became a dash; marker with its clause).
+  The ρ/Rs estimate is a single operation and stays inline. Arithmetic: 50–100 µΩ·cm / 5.8 Ω/sq =
+  0.086–0.17 µm; correct.
+* R-CATEGORY: classification sentence (13 words) split at the semicolon; the category-page pointer as
+  a second paragraph; "What is specific here is that X rather than on metal: A, and B (inference …)"
+  kept as one sentence presented as "… on metal:" and two bullets (only "and" dropped). The trailing
+  "(inference from the geometry; the same concern shapes the TiN top plate …)" stays on the second
+  bullet: the first carries its own "we infer", and the Newport Fab clause speaks of "the same concern"
+  (damage), so the page ties the parenthetical to the stress clause. Listed for the reviewer.
+* Why: item 1 split after "a flat, continuous dielectric." (the capacitance clause becomes its own
+  sentence, so it is no longer inside the "Because …" clause; nothing else changed) and at the
+  Freescale semicolon; item 2 (370 words) as the four criteria (i)–(iv) and the four reasons as
+  sub-bullets under "The plate must be a metal that:" / "TiW satisfies all four:", "and" dropped at each
+  list end; the Kar-Roy/Babcock clause split at its semicolon; the TiW-or-TiN balance as "… (overview):"
+  and two bullets; the Philips dash material moved directly after its bullet as "A TiW plate over a TiN
+  cap is the arrangement the Philips process relies on, stopping "…".[^pat-mim-philips]" (restored
+  subject; "This" would have pointed at the TiN plate). Item 3 split at the semicolon; item 4's dash
+  pair (Thornton, Dirks) moved to its own sentence directly after its clause, the crack clause after it,
+  so "therefore" still follows it.
+* How: italic scope lead-in; step 3 split at its semicolon ("(industry-typical)" stays with the recipe
+  clause it sits in).
+* R-TOOLS: the AMAT item as three lines; "the platform model … and the use of the same chamber … are
+  inferences" kept whole under *Runs this step:*. The Lam etcher bullet has no "Strength:", unchanged.
+* R-RELATED: Previous / Next / Same module (CAPTIW2) / Depends on (WTIAL3, MM3/MM3E) / Feeds (VIM3E;
+  CMPM3) / Same category (TIAL6, TIAL12) / Category page. R-OPENQ labels. R-REPEAT: none.
+* Preservation: every ADDED line is the glance box (markers `pdk-07`, `skw-01`, its numbers and hedges)
+  or "metal-3" (the restored "The metal-3 conductor"); REGROUPED lines read (lead, criteria, quality
+  factor), same digits in the same order. `--strict-words`: LOST `strength` (R-TOOLS); `its` (→ "The
+  plate's"). `cov`: flags are pairing noise and the declared hedge placement.
