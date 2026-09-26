@@ -10,10 +10,25 @@
 | **Previous step** | {ref}`LI1ME <step-103>` |
 | **Next step** | {ref}`NILD2 <step-105>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a thin, conformal silicon nitride over the
+  patterned local interconnect.
+* **Why:** without it the `mcon` etch would have no stop on the local
+  interconnect and the TiN would be oxidised by the steps that follow.
+* **Public numbers:** "LINT K=7.3", 0.075 µm thick.[^pdk-04]
+* **Likely SkyWater tool:** "C1" PECVD system, nitride — **strong**
+  (existence of a PECVD nitride process); **inference** (assignment to
+  `LINIT`).[^skw-01]
+* **Not public:** the deposition route, precursor, temperature, stress
+  and hydrogen content (→ Open questions).
+:::
+
 ## What this step is
 
 `LINIT` deposits a thin, conformal silicon nitride over the patterned
-{term}`local interconnect`: over the tops and sidewalls of the TiN lines of
+{term}`local interconnect`. It lies over the tops and sidewalls of the TiN lines of
 {ref}`LI1ME <step-103>`, the exposed {term}`cap oxide` between them, and any
 tungsten-plug tops the lines leave uncovered. The PDK names the
 film: the process stack diagram
@@ -32,15 +47,20 @@ Before, the TiN pads on the cap oxide; after, a thin nitride over everything, fo
 :::
 
 Three things the nitride does are visible from the PDK's own
-structure. It sits between the 0.1 µm `li` conductor and the
-"NILD2" oxide[^pdk-04] that {ref}`NILD2 <step-105>` will deposit, so
-it is the etch stop that the `mcon` contact etch ({ref}`CTME <step-108>`)
-— which must land on 0.1 µm of TiN without punching through it —
-will see before it reaches the local interconnect. It seals the TiN
-against the oxidising and wet environments of the oxide deposition
-and polish that follow. And its 7.3 permittivity is part of every
-LI-to-metal-1 capacitance in the extraction tables.[^pdk-08]
-Because it lies over TiN and tungsten, it must be deposited well
+structure:
+
+* It sits between the 0.1 µm `li` conductor and the
+  "NILD2" oxide[^pdk-04] that {ref}`NILD2 <step-105>` will deposit, so
+  it is the etch stop that the `mcon` contact etch ({ref}`CTME <step-108>`)
+  will see before it reaches the local interconnect. That etch must land
+  on 0.1 µm of TiN without punching through it.
+* It seals the TiN
+  against the oxidising and wet environments of the oxide deposition
+  and polish that follow.
+* Its 7.3 permittivity is part of every
+  LI-to-metal-1 capacitance in the extraction tables.[^pdk-08]
+
+Because the nitride lies over TiN and tungsten, it must be deposited well
 below the temperatures of a furnace nitride, which is the main
 constraint on the recipe (inference from the materials present).
 
@@ -49,12 +69,14 @@ constraint on the recipe (inference from the materials present).
 `LINIT` is a {ref}`Thin-film deposition <category-deposition>` step —
 a {term}`CVD` silicon nitride, in the family of {ref}`ISONIT <step-003>`,
 {ref}`GATENIT <step-058>` and {ref}`SPNIT <step-076>` before it and
-the {ref}`NTSD <step-167>` topside nitride at the end. What
-distinguishes this instance is the substrate and the temperature:
-the earlier nitrides were deposited on silicon and oxide at furnace
+the {ref}`NTSD <step-167>` topside nitride at the end.
+
+What
+distinguishes this instance is the substrate and the temperature.
+The earlier nitrides were deposited on silicon and oxide at furnace
 temperatures, while this one goes onto titanium nitride, tungsten
 and oxide on a wafer whose thermal ceiling is now set by the
-{term}`silicide` ({ref}`CSIL <step-098>`) and the metal films — so a plasma
+{term}`silicide` ({ref}`CSIL <step-098>`) and the metal films. So a plasma
 deposition at 300–400 °C ({term}`PECVD`; category
 page[^wiki-pecvd]) is the industry-typical choice, and we infer it
 here. It is also the first nitride in the flow deposited *as* an
@@ -69,11 +91,15 @@ the borderless-contact schemes of the era:
 * **Etch stop for the `mcon` contact.** The metal-1 contact
   ({ref}`CTM1 <step-107>`, {ref}`CTME <step-108>`) is a fluorocarbon
   oxide etch through the NILD2 oxide that must stop on a 0.1 µm TiN
-  line — and, where the contact is misaligned or the line is narrow,
-  must not dig into the oxide beside the line. An oxide etch stops on
+  line.
+
+  Where the contact is misaligned or the line is narrow,
+  it must not dig into the oxide beside the line. An oxide etch stops on
   nitride with the {term}`selectivity` that the fluorocarbon-film mechanism
   gives (Schaepkens et al.[^schaepkens-1999]); the nitride is then
-  opened with a short, separate etch. Liao et al. compared etch-stop
+  opened with a short, separate etch.
+
+  Liao et al. compared etch-stop
   layers for {term}`borderless contacts <borderless contact>` and their effect on deep-submicron
   device performance,[^liao-2004] and Cacciato et al. describe the
   charging that a conductive etch-stop nitride can cause during a
@@ -84,25 +110,33 @@ the borderless-contact schemes of the era:
   because this nitride is there.
 * **Sealing the TiN and tungsten.** Titanium nitride oxidises slowly
   in air and quickly in an oxygen plasma or a hot oxidising ambient,
-  and the tungsten plugs oxidise to WO₃; the HDP or PECVD oxide
+  and the tungsten plugs oxidise to WO₃.
+
+  The HDP or PECVD oxide
   deposition of {ref}`NILD2 <step-105>` and the polish and cleans of
   {ref}`CMPL <step-106>` are exactly such environments. A nitride
   deposited first keeps both metals as they are (industry practice;
   inference for SKY130).
 * **Moisture and hydrogen barrier.** PECVD nitride is a good barrier
-  to water, but it carries hydrogen: Smith et al. and Claassen et
-  al. set out how the plasma conditions fix the composition,
-  hydrogen content and stress of PECVD nitride,[^smith-1990][^claassen-1985]
-  Habraken and Kuiper review the film properties,[^habraken-1994]
-  and Shimaya traced hot-carrier degradation to water diffusing
-  through nitride passivation.[^shimaya-1995] At 0.075 µm the
+  to water, but it carries hydrogen:
+
+  - Smith et al. and Claassen et
+    al. set out how the plasma conditions fix the composition,
+    hydrogen content and stress of PECVD nitride;[^smith-1990][^claassen-1985]
+  - Habraken and Kuiper review the film properties;[^habraken-1994]
+  - Shimaya traced hot-carrier degradation to water diffusing
+    through nitride passivation.[^shimaya-1995]
+
+  At 0.075 µm the
   hydrogen inventory of this film is small, but it is the closest
   nitride to the transistors after the spacer.
 * **Stress.** A nitride over the gates strains the channel, as Ito
   et al. and Shimizu et al. showed for etch-stop nitrides at the
-  130 nm generation;[^ito-2000][^shimizu-2001] here the film is
+  130 nm generation.[^ito-2000][^shimizu-2001]
+
+  Here the film is
   separated from the gates by the cap oxide and the gate caps, so
-  the effect is smaller, but the stress of a PECVD nitride — which
+  the effect is smaller. But the stress of a PECVD nitride — which
   Hughey and Cook showed can change irreversibly on later
   heating[^hughey-2003] — is still a recipe parameter.
 * **Capacitance.** The film's 7.3 permittivity over 0.075 µm adds to
@@ -115,12 +149,14 @@ interconnect and the TiN would be oxidised by the steps that follow.
 
 ## How it is typically performed
 
-Industry-generic routes for a thin etch-stop nitride over metal in a
-200 mm, 130 nm-era fab (SKY130's recipe is not public):
+*Industry-generic routes for a thin etch-stop nitride over metal in a
+200 mm, 130 nm-era fab (SKY130's recipe is not public):*
 
 * **PECVD from silane and ammonia (or nitrogen).** Single-wafer or
   multi-station reactor, 300–400 °C, a few Torr, 13.56 MHz (often
-  with a low-frequency component to tune stress); SiH₄/NH₃/N₂
+  with a low-frequency component to tune stress).
+
+  SiH₄/NH₃/N₂
   chemistry,[^wiki-pecvd] with hydrogen content and stress set by
   the plasma conditions.[^smith-1990][^claassen-1985] SkyWater lists
   "PECVD nitride C1" and "PECVD silane oxide/nitride/oxynitride,
@@ -131,7 +167,7 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
   550–600 °C (Gumpher et al.[^gumpher-2004]) — which SkyWater also
   lists on its Aviza furnaces[^skw-01] — is conformal and
   hydrogen-lean but hot for a wafer carrying TiSi₂ contacts and
-  tungsten; a single-wafer thermal nitride at similar temperatures
+  tungsten. A single-wafer thermal nitride at similar temperatures
   (Teasdale et al.[^teasdale-2001]) is the same trade-off.
   Possible, but less likely (inference).
 * **Thickness.** 0.075 µm (PDK).[^pdk-04]
@@ -159,14 +195,21 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 
 ## Machines likely used at SkyWater
 
-* **"C1" PECVD system, nitride.** SkyWater lists "PECVD nitride C1"
-  and "PECVD silane oxide/nitride/oxynitride, C1" — a Novellus
+* **"C1" PECVD system, nitride**
+  - *SkyWater says:* lists "PECVD nitride C1"
+    and "PECVD silane oxide/nitride/oxynitride, C1".[^skw-01]
+  - *Tool exists:* **strong** for the existence
+    of a PECVD nitride process.
+  - *Runs this step:* assignment to `LINIT` is an
+    **inference** from the thermal-budget argument above.
+
+  The PECVD system is a Novellus
   Concept One-class system, we infer from the abbreviation; SkyWater
-  gives only "C1".[^skw-01] Strength: **strong** for the existence
-  of a PECVD nitride process; assignment to `LINIT` is an
-  **inference** from the thermal-budget argument above.
-* **Aviza furnace, BTBAS nitride.**[^skw-01] Strength: strong for
-  existence; weak for this step.
+  gives only "C1".[^skw-01]
+* **Aviza furnace, BTBAS nitride**[^skw-01]
+  - *Tool exists:* strong for
+    existence.
+  - *Runs this step:* weak for this step.
 
 ## Resources required
 
@@ -183,13 +226,13 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 ## Related steps and cross-references
 
 * Previous: {ref}`LI1ME <step-103>` (the patterned TiN it covers).
-  Next: {ref}`NILD2 <step-105>` (the oxide over it), then
+* Next: {ref}`NILD2 <step-105>` (the oxide over it), then
   {ref}`CMPL <step-106>`.
-* The etch it will stop: {ref}`CTM1 <step-107>`,
-  {ref}`CTME <step-108>`.
-* The film it seals: {ref}`LITIN <step-101>`; the plugs beneath:
+* Depends on: the film it seals, {ref}`LITIN <step-101>`; the plugs beneath,
   {ref}`WDEP <step-099>`, {ref}`WCMPLI <step-100>`.
-* Other nitrides: {ref}`ISONIT <step-003>`, {ref}`GATENIT <step-058>`,
+* Feeds: the etch it will stop, {ref}`CTM1 <step-107>`,
+  {ref}`CTME <step-108>`.
+* Same category: other nitrides, {ref}`ISONIT <step-003>`, {ref}`GATENIT <step-058>`,
   {ref}`SPNIT <step-076>`, {ref}`NTSD <step-167>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
@@ -246,14 +289,14 @@ Industry-generic routes for a thin etch-stop nitride over metal in a
 
 ## Open questions
 
-* The deposition route (PECVD or low-temperature LPCVD), precursor,
+* **Deposition route.** The deposition route (PECVD or low-temperature LPCVD), precursor,
   temperature, stress and hydrogen content are not public; the
   PECVD reading is an inference from the materials present and
   SkyWater's capability list.
-* Whether the film is opened by the `mcon` etch itself or by a
+* **How the film is opened.** Whether the film is opened by the `mcon` etch itself or by a
   separate nitride etch is not stated publicly (see
   {ref}`CTME <step-108>`).
-* Whether a pre-treatment removes the TiN surface oxide before the
+* **Pre-treatment.** Whether a pre-treatment removes the TiN surface oxide before the
   nitride is deposited is not public.
 
 <!-- footnotes -->

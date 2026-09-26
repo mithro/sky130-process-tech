@@ -383,3 +383,45 @@ page.
   sub-bullets under the lead-in marker, glance and tool head. None lost.
 * **Caps after:** 0 paragraphs, 1 item (Selectivity to oxide, 61, kept verbatim), 0 sentences, 0
   cells. Item leads over 30: CD control (37), Main etch (38).
+
+### 104 LINIT — done
+
+* **Lead.** First sentence 37 → 12 words: split at its colon, "It lies over the tops and sidewalls
+  …" ("It" = the nitride; "It lies" added). Lead 90 words, one paragraph.
+* **R-LIST.** "Three things the nitride does …" → colon and three plain bullets; "And its 7.3 permittivity"
+  → "Its 7.3 permittivity" (WORDS LOST "and"). Bullet 1's dash material ("which must land on 0.1 µm of
+  TiN without punching through it") becomes "That etch must land …" ("which" → "That etch", R-PARA
+  step 5). The closing sentence stays as prose after the list, "Because it lies …" → "Because the
+  nitride lies …" (after the list "it" would sit next to "Its 7.3 permittivity"; noun back). Its
+  "(inference from the materials present)" is untouched. No H3 (the passage is 126 words but is now a
+  list and a sentence; none of the four titles is needed).
+* **R-CATEGORY.** Classification sentence alone (30 words). "What distinguishes this instance …" is
+  its own label (as 089): the 69-word sentence split at its colon and at "— so a plasma deposition"
+  ("So a plasma deposition … and we infer it here." — a sentence may open "So" where the split
+  requires it); "It is also the first nitride …" follows unchanged, as in the base.
+* **Why.** Etch stop (153 words): lead = the contact sentence to its dash; "— and, where the contact is
+  misaligned or the line is narrow, must not dig …" → "Where …, it must not dig …" ("it" = the
+  contact etch; added subject) opening continuation 1 with the Schaepkens sentence; continuation 2
+  Liao, Cacciato and the ct.4 inference, unchanged. Sealing split at its semicolon. Moisture: "…
+  but it carries hydrogen:" + three plain study sub-bullets (one marker set each), the 0.075 µm
+  sentence as the continuation. Stress split at its semicolon, and the 46-word remainder at ", but
+  the stress" ("But the stress …").
+* **How.** Scope sentence italic ("Industry-generic routes …", word for word). PECVD split at its
+  semicolon (lead 18 words). LPCVD split at its semicolon.
+* **R-TOOLS.** "C1" PECVD: *SkyWater says:* the two quotations; the "— a Novellus Concept One-class
+  system, we infer …; SkyWater gives only "C1"" gloss separated at its dash into the continuation
+  after the grades, as "The PECVD system is a Novellus Concept One-class system, we infer …" (noun
+  back from the head, R-TOOLS step 2). The base's single `[^skw-01]` closed the sentence holding both
+  SkyWater's list and "SkyWater gives only "C1"", so it is on both lines (one repeat, declared).
+  Aviza: *Tool exists:* strong; *Runs this step:* weak.
+* **R-RELATED.** Previous / Next split; film and plugs → `Depends on:`; the etch it will stop →
+  `Feeds:`; other nitrides → `Same category:`.
+* **R-OPENQ.** "Deposition route", "How the film is opened", "Pre-treatment".
+* **R-GLANCE.** Why condenses the closing "Without `LINIT` …" sentence; Public numbers "LINT K=7.3",
+  0.075 µm `[^pdk-04]`; tool line with both grades named.
+* **Preservation.** ADDED: glance (`pdk-04`, `skw-01`, 7.3, 0.075, quotes, `C1`, hedges) and the
+  repeated `[^skw-01]`. WORDS LOST: "strength"×2 (R-TOOLS labels), "which", "and".
+* **Marker coverage.** 5 flags read: glance, the "That etch" sentence (its dash material had no marker
+  of its own), the "So a plasma deposition" sentence (keeps `[^wiki-pecvd]` and "we infer"), the
+  study sub-bullets. None lost.
+* **Caps after:** 0 / 0 / 0 / 0.
