@@ -205,3 +205,54 @@ page. No edit of any kind inside an in-force `{dropdown}`.
 * `check_preserved --allow-regrouped`: ADDED outside the glance only "It is", labels; every
   `number_order` change REGROUPED, read. `--strict-words` LOST: `strength`×2 (and `that`, `and`,
   `it`). cov: two flags, pairing noise. inv: OK.
+
+### 159 VIM4 — done (base `633e4126`)
+
+* Lead (base 107, one paragraph, first sentence 32 words): "`VIM4` is the via-4 lithography: the
+  mask step that defines …" → "`VIM4` is the via-4 lithography. It is the mask step that defines …"
+  (144 form; declared "It is"). **Listed under note ¹ of §4.1:** no zero-word form exists (the colon
+  clause is a noun phrase with no verb of its own); the lead goes 107 → 109, within 120. Two
+  paragraphs (64, 45), split before "The holes are etched …". First sentence 5 words.
+* R-H3: `### What the public record shows` after the figure caption (144 form) over the PDK passage
+  (≈ 300 words). The pad-via sentence split at its semicolon. R-TABLE: the via-4 rule sentence →
+  lead-in "The periphery rules define via 4 narrowly ("Via4 connects met4 to met5 in the
+  SKY130P*/SP8P* flow"):[^pdk-periph]" (the base's own sentence and quotation, the full stop between
+  them now a parenthesis) and a `Rule | Constrains | Value` table; via4.3 has no value in the base
+  (`—`). The x.2 clause follows the table as its own sentence with the base's marker; the lead-in
+  carries a repeated `pdk-periph` (declared). `number_order` LOST line re-paired by hand: via4.1
+  0.800 µm · via4.2 0.800 µm · via4.3 — · via4.4 0.190 µm (metal 4) · m5.3 0.310 µm (metal 5) · x.2
+  90°. Cell rewording "metal 4 must enclose the via by" → "enclosure of the via by metal 4" (144's
+  form; words `must`, `enclose` lost).
+* The 101-word area sentence: "A via 4 has sixteen times … (our arithmetic from via3.1 and
+  via4.1[^pdk-periph]), so area alone would account for …" kept as one sentence; the 19-word
+  parenthetical split at its own semicolon, its second half "(The rules also allow a 0.800 µm square
+  via 3 inside `areaid.mt`, via3.1a.[^pdk-periph])" a parenthetical sentence after it (R-SENTENCE step
+  7, gloss); the dash material "Scaled by area alone … (our arithmetic)." its own sentence directly
+  after; "Interface and liner terms … (inference)." at the semicolon, as its own short paragraph.
+  R-DERIVATION not applied: the page states the results (sixteen times, 213 mΩ, 1.8 times) without
+  writing out an operation (the 001 ruling).
+* R-CATEGORY (144 form, no label: the section already carries its own "What is specific …"
+  paragraph): classification sentence alone; the 60-word i-line sentence split at ", and ASML
+  describes" and at its semicolon (word `and` lost); Sheet4 paragraph split at its colon and before
+  "We also read a digit 4"; the "What is specific" paragraph's 100-word sentence split at its colon
+  and semicolon ("On our reading (see WTIAL5), … can enter." / "Skelly and Gruenke found …[^skelly-1986]"
+  / "Their result is not … (inference)."); each half keeps its own hedge or marker; the Bär/Kim
+  simulations and the via4.3 sentence as a third paragraph.
+* Why: hole-size item in three blocks (lead, fill, taper) split at its semicolon and colon; arrays
+  item split at its semicolon with `[^pdk-periph]` repeated on the first half (declared: the base's
+  single marker covered both clauses — "only one via size is allowed" is via4.1/via4.3) and at the Le
+  semicolon.
+* How: scope sentence italic. Step 2: the 15-word trailing hedge "(Inference from the KrF reading; on
+  an i-line tool it would be a DNQ/novolac resist.[^dammel-1993][^reichmanis-1989])" a parenthetical
+  sentence directly after the resist it qualifies; the rest a continuation paragraph. Step 3 split at
+  its semicolon (continuation paragraph).
+* R-TOOLS (144 form); the "SkyWater also lists "ASML I-line …" …, which … would otherwise suggest"
+  sentence is this reference's argument around the grade and stays whole as the continuation
+  paragraph after the grades. R-RELATED (144 labels; the base's separate "The mask types recorded for
+  vias 2–4" bullet joined to the Mask bullet — both are mask links). R-OPENQ labels on six bullets;
+  the mask-type bullet split at its semicolon (continuation paragraph).
+* Glance box (144 form).
+* `check_preserved --allow-regrouped`: the one LOST line is the rule table above; ADDED outside the
+  glance only the declared `pdk-periph`×2, "It is", the H3, the table header and labels; every other
+  `number_order` change REGROUPED, read. `--strict-words` LOST: `enclose`, `must`, `page`,
+  `strength`×3. cov: two flags, pairing noise. inv: OK.
