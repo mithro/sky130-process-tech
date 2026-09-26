@@ -104,6 +104,39 @@ LOST word.
 6. **"Keep verbatim" against §1 caps** (100, 103): an instruction to keep a sentence verbatim leaves it
    over the cap until the content pass.
 
+### Review fix round (review `rd-steps-098-106`: 0 High, 1 Medium, 5 Low)
+
+* **M1, 101 Open question.** The first half of the split leader-line sentence now carries the hedge
+  its base sentence ended with: "… puts at the same height as the `li` top (our reading of the
+  drawing).[^pdk-04]" (R-SENTENCE step 5; declared ADDED hedge).
+* **L1, 098.** "Because there is no strip between them, the two soaks can be one recipe." is back
+  after the temperature sentence that names the soaks; the Yoo sentence is the continuation.
+* **L2, 101.** "SkyWater's public list has PVD TiN chambers and no CVD TiN.[^skw-01]" is back in the
+  first paragraph, directly after "(inferred)"; "`LITIN` is the only step …" opens the second.
+* **L3, 105.** The HDP-CVD and PECVD TEOS parentheticals are back inline as in the base; the sentence
+  is split at "still matters" ("This is because an HDP film's sputter component …", "This is" added);
+  the sub-list is gone.
+* **L4, 104.** "it must not dig" → "the etch must not dig".
+* **L5, 105.** The evidence parenthetical now precedes the conclusion: "… a dense silicon dioxide.
+  (Thermal oxide is 3.9; … "NILD3" 4.5.[^pdk-04]) So the film is an undoped …".
+* **Guide rulings applied as worded.** R-REPEAT's tighter scope: the three deletions (100, 101, 103)
+  remove only copies whose facts, quotations and markers the home copy or another H2 still holds, and
+  their pointers name the source ("SkyWater's capability list is quoted under …", "Its sputter-target
+  suppliers are named under …"); 099 keeps both copies. No hand-inserted non-breaking spaces anywhere
+  (101/102 keep the unit in each cell of their mixed-unit Value columns).
+* Gates after the round: `check_preserved.py --base fd22efb3 --allow-regrouped` on 098, 101, 104, 105
+  — only the declared 101 LOST lines; all checkers and generator `--check`s 0 problems; `-W` build
+  clean.
+
+### For the tool branch
+
+1. **`check_preserved.py:343`** — `_LEADING_LIST_MARKER_RE = re.compile(r"^\d{1,2}[.)]\s+",
+   re.MULTILINE)` does not allow leading whitespace, so the labels of nested numbered lists (100's and
+   106's recipe sub-lists) count as ADDED numbers. Fix: `r"^[ \t]*\d{1,2}[.)]\s+"`, plus a selftest
+   case (review `rd-steps-098-106` D3).
+2. Still open from 089-097: `--allow-moved` for R-REPEAT (D1) and the rule-table regroup condition
+   (D2).
+
 ## Content problems for the owner
 
 Kept verbatim on the pages; not fixed.
