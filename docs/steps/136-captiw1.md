@@ -123,7 +123,7 @@ rather than on metal:
   own mask *before* the metal beneath is etched, the plate edge sits
   on a flat, continuous dielectric.
 
-  The capacitance is set by the
+  The capacitance is therefore set by the
   drawn `capm` area plus a periphery term — the `CMIMA` 2 fF/µm² and
   `CMIMP` 0.19 fF/µm of the PDK.[^pdk-07] This is the
   top-plate-first construction of the Newport Fab
