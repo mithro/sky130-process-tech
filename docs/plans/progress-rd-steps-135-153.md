@@ -410,3 +410,38 @@ two pages share wording.
 * Preservation: ADDED = the glance box (markers, numbers, the quote, `step-150`, hedges, `MiM2`,
   `cap2m`) and the repeated "(inference from the geometry)". `--strict-words`: LOST `strength`; `its`,
   `which` non-strict (restored nouns).
+
+### 152 CAP2M — done
+
+Base `04e5073a`. Caps before: 4 paragraphs, 5 items, 8 sentences over; after: 0/0/0 (one "sentence of
+49 words" that `rdtools caps` and `measure.py` report is two sentences, 17 and 31 words: the second
+opens with the numeral "0.1 µm", which their splitters do not treat as a sentence start). Lead 108
+words (base 106) in two paragraphs. Same treatment as 137 wherever the two pages share wording.
+
+* Lead: the "— which lies on … WTIAL4 —" dash as "The plate film lies on …" directly after its
+  sentence; "It is one of the two capacitor-plate masks" → "`CAP2M` is one of …" (new paragraph,
+  restored noun).
+* R-H3/R-LIST: `### What the public record shows` over the record passage; "Less is public about this
+  mask than about any neighbour:" and the three tables as bullets (markers with each); "What is
+  public is that:" and one bullet per "that" clause (only "that"/"and" dropped; the batch-8 form);
+  paragraph split before the test-tile sentence. The surface sentence as "The surface is the same
+  kind as at CAPM:" and three bullets (as on 137). 71 pF = 2 × 35.5 pF, consistent.
+* R-CATEGORY: classification sentence (12 words); "Specific to this step:" three bullets (k₁ with
+  its hedge; the ASML sentence split at the semicolon; "We therefore infer … Nothing public states
+  the tool or resist."); k₁ = 1.38 ≈ 1.4, correct. "What is specific to this instance is its place
+  in a stack." keeps its paragraph; the 68-word CD-error sentence: its dash material ("0.1 µm of edge
+  bias … (our arithmetic)") as a sentence directly after "A CD error on either plate changes the
+  capacitance of its half", the misregistration clause as its own sentence ("and" dropped), and the
+  trailing "(inference from the geometry)" repeated on the CD-error sentence (it covered the whole
+  sentence; declared ADDED hedge).
+* Why: items split into first block + continuation at semicolons; the Newport Fab line re-wrapped;
+  the charging item split at ", so" (a sentence opening "So", R-PARA step 2).
+* How: italic scope lead-in (with its CAPM pointer); step 1's dash split (the Brunner/Rocke sentence
+  as a continuation); step 5's 12-word parenthetical split: "(our reading of industry practice)"
+  stays on the alignment sentence it covered, Levinson as its own sentence.
+* R-TOOLS as on 137 (the quoted heads keep their quotation marks). R-RELATED as on 137: Previous /
+  Next / Same module (MM4, MM4E) / Depends on (CAPILD2) / Feeds (VIM4) / Same category (CAPM) / Mask
+  (with previous/next mask) / Category page. R-OPENQ labels. R-REPEAT: none.
+* Preservation: ADDED = the glance box (markers `pdk-07` ×2, `pdk-periph`, `skw-01`, its numbers,
+  `step-153`, hedges, identifiers) and the repeated "(inference from the geometry)"; REGROUPED
+  lines read. `--strict-words`: LOST `strength` ×3, `page` ("Mask page:"); `it`, `which` non-strict.
