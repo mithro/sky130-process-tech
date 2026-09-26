@@ -576,3 +576,46 @@ In-force note (US 10,062,748) and its pointer: untouched; nothing from it in the
   the declared `pdk-04`, "It is"/"it is", the H3, the table header and labels; the two DUPLICATED
   lines are the false positives above. `--strict-words` LOST: `strength` (and `its`, `and`). cov:
   three flags, pairing noise. inv: OK (dropdowns identical).
+
+### 168 PDM — done (base `af817394`)
+
+In-force note (US 7,679,384) and its pointer: untouched; nothing from it in the glance box. The
+"7000–9000 Å" of the category paragraph is kept verbatim (content problem 5).
+
+* Lead (base 130): two paragraphs (57, 73), the 48-word resist sentence split at its semicolon.
+* R-H3: `### What the public record shows` after the figure caption; the CD sentence split at its
+  semicolon; "The PDK does not explain the two variants …" a paragraph, split at its semicolon.
+  **A real pad.** stays a bold run-in over its paragraph (R-H3 step 4). Its 79-word GPIO sentence
+  split into three: "… the `pad` opening is a single octagon over a similarly chamfered 65.4 µm ×
+  75.4 µm metal-5 pad …", the dash material "The opening is a 60 µm × 70 µm rectangle with 4.95 µm
+  chamfered corners …" (declared "The opening is") and "So the metal extends 2.7 µm …"; the
+  trailing "(our reading of the published GDS and LEF).[^pdk-io-gpiov2]" repeated on every half
+  (declared ×2, R-SENTENCE step 5: each half is a reading of the same files). `number_order` LOST
+  line re-paired by hand: cell 80 µm × 200 µm; opening 60 µm × 70 µm with 4.95 µm chamfers; pad 65.4
+  µm × 75.4 µm; 2.7 µm margin; 0.8 µm via-4 squares — same numbers, same attributions.
+* R-CATEGORY (165 form): classification sentence alone; **Specific to this step:** with the k₁
+  sentence and the ASML-plus-inference sentences as two bullets; the "What is specific … is the
+  substrate: …" sentence keeps its main clause and its marker, and its 39-word gloss "(The PDK's 0.09 µm
+  TOPOX and 0.54 µm TOPNIT,[^pdk-04] or the 7000–9000 Å nitride of Cypress reports … given.[^cyp-qtp-123907][^cyp-qtp-113005])"
+  follows it as a parenthetical sentence (R-SENTENCE step 7). `number_order` LOST line
+  ('0.6–1', '0.09', '0.54', '7000–9000', '1000', '1.26') re-paired: the gloss's numbers now follow the
+  1.26 µm clause instead of preceding it; same digits, same markers.
+* Why: access item — lead sentence, then "The opening's size and its enclosure by the pad metal (…)
+  decide:" with its two complements as sub-bullets and the trailing hedge "(Industry
+  practice;[^txt-05] Comizzoli et al. …[^comizzoli-1986])" as a sentence directly under the list,
+  covering both (R-TABLE step 5 applied to a list). The 16-word "(2.7 µm per side in the GPIO cell,
+  the pad.4/4a check of the Error Messages page)" stays inline on "enclosure": it is mostly source
+  names and markers, and moving it would part it from the word it glosses (listed for the reviewer).
+  Scribe-test item: the dash aside now ends its own sentence at the marker; the patent pointer
+  sentence is base wording.
+* How: scope sentence italic; step 2 split at ", with thickness chosen" → "The thickness is chosen
+  …" (declared "The", "is"); step 6's 13-word gloss "(Scum left in a pad …)" a parenthetical
+  sentence.
+* R-TOOLS (165 form). R-RELATED (Previous · Next · Same module · Depends on · Mask · Category page;
+  "Mask page:" → "Mask:"). R-OPENQ labels on four bullets; the enclosure bullet's 13-word gloss "(The
+  only pad enclosure rule there is m4.16, … flagged "CU".[^pdk-periph])" a parenthetical sentence, its
+  second half a continuation. Glance box.
+* `check_preserved --allow-regrouped`: the two LOST lines are above; ADDED outside the glance only the
+  declared hedges and markers, "The opening is", "The thickness is", the H3 and labels; everything
+  else REGROUPED, read. `--strict-words` LOST: `page`, `strength`×3. cov: two flags, pairing noise.
+  inv: OK (dropdowns identical).
