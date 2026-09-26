@@ -62,7 +62,7 @@ short final round. Batch 3 (035–047, SONOS + gate oxides) merged 2026-09-25 af
 a final round; the guide now forbids any edit inside an in-force note. Batch 4 (048–063, poly) merged 2026-09-26: written by Opus, 0 High / 3 Medium on first review, one
 small fix round. Batch 5 (064–075, tips and halos) merged 2026-09-26: Opus writer, 0 High / 1 Medium, one small round.
 Batch 6 (076–088, spacers and source/drain) merged 2026-09-27: Opus writer, 0 High / 1 Medium, one small
-round. Batch 7a (089–097) merged 2026-09-27: Opus writer, 0 High / 1 Medium, one small round. Batch 7b (098–106) merged 2026-09-27: Opus writer, 0 High / 1 Medium, one small round. Steps 001–106
+round. Batch 7a (089–097) merged 2026-09-27: Opus writer, 0 High / 1 Medium, one small round. Batch 7b (098–106) merged 2026-09-27: Opus writer, 0 High / 1 Medium, one small round. Batch 8 (107–117) merged 2026-09-27: Opus writer, 0 High / 1 Medium, one small round. Steps 001–117
 done. Each module's figures land before its batch.
 
 Order per page: structure under H2 (A F2) → tables and derivations (F3, F5) → lists (F6, F7) → paragraph and
