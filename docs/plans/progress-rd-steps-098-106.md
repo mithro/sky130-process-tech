@@ -326,3 +326,60 @@ page.
 * **Marker coverage.** 9 flags read: table rows under the lead-in marker, the split criteria sentence
   (each half keeps its `[^pdk-03]`), glance and tool head. None lost.
 * **Caps after:** 0 / 0 / 0 / 0.
+
+### 103 LI1ME — done
+
+* **Lead.** Base 140 words in one paragraph → two (70 + 69) at the seam before "What remains"; lead
+  139 words (base over 120; text before the figure). The 55-word second sentence: its dash material
+  ("wherever a tungsten plug lies outside the LI pattern, which the rules forbid (licon.4,
+  li.5[^pdk-periph]) but overlay can cause") becomes its own sentence, "Wherever …, it stops on the top
+  of a tungsten plug." ("it" = the etch, the previous sentence's subject; "it stops" added, "and"
+  dropped). `[^pdk-periph]` stays on the rule clause, `[^pdk-04]` on the film. The 51-word "What
+  remains" sentence split at its colon.
+* **R-REPEAT — applied (declared).** Deleted from the post-figure passage (base `103-li1me.md:38–41`):
+  "SkyWater names two metal etchers with TiN among their materials — "Lam 9600, Al, TiW, TiN, Pt" and
+  "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]" The surviving copy is the *SkyWater says:* line
+  under `## Machines likely used at SkyWater` (home for tool quotations): "lists "Lam 9600, Al, TiW,
+  TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]", with *Tool exists:* "**strong** for
+  the tools and for TiN being among their etched materials"; that they are metal etchers stays under
+  `## Machines typically used` ("Metal etcher … Lam TCP 9600 and 2300 Versys Metal"). The passage now
+  reads "The public evidence for how it is done is the capability list, quoted under Machines likely
+  used at SkyWater.[^skw-01]" (pointer clause 8 words; marker kept). `LOST quotes` for the two
+  quotations and WORDS LOST "al", "tiw", "pt", "nb", "names", "two", "metal", "etchers", "with" are
+  the deleted copy; hand-verified against the home copy.
+* **R-CATEGORY.** Classification sentence alone (33 words); the category-page chemistry sentence as a
+  second paragraph (the one remaining sentence before the step's own label); "What is specific …"
+  (its own label, step 3) with the inference sentence as a third paragraph. No sentence over 45.
+* **Why.** CD control split at its semicolon (lead 37 words: the only earlier seam, ", and the "Li1
+  proximity correction" entry … the lithographic part", would take that clause out from under "we
+  infer" — over the 30-word target, listed). **Selectivity to oxide left byte-identical** (61 words,
+  one over the item cap): it holds "(on the CMPP cap-stop reading, only the cap oxide separates them)",
+  which the S7 figure notes ask to keep verbatim; see Content problems. Residue and stringers,
+  Precedent split at their semicolons. Charging: split at its semicolon; the 13-word li.2
+  parenthetical becomes "The li.2 rule is a maximum length-to-width ratio of 10 for LI without a
+  licon or mcon.[^pdk-periph]" after the sentence that names li.2 (its marker moves with it; "The …
+  rule is" added so the sentence does not open on a lower-case rule id).
+* **How.** Scope sentence italic. Chamber: the 27-word parenthetical keeps "(Lam's TCP source of the
+  Ogle patent[^pat-tcp-lam])" inline (attribution); the SkyWater and Lam 10-K clauses become a
+  sentence. Main etch: split at its semicolon (lead 38 words with its two short parentheticals and the
+  "typical industry conditions" hedge — listed); Endpoint split at its semicolon. Metrology: the
+  63-word test-tile sentence → lead-in "The published SKY130 test tile has:" carrying
+  `[^raw-data-testtile-pads]` (it closed the enumeration, R-LIST step 1) and three plain sub-bullets;
+  the 13-word "(the sheet gives no unit; we read micrometres …)" hedge becomes its own bracketed
+  sentence inside item 1, word for word.
+* **R-TOOLS.** Lam 9600 / 2300 Versys: three-line. AMAT DPS II: pilot form (SkyWater's gases and this
+  reference's "could etch TiN" are one sentence); "Strength: medium" → *Runs this step:* medium (it
+  grades the "could etch TiN" use, not existence — as 077's DPS II). Strip and clean: *Tool exists:*.
+* **R-RELATED.** Previous / Next split; the film, stop and plugs → `Depends on:`; the later metal and
+  capacitor-plate etches → `Same category:`; "Category pages:" kept.
+* **R-OPENQ.** "Etch chemistry and tool", "BARC, hard mask and strip", "Oxide loss over the gates".
+  In item 1, "chlorine-on-a-metal-\n  etcher" (rendered "metal- etcher") rejoined as
+  "chlorine-on-a-metal-etcher" — whitespace only.
+* **R-GLANCE.** Public numbers the 0.1 µm film `[^pdk-04]` and li.1/li.3 0.17 µm `[^pdk-periph]`; tool
+  line with both grades named; Not public from Open questions 1 and 3.
+* **Preservation.** ADDED: glance only. LOST: the R-REPEAT quotations (above). WORDS LOST besides:
+  "strength"×3 (R-TOOLS labels).
+* **Marker coverage.** 8 flags read: the lead split (each half keeps its own marker), the test-tile
+  sub-bullets under the lead-in marker, glance and tool head. None lost.
+* **Caps after:** 0 paragraphs, 1 item (Selectivity to oxide, 61, kept verbatim), 0 sentences, 0
+  cells. Item leads over 30: CD control (37), Main etch (38).
