@@ -264,7 +264,10 @@ step provide:
 * **Open questions** — anything you could not confirm publicly.
 
 Run `uv run tools/check_steps.py`, `uv run tools/check_refs.py`,
-`uv run tools/check_history.py` (the Cypress history section and its claims matrix),
+`uv run tools/check_history.py` (the Cypress history section and its claims matrix; when you change
+`data/history/` or quote a source on a history page, also `uv run tools/check_history_quotes.py`, which
+is local-only because it reads the fetch cache `tmp/cyhist-cache/` and so is not in RTD `pre_build`;
+`tools/history_cache.py` is local-only for the same reason),
 `uv run tools/check_machines.py` (machine-page headings and step lists),
 `uv run tools/check_materials.py` (material-page headings, index row
 keys and class-page table, rows covered, step lists and summary table),
