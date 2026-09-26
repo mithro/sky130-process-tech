@@ -15,17 +15,21 @@ tmp = tempfile.mktemp(suffix=".png", dir=os.path.dirname(os.path.abspath(a.out))
 import shutil, signal
 for attempt in range(3):
     prof = tempfile.mkdtemp(prefix="chrome-prof-", dir=os.path.dirname(tmp))
+    # Chrome litters $TMPDIR with scoped_dir*/.com.google.Chrome.* files it never removes (they filled a 16 GB /tmp);
+    # give it a short-named private one (its Singleton socket path must stay under 108 bytes) and delete it after.
+    ctmp = tempfile.mkdtemp(prefix="c-", dir=os.environ.get("SHOOT_TMP_ROOT", "/tmp"))
     p = subprocess.Popen(["google-chrome", "--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
                           f"--user-data-dir={prof}", f"--window-size={a.width},{a.max_height}",
                           "--user-agent=sky130-process-tech docs checker", f"--screenshot={tmp}", a.url],
-                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True,
+                         env={**os.environ, "TMPDIR": ctmp})
     try:
         p.wait(timeout=60)
     except subprocess.TimeoutExpired:
         pass
     try: os.killpg(p.pid, signal.SIGKILL)
     except ProcessLookupError: pass
-    shutil.rmtree(prof, ignore_errors=True)
+    shutil.rmtree(prof, ignore_errors=True); shutil.rmtree(ctmp, ignore_errors=True)
     if os.path.exists(tmp) and os.path.getsize(tmp) > 0: break
     time.sleep(3)
 else:
