@@ -389,3 +389,44 @@ per page.
 * **Coverage flags read:** the lead's first paragraph (no marker in the base for the floor clause
   either), the antenna split (repeat above), glance lines. None lost a marker or hedge.
 * **Left over the caps:** lead 139 words in three paragraphs (base 137). Nothing over the §1 caps.
+
+### 126 NILD4 — done
+
+* **Lead:** base 149 words → three paragraphs (the 115 form): description (the line dimensions in
+  the dash pair become "The lines are 0.36 µm tall,[^pdk-04] as close as 0.14 µm apart.[^pdk-periph]",
+  subject and verb added) | the PDK's name and labels | the level arithmetic. The level sentence
+  ("a difference of 0.78 µm that is exactly the 0.36 µm metal plus the 0.42 µm via height") stays
+  prose, as on 115: no operator is written out. Arithmetic checked: 2.7861 − 2.0061 = 0.78 =
+  0.36 + 0.42.
+* **R-H3:** none (the post-figure passage is this reference's reading of the thickness and
+  permittivity; no title fits, as 115).
+* **R-LIST (post-figure):** "On our reading the thicker dielectric goes with what sits on top of it:"
+  → two plain bullets (via 2; metal 3), each with its own markers; "and" dropped between them. The
+  list is still one sentence: "On our reading" stays on the lead-in and "(inference)" at its end, so
+  both hedges keep their scope over both items. The permittivity sentence split at its colon, "The
+  pattern is a stack of at least two films, …" (noun and verb added).
+* **R-CATEGORY + R-LIST:** classification ends at "the direct repeat of NILD3" (15 words); "which
+  sets out the two routes …:" → "`NILD3` sets out the two routes …:" (noun restored, "which" lost) and
+  the two routes as plain bullets (the 115 form); the HDP-capability sentence as prose after them;
+  "What is specific …" (its own label) split at its colon.
+* **R-PARA (Why):** Insulation, Capacitance and Protection: leads end at their first semicolon or
+  colon, the studies are the continuation; Overburden split at its semicolon.
+* **How:** italic scope lead-in. HDP gap fill: lead ends at the three markers of "fills from the
+  bottom"; the rest is the continuation. Overburden: lead ends at "for the polish;" — "(industry
+  practice[^txt-05])" is attached to the TEOS-cap clause, which keeps it.
+* **R-TOOLS:** the 115 form (HDP three lines with both SkyWater statements under *SkyWater says:*;
+  the SPEED sentence after the grades; TEOS in grade lines; the silane "C1" bullet has no
+  "Strength:", unchanged).
+* **R-REPEAT:** the HDP quotation appears under How (step 2) and Machines likely used; **not
+  applied** (as 115: the How copy adds "a maintenance-page photograph").
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on (NILD3,
+  the dielectric below), Same category (next levels and the other gap fills); glance in the 115 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box (markers
+  `pdk-04`, `skw-01`; numbers 0.030, 0.42, 3.5, 4.2, `1`; quotes "NILD4", "NILD4_C"; ref `step-127`;
+  hedges; `NILD4`, `NILD4_C`×2, `metal-2`, `via-2`) or `NILD3` (the restored noun). REGROUPED: the
+  via/metal-3 list, the capacitance and overburden splits (same order). LOST words "which" (above),
+  "strength"×2 (R-TOOLS).
+* **Coverage flags read:** the two list items (hedges on the lead-in and at the end of the same
+  sentence), the "The pattern is" sentence (it keeps the Denison/Usami markers of its claim), the
+  splits in Why, glance lines. None lost a marker or hedge.
+* **Left over the caps:** lead 150 words in three paragraphs (base 149). Nothing over the §1 caps.
