@@ -256,3 +256,43 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   glance only the declared `pdk-periph`×2, "It is", the H3, the table header and labels; every other
   `number_order` change REGROUPED, read. `--strict-words` LOST: `enclose`, `must`, `page`,
   `strength`×3. cov: two flags, pairing noise. inv: OK.
+
+### 160 VIM4E — done (base `0d0692de`)
+
+* Lead (base 121): 145 form — "… down to two kinds of floor:" and the two floors as bullets (the
+  joining ", and" dropped; the first floor now ends at its own marker with a semicolon), then the
+  strip sentence as a paragraph. Three blocks (30, 63, 27 words), total 120. The metal-cap and plate
+  floors are kept verbatim (see content problems).
+* Post-figure paragraph split before "The geometry is forgiving".
+* R-CATEGORY (145 form, no label; the section has its own "Two things are specific" sentence): the
+  62-word classification sentence split at its semicolon; "VIME sets out the class — … — and CTME
+  the surface chemistry." → "VIME sets out the class: … stop on time. CTME sets out the surface
+  chemistry.[^flamm-1981][^winters-1992]" (the dash aside kept in place after a colon; "sets out"
+  restored in the gapped clause, 145 form; word `and` lost). "Two things are specific to this
+  instance." → colon and two bullets; bullet 1's 12-word trailing hedge a parenthetical sentence
+  ("(Inference from the geometry; Wodecki …[^wodecki-1999])"), covering the whole sentence as before;
+  bullet 2 drops its opening "And" and its dash list becomes a continuation paragraph ("The Motorola
+  patent …, and the Chartered patent ….[^pat-taper-chartered] Bär, Lorenz and Ryssel and Kim and Lee
+  simulate …"; a comma and "and" moved; each patent keeps its marker).
+* Why: clean-landing item — lead sentence, then Bui's finding with its dash apposition as "This is a
+  finding about cap thickness …" (declared "This is") and the fill-reading sentence at the semicolon
+  (its hedge unchanged, indentation restored); punch-through item in three blocks, the patent
+  sentence split at its semicolon with `[^pat-etchstop-ti]` repeated on the first half (declared,
+  145 form); charging item split at its semicolon.
+* How: scope sentence italic; step 4 split at its semicolon; step 6: the two dash asides (SkyWater's
+  strippers and solvents) moved, unchanged, after the sentence they interrupted (155/140 form), the
+  "(inference)" still on the peroxide clause; step 8's test-tile sentence a continuation paragraph.
+* R-TOOLS (145 form for the no-etcher item: the "weak" grade as *Runs this step:*; the strip/clean
+  item graded in two lines). Resources: "(industry practice;[^nojiri-2015] SkyWater lists …[^skw-01])"
+  → 140 form; the solvent half of the ash/solvent bullet a continuation paragraph, its 29-word
+  parenthetical split: "({ref} wet chemicals; EKC270 and, we read, EKC265)" stays inline, the
+  gloss "(SkyWater's list prints "EKS265, EKC270 solvents";[^skw-01] the EKC265/EKC270 … is ours.)"
+  follows the sentence as a parenthetical sentence (R-SENTENCE step 7). R-RELATED (145 labels).
+  R-OPENQ labels on five bullets. Glance box (145 form, "none named … **weak**").
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared
+  `pat-etchstop-ti`, "This is", labels. It also prints `DUPLICATED sentence (2x, was 1x): 'The step
+  list used in this reference has no separate strip step after `VIM4E`; this page treats the resist
+  strip and cle…'` — a false positive: the base already has the sentence twice (lead and Open
+  questions, `git show 0d0692de:docs/steps/160-vim4e.md | grep -c` → 2); the lead copy now stands as
+  its own paragraph, where the tool's splitter sees it. Nothing was duplicated. `--strict-words`
+  LOST: `strength`×2 (and `and`×2, `And`). cov: one flag, pairing noise. inv: OK.
