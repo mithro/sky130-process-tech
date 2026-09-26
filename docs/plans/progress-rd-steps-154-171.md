@@ -445,3 +445,48 @@ page. No edit of any kind inside an in-force `{dropdown}`.
 * `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `pdk-04`, "This
   is", the H3 and labels; every `number_order` change REGROUPED, read. `--strict-words` LOST:
   `strength` (and `it` → `NFUSOX`, `while`, `and`). cov: two flags, pairing noise. inv: OK.
+
+### 165 NSM — done (base `45b74f98`)
+
+In-force note (US 10,062,748) and the "collapsed note below this list" pointers: untouched, byte for
+byte; the glance box names nothing from the note; `check_inforce` 0 problems.
+
+* Lead (base 118, within 120; first sentence 41 words): the first sentence split at its colon ("…
+  on the finished metal stack. A resist is coated …", zero words); the colon-introduced list of three
+  PDK entries (51-word sentence) as three bullets, each with its own marker (word `and` lost); the
+  step-list sentence as the second paragraph. First sentence 10 words; lead 117.
+* R-H3: the bold run-in `**Where `nsm` is drawn.**` → `### Where `nsm` is drawn` (R-H3 step 4).
+  R-TABLE: the 73-word rule sentence → "The rules keep the layer away from every device and wiring
+  layer:[^pdk-periph]" (the base's own sentence, its full stop a colon) and a `Rule | Constrains |
+  Value` table; `number_order` LOST line re-paired by hand: nsm.1 3.000 µm · nsm.2 4.000 µm · nsm.3
+  at least 1.000 µm (metals 1–5, the two exemptions word for word) · nsm.3a at least 3.000 µm · nsm.3b
+  3.000 µm. Cell rewordings ("Its minimum width is" → "minimum width"; "must be enclosed by … by at
+  least" → "enclosure of … by …", "at least" kept in the value; "must be at least … from" → "from …"
+  with "at least" in the value; words `its`, `must`×2, `be`×2, `by`, `enclosed` lost). The 15-word
+  `areaid.sl` gloss a parenthetical sentence after its sentence (R-SENTENCE step 7), with `pdk-06`
+  repeated inside it (declared: the base's one marker covered it and it would otherwise be uncited).
+* Reading paragraph: the 46-word sentence split after "along the edge of every die": "It lies in a
+  region that carries no wiring …" (declared "It lies"), with "(inference from the rules and the
+  layout)" repeated on both halves (declared, R-SENTENCE step 5).
+* R-CATEGORY (154/162 form): classification sentence alone; **Specific to this step:** with the k₁
+  sentences (the 73-word sentence split at ", and the process factor", ", and ASML describes" and its
+  semicolon; "(our arithmetic)" in the k₁ sentence) as two bullets; "What is specific … is the
+  substrate and the etch the resist must survive:" with its two clauses as bullets; the overlay
+  sentence a paragraph after.
+* Why: exposed-edge item in four blocks, the stack-diagram sentence split at ", and outside the
+  wiring": "Outside the wiring everything below that level is PSG, …[^pdk-04]" ("it" → "that level":
+  after the split the nearest noun is the trench floor; declared repeated `pdk-04`); the Comizzoli
+  sentence at its semicolon. Nitride-reach item with continuation paragraphs, its last sentence at
+  its semicolon. Resist-mask item: its 16-word trailing hedge "(Inference from the construction of the
+  GlobalFoundries edge seal, in the collapsed note below this list.)" a parenthetical sentence (the
+  sentence before it, 43 words, keeps its semicolon so the hedge still covers all of it).
+* How: scope sentence italic; step 2's dash aside (the TSMC fuse-window patent) as a continuation
+  paragraph.
+* R-TOOLS ("lists both"). R-RELATED (Previous · Next · Same module · Depends on · Mask · Category
+  page; "Mask page:" → "Mask:"). R-OPENQ labels on four bullets, the depth bullet split at its
+  semicolon.
+* Glance box.
+* `check_preserved --allow-regrouped`: the one LOST line is the rule table; ADDED outside the glance
+  only the declared `pdk-04`, `pdk-06`, "(inference …)", "It lies", the H3, the table header and
+  labels; every other `number_order` change REGROUPED, read. `--strict-words` LOST: `enclosed`,
+  `must`×2, `page`, `strength`×3. cov: three flags, pairing noise. inv: OK (dropdowns identical).
