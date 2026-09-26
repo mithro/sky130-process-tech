@@ -3,7 +3,7 @@
 import re, sys, json, statistics as st
 from pathlib import Path
 from collections import Counter, defaultdict
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = next(d for d in Path(__file__).resolve().parents if (d / "docs/steps").is_dir())  # repo root, wherever the script sits
 pages = sorted(p for p in (ROOT/"docs/steps").glob("[0-9][0-9][0-9]-*.md"))
 
 def clean(t):

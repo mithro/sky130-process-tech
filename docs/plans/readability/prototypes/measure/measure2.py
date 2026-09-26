@@ -2,7 +2,7 @@
 import re, sys, json
 from pathlib import Path
 from collections import Counter, defaultdict
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = next(d for d in Path(__file__).resolve().parents if (d / "docs/steps").is_dir())  # repo root, wherever the script sits
 pages = sorted((ROOT/"docs/steps").glob("[0-9][0-9][0-9]-*.md"))
 N = len(pages)
 def clean(t):
@@ -39,7 +39,7 @@ for p in pages:
     for u in units:
         c = clean(" ".join(u.split()))
         if not c or c.startswith(":::") or c.startswith("#"): continue
-        for s in re.split(r"(?:(?<=[.!?])|(?<=[.!?][\"”)]))\s+(?=[A-Z`*\[“\"(])", c):
+        for s in re.split(r"(?:(?<=[.!?])|(?<=[.!?][\"”)]))(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*\[“\"(])", c):
             w = len(s.split())
             if w < 3: continue
             sent_len.append(w)

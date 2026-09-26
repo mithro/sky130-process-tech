@@ -2,7 +2,7 @@
 import re
 from pathlib import Path
 from collections import Counter, defaultdict
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = next(d for d in Path(__file__).resolve().parents if (d / "docs/steps").is_dir())  # repo root, wherever the script sits
 pages = sorted((ROOT/"docs/steps").glob("[0-9][0-9][0-9]-*.md"))
 def clean(t):
     t = re.sub(r"\[\^[^\]]+\]", "", t)
@@ -52,7 +52,7 @@ sent = Counter()
 for p in pages:
     s = sections(p.read_text())
     txt = clean(" ".join(" ".join(v for k, v in s.items() if k not in ("References", "TOP")).split()))
-    for x in set(re.split(r"(?<=[.!?])\s+(?=[A-Z`*])", txt)):
+    for x in set(re.split(r"(?<=[.!?])(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*])", txt)):
         if len(x.split()) >= 8: sent[x] += 1
 print("sentences repeated verbatim on >=10 pages:", sum(1 for v in sent.values() if v >= 10))
 for x, n in sent.most_common(12): print("  ", n, x[:150])

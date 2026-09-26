@@ -26,9 +26,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from measure import blocks, clean, words  # noqa: E402  (sibling prototype, see docstring)
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = next(d for d in Path(__file__).resolve().parents if (d / "docs/steps").is_dir())  # repo root, wherever the script sits
 
-_SENT_SPLIT_RE = re.compile(r'(?:(?<=[.!?])|(?<=[.!?]["”)]))\s+(?=[A-Z`*\[“"(])')
+# a sentence may open with a digit ("0.1 µm …", review rd-steps-135-153 D3); reference abbreviations guarded
+_SENT_SPLIT_RE = re.compile(r'(?:(?<=[.!?])|(?<=[.!?]["”)]))(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*\[“"(])')
 
 
 def sentences(block_text: str) -> list[str]:
