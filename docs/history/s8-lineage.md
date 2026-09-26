@@ -46,6 +46,8 @@ thickness" (single source).[^pdk-hv]
 
 **Grace.** Cypress's 2010 report says it moved its "0.35-micron SONOS, 0.13-micron SRAM and LOGIC
 processes" to Grace in 2006 and 2007 (single source).[^ar-fy2010] It does not name S8 among them.
+Cypress's own qualification reports nonetheless show S8 variants qualified there from 2010; see
+{ref}`history-grace`.
 
 ## Side by side
 

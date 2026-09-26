@@ -47,11 +47,11 @@ Used on {ref}`history-index`, {ref}`history-technologies`.
 
 (hsrc-ar-fy2005)=
 **AR-FY2005** — Cypress Semiconductor Corp., *2005 Annual Report* with Form 10-K, fiscal year ended 2006-01-01: Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2005.pdf>
-Used on {ref}`history-fabs`, {ref}`history-index`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-index`.
 
 (hsrc-ar-fy2006)=
 **AR-FY2006** — Cypress Semiconductor Corp., *2006 Annual Report* with Form 10-K, fiscal year ended 2006-12-31: Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2006.pdf>
-Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
 
 (hsrc-ar-fy2008)=
 **AR-FY2008** — Cypress Semiconductor Corp., *2008 Annual Report* with Form 10-K, fiscal year ended 2008-12-28: shareholder letter and Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2008.pdf>
@@ -63,11 +63,23 @@ Used on {ref}`history-fabs`, {ref}`history-index`.
 
 (hsrc-ar-fy2010)=
 **AR-FY2010** — Cypress Semiconductor Corp., *2010 Annual Report* with Form 10-K, fiscal year ended 2011-01-02: "Manufacturing" section. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf>
-Used on {ref}`history-fabs`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-s8-lineage`, {ref}`history-technologies`.
+
+(hsrc-ar-fy2012)=
+**AR-FY2012** — Cypress Semiconductor Corp., *2012 Annual Report* with Form 10-K, fiscal year ended 2012-12-30: Item 1, Manufacturing, and the note on the pre-payment to Grace. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2012.pdf>
+Used on {ref}`history-grace`.
 
 (hsrc-ar-fy2013)=
 **AR-FY2013** — Cypress Semiconductor Corp., *2013 Annual Report* with Form 10-K: Item 7, Management's Discussion and Analysis. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2013.pdf>
 Used on {ref}`history-fabs`.
+
+(hsrc-ar-fy2015)=
+**AR-FY2015** — Cypress Semiconductor Corp., *2015 Annual Report* with Form 10-K, fiscal year ended 2016-01-03: Item 1, Manufacturing. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2015.pdf>
+Used on {ref}`history-grace`.
+
+(hsrc-ar-fy2018)=
+**AR-FY2018** — Cypress Semiconductor Corp., *2018 Annual Report* with Form 10-K, fiscal year ended 2018-12-30: Item 1, Manufacturing, and Executive officers. <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2018.pdf>
+Used on {ref}`history-grace`.
 
 (hsrc-ccre-roundrock)=
 **CCRE-ROUNDROCK** — Connect CRE, *Former Round Rock Cypress Plant Converting to Warehouses*, undated, retrieved 2026-09-25. <https://www.connectcre.com/stories/former-round-rock-cypress-plant-converting-to-warehouses/>
@@ -93,6 +105,10 @@ Used on {ref}`history-fabs`.
 **EDN-2005-HONEYWELL** — Mark LaPedus, *Honeywell debuts rad-hard process in new foundry fab*, EDN, 2005-04-27. <https://www.edn.com/honeywell-debuts-rad-hard-process-in-new-foundry-fab/>
 Used on {ref}`history-fabs`, {ref}`history-technologies`.
 
+(hsrc-eepw-2006-grace)=
+**EEPW-2006-GRACE** — 电子产品世界 (EEPW), *赛普拉斯与上海宏力达成代工协议* (Cypress and Shanghai Grace reach a foundry agreement), 2006 issue 2; copy on fx361.com. <https://m.fx361.com/news/2006/0101/29693231.html>
+Used on {ref}`history-grace`.
+
 (hsrc-eet-1997-sram035)=
 **EET-1997-SRAM035** — EE Times, *Cypress Introduces its First 0.35-µm SRAM*, 1997-11-19. <https://www.eetimes.com/cypress-introduces-its-first-0-35-m-sram/>
 Used on {ref}`history-technologies`.
@@ -107,15 +123,19 @@ Used on {ref}`history-fabs`, {ref}`history-technologies`.
 
 (hsrc-eet-2005-grace)=
 **EET-2005-GRACE** — Mark LaPedus, *Cypress inks foundry deal with Grace*, EE Times, 2005-12-12. <https://www.eetimes.com/cypress-inks-foundry-deal-with-grace/>
-Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-sonos-s4`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-index`, {ref}`history-sonos-s4`.
 
 (hsrc-eet-2006-c8)=
 **EET-2006-C8** — Mark LaPedus, *Cypress transfers 130-nm process to Grace*, EE Times, 2006-07-19. <https://www.eetimes.com/cypress-transfers-130-nm-process-to-grace/>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-naming`, {ref}`history-technologies`.
 
 (hsrc-eet-2007-fablite)=
 **EET-2007-FABLITE** — EE Times, *Cypress furthers 'fab lite'*, 2007-03-05. <https://www.eetimes.com/cypress-furthers-fab-lite/>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`.
+
+(hsrc-eet-2007-hhnec-sonos)=
+**EET-2007-HHNEC-SONOS** — Cai Yan, *Cypress licensing SONOS memory to Hua Hong NEC*, EE Times, 2007-04-17. <https://www.eetimes.com/cypress-licensing-sonos-memory-to-hua-hong-nec/>
+Used on {ref}`history-grace`.
 
 (hsrc-eflash-brief)=
 **EFLASH-BRIEF** — Cypress Semiconductor (an Infineon company), *SONOS eFlash* product overview, undated product brief. <https://www.infineon.com/assets/row/public/documents/10/45/infineon-sonos-eflash-product-overview-productbrief-en.pdf?fileId=8ac78c8c7d710014017d715307cf2069>
@@ -133,13 +153,33 @@ Used on {ref}`history-fabs`.
 **FLIESLER-2008** — M. Fliesler, D. Still and J.-M. Hwang (Cypress Semiconductor and Simtek), *A 15ns 4Mb NVSRAM in 0.13u SONOS Technology*, 2008 Joint Non-Volatile Semiconductor Memory Workshop and International Conference on Memory Technology and Design, DOI 10.1109/NVSMW.2008.30. <https://ieeexplore.ieee.org/document/4531830/>
 Used on {ref}`history-s8-lineage`.
 
+(hsrc-fr-2013-veu)=
+**FR-2013-VEU** — US Department of Commerce, Bureau of Industry and Security, *Addition, Removals, and Revisions to the List of Validated End-Users in the People's Republic of China*, Federal Register vol. 78 no. 106, 2013-06-03, FR Doc. 2013-13076. <https://www.govinfo.gov/content/pkg/FR-2013-06-03/html/2013-13076.htm>
+Used on {ref}`history-grace`.
+
 (hsrc-fu-cypress)=
 **FU-CYPRESS** — FundingUniverse (from the *International Directory of Company Histories*), *History of Cypress Semiconductor Corporation*, retrieved 2026-09-25. <https://www.fundinguniverse.com/company-histories/cypress-semiconductor-corporation-history/>
 Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 
+(hsrc-hh-fab-naming-2017)=
+**HH-FAB-NAMING-2017** — 华虹集团 (Hua Hong Group), *华虹集团集成电路制造工厂启用统一命名* (Hua Hong Group adopts uniform names for its IC fabs), 2017-08-10. <https://www.huahong.com.cn/?m=detail&id=459>
+Used on {ref}`history-grace`.
+
+(hsrc-hh-prospectus-2023)=
+**HH-PROSPECTUS-2023** — 华虹半导体有限公司 (Hua Hong Semiconductor Limited), *首次公开发行人民币普通股（A股）股票并在科创板上市招股说明书（上会稿）* (prospectus for the STAR Market listing, committee draft), Shanghai Stock Exchange, 2023-05-10. <http://static.sse.com.cn/stock/disclosure/announcement/c/202305/001307_20230510_ETYJ.pdf>
+Used on {ref}`history-grace`.
+
 (hsrc-hu-1992)=
 **HU-1992** — G. J. Hu et al. (Cypress Semiconductor), *BiFAMOS technology for high speed mega-bit EPROMs*, 1992 Symposium on VLSI Technology, Digest of Technical Papers, pp. 42–43, DOI 10.1109/VLSIT.1992.200637. <https://doi.org/10.1109/vlsit.1992.200637>
 Used on {ref}`history-technologies`.
+
+(hsrc-ifx-qtp-122801)=
+**IFX-QTP-122801** — Infineon Technologies, listing page for Cypress report *QTP 122801: Capsense Device Family S8DIN-5R Fab 5 GSMC* (the report itself needs a log-in). <https://www.infineon.com/cms/en/product/gated-document/qtp-122801-capsense-device-family-s8din-5r-fab-5-gsmc-8ac78c8c7d710014017d714c885f12e0/>
+Used on {ref}`history-grace`.
+
+(hsrc-ifx-qtp-141906)=
+**IFX-QTP-141906** — Infineon Technologies, listing page for Cypress report *QTP 141906: Generation 5 Touch Screen (TSG5_M) Product Family S8P12-10P HHGrace Fab1 (CYTMA4xx / CYTMA5xx)* (the report itself needs a log-in). <https://www.infineon.com/cms/en/product/gated-document/qtp-141906-generation-5-touch-screen-tsg5-m-product-family-s8p12-10p-hhgrace-fab1-cytma4xx-cytma5xx-8ac78c8c82ce56640182da34ac9669cc/>
+Used on {ref}`history-grace`.
 
 (hsrc-isscc-1985)=
 **ISSCC-1985** — Cypress Semiconductor, *A 25-ns 16K CMOS PROM using a four-transistor cell and differential design techniques*, IEEE Journal of Solid-State Circuits, 1985 (first presented at ISSCC 1985), DOI 10.1109/JSSC.1985.1052422. <https://doi.org/10.1109/jssc.1985.1052422>
@@ -152,6 +192,10 @@ Used on {ref}`history-technologies`.
 (hsrc-kitonaki-2006)=
 **KITONAKI-2006** — E. Kitonaki, A. Bazigos, M. Bucher, H. Puchner, S. Bhardwaj and Y. Papananos, *Scaling Issues In An 0.15 μm CMOS Technology With EKV3.0*, MIXDES 2006, pp. 151–158, DOI 10.1109/MIXDES.2006.1706557. <https://doi.org/10.1109/mixdes.2006.1706557>
 Used on {ref}`history-technologies`.
+
+(hsrc-mms-hhnec-sonos)=
+**MMS-HHNEC-SONOS** — 国际金属加工网 (mmsonline.com.cn), *华虹NEC获Cypress 0.13微米SONOS NVM工艺授权* (Hua Hong NEC obtains a licence for Cypress's 0.13 µm SONOS NVM process), undated. <https://www.mmsonline.com.cn/info/91858.shtml>
+Used on {ref}`history-grace`.
 
 (hsrc-pat-us4764248)=
 **PAT-US4764248** — A. Bhattacherjee et al. (Cypress Semiconductor), *Rapid thermal nitridized oxide LOCOS process*, US 4,764,248 A, priority 1987-04-13. <https://patents.google.com/patent/US4764248A/en>
@@ -327,7 +371,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-021507)=
 **QTP-021507** — Cypress Semiconductor, Product Qualification Report QTP 021507: *Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2*, December 2015. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-021507-failsafe-device-family--options-s4ad-5-sonos-technology-fab-2-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714961a70a2b>
-Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-sonos-s4`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-022505)=
 **QTP-022505** — Cypress Semiconductor, Product Qualification Report QTP 022505: *PSoC Microcontrollers Family, S4AD-5 Technology, Fab 2*, June 2003; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211025133341/https://www.cypress.com/file/91396/download>
@@ -439,7 +483,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-043004)=
 **QTP-043004** — Cypress Semiconductor, Product Qualification Report QTP 043004: *DDR2-PLL Device Family, C8Q-3R, Fab 4*, March 2007; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201205122906/https://www.cypress.com/file/92151/download>
-Used on {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-grace`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-043502)=
 **QTP-043502** — Cypress Semiconductor, Product Qualification Report QTP 043502: *Clock Generator for Intel Alviso Chipset, R52T-3 Technology, Fab4*, December 2005; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210507131607/https://www.cypress.com/file/92196/download>
@@ -547,7 +591,7 @@ Used on {ref}`history-products`.
 
 (hsrc-qtp-062509)=
 **QTP-062509** — Cypress Semiconductor, Product Qualification Report QTP 062509: *Neutron Device Family, S4AD-5 Technology, GSMC*, July 2014. <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-062509-psoc21x34-95xx-gsmc-productqualificationreport-en.pdf>
-Used on {ref}`history-index`, {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`.
+Used on {ref}`history-grace`, {ref}`history-index`, {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`.
 
 (hsrc-qtp-063003)=
 **QTP-063003** — Cypress Semiconductor, Product Qualification Report QTP 063003: *Nitride Seal Mask (NSM) Qualification, S4AD-5 Technology, Fab 2*, June 2007; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201101021800/https://www.cypress.com/file/93161/download>
@@ -583,7 +627,7 @@ Used on {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-071302)=
 **QTP-071302** — Cypress Semiconductor, Product Qualification Report QTP 071302: *16 Meg MoBL SRAM Family, Technology R95LD-3R, Fab4*, April 2007; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211130000623/https://www.cypress.com/file/93006/download>
-Used on {ref}`history-products`, {ref}`history-stackups`.
+Used on {ref}`history-grace`, {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-071502)=
 **QTP-071502** — Cypress Semiconductor, Product Qualification Report QTP 071502: *Ovation 1 Family, S4AD-5/C8QR-3R Technology, Fab2/4*, August 2008; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211130175633/https://www.cypress.com/file/93021/download>
@@ -607,11 +651,11 @@ Used on {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technolo
 
 (hsrc-qtp-082609)=
 **QTP-082609** — Cypress Semiconductor, Product Qualification Report QTP 082609: *HX2LP Device Family, C8Q-3R Technology, Fab 5*, June 2009; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201026131537/https://www.cypress.com/file/95566/download>
-Used on {ref}`history-products`, {ref}`history-stackups`.
+Used on {ref}`history-grace`, {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-091206)=
 **QTP-091206** — Cypress Semiconductor, Product Qualification Report QTP 091206: *16 Meg MoBL SRAM Family, Technology R95LD-3R, HHGrace Fab 3*, January, 2015; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201001021848/https://www.cypress.com/file/138641/download>
-Used on {ref}`history-products`, {ref}`history-stackups`.
+Used on {ref}`history-grace`, {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-091216)=
 **QTP-091216** — Cypress Semiconductor, Product Qualification Report QTP 91216: *MAX EPLD, P20 Technology, Fab 2*, March 2000; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20200810011720/https://www.cypress.com/file/93411/download>
@@ -619,7 +663,7 @@ Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {re
 
 (hsrc-qtp-091302)=
 **QTP-091302** — Cypress Semiconductor, Product Qualification Report QTP 091302: *MoBL Asynchronous SRAM Product Family, RAM42HNHA Technology, Fab5 GSMC*, February 2025. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-091302-mobl-asynchronous-sram-product-family-cy62256-ram42hnha-technology-fab5-gsmc-productqualificationreport-en.pdf?fileId=8ac78c8c93dda25b01953e8470a271d4>
-Used on {ref}`history-fabs`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`, {ref}`history-technologies`.
 
 (hsrc-qtp-093332)=
 **QTP-093332** — Cypress Semiconductor, Product Qualification Report QTP 93332: *MAX EPLD, P20 Technology, Fab 2*, March 2000; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201025104819/https://www.cypress.com/file/93456/download>
@@ -807,11 +851,27 @@ Used on {ref}`history-naming`, {ref}`history-products`, {ref}`history-stackups`.
 
 (hsrc-qtp-113005)=
 **QTP-113005** — Cypress Semiconductor, Product Qualification Report QTP 113005: *64K Serial Non-Volatile SRAM Product Family, S8 Technology, CMI (Fab 4)*, January 2013. <https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>
-Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
+Used on {ref}`history-fabs`, {ref}`history-grace`, {ref}`history-index`, {ref}`history-naming`, {ref}`history-products`, {ref}`history-s8-lineage`, {ref}`history-stackups`, {ref}`history-technologies`.
+
+(hsrc-qtp-123907)=
+**QTP-123907** — Cypress Semiconductor, Fab Process Qualification Report QTP 123907, 132302, 132301: *Metal Stack Change, S8 Technology, Fab 4 CMI*, March 2014, document 001-91369 Rev. **; copy hosted by Tokyo Electron Device as an attachment to PIN145273. <https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>
+Used on {ref}`history-grace`.
+
+(hsrc-qtp-142304)=
+**QTP-142304** — Cypress Semiconductor, Product Qualification Report QTP 142304: *PSoC4 Family, S8PF-10R, Fab 3 HHGrace*, July 2014, document 001-92842 Rev. *B; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20210517161353/https://www.cypress.com/file/138901/download>
+Used on {ref}`history-grace`.
 
 (hsrc-qtp-151005)=
 **QTP-151005** — Cypress Semiconductor, Product Qualification Report QTP 151005: *PSoC RADON Device Family, S4AD-5 Technology, HHGrace FAB5*, October 2015. <https://www.infineon.com/assets/row/public/documents/30/316/infineon-qtp-151005-psoc24x94-hhgrace-productqualificationreport-en.pdf>
 Used on {ref}`history-fabs`, {ref}`history-products`, {ref}`history-sonos-s4`, {ref}`history-stackups`.
+
+(hsrc-qtp-152604)=
+**QTP-152604** — Cypress Semiconductor, Automotive Product Qualification Report QTP 152604: *Automotive Generation6 TouchScreen (TSG6_XL) Product Family, S8SPF-10P Technology, HHGrace1*, July 2020; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20201205000354/https://www.cypress.com/file/278091/download>
+Used on {ref}`history-grace`.
+
+(hsrc-qtp-164010)=
+**QTP-164010** — Cypress Semiconductor, Product Qualification Report QTP 164010: *EZ-PD CCG2 USB Type-C PD Controller Device Family, S8PR2-10R Technology, HH Grace Fab 1*, September 2017; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20211025133935/https://www.cypress.com/file/383716/download>
+Used on {ref}`history-grace`.
 
 (hsrc-qtp-g990003)=
 **QTP-G990003** — Cypress Semiconductor, Product Qualification Report QTP G990003: *WaferTech 0.35um*, May, 2001; Wayback Machine copy of the cypress.com download. <https://web.archive.org/web/20200810011117/https://www.cypress.com/file/94381/download>
@@ -864,6 +924,10 @@ Used on {ref}`history-fabs`, {ref}`history-index`, {ref}`history-technologies`.
 (hsrc-tenq-2017q1)=
 **TENQ-2017Q1** — Cypress Semiconductor Corp., Form 10-Q for the quarter ended 2017-04-02, filed 2017-05-02, Notes (assets held for sale); Wayback Machine copy of the EDGAR filing. <https://web.archive.org/web/20170503100919/https://www.sec.gov/Archives/edgar/data/791915/000079191517000030/cy-04022017x10xq.htm>
 Used on {ref}`history-fabs`, {ref}`history-s8-lineage`.
+
+(hsrc-wiki-huahong)=
+**WIKI-HUAHONG** — Wikipedia, *Hua Hong Semiconductor*, retrieved 2026-09-26. <https://en.wikipedia.org/wiki/Hua_Hong_Semiconductor>
+Used on {ref}`history-grace`.
 
 (hsrc-yang-2000)=
 **YANG-2000** — Y. Yang and M. H. White (Cypress Semiconductor and Lehigh University), *Charge retention of scaled SONOS nonvolatile memory devices at elevated temperatures*, Solid-State Electronics 44 (6), pp. 949–958, 2000, DOI 10.1016/S0038-1101(00)00012-5. <https://doi.org/10.1016/s0038-1101(00)00012-5>
