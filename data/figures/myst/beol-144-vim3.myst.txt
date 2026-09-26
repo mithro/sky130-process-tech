@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/beol-144-vim3.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a flat pale oxide buries a metal line and a wider metal shape carrying a raised thin plate. After it a violet resist covers the oxide except for two windows, one over the line and one over the plate.
+:width: 560px
+:name: fig-beol-144-vim3
+
+Before, the cap oxide over the polished dielectric that buries the metal-3 line and the capacitor; after, the resist with two windows, one over the metal-3 line and one over the capacitor's top plate, where the via-3 holes are to go. The PDK gives via 3 as a 0.200 µm square (via3.1) that metal 3 must enclose by 0.060 µm (via3.4);[^pdk-periph] the enclosure of a via by the plate is not published. The PDK's `cap_mim` cross-section draws a via landing on "CAPM" and another on "M3 (plate 1)";[^pdk-07] here the metal-3 via lands on a wiring line, and the positions are an illustrative choice. The windows are not drawn to scale, and neither is the resist; the page reads the PDK's 1.14 µm resist[^pdk-03] as an antenna-rule assumption. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 2. The metal-3 films, the thin capacitor dielectric, the via plugs and their liners, the oxides below and the metal-2 lines are drawn but not labelled, nor is the inter-metal oxide under the cap. Not to scale.
+:::
