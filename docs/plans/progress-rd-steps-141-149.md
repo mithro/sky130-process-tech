@@ -54,8 +54,8 @@ continuation paragraph counts as a paragraph.
 | sentences > 45 words | 66 | 0 |
 | table cells > 25 words | 0 | 0 |
 
-Leads (≤ 120 words, first sentence ≤ 25): 144 (114) and 147 (114) within the cap as in the base; 149
-121 (base 119 counting a quotation as one word, 129 counting its words; see Guide problem 1); 141
+Leads (≤ 120 words, first sentence ≤ 25): 144 (114), 147 (114) and 149 (119, after the review fix
+M1) within the cap as in the base; 141
 (164), 142 (142), 143 (139), 145 (142), 146 (237) and 148 (134) over 120 as in the base, each in two
 or three blocks of at most 100 words. First sentences all ≤ 25 words (144 was 29, 146 was 85). Item
 lead blocks with sub-bullets all ≤ 30 words. No in-force note on these pages.
@@ -66,7 +66,7 @@ lead blocks with sub-bullets all ≤ 30 words. No in-force note on these pages.
 * Repeated hedges: "(inference from the construction)" (142 category, 147 category), "(inference)"
   (144 via-depth sentence).
 * H3s: 144 and 149 `### What the public record shows`, 149 `### Competing readings`.
-* Restored nouns and subjects ("It is", "This is", "The floors are", "`TIN5` is", "`WDEP5` is",
+* Restored nouns and subjects ("It is" — not on 149 after M1 —, "This is", "The floors are", "`TIN5` is", "`WDEP5` is",
   "NILD3 sets out", "The tables give", "That protection is", "This reading is", "It has"), each named
   in its page entry.
 * `number_order` LOST lines, hand re-paired in the entries: 144 (the via-3 rule table) and 149 (the
@@ -97,10 +97,9 @@ LOST word is named in its page entry.
 1. **Lead cap and quotation counting.** §1 says a quotation counts as one word, while `measure.py`
    (which §1 also names) counts its words. On 149 the base lead is 119 by the first rule and 129 by
    the second; its 46-word second sentence ("…a refractory cap — the construction described for
-   metal 3 at WTIAL3.") can be split at the dash only by adding "It is", which takes the lead to 121
-   by the first rule. I split it (the §1 sentence cap is a hard cap; D5 is written for a re-punctuation
-   alternative that does not exist here). A ruling on which count D5 uses, or on this case, would
-   settle it.
+   metal 3 at WTIAL3.") was first split by adding "It is", taking the lead to 121. **Correction
+   (review L6):** a zero-word form does exist — the apposition moved onto the first sentence, as 134
+   does — and it is now applied (review M1; lead 119). Ruled in review D1 and added to §4.1 note ¹.
 2. **A non-hedge parenthetical of 12+ words that opens with "which".** R-SENTENCE step 7 lets a hedge
    in parentheses stand as its own capitalised sentence; on 145 the aside "(which is why the
    Ti-bearing part of the film etches more slowly; not separately sourced here)" is a gloss, not a
@@ -441,14 +440,14 @@ sentence 15 words.
 
 ### 149 WTIAL4 — done
 
-Base `d69c89fd`. Caps before: 4 paragraphs, 7 items, 12 sentences over; after 0/0/0. Lead 121 words
-(base 119 with a quotation counted as one word, 129 counting the quotations' words as `measure.py`
-does), one paragraph over 100 in the base, now two (54, 67); first sentence 6 words. See Guide
-problem 1: the 46-word second sentence could be split at its dash only by adding "It is".
+Base `d69c89fd`. Caps before: 4 paragraphs, 7 items, 12 sentences over; after 0/0/0. Lead 119 words
+(as the base), one paragraph over 100 in the base, now two (52, 67); first sentence 14 words.
 
-* Lead: "…and a refractory cap — the construction described for metal 3 at WTIAL3." → "…and a refractory
-  cap. It is the construction described for metal 3 at WTIAL3." (subject and verb added); paragraph
-  split before "The stack is blanket".
+* Lead (review fix M1, replacing the first draft's added "It is"): the apposition "— the
+  construction described for metal 3 at WTIAL3" moved onto the first sentence, "`WTIAL4` deposits the
+  metal-4 film stack — the construction described for metal 3 at WTIAL3." (134 form, no word added),
+  so the 46-word second sentence ends at "…and a refractory cap."; paragraph split before "The stack
+  is blanket".
 * R-H3: `### What the public record shows` after the caption over the PDK numbers, the P-flow
   evidence ending in its "(inference)" and the design rules (the R-H3 step 6 case "mostly public
   record, ends in a hedged estimate"); `### Competing readings` over the step-name, Cypress and

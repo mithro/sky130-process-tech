@@ -30,12 +30,12 @@
 
 ## What this step is
 
-`WTIAL4` deposits the metal-4 film stack. Onto the polished cap oxide
+`WTIAL4` deposits the metal-4 film stack — the construction described
+for metal 3 at {ref}`WTIAL3 <step-134>`. Onto the polished cap oxide
 and tungsten via-3 plugs left by {ref}`WCMP5 <step-148>` a sputtering
 {term}`cluster tool` lays down, in one vacuum sequence on our reading, a thin
 refractory bottom layer, a thick aluminium–copper alloy and a
-refractory cap. It is the construction described for metal 3 at
-{ref}`WTIAL3 <step-134>`.
+refractory cap.
 
 The stack is blanket, and like metal 3 it
 stays blanket while a {term}`MiM capacitor` is built on it: the second
