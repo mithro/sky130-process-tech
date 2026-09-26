@@ -35,9 +35,113 @@ per page.
   counts as one word.
 * Gates per page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`, `-W` build.
 
+## Batch summary (all seventeen pages done)
+
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps` over the seventeen pages: `{figure}` blocks (the captions), `{dropdown}`
+bodies (these pages have none outside the generated block), the generated index-links block,
+`## References` and footnote definitions are **excluded**; a leading bold run-in label is not counted
+into its sentence; a quotation counts as one word; an em dash counts as a word (as `measure.py`'s
+`clean()` does). Before = `main` at `b74bba1a`, counted with the same script. A list item is its first
+block; an indented continuation paragraph counts as a paragraph.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 47 | 0 |
+| list items > 60 words | 69 | 0 |
+| sentences > 45 words | 124 | 0 |
+| table cells > 25 words | 0 | 0 |
+
+**Left over the §1 lead limit, with reasons** (each is also in its page entry): leads over 120 words
+as in the base — 120 (200, base 196), 125 (139, base 137), 126 (150, base 149), 127 (134, base 134),
+128 (125, base 125), 129 (148, base 148), 131 (190, base 186), 134 (126, base 127) — each in two or
+three paragraphs of at most 100 words. Item lead blocks over 30 words are listed per page; each is one
+sentence (or a sentence and its attribution) with no earlier seam that keeps its hedge, attribution or
+antecedent with the claim (ruling D4 of batch 8).
+
+### Declared additions (the only non-glance ADDED lines)
+
+* Repeated markers: `pat-etchstop-ti` (119, 130: "Nothing public gives the corresponding figure for
+  TiW."), `cyp-qtp-123907` (120: the "second reading" sentence), `txt-05` (120: the divided
+  "(industry practice)"), `pdk-periph` (124: the waffle-drop sentence), `pdk-11` (125: the antenna
+  definition), `pdk-03` (134: the antenna-thickness bullet).
+* Repeated or divided hedges: 124 (the alignment hedge on both halves), 128 (the 117 form,
+  "(inference; NILD4)"), 130 ("(inference)" on both halves of the deeper-hole sentence).
+* Restored nouns: `TIN3` (120), `TIN4` (131), `NILD3` (126, "`NILD3` sets out"), "the underlayer"
+  (123), "the attenuated PSM's" (118), "The pattern is" (126), "The sandwich is" (123).
+
+### R-REPEAT (none applied)
+
+* 121, 132: the SkyWater tungsten quotation (post-figure and Machines likely used) — as on 110, the
+  post-figure copy is the page's public statement next to the thickness it cannot give.
+* 125: the Lam etcher quotations — as on 114, the post-figure copy adds "two metal etchers by name"
+  and "whose material lists match the stack".
+* 126: the HDP quotation — as on 115, the How copy adds "a maintenance-page photograph".
+* 133: "the finished plug resistance after this step's polish (inference)" — the Why copy is that
+  bullet's own claim, and the post-figure copy adds the reason for the inference.
+* `rdtools.py rep` finds no other 10-word run in two H2 sections on these pages (the glance box aside).
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables`, `gen_figures` `--check` — 0 differences;
+`sphinx-build -E -W` into a fresh directory — exit 0. `rdtools.py inv` per page against the base:
+References, footnote definitions, generated blocks, `{figure}` blocks, dropdowns, quick facts, H2 lists
+and Deep-dive counts identical; one admonition per page (the glance box, `:class: at-a-glance`); every
+glance marker recurs below; no duplicate H3; every scope sentence is the italic lead-in. No hand-written
+`{dropdown}` on any of the seventeen pages. `check_preserved.py --base b74bba1a --allow-regrouped` over
+the batch: the only LOST lines are the `number_order` of the three rule tables (118, 124, 129), of the
+two moved stack parentheticals (125, 129) and of the split Cypress sentence (134), all hand-checked in
+their entries; every other line is a declared addition, a regroup or a named WORDS LOST word. No line
+ends in a hyphen or slash inside prose on these pages; no line starts with a bare `>`.
+
+Arithmetic re-checked while copying, all correct: 118 k₁ 0.15 × 0.70/0.248 = 0.42 (0.48 at NA 0.80),
+0.27/0.15 = 1.8; 124 k₁ 0.40/0.45; 126 2.7861 − 2.0061 = 0.78 = 0.36 + 0.42; 128/130 0.42/0.20 = 2.1;
+129 k₁ 0.56 at 248 nm, 0.35 at 365 nm/NA 0.63, 0.42/0.27 = 1.6, length-over-area ratio 10.5/12.0
+("about a tenth"); 132 0.5/0.08 ≈ 6; 134 150 + 7 200 + 300 = 7 650 Å, 500 + 21 250 + 300 = 22 050 Å,
+0.8 µm × 47 mΩ/sq ≈ 3.8 µΩ·cm, 0.845 − 0.8 µm = 450 Å, 150 + 250 + 90 + 500 = 990 Å, 0.85/0.765 ≈
+1.11; 119/130 152 000/4 500 ≈ 34 ("thirty times lower", the page's own rounding).
+
+### Guide problems
+
+1. **Hedge scope at a semicolon split.** R-SENTENCE step 5 says a trailing hedge that covers the whole
+   sentence must cover every half, but not how to tell whether it does. Two judgement calls here (127
+   Endpoint, 130 Unlanded via) were decided from the page's own Open question naming the hedged clause;
+   three others (124 Alignment, 128 suffix, 130 deeper hole) were repeated. A ruling ("a hedge that an
+   Open-questions bullet ties to one clause stays with that clause") would make this mechanical.
+2. **"What is specific … is X, and Y"** without "that" (127, 132, 133) and with an independent second
+   clause (131): the batch-8 "… is that:" ruling was applied by analogy as "… is:" + bullets where the
+   items are complements of "is", and as plain sentence splits where they are not. The guide could name
+   both variants.
+3. **Em dashes counted as words.** `measure.py`'s `clean()` leaves " — " tokens in, so a 44-word sentence
+   with a dash pair measures 46. This batch followed the measurement; the guide's "words between full
+   stops" could say whether a dash is a word.
+4. **`number_order` on moved dash material and rule tables** (118, 124, 125, 129, 134): still reported
+   as LOST, not regrouped (batch-8 guide problem 3); the hand re-pair stays necessary.
+5. **Duplicated lines.** A line-range editing slip duplicated a source line three times during this batch
+   (122, 124, 132); `check_preserved` shows it only as extra WORDS ADDED, which never fails. A
+   `--strict-words`-style failure on ADDED content words outside the glance box, or a duplicate-line
+   check, would catch it mechanically (all three were caught and removed before commit).
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
-(filled in per page below and collected here at the end)
+1. **120:37 and 131:37, "the titanium–tungsten floor"** — the lead says the liner coats the
+   titanium–tungsten floor without a hedge, while the same pages' post-figure passages give the floor as
+   TiW on the 2013 stack or TiN on the 2014 one ({ref}`overview-metal-cap`, undecided). The S9a figure
+   reviewer's suggested wording: "the refractory cap of metal 1 (TiW or TiN; see
+   {ref}`overview-metal-cap`)" (metal 2 on 131). Content edit; not made here.
+2. **134:143 and the How bottom-layer item, "Ti or TiW"** — the page describes the metal-3 bottom layer
+   as "Ti or TiW" and does not discuss a Ti/TiN bottom on the TiN reading (the 2014 stack's
+   "150A Ti/250A TiN" underlayer at metals 1 and 2); the figure uses the page's words.
+3. **McConica and Cooper misattributed, 132:111 and 121:109** — "Tungsten nucleates on the TiN of
+   TIN4/TIN3,[^srinivas-1992][^mcconica-1988]"; the cited paper is "Tungsten Nucleation on Thermal Oxide
+   during LPCVD …" — nucleation on oxide, not on TiN (both pages' reading lists say so). 132 was known
+   from batch 8; **121:109 is the same error, newly noted**. Suggested fix as for 110.
+4. **123 TIAL12** (as 112): the page describes the Ti/Al–Cu/TiW stack ("this page describes the
+   Ti/Al–Cu/TiW stack because the PDK's 0.36 µm matches its 3 600 Å sum exactly", marked an inference)
+   while the overview and the figures leave the cap undecided; kept verbatim, owner decision.
 
 ## Pages
 
