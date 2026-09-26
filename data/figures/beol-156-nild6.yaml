@@ -1,0 +1,38 @@
+id: beol-156-nild6
+kind: xsection
+page: docs/steps/156-nild6.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step two separate metal shapes stand on a flat pale oxide over a buried level of metal: a
+  line at the left and a wider one at the right carrying a raised thin purple plate. After it
+  a thick pale oxide fills the gap between them and buries both, its top higher over the metal
+  than over the gap.
+caption: >-
+  Before, the metal-4 shapes etched at MM4E: a wiring line at the left and, at the right, the
+  second capacitor's bottom plate with its top plate on the thin dielectric, over the first
+  capacitor; after, the inter-metal oxide the PDK's stack diagram labels "NILD6" (permittivity
+  4.0),[^pdk-04] filling the gap and burying the line and the plate. The page names HDP-CVD and
+  PECVD TEOS as the two routes for such a gap; the drawn profile, filled from the bottom and
+  softened over the metal, only illustrates a gap-filling deposit. The route, the deposited
+  thickness and any liner are not public, and nothing is drawn to scale: the gap between
+  0.845 µm lines 0.300 µm apart is about 2.8:1 on the page's arithmetic,[^pdk-04][^pdk-periph]
+  and it is drawn about 2.2 times as deep as it is wide. The diagram draws no thin "_C" film
+  beside NILD6.[^pdk-04] The lower part of the slice is cut off: the drawing starts inside the
+  oxide under metal 3. The bottom and cap films of metal 4, the thin capacitor dielectric (left
+  on the metal-4 shapes on this drawing, as at MM4E), the first capacitor and the metal-3 line,
+  the via plugs and their liners and the oxides below are drawn but not labelled. Not to scale.
+arrow:
+  title: "NILD6, step 156"
+  note: "A silicon dioxide is deposited over the metal lines and the capacitor plates, filling the gaps between them."
+panels:
+  - state_after: "155"
+    title: "Before: the metal-4 line and second capacitor (step 155)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [m4bot, m4cap, capild2, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res]
+  - state_after: "156"
+    title: "After: the inter-metal oxide over the metal"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 268]]}

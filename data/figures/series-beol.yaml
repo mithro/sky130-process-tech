@@ -484,12 +484,12 @@ ops:
       al_t: 53
       al_anchor_y: 371
       bot_note: "Ti or TiW — see the overview"
-      cap_note: "TiW on this reference's reading — see the overview"
+      cap_note: "read here as TiW — see the overview"
   - use: metal-pattern
     with:
       mask_step: "162"
       etch_step: "163"
       mask_code: "MM5"
       resist_id: mm5res
-      resist_where: [[14, 90], [130, 268]]
+      resist_where: [[10, 94], [160, 268]]
       resist_t: 40

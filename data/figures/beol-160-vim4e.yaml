@@ -1,0 +1,57 @@
+id: beol-160-vim4e
+kind: xsection
+page: docs/steps/160-vim4e.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a violet resist with two wide windows lies on a flat pale oxide that buries a metal line
+  and a wider metal shape carrying a raised thin plate. After it the resist is gone and under
+  each window a hole with vertical walls, wider than it is deep, goes down through the
+  oxide: at the left to the top of the line, at the right, less deep, to the plate.
+caption: >-
+  Before, the via-4 resist; after, the holes etched through the cap oxide and the NILD6 oxide,
+  0.505 µm together over metal 4 in the PDK's stack diagram,[^pdk-04] and the resist stripped,
+  which the page treats as part of this step. The two holes stop on two kinds of floor: at the
+  left on the cap film of a metal-4 line, and at the right on the second capacitor's top plate,
+  which stands above the metal-4 cap on the capacitor dielectric. Which refractory film caps
+  metal 4 is not public: the overview of the metal cap sets out the TiW and the TiN readings,
+  and the figure does not choose. On this drawing the etch over the metal-4 line also clears
+  the thin capacitor dielectric left on the line at MM4E, down to the cap; the page gives the
+  floor as the cap and does not discuss that film. The PDK's via 4 is a 0.800 µm square
+  (via4.1),[^pdk-periph] about 0.63 times as deep as it is wide on the page's arithmetic; the
+  left hole is drawn about 0.8 times as deep as it is wide, and the walls vertical, although
+  whether via 4 is tapered is not public. No liner, tungsten fill or plug polish follows in the
+  step list: the next step sputters the metal-5 stack into the open holes. The lower part of
+  the slice is cut off: the drawing starts inside the oxide under metal 3. The oxides, the
+  aluminium and bottom film of metal 4, the thin capacitor dielectric, the first capacitor and
+  the metal-3 line and the via plugs and their liners are drawn but not labelled. Not to scale.
+arrow:
+  title: "VIM4E, step 160"
+  note: "A fluorocarbon plasma etches the via holes through the oxide to the metal caps and the capacitor plates; the resist is stripped."
+panels:
+  - state_after: "159"
+    title: "Before: the via-4 resist (step 159)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [ncap6, nild6, m4al, m4bot, m4cap, capild2, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res]
+  - state_after: "160"
+    title: "After: via-4 holes to the metal and to the plate"
+    hide_layers: [pwell, nchi]
+    hide_labels: [ncap6, nild6, m4al, m4bot, capild2, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+    callouts:
+      - x: 52
+        y: "top@52"
+        label:
+          title: "Via on a metal line"
+          note: "a 0.800 µm square in the PDK's rules"
+          basis: public
+          cite: pdk-periph
+      - x: 212
+        y: "top@212"
+        label:
+          title: "Via on the top plate"
+          note: "shallower: it stops on the plate"
+          basis: public
+    highlight: {where: [[30, 74], [190, 234]]}

@@ -1,0 +1,42 @@
+id: beol-163-mm5e
+kind: xsection
+page: docs/steps/163-mm5e.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step two thick violet resist blocks stand on a very thick blanket metal stack. After it the
+  resist is gone and the metal remains only under where it was: two thick metal shapes with
+  vertical edges, each over a filled hole, with bare pale oxide between them.
+caption: >-
+  Before, the metal-5 resist; after, the chlorine etch has removed the whole metal-5 stack
+  outside the resist, stopping on the cap oxide, and the resist has been stripped (the page
+  treats the passivation, strip and clean as part of this step). What remains are two metal-5
+  shapes, each over a via-4 hole that its metal fills on the reading of WTIAL5. Unlike at MM3E
+  and MM4E, no capacitor dielectric lies on this metal. The cap is read here as TiW, because the
+  2014 S8P stack change excluded "top metal layers"[^cyp-qtp-123907] (the overview of the metal
+  cap sets out the evidence), and is broken through first. The edges are drawn vertical, and
+  nothing is drawn to scale: the page uses the PDK's 1.26 µm for the metal[^pdk-04] and gives
+  the minimum width and space as 1.600 µm (m5.1, m5.2);[^pdk-periph] a minimum space is about
+  0.8:1 on the page's arithmetic, and this wider space is drawn about as deep as it is wide.
+  The lower part of the slice is cut off: the drawing starts inside the oxide under metal 3.
+  The underlayer of metal 5, the metal-4 line and the capacitors, the plugs and their liners
+  and the oxides below the cap oxide are drawn but not labelled, nor, in the upper panel, is the
+  cap oxide. Not to scale.
+arrow:
+  title: "MM5E, step 163"
+  note: "The cap is broken through, then chlorine etches the thick metal between the resist shapes; the resist is stripped."
+panels:
+  - state_after: "162"
+    title: "Before: thick resist on the metal-5 stack (step 162)"
+    hide_layers: [pwell, nchi]
+    labels:
+      m5cap: {title: "Metal cap film", note: "read here as TiW — see the overview"}
+    hide_labels: &hl [ncap6, m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res]
+  - state_after: "163"
+    title: "After: the etched metal-5 shapes"
+    hide_layers: [pwell, nchi]
+    labels:
+      m5cap: {title: "Metal cap film", note: ""}
+    hide_labels: [m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res]
+    highlight: {where: [[0, 10], [94, 160]]}

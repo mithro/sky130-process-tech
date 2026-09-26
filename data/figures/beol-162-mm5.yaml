@@ -1,0 +1,39 @@
+id: beol-162-mm5
+kind: xsection
+page: docs/steps/162-mm5.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a very thick blanket metal stack covers a flat pale oxide, dipping slightly over two
+  filled holes. After it two thick violet resist blocks stand on the stack, one over each
+  filled hole, with bare metal between them.
+caption: >-
+  Before, the blanket metal-5 stack, with its shallow dimples over the filled via-4 holes (the
+  page's inference, on the fill reading of WTIAL5); after, the resist of the metal-5 mask: one
+  block over each via, with the metal bare between them. The periphery rules give metal 5 a
+  minimum width and space of 1.600 µm (m5.1, m5.2) and a via-4 enclosure of 0.310 µm
+  (m5.3);[^pdk-periph] the layout is an illustrative choice, and neither the blocks nor the
+  resist are drawn to scale. The resist is drawn thicker than at the lower metal levels, since
+  the page describes it as thick enough to survive the etch of the 1.26 µm stack;[^pdk-04] the
+  PDK's 1.14 µm resist[^pdk-03] is an antenna-rule assumption. Which films clad metal 5 is not
+  public (the page reads the cap as TiW; the overview of the metal cap sets out the evidence).
+  The lower part of the slice is cut off: the drawing starts inside the oxide under metal 3.
+  The underlayer of metal 5, the metal-4 line and the capacitors, the plugs and their liners
+  and the oxides are drawn but not labelled, nor, in the lower panel, is the metal-5 cap. Not
+  to scale.
+arrow:
+  title: "MM5, step 162"
+  note: "Resist is coated, exposed through the metal reticle and developed, leaving it wherever metal is to remain."
+panels:
+  - state_after: "161"
+    title: "Before: the blanket metal-5 stack (step 161)"
+    hide_layers: [pwell, nchi]
+    labels:
+      m5cap: {title: "Metal cap film", note: "read here as TiW — see the overview"}
+    hide_labels: [m5bot, ncap6, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res]
+  - state_after: "162"
+    title: "After: thick resist over the metal-5 shapes"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m5cap, m5bot, ncap6, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res]
+    highlight: {where: [[10, 94], [160, 268]]}

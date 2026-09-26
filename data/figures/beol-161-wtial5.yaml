@@ -1,0 +1,47 @@
+id: beol-161-wtial5
+kind: xsection
+page: docs/steps/161-wtial5.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step two wide open holes go down through a flat pale oxide, one to a metal line and one to a
+  raised thin plate. After it three films cover the whole top and fill the holes: a thin purple
+  film lining the oxide, the walls and the floors, a very thick silver film that closes each
+  hole, and another thin purple film, with a shallow dip over each hole.
+caption: >-
+  Before, the open via-4 holes; after, the metal-5 stack over the whole wafer and into the
+  holes: a thin underlayer, lining the oxide, the walls and the floors, a thick aluminium–copper
+  alloy that closes each hole, and a cap, with a shallow dimple over each hole. No public source
+  states how via 4 is filled; the page reads the holes as filled by the metal-5 stack itself
+  (an inference), and which technique does it — a thick, conventionally sputtered film, a
+  heated or biased deposition, or a high-pressure fill — is not public: the drawn profile, each
+  film growing with one thickness everywhere, only illustrates that reading. No public source
+  gives the metal-5 films either; the page describes a Ti or TiW underlayer, some 1.2 µm of
+  Al–Cu and a TiW cap, the cap read as TiW because the 2014 S8P stack change excluded "top
+  metal layers"[^cyp-qtp-123907] (inferences; the overview of the metal cap sets out the
+  evidence), and the figure draws every Ti, TiN and TiW film in one colour. The PDK's stack
+  diagram gives metal 5 as 1.26 µm against 0.845 µm for metal 4,[^pdk-04] and it is drawn half
+  as thick again, as it is there; on the page the stack is more than twice as thick as the via
+  is deep, and it is drawn a little under twice as thick. The lower part of the slice is cut
+  off: the drawing starts inside the oxide under metal 3. The metal-4 line and the capacitors,
+  the plugs and their liners and the oxides are drawn but not labelled, except, in the upper
+  panel, the metal cap film. Not to scale.
+arrow:
+  title: "WTIAL5, step 161"
+  note: "An underlayer, a thick aluminium–copper and a cap are sputtered over the whole wafer and into the open vias."
+panels:
+  - state_after: "160"
+    title: "Before: the open via-4 holes (step 160)"
+    hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+    hide_labels: [ncap6, nild6, m4al, m4bot, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res]
+  - state_after: "161"
+    title: "After: the metal-5 stack, into the vias"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m4cap, ncap6, nild6, m4al, m4bot, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res]
+    labels:
+      m5bot: {title: "Underlayer", note: "Ti or TiW — see the overview"}
+      m5cap: {title: "Metal cap film", note: "read here as TiW — see the overview"}
+    highlight: {where: [[0, 268]]}

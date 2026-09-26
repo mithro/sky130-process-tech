@@ -1,0 +1,38 @@
+id: beol-159-vim4
+kind: xsection
+page: docs/steps/159-vim4.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a flat pale oxide buries a metal line and a wider metal shape carrying a raised thin
+  plate. After it a violet resist covers the oxide except for two wide windows, one over the
+  line and one over the plate.
+caption: >-
+  Before, the cap oxide over the polished dielectric that buries the metal-4 line and the
+  second capacitor; after, the resist with two wide windows, one over the metal-4 line and one
+  over the capacitor's top plate, where the via-4 holes are to go. The PDK gives via 4 as a
+  0.800 µm square, its only allowed size (via4.1), that metal 4 must enclose by 0.190 µm
+  (via4.4);[^pdk-periph] no enclosure of a via by a `cap2m` plate is published. The PDK's
+  stacked `cap_mim` cross-section draws vias from `CAP2M` and from "M4 (plate 2)" up to metal
+  5;[^pdk-07] here the metal-4 via lands on a wiring line, and the positions are an
+  illustrative choice. The windows are drawn more than twice as wide as the via-3 holes below
+  but not to scale, and neither is the resist; the page reads the PDK's 1.14 µm
+  resist[^pdk-03] as an antenna-rule assumption. The lower part of the slice is cut off: the
+  drawing starts inside the oxide under metal 3. The metal-4 films, the thin capacitor
+  dielectric, the first capacitor and the metal-3 line, the via plugs and their liners and the
+  oxides below are drawn but not labelled, nor is the inter-metal oxide under the cap. Not to
+  scale.
+arrow:
+  title: "VIM4, step 159"
+  note: "Resist is coated, exposed through the VIM4 reticle and developed, opening the via windows."
+panels:
+  - state_after: "158"
+    title: "Before: the cap oxide over metal 4 (step 158)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [nild6, m4al, m4bot, m4cap, capild2, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res]
+  - state_after: "159"
+    title: "After: resist with two via-4 windows"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 30], [74, 190], [234, 268]]}
