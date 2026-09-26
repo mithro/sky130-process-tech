@@ -20,8 +20,9 @@
   the yield of every transistor.
 * **Public numbers:** "Licon1 etch angle" 10°; "Standard Licon bottom
   CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm.[^pdk-03]
-* **Likely SkyWater tool:** none assignable — no dielectric etcher is
-  named on SkyWater's public list.[^skw-01]
+* **Likely SkyWater tool:** none named — no dielectric etcher is on
+  SkyWater's public list; the three listed poly/silicon etchers are
+  **weak** (assignment to the contact etch).[^skw-01]
 * **Not public:** the etch chemistry, tool, endpoint and over-etch
   (→ Open questions).
 :::
