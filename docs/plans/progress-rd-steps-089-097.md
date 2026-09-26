@@ -92,3 +92,52 @@ Model pages: 078, 083. One commit per page.
 * **Caps.** para > 100: 2 → 0; item > 60: 6 → 0; sentence > 45: 12 → 1 — "A film thick enough to
   bury …" (46, of which 2 are the dashes of its one dash pair; moving the dash material would separate
   the 0.6–0.9 µm figure from its "(inferred)").
+
+### 090 CMPP — done
+
+* **R-H3.** `### Competing readings` after the figure caption, over the 181-word passage that weighs the
+  fixed-removal and cap-stop readings. The lead is the 97-word first paragraph.
+* **R-PARA / R-SENTENCE.** Lead: the 47-word topography sentence split at its colon ("… beneath it.
+  It stands roughly 0.4 µm higher …"). Competing readings: three paragraphs (first reading; second
+  reading; the adopted reading and what follows on it). The 65-word second-reading sentence keeps its
+  dash pair in place and splits before "using": "On the second, the polish uses the GATENIT nitride …"
+  (the reading's own opener repeated, batch-6 ruling D4; "using" → "uses", a verb for the new
+  sentence). The 48-word "On it, …" sentence split at ", and": the second half opens "On that
+  reading," — the pronoun "it" given its noun back (R-PARA step 5), because a second "On it" directly
+  after "… the local interconnect." could be read as "on the interconnect". The S7 wording "the tops of
+  the caps over the densest poly arrays" is unchanged. Why intro: the 51-word IBM sentence split at its
+  semicolon. "The cost is …" paragraph (126 w, one 86-word sentence) split at its semicolon and its
+  ", and the PDK's" seam into two paragraphs; the Kahng and Samadi parenthetical, a second
+  parenthetical in a sentence that already had a dash pair, becomes its own sentence "(The survey …
+  synthesis.[^kahng-2008])" (R-SENTENCE step 7). How "Slurry" split at its semicolon into lead and
+  continuation.
+* **R-LIST.** How "Recipe": the three platens as a nested numbered list (a sequence); the
+  "Down-force …[^txt-05]" sentence, its own sentence in the base, stays as the continuation.
+* **R-CATEGORY.** Classification sentence alone (42 words, under the 45 cap; the target is 35 and its
+  only seam is an opening dash, not a closing one). One sentence remains → a plain second paragraph.
+* **R-TOOLS.** Mirra: *SkyWater says:* (verb-first), *Tool exists:*, *Runs this step:*. "Post-CMP
+  cleaning" has no "Strength:" and stays as it is. "Defect inspection — KLA AIT / SP1 … Strength:
+  medium." stays in its base form: the grade does not say whether it grades existence or assignment,
+  so filing it under either label would be a claim the page does not make. One graded tool, no recap
+  table.
+* **R-OPENQ.** "Polish stop", "Slurry, removal and endpoint", "Brush scrubber".
+* **R-RELATED.** Previous and Next as two bullets; "The stop, on our reading" → `Depends on:`; "The
+  lithography that needs the flat surface" → `Feeds:`; the STI polish and later oxide polishes (both
+  CMP steps) → one `Same category:` bullet (the bullet already named both). Every gloss and link kept.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does from the lead; Why from the lead ("flat to within the depth of focus of the
+  contact lithography") and Why bullet 2; Public numbers "Pre-LI ILD thickness" 0.5 µm and "Min
+  pattern density for oxide" 0.75 `[^pdk-03]`; tool line with the two grades, each named; Not public
+  from Open questions 1–2, with "the cap-stop reading is our inference".
+* **Skipped.** R-REPEAT (no 10-word repeat across H2s); R-TABLE, R-DERIVATION (nothing qualifies:
+  0.4 µm = 0.18 + 0.2 is one operation).
+* **Preservation.** ADDED markers `pdk-03`, `skw-01`, numbers 0.5, 0.75, quotes "Pre-LI ILD
+  thickness", "Min pattern density for oxide", ref `step-089`, identifier `licon1`, hedges
+  "inference"×2, "likely", "not public" — all the glance box; numbers 1–3 — the nested list ordinals.
+  REGROUPED: the tool paired the glance's 0.5 with the unchanged `{figure}` caption sentence ("On that
+  reading the PDK's 0.5 µm …"); the caption is byte-identical (invariants). WORDS LOST: "strength"
+  (R-TOOLS label), "using" (→ "uses").
+* **Marker coverage.** 7 flags, all read: two glance condensations; the "On it / On that reading"
+  split (each half keeps its own marker); the IBM/Ouma and Ouma/PDK/Kahng splits (each piece keeps its
+  own markers); "Depends on:" (tokenizer split at the colon; "on our reading" is in the same bullet).
+* **Caps.** para > 100: 2 → 0; item > 60: 2 → 0; sentence > 45: 7 → 0.

@@ -10,11 +10,29 @@
 | **Previous step** | {ref}`PSG <step-089>` |
 | **Next step** | {ref}`NCAPOX <step-091>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** planarises the sacrificial phosphosilicate glass of
+  {ref}`PSG <step-089>` by chemical-mechanical polishing.
+* **Why:** the contact lithography needs a flat surface, and every
+  `licon1` must reach its landing surface through the same oxide
+  thickness.
+* **Public numbers:** "Pre-LI ILD thickness" 0.5 µm; "Min pattern
+  density for oxide" 0.75.[^pdk-03]
+* **Likely SkyWater tool:** Applied Materials Mirra CMP — **strong**
+  (the tool and its oxide and nitride polishes); **inference**
+  (assignment to this step).[^skw-01]
+* **Not public:** whether the polish stops on the gate caps (the
+  cap-stop reading is our inference); the slurry, removal amount and
+  endpoint (→ Open questions).
+:::
+
 ## What this step is
 
 `CMPP` — chemical-mechanical polish "over poly" — planarises the
 sacrificial phosphosilicate glass of {ref}`PSG <step-089>`. The
-as-deposited glass copies the topography beneath it: it stands
+as-deposited glass copies the topography beneath it. It stands
 roughly 0.4 µm higher over every capped gate line and resistor body
 (0.18 µm poly plus the 0.2 µm cap[^pdk-03]) than over the field and
 the source/drains, with an HDP film's characteristic peaked profile
@@ -31,22 +49,27 @@ lithography that follows.
 Before, the glass as deposited; after, polished flat. How far down the polish goes is not public. The page reads it as stopping on the nitride caps of the poly lines (inferred). This slice holds no capped poly line on the field oxide, where such caps would stand highest, and its resistor head, whose cap the nitride cut removed, stands higher than the capped gate; so the surface is drawn at the height a nitride-capped line on the field oxide would have, which leaves a little glass over the resistor head and more over the gate. On that reading the PDK's 0.5 µm "Pre-LI ILD thickness"[^pdk-03] and the stack diagram's 0.4299 µm from the field-poly top to the li bottom[^pdk-04] include the cap oxide still to come; nothing is drawn to scale. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### Competing readings
+
 How far down the polish goes is the crux of the step, and it is not
 public. Two readings are consistent with the PDK. On the first, the
 polish is a
 *fixed-removal* oxide planarisation that leaves a controlled thickness
-of {term}`PSG` above the gate caps. On the second — the one the PDK's
+of {term}`PSG` above the gate caps.
+
+On the second — the one the PDK's
 0.2 µm nitride/oxide cap supports and this page follows — the polish
 continues until it reaches the tops of the caps over the densest poly
-arrays, using the {ref}`GATENIT <step-058>` nitride as a
+arrays. On the second, the polish uses the {ref}`GATENIT <step-058>` nitride as a
 {term}`CMP` stop in the same way the {ref}`ISONIT <step-003>`
 nitride serves {ref}`CMPNIT <step-012>`, and the {term}`cap oxide` of the
 next step ({ref}`NCAPOX <step-091>`) then re-buries the exposed caps.
+
 The {ref}`POC <step-059>` and {ref}`IOX45 <step-063>` pages read the
 cap as the polish stop; we adopt that reading here and mark it as an
 inference. On it, the PDK's "Pre-LI ILD thickness" of 0.5 µm[^pdk-03]
 is the cap-plus-cap-oxide-plus-residual-glass thickness between the
-poly top and the {term}`local interconnect`, and the 0.4299 µm label that the stack diagram draws from the
+poly top and the {term}`local interconnect`. On that reading, the 0.4299 µm label that the stack diagram draws from the
 field-poly top to the `li` bottom[^pdk-04] is the same interval drawn
 not to scale.
 
@@ -56,7 +79,9 @@ not to scale.
 step of the *oxide* type — the first of the inter-level polishes
 ({ref}`CMPL <step-106>`, {ref}`CMPM <step-116>` and the later
 `CMPM*` steps are the others) and the only one whose stop, on our
-reading, is a nitride cap rather than a fixed removal. The category
+reading, is a nitride cap rather than a fixed removal.
+
+The category
 page compares the {term}`STI`, tungsten and oxide polishes; this instance
 sits between the first two: it removes a doped oxide like an {term}`ILD`
 polish, but it may land on nitride like the STI polish, with the same
@@ -68,7 +93,7 @@ Chemical-mechanical polishing entered the {term}`pre-metal dielectric` at
 IBM at the end of the 1980s, when Davari et al. showed a planarisation
 scheme combining reactive-ion etch-back with CMP[^davari-1989] and
 Daubenspeck et al. characterised planarisation over variable pattern
-densities;[^daubenspeck-1991] Kaanta et al. had already built a
+densities.[^daubenspeck-1991] Kaanta et al. had already built a
 tungsten-stud wiring scheme on a polished dielectric.[^kaanta-1987]
 The reasons it is needed here:
 
@@ -91,13 +116,15 @@ The reasons it is needed here:
 
 The cost is pattern-density sensitivity. The polish rate over a
 region depends on the fraction of raised area under the pad, so wide
-open field polishes faster than dense poly arrays; Stine et al.
+open field polishes faster than dense poly arrays. Stine et al.
 modelled the effect[^stine-1998] and Ouma et al. reduced it to a
-{term}`planarisation length` and {term}`pattern density`,[^ouma-2002] and the PDK's
+{term}`planarisation length` and {term}`pattern density`.[^ouma-2002]
+
+The PDK's
 pattern-density criteria — "Min pattern density for oxide" 0.75, the
 FOM waffles and the 700 µm and 2000 µm density boxes[^pdk-03] — are
-the design-rule expression of that sensitivity (the survey by Kahng
-and Samadi covers fill synthesis[^kahng-2008]). If the polish does
+the design-rule expression of that sensitivity. (The survey by Kahng
+and Samadi covers fill synthesis.[^kahng-2008]) If the polish does
 land on the caps, nitride erosion over dense arrays and dishing of
 the glass between them are the failure modes the STI polish page
 describes, measured early by Yu et al.[^yu-1992]
@@ -108,8 +135,8 @@ different depth on every landing surface.
 
 ## How it is typically performed
 
-An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 1. **Tool.** Rotary multi-platen polisher with stacked polyurethane
    pads, diamond conditioner, carrier head with retaining ring and
@@ -118,16 +145,23 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 2. **Slurry.** Fumed-silica in KOH or NH₄OH at pH 10–11, the
    classic oxide slurry, whose chemistry Cook set out for glass
    polishing[^cook-1990] and Krishnan, Nalaskowski and Cook
-   review;[^rev-02] the removal rate follows the
+   review.[^rev-02]
+
+   The removal rate follows the
    {term}`Preston equation` in pressure and velocity[^preston-1927] to a first
    approximation, with the departures Nanz and Camilletti
    review.[^nanz-1995] Doped glass polishes faster than undoped
    oxide, so the rate is calibrated on PSG monitors.
-3. **Recipe.** A first platen removes the bulk at high rate; a second
-   finishes to the target — either a timed removal or, on the
-   cap-stop reading, a polish onto the nitride with a slurry whose
-   oxide : nitride {term}`selectivity` is high enough to stop; a
-   final platen buffs in DI water or dilute slurry. Down-force of a
+3. **Recipe.**
+   1. A first platen removes the bulk at high rate.
+   2. A second
+      finishes to the target — either a timed removal or, on the
+      cap-stop reading, a polish onto the nitride with a slurry whose
+      oxide : nitride {term}`selectivity` is high enough to stop.
+   3. A
+      final platen buffs in DI water or dilute slurry.
+
+   Down-force of a
    few psi and platen speeds of tens of rpm are typical.[^txt-05]
 4. **Endpoint.** For a fixed removal, time plus post-polish
    thickness measurement (the "blind polishing" Wikipedia
@@ -157,12 +191,15 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
-  for oxide, nitride, niobium, aluminium, tungsten, high-selectivity
-  tungsten and copper.[^skw-01] Strength: **strong** for the tool
-  and its oxide and nitride polishes (SkyWater statement); assignment
-  to this step is an **inference** from the film, since the list names
-  no steps.
+* **Applied Materials Mirra CMP**
+  - *SkyWater says:* lists "AMAT Mirra CMP"
+    for oxide, nitride, niobium, aluminium, tungsten, high-selectivity
+    tungsten and copper.[^skw-01]
+  - *Tool exists:* **strong** for the tool
+    and its oxide and nitride polishes (SkyWater statement).
+  - *Runs this step:* assignment
+    to this step is an **inference** from the film, since the list names
+    no steps.
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
   single-wafer tools with HF and DSP+HF chemistries, and the Mirra
   entry also lists "Track ammonia clean" and "IPA clean";[^skw-01] a
@@ -189,17 +226,18 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PSG <step-089>` (the film polished). Next:
+* Previous: {ref}`PSG <step-089>` (the film polished).
+* Next:
   {ref}`NCAPOX <step-091>` (the cap oxide over the polished
   surface), then {ref}`RTAD2 <step-092>`.
-* The stop, on our reading: {ref}`GATENIT <step-058>` and
+* Depends on: the stop, on our reading, {ref}`GATENIT <step-058>` and
   {ref}`POC <step-059>`; the "poly cap after SPE" left by
   {ref}`SPE <step-077>`.
-* The STI polish with the same nitride-stop principle:
-  {ref}`CMPNIT <step-012>`. Later oxide polishes:
-  {ref}`CMPL <step-106>`, {ref}`CMPM <step-116>`.
-* The lithography that needs the flat surface:
+* Feeds: the lithography that needs the flat surface,
   {ref}`LICM1 <step-093>`.
+* Same category: the STI polish with the same nitride-stop principle,
+  {ref}`CMPNIT <step-012>`; later oxide polishes,
+  {ref}`CMPL <step-106>`, {ref}`CMPM <step-116>`.
 * Category page: {ref}`Chemical-mechanical planarisation <category-cmp>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -274,12 +312,12 @@ An industry-generic oxide/{term}`PMD` polish for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* Whether the polish stops on the gate caps or leaves a controlled
+* **Polish stop.** Whether the polish stops on the gate caps or leaves a controlled
   glass thickness above them is not public; the cap-stop reading is
   our inference from the PDK's 0.2 µm cap entry.
-* The slurry, removal amount, endpoint method and {term}`post-CMP clean` are
+* **Slurry, removal and endpoint.** The slurry, removal amount, endpoint method and {term}`post-CMP clean` are
   not public.
-* Whether SkyWater uses a brush scrubber, and which, is not stated on
+* **Brush scrubber.** Whether SkyWater uses a brush scrubber, and which, is not stated on
   any public page.
 
 <!-- footnotes -->
