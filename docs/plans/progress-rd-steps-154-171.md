@@ -881,3 +881,18 @@ positives above; every WORDS LOST word is named in its page entry.
 
 * **M1 (166):** the glance box's Public-numbers line restores the lead's "except the seal ring's own
   diffusion rings" before "(nsm.3)".
+* **M2, L4, L7, L11 (171):** the three result paragraphs the splits had left bare (the 5 V NMOS
+  thresholds; "Of the 23 … 22 …"; the 1.8 V thresholds and "16 of the 18 …") each close with the
+  reviewer's declared sentence "These are our extractions from the published measurements." with
+  `[^raw-data-hv-mosfets]` (and `[^pdk-07]` where the paragraph compares with PDK limits) or
+  `[^raw-data-lv-mosfets][^pdk-07]` (R-SENTENCE step 5, ruling D3). In the VTXPN42H paragraph the two
+  added "(our extraction …)" repeats are replaced by one such closing sentence after the two
+  VTXPN42H sentences, so "(magnitudes …)" no longer sits beside a second parenthesis (L4); the
+  base's own "(our extraction …)" stays on the no-current sentence. `check_preserved` (main's copy)
+  reports `DUPLICATED sentence (5x, was 0x): 'These are our extractions from the published
+  measurements.'` — the declared closing sentence, five times by design. L7: the table lead-in
+  reads "…(from the I_D–V_D sweeps), against the RDS nominals, is:" (punctuation only).
+* **L6 (171):** the Group-codes bullet split at ", and": "The pad list's `Group` codes are not
+  explained.[^raw-data-testtile-pads] (1–8, … modules.[^raw-data-testtile-pads]) The schematics and
+  layout … are not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]" (declared repeated
+  marker; word `and` lost).

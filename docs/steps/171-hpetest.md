@@ -238,11 +238,12 @@ although the PDK states neither the bias conditions nor the extraction
 methods behind them. For the 5 V NMOS, whose nominal VTXNLH at W/L 7/8
 is 0.811 V,[^pdk-07] two 7/8 µm test-tile devices give 0.79 V and
 0.82 V by maximum-transconductance extrapolation of the drain current at
-V_DS = 0.1 V, less half that drain bias.
+V_DS = 0.1 V, less half that drain bias. These are our extractions from the
+published measurements.[^raw-data-hv-mosfets]
 
 For the 16 V {term}`drain-extended <DEMOS>` NMOS at 20 µm
 width, the median resistance at V_GS = 5 V and V_DS = 0.1 V (from the
-I_D–V_D sweeps) is, against the RDS nominals:[^raw-data-hv-mosfets][^pdk-07]
+I_D–V_D sweeps), against the RDS nominals, is:[^raw-data-hv-mosfets][^pdk-07]
 
 | Structures | Median resistance | RDS nominal |
 |---|---:|---|
@@ -258,14 +259,14 @@ native, zero-Vt and ESD NMOS. Of the 23 for which the tile has a matching struct
 22
 have every working test-tile structure inside the published
 minimum–maximum limits. (None matches the 20 V native NMOS, VTXN20VHV1L, at 2 × 30/1.0 µm.)
+These are our extractions from the published measurements.[^raw-data-hv-mosfets][^pdk-07]
 
 The exception, VTXPN42H, is a single
 0.42/20 µm PMOS whose linear-region sweep (at most 0.23 µA at
-V_DS = −0.1 V) rises irregularly (our extraction from the published
-measurements).[^raw-data-hv-mosfets] So its extrapolated threshold
+V_DS = −0.1 V) rises irregularly. So its extrapolated threshold
 depends on how the transconductance is smoothed (magnitudes of
-0.86–1.55 V against limits of 0.87–1.00 V) (our extraction from the published
-measurements).[^raw-data-hv-mosfets][^pdk-07] One 0.42/0.5 µm NMOS
+0.86–1.55 V against limits of 0.87–1.00 V). These are our extractions from the published
+measurements.[^raw-data-hv-mosfets][^pdk-07] One 0.42/0.5 µm NMOS
 structure carries no current at all (our extraction from the published
 measurements).[^raw-data-hv-mosfets][^pdk-07]
 
@@ -285,13 +286,15 @@ in place of the short devices for the low-Vt PMOS.)
 By the same extrapolation at |V_DS| = 0.1 V, less half the drain bias,
 the 7/8 µm `nfet_01v8` gives 0.534 V against the VTXNL nominal of
 0.541 V. The two 7/0.15 µm devices give 0.707 V and 0.719 V against the
-VTXNS15 nominal of 0.700 V (limits 0.661–0.739 V).
+VTXNS15 nominal of 0.700 V (limits 0.661–0.739 V). These are our extractions from the
+published measurements.[^raw-data-lv-mosfets][^pdk-07]
 
 Of the 19 e-test
 thresholds matched in these modules, 16 of
 the 18 with a usable printed nominal lie within 0.03 V of it. (Two of
 them at 0.029 V, so the count depends on how the transconductance is
-differentiated.)
+differentiated.) These are our extractions from the published
+measurements.[^raw-data-lv-mosfets][^pdk-07]
 
 The
 exceptions are two low-Vt PMOS values, 0.668 V against 0.630 V at
@@ -502,9 +505,10 @@ Status and expiry are estimates from public records and are not legal advice.
   module;[^raw-data-testtile-pads] neither says how the tile relates to
   the `areaid.mt` modules.
 * **Group codes and schematics.** The pad list's `Group` codes are not
-  explained, and the schematics and layout of the tile's structures are
-  not public.[^raw-data-testtile-pads][^raw-data-testtile-prop] (1–8, 10, `Z`, `s8tet`, and a stray
-  `3791956` on module 8404; blank for 156 of the 273 modules.[^raw-data-testtile-pads])
+  explained.[^raw-data-testtile-pads] (1–8, 10, `Z`, `s8tet`, and a stray
+  `3791956` on module 8404; blank for 156 of the 273 modules.[^raw-data-testtile-pads]) The
+  schematics and layout of the tile's structures are
+  not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]
 * **Current resolution.** The published transistor I–V data have limited current resolution: the
   `sky130_plot_gm.ipynb` analysis notebook in the repository notes that
   "the data gets noisy below 2nA"
