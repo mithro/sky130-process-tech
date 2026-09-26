@@ -347,3 +347,45 @@ per page.
   Reflectivity (39) — each one sentence or a sentence plus its dash material.
 * **Self-check note:** one line duplicated by a range slip (the classification's "same class as MM1")
   was caught by the duplicate-line check and removed before commit.
+
+### 125 MM2E — done
+
+* **Lead:** base 137 words → three paragraphs (§4.1 note ¹), the 114 form: the 90-word second
+  sentence's dash material (the two stacks) becomes the second paragraph, "The stack is, on the 2013
+  Cypress description …[^cyp-qtp-113005] On the stack qualified in 2013–2014, it is a TiN cap and a
+  Ti/TiN underlayer instead[^cyp-qtp-123907] (…)" ("The stack is", "it is" added); ", so that what
+  remains" → ". So what remains" ("that" lost); the corrosion sentence is the third paragraph. This
+  reorder is the one `number_order` LOST: ('2013','300','3 200','0.5','100','2013–2014','69','20',
+  '0.140') — the same numbers, the stack figures now after the `met2` numbers; hand-checked.
+* **R-H3:** none (the post-figure passage is 110 words of geometry and this reference's readings of
+  the floor). Split into three paragraphs (geometry | "What differs is the floor." and its
+  consequences | the Lam quotation); the floor sentence split at its semicolon.
+* **R-CATEGORY:** classification kept whole (30 words, as 114); the MM1E chemistry pointer as a
+  paragraph; "What is specific to metal 2 …" (its own label) a paragraph; the 85-word antenna sentence
+  as its own paragraph, split at ", and the contact term" and at the semicolon: "… (the "vertical"
+  check).[^pdk-11] The contact term is … (the "horizontal" check); each is compared with
+  `MAX_EGAR`.[^pdk-11] The metal-2 antenna … therefore …" — "is" added twice; **`[^pdk-11]` repeated**
+  on the first sentence, which states the PDK's definition (declared).
+* **R-PARA (Why):** Line width: lead ends at "describes;". Clearing: kept as one 31-word sentence (no
+  list lead-in exists on this page without adding words); the Abraham sentence is the continuation.
+  Charging: lead ends at "being etched;".
+* **How:** italic scope lead-in. Chamber, Main etch (the 114 seams), Endpoint (split at the last
+  semicolon, after the hedge parenthetical that closes the first clause), Over-etch ("; this is where"
+  → ". This is where", kept in the lead block; the inference sentence is the continuation). Strip and
+  clean: the 114 form — the sentence without its dash and parenthesis, then "(SkyWater lists "EKS265,
+  EKC270 solvents" under "Batch Rotational".[^skw-01])" directly after it, then the asher sentence
+  (already a full sentence) as the continuation. Metrology: the five semicolon-separated items as
+  sub-bullets, the test-tile sentence as the continuation.
+* **R-TOOLS:** the 114 form; "which runs metal 2 is not public; both are listed without any layer
+  assignment" under *Runs this step:* (the page's own grade wording).
+* **R-REPEAT:** the Lam quotation appears in the post-figure paragraph and under Machines likely used;
+  **not applied** (as 114: the post-figure copy adds "two metal etchers by name" and "whose material
+  lists match the stack").
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; the 114 Related form; glance in the 114 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED marker `pdk-11` (the repeat above);
+  every other ADDED line is the glance box (markers `pdk-03`, `pdk-08`, `pdk-periph`, `skw-01`; numbers
+  0.032, 0.140, 125, 9600, 2300, `2`×2, `3`; the bias quote; ref `step-124`; hedges; `met2`, `metal-2`,
+  `via-1`×2). LOST words "that" (above), "strength"×2 (R-TOOLS).
+* **Coverage flags read:** the lead's first paragraph (no marker in the base for the floor clause
+  either), the antenna split (repeat above), glance lines. None lost a marker or hedge.
+* **Left over the caps:** lead 139 words in three paragraphs (base 137). Nothing over the §1 caps.
