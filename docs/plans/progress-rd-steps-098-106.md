@@ -32,13 +32,100 @@ page.
 * Repeats: `rdtools.py rep` lists 10-word runs that occur in two H2 sections (R-REPEAT).
 * Gates per page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`, `-W` build.
 
-## Batch summary
+## Batch summary (all nine pages done)
 
-(filled in after the last page)
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps`: `{figure}` blocks (the captions), `{dropdown}` bodies (the only
+dropdowns on these pages are inside the generated index-links block), the generated block and
+`## References` are **excluded**; a leading bold run-in label is not counted into its sentence.
+Before = `main` at `fd22efb3`.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 20 | 0 |
+| list items > 60 words | 44 | 1 |
+| sentences > 45 words | 65 | 2 |
+| table cells > 25 words | 0 | 0 |
+
+**Left over the caps, with reasons** (each is also in its page entry):
+
+* 100 Step category, "What is specific …" (65-word sentence) and 103 Why "Selectivity to oxide" (61-word
+  item): both hold the "only the cap oxide separates" wording, kept byte-identical as the S7 figure
+  notes ask (Content problems 1).
+* 106 lead, "The wafer is polished …" (46 words): its only seam would turn the 0.265 µm appositive
+  into a firmer main-clause claim (Content problems 2).
+* Leads over 120 words, as in the base (text before the figure): 099 (126, base 124), 103 (139, base
+  140), 105 (187 in three paragraphs, base 180), 106 (140, base 140).
+* Item leads over 30 words: 098 "Temperature and time" (40), 099 "Nucleation" (33), 101 "Origins" (40)
+  and its stack-diagram question (37), 103 "CD control" (37) and "Main etch" (38) — each has no
+  earlier seam that keeps its hedge or markers with the claim.
+
+### R-REPEAT deletions (declared; hand-verified — `--allow-moved` is not in the tool yet)
+
+* 100: the post-figure copy of SkyWater's Mirra quotation → pointer; home copy under Machines likely
+  used (entry 100).
+* 101: two copies of the sputter-target supplier sentence (public-record passage, Machines) →
+  pointers; home copy under Resources required (entry 101).
+* 103: the post-figure copy of the two Lam etcher quotations → pointer; home copy under Machines
+  likely used (entry 103).
+* 099: considered and **not** applied — the non-home copy carries facts the home copy lacks (entry 099).
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables`, `gen_figures` `--check` — 0 differences;
+`sphinx-build -E -W` into a fresh directory — exit 0. `rdtools.py inv` against `fd22efb3` per page:
+References, footnote definitions, generated blocks, `{figure}` blocks, dropdowns, quick facts, H2 lists
+and Deep-dive counts identical; one admonition per page (the glance box, `:class: at-a-glance`); every
+glance marker recurs below; no duplicate H3; every scope sentence is the italic lead-in.
+`check_preserved.py --base fd22efb3 --allow-regrouped` over the batch: the only LOST lines are the
+three declared R-REPEAT deletions (100, 101, 103) and the rule-table number order of 101 and 102
+(hand-checked in their entries); every other line is a declared addition, a regroup or a named WORDS
+LOST word.
+
+### Guide problems
+
+1. **R-REPEAT on tool quotations.** The non-home copy in an evidence passage often carries context the
+   home copy does not (099: "among its deposition tools", the special-module pairing), so the rule
+   needs "only when the other copy adds nothing"; and the pointer removes the tool evidence from the
+   first screen. `--allow-moved` (review 089-097 D1) would save the hand check.
+2. **Rule tables still fail `number_order`** (101, 102); the fifth `check_regrouped` condition (D2) is
+   not in the tool yet.
+3. **Nested numbered sub-lists** (100, 106) show as `ADDED numbers: '1'…` — `check_preserved.py`
+   masks top-level list labels but not indented ones.
+4. **Units in each cell** (batch ruling) make narrow Value cells wrap between number and unit at
+   400 px (101, 102). No number breaks, but a non-breaking space or a header unit with a per-row
+   exception might read better.
+5. **R-SENTENCE step 5 with a compound trailing hedge** ("(our reading of the drawing and our
+   arithmetic)", 105): the rule says "repeat it"; repeating only the part that applies to each half
+   seemed the faithful form. Worth saying explicitly.
+6. **"Keep verbatim" against §1 caps** (100, 103): an instruction to keep a sentence verbatim leaves it
+   over the cap until the content pass.
 
 ## Content problems for the owner
 
-(filled in as found; kept verbatim on the pages)
+Kept verbatim on the pages; not fixed.
+
+1. **"Only the cap oxide separates" (100, 103; S7 figure notes).** 100's Step category ("on the
+   cap-stop reading of CMPP, only the cap oxide separates the polish from the gate caps, so erosion
+   here is erosion of the dielectric that insulates the local interconnect from the gates …") and 103's
+   "Selectivity to oxide" ("(on the CMPP cap-stop reading, only the cap oxide separates them)") hold
+   only for the caps at the polish level (poly on field oxide); with the PDK's heights, gates on
+   active area keep about 0.33 µm of PSG over them. The 100 and 103 figure captions draw exactly that
+   ("so glass stays over this slice's gate, which stands lower, on the active area"), so page text and
+   caption now disagree on the drawn gate. Content-pass fix, as the 089-097 review ruled: scope to
+   "caps on the field oxide" (also 089, 090, 091).
+2. **The 0.265 µm "NILD2" as the post-polish thickness (105, 106).** 106's lead says a controlled
+   thickness of oxide "— the PDK's 0.265 µm "NILD2" between the top of the nitride cap over `li` and the
+   `metal1` bottom — remains over the local interconnect" with no hedge, while 106's figure caption and
+   its Open question call that identification "our reading"; 105's bullet "0.265 µm is the
+   *post-polish* thickness over the local interconnect" is likewise unhedged. The glance boxes use the
+   hedged form.
+3. **Arithmetic checked, no slip found:** 101 12.8 Ω/sq × 0.1 µm = 128 µΩ·cm and 0.9361 + 0.075 =
+   1.0111; 102 k₁ 0.17 × 0.6 / 0.365 = 0.279 and 0.17 × 0.6–0.7 / 0.248 = 0.41–0.48; 105 0.9361 + 0.1 +
+   0.075 + 0.265 = 1.3761 and 0.1 + 0.075 = 0.175; 101/102 0.17 + 0.17 = 0.34 µm pitch.
 
 ## Pages
 
