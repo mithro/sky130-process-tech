@@ -23,6 +23,14 @@ specification. This is the {term}`e-test` or wafer acceptance test
 in this reference does not describe the test; what follows rests on the
 PDK, SkyWater's capability list and industry practice.
 
+:::{figure} /_static/figures/tool-171-hpetest.svg
+:alt: Four boxes one above the other joined by downward arrows: the finished wafer, the wafer prober, the parametric tester, and the results and disposition. Three side boxes point into the last three: a probe card into the prober, the HP 4062UX into the tester, and the PDK's e-test specifications into the results.
+:width: 560px
+:name: fig-tool-171-hpetest
+
+Electrical test as this page describes it: the finished, annealed wafer goes onto a prober whose needles land on the pads opened at PDME, a parametric tester measures the test structures, and the results are compared with limits to accept, hold or scrap the wafer. The prober, the probe card, the tester and the disposition are drawn as industry practice; the only parametric tester SkyWater names is an HP 4062UX, and that this step runs on it is an inference.[^skw-01] The PDK publishes nominal values with lower and upper spec limits, which the page reads as that kind of limit.[^pdk-07] Which structures are tested, at how many sites and under which disposition rules is not public.
+:::
+
 **What the PDK says is tested.** The SKY130 device documentation
 publishes the e-test specifications directly. For each MOSFET it states
 that "Major model output parameters are shown below and compared against

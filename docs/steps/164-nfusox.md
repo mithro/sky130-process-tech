@@ -26,6 +26,14 @@ finished circuit — which continues with the silicon nitride of
 {term}`bond pads <bond pad>` at {ref}`PDM <step-168>` /
 {ref}`PDME <step-169>`.
 
+:::{figure} /_static/figures/pass-164-nfusox.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step two thick metal shapes with vertical edges stand on a flat pale oxide, with bare oxide between them. After it a thin pale film covers everything with one thickness: the tops and sides of the metal shapes and the oxide floor between them.
+:width: 560px
+:name: fig-pass-164-nfusox
+
+Before, the etched metal-5 shapes with the cap oxide bare between them; after, a thin oxide laid over the whole wafer, on their tops, down their sidewalls and across the floor between them. The page reads this film as the one the PDK's stack diagram labels TOPOX (an inference); the diagram dimensions it as 0.09 µm on the top of the metal and 0.070 µm on its sidewall, beside 1.26 µm for metal 5.[^pdk-04] It is drawn with one thickness everywhere: close to its proportion to the metal on the top, and thicker than it is on the sidewall. The drawn space between the shapes is about 0.8 times as deep as it is wide, the proportion the page's arithmetic gives a minimum space. Which films clad metal 5 is not public (the overview of the metal cap sets out the evidence). The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The underlayer of metal 5, the via-4 fill, the metal-4 line, the capacitor plates and the oxides are drawn but not labelled, nor, in the lower panel, is the aluminium–copper. Not to scale.
+:::
+
 The PDK's process stack diagram draws exactly such a film. Directly on
 `metal5` (1.26 µm thick on the diagram) it shows a thin layer labelled
 "TOPOX K=3.9", dimensioned 0.09 µm on the top of the metal and

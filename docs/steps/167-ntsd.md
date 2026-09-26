@@ -22,6 +22,14 @@ the pad opening with its strip and clean ({ref}`PDM <step-168>`,
 {ref}`PDME <step-169>`), the final anneal ({ref}`ALLY <step-170>`) and
 electrical test ({ref}`HPETEST <step-171>`).
 
+:::{figure} /_static/figures/pass-167-ntsd.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step two thick metal shapes stand on a flat oxide under a thin pale film. After it a thick green film covers everything with one thickness, over the tops, down the sides and across the floor, leaving a narrow open gap between the two shapes.
+:width: 560px
+:name: fig-pass-167-ntsd
+
+Before, the metal-5 shapes under the thin passivation oxide; after, the passivation nitride over the whole slice, on the tops, the sidewalls and the floor between the shapes. The PDK's stack diagram labels it TOPNIT, 0.54 µm on top of the 1.26 µm metal 5 and 0.4223 µm on its sidewall;[^pdk-04] it is drawn in that proportion to the metal on the top and with the same thickness on the sidewall. Cypress reports for two other S8 variants and for the R7FT-3R technology at the same fab give thicker nitrides, so the public record puts it between 0.54 µm and 0.9 µm; which value applies to SKY130 lots is not public.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005] That it is a PECVD nitride is the page's inference. The gap between the shapes stays open; where the diagram, on the page's reading, draws the passivation thinner beside the metal, it is not drawn thinner here. The nitride is also read as lining the seal opening at the die edge, which is outside this slice, and any polyimide is not drawn (whether it is applied is not public). The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films other than the cap, the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide are drawn but not labelled, nor, in the lower panel, is the metal cap. Not to scale.
+:::
+
 The PDK's process stack diagram draws this film as "TOPNIT K=7.5" over
 the thin "TOPOX K=3.9": 0.54 µm thick on top of `metal5` and 0.4223 µm
 on its sidewall, with a "glass cut" through it over the metal; beside

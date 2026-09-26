@@ -22,6 +22,14 @@ post-etch clean as part of this step. The wafer next receives the
 passivation nitride of {ref}`NTSD <step-167>`, which, on our reading,
 lines the opening.
 
+:::{figure} /_static/figures/pass-166-nsme.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a thick violet resist layer with a flat top covers the whole slice: two thick metal shapes under a thin pale film. After it the resist is gone and the thin pale film over the metal shapes and the floor between them is unchanged.
+:width: 560px
+:name: fig-pass-166-nsme
+
+Before, the seal-mask resist over the whole slice; after, the resist has been stripped (the page treats the strip and clean as part of this step), and nothing else in this slice has changed. The etch works only in the `nsm` opening, a ring at least 3 µm wide along the edge of every die (nsm.1),[^pdk-periph] which lies outside this slice of wiring and is not drawn. What it removes there is not public: through the thin TOPOX only, to the LINIT nitride or towards the silicon of the seal ring, on the page's readings. The thin oxide over the metal is drawn untouched, as the page requires of the resist and the etch. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films other than the cap, the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide are drawn but not labelled. Not to scale.
+:::
+
 What the etch removes is not public. Its first film is the thin
 passivation oxide of {ref}`NFUSOX <step-164>` (0.09 µm "TOPOX" on the
 PDK's stack diagram[^pdk-04]). Below that, in a region with no wiring,
