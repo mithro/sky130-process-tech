@@ -231,3 +231,49 @@ no title of the four is true of it as a whole).
   nouns); REGROUPED lines read (cap stack list, test-tile list, selectivity arithmetic), same digits in
   the same order. `--strict-words`: LOST `strength` ×2 (R-TOOLS), `where` (the connective at the
   category split); `it` non-strict.
+
+### 139 MM3 — done
+
+Base `49fc160b`. Caps before: 4 paragraphs, 8 items, 12 sentences over; after: 0/0/0. Lead 160 words
+(as the base) in three paragraphs (base over 120; no paragraph opens on a connective).
+
+* R-H3/R-TABLE (model 124): `### What the public record shows` over the mask-table, rule and
+  thickness passage; the mask-table sentence split at its semicolon; the 125-word periphery-rule
+  sentence as a `Rule | Constrains | Value` table after "The periphery rules for the flow described
+  here give:[^pdk-periph]" (the lead-in marker covers every row, R-TABLE step 3), base order kept
+  (m3.1, m3.2 with the pitch dash in its cell, m3.3c/d, m3.6, m3.4, m3.pd.1 with `RR` and the window
+  in its cell, via3.4, via3.5), units in each cell; after it the dash aside "The assumptions table's
+  separate, global "Min pattern density for oxide" is 0.75.[^pdk-03]" and "The layer also carries a
+  `cmm3 waffleDrop` fill check.[^pdk-periph]" (the 124 form; `pdk-periph` repeated, declared). The
+  `number_order` LOST line is this sentence; re-paired by hand against the base: 0.300 µm (m3.1),
+  0.300 µm (m3.2; 0.6 µm pitch, 0.28 µm), 0.400 µm (m3.3c, m3.3d), 0.240 µm² (m3.6), 0.065 µm (m3.4),
+  0.7 (m3.pd.1, 700 µm, 70 µm), 0.75 (assumptions table), 0.060 µm (via3.4), 0.090 µm (via3.5). The
+  via-3 cells read "enclosure of the via-3 plugs that will later land on metal 3" / "… on one of two
+  adjacent sides" (the base's "must be enclosed by it by" → cell wording, as on 124; `enclosed`,
+  `must`, `by` are the LOST words).
+* R-CATEGORY: classification sentence (27 words); "Specific to this step:" three bullets: "`MM3` is,
+  however, no longer a critical layer …" ("It" → `MM3`, restored noun, since the bullet follows the
+  label); the two k₁ values split into two sentences, "(our arithmetic)" repeated on the first (it
+  covered the whole sentence; declared ADDED hedge; k₁ = 0.847 ≈ 0.85 and 0.493 ≈ 0.49, correct);
+  SkyWater's list split at the semicolon ("Which prints metal 3 is not public, and either is plausible
+  … (inference; …)" keeps its own hedge). "What is specific to this instance is the substrate" keeps its
+  paragraph; its 74-word sentence split at the colon ("Like MM4, it is printed over a partly built
+  device.") and the three things the resist sees as bullets, each dash in place, "and" dropped; the
+  "two different thin-film stacks" dash stays directly after the plate item, where the base had it.
+* Why: items split into first block + continuation at semicolons; the enclosure item's "(inference;
+  Levinson's …)" stays on the alignment-tree sentence only: the first half ("The metal must enclose
+  the via-2 plugs by 0.065 µm (m3.4)[^pdk-periph] and the capacitor plates by the unpublished capm.3
+  value") is the PDK's rule, which the page cites and does not infer. Listed for the reviewer.
+* How: italic scope lead-in (with its MM1 pointer, as on 124); step 1 split ("A dehydration bake …
+  (inference). Then an organic BARC …"); step 2 at the semicolon; step 5: the dash (which marks) as
+  "The marks are the via-2 level or the metal-2 targets it was aligned to." after the sentence, and the
+  20-word parenthetical as the following sentence "(Our reading of industry practice; … not public.)",
+  covering both.
+* R-TOOLS as on 124 (the three items). R-RELATED: Previous / Next / Depends on (WTIAL3; the capacitor
+  module; the via-2 plugs) / Feeds (NILD5; VIM3) / Same category (the other metal masks) / Mask (with
+  previous/next mask) / Category page. R-OPENQ labels; the TLM/S8TM/PLM item split into first block +
+  continuation. R-REPEAT: none.
+* Preservation: ADDED = the glance box, the repeated `pdk-periph` and "(our arithmetic)", restored
+  nouns (`MM3`, "via-3" in the via3.5 cell) and the Open-question label "TLM, S8TM and PLM" (`S8TM`);
+  REGROUPED lines read. `--strict-words`: LOST `strength` ×3, `page` ("Mask page:"), `enclosed`,
+  `must` (table cells).
