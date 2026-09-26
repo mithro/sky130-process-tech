@@ -807,6 +807,16 @@ def _dropdown_body_text(lines: list[str], body_lines: set[int]) -> str:
     return normalize_ws(" ".join(kept))
 
 
+_RUN_PUNCT_RE = re.compile(r'^[\s"“”‘’\'(\[]+|[\s"“”‘’\'.,;:!?)\]]+$')
+
+
+def _run_words(text: str) -> list[str]:
+    """Words for the 8-word-run comparison: surrounding punctuation
+    stripped and lower-cased, so that a split that turns "nitride, which"
+    into "nitride. Which" still matches the base's run."""
+    return [w for w in (_RUN_PUNCT_RE.sub("", w).lower() for w in text.split()) if w]
+
+
 def _duplicate_units(text: str) -> tuple[Counter, Counter, Counter]:
     """(consecutive identical non-blank lines, sentences, 8-word runs) of
     ``text`` outside tables, fences and footnote definitions, as Counters,
@@ -827,7 +837,7 @@ def _duplicate_units(text: str) -> tuple[Counter, Counter, Counter]:
                 sent = sent.strip()
                 if len(sent.split()) >= 8:
                     sentences[sent] += 1
-            words = cleaned.split()
+            words = _run_words(cleaned)
             for k in range(len(words) - 7):
                 runs[" ".join(words[k : k + 8])] += 1
         prose.clear()
@@ -877,7 +887,7 @@ def check_duplicates(old_text: str, new_text: str) -> list[str]:
         msgs.append(f"DUPLICATED line ({c}x consecutive): {line[:120]!r}")
     for sent, c in new_sent.items():
         if c > 1 and c > old_sent.get(sent, 0):
-            words = sent.split()
+            words = _run_words(sent)
             grams = [" ".join(words[k : k + 8]) for k in range(len(words) - 7)]
             if grams and all(new_runs[g] <= old_runs.get(g, 0) for g in grams):
                 continue
