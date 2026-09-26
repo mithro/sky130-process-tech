@@ -603,3 +603,51 @@ pages: 066, 068, 072. One commit per page.
   base marker belonged to the other clause (hardest strips/dose, two-step/"Then …", Iridia/CF₄);
   glance and label lines.
 * **Caps**: para > 100 2 → 0; item > 60 2 → 0; sentence > 45 4 → 0.
+
+### 085 NSDM — done
+
+* **Lead.** 66 words in one paragraph, first sentence 11: unchanged.
+* **R-H3.** `### What the public record shows` after the figure caption, over the 163-word PDK paragraph
+  (mask table, layers, the nsd rules, rpm.6, minimum CD).
+* **R-SENTENCE.** The layer sentence split at its semicolon (`[^pdk-05]` on the mask table; the
+  layers, their add/drop purposes, `[^pdk-06]` and the "so the reticle is derived …" reading stay one
+  sentence, as in the base).
+* **R-TABLE.** The nsd rules → `Rule | Constrains | Value (µm)` in the base order, as on 081;
+  `[^pdk-periph]` on the lead-in "… opening for N+/P+ implants":[^pdk-periph]" (the base colon kept).
+  nsd.5a and nsd.5b stay in one row because the base gives them one clause and one value ("enclosure
+  of diffusion and of tap by 0.125 µm (nsd.5a, nsd.5b)"); nsd.7's cell is the base's own words ("to
+  diffusion or tap of the opposite implant", no "spacing" added); nsd.8 and nsd.9 have no value
+  (`—`); the two area rows keep "µm²" joined by a non-breaking space. LOST `number_order` checked by
+  hand: nsd.1 0.380, nsd.2 0.380, nsd.5a/5b 0.125, nsd.6 zero, nsd.7 0.130, nsd.8 —, nsd.9 —,
+  nsd.10a 0.265 µm², nsd.11 0.265 µm² — the base pairs. WORDS LOST "by" and "m" (µm to the header).
+  The rpm.6 and minimum-CD sentence stays as the closing paragraph.
+* **R-CATEGORY / R-LIST.** Classification sentence (≈ 25 w) alone. The 94-word "The differences are in
+  what the resist must withstand — … — and in the fact that …" → "The differences are:" and two plain
+  bullets, each keeping its "in"; the dash material of the first became its explanation after a colon,
+  split at ", and arsenic" into "Arsenic is a heavier ion …, so we infer … (the paper's abstract does
+  not compare species)" — the "we infer" and the caveat stay with that clause; `[^fujimura-1989]` stays
+  on the carbonisation clause and `[^pdk-periph]` on the rule clause.
+* **Why items.** "Source/drain of every NMOS" split at its internal semicolon ("… extensions.[^pdk-07]
+  The drain-extended NMOS source must be enclosed …"); "poly contact heads" split at its semicolon
+  ("The precision resistors themselves are kept 0.200 µm clear …"; the NPCM hedge stays on the first
+  clause, which it governed).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** "Resist coat" (74 w): lead = the resist sentence; continuation from "The thickness is
+  again set …".
+* **R-TOOLS.** i-line: no SkyWater statement beyond the marker on the head, so only *Tool exists:*
+  and *Runs this step:*; tracks and overlay/CD in 068's form. Three tools, no recap table.
+* **R-RELATED.** Previous/Next split; "Complementary mask: PSDM" and "The extensions the N⁺ junction
+  joins" (ASTI, HVASTI, LDASTI) → one `Same module:` bullet; "Structures it dopes" unlabelled; "Mask
+  page:" and the previous/next-mask bullet → one `Mask:` bullet.
+* **R-OPENQ.** Labels "Resist and exposure tool", "How `cnsdm` is generated", "SONOS cell
+  source/drain"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers nsd.1/nsd.2 0.380 µm and rpm.6's
+  0.200 µm `[^pdk-periph]`; tool line with both grades; Not public from Open questions 1.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-periph`, `skw-01`, numbers 0.200,
+  0.380, 1, 2, 6, ⁺, ref `step-086`, hedges "inference", "likely", "not public" — the glance box.
+  LOST `number_order` for the nsd table, checked above. WORDS LOST: "by", "m", "page" ("Mask page:"
+  → "Mask:"), "strength"×3.
+* **Marker coverage.** 12 flags, all read: split halves whose base marker belonged to the other clause
+  (mask table/layers, the two category bullets, the NMOS item, the poly-heads item); glance and label
+  lines.
+* **Caps**: para > 100 2 → 0; item > 60 1 → 0; sentence > 45 5 → 0.

@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`PDIS <step-084>` |
 | **Next step** | {ref}`NSDI <step-086>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** prints the resist whose windows admit the heavy n-type
+  implant of {ref}`NSDI <step-086>`.
+* **Why:** the N⁺ implant must reach the n-type structures and be kept
+  out of the p-type ones.
+* **Public numbers:** width and space 0.380 µm (nsd.1, nsd.2); 0.200 µm
+  clear of `rpm` (rpm.6).[^pdk-periph]
+* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+  (existence); inference (assignment of `NSDM` to i-line).[^skw-01]
+* **Not public:** the resist, thickness, exposure tool and hardening
+  step, inferred from the design rules and general practice
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `NSDM` is the N⁺ source/drain implant mask, the complement of
@@ -29,19 +45,30 @@ end proper.
 Before, the wafer cleaned at PDIS; after, the NSDM resist, with windows over both NMOS areas and resist over the field and the resistor, which the precision-resistor rules keep clear of `nsdm` (rpm.6).[^pdk-periph] The two windows are, as the page says, close to the complement of the P⁺ window across the active area. The resist is drawn at the thickness of the other implant resists; the PDK's nominal photoresist thickness is 1.14 µm,[^pdk-03] and this mask's is not public. The colours of the gate film mark the type of its doping, not a depth profile. The spacers, the caps, the gate oxides, the re-oxidation oxide, the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel the p-type resistor body under the resist is not labelled. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK's mask table lists "N+ Implant, NSDM" as used in
-SKY130;[^pdk-05] the drawn layer is `nsdm` (GDS 93:44, "N+
+SKY130.[^pdk-05] The drawn layer is `nsdm` (GDS 93:44, "N+
 source/drain implant") and the generated mask layer `cnsdm` (30:0,
 "N+ Implant mask") with "mask add" (29:21) and "mask drop" (29:22)
 purposes,[^pdk-06] so the reticle is derived from the drawn layer by
-Boolean operations. The rules are shared with `psdm` under "Defines
-opening for N+/P+ implants": width 0.380 µm (nsd.1), space 0.380 µm
-(nsd.2), enclosure of diffusion and of tap by 0.125 µm (nsd.5a,
-nsd.5b), zero enclosure at a diff/tap butting edge (nsd.6), 0.130 µm
-to diffusion or tap of the opposite implant (nsd.7), no overlap with
-opposite-doping diffusion or tap (nsd.8), "Diff and tap must be
-enclosed by their corresponding implant layers" (nsd.9), minimum area
-0.265 µm² (nsd.10a) and minimum hole area 0.265 µm² (nsd.11).[^pdk-periph]
+Boolean operations.
+
+The rules are shared with `psdm` under "Defines
+opening for N+/P+ implants":[^pdk-periph]
+
+| Rule | Constrains | Value (µm) |
+|---|---|---:|
+| nsd.1 | width | 0.380 |
+| nsd.2 | space | 0.380 |
+| nsd.5a, nsd.5b | enclosure of diffusion and of tap | 0.125 |
+| nsd.6 | enclosure at a diff/tap butting edge | zero |
+| nsd.7 | to diffusion or tap of the opposite implant | 0.130 |
+| nsd.8 | no overlap with opposite-doping diffusion or tap | — |
+| nsd.9 | "Diff and tap must be enclosed by their corresponding implant layers" | — |
+| nsd.10a | minimum area | 0.265 µm² |
+| nsd.11 | minimum hole area | 0.265 µm² |
+
 The precision-resistor rules add "Min spacing, no overlap, of rpm and
 nsdm" of 0.200 µm (rpm.6),[^pdk-periph] and the minimum-CD table gives
 0.38 µm feature and space (`NSDMCD`, `NSDMCDSP`).[^pdk-03]
@@ -50,14 +77,19 @@ nsdm" of 0.200 µm (rpm.6),[^pdk-periph] and the minimum-CD table gives
 
 `NSDM` is a {ref}`Photolithography (mask step) <category-lithography>`
 step of the *implant-block* type, printed on the same topography and
-to the same rules as {ref}`PSDM <step-081>`. The differences are in
-what the resist must withstand — high-dose implantation carbonises the
-resist's polymers and lowers its etching rate,[^fujimura-1989] and
-arsenic is a heavier ion than boron or BF₂, so we infer that at the
-same dose it leaves a harder crust (the paper's abstract does not
-compare species) — and in the fact
-that its windows are, to a first approximation, the complement of
-the P⁺ windows across the active area: nsd.7 and nsd.8 keep the two
+to the same rules as {ref}`PSDM <step-081>`.
+
+The differences are:
+
+* in
+  what the resist must withstand: high-dose implantation carbonises the
+  resist's polymers and lowers its etching rate.[^fujimura-1989]
+  Arsenic is a heavier ion than boron or BF₂, so we infer that at the
+  same dose it leaves a harder crust (the paper's abstract does not
+  compare species);
+* in the fact
+  that its windows are, to a first approximation, the complement of
+  the P⁺ windows across the active area: nsd.7 and nsd.8 keep the two
 layers apart except where they butt at a diff/tap edge with zero
 enclosure (nsd.6).[^pdk-periph]
 
@@ -70,7 +102,7 @@ regions inside `nsdm` are:
 * the **source/drain of every NMOS** — the 1.8 V and 5 V devices,
   the native and low-Vt variants, the isolated and drain-extended
   NMOS and the ESD NMOS, whose cross-sections show "N+" source/drain
-  beside the "N−" extensions;[^pdk-07] the drain-extended NMOS
+  beside the "N−" extensions.[^pdk-07] The drain-extended NMOS
   source must be enclosed by `nsdm` (a `de_nFet_source` rule);[^pdk-periph]
 * the **SONOS memory cells**, which are NMOS transistors with an ONO
   gate stack ({ref}`ONO <step-040>`) and whose source/drain are made
@@ -87,7 +119,7 @@ regions inside `nsdm` are:
 * the **P-well-to-n⁺ diodes** (`diode_pw2nd_*`);[^pdk-07]
 * the poly contact heads outside resistors, which — on the reading of
   the {ref}`NPCM <step-078>` page — receive an extra n⁺ dose through
-  the {term}`nitride cut` wherever `nsdm` covers them; the precision
+  the {term}`nitride cut` wherever `nsdm` covers them. The precision
   resistors themselves are kept 0.200 µm clear of `nsdm` (rpm.6)[^pdk-periph]
   so that their p-type heads are not counter-doped.
 
@@ -104,8 +136,8 @@ resistor or diode could be made without doping the p-type devices.
 
 ## How it is typically performed
 
-An industry-generic high-dose implant-block lithography sequence for
-a 200 mm, 130 nm-era fab (SKY130's is not public):
+*An industry-generic high-dose implant-block lithography sequence for
+a 200 mm, 130 nm-era fab (SKY130's is not public):*
 
 1. **Surface preparation.** Dehydration bake and HMDS prime; the
    surface is the {ref}`SPOX <step-080>` oxide, slightly thinned by
@@ -113,7 +145,9 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 2. **Resist coat.** A single-layer positive resist of about 1 µm —
    the PDK's nominal 1.14 µm[^pdk-03] — which stops an arsenic
    source/drain implant at tens of keV (industry-typical[^txt-02])
-   with a wide margin. The thickness is again set by coverage over
+   with a wide margin.
+
+   The thickness is again set by coverage over
    the capped gates and by the resist's endurance under a
    10¹⁵ cm⁻² arsenic beam, whose heating and charging Smith,[^smith-1983]
    Romig et al.,[^romig-1996] and Lukaszek, Reno and Bammi (for an
@@ -146,14 +180,15 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Machines likely used at SkyWater
 
-* **ASML i-line stepper / i-line scanner.**[^skw-01] Strength:
-  **strong** for existence; the assignment of `NSDM` to i-line is an
-  **inference** from the 0.38 µm rules.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**.[^skw-01]
-  Strength: strong for existence.
-* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**.[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML i-line stepper / i-line scanner**[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of `NSDM` to i-line is an
+    **inference** from the 0.38 µm rules.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **Overlay — KLA 5200/5300/Archer; CD — AMAT Verity/VeraSEM**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this mask is an inference.
 
 ## Resources required
 
@@ -168,19 +203,19 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`PDIS <step-084>` (the clean this resist is coated
-  after). Next: {ref}`NSDI <step-086>` (the implant), then
+  after).
+* Next: {ref}`NSDI <step-086>` (the implant), then
   {ref}`NSDIS <step-087>` (strip).
-* Complementary mask: {ref}`PSDM <step-081>`.
+* Same module: the complementary mask, {ref}`PSDM <step-081>`; the
+  extensions the N⁺ junction joins, {ref}`ASTI <step-065>`,
+  {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`.
 * Structures it dopes: NMOS source/drain (including SONOS cells),
   n⁺ taps, NPN emitter/collector contacts, PNP base contacts, N⁺
   diffusion resistors, n-diodes, and n⁺ poly heads opened at
   {ref}`NPCM <step-078>`.
-* The extensions the N⁺ junction joins: {ref}`ASTI <step-065>`,
-  {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`.
-* Previous mask: {ref}`PSDM <step-081>`; next mask:
-  {ref}`LICM1 <step-093>`.
-* Mask page: {ref}`NSDM <mask-nsdm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`NSDM <mask-nsdm>` — the mask's layers, plates,
+  renders and design rules. Previous mask: {ref}`PSDM <step-081>`;
+  next mask: {ref}`LICM1 <step-093>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -247,12 +282,12 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Open questions
 
-* The resist, thickness, exposure tool and hardening step for `NSDM`
+* **Resist and exposure tool.** The resist, thickness, exposure tool and hardening step for `NSDM`
   are inferred from the design rules and general practice.
-* How `cnsdm` is generated from `nsdm` — whether taps, SONOS cells,
+* **How `cnsdm` is generated.** How `cnsdm` is generated from `nsdm` — whether taps, SONOS cells,
   poly heads or other structures are added by Boolean operations —
   is not public beyond the existence of the add/drop purposes.[^pdk-06]
-* Whether the SONOS cell source/drain is formed by this implant or
+* **SONOS cell source/drain.** Whether the SONOS cell source/drain is formed by this implant or
   by a cell-specific one is inferred from the cell being an n-channel
   device; no public source states it.
 
