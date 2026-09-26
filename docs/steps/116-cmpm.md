@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`NILD3 <step-115>` |
 | **Next step** | {ref}`NCAPOX3 <step-117>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** polishes the {ref}`NILD3 <step-115>` oxide flat, stopped
+  by removal amount at a controlled height above the metal-1 lines.
+* **Why:** without it the topography accumulates; by metal 2 the steps
+  would exceed the depth of focus of a 248 nm exposure.
+* **Public numbers:** via-1 height 0.27 µm;[^pdk-04] minimum oxide
+  pattern density 0.7 (m1.pd.1) in 700 µm windows.[^pdk-periph]
+* **Likely SkyWater tool:** Applied Materials Mirra CMP — **strong**
+  (the tool and its oxide polish); assignment to this step is an
+  **inference**.[^skw-01]
+* **Not public:** the slurry, pad, removal amount, target thickness
+  and endpoint method (→ Open questions).
+:::
+
 ## What this step is
 
 `CMPM` polishes the inter-level dielectric ({term}`ILD`) flat. The
@@ -20,6 +36,7 @@ softened, at its surface. The wafer is pressed against a pad flooded
 with alkaline silica slurry (industry-standard for ILD; SKY130's is
 not public) until that topography is gone and a planar oxide surface
 remains at a controlled height above the tops of the metal-1 lines.
+
 No material change marks the end: it is an
 *oxide-on-oxide* polish stopped by removal amount, not by a stop
 layer. The cap of {ref}`NCAPOX3 <step-117>` then restores a fixed
@@ -41,34 +58,45 @@ the first above a wiring level; the oxide polishes below it are
 recurs as {ref}`CMPM2 <step-127>`,
 {ref}`CMPM3 <step-142>` and {ref}`CMPM4 <step-157>` above each metal
 level. SkyWater lists "AMAT Mirra CMP" with "oxide" first among its
-applications.[^skw-01] The PDK's design rules are written around
-this polish: metal 1 carries a "Min MM1_oxide_Pattern_density" of
-0.7 (m1.pd.1) checked in square windows, and a fill algorithm that
-flags any 700 µm × 700 µm window covered by `cmm1 waffleDrop` whose
-metal density falls below stated levels;[^pdk-periph] the assumptions
-table gives an "Oxide Bias for MM1" of 0.6, a "Min pattern density
-for oxide" of 0.75, a "Min MM* PD range" of 0.3 and 700 µm and
-2 000 µm pattern-density extraction boxes.[^pdk-03]
+applications.[^skw-01]
+
+The PDK's design rules are written around
+this polish:
+
+* metal 1 carries a "Min MM1_oxide_Pattern_density" of
+  0.7 (m1.pd.1) checked in square windows, and a fill algorithm that
+  flags any 700 µm × 700 µm window covered by `cmm1 waffleDrop` whose
+  metal density falls below stated levels;[^pdk-periph]
+* the assumptions
+  table gives an "Oxide Bias for MM1" of 0.6, a "Min pattern density
+  for oxide" of 0.75, a "Min MM* PD range" of 0.3 and 700 µm and
+  2 000 µm pattern-density extraction boxes.[^pdk-03]
 
 ## Step category
 
 `CMPM` is a {ref}`Chemical-mechanical planarisation <category-cmp>`
-step of the *inter-level dielectric* type — the category page's
+step of the *inter-level dielectric* type. It is the category page's
 third row: {term}`PECVD`/HDP oxide, no stop layer, silica slurry at pH
 10–11, with thickness non-uniformity, scratches and pattern-density
-steps as the failure modes. It is the class of polish IBM invented
-{term}`CMP` for — coplanar metal/insulator films[^pat-cmp-ibm-1990] — and
-the one whose pattern dependence Stine, Ouma, Boning and their
-co-workers turned into the density-based fill rules that every
-modern design-rule deck, this PDK's included, now
-carries.[^stine-1998][^ouma-2002][^stine-1998-ted] It differs from
-the tungsten polish of {ref}`WCMP2 <step-111>` in that nothing tells
-the tool to stop, and from the {term}`STI` polish of
-{ref}`CMPNIT <step-012>` in that there is no nitride beneath. Because
-only one material is removed there is no {term}`dishing` or
-{term}`erosion` in the two-material sense of the tungsten polish; the
-analogue here is the pattern-density-dependent thinning that leaves a
-step in the oxide surface between dense and sparse metal.
+steps as the failure modes.
+
+**Specific to this step:**
+
+* It is the class of polish IBM invented
+  {term}`CMP` for — coplanar metal/insulator films[^pat-cmp-ibm-1990] — and
+  the one whose pattern dependence Stine, Ouma, Boning and their
+  co-workers turned into the density-based fill rules that every
+  modern design-rule deck, this PDK's included, now
+  carries.[^stine-1998][^ouma-2002][^stine-1998-ted]
+* It differs from
+  the tungsten polish of {ref}`WCMP2 <step-111>` in that nothing tells
+  the tool to stop, and from the {term}`STI` polish of
+  {ref}`CMPNIT <step-012>` in that there is no nitride beneath.
+* Because
+  only one material is removed there is no {term}`dishing` or
+  {term}`erosion` in the two-material sense of the tungsten polish; the
+  analogue here is the pattern-density-dependent thinning that leaves a
+  step in the oxide surface between dense and sparse metal.
 
 ## Why this step exists
 
@@ -83,7 +111,9 @@ fixes:
   their depth of focus across the field — a few hundred nanometres
   for a 248 nm scanner[^wiki-litho] printing the PDK's 0.14 µm
   metal and 0.15 µm via {term}`CDs <CD>`[^pdk-03] ({ref}`category-lithography`
-  sets out the trade-off). Sivaram et al. modelled the
+  sets out the trade-off).
+
+  Sivaram et al. modelled the
   removal rate and planarity of interlevel-dielectric CMP,[^sivaram-1992]
   and Boning et al. introduced the statistical metrology of ILD
   thickness variation that quantifies what the polish
@@ -98,9 +128,11 @@ fixes:
   density: oxide over an isolated line is removed faster than oxide
   over a dense array, so the surface after polishing follows the
   metal density on a scale set by the pad's {term}`planarisation length`
-  (Ouma et al.[^ouma-2002]). Stine et al. showed how metal-fill
+  (Ouma et al.[^ouma-2002]).
+
+  Stine et al. showed how metal-fill
   patterning practices reduce the effect and what they cost in
-  capacitance;[^stine-1998-ted] the PDK's `cmm1` waffle-drop fill,
+  capacitance.[^stine-1998-ted] The PDK's `cmm1` waffle-drop fill,
   its 0.7 minimum oxide density and its 700 µm windows[^pdk-periph]
   are that practice in SKY130's rules, and the 2 000 µm box of the
   assumptions table[^pdk-03] is, on our reading, the planarisation
@@ -116,8 +148,8 @@ shorted in others.
 
 ## How it is typically performed
 
-An industry-generic ILD polish for a 200 mm, 130 nm-era fab (SKY130's
-recipe is not public):
+*An industry-generic ILD polish for a 200 mm, 130 nm-era fab (SKY130's
+recipe is not public):*
 
 1. **Tool.** A multi-platen rotary polisher[^pat-cmp-mirra] with a
    stacked pad (hard top layer for planarisation over a soft
@@ -125,7 +157,7 @@ recipe is not public):
    optical thickness {term}`endpoint` through a pad window is available on
    this class of tool.[^pat-cmp-window][^pat-cmp-endpoint-ibm]
 2. **Slurry.** Fumed or colloidal silica in KOH or NH₄OH at pH
-   10–11 (industry-typical values[^steigerwald-1997][^zantye-2004]);
+   10–11 (industry-typical values[^steigerwald-1997][^zantye-2004]).
    Cook's mechanism — hydration of the glass surface and removal of
    the softened layer by the abrasive — is what makes oxide
    polishing chemical as well as mechanical,[^cook-1990] and
@@ -133,16 +165,18 @@ recipe is not public):
    chemistry.[^rev-02]
 3. **Recipe.** Removal follows Preston's law, rate proportional to
    pressure and velocity,[^preston-1927][^zantye-2004] modified by the pad's
-   fluid-film and contact mechanics.[^runnels-1994] Down-force of a
+   fluid-film and contact mechanics.[^runnels-1994]
+
+   Down-force of a
    few psi and platen speeds of tens of rpm are typical.[^txt-05]
-   The first platen removes the bulk and planarises; a second, at
-   lower pressure, trims to the target thickness; a buff platen
+   The first platen removes the bulk and planarises. A second, at
+   lower pressure, trims to the target thickness. A buff platen
    removes slurry residue. The target is the remaining oxide over
    the metal-1 top plus an allowance for the cap of
    {ref}`NCAPOX3 <step-117>`, so that the sum reaches the 0.27 µm of
    the PDK.[^pdk-04]
 4. **Endpoint.** By removal time calibrated on monitors, or by
-   in-situ optical thickness measurement;[^pat-cmp-window] the polish
+   in-situ optical thickness measurement.[^pat-cmp-window] The polish
    must stop *above* the metal — breaking through to the cap
    would scratch and thin the lines — so a generous margin is
    left and the {term}`cap oxide` makes up the thickness.
@@ -152,12 +186,17 @@ recipe is not public):
    spin-rinse-dry; Devriendt et al. relate oxide-CMP defects to the
    cleaning strategy,[^devriendt-1998] and Sun, Han and Keswani review
    brush scrubbing.[^sun-2017]
-6. **Metrology.** Remaining oxide thickness over metal-1 test pads
-   by reflectometry or ellipsometry at many sites; die-level
-   thickness maps on density test structures (the method of
-   Stine et al.[^stine-1998]); scratch and particle inspection on the
-   KLA AIT class (our reading of "AIT" in SkyWater's job posting);[^job-06] via-chain
-   resistance later at {term}`e-test`.
+6. **Metrology.**
+
+   - remaining oxide thickness over metal-1 test pads
+     by reflectometry or ellipsometry at many sites;
+   - die-level
+     thickness maps on density test structures (the method of
+     Stine et al.[^stine-1998]);
+   - scratch and particle inspection on the
+     KLA AIT class (our reading of "AIT" in SkyWater's job posting);[^job-06]
+   - via-chain
+     resistance later at {term}`e-test`.
 
 ## Machines typically used
 
@@ -170,18 +209,21 @@ recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
-  with "oxide" among its applications.[^skw-01] Strength: **strong**
-  for the tool and its oxide polish (SkyWater statement); assignment to
-  this step is an **inference** from the film, since the list names no
-  steps.
+* **Applied Materials Mirra CMP**
+  - *SkyWater says:* lists "AMAT Mirra CMP"
+    with "oxide" among its applications.[^skw-01]
+  - *Tool exists:* **strong**
+    for the tool and its oxide polish (SkyWater statement).
+  - *Runs this step:* assignment to
+    this step is an **inference** from the film, since the list names no
+    steps.
 * **Post-CMP clean — SEZ 223 / Da Vinci** single-wafer tools, and the
   Mirra entry also lists "Track ammonia clean" and "IPA clean";[^skw-01]
   a "SEZ etcher tool" on the maintenance page.[^skw-07] A brush
   scrubber is not named (open question).
 * **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -197,16 +239,17 @@ recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`NILD3 <step-115>` (the film). Next:
+* Previous: {ref}`NILD3 <step-115>` (the film).
+* Next:
   {ref}`NCAPOX3 <step-117>` (the cap), then {ref}`VIM <step-118>`.
-* The topography it removes: {ref}`MM1E <step-114>`; the fill rules
-  it imposes: {ref}`MM1 <step-113>`.
-* The via etch that depends on its thickness control:
+* Depends on: the topography it removes, {ref}`MM1E <step-114>`; the fill rules
+  it imposes, {ref}`MM1 <step-113>`.
+* Feeds: the via etch that depends on its thickness control,
   {ref}`VIME <step-119>`.
-* The same polish at higher levels: {ref}`CMPM2 <step-127>`,
+* Same category: the same polish at higher levels, {ref}`CMPM2 <step-127>`,
   {ref}`CMPM3 <step-142>`, {ref}`CMPM4 <step-157>`; the earlier
-  oxide polishes: {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`; the
-  tungsten polish before it: {ref}`WCMP2 <step-111>`.
+  oxide polishes, {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`; the
+  tungsten polish before it, {ref}`WCMP2 <step-111>`.
 * Category page: {ref}`Chemical-mechanical planarisation <category-cmp>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -284,15 +327,15 @@ recipe is not public):
 
 ## Open questions
 
-* The slurry, pad, removal amount, target oxide thickness over
+* **Slurry, removal and endpoint.** The slurry, pad, removal amount, target oxide thickness over
   metal 1 and the endpoint method of `CMPM` are not public.
-* How the 0.27 µm via-1 height of the PDK[^pdk-04] is split between
+* **How the via-1 height is split.** How the 0.27 µm via-1 height of the PDK[^pdk-04] is split between
   the polished NILD3 and the {ref}`NCAPOX3 <step-117>` cap is not
   public.
-* Whether the 2 000 µm extraction box of the assumptions
+* **2 000 µm extraction box.** Whether the 2 000 µm extraction box of the assumptions
   table[^pdk-03] corresponds to the polish's planarisation length is
   an inference.
-* The post-CMP cleaning tool is not identified beyond the
+* **Post-CMP cleaning tool.** The post-CMP cleaning tool is not identified beyond the
   SEZ/Da Vinci single-wafer tools.[^skw-01]
 
 <!-- footnotes -->

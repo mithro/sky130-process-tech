@@ -385,3 +385,33 @@ per page.
   "must not crack;" (no marker in the base either). None lost a marker or hedge.
 * **Left over the caps:** lead 169 words in three paragraphs (base 168). Item leads: Liner (35 words,
   two parentheticals), HDP gap fill (40). Nothing over the §1 caps.
+
+### 116 CMPM — done
+
+* **R-H3:** none (post-figure passage 118 words).
+* **Lead:** base 136 words → two paragraphs at "No material change marks the end".
+* **R-LIST:** "The PDK's design rules are written around this polish:" → two bullets, the periphery-rule clause
+  with `[^pdk-periph]` and the assumptions-table clause with `[^pdk-03]` (each marker already ended its
+  own clause). How/Metrology: the four semicolon-separated methods as sub-bullets ("Remaining" →
+  "remaining" to match the list).
+* **R-CATEGORY:** classification cut at its em dash (10 words), "It is the category page's third
+  row: …" (subject and verb added) in the same paragraph; the remaining three sentences, which say
+  how this polish differs, as bullets under **Specific to this step:** ("Because only one material is
+  removed …" is the allowed "Because X, Y" form).
+* **R-PARA/R-SENTENCE:** Why/Planarity lead + continuation at "Sivaram et al."; Pattern-density: the
+  first sentence stays whole as the lead (its "(Ouma et al.[^ouma-2002])" attribution covers the
+  whole colon sentence, so a split at the colon would leave its head unattributed), then a
+  continuation split at "capacitance;" — "on our reading" stays in the second half with the 2 000 µm
+  reading. How: Slurry split at its semicolon; Recipe lead + continuation, the three platens split at
+  their semicolons ("a second" → "A second", "a buff platen" → "A buff platen"); Endpoint split at its
+  semicolon.
+* **R-TOOLS:** Mirra item in three lines; defect inspection *Tool exists:* medium (the 100/106/111
+  form). The post-CMP-clean bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on (the
+  topography and the fill rules), Feeds (VIME), Same category; italic scope lead-in.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box; LOST
+  words "strength"×2.
+* **Coverage flags read:** the design-rule bullets and metrology sub-bullets (their own markers); the
+  Endpoint and Stine splits (markers with their clauses). None lost a marker or hedge.
+* **Left over the caps:** item leads — Planarity (40 words, one sentence), Pattern-density (42, kept
+  whole for its attribution). Nothing over the §1 caps.
