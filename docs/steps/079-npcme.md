@@ -246,8 +246,9 @@ fab (SKY130's recipe is not public):*
 * Next: {ref}`SPOX <step-080>` (oxide over the opened poly).
 * Depends on: the stack being cut, {ref}`POC <step-059>`,
   {ref}`GATENIT <step-058>`; the spacer beside it,
-  {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`; the resistors whose
-  heads are opened, {ref}`PRI <step-053>`, {ref}`UPRI <step-056>`.
+  {ref}`SPNIT <step-076>`, {ref}`SPE <step-077>`.
+* The resistors whose heads are opened: {ref}`PRI <step-053>`,
+  {ref}`UPRI <step-056>`.
 * Feeds: the implants that dope the opened poly, {ref}`PSDI <step-082>`,
   {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; the contacts that
   land in the opening, {ref}`LICM1 <step-093>`,

@@ -392,8 +392,9 @@ None was fixed here; each is recorded as found.
   "being the gate etcher, has the poly-stop chemistries in hand", no seam), *Runs this step:*
   **medium**. Lam 4400: *Runs this step:* **weak** (062's form). Ashers and wet benches: *Tool
   exists:*.
-* **R-RELATED.** Previous and Next split; "The stack being cut … the spacer beside it" and "the
-  resistors whose heads are opened" → one `Depends on:` bullet; "The implants that dope the opened
+* **R-RELATED.** Previous and Next split; "The stack being cut … the spacer beside it" → `Depends
+  on:`; "the resistors whose heads are opened" (PRI, UPRI) as its own unlabelled bullet, as on 078 (the
+  cut does not depend on the resistor implants; review L1); "The implants that dope the opened
   poly" and "The contacts that land in the opening" → one `Feeds:` bullet; "Other nitride etches" →
   `Same category:` (STINITE, ONOME, SPE are Etch steps). Every gloss and link kept.
 * **R-OPENQ.** Labels "Chemistry and adjacent spacer", "POC oxide", "The opened poly", "Which
