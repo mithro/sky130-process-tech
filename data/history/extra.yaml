@@ -255,7 +255,7 @@ records:
     form: trade-press article
   url: https://www.eetimes.com/cypress-introduces-its-first-0-35-m-sram/
   capture: browser
-  archive_url: null
+  archive_url: https://web.archive.org/web/20260926065609/https://www.eetimes.com/cypress-introduces-its-first-0-35-m-sram/
   retrieved: 2026-09-25
   cache: web/chrome-eetimes-1997-11-19-cypress-first-035um-sram.txt
   quotes:
@@ -286,7 +286,7 @@ records:
     form: trade-press article
   url: https://www.eetimes.com/cypress-mosel-vitelic-to-develop-0-13-micron-process-technology/
   capture: browser
-  archive_url: null
+  archive_url: https://web.archive.org/web/20260926065701/https://www.eetimes.com/cypress-mosel-vitelic-to-develop-0-13-micron-process-technology/
   retrieved: 2026-09-25
   cache: web/chrome-eetimes-2000-07-07-cypress-mosel-vitelic-013um.txt
   quotes:
