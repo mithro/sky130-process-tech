@@ -1,0 +1,7 @@
+:::{figure} /_static/figures/pass-165-nsm.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step two thick metal shapes stand on a flat oxide, and a thin pale film covers their tops, their sides and the floor between them. After it a thick violet resist layer with a flat top covers the whole slice, filling the space between the shapes; it has no opening here.
+:width: 560px
+:name: fig-pass-165-nsm
+
+Before, the metal-5 shapes under the thin passivation oxide; after, the resist of the nitride seal mask, which in this slice covers everything. On the page's reading the `nsm` opening is a ring at least 3 µm wide along the edge of every die, kept at least 1.000 µm clear of every metal (nsm.1, nsm.3):[^pdk-periph] it cannot fall in a slice of wiring such as this one, so no opening is drawn, and the ring itself is not shown. The resist is drawn covering the metal-5 steps, as the page describes it; its thickness is not public, and it is not drawn to scale. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films other than the cap, the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide are drawn but not labelled. Not to scale.
+:::
