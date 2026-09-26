@@ -10,17 +10,37 @@
 | **Previous step** | {ref}`CMPP <step-090>` |
 | **Next step** | {ref}`RTAD2 <step-092>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits an undoped silicon-dioxide "cap" over the polished
+  phosphosilicate glass of {ref}`CMPP <step-090>`.
+* **Why:** to seal the doped glass, to re-bury whatever the polish
+  exposed, and to give the contacts and the local interconnect a
+  clean, undoped oxide.
+* **Public numbers:** none published for the cap itself; on our
+  reading it is part of the 0.5 µm "Pre-LI ILD thickness".[^pdk-03]
+* **Likely SkyWater tool:** "C2 and Producer" PECVD TEOS — **strong**
+  (existence of a PECVD TEOS process on those tools); **inference**
+  (assignment to `NCAPOX`).[^skw-01]
+* **Not public:** the cap's thickness, precursor and deposition
+  temperature, and whether it lies on the gate caps or on residual
+  PSG (→ Open questions).
+:::
+
 ## What this step is
 
 `NCAPOX` deposits an undoped silicon-dioxide "cap" over the polished
 phosphosilicate glass of {ref}`CMPP <step-090>`. It is a blanket,
 unpatterned {term}`CVD` oxide on a surface that is now flat, so its only
-geometric task is to be uniform; its purpose is chemical and
+geometric task is to be uniform. Its purpose is chemical and
 structural — to seal the doped glass, to re-bury whatever the polish
 exposed, and to provide the clean, undoped oxide that the
 local-interconnect contacts ({ref}`LICM1E <step-094>`) will be
 etched through first and that the {term}`local interconnect`
-({ref}`LITIN <step-101>`) will lie on. This reference describes a
+({ref}`LITIN <step-101>`) will lie on.
+
+This reference describes a
 similar cap after each inter-level oxide and its polish at the metal
 levels — {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`,
 {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>` — above the
@@ -34,6 +54,8 @@ dielectrics the PDK names `NILD3`…`NILD6`.[^pdk-04]
 Before, the polished glass; after, the undoped cap oxide over it, a flat blanket of even thickness. The polish was drawn at the height of a nitride-capped poly line on the field oxide, as on the CMPP figure, so glass stays over this slice's gate, which stands lower, on the active area. The PDK does not name the cap separately; the page reads it as part of the stack diagram's "PSG" interval[^pdk-04] and of the 0.5 µm "Pre-LI ILD thickness",[^pdk-03] which puts it of the order of 0.2–0.3 µm (inferred; not public). That it is an undoped plasma-deposited oxide is also the page's inference. It is not drawn to scale. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK does not name the cap separately. On our reading of the
 stack diagram, the cap is part of the interval it labels "PSG" —
 0.4299 µm over field poly, up to the `li` bottom at 0.9361 µm[^pdk-04]
@@ -42,7 +64,9 @@ table.[^pdk-03] If the polish stops on the 0.2 µm gate caps (the
 reading of the {ref}`CMPP <step-090>` page), the {term}`cap oxide` is what
 separates the cap tops from the local interconnect, and its
 thickness is of the order of 0.2–0.3 µm (inferred from those two
-numbers; not public). The film's identity — an undoped {term}`PECVD` oxide
+numbers; not public).
+
+The film's identity — an undoped {term}`PECVD` oxide
 from {term}`TEOS` or silane — is likewise an inference, from the industry
 practice set out below and from SkyWater's "PECVD TEOS, C2 and
 Producer" and "PECVD silane oxide … C1" entries.[^skw-01]
@@ -51,10 +75,12 @@ Producer" and "PECVD silane oxide … C1" entries.[^skw-01]
 
 `NCAPOX` is a {ref}`Thin-film deposition <category-deposition>` step
 — a plasma CVD oxide, in the family of {ref}`POC <step-059>` and
-{ref}`SPOX <step-080>` before it and the `NCAPOX*` caps after. What
+{ref}`SPOX <step-080>` before it and the `NCAPOX*` caps after.
+
+What
 distinguishes it from the {ref}`PSG <step-089>` deposition two steps
-earlier is that it has no gap to fill and must *not* be doped;
-what distinguishes it from the earlier thin caps is that it is
+earlier is that it has no gap to fill and must *not* be doped.
+What distinguishes it from the earlier thin caps is that it is
 deposited on a surface with buried junctions and a 0.1 µm[^pdk-03]
 source/drain depth beneath it, so it must be a low-temperature film
 (PECVD, 350–450 °C, typical[^wiki-pecvd][^txt-02]) rather than a
@@ -74,16 +100,20 @@ for reasons the literature spells out:
   during the {term}`queue times <queue time>` of the contact module.
 * **Keeping phosphorus away from the contacts.** The contact etch
   ({ref}`LICM1E <step-094>`) opens holes whose upper sidewalls are
-  cap oxide and whose lower sidewalls are {term}`PSG`; phosphorus at the
+  cap oxide and whose lower sidewalls are {term}`PSG`.
+
+  Phosphorus at the
   surface of the etched hole could out-diffuse into the titanium
   {term}`liner` or the silicon during the {term}`silicide` anneal
-  ({ref}`CSIL <step-098>`) — the phosphorus out-diffusion from HDP
+  ({ref}`CSIL <step-098>`). The phosphorus out-diffusion from HDP
   PSG is a known integration concern (Hsiao, Liu and Wang study its
   thermal-budget dependence[^hsiao-2005]). A cap moves the doped
   glass away from the surface the liner is sputtered onto.
 * **Restoring a dielectric over the polish stop.** If
   {ref}`CMPP <step-090>` lands on the gate caps, the tops of every
-  poly line are at the polished surface. The local interconnect
+  poly line are at the polished surface.
+
+  The local interconnect
   that will be patterned on this surface must be insulated from
   every gate it crosses; the cap oxide is that insulator, and its
   thickness, together with the nitride cap, sets the gate-to-LI
@@ -99,12 +129,14 @@ caps.
 
 ## How it is typically performed
 
-Industry-generic routes for an undoped cap oxide in a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*Industry-generic routes for an undoped cap oxide in a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
 * **PECVD TEOS oxide.** TEOS vapour with O₂ in a capacitively
   coupled 13.56 MHz plasma at 350–400 °C and a few Torr, the
-  workhorse inter-level oxide of the era; Nguyen et al. set out the
+  workhorse inter-level oxide of the era.
+
+  Nguyen et al. set out the
   plasma- and thermal-assisted reaction mechanisms,[^nguyen-1990]
   Raupp, Cale and Hey the role of oxygen excitation,[^raupp-1992] and
   Becker et al. the film quality obtainable from TEOS
@@ -122,11 +154,14 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
   flat surface (inference).
 * **Thickness.** Of the order of 0.2–0.3 µm on the reading above;
   not public.
-* **Sequence.** Post-CMP clean (at {ref}`CMPP <step-090>`) with a
-  dilute-HF touch to remove slurry residue and a {term}`degas`; deposition,
-  typically in a single-wafer chamber with an in-situ NF₃ clean
-  between wafers;[^txt-09] optional short plasma treatment to
-  densify the surface.
+* **Sequence.**
+  1. Post-CMP clean (at {ref}`CMPP <step-090>`) with a
+     dilute-HF touch to remove slurry residue and a {term}`degas`.
+  2. Deposition,
+     typically in a single-wafer chamber with an in-situ NF₃ clean
+     between wafers.[^txt-09]
+  3. Optional short plasma treatment to
+     densify the surface.
 * **Metrology.** Thickness and refractive index by ellipsometry on
   product and monitors; wet-etch rate ratio as a density check;
   stress by wafer bow; particles.
@@ -135,10 +170,12 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 * **{ref}`PECVD system <machine-pecvd>`**, 200 mm: Applied Materials Producer or Centura
   DxZ (TEOS and silane oxides), Novellus Concept One/Two and
-  Sequel;[^novellus-history] the Trikon Delta 201, a "single-chamber
+  Sequel.[^novellus-history]
+
+  The Trikon Delta 201 is a "single-chamber
   production system for producing films, including silicon dioxide or
   silicon nitride" from Electrotech (the 10-K does not say whether it is
-  plasma-enhanced);[^trikon-10k-1996] Trikon "later merged
+  plasma-enhanced).[^trikon-10k-1996] Trikon "later merged
   with Aviza Technology Inc in 2005".[^semitoday-spts-2009]
 * **{ref}`Ellipsometer <machine-film-thickness-metrology>`**, **stress gauge**, **{ref}`unpatterned defect inspection <machine-defect-inspection>`**.
 
@@ -147,13 +184,17 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 * **"C2 and Producer" PECVD TEOS.** SkyWater lists "PECVD TEOS, C2
   and Producer" — a Novellus Concept Two-class system (we infer from
   the abbreviation; SkyWater gives only "C2") and an Applied
-  Materials Producer.[^skw-01] Strength: **strong** for the
-  existence of a PECVD TEOS process on those tools; assignment to
-  `NCAPOX` is an **inference** from the film's role (an undoped oxide
-  over doped glass) and industry practice.
-* **"C1" PECVD silane oxide.**[^skw-01] Strength: strong for
-  existence; medium for this step — a silane oxide is an equally
-  plausible cap.
+  Materials Producer.[^skw-01]
+  - *Tool exists:* **strong** for the
+    existence of a PECVD TEOS process on those tools.
+  - *Runs this step:* assignment to
+    `NCAPOX` is an **inference** from the film's role (an undoped oxide
+    over doped glass) and industry practice.
+* **"C1" PECVD silane oxide**[^skw-01]
+  - *Tool exists:* strong for
+    existence.
+  - *Runs this step:* medium for this step — a silane oxide is an equally
+    plausible cap.
 
 ## Resources required
 
@@ -172,14 +213,16 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CMPP <step-090>` (the polish it covers). Next:
+* Previous: {ref}`CMPP <step-090>` (the polish it covers).
+* Next:
   {ref}`RTAD2 <step-092>` (the anneal that, on our reading, densifies
   cap and glass together).
-* The glass it seals: {ref}`PSG <step-089>`. What is etched through
-  it: {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`. What lies
-  on it: {ref}`LITIN <step-101>`.
-* Earlier CVD oxide caps: {ref}`POC <step-059>`,
-  {ref}`SPOX <step-080>`. Later caps of the same name pattern:
+* Depends on: the glass it seals, {ref}`PSG <step-089>`.
+* Feeds: what is etched through
+  it, {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`; what lies
+  on it, {ref}`LITIN <step-101>`.
+* Same category: earlier CVD oxide caps, {ref}`POC <step-059>`,
+  {ref}`SPOX <step-080>`; later caps of the same name pattern,
   {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`,
   {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
@@ -235,10 +278,10 @@ Industry-generic routes for an undoped cap oxide in a 200 mm,
 
 ## Open questions
 
-* The cap's thickness, precursor (TEOS or silane) and deposition
+* **Thickness, precursor and temperature.** The cap's thickness, precursor (TEOS or silane) and deposition
   temperature are not public; the PECVD TEOS reading is an
   inference from SkyWater's capability list and industry practice.
-* Whether the cap is deposited directly on the polished gate caps
+* **What the cap is deposited on.** Whether the cap is deposited directly on the polished gate caps
   (the {ref}`CMPP <step-090>` cap-stop reading) or on residual PSG
   is not public.
 

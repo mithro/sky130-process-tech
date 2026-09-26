@@ -141,3 +141,49 @@ Model pages: 078, 083. One commit per page.
   split (each half keeps its own marker); the IBM/Ouma and Ouma/PDK/Kahng splits (each piece keeps its
   own markers); "Depends on:" (tokenizer split at the colon; "on our reading" is in the same bullet).
 * **Caps.** para > 100: 2 → 0; item > 60: 2 → 0; sentence > 45: 7 → 0.
+
+### 091 NCAPOX — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the 138-word passage (what
+  the PDK does and does not name, the stack-diagram and assumptions-table reading, SkyWater's two
+  entries; it ends in the hedged thickness estimate and the inferred film identity). The lead is the
+  110-word text before the figure, now two paragraphs (80 + 30) split before "This reference
+  describes …".
+* **R-PARA / R-SENTENCE.** Lead: the 67-word sentence split at its semicolon ("… to be uniform. Its
+  purpose is …"). Evidence passage: two paragraphs, split before "The film's identity …". Why
+  "Keeping phosphorus": lead at the semicolon; the dash material "the phosphorus out-diffusion from
+  HDP PSG is a known integration concern (Hsiao …[^hsiao-2005])" becomes its own sentence with its
+  marker. Why "Restoring": lead is the "If CMPP lands …" sentence; continuation from "The local
+  interconnect …". How "PECVD TEOS": lead at its semicolon; studies, film and SkyWater sentence as the
+  continuation. Machines typically used, PECVD: split at the semicolon after the Novellus marker; "the
+  Trikon Delta 201, a …" → "The Trikon Delta 201 is a …" (a subject and verb for the new sentence,
+  R-SENTENCE step 7).
+* **R-LIST.** How "Sequence": three steps as a numbered sub-list; `[^txt-09]` stays on the deposition
+  step, the clause it closed in the base (it was mid-sentence, not on the announcing words).
+* **R-CATEGORY.** Classification sentence alone (27 words). The two "What distinguishes it …" clauses,
+  joined by a semicolon, become two sentences in one paragraph; each is its own label (step 3).
+* **R-TOOLS.** "C2 and Producer": pilot form — the head keeps SkyWater's quotation with this
+  reference's gloss (the two tools it names), because the grade's reason refers to them ("on those
+  tools"); grades as *Tool exists:* / *Runs this step:*. "C1": two grades as sub-bullets. Two tools, no
+  recap table.
+* **R-OPENQ.** "Thickness, precursor and temperature", "What the cap is deposited on".
+* **R-RELATED.** Previous and Next as two bullets; the bullet naming three relationships split:
+  "the glass it seals" → `Depends on:`, "what is etched through it" and "what lies on it" → `Feeds:`;
+  the earlier and later CVD oxide caps (all deposition steps) → `Same category:`. Every gloss and link
+  kept.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does and Why from the lead; Public numbers "none published for the cap itself" plus
+  the page's own reading of the 0.5 µm "Pre-LI ILD thickness" `[^pdk-03]`, with "on our reading"; tool
+  line with both grades, each named; Not public from Open questions 1–2.
+* **Skipped.** R-REPEAT (none); R-TABLE, R-DERIVATION (the 0.2–0.3 µm estimate shows no operation).
+* **Preservation.** ADDED markers `pdk-03`, `skw-01`, number 0.5, quotes "C2 and Producer", "Pre-LI
+  ILD thickness", "cap", ref `step-090`, identifier `C2`, hedges "inference", "likely", "not public",
+  "our reading" — the glance box; numbers 1–3 — the Sequence ordinals. REGROUPED: the PECVD machines
+  bullet (200 | 201, 10, 2005) at its semicolon. WORDS LOST: "strength"×2 (R-TOOLS labels).
+* **Marker coverage.** 5 flags, all read: three glance condensations; the phosphorus split (the
+  `[^hsiao-2005]` marker belongs to the out-diffusion-concern clause, which keeps it; "could" is in the
+  first sentence, which keeps it).
+* **Caps.** para > 100: 2 → 0; item > 60: 4 → 0; sentence > 45: 6 → 1 — "If the polish stops on the
+  0.2 µm gate caps …" (46). Its only seam is ", and its thickness …", and the second half would lose
+  the "If the polish stops …" condition that governs it unless the condition were repeated, which adds
+  a number; kept whole.
