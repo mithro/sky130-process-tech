@@ -302,3 +302,69 @@ Model pages: 078, 083. One commit per page.
   bottom CD; resist thickness / PDK photoresist; the poly.1a marker now in the first bullet); the
   physical-criteria sentence (tokenizer split at "min.").
 * **Caps.** para > 100: 3 → 0; item > 60: 5 → 0; sentence > 45: 11 → 0.
+
+### 094 LICM1E — done
+
+* **Lead.** 214 words in the base (one paragraph), 217 now in three paragraphs (75, 84, 58; §4.1 ¹ —
+  the base lead is over 120 and two paragraphs would leave one over 100). Listed. The 66-word sentence
+  split at its colon: "The landing surface is the SPOX oxide over a source/drain or tap, which the etch
+  must also clear, or the bare poly head …" (a subject and verb for the new sentence; the S7 wording
+  "which the etch must also clear" unchanged). The 54-word reconciliation sentence split at ", and
+  they": "The two numbers are not stated to belong to the same depth. They do not reconcile …: … about 5°
+  (our arithmetic)." — the conclusion stays in one sentence with the arithmetic and its hedge; "They"
+  is the previous sentence's subject. No R-DERIVATION: the 0.18 µm and 5° results show no operation.
+* **R-H3 not applied / R-LIST.** The 142-word "Three landing surfaces make this etch unusual" passage
+  after the figure fits none of the four H3 titles (it is an argument, not the public record, a
+  quantity estimate or two readings), so it gets no H3 (batch-4 ruling) and becomes the announced list
+  with plain bullets (no invented labels). Item 1 split at its semicolon ("The etch therefore needs
+  …"); item 3's opening "And" dropped and its dash-enclosed condition moved to the head of its own
+  sentence: "If the CMPP polish landed on the gate caps, the holes over poly are shallower …" (same
+  words; the condition still governs its clause).
+* **R-CATEGORY.** Classification sentence alone (27 words). The chemistry sentence split at its
+  semicolon, with `[^flamm-1981][^winters-1992]`, which closed the whole base sentence, on both halves
+  (declared repeats, masks-b H1). "What is specific to this instance …" is its own label (step 3); the
+  "same class recurs at CTME … and at every via etch" sentence only lists other steps and stays a
+  paragraph after it.
+* **R-PARA / R-SENTENCE.** Why: each of the four bullets gets a lead at its first seam (colon or
+  semicolon) and a continuation — the studies and the licon.3 sentence ("Because …, …" is not a
+  connective opener), the four film studies, the three damage studies with the dash-joined Hashimoto
+  clause kept in place. How "Main etch" split at its semicolon (the markers stay on the chemistry
+  clause they closed); "Endpoint" split after its first sentence (the S7 wording, the over-etch that
+  "clears the SPOX oxide", unchanged); "Post-etch treatment": the 69-word sentence split at its
+  semicolon and its 30-word parenthetical made its own sentence, "This is the step SkyWater's
+  "Mattson Aspen2 …" — without its CF₄, … (inference) — or "Gasonic PEP" ashers could also
+  perform.[^skw-01]" (R-SENTENCE step 7: "This is" added; the parentheses dropped because a
+  parenthesised sentence beginning "This is" would read as a fragment; the inner dash pair, its
+  "(inference)" and the marker are unchanged). Resources "O₂/N₂" split at its semicolon.
+* **R-LIST.** How "Metrology": the test-tile chains as three plain sub-bullets under "The published
+  SKY130 test tile lists such chains:[^raw-data-testtile-pads]" (the marker that closed the
+  enumerating sentence on the lead-in).
+* **R-TOOLS.** "No dielectric etcher is named …": pilot form — the head keeps this reference's
+  statement and SkyWater's three quoted entries; "All three carry fluorine-bearing gases that can etch
+  oxide." stays above the grade because the grade's reason refers to "any of them"; *Runs this step:*
+  **weak** …; "Which tool performs the etch is an open question (below)." as the continuation. Lam
+  Exelan has no grade and stays as it is. The asher/wet-clean bullet keeps its head, with *Tool
+  exists:* strong for existence.
+* **R-OPENQ.** "Chemistry, tool and endpoint", "Where the strip and clean happen", "Oxide at the
+  contact bottom", "Shallower holes over poly".
+* **R-RELATED.** Previous and Next as two bullets; "the films etched" and "the cut that removed
+  nitride from under the poly contacts" → one `Depends on:` bullet; "The nitride the etch must not
+  breach" keeps its own label (not one of the rule's relationships); "The next dielectric hole etch"
+  → `Same category:`. Every gloss and link kept.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does and Why from the lead and the Why intro (no numbers, so no markers); Public
+  numbers "Licon1 etch angle" 10°, "Standard Licon bottom CD" 0.08 µm, "Pre-LI ILD thickness" 0.5 µm
+  `[^pdk-03]`; tool line "none assignable" (the page's only grade is **weak** across three etchers);
+  Not public from Open questions 1.
+* **Skipped.** R-REPEAT (none); R-TABLE (nothing ≥ 3 × 2 outside the test-tile list, which is now a
+  list); R-DERIVATION (above).
+* **Preservation.** ADDED markers `flamm-1981`, `winters-1992` (repeats), `pdk-03`, `skw-01`,
+  numbers 0.08, 0.5, 10, quotes "Licon1 etch angle", "Pre-LI ILD thickness", "Standard Licon bottom
+  CD", identifier `Licon1`, hedges "likely", "not public" (glance). REGROUPED: the taper sentence (now
+  split), the test-tile sentence (lead-in and three items) — same digits, same order. WORDS LOST:
+  "strength"×2 (R-TOOLS labels).
+* **Marker coverage.** 8 flags, all read: glance condensations (3); "They do not reconcile" ("not
+  stated" is in the sentence before, which keeps it); item 3's split ("if" is in the second
+  sentence); the post-etch split (`[^skw-01]` and "(inference)" moved with the asher sentence they
+  belong to); the two test-tile items (marker on the lead-in).
+* **Caps.** para > 100: 3 → 0; item > 60: 9 → 0; sentence > 45: 13 → 0.

@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`LICM1 <step-093>` |
 | **Next step** | {ref}`SACETCH <step-095>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the contact holes through the cap oxide and the
+  phosphosilicate glass down to each hole's landing surface.
+* **Why:** the contact hole is where the front end meets the wiring;
+  its etch decides the contact resistance, the junction leakage and
+  the yield of every transistor.
+* **Public numbers:** "Licon1 etch angle" 10°; "Standard Licon bottom
+  CD" 0.08 µm; "Pre-LI ILD thickness" 0.5 µm.[^pdk-03]
+* **Likely SkyWater tool:** none assignable — no dielectric etcher is
+  named on SkyWater's public list.[^skw-01]
+* **Not public:** the etch chemistry, tool, endpoint and over-etch
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `LICM1E` is the contact etch. Through the resist openings of
@@ -17,16 +33,20 @@
 through the {term}`cap oxide` of {ref}`NCAPOX <step-091>` and the
 phosphosilicate glass of {ref}`PSG <step-089>` — together about
 0.5 µm, the PDK's "Pre-LI ILD thickness"[^pdk-03] — until each hole
-reaches its landing surface: the {ref}`SPOX <step-080>` oxide over
+reaches its landing surface. The landing surface is the {ref}`SPOX <step-080>` oxide over
 a source/drain or tap, which the etch must also clear, or the bare
-poly head inside a {term}`nitride cut` ({ref}`NPCME <step-079>`). The holes
+poly head inside a {term}`nitride cut` ({ref}`NPCME <step-079>`).
+
+The holes
 taper — the PDK's "Licon1 etch angle" is 10°[^pdk-03] — and the
 drawn 0.17 µm opening maps to a "Standard Licon bottom CD" of
 0.08 µm on the wafer.[^pdk-03] The two numbers are not stated to
-belong to the same depth, and they do not reconcile at the full
+belong to the same depth. They do not reconcile at the full
 0.5 µm of ILD: a 10° sidewall over 0.5 µm would close the hole by
 about 0.18 µm, while the published 0.17 → 0.08 µm narrowing over
-0.5 µm is about 5° (our arithmetic). How mask bias, {term}`resist trim`
+0.5 µm is about 5° (our arithmetic).
+
+How mask bias, {term}`resist trim`
 and taper divide the 0.09 µm is not public. The aspect ratio at the
 bottom is about 6:1 either way (0.5 µm over 0.08 µm). After it the
 resist is stripped and the wafer cleaned (the
@@ -41,32 +61,41 @@ on our reading), and the holes are lined, silicided and filled.
 Before, the contact resist; after, the three holes etched through the cap oxide and the glass, and at the two diffusion holes through the thin oxides on the silicon as well, which the etch must also clear. The resist is still on: the page places its strip at SACETCH or the start of ALLY1. The walls are drawn sloping at the PDK's 10° "Licon1 etch angle";[^pdk-03] the page notes that this angle, the 0.17 µm drawn opening[^pdk-periph] and the 0.08 µm "Standard Licon bottom CD"[^pdk-03] do not reconcile over the full 0.5 µm of dielectric, and the drawn widths are not to scale. The hole over the resistor's poly is shallower than those over the silicon, which follows from the cap-stop reading of the polish; whether it is so is not public. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The doped regions are not labelled either, and in the lower panel the resist is not labelled. Not to scale.
 :::
 
-Three landing surfaces make this etch unusual. A diffusion or tap
-contact lands on silicon between two nitride {term}`spacers <spacer>` and, where the
-0.055 µm licon.11 margin[^pdk-periph] is used up by {term}`overlay`, on the
-spacer and the nitride cap of the adjacent gate; the etch therefore
-needs {term}`selectivity` to nitride as well as to silicon. A poly
-contact lands on poly that the nitride cut has already exposed
-(licon.15, licon.18[^pdk-periph]), so there is no nitride to open at
-the bottom — that is the point of doing the cut first, as the
-{ref}`NPCM <step-078>` page argues. And every hole passes
-through two chemically different oxides, cap and {term}`PSG`, whose etch
-rates differ, and — if the {ref}`CMPP <step-090>` polish landed on
-the gate caps — the holes over poly are shallower than those over
-diffusion, so the etch must tolerate different depths on one wafer.
+Three landing surfaces make this etch unusual:
+
+* A diffusion or tap
+  contact lands on silicon between two nitride {term}`spacers <spacer>` and, where the
+  0.055 µm licon.11 margin[^pdk-periph] is used up by {term}`overlay`, on the
+  spacer and the nitride cap of the adjacent gate. The etch therefore
+  needs {term}`selectivity` to nitride as well as to silicon.
+* A poly
+  contact lands on poly that the nitride cut has already exposed
+  (licon.15, licon.18[^pdk-periph]), so there is no nitride to open at
+  the bottom — that is the point of doing the cut first, as the
+  {ref}`NPCM <step-078>` page argues.
+* Every hole passes
+  through two chemically different oxides, cap and {term}`PSG`, whose etch
+  rates differ. If the {ref}`CMPP <step-090>` polish landed on
+  the gate caps, the holes over poly are shallower than those over
+  diffusion, so the etch must tolerate different depths on one wafer.
 
 ## Step category
 
 `LICM1E` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorocarbon-chemistry* class — the deepest and narrowest oxide
-etch so far in the flow and the first *hole* etch. The category page
+etch so far in the flow and the first *hole* etch.
+
+The category page
 sets out the chemistry: fluorocarbons (CF₄, CHF₃, C₄F₈, C₂F₆) with
 argon and oxygen, in which fluorine etches oxide as SiF₄ only under
 ion bombardment while the carbon forms a polymer on silicon and
-nitride that gives the selectivity to the landing surfaces; the
+nitride that gives the selectivity to the landing surfaces.[^flamm-1981][^winters-1992] The
 fluorine-to-carbon ratio is the master variable.[^flamm-1981][^winters-1992]
+
 What is specific to this instance is the {term}`aspect ratio` and
-the two selectivities at once. The same class recurs at
+the two selectivities at once.
+
+The same class recurs at
 {ref}`CTME <step-108>` (the `mcon` etch, which lands on the
 titanium-nitride local interconnect through its nitride cap) and at
 every {term}`via` etch.
@@ -80,13 +109,17 @@ of every transistor. The specific requirements:
 * **Vertical, tapered profile.** The 10° taper[^pdk-03] is
   deliberate: it widens the mouth of the hole for the ionised-metal
   {term}`liner` ({ref}`TI/TIN1 <step-097>`) and the {term}`CVD` tungsten fill
-  ({ref}`WDEP <step-099>`), and a controlled taper is part of how a
+  ({ref}`WDEP <step-099>`).
+
+  A controlled taper is part of how a
   0.17 µm drawn contact becomes a 0.08 µm bottom; the rest of the
   bias is not public (see "What this step is" above). Oehrlein and Kurogi
   review the sidewall chemistry that sets the profile.[^oehrlein-1998]
 * **Aspect-ratio-dependent etching.** Narrow, deep holes etch more
   slowly than wide ones ({term}`ARDE`, "RIE lag") because ions and
-  neutrals reach the bottom less easily; Gottscho, Jurgensen and
+  neutrals reach the bottom less easily.
+
+  Gottscho, Jurgensen and
   Vitkavage set out the mechanisms,[^gottscho-1992] Joubert, Oehrlein
   and Surendra modelled {term}`RIE` lag for contact holes in a
   high-density fluorocarbon plasma,[^joubert-1994] and Doemling,
@@ -95,7 +128,8 @@ of every transistor. The specific requirements:
   are all the same size (licon.3[^pdk-periph]), the lag is the same
   for every hole — one reason the rule exists.
 * **Selectivity and etch stop.** Fluorocarbon films on the etched
-  surface are what make oxide etch faster than nitride and silicon:
+  surface are what make oxide etch faster than nitride and silicon.
+
   Oehrlein et al. and Rueger et al. established the steady-state
   film picture,[^oehrlein-1994-ii][^rueger-1997] Standaert et al.
   the mechanism of etching through a thick film,[^standaert-1998]
@@ -104,7 +138,9 @@ of every transistor. The specific requirements:
   stops before it reaches bottom ("etch stop"); too little and the
   spacer, the gate cap and the silicon are attacked.
 * **Damage and charging.** The {term}`over-etch` on the silicon is the most
-  damaging plasma exposure the junctions receive: Fonash reviews
+  damaging plasma exposure the junctions receive.
+
+  Fonash reviews
   the damage and contamination dry etching leaves,[^fonash-1990]
   Oehrlein the silicon damage specifically,[^oehrlein-1989] and
   Cacciato et al. describe charging damage during a contact etch
@@ -119,8 +155,8 @@ to any transistor.
 
 ## How it is typically performed
 
-An industry-generic contact etch for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic contact etch for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 1. **Chamber.** Single-wafer high-density or medium-density
    dielectric etcher — a dual-frequency capacitive reactor (Lam
@@ -132,14 +168,18 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    anti-reflective coating under the resist.
 3. **Main etch.** C₄F₈ or CHF₃/CF₄ with Ar and a little O₂ at tens of
    mTorr and high bias, tuned to a polymerising regime for
-   selectivity;[^oehrlein-1994-ii][^rueger-1997] etch rates of a few
+   selectivity.[^oehrlein-1994-ii][^rueger-1997]
+
+   Etch rates of a few
    hundred nanometres per minute and oxide : nitride selectivities of
    order 10 : 1 are typical of the era (category page[^nojiri-2015]).
    SkyWater lists CF₄ and CHF₃ on its AMAT DPS II.[^skw-01]
 4. **Endpoint and over-etch.** Optical emission — the CO band near
    483 nm is the classic oxide-etch signal (industry practice;
    typical value[^nojiri-2015]) — rises while oxide is etched and
-   falls as the holes clear. Detecting the transition through the
+   falls as the holes clear.
+
+   Detecting the transition through the
    small open area of a contact layer is itself a problem: the Tokyo
    Electron patent's double-endpoint scheme monitors CN emission "at
    387 nm" to find first the oxide and then the nitride
@@ -148,20 +188,27 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    contacts and the shallower poly contacts' residue without
    trenching the silicon or breaching the spacers.
 5. **Post-etch treatment.** An in-situ O₂ or H₂/N₂ plasma removes
-   the fluorocarbon polymer from the hole walls (the step SkyWater's
+   the fluorocarbon polymer from the hole walls.
+
+   This is the step SkyWater's
    "Mattson Aspen2, RF plasma, O2, CF4, H2>N2" — without its CF₄,
    which would attack the silicon at the contact floor (inference) —
-   or "Gasonic PEP" ashers could also perform[^skw-01]); the resist
+   or "Gasonic PEP" ashers could also perform.[^skw-01] The resist
    itself is stripped and the wafer wet-cleaned — this reference treats
    the strip as part of this step or of {ref}`SACETCH <step-095>`.
 6. **Metrology.** Contact {term}`CD` top and bottom by {term}`CD-SEM`; cross-section
    SEM for profile, taper and residue during development; electrical
    contact-chain resistance at {ref}`category-test` structures
-   afterwards. The published SKY130 {term}`test tile` lists such chains:
-   "LI1-n+ diffusion contacts: licon1 = 0.17 um (generic)" and a p+
-   equivalent as strings of 6992 contacts, "LI1-poly contacts" as a
-   string of 8360, and transistors that measure "licon resistance" at
-   "contact-gate=0.050u" and "0.055u".[^raw-data-testtile-pads]
+   afterwards.
+
+   The published SKY130 {term}`test tile` lists such chains:[^raw-data-testtile-pads]
+
+   - "LI1-n+ diffusion contacts: licon1 = 0.17 um (generic)" and a p+
+     equivalent as strings of 6992 contacts;
+   - "LI1-poly contacts" as a
+     string of 8360;
+   - transistors that measure "licon resistance" at
+     "contact-gate=0.050u" and "0.055u".
 
 ## Machines typically used
 
@@ -178,17 +225,24 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   list gives, under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3,
   CF4, CHF3, O2 – gate, trench, W/WN", "Lam 9400 TCP, poly/nitride,
   HBr, CF4, SF6, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6,
-  O2".[^skw-01] All three carry fluorine-bearing gases that can etch
-  oxide; strength: **weak** for assignment of any of them to the
-  contact etch, as on the metal-contact and via etches
-  ({ref}`CTME <step-108>`). Which tool performs the etch is an open
+  O2".[^skw-01]
+
+  All three carry fluorine-bearing gases that can etch
+  oxide.
+
+  - *Runs this step:* **weak** for assignment of any of them to the
+    contact etch, as on the metal-contact and via etches
+    ({ref}`CTME <step-108>`).
+
+  Which tool performs the etch is an open
   question (below).
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists.[^lam-10k]
 * Resist strip and polymer removal: **Mattson Aspen II, GaSonics PEP,
   Iridia** ashers;[^skw-01] wet clean: **DNS wet bench, FSI Mercury,
-  Akrion Gamma**.[^skw-01] Strength: strong for existence.
+  Akrion Gamma**.[^skw-01]
+  - *Tool exists:* strong for existence.
 
 ## Resources required
 
@@ -197,7 +251,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]).
 * **Helium** backside cooling; **NF₃/O₂** chamber clean.
 * **O₂/N₂** (and {ref}`forming gas <material-anneal-ambients>`) for the post-etch polymer removal and
-  strip;[^skw-01] the CF₄ that the ashers list is left out here, as on the
+  strip.[^skw-01]
+
+  The CF₄ that the ashers list is left out here, as on the
   metal-contact and via etches, since it would attack the silicon at the
   bottom of the diffusion contacts (inference). No post-etch solvent is
   listed on this page: the solvent clean (EKC265/EKC270 class) is described
@@ -211,16 +267,17 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Related steps and cross-references
 
-* Previous: {ref}`LICM1 <step-093>` (the resist pattern). Next:
+* Previous: {ref}`LICM1 <step-093>` (the resist pattern).
+* Next:
   {ref}`SACETCH <step-095>`, then {ref}`ALLY1 <step-096>` and the
   liner {ref}`TI/TIN1 <step-097>`.
-* The films etched: {ref}`NCAPOX <step-091>`, {ref}`PSG <step-089>`,
-  {ref}`SPOX <step-080>`. The nitride the etch must not breach:
+* Depends on: the films etched, {ref}`NCAPOX <step-091>`, {ref}`PSG <step-089>`,
+  {ref}`SPOX <step-080>`; the cut that removed nitride from under the
+  poly contacts, {ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`.
+* The nitride the etch must not breach:
   {ref}`SPNIT <step-076>`/{ref}`SPE <step-077>` spacers,
   {ref}`GATENIT <step-058>` caps.
-* The cut that removed nitride from under the poly contacts:
-  {ref}`NPCM <step-078>`, {ref}`NPCME <step-079>`.
-* The next dielectric hole etch: {ref}`CTME <step-108>`.
+* Same category: the next dielectric hole etch, {ref}`CTME <step-108>`.
 * Category page: {ref}`Etch <category-etch>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -293,16 +350,16 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* The etch chemistry, tool, endpoint and over-etch are not public;
+* **Chemistry, tool and endpoint.** The etch chemistry, tool, endpoint and over-etch are not public;
   SkyWater's list names no dedicated dielectric etcher, so which
   tool performs the contact etch is an open question.
-* Whether the resist strip and post-etch clean are done in this
+* **Where the strip and clean happen.** Whether the resist strip and post-etch clean are done in this
   step, in {ref}`SACETCH <step-095>`, or separately is not stated
   publicly.
-* The oxide thickness at the bottom of the diffusion contacts
+* **Oxide at the contact bottom.** The oxide thickness at the bottom of the diffusion contacts
   ({ref}`SPOX <step-080>` plus any {ref}`IOX45 <step-063>` residue)
   that the over-etch must clear is not public.
-* Whether the holes over poly are shallower than those over
+* **Shallower holes over poly.** Whether the holes over poly are shallower than those over
   diffusion (the {ref}`CMPP <step-090>` cap-stop reading) is not
   public.
 
