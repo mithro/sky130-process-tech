@@ -845,7 +845,11 @@ def _duplicate_units(text: str) -> tuple[Counter, Counter]:
         if line == prev:
             lines_c[line] += 1
         prev = line
-        prose.append(_LEADING_LIST_MARKER_RE.sub(" ", line) if _LIST_ITEM_RE.match(line) else line)
+        if _LIST_ITEM_RE.match(line):
+            flush()  # each list item is its own unit; its marker is not prose
+            prose.append(_LIST_ITEM_RE.sub("", line, count=1))
+        else:
+            prose.append(line)
     flush()
     return lines_c, sentences
 
@@ -1696,6 +1700,14 @@ def selftest() -> int:
         "The liner coats the floor and the walls of every hole at once.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
         "# P\n\nThe liner coats the floor and the walls of every hole at once.[^a]\n\n"
         "The liner coats the floor and the walls of every hole at once.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        True,
+    )
+    case(
+        "a sentence the base already had in a bulleted item and in a paragraph is not new",
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.\n\n"
+        "* first item of the list here\n* The liner coats the floor and the walls of every hole at once.\n",
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.\n\n"
+        "* first item of the list here\n* **Coverage.** The liner coats the floor and the walls of every hole at once.\n",
         True,
     )
     case(
