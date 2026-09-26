@@ -286,6 +286,21 @@ them all and run `--check`.
 6. **Label wording per level** comes from each level's own page: the `metal-stack` notes are
    parameters. Metals 1–3 use cap "TiW or Ti/TiN — see the overview"; the bottom film is
    "Ti or Ti/TiN" at metals 1–2 and "Ti or TiW" at metal 3 (the 134 page's words).
+   Metal 4 keeps both readings (the 149 page); metal 5's cap is "read here as TiW — see the
+   overview" and its bottom film is titled "Underlayer" (the 161 page's word). In every
+   figure of a level that carries a MiM capacitor the metal cap is titled "Metal cap film"
+   (per-figure `labels:`), and where a page does not itself read the dielectric as an
+   oxynitride the dielectric's label note is left empty (`note: ""`).
+7. **Drawn (S9b).** 141–149 and 154–163 are in the repository; their geometry is in the
+   series header ("The levels above the second capacitor"), and 150–153 did not change.
+   Full slices are cut at 128 u for 141–149 ("inside the oxide under metal 2") and at 180 u
+   for 154–163 ("inside the oxide under metal 3"); the via-3 close-ups (146–148) use the
+   plug on the plate, `[176, 240]`, 4.2×, `-946` (226 u, the metal-3 aluminium), and MM4E
+   (155) the S10 window `[76, 176]`, `-670`. A pasted block trips the "caption repeats the
+   paragraph" lint only once it is in the page: rebuild after pasting. For S11 (passivation,
+   164–170): the metal-5 top is at 403 u over the field, the metal-5 shapes are x 10–94 and
+   from x 160, and the NCAPOX6 surface between them is at 340 u; a full slice cut inside the
+   NILD6 oxide over the second plate (between about 319 and 330 u) stays short.
 
 ## 4. Build
 

@@ -74,11 +74,26 @@
 #   polished at 256, cap to 264 (26 u over the metal-3 tops, as 0.39 um is to via 2's
 #   0.42 um and 28 u; 15 u over the plate); via 3 holes of 20 u on the wiring line (x 52-72,
 #   etched through the dielectric) and on the top plate (x 196-216); the metal-4 stack
-#   5 + 32 + 5 u (as metal 3: the PDK gives both 0.845 um), top at 306 u. S9b may change
-#   these; 150-153 draw only the window x 76-176 above 250 u, so they depend only on the
-#   metal-4 heights (then move their `crop_depth`).
+#   5 + 32 + 5 u (as metal 3: the PDK gives both 0.845 um), top at 306 u. S9b drew them with
+#   these values unchanged; 150-153 draw only the window x 76-176 above 250 u, so they depend
+#   only on the metal-4 heights (if those move, move their `crop_depth`).
 # * Second capacitor (150-153): the same films on the blanket metal 4, plate from x 130 on,
-#   over the first plate. MM4 (154) must cover it, as MM3 covers the first.
+#   over the first plate. MM4 (154) covers it, as MM3 covers the first.
+#
+# THE LEVELS ABOVE THE SECOND CAPACITOR (154-163, S9b):
+# * Metal 4 patterned (154-155): a wiring line x 20-84 over the via-3 plug on the metal-3
+#   line, and the second capacitor's bottom plate from x 104 on (it carries the via-3 plug on
+#   the first top plate, as "M4 (plate 2)" does in the PDK's stacked cross-section). MM4E
+#   clears the dielectric outside the resist first (`etch_materials`), as MM3E does.
+# * NILD6 (156-158): gap-fill, polished at 332, cap to 340: 34 u over the metal-4 tops, as
+#   0.505 um is to via 3's 0.39 um and 26 u; 23 u over the second plate.
+# * Via 4 (159-160): two 44 u holes, wider than deep (34 u over metal 4; 0.800 um squares
+#   0.505 um deep on the pages), on the metal-4 line (x 30-74, etched through the dielectric
+#   to the cap) and on the second top plate (x 190-234). No liner, tungsten or polish.
+# * Metal 5 (161-163): 5 + 53 + 5 u, half as thick again as metal 4 (1.26 um against
+#   0.845 um), deposited conformally into the open vias (lining them, closing them, a dimple
+#   of about 4 u over each); top at 403 u over the field. MM5 resist 40 u (the pages call it
+#   thicker); shapes x 10-94 and 160 on, a 66 u space.
 # Series labels carry no numbers; step numbers and level codes (VIM2, NILD4) are free.
 base: series-metal1.yaml
 templates:
@@ -352,7 +367,7 @@ ops:
       etch_materials: [mim-diel, barrier, aluminium]
   # ================================================================ NILD5 and via 3 (141-148)
   # Context for the second capacitor, instantiated here so that 150-153 have a state to draw;
-  # S9b owns these levels and may change them (then rebuild 150-153). Oxide over the metal-3
+  # Drawn by S9b as instantiated here (a change would need 150-153 rebuilt). Oxide over the metal-3
   # tops 26 u with the cap (0.39 um on the PDK's stack diagram, against via 2's 0.42 um and
   # 28 u); over the plate 15 u. Via 3: two 20 u holes, one on the wiring line (etched through
   # the capacitor dielectric to the cap) and one on the top plate.
