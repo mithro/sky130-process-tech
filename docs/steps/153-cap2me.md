@@ -35,13 +35,12 @@
 
 `CAP2ME` etches the top plates of the second {term}`MiM capacitor`. Through the
 resist islands of {ref}`CAP2M <step-152>` a plasma removes the blanket
-top-plate film of {ref}`CAPTIW2 <step-151>` and stops on, or a little way
+top-plate film of {ref}`CAPTIW2 <step-151>`, described in this reference
+as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
+MiM2 top-plate sheet resistance.[^pdk-07] It stops on, or a little way
 into, the thin capacitor dielectric of {ref}`CAPILD2 <step-150>`, leaving
 the plate film only where the
-layout draws `cap2m`, "MiM capacitor plate over metal 4".[^pdk-06] The
-film is described in this reference
-as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
-MiM2 top-plate sheet resistance.[^pdk-07]
+layout draws `cap2m`, "MiM capacitor plate over metal 4".[^pdk-06]
 
 The
 resist is then stripped: the step list used in this reference has no

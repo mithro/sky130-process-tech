@@ -448,13 +448,16 @@ words (base 106) in two paragraphs. Same treatment as 137 wherever the two pages
 
 ### 153 CAP2ME — done
 
-Base `da0240bf`. Caps before: 4 paragraphs, 8 items, 10 sentences over; after: 0/0/0. Lead 122 words
-(base 119) in two paragraphs. Same treatment as 138 wherever the two pages share wording. The in-force
+Base `da0240bf`. Caps before: 4 paragraphs, 8 items, 10 sentences over; after: 0/0/0. Lead 119 words
+(as the base) in two paragraphs. Same treatment as 138 wherever the two pages share wording. The in-force
 note in the body is untouched and still directly after the paragraph that ends with the Philips and
 Newport Fab sentences (as in the base); the one in the Deep-dive list is untouched.
 
-* Lead: the dash material (TiW, ~0.1 µm, an inference from the PDK's 5.8 Ω/sq[^pdk-07]) as "The film
-  is described in this reference as TiW …" directly after its sentence, with its marker.
+* Lead: the dash pair (TiW, ~0.1 µm, an inference from the PDK's 5.8 Ω/sq[^pdk-07]) closes the first
+  half as a comma apposition, "… film of CAPTIW2, described in this reference as TiW … resistance.
+  [^pdk-07]", and "and stops on" → "It stops on …" ("It" = the plasma, the subject of the sentence
+  before). A first draft that added "The film is …" took the lead from 119 to 122 words, over the
+  120 cap the base met; this form adds no word.
 * Post-figure: the cap identity as "… whose cap is:" and two bullets, each dash and marker in place;
   the absolute "which of the two SKY130's metal 4 carries not being public[^cyp-qtp-123907]
   (overview-metal-cap)" stays at the end of the second bullet, word for word, where the base had it;
