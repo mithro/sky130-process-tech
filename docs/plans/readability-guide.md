@@ -312,7 +312,14 @@ of 12 words or more, or a semicolon joining two separately cited facts.
    hedge in parentheses that ends up alone at a split may be capitalised and closed as its own
    sentence — "(our extraction …)" → "(Our extraction ….)" — do nothing else to it. A lead-in
    added to avoid starting a sentence with a lowercase quotation must be neutral ("The patent
-   adds:"), never a relation ("Its consequence:", "Similarly,").
+   adds:"), never a relation ("Its consequence:", "Similarly,"). A gloss in parentheses of 12
+   words or more (not a hedge) may likewise stand as its own parenthetical sentence directly after
+   the sentence it explains, capitalised and closed inside the parentheses; a leading relative
+   'which' becomes 'That', and nothing else changes. Its markers and any hedge inside it stay
+   inside it. At a ', though' split, the second sentence keeps 'though' after its first phrase
+   ('In US 7,078,310, though, the shared electrode is …'); never open a sentence on 'Though' and
+   never substitute 'However'. If the base's single marker covered both clauses, repeat it on both
+   and declare it (review rd-steps-141-149 D2, D3).
 
 **Example** — `docs/steps/066-bhi.md:16`.
 
@@ -503,7 +510,9 @@ key `para>100w`; `grep -rn "This page describes the class in general" docs/` (62
    leave it as a paragraph and add nothing. The same applies to "… is X, and Y" without "that":
    over the sentence cap, write "… is:" and one bullet per complement. If the second clause has its
    own subject and verb, it is not a complement: split into sentences instead (R-SENTENCE) (review
-   rd-steps-118-134 D2).
+   rd-steps-118-134 D2). If the 'What is specific …' sentence names one thing and the following
+   sentences elaborate it, keep them with it as one paragraph within the paragraph cap; bullets
+   only for ≥ 2 parallel clauses (review rd-steps-141-149 D4).
 4. If a sentence here repeats a passage from another H2 on the same page, apply **R-REPEAT**: the fact
    keeps its home section and this section gets a pointer of ≤ 12 words.
 
@@ -1694,7 +1703,10 @@ first `###` if the page has no figure). If the base lead is over 120 words and t
 natural seams and list the page. Never more than three, and never a paragraph that opens on a
 connective. A lead within 120 words in the base must stay within 120 words; prefer re-punctuation in
 place (comma apposition, 153) to a restored subject that would take it over (review rd-steps-135-153
-D5).
+D5). Count words as §1 does (a quotation or code span is one word). Where a split within a lead
+seems to need a restored subject, first try moving the apposition to the sentence it describes
+(149: onto `` `WTIAL4` deposits the metal-4 film stack ``, as 134 does); a subject may be added
+only if no zero-word form exists, and the page is then listed (review rd-steps-141-149 D1).
 
 **Order of work.**
 
