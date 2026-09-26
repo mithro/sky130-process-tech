@@ -114,13 +114,19 @@ addition, a regroup or a named WORDS LOST word.
    undecided and draw neither. Both sides kept verbatim (S8 figure agent's note).
 2. **114 MM1E**: "the spaces it opens — 0.14 µm wide and 0.36 µm deep" (post-figure paragraph) and
    "the 0.36 µm stack clears in well under a minute" (How, Main etch) carry no marker; the page defines
-   no `[^pdk-04]`, the source of the 0.36 µm metal-1 thickness (already in the inventory).
+   no `[^pdk-04]`, the source of the 0.36 µm metal-1 thickness (already in the inventory). Review's
+   fix (a content edit): add the `[^pdk-04]` definition and markers, as on 113.
 3. **112 TIAL6**: the lead hedges the single vacuum sequence ("in one vacuum sequence, on our
    reading"), while Step category states it unhedged ("the three films must be deposited in one
-   vacuum sequence, since an oxidised interface … would raise the via resistance").
-4. **110 WDEP2, Why/Nucleation**: "the nucleation on the TiN liner is what Srinivas et al. and
-   McConica and Cooper studied" — the page's own Deep-dive entry and the footnote title give McConica
-   and Cooper 1988 as tungsten nucleation *on thermal oxide* ("why a liner is needed"), not on TiN.
+   vacuum sequence, since an oxidised interface … would raise the via resistance"). Owner: add "on our
+   reading" to the Step-category bullet or drop it from the lead.
+4. **McConica and Cooper misattributed, 110 and 132.** 110 WDEP2, Why/Nucleation: "the nucleation on
+   the TiN liner is what Srinivas et al.[^srinivas-1992] and McConica and Cooper[^mcconica-1988]
+   studied"; 132-wdep4.md:87: "Tungsten nucleates on the TiN of TIN4,[^srinivas-1992][^mcconica-1988]".
+   The paper is "Tungsten Nucleation on Thermal Oxide during LPCVD …" (*J. Electrochem. Soc.* 1988) —
+   nucleation on oxide, not on TiN; both pages' own Deep-dive entries say so. Review's suggested fix for
+   110: "Tungsten does not nucleate readily on oxide, as McConica and Cooper measured,[^mcconica-1988]
+   and the nucleation on the TiN liner is what Srinivas et al. studied.[^srinivas-1992]" Not fixed here.
 5. **107–110**: the whole taper reading rests on the "Standard contact bottom CD" of 0.09 µm, which
    sits in the PDK's laser-fuse table (108 and 107's open question say so); not a contradiction, noted
    as the S8 figure agent did.
@@ -542,3 +548,27 @@ Arithmetic re-checked while copying, all correct: 107/108 0.1 + 0.075 + 0.265 = 
   None lost a marker or hedge.
 * **Left over the caps:** Precursor item lead (33 words, one sentence with an attribution dash pair).
   Nothing over the §1 caps.
+
+## Review fix round (review `rd-steps-107-117`: 0 High, 1 Medium, 7 Low)
+
+One commit per page. Guide rulings of the review (D1 "… is that:" lists, D2 grouping of dependent
+sentences, D4 item leads yielding to R-SENTENCE step 5, D5 hyphen/slash joins) applied as worded.
+
+* **M1, 113 Surface preparation.** `[^brunner-1991][^wiki-arc]` repeated at the end of "The two
+  candidate caps have different optical constants, … ({ref}`overview-metal-cap`)." — the swing-curve
+  claim of the second half keeps its markers; the copy on the first sentence stays (declared repeat).
+* **L7, 107 and 113 Related.** Previous and next mask moved into the `Mask:` bullet (R-RELATED:
+  "Mask: mask page, previous/next mask"); `Same category:` keeps the analogous hole masks (107) and the
+  other metal masks (113). No link added or dropped.
+* **L6, 107 Step category.** "We therefore infer …" joins the "This reference reads …" bullet as an
+  indented continuation (ruling D2; the bullet stays under the 60-word item cap per block).
+* **L1, 109 glance.** "… put the hole's bottom at 0.09 µm (on our reading).[^pdk-03]" — the body's hedge.
+* **L2, 108 and 114 Strip and clean.** The solvent parenthetical is back directly after the sentence it
+  glosses, no paragraph break; on 114 the ash-tool sentence and "HF is not used …" form the continuation.
+* **L3, 114 Over-etch.** "micro-⏎trenching" joined as "micro-trenching" (ruling D5).
+* **L4, 117.** "({ref}`NILD3 <step-115>`) (inference)" → "(inference; {ref}`NILD3 <step-115>`)", the
+  review's form.
+* **L5, 114 glance.** "… queue-time rules (→ Open questions), and which cap the stack carries (see *How
+  it is typically performed*)" — the cap question is in How, step 2, not in Open questions.
+* Content problems updated above (110 and 132 McConica and Cooper; the 114 and 112 fixes the review
+  suggests). None fixed.
