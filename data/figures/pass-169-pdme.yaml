@@ -1,0 +1,45 @@
+id: pass-169-pdme
+kind: xsection
+page: docs/steps/169-pdme.md
+series: series-passivation.yaml
+crop_depth: -325
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a thick violet resist with one window covers a thick green film over two metal shapes.
+  After it the resist is gone and, where the window was, the green film and the thin pale film
+  under it have been cut away with vertical edges, leaving the top of the left-hand metal shape
+  bare, while both films still cover its edges and the rest of the slice.
+caption: >-
+  Before, the pad-mask resist with its opening over the pad; after, the etch has cut the
+  passivation nitride and then the thin oxide in the opening, stopping on the metal-5 pad, and
+  the resist has been stripped (the page treats the strip and clean as part of this step). Both
+  films still cover the edges of the metal around the opening, as around the "glass cut" of
+  the PDK's stack diagram.[^pdk-04] The films cleared are drawn as that diagram gives them,
+  0.54 µm of TOPNIT over 0.09 µm of TOPOX, against 1.26 µm for metal 5;[^pdk-04] Cypress reports
+  for the R7FT-3R technology and two S8 variants at the same fab give a thicker nitride.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005] The page
+  reads the top of metal 5 as a TiW cap (an inference); whether it is removed from the pad, by
+  this etch, by a wet step or not at all, is not public, so it is drawn left in place. The walls
+  of the opening are drawn vertical, and the positions are illustrative. The lower part of the
+  slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films, the
+  via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide
+  are drawn but not labelled, nor, in the upper panel, is the passivation oxide. Not to scale.
+arrow:
+  title: "PDME, step 169"
+  note: "A fluorine-based plasma cuts the nitride and the oxide in the opening, stopping on the pad; the resist is stripped."
+panels:
+  - state_after: "168"
+    title: "Before: the pad-mask resist (step 168)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [topox, m5cap, m5al, ncap6, m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res, mm5res, nsmres]
+  - state_after: "169"
+    title: "After: the passivation opened over the pad"
+    hide_layers: [pwell, nchi]
+    callouts:
+      - x: 52
+        y: "top@52"
+        label:
+          title: "Opened pad"
+          note: "not public whether its cap film stays"
+          basis: inferred
+    hide_labels: [m5cap, m5al, ncap6, m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res, mm5res, nsmres, pdmres]
+    highlight: {where: [[26, 78]]}

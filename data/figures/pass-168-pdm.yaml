@@ -1,0 +1,35 @@
+id: pass-168-pdm
+kind: xsection
+page: docs/steps/168-pdm.md
+series: series-passivation.yaml
+crop_depth: -325
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step two thick metal shapes lie under a thin pale film and a thick green film that covers
+  everything. After it a thick violet resist layer with a flat top covers the slice except for
+  one window over the middle of the left-hand metal shape, where the green film is bare.
+caption: >-
+  Before, the metal-5 shapes under the passivation oxide and nitride; after, the resist of the
+  pad mask, with one opening. The left-hand metal-5 shape stands here for a pad (an
+  illustrative choice: the slice is not drawn to any pad size). The opening lies inside the
+  metal, which extends beyond it on both sides; in SkyWater's GPIO cell the opening is 60 µm ×
+  70 µm and the metal-5 pad extends 2.7 µm beyond it on every side,[^pdk-io-gpiov2] and the
+  smallest allowed opening is 2 µm (`PDMCD`),[^pdk-03] none of which is drawn to scale. The
+  resist's thickness is not public; it is drawn covering the metal-5 steps. The lower part of
+  the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films,
+  the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation
+  oxide are drawn but not labelled, nor, in the lower panel, is the passivation oxide. Not to
+  scale.
+arrow:
+  title: "PDM, step 168"
+  note: "Resist is coated, exposed through the pad reticle and developed, opening a window over the pad."
+panels:
+  - state_after: "167"
+    title: "Before: the passivation nitride (step 167)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [m5cap, m5al, ncap6, m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res, mm5res, nsmres]
+  - state_after: "168"
+    title: "After: resist with an opening over the pad"
+    hide_layers: [pwell, nchi]
+    hide_labels: [topox, m5cap, m5al, ncap6, m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res, mm5res, nsmres]
+    highlight: {where: [[0, 26], [78, 268]]}

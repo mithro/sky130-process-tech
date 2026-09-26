@@ -1,0 +1,46 @@
+id: tool-171-hpetest
+kind: chain
+page: docs/steps/171-hpetest.md
+title: "The parametric test at the end of the flow"
+nodes:
+  - title: "Finished wafer"
+    note: "annealed at ALLY (step 170), its pads opened at PDME (step 169)"
+    basis: public
+  - title: "Wafer prober"
+    note: "needles are lowered onto the pads of the test structures"
+    basis: typical
+    branch:
+      title: "Probe card"
+      note: "laid out to the pad pitch of the e-test modules"
+      basis: typical
+  - title: "Parametric tester"
+    note: "measures transistors, resistors, capacitors, diodes, contact and via chains"
+    basis: typical
+    branch:
+      title: "HP 4062UX"
+      note: "the only parametric tester SkyWater lists; its use for HPETEST is our inference"
+      basis: inferred
+      cite: skw-01
+  - title: "Results and disposition"
+    note: "compared with the limits; the wafer is accepted, held or scrapped"
+    basis: typical
+    branch:
+      title: "PDK e-test specs"
+      note: "nominal, lower and upper limits per parameter (NOM, LSL, USL)"
+      basis: public
+      cite: pdk-07
+footer: "Only the blocks this page names, in the order of its opening paragraph. SkyWater's test plan is not public beyond the PDK's parameter tables."
+alt: >-
+  Four boxes one above the other joined by downward arrows: the finished wafer, the wafer
+  prober, the parametric tester, and the results and disposition. Three side boxes point into
+  the last three: a probe card into the prober, the HP 4062UX into the tester, and the PDK's
+  e-test specifications into the results.
+caption: >-
+  Electrical test as this page describes it: the finished, annealed wafer goes onto a prober
+  whose needles land on the pads opened at PDME, a parametric tester measures the test
+  structures, and the results are compared with limits to accept, hold or scrap the wafer. The
+  prober, the probe card, the tester and the disposition are drawn as industry practice; the
+  only parametric tester SkyWater names is an HP 4062UX, and that this step runs on it is an
+  inference.[^skw-01] The PDK publishes nominal values with lower and upper spec limits, which
+  the page reads as that kind of limit.[^pdk-07] Which structures are tested, at how many
+  sites and under which disposition rules is not public.

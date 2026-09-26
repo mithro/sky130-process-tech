@@ -1,0 +1,30 @@
+id: pass-170-ally
+kind: xsection
+page: docs/steps/170-ally.md
+series: series-passivation.yaml
+crop_depth: -325
+no_drawn_change: true
+alt: >-
+  One cross-section of the upper films, cut off at the bottom: two thick metal shapes under a
+  thin pale film and a thick green film, which are cut away over the middle of the left-hand
+  shape, leaving its top bare. The drawing is the same as the state before the step.
+caption: >-
+  The finished slice at the final anneal, the same drawing as after the pad etch: at ALLY the
+  wafer is, on the page's reading, annealed at low temperature in a hydrogen-bearing ambient,
+  and nothing the drawing can show changes. The ambient, temperature and time are not public;
+  the page's 350–450 °C is the industry's typical range for an alloy anneal.[^txt-02] Where
+  the hydrogen that reaches the gate oxides comes from, the furnace ambient through the
+  openings and the passivation or the hydrogen-rich nitride itself, is not public, and nothing
+  of it is drawn. The lower part of the slice is cut off: the drawing starts inside the oxide
+  under metal 5. The metal-5 films, the via-4 fill, the metal-4 line, the capacitor plates and
+  the oxides under the passivation oxide are drawn but not labelled. Not to scale.
+panels:
+  - state_after: "170"
+    title: "State at this step (no drawn change)"
+    hide_layers: [pwell, nchi]
+    callouts:
+      - x: 52
+        y: "top@52"
+        label:
+          title: "Opened pad"
+    hide_labels: [m5cap, m5al, ncap6, m5bot, nild6, m4al, m4bot, m4cap, capild2, cap2m, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres, mm4res, vim4res, mm5res, nsmres, pdmres]

@@ -1,0 +1,88 @@
+# S11 — passivation, pads and the final anneal: steps 164-170.
+#
+# One geometry for the whole flow; a figure is "the state after step N". Thicknesses are
+# DRAWING units and are NOT to scale; the minimum drawn film is 5 u.
+#
+# STARTING STATE. `base: series-beol.yaml` puts every op of the back end (and, through its
+# own base, of everything below it) first, unchanged, so the wafer at step 163 is the same
+# drawing in both series: two metal-5 shapes, x 10-94 (over the via-4 hole on the metal-4
+# line) and from x 174 on (over the via-4 hole on the second MiM top plate), each an
+# underlayer, the thick aluminium-copper and a cap (340-403 u over the field, 63 u for the
+# PDK's 1.26 um), with the NCAPOX6 cap oxide bare between them (top at 340 u).
+#
+# THE STEPS DRAWN HERE:
+# * NFUSOX (164): the thin passivation oxide, conformal over the metal tops, sidewalls and
+#   the floor between the shapes (the page reads the diagram's separate top and sidewall
+#   dimensions as a conformal film). 5 u, the minimum film: on the metal-5 scale (63 u for
+#   1.26 um) the PDK's 0.09 um TOPOX would be 4.5 u, so it is drawn close to its proportion.
+#   The conformal profile gives it one thickness on the wall; the diagram gives 0.070 um.
+# * NSM (165): resist over the whole slice. The `nsm` opening is a ring at least 3 um wide
+#   along the die edge, kept 1 um clear of all metal (nsm.1, nsm.3): it cannot fall inside
+#   a slice of wiring, so it is not drawn, and the captions say so. Resist 30 u, flat-topped.
+# * NSME (166): in this slice the etch removes nothing (the opening is at the die edge, and
+#   how deep it goes is not public); only the strip is drawn.
+# * NTSD (167): the passivation nitride, conformal, 27 u: 0.54 um on the PDK's diagram
+#   against metal 5's 1.26 um, on the same scale (0.54 / 1.26 x 63 = 27). One thickness on
+#   the wall; the diagram gives 0.4223 um there (about 78 %). The 80 u space between the
+#   metal-5 shapes stays open (80 - 2 x 32 = 16 u).
+# * PDM (168): resist 30 u with one opening, x 26-78, over the left-hand metal-5 shape,
+#   which the S11 figures treat as a pad (illustrative: the slice is not drawn to any pad
+#   size). The metal encloses the opening by 16 u on each side, and the passivation
+#   continues over the metal's edge around it, as around the "glass cut" of the PDK diagram.
+# * PDME (169): the etch removes the nitride and the oxide in the opening and stops on the
+#   metal-5 cap film; whether that cap is removed from the pad is not public, so it is
+#   left. The resist is stripped in the same step, as the page treats it.
+# * ALLY (170): an anneal; nothing the drawing can show changes.
+# Series labels carry no numbers; step numbers and level codes are free.
+base: series-beol.yaml
+ops:
+  - step: "164"
+    op: deposit
+    id: topox
+    material: oxide-dep
+    t: 5
+    label:
+      title: "Passivation oxide"
+      note: "read here as the PDK's TOPOX"
+      basis: inferred
+  - step: "165"
+    op: deposit
+    id: nsmres
+    material: resist
+    t: 30
+    where: [[0, 268]]
+    label:
+      title: "Photoresist"
+      note: "NSM mask, step 165"
+      basis: public
+  - step: "166"
+    op: strip
+    materials: [resist]
+  - step: "167"
+    op: deposit
+    id: topnit
+    material: nitride
+    t: 27
+    label:
+      title: "Passivation nitride"
+      note: "the PDK's TOPNIT; read here as a PECVD nitride"
+      basis: inferred
+  - step: "168"
+    op: deposit
+    id: pdmres
+    material: resist
+    t: 30
+    where: [[0, 26], [78, 268]]
+    label:
+      title: "Photoresist"
+      note: "PDM mask, step 168"
+      basis: public
+  - step: "169"
+    op: etch
+    materials: [nitride, oxide-dep]
+    where_open: pdmres
+  - step: "169"
+    op: strip
+    materials: [resist]
+  - step: "170"
+    op: anneal
