@@ -10,6 +10,25 @@
 | **Previous step** | {ref}`PDM <step-168>` |
 | **Next step** | {ref}`ALLY <step-170>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** opens the passivation over the pads — the nitride, then the
+  thin oxide — and stops on the metal-5 pad; this reference treats the
+  strip and clean as part of this step.
+* **Why:** the pads must be clean metal that wire bonds and probe
+  needles can touch.
+* **Public numbers:** "TOPNIT K=7.5" 0.54 µm and "TOPOX K=3.9" 0.09 µm on
+  the PDK's stack diagram;[^pdk-04] the smallest allowed opening 2 µm
+  (`PDMCD`).[^pdk-03]
+* **Likely SkyWater tool:** Lam 9400 TCP — **strong** for the tool and
+  the word "nitride"; assignment to the pad etch is an
+  **inference**.[^skw-01]
+* **Not public:** whether the metal-5 cap is TiW and how it is removed
+  from the pads, and the etch chemistry, tool, endpoint and
+  fluorine-removal treatment (→ Open questions).
+:::
+
 ## What this step is
 
 `PDME` opens the passivation over the pads. Through the resist openings
@@ -30,19 +49,24 @@ it the wafer is annealed ({ref}`ALLY <step-170>`) and tested
 Before, the pad-mask resist with its opening over the pad; after, the etch has cut the passivation nitride and then the thin oxide in the opening, stopping on the metal-5 pad, and the resist has been stripped (on the page's account the strip and clean belong to this step). Both films still cover the edges of the metal around the opening, as around the "glass cut" of the PDK's stack diagram.[^pdk-04] The films cleared are drawn as that diagram gives them, 0.54 µm of TOPNIT over 0.09 µm of TOPOX, against 1.26 µm for metal 5;[^pdk-04] Cypress reports for the R7FT-3R technology and two S8 variants at the same fab give a thicker nitride.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005] The page reads the top of metal 5 as a TiW cap (an inference); whether it is removed from the pad, by this etch, by a wet step or not at all, is not public, so it is drawn left in place. The walls of the opening are drawn vertical, and the positions are illustrative. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films, the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide are drawn but not labelled, nor, in the upper panel, is the passivation oxide. Not to scale.
 :::
 
+### What the public record shows
+
 The films to be cleared are public only approximately. The PDK's stack
 diagram draws a "glass cut" through "TOPNIT K=7.5" (0.54 µm over the
-metal) and "TOPOX K=3.9" (0.09 µm) down to `metal5`,[^pdk-04] while
+metal) and "TOPOX K=3.9" (0.09 µm) down to `metal5`.[^pdk-04]
 Cypress reports for the R7FT-3R technology and the S8DI and S8TNV-5R
 variants at the same fab give 7000–9000 Å of nitride, over 1000 Å of
 TEOS oxide where an oxide is given.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
-Under the oxide lies the top of the metal-5 stack. The PDK does not give its films; this reference reads it, with the lower levels, as a
-TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`; inference from the
+
+Under the oxide lies the top of the metal-5 stack. The PDK does not give its films. This reference reads it, with the lower levels, as a
+TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`). (Inference from the
 300 Å TiW caps of the S8 stacks in a Cypress report[^cyp-qtp-113005]
 and from Cypress's 2014 report, which moved the lower levels to Ti/TiN
 caps but qualified the S8P change "excluding top metal layers" and kept
-"300A TiW" on the S8DI top metal[^cyp-qtp-123907]; the whole of that
-evidence is set out under {ref}`overview-metal-cap`). If so, the etch or
+"300A TiW" on the S8DI top metal.[^cyp-qtp-123907]) (The whole of that
+evidence is set out under {ref}`overview-metal-cap`.)
+
+If so, the etch or
 a following clean must remove the TiW over the pad: Danzl and McLaurin
 report that TiW left on pads causes wire-bond non-sticks and that
 plasma etching alone left a residue.[^danzl-1997] How SKY130 does this
@@ -56,44 +80,52 @@ pad,[^pdk-io-gpiov2] and the smallest allowed opening is 2 µm
 `PDME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorine-chemistry* class — the category page's dielectric entries,
 silicon nitride then silicon dioxide, run one after the other here —
-ending on a metal. What is
+ending on a metal.
+
+What is
 specific to this instance is the floor. Every earlier dielectric etch
 through to metal (the via etches, such as {ref}`VIM3E <step-145>`)
 lands on a refractory cap and is followed by a liner, plug or next
-metal that covers the floor; this one lands on the surface that a wire bond or
-probe needle will touch, and nothing covers it afterwards. Aluminium is
+metal that covers the floor. This one lands on the surface that a wire bond or
+probe needle will touch, and nothing covers it afterwards.
+
+Aluminium is
 not etched by fluorine — it forms involatile AlF₃, as Hess
 explained[^hess-1982] — which makes the stop easy but leaves fluorine on
-the pad; residues that a via etch can tolerate under a liner are
+the pad. Residues that a via etch can tolerate under a liner are
 defects here. The etch also sets the edge of the passivation, the seal
 around every pad.
 
 ## Why this step exists
 
-* **Bondable, probeable pads.** The pads must be clean metal: a Micron
+* **Bondable, probeable pads.** The pads must be clean metal.
+
+  A Micron
   patent describes how, after a fluorine-based pad etch, "Fluorine (F)
   from the etch process is deposited onto the aluminum of the bond
   pads", forming an oxide layer that produces "gummy pads" and probe
   failures, and removes it in situ with an argon (or oxygen) plasma
-  after the nitride etch;[^pat-pad-fluorine-micron] a TSMC patent
+  after the nitride etch.[^pat-pad-fluorine-micron] A TSMC patent
   attributes non-optimal wire bonds and failed bondability tests to the
   resulting aluminium–fluorine–oxide deposits and removes them by
   reactive ion etching.[^pat-pad-fluorine-tsmc] Teo et al. evaluated
   TOF-SIMS for measuring fluorine contamination on aluminium bond
   pads.[^teo-2015]
 * **Removing a refractory cap (if present).** A TiW or TiN
-  {term}`anti-reflective cap` on aluminium is not a good bond surface; Danzl
+  {term}`anti-reflective cap` on aluminium is not a good bond surface. Danzl
   and McLaurin describe using concentrated hydrogen peroxide to remove a
   TiW ARC from aluminium bond pads,[^danzl-1997] and TiW is also etched
   in fluorine-containing plasmas, as Liu and Kuo showed for CF₄-based
   mixtures and Turban et al. for tungsten in SF₆.[^liu-2007-tiw][^turban-1989]
 * **A clean passivation edge.** The nitride and oxide must be cut
   completely, with no stringers over the pad and no undercut of the
-  oxide under the nitride that would open a path along the interface
-  (inference from the construction; Comizzoli et al. review the
-  corrosion that exposed aluminium suffers[^comizzoli-1986]).
+  oxide under the nitride that would open a path along the interface.
+  (Inference from the construction; Comizzoli et al. review the
+  corrosion that exposed aluminium suffers.[^comizzoli-1986])
 * **Undamaged pads for test.** Probing at {ref}`HPETEST <step-171>`
-  and bonding at assembly load the pad and the oxide beneath it; Hunter
+  and bonding at assembly load the pad and the oxide beneath it.
+
+  Hunter
   et al. used harsh wire bonding to reveal probe cracks in the oxide
   under aluminium pads that routine inspection misses, and report that
   such latent cracks are a reliability risk for circuit-under-pad
@@ -102,21 +134,23 @@ around every pad.
 
 ## How it is typically performed
 
-An industry-generic pad-opening etch for a 200 mm, 130 nm-era fab with
-an aluminium top metal (SKY130's recipe is not public):
+*An industry-generic pad-opening etch for a 200 mm, 130 nm-era fab with
+an aluminium top metal (SKY130's recipe is not public):*
 
 1. **Chamber.** A single-wafer plasma etcher with fluorine chemistry —
    a nitride-capable {term}`TCP` or ICP etcher, or a capacitively
    coupled dielectric etcher ({ref}`category-etch`); helium backside
    cooling to protect the resist.
-2. **Nitride etch.** CF₄/O₂ (with N₂ or CHF₃) or SF₆-based chemistry;
+2. **Nitride etch.** CF₄/O₂ (with N₂ or CHF₃) or SF₆-based chemistry.
+
    Kastenmeier et al. measured nitride and oxide rates in CF₄/O₂/N₂ in a
-   downstream reactor (small N₂ additions raise the nitride rate
-   sevenfold while leaving the oxide rate unchanged) and, separately,
+   downstream reactor and, separately,
    "highly selective" nitride etching over silicon and silicon
    dioxide — again in a remote discharge, and the wrong selectivity pair
    for a pad etch that must stop on
-   metal.[^kastenmeier-1996][^kastenmeier-1999]
+   metal.[^kastenmeier-1996][^kastenmeier-1999] (Small N₂ additions raise the nitride rate
+   sevenfold while leaving the oxide rate unchanged.[^kastenmeier-1996])
+
    The Micron and TSMC patents name "fluorine containing gases, such as
    CHF3" and "CHF3, CF4, C2F6, C2F2, C4F8" for the passivation nitride
    etch.[^pat-pad-fluorine-micron][^pat-pad-fluorine-tsmc]
@@ -126,7 +160,9 @@ an aluminium top metal (SKY130's recipe is not public):
    oxide are often cleared in one chemistry with a timed
    {term}`over-etch`.
 4. **Metal floor.** The etch stops on aluminium (AlF₃ does not
-   volatilise[^hess-1982]); a TiW cap, if present, is removed by the
+   volatilise[^hess-1982]).
+
+   A TiW cap, if present, is removed by the
    fluorine over-etch or by a separate wet or plasma step
    (industry practice;[^liu-2007-tiw][^danzl-1997] SKY130's choice is not
    public). {term}`Endpoint <endpoint>` by optical emission as the
@@ -158,27 +194,32 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Lam 9400 TCP.** SkyWater lists "Lam 9400 TCP, poly/nitride, HBr,
-  CF4, SF6, O2".[^skw-01] Strength: **strong** for the tool and the
-  word "nitride"; assignment to the pad etch is an **inference**, the
-  entry being the only one on the list that names nitride.
-* **AMAT DPSII** ("HBR, Cl2, NF3, CF4, CHF3, O2").[^skw-01] Strength:
-  **medium**, since its CF₄ and CHF₃ etch nitride although the entry
-  names no nitride application.
-* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2").[^skw-01] Strength:
-  **weak**, as the entry names no application.
+* **Lam 9400 TCP**
+  - *SkyWater says:* lists "Lam 9400 TCP, poly/nitride, HBr,
+    CF4, SF6, O2".[^skw-01]
+  - *Tool exists:* **strong** for the tool and the
+    word "nitride".
+  - *Runs this step:* assignment to the pad etch is an **inference**, the
+    entry being the only one on the list that names nitride.
+* **AMAT DPSII** ("HBR, Cl2, NF3, CF4, CHF3, O2")[^skw-01]
+  - *Runs this step:*
+    **medium**, since its CF₄ and CHF₃ etch nitride although the entry
+    names no nitride application.
+* **Lam 4400** ("HBr, Cl2, C2F6, CF4, SF6, O2")[^skw-01]
+  - *Runs this step:*
+    **weak**, as the entry names no application.
 * **Lam 9600 / Lam 2300 Versys**, listed for "TiW",[^skw-01] if a
   separate cap removal is done by plasma (weak).
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; batch
-  rotational tools with "EKS265, EKC270 solvents".**[^skw-01] Strength:
-  strong for existence.
+  rotational tools with "EKS265, EKC270 solvents"**[^skw-01]
+  - *Tool exists:* strong for existence.
 
 ## Resources required
 
 * **{ref}`CF₄ <material-etch-gases>`**, **CHF₃**, **SF₆**, **{ref}`O₂ <material-process-gases>`**, **N₂** and **Ar** for the etch and
-  the fluorine-removal plasma (industry practice;[^nojiri-2015] SkyWater
-  names CF₄, CHF₃, SF₆ and O₂ on its listed etchers[^skw-01]); **He**
-  backside cooling.
+  the fluorine-removal plasma (industry practice[^nojiri-2015]); **He**
+  backside cooling. SkyWater
+  names CF₄, CHF₃, SF₆ and O₂ on its listed etchers.[^skw-01]
 * **O₂/N₂** for the ash;[^skw-01] **aluminium-compatible solvent** ({ref}`wet chemicals <material-wet-chemicals>`) and
   {ref}`DI water <material-ultrapure-water>`; possibly **hydrogen peroxide** if a TiW cap is removed
   wet.[^danzl-1997]
@@ -187,14 +228,15 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`PDM <step-168>` (the mask). Next:
+* Previous: {ref}`PDM <step-168>` (the mask).
+* Next:
   {ref}`ALLY <step-170>` (the anneal), then {ref}`HPETEST <step-171>`
   (the probing of the pads just opened).
-* The films it cuts: {ref}`NTSD <step-167>`, {ref}`NFUSOX <step-164>`;
-  the pad metal it lands on: {ref}`WTIAL5 <step-161>`,
+* Same module: the films it cuts, {ref}`NTSD <step-167>`, {ref}`NFUSOX <step-164>`;
+  the other etch through the passivation, {ref}`NSME <step-166>`.
+* Depends on: the pad metal it lands on, {ref}`WTIAL5 <step-161>`,
   {ref}`MM5E <step-163>`.
-* The other etch through the passivation: {ref}`NSME <step-166>`.
-* Other nitride etches: {ref}`STINITE <step-005>`, {ref}`SPE <step-077>`.
+* Same category: other nitride etches, {ref}`STINITE <step-005>`, {ref}`SPE <step-077>`.
 * Category page: {ref}`Etch <category-etch>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -260,21 +302,24 @@ an aluminium top metal (SKY130's recipe is not public):
 
 ## Open questions
 
-* Whether the metal-5 stack has a TiW (or other) cap, and whether it is
+* **Metal-5 cap on the pads.** Whether the metal-5 stack has a TiW (or other) cap, and whether it is
   removed from the pads by this etch, by a wet step or not at all, is not
   public.
-* The etch chemistry, tool, endpoint and any fluorine-removal treatment
+* **Etch conditions and tool.** The etch chemistry, tool, endpoint and any fluorine-removal treatment
   are not public.
-* The passivation thickness to be etched is uncertain: 0.63 µm on the
-  PDK diagram (0.54 µm TOPNIT plus 0.09 µm TOPOX, our
-  arithmetic)[^pdk-04] against 1.0 µm in the two Cypress reports that
-  give both films (1000 Å TEOS plus 9000 Å nitride, for the S8DI
-  variant and the R7FT-3R technology)[^cyp-qtp-123907][^cyp-qtp-014807]
-  and 0.7 ± 0.2 µm of nitride, with no oxide stated, for
-  S8TNV-5R.[^cyp-qtp-113005]
-* Whether the same etch opens laser-fuse windows (see
+* **Passivation thickness.** The passivation thickness to be etched is uncertain:
+
+  - 0.63 µm on the
+    PDK diagram (0.54 µm TOPNIT plus 0.09 µm TOPOX, our
+    arithmetic);[^pdk-04]
+  - 1.0 µm in the two Cypress reports that
+    give both films, 1000 Å TEOS plus 9000 Å nitride, for the S8DI
+    variant and the R7FT-3R technology;[^cyp-qtp-123907][^cyp-qtp-014807]
+  - 0.7 ± 0.2 µm of nitride, with no oxide stated, for
+    S8TNV-5R.[^cyp-qtp-113005]
+* **Fuse windows.** Whether the same etch opens laser-fuse windows (see
   {ref}`PDM <step-168>`) is not public.
-* This page treats the resist strip and clean as part of the etch.
+* **Resist strip and clean.** This page treats the resist strip and clean as part of the etch.
 
 <!-- footnotes -->
 

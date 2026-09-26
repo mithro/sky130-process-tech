@@ -619,3 +619,39 @@ In-force note (US 7,679,384) and its pointer: untouched; nothing from it in the 
   declared hedges and markers, "The opening is", "The thickness is", the H3 and labels; everything
   else REGROUPED, read. `--strict-words` LOST: `page`, `strength`×3. cov: two flags, pairing noise.
   inv: OK (dropdowns identical).
+
+### 169 PDME — done (base `cb6bb0d6`)
+
+No in-force note in the hand-written text. The "7000–9000 Å" of the public-record paragraph is kept
+verbatim (content problem 5).
+
+* Lead (78 words, first sentence 7): unchanged.
+* R-H3: `### What the public record shows` after the figure caption. The 54-word diagram sentence split
+  at ", while Cypress reports …" (word `while` lost). The 73-word reading sentence split at its
+  semicolon; its 53-word parenthetical split at its own semicolon: "({ref} WTIAL5)" stays on "a
+  TiW-capped Al–Cu stack", the hedge "(Inference from the 300 Å TiW caps …[^cyp-qtp-113005] and from
+  Cypress's 2014 report, … top metal.[^cyp-qtp-123907])" and the pointer "(The whole of that evidence
+  is set out under overview-metal-cap.)" follow as two parenthetical sentences (R-SENTENCE step 7). Three
+  paragraphs.
+* R-CATEGORY: classification sentence alone; the "What is specific … is the floor." paragraph kept with
+  its elaborating sentences (D4), its 52-word sentence split at its semicolon; the aluminium sentences
+  (split at their semicolon) a second paragraph.
+* Why: pads item — lead "The pads must be clean metal.", the patents as a continuation (colon and
+  semicolon → full stops); cap item split at its semicolon; edge item's 14-word trailing hedge a
+  parenthetical sentence; test item with a continuation paragraph.
+* How: scope sentence italic; step 2 — lead "CF₄/O₂ (with N₂ or CHF₃) or SF₆-based chemistry.", the
+  Kastenmeier sentence as a continuation, its 14-word gloss "(Small N₂ additions raise the nitride
+  rate sevenfold while leaving the oxide rate unchanged.[^kastenmeier-1996])" a parenthetical
+  sentence after it with `kastenmeier-1996` repeated inside (declared: it would otherwise be uncited);
+  step 4 split at its semicolon (continuation).
+* R-TOOLS: Lam 9400 TCP in three lines; DPSII's "**medium**" and Lam 4400's "**weak**" are assignment
+  grades (*Runs this step:*); the strip item's "strong for existence" (*Tool exists:*); the Lam
+  9600/2300 item has no grade and is unchanged. Resources: the 13-word gas parenthetical → 140 form.
+  R-RELATED (Previous · Next · Same module: two base bullets joined, no link changed · Depends on ·
+  Same category · Category page). R-OPENQ labels on five bullets; the thickness bullet → "… is
+  uncertain:" and its three figures as sub-bullets (R-OPENQ step 2; word `against` and one `and`
+  lost), the 15-word parenthetical of the Cypress figure set off by commas instead.
+* Glance box.
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `kastenmeier-1996`,
+  the H3 and labels; every `number_order` change REGROUPED, read. `--strict-words` LOST: `against`,
+  `strength`×4 (and `while`). cov: three flags, pairing noise. inv: OK.
