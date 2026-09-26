@@ -10,6 +10,24 @@
 | **Previous step** | {ref}`WTIAL3 <step-134>` |
 | **Next step** | {ref}`CAPTIW1 <step-136>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the thin dielectric of SKY130's first MiM
+  capacitor by PECVD over the whole wafer, on the blanket metal-3 stack
+  before metal 3 is patterned.
+* **Why:** a capacitor whose plates are metal has no depletion layer,
+  so its capacitance barely changes with bias and its series
+  resistance is small.
+* **Public numbers:** `CMIMA` 2 fF/µm² (limits 1.8–2.2) and `CMIMP`
+  0.19 fF/µm;[^pdk-07] 1.87 fF/µm² and 0.18 fF/µm from the published
+  test-tile sweeps (our extraction).[^raw-data-passives]
+* **Likely SkyWater tool:** PECVD silane "C1" chamber — **strong** for
+  the capability; **inference** for the assignment.[^skw-01]
+* **Not public:** the dielectric's composition, permittivity,
+  thickness and deposition conditions (→ Open questions).
+:::
+
 ## What this step is
 
 `CAPILD` deposits the dielectric of SKY130's first
@@ -19,19 +37,23 @@ that metal is patterned — a thin dielectric film, described in this
 reference as a silicon {term}`oxynitride` (inference, see below), is
 laid over the whole wafer by {term}`PECVD`. A thin conductor film
 (titanium–tungsten on this reference's reading) follows at
-{ref}`CAPTIW1 <step-136>`; the two are then cut into
+{ref}`CAPTIW1 <step-136>`. The two are then cut into
 capacitor *top plates* by the `capm` mask and etch
 ({ref}`CAPM <step-137>`, {ref}`CAPME <step-138>`), and only then is
 metal 3 itself patterned ({ref}`MM3 <step-139>`,
-{ref}`MM3E <step-140>`). The capacitor's *bottom plate* is therefore
+{ref}`MM3E <step-140>`).
+
+The capacitor's *bottom plate* is therefore
 metal 3, its dielectric is this film, and its top plate is the
 conductor of the next step. The PDK's device documentation describes exactly this
 construction: "The MiM capacitor is constructed using a thin
 dielectric over metal, followed by a thin conductor layer on top of
 the dielectric", with "CAPM over Metal-3" and "CAP2M over Metal-4" as
-the two "identical" constructions,[^pdk-07] and its cross-section
+the two "identical" constructions.[^pdk-07] Its cross-section
 drawing for the device labels the dielectric between "M3 (plate 1)"
-and "CAPM" as "CAPILD" — the name of this step.[^pdk-07] The layer
+and "CAPM" as "CAPILD" — the name of this step.[^pdk-07]
+
+The layer
 table calls `capm` (GDS 89:44) the "MiM capacitor plate over
 metal 3",[^pdk-06] and the process stack diagram draws `capm` between
 `metal3` and `metal4`, beside `via3`.[^pdk-04] The second capacitor,
@@ -46,11 +68,13 @@ metal 3",[^pdk-06] and the process stack diagram draws `capm` between
 A close-up of part of the metal-3 level, where a capacitor is built in the next steps; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 3. Before, the blanket metal-3 stack; after, the thin capacitor dielectric over all of it, the film that becomes the dielectric between metal 3 and the top plate. The PDK does not name the material, and this page describes it as a PECVD silicon oxynitride (inference). Its thickness is not public: the stack diagram gives none,[^pdk-04] and 18–33 nm is the page's own arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an assumed permittivity. It is drawn much thicker in proportion than that, and metal 3 is not drawn to scale either. Which refractory film caps metal 3, TiW or Ti/TiN, is not public (the overview of the metal cap sets out the evidence); the figure draws every Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the stack are drawn but not labelled. Not to scale.
 :::
 
+### What the public record shows
+
 What is public about the film is electrical, not physical. The PDK
 gives the capacitor an area capacitance `CMIMA` of 2 fF/µm² (limits
 1.8–2.2), a periphery capacitance `CMIMP` of 0.19 fF/µm, a top-plate
 {term}`sheet resistance` `RSCAPM` of 5.8 Ω/sq, and models valid for
-plate voltages of 0–5.0 V; its e-test table sets the `CMIMP` limits
+plate voltages of 0–5.0 V.[^pdk-07] Its e-test table sets the `CMIMP` limits
 at 0.11–0.27 fF/µm.[^pdk-07]
 
 Measured values are public as well. The SKY130 raw-data repository
@@ -58,15 +82,19 @@ publishes capacitance–voltage sweeps of the test tile's "CAPM on M3"
 capacitors, whose areas and perimeters the pad list
 gives.[^raw-data-testtile-pads][^raw-data-passives] Fitted over
 −3.3 V to +3.3 V, the 11-plate, 17 600 µm² capacitor measures 33.26 pF
-at 0 V. Solving the area-intensive (5 × 35 × 35 µm) and
+at 0 V.
+
+Solving the area-intensive (5 × 35 × 35 µm) and
 periphery-intensive (72 × 2 × 35 µm) structures for an area and a
 periphery term gives 1.87 fF/µm² and 0.18 fF/µm, both inside the
-e-test limits, and those two terms predict the large capacitor to
-within 0.3 %; a copy of it with "seas of via-2's" under the plates
-measures 0.08 % more (our extraction from the published measurements,
+e-test limits. Those two terms predict the large capacitor to
+within 0.3 %. A copy of it with "seas of via-2's" under the plates
+measures 0.08 % more. These values are our extraction from the published measurements,
 with no correction for pad and wiring capacitance; the files record no
 measurement frequency, temperature, date or
-wafer).[^raw-data-passives]
+wafer.[^raw-data-passives]
+
+### How the thickness is estimated
 
 Neither the dielectric's
 thickness nor its permittivity is labelled anywhere in the PDK; the
@@ -75,15 +103,22 @@ The PDK does not name the dielectric. This reference describes it as
 a PECVD silicon oxynitride (inference): SkyWater's capability list
 includes "PECVD silane oxide/nitride/oxynitride, C1 – low temp, range
 of R.I. options",[^skw-01] and PECVD nitride and oxynitride were the
-MiM dielectrics of the period.[^kar-roy-1999][^ng-2003] From the
+MiM dielectrics of the period.[^kar-roy-1999][^ng-2003]
+
+From the
 capacitance density one can
-bound the thickness: with {math}`C/A = \varepsilon_0 k / d`, a film
-giving 2 fF/µm² is {math}`d \approx 4.4\,\mathrm{nm} \times k`, so
-about 18 nm for an oxide-like {math}`k = 4`, 22–27 nm for a mid-range
-oxynitride ({math}`k \approx 5`–6) and 33 nm for the {math}`k = 7.5`
-the PDK labels for its nitride films (TOPNIT, SPNIT).[^pdk-04] With
-the measured 1.87 fF/µm² instead, the factor is about 4.7 nm and each
-thickness about 7 % larger.[^raw-data-passives] This is our arithmetic
+bound the thickness:
+
+1. With {math}`C/A = \varepsilon_0 k / d`, a film
+   giving 2 fF/µm² is {math}`d \approx 4.4\,\mathrm{nm} \times k`.
+2. About **18 nm** for an oxide-like {math}`k = 4`, **22–27 nm** for a mid-range
+   oxynitride ({math}`k \approx 5`–6) and **33 nm** for the {math}`k = 7.5`
+   the PDK labels for its nitride films (TOPNIT, SPNIT).[^pdk-04]
+3. With
+   the measured 1.87 fF/µm² instead, the factor is about 4.7 nm and each
+   thickness about 7 % larger.[^raw-data-passives]
+
+This is our arithmetic
 with an assumed permittivity, not a published number; 1–2 fF/µm² is
 also the density the published Al-BEOL
 PECVD-nitride MiM processes of the period reported.[^kar-roy-1999]
@@ -93,15 +128,21 @@ PECVD-nitride MiM processes of the period reported.[^kar-roy-1999]
 `CAPILD` is a {ref}`Thin-film deposition <category-deposition>` step
 of the *PECVD dielectric* class — the category page's PECVD section
 — but it is one of the two PECVD films in the flow deposited *as a
-device layer* (with {ref}`CAPILD2 <step-150>`): its thickness sets a
-capacitance the models promise, not a spacing the design rules merely
-bound. That changes the priorities.
-Uniformity, wafer-to-wafer repeatability, low pinhole density,
-breakdown strength at 5 V across some 20–30 nm (a field of order
-2 MV/cm; our arithmetic), low leakage and a small, stable voltage
-coefficient matter here in the way they matter for a gate oxide, and
-{term}`step coverage` does not, because the film lies on a blanket,
-freshly sputtered, planar metal surface. Its nearest relative in the
+device layer* (with {ref}`CAPILD2 <step-150>`).
+
+**Specific to this step:**
+
+* The film's thickness sets a
+  capacitance the models promise, not a spacing the design rules merely
+  bound. That changes the priorities.
+* Uniformity, wafer-to-wafer repeatability, low pinhole density,
+  breakdown strength at 5 V across some 20–30 nm (a field of order
+  2 MV/cm; our arithmetic), low leakage and a small, stable voltage
+  coefficient matter here in the way they matter for a gate oxide.
+  {term}`Step coverage <step coverage>` does not, because the film lies on a blanket,
+  freshly sputtered, planar metal surface.
+
+Its nearest relative in the
 flow is the {ref}`LINIT <step-104>` nitride over the local
 interconnect; its closest published analogues are the PECVD nitride
 and oxynitride MiM dielectrics of the 0.25–0.13 µm mixed-signal
@@ -110,12 +151,17 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
 ## Why this step exists
 
 * **An analogue capacitor with metal plates.** SkyWater and Google
-  list MiM capacitors among SKY130's features — "Optional MiM
-  capacitors" in the PDK's README, which also counts MiM capacitors
-  among the "normally optional features" SKY130 includes "as
-  standard";[^pdk-10] "MiM Capacitor" in the S130 platform
-  table;[^skw-02] and "MiM capacitors" among the "normally optional
-  features" SKY130 offers "as standard".[^ann-11] A
+  list MiM capacitors among SKY130's features:
+  - "Optional MiM
+    capacitors" in the PDK's README, which also counts MiM capacitors
+    among the "normally optional features" SKY130 includes "as
+    standard";[^pdk-10]
+  - "MiM Capacitor" in the S130 platform
+    table;[^skw-02]
+  - "MiM capacitors" among the "normally optional
+    features" SKY130 offers "as standard".[^ann-11]
+
+  A
   capacitor whose plates are metal has no
   depletion layer, so its capacitance barely changes with bias and
   its series resistance is small; the alternatives — a poly–poly or
@@ -129,11 +175,15 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   dielectric on the blanket metal, and defining the top plate before
   the bottom metal is etched, gives the capacitor a perfectly planar
   bottom plate with no topography under the thin film and no
-  sidewall at which it could thin or leak; the whole sandwich is made
+  sidewall at which it could thin or leak.
+
+  The whole sandwich is made
   in three depositions with one extra mask. This is the scheme of the
   Newport Fab patent,[^pat-mim-newportfab] and, we infer from the PDK's
   description of a thin dielectric over metal followed by a thin
-  conductor,[^pdk-07] SKY130's; IBM's patent reaches a planar bottom plate by
+  conductor,[^pdk-07] SKY130's.
+
+  IBM's patent reaches a planar bottom plate by
   damascene and CMP instead.[^pat-mim-ibm] The price is that
   the metal-3 etch must later cut through the dielectric wherever it
   remains ({ref}`MM3E <step-140>`).
@@ -141,11 +191,13 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   has the highest permittivity of the three (k ≈ 7.5 on the PDK's own
   labelling[^pdk-04]) and so the highest density per thickness, but it
   traps charge and shows a frequency-dependent ("dispersive")
-  capacitance, as Van Huylenbroeck et al. showed;[^van-huylenbroeck-2002] oxide is more
+  capacitance, as Van Huylenbroeck et al. showed.[^van-huylenbroeck-2002]
+
+  Oxide is more
   linear but needs to be thinner for the same density. Ng, Chew and
   Chu compared PECVD nitride and oxynitride MiM capacitors and found
   both gave low leakage, high breakdown field, no dispersion and good
-  linearity;[^ng-2003] the composition — and hence {math}`k` — of a
+  linearity.[^ng-2003] The composition — and hence {math}`k` — of a
   PECVD oxynitride is set by the N₂O/NH₃ ratio, as Denisse et al.
   and Bose, Bose and Basa characterised.[^denisse-1986][^bose-2002]
   SkyWater's "range of R.I. options"[^skw-01] is the public trace of
@@ -156,7 +208,9 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   the {math}`C(V)` curvature in amorphous dielectrics.[^blonkowski-2007][^gonon-2007]
   Whether the PDK publishes coefficients for `cap_mim` is not
   something we could confirm; the device page lists only the three
-  parameters above.[^pdk-07] The published C–V sweeps of the four
+  parameters above.[^pdk-07]
+
+  The published C–V sweeps of the four
   first-level test structures fit quadratic coefficients of +32 to
   +40 ppm/V² over ±3.3 V, and the fitted capacitance at ±3.3 V is
   within 0.05 % of that at 0 V (our fit); they contain no temperature
@@ -168,15 +222,17 @@ rather than a capacitor.
 
 ## How it is typically performed
 
-An industry-generic PECVD MiM-dielectric deposition on an aluminium
-back end (SKY130's recipe is not public):
+*An industry-generic PECVD MiM-dielectric deposition on an aluminium
+back end (SKY130's recipe is not public):*
 
 1. **Surface.** The wafer comes from the {term}`PVD` cluster with its
-   refractory cap exposed ({ref}`WTIAL3 <step-134>`; TiW or TiN, which
-   the public record does not settle,
-   {ref}`overview-metal-cap`); the cap is the actual bottom
+   refractory cap exposed ({ref}`WTIAL3 <step-134>`). The cap is TiW or TiN, which
+   the public record does not settle
+   ({ref}`overview-metal-cap`); the cap is the actual bottom
    electrode surface, and its smoothness and cleanliness set the
-   leakage. Some flows pre-treat the electrode in an NH₃ or N₂
+   leakage.
+
+   Some flows pre-treat the electrode in an NH₃ or N₂
    plasma — the Philips patent claims an ammonia-plasma treatment of
    the bottom electrode to reduce its oxidation[^pat-mim-philips] —
    and the queue time from PVD to deposition is limited (industry
@@ -194,6 +250,7 @@ back end (SKY130's recipe is not public):
    2 fF/µm²,[^pdk-07] deposited in tens of seconds (industry-typical
    for PECVD rates[^txt-05]), and controlled to
    a few per cent because capacitance scales inversely with it.
+
    Kar-Roy et al. report 1.0–2.0 fF/µm² from a PECVD
    nitride;[^kar-roy-1999] Babcock et al. found nitride MiM linearity
    close to that of oxide at 1 MHz but degrading at lower frequencies
@@ -218,13 +275,16 @@ back end (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **PECVD silane "C1" chamber.** SkyWater lists "PECVD silane
-  oxide/nitride/oxynitride, C1 – low temp, range of R.I.
-  options".[^skw-01] Strength: **strong** for the capability, since
-  it is the only oxynitride process on the list; the assignment of
-  this chamber to this step is an **inference** from the film type
-  described here and the low-temperature option, and the reading of "C1" as a
-  Novellus Concept One[^novellus-history] is also an **inference**.
+* **PECVD silane "C1" chamber**
+  - *SkyWater says:* lists "PECVD silane
+    oxide/nitride/oxynitride, C1 – low temp, range of R.I.
+    options".[^skw-01]
+  - *Tool exists:* **strong** for the capability, since
+    it is the only oxynitride process on the list.
+  - *Runs this step:* the assignment of
+    this chamber to this step is an **inference** from the film type
+    described here and the low-temperature option, and the reading of "C1" as a
+    Novellus Concept One[^novellus-history] is also an **inference**.
 * **PECVD TEOS "C2 and Producer"**[^skw-01] is not a nitride source
   and is unlikely here (weak).
 
@@ -241,15 +301,16 @@ back end (SKY130's recipe is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`WTIAL3 <step-134>` (the metal-3 stack that is the
-  bottom plate). Next: {ref}`CAPTIW1 <step-136>` (the top-plate
+  bottom plate).
+* Next: {ref}`CAPTIW1 <step-136>` (the top-plate
   metal), then {ref}`CAPM <step-137>` and {ref}`CAPME <step-138>`.
-* The etch that later removes this film outside the capacitors:
-  {ref}`MM3E <step-140>`; the via that contacts the finished top
-  plate: {ref}`VIM3 <step-144>`, {ref}`VIM3E <step-145>`.
-* The second capacitor, over metal 4: {ref}`CAPILD2 <step-150>`,
+* Same module: the second capacitor, over metal 4, {ref}`CAPILD2 <step-150>`,
   {ref}`CAPTIW2 <step-151>`, {ref}`CAP2M <step-152>`,
   {ref}`CAP2ME <step-153>`.
-* Other nitride films of the flow: {ref}`LINIT <step-104>`.
+* Feeds: the etch that later removes this film outside the capacitors,
+  {ref}`MM3E <step-140>`; the via that contacts the finished top
+  plate, {ref}`VIM3 <step-144>`, {ref}`VIM3E <step-145>`.
+* Same category: other nitride films of the flow, {ref}`LINIT <step-104>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -348,32 +409,37 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The dielectric's composition, permittivity, thickness and
+* **Composition and thickness.** The dielectric's composition, permittivity, thickness and
   deposition conditions are not public; 18–33 nm is our estimate
   from the 2 fF/µm² of the PDK[^pdk-07] with an assumed {math}`k`
   (about 7 % more from the measured 1.87 fF/µm²[^raw-data-passives]).
-* Whether the film is a single oxynitride or an oxide/nitride stack,
+* **Single film or stack.** Whether the film is a single oxynitride or an oxide/nitride stack,
   and whether it receives a plasma treatment or anneal, is not public.
-* The PDK is not self-consistent here. The device page, the layer
+* **The capacitor's metal level.** The PDK is not self-consistent here. The device page, the layer
   table and the stack diagram place `capm` over metal
-  3,[^pdk-07][^pdk-06][^pdk-04] but the `capm` periphery rules (values
-  "N/A") name `met2` and `via2` ("Minimum enclosure of capm
-  (top_plate) by met2", "Min enclosure of via2 by capm", "Min spacing
-  between capm and via2"), the via2 rule table says via2 connects
-  "met2/capm to met3 in the SKY130DI* flow",[^pdk-periph] and the
-  extraction table describes `cap_mim` with via2, m3 and "capm-m2"
-  terminals.[^pdk-08] We follow the metal-3 reading, which the test
+  3,[^pdk-07][^pdk-06][^pdk-04] but:
+  - the `capm` periphery rules (values
+    "N/A") name `met2` and `via2` ("Minimum enclosure of capm
+    (top_plate) by met2", "Min enclosure of via2 by capm", "Min spacing
+    between capm and via2");[^pdk-periph]
+  - the via2 rule table says via2 connects
+    "met2/capm to met3 in the SKY130DI* flow";[^pdk-periph]
+  - the
+    extraction table describes `cap_mim` with via2, m3 and "capm-m2"
+    terminals.[^pdk-08]
+
+  We follow the metal-3 reading, which the test
   tile's pad documentation shares ("CAPM on M3")[^raw-data-testtile-pads]
-  and which the `cap_mim` cross-section supports further: the
+  and which the `cap_mim` cross-section supports further (inference). The
   cross-section labels the via that lands on "CAPM" — the only via it
   labels — "Via3";[^pdk-07] the met2/via2
   wording may come from a flow variant with the capacitor one level
   lower (inference).
-* Whether voltage and temperature coefficients for `cap_mim` are
+* **Voltage and temperature coefficients.** Whether voltage and temperature coefficients for `cap_mim` are
   published in the PDK models is not confirmed here; the published
   test-tile sweeps give a voltage dependence but no temperature
   dependence.[^raw-data-passives]
-* The mask table lists "Capacitor MiM, CAPM" without the "used in
+* **Capacitor steps on every lot.** The mask table lists "Capacitor MiM, CAPM" without the "used in
   SKY130" flag,[^pdk-05] consistent with the README's "optional"
   wording;[^pdk-10] whether every SKY130 lot carries the capacitor
   steps is not public.
