@@ -377,3 +377,30 @@ page. No edit of any kind inside an in-force `{dropdown}`.
 * `check_preserved --allow-regrouped`: the one LOST line is the rule table above; ADDED outside the
   glance only "This is", the H3, the table header and labels; every other `number_order` change
   REGROUPED, read. `--strict-words` LOST: `page`, `strength`×3. cov: one flag, pairing noise. inv: OK.
+
+### 163 MM5E — done (base `5a83c838`)
+
+* Lead (base 138): two paragraphs (74, 67). The 59-word "Through the resist … removes the
+  metal-5 stack of WTIAL5 — on this reference's reading a TiW cap, … — everywhere outside …" keeps
+  its main clause; the dash aside follows it as "The stack is, on this reference's reading, a TiW
+  cap, …[^cyp-qtp-123907] (overview-metal-cap)." (declared "The stack is", 155 form; the hedge "on
+  this reference's reading" and the marker travel with it). `number_order` LOST line
+  ('1.2', '2014', '72', '20') re-paired by hand: the dash material (1.2 µm, 2014) now follows the
+  clause with GDS 72:20; same digits, same claims.
+* `**How thick is the metal?**` → `### How thick is the metal?` (155 form), three paragraphs, the
+  62-word sentence split at its semicolons.
+* R-CATEGORY (155/145 form): classification sentence alone; MM1E pointer paragraph; the "What is
+  specific … is the depth of metal …" paragraph kept whole with its elaborating sentences (D4),
+  its 47-word sentence's dash aside "Krogh et al. followed … spectroscopy.[^krogh-1987]" moved,
+  unchanged, directly after it (the list around it now joined by a comma); the pattern-density and
+  no-dielectric sentences a second paragraph (the first would otherwise be 101 words).
+* Why: four items split at their semicolons, two with continuation paragraphs; the charging item's
+  12-word trailing hedge a parenthetical sentence ("(Inference; Wang, Ackaert et al. showed …
+  antenna.[^wang-2004-mim])").
+* How: scope sentence italic; step 1 split at its semicolon; step 3 and step 8 with continuation
+  paragraphs; step 7's two dash asides moved after the sentence (155 form).
+* R-TOOLS (155 form). Resources: 140/155 form for the 20-word gas parenthetical. R-RELATED (155
+  labels). R-OPENQ: thickness bullet split at its semicolon; labels on two bullets. Glance (155 form).
+* `check_preserved --allow-regrouped`: the one LOST line is above; ADDED outside the glance only "The
+  stack is", the H3 and labels; everything else REGROUPED, read. `--strict-words` LOST: `strength`×2.
+  cov: two flags, pairing noise (quick facts; the moved step-7 asides keep `skw-01`). inv: OK.
