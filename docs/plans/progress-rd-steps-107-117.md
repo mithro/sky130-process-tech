@@ -310,3 +310,41 @@ per page.
   line); the k₁ and ITRS splits (each sentence keeps its own markers). None lost a marker or hedge.
 * **Left over the caps:** Exposure item lead (36 words, one sentence whose dash pair is an
   attribution). Nothing over the §1 caps.
+
+### 114 MM1E — done
+
+* **Kept verbatim** (the S8 figure agent's note): "the spaces it opens — 0.14 µm wide and 0.36 µm
+  deep" (no marker; the page defines no `[^pdk-04]`) and "the 0.36 µm stack clears in well under a
+  minute" stay as written — see Content problems. Both stack descriptions keep their wording.
+* **R-H3:** none (the post-figure passage is under 120 words).
+* **Lead:** base 151 words → three paragraphs (§4.1 note ¹). The 105-word second sentence: its dash
+  material (the two stacks) becomes two sentences after the main one — "The stack is, on the 2013
+  Cypress description …[^cyp-qtp-113005] On the stack qualified in 2013–2014, it is 500 Å …
+  [^cyp-qtp-123907] (…)" ("The stack is", "it is" added by the split); ", so that what remains"
+  → ". So what remains" (the ", so" split form). This reorder is the one `number_order` LOST: the
+  stack figures now follow the `met1` numbers (68:20, 0.140); every number is present, hand-checked.
+* **R-CATEGORY:** classification ends after "(MM2E to MM5E)" (29 words); "What is specific to metal 1 …"
+  is its own label (step 3), a paragraph; "What is specific to the class is that X, and that Y" →
+  "… is that:[^hess-1982][^nojiri-2015]" and two plain bullets (the markers ended the enumerating
+  sentence, so they sit on the lead-in, R-LIST step 1).
+* **R-LIST/R-PARA (Why):** "The films etch differently:" → four sub-bullets, each with its own
+  marker; the copper-chloride clause stays with the Al–Cu bullet it qualifies (a paragraph may not
+  open on "but"). Charging: lead ends at "damage:".
+* **How:** Chamber lead + continuation. BARC and cap open: split before "A TiW cap"; the dash pair's
+  closing "— while a TiN cap" → ". A TiN cap" (the contrast stays readable from the parallel
+  sentences; "while" lost). Main etch: lead + continuation; the source's line break after "boron-"
+  (rendered "boron- chloride") joined. Strip and clean: the ash-tool dash material and the 14-word
+  solvent parenthetical move, unchanged, to directly after the sentence, as on 108. Metrology: the
+  test-tile sentence as a continuation.
+* **R-TOOLS:** both items in the three-line form; "(inference)" for the 2300 stays with its clause.
+* **R-REPEAT:** considered for the two Lam quotations in the post-figure paragraph and under Machines
+  likely used; **not applied** — the lead copy adds "two metal etchers by name" and "whose material
+  lists match this stack" (batch-7b ruling D1).
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Feeds
+  (VIME), Same category; italic scope lead-in.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box. LOST
+  words "strength"×2 (R-TOOLS), "that"×2 (", so that", "and that"), "while".
+* **Coverage flags read:** the stack sentences took their own markers with them; the Complete
+  clearing and class bullets carry their own or the lead-in's markers. None lost a marker or hedge.
+* **Left over the caps:** Metrology item lead (35 words, a list of methods in one sentence). Nothing
+  over the §1 caps.
