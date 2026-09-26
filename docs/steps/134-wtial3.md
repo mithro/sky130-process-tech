@@ -27,6 +27,7 @@
   refractory film the cap is, and the deposition conditions (→ Open
   questions).
 :::
+
 ## What this step is
 
 `WTIAL3` deposits the metal-3 film stack — the first *thick* metal
