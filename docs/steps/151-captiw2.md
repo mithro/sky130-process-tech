@@ -10,28 +10,50 @@
 | **Previous step** | {ref}`CAPILD2 <step-150>` |
 | **Next step** | {ref}`CAP2M <step-152>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the top-plate film of the second MiM capacitor, a
+  blanket film over the thin dielectric of {ref}`CAPILD2 <step-150>`;
+  this reference describes it as sputtered TiW (inference).
+* **Why:** the dielectric alone is an insulator on metal 4; the plate
+  makes it a capacitor.
+* **Public numbers:** a "MiM2 top plate sheet resistance" of 5.8 Ω/sq
+  (limits 4.8–6.8).[^pdk-07]
+* **Likely SkyWater tool:** AMAT PVD Metal platform, TiW chamber —
+  **strong** for the vendor and the material; the platform model and
+  the use of the chamber that caps the aluminium stacks are
+  **inferences**.[^skw-01]
+* **Not public:** the plate's thickness, composition and deposition
+  conditions, and the `cap2m` rules (→ Open questions).
+:::
+
 ## What this step is
 
-`CAPTIW2` deposits the top-plate film of the second {term}`MiM capacitor`: a
+`CAPTIW2` deposits the top-plate film of the second {term}`MiM capacitor`. It is a
 blanket titanium–tungsten layer sputtered over the thin dielectric of
 {ref}`CAPILD2 <step-150>`, which lies on the unpatterned metal-4 stack
 of {ref}`WTIAL4 <step-149>`. For a few steps the wafer carries a
 complete metal–insulator–metal sandwich across its whole surface: the
-metal-4 conductor, the capacitor dielectric and this plate film. The
+metal-4 conductor, the capacitor dielectric and this plate film.
+
+The
 {ref}`CAP2M <step-152>` mask and {ref}`CAP2ME <step-153>` etch then
 leave the film only where the layout draws `cap2m`, "MiM capacitor plate
 over metal 4" (GDS 97:44),[^pdk-06] and {ref}`MM4 <step-154>` /
 {ref}`MM4E <step-155>` afterwards cut the metal beneath into bottom
 plates and the rest of the metal-4 wiring. The step list calls this
-step "Capacitor TiW deposition";[^steps-sheet] a step name is not
-evidence of a chemistry. The PDK calls the top plate
+step "Capacitor TiW deposition".[^steps-sheet] A step name is not
+evidence of a chemistry.
+
+The PDK calls the top plate
 only "a thin conductor layer on top of the dielectric" and does not name
-its material;[^pdk-07] this reference describes it as sputtered TiW
-(inference: TiW is on SkyWater's PVD film list[^skw-01] and caps the
+its material.[^pdk-07] This reference describes the plate as sputtered TiW.
+(Inference: TiW is on SkyWater's PVD film list[^skw-01] and caps the
 aluminium stacks on the 2013 Cypress description of this fab, though
 not on the stack qualified in 2013–2014
 ({ref}`overview-metal-cap`), and the PDK's sheet resistance fits about
-0.1 µm of it, as set out below). The step is the second-level repeat of
+0.1 µm of it, as set out below.) The step is the second-level repeat of
 {ref}`CAPTIW1 <step-136>`.
 
 :::{figure} /_static/figures/mim-151-captiw2.svg
@@ -44,13 +66,15 @@ A close-up of part of the metal-4 level; the lower part of the slice is cut off,
 
 The PDK gives this plate a "MiM2 top plate sheet resistance" of
 5.8 Ω/sq (limits 4.8–6.8), the same as the first capacitor's
-plate.[^pdk-07] Its thickness is not public, but the sheet resistance
+plate.[^pdk-07]
+
+The plate's thickness is not public, but the sheet resistance
 bounds it as at {ref}`CAPTIW1 <step-136>`: for a sputtered Ti:W
-resistivity of 50–100 µΩ·cm (textbook range for refractory barrier
+resistivity of 50–100 µΩ·cm a 5.8 Ω/sq sheet corresponds to
+{math}`d = \rho / R_s \approx 0.09`–0.17 µm. (Textbook range for refractory barrier
 films;[^txt-02] Hartsough's 1979 paper is titled *Resistivity of
 bias-sputtered TiW films*; its values are not publicly
-readable[^hartsough-1979]) a 5.8 Ω/sq sheet corresponds to
-{math}`d = \rho / R_s \approx 0.09`–0.17 µm. We therefore read the plate
+readable.[^hartsough-1979]) We therefore read the plate
 as roughly 0.1 µm of TiW (inference; our arithmetic), the same as the
 first plate because the PDK calls the two constructions
 "identical".[^pdk-07]
@@ -58,11 +82,13 @@ first plate because the PDK calls the two constructions
 The plate has a different future from its twin one level down. It will
 be buried in the via-4 dielectric of {ref}`NILD6 <step-156>`, 0.505 µm
 thick above metal 4 on the PDK's stack diagram against 0.39 µm for via 3
-above metal 3,[^pdk-04] and it will be contacted by a via-4 opening that
-the rules allow only as a 0.800 µm square (via4.1, via4.3)[^pdk-periph]
-— four times the width of the ordinary 0.200 µm via 3 (via3.1); the
+above metal 3.[^pdk-04]
+
+The plate will be contacted by a via-4 opening that
+the rules allow only as a 0.800 µm square (via4.1, via4.3).[^pdk-periph]
+That is four times the width of the ordinary 0.200 µm via 3 (via3.1); the
 rules also allow a 0.800 µm square via 3 inside `areaid.mt`
-(via3.1a)[^pdk-periph] — which lands on the plate as the
+(via3.1a).[^pdk-periph] The opening lands on the plate as the
 {ref}`VIM4E <step-160>` etch finishes. In the PDK's stacked
 cross-section the plate is joined upward to "M5 (plate 1)", the label
 the drawing also gives the metal-5 shape joined through metal 4 to "M3
@@ -71,14 +97,19 @@ the drawing also gives the metal-5 shape joined through metal 4 to "M3
 ## Step category
 
 `CAPTIW2` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *PVD, refractory metal* class; the category page's account of
+of the *PVD, refractory metal* class.
+
+The category page's account of
 magnetron sputtering applies, and {ref}`TIAL6 <step-112>` describes the
-same material as the cap of the aluminium stacks. As at
+same material as the cap of the aluminium stacks.
+
+As at
 {ref}`CAPTIW1 <step-136>`, what is specific is the substrate: a device
 electrode sputtered onto a dielectric some 20–30 nm thick (our estimate
 at {ref}`CAPILD2 <step-150>`). An argon {term}`sputter etch` pre-clean
 of a few nanometres would remove a large fraction of that dielectric,
-so on our reading it is omitted or made very light, and the film's
+so on our reading it is omitted or made very light (inference from the
+geometry). The film's
 stress and deposition energy matter because the layer beneath is thin
 (inference from the geometry).
 
@@ -88,46 +119,55 @@ stress and deposition energy matter because the layer beneath is thin
   insulator on metal 4; the plate makes it a capacitor. Because the top
   plate is deposited over the whole wafer and patterned by its own mask
   *before* the metal beneath is etched, the plate edge sits on a flat,
-  continuous dielectric and the capacitance is set by the drawn `cap2m`
+  continuous dielectric.
+
+  The capacitance is set by the drawn `cap2m`
   area plus a periphery term — `CMIM2A` 2 fF/µm² and `CMIM2P`
   0.19 fF/µm.[^pdk-07] This is the top-plate-first order of the Newport
   Fab patent, which deposits dielectric and top-plate metal on
-  unpatterned interconnect metal;[^pat-mim-newportfab] Kar-Roy et al.
+  unpatterned interconnect metal.[^pat-mim-newportfab] Kar-Roy et al.
   and Babcock et al. describe PECVD-nitride MiMs in aluminium back
   ends.[^kar-roy-1999][^babcock-2001]
 * **Why TiW, on this reading.** The plate must sputter at low temperature onto a
   dielectric without reacting with it, etch with high {term}`selectivity`
   to that dielectric ({ref}`CAP2ME <step-153>`), survive the chlorine
   metal etch under resist and serve as the stop for the fluorocarbon via
-  etch, and already be in the fab. TiW caps the aluminium levels on
+  etch, and already be in the fab.
+
+  TiW caps the aluminium levels on
   the 2013 Cypress description of this fab but not on the stack
   qualified in 2013–2014 ({ref}`TIAL6 <step-112>`,
   {ref}`overview-metal-cap`), and "TiW" is on SkyWater's PVD
-  list;[^skw-01] it is a barrier whose properties Nicolet reviewed and Ghate
-  et al. established;[^nicolet-1978][^ghate-1978] Liu and Kuo showed
+  list.[^skw-01] It is a barrier whose properties Nicolet reviewed and Ghate
+  et al. established.[^nicolet-1978][^ghate-1978] Liu and Kuo showed
   that TiW etches by reactive-ion etching in CF₄-based
   plasmas,[^liu-2007-tiw] Danzl and McLaurin removed a TiW cap from
   aluminium pads in hydrogen peroxide,[^danzl-1997] and the fab's metal
   etchers are qualified for it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]).
+
   The published alternatives include the titanium nitride, tantalum
   nitride or aluminium top plates of the Newport Fab
   patent,[^pat-mim-newportfab] the TaN, TiN, Al, Cu, Ru or Ir plates of
   Freescale's[^pat-mim-freescale] and TI's aluminium-capped Ta/TaN top
   electrode for a copper back end ("ALCAP").[^pat-mim-ti-alcap]
 * **Series resistance of a stacked pair.** The plate's 5.8 Ω/sq[^pdk-07]
-  sits in series with the capacitor; the PDK's stacked cross-section
+  sits in series with the capacitor.
+
+  The PDK's stacked cross-section
   shows more than one via shape on each plate (our reading of the
-  artwork; the drawing labels the vias only as "Via3" and
-  "Via4"[^pdk-07]), the layout by which the
+  artwork), the layout by which the
   PDK's sub-circuit model — which "accounts for the parasitic contact
   resistance"[^pdk-07] — keeps that resistance small (inference from
-  the drawing). Ng et al. review MiM integration choices in Al–Cu and
+  the drawing). The drawing labels the vias only as "Via3" and
+  "Via4".[^pdk-07] Ng et al. review MiM integration choices in Al–Cu and
   copper back ends.[^ng-2005]
 * **Stress on a thin dielectric.** Sputtered W-rich films are
-  compressive or tensile according to pressure and composition —
+  compressive or tensile according to pressure and composition.
   Thornton's structure-zone model[^thornton-1974] and Dirks, Wolters and
   De Veirman's study of the columnar microstructure of sputtered W and
-  W–Ti(N)[^dirks-1992] describe the dependence — and a stressed plate
+  W–Ti(N)[^dirks-1992] describe the dependence.
+
+  A stressed plate
   can crack or lift a thin dielectric; the deposition pressure is chosen
   for low stress as well as low resistivity (industry practice[^ohring-2002]).
 
@@ -136,9 +176,9 @@ second capacitor's top terminal would not exist.
 
 ## How it is typically performed
 
-An industry-generic MiM top-plate deposition for a 200 mm aluminium
+*An industry-generic MiM top-plate deposition for a 200 mm aluminium
 back end (SKY130's recipe is not public); the sequence is that of
-{ref}`CAPTIW1 <step-136>`.
+{ref}`CAPTIW1 <step-136>`.*
 
 1. **{term}`Queue time <queue time>`.** The dielectric surface should not sit long in air;
    moisture and hydrocarbons at the interface raise leakage (industry
@@ -152,7 +192,7 @@ back end (SKY130's recipe is not public); the sequence is that of
 3. **Sputtering.** DC magnetron sputtering from a Ti:W target — 10 wt.%
    Ti is the standard composition[^pat-tiw-hitachi] — in argon at a few
    mTorr, with the wafer well below the aluminium limit
-   (industry-typical[^txt-02]); Hill and Dirks et al. describe how
+   (industry-typical[^txt-02]). Hill and Dirks et al. describe how
    sputtered Ti–W and W–Ti(N) films depend on the deposition
    conditions.[^hill-1980][^dirks-1992]
 4. **Thickness.** Of the order of 0.1 µm, from the 5.8 Ω/sq of the
@@ -177,11 +217,14 @@ back end (SKY130's recipe is not public); the sequence is that of
 
 ## Machines likely used at SkyWater
 
-* **AMAT PVD Metal platform, TiW chamber.** SkyWater lists "AMAT PVD
-  Metal" with "TiW" among its films.[^skw-01] Strength: **strong** for
-  the vendor and the material; the platform model (Endura is the 200 mm-era
-  Applied Materials platform[^amat-endura]) and the use of the chamber
-  that caps the aluminium stacks are **inferences**.
+* **AMAT PVD Metal platform, TiW chamber**
+  - *SkyWater says:* lists "AMAT PVD
+    Metal" with "TiW" among its films.[^skw-01]
+  - *Tool exists:* **strong** for
+    the vendor and the material.
+  - *Runs this step:* the platform model (Endura is the 200 mm-era
+    Applied Materials platform[^amat-endura]) and the use of the chamber
+    that caps the aluminium stacks are **inferences**.
 * **Lam 9600 / Lam 2300 Versys** metal etchers qualified for
   "TiW"[^skw-01] corroborate that TiW is a patterned film in this fab
   (used at {ref}`CAP2ME <step-153>`).
@@ -197,15 +240,17 @@ back end (SKY130's recipe is not public); the sequence is that of
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CAPILD2 <step-150>` (the dielectric it covers). Next:
+* Previous: {ref}`CAPILD2 <step-150>` (the dielectric it covers).
+* Next:
   {ref}`CAP2M <step-152>` (the top-plate mask), then
   {ref}`CAP2ME <step-153>` (the etch that leaves the plates).
-* The bottom plate beneath: {ref}`WTIAL4 <step-149>`, patterned later
+* Same module: the first capacitor's plate, {ref}`CAPTIW1 <step-136>`.
+* Depends on: the bottom plate beneath, {ref}`WTIAL4 <step-149>`, patterned later
   at {ref}`MM4 <step-154>` / {ref}`MM4E <step-155>`.
-* The via that lands on the finished plate: {ref}`VIM4E <step-160>`;
-  the polish that must not reach it: {ref}`CMPM4 <step-157>`.
-* The first capacitor's plate: {ref}`CAPTIW1 <step-136>`; the same film
-  as a cap on the aluminium stacks: {ref}`TIAL6 <step-112>`.
+* Feeds: the via that lands on the finished plate, {ref}`VIM4E <step-160>`;
+  the polish that must not reach it, {ref}`CMPM4 <step-157>`.
+* Same category: the same film
+  as a cap on the aluminium stacks, {ref}`TIAL6 <step-112>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -275,23 +320,23 @@ back end (SKY130's recipe is not public); the sequence is that of
 
 ## Open questions
 
-* The plate's thickness, composition (Ti fraction, any nitrogen) and
+* **Thickness and composition.** The plate's thickness, composition (Ti fraction, any nitrogen) and
   deposition conditions are not public; ~0.1 µm is our estimate from the
   PDK's 5.8 Ω/sq[^pdk-07] with an assumed resistivity, and the reading
   that it repeats {ref}`CAPTIW1 <step-136>` rests on the PDK calling the
   constructions identical.
-* Whether a pre-clean precedes the deposition, and the queue-time limit
+* **Pre-clean and queue time.** Whether a pre-clean precedes the deposition, and the queue-time limit
   between dielectric and plate, are not public.
-* Whether the plate is a single TiW film or carries a thin cap is not
+* **Plate and cap films.** Whether the plate is a single TiW film or carries a thin cap is not
   public; neither is whether the metal-4 cap beneath the dielectric is
   TiW or TiN, which bears on the plate material and on what
   {ref}`CAP2ME <step-153>` can stop on
   ({ref}`overview-metal-cap`).
-* The PDK publishes no `cap2m` rules, so the plate's enclosure by
+* **The `cap2m` rules.** The PDK publishes no `cap2m` rules, so the plate's enclosure by
   metal 4 and of via 4 are not known;[^pdk-periph] the level
   inconsistencies in the PDK's MiM entries are set out at
   {ref}`CAPILD2 <step-150>`.
-* The 0.1 µm plate thickness follows from a textbook resistivity range
+* **Resistivity assumption.** The 0.1 µm plate thickness follows from a textbook resistivity range
   that cannot be checked from a public abstract; a factor of two in
   resistivity is a factor of two in thickness.
 

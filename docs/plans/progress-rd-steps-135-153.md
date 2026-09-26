@@ -375,3 +375,38 @@ Base `dbcbbff4`. Caps before: 6 paragraphs, 8 items, 14 sentences over; after: 0
 * Preservation: ADDED = the glance box (markers, numbers, the quote "C1" ×2, hedges, identifiers) and
   the repeated `pdk-07`; REGROUPED lines read. `--strict-words`: LOST `strength`; `while`, `it`
   non-strict.
+
+### 151 CAPTIW2 — done
+
+Base `2a4a383c`. Caps before: 4 paragraphs, 4 items, 9 sentences over; after: 0/0/0. Lead 201 words
+(base 198) in three paragraphs; first sentence 10 words (base 30). Same treatment as 136 wherever the
+two pages share wording.
+
+* Lead: first sentence split at the colon ("It is a blanket titanium–tungsten layer …"); the step-list
+  sentence at its semicolon; the TiW sentence as on 136 ("it" → "the plate"; its "(inference: …)"
+  parenthetical as the following sentence "(Inference: … as set out below.)").
+* Post-figure: "Its thickness" → "The plate's thickness" (new paragraph); the 24-word "(textbook range
+  …; Hartsough's 1979 paper …)" parenthetical as the following sentence "(Textbook range …
+  readable.[^hartsough-1979])" directly after the ρ/Rs sentence (its hedge qualifies the one range in
+  that sentence). This is the `number_order` LOST line (50–100, 1979, 5.8, 0.09, 0.17 → the same
+  digits in the same order across the two sentences, hand-checked). The via-4 sentence (86 words):
+  split at ", and it will be contacted" ("The plate will be contacted …", restored noun), its dash
+  material as "That is four times the width … (via3.1a).[^pdk-periph]" directly after the 0.800 µm
+  square it glosses, and "which lands on the plate" → "The opening lands on the plate" (restored
+  noun). Markers unchanged in number and place.
+* R-CATEGORY: classification sentence split at its semicolon (13 words); the category-page pointer as
+  a paragraph; "As at CAPTIW1, what is specific is the substrate: …" kept as its own paragraph; its
+  46-word last sentence split at ", and the film's stress", "(inference from the geometry)" repeated on
+  the first half (it covered the whole sentence; declared ADDED hedge).
+* Why: item 1 as on 136; item 2 (176 words): first block (the requirements, 40 words, no list needed),
+  continuation with the TiW reasons split at the semicolons, continuation with the published
+  alternatives; item 3: the 15-word "(our reading of the artwork; the drawing labels the vias only as
+  …)" parenthetical split — "(our reading of the artwork)" stays on the via-shape clause, "The drawing
+  labels the vias only as "Via3" and "Via4".[^pdk-07]" follows the sentence; item 4 as on 136.
+* How: italic scope lead-in (with its CAPTIW1 pointer); step 3 split at the semicolon.
+* R-TOOLS: AMAT item as on 136; the Lam bullet has no "Strength:", unchanged. R-RELATED: Previous /
+  Next / Same module (CAPTIW1) / Depends on (WTIAL4, MM4/MM4E) / Feeds (VIM4E; CMPM4) / Same category
+  (TIAL6) / Category page. R-OPENQ labels. R-REPEAT: none.
+* Preservation: ADDED = the glance box (markers, numbers, the quote, `step-150`, hedges, `MiM2`,
+  `cap2m`) and the repeated "(inference from the geometry)". `--strict-words`: LOST `strength`; `its`,
+  `which` non-strict (restored nouns).
