@@ -480,3 +480,37 @@ page.
   (lead, bullet 2, gap fill, HDP entry), the option sub-bullets, the "doped" sentence (no marker in the
   base), glance and tool head. None lost.
 * **Caps after:** 0 / 0 / 0 / 0. Lead 187 words in three paragraphs (base 180).
+
+### 106 CMPL — done
+
+* **Lead.** Base 140 words, one paragraph → two (47 + 93) at the semicolon of the 73-word sentence
+  ("… than over open field. The wafer is polished …"). The second half stays one sentence (46 words,
+  one over the cap): its only further seam is the dash pair naming the PDK's 0.265 µm "NILD2", and
+  making that its own sentence ("That thickness is the PDK's …") would turn an appositive into a main
+  clause, asserting more firmly an identification the page's Open questions call "our reading" (see
+  Content problems). First sentence 20 words, unchanged.
+* **R-CATEGORY.** Classification sentence alone (35 words). "What is specific …" is its own label
+  (step 3): the 77-word sentence split at its colon and at "— so an over-polish" ("So an over-polish
+  …", a sentence opening on the split's own conjunction).
+* **Why.** Planarity split at ", and the LICM1 page" (lead = the ct.1/ct.2 rule sentence with its
+  marker). Uniform contact depth split at its semicolon. Pattern-density: lead = the first clause;
+  continuation "Stine … and Daubenspeck …" ("and" moved from before "the PDK's density criteria" to
+  join the two studies, which the split separated from the third clause), "The PDK's density
+  criteria … apply … as they did to CMPP." and "Kahng and Samadi …" — each with its own markers.
+* **How.** Scope sentence italic. Recipe: the three-platen sequence → a numbered sub-list; the
+  down-force and removal sentences as the continuation. The nested numbers give `ADDED numbers:
+  '1'…'3'` (list labels).
+* **R-TOOLS.** Mirra: three-line, as 100. KLA AIT / SP1: pilot form, *Tool exists:* medium (as 100 and
+  012). Post-CMP cleaning has no grade: unchanged.
+* **R-RELATED.** Previous / Next split; conductors and cap → `Depends on:`; CMPP, WCMPLI, CMPNIT and the
+  later metal-level polishes → one `Same category:` bullet (all CMP; two base bullets merged, as 100).
+* **R-OPENQ.** "Removal and clean", "Post-polish thickness", "Brush scrubber".
+* **R-GLANCE.** Public numbers: the 0.265 µm "NILD2" "read here as the thickness left over the local
+  interconnect after the polish (our reading)" `[^pdk-04]` — the figure caption's and Open questions'
+  hedge, not the lead's unhedged wording; tool line with both grades named; Not public from Open
+  questions 1.
+* **Preservation.** ADDED: glance and the nested list labels. WORDS LOST: "strength"×2 (R-TOOLS labels).
+* **Marker coverage.** 8 flags read: split halves each with their own markers (category, planarity,
+  density), glance lines, tool head. None lost.
+* **Caps after:** 0 paragraphs, 0 items, 1 sentence (the lead's 46-word polish sentence, above), 0
+  cells.

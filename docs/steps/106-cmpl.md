@@ -10,13 +10,33 @@
 | **Previous step** | {ref}`NILD2 <step-105>` |
 | **Next step** | {ref}`CTM1 <step-107>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** planarises the inter-level oxide of {ref}`NILD2 <step-105>`
+  and sets its final thickness.
+* **Why:** without it the `mcon` lithography would print over LI
+  topography and the contact etch would face a different depth on
+  every line.
+* **Public numbers:** the PDK's 0.265 µm "NILD2", read here as the
+  thickness left over the local interconnect after the polish (our
+  reading).[^pdk-04]
+* **Likely SkyWater tool:** Applied Materials Mirra CMP — **strong** (the
+  tool and its oxide polish); **inference** (assignment to this
+  step).[^skw-01]
+* **Not public:** the removal amount, slurry, endpoint method and
+  post-CMP clean (→ Open questions).
+:::
+
 ## What this step is
 
 `CMPL` — chemical-mechanical polish over the {term}`local interconnect` —
 planarises the inter-level oxide of {ref}`NILD2 <step-105>` and sets
 its final thickness. The as-deposited oxide copies the 0.1 µm TiN
 lines and their 0.075 µm nitride cap[^pdk-04] beneath it, more
-strongly over dense {term}`LI` arrays than over open field; the wafer is
+strongly over dense {term}`LI` arrays than over open field.
+
+The wafer is
 polished in an alkaline silica slurry (industry-typical) until that
 topography is gone and a controlled thickness of oxide — the PDK's
 0.265 µm "NILD2"
@@ -51,10 +71,11 @@ remains.
 step of the *oxide (ILD)* type, the class the category page
 characterises by fixed removal, a silica/KOH or NH₄OH slurry at pH
 10–11 and pattern-density non-uniformity as the main failure mode.
+
 What is specific to this instance is the thinness of the films
-involved: the step to be planarised is only about 0.175 µm, the
+involved. The step to be planarised is only about 0.175 µm, the
 remaining oxide only 0.265 µm,[^pdk-04] and beneath that oxide lie
-the nitride cap and the 0.1 µm TiN — so an over-polish that would be
+the nitride cap and the 0.1 µm TiN. So an over-polish that would be
 harmless on a thick {term}`inter-metal dielectric` here reaches the nitride
 over dense LI, and an under-polish leaves steps that the 0.17 µm
 `mcon` lithography ({ref}`CTM1 <step-107>`; ct.1[^pdk-periph])
@@ -67,27 +88,32 @@ The reasons are those of every inter-level polish, sharpened by the
 thin films:
 
 * **Planarity for the contact lithography.** The `mcon` layer prints
-  0.17 µm holes (ct.1) on a 0.19 µm spacing (ct.2),[^pdk-periph] and
-  the {ref}`LICM1 <step-093>` page sets out why holes of that size
+  0.17 µm holes (ct.1) on a 0.19 µm spacing (ct.2).[^pdk-periph]
+
+  The {ref}`LICM1 <step-093>` page sets out why holes of that size
   need a deep-UV depth of focus of a few hundred nanometres; the
   oxide over the LI must be flat to a fraction of that. Kaanta et
   al.'s tungsten-stud scheme and Davari et al.'s RIE-plus-CMP
   planarisation are the origins of the polished-ILD contact
   module.[^kaanta-1987][^davari-1989]
 * **Uniform contact depth.** Every `mcon` is etched through the same
-  oxide thickness to the nitride cap over its LI line; a
+  oxide thickness to the nitride cap over its LI line.
+
+  A
   non-uniform oxide would leave some contacts unopened while others
   are over-etched through the nitride into the TiN. The 0.265 µm
   figure[^pdk-04] and the "min. etch and fill capability for mcon"
   of 0.14 µm[^pdk-03] are what the polish delivers to the contact
   etch.
 * **Pattern-density control.** Oxide over a dense LI array polishes
-  differently from oxide over open field; Stine et al. and Ouma et
-  al. modelled the effect,[^stine-1998][^ouma-2002] Daubenspeck et
-  al. characterised planarisation over variable densities,[^daubenspeck-1991]
-  and the PDK's density criteria — "Min pattern density for oxide"
+  differently from oxide over open field.
+
+  Stine et al. and Ouma et
+  al. modelled the effect,[^stine-1998][^ouma-2002] and Daubenspeck et
+  al. characterised planarisation over variable densities.[^daubenspeck-1991]
+  The PDK's density criteria — "Min pattern density for oxide"
   0.75 and the density boxes[^pdk-03] — apply to this level as they
-  did to {ref}`CMPP <step-090>`; Kahng and Samadi survey the fill
+  did to {ref}`CMPP <step-090>`. Kahng and Samadi survey the fill
   synthesis that keeps LI-level density within the window.[^kahng-2008]
 * **Defectivity.** Scratches and slurry residue from this polish
   become contact and metal-1 defects; the {term}`post-CMP clean` is part of
@@ -100,8 +126,8 @@ and the contact etch would face a different depth on every line.
 
 ## How it is typically performed
 
-An industry-generic thin-ILD oxide polish for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic thin-ILD oxide polish for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 1. **Tool.** Rotary multi-platen polisher with stacked polyurethane
    pads, diamond conditioner, carrier head with retaining ring and
@@ -112,9 +138,13 @@ fab (SKY130's recipe is not public):
    of glass polishing[^cook-1990] and the {term}`Preston equation`
    removal law[^preston-1927] with the departures Nanz and Camilletti
    review.[^nanz-1995]
-3. **Recipe.** A first platen removes the bulk at high rate; a
-   second finishes to the target thickness at lower rate for
-   uniformity; a final platen buffs in DI water or dilute slurry.
+3. **Recipe.**
+   1. A first platen removes the bulk at high rate;
+   2. a
+      second finishes to the target thickness at lower rate for
+      uniformity;
+   3. a final platen buffs in DI water or dilute slurry.
+
    Down-force of a few psi and platen speeds of tens of rpm are
    typical.[^txt-05] The removal is small, so the recipe is short
    and its uniformity is set by the head's zone pressures.
@@ -146,18 +176,21 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials Mirra CMP.** SkyWater lists "AMAT Mirra CMP"
-  for oxide among its films.[^skw-01] Strength: **strong** for the
-  tool and its oxide polish (SkyWater statement); assignment to this
-  step is an **inference** from the film, since the list names no
-  steps.
+* **Applied Materials Mirra CMP**
+  - *SkyWater says:* lists "AMAT Mirra CMP"
+    for oxide among its films.[^skw-01]
+  - *Tool exists:* **strong** for the
+    tool and its oxide polish (SkyWater statement).
+  - *Runs this step:* assignment to this
+    step is an **inference** from the film, since the list names no
+    steps.
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
   single-wafer tools with HF and DSP+HF chemistries, and the Mirra
   entry also lists "Track ammonia clean" and "IPA clean";[^skw-01] a
   brush scrubber is not named on any public page (open question).
 * **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -174,15 +207,15 @@ fab (SKY130's recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`NILD2 <step-105>` (the film polished). Next:
+* Previous: {ref}`NILD2 <step-105>` (the film polished).
+* Next:
   {ref}`CTM1 <step-107>` (the metal-1 contact mask), then
   {ref}`CTME <step-108>`.
-* The conductors and cap beneath the oxide: {ref}`LITIN <step-101>`,
+* Depends on: the conductors and cap beneath the oxide, {ref}`LITIN <step-101>`,
   {ref}`LI1ME <step-103>`, {ref}`LINIT <step-104>`.
-* The earlier oxide polish of the module: {ref}`CMPP <step-090>`;
-  the tungsten polish: {ref}`WCMPLI <step-100>`; the {term}`STI` polish:
-  {ref}`CMPNIT <step-012>`.
-* The later metal-level polishes: {ref}`CMPM <step-116>`,
+* Same category: the earlier oxide polish of the module, {ref}`CMPP <step-090>`;
+  the tungsten polish, {ref}`WCMPLI <step-100>`; the {term}`STI` polish,
+  {ref}`CMPNIT <step-012>`; the later metal-level polishes, {ref}`CMPM <step-116>`,
   {ref}`CMPM2 <step-127>`.
 * Category page: {ref}`Chemical-mechanical planarisation <category-cmp>`.
 
@@ -251,12 +284,12 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* The removal amount, slurry, {term}`endpoint` method and post-CMP clean are
+* **Removal and clean.** The removal amount, slurry, {term}`endpoint` method and post-CMP clean are
   not public.
-* Whether the 0.265 µm of the stack diagram is the post-polish
+* **Post-polish thickness.** Whether the 0.265 µm of the stack diagram is the post-polish
   thickness over LI (our reading) or a nominal design value is not
   stated.[^pdk-04]
-* Whether SkyWater uses a brush scrubber, and which, is not stated
+* **Brush scrubber.** Whether SkyWater uses a brush scrubber, and which, is not stated
   on any public page.
 
 <!-- footnotes -->
