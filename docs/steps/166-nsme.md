@@ -10,11 +10,30 @@
 | **Previous step** | {ref}`NSM <step-165>` |
 | **Next step** | {ref}`NTSD <step-167>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the ring-shaped opening of the {ref}`NSM <step-165>`
+  pattern along the edge of every die; this reference treats the strip
+  and post-etch clean as part of this step.
+* **Why:** on our reading, the opening lets the passivation nitride of
+  {ref}`NTSD <step-167>` line a path down into the dielectric stack at
+  the die edge (inference).
+* **Public numbers:** the ring at least 3 µm wide (nsm.1) and at least
+  1 µm clear of diffusion, poly, local interconnect and metal
+  (nsm.3);[^pdk-periph] none published for the depth.
+* **Likely SkyWater tool:** none named — no dielectric etcher is on
+  SkyWater's public list; the three listed poly/silicon etchers are
+  **weak** (assignment to this etch).[^skw-01]
+* **Not public:** what the etch removes and how deep it goes, and the
+  chemistry, endpoint and tool (→ Open questions).
+:::
+
 ## What this step is
 
 `NSME` etches the opening defined by the `nsm` resist pattern of
-{ref}`NSM <step-165>`: a ring, at least 3 µm wide (nsm.1[^pdk-periph]),
-along the edge of every die, in a band that the design rules keep at
+{ref}`NSM <step-165>`. The opening is a ring, at least 3 µm wide (nsm.1[^pdk-periph]),
+along the edge of every die. The ring lies in a band that the design rules keep at
 least 1 µm clear of all diffusion, poly, local interconnect and
 metal except the seal ring's own diffusion rings (nsm.3[^pdk-periph]).
 The resist is then stripped; this reference treats the strip and
@@ -30,17 +49,27 @@ lines the opening.
 Before, the seal-mask resist over the whole slice; after, the resist has been stripped (the page treats the strip and clean as part of this step), and nothing else in this slice has changed. The etch works only in the `nsm` opening, a ring at least 3 µm wide along the edge of every die (nsm.1),[^pdk-periph] which lies outside this slice of wiring and is not drawn. What it removes there is not public: through the thin TOPOX only, to the LINIT nitride or towards the silicon of the seal ring, on the page's readings. The thin oxide over the metal is drawn untouched, as the page requires of the resist and the etch. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films other than the cap, the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide are drawn but not labelled. Not to scale.
 :::
 
+### Competing readings
+
 What the etch removes is not public. Its first film is the thin
 passivation oxide of {ref}`NFUSOX <step-164>` (0.09 µm "TOPOX" on the
 PDK's stack diagram[^pdk-04]). Below that, in a region with no wiring,
-lie only dielectrics: on the diagram, the inter-level dielectrics NILD6
-to NILD2 with the thin NILD3_C and NILD4_C layers, the thin nitride
-over the local-interconnect level, which the diagram labels "LINT
-K=7.3" (0.075 µm) and the step list calls {ref}`LINIT <step-104>`, the "PSG
-K=3.9" pre-metal glass and the field oxide, the bottom of metal 5
-carrying the level 5.3711 µm, measured from a datum the drawing does
+lie only dielectrics: on the diagram,[^pdk-04]
+
+* the inter-level dielectrics NILD6
+  to NILD2 with the thin NILD3_C and NILD4_C layers;
+* the thin nitride
+  over the local-interconnect level, which the diagram labels "LINT
+  K=7.3" (0.075 µm) and the step list calls {ref}`LINIT <step-104>`;
+* the "PSG
+  K=3.9" pre-metal glass and the field oxide.
+
+The bottom of metal 5
+carries the level 5.3711 µm, measured from a datum the drawing does
 not state (this reference reads it as the trench floor,
-{ref}`STIE <step-006>`).[^pdk-04] In the seal-ring cell
+{ref}`STIE <step-006>`).[^pdk-04]
+
+In the seal-ring cell
 used on Efabless's Caravel shuttle designs the `nsm` band is 5 µm wide
 and overlies four 0.3 µm diffusion rings.[^caravel-sealring] The step
 list used in this reference does not say how deep `NSME` goes; we
@@ -50,7 +79,9 @@ describe two readings (inference):
   oxides — and possibly the LINIT nitride and PSG — towards the silicon
   of the seal ring, so that the passivation nitride deposited next forms
   a continuous wall from the top of the die down into the dielectric
-  stack. This is the construction of a GlobalFoundries edge-seal patent
+  stack.
+
+  This is the construction of a GlobalFoundries edge-seal patent
   that may still be in force, quoted in the collapsed note below this
   list. The exemption of the seal ring's diffusion ring from the `nsm` keepout
   (nsm.3[^pdk-periph]) is consistent with an opening that reaches it.
@@ -70,7 +101,7 @@ passivation.[^pat-edgeseal-gf]
 On either of these deeper readings the opening is several micrometres
 deep and 3–5 µm wide, an
 {term}`aspect ratio` of order 1–2 (our arithmetic), and occupies a very
-small fraction of the wafer: a 5 µm band around the 3.6 mm × 5.2 mm
+small fraction of the wafer. A 5 µm band around the 3.6 mm × 5.2 mm
 Caravel seal ring[^caravel-sealring] is about 0.09 mm² of an 18.7 mm²
 die, some 0.5 % (our arithmetic).
 
@@ -78,28 +109,40 @@ die, some 0.5 % (our arithmetic).
 
 `NSME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorocarbon-chemistry* class — the category page's "Silicon dioxide"
-entry, applied not to a contact or via hole but to a wide, deep ring;
-on the reading given here nitride is at most a thin layer to break
-through or stop on. What is specific to this instance is the depth of the
-dielectric column, the absence of any conductor to land on, the tiny
-open area, and the timing: it is the only dielectric etch in the flow
-made after metal 5 and before the passivation nitride, so the resist and
-the etch must not attack the thin oxide over the metal-5 lines and pads
-beside the ring.
+entry, applied not to a contact or via hole but to a wide, deep ring.
+
+On the reading given here nitride is at most a thin layer to break
+through or stop on.
+
+What is specific to this instance is:
+
+* the depth of the
+  dielectric column;
+* the absence of any conductor to land on;
+* the tiny
+  open area;
+* the timing: it is the only dielectric etch in the flow
+  made after metal 5 and before the passivation nitride, so the resist and
+  the etch must not attack the thin oxide over the metal-5 lines and pads
+  beside the ring.
 
 ## Why this step exists
 
 * **To give the nitride a path down.** A passivation nitride laid only
   on the top surface leaves the inter-level oxides as a continuous
-  lateral path from the saw-cut edge to the circuit. An opening through
-  them, lined by nitride, interrupts that path; the moisture and ionic
+  lateral path from the saw-cut edge to the circuit.
+
+  An opening through
+  them, lined by nitride, interrupts that path. The moisture and ionic
   contamination it blocks are the drivers of corrosion Comizzoli et al.
   reviewed,[^comizzoli-1986] and a seal-ring patent, while calling the
   passivation nitride "a very good barrier of moisture and ionic
   contamination", shows "a moisture path … through the passivation
-  oxide" beneath it at the die periphery.[^pat-sealring-zeevo] Even an
+  oxide" beneath it at the die periphery.[^pat-sealring-zeevo]
+
+  Even an
   opening through only the thin passivation oxide would let the nitride
-  close that path — the patent's own moisture-path area is the die
+  close that path. The patent's own moisture-path area is the die
   perimeter times a "bottle neck width … typically in the range of 0.5
   to 1.0 µm", which we read as the thickness of that
   oxide.[^pat-sealring-zeevo] That
@@ -117,9 +160,9 @@ beside the ring.
 
 ## How it is typically performed
 
-An industry-generic deep dielectric window etch over a finished
+*An industry-generic deep dielectric window etch over a finished
 aluminium back end for a 200 mm, 130 nm-era fab (SKY130's recipe is not
-public):
+public):*
 
 1. **Chamber.** A capacitively or inductively coupled dielectric etcher
    with a cooled chuck and helium backside cooling — Lam's
@@ -130,14 +173,16 @@ public):
    bombardment while depositing a fluorocarbon film on resist, nitride
    and silicon; the fluorine-to-carbon ratio sets rate and
    {term}`selectivity`.[^flamm-1981][^oehrlein-1994b][^winters-1992]
+
    Perry et al. measured oxide etch rates and selectivity to photoresist
    in a high-density C₂F₆ plasma[^perry-2001] — the ratio that decides
-   whether the resist of {ref}`NSM <step-165>` survives a deep etch; a
+   whether the resist of {ref}`NSM <step-165>` survives a deep etch. A
    TSMC fuse-window patent etches through a passivation and several
    inter-metal dielectrics in two steps, the second with "a high
    selectivity to the silicon nitride etch stop layer".[^pat-fusewin-tsmc]
 3. **Nitride layers.** If the etch is to pass the LINIT nitride, a less
-   polymerising, more oxygen- or fluorine-rich step breaks through it;
+   polymerising, more oxygen- or fluorine-rich step breaks through it.
+
    Kastenmeier et al. measured nitride and oxide rates in CF₄/O₂/N₂ in a
    downstream reactor and found that small N₂ additions raise the
    nitride rate sevenfold while leaving the oxide rate unchanged, the
@@ -170,21 +215,26 @@ public):
 * **No dielectric etcher is named on SkyWater's public list.** It gives,
   under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2",
   "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" and "Lam 4400, HBr,
-  Cl2, C2F6, CF4, SF6, O2".[^skw-01] All three carry fluorine-bearing
-  gases that can etch oxide; strength: **weak** for assignment of any
-  of them to this etch.
+  Cl2, C2F6, CF4, SF6, O2".[^skw-01]
+
+  All three carry fluorine-bearing
+  gases that can etch oxide.
+
+  - *Runs this step:* **weak** for assignment of any
+    of them to this etch.
 * **Lam Exelan.** No public source places one at SkyWater; it appears
   here as the era's typical dielectric etcher.[^lam-exelan]
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; batch
-  rotational tools with "EKS265, EKC270 solvents".**[^skw-01] Strength:
-  strong for existence; assignment is an inference.
+  rotational tools with "EKS265, EKC270 solvents"**[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* assignment is an inference.
 
 ## Resources required
 
 * **{ref}`C₄F₈ <material-etch-gases>`, C₂F₆, CHF₃, CF₄**, **{ref}`Ar <material-process-gases>`**, **O₂** (and possibly CO or N₂)
-  for the oxide etch (industry practice;[^nojiri-2015] SkyWater lists
-  CF₄, CHF₃, C₂F₆ and O₂ on its etchers[^skw-01]); **He** backside
-  cooling.
+  for the oxide etch (industry practice[^nojiri-2015]); **He** backside
+  cooling. SkyWater lists
+  CF₄, CHF₃, C₂F₆ and O₂ on its etchers.[^skw-01]
 * **O₂/N₂** (and {ref}`forming gas <material-anneal-ambients>`) for the ash;[^skw-01] CF₄, listed on the
   Iridia and Mattson ashers,[^skw-01] would etch the oxide the ash exposes —
   the thin passivation oxide over metal 5 and the walls of the ring — and
@@ -196,15 +246,16 @@ public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`NSM <step-165>` (the mask). Next:
+* Previous: {ref}`NSM <step-165>` (the mask).
+* Next:
   {ref}`NTSD <step-167>` (the passivation nitride that lines the
   opening, on our reading).
-* The films it cuts, on our reading: {ref}`NFUSOX <step-164>`, the
+* Same module: the other window etch through the passivation, {ref}`PDME <step-169>`.
+* Depends on: the films it cuts, on our reading, {ref}`NFUSOX <step-164>`, the
   inter-level oxides {ref}`NILD2 <step-105>` to
   {ref}`NILD6 <step-156>`, the nitride {ref}`LINIT <step-104>`, the
   glass {ref}`PSG <step-089>`.
-* The other window etch through the passivation: {ref}`PDME <step-169>`.
-* Other oxide etches: {ref}`CTME <step-108>`, {ref}`VIM3E <step-145>`.
+* Same category: other oxide etches, {ref}`CTME <step-108>`, {ref}`VIM3E <step-145>`.
 * Category page: {ref}`Etch <category-etch>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -276,11 +327,11 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* How deep the etch goes — through the thin TOPOX only, to the LINIT
+* **Depth of the etch.** How deep the etch goes — through the thin TOPOX only, to the LINIT
   nitride, or to the silicon of the seal ring — and whether it passes
   any nitride, are not public.
-* The chemistry, endpoint and tool are not public.
-* This page treats the resist strip and clean as part of the etch.
+* **Chemistry, endpoint and tool.** The chemistry, endpoint and tool are not public.
+* **Resist strip and clean.** This page treats the resist strip and clean as part of the etch.
 
 <!-- footnotes -->
 

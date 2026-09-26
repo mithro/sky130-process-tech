@@ -490,3 +490,37 @@ byte; the glance box names nothing from the note; `check_inforce` 0 problems.
   only the declared `pdk-04`, `pdk-06`, "(inference …)", "It lies", the H3, the table header and
   labels; every other `number_order` change REGROUPED, read. `--strict-words` LOST: `enclosed`,
   `must`×2, `page`, `strength`×3. cov: three flags, pairing noise. inv: OK (dropdowns identical).
+
+### 166 NSME — done (base `b1d7457a`)
+
+In-force notes (US 10,062,748) and their pointers: untouched; nothing from them in the glance box.
+
+* Lead (base 89, first sentence 55): "… resist pattern of NSM: a ring, … along the edge of every die, in
+  a band that …" → "… pattern of NSM. The opening is a ring, … along the edge of every die. The ring
+  lies in a band that …" (declared "The opening is", "The ring lies"; the zero-word colon split left
+  a 26-word first sentence or a 46-word second one). **Listed under note ¹ of §4.1:** the lead goes
+  89 → 95, within 120; first sentence 12.
+* R-H3: `### Competing readings` after the figure caption over the passage that sets out the two
+  depth readings (≈ 280 words); the in-force note stays directly after the bullets it belongs to.
+  R-LIST: the 83-word dielectric sentence → "… lie only dielectrics: on the diagram,[^pdk-04]" and
+  three bullets (declared repeated `pdk-04` on the lead-in, R-LIST step 1); its closing absolute
+  phrase "the bottom of metal 5 carrying the level 5.3711 µm, …" → "The bottom of metal 5 carries the
+  level 5.3711 µm, …[^pdk-04]" (word `carrying` lost). The deep-seal bullet keeps its 42-word first
+  sentence whole: its only seam is the purpose clause "so that", which a split would turn into a
+  consequence; the patent pointer and the nsm.3 sentence as a continuation paragraph. The
+  percentage sentence split at its colon.
+* R-CATEGORY: classification sentence to its semicolon; the nitride reading as its own paragraph;
+  "What is specific … is the depth …, the absence …, the tiny open area, and the timing: …" (67
+  words) → "… is:" and four bullets, every word kept but the joining "and".
+* Why: path item in three blocks (semicolon split; its dash → full stop before "The patent's own
+  moisture-path area …"). How: scope sentence italic; step 2 with the Perry sentence as a
+  continuation (its semicolon a full stop); step 3 split at its semicolon (continuation).
+* R-TOOLS (145/160 form). Resources: the gas parenthetical → "(industry practice[^nojiri-2015]); **He**
+  backside cooling. SkyWater lists … etchers.[^skw-01]" (the SkyWater clause moved to the end of the
+  bullet as its own sentence). R-RELATED (Previous · Next · Same module · Depends on · Same category ·
+  Category page). R-OPENQ labels on three bullets. Glance box.
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `pdk-04`, "The
+  opening is", "The ring lies", the H3 and labels; every `number_order` change REGROUPED, read.
+  `--strict-words` LOST: `carrying`, `strength`×2. cov: flags are pairing noise (the new lead
+  sentences against the quick-facts table; "the tiny open area" against the How step's "about 0.5 %
+  (our estimate above)", which is unchanged). inv: OK (dropdowns identical).
