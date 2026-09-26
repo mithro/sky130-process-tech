@@ -10,20 +10,41 @@
 | **Previous step** | {ref}`CAPTIW1 <step-136>` |
 | **Next step** | {ref}`CAPME <step-138>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** coats, exposes and develops a resist that remains wherever
+  the layout draws `capm`, so that {ref}`CAPME <step-138>` leaves the
+  capacitor top plates.
+* **Why:** the plate area is the capacitance; this mask, and the etch
+  that follows, fix that area on the wafer.
+* **Public numbers:** `CAPMCD` 2 µm, `CAPMCDSP` 0.84 µm and a maximum
+  aspect ratio of 20;[^pdk-03] 2 fF/µm² of area plus 0.19 fF/µm of
+  periphery.[^pdk-07]
+* **Likely SkyWater tool:** ASML I-line stepper or I-line scanner —
+  **strong** for existence; **inference** for the assignment of `CAPM`
+  to i-line.[^skw-01]
+* **Not public:** the exposure tool, resist and reflectivity scheme,
+  the numeric values of the `capm` rules, and the alignment layers
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `CAPM` is the lithography that defines the top plates of the first
 {term}`MiM capacitor`. On the blanket plate film of
-{ref}`CAPTIW1 <step-136>` (TiW, as assumed there) — which
-lies on the capacitor dielectric of {ref}`CAPILD <step-135>` and the
-still-unpatterned metal-3 stack of {ref}`WTIAL3 <step-134>` — a
+{ref}`CAPTIW1 <step-136>` (TiW, as assumed there), a
 resist is coated, exposed and developed so that resist remains
 wherever the layout draws `capm`, "MiM capacitor plate over metal 3"
-(GDS 89:44),[^pdk-06] and is cleared everywhere else. The
+(GDS 89:44),[^pdk-06] and is cleared everywhere else. The plate film
+lies on the capacitor dielectric of {ref}`CAPILD <step-135>` and the
+still-unpatterned metal-3 stack of {ref}`WTIAL3 <step-134>`. The
 {ref}`CAPME <step-138>` etch then removes the exposed TiW, stopping on
-or in the dielectric, and leaves the plates. The PDK's mask table
+or in the dielectric, and leaves the plates.
+
+The PDK's mask table
 lists "Capacitor MiM, CAPM",[^pdk-05] so the step code is the mask
-name; with {ref}`CAP2M <step-152>`, it is one of two masks in the
+name. With {ref}`CAP2M <step-152>`, `CAPM` is one of two masks in the
 flow whose pattern is a *device* rather than a wiring, contact or
 implant layer, and one of two printed on a metal that will itself be
 patterned afterwards (here at {ref}`MM3 <step-139>`).
@@ -38,46 +59,68 @@ A close-up of part of the metal-3 level, at the left edge of a capacitor that ru
 
 The public geometry is coarse. The PDK's minimum-CD table gives the
 capacitor mask a `CAPMCD` of 2 µm and a `CAPMCDSP` of
-0.84 µm,[^pdk-03] its physical-criteria table a maximum MiM
-capacitor aspect ratio of 20,[^pdk-03] and the periphery rules a
-set of twelve `capm` rules — minimum width, spacing to `capm` and to
-the bottom plate, enclosure of the plate by the metal beneath,
-enclosure of the via that contacts it, three spacings (of `capm` to
-`via2`, of `via` to `capm`, and of `capm` to `met2` that does not
-overlap it), a maximum aspect ratio, a rectangles-only rule, a rule
-that `capm` must not straddle wells, diffusion, tap, poly, local
-interconnect or metal 1, and a maximum
-area — all with their numeric values shown as "N/A" on the public
-page.[^pdk-periph] The capacitance the plate defines is the PDK's
+0.84 µm,[^pdk-03] and its physical-criteria table a maximum MiM
+capacitor aspect ratio of 20.[^pdk-03] The periphery rules give a
+set of twelve `capm` rules, all with their numeric values shown as "N/A" on the public
+page:[^pdk-periph]
+
+* minimum width;
+* spacing to `capm` and to
+  the bottom plate;
+* enclosure of the plate by the metal beneath;
+* enclosure of the via that contacts it;
+* three spacings (of `capm` to
+  `via2`, of `via` to `capm`, and of `capm` to `met2` that does not
+  overlap it);
+* a maximum aspect ratio;
+* a rectangles-only rule;
+* a rule
+  that `capm` must not straddle wells, diffusion, tap, poly, local
+  interconnect or metal 1;
+* a maximum
+  area.
+
+The capacitance the plate defines is the PDK's
 2 fF/µm² of area plus 0.19 fF/µm of periphery.[^pdk-07] A 2 µm
 feature on a 0.84 µm space is, by the standards of the flow, an easy
 print: the metal-3 lines that follow are 0.30 µm wide[^pdk-periph]
 and the via-3 holes 0.20 µm.[^pdk-periph]
 
-The surface is unusual for a mask step: flat (no {term}`CMP` step, no
-plug topography — the metal-3 stack was sputtered onto the polished
-via-2 level of {ref}`WCMP4 <step-133>`), highly reflective (the plate
-film over the metal-3 stack) and thermally and chemically delicate, since only some
-20–30 nm of dielectric (our estimate at {ref}`CAPILD <step-135>`)
-separate the resist's substrate from the aluminium below.
+The surface is unusual for a mask step:
+
+* flat (no {term}`CMP` step, no
+  plug topography — the metal-3 stack was sputtered onto the polished
+  via-2 level of {ref}`WCMP4 <step-133>`);
+* highly reflective (the plate
+  film over the metal-3 stack);
+* thermally and chemically delicate, since only some
+  20–30 nm of dielectric (our estimate at {ref}`CAPILD <step-135>`)
+  separate the resist's substrate from the aluminium below.
 
 ## Step category
 
 `CAPM` is a {ref}`Photolithography (mask step) <category-lithography>`
-step of the *non-critical, large-feature* type. At 2 µm and 0.84 µm
-the process factor {term}`k₁ <k1>` on an i-line (365 nm) stepper of {term}`NA` 0.6
-would be {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4`, far above
-the resolution limit, and ASML describes older exposure tools that
-"migrate to the lithography of choice for less critical
-layers";[^asml-30] we therefore infer that `CAPM` is printed on the "ASML I-line
-stepper" or "I-line scanner" SkyWater lists,[^skw-01] with a
-conventional DNQ/novolac resist, rather than on the {term}`DUV`
-tools used for the critical layers. Nothing public
-states the tool or resist. What the layer shares with the metal masks
+step of the *non-critical, large-feature* type.
+
+**Specific to this step:**
+
+* At 2 µm and 0.84 µm
+  the process factor {term}`k₁ <k1>` on an i-line (365 nm) stepper of {term}`NA` 0.6
+  would be {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4`, far above
+  the resolution limit, and ASML describes older exposure tools that
+  "migrate to the lithography of choice for less critical
+  layers".[^asml-30]
+* We therefore infer that `CAPM` is printed on the "ASML I-line
+  stepper" or "I-line scanner" SkyWater lists,[^skw-01] with a
+  conventional DNQ/novolac resist, rather than on the {term}`DUV`
+  tools used for the critical layers. Nothing public
+  states the tool or resist.
+
+What the layer shares with the metal masks
 is the substrate problem — a reflective refractory film that
 demands reflectivity control — and what it shares with no other
 layer is that its {term}`CD` error translates directly into a device
-parameter: a 0.1 µm bias on a 2 µm plate is a 10 % change in
+parameter. A 0.1 µm bias on a 2 µm plate is a 10 % change in
 capacitance, so the mask-to-etch bias must be characterised and
 absorbed in the model's `CMIMP` periphery term (inference from the
 model form[^pdk-07]).
@@ -87,18 +130,23 @@ model form[^pdk-07]).
 * **The plate area is the capacitance.** The capacitor is drawn as
   `capm` and its value is `CMIMA` × area + `CMIMP` × perimeter;[^pdk-07]
   this mask, and the etch that follows, fix that area on the wafer.
+
   The PDK's maximum MiM capacitor aspect ratio of 20[^pdk-03] and the
   rectangles-only rule (capm.7)[^pdk-periph] keep, we infer, the
   periphery term and the plate resistance within what the model was
-  fitted for; Ng et al. review MiM integration in Al–Cu and Cu back
+  fitted for. Ng et al. review MiM integration in Al–Cu and Cu back
   ends.[^ng-2005]
 * **Top plate first, bottom plate later.** Printing `capm` on the
   unpatterned metal means the resist sits on a flat, continuous film
   with no metal edges to reflect light into the plate corners and no
-  topography under the dielectric; the plate edge lands on
+  topography under the dielectric.
+
+  The plate edge lands on
   dielectric-over-metal everywhere. This is the construction of the
   Newport Fab patent[^pat-mim-newportfab] and, we infer from the
-  PDK's description of the construction,[^pdk-07] SKY130's; IBM's and
+  PDK's description of the construction,[^pdk-07] SKY130's.
+
+  IBM's and
   Freescale's patents reach a planar bottom plate by damascene or by
   CMP of the dielectric beneath a dedicated electrode
   instead.[^pat-mim-ibm][^pat-mim-freescale] The alternative —
@@ -106,18 +154,22 @@ model form[^pdk-07]).
   plate over its edges — puts the thin dielectric on a sidewall.
 * **Alignment and enclosure.** The plate must later be enclosed by
   the metal-3 bottom plate and contacted by a via-3 that the plate
-  encloses — the rules capm.3 (enclosure of the plate by the metal
+  encloses.
+
+  The rules are capm.3 (enclosure of the plate by the metal
   beneath) and capm.4 (enclosure of the via by the plate), with
   capm.5 setting the spacing of the plate to a via it does not
-  contact,[^pdk-periph] whose text names
+  contact.[^pdk-periph] The rules' text names
   `met2` and `via2`, read here for metal 3 and via 3 (inference; see
-  {ref}`CAPILD <step-135>`). Because metal 3 has not yet been printed,
+  {ref}`CAPILD <step-135>`).
+
+  Because metal 3 has not yet been printed,
   `CAPM` is aligned to the last patterned layer — the via-2 holes of
   {ref}`VIM2 <step-129>` under the metal — and {ref}`MM3 <step-139>`
-  is then aligned either to the same marks or to `capm` itself
-  (inference; the choice sets which enclosure carries the
+  is then aligned either to the same marks or to `capm` itself.
+  (Inference; the choice sets which enclosure carries the
   {term}`overlay` error; Levinson's book has a chapter on
-  overlay[^levinson-2005]).
+  overlay.[^levinson-2005])
 * **Protecting the dielectric.** Everywhere the resist is cleared,
   the {ref}`CAPME <step-138>` etch will expose the capacitor dielectric; where
   it remains, the plate and the dielectric under it are the finished
@@ -131,24 +183,26 @@ blanket sheet and be removed, with the dielectric, at
 
 ## How it is typically performed
 
-An industry-generic large-feature lithography step on a reflective
-refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
+*An industry-generic large-feature lithography step on a reflective
+refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):*
 
 1. **Surface preparation.** The wafer comes from the {term}`PVD`
-   cluster; a dehydration bake, and either an organic {term}`BARC`
+   cluster. A dehydration bake, and either an organic {term}`BARC`
    or a dyed resist to tame the reflectivity of the plate over the
-   metal-3 stack
-   (Brunner's {term}`swing-curve <swing curve>` analysis is the basis;[^brunner-1991]
+   metal-3 stack.
+   Brunner's {term}`swing-curve <swing curve>` analysis is the basis;[^brunner-1991]
    Rocke and Schneegans documented the anti-reflective role of a
-   refractory cap on aluminium[^rocke-1988]). No {term}`HMDS` is
+   refractory cap on aluminium.[^rocke-1988] No {term}`HMDS` is
    needed on a metal.
-2. **Resist coat.** A positive i-line DNQ/novolac resist — the
+2. **Resist coat.** A positive i-line DNQ/novolac resist
+   at around 1 µm (industry-typical for i-line
+   resists[^mack-2007]). DNQ/novolac is the
    chemistry Dammel's tutorial text and Reichmanis and
-   Thompson's review describe[^dammel-1993][^reichmanis-1989][^wiki-dnq]
-   — at around 1 µm (industry-typical for i-line
-   resists[^mack-2007]; the PDK's nominal resist thickness of 1.14 µm
+   Thompson's review describe.[^dammel-1993][^reichmanis-1989][^wiki-dnq]
+
+   The PDK's nominal resist thickness of 1.14 µm
    is an antenna-rule assumption that need not describe this
-   layer[^pdk-03]). A thicker resist is affordable here because the
+   layer.[^pdk-03] A thicker resist is affordable here because the
    features are large and the TiW etch is short.
 3. **Exposure.** i-line on a 5× or 4× stepper of NA 0.5–0.6 — the
    ASML PAS 5500 family spans i-line and DUV models on one
@@ -158,10 +212,11 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 4. **Post-exposure bake and develop.** A {term}`PEB` to smooth
    standing waves, then 2.38 % (0.26 N) TMAH develop, rinse and dry.[^txt-02]
 5. **Alignment.** To the {ref}`VIM2 <step-129>` marks beneath the
-   metal (the metal-3 stack is opaque, so the marks are read as
-   topography or through cleared windows; our reading of industry
-   practice, and Levinson's book has a chapter on
-   overlay[^levinson-2005]).
+   metal (our reading of industry
+   practice). The metal-3 stack is opaque, so the marks are read as
+   topography or through cleared windows (our reading of industry
+   practice). Levinson's book has a chapter on
+   overlay.[^levinson-2005]
 6. **Inspection and metrology.** Plate {term}`CD` by optical CD or
    {term}`CD-SEM` on the AMAT Verity/VeraSEM class SkyWater
    lists;[^skw-01] overlay on the KLA 5200/5300/Archer class;[^skw-01]
@@ -180,16 +235,21 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Machines likely used at SkyWater
 
-* **ASML I-line stepper / I-line scanner.** SkyWater lists both.[^skw-01]
-  Strength: **strong** for existence; the assignment of `CAPM` to
-  i-line is an **inference** from the 2 µm / 0.84 µm rules[^pdk-03]
-  and the migration of older exposure tools to "less critical layers"
-  that ASML describes.[^asml-30] The model is not public.
-* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius.**[^skw-01]
-  Strength: strong for existence.
-* **CD — AMAT Verity, VeraSEM; overlay — KLA 5200/5300/Archer.**[^skw-01]
-  Strength: strong for existence (SkyWater statement); use at this
-  mask is an inference.
+* **ASML I-line stepper / I-line scanner**
+  - *SkyWater says:* lists both.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of `CAPM` to
+    i-line is an **inference** from the 2 µm / 0.84 µm rules[^pdk-03]
+    and the migration of older exposure tools to "less critical layers"
+    that ASML describes.[^asml-30]
+
+  The model is not public.
+* **Tracks — DNS 80B, Sokudo RF3, TEL ProZ Lithius**[^skw-01]
+  - *Tool exists:* strong for existence.
+* **CD — AMAT Verity, VeraSEM; overlay — KLA 5200/5300/Archer**[^skw-01]
+  - *Tool exists:* strong for existence (SkyWater statement).
+  - *Runs this step:* use at this
+    mask is an inference.
 
 ## Resources required
 
@@ -207,18 +267,20 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CAPTIW1 <step-136>` (the plate film). Next:
+* Previous: {ref}`CAPTIW1 <step-136>` (the plate film).
+* Next:
   {ref}`CAPME <step-138>` (the plate etch, which on our reading
   includes the strip).
-* The dielectric under the plate: {ref}`CAPILD <step-135>`; the
-  bottom plate patterned afterwards: {ref}`MM3 <step-139>`,
+* Same module: the
+  bottom plate patterned afterwards, {ref}`MM3 <step-139>`,
   {ref}`MM3E <step-140>`.
-* The via that must land inside the plate: {ref}`VIM3 <step-144>`.
-* Previous mask: {ref}`VIM2 <step-129>`; next mask:
-  {ref}`MM3 <step-139>`; the second capacitor's mask:
+* Depends on: the dielectric under the plate, {ref}`CAPILD <step-135>`.
+* Feeds: the via that must land inside the plate, {ref}`VIM3 <step-144>`.
+* Same category: the second capacitor's mask,
   {ref}`CAP2M <step-152>`.
-* Mask page: {ref}`CAPM <mask-capm>` — the mask's layers, plates,
-  renders and design rules.
+* Mask: {ref}`CAPM <mask-capm>` — the mask's layers, plates,
+  renders and design rules; previous mask, {ref}`VIM2 <step-129>`; next mask,
+  {ref}`MM3 <step-139>`.
 * Category page: {ref}`Photolithography (mask step) <category-lithography>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -285,14 +347,14 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):
 
 ## Open questions
 
-* The exposure tool, resist and reflectivity scheme for `CAPM` are
+* **Exposure tool and resist.** The exposure tool, resist and reflectivity scheme for `CAPM` are
   not public; i-line with a conventional resist is an inference from
   the 2 µm / 0.84 µm rules.[^pdk-03]
-* The numeric values of the `capm` periphery rules are not
+* **Rule values.** The numeric values of the `capm` periphery rules are not
   published ("N/A" on the public page[^pdk-periph]).
-* Which layer `CAPM` is aligned to, and which layer `MM3` is then
+* **Alignment layers.** Which layer `CAPM` is aligned to, and which layer `MM3` is then
   aligned to, is not public.
-* The mask table does not flag "Capacitor MiM, CAPM" as used in
+* **Capacitor mask on every lot.** The mask table does not flag "Capacitor MiM, CAPM" as used in
   SKY130,[^pdk-05] while the README lists "Optional MiM capacitors"
   yet also counts them among the "normally optional features"
   included "as standard",[^pdk-10] and the shuttle announcements

@@ -128,3 +128,45 @@ the list; nothing of it is repeated.
   or "metal-3" (the restored "The metal-3 conductor"); REGROUPED lines read (lead, criteria, quality
   factor), same digits in the same order. `--strict-words`: LOST `strength` (R-TOOLS); `its` (→ "The
   plate's"). `cov`: flags are pairing noise and the declared hedge placement.
+
+### 137 CAPM — done
+
+Base `a7e812b0`. Caps before: 3 paragraphs, 4 items, 9 sentences over; after: 0/0/0. Lead 146 words
+(base 144) in two paragraphs. No H3 added: the post-figure passage is part public record, part
+description of the surface, and none of the four titles is true of the whole.
+
+* Lead: the "— which lies on … WTIAL3 —" dash material moved to its own sentence directly after its
+  clause, "The plate film lies on …" (restored subject); the mask-table sentence split at the
+  semicolon, "it" → "`CAPM`" (restored noun; the nearest noun is now "the mask name").
+* R-LIST: the twelve `capm` periphery rules as nine bullets under "The periphery rules give a set of
+  twelve `capm` rules, all with their numeric values shown as "N/A" on the public page:[^pdk-periph]"
+  (the "— all with …" tail moved into the lead-in, the marker on the lead-in per R-LIST step 1; "give"
+  added, dash removed; the minimum-CD sentence gains "and" for the elided "gives"). The surface
+  sentence as "The surface is unusual for a mask step:" and three plain bullets (only "and" dropped).
+* R-CATEGORY: classification sentence (12 words); "Specific to this step:" two bullets (the k₁/ASML
+  sentence; "We therefore infer …" with "Nothing public states the tool or resist."), split at the
+  semicolon. k₁ = 0.84 × 0.6 / 0.365 = 1.38 ≈ 1.4, correct. The "What the layer shares … device
+  parameter: a 0.1 µm bias … (inference from the model form[^pdk-07])" sentence split at the colon into
+  a paragraph after the bullets; the hedge stays on the bias clause only: its own words ("from the model
+  form") name the `CMIMP` clause, and repeated on the reflectivity clause it would mark as inferred from
+  the model something the model does not bear on. Listed for the reviewer (R-SENTENCE step 5).
+* Why: item 1 split at "fitted for;"; item 2 into first block + two continuations at the semicolons
+  (the continuation opens "The plate edge lands …"; "This is the construction" keeps its base position
+  after that clause); item 3: "— the rules capm.3 … contact,[^pdk-periph] whose text names …" → "The
+  rules are capm.3 … contact.[^pdk-periph] The rules' text names … (inference; see CAPILD)." (subject,
+  verb and noun restored), and the alignment sentence's 17-word parenthetical as the following sentence
+  "(Inference; … overlay.[^levinson-2005])", covering the whole sentence as before (the Open question
+  names both alignments as not public).
+* How: italic scope lead-in; step 1 split at the semicolon and the Brunner/Rocke parenthetical (19
+  words) unparenthesised as its own sentence; step 2's dash (the DNQ chemistry) moved after its clause as
+  "DNQ/novolac is the chemistry … describe." (restored subject) and the 22-word parenthetical split:
+  "(industry-typical for i-line resists[^mack-2007])" stays with "around 1 µm", the PDK-thickness clause
+  becomes its own sentence with `pdk-03`; step 5's 27-word parenthetical split, "(our reading of
+  industry practice)" repeated on both halves (declared ADDED hedge), Levinson as its own sentence.
+* R-TOOLS as on 124 (the same three items). R-RELATED: Previous / Next / Same module (MM3, MM3E) /
+  Depends on (CAPILD) / Feeds (VIM3) / Same category (CAP2M) / Mask (with previous and next mask) /
+  Category page. R-OPENQ labels. R-REPEAT: none.
+* Preservation: ADDED = the glance box (markers, numbers, the `step-138` ref, hedges) and the repeated
+  "our reading" (step 5); REGROUPED lines read (lead-in numbers, the capm.3/4/5 rules, the resist
+  thickness), same digits in the same order. `--strict-words`: LOST `strength` ×3 (R-TOOLS), `page`
+  ("Mask page:" → "Mask:"); `whose`, `which`, `it` non-strict (restored nouns).
