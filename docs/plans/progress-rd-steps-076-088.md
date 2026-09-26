@@ -715,3 +715,57 @@ pages: 066, 068, 072. One commit per page.
   marker belonged to the other clause (depth/offset, screen oxide/amorphisation, tilt/amorphisation);
   the repeated markers above; glance and label lines.
 * **Caps**: para > 100 4 → 0; item > 60 4 → 0; sentence > 45 9 → 0. First sentence 26 w (above).
+
+### 087 NSDIS — done
+
+* **Lead.** First sentence (26 w) split at ", and cleans" ("It cleans the wafer …"); the 60-word
+  third sentence split at its semicolon ("It is therefore also the *pre-anneal clean*, …", the "(the
+  species we infer on NSDI)" staying in its dash material). One paragraph, 86 words; first sentence 13.
+* **After the figure.** The 123-word paragraph split before "The surface under the resist" (the crust
+  / the surface). The 47-word surface sentence is **left**: "on our reading of the flow" governs its
+  dash list and its closing participle ("thinned slightly … still needed to cap the anneal"), and
+  either split would leave a piece outside that hedge.
+* **R-CATEGORY.** Classification sentence (18 w) alone; the category-page crust sentence split at its
+  semicolon ("At an arsenic dose of 10¹⁵ cm⁻² the crust is at its worst.") as the second paragraph;
+  "What distinguishes this strip from `PDIS` is …" is its own label (step 3), split at ", so the wet
+  clean" ("So the wet clean must …", a sentence).
+* **Why.** "Two things must be true before RTAD." → colon and two bullets, each opening with its own
+  claim in bold ("The resist must be entirely gone.", "The wafer must be clean of metals:"; the
+  joining "And" dropped); the first split at its dash and at ", and a popped flake"; the Fujimura/Kern
+  sentence stays as the paragraph after (R-LIST step 4). The arsenic paragraph's 59-word sentence split
+  at its semicolon ("This is a matter of facility design …", both "(industry practice)" tags kept on
+  their clauses).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** Plasma ash (152 w): lead "Downstream microwave or RF oxygen plasma." (split at the
+  semicolon); continuation 1 = the two-step sentence, Nitrogen/forming gas (split at its semicolon,
+  "Chan, Chiu and Tao describe …"), the Wikipedia quotation; continuation 2 = "SkyWater's three ashers
+  cover the gases and temperatures such a recipe needs:[^skw-01]" with the three quoted entries as
+  nested plain bullets (the dash pair became the list; the marker, which ended the enumeration, sits on
+  the lead-in), then "The CF₄ options would, we infer, be left out to spare the oxide." Wet strip and
+  clean (126 w, a 67-word sentence): the label as the lead, the three chemistries as sub-bullets
+  (SPM with its quotation and `[^wiki-piranha]`; "SC-1 for particles;[^wiki-rca]"; "and, we infer,
+  SC-2 for metals … "…80 °C".[^wiki-rca]"), `[^wiki-rca]` **repeated** on the SC-1 item because the
+  base's one marker after the SC-2 quotation closed the whole sentence (masks-b H1, declared); the
+  continuation from "Visintin, Korzenski and Baum" unchanged.
+* **R-TOOLS.** Ashers: this reference's head ("— named on SkyWater's facilities page …"), *Tool
+  exists:*, *Runs this step:* with the Iridia reason. Benches: head with both quotations, *Tool
+  exists:*, *Runs this step:* the DNS/FSI SC-2 "(inference)". AIT: *Tool exists:* medium. Three tools,
+  no recap table.
+* **Resources.** The 46-word first bullet split at the semicolon after `[^skw-01][^fujimura-1994]`
+  ("CF₄, listed on the Iridia and Mattson ashers, … would, we infer, be omitted here; …").
+* **R-RELATED.** "The oxide the strip must preserve" → `Same module:`; "Companion strip … the other
+  high-dose strip" → `Same category:` (PDIS, P1IS are Resist strip / clean steps); "the earlier
+  pre-anneal strip of the well module: PWDEIS before RTAI" split off unlabelled (RTAI is an anneal, so
+  `Same category:` would be false for it). Previous and Next unchanged.
+* **R-OPENQ.** Labels "Ash recipe and wet sequence", "How much oxide survives", "Which asher and
+  bench"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead ("(the species we infer)" kept); Public numbers "none published
+  for SKY130"; tool line with both grades; Not public from the three Open questions.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `wiki-rca` (repeat), `skw-01`, number ⁺,
+  refs `step-085`, `step-088`, identifiers "SC-2", "SKY130", hedges "inference", "likely", "not public",
+  "we infer" — the glance box. REGROUPED: the wet-clean sentence (3, 1, 30 | 6, 1, 1, 75, 80), same
+  digits, same order. WORDS LOST: "strength"×3.
+* **Marker coverage.** 13 flags, all read: the asher bullets (marker on the lead-in); split halves whose
+  base marker belonged to the other clause (crust quotation/"At an arsenic dose", "Downstream …"
+  lead/quotation, CF₄); glance and label lines.
+* **Caps**: para > 100 3 → 0; item > 60 2 → 0; sentence > 45 8 → 1 (the surface sentence, above).

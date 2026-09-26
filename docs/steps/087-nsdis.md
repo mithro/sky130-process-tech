@@ -10,14 +10,30 @@
 | **Previous step** | {ref}`NSDI <step-086>` |
 | **Next step** | {ref}`RTAD <step-088>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the {ref}`NSDM <step-085>` resist after the N⁺
+  implant and cleans the wafer for the {ref}`RTAD <step-088>` anneal.
+* **Why:** anything it leaves behind — organic residue, implanter
+  metals, arsenic-bearing crust (the species we infer) — goes into the
+  RTA with the wafer.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
+  ashers — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** the ash recipe and wet sequence, whether the clean
+  includes SC-2 or an HF step, and how much oxide survives
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `NSDIS` removes the photoresist patterned at {ref}`NSDM <step-085>`
-after the N⁺ source/drain implant {ref}`NSDI <step-086>`, and cleans
+after the N⁺ source/drain implant {ref}`NSDI <step-086>`. It cleans
 the wafer for the source/drain activation anneal {ref}`RTAD <step-088>`
 that follows directly. It is the second of the two source/drain strips
 and the last resist strip of the front end before the first anneal of
-the module; it is therefore also the *pre-anneal clean*, and anything
+the module. It is therefore also the *pre-anneal clean*, and anything
 it leaves behind — organic residue, metals from the implanter,
 arsenic-bearing crust (the species we infer on {ref}`NSDI <step-086>`)
 — goes into the RTA with the wafer.
@@ -36,7 +52,9 @@ the heaviest ion the resists of this flow meet, so we infer that at a
 given dose it leaves the hardest crust of any implant strip in the
 process. Fujimura et al. traced the lower etching rate of high-dose
 ion-implanted resist to "carbonization of polymers of the resist"; the
-abstract does not compare implanted species.[^fujimura-1989] The
+abstract does not compare implanted species.[^fujimura-1989]
+
+The
 surface under the
 resist is, on our reading of the flow, the {ref}`SPOX <step-080>`
 oxide throughout — over the source/drain silicon, the spacers and
@@ -47,28 +65,37 @@ needed to cap the anneal.
 ## Step category
 
 `NSDIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-high-dose-implant* type, the twin of {ref}`PDIS <step-084>`. The
+*post-high-dose-implant* type, the twin of {ref}`PDIS <step-084>`.
+
+The
 category page explains the crust and the popping it causes when the
 wafer is heated quickly ("build[s] up pressure beneath the
-implant-hardened surface layer"[^pat-strip-mosel]); at an arsenic dose
-of 10¹⁵ cm⁻² the crust is at its worst. What distinguishes this strip
+implant-hardened surface layer"[^pat-strip-mosel]). At an arsenic dose
+of 10¹⁵ cm⁻² the crust is at its worst.
+
+What distinguishes this strip
 from `PDIS` is what follows it: not another resist coat but a
-1000 °C-class anneal (industry-typical; see {ref}`RTAD <step-088>`),
-so the wet clean must leave the surface as free of metals as a
+1000 °C-class anneal (industry-typical; see {ref}`RTAD <step-088>`).
+So the wet clean must leave the surface as free of metals as a
 pre-gate-oxidation clean would, and must do so without removing the
 oxide the anneal needs.
 
 ## Why this step exists
 
-Two things must be true before {ref}`RTAD <step-088>`. The resist must
-be entirely gone — organic residue carbonises in the anneal and
-becomes an un-removable defect, and a popped flake of crust on a
-source/drain region masks nothing at this point but becomes a particle
-under the sacrificial PSG ({ref}`PSG <step-089>`) and the polish that
-follows. And the wafer must be clean of metals: the implanter's
-beam-line and disc sputter metal onto the resist and the exposed
-oxide, and at a typical 1000 °C those metals diffuse into the silicon
-and the junctions that have just been made. Fujimura et al. showed how
+Two things must be true before {ref}`RTAD <step-088>`:
+
+* **The resist must
+  be entirely gone.** Organic residue carbonises in the anneal and
+  becomes an un-removable defect. A popped flake of crust on a
+  source/drain region masks nothing at this point but becomes a particle
+  under the sacrificial PSG ({ref}`PSG <step-089>`) and the polish that
+  follows.
+* **The wafer must be clean of metals:** the implanter's
+  beam-line and disc sputter metal onto the resist and the exposed
+  oxide, and at a typical 1000 °C those metals diffuse into the silicon
+  and the junctions that have just been made.
+
+Fujimura et al. showed how
 sodium contamination is kept out of downstream ashing,[^fujimura-1994]
 and Kern's review explains why an SC-1/SC-2-type clean follows the
 strip.[^kern-1990]
@@ -76,7 +103,7 @@ strip.[^kern-1990]
 The arsenic itself is a consideration. The crust contains implanted
 arsenic, the ash effluent and the wet-bench waste therefore carry it,
 and a fab's exhaust scrubbing and waste handling are designed for it
-(industry practice); this is a matter of facility design rather than
+(industry practice). This is a matter of facility design rather than
 of the recipe, but it is why arsenic-implanted resist is often
 stripped on dedicated tools or in dedicated chambers (industry
 practice).
@@ -89,33 +116,44 @@ resist would go into the RTA.
 
 ## How it is typically performed
 
-An industry-generic high-dose implant strip and pre-anneal clean for
-a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic high-dose implant strip and pre-anneal clean for
+a 200 mm, 130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Plasma ash, two steps.** Downstream microwave or RF oxygen
-   plasma; a first step at low temperature — "removed by oxygen and
+   plasma.
+
+   A first step at low temperature — "removed by oxygen and
    nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — takes the crust off without
    popping, then a hotter step removes the bulk. Nitrogen raises
    the ash rate,[^fujimura-1990] and forming gas or water vapour
-   penetrates the crust;[^fujimura-1994] Chan, Chiu and Tao describe
+   penetrates the crust.[^fujimura-1994] Chan, Chiu and Tao describe
    an ashing sequence designed around the "carbonized
    crust".[^pat-strip-tsmc] The downstream configuration keeps ions
    off the wafer: "monatomic oxygen is electrically neutral" and the
    remote plasma "prevents damage to the wafer surface".[^wiki-ash]
-   SkyWater's three ashers — "Gasonic PEP, remote microwave plasma,
-   N2, O2, 120C – 270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3,
-   H2/N2, 40C-270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2,
-   up to 250C"[^skw-01] — cover the gases and temperatures such a
-   recipe needs; the CF₄ options would, we infer, be left out to
+
+   SkyWater's three ashers cover the gases and temperatures such a
+   recipe needs:[^skw-01]
+
+   - "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C";
+   - "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C";
+   - "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".
+
+   The CF₄ options would, we infer, be left out to
    spare the oxide.
-2. **Wet strip and clean.** SPM (H₂SO₄:H₂O₂, typically "3 parts of
-   concentrated sulfuric acid and 1 part of 30 wt. % hydrogen
-   peroxide solution"[^wiki-piranha]) to remove the last organics
-   and ash residue; SC-1 for particles; and, we infer, SC-2 for
-   metals, since the anneal follows — "6 parts of deionized water,
-   1 part of aqueous HCl … 1 part of aqueous H2O2 … at 75 or
-   80 °C".[^wiki-rca] Visintin, Korzenski and Baum describe liquid
+2. **Wet strip and clean.**
+   - SPM (H₂SO₄:H₂O₂, typically "3 parts of
+     concentrated sulfuric acid and 1 part of 30 wt. % hydrogen
+     peroxide solution"[^wiki-piranha]) to remove the last organics
+     and ash residue;
+   - SC-1 for particles;[^wiki-rca]
+   - and, we infer, SC-2 for
+     metals, since the anneal follows — "6 parts of deionized water,
+     1 part of aqueous HCl … 1 part of aqueous H2O2 … at 75 or
+     80 °C".[^wiki-rca]
+
+   Visintin, Korzenski and Baum describe liquid
    formulations developed for high-dose implanted resist,[^visintin-2006]
    and Ohmi's room-temperature sequence is the alternative.[^ohmi-1996]
    SkyWater's Akrion Gamma bench lists "Sulfuric, SC1" and its DNS
@@ -143,24 +181,28 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 * **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers**
   — named on SkyWater's facilities page with their gases and
-  temperatures.[^skw-01] Strength: **strong** for existence;
-  assignment of this strip to any one is an inference, the Iridia's
-  40 °C floor and hydrogen chemistries fitting a crust step best.
+  temperatures.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* assignment of this strip to any one is an
+    inference, the Iridia's 40 °C floor and hydrogen chemistries fitting
+    a crust step best.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
   BOE"),[^skw-01] **DNS wet bench and FSI Mercury** ("industry
-  standard HF/SC1/SC2").[^skw-01] Strength: strong for existence; the
-  DNS and FSI Mercury benches, the only ones listed with SC-2, are the
-  natural pre-anneal clean stations (inference), as at
-  {ref}`PWDEIS <step-033>` and {ref}`LDASTIS <step-074>`.
+  standard HF/SC1/SC2")[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* the DNS and FSI Mercury benches, the only ones
+    listed with SC-2, are the natural pre-anneal clean stations
+    (inference), as at {ref}`PWDEIS <step-033>` and
+    {ref}`LDASTIS <step-074>`.
 * **KLA-Tencor AIT** inspection, our reading of "AIT"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
 * **{ref}`Oxygen <material-process-gases>`, nitrogen, {ref}`forming gas <material-anneal-ambients>` (H₂/N₂)**, possibly **{ref}`NH₃ <material-precursors>`** (listed
   for the Iridia) or **water vapour** (not among SkyWater's listed asher
-  gases), for the two-step ash;[^skw-01][^fujimura-1994] **{ref}`CF₄ <material-etch-gases>`**, listed
+  gases), for the two-step ash.[^skw-01][^fujimura-1994] **{ref}`CF₄ <material-etch-gases>`**, listed
   on the Iridia and Mattson ashers,[^skw-01] attacks the oxide and would,
   we infer, be omitted here; {ref}`arsenic-tolerant exhaust scrubbing <material-hardware-consumables>`.
 * **Sulphuric acid and hydrogen peroxide** ({ref}`wet chemicals <material-wet-chemicals>`) for SPM; **ammonium
@@ -174,10 +216,11 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 * Previous: {ref}`NSDI <step-086>` (the implant); mask:
   {ref}`NSDM <step-085>`.
 * Next: {ref}`RTAD <step-088>` (the anneal this clean prepares).
-* Companion strip: {ref}`PDIS <step-084>`; the other high-dose
-  strip: {ref}`P1IS <step-051>`; the earlier pre-anneal strip of the
-  well module: {ref}`PWDEIS <step-033>` before {ref}`RTAI <step-034>`.
-* The oxide the strip must preserve: {ref}`SPOX <step-080>`.
+* Same module: the oxide the strip must preserve, {ref}`SPOX <step-080>`.
+* Same category: the companion strip, {ref}`PDIS <step-084>`; the other
+  high-dose strip, {ref}`P1IS <step-051>`.
+* The earlier pre-anneal strip of the well module:
+  {ref}`PWDEIS <step-033>` before {ref}`RTAI <step-034>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -252,11 +295,11 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* The SKY130 ash recipe and wet sequence, and whether the clean
+* **Ash recipe and wet sequence.** The SKY130 ash recipe and wet sequence, and whether the clean
   includes SC-2 or an HF step before the anneal, are not public.
-* How much {ref}`SPOX <step-080>` oxide survives the two strips and
+* **How much oxide survives.** How much {ref}`SPOX <step-080>` oxide survives the two strips and
   enters the anneal is not public.
-* Which asher and bench run this strip is inferred from the
+* **Which asher and bench.** Which asher and bench run this strip is inferred from the
   published gas and temperature ranges.[^skw-01]
 
 <!-- footnotes -->
