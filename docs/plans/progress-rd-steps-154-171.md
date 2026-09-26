@@ -896,3 +896,13 @@ positives above; every WORDS LOST word is named in its page entry.
   explained.[^raw-data-testtile-pads] (1–8, … modules.[^raw-data-testtile-pads]) The schematics and
   layout … are not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]" (declared repeated
   marker; word `and` lost).
+* **L2, L11 (168):** the GPIO passage re-paragraphed so no paragraph opens on "So": "**A real pad.**
+  … (our reading of the published GDS and LEF).[^pdk-io-gpiov2]", then "The opening is … So the metal
+  extends … below. These are our readings of the published GDS and LEF.[^pdk-io-gpiov2]" (the two
+  repeated parenthetical hedges replaced by one declared closing sentence, ruling D3), then "The pad
+  openings are therefore …".
+* **L3 (168):** the substrate sentence reordered so the 0.6–1 µm range ends it and its source
+  parenthetical follows directly: "… is the substrate: on the 1.26 µm-tall metal-5
+  topography,[^pdk-04] over highly reflective aluminium, a transparent nitride-over-oxide stack of the
+  order of 0.6–1 µm. (The PDK's 0.09 µm TOPOX …)". Zero words; the `number_order` LOST line now reads
+  1.26 µm first, same digits.
