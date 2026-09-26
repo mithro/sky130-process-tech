@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`LICM1E <step-094>` |
 | **Next step** | {ref}`ALLY1 <step-096>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** the last wet or dry treatment the contact bottoms receive
+  before metal meets them; what it removes is this reference's
+  reading, not stated publicly.
+* **Why:** the contact silicide forms only where titanium touches
+  clean silicon.
+* **Public numbers:** none for the etch itself; the contact bottoms are
+  0.08 µm ("Standard Licon bottom CD").[^pdk-03]
+* **Likely SkyWater tool:** DNS wet bench and FSI Mercury — **strong**
+  (existence of dilute-HF cleaning); **inference** (assignment to
+  `SACETCH`).[^skw-01]
+* **Not public:** what the etch removes, its chemistry and tool, and
+  whether it includes the resist strip (→ Open questions).
+:::
+
 ## What this step is
 
 `SACETCH` — "sacrificial etch" — sits between the contact etch
@@ -17,7 +34,9 @@
 that precedes the titanium {term}`liner`. The step list used in this
 reference does not explain what the etch removes; we read it from its
 place in the sequence this reference describes and from public
-cleaning practice. At this point in the
+cleaning practice.
+
+At this point in the
 sequence the contact holes are open, the resist has been (or is
 being) stripped, and the next two steps are a hydrogen anneal and
 the sputtering of titanium onto the silicon and poly at the bottom
@@ -35,6 +54,8 @@ before silicidation" performed in dilute HF, the same class as
 Before, the etched holes under the contact resist; after, the resist gone and the holes clean. What this etch removes is not public: the page sets out three readings, all inferred: the thin oxide left at the bottoms of the diffusion holes, a deliberately formed oxide, or the resist and its anti-reflective coating with a clean. The figure draws the third, as the LICM1E page places the strip. The thin oxide of the first reading is already drawn cleared by the contact etch, as the LICM1E page describes it; whatever a dilute-HF dip takes from the walls is not drawn. The holes' bottoms are 0.08 µm across in the PDK ("Standard Licon bottom CD"),[^pdk-03] not drawn to scale. The transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the tips and the halo, and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. The N⁺ source/drains are not labelled either, nor the resistor head in the upper panel and the glass in the lower one. Not to scale.
 :::
 
+### Competing readings
+
 Three readings fit that place in the sequence; we set them out and
 mark all three as inferences:
 
@@ -43,7 +64,9 @@ mark all three as inferences:
    pages, a thin oxide — the implant screen of {ref}`SPOX <step-080>`
    and whatever {ref}`IOX45 <step-063>` left — lies on the
    source/drain silicon, and the plasma contact etch is stopped on or
-   in it rather than driven into the silicon. A short dilute-HF dip
+   in it rather than driven into the silicon.
+
+   A short dilute-HF dip
    then removes that oxide, together with the native oxide on the
    poly heads and the fluorocarbon-damaged skin of the oxide, leaving
    hydrogen-terminated silicon for the titanium. This is the
@@ -52,8 +75,9 @@ mark all three as inferences:
 2. **Removal of a deliberately grown sacrificial oxide.** Some flows
    grow or deposit a few nanometres of oxide in the open contacts
    after the plasma etch to consume the damaged silicon that Fonash
-   and Oehrlein describe,[^fonash-1990][^oehrlein-1989] then strip it;
-   the step would then be that strip. The {term}`thermal budget` argues
+   and Oehrlein describe,[^fonash-1990][^oehrlein-1989] then strip it.
+
+   The step would then be that strip. The {term}`thermal budget` argues
    against a grown oxide here (the junctions are 0.1 µm deep[^pdk-03]),
    but a low-temperature chemical oxide is possible.
 3. **A strip-and-clean step.** The resist and {term}`BARC` of
@@ -71,16 +95,25 @@ about 0.5 µm deep.[^pdk-03]
 ## Step category
 
 `SACETCH` is an {ref}`Etch <category-etch>` step of the *wet oxide
-etch* type (inferred). The category page says that wet etching is
+etch* type (inferred).
+
+The category page says that wet etching is
 used "where a film must be removed cleanly and gently with very high
-selectivity", and that dilute HF is the tool it infers for "the
+selectivity". It says that dilute HF is the tool it infers for "the
 sacrificial-oxide removal before silicidation … because a plasma
-would damage the exposed silicon". What distinguishes this instance from the
+would damage the exposed silicon".
+
+What distinguishes this instance from the
 gate-oxide etches is geometry — the acid must reach the bottom of a
-narrow, tapered hole and be rinsed out again — and consequence: the
-oxide it leaves behind, if any, becomes a series resistance in every
-contact, and the oxide it removes from the hole *walls* widens the
-hole and thins the cap over the gates. Wet cleaning of contact holes
+narrow, tapered hole and be rinsed out again — and consequence:
+
+* the
+  oxide it leaves behind, if any, becomes a series resistance in every
+  contact;
+* the oxide it removes from the hole *walls* widens the
+  hole and thins the cap over the gates.
+
+Wet cleaning of contact holes
 is treated in the handbooks edited by Reinhardt and Kern and by
 Reinhardt and Reidy.[^reinhardt-2008][^reinhardt-2010]
 
@@ -92,13 +125,16 @@ before the liner:
 
 * **Native and residual oxide.** A silicon surface exposed to air
   regrows an oxide within hours — Morita et al. measured the growth
-  of native oxide on silicon in air and in water[^morita-1990] — and
-  the plasma etch leaves a fluorine-rich, damaged oxide and
+  of native oxide on silicon in air and in water.[^morita-1990]
+
+  The plasma etch leaves a fluorine-rich, damaged oxide and
   fluorocarbon residue on every surface it touched.[^fonash-1990] A
   nanometre of oxide under the titanium raises the contact
   resistance and, worse, makes it variable; the specific contact
   resistivity models of Berger[^berger-1972] assume an intimate
-  interface. Dilute HF removes these layers at rates of nanometres
+  interface.
+
+  Dilute HF removes these layers at rates of nanometres
   per minute, set by the HF and HF₂⁻ concentrations[^judge-1971] and,
   at very low concentration, by the acid's dissociation
   state,[^kikuyama-1994] and leaves a hydrogen-terminated
@@ -109,7 +145,9 @@ before the liner:
   Monk, Soane and Howe give the kinetics of HF etching of thin oxide
   films in confined geometries.[^monk-1994]
 * **What must survive.** The nitride {term}`spacers <spacer>` and the gate caps are
-  exposed on the walls of the diffusion contacts; nitride etches
+  exposed on the walls of the diffusion contacts.
+
+  Nitride etches
   slowly in HF, with the mechanism Knotter and Denteneer
   describe,[^knotter-2001] but the {term}`PSG` and {term}`cap oxide` of the walls
   etch quickly — doped glass faster than undoped — so the dip is
@@ -118,7 +156,7 @@ before the liner:
 * **Particles and metals.** The clean also removes the polish
   residue and etch particles that the contact module cannot
   tolerate — the reason a wet clean rather than a plasma-only
-  treatment is used; Kern's reviews set out the chemistry of the
+  treatment is used. Kern's reviews set out the chemistry of the
   {term}`SC-1` and {term}`SC-2` steps that often accompany the
   HF.[^kern-1990][^kern-handbook]
 
@@ -128,8 +166,8 @@ contact resistance.
 
 ## How it is typically performed
 
-An industry-generic pre-liner contact clean for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic pre-liner contact clean for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 1. **Strip.** If not already done at {ref}`LICM1E <step-094>`:
    oxygen or H₂/N₂ downstream plasma {term}`ash` of the resist and
@@ -143,11 +181,13 @@ fab (SKY130's recipe is not public):
 3. **HF dip.** Dilute HF, typically 100:1 to 500:1 (industry
    practice[^reinhardt-2010]), for tens of seconds — long enough to
    remove a few nanometres of oxide from the contact bottoms, short
-   enough to take little from the walls; the etch rate follows the
+   enough to take little from the walls.
+
+   The etch rate follows the
    acid concentration.[^judge-1971] {term}`BOE` is the alternative where a
-   more stable rate is wanted (6:1 BOE etches thermal oxide at
+   more stable rate is wanted. (6:1 BOE etches thermal oxide at
    "approximately 2 nanometres per second"[^wiki-boe], too fast for
-   this purpose undiluted).
+   this purpose undiluted.)
 4. **Rinse and dry.** DI-water rinse and spin or IPA dry; the
    silicon is left hydrophobic and hydrogen-terminated.[^cerofolini-1998]
 5. **Queue time.** The wafers go to the anneal and the liner within
@@ -166,21 +206,32 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **DNS wet bench and FSI Mercury.** SkyWater lists "DNS wet bench
-  industry standard HF/SC1/SC2" and "FSI Mercury industry standard
-  HF/SC1/SC2 rotational" under pre-clean.[^skw-01] Strength:
-  **strong** for the existence of dilute-HF cleaning; assignment to
-  `SACETCH` is an **inference** from its place in the sequence this
-  reference describes, before the liner, and from the HF-last
-  pre-metal clean of the cleaning literature.[^kern-1990]
+| Tool | Evidence |
+|---|---|
+| DNS wet bench and FSI Mercury | strong (existence); inference (assignment) |
+| SEZ 223 / Da Vinci | strong (existence); medium (contact-hole clean) |
+| Akrion Gamma batch bench and EKC265/EKC270 solvent bench | strong (existence) |
+| GaSonics PEP, Iridia, Mattson Aspen II ashers | strong (existence) |
+
+* **DNS wet bench and FSI Mercury**
+  - *SkyWater says:* lists "DNS wet bench
+    industry standard HF/SC1/SC2" and "FSI Mercury industry standard
+    HF/SC1/SC2 rotational" under pre-clean.[^skw-01]
+  - *Tool exists:* **strong** for the existence of dilute-HF cleaning.
+  - *Runs this step:* assignment to
+    `SACETCH` is an **inference** from its place in the sequence this
+    reference describes, before the liner, and from the HF-last
+    pre-metal clean of the cleaning literature.[^kern-1990]
 * **SEZ 223 / Da Vinci.** Single-wafer "HF, DSP+HF, titration
-  controlled".[^skw-01] Strength: strong for existence; medium for a
-  contact-hole clean.
+  controlled".[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* medium for a
+    contact-hole clean.
 * **Akrion Gamma batch bench** ("Sulfuric, SC1, phosphoric, BOE,
   spin or IPA dry") and the **EKC265/EKC270** solvent bench.[^skw-01]
-  Strength: strong for existence.
+  - *Tool exists:* strong for existence.
 * Ashers: **GaSonics PEP, Iridia, Mattson Aspen II**.[^skw-01]
-  Strength: strong for existence.
+  - *Tool exists:* strong for existence.
 
 ## Resources required
 
@@ -198,14 +249,14 @@ fab (SKY130's recipe is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`LICM1E <step-094>` (the etch whose residue and
-  stop oxide this step removes). Next: {ref}`ALLY1 <step-096>`,
+  stop oxide this step removes).
+* Next: {ref}`ALLY1 <step-096>`,
   then {ref}`TI/TIN1 <step-097>` (the liner that must meet clean
   silicon) and {ref}`CSIL <step-098>`.
-* The oxide that may be the "sacrificial" film: {ref}`SPOX <step-080>`,
-  {ref}`IOX45 <step-063>`.
-* The other wet oxide etches: {ref}`TUNME <step-039>`,
+* Depends on: the oxide that may be the "sacrificial" film, {ref}`SPOX <step-080>`,
+  {ref}`IOX45 <step-063>`; the resist and BARC being stripped, {ref}`LICM1 <step-093>`.
+* Same category: the other wet oxide etches, {ref}`TUNME <step-039>`,
   {ref}`GOXETCH <step-046>`.
-* The resist and BARC being stripped: {ref}`LICM1 <step-093>`.
 * Category pages: {ref}`Etch <category-etch>`,
   {ref}`Resist strip / clean <category-strip>`.
 
@@ -259,13 +310,13 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* What this etch removes — the {term}`screen oxide` at the contact
+* **What the etch removes.** What this etch removes — the {term}`screen oxide` at the contact
   bottoms, a deliberately formed post-etch oxide, or the resist and
   BARC — is not stated publicly; all three readings above are
   inferences.
-* The chemistry (dilute HF or BOE, concentration, time), the tool
+* **Chemistry, tool and strip.** The chemistry (dilute HF or BOE, concentration, time), the tool
   and whether the step includes the resist strip are not public.
-* Whether a chemical oxide is deliberately left on the contact
+* **Chemical oxide or HF-last.** Whether a chemical oxide is deliberately left on the contact
   bottoms (some liner processes prefer it) rather than an {term}`HF-last`
   surface is not public.
 

@@ -368,3 +368,51 @@ Model pages: 078, 083. One commit per page.
   sentence); the post-etch split (`[^skw-01]` and "(inference)" moved with the asher sentence they
   belong to); the two test-tile items (marker on the lead-in).
 * **Caps.** para > 100: 3 → 0; item > 60: 9 → 0; sentence > 45: 13 → 0.
+
+### 095 SACETCH — done
+
+* **R-H3.** `### Competing readings` after the figure caption, over the three readings and the closing
+  "On all three readings …" paragraph. The lead is the 138-word text before the figure (138 in the
+  base), now two paragraphs (52 + 86) split before "At this point in the sequence …". Listed (over 120
+  as in the base; two paragraphs suffice).
+* **Reading 1 kept verbatim.** Its lead sentence ("On the reading of the SPOX and LICM1E pages, … the
+  plasma contact etch is stopped on or in it rather than driven into the silicon.") is one side of the
+  094/095 disagreement the S7 figure notes record, so it is not split; the item gets a continuation
+  from "A short dilute-HF dip …", and its lead stays at 52 words (listed; its only seam is inside the
+  disputed sentence).
+* **R-PARA / R-SENTENCE.** Reading 2 split at its semicolon ("… then strip it." / "The step would then
+  be that strip."), continuation from there. Step category: the 46-word category-page sentence split
+  at ", and that": "It says that dilute HF is the tool it infers for …" ("It", the category page, the
+  previous sentence's subject). Why "Native and residual oxide": the dash-enclosed Morita clause stays
+  where it is and closes the first sentence with its marker; "The plasma etch leaves …[^fonash-1990]"
+  starts the continuation; the Dilute-HF sentence is a second continuation paragraph. "What must
+  survive" split at its semicolon. "Particles and metals" split at its semicolon. How "HF dip": split
+  at its semicolon; the 16-word BOE parenthetical becomes its own sentence "(6:1 BOE etches … too fast
+  for this purpose undiluted.)" (§1 parenthetical cap; R-SENTENCE step 7).
+* **R-LIST.** Step category: "… and consequence:" → two plain bullets (what the etch leaves, what it
+  removes).
+* **R-CATEGORY.** Classification sentence alone (12 words). The category-page sentences stay a
+  paragraph; "What distinguishes this instance …" is its own label (step 3); the handbook sentence
+  closes the section.
+* **R-TOOLS.** Four graded tools → a `Tool | Evidence` recap table above the list, in the 084 form
+  (no lead-in). DNS/FSI: *SkyWater says:* (verb-first "lists"), *Tool exists:*, *Runs this step:*
+  (with its `[^kern-1990]`). SEZ/Da Vinci: pilot form (the head keeps "Single-wafer" beside
+  SkyWater's quotation, since the page does not say whose word it is) with two grades. Akrion/EKC and
+  the ashers: heads unchanged, *Tool exists:* strong for existence.
+* **R-OPENQ.** "What the etch removes", "Chemistry, tool and strip", "Chemical oxide or HF-last".
+* **R-RELATED.** Previous and Next as two bullets; "the oxide that may be the "sacrificial" film" and
+  "the resist and BARC being stripped" → one `Depends on:` bullet; "the other wet oxide etches" →
+  `Same category:`; "Category pages:" kept (two links). Every gloss and link kept.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does from the lead, saying that what the etch removes is this reference's reading;
+  Why from the Why intro; Public numbers "none for the etch itself" plus the 0.08 µm contact bottoms
+  `[^pdk-03]`; tool line with the two grades, each named; Not public from Open questions 1–2.
+* **Skipped.** R-REPEAT (none); R-TABLE, R-DERIVATION (nothing qualifies).
+* **Preservation.** ADDED markers `pdk-03`, `skw-01`, number 0.08, quote "Standard Licon bottom CD",
+  hedges "inference", "likely", "not public" (glance); number 223, identifiers `EKC265`, `EKC270`,
+  hedge "inference" (the recap table). REGROUPED: the HF-dip item (100:1 to 500:1 | 6:1, 2), same
+  digits, same order. WORDS LOST: "strength"×4 (R-TOOLS labels).
+* **Marker coverage.** 6 flags, all read: glance condensations (2); the consequence list ("if" is in
+  the first bullet); the Morita/Fonash split (each keeps its own marker); the BOE split (the marker and
+  "approximately" moved with the parenthetical they belong to).
+* **Caps.** para > 100: 2 → 0; item > 60: 5 → 0; sentence > 45: 5 → 0.
