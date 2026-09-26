@@ -655,3 +655,39 @@ verbatim (content problem 5).
 * `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `kastenmeier-1996`,
   the H3 and labels; every `number_order` change REGROUPED, read. `--strict-words` LOST: `against`,
   `strength`×4 (and `while`). cov: three flags, pairing noise. inv: OK.
+
+### 170 ALLY — done (base `c41c50f9`)
+
+No in-force note in the hand-written text. The "7000–9000 Å" of the post-figure passage is kept
+verbatim (content problem 5).
+
+* Lead (base 172, first sentence 38): first sentence split at its colon (zero words; 9 words now);
+  "… at typically 350–450 °C[^txt-02] whose purposes are …" → ". Its purposes are …" (whose → Its, the
+  gloss rule's form; word `whose` lost); the reading sentence split at its semicolon and its 23-word
+  trailing hedge "(Inference: textbooks describe … alloy process.[^skw-01])" a parenthetical sentence.
+  Two paragraphs (95, 77).
+* Post-figure passage: "… how much now lies between the ambient and the transistors:" and the four
+  layers as bullets (R-LIST; 47 words as one sentence); the 29-word gloss of the passivation ("TOPOX"
+  and "TOPNIT" …, 7000–9000 Å … fab.[^…]) moved, unchanged, out of the middle of its item to
+  directly after it, as a parenthetical sentence inside the same bullet.
+* R-CATEGORY: classification sentence alone; the category-page sentence and the thermal-budget
+  sentence a paragraph; "What it changes is X, Y …, and Z" (49 words) → "What it changes is:" and
+  three bullets (the `overview-metal-cap` dash aside stays inside its bullet); the bond-pad sentence a
+  closing paragraph. No **Specific to this step:** label: the remaining sentences are already
+  separate paragraphs and a list of their own.
+* Why: interface-trap item — the four studies after its colon as sub-bullets (step-page skeleton),
+  the Deal and trap-density sentences as a continuation; plasma-damage, hot-carrier, contacts and
+  nitride-memory items with continuation paragraphs (semicolons → full stops).
+* How: scope sentence italic; temperature item split after its first sentence: "This is far below
+  the 577 °C Al–Si eutectic …" (declared "This is"; the dash apposition as a sentence), and ",
+  which is why we read the soak as short …" → ". That is why …" (which → That), "(inference)" in
+  that sentence as in the base, the first half cited.
+* R-TOOLS (Aviza: three lines; the asher parenthetical and the dealer sentence as the continuation);
+  the Heatpulse item has no "Strength:" and is unchanged. R-RELATED (Previous · Next · Same module ·
+  Same category · the ONO bullet · Category page): the ONO bullet ("The memory cells whose nitride
+  hydrogen can affect") keeps its base form — no R-RELATED label is true of it (it is neither a
+  dependency nor something this step feeds). R-OPENQ labels on four bullets. Glance box (the only
+  number is the page's own "typically 350–450 °C" with its marker, after "none published for SKY130").
+* `check_preserved --allow-regrouped`: ADDED outside the glance only "Its", "This is", "That", the
+  labels; every `number_order` change REGROUPED, read. `--strict-words` LOST: `strength` (and
+  `whose`, `which`, `and`). cov: three flags, pairing noise. inv: OK.

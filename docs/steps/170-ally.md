@@ -10,25 +10,46 @@
 | **Previous step** | {ref}`PDME <step-169>` |
 | **Next step** | {ref}`HPETEST <step-171>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** on our reading, anneals the finished wafers at low
+  temperature in a hydrogen-bearing ambient, after the pads are opened
+  and before electrical test.
+* **Why:** in the industry's vocabulary an alloy anneal passivates the
+  Si/SiO₂ interface traps with hydrogen and repairs back-end plasma
+  damage.
+* **Public numbers:** none published for SKY130; an alloy anneal runs at
+  typically 350–450 °C.[^txt-02]
+* **Likely SkyWater tool:** Aviza furnaces, "H2 and forming gas alloy" —
+  **strong** for the existence of a furnace alloy process; the
+  assignment to `ALLY` is an **inference**.[^skw-01]
+* **Not public:** the ambient (forming gas, hydrogen or deuterium),
+  temperature and time, and where the hydrogen that reaches the gate
+  oxides comes from (→ Open questions).
+:::
+
 ## What this step is
 
-`ALLY` is the last thermal step of the flow: after the pads have been
+`ALLY` is the last thermal step of the flow. After the pads have been
 opened ({ref}`PDME <step-169>`), the finished wafers are, on our reading, annealed at low temperature in a
 hydrogen-bearing ambient and then sent to electrical
 test ({ref}`HPETEST <step-171>`). In the industry's vocabulary an
 {term}`alloy anneal` (or "sinter") is a furnace anneal in
-{term}`forming gas` at typically 350–450 °C[^txt-02] whose purposes are
+{term}`forming gas` at typically 350–450 °C.[^txt-02] Its purposes are
 to passivate the Si/SiO₂ interface traps with hydrogen, to repair
 damage left by the plasma steps of the back end, and to sinter the
 metal contacts and relieve stress in the interconnect (category
-page[^txt-01][^wiki-fg]). SkyWater lists "H2 and forming gas alloy" among
+page[^txt-01][^wiki-fg]).
+
+SkyWater lists "H2 and forming gas alloy" among
 the processes of its furnaces, which "are all made by Aviza",[^skw-01]
 but does not say at which points of a flow the process is used. The
-step list used in this reference does not give conditions; we read
-`ALLY` as the conventional final forming-gas anneal (inference:
+step list used in this reference does not give conditions. We read
+`ALLY` as the conventional final forming-gas anneal. (Inference:
 textbooks describe a final forming-gas anneal at the end of the process
 as standard practice,[^txt-01][^txt-02] and SkyWater lists a furnace
-alloy process[^skw-01]). The earlier
+alloy process.[^skw-01]) The earlier
 {ref}`ALLY1 <step-096>` is discussed on its own page.
 
 :::{figure} /_static/figures/pass-170-ally.svg
@@ -41,12 +62,18 @@ The finished slice at the final anneal, the same drawing as after the pad etch: 
 
 What is unusual about this wafer compared with the one at
 {ref}`ALLY1 <step-096>` is how much now lies between the ambient and
-the transistors: five aluminium levels, tungsten plugs, the local
-interconnect nitride, and a passivation of oxide and silicon nitride
-("TOPOX" and "TOPNIT" on the PDK's stack diagram,[^pdk-04] 7000–9000 Å
-of nitride in Cypress reports for the R7FT-3R technology and the
-S8DI and S8TNV-5R variants at the same fab[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]) that is opened
-only over the pads. Hydrogen from the
+the transistors:
+
+* five aluminium levels;
+* tungsten plugs;
+* the local
+  interconnect nitride;
+* a passivation of oxide and silicon nitride that is opened
+  only over the pads. ("TOPOX" and "TOPNIT" on the PDK's stack diagram,[^pdk-04] 7000–9000 Å
+  of nitride in Cypress reports for the R7FT-3R technology and the
+  S8DI and S8TNV-5R variants at the same fab.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005])
+
+Hydrogen from the
 furnace ambient must reach the gate oxides through that stack, or be
 supplied from within it: plasma nitride deposited at 330–350 °C contains
 some 20–25 at.% hydrogen, as Lanford and Rand measured.[^lanford-1978]
@@ -55,17 +82,26 @@ Which source dominates in SKY130 is not public.
 ## Step category
 
 `ALLY` is an {ref}`Anneal / thermal processing <category-anneal>` step
-of the *alloy / forming-gas* type. As the category page sets out, the
+of the *alloy / forming-gas* type.
+
+As the category page sets out, the
 alloy anneal comes last because later plasma exposure would undo the
 passivation, and its temperature is capped by the aluminium
 metallisation (Plummer, Deal and Griffin and Wolf and Tauber treat the
 practice[^txt-01][^txt-02]). Its {term}`thermal budget` is
-negligible for dopants and junctions. What it changes is hydrogen
-bonding at interfaces and in the dielectrics, the microstructure and
-stress of the aluminium lines and the interfaces between the
-aluminium, its refractory cladding — TiW or TiN, which the public
-record does not settle ({ref}`overview-metal-cap`) — and tungsten, and
-the stress of the passivation nitride. In the
+negligible for dopants and junctions.
+
+What it changes is:
+
+* hydrogen
+  bonding at interfaces and in the dielectrics;
+* the microstructure and
+  stress of the aluminium lines and the interfaces between the
+  aluminium, its refractory cladding — TiW or TiN, which the public
+  record does not settle ({ref}`overview-metal-cap`) — and tungsten;
+* the stress of the passivation nitride.
+
+In the
 sequence this reference describes it is the only anneal performed on a
 wafer with open {term}`bond pads <bond pad>`.
 
@@ -75,19 +111,28 @@ The physics of a final forming-gas anneal is well documented; its
 conditions in SKY130 are not public.
 
 * **Interface-trap passivation.** Hydrogen ties up the dangling bonds
-  at the Si/SiO₂ interface: Reed and Plummer set out the chemistry of
-  interface-trap annealing,[^reed-1988] Cartier, Stathis and Buchanan
-  the passivation and depassivation of dangling bonds by atomic
-  hydrogen,[^cartier-1993] Brower the dissociation kinetics of the
-  passivated defects[^brower-1990] and Stesmans the passivation of P_b0
-  and P_b1 centres by molecular hydrogen.[^stesmans-1996] Deal's
+  at the Si/SiO₂ interface:
+
+  - Reed and Plummer set out the chemistry of
+    interface-trap annealing;[^reed-1988]
+  - Cartier, Stathis and Buchanan
+    the passivation and depassivation of dangling bonds by atomic
+    hydrogen;[^cartier-1993]
+  - Brower the dissociation kinetics of the
+    passivated defects;[^brower-1990]
+  - Stesmans the passivation of P_b0
+    and P_b1 centres by molecular hydrogen.[^stesmans-1996]
+
+  Deal's
   terminology names the charges involved.[^deal-1980] The interface-trap
   density affects threshold voltage, subthreshold slope and 1/f noise of
   every transistor the PDK models.
 * **Repairing back-end plasma damage.** Every plasma step since the
   gates were formed — contact, via and metal etches, HDP and PECVD
   depositions, the passivation etches — can charge gate oxides through
-  the interconnect; Fang and McVittie described the thin-oxide
+  the interconnect.
+
+  Fang and McVittie described the thin-oxide
   damage,[^fang-1992] and Rangan, Krishnan and Ashok showed that hydrogen
   (or deuterium) passivation repairs process-induced
   damage.[^rangan-1998] A final anneal after the last plasma step
@@ -96,7 +141,9 @@ conditions in SKY130 are not public.
   reported that "replacing hydrogen with deuterium during the final
   wafer sintering process greatly reduces hot electron degradation
   effects", with transistor lifetime improvements "by factors of
-  10–50";[^lyding-1996] Kizilyalli et al. applied deuterium anneals to
+  10–50".[^lyding-1996]
+
+  Kizilyalli et al. applied deuterium anneals to
   manufacturing multilevel metal/dielectric MOS
   systems,[^kizilyalli-1998] and the University of Illinois patent
   describes an example anneal "in an ambient of 10% deuterium in
@@ -105,7 +152,9 @@ conditions in SKY130 are not public.
   "had been limited to CMOS structures with one-level of
   dielectric/metal and to about a 10 fold improvement in reliability",
   and report the first demonstration for multilevel metal/dielectric
-  systems.[^kizilyalli-1998] The isotope effect shows how directly the
+  systems.[^kizilyalli-1998]
+
+  The isotope effect shows how directly the
   final sinter's hydrogen sets
   the Si–H bonds at the interface. Whether SKY130 uses hydrogen or
   deuterium is not public; SkyWater lists hydrogen and forming
@@ -113,7 +162,9 @@ conditions in SKY130 are not public.
 * **Contacts and interconnect.** The same anneal lowers and stabilises
   contact and via resistance and relaxes the as-deposited stress of the
   aluminium (industry practice;[^txt-02] Learn reviewed the aluminium
-  metallisation of the preceding decades[^learn-1976]). It also has
+  metallisation of the preceding decades[^learn-1976]).
+
+  It also has
   costs: thermal cycling of
   aluminium under a stiff passivation drives
   {term}`stress-induced voiding` (Yue,
@@ -125,7 +176,9 @@ conditions in SKY130 are not public.
   al.[^pankove-1983]).
 * **Nitride memory.** The flow's {term}`SONOS` cells store charge in a
   nitride ({ref}`ONO <step-040>`), so hydrogen reaching that nitride
-  matters. Maes, Usmani and Heyns found that a post-nitridation
+  matters.
+
+  Maes, Usmani and Heyns found that a post-nitridation
   high-temperature hydrogen anneal *improved* retention in p-channel
   MNOS transistors, cutting the threshold-voltage decay at 125 °C by
   more than 20 % and attributing the gain to suppressed back-tunnelling
@@ -139,8 +192,8 @@ the {ref}`HPETEST <step-171>` parameters would not represent the product.
 
 ## How it is typically performed
 
-An industry-generic final alloy anneal for a 200 mm, 130 nm-era fab with
-an aluminium back end (SKY130's recipe is not public):
+*An industry-generic final alloy anneal for a 200 mm, 130 nm-era fab with
+an aluminium back end (SKY130's recipe is not public):*
 
 * **Tool and ambient.** Vertical batch furnace with a forming-gas
   supply — "typical forming gas formulations (5% H2 in N2)"[^wiki-fg] —
@@ -149,12 +202,14 @@ an aluminium back end (SKY130's recipe is not public):
   before hydrogen is admitted, so that the exposed aluminium pads are not
   oxidised further (inference).
 * **Temperature and time.** 350–450 °C for tens of minutes (typical
-  industry values;[^txt-02] category page) — far below the 577 °C Al–Si
+  industry values;[^txt-02] category page).
+
+  This is far below the 577 °C Al–Si
   eutectic that caps any anneal on an aluminium back end,[^txt-02] but
   inside the range where a confined aluminium film relaxes stress by
   {term}`hillock` growth[^chaudhari-1974] and
-  {term}`stress-induced voiding`,[^yue-1985]
-  which is why we read the soak as short and the ramp-down as
+  {term}`stress-induced voiding`.[^yue-1985]
+  That is why we read the soak as short and the ramp-down as
   controlled (inference). The
   University of Illinois example of about 400 °C for about 1 hour is of
   this kind.[^pat-deuterium-uiuc]
@@ -181,12 +236,17 @@ an aluminium back end (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Aviza furnaces, "H2 and forming gas alloy".** SkyWater states that
-  "Furnaces are all made by Aviza" and lists "H2 and forming gas alloy"
-  among the furnace processes.[^skw-01] Strength: **strong** for the
-  existence of a furnace alloy process; the assignment to `ALLY` is an
-  **inference** — it is the only *anneal* listed with H₂ or forming gas
-  (the furnaces' "H2 and forming gas alloy"). (SkyWater's asher entries
+* **Aviza furnaces, "H2 and forming gas alloy"**
+  - *SkyWater says:* states that
+    "Furnaces are all made by Aviza" and lists "H2 and forming gas alloy"
+    among the furnace processes.[^skw-01]
+  - *Tool exists:* **strong** for the
+    existence of a furnace alloy process.
+  - *Runs this step:* the assignment to `ALLY` is an
+    **inference** — it is the only *anneal* listed with H₂ or forming gas
+    (the furnaces' "H2 and forming gas alloy").
+
+  (SkyWater's asher entries
   also carry hydrogen — "Iridia RF microwave, N2, O2, H2, CF4, NH3,
   H2/N2, 40C-270C" and "Mattson Aspen2 … H2>N2, up to
   250C"[^skw-01] — but those are downstream plasma strippers running at
@@ -210,10 +270,11 @@ an aluminium back end (SKY130's recipe is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`PDME <step-169>` (the last plasma step, which opens the
-  pads). Next: {ref}`HPETEST <step-171>` (electrical test).
-* An earlier anneal: {ref}`ALLY1 <step-096>`.
-* The hydrogen-rich passivation nitride over the wafer:
-  {ref}`NTSD <step-167>`; the oxide beneath it: {ref}`NFUSOX <step-164>`.
+  pads).
+* Next: {ref}`HPETEST <step-171>` (electrical test).
+* Same module: the hydrogen-rich passivation nitride over the wafer,
+  {ref}`NTSD <step-167>`; the oxide beneath it, {ref}`NFUSOX <step-164>`.
+* Same category: an earlier anneal, {ref}`ALLY1 <step-096>`.
 * The memory cells whose nitride hydrogen can affect:
   {ref}`ONO <step-040>`.
 * Category page: {ref}`Anneal / thermal processing <category-anneal>`.
@@ -281,15 +342,15 @@ an aluminium back end (SKY130's recipe is not public):
 
 ## Open questions
 
-* The ambient (forming gas, hydrogen, or deuterium), temperature and time
+* **Ambient, temperature and time.** The ambient (forming gas, hydrogen, or deuterium), temperature and time
   of the final anneal are not public.
-* Whether hydrogen reaches the gate oxides from the furnace ambient
+* **Source of the hydrogen.** Whether hydrogen reaches the gate oxides from the furnace ambient
   through the openings and the passivation, or mainly from the
   hydrogen-rich passivation nitride, is not public.
-* Whether the anneal is a batch furnace process or single-wafer is not
+* **Furnace or single wafer.** Whether the anneal is a batch furnace process or single-wafer is not
   public; the furnace reading rests on SkyWater's "H2 and forming gas
   alloy" entry.[^skw-01]
-* What this anneal does to the SONOS cells' retention and programming
+* **SONOS cells.** What this anneal does to the SONOS cells' retention and programming
   window is not public; the one public measurement of a hydrogen
   anneal on a nitride memory reports an improvement.[^maes-1981]
 
