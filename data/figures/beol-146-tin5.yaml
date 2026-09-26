@@ -17,8 +17,8 @@ caption: >-
   off, and the drawing starts inside the aluminium of the metal 3 under the capacitor. Before,
   the hole etched to the plate; after, the liner over the whole wafer: across the oxide, down
   the walls of the hole and over its floor. The page describes it as ionised-metal-plasma
-  titanium nitride; its thickness is not public (industry-typical: a few tens of nanometres on
-  the field and much less on the via floor[^txt-05]). It is drawn with one thickness
+  titanium nitride; its thickness is not public (industry-typical: a few tens of nanometres over
+  the oxide, much less on the floor of the via[^txt-05]). It is drawn with one thickness
   everywhere, which such a film does not have, and far thicker in proportion to the hole than
   it is. The liner, the plate and the metal cap are drawn in the one colour the figure
   conventions use for every Ti, TiN and TiW film; the plate is TiW as the page assumes, and

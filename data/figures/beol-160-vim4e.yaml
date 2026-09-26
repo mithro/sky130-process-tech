@@ -11,10 +11,10 @@ alt: >-
   oxide: at the left to the top of the line, at the right, less deep, to the plate.
 caption: >-
   Before, the via-4 resist; after, the holes etched through the cap oxide and the NILD6 oxide,
-  0.505 µm together over metal 4 in the PDK's stack diagram,[^pdk-04] and the resist stripped,
+  0.505 µm together over metal 4 as the PDK's stack diagram gives it,[^pdk-04] and the resist stripped,
   which the page treats as part of this step. The two holes stop on two kinds of floor: at the
   left on the cap film of a metal-4 line, and at the right on the second capacitor's top plate,
-  which stands above the metal-4 cap on the capacitor dielectric. Which refractory film caps
+  which stands on the capacitor dielectric, higher than the metal-4 cap. Which refractory film caps
   metal 4 is not public: the overview of the metal cap sets out the TiW and the TiN readings,
   and the figure does not choose. On this drawing the etch over the metal-4 line also clears
   the thin capacitor dielectric left on the line at MM4E, down to the cap; the page gives the

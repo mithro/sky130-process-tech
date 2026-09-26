@@ -13,8 +13,8 @@ caption: >-
   outside the resist, stopping on the cap oxide, and the resist has been stripped (the page
   treats the passivation, strip and clean as part of this step). What remains are two metal-5
   shapes, each over a via-4 hole that its metal fills on the reading of WTIAL5. Unlike at MM3E
-  and MM4E, no capacitor dielectric lies on this metal. The cap is read here as TiW, because the
-  2014 S8P stack change excluded "top metal layers"[^cyp-qtp-123907] (the overview of the metal
+  and MM4E, no capacitor dielectric lies on this metal. The cap is read here as TiW, on the
+  page's reading of the 2014 S8P qualification's exclusion of "top metal layers"[^cyp-qtp-123907] (the overview of the metal
   cap sets out the evidence), and is broken through first. The edges are drawn vertical, and
   nothing is drawn to scale: the page uses the PDK's 1.26 µm for the metal[^pdk-04] and gives
   the minimum width and space as 1.600 µm (m5.1, m5.2);[^pdk-periph] a minimum space is about
