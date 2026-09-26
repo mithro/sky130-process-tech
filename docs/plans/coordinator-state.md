@@ -39,11 +39,11 @@ Owner rule since 2026-09-25: at most FOUR sub-agents running at any time. Everyt
 queue below; a stopped agent is restarted by giving a fresh agent the same task text plus "read the
 progress file docs/plans/progress-<name>.md and continue from where it stops".
 
-Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window allows
+Running (2026-09-27): rd-steps-118-134, one agent at a time; S11 figures merged, so W1c is complete and every step page has a figure
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s11` | W1c series S11 passivation and pad (164–170) + a prober block-chain for 171 | Opus | writing |
+| `topic/rd-steps-118-134` | W2 batch 9: step pages 118–134 (via 1, metal 2, via 2, metal 3) | Opus | writing |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
