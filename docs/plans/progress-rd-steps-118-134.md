@@ -127,21 +127,31 @@ Arithmetic re-checked while copying, all correct: 118 k₁ 0.15 × 0.70/0.248 = 
 
 ## Content problems for the owner (not fixed; text kept verbatim)
 
-1. **120:37 and 131:37, "the titanium–tungsten floor"** — the lead says the liner coats the
-   titanium–tungsten floor without a hedge, while the same pages' post-figure passages give the floor as
-   TiW on the 2013 stack or TiN on the 2014 one ({ref}`overview-metal-cap`, undecided). The S9a figure
-   reviewer's suggested wording: "the refractory cap of metal 1 (TiW or TiN; see
-   {ref}`overview-metal-cap`)" (metal 2 on 131). Content edit; not made here.
-2. **134:143 and the How bottom-layer item, "Ti or TiW"** — the page describes the metal-3 bottom layer
-   as "Ti or TiW" and does not discuss a Ti/TiN bottom on the TiN reading (the 2014 stack's
-   "150A Ti/250A TiN" underlayer at metals 1 and 2); the figure uses the page's words.
-3. **McConica and Cooper misattributed, 132:111 and 121:109** — "Tungsten nucleates on the TiN of
-   TIN4/TIN3,[^srinivas-1992][^mcconica-1988]"; the cited paper is "Tungsten Nucleation on Thermal Oxide
-   during LPCVD …" — nucleation on oxide, not on TiN (both pages' reading lists say so). 132 was known
-   from batch 8; **121:109 is the same error, newly noted**. Suggested fix as for 110.
-4. **123 TIAL12** (as 112): the page describes the Ti/Al–Cu/TiW stack ("this page describes the
-   Ti/Al–Cu/TiW stack because the PDK's 0.36 µm matches its 3 600 Å sum exactly", marked an inference)
-   while the overview and the figures leave the cap undecided; kept verbatim, owner decision.
+In the reviewer's words (review `rd-steps-118-134`, section D):
+
+1. **120:37 and 131:37 "the titanium–tungsten floor"** — confirmed: unhedged in the lead, while 120:62–71
+   and 131's floor paragraph give TiW or TiN and link `overview-metal-cap`. Verbatim from the base;
+   the suggested "the refractory cap of metal 1 (TiW or TiN; see {ref}`overview-metal-cap`)" (metal 2
+   on 131) is a content edit for the owner.
+2. **134 bottom layer "Ti or TiW"** (134:143, 134:417, glance, R-TOOLS) — confirmed: on the TiN reading
+   the 2014 S8P stack's underlayer is Ti/TiN, which the page does not mention as a bottom-layer option.
+   Owner decision (it touches the figure spec too).
+3. **McConica and Cooper — the attribution is wrong on both pages.** 121:108–109 "Tungsten nucleates
+   on the TiN of {ref}`TIN3 <step-120>`.[^srinivas-1992][^mcconica-1988]" and 132:110–111 (same with
+   TIN4). The cited title as it appears on each page's footnote (121:380–383, 132:371–374) is C. M.
+   McConica and K. Cooper, "**Tungsten Nucleation on Thermal Oxide** during LPCVD of Tungsten by the
+   Hydrogen Reduction of Tungsten Hexafluoride", *J. Electrochem. Soc.* 135(4), 1003–1008 (1988); the
+   pages' own reading lists say "nucleation on oxide and on TiN" (121:280–281, 132:273–275). It supports
+   "tungsten does not nucleate readily on oxide", not nucleation on TiN; Srinivas et al. ("Nucleation of
+   Tungsten on Titanium Nitride …") is the right cite for the TiN claim. Both lines are in the base
+   (121 base :84, 132 base :87) and the branch did not touch them. Content error for the owner; fix as
+   for 110: "Tungsten nucleates on the TiN of TIN3,[^srinivas-1992] not readily on oxide, as McConica
+   and Cooper measured.[^mcconica-1988]" (wording is the owner's). **121:108–109 is new for the owner.**
+4. **123 describes the Ti/Al–Cu/TiW stack** (123:72, marked an inference; 123:159 "a 0.36 µm
+   Ti/Al–Cu/TiW stack" unhedged in the Wiring-delay bullet) — confirmed, verbatim from the base;
+   owner decision with `overview-metal-cap`.
+
+(Line numbers are the review's, before the fix round added one blank line after each glance box.)
 
 ## Pages
 
@@ -630,7 +640,11 @@ Arithmetic re-checked while copying, all correct: 118 k₁ 0.15 × 0.70/0.248 = 
   comparison). Placement (47 words): "though looser than the contact's 0.030 µm (m1.4)" is an aside;
   it moves, as "It is looser than the contact's 0.030 µm (m1.4).[^pdk-periph]", to after "even though
   the hole is larger", which stays with "tighter than via 1's" that it qualifies ("though" lost, "It
-  is" added); the slip-off clause is the continuation. Coupling: split at its colon.
+  is" added); the slip-off clause is the continuation. **Declared interpretation (review L2):** the
+  base's "tighter than via 1's 0.055 µm, though looser than the contact's 0.030 µm (m1.4), even though
+  the hole is larger" leaves open which comparison the concession qualifies; the split attaches "even
+  though the hole is larger" to "tighter" (the only comparison against which a larger hole is a
+  concession) and makes the "looser" aside the following sentence. Coupling: split at its colon.
 * **How:** italic scope lead-in. Resist coat: lead ends at "(inference);". Exposure: lead ends at
   "size;", the PSM and the steps-sheet record are the continuation.
 * **R-TOOLS:** ASML item in three lines; "SkyWater also lists "ASML I-line stepper" …, and which layers
@@ -853,3 +867,25 @@ Arithmetic re-checked while copying, all correct: 118 k₁ 0.15 × 0.70/0.248 = 
 * **Left over the caps:** lead 126 words in two paragraphs (base 127). Nothing over the §1 caps. Item
   leads over 30 words: Low resistance (22 after the split), EM (37), Hillocks (38), TiW (41) — each one
   sentence.
+
+## Review fix round (review `rd-steps-118-134`: 0 High, 2 Medium, 6 Low)
+
+One commit per page; the guide rulings in their own commit.
+
+* **M1, 125.** "each is compared with `MAX_EGAR`" → "each term is compared with `MAX_EGAR`" (noun
+  restored; "each" again means each of the two terms).
+* **M2, 120.** "These are the titanium- and tungsten-fluoride and oxide residue …" → "The material
+  removed is the …" (subject restored; hedge and marker unchanged).
+* **L1, 125.** The ash-tool sentence moved back directly after "…followed by DI rinse and dry." and
+  before the solvent parenthetical, as "SkyWater lists GaSonics, Iridia and Mattson ash tools …"
+  (one restored noun).
+* **L2, 129.** The re-attached concession is declared in the 129 entry above (not moved).
+* **L3, 132.** "Their floor is" → "The holes' floor is".
+* **L4, 120.** "local interconnect" → "local-interconnect" (the source line break joined with its hyphen).
+* **L5, all seventeen pages.** A blank line after the glance box's closing `:::`, as on 001–117.
+* **L6, 128.** Glance Why in the reviewer's words: "a polish alone does not give a via level what it
+  needs: thickness control, a sealed surface, a known surface for lithography and mechanical
+  protection." (117 has the same short form; left to the coordinator.)
+* **Guide rulings D1, D2, D3, D5** written into `readability-guide.md` (R-SENTENCE step 5, R-CATEGORY
+  step 3, §1 word counts, §7 step 4b). **D4** (`number_order` regroup within a paragraph or a table plus
+  its lead-in) is a tool change for the coordinator; the hand re-pair stays mandatory.
