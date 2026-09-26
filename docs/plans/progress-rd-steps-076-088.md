@@ -629,9 +629,9 @@ None was fixed here; each is recorded as found.
   medium-current tool with tilt: …" (`[^krieger-1989]` **repeated** on the claim, which in the base
   was followed by Krieger's marker in its dash material — batch-4 M2, declared; "That is" added; "and
   would" → "Such an implant would", the noun back rather than an "It" that could be read as the
-  shadowing). Device-specific (65 w): the dash material after the claim ("That is the 5 V PMOS …,
-  the PNP emitter, or the diffusion resistor.", "That is" added); continuation from "The mask sharing
-  argues …" (split at the semicolon).
+  shadowing). Device-specific (65 w): the base dash pair kept in place (review M1: a first draft moved it
+  after the claim as "That is the 5 V PMOS …", which read as the place where the first implant does no
+  harm); only the semicolon split, continuation from "The mask sharing argues …".
 * **R-REPEAT not applied.** The 8250 quotation appears in Why ("Axcelis 8250 Mid current B11, BF2,
   As, ESC chuck, …") and under Machines likely used ("B11, BF2, As, ESC chuck, …"). The two copies
   are not the same quotation (only the Why copy names the tool), and the Why argument rests on it;
