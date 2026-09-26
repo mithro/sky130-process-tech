@@ -43,11 +43,10 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| (none — paused for quota until 2026-10-01 10:00 UTC; resume with figures S9b/S11, then steps 098–171) | | | |
+| `topic/rd-steps-098-106` | W2 batch 7b (silicide, plug, local interconnect) — Opus writer | Opus | writing |
 
-Quota pause: the project's share of the weekly quota is about 63 of the 75-point cap (2026-09-26). No new
-agent is launched until the reset on 2026-10-01 10:00 UTC; the mask batch finishes, gets its Opus review
-and merges. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
+Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
+Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
 1. Figures S9b (141–149, 154–163) from the beol templates — read the "Drawing the next groups" section
    of `figure-authoring.md` (dielectric cleared at 145/155/160; MM4 covers the second plate); then S11
    passivation (164–170) and a prober block-chain for 171.
