@@ -35,12 +35,12 @@
 
 `CAPME` etches the top plates of the first {term}`MiM capacitor`. Through
 the resist islands of {ref}`CAPM <step-137>` a plasma removes the
-blanket plate film of {ref}`CAPTIW1 <step-136>` and stops on, or a little way into, the thin
+blanket plate film of {ref}`CAPTIW1 <step-136>`, TiW as assumed
+there, of the order of 0.1 µm on our reading of the PDK's top-plate
+sheet resistance. The plasma stops on, or a little way into, the thin
 capacitor dielectric of {ref}`CAPILD <step-135>`,
 leaving TiW only where the layout draws `capm`, "MiM capacitor plate
-over metal 3".[^pdk-06] The film is TiW, as assumed
-there, of the order of 0.1 µm on our reading of the PDK's top-plate
-sheet resistance. The resist is then stripped; this reference
+over metal 3".[^pdk-06] The resist is then stripped; this reference
 treats the strip and post-etch clean as part of this step.
 
 :::{figure} /_static/figures/mim-138-capme.svg
@@ -349,8 +349,7 @@ end (SKY130's recipe is not public):*
     TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]
   - *Tool exists:* **strong** for the tools and for TiW as a qualified
     material.
-
-  Which runs this step is not public.
+  - *Runs this step:* which runs this step is not public.
 * **Strip — "Gasonic PEP", Iridia, Mattson Aspen II; clean — batch
   rotational tools with "EKS265, EKC270 solvents"**[^skw-01]
   - *Tool exists:* strong for existence.
