@@ -277,3 +277,51 @@ Base `49fc160b`. Caps before: 4 paragraphs, 8 items, 12 sentences over; after: 0
   nouns (`MM3`, "via-3" in the via3.5 cell) and the Open-question label "TLM, S8TM and PLM" (`S8TM`);
   REGROUPED lines read. `--strict-words`: LOST `strength` ×3, `page` ("Mask page:"), `enclosed`,
   `must` (table cells).
+
+### 140 MM3E — done
+
+Base `32241413`. Caps before: 3 paragraphs, 9 items, 12 sentences over; after: 0/0/0. Lead 173 words
+(base 168) in two paragraphs. The lead's "a chlorine plasma removes … first whatever remains of the
+CAPILD dielectric outside the capacitor plates" is kept word for word (see Content problems).
+
+* Lead: the "removes everything down to the via-2 level: first …, then …" sentence split at the colon
+  ("It removes first …", subject and verb added; "It" = the chlorine plasma, the only candidate), the
+  stack dash as "The stack is a refractory cap, a thick Al–Cu layer and a thin refractory bottom
+  layer." directly after it; the `met3` sentence split at its semicolon.
+* R-H3: the bold run-in "**How thick is the metal?**" that introduces the whole thickness passage →
+  `### How thick is the metal?` (R-H3 step 4); the 253-word paragraph in four paragraphs at sentence
+  seams; the two Cypress reports split at the semicolon ("and" dropped); the R7FT-3R sentence at its
+  semicolon. No table: the numbers are three reports' own quoted stacks and two PDK readings with
+  different kinds of claim attached to each ("which shows …", "whereas …"); the prose split keeps them.
+  Arithmetic: 150 + 7 200 + 300 = 7 650 Å; 500 + 21 250 + 300 = 22 050 Å ≈ 2.2 µm; 150 + 8 000 + 300
+  = 8 450 Å = 0.845 µm; 47 mΩ/sq × 0.72–0.80 µm = 3.4–3.8 µΩ·cm. Correct.
+* R-CATEGORY: classification sentence with its dash tail (30 words); the MM1E pointer sentence as a
+  paragraph; "Three things are specific to this instance:" (the page's own announcing sentence, R-LIST)
+  and three bullets; "And" dropped from the third; its 20-word parenthetical as the sentence "For an
+  oxynitride, as assumed at CAPILD, the dielectric is a film which …" (subject and verb added) in a
+  continuation, and "which, on this reference's reading of CAPME, makes this one of …" → "On this
+  reference's reading of CAPME, that makes this one of …" (the relative pronoun as "that").
+* Why: items split into first block + continuations at semicolons; the stringer sentence's and the
+  charging sentence's long parentheticals ("(inference from the stack; the Newport Fab patent …)",
+  "(inference from the geometry; Wang, Ackaert et al. …)") made the following sentences "(Inference …
+  .[^…])", each directly after the one sentence it qualified.
+* How: italic scope lead-in (with its MM1E pointer); step 2 split, its "(industry practice; …
+  Oehrlein …)" parenthetical as the following sentence after the breakthrough sentence only: its
+  markers (Liu–Kuo, Abraham) are the cap-breakthrough sources, and the BARC-open clause before the
+  semicolon is covered by the section's scope sentence like every other step. Listed for the
+  reviewer. Step 3 into first block + continuation; step 7: the ash-tool dash and the solvent
+  parenthetical as two sentences after the ash/clean sentence ("SkyWater lists GaSonics, Iridia and
+  Mattson strippers …" — "strippers" names them as the ash tools); step 8 into first block +
+  continuation.
+* R-TOOLS: Lam item (three lines; the "(inference: the coarser, thicker level …)" stays with the
+  assignment); strip item. Resources: the 20-word "(industry practice; SkyWater lists no gases …)"
+  parenthetical split, "(industry practice[^nojiri-2015])" stays on the gas list.
+* R-RELATED: Previous / Next / Depends on (WTIAL3; CAPILD, CAPTIW1, CAPME; NCAPOX4, WCMP4) / Feeds
+  (VIM3E) / Same category (the other metal etches) / Category page. R-OPENQ labels; the thickness item
+  split at its semicolon into first block + continuation (the question); the bottom-layer item's
+  20-word "(as in the S8DI report, where metal 3 is …)" split: "(as in the S8DI report[^cyp-qtp-123907])"
+  stays, "where …" → "In the S8DI report metal 3 is that three-metal flow's **top** metal, so the
+  comparison is not level for level." in the continuation.
+* Preservation: ADDED = the glance box (markers, numbers, `step-139`, hedges, identifiers), "S8DI"
+  (the restored antecedent of "where"), "metal-3"/"via-2" in the glance; REGROUPED lines read.
+  `--strict-words`: LOST `strength` ×2, `where` (→ "In the S8DI report").
