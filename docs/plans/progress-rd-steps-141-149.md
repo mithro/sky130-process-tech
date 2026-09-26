@@ -115,32 +115,46 @@ LOST word is named in its page entry.
 
 ## Content problems for the owner (not fixed; text kept verbatim)
 
-1. **Where the MiM dielectric is left (from the S9b figure notes).** On the stop-on-dielectric
-   reading of `CAPME` (step 138), the capacitor dielectric stays on every metal-3 shape under the MM3
-   resist. The via-3 pages nevertheless give the via floor over metal 3 as the metal cap, without
-   saying whether that dielectric is still on it: 145 lead ("down to two kinds of floor at once: the
-   refractory cap of the metal-3 lines …") and post-figure paragraph ("The metal-3 floor is a 300 Å
-   TiW cap …"); 146 ("Its floor is a 300 Å TiW cap over Al–Cu …"); 143 Why ("both via-3 depths …: to
-   the metal-3 cap and to the capacitor plate"); 144 ("Since the plate stands on the capacitor
-   dielectric above the metal-3 cap, a via over a plate is shallower than a via over bare metal 3");
-   148 ("The dielectric the polish stops on is 0.39 µm thick over metal 3"). 141's figure caption says
-   the drawing leaves the dielectric on the metal-3 shapes; the page text does not. On that reading
-   `VIM3E` must also clear the thin dielectric over every metal-3 landing. One sentence on 145 (and a
-   clause on 144/146) would settle it; owner decision (as batch 10's content problem 2 for 140).
-2. **Unhedged "TiW" plate.** Where the plate is named without the "as assumed at CAPTIW1" hedge the
-   other sentences carry: 143 ("a shallower via to the TiW top plate"), 145 Why ("the etch thins the
-   TiW plate"; "The plate's thickness, several times the 300 Å cap … on our reading" is hedged), 147
-   category ("sits on a TiW film"), 142 Why ("On our reading … the TiW plate top" is hedged). Same
-   pattern as batch 10's content problem 5; suggested form "the top plate (TiW on this reference's
-   reading)".
-3. **148 lead pronoun (base wording).** "On this surface the metal-4 stack of WTIAL4 will be sputtered.
-   It is the fifth and last tungsten polish …" — "It" follows the metal-4 stack; unchanged here because
-   no split moved it (the base has the same order). "`WCMP5` is the fifth …" would remove the doubt.
-4. Arithmetic re-checked while copying, all correct: 141 d = ε₀·4.1 / 84.03 aF/µm² = 0.432 µm;
-   2.7861 → 4.0211 µm = 1.235 = 0.845 + 0.39 µm; 0.845/0.30 = 2.8, 0.765/0.30 = 2.55 ≈ 2.6. 142
-   0.845/0.36 = 2.3 ("more than twice"); 0.39 − (0.1–0.2) ≈ 0.2–0.3 µm. 143/144/145 0.39/0.20 = 1.95.
-   144 k₁ 0.20 × 0.70 / 0.248 = 0.565 ≈ 0.56, 0.20 × 0.63 / 0.365 = 0.345 ≈ 0.35. 149 47 mΩ/sq ×
-   0.8 µm = 3.76 ≈ 3.8 µΩ·cm.
+In the reviewer's words (review `rd-steps-141-149`, section D and L5):
+
+1. **Dielectric left on the metal-3 landings.** Real. It follows from 138's stop-on-dielectric
+   reading and the 141 figure caption, and is the same gap as batch 10's content problem 2 (140).
+   The page text treats the via-3 floor over metal 3 as the bare cap on 143, 144, 145, 146 and 148
+   (quotations confirmed unchanged). Owner decision. Suggested sentence for 145 after "The metal-3
+   floor is …": "On the stop-on-dielectric reading of {ref}`CAPME <step-138>`, the thin capacitor
+   dielectric also remains on the metal-3 shapes under this oxide, and the etch must clear it at
+   every metal-3 landing (inference)." A clause on 144/146 would carry the same point.
+2. **Unhedged "TiW" plate** (143, 145, 147; 142 is hedged by "On our reading"). Real and unchanged
+   from the base. It follows the pattern of batch 9 (120/131) and batch 10 CP5. Suggested form: "the
+   top plate (TiW on this reference's reading)".
+3. **149 unhedged "construction" (L5).** After M1, the unhedged "the construction described for
+   metal 3 at WTIAL3" is base text, but the page itself calls the repeat an inference
+   (`149-wtial4.md`, "(inference)"). For the owner, together with content problem 2; suggest "— on
+   this reference's reading, the construction described …".
+4. **Arithmetic.** Re-checked, all correct: 141 d = ε₀·4.1 / 84.03 aF/µm² = 0.432 µm; 4.0211 −
+   2.7861 = 1.235 = 0.845 + 0.39 µm; 0.845/0.30 = 2.8, 0.765/0.30 = 2.55 ≈ 2.6. 142 0.845/0.36 =
+   2.35; 0.39 − (0.1–0.2) ≈ 0.2–0.3 µm. 143/144/147 0.39/0.20 = 1.95. 144 k₁ 0.565 ≈ 0.56 and 0.345
+   ≈ 0.35. 149 47 mΩ/sq × 0.8 µm = 3.76 µΩ·cm.
+
+(The 148 lead pronoun, listed here in the first round, was ruled a readability fix and is applied:
+L7 below.)
+
+## Review fix round (review `rd-steps-141-149`, approve with fixes)
+
+* M1 149 lead: the apposition "— the construction described for metal 3 at WTIAL3" moved onto the
+  first sentence (134 form); the added "It is" is gone and the lead is back to 119 words.
+* L1 142 glance: "minimum oxide pattern density 0.7 (m3.pd.1)".
+* L2 145 glance tool line in 130's wording: "none named — no dielectric etcher is on SkyWater's public
+  list; the three listed poly/silicon etchers are **weak** (assignment to the via etch)."
+* L3 145 category: split at the base semicolon; the ARDE sentence follows "…by the depth
+  difference.", then "Here that shallow floor is a capacitor electrode …" (only "here" → "Here"
+  changes), so "the problem" follows the general statement and "Here" sits beside Freescale's
+  requirement.
+* L4 145 source lines re-wrapped (Schaepkens item, How step 5); no render change.
+* L5 → content problem 3 above. L6 progress-file corrections (guide problem 1, the 149 entry). L7
+  148 lead "It is the fifth" → "`WCMP5` is the fifth" (147 form, no word added).
+* Guide: rulings D1–D4 added to `docs/plans/readability-guide.md` (§4.1 note ¹; R-SENTENCE step 7
+  twice; R-CATEGORY step 3), in the reviewer's exact wording.
 
 ## Pages
 
