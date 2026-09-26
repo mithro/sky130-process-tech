@@ -200,9 +200,7 @@ stripped without effect and metal 1 would sit on unbroken oxide.
    or Iridia class in SkyWater's list[^skw-01] — followed by a solvent
    or semi-aqueous clean to remove the fluorocarbon
    polymer from the sidewalls and the metal-oxide residue from the
-   TiN floor without attacking the TiN.
-
-   (SkyWater lists "EKS265, EKC270 solvents"
+   TiN floor without attacking the TiN. (SkyWater lists "EKS265, EKC270 solvents"
    under "Batch Rotational"[^skw-01]; EKC265/EKC270-type amine
    solvents.) No HF is used (inference:
    it would widen the hole and etch the exposed oxide).
