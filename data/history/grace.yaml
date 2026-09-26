@@ -517,3 +517,92 @@ records:
   - {subject: Grace Shanghai, attribute: formed, value: December 2000}
   - {subject: HHGrace, attribute: 200 mm fabs, value: HH Fab1, HH Fab2, HH Fab3}
   notes: A tertiary source; used only beside the primary records.
+
+# ---- Browser captures added 2026-09-26 (sites that refuse scripted fetches) --
+- id: grc-pcn201901
+  origin: cypress
+  capture: browser
+  source:
+    publisher: Cypress Semiconductor Corporation (an Infineon Technologies company)
+    title: 'PCN201901: Qualification of HHGrace Fab3 as an Additional Wafer Fab Site for Select Industrial
+      PSoC 1 Products, with QTP#164014 (PSoC Emerald Device Family, S4AD-5 Technology, FAB 3) attached'
+    date: 2020-05-04
+    form: product change notification, document 001-53357 Rev. *I; copy distributed by Mouser
+  url: https://www.mouser.com/PCN/Cypress_Semiconductor_PCN201901_1.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: pcn/pcn-201901.txt
+  sha256: efb0b9f8bc8918c92d963546bfe468715ac93243369143c490ab998a498b2707
+  quotes:
+  - text: Cypress announces the qualification of HHGrace Fab3 (1399 Zu Chong Zhi Road, Zhangjiang
+      Hi-Tech Park, Shanghai, 201203, People's Republic of China) as an additional wafer fab site for
+      select Industrial PSoC® 1 products.
+    location: p.1, Description of Change
+  - text: PSoC 8C29000A Hydra Device on SONOS S4AD-5 Technology, Transfer to Fab 3
+    location: attached QTP 164014, Product Qualification History, row 072502 (dated Dec 08), continued
+      "(GSMC)" on the next line
+  - text: PSoC Emerald Device on SONOS S4AD-5 Technology, Transfer to Fab 3 (HHGrace)
+    location: attached QTP 164014, Product Qualification History, row 164014 (dated Mar 20)
+  - text: HHGrace / Shanghai-China
+    location: attached QTP 164014, Name/Location of Die Fab (prime) Facility
+  claims:
+  - {subject: HHGrace Fab3, attribute: address, value: 1399 Zu Chong Zhi Road, Zhangjiang, date: 2020}
+  - {subject: GSMC, attribute: called in Cypress's reports, value: Fab 3 (GSMC), date: 2008-12}
+  notes: Captured with a browser by the coordinator (Mouser refuses scripted fetches). Cypress's own
+    address for HHGrace Fab3 matches the BIS address of Grace's GFab1 and Hua Hong's address for HH FAB3.
+    The qualification history, as reissued in 2020, calls the 2008 GSMC transfer a "Transfer to Fab 3
+    (GSMC)". The stack is "Proprietary".
+
+- id: grc-pcn211801
+  origin: cypress
+  capture: browser
+  source:
+    publisher: Cypress Semiconductor Corporation (an Infineon Technologies company)
+    title: 'PCN211801: Silicon and Firmware Release for EZ-USB HX3PD Products, with QTP# 174903 attached'
+    date: 2021-05-03
+    form: product change notification; copy distributed by Mouser
+  url: https://www.mouser.com/PCN/Cypress_Semiconductor_PCN211801_1.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: pcn/pcn-211801.txt
+  sha256: d17f9aa2f26ec5c769f3668041e5cd493fd157b38538f9e8433ade73e1549846
+  quotes:
+  - text: S8PF-10P Technology Fabricated at HHGrace Fab 1
+    location: attached QTP 174903, Product Qualification History, row 133801 (dated Nov. 2014), 5th
+      Generation Touch Screen TSG5_L Device (8C20560C)
+  - text: Technology at HHGrace Fab 1
+    location: attached QTP 174903, Product Qualification History, row 163802 (dated Aug. 2018), EZ-PD CCG3,
+      S8PFN-20R
+  - text: S8SPR1P Technology in Fab 25 (Al BEOL Interconnect)
+    location: attached QTP 174903, Product Qualification History, row 162113 (dated Mar. 2017), CCG4
+  claims:
+  - {subject: S8PF-10P, attribute: qualified at, value: HHGrace Fab 1, date: 2014-11}
+  - {subject: S8PFN-20R, attribute: qualified at, value: HHGrace Fab 1, date: 2018-08}
+  notes: Captured with a browser by the coordinator. The attached report prints "Proprietary" for every
+    stack field, including the die fab.
+
+- id: grc-hhgrace-fab-shanghai
+  origin: huahong
+  capture: browser
+  source:
+    publisher: 华虹宏力 (Hua Hong Semiconductor)
+    title: 上海华虹宏力半导体制造有限公司 (company page, Chinese site)
+    date: null
+    form: company web page
+  url: https://www.huahonggrace.com/s/about_fab_shanghai.php
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/hhgrace-fab-shanghai.txt
+  sha256: dd458cc3ac8988c70c93a57c1bcf29479722300e28020644c3f68b41f94a24a2
+  quotes:
+  - text: 在上海金桥和张江共有三座8英寸晶圆厂
+    translation: has three 8-inch wafer fabs in all, in Jinqiao and Zhangjiang, Shanghai
+    location: company description, second paragraph
+  - text: 中国上海市浦东新区哈雷路288号
+    translation: No. 288 Halei Road, Pudong New Area, Shanghai, China
+    location: company contact address
+  claims:
+  - {subject: Shanghai Huahong Grace, attribute: fabs, value: three 8-inch fabs in Jinqiao and Zhangjiang}
+  notes: Captured with a browser by the coordinator (the site refuses scripted fetches). 288 Halei Road is
+    given as the company's contact address, not as the address of a fab, so it does not settle the HH
+    FAB2 address question.
