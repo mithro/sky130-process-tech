@@ -273,3 +273,40 @@ per page.
   anti-reflective role it supports). None lost a marker or hedge.
 * **Left over the caps:** item lead blocks over 30 words — TiW cap (26 + the dash parenthetical, fine),
   Cap (40; one sentence under one hedge). Nothing over the §1 caps.
+
+### 113 MM1 — done
+
+* **Kept verbatim:** the lead and the "film under the resist" sentences that open with the TiW stack
+  of the 2013 report and give the TiN alternative (the S8 figure agent's note); only a semicolon split
+  ("… 0.36 µm in all.[^pdk-04] A 2014 report records …").
+* **R-H3:** `### What the public record shows` over the post-figure passage (rules, CD table, Cypress
+  stack).
+* **R-TABLE:** m1.1–m1.7 and m1.pd.1 → `Rule | Constrains | Value`, unit in each cell (µm, µm² and a
+  bare 0.7), `[^pdk-periph]` on the lead-in "The periphery rules give:"; "— a 0.28 µm pitch" kept in
+  the m1.2 cell; the waffle-drop clause as a sentence after the table ("The layer also carries a
+  waffle-drop fill algorithm …[^pdk-periph]"). number_order LOST hand-checked against the rows: m1.1
+  0.140, m1.2 0.140 (0.28 pitch), m1.3a/b 0.280, m1.4 0.030, m1.5 0.060, m1.6 0.083 µm², m1.7
+  0.140 µm², m1.pd.1 0.7; 700 in the sentence. Words "by", "with" lost to the cells.
+* **R-SENTENCE:** the 15-word `LI1MCD` parenthetical split at its semicolon; its second half closed as
+  "(The table's second `LI1MCD` row gives 0.17 µm.[^pdk-03])" — marker repeated, declared.
+* **R-CATEGORY:** classification (13 words), then **Specific to this step:** with four bullets: the
+  k₁ passage (split at its colon and at ", and only NA 0.80" → "Only NA 0.80 …"; the k₁ formula stays
+  inline as on 107 and 061), the ITRS quotation, "We infer …" (split at ", and we infer"), the
+  substrate sentence. Bullets group sentences by topic (the k₁ bullet holds three) rather than one
+  per sentence, so that "Only NA 0.80 lifts it" stays with the value it lifts.
+* **R-PARA/R-LIST (Why, How):** Line width: split at ", and the space" and at "layer;". Resist–
+  substrate: the studies as two plain sub-bullets under the colon lead. Surface preparation: lead ends
+  at "cluster;"; the cap dash material becomes its own sentence, and `[^brunner-1991][^wiki-arc]` move
+  to the end of the BARC clause they support (swing-curve BARC), `[^cyp-…]` stay with the caps.
+  Exposure: split at "reticle;".
+* **R-TOOLS, R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** as on 107 ("*SkyWater says:* lists both" — the
+  guide's own form); three labels; Previous / Next split, Depends on / Feeds from the bullet that named
+  both, Same category (the masks), Mask; italic scope lead-in.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED markers `pdk-03` (repeat) and the
+  glance (`pdk-04`, `pdk-periph`×2, `skw-01`); ADDED numbers `1`×3/`2` ("metal 1" in cells and the
+  glance's m1.1/m1.2), 0.140, 0.28, 0.36 (glance); ref `step-114`, hedges — glance. LOST words
+  "page" (Mask page → Mask), "strength"×3, "by", "with".
+* **Coverage flags read:** table rows and studies sub-bullets (markers on the lead-in or their own
+  line); the k₁ and ITRS splits (each sentence keeps its own markers). None lost a marker or hedge.
+* **Left over the caps:** Exposure item lead (36 words, one sentence whose dash pair is an
+  attribution). Nothing over the §1 caps.
