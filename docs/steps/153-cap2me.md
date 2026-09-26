@@ -37,7 +37,7 @@
 resist islands of {ref}`CAP2M <step-152>` a plasma removes the blanket
 top-plate film of {ref}`CAPTIW2 <step-151>`, described in this reference
 as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
-MiM2 top-plate sheet resistance.[^pdk-07] It stops on, or a little way
+MiM2 top-plate sheet resistance.[^pdk-07] The plasma stops on, or a little way
 into, the thin capacitor dielectric of {ref}`CAPILD2 <step-150>`, leaving
 the plate film only where the
 layout draws `cap2m`, "MiM capacitor plate over metal 4".[^pdk-06]
@@ -269,8 +269,7 @@ same sequence.*
     TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]
   - *Tool exists:* **strong** for the tools and for TiW as a qualified
     material.
-
-  Which runs this step is not public.
+  - *Runs this step:* which runs this step is not public.
 * **Strip — "Gasonic PEP", "Iridia RF microwave", "Mattson Aspen2";
   clean — "Batch Rotational", "EKS265, EKC270 solvents, CO2 injected
   DI"**[^skw-01]
