@@ -36,6 +36,113 @@ every half of a split. Model pages: 126, 129 (batch 9), 139 (batch 10). One comm
   sentence; a quotation and a code span count as one word; an em dash is not a word.
 * Gates per page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`, `-W` build.
 
+## Batch summary (all nine pages done)
+
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps` over the nine pages: `{figure}` blocks (the captions), `{dropdown}`
+bodies (there are none on these pages), the generated index-links block, `## References` and
+footnote definitions are **excluded**; a leading bold run-in or italic R-TOOLS label is not counted
+into its sentence; a quotation and a code span count as one word; an em dash is not a word. Before =
+`main` at `e9bbf1a6`, counted with the same script. A list item is its first block; an indented
+continuation paragraph counts as a paragraph.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 29 | 0 |
+| list items > 60 words | 36 | 0 |
+| sentences > 45 words | 66 | 0 |
+| table cells > 25 words | 0 | 0 |
+
+Leads (≤ 120 words, first sentence ≤ 25): 144 (114) and 147 (114) within the cap as in the base; 149
+121 (base 119 counting a quotation as one word, 129 counting its words; see Guide problem 1); 141
+(164), 142 (142), 143 (139), 145 (142), 146 (237) and 148 (134) over 120 as in the base, each in two
+or three blocks of at most 100 words. First sentences all ≤ 25 words (144 was 29, 146 was 85). Item
+lead blocks with sub-bullets all ≤ 30 words. No in-force note on these pages.
+
+### Declared additions (the only non-glance ADDED lines)
+
+* Repeated markers: `pat-etchstop-ti` (145, 130 form), `pat-mim-stack-newportfab` (149).
+* Repeated hedges: "(inference from the construction)" (142 category, 147 category), "(inference)"
+  (144 via-depth sentence).
+* H3s: 144 and 149 `### What the public record shows`, 149 `### Competing readings`.
+* Restored nouns and subjects ("It is", "This is", "The floors are", "`TIN5` is", "`WDEP5` is",
+  "NILD3 sets out", "The tables give", "That protection is", "This reading is", "It has"), each named
+  in its page entry.
+* `number_order` LOST lines, hand re-paired in the entries: 144 (the via-3 rule table) and 149 (the
+  moved Cypress sentence of How step 4). Everything else is REGROUPED.
+
+### R-REPEAT (none applied)
+
+`rdtools.py rep` finds 10-word runs in two H2 sections only on 144 (the `cap_mim` cross-section
+sentence under Why and Open questions, as in the base); each copy carries its own argument. All other
+repeats are the glance box.
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables` `--check` — 0 differences; `sphinx-build -E -W`
+into a fresh directory — no warning, exit 0. `rdtools.py inv` per page against its
+base: References, footnote definitions, generated blocks, `{figure}` blocks, quick facts, H2 lists and
+Deep-dive counts identical; one admonition per page (the glance box, `:class: at-a-glance`, a blank
+line after its `:::`); every glance marker recurs below; no duplicate H3; every scope sentence is the
+italic lead-in; no consecutive duplicate line, no prose line ending in a hyphen or slash, no bare `>`,
+no NBSP. `check_preserved.py --base e9bbf1a6 --allow-regrouped` over the batch: no DUPLICATED line or
+sentence, no dropdown change; the only LOST lines are the two `number_order` lines above; every WORDS
+LOST word is named in its page entry.
+
+### Guide problems
+
+1. **Lead cap and quotation counting.** §1 says a quotation counts as one word, while `measure.py`
+   (which §1 also names) counts its words. On 149 the base lead is 119 by the first rule and 129 by
+   the second; its 46-word second sentence ("…a refractory cap — the construction described for
+   metal 3 at WTIAL3.") can be split at the dash only by adding "It is", which takes the lead to 121
+   by the first rule. I split it (the §1 sentence cap is a hard cap; D5 is written for a re-punctuation
+   alternative that does not exist here). A ruling on which count D5 uses, or on this case, would
+   settle it.
+2. **A non-hedge parenthetical of 12+ words that opens with "which".** R-SENTENCE step 7 lets a hedge
+   in parentheses stand as its own capitalised sentence; on 145 the aside "(which is why the
+   Ti-bearing part of the film etches more slowly; not separately sourced here)" is a gloss, not a
+   hedge. I kept it in parentheses as its own sentence directly after the clause it explains, with
+   "which" → "That". The same form served 147's basis parenthetical "(A geometric consequence of
+   conformal growth; …)". A line in R-SENTENCE for glosses would help.
+3. **Splitting at "…, though X".** On 149 a split before "though" leaves a fragment; I moved the word
+   ("In US 7,078,310, though, the shared electrode is …"). R-SENTENCE step 7 covers "So" but not a
+   concessive; a ruling would help.
+4. **R-CATEGORY step 3 with more than one following sentence.** On 145 and 148 "What is specific to
+   this instance is X." is followed by sentences that elaborate X (not bullets of their own). I left
+   them with it as one paragraph under step 3; the guide could say so.
+
+## Content problems for the owner (not fixed; text kept verbatim)
+
+1. **Where the MiM dielectric is left (from the S9b figure notes).** On the stop-on-dielectric
+   reading of `CAPME` (step 138), the capacitor dielectric stays on every metal-3 shape under the MM3
+   resist. The via-3 pages nevertheless give the via floor over metal 3 as the metal cap, without
+   saying whether that dielectric is still on it: 145 lead ("down to two kinds of floor at once: the
+   refractory cap of the metal-3 lines …") and post-figure paragraph ("The metal-3 floor is a 300 Å
+   TiW cap …"); 146 ("Its floor is a 300 Å TiW cap over Al–Cu …"); 143 Why ("both via-3 depths …: to
+   the metal-3 cap and to the capacitor plate"); 144 ("Since the plate stands on the capacitor
+   dielectric above the metal-3 cap, a via over a plate is shallower than a via over bare metal 3");
+   148 ("The dielectric the polish stops on is 0.39 µm thick over metal 3"). 141's figure caption says
+   the drawing leaves the dielectric on the metal-3 shapes; the page text does not. On that reading
+   `VIM3E` must also clear the thin dielectric over every metal-3 landing. One sentence on 145 (and a
+   clause on 144/146) would settle it; owner decision (as batch 10's content problem 2 for 140).
+2. **Unhedged "TiW" plate.** Where the plate is named without the "as assumed at CAPTIW1" hedge the
+   other sentences carry: 143 ("a shallower via to the TiW top plate"), 145 Why ("the etch thins the
+   TiW plate"; "The plate's thickness, several times the 300 Å cap … on our reading" is hedged), 147
+   category ("sits on a TiW film"), 142 Why ("On our reading … the TiW plate top" is hedged). Same
+   pattern as batch 10's content problem 5; suggested form "the top plate (TiW on this reference's
+   reading)".
+3. **148 lead pronoun (base wording).** "On this surface the metal-4 stack of WTIAL4 will be sputtered.
+   It is the fifth and last tungsten polish …" — "It" follows the metal-4 stack; unchanged here because
+   no split moved it (the base has the same order). "`WCMP5` is the fifth …" would remove the doubt.
+4. Arithmetic re-checked while copying, all correct: 141 d = ε₀·4.1 / 84.03 aF/µm² = 0.432 µm;
+   2.7861 → 4.0211 µm = 1.235 = 0.845 + 0.39 µm; 0.845/0.30 = 2.8, 0.765/0.30 = 2.55 ≈ 2.6. 142
+   0.845/0.36 = 2.3 ("more than twice"); 0.39 − (0.1–0.2) ≈ 0.2–0.3 µm. 143/144/145 0.39/0.20 = 1.95.
+   144 k₁ 0.20 × 0.70 / 0.248 = 0.565 ≈ 0.56, 0.20 × 0.63 / 0.365 = 0.345 ≈ 0.35. 149 47 mΩ/sq ×
+   0.8 µm = 3.76 ≈ 3.8 µΩ·cm.
+
 ## Pages
 
 ### 141 NILD5 — done
@@ -380,9 +487,3 @@ problem 1: the 46-word second sentence could be split at its dash only by adding
   `strength`. No DUPLICATED line. `cov`: 9 flags, all read (glance pairing noise; hedges on the
   neighbouring sentence, unchanged).
 
-## Content problems for the owner (not fixed; text kept verbatim)
-
-* From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
-  every metal-3 shape under the MM3 resist; 141's caption says so ("left on the metal-3 shapes on this
-  drawing, as at MM3E"), the page text does not. The 145 page gives the via floor as the metal cap
-  without saying so (see 145 below).
