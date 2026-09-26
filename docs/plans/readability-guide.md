@@ -30,8 +30,8 @@ One table. It applies to every page type unless a page-type section in §4 narro
 | List item lead sentence, when the item has sub-bullets | ≤ 30 words | 30 | same | A F1 |
 | Sentence | ≤ 30 words | **45 words** | words between full stops, markers removed | A F8 (30/45) vs B (35/45) → **30/45** |
 | Em-dash pairs or parentheticals per sentence | 0–1 | 1 | count of ` — ` pairs and `(…)` | A F8 |
-| Parenthetical length | ≤ 11 words | 11; ≥ 12 words becomes its own sentence | words inside `(…)` | A F8 |
-| Step-page lead (text between `## What this step is` and the first `###`) | ≤ 2 paragraphs, ≤ 120 words | 120 | `measure.py` section stats | A F2 |
+| Parenthetical length | ≤ 11 words | 11; ≥ 12 words becomes its own sentence. A parenthetical that holds only attributions (author names, a short noun phrase naming the work) and footnote markers is exempt from the parenthetical cap. Keep it inline; do not make it a sentence of its own. | words inside `(…)` | A F8; review rd-steps-089-097 D4 |
+| Step-page lead (the text between `## What this step is` and the generated `{figure}` block, or the first `###` if the page has no figure) | ≤ 2 paragraphs, ≤ 120 words | 120 | `measure.py` section stats | A F2; review rd-steps-089-097 D3 |
 | First sentence of a step page | ≤ 25 words | 25 | — | A F11 |
 | Class-page intro (machine, material, mask, category), before the quick-facts table | ≤ 70 words | 70 | — | B15 |
 | Index-page purpose paragraph | ≤ 80 words | 80 | — | B3, C §2 |
@@ -658,7 +658,9 @@ original form and is left out of the recap table.
    * `*Tool exists:*` — the grading of existence, and its reason only.
    * `*Runs this step:*` — the grading of the assignment to this step, and its reason only. Any
      other sentence stays in the continuation paragraph.
-3. Omit the third sub-bullet when the page grades only existence.
+3. Omit the third sub-bullet when the page grades only existence. When one sentence grades two things
+   at the same strength ('X is an inference, as is Y'), keep it whole under *Runs this step:*. The
+   glance names both ('**inference** (the platform and the assignment)').
 4. Do not normalise the grades: "strong", "**strong**", "medium", "weak", "inference" stay as the page
    writes them.
 5. With four or more tools, add a recap table above the list: `Tool | Evidence`, two columns only. Do
@@ -1672,7 +1674,8 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 <!-- footnotes -->
 ```
 
-(¹) If the base lead is over 120 words and two paragraphs would leave one over 100 words, use three at
+(¹) The *lead* is the text between `## What this step is` and the generated `{figure}` block (or the
+first `###` if the page has no figure). If the base lead is over 120 words and two paragraphs would leave one over 100 words, use three at
 natural seams and list the page. Never more than three, and never a paragraph that opens on a
 connective.
 
