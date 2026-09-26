@@ -2,8 +2,8 @@
 # Grace and HHGrace: S8 in Shanghai
 
 S8 was not made only in Bloomington. From 2010 Cypress also qualified S8 variants at a foundry in
-Shanghai: Grace Semiconductor (宏力半导体, GSMC), which merged with Hua Hong NEC in 2011 to form
-Shanghai Huahong Grace (华虹宏力, HHGrace), now part of Hua Hong Semiconductor (华虹半导体). This page
+Shanghai: Grace Semiconductor (宏力半导体, GSMC), which merged with Hua Hong NEC (the parent
+companies in 2011, the operating companies by 2013) to form Shanghai Huahong Grace (华虹宏力, HHGrace), now part of Hua Hong Semiconductor (华虹半导体). This page
 collects what public sources say about which Cypress processes ran there, in which fab, and how the
 Shanghai S8 differs from the Fab 4 S8 that SkyWater runs today. Cypress's own fabs and its other
 foundries are on {ref}`history-fabs`; S8 itself is on {ref}`history-s8-lineage`.
@@ -15,7 +15,7 @@ they appear only in our English translation, marked as ours.
 
 | Question | Answer | Sources |
 |---|---|---|
-| The foundry | Grace Semiconductor Manufacturing Corporation (GSMC), Shanghai, formed in 2000; merged with Hua Hong NEC (HHNEC) into HHGrace in 2011 | Wikipedia, Hua Hong, US Commerce Department |
+| The foundry | Grace Semiconductor Manufacturing Corporation (GSMC), Shanghai, formed in 2000; merged with Hua Hong NEC (HHNEC) into HHGrace (parent companies 2011, operating company 2013) | Wikipedia, Hua Hong, US Commerce Department |
 | The fab | the former Grace fab at 1399 Zuchongzhi Road, Zhangjiang, called "GFab1" in 2013 and HH FAB3 from 2017; 8-inch (200 mm) | US Commerce Department, Hua Hong, Cypress |
 | Names in Cypress's reports | "Fab 5", "Fab5 GSMC", "GSMC-Fab 5", then "HHGrace Fab 3"; also "HHGrace Fab1" for a former HHNEC fab | Cypress's reports |
 | Processes moved | S4AD-5 (0.35 µm SONOS) from 2006; C8 (0.13 µm logic) from 2006; RAM42 and the 0.09 µm SRAM R95LD-3R later | Cypress's reports, EE Times |
@@ -159,7 +159,7 @@ Each column copies one Cypress report.[^qtp-113005][^qtp-123907][^qtp-142304] Wh
   Al / 300Å TiW" (Cypress's reports).[^qtp-062509][^qtp-021507][^qtp-091206][^qtp-071302] The
   C8Q-3R report from GSMC is an exception: it prints the Fab 4 TiW stack (Cypress's reports).[^qtp-082609][^qtp-043004]
   We read this as the foundry using its own metallisation for most transferred processes (our reading).
-* **Five metals.** The HHGrace S8PF-10R has five metal layers. The Fab 4 reports in this history are
+* **Five metals.** The HHGrace S8PF-10R has five metal layers (single source).[^qtp-142304] The Fab 4 reports in this history are
   three-metal S8 versions; SkyWater's `s8pfhd` is also a five-metal stack (see {ref}`history-s8-lineage`).
   The HHGrace metal 3 to 5 thicknesses cannot be compared with a Fab 4 five-metal report here, because
   no such report is in the evidence (our reading).[^qtp-142304][^qtp-113005]

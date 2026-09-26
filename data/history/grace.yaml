@@ -440,7 +440,7 @@ records:
     location: Section on business, overview
   - text: 发行人于 2011 年回购了 Newport 持有的发行人 57,050,000 股普通股股份，并与联和国际控制的 Grace Cayman 进行了合并。
     translation: In 2011 the issuer bought back the 57,050,000 ordinary shares held by Newport and merged
-      with Grace Cayman, which was controlled by Lianhe International.
+      with Grace Cayman, which was controlled by Sino-Alliance International (联和国际).
     location: Section on the issuer's history, (二) 2011 share buy-back and merger
   - text: 成立日期                          2013 年 1 月 24 日
     translation: 'Date of establishment: 2013-01-24'
@@ -548,7 +548,7 @@ records:
   claims:
   - {subject: HHGrace Fab3, attribute: address, value: 1399 Zu Chong Zhi Road, Zhangjiang, date: 2020}
   - {subject: GSMC, attribute: called in Cypress's reports, value: Fab 3 (GSMC), date: 2008-12}
-  notes: Captured with a browser by the coordinator (Mouser refuses scripted fetches). Cypress's own
+  notes: Captured with a browser (Mouser refuses scripted fetches). Cypress's own
     address for HHGrace Fab3 matches the BIS address of Grace's GFab1 and Hua Hong's address for HH FAB3.
     The qualification history, as reissued in 2020, calls the 2008 GSMC transfer a "Transfer to Fab 3
     (GSMC)". The stack is "Proprietary".
@@ -578,7 +578,7 @@ records:
   claims:
   - {subject: S8PF-10P, attribute: qualified at, value: HHGrace Fab 1, date: 2014-11}
   - {subject: S8PFN-20R, attribute: qualified at, value: HHGrace Fab 1, date: 2018-08}
-  notes: Captured with a browser by the coordinator. The attached report prints "Proprietary" for every
+  notes: Captured with a browser. The attached report prints "Proprietary" for every
     stack field, including the die fab.
 
 - id: grc-hhgrace-fab-shanghai
@@ -603,6 +603,6 @@ records:
     location: company contact address
   claims:
   - {subject: Shanghai Huahong Grace, attribute: fabs, value: three 8-inch fabs in Jinqiao and Zhangjiang}
-  notes: Captured with a browser by the coordinator (the site refuses scripted fetches). 288 Halei Road is
+  notes: Captured with a browser (the site refuses scripted fetches). 288 Halei Road is
     given as the company's contact address, not as the address of a fab, so it does not settle the HH
     FAB2 address question.

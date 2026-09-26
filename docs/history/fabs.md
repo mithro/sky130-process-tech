@@ -185,7 +185,7 @@ technology".[^eet-2005-grace][^ar-fy2005] Cypress completed the transfer of its 
 during 2006 (Cypress's reports).[^ar-fy2006][^tenk-fy2007] In July 2006 it announced it would begin moving
 "its 0.13-micron C8 process technology" to Grace in the third quarter, for USB and clock chips (single
 source).[^eet-2006-c8] In 2009 an older SRAM process, RAM42, followed (single source).[^qtp-091302]
-From 2010 Grace, and after the 2011 merger HHGrace, also ran S8 variants; see {ref}`history-grace`.
+From 2010 Grace (later HHGrace, after its merger with Hua Hong NEC) also ran S8 variants; see {ref}`history-grace`.
 
 **Grace and 65 nm.** In 2007 the press disagreed about Grace. Electronics Weekly wrote that "Cypress
 currently uses its own 65nm technology" there; EE Times wrote that Grace "isn't capable of 65-nm

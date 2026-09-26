@@ -2134,6 +2134,13 @@ claims:
 - id: grace-five-metals
   page: docs/history/grace.md
   anchor: has five metal layers
+  grade: single-source
+  footnotes: [qtp-142304]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+- id: grace-five-metals-comparison
+  page: docs/history/grace.md
+  anchor: cannot be compared with a Fab 4 five-metal report
   grade: inference
   hedge: our reading
   footnotes: [qtp-142304, qtp-113005]
