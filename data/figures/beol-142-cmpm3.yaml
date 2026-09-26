@@ -1,0 +1,35 @@
+id: beol-142-cmpm3
+kind: xsection
+page: docs/steps/142-cmpm3.md
+series: series-beol.yaml
+crop_depth: -128
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a thick pale oxide buries a metal line and a wider metal shape carrying a raised thin
+  plate, its top higher over the metal than over the gap. After it the oxide is polished flat,
+  leaving a layer of it over the metal, thinner over the plate.
+caption: >-
+  Before, the NILD5 oxide as deposited; after, polished flat until the topography is gone, at a
+  height above the metal-3 line and the capacitor's top plate. The polish is stopped by the
+  removal amount, not by a stop layer, and how much it removes is not public. Since the plate
+  stands above the metal-3 top, the oxide left over it is drawn thinner than over the bare
+  line, as the page infers from the construction; how much remains over a plate is not public
+  (with the cap to come, about 0.2–0.3 µm on the page's estimate, of a finished 0.39 µm over
+  metal 3[^pdk-04]). Nothing is drawn to scale, and the pattern-density steps the page describes
+  are not drawn. The lower part of the slice is cut off: the drawing starts inside the oxide
+  under metal 2. The bottom and cap films of metal 3, the thin capacitor dielectric, the via
+  plugs and their liners, the oxides below and the metal-2 lines are drawn but not labelled.
+  Not to scale.
+arrow:
+  title: "CMPM3, step 142"
+  note: "The oxide is polished flat, leaving a controlled thickness over the metal and the capacitor plates."
+panels:
+  - state_after: "141"
+    title: "Before: the oxide as deposited (step 141)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, m3bot, m3cap, capild, capmres, mm3res]
+  - state_after: "142"
+    title: "After: the oxide polished flat"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 268]]}

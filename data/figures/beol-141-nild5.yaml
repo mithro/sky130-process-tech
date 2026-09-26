@@ -1,0 +1,37 @@
+id: beol-141-nild5
+kind: xsection
+page: docs/steps/141-nild5.md
+series: series-beol.yaml
+crop_depth: -128
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step two separate metal shapes stand on a flat pale oxide: a line at the left and a wider
+  one at the right carrying a raised thin purple plate. After it a thick pale oxide fills the
+  gap between them and buries both, its top higher over the metal than over the gap.
+caption: >-
+  Before, the metal-3 shapes etched at MM3E: a wiring line at the left and, at the right, the
+  bottom plate of a capacitor, with its top plate standing on the thin dielectric; after, the
+  inter-metal oxide the PDK's stack diagram labels "NILD5" (permittivity 4.1),[^pdk-04] filling
+  the gap and burying the line and the plate. The page names HDP-CVD and PECVD TEOS as the two
+  routes for such a gap and does not choose; the drawn profile, filled from the bottom and
+  softened over the metal, only illustrates a gap-filling deposit. The deposited thickness and
+  any liner are not public, and nothing is drawn to scale: the gap between 0.845 µm lines as
+  close as 0.300 µm apart is about 2.8:1 on the page's arithmetic,[^pdk-04][^pdk-periph] and the
+  gap is drawn about 1.9 times as deep as it is wide. The diagram draws no thin "_C" film beside
+  NILD5.[^pdk-04] The lower part of the slice is cut off: the drawing starts inside the oxide
+  under metal 2. The bottom and cap films of metal 3, the thin capacitor dielectric (left on
+  the metal-3 shapes on this drawing, as at MM3E), the via plugs and their liners, the oxides
+  below and the metal-2 lines are drawn but not labelled. Not to scale.
+arrow:
+  title: "NILD5, step 141"
+  note: "A silicon dioxide is deposited over the metal lines and the capacitor plates, filling the gaps between them."
+panels:
+  - state_after: "140"
+    title: "Before: the metal-3 line and capacitor (step 140)"
+    hide_layers: [pwell, nchi]
+    hide_labels: &hl [sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, m3bot, m3cap, capild, capmres, mm3res]
+  - state_after: "141"
+    title: "After: the inter-metal oxide over the metal"
+    hide_layers: [pwell, nchi]
+    hide_labels: *hl
+    highlight: {where: [[0, 268]]}

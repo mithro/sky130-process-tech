@@ -432,3 +432,64 @@ ops:
   - step: "153"
     op: strip
     materials: [resist]
+  # ================================================================ metal 4 patterned (154-155)
+  # Two metal-4 shapes, as at metal 3: a wiring line over the via-3 plug on the metal-3 line
+  # (x 20-84) and the second capacitor's bottom plate (x 104 on, past the edge), which encloses
+  # the second top plate by 26 u and carries the via-3 plug that lands on the first top plate
+  # (the "M4 (plate 2)" of the PDK's stacked cross-section). The MM4 resist covers the whole
+  # second plate; the etch removes the dielectric left outside the resist, then the stack.
+  - use: metal-pattern
+    with:
+      mask_step: "154"
+      etch_step: "155"
+      mask_code: "MM4"
+      resist_id: mm4res
+      resist_where: [[20, 84], [104, 268]]
+      etch_materials: [mim-diel, barrier, aluminium]
+  # ================================================================ NILD6 (156-158)
+  # 34 u of oxide over the metal-4 tops with the cap (the PDK's via-4 height, 0.505 um, against
+  # via 3's 0.39 um and 26 u); over the second plate 23 u.
+  - use: imd
+    with:
+      dep_step: "156"
+      polish_step: "157"
+      cap_step: "158"
+      imd_id: nild6
+      cap_id: ncap6
+      imd_t: 80
+      polish_to: 332
+  # ================================================================ via 4 (159-160)
+  # Two 44 u holes, wider than deep (0.800 um squares 0.505 um deep on the pages): one on the
+  # metal-4 line (x 30-74, etched through the capacitor dielectric left on it to the cap) and
+  # one on the second top plate (x 190-234). No liner, tungsten or plug polish follows.
+  - use: via-hole
+    with:
+      mask_step: "159"
+      etch_step: "160"
+      mask_code: "VIM4"
+      resist_id: vim4res
+      resist_where: [[0, 30], [74, 190], [234, 268]]
+      etch_materials: [oxide-dep, mim-diel]
+  # ================================================================ metal 5 (161-163)
+  # 5 + 53 + 5 u, half as thick again as metals 3 and 4 (1.26 um against 0.845 um in the PDK),
+  # deposited conformally into the open via-4 holes: the stack lines their walls and floors and
+  # the aluminium closes them, leaving a shallow dimple over each (the fill technique is not
+  # public). Top at 403 u over the field. Two metal-5 shapes, over the two vias.
+  - use: metal-stack
+    with:
+      step: "161"
+      bot_id: m5bot
+      al_id: m5al
+      cap_id: m5cap
+      al_t: 53
+      al_anchor_y: 371
+      bot_note: "Ti or TiW — see the overview"
+      cap_note: "TiW on this reference's reading — see the overview"
+  - use: metal-pattern
+    with:
+      mask_step: "162"
+      etch_step: "163"
+      mask_code: "MM5"
+      resist_id: mm5res
+      resist_where: [[14, 90], [130, 268]]
+      resist_t: 40
