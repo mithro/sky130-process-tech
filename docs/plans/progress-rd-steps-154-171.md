@@ -176,3 +176,32 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   (R-SENTENCE step 7): the lead's "(The category page sets out the slurry chemistry; SKY130's is not
   public.)" (pointer plus hedge on the slurry, which the sentence before names) and the post-figure
   "(VIM4E, WTIAL5, where the reading of how via 4 is filled is set out.)" (a gloss). Words unchanged.
+
+### 158 NCAPOX6 — done (base `ac8770da`)
+
+* Lead (base 135): two paragraphs (90, 45) split before "The finished number is public" (143 form).
+* Post-figure paragraph split before "What the cap prepares for"; its 71-word sentence split at ", and,
+  on the via-4 fill reading" ("On the via-4 fill reading …, the surface this cap leaves is … (inference)").
+  The trailing "(inference)" stays on that half: its own leading words name its basis (the fill
+  reading), and the other half is cited (`pdk-periph`) or hedged ("our arithmetic"); the 0.505 µm depth
+  is the lead's PDK value.
+* R-CATEGORY (143 form): classification sentence alone to its closing dash; "and, like its
+  predecessors, …" → "It is, like its predecessors, …" (declared "It is", 143 form); "What is specific
+  … is that X, and that Y" → "… is that:" and two bullets (words `and`, `that` lost).
+* Why: thickness item with a continuation paragraph; the 13-word trailing hedge of the cover item as
+  a parenthetical sentence ("(Inference from the construction; …)"); sealing item split after "a fresh
+  plasma oxide buries them" (continuation paragraph) and its colon → full stop; the unindented last
+  line of the lithography item indented (whitespace only).
+* How: scope sentence italic. Step 2 split after the Chapple-Sokol sentence (continuation paragraph)
+  and at its semicolon ("Neither says …"; "(inference)" stays in its own sentence, as in the base).
+  Step 4: the 12-word parenthetical split at its own semicolon: "(textbook value[^txt-05])" stays on
+  the 650–750 °C number it qualifies; the attribution "(Adams and Capio and Becker et al.
+  characterise the process.[^adams-1979][^becker-1987])" follows the sentence as a parenthetical
+  sentence. Step 5: the 13-word trailing hedge as a parenthetical sentence.
+* R-TOOLS: "SkyWater lists it with …" → "*SkyWater says:* lists PECVD TEOS with …" (the pronoun
+  replaced by the tool's name, R-TOOLS step 2); C1 item graded in two lines. R-RELATED (143 labels).
+  R-OPENQ labels on four bullets. Glance box (143 form; "on the reading this reference applies to each
+  cap oxide" kept from the lead).
+* `check_preserved --allow-regrouped`: ADDED outside the glance only "It is", labels; every
+  `number_order` change REGROUPED, read. `--strict-words` LOST: `strength`×2 (and `that`, `and`,
+  `it`). cov: two flags, pairing noise. inv: OK.

@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`CMPM4 <step-157>` |
 | **Next step** | {ref}`VIM4 <step-159>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a thin plasma cap oxide on the polished dielectric
+  over metal 4.
+* **Why:** it seals the polished surface and, on the reading this
+  reference applies to each cap oxide, brings the dielectric above
+  metal 4 to its final thickness before the via-4 mask.
+* **Public numbers:** the finished via-4 height, 0.505 µm;[^pdk-04] none
+  published for the cap itself.
+* **Likely SkyWater tool:** PECVD TEOS "C2 and Producer" — **strong** for
+  existence; its use for this cap is an **inference**.[^skw-01]
+* **Not public:** the cap's precursor, thickness and conditions, and how
+  the via-4 height is split between NILD6 and the cap (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `NCAPOX6` deposits a *{term}`cap oxide`* on the polished inter-level
@@ -20,7 +37,9 @@ its surface carries the scratches, slurry residue and hydrated layer of
 a polish. A thin plasma oxide deposited over it seals that surface and,
 on the reading this reference applies to each cap oxide (see {ref}`NCAPOX3 <step-117>`), brings the dielectric
 above metal 4 to its final thickness before the via-4 mask
-({ref}`VIM4 <step-159>`) is printed. The finished number is public: the
+({ref}`VIM4 <step-159>`) is printed.
+
+The finished number is public: the
 PDK's stack diagram labels the via-4 height 0.505 µm, between the top of
 the 0.845 µm `metal4` and the bottom of `metal5`.[^pdk-04] The cap's own
 thickness is not. The same cap is described at
@@ -36,11 +55,13 @@ Before, the polished NILD6 oxide; after, a thin cap oxide over it, which with th
 :::
 
 The stack diagram offers no hint of the cap: beside "NILD6 K=4.0" it
-draws no "_C" film, as it does not at NILD5.[^pdk-04] What the cap
+draws no "_C" film, as it does not at NILD5.[^pdk-04]
+
+What the cap
 prepares for is different from the levels below. The via-4 opening is a
 0.800 µm square (via4.1) on a 0.800 µm space (via4.2),[^pdk-periph]
 etched 0.505 µm deep — an {term}`aspect ratio` of about 0.63:1 (our
-arithmetic) — and, on the via-4 fill reading set out at {ref}`WTIAL5 <step-161>`,
+arithmetic). On the via-4 fill reading set out at {ref}`WTIAL5 <step-161>`,
 the surface this cap leaves is also the surface on which metal 5 is
 sputtered wherever there is no via, and the wall of every via-4 hole
 into which that metal must go (inference).
@@ -48,14 +69,20 @@ into which that metal must go (inference).
 ## Step category
 
 `NCAPOX6` is a {ref}`Thin-film deposition <category-deposition>` step of
-the *{term}`PECVD` oxide* class — the category page's PECVD section —
-and, like its predecessors, the simplest deposition in its module: a
+the *{term}`PECVD` oxide* class — the category page's PECVD section.
+
+It is, like its predecessors, the simplest deposition in its module: a
 blanket, thin, low-temperature oxide on a flat surface with no gap to
-fill. What is specific to this instance is that the dielectric it
-completes contains the second capacitor, whose plates sit inside the
-via-4 dielectric, and that the wafer now carries four aluminium levels
-and two thin capacitor dielectrics whose temperature and plasma exposure
-it must respect (roughly 400–450 °C for Al–Cu, industry-typical[^txt-05]).
+fill.
+
+What is specific to this instance is that:
+
+* the dielectric it
+  completes contains the second capacitor, whose plates sit inside the
+  via-4 dielectric;
+* the wafer now carries four aluminium levels
+  and two thin capacitor dielectrics whose temperature and plasma exposure
+  it must respect (roughly 400–450 °C for Al–Cu, industry-typical[^txt-05]).
 
 ## Why this step exists
 
@@ -66,6 +93,7 @@ via-4 numbers:
 * **Thickness control.** The {ref}`CMPM4 <step-157>` polish is stopped by
   removal amount and varies with pattern density — the variation Boning
   et al. and Chang et al. characterised.[^boning-1994][^chang-1995]
+
   Polishing slightly below target and adding a cap of well-controlled
   thickness tightens the final 0.505 µm[^pdk-04] (industry
   practice[^txt-05]) and with it both via-4 depths the
@@ -73,14 +101,16 @@ via-4 numbers:
   `cap2m` plate.
 * **Restoring cover over the plates.** Where the polish has thinned the
   oxide over dense capacitor arrays, a deposited cap of known thickness
-  restores a minimum distance between the plate and metal 5 (inference
+  restores a minimum distance between the plate and metal 5. (Inference
   from the construction; the estimate of the remaining oxide is at
-  {ref}`CMPM4 <step-157>`).
+  {ref}`CMPM4 <step-157>`.)
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches and
   embedded particles — Devriendt et al. relate them to the post-CMP
   clean[^devriendt-1998] — and a hydroxyl-rich surface layer;[^moon-2016]
-  a fresh plasma oxide buries them. Water released from a dielectric is
-  as harmful to an aluminium via fill as to a tungsten one: Kobayakawa et
+  a fresh plasma oxide buries them.
+
+  Water released from a dielectric is
+  as harmful to an aluminium via fill as to a tungsten one. Kobayakawa et
   al. studied outgassing from spin-on-glass planarising films,[^kobayakawa-1991]
   and Taguchi, Maeda and Aoyama improved the filling of vias by
   high-pressure aluminium reflow by controlling water outgassing from the
@@ -89,7 +119,7 @@ via-4 numbers:
   {ref}`VIM4 <step-159>` resist is tuned to a reproducible oxide thickness
   over reflective metal and capacitor plates, since the {term}`swing-curve <swing curve>` reflectivity
   depends on it;[^brunner-1991] and, on the reading at {ref}`WTIAL5 <step-161>`, the metal-5 underlayer is
-sputtered directly onto this oxide outside the vias (inference).
+  sputtered directly onto this oxide outside the vias (inference).
 
 Without `NCAPOX6` the via-4 lithography and etch would work on a surface
 whose thickness varied with the polish, and the oxide over some capacitor
@@ -97,9 +127,9 @@ plates would be thinner than intended.
 
 ## How it is typically performed
 
-An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
+*An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 (SKY130's recipe is not public); the sequence is that of
-{ref}`NCAPOX3 <step-117>`.
+{ref}`NCAPOX3 <step-117>`.*
 
 1. **Chamber.** A single-wafer or twin-chamber PECVD reactor at 350–400 °C
    (industry-typical[^txt-05][^raupp-1992]); SkyWater lists "PECVD TEOS,
@@ -110,9 +140,11 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 2. **Precursor.** {term}`TEOS`/O₂ plasma oxide — Raupp, Cale and Hey
    analyse its kinetics[^raupp-1992] — or SiH₄/N₂O plasma oxide, whose
    properties depend on RF power as Chapple-Sokol, Tierney and Batey
-   measured.[^chapple-sokol-1989] The Cypress Fab 4 reports list a 1 000 Å
+   measured.[^chapple-sokol-1989]
+
+   The Cypress Fab 4 reports list a 1 000 Å
    TEOS film in their passivation
-   stacks;[^cyp-qtp-123907][^cyp-qtp-014807] neither says by what method
+   stacks.[^cyp-qtp-123907][^cyp-qtp-014807] Neither says by what method
    it was deposited, and a 1 000 Å TEOS film in a post-metal stack is
    necessarily below the aluminium limit, so it is a plasma process
    (inference). That this cap is of the same kind is a further
@@ -124,14 +156,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    from plasma oxide on later heating changes its stress,[^mani-2007] and
    a wet cap defeats its purpose. LPCVD TEOS would give a denser film
    but at 650–750 °C, the industry-typical LPCVD TEOS window (textbook
-   value[^txt-05]; Adams and Capio and Becker et al. characterise the
-   process[^adams-1979][^becker-1987]), far above the aluminium limit.
+   value[^txt-05]), far above the aluminium limit. (Adams and Capio and Becker et al. characterise the
+   process.[^adams-1979][^becker-1987])
 5. **Plasma exposure.** The deposition plasma reaches a wafer whose
    `cap2m` top plates are still floating under the dielectric; a gentle,
    low-bias PECVD step limits the charging Cheung described for
-   plasma-enhanced dielectric deposition[^cheung-2000] (inference that it
+   plasma-enhanced dielectric deposition.[^cheung-2000] (Inference that it
    matters here; Wang, Ackaert et al. document the MiM
-   case[^wang-2004-mim]).
+   case.[^wang-2004-mim])
 6. **Clean and metrology.** The wafer comes from the post-CMP scrub
    (Philipossian and Sun on the brushes[^philipossian-2009]); after
    deposition, thickness and index by ellipsometry on monitors and product
@@ -147,13 +179,18 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **PECVD TEOS "C2 and Producer".** SkyWater lists it with low-temperature
-  options.[^skw-01] Strength: **strong** for existence; its use for this
-  cap is an **inference** from the Fab 4 TEOS passivation
-  films.[^cyp-qtp-123907][^cyp-qtp-014807]
-* **PECVD silane oxide "C1".**[^skw-01] Strength: strong for existence; an
-  alternative for the cap (medium for assignment, as on the other cap
-  oxides).
+* **PECVD TEOS "C2 and Producer"**
+  - *SkyWater says:* lists PECVD TEOS with low-temperature
+    options.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* its use for this
+    cap is an **inference** from the Fab 4 TEOS passivation
+    films.[^cyp-qtp-123907][^cyp-qtp-014807]
+* **PECVD silane oxide "C1"**[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* an
+    alternative for the cap (medium for assignment, as on the other cap
+    oxides).
 
 ## Resources required
 
@@ -169,13 +206,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CMPM4 <step-157>` (the polish it caps). Next:
+* Previous: {ref}`CMPM4 <step-157>` (the polish it caps).
+* Next:
   {ref}`VIM4 <step-159>` (the via-4 mask), {ref}`VIM4E <step-160>` (the
   etch through this cap) and {ref}`WTIAL5 <step-161>` (the metal-5 stack
   sputtered onto it).
-* The dielectric beneath: {ref}`NILD6 <step-156>`; the capacitor inside
-  it: {ref}`CAPTIW2 <step-151>`, {ref}`CAP2ME <step-153>`.
-* The other cap oxides: {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`,
+* Depends on: the dielectric beneath, {ref}`NILD6 <step-156>`; the capacitor inside
+  it, {ref}`CAPTIW2 <step-151>`, {ref}`CAP2ME <step-153>`.
+* Same category: the other cap oxides, {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`,
   {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
@@ -227,15 +265,15 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* The cap's precursor, thickness and deposition conditions are not
+* **Precursor, thickness and conditions.** The cap's precursor, thickness and deposition conditions are not
   public.
-* How the 0.505 µm via-4 height[^pdk-04] is split between the polished
+* **Split of the via-4 height.** How the 0.505 µm via-4 height[^pdk-04] is split between the polished
   {ref}`NILD6 <step-156>` and this cap is not public.
-* Whether any treatment of this surface precedes the metal-5 deposition,
+* **Surface before metal 5.** Whether any treatment of this surface precedes the metal-5 deposition,
   and whether the surface requirements of an aluminium-filled via change
   the cap's recipe compared with the tungsten-plug levels, is not
   public; the fill reading is set out at {ref}`WTIAL5 <step-161>`.
-* Whether "C2" denotes a Novellus Concept Two is an inference from the
+* **Novellus Concept Two.** Whether "C2" denotes a Novellus Concept Two is an inference from the
   vendor's product names.[^novellus-history]
 
 <!-- footnotes -->
