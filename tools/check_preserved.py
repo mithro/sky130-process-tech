@@ -807,13 +807,14 @@ def _dropdown_body_text(lines: list[str], body_lines: set[int]) -> str:
     return normalize_ws(" ".join(kept))
 
 
-def _duplicate_units(text: str) -> tuple[Counter, Counter]:
-    """(consecutive identical non-blank lines, sentences) of ``text``
-    outside tables, fences and footnote definitions, as Counters, for
-    check_duplicates."""
+def _duplicate_units(text: str) -> tuple[Counter, Counter, Counter]:
+    """(consecutive identical non-blank lines, sentences, 8-word runs) of
+    ``text`` outside tables, fences and footnote definitions, as Counters,
+    for check_duplicates."""
     body = DEF_RE.sub("", text)
     lines_c: Counter = Counter()
     sentences: Counter = Counter()
+    runs: Counter = Counter()
     prev = None
     in_fence = False
     prose: list[str] = []
@@ -821,10 +822,14 @@ def _duplicate_units(text: str) -> tuple[Counter, Counter]:
     def flush() -> None:
         if prose:
             # markers stripped first: ".[^a] The" would otherwise not split
-            for sent in _SENTENCE_SPLIT_RE.split(normalize_ws(MARKER_RE.sub("", " ".join(prose)))):
+            cleaned = normalize_ws(MARKER_RE.sub("", " ".join(prose)))
+            for sent in _SENTENCE_SPLIT_RE.split(cleaned):
                 sent = sent.strip()
                 if len(sent.split()) >= 8:
                     sentences[sent] += 1
+            words = cleaned.split()
+            for k in range(len(words) - 7):
+                runs[" ".join(words[k : k + 8])] += 1
         prose.clear()
 
     for raw in body.split("\n"):
@@ -851,7 +856,7 @@ def _duplicate_units(text: str) -> tuple[Counter, Counter]:
         else:
             prose.append(line)
     flush()
-    return lines_c, sentences
+    return lines_c, sentences, runs
 
 
 def check_duplicates(old_text: str, new_text: str) -> list[str]:
@@ -861,14 +866,21 @@ def check_duplicates(old_text: str, new_text: str) -> list[str]:
     consecutive identical non-blank lines, and (b) any sentence of eight
     words or more that occurs more often than it did in the base page --
     both counted outside tables, fences and footnote definitions. A
-    duplicate the base already had is not new and is not reported."""
-    old_lines, old_sent = _duplicate_units(old_text)
-    new_lines, new_sent = _duplicate_units(new_text)
+    duplicate the base already had is not new and is not reported, and
+    neither is a sentence whose every 8-word run the base already carried
+    as often (the base had the same words twice inside longer sentences
+    and the same split was made to both copies -- a kept R-REPEAT pair)."""
+    old_lines, old_sent, old_runs = _duplicate_units(old_text)
+    new_lines, new_sent, new_runs = _duplicate_units(new_text)
     msgs: list[str] = []
     for line, c in (new_lines - old_lines).items():
         msgs.append(f"DUPLICATED line ({c}x consecutive): {line[:120]!r}")
     for sent, c in new_sent.items():
         if c > 1 and c > old_sent.get(sent, 0):
+            words = sent.split()
+            grams = [" ".join(words[k : k + 8]) for k in range(len(words) - 7)]
+            if grams and all(new_runs[g] <= old_runs.get(g, 0) for g in grams):
+                continue
             msgs.append(f"DUPLICATED sentence ({c}x, was {old_sent.get(sent, 0)}x): {sent[:120]!r}")
     return msgs
 
@@ -1708,6 +1720,14 @@ def selftest() -> int:
         "* first item of the list here\n* The liner coats the floor and the walls of every hole at once.\n",
         "# P\n\nThe liner coats the floor and the walls of every hole at once.\n\n"
         "* first item of the list here\n* **Coverage.** The liner coats the floor and the walls of every hole at once.\n",
+        True,
+    )
+    case(
+        "the same split applied to both copies of a base repeat is not new",
+        "# P\n\nThe list has no polyimide step, and the diagram draws a film over the nitride, which is odd.\n\n"
+        "* The list has no polyimide step, and the diagram draws a film over the nitride, which is odd.\n",
+        "# P\n\nThe list has no polyimide step, and the diagram draws a film over the nitride. Which is odd.\n\n"
+        "* The list has no polyimide step, and the diagram draws a film over the nitride. Which is odd.\n",
         True,
     )
     case(
