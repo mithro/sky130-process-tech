@@ -658,3 +658,40 @@ per page.
 * **Left over the caps:** none.
 * **Self-check note:** one line duplicated by a range slip (the Chamber item's Altus line) was caught
   by the duplicate-line check and removed before commit.
+
+### 133 WCMP4 — done
+
+* **R-H3:** none (post-figure passage 130 words; now a paragraph, a three-item list and a paragraph).
+* **Lead:** base 109 words → two paragraphs at "What is left is a planar oxide surface" (the 122 seam).
+* **R-LIST (post-figure):** "What differs from the via-1 polish is the film and the surface that
+  follows:" → three plain bullets (the three semicolon clauses; "The blanket film" → "the blanket film",
+  "and" dropped), each with its own markers and hedge ("(industry-typical value[^txt-05])" in the
+  first, "(inference)" at the end of the third, where it stood). The PDK via2 sentence as its own
+  paragraph, its 14-word "(inference: …)" closed as a parenthetical sentence (the 118/122 form).
+* **R-CATEGORY:** classification cut at its colon (9 words, "It removes two metals …" in the same
+  paragraph; the 122 form); the WCMP2/WCMP3 pointer and the Kaufman mechanism as a paragraph (split at
+  its semicolon); "What is specific to this instance is that it is the last polish …, and — if … — the
+  first tungsten polish over a hole …" (55 words) → "… is that it is:" and two plain bullets (the
+  batch-8 ruling; "and" dropped; the "— if … —" dash pair becomes "if …," at the head of the second
+  bullet, punctuation only); "(inference; see *Open questions*)" stays on the thick-metal bullet it
+  qualifies.
+* **R-PARA (Why):** Flat base: lead ends at "CAPILD;". Via resistance: the Vlassak/Nguyen dash
+  material becomes its own sentence opening the continuation (as 122); lead "Over-polish recesses the
+  plug and reduces the area …; under-polish leaves residue." Oxide loss: lead ends at the Stine marker.
+* **How:** italic scope lead-in. Slurry: lead ends at the oxidiser markers (the 122 form). Recipe: the
+  three platens as a nested numbered sequence (the 122 form). Post-CMP clean and Metrology are within
+  the caps and keep their base form.
+* **R-TOOLS:** the 122 form.
+* **R-REPEAT:** "the finished plug resistance after this step's polish (inference)" appears in the
+  post-figure passage and in Why/Via resistance; **not applied** — the Why copy is that bullet's own
+  claim in its argument, and the post-figure copy adds the reason for the inference.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Same
+  category (the tungsten polishes and the oxide polishes either side, merged as on 122); glance in the
+  122 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box (markers
+  `pdk-04`, `pdk-08`, `pdk-periph`, `skw-01`; numbers 0.20, 0.42, 3 410, `2`; quote "high selectivity
+  tungsten"; hedges; `metal-2`, `via-2`×2, `via2`×2) or the nested recipe labels `1`–`3`. REGROUPED:
+  the three-difference list (same order). LOST words "strength"×2 (R-TOOLS).
+* **Coverage flags read:** the list items, the specific-to bullets (hedge on the thick-metal bullet
+  only, as in the base), the Why splits, glance lines. None lost a marker or hedge.
+* **Left over the caps:** none.
