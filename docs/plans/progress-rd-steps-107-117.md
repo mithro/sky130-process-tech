@@ -33,6 +33,104 @@ per page.
   **excluded**; a leading bold run-in label is not counted into its sentence.
 * Gates per page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`, `-W` build.
 
+## Batch summary (all eleven pages done)
+
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps` over the eleven pages: `{figure}` blocks (the captions), `{dropdown}`
+bodies (the only dropdowns on these pages are inside the generated index-links block), the generated
+block, `## References` and footnote definitions are **excluded**; a leading bold run-in label is not
+counted into its sentence; a quotation counts as one word (§1). Before = `main` at `fb02bd1f`, counted
+with the same script. A list item is its first block; an indented continuation paragraph counts as a
+paragraph.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 28 | 0 |
+| list items > 60 words | 50 | 0 |
+| sentences > 45 words | 64 | 1 |
+| table cells > 25 words | 0 | 0 |
+
+**Left over the caps, with reasons** (each is also in its page entry):
+
+* 107 Why/"Contact size and profile": "The PDK's "Standard contact bottom CD" …" (46 words) — its only seam
+  is the dash before "which eases", and "on our reading" scopes the which-clause.
+* Leads over 120 words, as in the base: 109 (159, base 156), 112 (128, base 128), 114 (153, base 151),
+  115 (169, base 168), 116 (136, base 136), 117 (142, base 142) — each in two or three paragraphs of
+  at most 100 words.
+* Item lead blocks over 30 words: 107 Resist coat, 108 Contact area / Etch-stop / Endpoint / Strip
+  and clean, 111 Contact resistance, 112 Cap, 113 Exposure, 114 Metrology, 115 Liner / HDP gap fill,
+  116 Planarity / Pattern-density, 117 Precursor — each has no earlier seam that keeps its hedge,
+  attribution or antecedent with the claim.
+
+### R-REPEAT (none applied)
+
+* 114: the two Lam etcher quotations (lead passage and Machines likely used) — the lead copy adds
+  "two metal etchers by name" and "whose material lists match this stack".
+* 115: the HDP quotation (How, step 2, and Machines likely used) — the How copy adds "a
+  maintenance-page photograph".
+* `rdtools.py rep` finds no other 10-word run in two H2 sections on these pages (the glance box
+  aside).
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables`, `gen_figures` `--check` — 0 differences;
+`sphinx-build -E -W` into a fresh directory — exit 0. `rdtools.py inv` against `fb02bd1f` per page:
+References, footnote definitions, generated blocks, `{figure}` blocks, dropdowns, quick facts, H2 lists
+and Deep-dive counts identical; one admonition per page (the glance box, `:class: at-a-glance`); every
+glance marker recurs below; no duplicate H3; every scope sentence is the italic lead-in.
+`check_preserved.py --base fb02bd1f --allow-regrouped` over the batch: the only LOST lines are the
+`number_order` of the two rule tables (107, 113) and of the two dash parentheticals moved to directly
+after their sentences (112, 114), all hand-checked in their entries; every other line is a declared
+addition, a regroup or a named WORDS LOST word.
+
+### Guide problems
+
+1. **"What is specific … is that X, and that Y"** (112, 114): R-CATEGORY step 3 says such a sentence
+   is its own label and stays a paragraph, but at 49–75 words it breaks the sentence cap. Rendering
+   it as "… is that:" with one bullet per "that" clause (R-LIST) kept every word but "and"; the
+   guide could say so.
+2. **R-CATEGORY step 2, "one bullet per sentence"** (113): the k₁ passage is three sentences, the last
+   ("Only NA 0.80 lifts it to 0.45") meaningless without the first two; one bullet per topic kept
+   the pronoun with its antecedent. A ruling on grouping would help.
+3. **`number_order` on a moved parenthetical** (112, 114): moving dash or parenthetical material,
+   unchanged, to directly after its sentence (R-SENTENCE step 1) is reported as a LOST, not a regroup.
+   A fifth `check_regrouped` condition "same numbers, same paragraph, reordered" would save the hand
+   check (the rule-table case, batch-7b D2, is the same need).
+4. **Item leads ≤ 30 words**: most leftovers are one-sentence leads whose only seams would separate a
+   claim from its hedge or attribution (116 Pattern-density; 112 Cap). The guide might say the lead
+   cap yields to R-SENTENCE step 5, as the sentence cap already does.
+5. **Line breaks after a hyphen or slash in the source** ("silane-⏎reduced", "boron-⏎chloride",
+   "deposition/⏎sputter") render with a space ("silane- reduced"). Joined here as presentation-only;
+   a site-wide `grep -nE '[-/]$' docs/steps/*.md` sweep would find the rest.
+
+### Content problems for the owner (not fixed; text kept verbatim)
+
+1. **112 TIAL6 (and the 113, 114 leads)**: the text describes the stack as Ti/Al–Cu/TiW ("This page
+   describes the Ti/Al–Cu/TiW stack because the PDK's thickness matches it", marked an inference; the
+   recipe's "Cap, 300 Å" on that reading), while the overview and the S8 figures leave the cap
+   undecided and draw neither. Both sides kept verbatim (S8 figure agent's note).
+2. **114 MM1E**: "the spaces it opens — 0.14 µm wide and 0.36 µm deep" (post-figure paragraph) and
+   "the 0.36 µm stack clears in well under a minute" (How, Main etch) carry no marker; the page defines
+   no `[^pdk-04]`, the source of the 0.36 µm metal-1 thickness (already in the inventory).
+3. **112 TIAL6**: the lead hedges the single vacuum sequence ("in one vacuum sequence, on our
+   reading"), while Step category states it unhedged ("the three films must be deposited in one
+   vacuum sequence, since an oxidised interface … would raise the via resistance").
+4. **110 WDEP2, Why/Nucleation**: "the nucleation on the TiN liner is what Srinivas et al. and
+   McConica and Cooper studied" — the page's own Deep-dive entry and the footnote title give McConica
+   and Cooper 1988 as tungsten nucleation *on thermal oxide* ("why a liner is needed"), not on TiN.
+5. **107–110**: the whole taper reading rests on the "Standard contact bottom CD" of 0.09 µm, which
+   sits in the PDK's laser-fuse table (108 and 107's open question say so); not a contradiction, noted
+   as the S8 figure agent did.
+
+Arithmetic re-checked while copying, all correct: 107/108 0.1 + 0.075 + 0.265 = 0.44 = 1.3761 −
+0.9361, and 0.265 + 0.075 = 0.34; 107 k₁ = 0.17 × 0.70 / 0.248 = 0.48; 113 k₁ = 0.40 at NA 0.70 and
+0.45 at NA 0.80; 108 (0.09/0.17)² = 0.28 ("little more than a quarter"); 112 100 + 3 200 + 300 =
+3 600 Å and 150 + 250 + 3 200 + 90 + 500 = 4 190 Å, 125 mΩ/sq × 0.32 µm = 4.0 µΩ·cm; 114/115
+0.36/0.14 = 2.57 ("above 2.5:1", "about 2.6:1"); 115 2.0061 − 1.3761 = 0.63, 0.63 − 0.36 = 0.27.
+
 ## Pages
 
 ### 107 CTM1 — done
