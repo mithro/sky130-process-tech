@@ -555,3 +555,51 @@ pages: 066, 068, 072. One commit per page.
   naturally run", deep-junction/amorphous layer, the tilted-extension pieces); the region list (a
   description of the first implant's regions, not a hedged claim); glance, grade and label lines.
 * **Caps**: para > 100 2 → 0; item > 60 5 → 0; sentence > 45 6 → 0.
+
+### 084 PDIS — done
+
+* **Lead.** First sentence (37 w) split at ", and cleans" ("It cleans the wafer …"; the "(on our
+  reading)" stays on the 2PSDI clause it governs). The 77-word sentence split at its colon ("… the
+  hardest strips in the front end. The resist has taken a dose …"), both halves kept in one paragraph
+  so the claim and its explanation stay together. Two paragraphs, split before "`PDIS` is the first of
+  the two source/drain strips" ("It" → "`PDIS`", R-PARA step 5). 114 words as in the base; first
+  sentence 21.
+* **R-CATEGORY.** Classification sentence (13 w) alone; the category-page crust sentence (background,
+  not specific to this step) as a plain paragraph in its place; the two sentences that describe this
+  strip ("At 10¹⁵ cm⁻² the crust is at its thickest …", "The strip is therefore engineered around the
+  crust …") → `**Specific to this step:**` and two bullets, in the base order.
+* **Why.** Paragraph 1 (135 w) split before "The strip also removes" (clean removal / contamination);
+  "must be gone *cleanly*:" → a full stop, the flake consequences their own sentence; Popped
+  crust / Chan split at the semicolon and the contamination sentence at its semicolon ("Fujimura et
+  al. showed …"), each half with its own markers.
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** Plasma ash (167 w): lead "Downstream microwave or RF oxygen plasma."; continuation 1 =
+  the two-step sentence (split at its semicolon, "Then a hotter step …"), Fujimura, the Wikipedia
+  quotation; continuation 2 = "SkyWater's ashers span exactly this range:[^skw-01]" with the three
+  quoted asher entries as nested plain bullets (the marker ended the enumerating sentence, so it
+  sits on the lead-in; every quotation unchanged); continuation 3 = the Iridia/CF₄ sentence, split at
+  its semicolon ("The CF₄ additions … would, we infer, be omitted here."). Wet strip and clean (100 w):
+  lead = the SPM/SC-1/SC-2 sentence to `[^wiki-rca]` (split at the semicolon); continuation from
+  "Visintin, Korzenski and Baum".
+* **R-TOOLS.** Four tools → recap table `Tool | Evidence`, the rows and wording of 067 (the same four
+  tools and grades). Ashers: head keeps this reference's "— named with their gases and temperatures on
+  SkyWater's facilities page" (not SkyWater's words, so no *SkyWater says:*); *Tool exists:*,
+  *Runs this step:* with its reason (the Iridia clause is the reason, so it stays in the grade line).
+  Benches: head with the quotation, *Tool exists:*. AIT: head with "our reading", *Tool exists:*
+  medium (067's form).
+* **R-RELATED.** "The oxide the strip must preserve" (SPOX) → `Same module:`; "The companion strip …
+  the other high-dose strip … light-dose strips for contrast" → one `Same category:` bullet (all Resist
+  strip / clean steps). Previous (with its "mask:" and "first implant:"), Next and Category page
+  unchanged, as on 066.
+* **R-OPENQ.** Labels "Ash recipe and wet sequence", "SC-2 and oxide loss", "Which asher"; text
+  unchanged.
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers "none published for SKY130" (the only
+  numbers on the page are industry-typical doses and SkyWater's asher temperature ranges); tool line
+  with both grades; Not public from Open questions 1–2.
+* **Preservation** (`--allow-regrouped` only): ADDED marker `skw-01`, refs `step-080`, `step-081`,
+  identifiers "SC-2" (OQ label), "SKY130", hedges "inference", "likely", "not public", "our reading"
+  (glance), "inference" and "our reading" (recap table). WORDS LOST: "strength"×4.
+* **Marker coverage.** 11 flags, all read: the asher bullets (marker on the lead-in); split halves whose
+  base marker belonged to the other clause (hardest strips/dose, two-step/"Then …", Iridia/CF₄);
+  glance and label lines.
+* **Caps**: para > 100 2 → 0; item > 60 2 → 0; sentence > 45 4 → 0.

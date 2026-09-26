@@ -10,16 +10,31 @@
 | **Previous step** | {ref}`2PSDI <step-083>` |
 | **Next step** | {ref}`NSDM <step-085>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** strips the {ref}`PSDM <step-081>` resist after the two p-type
+  implants (on our reading) and cleans the wafer for the next mask.
+* **Why:** the resist must be gone, and gone cleanly, before the wafer
+  can be coated again; its surface is a high-dose carbonised crust.
+* **Public numbers:** none published for SKY130.
+* **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
+  ashers — strong (existence); inference (assignment).[^skw-01]
+* **Not public:** the ash recipe and wet sequence, and how much
+  {ref}`SPOX <step-080>` oxide loss is budgeted (→ Open questions).
+:::
+
 ## What this step is
 
 `PDIS` removes the photoresist patterned at {ref}`PSDM <step-081>`
 after it has masked the two p-type implants {ref}`PSDI <step-082>` and
-{ref}`2PSDI <step-083>` (on our reading), and cleans the wafer so that
+{ref}`2PSDI <step-083>` (on our reading). It cleans the wafer so that
 the N⁺ source/drain mask {ref}`NSDM <step-085>` can be coated on it.
-It is the first of the two source/drain strips (the other is
+
+`PDIS` is the first of the two source/drain strips (the other is
 {ref}`NSDIS <step-087>`), and the two of them are, with the poly
 implant strip {ref}`P1IS <step-051>`, the hardest strips in the front
-end: the resist has taken a dose of the order of 10¹⁵ cm⁻²
+end. The resist has taken a dose of the order of 10¹⁵ cm⁻²
 (industry-typical for a source/drain[^txt-01]) of boron or BF₂, an
 order of magnitude beyond the channel and well implants, and its
 surface has been converted to the carbonised crust that Fujimura et
@@ -44,29 +59,37 @@ must not be stripped or seriously thinned here.
 ## Step category
 
 `PDIS` is a {ref}`Resist strip / clean <category-strip>` step of the
-*post-high-dose-implant* type. The category page explains the crust:
+*post-high-dose-implant* type.
+
+The category page explains the crust:
 high-dose implantation carbonises the resist's polymers, which lowers
 its etching rate,[^fujimura-1989] and if the wafer is
 heated quickly the volatile bulk beneath "build[s] up pressure
 beneath the implant-hardened surface layer" until the crust
-pops.[^pat-strip-mosel] At 10¹⁵ cm⁻² the crust is at its thickest
-and hardest, the implanted species (boron, fluorine) are embedded in
-it, and any sputtered metal from the implanter's beam-line and disc
-sits on top. The strip is therefore engineered around the crust rather
-than around the bulk resist.
+pops.[^pat-strip-mosel]
+
+**Specific to this step:**
+
+* At 10¹⁵ cm⁻² the crust is at its thickest
+  and hardest, the implanted species (boron, fluorine) are embedded in
+  it, and any sputtered metal from the implanter's beam-line and disc
+  sits on top.
+* The strip is therefore engineered around the crust rather
+  than around the bulk resist.
 
 ## Why this step exists
 
 The resist must be gone before the wafer can be coated again, and it
-must be gone *cleanly*: a popped flake that lands on a source/drain
+must be gone *cleanly*. A popped flake that lands on a source/drain
 region blocks the N⁺ implant locally, and a flake on a gate stack
 becomes a defect at the contact etch. Popped crust "causes the
 photoresist to become even harder"[^pat-strip-mosel] and turns a
-routine ash into a residue problem; Chan, Chiu and Tao describe an
+routine ash into a residue problem. Chan, Chiu and Tao describe an
 ashing sequence built around the "carbonized crust".[^pat-strip-tsmc]
+
 The strip also removes the boron and fluorine trapped in the crust,
 and whatever the implanter sputtered onto the wafer, before the
-{ref}`RTAD <step-088>` anneal can drive any of it into the silicon;
+{ref}`RTAD <step-088>` anneal can drive any of it into the silicon.
 Fujimura et al. showed how sodium contamination is avoided in
 downstream ashing with O₂+H₂O plasmas,[^fujimura-1994] and Kern's
 review sets out why a metal-removing wet clean follows.[^kern-1990]
@@ -80,32 +103,40 @@ the reasons for depositing the oxide before the implant masks
 
 ## How it is typically performed
 
-An industry-generic high-dose implant strip for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic high-dose implant strip for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 1. **Plasma ash, two steps.** Downstream microwave or RF oxygen
-   plasma. First a *low-temperature* step — "removed by oxygen and
+   plasma.
+
+   First a *low-temperature* step — "removed by oxygen and
    nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — until the crust is gone, so that
-   the bulk cannot pop under it; then a hotter step to remove the
+   the bulk cannot pop under it. Then a hotter step to remove the
    bulk quickly. The nitrogen addition that Fujimura et al. studied
    raises the ash rate,[^fujimura-1990] and forming gas or water
    vapour in the plasma penetrates the crust.[^fujimura-1994]
    Downstream configuration is used because "monatomic oxygen is
    electrically neutral" and the remote plasma "prevents damage to
-   the wafer surface".[^wiki-ash] SkyWater's ashers span exactly this
-   range: "Gasonic PEP, remote microwave plasma, N2, O2, 120C –
-   270C", "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2,
-   40C-270C" and "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to
-   250C".[^skw-01] The Iridia's 40 °C floor and its H₂/N₂ and NH₃
-   options are what a crust step needs; the CF₄ additions available
+   the wafer surface".[^wiki-ash]
+
+   SkyWater's ashers span exactly this range:[^skw-01]
+
+   - "Gasonic PEP, remote microwave plasma, N2, O2, 120C – 270C";
+   - "Iridia RF microwave, N2, O2, H2, CF4, NH3, H2/N2, 40C-270C";
+   - "Mattson Aspen2, RF plasma, O2, CF4, H2>N2, up to 250C".
+
+   The Iridia's 40 °C floor and its H₂/N₂ and NH₃
+   options are what a crust step needs. The CF₄ additions available
    on two of the tools attack oxide and would, we infer, be omitted
    here.
 2. **Wet strip and clean.** SPM (H₂SO₄:H₂O₂, "3 parts of concentrated
    sulfuric acid and 1 part of 30 wt. % hydrogen peroxide solution"
    is typical[^wiki-piranha]) to dissolve residual organics and the
    ash's residue, then SC-1 for particles and, optionally, SC-2 for
-   metals;[^wiki-rca] Visintin, Korzenski and Baum describe the
+   metals.[^wiki-rca]
+
+   Visintin, Korzenski and Baum describe the
    liquid formulations developed specifically for high-dose
    implanted resist,[^visintin-2006] and the Ohmi room-temperature
    sequence is the low-consumption alternative.[^ohmi-1996] SkyWater's
@@ -131,20 +162,29 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
+| Tool | Evidence |
+|---|---|
+| GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers | strong (existence); inference (assignment) |
+| Akrion Gamma batch wet bench | strong (existence) |
+| DNS wet bench and FSI Mercury | strong (existence) |
+| KLA-Tencor AIT (our reading) | medium |
+
 * **GaSonics PEP, Iridia RF microwave and Mattson Aspen II ashers** —
   named with their gases and temperatures on SkyWater's facilities
-  page.[^skw-01] Strength: **strong** for existence; the assignment
-  of this strip to any one of them is an inference, the Iridia's
-  low-temperature and hydrogen options making it the most natural
-  fit for a crust step.
+  page.[^skw-01]
+  - *Tool exists:* **strong** for existence.
+  - *Runs this step:* the assignment of this strip to any one of them is
+    an inference, the Iridia's low-temperature and hydrogen options
+    making it the most natural fit for a crust step.
 * **Akrion Gamma batch wet bench** ("Sulfuric, SC1, phosphoric,
-  BOE")[^skw-01] for SPM/SC-1. Strength: strong for existence.
+  BOE")[^skw-01] for SPM/SC-1.
+  - *Tool exists:* strong for existence.
 * **DNS wet bench and FSI Mercury** ("industry standard
-  HF/SC1/SC2")[^skw-01] as alternatives. Strength: strong for
-  existence.
+  HF/SC1/SC2")[^skw-01] as alternatives.
+  - *Tool exists:* strong for existence.
 * **KLA-Tencor AIT** inspection, our reading of "AIT"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -168,10 +208,10 @@ fab (SKY130's recipe is not public):
   resist); mask: {ref}`PSDM <step-081>`; first implant:
   {ref}`PSDI <step-082>`.
 * Next: {ref}`NSDM <step-085>` (coated on the cleaned surface).
-* The companion strip: {ref}`NSDIS <step-087>`; the other high-dose
-  strip: {ref}`P1IS <step-051>`; light-dose strips for contrast:
-  {ref}`LVTNIS <step-016>`, {ref}`ASTIS <step-067>`.
-* The oxide the strip must preserve: {ref}`SPOX <step-080>`.
+* Same module: the oxide the strip must preserve, {ref}`SPOX <step-080>`.
+* Same category: the companion strip, {ref}`NSDIS <step-087>`; the other
+  high-dose strip, {ref}`P1IS <step-051>`; light-dose strips for
+  contrast, {ref}`LVTNIS <step-016>`, {ref}`ASTIS <step-067>`.
 * Category page: {ref}`Resist strip / clean <category-strip>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -258,11 +298,11 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The SKY130 ash recipe (temperatures, gases, step times) and wet
+* **Ash recipe and wet sequence.** The SKY130 ash recipe (temperatures, gases, step times) and wet
   sequence are not public.
-* Whether the clean includes SC-2, and how much
+* **SC-2 and oxide loss.** Whether the clean includes SC-2, and how much
   {ref}`SPOX <step-080>` oxide loss is budgeted, is not public.
-* Which asher runs the high-dose strips is inferred from the
+* **Which asher.** Which asher runs the high-dose strips is inferred from the
   published gas and temperature ranges.[^skw-01]
 
 <!-- footnotes -->
