@@ -9,6 +9,9 @@ pages = sorted(p for p in (ROOT/"docs/steps").glob("[0-9][0-9][0-9]-*.md"))
 def clean(t):
     t = re.sub(r"\[\^[^\]]+\]", "", t)
     t = re.sub(r"\{(ref|term|doc)\}`([^`<]*?)(?: <[^>]*>)?`", r"\2", t)
+    # a free-standing dash (em, en, or the `--`/`---` MyST turns into one) is punctuation, not a word
+    # (review rd-steps-118-134 D3)
+    t = re.sub(r"(?<!\S)(?:[—–]|-{2,3})(?!\S)", " ", t)
     return t
 def words(t): return len(clean(t).split())
 
