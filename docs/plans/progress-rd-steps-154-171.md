@@ -81,3 +81,39 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   `pdk-periph` (fuse split), "(our arithmetic)", "These are", the H3, the table header and the
   Open-questions labels. `--strict-words` LOST: `enclosed`, `must`, `page`, `strength`×3. cov: no
   flag. inv: OK.
+
+### 155 MM4E — done (base `e3ce1328`)
+
+* Lead (base 149, one paragraph): two paragraphs (89, 65), 140 form. The 65-word "Through the resist
+  … a chlorine plasma removes everything …" sentence split after "via-3 level" with "It removes first
+  …" (declared "It removes"; "It" = the chlorine plasma, the subject of the sentence before); the dash
+  material became "The stack is a refractory cap, … bottom layer on our reading." (declared "The stack
+  is"; the hedge "on our reading" travels with it). The chlorine-plasma wording is kept verbatim (see
+  content problems).
+* `**How thick is the metal?**` → `### How thick is the metal?` (140 form), in three paragraphs. The
+  65-word Fab 4 sentence: its dash pair became a colon, "— which is why" → ". That is why" (the
+  gloss rule's which → That; word `which` lost, `that` added), and the semicolon a full stop.
+* R-CATEGORY: classification sentence alone; the MM1E chemistry pointer as its own paragraph (140
+  form); **Specific to this step:** with the geometry and breakthrough sentences as two bullets; the
+  bullet-opening "And" dropped (140's form; word `and` lost).
+* Why: line-width item split after its 28-word lead sentence (continuation paragraph, semicolon →
+  full stop). Breakthrough item: semicolon → full stop; the dash material after "the cap together"
+  became the continuation paragraph ("Fluorocarbon …", capitalised); the 20-word trailing hedge
+  "(inference from the stack; the Newport Fab patent …)" became its own parenthetical sentence
+  directly after the stringer sentence it closed (R-SENTENCE step 7, 140 form). Charging item split at
+  its semicolon (the "(inference from the PDK's stacked cross-section)" sits before the semicolon, on
+  the first clause, as in the base), studies as a continuation paragraph.
+* How: scope sentence italic. Step 7: the two dash asides (SkyWater's strippers and solvents) moved,
+  unchanged, to after the sentence they interrupted (140 form), each closed with a full stop; the
+  "(inference)" stays on "benign to the exposed plate edges". Step 8: test-tile sentence as a
+  continuation paragraph.
+* R-TOOLS (two items, 140 form). Resources: "(industry practice;[^nojiri-2015] SkyWater lists … [^skw-01])"
+  → "(industry practice[^nojiri-2015]). SkyWater lists … etchers.[^skw-01]" (140 form). R-RELATED (140
+  labels). R-OPENQ: labels on four bullets; the thickness bullet split at its semicolon, the cap
+  question as a continuation paragraph.
+* Glance box (140 form).
+* `check_preserved --allow-regrouped`: every ADDED line is in the glance box, plus the declared "It
+  removes", "The stack is", "That is why", the H3, "Specific to this step" and the labels. Every
+  `number_order` change is REGROUPED (the Fab 4 sentence); read, same digits. `--strict-words` LOST:
+  `strength`×2 (and, masked by glance words, `which` → `That`, `and`). cov: three flags, all pairing
+  noise (the quick-facts table; the moved step-7 asides keep their `skw-01` markers). inv: OK.
