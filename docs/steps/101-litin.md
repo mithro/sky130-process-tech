@@ -89,10 +89,10 @@ required.[^sec-01][^sec-02]
 
 `LITIN` is a {ref}`Thin-film deposition <category-deposition>` step of
 the *PVD* type — {term}`reactive sputtering` of titanium in argon–nitrogen
-(inferred).
+(inferred). SkyWater's public list has PVD TiN chambers and no {term}`CVD`
+TiN.[^skw-01]
 
-SkyWater's public list has PVD TiN chambers and no {term}`CVD`
-TiN.[^skw-01] `LITIN` is the only step in the flow whose sputtered
+`LITIN` is the only step in the flow whose sputtered
 *titanium nitride* is a wiring level in its own right rather than a
 liner, barrier or cap; the aluminium levels above it are sputtered
 wiring too. The category
@@ -337,7 +337,8 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
   The 1.0111 µm leader line runs to the top of
   the LINT on the glass beside `li`, which the drawing (marked "not to
-  scale") puts at the same height as the `li` top.[^pdk-04] We read the label
+  scale") puts at the same height as the `li` top (our reading of the
+  drawing).[^pdk-04] We read the label
   as that LINT top (0.9361 + 0.075 µm), which fits every other label
   (our reading of the drawing).[^pdk-04]
 * **As-deposited value.** Whether the 12.8 Ω/sq figure is the as-deposited value or the
