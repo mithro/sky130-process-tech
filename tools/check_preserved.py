@@ -190,7 +190,19 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+def _find_root() -> Path:
+    """The repository (or worktree) the pages belong to: the nearest
+    ancestor of the working directory that holds ``docs/steps``, so that a
+    copy of this file run from a worktree's ``tmp/`` still resolves that
+    worktree's pages and git history; the script's own location is the
+    fallback."""
+    for d in [Path.cwd().resolve(), *Path.cwd().resolve().parents]:
+        if (d / "docs" / "steps").is_dir() and (d / "tools").is_dir():
+            return d
+    return Path(__file__).resolve().parent.parent
+
+
+ROOT = _find_root()
 DOCS = ROOT / "docs"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
