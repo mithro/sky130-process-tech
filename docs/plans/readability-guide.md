@@ -299,6 +299,11 @@ of 12 words or more, or a semicolon joining two separately cited facts.
    sentence unless the page itself ties it to one clause (an Open-questions bullet or another
    sentence of the page names that clause as the inference). If it does, the hedge stays with that
    clause; if not, repeat it on every half. When in doubt, repeat (review rd-steps-118-134 D1).
+   A trailing hedge whose own words name its basis ("from the model form", "from the geometry", a
+   named source) may stay with one clause **only if** every other half is either cited to a source
+   that states it or carries its own hedge ("we infer", "on our reading"). If another half is an
+   uncited, unhedged claim of this reference, repeat the hedge on it. The hedge's wording alone does
+   not tie it to a clause (review rd-steps-135-153 D1).
 6. Never split inside a quotation: split before it or after it, including at a full stop the
    quotation itself contains; never add or remove a quotation mark or change its case. A sentence
    whose only split points lie inside a quotation stays whole and is listed in the progress file.
@@ -506,7 +511,9 @@ key `para>100w`; `grep -rn "This page describes the class in general" docs/` (62
 argument of `:77-91` almost sentence for sentence. After: the classification sentence
 ("`CAPME` is an {ref}`Etch <category-etch>` step of the *refractory metal, fluorine-chemistry* class —
 the category page's "Ti:W and TiN" entry."), then `**Specific to this step:**` and bullets; the repeated
-selectivity sentences are replaced by a pointer to the section above, which keeps them and their markers.
+selectivity sentences are replaced by a pointer to the section above, which keeps them and their markers,
+unless the repeated sentence carries a marker no other sentence of the section carries (then keep it,
+R-REPEAT "Do not touch"; review rd-steps-135-153 D2 — on 138 it does, and the sentence was kept).
 
 **Do not touch.** The category `{ref}` link, the class name, any quotation.
 
@@ -1685,7 +1692,9 @@ limits that differ from §1. `+` marks an addition; everything else already exis
 (¹) The *lead* is the text between `## What this step is` and the generated `{figure}` block (or the
 first `###` if the page has no figure). If the base lead is over 120 words and two paragraphs would leave one over 100 words, use three at
 natural seams and list the page. Never more than three, and never a paragraph that opens on a
-connective.
+connective. A lead within 120 words in the base must stay within 120 words; prefer re-punctuation in
+place (comma apposition, 153) to a restored subject that would take it over (review rd-steps-135-153
+D5).
 
 **Order of work.**
 
@@ -2371,7 +2380,9 @@ tile shows `## Open questions`.
 * [ ] Paragraphs ≤ 100 words, list items ≤ 60, sentences ≤ 45, cells ≤ 25 (quick facts ≤ 20).
       Measure against these §1 caps, never against looser "flag" thresholds. After the last page
       of a batch, run the measurement over the whole batch again and put the counts at the §1 caps
-      in the progress file.
+      in the progress file. The §1 dash/parenthetical cap (one per sentence) is advisory, a target
+      for new text: R-SENTENCE's triggers decide whether an existing sentence must be split; do not
+      split for it alone (review rd-steps-135-153 D4).
 * [ ] Every new table has a caption (R-CAPTION): on a step page its lead-in sentence ending in a
       colon; a `:::{table}` wrapper when it has a prose column. `:widths:` is inert in this build —
       do not add it. It obeys the §1 column budget (≤ 3 prose, ≤ 5 short-cell), tested at 400 px;
@@ -2434,7 +2445,11 @@ Review the diff **and** the rendered tiles. The executor cannot see what it did 
     (confirmed on `pecvd.md` and `duv-krf-stepper.md` in this batch's review). The scripts live under
     `docs/plans/readability/`, which executors must not touch (§2.15); fixing the splitter itself is
     a coordinator task for the prototype or `measure5.py`. Until then, read the flagged text by eye
-    before asking for a split.
+    before asking for a split. The same splitter does not start a new sentence before a digit
+    (`check_preserved.py` does): a sentence opening with a numeral is reported as part of the one
+    before it. Accepting a digit after the full stop, with an abbreviation guard (`pp.`, `vol.`,
+    `Proc.`, `ch.`, `No.`, `Fig.`), is a coordinator task (review rd-steps-135-153 D3); writers
+    should in any case avoid opening a sentence with a numeral.
 
 ## 9. Blocked rules
 
