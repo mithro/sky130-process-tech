@@ -807,6 +807,68 @@ def _dropdown_body_text(lines: list[str], body_lines: set[int]) -> str:
     return normalize_ws(" ".join(kept))
 
 
+def _duplicate_units(text: str) -> tuple[Counter, Counter]:
+    """(consecutive identical non-blank lines, sentences) of ``text``
+    outside tables, fences and footnote definitions, as Counters, for
+    check_duplicates."""
+    body = DEF_RE.sub("", text)
+    lines_c: Counter = Counter()
+    sentences: Counter = Counter()
+    prev = None
+    in_fence = False
+    prose: list[str] = []
+
+    def flush() -> None:
+        if prose:
+            # markers stripped first: ".[^a] The" would otherwise not split
+            for sent in _SENTENCE_SPLIT_RE.split(normalize_ws(MARKER_RE.sub("", " ".join(prose)))):
+                sent = sent.strip()
+                if len(sent.split()) >= 8:
+                    sentences[sent] += 1
+        prose.clear()
+
+    for raw in body.split("\n"):
+        line = raw.strip()
+        if _FENCE_RE.match(line) and not line.startswith("::") or line.startswith("```"):
+            in_fence = not in_fence
+            flush()
+            prev = None
+            continue
+        if in_fence or _TABLE_ROW_RE.match(line):
+            flush()
+            prev = None
+            continue
+        if not line:
+            flush()
+            prev = None
+            continue
+        if line == prev:
+            lines_c[line] += 1
+        prev = line
+        prose.append(_LEADING_LIST_MARKER_RE.sub(" ", line) if _LIST_ITEM_RE.match(line) else line)
+    flush()
+    return lines_c, sentences
+
+
+def check_duplicates(old_text: str, new_text: str) -> list[str]:
+    """Review rd-steps-118-134 D5: an editing slip can paste a line or a
+    sentence twice, and nothing in the nine categories notices, because
+    every marker, number and word is still present. Fail on (a) two
+    consecutive identical non-blank lines, and (b) any sentence of eight
+    words or more that occurs more often than it did in the base page --
+    both counted outside tables, fences and footnote definitions. A
+    duplicate the base already had is not new and is not reported."""
+    old_lines, old_sent = _duplicate_units(old_text)
+    new_lines, new_sent = _duplicate_units(new_text)
+    msgs: list[str] = []
+    for line, c in (new_lines - old_lines).items():
+        msgs.append(f"DUPLICATED line ({c}x consecutive): {line[:120]!r}")
+    for sent, c in new_sent.items():
+        if c > 1 and c > old_sent.get(sent, 0):
+            msgs.append(f"DUPLICATED sentence ({c}x, was {old_sent.get(sent, 0)}x): {sent[:120]!r}")
+    return msgs
+
+
 def compare_dropdowns(old_text: str, new_text: str) -> list[str]:
     old_blocks = check_inforce.dropdown_blocks(old_text)
     new_blocks = check_inforce.dropdown_blocks(new_text)
@@ -1304,6 +1366,8 @@ def diff_page(
     if not allow_dropdown_edits:
         for msg in compare_dropdowns(old_text, new_text):
             results.append((True, msg))
+    for msg in check_duplicates(old_text, new_text):
+        results.append((True, msg))
 
     # ``words`` (not one of the nine CATEGORIES: it has its own, separate
     # gate, --strict-words, rather than --allow-added).
@@ -1604,6 +1668,41 @@ def selftest() -> int:
         "\n[^a]: Source. <https://example.com/a>\n",
         True,
         allow_regrouped=True,
+    )
+
+    # -- duplicated lines and sentences (review rd-steps-118-134 D5) -------
+    _dup_base = (
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.[^a]\n\n"
+        "* item one here\n* item two here\n\n[^a]: Source. <https://example.com/a>\n"
+    )
+    case(
+        "a sentence pasted twice by an editing slip fails",
+        _dup_base,
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.[^a] "
+        "The liner coats the floor and the walls of every hole at once.[^a]\n\n"
+        "* item one here\n* item two here\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+    )
+    case(
+        "a list item pasted twice fails",
+        _dup_base,
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.[^a]\n\n"
+        "* item one here\n* item one here\n* item two here\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+    )
+    case(
+        "a duplicate the base already had is not reported",
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.[^a] "
+        "The liner coats the floor and the walls of every hole at once.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nThe liner coats the floor and the walls of every hole at once.[^a]\n\n"
+        "The liner coats the floor and the walls of every hole at once.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        True,
+    )
+    case(
+        "identical table rows and short repeated phrases are not duplicates",
+        "# P\n\n| A | B |\n|---|---|\n| 1 | x |\n| 1 | x |\n\nSee below. See below.\n",
+        "# P\n\n| A | B |\n|---|---|\n| 1 | x |\n| 1 | x |\n\nSee below. See below. See below.\n",
+        True,
     )
 
     # -- fail cases -------------------------------------------------------
