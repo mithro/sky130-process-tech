@@ -10,6 +10,24 @@
 | **Previous step** | {ref}`CMPM3 <step-142>` |
 | **Next step** | {ref}`VIM3 <step-144>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a thin plasma cap oxide on the polished
+  dielectric over metal 3.
+* **Why:** it seals the polished surface and, we infer, brings the
+  dielectric above metal 3 to its final thickness before the via-3
+  mask.
+* **Public numbers:** the finished via-3 height, 0.39 µm;[^pdk-04] none
+  published for the cap itself.
+* **Likely SkyWater tool:** PECVD TEOS "C2 and Producer" — **strong**
+  for the capability; the assignment of the cap to it is an
+  **inference**.[^skw-01]
+* **Not public:** the cap's precursor, thickness and conditions, and
+  how the via-3 height is divided between NILD5 and the cap (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `NCAPOX5` deposits a *{term}`cap oxide`* on the polished inter-level
@@ -20,7 +38,9 @@ polish left, and its surface carries the scratches, slurry residue and
 hydrated layer of a polish. A thin plasma oxide deposited over it
 seals that surface and, we infer (as at {ref}`NCAPOX3 <step-117>`),
 brings the dielectric above metal 3 to its final thickness before the
-via-3 mask ({ref}`VIM3 <step-144>`) is printed. The
+via-3 mask ({ref}`VIM3 <step-144>`) is printed.
+
+The
 finished number is public: the PDK's stack diagram places the bottom
 of `met4` 1.235 µm above the bottom of `met3`, which with the 0.845 µm
 metal leaves a via-3 height of 0.39 µm.[^pdk-04] The cap's own
@@ -42,27 +62,36 @@ permittivity 3.5 and thickness 0.030 µm beside the main dielectric,
 which could be a cap or a liner; at NILD5 it draws only "NILD5
 K=4.1".[^pdk-04] Whatever the "_C" films represent, the diagram does
 not show one here, and so offers no hint of this cap's thickness
-(see *Open questions*). What the cap prepares for is a 0.20 µm via
+(see *Open questions*).
+
+What the cap prepares for is a 0.20 µm via
 (via3.1[^pdk-periph]) etched 0.39 µm deep to metal 3 — an
 {term}`aspect ratio` of about 1.95:1, a little below via 2's 2.1:1 —
-and, over each capacitor, a shallower via to the TiW top plate (the
+and, over each capacitor, a shallower via to the TiW top plate. The
 PDK's `cap_mim` cross-section draws vias from metal 4 landing on "CAPM"
 and on "M3 (plate 1)"; it labels the via that lands on "CAPM" — the
-only via it labels — "Via3"[^pdk-07]).
+only via it labels — "Via3".[^pdk-07]
 
 ## Step category
 
 `NCAPOX5` is a {ref}`Thin-film deposition <category-deposition>` step
 of the *{term}`PECVD` oxide* class — the category page's PECVD
-section — and, like its predecessors, the simplest deposition in its
+section.
+
+It is, like its predecessors, the simplest deposition in its
 module: a blanket, thin, low-temperature oxide on a flat surface with
-no gap to fill. What is specific to this instance is that the
-dielectric it completes contains a device: the capacitor top plates
-sit inside the via-3 dielectric, so the cap's thickness adds directly
-to the oxide over the plates as well as over the lines, and the wafer
-now carries three aluminium levels and a thin capacitor dielectric
-whose temperature and plasma exposure it must respect (roughly
-400–450 °C for Al–Cu, industry-typical[^txt-05]).
+no gap to fill.
+
+What is specific to this instance is that:
+
+* the
+  dielectric it completes contains a device: the capacitor top plates
+  sit inside the via-3 dielectric, so the cap's thickness adds directly
+  to the oxide over the plates as well as over the lines;
+* the wafer
+  now carries three aluminium levels and a thin capacitor dielectric
+  whose temperature and plasma exposure it must respect (roughly
+  400–450 °C for Al–Cu, industry-typical[^txt-05]).
 
 ## Why this step exists
 
@@ -73,6 +102,7 @@ the via-3 numbers:
 * **Thickness control.** The {ref}`CMPM3 <step-142>` polish is stopped
   by removal amount and varies with pattern density — the variation
   Boning et al. and Chang et al. characterised.[^boning-1994][^chang-1995]
+
   Polishing slightly below target and adding a cap of well-controlled
   thickness tightens the final 0.39 µm[^pdk-04] (industry
   practice[^txt-05]), and with it both via-3 depths the
@@ -85,8 +115,8 @@ the via-3 numbers:
   oxide is at {ref}`CMPM3 <step-142>`).
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches,
   embedded particles — Devriendt et al. relate them to the post-CMP
-  clean[^devriendt-1998] — and a hydroxyl-rich surface layer;[^moon-2016]
-  a fresh plasma oxide buries them so that they do not seed via-etch
+  clean[^devriendt-1998] — and a hydroxyl-rich surface layer.[^moon-2016]
+  A fresh plasma oxide buries them so that they do not seed via-etch
   defects or release water into the vias, the outgassing that
   poisons tungsten nucleation.[^kobayakawa-1991]
 * **A known surface for lithography.** The {ref}`VIM3 <step-144>`
@@ -100,12 +130,12 @@ some capacitor plates would be thinner than intended.
 
 ## How it is typically performed
 
-An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
+*An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 (SKY130's recipe is not public); the sequence is that of
-{ref}`NCAPOX3 <step-117>`.
+{ref}`NCAPOX3 <step-117>`.*
 
 1. **Chamber.** A single-wafer or twin-chamber PECVD reactor at
-   350–400 °C (industry-typical[^txt-05][^raupp-1992]); SkyWater lists
+   350–400 °C (industry-typical[^txt-05][^raupp-1992]). SkyWater lists
    "PECVD TEOS, C2 and Producer – low temp options" and "PECVD silane
    oxide/nitride/oxynitride, C1 – low temp, range of R.I.
    options".[^skw-01] Applied Materials' Producer[^amat-10k] and
@@ -114,10 +144,12 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 2. **Precursor.** {term}`TEOS`/O₂ plasma oxide — Raupp, Cale and Hey
    analyse its kinetics[^raupp-1992] — or SiH₄/N₂O plasma oxide, whose
    properties depend on RF power as Chapple-Sokol, Tierney and Batey
-   measured.[^chapple-sokol-1989] The Cypress Fab 4 reports list a
+   measured.[^chapple-sokol-1989]
+
+   The Cypress Fab 4 reports list a
    "1000A TEOS" film under a PECVD nitride in the passivation
    stack,[^cyp-qtp-123907][^cyp-qtp-014807] which shows a TEOS oxide
-   of cap-like thickness in the same fab; that it is a plasma rather
+   of cap-like thickness in the same fab. That it is a plasma rather
    than a thermal TEOS is our inference from the aluminium underneath,
    and that this cap is of the same kind is a further inference.
 3. **Thickness.** Not public; a cap of the order of 0.05–0.15 µm is
@@ -132,8 +164,8 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    capacitor plates are still floating under the dielectric; a gentle,
    low-bias PECVD step, rather than an HDP one, limits the charging
    Cheung described for plasma-enhanced dielectric
-   deposition[^cheung-2000] (inference that it matters here; Wang,
-   Ackaert et al. document the MiM case[^wang-2004-mim]).
+   deposition.[^cheung-2000] (Inference that it matters here; Wang,
+   Ackaert et al. document the MiM case.[^wang-2004-mim])
 6. **Clean and metrology.** The wafer comes from the post-CMP scrub
    (Philipossian and Sun on the brushes[^philipossian-2009]); after
    deposition, thickness and index by ellipsometry on monitors and
@@ -149,11 +181,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **PECVD TEOS "C2 and Producer" with "low temp options".**[^skw-01]
-  Strength: **strong** for the capability; the assignment of the cap
-  to the TEOS process rather than the silane "C1" oxide is an
-  **inference** from practice and from the TEOS oxide in the Cypress
-  passivation description.[^cyp-qtp-123907] "C2" as a Novellus Concept
+* **PECVD TEOS "C2 and Producer" with "low temp options"**[^skw-01]
+  - *Tool exists:* **strong** for the capability.
+  - *Runs this step:* the assignment of the cap
+    to the TEOS process rather than the silane "C1" oxide is an
+    **inference** from practice and from the TEOS oxide in the Cypress
+    passivation description.[^cyp-qtp-123907]
+
+  "C2" as a Novellus Concept
   Two and "Producer" as an Applied Materials Producer are readings of
   the names, not stated.
 * **PECVD silane oxide "C1"**[^skw-01] as the alternative (medium).
@@ -170,12 +205,13 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CMPM3 <step-142>` (the polish it seals). Next:
+* Previous: {ref}`CMPM3 <step-142>` (the polish it seals).
+* Next:
   {ref}`VIM3 <step-144>` (the via-3 mask printed on it), then
   {ref}`VIM3E <step-145>`.
-* The dielectric it completes: {ref}`NILD5 <step-141>`; the metal and
-  capacitors beneath: {ref}`MM3E <step-140>`, {ref}`CAPME <step-138>`.
-* The other cap oxides: {ref}`NCAPOX <step-091>`,
+* Depends on: the dielectric it completes, {ref}`NILD5 <step-141>`; the metal and
+  capacitors beneath, {ref}`MM3E <step-140>`, {ref}`CAPME <step-138>`.
+* Same category: the other cap oxides, {ref}`NCAPOX <step-091>`,
   {ref}`NCAPOX3 <step-117>` (where the reasoning is set out in full),
   {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX6 <step-158>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
@@ -231,14 +267,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* The cap's precursor, thickness and deposition conditions are not
+* **Precursor, thickness and conditions.** The cap's precursor, thickness and deposition conditions are not
   public.
-* How the 0.39 µm via-3 height[^pdk-04] is divided between the polished
+* **Division of the via-3 height.** How the 0.39 µm via-3 height[^pdk-04] is divided between the polished
   {ref}`NILD5 <step-141>` and this cap is not public.
-* Why the stack diagram draws "_C" films at NILD3 and NILD4 but not
+* **Whether the cap oxides differ.** Why the stack diagram draws "_C" films at NILD3 and NILD4 but not
   at NILD5[^pdk-04] — and therefore whether the cap oxides differ
   between levels — is not public.
-* Whether "C2" denotes a Novellus Concept Two is an inference from the
+* **Novellus Concept Two.** Whether "C2" denotes a Novellus Concept Two is an inference from the
   vendor's product names.[^novellus-history]
 
 <!-- footnotes -->

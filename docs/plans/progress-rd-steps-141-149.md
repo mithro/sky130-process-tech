@@ -117,6 +117,38 @@ Base `ed78ad03`. Caps before: 3 paragraphs, 4 items, 6 sentences over; after 0/0
 * `cov`: 3 flags, pairing noise (the "assumptions"/"typical"/"our reading" words are in the
   neighbouring bullet or sentence, unchanged).
 
+### 143 NCAPOX5 — done
+
+Base `7663248c`. Caps before: 3 paragraphs, 2 items, 5 sentences over; after 0/0/0. Lead 139 words
+(base 139, one paragraph) in two paragraphs (85, 54) split at "The finished number is public" (128
+form).
+
+* Post-figure paragraph (140 words) split before "What the cap prepares for"; the 23-word
+  parenthetical on the `cap_mim` cross-section became the following sentence, its parentheses removed,
+  words and `pdk-07` unchanged (R-SENTENCE, parenthetical ≥ 12 words; one dash pair left inside it, as
+  in the base).
+* R-CATEGORY: classification to the closing dash ("… PECVD section."); "and, like its predecessors, …"
+  → "It is, like its predecessors, …" (subject and verb added, "and" dropped; 128 form); "What is
+  specific to this instance is that:" two bullets (only "and" dropped; 128 form).
+* R-PARA/R-SENTENCE (Why): thickness item split before "Polishing slightly …" (continuation); sealing
+  item split at the semicolon ("them" = the scratches, particles and layer of the sentence before).
+* How: italic scope sentence; step 1 split at the semicolon (two cited facts); step 2's Cypress
+  sentences a continuation, split at the semicolon ("That it is a plasma …", hedges "our inference" and
+  "a further inference" unchanged on their clauses); step 5's 13-word trailing hedge "(Inference that
+  it matters here; Wang, Ackaert et al. document the MiM case.[^wang-2004-mim])" now its own
+  parenthetical sentence directly after the sentence it qualifies (R-SENTENCE step 7), so it still
+  covers the whole of it.
+* R-TOOLS: TEOS item two grades, the "readings of the names, not stated" sentence a continuation (128
+  form); C1 bullet unchanged.
+* R-RELATED: Previous · Next · Depends on (NILD5; MM3E, CAPME) · Same category (the cap oxides) ·
+  Category page. R-OPENQ: four labels from the bullets' words.
+* R-GLANCE: Why keeps "we infer"; the only number is the lead's 0.39 µm (`pdk-04`); the tool line
+  keeps both grades.
+* `check_preserved --allow-regrouped`: ADDED = glance only (markers `pdk-04`, `skw-01`; 0.39, 3;
+  quote "C2 and Producer"; hedges inference, likely, not public, we infer; identifiers) and the
+  labels. REGROUPED: the cross-section parenthetical (same digits). WORDS LOST: `strength`.
+* `cov`: 6 flags, all read — glance/label pairing noise; the step 5 hedge is the next sentence.
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
