@@ -127,24 +127,50 @@ at selectivity 2; 139 k₁ 0.847 and 0.493, 47/125 = 0.38; 140 7 650 Å, 22 050 
 
 ## Content problems for the owner (not fixed; text kept verbatim)
 
-1. **140 lead vs body on the breakthrough.** The lead says "a chlorine plasma removes everything …:
-   first whatever remains of the CAPILD dielectric outside the capacitor plates", while the Why bullet
-   "Breaking through the capacitor dielectric" says a chlorine plasma "makes little progress on it" and
-   a fluorine-containing breakthrough removes it (the S10 figure follows the body).
-2. **140 (and 145) on where the dielectric stays.** On 138's stop-on-dielectric reading nothing is
-   etched under the MM3 resist, so the dielectric stays on every metal-3 shape (around the top plate
-   and on the wiring); 140 does not say so, and 145 gives the via-3 floors as the metal-3 cap and the
-   top plate without the dielectric (S10 figure notes).
-3. **135 and 150 word the dielectric differently.** 135: "described in this reference as a silicon
-   oxynitride (inference, see below)"; 150: "a step name is not evidence of a chemistry, and no public
-   source describes SKY130's capacitor dielectric … though the public record does not single that
-   material out".
-4. **138 and 153 leads state the stop.** Both say the plasma "stops on, or a little way into, the thin
-   capacitor dielectric" without a hedge, while their bodies say which of stop and through-etch SKY130
-   uses is not public and the stop is this reference's inference.
-5. **151 lead "a blanket titanium–tungsten layer"** is unhedged, while the same paragraph says the PDK
-   does not name the material and TiW is this reference's inference (the batch-9 pattern of 120/131's
-   "titanium–tungsten floor"); 135's "the TiW of CAPTIW1" in its closing sentence is the same.
+In the reviewer's words (review `rd-steps-135-153`, section D):
+
+1. 140 lead vs body on the breakthrough — real; the lead's "a chlorine plasma removes … first
+   whatever remains of the CAPILD dielectric" contradicts `140-mm3e.md` Why "Breaking through…" and
+   the S10 figure. Owner decision; suggested wording: "…an etch removes everything down to the via-2
+   level: first, in a fluorine-containing breakthrough, whatever remains…, then, in chlorine, the
+   metal-3 stack…".
+2. 140/145 on where the dielectric stays — real; follows from 138's reading and is drawn in the S10
+   figure; the text is silent. Owner decision (one sentence on 140 would do).
+3. 135 vs 150 dielectric wording — a difference of emphasis, not a contradiction (both say inference;
+   150 is more cautious). Align 135 to 150's caution if the owner wants one voice.
+4. 138/153 unhedged "stops on" in the leads — real; add ", on this reference's reading," after
+   "and stops on" (138) / "It stops" (153; 153 then 123 words → re-punctuate).
+5. 151 "a blanket titanium–tungsten layer" and 135's "the TiW of CAPTIW1" — real, same pattern as
+   120/131 in batch 9; "a blanket conductor film (titanium–tungsten on this reference's reading)" as
+   on 136.
+
+## Review fix round (review `rd-steps-135-153`, approve with fixes)
+
+* M1 138 lead: the TiW aside back in place as a comma apposition after CAPTIW1 ("…film of CAPTIW1,
+  TiW as assumed there, of the order of 0.1 µm on our reading … resistance. The plasma stops on …"),
+  so "there" points at CAPTIW1 (the 153 form; "The plasma" per L1).
+* M2 137 category: "(inference from the model form)" repeated on the first half ("…translates
+  directly into a device parameter (inference from the model form)."), no marker; declared ADDED hedge.
+* M3 151: "(textbook range for refractory barrier films[^txt-02])" back in place after "50–100 µΩ·cm";
+  only the Hartsough clause is the following sentence. The `number_order` line still reports LOST,
+  because the Hartsough year (1979) now follows 0.09–0.17 instead of preceding 5.8; hand-checked, same
+  digits, and the textbook-range hedge is back on the resistivity.
+* L1 153 "It stops on" → "The plasma stops on" (lead 120 words). L2 139 step 5 and 140 step 2: the
+  parenthetical hedge rejoined to its sentence; the item split before the qualified sentence instead.
+  L3 152 "0.1 µm of edge bias" → "An edge bias of 0.1 µm" (the CD-error paragraph then split before
+  "The mask-to-etch bias", 101 → two paragraphs). L4 139 m3.3c/d cell "spacing to or from …". L5 151
+  category: the repeated "(inference from the geometry)" removed from the pre-clean half, which
+  carries "on our reading" (136's call, D1). L6 138/153: "*Runs this step:* which runs this step is
+  not public." as on 140. L7 137/152: "Same module" now the other capacitor's mask (CAP2M / CAPM);
+  MM3/MM3E and MM4/MM4E moved into "Feeds". L8 136/151 "The capacitance is therefore set by …"
+  restores the causal link. L9 below.
+* L9 corrections: the 135 lead split does **not** repeat `pdk-07` (base "constructions,[^pdk-07] and
+  its" → "constructions.[^pdk-07] Its"); the two ADDED `pdk-07` on 135 are the glance and the
+  PDK-values split. 139's WORDS LOST also include `be`, `with` and the further `by`s of the rule-table
+  cells.
+* Guide: rulings D1–D5 added to `docs/plans/readability-guide.md` (D1 hedge scope, D2 R-CATEGORY
+  example vs R-REPEAT, D3 splitter note — the splitter change itself is a coordinator task, D4 §1
+  dash cap advisory, D5 lead cap after a split).
 
 ## Pages
 
