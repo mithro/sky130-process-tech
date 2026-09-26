@@ -445,3 +445,43 @@ words (base 106) in two paragraphs. Same treatment as 137 wherever the two pages
 * Preservation: ADDED = the glance box (markers `pdk-07` ×2, `pdk-periph`, `skw-01`, its numbers,
   `step-153`, hedges, identifiers) and the repeated "(inference from the geometry)"; REGROUPED
   lines read. `--strict-words`: LOST `strength` ×3, `page` ("Mask page:"); `it`, `which` non-strict.
+
+### 153 CAP2ME — done
+
+Base `da0240bf`. Caps before: 4 paragraphs, 8 items, 10 sentences over; after: 0/0/0. Lead 122 words
+(base 119) in two paragraphs. Same treatment as 138 wherever the two pages share wording. The in-force
+note in the body is untouched and still directly after the paragraph that ends with the Philips and
+Newport Fab sentences (as in the base); the one in the Deep-dive list is untouched.
+
+* Lead: the dash material (TiW, ~0.1 µm, an inference from the PDK's 5.8 Ω/sq[^pdk-07]) as "The film
+  is described in this reference as TiW …" directly after its sentence, with its marker.
+* Post-figure: the cap identity as "… whose cap is:" and two bullets, each dash and marker in place;
+  the absolute "which of the two SKY130's metal 4 carries not being public[^cyp-qtp-123907]
+  (overview-metal-cap)" stays at the end of the second bullet, word for word, where the base had it;
+  paragraph splits before "If the etch went through" and "Other published processes"; the
+  Philips/Newport sentence split at ", and". "Which of these SKY130 follows" paragraph: the
+  cross-section sentence split at the semicolon; the 78-word "we describe … — "greater than 2" … —
+  and because … (inference)" sentence: the dash material as the following sentence "The selectivities
+  are "greater than 2" …, which are not directly comparable." (subject and verb added); "(inference)"
+  stays on the "we describe … because …" sentence it closed, which the Open question words the same
+  way ("… a through-etch offers no selective stop (inference)"); the TiN-cap sentence split at its
+  semicolon.
+* R-CATEGORY: classification sentence with its dash tail (30 words); "Specific to this step:" three
+  bullets (the WF₆/Liu–Kuo sentence; Fischl and Hess; the chlorine-blend sentence with its dash
+  material as "Such a flow is the scheme of the Texas Instruments patent in the collapsed note above."
+  — restored noun — and Flamm/Winters as a continuation). "What is specific to this instance is the
+  history of the wafer" keeps its paragraph; its 66-word sentence split at the semicolon and its
+  20-word "(inference from the PDK's stacked cross-section, …)" as the following sentence "(Inference
+  …)", covering both halves.
+* Why: items 2 and 3 into first block + continuation; item 3 split at its semicolon.
+* How: italic scope lead-in (with its CAPME pointer); step 3 split at the semicolon ("(industry
+  practice; Nojiri …)" stays on the chemistry sentence); step 4 split at the semicolon; step 5: the two
+  dashes (the strippers; the batch rotational tools) as sentences directly after "Downstream O₂/N₂ ash,
+  then a solvent clean.", "which must remove" → "The clean must remove …" (restored noun; "(requirement,
+  not a property of the named products)" still follows the naming), then the peroxide sentence; step 6
+  into first block + two continuations.
+* R-TOOLS as on 138. Resources: the 25-word parenthetical split as on 138. R-RELATED as on 138:
+  Previous / Next / Depends on (CAPTIW2, CAPILD2; WTIAL4) / Feeds (VIM4E) / Same category (CAPME;
+  LI1ME) / Category page. R-OPENQ labels; the first item into first block + continuation.
+* Preservation: ADDED = the glance box only (markers, numbers, refs, hedges, identifiers); REGROUPED
+  lines read. `--strict-words`: LOST `strength` ×2 only.

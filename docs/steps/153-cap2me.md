@@ -10,16 +10,40 @@
 | **Previous step** | {ref}`CAP2M <step-152>` |
 | **Next step** | {ref}`MM4 <step-154>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the blanket top-plate film of
+  {ref}`CAPTIW2 <step-151>` through the {ref}`CAP2M <step-152>` resist,
+  leaving the second capacitor's top plates; this page treats the
+  resist strip and clean as part of the etch.
+* **Why:** the etch turns the `cap2m` resist image into discrete top
+  electrodes, whose area, with the dielectric thickness, sets the
+  capacitance the PDK models.
+* **Public numbers:** `CMIM2A` 2 fF/µm² and `CMIM2P` 0.19 fF/µm; the
+  plate's 5.8 Ω/sq MiM2 top-plate sheet resistance.[^pdk-07]
+* **Likely SkyWater tool:** Lam 9600 or Lam 2300 Versys — **strong**
+  for the tools and for TiW as a qualified material; which runs this
+  step is not public.[^skw-01]
+* **Not public:** whether the etch stops on the dielectric or cuts
+  through it (this page describes the stop, an inference), which film
+  caps metal 4, and the chemistry, endpoint, over-etch and dielectric
+  loss (→ Open questions).
+:::
+
 ## What this step is
 
 `CAP2ME` etches the top plates of the second {term}`MiM capacitor`. Through the
 resist islands of {ref}`CAP2M <step-152>` a plasma removes the blanket
-top-plate film of {ref}`CAPTIW2 <step-151>` — described in this reference
-as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
-MiM2 top-plate sheet resistance[^pdk-07] — and stops on, or a little way
+top-plate film of {ref}`CAPTIW2 <step-151>` and stops on, or a little way
 into, the thin capacitor dielectric of {ref}`CAPILD2 <step-150>`, leaving
 the plate film only where the
 layout draws `cap2m`, "MiM capacitor plate over metal 4".[^pdk-06] The
+film is described in this reference
+as TiW of the order of 0.1 µm, an inference from the PDK's 5.8 Ω/sq
+MiM2 top-plate sheet resistance.[^pdk-07]
+
+The
 resist is then stripped: the step list used in this reference has no
 separate strip step after `CAP2ME`, so this page treats the resist
 strip and clean as part of the etch. The step repeats
@@ -36,23 +60,30 @@ A close-up of the left edge of a top plate of the second capacitor; the lower pa
 What lies under the film sets the difficulty. Beneath the plate film
 is a dielectric some 20–30 nm thick (our estimate at
 {ref}`CAPILD2 <step-150>`), and beneath that is the unpatterned
-metal-4 stack of {ref}`WTIAL4 <step-149>`, whose cap is TiW over
-Al–Cu on the description of the **S8TNV-5R** stack in the 2013 Cypress
-report for this fab — which gives TiW over Al–Cu at every one of its
-three levels[^cyp-qtp-113005] — and 500 Å of TiN over 90 Å of titanium
-on the stack qualified in 2013–2014, which of the two SKY130's metal 4
-carries not being public[^cyp-qtp-123907]
-({ref}`overview-metal-cap`). If the etch went through the dielectric it
+metal-4 stack of {ref}`WTIAL4 <step-149>`, whose cap is:
+
+* TiW over
+  Al–Cu on the description of the **S8TNV-5R** stack in the 2013 Cypress
+  report for this fab — which gives TiW over Al–Cu at every one of its
+  three levels;[^cyp-qtp-113005]
+* 500 Å of TiN over 90 Å of titanium
+  on the stack qualified in 2013–2014, which of the two SKY130's metal 4
+  carries not being public[^cyp-qtp-123907]
+  ({ref}`overview-metal-cap`).
+
+If the etch went through the dielectric it
 would start on the metal-4 cap everywhere outside the capacitors. The
 etch therefore removes a refractory metal with high {term}`selectivity`
 to a very thin silicon-based dielectric. A Texas Instruments patent that
 may still be in force describes such an etch, with the dielectric
 thickness it assumes, the loss it allows, its gas scheme and its
-selectivity; those sentences are in the collapsed note below. Other
+selectivity; those sentences are in the collapsed note below.
+
+Other
 published processes etch through the dielectric instead: the Philips patent
 etches its TiN top electrode and the insulator beneath with a fast, a
 slower and a timed step, stopping near the TiN anti-reflective coating
-of the bottom electrode,[^pat-mim-philips] and the Newport Fab patent
+of the bottom electrode.[^pat-mim-philips] The Newport Fab patent
 etches top plate and dielectric together and protects their sidewall
 with a spacer before the bottom metal is etched.[^pat-mim-newportfab]
 
@@ -70,47 +101,58 @@ electrode is TiN, not TiW.[^pat-mim-ti-etch]
 Which of these SKY130 follows is not public. The PDK's `cap_mim`
 cross-section draws the thin "CAPILD" film under `CAP2M` with the same
 lateral extent as the plate, over a wider "M4 (plate 2)",[^pdk-07] as it
-does for `CAPM`; read literally that shows the dielectric removed
+does for `CAPM`. Read literally that shows the dielectric removed
 outside the plate, but a schematic cannot show a few nanometres of
-residual film. As at {ref}`CAPME <step-138>`, we describe the
+residual film.
+
+As at {ref}`CAPME <step-138>`, we describe the
 stop-on-dielectric version, on the published selectivities set out
-there — "greater than 2" for TiW against PECVD nitride in a CF₄-based
+there and because, if the metal-4
+cap is the same TiW as the plate, a through-etch would have no
+selective stop (inference). The selectivities are "greater than 2" for TiW against PECVD nitride in a CF₄-based
 plasma, a floor rather than a measured maximum,[^liu-2007-tiw] against
 the much higher figures of the Texas Instruments patent for a different
 film, dielectric and chemistry (collapsed note above), which are not
-directly comparable — and because, if the metal-4
-cap is the same TiW as the plate, a through-etch would have no
-selective stop (inference). If the cap is instead the TiN of the stack
+directly comparable.
+
+If the cap is instead the TiN of the stack
 qualified in 2014,[^cyp-qtp-123907] plate and cap are different films
 and a through-etch would have a stop, as in the Philips
-process;[^pat-mim-philips] we record that under *Open questions*.
+process.[^pat-mim-philips] We record that under *Open questions*.
 
 ## Step category
 
 `CAP2ME` is an {ref}`Etch <category-etch>` step of the *refractory
 metal* class — the category page's "Ti:W and TiN" entry — and one of
 the two capacitor-plate etches of the flow, with {ref}`CAPME <step-138>`.
-Tungsten forms volatile WF₆ in fluorine plasmas — the mechanisms that
-Turban, Coulon and Mutsukura and Petri, Henry and Sadeghi studied for
-SF₆[^turban-1989][^petri-1992] — and Liu and Kuo showed that
-titanium–tungsten films etch by reactive-ion etching in CF₄-based
-plasmas, CF₄/Cl₂ among them.[^liu-2007-tiw] Chlorine discharges also etch
-tungsten, as Fischl and Hess showed for tungsten and tungsten silicide
-in chlorine-containing plasmas.[^fischl-1987] A mostly chlorine or
-bromine flow with a small fluorocarbon addition — the scheme of the
-Texas Instruments patent in the collapsed note above — is, on
-our reading, a blend in which the metal etches in chlorine while the
-dielectric, which chlorine alone barely attacks, sees only the small
-fluorine fraction; Flamm and Donnelly and Winters and Coburn set out the
-surface chemistry behind such selectivity.[^flamm-1981][^winters-1992]
+
+**Specific to this step:**
+
+* Tungsten forms volatile WF₆ in fluorine plasmas — the mechanisms that
+  Turban, Coulon and Mutsukura and Petri, Henry and Sadeghi studied for
+  SF₆[^turban-1989][^petri-1992] — and Liu and Kuo showed that
+  titanium–tungsten films etch by reactive-ion etching in CF₄-based
+  plasmas, CF₄/Cl₂ among them.[^liu-2007-tiw]
+* Chlorine discharges also etch
+  tungsten, as Fischl and Hess showed for tungsten and tungsten silicide
+  in chlorine-containing plasmas.[^fischl-1987]
+* A mostly chlorine or
+  bromine flow with a small fluorocarbon addition is, on
+  our reading, a blend in which the metal etches in chlorine while the
+  dielectric, which chlorine alone barely attacks, sees only the small
+  fluorine fraction. Such a flow is the scheme of the
+  Texas Instruments patent in the collapsed note above.
+
+  Flamm and Donnelly and Winters and Coburn set out the
+  surface chemistry behind such selectivity.[^flamm-1981][^winters-1992]
 
 What is specific to this instance is the history of the wafer. Under
 the metal-4 stack lies a finished first capacitor whose plates connect,
-through via 3, to metal-4 shapes that are still one continuous sheet;
-every `capm` top plate that a via 3 lands on is electrically tied to
-the blanket metal 4 during this etch (inference from the PDK's stacked
+through via 3, to metal-4 shapes that are still one continuous sheet.
+Every `capm` top plate that a via 3 lands on is electrically tied to
+the blanket metal 4 during this etch. (Inference from the PDK's stacked
 cross-section,[^pdk-07] in the sequence described in this reference,
-where metal 4 is patterned after this etch).
+where metal 4 is patterned after this etch.)
 
 ## Why this step exists
 
@@ -121,7 +163,9 @@ where metal 4 is patterned after this etch).
 * **It must not open the dielectric.** Outside the plates the
   dielectric is all that separates the plasma from the metal-4 cap,
   which fluorine etches whether it is TiW (as WF₆ and TiF₄) or TiN (as
-  TiF₄). A fluorine-rich punch-through would thin the cap of every
+  TiF₄).
+
+  A fluorine-rich punch-through would thin the cap of every
   metal-4 line —
   the film {ref}`VIM4E <step-160>` later stops on — and expose aluminium
   to fluorine, which forms involatile AlF₃ rather than etching it,[^hess-1982]
@@ -130,11 +174,13 @@ where metal 4 is patterned after this etch).
   collapsed note above) is the scale of the margin.
 * **It must not damage the dielectric under the plates.** A metal plate
   on a thin insulator over a large conductor is the geometry that
-  collects plasma charge. Hwang and Giapis explained the notching that
+  collects plasma charge.
+
+  Hwang and Giapis explained the notching that
   pattern-dependent charging produces in high-density
   plasmas,[^hwang-1997] Fang and McVittie the thin-oxide damage that
   charging causes,[^fang-1992] and Wang, Ackaert et al. the
-  {term}`plasma-charging <plasma charging>` damage of floating MiM capacitors;[^wang-2004-mim]
+  {term}`plasma-charging <plasma charging>` damage of floating MiM capacitors.[^wang-2004-mim]
   Cheung analysed charging during plasma-enhanced dielectric
   deposition, which follows at {ref}`NILD6 <step-156>`.[^cheung-2000]
   The final etch stage is run at low bias for this reason (industry
@@ -150,9 +196,9 @@ lost, with the dielectric, at {ref}`MM4E <step-155>`.
 
 ## How it is typically performed
 
-An industry-generic MiM top-plate etch for a 200 mm aluminium back end
+*An industry-generic MiM top-plate etch for a 200 mm aluminium back end
 (SKY130's recipe is not public); {ref}`CAPME <step-138>` describes the
-same sequence.
+same sequence.*
 
 1. **Chamber.** A single-wafer metal etcher with a high-density source
    and independent bias — Lam's {term}`TCP` family[^pat-tcp-lam][^lam-10k]
@@ -163,36 +209,47 @@ same sequence.
    short O₂/N₂ step.
 3. **Main etch.** A chlorine- or bromine-based chemistry with a small
    fluorocarbon addition in a noble-gas carrier (industry practice;
-   Nojiri sets out the regime[^nojiri-2015]); the Texas Instruments
+   Nojiri sets out the regime[^nojiri-2015]).
+
+   The Texas Instruments
    patent's own scheme and its top-electrode etch rates are in the
    collapsed note above, and at those rates about 0.1 µm of TiW clears
    in well under a minute (our arithmetic; the patent describes TiN, not
    TiW).
-4. **Endpoint and {term}`over-etch`.** Optical emission as the plate film clears; the
+4. **Endpoint and {term}`over-etch`.** Optical emission as the plate film clears. The
    open area is most of the wafer, so the signal is strong — the reverse
    of the low-open-area problem Wodecki describes for via
-   etches.[^wodecki-1999] The over-etch is short and at reduced bias,
+   etches.[^wodecki-1999]
+
+   The over-etch is short and at reduced bias,
    sized to clear stringers while removing at most a few nanometres of
    dielectric (the target in the collapsed note above).
-5. **Strip and clean.** Downstream O₂/N₂ {term}`ash` — SkyWater lists
-   "Gasonic PEP", Iridia and Mattson Aspen II strippers[^skw-01] — then a
-   solvent clean — SkyWater's batch rotational tools are listed with
-   "EKS265, EKC270 solvents, CO2 injected DI"[^skw-01] — which must
+5. **Strip and clean.** Downstream O₂/N₂ {term}`ash`, then a
+   solvent clean. SkyWater lists
+   "Gasonic PEP", Iridia and Mattson Aspen II strippers.[^skw-01]
+   SkyWater's batch rotational tools are listed with
+   "EKS265, EKC270 solvents, CO2 injected DI".[^skw-01]
+
+   The clean must
    remove fluorocarbon and metal-halide residue without attacking TiW
    or the dielectric (requirement, not a property of the named
-   products); hydrogen peroxide etches TiW,
+   products). Hydrogen peroxide etches TiW,
    as Danzl and McLaurin used it to,[^danzl-1997] so on our reading it is
    excluded here.
 6. **Metrology.** Plate {term}`CD` by {term}`CD-SEM`; remaining
    dielectric outside the plates by ellipsometry on monitors; residue
    inspection; capacitance, leakage and breakdown on test structures at
-   {term}`e-test` against `CMIM2A` and `CMIM2P`.[^pdk-07] The published
+   {term}`e-test` against `CMIM2A` and `CMIM2P`.[^pdk-07]
+
+   The published
    SKY130 {term}`test tile` repeats the capacitor set of
    {ref}`CAPME <step-138>` for "CAP2M over M4" — large, periphery- and
    area-intensive capacitors with the same expected values, "CAP2M
    linewidth" and "CAP2M sheet rho" lines, a "Kelvin via-4, M5-CAP2M
    over M4" and "M4-M4" and "CAP2M-CAP2M serp/comb"
-   structures.[^raw-data-testtile-pads] The published C–V
+   structures.[^raw-data-testtile-pads]
+
+   The published C–V
    measurements of the two large, the periphery-intensive and the
    area-intensive capacitors are 35.27–35.29 pF, 9.91 pF and 11.70 pF
    at 0 V, against the expected 35.5, 11.1 and 12.4 pF (our extraction; see
@@ -208,23 +265,29 @@ same sequence.
 
 ## Machines likely used at SkyWater
 
-* **Lam 9600 or Lam 2300 Versys.** SkyWater lists "Lam 9600, Al, TiW,
-  TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]
-  Strength: **strong** for the tools and for TiW as a qualified
-  material; which runs this step is not public.
+* **Lam 9600 or Lam 2300 Versys**
+  - *SkyWater says:* lists "Lam 9600, Al, TiW,
+    TiN, Pt" and "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt".[^skw-01]
+  - *Tool exists:* **strong** for the tools and for TiW as a qualified
+    material.
+
+  Which runs this step is not public.
 * **Strip — "Gasonic PEP", "Iridia RF microwave", "Mattson Aspen2";
   clean — "Batch Rotational", "EKS265, EKC270 solvents, CO2 injected
-  DI".**[^skw-01]
-  Strength: strong for existence; assignment is an inference.
+  DI"**[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* assignment is an inference.
 
 ## Resources required
 
 * **{ref}`Cl₂ <material-etch-gases>`** (or **BCl₃**, **Br₂** or **HBr**) with a small flow of a
   fluorine-bearing gas (**CF₄**, **CHF₃**, **CH₂F₂** or **SF₆**) in
   **{ref}`Ar <material-process-gases>`**, **He** or **N₂** for the etch (industry
-  practice[^nojiri-2015] and the collapsed note above; SkyWater lists no gases for
+  practice[^nojiri-2015] and the collapsed note above); **He** for backside cooling.
+
+  SkyWater lists no gases for
   its metal etchers, but names Cl₂, HBr, CF₄, CHF₃ and SF₆ on its
-  poly/silicon etchers[^skw-01]); **He** for backside cooling. The gas
+  poly/silicon etchers.[^skw-01] The gas
   set is the one given at {ref}`CAPME <step-138>`, since the PDK calls
   the two capacitor constructions identical.[^pdk-07]
 * **O₂/N₂** for the ash;[^skw-01] **amine or semi-aqueous solvent** ({ref}`wet chemicals <material-wet-chemicals>`) and
@@ -234,15 +297,16 @@ same sequence.
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CAP2M <step-152>` (the mask). Next:
+* Previous: {ref}`CAP2M <step-152>` (the mask).
+* Next:
   {ref}`MM4 <step-154>` (the metal-4 mask printed over the plates), then
   {ref}`MM4E <step-155>` (which removes the remaining dielectric and the
   metal outside the wiring).
-* The films it etches and stops on: {ref}`CAPTIW2 <step-151>`,
-  {ref}`CAPILD2 <step-150>`; the metal beneath: {ref}`WTIAL4 <step-149>`.
-* The via etch that later lands on the plate: {ref}`VIM4E <step-160>`.
-* The first capacitor's plate etch: {ref}`CAPME <step-138>`; the other
-  refractory-metal etch: {ref}`LI1ME <step-103>`.
+* Depends on: the films it etches and stops on, {ref}`CAPTIW2 <step-151>`,
+  {ref}`CAPILD2 <step-150>`; the metal beneath, {ref}`WTIAL4 <step-149>`.
+* Feeds: the via etch that later lands on the plate, {ref}`VIM4E <step-160>`.
+* Same category: the first capacitor's plate etch, {ref}`CAPME <step-138>`; the other
+  refractory-metal etch, {ref}`LI1ME <step-103>`.
 * Category page: {ref}`Etch <category-etch>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -335,23 +399,24 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* Whether `CAP2ME` stops on the dielectric or etches through it is not
+* **Stop or through-etch.** Whether `CAP2ME` stops on the dielectric or etches through it is not
   public. The PDK's schematic cross-section draws the dielectric only
-  under the plate,[^pdk-07] which read literally favours a through-etch;
-  we describe a stop on the dielectric on the selectivity argument of
+  under the plate,[^pdk-07] which read literally favours a through-etch.
+
+  We describe a stop on the dielectric on the selectivity argument of
   {ref}`CAPME <step-138>` and because, if the metal-4 cap is TiW, a
   through-etch offers no selective stop (inference). A TiN cap would
   give one ({ref}`overview-metal-cap`).
-* Which refractory film caps metal 4 is not public, and this page's
+* **The metal-4 cap.** Which refractory film caps metal 4 is not public, and this page's
   conclusion depends on it ({ref}`overview-metal-cap`).
-* The chemistry, endpoint, over-etch and dielectric loss are not public;
+* **Etch conditions.** The chemistry, endpoint, over-etch and dielectric loss are not public;
   the Texas Instruments patent describes a TiN, not a TiW, electrode
   (collapsed note above).
-* Whether a sidewall spacer or other edge treatment follows is not
+* **Plate-edge treatment.** Whether a sidewall spacer or other edge treatment follows is not
   public.
-* Which of the two listed Lam metal etchers runs the step is not
+* **Which Lam etcher.** Which of the two listed Lam metal etchers runs the step is not
   public.[^skw-01]
-* The step list used in this reference has no separate strip step after
+* **Resist strip and clean.** The step list used in this reference has no separate strip step after
   `CAP2ME`; this page treats the resist strip and clean as part of the
   etch.
 
