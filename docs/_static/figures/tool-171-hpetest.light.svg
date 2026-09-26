@@ -70,7 +70,7 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <text x="310.8" y="374.9" class="t-label-note muted">per parameter</text>
 <path class="carrow" d="M301.8 354.5H294.8"/>
 <path class="cahead" d="M289.8 354.5l6 -3.4v6.8z"/>
-<text x="12.0" y="414.0" class="t-label-note muted">Only the blocks this page names, in the order of</text>
-<text x="12.0" y="430.0" class="t-label-note muted">its opening paragraph. SkyWater&#x27;s test plan is</text>
-<text x="12.0" y="446.0" class="t-label-note muted">not public beyond the PDK&#x27;s parameter tables.</text>
+<text x="12.0" y="414.0" class="t-label-note muted">The main blocks follow the page&#x27;s opening paragraph; the</text>
+<text x="12.0" y="430.0" class="t-label-note muted">side boxes come from its later sections. SkyWater&#x27;s test</text>
+<text x="12.0" y="446.0" class="t-label-note muted">plan is not public beyond the PDK&#x27;s parameter tables.</text>
 </svg>
