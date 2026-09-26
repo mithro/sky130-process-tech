@@ -497,3 +497,52 @@ per page.
 * **Coverage flags read:** the list items under "is that:", the colon and semicolon splits (markers
   with their clauses), glance lines. None lost a marker or hedge.
 * **Left over the caps:** none.
+
+### 129 VIM2 — done
+
+* **Lead:** base 148 words → two paragraphs at "The PDK's mask table lists" (73 and 75 words); the
+  mask-table sentence split at its semicolon ("… as used in SKY130.[^pdk-05] The minimum-CD table
+  gives …"; the "respectively" pairing 0.28/0.8/0.2 µm kept in one sentence).
+* **R-H3 + R-TABLE:** `### What the public record shows` over the post-figure passage (rules, the
+  rule table's purpose statement, extraction values, hole geometry, floor stack), as 118. The via2.1a–
+  via2.5 and m3.4 enumeration → `Rule | Constrains | Value`, unit in each cell (via2.3 `0.2\*L`);
+  `[^pdk-periph]` on the lead-in; the via2.1b dash material becomes "`areaid.mt` is the layer the PDK
+  defines as the "Location of e-test modules within the frame".[^pdk-06]" after the table (subject and
+  verb added, marker with it). number_order LOST hand-checked: via2.1a 0.200; via2.1b 0.280, 1.2,
+  1.5; via2.2 0.200; via2.3 0.2\*L; via2.4 0.040; via2.5 0.085; m3.4 0.065 µm — same digits, same
+  pairing ("enclosures by", "must enclose" → "enclosure by/of" in the cells). Floor sentence: the
+  stack dash material becomes "The cap is 300 Å of TiW on the 2013 stack, 500 Å of TiN on the 2014
+  one[^cyp-qtp-113005][^cyp-qtp-123907] (…)." after "… — as at via 1." (the second number_order
+  LOST, ('0.5','300','2013','500','2014','1'): the same numbers, "via 1" now before the stack figures;
+  hand-checked).
+* **R-CATEGORY:** classification (25 words) keeps its Mack marker; **Specific to this step:** two
+  bullets — the 248 nm k₁ (split from the i-line clause at the semicolon) and the i-line comparison;
+  "We therefore infer …" as prose after the list (its "therefore" draws on both bullets; R-LIST step
+  4). The mask-type passage in three paragraphs (record and codes | the 4× reading and the fit with DUV
+  | the substrate), the codes sentence split at its colon ("we read" stays with the reading, the
+  Photronics marker with the abbreviation).
+* **R-PARA/R-SENTENCE (Why):** Hole size: lead ends at "top opening;"; ", and the 3 410 mΩ" → ".
+  The 3 410 mΩ"; ": on a length-over-area comparison" → ". On a …" ("our arithmetic" stays with the
+  comparison). Placement (47 words): "though looser than the contact's 0.030 µm (m1.4)" is an aside;
+  it moves, as "It is looser than the contact's 0.030 µm (m1.4).[^pdk-periph]", to after "even though
+  the hole is larger", which stays with "tighter than via 1's" that it qualifies ("though" lost, "It
+  is" added); the slip-off clause is the continuation. Coupling: split at its colon.
+* **How:** italic scope lead-in. Resist coat: lead ends at "(inference);". Exposure: lead ends at
+  "size;", the PSM and the steps-sheet record are the continuation.
+* **R-TOOLS:** ASML item in three lines; "SkyWater also lists "ASML I-line stepper" …, and which layers
+  use which is not public" stays after the grades as the continuation (it follows the grade at its
+  semicolon in the base and qualifies the assignment). Tracks and CD items as 118.
+* **R-OPENQ:** four labels. The mask-type bullet (70 words) split after its first sentence; the TNV/
+  S8TM/PLM bullet after its second (R-OPENQ step 2; every word kept, inside the bullet).
+* **R-RELATED, R-HEDGE, R-GLANCE:** Previous / Next split; Depends on; Feeds (WTIAL3, MM3, CAPILD);
+  Same category (the hole masks); Mask (with previous and next mask); glance in the 118 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box (markers
+  `pdk-04`, `pdk-periph`, `skw-01`; numbers 0.040, 0.200, 0.42, `1`, `2`×3, `3`, `4`; ref
+  `step-130`; hedges; `metal-2`, `via2`×4) or an Open-questions label (`S8TM`, `SKY130DI`). LOST
+  words "enclose", "enclosures", "must" (table cells), "though" (above), "page" ("Mask page:" →
+  "Mask:"), "strength"×3 (R-TOOLS).
+* **Coverage flags read:** table rows (marker on the lead-in), the mask-type splits, the Why splits
+  ("our arithmetic" and "about" stay with the comparison), the Placement aside (its marker moved with
+  it), glance lines. None lost a marker or hedge.
+* **Left over the caps:** lead 148 words in two paragraphs of 73 and 75 (base 148). Item leads over
+  30 words: Placement (38), Mask type (45; one sentence).
