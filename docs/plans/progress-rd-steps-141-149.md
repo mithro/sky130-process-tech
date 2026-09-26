@@ -309,6 +309,29 @@ word added, so the lead stays at 114).
   hole paragraph and the studies list (same digits). WORDS LOST: `it`, `strength`. No DUPLICATED line.
 * `cov`: 5 flags, pairing noise (Open-question and glance sentences paired with body sentences).
 
+### 148 WCMP5 — done
+
+Base `566f2dd8`. Caps before: 2 paragraphs, 2 items, 2 sentences over; after 0/0/0. Lead 134 words
+(base 134, one paragraph) in two paragraphs (60, 74), split at "What is left is …" (133 form); first
+sentence 15 words.
+
+* Post-figure paragraph (105 words): the SkyWater sentence a paragraph; the 57-word dielectric
+  sentence split at its semicolon (its "(our estimate at CMPM3)" stays with the plate clause).
+* Step category (152 words): classification split at its colon ("…type. It removes two metals …", 133
+  form); the WCMP2/WCMP3 sentence split at the semicolon before "Kaufman et al.'s …" (two facts, one
+  cited); "What is specific to this instance is what lies above and below." with its Below/Above
+  sentences left as one paragraph (R-CATEGORY step 3; 90 words), each keeping its "(inference)".
+* Why: flat-base item's study sentence a continuation (71-word item).
+* How: italic scope sentence; step 2's "high selectivity tungsten" reading a continuation (61-word
+  item), its "(inference)" unchanged; step 6 (46-word sentence) as four sub-bullets at its semicolons
+  (127 form), words unchanged.
+* R-TOOLS: Mirra three-line item, "Which of the two tungsten processes …" a continuation (133 form);
+  KLA "*Tool exists:* medium."; the post-CMP-clean bullet has no grade and is unchanged.
+* R-RELATED: Previous · Next · Depends on · Same category (the tungsten polishes and the oxide
+  polishes either side, as on 133) · Category page. R-OPENQ: four labels.
+* `check_preserved --allow-regrouped`: ADDED = glance only; REGROUPED: the dielectric sentence split.
+  WORDS LOST: `strength`×2. No DUPLICATED line. `cov`: 1 flag, pairing noise.
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
