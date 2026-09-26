@@ -222,3 +222,54 @@ per page.
 * **Left over the caps:** item lead block "Contact resistance" (35 words, one sentence with the
   Vlassak parenthetical). Nothing over the §1 caps. (From this page on `rdtools.py` counts a
   quotation as one word, as §1 says; 107–110 have no quotation-heavy sentence near a cap.)
+
+### 112 TIAL6 — done
+
+* **Kept verbatim** (the S8 figure agent's note): every sentence that describes the stack as
+  Ti/Al–Cu/TiW or weighs it against the 2014 Ti/TiN/AlCu/Ti/TiN stack keeps its wording; only
+  paragraph breaks, list structure and splits at existing seams were made. See Content problems.
+* **R-H3:** `### What the public record shows` over the Cypress-report passage (quotations and PDK
+  numbers); `### Competing readings` over "Which of the two stacks …", which weighs the two stacks
+  (and, in its bold-labelled last paragraph, the readings of the bottom titanium). **On the bottom
+  titanium.** stays a bold run-in: its passage is 113 words, under the 120 an H3 needs.
+* **Lead:** base 128 words → two paragraphs at "This reference describes the stack".
+* **R-PARA/R-SENTENCE:** the 174-word Cypress paragraph in three (sources | 2013 report and PDK
+  match | 2014 report and older reports); the 15-word S8P parenthetical moved, unchanged, to directly
+  after its sentence as "(The S8P entry reads … "500A TiW/21,250A Al 0.5% Cu/300A
+  TiW".[^cyp-qtp-123907])" — marker repeated (it is that report's content), declared; this is the
+  one `number_order` LOST, ('2014','4','3','0.5','1','0.5'): the same numbers, the parenthetical's
+  metal-3 figures now after the metal-1 quotation. "Which of the two stacks …" (52 words) split at its
+  colon; `[^cyp-pin145273]` repeated on the first half, whose claim (metal 1 is among the levels the
+  2014 change reaches) rests on that notification (declared). "Against that, …" split at ", and
+  SkyWater's" — "(our arithmetic)" belongs to the first clause. Sheet-resistance sentence split at its
+  colon and at ", and since" ("Since the Ti and TiW films conduct in parallel, the alloy …" — the
+  "Because X, Y" form; comma added). "This page describes …" and "The PDK's metal-1 …" are their own
+  paragraphs. Bottom-titanium paragraph split before "A cobalt–titanium bilayer".
+* **R-CATEGORY:** classification cut at its semicolon (12 words) with the category-page sentence;
+  "What is specific to this instance is that it is … and that the three films …" → "… is that:" and
+  two plain bullets (R-LIST on "that X and that Y"; "and that" dropped).
+* **R-LIST (Why):** Ti underlayer "does three things:" → three sub-bullets; the 16-word "(industry
+  practice; Domenicucci …)" parenthetical closed as its own sentence (R-SENTENCE step 7). TiW cap: the
+  three studies as plain sub-bullets under "… long before TiN:"; "serves as X, as Y, as Z, and as W"
+  → "On top of the alloy the TiW serves:" and four sub-bullets ("it" → "the TiW": the paragraph now
+  follows the Olowolafe bullet). Al–Cu: lead + two continuation paragraphs, split at "since;".
+* **How:** italic scope lead-in (it carries `[^cyp-qtp-113005]`; the marker stays inside). Al–Cu item
+  lead + continuation, split at "relations;". Cap item: the first sentence stays whole as the lead
+  ("On the Ti/Al–Cu/TiW reading" scopes all of it, including "thickness per the 2013 Cypress
+  report"); the 2014 alternative is the continuation.
+* **R-TOOLS:** AMAT item in three lines. Metal-etcher item: the head sentence (SkyWater's words plus
+  this reference's gloss, no seam) stays whole; "(strength: strong for the material set, used at
+  MM1E)" → *Tool exists:* strong for the material set, used at MM1E.
+* **R-OPENQ, R-RELATED, R-GLANCE:** three labels; the stack question split into its question and an
+  indented continuation (R-OPENQ step 2). Previous / Next split, Depends on, Feeds, Same category.
+  The glance does not choose a stack: "the three films this page describes", "which of the two public
+  stacks SKY130 carries".
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED markers `cyp-pin145273`,
+  `cyp-qtp-123907` (the two repeats above), `pdk-04`, `pdk-08`, `skw-01`, quote "Collimated Ti",
+  numbers 0.36, 125, hedges "likely", "not public", identifiers — glance. LOST words "strength"×2
+  (R-TOOLS), "and"×2 (the "and that" and ", and since" splits), "it" (→ "the TiW").
+* **Coverage flags read:** list items whose marker is on a sibling; the sheet-resistance and
+  "Against that" splits (each hedge stays with its clause); the Rocke roles (the marker stays with the
+  anti-reflective role it supports). None lost a marker or hedge.
+* **Left over the caps:** item lead blocks over 30 words — TiW cap (26 + the dash parenthetical, fine),
+  Cap (40; one sentence under one hedge). Nothing over the §1 caps.
