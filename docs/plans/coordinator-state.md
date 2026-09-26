@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-steps-098-106` | W2 batch 7b (silicide, plug, local interconnect) — Opus writer | Opus | writing |
+| `topic/rd-steps-107-117` | W2 batch 8 (contact and metal 1) — Opus writer | Opus | writing |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
