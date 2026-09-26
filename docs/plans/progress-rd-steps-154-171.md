@@ -749,3 +749,130 @@ In-force note (US 7,679,384) and its pointer: untouched; nothing from it in the 
   the declared markers and hedges, "The", "give", the H3s, table headers and labels; everything else
   REGROUPED, read. `--strict-words` LOST: `strength`×2, `they` (and `and`×8). cov: flags are pairing
   noise (list items against their base sentence; the moved hedge under the list). inv: OK.
+
+## Batch summary (all eighteen pages done)
+
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps` over the eighteen pages: `{figure}` blocks (the captions), `{dropdown}`
+bodies, the generated index-links block, `## References` and footnote definitions are **excluded**; a
+leading bold run-in or italic R-TOOLS label is not counted into its sentence; a quotation and a code
+span count as one word; an em dash is not a word. Before = `main` at `773b9dbe`, counted with the same
+script. A list item is its first block; an indented continuation paragraph counts as a paragraph.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 56 | 0 |
+| list items > 60 words | 73 | 0 |
+| sentences > 45 words | 160 | 0 |
+| table cells > 25 words | 0 | 0 |
+| sentences with two or more em-dash pairs | 8 | 0 |
+| parentheticals of 12+ words inside a sentence | 42 | 2 |
+
+The two inline parentheticals left are glosses listed in their page entries (168 "(2.7 µm per side in
+the GPIO cell, the pad.4/4a check …)"; 171 "(the largest at 0.42/8 µm, …)"); every other 12+-word
+parenthetical now stands as its own parenthetical sentence (R-SENTENCE step 7). Leads (≤ 120 words,
+first sentence ≤ 25): 159 (109), 161 (102), 162 (80), 164 (115), 165 (117), 166 (95), 167 (89), 169
+(78), 171 (98) within 120; 154 (127), 155 (154), 156 (188), 157 (144), 158 (135), 160 (120, base 121),
+163 (141), 168 (130), 170 (172) over 120 as in the base, each in blocks of at most 100 words. First
+sentences all ≤ 25 words (in the base 159 was 32, 165 41, 166 55, 167 59, 170 38 and 171 50). Leads
+that gained words, each listed under note ¹ of §4.1 in its entry: 159 (+2), 161 (+1), 164 (+2), 166
+(+6), 167 (+4).
+
+### Declared additions (the only non-glance ADDED lines)
+
+* Repeated markers, each where the base's single marker covered both halves of a split or a
+  lead-in now carries it (R-LIST step 1): 154 `pdk-periph`; 156 `pdk-04`; 159 `pdk-periph`×2; 160
+  `pat-etchstop-ti`; 161 `pdk-periph`; 164 `pdk-04`; 165 `pdk-04`, `pdk-06`; 166 `pdk-04`; 167
+  `pdk-04`; 168 `pdk-io-gpiov2`×2; 169 `kastenmeier-1996`; 171 `pdk-07`×4, `pdk-periph`,
+  `raw-data-hv-mosfets`×3, `raw-data-testtile-pads`×2.
+* Repeated hedges (R-SENTENCE step 5): 154 "(our arithmetic)"; 157 "(inference)"; 161 "(our
+  arithmetic)"×2, "(inference from the reading above and the via-4 rules)"; 165 "(inference from the
+  rules and the layout)"; 168 "(our reading of the published GDS and LEF)"×2; 171 "(our extraction
+  from the published measurements)"×2.
+* Restored subjects and nouns: 154 "These are"; 155 "It removes", "The stack is"; 156 "The lines
+  are", "It"; 157 "There is"; 158 "It is"; 159 "It is"; 160 "This is"; 161 "the stack" (for "it"),
+  "Hariu et al. measured" (for "measuring"); 162 "This is"; 163 "The stack is"; 164 "This is",
+  "`NFUSOX`" (for "It"); 165 "It lies", "that level" (for "it"); 166 "The opening is", "The ring lies";
+  167 "It is", "it is", "The nitride's" (for "its"); 168 "The opening is", "The thickness is"; 170
+  "Its" (for "whose"), "This is", "That" (for "which"); 171 "The", "give", "the files" (for "they").
+  Also "That is why" / "That argues" for "which is why" / "which argues" (155, 161, 170).
+* H3s: 154, 159, 161, 162, 164, 167, 168, 169 `### What the public record shows`; 155 and 163 `### How
+  thick is the metal?` and 161 `### How is via 4 filled?` (from bold run-ins); 165 `### Where `nsm` is
+  drawn` (bold run-in); 166 `### Competing readings`; 171 three H3s from bold run-ins.
+* `number_order` LOST lines, each re-paired by hand in its entry: 154, 159, 162, 165 (rule tables),
+  163 (dash aside moved), 167 (Cypress table), 168 (two), 171 (three).
+* `DUPLICATED sentence` false positives: 160 (one), 167 (two) — the sentences stood twice in the base.
+
+### R-REPEAT (none applied)
+
+Considered on 155 and 163 (the strip sentence in lead and Open questions, the lead copy adding
+"passivation" and a pointer), 160 (the same, identical — both kept as the base has them) and 167 (the
+polyimide passage; the category copy names the flagged masks in full). No copy adds nothing, so
+nothing was deleted.
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables` `--check` — 0 differences; `gen_figures --check` — 700 generated
+files, 0 problems; `sphinx-build -E -W` into a fresh directory — no warning, exit 0. `rdtools.py inv` per page
+against `773b9dbe`: References, footnote definitions, generated blocks, `{figure}` blocks, `{dropdown}`
+blocks (the six in-force notes on 165–168 and 171 byte for byte), quick facts, H2 lists and Deep-dive
+counts identical; one admonition per page (the glance box, `:class: at-a-glance`, a blank line after
+its `:::`); every glance marker recurs below; no duplicate H3; every scope sentence is the italic
+lead-in; no consecutive duplicate line, no prose line ending in a hyphen or slash, no bare `>`, no NBSP.
+`check_preserved.py --base 773b9dbe --allow-regrouped` over the batch: no dropdown change, no WARN line;
+the only LOST lines are the `number_order` lines above; the only DUPLICATED lines are the false
+positives above; every WORDS LOST word is named in its page entry.
+
+### Guide problems
+
+1. **Glosses of 12+ words that sit on one word.** R-SENTENCE step 7 moves a 12+-word gloss to a
+   parenthetical sentence after its sentence; on 168 (the pad-enclosure gloss inside a list lead-in)
+   and 171 (a gloss on one figure inside a sub-bullet) that would part it from the word it explains,
+   and I left both inline. A ruling on glosses inside list lead-ins and items would help.
+2. **A table's conclusion that opens with the base's "so".** On 167 the Cypress list became a table
+   (R-TABLE's film-stack template) and its conclusion "so the public record puts …" became "So the
+   public record puts …" after the table (R-TABLE step 8), so a paragraph opens on a connective
+   (R-PARA step 2). Keeping the base word seemed the lesser change; a ruling would help.
+3. **Whole-sentence hedges over three halves.** R-SENTENCE step 5 makes me repeat "(our extraction
+   from the published measurements)" on each of three sentences on 171 (VTXPN42H) and "(our reading
+   of the published GDS and LEF)" on three on 168, once beside another parenthetical. Under a list or
+   table, R-TABLE step 5's single hedge sentence reads better (used on 168 Why, 171 How and Open
+   questions); the guide could allow the same under a short run of sentences.
+4. **`check_preserved` DUPLICATED false positives.** On 160 and 167 a sentence already present twice in
+   the base is reported "(2x, was 1x)" or "(was 0x)" once one copy becomes a standalone sentence; the
+   splitter did not see the base copy inside a longer run.
+5. **R-RELATED labels.** No label fits a step this one affects but does not feed (170: the ONO cells)
+   or a pointer to the first step (171: SMAT); both left unlabelled rather than mislabelled.
+6. **Item lead sentences.** R-PARA step 4's 30-word lead is met everywhere except 164 (32 words, the
+   buffer item, continuation paragraphs only) and 166 (42 words, the deep-seal item, whose only seam
+   is a purpose clause "so that").
+
+## Content problems for the owner (not fixed; text kept verbatim)
+
+1. **155 lead vs body** (figure notes, s9b): the lead says a chlorine plasma removes "first whatever
+   remains of the CAPILD2 dielectric outside the capacitor plates"; the Why and How sections say
+   chlorine makes little progress on it and a fluorine-containing breakthrough removes it. Kept
+   verbatim in both places.
+2. **Dielectric left on the metal-4 landings** (s9b): on the stop-on-dielectric reading of
+   CAPME/CAP2ME the dielectric stays on every metal-4 shape under the MM4 resist; 155 says the etch
+   removes it "outside the capacitor plates" without saying it stays on the lines, and 160 gives the
+   via-4 floor as the metal-4 cap (and the plate) without saying so. Same gap as batch 10 content
+   problem 2 and batch 11 content problem 1.
+3. **155 arithmetic** (s9b): "consistent with 0.72–0.80 µm of Al–Cu at 3.4–3.8 µΩ·cm" — 3.8 µΩ·cm at
+   47 mΩ/sq gives 0.81 µm (3.8e-6 Ω·cm ÷ 0.047 Ω = 8.09e-5 cm); 3.4 gives 0.72. Should read
+   0.72–0.81 µm. Unchanged.
+4. **Cypress nitride range** (s11): 167 (How step 4 "0.7–0.9 µm" and Open questions "0.7–0.9 µm"),
+   168 (Step category "the 7000–9000 Å nitride"), 169 (public-record paragraph "7000–9000 Å of
+   nitride") and 170 (post-figure passage "7000–9000 Å of nitride") quote the Cypress reports as
+   7000–9000 Å, but the S8TNV-5R report gives "7000 +/- 2000A", i.e. 0.5–0.9 µm; 169's Open questions
+   ("0.7 ± 0.2 µm") and 167's own table quote it correctly. Unchanged.
+5. **Arithmetic re-checked, all correct otherwise:** 154 k₁ 0.85 and 0.49, via-4 pad 0.8 + 2 × 0.19 =
+   1.18 µm; 156 d = ε₀·4.0/68.33 aF/µm² = 0.518 µm, 5.3711 − 4.0211 = 1.35 = 0.845 + 0.505, 0.505/0.8 =
+   0.63; 157 0.505 − (0.10–0.15) = 0.355–0.405 µm; 159 k₁ 1.3 and 2.3, 16 × area, 3 410/16 = 213 mΩ,
+   380/213 = 1.8, 3 410/380 ≈ 9; 161 28.5 mΩ/sq × 1.2 µm = 3.4 µΩ·cm, × 2 µm = 5.7, 28.5/47 = 61 %,
+   1.26/0.845 = 1.49; 162 k₁ 2.6 and 1.3; 163 1.26/1.6 = 0.79; 164 5.3711 + 0.3777 = 11.8834 − 6.1346 =
+   5.7488; 165 k₁ 4.9; 166 2 × (3.6 + 5.2) mm × 5 µm = 0.088 mm² of 18.72 mm² = 0.47 %; 167 0.4223/0.54
+   = 78 %; 168 k₁ 2.1, (65.4 − 60)/2 = 2.7 µm; 169 0.54 + 0.09 = 0.63 µm.
