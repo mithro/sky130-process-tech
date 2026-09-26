@@ -425,3 +425,58 @@ page.
   of its own), the "So a plasma deposition" sentence (keeps `[^wiki-pecvd]` and "we infer"), the
   study sub-bullets. None lost.
 * **Caps after:** 0 / 0 / 0 / 0.
+
+### 105 NILD2 — done
+
+* **Lead.** Base 180 words, one paragraph → three (61 + 86 + 40; §4.1 ¹, base over 120): the step; the
+  PDK's name and dimension; the numbering up the stack. First sentence 59 → 12 words: split at its
+  colon ("It is a blanket silicon dioxide …", "It" = the dielectric) and before "and burying them"
+  ("It buries them …"; `[^pdk-periph]` stays on li.3). The 81-word stack-diagram sentence split at its
+  colon and at its semicolon. Its trailing "(our reading of the drawing and our arithmetic).[^pdk-04]"
+  covered the whole base sentence, including the reading of where the 0.265 µm runs from and to, so
+  the first half carries the applicable part, "(our reading of the drawing).[^pdk-04]" (R-SENTENCE
+  step 5; declared ADDED hedge and marker), and the sum keeps the full hedge. Arithmetic checked:
+  0.9361 + 0.1 + 0.075 + 0.265 = 1.3761. A single sum over four inputs, written as one expression
+  with no intermediate results on the page, so it stays inline (R-DERIVATION step 6) rather than a
+  numbered list that would add new numbers.
+* **R-LIST.** "Two things follow from the numbers" → colon and two plain bullets. Bullet 1: the
+  14-word parenthetical becomes its own bracketed sentence after the claim, "(Thermal oxide is 3.9; …
+  "NILD3" 4.5.[^pdk-04])" (number order unchanged). Bullet 2 ("And 0.265 µm" → "0.265 µm"): lead =
+  the post-polish sentence; continuation = "The as-deposited film must be thicker …[^pdk-04]" and "It
+  is of the order of 0.5–0.7 µm as deposited — a typical figure …[^txt-05] — which is what the
+  geometry and the polish imply (inferred; not public)." ("It is" added; "It" = the as-deposited
+  film; the hedge stays on the estimate it covered). "The gap it fills …" stays as prose after the
+  list. No H3.
+* **R-CATEGORY.** Classification sentence alone (33 words). "What distinguishes it from the PSG is
+  that …; from the cap oxide, that …; and from the later NILDs, that …" → lead-in "What distinguishes
+  it:" and three plain bullets (the gapped "is" and the "and" dropped, WORDS LOST). `[^pdk-04]` stays
+  on the third bullet, whose 0.1 µm / 0.36 µm figures it supports — not on the lead-in, which would
+  put a PDK citation over the page's "undoped" inference. The thermal-ceiling sentence as a
+  paragraph.
+* **Why.** Gap fill (135 words, one 105-word sentence): lead = the void sentence; continuation "At an
+  aspect ratio near 1:1 the fill is not demanding. But the choice between HDP-CVD and a PECVD TEOS
+  oxide still matters, because …:" (split at ", but"; the two option parentheticals lifted out) and two
+  plain sub-bullets holding the parentheticals verbatim as noun phrases with their markers
+  ("HDP-CVD, which fills …;[^nguyen-1999] … patents;[^pat-hdp-novellus][^pat-hdp-amat]" and "PECVD TEOS
+  oxide, whose conformality … characterised.[^nguyen-1990][^raupp-1992]"; the two option names repeated
+  as the bullet heads — WORDS ADDED); then Kwok and Nishimura as a continuation (split at the
+  semicolon). Polishable split at its semicolon.
+* **How.** Scope sentence italic. HDP-CVD: split at its semicolon ("It is the standard inter-metal
+  dielectric route …", "It is" added); the SkyWater sentence's dash material becomes "The "doped"
+  reading of that entry is an open question here." ("of which" → "of that entry"), then "A SkyWater
+  technician profile names …[^skw-07]".
+* **R-TOOLS.** HDP-CVD: *SkyWater says:* holds the list entry and the technician profile (both
+  SkyWater's own pages, `[^skw-01]`, `[^skw-07]`), *Tool exists:*, *Runs this step:* (with "the public
+  entry mentions only doped films", part of the grade's reason). PECVD TEOS: *Tool exists:* strong;
+  *Runs this step:* medium … (inference). The "C1" liner candidate has no "Strength:": unchanged.
+* **R-RELATED.** Previous / Next split; conductors buried → `Depends on:`; earlier CVD oxides and later
+  ILDs → `Same category:` (all deposition; the second sentence "Later ILDs: …" kept).
+* **R-OPENQ.** "Route, thickness and doping", "PECVD liner".
+* **R-GLANCE.** Public numbers: the label "NILD2 K=4.05" and 0.265 µm with "(our reading of the
+  drawing)" `[^pdk-04]`; tool line with both grades named; Not public from Open questions 1.
+* **Preservation.** ADDED: glance, the repeated `[^pdk-04]` and "our reading" in the lead. WORDS LOST:
+  "strength"×2 (R-TOOLS labels), "which" (the "of which" clause), plus "is"/"and" joins.
+* **Marker coverage.** 13 flags read: halves of split sentences each keeping their own markers
+  (lead, bullet 2, gap fill, HDP entry), the option sub-bullets, the "doped" sentence (no marker in the
+  base), glance and tool head. None lost.
+* **Caps after:** 0 / 0 / 0 / 0. Lead 187 words in three paragraphs (base 180).
