@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 594" width="480" height="594" role="img" data-kind="xsection" data-theme="dark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" width="480" height="512" role="img" data-kind="xsection" data-theme="dark">
 <title>Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a blanket of three metal films, a thick silver one between two thin purple ones, lies on a flat pale oxide over buried metal, and carries a raised thin purple plate at the right. After it two violet resist blocks stand on the blanket: a narrow one at the left and a wide one covering the plate and reaching past its edge.</title>
 <desc>Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a blanket of three metal films, a thick silver one between two thin purple ones, lies on a flat pale oxide over buried metal, and carries a raised thin purple plate at the right. After it two violet resist blocks stand on the blanket: a narrow one at the left and a wide one covering the plate and reaching past its edge.</desc>
 <style>
@@ -22,13 +22,11 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 .m-si-sub{fill:var(--m-si-sub)}.m-well-n{fill:var(--m-well-n)}.m-well-p{fill:var(--m-well-p)}.m-well-dn{fill:var(--m-well-dn)}.m-sd-n{fill:var(--m-sd-n)}.m-tip-n{fill:var(--m-tip-n)}.m-sd-p{fill:var(--m-sd-p)}.m-implant{fill:none}.m-oxide-thermal{fill:var(--m-oxide-thermal)}.m-oxide-dep{fill:var(--m-oxide-dep)}.m-psg{fill:var(--m-psg)}.m-nitride{fill:var(--m-nitride)}.m-ono{fill:var(--m-ono)}.m-poly{fill:var(--m-poly)}.m-resist{fill:var(--m-resist)}.m-arc{fill:var(--m-arc)}.m-silicide{fill:var(--m-silicide)}.m-barrier{fill:var(--m-barrier)}.m-tungsten{fill:var(--m-tungsten)}.m-aluminium{fill:var(--m-aluminium)}.m-mim-diel{fill:var(--m-mim-diel)}.m-polyimide{fill:var(--m-polyimide)}.ph-feol{fill:var(--ph-feol)}.pht-feol{fill:var(--pht-feol)}.ph-mol{fill:var(--ph-mol)}.pht-mol{fill:var(--pht-mol)}.ph-beol{fill:var(--ph-beol)}.pht-beol{fill:var(--pht-beol)}
 </style>
 <defs><pattern id="p-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle class="patdot" cx="1.75" cy="1.75" r="0.9"/><circle class="patdot" cx="5.25" cy="5.25" r="0.9"/></pattern><pattern id="p-hatch-back" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line class="pat" x1="0" y1="0" x2="0" y2="7"/></pattern><pattern id="p-vlines" width="4" height="6" patternUnits="userSpaceOnUse"><line class="pat" x1="2" y1="0" x2="2" y2="6"/></pattern><pattern id="p-xhatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="pat" d="M0 0V6M0 0H6"/></pattern></defs>
-<rect class="ground" x="0" y="0" width="480" height="594"/>
+<rect class="ground" x="0" y="0" width="480" height="512"/>
 <text x="12.0" y="26.0" class="t-panel-title">Before: the second capacitor</text>
 <text x="12.0" y="44.0" class="t-panel-title">on the blanket stack (step 153)</text>
-<clipPath id="clip1"><rect x="12" y="56.0" width="268" height="141.0"/></clipPath>
-<g class="drawing" data-rect="12,56.0,268,141.0" clip-path="url(#clip1)">
-<polygon class="mat m-oxide-dep" data-layer="nild4" points="9.00,189.00 41.25,189.00 41.25,209.00 26.00,209.00 25.50,237.00 9.00,237.00"/>
-<polygon class="mat m-oxide-dep" data-layer="nild4" points="60.75,189.00 283.00,189.00 283.00,209.00 238.00,209.00 237.50,237.00 156.50,237.00 156.00,209.00 118.00,209.00 117.50,237.00 76.50,237.00 76.00,209.00 60.75,209.00"/>
+<clipPath id="clip1"><rect x="12" y="56.0" width="268" height="131.0"/></clipPath>
+<g class="drawing" data-rect="12,56.0,268,131.0" clip-path="url(#clip1)">
 <polygon class="mat m-oxide-dep" data-layer="ncap4" points="9.00,181.00 41.25,181.00 41.25,189.00 9.00,189.00"/>
 <polygon class="mat m-oxide-dep" data-layer="ncap4" points="60.75,181.00 283.00,181.00 283.00,189.00 60.75,189.00"/>
 <polygon class="mat m-barrier" data-layer="v2liner" points="41.25,181.00 44.00,181.00 44.50,206.00 57.50,206.00 58.00,181.00 60.75,181.00 60.75,209.00 41.25,209.00"/>
@@ -68,98 +66,93 @@ text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial
 <polygon class="mat m-mim-diel" data-layer="capild2" points="9.00,68.00 283.00,68.00 283.00,71.00 9.00,71.00"/>
 <polygon fill="url(#p-vlines)" points="9.00,68.00 283.00,68.00 283.00,71.00 9.00,71.00"/>
 <polygon class="mat m-barrier" data-layer="cap2m" points="141.75,60.00 283.00,60.00 283.00,68.00 141.75,68.00"/>
-<polygon class="cutfill" points="12.00,196.00 16.00,193.50 20.00,196.00 24.00,193.50 28.00,196.00 32.00,193.50 36.00,196.00 40.00,193.50 44.00,196.00 48.00,193.50 52.00,196.00 56.00,193.50 60.00,196.00 64.00,193.50 68.00,196.00 72.00,193.50 76.00,196.00 80.00,193.50 84.00,196.00 88.00,193.50 92.00,196.00 96.00,193.50 100.00,196.00 104.00,193.50 108.00,196.00 112.00,193.50 116.00,196.00 120.00,193.50 124.00,196.00 128.00,193.50 132.00,196.00 136.00,193.50 140.00,196.00 144.00,193.50 148.00,196.00 152.00,193.50 156.00,196.00 160.00,193.50 164.00,196.00 168.00,193.50 172.00,196.00 176.00,193.50 180.00,196.00 184.00,193.50 188.00,196.00 192.00,193.50 196.00,196.00 200.00,193.50 204.00,196.00 208.00,193.50 212.00,196.00 216.00,193.50 220.00,196.00 224.00,193.50 228.00,196.00 232.00,193.50 236.00,196.00 240.00,193.50 244.00,196.00 248.00,193.50 252.00,196.00 256.00,193.50 260.00,196.00 264.00,193.50 268.00,196.00 272.00,193.50 276.00,196.00 280.00,193.50 280.00,201.00 12.00,201.00"/>
-<polyline class="cutline" points="12.00,196.00 16.00,193.50 20.00,196.00 24.00,193.50 28.00,196.00 32.00,193.50 36.00,196.00 40.00,193.50 44.00,196.00 48.00,193.50 52.00,196.00 56.00,193.50 60.00,196.00 64.00,193.50 68.00,196.00 72.00,193.50 76.00,196.00 80.00,193.50 84.00,196.00 88.00,193.50 92.00,196.00 96.00,193.50 100.00,196.00 104.00,193.50 108.00,196.00 112.00,193.50 116.00,196.00 120.00,193.50 124.00,196.00 128.00,193.50 132.00,196.00 136.00,193.50 140.00,196.00 144.00,193.50 148.00,196.00 152.00,193.50 156.00,196.00 160.00,193.50 164.00,196.00 168.00,193.50 172.00,196.00 176.00,193.50 180.00,196.00 184.00,193.50 188.00,196.00 192.00,193.50 196.00,196.00 200.00,193.50 204.00,196.00 208.00,193.50 212.00,196.00 216.00,193.50 220.00,196.00 224.00,193.50 228.00,196.00 232.00,193.50 236.00,196.00 240.00,193.50 244.00,196.00 248.00,193.50 252.00,196.00 256.00,193.50 260.00,196.00 264.00,193.50 268.00,196.00 272.00,193.50 276.00,196.00 280.00,193.50"/>
+<polygon class="cutfill" points="12.00,186.00 16.00,183.50 20.00,186.00 24.00,183.50 28.00,186.00 32.00,183.50 36.00,186.00 40.00,183.50 44.00,186.00 48.00,183.50 52.00,186.00 56.00,183.50 60.00,186.00 64.00,183.50 68.00,186.00 72.00,183.50 76.00,186.00 80.00,183.50 84.00,186.00 88.00,183.50 92.00,186.00 96.00,183.50 100.00,186.00 104.00,183.50 108.00,186.00 112.00,183.50 116.00,186.00 120.00,183.50 124.00,186.00 128.00,183.50 132.00,186.00 136.00,183.50 140.00,186.00 144.00,183.50 148.00,186.00 152.00,183.50 156.00,186.00 160.00,183.50 164.00,186.00 168.00,183.50 172.00,186.00 176.00,183.50 180.00,186.00 184.00,183.50 188.00,186.00 192.00,183.50 196.00,186.00 200.00,183.50 204.00,186.00 208.00,183.50 212.00,186.00 216.00,183.50 220.00,186.00 224.00,183.50 228.00,186.00 232.00,183.50 236.00,186.00 240.00,183.50 244.00,186.00 248.00,183.50 252.00,186.00 256.00,183.50 260.00,186.00 264.00,183.50 268.00,186.00 272.00,183.50 276.00,186.00 280.00,183.50 280.00,191.00 12.00,191.00"/>
+<polyline class="cutline" points="12.00,186.00 16.00,183.50 20.00,186.00 24.00,183.50 28.00,186.00 32.00,183.50 36.00,186.00 40.00,183.50 44.00,186.00 48.00,183.50 52.00,186.00 56.00,183.50 60.00,186.00 64.00,183.50 68.00,186.00 72.00,183.50 76.00,186.00 80.00,183.50 84.00,186.00 88.00,183.50 92.00,186.00 96.00,183.50 100.00,186.00 104.00,183.50 108.00,186.00 112.00,183.50 116.00,186.00 120.00,183.50 124.00,186.00 128.00,183.50 132.00,186.00 136.00,183.50 140.00,186.00 144.00,183.50 148.00,186.00 152.00,183.50 156.00,186.00 160.00,183.50 164.00,186.00 168.00,183.50 172.00,186.00 176.00,183.50 180.00,186.00 184.00,183.50 188.00,186.00 192.00,183.50 196.00,186.00 200.00,183.50 204.00,186.00 208.00,183.50 212.00,186.00 216.00,183.50 220.00,186.00 224.00,183.50 228.00,186.00 232.00,183.50 236.00,186.00 240.00,183.50 244.00,186.00 248.00,183.50 252.00,186.00 256.00,183.50 260.00,186.00 264.00,183.50 268.00,186.00 272.00,183.50 276.00,186.00 280.00,183.50"/>
 </g>
-<rect class="cutfill" x="12.0" y="196.40" width="268" height="2.60"/>
-<text x="328.0" y="211.9" class="t-label-title" data-owner="m4al">Aluminium alloy</text>
-<text x="328.0" y="227.9" class="t-label-note muted" data-owner="m4al">aluminium–copper,</text>
-<text x="328.0" y="243.9" class="t-label-note muted" data-owner="m4al">the conductor;</text>
-<text x="328.0" y="259.9" class="t-label-note muted" data-owner="m4al">step 149</text>
-<path class="leader" data-owner="m4al" d="M276.0 92.0H285.0V207.0H324.0"/>
-<circle class="dot" data-owner="m4al" cx="276.0" cy="92.0" r="1.9"/>
+<rect class="cutfill" x="12.0" y="186.40" width="268" height="2.60"/>
 <text x="328.0" y="139.9" class="t-label-title" data-owner="m4cap">Metal cap film</text>
 <text x="328.0" y="155.9" class="t-label-note muted" data-owner="m4cap">TiW or Ti/TiN —</text>
 <text x="328.0" y="171.9" class="t-label-note muted" data-owner="m4cap">see the overview</text>
 <text x="328.0" y="187.9" class="t-label-note tag" data-owner="m4cap">inferred</text>
-<path class="leader" data-owner="m4cap" d="M267.0 73.5H291.0V135.0H324.0"/>
+<path class="leader" data-owner="m4cap" d="M267.0 73.5H285.0V135.0H324.0"/>
 <circle class="dot" data-owner="m4cap" cx="267.0" cy="73.5" r="1.9"/>
 <text x="328.0" y="67.9" class="t-label-title" data-owner="cap2m">Top-plate film</text>
 <text x="328.0" y="83.9" class="t-label-note muted" data-owner="cap2m">TiW on this</text>
 <text x="328.0" y="99.9" class="t-label-note muted" data-owner="cap2m">reference&#x27;s reading</text>
 <text x="328.0" y="115.9" class="t-label-note tag" data-owner="cap2m">inferred</text>
-<path class="leader" data-owner="cap2m" d="M276.0 64.0H297.0V63.0H324.0"/>
+<path class="leader" data-owner="cap2m" d="M276.0 64.0H291.0V63.0H324.0"/>
 <circle class="dot" data-owner="cap2m" cx="276.0" cy="64.0" r="1.9"/>
-<path class="parrow" d="M34 284.0V322.0"/>
-<path class="pahead" d="M34 330.0l-5.5 -9h11.0z"/>
-<text x="50.0" y="295.0" class="t-label-title acc">MM4, step 154</text>
-<text x="50.0" y="310.0" class="t-label-note muted">Resist is coated, exposed through the metal reticle</text>
-<text x="50.0" y="325.0" class="t-label-note muted">and developed, leaving it wherever metal is to remain.</text>
-<text x="12.0" y="358.0" class="t-panel-title">After: resist over a line and the whole capacitor</text>
-<clipPath id="clip2"><rect x="12" y="370.0" width="268" height="171.0"/></clipPath>
-<g class="drawing" data-rect="12,370.0,268,171.0" clip-path="url(#clip2)">
-<polygon class="mat m-oxide-dep" data-layer="nild4" points="9.00,533.00 41.25,533.00 41.25,553.00 26.00,553.00 25.50,581.00 9.00,581.00"/>
-<polygon class="mat m-oxide-dep" data-layer="nild4" points="60.75,533.00 283.00,533.00 283.00,553.00 238.00,553.00 237.50,581.00 156.50,581.00 156.00,553.00 118.00,553.00 117.50,581.00 76.50,581.00 76.00,553.00 60.75,553.00"/>
-<polygon class="mat m-oxide-dep" data-layer="ncap4" points="9.00,525.00 41.25,525.00 41.25,533.00 9.00,533.00"/>
-<polygon class="mat m-oxide-dep" data-layer="ncap4" points="60.75,525.00 283.00,525.00 283.00,533.00 60.75,533.00"/>
-<polygon class="mat m-barrier" data-layer="v2liner" points="41.25,525.00 44.00,525.00 44.50,550.00 57.50,550.00 58.00,525.00 60.75,525.00 60.75,553.00 41.25,553.00"/>
-<polygon class="mat m-tungsten" data-layer="v2w" points="44.25,525.00 57.75,525.00 57.75,550.00 44.25,550.00"/>
-<polygon fill="url(#p-xhatch)" points="44.25,525.00 57.75,525.00 57.75,550.00 44.25,550.00"/>
-<polygon class="mat m-barrier" data-layer="m3bot" points="25.75,520.00 88.25,520.00 88.25,525.00 25.75,525.00"/>
-<polygon class="mat m-barrier" data-layer="m3bot" points="111.75,520.00 283.00,520.00 283.00,525.00 111.75,525.00"/>
-<polygon class="mat m-aluminium" data-layer="m3al" points="25.75,488.00 88.25,488.00 88.25,520.00 25.75,520.00"/>
-<polygon fill="url(#p-hatch-back)" points="25.75,488.00 88.25,488.00 88.25,520.00 25.75,520.00"/>
-<polygon class="mat m-aluminium" data-layer="m3al" points="111.75,488.00 283.00,488.00 283.00,520.00 111.75,520.00"/>
-<polygon fill="url(#p-hatch-back)" points="111.75,488.00 283.00,488.00 283.00,520.00 111.75,520.00"/>
-<polygon class="mat m-barrier" data-layer="m3cap" points="25.75,483.00 88.25,483.00 88.25,488.00 25.75,488.00"/>
-<polygon class="mat m-barrier" data-layer="m3cap" points="111.75,483.00 283.00,483.00 283.00,488.00 111.75,488.00"/>
-<polygon class="mat m-mim-diel" data-layer="capild" points="25.75,480.00 64.25,480.00 64.25,483.00 25.75,483.00"/>
-<polygon fill="url(#p-vlines)" points="25.75,480.00 64.25,480.00 64.25,483.00 25.75,483.00"/>
-<polygon class="mat m-mim-diel" data-layer="capild" points="83.75,480.00 88.25,480.00 88.25,483.00 83.75,483.00"/>
-<polygon fill="url(#p-vlines)" points="83.75,480.00 88.25,480.00 88.25,483.00 83.75,483.00"/>
-<polygon class="mat m-mim-diel" data-layer="capild" points="111.75,480.00 283.00,480.00 283.00,483.00 111.75,483.00"/>
-<polygon fill="url(#p-vlines)" points="111.75,480.00 283.00,480.00 283.00,483.00 111.75,483.00"/>
-<polygon class="mat m-barrier" data-layer="capm" points="141.75,472.00 283.00,472.00 283.00,480.00 141.75,480.00"/>
-<polygon class="mat m-oxide-dep" data-layer="nild5" points="9.00,465.00 64.25,465.00 64.25,480.00 26.00,480.00 25.50,525.00 9.00,525.00"/>
-<polygon class="mat m-oxide-dep" data-layer="nild5" points="83.75,465.00 208.25,465.00 208.25,472.00 142.00,472.00 141.50,480.00 112.00,480.00 111.50,525.00 88.50,525.00 88.00,480.00 83.75,480.00"/>
-<polygon class="mat m-oxide-dep" data-layer="nild5" points="227.75,465.00 283.00,465.00 283.00,472.00 227.75,472.00"/>
-<polygon class="mat m-oxide-dep" data-layer="ncap5" points="9.00,457.00 64.25,457.00 64.25,465.00 9.00,465.00"/>
-<polygon class="mat m-oxide-dep" data-layer="ncap5" points="83.75,457.00 208.25,457.00 208.25,465.00 83.75,465.00"/>
-<polygon class="mat m-oxide-dep" data-layer="ncap5" points="227.75,457.00 283.00,457.00 283.00,465.00 227.75,465.00"/>
-<polygon class="mat m-barrier" data-layer="v3liner" points="64.25,457.00 67.00,457.00 67.50,480.00 80.50,480.00 81.00,457.00 83.75,457.00 83.75,483.00 64.25,483.00"/>
-<polygon class="mat m-barrier" data-layer="v3liner" points="208.25,457.00 211.00,457.00 211.50,469.00 224.50,469.00 225.00,457.00 227.75,457.00 227.75,472.00 208.25,472.00"/>
-<polygon class="mat m-tungsten" data-layer="v3w" points="67.25,457.00 80.75,457.00 80.75,480.00 67.25,480.00"/>
-<polygon fill="url(#p-xhatch)" points="67.25,457.00 80.75,457.00 80.75,480.00 67.25,480.00"/>
-<polygon class="mat m-tungsten" data-layer="v3w" points="211.25,457.00 224.75,457.00 224.75,469.00 211.25,469.00"/>
-<polygon fill="url(#p-xhatch)" points="211.25,457.00 224.75,457.00 224.75,469.00 211.25,469.00"/>
-<polygon class="mat m-barrier" data-layer="m4bot" points="9.00,452.00 283.00,452.00 283.00,457.00 9.00,457.00"/>
-<polygon class="mat m-aluminium" data-layer="m4al" points="9.00,420.00 283.00,420.00 283.00,452.00 9.00,452.00"/>
-<polygon fill="url(#p-hatch-back)" points="9.00,420.00 283.00,420.00 283.00,452.00 9.00,452.00"/>
-<polygon class="mat m-barrier" data-layer="m4cap" points="9.00,415.00 283.00,415.00 283.00,420.00 9.00,420.00"/>
-<polygon class="mat m-mim-diel" data-layer="capild2" points="9.00,412.00 283.00,412.00 283.00,415.00 9.00,415.00"/>
-<polygon fill="url(#p-vlines)" points="9.00,412.00 283.00,412.00 283.00,415.00 9.00,415.00"/>
-<polygon class="mat m-barrier" data-layer="cap2m" points="141.75,404.00 283.00,404.00 283.00,412.00 141.75,412.00"/>
-<polygon class="mat m-resist" data-layer="mm4res" points="31.75,374.00 96.25,374.00 96.25,412.00 31.75,412.00"/>
-<polygon fill="url(#p-dots)" points="31.75,374.00 96.25,374.00 96.25,412.00 31.75,412.00"/>
-<polygon class="mat m-resist" data-layer="mm4res" points="115.75,374.00 283.00,374.00 283.00,404.00 142.00,404.00 141.50,412.00 115.75,412.00"/>
-<polygon fill="url(#p-dots)" points="115.75,374.00 283.00,374.00 283.00,404.00 142.00,404.00 141.50,412.00 115.75,412.00"/>
-<polygon class="cutfill" points="12.00,540.00 16.00,537.50 20.00,540.00 24.00,537.50 28.00,540.00 32.00,537.50 36.00,540.00 40.00,537.50 44.00,540.00 48.00,537.50 52.00,540.00 56.00,537.50 60.00,540.00 64.00,537.50 68.00,540.00 72.00,537.50 76.00,540.00 80.00,537.50 84.00,540.00 88.00,537.50 92.00,540.00 96.00,537.50 100.00,540.00 104.00,537.50 108.00,540.00 112.00,537.50 116.00,540.00 120.00,537.50 124.00,540.00 128.00,537.50 132.00,540.00 136.00,537.50 140.00,540.00 144.00,537.50 148.00,540.00 152.00,537.50 156.00,540.00 160.00,537.50 164.00,540.00 168.00,537.50 172.00,540.00 176.00,537.50 180.00,540.00 184.00,537.50 188.00,540.00 192.00,537.50 196.00,540.00 200.00,537.50 204.00,540.00 208.00,537.50 212.00,540.00 216.00,537.50 220.00,540.00 224.00,537.50 228.00,540.00 232.00,537.50 236.00,540.00 240.00,537.50 244.00,540.00 248.00,537.50 252.00,540.00 256.00,537.50 260.00,540.00 264.00,537.50 268.00,540.00 272.00,537.50 276.00,540.00 280.00,537.50 280.00,545.00 12.00,545.00"/>
-<polyline class="cutline" points="12.00,540.00 16.00,537.50 20.00,540.00 24.00,537.50 28.00,540.00 32.00,537.50 36.00,540.00 40.00,537.50 44.00,540.00 48.00,537.50 52.00,540.00 56.00,537.50 60.00,540.00 64.00,537.50 68.00,540.00 72.00,537.50 76.00,540.00 80.00,537.50 84.00,540.00 88.00,537.50 92.00,540.00 96.00,537.50 100.00,540.00 104.00,537.50 108.00,540.00 112.00,537.50 116.00,540.00 120.00,537.50 124.00,540.00 128.00,537.50 132.00,540.00 136.00,537.50 140.00,540.00 144.00,537.50 148.00,540.00 152.00,537.50 156.00,540.00 160.00,537.50 164.00,540.00 168.00,537.50 172.00,540.00 176.00,537.50 180.00,540.00 184.00,537.50 188.00,540.00 192.00,537.50 196.00,540.00 200.00,537.50 204.00,540.00 208.00,537.50 212.00,540.00 216.00,537.50 220.00,540.00 224.00,537.50 228.00,540.00 232.00,537.50 236.00,540.00 240.00,537.50 244.00,540.00 248.00,537.50 252.00,540.00 256.00,537.50 260.00,540.00 264.00,537.50 268.00,540.00 272.00,537.50 276.00,540.00 280.00,537.50"/>
-<polyline class="hl" points="32.00,371.00 96.00,371.00"/>
-<polyline class="hl" points="116.00,371.00 280.00,371.00"/>
+<path class="parrow" d="M34 212.0V250.0"/>
+<path class="pahead" d="M34 258.0l-5.5 -9h11.0z"/>
+<text x="50.0" y="223.0" class="t-label-title acc">MM4, step 154</text>
+<text x="50.0" y="238.0" class="t-label-note muted">Resist is coated, exposed through the metal reticle</text>
+<text x="50.0" y="253.0" class="t-label-note muted">and developed, leaving it wherever metal is to remain.</text>
+<text x="12.0" y="286.0" class="t-panel-title">After: resist over a line and the whole capacitor</text>
+<clipPath id="clip2"><rect x="12" y="298.0" width="268" height="161.0"/></clipPath>
+<g class="drawing" data-rect="12,298.0,268,161.0" clip-path="url(#clip2)">
+<polygon class="mat m-oxide-dep" data-layer="ncap4" points="9.00,453.00 41.25,453.00 41.25,461.00 9.00,461.00"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap4" points="60.75,453.00 283.00,453.00 283.00,461.00 60.75,461.00"/>
+<polygon class="mat m-barrier" data-layer="v2liner" points="41.25,453.00 44.00,453.00 44.50,478.00 57.50,478.00 58.00,453.00 60.75,453.00 60.75,481.00 41.25,481.00"/>
+<polygon class="mat m-tungsten" data-layer="v2w" points="44.25,453.00 57.75,453.00 57.75,478.00 44.25,478.00"/>
+<polygon fill="url(#p-xhatch)" points="44.25,453.00 57.75,453.00 57.75,478.00 44.25,478.00"/>
+<polygon class="mat m-barrier" data-layer="m3bot" points="25.75,448.00 88.25,448.00 88.25,453.00 25.75,453.00"/>
+<polygon class="mat m-barrier" data-layer="m3bot" points="111.75,448.00 283.00,448.00 283.00,453.00 111.75,453.00"/>
+<polygon class="mat m-aluminium" data-layer="m3al" points="25.75,416.00 88.25,416.00 88.25,448.00 25.75,448.00"/>
+<polygon fill="url(#p-hatch-back)" points="25.75,416.00 88.25,416.00 88.25,448.00 25.75,448.00"/>
+<polygon class="mat m-aluminium" data-layer="m3al" points="111.75,416.00 283.00,416.00 283.00,448.00 111.75,448.00"/>
+<polygon fill="url(#p-hatch-back)" points="111.75,416.00 283.00,416.00 283.00,448.00 111.75,448.00"/>
+<polygon class="mat m-barrier" data-layer="m3cap" points="25.75,411.00 88.25,411.00 88.25,416.00 25.75,416.00"/>
+<polygon class="mat m-barrier" data-layer="m3cap" points="111.75,411.00 283.00,411.00 283.00,416.00 111.75,416.00"/>
+<polygon class="mat m-mim-diel" data-layer="capild" points="25.75,408.00 64.25,408.00 64.25,411.00 25.75,411.00"/>
+<polygon fill="url(#p-vlines)" points="25.75,408.00 64.25,408.00 64.25,411.00 25.75,411.00"/>
+<polygon class="mat m-mim-diel" data-layer="capild" points="83.75,408.00 88.25,408.00 88.25,411.00 83.75,411.00"/>
+<polygon fill="url(#p-vlines)" points="83.75,408.00 88.25,408.00 88.25,411.00 83.75,411.00"/>
+<polygon class="mat m-mim-diel" data-layer="capild" points="111.75,408.00 283.00,408.00 283.00,411.00 111.75,411.00"/>
+<polygon fill="url(#p-vlines)" points="111.75,408.00 283.00,408.00 283.00,411.00 111.75,411.00"/>
+<polygon class="mat m-barrier" data-layer="capm" points="141.75,400.00 283.00,400.00 283.00,408.00 141.75,408.00"/>
+<polygon class="mat m-oxide-dep" data-layer="nild5" points="9.00,393.00 64.25,393.00 64.25,408.00 26.00,408.00 25.50,453.00 9.00,453.00"/>
+<polygon class="mat m-oxide-dep" data-layer="nild5" points="83.75,393.00 208.25,393.00 208.25,400.00 142.00,400.00 141.50,408.00 112.00,408.00 111.50,453.00 88.50,453.00 88.00,408.00 83.75,408.00"/>
+<polygon class="mat m-oxide-dep" data-layer="nild5" points="227.75,393.00 283.00,393.00 283.00,400.00 227.75,400.00"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap5" points="9.00,385.00 64.25,385.00 64.25,393.00 9.00,393.00"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap5" points="83.75,385.00 208.25,385.00 208.25,393.00 83.75,393.00"/>
+<polygon class="mat m-oxide-dep" data-layer="ncap5" points="227.75,385.00 283.00,385.00 283.00,393.00 227.75,393.00"/>
+<polygon class="mat m-barrier" data-layer="v3liner" points="64.25,385.00 67.00,385.00 67.50,408.00 80.50,408.00 81.00,385.00 83.75,385.00 83.75,411.00 64.25,411.00"/>
+<polygon class="mat m-barrier" data-layer="v3liner" points="208.25,385.00 211.00,385.00 211.50,397.00 224.50,397.00 225.00,385.00 227.75,385.00 227.75,400.00 208.25,400.00"/>
+<polygon class="mat m-tungsten" data-layer="v3w" points="67.25,385.00 80.75,385.00 80.75,408.00 67.25,408.00"/>
+<polygon fill="url(#p-xhatch)" points="67.25,385.00 80.75,385.00 80.75,408.00 67.25,408.00"/>
+<polygon class="mat m-tungsten" data-layer="v3w" points="211.25,385.00 224.75,385.00 224.75,397.00 211.25,397.00"/>
+<polygon fill="url(#p-xhatch)" points="211.25,385.00 224.75,385.00 224.75,397.00 211.25,397.00"/>
+<polygon class="mat m-barrier" data-layer="m4bot" points="9.00,380.00 283.00,380.00 283.00,385.00 9.00,385.00"/>
+<polygon class="mat m-aluminium" data-layer="m4al" points="9.00,348.00 283.00,348.00 283.00,380.00 9.00,380.00"/>
+<polygon fill="url(#p-hatch-back)" points="9.00,348.00 283.00,348.00 283.00,380.00 9.00,380.00"/>
+<polygon class="mat m-barrier" data-layer="m4cap" points="9.00,343.00 283.00,343.00 283.00,348.00 9.00,348.00"/>
+<polygon class="mat m-mim-diel" data-layer="capild2" points="9.00,340.00 283.00,340.00 283.00,343.00 9.00,343.00"/>
+<polygon fill="url(#p-vlines)" points="9.00,340.00 283.00,340.00 283.00,343.00 9.00,343.00"/>
+<polygon class="mat m-barrier" data-layer="cap2m" points="141.75,332.00 283.00,332.00 283.00,340.00 141.75,340.00"/>
+<polygon class="mat m-resist" data-layer="mm4res" points="31.75,302.00 96.25,302.00 96.25,340.00 31.75,340.00"/>
+<polygon fill="url(#p-dots)" points="31.75,302.00 96.25,302.00 96.25,340.00 31.75,340.00"/>
+<polygon class="mat m-resist" data-layer="mm4res" points="115.75,302.00 283.00,302.00 283.00,332.00 142.00,332.00 141.50,340.00 115.75,340.00"/>
+<polygon fill="url(#p-dots)" points="115.75,302.00 283.00,302.00 283.00,332.00 142.00,332.00 141.50,340.00 115.75,340.00"/>
+<polygon class="cutfill" points="12.00,458.00 16.00,455.50 20.00,458.00 24.00,455.50 28.00,458.00 32.00,455.50 36.00,458.00 40.00,455.50 44.00,458.00 48.00,455.50 52.00,458.00 56.00,455.50 60.00,458.00 64.00,455.50 68.00,458.00 72.00,455.50 76.00,458.00 80.00,455.50 84.00,458.00 88.00,455.50 92.00,458.00 96.00,455.50 100.00,458.00 104.00,455.50 108.00,458.00 112.00,455.50 116.00,458.00 120.00,455.50 124.00,458.00 128.00,455.50 132.00,458.00 136.00,455.50 140.00,458.00 144.00,455.50 148.00,458.00 152.00,455.50 156.00,458.00 160.00,455.50 164.00,458.00 168.00,455.50 172.00,458.00 176.00,455.50 180.00,458.00 184.00,455.50 188.00,458.00 192.00,455.50 196.00,458.00 200.00,455.50 204.00,458.00 208.00,455.50 212.00,458.00 216.00,455.50 220.00,458.00 224.00,455.50 228.00,458.00 232.00,455.50 236.00,458.00 240.00,455.50 244.00,458.00 248.00,455.50 252.00,458.00 256.00,455.50 260.00,458.00 264.00,455.50 268.00,458.00 272.00,455.50 276.00,458.00 280.00,455.50 280.00,463.00 12.00,463.00"/>
+<polyline class="cutline" points="12.00,458.00 16.00,455.50 20.00,458.00 24.00,455.50 28.00,458.00 32.00,455.50 36.00,458.00 40.00,455.50 44.00,458.00 48.00,455.50 52.00,458.00 56.00,455.50 60.00,458.00 64.00,455.50 68.00,458.00 72.00,455.50 76.00,458.00 80.00,455.50 84.00,458.00 88.00,455.50 92.00,458.00 96.00,455.50 100.00,458.00 104.00,455.50 108.00,458.00 112.00,455.50 116.00,458.00 120.00,455.50 124.00,458.00 128.00,455.50 132.00,458.00 136.00,455.50 140.00,458.00 144.00,455.50 148.00,458.00 152.00,455.50 156.00,458.00 160.00,455.50 164.00,458.00 168.00,455.50 172.00,458.00 176.00,455.50 180.00,458.00 184.00,455.50 188.00,458.00 192.00,455.50 196.00,458.00 200.00,455.50 204.00,458.00 208.00,455.50 212.00,458.00 216.00,455.50 220.00,458.00 224.00,455.50 228.00,458.00 232.00,455.50 236.00,458.00 240.00,455.50 244.00,458.00 248.00,455.50 252.00,458.00 256.00,455.50 260.00,458.00 264.00,455.50 268.00,458.00 272.00,455.50 276.00,458.00 280.00,455.50"/>
+<polyline class="hl" points="32.00,299.00 96.00,299.00"/>
+<polyline class="hl" points="116.00,299.00 280.00,299.00"/>
 </g>
-<rect class="cutfill" x="12.0" y="540.40" width="268" height="2.60"/>
-<text x="328.0" y="461.9" class="t-label-title" data-owner="m4al">Aluminium alloy</text>
-<path class="leader" data-owner="m4al" d="M276.0 436.0H285.0V457.0H324.0"/>
-<circle class="dot" data-owner="m4al" cx="276.0" cy="436.0" r="1.9"/>
-<text x="328.0" y="421.9" class="t-label-title" data-owner="cap2m">Top-plate film</text>
-<text x="328.0" y="437.9" class="t-label-note tag" data-owner="cap2m">inferred</text>
-<path class="leader" data-owner="cap2m" d="M276.0 408.0H291.0V417.0H324.0"/>
-<circle class="dot" data-owner="cap2m" cx="276.0" cy="408.0" r="1.9"/>
-<text x="328.0" y="381.9" class="t-label-title" data-owner="mm4res">Photoresist</text>
-<text x="328.0" y="397.9" class="t-label-note muted" data-owner="mm4res">MM4 mask, step 154</text>
-<path class="leader" data-owner="mm4res" d="M276.0 377.5H297.0V377.0H324.0"/>
-<circle class="dot" data-owner="mm4res" cx="276.0" cy="377.5" r="1.9"/>
-<text x="12.0" y="565.0" class="t-label-title">The lower part of the slice is not drawn.</text>
-<text x="12.0" y="582.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
+<rect class="cutfill" x="12.0" y="458.40" width="268" height="2.60"/>
+<text x="328.0" y="389.9" class="t-label-title" data-owner="m4al">Aluminium alloy</text>
+<text x="328.0" y="405.9" class="t-label-note muted" data-owner="m4al">aluminium–copper,</text>
+<text x="328.0" y="421.9" class="t-label-note muted" data-owner="m4al">the conductor;</text>
+<text x="328.0" y="437.9" class="t-label-note muted" data-owner="m4al">step 149</text>
+<path class="leader" data-owner="m4al" d="M276.0 364.0H285.0V385.0H324.0"/>
+<circle class="dot" data-owner="m4al" cx="276.0" cy="364.0" r="1.9"/>
+<text x="328.0" y="349.9" class="t-label-title" data-owner="cap2m">Top-plate film</text>
+<text x="328.0" y="365.9" class="t-label-note tag" data-owner="cap2m">inferred</text>
+<path class="leader" data-owner="cap2m" d="M276.0 336.0H291.0V345.0H324.0"/>
+<circle class="dot" data-owner="cap2m" cx="276.0" cy="336.0" r="1.9"/>
+<text x="328.0" y="309.9" class="t-label-title" data-owner="mm4res">Photoresist</text>
+<text x="328.0" y="325.9" class="t-label-note muted" data-owner="mm4res">MM4 mask, step 154</text>
+<path class="leader" data-owner="mm4res" d="M276.0 305.5H297.0V305.0H324.0"/>
+<circle class="dot" data-owner="mm4res" cx="276.0" cy="305.5" r="1.9"/>
+<text x="12.0" y="483.0" class="t-label-title">The lower part of the slice is not drawn.</text>
+<text x="12.0" y="500.0" class="t-label-note muted">Not to scale. Thin films are drawn thicker than they are.</text>
 </svg>
