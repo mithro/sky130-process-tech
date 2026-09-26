@@ -897,8 +897,8 @@ None was fixed here; each is recorded as found.
   2PSDI and NSDI — have left … inactive. This step heats the wafer so that the amorphous layers regrow,
   … and the junctions reach their designed depth and no further. It does so in an inert ambient for
   seconds at around 1000 °C on the industry-typical recipe described below; SKY130's own conditions
-  are not public." and, opening the second paragraph, "The designed depth is the PDK's 0.1 µm for "N+
-  or P+ S/D (XJ)".[^pdk-03]" ("It does so" and "The designed depth is" added, step 7; the
+  are not public. The designed depth is the PDK's 0.1 µm for "N+ or P+ S/D (XJ)".[^pdk-03]" — the
+  paragraph break after it (review L5; a first draft broke one sentence earlier) ("It does so" and "The designed depth is" added, step 7; the
   industry-typical hedge and "not public" stay with the 1000 °C clause they governed; the marker stays
   with the 0.1 µm). "This reference describes it" → "This reference describes `RTAD`" (R-PARA step 5,
   since the sentence before it is now about the depth). Two paragraphs; 157 words (base 154, over 120

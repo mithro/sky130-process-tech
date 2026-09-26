@@ -37,9 +37,10 @@ end-of-range damage is dissolved as far as it can be, and the
 junctions reach their designed depth and no further. It does so in an
 inert ambient for seconds at around 1000 °C on the industry-typical
 recipe described below; SKY130's own conditions are not public.
-
 The designed depth is the PDK's 0.1 µm for "N+ or P+
-S/D (XJ)".[^pdk-03] This reference describes `RTAD`,
+S/D (XJ)".[^pdk-03]
+
+This reference describes `RTAD`,
 like {ref}`RTAI <step-034>` and {ref}`TIPRTAD <step-075>`, as a rapid
 thermal anneal, and the public evidence for that is good (below). It
 is the third RTA described in this reference; the next,
