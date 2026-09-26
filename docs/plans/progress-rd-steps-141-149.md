@@ -332,6 +332,54 @@ sentence 15 words.
 * `check_preserved --allow-regrouped`: ADDED = glance only; REGROUPED: the dielectric sentence split.
   WORDS LOST: `strength`×2. No DUPLICATED line. `cov`: 1 flag, pairing noise.
 
+### 149 WTIAL4 — done
+
+Base `d69c89fd`. Caps before: 4 paragraphs, 7 items, 12 sentences over; after 0/0/0. Lead 121 words
+(base 119 with a quotation counted as one word, 129 counting the quotations' words as `measure.py`
+does), one paragraph over 100 in the base, now two (54, 67); first sentence 6 words. See Guide
+problem 1: the 46-word second sentence could be split at its dash only by adding "It is".
+
+* Lead: "…and a refractory cap — the construction described for metal 3 at WTIAL3." → "…and a refractory
+  cap. It is the construction described for metal 3 at WTIAL3." (subject and verb added); paragraph
+  split before "The stack is blanket".
+* R-H3: `### What the public record shows` after the caption over the PDK numbers, the P-flow
+  evidence ending in its "(inference)" and the design rules (the R-H3 step 6 case "mostly public
+  record, ends in a hedged estimate"); `### Competing readings` over the step-name, Cypress and
+  TiW-or-TiN-cap passage, which weighs the two cap readings (134 form). The 207-word paragraph became
+  three: the stack-diagram sentence split at its two semicolons (each clause kept its markers); the
+  P-flow sentence (71 words, four cited clauses joined by "and") split into four sentences at those
+  joins, "On that reading …" still directly after them; the rule sentence alone (134 kept its metal-3
+  twin as prose). The 260-word paragraph became four (step name; the two Cypress reports; the
+  top-metal question split at its semicolon, "The evidence … is set out under …"; the PDK basis,
+  arithmetic and bottom-layer sentences).
+* Step category (199 words): classification sentence alone; the TIAL6 sentence a paragraph; "What is
+  specific here …" with the cross-section sentence; the "On that drawing …" sentence split at its dash
+  before "The device page says …" (no word added); the patent sentence (48 words) split after the dash
+  pair — "…adding in parallel.[^pat-mim-stack-newportfab] In US 7,078,310, though, the shared
+  electrode is …[^pat-mim-stack-newportfab]" — "though" moved after the patent number because a
+  sentence cannot open on it, and the marker repeated so that both halves keep it (declared ADDED
+  marker).
+* Why: resistance item split before "Bohr's argument …" and at its semicolon; EM item split after its
+  lead clause, "Copper doping, …" (capitalised) and "Nix and Arzt …" as sentences; hillocks item split
+  at its semicolon, the Rocke sentence with its "(inference)" unchanged; MiM-electrode item split
+  after the PDK sentence and at the Greenwood semicolon; fuse item's "On that reading …" (with its
+  "(inference from …)") a continuation.
+* How: italic scope sentence; step 4's 11-word Cypress parenthetical moved after its 49-word
+  sentence as "The Cypress reports for this fab give the film as Al-0.5%Cu.[^cyp-qtp-113005][^cyp-qtp-123907]"
+  (parentheses removed, words unchanged), the grain-size and thickness sentences a continuation. This
+  is the page's one `number_order` LOST line (`('5', '150–300')`: the 0.5 of "Al-0.5%Cu" now follows
+  the 150–300 °C of the sentence it was inside); hand-checked, same digits.
+* R-TOOLS: AMAT PVD three-line item (134 form); the metal-etchers bullet has no grade and is unchanged.
+* R-RELATED: Previous · Next · Depends on · Feeds · Same category · Category page (134 form).
+* R-OPENQ: seven labels; the cap bullet split before "The answer changes …"; the thickness bullet
+  split at its semicolon.
+* R-GLANCE: Does from the lead; Why from the Why intro; numbers `pdk-04`, `pdk-07`/`pdk-08`,
+  `pdk-periph`; tool line = R-TOOLS grades; Not public = Open questions 1 and 2.
+* `check_preserved --allow-regrouped`: ADDED = glance + the repeated `pat-mim-stack-newportfab`;
+  REGROUPED lines are the splits above; LOST only the step-4 `number_order` above. WORDS LOST:
+  `strength`. No DUPLICATED line. `cov`: 9 flags, all read (glance pairing noise; hedges on the
+  neighbouring sentence, unchanged).
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on

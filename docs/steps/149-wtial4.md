@@ -10,14 +10,34 @@
 | **Previous step** | {ref}`WCMP5 <step-148>` |
 | **Next step** | {ref}`CAPILD2 <step-150>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** sputters the blanket metal-4 stack — a thin refractory
+  bottom layer, a thick aluminium–copper alloy and a refractory cap —
+  onto the via-3 plugs.
+* **Why:** metal 4 is the second coarse-pitch, low-resistance routing
+  level and the bottom plate of the second MiM capacitor.
+* **Public numbers:** `metal4` 0.845 µm on the stack
+  diagram;[^pdk-04] 47 mΩ/sq;[^pdk-07][^pdk-08] 0.300 µm width and
+  space (m4.1, m4.2).[^pdk-periph]
+* **Likely SkyWater tool:** AMAT PVD Metal platform — **strong** for the
+  vendor and for the films; the platform model and the bottom-layer
+  choice are **inferences**.[^skw-01]
+* **Not public:** the metal-4 film thicknesses, the bottom-layer
+  material, and whether the cap is TiW or Ti/TiN (→ Open questions).
+:::
+
 ## What this step is
 
 `WTIAL4` deposits the metal-4 film stack. Onto the polished cap oxide
 and tungsten via-3 plugs left by {ref}`WCMP5 <step-148>` a sputtering
 {term}`cluster tool` lays down, in one vacuum sequence on our reading, a thin
 refractory bottom layer, a thick aluminium–copper alloy and a
-refractory cap — the construction described for metal 3 at
-{ref}`WTIAL3 <step-134>`. The stack is blanket, and like metal 3 it
+refractory cap. It is the construction described for metal 3 at
+{ref}`WTIAL3 <step-134>`.
+
+The stack is blanket, and like metal 3 it
 stays blanket while a {term}`MiM capacitor` is built on it: the second
 capacitor module — {ref}`CAPILD2 <step-150>`,
 {ref}`CAPTIW2 <step-151>`, {ref}`CAP2M <step-152>` and
@@ -36,33 +56,43 @@ Metal-3" as its two MiM constructions.[^pdk-07]
 Before, the flush via-3 plugs, one on the metal-3 line and one on the capacitor's top plate; after, the metal-4 stack over the whole wafer: a thin bottom film, a thicker aluminium–copper alloy and a thin cap. Like metal 3, it stays a blanket through the second capacitor's steps and is patterned at MM4 and MM4E (steps 154 and 155). No public source describes the metal-4 films; the page reads the stack as a repeat of metal 3's (an inference), with the bottom film as Ti or TiW, and whether the cap is TiW or the Ti/TiN of the stack qualified in 2014 is unresolved: the overview of the metal cap sets out the evidence, and the figure does not choose, drawing both films in the colour the figure conventions use for every Ti, TiN and TiW film. The PDK's stack diagram gives metal 4 the same 0.845 µm as metal 3,[^pdk-04] and it is drawn as thick as metal 3, though not to scale. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 2. The metal-3 line and the capacitor, the plugs and their liners, the oxides and the metal-2 lines are drawn but not labelled, except, in the upper panel, the tungsten of the plug on the plate and the cap oxide. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK gives metal 4 the same numbers as metal 3. The process stack
 diagram labels `metal4` 0.845 µm, with its bottom 4.0211 µm above the
-substrate reference and the bottom of `metal5` at 5.3711 µm;[^pdk-04]
-the device page and extraction tables give metal 4 a
+substrate reference and the bottom of `metal5` at 5.3711 µm.[^pdk-04]
+The device page and extraction tables give metal 4 a
 {term}`sheet resistance` of 47 mΩ/sq (limits 38–56 mΩ/sq), identical to
-metal 3;[^pdk-07][^pdk-08] and Edwards's introductory slides on the
-open PDK repeat the 0.845 µm.[^ann-16] The assumptions table lists a
+metal 3.[^pdk-07][^pdk-08] Edwards's introductory slides on the
+open PDK repeat the 0.845 µm.[^ann-16]
+
+The assumptions table lists a
 "Metal4 thickness for antenna ratio calculation" of 0.8 µm for the
-"S8P*/SP8P*" flows and 2 µm for the "S8Q*/SP8Q" flows,[^pdk-03] and
-the rule tables name "SKY130P*/SP8P*" as the flow in which via 4
+"S8P*/SP8P*" flows and 2 µm for the "S8Q*/SP8Q" flows.[^pdk-03] The
+rule tables name "SKY130P*/SP8P*" as the flow in which via 4
 connects metal 4 to metal 5 and call the SP8P*/SKY130P* CAD flow
-"PLM",[^pdk-periph] and the mask table flags its "Via 2-PLM", "Metal
-3-PLM" and "Via3-PLM" entries as used in SKY130;[^pdk-05] and the
+"PLM".[^pdk-periph] The mask table flags its "Via 2-PLM", "Metal
+3-PLM" and "Via3-PLM" entries as used in SKY130.[^pdk-05] The
 background page lists "5 levels of metal (p - penta)" among the
 technology's features.[^pdk-02] On that reading SKY130 as published is
 a "P" flow, so the 0.8 µm value applies and the 2 µm entry belongs to
-another variant (inference). The metal-4 design rules match metal 3's:
+another variant (inference).
+
+The metal-4 design rules match metal 3's:
 0.300 µm width and space (m4.1, m4.2), 0.065 µm enclosure of via 3 (m4.3),
 0.240 µm² minimum area (m4.4a) and a 0.7 minimum oxide pattern
 density checked in 700 µm windows (m4.pd.1, m4.pd.2a).[^pdk-periph]
+
+### Competing readings
 
 The step list calls this step "Al Cu 2/TiW deposition";[^steps-sheet]
 this page's title and the steps index normalise that to "AlCu" without
 the space, as {ref}`TIAL12 <step-123>`, {ref}`WTIAL3 <step-134>` and
 {ref}`WTIAL5 <step-161>` do for the same name at the other levels. A
 step name is not evidence of a chemistry, and no public source
-describes the metal-4 films themselves. Two Cypress reports for this
+describes the metal-4 films themselves.
+
+Two Cypress reports for this
 fab describe metal stacks, and both are for three-metal technologies.
 The January 2013 plan for S8TNV-5R gives "100A Ti / 3200A Al -0.5%Cu /
 300A TiW" at metals 1 and 2 and "150A Ti / 7200A Al -0.5%Cu / 300A
@@ -73,13 +103,17 @@ Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN" while its top metal
 stayed "500A TiW/21,250A Al 0.5% Cu/300A TiW", and records the
 corresponding S8P qualification as a "Metal Stack Change from
 Ti/AlCu/TiW to Ti/TiN/ALCu/Ti/TiN, excluding top metal
-layers".[^cyp-qtp-123907] Which levels of a five-metal S8P flow count
+layers".[^cyp-qtp-123907]
+
+Which levels of a five-metal S8P flow count
 as "top metal layers" is not public, so whether metal 4 carries the
-TiW cap this page describes or the later TiN-clad stack is unresolved;
-the evidence, including a thickness argument that favours a two-film
+TiW cap this page describes or the later TiN-clad stack is unresolved.
+The evidence, including a thickness argument that favours a two-film
 cladding here, is set out under {ref}`overview-metal-cap`. SkyWater's
 PVD film list ("Aluminum both pure and Cu doped", "TiW", "ESC TiN",
-"Imp TiN", "Collimated Ti"[^skw-01]) allows either. The 0.845 µm and
+"Imp TiN", "Collimated Ti"[^skw-01]) allows either.
+
+The 0.845 µm and
 47 mΩ/sq that the PDK gives both metal 3 and metal 4 are the public
 basis for describing this stack as a repeat of metal 3
 (inference). With 0.8 µm of Al–Cu, 47 mΩ/sq corresponds to a
@@ -91,24 +125,32 @@ The reading of the bottom layer as Ti or TiW is discussed at
 ## Step category
 
 `WTIAL4` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *PVD, multi-layer metal* class; {ref}`TIAL6 <step-112>` sets out
+of the *PVD, multi-layer metal* class.
+
+{ref}`TIAL6 <step-112>` sets out
 the sputtering of Ti, Al–Cu and Ti:W films, {ref}`TIAL12 <step-123>`
 what a via level adds and {ref}`WTIAL3 <step-134>` what a thick film
 changes — longer deposition, more wafer heating, larger grains, more
-stored stress and more {term}`hillock` risk. What is specific here is the
+stored stress and more {term}`hillock` risk.
+
+What is specific here is the
 position of the stack in the capacitor structure. The PDK's `cap_mim`
 cross-section, drawn for the "stacked" arrangement, shows metal 4
 split into two shapes: one, "M4 (plate 2)", lies under `CAP2M` and is
 joined by vias to the `CAPM` plate below, and the other, "M4
 (plate 1)", joins "M3 (plate 1)" below to "M5 (plate 1)"
-above.[^pdk-07] On that drawing, the stack deposited here is the
+above.[^pdk-07]
+
+On that drawing, the stack deposited here is the
 bottom electrode of the second capacitor *and* the conductor that
 carries the first capacitor's top plate, so the two capacitors share
-it as a middle electrode and add in parallel — the device page says
+it as a middle electrode and add in parallel. The device page says
 the capacitors "may be stacked to maximize total
-capacitance".[^pdk-07] The Newport Fab and TSMC stacked-MiM patents
+capacitance".[^pdk-07]
+
+The Newport Fab and TSMC stacked-MiM patents
 describe the same *idea* — an upper and a lower MiM sharing a middle
-electrode and adding in parallel — though in US 7,078,310 the shared
+electrode and adding in parallel.[^pat-mim-stack-newportfab] In US 7,078,310, though, the shared
 electrode is a dedicated capacitor metal deposited between two
 interconnect levels rather than an interconnect level
 itself.[^pat-mim-stack-newportfab]
@@ -121,25 +163,30 @@ are those of metals 1–3:
 
 * **Low resistance for power, clocks and long signals.** At 47 mΩ/sq
   and 0.3 µm width and space[^pdk-07][^pdk-periph] metal 4 doubles the
-  thick routing resource of metal 3. Bohr's argument that interconnect
+  thick routing resource of metal 3.
+
+  Bohr's argument that interconnect
   limits performance,[^bohr-1995] Stamper, Fuselier and Tian's account
   of wiring RC delay at the sub-0.25 µm generation[^stamper-1998] and
-  the ITRS 2001 interconnect chapter[^itrs-02] are the context; the
+  the ITRS 2001 interconnect chapter[^itrs-02] are the context. The
   PDK's extraction tables give a metal-4-to-metal-5 plate capacitance of
   68.33 aF/µm², against 84.03 aF/µm² from metal 3 to metal 4.[^pdk-08]
 * **{term}`Electromigration <electromigration>` in thick Al–Cu between tungsten studs.** Below
-  each metal-4 line sit tungsten via-3 plugs; copper doping,[^ames-1970]
+  each metal-4 line sit tungsten via-3 plugs.
+
+  Copper doping,[^ames-1970]
   the (111) texture a refractory underlayer promotes,[^knorr-1996][^kamoshida-1997]
   Blech's critical length[^blech-1976] and the short-length effect with
   tungsten barriers that Filippi, Biery and Wood showed[^filippi-1993]
-  apply as at metal 3; Nix and Arzt describe void nucleation and growth
+  apply as at metal 3. Nix and Arzt describe void nucleation and growth
   in such lines.[^nix-1992] Above metal 4 the connection is different:
   via 4 is 0.8 µm (via4.1)[^pdk-periph] and is discussed at
   {ref}`VIM4E <step-160>` and {ref}`WTIAL5 <step-161>`.
 * **Hillocks and stress.** Hillock growth in aluminium films —
   Chaudhari's analysis[^chaudhari-1974] — rises with film thickness and
-  heat treatment, as Zlatanović and Davinić measured;[^zlatanovic-1990]
-  the refractory cap suppresses hillocks and serves as the
+  heat treatment, as Zlatanović and Davinić measured.[^zlatanovic-1990]
+
+  The refractory cap suppresses hillocks and serves as the
   anti-reflective surface, the role Rocke and Schneegans documented for
   a titanium-nitride cap on aluminium and which a Ti:W cap plays in the
   same way (inference).[^rocke-1988] Stress-induced voiding (Yue, Funsten and
@@ -148,16 +195,19 @@ are those of metals 1–3:
 * **The second MiM bottom electrode.** The PDK gives the metal-4
   capacitor the same electrical specification as the metal-3 one —
   `CMIM2A` 2 fF/µm², `CMIM2P` 0.19 fF/µm and a 5.8 Ω/sq top plate —
-  and calls the two constructions "identical".[^pdk-07] The cap
+  and calls the two constructions "identical".[^pdk-07]
+
+  The cap
   of this stack is therefore the bottom-electrode surface for
   {ref}`CAPILD2 <step-150>`, and its smoothness and cleanliness matter
-  as at {ref}`WTIAL3 <step-134>`; Greenwood and Prasad describe the
+  as at {ref}`WTIAL3 <step-134>`. Greenwood and Prasad describe the
   alternative of a TiN-only bottom plate for a MiM capacitor in an
   aluminium back end.[^greenwood-2007]
 * **A fuse level.** The PDK's {term}`metal-fuse <metal fuse>` rules say that the
   "SP8P*/SKY130P* (PLM) CADflow" uses "MM4 for Metal Fuse", with a fuse
   width of 0.800 µm and length of 7.200 µm (mf.1, mf.2), and the layer
   table carries a `met4` "fuse" purpose (71:17).[^pdk-periph][^pdk-06]
+
   On that reading some metal-4 shapes are fuse links, which this stack
   must also serve (inference from the PDK's metal-fuse note and the `met4` fuse
   purpose[^pdk-periph][^pdk-06]).
@@ -167,10 +217,10 @@ MiM capacitor, and the via-3 plugs would end in air.
 
 ## How it is typically performed
 
-An industry-generic thick Ti(W)/Al–Cu/TiW deposition for a 200 mm,
+*An industry-generic thick Ti(W)/Al–Cu/TiW deposition for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public; the film-by-film
 account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
-{ref}`WTIAL3 <step-134>`):
+{ref}`WTIAL3 <step-134>`):*
 
 1. **Cluster tool.** A multi-chamber PVD platform — SkyWater's "AMAT
    PVD Metal" with "Sputter etch, degas"[^skw-01] — so that {term}`degas`,
@@ -185,11 +235,13 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
    and the metal-3 descriptions of 150 Å Ti[^cyp-qtp-113005] and 500 Å
    TiW[^cyp-qtp-123907] are the nearest public analogues.
 4. **Al–0.5%Cu, of the order of 0.8 µm.** Sputtered from an
-   Al–Cu target (the Cypress reports for this fab give the film as
-   Al-0.5%Cu[^cyp-qtp-113005][^cyp-qtp-123907]) at a wafer temperature of roughly 150–300 °C
+   Al–Cu target at a wafer temperature of roughly 150–300 °C
    (industry-typical[^txt-02]), in several passes or on a cooled
    pedestal so that the wafer does not drift into the hillock and
-   copper-precipitation regime (industry practice[^txt-05]); grain size
+   copper-precipitation regime (industry practice[^txt-05]). The Cypress reports for this fab give the film as
+   Al-0.5%Cu.[^cyp-qtp-113005][^cyp-qtp-123907]
+
+   Grain size
    and texture follow the structure-zone relations.[^thornton-1974][^ohring-2002]
    The thickness is inferred from the 0.845 µm stack of the
    PDK[^pdk-04] less the refractory layers.
@@ -216,12 +268,15 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 
 ## Machines likely used at SkyWater
 
-* **AMAT PVD Metal platform.** SkyWater lists "AMAT PVD Metal" with
-  "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW",
-  "ESC TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt",
-  "Niobium".[^skw-01] Strength: **strong** for the vendor and for the
-  films; the platform model (Endura[^amat-endura]) and the bottom-layer
-  choice are **inferences**.
+* **AMAT PVD Metal platform**
+  - *SkyWater says:* lists "AMAT PVD Metal" with
+    "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW",
+    "ESC TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt",
+    "Niobium".[^skw-01]
+  - *Tool exists:* **strong** for the vendor and for the
+    films.
+  - *Runs this step:* the platform model (Endura[^amat-endura]) and the bottom-layer
+    choice are **inferences**.
 * **Metal etchers "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys,
   Al, TiW, TiN, Nb, Pt"**[^skw-01] name aluminium, TiW and TiN among the
   materials they etch, so either candidate stack is etchable in the fab
@@ -244,17 +299,18 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 ## Related steps and cross-references
 
 * Previous: {ref}`WCMP5 <step-148>` (the via-3 plugs and oxide it lands
-  on). Next: {ref}`CAPILD2 <step-150>` (the second MiM dielectric),
+  on).
+* Next: {ref}`CAPILD2 <step-150>` (the second MiM dielectric),
   then {ref}`CAPTIW2 <step-151>`, {ref}`CAP2M <step-152>`,
   {ref}`CAP2ME <step-153>`, and only then {ref}`MM4 <step-154>` and
   {ref}`MM4E <step-155>`.
-* The plugs it contacts: {ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`.
-* The dielectric that will surround the lines: {ref}`NILD6 <step-156>`;
-  the via etch that stops on the cap: {ref}`VIM4E <step-160>`.
-* The same construction at metal 3, with its capacitor module:
+* Depends on: the plugs it contacts, {ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`.
+* Feeds: the dielectric that will surround the lines, {ref}`NILD6 <step-156>`;
+  the via etch that stops on the cap, {ref}`VIM4E <step-160>`.
+* Same category: the same construction at metal 3, with its capacitor module,
   {ref}`WTIAL3 <step-134>`, {ref}`CAPILD <step-135>`; the thin stacks
-  where the films are explained in full: {ref}`TIAL6 <step-112>`,
-  {ref}`TIAL12 <step-123>`; the top metal: {ref}`WTIAL5 <step-161>`.
+  where the films are explained in full, {ref}`TIAL6 <step-112>`,
+  {ref}`TIAL12 <step-123>`; the top metal, {ref}`WTIAL5 <step-161>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -340,32 +396,34 @@ account is at {ref}`TIAL6 <step-112>` and the thick-film changes at
 
 ## Open questions
 
-* No public source gives the metal-4 film thicknesses or the
+* **Film thicknesses and bottom layer.** No public source gives the metal-4 film thicknesses or the
   bottom-layer material; the Cypress reports that describe S8 metal
   stacks stop at metal 3.[^cyp-qtp-113005][^cyp-qtp-123907] The Ti or
   TiW reading discussed at {ref}`WTIAL3 <step-134>` applies here
   unresolved.
-* Whether the cap is TiW or the Ti/TiN of the stack that the February
+* **TiW or Ti/TiN cap.** Whether the cap is TiW or the Ti/TiN of the stack that the February
   2014 S8P qualification put in its place "excluding top metal
   layers"[^cyp-qtp-123907] is not settled, because the public record
   does not say which levels of a five-metal S8P flow that exclusion
-  covers. The answer changes what {ref}`CAP2ME <step-153>` can stop on,
+  covers.
+
+  The answer changes what {ref}`CAP2ME <step-153>` can stop on,
   what {ref}`MM4E <step-155>` must break through and what
   {ref}`VIM4E <step-160>` lands on; see
   {ref}`overview-metal-cap`.
-* Whether the SKY130 metal 4 is the 0.845 µm of the PDK's diagram[^pdk-04]
+* **Metal-4 thickness.** Whether the SKY130 metal 4 is the 0.845 µm of the PDK's diagram[^pdk-04]
   or the 0.8 µm of the assumptions table's P-flow entry[^pdk-03] — the same
   difference discussed for metal 3 at {ref}`MM3E <step-140>` — is not
-  public; the 2 µm "S8Q*/SP8Q" entry[^pdk-03] is read here as another
+  public. The 2 µm "S8Q*/SP8Q" entry[^pdk-03] is read here as another
   flow.
-* That SKY130 is the "P" flow of the rule tables (SKY130P*, PLM) is our
+* **The P flow.** That SKY130 is the "P" flow of the rule tables (SKY130P*, PLM) is our
   reading of the via-4 and metal-fuse notes,[^pdk-periph] of the mask
   table's flagged "-PLM" entries[^pdk-05] and of the background page's
   "p - penta".[^pdk-02]
-* Whether fuses are drawn in metal 4 in SKY130 designs as
+* **Fuses in metal 4.** Whether fuses are drawn in metal 4 in SKY130 designs as
   published, and how that constrains this stack, is not public beyond
   the fuse note.[^pdk-periph]
-* Deposition temperatures, pressures, powers and whether the Al–Cu is
+* **Deposition conditions.** Deposition temperatures, pressures, powers and whether the Al–Cu is
   deposited in one pass or several are not public.
 
 <!-- footnotes -->
