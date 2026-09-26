@@ -117,3 +117,30 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   `number_order` change is REGROUPED (the Fab 4 sentence); read, same digits. `--strict-words` LOST:
   `strength`×2 (and, masked by glance words, `which` → `That`, `and`). cov: three flags, all pairing
   noise (the quick-facts table; the moved step-7 asides keep their `skw-01` markers). inv: OK.
+
+### 156 NILD6 — done (base `0b90fee3`)
+
+* Lead (base 184, one paragraph; its 100-word second sentence carried two dash asides): three
+  paragraphs (80, 34, 74). The main clause stays whole ("Over the freshly etched metal-4 lines of MM4E
+  and over the second-level MiM capacitors on some of them, a silicon dioxide film is deposited thick
+  enough …"); the semicolon clause "CMPM4 polishes it flat …" follows as its own sentence ("it" is
+  still the film, the subject before it); the two dash asides follow in their base order: "The lines
+  are 0.845 µm tall …" (declared "The lines are", 141 form) and "The diagram's k = 4.0 … (inference)."
+  as its own paragraph, the trailing "(inference)" on the whole aside as in the base. The 59-word
+  diagram sentence split before "places": "… and draws no separate "_C" film beside it.[^pdk-04] It
+  places …" (declared: repeated `pdk-04`, "It" = the diagram; 141 repeated the same marker).
+* Post-figure paragraph split before "The surface also carries …"; its colon became a full stop.
+* R-CATEGORY (141 form): classification sentence alone ("…, which sets out" → ". NILD3 sets out",
+  declared restored noun; word `which` lost); the two routes as bullets; the SkyWater sentences as a
+  paragraph; "What is specific …, is the larger … and the fact that …" → "… is:" with two bullets
+  (every word kept but the joining "and").
+* Why: four items split at their semicolons or colon (void fill, capacitor charging, capacitance, via
+  4, overburden), the first two with a continuation paragraph; every marker and hedge stays with its
+  clause ("on our reading" in the overburden item is in its own half).
+* How: scope sentence italic; step 1 split at its semicolon.
+* R-TOOLS (141 form; the model sentence as a continuation paragraph after the grades). R-RELATED
+  (Previous · Next · Same module: 150–163 share the Phase cell · Same category · Category page).
+  R-OPENQ labels on four bullets. Glance box (141 form).
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `pdk-04`, "The
+  lines are", "It", "NILD3", the labels and "Specific"; every `number_order` change REGROUPED, read.
+  `--strict-words` LOST: `strength`×2 (and `which`). cov: three flags, all pairing noise. inv: OK.
