@@ -45,7 +45,7 @@ generated index-links block and `## References` are **excluded**. Before = `main
 |---|---:|---:|
 | paragraphs > 100 words | 36 | 0 |
 | list items > 60 words | 45 | 1 |
-| sentences > 45 words | 104 | 3 |
+| sentences > 45 words | 104 | 7 (after the fix round; 2 of them only because the bold label is counted) |
 | table cells > 25 words | 0 | 0 |
 
 `measure5.py` as committed (it counts `{figure}` captions): paragraphs 49 → 13 (the 13 remaining are the
@@ -55,7 +55,8 @@ generated index-links block and `## References` are **excluded**. Before = `main
 
 * Item: 082 "It does not dope the PMOS gate" (63 w lead block; its only seam is before "So SKY130
   avoids …", which may not open a continuation paragraph).
-* Sentences: 076 "The film must coat the foot of a gate line …" (46; the only further split would move a
+* Sentences (after the fix round): 083's profile-pair and device-specific leads are flagged at 48 and 47
+  only because `caps.py` counts their bold labels (41 and 44 words without); 076 "The film must coat the foot of a gate line …" (46; the only further split would move a
   20-word parenthetical and reorder its numbers); 083 the tilted-extension lead (51, restored in the fix
   round); 086 the test-tile values with the full extraction hedge repeated (50, fix round); 087 the first
   Resources bullet (46, restored in the fix round); 087
@@ -147,7 +148,8 @@ sentence), L4 (088 reseller evidence directly after its grade), L5 (088 lead bre
 depth, then three paragraphs), L6 (080 glance Why), L7 (083 wording), L8 (079 split with "On that
 reading" repeated). Guide rulings applied to these pages: the unit rule (081 and 085 rule tables:
 header "Value", every value cell with its unit); rulings 1, 3, 4 and 7 already matched the pages (076's
-list-closing "These are …"; no item under sub-bullets with a lead over 30 words; 083 and now 079 repeat
+list-closing "These are …"; 088's third lead paragraph opens "This reference describes", the
+site's name for itself, not a connective; no item under sub-bullets with a lead over 30 words; 083 and now 079 repeat
 a leading hedge; bare-quotation *SkyWater says:* on 079, 083, 086); rulings 5 and 6 are coordinator or
 tool items. L9 (077 `[^regis-1997]` repeat) left as the review accepts it.
 
