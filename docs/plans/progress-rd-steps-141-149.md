@@ -204,6 +204,48 @@ lithography: the mask step …" → "… lithography. It is the mask step …", 
   — "Via3"") occurs under Why and Open questions, as in the base; each copy carries its own argument,
   so none deleted.
 
+### 145 VIM3E — done
+
+Base `f333b98f`. Caps before: 3 paragraphs, 3 items, 9 sentences over; after 0/0/0. Lead 142 words
+(base 141, one paragraph) as an opening paragraph, a two-item list and a closing paragraph (32, 70,
+40); first sentence 5 words.
+
+* Lead, R-LIST: "… down to two kinds of floor at once:" announces a count; one bullet per floor, every word kept
+  ("and" dropped, comma → semicolon), each with its own markers (`cyp-qtp-*` and `pdk-04` on the
+  metal-3 cap, `pdk-07` on the plates). The floor wording ("the refractory cap of the metal-3 lines")
+  is unchanged — see Content problems.
+* Post-figure paragraph (135 words) split before "The plate floor is higher …"; that 50-word sentence
+  split at ", so" ("So a via …", allowed where the split requires it), the dash aside a comma
+  apposition in place, so "on our reading" stays on the 0.1–0.2 µm and "(inference from the
+  construction)" on the So-sentence (D1: the other half carries its own hedge).
+* Step category (190 words, one paragraph): classification sentence alone (130 form); the VIME
+  sentence split into "VIME sets out … within the flow." + the stop-layer sentence + "So the etch must
+  …" + "CTME sets out the underlying surface chemistry." (the elided verb restored, 130 form); the
+  17-word parenthetical "(which is why the Ti-bearing part … ; not separately sourced here)" stays in
+  parentheses as its own sentence directly after the clause it explains, "which" → "That" (it follows
+  "…volatile only at elevated temperature." at once); the dual-depth sentence's dash aside (the ARDE
+  review, `gottscho-1992`) moved after the sentence it interrupted, so "here that shallow floor" still
+  follows "the shallow floor" (REGROUPED); "What is specific to this instance is the dual-depth
+  landing." left as its own label (R-CATEGORY step 3).
+* Why: plate item — the Schaepkens dash aside (with `schaepkens-1999` and its "by inference") became
+  "That protection is a steady-state fluorocarbon film …" after the sentence it interrupted (subject
+  and verb added; "them" still Schaepkens et al.); metal-3-cap item split at the semicolon with
+  `pat-etchstop-ti` repeated on the quotation sentence (130 form; declared ADDED marker); charging item
+  split at the semicolon.
+* How: italic scope sentence; step 3 split after the cited chemistry ("It has high selectivity …",
+  subject and verb added; WORDS LOST `with`), its "(industry practice; … Freescale patent)" stays on
+  the selectivity sentence, the other half being cited; step 4 dash aside → "Wodecki describes …" and
+  "The etch is run by time …" a continuation (130 form); step 5 the ash-class dash aside with
+  `skw-01` a continuation "The ash is GaSonics, Iridia or Mattson class in SkyWater's list." (130
+  form); step 7 the test-tile sentence a continuation.
+* R-TOOLS: "No dielectric etcher" bullet — grade as `*Runs this step:* **weak** …` after the "All three
+  carry …" continuation (130 form); Exelan bullet unchanged; strip/clean `*Tool exists:*`.
+* R-RELATED: Previous · Next · Depends on · Same category · Category page. R-OPENQ: five labels.
+* R-GLANCE: "none assignable", with the page's **weak**; numbers `pdk-periph`, `pdk-04`, `pdk-08`.
+* `check_preserved --allow-regrouped`: ADDED = glance + the repeated `pat-etchstop-ti`; REGROUPED:
+  the lead list, the plate-floor split. WORDS LOST: `strength`×2, `with`. No DUPLICATED line.
+* `cov`: 7 flags, all read (pairing noise; hedges on the neighbouring sentence as above).
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
