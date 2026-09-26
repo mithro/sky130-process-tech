@@ -10,16 +10,36 @@
 | **Previous step** | {ref}`MM5E <step-163>` |
 | **Next step** | {ref}`NSM <step-165>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits, on this reference's reading, the thin oxide the
+  PDK's stack diagram labels TOPOX over the etched metal 5 — the first
+  film of the passivation module.
+* **Why:** a buffer between the aluminium and the passivation nitride,
+  and an interface for the pad opening (inference for SKY130).
+* **Public numbers:** "TOPOX K=3.9", 0.09 µm on the metal top and
+  0.070 µm on its sidewall, on the PDK's stack diagram.[^pdk-04]
+* **Likely SkyWater tool:** PECVD TEOS "C2 and Producer" — **strong** for
+  the capability; the assignment of this film to the TEOS process is an
+  **inference**.[^skw-01]
+* **Not public:** what the film is for, its precursor, thickness and
+  conditions, and what dielectric is left over the metal fuses (→ Open
+  questions).
+:::
+
 ## What this step is
 
 `NFUSOX` is the first deposition after the last metal etch. The step
-list calls it "Fuse oxide deposition" and does not explain the film;
-this reference reads it as the thin, blanket, low-temperature oxide
+list calls it "Fuse oxide deposition" and does not explain the film.
+This reference reads it as the thin, blanket, low-temperature oxide
 the PDK's stack diagram labels TOPOX, laid over the freshly etched
 metal-5 lines, pads and the {ref}`NCAPOX6 <step-158>` oxide between
-them — an inference set out below, and one that does not settle
+them. This is an inference set out below, and one that does not settle
 whether the same film is also the controlled dielectric over the
-PDK's metal fuses (see *Open questions*). It
+PDK's metal fuses (see *Open questions*).
+
+`NFUSOX`
 opens the {term}`passivation` module — the insulating "glass" that seals the
 finished circuit — which continues with the silicon nitride of
 {ref}`NTSD <step-167>` and is cut open over the
@@ -34,43 +54,64 @@ finished circuit — which continues with the silicon nitride of
 Before, the etched metal-5 shapes with the cap oxide bare between them; after, a thin oxide laid over the whole wafer, on their tops, down their sidewalls and across the floor between them. The page reads this film as the one the PDK's stack diagram labels TOPOX (an inference); the diagram dimensions it as 0.09 µm on the top of the metal and 0.070 µm on its sidewall, beside 1.26 µm for metal 5.[^pdk-04] It is drawn with one thickness everywhere: close to its proportion to the metal on the top, and thicker than it is on the sidewall. The drawn space between the shapes is about 0.8 times as deep as it is wide, the proportion the page's arithmetic gives a minimum space. Which films clad metal 5 is not public (the overview of the metal cap sets out the evidence). The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The underlayer of metal 5, the via-4 fill, the metal-4 line, the capacitor plates and the oxides are drawn but not labelled, nor, in the lower panel, is the aluminium–copper. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK's process stack diagram draws exactly such a film. Directly on
-`metal5` (1.26 µm thick on the diagram) it shows a thin layer labelled
-"TOPOX K=3.9", dimensioned 0.09 µm on the top of the metal and
-0.070 µm on its sidewall, and over that a thicker "TOPNIT K=7.5"
-nitride dimensioned 0.54 µm on top and 0.4223 µm on the sidewall;
-a "glass cut" is drawn through both over the metal, and a
-polyimide ("PI1 K=2.94") tops the stack.[^pdk-04] Two Cypress
+`metal5` (1.26 µm thick on the diagram) it shows:[^pdk-04]
+
+* a thin layer labelled
+  "TOPOX K=3.9", dimensioned 0.09 µm on the top of the metal and
+  0.070 µm on its sidewall;
+* over that, a thicker "TOPNIT K=7.5"
+  nitride dimensioned 0.54 µm on top and 0.4223 µm on the sidewall.
+
+A "glass cut" is drawn through both over the metal, and a
+polyimide ("PI1 K=2.94") tops the stack.[^pdk-04]
+
+Two Cypress
 qualification reports from the same Bloomington fab, for the R7FT-3R
 technology and the S8DI variant of S8, describe their passivation in the
-same two-layer form: "1000Å TEOS / 9000Å PECVD Nitride" for the 0.18 µm
-R7FT-3R derivative in 2005,[^cyp-qtp-014807] and "1000A TEOS/9000A Si3N4"
-for the S8DI metal-stack-change report of 2014,[^cyp-qtp-123907] while the
+same two-layer form:
+
+* "1000Å TEOS / 9000Å PECVD Nitride" for the 0.18 µm
+  R7FT-3R derivative in 2005;[^cyp-qtp-014807]
+* "1000A TEOS/9000A Si3N4"
+  for the S8DI metal-stack-change report of 2014.[^cyp-qtp-123907]
+
+The
 2013 report for the S8TNV-5R variant gives only "7000 +/- 2000A
 Nitride".[^cyp-qtp-113005]
+
 The step list used in this reference does not explain what the oxide
-is for; we read `NFUSOX` as the
-deposition of the thin undoped oxide the PDK labels TOPOX (inference:
+is for. We read `NFUSOX` as the
+deposition of the thin undoped oxide the PDK labels TOPOX. (Inference:
 it is the only oxide the diagram draws between metal 5 and the
 nitride, and its 0.09 µm is close to the 1000 Å TEOS film of the
-Cypress reports[^pdk-04][^cyp-qtp-123907]).
+Cypress reports.[^pdk-04][^cyp-qtp-123907])
 
 ## Step category
 
 `NFUSOX` is a {ref}`Thin-film deposition <category-deposition>` step
 of the *{term}`PECVD` oxide* class, like the cap oxides
-{ref}`NCAPOX3 <step-117>` to {ref}`NCAPOX6 <step-158>`. Two things set
-it apart. It is deposited not on a polished, flat oxide but directly on
-patterned aluminium — 1.26 µm-tall metal-5 lines at 1.600 µm minimum
-width and space (m5.1, m5.2[^pdk-periph][^pdk-04]) — so it must cover
-tops, sidewalls and the floor between lines (the diagram's separate
-top and sidewall dimensions show a conformal film[^pdk-04]). And it is
-the first layer of the permanent passivation: no {term}`CMP` follows,
-nothing is deposited on it except the nitride, and it stays on the
-finished die except where the pad and seal openings are cut. The
-metal-5 spaces are wide (an {term}`aspect ratio` of about 0.8:1, our
-arithmetic from the PDK values), so {term}`gap fill` is not the
-problem it is at {ref}`NILD5 <step-141>`.
+{ref}`NCAPOX3 <step-117>` to {ref}`NCAPOX6 <step-158>`.
+
+Two things set
+it apart:
+
+* It is deposited not on a polished, flat oxide but directly on
+  patterned aluminium — 1.26 µm-tall metal-5 lines at 1.600 µm minimum
+  width and space (m5.1, m5.2[^pdk-periph][^pdk-04]). So it must cover
+  tops, sidewalls and the floor between lines (the diagram's separate
+  top and sidewall dimensions show a conformal film[^pdk-04]).
+* It is
+  the first layer of the permanent passivation: no {term}`CMP` follows,
+  nothing is deposited on it except the nitride, and it stays on the
+  finished die except where the pad and seal openings are cut.
+
+The
+metal-5 spaces are wide, so {term}`gap fill` is not the
+problem it is at {ref}`NILD5 <step-141>`. (An {term}`aspect ratio` of about 0.8:1, our
+arithmetic from the PDK values.)
 
 ## Why this step exists
 
@@ -78,16 +119,19 @@ The physics of an oxide–nitride passivation is well documented; the
 reasons for the oxide in SKY130 specifically are inferred.
 
 * **A buffer between aluminium and nitride.** PECVD silicon nitride is
-  the moisture and mobile-ion barrier of a plastic-packaged die — Sinha
-  et al. described reactive-plasma Si–N films for MOS-LSI
-  passivation,[^sinha-1978] and a later seal-ring patent describes the
-  passivation nitride over its passivation oxide as "a very good barrier
-  of moisture and ionic contamination"[^pat-sealring-zeevo] — but it is
+  the moisture and mobile-ion barrier of a plastic-packaged die, but it is
   hydrogen-rich[^lanford-1978] and carries a large intrinsic stress
   whose sign and magnitude depend on the deposition
   conditions.[^claassen-1985]
+
+  Sinha
+  et al. described reactive-plasma Si–N films for MOS-LSI
+  passivation,[^sinha-1978] and a later seal-ring patent describes the
+  passivation nitride over its passivation oxide as "a very good barrier
+  of moisture and ionic contamination".[^pat-sealring-zeevo]
+
   A thin oxide between the metal and the nitride separates the
-  aluminium from the nitride's deposition chemistry; stress in the dielectric over
+  aluminium from the nitride's deposition chemistry. Stress in the dielectric over
   aluminium lines drives {term}`stress-induced voiding` (Yue, Funsten and
   Taylor[^yue-1985]), and compressive stress in a confined metal film
   relaxes by {term}`hillock` growth, the general mechanism Chaudhari
@@ -95,18 +139,22 @@ reasons for the oxide in SKY130 specifically are inferred.
   this purpose in SKY130 is our inference from the stack and the
   industry pattern.[^txt-05]
 * **Doped or undoped.** Passivation oxides under nitride have often
-  been phosphorus-doped — the seal-ring patent notes that the
+  been phosphorus-doped, but too much phosphorus corrodes
+  aluminium, as Paulson and Kirk showed for passivation
+  glasses.[^paulson-1974]
+
+  The seal-ring patent notes that the
   passivation oxide "is usually doped with phosphorous to form
   phosphosilicate glass (PSG) to absorb and hold the moisture", and also
   that in 0.25 and 0.18 µm technologies, where the passivation oxide
   "has been deposited by HDP (high density plasma) and it has been
   difficult to incorporate the phosphorous initially", an oxide "without
   phosphorous has been used and has passed reliability
-  tests"[^pat-sealring-zeevo] — but too much phosphorus corrodes
-  aluminium, as Paulson and Kirk showed for passivation
-  glasses.[^paulson-1974] The R7FT-3R report lists "Free Phosphorus
+  tests".[^pat-sealring-zeevo]
+
+  The R7FT-3R report lists "Free Phosphorus
   contents in top glass layer(%): 0%"[^cyp-qtp-014807] and the PDK gives
-  TOPOX the undoped-oxide permittivity of 3.9;[^pdk-04] we read the
+  TOPOX the undoped-oxide permittivity of 3.9.[^pdk-04] We read the
   SKY130 film as undoped (inference).
 * **An interface for the pad opening.** The pad etch
   ({ref}`PDME <step-169>`) cuts the nitride with fluorine chemistry;
@@ -120,8 +168,8 @@ have no intermediate layer between nitride and metal.
 
 ## How it is typically performed
 
-An industry-generic first passivation oxide over a thick aluminium top
-metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic first passivation oxide over a thick aluminium top
+metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Surface.** The wafer comes from the {ref}`MM5E <step-163>`
    post-etch passivation, strip and polymer clean; the {term}`queue time`
@@ -136,7 +184,9 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 3. **Chemistry.** {term}`TEOS`/O₂ plasma oxide — Raupp, Cale and Hey
    analyse its kinetics[^raupp-1992] — or SiH₄/N₂O plasma oxide, whose
    properties depend on RF power as Chapple-Sokol, Tierney and Batey
-   measured.[^chapple-sokol-1989] Adams et al. characterised plasma
+   measured.[^chapple-sokol-1989]
+
+   Adams et al. characterised plasma
    oxide composition and hydrogen,[^adams-1981-pecvd] and Lanford and
    Rand found 5.7 at.% hydrogen, all as OH, in a plasma SiO₂ deposited
    at 300 °C.[^lanford-1978] The Cypress reports name TEOS for the
@@ -165,12 +215,14 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **PECVD TEOS "C2 and Producer" with "low temp options".**[^skw-01]
-  Strength: **strong** for the capability; the assignment of this film
-  to the TEOS process is an **inference** from the "TEOS" of the Cypress
-  passivation descriptions at the same fab — the S8DI variant of S8 in
-  2014[^cyp-qtp-123907] and the 0.18 µm R7FT-3R technology in
-  2005.[^cyp-qtp-014807]
+* **PECVD TEOS "C2 and Producer" with "low temp options"**[^skw-01]
+  - *Tool exists:* **strong** for the capability.
+  - *Runs this step:* the assignment of this film
+    to the TEOS process is an **inference** from the "TEOS" of the Cypress
+    passivation descriptions at the same fab — the S8DI variant of S8 in
+    2014[^cyp-qtp-123907] and the 0.18 µm R7FT-3R technology in
+    2005.[^cyp-qtp-014807]
+
   "C2" as a Novellus Concept Two and "Producer" as an Applied Materials
   Producer are readings of the names,[^novellus-history][^amat-10k] not
   stated by SkyWater.
@@ -192,14 +244,15 @@ metal in a 200 mm, 130 nm-era fab (SKY130's recipe is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`MM5E <step-163>` (the metal-5 lines and pads it
-  covers). Next: {ref}`NSM <step-165>` and {ref}`NSME <step-166>` (the
+  covers).
+* Next: {ref}`NSM <step-165>` and {ref}`NSME <step-166>` (the
   seal-ring opening), then {ref}`NTSD <step-167>` (the passivation
   nitride over this oxide).
-* The pad opening through this film: {ref}`PDM <step-168>`,
-  {ref}`PDME <step-169>`; the anneal that follows the passivation:
+* Same module: the pad opening through this film, {ref}`PDM <step-168>`,
+  {ref}`PDME <step-169>`; the anneal that follows the passivation,
   {ref}`ALLY <step-170>`.
-* The metal fuses the PDK places in metal 4: {ref}`MM4 <step-154>`.
-* The other plasma oxides of the back end: {ref}`NCAPOX3 <step-117>`,
+* Mask: the metal fuses the PDK places in metal 4, {ref}`MM4 <step-154>`.
+* Same category: the other plasma oxides of the back end, {ref}`NCAPOX3 <step-117>`,
   {ref}`NCAPOX6 <step-158>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
@@ -283,30 +336,37 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The step list used in this reference does not explain the film; that
+* **The film.** The step list used in this reference does not explain the film; that
   it is the PDK's TOPOX is our reading. Its precursor (TEOS or silane),
   thickness and deposition conditions are not public; 0.09 µm is the
   diagram's label[^pdk-04] and 1000 Å the Cypress reports' value for
   the S8DI variant and the R7FT-3R technology.[^cyp-qtp-123907][^cyp-qtp-014807]
-* The PDK documents laser-programmable {term}`metal fuses <metal fuse>`
-  — the mf.\* rules with the note "For SP8P\*/SKY130P\* (PLM) CADflow
-  use MM4 for Metal Fuse",[^pdk-periph] a "Laser Fuse Criteria" table and
-  an "Enclosure of fuses by polyimide" rule,[^pdk-03] and a `target`
-  layer (76:44, "Metal fuse target") on the GDS layer number of
-  `pad`[^pdk-06] — and SkyWater lists "Fuse GSI M325" under
+* **The dielectric over the fuses.** The PDK documents laser-programmable {term}`metal fuses <metal fuse>`:
+
+  - the mf.\* rules with the note "For SP8P\*/SKY130P\* (PLM) CADflow
+    use MM4 for Metal Fuse";[^pdk-periph]
+  - a "Laser Fuse Criteria" table and
+    an "Enclosure of fuses by polyimide" rule;[^pdk-03]
+  - a `target`
+    layer (76:44, "Metal fuse target") on the GDS layer number of
+    `pad`.[^pdk-06]
+
+  SkyWater lists "Fuse GSI M325" under
   sort.[^skw-01] No public source describes the dielectric left over
   those fuses or whether this oxide is part of it; fuse patents show why
   that thickness is normally
   controlled.[^pat-fuse-ibm][^pat-fuse-vanguard][^pat-fuse-tsmc]
-* The Cypress reports disagree on whether an oxide lies under the
+* **Oxide under the nitride.** The Cypress reports disagree on whether an oxide lies under the
   nitride (S8TNV-5R lists nitride only[^cyp-qtp-113005]); which
   description applies to SKY130 lots is not public beyond the PDK
   diagram.
-* The stack diagram dimensions 0.3777 µm from the bottom of metal 5 to
+* **Passivation between lines.** The stack diagram dimensions 0.3777 µm from the bottom of metal 5 to
   the top of the TOPNIT beside the line, where it draws no separate
-  TOPOX (our reading of the drawing: 5.3711 µm + 0.3777 µm equals the
+  TOPOX. (Our reading of the drawing: 5.3711 µm + 0.3777 µm equals the
   11.8834 µm polyimide top less the 6.1346 µm polyimide dimension
-  there[^pdk-04]); whether the passivation is really thinner between
+  there.[^pdk-04])
+
+  Whether the passivation is really thinner between
   lines is not stated.
 
 <!-- footnotes -->

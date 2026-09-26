@@ -404,3 +404,44 @@ page. No edit of any kind inside an in-force `{dropdown}`.
 * `check_preserved --allow-regrouped`: the one LOST line is above; ADDED outside the glance only "The
   stack is", the H3 and labels; everything else REGROUPED, read. `--strict-words` LOST: `strength`×2.
   cov: two flags, pairing noise (quick facts; the moved step-7 asides keep `skw-01`). inv: OK.
+
+### 164 NFUSOX — done (base `5c390ad0`)
+
+* Lead (base 113, within 120, one paragraph over 100): two paragraphs (82, 33). The 70-word second
+  sentence split at its semicolon and at its closing dash apposition: "… between them. This is an
+  inference set out below, and one that does not settle …" (declared "This is"). **Listed under note
+  ¹ of §4.1:** the lead goes 113 → 115, within 120; the apposition has no verb of its own, so no
+  zero-word split exists. The second paragraph opens "`NFUSOX` opens the passivation module" (the
+  base's "It", three sentences from its noun; zero words added).
+* R-H3: `### What the public record shows` after the figure caption over the PDK/Cypress passage.
+  R-LIST: the 65-word diagram sentence → "Directly on `metal5` (…) it shows:[^pdk-04]" and the TOPOX
+  and TOPNIT films as two bullets, the glass cut and polyimide as the following sentence with the
+  base's marker (declared repeated `pdk-04` on the lead-in, R-LIST step 1; word `and` lost); the
+  Cypress sentence → "… in the same two-layer form:" and the two TEOS/nitride stacks as bullets, then
+  "The 2013 report for the S8TNV-5R variant gives only "7000 +/- 2000A Nitride"." (word `while`
+  lost). The reading sentence split at its semicolon; its 31-word hedge "(Inference: it is the only
+  oxide … Cypress reports.[^pdk-04][^cyp-qtp-123907])" a parenthetical sentence after it.
+* R-CATEGORY: classification sentence alone; "Two things set it apart." → colon and two bullets
+  ("And" dropped); the first bullet's closing dash ", so it must cover" → ". So it must cover" (the
+  sentence was 49 words); the aspect-ratio gloss "(an aspect ratio of about 0.8:1, our arithmetic
+  from the PDK values)" (12 words) a parenthetical sentence after the gap-fill sentence (R-SENTENCE
+  step 7, its hedge inside it).
+* Why: buffer item — the dash aside (Sinha; the seal-ring patent's quotation) moved, unchanged, to
+  after the sentence it interrupted ("…, but it is hydrogen-rich …[^claassen-1985]" then "Sinha et
+  al. … contamination".[^pat-sealring-zeevo]"), each study keeping its marker; the oxide-buffer
+  sentence split at its semicolon. Doped item — same move for the seal-ring aside; the reading
+  sentence split at its semicolon (its "(inference)" in its own half). The buffer item's lead
+  sentence is 32 words (it has continuation paragraphs, not sub-bullets).
+* How: scope sentence italic (it ends in a colon before the numbered list); step 3 split before
+  "Adams et al." (continuation paragraph).
+* R-TOOLS (143 form; the "C2"/"Producer" reading sentence as the continuation). R-RELATED
+  (Previous · Next · Same module: 164–171 share the Phase cell · Mask: the metal-4 fuse mask · Same
+  category · Category page). R-OPENQ: labels on four bullets; the fuse bullet's dash list as
+  sub-bullets after "The PDK documents laser-programmable metal fuses:" with the question kept last
+  in its base words (R-OPENQ step 2); the between-lines bullet's 23-word "(our reading of the
+  drawing: 5.3711 µm + 0.3777 µm equals …[^pdk-04])" a parenthetical sentence, the question as the
+  continuation.
+* Glance box.
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `pdk-04`, "This
+  is", the H3 and labels; every `number_order` change REGROUPED, read. `--strict-words` LOST:
+  `strength` (and `it` → `NFUSOX`, `while`, `and`). cov: two flags, pairing noise. inv: OK.
