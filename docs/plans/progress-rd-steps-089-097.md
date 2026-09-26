@@ -60,6 +60,46 @@ label is not counted into its sentence. Before = `main` at `e369d634`.
   form, the grade refers to the tools the gloss names).
 * No `{dropdown}` on any of the nine pages; no in-force content anywhere.
 
+### Review fix round (review `rd-steps-089-097`: 0 High, 1 Medium, 6 Low)
+
+* **M1, 094 glance.** Tool line now exactly as the review words it: "none named — no dielectric etcher is
+  on SkyWater's public list; the three listed poly/silicon etchers are **weak** (assignment to the
+  contact etch).[^skw-01]" ("none assignable" had upgraded the body's **weak**).
+* **L1, 096.** The Aviza parenthetical is back inside its sentence, as in the base: "… the only anneal
+  listed with H₂ or forming gas (the furnaces' …, below). Whether …".
+* **L2, 090.** The doubled "On the second" opener is gone. The review's fix (clause re-attached,
+  "using …") measures 51 words with this batch's counter, over the cap, so the sentence is split at the
+  same point with "It uses the GATENIT nitride …" ("It", the polish, the previous sentence's subject).
+* **L3, 093 glance.** Why now says "every well tap in the PDK is reached through a `licon1`".
+* **L4, 093 lead.** "They have the smallest etched bottom in the flow, as the next two sentences
+  show." (the review's first wording).
+* **L5, 094 tool item.** Accepted as is by the review; unchanged.
+* **L6, citation parentheticals.** Left as sentences: both (097 Koerner, 090 Kahng) carry a verb, so the
+  new §1 exemption (attributions and markers only) does not cover them, and putting 097's back inline
+  would bring its sentence to 46 words. Optional in the review.
+* **Guide rulings applied, as worded** (`readability-guide.md`): D3 — §1 lead row and §4.1 note ¹ define
+  the lead as the text up to the `{figure}` block; D4 — §1 parenthetical row exempts attribution-only
+  parentheticals; D5 — R-TOOLS step 3 keeps a two-thing grading sentence whole under *Runs this step:*.
+* Gates after the fix round: main's `check_preserved.py --allow-regrouped` on 090, 093, 094, 096 —
+  only the lines declared in the page entries (093's rule-table order); all checkers 0 problems;
+  `-W` build exit 0.
+
+### For the tool branch (review rulings D1, D2; not done here)
+
+1. **`check_preserved.py --allow-moved "<first ≥ 8 words of the home sentence>"`** (repeatable). It
+   downgrades a LOST in `numbers`, `identifiers`, `quotes`, `markers` or `words` to `MOVED
+   (--allow-moved)` only when all four hold: (1) the base page holds the declared ≥ 10-word run in two
+   different H2 sections; (2) the new page holds it verbatim (whitespace-normalised, markers included)
+   in at least one H2; (3) every LOST token is a token of that run; (4) every footnote label in the
+   deleted copy still occurs on the page. Anything else stays LOST. Guide R-REPEAT **Do** gains step 6:
+   "Run `check_preserved.py` with `--allow-moved` and the home sentence's first words. Name the
+   declaration in the progress file. The reviewer re-runs it." Do not extend `--allow-deduplicated`.
+   Until the flag lands, the reviewer hand-verifies (as for 097).
+2. **A fifth `check_regrouped` condition for rule tables.** A LOST `number_order` tuple is a clean regroup
+   when the added table rows' tuples, each read as `(rule-id digits, value)`, are a per-row permutation of
+   consecutive pairs in the lost tuple, and the multiset of digits is unchanged. Report it as
+   `REGROUPED (rule table)`.
+
 ### Gates (end of batch, in the worktree)
 
 `check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
@@ -94,7 +134,7 @@ LOST lines are 093's rule-table number order (hand-checked, entry 093) and 097's
 
 ## Content problems for the owner
 
-Kept verbatim on both sides; not fixed.
+Kept verbatim on both sides; not fixed. The review agrees with both (094 is the industry-standard reading; 095 attributes the stop-on-SPOX reading to a page that does not contain it; the cap wording should be scoped to caps on the field oxide in a content pass).
 
 1. **094 against 095 on the contact-bottom oxide** (the S7 figure notes). 094's lead says the etch
    reaches "the SPOX oxide over a source/drain or tap, which the etch must also clear", and its recipe
