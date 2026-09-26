@@ -239,3 +239,66 @@ Model pages: 078, 083. One commit per page.
 * **Caps.** para > 100: 1 → 0; item > 60: 6 → 0; sentence > 45: 9 → 1 — the dielectric-anneal lead
   (46, of which 3 are the bold label that is the sentence's subject; its only other seam would need an
   added "also").
+
+### 093 LICM1 — done
+
+* **R-H3.** `### What the public record shows` after the figure caption, over the 225-word PDK passage
+  (mask table, layers, rules, minimum-CD and physical-criteria entries). The lead is the text before
+  the figure: 137 words in the base, 139 now (§4.1 ¹: over 120 in the base; two paragraphs, 59 + 78,
+  both under 100, so no third). Listed.
+* **R-TABLE.** The ten-part `licon` rule sentence → a `Rule | Constrains | Value (µm)` table under the
+  lead-in "The rules head the `licon` section "Defines contacts …" and give:[^pdk-periph]" (the marker
+  that closed the enumerating sentence stays on the lead-in, step 3). One row per rule in the base
+  order; the three nitride-cut rules, named together in the base, are one row. The four rules with no
+  value are `—`; the two quoted rules stay quoted in their cells. All values are µm in the base, so the
+  unit is in the header ("µm" leaves five cells, WORDS LOST "m"×2 after the glance's own "µm"). Phone
+  tile: no horizontal scroll. As on 078, no `:::{table}` wrapper (the lead-in is the caption).
+  Hand-checked: licon.1 0.170, licon.2 0.170, licon.5a 0.040, licon.8 0.050, licon.11 0.055 — the base
+  digits; the tool reports the rule sentence as a number-order LOST only because each row puts the
+  rule id before its value.
+* **R-LIST.** Step category: "Hole layers differ from line layers in every lithographic respect:" →
+  four plain sub-bullets, one respect each.
+* **R-CATEGORY.** The 61-word classification sentence split after the parenthesis that closes its
+  dash appositive: "`LICM1` is a … step of the *contact-hole* type — the first of the flow's three hole
+  layers (…)." (22 words). Two sentences about this step remain → `**Specific to this step:**` and a
+  bullet each: "At 0.17 µm holes …, `LICM1` is printed at a k1 close to …" (the layer named, not "it",
+  because the sentence before ends on "vias"), with the hole-layer list as its continuation; "The
+  surface is flat …".
+* **R-PARA / R-SENTENCE.** Lead: the 50-word sentence loses its dash pair, whose content becomes "The
+  holes are 0.17 µm squares at minimum." (no marker was involved); the 79-word sentence split at ", and
+  they have" ("They have …", referent "Those holes", the sentence's subject) and at its colon and at "but"
+  ("But the drawn `licon1` maps …"; `[^pdk-03][^pdk-periph]` stay on the via.1a clause they closed).
+  Record: the mask-table sentence split at its semicolon; the minimum-CD sentence split at ", and the
+  physical criteria" ("The physical criteria give …", a verb for the new sentence). Why "Contact
+  resistance": lead at its semicolon, `[^pdk-08]` repeated on the first half (the marker closed the
+  whole base sentence, masks-b H1). "Enclosure rules": lead at its semicolon, `[^pdk-periph]` repeated
+  on the first half for the same reason. "Slotted" split at its semicolon. "Lithographic difficulty":
+  lead, then the 248 nm passage split at its colon, then the OPC sentence. How "BARC and resist": lead
+  ends after the industry-typical resist thickness; "The resist is thin enough …" (the resist named
+  for the new sentence) and the dash material "The PDK's nominal 1.14 µm "Photoresist
+  thickness"[^pdk-03] is, we infer, the implant-layer value." as sentences of the continuation. How
+  "Exposure": split at its semicolon and before "We therefore infer", as 078 does; the k₁ arithmetic
+  stays inline, as on the 078 model (one sentence, the i-line case).
+* **R-TOOLS.** As 078: DUV stepper/scanner with *SkyWater says:*, *Tool exists:*, *Runs this step:*;
+  tracks and overlay/CD with their grades as sub-bullets. Three tools, no recap table (as 078).
+* **R-OPENQ.** "Exposure tool and resist", "Drawn size to bottom CD", "Mask add and mask drop".
+* **R-RELATED.** Previous and Next as two bullets; the NPCM/NPCME openings and "the films the holes go
+  through" → one `Depends on:` bullet; "what fills them" and "the interconnect they connect to" → one
+  `Feeds:` bullet; "the next hole layer" → `Same category:`; the slotted-resistor bullet keeps its own
+  label, as 078's resistor bullet does; "Mask page:" → `Mask:`. Every gloss and link kept.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does from the lead; Why from the Why intro; Public numbers licon.1/licon.2 0.170 µm
+  `[^pdk-periph]` and the 0.08 µm "Standard Licon bottom CD" `[^pdk-03]`; tool line as 078; Not public
+  from Open questions 1.
+* **Skipped.** R-REPEAT (none); R-DERIVATION (the k₁ line is kept inline as on 078).
+* **Preservation.** ADDED markers `pdk-08`, `pdk-periph` (repeats), `pdk-03`, `pdk-periph`, `skw-01`,
+  numbers 0.08, 0.170, 1, 2, quote "Standard Licon bottom CD", ref `step-094`, hedges "inference",
+  "likely", "not public" (glance); identifiers `LICM1`×2, `licon1` (one pronoun given its noun back,
+  two glance). REGROUPED: nine sentences split at the seams above, same digits in the same order; the
+  rule sentence → table as above. WORDS LOST: "m"×2 (units to the header), "page" ("Mask page:" →
+  "Mask:"), "strength"×3 (R-TOOLS labels).
+* **Marker coverage.** 9 flags, all read: glance condensations (2); the tool head (marker on the
+  *SkyWater says:* line); split pieces whose base marker belonged to the other clause (via.1a /
+  bottom CD; resist thickness / PDK photoresist; the poly.1a marker now in the first bullet); the
+  physical-criteria sentence (tokenizer split at "min.").
+* **Caps.** para > 100: 3 → 0; item > 60: 5 → 0; sentence > 45: 11 → 0.
