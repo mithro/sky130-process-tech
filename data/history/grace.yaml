@@ -1,0 +1,204 @@
+# Evidence for docs/history/grace.md: Grace Semiconductor (宏力半导体, GSMC),
+# Shanghai Huahong Grace (华虹宏力, HHGrace) and Hua Hong Semiconductor
+# (华虹半导体) as a place where Cypress's processes, S8 among them, were run.
+#
+# Same schema as corporate.yaml and extra.yaml. Every quote is verbatim in
+# the file named by `cache`, relative to tmp/cyhist-cache/ in the main
+# checkout (`uv run tools/check_history_quotes.py`). Chinese quotes are kept
+# in the original Chinese; `translation` is this reference's English
+# rendering, not the source's. Names of report preparers, reviewers and
+# approvers, lot numbers and e-mail addresses are never copied.
+#
+# Records captured with the Chrome browser (`capture: browser`) come from
+# sites that refuse scripted fetches; the capture files say so.
+schema_version: 1
+retrieved: 2026-09-26
+records:
+
+# ---- Cypress qualification reports naming HHGrace or GSMC for S8 ----------
+- id: grc-qtp-142304
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 'Product Qualification Report QTP# 142304 version *A: PSoC4 Family, S8PF-10R, Fab 3 HHGrace
+      (CY8C4013, CY8C4014)'
+    date: 2014-07
+    form: qualification report, document 001-92842 Rev. *B
+  url: https://www.cypress.com/file/138901/download
+  archive_url: https://web.archive.org/web/20210517161353/https://www.cypress.com/file/138901/download
+  retrieved: 2026-09-26
+  cache: qtp/qtp-142304.txt
+  sha256: cb0e3361ac2966e829a6049ff0cc02120854bdce08ba5b337c425559fa5090ea
+  quotes:
+  - text: S8PF-10R, Fab 3 HHGrace
+    location: p.1, cover title
+  - text: CY8C20X96A) Device in Fab 5 GSMC on S8DIN-5R Process
+    location: p.2, Product Qualification History, row 090706 (dated Mar 10); the row begins "Qualification
+      of Capsense (CY8C20X36A, CY8C20X46A, CY8C20X66A,"
+  - text: Qualification of Touch Screen PSoC Device in S8TMC-5R Process at
+    location: p.2, Product Qualification History, row 100101 (dated Apr 10), continued "GSMC" on the next
+      line
+  - text: S8P12-10P technology at GSMC-Fab 5
+    location: p.2, Product Qualification History, row 124505 (dated May 13), 5th Generation Touch Screen
+      (TSG5_M)
+  - text: Technology in HHGrace-Fab3
+    location: p.2, Product Qualification History, row 142304 (dated June 14), CY8C4013/CY8C4014 PSoC4
+  - text: 'Metal 1: 150A Ti /250A TiN / 3200Al-0.5%Cu / 90A Ti/500A TiN'
+    location: p.3, Technology/Fab Process Description
+  - text: 'Metal 3: 150A Ti /250A TiN 6500Al-0.5%Cu / 90A Ti/500A TiN'
+    location: p.3, Technology/Fab Process Description (metal 4 is printed the same)
+  - text: 'Metal 5: 190A Ti/450A TiN/10000A Al-0.5% Cu/90A Ti/200A TiN'
+    location: p.3, Technology/Fab Process Description
+  - text: NFUSOX / 1K oxide / 6k Nitride
+    location: p.3, Passivation Type and Thickness
+  - text: SiO2 / 32A/110A
+    location: p.3, Gate Oxide Material/Thickness (MOS)
+  - text: Fab 3 / HHGrace, Shanghai China
+    location: p.3, Name/Location of Die Fab (prime) Facility
+  - text: CMI Fab 4
+    location: p.3, Alternative Fab Facility Site table (location "MINNESOTA, USA", QTP 132802)
+  - text: 5V, Industrial Programmable System on a Chip
+    location: p.3, Device Description
+  - text: Updated technology from S8P12-10R to S8PF-10R in title page
+    location: Document History Page, revision *A
+  - text: Long Term Failure Rate was computed from QTPs 090706, 100101, 124505 & 142304 LFR Data.
+    location: p.6, footnote 2 to the Reliability Failure Rate Summary
+  claims:
+  - {subject: S8PF-10R, attribute: qualified at, value: HHGrace Fab 3 (Shanghai), date: 2014-06}
+  - {subject: S8DIN-5R, attribute: qualified at, value: Fab 5 GSMC, date: 2010-03}
+  - {subject: S8TMC-5R, attribute: qualified at, value: GSMC, date: 2010-04}
+  - {subject: S8P12-10P, attribute: qualified at, value: GSMC-Fab 5, date: 2013-05}
+  - {subject: S8PF-10R at HHGrace Fab 3, attribute: metal layers, value: '5, Ti/TiN/AlCu/Ti/TiN'}
+  - {subject: S8PF-10R at HHGrace Fab 3, attribute: gate oxides, value: 32 Å and 110 Å}
+  - {subject: S8PF-10R, attribute: alternative fab, value: CMI Fab 4 (QTP 132802)}
+  notes: The cover and page 2 say S8PF-10R; the revision history says the title was changed from
+    S8P12-10R, and cypress.com's page for the report kept the old name ("S8P12-10R, Fab 3 HHGrace"). The
+    history table dates the first S8 qualification at the Shanghai foundry to March 2010 (QTP 090706,
+    CapSense, "Fab 5 GSMC"); the reports 090706, 100101 and 124505 themselves were not found in a public
+    copy (Infineon now serves them only after log-in). The metal-1 recipe is the one Fab 4 moved to in
+    2013 (grc-qtp-123907) and the one the HHGrace Fab 3 R95LD-3R report prints (qtp-091206).
+
+- id: grc-qtp-152604
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation (an Infineon Technologies company)
+    title: 'Automotive Product Qualification Report QTP# 152604 version *B: Automotive Generation6
+      TouchScreen (TSG6_XL) Product Family, S8SPF-10P Technology, HHGrace1 (CYAT8168X)'
+    date: 2020-07
+    form: qualification report, document 002-12007 Rev. *B
+  url: https://www.cypress.com/file/278091/download
+  archive_url: https://web.archive.org/web/20201205000354/https://www.cypress.com/file/278091/download
+  retrieved: 2026-09-26
+  cache: qtp/qtp-152604.txt
+  sha256: d1ce899b21a318aa2b4f542ad6707dd51ac306bcc5b2bd87007451365499b4e6
+  quotes:
+  - text: S8SPF-10P Technology, HHGrace1
+    location: p.1, cover title
+  - text: HHNEC / China
+    location: p.3, Name/Location of Die Fab (prime) Facility
+  - text: HHGrace Fab1 / S8SPF-10P
+    location: p.3, Die Fab Line ID/Wafer Process ID
+  - text: Proprietary
+    location: p.3, printed in place of the metal layers, metal composition, passivation, design rule and
+      gate oxide
+  claims:
+  - {subject: S8SPF-10P, attribute: qualified at, value: HHGrace Fab 1, date: 2016-03}
+  - {subject: HHGrace Fab 1, attribute: named as, value: HHNEC / China}
+  notes: The qualification history dates the qualification to March 2016 ("Mar 16"). The report calls the
+    fab both "HHNEC" and "HHGrace Fab1", the names before and after the 2011 merger. Unlike the 2014 HHGrace
+    Fab 3 report it withholds the whole stack as "Proprietary".
+
+- id: grc-qtp-164010
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 'Product Qualification Report QTP#164010 version **: EZ-PD CCG2 USB Type-C PD Controller Device
+      Family, S8PR2-10R Technology, HH Grace Fab 1'
+    date: 2017-09
+    form: qualification report, document 002-21135 Rev. **
+  url: https://www.cypress.com/file/383716/download
+  archive_url: https://web.archive.org/web/20211025133935/https://www.cypress.com/file/383716/download
+  retrieved: 2026-09-26
+  cache: qtp/qtp-164010.txt
+  sha256: 8a4c49cd1019417367acfde2116a1373c2dd9a4a8b113cfe3c952fdc5e9e6144
+  quotes:
+  - text: S8PR2-10R Technology, HH Grace Fab 1
+    location: p.1, cover title
+  - text: HH Grace (Fab 1), Taiwan
+    location: p.3, Name/Location of Die Fab (prime) Facility
+  - text: S8PR-10R
+    location: p.3, Generic Process Technology/Design Rule
+  - text: Bloomington, Minnesota
+    location: p.3, Alternative Fab Facility Site table, Fab 4 (QTP 145202)
+  - text: Austin, Texas
+    location: p.3, Alternative Fab Facility Site table, Fab 25 (QTP 160809)
+  claims:
+  - {subject: S8PR2-10R, attribute: qualified at, value: HH Grace Fab 1, date: 2017-09}
+  - {subject: S8PR2-10R, attribute: alternative fabs, value: Fab 4 (Bloomington) and Fab 25 (Austin)}
+  notes: The fab-location field says "Taiwan", which contradicts every other source for HHGrace (Shanghai);
+    read as a clerical error. The stack is withheld as "Proprietary".
+
+- id: grc-qtp-123907
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 'Fab Process Qualification Report QTP# 123907, 132302, 132301: Metal Stack Change, S8 Technology,
+      Fab 4 CMI'
+    date: 2014-03
+    form: qualification report, document 001-91369 Rev. **, attached to PIN145273
+  url: https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: qtp/qtp-123907.txt
+  sha256: 9de6a1236c9e70ca1ff17a3e096e7fa71d2229b78af59bd9c6a75f0bfe8c957d
+  quotes:
+  - text: 'Metal 1: 150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN'
+    location: p.3, Technology/Fab Process Description (S8DIN-5R at Fab 4)
+  - text: Fab 4, CMI-Minnesota
+    location: p.3, Name/Location of Die Fab (prime) Facility
+  - text: 'QTP 123907: METAL STACK CHANGE, S8DIN TECHNOLOGY, FAB 4 CMI'
+    location: Document History Page, document title
+  claims:
+  - {subject: S8DIN-5R at Fab 4, attribute: metal 1 after the 2013 change, value: Ti/TiN/AlCu/Ti/TiN 150/250/3200/90/500 Å}
+  notes: The same report is cited on the overview page as the source of the 2013-2014 Fab 4 metal-stack
+    change from Ti/AlCu/TiW to Ti/TiN/AlCu/Ti/TiN. Copy hosted by a Cypress distributor, Tokyo Electron
+    Device.
+
+- id: grc-ifx-qtp-122801
+  origin: cypress
+  source:
+    publisher: Infineon Technologies (page for a Cypress report)
+    title: 'QTP 122801: Capsense Device Family S8DIN-5R Fab 5 GSMC'
+    date: 2021-11-11
+    form: document listing page (the PDF needs an Infineon log-in and was not read)
+  url: https://www.infineon.com/cms/en/product/gated-document/qtp-122801-capsense-device-family-s8din-5r-fab-5-gsmc-8ac78c8c7d710014017d714c885f12e0/
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/ifx-gated-qtp-122801.txt
+  quotes:
+  - text: 'QTP 122801: Capsense Device Family S8DIN-5R Fab 5 GSMC'
+    location: document title on the listing page
+  claims:
+  - {subject: S8DIN-5R, attribute: qualified at, value: Fab 5 GSMC}
+  notes: Title only; the report body is behind a log-in and was not read.
+
+- id: grc-ifx-qtp-141906
+  origin: cypress
+  source:
+    publisher: Infineon Technologies (page for a Cypress report)
+    title: 'QTP 141906: Generation 5 Touch Screen (TSG5_M) Product Family S8P12-10P HHGrace Fab1 (CYTMA4xx
+      / CYTMA5xx)'
+    date: null
+    form: document listing page (the PDF needs an Infineon log-in and was not read)
+  url: https://www.infineon.com/cms/en/product/gated-document/qtp-141906-generation-5-touch-screen-tsg5-m-product-family-s8p12-10p-hhgrace-fab1-cytma4xx-cytma5xx-8ac78c8c82ce56640182da34ac9669cc/
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/ifx-gated-qtp-141906.txt
+  quotes:
+  - text: 'QTP 141906: Generation 5 Touch Screen (TSG5_M) Product Family S8P12-10P HHGrace Fab1 (CYTMA4xx
+      / CYTMA5xx)'
+    location: document title on the listing page
+  claims:
+  - {subject: S8P12-10P, attribute: qualified at, value: HHGrace Fab 1}
+  notes: Title only; the report body is behind a log-in and was not read.
+
