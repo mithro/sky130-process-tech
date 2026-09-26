@@ -70,11 +70,11 @@ plate.[^pdk-07]
 
 The plate's thickness is not public, but the sheet resistance
 bounds it as at {ref}`CAPTIW1 <step-136>`: for a sputtered Ti:W
-resistivity of 50–100 µΩ·cm a 5.8 Ω/sq sheet corresponds to
-{math}`d = \rho / R_s \approx 0.09`–0.17 µm. (Textbook range for refractory barrier
-films;[^txt-02] Hartsough's 1979 paper is titled *Resistivity of
+resistivity of 50–100 µΩ·cm (textbook range for refractory barrier
+films[^txt-02]) a 5.8 Ω/sq sheet corresponds to
+{math}`d = \rho / R_s \approx 0.09`–0.17 µm. Hartsough's 1979 paper is titled *Resistivity of
 bias-sputtered TiW films*; its values are not publicly
-readable.[^hartsough-1979]) We therefore read the plate
+readable.[^hartsough-1979] We therefore read the plate
 as roughly 0.1 µm of TiW (inference; our arithmetic), the same as the
 first plate because the PDK calls the two constructions
 "identical".[^pdk-07]
@@ -108,8 +108,7 @@ As at
 electrode sputtered onto a dielectric some 20–30 nm thick (our estimate
 at {ref}`CAPILD2 <step-150>`). An argon {term}`sputter etch` pre-clean
 of a few nanometres would remove a large fraction of that dielectric,
-so on our reading it is omitted or made very light (inference from the
-geometry). The film's
+so on our reading it is omitted or made very light. The film's
 stress and deposition energy matter because the layer beneath is thin
 (inference from the geometry).
 
@@ -121,7 +120,7 @@ stress and deposition energy matter because the layer beneath is thin
   *before* the metal beneath is etched, the plate edge sits on a flat,
   continuous dielectric.
 
-  The capacitance is set by the drawn `cap2m`
+  The capacitance is therefore set by the drawn `cap2m`
   area plus a periphery term — `CMIM2A` 2 fF/µm² and `CMIM2P`
   0.19 fF/µm.[^pdk-07] This is the top-plate-first order of the Newport
   Fab patent, which deposits dielectric and top-plate metal on
