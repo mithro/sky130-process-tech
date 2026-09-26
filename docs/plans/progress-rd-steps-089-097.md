@@ -416,3 +416,52 @@ Model pages: 078, 083. One commit per page.
   the first bullet); the Morita/Fonash split (each keeps its own marker); the BOE split (the marker and
   "approximately" moved with the parenthetical they belong to).
 * **Caps.** para > 100: 2 → 0; item > 60: 5 → 0; sentence > 45: 5 → 0.
+
+### 096 ALLY1 — done
+
+* **Lead.** 149 words in the base, 149 now, in two paragraphs (64 + 84; over 120 as in the base,
+  listed). First sentence 29 → 13 words: split at its dash, "The other, {ref}`ALLY`, is the
+  conventional final forming-gas anneal …".
+* **R-H3 not applied / R-LIST.** The 102-word reading passage after the figure is under the 120-word H3
+  threshold (R-H3 step 6), so no H3; its "(a) … and (b) …" sentence (70 words) becomes "We read the
+  step, as an inference, as a hydrogen anneal that:" and two plain bullets ("(a)"/"(b)" dropped; the
+  hedge on the lead-in covers both). The "third possibility" and "not public" sentences follow as a
+  paragraph.
+* **R-CATEGORY.** Classification sentence alone (27 words). Two sentences about this step remain →
+  `**Specific to this step:**` and a bullet each: the thermal budget; hydrogen. The 54-word hydrogen
+  sentence split at ", less welcome,": "… at these temperatures and passivates dangling bonds …[^reed-1988][^cartier-1993]"
+  ("and" for the comma of the shortened list) and "Less welcome, hydrogen can neutralise …" (the
+  subject named for the new sentence), which opens the bullet's continuation with the Maes et al.
+  parenthetical (15 words) made its own sentence "(Maes, Usmani and Heyns measured … retention.[^maes-1981])"
+  and "Those side-effects are the reason …" after it; "({ref}`ONO`)" stays with the SONOS cells.
+* **R-PARA / R-SENTENCE.** Why "Interface-trap passivation": lead is the Wikipedia quotation; the
+  64-word gapped studies sentence split before Stesmans, whose elided verb "set out" is restored
+  (WORDS ADDED), so the dash clause "the defects whose density sets …" still follows the P_b centres
+  it names. "Plasma damage": split before "and Rangan, Krishnan and Ashok showed …" (the closing dash of
+  the pair becomes the full stop after Hashimoto's marker). "Outgassing": split at its semicolon (the
+  Levin and Adams markers stay in the first sentence; "them" in the continuation is the water and
+  hydrogen of that sentence). How "Tool and ambient": lead, then two continuation paragraphs.
+* **R-LIST.** How "Temperature and time": "the ceiling is … the stability of the surfaces:" and the two
+  conditions as plain sub-bullets (the Sah, Sun and Tzou marker on the hydrogen condition it closed).
+* **R-TOOLS.** Aviza: *SkyWater says:* ("states … and lists …", verb-first), *Tool exists:*, *Runs
+  this step:* — its 17-word parenthetical becomes its own parenthesised sentence and "whether it is
+  used here …" its own sentence; the dealer sentence is the continuation. Heatpulse: no "Strength:",
+  unchanged.
+* **R-OPENQ.** "Purpose before any metal", "Ambient, temperature and time", "Furnace or single-wafer",
+  "SONOS nitride response".
+* **R-RELATED.** Previous and Next as two bullets; the etch it may heal and the dielectrics it
+  outgasses (LICM1E, PSG, NCAPOX; all MOL) → `Same module:`; the final alloy and the higher-temperature
+  anneal (ALLY, RTAD2; both Anneal-category) → `Same category:`; the SONOS bullet keeps its own label.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does from the lead; Why "not public" with the page's inference, word "as an
+  inference" kept; Public numbers "none published for SKY130" (the page gives none); tool line with the
+  two grades, each named; Not public from Open questions 1–3.
+* **Skipped.** R-REPEAT (none); R-TABLE, R-DERIVATION (nothing qualifies).
+* **Preservation.** ADDED marker `skw-01`, quote "H2 and forming gas alloy", identifiers `ALLY1`,
+  `H2`, `SKY130`, hedges "inference"×2, "likely", "not public"×2 — all the glance box. No REGROUPED.
+  WORDS LOST: "b" (the "(b)" enumerator), "strength" (R-TOOLS label).
+* **Marker coverage.** 13 flags, all read: glance (1); the reading list items (hedge on the lead-in);
+  split pieces whose base markers belonged to the other clause (hydrogen effects; the four interface
+  studies; Cacciato/Hashimoto vs Rangan; the two ceiling conditions); the Aviza head and the
+  parenthetical (tokenizer pairing with an Open-questions line).
+* **Caps.** para > 100: 3 → 0; item > 60: 6 → 0; sentence > 45: 7 → 0.
