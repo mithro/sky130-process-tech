@@ -17,7 +17,7 @@
 #   1.26 um) the PDK's 0.09 um TOPOX would be 4.5 u, so it is drawn close to its proportion.
 #   The conformal profile gives it one thickness on the wall; the diagram gives 0.070 um.
 # * NSM (165): resist over the whole slice. The `nsm` opening is a ring at least 3 um wide
-#   along the die edge, kept 1 um clear of all metal (nsm.1, nsm.3): it cannot fall inside
+#   along the die edge, whose keep-out stays 1 um from all metal (nsm.1, nsm.3): it cannot fall inside
 #   a slice of wiring, so it is not drawn, and the captions say so. Resist 30 u, flat-topped.
 # * NSME (166): in this slice the etch removes nothing (the opening is at the die edge, and
 #   how deep it goes is not public); only the strip is drawn.

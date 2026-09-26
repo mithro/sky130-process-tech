@@ -29,7 +29,7 @@ nodes:
       note: "NOM, LSL and USL per parameter"
       basis: public
       cite: pdk-07
-footer: "Only the blocks this page names, in the order of its opening paragraph. SkyWater's test plan is not public beyond the PDK's parameter tables."
+footer: "The main blocks follow the page's opening paragraph; the side boxes come from its later sections. SkyWater's test plan is not public beyond the PDK's parameter tables."
 alt: >-
   Four boxes one above the other joined by downward arrows: the finished wafer, the wafer
   prober, the parametric tester, and the results and disposition. Three side boxes point into

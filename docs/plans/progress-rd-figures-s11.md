@@ -75,6 +75,23 @@ generator's screen are clean.
 * The caption-echo lint fires only once the block is in the page (as S9b noted): 169 and
   170 were reworded after pasting.
 
+## Review fixes (approve with fixes, all Low)
+
+* L1: the 169 callout ("Opened pad") is `basis: public`; the note carries the hedge.
+* L2: the 171 footer now says the main blocks follow the opening paragraph and the side
+  boxes come from the page's later sections.
+* L3: the 165 caption (and the series comment) say the ring's keep-out stays 1.000 µm
+  from every metal (nsm.3 constrains `NSM_keepout`).
+* L4 (not fixed here): the `chain` footer sits about 12 u under the last box (about 4 px on a
+  desktop, touching at 400 px). Fix later in the generator (a footer gap of about 24 u),
+  together with the tall-branch arrow gap; `history-lineage` would be regenerated and
+  reviewed in that change.
+
+## For the readability batch
+
+* L5, nitride range: see the first page point below. Suggested owner fix on 167, 168, 169
+  and 170: "nominal 7000–9000 Å (the S8TNV-5R report gives 7000 ± 2000 Å)".
+
 ## Page points (not fixed; content, for the owner)
 
 * 167, 168, 169, 170: "7000–9000 Å" (or "0.7–0.9 µm") for the Cypress nitrides, but the
