@@ -10,16 +10,35 @@
 | **Previous step** | {ref}`ALLY1 <step-096>` |
 | **Next step** | {ref}`CSIL <step-098>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** sputters the contact liner — thin titanium, then thin
+  titanium nitride — into the open contact holes and over the field.
+* **Why:** the titanium becomes the silicide contact at the hole
+  bottoms; the titanium nitride is the barrier and adhesion layer the
+  CVD tungsten nucleates on.
+* **Public numbers:** none for the films; the holes are 0.08 µm across
+  at the bottom ("Standard Licon bottom CD").[^pdk-03]
+* **Likely SkyWater tool:** Applied Materials PVD with IMP TiN and
+  collimated Ti chambers — **strong** (the vendor and the chamber
+  types); **inference** (the platform and the assignment).[^skw-01]
+* **Not public:** the Ti and TiN thicknesses, the bottom coverage, and
+  whether the titanium is ionised or collimated (→ Open questions).
+:::
+
 ## What this step is
 
-`TI/TIN1` sputters the contact {term}`liner`: a thin titanium film followed
+`TI/TIN1` sputters the contact {term}`liner`. It is a thin titanium film followed
 by a thin titanium-nitride film, sputtered into the open contact holes
 of {ref}`LICM1E <step-094>` and over the field. The titanium lands on
 the freshly cleaned silicon and poly at the bottom of each hole,
 where the next step ({ref}`CSIL <step-098>`) will react it into
-titanium disilicide; the titanium nitride covers the titanium and
+titanium disilicide. The titanium nitride covers the titanium and
 the oxide walls of the hole and is the barrier and adhesion layer on
-which the {term}`CVD` tungsten of {ref}`WDEP <step-099>` nucleates. It
+which the {term}`CVD` tungsten of {ref}`WDEP <step-099>` nucleates.
+
+`TI/TIN1`
 is the first of the liner depositions described in this reference —
 {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>` and later are the
 TiN-only liners of the contact and {term}`via` levels.
@@ -32,23 +51,28 @@ TiN-only liners of the contact and {term}`via` levels.
 A close-up of the 1.8 V source/drain contact, the right-hand hole of the slice, beside the gate. Before, the cleaned hole; after, the liner over everything: titanium, then titanium nitride, drawn as one film on the field, the walls and the bottom. The thicknesses and the bottom coverage are not public (the page gives of the order of 10–30 nm of each on the field as industry-typical[^koerner-1993]); whether the titanium is ionised or collimated is not public either. The liner is drawn of even thickness on the field, the walls and the bottom; the real coverage of an ionised deposition is not drawn. The hole's bottom is 0.08 µm across in the PDK ("Standard Licon bottom CD"),[^pdk-03] not drawn to scale. The other two holes are lined in the same way, outside this view. The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers, the thin oxides, the silicon and its doped regions, and the field oxide at the left edge are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
+
 The public evidence is unusually direct for a tool assignment.
 SkyWater's capability list gives, under "AMAT PVD Metal", "Imp TiN"
 and "Collimated Ti" alongside "ESC TiN", TiW and the aluminium
-alloys,[^skw-01] and this reference reads the liner as titanium followed
-by ionised-metal-plasma ({term}`IMP`) TiN, from "Imp TiN" (inference); the step list's description, "IMP Ti/TiN
+alloys.[^skw-01] This reference reads the liner as titanium followed
+by ionised-metal-plasma ({term}`IMP`) TiN, from "Imp TiN" (inference). The step list's description, "IMP Ti/TiN
 deposition", does not explain the titanium route,[^steps-sheet] and
 whether the titanium is collimated, as "Collimated Ti" would allow, or
-ionised is not public. Ionised {term}`PVD` is the technique Rossnagel and
+ionised is not public.
+
+Ionised {term}`PVD` is the technique Rossnagel and
 Hopwood introduced for exactly this purpose — filling the bottom of
 a hole that line-of-sight sputtering cannot
 reach[^rossnagel-1993][^rossnagel-1994] — and Applied Materials sold
 it as the IMP chamber on its Endura platform.[^amat-endura][^pat-imp-amat]
+
 The film thicknesses are not public. Industry-typical values for a
 0.17 µm contact at this node are of the order of 10–30 nm of
 titanium and 10–30 nm of TiN on the field, with bottom coverage of
-tens of per cent (Koerner, Erb and Melzner evaluated Ti and TiN
-thicknesses for tungsten-plug contacts[^koerner-1993]); the
+tens of per cent. (Koerner, Erb and Melzner evaluated Ti and TiN
+thicknesses for tungsten-plug contacts.[^koerner-1993]) The
 titanium thickness at the hole bottom, together with the anneal,
 sets the {term}`silicide` thickness of the next step.
 
@@ -56,17 +80,21 @@ sets the {term}`silicide` thickness of the next step.
 
 `TI/TIN1` is a {ref}`Thin-film deposition <category-deposition>` step
 of the *PVD* type — the first sputtered film in the flow and the
-first metal of any kind on the wafer. The category page describes
+first metal of any kind on the wafer.
+
+The category page describes
 magnetron sputtering, its line-of-sight flux, Thornton's zone
-model[^thornton-1974][^ohring-2002] and the reason IMP exists: an
+model[^thornton-1974][^ohring-2002] and the reason IMP exists. An
 ordinary sputter source cannot coat the bottom of a hole of aspect
 ratio above about 2:1, and the licons are about 6:1 at the bottom
 ("Standard Licon bottom CD" 0.08 µm[^pdk-03] under 0.5 µm of
-dielectric[^pdk-03]). What is specific to this instance is the dual
+dielectric[^pdk-03]).
+
+What is specific to this instance is the dual
 role of the titanium — a silicide precursor at the hole bottoms and
 a mere adhesion layer elsewhere — and the fact that the titanium
 nitride is deposited *reactively*, by sputtering titanium in an
-argon–nitrogen plasma, so that its stoichiometry, resistivity and
+argon–nitrogen plasma. So its stoichiometry, resistivity and
 stress are set by the nitrogen flow (Sundgren's review of TiN
 coatings[^sundgren-1985]; Berg and Nyberg's model of reactive
 sputtering[^berg-2005]).
@@ -85,7 +113,9 @@ each film:
   a high and variable resistance.
 * **Titanium nitride: the barrier.** Tungsten hexafluoride attacks
   silicon and titanium during the CVD nucleation, and the reaction
-  by-products would consume the silicide; a TiN film is inert to WF₆
+  by-products would consume the silicide.
+
+  A TiN film is inert to WF₆
   at deposition temperature, adheres to oxide, and is the surface on
   which the silane-nucleated tungsten grows (Srinivas et al. studied
   tungsten nucleation on TiN[^srinivas-1992]). Wittmer established
@@ -96,12 +126,16 @@ each film:
   while acting as a diffusion barrier".[^wiki-tin]
 * **Ionised deposition: the coverage.** The barrier must be
   continuous at the hole bottom and on the lower sidewalls, where a
-  conventional sputtered film is thinnest. Rossnagel and Hopwood
+  conventional sputtered film is thinnest.
+
+  Rossnagel and Hopwood
   showed that ionising the sputtered metal in a secondary RF plasma
   and biasing the wafer draws the ions vertically into the
-  hole;[^rossnagel-1993][^rossnagel-1994] Hopwood reviewed ionised
+  hole.[^rossnagel-1993][^rossnagel-1994] Hopwood reviewed ionised
   PVD for interconnects[^hopwood-1998] and Rossnagel the directional
-  and ionised alternatives.[^rossnagel-1998] The older alternative,
+  and ionised alternatives.[^rossnagel-1998]
+
+  The older alternative,
   {term}`collimated sputtering` — a honeycomb collimator between target and
   wafer that passes only near-normal atoms — is what "Collimated Ti"
   on SkyWater's list refers to,[^skw-01] introduced by Rossnagel et
@@ -112,7 +146,7 @@ each film:
   only in the contact bottoms, the titanium thickness there — a
   fraction of the field thickness set by the bottom coverage — is
   what decides how much of the 0.1 µm junction[^pdk-03] the silicide
-  consumes: TiSi₂ consumes about 2.3 nm of silicon per nanometre of
+  consumes. TiSi₂ consumes about 2.3 nm of silicon per nanometre of
   titanium (Maex[^maex-1993]).
 
 Without `TI/TIN1` the tungsten fill would fail to nucleate, the
@@ -121,26 +155,32 @@ attacked by fluorine.
 
 ## How it is typically performed
 
-An industry-generic IMP Ti/TiN contact liner for a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic IMP Ti/TiN contact liner for a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
-1. **Degas and pre-clean.** On the {term}`cluster tool`: a {term}`degas` station
-   (lamp or heated chuck, 300–400 °C, minutes) to drive water out of
-   the dielectric, then an argon RF sputter-etch pre-clean that
-   removes the last nanometre of native oxide from the contact
-   bottoms — light enough not to sputter oxide from the walls onto
-   the silicon (category page[^txt-09]). SkyWater's "AMAT PVD Metal"
+1. **Degas and pre-clean.** On the {term}`cluster tool` (category page[^txt-09]):
+   1. a {term}`degas` station
+      (lamp or heated chuck, 300–400 °C, minutes) to drive water out of
+      the dielectric;
+   2. then an argon RF sputter-etch pre-clean that
+      removes the last nanometre of native oxide from the contact
+      bottoms — light enough not to sputter oxide from the walls onto
+      the silicon.
+
+   SkyWater's "AMAT PVD Metal"
    entry lists "Sputter etch, degas" among its chambers.[^skw-01]
 2. **IMP titanium.** DC magnetron sputtering from a titanium target
-   in argon at a few tens of mTorr — higher than conventional
+   in argon at a few tens of mTorr, with a substrate bias that draws the Ti⁺
+   ions normally into the holes. The pressure is higher than conventional
    sputtering, so that the sputtered atoms thermalise and are
-   ionised by the RF coil — with a substrate bias that draws the Ti⁺
-   ions normally into the holes; wafer temperature of the order of
+   ionised by the RF coil. Wafer temperature of the order of
    100–300 °C (industry-typical[^rossnagel-1998][^txt-09]).
 3. **IMP or reactive TiN.** Either in the same chamber with
    nitrogen added, or in a second chamber: titanium sputtered in
    Ar/N₂ forms TiN on the wafer, with the nitrogen flow held in the
-   "poisoned" regime for stoichiometric, golden TiN; the transition
+   "poisoned" regime for stoichiometric, golden TiN.
+
+   The transition
    is hysteretic and is the main control problem of reactive
    sputtering.[^berg-2005] IMP TiN deposits with a bombardment that
    densifies the film and improves its barrier quality (the
@@ -168,19 +208,22 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials PVD with IMP TiN and collimated Ti chambers.**
-  SkyWater lists "AMAT PVD Metal" with "Imp TiN", "Collimated Ti"
-  and "ESC TiN".[^skw-01] Strength: **strong** for the vendor and
-  the chamber types; the platform (Endura is the AMAT 200 mm PVD
-  cluster of the era[^amat-endura]) is an **inference**, as is the
-  assignment of this step to the IMP TiN and collimated Ti chambers,
-  from those chamber types and the contact's aspect ratio. Whether the
+* **Applied Materials PVD with IMP TiN and collimated Ti chambers**
+  - *SkyWater says:* lists "AMAT PVD Metal" with "Imp TiN", "Collimated Ti"
+    and "ESC TiN".[^skw-01]
+  - *Tool exists:* **strong** for the vendor and
+    the chamber types.
+  - *Runs this step:* the platform (Endura is the AMAT 200 mm PVD
+    cluster of the era[^amat-endura]) is an **inference**, as is the
+    assignment of this step to the IMP TiN and collimated Ti chambers,
+    from those chamber types and the contact's aspect ratio.
+
+  Whether the
   titanium is deposited by IMP or by collimation
   is not public; SkyWater's list names collimation for Ti and IMP for
   TiN.
-* **Sputter targets.** SkyWater's filings name Honeywell Electronic
-  Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
-  as sputter-target suppliers.[^sec-01][^sec-02] Strength: strong for the
+* **Sputter targets.** Suppliers are named under Resources
+  required.[^sec-01][^sec-02] Strength: strong for the
   suppliers; the specific target is not named.
 
 ## Resources required
@@ -201,14 +244,16 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 ## Related steps and cross-references
 
 * Previous: {ref}`ALLY1 <step-096>` (the anneal that precedes the
-  liner). Next: {ref}`CSIL <step-098>` (the silicide anneal that
+  liner).
+* Next: {ref}`CSIL <step-098>` (the silicide anneal that
   reacts the titanium), then {ref}`WDEP <step-099>` and
   {ref}`WCMPLI <step-100>`.
-* The holes lined: {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`;
-  the clean before it: {ref}`SACETCH <step-095>`.
-* Later liners: {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`,
-  {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>`; the other TiN
-  film of this module: {ref}`LITIN <step-101>`.
+* Same module: the other TiN film of this module,
+  {ref}`LITIN <step-101>`.
+* Depends on: the holes lined, {ref}`LICM1 <step-093>`, {ref}`LICM1E <step-094>`;
+  the clean before it, {ref}`SACETCH <step-095>`.
+* Same category: later liners, {ref}`TIN2 <step-109>`, {ref}`TIN3 <step-120>`,
+  {ref}`TIN4 <step-131>`, {ref}`TIN5 <step-146>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -277,14 +322,14 @@ An industry-generic IMP Ti/TiN contact liner for a 200 mm,
 
 ## Open questions
 
-* The Ti and TiN thicknesses, the bottom coverage, the bias and
+* **Thicknesses, coverage and titanium route.** The Ti and TiN thicknesses, the bottom coverage, the bias and
   pressure, and whether the titanium is deposited by IMP or by
   collimation are not public; SkyWater's list names collimated Ti
   and IMP TiN but assigns neither to a step.
-* Whether a degas and sputter pre-clean precede the titanium on the
+* **Degas and pre-clean.** Whether a degas and sputter pre-clean precede the titanium on the
   platform, and how they interact with {ref}`ALLY1 <step-096>` and
   {ref}`SACETCH <step-095>`, is not public.
-* Whether the TiN is deposited in the same chamber as the titanium
+* **Same or separate TiN chamber.** Whether the TiN is deposited in the same chamber as the titanium
   or in a separate one is not public.
 
 <!-- footnotes -->

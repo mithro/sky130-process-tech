@@ -465,3 +465,68 @@ Model pages: 078, 083. One commit per page.
   studies; Cacciato/Hashimoto vs Rangan; the two ceiling conditions); the Aviza head and the
   parenthetical (tokenizer pairing with an Open-questions line).
 * **Caps.** para > 100: 3 → 0; item > 60: 6 → 0; sentence > 45: 7 → 0.
+
+### 097 TI/TIN1 — done
+
+* **Lead.** First sentence 27 → 5 words: split at its colon, "It is a thin titanium film followed by …"
+  ("It", the liner just named). The 55-word sentence split at its semicolon ("The titanium nitride
+  covers …"). "It is the first of the liner depositions …" → "`TI/TIN1` is the first …" (the step
+  named, because the sentence before now ends on the tungsten of WDEP), opening a second paragraph
+  (84 + 27 words; the base paragraph was 109).
+* **R-H3.** `### What the public record shows` after the figure caption, over the 188-word evidence
+  passage (SkyWater's PVD entries, this reference's reading, the step-list description, the IMP
+  literature, the industry-typical thicknesses). Three paragraphs. The 67-word first sentence split
+  at ", and this reference reads" and at its semicolon; `[^skw-01]` stays on the list clause it closed.
+  The 12-word Koerner parenthetical becomes its own sentence (§1 cap) and the thickness sentence is
+  split at its semicolon.
+* **R-CATEGORY.** Classification sentence alone (28 words). The category-page sentence split at its
+  colon. "What is specific to this instance …" is its own label (step 3); its 70-word sentence split
+  before ", so that its stoichiometry …" as "So its stoichiometry, resistivity and stress are set by the
+  nitrogen flow (…)." (R-PARA step 2 allows a sentence to begin "So" where a split at ", so" requires
+  it). Its 12-word citation parenthetical (two noun phrases, no verb) stays inline: as its own sentence
+  it would be a fragment.
+* **R-PARA / R-SENTENCE.** Why "TiN": split at its semicolon, continuation from "A TiN film …". "Ionised
+  deposition": lead, then the IMP studies (split at the semicolon) and the collimation passage as two
+  continuation paragraphs. "Silicide thickness control": split at its colon. How "IMP titanium": split
+  at its semicolon; the dash material "higher than conventional sputtering, so that …" becomes "The
+  pressure is higher than conventional sputtering, so that …" (a subject and verb for the new sentence;
+  "higher" described the pressure). "IMP or reactive TiN": split at its semicolon.
+* **R-LIST.** How "Degas and pre-clean": the two stations as a numbered sub-list under "On the cluster
+  tool (category page[^txt-09]):" — the source parenthesis that closed the base sentence moved, word for
+  word, to the lead-in (R-LIST step 1), so it still covers both stations.
+* **R-TOOLS.** AMAT PVD: *SkyWater says:* (verb-first), *Tool exists:* **strong** for the vendor and the
+  chamber types, *Runs this step:* the platform-and-assignment sentence. That sentence grades the
+  Endura platform identity and the assignment together ("… is an **inference**, as is the assignment
+  …, from those chamber types and the contact's aspect ratio"); it cannot be separated without
+  rewording, so it stays whole under *Runs this step:* (a label that fits its main reason, not its
+  first clause — flagged for the reviewer). The IMP/collimation sentence is the continuation.
+* **R-REPEAT (the guide's own example, R-REPEAT "Example").** The Honeywell/JX Metals sentence appeared
+  under `## Machines likely used at SkyWater` and in the first `## Resources required` bullet. Home:
+  Resources required (unchanged). The Machines bullet now reads "**Sputter targets.** Suppliers are
+  named under Resources required.[^sec-01][^sec-02] Strength: strong for the suppliers; the specific
+  target is not named." — the markers stay, and a supplier bullet keeps its "Strength:" form (R-TOOLS
+  applies to machines only). Deleted sentence, verbatim: "SkyWater's filings name Honeywell Electronic
+  Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K) as sputter-target
+  suppliers." Both labels remain referenced on the page. This deletion is the page's only LOST in the
+  preservation check (numbers 10×2, 2021, 2023×2; identifier S-1; the words of that sentence), all of
+  it still present in the Resources bullet.
+* **R-OPENQ.** "Thicknesses, coverage and titanium route", "Degas and pre-clean", "Same or separate TiN
+  chamber".
+* **R-RELATED.** Previous and Next as two bullets; "the other TiN film of this module" (LITIN, MOL) →
+  `Same module:`; "the holes lined" and "the clean before it" → `Depends on:`; "Later liners" (all
+  deposition steps) → `Same category:`. Every gloss and link kept.
+* **R-HEDGE.** Scope sentence as the italic lead-in, word for word.
+* **R-GLANCE.** Does and Why from the lead; Public numbers "none for the films" plus the 0.08 µm bottom
+  CD `[^pdk-03]` (the page's "about 6:1" is its own ratio, so it is not given as a SKY130 number);
+  tool line with both grades, each named ("the platform and the assignment"); Not public from Open
+  questions 1.
+* **Skipped.** R-TABLE, R-DERIVATION (the 6:1 ratio shows no operation).
+* **Preservation.** ADDED markers `pdk-03`, `skw-01`, number 0.08, quote "Standard Licon bottom CD",
+  identifier `TIN1`, hedges "inference", "likely", "not public" (glance, and the step named in the
+  lead); numbers 1, 2 (sub-list ordinals). LOST: the R-REPEAT sentence above. REGROUPED: the silicide
+  sentence (0.1 | 2.3) and the IMP-titanium item, same order. WORDS LOST: the R-REPEAT sentence's words,
+  "strength" (R-TOOLS label), "that", "as".
+* **Marker coverage.** 9 flags, all read: glance (2); split pieces whose base markers belonged to the
+  other clause (SkyWater list / reading; Koerner now its own sentence; Sundgren/Berg with the "So …"
+  sentence); the degas stations (marker on the lead-in); a tokenizer pairing of the tool head.
+* **Caps.** para > 100: 3 → 0; item > 60: 6 → 0; sentence > 45: 13 → 0.
