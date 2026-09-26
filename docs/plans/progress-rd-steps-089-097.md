@@ -30,6 +30,89 @@ Model pages: 078, 083. One commit per page.
   **excluded**; a leading bold run-in label is not counted into its sentence. Also prints the lead.
 * Gates per page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`, `-W` build.
 
+## Batch summary (all nine pages done)
+
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps`: `{figure}` blocks (the captions), `{dropdown}` bodies (none on these
+pages), the generated index-links block and `## References` are **excluded**; a leading bold run-in
+label is not counted into its sentence. Before = `main` at `e369d634`.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 21 | 0 |
+| list items > 60 words | 49 | 0 |
+| sentences > 45 words | 76 | 3 |
+| table cells > 25 words | 0 | 0 |
+
+**Left over the caps, with reasons** (each is also in its page entry):
+
+* Sentences (46 words each): 089 "A film thick enough to bury …" (2 of the 46 are its dash pair; moving
+  the dash material would separate the 0.6–0.9 µm figure from "(inferred)"); 091 "If the polish stops
+  on the 0.2 µm gate caps …" (the second half would lose its condition); 092 the dielectric-anneal
+  reading (3 of the words are the bold label that is its subject).
+* Leads over 120 words, as in the base (text before the figure): 093 (137, base 137), 094 (217, base
+  214; three paragraphs, §4.1 ¹), 095 (138, base 138), 096 (149, base 149). On 094 and 096 the passage
+  after the figure takes no H3 (094: none of the four titles fits; 096: under 120 words), so by §1's
+  definition their "lead" also includes that list.
+* Item leads over 30 words: 095 reading 1 (52; its only seam is inside the sentence the S7 notes
+  record as disputed, kept verbatim), 092 dielectric reading (46), 091 "C2 and Producer" head (pilot
+  form, the grade refers to the tools the gloss names).
+* No `{dropdown}` on any of the nine pages; no in-force content anywhere.
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables`, `gen_figures` `--check` — 0 differences (figures
+untouched; `gen_figures` run once, at the end); `sphinx-build -E -W` into a fresh directory — exit 0.
+`rdtools.py inv` against `e369d634` for all nine pages: References, footnote definitions, generated
+blocks, `{figure}` blocks, quick facts, H2 lists and Deep-dive counts identical; one admonition per
+page (the glance box, `:class: at-a-glance`); every glance marker recurs below; no duplicate H3; every
+scope sentence is the italic lead-in. `check_preserved.py --allow-regrouped` over the batch: the only
+LOST lines are 093's rule-table number order (hand-checked, entry 093) and 097's R-REPEAT sentence
+(entry 097); every other line is a declared addition, a regroup, or a WORDS LOST word named per page.
+
+### Guide problems
+
+1. **R-REPEAT cannot pass the preservation gate.** Its own worked example (097's supplier sentence)
+   deletes numbers and an identifier that stay elsewhere on the page, and `check_preserved.py` has no
+   flag for that on step pages (`--allow-deduplicated` is machine/material only). Suggest extending
+   `--allow-deduplicated` to a sentence still present verbatim in another H2 of the same page.
+2. **R-TABLE rows in `Rule · Constrains · Value` order always fail `number_order`**, because the rule id
+   (a number to the tool) now precedes its value; `--allow-regrouped` does not reclassify it (093; the
+   same form as 078). A regroup condition that accepts a per-row swap would save a hand check.
+3. **§1/§4.1 "lead" when the post-figure passage takes no H3.** The lead is defined as the text up to
+   the first `###`; when R-H3 forbids an H3 (094, 096) the lead then includes the post-figure list.
+   Suggest defining the lead as the text before the `{figure}`.
+4. **§1 parenthetical cap against citation parentheticals.** A 12-word parenthetical of two noun
+   phrases and markers (097 "(Sundgren's review …; Berg and Nyberg's model …)") would become a verbless
+   sentence; suggest exempting citation-only parentheticals.
+5. **R-TOOLS with one sentence grading two things.** 097's "the platform … is an inference, as is the
+   assignment …" grades the platform identity and the assignment together; neither label fits the
+   whole without rewording.
+
+## Content problems for the owner
+
+Kept verbatim on both sides; not fixed.
+
+1. **094 against 095 on the contact-bottom oxide** (the S7 figure notes). 094's lead says the etch
+   reaches "the SPOX oxide over a source/drain or tap, which the etch must also clear", and its recipe
+   step 4 has the timed over-etch clear it. 095's reading 1 says that "on the reading of the SPOX and
+   LICM1E pages" the plasma contact etch "is stopped on or in it rather than driven into the silicon",
+   and 095's Why "Screen oxide" bullet cites "the LICM1E reading" for an etch that stops on SPOX. The
+   two pages disagree on what LICM1E says.
+2. **Which caps the polish stops on (089, 090, 091).** 089 says the polish takes the glass "down to, or
+   close to, the tops of the 0.2 µm gate caps"; 090 says it "reaches the tops of the caps over the
+   densest poly arrays"; neither says which caps. 091 says that on the cap-stop reading "the cap oxide
+   is what separates the cap tops from the local interconnect" and, in Why, "the cap oxide is that
+   insulator" — true of caps at the polish level, but, with the PDK's heights, gates on active area
+   keep about 0.33 µm of PSG over them (S7 notes; 100 and 103, outside this batch, carry the "only the
+   cap oxide separates" wording).
+3. **Arithmetic checked, no slip found:** 089 0.9361 − 0.3262 = 0.6099 and 0.6099 − 0.18 = 0.4299;
+   093 0.17 × 0.6 / 0.365 = 0.279 ≈ 0.28 and 0.17 × NA / 0.248 = 0.41–0.48; 094 2 × 0.5 µm × tan 10° ≈
+   0.18 µm and atan(0.045 / 0.5) ≈ 5°.
+
 ## Pages
 
 ### 089 PSG — done
