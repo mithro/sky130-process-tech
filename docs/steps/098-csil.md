@@ -10,10 +10,28 @@
 | **Previous step** | {ref}`TI/TIN1 <step-097>` |
 | **Next step** | {ref}`WDEP <step-099>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** reacts the titanium of {ref}`TI/TIN1 <step-097>` with the
+  silicon and polysilicon at the bottom of every contact hole to form
+  titanium disilicide (TiSi₂).
+* **Why:** a tungsten plug on bare silicon makes a poor contact; a
+  silicide under it makes a good one.
+* **Public numbers:** poly 48 200 mΩ/sq and N-diffusion 120 000 mΩ/sq,
+  values of heavily doped but unsilicided poly and diffusion;[^pdk-08]
+  LICON 15 Ω per contact (our reading).[^pdk-08]
+* **Likely SkyWater tool:** AG Associates Heatpulse 8808 — **strong**
+  (the tool); **inference** (assignment to `CSIL`).[^skw-01]
+* **Not public:** the anneal temperature, time and ambient, the
+  silicide thickness, and whether the anneal is one step or two
+  (→ Open questions).
+:::
+
 ## What this step is
 
-`CSIL` — contact silicidation — is the anneal (on our reading a rapid
-thermal anneal) that reacts the titanium of {ref}`TI/TIN1 <step-097>`
+`CSIL`, contact silicidation, is the anneal (on our reading a rapid
+thermal anneal). It reacts the titanium of {ref}`TI/TIN1 <step-097>`
 with the silicon
 and polysilicon at the bottom of every contact hole to form titanium
 disilicide (TiSi₂). Where the titanium lies on oxide — the hole walls
@@ -36,15 +54,19 @@ evidence for it is the PDK's own numbers. In a self-aligned silicide
 ({term}`salicide`) process the metal is deposited on the bare gates
 and source/drains and reacts everywhere silicon is exposed, so the
 poly and diffusion {term}`sheet resistances <sheet resistance>` fall to a few ohms per square
-(category page[^wiki-salicide][^txt-05]). The SKY130 extraction
+(category page[^wiki-salicide][^txt-05]).
+
+The SKY130 extraction
 tables give poly 48 200 mΩ/sq (48.2 Ω/sq), N-diffusion
-120 000 mΩ/sq and P-diffusion 197 000 mΩ/sq[^pdk-08] — the values of
-heavily doped but *unsilicided* poly and diffusion — and the LICON
-contact listed at 15 000 in the same "Resistivity (mohms/sq)" column,
+120 000 mΩ/sq and P-diffusion 197 000 mΩ/sq.[^pdk-08] These are the values of
+heavily doped but *unsilicided* poly and diffusion. The LICON
+contact is listed at 15 000 in the same "Resistivity (mohms/sq)" column,
 which we read as 15 Ω per contact, since a contact has no sheet
 dimension (our reading).[^pdk-08] The
 {ref}`P1I <step-050>` page draws the same conclusion from the poly
-value. On that evidence this reference describes a *contact-only*
+value.
+
+On that evidence this reference describes a *contact-only*
 titanium silicide, formed by an anneal after the {term}`liner` and
 before the tungsten (inference). SkyWater lists "Ti and Co Silicide" among its special
 modules,[^skw-01] which shows the capability without saying which
@@ -58,14 +80,23 @@ not public), and whether the anneal is one step or two.
 
 `CSIL` is an {ref}`Anneal / thermal processing <category-anneal>` step
 of the *silicidation* type — the class the category page describes
-for titanium (it gives roughly 600–700 °C for the first anneal; this
-page uses the wider 600–750 °C of its sources below): a first
-{term}`RTA` at roughly 600–750 °C in N₂ forms the
-metastable {term}`C49 TiSi₂` (and TiN on top), a selective strip removes
-unreacted metal, and a second RTA at roughly 800–900 °C converts C49
-to the low-resistivity C54 phase.[^maex-1993][^osburn-1993] What is
-specific to this instance is that the sequence is *not* a salicide:
-there is no selective strip, because the unreacted titanium and its
+for titanium.
+
+(The category page gives roughly 600–700 °C for the first anneal; this
+page uses the wider 600–750 °C of its sources below.) The
+sequence:[^maex-1993][^osburn-1993]
+
+1. a first
+   {term}`RTA` at roughly 600–750 °C in N₂ forms the
+   metastable {term}`C49 TiSi₂` (and TiN on top);
+2. a selective strip removes
+   unreacted metal;
+3. a second RTA at roughly 800–900 °C converts C49
+   to the low-resistivity C54 phase.
+
+What is
+specific to this instance is that the sequence is *not* a salicide.
+There is no selective strip, because the unreacted titanium and its
 TiN cap are wanted — they are the plug liner — and the C49→C54
 question is confined to a 0.08 µm disc[^pdk-03] rather than a long
 gate line. It is also a thermal step with a hard ceiling from
@@ -81,7 +112,9 @@ contact-only form:
 * **Contact resistance.** The specific contact resistivity of a
   metal–silicon contact falls exponentially with the doping under
   it and with the barrier height (the models Berger[^berger-1972]
-  and Schroder and Meier[^schroder-1984] set out); TiSi₂ on
+  and Schroder and Meier[^schroder-1984] set out).
+
+  TiSi₂ on
   degenerately doped silicon gives low barriers to both n⁺ and p⁺
   — Varahramyan and Verret give a specific-contact-resistance model
   for TiSi₂–silicon.[^varahramyan-1996] Titanium also reduces the
@@ -89,14 +122,20 @@ contact-only form:
   The PDK's 15 Ω per licon[^pdk-08] is the outcome.
 * **Why not a salicide.** Three features of the PDK's device list
   argue for keeping the gates and diffusions unsilicided
-  (inference): the precision {term}`poly resistors <poly resistor>` ({ref}`RPM <step-049>`,
-  {ref}`URPM <step-055>`) and the diffusion resistors need their
-  high sheet resistances,[^pdk-07][^pdk-08] which a blanket silicide
-  would have to be masked away from; the 5 V and drain-extended
-  devices[^pdk-07] carry lightly doped regions that a silicide would
-  short; and the {term}`SONOS` cells ({ref}`ONO <step-040>`) have an {term}`ONO`
-  stack under the gate that a silicide anneal's stress and a
-  selective strip's chemistry would threaten. A contact-only
+  (inference):
+
+  - the precision {term}`poly resistors <poly resistor>` ({ref}`RPM <step-049>`,
+    {ref}`URPM <step-055>`) and the diffusion resistors need their
+    high sheet resistances,[^pdk-07][^pdk-08] which a blanket silicide
+    would have to be masked away from;
+  - the 5 V and drain-extended
+    devices[^pdk-07] carry lightly doped regions that a silicide would
+    short;
+  - the {term}`SONOS` cells ({ref}`ONO <step-040>`) have an {term}`ONO`
+    stack under the gate that a silicide anneal's stress and a
+    selective strip's chemistry would threaten.
+
+  A contact-only
   silicide needs no extra mask and no strip. The cost is the poly
   RC of long gate lines, which the {ref}`P1I <step-050>` page
   discusses, and which the low-resistance titanium-nitride local
@@ -104,19 +143,29 @@ contact-only form:
 * **Phase and thickness.** Titanium and silicon react by
   interdiffusion into C49 TiSi₂ from about 500 °C and transform to
   C54 above about 700 °C, with the transformation nucleation-limited
-  on small features — Mann and Clevenger on the C49-to-C54
-  transformation,[^mann-1994] Murarka on formation
-  kinetics,[^murarka-1983] Osburn on silicides by rapid thermal
-  processing,[^osburn-1993] Maex's review of TiSi₂ and
-  CoSi₂,[^maex-1993] Zhang and Östling's of silicides in
-  CMOS.[^rev-04] In a 0.08 µm contact the C54 nucleation problem is
+  on small features:
+
+  - Mann and Clevenger on the C49-to-C54
+    transformation;[^mann-1994]
+  - Murarka on formation
+    kinetics;[^murarka-1983]
+  - Osburn on silicides by rapid thermal
+    processing;[^osburn-1993]
+  - Maex's review of TiSi₂ and
+    CoSi₂;[^maex-1993]
+  - Zhang and Östling's review of silicides in
+    CMOS.[^rev-04]
+
+  In a 0.08 µm contact the C54 nucleation problem is
   at its worst, but the silicide is so short that its sheet
   resistance barely matters; what matters is the interface.
 * **The TiN cap and the nitrogen ambient.** Annealing Ti under TiN
   in nitrogen forms a TiN/TiSi₂ bilayer whose formation Morgan,
-  Broadbent and Reader studied[^morgan-1985] — nitrogen competes
+  Broadbent and Reader studied.[^morgan-1985] Nitrogen competes
   with silicon for the titanium, and the balance sets the silicide
-  thickness. Koerner, Erb and Melzner evaluated Ti and TiN
+  thickness.
+
+  Koerner, Erb and Melzner evaluated Ti and TiN
   thicknesses for exactly this tungsten-plug contact
   structure,[^koerner-1993] and Ohto et al. describe a TiN/Ti
   contact-plug technology for DRAM.[^ohto-1996]
@@ -132,8 +181,8 @@ junction of high and variable resistance.
 
 ## How it is typically performed
 
-An industry-generic {term}`contact silicide` anneal for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic {term}`contact silicide` anneal for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen
   (or argon), strictly oxygen-free: "a few ppm of O₂ oxidises the
@@ -142,9 +191,11 @@ fab (SKY130's recipe is not public):
 * **Temperature and time.** A soak of tens of seconds at 600–750 °C
   to form C49 TiSi₂ under the TiN, with or without a second soak at
   800–900 °C for the C54 transformation — typical industry values
-  for a Ti/TiN contact silicide (Osburn;[^osburn-1993] Yoo, Atanos
+  for a Ti/TiN contact silicide (Osburn[^osburn-1993]).
+
+  Yoo, Atanos
   and Whitworth describe TiSi₂ formation and anneal in a
-  susceptor-based low-pressure {term}`RTP` system[^yoo-1999]). Because there
+  susceptor-based low-pressure {term}`RTP` system.[^yoo-1999] Because there
   is no strip between them, the two soaks can be one recipe.
 * **Sequence.** Load from the {term}`PVD` platform without a wet step;
   purge; low-temperature stabilisation; ramp; soak; ramp-down;
@@ -158,7 +209,7 @@ fab (SKY130's recipe is not public):
 * **Alternative.** Some flows omit a separate silicide anneal and let
   the tungsten deposition temperature (400–450 °C, typical
   industry value;[^txt-01] see {ref}`WDEP <step-099>`) and later
-  anneals form the silicide in place; which SKY130 does is not stated
+  anneals form the silicide in place. Which SKY130 does is not stated
   publicly, and this reference describes a separate anneal.
 
 ## Machines typically used
@@ -171,12 +222,17 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **AG Associates Heatpulse 8808.** SkyWater lists "Ag Heatpulse
-  8808 NH3, Ar, N2, O2, up to 1200C".[^skw-01] Strength: **strong**
-  for the tool; assignment to `CSIL` is an **inference** from the
-  Heatpulse being the only RTA on SkyWater's list, and "Silicide
-  formation and annealing" is a listed application of the
-  family:[^ag-8800] reseller documentation gives a 400–1200 °C
+* **AG Associates Heatpulse 8808**
+  - *SkyWater says:* lists "Ag Heatpulse
+    8808 NH3, Ar, N2, O2, up to 1200C".[^skw-01]
+  - *Tool exists:* **strong**
+    for the tool.
+  - *Runs this step:* assignment to `CSIL` is an **inference** from the
+    Heatpulse being the only RTA on SkyWater's list, and "Silicide
+    formation and annealing" is a listed application of the
+    family.[^ag-8800]
+
+  Reseller documentation gives a 400–1200 °C
   range,[^ag-8800][^ag-8108] and a vendor blog post describes the
   8800/8108 family.[^plasmatherm-ag] (The two documents disagree on
   the 8800's ramp rate — see {ref}`RTAD2 <step-092>` — but this step's
@@ -188,9 +244,9 @@ fab (SKY130's recipe is not public):
 
 ## Resources required
 
-* **{ref}`Nitrogen <material-process-gases>` and argon** (likely ambient, our inference; SkyWater lists
+* **{ref}`Nitrogen <material-process-gases>` and argon** (likely ambient, our inference). SkyWater lists
   the Heatpulse's gases, "NH3, Ar, N2, O2", but no ambient for any
-  step);[^skw-01] the titanium and TiN were consumed at
+  step.[^skw-01] The titanium and TiN were consumed at
   {ref}`TI/TIN1 <step-097>`.
 * **{ref}`Tungsten-halogen lamps <material-hardware-consumables>`, quartz window and chamber, edge rings**;
   pyrometer calibration and {ref}`thermocouple wafers <material-substrates>` (category page).
@@ -203,15 +259,15 @@ fab (SKY130's recipe is not public):
 ## Related steps and cross-references
 
 * Previous: {ref}`TI/TIN1 <step-097>` (the titanium reacted here).
-  Next: {ref}`WDEP <step-099>` (the tungsten fill), then
+* Next: {ref}`WDEP <step-099>` (the tungsten fill), then
   {ref}`WCMPLI <step-100>`.
-* The surfaces silicided: source/drains of {ref}`PSDI <step-082>`,
+* Depends on: the surfaces silicided, source/drains of {ref}`PSDI <step-082>`,
   {ref}`2PSDI <step-083>`, {ref}`NSDI <step-086>`; poly heads opened
   at {ref}`NPCME <step-079>` and doped through the cut.
 * Why the gates are not silicided: {ref}`P1I <step-050>`; the
   resistors kept unsilicided: {ref}`RPM <step-049>`,
   {ref}`URPM <step-055>`.
-* The other RTAs: {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`,
+* Same category: the other RTAs, {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`, {ref}`RTAD2 <step-092>`.
 * Category page: {ref}`Anneal / thermal processing <category-anneal>`.
 
@@ -291,13 +347,13 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* That SKY130 uses a contact-only titanium silicide rather than a
+* **Contact-only silicide.** That SKY130 uses a contact-only titanium silicide rather than a
   salicide is our inference from the PDK's sheet resistances.
-* The anneal temperature, time, ambient and whether it is one or two
+* **Anneal conditions.** The anneal temperature, time, ambient and whether it is one or two
   soaks are not public.
-* The silicide thickness and its consumption of the 0.1 µm junction
+* **Silicide thickness.** The silicide thickness and its consumption of the 0.1 µm junction
   are not public.
-* Whether the "Co" in SkyWater's "Ti and Co Silicide" module is
+* **The Co in the module.** Whether the "Co" in SkyWater's "Ti and Co Silicide" module is
   used by any SKY130 option is not public.
 
 <!-- footnotes -->
