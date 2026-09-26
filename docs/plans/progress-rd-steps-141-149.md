@@ -276,6 +276,39 @@ Base `d04fe7bd`. Caps before: 3 paragraphs, 3 items, 5 sentences over; after 0/0
 * `check_preserved --allow-regrouped`: ADDED = glance only; REGROUPED: the floor sentence split.
   WORDS LOST: `strength`, `which`. No DUPLICATED line. `cov`: 4 flags, pairing noise.
 
+### 147 WDEP5 — done
+
+Base `451a4b0a`. Caps before: 3 paragraphs, 2 items, 4 sentences over; after 0/0/0. Lead 114 words
+(base 114, one paragraph over 100) in two paragraphs (77, 37), split before "It is the fifth and
+last tungsten fill", whose "It" became "`WDEP5`" (a new paragraph may not open on a bare pronoun; no
+word added, so the lead stays at 114).
+
+* Post-figure paragraph (160 words) in three: the 56-word hole sentence keeps its dash pair and
+  "(TiW, as assumed at CAPTIW1)", the second half of its 18-word parenthetical becoming "The PDK's
+  `cap_mim` cross-section draws vias from metal 4 landing on "CAPM".[^pdk-07]"; the conformal-fill
+  sentence's 19-word basis parenthetical now its own parenthetical sentence directly after it,
+  capitalised and closed, words and `ireland-1997` unchanged (R-SENTENCE step 7), so it still covers
+  the whole sentence; "The deposited thickness is not public;" split at the semicolon, "so a film …"
+  kept in its sentence.
+* Step category (138 words): classification sentence alone (132 form); the process sentence and the
+  WDEP3/WDEP4 sentence a paragraph; "What is specific …" with the plate sentence a paragraph; the
+  46-word plate sentence split at ", so" ("So the plug's stress …"), "(inference from the
+  construction)" repeated on the first half, which is uncited (D1; declared ADDED hedge).
+* Why: conformal-fill item — lead sentence, then the studies and the PNL sentence as a continuation,
+  the PNL sentence split at the semicolon before "Kim et al. describe its benefit" ("its" still
+  follows "The PNL option …" as its subject); nucleation item split at the semicolon; current item
+  (125 words) — lead sentence, the electromigration sentence a continuation, then the four studies as
+  sub-bullets at their commas ("and" dropped; §4.1 "studies as sub-bullets"), each with its own
+  markers, the "— relevant where via 3 stacks on via 2" tail left on the Walls/Domae item it closed.
+* How: italic scope sentence; step 1 the Altus/PECVD-wording sentences a continuation (132 form).
+* R-TOOLS: three-line item; "and whether PNL is used at this level is not public" → continuation
+  "Whether PNL is used …" (132 form).
+* R-RELATED: Previous · Next · Depends on · Feeds · Same category · Category page. R-OPENQ: five
+  labels.
+* `check_preserved --allow-regrouped`: ADDED = glance + the repeated "inference"; REGROUPED: the
+  hole paragraph and the studies list (same digits). WORDS LOST: `it`, `strength`. No DUPLICATED line.
+* `cov`: 5 flags, pairing noise (Open-question and glance sentences paired with body sentences).
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
