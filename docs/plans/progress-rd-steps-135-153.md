@@ -325,3 +325,53 @@ CAPILD dielectric outside the capacitor plates" is kept word for word (see Conte
 * Preservation: ADDED = the glance box (markers, numbers, `step-139`, hedges, identifiers), "S8DI"
   (the restored antecedent of "where"), "metal-3"/"via-2" in the glance; REGROUPED lines read.
   `--strict-words`: LOST `strength` ×2, `where` (→ "In the S8DI report").
+
+### 150 CAPILD2 — done
+
+Base `dbcbbff4`. Caps before: 6 paragraphs, 8 items, 14 sentences over; after: 0/0/0. Lead 162 words
+(as the base) in three paragraphs.
+
+* Lead: split at the step-list semicolon and at the dash that introduces the evidence for the
+  oxynitride reading (the evidence sentence follows its claim directly); the CAPTIW2 sentence at its
+  semicolon.
+* R-H3: `### What the public record shows` over the PDK record, the thickness bound and the published
+  measurements (public record ending in our arithmetic and our extraction); the bold run-in
+  "**Where the public record is inconsistent.**" that introduces its own passage →
+  `### Where the public record is inconsistent` (R-H3 step 4).
+* PDK record: the device-page sentence split at its semicolon ("it names the cells" → "The device page
+  names the cells", restored noun; `pdk-07` repeated on the first half, declared); the layer/stack
+  sentence split before "The device's cross-section" ("and" added before the stack-diagram clause).
+* R-DERIVATION: the thickness bound as a two-step numbered list, results in bold, the trailing
+  "(our arithmetic with an assumed permittivity)" as the hedge line after the list "(Our arithmetic with
+  an assumed permittivity.)", word for word; `pdk-04` stays with the nitride k. Arithmetic as on 135
+  (4.43 nm × k), correct.
+* Measurements: the 212-word paragraph in three; the 72-word sentence at its semicolon; "…, so the
+  levels do not differ by a simple area capacitance, and an area-plus-periphery model …" split at
+  ", and"; the final 28-word parenthetical "(our extraction … wafer)" made the following sentence
+  "(Our extraction … wafer.)[^raw-data-passives]". Arithmetic: 35.27 pF / 17 600 µm² = 2.00 fF/µm²;
+  68.78 / (33.26 + 35.27…35.29) = 1.0034–1.0036 (0.3–0.4 %). Correct.
+* Inconsistency passage: "Other PDK tables do not match this picture:" and the three tables as bullets
+  (the base's next sentence, "The mask table lists …", becomes the list; markers stay with each table);
+  paragraph split before *Previous Nomenclature*.
+* R-CATEGORY: classification sentence (13 words); "Specific to this step:" two bullets (the device-layer
+  clause as "`CAPILD2` is one of the two PECVD films …", subject and verb added; the gate-oxide
+  sentence with "Step coverage does not, because …" as on 135); the "What is specific to this
+  instance …" paragraph kept, its stacked-pair sentence split at the colon and at ", so" (a sentence,
+  not a paragraph, opening "So", R-PARA step 2).
+* Why: item 1 split at its semicolon ("(our arithmetic from the identical CMIMA and CMIM2A)" stays on
+  the doubling clause its words name) into first block + two continuations; item 2's three listings as
+  sub-bullets (as on 135); item 3's over-long source line re-wrapped and split at its semicolon;
+  items 4 and 5 into first block + continuation ("and" dropped before Bose).
+* How: italic scope lead-in (with its CAPILD pointer); step 1 split at its semicolon ("That surface is
+  the bottom electrode …"); step 5's 13-word parenthetical as its own sentence "The first capacitor
+  lies below via 3 and metal 4 on the PDK's stack diagram.[^pdk-04]" and the unindented source line
+  re-indented.
+* R-TOOLS: the C1 chamber (three lines; the two inferences whole under *Runs this step:*); the TEOS
+  and HP 4062UX bullets have no "Strength:", unchanged. R-RELATED: Previous / Next / Same module (the
+  first capacitor) / Feeds (MM4E; VIM4, VIM4E) / Category page. R-OPENQ labels; the levels item split
+  at "while" into two sentences, the seven markers kept in their order, each sentence with the markers
+  of the sources it names (device page, layer table, stack diagram; mask table, minimum-CD table,
+  periphery rules, extraction page).
+* Preservation: ADDED = the glance box (markers, numbers, the quote "C1" ×2, hedges, identifiers) and
+  the repeated `pdk-07`; REGROUPED lines read. `--strict-words`: LOST `strength`; `while`, `it`
+  non-strict.

@@ -10,22 +10,46 @@
 | **Previous step** | {ref}`WTIAL4 <step-149>` |
 | **Next step** | {ref}`CAPTIW2 <step-151>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the thin dielectric of SKY130's second MiM
+  capacitor by PECVD over the whole wafer, on the blanket metal-4 stack
+  before metal 4 is patterned.
+* **Why:** stacked over the first, the second capacitor doubles the
+  capacitance available on the same footprint (our arithmetic from the
+  identical `CMIMA` and `CMIM2A`).[^pdk-07]
+* **Public numbers:** `CMIM2A` 2 fF/µm² (limits 1.8–2.2) and `CMIM2P`
+  0.19 fF/µm;[^pdk-07] the two large second-level test-tile capacitors
+  measure 35.27 pF and 35.29 pF at 0 V (our extraction).[^raw-data-passives]
+* **Likely SkyWater tool:** PECVD silane "C1" chamber — **strong** for
+  the capability; the assignment, and the reading of "C1" as a Novellus
+  Concept One, are **inferences**.[^skw-01]
+* **Not public:** the dielectric's composition, permittivity, thickness
+  and deposition conditions, and the design rules for `cap2m`
+  (→ Open questions).
+:::
+
 ## What this step is
 
 `CAPILD2` deposits the dielectric of SKY130's second
 {term}`metal–insulator–metal (MiM) capacitor <MiM capacitor>`. Straight after the blanket
 metal-4 stack of {ref}`WTIAL4 <step-149>` is sputtered — and before that
 metal is patterned — a thin dielectric film is laid over the whole
-wafer by {term}`PECVD`. The step list calls this step "Capacitor ILD
-oxynitride deposition";[^steps-sheet] a step name is not evidence of a
+wafer by {term}`PECVD`.
+
+The step list calls this step "Capacitor ILD
+oxynitride deposition".[^steps-sheet] A step name is not evidence of a
 chemistry, and no public source describes SKY130's capacitor
 dielectric. This reference reads the film as a PECVD silicon
 {term}`oxynitride`, though the public record does not single that
-material out — SkyWater lists PECVD oxide, nitride and oxynitride with
+material out. SkyWater lists PECVD oxide, nitride and oxynitride with
 "range of R.I." options,[^skw-01] PECVD nitride and oxynitride have both
 served as MiM dielectrics,[^kar-roy-1999][^ng-2003] and the PDK does
-not name the material. A thin top-plate film follows at
-{ref}`CAPTIW2 <step-151>`; the two are cut into capacitor top
+not name the material.
+
+A thin top-plate film follows at
+{ref}`CAPTIW2 <step-151>`. The two are cut into capacitor top
 plates by the second capacitor mask and etch ({ref}`CAP2M <step-152>`,
 {ref}`CAP2ME <step-153>`), and only then is metal 4 patterned
 ({ref}`MM4 <step-154>`, {ref}`MM4E <step-155>`). The sequence repeats
@@ -40,32 +64,43 @@ the first capacitor module one metal level higher
 A close-up of part of the metal-4 level, where the second capacitor is built in the next steps; the lower part of the slice is cut off, and the drawing starts inside the oxide under metal 4. Before, the blanket metal-4 stack; after, the thin dielectric of the second capacitor over all of it. No public source describes the film: the step list names an oxynitride,[^steps-sheet] which is not evidence of a chemistry, and this page reads it as a PECVD silicon oxynitride, the same deposition as at CAPILD (inference). Its thickness is not public; 18–33 nm is the page's own arithmetic from the PDK's 2 fF/µm²[^pdk-07] with an assumed permittivity. It is drawn much thicker in proportion than that, and metal 4 is not drawn to scale either. Which refractory films clad metal 4 is not public (the overview of the metal cap sets out the evidence); the figure draws every Ti, TiN and TiW film in one colour. The two oxides and the bottom film of the stack are drawn but not labelled. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK documents this second capacitor in several places. Its device
 page describes the MiM as "a thin dielectric over metal, followed by a
 thin conductor layer on top of the dielectric", lists "CAPM over
 Metal-3" and "CAP2M over Metal-4" as the two constructions, and says
 that "The constructions are identical, and the capacitors may be
-stacked to maximize total capacitance"; it names the cells
+stacked to maximize total capacitance".[^pdk-07]
+
+The device page names the cells
 `sky130_fd_pr__cap_mim_m3__base` and `sky130_fd_pr__cap_mim_m4__base`
 and gives the second capacitor its own parameters, `CMIM2A` 2 fF/µm²
 (limits 1.8–2.2), `CMIM2P` 0.19 fF/µm and a "MiM2 top plate sheet
 resistance" of 5.8 Ω/sq, identical to the first.[^pdk-07] The layer
 table defines `cap2m` (GDS 97:44) as "MiM capacitor plate over
-metal 4",[^pdk-06] the process stack diagram draws `cap2m` between
-`metal4` and `metal5` beside `via4`,[^pdk-04] and the device's
+metal 4",[^pdk-06] and the process stack diagram draws `cap2m` between
+`metal4` and `metal5` beside `via4`.[^pdk-04] The device's
 cross-section — drawn for the "stacked" arrangement — labels the thin
 film under `CAP2M` "CAPILD", as it labels the film under
 `CAPM`.[^pdk-07]
 
 As at the first capacitor, nothing public gives the film's thickness
 or composition. SkyWater lists "PECVD silane oxide/nitride/oxynitride,
-C1" with "low temp" and "range of R.I." options.[^skw-01] The
-capacitance density bounds the thickness: with
-{math}`C/A = \varepsilon_0 k / d`, 2 fF/µm² requires
-{math}`d \approx 4.4\,\mathrm{nm} \times k` — about 18 nm for
-{math}`k = 4`, 22–27 nm for an oxynitride of {math}`k \approx 5`–6 and
-33 nm for the {math}`k = 7.5` the stack diagram gives its nitride
-films[^pdk-04] (our arithmetic with an assumed permittivity). Because
+C1" with "low temp" and "range of R.I." options.[^skw-01]
+
+The
+capacitance density bounds the thickness:
+
+1. With
+   {math}`C/A = \varepsilon_0 k / d`, 2 fF/µm² requires
+   {math}`d \approx 4.4\,\mathrm{nm} \times k`.
+2. About **18 nm** for
+   {math}`k = 4`, **22–27 nm** for an oxynitride of {math}`k \approx 5`–6 and
+   **33 nm** for the {math}`k = 7.5` the stack diagram gives its nitride
+   films.[^pdk-04]
+
+(Our arithmetic with an assumed permittivity.) Because
 the PDK gives both capacitors the same area capacitance and calls them
 identical,[^pdk-07] we read this film as the same deposition as
 {ref}`CAPILD <step-135>` (inference).
@@ -77,35 +112,49 @@ ones.[^raw-data-testtile-pads][^raw-data-passives] The two large
 second-level capacitors (11 plates, 17 600 µm²; pads 4541 and 4549)
 measure 35.27 pF and 35.29 pF at 0 V, 2.00 fF/µm² including periphery,
 against 33.26 pF and 33.28 pF for the first-level ones (pads 4530 and
-4546); one of the two second-level files is
+4546).
+
+One of the two second-level files is
 named `large_mim_cap`, but its module is the one the pad list describes
 as CAP2M over M4, and its value matches the other second-level
 capacitor. The area-intensive structures differ by only about 1 %
 (1.91 against 1.89 fF/µm² including periphery), while the second-level
 periphery-intensive structure measures less than its first-level
 counterpart (9.91 against 10.37 pF), so the levels do not differ by a
-simple area capacitance, and an area-plus-periphery model fitted to the
+simple area capacitance.
+
+An area-plus-periphery model fitted to the
 three second-level structures leaves errors of up to about 4 % and a
 periphery term close to zero. Fitted over
 ±3.3 V, their quadratic voltage coefficients are +47 to +51 ppm/V²,
-against +32 to +40 ppm/V² at the first level (our extraction from the
+against +32 to +40 ppm/V² at the first level. (Our extraction from the
 published measurements, with no correction for pad and wiring
 capacitance; the files record no measurement frequency, temperature,
-date or wafer).[^raw-data-passives]
+date or wafer.)[^raw-data-passives]
 
-**Where the public record is inconsistent.** Other PDK tables do not
-match this picture. The mask table lists "Capacitor MiM, CAPM" but no
-second capacitor mask,[^pdk-05] the minimum-CD table gives only
-`CAPMCD` and `CAPMCDSP`,[^pdk-03] and the periphery rules contain a
-`capm` rule set, phrased in terms of `met2` and `via2`, and no rule
-set for `cap2m` at all.[^pdk-periph] The via-2 rule table says via 2
+### Where the public record is inconsistent
+
+Other PDK tables do not
+match this picture:
+
+* the mask table lists "Capacitor MiM, CAPM" but no
+  second capacitor mask;[^pdk-05]
+* the minimum-CD table gives only
+  `CAPMCD` and `CAPMCDSP`;[^pdk-03]
+* the periphery rules contain a
+  `capm` rule set, phrased in terms of `met2` and `via2`, and no rule
+  set for `cap2m` at all.[^pdk-periph]
+
+The via-2 rule table says via 2
 connects "met2/capm to met3 in the SKY130DI* flow",[^pdk-periph] and
 the extraction page lists a two-terminal
 `sky130_fd_pr__cap_mim_m3_2` and a three-terminal
 `sky130_fd_pr__model__cap_mim` with via-2, metal-3 and "capm-m2"
 parasitic terms.[^pdk-08] Those texts describe a capacitor one level
 lower than the device page, layer table and stack diagram do, and none
-of them describes `cap2m`. The PDK's *Previous Nomenclature* page sides
+of them describes `cap2m`.
+
+The PDK's *Previous Nomenclature* page sides
 with the device page: it describes an "s8phrc" variant as "The base
 process plus dual MiM cap layers on metal 3 and metal 4".[^pdk-previous]
 This page follows those sources and reads the other entries as carried
@@ -116,38 +165,49 @@ stated in any public source.
 ## Step category
 
 `CAPILD2` is a {ref}`Thin-film deposition <category-deposition>` step of
-the *PECVD dielectric* class, and one of the two PECVD films in the
-flow — with {ref}`CAPILD <step-135>` — deposited as a device layer, whose
-thickness sets a capacitance the models promise rather than a spacing
-the design rules bound. Uniformity, repeatability, pinhole density,
-breakdown at 5 V across some 20–30 nm (a field of order 2 MV/cm; our
-arithmetic from the 0–5.0 V model range[^pdk-07]), leakage and
-{term}`voltage coefficient` matter as they would for a gate oxide, and
-{term}`step coverage` does not, because the film lies on a blanket,
-planar metal surface.
+the *PECVD dielectric* class.
+
+**Specific to this step:**
+
+* `CAPILD2` is one of the two PECVD films in the
+  flow — with {ref}`CAPILD <step-135>` — deposited as a device layer, whose
+  thickness sets a capacitance the models promise rather than a spacing
+  the design rules bound.
+* Uniformity, repeatability, pinhole density,
+  breakdown at 5 V across some 20–30 nm (a field of order 2 MV/cm; our
+  arithmetic from the 0–5.0 V model range[^pdk-07]), leakage and
+  {term}`voltage coefficient` matter as they would for a gate oxide.
+  {term}`Step coverage <step coverage>` does not, because the film lies on a blanket,
+  planar metal surface.
 
 What is specific to this instance is its history and its partner. The
 wafer under this film already carries a finished first capacitor, its
-plates buried in the via-3 dielectric, and four aluminium levels. If
+plates buried in the via-3 dielectric, and four aluminium levels.
+
+If
 both capacitors are to be stacked, as the device page
-allows,[^pdk-07] the two dielectrics must match: in a stacked pair the
+allows,[^pdk-07] the two dielectrics must match. In a stacked pair the
 PDK's cross-section connects the `CAPM` plate to the metal-4 shape
 under `CAP2M` and the metal-3 bottom plate to the metal-5 shape over
-`CAP2M`,[^pdk-07] so the two capacitors add in parallel and any
+`CAP2M`.[^pdk-07] So the two capacitors add in parallel and any
 difference in thickness or permittivity between this film and
 {ref}`CAPILD <step-135>` becomes a difference between the two halves.
 
 ## Why this step exists
 
 * **Twice the capacitance per unit area.** A MiM capacitor at
-  2 fF/µm²[^pdk-07] is large; the second capacitor, stacked over the
+  2 fF/µm²[^pdk-07] is large. The second capacitor, stacked over the
   first, doubles the capacitance available on the same footprint (our
-  arithmetic from the identical `CMIMA` and `CMIM2A`[^pdk-07]). The
+  arithmetic from the identical `CMIMA` and `CMIM2A`[^pdk-07]).
+
+  The
   test tile has such a pair — "CAPM-M3 and CAP2M-M4 capacitors, stacked
   on top of each other and connected together", 11 pairs of 40 × 40 µm
   plates[^raw-data-testtile-pads] — and its published measurement,
   68.78 pF, is 0.3–0.4 % more than the sum of the separately measured
-  single-level large capacitors (our extraction).[^raw-data-passives] The
+  single-level large capacitors (our extraction).[^raw-data-passives]
+
+  The
   Newport Fab patent builds exactly such a composite capacitor "perpendicular
   to the surface of the die", with upper and lower MiMs sharing a
   middle electrode and joined in parallel,[^pat-mim-stack-newportfab]
@@ -155,11 +215,16 @@ difference in thickness or permittivity between this film and
   for the same purpose.[^pat-mim-stack-tsmc] Sul and Pyo model the RF
   behaviour of stacked MiMs.[^sul-2014]
 * **An analogue capacitor with metal plates.** SkyWater and Google list
-  MiM capacitors among SKY130's features — "Optional MiM capacitors" in
-  the PDK README,[^pdk-10] "MiM Capacitor" in the S130 platform
-  table[^skw-02] and "MiM capacitors" among the "normally optional
-  features" SKY130 offers "as standard".[^ann-11] Metal plates have no depletion
-  layer, so capacitance barely changes with bias; Kar-Roy et al.
+  MiM capacitors among SKY130's features:
+  - "Optional MiM capacitors" in
+    the PDK README;[^pdk-10]
+  - "MiM Capacitor" in the S130 platform
+    table;[^skw-02]
+  - "MiM capacitors" among the "normally optional
+    features" SKY130 offers "as standard".[^ann-11]
+
+  Metal plates have no depletion
+  layer, so capacitance barely changes with bias. Kar-Roy et al.
   (Conexant) and Babcock et al. (Texas Instruments) describe PECVD-nitride
   MiMs added to aluminium back ends for mixed-signal and RF
   circuits,[^kar-roy-1999][^babcock-2001] and Ng et al. (Chartered)
@@ -167,25 +232,32 @@ difference in thickness or permittivity between this film and
 * **Why the dielectric goes on unpatterned metal 4.** Depositing the
   dielectric on the blanket metal and defining the top plate before the
   bottom metal is etched gives a planar bottom plate with no sidewall
-  under the thin film. The Newport Fab patent deposits its dielectric
+  under the thin film.
+
+  The Newport Fab patent deposits its dielectric
   and top-plate metal on the unpatterned interconnect metal and etches
-  the top plate before the bottom plate,[^pat-mim-newportfab] and the sequence described in this reference builds its capacitors in the same order; Freescale's patent, by contrast, builds a separate MiM
+  the top plate before the bottom plate,[^pat-mim-newportfab] and the
+  sequence described in this reference builds its capacitors in the same
+  order. Freescale's patent, by contrast, builds a separate MiM
   stack over a planarised dielectric.[^pat-mim-freescale] The price is that the metal-4 etch must
   later cut through whatever dielectric remains ({ref}`MM4E <step-155>`).
 * **Oxynitride, oxide or nitride.** PECVD silicon nitride gives the most
   capacitance per thickness, but Van Huylenbroeck et al. found that
   PECVD-nitride MiMs show trap-induced dispersion while PECVD ONO
-  stacks do not;[^van-huylenbroeck-2002] Ng, Chew and
+  stacks do not.[^van-huylenbroeck-2002]
+
+  Ng, Chew and
   Chu compared PECVD nitride and oxynitride as MiM dielectrics and found
   both suitable.[^ng-2003] The composition — and hence {math}`k` — of a
   PECVD oxynitride is set by the N₂O/NH₃ flow ratio, which Denisse et al.
-  showed covers the whole range from oxide to nitride,[^denisse-1986]
-  and Bose, Bose and Basa relate composition to refractive
-  index;[^bose-2002] SkyWater's "range of R.I."[^skw-01] is the public
+  showed covers the whole range from oxide to nitride.[^denisse-1986]
+  Bose, Bose and Basa relate composition to refractive
+  index.[^bose-2002] SkyWater's "range of R.I."[^skw-01] is the public
   trace of a tunable film.
 * **Voltage coefficient and charging.** The models are valid to
   5 V;[^pdk-07] Blonkowski and Gonon and Vallée give the physics of the
   {math}`C(V)` curvature in amorphous dielectrics.[^blonkowski-2007][^gonon-2007]
+
   Wang, Ackaert et al. showed that floating MiM capacitors are damaged by
   {term}`plasma charging` according to the antenna areas connected to each
   plate,[^wang-2004-mim] a concern for every plasma step between this
@@ -197,16 +269,17 @@ short rather than a capacitor.
 
 ## How it is typically performed
 
-An industry-generic PECVD MiM-dielectric deposition on an aluminium
+*An industry-generic PECVD MiM-dielectric deposition on an aluminium
 back end (SKY130's recipe is not public); the sequence is that of
-{ref}`CAPILD <step-135>`.
+{ref}`CAPILD <step-135>`.*
 
 1. **Surface.** The wafer comes from the {term}`PVD` cluster with the
    cap of {ref}`WTIAL4 <step-149>` exposed — TiW on this reference's
    reading, TiN on the stack qualified in 2013–2014, which the public
-   record does not decide between ({ref}`overview-metal-cap`); that
+   record does not decide between ({ref}`overview-metal-cap`). That
    surface is the bottom electrode, and its roughness and cleanliness
    set the leakage.
+
    The Philips patent treats the bottom electrode in an ammonia plasma
    before the insulator is deposited,[^pat-mim-philips] and the queue
    time from PVD to deposition is limited (industry practice[^txt-05]).
@@ -225,9 +298,9 @@ back end (SKY130's recipe is not public); the sequence is that of
    as {ref}`CAPILD <step-135>` (inference from the identical
    specification[^pdk-07]).
 5. **Thermal budget.** By this step the first capacitor has already
-   been through the via-3 dielectric, tungsten and metal-4 depositions
-   (the first capacitor lies below via 3 and metal 4 on the PDK's stack
-diagram[^pdk-04]); the aluminium limit of roughly
+   been through the via-3 dielectric, tungsten and metal-4 depositions.
+   The first capacitor lies below via 3 and metal 4 on the PDK's stack
+   diagram.[^pdk-04] The aluminium limit of roughly
    400–450 °C (industry-typical[^txt-05]) bounds this deposition and
    every later one.
 6. **Metrology.** Thickness and refractive index by ellipsometry on
@@ -244,12 +317,15 @@ diagram[^pdk-04]); the aluminium limit of roughly
 
 ## Machines likely used at SkyWater
 
-* **PECVD silane "C1" chamber.** SkyWater lists "PECVD silane
-  oxide/nitride/oxynitride, C1" with low-temperature and
-  refractive-index options.[^skw-01] Strength: **strong** for the
-  capability; the assignment of this chamber to this step, and the
-  reading of "C1" as a Novellus Concept One,[^novellus-history] are
-  **inferences**.
+* **PECVD silane "C1" chamber**
+  - *SkyWater says:* lists "PECVD silane
+    oxide/nitride/oxynitride, C1" with low-temperature and
+    refractive-index options.[^skw-01]
+  - *Tool exists:* **strong** for the
+    capability.
+  - *Runs this step:* the assignment of this chamber to this step, and the
+    reading of "C1" as a Novellus Concept One,[^novellus-history] are
+    **inferences**.
 * **PECVD TEOS "C2 and Producer"**[^skw-01] is an oxide source; it
   would fit only if the dielectric were an oxide (weak).
 * SkyWater's "HP 4062UX" parametric tester with "capacitance"
@@ -269,14 +345,15 @@ diagram[^pdk-04]); the aluminium limit of roughly
 ## Related steps and cross-references
 
 * Previous: {ref}`WTIAL4 <step-149>` (the metal-4 stack that is the
-  bottom plate). Next: {ref}`CAPTIW2 <step-151>` (the top-plate metal),
+  bottom plate).
+* Next: {ref}`CAPTIW2 <step-151>` (the top-plate metal),
   then {ref}`CAP2M <step-152>` and {ref}`CAP2ME <step-153>`.
-* The etch that later removes this film outside the capacitors:
-  {ref}`MM4E <step-155>`; the via that contacts the finished top plate:
-  {ref}`VIM4 <step-159>`, {ref}`VIM4E <step-160>`.
-* The first capacitor, whose dielectric this repeats:
+* Same module: the first capacitor, whose dielectric this repeats,
   {ref}`CAPILD <step-135>`, {ref}`CAPTIW1 <step-136>`,
   {ref}`CAPM <step-137>`, {ref}`CAPME <step-138>`.
+* Feeds: the etch that later removes this film outside the capacitors,
+  {ref}`MM4E <step-155>`; the via that contacts the finished top plate,
+  {ref}`VIM4 <step-159>`, {ref}`VIM4E <step-160>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -379,27 +456,30 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The dielectric's composition, permittivity, thickness and deposition
+* **Composition and thickness.** The dielectric's composition, permittivity, thickness and deposition
   conditions are not public; 18–33 nm is our estimate from the PDK's
   2 fF/µm²[^pdk-07] with an assumed {math}`k`, and the reading that it
   repeats {ref}`CAPILD <step-135>` rests on the PDK calling the two
-  constructions identical. The published test-tile measurements show
+  constructions identical.
+
+  The published test-tile measurements show
   the two levels within a few per cent of each other but not
   identical, and cannot separate thickness, permittivity and plate
   geometry.[^raw-data-passives]
-* The PDK is inconsistent about the capacitors' levels: the device
-  page, layer table and stack diagram place `cap2m` over metal 4, while
-  the mask table, minimum-CD table and periphery rules have no `cap2m`
+* **The capacitors' levels.** The PDK is inconsistent about the capacitors' levels: the device
+  page, layer table and stack diagram place `cap2m` over metal
+  4.[^pdk-07][^pdk-06][^pdk-04] The mask table, minimum-CD table and periphery rules have no `cap2m`
   entries and the `capm` rules, via-2 function text and extraction
   entries refer to metal 2, via 2 and metal
-  3.[^pdk-07][^pdk-06][^pdk-04][^pdk-05][^pdk-03][^pdk-periph][^pdk-08]
+  3.[^pdk-05][^pdk-03][^pdk-periph][^pdk-08]
+
   The level reading on this page is an inference, supported by the
   "dual MiM cap layers on metal 3 and metal 4" of the nomenclature
   page[^pdk-previous] and by the "CAP2M over M4" of the test tile's
   pad documentation.[^raw-data-testtile-pads]
-* The design rules for `cap2m` — width, spacing, enclosure by metal 4
+* **Design rules for `cap2m`.** The design rules for `cap2m` — width, spacing, enclosure by metal 4
   and of via 4 — are not published.[^pdk-periph]
-* Whether every SKY130 lot carries the second capacitor module is not
+* **Second capacitor on every lot.** Whether every SKY130 lot carries the second capacitor module is not
   public: the README lists "Optional MiM capacitors" and also counts MiM
   capacitors among the "normally optional features" SKY130 includes
   "as standard",[^pdk-10] and the capacitor mask is not
