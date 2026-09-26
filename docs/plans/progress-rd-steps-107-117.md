@@ -194,3 +194,31 @@ per page.
 * **Coverage flags read:** glance lines; the nucleation split (each half keeps its own marker). None
   lost a marker or hedge.
 * **Left over the caps:** nothing over the §1 caps; lead 100 words.
+
+### 111 WCMP2 — done
+
+* **R-H3:** none (post-figure passage 65 words).
+* **Lead:** base 122 words → two paragraphs at "What is left is a planar oxide surface" (each under 100).
+* **R-CATEGORY:** classification cut at its colon (9 words); "Unlike the oxide polishes …" (the one
+  sentence about this step) as the second paragraph, no label; the category-page comparison and the
+  Kaufman mechanism as a third paragraph.
+* **R-PARA/R-SENTENCE:** Why items split at their semicolons ("A flat base": at "this surface;";
+  "Contact resistance": at "cover;"; "Oxide loss" (84-word sentence): at "two levels;" — "on our
+  reading" is in the second half and stays there). How/Slurry: continuation at "Kaufman et al.",
+  split at both semicolons. How/Recipe: the three platens as a nested numbered sequence (R-LIST step 6,
+  a recipe), "a second" → "A second"; the down-force and Elbel sentences as the continuation.
+  How/Post-CMP clean: the Jolley dash material becomes its own sentence opening the continuation.
+* **R-TOOLS:** Mirra item in three lines; "Which of the two tungsten processes runs this step is not
+  public." stays after the grades. Defect-inspection item in the 012/100/106 form (*Tool exists:*
+  medium). The post-CMP-clean bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** three labels; Previous / Next split, Depends on, the two
+  CMP bullets merged under one "Same category:" (no link dropped or added, glosses kept); italic scope
+  lead-in.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED numbers `1`, `2`, `3` are the nested
+  recipe labels (the known indented-label case, batch-7b D3) plus the glance; all ADDED markers,
+  quote, hedges and identifier `NILD2` are the glance. LOST words "strength"×2 (R-TOOLS).
+* **Coverage flags read:** the Slurry split (each sentence keeps its own marker); the Jolley dash
+  material (the marker moved with its clause). None lost a marker or hedge.
+* **Left over the caps:** item lead block "Contact resistance" (35 words, one sentence with the
+  Vlassak parenthetical). Nothing over the §1 caps. (From this page on `rdtools.py` counts a
+  quotation as one word, as §1 says; 107–110 have no quotation-heavy sentence near a cap.)
