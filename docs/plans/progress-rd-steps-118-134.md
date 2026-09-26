@@ -546,3 +546,44 @@ per page.
   it), glance lines. None lost a marker or hedge.
 * **Left over the caps:** lead 148 words in two paragraphs of 73 and 75 (base 148). Item leads over
   30 words: Placement (38), Mask type (45; one sentence).
+
+### 130 VIM2E — done
+
+* **R-H3:** none (as 119/108; the post-figure passage mixes the public geometry with readings).
+* **Lead:** one paragraph (85 words); ", producing the holes" → ". It produces the holes" (the 119 form).
+* **Post-figure (150 words, one 90-word sentence):** three paragraphs. "…with a deeper, wider hole: 0.20 µm
+  squares …" → "… hole. The holes are 0.20 µm squares …" (subject and verb added); "— and landing on the same
+  kind of floor, …: 300 Å …" → "The etch lands on the same kind of floor, … stack. The cap is 300 Å …"
+  (subject and verb added, "landing" → "lands"; the not-public clause and both Cypress markers stay
+  with the stack sentence). "The deeper hole means …; the smaller enclosure means … (inference)." (46
+  words) split at the semicolon; the trailing "(inference)" scoped the whole sentence, so it is
+  **repeated** on the first half (R-SENTENCE step 5; declared ADDED hedge).
+* **R-CATEGORY:** classification ends at "the second of the four via etches" (18 words). The VIME sentence
+  (60 words, a dash pair): "VIME sets out what distinguishes the class within the flow. The stop layer
+  is … stop on time. CTME sets out the underlying surface chemistry.[^flamm-1981][^winters-1992]" — the
+  dash material becomes its own sentence and the elided "sets out" is restored for CTME, so the surface
+  chemistry markers stay with CTME's clause. "What is specific to this instance is the depth." (its own
+  label) with its next sentence split at ", and the over-etch".
+* **R-PARA (Why):** Not punching through: continuation from "How much over-etch"; the patent sentence
+  split after the quotation, **`[^pat-etchstop-ti]` repeated** on "Nothing public gives the
+  corresponding figure for TiW." (as 119; declared); the Schaepkens sentence a second continuation.
+  Unlanded via (46 words): split at its semicolon; "(inference from the rule)" stays with the budgeting
+  clause it qualifies (the base's own Open question, "How a via that lands partly off … is tolerated is
+  inferred", names that clause; the first half is the geometry, unhedged at 119 too). Poisoned via: kept
+  whole (41 words); the NILD4 sentence is the continuation.
+* **How:** italic scope lead-in. Main oxide etch and Endpoint split as on 119 (the Wodecki dash material
+  its own sentence; "— and the etch is" → "The etch is"). Strip and clean: the 119 form ("The ash is
+  GaSonics, Iridia or Mattson class in SkyWater's list.[^skw-01]"; the SkyWater-lists sentence after it;
+  "; no HF (inference)" stays at the end of the main sentence). Metrology: lead ends at "e-test;"; the
+  14-word "(inference: …)" parenthetical closed as its own parenthetical sentence (the 118/122 form).
+* **R-TOOLS:** the 119 form. **R-OPENQ:** five labels. **R-RELATED:** the 119 form. **R-GLANCE:** the 119
+  form.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED marker `pat-etchstop-ti` and hedge
+  "inference" (the declared repeats above); every other ADDED line is the glance box (markers `pdk-04`,
+  `pdk-08`, `pdk-periph`, `skw-01`; numbers 0.040, 0.20, 0.42, 3 410, `1`, `2`×2, `3`, `4`; ref
+  `step-126`; hedges; `metal-2`, `via-2`×3, `via2`×3). LOST words "producing", "landing" (→ "produces",
+  "lands"), "strength"×2 (R-TOOLS).
+* **Coverage flags read:** the floor split (markers with the stack sentence), the VIME/CTME split, the
+  depth split, the endpoint and metrology splits, glance lines. None lost a marker or hedge.
+* **Left over the caps:** none. Item leads over 30 words: Not punching through (35), Poisoned via (41),
+  Strip and clean (42) — each one sentence.
