@@ -28,6 +28,14 @@ capacitor module — {ref}`CAPILD2 <step-150>`,
 PDK's device page lists "CAP2M over Metal-4" beside "CAPM over
 Metal-3" as its two MiM constructions.[^pdk-07]
 
+:::{figure} /_static/figures/beol-149-wtial4.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a flat pale oxide buries a metal line and a wider metal shape carrying a raised thin plate, with a small tungsten plug reaching the top over each. After it three blanket films cover the whole top: a thin purple film, a thick silver film and another thin purple film.
+:width: 560px
+:name: fig-beol-149-wtial4
+
+Before, the flush via-3 plugs, one on the metal-3 line and one on the capacitor's top plate; after, the metal-4 stack over the whole wafer: a thin bottom film, a thicker aluminium–copper alloy and a thin cap. Like metal 3, it stays a blanket through the second capacitor's steps and is patterned at MM4 and MM4E (steps 154 and 155). No public source describes the metal-4 films; the page reads the stack as a repeat of metal 3's (an inference), with the bottom film as Ti or TiW, and whether the cap is TiW or the Ti/TiN of the stack qualified in 2014 is unresolved: the overview of the metal cap sets out the evidence, and the figure does not choose, drawing both films in the colour the figure conventions use for every Ti, TiN and TiW film. The PDK's stack diagram gives metal 4 the same 0.845 µm as metal 3,[^pdk-04] and it is drawn as thick as metal 3, though not to scale. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 2. The metal-3 line and the capacitor, the plugs and their liners, the oxides and the metal-2 lines are drawn but not labelled, except, in the upper panel, the tungsten of the plug on the plate and the cap oxide. Not to scale.
+:::
+
 The PDK gives metal 4 the same numbers as metal 3. The process stack
 diagram labels `metal4` 0.845 µm, with its bottom 4.0211 µm above the
 substrate reference and the bottom of `metal5` at 5.3711 µm;[^pdk-04]

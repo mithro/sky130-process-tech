@@ -28,6 +28,14 @@ thickness is not. The same cap is described at
 {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>` and
 {ref}`NCAPOX4 <step-128>`, and recurs as {ref}`NCAPOX6 <step-158>`.
 
+:::{figure} /_static/figures/beol-143-ncapox5.svg
+:alt: Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the step a flat pale oxide buries a metal line and a wider metal shape carrying a raised thin plate. After it a thin flat layer of the same pale oxide covers the whole top.
+:width: 560px
+:name: fig-beol-143-ncapox5
+
+Before, the polished NILD5 oxide; after, a thin cap oxide over it, which with the oxide left by the polish makes up the dielectric over metal 3 on which the via-3 mask is printed. In the PDK's stack diagram that finished height is 0.39 µm;[^pdk-04] how thick the cap itself is is not public (the page gives of the order of 0.05–0.15 µm as industry-typical[^txt-05]), and that it brings the dielectric to its final thickness is the page's inference. The diagram draws no thin "_C" film at NILD5.[^pdk-04] Over the capacitor's top plate the finished oxide is drawn thinner than over the metal-3 line, since the plate stands inside the via-3 dielectric; nothing is drawn to scale. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 2. The metal-3 films, the thin capacitor dielectric, the via plugs and their liners, the oxides below and the metal-2 lines are drawn but not labelled, nor, in the lower panel, is the NILD5 oxide. Not to scale.
+:::
+
 One public difference from the two levels below is worth noting. At
 NILD3 and NILD4 the stack diagram draws a thin "_C" film of
 permittivity 3.5 and thickness 0.030 µm beside the main dielectric,
