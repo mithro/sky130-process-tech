@@ -454,8 +454,8 @@ None was fixed here; each is recorded as found.
   steps).
 * **R-OPENQ.** Labels "Etch-back and deposition method", "Removal before PSG", "Oxide thickness at
   implant"; text unchanged.
-* **R-GLANCE.** Does from the lead; Why from the category's "implant screen and spacer extension"
-  and the Why lead's "the public evidence does not say which SKY130 had in mind"; Public numbers the
+* **R-GLANCE.** Does from the lead; Why from the Why lead ("serves several purposes at once",
+  "the public evidence does not say which SKY130 had in mind"), naming two of the purposes (review L6); Public numbers the
   0.05 µm "oxide spacer" `[^pdk-03]` with "which we infer is this film"; tool line "C2"/Producer with
   both grades; Not public from Open questions 1 ("all inferred").
 * **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `skw-01`, number 0.05, quotes

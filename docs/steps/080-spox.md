@@ -15,8 +15,9 @@
 
 * **Does:** deposits a blanket silicon dioxide film after the nitride
   cut, immediately before the first source/drain mask.
-* **Why:** an implant screen and spacer extension; the public evidence
-  does not say which of its purposes SKY130 had in mind.
+* **Why:** it serves several purposes at once — implant screen, spacer
+  extension and others; the public evidence does not say which SKY130
+  had in mind.
 * **Public numbers:** the PDK's "oxide spacer" of 0.05 µm,[^pdk-03]
   which we infer is this film.
 * **Likely SkyWater tool:** "C2" / Producer PECVD TEOS — strong
