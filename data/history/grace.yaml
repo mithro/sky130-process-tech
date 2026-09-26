@@ -202,3 +202,301 @@ records:
   - {subject: S8P12-10P, attribute: qualified at, value: HHGrace Fab 1}
   notes: Title only; the report body is behind a log-in and was not read.
 
+# ---- Cypress annual reports after 2010 ------------------------------------
+- id: grc-ar-fy2010-grace-guarantees
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2010 Annual Report with Form 10-K, fiscal year ended 2011-01-02
+    date: 2011
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: filings/ar-fy2010.txt
+  quotes:
+  - text: In connection with the guarantees, we were granted options to purchase 40.3 million ordinary shares
+      of Grace.
+    location: Management's Discussion and Analysis, Off-Balance Sheet Arrangement
+  - text: During the fourth quarter of fiscal 2010, we advanced $2.5 million in pre-payments to Grace to secure
+      a certain supply of wafers.
+    location: Management's Discussion and Analysis, Off-Balance Sheet Arrangement
+  claims:
+  - {subject: Cypress and Grace, attribute: lease guarantees gave Cypress, value: options on 40.3 million Grace shares}
+  - {subject: Cypress and Grace, attribute: wafer pre-payment, value: $2.5 million, date: 2010-Q4}
+  notes: null
+
+- id: grc-ar-fy2012-grace
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2012 Annual Report with Form 10-K, fiscal year ended 2012-12-30
+    date: 2013
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2012.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: filings/ar-fy2012.txt
+  quotes:
+  - text: Since 2007, when we completed the transfer of our 0.35-micron SONOS, 0.13-micron SRAM and LOGIC
+      processes and 0.09-micron SRAM, we have been purchasing products from Grace that are manufactured
+      using these processes.
+    location: Item 1, Business, Manufacturing
+  - text: The pre-payments are applied to purchases of wafers from Grace over a period of two years ending
+      February 22, 2013.
+    location: Item 1, Business, Manufacturing
+  claims:
+  - {subject: Grace, attribute: Cypress processes transferred, value: '0.35 µm SONOS, 0.13 µm SRAM and logic, 0.09 µm SRAM'}
+  notes: Adds "0.09-micron SRAM" to the 2010 wording; S8 is not named.
+
+- id: grc-ar-fy2015-hhgrace
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2015 Annual Report with Form 10-K, fiscal year ended 2016-01-03
+    date: 2016
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2015.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: filings/ar-fy2015.txt
+  quotes:
+  - text: We have a strategic foundry partnership with HuaHong Grace Semiconductor Manufacturing Corporation
+      (“Grace”), located in Shanghai, China.
+    location: Item 1, Business, Manufacturing
+  - text: purchased 6.9 million ordinary shares of Hua Hong Semiconductor Limited (HHSL) for an aggregate
+      price of $10.0 million in connection with their initial public offering.
+    location: Item 1, Business, Manufacturing
+  claims:
+  - {subject: Cypress, attribute: shares bought in Hua Hong Semiconductor's IPO, value: 6.9 million for $10.0 million, date: 2014-Q4}
+  notes: Same list of transferred processes as the 2012 report; S8 is not named.
+
+- id: grc-ar-fy2018-hhgrace
+  origin: cypress
+  source:
+    publisher: Cypress Semiconductor Corporation
+    title: 2018 Annual Report with Form 10-K, fiscal year ended 2018-12-30
+    date: 2019
+    form: Annual Report
+  url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2018.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: filings/ar-fy2018.txt
+  quotes:
+  - text: HuaHong Grace Semiconductor Manufacturing Corporation ("Grace") - Agreement for foundry services;
+    location: Item 1, Business, Manufacturing, list of manufacturing services agreements
+  - text: Skywater Technologies Inc. - Agreement for foundry services;
+    location: Item 1, Business, Manufacturing, same list
+  - text: licensing of the Company’s various embedded nonvolatile memory technologies (SONOS and
+    location: Executive officers, biography of the head of the memory products division
+  - text: eCT) to foundries, including UMC, HLMC and HH-Grace
+    location: Executive officers, same biography, continued on the next page
+  claims:
+  - {subject: HH-Grace, attribute: licensee of, value: Cypress embedded non-volatile memory technology (SONOS and eCT)}
+  - {subject: Grace, attribute: agreement, value: foundry services, date: 2018}
+  notes: The officer's name is not copied. The licence to HH-Grace is not dated.
+
+# ---- The Cypress-Grace deal and the SONOS licence in the press ------------
+- id: grc-eepw-2006-cypress-grace
+  origin: eepw
+  capture: browser
+  source:
+    publisher: 电子产品世界 (EEPW), reproduced by fx361.com (参考网)
+    title: 赛普拉斯与上海宏力达成代工协议 (Cypress and Shanghai Grace reach a foundry agreement)
+    date: 2006-02
+    form: magazine news item, 2006 issue 2
+  url: https://m.fx361.com/news/2006/0101/29693231.html
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/chrome-fx361-eepw-2006-02-cypress-grace.txt
+  quotes:
+  - text: 赛普拉斯半导体公司（Cypress Semiconductor）和上海宏力半导体制造有限公司（Grace）宣布建立战略IC代工合作伙伴关系
+    translation: Cypress Semiconductor and Shanghai Grace Semiconductor Manufacturing Co., Ltd. (Grace)
+      announced a strategic IC foundry partnership
+    location: news item, first sentence
+  - text: Cypress公司将把自己的可编程系统级芯片（Programmable System-on-Chip，PSoC）混合信号阵列、CMOS图像传感器、WirelessUSB和PC时钟工艺技术转移给宏力公司制造，而宏力公司将优先向Cypress提供其IC代工生产能力。
+    translation: Cypress will transfer its process technologies for PSoC mixed-signal arrays, CMOS image
+      sensors, WirelessUSB and PC clocks to Grace for manufacture, and Grace will give Cypress priority for
+      its IC foundry capacity.
+    location: news item, first sentence, continued
+  claims:
+  - {subject: Cypress-Grace agreement, attribute: processes to transfer, value: 'PSoC, CMOS image sensor, WirelessUSB, PC clock'}
+  notes: Reports the same announcement as EE Times on 2005-12-12 (cyhist-corp-pr-2005-grace-deal), probably
+    from the same press release; it confirms the Chinese company name 上海宏力半导体制造有限公司. The page shows
+    only the first paragraph.
+
+- id: grc-eetimes-2007-sonos-hhnec
+  origin: eetimes
+  capture: browser
+  source:
+    publisher: EE Times
+    author: Cai Yan
+    title: Cypress licensing SONOS memory to Hua Hong NEC
+    date: 2007-04-17
+    form: news article
+  url: https://www.eetimes.com/cypress-licensing-sonos-memory-to-hua-hong-nec/
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/chrome-eetimes-2007-04-17-cypress-sonos-hhnec.txt
+  quotes:
+  - text: Cypress Semiconductor Corp. will license its 0.13um SONOS (Silicon Oxide Nitride Oxide Silicon)
+      embedded nonvolatile memory technology to foundry Shanghai Hua Hong NEC.
+    location: first paragraph
+  - text: including a 2005 deal with Shanghai-based Grace Semiconductor to shift its 0.13-micron process to
+      Grace.
+    location: third paragraph
+  claims:
+  - {subject: Hua Hong NEC, attribute: licensee of, value: Cypress 0.13 µm SONOS eNVM, date: 2007-04}
+  notes: The 2005 deal is described as shifting "its 0.13-micron process" to Grace; the 2005 article and
+    Cypress's reports say the first process was S4 (0.35 µm) and the 0.13 µm C8 followed in 2006.
+
+- id: grc-mmsonline-hhnec-sonos
+  origin: mmsonline
+  source:
+    publisher: 国际金属加工网 (mmsonline.com.cn)
+    title: 华虹NEC获Cypress 0.13微米SONOS NVM工艺授权 (Hua Hong NEC obtains a licence for Cypress's 0.13 µm
+      SONOS NVM process)
+    date: null
+    form: news item (undated on the page)
+  url: https://www.mmsonline.com.cn/info/91858.shtml
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/mmsonline-91858-hhnec-cypress-sonos.txt
+  quotes:
+  - text: 华虹NEC将从Cypress获得0.13微米SONOS(Silicon Oxide Nitride Oxide Silicon)嵌入式非易失性存储(Embedded
+      Non Volatile Memory)的工艺授权。
+    translation: Hua Hong NEC will obtain from Cypress a process licence for 0.13 µm SONOS embedded
+      non-volatile memory.
+    location: first paragraph
+  - text: 0.35微米嵌入式EEPROM、0.35微米嵌入式OTP以及 0.25微米嵌入式Flash工艺已经量产多年
+    translation: the 0.35 µm embedded EEPROM, 0.35 µm embedded OTP and 0.25 µm embedded flash processes have
+      been in volume production for years
+    location: second paragraph
+  claims:
+  - {subject: Hua Hong NEC, attribute: licensee of, value: Cypress 0.13 µm SONOS eNVM}
+  notes: Undated; the wording matches the EE Times report of 2007-04-17 (grc-eetimes-2007-sonos-hhnec)
+    closely, so both probably follow one Hua Hong NEC announcement. A Chinese-language source for the
+    licence.
+
+# ---- Hua Hong's own disclosures -------------------------------------------
+- id: grc-huahong-fab-naming-2017
+  origin: huahong
+  source:
+    publisher: 华虹集团 (Hua Hong Group)
+    title: 华虹集团集成电路制造工厂启用统一命名 (Hua Hong Group adopts uniform names for its IC fabs)
+    date: 2017-08-10
+    form: group news item
+  url: https://www.huahong.com.cn/?m=detail&id=459
+  archive_url: https://web.archive.org/web/20240130183650/https://www.huahong.com.cn/?m=detail&id=459
+  retrieved: 2026-09-26
+  cache: web/huahong-fab-naming.txt
+  quotes:
+  - text: 华虹一厂（HH FAB1），川桥路1188号，8英寸，上海华虹宏力运营；
+    translation: Hua Hong Fab 1 (HH FAB1), 1188 Chuanqiao Road, 8-inch, operated by Shanghai Huahong Grace;
+    location: list of the renamed fabs
+  - text: 华虹二厂（HH FAB2），哈雷路288号，8英寸，上海华虹宏力运营；
+    translation: Hua Hong Fab 2 (HH FAB2), 288 Halei Road, 8-inch, operated by Shanghai Huahong Grace;
+    location: list of the renamed fabs
+  - text: 华虹三厂（HH FAB3），祖冲之路1399号，8英寸，上海华虹宏力运营；
+    translation: Hua Hong Fab 3 (HH FAB3), 1399 Zuchongzhi Road, 8-inch, operated by Shanghai Huahong Grace;
+    location: list of the renamed fabs
+  claims:
+  - {subject: HH FAB3, attribute: address and wafer size, value: 1399 Zuchongzhi Road, 8-inch}
+  - {subject: HH FAB1, attribute: address and wafer size, value: 1188 Chuanqiao Road, 8-inch}
+  notes: Dated 2017-08-10 on the page ("发布时间"). The fab numbers were assigned in 2017; Cypress reports
+    printed before then used "Fab 5" or "GSMC" for the Shanghai foundry and a 2014 report already says
+    "Fab 3 HHGrace", so the numbering may have been in use before it was formalised.
+
+- id: grc-hh-star-prospectus-2023
+  origin: huahong
+  source:
+    publisher: 华虹半导体有限公司 (Hua Hong Semiconductor Limited)
+    title: 首次公开发行人民币普通股（A股）股票并在科创板上市招股说明书（上会稿） (prospectus for the A-share listing on
+      the STAR Market, draft for the listing committee)
+    date: 2023-05-10
+    form: prospectus, Shanghai Stock Exchange disclosure
+  url: http://static.sse.com.cn/stock/disclosure/announcement/c/202305/001307_20230510_ETYJ.pdf
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: filings/hh-star-prospectus-2023.txt
+  quotes:
+  - text: 公司目前有三座 8 英寸晶圆厂和一座 12 英寸晶圆厂。
+    translation: The company now has three 8-inch wafer fabs and one 12-inch wafer fab.
+    location: Section on business, overview
+  - text: 发行人于 2011 年回购了 Newport 持有的发行人 57,050,000 股普通股股份，并与联和国际控制的 Grace Cayman 进行了合并。
+    translation: In 2011 the issuer bought back the 57,050,000 ordinary shares held by Newport and merged
+      with Grace Cayman, which was controlled by Lianhe International.
+    location: Section on the issuer's history, (二) 2011 share buy-back and merger
+  - text: 成立日期                          2013 年 1 月 24 日
+    translation: 'Date of establishment: 2013-01-24'
+    location: Subsidiaries, 1、上海华虹宏力 (Shanghai Huahong Grace)
+  - text: 中国（上海）自由贸易试验区祖冲之路 1399 号
+    translation: No. 1399 Zuchongzhi Road, China (Shanghai) Pilot Free Trade Zone
+    location: Subsidiaries, 上海华虹宏力, registered address and main place of business
+  - text: 覆盖 8 英寸 0.35µm-90nm 和 12 英寸 90nm-55nm 的嵌入式非易失性存储器代工方案
+    translation: embedded non-volatile memory foundry offerings covering 8-inch 0.35 µm-90 nm and 12-inch
+      90 nm-55 nm
+    location: Section on business, embedded non-volatile memory platform
+  claims:
+  - {subject: Hua Hong Semiconductor, attribute: fabs, value: three 8-inch and one 12-inch, date: 2023}
+  - {subject: Hua Hong Semiconductor, attribute: merged with Grace Cayman, value: '2011'}
+  - {subject: Shanghai Huahong Grace, attribute: registered address, value: 1399 Zuchongzhi Road}
+  notes: No customer is named in the prospectus; "赛普拉斯" (Cypress) does not occur in it. The draft
+    carries 上会稿 on its cover. The 2011 merger is the offshore parent companies'; the operating company
+    上海华虹宏力 was established on 2013-01-24.
+
+# ---- Independent records of the fabs and the merger -----------------------
+- id: grc-fr-2013-veu
+  origin: us-bis
+  source:
+    publisher: U.S. Department of Commerce, Bureau of Industry and Security, Federal Register vol. 78 no. 106
+    title: Addition, Removals, and Revisions to the List of Validated End-Users in the People's Republic of
+      China
+    date: 2013-06-03
+    form: final rule, FR Doc. 2013-13076
+  url: https://www.govinfo.gov/content/pkg/FR-2013-06-03/html/2013-13076.htm
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/fr-2013-13076.txt
+  quotes:
+  - text: remove two end-users, Grace Semiconductor Manufacturing Corporation (GSMC) and Shanghai Huahong
+      NEC Electronics Company, Ltd. (HHNEC)
+    location: Summary
+  - text: to remove GSMC and HHNEC as a result of the merger of the two companies to create HHGrace
+    location: Summary
+  - text: HFab 1, 1188 Chuanqiao Road, Pudong, Shanghai 201206 China.
+    location: Eligible Destinations
+  - text: HFab 2, 668 Guoshoujing Road, Zhangjiang Hi-Tech Park, Shanghai 201203
+    location: Eligible Destinations
+  - text: GFab1, 1399 Zuchongzhi Road, Zhangjiang Hi-Tech Park, Shanghai 201203
+    location: Eligible Destinations
+  claims:
+  - {subject: HHGrace, attribute: formed by merger of, value: GSMC and HHNEC, date: 2013}
+  - {subject: GFab1, attribute: address, value: 1399 Zuchongzhi Road, Zhangjiang}
+  notes: The facility names "HFab" (HHNEC) and "GFab" (Grace) keep the pre-merger owners. The 1399
+    Zuchongzhi Road address of GFab1 is the address Hua Hong gives in 2017 for HH FAB3, so HH FAB3 is the
+    former Grace fab. HFab 2 is at 668 Guoshoujing Road here but 288 Halei Road in the 2017 list.
+
+- id: grc-enwiki-hua-hong
+  origin: wikipedia
+  source:
+    publisher: Wikipedia
+    title: Hua Hong Semiconductor
+    date: null
+    form: encyclopaedia article
+  url: https://en.wikipedia.org/wiki/Hua_Hong_Semiconductor
+  archive_url: null
+  retrieved: 2026-09-26
+  cache: web/enwiki-hua-hong.txt
+  quotes:
+  - text: In December 2000, Grace Shanghai was formed by Grace Cayman as a pure-play foundry.
+    location: History
+  - text: In 2011, HHNEC and Grace Shanghai was merged to form Shanghai Huahong Grace Semiconductor
+      Manufacturing Corporation
+    location: History
+  - text: The company currently operates three 200mm wafer fabs (HH Fab1, HH Fab2, and HH Fab3) in Shanghai
+    location: Facilities
+  claims:
+  - {subject: Grace Shanghai, attribute: formed, value: December 2000}
+  - {subject: HHGrace, attribute: 200 mm fabs, value: HH Fab1, HH Fab2, HH Fab3}
+  notes: A tertiary source; used only beside the primary records.
