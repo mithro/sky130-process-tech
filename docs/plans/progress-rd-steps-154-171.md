@@ -349,3 +349,31 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   every `number_order` change REGROUPED, read. `--strict-words` LOST: `measuring`, `strength`,
   `whereas` (and `which`, `while`, `with`). cov: two flags, pairing noise (the glance tool line; the
   quick-facts table). inv: OK.
+
+### 162 MM5 — done (base `9531b1fd`)
+
+* Lead (80 words, first sentence 12): unchanged.
+* R-H3 + R-TABLE: `### What the public record shows` after the figure caption (139/154 form); the
+  periphery-rule clause → "The periphery rules give:[^pdk-periph]" and a `Rule | Constrains | Value`
+  table in base order; the minimum-CD clause after the semicolon its own sentence. `number_order`
+  LOST line re-paired by hand: m5.1 1.600 µm · m5.2 1.600 µm · m5.4 4.000 µm² · m5.3 0.310 µm; the
+  CD sentence keeps 0.8 µm then 1.6 µm. The 80-word background-page sentence split at its two
+  semicolons (word `and` lost), then a paragraph break; the 17-word trailing hedge "(Inference; the
+  corresponding metal-4 rule, m4.4, … qualifier.[^pdk-periph])" a parenthetical sentence directly
+  after the reading it qualifies (R-SENTENCE step 7).
+* R-CATEGORY (154 form): classification sentence alone; **Specific to this step:** with the k₁
+  sentence (split at ", and ASML describes …"; its "(our arithmetic)" still covers both k₁ values in
+  its own sentence) and the i-line inference as two bullets; the "What is specific … is thickness"
+  paragraph: the 68-word sentence split after "lower metal levels" (the base's ", so" kept inside
+  the first half), the dash aside "Krogh et al. monitored … plasma.[^krogh-1987]" directly after it,
+  then "A thick resist in turn …" (word `and` lost); the flat-surface sentence a second paragraph.
+* Why: grid and via-enclosure items with continuation paragraphs; reflectivity item — the second
+  dash aside "the role Rocke and Schneegans documented … (inference)[^rocke-1988]" → "This is the role
+  … (inference).[^rocke-1988]" (declared "This is"), "— and a thick resist …" → "A thick resist …";
+  no-fill item with a continuation paragraph.
+* How: scope sentence italic. R-TOOLS (154 form; "lists both" as R-TOOLS step 2 allows).
+  R-RELATED (Previous · Next · Depends on · Feeds · Same category · Mask · Category page; "Mask
+  page:" → "Mask:", word `page` lost). R-OPENQ labels on three bullets. Glance box (154 form).
+* `check_preserved --allow-regrouped`: the one LOST line is the rule table above; ADDED outside the
+  glance only "This is", the H3, the table header and labels; every other `number_order` change
+  REGROUPED, read. `--strict-words` LOST: `page`, `strength`×3. cov: one flag, pairing noise. inv: OK.
