@@ -301,3 +301,49 @@ per page.
   hedge.
 * **Left over the caps:** none. Item lead over 30 words: the cap (40; one sentence under "Whichever
   refractory film it is").
+
+### 124 MM2 — done
+
+* **R-H3 + R-TABLE:** `### What the public record shows` over the post-figure passage (rules, CD
+  table, Cypress stack; as 113). The m2.1–m2.7, via2.4/via2.5 and m2.pd.1 enumeration →
+  `Rule | Constrains | Value`, base order kept, unit in each cell; "— a 0.28 µm pitch" kept in the m2.2
+  cell; via2.4/via2.5 one row ("0.040 µm and 0.085 µm", as the base pairs them); "checked in 700 µm
+  windows" in the m2.pd.1 cell; `[^pdk-periph]` on the lead-in "The periphery rules give:"; the
+  waffle-drop clause as "The layer also carries a `cmm2 waffleDrop` fill algorithm.[^pdk-periph]"
+  (the 113 form; marker repeated there because the base ended the enumeration with it — declared).
+  number_order LOST hand-checked against the rows: m2.1 0.140; m2.2 0.140 (0.28 pitch); m2.3a/b
+  0.280; m2.6 0.0676 µm²; m2.7 0.140 µm²; m2.4 0.055; m2.5 0.085; via2.4 0.040; via2.5 0.085;
+  m2.pd.1 0.7 in 700 µm windows — same digits, same pairing. Words "must enclose … by" became
+  "enclosure of" in three cells. The Cypress sentence split at its semicolon.
+* **R-CATEGORY:** classification kept whole (27 words, it ends at "argument in full"); **Specific to
+  this step:** k₁ (kept whole, 35 words), the ITRS quotation, "We infer …" (split from it at ", and
+  we infer"; its "(inference from the geometry)" stays with it). "What differs from metal 1 …" is its
+  own label, a paragraph; its 13-word hedged parenthetical closed as its own parenthetical sentence
+  "(A topography of a few nanometres at most, on our reading, and invisible to the exposure.)"
+  directly after the clause it qualifies.
+* **R-PARA/R-SENTENCE (Why):** Line width: split at ", and the space sets" (the 113 seam), the
+  short-length dash material stays in the lead. Overlay: split at ", but a metal-2 line" ("but" lost;
+  a continuation may not open on it). Reflectivity: the Rocke/Chen dash material becomes "This is the
+  role Rocke and Schneegans documented …" (subject and verb added) in the lead block; ", but a BARC"
+  → continuation "A BARC under the resist …" ("but" lost).
+* **How:** italic scope lead-in. Surface preparation: lead ends at "PVD cluster;" (the 113 form).
+  Alignment (49 words): split at its semicolon; the trailing "(industry practice; which SKY130 does is
+  not public)" is **repeated** on the first half, because the choice it hedges includes which layer is
+  aligned to (Open questions: "Which layer's alignment targets `MM2` uses … is not public") — R-SENTENCE
+  step 5; declared ADDED hedge.
+* **R-TOOLS, R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** the 113 forms; four labels; Previous / Next,
+  Depends on (VIM), Feeds (NILD4, VIM2), Same category (the metal masks), Mask (with previous/next
+  mask).
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED marker `pdk-periph` (the waffle
+  repeat), hedge "not public" and identifier `SKY130` (the repeated alignment hedge); everything else
+  ADDED is the glance box (markers `pdk-04`, `pdk-periph`, `skw-01`; numbers 0.140, 0.28, 0.36,
+  `1`, `2`×3 — with the table's "metal 2"; refs `step-113`, `step-125`; hedges; `m2`×2, `met2`,
+  `via-1`). LOST words "but"×2 (above), "by"×3, "enclose", "must", "with", "it" (table cells),
+  "page" ("Mask page:" → "Mask:"), "strength"×3 (R-TOOLS).
+* **Coverage flags read:** table rows (marker on the lead-in), the Cypress split, the We-infer split,
+  the reflectivity split (the Cypress markers stay with "TiW or TiN"), glance lines. None lost a marker
+  or hedge.
+* **Left over the caps:** none. Item leads over 30 words: Line width (40), Overlay (33),
+  Reflectivity (39) — each one sentence or a sentence plus its dash material.
+* **Self-check note:** one line duplicated by a range slip (the classification's "same class as MM1")
+  was caught by the duplicate-line check and removed before commit.
