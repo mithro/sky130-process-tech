@@ -524,3 +524,55 @@ In-force notes (US 10,062,748) and their pointers: untouched; nothing from them 
   `--strict-words` LOST: `carrying`, `strength`×2. cov: flags are pairing noise (the new lead
   sentences against the quick-facts table; "the tiny open area" against the How step's "about 0.5 %
   (our estimate above)", which is unchanged). inv: OK (dropdowns identical).
+
+### 167 NTSD — done (base `eb7e4be5`)
+
+In-force note (US 10,062,748) and its pointer: untouched; nothing from it in the glance box. The
+"0.7–0.9 µm" of How step 4 and Open questions is kept verbatim (content problem 5).
+
+* Lead (base 85, first sentence 59 with two dash pairs): "… outer skin of the die: a blanket
+  nitride — on our reading a plasma (PECVD) nitride — laid over …" → "… outer skin of the die. It is
+  a blanket nitride laid over …, and — on our reading of NSM and NSME — into the ring-shaped opening
+  …. On our reading it is a plasma (PECVD) nitride." (declared "It is", "it is"; the first dash
+  aside moved, with its hedge, to directly after its sentence). **Listed under note ¹ of §4.1:** 85 →
+  89 words, within 120; first sentence 13.
+* R-H3: `### What the public record shows` after the figure caption. Diagram sentence split at its
+  semicolon with `pdk-04` repeated on the first half (declared); "(our reading of the drawing)"
+  stays on the 0.3777 µm half, the first half being labels read off the cited diagram. R-TABLE: the
+  Cypress dash list → a `Report | Stack as quoted` table (R-TABLE's film-stack template); `number_order`
+  LOST line re-paired by hand: R7FT-3R 2005 "1000Å TEOS / 9000Å PECVD Nitride" · S8DI 2014 "1000A
+  TEOS/9000A Si3N4" · S8TNV-5R 2013 "7000 +/- 2000A Nitride", each with its own marker; the
+  conclusion "So the public record puts … between 0.54 µm and 0.9 µm; …" as the prose after the table
+  (R-TABLE step 8; it keeps the base's "so", so the paragraph after the table opens on "So" — see
+  guide problem 2). The PECVD sentence split at its semicolon.
+* R-CATEGORY: classification sentence alone; no **Specific to this step:** bullets — the LINIT
+  comparison and "This one is several times thicker …" must stay together (the pronoun needs its
+  antecedent), and a bullet per sentence would have opened one on "So". Paragraphs instead: LINIT
+  comparison (its 77-word sentence split at the semicolon and at ", so step coverage" → "So step
+  coverage …"); the 78 % coverage sentence; the polyimide passage (its 50-word sentence split at ",
+  the step list has no polyimide step"); the mould-compound sentence split at its semicolon.
+* R-REPEAT considered and not applied: the polyimide passage appears under Step category and, shorter,
+  under Open questions (its home). The category copy names the flagged masks in full ("Polyimide 2
+  (2)", "DECA PBO", "Cu Inductor/Redist."), which the Open-questions copy abbreviates, so neither copy
+  adds nothing. Both were split the same way. `check_preserved` therefore prints `DUPLICATED
+  sentence (2x, was 1x): 'Whether a polyimide is applied to SKY130 wafers in this flow is not
+  public.'` and `DUPLICATED sentence (2x, was 0x): 'The step list has no polyimide step, and the
+  PDK's stack diagram draws "PI1 K=2.94" over the nitride.'` — both sentences stood twice in the base
+  (once in each section, the second one inside a longer sentence); nothing was duplicated.
+* Why: barrier item in three blocks (split at semicolons); mechanical item's 17-word trailing hedge
+  "(Industry practice;[^txt-05] Hunter et al. …[^hunter-2012])" a parenthetical sentence; hydrogen item:
+  lead "Plasma nitride … contains a great deal of hydrogen.", the dash aside (Lanford and Rand; Chow et
+  al.) directly after it, then "The nitride's stress depends on …" ("its" → "the nitride's",
+  restored noun; word `and` lost) and the Hughey sentence; the Shimaya sentences a second
+  continuation.
+* How: scope sentence italic; step 2 — the dash aside (Claassen et al.) moved after its sentence;
+  step 3 in three blocks; step 4's colon list as two sub-bullets (0.54 µm; 0.7–0.9 µm), the Vanguard
+  sentences as a continuation; step 5 split at its first sentence end.
+* R-TOOLS (the C1 reading sentence as the continuation). R-RELATED (Previous · Next · Same module ·
+  Depends on · Same category · Category page; the base's two-relationship bullet split). R-OPENQ
+  labels on five bullets; the polyimide bullet's question as its lead, its 46-word evidence sentence
+  split like the category copy. Glance box.
+* `check_preserved --allow-regrouped`: the one LOST line is the table; ADDED outside the glance only
+  the declared `pdk-04`, "It is"/"it is", the H3, the table header and labels; the two DUPLICATED
+  lines are the false positives above. `--strict-words` LOST: `strength` (and `its`, `and`). cov:
+  three flags, pairing noise. inv: OK (dropdowns identical).

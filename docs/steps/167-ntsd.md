@@ -10,14 +10,31 @@
 | **Previous step** | {ref}`NSME <step-166>` |
 | **Next step** | {ref}`PDM <step-168>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the silicon nitride that is the outer skin of the
+  die, over the passivation oxide and metal 5 and, on our reading, into
+  the `nsm` opening at the die edge.
+* **Why:** a moisture and mobile-ion barrier over the finished circuit,
+  and mechanical protection for handling, probing and assembly.
+* **Public numbers:** "TOPNIT K=7.5", 0.54 µm on top of `metal5` and
+  0.4223 µm on its sidewall, on the PDK's stack diagram.[^pdk-04]
+* **Likely SkyWater tool:** "C1" PECVD system, nitride — **strong** for
+  the existence of a PECVD nitride process; assignment to `NTSD` is an
+  **inference**.[^skw-01]
+* **Not public:** the SKY130 nitride thickness, the deposition
+  conditions, and whether a polyimide is applied (→ Open questions).
+:::
+
 ## What this step is
 
-`NTSD` deposits the silicon nitride that is the outer skin of the die:
-a blanket nitride — on our reading a plasma (PECVD) nitride — laid over the thin passivation oxide of
+`NTSD` deposits the silicon nitride that is the outer skin of the die.
+It is a blanket nitride laid over the thin passivation oxide of
 {ref}`NFUSOX <step-164>`, over the metal-5 lines and pads beneath it,
 and — on our reading of {ref}`NSM <step-165>` and
 {ref}`NSME <step-166>` — into the ring-shaped opening just etched along
-the edge of every die. After it, the only front-side processing left is
+the edge of every die. On our reading it is a plasma (PECVD) nitride. After it, the only front-side processing left is
 the pad opening with its strip and clean ({ref}`PDM <step-168>`,
 {ref}`PDME <step-169>`), the final anneal ({ref}`ALLY <step-170>`) and
 electrical test ({ref}`HPETEST <step-171>`).
@@ -30,21 +47,32 @@ electrical test ({ref}`HPETEST <step-171>`).
 Before, the metal-5 shapes under the thin passivation oxide; after, the passivation nitride over the whole slice, on the tops, the sidewalls and the floor between the shapes. The PDK's stack diagram labels it TOPNIT, 0.54 µm on top of the 1.26 µm metal 5 and 0.4223 µm on its sidewall;[^pdk-04] it is drawn in that proportion to the metal on the top and with the same thickness on the sidewall. Cypress reports for two other S8 variants and for the R7FT-3R technology at the same fab give thicker nitrides, so the public record puts it between 0.54 µm and 0.9 µm; which value applies to SKY130 lots is not public.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005] That it is a PECVD nitride is the page's inference. The gap between the shapes stays open; where the diagram, on the page's reading, draws the passivation thinner beside the metal, it is not drawn thinner here. The nitride is also read as lining the seal opening at the die edge, which is outside this slice, and any polyimide is not drawn (whether it is applied is not public). The lower part of the slice is cut off: the drawing starts inside the oxide under metal 5. The metal-5 films other than the cap, the via-4 fill, the metal-4 line, the capacitor plates and the oxides under the passivation oxide are drawn but not labelled, nor, in the lower panel, is the metal cap. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK's process stack diagram draws this film as "TOPNIT K=7.5" over
 the thin "TOPOX K=3.9": 0.54 µm thick on top of `metal5` and 0.4223 µm
-on its sidewall, with a "glass cut" through it over the metal; beside
+on its sidewall, with a "glass cut" through it over the metal.[^pdk-04] Beside
 the metal it places the top of the nitride 0.3777 µm above the bottom
 of metal 5, with no separate TOPOX drawn (our reading of the
-drawing).[^pdk-04] Cypress qualification reports for two other S8 variants and
-for the R7FT-3R technology at the same fab give thicker nitrides —
-"1000Å TEOS / 9000Å PECVD Nitride" (R7FT-3R, 2005),[^cyp-qtp-014807]
-"1000A TEOS/9000A Si3N4" (S8DI, 2014)[^cyp-qtp-123907] and "7000 +/-
-2000A Nitride" (S8TNV-5R, 2013)[^cyp-qtp-113005] — so the public record puts the passivation
+drawing).[^pdk-04]
+
+Cypress qualification reports for two other S8 variants and
+for the R7FT-3R technology at the same fab give thicker nitrides:
+
+| Report | Stack as quoted |
+|---|---|
+| R7FT-3R, 2005[^cyp-qtp-014807] | "1000Å TEOS / 9000Å PECVD Nitride" |
+| S8DI, 2014[^cyp-qtp-123907] | "1000A TEOS/9000A Si3N4" |
+| S8TNV-5R, 2013[^cyp-qtp-113005] | "7000 +/- 2000A Nitride" |
+
+So the public record puts the passivation
 nitride between 0.54 µm and 0.9 µm; which value applies to SKY130 lots
-is not public. The R7FT-3R report calls its nitride "PECVD", and
+is not public.
+
+The R7FT-3R report calls its nitride "PECVD", and
 SkyWater lists "PECVD nitride C1" and "PECVD silane
 oxide/nitride/oxynitride, C1 – low temp, range of R.I.
-options";[^cyp-qtp-014807][^skw-01] we read `NTSD` as a {term}`PECVD`
+options".[^cyp-qtp-014807][^skw-01] We read `NTSD` as a {term}`PECVD`
 silicon nitride (inference). The step list used in this reference does
 not explain the film.
 
@@ -53,25 +81,32 @@ not explain the film.
 `NTSD` is a {ref}`Thin-film deposition <category-deposition>` step of
 the *PECVD nitride* class — the film the category page describes as
 "the final scratch- and moisture-resistant passivation".
+
 {ref}`LINIT <step-104>`, over the local interconnect, is the flow's
 other nitride on conductors (a plasma nitride on the reading of that
-page), 0.075 µm thick;[^pdk-04] this one is several times thicker,
+page), 0.075 µm thick.[^pdk-04] This one is several times thicker,
 is deposited over the tallest topography in the flow (1.26 µm metal-5
 lines on 1.600 µm spaces, m5.1 and m5.2[^pdk-periph][^pdk-04]) and, on
-our reading, into a trench several micrometres deep at the die edge, so
+our reading, into a trench several micrometres deep at the die edge. So
 {term}`step coverage` and film stress matter more than at any earlier
-nitride. The diagram's 0.4223 µm on the sidewall against 0.54 µm on top
+nitride.
+
+The diagram's 0.4223 µm on the sidewall against 0.54 µm on top
 is a sidewall coverage of about 78 % (our arithmetic from the
-labels[^pdk-04]). Whether a polyimide is applied to SKY130 wafers in
+labels[^pdk-04]).
+
+Whether a polyimide is applied to SKY130 wafers in
 this flow is not public. SkyWater's S130 technology table lists
 polyimide as "Yes",[^skw-02] and SkyWater lists a "Polyimide cure"
 furnace process,[^skw-01] but the mask table flags "Polyimide 2 (2)"
 (PMM2), "DECA PBO" (PBO) and "Cu Inductor/Redist." (CU1M) and not
-"Polyimide" (PMM) for SKY130,[^pdk-05] the step list has no polyimide
+"Polyimide" (PMM) for SKY130.[^pdk-05] The step list has no polyimide
 step, and the PDK's stack diagram draws "PI1 K=2.94" over the
 nitride.[^pdk-04] Whether a given lot receives it is an option, not a
-property of the flow described here. Nothing is deposited over `NTSD`
-in the flow described here except possibly that polyimide; on a die
+property of the flow described here.
+
+Nothing is deposited over `NTSD`
+in the flow described here except possibly that polyimide. On a die
 without it, `NTSD` is also the surface the package mould compound
 touches.
 
@@ -79,15 +114,19 @@ touches.
 
 * **A moisture and mobile-ion barrier.** As a passivation layer
   silicon nitride "is a significantly better diffusion barrier against
-  water molecules and sodium ions" than silicon dioxide;[^wiki-sin] Sinha et al.
+  water molecules and sodium ions" than silicon dioxide.[^wiki-sin]
+
+  Sinha et al.
   described reactive-plasma Si–N films for MOS-LSI
   passivation,[^sinha-1978] and a seal-ring patent calls the passivation
   nitride "a very good barrier of moisture and ionic
-  contamination".[^pat-sealring-zeevo] Mobile alkali ions drift through
+  contamination".[^pat-sealring-zeevo]
+
+  Mobile alkali ions drift through
   oxide under bias and shift MOS characteristics — Snow, Grove, Deal and
   Sah measured their transport in thermal oxide[^snow-1965] — and
   moisture with ionic contamination corrodes aluminium, as Comizzoli et
-  al. reviewed;[^comizzoli-1986] Peck's acceleration model is used to
+  al. reviewed.[^comizzoli-1986] Peck's acceleration model is used to
   shorten such humidity tests.[^peck-1986] Habraken and
   Kuiper review the films' composition and properties.[^habraken-1994]
 * **Sealing the die edge (inference).** Deposited into the `nsm`
@@ -99,17 +138,21 @@ touches.
   ({ref}`NSM <step-165>`).
 * **Mechanical protection.** A hard nitride resists scratches during
   handling, probing and assembly, and with the oxide beneath it spreads
-  the load of probe needles and wire bonds on the pad edges (industry
+  the load of probe needles and wire bonds on the pad edges. (Industry
   practice;[^txt-05] Hunter et al. describe probe- and bond-induced
-  cracking of the oxide in aluminium pad structures[^hunter-2012]).
+  cracking of the oxide in aluminium pad structures.[^hunter-2012])
 * **The price: hydrogen and stress.** Plasma nitride from silane and
-  ammonia contains a great deal of hydrogen — Lanford and Rand measured
+  ammonia contains a great deal of hydrogen.
+
+  Lanford and Rand measured
   about 20–25 at.% in films deposited at 330–350 °C,[^lanford-1978] and
   Chow et al. found 4–39 at.% across nine commercial reactors, with etch
-  rate correlated to hydrogen content[^chow-1982] — and its stress
+  rate correlated to hydrogen content.[^chow-1982] The nitride's stress
   depends on temperature, pressure, gas ratio and RF frequency, as
-  Claassen et al. showed;[^claassen-1985] Hughey and Cook found an
-  irreversible tensile change on heating.[^hughey-2003] Hydrogen and
+  Claassen et al. showed.[^claassen-1985] Hughey and Cook found an
+  irreversible tensile change on heating.[^hughey-2003]
+
+  Hydrogen and
   water in and through the nitride can degrade hot-carrier lifetime:
   Shimaya proposed a water-diffusion model for the enhancement of
   hot-carrier degradation by nitride passivation.[^shimaya-1995] The
@@ -126,37 +169,45 @@ uptake and ion permeability are what the nitride exists to block.
 
 ## How it is typically performed
 
-An industry-generic passivation-nitride deposition over a thick
+*An industry-generic passivation-nitride deposition over a thick
 aluminium top metal for a 200 mm, 130 nm-era fab (SKY130's recipe is not
-public):
+public):*
 
 1. **Surface.** The wafer comes from the {ref}`NSME <step-166>` strip
    and clean; a short {term}`queue time` and, often, a degas or N₂
    plasma before deposition (industry practice[^txt-05]).
 2. **Chamber and temperature.** A single-wafer or multi-station PECVD
    reactor at roughly 300–400 °C (industry-typical for films on
-   aluminium[^txt-05][^wiki-pecvd]); the RF frequency is one of the
-   levers on stress — Claassen et al. measured how deposition
-   temperature, pressure, gas composition and RF frequency move the
-   composition and mechanical stress of plasma nitride[^claassen-1985] —
-   and mixed-frequency chambers are the industry-typical way to trim a
+   aluminium[^txt-05][^wiki-pecvd]).
+
+   The RF frequency is one of the
+   levers on stress, and mixed-frequency chambers are the industry-typical way to trim a
    passivation nitride towards mild compression (industry
-   practice;[^txt-05] SKY130's recipe is not public).
+   practice;[^txt-05] SKY130's recipe is not public). Claassen et al. measured how deposition
+   temperature, pressure, gas composition and RF frequency move the
+   composition and mechanical stress of plasma nitride.[^claassen-1985]
 3. **Chemistry.** SiH₄ with NH₃ and N₂; Smith et al. set out the
    deposition mechanism of SiNₓHᵧ from NH₃–SiH₄ plasmas.[^smith-1990]
+
    The SiH₄/NH₃ ratio moves the composition, and with it the
    refractive index (Habraken and Kuiper review the
    dependence[^habraken-1994]) and the Si–H/N–H bonding that Lanford
-   and Rand calibrated by infrared absorption.[^lanford-1978] Sinha
+   and Rand calibrated by infrared absorption.[^lanford-1978]
+
+   Sinha
    et al.'s reactive-plasma films, deposited at 275 °C, spanned Si/N of
    0.75–1.5 and refractive index 1.9–2.3 with stress ranging from
    compressive to tensile, and at 450–500 °C gave crack-resistant 1 µm
    films with good adhesion to aluminium — the same levers and the same
    constraint.[^sinha-1978]
-4. **Thickness.** Of the order of 0.5–0.9 µm: 0.54 µm on the PDK's
-   diagram[^pdk-04] and 0.7–0.9 µm in the Cypress reports for the S8DI
-   and S8TNV-5R variants of S8, and in the 0.18 µm R7FT-3R technology,
-   at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
+4. **Thickness.** Of the order of 0.5–0.9 µm:
+
+   - 0.54 µm on the PDK's
+     diagram;[^pdk-04]
+   - 0.7–0.9 µm in the Cypress reports for the S8DI
+     and S8TNV-5R variants of S8, and in the 0.18 µm R7FT-3R technology,
+     at the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
+
    A Vanguard fuse patent describes a passivation of "silicon oxide
    layer … between about 0.4 and 0.7 microns thick" under "silicon
    nitride layer … between about 0.4 and 0.7 microns thick" and, in its
@@ -168,7 +219,7 @@ public):
 5. **Metrology.** Thickness and refractive index by ellipsometry on
    monitors; stress by wafer bow; hydrogen content (FTIR) and wet-etch
    rate when the recipe is qualified, the correlation Chow et al.
-   reported;[^chow-1982] pinholes and particles; step coverage by
+   reported.[^chow-1982] Pinholes and particles; step coverage by
    cross-section SEM over metal-5 lines and, on our reading, in the
    seal-ring opening.
 6. **Chamber clean.** NF₃ remote or in-situ plasma clean between runs.
@@ -182,12 +233,17 @@ public):
 
 ## Machines likely used at SkyWater
 
-* **"C1" PECVD system, nitride.** SkyWater lists "PECVD nitride C1" and
-  "PECVD silane oxide/nitride/oxynitride, C1 – low temp, range of R.I.
-  options".[^skw-01] Strength: **strong** for the existence of a PECVD
-  nitride process; assignment to `NTSD` is an **inference** supported by
-  the "PECVD Nitride" passivation of a Cypress report from the same
-  fab.[^cyp-qtp-014807] Reading "C1" as a Novellus Concept One is an
+* **"C1" PECVD system, nitride**
+  - *SkyWater says:* lists "PECVD nitride C1" and
+    "PECVD silane oxide/nitride/oxynitride, C1 – low temp, range of R.I.
+    options".[^skw-01]
+  - *Tool exists:* **strong** for the existence of a PECVD
+    nitride process.
+  - *Runs this step:* assignment to `NTSD` is an **inference** supported by
+    the "PECVD Nitride" passivation of a Cypress report from the same
+    fab.[^cyp-qtp-014807]
+
+  Reading "C1" as a Novellus Concept One is an
   inference from the vendor's product names.[^novellus-history]
 * **Aviza furnace nitrides** (LPCVD, BTBAS)[^skw-01] are excluded on
   thermal grounds for a wafer carrying aluminium (inference).
@@ -204,12 +260,14 @@ public):
 ## Related steps and cross-references
 
 * Previous: {ref}`NSME <step-166>` (the seal-ring opening the nitride
-  lines, on our reading). Next: {ref}`PDM <step-168>` and
+  lines, on our reading).
+* Next: {ref}`PDM <step-168>` and
   {ref}`PDME <step-169>` (the pad opening through this nitride).
-* The oxide beneath: {ref}`NFUSOX <step-164>`; the metal it covers:
+* Same module: the oxide beneath, {ref}`NFUSOX <step-164>`; the anneal after passivation,
+  {ref}`ALLY <step-170>`.
+* Depends on: the metal it covers,
   {ref}`MM5E <step-163>`.
-* The anneal after passivation: {ref}`ALLY <step-170>`.
-* The other nitride over conductors: {ref}`LINIT <step-104>`.
+* Same category: the other nitride over conductors, {ref}`LINIT <step-104>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -292,24 +350,26 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The nitride thickness for SKY130 is not public: 0.54 µm on the PDK
+* **Nitride thickness.** The nitride thickness for SKY130 is not public: 0.54 µm on the PDK
   diagram[^pdk-04] against 0.7–0.9 µm in Cypress reports for the S8DI
   and S8TNV-5R variants of S8, and in the 0.18 µm R7FT-3R technology, at
   the same fab.[^cyp-qtp-113005][^cyp-qtp-123907][^cyp-qtp-014807]
-* The diagram's 0.3777 µm beside metal 5 runs, on our reading, from the
+* **Passivation between lines.** The diagram's 0.3777 µm beside metal 5 runs, on our reading, from the
   bottom of metal 5 to the top of the nitride, with no TOPOX drawn
   there;[^pdk-04] whether the passivation is really thinner between
   lines is not stated.
-* Whether the nitride fills, lines or merely bridges the `nsm` opening,
+* **The `nsm` opening.** Whether the nitride fills, lines or merely bridges the `nsm` opening,
   and what it lands on there, is not public.
-* The deposition chemistry, temperature, refractive index, stress and
+* **Deposition conditions.** The deposition chemistry, temperature, refractive index, stress and
   hydrogen content are not public; that the film is PECVD is an
   inference from SkyWater's list and a Cypress report.[^skw-01][^cyp-qtp-014807]
-* Whether a polyimide is applied to SKY130 wafers in this flow is not
-  public. SkyWater's S130 technology table lists polyimide as
+* **Polyimide.** Whether a polyimide is applied to SKY130 wafers in this flow is not
+  public.
+
+  SkyWater's S130 technology table lists polyimide as
   "Yes",[^skw-02] and SkyWater lists a "Polyimide cure" furnace
   process,[^skw-01] but the mask table flags PMM2, PBO and CU1M and not
-  PMM for SKY130,[^pdk-05] the step list has no polyimide step, and the
+  PMM for SKY130.[^pdk-05] The step list has no polyimide step, and the
   PDK's stack diagram draws "PI1 K=2.94" over the
   nitride.[^pdk-04] Whether a given lot receives it is an option, not a
   property of the flow described here.
