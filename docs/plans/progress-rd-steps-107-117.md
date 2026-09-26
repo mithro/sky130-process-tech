@@ -166,3 +166,31 @@ per page.
   sentence; the Rossnagel/Hamaguchi split (each half keeps its own markers).
 * **Left over the caps:** lead 160 words in three paragraphs (base 156; "It is", "This is" added).
   Nothing else over the §1 caps.
+
+### 110 WDEP2 — done
+
+* **R-H3:** none (post-figure passage 124 words of readings and an industry norm; no title fits).
+* **R-PARA/R-SENTENCE:** lead sentence 2 (47 words) cut at the end of its dash material ("… into
+  every 0.17 µm contact. It is thick enough …"). Post-figure passage split at "The deposited
+  thickness is not public" (hole geometry | fill thickness and SkyWater's wording). Why items:
+  Conformality split at the semicolon ("Sputtered aluminium cannot reach …" opens the continuation);
+  Nucleation split at "studied;" (the continuation opens "A thin silane-reduced nucleation layer";
+  the source's line break after "silane-" rendered as "silane- reduced", now joined — presentation
+  only, the tool shows no word lost); Resistance split at "short;". How: Chamber lead + continuation
+  at "Novellus's Altus family"; Nucleation layer (97-word sentence): lead ends at "a few nanometres",
+  the dash material "Silane is commonly used …[^wiki-wf6]" opens the continuation, split again at
+  "fill;" → "In the pulsed variant …".
+* **R-CATEGORY:** classification cut at its semicolon (13 words) with the category-page summary
+  sentence after it; "Unlike the dielectric depositions …" (one sentence about this step) as a
+  second paragraph with no label (step 2).
+* **R-TOOLS:** three lines for the Lam/Novellus item; the "Whether the PNL option …" sentence stays
+  as continuation (an unknown, not a grade). The metrology bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Feeds,
+  Same category (the other tungsten fills); italic scope lead-in. Glance numbers are the hole
+  geometry with the page's own "on our reading of `CTME` and the PDK's assumptions".
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box (markers
+  `pdk-03`, `pdk-04`, `skw-01`; numbers 0.09, 0.17×2, 0.34; hedges "about", "inference", "likely",
+  "not public", "our reading"). LOST word "strength" (R-TOOLS).
+* **Coverage flags read:** glance lines; the nucleation split (each half keeps its own marker). None
+  lost a marker or hedge.
+* **Left over the caps:** nothing over the §1 caps; lead 100 words.
