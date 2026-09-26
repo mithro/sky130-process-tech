@@ -430,3 +430,40 @@ per page.
   sentence), the "The pattern is" sentence (it keeps the Denison/Usami markers of its claim), the
   splits in Why, glance lines. None lost a marker or hedge.
 * **Left over the caps:** lead 150 words in three paragraphs (base 149). Nothing over the §1 caps.
+
+### 127 CMPM2 — done
+
+* **R-H3:** none (post-figure passage 110 words, now a paragraph and a two-item list).
+* **Lead:** base 134 words → two paragraphs at "As at CMPM it is an *oxide-on-oxide* polish" (84 and
+  50 words).
+* **R-LIST (post-figure):** "The PDK's rules for metal 2 are written around this polish exactly as
+  metal 1's are around the first:" → two plain bullets (the periphery rules with `[^pdk-periph]`; the
+  assumptions table with `[^pdk-03]`), each marker ending its own clause as in the base (the 116 form).
+* **R-CATEGORY:** classification kept whole (35 words); the CMPM pointer sentence in the same
+  paragraph (it lists another step, not this one). "What is specific to this instance is the thicker
+  target — … — and what is printed on the result: …, so …" (75 words) → "What is specific to this
+  instance is:" and two plain bullets (the batch-8 "… is that:" ruling applied to "is X and Y";
+  "and" dropped); ", so the depth-of-focus demand" → ". So the depth-of-focus demand …" inside
+  the second bullet (the ", so" form), "on our reading" kept in it.
+* **R-PARA (Why):** Planarity: lead ends at "(category-lithography);", the studies and IBM are the
+  continuation. Pattern density: lead ends at "(Ouma et al.[^ouma-2002])" (the attribution stays with
+  its sentence), Stine and the fill rules are the continuation.
+* **How:** italic scope lead-in. Recipe: lead = Preston and Nanz (split at the semicolon); the
+  down-force and the three platens (split at their semicolons, "a second" → "A second", "a buff" →
+  "A buff", the 116 form) and the target sentence are the continuation. Endpoint (48 words): split at
+  ", and the thicker target" → ". The thicker target here gives more margin than at CMPM
+  (inference)." — the "(inference)" hedges the margin comparison, the only non-generic claim in the
+  sentence, and stays with it; the endpoint methods and "the polish must stop *above* the metal" are
+  the section's industry-generic description (a judgement call; noted for the reviewer). Metrology:
+  the four semicolon-separated items as sub-bullets.
+* **R-TOOLS:** the 116 form (Mirra three lines; the AIT/SP1 item *Tool exists:* medium; the
+  post-CMP-clean bullet has no grade, unchanged).
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; the 116 Related form; glance in the 116
+  form.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box
+  (markers `pdk-04`, `pdk-periph`, `skw-01`; numbers 0.42, 0.7, 700, `1`; ref `step-126`; hedges;
+  `m2`, `metal-2`, `via-2`×2). REGROUPED: the rules list and the "specific" list (same order). LOST
+  words "strength"×2 (R-TOOLS).
+* **Coverage flags read:** list items (markers on their own clauses), the endpoint split (above), the
+  recipe split, glance lines. No marker lost.
+* **Left over the caps:** none.
