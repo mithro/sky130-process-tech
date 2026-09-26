@@ -1841,3 +1841,347 @@ claims:
   - {id: cyx-ar-fy2008-fab2-closed, origin: cypress}
   - {id: cyhist-corp-pr-2007-fab2exit-semidigest, origin: semidigest}
 
+
+# ---- docs/history/grace.md -----------------------------------------------
+- id: grace-formed-2000
+  page: docs/history/grace.md
+  anchor: formed by Grace Cayman as a pure-play foundry
+  grade: single-source
+  footnotes: [wiki-huahong]
+  sources:
+  - {id: grc-enwiki-hua-hong, origin: wikipedia}
+- id: grace-chinese-name
+  page: docs/history/grace.md
+  anchor: Its Chinese name was 上海宏力半导体制造有限公司
+  grade: single-source
+  footnotes: [eepw-2006-grace]
+  sources:
+  - {id: grc-eepw-2006-cypress-grace, origin: eepw}
+- id: grace-merger-2011
+  page: docs/history/grace.md
+  anchor: The offshore parents merged in 2011
+  grade: corroborated
+  footnotes: [hh-prospectus-2023, wiki-huahong, fr-2013-veu]
+  sources:
+  - {id: grc-hh-star-prospectus-2023, origin: huahong}
+  - {id: grc-enwiki-hua-hong, origin: wikipedia}
+  - {id: grc-fr-2013-veu, origin: us-bis}
+- id: grace-hhgrace-company-2013
+  page: docs/history/grace.md
+  anchor: established on 2013-01-24
+  grade: single-source
+  footnotes: [hh-prospectus-2023]
+  sources:
+  - {id: grc-hh-star-prospectus-2023, origin: huahong}
+- id: grace-fab-address
+  page: docs/history/grace.md
+  anchor: GFab1, 1399 Zuchongzhi Road, Zhangjiang Hi-Tech Park
+  grade: corroborated
+  footnotes: [fr-2013-veu, hh-fab-naming-2017, hh-prospectus-2023]
+  sources:
+  - {id: grc-fr-2013-veu, origin: us-bis}
+  - {id: grc-huahong-fab-naming-2017, origin: huahong}
+  - {id: grc-hh-star-prospectus-2023, origin: huahong}
+- id: grace-fab3-is-gfab1
+  page: docs/history/grace.md
+  anchor: So HH FAB3 is the former
+  grade: inference
+  hedge: our reading
+  footnotes: [fr-2013-veu, hh-fab-naming-2017]
+  sources:
+  - {id: grc-fr-2013-veu, origin: us-bis}
+  - {id: grc-huahong-fab-naming-2017, origin: huahong}
+- id: grace-hhfab1-hhnec
+  page: docs/history/grace.md
+  anchor: The 2013 rule puts "HFab 1" at 1188 Chuanqiao Road
+  grade: corroborated
+  footnotes: [fr-2013-veu, hh-fab-naming-2017]
+  sources:
+  - {id: grc-fr-2013-veu, origin: us-bis}
+  - {id: grc-huahong-fab-naming-2017, origin: huahong}
+- id: grace-hhfab1-hhnec-qtp
+  page: docs/history/grace.md
+  anchor: names its fab both "HHNEC / China"
+  grade: single-source
+  footnotes: [qtp-152604]
+  sources:
+  - {id: grc-qtp-152604, origin: cypress}
+- id: grace-hhfab2-address-conflict
+  page: docs/history/grace.md
+  anchor: HH FAB2 is at 668 Guoshoujing Road
+  grade: conflict
+  hedge: the two sources differ
+  footnotes: [fr-2013-veu, hh-fab-naming-2017]
+  sources:
+  - {id: grc-fr-2013-veu, origin: us-bis}
+  - {id: grc-huahong-fab-naming-2017, origin: huahong}
+- id: grace-200mm
+  page: docs/history/grace.md
+  anchor: The Shanghai fabs run 200 mm wafers
+  grade: corroborated
+  footnotes: [eet-2005-grace, hh-fab-naming-2017, wiki-huahong]
+  sources:
+  - {id: cyhist-corp-pr-2005-grace-deal, origin: eetimes}
+  - {id: grc-huahong-fab-naming-2017, origin: huahong}
+  - {id: grc-enwiki-hua-hong, origin: wikipedia}
+- id: grace-hh-fab-count
+  page: docs/history/grace.md
+  anchor: three 8-inch fabs and one
+  grade: single-source
+  footnotes: [hh-prospectus-2023]
+  sources:
+  - {id: grc-hh-star-prospectus-2023, origin: huahong}
+- id: grace-deal-2005
+  page: docs/history/grace.md
+  anchor: In December 2005 Cypress and Grace agreed
+  grade: corroborated
+  footnotes: [eet-2005-grace, ar-fy2005, eepw-2006-grace]
+  sources:
+  - {id: cyhist-corp-pr-2005-grace-deal, origin: eetimes}
+  - {id: cyhist-corp-2005-ar-grace-flexmfg, origin: cypress}
+  - {id: grc-eepw-2006-cypress-grace, origin: eepw}
+- id: grace-s4-2006
+  page: docs/history/grace.md
+  anchor: for PSoC 1
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [ar-fy2006, qtp-062509]
+  sources:
+  - {id: cyhist-corp-2006-ar-history-grace-complete, origin: cypress}
+  - {id: qtp-062509, origin: cypress}
+- id: grace-page-c8-2006
+  page: docs/history/grace.md
+  anchor: for USB and clock chips; C8Q-3R
+  grade: corroborated
+  footnotes: [eet-2006-c8, qtp-082609]
+  sources:
+  - {id: cyhist-corp-pr-2006-grace-c8-130nm, origin: eetimes}
+  - {id: qtp-082609, origin: cypress}
+- id: grace-processes-to-2007
+  page: docs/history/grace.md
+  anchor: 0.13-micron SRAM and LOGIC processes and 0.09-micron SRAM
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [ar-fy2010, ar-fy2012]
+  sources:
+  - {id: cyx-ar-fy2010-grace-013, origin: cypress}
+  - {id: grc-ar-fy2012-grace, origin: cypress}
+- id: grace-ram42
+  page: docs/history/grace.md
+  anchor: RAM42, an older SRAM process
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-091302]
+  sources:
+  - {id: qtp-091302, origin: cypress}
+- id: grace-r95ld
+  page: docs/history/grace.md
+  anchor: R95LD-3R, the 0.09 µm SRAM
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-091206]
+  sources:
+  - {id: qtp-091206, origin: cypress}
+- id: grace-s8-not-in-10k
+  page: docs/history/grace.md
+  anchor: none of them names S8
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [ar-fy2010, ar-fy2012, ar-fy2015]
+  sources:
+  - {id: cyx-ar-fy2010-grace-013, origin: cypress}
+  - {id: grc-ar-fy2012-grace, origin: cypress}
+  - {id: grc-ar-fy2015-hhgrace, origin: cypress}
+- id: grace-first-s8-2010
+  page: docs/history/grace.md
+  anchor: dates the first S8 qualification
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-142304, ifx-qtp-122801]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: grc-ifx-qtp-122801, origin: cypress}
+- id: grace-s8-capacity-2010
+  page: docs/history/grace.md
+  anchor: by adding internal and external capacity
+  grade: single-source
+  footnotes: [ar-fy2010]
+  sources:
+  - {id: cyhist-corp-2010-ar-s8, origin: cypress}
+- id: grace-second-foundry-reading
+  page: docs/history/grace.md
+  anchor: the second Chinese foundry may be
+  grade: inference
+  hedge: our reading
+  footnotes: [qtp-142304, qtp-152604]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: grc-qtp-152604, origin: cypress}
+- id: grace-s8-2010-2014-rows
+  page: docs/history/grace.md
+  anchor: all from one report's history table
+  grade: single-source
+  footnotes: [qtp-142304]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+- id: grace-s8p12-hhgrace-fab1
+  page: docs/history/grace.md
+  anchor: 5th-generation touch screen (QTP 141906)
+  grade: single-source
+  hedge: single source
+  footnotes: [ifx-qtp-141906]
+  sources:
+  - {id: grc-ifx-qtp-141906, origin: cypress}
+- id: grace-s8pf-fab3-2014
+  page: docs/history/grace.md
+  anchor: PSoC 4, CY8C4013 and CY8C4014
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-142304]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+- id: grace-s8spf-fab1-2016
+  page: docs/history/grace.md
+  anchor: automotive touch-screen controller, CYAT8168X
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-152604]
+  sources:
+  - {id: grc-qtp-152604, origin: cypress}
+- id: grace-s8pr2-fab1-2017
+  page: docs/history/grace.md
+  anchor: EZ-PD CCG2 USB Type-C controllers
+  grade: single-source
+  hedge: single source
+  footnotes: [qtp-164010]
+  sources:
+  - {id: grc-qtp-164010, origin: cypress}
+- id: grace-dual-source
+  page: docs/history/grace.md
+  anchor: as its alternative fab
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-142304, qtp-164010]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: grc-qtp-164010, origin: cypress}
+- id: grace-pooled-failure-rate
+  page: docs/history/grace.md
+  anchor: one long-term failure rate
+  grade: single-source
+  footnotes: [qtp-142304]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+- id: grace-names-disagree
+  page: docs/history/grace.md
+  anchor: we read it as a clerical error
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-142304, qtp-164010]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: grc-qtp-164010, origin: cypress}
+- id: grace-one-stack-printed
+  page: docs/history/grace.md
+  anchor: Only one public Shanghai S8 report prints a stack
+  grade: attributed
+  attribution: Cypress's
+  footnotes: [qtp-142304, qtp-152604, qtp-164010]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: grc-qtp-152604, origin: cypress}
+  - {id: grc-qtp-164010, origin: cypress}
+- id: grace-same-oxides
+  page: docs/history/grace.md
+  anchor: The same oxides.
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-142304, qtp-113005]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+- id: grace-same-metal1-2013
+  page: docs/history/grace.md
+  anchor: The same first metal, from 2013.
+  grade: attributed
+  attribution: Cypress's
+  footnotes: [qtp-123907, qtp-142304]
+  sources:
+  - {id: grc-qtp-123907, origin: cypress}
+  - {id: grc-qtp-142304, origin: cypress}
+- id: grace-tin-metallisation
+  page: docs/history/grace.md
+  anchor: TiN at Grace before that.
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-062509, qtp-021507, qtp-091206, qtp-071302]
+  sources:
+  - {id: qtp-062509, origin: cypress}
+  - {id: qtp-021507, origin: cypress}
+  - {id: qtp-091206, origin: cypress}
+  - {id: qtp-071302, origin: cypress}
+- id: grace-c8-tiw-exception
+  page: docs/history/grace.md
+  anchor: is an exception
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-082609, qtp-043004]
+  sources:
+  - {id: qtp-082609, origin: cypress}
+  - {id: qtp-043004, origin: cypress}
+- id: grace-five-metals
+  page: docs/history/grace.md
+  anchor: has five metal layers
+  grade: inference
+  hedge: our reading
+  footnotes: [qtp-142304, qtp-113005]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+- id: grace-passivation
+  page: docs/history/grace.md
+  anchor: Different passivation.
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [qtp-142304, qtp-113005]
+  sources:
+  - {id: grc-qtp-142304, origin: cypress}
+  - {id: qtp-113005, origin: cypress}
+- id: grace-hhnec-sonos-2007
+  page: docs/history/grace.md
+  anchor: EE Times reported in April 2007
+  grade: corroborated
+  footnotes: [eet-2007-hhnec-sonos, mms-hhnec-sonos]
+  sources:
+  - {id: grc-eetimes-2007-sonos-hhnec, origin: eetimes}
+  - {id: grc-mmsonline-hhnec-sonos, origin: mmsonline}
+- id: grace-hhgrace-sonos-licence
+  page: docs/history/grace.md
+  anchor: Licences to HHGrace.
+  grade: single-source
+  footnotes: [ar-fy2018]
+  sources:
+  - {id: grc-ar-fy2018-hhgrace, origin: cypress}
+- id: grace-options-prepayments
+  page: docs/history/grace.md
+  anchor: received options on
+  grade: attributed
+  attribution: Cypress's reports
+  footnotes: [ar-fy2010, ar-fy2012]
+  sources:
+  - {id: grc-ar-fy2010-grace-guarantees, origin: cypress}
+  - {id: grc-ar-fy2012-grace, origin: cypress}
+- id: grace-hhsl-shares-2014
+  page: docs/history/grace.md
+  anchor: In 2014 it bought
+  grade: single-source
+  footnotes: [ar-fy2015]
+  sources:
+  - {id: grc-ar-fy2015-hhgrace, origin: cypress}
+- id: grace-prospectus-envm
+  page: docs/history/grace.md
+  anchor: It names no customers
+  grade: single-source
+  footnotes: [hh-prospectus-2023]
+  sources:
+  - {id: grc-hh-star-prospectus-2023, origin: huahong}

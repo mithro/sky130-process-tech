@@ -172,6 +172,7 @@ records:
     date: 2021-11-11
     form: document listing page (the PDF needs an Infineon log-in and was not read)
   url: https://www.infineon.com/cms/en/product/gated-document/qtp-122801-capsense-device-family-s8din-5r-fab-5-gsmc-8ac78c8c7d710014017d714c885f12e0/
+  sha256: 67ddff85ddc0e61bc86b7835368c30417ee40c598d6d88a62f19055bfade6bea
   archive_url: null
   retrieved: 2026-09-26
   cache: web/ifx-gated-qtp-122801.txt
@@ -191,6 +192,7 @@ records:
     date: null
     form: document listing page (the PDF needs an Infineon log-in and was not read)
   url: https://www.infineon.com/cms/en/product/gated-document/qtp-141906-generation-5-touch-screen-tsg5-m-product-family-s8p12-10p-hhgrace-fab1-cytma4xx-cytma5xx-8ac78c8c82ce56640182da34ac9669cc/
+  sha256: ae305692e86814e88b87740a3a47781caa1ededa17d3da5be9f30d99a37a9f56
   archive_url: null
   retrieved: 2026-09-26
   cache: web/ifx-gated-qtp-141906.txt
@@ -211,6 +213,7 @@ records:
     date: 2011
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2010.pdf
+  sha256: 2158a5196d2afb71e5032e177a70fdab676bd2c0389eb6382e4dee1a57fd338c
   archive_url: null
   retrieved: 2026-09-26
   cache: filings/ar-fy2010.txt
@@ -234,6 +237,7 @@ records:
     date: 2013
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2012.pdf
+  sha256: bb3e0c686b3e715786b4db75b478e92e6846ee156cf94bbe22f07a4e99964382
   archive_url: null
   retrieved: 2026-09-26
   cache: filings/ar-fy2012.txt
@@ -257,6 +261,7 @@ records:
     date: 2016
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2015.pdf
+  sha256: 00e8b899fbd3f1208d696e5df5ed7381fd7ad11553804a861261863204db531c
   archive_url: null
   retrieved: 2026-09-26
   cache: filings/ar-fy2015.txt
@@ -279,6 +284,7 @@ records:
     date: 2019
     form: Annual Report
   url: https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2018.pdf
+  sha256: e9feac1e54e528f4857bdbccfcd2d35db2b83dc5274cb2b81c171e2398d44d82
   archive_url: null
   retrieved: 2026-09-26
   cache: filings/ar-fy2018.txt
@@ -359,6 +365,7 @@ records:
     date: null
     form: news item (undated on the page)
   url: https://www.mmsonline.com.cn/info/91858.shtml
+  sha256: 81702ed319aa729c990677e966d11b3a1bc94697fd8a594840c73dd04ba7b26d
   archive_url: null
   retrieved: 2026-09-26
   cache: web/mmsonline-91858-hhnec-cypress-sonos.txt
@@ -387,6 +394,7 @@ records:
     date: 2017-08-10
     form: group news item
   url: https://www.huahong.com.cn/?m=detail&id=459
+  sha256: 04c51d5ba7f4befa17c3d3d2bcb7c0472cb2bb59a73b8222cfe80597e5b0a785
   archive_url: https://web.archive.org/web/20240130183650/https://www.huahong.com.cn/?m=detail&id=459
   retrieved: 2026-09-26
   cache: web/huahong-fab-naming.txt
@@ -416,6 +424,7 @@ records:
     date: 2023-05-10
     form: prospectus, Shanghai Stock Exchange disclosure
   url: http://static.sse.com.cn/stock/disclosure/announcement/c/202305/001307_20230510_ETYJ.pdf
+  sha256: 2cb778c491c48614e9d47a20e2b3296280dbd02983afdd73e2ba387d0fc5e125
   archive_url: null
   retrieved: 2026-09-26
   cache: filings/hh-star-prospectus-2023.txt
@@ -455,6 +464,7 @@ records:
     date: 2013-06-03
     form: final rule, FR Doc. 2013-13076
   url: https://www.govinfo.gov/content/pkg/FR-2013-06-03/html/2013-13076.htm
+  sha256: 291e223bc6754d008c33fc4e366fb7d80cb3859f124ad253b35a221be4ba4e7c
   archive_url: null
   retrieved: 2026-09-26
   cache: web/fr-2013-13076.txt
@@ -485,6 +495,7 @@ records:
     date: null
     form: encyclopaedia article
   url: https://en.wikipedia.org/wiki/Hua_Hong_Semiconductor
+  sha256: 6ac7a22b207fda12850d79ba859180628268462646d2769baf8c3fa62b0e611a
   archive_url: null
   retrieved: 2026-09-26
   cache: web/enwiki-hua-hong.txt
