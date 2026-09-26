@@ -780,10 +780,12 @@ None was fixed here; each is recorded as found.
   bullets, each with its own marker as in the base (the joining "and" dropped).
 * **R-SENTENCE (test tile).** The 64-word sentence split at its dash: "… 116.7 Ω per square, contacts
   included (our extraction from the published
-  measurements).[^raw-data-passives][^raw-data-testtile-pads] They are inside those limits and, like the
+  measurements; the files record no temperature, date or
+  wafer).[^raw-data-passives][^raw-data-testtile-pads] They are inside those limits and, like the
   nominal values, lower for the high-voltage structure (our extraction from the published measurements;
   the files record no temperature, date or wafer).[^raw-data-passives][^raw-data-testtile-pads]". The
-  trailing extraction hedge covered the values, so it is **repeated** on the first half with both markers
+  trailing extraction hedge, with its "the files record no temperature, date or wafer" caveat, covered the
+  values, so it is **repeated in full** on the first half with both markers (review L2)
   (R-SENTENCE step 5, the batch-4 form on 053/055/056; declared); "They are" added.
 * **R-CATEGORY.** Classification sentence (≈ 30 w) alone; "Its partner is PSDI" → "`NSDI`'s partner"
   opens the second paragraph (R-PARA step 5), and the "What distinguishes it …" sentence (its own

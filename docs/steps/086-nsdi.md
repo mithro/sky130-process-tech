@@ -70,7 +70,8 @@ The device page's e-test table gives `RSN` as
 25-square "n+ resistor" structures, published in the SKY130 raw-data
 repository, give 122.5 Ω and 120.6 Ω per square, and the "n+ high
 voltage resistor" 116.7 Ω per square, contacts included (our extraction
-from the published measurements).[^raw-data-passives][^raw-data-testtile-pads]
+from the published measurements; the files record no temperature, date or
+wafer).[^raw-data-passives][^raw-data-testtile-pads]
 They are inside those
 limits and, like the nominal values, lower for the high-voltage
 structure (our extraction from the published measurements; the files
