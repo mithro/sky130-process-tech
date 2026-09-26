@@ -1,0 +1,40 @@
+id: beol-154-mm4
+kind: xsection
+page: docs/steps/154-mm4.md
+series: series-beol.yaml
+crop_depth: -180
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a blanket of three metal films, a thick silver one between two thin purple ones, lies on
+  a flat pale oxide over buried metal, and carries a raised thin purple plate at the right.
+  After it two violet resist blocks stand on the blanket: a narrow one at the left and a wide
+  one covering the plate and reaching past its edge.
+caption: >-
+  Before, the blanket metal-4 stack carrying the second capacitor's dielectric and top plate;
+  after, the resist of the metal-4 mask: a line at the left, over a via-3 plug, and a wide
+  block over the whole second capacitor, reaching past its top plate, where metal 4 is to
+  remain as the capacitor's bottom plate. The PDK publishes no `cap2m` enclosure rule, so how
+  far metal 4 must reach past the plate is not known; here it is an illustrative choice, as is
+  the whole layout. The PDK's metal-4 lines are at least 0.300 µm wide and apart (m4.1, m4.2)
+  and enclose a via 3 by 0.065 µm (m4.3);[^pdk-periph] neither the lines nor the resist is
+  drawn to scale, and the page reads the PDK's 1.14 µm resist[^pdk-03] as an antenna-rule
+  assumption. Which refractory films clad metal 4 is not public (the overview of the metal cap
+  sets out the evidence). The lower part of the slice is cut off: the drawing starts inside the
+  oxide under metal 3. The first capacitor and the metal-3 line, the plugs and their liners,
+  the oxides, the thin dielectric of the second capacitor and the bottom film of metal 4 are
+  drawn but not labelled, nor, in the lower panel, is the metal cap. Not to scale.
+arrow:
+  title: "MM4, step 154"
+  note: "Resist is coated, exposed through the metal reticle and developed, leaving it wherever metal is to remain."
+panels:
+  - state_after: "153"
+    title: "Before: the second capacitor on the blanket stack (step 153)"
+    hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+    hide_labels: [capild2, m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres]
+  - state_after: "154"
+    title: "After: resist over a line and the whole capacitor"
+    hide_layers: [pwell, nchi]
+    hide_labels: [m4cap, capild2, m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres]
+    highlight: {where: [[20, 84], [104, 268]]}

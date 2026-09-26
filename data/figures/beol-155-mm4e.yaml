@@ -1,0 +1,48 @@
+id: beol-155-mm4e
+kind: xsection
+page: docs/steps/155-mm4e.md
+series: series-beol.yaml
+close_up: [76, 176]
+close_up_name: "the edges of a second capacitor and a metal-4 line"
+routes: {m4bot: right, m4al: right, m4cap: right, ncap5: right}
+crop_depth: -670
+alt: >-
+  Two enlarged cross-sections of the upper films, cut off at the bottom. Before the step violet
+  resist covers a raised purple plate and a narrow block at the left edge of a blanket metal
+  stack. After it the resist is gone and the metal stack remains only under where it was: the
+  right-hand edge of a line at the left and a wide bottom plate at the right, carrying the
+  plate on the thin striped film, with bare pale oxide between them.
+caption: >-
+  A close-up of the left edge of the second capacitor and the right-hand edge of a metal-4
+  wiring line; the lower part of the slice is cut off, and the drawing starts inside the oxide
+  under metal 4. Before, the metal-4 resist over the line and over the capacitor; after, the
+  etch has broken through the dielectric outside the resist (a fluorine-containing step, on the
+  page's account, since chlorine makes little progress on it) and then removed the whole
+  metal-4 stack in chlorine, stopping on the cap oxide, and the resist has been stripped (the
+  page treats the passivation, strip and clean as part of this step). On this drawing the etch
+  thus also clears the thin dielectric left on the blanket metal 4 between the two shapes;
+  beneath the resist nothing is etched, so the dielectric stays on the metal around the top
+  plate and on the line, which the page does not discuss. The capacitor now has a bottom plate
+  of its own. The edges are drawn vertical, and nothing is drawn to scale: the page uses the
+  PDK's 0.845 µm for the metal[^pdk-04] and gives the minimum width and space as 0.300 µm (m4.1,
+  m4.2).[^pdk-periph] The two oxides and the bottom film of the metal are drawn but not
+  labelled, nor, in the upper panel, is the aluminium–copper. Not to scale.
+arrow:
+  title: "MM4E, step 155"
+  note: "A plasma breaks through the dielectric, then chlorine etches the metal stack between the resist shapes; the resist is stripped."
+panels:
+  - state_after: "154"
+    title: "Before: resist over the plate and a wiring line (step 154)"
+    hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: ""}
+      capild2: {title: "Capacitor dielectric", note: ""}
+    hide_labels: [m4al, m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres]
+  - state_after: "155"
+    title: "After: a second capacitor with its own bottom plate"
+    hide_layers: [pwell, nchi]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+      capild2: {title: "Capacitor dielectric", note: ""}
+    hide_labels: [m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres]
+    highlight: {where: [[84, 104]]}

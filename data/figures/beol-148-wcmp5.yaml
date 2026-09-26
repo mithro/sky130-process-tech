@@ -1,0 +1,43 @@
+id: beol-148-wcmp5
+kind: xsection
+page: docs/steps/148-wcmp5.md
+series: series-beol.yaml
+close_up: [176, 240]
+close_up_name: "the via-3 plug on a capacitor plate"
+routes: {m3al: right, m3cap: right, capild: right, capm: right, ncap5: right, v3w: top}
+crop_depth: -946
+alt: >-
+  Two enlarged cross-sections of a filled shallow hole in a flat pale oxide over a purple plate,
+  which lies on a very thin striped film over a metal line. Before the step a thick grey
+  tungsten film over a thin purple liner covers the whole top and fills the hole. After it the
+  top is flat oxide again, with the tungsten and its liner left only inside the hole, their tops
+  level with the oxide.
+caption: >-
+  A close-up of the via-3 plug on the capacitor's top plate; the lower part of the slice is cut
+  off, and the drawing starts inside the aluminium of the metal 3 under the capacitor. Before,
+  the tungsten and its liner over the whole wafer; after, both polished off the field down to
+  the cap oxide, leaving the plug: a 0.20 µm square in the PDK's rules,[^pdk-periph] drawn here
+  flush with the oxide. How far the polish recesses the plug and erodes the oxide is not
+  public, and neither is drawn; how much oxide remains over the plate is not public either. The
+  plug on the metal-3 line, outside this view, is made in the same polish and is taller, since
+  the oxide over metal 3 is 0.39 µm in the PDK's stack diagram[^pdk-04] and the plate stands
+  above the metal. The plug is drawn a little less tall than it is wide, and its liner with one
+  thickness, far thicker in proportion than it is. The liner, the NILD5 oxide, the
+  aluminium–copper of metal 3 and, in the lower panel, the plate, the dielectric and the metal
+  cap are drawn but not labelled, nor, in the upper panel, is the cap oxide. Not to scale.
+arrow:
+  title: "WCMP5, step 148"
+  note: "The tungsten and the liner are polished off the field, down to the cap oxide, leaving flush plugs."
+panels:
+  - state_after: "147"
+    title: "Before: tungsten over the whole top (step 147)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [v3liner, ncap5, nild5, m3bot, m3al, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    labels:
+      m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+      capild: {title: "Capacitor dielectric", note: ""}
+  - state_after: "148"
+    title: "After: a flush via-3 plug on the plate"
+    hide_layers: [pwell, nchi]
+    hide_labels: [v3liner, nild5, m3bot, m3al, m3cap, capild, capm, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    highlight: {where: [[176, 240]]}

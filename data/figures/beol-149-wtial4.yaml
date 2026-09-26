@@ -1,0 +1,40 @@
+id: beol-149-wtial4
+kind: xsection
+page: docs/steps/149-wtial4.md
+series: series-beol.yaml
+crop_depth: -128
+routes: {v3w: top}
+alt: >-
+  Two cross-sections of the upper films, one above the other, cut off at the bottom. Before the
+  step a flat pale oxide buries a metal line and a wider metal shape carrying a raised thin
+  plate, with a small tungsten plug reaching the top over each. After it three blanket films
+  cover the whole top: a thin purple film, a thick silver film and another thin purple film.
+caption: >-
+  Before, the flush via-3 plugs, one on the metal-3 line and one on the capacitor's top plate;
+  after, the metal-4 stack over the whole wafer: a thin bottom film, a thicker aluminium–copper
+  alloy and a thin cap. Like metal 3, it stays a blanket through the second capacitor's steps
+  and is patterned at MM4 and MM4E (steps 154 and 155). No public source describes the metal-4
+  films; the page reads the stack as a repeat of metal 3's (an inference), with the bottom film
+  as Ti or TiW, and whether the cap is TiW or the Ti/TiN of the stack qualified in 2014 is
+  unresolved: the overview of the metal cap sets out the evidence, and the figure does not
+  choose, drawing both films in the colour the figure conventions use for every Ti, TiN and TiW
+  film. The PDK's stack diagram gives metal 4 the same 0.845 µm as metal 3,[^pdk-04] and it is
+  drawn as thick as metal 3, though not to scale. The lower part of the slice is cut off: the
+  drawing starts inside the oxide under metal 2. The metal-3 line and the capacitor, the plugs
+  and their liners, the oxides and the metal-2 lines are drawn but not labelled, except, in the
+  upper panel, the tungsten of the plug on the plate and the cap oxide. Not to scale.
+arrow:
+  title: "WTIAL4, step 149"
+  note: "A bottom film, a thick aluminium–copper and a cap are sputtered over the whole wafer."
+panels:
+  - state_after: "148"
+    title: "Before: the flush via-3 plugs (step 148)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [v3liner, nild5, capm, capild, m3al, m3bot, m3cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+  - state_after: "149"
+    title: "After: the three-film metal-4 stack"
+    hide_layers: [pwell, nchi]
+    hide_labels: [v3w, ncap5, v3liner, nild5, capm, capild, m3al, m3bot, m3cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    labels:
+      m4cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+    highlight: {where: [[0, 268]]}

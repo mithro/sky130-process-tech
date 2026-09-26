@@ -1,0 +1,44 @@
+id: beol-147-wdep5
+kind: xsection
+page: docs/steps/147-wdep5.md
+series: series-beol.yaml
+close_up: [176, 240]
+close_up_name: "the via-3 hole on a capacitor plate"
+routes: {m3al: right, m3cap: right, capild: right, capm: right, ncap5: right}
+crop_depth: -946
+alt: >-
+  Two enlarged cross-sections of a shallow lined hole going down through a flat pale oxide to a
+  purple plate on a very thin striped film over a metal line. Before the step a thin purple
+  liner covers the oxide and the walls and floor of the hole. After it a thick grey
+  cross-hatched tungsten film covers the liner everywhere and fills the hole completely, with a
+  slight dip in its top surface over the hole.
+caption: >-
+  A close-up of the via-3 hole on the capacitor's top plate; the lower part of the slice is cut
+  off, and the drawing starts inside the aluminium of the metal 3 under the capacitor. Before,
+  the lined hole; after, the tungsten grown over the whole wafer, closing the hole from its
+  walls inward and continuous above it. Its thickness is not public; the page gives a film of
+  the order of 0.25–0.35 µm as the industry norm for a via of this size,[^txt-05] and the drawn
+  film is not to scale, nor is the dip over the hole; the liner is drawn with one thickness,
+  far thicker in proportion than it is. Since a conformal film closes a hole from its walls, the
+  page reads one film as filling both kinds of via; the deeper hole on the metal-3 line, outside
+  this view, is filled in the same way. Over metal 3 the PDK's via 3 is 0.20 µm wide and
+  0.39 µm deep;[^pdk-periph][^pdk-04] this shallower hole over a plate is drawn a little less
+  deep than it is wide. The oxides, the aluminium–copper of metal 3 and, in the lower panel,
+  the liner, the plate, the dielectric and the metal cap are drawn but not labelled. Not to
+  scale.
+arrow:
+  title: "WDEP5, step 147"
+  note: "Tungsten is deposited by CVD over the whole wafer, filling the lined via holes."
+panels:
+  - state_after: "146"
+    title: "Before: the lined hole on the plate (step 146)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [ncap5, nild5, m3bot, m3al, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    labels:
+      m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+      capild: {title: "Capacitor dielectric", note: ""}
+  - state_after: "147"
+    title: "After: tungsten over the whole top"
+    hide_layers: [pwell, nchi]
+    hide_labels: [v3liner, ncap5, nild5, m3bot, m3al, m3cap, capild, capm, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    highlight: {where: [[176, 240]]}

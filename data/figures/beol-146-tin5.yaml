@@ -1,0 +1,47 @@
+id: beol-146-tin5
+kind: xsection
+page: docs/steps/146-tin5.md
+series: series-beol.yaml
+close_up: [176, 240]
+close_up_name: "the via-3 hole on a capacitor plate"
+routes: {m3al: right, m3cap: right, capild: right, capm: right, ncap5: right}
+crop_depth: -946
+alt: >-
+  Two enlarged cross-sections of a shallow hole with vertical walls going down through a flat
+  pale oxide to a purple plate, which lies on a very thin striped film over a metal line.
+  Before the step the hole is open. After it a thin purple film of even thickness covers the
+  whole top: the oxide surface, the walls of the hole and its floor, leaving an opening in the
+  middle.
+caption: >-
+  A close-up of the via-3 hole on the capacitor's top plate; the lower part of the slice is cut
+  off, and the drawing starts inside the aluminium of the metal 3 under the capacitor. Before,
+  the hole etched to the plate; after, the liner over the whole wafer: across the oxide, down
+  the walls of the hole and over its floor. The page describes it as ionised-metal-plasma
+  titanium nitride; its thickness is not public (industry-typical: a few tens of nanometres on
+  the field and much less on the via floor[^txt-05]). It is drawn with one thickness
+  everywhere, which such a film does not have, and far thicker in proportion to the hole than
+  it is. The liner, the plate and the metal cap are drawn in the one colour the figure
+  conventions use for every Ti, TiN and TiW film; the plate is TiW as the page assumes, and
+  which film caps metal 3 is not public (the overview of the metal cap sets out the readings).
+  The hole on the metal-3 line, outside this view, is lined in the same way down to its floor
+  on the cap. Over metal 3 the PDK's via 3 is 0.20 µm wide and 0.39 µm
+  deep;[^pdk-periph][^pdk-04] over a plate it is shallower by the plate and the dielectric
+  (0.1–0.2 µm on the page's reading), and this hole is drawn a little less deep than it is
+  wide. The oxides and the aluminium–copper of metal 3 are drawn but not labelled, nor, in the
+  lower panel, are the plate, the dielectric and the metal cap. Not to scale.
+arrow:
+  title: "TIN5, step 146"
+  note: "Titanium nitride is sputtered over the whole wafer, lining the via holes."
+panels:
+  - state_after: "145"
+    title: "Before: the open hole on the plate (step 145)"
+    hide_layers: [pwell, nchi]
+    hide_labels: [ncap5, nild5, m3bot, m3al, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    labels:
+      m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
+      capild: {title: "Capacitor dielectric", note: ""}
+  - state_after: "146"
+    title: "After: a TiN liner over the whole top"
+    hide_layers: [pwell, nchi]
+    hide_labels: [ncap5, nild5, m3bot, m3al, m3cap, capild, capm, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
+    highlight: {where: [[176, 240]]}
