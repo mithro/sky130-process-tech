@@ -37,6 +37,115 @@ pages: 124, 120. One commit per page.
   counts as one word; an em dash is not a word (D3 of batch 9).
 * Gates per page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`, `-W` build.
 
+## Batch summary (all ten pages done)
+
+### Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `rdtools.py caps` over the ten pages: `{figure}` blocks (the captions), `{dropdown}`
+bodies (the in-force notes of 136, 138 and 153 and the generated "families in force" lists), the
+generated index-links block, `## References` and footnote definitions are **excluded**; a leading bold
+run-in label is not counted into its sentence; a quotation counts as one word; an em dash is not a
+word. Before = `main` at `b285acd8`, counted with the same script. A list item is its first block; an
+indented continuation paragraph counts as a paragraph.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 40 | 0 |
+| list items > 60 words | 66 | 0 |
+| sentences > 45 words | 113 | 0 (1 reported, a splitter artefact on 152: two sentences, 17 and 31 words, the second opening with the numeral "0.1 µm") |
+| table cells > 25 words | 0 | 0 |
+
+Leads (≤ 120 words, first sentence ≤ 25): 135 (224, base 225), 136 (223, base 217), 137 (146, base
+144), 139 (160), 140 (173, base 168), 150 (162), 151 (201, base 198) are over 120 as in the base,
+each in two or three paragraphs of at most 100 words; 138 (93), 152 (108), 153 (119) are within the
+cap. First sentences: all ≤ 25 words (136 and 151 were 41 and 30). Item lead blocks with sub-bullets
+are all ≤ 30 words. No in-force note on these pages is over a cap (none edited either way).
+
+### Declared additions (the only non-glance ADDED lines)
+
+* Repeated markers: `pdk-07` (135 lead and PDK values; 150 device page), `pdk-periph` (135 periphery
+  sub-bullet; 139 waffleDrop sentence).
+* Repeated hedges: "inference" (135 metal-3 reading), "our reading of industry practice" (137
+  alignment), "our arithmetic" (139 k₁), "inference from the geometry" (151 pre-clean, 152 CD error).
+* Restored nouns and subjects, each named in its page entry.
+* `number_order` LOST lines, hand re-paired in the entries: 139 (the m3 rule table) and 151 (the
+  ρ/Rs sentence and its moved textbook-range parenthetical). Everything else is REGROUPED.
+
+### R-REPEAT (none applied)
+
+`rdtools.py rep` finds 10-word runs in two H2 sections on 135 (the PDK's device-page wording, lead and
+Why; SkyWater's C1 quotation, body and Machines likely used), 136 (the 2013 Cypress sentence, lead
+parenthetical and Why reasons), 137 (the i-line inference, R-TOOLS grade and Open question), 150 (the
+nomenclature quotation, body and Open question) and 153 (the strip-step sentence, lead and Open
+question). Each copy adds something the other lacks (the evidence for an inference, the grade, the
+"not public" of the Open question), and the strip-step Open question is on every etch page. 138's
+category selectivity sentence (the guide's R-CATEGORY example) is kept for the marker reason in its
+entry.
+
+### Gates (end of batch, in the worktree)
+
+`check_steps`, `check_refs`, `check_machines`, `check_materials`, `check_masks`, `check_papers`,
+`check_patents`, `check_filings`, `check_inforce` — 0 problems; `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables`, `gen_figures` `--check` — 0 differences;
+`sphinx-build -E -W` into a fresh directory — exit 0. `rdtools.py inv` per page against `b285acd8`:
+References, footnote definitions, generated blocks, `{figure}` blocks, dropdowns, quick facts, H2 lists
+and Deep-dive counts identical; one admonition per page (the glance box, `:class: at-a-glance`, a
+blank line after its `:::`); every glance marker recurs below; no duplicate H3; every scope sentence
+is the italic lead-in; no consecutive duplicate line, no prose line ending in a hyphen or slash, no
+bare `>`, no NBSP. `check_preserved.py --base b285acd8 --allow-regrouped` over the batch: no
+DUPLICATED line or sentence, no dropdown change; the only LOST lines are the two `number_order`
+lines above; every WORDS LOST word is named in its page entry.
+
+Arithmetic re-checked while copying, all correct: 135/150 d = ε₀k/(C/A) = 4.43 nm × k (18, 22–27,
+33 nm; +7 % at 1.87 fF/µm²), field ≈ 2 MV/cm; 136/151 ρ/Rs = 0.086–0.17 µm; 137/152 k₁ = 1.38;
+138 area/periphery solve (2.00 fF/µm², 0.194 fF/µm → 12.37 pF) and 6.3–6.7 % measured shortfall, 50 nm
+at selectivity 2; 139 k₁ 0.847 and 0.493, 47/125 = 0.38; 140 7 650 Å, 22 050 Å, 8 450 Å, 3.4–3.8 µΩ·cm;
+150 2.00 fF/µm², 0.3–0.4 % stacked excess; 152 71 pF = 2 × 35.5 pF.
+
+### Guide problems
+
+1. **A trailing hedge whose own words name one clause.** Several splits (136 and 151 Step category,
+   137 "(inference from the model form)", 139 "(inference; Levinson …)" after the PDK rule, 140
+   "(industry practice; <cap-etch sources>)", 153 "we describe … (inference)") end in a hedge whose
+   own words name the clause it qualifies (its source, "the model form", "the geometry"), while the
+   other half is a cited fact or carries its own hedge. D1 says "when in doubt, repeat"; repeating
+   such a hedge onto a cited PDK rule would mark as inferred something the page does not infer. I kept
+   it with its clause in these cases and repeated it in the others (135, 137, 139, 151, 152); a ruling
+   on "the hedge's own words name the clause" would settle it.
+2. **R-CATEGORY example vs R-REPEAT "Do not touch".** The guide's own example (138's selectivity
+   sentences replaced by a pointer) conflicts with R-REPEAT when the repeated sentence carries the
+   only marker for the clause before it; I kept it.
+3. **Sentence splitter.** `measure.py` and my script do not split before a sentence that opens with a
+   digit (152 "0.1 µm of edge bias …"), the same class as §8 item 12's `{ref}` artefact.
+4. **§1 "em-dash pairs or parentheticals per sentence: hard cap 1".** R-SENTENCE's trigger is two dash
+   pairs or a 12-word parenthetical, so a sentence with one dash pair and one short parenthetical (135
+   lead, 139, 140) is over the §1 cap but triggers no rule; such sentences were left as in the base
+   unless another rule split them. The §8 checklist does not list this cap.
+5. **Words added at a split count against the lead cap.** On 153 a restored subject took a 119-word
+   base lead to 122; the guide could say that a lead under the cap must stay under it after the split
+   (done here by re-punctuating instead).
+
+## Content problems for the owner (not fixed; text kept verbatim)
+
+1. **140 lead vs body on the breakthrough.** The lead says "a chlorine plasma removes everything …:
+   first whatever remains of the CAPILD dielectric outside the capacitor plates", while the Why bullet
+   "Breaking through the capacitor dielectric" says a chlorine plasma "makes little progress on it" and
+   a fluorine-containing breakthrough removes it (the S10 figure follows the body).
+2. **140 (and 145) on where the dielectric stays.** On 138's stop-on-dielectric reading nothing is
+   etched under the MM3 resist, so the dielectric stays on every metal-3 shape (around the top plate
+   and on the wiring); 140 does not say so, and 145 gives the via-3 floors as the metal-3 cap and the
+   top plate without the dielectric (S10 figure notes).
+3. **135 and 150 word the dielectric differently.** 135: "described in this reference as a silicon
+   oxynitride (inference, see below)"; 150: "a step name is not evidence of a chemistry, and no public
+   source describes SKY130's capacitor dielectric … though the public record does not single that
+   material out".
+4. **138 and 153 leads state the stop.** Both say the plasma "stops on, or a little way into, the thin
+   capacitor dielectric" without a hedge, while their bodies say which of stop and through-etch SKY130
+   uses is not public and the stop is this reference's inference.
+5. **151 lead "a blanket titanium–tungsten layer"** is unhedged, while the same paragraph says the PDK
+   does not name the material and TiW is this reference's inference (the batch-9 pattern of 120/131's
+   "titanium–tungsten floor"); 135's "the TiW of CAPTIW1" in its closing sentence is the same.
+
 ## Pages
 
 ### 135 CAPILD — done
