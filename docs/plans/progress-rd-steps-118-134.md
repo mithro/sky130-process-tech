@@ -260,3 +260,44 @@ per page.
 * **Self-check note:** two lines duplicated by a range slip while editing (the recipe's down-force
   line and the endpoint's over-polish line) were caught in the diff and removed before commit;
   `gate.sh` now also reports duplicated adjacent lines and the words added outside the glance.
+
+### 123 TIAL12 — done
+
+* **Kept verbatim** (as 112): every sentence that describes the stack as Ti/Al–Cu/TiW or weighs it
+  against the 2014 Ti/TiN/AlCu/Ti/TiN stack keeps its wording; only paragraph breaks, list structure
+  and splits at existing seams.
+* **Lead:** 85 words, one paragraph; the 53-word second sentence split at its colon, "… the same kind
+  of sandwich as at metal 1. The sandwich is a thin refractory bottom layer, …" (noun and verb added;
+  "on our reading" stays inside its dash pair with "in one vacuum sequence").
+* **R-H3:** `### What the public record shows` over the post-figure passage (the two Cypress reports,
+  the notification, the PDK numbers), which ends in the page's marked inference and the bold-labelled
+  bottom-titanium paragraph (as 112). The 200-word paragraph split into three: 2013 report and PDK
+  numbers | 2014 report and notification | the page's choice ("As at TIAL6, …"). The PDK sentence and
+  the choice sentence split at their semicolons; the bottom-titanium sentence split at its semicolon.
+  No `### Competing readings`: the weighing passage is about 70 words, under the 120 an H3 needs.
+* **R-CATEGORY + R-LIST:** classification cut at its semicolon (11 words); "Two things are." → "Two
+  things are:" and two plain bullets (the existing announcing sentence serves as the lead-in, so no
+  **Specific to this step:** label is added); the second bullet's opening "And" dropped (no connective
+  opener inside a list item).
+* **R-PARA (Why):** Al–Cu between studs: lead ends at the colon; the Blech/Filippi/Kwok sentences are a
+  continuation; "The half per cent of copper still matters: …" a second continuation. Ti underlayer:
+  the 15-word "(industry practice; Domenicucci …)" closed as its own parenthetical sentence directly
+  after the shunt clause (the 112 form); the via-level sentence is the continuation, "it" → "the
+  underlayer" (the continuation now opens two sentences from the label). Cap: the Chen/Chen/Tsou dash
+  material becomes its own sentence opening the continuation; the studies sentence split at its
+  semicolon.
+* **How:** italic scope lead-in (the whole sentence with its marker and TIAL6 pointer). No other item
+  over a cap.
+* **R-TOOLS:** AMAT item in three lines (as 112). The metal-etcher bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** three labels; Previous / Next split, Depends on (the
+  plugs), Feeds (NILD4, VIM2E), Same category (TIAL6 and the upper metals); glance in the 112 form, not
+  choosing a stack.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box
+  (markers `pdk-04`, `pdk-08`, `skw-01`; numbers 0.36, 125, `1`, `2`; quote "Collimated Ti"; hedges;
+  identifiers `SKY130`, `met2`, `metal-2`). REGROUPED: the PDK sentence's numbers (same order). LOST
+  words "it" (→ "the underlayer"), "strength" (R-TOOLS).
+* **Coverage flags read:** the PDK and cap splits (each marker with its clause), the Blech
+  continuation, the studies sentences ("may" is the author May), glance lines. None lost a marker or
+  hedge.
+* **Left over the caps:** none. Item lead over 30 words: the cap (40; one sentence under "Whichever
+  refractory film it is").
