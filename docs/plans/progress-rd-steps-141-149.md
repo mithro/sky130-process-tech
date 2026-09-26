@@ -149,6 +149,61 @@ form).
   labels. REGROUPED: the cross-section parenthetical (same digits). WORDS LOST: `strength`.
 * `cov`: 6 flags, all read — glance/label pairing noise; the step 5 hedge is the next sentence.
 
+### 144 VIM3 — done
+
+Base `4008a297`. Caps before: 5 paragraphs, 6 items, 10 sentences over; after 0/0/0. Lead 114 words
+(within the cap in the base too) in two paragraphs (83, 31); first sentence 5 words (base 29: "…
+lithography: the mask step …" → "… lithography. It is the mask step …", subject and verb added).
+
+* Lead: split at "Unlike `VIM2`" and at the semicolon before "The minimum-CD table" (two cited facts;
+  "it" is still the via-3 mask of the sentence before).
+* R-H3 + R-TABLE: `### What the public record shows` after the caption (129 form); the via-3 rule
+  sentence as a `Rule | Constrains | Value` table, lead-in "The periphery rules give:[^pdk-periph]"
+  (the sentence-end marker on the lead-in); via3.3 has no value in the base → `—`; the dash aside
+  "the layer that marks e-test modules[^pdk-06]" the first sentence after the table ("`areaid.mt` is
+  …", subject and verb added). `number_order` LOST on the rule sentence, hand re-paired: via3.1 0.200;
+  via3.1a 0.200 and 0.800 inside `areaid.mt`; via3.2 0.200; via3.3 the quoted rule, no value; via3.4
+  0.060; via3.5 0.090 on one of two adjacent sides; m4.3 0.065 — base order, same digits. WORDS LOST
+  `enclose`, `must`, `with` from the cells ("metal 4 must enclose the via by" → "enclosure of the via
+  by metal 4", as 129's m3.4 row). The hole-depth sentence a paragraph of its own.
+* "What makes this via mask different …" (106 words) split before "Since the plate stands …"
+  ("Since X, Y" is a complete subordinate opener, not a connective); its 46-word sentence split at the
+  dash: "…than a via over bare metal 3, by the plate and dielectric thicknesses (inference). These are
+  of the order of 0.1–0.2 µm on our reading of CAPILD and CAPTIW1 (inference)." — the trailing
+  "(inference)" repeated on the first half, which is uncited (D1; declared ADDED hedge).
+* Step category (three paragraphs in the base, so R-CATEGORY does not apply): first paragraph split
+  after the classification sentence; the 50-word k₁ sentence split at its colon ("Its geometry is via
+  2's. At 0.20 µm …"), so "while" and "(our arithmetic)" stay where they were; the Sheet4 paragraph
+  split at the colon after "248 nm exposure" and before "We also read", and at the semicolon after
+  `itrs-03` (the "less certainly" reading stays on its clause; "The tab does not define …" is a
+  statement about the tab).
+* Why: hole-size item split after the lead sentence; metal-3 placement item split at the semicolon,
+  "A via that slips …" a continuation; capacitor-plate item: lead sentence, then the `capm`-rules
+  sentence, then the two-dash-pair sentence split — "On our reading, in the flow described here those
+  rules apply to via 3 (inference; see CAPILD). This reading is consistent with the cross-section, …
+  "Via3",[^pdk-07] the layer table[^pdk-06] and CAPM." (subject and verb added; the inner dash pair
+  "— the only via it labels —" kept); uniformity item: the dash aside on capacitor via arrays moved
+  after the sentence with its "(inference from the 5.8 Ω/sq `RSCAPM`[^pdk-07])" (REGROUPED, same
+  digits).
+* How: italic scope sentence; step 2 split at the semicolon (two cited facts); step 3's sheet sentence
+  a continuation ("the latter" still follows the sentence naming the two reticle types).
+* R-TOOLS: ASML three-line item; tracks and CD/overlay items with their grades (129 form).
+* R-RELATED: Previous · Next · Depends on · Feeds · Same category (the hole masks) · Mask (with
+  previous/next mask, from the "Previous mask" bullet) · Category page. WORDS LOST `page` ("Mask
+  page:" → "Mask:").
+* R-OPENQ: five labels; the mask-type bullet split at its semicolon (129 form); the `capm` bullet split
+  at its semicolon with "we read it so" → "We read that wording so" (restored noun, the head being two
+  lines above); the PLM bullet split after its first clause.
+* R-GLANCE: numbers from the table (`pdk-periph`) and the hole depth (`pdk-04`); tool line = the
+  R-TOOLS grades; Not public = Open questions 1 and 2.
+* `check_preserved --allow-regrouped`: ADDED = glance, the H3, the repeated "inference", identifiers
+  from the glance and labels; LOST only the rule-table `number_order` above. WORDS LOST: `enclose`,
+  `must`, `with`, `page`, `strength`×3. No DUPLICATED line.
+* `cov`: 8 flags, all read: pairing noise, or the hedge now in the neighbouring sentence as described.
+* R-REPEAT: the cross-section sentence ("labels the via that lands on "CAPM" — the only via it labels
+  — "Via3"") occurs under Why and Open questions, as in the base; each copy carries its own argument,
+  so none deleted.
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
