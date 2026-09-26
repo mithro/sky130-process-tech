@@ -30,7 +30,7 @@
 ## What this step is
 
 `SPNIT` deposits a blanket, conformal silicon nitride film over the
-whole wafer. It runs over the capped gate lines and resistor bodies, down
+whole wafer. The film runs over the capped gate lines and resistor bodies, down
 their sidewalls and across the source/drain silicon whose tips and
 halos were activated at {ref}`TIPRTAD <step-075>`.
 

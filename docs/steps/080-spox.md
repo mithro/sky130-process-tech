@@ -100,7 +100,7 @@ does not say which SKY130 had in mind:
   beam's sputtered contamination out of the silicon, scatters the
   beam to reduce {term}`channelling`, and — for boron — produces a
   profile that Park et al. found to be paradoxically *broadened* by
-  the screen.[^park-1991] It is a behaviour Lim et al. later modelled for
+  the screen.[^park-1991] This is a behaviour Lim et al. later modelled for
   (100) silicon.[^lim-1993]
 
   For BF₂, Wang et al. showed that fluorine

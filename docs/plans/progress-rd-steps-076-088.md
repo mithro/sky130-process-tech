@@ -30,8 +30,116 @@ pages: 066, 068, 072. One commit per page.
   `{figure}` blocks, `{dropdown}` bodies, the generated block and `## References` excluded; it also
   prints the lead's word count and first-sentence length.
 * Repeats: `tmp/readability/repeat.py` (git-ignored), 10-word runs shared by two H2 sections.
-* Gates after each page: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links --check`,
-  `gen_figures --check`, `-W` build; tiles at 1280 px and 400 px read against the baseline.
+* Gates before each page's commit: `check_steps`, `check_refs`, `check_inforce`, `gen_index_links
+  --check` and a `-W` build (built from a snapshot copy of `docs/`, so the next page could be edited
+  meanwhile; pages 078/079, 081/082, 084/085 and 086/087 shared one build each); `gen_figures --check`
+  (about eight minutes, and no figure was touched) five times during the batch and at the end; tiles at 1280 px
+  and 400 px (`tmp/shots/*-after*`) read against the baseline.
+
+## Batch measurement (§1 caps; figure captions and dropdown bodies excluded)
+
+Counted with `tmp/readability/caps.py`: `{figure}` blocks (the captions), `{dropdown}` bodies, the
+generated index-links block and `## References` are **excluded**. Before = `main` at `c00cfefa`.
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| paragraphs > 100 words | 36 | 0 |
+| list items > 60 words | 45 | 1 |
+| sentences > 45 words | 104 | 3 |
+| table cells > 25 words | 0 | 0 |
+
+`measure5.py` as committed (it counts `{figure}` captions): paragraphs 49 → 13 (the 13 remaining are the
+13 figure captions), items 45 → 1, sentences 120 → 19 (16 of them in captions), cells 0 → 0.
+
+**Left over the caps, with reasons** (each is also in its page entry):
+
+* Item: 082 "It does not dope the PMOS gate" (63 w lead block; its only seam is before "So SKY130
+  avoids …", which may not open a continuation paragraph).
+* Sentences: 076 "The film must coat the foot of a gate line …" (46; the only further split would move a
+  20-word parenthetical and reorder its numbers); 079 "The order relative to the source/drain implants
+  is deliberate on our reading …" (51; every split would put the doping clause outside its hedge); 087
+  "The surface under the resist is, on our reading of the flow, …" (47; the same reason).
+* First sentence over 25 words: 082 (27), 086 (26); no seam that step 7 allows.
+* Leads over 120 words, as in the base: 079 (136; base 135), 080 (121; base 122), 083 (128; base 125),
+  088 (157; base 154). Two paragraphs each; no third was needed.
+* Lead-sentence of an item over 30 words with a continuation paragraph: 077 "Spacer profile" (the bold
+  label is the sentence's subject), 082 "It does not dope the PMOS gate" (above). No item has sub-bullets
+  under a lead of more than 30 words.
+
+**Gates (end of batch, in the worktree):** `check_steps`, `check_refs`, `check_machines`,
+`check_materials`, `check_masks`, `check_papers`, `check_patents`, `check_filings`, `check_inforce` — 0
+problems; `gen_papers`, `gen_patents`, `gen_filings`, `gen_index_links`, `gen_steps`, `gen_step_tables`,
+`gen_figures` `--check` — 0 differences; `sphinx-build -E -W` into a fresh directory — exit 0 (and an
+incremental `-W` rebuild after the last fix commit). `invariants.py` over the 13 pages: 0 changes to
+References, footnote definitions, generated blocks (including the generated `{dropdown}` on 077 and 084),
+figures, quick facts, H2 lists or Deep-dive counts; one admonition (the glance box, `:class:
+at-a-glance`) per page; every glance marker recurs below; no duplicate H3; every scope sentence is the
+italic lead-in. `check_preserved.py --allow-regrouped` over the batch: the only lines are the declared
+ADDED lines, REGROUPED lines and three LOST `number_order` (the `npc`, `psd` and `nsd` rule tables on
+078, 081, 085), each re-paired by hand in its page entry; no `{dropdown}` line and no WARN line on any
+page; `--strict-words` loses only "strength" (the R-TOOLS labels) and the connective or pronoun words
+named per page. None of these pages has a hand-written in-force note, so no dropdown was touched.
+
+**Self-review for the reviewers' classes** (after the pages were done): a scan of every new sentence and
+paragraph that opens on a pronoun or demonstrative found three whose referent had changed with a split —
+076 "It runs over the capped gate lines" (now "The film runs"), 079 "It stops on the poly" after the new
+cap sentence (now "`NPCME` stops"), 080 "It is a behaviour Lim et al. later modelled" after a sentence
+whose subject is "Implanting through a thin oxide" (now "This is a behaviour") — and one continuation
+paragraph opening on "It" (077's over-etch clause, moved back into the lead block). Paragraphs that open
+on a pronoun or demonstrative and were kept: 076 "These are the reasons …" and the R-LIST closing
+sentences (R-LIST step 4, like the guide's "Both are controlled …"), 083 "Such an implant would be
+shadowed …" (the base's own opener; "such" names the implant of the paragraph before, not a cause).
+
+## Guide problems
+
+1. **Closing sentences after a list.** R-PARA step 2 forbids a paragraph opening on "This"; R-LIST step 4
+   keeps the closing sentence as prose after the list, and the guide's own example opens "Both are …".
+   076's "These are the reasons …" follows that example. The guide could say that a list's closing
+   sentence may open on a pronoun that names the list's items.
+2. **Units in a rule table whose rows differ in unit.** R-TABLE step 4 puts units in the header; 081 and
+   085 have µm rows and µm² rows. Moving "µm²" to the header made `check_preserved` report `LOST numbers:
+   '²'` (it tokenises the superscript as a number), so the two area cells keep their unit, joined by a
+   non-breaking space as on 018. A guide line (or a tool change that treats a unit superscript as part of
+   its unit) would settle it.
+3. **The 30-word item lead.** §1 limits the lead sentence only when the item has sub-bullets; R-PARA step 4
+   says 30 words for any item over 60 words. The batch followed step 4 where a seam existed; the guide
+   could state which applies.
+4. **Leading hedges at a split.** R-SENTENCE step 5 is written for trailing hedges and markers. 083's
+   "On that reading, …" governed two clauses; the batch repeated it on the second sentence. Saying that
+   step 5 applies to a leading hedge too would make this routine.
+5. **Measurement artefact.** `measure5.py`'s splitter (and this batch's copy of it) reads a bold run-in
+   label ending "**" as part of the next sentence, so "**Label.** Sentence" is counted as one sentence
+   with the label's words; three flags in this batch were only that. (The same family as §8 item 12.)
+6. **Gate cost.** `gen_figures --check` takes about eight minutes per run here and the `-W` build about
+   the same; per-page runs of both dominate the batch's time. Where no figure is touched, running
+   `gen_figures --check` at the end of the batch would lose nothing.
+7. **R-TOOLS with no verb to drop.** On 079, 083, 086 the base gives SkyWater's list entry as a bare
+   quotation after the tool name (no "SkyWater lists"). `*SkyWater says:*` is followed by the quotation
+   alone rather than an added "lists"; the guide's verb-first rule does not cover this case.
+
+## Content problems for the owner
+
+None was fixed here; each is recorded as found.
+
+1. **079 lead against step 5 (from the S6 figure notes).** The base lead: "… and stops on the poly, leaving
+   bare polysilicon exactly "under licon1 areas"" (now "`NPCME` stops on the poly, …"); step 5: "A few
+   nanometres of poly loss and a damaged layer of the kind Oehrlein reviewed are unavoidable". The
+   figure agent judged this not a contradiction (the figure draws no loss and says so); both texts are
+   kept verbatim.
+2. **081 "Two proximity effects follow from a high-dose implant edge in resist."** The paragraph then
+   describes one mechanism (lateral scatter from the resist edge, with its well-edge version and its
+   layout consequences); the second effect is not named. The owner may want to name it or say "One".
+3. **081 psd.10b against 085 nsd.10a.** 081 gives "minimum area 0.255 µm² (psd.10b)"; 085 gives "minimum
+   area 0.265 µm² (nsd.10a)", with the same 0.265 µm² for the minimum hole area on both. The rules are
+   shared under one heading; whether the rule ids (10a/10b) and the two area values are both right is
+   worth one look at the periphery rules.
+4. **083 repeats the 8250 list entry.** Why quotes "Axcelis 8250 Mid current B11, BF2, As, ESC chuck, E
+   shower, 1e11 to 1e14, 0-60 deg tilt" and Machines likely used quotes "B11, BF2, As, ESC chuck, E
+   shower, 1e11 to 1e14, 0-60 deg tilt". R-REPEAT was not applied (the copies differ and the Why
+   argument rests on its copy); the owner may prefer a pointer.
+5. **082/086 test-tile structures.** 082 describes "two 25.05-square "p+ resistor" structures", 086
+   "the test tile's 25-square "n+ resistor" structures". If both are the same drawn geometry the two
+   pages give it differently; kept as written.
 
 ## Pages
 

@@ -32,7 +32,7 @@
 at {ref}`NPCM <step-078>`, it removes the dielectric cap standing on
 the poly. The cap is whatever remains of the {ref}`POC <step-059>` oxide and the
 {ref}`GATENIT <step-058>` nitride, about 0.2 µm of it after the spacer
-etch on our reading of the PDK's "poly cap after SPE".[^pdk-03] It
+etch on our reading of the PDK's "poly cap after SPE".[^pdk-03] `NPCME`
 stops on the poly, leaving bare polysilicon exactly "under licon1
 areas".[^pdk-06]
 
