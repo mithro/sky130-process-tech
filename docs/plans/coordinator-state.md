@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-steps-076-088` | W2 batch 6 (spacers and source/drain) — Opus writer; the last launch before the quota pause (uses the remaining headroom under the 75-point cap) | Opus | writing |
+| (none — paused for quota until 2026-10-01 10:00 UTC) | | | |
 
 Quota pause: the project's share of the weekly quota is about 63 of the 75-point cap (2026-09-26). No new
 agent is launched until the reset on 2026-10-01 10:00 UTC; the mask batch finishes, gets its Opus review
