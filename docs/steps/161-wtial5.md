@@ -10,6 +10,25 @@
 | **Previous step** | {ref}`VIM4E <step-160>` |
 | **Next step** | {ref}`MM5 <step-162>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** sputters the metal-5 film stack, the top metal of SKY130 — a
+  refractory underlayer, a thick aluminium–copper alloy and a
+  titanium–tungsten cap.
+* **Why:** metal 5 is the top routing level and the interface to the
+  package; we read it as also filling the via-4 holes (inference).
+* **Public numbers:** `metal5` 1.26 µm on the stack diagram;[^pdk-04]
+  `RSM5` 28.5 mΩ/sq;[^pdk-07] 1.600 µm width and space (m5.1,
+  m5.2).[^pdk-periph]
+* **Likely SkyWater tool:** AMAT PVD Metal platform — **strong** for the
+  vendor and the films; the platform model, the underlayer and any hot
+  or high-pressure fill capability are **inferences** or **not
+  public**.[^skw-01]
+* **Not public:** the metal-5 films and their thicknesses, the cap, and
+  how via 4 is filled (→ Open questions).
+:::
+
 ## What this step is
 
 `WTIAL5` deposits the metal-5 film stack — the top metal of SKY130,
@@ -17,9 +36,11 @@ which carries power, wide buses, inductors and the {term}`bond pads <bond pad>`.
 cap oxide of {ref}`NCAPOX6 <step-158>`, and into the open via-4 holes
 just etched at {ref}`VIM4E <step-160>`, a sputtering {term}`cluster tool` lays
 down, in one vacuum sequence on our reading, a refractory underlayer, a
-thick aluminium–copper alloy and a titanium–tungsten cap; the
+thick aluminium–copper alloy and a titanium–tungsten cap.
+
+The
 {ref}`MM5 <step-162>` mask and {ref}`MM5E <step-163>` etch then pattern
-it into the `met5` layer (GDS 72:20, "Metal 5").[^pdk-06] The PDK's
+the stack into the `met5` layer (GDS 72:20, "Metal 5").[^pdk-06] The PDK's
 background page describes the technology as having "5 levels of
 metal (p - penta)",[^pdk-02] and its layer table defines the later opening
 over metal-5 pads, `pad` (76:20), "Passivation cut (opening over
@@ -33,23 +54,29 @@ pads)".[^pdk-06]
 Before, the open via-4 holes; after, the metal-5 stack over the whole wafer and into the holes: a thin underlayer, lining the oxide, the walls and the floors, a thick aluminium–copper alloy that closes each hole, and a cap, with a shallow dimple over each hole. No public source states how via 4 is filled; the page reads the holes as filled by the metal-5 stack itself (an inference), and which technique does it — a thick, conventionally sputtered film, a heated or biased deposition, or a high-pressure fill — is not public: the drawn profile, each film growing with one thickness everywhere, only illustrates that reading. No public source gives the metal-5 films either; the page describes a Ti or TiW underlayer, some 1.2 µm of Al–Cu and a TiW cap, the cap read as TiW because the 2014 S8P stack change excluded "top metal layers"[^cyp-qtp-123907] (inferences; the overview of the metal cap sets out the evidence), and the figure draws every Ti, TiN and TiW film in one colour. The PDK's stack diagram gives metal 5 as 1.26 µm against 0.845 µm for metal 4,[^pdk-04] and it is drawn half as thick again, as it is there; on the page the stack is more than twice as thick as the via is deep, and it is drawn a little under twice as thick. The lower part of the slice is cut off: the drawing starts inside the oxide under metal 3. The metal-4 line and the capacitors, the plugs and their liners and the oxides are drawn but not labelled, except, in the upper panel, the metal cap film. Not to scale.
 :::
 
+### What the public record shows
+
 The PDK's numbers for metal 5 are larger than for any level below. The
 process stack diagram labels `metal5` 1.26 µm, with its bottom at
-5.3711 µm,[^pdk-04] and Edwards's slides repeat the 1.26 µm;[^ann-16]
-the assumptions table gives "Metal5 thickness for antenna ratio
+5.3711 µm,[^pdk-04] and Edwards's slides repeat the 1.26 µm.[^ann-16]
+The assumptions table gives "Metal5 thickness for antenna ratio
 calculation" as 1.2 µm for "S8P*/SP8P* with 1.2um thick metal" and 2 µm
-for "S8P*/SP8P* with 2um thick metal";[^pdk-03] the antenna chapter's
+for "S8P*/SP8P* with 2um thick metal".[^pdk-03]
+
+The antenna chapter's
 Table Ig, for "S8P12-10R*/S8PIR-10R/S8PF-10R*", gives 1.200 µm in its
 `met5.1` row, while Table Ie, for "S8P-5R/SP8P-5R/S8P-10R*", has no
 `met5` row and gives 2.000 µm in a row labelled
-`waffle_chip`;[^pdk-11] and the device page gives `RSM5` 28.5 mΩ/sq
+`waffle_chip`.[^pdk-11] The device page gives `RSM5` 28.5 mΩ/sq
 (limits 21.2–35.8), which the extraction table rounds to
 29 mΩ/sq.[^pdk-07][^pdk-08] On the S8PIR\* reading set out at
-{ref}`MM5 <step-162>` the 1.2 µm table applies (inference). About
+{ref}`MM5 <step-162>` the 1.2 µm table applies (inference).
+
+About
 1.2 µm of Al–Cu at 28.5 mΩ/sq implies a resistivity of about
 3.4 µΩ·cm, within the range expected for sputtered Al–0.5%Cu (typical
-industry value;[^txt-02] our arithmetic), whereas a 2 µm film at the
-same sheet resistance would imply 5.7 µΩ·cm, too high for the alloy; the
+industry value;[^txt-02] our arithmetic). A 2 µm film at the
+same sheet resistance would imply 5.7 µΩ·cm, too high for the alloy (our arithmetic). The
 arithmetic agrees with that reading (inference). The metal-5 design
 rules are coarse: 1.600 µm width and space (m5.1, m5.2), a 4.000 µm²
 minimum area (m5.4, whose probe-pad exemption excludes
@@ -62,25 +89,31 @@ three-metal processes.[^cyp-qtp-113005][^cyp-qtp-123907] One line in
 them speaks about the SKY130 family directly: the March 2014 report
 records the S8P qualification as a "Metal Stack Change from Ti/AlCu/TiW
 to Ti/TiN/ALCu/Ti/TiN, **excluding top metal
-layers**",[^cyp-qtp-123907] so on the reading that SKY130's metal 5 is
+layers**".[^cyp-qtp-123907] So on the reading that SKY130's metal 5 is
 such a top metal layer, the TiW-capped stack described here is the one
-that change left in place (inference). The same report shows what the
+that change left in place (inference).
+
+The same report shows what the
 exclusion looked like in its own worked example: the S8DI top metal
 stayed "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW" — TiW both under
 and over the aluminium — while its two thin levels moved to
 "150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN".[^cyp-qtp-123907]
 That top metal is a 2.2 µm stack, of the thickness class of the PDK's
-2 µm antenna entry rather than of the 1.2 µm film read here. This
+2 µm antenna entry rather than of the 1.2 µm film read here.
+
+This
 reference describes metal 5 as a Ti or TiW underlayer, some 1.2 µm of
-Al–Cu and a TiW cap (inference: the S8P line above, SkyWater's PVD film
+Al–Cu and a TiW cap. (Inference: the S8P line above, SkyWater's PVD film
 list, which includes "Aluminum both pure and Cu doped", "TiW" and
 "Collimated Ti",[^skw-01] and the fit of the PDK's thickness and sheet
-resistance to such a stack). Which levels of a five-metal S8P flow
+resistance to such a stack.) Which levels of a five-metal S8P flow
 count as "top metal layers" is not public; the evidence and the
 confidence attached to this reading at each level are set out under
 {ref}`overview-metal-cap`.
 
-**How is via 4 filled?** No public source states how via 4 is filled.
+### How is via 4 filled?
+
+No public source states how via 4 is filled.
 This reference describes no TiN liner, tungsten fill or plug polish for
 via 4, unlike vias 1–3 ({ref}`TIN5 <step-146>`, {ref}`WDEP5 <step-147>`,
 {ref}`WCMP5 <step-148>`); this deposition comes next. We read the via-4
@@ -89,15 +122,19 @@ and reasoning (all inference):
 
 * *The geometry suits it.* Via 4 is allowed only as a 0.800 µm square
   (via4.1, via4.3) and is 0.505 µm deep,[^pdk-periph][^pdk-04] an
-  {term}`aspect ratio` of about 0.63:1, while the metal-5 stack is more
-  than twice as thick as the via is deep (our arithmetic). Skelly and
+  {term}`aspect ratio` of about 0.63:1 (our arithmetic). The metal-5 stack is more
+  than twice as thick as the via is deep (our arithmetic).
+
+  Skelly and
   Gruenke found that 1.3 µm-wide, straight-walled vias 1 µm deep were
   planarised (100 % step coverage) by bias sputtering under conditions
   that gave only 60 % coverage in 2.8 µm vias, while unbiased
-  deposition gave 20 %;[^skelly-1986] their result is not a simple
+  deposition gave 20 %.[^skelly-1986] Their result is not a simple
   function of aspect ratio, and neither of their geometries is via 4's,
   so it shows that a hole of this class can be filled by sputtering,
-  not that this one is (inference). Taylor,
+  not that this one is (inference).
+
+  Taylor,
   Jain and Cale found that the step coverage of sputtered Al–Cu improves
   with temperature and lower deposition rate.[^taylor-1998] A single
   fixed via size lets one deposition recipe serve every via.
@@ -107,24 +144,29 @@ and reasoning (all inference):
   metal fills needs the metal to overlap its rim generously (inference).
 * *Established techniques exist.* {term}`Aluminium via fill <aluminium via fill>` was a production
   alternative to {term}`tungsten plugs <W plug>` in the 1990s, compared with them by Gn,
-  Liu and Guo:[^gn-1994] hot or {term}`reflow` sputtering — reviewed by Kikuta,
-  who notes that it avoids Al/W interfaces and the higher resistivity of
-  tungsten[^kikuta-1995] — and studied by Ono, Ushiku and Yoda (Al–Si
-  contact fill at 500–550 °C) and Nishimura, Yamada and Ogawa
-  (high-temperature Al–Si–Cu via fill), with Hariu et al. measuring the
-  {term}`electromigration` lifetime of Al–Cu/Ti films sputtered at 500 °C with
-  bias;[^ono-1990][^nishimura-1991][^hariu-1989]
-  the Applied Materials multistep process, which sputters a thin
-  aluminium layer at modest power, then continues at high power with
-  wafer bias until, in the patent's words, "the wafer temperature
-  reaches about 500° C., preferably about
-  400° C.";[^pat-al-multistep-amat] two-step fills, whose
-  deposition-time ratio Deshmukh related to via fill;[^deshmukh-2003]
-  and Electrotech's "Forcefill", which closes the via with sputtered
-  metal and then applies "temperatures in the range 350° C. to 650° C.
-  and pressures in excess of 3,000 p.s.i.",[^pat-forcefill-electrotech]
-  whose mechanism Dirks et al. and Janssen et al.
-  studied.[^dirks-1999][^janssen-1998] Tapered via walls, which the
+  Liu and Guo:[^gn-1994]
+
+  - hot or {term}`reflow` sputtering — reviewed by Kikuta,
+    who notes that it avoids Al/W interfaces and the higher resistivity of
+    tungsten[^kikuta-1995] — and studied by Ono, Ushiku and Yoda (Al–Si
+    contact fill at 500–550 °C) and Nishimura, Yamada and Ogawa
+    (high-temperature Al–Si–Cu via fill).[^ono-1990][^nishimura-1991] Hariu et al. measured the
+    {term}`electromigration` lifetime of Al–Cu/Ti films sputtered at 500 °C with
+    bias;[^hariu-1989]
+  - the Applied Materials multistep process, which sputters a thin
+    aluminium layer at modest power, then continues at high power with
+    wafer bias until, in the patent's words, "the wafer temperature
+    reaches about 500° C., preferably about
+    400° C.";[^pat-al-multistep-amat]
+  - two-step fills, whose
+    deposition-time ratio Deshmukh related to via fill;[^deshmukh-2003]
+  - Electrotech's "Forcefill", which closes the via with sputtered
+    metal and then applies "temperatures in the range 350° C. to 650° C.
+    and pressures in excess of 3,000 p.s.i.",[^pat-forcefill-electrotech]
+    whose mechanism Dirks et al. and Janssen et al.
+    studied.[^dirks-1999][^janssen-1998]
+
+  Tapered via walls, which the
   Motorola and Chartered patents make to improve metal step
   coverage,[^pat-sloped-motorola][^pat-taper-chartered] ease any of
   these.
@@ -138,23 +180,31 @@ dimple over each via, a heated or biased deposition, or a high-pressure
 fill — SKY130 uses is not public. A hot fill near 500 °C would also
 expose both {term}`MiM capacitor` levels and four aluminium levels to a
 temperature above the 400–450 °C usually allowed for an aluminium back
-end (industry-typical[^txt-05]), which argues for the gentler options
+end (industry-typical[^txt-05]). That argues for the gentler options
 (the Applied Materials patent itself prefers stopping near
 400 °C[^pat-al-multistep-amat]) (inference).
 
 ## Step category
 
 `WTIAL5` is a {ref}`Thin-film deposition <category-deposition>` step of
-the *PVD, multi-layer metal* class; {ref}`TIAL6 <step-112>` sets out the
+the *PVD, multi-layer metal* class.
+
+{ref}`TIAL6 <step-112>` sets out the
 sputtering of Ti, Al–Cu and Ti:W films, and {ref}`WTIAL3 <step-134>` what a
-thick film changes. Two things are specific to this instance. It is the
-thickest metal deposition of the flow, about 1.5 times metal 3 and 4
-(1.26 µm against 0.845 µm[^pdk-04]), with the longer deposition, larger
-grains, higher stress and {term}`hillock` tendency that go with it. And it is
-the only metal level in the flow deposited onto open vias rather than
-onto polished plugs, so its underlayer and early aluminium must cover
-the via walls and floor as well as the flat oxide (inference from the
-reading above and the via-4 rules[^pdk-periph]).
+thick film changes.
+
+Two things are specific to this instance:
+
+* It is the
+  thickest metal deposition of the flow, about 1.5 times metal 3 and 4
+  (1.26 µm against 0.845 µm[^pdk-04]), with the longer deposition, larger
+  grains, higher stress and {term}`hillock` tendency that go with it.
+* It is
+  the only metal level in the flow deposited onto open vias rather than
+  onto polished plugs (inference from the reading above and the via-4
+  rules[^pdk-periph]). So its underlayer and early aluminium must cover
+  the via walls and floor as well as the flat oxide (inference from the
+  reading above and the via-4 rules[^pdk-periph]).
 
 ## Why this step exists
 
@@ -162,7 +212,7 @@ Metal 5 is the top routing level and the interface to the package:
 
 * **Low resistance for power and long lines.** At 28.5 mΩ/sq[^pdk-07]
   metal 5 has about 60 % of the sheet resistance of metals 3 and 4
-  (47 mΩ/sq[^pdk-08]); Bohr's argument that interconnect limits
+  (47 mΩ/sq[^pdk-08]). Bohr's argument that interconnect limits
   performance[^bohr-1995] and Stamper, Fuselier and Tian's account of
   wiring RC delay[^stamper-1998] explain why an aluminium back end puts
   its thickest metal on top, where the ITRS 2001 interconnect chapter
@@ -176,30 +226,39 @@ Metal 5 is the top routing level and the interface to the package:
   level, which the PDK's nomenclature page lists as "s8phirs", "The base
   process plus rdl layer and rdl metal inductors".[^pdk-previous]
 * **Bond pads.** Wire bonds and probe needles land on metal 5 through
-  the `pad` opening (pad.2 spacing 1.270 µm).[^pdk-periph][^pdk-06] The
+  the `pad` opening (pad.2 spacing 1.270 µm).[^pdk-periph][^pdk-06]
+
+  The
   pad metal and the oxide beneath it take the mechanical load of probing
-  and bonding: Hunter et al. used wire bonding to reveal cracks from wafer probing in
-  aluminium bond pads over SiO₂,[^hunter-2012] Marsh et al. compared
-  copper ball bonds on two pad aluminium thicknesses,[^marsh-2016] and
-  Hess et al. evaluated the wire-bond and package-stress reliability of
-  bond-over-active pad layouts for 0.13 µm CMOS.[^hess-2003] If the cap is TiW it must be removed from the pad at the
+  and bonding:
+
+  - Hunter et al. used wire bonding to reveal cracks from wafer probing in
+    aluminium bond pads over SiO₂;[^hunter-2012]
+  - Marsh et al. compared
+    copper ball bonds on two pad aluminium thicknesses;[^marsh-2016]
+  - Hess et al. evaluated the wire-bond and package-stress reliability of
+    bond-over-active pad layouts for 0.13 µm CMOS.[^hess-2003]
+
+  If the cap is TiW it must be removed from the pad at the
   opening ({ref}`PDME <step-169>`); Danzl and McLaurin used hydrogen peroxide to remove a TiW
   anti-reflective coating from aluminium bond pads.[^danzl-1997]
 * **Filling via 4 and contacting the second capacitor.** On our reading
   above, this deposition also makes the via-4 connections to metal 4
-  and to the `cap2m` plates. Kwok et al. traced the shorter
+  and to the `cap2m` plates.
+
+  Kwok et al. traced the shorter
   electromigration lifetime of tungsten-stud chains to the break in
   copper supply at the Al–Cu/W interface,[^kwok-1990] an interface an
-  aluminium-filled via does not have;[^kikuta-1995] Matsuoka et al.,
+  aluminium-filled via does not have.[^kikuta-1995] Matsuoka et al.,
   however, found tungsten-filled vias more reliable than unfilled vias,
   whose lifetime fell with diameter,[^matsuoka-1990] so the benefit
   depends on the aluminium filling the hole completely (inference).
-* **Film functions.** Copper doping slows electromigration;[^ames-1970] a
-  refractory underlayer promotes (111) texture;[^knorr-1996] the TiW cap
+* **Film functions.** Copper doping slows electromigration.[^ames-1970] A
+  refractory underlayer promotes (111) texture.[^knorr-1996] The TiW cap
   suppresses hillocks and serves as the anti-reflective surface for
   {ref}`MM5 <step-162>`, the role Rocke and Schneegans documented for a
   titanium-nitride cap and which a Ti:W cap plays in the same way
-  (inference);[^rocke-1988] Chaudhari analysed hillock growth, which rises
+  (inference).[^rocke-1988] Chaudhari analysed hillock growth, which rises
   with film thickness.[^chaudhari-1974][^zlatanovic-1990]
 
 Without `WTIAL5` there is no top metal, no bond pads and no connection to
@@ -207,9 +266,9 @@ metal 4 or to the second capacitor.
 
 ## How it is typically performed
 
-An industry-generic thick top-metal deposition for a 200 mm, 130 nm-era
+*An industry-generic thick top-metal deposition for a 200 mm, 130 nm-era
 fab (SKY130's recipe is not public); the film-by-film account is at
-{ref}`TIAL6 <step-112>`.
+{ref}`TIAL6 <step-112>`.*
 
 1. **Cluster tool.** A multi-chamber PVD platform — SkyWater's "AMAT PVD
    Metal" with "Sputter etch, degas"[^skw-01] — so that {term}`degas`, pre-clean
@@ -222,23 +281,25 @@ fab (SKY130's recipe is not public); the film-by-film account is at
    polymer and oxide residue from the cap floors of the vias (industry
    practice[^txt-05]); on a `cap2m` plate the same etch must not thin the
    plate (inference).
-4. **Underlayer.** Ti or TiW; {term}`collimated titanium <collimated sputtering>`[^rossnagel-1991] places
+4. **Underlayer.** Ti or TiW. {term}`Collimated titanium <collimated sputtering>`[^rossnagel-1991] places
    more of the film on the via floor, and an underlayer changes the
    grain structure and via fill of the aluminium above it, as Pramanik
    and Jain found for sputtered aluminium and Lee and Rha for a CVD–PVD
    aluminium plug.[^pramanik-1990][^lee-2003]
 5. **Al–0.5%Cu, of the order of 1.2 µm.** Sputtered from an Al–Cu target
-   in one or more passes; for a via fill, a cooler first layer followed
+   in one or more passes.
+
+   For a via fill, a cooler first layer followed
    by a hotter or biased one (the multistep and cold/hot
    schemes[^pat-al-multistep-amat][^deshmukh-2003]) or a separate
    high-pressure step[^pat-forcefill-electrotech] are the published
-   options; grain size and texture follow the structure-zone
+   options. Grain size and texture follow the structure-zone
    relations.[^thornton-1974] Thickness inferred from the 1.26 µm
    stack[^pdk-04] and the 1.2 µm antenna value.[^pdk-03]
 6. **TiW cap.** From a Ti:W target;[^pat-tiw-hitachi] its thickness is
-   not public (the nearest public analogue is the 300 Å TiW cap on the
+   not public. (The nearest public analogue is the 300 Å TiW cap on the
    **top** metal of the three-metal S8DI stack, whose lower levels are
-   capped with 500 Å of TiN instead[^cyp-qtp-123907]).
+   capped with 500 Å of TiN instead.[^cyp-qtp-123907])
 7. **Metrology.** Sheet resistance by {term}`four-point probe` (the PDK's
    28.5 mΩ/sq[^pdk-07]); thickness by XRF or profilometry; reflectivity;
    stress by wafer bow — the largest of the flow; via-fill cross-sections
@@ -258,12 +319,15 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 ## Machines likely used at SkyWater
 
-* **AMAT PVD Metal platform.** SkyWater lists "AMAT PVD Metal" with
-  "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW",
-  "Collimated Ti" and other films.[^skw-01] Strength: **strong** for the
-  vendor and the films; the platform model (Endura[^amat-endura]), the
-  underlayer and any hot or high-pressure fill capability are
-  **inferences** or **not public**.
+* **AMAT PVD Metal platform**
+  - *SkyWater says:* lists "AMAT PVD Metal" with
+    "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW",
+    "Collimated Ti" and other films.[^skw-01]
+  - *Tool exists:* **strong** for the
+    vendor and the films.
+  - *Runs this step:* the platform model (Endura[^amat-endura]), the
+    underlayer and any hot or high-pressure fill capability are
+    **inferences** or **not public**.
 * **Metal etchers "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys, Al,
   TiW, TiN, Nb, Pt"**[^skw-01] name aluminium, TiW and TiN among the
   materials they etch, so the stack read here is etchable in the fab as
@@ -285,14 +349,14 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 ## Related steps and cross-references
 
 * Previous: {ref}`VIM4E <step-160>` (the vias it fills, on our reading).
-  Next: {ref}`MM5 <step-162>` (the mask) and {ref}`MM5E <step-163>` (the
+* Next: {ref}`MM5 <step-162>` (the mask) and {ref}`MM5E <step-163>` (the
   etch).
-* The surface it lands on: {ref}`NCAPOX6 <step-158>`; the metal-4 lines
-  and `cap2m` plates it contacts: {ref}`WTIAL4 <step-149>`,
+* Depends on: the surface it lands on, {ref}`NCAPOX6 <step-158>`; the metal-4 lines
+  and `cap2m` plates it contacts, {ref}`WTIAL4 <step-149>`,
   {ref}`CAPTIW2 <step-151>`.
-* The passivation and pad opening above it: {ref}`NFUSOX <step-164>`,
+* Feeds: the passivation and pad opening above it, {ref}`NFUSOX <step-164>`,
   {ref}`PDM <step-168>`, {ref}`PDME <step-169>`.
-* The thinner stacks: {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`,
+* Same category: the thinner stacks, {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`,
   {ref}`WTIAL3 <step-134>`, {ref}`WTIAL4 <step-149>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
@@ -391,14 +455,16 @@ fab (SKY130's recipe is not public); the film-by-film account is at
 
 ## Open questions
 
-* **How via 4 is filled.** No public source states it; this reference
+* **How via 4 is filled.** No public source states it. This reference
   reads the vias as filled by the metal-5 stack — by thick sputtering,
   heated or biased deposition, or a high-pressure step — as an inference
   from the via-4 and metal-5 rules and the published fill techniques,
   and describes no separate taper or fill module.
 * **Metal-5 thickness.** The stack diagram and Edwards's slides give
   1.26 µm,[^pdk-04][^ann-16] the assumptions and antenna tables 1.2 µm or
-  2 µm by flow;[^pdk-03][^pdk-11] that the 1.2 µm "S8PIR-10R" table
+  2 µm by flow.[^pdk-03][^pdk-11]
+
+  That the 1.2 µm "S8PIR-10R" table
   applies to SKY130 is our reading (see {ref}`MM5 <step-162>`), and
   whether the 1.26 µm includes the refractory layers is not public. The
   1.26 µm exceeds the 1.2 µm antenna value by 600 Å, which matches
@@ -414,7 +480,7 @@ fab (SKY130's recipe is not public); the film-by-film account is at
   the minimum-CD table and periphery rules both give 1.6 µm, is our
   reading of the background page;[^pdk-02] neither table names SKY130's
   flow.
-* The underlayer material, film thicknesses, deposition temperatures and
+* **Films and conditions.** The underlayer material, film thicknesses, deposition temperatures and
   whether the deposition is one pass or several are not public.
 
 <!-- footnotes -->

@@ -296,3 +296,56 @@ page. No edit of any kind inside an in-force `{dropdown}`.
   questions, `git show 0d0692de:docs/steps/160-vim4e.md | grep -c` → 2); the lead copy now stands as
   its own paragraph, where the tool's splitter sees it. Nothing was duplicated. `--strict-words`
   LOST: `strength`×2 (and `and`×2, `And`). cov: one flag, pairing noise. inv: OK.
+
+### 161 WTIAL5 — done (base `c7ecd398`)
+
+* Lead (base 101, within 120, first sentence 21): two paragraphs (61, 41) split at the semicolon
+  after "titanium–tungsten cap"; the following "the MM5 mask and MM5E etch then pattern it" → "The MM5
+  mask … then pattern the stack" (declared restored noun: after the split the nearest noun to "it" is
+  the cap, while the base's "it" is the film stack — the 149 M1 class). **Listed under note ¹ of
+  §4.1:** the lead goes 101 → 102, within 120; no zero-word form keeps the referent.
+* R-H3: `### What the public record shows` after the figure caption over the PDK and Cypress
+  passage (≈ 420 words, public record ending in the page's hedged stack reading, 134/149 form); the
+  bold run-in `**How is via 4 filled?**` → `### How is via 4 filled?` (R-H3 step 4).
+* PDK paragraph: the 86-word sentence split at its three semicolons (words `and` lost); the
+  resistivity sentence split at ", whereas" (word `whereas` lost) with "(our arithmetic)" repeated on
+  the 5.7 µΩ·cm half (declared; the base's hedge covered the whole comparison) and at its semicolon.
+  The rule sentence stays prose (149 form).
+* Cypress paragraph: split at ", so on the reading …" ("So on the reading …", its "(inference)"
+  in its own half; the first half is the cited quotation) and into three paragraphs; the 29-word
+  hedge "(inference: the S8P line above, SkyWater's PVD film list, …[^skw-01] and the fit …)" a
+  parenthetical sentence directly after the sentence it qualifies.
+* Via-4 bullets: geometry item — "an aspect ratio of about 0.63:1, while the metal-5 stack …
+  (our arithmetic)" split with "(our arithmetic)" repeated on the aspect-ratio half (declared; word
+  `while` lost); Skelly and Taylor as continuation paragraphs (159 form). Techniques item: its
+  142-word colon-and-semicolon enumeration → lead "… by Gn, Liu and Guo:[^gn-1994]" and four
+  sub-bullets in base order (word `and` before Electrotech lost), the tapered-walls sentence a
+  continuation paragraph. The first sub-bullet (59 words) split before Hariu: "(… via
+  fill).[^ono-1990][^nishimura-1991] Hariu et al. measured the electromigration lifetime …
+  bias;[^hariu-1989]" — the base's three-marker run divided among the three studies it cites, each
+  marker with its own author; "measuring" → "measured" (the only verb-form change of the batch; no
+  other form keeps the sub-bullet under 45 words).
+* Closing paragraph: "…, which argues for the gentler options (…) (inference)" → ". That argues …
+  (inference)" (which → That); the "(inference)" stays on the argument: the first half carries its
+  own hedge and citation ("industry-typical[^txt-05]") (R-SENTENCE step 5, second paragraph).
+* R-CATEGORY (149 form): classification sentence alone; TIAL6/WTIAL3 pointer paragraph; "Two things
+  are specific …" → colon and two bullets ("And" dropped). The open-vias bullet (46 words) split at
+  ", so its underlayer …"; its trailing "(inference from the reading above and the via-4
+  rules[^pdk-periph])" repeated on the first half (declared hedge and marker: that half *is* the
+  via-fill reading).
+* Why: resistance item split at its semicolon; bond-pad item: the three studies after the colon as
+  sub-bullets (step-page skeleton, "studies as sub-bullets"), the TiW-cap sentence as a continuation
+  paragraph; via-fill item split at its semicolon ("Matsuoka et al., however, found …" keeps
+  "however" after its first phrase); film-functions item split at its semicolons.
+* How: scope sentence italic; step 4 and step 5 split at their semicolons (step 5 with a
+  continuation paragraph); step 6's 30-word gloss "(The nearest public analogue … instead.[^cyp-qtp-123907])"
+  a parenthetical sentence.
+* R-TOOLS (149 form). R-RELATED (Previous · Next · Depends on · Feeds · Same category · Category
+  page). R-OPENQ: via-fill bullet split at its semicolon; thickness bullet with a continuation
+  paragraph; a label on the last bullet. Glance box (149 form; the via-fill reading kept as "we read
+  it as also filling the via-4 holes (inference)").
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared hedges
+  ("our arithmetic"×2, "(inference …)" and `pdk-periph` on the open-vias half), the H3s and labels;
+  every `number_order` change REGROUPED, read. `--strict-words` LOST: `measuring`, `strength`,
+  `whereas` (and `which`, `while`, `with`). cov: two flags, pairing noise (the glance tool line; the
+  quick-facts table). inv: OK.
