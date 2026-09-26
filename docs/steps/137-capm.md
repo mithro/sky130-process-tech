@@ -120,7 +120,7 @@ What the layer shares with the metal masks
 is the substrate problem — a reflective refractory film that
 demands reflectivity control — and what it shares with no other
 layer is that its {term}`CD` error translates directly into a device
-parameter. A 0.1 µm bias on a 2 µm plate is a 10 % change in
+parameter (inference from the model form). A 0.1 µm bias on a 2 µm plate is a 10 % change in
 capacitance, so the mask-to-etch bias must be characterised and
 absorbed in the model's `CMIMP` periphery term (inference from the
 model form[^pdk-07]).
@@ -271,13 +271,12 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):*
 * Next:
   {ref}`CAPME <step-138>` (the plate etch, which on our reading
   includes the strip).
-* Same module: the
-  bottom plate patterned afterwards, {ref}`MM3 <step-139>`,
-  {ref}`MM3E <step-140>`.
-* Depends on: the dielectric under the plate, {ref}`CAPILD <step-135>`.
-* Feeds: the via that must land inside the plate, {ref}`VIM3 <step-144>`.
-* Same category: the second capacitor's mask,
+* Same module: the second capacitor's mask,
   {ref}`CAP2M <step-152>`.
+* Depends on: the dielectric under the plate, {ref}`CAPILD <step-135>`.
+* Feeds: the
+  bottom plate patterned afterwards, {ref}`MM3 <step-139>`,
+  {ref}`MM3E <step-140>`; the via that must land inside the plate, {ref}`VIM3 <step-144>`.
 * Mask: {ref}`CAPM <mask-capm>` — the mask's layers, plates,
   renders and design rules; previous mask, {ref}`VIM2 <step-129>`; next mask,
   {ref}`MM3 <step-139>`.
