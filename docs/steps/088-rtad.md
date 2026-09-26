@@ -221,10 +221,6 @@ and diode in the PDK depends on it.
     Heatpulse being the only RTA on SkyWater's list, and a source/drain
     activation is the archetypal use of such a tool.
 
-  The Heatpulse 8808 is a
-  single-wafer RTA with the inert ambients and the temperature reach
-  this step needs.
-
   Reseller documentation for the
   Heatpulse 8800/8808
   family gives "Recommended steady-state temperature range: 400 –
@@ -236,6 +232,10 @@ and diode in the PDK depends on it.
   400–1200 °C range, a programmable 1–180 °C/s ramp-up and a maximum
   ramp-down of 150 °C/s (its Heatpulse 4100 section differs:
   400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
+
+  The Heatpulse 8808 is a
+  single-wafer RTA with the inert ambients and the temperature reach
+  this step needs.
 * **Aviza furnaces** ("Ar anneal to 1150C", "N2 anneal to
   1150C"[^skw-01]) are the batch alternative but, for the reasons
   above, an unlikely one for this step.

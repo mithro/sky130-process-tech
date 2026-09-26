@@ -934,6 +934,8 @@ None was fixed here; each is recorded as found.
   (the dash material "a single-wafer RTA with the inert ambients …") is the first continuation, with its
   noun ("The Heatpulse 8808 is …", R-TOOLS step 2); the reseller, blog and specification-PDF sentences
   follow unchanged except that "…applications,[^ag-8800] and a vendor blog post" became two sentences.
+  The reseller paragraph comes directly after the grades, then the gloss (review L4: in the base a colon
+  tied the grade's reason to that evidence).
   Aviza: pilot-form head, *Tool exists:* strong, *Runs this step:* weak.
 * **R-RELATED.** Previous/Next split; "The cap during the anneal … the spacers the dopant meets" →
   `Same module:` (SPOX, SPNIT); "Earlier RTAs" → `Same category:` (RTAI and TIPRTAD are Anneal steps);
