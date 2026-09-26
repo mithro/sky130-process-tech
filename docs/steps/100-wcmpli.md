@@ -10,19 +10,39 @@
 | **Previous step** | {ref}`WDEP <step-099>` |
 | **Next step** | {ref}`LITIN <step-101>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** removes the blanket tungsten and the Ti/TiN liner from the
+  field, leaving tungsten only inside the contact holes.
+* **Why:** the blanket tungsten is a short circuit across the whole
+  wafer; it has to go.
+* **Public numbers:** none for the polish; the local interconnect must
+  enclose a licon by 0.080 µm on one of two adjacent sides
+  (li.5).[^pdk-periph]
+* **Likely SkyWater tool:** Applied Materials Mirra CMP — **strong** (the
+  tool and its tungsten polishes); **inference** (assignment to this
+  step).[^skw-01]
+* **Not public:** the slurry, the endpoint method, the over-polish, and
+  the plug recess and oxide erosion the polish leaves (→ Open
+  questions).
+:::
+
 ## What this step is
 
-`WCMPLI` — tungsten {term}`CMP` for the {term}`local interconnect` — removes the
+`WCMPLI`, tungsten {term}`CMP` for the {term}`local interconnect`, removes the
 blanket tungsten of {ref}`WDEP <step-099>` and the Ti/TiN {term}`liner` of
-{ref}`TI/TIN1 <step-097>` from the field, leaving tungsten only
+{ref}`TI/TIN1 <step-097>` from the field. It leaves tungsten only
 inside the contact holes. The wafer is polished face-down in an
 acidic, oxidising slurry (industry-typical) until the oxide of
 {ref}`NCAPOX <step-091>` is exposed everywhere and every `licon1` is
 an isolated
-{term}`W plug` flush with the dielectric. The surface that results —
+{term}`W plug` flush with the dielectric.
+
+The surface that results —
 planar oxide studded with tungsten discs — is the surface on which
 the titanium-nitride local interconnect ({ref}`LITIN <step-101>`) is
-deposited and patterned; the later tungsten polishes {ref}`WCMP2 <step-111>` to
+deposited and patterned. The later tungsten polishes {ref}`WCMP2 <step-111>` to
 {ref}`WCMP5 <step-148>` do the same for the contact and {term}`via` plugs
 under each metal level.
 
@@ -35,23 +55,31 @@ A close-up of the 1.8 V source/drain contact, beside the gate. Before, the tungs
 :::
 
 The PDK does not describe the polish, but its consequences are in
-the rules: the local interconnect must enclose a licon by 0.080 µm
+the rules. The local interconnect must enclose a licon by 0.080 µm
 on one of two adjacent sides (li.5),[^pdk-periph] and "Licon1 must
 overlap li1" (licon.4),[^pdk-periph] which is the layout expression
 of the requirement that every plug be fully covered by the film that
-lands on it. SkyWater's capability list names "AMAT Mirra CMP" with
-"tungsten" and "high selectivity tungsten" among its
-processes.[^skw-01]
+lands on it. SkyWater's capability list is quoted under Machines
+likely used at SkyWater.[^skw-01]
 
 ## Step category
 
 `WCMPLI` is a {ref}`Chemical-mechanical planarisation <category-cmp>`
 step of the *tungsten* type, which the category page contrasts with
-the {term}`STI` and oxide polishes: the film removed is tungsten and its
-Ti/TiN liner, the stop is the inter-level oxide, the slurry is
-alumina or silica with an oxidiser at pH 2–4, and the failure modes
-are {term}`plug recess`, oxide {term}`erosion` in dense arrays, tungsten "coring"
-and corrosion. It is the first metal polish in the flow. What is
+the {term}`STI` and oxide polishes:
+
+* the film removed is tungsten and its
+  Ti/TiN liner;
+* the stop is the inter-level oxide;
+* the slurry is
+  alumina or silica with an oxidiser at pH 2–4;
+* the failure modes
+  are {term}`plug recess`, oxide {term}`erosion` in dense arrays, tungsten "coring"
+  and corrosion.
+
+`WCMPLI` is the first metal polish in the flow.
+
+What is
 specific to this instance is what lies under the oxide it stops on:
 on the cap-stop reading of {ref}`CMPP <step-090>`, only the {term}`cap oxide`
 separates the polish from the gate caps, so erosion here is erosion
@@ -66,7 +94,9 @@ has to go. The choice of polish over the older plasma etch-back, and
 the demands on it:
 
 * **Etch-back versus polish.** Kaanta et al.'s original tungsten-stud
-  scheme used planarisation,[^kaanta-1987] and Kaufman et al. at IBM
+  scheme used planarisation.[^kaanta-1987]
+
+  Kaufman et al. at IBM
   showed in 1991 how tungsten can be polished by a cycle of chemical
   oxidation and mechanical abrasion — the oxidiser forms a thin WO₃
   that the abrasive removes, so that the polish is self-limiting on
@@ -74,7 +104,9 @@ the demands on it:
   etch-back (SF₆/Ar) leaves plug recess wherever the etch reaches
   the seam and cannot planarise; CMP does both jobs.
 * **Chemistry.** Krishnan, Nalaskowski and Cook review the slurry
-  chemistry;[^rev-02] Stein, Hetherington and Cecchi worked out the
+  chemistry.[^rev-02]
+
+  Stein, Hetherington and Cecchi worked out the
   kinetics in potassium-iodate slurries,[^stein-1999] Elbel et al.
   the tungsten polish generally,[^elbel-1998] and Bielmann et al.
   the effect of abrasive particle size.[^bielmann-1999] The
@@ -86,7 +118,9 @@ the demands on it:
   faster than the surrounding oxide once the field clears, so plugs
   recess; dense plug arrays erode the oxide around them. Both
   translate into topography under the local interconnect and into
-  higher, more variable contact resistance; Wang et al. characterise
+  higher, more variable contact resistance.
+
+  Wang et al. characterise
   an integrated tungsten CMP for plugs,[^wang-2002-wcmp] and Lee et
   al. optimised a plug polish across consumables.[^lee-2001-wcmp]
   The "high selectivity tungsten" process SkyWater lists[^skw-01] is,
@@ -94,7 +128,9 @@ the demands on it:
   these effects.
 * **Endpoint.** Because the tungsten is opaque and the oxide is not,
   and because the motor torque changes as the metal clears, tungsten
-  CMP is one of the easier polishes to {term}`endpoint`: Sue, Lültzen and
+  CMP is one of the easier polishes to {term}`endpoint`.
+
+  Sue, Lültzen and
   Gonzales describe tungsten CMP endpoint detection,[^sue-1999] and
   Bibby and Holland's 1998 paper, by its abstract, discusses "many of
   the approaches that have been published".[^bibby-1998] The over-polish
@@ -110,8 +146,8 @@ would be deposited on a continuous sheet of tungsten.
 
 ## How it is typically performed
 
-An industry-generic tungsten plug polish for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic tungsten plug polish for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 1. **Tool.** Rotary multi-platen polisher with a dedicated tungsten
    head or platen (tungsten and oxide slurries are not mixed),
@@ -122,12 +158,16 @@ fab (SKY130's recipe is not public):
    (typical industry chemistry[^rev-02][^stein-1999]); the tungsten
    removal rate follows the {term}`Preston equation` in pressure and
    velocity to first order.[^preston-1927]
-3. **Recipe.** A first platen removes the bulk tungsten at high
-   rate; a second clears the field, detects endpoint and removes the
-   Ti/TiN liner (which polishes more slowly than tungsten and
-   sometimes needs its own slurry); an over-polish sized to the
-   liner thickness plus margin; a final buff on a soft pad with
-   dilute slurry or DI water.
+3. **Recipe.**
+   1. A first platen removes the bulk tungsten at high
+      rate;
+   2. a second clears the field, detects endpoint and removes the
+      Ti/TiN liner, which polishes more slowly than tungsten and
+      sometimes needs its own slurry;
+   3. an over-polish sized to the
+      liner thickness plus margin;
+   4. a final buff on a soft pad with
+      dilute slurry or DI water.
 4. **Endpoint.** Motor-current or optical detection of the
    tungsten-to-oxide transition;[^sue-1999][^bibby-1998] the
    in-situ pad-window method of the Applied Materials
@@ -154,13 +194,18 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials Mirra CMP, tungsten.** SkyWater lists "AMAT
-  Mirra CMP" with "tungsten" and "high selectivity tungsten" among
-  its processes.[^skw-01] Strength: **strong** for the tool and its
-  tungsten polishes (SkyWater statement); assignment to this step is
-  an **inference** from the film, since the list names no steps (a
-  tungsten polish has no other purpose in this flow than the plug
-  levels); which of the two tungsten processes runs this step is not
+* **Applied Materials Mirra CMP, tungsten**
+  - *SkyWater says:* lists "AMAT
+    Mirra CMP" with "tungsten" and "high selectivity tungsten" among
+    its processes.[^skw-01]
+  - *Tool exists:* **strong** for the tool and its
+    tungsten polishes (SkyWater statement).
+  - *Runs this step:* assignment to this step is
+    an **inference** from the film, since the list names no steps. (A
+    tungsten polish has no other purpose in this flow than the plug
+    levels.)
+
+  Which of the two tungsten processes runs this step is not
   public.
 * **Post-CMP cleaning.** SkyWater lists the "SEZ223, Davinci"
   single-wafer tools with HF and DSP+HF chemistries, and the Mirra
@@ -168,7 +213,7 @@ fab (SKY130's recipe is not public):
   brush scrubber is not named on any public page (open question).
 * **Defect inspection — KLA AIT / SP1**, our reading of "AIT" and "SP1"
   in a SkyWater job posting's "SEM/AIT/KLA/SP1/EV300/1X".[^job-06]
-  Strength: medium.
+  - *Tool exists:* medium.
 
 ## Resources required
 
@@ -187,14 +232,14 @@ fab (SKY130's recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`WDEP <step-099>` (the blanket tungsten). Next:
+* Previous: {ref}`WDEP <step-099>` (the blanket tungsten).
+* Next:
   {ref}`LITIN <step-101>` (the TiN film deposited on the polished
   plugs), then {ref}`LI1M <step-102>` and {ref}`LI1ME <step-103>`.
-* The liner removed from the field: {ref}`TI/TIN1 <step-097>`; the
-  oxide the polish stops on: {ref}`NCAPOX <step-091>`.
-* The earlier polish that set the surface: {ref}`CMPP <step-090>`;
-  the STI polish: {ref}`CMPNIT <step-012>`.
-* Later tungsten polishes: {ref}`WCMP2 <step-111>`,
+* Depends on: the liner removed from the field, {ref}`TI/TIN1 <step-097>`; the
+  oxide the polish stops on, {ref}`NCAPOX <step-091>`.
+* Same category: the earlier polish that set the surface, {ref}`CMPP <step-090>`;
+  the STI polish, {ref}`CMPNIT <step-012>`; later tungsten polishes, {ref}`WCMP2 <step-111>`,
   {ref}`WCMP3 <step-122>`, {ref}`WCMP4 <step-133>`,
   {ref}`WCMP5 <step-148>`.
 * Category page: {ref}`Chemical-mechanical planarisation <category-cmp>`.
@@ -266,13 +311,13 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* The slurry (abrasive, oxidiser), the liner-removal strategy, the
+* **Slurry and endpoint.** The slurry (abrasive, oxidiser), the liner-removal strategy, the
   endpoint method and the over-polish are not public.
-* What SkyWater's "high selectivity tungsten" process is, and
+* **High selectivity process.** What SkyWater's "high selectivity tungsten" process is, and
   whether it is used here, is not public.
-* The plug recess and oxide erosion the polish leaves, which the
+* **Plug recess and oxide erosion.** The plug recess and oxide erosion the polish leaves, which the
   0.1 µm local interconnect must cover, are not public.
-* Whether SkyWater uses a brush scrubber, and which, is not stated
+* **Brush scrubber.** Whether SkyWater uses a brush scrubber, and which, is not stated
   on any public page.
 
 <!-- footnotes -->

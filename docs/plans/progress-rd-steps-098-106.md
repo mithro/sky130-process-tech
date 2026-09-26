@@ -155,3 +155,60 @@ page.
 * **Marker coverage.** 12 flags read: list items under lead-in markers, the conformality quotation (no
   marker in the base), sentence halves each keeping their own markers, glance lines. None lost.
 * **Caps after:** 0 / 0 / 0 / 0. Lead 126 words (base 124). Item lead over 30: "Nucleation" (33).
+
+### 100 WCMPLI — done
+
+* **Lead.** First sentence 31 → 22 words: the dash pair becomes commas; "leaving tungsten only inside
+  the contact holes" → "It leaves tungsten only …" ("It" = `WCMPLI`, the subject; WORDS LOST
+  "leaving"). Base 108 words in one paragraph → two (61 + 46) at the seam before "The surface that
+  results"; its 46-word sentence split at the semicolon. "(industry-typical)" untouched.
+* **R-SENTENCE.** Post-figure 58-word sentence split at its colon ("… are in the rules. The local
+  interconnect must …"); both `[^pdk-periph]` stay on their rules. No H3 (the passage is 60 words).
+* **R-REPEAT — applied (declared).** Deleted from the post-figure passage (base `100-wcmpli.md:42–44`):
+  "SkyWater's capability list names "AMAT Mirra CMP" with "tungsten" and "high selectivity tungsten"
+  among its processes.[^skw-01]" The surviving copy is the *SkyWater says:* line under `## Machines
+  likely used at SkyWater` (the home for tool quotations): "lists "AMAT Mirra CMP" with "tungsten" and
+  "high selectivity tungsten" among its processes.[^skw-01]" — the same quotations, the same marker,
+  "lists" for "capability list names". Pointer, 11 words, marker kept: "SkyWater's capability list is
+  quoted under Machines likely used at SkyWater.[^skw-01]" This gives `LOST quotes: 'AMAT Mirra CMP';
+  'high selectivity tungsten'; 'tungsten'` and WORDS LOST "amat", "among", "names", "processes",
+  "with" — all words of the deleted copy; hand-verified that each survives in the home copy.
+  `[^skw-01]` still occurs 6 times on the page.
+* **R-CATEGORY / R-LIST.** Classification sentence (64 words) → lead-in "… which the category page
+  contrasts with the STI and oxide polishes:" (the classification, 21 words) and four plain bullets
+  (film removed, stop, slurry, failure modes; semicolons kept, the final "and" dropped). "It is the
+  first metal polish in the flow" → "`WCMPLI` is …" (after the list "It" would point at the last
+  bullet; `WCMPLI` is its base referent). **"What is specific …" left byte-identical** (65 words, over
+  the 45 cap): it holds the "only the {term}`cap oxide` separates" wording that the S7 figure notes ask
+  to keep verbatim; see Content problems.
+* **Why.** "Etch-back versus polish" split at ", and Kaufman" (lead = the Kaanta sentence; the Kaufman
+  sentence keeps its dash and its marker in the continuation). "Chemistry" split at its first
+  semicolon (lead = the review; the gapped study sentence kept whole in the continuation — no elided
+  verb to restore). "Plug recess and erosion" split at the semicolon after "contact resistance" (the
+  continuation opens on "Wang et al.", not on "Both"). "Endpoint" split at its colon (lead: "Because
+  …, tungsten CMP is one of the easier polishes to endpoint." — "Because X, Y" is allowed). The
+  17-word "coring" parenthetical stays inline and over the parenthetical cap: its only sentence form
+  would start with the quotation "coring", whose case may not change (R-SENTENCE 6).
+* **How.** Scope sentence as the italic lead-in. "Recipe": the four-part semicolon sequence → a
+  numbered sub-list; the 12-word parenthetical about the liner loses its brackets and becomes the
+  relative clause ", which polishes more slowly … slurry" (no word changed). The nested numbers give
+  `ADDED numbers: '1'…'4'` (list labels, not content).
+* **R-TOOLS.** Mirra: *SkyWater says:*, *Tool exists:*, *Runs this step:* (the 13-word parenthetical
+  → "(A tungsten polish … levels.)", its own sentence inside the grade it supports); "Which of the two
+  tungsten processes …" as the continuation. KLA AIT / SP1: pilot form (012): the head keeps "our
+  reading …" and the quotation; "Strength: medium" → *Tool exists:* medium. Post-CMP cleaning has no
+  grade: unchanged.
+* **R-RELATED.** Previous / Next split; liner and stop oxide → `Depends on:`; CMPP, CMPNIT and the later
+  tungsten polishes → one `Same category:` bullet (all CMP; the two base bullets merged, every gloss
+  and link kept).
+* **R-OPENQ.** "Slurry and endpoint", "High selectivity process", "Plug recess and oxide erosion",
+  "Brush scrubber".
+* **R-GLANCE.** Public numbers: "none for the polish" and li.5's 0.080 µm `[^pdk-periph]`; tool line
+  with both grades named; Not public from Open questions 1 and 3.
+* **Preservation.** ADDED: glance (`pdk-periph`, `skw-01`, 0.080, li.5's 5, hedges) and the nested list
+  labels. LOST: the R-REPEAT quotations above. WORDS LOST: "strength"×2 (R-TOOLS labels), "leaving",
+  and the R-REPEAT words.
+* **Marker coverage.** 7 flags read: glance lines, the pointer, the category bullets (no markers in
+  the base), the Kaanta/Kaufman halves (each keeps its own marker), the tool head, the parenthetical
+  sentence. None lost.
+* **Caps after:** 0 paragraphs, 0 items, 1 sentence (the kept cap-oxide sentence, 65), 0 cells.
