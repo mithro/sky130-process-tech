@@ -49,7 +49,9 @@ One table. It applies to every page type unless a page-type section in §4 narro
 
 Word counts ignore footnote markers and role wrappers, because that is what the measurement scripts do
 (`docs/plans/readability/prototypes/measure/measure.py`, function `clean`). A number, a code span or a
-quotation counts as one word.
+quotation counts as one word. An em dash is not a word (`measure.py` over-counts by one per dash, so
+a page measured with it is within the cap); the sentence cap is words between full stops (review
+rd-steps-118-134 D3).
 
 ## 2. Never
 
@@ -293,7 +295,10 @@ of 12 words or more, or a semicolon joining two separately cited facts.
 4. Put the subject and the verb in the first 12 words.
 5. Markers travel with their clause. A trailing parenthetical hedge or marker that covers the
    whole sentence ("(our extraction …)[^x]") must cover every sentence the split makes. Either
-   repeat it ("These are our extractions …"), or do not split.
+   repeat it ("These are our extractions …"), or do not split. A trailing hedge covers the whole
+   sentence unless the page itself ties it to one clause (an Open-questions bullet or another
+   sentence of the page names that clause as the inference). If it does, the hedge stays with that
+   clause; if not, repeat it on every half. When in doubt, repeat (review rd-steps-118-134 D1).
 6. Never split inside a quotation: split before it or after it, including at a full stop the
    quotation itself contains; never add or remove a quotation mark or change its case. A sentence
    whose only split points lie inside a quotation stays whole and is listed in the progress file.
@@ -490,7 +495,10 @@ key `para>100w`; `grep -rn "This page describes the class in general" docs/` (62
    later at …", "Later well implants …") is not "specific to this step": leave it as a paragraph
    after the bullets.
 3. If a remaining sentence already begins "What is specific to … is that …", it is its own label:
-   leave it as a paragraph and add nothing.
+   leave it as a paragraph and add nothing. The same applies to "… is X, and Y" without "that":
+   over the sentence cap, write "… is:" and one bullet per complement. If the second clause has its
+   own subject and verb, it is not a complement: split into sentences instead (R-SENTENCE) (review
+   rd-steps-118-134 D2).
 4. If a sentence here repeats a passage from another H2 on the same page, apply **R-REPEAT**: the fact
    keeps its home section and this section gets a pointer of ≤ 12 words.
 
@@ -2303,6 +2311,13 @@ aloud — is worth a second look. Run with `--strict-words` as a final check bef
 page (not while still mid-edit, when word counts are expected to be in flux): it fails on any
 LOST word outside the small function-word stop-list, which is exactly the "did I drop a word"
 gate 074 needed.
+
+**4b′. Duplicated text.** An editing slip can duplicate a source line or a run of words; the tool
+shows that only as extra WORDS ADDED, which never fails. Before committing a page, check that (a) no
+two consecutive non-blank lines outside tables and fences are identical, and (b) no sentence or run
+of eight or more words occurs more often than in the base outside the glance box, unless it is a
+declared repeat (review rd-steps-118-134 D5; a failing check in `check_preserved.py` or a separate
+`check_dups` is a coordinator task).
 
 **4c. Two informational WARN lines**, printed once per page (not part of the before/after diff):
 a `WARN glance number/marker ... does not recur in the body below` means an "At a glance" bullet
