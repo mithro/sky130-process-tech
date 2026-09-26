@@ -20,7 +20,8 @@
   {ref}`NTSD <step-167>` line a path down into the dielectric stack at
   the die edge (inference).
 * **Public numbers:** the ring at least 3 µm wide (nsm.1) and at least
-  1 µm clear of diffusion, poly, local interconnect and metal
+  1 µm clear of diffusion, poly, local interconnect and metal except the
+  seal ring's own diffusion rings
   (nsm.3);[^pdk-periph] none published for the depth.
 * **Likely SkyWater tool:** none named — no dielectric etcher is on
   SkyWater's public list; the three listed poly/silicon etchers are

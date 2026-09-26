@@ -876,3 +876,8 @@ positives above; every WORDS LOST word is named in its page entry.
    1.26/0.845 = 1.49; 162 k₁ 2.6 and 1.3; 163 1.26/1.6 = 0.79; 164 5.3711 + 0.3777 = 11.8834 − 6.1346 =
    5.7488; 165 k₁ 4.9; 166 2 × (3.6 + 5.2) mm × 5 µm = 0.088 mm² of 18.72 mm² = 0.47 %; 167 0.4223/0.54
    = 78 %; 168 k₁ 2.1, (65.4 − 60)/2 = 2.7 µm; 169 0.54 + 0.09 = 0.63 µm.
+
+## Review fix round (review `rd-steps-154-171`: 0 High, 2 Medium, 11 Low)
+
+* **M1 (166):** the glance box's Public-numbers line restores the lead's "except the seal ring's own
+  diffusion rings" before "(nsm.3)".
