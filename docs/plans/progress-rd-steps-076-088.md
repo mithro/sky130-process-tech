@@ -785,7 +785,9 @@ None was fixed here; each is recorded as found.
   nominal values, lower for the high-voltage structure (our extraction from the published measurements;
   the files record no temperature, date or wafer).[^raw-data-passives][^raw-data-testtile-pads]". The
   trailing extraction hedge, with its "the files record no temperature, date or wafer" caveat, covered the
-  values, so it is **repeated in full** on the first half with both markers (review L2)
+  values, so it is **repeated in full** on the first half with both markers (review L2), which makes that sentence 50 words (**listed**: the hedge
+  cannot be shortened) and its paragraph 101, so the test-tile sentences became their own paragraph
+  (a new source, not a connective)
   (R-SENTENCE step 5, the batch-4 form on 053/055/056; declared); "They are" added.
 * **R-CATEGORY.** Classification sentence (≈ 30 w) alone; "Its partner is PSDI" → "`NSDI`'s partner"
   opens the second paragraph (R-PARA step 5), and the "What distinguishes it …" sentence (its own
