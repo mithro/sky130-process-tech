@@ -60,7 +60,7 @@ of {term}`PSG` above the gate caps.
 On the second — the one the PDK's
 0.2 µm nitride/oxide cap supports and this page follows — the polish
 continues until it reaches the tops of the caps over the densest poly
-arrays. On the second, the polish uses the {ref}`GATENIT <step-058>` nitride as a
+arrays. It uses the {ref}`GATENIT <step-058>` nitride as a
 {term}`CMP` stop in the same way the {ref}`ISONIT <step-003>`
 nitride serves {ref}`CMPNIT <step-012>`, and the {term}`cap oxide` of the
 next step ({ref}`NCAPOX <step-091>`) then re-buries the exposed caps.
