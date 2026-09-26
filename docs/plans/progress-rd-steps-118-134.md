@@ -223,3 +223,40 @@ per page.
   directly follows the claim it supported), the nucleation split, glance lines. None lost a marker or
   hedge.
 * **Left over the caps:** none.
+
+### 122 WCMP3 — done
+
+* **R-H3:** none (post-figure passage 110 words; a quotation, a reading and the dielectric argument).
+* **Lead:** 111 words → two paragraphs at "What is left is a planar oxide surface" (the 111 seam).
+* **Post-figure:** two paragraphs at "What differs from the contact polish"; that sentence split at its
+  colon.
+* **R-CATEGORY:** classification cut at its colon (9 words, the 111 form: "… type. It removes two
+  metals completely …", subject added by the split, in the same paragraph); the category-page
+  comparison (its dash material → a colon list ending at "corrosion.") and the Kaufman mechanism as a
+  second paragraph ("— and Kaufman …" → "Kaufman …"; "and" lost).
+* **R-PARA/R-SENTENCE (Why):** Flat base: lead ends at "cross the vias;". Via resistance: the 17-word
+  Vlassak/Nguyen parenthetical closed as its own parenthetical sentence directly after "Over-polish
+  recesses the plug, which reduces the area the metal-2 bottom layer contacts."; the 14-word
+  "(inference: …)" likewise after the 4 500 mΩ sentence, as on 118. Oxide loss: lead ends at the
+  Stine marker.
+* **How:** italic scope lead-in. Slurry: lead ends at the oxidiser markers. Recipe: the three platens
+  as a nested numbered sequence (R-LIST step 6, the 111 form), down-force and Elbel as continuation.
+  Endpoint: lead + continuation. Post-CMP clean: the Jolley dash material opens the continuation
+  (the 111 form). Metrology: the four semicolon-separated methods as sub-bullets (the 116 form); the
+  13-word capacitance parenthetical closed as its own parenthetical sentence in its item.
+* **R-TOOLS:** the 111 form (Mirra three lines; "Which of the two tungsten processes …" after the
+  grades; the AIT/SP1 item *Tool exists:* medium; the post-CMP-clean bullet has no grade, unchanged).
+* **R-REPEAT:** none found by `rdtools.py rep` (the two Mirra quotations differ: applications list vs
+  the two tungsten entries, as on 111).
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** three labels; Previous / Next split, Depends on, the two
+  CMP bullets merged under one Same category (the 111 form); glance in the 111 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box (markers
+  `pdk-04`, `pdk-08`, `pdk-periph`, `skw-01`; numbers 0.15, 0.27, 4 500, `1`, `2`×2; quote "high
+  selectivity tungsten"; hedges; `via-1`) or the nested recipe labels `1`–`3` (the known
+  indented-label case). LOST words "strength"×2 (R-TOOLS).
+* **Coverage flags read:** the parenthetical sentences (their markers moved with them), the Stine and
+  endpoint splits, the metrology sub-bullets, glance lines. None lost a marker or hedge.
+* **Left over the caps:** none.
+* **Self-check note:** two lines duplicated by a range slip while editing (the recipe's down-force
+  line and the endpoint's over-polish line) were caught in the diff and removed before commit;
+  `gate.sh` now also reports duplicated adjacent lines and the words added outside the glance.
