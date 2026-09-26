@@ -102,3 +102,56 @@ page.
   and the tool head. None lost.
 * **Caps after:** 0 paragraphs, 0 items, 0 sentences, 0 cells over; item lead over 30: "Temperature
   and time" (40, above).
+
+### 099 WDEP — done
+
+* **Lead.** Base 124 words in one paragraph (over 100): two paragraphs at the seam between the fill
+  and the polish (55 + 71; lead 126 words, base over 120, text before the figure). The 46-word second
+  sentence split at its colon: "It is a thin nucleation layer first, then a bulk film …" ("It" = the
+  blanket film, the previous subject; "It is" added, R-SENTENCE 7). The film-thickness sentence split
+  at its semicolon ("… is not public. A blanket of …").
+* **R-H3.** No H3 after the figure: the passage is 120 words and none of the four titles is needed
+  once it is a list (below).
+* **R-LIST.** "Two public facts anchor the step" → colon and two plain bullets (SkyWater's list; the
+  PDK). The PDK bullet's 59-word sentence split at its semicolon and at ", and its physical criteria";
+  `[^pdk-06]` stays on the `licon1` description, `[^pdk-08]` and "(our reading)" on the LICON
+  sentence, `[^pdk-03]` on the fill-capability sentence.
+* **R-REPEAT — not applied.** `rdtools.py rep` finds SkyWater's "Lam/Novellus PECVD Tungsten … (up to
+  10:1)" quotation in both the post-figure passage and `## Machines likely used at SkyWater` (the
+  home). The passage's copy is not a pure duplicate: it adds "among its deposition tools" and pairs
+  the entry with "W plug dual damascene" "among its special modules", which the home copy does not
+  say. Replacing it with a pointer would delete those facts (§2.1), so both copies stay.
+* **R-CATEGORY / R-LIST.** Classification sentence (79 words) → "`WDEP` is a … step of the *CVD
+  tungsten* type, which the category page describes:" with `[^wiki-wf6][^txt-01]` on the lead-in
+  (they closed the enumeration and cover both reactions, R-LIST step 1), then the two-step sequence as
+  a numbered list. The conformality quotation becomes "CVD tungsten is, in the category page's words,
+  …" (its subject in the base was the CVD-tungsten type; named, so no pronoun points at list item 2).
+  The next sentence's "It" → "`WDEP`" (its base referent), so the pronoun does not change referent.
+  "What is specific …" (its own label, step 3) as a paragraph; its 59-word sentence split at ", and
+  the "PNL option …"" — the `[^skw-01]` sentence keeps its marker, the aspect-ratio sentence its two
+  `[^pdk-03]`.
+* **Why.** "Conformality and fill" split at its semicolon (lead + continuation opening "If the mouth
+  closes …"). "Nucleation": lead is the base's first sentence to the semicolon (33 words, dash pair of
+  studies kept inside it so the claim keeps its support — over the 30-word item-lead target, listed);
+  continuation 1 Tripathi and the reason PNL was developed (split at its colon); continuation 2 the
+  Novellus quotation (`hole",` → `hole".`, the comma outside the quotation), Kim, Petri. "Barrier
+  dependence": the 12-word parenthetical → "(category page). Koerner et al. evaluated … needed.[^koerner-1993]".
+* **How.** Scope sentence as the italic lead-in, word for word.
+* **R-TOOLS.** Lam/Novellus: *SkyWater says:* verb-first; *Tool exists:* **strong** for the three
+  things; *Runs this step:* the model-and-assignment sentence kept whole (one sentence grading two
+  things at the same strength, ruling D5), with its "we infer" parenthetical and the "— though …"
+  clause. The PNL-patent and "PECVD Tungsten" reading sentences stay as the continuation. The "W plug
+  dual damascene" module bullet is a capability: unchanged.
+* **R-RELATED.** Previous / Next split (the bullet named both); liner and holes → `Depends on:`;
+  later tungsten fills → `Same category:` (all Thin-film deposition).
+* **R-OPENQ.** "Film thickness and chemistry", "Novellus/Lam model", "Label for the tool", "What the
+  phrase refers to" (no quotation marks added).
+* **R-GLANCE.** Does/Why from the lead and the Why lead; Public numbers "none for the film" plus the
+  0.08 µm bottom under 0.5 µm `[^pdk-03]`; tool line names both grades and what each covers
+  ("**inferences** (the model and the assignment to this step)"); Not public from Open questions 1.
+* **Preservation.** ADDED: glance only (`pdk-03`, `skw-01`, 0.08, 0.5, `licon1`, "likely", "not
+  public"). WORDS LOST: "strength" (R-TOOLS label). WORDS ADDED: labels, "It is", "`WDEP`", "CVD
+  tungsten".
+* **Marker coverage.** 12 flags read: list items under lead-in markers, the conformality quotation (no
+  marker in the base), sentence halves each keeping their own markers, glance lines. None lost.
+* **Caps after:** 0 / 0 / 0 / 0. Lead 126 words (base 124). Item lead over 30: "Nucleation" (33).

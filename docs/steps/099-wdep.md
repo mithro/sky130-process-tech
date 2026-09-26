@@ -10,17 +10,37 @@
 | **Previous step** | {ref}`CSIL <step-098>` |
 | **Next step** | {ref}`WCMPLI <step-100>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** fills the contact holes with tungsten: a blanket film
+  grown by chemical vapour deposition from tungsten hexafluoride onto
+  the TiN-lined wafer.
+* **Why:** sputtering cannot fill a deep hole and CVD tungsten can; the
+  polish that follows leaves the tungsten plug in each `licon1`.
+* **Public numbers:** none for the film; the hole has a 0.08 µm
+  bottom[^pdk-03] under 0.5 µm of dielectric.[^pdk-03]
+* **Likely SkyWater tool:** Lam/Novellus CVD tungsten with PNL —
+  **strong** (the vendor, the plug-fill application and the
+  pulsed-nucleation capability); **inferences** (the model and the
+  assignment to this step).[^skw-01]
+* **Not public:** the film thickness, the nucleation chemistry and the
+  deposition temperature and pressure (→ Open questions).
+:::
+
 ## What this step is
 
 `WDEP` fills the contact holes with tungsten. A blanket film is grown
 by chemical vapour deposition from tungsten hexafluoride onto the
-TiN-lined wafer of {ref}`TI/TIN1 <step-097>`: a thin {term}`nucleation layer`
+TiN-lined wafer of {ref}`TI/TIN1 <step-097>`. It is a thin {term}`nucleation layer`
 first, then a bulk film thick enough that the conformal growth from
-the walls of every hole meets in the middle and closes it. The
+the walls of every hole meets in the middle and closes it.
+
+The
 tungsten covers the field as well as the holes; the polish that
 follows ({ref}`WCMPLI <step-100>`) removes it from the field and
 leaves the {term}`W plug` in each `licon1`. The film thickness is not
-public; a blanket of somewhat more than half the hole's top width —
+public. A blanket of somewhat more than half the hole's top width —
 of the order of 0.2–0.3 µm for a 0.17 µm contact[^pdk-periph] with
 polishing margin — is the industry-typical target for a plug fill
 (category page[^txt-01]).
@@ -33,16 +53,21 @@ polishing margin — is the industry-typical target for a plug fill
 A close-up of the 1.8 V source/drain contact, beside the gate. Before, the lined hole with its silicide; after, tungsten grown from every surface has closed the hole and covers the field. The film thickness is not public; the industry-typical plug-fill target the page gives is 0.2–0.3 µm ("of the order of"),[^txt-01] and it is not drawn to scale. The thin nucleation layer and the seam where the growth from the walls meets are not drawn; the deep notch over the hole comes from the drawn thickness, not from the page. The other two holes are filled in the same way, outside this view. The colours mark the type of the doping, not a depth profile. The gate, its caps and spacers, the thin oxides, the silicon and its doped regions, the silicide and the field oxide at the left edge are drawn but not labelled, as is the contact liner in the lower panel, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
-Two public facts anchor the step. SkyWater lists "Lam/Novellus PECVD
-Tungsten" with the sub-bullets "plug fill" and "PNL option for high
-aspect ratio (up to 10:1)" among its deposition tools,[^skw-01] and
-"W plug dual damascene" among its special
-modules.[^skw-01] The PDK describes `licon1` as the "Contact to local
-interconnect"[^pdk-06]; its extraction tables list the LICON contact
-at 15 000 in a column headed "Resistivity (mohms/sq)", which we read
-as 15 Ω per contact, since a contact has no sheet
-dimension[^pdk-08] (our reading), and its physical criteria give a "min. etch and
-fill capability" of 0.15 µm for licon.[^pdk-03] This reference uses
+Two public facts anchor the step:
+
+* SkyWater lists "Lam/Novellus PECVD
+  Tungsten" with the sub-bullets "plug fill" and "PNL option for high
+  aspect ratio (up to 10:1)" among its deposition tools,[^skw-01] and
+  "W plug dual damascene" among its special
+  modules.[^skw-01]
+* The PDK describes `licon1` as the "Contact to local
+  interconnect".[^pdk-06] Its extraction tables list the LICON contact
+  at 15 000 in a column headed "Resistivity (mohms/sq)", which we read
+  as 15 Ω per contact, since a contact has no sheet
+  dimension[^pdk-08] (our reading). Its physical criteria give a "min. etch and
+  fill capability" of 0.15 µm for licon.[^pdk-03]
+
+This reference uses
 the same blanket-fill-and-polish scheme at every level: `WDEP` here
 and {ref}`WDEP2 <step-110>` to {ref}`WDEP5 <step-147>` at the contact
 and {term}`via` levels.
@@ -50,19 +75,27 @@ and {term}`via` levels.
 ## Step category
 
 `WDEP` is a {ref}`Thin-film deposition <category-deposition>` step of
-the *CVD tungsten* type, which the category page describes: a
-nucleation layer by silane reduction, 2WF₆ + 3SiH₄ → 2W + 3SiF₄ + 6H₂,
-then the bulk fill by hydrogen reduction, WF₆ + 3H₂ → W + 6HF, at
-roughly 400–450 °C and a few tens of Torr,[^wiki-wf6][^txt-01] and is,
+the *CVD tungsten* type, which the category page
+describes:[^wiki-wf6][^txt-01]
+
+1. a
+   nucleation layer by silane reduction, 2WF₆ + 3SiH₄ → 2W + 3SiF₄ + 6H₂;
+2. then the bulk fill by hydrogen reduction, WF₆ + 3H₂ → W + 6HF, at
+   roughly 400–450 °C and a few tens of Torr.
+
+CVD tungsten is,
 in the category page's words, "almost perfectly conformal, so it fills
-contacts from the sidewalls inward and leaves only a small seam". It
+contacts from the sidewalls inward and leaves only a small seam".
+`WDEP`
 is the first {term}`CVD` metal in the flow and the first film deposited on a
 metallised wafer, so the
 thermal ceiling is now the {term}`silicide` and the {term}`liner` rather than the
-junctions. What is specific to this instance is the
+junctions.
+
+What is specific to this instance is the
 {term}`aspect ratio`: a 0.08 µm bottom[^pdk-03] under 0.5 µm of dielectric[^pdk-03]
-is the narrowest hole the tungsten will ever have to fill in SKY130,
-and the "PNL option for high aspect ratio (up to 10:1)" of
+is the narrowest hole the tungsten will ever have to fill in SKY130.
+The "PNL option for high aspect ratio (up to 10:1)" of
 SkyWater's tool[^skw-01] — a {term}`pulsed nucleation layer` — is the
 technique developed for such holes.
 
@@ -77,7 +110,9 @@ Broadbent and Ramiller had established the WF₆ chemistry in
 
 * **Conformality and fill.** CVD tungsten grows at nearly the same
   rate on every surface the gas reaches, so a hole fills from its
-  walls inward; if the mouth closes before the bottom, a void or
+  walls inward.
+
+  If the mouth closes before the bottom, a void or
   seam is left that the polish opens and the next liner cannot
   cover. The 10° taper of the licon[^pdk-03] helps by keeping the
   mouth wider than the bottom. Kleijn et al. modelled transport in a
@@ -87,22 +122,26 @@ Broadbent and Ramiller had established the WF₆ chemistry in
   TiN from WF₆/H₂ — McConica and Cooper studied nucleation on
   thermal oxide[^mcconica-1988] and Srinivas et al. on
   TiN[^srinivas-1992] — so a silane-reduced nucleation layer is
-  grown first; Tripathi and Moghadam describe a silane-rich
+  grown first.
+
+  Tripathi and Moghadam describe a silane-rich
   process.[^tripathi-1994] The nucleation layer's thickness,
   resistivity and conformality set the plug's resistance and fill,
-  which is why the pulsed nucleation layer was developed: Novellus's
+  which is why the pulsed nucleation layer was developed.
+
+  Novellus's
   patent describes a tungsten nucleation film formed "by
   alternatively providing to that surface, reducing gases and
   tungsten containing gases" so that the film "is conformal and has
   improved step coverage, even for a high aspect ratio contact
-  hole",[^pat-pnl-novellus] and Kim et al. characterise pulsed CVD
+  hole".[^pat-pnl-novellus] Kim et al. characterise pulsed CVD
   tungsten as a nucleation layer for plug fill.[^kim-2004] Petri et
   al. examined how nitrogen affects post-nucleation growth.[^petri-1998]
 * **Barrier dependence.** WF₆ attacks silicon, titanium and
   aluminium, and the HF by-product attacks oxide; the TiN liner is
   what keeps the fluorine from the silicide and the junction
-  (category page; Koerner et al. evaluated the Ti and TiN
-  thicknesses needed[^koerner-1993]). A liner pinhole becomes a
+  (category page). Koerner et al. evaluated the Ti and TiN
+  thicknesses needed.[^koerner-1993] A liner pinhole becomes a
   "volcano" or a wormhole in the silicon.
 * **Resistance.** The PDK's 15 Ω per licon[^pdk-08] is the sum of
   the silicide interface, the liner and the plug; tungsten's
@@ -118,8 +157,8 @@ would have nothing to land on.
 
 ## How it is typically performed
 
-An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 1. **Tool.** Single-wafer or multi-station CVD reactor with a heated
    pedestal, WF₆, SiH₄, H₂, N₂ and Ar delivery, and an NF₃ (or
@@ -154,15 +193,19 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **Lam/Novellus CVD tungsten with PNL.** SkyWater lists
-  "Lam/Novellus PECVD Tungsten" with the sub-bullets "plug fill" and
-  "PNL option for high aspect ratio (up to 10:1)".[^skw-01]
-  Strength: **strong** for the vendor, the plug-fill application and
-  the pulsed-nucleation capability; the model (an Altus-class
-  system, we infer from Novellus's product history[^novellus-history])
-  and the assignment to this step are **inferences** — though a
-  plug fill is what the entry says and this is the flow's first plug
-  fill. Novellus's PNL patent describes the nucleation technique the
+* **Lam/Novellus CVD tungsten with PNL**
+  - *SkyWater says:* lists
+    "Lam/Novellus PECVD Tungsten" with the sub-bullets "plug fill" and
+    "PNL option for high aspect ratio (up to 10:1)".[^skw-01]
+  - *Tool exists:* **strong** for the vendor, the plug-fill application and
+    the pulsed-nucleation capability.
+  - *Runs this step:* the model (an Altus-class
+    system, we infer from Novellus's product history[^novellus-history])
+    and the assignment to this step are **inferences** — though a
+    plug fill is what the entry says and this is the flow's first plug
+    fill.
+
+  Novellus's PNL patent describes the nucleation technique the
   entry names.[^pat-pnl-novellus] SkyWater's wording "PECVD
   Tungsten"[^skw-01] we read as a label for the tungsten CVD tool
   rather than a statement of a plasma-driven deposition (inference).
@@ -186,11 +229,11 @@ An industry-generic tungsten plug fill for a 200 mm, 130 nm-era fab
 ## Related steps and cross-references
 
 * Previous: {ref}`CSIL <step-098>` (the silicide under the plug).
-  Next: {ref}`WCMPLI <step-100>` (the polish that leaves the plugs),
+* Next: {ref}`WCMPLI <step-100>` (the polish that leaves the plugs),
   then {ref}`LITIN <step-101>`.
-* The liner it grows on: {ref}`TI/TIN1 <step-097>`; the holes it
-  fills: {ref}`LICM1E <step-094>`.
-* Later tungsten fills: {ref}`WDEP2 <step-110>`,
+* Depends on: the liner it grows on, {ref}`TI/TIN1 <step-097>`; the holes it
+  fills, {ref}`LICM1E <step-094>`.
+* Same category: later tungsten fills, {ref}`WDEP2 <step-110>`,
   {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`,
   {ref}`WDEP5 <step-147>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
@@ -265,16 +308,16 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The tungsten film thickness, the nucleation chemistry (silane or
+* **Film thickness and chemistry.** The tungsten film thickness, the nucleation chemistry (silane or
   diborane; conventional or pulsed) and the deposition temperature
   and pressure are not public; the PNL reading is an inference from
   SkyWater's "PNL option" entry.
-* Which Novellus/Lam model is used, and whether the same tool serves
+* **Novellus/Lam model.** Which Novellus/Lam model is used, and whether the same tool serves
   the via levels, is not public.
-* SkyWater's phrase "PECVD Tungsten"[^skw-01] is read here as a label
+* **Label for the tool.** SkyWater's phrase "PECVD Tungsten"[^skw-01] is read here as a label
   for the tungsten CVD tool rather than evidence of a plasma-assisted
   deposition; no public source clarifies it.
-* What SkyWater's "W plug dual damascene" phrase refers to is not
+* **What the phrase refers to.** What SkyWater's "W plug dual damascene" phrase refers to is not
   explained on the public page.
 
 <!-- footnotes -->
