@@ -1884,13 +1884,13 @@ claims:
   - {id: grc-hh-star-prospectus-2023, origin: huahong}
 - id: grace-fab3-is-gfab1
   page: docs/history/grace.md
-  anchor: So HH FAB3 is the former
-  grade: inference
-  hedge: our reading
-  footnotes: [fr-2013-veu, hh-fab-naming-2017]
+  anchor: HH FAB3 is therefore the former Grace fab
+  grade: corroborated
+  footnotes: [fr-2013-veu, hh-fab-naming-2017, pcn-201901]
   sources:
   - {id: grc-fr-2013-veu, origin: us-bis}
   - {id: grc-huahong-fab-naming-2017, origin: huahong}
+  - {id: grc-pcn201901, origin: cypress}
 - id: grace-hhfab1-hhnec
   page: docs/history/grace.md
   anchor: The 2013 rule puts "HFab 1" at 1188 Chuanqiao Road
@@ -1919,11 +1919,12 @@ claims:
   page: docs/history/grace.md
   anchor: The Shanghai fabs run 200 mm wafers
   grade: corroborated
-  footnotes: [eet-2005-grace, hh-fab-naming-2017, wiki-huahong]
+  footnotes: [eet-2005-grace, hh-fab-naming-2017, wiki-huahong, hhgrace-fab-page]
   sources:
   - {id: cyhist-corp-pr-2005-grace-deal, origin: eetimes}
   - {id: grc-huahong-fab-naming-2017, origin: huahong}
   - {id: grc-enwiki-hua-hong, origin: wikipedia}
+  - {id: grc-hhgrace-fab-shanghai, origin: huahong}
 - id: grace-hh-fab-count
   page: docs/history/grace.md
   anchor: three 8-inch fabs and one
@@ -2187,3 +2188,27 @@ claims:
   footnotes: [hh-prospectus-2023]
   sources:
   - {id: grc-hh-star-prospectus-2023, origin: huahong}
+- id: grace-s4ad5-hhgrace-fab3-2020
+  page: docs/history/grace.md
+  anchor: S4AD-5 again
+  grade: single-source
+  hedge: single source
+  footnotes: [pcn-201901]
+  sources:
+  - {id: grc-pcn201901, origin: cypress}
+- id: grace-s8pf10p-fab1-2014
+  page: docs/history/grace.md
+  anchor: 5th-generation touch screen (TSG5_L)
+  grade: single-source
+  hedge: single source
+  footnotes: [pcn-211801]
+  sources:
+  - {id: grc-pcn211801, origin: cypress}
+- id: grace-s8pfn-fab1-2018
+  page: docs/history/grace.md
+  anchor: EZ-PD CCG3 USB Type-C controllers
+  grade: single-source
+  hedge: one report
+  footnotes: [pcn-211801]
+  sources:
+  - {id: grc-pcn211801, origin: cypress}

@@ -169,6 +169,10 @@ Used on {ref}`history-grace`.
 **HH-PROSPECTUS-2023** — 华虹半导体有限公司 (Hua Hong Semiconductor Limited), *首次公开发行人民币普通股（A股）股票并在科创板上市招股说明书（上会稿）* (prospectus for the STAR Market listing, committee draft), Shanghai Stock Exchange, 2023-05-10. <http://static.sse.com.cn/stock/disclosure/announcement/c/202305/001307_20230510_ETYJ.pdf>
 Used on {ref}`history-grace`.
 
+(hsrc-hhgrace-fab-page)=
+**HHGRACE-FAB-PAGE** — 华虹宏力 (Hua Hong Semiconductor), *上海华虹宏力半导体制造有限公司* (company page), retrieved 2026-09-26. <https://www.huahonggrace.com/s/about_fab_shanghai.php>
+Used on {ref}`history-grace`.
+
 (hsrc-hu-1992)=
 **HU-1992** — G. J. Hu et al. (Cypress Semiconductor), *BiFAMOS technology for high speed mega-bit EPROMs*, 1992 Symposium on VLSI Technology, Digest of Technical Papers, pp. 42–43, DOI 10.1109/VLSIT.1992.200637. <https://doi.org/10.1109/vlsit.1992.200637>
 Used on {ref}`history-technologies`.
@@ -240,6 +244,14 @@ Used on {ref}`history-sonos-s4`.
 (hsrc-pat-us6969689)=
 **PAT-US6969689** — K. Ramkumar, M. Rathor, B. Parameshwaran and L. Lancaster (Cypress Semiconductor), *Method of manufacturing an oxide-nitride-oxide (ONO) dielectric for SONOS-type devices*, US 6,969,689 B1, priority 2002-06-28. <https://patents.google.com/patent/US6969689B1/en>
 Used on {ref}`history-sonos-s4`.
+
+(hsrc-pcn-201901)=
+**PCN-201901** — Cypress Semiconductor, *PCN201901: Qualification of HHGrace Fab3 as an Additional Wafer Fab Site for Select Industrial PSoC 1 Products*, 2020-05-04, with QTP 164014 attached; copy distributed by Mouser. <https://www.mouser.com/PCN/Cypress_Semiconductor_PCN201901_1.pdf>
+Used on {ref}`history-grace`.
+
+(hsrc-pcn-211801)=
+**PCN-211801** — Cypress Semiconductor, *PCN211801: Silicon and Firmware Release for EZ-USB HX3PD Products*, 2021-05-03, with QTP 174903 attached; copy distributed by Mouser. <https://www.mouser.com/PCN/Cypress_Semiconductor_PCN211801_1.pdf>
+Used on {ref}`history-grace`.
 
 (hsrc-pdk-hv)=
 **PDK-HV** — SkyWater PDK Authors, *High Voltage Methodology*, SkyWater SKY130 PDK documentation, retrieved 2026-09-25. <https://skywater-pdk.readthedocs.io/en/main/rules/hv.html>

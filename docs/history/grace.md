@@ -16,7 +16,7 @@ they appear only in our English translation, marked as ours.
 | Question | Answer | Sources |
 |---|---|---|
 | The foundry | Grace Semiconductor Manufacturing Corporation (GSMC), Shanghai, formed in 2000; merged with Hua Hong NEC (HHNEC) into HHGrace in 2011 | Wikipedia, Hua Hong, US Commerce Department |
-| The fab | the former Grace fab at 1399 Zuchongzhi Road, Zhangjiang, called "GFab1" in 2013 and HH FAB3 from 2017; 8-inch (200 mm) | US Commerce Department, Hua Hong (our reading) |
+| The fab | the former Grace fab at 1399 Zuchongzhi Road, Zhangjiang, called "GFab1" in 2013 and HH FAB3 from 2017; 8-inch (200 mm) | US Commerce Department, Hua Hong, Cypress |
 | Names in Cypress's reports | "Fab 5", "Fab5 GSMC", "GSMC-Fab 5", then "HHGrace Fab 3"; also "HHGrace Fab1" for a former HHNEC fab | Cypress's reports |
 | Processes moved | S4AD-5 (0.35 µm SONOS) from 2006; C8 (0.13 µm logic) from 2006; RAM42 and the 0.09 µm SRAM R95LD-3R later | Cypress's reports, EE Times |
 | S8 there | S8DIN-5R from March 2010; then S8TMC-5R, S8P12-10P, S8PF-10R, S8SPF-10P, S8PR2-10R | Cypress's reports |
@@ -43,8 +43,11 @@ established on 2013-01-24 (single source).[^hh-prospectus-2023]
 and "HFab 2" of Hua Hong NEC, and "GFab1, 1399 Zuchongzhi Road, Zhangjiang Hi-Tech Park".[^fr-2013-veu]
 In 2017 Hua Hong numbered its fabs, and gave 华虹三厂 (HH FAB3) the address 祖冲之路1399号 (1399
 Zuchongzhi Road) and 8-inch wafers (our translation).[^hh-fab-naming-2017] The same address is the
-registered address of 上海华虹宏力 in the 2023 prospectus.[^hh-prospectus-2023] So HH FAB3 is the former
-Grace fab (our reading).[^fr-2013-veu][^hh-fab-naming-2017]
+registered address of 上海华虹宏力 in the 2023 prospectus.[^hh-prospectus-2023] Cypress's 2020 notice
+adding "HHGrace Fab3" as a wafer fab gives it the same address, "1399 Zu Chong Zhi Road, Zhangjiang
+Hi-Tech Park", and the report attached to it lists a 2008 move of a PSoC 1 family to GSMC as a "Transfer
+to Fab 3".[^pcn-201901] HH FAB3 is therefore the former Grace fab: the US government, Hua Hong and
+Cypress give one address for it.[^fr-2013-veu][^hh-fab-naming-2017][^pcn-201901]
 
 **HH FAB1 is the former Hua Hong NEC fab.** The 2013 rule puts "HFab 1" at 1188 Chuanqiao Road, and Hua
 Hong's 2017 list puts HH FAB1 at 川桥路1188号 (1188 Chuanqiao Road, our translation).[^fr-2013-veu][^hh-fab-naming-2017]
@@ -54,7 +57,9 @@ source).[^qtp-152604] HH FAB2 is at 668 Guoshoujing Road in the 2013 rule but at
 
 **Wafer size.** The Shanghai fabs run 200 mm wafers, as Fab 4 does. EE Times wrote in 2005 of "Grace's
 8-inch facility in Shanghai"; Hua Hong gives HH FAB1 to FAB3 as 8-inch; Wikipedia counts "three 200mm
-wafer fabs".[^eet-2005-grace][^hh-fab-naming-2017][^wiki-huahong] Hua Hong has three 8-inch fabs and one
+wafer fabs".[^eet-2005-grace][^hh-fab-naming-2017][^wiki-huahong] HHGrace's company page says it has
+three 8-inch fabs in Jinqiao and Zhangjiang (our translation); the page's contact address, 288 Halei
+Road, is the company's, not necessarily a fab's.[^hhgrace-fab-page] Hua Hong has three 8-inch fabs and one
 12-inch fab, by its 2023 prospectus (single source).[^hh-prospectus-2023]
 
 ## What Cypress moved to Grace
@@ -73,6 +78,7 @@ with Grace to give Cypress priority for its foundry capacity (our translation).[
 | to 2007 | "0.35-micron SONOS, 0.13-micron SRAM and LOGIC processes and 0.09-micron SRAM" | Cypress's reports[^ar-fy2010][^ar-fy2012] |
 | 2009 | RAM42, an older SRAM process, at "Fab5 GSMC" | single source[^qtp-091302] |
 | 2010 | R95LD-3R, the 0.09 µm SRAM, "Product Transfer from CMI to GSMC" | single source[^qtp-091206] |
+| 2020 | S4AD-5 again: "HHGrace Fab3" added as a wafer fab for PSoC 1 parts | single source[^pcn-201901] |
 
 The S4 and 0.35 µm SONOS work is on {ref}`history-sonos-s4`.
 
@@ -104,8 +110,10 @@ reading).[^qtp-142304][^qtp-152604]
 | May 2013 | S8P12-10P | "GSMC-Fab 5" | 5th-generation touch screen (TSG5_M) | QTP 142304 history[^qtp-142304] |
 | undated | S8P12-10P | "HHGrace Fab1" | 5th-generation touch screen (QTP 141906) | single source, Infineon listing[^ifx-qtp-141906] |
 | June 2014 | S8PF-10R | "Fab 3 / HHGrace, Shanghai China" | PSoC 4, CY8C4013 and CY8C4014 | single source, QTP 142304[^qtp-142304] |
+| November 2014 | S8PF-10P | "HHGrace Fab 1" | 5th-generation touch screen (TSG5_L) | single source, QTP 174903 history[^pcn-211801] |
 | March 2016 | S8SPF-10P | "HHGrace Fab1" | automotive touch-screen controller, CYAT8168X | single source, QTP 152604[^qtp-152604] |
 | September 2017 | S8PR2-10R | "HH Grace Fab 1" | EZ-PD CCG2 USB Type-C controllers | single source, QTP 164010[^qtp-164010] |
+| August 2018 | S8PFN-20R | "HHGrace Fab 1" | EZ-PD CCG3 USB Type-C controllers | one report's history, QTP 174903[^pcn-211801] |
 
 The reports for the 2010 and 2013 rows (QTP 090706, 100101 and 124505) were not found in a public copy;
 Infineon now serves them only after log-in. The 2010 to 2014 rows are all from one report's history
@@ -217,6 +225,9 @@ Cypress (赛普拉斯) does not appear in it (single source).[^hh-prospectus-202
 * [国际金属加工网, 华虹NEC获Cypress 0.13微米SONOS NVM工艺授权](<https://www.mmsonline.com.cn/info/91858.shtml>) — the same licence in Chinese.[^mms-hhnec-sonos]
 * [Cypress, QTP 152604](<https://web.archive.org/web/20201205000354/https://www.cypress.com/file/278091/download>) — S8SPF-10P at HHGrace Fab 1, "HHNEC".[^qtp-152604]
 * [Cypress, QTP 164010](<https://web.archive.org/web/20211025133935/https://www.cypress.com/file/383716/download>) — S8PR2-10R at HH Grace Fab 1, with its alternative fabs.[^qtp-164010]
+* [Cypress, PCN201901](<https://www.mouser.com/PCN/Cypress_Semiconductor_PCN201901_1.pdf>) — HHGrace Fab3 added for PSoC 1, with its address.[^pcn-201901]
+* [Cypress, PCN211801](<https://www.mouser.com/PCN/Cypress_Semiconductor_PCN211801_1.pdf>) — S8PF-10P and S8PFN-20R at HHGrace Fab 1.[^pcn-211801]
+* [HHGrace, 上海华虹宏力半导体制造有限公司](<https://www.huahonggrace.com/s/about_fab_shanghai.php>) — the company's three 8-inch fabs, in Chinese.[^hhgrace-fab-page]
 * [Cypress, QTP 123907](<https://np.teldevice.co.jp/npapp/cgi-bin/npweb_gate.cgi/Website/pcn_pdn/other/cypress/145273-Qualification_Report.pdf>) — the Fab 4 metal-stack change.[^qtp-123907]
 * [Cypress, QTP 113005](<https://www.infineon.com/assets/row/public/documents/10/316/infineon-qtp-113005-64k-serial-non-volatile-sram-product-family-s8-technology-cmi-fab-4-productqualificationreport-en.pdf?fileId=8ac78c8c7d710014017d714bf28311de>) — the Fab 4 S8 stack of 2013.[^qtp-113005]
 * [Cypress, QTP 091206](<https://web.archive.org/web/20201001021848/https://www.cypress.com/file/138641/download>) — the 0.09 µm SRAM at HHGrace Fab 3.[^qtp-091206]
@@ -311,3 +322,13 @@ Cypress (赛普拉斯) does not appear in it (single source).[^hh-prospectus-202
 [^ar-fy2018]: Cypress Semiconductor Corp., *2018 Annual Report* with Form 10-K, fiscal year ended
     2018-12-30: Item 1, Manufacturing, and Executive officers.
     <https://www.annualreports.com/HostedData/AnnualReportArchive/c/NASDAQ_CY_2018.pdf>
+[^pcn-201901]: Cypress Semiconductor, *PCN201901: Qualification of HHGrace Fab3 as an Additional Wafer
+    Fab Site for Select Industrial PSoC 1 Products*, 2020-05-04, with QTP 164014 attached; copy
+    distributed by Mouser.
+    <https://www.mouser.com/PCN/Cypress_Semiconductor_PCN201901_1.pdf>
+[^pcn-211801]: Cypress Semiconductor, *PCN211801: Silicon and Firmware Release for EZ-USB HX3PD
+    Products*, 2021-05-03, with QTP 174903 attached; copy distributed by Mouser.
+    <https://www.mouser.com/PCN/Cypress_Semiconductor_PCN211801_1.pdf>
+[^hhgrace-fab-page]: 华虹宏力 (Hua Hong Semiconductor), *上海华虹宏力半导体制造有限公司* (company page),
+    retrieved 2026-09-26.
+    <https://www.huahonggrace.com/s/about_fab_shanghai.php>
