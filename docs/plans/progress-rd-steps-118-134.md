@@ -623,3 +623,38 @@ per page.
   120), the Rossnagel split, the specific-to split, glance lines. None lost a marker or hedge.
 * **Left over the caps:** lead 190 words in three paragraphs (base 186; "It is", "This is" added).
   Nothing over the §1 caps.
+
+### 132 WDEP4 — done
+
+* **Kept verbatim** (known, for the owner): Why/Nucleation "Tungsten nucleates on the TiN of TIN4,
+  [^srinivas-1992][^mcconica-1988]" — the McConica and Cooper misattribution (132:87 in the base; see
+  Content problems). Unchanged.
+* **R-H3:** none (as 110/121).
+* **Lead:** 99 words, one paragraph; "— thick enough" → ". It is thick enough" (the 110/121 form).
+* **Post-figure:** two paragraphs at "The deposited thickness is not public" (the 110/121 seam). The
+  70-word holes sentence: its dash material's "though the local-interconnect contact of WDEP … is far
+  steeper at about 6:1" becomes its own sentence ("though" lost) and ", and their floor" → ". Their
+  floor is …" (its Cypress marker with it). The thickness sentence split at its semicolon and at ",
+  so a film" → ". So a film of the order of 0.25–0.35 µm is the industry norm … (industry-typical
+  value[^txt-05]) — thicker than at via 1, …" (the ", so" form; the hedge stays in the sentence whose
+  number and comparison it qualifies).
+* **R-CATEGORY + R-LIST:** classification cut at its semicolon (11 words); the category-page sentence
+  split at ", and WDEP3 what changes" → "WDEP3 sets out what changes …" (verb restored); "What is specific
+  to this instance is the hole and what will sit on it:" and two plain bullets ("and" dropped).
+* **R-PARA (Why):** Conformality: lead ends at "outside in;"; the PNL sentence split at "(inference from
+  the ratio);" so the hedge stays with the PNL clause. Current and reliability: lead ends at "feed them."
+  (the base's first sentence); the 65-word studies sentence split after the Kwok/Hu markers and after
+  "via size" — "Kawasaki and Hu model the lifetime …, Le, Banerjee and McPherson show how it depends on
+  via size." keeps "it" beside "the lifetime" it refers to.
+* **How:** italic scope lead-in; Chamber lead ends at its first semicolon (the 121 form).
+* **R-TOOLS:** the 110/121 form; the PNL sentence after the grades.
+* **R-REPEAT:** the SkyWater quotation (post-figure and Machines likely used) not applied, as 110/121.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; the 121 Related form; glance in the 121 form.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box
+  (markers `pdk-04`, `pdk-08`, `pdk-periph`, `skw-01`; numbers 0.20, 0.42, 3 410; hedges; `via-2`,
+  `via2`). LOST words "though" (above), "strength" (R-TOOLS).
+* **Coverage flags read:** the holes split (each marker with its clause), the studies split, glance
+  lines. None lost a marker or hedge.
+* **Left over the caps:** none.
+* **Self-check note:** one line duplicated by a range slip (the Chamber item's Altus line) was caught
+  by the duplicate-line check and removed before commit.
