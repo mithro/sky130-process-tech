@@ -10,18 +10,36 @@
 | **Previous step** | {ref}`NSDIS <step-087>` |
 | **Next step** | {ref}`PSG <step-089>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** heats the wafer so that the amorphous layers regrow, the
+  dopant moves onto lattice sites and the junctions reach their
+  designed depth.
+* **Why:** implanted dopant does nothing until the lattice is repaired.
+* **Public numbers:** "N+ or P+ S/D (XJ)" 0.1 µm;[^pdk-03] sheet
+  resistance 120 Ω/sq (N-diffusion) and 197 Ω/sq
+  (P-diffusion).[^pdk-08]
+* **Likely SkyWater tool:** AG Associates Heatpulse 8808 — strong (tool,
+  SkyWater statement); inference (assignment).[^skw-01]
+* **Not public:** the anneal temperature, time, ramp rates and ambient,
+  and why the flow has two source/drain anneals (→ Open questions).
+:::
+
 ## What this step is
 
 `RTAD` is the source/drain activation anneal. The three heavy implants
 of the module — {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>` and
 {ref}`NSDI <step-086>` — have left the source/drain silicon amorphised
-and its dopant electrically inactive; this step heats the wafer — in an
-inert ambient for seconds at around 1000 °C on the industry-typical
-recipe described below; SKY130's own conditions are not public — so that
+and its dopant electrically inactive. This step heats the wafer so that
 the amorphous layers regrow, the dopant moves onto lattice sites, the
 end-of-range damage is dissolved as far as it can be, and the
-junctions reach their designed depth — the PDK's 0.1 µm for "N+ or P+
-S/D (XJ)"[^pdk-03] — and no further. This reference describes it,
+junctions reach their designed depth and no further. It does so in an
+inert ambient for seconds at around 1000 °C on the industry-typical
+recipe described below; SKY130's own conditions are not public.
+
+The designed depth is the PDK's 0.1 µm for "N+ or P+
+S/D (XJ)".[^pdk-03] This reference describes `RTAD`,
 like {ref}`RTAI <step-034>` and {ref}`TIPRTAD <step-075>`, as a rapid
 thermal anneal, and the public evidence for that is good (below). It
 is the third RTA described in this reference; the next,
@@ -38,7 +56,7 @@ A close-up of the 1.8 V NMOS gate edge at the source/drain anneal, the finished 
 
 On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
 the thermal step that finishes the doping of the poly heads opened at
-{ref}`NPCME <step-079>`; it re-anneals the
+{ref}`NPCME <step-079>`. It re-anneals the
 extensions and halos that {ref}`TIPRTAD <step-075>` activated, and
 sets the final position of every front-end junction relative to the
 gate edge. After it, the front end is electrically complete; what
@@ -49,13 +67,19 @@ follows is dielectric, contact and interconnect.
 `RTAD` is an {ref}`Anneal / thermal processing <category-anneal>` step
 of the *implant activation* type — the same family as
 {ref}`RTAI <step-034>` and {ref}`TIPRTAD <step-075>`, but with the
-tightest constraint of the three. The well anneal could be hot and
-long; the tip anneal had shallow, light profiles to protect; this one
-has to activate doses of the order of 10¹⁵ cm⁻² to a low sheet
-resistance (the PDK's 120 Ω/sq for N-diffusion and 197 Ω/sq for
-P-diffusion[^pdk-08]) while moving the deep junctions by only tens of
-nanometres and the extensions, which see this anneal for a second
-time, by less. It is the anneal for which the *spike* RTA was
+tightest constraint of the three:
+
+* The well anneal could be hot and
+  long.
+* The tip anneal had shallow, light profiles to protect.
+* This one
+  has to activate doses of the order of 10¹⁵ cm⁻² to a low sheet
+  resistance (the PDK's 120 Ω/sq for N-diffusion and 197 Ω/sq for
+  P-diffusion[^pdk-08]). It has to do so while moving the deep junctions by only tens of
+  nanometres and the extensions, which see this anneal for a second
+  time, by less.
+
+`RTAD` is the anneal for which the *spike* RTA was
 developed.
 
 ## Why this step exists
@@ -64,20 +88,26 @@ Implanted dopant does nothing until the lattice is repaired.
 Amorphised layers regrow by solid-phase epitaxy from about 500 °C,
 at a rate that depends on orientation[^csepregi-1978] and, for
 arsenic, on concentration,[^jeon-1989] incorporating the dopant
-substitutionally up to and beyond its solubility; partially damaged
+substitutionally up to and beyond its solubility. Partially damaged
 layers need 800–1000 °C to dissolve the defect clusters, as the
 category page sets out from Gibbons's review of damage production and
-annealing[^gibbons-1972] and Plummer, Deal and Griffin[^txt-01]. Two
+annealing[^gibbons-1972] and Plummer, Deal and Griffin[^txt-01].
+
+Two
 effects make the choice of
 temperature and time a compromise, as the category page explains:
 
 * **Transient enhanced diffusion.** The interstitials released as the
   damage dissolves raise boron's diffusivity many-fold for a short
-  time; Michel et al. first reported the anomalous diffusion under
+  time.
+
+  Michel et al. first reported the anomalous diffusion under
   rapid annealing,[^michel-1987] Eaglesham et al. traced it to the
   implant's own interstitials,[^eaglesham-1994] and Stolk et al. set
   out the mechanisms.[^stolk-1997] {term}`TED` is worst for slow,
-  cool anneals, so the resolution is to go hot and fast: Agarwal,
+  cool anneals, so the resolution is to go hot and fast.
+
+  Agarwal,
   Gossmann and Fiory showed how the ramp rate of a rapid thermal
   anneal sets the depth of a boron junction,[^agarwal-1999] with
   Agarwal et al. comparing lamp-based and hot-walled spike
@@ -90,7 +120,9 @@ temperature and time a compromise, as the category page explains:
   dopant clusters or precipitates and becomes inactive — Nobili et al.
   for arsenic[^nobili-1983] — and arsenic that was over-activated by a
   fast anneal relaxes during later thermal steps, injecting
-  interstitials as it does so.[^rousseau-1994][^luning-1992] The
+  interstitials as it does so.[^rousseau-1994][^luning-1992]
+
+  The
   highest activation is obtained by annealing hot and fast; the most
   *stable* activation may not be, which is one reading of why a second
   source/drain anneal ({ref}`RTAD2 <step-092>`) exists in this flow
@@ -102,10 +134,12 @@ Josse et al. describe optimising the spike anneal for a 0.13 µm CMOS
 platform with both digital and analogue devices,[^josse-2002] and
 Matsuda, Shishiguchi and Kitajima an RTA process for shallow junctions
 with high controllability[^matsuda-2002] — the class of recipe this
-step belongs to. The fluorine from BF₂ implants changes boron's
-behaviour in exactly this anneal,[^wang-1997] and the surrounding
+step belongs to.
+
+The fluorine from BF₂ implants changes boron's
+behaviour in exactly this anneal.[^wang-1997] The surrounding
 films matter: boron out-diffuses into oxide and nitride spacers at
-different rates,[^pelletier-2008] and shallow arsenic loses dose to
+different rates.[^pelletier-2008] Shallow arsenic loses dose to
 the surface during a nitrogen anneal,[^farhane-2003] which is, we infer, one reason
 the {ref}`SPOX <step-080>` oxide is left in place as a cap (its
 retention is not public).
@@ -116,20 +150,24 @@ and diode in the PDK depends on it.
 
 ## How it is typically performed
 
-An industry-generic source/drain activation anneal for a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic source/drain activation anneal for a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
 * **Tool and ambient.** Single-wafer lamp-heated RTA in nitrogen or
   argon: RTP "heats silicon wafers to temperatures exceeding 1,000°C
   for not more than a few seconds" with "high intensity lamps" and
-  "in situ pyrometry to effect real time control".[^wiki-rtp] A
+  "in situ pyrometry to effect real time control".[^wiki-rtp]
+
+  A
   small oxygen addition is sometimes used to limit dopant
   out-diffusion; a pure inert ambient avoids growing oxide on the
   poly heads and source/drain (category page).
 * **Temperature and time.** A soak of 1000–1050 °C for a few seconds,
   or a spike with no soak — a ramp of 100–250 °C/s to a peak near
   1050 °C and immediate cooling — are the typical 130 nm-era
-  choices;[^txt-05][^txt-10] ITRS 2001 sets the junction depth,
+  choices.[^txt-05][^txt-10]
+
+  ITRS 2001 sets the junction depth,
   abruptness and sheet resistance that the anneal must meet
   together.[^itrs-01] Ramp rates of "1 – 180°C per second" are the
   range of the AG Associates Heatpulse 8800-class tools.[^ag-8800]
@@ -137,10 +175,12 @@ An industry-generic source/drain activation anneal for a 200 mm,
   purge; a low-temperature stabilisation step for pyrometer lock;
   ramp; soak or spike; controlled ramp-down; unload.
 * **Control.** The pyrometer must be corrected for the wafer's
-  emissivity, which depends on its films and temperature — Sorrell
+  emissivity, which depends on its films and temperature.
+
+  Sorrell
   and Gyurcsik describe model-based emissivity correction,[^sorrell-1993]
   and Chen et al. measured the effects of wafer emissivity on RTP
-  temperature measurement;[^chen-2002-rtp] Vandenabeele and Renken
+  temperature measurement.[^chen-2002-rtp] Vandenabeele and Renken
   report model-based control holding a 1000 °C, 2 s, 100 °C/s spike
   to ±0.1 °C.[^vandenabeele-1998] Roozeboom and Parekh review RTP
   systems with emphasis on temperature control.[^roozeboom-1990]
@@ -148,7 +188,9 @@ An industry-generic source/drain activation anneal for a 200 mm,
   wafers after each lot track activation and uniformity.[^txt-10]
 * **Diffusion budget.** The junction movement is, to first order,
   the integral of diffusivity over the thermal cycle plus the TED
-  contribution; a spike keeps both small. The PDK's out-diffusion
+  contribution; a spike keeps both small.
+
+  The PDK's out-diffusion
   limits next to an isolation edge — 0.007 µm, or 0.05 µm for the
   6 V devices — and the 0.06 µm "vertical space" entry for the
   source/drain[^pdk-03] are the design-rule expression of that
@@ -171,18 +213,24 @@ An industry-generic source/drain activation anneal for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **AG Associates Heatpulse 8808.** SkyWater lists under RTA "Ag
-  Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] — a
+* **AG Associates Heatpulse 8808**
+  - *SkyWater says:* lists under RTA "Ag Heatpulse 8808 NH3, Ar, N2,
+    O2, up to 1200C".[^skw-01]
+  - *Tool exists:* **strong** for the tool (SkyWater statement).
+  - *Runs this step:* assignment to `RTAD` is an **inference** from the
+    Heatpulse being the only RTA on SkyWater's list, and a source/drain
+    activation is the archetypal use of such a tool.
+
+  The Heatpulse 8808 is a
   single-wafer RTA with the inert ambients and the temperature reach
-  this step needs. Strength: **strong** for the tool (SkyWater
-  statement); assignment to `RTAD` is an **inference** from the
-  Heatpulse being the only RTA on SkyWater's list, and a source/drain activation is
-  the archetypal use of such a tool: reseller documentation for the
+  this step needs.
+
+  Reseller documentation for the
   Heatpulse 8800/8808
   family gives "Recommended steady-state temperature range: 400 –
   1200°C", ramp-up "Programmable, 1 – 180°C per second", "2 banks of
   14 lamps" with "10-zone lamp control" and lists "Implant annealing"
-  among its applications,[^ag-8800] and a vendor blog post describes
+  among its applications.[^ag-8800] A vendor blog post describes
   the 8800/8108 family.[^plasmatherm-ag] The reseller's family
   specification PDF gives, in its Heatpulse 8108 section, the same
   400–1200 °C range, a programmable 1–180 °C/s ramp-up and a maximum
@@ -190,8 +238,9 @@ An industry-generic source/drain activation anneal for a 200 mm,
   400–1300 °C, 10–200 °C/s ramp-up).[^ag-8108]
 * **Aviza furnaces** ("Ar anneal to 1150C", "N2 anneal to
   1150C"[^skw-01]) are the batch alternative but, for the reasons
-  above, an unlikely one for this step. Strength: strong for
-  existence; weak for assignment.
+  above, an unlikely one for this step.
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* weak for assignment.
 
 ## Resources required
 
@@ -210,17 +259,18 @@ An industry-generic source/drain activation anneal for a 200 mm,
 ## Related steps and cross-references
 
 * Previous: {ref}`NSDIS <step-087>` (strip and pre-anneal clean).
-  Next: {ref}`PSG <step-089>` (sacrificial PSG), then
+* Next: {ref}`PSG <step-089>` (sacrificial PSG), then
   {ref}`CMPP <step-090>`, {ref}`NCAPOX <step-091>` and the second
   source/drain anneal {ref}`RTAD2 <step-092>`.
+* Same module: the cap during the anneal, {ref}`SPOX <step-080>`; the
+  spacers the dopant meets, {ref}`SPNIT <step-076>`.
 * Anneals the implants of {ref}`PSDI <step-082>`,
   {ref}`2PSDI <step-083>` and {ref}`NSDI <step-086>`, and re-anneals
   the tips and halos of {ref}`ASTI <step-065>` to
   {ref}`LDBHI <step-073>` and the poly heads doped through
   {ref}`NPCME <step-079>`.
-* Earlier RTAs: {ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`.
-* The cap during the anneal: {ref}`SPOX <step-080>`; the spacers the
-  dopant meets: {ref}`SPNIT <step-076>`.
+* Same category: earlier RTAs, {ref}`RTAI <step-034>`,
+  {ref}`TIPRTAD <step-075>`.
 * Category page: {ref}`Anneal / thermal processing <category-anneal>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -307,15 +357,15 @@ An industry-generic source/drain activation anneal for a 200 mm,
 
 ## Open questions
 
-* The SKY130 anneal temperature, time (soak or spike), ramp rates
+* **Temperature, time and ambient.** The SKY130 anneal temperature, time (soak or spike), ramp rates
   and ambient are not public; the figures above are industry-typical.
-* Why the flow has two source/drain anneals — this step and
+* **Why two anneals.** Why the flow has two source/drain anneals — this step and
   {ref}`RTAD2 <step-092>` after the PSG and polish — is not public;
   the activation-stability reading above is an inference.
-* Whether the Heatpulse 8808 runs this step is inferred from the
+* **Heatpulse 8808.** Whether the Heatpulse 8808 runs this step is inferred from the
   tool's published capability and its being the only RTA on
   SkyWater's list.[^skw-01][^ag-8800]
-* The reseller's specification PDF cited for the Heatpulse
+* **Specification PDF.** The reseller's specification PDF cited for the Heatpulse
   family[^ag-8108] documents the Heatpulse 4100, 8108, 8800 and 8800i, not the 8808 itself;
   the 8808's own data sheet is not public.
 

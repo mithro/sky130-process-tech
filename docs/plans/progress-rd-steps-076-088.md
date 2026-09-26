@@ -37,8 +37,9 @@ pages: 066, 068, 072. One commit per page.
 
 ### 076 SPNIT — done
 
-* **Lead.** First sentence (37 w) split at its dash: "… over the whole wafer. It runs over the capped
-  gate lines …" (subject + verb added, R-SENTENCE step 7). Lead split into two paragraphs before "The
+* **Lead.** First sentence (37 w) split at its dash: "… over the whole wafer. The film runs over the capped
+  gate lines …" (subject + verb added, R-SENTENCE step 7; the subject is "The film", not "It", so it cannot
+  be read as the step). Lead split into two paragraphs before "The
   film is not a device layer" (where it goes / what it becomes). 103 words, first sentence 12.
 * **R-H3 not applied.** The 232-word passage after the figure is PDK facts plus this reference's
   reading of the flow ("On this reading of the flow …"); `What the public record shows` is not true of
@@ -136,10 +137,11 @@ pages: 066, 068, 072. One commit per page.
   step 7, capitalised and closed, nothing else changed); continuation 2 = "The bias is set …".
   Endpoint (55 w): the dash pair holding the TEL quotation moved after the sentence with the
   neutral lead-in "The patent adds:" (step 7); both pieces keep their own `[^pat-cn-tel]` as in
-  the base. Over-etch (80 w): lead = the chemistry clause with its `[^regis-1997]`; continuation
+  the base. Over-etch (80 w): lead block = the chemistry clause with its `[^regis-1997]` and
   "It is long enough to remove nitride stringers … survives.[^regis-1997]" ("It is" added; the
   marker **repeated**, declared, because in the base that clause ran on through a colon into the
-  Regis sentence and was covered by its marker).
+  Regis sentence and was covered by its marker; kept in the lead block so that no continuation
+  paragraph opens on "It"); continuation from "Regis et al. report".
 * **R-TOOLS.** Four tool bullets → recap table `Tool | Evidence` above the list (grades in the page's
   words). Lam 9400: *SkyWater says:* "lists "…"" (verb-first), *Tool exists:*, *Runs this step:*.
   DPS II: its head sentence mixes SkyWater's quotation with this reference's gloss ("carries CF₄ and
@@ -241,8 +243,9 @@ pages: 066, 068, 072. One commit per page.
 
 * **Lead.** The 59-word second sentence split at its dash pair without reordering: "… it removes the
   dielectric cap standing on the poly. The cap is whatever remains of the POC oxide and the GATENIT
-  nitride, about 0.2 µm of it … "poly cap after SPE".[^pdk-03] It stops on the poly, leaving bare
-  polysilicon exactly "under licon1 areas".[^pdk-06]" ("The cap is" and "It" added, step 7; each
+  nitride, about 0.2 µm of it … "poly cap after SPE".[^pdk-03] `NPCME` stops on the poly, leaving bare
+  polysilicon exactly "under licon1 areas".[^pdk-06]" ("The cap is" and "`NPCME`" added, step 7 — the step named, because an "It" after the cap sentence
+  would read as the cap; each
   piece keeps its own marker and "on our reading" stays with the 0.2 µm). Two paragraphs, split
   before "Inside a window". 136 words (base 135, over 120 already), first sentence 6.
 * **R-LIST.** "The structures being opened are of two kinds." → colon and two plain bullets ("The
@@ -319,8 +322,9 @@ pages: 066, 068, 072. One commit per page.
   implant angle is 0°.[^pdk-03]", step 1; the marker travels with it); continuation from "It is a
   cheap way", with "It" → "The conformal oxide" (R-PARA step 5, so the continuation does not open on
   a pronoun under the label), and the Janapaty half split off at the semicolon. "Implant screen"
-  (85 w): the appositive "a behaviour Lim et al. later modelled" became "It is a behaviour Lim et al.
-  later modelled for (100) silicon.[^lim-1993]" ("It is" added, step 7) in the lead block;
+  (85 w): the appositive "a behaviour Lim et al. later modelled" became "This is a behaviour Lim et al.
+  later modelled for (100) silicon.[^lim-1993]" ("This is" added, step 7; "It" would have read as
+  "Implanting through a thin oxide", the subject of the sentence before) in the lead block;
   continuation from "For BF₂, Wang et al.". "Protecting the opened poly" split at ", and the poly heads"
   ("The poly heads receive …"). "A cap for the anneal": the three studies split at ", and" and
   ", while" into three sentences, each with its own marker (joining "and" and "while" dropped).
@@ -769,3 +773,65 @@ pages: 066, 068, 072. One commit per page.
   base marker belonged to the other clause (crust quotation/"At an arsenic dose", "Downstream …"
   lead/quotation, CF₄); glance and label lines.
 * **Caps**: para > 100 3 → 0; item > 60 2 → 0; sentence > 45 8 → 1 (the surface sentence, above).
+
+### 088 RTAD — done
+
+* **Lead.** The 98-word second sentence (three dash pairs) re-presented as four sentences, every
+  clause kept and the numbers in the base order: "The three heavy implants of the module — PSDI,
+  2PSDI and NSDI — have left … inactive. This step heats the wafer so that the amorphous layers regrow,
+  … and the junctions reach their designed depth and no further. It does so in an inert ambient for
+  seconds at around 1000 °C on the industry-typical recipe described below; SKY130's own conditions
+  are not public." and, opening the second paragraph, "The designed depth is the PDK's 0.1 µm for "N+
+  or P+ S/D (XJ)".[^pdk-03]" ("It does so" and "The designed depth is" added, step 7; the
+  industry-typical hedge and "not public" stay with the 1000 °C clause they governed; the marker stays
+  with the 0.1 µm). "This reference describes it" → "This reference describes `RTAD`" (R-PARA step 5,
+  since the sentence before it is now about the depth). Two paragraphs; 157 words (base 154, over 120
+  already); first sentence 6.
+* **After the figure.** The NPCM-reading sentence split at its semicolon ("It re-anneals the extensions
+  and halos …"; "On the reading of the NPCM page" governs the poly-head clause, as in the base).
+* **R-CATEGORY / R-LIST.** The classification sentence ends "… but with the tightest constraint of the
+  three:" and the three-way comparison (well anneal / tip anneal / this one) became three plain bullets;
+  the third split at "while moving" ("It has to do so while moving the deep junctions …", "It has to do
+  so" added so the "has to" still governs the second half). "It is the anneal for which the *spike* RTA
+  was developed" follows the list as prose with its noun ("`RTAD` is …").
+* **Why.** The 62-word regrowth sentence split at its semicolon ("Partially damaged layers need
+  800–1000 °C …", each half with its own markers); "Two effects make … as the category page explains:"
+  as its own lead-in paragraph. TED bullet (125 w): lead = the interstitial sentence (split at its
+  semicolon); continuation 1 = Michel, Eaglesham, Stolk and "TED is worst for slow, cool anneals, so the
+  resolution is to go hot and fast." (split at the colon); continuation 2 = Agarwal ×3, Fiory,
+  Gerritsen. Activation bullet (95 w): continuation from "The highest activation is obtained …" with its
+  "(inference; no public source describes a second anneal)". The 103-word Josse paragraph split before
+  "The fluorine from BF₂ implants"; the 60-word sentence split at ", and the surrounding films matter"
+  and at ", and shallow arsenic" (each piece with its own marker; "we infer" and "(its retention is not
+  public)" stay on the SPOX clause).
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** Tool and ambient (65 w): lead = the RTP sentence with the Wikipedia quotations;
+  continuation from "A small oxygen addition". Temperature and time (75 w): lead = the soak/spike
+  sentence to `[^txt-05][^txt-10]` (split at the semicolon); continuation from "ITRS 2001 sets …".
+  Control (85 w): lead = the emissivity sentence (split at its dash); continuation = Sorrell and
+  Gyurcsik / Chen (split at the semicolon), Vandenabeele, Roozeboom, edge ring. Diffusion budget
+  (65 w): continuation from "The PDK's out-diffusion limits".
+* **R-TOOLS.** Heatpulse (154 w, an 82-word sentence): *SkyWater says:* "lists under RTA "Ag Heatpulse
+  8808 …"" (verb-first, the fix batch 5 L5 asked for on 075); *Tool exists:* **strong** (SkyWater
+  statement); *Runs this step:* the **inference** and its reason ("the only RTA on SkyWater's list, and
+  a source/drain activation is the archetypal use of such a tool"). This reference's gloss of the list
+  (the dash material "a single-wafer RTA with the inert ambients …") is the first continuation, with its
+  noun ("The Heatpulse 8808 is …", R-TOOLS step 2); the reseller, blog and specification-PDF sentences
+  follow unchanged except that "…applications,[^ag-8800] and a vendor blog post" became two sentences.
+  Aviza: pilot-form head, *Tool exists:* strong, *Runs this step:* weak.
+* **R-RELATED.** Previous/Next split; "The cap during the anneal … the spacers the dopant meets" →
+  `Same module:` (SPOX, SPNIT); "Earlier RTAs" → `Same category:` (RTAI and TIPRTAD are Anneal steps);
+  "Anneals the implants of …" keeps no label (its gloss is a sentence; a label would reword it).
+* **R-OPENQ.** Labels "Temperature, time and ambient", "Why two anneals", "Heatpulse 8808",
+  "Specification PDF"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers the S/D XJ 0.1 µm `[^pdk-03]` and the
+  120/197 Ω/sq sheet resistances `[^pdk-08]`; tool line with both grades; Not public from Open
+  questions 1–2.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-03`, `pdk-08`, `skw-01`, numbers
+  0.1, 120, 197, quote "N+ or P+ S/D (XJ)", hedges "inference", "likely", "not public" (glance);
+  "8808"×3 (glance, the OQ label, the gloss's noun). REGROUPED: the lead (1000 | 0.1), the regrowth
+  sentence (500 | 800–1000), the soak/spike item (… | 2001). WORDS LOST: "strength"×2.
+* **Marker coverage.** 21 flags, all read: split halves whose base marker belonged to the other
+  clause (the lead's depth, regrowth/defect clusters, fluorine/spacers/arsenic, emissivity/studies,
+  reseller/blog); the gloss after the grades; glance and label lines.
+* **Caps**: para > 100 3 → 0; item > 60 7 → 0; sentence > 45 10 → 0.
